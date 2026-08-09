@@ -16,17 +16,17 @@
       ],
       "answer_key": [true, true, false, true, true],
       "tactical_explanations": [
-        "TRUE — \"Many\" correctly quantifies the plural countable noun \"hikers\".\n\nTip: many + countable plural (hikers, tickets, songs).",
-        "TRUE — \"Much\" correctly quantifies the uncountable noun \"enthusiasm\".\n\nTip: much + uncountable (enthusiasm, praise, progress).",
-        "FALSE — \"Tourists\" is countable plural, so \"much\" is wrong; use \"many tourists\".\n\nTip: never pair much with a bare plural countable.",
-        "TRUE — \"Few of\" + plural countable is grammatical (here: few of the recipes).\n\nTip: few/a few work with countables; little/a little with uncountables.",
-        "TRUE — \"Little\" correctly quantifies uncountable \"praise\".\n\nTip: little = not much (uncountable); few = not many (countable)."
+        "**A) Many hikers reached the ridge before sunset.**  (true)\n\n\"Hikers\" is a plural you can count one by one, and \"many\" is the quantifier that fits that pattern. The sentence is therefore clean on both the noun and the determiner. Read it as a model of many + countable plural in an everyday outdoor scene.\n\n**Tip:** many + countable plural (hikers, tickets, songs).",
+        "**B) There is much enthusiasm for the weekend pottery class.**  (true)\n\n\"Enthusiasm\" is a mass feeling, not a set of separate units, so \"much\" is the right partner. Singular \"is\" also agrees with that uncountable subject idea. Treat this as the textbook contrast to \"many\".\n\n**Tip:** much + uncountable (enthusiasm, praise, progress).",
+        "**C) Much tourists queued outside the museum.**  (false)\n\nTrap: \"tourists\" is a countable plural, so \"much\" is the wrong tool — repair to \"many tourists\". Once you notice you could answer \"how many?\" with a number, drop much and little for that noun.\n\n**Tip:** never pair much with a bare plural countable.",
+        "**D) Few of the recipes needed special equipment.**  (true)\n\n\"Recipes\" is countable plural, and \"few of\" correctly limits that set. The of-phrase still depends on a plural countable after of, which you have here. Tone is mildly negative (not many), but the grammar is fine.\n\n**Tip:** few/a few with countables; little/a little with uncountables.",
+        "**E) We received little praise after the choir rehearsal.**  (true)\n\n\"Praise\" behaves as an uncountable mass, so \"little\" is the matching quantifier. You are saying \"not much praise,\" not \"not many praises.\" Keep this as the uncountable twin of \"few\".\n\n**Tip:** little = not much (uncountable); few = not many (countable)."
       ],
       "highlights": ["Many hikers", "much enthusiasm", "Much tourists", "Few of the recipes", "little praise"],
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.10",
-      "solution_overview": "This opener drills the core split: many/few with countables, much/little with uncountables. Scan each noun first—if it can take -s as a plural, avoid much and little."
+      "solution_overview": "You are warming up on the countable split with hiking, pottery, museums, recipes, and choir praise — everyday scenes that still follow exam grammar.\n\n**Part 1: What to watch for.**\n\nThe core pairing is many/few with countables and much/little with uncountables. Plurals you can number want many or few; mass nouns like enthusiasm and praise want much or little. Of-phrases such as few of still follow the noun after of.\n\n**Part 2: How to decide.**\n\nName the head noun first and ask whether you could count separate units. If yes, reject much and little; if no, reject many and few. Then confirm the quantifier matches that class before you tick true or false.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-10-02",
@@ -42,17 +42,17 @@
       ],
       "answer_key": [true, true, false, true, true],
       "tactical_explanations": [
-        "TRUE — \"Amount of\" pairs correctly with uncountable \"litter\".\n\nTip: amount of + uncountable mass nouns.",
-        "TRUE — \"Number of\" pairs correctly with countable \"cyclists\" and takes singular \"has\".\n\nTip: the number of + plural noun → singular verb.",
-        "FALSE — \"Cyclists\" is countable; prefer \"the number of cyclists,\" not \"amount of\".\n\nTip: amount → uncountable; number → countable.",
-        "TRUE — \"A large number of\" correctly introduces plural countable \"neighbours\".\n\nTip: a number of + plural usually takes a plural verb.",
-        "TRUE — \"Amount of\" correctly quantifies uncountable \"fog\".\n\nTip: fog, traffic, advice, and news are typically uncountable."
+        "**A) The amount of litter on the beach has fallen since spring.**  (true)\n\n\"Litter\" is a mass of rubbish, not a countable row of items, so \"amount of\" is the right frame. Singular \"has fallen\" agrees with that mass reading. Use this as the clean beachside model for amount + uncountable.\n\n**Tip:** amount of + uncountable mass nouns.",
+        "**B) The number of cyclists has risen sharply.**  (true)\n\n\"Cyclists\" are countable people, so \"number of\" is required. The phrase \"the number of…\" is grammatically singular, which is why \"has\" is correct even though cyclists is plural. Lock verb agreement to number, not to the people inside the of-phrase.\n\n**Tip:** the number of + plural noun → singular verb.",
+        "**C) The amount of cyclists has decreased this month.**  (false)\n\nTrap: cyclists are countable, so \"amount of cyclists\" is the classic mix-up — repair to \"the number of cyclists.\" Amount stays with masses you measure; number stays with units you count.\n\n**Tip:** amount → uncountable; number → countable.",
+        "**D) A large number of neighbours joined the street clean-up.**  (true)\n\n\"A large number of\" correctly introduces plural countable neighbours for the street clean-up. This construction roughly means \"many neighbours,\" so a plural verb like \"joined\" is natural. Contrast it mentally with singular \"the number of\".\n\n**Tip:** a number of + plural usually takes a plural verb.",
+        "**E) There was a large amount of fog over the harbour.**  (true)\n\n\"Fog\" is weather-as-mass, so \"amount of fog\" and singular \"was\" both fit. You would not say \"many fogs\" in this harbour scene. Keep amount + uncountable as your default for fog, traffic, and similar masses.\n\n**Tip:** fog, traffic, advice, and news are typically uncountable."
       ],
       "highlights": ["amount of litter", "number of cyclists", "amount of cyclists", "number of neighbours", "amount of fog"],
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.10",
-      "solution_overview": "Focus on amount versus number. If you can count the units (cyclists, neighbours), use number; if you measure a mass (litter, fog), use amount."
+      "solution_overview": "This card is all beach litter, cyclists, neighbours, and harbour fog — still the same amount-versus-number decision underneath.\n\n**Part 1: What to watch for.**\n\nIf the units are discrete (cyclists, neighbours), choose number. If you are measuring a mass (litter, fog), choose amount. \"The number of\" then pulls a singular verb even when the noun after of is plural.\n\n**Part 2: How to decide.**\n\nUnderline the noun after of or after amount/number. Ask whether you would answer with a headcount or with a mass measure. Pick the matching noun phrase, then check that the verb follows the head of the quantifier phrase.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-10-03",
@@ -68,17 +68,17 @@
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Uncountable \"equipment\" takes a singular verb (\"is\").\n\nTip: equipment never takes a plural -s in standard English.",
-        "FALSE — \"Equipment\" is uncountable; do not write \"equipments\".\n\nTip: use \"pieces of equipment\" when you need a count.",
-        "TRUE — \"Pieces of equipment\" is the correct count expression.\n\nTip: piece/item of + uncountable lets you count units.",
-        "FALSE — \"Evidence\" is uncountable; avoid \"evidences\" and \"many evidences\".\n\nTip: say \"much evidence\" or \"several pieces of evidence\".",
-        "TRUE — Uncountable \"evidence\" correctly takes a singular verb.\n\nTip: evidence, information, and research behave as singular masses."
+        "**A) All of the equipment is new.**  (true)\n\n\"Equipment\" stays uncountable even when you mean several machines, so the verb is singular \"is\". \"All of the equipment\" therefore behaves like a single mass subject. This is the safe detective-lab pattern exams love to test.\n\n**Tip:** equipment never takes a plural -s in standard English.",
+        "**B) The equipments in the lab need updating.**  (false)\n\nTrap: \"equipments\" is not standard — keep \"equipment\" and, if you must count, write \"pieces of equipment\". The plural -s here is the whole error; the lab scene does not license a countable plural form.\n\n**Tip:** use \"pieces of equipment\" when you need a count.",
+        "**C) We bought three new pieces of equipment.**  (true)\n\n\"Pieces of equipment\" is the approved counting scaffold: piece unlocks a number while equipment itself stays uncountable. Three pieces is therefore grammatical buying language. Memorise piece/item of for any mass noun you need to count.\n\n**Tip:** piece/item of + uncountable lets you count units.",
+        "**D) There are many evidences against the claim.**  (false)\n\nTrap: \"evidence\" is uncountable, so \"many evidences\" fails on both the pluralisation and the countable quantifier. Repair to \"much evidence\" or \"several pieces of evidence,\" and drop the -s on evidence.\n\n**Tip:** say \"much evidence\" or \"several pieces of evidence\".",
+        "**E) The evidence supports the detective's conclusion.**  (true)\n\nUncountable \"evidence\" takes a singular verb, here \"supports\". Even if the detective weighs several facts, the noun still behaves as one mass. Keep information, research, and evidence in the same singular-mass family.\n\n**Tip:** evidence, information, and research behave as singular masses."
       ],
       "highlights": ["equipment is", "equipments", "pieces of equipment", "many evidences", "evidence supports"],
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.10",
-      "solution_overview": "Classic exam traps: equipment and evidence are uncountable. Count them only with piece/item of, and keep the verb singular when the noun is the subject."
+      "solution_overview": "Lab kit and detective evidence dominate this set — classic uncountable nouns that learners over-pluralise.\n\n**Part 1: What to watch for.**\n\nEquipment and evidence do not take a plural -s in exam English. Count them only with piece/item of, and keep the verb singular when the bare noun is the subject. \"Many evidences\" and \"equipments\" are near-automatic false marks.\n\n**Part 2: How to decide.**\n\nIf you see -s on equipment or evidence, reject it. If the sentence already uses pieces of…, accept the count scaffold. Otherwise demand singular agreement with the mass noun itself.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-10-04",
@@ -94,17 +94,17 @@
       ],
       "answer_key": [true, true, true, true, true],
       "tactical_explanations": [
-        "TRUE — \"Less\" correctly pairs with uncountable \"information\".\n\nTip: less + uncountable; fewer + countable plural.",
-        "TRUE — \"Fewer\" correctly pairs with countable \"matches\".\n\nTip: if the noun is plural and countable, prefer fewer.",
-        "TRUE — \"Noise\" is uncountable, so \"less noise\" is the right pair.\n\nTip: less + mass nouns (noise, traffic, waste).",
-        "TRUE — \"Little doubt\" is the correct uncountable pattern with singular \"is\".\n\nTip: there is little + uncountable.",
-        "TRUE — Same pattern again: uncountable \"doubt\" with singular \"is\" and \"little\".\n\nTip: there is/are must match whether the noun is countable plural."
+        "**A) Less information was available than we expected.**  (true)\n\n\"Information\" is uncountable, so \"less\" is the precise comparative. Singular \"was\" matches that mass subject. Keep this as your clean less + uncountable baseline.\n\n**Tip:** less + uncountable; fewer + countable plural.",
+        "**B) Fewer matches were cancelled this week.**  (true)\n\n\"Matches\" is a countable plural, so \"fewer\" is the form exams prefer. You could answer \"how many matches?\" with a number, which locks the choice. Treat fewer as the default for cancelled fixtures, tickets, and similar plurals.\n\n**Tip:** if the noun is plural and countable, prefer fewer.",
+        "**C) Less noise was reported after the new windows arrived.**  (true)\n\n\"Noise\" is a mass, so \"less noise\" is correct after the new windows. You are reducing volume of sound, not counting separate noises. Mass nouns like noise, traffic, and waste almost always take less, not fewer.\n\n**Tip:** less + mass nouns (noise, traffic, waste).",
+        "**D) There is little doubt about the team's formation.**  (true)\n\n\"Doubt\" here is uncountable, and \"there is little…\" is the matching pattern with singular \"is\". The sports formation topic does not change the grammar. Remember little = not much of a mass.\n\n**Tip:** there is little + uncountable.",
+        "**E) There is little doubt about the festival schedule.**  (true)\n\nSame grammatical frame again: uncountable \"doubt\" with \"little\" and singular \"is\". Repeating the pattern with a festival schedule helps you feel how stable the rule is. Use there is/are only after you know the noun's count class.\n\n**Tip:** there is/are must match whether the noun is countable plural."
       ],
       "highlights": ["Less information", "Fewer matches", "Less noise", "little doubt", "little doubt"],
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.10",
-      "solution_overview": "All five sentences are correct here: less/little with uncountables (information, noise, doubt) and fewer with countable matches. Use this set as a clean baseline before the later traps."
+      "solution_overview": "All five lines are intentionally clean — information, cancelled matches, window noise, team formation, and festival schedules — so you can lock less/little versus fewer before the later traps.\n\n**Part 1: What to watch for.**\n\nLess and little partner with uncountables (information, noise, doubt). Fewer partners with countable plurals (matches). Singular there is fits little + uncountable.\n\n**Part 2: How to decide.**\n\nFor each sentence, classify the noun, then choose less/little or fewer accordingly. Because this card has no planted errors, use it as a positive model rather than hunting for damage.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-10-05",
@@ -120,17 +120,17 @@
       ],
       "answer_key": [true, true, false, true, false],
       "tactical_explanations": [
-        "TRUE — \"Much\" correctly quantifies uncountable \"data\" in careful exam English.\n\nTip: in exams, treat data as uncountable with much/little.",
-        "TRUE — \"How many\" correctly asks about countable people (volunteers).\n\nTip: how many + countable; how much + uncountable.",
-        "FALSE — \"Volunteers\" are people you can count; use \"how many,\" not \"how much\".\n\nTip: if you could answer with a number of people, use many.",
-        "TRUE — \"A few\" correctly quantifies plural countable \"bakers\".\n\nTip: a few = some (positive); few = not many (negative tone).",
-        "FALSE — \"Bakers\" is countable plural; \"a little\" is reserved for uncountables.\n\nTip: a little flour / a few bakers."
+        "**A) We still need much more data before we publish the survey.**  (true)\n\nIn careful exam English, \"data\" is treated as uncountable, so \"much more data\" is acceptable. The survey-publishing context does not turn data into a countable plural here. Keep much/little as your default with data on this paper.\n\n**Tip:** in exams, treat data as uncountable with much/little.",
+        "**B) How many volunteers attended the beach clean-up?**  (true)\n\nVolunteers are people you can number, so \"how many\" is the correct question frame. The beach clean-up theme still obeys the countable rule. If the answer could be \"twelve people,\" you needed many, not much.\n\n**Tip:** how many + countable; how much + uncountable.",
+        "**C) How much volunteers attended the beach clean-up?**  (false)\n\nTrap: \"volunteers\" are countable, so \"how much volunteers\" is wrong — repair to \"how many volunteers\". How much asks about mass or quantity of an uncountable, not a headcount of people.\n\n**Tip:** if you could answer with a number of people, use many.",
+        "**D) Only a few bakers entered the pie contest.**  (true)\n\n\"A few\" correctly quantifies plural countable bakers and carries a neutral or mildly positive \"some\" feel. The pie contest remains a countable scene. Contrast a few (some) with bare few (almost none) later, but grammar here is solid.\n\n**Tip:** a few = some (positive); few = not many (negative tone).",
+        "**E) Only a little bakers entered the pie contest.**  (false)\n\nTrap: \"a little\" belongs with uncountables, but \"bakers\" is plural countable — repair to \"a few bakers\". Think \"a little flour\" versus \"a few bakers\" and the mix-up becomes obvious.\n\n**Tip:** a little flour / a few bakers."
       ],
       "highlights": ["much more data", "How many volunteers", "How much volunteers", "a few bakers", "a little bakers"],
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.10",
-      "solution_overview": "Questions with how much/how many and the a few/a little contrast show up constantly. Decide whether the noun is a countable set of people/items or a mass quantity."
+      "solution_overview": "Survey data, beach volunteers, and a pie contest bake the how much/how many and a few/a little contrasts into one card.\n\n**Part 1: What to watch for.**\n\nHow many asks about countable sets of people or items; how much asks about masses. A few partners with countables; a little partners with uncountables. Exam English often treats data as a mass noun with much.\n\n**Part 2: How to decide.**\n\nFor questions, imagine the answer type: a headcount needs many, a mass needs much. For a few/a little, check whether the noun can take a plural -s as separate units. Reject any cross-pairing before you mark true.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-10-06",
@@ -146,17 +146,17 @@
       ],
       "answer_key": [true, false, true, true, true],
       "tactical_explanations": [
-        "TRUE — \"Much of\" + singular unit (\"the novel\") is fine with singular \"was\".\n\nTip: much of the + singular noun ≈ a large part of it.",
-        "FALSE — With plural \"novels,\" prefer \"many of the novels were,\" not \"much of … was\".\n\nTip: much of + singular/mass; many of + plural.",
-        "TRUE — \"Many of the novels were\" correctly matches plural countable + plural verb.\n\nTip: of-phrases still need verb agreement with the counted noun.",
-        "TRUE — \"Several\" quantifies plural countable \"chapters\" with plural \"were\".\n\nTip: several always implies more than two countables.",
-        "TRUE — \"A great deal of\" pairs with uncountable \"research\" and singular \"has\".\n\nTip: a great deal of ≈ much; use with uncountables."
+        "**A) Much of the novel was unfinished.**  (true)\n\n\"Much of\" plus a singular unit (\"the novel\") is natural and takes singular \"was\". You are talking about a large part of one book, not counting books. Treat much of + singular/mass as a stock pattern.\n\n**Tip:** much of the + singular noun ≈ a large part of it.",
+        "**B) Much of the novels was unfinished.**  (false)\n\nTrap: after plural \"novels,\" you need \"many of the novels were,\" not \"much of… was\". Much of wants a singular or mass noun; the plural forces many of and a plural verb.\n\n**Tip:** much of + singular/mass; many of + plural.",
+        "**C) Many of the novels were unfinished.**  (true)\n\nThis is the repaired plural version: many of + plural countable + plural \"were\". Of-phrases still demand agreement with the counted noun's number. Use it as the contrast twin of A.\n\n**Tip:** of-phrases still need verb agreement with the counted noun.",
+        "**D) Several of the chapters were cut.**  (true)\n\n\"Several\" always implies more than two countable units, here chapters, with plural \"were\". The editing scene does not change the rule. If you cannot pluralise the noun, several cannot apply.\n\n**Tip:** several always implies more than two countables.",
+        "**E) A great deal of research has been published on sleep.**  (true)\n\n\"A great deal of\" behaves like much and pairs with uncountable \"research\" plus singular \"has\". Sleep research stays a mass topic in exam English. Prefer studies only when you need an explicit countable plural.\n\n**Tip:** a great deal of ≈ much; use with uncountables."
       ],
       "highlights": ["Much of the novel", "Much of the novels", "Many of the novels", "Several of the chapters", "great deal of research"],
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.10",
-      "solution_overview": "Of-phrases (much of / many of / several of) force you to look at the noun after of. Match the quantifier and the verb to that noun's countability and number."
+      "solution_overview": "Novels, chapters, and sleep research put the of-phrase rules under the spotlight: much of, many of, several of, and a great deal of.\n\n**Part 1: What to watch for.**\n\nLook at the noun after of. Singular or mass nouns take much of / a great deal of with singular verbs. Plural countables take many of / several of with plural verbs. Mixing much of with a bare plural is the planted trap.\n\n**Part 2: How to decide.**\n\nCircle the noun after of, classify it, then choose the quantifier and verb together. Do not let the word much distract you when the noun is already plural — switch to many and plural agreement.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-10-07",
@@ -172,17 +172,17 @@
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Advice\" is uncountable; \"some useful advice\" is correct.\n\nTip: one piece of advice / some advice—never advices.",
-        "FALSE — Do not pluralise \"advice\" as \"advices\" in standard English.\n\nTip: count advice with piece(s) of advice.",
-        "TRUE — \"Information\" is uncountable and correctly used without -s.\n\nTip: information never takes a plural -s in exam English.",
-        "FALSE — \"Informations\" is ungrammatical; keep \"information\" uncountable.\n\nTip: bits/pieces of information if you need a count.",
-        "TRUE — \"News\" looks plural but is uncountable and takes singular \"was\".\n\nTip: the news is … (not are)."
+        "**A) She gave me some useful advice on the audition.**  (true)\n\n\"Advice\" is uncountable, so \"some useful advice\" is the natural audition tip. You never add -s for ordinary exam English. If you must count, switch to \"a piece of advice\".\n\n**Tip:** one piece of advice / some advice — never advices.",
+        "**B) She gave me some useful advices on the audition.**  (false)\n\nTrap: \"advices\" is the classic over-pluralisation — keep \"advice\" or count with \"pieces of advice\". The audition context cannot rescue the -s ending.\n\n**Tip:** count advice with piece(s) of advice.",
+        "**C) We need more detailed information from the guide.**  (true)\n\n\"Information\" likewise stays uncountable and takes no plural -s. \"More detailed information\" is exactly how a guide briefing should read. Treat information like advice: mass form only.\n\n**Tip:** information never takes a plural -s in exam English.",
+        "**D) We need more detailed informations from the guide.**  (false)\n\nTrap: \"informations\" is ungrammatical — keep \"information,\" or say \"bits/pieces of information\" if you need a count. The false plural is the whole story here.\n\n**Tip:** bits/pieces of information if you need a count.",
+        "**E) The news was announced after the match ended.**  (true)\n\n\"News\" looks plural but is uncountable and takes singular \"was\". After the match, the announcement is still \"the news is/was,\" never \"are/were\" in careful use. Remember the -s is spelling, not a plural marker.\n\n**Tip:** the news is … (not are)."
       ],
       "highlights": ["useful advice", "useful advices", "detailed information", "detailed informations", "news was"],
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.10",
-      "solution_overview": "Advice, information, and news are high-frequency uncountables that learners over-pluralise. Keep them singular and use piece/bit of when you must count."
+      "solution_overview": "Audition advice, guide information, and post-match news are high-frequency uncountables that learners love to pluralise wrongly.\n\n**Part 1: What to watch for.**\n\nAdvice, information, and news stay singular as masses. Reject -s forms and keep singular verbs with news. Piece/bit of is the only clean counting route.\n\n**Part 2: How to decide.**\n\nSpot any -s on advice or information and mark false. For news, ignore the deceptive spelling and demand a singular verb. Accept the unmarked mass forms as true.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-10-08",
@@ -198,17 +198,17 @@
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Homework\" is uncountable, so \"too much\" + singular \"is\" is correct.\n\nTip: much/little with mass nouns like homework and progress.",
-        "FALSE — \"Homeworks\" is not standard; keep \"homework\" uncountable.\n\nTip: if it feels like a pile of study work, treat it as a mass noun.",
-        "TRUE — \"Little progress\" correctly uses little with uncountable \"progress\".\n\nTip: progress is never \"progresses\" in this sense.",
-        "FALSE — \"Progress\" is uncountable, so \"few\" is wrong; use \"little progress\".\n\nTip: few needs a plural countable noun.",
-        "TRUE — \"A little time\" correctly quantifies uncountable \"time\".\n\nTip: a little = some (positive); little = not much (negative)."
+        "**A) There is too much homework in this module.**  (true)\n\n\"Homework\" is a mass of study work, so \"too much\" plus singular \"is\" is correct. Modules feel heavy in volume, not in countable \"homeworks\". Keep much/little with this school mass noun.\n\n**Tip:** much/little with mass nouns like homework and progress.",
+        "**B) There are too many homeworks in this module.**  (false)\n\nTrap: \"homeworks\" is not standard — keep \"homework\" uncountable with much/is. If it feels like a pile of study work, treat it as a mass, not a countable set.\n\n**Tip:** if it feels like a pile of study work, treat it as a mass noun.",
+        "**C) We have made little progress on the mural.**  (true)\n\n\"Progress\" is uncountable, so \"little progress\" correctly reports a small amount of mural advancement. You would not say \"few progresses\" in this sense. Little keeps the slightly negative \"not much\" tone.\n\n**Tip:** progress is never \"progresses\" in this sense.",
+        "**D) We have made few progress on the mural.**  (false)\n\nTrap: \"few\" needs a plural countable, but \"progress\" is uncountable — repair to \"little progress\". The mural topic does not turn progress into a countable noun.\n\n**Tip:** few needs a plural countable noun.",
+        "**E) Only a little time remains before the concert starts.**  (true)\n\n\"Time\" as remaining duration is uncountable, so \"a little time\" is right before the concert. A little is the positive \"some\" twin of bare little. Duration questions almost always want much/little, not many/few.\n\n**Tip:** a little = some (positive); little = not much (negative)."
       ],
       "highlights": ["too much homework", "too many homeworks", "little progress", "few progress", "a little time"],
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.10",
-      "solution_overview": "Mass nouns from everyday study and hobbies—homework, progress, time—take much/little, not many/few. Watch the positive \"a little\" versus the negative bare \"little\"."
+      "solution_overview": "Module homework, mural progress, and concert countdown time are everyday mass nouns that take much/little, not many/few.\n\n**Part 1: What to watch for.**\n\nHomework, progress, and time (duration) stay uncountable. Reject homeworks and few progress. Notice the tone split between little and a little, but do not let tone override countability.\n\n**Part 2: How to decide.**\n\nAsk whether the noun names a pile, process, or duration rather than separate countable units. If it does, choose much/little and singular agreement; reject many/few immediately.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-10-09",
@@ -224,17 +224,17 @@
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Runners\" is countable plural, so \"fewer\" is the precise choice.\n\nTip: fewer people / fewer typos / fewer days.",
-        "FALSE — Prefer \"fewer runners\"; \"less\" with plural people is a common trap.\n\nTip: exams still reward fewer + countable plural.",
-        "TRUE — \"Sugar\" is uncountable here, so \"less sugar\" is correct.\n\nTip: less + sugar/time/space; fewer + spoons/hours/rooms when counted.",
-        "FALSE — \"Sugar\" as a mass noun takes \"less,\" not \"fewer\".\n\nTip: fewer only works if the noun is plural and countable.",
-        "TRUE — \"Typos\" is countable plural, so \"fewer typos\" is correct.\n\nTip: if you can put a number in front, use fewer."
+        "**A) Fewer runners than expected finished the half marathon.**  (true)\n\n\"Runners\" is countable plural, so \"fewer\" is the precise comparative for the half marathon. Exams still reward fewer with people and other countable plurals. Read this as the gold standard less-versus-fewer line.\n\n**Tip:** fewer people / fewer typos / fewer days.",
+        "**B) Less runners than expected finished the half marathon.**  (false)\n\nTrap: plural people take \"fewer,\" not \"less\" — repair to \"fewer runners\". Informal speech sometimes blurs the line, but exam marking stays strict here.\n\n**Tip:** exams still reward fewer + countable plural.",
+        "**C) The café used less sugar in the lemonade this summer.**  (true)\n\n\"Sugar\" is a mass ingredient in the lemonade, so \"less sugar\" is correct. You are reducing quantity of a substance, not counting sugar crystals as units. Switch to fewer only if you count spoons or bags.\n\n**Tip:** less + sugar/time/space; fewer + spoons/hours/rooms when counted.",
+        "**D) The café used fewer sugar in the lemonade this summer.**  (false)\n\nTrap: mass \"sugar\" takes \"less,\" not \"fewer\". Fewer only works when the noun is plural and countable, which sugar is not in this café scene.\n\n**Tip:** fewer only works if the noun is plural and countable.",
+        "**E) There were fewer typos in the revised draft.**  (true)\n\n\"Typos\" are countable errors, so \"fewer typos\" is exact. If you can put a number in front (ten typos), use fewer. Draft-editing language is a reliable countable domain.\n\n**Tip:** if you can put a number in front, use fewer."
       ],
       "highlights": ["Fewer runners", "Less runners", "less sugar", "fewer sugar", "fewer typos"],
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.10",
-      "solution_overview": "Less vs fewer is a classic trap. Count the noun: plural countables want fewer; mass quantities like sugar want less."
+      "solution_overview": "Half-marathon runners, café lemonade sugar, and draft typos are the classic less-versus-fewer battlefield.\n\n**Part 1: What to watch for.**\n\nPlural countables (runners, typos) want fewer. Mass quantities (sugar) want less. Informal \"less people\" is still a trap on this exam track.\n\n**Part 2: How to decide.**\n\nStrip the scene down to the noun and ask \"can I count these as separate units?\" Yes → fewer; no → less. Apply that same test to both the race lines and the café lines.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-10-10",
@@ -250,17 +250,17 @@
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Amount of evidence\" correctly treats evidence as uncountable with singular \"was\".\n\nTip: amount of + evidence/equipment/furniture.",
-        "FALSE — \"Evidence\" is not a countable plural; do not use \"number of evidence\".\n\nTip: number of + plural countables only.",
-        "TRUE — \"Pieces of evidence\" is the correct countable paraphrase with plural \"were\".\n\nTip: piece of unlocks counting for uncountables.",
-        "FALSE — \"Equipment\" is uncountable and needs singular \"has,\" not \"have\".\n\nTip: all the equipment is … / has been …",
-        "TRUE — \"Furniture\" is uncountable and correctly takes singular \"was\".\n\nTip: furniture, luggage, and equipment share this pattern."
+        "**A) A large amount of evidence was presented in court.**  (true)\n\n\"Evidence\" is uncountable, so \"amount of evidence\" with singular \"was\" is courtroom-safe. You measure the mass of evidence, not a number of evidences. Keep amount for evidence, equipment, and furniture.\n\n**Tip:** amount of + evidence/equipment/furniture.",
+        "**B) A large number of evidence was presented in court.**  (false)\n\nTrap: \"number of\" needs a plural countable, but \"evidence\" is not one — repair to \"amount of evidence\" or \"a large number of pieces of evidence\". Never write number of evidence.\n\n**Tip:** number of + plural countables only.",
+        "**C) Several pieces of evidence were disclosed yesterday.**  (true)\n\n\"Pieces of evidence\" correctly builds countable units, so plural \"were\" follows. This is how you count when the base noun must stay uncountable. Piece of is your courtroom unlock key.\n\n**Tip:** piece of unlocks counting for uncountables.",
+        "**D) The equipment have already been installed.**  (false)\n\nTrap: uncountable \"equipment\" needs singular \"has,\" not \"have\". Say \"the equipment has already been installed\" even if many devices were fitted. Agreement tracks the mass noun, not the imagined items.\n\n**Tip:** all the equipment is … / has been …",
+        "**E) Most of the furniture was damaged in transit.**  (true)\n\n\"Furniture\" is uncountable and takes singular \"was\" when damaged in transit. Luggage and equipment share the same pattern. Do not invent \"furnitures\" or force a plural verb.\n\n**Tip:** furniture, luggage, and equipment share this pattern."
       ],
       "highlights": ["amount of evidence", "number of evidence", "pieces of evidence", "equipment have", "furniture was"],
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.10",
-      "solution_overview": "Evidence, equipment, and furniture stay uncountable even when you mean several items. Use amount/pieces of, and keep agreement singular unless you count with piece/item."
+      "solution_overview": "Court evidence, installed equipment, and damaged furniture stay uncountable even when you mean several items.\n\n**Part 1: What to watch for.**\n\nUse amount or pieces of with evidence; keep singular verbs with equipment and furniture. Number of + evidence is an automatic fail unless you insert pieces.\n\n**Part 2: How to decide.**\n\nFirst decide whether the head noun is a mass. If yes, ban bare number of and plural verbs. Only accept plural agreement when piece/item creates real countable units.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-10-11",
@@ -276,17 +276,17 @@
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — Uncountable \"time\" (duration) correctly pairs with \"much\" and singular \"is\".\n\nTip: not much time = little time remaining.",
-        "FALSE — \"Times\" changes the meaning awkwardly; for remaining duration use \"much time,\" not \"many times\".\n\nTip: many times = frequency; much time = duration.",
-        "TRUE — \"Plenty of\" works with plural countable \"chances\".\n\nTip: plenty of works with both countables and uncountables.",
-        "FALSE — Spelling/count error: the plural is \"chances,\" not \"chancs\".\n\nTip: watch irregular -y → -ies and silent-e plurals on countables.",
-        "TRUE — \"Hardly any of\" + plural countable is a natural negative quantifier pattern.\n\nTip: hardly any ≈ almost no/none."
+        "**A) There is not much time left to revise the essay.**  (true)\n\nHere \"time\" means remaining duration, which is uncountable, so \"much\" and singular \"is\" are correct. Essay revision left on the clock is a mass, not a countable set. Read not much time as little time remaining.\n\n**Tip:** not much time = little time remaining.",
+        "**B) There are not many times left to revise the essay.**  (false)\n\nTrap: \"many times\" usually means frequency (\"often\"), which twists the intended remaining-duration meaning — repair to \"much time\". For countdown-to-deadline language, stay with uncountable time.\n\n**Tip:** many times = frequency; much time = duration.",
+        "**C) We have plenty of chances to reschedule the picnic.**  (true)\n\n\"Chances\" is a countable plural, and \"plenty of\" works happily with countables. Picnic rescheduling options can be numbered. Plenty of also works with uncountables, but here the plural noun already fits.\n\n**Tip:** plenty of works with both countables and uncountables.",
+        "**D) We have plenty of chancs to reschedule the picnic.**  (false)\n\nTrap: the plural spelling must be \"chances,\" not \"chancs\". Even though plenty of is fine, the misshapen countable plural sinks the sentence. Watch silent-e and -y → -ies plurals on countables.\n\n**Tip:** watch irregular -y → -ies and silent-e plurals on countables.",
+        "**E) Hardly any of the guests supported the playlist change.**  (true)\n\n\"Hardly any of\" plus plural countable guests is a natural negative quantifier pattern. It means almost none of the guests liked the playlist change. Negative quantifiers still require the right noun type underneath.\n\n**Tip:** hardly any ≈ almost no/none."
       ],
       "highlights": ["not much time", "not many times", "plenty of chances", "plenty of chancs", "Hardly any"],
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.10",
-      "solution_overview": "Time as duration is uncountable (much time), while chances are countable. Negative quantifiers like hardly any still require the right noun type underneath."
+      "solution_overview": "Essay-revision time, picnic chances, and playlist guests mix duration, countable opportunities, and negative quantifiers.\n\n**Part 1: What to watch for.**\n\nTime as duration is uncountable (much time), while chances and guests are countable. Hardly any still needs a compatible noun after of. Spelling errors on countable plurals count as false.\n\n**Part 2: How to decide.**\n\nSeparate duration from frequency when you see time/times. Confirm countable plurals are spelled correctly after plenty of. Then check that negative of-phrases sit on the right noun class.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-10-12",
@@ -302,17 +302,17 @@
       ],
       "answer_key": [true, true, true, true, false],
       "tactical_explanations": [
-        "TRUE — \"A few of\" + plural countable correctly signals a small but real number.\n\nTip: a few = some (neutral/positive).",
-        "TRUE — Bare \"few of\" is grammatical and stresses scarcity (negative tone).\n\nTip: few vs a few is tone, not grammar—both need countables.",
-        "TRUE — \"Little of\" + uncountable \"flour\" correctly stresses almost none remains.\n\nTip: little of the + uncountable.",
-        "TRUE — \"A little of\" + uncountable is also grammatical and more positive (some remains).\n\nTip: a little = some; little = not much.",
-        "FALSE — \"Flour\" is uncountable here; \"few of the flour\" mixes few (countable) with a mass noun.\n\nTip: few of the bags/cups; little of the flour/milk."
+        "**A) A few of the students raised lighting concerns.**  (true)\n\n\"A few of\" plus plural countable students correctly signals a small but real number. The lighting-concern scene stays countable throughout. Tone is neutral or positive: some students spoke up.\n\n**Tip:** a few = some (neutral/positive).",
+        "**B) Few of the students raised lighting concerns, which surprised the tutor.**  (true)\n\nBare \"few of\" is also grammatical; it stresses scarcity and a more negative tone. The tutor's surprise fits \"almost none,\" but the countable requirement is unchanged. Few versus a few is tone, not a grammar fork, when the noun is countable.\n\n**Tip:** few vs a few is tone, not grammar — both need countables.",
+        "**C) Little of the flour remains for the final batch.**  (true)\n\n\"Little of\" plus uncountable \"flour\" correctly stresses that almost none remains for the batch. Baking language is a natural mass domain. Little of the + uncountable is the mirror of few of the + plural.\n\n**Tip:** little of the + uncountable.",
+        "**D) A little of the flour remains for the final batch.**  (true)\n\n\"A little of\" is equally grammatical and more positive: some flour remains. Again the noun is uncountable flour, so a little is licensed. Tone shifts; count class does not.\n\n**Tip:** a little = some; little = not much.",
+        "**E) Few of the flour remains for the final batch.**  (false)\n\nTrap: \"few of\" demands a countable plural, but \"flour\" is a mass — repair to \"little of the flour\" (or \"few of the bags/cups\"). Crossing the countable line with food masses is the exact trap this card is built to catch.\n\n**Tip:** few of the bags/cups; little of the flour/milk."
       ],
       "highlights": ["A few of the students", "Few of the students", "Little of the flour", "A little of the flour", "Few of the flour"],
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.10",
-      "solution_overview": "A few/few and a little/little are all grammatical in the right environments—the trap is swapping them across the countable/uncountable line, especially with mass food nouns like flour."
+      "solution_overview": "Classroom lighting feedback and bakery flour show that a few/few and a little/little are all fine — until you swap them across the countable line.\n\n**Part 1: What to watch for.**\n\nA few/few need plural countables (students). A little/little need uncountables (flour). Tone differences are real, but they do not excuse mixing few with a mass noun.\n\n**Part 2: How to decide.**\n\nClassify the noun after of first. If it is a plural countable, accept few/a few; if it is a mass, accept little/a little. Reject the crossed pairing even when the rest of the sentence looks fluent.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-10-13",
@@ -328,17 +328,17 @@
       ],
       "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
-        "TRUE — \"The number of\" is a singular subject, so \"is\" is correct.\n\nTip: the number of + plural noun → singular verb.",
-        "FALSE — Do not use plural \"are\" after \"the number of\".\n\nTip: lock the verb to number (singular), not to learners.",
-        "TRUE — \"A number of\" means several and normally takes a plural verb.\n\nTip: a number of ≈ some/several → plural verb.",
-        "FALSE — With \"a number of learners,\" prefer plural \"are,\" not singular \"is\".\n\nTip: contrast the number (singular) vs a number (plural).",
-        "FALSE — \"Learners\" are countable people; use \"number of,\" not \"amount of\".\n\nTip: amount of work; number of learners."
+        "**A) The number of remote learners is increasing every year.**  (true)\n\n\"The number of\" makes a singular subject even though learners is plural, so \"is\" is correct. Remote-learning growth is still about one rising figure. Lock the verb to number, not to learners.\n\n**Tip:** the number of + plural noun → singular verb.",
+        "**B) The number of remote learners are increasing every year.**  (false)\n\nTrap: plural \"are\" after \"the number of\" is wrong — keep singular \"is\". Do not let the nearby plural noun steal the agreement.\n\n**Tip:** lock the verb to number (singular), not to learners.",
+        "**C) A number of remote learners are requesting evening classes.**  (true)\n\n\"A number of\" means several and normally takes a plural verb, here \"are requesting\". Evening-class demand from several learners fits that plural reading. Contrast a number (plural) with the number (singular).\n\n**Tip:** a number of ≈ some/several → plural verb.",
+        "**D) A number of remote learners is requesting evening classes.**  (false)\n\nTrap: with \"a number of learners,\" prefer plural \"are,\" not singular \"is\". The article a versus the flips the agreement rule, and this line gets that flip wrong.\n\n**Tip:** contrast the number (singular) vs a number (plural).",
+        "**E) The amount of remote learners is increasing every year.**  (false)\n\nTrap: learners are countable people, so use \"number of,\" not \"amount of\". Amount of work would be fine; amount of learners is not.\n\n**Tip:** amount of work; number of learners."
       ],
       "highlights": ["number of remote learners is", "number of remote learners are", "A number of remote learners are", "A number of remote learners is", "amount of remote learners"],
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.10",
-      "solution_overview": "This task stacks two traps: the number vs a number (verb agreement) and amount vs number (countability). Read the determiner before \"number,\" then check whether people should be counted with number at all."
+      "solution_overview": "Remote learners requesting evening classes stack two traps at once: the number versus a number, and amount versus number.\n\n**Part 1: What to watch for.**\n\n\"The number of\" is singular; \"a number of\" is plural in sense. People must be counted with number, not amount. Verb agreement follows the determiner before number.\n\n**Part 2: How to decide.**\n\nRead the word before number first (the/a), choose the verb, then check whether people should be under number at all. Reject amount of + people immediately.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-10-14",
@@ -354,17 +354,17 @@
       ],
       "answer_key": [true, false, true, false, false],
       "tactical_explanations": [
-        "TRUE — \"Much of what…\" treats the content as an uncountable mass and takes singular \"has\".\n\nTip: much of what / much of the advice → singular.",
-        "FALSE — \"What the coach recommended\" is not a plural countable set; \"many of what\" is unnatural.\n\nTip: many of those drills / many of the tips.",
-        "TRUE — \"None of the evidence\" with uncountable evidence commonly takes singular \"points\".\n\nTip: none of + uncountable → singular verb in careful formal English.",
-        "FALSE — \"Evidences\" is wrong; keep evidence uncountable.\n\nTip: none of the evidence / none of the pieces of evidence.",
-        "FALSE — \"Equipment\" is uncountable, so \"both of the equipment\" fails; say \"both pieces of equipment\".\n\nTip: both needs two countable units."
+        "**A) Much of what the coach recommended has already been tried.**  (true)\n\n\"Much of what…\" treats the coach's advice-content as an uncountable mass and takes singular \"has\". You are not counting separate tips in this wording. Much of what / much of the advice is a reliable singular pattern.\n\n**Tip:** much of what / much of the advice → singular.",
+        "**B) Many of what the coach recommended has already been tried.**  (false)\n\nTrap: \"what the coach recommended\" is not framed as a plural countable set, so \"many of what\" is unnatural — prefer \"many of those drills\" or \"many of the tips\". Keep many of for explicit plurals.\n\n**Tip:** many of those drills / many of the tips.",
+        "**C) None of the evidence points to intentional foul play.**  (true)\n\nWith uncountable evidence, \"none of the evidence\" commonly takes singular \"points\" in careful formal English. The foul-play sports frame does not change the mass noun. Prefer singular agreement here on exam papers.\n\n**Tip:** none of + uncountable → singular verb in careful formal English.",
+        "**D) None of the evidences point to intentional foul play.**  (false)\n\nTrap: \"evidences\" is wrong; keep evidence uncountable. Write \"none of the evidence\" or \"none of the pieces of evidence\" if you insist on counting units.\n\n**Tip:** none of the evidence / none of the pieces of evidence.",
+        "**E) Both of the equipment need replacing before the trip.**  (false)\n\nTrap: \"both\" needs two countable units, but \"equipment\" is uncountable — repair to \"both pieces of equipment need replacing\". Before the trip, count with piece/item or name two devices.\n\n**Tip:** both needs two countable units."
       ],
       "highlights": ["Much of what", "Many of what", "None of the evidence", "None of the evidences", "Both of the equipment"],
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.10",
-      "solution_overview": "Advanced of-phrases: much of what…, none of the evidence, and both… only work when the noun after of can be counted the way the quantifier requires."
+      "solution_overview": "Coach recommendations, foul-play evidence, and trip equipment push of-phrases into advanced territory: much of what, none of, and both.\n\n**Part 1: What to watch for.**\n\nMuch of what… works as a mass; many of what does not. None of the evidence stays singular and uncountable. Both only attaches to countable pairs, never to bare equipment.\n\n**Part 2: How to decide.**\n\nAsk what kind of noun the quantifier expects, then inspect the material after of. If the quantifier demands count units and the noun is a mass, insert piece/item or reject the line.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-10-15",
@@ -380,17 +380,17 @@
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"A great deal of\" correctly quantifies uncountable \"feedback\".\n\nTip: a great deal of ≈ much.",
-        "FALSE — \"Feedback\" is uncountable; \"a great number of feedback\" is wrong.\n\nTip: a great number of comments/emails; a great deal of feedback.",
-        "TRUE — \"Quantity of\" with a mass noun and singular \"was\" is correct.\n\nTip: quantity/amount often take singular agreement with mass nouns.",
-        "FALSE — Singular \"quantity\" as subject takes \"was,\" not \"were\".\n\nTip: there was a large quantity of …",
-        "TRUE — \"Proportion of\" + plural countable \"listeners\" is a standard survey quantifier.\n\nTip: proportion/percentage of + plural noun is common in reports."
+        "**A) We have received a great deal of positive feedback.**  (true)\n\n\"A great deal of\" means roughly much and correctly quantifies uncountable \"feedback\". Survey or performance feedback stays a mass on this paper. Keep deal for uncountables and number for plural countables.\n\n**Tip:** a great deal of ≈ much.",
+        "**B) We have received a great number of positive feedback.**  (false)\n\nTrap: feedback is uncountable, so \"a great number of feedback\" fails — repair to \"a great deal of feedback\" or \"a great number of comments/emails\". Number wants things you can pluralise.\n\n**Tip:** a great number of comments/emails; a great deal of feedback.",
+        "**C) There was a large quantity of rainwater in the tank.**  (true)\n\n\"Quantity of\" with mass \"rainwater\" and singular \"was\" is correct for the tank. Quantity and amount often take singular agreement with mass nouns. The weather-collection scene is pure uncountable measuring.\n\n**Tip:** quantity/amount often take singular agreement with mass nouns.",
+        "**D) There were a large quantity of rainwater in the tank.**  (false)\n\nTrap: singular \"quantity\" as the grammatical subject needs \"was,\" not \"were\". There was a large quantity of… is the fixed frame here.\n\n**Tip:** there was a large quantity of …",
+        "**E) Only a small proportion of listeners chose the jazz option.**  (true)\n\n\"Proportion of\" plus plural countable listeners is standard survey language, and \"chose\" fits the plural sense. Jazz-option polling is a natural home for proportion/percentage of. Reports use this pattern constantly.\n\n**Tip:** proportion/percentage of + plural noun is common in reports."
       ],
       "highlights": ["great deal of positive feedback", "great number of positive feedback", "large quantity of", "were a large quantity", "proportion of listeners"],
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.10",
-      "solution_overview": "Deal/number/quantity/proportion look similar but select different noun types and verb forms. Match the head noun's countability, then agree the verb with the quantifier phrase."
+      "solution_overview": "Feedback, rainwater tanks, and jazz-poll listeners look similar under deal/number/quantity/proportion — but each head selects a different noun type and verb.\n\n**Part 1: What to watch for.**\n\nDeal pairs with uncountables like feedback; number needs plural countables. Quantity with a mass often takes singular there was. Proportion of listeners is fine with a plural countable.\n\n**Part 2: How to decide.**\n\nMatch the quantifier to countability first, then force the verb to agree with the real head of the phrase. Reject number of + feedback and plural were with singular quantity.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-10-16",
@@ -406,17 +406,17 @@
       ],
       "answer_key": [true, false, false, true, true],
       "tactical_explanations": [
-        "TRUE — Uncountable \"research\" correctly takes singular \"shows\".\n\nTip: research is / research shows …",
-        "FALSE — Do not pluralise academic \"research\" as \"researches\" in this sense.\n\nTip: use studies/projects when you need a plural countable.",
-        "FALSE — \"Several researches\" is unidiomatic; prefer \"several studies\" or \"several research projects\".\n\nTip: several needs a countable plural.",
-        "TRUE — \"Studies\" is the countable counterpart you need after \"several\".\n\nTip: research (mass) vs studies (count).",
-        "TRUE — \"A piece of research\" is an acceptable count expression for one study.\n\nTip: piece of research / item of research in formal prose."
+        "**A) Research shows that morning light can improve alertness.**  (true)\n\nUncountable \"research\" correctly takes singular \"shows\". Morning-light alertness is presented as a body of research, not as counted papers. Keep research is / research shows as your default.\n\n**Tip:** research is / research shows …",
+        "**B) Researches show that morning light can improve alertness.**  (false)\n\nTrap: do not pluralise academic \"research\" as \"researches\" in this sense — switch to studies or projects when you need a countable plural. The -es form is the error.\n\n**Tip:** use studies/projects when you need a plural countable.",
+        "**C) Several researches have confirmed the same pattern.**  (false)\n\nTrap: \"several\" needs a countable plural, and \"researches\" is unidiomatic — prefer \"several studies\" or \"several research projects\". Several cannot rescue a bad mass pluralisation.\n\n**Tip:** several needs a countable plural.",
+        "**D) Several studies have confirmed the same pattern.**  (true)\n\n\"Studies\" is the countable counterpart that \"several\" was looking for. This is the clean repair of the researches lines. Distinguish research (mass) from studies (count).\n\n**Tip:** research (mass) vs studies (count).",
+        "**E) A piece of research published last year challenged the consensus.**  (true)\n\n\"A piece of research\" is an acceptable formal count expression for one study. Piece of again unlocks counting without pluralising research itself. Last year's challenge to the consensus fits that single-unit frame.\n\n**Tip:** piece of research / item of research in formal prose."
       ],
       "highlights": ["Research shows", "Researches show", "Several researches", "Several studies", "piece of research"],
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.10",
-      "solution_overview": "Research behaves like evidence: keep it uncountable, switch to studies when you need several, or use a piece of research for a single unit."
+      "solution_overview": "Morning-light research behaves like evidence: keep the mass form, switch to studies for several, or use a piece of research for one unit.\n\n**Part 1: What to watch for.**\n\nReject researches and several researches. Accept research shows, several studies, and a piece of research. Several always signals that you need a true countable plural.\n\n**Part 2: How to decide.**\n\nIf the sentence needs one mass claim, keep research singular. If it needs multiple units, replace research with studies or add piece of. Never invent a plural -es on research for this exam sense.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-10-17",
@@ -432,17 +432,17 @@
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Far fewer\" intensifies fewer with countable \"runners\".\n\nTip: far/much/considerably can modify fewer/less.",
-        "FALSE — Plural countable \"runners\" needs \"fewer,\" not \"less\".\n\nTip: far fewer people; far less interest.",
-        "TRUE — \"Considerably less clutter\" correctly uses less with uncountable clutter.\n\nTip: intensifiers do not change the countable rule.",
-        "FALSE — \"Clutter\" is uncountable, so \"fewer clutter\" is wrong.\n\nTip: fewer boxes; less clutter.",
-        "TRUE — Parallel contrast: much + uncountable gossip; few + countable facts.\n\nTip: mixed quantifiers in one sentence still obey each noun's type."
+        "**A) Far fewer runners than last year cleared the qualifying time.**  (true)\n\n\"Far\" merely intensifies \"fewer,\" and runners remain countable. Qualifying-time athletics still wants fewer for people. Intensifiers never switch the countable rule.\n\n**Tip:** far/much/considerably can modify fewer/less.",
+        "**B) Far less runners than last year cleared the qualifying time.**  (false)\n\nTrap: plural countable runners still need \"fewer,\" even after \"far\" — repair to \"far fewer runners\". Far less interest would be fine; far less runners is not.\n\n**Tip:** far fewer people; far less interest.",
+        "**C) Considerably less clutter is left after the spring clean.**  (true)\n\n\"Clutter\" is uncountable, so \"considerably less clutter\" is correct after the spring clean. Considerably is only an intensifier sitting on less. Boxes would take fewer; clutter takes less.\n\n**Tip:** intensifiers do not change the countable rule.",
+        "**D) Considerably fewer clutter is left after the spring clean.**  (false)\n\nTrap: uncountable clutter cannot take \"fewer\" — repair to \"less clutter\". Strip considerably and the error is obvious.\n\n**Tip:** fewer boxes; less clutter.",
+        "**E) There has been far too much gossip and far too few facts.**  (true)\n\nThe parallel contrast is deliberate: much + uncountable gossip, few + countable facts. Mixed quantifiers in one sentence still obey each noun's type. Too and far only strengthen the same choices.\n\n**Tip:** mixed quantifiers in one sentence still obey each noun's type."
       ],
       "highlights": ["Far fewer runners", "Far less runners", "less clutter", "fewer clutter", "too much gossip"],
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.10",
-      "solution_overview": "Intensifiers (far, considerably, too) dress up the same less/fewer and much/few choices. Strip the adverb and decide from the noun alone."
+      "solution_overview": "Qualifying-time runners, spring-clean clutter, gossip, and facts show that intensifiers (far, considerably, too) only dress up the same less/fewer and much/few choices.\n\n**Part 1: What to watch for.**\n\nStrip the adverb and decide from the noun alone. Countable plurals keep fewer/few; uncountables keep less/much. Parallel sentences can mix quantifiers safely when each half matches its noun.\n\n**Part 2: How to decide.**\n\nMentally delete far/considerably/too, classify the noun, then put the intensifier back on the correct base quantifier. Reject any line where the intensifier is sitting on the wrong partner.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-10-18",
@@ -458,17 +458,17 @@
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Item of equipment\" correctly creates a countable unit after \"each\".\n\nTip: each needs a singular countable noun.",
-        "FALSE — \"Each equipment\" fails because equipment is uncountable.\n\nTip: each piece/item of equipment.",
-        "TRUE — \"Evidence\" stays uncountable with singular \"is\".\n\nTip: no further evidence is …",
-        "FALSE — Avoid plural \"evidences\" and the plural verb that follows it.\n\nTip: further pieces of evidence if you insist on counting.",
-        "TRUE — \"Amount of sunlight\" treats sunlight as an uncountable mass with singular \"has\".\n\nTip: sunlight, rainwater, and fog often behave as uncountables."
+        "**A) Each item of equipment must be labelled before the hike.**  (true)\n\n\"Each\" needs a singular countable noun, and \"item of equipment\" supplies that unit before the hike. Equipment itself stays uncountable underneath the counting scaffold. This is the model repair for each + mass nouns.\n\n**Tip:** each needs a singular countable noun.",
+        "**B) Each equipment must be labelled before the hike.**  (false)\n\nTrap: \"each equipment\" fails because equipment is uncountable — repair to \"each piece/item of equipment\". The hike labelling task cannot license bare each + mass.\n\n**Tip:** each piece/item of equipment.",
+        "**C) No further evidence is required at this stage.**  (true)\n\n\"Evidence\" stays uncountable with singular \"is\". \"No further evidence is…\" is standard formal English at this stage of a case. Do not pluralise evidence to force a plural verb.\n\n**Tip:** no further evidence is …",
+        "**D) No further evidences are required at this stage.**  (false)\n\nTrap: avoid plural \"evidences\" and the plural verb that follows — keep \"evidence is,\" or say \"further pieces of evidence\" if you must count. The -s and are travel together as one error bundle.\n\n**Tip:** further pieces of evidence if you insist on counting.",
+        "**E) A substantial amount of sunlight has already flooded the atrium.**  (true)\n\n\"Amount of sunlight\" treats sunlight as an uncountable mass with singular \"has\". Atrium flooding by light is measured, not counted as separate sunlights. Rainwater and fog often behave the same way.\n\n**Tip:** sunlight, rainwater, and fog often behave as uncountables."
       ],
       "highlights": ["item of equipment", "Each equipment", "further evidence is", "further evidences are", "amount of sunlight"],
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.10",
-      "solution_overview": "Determiners like each and no further expose uncountable nouns quickly. If the determiner demands a countable unit, insert piece/item of before equipment or evidence."
+      "solution_overview": "Pre-hike labelling, case evidence, and atrium sunlight show how determiners like each and no further expose uncountable nouns immediately.\n\n**Part 1: What to watch for.**\n\nEach demands a countable unit, so insert item/piece of before equipment. Evidence stays uncountable under no further. Amount of sunlight is a clean mass measure.\n\n**Part 2: How to decide.**\n\nCheck whether the determiner presupposes countable units. If it does and the noun is a mass, require piece/item of or reject the sentence. Otherwise keep singular mass agreement.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-10-19",
@@ -484,17 +484,17 @@
       ],
       "answer_key": [true, false, true, false, true],
       "tactical_explanations": [
-        "TRUE — \"Luggage\" is uncountable; \"scarcely any of the luggage was\" is correct.\n\nTip: luggage/baggage like furniture: no plural -s.",
-        "FALSE — \"Luggages\" is non-standard; keep luggage uncountable with singular agreement.\n\nTip: pieces of luggage if you need a count.",
-        "TRUE — \"Criteria\" is plural; \"a surprising number of the criteria were\" matches countability and plural verb.\n\nTip: criterion (singular) / criteria (plural).",
-        "FALSE — Prefer \"number of the criteria\"; amount is for mass nouns, not plural criteria.\n\nTip: amount of inconsistency; number of criteria.",
-        "TRUE — \"Too little attention\" correctly uses little with uncountable attention.\n\nTip: little attention / much attention; few comments."
+        "**A) Scarcely any of the luggage was recovered after the delay.**  (true)\n\n\"Luggage\" is uncountable, so \"scarcely any of the luggage was\" is correct after the delay. Like furniture and baggage, it rejects a plural -s. Singular agreement follows the mass noun.\n\n**Tip:** luggage/baggage like furniture: no plural -s.",
+        "**B) Scarcely any of the luggages were recovered after the delay.**  (false)\n\nTrap: \"luggages\" is non-standard — keep luggage uncountable with singular agreement, or say \"pieces of luggage\". The travel-delay story does not create a countable plural form.\n\n**Tip:** pieces of luggage if you need a count.",
+        "**C) A surprising number of the criteria were mutually inconsistent.**  (true)\n\n\"Criteria\" is already plural, so \"a surprising number of the criteria were\" matches countability and plural verb. Remember criterion (singular) versus criteria (plural). Inconsistent standards are counted, not measured as a mass.\n\n**Tip:** criterion (singular) / criteria (plural).",
+        "**D) A surprising amount of the criteria were mutually inconsistent.**  (false)\n\nTrap: prefer \"number of the criteria\"; amount is for mass nouns, not plural criteria. You might say amount of inconsistency, but criteria themselves take number.\n\n**Tip:** amount of inconsistency; number of criteria.",
+        "**E) Too little attention has been paid to hydration on long walks.**  (true)\n\n\"Attention\" is uncountable, so \"too little attention\" with singular \"has\" is correct for hydration advice on long walks. Little attention / much attention; few comments if you switch to a countable.\n\n**Tip:** little attention / much attention; few comments."
       ],
       "highlights": ["any of the luggage was", "any of the luggages", "number of the criteria", "amount of the criteria", "Too little attention"],
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.10",
-      "solution_overview": "Mixes luggage (uncountable) with criteria (plural countable) and attention (uncountable). Identify each head noun's class before choosing any/number/amount/little."
+      "solution_overview": "Delayed luggage, inconsistent criteria, and walk hydration mix an uncountable, a plural countable learned noun, and another uncountable in one card.\n\n**Part 1: What to watch for.**\n\nLuggage stays mass and singular. Criteria are plural countable and want number of, not amount of. Attention takes little/much. Identify each head noun's class before choosing any/number/amount/little.\n\n**Part 2: How to decide.**\n\nLabel luggage, criteria, and attention independently, then pick the quantifier that matches that label. Reject luggages and amount of criteria on sight.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-10-20",
@@ -510,17 +510,17 @@
       ],
       "answer_key": [true, false, false, false, false],
       "tactical_explanations": [
-        "TRUE — \"Insufficient evidence\" correctly keeps evidence uncountable.\n\nTip: sufficient/insufficient + uncountable evidence/information.",
-        "FALSE — \"Evidences\" is wrong in this legal/academic sense.\n\nTip: insufficient pieces of evidence if counting is required.",
-        "FALSE — \"A large number of unresolved questions\" is plural in sense, so prefer \"there remain,\" not singular \"remains\".\n\nTip: there remain + plural; there remains + singular/mass.",
-        "FALSE — \"Questions\" are countable, so \"amount of unresolved questions\" is off, and singular \"remains\" still clashes.\n\nTip: number of questions remain; amount of uncertainty remains.",
-        "FALSE — Double error: equipment is uncountable (not \"fewer than ten percent of the equipment have\"); prefer \"less than ten percent of the equipment has been calibrated\" or \"fewer than ten pieces of equipment have…\".\n\nTip: percent of + uncountable → singular; fewer needs countable units."
+        "**A) The jury found insufficient evidence to convict.**  (true)\n\n\"Insufficient evidence\" correctly keeps evidence uncountable in the courtroom sense. Sufficient/insufficient naturally partner with mass nouns like evidence and information. This is the lone fully clean line on the hardest card.\n\n**Tip:** sufficient/insufficient + uncountable evidence/information.",
+        "**B) The jury found insufficient evidences to convict.**  (false)\n\nTrap: \"evidences\" is wrong in this legal/academic sense — keep \"evidence,\" or use \"insufficient pieces of evidence\" if counting is required. The jury scene does not license the plural.\n\n**Tip:** insufficient pieces of evidence if counting is required.",
+        "**C) There remains a large number of unresolved questions in the chapter.**  (false)\n\nTrap: \"a large number of unresolved questions\" is plural in sense, so prefer \"there remain,\" not singular \"remains\". There remain + plural; there remains + singular/mass. The chapter's open questions need plural agreement.\n\n**Tip:** there remain + plural; there remains + singular/mass.",
+        "**D) There remains a large amount of unresolved questions in the chapter.**  (false)\n\nTrap: questions are countable, so \"amount of unresolved questions\" is off, and singular \"remains\" still clashes. Prefer \"a large number of unresolved questions remain\" or \"an amount of uncertainty remains\".\n\n**Tip:** number of questions remain; amount of uncertainty remains.",
+        "**E) Fewer than ten percent of the equipment have been calibrated.**  (false)\n\nTrap: double error — equipment is uncountable, so \"fewer… have\" is wrong; prefer \"less than ten percent of the equipment has been calibrated\" or \"fewer than ten pieces of equipment have…\". Percent of + uncountable takes singular; fewer needs countable units.\n\n**Tip:** percent of + uncountable → singular; fewer needs countable units."
       ],
       "highlights": ["insufficient evidence", "insufficient evidences", "remains a large number", "amount of unresolved questions", "percent of the equipment have"],
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.10",
-      "solution_overview": "The hardest set combines evidence, number vs amount, there remain(s), and percent-of agreement with equipment. Resolve countability first, then force verb agreement to follow."
+      "solution_overview": "The final card mixes courtroom evidence, chapter questions with there remain(s), and percent-of agreement with equipment — only one sentence survives.\n\n**Part 1: What to watch for.**\n\nEvidence stays uncountable. Number of questions wants plural remain, not remains, and never amount of questions. Percent of equipment is singular mass agreement; fewer needs countable pieces.\n\n**Part 2: How to decide.**\n\nResolve countability first, then force verb agreement to follow that decision. When two errors stack (wrong quantifier plus wrong verb), mark false even if one half almost looks repairable.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=FALSE, E=FALSE"
     }
   ]
 }

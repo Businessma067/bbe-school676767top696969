@@ -14,13 +14,19 @@
         "Leo used to swimming before school every morning.",
         "By next Friday, the volunteers will plant fifty saplings."
       ],
-      "answer_key": [false, true, true, false, false],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — A finished time marker such as \"last Tuesday\" calls for past simple (\"finished\"), not present perfect.\n\nTip: Spot calendar anchors (yesterday, last week, in 2019) — they usually kill present perfect.",
-        "TRUE — Present perfect with \"since\" correctly signals a habit that began in the past and continues now.\n\nTip: Pair \"since + starting point\" with present perfect, not past simple.",
-        "TRUE — Past continuous sets the background rehearsal; past simple marks the sudden blackout.\n\nTip: Longer background → continuous; shorter interrupt → simple past.",
-        "FALSE — Past habit needs \"used to\" + base verb: \"used to swim,\" not \"used to swimming.\"\n\nTip: \"Used to\" + V1 for habits; \"be used to\" + -ing for familiarity.",
-        "FALSE — Completion before next Friday needs future perfect: \"will have planted,\" not plain \"will plant.\"\n\nTip: \"By + future time\" often flags future perfect."
+        "**A) Maya has finished her chemistry lab report last Tuesday.**  (false)\n\nTrap: \"last Tuesday\" is a finished calendar anchor, so present perfect \"has finished\" is wrong. Repair to past simple: \"Maya finished her chemistry lab report last Tuesday.\" Explicit finished time (yesterday, last week, in 2019) almost never pairs with present perfect in exam English.",
+        "**B) Our hiking club has met every Saturday since April.**  (true)\n\nPresent perfect \"has met\" with \"since April\" correctly shows a Saturday habit that began in the past and still continues. The starting point is named, but the period is open, so present perfect — not past simple — is the right tense.\n\n**Tip:** Pair \"since + starting point\" with present perfect whenever the situation still matters now.",
+        "**C) While the band was rehearsing, the lights suddenly went out.**  (true)\n\nPast continuous \"was rehearsing\" paints the longer background; past simple \"went out\" marks the sudden blackout that cut across it. That continuous-plus-simple pairing is the standard past storytelling pattern for an interrupt.\n\n**Tip:** Longer background action → continuous; shorter interrupt → simple past.",
+        "**D) Leo used to swimming before school every morning.**  (false)\n\nTrap: past habit needs \"used to\" + base verb, so \"used to swimming\" is broken. Repair to \"Leo used to swim before school every morning.\" Do not confuse this with \"be used to + -ing,\" which means familiarity, not past habit.",
+        "**E) By next Friday, the volunteers will plant fifty saplings.**  (false)\n\nTrap: completion before a future deadline needs future perfect, not plain \"will plant.\" Repair to \"By next Friday, the volunteers will have planted fifty saplings.\" The cue \"by + future time\" flags that the planting will already be done by that point."
       ],
       "highlights": [
         "has finished",
@@ -32,7 +38,7 @@
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.1",
-      "solution_overview": "Warm up on classic tense traps: finished time versus \"since,\" background continuous versus a short interrupt, \"used to\" form, and future perfect with \"by.\" Read each verb against its time cue before you tick true or false."
+      "solution_overview": "These five lines warm up classic tense traps: finished time versus present perfect with \"since,\" a continuous background interrupted by a sudden event, the form of \"used to,\" and future perfect with \"by.\"\n\n**Part 1: What to watch for.**\n\nMatch each verb to its time cue before you decide. Calendar anchors such as \"last Tuesday\" usually kill present perfect; \"since\" keeps a habit alive into the present; \"while\" often sets a continuous scene for a short past-simple interrupt; \"used to\" needs a base verb; and \"by + future time\" often wants future perfect, not plain will.\n\n**Part 2: How to decide.**\n\nRead the highlighted verb against the time expression in the same sentence. If they clash, mark false and name the repair; if they fit the standard pairing, mark true.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-1-02",
@@ -46,13 +52,19 @@
         "I am used to cycling through the park in the rain.",
         "We visited the science museum in March."
       ],
-      "answer_key": [false, true, false, true, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — The departure happened first, so past perfect is needed: \"had already left.\"\n\nTip: When two past events stack, mark the earlier one with past perfect.",
-        "TRUE — Past perfect correctly shows that leaving preceded the trolley’s arrival.\n\nTip: \"Already\" often sits comfortably with past perfect in sequenced past narratives.",
-        "FALSE — Stative \"know\" resists continuous form; use \"knows.\"\n\nTip: Mental-state verbs (know, believe, own) rarely take -ing in exam English.",
-        "TRUE — \"Be used to\" + gerund correctly means \"accustomed to\" a recurring activity.\n\nTip: \"Am/is/are used to + -ing\" ≠ \"used to + V1.\"",
-        "TRUE — Past simple with \"in March\" correctly places a finished outing in a closed time frame.\n\nTip: Closed past time → past simple is the safe default."
+        "**A) The guests already left when the dessert trolley arrived.**  (false)\n\nTrap: the departure happened before the trolley arrived, so plain past \"already left\" under-marks the sequence. Repair to past perfect: \"The guests had already left when the dessert trolley arrived.\" When two past events stack, mark the earlier one with had + past participle.",
+        "**B) They had already left when the dessert trolley arrived.**  (true)\n\nPast perfect \"had already left\" correctly shows that leaving preceded the trolley's arrival. \"Already\" sits naturally with past perfect in sequenced past narratives and makes the earlier completion clear.\n\n**Tip:** In a when-clause story, check which past action finished first — that one often wants past perfect.",
+        "**C) Nina is knowing every lyric in the musical.**  (false)\n\nTrap: stative \"know\" resists continuous form, so \"is knowing\" is wrong. Repair to \"Nina knows every lyric in the musical.\" Mental-state verbs (know, believe, own) rarely take -ing in careful exam English.",
+        "**D) I am used to cycling through the park in the rain.**  (true)\n\n\"Am used to cycling\" correctly means accustomed to that rainy-park routine. After \"be used to,\" a gerund is the expected pattern for a recurring activity you find familiar.\n\n**Tip:** \"Am/is/are used to + -ing\" is familiarity — not the same as \"used to + base verb\" for past habit.",
+        "**E) We visited the science museum in March.**  (true)\n\nPast simple \"visited\" with \"in March\" correctly places a finished outing in a closed time frame. Once the month is named as finished, past simple is the safe default.\n\n**Tip:** Closed past time markers nearly always call for past simple, not present perfect."
       ],
       "highlights": [
         "already left",
@@ -64,7 +76,7 @@
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.1",
-      "solution_overview": "This set contrasts past simple with past perfect, tests a stative continuous trap, and separates \"used to\" habit from \"be used to\" familiarity. Match the verb form to the timeline before you decide."
+      "solution_overview": "This set contrasts past simple with past perfect in a sequenced narrative, tests a stative continuous trap, and separates \"be used to\" familiarity from ordinary past simple with a closed time frame.\n\n**Part 1: What to watch for.**\n\nWhen two past events stack, the earlier one often needs past perfect. Stative verbs such as \"know\" resist continuous forms. \"Be used to + -ing\" means accustomed to, which is different from \"used to + V1\" for past habit. A finished outing with \"in March\" is safe past simple territory.\n\n**Part 2: How to decide.**\n\nAsk which action happened first, whether the verb is stative, and whether the time frame is still open. Match the verb form to that timeline before you tick true or false.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-1-03",
@@ -78,13 +90,19 @@
         "This scarf is belonging to my grandmother.",
         "We used to camp by the lake before the path flooded."
       ],
-      "answer_key": [false, false, false, false, true],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — \"Yesterday evening\" is finished time, so write \"changed,\" not present perfect.\n\nTip: Present perfect hates explicit finished-time adverbs.",
-        "FALSE — Completion before a future ferry arrival needs future perfect: \"will have packed,\" not plain \"will pack.\"\n\nTip: \"By the time + future\" often invites \"will have + past participle.\"",
-        "FALSE — \"In 2016\" closes the period; use past simple: \"was a library volunteer here in 2016.\"\n\nTip: \"In + year\" usually blocks present perfect for a finished role.",
-        "FALSE — \"Belong\" is stative; prefer \"belongs,\" not continuous.\n\nTip: Possession and membership verbs stay simple in formal exam prose.",
-        "TRUE — \"Used to camp\" correctly reports a discontinued past habit.\n\nTip: \"Used to + base verb\" = past habit that no longer holds."
+        "**A) The coach has changed the starting line-up yesterday evening.**  (false)\n\nTrap: \"yesterday evening\" is finished time, so \"has changed\" is wrong. Repair to past simple: \"The coach changed the starting line-up yesterday evening.\" Present perfect hates explicit finished-time adverbs in exam answers.",
+        "**B) By the time the ferry docks tomorrow, we will pack our bags.**  (false)\n\nTrap: completion before a future ferry arrival needs future perfect. Repair to \"By the time the ferry docks tomorrow, we will have packed our bags.\" Plain \"will pack\" only talks about a future intention, not completion before that docking.",
+        "**C) She has been a library volunteer here in 2016.**  (false)\n\nTrap: \"in 2016\" closes the period, so present perfect \"has been\" is wrong for that finished role. Repair to past simple: \"She was a library volunteer here in 2016.\" A named past year usually blocks present perfect.",
+        "**D) This scarf is belonging to my grandmother.**  (false)\n\nTrap: \"belong\" is stative, so \"is belonging\" is wrong. Repair to \"This scarf belongs to my grandmother.\" Possession and membership verbs stay in simple forms in formal exam prose.",
+        "**E) We used to camp by the lake before the path flooded.**  (true)\n\n\"Used to camp\" correctly reports a discontinued past habit by the lake. The later flood explains why the habit no longer holds, which is exactly what \"used to\" signals.\n\n**Tip:** \"Used to + base verb\" = a past habit or state that no longer holds."
       ],
       "highlights": [
         "has changed",
@@ -96,7 +114,7 @@
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.1",
-      "solution_overview": "Only one sentence survives here. Hunt finished-time clashes with present perfect, demand future perfect with \"by the time,\" and reject stative continuous — the lone survivor is clean past habit with \"used to.\""
+      "solution_overview": "Only one sentence survives this card. Hunt finished-time clashes with present perfect, demand future perfect after \"by the time,\" reject a closed year with present perfect, and refuse stative continuous — the lone survivor is clean past habit with \"used to.\"\n\n**Part 1: What to watch for.**\n\n\"Yesterday evening\" and \"in 2016\" are finished time and block present perfect. \"By the time + future\" usually wants will have + past participle. \"Belong\" is stative and stays simple. \"Used to + base verb\" correctly reports a discontinued past habit.\n\n**Part 2: How to decide.**\n\nUnderline every time cue first. If present perfect or continuous fights that cue, mark false; only keep the line that pairs form and meaning cleanly.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-1-04",
@@ -110,13 +128,19 @@
         "Children used to play outdoors until dusk in this street.",
         "Omar is owning three vintage cameras."
       ],
-      "answer_key": [true, true, true, true, false],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Present perfect + \"since\" correctly links an ongoing practice to its start point.\n\nTip: \"Since\" points to a start that still matters now — present perfect territory.",
-        "TRUE — Continuous background plus simple interrupt is the standard past pairing.\n\nTip: Ask which action was \"in progress\" when the other struck.",
-        "TRUE — Future perfect places learning completion before year-end.\n\nTip: Deadlines with \"by\" love future perfect.",
-        "TRUE — \"Used to play\" correctly describes a past habit that has changed.\n\nTip: Preferences and habits both take \"used to + V1.\"",
-        "FALSE — Stative \"own\" should be \"owns,\" not continuous.\n\nTip: Ownership verbs almost never take continuous in exam English."
+        "**A) The gallery has displayed local artists since the renovation.**  (true)\n\nPresent perfect \"has displayed\" with \"since the renovation\" correctly links an ongoing practice to its start point. The renovation is a starting boundary that still shapes what the gallery does now.\n\n**Tip:** \"Since\" points to a start that still matters now — classic present-perfect territory.",
+        "**B) While the neighbours were gardening, a fox slipped through the fence.**  (true)\n\nPast continuous \"were gardening\" sets the neighbours' background activity; past simple \"slipped\" marks the fox's short interrupt through the fence. That is the standard past pairing for an action in progress when something else struck.\n\n**Tip:** Ask which action was \"in progress\" when the other happened.",
+        "**C) By year-end, the choir will have learned twelve new pieces.**  (true)\n\nFuture perfect \"will have learned\" places completion of the twelve pieces before year-end. The deadline \"by\" tells you the learning will already be done at that point.\n\n**Tip:** Deadlines with \"by\" love future perfect.",
+        "**D) Children used to play outdoors until dusk in this street.**  (true)\n\n\"Used to play\" correctly describes a past outdoor habit that has changed on this street. Frequency through dusk fits the \"used to + V1\" pattern for discontinued habits.\n\n**Tip:** Habitual past actions that no longer hold take \"used to + base verb.\"",
+        "**E) Omar is owning three vintage cameras.**  (false)\n\nTrap: stative \"own\" should be simple \"owns,\" not continuous. Repair to \"Omar owns three vintage cameras.\" Ownership verbs almost never take continuous in exam English."
       ],
       "highlights": [
         "has displayed",
@@ -128,7 +152,7 @@
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.1",
-      "solution_overview": "Four sentences are clean; only the stative continuous fails. Confirm \"since,\" background continuous, future perfect with \"by,\" and past habit before you hunt the ownership trap."
+      "solution_overview": "Four sentences are clean; only the stative continuous fails. Confirm \"since\" with present perfect, background continuous plus interrupt, future perfect with \"by,\" and past habit before you hunt the ownership trap.\n\n**Part 1: What to watch for.**\n\n\"Since\" keeps present perfect alive for an ongoing gallery practice. \"While\" sets a continuous background for a short past-simple interrupt. \"By year-end\" invites future perfect. \"Used to play\" is a textbook past habit. \"Own\" is stative and should not take continuous.\n\n**Part 2: How to decide.**\n\nCheck the four standard pairings first; then ask whether the remaining verb is stative. If it is, reject -ing.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-1-05",
@@ -142,13 +166,19 @@
         "By Friday noon, the caterers will have prepared the picnic baskets.",
         "When the teacher entered, the class had already finished the quiz."
       ],
-      "answer_key": [true, true, true, true, true],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Past simple correctly anchors a finished talk to \"last week.\"\n\nTip: Explicit past time → past simple is rarely wrong.",
-        "TRUE — \"Are used to training\" correctly means runners are accustomed to the routine.\n\nTip: \"Be used to + -ing\" = familiarity, not past habit.",
-        "TRUE — Present perfect fits an unfinished period (\"this semester\") with present relevance.\n\nTip: \"This week / this year / this semester\" often keep present perfect alive.",
-        "TRUE — Future perfect correctly places preparation before Friday noon.\n\nTip: Clock deadlines with \"by\" are classic future-perfect cues.",
-        "TRUE — Past perfect shows the quiz ended before the teacher walked in.\n\nTip: Earlier past action → had + past participle."
+        "**A) The weather presenter explained the storm path at last week's briefing.**  (true)\n\nPast simple \"explained\" correctly anchors a finished talk to \"last week's briefing.\" The briefing is a closed past event, so past simple is the natural choice.\n\n**Tip:** Explicit past time → past simple is rarely wrong.",
+        "**B) Runners are used to training before sunrise in winter.**  (true)\n\n\"Are used to training\" correctly means runners are accustomed to that early-winter routine. The gerund after \"be used to\" is exactly the familiarity pattern you want here.\n\n**Tip:** \"Be used to + -ing\" = familiarity, not past habit.",
+        "**C) The club has published three newsletters this semester.**  (true)\n\nPresent perfect \"has published\" fits an unfinished period (\"this semester\") with present relevance. The semester is still open, so the three newsletters stay in present perfect.\n\n**Tip:** \"This week / this year / this semester\" often keep present perfect alive.",
+        "**D) By Friday noon, the caterers will have prepared the picnic baskets.**  (true)\n\nFuture perfect \"will have prepared\" correctly places preparation before Friday noon. The clock deadline with \"by\" is a classic future-perfect cue.\n\n**Tip:** Clock deadlines with \"by\" almost always want will have + past participle.",
+        "**E) When the teacher entered, the class had already finished the quiz.**  (true)\n\nPast perfect \"had already finished\" shows the quiz ended before the teacher walked in. The earlier past action needs had + past participle so the sequence is clear.\n\n**Tip:** Earlier past action in a two-event story → had + past participle."
       ],
       "highlights": [
         "explained",
@@ -160,7 +190,7 @@
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.1",
-      "solution_overview": "All five lines are sound. Use this card as a model set: closed past time, \"be used to,\" unfinished-period present perfect, future perfect with \"by,\" and past perfect sequencing."
+      "solution_overview": "All five lines are sound. Use this card as a model set for closed past time, \"be used to,\" unfinished-period present perfect, future perfect with \"by,\" and past-perfect sequencing.\n\n**Part 1: What to watch for.**\n\n\"Last week\" locks past simple. \"Are used to training\" means familiarity with a routine. \"This semester\" keeps present perfect alive. \"By Friday noon\" wants future perfect. When one past action finishes before another, past perfect marks the earlier one.\n\n**Part 2: How to decide.**\n\nTreat each line as a clean template. Confirm the time cue and the verb form agree; do not invent a problem where the pairing is already standard.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-1-06",
@@ -174,13 +204,19 @@
         "Sam used to hate spicy food, but now he loves it.",
         "We are knowing each other since primary school."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Present perfect with \"already\" and an unfinished month fits repeated experience with present relevance.\n\nTip: \"Already / yet / so far\" often pair with present perfect.",
-        "FALSE — \"Believe\" is stative here; write \"believe,\" not continuous.\n\nTip: Opinion verbs (believe, think = opinion) stay simple in careful English.",
-        "TRUE — Future perfect places arrival before dawn.\n\nTip: \"By + future point\" → will have + V3.",
-        "TRUE — \"Used to hate\" correctly marks a past taste that no longer holds.\n\nTip: Contrast \"used to\" with a present change to show discontinued habit.",
-        "FALSE — \"Know\" is stative and needs present perfect for a continuing relationship: \"have known,\" not \"are knowing.\"\n\nTip: Duration with \"since\" → present perfect simple for stative verbs."
+        "**A) I have seen that documentary twice already this month.**  (true)\n\nPresent perfect \"have seen\" with \"already\" and an unfinished month fits repeated experience that still matters now. The viewings count toward the current month, so present perfect is right.\n\n**Tip:** \"Already / yet / so far\" often pair with present perfect.",
+        "**B) They are believing the rumours about the new café.**  (false)\n\nTrap: \"believe\" is stative here, so \"are believing\" is wrong. Repair to \"They believe the rumours about the new café.\" Opinion verbs (believe, think = opinion) stay simple in careful exam English.",
+        "**C) By dawn, the rescue team will have reached the ridge.**  (true)\n\nFuture perfect \"will have reached\" places the team's arrival before dawn. The cue \"by + future point\" demands completion ahead of that moment.\n\n**Tip:** \"By + future point\" → will have + past participle.",
+        "**D) Sam used to hate spicy food, but now he loves it.**  (true)\n\n\"Used to hate\" correctly marks a past taste that no longer holds, and the contrast with \"now he loves it\" makes the change explicit. That is textbook discontinued habit.\n\n**Tip:** Contrast \"used to\" with a present change to show the habit or preference ended.",
+        "**E) We are knowing each other since primary school.**  (false)\n\nTrap: \"know\" is stative, and a continuing relationship with \"since\" needs present perfect, not continuous. Repair to \"We have known each other since primary school.\" Duration with \"since\" takes present perfect simple for stative verbs."
       ],
       "highlights": [
         "have seen",
@@ -192,7 +228,7 @@
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.1",
-      "solution_overview": "Three survivors, two stative continuous fails. Trust present perfect for unfinished time, future perfect for \"by,\" and \"used to\" for abandoned habits — then reject -ing on believe and know."
+      "solution_overview": "Three survivors and two stative continuous fails. Trust present perfect for unfinished time, future perfect for \"by,\" and \"used to\" for abandoned habits — then reject -ing on believe and know.\n\n**Part 1: What to watch for.**\n\n\"Already\" and \"this month\" support present perfect for repeated experience. Opinion \"believe\" and stative \"know\" stay simple (or present perfect for continuing \"know\"). \"By dawn\" wants future perfect. \"Used to hate\" marks a past taste that no longer holds.\n\n**Part 2: How to decide.**\n\nFirst lock the clean tense pairings, then scan for illegally continuous stative verbs — those are the false lines here.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-1-07",
@@ -206,13 +242,19 @@
         "He used to be afraid of public speaking.",
         "By the time the concert starts, we will have found our seats."
       ],
-      "answer_key": [true, false, true, true, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Present perfect + \"for + duration\" correctly shows a situation that continues now.\n\nTip: \"For + length of time\" with present perfect = still true.",
-        "FALSE — A completed arrival in a past narrative needs past simple: \"when we arrived,\" not present perfect.\n\nTip: Do not mix a past continuous/simple story with present perfect for the same closed past.",
-        "TRUE — \"Be used to\" + noun correctly means accustomed to something.\n\nTip: After \"be used to,\" a noun or -ing form both work.",
-        "TRUE — \"Used to be\" correctly describes a past state that has changed.\n\nTip: \"Used to + be + adjective\" is fine for former feelings or identities.",
-        "TRUE — Future perfect places finding seats before the concert begins.\n\nTip: \"By the time + present\" for future reference still wants will have in the main clause."
+        "**A) Priya has lived in Lisbon for six years.**  (true)\n\nPresent perfect \"has lived\" with \"for six years\" correctly shows a Lisbon situation that continues now. The duration is measured up to the present, which is present-perfect territory.\n\n**Tip:** \"For + length of time\" with present perfect usually means the situation is still true.",
+        "**B) The trail was still wet when we have arrived.**  (false)\n\nTrap: a completed arrival inside a past narrative needs past simple, not present perfect. Repair to \"The trail was still wet when we arrived.\" Do not mix a past continuous/simple story with present perfect for the same closed past.",
+        "**C) I am used to the noise from the tram line.**  (true)\n\n\"Am used to the noise\" correctly means accustomed to the tram line. After \"be used to,\" a noun works just as well as a gerund.\n\n**Tip:** After \"be used to,\" use a noun or an -ing form — both are fine.",
+        "**D) He used to be afraid of public speaking.**  (true)\n\n\"Used to be afraid\" correctly describes a past state of fear that has changed. \"Used to + be + adjective\" is a clean pattern for former feelings or identities.\n\n**Tip:** Former states take \"used to be\" just as former habits take \"used to + V1.\"",
+        "**E) By the time the concert starts, we will have found our seats.**  (true)\n\nFuture perfect \"will have found\" places finding seats before the concert begins. Even though the time clause uses present \"starts,\" the main clause still needs will have for prior completion.\n\n**Tip:** \"By the time + present\" for future reference wants will have in the main clause."
       ],
       "highlights": [
         "has lived",
@@ -224,7 +266,7 @@
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.1",
-      "solution_overview": "Watch the one timeline clash: a finished past arrival cannot wear present perfect. Everything else — \"for,\" \"be used to,\" \"used to be,\" and future perfect — is clean."
+      "solution_overview": "Watch the one timeline clash: a finished past arrival cannot wear present perfect. Everything else — \"for,\" \"be used to,\" \"used to be,\" and future perfect — is clean.\n\n**Part 1: What to watch for.**\n\nPresent perfect + \"for\" shows a situation that continues now. A closed past narrative needs past simple for the arrival, not present perfect. \"Be used to\" + noun means accustomed to. \"Used to be\" describes a past state that changed. \"By the time + present\" for future reference still wants will have in the main clause.\n\n**Part 2: How to decide.**\n\nSeparate open duration and future-before-future from closed past storytelling. Only the mixed past narrative fails.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-1-08",
@@ -238,13 +280,19 @@
         "We will have walked ten kilometres by lunchtime.",
         "My cousins used to visit us every summer."
       ],
-      "answer_key": [true, true, false, true, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Past simple with \"last Sunday\" correctly closes a finished event.\n\nTip: Day/date anchors → past simple.",
-        "TRUE — Present perfect with \"just\" marks a recent action with present relevance.\n\nTip: \"Just / already / yet\" are classic present-perfect companions.",
-        "FALSE — \"Prefer\" is stative; write \"prefers,\" not continuous.\n\nTip: Likes and preferences stay simple unless you force a temporary \"acting\" sense (rare in exams).",
-        "TRUE — Future perfect correctly projects distance covered before lunchtime.\n\nTip: Distance or quantity \"by\" a future point → will have + V3.",
-        "TRUE — \"Used to visit\" correctly reports a repeated past habit.\n\nTip: Frequency phrases (every summer) sit naturally with \"used to.\""
+        "**A) The bakery closed early last Sunday because of the heatwave.**  (true)\n\nPast simple \"closed\" with \"last Sunday\" correctly closes a finished bakery event. The day/date anchor makes past simple the only natural choice.\n\n**Tip:** Day and date anchors → past simple.",
+        "**B) She has just baked a loaf of sourdough.**  (true)\n\nPresent perfect \"has just baked\" marks a recent action with present relevance — the loaf is newly done. \"Just\" is a classic present-perfect companion in exam English.\n\n**Tip:** \"Just / already / yet\" are classic present-perfect signals.",
+        "**C) Tom is preferring tea to coffee these days.**  (false)\n\nTrap: \"prefer\" is stative, so \"is preferring\" is wrong. Repair to \"Tom prefers tea to coffee these days.\" Likes and preferences stay simple unless you force a rare temporary \"acting\" sense, which exams almost never want.",
+        "**D) We will have walked ten kilometres by lunchtime.**  (true)\n\nFuture perfect \"will have walked\" correctly projects ten kilometres covered before lunchtime. Quantity completed by a future point is will have territory.\n\n**Tip:** Distance or quantity \"by\" a future point → will have + past participle.",
+        "**E) My cousins used to visit us every summer.**  (true)\n\n\"Used to visit\" correctly reports a repeated past summer habit. Frequency phrases such as \"every summer\" sit naturally with \"used to.\"\n\n**Tip:** Repeated past visits that no longer happen → used to + base verb."
       ],
       "highlights": [
         "closed",
@@ -256,7 +304,7 @@
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.1",
-      "solution_overview": "Four good lines and one stative continuous. Separate closed past (\"last Sunday\") from recent present perfect (\"just\"), then reject \"is preferring.\""
+      "solution_overview": "Four good lines and one stative continuous. Separate closed past (\"last Sunday\") from recent present perfect (\"just\"), keep future perfect and past habit, then reject \"is preferring.\"\n\n**Part 1: What to watch for.**\n\nDay anchors such as \"last Sunday\" lock past simple. \"Just\" marks a recent action with present relevance in present perfect. \"Prefer\" is stative and stays simple. Distance covered \"by lunchtime\" wants future perfect. Frequency phrases sit naturally with \"used to.\"\n\n**Part 2: How to decide.**\n\nConfirm each time cue against its usual tense, then scan preferences and likes for illegal continuous forms.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-1-09",
@@ -270,13 +318,19 @@
         "They are used to get up early for rowing practice.",
         "By next winter, she will have completed her first marathon."
       ],
-      "answer_key": [false, true, true, false, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Life experience up to now needs present perfect: \"Have you ever climbed…?\" Past simple \"Did you ever\" is non-standard in careful exam English for open experience.\n\nTip: \"Ever\" for lifetime experience → Have you ever + V3?",
-        "TRUE — Present perfect correctly asks about experience at any time up to now.\n\nTip: \"Ever / never\" + present perfect = life experience.",
-        "TRUE — Past continuous background + past simple interrupt is textbook.\n\nTip: Reading was in progress; snow was the interrupt.",
-        "FALSE — Familiarity needs \"be used to\" + -ing: \"are used to getting up,\" not \"are used to get.\"\n\nTip: After \"be used to,\" add a gerund or a noun — never a bare infinitive.",
-        "TRUE — Future perfect places marathon completion before next winter.\n\nTip: \"By next + season/year\" → will have + V3."
+        "**A) Did you ever climb a volcano?**  (false)\n\nTrap: life experience up to now needs present perfect. Repair to \"Have you ever climbed a volcano?\" Past simple \"Did you ever\" is non-standard in careful exam English for open lifetime experience.",
+        "**B) Have you ever climbed a volcano?**  (true)\n\nPresent perfect \"Have you ever climbed\" correctly asks about experience at any time up to now. \"Ever\" with present perfect is the standard life-experience pattern.\n\n**Tip:** \"Ever / never\" + present perfect = life experience.",
+        "**C) While I was reading on the balcony, it started to snow.**  (true)\n\nPast continuous \"was reading\" sets the balcony background; past simple \"started\" marks the snow interrupt. Reading was in progress; snow was the sudden change.\n\n**Tip:** Longer in-progress action → continuous; interrupt → simple past.",
+        "**D) They are used to get up early for rowing practice.**  (false)\n\nTrap: familiarity needs \"be used to\" + -ing. Repair to \"They are used to getting up early for rowing practice.\" After \"be used to,\" add a gerund or a noun — never a bare infinitive.",
+        "**E) By next winter, she will have completed her first marathon.**  (true)\n\nFuture perfect \"will have completed\" places marathon completion before next winter. Seasonal \"by next …\" deadlines routinely take will have + past participle.\n\n**Tip:** \"By next + season/year\" → will have + V3."
       ],
       "highlights": [
         "Did you ever climb",
@@ -288,7 +342,7 @@
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.1",
-      "solution_overview": "Compare the two experience questions side by side, keep the continuous–simple pair, fix \"be used to\" + -ing, and lock future perfect with \"by next winter.\""
+      "solution_overview": "Compare the two experience questions side by side, keep the continuous–simple pair, fix \"be used to\" + -ing, and lock future perfect with \"by next winter.\"\n\n**Part 1: What to watch for.**\n\nLifetime experience up to now needs present perfect with \"ever,\" not past simple \"Did you ever\" in careful exam English. Background continuous plus simple interrupt stays textbook. After \"be used to,\" you need a gerund, never a bare infinitive. \"By next winter\" wants future perfect.\n\n**Part 2: How to decide.**\n\nTreat A and B as a minimal pair, then check gerund form after \"be used to\" and the future-perfect deadline.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-1-10",
@@ -302,13 +356,19 @@
         "By eight o’clock, the photographer will have set up the lights.",
         "Hana has known her climbing partner for a decade."
       ],
-      "answer_key": [true, false, true, true, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Present perfect with \"since midnight\" fits repeated crashes still relevant now.\n\nTip: Tech glitches with \"since\" stay in present perfect.",
-        "FALSE — \"Understand\" is stative; use \"understood\" (past simple) for the background sense before the alarm.\n\nTip: Stative verbs rarely take past continuous in exam answers.",
-        "TRUE — \"Used to take\" correctly marks a discontinued route habit.\n\nTip: Past habit blocked by a later change → used to + V1.",
-        "TRUE — Future perfect places set-up before eight o’clock.\n\nTip: Clock \"by\" + future perfect.",
-        "TRUE — Present perfect of stative \"know\" with \"for\" correctly shows a continuing relationship.\n\nTip: \"Have known … for\" beats \"am knowing.\""
+        "**A) The app update has crashed twice since midnight.**  (true)\n\nPresent perfect \"has crashed\" with \"since midnight\" fits repeated glitches that still matter now. Tech problems counted from a start point into the present stay in present perfect.\n\n**Tip:** Repeated events with \"since\" usually stay in present perfect.",
+        "**B) I was understanding the lecture until the fire alarm rang.**  (false)\n\nTrap: \"understand\" is stative, so \"was understanding\" is wrong in exam English. Repair to past simple \"I understood the lecture until the fire alarm rang\" for the sense before the interrupt. Stative verbs rarely take past continuous in exam answers.",
+        "**C) We used to take the coastal path before the landslide.**  (true)\n\n\"Used to take\" correctly marks a coastal-path habit that ended after the landslide. A later change that blocks the old routine is exactly what \"used to\" signals.\n\n**Tip:** Past habit blocked by a later change → used to + base verb.",
+        "**D) By eight o’clock, the photographer will have set up the lights.**  (true)\n\nFuture perfect \"will have set up\" places the lighting ready before eight o'clock. A clock deadline with \"by\" is a classic future-perfect cue.\n\n**Tip:** Clock \"by\" + future perfect.",
+        "**E) Hana has known her climbing partner for a decade.**  (true)\n\nPresent perfect \"has known\" with \"for a decade\" correctly shows a continuing relationship. For stative \"know,\" duration up to now takes have/has known — never \"am knowing.\"\n\n**Tip:** \"Have known … for\" beats any continuous \"knowing.\""
       ],
       "highlights": [
         "has crashed",
@@ -320,7 +380,7 @@
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.1",
-      "solution_overview": "Four keepers and one stative continuous. Trust \"since,\" \"used to,\" future perfect, and \"have known\" — reject \"was understanding.\""
+      "solution_overview": "Four keepers and one stative continuous. Trust \"since,\" \"used to,\" future perfect, and \"have known\" — reject \"was understanding.\"\n\n**Part 1: What to watch for.**\n\nPresent perfect with \"since midnight\" fits repeated crashes still relevant now. \"Understand\" is stative and rarely takes past continuous in exams. \"Used to take\" marks a discontinued route. Clock \"by\" wants future perfect. Stative \"know\" with \"for\" takes present perfect simple.\n\n**Part 2: How to decide.**\n\nApprove the four standard tense pairings, then ask whether continuous is trying to attach to a stative verb — that is the false line.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-1-11",
@@ -334,13 +394,19 @@
         "I am getting used to the new keyboard layout.",
         "They will have reheated the soup by the time you arrive."
       ],
-      "answer_key": [false, true, false, true, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Both events are in the past; the earlier sunrise needs past perfect, not present perfect.\n\nTip: Closed past narrative → had + V3 for the earlier action.",
-        "TRUE — Past perfect correctly places sunrise before the summit arrival.\n\nTip: \"Already\" + past perfect marks the prior completed state.",
-        "FALSE — \"Seem\" is stative; write \"seems,\" not continuous.\n\nTip: Appearance verbs (seem, appear = look like) stay simple.",
-        "TRUE — \"Get used to\" + noun correctly means becoming accustomed.\n\nTip: \"Get used to\" = the process of adapting; \"be used to\" = already adapted.",
-        "TRUE — Future perfect places reheating before your arrival.\n\nTip: \"By the time you arrive\" → will have + V3."
+        "**A) When we reached the summit, the sun has already risen.**  (false)\n\nTrap: both events are in the past, so the earlier sunrise needs past perfect, not present perfect. Repair to \"When we reached the summit, the sun had already risen.\" Closed past narrative → had + V3 for the earlier action.",
+        "**B) When we reached the summit, the sun had already risen.**  (true)\n\nPast perfect \"had already risen\" correctly places sunrise before the summit arrival. \"Already\" with past perfect marks the prior completed state clearly.\n\n**Tip:** \"Already\" + past perfect flags a state completed before another past event.",
+        "**C) She is seeming tired after the long rehearsal.**  (false)\n\nTrap: \"seem\" is stative, so \"is seeming\" is wrong. Repair to \"She seems tired after the long rehearsal.\" Appearance verbs (seem, appear = look like) stay simple in exam prose.",
+        "**D) I am getting used to the new keyboard layout.**  (true)\n\n\"Getting used to\" correctly means becoming accustomed to the new keyboard. This is the process of adapting, which differs from \"be used to\" (already adapted).\n\n**Tip:** \"Get used to\" = adapting; \"be used to\" = already familiar.",
+        "**E) They will have reheated the soup by the time you arrive.**  (true)\n\nFuture perfect \"will have reheated\" places the reheating before your arrival. \"By the time you arrive\" is a standard cue for will have + past participle.\n\n**Tip:** \"By the time + present\" for future reference → will have + V3."
       ],
       "highlights": [
         "has already risen",
@@ -352,7 +418,7 @@
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.1",
-      "solution_overview": "Contrast the two summit lines carefully, reject stative \"seeming,\" and accept \"get used to\" plus future perfect as clean."
+      "solution_overview": "Contrast the two summit lines carefully, reject stative \"seeming,\" and accept \"get used to\" plus future perfect as clean.\n\n**Part 1: What to watch for.**\n\nIn a closed past narrative, the earlier sunrise needs past perfect, not present perfect. \"Seem\" is stative and stays simple. \"Get used to\" means becoming accustomed — the process of adapting. \"By the time you arrive\" wants will have in the main clause.\n\n**Part 2: How to decide.**\n\nRead A and B as a minimal pair for past perfect versus present perfect, then check stative continuous and the adapting / future-perfect lines.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-1-12",
@@ -366,13 +432,19 @@
         "Jonas used to living near the botanical gardens.",
         "By Thursday evening, we will have curated the exhibition labels."
       ],
-      "answer_key": [false, true, true, false, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Duration up to now with \"how long\" needs present perfect continuous: \"have you been waiting.\"\n\nTip: \"How long …?\" for ongoing action → have/has been + -ing.",
-        "TRUE — Present perfect continuous correctly asks about waiting that started earlier and continues.\n\nTip: Visible temporary activity + duration → present perfect continuous.",
-        "TRUE — Past simple with \"last winter\" correctly counts finished floods in a closed season.\n\nTip: Numbered past events in a finished period → past simple.",
-        "FALSE — Past habit needs \"used to live,\" not \"used to living.\"\n\nTip: Never put -ing after \"used to\" for habit.",
-        "TRUE — Future perfect places curation before Thursday evening.\n\nTip: Art-deadline \"by\" → will have + V3."
+        "**A) How long are you waiting for the night bus?**  (false)\n\nTrap: duration up to now with \"how long\" needs present perfect continuous. Repair to \"How long have you been waiting for the night bus?\" Present continuous alone does not cover the stretch from past into now.",
+        "**B) How long have you been waiting for the night bus?**  (true)\n\nPresent perfect continuous \"have you been waiting\" correctly asks about waiting that started earlier and continues. Visible temporary activity plus duration is exactly this form's job.\n\n**Tip:** Ongoing action + duration up to now → have/has been + -ing.",
+        "**C) The river flooded the towpath three times last winter.**  (true)\n\nPast simple \"flooded\" with \"last winter\" correctly counts finished floods in a closed season. Numbered past events inside a finished period take past simple.\n\n**Tip:** Finished period + count of events → past simple.",
+        "**D) Jonas used to living near the botanical gardens.**  (false)\n\nTrap: past habit needs \"used to live,\" not \"used to living.\" Repair to \"Jonas used to live near the botanical gardens.\" Never put -ing after \"used to\" when you mean habit.",
+        "**E) By Thursday evening, we will have curated the exhibition labels.**  (true)\n\nFuture perfect \"will have curated\" places the labels ready before Thursday evening. Art-deadline \"by\" is another future-perfect cue.\n\n**Tip:** Deadline \"by\" + completion → will have + V3."
       ],
       "highlights": [
         "are you waiting",
@@ -384,7 +456,7 @@
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.1",
-      "solution_overview": "Duration questions need present perfect continuous, closed seasons need past simple, and \"used to\" never takes -ing for habit. Future perfect with \"by\" stays solid."
+      "solution_overview": "Duration questions need present perfect continuous, closed seasons need past simple, and \"used to\" never takes -ing for habit. Future perfect with \"by\" stays solid.\n\n**Part 1: What to watch for.**\n\n\"How long\" for an ongoing wait wants have/has been + -ing. \"Last winter\" locks numbered past events into past simple. Past habit is \"used to live,\" never \"used to living.\" Thursday-evening \"by\" wants future perfect.\n\n**Part 2: How to decide.**\n\nCompare the two duration questions as a pair, then check the past-season count, the \"used to\" form, and the curation deadline.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-1-13",
@@ -398,13 +470,19 @@
         "She is used to cook for large family gatherings.",
         "By the time the podcast drops, the host will have recorded three more episodes."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Present perfect continuous of \"mean\" is an accepted fixed pattern for delayed intention.\n\nTip: \"Have been meaning to…\" is a rare continuous that exams often accept.",
-        "FALSE — \"Fit\" as a size/state is stative; prefer \"fits\" (or \"fit\" in AmE past) — not continuous for a permanent/current size fact.\n\nTip: Clothing size → simple: It fits me.",
-        "TRUE — Past perfect correctly shows dinner ended before the doorbell.\n\nTip: \"Before\" often helps you spot the earlier past action.",
-        "FALSE — Familiarity needs \"is used to cooking,\" not \"is used to cook.\"\n\nTip: Be used to + -ing / noun, never bare infinitive.",
-        "TRUE — Future perfect places recording before the podcast release.\n\nTip: Media schedules with \"by the time\" invite will have."
+        "**A) I have been meaning to call you all week.**  (true)\n\nPresent perfect continuous \"have been meaning\" is an accepted fixed pattern for an intention delayed all week. Exams usually treat this rare continuous as correct.\n\n**Tip:** \"Have been meaning to…\" is one continuous form examiners routinely accept.",
+        "**B) This jacket is fitting me perfectly today.**  (false)\n\nTrap: \"fit\" as a size/state is stative, so \"is fitting\" is wrong for a current size fact. Repair to \"This jacket fits me perfectly today.\" Clothing size statements stay simple: It fits me.",
+        "**C) We had finished dinner before the guests rang the doorbell.**  (true)\n\nPast perfect \"had finished\" correctly shows dinner ended before the doorbell. The word \"before\" helps you spot which past action is earlier.\n\n**Tip:** \"Before\" often marks the earlier past action for past perfect.",
+        "**D) She is used to cook for large family gatherings.**  (false)\n\nTrap: familiarity needs \"is used to cooking,\" not \"is used to cook.\" Repair by swapping the bare infinitive for a gerund. After \"be used to,\" use -ing or a noun — never a bare infinitive.",
+        "**E) By the time the podcast drops, the host will have recorded three more episodes.**  (true)\n\nFuture perfect \"will have recorded\" places the three extra episodes before the podcast drops. Release schedules with \"by the time\" routinely take will have.\n\n**Tip:** \"By the time + present\" for a future release → will have + V3."
       ],
       "highlights": [
         "have been meaning",
@@ -416,7 +494,7 @@
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.1",
-      "solution_overview": "Accept the idiomatic \"have been meaning,\" keep past perfect and future perfect, and reject stative \"fitting\" plus the bare infinitive after \"be used to.\""
+      "solution_overview": "Accept the idiomatic \"have been meaning,\" keep past perfect and future perfect, and reject stative \"fitting\" plus the bare infinitive after \"be used to.\"\n\n**Part 1: What to watch for.**\n\n\"Have been meaning to\" is an accepted continuous for delayed intention. Clothing-size \"fit\" is stative and prefers simple \"fits.\" \"Before\" often flags past perfect for the earlier action. \"Be used to\" needs -ing, not a bare infinitive. Media schedules with \"by the time\" invite will have.\n\n**Part 2: How to decide.**\n\nKeep the idiomatic and sequencing lines; fail only the stative continuous and the broken \"be used to\" pattern.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-1-14",
@@ -430,13 +508,19 @@
         "I am tasting the soup to check the seasoning.",
         "By noon tomorrow, the drones will have mapped the whole coastline."
       ],
-      "answer_key": [false, true, true, true, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — \"Since\" with a continuing change needs present perfect (continuous), not present continuous alone.\n\nTip: \"Since + -ing / since + time\" → have/has (been) + verb.",
-        "TRUE — Present perfect continuous correctly links the move to an ongoing social change.\n\nTip: Process + since → have been + -ing.",
-        "TRUE — \"Used to open\" correctly reports a former schedule.\n\nTip: Former rules and timetables take used to + V1.",
-        "TRUE — \"Taste\" here is a deliberate action (sampling), so continuous is allowed.\n\nTip: Dynamic sense of sense verbs (taste/smell/feel on purpose) can take -ing.",
-        "TRUE — Future perfect places mapping completion before noon tomorrow.\n\nTip: Science deadlines with \"by\" → will have + V3."
+        "**A) Since moving abroad, Lara is making friends more easily.**  (false)\n\nTrap: \"since\" with a continuing social change needs present perfect (continuous), not present continuous alone. Repair to \"Since moving abroad, Lara has been making friends more easily.\" \"Since + -ing / since + time\" → have/has (been) + verb.",
+        "**B) Since moving abroad, Lara has been making friends more easily.**  (true)\n\nPresent perfect continuous \"has been making\" correctly links the move abroad to an ongoing change in how easily Lara makes friends. Process + since is classic have been + -ing territory.\n\n**Tip:** Ongoing process after \"since\" → have/has been + -ing.",
+        "**C) The museum used to open only on weekdays.**  (true)\n\n\"Used to open\" correctly reports a former weekday-only schedule. Former rules and timetables take used to + base verb.\n\n**Tip:** Old schedules that no longer apply → used to + V1.",
+        "**D) I am tasting the soup to check the seasoning.**  (true)\n\n\"Am tasting\" is allowed because \"taste\" here is a deliberate action — sampling to check seasoning — not a permanent stative property. Dynamic senses of sense verbs can take continuous.\n\n**Tip:** When you taste/smell/feel on purpose, -ing is fine.",
+        "**E) By noon tomorrow, the drones will have mapped the whole coastline.**  (true)\n\nFuture perfect \"will have mapped\" places coastline mapping complete before noon tomorrow. Science deadlines with \"by\" take will have + past participle.\n\n**Tip:** Future deadline with \"by\" → will have + V3."
       ],
       "highlights": [
         "is making",
@@ -448,7 +532,7 @@
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.1",
-      "solution_overview": "Pair the \"since\" lines carefully, keep \"used to\" and future perfect, and notice when a sense verb becomes dynamic (\"am tasting\") so continuous is fine."
+      "solution_overview": "Pair the \"since\" lines carefully, keep \"used to\" and future perfect, and notice when a sense verb becomes dynamic (\"am tasting\") so continuous is fine.\n\n**Part 1: What to watch for.**\n\n\"Since\" with a continuing change needs present perfect (continuous), not present continuous alone. \"Used to open\" reports a former timetable. Deliberate \"taste\" (sampling) can take continuous. Mapping completion \"by noon tomorrow\" wants future perfect.\n\n**Part 2: How to decide.**\n\nTreat A/B as a minimal pair for \"since,\" then accept the remaining three as clean once you see the dynamic tasting sense.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-1-15",
@@ -462,13 +546,19 @@
         "They will have been travelling for fourteen hours by the time they land.",
         "I used to be used to the cold winters, but I am not any more."
       ],
-      "answer_key": [true, true, false, true, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — \"Has gone\" correctly means he went and is still away.\n\nTip: Has gone = left and not back yet.",
-        "TRUE — \"Has been to\" correctly means visited and returned (experience/count).\n\nTip: Has been to = visited; has gone to = still there.",
-        "FALSE — In careful exam English, \"love\" stays stative: \"We love this class,\" not continuous (marketing \"I’m loving\" is informal).\n\nTip: Exam default: like/love/hate → simple forms.",
-        "TRUE — Future perfect continuous correctly stresses duration before landing.\n\nTip: \"By the time\" + duration → will have been + -ing.",
-        "TRUE — The sentence deliberately contrasts \"used to be\" (past state) with \"be used to\" (familiarity) — both forms are used correctly.\n\nTip: Used to be ≠ be used to; you can combine them when meaning requires it."
+        "**A) He has gone to the allotment — he should be back by dusk.**  (true)\n\n\"Has gone\" correctly means he went to the allotment and is still away, with return expected by dusk. The present result is absence, which is what \"has gone\" encodes.\n\n**Tip:** Has gone = left and not back yet.",
+        "**B) He has been to the allotment three times this week.**  (true)\n\n\"Has been to\" correctly means visited and returned — three completed visits this week. That experience/count reading is different from \"has gone,\" which would leave him still there.\n\n**Tip:** Has been to = visited; has gone to = still there.",
+        "**C) We are loving this new pottery class.**  (false)\n\nTrap: in careful exam English, \"love\" stays stative. Repair to \"We love this new pottery class.\" Marketing \"I'm loving it\" is too informal for the default exam standard.",
+        "**D) They will have been travelling for fourteen hours by the time they land.**  (true)\n\nFuture perfect continuous \"will have been travelling\" correctly stresses fourteen hours of travel completed before landing. Duration up to a future point is will have been + -ing territory.\n\n**Tip:** \"By the time\" + duration → will have been + -ing.",
+        "**E) I used to be used to the cold winters, but I am not any more.**  (true)\n\nThe sentence deliberately contrasts \"used to be\" (a past state of cold-hardiness) with \"be used to\" (familiarity) and uses both forms correctly. The closing \"I am not any more\" shows the familiarity has ended.\n\n**Tip:** Used to be ≠ be used to; combining them is fine when meaning needs both."
       ],
       "highlights": [
         "has gone",
@@ -480,7 +570,7 @@
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.1",
-      "solution_overview": "Master \"gone\" versus \"been,\" reject informal continuous \"loving,\" accept future perfect continuous for duration, and parse the double \"used to\" contrast carefully."
+      "solution_overview": "Master \"gone\" versus \"been,\" reject informal continuous \"loving,\" accept future perfect continuous for duration, and parse the double \"used to\" contrast carefully.\n\n**Part 1: What to watch for.**\n\n\"Has gone\" means left and still away; \"has been to\" means visited and returned. In careful exam English, \"love\" stays stative. Duration before landing wants will have been + -ing. You can correctly combine \"used to be\" (past state) with \"be used to\" (familiarity) when the meaning requires both.\n\n**Part 2: How to decide.**\n\nSeparate the allotment pair first, reject marketing-style \"are loving,\" then confirm duration and the nested used-to contrast.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-1-16",
@@ -494,13 +584,19 @@
         "People are depending on the coastal path for weekend walks.",
         "By the end of the festival, performers will have given forty shows."
       ],
-      "answer_key": [true, false, true, true, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — \"This is the first time\" requires present perfect for the new experience.\n\nTip: First/second/third time + present perfect.",
-        "FALSE — Past simple after \"this is the first time\" breaks the pattern; use \"have ever tried.\"\n\nTip: If the sentence starts with \"This is the first time,\" expect have/has + V3.",
-        "TRUE — Continuous background + simple interrupt works for café chaos too.\n\nTip: Machine jam = short interrupt.",
-        "TRUE — \"Depend\" here describes a current community pattern; continuous is acceptable for a temporary/current reliance (and simple \"depend\" would also work).\n\nTip: Some verbs allow continuous when you stress a current situation.",
-        "TRUE — Future perfect totals shows before the festival ends.\n\nTip: Quantity completed \"by the end\" → will have + V3."
+        "**A) This is the first time I have ever tried paddleboarding.**  (true)\n\n\"This is the first time\" requires present perfect for the new paddleboarding experience. The pattern first/second/third time + have/has + past participle is fixed in exam English.\n\n**Tip:** First/second/third time + present perfect.",
+        "**B) This is the first time I ever tried paddleboarding.**  (false)\n\nTrap: past simple after \"this is the first time\" breaks the pattern. Repair to \"This is the first time I have ever tried paddleboarding.\" If the sentence starts with \"This is the first time,\" expect have/has + V3.",
+        "**C) While the barista was frothing milk, the espresso machine jammed.**  (true)\n\nPast continuous \"was frothing\" sets the barista's background; past simple \"jammed\" marks the short machine interrupt. Café chaos still follows the same continuous–simple pairing.\n\n**Tip:** Machine jam = short interrupt against a longer background.",
+        "**D) People are depending on the coastal path for weekend walks.**  (true)\n\n\"Are depending\" describes a current community pattern of reliance on the coastal path, so continuous is acceptable here (simple \"depend\" would also work). Some verbs allow continuous when you stress the present situation.\n\n**Tip:** Continuous can highlight a current temporary or situational reliance.",
+        "**E) By the end of the festival, performers will have given forty shows.**  (true)\n\nFuture perfect \"will have given\" totals forty shows before the festival ends. Quantity completed \"by the end\" is will have territory.\n\n**Tip:** Count completed \"by the end\" → will have + V3."
       ],
       "highlights": [
         "have ever tried",
@@ -512,7 +608,7 @@
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.1",
-      "solution_overview": "Lock the \"first time\" + present perfect rule, keep the café interrupt pair and future perfect, and treat \"are depending\" as an acceptable current-situation continuous."
+      "solution_overview": "Lock the \"first time\" + present perfect rule, keep the café interrupt pair and future perfect, and treat \"are depending\" as an acceptable current-situation continuous.\n\n**Part 1: What to watch for.**\n\n\"This is the first time\" requires present perfect for the new experience. Background continuous plus simple interrupt works in the café scene. \"Depend\" can take continuous when you stress a current community reliance. Quantity completed \"by the end\" wants future perfect.\n\n**Part 2: How to decide.**\n\nFail only the past-simple \"first time\" line; keep the rest once each cue matches its usual form.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-1-17",
@@ -526,13 +622,19 @@
         "The soup is smelling of garlic and thyme right now.",
         "By next spring, we will have been volunteering at the shelter for five years."
       ],
-      "answer_key": [false, true, true, true, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — After \"I wish\" for a past regret, use past perfect: \"I wish I had packed,\" not \"would have packed.\"\n\nTip: Wish + past perfect for past regrets; save would for present wishes about others’ behaviour.",
-        "TRUE — Past perfect correctly expresses a regret about yesterday’s packing.\n\nTip: I wish + had + V3 = past counterfactual.",
-        "TRUE — Present perfect continuous correctly stresses ongoing unfinished mural work.\n\nTip: All morning + still going → have been + -ing.",
-        "TRUE — \"Smell\" here reports a temporary sensory impression, so continuous is natural.\n\nTip: Dynamic sense (how something smells now) can take continuous; stative \"It smells of garlic\" is also fine.",
-        "TRUE — Future perfect continuous correctly projects five years of volunteering completed by next spring.\n\nTip: Duration up to a future point → will have been + -ing."
+        "**A) I wish I would have packed a warmer coat yesterday.**  (false)\n\nTrap: after \"I wish\" for a past regret, use past perfect, not \"would have packed.\" Repair to \"I wish I had packed a warmer coat yesterday.\" Save would for present wishes about someone else's behaviour, not for your own past regret.",
+        "**B) I wish I had packed a warmer coat yesterday.**  (true)\n\nPast perfect \"had packed\" correctly expresses regret about yesterday's packing choice. \"I wish + had + past participle\" is the standard past counterfactual.\n\n**Tip:** I wish + had + V3 = past regret.",
+        "**C) She has been working on the mural all morning and still isn’t finished.**  (true)\n\nPresent perfect continuous \"has been working\" correctly stresses mural work that has run all morning and is still unfinished. Duration plus \"still isn't finished\" is classic have been + -ing.\n\n**Tip:** All morning + still going → have/has been + -ing.",
+        "**D) The soup is smelling of garlic and thyme right now.**  (true)\n\n\"Is smelling\" reports a temporary sensory impression right now, so continuous is natural. The dynamic sense (how the soup smells at this moment) can take -ing; stative \"It smells of garlic\" would also be fine.\n\n**Tip:** Temporary how-it-smells-now readings can take continuous.",
+        "**E) By next spring, we will have been volunteering at the shelter for five years.**  (true)\n\nFuture perfect continuous \"will have been volunteering\" correctly projects five years completed by next spring. Duration stretching up to a future point wants will have been + -ing.\n\n**Tip:** Long duration up to a future point → will have been + -ing."
       ],
       "highlights": [
         "would have packed",
@@ -544,7 +646,7 @@
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.1",
-      "solution_overview": "Fix the wish-regret pattern, then accept present perfect continuous, a dynamic sensory continuous, and future perfect continuous for long-running volunteering."
+      "solution_overview": "Fix the wish-regret pattern, then accept present perfect continuous, a dynamic sensory continuous, and future perfect continuous for long-running volunteering.\n\n**Part 1: What to watch for.**\n\nAfter \"I wish\" for a past regret, use past perfect — not \"would have.\" All-morning unfinished work wants have been + -ing. Temporary \"smell\" impressions can take continuous. Five years of volunteering by next spring wants will have been + -ing.\n\n**Part 2: How to decide.**\n\nTreat A/B as the regret minimal pair, then confirm the three advanced continuous patterns on C–E.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-1-18",
@@ -558,13 +660,19 @@
         "I am seeing what you mean about the plot twist.",
         "They will finish the crossword by tonight — in fact, they will have finished it by six."
       ],
-      "answer_key": [false, true, true, true, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — \"It’s high time\" takes a past-simple form with present meaning: \"updated,\" not present perfect.\n\nTip: High time / about time + past simple (unreal present).",
-        "TRUE — Past simple after \"It’s high time\" correctly marks overdue action.\n\nTip: Treat \"high time\" like a mini-unreal: past form, present urgency.",
-        "TRUE — Past perfect for the earlier storm, past simple for the later singing — clean sequence.\n\nTip: After + past perfect, then simple past for the next event.",
-        "TRUE — \"See\" here means \"understand,\" and continuous \"am seeing\" is accepted in modern careful English for gradual understanding (simple \"see\" is also fine).\n\nTip: Mental \"see\" can take continuous when understanding unfolds.",
-        "TRUE — The second clause correctly upgrades to future perfect for a clearer \"by six\" completion.\n\nTip: \"Will finish by\" is ok; \"will have finished by\" is more precise for completion."
+        "**A) It’s high time we have updated the club website.**  (false)\n\nTrap: \"It's high time\" takes a past-simple form with present meaning, not present perfect. Repair to \"It's high time we updated the club website.\" High time / about time + past simple marks overdue action now.",
+        "**B) It’s high time we updated the club website.**  (true)\n\nPast simple \"updated\" after \"It's high time\" correctly marks overdue action with present urgency. Treat \"high time\" like a mini-unreal: past form, present pressure.\n\n**Tip:** High time + past simple = overdue now.",
+        "**C) After the storm had passed, birds began singing again.**  (true)\n\nPast perfect \"had passed\" marks the earlier storm; past simple \"began\" covers the later singing. After + past perfect, then simple past for the next event, is a clean sequence.\n\n**Tip:** After + past perfect → simple past for what followed.",
+        "**D) I am seeing what you mean about the plot twist.**  (true)\n\n\"Am seeing\" here means understanding gradually, and continuous is accepted in modern careful English for that unfolding sense (simple \"see\" is also fine). Mental \"see\" can take continuous when comprehension is in progress.\n\n**Tip:** Understanding-as-process can take continuous \"seeing.\"",
+        "**E) They will finish the crossword by tonight — in fact, they will have finished it by six.**  (true)\n\nThe second clause correctly upgrades to future perfect for clearer completion by six. \"Will finish by\" is acceptable; \"will have finished by\" is more precise when you mean already done at that clock time.\n\n**Tip:** Prefer will have + V3 when \"by\" means completion before the deadline."
       ],
       "highlights": [
         "have updated",
@@ -576,7 +684,7 @@
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.1",
-      "solution_overview": "Apply the \"high time\" + past simple rule, keep past-perfect sequencing, accept gradual \"am seeing,\" and prefer future perfect for precise \"by\" completion."
+      "solution_overview": "Apply the \"high time\" + past simple rule, keep past-perfect sequencing, accept gradual \"am seeing,\" and prefer future perfect for precise \"by\" completion.\n\n**Part 1: What to watch for.**\n\n\"It's high time\" takes a past-simple form with present urgency — not present perfect. After a storm that had passed, past simple covers the next event. Mental \"see\" (= understand) can take continuous as understanding unfolds. \"Will have finished by six\" is more precise than plain will for prior completion.\n\n**Part 2: How to decide.**\n\nFail only the broken high-time line; keep B–E as clean advanced patterns.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-1-19",
@@ -590,13 +698,19 @@
         "We are having a brilliant time at the street festival.",
         "By the time you read this postcard, we will already arrive in Lisbon."
       ],
-      "answer_key": [false, true, true, true, false],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — \"No sooner\" needs inversion: \"No sooner had the train left…,\" not subject–verb order without the auxiliary fronted.\n\nTip: No sooner + had + subject + V3 + than…",
-        "TRUE — Inverted past perfect correctly pairs with \"than\" for immediate sequence.\n\nTip: Inversion after no sooner / hardly / scarcely is exam gold.",
-        "TRUE — \"Have yet to\" is a present-perfect pattern meaning \"still haven’t done.\"\n\nTip: Have yet to + V1 = still outstanding.",
-        "TRUE — \"Have\" for experiences/enjoyment is dynamic, so continuous is fine.\n\nTip: Having a good time / having lunch = action; owning = stative.",
-        "FALSE — \"By the time\" with a future reading needs future perfect: \"will already have arrived,\" not \"will already arrive.\"\n\nTip: By the time + present → will have + V3 in the main clause."
+        "**A) No sooner the train had left than the platform announcement began.**  (false)\n\nTrap: \"No sooner\" needs inversion with the auxiliary fronted. Repair to \"No sooner had the train left than the platform announcement began.\" Subject–verb order without fronted had is the classic mistake.",
+        "**B) No sooner had the train left than the platform announcement began.**  (true)\n\nInverted past perfect \"No sooner had the train left\" correctly pairs with \"than\" for an immediate follow-up announcement. Inversion after no sooner / hardly / scarcely is exam gold.\n\n**Tip:** No sooner + had + subject + V3 + than…",
+        "**C) I have yet to try the new climbing wall downtown.**  (true)\n\n\"Have yet to try\" is a present-perfect pattern meaning you still have not done it. The climbing wall remains outstanding experience.\n\n**Tip:** Have yet to + base verb = still outstanding.",
+        "**D) We are having a brilliant time at the street festival.**  (true)\n\n\"Are having\" for enjoyment is dynamic, so continuous is fine — you are experiencing the festival, not \"owning\" a time. Contrast this with stative possession \"have,\" which stays simple.\n\n**Tip:** Having a good time / having lunch = action; owning = stative.",
+        "**E) By the time you read this postcard, we will already arrive in Lisbon.**  (false)\n\nTrap: \"by the time\" with a future reading needs future perfect. Repair to \"By the time you read this postcard, we will already have arrived in Lisbon.\" Plain \"will already arrive\" fails to mark completion before the reading moment."
       ],
       "highlights": [
         "No sooner the train had",
@@ -608,7 +722,7 @@
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.1",
-      "solution_overview": "Force inversion after \"no sooner,\" keep \"have yet to\" and dynamic \"having,\" and repair the broken future perfect after \"by the time.\""
+      "solution_overview": "Force inversion after \"no sooner,\" keep \"have yet to\" and dynamic \"having,\" and repair the broken future perfect after \"by the time.\"\n\n**Part 1: What to watch for.**\n\n\"No sooner\" needs auxiliary inversion: No sooner had + subject + V3 + than. \"Have yet to\" means still have not done something. Experiential \"having a brilliant time\" is dynamic, so continuous is fine. \"By the time\" with a future reading needs will have, not plain will arrive.\n\n**Part 2: How to decide.**\n\nCompare A/B as the inversion minimal pair, keep C/D, and fix E's missing future perfect.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-1-20",
@@ -622,13 +736,19 @@
         "I’m thinking that the gallery closes too early on Mondays.",
         "In two hours’ time, the tide will have turned and the rock pools will be underwater."
       ],
-      "answer_key": [false, true, true, false, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — \"Hardly\" needs inversion with past perfect: \"Hardly had I sat down…\"\n\nTip: Hardly / scarcely + had + subject + V3 + when…",
-        "TRUE — Correct inverted past perfect for an immediate follow-up event.\n\nTip: Match hardly … when with had + V3 after the fronted adverb.",
-        "TRUE — \"Want\" occasionally takes present perfect continuous for a long-standing desire; this is accepted in modern exam-tolerant English.\n\nTip: Have been wanting = desire lasting up to now.",
-        "FALSE — Opinion \"think\" (= believe) is stative: \"I think that…,\" not \"I’m thinking that…\" Continuous \"thinking\" is for mental process (\"I’m thinking about a title\").\n\nTip: Think = opinion → simple; think about = considering → continuous ok.",
-        "TRUE — Future perfect correctly places the turn of the tide before the two-hour mark, with a clear present-result consequence.\n\nTip: Nature deadlines with \"in … time\" + will have work well."
+        "**A) Hardly I had sat down when my phone buzzed.**  (false)\n\nTrap: \"Hardly\" needs inversion with past perfect. Repair to \"Hardly had I sat down when my phone buzzed.\" Without fronted had, the formal immediate-sequence pattern collapses.",
+        "**B) Hardly had I sat down when my phone buzzed.**  (true)\n\nCorrect inverted past perfect \"Hardly had I sat down\" marks sitting as complete just before the buzz. Match hardly … when with had + V3 after the fronted adverb.\n\n**Tip:** Hardly / scarcely + had + subject + V3 + when…",
+        "**C) She has been wanting a pottery wheel for months.**  (true)\n\n\"Has been wanting\" is accepted in modern exam-tolerant English for a desire lasting for months up to now. The continuous stresses the ongoing stretch of that wish.\n\n**Tip:** Have been wanting = desire lasting up to now.",
+        "**D) I’m thinking that the gallery closes too early on Mondays.**  (false)\n\nTrap: opinion \"think\" (= believe) is stative, so \"I'm thinking that…\" is wrong here. Repair to \"I think that the gallery closes too early on Mondays.\" Continuous \"thinking\" is for mental process (\"I'm thinking about a title\"), not for stating a belief.",
+        "**E) In two hours’ time, the tide will have turned and the rock pools will be underwater.**  (true)\n\nFuture perfect \"will have turned\" correctly places the tide's turn before the two-hour mark, with rock pools underwater as the clear present-result consequence. Nature timing with \"in … time\" pairs well with will have.\n\n**Tip:** \"In … time\" + prior completion → will have + V3."
       ],
       "highlights": [
         "Hardly I had",
@@ -640,7 +760,7 @@
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.1",
-      "solution_overview": "Close with inversion after \"hardly,\" accept long-running \"has been wanting,\" reject opinion continuous \"I’m thinking that,\" and keep future perfect for the tide."
+      "solution_overview": "Close with inversion after \"hardly,\" accept long-running \"has been wanting,\" reject opinion continuous \"I'm thinking that,\" and keep future perfect for the tide.\n\n**Part 1: What to watch for.**\n\n\"Hardly\" needs inversion: Hardly had + subject + V3 + when. \"Want\" can take present perfect continuous for a long-standing desire. Opinion \"think\" (= believe) stays simple; continuous \"thinking\" is for considering. Tide turning \"in two hours' time\" wants future perfect for prior completion.\n\n**Part 2: How to decide.**\n\nTreat A/B as the inversion pair, keep C and E, and fail D when \"think\" is pure opinion.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     }
   ]
 }

@@ -22,11 +22,11 @@
         false
       ],
       "tactical_explanations": [
-        "FALSE — The spices were not walking; the person walking is missing as the subject.\n\nTip: After a participial opener, the next noun must be the one doing/having that action.",
-        "FALSE — Lena was not packed in tissue; the vase was.\n\nTip: Match the participle to the thing modified: \"Packed…, the vase…\".",
-        "TRUE — The hikers hoped for clear skies, so the opener attaches correctly.\n\nTip: Ask who or what the -ing phrase describes; that answer should be the grammatical subject.",
-        "TRUE — The toast was burned on one side; the participle correctly modifies \"toast\".\n\nTip: Past participles often describe a state of the subject (burned, packed, frozen).",
-        "FALSE — The gym bag was not running late; the athlete was.\n\nTip: A dangling -ing phrase needs a person (or agent) as the subject of the main clause."
+        "**A) Walking through the market, the spices smelled amazing.**  (false)\n\nThe spices were not walking through the market — a person was. As written, the opener attaches to \"the spices,\" which creates a dangling participial phrase. Repair by naming the walker: \"Walking through the market, we noticed that the spices smelled amazing,\" or similar.\n\n**Tip:** After a participial opener, the next noun must be the one doing or having that action.",
+        "**B) Packed carefully in tissue paper, Lena carried the fragile vase home.**  (false)\n\nLena was not packed carefully in tissue paper; the vase was. The participle \"Packed…\" currently modifies \"Lena,\" so the attachment is backwards. Put the fragile object next: \"Packed carefully in tissue paper, the vase travelled home with Lena.\"\n\n**Tip:** Match the participle to the thing modified: \"Packed…, the vase…\".",
+        "**C) Hoping for clear skies, the hikers set out before dawn.**  (true)\n\nThe hikers hoped for clear skies, and \"the hikers\" is the subject that follows — so the -ing opener attaches cleanly. No dangling modifier here: the same people who hope are the ones setting out.\n\n**Tip:** Ask who or what the -ing phrase describes; that answer should be the grammatical subject.",
+        "**D) Burned on one side, the toast still tasted fine with jam.**  (true)\n\nThe toast was burned on one side, and \"the toast\" is exactly the subject that follows. Past participles often describe a state of the subject, which is the natural reading here — and it tastes fine with jam anyway.\n\n**Tip:** Past participles often describe a state of the subject (burned, packed, frozen).",
+        "**E) Running late for practice, the gym bag was left by the door.**  (false)\n\nThe gym bag was not running late for practice; the athlete was. An -ing opener about being late needs a person (or agent) as subject, not the bag left by the door.\n\nTrap: rewrite as \"Running late for practice, she left the gym bag by the door.\""
       ],
       "highlights": [
         "Walking through the market, the spices",
@@ -38,7 +38,7 @@
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.16",
-      "solution_overview": "Scan each opener: the participial phrase must modify the subject that follows. If spices walk or bags run late, the sentence dangles—rewrite so the logical doer becomes the subject."
+      "solution_overview": "Participial openers can make everyday scenes (markets, toast, gym bags) feel vivid — and they also create classic dangling-modifier traps.\n\n**Part 1: What to watch for.**\n\nA participial phrase at the start of the sentence (-ing or -ed) is meant to describe the grammatical subject that comes right after the comma. If spices walk through a market or a gym bag runs late, the opener has attached to the wrong noun. Past participles (burned, packed) often describe a state; present participles (walking, hoping, running) usually describe an action someone is doing.\n\n**Part 2: How to decide.**\n\nFor each line, ask: who or what is really doing or undergoing the participle? That answer must be the subject of the main clause. When the subject fails the test, the sentence is false — rewrite by naming the logical doer first.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-16-02",
@@ -60,11 +60,11 @@
         true
       ],
       "tactical_explanations": [
-        "TRUE — Maya was tired; the past participle correctly modifies her.\n\nTip: Adjective-like past participles (tired, excited, frozen) still need a matching subject.",
-        "TRUE — The boots were covered in mud; no dangling modifier.\n\nTip: If the participle describes a thing’s condition, that thing should be the subject.",
-        "FALSE — The trail did not lose the map; the hikers did.\n\nTip: \"Having + past participle\" still requires the logical agent as subject.",
-        "FALSE — An aroma cannot stir soup; the cook is missing.\n\nTip: Active -ing openers need a person (or agent) who performs the action.",
-        "TRUE — The children were excited; the opener attaches cleanly.\n\nTip: Emotion adjectives from participles (excited, worried) modify people, not places or objects."
+        "**A) Tired after the long flight, Maya collapsed onto the sofa.**  (true)\n\nMaya was tired after the long flight, and she is the subject after the comma, so the past-participle opener attaches correctly. Collapsing onto the sofa is a natural next action for that tired traveller.\n\n**Tip:** Adjective-like past participles (tired, excited, frozen) still need a matching subject.",
+        "**B) Covered in mud after the match, the boots needed a thorough scrub.**  (true)\n\nThe boots were covered in mud after the match, and \"the boots\" is the subject — a clean condition-of-a-thing attachment. No person is wrongly said to be muddy unless you put that person next.\n\n**Tip:** If the participle describes a thing’s condition, that thing should be the subject.",
+        "**C) Having lost the map, the trail suddenly seemed endless.**  (false)\n\nThe trail did not lose the map; the hikers did. \"Having + past participle\" still requires the logical agent as the subject of the main clause.\n\nTrap: use \"Having lost the map, the hikers found that the trail suddenly seemed endless.\"",
+        "**D) Stirring the soup slowly, a rich aroma filled the kitchen.**  (false)\n\nAn aroma cannot stir soup; the cook who is stirring is missing from the subject slot. Active -ing openers need a person (or agent) who performs the action.\n\nTrap: \"Stirring the soup slowly, the cook noticed a rich aroma filling the kitchen.\"",
+        "**E) Excited about the museum trip, the children packed their sketchbooks.**  (true)\n\nThe children were excited about the museum trip, and they are the subject — so the opener attaches cleanly. Emotion adjectives built from participles belong with people, not with sketchbooks or museums.\n\n**Tip:** Emotion adjectives from participles (excited, worried) modify people, not places or objects."
       ],
       "highlights": [
         "Tired after the long flight, Maya",
@@ -76,7 +76,7 @@
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.16",
-      "solution_overview": "Task 2 mixes past participles and \"having + PP\" forms. Correct lines keep agent and participle aligned; wrong ones assign map-losing or soup-stirring to trails and aromas."
+      "solution_overview": "This set mixes tired/excited states, muddy boots, and \"having + past participle\" forms with a couple of active -ing traps.\n\n**Part 1: What to watch for.**\n\nPast participles and emotion adjectives (tired, covered, excited) still need a matching subject: the person who is tired, or the thing that is covered. \"Having lost…\" and \"Stirring…\" look polished, but they still demand the logical agent next — trails and aromas cannot lose maps or stir soup.\n\n**Part 2: How to decide.**\n\nName the agent of the opener, then check that it appears as the subject after the comma. Condition-of-a-thing participles belong with that thing; intentional actions belong with people (or other agents).\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-03",
@@ -98,11 +98,11 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — The countryside was not looking out the window; the passenger was.\n\nTip: Sight/perception -ing phrases almost always need a person as subject.",
-        "TRUE — Omar was soaked; the participle matches the subject.\n\nTip: \"Soaked/drenched/frozen by…\" naturally modifies the person who got wet or cold.",
-        "TRUE — The recipe card was written in tiny handwriting.\n\nTip: Passive sense of the past participle often points to the object described.",
-        "FALSE — Seagulls were not waiting for the ferry; the travellers were.\n\nTip: Location scenes tempt dangling openers—check who waited, not what was nearby.",
-        "TRUE — Priya finished homework; \"Finished with…\" correctly modifies her.\n\nTip: \"Finished with X\" works when the subject is the person who finished."
+        "**A) Looking out the train window, the countryside rushed past in a blur.**  (false)\n\nThe countryside was not looking out the train window; the passenger was. Sight and perception -ing phrases almost always need a person as subject.\n\nTrap: \"Looking out the train window, I watched the countryside rush past in a blur.\"",
+        "**B) Soaked by the sudden shower, Omar ducked under a café awning.**  (true)\n\nOmar was soaked by the sudden shower, and \"Omar\" follows the comma — correct attachment. Past participles like soaked, drenched, or frozen naturally modify the person who got wet or cold.\n\n**Tip:** \"Soaked/drenched/frozen by…\" naturally modifies the person who got wet or cold.",
+        "**C) Written in tiny handwriting, the recipe card was hard to read.**  (true)\n\nThe recipe card was written in tiny handwriting, so the past participle correctly describes the card. This is the passive sense of the participle pointing at the object described — hard to read, but grammatically clean.\n\n**Tip:** Passive sense of the past participle often points to the object described.",
+        "**D) Waiting for the ferry, seagulls circled above the pier.**  (false)\n\nSeagulls were not waiting for the ferry; the travellers were. Location scenes tempt dangling openers because wildlife and scenery are already in the shot — still check who waited.\n\nTrap: \"Waiting for the ferry, we watched seagulls circle above the pier.\"",
+        "**E) Finished with homework, Priya started a new puzzle.**  (true)\n\nPriya finished her homework, and \"Finished with homework\" correctly modifies her before she starts a new puzzle. The pattern works when the subject is the person who finished.\n\n**Tip:** \"Finished with X\" works when the subject is the person who finished."
       ],
       "highlights": [
         "Looking out the train window, the countryside",
@@ -114,7 +114,7 @@
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.16",
-      "solution_overview": "Everyday travel and home scenes still follow one rule: the participle’s logical subject must be the sentence subject. Landscape and wildlife openers often dangle unless a person comes next."
+      "solution_overview": "Travel and home scenes still obey one attachment rule: the participle’s logical subject must be the sentence subject.\n\n**Part 1: What to watch for.**\n\nSight and waiting openers (-ing) almost always need a person. Passive-feeling past participles (soaked, written, finished) often describe what happened to the subject — Omar, a recipe card, Priya. Landscape and wildlife after an -ing opener are frequent danglers.\n\n**Part 2: How to decide.**\n\nAsk whether the subject can literally look, wait, be soaked, be written, or finish homework. If the countryside is \"looking\" or seagulls are \"waiting for the ferry,\" mark false and reattach the opener to the traveller.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-04",
@@ -136,11 +136,11 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — The campsite did not pack the tent.\n\nTip: \"Having packed…\" needs the packer as subject: \"Having packed the tent, we…\".",
-        "TRUE — The fans were cheering; the opener is correctly attached.\n\nTip: Crowd actions (-ing) belong with people subjects, not the score or the pitch.",
-        "TRUE — The dough was left overnight; past participle matches.\n\nTip: Food prep sentences often use past participles for what happened to the ingredient.",
-        "FALSE — A breeze does not read; the reader is missing.\n\nTip: If the opener is an intentional human action, the subject must be human (or an agent).",
-        "TRUE — The shed was painted yellow; no dangling modifier.\n\nTip: \"Painted/repaired/built…\" usually modifies the object that received the action."
+        "**A) Having packed the tent, the campsite looked ready for the night.**  (false)\n\nThe campsite did not pack the tent; the campers did. \"Having packed…\" always needs the packer as subject.\n\nTrap: \"Having packed the tent, we thought the campsite looked ready for the night.\"",
+        "**B) Cheering loudly from the stands, the fans urged the team forward.**  (true)\n\nThe fans were cheering loudly from the stands, and they are the subject who urge the team forward — clean attachment. Crowd actions belong with people, not with the score or the pitch.\n\n**Tip:** Crowd actions (-ing) belong with people subjects, not the score or the pitch.",
+        "**C) Left overnight in the fridge, the dough rose beautifully.**  (true)\n\nThe dough was left overnight in the fridge, so the past participle correctly modifies \"the dough\" that then rose. Food-prep sentences often use past participles for what happened to the ingredient.\n\n**Tip:** Food prep sentences often use past participles for what happened to the ingredient.",
+        "**D) Reading on the balcony, a cool breeze turned the pages.**  (false)\n\nA breeze does not read on the balcony; the reader is missing. If the opener is an intentional human action, the subject must be human (or another agent that can read).\n\nTrap: \"Reading on the balcony, she felt a cool breeze turn the pages.\"",
+        "**E) Painted bright yellow last spring, the garden shed stood out among the trees.**  (true)\n\nThe garden shed was painted bright yellow last spring, and that shed is the subject — no dangling modifier. \"Painted/repaired/built…\" usually modifies the object that received the action.\n\n**Tip:** \"Painted/repaired/built…\" usually modifies the object that received the action."
       ],
       "highlights": [
         "Having packed the tent, the campsite",
@@ -152,7 +152,7 @@
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.16",
-      "solution_overview": "Camping, sports, and kitchen lines: correct ones keep participle and subject paired; wrong ones give packing or reading to places and breezes. Fix by naming the real agent first."
+      "solution_overview": "Camping, sports, kitchen prep, and a garden shed: same participle test, everyday props.\n\n**Part 1: What to watch for.**\n\n\"Having packed…\" needs the packer. Crowd -ing openers need fans or people. Past participles on dough or a shed (left overnight, painted) correctly modify those objects. A breeze that \"reads\" is a classic intentional-action dangler.\n\n**Part 2: How to decide.**\n\nSeparate human actions from object states. If the opener is something a person does on purpose, the subject must be that person; if it describes what was done to an object, that object should follow the comma.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-05",
@@ -174,11 +174,11 @@
         false
       ],
       "tactical_explanations": [
-        "TRUE — Sam was jogging and spotted the heron; clean attachment.\n\nTip: When the same person does both actions, an -ing opener is usually safe.",
-        "FALSE — The film was not wrapped in a blanket; the viewer was.\n\nTip: Comfort/clothing participles modify people or bodies, not the entertainment.",
-        "FALSE — The whistle did not train all week; the player or team did.\n\nTip: \"Having trained…\" must be followed by the athlete (or team), not a result or signal.",
-        "TRUE — The onions were chopped and fried; past participles fit.\n\nTip: Cooking sequences often stack past participles before the ingredient subject.",
-        "FALSE — The hallway light was not standing in the doorway.\n\nTip: Posture verbs (standing, sitting, leaning) need a person or object that can hold that pose as subject."
+        "**A) Jogging along the canal path, Sam spotted a heron in the reeds.**  (true)\n\nSam was jogging along the canal path and spotted a heron — the same person does both actions, so the -ing opener is safely attached. When one agent performs opener and main verb, this pattern is usually reliable.\n\n**Tip:** When the same person does both actions, an -ing opener is usually safe.",
+        "**B) Wrapped in a thick blanket, the film felt twice as cosy.**  (false)\n\nThe film was not wrapped in a thick blanket; the viewer was. Comfort and clothing participles modify people or bodies, not the entertainment on screen.\n\nTrap: \"Wrapped in a thick blanket, we found the film twice as cosy.\"",
+        "**C) Having trained all week, the final whistle still came as a shock.**  (false)\n\nThe final whistle did not train all week; the player or team did. \"Having trained…\" must be followed by the athlete (or team), not by a result or signal.\n\nTrap: \"Having trained all week, the players still found the final whistle a shock.\"",
+        "**D) Chopped finely and fried gently, the onions sweetened the sauce.**  (true)\n\nThe onions were chopped finely and fried gently, so stacked past participles correctly modify the ingredient that then sweetened the sauce. Cooking sequences often use this pattern before the food noun.\n\n**Tip:** Cooking sequences often stack past participles before the ingredient subject.",
+        "**E) Standing in the doorway, the hallway light cast long shadows.**  (false)\n\nThe hallway light was not standing in the doorway. Posture verbs (standing, sitting, leaning) need a person or object that can hold that pose as subject.\n\nTrap: \"Standing in the doorway, she watched the hallway light cast long shadows.\""
       ],
       "highlights": [
         "Jogging along the canal path, Sam",
@@ -190,7 +190,7 @@
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.16",
-      "solution_overview": "Difficulty steps up slightly: some wrong lines look natural until you ask who wrapped, trained, or stood. Only Sam and the onions keep a logical subject–participle match."
+      "solution_overview": "Difficulty steps up: some wrong lines sound natural until you ask who wrapped, trained, or stood.\n\n**Part 1: What to watch for.**\n\nWhen the same person does both the opener and the main verb (jogging + spotting), -ing is usually safe. Comfort/clothing and \"having trained\" must stay with people, not films or whistles. Cooking past participles stack cleanly before the ingredient. Posture verbs need a body that can hold the pose.\n\n**Part 2: How to decide.**\n\nCheck agent match first, then whether an abstract result (whistle, hallway light) has stolen the subject slot. Only Sam and the onions keep a clean logical pairing here.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-16-06",
@@ -212,11 +212,11 @@
         false
       ],
       "tactical_explanations": [
-        "FALSE — Desks did not arrive early; the student did.\n\nTip: Time-of-arrival openers need a person as subject, not the place or furniture.",
-        "TRUE — The birdbath was frozen solid; past participle fits.\n\nTip: Weather effects on objects are natural past-participle modifiers.",
-        "TRUE — Nina hoped to improve her serve; correct attachment.\n\nTip: Purpose/hope -ing phrases should be followed by the person with that goal.",
-        "FALSE — Tom was not filled with berries; the bowl was.\n\nTip: \"Filled/loaded/packed with…\" modifies the container, not the carrier—unless you mean something else.",
-        "FALSE — The mystery did not turn the page.\n\nTip: Reading actions belong with the reader: \"Turning the page slowly, she…\"."
+        "**A) Arriving early at the library, quiet study desks were easy to find.**  (false)\n\nQuiet study desks did not arrive early at the library; the student did. Time-of-arrival openers need a person as subject, not the place or the furniture.\n\nTrap: \"Arriving early at the library, she found quiet study desks easy to claim.\"",
+        "**B) Frozen solid after the cold night, the birdbath needed warm water.**  (true)\n\nThe birdbath was frozen solid after the cold night, so the past participle correctly describes that object. Weather effects on outdoor objects are natural past-participle modifiers.\n\n**Tip:** Weather effects on objects are natural past-participle modifiers.",
+        "**C) Hoping to improve her serve, Nina practised against the garage wall.**  (true)\n\nNina hoped to improve her serve, and she practised — purpose/hope -ing phrases should be followed by the person with that goal. The attachment here is exact.\n\n**Tip:** Purpose/hope -ing phrases should be followed by the person with that goal.",
+        "**D) Filled with fresh berries, Tom carried the bowl to the picnic table.**  (false)\n\nTom was not filled with fresh berries; the bowl was. \"Filled/loaded/packed with…\" modifies the container, not the person carrying it (unless you literally mean something else).\n\nTrap: \"Filled with fresh berries, the bowl went with Tom to the picnic table.\"",
+        "**E) Turning the page slowly, the mystery finally made sense.**  (false)\n\nThe mystery did not turn the page. Reading actions belong with the reader: put that person after the comma, then let the mystery make sense.\n\nTrap: \"Turning the page slowly, she finally made sense of the mystery.\""
       ],
       "highlights": [
         "Arriving early at the library, quiet study desks",
@@ -228,7 +228,7 @@
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.16",
-      "solution_overview": "Watch container vs carrier (bowl vs Tom) and arrival vs furniture. Correct sentences keep frozen birdbaths and hoping athletes as subjects; dangling lines shuffle those roles."
+      "solution_overview": "Watch container versus carrier, and arrival versus furniture — two of the most common participial mix-ups.\n\n**Part 1: What to watch for.**\n\nTime-of-arrival openers need a person, not desks. Weather past participles on objects (frozen birdbath) are fine. Hope/purpose -ing belongs with the athlete who hopes. \"Filled with…\" modifies the bowl, not Tom carrying it. Page-turning needs a reader, not \"the mystery.\"\n\n**Part 2: How to decide.**\n\nFor each opener, decide: person acting, or object in a state? Then verify the noun after the comma matches that role. Shuffle roles and you get a dangler even if the scene still \"makes sense\" narratively.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-16-07",
@@ -250,11 +250,11 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — The windowsill did not water the plants.\n\nTip: \"Having watered…\" requires the gardener as subject.",
-        "TRUE — We were stuck in traffic; the participle modifies \"we\".\n\nTip: \"Stuck/caught/trapped…\" with a human subject is a common correct pattern.",
-        "TRUE — The dough was kneaded; past participle attaches properly.\n\nTip: Baking steps as past participles usually modify the dough, batter, or loaf.",
-        "FALSE — Silence was not watching the sunset; the hikers were.\n\nTip: Abstract subjects (silence, calm, tension) rarely perform -ing actions in openers.",
-        "TRUE — The map was repaired; no dangling modifier.\n\nTip: \"Repaired/mended/patched…\" modifies the damaged object."
+        "**A) Having watered the plants, the windowsill looked bright again.**  (false)\n\nThe windowsill did not water the plants. \"Having watered…\" requires the gardener as subject before you describe how bright the sill looked.\n\nTrap: \"Having watered the plants, she noticed the windowsill looking bright again.\"",
+        "**B) Stuck in traffic near the stadium, we missed the opening kick-off.**  (true)\n\nWe were stuck in traffic near the stadium, and \"we\" is the subject — so the participle modifies the right people (who then missed kick-off). \"Stuck/caught/trapped…\" with a human subject is a common correct pattern.\n\n**Tip:** \"Stuck/caught/trapped…\" with a human subject is a common correct pattern.",
+        "**C) Kneaded for ten minutes, the bread dough became smooth and elastic.**  (true)\n\nThe bread dough was kneaded for ten minutes, and that dough is the subject that became smooth. Baking steps as past participles usually modify the dough, batter, or loaf.\n\n**Tip:** Baking steps as past participles usually modify the dough, batter, or loaf.",
+        "**D) Watching the sunset from the ridge, a silence settled over the group.**  (false)\n\nSilence was not watching the sunset from the ridge; the hikers were. Abstract subjects (silence, calm, tension) rarely perform -ing actions in openers.\n\nTrap: \"Watching the sunset from the ridge, the group fell into silence.\"",
+        "**E) Repaired with strong tape, the torn map lasted the rest of the hike.**  (true)\n\nThe torn map was repaired with strong tape, so the past participle correctly modifies the map that lasted the rest of the hike. \"Repaired/mended/patched…\" modifies the damaged object.\n\n**Tip:** \"Repaired/mended/patched…\" modifies the damaged object."
       ],
       "highlights": [
         "Having watered the plants, the windowsill",
@@ -266,7 +266,7 @@
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.16",
-      "solution_overview": "Home gardening and trail repairs show the same test: who did the -ing/-ed action? Abstract nouns and furniture as subjects after active openers almost always dangle."
+      "solution_overview": "Home gardening, traffic, baking, ridgelines, and trail maps recycle the same attachment test.\n\n**Part 1: What to watch for.**\n\n\"Having watered…\" needs the gardener. \"Stuck in traffic…\" with \"we\" is a clean human-state pattern. Kneaded dough and a repaired map take past participles naturally. Abstract nouns like \"silence\" almost never perform watching or similar -ing actions.\n\n**Part 2: How to decide.**\n\nAsk who did the -ing/-ed action, then insist that noun is the subject. Furniture and mood nouns after active openers are nearly always false.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-08",
@@ -288,11 +288,11 @@
         false
       ],
       "tactical_explanations": [
-        "FALSE — Concentration did not skip breakfast; the student did.\n\nTip: Result nouns (concentration, success, fatigue) cannot be the agent of the opener.",
-        "TRUE — The sheets were dried on the line; correct.\n\nTip: \"Dried/hung/aired…\" naturally modifies laundry or similar objects.",
-        "TRUE — Lara booked the train; \"Having booked…\" fits.\n\nTip: Travel logistics with \"having + PP\" need the traveller as subject.",
-        "TRUE — The desk was cluttered; past participle matches.\n\nTip: \"Cluttered/covered/littered with…\" modifies the surface or space.",
-        "FALSE — The stadium did not score the goal; the player did.\n\nTip: Sports highlights often dangle when the venue follows a player’s action."
+        "**A) Skipping breakfast before the exam, concentration proved difficult.**  (false)\n\nConcentration did not skip breakfast before the exam; the student did. Result nouns (concentration, success, fatigue) cannot be the agent of the opener.\n\nTrap: \"Skipping breakfast before the exam, she found concentration difficult.\"",
+        "**B) Dried on the washing line, the sheets smelled of sunshine.**  (true)\n\nThe sheets were dried on the washing line, and they are the subject — correct attachment. \"Dried/hung/aired…\" naturally modifies laundry or similar objects.\n\n**Tip:** \"Dried/hung/aired…\" naturally modifies laundry or similar objects.",
+        "**C) Having booked the earliest train, Lara reached the coast by noon.**  (true)\n\nLara booked the earliest train, so \"Having booked…\" correctly modifies her before she reached the coast. Travel logistics with \"having + past participle\" need the traveller as subject.\n\n**Tip:** Travel logistics with \"having + PP\" need the traveller as subject.",
+        "**D) Cluttered with textbooks and notebooks, the desk needed clearing.**  (true)\n\nThe desk was cluttered with textbooks and notebooks, so the past participle matches the surface that needed clearing. \"Cluttered/covered/littered with…\" modifies the space, not a person walking by.\n\n**Tip:** \"Cluttered/covered/littered with…\" modifies the surface or space.",
+        "**E) Scoring the winning goal, the stadium erupted in cheers.**  (false)\n\nThe stadium did not score the winning goal; the player did. Sports highlights often dangle when the venue follows a player’s action.\n\nTrap: \"Scoring the winning goal, the striker watched the stadium erupt in cheers.\""
       ],
       "highlights": [
         "Skipping breakfast before the exam, concentration",
@@ -304,7 +304,7 @@
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.16",
-      "solution_overview": "Study, laundry, travel, and sports: three lines attach correctly to sheets, Lara, and the desk. The danglers assign breakfast-skipping and goal-scoring to concentration and a stadium."
+      "solution_overview": "Study habits, laundry, travel booking, a cluttered desk, and a stadium goal — three attachments succeed, two fail loudly.\n\n**Part 1: What to watch for.**\n\nResult nouns (concentration) cannot skip breakfast. Laundry past participles modify the sheets. \"Having booked…\" needs the traveller. \"Cluttered with…\" modifies the desk. Sports action openers need the player, not the venue that erupts afterward.\n\n**Part 2: How to decide.**\n\nReject subjects that are effects, places, or venues when the opener describes a human action. Accept object-state participles only when the subject truly carries that state.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-16-09",
@@ -326,11 +326,11 @@
         false
       ],
       "tactical_explanations": [
-        "FALSE — Hot tea was not shivering in the queue.\n\nTip: Sensory desires as subjects after bodily -ing phrases usually create danglers.",
-        "TRUE — The tomatoes were grown in the garden; correct.\n\nTip: \"Grown/picked/harvested…\" modifies the produce.",
-        "TRUE — Eli finished the crossword; attachment is clear.\n\nTip: \"Having finished X\" + person subject is a reliable pattern.",
-        "TRUE — The remote was hidden; past participle fits.\n\nTip: Lost-and-found household items often take \"hidden/buried/tucked…\".",
-        "FALSE — Streetlamps were not cycling through the park.\n\nTip: Motion openers need the cyclist, walker, or runner as subject—not the scenery."
+        "**A) Shivering in the queue for tickets, hot tea sounded irresistible.**  (false)\n\nHot tea was not shivering in the queue for tickets. Sensory desires as subjects after bodily -ing phrases usually create danglers — put the cold person first.\n\nTrap: \"Shivering in the queue for tickets, we found hot tea irresistible.\"",
+        "**B) Grown in the neighbour’s garden, the tomatoes were unusually sweet.**  (true)\n\nThe tomatoes were grown in the neighbour’s garden, so the past participle correctly modifies the produce that tasted sweet. \"Grown/picked/harvested…\" modifies the crop.\n\n**Tip:** \"Grown/picked/harvested…\" modifies the produce.",
+        "**C) Having finished the crossword, Eli started a new novel.**  (true)\n\nEli finished the crossword, and \"Having finished…\" attaches clearly to him before he starts a novel. \"Having finished X\" + person subject is a reliable non-dangling pattern.\n\n**Tip:** \"Having finished X\" + person subject is a reliable pattern.",
+        "**D) Hidden behind the sofa cushions, the remote finally turned up.**  (true)\n\nThe remote was hidden behind the sofa cushions, so the past participle fits the lost-and-found item that finally turned up. Household finds often take \"hidden/buried/tucked…\".\n\n**Tip:** Lost-and-found household items often take \"hidden/buried/tucked…\".",
+        "**E) Cycling through the park at dusk, streetlamps flickered on one by one.**  (false)\n\nStreetlamps were not cycling through the park at dusk. Motion openers need the cyclist, walker, or runner as subject — not the scenery lighting up.\n\nTrap: \"Cycling through the park at dusk, she watched streetlamps flicker on one by one.\""
       ],
       "highlights": [
         "Shivering in the queue for tickets, hot tea",
@@ -342,7 +342,7 @@
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.16",
-      "solution_overview": "Mid-difficulty danglers look vivid (shivering → tea; cycling → lamps). Keep asking: can this subject literally do or undergo the participle’s action?"
+      "solution_overview": "Mid-difficulty danglers look vivid: shivering queues and dusk cycling can hypnotise you into accepting the wrong subject.\n\n**Part 1: What to watch for.**\n\nBodily -ing openers followed by sensory desires (\"hot tea\") usually dangle. Produce and lost-item past participles (grown, hidden) attach well to tomatoes and remotes. \"Having finished…\" + person is reliable. Motion openers need the cyclist, not the streetlamps.\n\n**Part 2: How to decide.**\n\nKeep asking whether this subject could literally shiver, grow, finish, hide, or cycle. Related scene props (tea, lamps) are not enough.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-16-10",
@@ -364,11 +364,11 @@
         false
       ],
       "tactical_explanations": [
-        "TRUE — The cookies were burned at the edges; past participle matches.\n\nTip: Descriptive food states before the food noun are usually correct.",
-        "FALSE — Recipe steps do not listen to podcasts.\n\nTip: \"Listening/watching/reading…\" needs a person (or animal) subject.",
-        "TRUE — Noah lost his gloves; \"Having lost…\" is correctly attached.\n\nTip: Possession loss with \"having lost\" must be followed by the owner.",
-        "TRUE — The boots were stacked neatly; correct.\n\nTip: Arrangement participles (stacked, lined, arranged) modify the arranged items.",
-        "FALSE — The musician may have been in the square, but \"Crossing…\" currently modifies him wrongly if he was already there—and grammatically the subject is said to be crossing while starting a tune in an odd attach; more clearly: if the walker crossed, the subject should be the walker.\n\nTip: Who crossed? Put that person (not the musician already performing) as subject—or rewrite without the opener."
+        "**A) Burned at the edges but soft in the centre, the cookies disappeared fast.**  (true)\n\nThe cookies were burned at the edges but soft in the centre, and that food noun is the subject — a clean descriptive past-participle attachment. Food states before the food noun are usually correct.\n\n**Tip:** Descriptive food states before the food noun are usually correct.",
+        "**B) Listening carefully to the podcast, the recipe steps became clear.**  (false)\n\nRecipe steps do not listen to podcasts. \"Listening/watching/reading…\" needs a person (or animal) subject who can pay attention.\n\nTrap: \"Listening carefully to the podcast, she found the recipe steps became clear.\"",
+        "**C) Having lost his gloves, Noah kept his hands in his pockets.**  (true)\n\nNoah lost his gloves, so \"Having lost…\" correctly modifies him before he keeps his hands in his pockets. Possession loss with \"having lost\" must be followed by the owner.\n\n**Tip:** Possession loss with \"having lost\" must be followed by the owner.",
+        "**D) Stacked neatly beside the door, the hiking boots waited for the weekend.**  (true)\n\nThe hiking boots were stacked neatly beside the door, so the arrangement participle modifies the arranged items waiting for the weekend. Stacked/lined/arranged patterns belong with the things in that arrangement.\n\n**Tip:** Arrangement participles (stacked, lined, arranged) modify the arranged items.",
+        "**E) Crossing the busy square, a street musician started a lively tune.**  (false)\n\nWho crossed the busy square? Grammatically, \"a street musician\" is said to be crossing while starting a tune — but the intended crosser is usually a passer-by, not the performer already in place. Reattach the opener to the walker, or drop it.\n\nTrap: \"Crossing the busy square, we heard a street musician start a lively tune.\""
       ],
       "highlights": [
         "Burned at the edges but soft in the centre, the cookies",
@@ -380,7 +380,7 @@
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.16",
-      "solution_overview": "Food and home lines are mostly solid; the danglers pair listening with steps and crossing with a musician who is not clearly the crosser. Reattach openers to the real agent."
+      "solution_overview": "Cookies and boots look solid; listening and crossing create the traps you need to catch at this level.\n\n**Part 1: What to watch for.**\n\nFood-state past participles before the food noun are usually correct. Perception verbs (listening) need a person. \"Having lost…\" needs the owner. Arrangement participles modify the arranged items. \"Crossing…\" must be followed by whoever crossed — not a musician who may already be performing in the square.\n\n**Part 2: How to decide.**\n\nReattach any -ing opener that describes intentional human behaviour to a human subject. Keep past-participle state descriptions on the objects that underwent them.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-16-11",
@@ -402,11 +402,11 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — The attic did not climb the staircase.\n\nTip: \"Having climbed…\" needs the climber as subject.",
-        "TRUE — The leaves were rinsed; past participle fits.\n\nTip: Prep verbs on ingredients (rinsed, peeled, sliced) modify the food.",
-        "FALSE — The picnic basket was not worried; the hosts were.\n\nTip: Emotion participles (worried, delighted, annoyed) modify people, not objects.",
-        "FALSE — The umpire did not slide into third; the runner did.\n\nTip: Sports action openers must be followed by the player who performed the move.",
-        "TRUE — The flyer was printed on recycled paper; correct.\n\nTip: \"Printed/published/posted…\" usually modifies the document or notice."
+        "**A) Having climbed the spiral staircase, the attic smelled of old cedar.**  (false)\n\nThe attic did not climb the spiral staircase. \"Having climbed…\" needs the climber as subject before you mention how the attic smelled.\n\nTrap: \"Having climbed the spiral staircase, we noticed the attic smelled of old cedar.\"",
+        "**B) Rinsed under cold water, the salad leaves stayed crisp.**  (true)\n\nThe salad leaves were rinsed under cold water, so the past participle correctly modifies the food that stayed crisp. Prep verbs on ingredients (rinsed, peeled, sliced) modify the food.\n\n**Tip:** Prep verbs on ingredients (rinsed, peeled, sliced) modify the food.",
+        "**C) Worried about the weather forecast, the picnic basket stayed packed indoors.**  (false)\n\nThe picnic basket was not worried about the weather forecast; the hosts were. Emotion participles (worried, delighted, annoyed) modify people, not objects that stay packed indoors.\n\nTrap: \"Worried about the weather forecast, they left the picnic basket packed indoors.\"",
+        "**D) Sliding into third base, the umpire called him safe.**  (false)\n\nThe umpire did not slide into third base; the runner did. Sports action openers must be followed by the player who performed the move.\n\nTrap: \"Sliding into third base, the runner heard the umpire call him safe.\"",
+        "**E) Printed on recycled paper, the flyer advertised the school concert.**  (true)\n\nThe flyer was printed on recycled paper, so the past participle correctly describes the notice advertising the concert. \"Printed/published/posted…\" usually modifies the document.\n\n**Tip:** \"Printed/published/posted…\" usually modifies the document or notice."
       ],
       "highlights": [
         "Having climbed the spiral staircase, the attic",
@@ -418,7 +418,7 @@
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.16",
-      "solution_overview": "Emotion and sports danglers are easy to miss: baskets do not worry, umpires do not slide. Keep mental states and athletic moves attached to people."
+      "solution_overview": "Emotion and sports danglers are easy to miss when the scenery feels connected to the action.\n\n**Part 1: What to watch for.**\n\n\"Having climbed…\" needs the climber, not the attic. Prep verbs on ingredients (rinsed) modify the food. Emotion participles (worried) modify people, never picnic baskets. Sliding belongs with the runner, not the umpire. \"Printed on…\" correctly modifies the flyer.\n\n**Part 2: How to decide.**\n\nMental states and athletic moves stay with people. Object subjects are fine only for make/print/prep states that truly describe those objects.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-12",
@@ -440,11 +440,11 @@
         true
       ],
       "tactical_explanations": [
-        "TRUE — The napkins were folded; past participle matches.\n\nTip: Household \"folded/ironed/pressed…\" modifies the fabric item.",
-        "FALSE — Exam questions did not study until midnight.\n\nTip: \"Having studied…\" must be followed by the student.",
-        "FALSE — The rain barrel was not dripping from the eaves; the water was—or rewrite: \"Dripping…, rain filled the barrel\".\n\nTip: Make sure the participle’s subject is what drips, hangs, or falls—not the container alone if the opener describes the water.",
-        "FALSE — The guidebook was not searching for a café.\n\nTip: Search/look-for openers need a person traveller as subject.",
-        "TRUE — The choir was exhausted but pleased; correct.\n\nTip: Paired emotion adjectives still require a human (or animate) subject."
+        "**A) Folded into neat squares, the napkins brightened the dinner table.**  (true)\n\nThe napkins were folded into neat squares, so the past participle matches the fabric items that brightened the table. Household \"folded/ironed/pressed…\" modifies the textile.\n\n**Tip:** Household \"folded/ironed/pressed…\" modifies the fabric item.",
+        "**B) Having studied until midnight, the exam questions still felt unfamiliar.**  (false)\n\nExam questions did not study until midnight. \"Having studied…\" must be followed by the student who still finds the questions unfamiliar.\n\nTrap: \"Having studied until midnight, she still found the exam questions unfamiliar.\"",
+        "**C) Dripping from the eaves after the storm, the rain barrel filled quickly.**  (false)\n\nThe rain barrel was not dripping from the eaves; the water was. Make sure the participle’s subject is what drips, hangs, or falls — not only the container if the opener describes the runoff.\n\nTrap: \"Dripping from the eaves after the storm, rain filled the barrel quickly,\" or name the water explicitly.",
+        "**D) Searching for a quiet café, the guidebook recommended three streets nearby.**  (false)\n\nThe guidebook was not searching for a quiet café. Search/look-for openers need a traveller as subject, not the book that lists streets.\n\nTrap: \"Searching for a quiet café, we checked the guidebook’s three recommended streets.\"",
+        "**E) Exhausted but pleased, the choir packed away the music stands.**  (true)\n\nThe choir was exhausted but pleased, and that animate group is the subject packing away the stands. Paired emotion adjectives still require a human (or animate) subject.\n\n**Tip:** Paired emotion adjectives still require a human (or animate) subject."
       ],
       "highlights": [
         "Folded into neat squares, the napkins",
@@ -456,7 +456,7 @@
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.16",
-      "solution_overview": "Only napkins and choir keep solid matches. Study, weather, and travel danglers assign human actions to questions, barrels, and guidebooks—rewrite with the real agent."
+      "solution_overview": "Only napkins and a choir keep solid matches; study, weather, and travel lines shuffle agents onto questions, barrels, and guidebooks.\n\n**Part 1: What to watch for.**\n\nHousehold \"folded…\" modifies fabric. \"Having studied…\" needs the student. \"Dripping from the eaves…\" describes water, not the barrel as the thing that drips. Search openers need a person. Paired emotion adjectives (exhausted but pleased) still require an animate subject — the choir works.\n\n**Part 2: How to decide.**\n\nIf the opener is a human mental action or motion, reject furniture, guides, and result nouns as subjects. If it is a fabric or body state that the subject can hold, accept it.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-13",
@@ -478,11 +478,11 @@
         true
       ],
       "tactical_explanations": [
-        "TRUE — The chicken was seasoned; past participle fits.\n\nTip: Seasoned/marinated/basted modifies the dish.",
-        "FALSE — The walk did not miss the bus; the traveller did.\n\nTip: \"Having missed…\" needs a person subject, not the resulting journey.",
-        "TRUE — The orchid was balanced on the sill; correct.\n\nTip: Position participles can modify plants and objects that sit or rest.",
-        "FALSE — The baton was not cheering.\n\nTip: Spectator -ing openers need people (fans, classmates), not equipment.",
-        "TRUE — The short story was written by a local poet; correct.\n\nTip: \"Written by…\" almost always modifies the text or work."
+        "**A) Seasoned generously with herbs, the roast chicken came out of the oven golden.**  (true)\n\nThe roast chicken was seasoned generously with herbs, so the past participle correctly modifies the dish coming out golden. Seasoned/marinated/basted modifies the food.\n\n**Tip:** Seasoned/marinated/basted modifies the dish.",
+        "**B) Having missed the last bus, the walk home took nearly an hour.**  (false)\n\nThe walk home did not miss the last bus; the traveller did. \"Having missed…\" needs a person subject, not the resulting journey that took an hour.\n\nTrap: \"Having missed the last bus, she faced a walk home of nearly an hour.\"",
+        "**C) Balanced carefully on the windowsill, the orchid tilted toward the light.**  (true)\n\nThe orchid was balanced carefully on the windowsill, so the position participle correctly modifies the plant tilting toward the light. Position participles can modify plants and objects that sit or rest.\n\n**Tip:** Position participles can modify plants and objects that sit or rest.",
+        "**D) Cheering for their classmates, the relay baton felt heavier than usual.**  (false)\n\nThe relay baton was not cheering for classmates. Spectator -ing openers need people (fans, classmates), not equipment that suddenly feels heavy.\n\nTrap: \"Cheering for their classmates, the runners felt the relay baton heavier than usual.\"",
+        "**E) Written by a local poet, the short story won the school prize.**  (true)\n\nThe short story was written by a local poet, so \"Written by…\" correctly modifies the text that won the prize. That pattern almost always points at the work, not the author as subject after the comma.\n\n**Tip:** \"Written by…\" almost always modifies the text or work."
       ],
       "highlights": [
         "Seasoned generously with herbs, the roast chicken",
@@ -494,7 +494,7 @@
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.16",
-      "solution_overview": "Higher difficulty: results (\"the walk\") and gear (\"the baton\") look related to the scene but cannot perform the participle. Keep \"having missed\" and cheering with people."
+      "solution_overview": "Higher difficulty: results (\"the walk\") and gear (\"the baton\") look related to the scene but cannot perform the participle.\n\n**Part 1: What to watch for.**\n\nSeasoned chicken and \"written by…\" stories take past participles cleanly. \"Having missed…\" needs the traveller, not the resulting walk. Position participles can modify an orchid on a sill. Spectator -ing openers need people, not relay equipment.\n\n**Part 2: How to decide.**\n\nNever let a consequence phrase or a piece of kit steal the subject after \"having…\" or cheering. Put the person who missed the bus or cheered first.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-14",
@@ -516,11 +516,11 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — The path was not tangled in bushes; a person or animal might have been—or the bushes tangled something else.\n\nTip: If \"tangled\" describes a hiker’s state, make the hiker the subject.",
-        "FALSE — The chord did not tune the guitar.\n\nTip: \"Having tuned…\" needs the musician as subject.",
-        "TRUE — The pastry was glazed; past participle matches.\n\nTip: Baking finishes (glazed, dusted, iced) modify the baked good.",
-        "FALSE — Classic dangler: the scarf was not running; she was. (Also, \"her scarf\" as subject after \"Running…\" wrongly says the scarf ran.)\n\nTip: Possessive subjects after -ing openers often create dangling modifiers—name the person first.",
-        "TRUE — The spices were stored cool; correct.\n\nTip: Storage participles modify the stored items."
+        "**A) Tangled in the blackberry bushes, the path seemed to disappear.**  (false)\n\nThe path was not tangled in the blackberry bushes; a hiker (or animal) might have been. If \"tangled\" describes a person’s predicament, make that person the subject — do not assign the snare to the path itself.\n\nTrap: \"Tangled in the blackberry bushes, we thought the path seemed to disappear.\"",
+        "**B) Having tuned the guitar carefully, the first chord rang clear.**  (false)\n\nThe first chord did not tune the guitar. \"Having tuned…\" needs the musician as subject before the chord rings clear.\n\nTrap: \"Having tuned the guitar carefully, she heard the first chord ring clear.\"",
+        "**C) Glazed with honey and nuts, the pastry cooled on a wire rack.**  (true)\n\nThe pastry was glazed with honey and nuts, so the past participle correctly modifies the baked good cooling on the rack. Baking finishes (glazed, dusted, iced) modify the treat.\n\n**Tip:** Baking finishes (glazed, dusted, iced) modify the baked good.",
+        "**D) Running to catch the tram, her scarf slipped from her shoulders.**  (false)\n\nClassic dangler: the scarf was not running to catch the tram; she was. A possessive subject after an -ing opener wrongly says the scarf ran and then slipped.\n\nTrap: name the person first — \"Running to catch the tram, she felt her scarf slip from her shoulders.\"",
+        "**E) Stored in a cool cupboard, the spices kept their aroma for months.**  (true)\n\nThe spices were stored in a cool cupboard, so the past participle correctly modifies the stored items that kept their aroma. Storage participles belong with what was stored.\n\n**Tip:** Storage participles modify the stored items."
       ],
       "highlights": [
         "Tangled in the blackberry bushes, the path",
@@ -532,7 +532,7 @@
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.16",
-      "solution_overview": "Nature and music danglers are subtle; the scarf line is a classic possessive trap. Only pastry and spices keep a clean participle–subject link."
+      "solution_overview": "Nature and music danglers grow subtle; the scarf line is a classic possessive trap after an -ing opener.\n\n**Part 1: What to watch for.**\n\n\"Tangled…\" describing a path wrongly assigns a hiker’s predicament to the path. \"Having tuned…\" needs the musician, not the chord. Glazed pastry and stored spices correctly take past participles. \"Running…, her scarf…\" makes the scarf the runner — a famous dangling pattern with possessives.\n\n**Part 2: How to decide.**\n\nPrefer naming the person before possessives or results. Accept object-state participles only when the object underwent that treatment.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-15",
@@ -554,11 +554,11 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — A texture did not stir the sauce.\n\nTip: Cooking \"having + PP\" openers need the cook as subject.",
-        "TRUE — The timetable was pinned up; correct.\n\nTip: \"Pinned/posted/taped…\" modifies the notice or paper.",
-        "TRUE — Neighbours were leaning and swapping; -ing attaches to people.\n\nTip: Shared activities work when the subject group performs the opener’s action.",
-        "FALSE — The second set was not defeated; the player was.\n\nTip: Match outcome participles (defeated, exhausted) to the competitor, not the next phase.",
-        "TRUE — The bowl was carved from wood; past participle fits.\n\nTip: Craft/make participles modify the finished object."
+        "**A) Having stirred the sauce for twenty minutes, a silky texture finally appeared.**  (false)\n\nA silky texture did not stir the sauce for twenty minutes. Cooking \"having + past participle\" openers need the cook as subject before you mention the result.\n\nTrap: \"Having stirred the sauce for twenty minutes, she finally saw a silky texture appear.\"",
+        "**B) Pinned to the noticeboard, the timetable showed every club meeting.**  (true)\n\nThe timetable was pinned to the noticeboard, so the past participle correctly modifies the notice showing club meetings. \"Pinned/posted/taped…\" modifies the paper or notice.\n\n**Tip:** \"Pinned/posted/taped…\" modifies the notice or paper.",
+        "**C) Leaning over the garden fence, neighbours swapped seeds and tips.**  (true)\n\nNeighbours were leaning over the garden fence and swapping seeds — the -ing opener attaches to people who perform both actions. Shared activities work when the subject group does what the opener describes.\n\n**Tip:** Shared activities work when the subject group performs the opener’s action.",
+        "**D) Defeated in the first set, the second set still offered hope.**  (false)\n\nThe second set was not defeated in the first set; the player was. Match outcome participles (defeated, exhausted) to the competitor, not the next phase of the match.\n\nTrap: \"Defeated in the first set, she still found hope in the second set.\"",
+        "**E) Carved from a single piece of wood, the salad bowl felt smooth to the touch.**  (true)\n\nThe salad bowl was carved from a single piece of wood, so the craft participle correctly modifies the finished object that felt smooth. Make/craft participles modify what was made.\n\n**Tip:** Craft/make participles modify the finished object."
       ],
       "highlights": [
         "Having stirred the sauce for twenty minutes, a silky texture",
@@ -570,7 +570,7 @@
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.16",
-      "solution_overview": "Results and next stages (texture, second set) tempt danglers after cooking and sports openers. Keep agents human; let objects take only state/make participles that truly describe them."
+      "solution_overview": "Results and next stages (a silky texture, a second set) tempt danglers after cooking and sports openers.\n\n**Part 1: What to watch for.**\n\nCooking \"having + past participle\" needs the cook. Notices pinned up, neighbours leaning, bowls carved from wood are legitimate object/person matches. \"Defeated in the first set…\" must modify the competitor, not the next phase of the match.\n\n**Part 2: How to decide.**\n\nKeep agents human for intentional prep and emotional outcomes; let objects take only make/state participles that truly describe them.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-16",
@@ -592,11 +592,11 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — Goosebumps were not wading into the lake.\n\nTip: Bodily reactions as subjects after motion openers almost always dangle—use \"she\" as subject.",
-        "TRUE — The textbook was annotated; correct.\n\nTip: Study participles (annotated, highlighted, dog-eared) modify the book.",
-        "TRUE — Acceptable: the bicycle (or its tyre) is what was repaired in effect; more precisely, many style guides allow this when the object was repaired—\"Having repaired the puncture, she…\" is safer, but \"the bicycle was ready\" after repairing its puncture is widely accepted as logical for the bike’s state.\n\nTip: Prefer the person who repaired it if you want the safest formal reading; here the intended reading is that the bike (post-repair) is ready—treated as TRUE for logical object focus.",
-        "FALSE — Birdsong was not sipping tea.\n\nTip: Leisure -ing openers need a person subject.",
-        "TRUE — The path was buried under leaves; past participle matches.\n\nTip: \"Buried/hidden/covered…\" can modify places and paths."
+        "**A) Wading into the cold lake, goosebumps rose along her arms.**  (false)\n\nGoosebumps were not wading into the cold lake. Bodily reactions as subjects after motion openers almost always dangle — use \"she\" (or the swimmer) as subject.\n\nTrap: \"Wading into the cold lake, she felt goosebumps rise along her arms.\"",
+        "**B) Annotated in the margins, the textbook looked well used.**  (true)\n\nThe textbook was annotated in the margins, so the past participle correctly modifies the well-used book. Study participles (annotated, highlighted, dog-eared) modify the book.\n\n**Tip:** Study participles (annotated, highlighted, dog-eared) modify the book.",
+        "**C) Having repaired the puncture, the bicycle was ready for the trail.**  (true)\n\nHere the intended reading is object-focused: after the puncture repair, the bicycle is what stands ready for the trail. Many style guides still prefer \"Having repaired the puncture, she found the bicycle ready,\" but for this bank we treat the bike’s post-repair readiness as acceptable.\n\n**Tip:** Prefer the person who repaired it for the safest formal reading; object readiness after repair can still pass when that is the intended focus.",
+        "**D) Sipping tea on the porch, evening birdsong filled the garden.**  (false)\n\nEvening birdsong was not sipping tea on the porch. Leisure -ing openers need a person subject enjoying the tea while the garden fills with sound.\n\nTrap: \"Sipping tea on the porch, we listened as evening birdsong filled the garden.\"",
+        "**E) Buried under last year’s leaves, the garden path was hard to find.**  (true)\n\nThe garden path was buried under last year’s leaves, so the past participle correctly modifies the path that was hard to find. \"Buried/hidden/covered…\" can modify places and paths.\n\n**Tip:** \"Buried/hidden/covered…\" can modify places and paths."
       ],
       "highlights": [
         "Wading into the cold lake, goosebumps",
@@ -608,7 +608,7 @@
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.16",
-      "solution_overview": "Body reactions and nature sounds create vivid danglers. Object-focused past participles on books, bikes, and paths are fine when the participle truly describes that object."
+      "solution_overview": "Body reactions and nature sounds create vivid danglers; object-focused past participles on books, bikes, and paths can still be clean.\n\n**Part 1: What to watch for.**\n\nGoosebumps do not wade; birdsong does not sip tea. Annotated textbooks and buried paths take past participles well. \"Having repaired the puncture, the bicycle…\" is accepted here as object-focused readiness after repair (the bike is what is ready for the trail).\n\n**Part 2: How to decide.**\n\nReject bodily reactions and ambient sounds as agents of motion or leisure openers. Allow past participles when the subject is the thing annotated, repaired-for-use, or buried.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-17",
@@ -630,11 +630,11 @@
         false
       ],
       "tactical_explanations": [
-        "FALSE — The decision did not taste the samples.\n\nTip: \"Having tasted…\" needs the eater as subject.",
-        "TRUE — The trophy was polished; correct.\n\nTip: \"Polished/cleaned/buffed…\" modifies the object treated.",
-        "FALSE — Umbrellas were not dashing through the rain.\n\nTip: Motion openers need the people running; equipment cannot be the agent here.",
-        "TRUE — The cake was layered; past participle fits.\n\nTip: Construction participles for food (layered, filled, topped) modify the dish.",
-        "FALSE — The map was not confused; the hiker was.\n\nTip: Mental-state participles modify people—even when a map is involved in the confusion."
+        "**A) Having tasted every sample at the food fair, the decision became impossible.**  (false)\n\nThe decision did not taste every sample at the food fair. \"Having tasted…\" needs the eater as subject before choosing becomes impossible.\n\nTrap: \"Having tasted every sample at the food fair, she found the decision impossible.\"",
+        "**B) Polished until it shone, the trophy sat on the top shelf.**  (true)\n\nThe trophy was polished until it shone, so the past participle correctly modifies the object sitting on the top shelf. \"Polished/cleaned/buffed…\" modifies the object treated.\n\n**Tip:** \"Polished/cleaned/buffed…\" modifies the object treated.",
+        "**C) Dashing through the rain toward the pavilion, umbrellas were useless against the wind.**  (false)\n\nUmbrellas were not dashing through the rain toward the pavilion. Motion openers need the people running; equipment cannot be the agent here even if umbrellas appear in the scene.\n\nTrap: \"Dashing through the rain toward the pavilion, we found umbrellas useless against the wind.\"",
+        "**D) Layered with cream and strawberries, the cake barely fitted in the fridge.**  (true)\n\nThe cake was layered with cream and strawberries, so the construction participle correctly modifies the dish that barely fitted in the fridge. Food construction participles (layered, filled, topped) modify the dish.\n\n**Tip:** Construction participles for food (layered, filled, topped) modify the dish.",
+        "**E) Confused by the trail markers, the map seemed to contradict itself.**  (false)\n\nThe map was not confused by the trail markers; the hiker was. Mental-state participles modify people — even when a map is mixed up in the confusion.\n\nTrap: \"Confused by the trail markers, she felt the map seemed to contradict itself.\""
       ],
       "highlights": [
         "Having tasted every sample at the food fair, the decision",
@@ -646,7 +646,7 @@
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.16",
-      "solution_overview": "Hard danglers hide behind related nouns (decision, umbrellas, map). Only trophy and cake undergo the participle’s action or state directly."
+      "solution_overview": "Hard danglers hide behind related nouns: decisions, umbrellas, and maps that sit near the real agent.\n\n**Part 1: What to watch for.**\n\n\"Having tasted…\" needs the eater, not \"the decision.\" Polished trophies and layered cakes undergo the participle directly. \"Dashing through the rain…\" needs people, not umbrellas. \"Confused by…\" is a mental state — it belongs with the hiker, even if trail markers and a map are involved.\n\n**Part 2: How to decide.**\n\nAsk whether the subject performs or receives the participle’s action. Nearby props and abstract results almost always fail that test.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-16-18",
@@ -668,11 +668,11 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — A station did not twist the dial.\n\nTip: Instrument/action openers need the person handling the object.",
-        "TRUE — The suitcase was packed; correct.\n\nTip: Travel \"packed/zipped/labelled…\" modifies the bag or case.",
-        "FALSE — Yellow leaves did not overwater the ferns.\n\nTip: \"Having overwatered…\" needs the gardener; then you can mention the leaves in a new clause.",
-        "FALSE — The floor was not stretching after yoga.\n\nTip: Exercise -ing openers require the person stretching.",
-        "TRUE — The jersey was signed; past participle matches.\n\nTip: \"Signed/inscribed/embroidered…\" modifies the item that received the mark."
+        "**A) Twisting the radio dial slowly, a faint station finally came through.**  (false)\n\nA faint station did not twist the radio dial. Instrument/action openers need the person handling the object before the station comes through.\n\nTrap: \"Twisting the radio dial slowly, she finally caught a faint station.\"",
+        "**B) Packed the night before, the suitcase stood ready by the door.**  (true)\n\nThe suitcase was packed the night before, so the past participle correctly modifies the bag standing ready by the door. Travel \"packed/zipped/labelled…\" modifies the case.\n\n**Tip:** Travel \"packed/zipped/labelled…\" modifies the bag or case.",
+        "**C) Having overwatered the ferns, yellow leaves began to drop.**  (false)\n\nYellow leaves did not overwater the ferns. \"Having overwatered…\" needs the gardener; then you can mention leaves dropping in a separate clause.\n\nTrap: \"Having overwatered the ferns, she watched yellow leaves begin to drop.\"",
+        "**D) Stretching after yoga class, the wooden floor felt warm underfoot.**  (false)\n\nThe wooden floor was not stretching after yoga class. Exercise -ing openers require the person stretching, not the surface underfoot.\n\nTrap: \"Stretching after yoga class, she felt the wooden floor warm underfoot.\"",
+        "**E) Signed by every teammate, the jersey became a keepsake.**  (true)\n\nThe jersey was signed by every teammate, so the past participle correctly modifies the keepsake that received the signatures. \"Signed/inscribed/embroidered…\" modifies the marked item.\n\n**Tip:** \"Signed/inscribed/embroidered…\" modifies the item that received the mark."
       ],
       "highlights": [
         "Twisting the radio dial slowly, a faint station",
@@ -684,7 +684,7 @@
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.16",
-      "solution_overview": "Hobbies and home care produce near-miss subjects (station, leaves, floor). Ask whether the subject could perform or receive the participle’s action; only suitcase and jersey pass."
+      "solution_overview": "Hobbies and home care produce near-miss subjects: radio stations, yellow leaves, and warm floors.\n\n**Part 1: What to watch for.**\n\nTwisting a dial and stretching after yoga are human actions — stations and floors cannot do them. Packed suitcases and signed jerseys correctly take past participles. \"Having overwatered…\" needs the gardener; leaf drop is a result, not the agent.\n\n**Part 2: How to decide.**\n\nInstrument and exercise openers demand the person handling the action. Storage/signing past participles stay with the bag or jersey that received the treatment.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-19",
@@ -706,11 +706,11 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — A gust was not flying the plane; the plane (or pilot) was flying—rewrite so \"the plane\" or \"we\" follows \"Flying…\".\n\nTip: After \"Flying…\", the next noun should be the aircraft or pilot, not the weather.",
-        "TRUE — The stew was simmered; past participle fits.\n\nTip: Long cooking processes as past participles modify the dish.",
-        "FALSE — The PE kit did not forget the key.\n\nTip: \"Having forgotten…\" needs the person; then mention the kit separately.",
-        "TRUE — The photographer was crouched and waiting; correct.\n\nTip: Posture + person subject is a reliable non-dangling pattern.",
-        "TRUE — The blocks were scattered; past participle matches.\n\nTip: \"Scattered/strewn/spread…\" modifies the items in that state."
+        "**A) Flying low over the marsh, a sudden gust rocked the small plane.**  (false)\n\nA sudden gust was not flying low over the marsh; the plane (or pilot) was. After \"Flying…,\" the next noun should be the aircraft or pilot, not the weather that rocks it.\n\nTrap: \"Flying low over the marsh, the small plane rocked in a sudden gust.\"",
+        "**B) Simmered for hours with garlic and thyme, the stew filled the kitchen with warmth.**  (true)\n\nThe stew was simmered for hours with garlic and thyme, so the past participle correctly modifies the dish filling the kitchen with warmth. Long cooking processes as past participles modify the food.\n\n**Tip:** Long cooking processes as past participles modify the dish.",
+        "**C) Having forgotten her locker key, the PE kit stayed behind the door.**  (false)\n\nThe PE kit did not forget her locker key. \"Having forgotten…\" needs the person; then mention the kit left behind separately.\n\nTrap: \"Having forgotten her locker key, she left the PE kit behind the door.\"",
+        "**D) Crouched beside the stream, the photographer waited for the kingfisher.**  (true)\n\nThe photographer was crouched beside the stream and waiting — posture plus person subject is a reliable non-dangling pattern while the kingfisher is still elusive.\n\n**Tip:** Posture + person subject is a reliable non-dangling pattern.",
+        "**E) Scattered across the rug, building blocks made evening clear-up slow.**  (true)\n\nBuilding blocks were scattered across the rug, so the past participle correctly modifies the toys that made clear-up slow. \"Scattered/strewn/spread…\" modifies the items in that state.\n\n**Tip:** \"Scattered/strewn/spread…\" modifies the items in that state."
       ],
       "highlights": [
         "Flying low over the marsh, a sudden gust",
@@ -722,7 +722,7 @@
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.16",
-      "solution_overview": "Nature and school scenes: weather and kit cannot fly or forget. Correct lines keep stew, photographer, and blocks as the true subjects of their participles."
+      "solution_overview": "Nature and school scenes: weather and PE kits cannot fly or forget.\n\n**Part 1: What to watch for.**\n\nAfter \"Flying…,\" the next noun should be the aircraft or pilot, not a gust. Simmered stew, a crouched photographer, and scattered blocks attach correctly. \"Having forgotten…\" needs the person who forgot the key, not the kit left behind.\n\n**Part 2: How to decide.**\n\nMatch flight and posture to flyer or person; match cooking and arrangement states to the dish or toys; refuse forgotten-key openers that put clothing or gear in the subject slot.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-16-20",
@@ -744,11 +744,11 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — A loaf (or the guarantee) did not measure the ingredients.\n\nTip: \"Having measured…\" needs the baker as subject.",
-        "TRUE — The costume was mended; past participle fits.\n\nTip: Repair participles modify the repaired clothing or prop.",
-        "FALSE — A smell cannot peek through blinds.\n\nTip: Perception -ing openers need a person looking or listening.",
-        "TRUE — The volunteers were drenched; correct attachment.\n\nTip: Weather/state past participles (drenched, chilled) with people subjects are clean.",
-        "TRUE — The cabin was built into the hillside; correct.\n\nTip: Construction participles (built, nestled, carved) often modify buildings and places."
+        "**A) Having measured the ingredients twice, a perfect loaf seemed guaranteed.**  (false)\n\nA perfect loaf (or the guarantee) did not measure the ingredients twice. \"Having measured…\" needs the baker as subject before confidence about the loaf creeps in.\n\nTrap: \"Having measured the ingredients twice, she thought a perfect loaf seemed guaranteed.\"",
+        "**B) Mended with invisible thread, the costume survived the whole play.**  (true)\n\nThe costume was mended with invisible thread, so the past participle correctly modifies the repaired clothing that survived the play. Repair participles modify the mended item.\n\n**Tip:** Repair participles modify the repaired clothing or prop.",
+        "**C) Peeking through the kitchen blinds, the smell of fresh bread drifted in.**  (false)\n\nA smell cannot peek through kitchen blinds. Perception -ing openers need a person looking or listening while the aroma drifts in.\n\nTrap: \"Peeking through the kitchen blinds, we caught the smell of fresh bread drifting in.\"",
+        "**D) Drenched after the charity run, the volunteers shared orange slices.**  (true)\n\nThe volunteers were drenched after the charity run, so the past participle correctly modifies the people sharing orange slices. Weather/state past participles (drenched, chilled) with people subjects are clean.\n\n**Tip:** Weather/state past participles (drenched, chilled) with people subjects are clean.",
+        "**E) Built into the hillside, the cabin stayed cool even in midsummer.**  (true)\n\nThe cabin was built into the hillside, so the construction participle correctly modifies the building that stayed cool. Construction participles (built, nestled, carved) often modify buildings and places.\n\n**Tip:** Construction participles (built, nestled, carved) often modify buildings and places."
       ],
       "highlights": [
         "Having measured the ingredients twice, a perfect loaf",
@@ -760,7 +760,7 @@
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.16",
-      "solution_overview": "Final set: abstract results and sensory nouns after active openers fail; costume, volunteers, and cabin succeed. Always verify that the subject after the comma is what the participle really describes."
+      "solution_overview": "Final set: abstract results and sensory nouns after active openers fail; costume, volunteers, and cabin succeed.\n\n**Part 1: What to watch for.**\n\n\"Having measured…\" needs the baker, not a \"perfect loaf\" or guarantee. Mended costumes, drenched volunteers, and hillside cabins take the right past-participle attachments. \"Peeking through…\" needs a person looking — smells cannot peek.\n\n**Part 2: How to decide.**\n\nAlways verify that the subject after the comma is what the participle really describes. Results and aromas after -ing/-having openers are false; treated objects and people in that state are true.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     }
   ]
 }

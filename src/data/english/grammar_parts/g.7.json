@@ -14,13 +14,19 @@
         "Noah refused to share his notes before the chemistry quiz.",
         "Lara promised delivering the costumes for the school play by Thursday."
       ],
-      "answer_key": [true, false, false, true, false],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Avoid takes a gerund, so \"avoids talking\" is the natural pattern.\n\nTip: Memorise avoid + -ing; an infinitive after avoid is almost always wrong.",
-        "FALSE — Enjoy needs a gerund, not an infinitive: \"enjoy baking,\" not \"enjoy to bake.\"\n\nTip: Like, love, and enjoy prefer -ing when the object is an activity.",
-        "FALSE — Decide takes a to-infinitive: \"decided to postpone,\" not a gerund.\n\nTip: Decide / refuse / promise / plan / hope / expect pattern with to + base verb.",
-        "TRUE — Refuse correctly takes a to-infinitive: \"refuse to share.\"\n\nTip: If the meaning is \"will not do X,\" expect refuse + to-infinitive.",
-        "FALSE — Promise takes a to-infinitive: \"promised to deliver,\" not a gerund.\n\nTip: Promise patterns like decide and refuse — to + verb, not -ing."
+        "**A) Mia avoids talking on the phone while she cycles through traffic.**  (true)\n\nAvoid is one of the classic gerund verbs, so \"avoids talking\" is exactly the pattern you want. The rest of the sentence (cycling through traffic) does not change what avoid requires. Mia is simply naming the activity she stays away from.\n\n**Tip:** Memorise avoid + -ing; an infinitive after avoid is almost always wrong.",
+        "**B) The twins enjoy to bake cinnamon rolls on rainy Sundays.**  (false)\n\nTrap: enjoy needs a gerund, not a to-infinitive. Repair it to \"enjoy baking cinnamon rolls,\" not \"enjoy to bake.\" Like and love can be flexible in casual speech, but enjoy almost never takes to + verb when the object is an activity.\n\n**Tip:** If enjoy is followed by an activity, use -ing.",
+        "**C) After the match, the coach decided postponing the next training session.**  (false)\n\nTrap: decide takes a to-infinitive, so the coach should have \"decided to postpone,\" not \"decided postponing.\" A bare gerund after decide is a frequent exam error.\n\n**Tip:** Decide / refuse / promise / plan / hope / expect pattern with to + base verb.",
+        "**D) Noah refused to share his notes before the chemistry quiz.**  (true)\n\nRefuse correctly pairs with a to-infinitive: \"refuse to share.\" The meaning is a willful no — he will not share the notes — and English packages that refusal as refuse + to + verb.\n\n**Tip:** If the sense is \"will not do X,\" expect refuse + to-infinitive.",
+        "**E) Lara promised delivering the costumes for the school play by Thursday.**  (false)\n\nTrap: promise also wants to + verb: \"promised to deliver the costumes,\" not \"promised delivering.\" Commitment language after promise follows the same family as decide and refuse.\n\n**Tip:** Promise patterns like decide — to + verb, not -ing."
       ],
       "highlights": [
         "avoids talking",
@@ -32,7 +38,7 @@
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.7",
-      "solution_overview": "This set drills the core split: avoid and enjoy need -ing, while decide, refuse, and promise need to + verb. Check each verb's fixed pattern before you judge the sentence."
+      "solution_overview": "You are sorting five everyday sentences by whether the verb after avoid, enjoy, decide, refuse, or promise is in the form that verb actually wants.\n\n**Part 1: What to watch for.**\n\nAvoid and enjoy take a gerund (-ing). Decide, refuse, and promise take a to-infinitive. The trap is mixing those two camps: putting to after a gerund verb, or -ing after an infinitive verb.\n\n**Part 2: How to decide.**\n\nCircle the main verb that governs the second verb, then ask: is this an -ing verb or a to-verb? Match the complement to that list before you mark true or false.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-7-02",
@@ -46,13 +52,19 @@
         "The barista refused accepting tips during the charity day.",
         "Jamal promised to text when his flight landed."
       ],
-      "answer_key": [true, true, true, false, true],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Consider takes a gerund: \"considering organising\" is correct.\n\nTip: Consider / avoid / enjoy / finish / suggest all take -ing when followed by a verb.",
-        "TRUE — Enjoy + gerund is the standard pattern: \"enjoy reading.\"\n\nTip: If enjoy is followed by an activity, use -ing, not to.",
-        "TRUE — Decide + to-infinitive is correct: \"decided to camp.\"\n\nTip: Decision verbs (decide, agree, refuse, promise) lean toward to + base verb.",
-        "FALSE — Refuse needs a to-infinitive: \"refused to accept,\" not a gerund.\n\nTip: Swap -ing for to + verb after refuse and the sentence usually repairs itself.",
-        "TRUE — Promise correctly takes a to-infinitive: \"promised to text.\"\n\nTip: Promise + to-infinitive expresses a future commitment."
+        "**A) The hiking club is considering organising a dawn walk next month.**  (true)\n\nConsider takes a gerund, so \"considering organising a dawn walk\" is correct. The club is weighing an activity as an idea, which is exactly what consider + -ing expresses.\n\n**Tip:** Consider / avoid / enjoy / finish / suggest take -ing when followed by a verb.",
+        "**B) Sofia enjoys reading graphic novels on the train.**  (true)\n\nEnjoy + gerund is the standard pattern: \"enjoy reading graphic novels.\" Reading is the liked activity, so -ing is required.\n\n**Tip:** If enjoy is followed by an activity, use -ing, not to.",
+        "**C) The family decided to camp beside the lake this weekend.**  (true)\n\nDecide + to-infinitive is correct: \"decided to camp beside the lake.\" They made a future plan, and decide packages plans with to + base verb.\n\n**Tip:** Decision verbs (decide, agree, refuse, promise) lean toward to + base verb.",
+        "**D) The barista refused accepting tips during the charity day.**  (false)\n\nTrap: refuse needs a to-infinitive — \"refused to accept tips,\" not \"refused accepting.\" The charity-day setting does not change the grammar.\n\n**Tip:** Swap -ing for to + verb after refuse and the sentence usually repairs itself.",
+        "**E) Jamal promised to text when his flight landed.**  (true)\n\nPromise correctly takes a to-infinitive: \"promised to text when his flight landed.\" That is a future commitment, which is the natural job of promise + to.\n\n**Tip:** Promise + to-infinitive expresses a future commitment."
       ],
       "highlights": [
         "considering organising",
@@ -64,7 +76,7 @@
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.7",
-      "solution_overview": "Four verbs here follow their textbook patterns correctly; only refuse is broken. Treat refuse like decide and promise — always to + verb."
+      "solution_overview": "Four of these lines already use the textbook complement; only one verb has crossed into the wrong pattern.\n\n**Part 1: What to watch for.**\n\nConsider and enjoy want -ing. Decide, refuse, and promise want to + verb. Here the hiking club, Sofia, the family, and Jamal are fine; the barista's refuse line is the broken one.\n\n**Part 2: How to decide.**\n\nScan for refuse first when the rest look polished — refuse is easy to contaminate with a gerund because avoid and enjoy sit nearby in your memory. Then confirm each remaining verb against its fixed list.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-7-03",
@@ -78,13 +90,19 @@
         "The band decided expanding their tour into two neighbouring towns.",
         "The driver refused to open the boot without seeing ID."
       ],
-      "answer_key": [false, false, false, false, true],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Avoid needs -ing: \"avoided mentioning,\" not \"avoided to mention.\"\n\nTip: Avoid + gerund is fixed; do not borrow the to-infinitive from decide/promise.",
-        "FALSE — Enjoy takes a gerund: \"enjoy practising.\"\n\nTip: Enjoy / avoid / consider share the -ing pattern.",
-        "FALSE — Consider takes -ing: \"considering outsourcing.\"\n\nTip: If you can swap in \"the idea of …ing,\" you want a gerund after consider.",
-        "FALSE — Decide needs to + verb: \"decided to expand.\"\n\nTip: Decide never takes a bare gerund as its complement.",
-        "TRUE — Refuse + to-infinitive is correct: \"refused to open.\"\n\nTip: Refusal language almost always pairs with to + base verb."
+        "**A) The librarian avoided to mention the overdue fines in front of the class.**  (false)\n\nTrap: avoid needs -ing — \"avoided mentioning the overdue fines,\" not \"avoided to mention.\" Do not borrow the to-infinitive from decide or promise just because they sound similar.\n\n**Tip:** Avoid + gerund is fixed.",
+        "**B) Trainee chefs enjoy to practise knife skills on quiet mornings.**  (false)\n\nTrap: enjoy takes a gerund — \"enjoy practising knife skills,\" not \"enjoy to practise.\" Trainee chefs still follow the same grammar rule as anyone else.\n\n**Tip:** Enjoy / avoid / consider share the -ing pattern.",
+        "**C) Management is considering to outsource the school canteen.**  (false)\n\nTrap: consider takes -ing — \"considering outsourcing the school canteen,\" not \"considering to outsource.\" If you can paraphrase as \"the idea of …ing,\" you want a gerund.\n\n**Tip:** Consider to + verb is a frequent exam trap — reject it.",
+        "**D) The band decided expanding their tour into two neighbouring towns.**  (false)\n\nTrap: decide needs to + verb — \"decided to expand their tour,\" not \"decided expanding.\" Decide never takes a bare gerund as its direct complement.\n\n**Tip:** Decide → to + base verb.",
+        "**E) The driver refused to open the boot without seeing ID.**  (true)\n\nRefuse + to-infinitive is correct: \"refused to open the boot without seeing ID.\" Refusal language almost always pairs with to + base verb, and this line does it right.\n\n**Tip:** Keep refuse + to even when a condition (without seeing ID) follows."
       ],
       "highlights": [
         "avoided to mention",
@@ -96,7 +114,7 @@
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.7",
-      "solution_overview": "Four classic wrong-pattern lines and one clean refuse + to. Flip every avoid/enjoy/consider error to -ing and every decide error to to + verb."
+      "solution_overview": "This set is almost a wrong-pattern gallery: four sentences break the fixed complement, and only refuse survives cleanly.\n\n**Part 1: What to watch for.**\n\nAvoid, enjoy, and consider must keep -ing; decide must keep to + verb. The only healthy line is refuse + to-infinitive.\n\n**Part 2: How to decide.**\n\nFlip every avoid/enjoy/consider error to a gerund and every decide error to to + verb. When refuse already has to, leave it alone.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-7-04",
@@ -110,13 +128,19 @@
         "She stopped to smoking after her doctor warned her.",
         "He stopped typing when the fire alarm sounded."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Stop + to-infinitive means pause in order to do something else: they interrupted the journey to buy ice cream.\n\nTip: Stop to = interrupt activity A so you can do activity B.",
-        "FALSE — Here you want quit the habit: \"stop chewing,\" not \"stop to chew.\"\n\nTip: Stop -ing = quit / no longer do that activity.",
-        "TRUE — Stop + gerund means they quit talking.\n\nTip: If the meaning is \"no longer do X,\" use stop + -ing.",
-        "FALSE — Habit quitting needs the gerund: \"stopped smoking,\" not \"stopped to smoking.\"\n\nTip: Never mix to and -ing after stop in the same slot.",
-        "TRUE — Stop + gerund correctly means he quit typing when the alarm rang.\n\nTip: Sudden interruption of the same action → stop + -ing."
+        "**A) We stopped to buy ice cream when we reached the pier.**  (true)\n\nStop + to-infinitive means they interrupted the journey in order to buy ice cream. That purpose reading fits the pier scene perfectly, so the sentence is grammatical.\n\n**Tip:** Stop to = interrupt activity A so you can do activity B.",
+        "**B) Please stop to chew gum during the recital.**  (false)\n\nTrap: here you want quit the habit of chewing gum during the recital — \"stop chewing,\" not \"stop to chew.\" Stop to chew would oddly mean pause something else in order to start chewing.\n\n**Tip:** Stop -ing = quit / no longer do that activity.",
+        "**C) On the motorway they stopped talking and listened to the news.**  (true)\n\nStop + gerund means they quit talking and listened instead. On the motorway, the meaning is cessation of the same action, so -ing is the right form.\n\n**Tip:** If the meaning is \"no longer do X,\" use stop + -ing.",
+        "**D) She stopped to smoking after her doctor warned her.**  (false)\n\nTrap: habit quitting needs the gerund alone — \"stopped smoking,\" not \"stopped to smoking.\" You cannot mix to and -ing in the same complement slot after stop.\n\n**Tip:** Never attach to directly to an -ing form after stop.",
+        "**E) He stopped typing when the fire alarm sounded.**  (true)\n\nStop + gerund correctly means he quit typing when the fire alarm sounded. The typing itself ends; that is cessation, not purpose.\n\n**Tip:** Sudden interruption of the same action → stop + -ing."
       ],
       "highlights": [
         "stopped to buy",
@@ -128,7 +152,7 @@
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.7",
-      "solution_overview": "Stop changes meaning with form: stop to = pause in order to; stop -ing = quit the activity. Ask which sense the sentence needs before you mark it."
+      "solution_overview": "Stop is special: the form after it changes the meaning, so you are choosing a sense of the verb as well as a pattern.\n\n**Part 1: What to watch for.**\n\nStop + to-infinitive means pause in order to do something else. Stop + gerund means quit / no longer do that activity. Hybrids like \"stop to smoking\" are never valid.\n\n**Part 2: How to decide.**\n\nAsk which sense the sentence needs — purpose after a pause, or cessation of the same action — then pick to or -ing to match. Reject any string that glues to onto an -ing form.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-7-05",
@@ -142,13 +166,19 @@
         "Elena decided studying abroad for one semester.",
         "The museum promised to reopen the sculpture wing in May."
       ],
-      "answer_key": [true, true, true, false, true],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Avoid + gerund is correct: \"avoid eating.\"\n\nTip: Health and habit advice often uses avoid + -ing.",
-        "TRUE — Enjoy + gerund names a liked activity: \"enjoy gardening.\"\n\nTip: Enjoy almost never takes to + verb in standard English.",
-        "TRUE — Consider + gerund is correct: \"considered joining.\"\n\nTip: Consider = think about doing → -ing.",
-        "FALSE — Decide needs to + verb: \"decided to study.\"\n\nTip: Decide / choose / refuse / promise → to-infinitive.",
-        "TRUE — Promise + to-infinitive is correct: \"promised to reopen.\"\n\nTip: Commitments after promise use to + base verb."
+        "**A) Athletes often avoid eating heavy meals right before a race.**  (true)\n\nAvoid + gerund is correct: \"avoid eating heavy meals right before a race.\" Health and habit advice often uses this pattern, and athletes are a natural context for it.\n\n**Tip:** Avoid + -ing for habits you try not to do.",
+        "**B) My grandparents enjoy gardening in the late afternoon.**  (true)\n\nEnjoy + gerund names a liked activity: \"enjoy gardening in the late afternoon.\" Enjoy almost never takes to + verb in standard exam English.\n\n**Tip:** Enjoy + activity = -ing every time.",
+        "**C) Have you considered joining the community choir?**  (true)\n\nConsider + gerund is correct: \"considered joining the community choir.\" Consider means think about doing something, which takes -ing.\n\n**Tip:** Consider = weigh an option → -ing.",
+        "**D) Elena decided studying abroad for one semester.**  (false)\n\nTrap: decide needs to + verb — \"decided to study abroad,\" not \"decided studying.\" Choose, refuse, and promise sit in the same to-infinitive family.\n\n**Tip:** Decide / choose / refuse / promise → to-infinitive.",
+        "**E) The museum promised to reopen the sculpture wing in May.**  (true)\n\nPromise + to-infinitive is correct: \"promised to reopen the sculpture wing in May.\" Commitments after promise use to + base verb.\n\n**Tip:** Public or personal promises both keep the to."
       ],
       "highlights": [
         "avoid eating",
@@ -160,7 +190,7 @@
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.7",
-      "solution_overview": "Clean models for avoid, enjoy, consider, and promise sit beside one decide error. Keep the -ing trio separate from the to-infinitive trio."
+      "solution_overview": "Clean models for avoid, enjoy, consider, and promise sit beside one decide error that uses the wrong complement.\n\n**Part 1: What to watch for.**\n\nKeep the -ing trio (avoid, enjoy, consider) separate from the to-infinitive trio (decide, refuse, promise). Only Elena's decide line breaks the rule here.\n\n**Part 2: How to decide.**\n\nVerify each governing verb against its list. When four look textbook-correct, still check decide/refuse/promise carefully for a smuggled gerund.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-7-06",
@@ -174,13 +204,19 @@
         "The jury refused to discuss the case outside the room.",
         "Dad promised calling us as soon as the ferry docked."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Avoid takes -ing: \"avoid swimming.\"\n\nTip: Warnings with avoid always want the gerund.",
-        "TRUE — Enjoy + gerund is correct: \"enjoy building.\"\n\nTip: Enjoy + activity = -ing every time.",
-        "FALSE — Consider takes -ing: \"considering renting.\"\n\nTip: Consider to + verb is a frequent exam trap — reject it.",
-        "TRUE — Refuse + to-infinitive is correct: \"refused to discuss.\"\n\nTip: Refuse patterns with decide and promise.",
-        "FALSE — Promise needs to + verb: \"promised to call.\"\n\nTip: Promise + -ing is not standard for future commitments."
+        "**A) Tourists should avoid to swim near the rocks after dark.**  (false)\n\nTrap: avoid takes -ing — \"avoid swimming near the rocks,\" not \"avoid to swim.\" Warnings with avoid always want the gerund.\n\n**Tip:** Avoid + gerund is fixed; do not borrow to from decide.",
+        "**B) Kids usually enjoy building sandcastles at low tide.**  (true)\n\nEnjoy + gerund is correct: \"enjoy building sandcastles at low tide.\" Building is the liked activity, so -ing is required.\n\n**Tip:** Enjoy + activity = -ing every time.",
+        "**C) We are considering to rent bikes for the coastal path.**  (false)\n\nTrap: consider takes -ing — \"considering renting bikes,\" not \"considering to rent.\" Consider to + verb is a frequent exam trap.\n\n**Tip:** If you can swap in \"the idea of …ing,\" you want a gerund after consider.",
+        "**D) The jury refused to discuss the case outside the room.**  (true)\n\nRefuse + to-infinitive is correct: \"refused to discuss the case outside the room.\" Refuse patterns with decide and promise, and this line keeps that to.\n\n**Tip:** Refusal language almost always pairs with to + base verb.",
+        "**E) Dad promised calling us as soon as the ferry docked.**  (false)\n\nTrap: promise needs to + verb — \"promised to call us,\" not \"promised calling.\" Promise + -ing is not standard for future commitments.\n\n**Tip:** Promise + to-infinitive for commitments."
       ],
       "highlights": [
         "avoid to swim",
@@ -192,7 +228,7 @@
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.7",
-      "solution_overview": "Two clean lines (enjoy, refuse) and three pattern flips. Watch especially avoid/consider + to and promise + -ing."
+      "solution_overview": "Two clean lines (enjoy, refuse) sit next to three pattern flips on avoid, consider, and promise.\n\n**Part 1: What to watch for.**\n\nWatch especially avoid/consider + to and promise + -ing — those are the crossed wires this set is fishing for. Enjoy and refuse already show the correct camps.\n\n**Part 2: How to decide.**\n\nSort each verb into the -ing list or the to list, then check whether the written complement matches. Flip only the mismatches.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-7-07",
@@ -206,13 +242,19 @@
         "She stopped to check the map because the path forked.",
         "He stopped to listen music and missed the announcement."
       ],
-      "answer_key": [true, true, false, true, false],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Stop to stretch = pause the run in order to stretch.\n\nTip: Purpose after an interruption → stop + to-infinitive.",
-        "TRUE — Stop shouting = quit the noisy behaviour.\n\nTip: Quit an ongoing action → stop + -ing.",
-        "FALSE — After stop, use to + verb for purpose, not for + -ing: \"stopped to buy tickets.\"\n\nTip: For + -ing after stop is not the purpose pattern you want here.",
-        "TRUE — Stop to check = interrupt travel in order to check the map.\n\nTip: Reason/purpose after pause → to-infinitive.",
-        "FALSE — Listen needs to: \"stopped listening to music\" (quit) or \"stopped to listen to music\" (pause in order to). As written, both form and preposition fail.\n\nTip: After stop, choose to or -ing by meaning — and keep listen to intact."
+        "**A) Runners stopped to stretch at the water station.**  (true)\n\nStop to stretch = pause the run in order to stretch at the water station. Purpose after an interruption is exactly what stop + to-infinitive expresses.\n\n**Tip:** Purpose after an interruption → stop + to-infinitive.",
+        "**B) Please stop shouting; the neighbours can hear you.**  (true)\n\nStop shouting = quit the noisy behaviour. The neighbours can hear you, so the command is to cease that same action — gerund territory.\n\n**Tip:** Quit an ongoing action → stop + -ing.",
+        "**C) We stopped for buying tickets at the kiosk.**  (false)\n\nTrap: after stop, use to + verb for purpose, not for + -ing — \"stopped to buy tickets,\" not \"stopped for buying.\" For + -ing is not the purpose pattern you want here.\n\n**Tip:** Purpose = stop to + verb.",
+        "**D) She stopped to check the map because the path forked.**  (true)\n\nStop to check = interrupt travel in order to check the map because the path forked. Reason or purpose after a pause takes the to-infinitive.\n\n**Tip:** Reason/purpose after pause → to-infinitive.",
+        "**E) He stopped to listen music and missed the announcement.**  (false)\n\nTrap: as written, both form and preposition fail. You need either \"stopped listening to music\" (quit) or \"stopped to listen to music\" (pause in order to) — and listen always keeps to before music.\n\n**Tip:** After stop, choose to or -ing by meaning — and keep listen to intact."
       ],
       "highlights": [
         "stopped to stretch",
@@ -224,7 +266,7 @@
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.7",
-      "solution_overview": "Deepen the stop contrast and catch side traps like for + -ing and missing to after listen. Meaning still decides between to and -ing."
+      "solution_overview": "Deepen the stop contrast and catch side traps like for + -ing and a broken listen phrase.\n\n**Part 1: What to watch for.**\n\nMeaning still decides between stop to (purpose) and stop -ing (cessation). Also reject \"stopped for buying\" and any listen phrase that drops its to.\n\n**Part 2: How to decide.**\n\nLabel each stop as purpose or quit first. Then check that purpose uses to + verb (not for + -ing) and that any listen pattern keeps listen to.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-7-08",
@@ -238,13 +280,19 @@
         "The committee decided to cancel the outdoor picnic.",
         "She refused helping with the dishes until her homework was done."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Avoid + gerund is correct: \"avoid checking.\"\n\nTip: Avoid + -ing for habits you try not to do.",
-        "FALSE — Enjoy needs -ing: \"enjoy watching.\"\n\nTip: Enjoy to + verb is almost never right.",
-        "TRUE — Consider + gerund is correct: \"considered changing.\"\n\nTip: Consider = weigh an option → -ing.",
-        "TRUE — Decide + to-infinitive is correct: \"decided to cancel.\"\n\nTip: Decisions about future actions take to + verb.",
-        "FALSE — Refuse needs to + verb: \"refused to help.\"\n\nTip: Refuse + -ing is a classic false friend with avoid/enjoy."
+        "**A) I avoid checking social media before breakfast.**  (true)\n\nAvoid + gerund is correct: \"avoid checking social media before breakfast.\" That is a habit she tries not to do, which is classic avoid + -ing.\n\n**Tip:** Avoid + -ing for habits you try not to do.",
+        "**B) They enjoy to watch documentaries about deep-sea life.**  (false)\n\nTrap: enjoy needs -ing — \"enjoy watching documentaries,\" not \"enjoy to watch.\" Enjoy to + verb is almost never right in carefully marked English.\n\n**Tip:** Enjoy to + verb is almost never right.",
+        "**C) Have you considered changing your route to avoid the roadworks?**  (true)\n\nConsider + gerund is correct: \"considered changing your route to avoid the roadworks.\" Weighing an option takes -ing after consider.\n\n**Tip:** Consider = weigh an option → -ing.",
+        "**D) The committee decided to cancel the outdoor picnic.**  (true)\n\nDecide + to-infinitive is correct: \"decided to cancel the outdoor picnic.\" Decisions about future actions take to + verb.\n\n**Tip:** Decisions about future actions take to + verb.",
+        "**E) She refused helping with the dishes until her homework was done.**  (false)\n\nTrap: refuse needs to + verb — \"refused to help with the dishes,\" not \"refused helping.\" Refuse + -ing is a classic false friend with avoid and enjoy.\n\n**Tip:** Refuse + -ing mimics avoid wrongly — flip it to to + verb."
       ],
       "highlights": [
         "avoid checking",
@@ -256,7 +304,7 @@
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.7",
-      "solution_overview": "Mix of clean avoid/consider/decide lines and two flips (enjoy to, refuse -ing). Group the verbs by pattern before scoring."
+      "solution_overview": "A mix of clean avoid/consider/decide lines and two flips: enjoy with to, and refuse with -ing.\n\n**Part 1: What to watch for.**\n\nGroup the verbs by pattern before scoring. Avoid and consider stay with -ing; decide stays with to; enjoy to and refuse -ing are the traps.\n\n**Part 2: How to decide.**\n\nMark each governing verb's camp first, then check the complement. The two false lines are the ones that borrowed the other camp's form.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-7-09",
@@ -270,13 +318,19 @@
         "She never enjoys waiting in long airport queues.",
         "The cast promised rehearsing every evening until opening night."
       ],
-      "answer_key": [true, true, false, true, false],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Stop + gerund = quit the habit of drinking energy drinks.\n\nTip: Habit change → stop + -ing.",
-        "TRUE — Stop to ask = pause the journey in order to ask.\n\nTip: Purpose after a pause → stop + to.",
-        "FALSE — Quit arguing needs the gerund alone: \"stopped arguing,\" not \"stopped to arguing.\"\n\nTip: Do not glue to onto a gerund after stop.",
-        "TRUE — Enjoy + gerund is correct (here negated): \"enjoys waiting.\"\n\nTip: Negation does not change the enjoy + -ing pattern.",
-        "FALSE — Promise needs to + verb: \"promised to rehearse.\"\n\nTip: Promise + -ing fails the commitment pattern."
+        "**A) After years of late nights, he finally stopped drinking energy drinks.**  (true)\n\nStop + gerund = quit the habit of drinking energy drinks after years of late nights. Habit change is the cessation reading, so -ing is correct.\n\n**Tip:** Habit change → stop + -ing.",
+        "**B) We stopped to ask a local which tram went to the museum.**  (true)\n\nStop to ask = pause the journey in order to ask a local which tram went to the museum. Purpose after a pause takes stop + to.\n\n**Tip:** Purpose after a pause → stop + to.",
+        "**C) They stopped to arguing when the teacher walked in.**  (false)\n\nTrap: quit arguing needs the gerund alone — \"stopped arguing,\" not \"stopped to arguing.\" Do not glue to onto a gerund after stop.\n\n**Tip:** Never attach to directly to an -ing form after stop.",
+        "**D) She never enjoys waiting in long airport queues.**  (true)\n\nEnjoy + gerund is correct even when negated: \"never enjoys waiting in long airport queues.\" Negation does not change the enjoy + -ing pattern.\n\n**Tip:** Negation does not unlock enjoy + to.",
+        "**E) The cast promised rehearsing every evening until opening night.**  (false)\n\nTrap: promise needs to + verb — \"promised to rehearse every evening,\" not \"promised rehearsing.\" Promise + -ing fails the commitment pattern.\n\n**Tip:** Promise + to-infinitive for future commitments."
       ],
       "highlights": [
         "stopped drinking",
@@ -288,7 +342,7 @@
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.7",
-      "solution_overview": "Stop meaning splits again, plus a hybrid \"to arguing\" error and a promise trap. Keep purpose (to) versus cessation (-ing) sharply separate."
+      "solution_overview": "Stop meaning splits again, plus a hybrid \"to arguing\" error and a promise trap.\n\n**Part 1: What to watch for.**\n\nKeep purpose (stop to) versus cessation (stop -ing) sharply separate. Also reject glued hybrids like \"to arguing,\" and remember promise wants to + verb.\n\n**Part 2: How to decide.**\n\nFor each stop line, name the intended sense first. Then check enjoy's gerund and promise's infinitive independently.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-7-10",
@@ -302,13 +356,19 @@
         "My brother refuses admitting he lost the house keys.",
         "Aunt Priya enjoys knitting scarves for the whole family."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Avoid + gerund is correct: \"avoid blocking.\"\n\nTip: Public notices often use avoid + -ing.",
-        "FALSE — Consider takes -ing: \"consider volunteering.\"\n\nTip: Consider to is a frequent trap — rewrite with -ing.",
-        "TRUE — Decide + to-infinitive is correct: \"decided to turn.\"\n\nTip: Sudden decisions still take to + verb.",
-        "FALSE — Refuse needs to + verb: \"refuses to admit.\"\n\nTip: Refuse + -ing mimics avoid wrongly — flip it.",
-        "TRUE — Enjoy + gerund is correct: \"enjoys knitting.\"\n\nTip: Hobby verbs after enjoy always take -ing."
+        "**A) Passengers should avoid blocking the aisle with large suitcases.**  (true)\n\nAvoid + gerund is correct: \"avoid blocking the aisle with large suitcases.\" Public notices often use avoid + -ing, and this one is textbook.\n\n**Tip:** Public notices often use avoid + -ing.",
+        "**B) Would you consider to volunteer at the food bank this winter?**  (false)\n\nTrap: consider takes -ing — \"consider volunteering at the food bank,\" not \"consider to volunteer.\" Consider to is a frequent trap.\n\n**Tip:** Rewrite consider to + verb with -ing.",
+        "**C) The captain decided to turn back because of the fog.**  (true)\n\nDecide + to-infinitive is correct: \"decided to turn back because of the fog.\" Sudden decisions still take to + verb.\n\n**Tip:** Sudden decisions still take to + verb.",
+        "**D) My brother refuses admitting he lost the house keys.**  (false)\n\nTrap: refuse needs to + verb — \"refuses to admit he lost the house keys,\" not \"refuses admitting.\" Refuse + -ing wrongly mimics avoid.\n\n**Tip:** Refuse + -ing → flip to to + verb.",
+        "**E) Aunt Priya enjoys knitting scarves for the whole family.**  (true)\n\nEnjoy + gerund is correct: \"enjoys knitting scarves for the whole family.\" Hobby verbs after enjoy always take -ing.\n\n**Tip:** Hobby after enjoy → -ing."
       ],
       "highlights": [
         "avoid blocking",
@@ -320,7 +380,7 @@
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.7",
-      "solution_overview": "Three solid models and two crossed patterns (consider to, refuse -ing). Sort each verb into the -ing list or the to list before you answer."
+      "solution_overview": "Three solid models sit beside two crossed patterns: consider with to, and refuse with -ing.\n\n**Part 1: What to watch for.**\n\nSort each verb into the -ing list (avoid, consider, enjoy) or the to list (decide, refuse) before you answer. The false lines are the ones that swapped camps.\n\n**Part 2: How to decide.**\n\nConfirm avoid/enjoy/decide first as clean anchors, then repair consider to → -ing and refuse -ing → to + verb.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-7-11",
@@ -334,13 +394,19 @@
         "He promised not to spoil the ending of the film.",
         "I enjoy not waking up to an alarm on Sundays."
       ],
-      "answer_key": [true, false, false, true, true],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Decide + not + to-infinitive is the correct negation: \"decided not to climb.\"\n\nTip: Negate the infinitive with not before to, not with a gerund.",
-        "FALSE — Avoid already means \"not do\"; use \"avoids sitting,\" not \"avoids not to sit.\"\n\nTip: Avoid + -ing; do not stack an extra not + to.",
-        "FALSE — The intended sense is almost always \"refused to apologise\" (would not apologise). \"Refused not to apologise\" is a double negative mess.\n\nTip: Refuse + to + verb; put not only when you truly mean \"refuse to not do X.\"",
-        "TRUE — Promise + not + to-infinitive is correct: \"promised not to spoil.\"\n\nTip: Negation sits before to in the infinitive pattern.",
-        "TRUE — Enjoy + gerund works with negation inside the activity: \"enjoy not waking.\"\n\nTip: Enjoy still wants -ing even when the activity is a negative state."
+        "**A) We decided not to climb the ridge after the weather warning.**  (true)\n\nDecide + not + to-infinitive is the correct negation: \"decided not to climb the ridge.\" You negate the infinitive with not before to, not by switching to a gerund.\n\n**Tip:** Negate the infinitive with not before to.",
+        "**B) She avoids not to sit near the speakers at concerts.**  (false)\n\nTrap: avoid already means \"not do\"; use \"avoids sitting near the speakers,\" not \"avoids not to sit.\" Do not stack an extra not + to onto avoid.\n\n**Tip:** Avoid + -ing; do not add not to.",
+        "**C) They refused not to apologise, even though everyone expected it.**  (false)\n\nTrap: the intended sense is almost always \"refused to apologise\" (would not apologise). \"Refused not to apologise\" is a double-negative mess unless you truly mean they insisted on apologising.\n\n**Tip:** Refuse + to + verb; put not only when you truly mean \"refuse to not do X.\"",
+        "**D) He promised not to spoil the ending of the film.**  (true)\n\nPromise + not + to-infinitive is correct: \"promised not to spoil the ending.\" Negation sits before to in the infinitive pattern, same family as decide.\n\n**Tip:** Negation sits before to in the infinitive pattern.",
+        "**E) I enjoy not waking up to an alarm on Sundays.**  (true)\n\nEnjoy + gerund works with negation inside the activity: \"enjoy not waking up to an alarm on Sundays.\" Enjoy still wants -ing even when the activity is a negative state.\n\n**Tip:** Enjoy still wants -ing even for a negative state."
       ],
       "highlights": [
         "decided not to climb",
@@ -352,7 +418,7 @@
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.7",
-      "solution_overview": "Negation tests the same fixed patterns: not to after decide/promise, plain -ing after avoid/enjoy, and careful handling of refuse."
+      "solution_overview": "Negation tests the same fixed patterns: not to after decide/promise, plain -ing after avoid/enjoy, and careful handling of refuse.\n\n**Part 1: What to watch for.**\n\nDecide and promise negate with not before to. Avoid already means \"not do,\" so it wants plain -ing, not a stacked not to. Refuse not to is usually a muddled double negation when the speaker meant refused to.\n\n**Part 2: How to decide.**\n\nFind the governing verb, apply its usual complement, then place not only where that pattern allows — before to for infinitives, inside the gerund phrase for enjoy, and nowhere extra after avoid.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-7-12",
@@ -366,13 +432,19 @@
         "Please stop to interrupting the speaker with side comments.",
         "They stopped singing as soon as the conductor raised her hand."
       ],
-      "answer_key": [true, true, true, false, true],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Stop + gerund = quit the activity of drinking from the stream.\n\nTip: Same action ends → stop + -ing.",
-        "TRUE — Stop to drink = pause walking in order to drink.\n\nTip: Purpose of the pause → stop + to.",
-        "TRUE — Stop someone from + -ing is a related but valid pattern: prevent them from doing X.\n\nTip: Stop + object + from + -ing = prevent.",
-        "FALSE — Quit interrupting needs \"stop interrupting,\" not \"stop to interrupting.\"\n\nTip: Never attach to directly to an -ing form after stop.",
-        "TRUE — Stop + gerund = they quit singing on cue.\n\nTip: Instant cessation of the same action → -ing."
+        "**A) Midway through the hike we stopped drinking from the stream and switched to bottled water.**  (true)\n\nStop + gerund = quit the activity of drinking from the stream and switch to bottled water. The same action ends, so -ing is correct.\n\n**Tip:** Same action ends → stop + -ing.",
+        "**B) Midway through the hike we stopped to drink from our bottles.**  (true)\n\nStop to drink = pause walking in order to drink from our bottles. The purpose of the pause is the drink, so to-infinitive is correct.\n\n**Tip:** Purpose of the pause → stop + to.",
+        "**C) The guide stopped us from approaching the cliff edge.**  (true)\n\nStop someone from + -ing is a related but valid pattern: the guide prevented them from approaching the cliff edge. That is not the same as stop to or stop -ing, but it is grammatical.\n\n**Tip:** Stop + object + from + -ing = prevent.",
+        "**D) Please stop to interrupting the speaker with side comments.**  (false)\n\nTrap: quit interrupting needs \"stop interrupting,\" not \"stop to interrupting.\" Never attach to directly to an -ing form after stop.\n\n**Tip:** Never attach to directly to an -ing form after stop.",
+        "**E) They stopped singing as soon as the conductor raised her hand.**  (true)\n\nStop + gerund = they quit singing as soon as the conductor raised her hand. Instant cessation of the same action takes -ing.\n\n**Tip:** Instant cessation of the same action → -ing."
       ],
       "highlights": [
         "stopped drinking",
@@ -384,7 +456,7 @@
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.7",
-      "solution_overview": "Pair stop to / stop -ing with the prevent pattern stop someone from -ing, and reject the hybrid \"to interrupting.\""
+      "solution_overview": "Pair stop to / stop -ing with the prevent pattern stop someone from -ing, and reject the hybrid \"to interrupting.\"\n\n**Part 1: What to watch for.**\n\nSame action ending → stop + -ing. Purpose of a pause → stop + to. Preventing someone → stop + object + from + -ing. Never write stop to + -ing.\n\n**Part 2: How to decide.**\n\nName the intended meaning of stop in each line. Then match the structure: gerund, to-infinitive, or object + from + -ing — and kill the hybrid.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-7-13",
@@ -398,13 +470,19 @@
         "He refused being photographed without his consent.",
         "The mayor promised to fund the new skate park next spring."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Consider + gerund and decide + to-infinitive both follow their fixed patterns in one sentence.\n\nTip: Different verbs in the same sentence can still keep their own complements.",
-        "FALSE — Enjoy needs -ing: \"enjoys being.\"\n\nTip: Enjoy + being / doing, never enjoy to be in this sense.",
-        "TRUE — Avoid + gerund is correct: \"avoided discussing.\"\n\nTip: Sensitive topics often pair with avoid + -ing.",
-        "FALSE — Refuse needs to + verb: \"refused to be photographed.\"\n\nTip: Passive infinitives still follow refuse + to.",
-        "TRUE — Promise + to-infinitive is correct: \"promised to fund.\"\n\nTip: Public commitments use promise + to."
+        "**A) Having considered moving house, they decided to stay another year.**  (true)\n\nConsider + gerund and decide + to-infinitive both follow their fixed patterns in one sentence: having considered moving, they decided to stay. Different verbs keep their own complements.\n\n**Tip:** Different verbs in the same sentence can still keep their own complements.",
+        "**B) She enjoys to be the first to arrive at rehearsals.**  (false)\n\nTrap: enjoy needs -ing — \"enjoys being the first to arrive,\" not \"enjoys to be.\" Enjoy + being / doing, never enjoy to be in this sense.\n\n**Tip:** Enjoy + being / doing, never enjoy to be here.",
+        "**C) We avoided discussing politics at the family dinner.**  (true)\n\nAvoid + gerund is correct: \"avoided discussing politics at the family dinner.\" Sensitive topics often pair with avoid + -ing.\n\n**Tip:** Sensitive topics often pair with avoid + -ing.",
+        "**D) He refused being photographed without his consent.**  (false)\n\nTrap: refuse needs to + verb — \"refused to be photographed without his consent,\" not \"refused being.\" Passive infinitives still follow refuse + to.\n\n**Tip:** Passive infinitives still follow refuse + to.",
+        "**E) The mayor promised to fund the new skate park next spring.**  (true)\n\nPromise + to-infinitive is correct: \"promised to fund the new skate park next spring.\" Public commitments use promise + to.\n\n**Tip:** Public commitments use promise + to."
       ],
       "highlights": [
         "considered moving",
@@ -416,7 +494,7 @@
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.7",
-      "solution_overview": "Stacked verbs, a passive after refuse, and an enjoy trap. Track each verb's complement independently."
+      "solution_overview": "Stacked verbs, a passive after refuse, and an enjoy trap — track each verb's complement independently.\n\n**Part 1: What to watch for.**\n\nConsider + -ing and decide + to can share one sentence without rewriting each other. Enjoy still wants -ing (including being). Refuse needs to even before a passive infinitive. Promise keeps to.\n\n**Part 2: How to decide.**\n\nUnderline every verb that governs another verb form, then apply that verb's own rule. Do not let one correct pattern contaminate its neighbour.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-7-14",
@@ -430,13 +508,19 @@
         "They decided against postponing the wedding.",
         "She is considering whether to accept the internship offer."
       ],
-      "answer_key": [false, true, false, true, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — The intended idiom is continuous curiosity: \"never stop wondering\" (gerund), not pause-in-order-to wonder.\n\nTip: Never stop + -ing = keep doing something all the time.",
-        "TRUE — Never stop + gerund correctly means the wondering continues.\n\nTip: Idiomatic \"can't/never stop -ing\" always wants the gerund.",
-        "FALSE — Quit smoking needs \"stop smoking\"; \"stop to smoke\" would mean pause something else in order to smoke.\n\nTip: Medical advice to quit → stop + -ing.",
-        "TRUE — Decide against + gerund is a valid related pattern: \"decided against postponing.\"\n\nTip: Decide to + verb OR decide against + -ing.",
-        "TRUE — Consider whether + to-infinitive is grammatical when whether introduces the option.\n\nTip: Bare consider + verb → -ing; consider whether → to is fine."
+        "**A) I never stop to wonder how the magician hid the coin.**  (false)\n\nTrap: the intended idiom is continuous curiosity — \"never stop wondering\" (gerund), not pause-in-order-to wonder. Stop to wonder would mean interrupt something else so you can wonder, which is not the usual reading.\n\n**Tip:** Never stop + -ing = keep doing something all the time.",
+        "**B) I never stop wondering how the magician hid the coin.**  (true)\n\nNever stop + gerund correctly means the wondering continues without pause. Idiomatic \"can't/never stop -ing\" always wants the gerund.\n\n**Tip:** Idiomatic \"can't/never stop -ing\" always wants the gerund.",
+        "**C) Doctors advised him to stop to smoke immediately.**  (false)\n\nTrap: quit smoking needs \"stop smoking\"; \"stop to smoke\" would mean pause something else in order to smoke — the opposite of medical advice to quit.\n\n**Tip:** Medical advice to quit → stop + -ing.",
+        "**D) They decided against postponing the wedding.**  (true)\n\nDecide against + gerund is a valid related pattern: \"decided against postponing the wedding.\" You can also say decide to + verb; against + -ing is the negative sibling.\n\n**Tip:** Decide to + verb OR decide against + -ing.",
+        "**E) She is considering whether to accept the internship offer.**  (true)\n\nConsider whether + to-infinitive is grammatical when whether introduces the option: \"considering whether to accept.\" Bare consider + verb still wants -ing; the whether-clause changes the frame.\n\n**Tip:** Bare consider + verb → -ing; consider whether → to is fine."
       ],
       "highlights": [
         "stop to wonder",
@@ -448,7 +532,7 @@
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.7",
-      "solution_overview": "Idioms and near-neighbours: never stop -ing, stop smoking vs stop to smoke, decide against -ing, and consider whether to."
+      "solution_overview": "Idioms and near-neighbours: never stop -ing, stop smoking versus stop to smoke, decide against -ing, and consider whether to.\n\n**Part 1: What to watch for.**\n\n\"Never stop -ing\" means keep doing something. Medical quit advice wants stop + -ing, not stop to. Decide against + gerund and consider whether + to are valid alternatives to the basic patterns.\n\n**Part 2: How to decide.**\n\nRead for idiom and structure, not just the first verb. Ask whether stop means cease or purpose, and whether decide/consider are using a legal alternative frame.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-7-15",
@@ -462,13 +546,19 @@
         "He refused to let the puppy sleep on the sofa.",
         "The club promised arranging free coaching for beginners."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Decide + to-infinitive is correct: \"decided to sleep.\"\n\nTip: Rather than does not change decide's to-pattern.",
-        "FALSE — Avoid needs -ing: \"avoids being seen.\"\n\nTip: Passive gerunds still follow avoid + -ing.",
-        "TRUE — Enjoy + gerund (passive) is correct: \"enjoy being invited.\"\n\nTip: Enjoy + being + past participle is a common natural pattern.",
-        "TRUE — Refuse + to-infinitive is correct: \"refused to let.\"\n\nTip: Refuse to let / refuse to allow keep the to.",
-        "FALSE — Promise needs to + verb: \"promised to arrange.\"\n\nTip: Promise + -ing is still wrong even with a kind offer."
+        "**A) Rather than argue, they decided to sleep on the problem.**  (true)\n\nDecide + to-infinitive is correct: \"decided to sleep on the problem.\" The opener \"Rather than argue\" does not change decide's to-pattern.\n\n**Tip:** Rather than does not change decide's to-pattern.",
+        "**B) She avoids to be seen wearing the same outfit twice.**  (false)\n\nTrap: avoid needs -ing — \"avoids being seen wearing the same outfit twice,\" not \"avoids to be seen.\" Passive gerunds still follow avoid + -ing.\n\n**Tip:** Passive gerunds still follow avoid + -ing.",
+        "**C) We enjoy being invited to their rooftop barbecues.**  (true)\n\nEnjoy + gerund (passive) is correct: \"enjoy being invited to their rooftop barbecues.\" Enjoy + being + past participle is a common natural pattern.\n\n**Tip:** Enjoy + being + past participle is natural.",
+        "**D) He refused to let the puppy sleep on the sofa.**  (true)\n\nRefuse + to-infinitive is correct: \"refused to let the puppy sleep on the sofa.\" Refuse to let / refuse to allow keep the to.\n\n**Tip:** Refuse to let / refuse to allow keep the to.",
+        "**E) The club promised arranging free coaching for beginners.**  (false)\n\nTrap: promise needs to + verb — \"promised to arrange free coaching,\" not \"promised arranging.\" Promise + -ing is still wrong even with a kind offer.\n\n**Tip:** Promise + -ing is still wrong for offers."
       ],
       "highlights": [
         "decided to sleep",
@@ -480,7 +570,7 @@
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.7",
-      "solution_overview": "Passive gerunds after avoid/enjoy and a promise error. Form (active/passive) does not rewrite the verb's complement rule."
+      "solution_overview": "Passive gerunds after avoid/enjoy and a promise error — form (active/passive) does not rewrite the verb's complement rule.\n\n**Part 1: What to watch for.**\n\nDecide and refuse keep to. Avoid and enjoy keep -ing, including being + past participle. Promise still cannot take a bare gerund.\n\n**Part 2: How to decide.**\n\nIgnore active versus passive cosmetics and ask only what the governing verb demands. Repair avoid to be → being, and promise arranging → to arrange.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-7-16",
@@ -494,13 +584,19 @@
         "She decided that postponing the trip would be wiser.",
         "He enjoys when friends drop by without calling first."
       ],
-      "answer_key": [true, true, true, true, true],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Stop to check = pause driving in order to check the tyres.\n\nTip: Cleft \"what made them…\" still keeps stop's meaning split.",
-        "TRUE — Stop checking = quit the phone-checking habit.\n\nTip: Same cleft frame, opposite stop pattern — meaning decides.",
-        "TRUE — Consider + gerund is correct (one rare finance-tinged line): \"considering selling.\"\n\nTip: Even in money contexts, consider still wants -ing.",
-        "TRUE — Decide that + clause is grammatical; the gerund postponing is the subject of the that-clause, not decide's complement.\n\nTip: Decide to + verb OR decide that + clause — both work.",
-        "TRUE — Enjoy can take a when-clause as its object; no verb-complement conflict arises.\n\nTip: Enjoy + noun/gerund/clause — but not enjoy to + verb."
+        "**A) What made them stop to check the tyre pressure was a strange vibration.**  (true)\n\nStop to check = pause driving in order to check the tyre pressure after a strange vibration. The cleft \"what made them…\" still keeps stop's meaning split intact.\n\n**Tip:** Cleft frames still keep stop's meaning split.",
+        "**B) What made them stop checking their phones was the no-device rule.**  (true)\n\nStop checking = quit the phone-checking habit because of the no-device rule. Same cleft frame, opposite stop pattern — meaning decides.\n\n**Tip:** Same frame, opposite pattern — meaning decides.",
+        "**C) Investors are considering selling a small stake in the start-up.**  (true)\n\nConsider + gerund is correct: \"considering selling a small stake in the start-up.\" Even in money contexts, consider still wants -ing.\n\n**Tip:** Even in finance contexts, consider still wants -ing.",
+        "**D) She decided that postponing the trip would be wiser.**  (true)\n\nDecide that + clause is grammatical; the gerund postponing is the subject of the that-clause, not decide's complement. Decide to + verb OR decide that + clause — both work.\n\n**Tip:** Decide to + verb OR decide that + clause — both work.",
+        "**E) He enjoys when friends drop by without calling first.**  (true)\n\nEnjoy can take a when-clause as its object; no verb-complement conflict arises. Enjoy + noun/gerund/clause are fine — but not enjoy to + verb.\n\n**Tip:** Enjoy + noun/gerund/clause — but not enjoy to + verb."
       ],
       "highlights": [
         "stop to check",
@@ -512,7 +608,7 @@
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.7",
-      "solution_overview": "All five are sound once you separate stop's two meanings and allow decide that / enjoy when as alternative structures."
+      "solution_overview": "All five are sound once you separate stop's two meanings and allow decide that / enjoy when as alternative structures.\n\n**Part 1: What to watch for.**\n\nCleft frames do not rewrite stop to versus stop -ing. Consider still wants -ing. Decide that + clause and enjoy + when-clause are grammatical alternatives to decide to / enjoy + -ing.\n\n**Part 2: How to decide.**\n\nCheck stop by meaning first, then accept legal clause objects after decide and enjoy. Do not force every verb into only one complement shape.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-7-17",
@@ -526,13 +622,19 @@
         "Having enjoyed to sail as children, they booked a dinghy again.",
         "Stop to pretend you did not hear the question."
       ],
-      "answer_key": [false, false, true, false, false],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Avoid still needs -ing: \"avoiding answering.\"\n\nTip: Far from + -ing does not license avoid + to.",
-        "FALSE — Promise needs to + verb: \"promising to finish.\"\n\nTip: Keep / start do not change promise's to-pattern.",
-        "TRUE — Refuse + to-infinitive is correct inside the inversion: \"refusing to compromise.\"\n\nTip: Inversion and emphasis leave the refuse + to pattern intact.",
-        "FALSE — Enjoy needs -ing: \"enjoyed sailing.\"\n\nTip: Perfect participle having enjoyed still takes -ing.",
-        "FALSE — Quit pretending needs \"stop pretending,\" not \"stop to pretend\" (which would mean pause in order to pretend).\n\nTip: Commands to quit an act → stop + -ing."
+        "**A) Far from avoiding to answer, she volunteered the awkward detail first.**  (false)\n\nTrap: avoid still needs -ing — \"avoiding answering,\" not \"avoiding to answer.\" Far from + -ing does not license avoid + to.\n\n**Tip:** Far from + -ing does not unlock avoid + to.",
+        "**B) They kept promising finishing the mural before the festival.**  (false)\n\nTrap: promise needs to + verb — \"promising to finish the mural,\" not \"promising finishing.\" Keep / start do not change promise's to-pattern.\n\n**Tip:** Keep / start do not change promise's to-pattern.",
+        "**C) Only after refusing to compromise did the two sides walk out.**  (true)\n\nRefuse + to-infinitive is correct inside the inversion: \"refusing to compromise.\" Inversion and emphasis leave the refuse + to pattern intact.\n\n**Tip:** Inversion leaves refuse + to intact.",
+        "**D) Having enjoyed to sail as children, they booked a dinghy again.**  (false)\n\nTrap: enjoy needs -ing — \"enjoyed sailing as children,\" not \"enjoyed to sail.\" The perfect participle having enjoyed still takes -ing.\n\n**Tip:** Having enjoyed still takes -ing.",
+        "**E) Stop to pretend you did not hear the question.**  (false)\n\nTrap: quit pretending needs \"stop pretending,\" not \"stop to pretend\" (which would mean pause in order to pretend). Commands to quit an act use stop + -ing.\n\n**Tip:** Commands to quit an act → stop + -ing."
       ],
       "highlights": [
         "avoiding to answer",
@@ -544,7 +646,7 @@
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.7",
-      "solution_overview": "Hard wrappers (far from, keep -ing, inversion, having -ed) still cannot rewrite avoid/enjoy/promise/stop. Only refuse to survives cleanly."
+      "solution_overview": "Hard wrappers (far from, keep -ing, inversion, having -ed) still cannot rewrite avoid, enjoy, promise, or stop. Only refuse to survives cleanly.\n\n**Part 1: What to watch for.**\n\nFar from + -ing does not license avoid + to. Keep promising still needs to finish. Inversion leaves refuse + to intact. Having enjoyed still takes -ing. Quit-commands need stop + -ing, not stop to pretend.\n\n**Part 2: How to decide.**\n\nStrip the fancy wrapper mentally, apply the bare verb's complement rule, then put the wrapper back. Only the refuse line already matches.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-7-18",
@@ -558,13 +660,19 @@
         "He decided on renting the attic flat above the bakery.",
         "They refused their friends' offer of driving them home."
       ],
-      "answer_key": [false, true, true, true, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Nonsense meaning: stop to mean is not English for \"intend.\" Use \"She did not mean…\" or similar.\n\nTip: Stop to only works when the infinitive is a real purpose action.",
-        "TRUE — Stop + gerund twice: quit meaning X / quit trusting Y.\n\nTip: Parallel stop + -ing structures keep the \"cease\" sense.",
-        "TRUE — Consider + how + to-infinitive is fine when how introduces the method.\n\nTip: Consider + -ing OR consider + wh-word + to.",
-        "TRUE — Decide on + gerund/noun is a valid alternative to decide to + verb.\n\nTip: Decide to go OR decide on going — both grammatical.",
-        "TRUE — Refuse can take a noun object (\"refused their friends' offer\"); the of + -ing belongs to offer, not to refuse.\n\nTip: Refuse + noun and refuse + to + verb are both correct."
+        "**A) She stopped to mean that she was leaving; she simply paused for breath.**  (false)\n\nTrap: nonsense meaning — stop to mean is not English for \"intend.\" Use something like \"She did not mean that she was leaving; she simply paused for breath.\" Stop to only works when the infinitive is a real purpose action.\n\n**Tip:** Stop to only works when the infinitive is a real purpose action.",
+        "**B) If you stop meaning what you say, people stop trusting you.**  (true)\n\nStop + gerund twice: quit meaning what you say / quit trusting you. Parallel stop + -ing structures keep the \"cease\" sense cleanly.\n\n**Tip:** Parallel stop + -ing keeps the cease sense.",
+        "**C) We are still considering how to phrase the apology.**  (true)\n\nConsider + how + to-infinitive is fine when how introduces the method: \"considering how to phrase the apology.\" Consider + -ing OR consider + wh-word + to both work.\n\n**Tip:** Consider + -ing OR consider + wh-word + to.",
+        "**D) He decided on renting the attic flat above the bakery.**  (true)\n\nDecide on + gerund/noun is a valid alternative to decide to + verb: \"decided on renting the attic flat.\" Decide to go OR decide on going — both grammatical.\n\n**Tip:** Decide to go OR decide on going — both grammatical.",
+        "**E) They refused their friends' offer of driving them home.**  (true)\n\nRefuse can take a noun object (\"refused their friends' offer\"); the of + -ing belongs to offer, not to refuse. Refuse + noun and refuse + to + verb are both correct.\n\n**Tip:** Refuse + noun and refuse + to + verb are both correct."
       ],
       "highlights": [
         "stopped to mean",
@@ -576,7 +684,7 @@
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.7",
-      "solution_overview": "Edge grammar: impossible stop to mean, parallel stop -ing, consider how to, decide on -ing, and refuse + noun. Look past the first verb when the complement sits elsewhere."
+      "solution_overview": "Edge grammar: impossible stop to mean, parallel stop -ing, consider how to, decide on -ing, and refuse + noun.\n\n**Part 1: What to watch for.**\n\nStop to only works when the infinitive is a real purpose action — \"mean\" is not one. Parallel stop + -ing keeps the cease sense. Consider how to, decide on -ing, and refuse + noun are all legal alternatives.\n\n**Part 2: How to decide.**\n\nLook past the first verb when the complement sits elsewhere (offer of driving). Reject nonsense purpose infinitives, and accept decide on / consider how / refuse + noun when they appear.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-7-19",
@@ -590,13 +698,19 @@
         "He enjoys that his sister always remembers his birthday.",
         "We stopped short of promising to host the entire reunion."
       ],
-      "answer_key": [true, false, true, true, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Avoid + gerund is correct: \"avoided interrupting.\"\n\nTip: Fronted participle clauses do not change avoid's -ing rule.",
-        "FALSE — Same sentence with the wrong complement: avoid needs -ing, not to.\n\nTip: Compare the pair; only the gerund version works.",
-        "TRUE — Promise that + clause is a valid alternative to promise to + verb.\n\nTip: Promise to water OR promise that we will water.",
-        "TRUE — Enjoy that + clause is acceptable; the that-clause is the object.\n\nTip: Enjoy + -ing for activities; enjoy that for facts/situations.",
-        "TRUE — Stop short of + -ing is an idiom meaning \"almost but not quite\"; promising keeps its own to.\n\nTip: Idioms can nest: stop short of + gerund, and inside it promise + to."
+        "**A) Not wishing to appear rude, she avoided interrupting the poet mid-line.**  (true)\n\nAvoid + gerund is correct: \"avoided interrupting the poet mid-line.\" Fronted participle clauses (Not wishing to appear rude) do not change avoid's -ing rule.\n\n**Tip:** Fronted participle clauses do not change avoid's -ing rule.",
+        "**B) Not wishing to appear rude, she avoided to interrupt the poet mid-line.**  (false)\n\nTrap: same sentence with the wrong complement — avoid needs -ing, not to. Compare the pair; only the gerund version works.\n\n**Tip:** Compare the pair; only the gerund version works.",
+        "**C) They promised that they would water the plants while we were away.**  (true)\n\nPromise that + clause is a valid alternative to promise to + verb: \"promised that they would water the plants.\" Promise to water OR promise that we will water.\n\n**Tip:** Promise to water OR promise that we will water.",
+        "**D) He enjoys that his sister always remembers his birthday.**  (true)\n\nEnjoy that + clause is acceptable; the that-clause is the object of enjoy. Enjoy + -ing for activities; enjoy that for facts or situations.\n\n**Tip:** Enjoy + -ing for activities; enjoy that for facts/situations.",
+        "**E) We stopped short of promising to host the entire reunion.**  (true)\n\nStop short of + -ing is an idiom meaning \"almost but not quite\"; promising keeps its own to inside the gerund phrase. Idioms can nest: stop short of + gerund, and inside it promise + to.\n\n**Tip:** Idioms can nest stop short of + gerund with promise + to inside."
       ],
       "highlights": [
         "avoided interrupting",
@@ -608,7 +722,7 @@
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.7",
-      "solution_overview": "Minimal pairs, that-clause alternatives, and the idiom stop short of -ing. Confirm which structure is actually complementing which verb."
+      "solution_overview": "Minimal pairs, that-clause alternatives, and the idiom stop short of -ing. Confirm which structure is actually complementing which verb.\n\n**Part 1: What to watch for.**\n\nAvoid keeps -ing even after a fronted participle clause; the to version is the false twin. Promise that and enjoy that are valid clause objects. Stop short of + -ing nests another verb's complement inside an idiom.\n\n**Part 2: How to decide.**\n\nCompare near-identical lines first. Then check whether that-clauses or idioms are carrying the object, so you do not over-apply the basic to/-ing rule to the wrong verb.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-7-20",
@@ -622,13 +736,19 @@
         "To stop to worry is not the same as to stop worrying.",
         "Only those who promise delivering results on time keep their places on the team."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Consider + gerund and decide + to-infinitive both correct inside a conditional.\n\nTip: Complex syntax still respects each verb's fixed complement.",
-        "FALSE — Enjoy needs -ing: \"enjoying winning\" (and cannot help + -ing is itself a gerund pattern).\n\nTip: Nested -ing does not license enjoy to.",
-        "TRUE — Refuse + to and avoid + -ing both correct in parallel clauses.\n\nTip: Different verbs, different complements — both can be right at once.",
-        "TRUE — The contrast is precisely the teaching point: stop to worry ≠ stop worrying.\n\nTip: Infinitive subjects can showcase the stop meaning split cleanly.",
-        "FALSE — Promise needs to + verb: \"promise to deliver.\"\n\nTip: Relative clauses do not unlock promise + -ing."
+        "**A) Had they considered postponing, they might have decided to wait for clearer skies.**  (true)\n\nConsider + gerund and decide + to-infinitive are both correct inside a conditional: had they considered postponing, they might have decided to wait. Complex syntax still respects each verb's fixed complement.\n\n**Tip:** Complex syntax still respects each verb's fixed complement.",
+        "**B) She cannot help enjoying to win, even in friendly matches.**  (false)\n\nTrap: enjoy needs -ing — \"enjoying winning,\" not \"enjoying to win.\" Cannot help + -ing is itself a gerund pattern and does not license enjoy to.\n\n**Tip:** Nested -ing does not license enjoy to.",
+        "**C) Whatever they refuse to discuss in public, they still avoid lying to each other.**  (true)\n\nRefuse + to and avoid + -ing are both correct in parallel clauses: whatever they refuse to discuss, they still avoid lying. Different verbs, different complements — both can be right at once.\n\n**Tip:** Different verbs, different complements — both can be right at once.",
+        "**D) To stop to worry is not the same as to stop worrying.**  (true)\n\nThe contrast is precisely the teaching point: stop to worry is not the same as stop worrying. Infinitive subjects can showcase the stop meaning split cleanly, and both halves are grammatical as a contrast.\n\n**Tip:** Infinitive subjects can showcase the stop meaning split cleanly.",
+        "**E) Only those who promise delivering results on time keep their places on the team.**  (false)\n\nTrap: promise needs to + verb — \"promise to deliver results on time,\" not \"promise delivering.\" Relative clauses do not unlock promise + -ing.\n\n**Tip:** Relative clauses do not unlock promise + -ing."
       ],
       "highlights": [
         "considered postponing",
@@ -640,7 +760,7 @@
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.7",
-      "solution_overview": "Final stress test: stacked patterns, cannot help + enjoy, parallel refuse/avoid, the stop meaning contrast as subject, and a last promise trap."
+      "solution_overview": "Final stress test: stacked patterns, cannot help + enjoy, parallel refuse/avoid, the stop meaning contrast as subject, and a last promise trap.\n\n**Part 1: What to watch for.**\n\nComplex syntax still respects each verb's fixed complement. Cannot help + -ing does not license enjoy to. Refuse to and avoid -ing can both be right at once. Infinitive subjects can showcase stop to versus stop -ing. Relative clauses do not unlock promise + -ing.\n\n**Part 2: How to decide.**\n\nParse each governing verb on its own, even inside conditionals, clefts, and relative clauses. Mark true only when every stacked pattern is legal; the enjoy to and promise -ing lines fail.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     }
   ]
 }

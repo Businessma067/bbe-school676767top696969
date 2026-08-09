@@ -14,13 +14,19 @@
         "Despite of the rain, the picnic went ahead.",
         "He was accused of cheating in the board-game tournament."
       ],
-      "answer_key": [false, false, false, false, true],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Use depends on, not depends of, for this fixed dependency pattern.\n\nTip: After depend, lock in on — of is a common L1 transfer trap.",
-        "FALSE — Use responsible for, not responsible of.\n\nTip: Pair responsible with for + noun/gerund; of is wrong here.",
-        "FALSE — The fixed pattern is interested in, not interested on.\n\nTip: Interest takes in; on belongs with focus/concentrate.",
-        "FALSE — Despite never takes of; write Despite the rain or In spite of the rain.\n\nTip: Despite of is always wrong — drop of or switch to in spite of.",
-        "TRUE — Accused of + gerund/noun is the standard collocation.\n\nTip: Accuse/charge of wrongdoing; do not swap in for after accused."
+        "**A) Success depends of careful practice before the recital.**  (false)\n\nDepend never partners with of in standard English. The locked pattern is depend on (or upon) plus a noun or gerund for the thing that controls the outcome.\n\nTrap: of is a frequent L1 transfer after depend. Rewrite as depends on careful practice — then the recital sentence is fine.\n\n**Tip:** After depend, lock in on.",
+        "**B) She is responsible of watering the neighbour's plants.**  (false)\n\nResponsible takes for when you name a duty or job. Responsible of is not an English ownership/duty frame.\n\nTrap: swap of for for → responsible for watering. Keep the gerund; only the preposition was wrong.\n\n**Tip:** Responsible for + noun/-ing.",
+        "**C) They are interested on learning Portuguese this summer.**  (false)\n\nInterest as an adjective locks to in: interested in learning / interested in Portuguese.\n\nTrap: on belongs with focus or concentrate, not with interested. Repair: interested in learning Portuguese.\n\n**Tip:** Interested in; focus on.",
+        "**D) Despite of the rain, the picnic went ahead.**  (false)\n\nDespite is a single preposition; it never takes of. You can write Despite the rain or In spite of the rain — but not Despite of.\n\nTrap: Despite of is always wrong. Either drop of or switch the whole phrase to in spite of.\n\n**Tip:** Despite ∅; in spite of.",
+        "**E) He was accused of cheating in the board-game tournament.**  (true)\n\nAccuse (and be accused) locks to of plus a wrongdoing noun or gerund. Here accused of cheating is exactly the exam pattern.\n\nNothing to repair — keep of and the -ing form together.\n\n**Tip:** Accuse/charge of wrongdoing."
       ],
       "highlights": [
         "depends of",
@@ -32,7 +38,7 @@
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.18",
-      "solution_overview": "Scan each sentence for a fixed verb/adjective + preposition lock. Ask whether the preposition matches the standard pattern, and watch for the classic despite of false friend."
+      "solution_overview": "Before a recital or a neighbour-sitting favour, English often locks a verb or adjective to one preposition — and the wrong partner sounds almost right if you translate from another language.\n\n**Part 1: What to watch for.**\n\nThis task is all about fixed dependency and responsibility patterns: depend on, responsible for, interested in, despite (no of), and accused of. The classic false friends are of after depend/responsible/despite, and on after interested.\n\n**Part 2: How to decide.**\n\nUnderline the head word and the preposition right after it. Ask whether that pair is the textbook lock for this meaning. If you can swap in the standard preposition and the sentence suddenly sounds native, mark the original false.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-18-02",
@@ -46,13 +52,19 @@
         "The documentary focuses to ocean plastics.",
         "She participated in the weekend pottery workshop."
       ],
-      "answer_key": [true, false, false, false, true],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Insist on + gerund is the fixed pattern here.\n\nTip: After insist, use on + -ing, not a bare infinitive.",
-        "FALSE — Use differs from, not differs of.\n\nTip: Differ/different → from; do not write differ of.",
-        "FALSE — Prefer apologised for spilling… in careful exam English.\n\nTip: Apologise for a fault or inconvenience; about is weaker and often marked wrong.",
-        "FALSE — Use focuses on, not focuses to.\n\nTip: Focus/concentrate take on, never to.",
-        "TRUE — Participated in correctly names involvement in an event.\n\nTip: Participate/join/engage → in an event or activity."
+        "**A) He insisted on seeing the raw score sheets.**  (true)\n\nInsist on plus a gerund is the fixed forcefulness pattern: he insisted on seeing the sheets, not a bare infinitive.\n\nThe form matches the lock, so the line stands.\n\n**Tip:** Insist on + -ing.",
+        "**B) Her recipe differs of last year's version.**  (false)\n\nDiffer compares one thing with another using from. Differs of is a transfer error, not a variant.\n\nTrap: rewrite as differs from last year's version.\n\n**Tip:** Differ/different → from.",
+        "**C) We apologised about spilling juice on the carpet.**  (false)\n\nCareful exam English wants apologise for a fault or inconvenience. Apologised about is weaker and often marked wrong even when it is heard in speech.\n\nTrap: repair to apologised for spilling juice.\n\n**Tip:** Apologise for the mistake.",
+        "**D) The documentary focuses to ocean plastics.**  (false)\n\nFocus and concentrate take on, never to, when they name a topic of attention.\n\nTrap: focuses to → focuses on ocean plastics.\n\n**Tip:** Focus/concentrate on.",
+        "**E) She participated in the weekend pottery workshop.**  (true)\n\nParticipate in correctly names involvement in an event or activity. The workshop line uses the right lock.\n\n**Tip:** Participate/join/engage → in."
       ],
       "highlights": [
         "insisted on",
@@ -64,7 +76,7 @@
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.18",
-      "solution_overview": "These items test high-frequency everyday collocations. Match each verb to its locked preposition, and rewrite any false friend before deciding TRUE or FALSE."
+      "solution_overview": "These lines mix everyday insist, differ, apologise, focus, and participate — verbs that almost all students know, but that each demand one locked preposition.\n\n**Part 1: What to watch for.**\n\nWatch insist on + -ing, differ from, apologise for, focus on, and participate in. The traps swap of/about/to into slots that English does not allow for those heads.\n\n**Part 2: How to decide.**\n\nName the verb, then name the preposition that textbooks glue to it. If the sentence uses a different satellite, it is false even when the meaning is clear.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-18-03",
@@ -78,13 +90,19 @@
         "We look forward to meeting your cousins.",
         "He succeeded to repair the bicycle chain."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Object takes to, not against: objected to the rule.\n\nTip: Object to X; protest against is a different verb.",
-        "TRUE — Capable of + gerund is the fixed ability pattern.\n\nTip: Capable of doing; able to do — different frames.",
-        "FALSE — Use good at swimming, not good in for skills.\n\nTip: Good/bad/skilled at activities; in is for subjects like good in maths only in some varieties — exam English prefers at for skills.",
-        "TRUE — Look forward to + gerund (meeting) is correct; to is a preposition here.\n\nTip: After look forward to, use a noun or -ing, never a bare infinitive.",
-        "FALSE — Succeed in repairing, not succeed to repair.\n\nTip: Succeed in + -ing; manage to + infinitive is the other pattern."
+        "**A) They objected against the new quiet-hours rule.**  (false)\n\nObject takes to, not against: objected to the new quiet-hours rule. Protest against is a different verb with a different preposition.\n\nTrap: against after object is the classic false friend. Repair with to.\n\n**Tip:** Object to X.",
+        "**B) The volunteer is capable of handling the front desk.**  (true)\n\nCapable of plus a gerund is the standard ability frame, and handling the front desk fits it cleanly.\n\nDo not confuse it with able to + infinitive — different head, different pattern.\n\n**Tip:** Capable of doing; able to do.",
+        "**C) She is good in swimming long distances.**  (false)\n\nSkills and activities take good at in exam English: good at swimming. Good in is reserved (at best) for school subjects in some varieties, and even there at is safer for a sport/skill.\n\nTrap: good in swimming → good at swimming.\n\n**Tip:** Good/bad/skilled at activities.",
+        "**D) We look forward to meeting your cousins.**  (true)\n\nLook forward to is a multi-word unit; to is a preposition here, so it takes a noun or gerund (meeting), not a bare infinitive.\n\nThe cousins line is correctly formed.\n\n**Tip:** Look forward to + -ing.",
+        "**E) He succeeded to repair the bicycle chain.**  (false)\n\nSucceed in plus -ing reports achievement. Succeeded to repair copies manage to, which is the wrong head for this verb.\n\nTrap: rewrite as succeeded in repairing the bicycle chain.\n\n**Tip:** Succeed in + -ing; manage to + V."
       ],
       "highlights": [
         "objected against",
@@ -96,7 +114,7 @@
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.18",
-      "solution_overview": "Check object to, capable of, good at, look forward to + -ing, and succeed in. Wrong prepositions or infinitives after these heads are almost always FALSE."
+      "solution_overview": "Object, capable, good, look forward, and succeed all look friendly — until the wrong preposition or infinitive slips in after them.\n\n**Part 1: What to watch for.**\n\nThe fixed frames here are object to, capable of + -ing, good at (skills), look forward to + -ing, and succeed in + -ing. Mixing against/in/to-infinitives against those locks is the trap set.\n\n**Part 2: How to decide.**\n\nCheck two layers: which preposition the head wants, and whether what follows should be a gerund rather than a bare or to-infinitive.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-18-04",
@@ -110,13 +128,19 @@
         "They complained for the noisy neighbours upstairs.",
         "A locked gate prevented them from entering the park."
       ],
-      "answer_key": [false, true, false, false, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Consist of lists the parts; consist from is wrong.\n\nTip: Consist of / be made of — not from after consist.",
-        "TRUE — Belong to correctly marks ownership.\n\nTip: Belong to someone; never belong of.",
-        "FALSE — Use rely on, not rely of.\n\nTip: Rely/depend/count → on.",
-        "FALSE — Complain about a problem; complain for is non-standard here.\n\nTip: Complain about noise/service; complain to a person.",
-        "TRUE — Prevent someone from + gerund is the fixed restraint pattern.\n\nTip: Prevent/stop/keep from doing; not to do after prevent."
+        "**A) The salad consists from tomatoes, cucumber, and feta.**  (false)\n\nConsist of lists the ingredients or parts. Consist from has no place in this frame (be made from is a different pattern).\n\nTrap: consists from → consists of tomatoes, cucumber, and feta.\n\n**Tip:** Consist of / be made of.",
+        "**B) This jacket belongs to my older brother.**  (true)\n\nBelong to marks ownership cleanly: the jacket belongs to my older brother.\n\nNever write belong of.\n\n**Tip:** Belong to someone.",
+        "**C) You can rely of her to bring the tent.**  (false)\n\nRely, depend, and count all take on for trust. Rely of is the same transfer trap as depend of.\n\nTrap: rely of → rely on her.\n\n**Tip:** Rely/depend/count → on.",
+        "**D) They complained for the noisy neighbours upstairs.**  (false)\n\nYou complain about a problem (noise, service) and complain to a person. Complain for is non-standard for this meaning.\n\nTrap: complained for → complained about the noisy neighbours.\n\n**Tip:** Complain about the issue; to the person.",
+        "**E) A locked gate prevented them from entering the park.**  (true)\n\nPrevent someone from + gerund is the restraint lock. The locked-gate line uses it correctly.\n\nDo not replace from with to after prevent.\n\n**Tip:** Prevent/stop/keep from doing."
       ],
       "highlights": [
         "consists from",
@@ -128,7 +152,7 @@
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.18",
-      "solution_overview": "Everyday ownership and hindrance verbs lock tightly: consist of, belong to, rely on, complain about, prevent from. Mark any swapped preposition false."
+      "solution_overview": "Ownership, composition, trust, complaint, and prevention verbs are tightly glued to one preposition each in everyday English.\n\n**Part 1: What to watch for.**\n\nTarget consist of, belong to, rely on, complain about, and prevent from. Swapping from/of/for into those slots is enough to fail the item.\n\n**Part 2: How to decide.**\n\nAsk whether the preposition names parts, possession, support, a grievance topic, or a blocked action — then match the lock listed above.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-18-05",
@@ -142,13 +166,19 @@
         "She has been married with her partner for twelve years.",
         "The children are afraid of thunderstorms at night."
       ],
-      "answer_key": [true, false, false, false, true],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Famous for + noun phrase is the standard reputation pattern.\n\nTip: Famous/known for a feature; famous as a role.",
-        "FALSE — Similar to, not similar with.\n\nTip: Similar/identical/comparable → to.",
-        "FALSE — In careful exam English prefer different from (or different to in BrE); different than is often marked down.\n\nTip: Different from is the safest exam choice.",
-        "FALSE — Married to a person, not married with.\n\nTip: Married to someone; with belongs in other frames (live with).",
-        "TRUE — Afraid of + noun is correct.\n\nTip: Afraid of something; frightened of works the same way."
+        "**A) Lisbon is famous for its tiled façades.**  (true)\n\nFamous for plus a feature is the standard reputation pattern, and tiled façades fit that slot.\n\nFamous as would name a role, not a tourist trademark.\n\n**Tip:** Famous/known for a feature.",
+        "**B) This trail is similar with the one near the lake.**  (false)\n\nSimilar, identical, and comparable take to, not with.\n\nTrap: similar with → similar to the lake trail.\n\n**Tip:** Similar/identical → to.",
+        "**C) My playlist is different than yours in every genre.**  (false)\n\nIn careful exam English prefer different from (or different to in some BrE); different than is often marked down even where American speech allows it.\n\nTrap: rewrite as different from yours.\n\n**Tip:** Different from is the safest exam choice.",
+        "**D) She has been married with her partner for twelve years.**  (false)\n\nMarried to a person is the lock. Married with copies other languages and belongs instead in frames like live with.\n\nTrap: married with → married to her partner.\n\n**Tip:** Married to someone.",
+        "**E) The children are afraid of thunderstorms at night.**  (true)\n\nAfraid of plus a noun (thunderstorms) is correct and natural.\n\nFrightened of follows the same of pattern.\n\n**Tip:** Afraid of something."
       ],
       "highlights": [
         "famous for",
@@ -160,7 +190,7 @@
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.18",
-      "solution_overview": "Adjective + preposition pairs are rigid: famous for, similar to, different from, married to, afraid of. Swap the preposition and the sentence fails."
+      "solution_overview": "Adjective + preposition pairs feel flexible when you translate, but exam English treats famous for, similar to, different from, married to, and afraid of as closed locks.\n\n**Part 1: What to watch for.**\n\nThis set checks reputation (famous for), comparison (similar to / different from), marriage (married to), and fear (afraid of). With, than, and from transfers are the usual failures.\n\n**Part 2: How to decide.**\n\nCover the preposition and ask which one the adjective textbooks require. If your guess differs from what is on the page, the sentence is false.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-18-06",
@@ -174,13 +204,19 @@
         "Look at the mural behind the café.",
         "We talked the film for almost an hour."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Arrive at a station/building; arrive in a city/country — not arrive to.\n\nTip: Arrive at/in; get to is the to-pattern.",
-        "TRUE — Listen to + object is obligatory in standard English.\n\nTip: Hear can take a direct object; listen needs to.",
-        "FALSE — Wait for the bus; wait cannot take a bare object here.\n\nTip: Wait for someone/something.",
-        "TRUE — Look at correctly directs visual attention.\n\nTip: Look at / stare at; watch can take a direct object.",
-        "FALSE — Talk about the film; talk needs about (or to a person).\n\nTip: Talk about a topic; discuss a topic (no about)."
+        "**A) We arrived to the station just before midnight.**  (false)\n\nArrive at a station or building and arrive in a city or country — not arrive to. Get to is the pattern that keeps to.\n\nTrap: arrived to the station → arrived at the station.\n\n**Tip:** Arrive at/in; get to.",
+        "**B) Please listen to the podcast episode I sent.**  (true)\n\nListen to plus an object is obligatory. Hear can take a direct object; listen cannot in standard exam English.\n\nThe podcast line is correctly locked.\n\n**Tip:** Listen needs to.",
+        "**C) They waited the bus for twenty minutes in the rain.**  (false)\n\nWait for someone or something. Wait cannot take the bus as a bare object here.\n\nTrap: waited the bus → waited for the bus.\n\n**Tip:** Wait for X.",
+        "**D) Look at the mural behind the café.**  (true)\n\nLook at directs visual attention to a target. The mural line uses the right preposition.\n\nWatch can take a bare object; look usually needs at.\n\n**Tip:** Look at / stare at.",
+        "**E) We talked the film for almost an hour.**  (false)\n\nTalk about a topic (or talk to a person). Talk the film drops the required about.\n\nTrap: talked the film → talked about the film. (Discuss the film needs no about.)\n\n**Tip:** Talk about a topic."
       ],
       "highlights": [
         "arrived to",
@@ -192,7 +228,7 @@
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.18",
-      "solution_overview": "Perception and movement verbs often need a preposition English learners drop: arrive at/in, listen to, wait for, look at, talk about."
+      "solution_overview": "Arrive, listen, wait, look, and talk are easy verbs — and easy to strip of the preposition English still needs.\n\n**Part 1: What to watch for.**\n\nWatch arrive at/in (not to), listen to, wait for, look at, and talk about. Dropping the satellite or using the wrong one after movement and perception verbs is the test.\n\n**Part 2: How to decide.**\n\nAsk whether the verb can take a bare object in standard English. If it cannot, restore the missing preposition before you decide true or false.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-18-07",
@@ -206,13 +242,19 @@
         "I usually read in night when the house is quiet.",
         "We met on a cold Friday afternoon."
       ],
-      "answer_key": [false, true, false, false, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — On foot, not by foot.\n\nTip: By + vehicle (by bus/train/car); on foot is the walking exception.",
-        "TRUE — By train correctly names the means of transport.\n\nTip: By + vehicle is the default transport pattern.",
-        "FALSE — On Monday / on Monday evening, not in Monday.\n\nTip: On + days and dated times; in + months/years/parts of day (in the evening).",
-        "FALSE — At night is the fixed time phrase; in night is wrong.\n\nTip: At night / in the night (rarer); never bare in night.",
-        "TRUE — On + day/date phrases is standard.\n\nTip: On Friday / on Friday afternoon both work."
+        "**A) She goes to work by foot every morning.**  (false)\n\nWalking uses on foot, not by foot. By is for vehicles (by bus, by train, by car).\n\nTrap: by foot → on foot every morning.\n\n**Tip:** By + vehicle; on foot.",
+        "**B) They travelled to the coast by train.**  (true)\n\nBy train correctly names the means of transport. The coast line is fine.\n\n**Tip:** By + vehicle is the default.",
+        "**C) The match starts in Monday evening.**  (false)\n\nDays and dated evenings take on: on Monday / on Monday evening. In Monday is wrong.\n\nTrap: in Monday evening → on Monday evening. (In the evening is fine without a weekday.)\n\n**Tip:** On + days; in + months/years/parts of day.",
+        "**D) I usually read in night when the house is quiet.**  (false)\n\nAt night is the fixed time phrase. Bare in night is not standard.\n\nTrap: in night → at night (in the night is rarer and differently shaded).\n\n**Tip:** At night.",
+        "**E) We met on a cold Friday afternoon.**  (true)\n\nOn plus a day or date phrase is standard: on a cold Friday afternoon works in everyday and exam English alike.\n\nThe adjective cold sits inside the noun phrase and does not change the preposition lock.\n\n**Tip:** On Friday / on Friday afternoon."
       ],
       "highlights": [
         "by foot",
@@ -224,7 +266,7 @@
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.18",
-      "solution_overview": "Time and transport prepositions are closed sets: by + vehicle, on foot, on + day, at night. Memorise the exceptions rather than translating."
+      "solution_overview": "Time and transport prepositions are closed sets: English picks by, on, in, or at by rule, not by feel.\n\n**Part 1: What to watch for.**\n\nRemember by + vehicle, on foot (the walking exception), on + day/dated time, and at night. In Monday and in night are classic calendar false friends.\n\n**Part 2: How to decide.**\n\nClassify each phrase as transport means or time slot, then apply the closed-set rule instead of translating from another language.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-18-08",
@@ -238,13 +280,19 @@
         "The hostel provided us with clean towels.",
         "Police charged him of vandalising the bus stop."
       ],
-      "answer_key": [false, false, true, true, false],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Congratulate someone on winning; for is weaker/wrong in exam English after congratulate.\n\nTip: Congratulate on an achievement.",
-        "FALSE — Blame someone for something, not about.\n\nTip: Blame for / accuse of — different heads, different prepositions.",
-        "TRUE — Thank(s) for + gerund/noun is correct.\n\nTip: Thank for help; thank someone for doing X.",
-        "TRUE — Provide someone with something is the classic ditransitive pattern.\n\nTip: Provide with / supply with; provide something to someone is also possible.",
-        "FALSE — Charge someone with an offence, not of.\n\nTip: Charge with; accuse of — do not mix them."
+        "**A) We congratulated her for winning the baking contest.**  (false)\n\nCongratulate someone on an achievement. For after congratulate is weaker and typically marked wrong in exams.\n\nTrap: congratulated her for → congratulated her on winning.\n\n**Tip:** Congratulate on.",
+        "**B) Don't blame me about the burnt toast.**  (false)\n\nBlame someone for something. About does not replace for after blame.\n\nTrap: blame me about → blame me for the burnt toast. (Accuse of is a different head.)\n\n**Tip:** Blame for / accuse of.",
+        "**C) Thanks for helping me move the sofa.**  (true)\n\nThanks for plus a gerund or noun is the correct gratitude frame, and helping fits it cleanly.\n\nThank someone for doing X follows the same for lock in full-sentence form.\n\n**Tip:** Thank someone for doing X.",
+        "**D) The hostel provided us with clean towels.**  (true)\n\nProvide someone with something is the classic ditransitive lock, and clean towels fit it.\n\nProvide something to someone is another acceptable shape; with is right here.\n\n**Tip:** Provide/supply with.",
+        "**E) Police charged him of vandalising the bus stop.**  (false)\n\nCharge someone with an offence. Of belongs to accuse, not to charge.\n\nTrap: charged him of → charged him with vandalising.\n\n**Tip:** Charge with; accuse of."
       ],
       "highlights": [
         "congratulated her for",
@@ -256,7 +304,7 @@
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.18",
-      "solution_overview": "Speech-act verbs split carefully: congratulate on, blame for, thank for, provide with, charge with. Mixing for/of/about across these heads is a common trap."
+      "solution_overview": "Speech-act and legal-ish verbs look alike when someone blames, thanks, or charges — but each head keeps its own preposition.\n\n**Part 1: What to watch for.**\n\nSeparate congratulate on, blame for, thank for, provide with, and charge with. Mixing for/of/about across those heads is the designed trap.\n\n**Part 2: How to decide.**\n\nIdentify the speech act first, then recall its private preposition. Near-synonyms do not share satellites.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-18-09",
@@ -270,13 +318,19 @@
         "I'm tired of waiting for the plumber.",
         "He gets bored of the same playlist every day."
       ],
-      "answer_key": [true, false, false, true, false],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Keen on + noun/gerund expresses enthusiasm.\n\nTip: Keen on ≈ interested in / enthusiastic about.",
-        "FALSE — Fond of, not fond from.\n\nTip: Fond of people and things you like.",
-        "FALSE — Take pride in, not pride of.\n\nTip: Pride in / proud of — related meaning, different prepositions.",
-        "TRUE — Tired of + gerund/noun is fixed.\n\nTip: Tired of doing X; exhausted from effort is a different idea.",
-        "FALSE — Prefer bored with (or by) in careful English; bored of is informal/non-standard for many exams.\n\nTip: Bored with the routine; fed up with is the of-cousin."
+        "**A) He is keen on early-morning runs along the canal.**  (true)\n\nKeen on plus a noun or gerund expresses enthusiasm, same neighbourhood as interested in.\n\nThe canal-run line is correctly locked.\n\n**Tip:** Keen on ≈ enthusiastic about.",
+        "**B) She is fond from old jazz records.**  (false)\n\nFond of names people or things you like. Fond from is never the pattern.\n\nTrap: fond from → fond of old jazz records.\n\n**Tip:** Fond of.",
+        "**C) They take pride of their community garden.**  (false)\n\nTake pride in an achievement. Pride of mixes the noun pride with the adjective proud of.\n\nTrap: take pride of → take pride in their community garden.\n\n**Tip:** Pride in / proud of — different heads.",
+        "**D) I'm tired of waiting for the plumber.**  (true)\n\nTired of plus a gerund or noun is fixed for weariness with a situation.\n\nExhausted from effort is a different idea with a different preposition.\n\n**Tip:** Tired of doing X.",
+        "**E) He gets bored of the same playlist every day.**  (false)\n\nCareful English prefers bored with (or by). Bored of is informal and often marked non-standard in exams.\n\nTrap: bored of → bored with the same playlist. (Fed up with is the of-cousin.)\n\n**Tip:** Bored with the routine."
       ],
       "highlights": [
         "keen on",
@@ -288,7 +342,7 @@
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.18",
-      "solution_overview": "Attitude adjectives and nouns lock to one preposition: keen on, fond of, pride in, tired of, bored with. Near-synonyms do not share prepositions."
+      "solution_overview": "Attitude words — keen, fond, pride, tired, bored — each lock to one preposition, and near-synonyms refuse to share.\n\n**Part 1: What to watch for.**\n\nHold keen on, fond of, take pride in, tired of, and bored with. From/of swaps and informal bored of are the failure modes.\n\n**Part 2: How to decide.**\n\nMemorise the pair as a single chunk. If a synonym would take a different preposition, do not import that preposition onto this head.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-18-10",
@@ -302,13 +356,19 @@
         "In addition of stretching, he iced his knee.",
         "As a result of the delay, they missed the opening act."
       ],
-      "answer_key": [true, true, false, false, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — According to + source is the reporting preposition phrase.\n\nTip: According to X; never according with for this meaning.",
-        "TRUE — Because of + noun phrase correctly gives a reason.\n\nTip: Because of + noun; because + clause.",
-        "FALSE — Instead of coffee; instead alone cannot take a bare noun like this.\n\nTip: Instead of X; instead (adverb) stands alone.",
-        "FALSE — In addition to stretching, not in addition of.\n\nTip: In addition to / as well as — both take to, not of.",
-        "TRUE — As a result of + noun phrase is a fixed causal pattern.\n\nTip: As a result of X; as a result (alone) needs a comma and a clause."
+        "**A) According to the weather app, storms arrive tonight.**  (true)\n\nAccording to plus a source is the reporting phrase. According with is not used for this meaning.\n\nThe weather-app line is correctly formed.\n\n**Tip:** According to X.",
+        "**B) We stayed home because of the flooding.**  (true)\n\nBecause of plus a noun phrase correctly gives a reason for staying home.\n\nBecause + clause would need a finite clause, not of.\n\n**Tip:** Because of + noun; because + clause.",
+        "**C) She chose tea instead coffee after dinner.**  (false)\n\nInstead of coffee is the comparison lock. Bare instead cannot take a following noun this way.\n\nTrap: instead coffee → instead of coffee. (Adverb instead stands alone.)\n\n**Tip:** Instead of X.",
+        "**D) In addition of stretching, he iced his knee.**  (false)\n\nIn addition to stretching pairs with as well as — both keep to, not of.\n\nTrap: In addition of → In addition to stretching.\n\n**Tip:** In addition to / as well as.",
+        "**E) As a result of the delay, they missed the opening act.**  (true)\n\nAs a result of plus a noun phrase is the fixed causal chunk, and the delay line uses it well.\n\nAs a result alone needs a comma and a following clause.\n\n**Tip:** As a result of X."
       ],
       "highlights": [
         "According to",
@@ -320,7 +380,7 @@
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.18",
-      "solution_overview": "Multi-word prepositions are all-or-nothing: according to, because of, instead of, in addition to, as a result of. Missing or swapped final prepositions make the item false."
+      "solution_overview": "Multi-word prepositions are all-or-nothing chunks: miss or swap the final preposition and the whole phrase collapses.\n\n**Part 1: What to watch for.**\n\nThis set locks according to, because of, instead of, in addition to, and as a result of. Stripped of/to after instead and addition are the main traps.\n\n**Part 2: How to decide.**\n\nTreat each opener as a fixed string. If the last word of the chunk is missing or wrong, mark false without rewriting the rest of the clause.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-18-11",
@@ -334,13 +394,19 @@
         "Nothing will stop her to finish the marathon.",
         "He specialised in marine biology at university."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Insist that + clause is a separate fixed pattern from insist on + -ing.\n\nTip: Insist that (clause) vs insist on (gerund) — both valid, different frames.",
-        "FALSE — Discourage someone from swimming, not to swim.\n\nTip: Discourage/prevent/keep from + -ing.",
-        "TRUE — Recover from an illness is the standard medical collocation.\n\nTip: Recover from; recover of is wrong.",
-        "FALSE — Stop her from finishing / stop her finishing; not stop her to finish for prevention.\n\nTip: Stop to do = pause in order to; stop from doing = prevent.",
-        "TRUE — Specialise in a field is fixed.\n\nTip: Specialise/major in a subject."
+        "**A) She insisted that we leave the campsite before dawn.**  (true)\n\nInsist that plus a clause is a valid frame alongside insist on + -ing. Leaving before dawn is correctly embedded under that.\n\nBoth frames are fine; they are just different shapes.\n\n**Tip:** Insist that (clause) vs insist on (gerund).",
+        "**B) The coach discouraged them to swim after dark.**  (false)\n\nDiscourage someone from swimming, not to swim. The from + -ing pattern matches prevent and keep.\n\nTrap: discouraged them to swim → discouraged them from swimming.\n\n**Tip:** Discourage/prevent/keep from + -ing.",
+        "**C) Warm soup helped him recover from the cold.**  (true)\n\nRecover from an illness is the standard medical collocation. Recover of is wrong.\n\nThe warm-soup line stands.\n\n**Tip:** Recover from.",
+        "**D) Nothing will stop her to finish the marathon.**  (false)\n\nFor prevention, stop someone from finishing (or stop someone finishing). Stop her to finish means pause in order to finish — the wrong reading here.\n\nTrap: stop her to finish → stop her from finishing the marathon.\n\n**Tip:** Stop to do ≠ stop from doing.",
+        "**E) He specialised in marine biology at university.**  (true)\n\nSpecialise in a field is fixed. Marine biology at university fits the lock.\n\n**Tip:** Specialise/major in a subject."
       ],
       "highlights": [
         "insisted that",
@@ -352,7 +418,7 @@
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.18",
-      "solution_overview": "Watch verbs that look like they take infinitives but actually take from + -ing (discourage, stop for prevention). Keep insist that and specialise in intact."
+      "solution_overview": "Some verbs invite an infinitive that is actually illegal — they want from + -ing, or a that-clause instead.\n\n**Part 1: What to watch for.**\n\nKeep insist that (alongside insist on), recover from, and specialise in. Catch discourage and preventive stop, which take from + -ing rather than to-infinitives.\n\n**Part 2: How to decide.**\n\nWhen a verb seems to take to + V, pause: is it really a prevent/encourage family member that wants from + -ing? Check that family first.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-18-12",
@@ -366,13 +432,19 @@
         "He prefers walking to cycling in the city.",
         "We prefer walking than cycling when it rains."
       ],
-      "answer_key": [true, false, false, true, false],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Be used to + gerund means accustomed to a habit.\n\nTip: Be/get used to + noun/-ing.",
-        "FALSE — Used to + base verb for past habits: used to wake, not used to waking.\n\nTip: Used to V (past habit) ≠ be used to V-ing (accustomed).",
-        "FALSE — Accustomed to, not accustomed with.\n\nTip: Accustomed/used → to.",
-        "TRUE — Prefer X to Y correctly compares two options.\n\nTip: Prefer A to B; not prefer A than B.",
-        "FALSE — Prefer … than is wrong; use prefer walking to cycling, or would rather walk than cycle.\n\nTip: Prefer to; rather than."
+        "**A) I'm used to waking up before sunrise.**  (true)\n\nBe/get used to plus a gerund means accustomed to a habit. Waking before sunrise fits that familiarity frame.\n\n**Tip:** Be used to + noun/-ing.",
+        "**B) She used to waking up before sunrise when she worked nights.**  (false)\n\nPast habit needs used to + base verb: used to wake, not used to waking.\n\nTrap: used to waking → used to wake when she worked nights. Do not confuse with be used to + -ing.\n\n**Tip:** Used to V ≠ be used to V-ing.",
+        "**C) They are accustomed with long bus rides.**  (false)\n\nAccustomed to mirrors used to for familiarity. Accustomed with is wrong.\n\nTrap: accustomed with → accustomed to long bus rides.\n\n**Tip:** Accustomed/used → to.",
+        "**D) He prefers walking to cycling in the city.**  (true)\n\nPrefer X to Y correctly stacks two options: walking to cycling.\n\nThat to comparison is the standard exam shape; than would belong to rather, not prefer.\n\n**Tip:** Prefer A to B.",
+        "**E) We prefer walking than cycling when it rains.**  (false)\n\nPrefer … than is not the English comparison. Use prefer walking to cycling, or would rather walk than cycle.\n\nTrap: prefer walking than → prefer walking to cycling.\n\n**Tip:** Prefer to; rather than."
       ],
       "highlights": [
         "I'm used to waking",
@@ -384,7 +456,7 @@
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.18",
-      "solution_overview": "Separate past-habit used to + V from be used to + -ing, keep accustomed to, and compare preferences with prefer A to B — never prefer … than."
+      "solution_overview": "Used to and be used to look like the same phrase; prefer … to/than collides the same way. This task forces you to keep the frames apart.\n\n**Part 1: What to watch for.**\n\nSeparate past-habit used to + base verb from be used to + -ing, keep accustomed to, and compare with prefer A to B — never prefer … than.\n\n**Part 2: How to decide.**\n\nAsk first whether used to means past habit or present familiarity. Then check prefer comparisons for to versus than.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-18-13",
@@ -398,13 +470,19 @@
         "She refrained to comment during the argument.",
         "Please refrain from posting spoilers online."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — In spite of + noun phrase equals despite.\n\nTip: In spite of keeps of; despite drops it.",
-        "FALSE — In spite must be followed by of before a noun.\n\nTip: Never write in spite the… — insert of.",
-        "TRUE — Notwithstanding takes a noun phrase with no extra of.\n\nTip: Notwithstanding X ≈ despite X.",
-        "FALSE — Refrain from commenting, not refrain to comment.\n\nTip: Refrain/abstain from + -ing.",
-        "TRUE — Refrain from + gerund is the fixed restraint pattern.\n\nTip: From + -ing after refrain."
+        "**A) In spite of the heat, they finished the hike.**  (true)\n\nIn spite of plus a noun phrase equals despite. The of is part of the chunk, and the hike line keeps it.\n\n**Tip:** In spite of keeps of; despite drops it.",
+        "**B) In spite the heat, they finished the hike.**  (false)\n\nIn spite must be followed by of before a noun. In spite the heat is incomplete.\n\nTrap: insert of → In spite of the heat.\n\n**Tip:** Never write in spite the…",
+        "**C) Notwithstanding the late start, the choir sounded polished.**  (true)\n\nNotwithstanding takes a noun phrase with no extra of, like despite. The choir line is correct.\n\n**Tip:** Notwithstanding X ≈ despite X.",
+        "**D) She refrained to comment during the argument.**  (false)\n\nRefrain from commenting, not refrain to comment. Abstain follows the same from + -ing shape.\n\nTrap: refrained to comment → refrained from commenting.\n\n**Tip:** Refrain/abstain from + -ing.",
+        "**E) Please refrain from posting spoilers online.**  (true)\n\nRefrain from plus a gerund is the fixed restraint pattern, and posting spoilers fits it.\n\nKeep from after refrain; a to-infinitive would break the same head you fixed in the previous false line.\n\n**Tip:** From + -ing after refrain."
       ],
       "highlights": [
         "In spite of",
@@ -416,7 +494,7 @@
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.18",
-      "solution_overview": "Contrast markers split: despite / notwithstanding (no of) versus in spite of (needs of). Restraint verbs take from + -ing, not to-infinitives."
+      "solution_overview": "Contrast markers and restraint verbs look interchangeable until you notice which ones keep of and which ones refuse it.\n\n**Part 1: What to watch for.**\n\nDespite and notwithstanding take a noun with no of; in spite of needs of. Refrain takes from + -ing, not a to-infinitive.\n\n**Part 2: How to decide.**\n\nFor contrast phrases, check whether of is required or forbidden. For refrain, demand from + -ing every time.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-18-14",
@@ -430,13 +508,19 @@
         "There is no point of arguing about the score.",
         "What's the point in staying if the museum is closed?"
       ],
-      "answer_key": [true, true, false, false, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Depend on correctly links outcome to a condition.\n\nTip: Outcome of X; depend on Y — two different prepositions in one sentence can both be right.",
-        "TRUE — Access to a place is the fixed pattern.\n\nTip: Access to; entrance to; not access of for places.",
-        "FALSE — Intention of cancelling / no intention of -ing is preferred; intention to is often marked wrong in exams.\n\nTip: Have no intention of doing X.",
-        "FALSE — No point in arguing, not point of arguing in this frame.\n\nTip: No point in + -ing; what's the point of is a related but different pattern.",
-        "TRUE — Point in + gerund is acceptable in this rhetorical question.\n\nTip: Point in / point of both appear; match the whole fixed frame."
+        "**A) The outcome of the experiment depends on temperature.**  (true)\n\nDepend on correctly ties the outcome to temperature. Outcome of X and depend on Y can both be right in one sentence.\n\n**Tip:** Outcome of; depend on.",
+        "**B) Access to the roof terrace is restricted after dusk.**  (true)\n\nAccess to a place is the fixed pattern for entry rights. Access of is not used for places.\n\n**Tip:** Access to; entrance to.",
+        "**C) She has no intention to cancel the trip.**  (false)\n\nHave no intention of cancelling is the preferred exam lock. Intention to is often marked wrong even when heard elsewhere.\n\nTrap: intention to cancel → intention of cancelling the trip.\n\n**Tip:** No intention of doing X.",
+        "**D) There is no point of arguing about the score.**  (false)\n\nNo point in arguing is the frame here. Point of arguing mismatches this no-point structure (though what's the point of is a related pattern).\n\nTrap: no point of arguing → no point in arguing.\n\n**Tip:** No point in + -ing.",
+        "**E) What's the point in staying if the museum is closed?.**  (true)\n\nWhat's the point in staying matches an acceptable rhetorical frame with in + gerund.\n\nPoint in and point of both appear; match the whole fixed question shape.\n\n**Tip:** Match the whole frame."
       ],
       "highlights": [
         "depends on",
@@ -448,7 +532,7 @@
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.18",
-      "solution_overview": "Abstract nouns pick locked prepositions: access to, intention of, point in/of. Do not assume to after every noun that feels \"future-facing.\""
+      "solution_overview": "Abstract nouns — outcome, access, intention, point — each pick a locked preposition that does not follow from \"future\" intuition alone.\n\n**Part 1: What to watch for.**\n\nKeep depend on and access to. Prefer intention of + -ing and match point in/of to the whole fixed frame; bare intention to is the soft trap.\n\n**Part 2: How to decide.**\n\nDo not assume to after every noun that looks ahead. Check the collocation dictionary pattern for that noun before judging.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-18-15",
@@ -462,13 +546,19 @@
         "I'm delighted with how the garden turned out.",
         "We were surprised from the sudden snowfall."
       ],
-      "answer_key": [true, true, false, true, false],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Angry with a person + for a reason is a solid double pattern.\n\nTip: Angry with people; angry about situations.",
-        "TRUE — Angry about a situation/event is correct.\n\nTip: About for things; with for people.",
-        "FALSE — Pleased with/by, not pleased of.\n\nTip: Proud of vs pleased with — do not swap.",
-        "TRUE — Delighted with a result is natural and grammatical.\n\nTip: Delighted with/by; delighted to hear that…",
-        "FALSE — Surprised by/at, not surprised from.\n\nTip: Surprised by news; shocked at/by."
+        "**A) She was angry with her brother for borrowing her headphones.**  (true)\n\nAngry with a person plus for a reason is a solid double pattern: with her brother for borrowing the headphones.\n\nWith names the person; for names the offence — both locks can sit in one sentence.\n\n**Tip:** Angry with people; about situations.",
+        "**B) He was angry about the cancelled ferry.**  (true)\n\nAngry about a cancelled ferry correctly targets a situation or event, not a person.\n\nIf the complement were a sibling or colleague, you would switch to angry with instead.\n\n**Tip:** About for things; with for people.",
+        "**C) They were pleased of the surprise birthday brunch.**  (false)\n\nPleased with or by — not pleased of. Proud of is the of-cousin; do not import it onto pleased.\n\nTrap: pleased of → pleased with/by the surprise brunch.\n\n**Tip:** Proud of vs pleased with.",
+        "**D) I'm delighted with how the garden turned out.**  (true)\n\nDelighted with a result is natural and grammatical. Delighted by also works; delighted to hear that… is another frame.\n\n**Tip:** Delighted with/by.",
+        "**E) We were surprised from the sudden snowfall.**  (false)\n\nSurprised by or at the news — not surprised from.\n\nTrap: surprised from → surprised by/at the sudden snowfall.\n\n**Tip:** Surprised by; shocked at/by."
       ],
       "highlights": [
         "angry with",
@@ -480,7 +570,7 @@
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.18",
-      "solution_overview": "Emotion adjectives split people vs situations (angry with / about) and reject of/from transfers (pleased with, surprised by)."
+      "solution_overview": "Emotion adjectives split people from situations, and they reject of/from transfers that proud sometimes invites.\n\n**Part 1: What to watch for.**\n\nUse angry with for people and angry about for situations; keep pleased/delighted with and surprised by/at. Pleased of and surprised from are the traps.\n\n**Part 2: How to decide.**\n\nAsk whether the complement is a person or a situation, then lock the preposition. Reject of/from unless the adjective truly owns them (proud of, not pleased of).\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-18-16",
@@ -494,13 +584,19 @@
         "Can you remind me of locking the back door?",
         "Please remind him to bring the picnic blanket."
       ],
-      "answer_key": [true, true, true, false, true],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Taste of a flavour is a fixed sensory pattern.\n\nTip: Taste of / smell of a substance.",
-        "TRUE — Smell like is acceptable for resemblance.\n\nTip: Smell of a substance; smell like a comparison — both can work.",
-        "TRUE — Remind someone of a person/thing (resemblance or memory trigger).\n\nTip: Remind of a memory; remind to do a duty.",
-        "FALSE — For a future action use remind me to lock, not remind me of locking.\n\nTip: Remind of = memory/resemblance; remind to = instruction.",
-        "TRUE — Remind someone to + infinitive correctly issues a prompt.\n\nTip: Reminder for actions → to + V."
+        "**A) The soup tastes of garlic and lemon.**  (true)\n\nTaste of a flavour is the fixed sensory pattern for substances in the soup.\n\nSmell of works the same way for a substance.\n\n**Tip:** Taste of / smell of a substance.",
+        "**B) This jacket smells like woodsmoke.**  (true)\n\nSmell like for resemblance is acceptable and grammatical here.\n\nSmell of woodsmoke would also work as a substance reading.\n\n**Tip:** Of for substance; like for comparison.",
+        "**C) She reminded me of my primary-school teacher.**  (true)\n\nRemind someone of a person or thing triggers memory or resemblance. The teacher line uses of correctly.\n\n**Tip:** Remind of a memory; remind to do a duty.",
+        "**D) Can you remind me of locking the back door?.**  (false)\n\nFor a future action, remind me to lock — not remind me of locking. Of would suggest memory or resemblance, not a prompt.\n\nTrap: remind me of locking → remind me to lock the back door.\n\n**Tip:** Remind of ≠ remind to.",
+        "**E) Please remind him to bring the picnic blanket.**  (true)\n\nRemind someone to plus an infinitive correctly issues a prompt about a future action.\n\nThat to-frame is the instruction reading; of would be for memory or resemblance, not for \"bring the blanket.\"\n\n**Tip:** Reminder for actions → to + V."
       ],
       "highlights": [
         "tastes of",
@@ -512,7 +608,7 @@
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.18",
-      "solution_overview": "Sensory of/like patterns are fine; remind splits into of (memory) versus to (future action). Mixing those two frames is the hard trap."
+      "solution_overview": "Sensory of/like patterns are usually safe; remind is the hard verb because it splits into two different frames.\n\n**Part 1: What to watch for.**\n\nTaste of and smell like are fine for flavour and resemblance. Remind of covers memory or resemblance; remind to covers a future prompt — do not mix them.\n\n**Part 2: How to decide.**\n\nFor remind, ask whether the complement is a memory trigger or an instruction to act. That single question chooses of versus to.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-18-17",
@@ -526,13 +622,19 @@
         "Due the flooding, the hike was postponed.",
         "Thanks to a clear sky, we saw the meteor shower."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Owing to + noun phrase is a formal causal preposition.\n\nTip: Owing to = because of.",
-        "FALSE — Owing needs to before the noun phrase.\n\nTip: Never drop to from owing to.",
-        "TRUE — Due to + noun is widely accepted as a causal preposition in modern exam English.\n\nTip: Due to X / because of X.",
-        "FALSE — Due the… is incomplete; insert to.\n\nTip: Due to, not bare due before a noun cause.",
-        "TRUE — Thanks to + noun credits a positive cause.\n\nTip: Thanks to (positive); owing to / due to (neutral/negative)."
+        "**A) The festival was cancelled owing to high winds.**  (true)\n\nOwing to plus a noun phrase is a formal because-of equivalent. High winds fit the causal slot.\n\n**Tip:** Owing to = because of.",
+        "**B) Owing the high winds, the festival was cancelled.**  (false)\n\nOwing needs to before the noun phrase. Bare Owing the… is incomplete.\n\nTrap: insert to → Owing to the high winds.\n\n**Tip:** Never drop to from owing to.",
+        "**C) The hike was postponed due to flooding on the trail.**  (true)\n\nDue to plus a noun is widely accepted as a causal preposition in modern exam English, matching because of.\n\nFlooding on the trail fills that noun slot, so the postponed-hike line stands.\n\n**Tip:** Due to X / because of X.",
+        "**D) Due the flooding, the hike was postponed.**  (false)\n\nDue the flooding drops the required to.\n\nTrap: Due the → Due to the flooding.\n\n**Tip:** Due to, not bare due.",
+        "**E) Thanks to a clear sky, we saw the meteor shower.**  (true)\n\nThanks to plus a noun credits a (usually positive) cause. Clear sky and meteor shower fit that shade.\n\n**Tip:** Thanks to (positive); owing/due to (neutral/negative)."
       ],
       "highlights": [
         "owing to",
@@ -544,7 +646,7 @@
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.18",
-      "solution_overview": "Causal multi-word prepositions all keep their final to: owing to, due to, thanks to. Any stripped to is an automatic false."
+      "solution_overview": "Causal multi-word prepositions all keep a final to: strip it and the phrase is broken even if the nouns are clear.\n\n**Part 1: What to watch for.**\n\nOwing to, due to, and thanks to are complete only with to. Owing the… and Due the… are automatic fails; the full forms with to are true.\n\n**Part 2: How to decide.**\n\nScan for owing/due/thanks and confirm the next word is to. Missing to alone decides false.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-18-18",
@@ -558,13 +660,19 @@
         "The club banned him from using the tennis courts.",
         "Nothing can compensate the loss of the old oak."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Accuse someone of doing, not for.\n\nTip: Accuse of; blame for.",
-        "TRUE — Suspected of + gerund is the fixed collocation.\n\nTip: Suspected/accused of wrongdoing.",
-        "FALSE — Convicted of an offence is the standard legal/exam pattern (for appears in some loose usage but of is safer here).\n\nTip: Convicted of; charged with.",
-        "TRUE — Ban someone from + gerund/noun is correct.\n\nTip: Ban/prohibit from; forbid someone to is different.",
-        "FALSE — Compensate for a loss; compensate cannot take the loss as a bare object in this sense.\n\nTip: Compensate for damage/loss."
+        "**A) She accused him for leaving the gate open.**  (false)\n\nAccuse someone of doing, not for. For belongs to blame.\n\nTrap: accused him for → accused him of leaving the gate open.\n\n**Tip:** Accuse of; blame for.",
+        "**B) They suspected her of feeding the stray cats.**  (true)\n\nSuspected of plus a gerund is the fixed collocation for alleged wrongdoing.\n\nThe same of satellite appears after accuse; do not swap in for here.\n\n**Tip:** Suspected/accused of.",
+        "**C) He was convicted for trespassing on farmland.**  (false)\n\nConvicted of an offence is the standard legal/exam pattern. For appears in loose usage but of is the safer lock here.\n\nTrap: convicted for → convicted of trespassing.\n\n**Tip:** Convicted of; charged with.",
+        "**D) The club banned him from using the tennis courts.**  (true)\n\nBan someone from plus a gerund or noun is correct. Prohibit follows from; forbid someone to is a different shape.\n\n**Tip:** Ban/prohibit from.",
+        "**E) Nothing can compensate the loss of the old oak.**  (false)\n\nCompensate for a loss. In this sense compensate cannot take the loss as a bare object.\n\nTrap: compensate the loss → compensate for the loss of the old oak.\n\n**Tip:** Compensate for damage/loss."
       ],
       "highlights": [
         "accused him for",
@@ -576,7 +684,7 @@
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.18",
-      "solution_overview": "Fault and restriction vocabulary is preposition-heavy: accuse/suspect/convict of, ban from, compensate for. Swapping for/of or dropping the preposition fails the item."
+      "solution_overview": "Fault, suspicion, conviction, bans, and compensation are preposition-heavy: one wrong satellite and the legal flavour collapses.\n\n**Part 1: What to watch for.**\n\nHold accuse/suspect/convict of, ban from, and compensate for. Accuse for, convict for, and bare compensate the loss are the designed errors.\n\n**Part 2: How to decide.**\n\nPair each verb with its private preposition before you care about the gerund. Dropping or swapping that satellite fails the item.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-18-19",
@@ -590,13 +698,19 @@
         "She takes pride in finishing every crossword.",
         "He is proud for his daughter's science prize."
       ],
-      "answer_key": [true, false, false, true, false],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Contingent on + noun/gerund matches depend on.\n\nTip: Contingent on conditions.",
-        "FALSE — Contingent of is a depend-of style transfer error.\n\nTip: On, not of, after contingent.",
-        "FALSE — Pride oneself on doing, not in, after the reflexive verb.\n\nTip: Pride oneself on; take pride in — different verbs, different prepositions.",
-        "TRUE — Take pride in + gerund is fixed.\n\nTip: Take pride in / be proud of.",
-        "FALSE — Proud of an achievement, not proud for.\n\nTip: Proud of someone/something."
+        "**A) The plan is contingent on dry weather this weekend.**  (true)\n\nContingent on plus a noun or gerund matches depend on for conditions. Dry weather fits.\n\n**Tip:** Contingent on conditions.",
+        "**B) Approval is contingent of dry weather this weekend.**  (false)\n\nContingent of is a depend-of style transfer. The condition lock is on.\n\nTrap: contingent of → contingent on dry weather.\n\n**Tip:** On, not of, after contingent.",
+        "**C) She prides herself in finishing every crossword.**  (false)\n\nPride oneself on doing, not in, after the reflexive verb. In belongs to take pride in.\n\nTrap: prides herself in → prides herself on finishing every crossword.\n\n**Tip:** Pride oneself on; take pride in.",
+        "**D) She takes pride in finishing every crossword.**  (true)\n\nTake pride in plus a gerund is fixed and correct here.\n\nBe proud of is the adjective cousin with of.\n\n**Tip:** Take pride in / be proud of.",
+        "**E) He is proud for his daughter's science prize.**  (false)\n\nProud of an achievement, not proud for.\n\nTrap: proud for → proud of his daughter's science prize.\n\n**Tip:** Proud of someone/something."
       ],
       "highlights": [
         "contingent on",
@@ -608,7 +722,7 @@
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.18",
-      "solution_overview": "Near-identical pride frames diverge: pride oneself on vs take pride in vs be proud of. Contingent follows depend → on, never of."
+      "solution_overview": "Pride frames look identical until you notice the verb under them: pride oneself, take pride, and be proud each want a different preposition.\n\n**Part 1: What to watch for.**\n\nContingent follows depend → on (never of). Then separate pride oneself on, take pride in, and be proud of — importing in/for across those frames fails.\n\n**Part 2: How to decide.**\n\nName the exact verb phrase first. Only then pick on, in, or of. Contingent always tracks depend on.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-18-20",
@@ -622,13 +736,19 @@
         "She objects to being photographed without consent.",
         "He succeeded on repairing the leaky tap."
       ],
-      "answer_key": [true, false, false, true, false],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Run out of + noun is the depletion pattern.\n\nTip: Run out of supplies; run out (intransitive) for time.",
-        "FALSE — Run out from cups is wrong; use run out of.\n\nTip: Of after run out for materials.",
-        "FALSE — Looking forward to the hike, not for.\n\nTip: Look forward to + noun/-ing.",
-        "TRUE — Object to + gerund is correct.\n\nTip: Object to being/doing; not object against.",
-        "FALSE — Succeeded in repairing, not on.\n\nTip: Succeed in + -ing; insist on is a different verb."
+        "**A) By the time we arrived, the café had run out of cups.**  (true)\n\nRun out of plus a noun is the depletion pattern. Cups before arrival fits of.\n\n**Tip:** Run out of supplies.",
+        "**B) The café had run out from cups before noon.**  (false)\n\nRun out from cups is wrong; materials take of after run out.\n\nTrap: run out from → run out of cups.\n\n**Tip:** Of after run out for materials.",
+        "**C) I'm looking forward for the weekend hike.**  (false)\n\nLooking forward to the hike, not for. To is part of the multi-word verb and takes a noun or -ing.\n\nTrap: looking forward for → looking forward to the weekend hike.\n\n**Tip:** Look forward to + noun/-ing.",
+        "**D) She objects to being photographed without consent.**  (true)\n\nObject to plus a gerund is correct: objects to being photographed. Against is a false friend from other languages.\n\n**Tip:** Object to being/doing.",
+        "**E) He succeeded on repairing the leaky tap.**  (false)\n\nSucceeded in repairing, not on. On belongs to insist, not succeed.\n\nTrap: succeeded on → succeeded in repairing the leaky tap.\n\n**Tip:** Succeed in + -ing."
       ],
       "highlights": [
         "run out of",
@@ -640,7 +760,7 @@
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.18",
-      "solution_overview": "Close with high-frequency exam traps: run out of, look forward to, object to, succeed in. Wrong satellite prepositions are the only thing that separates TRUE from FALSE here."
+      "solution_overview": "Close with the high-frequency exam cluster: run out, look forward, object, and succeed — each fails or passes on one satellite preposition.\n\n**Part 1: What to watch for.**\n\nLock run out of, look forward to, object to, and succeed in. From/for/on swaps are the only difference between true and false here.\n\n**Part 2: How to decide.**\n\nIgnore how natural the sentence feels in translation. Match the exact multi-word verb to its textbook preposition, then decide.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     }
   ]
 }

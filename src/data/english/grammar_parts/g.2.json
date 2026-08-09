@@ -14,13 +14,19 @@
         "If Leo studies tonight, he passes the quiz for certain next week.",
         "If the oven is ready, Sara will bakes the muffins."
       ],
-      "answer_key": [true, true, false, false, false],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Zero conditional: present simple in both clauses for a general scientific fact that always holds.\n\nTip: Rules and natural facts → present + present, not will.",
-        "TRUE — First conditional: a real future plan takes present simple after if and will + base verb in the result.\n\nTip: Real near-future plans → if + present, main clause will + V1.",
-        "FALSE — After will the verb must stay bare: will cancel, not will cancels.\n\nTip: Modals never take a third-person -s on the following verb.",
-        "FALSE — A real future result needs will pass (or similar), not a bare present \"passes\" when you mean next week's outcome.\n\nTip: Open future results after a real condition usually take will, not plain present.",
-        "FALSE — Will takes the base form bake, not bakes.\n\nTip: Scan will + verb: if you see an -s, the line is broken."
+        "**A) If you heat ice, it melts.**  (true)\n\nThis is a clean zero conditional: a general scientific fact uses present simple on both sides. Heating ice always leads to melting, so there is no need for will. The sentence reads like a law of nature, which is exactly when zero is the right frame.\n\n**Tip:** Rules and natural facts → present + present, not will.",
+        "**B) If the library opens early, Maya will finish her essay before lunch.**  (true)\n\nA real morning plan: present simple after if, will + base verb in the result. Opening early is possible, and finishing before lunch is an open future outcome — classic first conditional.\n\n**Tip:** Real near-future plans → if + present, main clause will + V1.",
+        "**C) If it rains tomorrow, we will cancels the picnic.**  (false)\n\nTrap: after will the verb must stay bare — will cancel, not will cancels. The if-clause is fine (present for a real future); only the result form is broken. Modals never take a third-person -s on the following verb.\n\n**Tip:** Scan will + verb: if you see an -s, the line is broken.",
+        "**D) If Leo studies tonight, he passes the quiz for certain next week.**  (false)\n\nTrap: a real future result pinned to next week needs will pass (or similar), not bare present passes. Present + present would only fit a zero-style habit or general truth, which this next-week quiz is not.\n\n**Tip:** Open future results after a real condition usually take will, not plain present.",
+        "**E) If the oven is ready, Sara will bakes the muffins.**  (false)\n\nTrap: will takes the base form bake, not bakes. The condition is a fine first-conditional if-clause; only the -s after will wrecks the result.\n\n**Tip:** Will + V1 — never will + third-person -s."
       ],
       "highlights": [
         "it melts",
@@ -32,7 +38,7 @@
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.2",
-      "solution_overview": "Warm up on zero versus first: facts keep present + present; real plans keep present + will. Three lines fail on form — will + -s, and a bare present where a future result needs will."
+      "solution_overview": "Ice, library hours, rain, study night, and muffins — a starter round on zero versus first conditionals.\n\n**Part 1: What to watch for.**\n\nZero conditionals state general facts with present simple in both clauses (heat ice → it melts). First conditionals state open, real futures: present after if, will + base verb in the result. The broken lines either glue an -s onto the verb after will, or use bare present where a next-week future result needs will.\n\n**Part 2: How to decide.**\n\nAsk: always true, or a real plan? Facts stay present + present. Real plans keep present in the if-clause and will + V1 in the result. If you see will cancels / will bakes, strip the -s. If the result is pinned to next week and the condition is real, prefer will pass over passes.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-2-02",
@@ -46,13 +52,19 @@
         "If you mix red and blue, you will get purple every time as a law of nature.",
         "If the gym opens at six, Ana will train before work."
       ],
-      "answer_key": [true, true, false, false, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Zero conditional correctly states a general consequence with present simple on both sides.\n\nTip: Habitual or scientific truths prefer zero, not will.",
-        "TRUE — First conditional correctly links a real booking decision to a future seating plan.\n\nTip: Present in the if-clause; will in the result for open futures.",
-        "FALSE — Will misses is ungrammatical; use will miss.\n\nTip: After will, always use the bare infinitive.",
-        "FALSE — A timeless colour fact belongs in zero conditional (you get purple), not first with will.\n\nTip: If the result is always true, drop will and keep present + present.",
-        "TRUE — Clean first conditional for a real morning plan.\n\nTip: Real timetable + real intention → present + will."
+        "**A) If plants get no water, they die.**  (true)\n\nZero conditional correctly states a general consequence with present simple on both sides. No water → death is a habitual natural truth, not a one-off future plan.\n\n**Tip:** Habitual or scientific truths prefer zero, not will.",
+        "**B) If Nora books the tickets today, we will sit together on the train.**  (true)\n\nFirst conditional links a real booking decision today to a future seating plan. Present in the if-clause, will + base verb in the result — textbook open future.\n\n**Tip:** Present in the if-clause; will in the result for open futures.",
+        "**C) If the bus is late, Tom will misses his lecture.**  (false)\n\nTrap: will misses is ungrammatical; use will miss. The late-bus condition is fine first-conditional material — only the -s after will is wrong.\n\n**Tip:** After will, always use the bare infinitive.",
+        "**D) If you mix red and blue, you will get purple every time as a law of nature.**  (false)\n\nTrap: a timeless colour fact belongs in zero conditional (you get purple), not first with will. The phrase as a law of nature is a strong clue that will is the wrong mood for a permanent truth.\n\n**Tip:** If the result is always true, drop will and keep present + present.",
+        "**E) If the gym opens at six, Ana will train before work.**  (true)\n\nClean first conditional for a real morning timetable and intention. Opens is present; will train is the open future result.\n\n**Tip:** Real timetable + real intention → present + will."
       ],
       "highlights": [
         "they die",
@@ -64,7 +76,7 @@
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.2",
-      "solution_overview": "Separate always-true rules (zero) from open future plans (first). Reject will + -s, and reject will when the sentence is really stating a permanent fact."
+      "solution_overview": "Plants, train seats, a late bus, mixing colours, and an early gym — more zero-versus-first practice, including a fact wrongly dressed in will.\n\n**Part 1: What to watch for.**\n\nAlways-true consequences belong in zero (present + present). Open plans belong in first (present + will). One line fails with will + -s; another states a permanent colour law with will get, which pulls a timeless fact into first conditional.\n\n**Part 2: How to decide.**\n\nLabel each sentence fact or plan. Facts: drop will and keep both presents. Plans: keep will + bare verb. Reject will misses on sight, and reject will when the result is framed as a law of nature.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-2-03",
@@ -78,13 +90,19 @@
         "If Dan lived closer, he would walk to campus every day.",
         "If I was the team captain tomorrow in this hypothetical, I would change the formation."
       ],
-      "answer_key": [true, true, false, true, false],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Second conditional with formal were after if I, plus would + base verb for unreal advice.\n\nTip: Exams prefer If I were … would … for hypothetical roles.",
-        "TRUE — Past simple/were in the if-clause plus would marks an unreal present wish about the weather.\n\nTip: Unreal now → if + past, result would + V1.",
-        "FALSE — Do not put would in the if-clause; use If she had more free time…\n\nTip: Keep would in the result only; the if-clause wants past simple.",
-        "TRUE — Standard second conditional for a counterfactual present about distance and commuting.\n\nTip: Past simple + would is the default unreal-present frame.",
-        "FALSE — Careful exam English prefers were for unreal be after if, not was, especially in formal true/false items.\n\nTip: Hypothetical be → were is the safe exam choice."
+        "**A) If I were you, I would take the earlier train.**  (true)\n\nSecond conditional with formal were after if I, plus would + base verb for unreal advice. This is the classic hypothetical-role pattern exams reward.\n\n**Tip:** Exams prefer If I were … would … for hypothetical roles.",
+        "**B) If the weather were better, we would cycle to the lake.**  (true)\n\nPast/were in the if-clause plus would marks an unreal present wish about the weather. We are not claiming the weather is better — we are imagining it.\n\n**Tip:** Unreal now → if + past, result would + V1.",
+        "**C) If she would have more free time, she would join the choir.**  (false)\n\nTrap: do not put would in the if-clause; write If she had more free time, she would join the choir. Keep would for the result only; the condition wants past simple.\n\n**Tip:** Would stays out of the if-clause in standard conditionals.",
+        "**D) If Dan lived closer, he would walk to campus every day.**  (true)\n\nStandard second conditional for a counterfactual present about distance and commuting. Lived + would walk is the default unreal-present frame.\n\n**Tip:** Past simple + would is the default unreal-present pairing.",
+        "**E) If I was the team captain tomorrow in this hypothetical, I would change the formation.**  (false)\n\nTrap: careful exam English prefers were for unreal be after if, not was, especially in formal true/false items. The rest of the pattern (would change) is fine; swap was → were.\n\n**Tip:** Hypothetical be → were is the safe exam choice."
       ],
       "highlights": [
         "If I were",
@@ -96,7 +114,7 @@
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.2",
-      "solution_overview": "These lines introduce unreal present (second conditional). Watch for would inside the if-clause and prefer were over was in careful hypothetical be."
+      "solution_overview": "Trains, weather, choir, campus walks, and team captain — unreal present (second conditional) with exam-style were and a would-in-the-if trap.\n\n**Part 1: What to watch for.**\n\nSecond conditional marks unreal or hypothetical present/future: past simple or were in the if-clause, would + base verb in the result. Do not park would inside the if-clause. Careful exam English prefers were over was for unreal be after if.\n\n**Part 2: How to decide.**\n\nCheck where would sits — result only. Prefer If I were / If the weather were for hypothetical be. Keep past simple + would for counterfactual present lifestyle wishes (distance, commuting).\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-2-04",
@@ -110,13 +128,19 @@
         "If only I knew her phone number now.",
         "I wish I can speak Italian fluently this semester."
       ],
-      "answer_key": [true, true, false, true, false],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Unless (= if not) + present simple pairs cleanly with will for a real future sports plan.\n\nTip: Treat unless like if not: present in the condition, will in the result.",
-        "TRUE — As long as (= provided that) takes present simple for a real ongoing condition, then will in the result.\n\nTip: As long as / provided that → present + will for open conditions.",
-        "FALSE — After unless, avoid will; use present: Unless you hurry…\n\nTip: Unless / if / as long as rarely take will in the condition clause.",
-        "TRUE — If only + past simple correctly wishes about an unreal present lack of knowledge.\n\nTip: Present regrets with wish / if only → past simple.",
-        "FALSE — Wish about present ability needs past form: I wish I could speak…, not can.\n\nTip: After wish, shift the tense back one step from reality."
+        "**A) Unless it rains, the match will go ahead.**  (true)\n\nUnless (= if not) + present simple pairs cleanly with will for a real future sports plan. The match goes ahead if rain does not intervene.\n\n**Tip:** Treat unless like if not: present in the condition, will in the result.",
+        "**B) As long as you water the herbs, they will stay fresh.**  (true)\n\nAs long as (= provided that) takes present simple for a real ongoing condition, then will in the result. Watering is the proviso that keeps the herbs fine.\n\n**Tip:** As long as / provided that → present + will for open conditions.",
+        "**C) Unless you will hurry, we will miss the opening credits.**  (false)\n\nTrap: after unless, avoid will; use present — Unless you hurry, we will miss the opening credits. Will belongs in the result, not stacked into the condition.\n\n**Tip:** Unless / if / as long as rarely take will in the condition clause.",
+        "**D) If only I knew her phone number now.**  (true)\n\nIf only + past simple correctly wishes about an unreal present lack of knowledge. Knew is the backshifted form for a present gap.\n\n**Tip:** Present regrets with wish / if only → past simple.",
+        "**E) I wish I can speak Italian fluently this semester.**  (false)\n\nTrap: wish about present ability needs past form — I wish I could speak…, not can. After wish, shift the tense back one step from reality.\n\n**Tip:** After wish, do not keep ordinary present modal can."
       ],
       "highlights": [
         "Unless it rains",
@@ -128,7 +152,7 @@
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.2",
-      "solution_overview": "Meet unless, as long as, and wish / if only at entry level. Keep will out of the condition clause, and shift tenses back after wish for present unreal situations."
+      "solution_overview": "Match day, herbs, film credits, a missing number, and Italian — unless, as long as, and wish / if only at entry level.\n\n**Part 1: What to watch for.**\n\nUnless and as long as behave like if for real conditions: present in the condition clause, will (or another realistic result) in the main clause. Wish and if only for present unreal situations shift the tense back — past simple, and can becomes could.\n\n**Part 2: How to decide.**\n\nStrip will from unless / if / as long as conditions. For present regrets with wish / if only, use past simple. Reject I wish I can… on sight.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-2-05",
@@ -142,13 +166,19 @@
         "Unless Mia finishes her lab report, she will not watch the film.",
         "As long as the neighbours keep quiet, I can revise until midnight."
       ],
-      "answer_key": [true, true, false, true, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Second conditional for an unreal present about the cinema timetable.\n\nTip: Unreal present → past simple + would.",
-        "TRUE — Third conditional: past perfect in the if-clause and would have + past participle for a missed past opportunity.\n\nTip: Unreal past → if + had + V3, result would have + V3.",
-        "FALSE — Would does not belong in the if-clause; use If they practised…\n\nTip: Ban would from the condition; leave it for the result.",
-        "TRUE — Unless + present correctly sets a real study condition before a future plan.\n\nTip: Unless + present + will / will not is exam-safe for real futures.",
-        "TRUE — As long as + present states a real proviso that enables present ability.\n\nTip: As long as can support present results (can / may) as well as will."
+        "**A) If the cinema had more evening slots, we would go more often.**  (true)\n\nSecond conditional for an unreal present about the cinema timetable. Had (past meaning) + would go imagines a better schedule that does not actually exist.\n\n**Tip:** Unreal present → past simple + would.",
+        "**B) If I had known about the sale, I would have bought the jacket.**  (true)\n\nThird conditional: past perfect in the if-clause and would have + past participle for a missed past opportunity. The sale is over; the jacket stay unbought in this alternate past.\n\n**Tip:** Unreal past → if + had + V3, result would have + V3.",
+        "**C) If they would practise every day, they would improve faster.**  (false)\n\nTrap: would does not belong in the if-clause; use If they practised every day, they would improve faster. Ban would from the condition; leave it for the result.\n\n**Tip:** Condition = past simple; result = would + V1.",
+        "**D) Unless Mia finishes her lab report, she will not watch the film.**  (true)\n\nUnless + present correctly sets a real study condition before a future entertainment plan. Finishes is present; will not watch is the open future result.\n\n**Tip:** Unless + present + will / will not is exam-safe for real futures.",
+        "**E) As long as the neighbours keep quiet, I can revise until midnight.**  (true)\n\nAs long as + present states a real proviso that enables present ability with can. Not every as long as line needs will — can / may work when the result is present capability.\n\n**Tip:** As long as can support present results (can / may) as well as will."
       ],
       "highlights": [
         "would go",
@@ -160,7 +190,7 @@
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.2",
-      "solution_overview": "Blend second, third, unless, and as long as. The only clear fail is would inside the if-clause; everything else keeps the condition form clean."
+      "solution_overview": "Cinema slots, a missed sale, daily practice, a lab report, and quiet neighbours — blending second, third, unless, and as long as.\n\n**Part 1: What to watch for.**\n\nSecond conditional = unreal present (past + would). Third = unreal past (had + V3 / would have + V3). Unless and as long as keep present for real provisos. The clear fail is would parked inside the if-clause.\n\n**Part 2: How to decide.**\n\nLocate would: only the result may have it in these patterns. Match unreal-present cinema wishes to past + would, and missed past shopping to past perfect + would have. Trust unless / as long as when the condition stays present.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-2-06",
@@ -174,13 +204,19 @@
         "I wish I had packed an umbrella yesterday.",
         "If only the Wi-Fi worked in this café right now."
       ],
-      "answer_key": [true, true, false, true, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Classic third conditional for a missed travel outcome in the past.\n\nTip: Past unreal → had + V3 / would have + V3.",
-        "TRUE — Inverted third conditional (Had she set…) correctly replaces If she had set…\n\nTip: Had + subject + V3 is a formal shortcut for if + past perfect.",
-        "FALSE — The result must stay in the unreal past: would have won, not will have won.\n\nTip: Third conditional results use would have, never will have.",
-        "TRUE — Wish + past perfect correctly regrets a past packing choice.\n\nTip: Past regrets after wish / if only → past perfect.",
-        "TRUE — If only + past simple correctly wishes about an unreal present problem.\n\nTip: Present inconvenience → past simple after if only."
+        "**A) If the ferry had left on time, we would have reached the island before dusk.**  (true)\n\nClassic third conditional for a missed travel outcome in the past. Had left + would have reached keeps both halves in unreal past.\n\n**Tip:** Past unreal → had + V3 / would have + V3.",
+        "**B) Had she set an alarm, she would not have overslept.**  (true)\n\nInverted third conditional (Had she set…) correctly replaces If she had set… The meaning and the would not have overslept result stay fully unreal past.\n\n**Tip:** Had + subject + V3 is a formal shortcut for if + past perfect.",
+        "**C) If Ben had trained harder, he will have won the race.**  (false)\n\nTrap: the result must stay in the unreal past — would have won, not will have won. Will have is ordinary future perfect, not third-conditional regret.\n\n**Tip:** Third conditional results use would have, never will have.",
+        "**D) I wish I had packed an umbrella yesterday.**  (true)\n\nWish + past perfect correctly regrets a past packing choice. Yesterday locks the regret in closed past, so past perfect is the right shift.\n\n**Tip:** Past regrets after wish / if only → past perfect.",
+        "**E) If only the Wi-Fi worked in this café right now.**  (true)\n\nIf only + past simple correctly wishes about an unreal present problem. Right now signals present inconvenience, so worked (past form) is the backshift — not past perfect.\n\n**Tip:** Present inconvenience → past simple after if only."
       ],
       "highlights": [
         "would have reached",
@@ -192,7 +228,7 @@
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.2",
-      "solution_overview": "Focus on unreal past: third conditional, Had-inversion, and wish / if only. Reject will have where would have is required."
+      "solution_overview": "Ferry timing, a missed alarm, a race, an umbrella, and café Wi-Fi — unreal past with third conditional, Had-inversion, and wish / if only.\n\n**Part 1: What to watch for.**\n\nUnreal past uses had + V3 in the condition and would have + V3 in the result. Had she set… is a formal inversion of If she had set… Wish / if only take past perfect for closed past regrets and past simple for present inconvenience. Reject will have where would have is required.\n\n**Part 2: How to decide.**\n\nAsk whether the regret is finished (past perfect / would have) or present (past simple after if only). Accept inversion as a shortcut for if + past perfect. Swap will have won → would have won in third-conditional results.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-2-07",
@@ -206,13 +242,19 @@
         "I wish the neighbours would stop drilling at dawn.",
         "If only she will listen to the podcast before the seminar."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — First conditional with a negative if-clause correctly predicts a real future result.\n\nTip: If + present (affirmative or negative) + will is fine for open futures.",
-        "FALSE — Unless already means if not, so Unless you don't creates a messy double negative; use Unless you water… or If you don't…\n\nTip: Avoid stacking unless with another negative.",
-        "TRUE — As long as + present correctly sets a real academic condition for a future result.\n\nTip: Provided / as long as behave like if for real conditions.",
-        "TRUE — Wish + would correctly complains about someone else's annoying present habit.\n\nTip: Wish + would = desire for a change in someone else's behaviour.",
-        "FALSE — If only for a present/future wish needs past or would, not will: If only she would listen… / If only she listened…\n\nTip: After if only, do not keep ordinary will."
+        "**A) If you don't water the tomatoes, they will wilt.**  (true)\n\nFirst conditional with a negative if-clause correctly predicts a real future result. Don't water is still present tense after if; will wilt is the open outcome.\n\n**Tip:** If + present (affirmative or negative) + will is fine for open futures.",
+        "**B) Unless you don't water the tomatoes, they will wilt.**  (false)\n\nTrap: unless already means if not, so Unless you don't creates a messy double negative. Use Unless you water… or If you don't… — not both layers of negation.\n\n**Tip:** Avoid stacking unless with another negative.",
+        "**C) As long as students submit drafts on Friday, the tutor will give feedback on Monday.**  (true)\n\nAs long as + present correctly sets a real academic condition for a future result. Submit is present; will give is the open Monday plan.\n\n**Tip:** Provided / as long as behave like if for real conditions.",
+        "**D) I wish the neighbours would stop drilling at dawn.**  (true)\n\nWish + would correctly complains about someone else's annoying present habit and asks for a change. This is the behaviour-change use of wish, not a simple state wish.\n\n**Tip:** Wish + would = desire for a change in someone else's behaviour.",
+        "**E) If only she will listen to the podcast before the seminar.**  (false)\n\nTrap: if only for a present/future wish needs past or would, not will — If only she would listen… / If only she listened… Ordinary will does not belong after if only.\n\n**Tip:** After if only, do not keep ordinary will."
       ],
       "highlights": [
         "If you don't water",
@@ -224,7 +266,7 @@
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.2",
-      "solution_overview": "Watch polarity with unless, keep as long as in present for real plans, and use wish / if only + would for behaviour you want to change — not will."
+      "solution_overview": "Tomatoes, drafts, dawn drilling, and a podcast — polarity with unless, as long as for real plans, and wish / if only + would for behaviour change.\n\n**Part 1: What to watch for.**\n\nIf + negative present + will is fine for open futures. Unless already means if not, so Unless you don't creates a messy double negative. Wish + would complains about someone else's habit; if only for a present/future wish needs past or would, not ordinary will.\n\n**Part 2: How to decide.**\n\nAvoid stacking unless with another negative. Keep as long as in present for real academic plans. Prefer wish / if only + would (or past) when you want a change in behaviour — reject if only … will.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-2-08",
@@ -238,13 +280,19 @@
         "Unless the museum closes early, we will see the sculpture wing.",
         "I wish I were better at mental arithmetic."
       ],
-      "answer_key": [true, true, false, true, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Second conditional with were for an unreal present outdoor scenario.\n\nTip: Unreal be → were is preferred in careful English.",
-        "TRUE — First conditional: a real possible price change pairs with will switch. One everyday-economy line is fine among lifestyle topics.\n\nTip: Real future possibility → present + will.",
-        "FALSE — Never write If I would be; use If I were / If I was (exam: were).\n\nTip: Would stays out of the if-clause in standard conditionals.",
-        "TRUE — Unless + present + will correctly frames a real museum visit plan.\n\nTip: Unless = if not; keep present in the condition.",
-        "TRUE — Wish + were correctly marks an unreal present ability.\n\nTip: Wish I were is the formal pattern for present counterfactuals with be."
+        "**A) If the trail were less muddy, we would hike further.**  (true)\n\nSecond conditional with were for an unreal present outdoor scenario. The trail is muddy; we only imagine it cleaner.\n\n**Tip:** Unreal be → were is preferred in careful English.",
+        "**B) If prices fall next month, more families will switch to seasonal produce.**  (true)\n\nFirst conditional: a real possible price change pairs with will switch. One everyday-economy line among lifestyle topics is fine when the grammar is open-future present + will.\n\n**Tip:** Real future possibility → present + will.",
+        "**C) If I would be taller, I would reach the top shelf easily.**  (false)\n\nTrap: never write If I would be; use If I were / If I was (exam: were). Would stays out of the if-clause in standard conditionals; only the result may keep would reach.\n\n**Tip:** Fix to If I were taller, I would reach…",
+        "**D) Unless the museum closes early, we will see the sculpture wing.**  (true)\n\nUnless + present + will correctly frames a real museum visit plan. Closes is present; will see is the open result if early closing does not intervene.\n\n**Tip:** Unless = if not; keep present in the condition.",
+        "**E) I wish I were better at mental arithmetic.**  (true)\n\nWish + were correctly marks an unreal present ability. Formal exam English likes were here for present counterfactuals with be.\n\n**Tip:** Wish I were is the formal pattern for present counterfactuals with be."
       ],
       "highlights": [
         "were less muddy",
@@ -256,7 +304,7 @@
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.2",
-      "solution_overview": "Consolidate second conditional, unless, wish + were, and one real first-conditional lifestyle/price line. The trap is If I would be."
+      "solution_overview": "Muddy trails, seasonal produce, shelf height, a museum wing, and mental arithmetic — consolidating second conditional, unless, wish + were, and one real first-conditional line.\n\n**Part 1: What to watch for.**\n\nUnreal present keeps were / past + would. Real futures keep present + will. Unless + present + will frames real visit plans. The signature trap is If I would be… — would must not sit in the if-clause.\n\n**Part 2: How to decide.**\n\nAccept were for unreal outdoor and ability wishes. Accept one clean first-conditional price/lifestyle line. Rewrite If I would be → If I were. Trust unless when the condition stays present.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-2-09",
@@ -270,13 +318,19 @@
         "If I had more patience as a child, I would have learned piano sooner.",
         "If you heated the soup now, it would taste better."
       ],
-      "answer_key": [true, true, false, false, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Mixed conditional: past unreal cause (had taken) with present result (would be).\n\nTip: Past perfect in if + would + V1 = past cause, present effect.",
-        "TRUE — Mixed conditional: unreal present character (were) with past result (would have handed).\n\nTip: If + past / were + would have + V3 = present unreal trait, past consequence.",
-        "FALSE — A finished past result needs would have arrived, not would arrive, after a past perfect condition.\n\nTip: Past condition + past result → third, not first-looking would + V1 with yesterday.",
-        "FALSE — A childhood past state needs past perfect: If I had had more patience as a child…\n\nTip: Pure past regrets need had + past participle in the if-clause.",
-        "TRUE — Second conditional can use past simple heated for an unreal/unlikely present suggestion.\n\nTip: Soft hypothetical now → past + would."
+        "**A) If she had taken the earlier bus, she would be at the theatre now.**  (true)\n\nMixed conditional: past unreal cause (had taken) with present result (would be). The missed bus is finished; the empty seat at the theatre is the present consequence.\n\n**Tip:** Past perfect in if + would + V1 = past cause, present effect.",
+        "**B) If he were more organised, he would have handed in the portfolio last Friday.**  (true)\n\nMixed conditional: unreal present character (were) with past result (would have handed). The trait is imagined as present; the missed Friday deadline is the past fallout.\n\n**Tip:** If + past / were + would have + V3 = present unreal trait, past consequence.",
+        "**C) If they had left earlier, they would arrive yesterday evening.**  (false)\n\nTrap: a finished past result needs would have arrived, not would arrive, after a past perfect condition. Yesterday evening locks the outcome in the past, so plain would + V1 is the wrong half of the mix.\n\n**Tip:** Past condition + past result → third (would have), not would + V1 with yesterday.",
+        "**D) If I had more patience as a child, I would have learned piano sooner.**  (false)\n\nTrap: a childhood past state needs past perfect — If I had had more patience as a child… Pure past regrets need had + past participle in the if-clause when the cause itself is past.\n\n**Tip:** As a child + past counterfactual → had had / had been, not bare had + noun alone when had means possession in the past.",
+        "**E) If you heated the soup now, it would taste better.**  (true)\n\nSecond conditional can use past simple heated for an unreal or unlikely present suggestion. Now softens into a hypothetical offer rather than a firm first-conditional plan.\n\n**Tip:** Soft hypothetical now → past + would."
       ],
       "highlights": [
         "would be at the theatre",
@@ -288,7 +342,7 @@
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.2",
-      "solution_overview": "Enter mixed conditionals: match the time of the cause to the time of the result. Reject would + V1 with clear past time markers, and reject weak past-perfect gaps in childhood regrets."
+      "solution_overview": "Theatre arrival, a late portfolio, yesterday's arrival, childhood patience, and soup — mixed conditionals and time alignment.\n\n**Part 1: What to watch for.**\n\nMixed conditionals match the time of the cause to the time of the result: past perfect cause + present would result, or unreal present trait + would have past result. Reject would + V1 with clear past time markers like yesterday, and reject weak past-perfect gaps when the story is a childhood past state.\n\n**Part 2: How to decide.**\n\nUnderline time cues (now, last Friday, yesterday, as a child). Build the if-clause for the cause's time and the result for the effect's time. Soft hypothetical now can still use second conditional (heated / would taste).\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-2-10",
@@ -302,13 +356,19 @@
         "If only they hadn't cancelled the outdoor concert last Saturday.",
         "Unless she had missed the call, she would answer it now."
       ],
-      "answer_key": [false, true, true, true, false],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — As long as takes present for real conditions: As long as you follow…, not will follow.\n\nTip: Keep will out of as long as / provided that clauses.",
-        "TRUE — Provided that + present + will is a clean real-future proviso.\n\nTip: Provided that ≈ if / as long as for open conditions.",
-        "TRUE — Wish + past simple correctly regrets a present obligation.\n\nTip: Present annoyance after wish → past simple (didn't have to).",
-        "TRUE — If only + past perfect correctly regrets a finished past cancellation.\n\nTip: Closed past regrets → past perfect after if only / wish.",
-        "FALSE — The timelines clash: a past-perfect unless-clause wants a past result (would have answered), or rephrase as Unless she misses… she will answer / If she hadn't missed… she would answer now with matching mixed forms carefully.\n\nTip: Align condition time and result time; don't paste past perfect onto a plain would + V1 present without a clear mixed pattern."
+        "**A) As long as you will follow the recipe, the cake will rise.**  (false)\n\nTrap: as long as takes present for real conditions — As long as you follow…, not will follow. Will belongs in the result (will rise), not twice.\n\n**Tip:** Keep will out of as long as / provided that clauses.",
+        "**B) Provided that the pool is open, we will swim after class.**  (true)\n\nProvided that + present + will is a clean real-future proviso. Is open sets the condition; will swim is the plan.\n\n**Tip:** Provided that ≈ if / as long as for open conditions.",
+        "**C) I wish I didn't have to revise tonight.**  (true)\n\nWish + past simple correctly regrets a present obligation. Didn't have to is the backshift from present have to.\n\n**Tip:** Present annoyance after wish → past simple (didn't have to).",
+        "**D) If only they hadn't cancelled the outdoor concert last Saturday.**  (true)\n\nIf only + past perfect correctly regrets a finished past cancellation. Last Saturday closes the event in the past.\n\n**Tip:** Closed past regrets → past perfect after if only / wish.",
+        "**E) Unless she had missed the call, she would answer it now.**  (false)\n\nTrap: the timelines clash. A past-perfect unless-clause wants a past result (would have answered), or rephrase carefully as a matching mixed / first pattern. Do not paste past perfect onto plain would + V1 present without a clear mixed design.\n\n**Tip:** Align condition time and result time before you tick true."
       ],
       "highlights": [
         "As long as you will",
@@ -320,7 +380,7 @@
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.2",
-      "solution_overview": "Tighten connectors (as long as / provided that) and wish / if only tense shifts. Reject will after as long as and messy unless + past perfect with a simple present result."
+      "solution_overview": "Cake rising, a swim plan, revision, a cancelled concert, and a missed call — connectors plus wish / if only tense shifts, with one messy unless timeline.\n\n**Part 1: What to watch for.**\n\nAs long as / provided that take present for real conditions, not will. Wish + past simple regrets present obligations; if only + past perfect regrets finished past cancellations. Unless + past perfect wants a time-matched result — not a casually pasted present would + V1 without a clear mixed pattern.\n\n**Part 2: How to decide.**\n\nKeep will out of as long as / provided that. Trust didn't / hadn't after wish / if only when the time cue is clear. For unless + had missed, either go fully past (would have answered) or rebuild a clean mixed / first pattern — do not leave the clash.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-2-11",
@@ -334,13 +394,19 @@
         "Had the trail been clearer, we would not have got lost.",
         "If it weren't for the fog, we could see the harbour lights."
       ],
-      "answer_key": [true, false, true, true, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Mixed conditional: unreal present teaching style (explained) with a finished past result (would have passed).\n\nTip: If + past + would have + V3 = present unreal trait, past consequence.",
-        "FALSE — A finished past explanation (had explained) does not pair cleanly with a plain future would pass next month; use would have passed for a past test, or If she explained… would pass for unreal present/future.\n\nTip: Align the time of the condition with the time of the result.",
-        "TRUE — Mixed: past unreal teaching (had explained) with present result (would understand now).\n\nTip: Had + V3 / would + V1 = past cause, present effect.",
-        "TRUE — Inverted third conditional correctly reports a past hiking mishap avoided in an alternate past.\n\nTip: Had + subject + been / V3 replaces If + past perfect.",
-        "TRUE — If it weren't for + noun correctly introduces an unreal present obstacle, with could in the result.\n\nTip: If it weren't for X = without X (unreal present)."
+        "**A) If the tutor explained the theorem more slowly, more students would have passed last week's test.**  (true)\n\nMixed conditional: unreal present teaching style (explained) with a finished past result (would have passed). The slow-explanation habit is imagined as a present trait; last week's scores are the past consequence.\n\n**Tip:** If + past + would have + V3 = present unreal trait, past consequence.",
+        "**B) If the tutor had explained the theorem more slowly, more students would pass the resit next month.**  (false)\n\nTrap: a finished past explanation (had explained) does not pair cleanly with plain future would pass next month. Use would have passed for a past test, or If she explained… would pass for unreal present/future — align the times.\n\n**Tip:** Align the time of the condition with the time of the result.",
+        "**C) If the tutor had explained the theorem more slowly last term, more students would understand it now.**  (true)\n\nMixed: past unreal teaching (had explained) with present result (would understand now). Last term is the cause; now is the effect.\n\n**Tip:** Had + V3 / would + V1 = past cause, present effect.",
+        "**D) Had the trail been clearer, we would not have got lost.**  (true)\n\nInverted third conditional correctly reports a past hiking mishap avoided in an alternate past. Had the trail been… replaces If the trail had been…\n\n**Tip:** Had + subject + been / V3 replaces If + past perfect.",
+        "**E) If it weren't for the fog, we could see the harbour lights.**  (true)\n\nIf it weren't for + noun correctly introduces an unreal present obstacle, with could in the result. Without the fog, the lights would be visible now.\n\n**Tip:** If it weren't for X = without X (unreal present)."
       ],
       "highlights": [
         "would have passed",
@@ -352,7 +418,7 @@
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.2",
-      "solution_overview": "Drill mixed timelines with a lifestyle pricing example, plus inversion and If it weren't for. Only the clearly time-aligned mixed line and the two standard patterns survive."
+      "solution_overview": "Tutor explanations, a hiking trail, and harbour fog — mixed timelines, Had-inversion, and If it weren't for.\n\n**Part 1: What to watch for.**\n\nMixed lines succeed when cause time and result time match (present unreal teaching + past test result; past unreal teaching + present understanding). A finished past explanation (had explained) does not pair cleanly with a plain would pass next month. Inversion and If it weren't for are standard alternate forms.\n\n**Part 2: How to decide.**\n\nCheck last week's test versus next month's resit versus now. Accept Had the trail been… as third-conditional inversion. Accept If it weren't for + noun for an unreal present obstacle with could / would.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-2-12",
@@ -366,13 +432,19 @@
         "If water freezes, it will expands.",
         "If water freezes, it expands."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Wish + would correctly asks for a change in habitual annoying behaviour.\n\nTip: Wish + would = stop doing that / please change.",
-        "FALSE — Wish does not take present simple like a command; use wouldn't leave or didn't leave.\n\nTip: After wish, shift the tense; don't keep ordinary present.",
-        "TRUE — If only + were correctly wishes for an unreal present length of break.\n\nTip: If only + past / were = present counterfactual.",
-        "FALSE — A scientific fact belongs in zero conditional, and will expands is doubly wrong (will + -s).\n\nTip: Zero facts: present + present; never will expands.",
-        "TRUE — Clean zero conditional for a physical law.\n\nTip: Permanent truths keep both clauses in present simple."
+        "**A) I wish you wouldn't leave your shoes in the hallway.**  (true)\n\nWish + would correctly asks for a change in habitual annoying behaviour. The shoes keep appearing; wouldn't leave is the plea to stop.\n\n**Tip:** Wish + would = stop doing that / please change.",
+        "**B) I wish you don't leave your shoes in the hallway.**  (false)\n\nTrap: wish does not take present simple like a command; use wouldn't leave or didn't leave. After wish, shift the tense — don't keep ordinary present.\n\n**Tip:** After wish, backshift; don't leave present don't.",
+        "**C) If only the semester break were longer.**  (true)\n\nIf only + were correctly wishes for an unreal present length of break. The break is not longer; were marks the counterfactual.\n\n**Tip:** If only + past / were = present counterfactual.",
+        "**D) If water freezes, it will expands.**  (false)\n\nTrap: a scientific fact belongs in zero conditional, and will expands is doubly wrong (will + -s). Write it expands — present + present, no will.\n\n**Tip:** Zero facts: present + present; never will expands.",
+        "**E) If water freezes, it expands.**  (true)\n\nClean zero conditional for a physical law. Both clauses stay in present simple for a permanent truth.\n\n**Tip:** Permanent truths keep both clauses in present simple."
       ],
       "highlights": [
         "wish you wouldn't",
@@ -384,7 +456,7 @@
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.2",
-      "solution_overview": "Contrast wish + would with the illegal wish + present, refresh if only + were, and return to zero conditional form for natural facts."
+      "solution_overview": "Hallway shoes, semester break, and freezing water — wish + would versus illegal wish + present, if only + were, and a return to zero conditional form.\n\n**Part 1: What to watch for.**\n\nWish + would asks someone to change a habit; wish does not take ordinary present like a command. If only + were marks present counterfactuals. Scientific facts belong in zero (present + present); will expands is doubly wrong (wrong mood and will + -s).\n\n**Part 2: How to decide.**\n\nPrefer wouldn't / didn't after wish for behaviour and states. Accept were after if only for present unreal length. For physical laws, keep both clauses present and never write will + -s.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-2-13",
@@ -398,13 +470,19 @@
         "Were the path safer, children would use it after dark.",
         "Had we known the gallery was free on Mondays, we would visit yesterday."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Second conditional can mark an unlikely or tentative future plan (studied / would improve).\n\nTip: Unlikely future → past + would, even with next year.",
-        "FALSE — Will in the if-clause plus bare present improves is a broken first-conditional attempt.\n\nTip: Real future: If she studies… she will improve…",
-        "TRUE — Should you need… is a polite inverted first-conditional alternative to If you need…\n\nTip: Should + subject + V1 ≈ if + present for formal offers.",
-        "TRUE — Were the path safer… correctly inverts a second-conditional if-clause.\n\nTip: Were + subject + complement replaces If + subject + were.",
-        "FALSE — Inverted past perfect needs would have visited for a past result, not would visit yesterday.\n\nTip: Had we known… → would have + V3 for finished past outcomes."
+        "**A) If she studied abroad next year, she would improve her Spanish dramatically.**  (true)\n\nSecond conditional can mark an unlikely or tentative future plan (studied / would improve). Next year does not force first conditional when the speaker treats the plan as remote.\n\n**Tip:** Unlikely future → past + would, even with next year.",
+        "**B) If she will study abroad next year, she improves her Spanish dramatically.**  (false)\n\nTrap: will in the if-clause plus bare present improves is a broken first-conditional attempt. Real future: If she studies… she will improve…\n\n**Tip:** Keep will out of the if-clause; put it in the result.",
+        "**C) Should you need extra towels, the reception desk will help.**  (true)\n\nShould you need… is a polite inverted first-conditional alternative to If you need… Formal offers often prefer this shape.\n\n**Tip:** Should + subject + V1 ≈ if + present for formal offers.",
+        "**D) Were the path safer, children would use it after dark.**  (true)\n\nWere the path safer… correctly inverts a second-conditional if-clause. It replaces If the path were safer… with the same unreal-present meaning.\n\n**Tip:** Were + subject + complement replaces If + subject + were.",
+        "**E) Had we known the gallery was free on Mondays, we would visit yesterday.**  (false)\n\nTrap: inverted past perfect needs would have visited for a past result, not would visit yesterday. Yesterday forces third-conditional result shape.\n\n**Tip:** Had we known… → would have + V3 for finished past outcomes."
       ],
       "highlights": [
         "If she studied abroad",
@@ -416,7 +494,7 @@
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.2",
-      "solution_overview": "Raise the bar with unlikely futures, Should/Were inversion, and Had-inversion. Keep will out of if-clauses and keep past results in would have."
+      "solution_overview": "Study abroad, hotel towels, a safer path, and a free gallery day — unlikely futures plus Should / Were / Had inversion.\n\n**Part 1: What to watch for.**\n\nSecond conditional can mark an unlikely future (studied / would improve) even with next year. Real futures keep will out of the if-clause. Should you need… and Were the path safer… are polite inverted forms. Had-inversion for past knowledge needs would have + V3 for a yesterday result.\n\n**Part 2: How to decide.**\n\nReject If she will study… she improves…. Accept Should / Were inversion as formal if-alternatives. Pair Had we known… with would have visited for finished past outcomes — not would visit yesterday.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-2-14",
@@ -430,13 +508,19 @@
         "As long as nobody objects, we can move the rehearsal to Thursday.",
         "Unless anyone will complain, we can move the rehearsal to Thursday."
       ],
-      "answer_key": [true, true, false, true, false],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Mixed pattern: past obstacle (had not been) with present/future-facing result (would be camping tonight).\n\nTip: If it had not been for X + would + V1 = past cause, present effect.",
-        "TRUE — But for + noun is a compact equivalent of if it were not / had not been for.\n\nTip: But for X ≈ without X / if not for X.",
-        "FALSE — Prefer If it hadn't been for… would have arrived… (past) or If it weren't for… would be… (present); was not for with would have is non-standard here.\n\nTip: Keep If it weren't for (present) and If it hadn't been for (past) distinct.",
-        "TRUE — As long as + present + can correctly sets a real group condition.\n\nTip: As long as supports present modal results as well as will.",
-        "FALSE — Unless + will is wrong; use Unless anyone complains…\n\nTip: No will after unless in standard condition clauses."
+        "**A) If it had not been for the flat tyre, we would be camping by the lake tonight.**  (true)\n\nMixed pattern: past obstacle (had not been) with present/future-facing result (would be camping tonight). The puncture is finished; tonight's campsite is the imagined present.\n\n**Tip:** If it had not been for X + would + V1 = past cause, present effect.",
+        "**B) But for the flat tyre, we would be camping by the lake tonight.**  (true)\n\nBut for + noun is a compact equivalent of if it were not / had not been for. Same camping counterfactual, tighter wording.\n\n**Tip:** But for X ≈ without X / if not for X.",
+        "**C) If it was not for the flat tyre, we would have arrived hours ago.**  (false)\n\nTrap: prefer If it hadn't been for… would have arrived… (past) or If it weren't for… would be… (present). Was not for with would have is non-standard for this item — keep weren't for and hadn't been for distinct.\n\n**Tip:** Present obstacle → weren't for; past obstacle → hadn't been for.",
+        "**D) As long as nobody objects, we can move the rehearsal to Thursday.**  (true)\n\nAs long as + present + can correctly sets a real group condition. Objects is present; can move is present capability under that proviso.\n\n**Tip:** As long as supports present modal results as well as will.",
+        "**E) Unless anyone will complain, we can move the rehearsal to Thursday.**  (false)\n\nTrap: unless + will is wrong; use Unless anyone complains… Will does not belong in the unless-clause.\n\n**Tip:** No will after unless in standard condition clauses."
       ],
       "highlights": [
         "If it had not been for",
@@ -448,7 +532,7 @@
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.2",
-      "solution_overview": "Practise If it had not been for / But for, keep weren't for versus hadn't been for distinct, and strip will from unless."
+      "solution_overview": "Flat tyre camping plans and a Thursday rehearsal — If it had not been for / But for, weren't for versus hadn't been for, and no will after unless.\n\n**Part 1: What to watch for.**\n\nIf it had not been for + would + V1 mixes past obstacle with present/future-facing result. But for + noun is a compact equivalent. Keep If it weren't for (present) distinct from If it hadn't been for (past). As long as + present can support can; unless must not take will.\n\n**Part 2: How to decide.**\n\nAccept had not been for / But for when the tyre story lands on tonight. Reject was not for + would have as non-standard here. Strip will from unless anyone will complain.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-2-15",
@@ -462,13 +546,19 @@
         "If the coach hadn't been delayed, we wouldn't be queueing now.",
         "Supposing the café closed early, where would we study?"
       ],
-      "answer_key": [false, true, true, true, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Wish + would have is wrong for a present lack; use wish + past simple (had).\n\nTip: Wish I would have… is a classic exam error for present wishes.",
-        "TRUE — Wish + past simple correctly expresses an unreal present desire.\n\nTip: Present wish about states → past simple after wish.",
-        "TRUE — If only + past perfect cause with wouldn't be now is a valid mixed regret linking past delay to present queue.\n\nTip: Past perfect after if only can feed a present would/wouldn't result.",
-        "TRUE — Same mixed pattern with ordinary if instead of if only.\n\nTip: Past unreal cause → present continuous-looking result with would/wouldn't + be + -ing.",
-        "TRUE — Supposing + past simple introduces a second-conditional hypothesis with would in the question.\n\nTip: Supposing / suppose ≈ if for tentative scenarios."
+        "**A) I wish I would have more free evenings.**  (false)\n\nTrap: wish + would have is wrong for a present lack; use wish + past simple (had). Wish I would have… is a classic exam error for present wishes about states.\n\n**Tip:** Present state wish → I wish I had…, not would have.",
+        "**B) I wish I had more free evenings.**  (true)\n\nWish + past simple correctly expresses an unreal present desire about free time. Had is the backshift from present have.\n\n**Tip:** Present wish about states → past simple after wish.",
+        "**C) If only the train hadn't been delayed, we wouldn't be queueing now.**  (true)\n\nIf only + past perfect cause with wouldn't be now is a valid mixed regret linking past delay to present queue. The delay is finished; the queue is happening.\n\n**Tip:** Past perfect after if only can feed a present would/wouldn't result.",
+        "**D) If the coach hadn't been delayed, we wouldn't be queueing now.**  (true)\n\nSame mixed pattern with ordinary if instead of if only. Past unreal cause → present continuous-looking result with wouldn't + be + -ing.\n\n**Tip:** If / if only both allow this past→present mix when times match.",
+        "**E) Supposing the café closed early, where would we study?**  (true)\n\nSupposing + past simple introduces a second-conditional hypothesis with would in the question. Closed + would we study is the tentative-scenario frame.\n\n**Tip:** Supposing / suppose ≈ if for tentative scenarios."
       ],
       "highlights": [
         "wish I would have",
@@ -480,7 +570,7 @@
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.2",
-      "solution_overview": "Kill the wish I would have trap, keep wish + past for present states, and confirm mixed past→present with if / if only plus supposing."
+      "solution_overview": "Free evenings, delayed coaches, and a café that might close — killing wish I would have, keeping mixed past→present, and welcoming supposing.\n\n**Part 1: What to watch for.**\n\nWish I would have… is a classic exam error for present wishes; use wish + past simple (had). If only / if + past perfect can feed a present would/wouldn't be … now result. Supposing + past introduces second-conditional hypotheses with would in the question.\n\n**Part 2: How to decide.**\n\nFor present state wishes, choose had over would have. Accept mixed delay→queue lines with if or if only. Treat supposing like if + past for tentative scenarios.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-2-16",
@@ -494,13 +584,19 @@
         "If so be the weather improves, we will hike.",
         "If need be, we can share taxis after the concert."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Even if + present + will correctly means the result holds despite the condition.\n\nTip: Even if ≠ if; the main clause still follows real-future will here.",
-        "FALSE — Even if + past (were) wants would stay, not will stay.\n\nTip: Match even if tense to the result: past → would; present → will.",
-        "TRUE — Whether or not + present + will correctly says the run happens regardless of rain.\n\nTip: Whether or not = no matter if.",
-        "FALSE — If so be is archaic and not exam-standard; use If the weather improves…\n\nTip: Stick to standard if + present for real futures.",
-        "TRUE — If need be is an accepted fixed phrase meaning if it is necessary, here with can.\n\nTip: If need be is a set idiom; don't \"correct\" it to if needs be in formal keys."
+        "**A) Even if the tickets are expensive, we will still go to the festival.**  (true)\n\nEven if + present + will correctly means the result holds despite the condition. Expense does not block the festival plan.\n\n**Tip:** Even if ≠ if; the main clause can still use real-future will.",
+        "**B) Even if the tickets were free, we will still stay home.**  (false)\n\nTrap: even if + past (were) wants would stay, not will stay. Match even if tense to the result: past → would; present → will.\n\n**Tip:** Were in the even if-clause → would in the result.",
+        "**C) Whether or not it rains, the charity run will start at nine.**  (true)\n\nWhether or not + present + will correctly says the run happens regardless of rain. The start time is fixed either way.\n\n**Tip:** Whether or not = no matter if.",
+        "**D) If so be the weather improves, we will hike.**  (false)\n\nTrap: if so be is archaic and not exam-standard; use If the weather improves… Stick to standard if + present for real futures.\n\n**Tip:** Prefer plain if + present in modern exam English.",
+        "**E) If need be, we can share taxis after the concert.**  (true)\n\nIf need be is an accepted fixed phrase meaning if it is necessary, here with can. Do not \"correct\" it to if needs be in formal keys.\n\n**Tip:** If need be is a set idiom — leave it."
       ],
       "highlights": [
         "Even if the tickets are",
@@ -512,7 +608,7 @@
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.2",
-      "solution_overview": "Cover even if, whether or not, and fixed if need be, while rejecting tense clashes and archaic if so be."
+      "solution_overview": "Festival tickets, a charity run, weather, and taxis — even if, whether or not, and fixed if need be, while rejecting tense clashes and archaic if so be.\n\n**Part 1: What to watch for.**\n\nEven if + present + will means the result holds despite the condition; even if + past wants would, not will. Whether or not + present + will says the plan happens regardless. If so be is archaic; if need be is an accepted idiom.\n\n**Part 2: How to decide.**\n\nMatch even if tense to the result mood. Accept whether or not for rain-proof plans. Prefer standard If the weather improves… over if so be, and leave if need be alone as a set phrase.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-2-17",
@@ -526,13 +622,19 @@
         "If I knew then what I know now, I would have chosen a different module.",
         "If I had known then what I know now, I would have chosen a different module."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — If she were to apply is a formal second-conditional way to mark a hypothetical future step.\n\nTip: If + were to + V1 ≈ unlikely/formal if + past.",
-        "FALSE — Was to have applied mixed with would need now is over-stacked and non-standard for this item.\n\nTip: Prefer clear mixed or third forms; avoid was to have + mismatched results.",
-        "TRUE — Were he to practise… correctly inverts were to for a hypothetical training plan.\n\nTip: Were + subject + to + V1 replaces If + subject + were to.",
-        "FALSE — Knew then is underpowered for a clear past knowledge gap; the standard line uses had known then.\n\nTip: Past counterfactual knowledge → past perfect in the if-clause.",
-        "TRUE — Classic form: past perfect for past ignorance, would have chosen for the past decision.\n\nTip: Had known then… would have + V3 is the polished exam form."
+        "**A) If she were to apply for the scholarship, she would need two references.**  (true)\n\nIf she were to apply is a formal second-conditional way to mark a hypothetical future step. Were to + V1 softens the plan into something remote or tentative.\n\n**Tip:** If + were to + V1 ≈ unlikely/formal if + past.",
+        "**B) If she was to have applied last term, she would need two references now.**  (false)\n\nTrap: was to have applied mixed with would need now is over-stacked and non-standard for this item. Prefer clear mixed or third forms; avoid was to have + mismatched results.\n\n**Tip:** Keep formal keys on clear were to / had + V3 patterns.",
+        "**C) Were he to practise daily, his serve would improve within weeks.**  (true)\n\nWere he to practise… correctly inverts were to for a hypothetical training plan. Same meaning as If he were to practise…\n\n**Tip:** Were + subject + to + V1 replaces If + subject + were to.",
+        "**D) If I knew then what I know now, I would have chosen a different module.**  (false)\n\nTrap: knew then is underpowered for a clear past knowledge gap; the standard line uses had known then. Past counterfactual knowledge → past perfect in the if-clause.\n\n**Tip:** Then + past ignorance → had known, not knew.",
+        "**E) If I had known then what I know now, I would have chosen a different module.**  (true)\n\nClassic form: past perfect for past ignorance, would have chosen for the past decision. This is the polished exam hindsight pattern.\n\n**Tip:** Had known then… would have + V3 is the safe form."
       ],
       "highlights": [
         "were to apply",
@@ -544,7 +646,7 @@
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.2",
-      "solution_overview": "Advanced were to / Were … to inversion and the had known then pattern. Reject tangled was to have stacks and underpowered knew then for past counterfactuals."
+      "solution_overview": "Scholarships, serving practice, and module choices — advanced were to / Were … to inversion and the polished had known then pattern.\n\n**Part 1: What to watch for.**\n\nIf she were to apply is a formal second-conditional hypothetical. Were he to practise… inverts the same idea. Was to have applied stacked with a mismatched result is overcomplicated. Past counterfactual knowledge wants had known then, not underpowered knew then.\n\n**Part 2: How to decide.**\n\nAccept were to / Were … to for formal unlikely steps. Prefer clear mixed or third forms over was to have stacks. Choose If I had known then… would have chosen… for hindsight module regrets.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-2-18",
@@ -558,13 +660,19 @@
         "It's time we leave for the airport.",
         "Suppose you won free concert tickets — what would you do?"
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Would rather + past simple correctly softens a present preference about someone else's behaviour (conditional-adjacent).\n\nTip: I'd rather you + past = polite present preference.",
-        "FALSE — After I'd rather you, use past simple, not present don't.\n\nTip: Same backshift habit as wish: prefer past after I'd rather you.",
-        "TRUE — It's time + past simple is the standard formal pattern for a present urgency.\n\nTip: It's time we left = we should leave now.",
-        "FALSE — Careful exam keys usually want It's time we left, not leave.\n\nTip: It's time + past is the marked formal choice.",
-        "TRUE — Suppose + past + would correctly frames a second-conditional daydream.\n\nTip: Suppose / supposing pattern like if + past."
+        "**A) I'd rather you didn't stream loud videos while I'm revising.**  (true)\n\nWould rather + past simple correctly softens a present preference about someone else's behaviour. Didn't stream is the polite backshift, not a past-time narrative.\n\n**Tip:** I'd rather you + past = polite present preference.",
+        "**B) I'd rather you don't stream loud videos while I'm revising.**  (false)\n\nTrap: after I'd rather you, use past simple, not present don't. Same backshift habit as wish — prefer past after I'd rather you.\n\n**Tip:** I'd rather you didn't…, not don't.",
+        "**C) It's time we left for the airport.**  (true)\n\nIt's time + past simple is the standard formal pattern for present urgency. Left means we should leave now, not that we already departed.\n\n**Tip:** It's time we left = we should leave now.",
+        "**D) It's time we leave for the airport.**  (false)\n\nTrap: careful exam keys usually want It's time we left, not leave. It's time + past is the marked formal choice.\n\n**Tip:** Prefer past after it's time in formal true/false items.",
+        "**E) Suppose you won free concert tickets — what would you do?**  (true)\n\nSuppose + past + would correctly frames a second-conditional daydream. Won + would you do matches if + past + would.\n\n**Tip:** Suppose / supposing pattern like if + past."
       ],
       "highlights": [
         "I'd rather you didn't",
@@ -576,7 +684,7 @@
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.2",
-      "solution_overview": "Extend conditional logic into I'd rather you, it's time + past, and suppose. These share the same backshift instinct as wish and second conditionals."
+      "solution_overview": "Loud videos, airport departures, and free concert tickets — extending conditional logic into I'd rather you, it's time + past, and suppose.\n\n**Part 1: What to watch for.**\n\nI'd rather you + past softens a present preference about someone else's behaviour. It's time + past marks present urgency in careful exam English. Suppose + past + would frames a second-conditional daydream. These share the same backshift instinct as wish and second conditionals.\n\n**Part 2: How to decide.**\n\nReject I'd rather you don't… and It's time we leave… in favour of past forms. Accept Suppose you won… what would you do? as if + past with would.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-2-19",
@@ -590,13 +698,19 @@
         "I wish I could have attended the reunion last month.",
         "Unless having finished the essay, she will not join us."
       ],
-      "answer_key": [true, true, true, true, false],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — First conditional with a real possible macro change and a future lifestyle effect.\n\nTip: Real future → present + will.",
-        "TRUE — Mixed: past unreal storm (Had … not hit) with present result (would still be open).\n\nTip: Negative inversion Had … not + V3 can feed a present would result.",
-        "TRUE — If only + could have + V3 correctly regrets a missed past ability/opportunity.\n\nTip: If only I could have… = past inability regret.",
-        "TRUE — Wish + could have + V3 matches the same past missed opportunity.\n\nTip: Wish I could have… parallels if only for past regrets about ability.",
-        "FALSE — Unless needs a finite clause (Unless she has finished…), not Unless having finished…\n\nTip: Unless + subject + verb; avoid dangling -ing after unless."
+        "**A) If the inflation rate drops, household budgets will feel less pressure next quarter.**  (true)\n\nFirst conditional with a real possible macro change and a future lifestyle effect. Drops is present; will feel is open future.\n\n**Tip:** Real future → present + will.",
+        "**B) Had the storm not hit, the outdoor market would still be open this afternoon.**  (true)\n\nMixed: past unreal storm (Had … not hit) with present result (would still be open). Negative inversion can feed a present would result when this afternoon is the effect time.\n\n**Tip:** Had … not + V3 can pair with present would + V1.",
+        "**C) If only I could have attended the reunion last month.**  (true)\n\nIf only + could have + V3 correctly regrets a missed past ability or opportunity. Last month locks the regret in closed past.\n\n**Tip:** If only I could have… = past inability regret.",
+        "**D) I wish I could have attended the reunion last month.**  (true)\n\nWish + could have + V3 matches the same past missed opportunity. Wish and if only parallel here for past ability regrets.\n\n**Tip:** Wish I could have… parallels if only for past ability regrets.",
+        "**E) Unless having finished the essay, she will not join us.**  (false)\n\nTrap: unless needs a finite clause (Unless she has finished…), not Unless having finished… Avoid a dangling -ing after unless.\n\n**Tip:** Unless + subject + verb; no bare -ing clause."
       ],
       "highlights": [
         "If the inflation rate drops",
@@ -608,7 +722,7 @@
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.2",
-      "solution_overview": "Combine one light economy first conditional, mixed Had-not inversion, wish / if only + could have, and reject non-finite unless having."
+      "solution_overview": "Household budgets, a storm-hit market, a missed reunion, and a dangling unless -ing — advanced first, mixed inversion, and could have regrets.\n\n**Part 1: What to watch for.**\n\nA light economy first conditional stays present + will. Had … not hit can feed a present would still be… result. Wish / if only + could have + V3 regrets missed past ability. Unless needs a finite clause — not Unless having finished…\n\n**Part 2: How to decide.**\n\nAccept real-future inflation → budget relief. Accept negative Had-inversion into a present market result. Parallel if only / wish + could have for last month. Rebuild unless with subject + finite verb.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-2-20",
@@ -622,13 +736,19 @@
         "I'll come cycling with you on Sunday provided the weather will hold.",
         "No sooner had we sat down than the fire alarm would go off."
       ],
-      "answer_key": [true, true, true, false, false],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — It's high time + past simple correctly marks present urgency with the same backshift as wish / it's time.\n\nTip: It's (high) time + past = we should do it now.",
-        "TRUE — Clear first-conditional imperative result: if + present, imperative bring…\n\nTip: Imperatives are fine as first-conditional results.",
-        "TRUE — Provided + present (holds) correctly sets a real weather condition for a future plan with will come.\n\nTip: Provided / providing + present, not will.",
-        "FALSE — Provided the weather will hold wrongly inserts will into the condition.\n\nTip: Same rule as if / as long as: no will in the proviso clause.",
-        "FALSE — No sooner… than needs a simple past result (went off), not conditional would go off.\n\nTip: No sooner is past sequencing, not a conditional frame."
+        "**A) It's high time we booked the campsite.**  (true)\n\nIt's high time + past simple correctly marks present urgency with the same backshift as wish / it's time. Booked means we should book now.\n\n**Tip:** It's (high) time + past = we should do it now.",
+        "**B) If you come to the hike, bring a reusable bottle.**  (true)\n\nClear first-conditional imperative result: if + present, imperative bring… Instructions work fine as first-conditional results.\n\n**Tip:** Imperatives are fine as first-conditional results.",
+        "**C) I'll come cycling with you on Sunday provided the weather holds.**  (true)\n\nProvided + present (holds) correctly sets a real weather condition for a future plan with will come. Holds stays present in the proviso.\n\n**Tip:** Provided / providing + present, not will.",
+        "**D) I'll come cycling with you on Sunday provided the weather will hold.**  (false)\n\nTrap: provided the weather will hold wrongly inserts will into the condition. Same rule as if / as long as: no will in the proviso clause.\n\n**Tip:** Strip will from provided clauses.",
+        "**E) No sooner had we sat down than the fire alarm would go off.**  (false)\n\nTrap: no sooner… than needs a simple past result (went off), not conditional would go off. No sooner is past sequencing, not a conditional frame.\n\n**Tip:** No sooner… than + past simple — leave would out."
       ],
       "highlights": [
         "It's high time we booked",
@@ -640,7 +760,7 @@
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.2",
-      "solution_overview": "Finish with it's high time, imperative first conditionals, and provided + present, while rejecting will after provided and would forced onto a no sooner sequence."
+      "solution_overview": "Campsite booking, hike bottles, Sunday cycling, and a fire alarm — it's high time, imperative first conditionals, provided + present, and a no sooner false friend.\n\n**Part 1: What to watch for.**\n\nIt's high time + past marks present urgency. First conditionals may use an imperative result (bring…). Provided takes present, not will. No sooner… than is past sequencing with simple past (went off), not conditional would go off.\n\n**Part 2: How to decide.**\n\nAccept booked / bring / holds as clean backshift, imperative, and proviso patterns. Reject will after provided. Do not force would onto a no sooner narrative.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
     }
   ]
 }

@@ -14,19 +14,31 @@
         "The coach approved an plan for the relay team.",
         "Please send me an email with the rehearsal times."
       ],
-      "answer_key": [false, true, false, false, true],
-      "tactical_explanations": [
-        "FALSE — \"Apple\" begins with a vowel sound, so English needs \"an apple,\" not \"a apple.\"\n\nTip: Match a/an to the sound that follows, not just the first letter on the page.",
-        "TRUE — \"Umbrella\" starts with a vowel sound, so \"an umbrella\" is the correct first-mention form.\n\nTip: First mention of one countable thing usually takes a/an — but only the matching form.",
-        "FALSE — \"New\" begins with a consonant sound (/n/), so English needs \"a new bicycle,\" not \"an new bicycle.\"\n\nTip: Adjectives do not change the a/an rule — listen to the sound right after a/an.",
-        "FALSE — \"Plan\" begins with a consonant sound, so use \"a plan,\" not \"an plan.\"\n\nTip: The rest of the sentence can stay; only the form before plan is wrong.",
-        "TRUE — \"Email\" begins with a vowel sound (/iː/), so \"an email\" is correct.\n\nTip: Say the next word aloud; if it starts with a vowel sound, use an."
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
       ],
-      "highlights": ["a apple", "an umbrella", "an new bicycle", "an plan", "an email"],
+      "tactical_explanations": [
+        "**A) She packed a apple in her lunchbox for the hike.**  (false)\n\nTrap: \"apple\" begins with a vowel sound, so English needs \"an apple,\" not \"a apple.\" Repair it to \"an apple\" and leave the rest of the lunchbox sentence alone. Matching a/an to the letter you see instead of the sound you hear is the classic mistake here.\n\n**Tip:** Match a/an to the sound that follows, not just the first letter on the page.",
+        "**B) He bought an umbrella before the outdoor concert.**  (true)\n\n\"Umbrella\" starts with a vowel sound, so \"an umbrella\" is the correct first-mention form. The sentence introduces one countable item before the concert, which is exactly where a/an belongs. Nothing else in the line needs fixing.\n\n**Tip:** First mention of one countable thing usually takes a/an — but only the matching form.",
+        "**C) We need an new bicycle for the weekend trip.**  (false)\n\nTrap: \"new\" begins with a consonant sound (/n/), so English needs \"a new bicycle,\" not \"an new bicycle.\" The adjective does not change the a/an rule — you still listen to the sound right after a/an. Repair only the article before new.\n\n**Tip:** Adjectives do not change the a/an rule — listen to the sound right after a/an.",
+        "**D) The coach approved an plan for the relay team.**  (false)\n\nTrap: \"plan\" begins with a consonant sound, so use \"a plan,\" not \"an plan.\" The coach, the approval, and the relay team can stay exactly as written; only the form before plan is wrong. Think consonant sound → a.\n\n**Tip:** The rest of the sentence can stay; only the form before plan is wrong.",
+        "**E) Please send me an email with the rehearsal times.**  (true)\n\n\"Email\" begins with a vowel sound (/iː/), so \"an email\" is correct. Saying the next word aloud confirms the vowel onset immediately. This is a clean, standard first-mention pattern.\n\n**Tip:** Say the next word aloud; if it starts with a vowel sound, use an."
+      ],
+      "highlights": [
+        "a apple",
+        "an umbrella",
+        "an new bicycle",
+        "an plan",
+        "an email"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.9",
-      "solution_overview": "This set is about choosing a versus an before a singular countable noun. Listen for vowel versus consonant sounds right after the determiner, including when an adjective comes first."
+      "solution_overview": "You are packing lunch, shopping for outdoor gear, and emailing rehearsal times — everyday scenes where a and an sit right before a singular countable noun.\n\n**Part 1: What to watch for.**\n\nThis task is only about matching a versus an to the sound that follows, not to the first letter on the page. An adjective between the article and the noun still counts: listen to the first sound of that adjective. First-mention countable nouns take a/an; the wrong shape of that article is what makes a line fail.\n\n**Part 2: How to decide.**\n\nSay the word right after a/an aloud. If it starts with a vowel sound, choose an; if it starts with a consonant sound, choose a. Spelling alone (apple, umbrella, email, new, plan) can mislead you — sound wins every time.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-9-02",
@@ -40,19 +52,31 @@
         "We reserved an hotel near the festival grounds.",
         "He is an university student in biology."
       ],
-      "answer_key": [true, true, false, false, false],
-      "tactical_explanations": [
-        "TRUE — \"Honest\" starts with a silent h, so the spoken form begins with a vowel sound and takes \"an.\"\n\nTip: Silent letters still decide a/an by sound, not spelling.",
-        "TRUE — \"European\" begins with a /j/ sound (like \"you\"), which counts as a consonant sound, so \"a European\" is correct.\n\nTip: Eu- and u- words often take a when they sound like they start with \"y.\"",
-        "FALSE — \"MBA\" is normally read letter by letter, starting with /em/, a vowel sound, so it needs \"an MBA.\"\n\nTip: With abbreviations, base a/an on how you pronounce the first letter.",
-        "FALSE — In standard modern pronunciation, \"hotel\" keeps the /h/, so \"a hotel\" is the usual form, not \"an hotel.\"\n\nTip: Prefer a before clearly sounded h- words in contemporary English.",
-        "FALSE — \"University\" starts with a /j/ sound, so the correct form is \"a university student.\"\n\nTip: If you can hear a \"y\" glide at the start, choose a."
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
       ],
-      "highlights": ["an honest", "a European", "a MBA", "an hotel", "an university"],
+      "tactical_explanations": [
+        "**A) The guide asked for an honest answer about the trail conditions.**  (true)\n\n\"Honest\" starts with a silent h, so the spoken form begins with a vowel sound and takes \"an.\" The spelling still shows h, which is why this feels like a trap until you hear it. Silent letters decide a/an by sound, not by the letters you see.\n\n**Tip:** Silent letters still decide a/an by sound, not spelling.",
+        "**B) They hired a European tutor for their French exchange.**  (true)\n\n\"European\" begins with a /j/ sound (like \"you\"), which counts as a consonant sound, so \"a European\" is correct. The eu- spelling looks vowel-first, but the glide at the start blocks an. Treat that \"y\" onset like any other consonant sound.\n\n**Tip:** Eu- and u- words often take a when they sound like they start with \"y.\"",
+        "**C) She completed a MBA while volunteering at the library.**  (false)\n\nTrap: \"MBA\" is normally read letter by letter, starting with /em/, a vowel sound, so it needs \"an MBA.\" Repair \"a MBA\" to \"an MBA\"; the volunteering clause can stay. With abbreviations, base a/an on how you pronounce the first letter name.\n\n**Tip:** With abbreviations, base a/an on how you pronounce the first letter.",
+        "**D) We reserved an hotel near the festival grounds.**  (false)\n\nTrap: In standard modern pronunciation, \"hotel\" keeps the /h/, so \"a hotel\" is the usual form, not \"an hotel.\" Prefer a before clearly sounded h-words in contemporary English. Older \"an hotel\" usage is not the safe exam default here.\n\n**Tip:** Prefer a before clearly sounded h- words in contemporary English.",
+        "**E) He is an university student in biology.**  (false)\n\nTrap: \"University\" starts with a /j/ sound, so the correct form is \"a university student.\" If you can hear a \"y\" glide at the start, choose a — the written u does not unlock an. Repair only the article before university.\n\n**Tip:** If you can hear a \"y\" glide at the start, choose a."
+      ],
+      "highlights": [
+        "an honest",
+        "a European",
+        "a MBA",
+        "an hotel",
+        "an university"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.9",
-      "solution_overview": "These sentences turn on sound, not spelling. Silent h, letter names in abbreviations, and the \"y\" glide in words like European and university are the traps to watch."
+      "solution_overview": "Trail talk, a French exchange tutor, an MBA, a hotel near the festival, and a biology student: the same a/an choice, but sound and spelling pull in different directions.\n\n**Part 1: What to watch for.**\n\nThese lines turn on pronunciation traps — silent h, the \"y\" glide in European and university, letter-name openings in abbreviations, and whether hotel keeps a sounded /h/. Spelling is only a hint; the spoken onset decides a versus an.\n\n**Part 2: How to decide.**\n\nSay the next word (or abbreviation) the way you would in careful speech. Silent letters, initialisms starting with vowel-letter names, and /j/-glides are the three places people guess wrong — check those first on every line.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-9-03",
@@ -66,19 +90,31 @@
         "Could you pass me a salt from the tray?",
         "They opened an café on the corner last spring."
       ],
-      "answer_key": [true, false, true, false, false],
-      "tactical_explanations": [
-        "TRUE — First mention uses \"a novel\"; the second mention switches to \"the novel\" because the same book is now identified.\n\nTip: a/an introduces; the points back to something already specified.",
-        "FALSE — In this situation the window is a specific one in the room, so English expects \"the window,\" not \"a window.\"\n\nTip: When both speakers can identify the thing, prefer the.",
-        "TRUE — Roles after \"as\" commonly take a/an for one role among many: \"as a junior soprano.\"\n\nTip: Occupations and roles usually need a/an in this pattern.",
-        "FALSE — At the table, \"salt\" is a specific shared item, so \"the salt\" is the natural choice.\n\nTip: Shared, obvious objects in the immediate setting take the.",
-        "FALSE — \"Café\" begins with a consonant sound (/k/), so use \"a café,\" not \"an café.\"\n\nTip: Spelling with a vowel letter does not override a consonant sound."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
       ],
-      "highlights": ["a novel yesterday; the novel", "a window", "as a junior soprano", "a salt", "an café"],
+      "tactical_explanations": [
+        "**A) I read a novel yesterday; the novel kept me awake until dawn.**  (true)\n\nFirst mention uses \"a novel\"; the second mention switches to \"the novel\" because the same book is now identified. That a → the handoff is exactly how English tracks reference across two clauses. Nothing in the chain is accidental.\n\n**Tip:** a/an introduces; the points back to something already specified.",
+        "**B) Please close a window; it is freezing in here.**  (false)\n\nTrap: In this situation the window is a specific one in the room, so English expects \"the window,\" not \"a window.\" When both speakers can identify the thing from context, prefer the. Repair to \"Please close the window…\"\n\n**Tip:** When both speakers can identify the thing, prefer the.",
+        "**C) She joined the choir as a junior soprano in 2022.**  (true)\n\nRoles after \"as\" commonly take a/an for one role among many: \"as a junior soprano.\" The choir is already definite with the, and the role is introduced as a class member with a. Occupations and voice parts follow this pattern cleanly.\n\n**Tip:** Occupations and roles usually need a/an in this pattern.",
+        "**D) Could you pass me a salt from the tray?**  (false)\n\nTrap: At the table, \"salt\" is a specific shared item, so \"the salt\" is the natural choice. Shared, obvious objects in the immediate setting take the, not a. Repair to \"pass me the salt from the tray.\"\n\n**Tip:** Shared, obvious objects in the immediate setting take the.",
+        "**E) They opened an café on the corner last spring.**  (false)\n\nTrap: \"Café\" begins with a consonant sound (/k/), so use \"a café,\" not \"an café.\" A vowel letter in the spelling does not override a consonant sound. Repair only the article before café.\n\n**Tip:** Spelling with a vowel letter does not override a consonant sound."
+      ],
+      "highlights": [
+        "a novel yesterday; the novel",
+        "a window",
+        "as a junior soprano",
+        "a salt",
+        "an café"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.9",
-      "solution_overview": "Focus on whether the noun is newly introduced or already clear to both speakers. First mention and shared, obvious objects follow different patterns."
+      "solution_overview": "A novel at midnight, a freezing room, a choir role, salt on the tray, and a corner café — these lines mix first mention, shared objects, roles, and one a/an sound trap.\n\n**Part 1: What to watch for.**\n\nFocus on whether the noun is newly introduced or already clear to both speakers. First mention often takes a/an; a second mention of the same thing switches to the. Shared, obvious objects in the immediate setting also prefer the, while roles after \"as\" commonly keep a/an.\n\n**Part 2: How to decide.**\n\nAsk: Can both people already point to this exact thing? If yes, lean toward the. If the noun is one of a class being introduced — including a role among many — lean toward a/an. Then double-check café-type sound matches so a misspelled an does not sneak through.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-9-04",
@@ -92,19 +128,31 @@
         "This is same recipe we used last winter.",
         "He is the tallest player on the school team."
       ],
-      "answer_key": [true, false, false, false, true],
-      "tactical_explanations": [
-        "TRUE — Unique celestial bodies take \"the\": \"the sun.\" The runners are also definite in context.\n\nTip: One-of-a-kind referents almost always need the.",
-        "FALSE — \"Moon\" in this sense needs \"the moon\"; leaving it bare is not standard.\n\nTip: Pair the with unique natural landmarks and celestial objects.",
-        "FALSE — \"Only\" before a singular noun requires \"the only person.\"\n\nTip: Patterns with only, same, next, and last usually need the.",
-        "FALSE — The fixed pattern is \"the same recipe,\" not bare \"same recipe.\"\n\nTip: \"Same\" almost never stands without the in this use.",
-        "TRUE — Superlative forms take \"the\": \"the tallest player.\"\n\nTip: If you see -est or most + adjective for a unique ranking, expect the."
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
       ],
-      "highlights": ["The sun", "Moon looks", "only person", "same recipe", "the tallest"],
+      "tactical_explanations": [
+        "**A) The sun was still low when the runners started.**  (true)\n\nUnique celestial bodies take \"the\": \"the sun.\" The runners are also definite in this race context, so the before runners fits as well. One-of-a-kind natural referents almost always need the.\n\n**Tip:** One-of-a-kind referents almost always need the.",
+        "**B) Moon looks unusually bright tonight over the harbour.**  (false)\n\nTrap: \"Moon\" in this sense needs \"the moon\"; leaving it bare is not standard. Pair the with unique natural landmarks and celestial objects the same way you do with the sun. Repair to \"The moon looks unusually bright…\"\n\n**Tip:** Pair the with unique natural landmarks and celestial objects.",
+        "**C) She is only person who finished the crossword.**  (false)\n\nTrap: \"Only\" before a singular noun requires \"the only person.\" Patterns with only, same, next, and last usually need the locked in before the noun. Repair to \"the only person who finished the crossword.\"\n\n**Tip:** Patterns with only, same, next, and last usually need the.",
+        "**D) This is same recipe we used last winter.**  (false)\n\nTrap: The fixed pattern is \"the same recipe,\" not bare \"same recipe.\" \"Same\" almost never stands without the in this comparative use. Insert the before same and the relative clause can stay.\n\n**Tip:** \"Same\" almost never stands without the in this use.",
+        "**E) He is the tallest player on the school team.**  (true)\n\nSuperlative forms take \"the\": \"the tallest player.\" If you see -est (or most + adjective) for a unique ranking in a set, expect the. The school-team frame makes that unique ranking clear.\n\n**Tip:** If you see -est or most + adjective for a unique ranking, expect the."
+      ],
+      "highlights": [
+        "The sun",
+        "Moon looks",
+        "only person",
+        "same recipe",
+        "the tallest"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.9",
-      "solution_overview": "Unique things, superlatives, and words like only and same strongly prefer the. Check whether the noun points to one identifiable item in the world or in the set."
+      "solution_overview": "Sunrise races, a bright harbour moon, a crossword finisher, a winter recipe, and a school-team ranking — these lines hunt for the with unique, exclusive, or superlative reference.\n\n**Part 1: What to watch for.**\n\nUnique things (the sun, the moon), superlatives (the tallest), and words like only and same strongly prefer the. The noun must point to one identifiable item in the world or in a set; if that exclusivity marker is missing the, the line fails.\n\n**Part 2: How to decide.**\n\nScan for uniqueness markers first: celestial one-offs, only, same, and -est / most rankings. If you see one of those, expect the before the noun. Bare Moon, only person, or same recipe without the is almost always the error.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-9-05",
@@ -118,19 +166,31 @@
         "The lab ordered new equipment for the science fair.",
         "They bought an furniture for the guest room."
       ],
-      "answer_key": [true, false, false, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Advice\" is uncountable, so it appears with zero article here and is modified by \"useful,\" not by a/an.\n\nTip: Uncountable abstract nouns often take zero article when used in a general sense.",
-        "FALSE — \"Advice\" cannot take \"an\"; say \"some advice\" or \"a piece of advice.\"\n\nTip: If you need a countable unit, use a piece/bit/item of + uncountable noun.",
-        "FALSE — \"Information\" has no plural form in standard English; use \"more information,\" not \"informations.\"\n\nTip: Watch for false plurals on uncountable nouns.",
-        "TRUE — \"Equipment\" is uncountable and correctly appears without a/an; \"new\" simply describes the mass noun.\n\nTip: Zero article + adjective + uncountable noun is a common correct pattern.",
-        "FALSE — \"Furniture\" is uncountable, so \"an furniture\" is impossible; use \"furniture\" or \"a piece of furniture.\"\n\nTip: Do not place a/an directly before classic uncountables like furniture, equipment, or advice."
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
       ],
-      "highlights": ["useful advice", "an advice", "informations", "new equipment", "an furniture"],
+      "tactical_explanations": [
+        "**A) The hikers received useful advice from the ranger.**  (true)\n\n\"Advice\" is uncountable, so it appears with zero article here and is modified by \"useful,\" not by a/an. Uncountable abstract nouns often take zero article when used in a general sense. The line models the pattern you want to protect.\n\n**Tip:** Uncountable abstract nouns often take zero article when used in a general sense.",
+        "**B) She gave me an advice about packing for cold weather.**  (false)\n\nTrap: \"Advice\" cannot take \"an\"; say \"some advice\" or \"a piece of advice.\" If you need a countable unit, use a piece/bit/item of + the uncountable noun. Specific packing tips still do not unlock an advice.\n\n**Tip:** If you need a countable unit, use a piece/bit/item of + uncountable noun.",
+        "**C) We still need more informations before we choose a route.**  (false)\n\nTrap: \"Information\" has no plural form in standard English; use \"more information,\" not \"informations.\" Watch for false plurals on uncountable nouns — the -s ending is the whole problem here. Keep more and drop the illegal plural.\n\n**Tip:** Watch for false plurals on uncountable nouns.",
+        "**D) The lab ordered new equipment for the science fair.**  (true)\n\n\"Equipment\" is uncountable and correctly appears without a/an; \"new\" simply describes the mass noun. Zero article + adjective + uncountable noun is a common correct pattern. The science-fair purpose does not suddenly make equipment countable.\n\n**Tip:** Zero article + adjective + uncountable noun is a common correct pattern.",
+        "**E) They bought an furniture for the guest room.**  (false)\n\nTrap: \"Furniture\" is uncountable, so \"an furniture\" is impossible; use \"furniture\" or \"a piece of furniture.\" Do not place a/an directly before classic uncountables like furniture, equipment, or advice. Strip an, or quantify with a piece of.\n\n**Tip:** Do not place a/an directly before classic uncountables like furniture, equipment, or advice."
+      ],
+      "highlights": [
+        "useful advice",
+        "an advice",
+        "informations",
+        "new equipment",
+        "an furniture"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.9",
-      "solution_overview": "Uncountable nouns reject a/an and usually reject plural -s. Prefer zero article for general reference, or a quantifying phrase such as a piece of when you need a unit."
+      "solution_overview": "Ranger tips, packing advice, route information, science-fair equipment, and guest-room furniture — classic uncountable nouns that push back against a/an and false plurals.\n\n**Part 1: What to watch for.**\n\nUncountable nouns reject a/an and usually reject plural -s. General reference prefers zero article (useful advice, new equipment), while a quantifying phrase such as a piece of is the way to carve out a unit when you need one.\n\n**Part 2: How to decide.**\n\nAsk whether the noun is a mass/abstract (advice, information, equipment, furniture). If yes, ban a/an directly before it and check plural endings too. Prefer zero article for general talk, or a piece/bit/item of when you need a countable unit.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-9-06",
@@ -144,19 +204,31 @@
         "We lack an evidence to support that claim.",
         "Traffic was heavy on the way to the airport."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — \"Progress\" is uncountable and correctly used with zero article for a general process underway.\n\nTip: Zero article is normal with progress, research, and similar abstracts.",
-        "FALSE — \"News\" is uncountable and takes a singular verb: \"The news was surprising.\" The determiner \"the\" can stay; the verb must agree.\n\nTip: \"News\" looks plural but behaves as singular.",
-        "TRUE — General research findings use zero article: \"Research shows…\"\n\nTip: When you mean research as a field or body of work in general, omit a/the.",
-        "FALSE — \"Evidence\" is uncountable, so \"an evidence\" is wrong; use \"evidence\" or \"a piece of evidence.\"\n\nTip: Specificity does not make evidence countable with a/an.",
-        "TRUE — \"Traffic\" is uncountable and takes zero article in this general statement about conditions.\n\nTip: Mass nouns for weather, traffic, and similar conditions usually need no a/an."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["Progress on", "news were", "Research shows", "an evidence", "Traffic was"],
+      "tactical_explanations": [
+        "**A) Progress on the mural has been slower than expected.**  (true)\n\n\"Progress\" is uncountable and correctly used with zero article for a general process underway. Zero article is normal with progress, research, and similar abstracts. The mural phrase narrows topic without forcing a/an.\n\n**Tip:** Zero article is normal with progress, research, and similar abstracts.",
+        "**B) The news were surprising for the whole neighbourhood.**  (false)\n\nTrap: \"News\" is uncountable and takes a singular verb: \"The news was surprising.\" The determiner \"the\" can stay; the verb must agree. \"News\" looks plural but behaves as singular — that mismatch is the whole trap.\n\n**Tip:** \"News\" looks plural but behaves as singular.",
+        "**C) Research shows that morning light can improve mood.**  (true)\n\nGeneral research findings use zero article: \"Research shows…\" When you mean research as a field or body of work in general, omit a/the. The that-clause content does not change the bare subject pattern.\n\n**Tip:** When you mean research as a field or body of work in general, omit a/the.",
+        "**D) We lack an evidence to support that claim.**  (false)\n\nTrap: \"Evidence\" is uncountable, so \"an evidence\" is wrong; use \"evidence\" or \"a piece of evidence.\" Specificity about a claim does not make evidence countable with a/an. Drop an, or quantify with a piece of.\n\n**Tip:** Specificity does not make evidence countable with a/an.",
+        "**E) Traffic was heavy on the way to the airport.**  (true)\n\n\"Traffic\" is uncountable and takes zero article in this general statement about conditions. Mass nouns for weather, traffic, and similar conditions usually need no a/an. The airport trip supplies setting, not a countable unit.\n\n**Tip:** Mass nouns for weather, traffic, and similar conditions usually need no a/an."
+      ],
+      "highlights": [
+        "Progress on",
+        "news were",
+        "Research shows",
+        "an evidence",
+        "Traffic was"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.9",
-      "solution_overview": "Several everyday nouns are uncountable even when they end in -s or feel countable. Keep zero article for general reference and avoid a/an before evidence, progress, and traffic."
+      "solution_overview": "A mural's progress, neighbourhood news, mood research, courtroom-style evidence, and airport traffic — everyday mass nouns that look countable until agreement or a/an goes wrong.\n\n**Part 1: What to watch for.**\n\nSeveral everyday nouns are uncountable even when they end in -s or feel countable. Keep zero article for general reference and avoid a/an before evidence, progress, and traffic. News takes singular agreement despite its plural look.\n\n**Part 2: How to decide.**\n\nTest number first: news/progress/research/evidence/traffic usually refuse plural verbs and refuse a/an as a direct determiner. Prefer zero article for general statements; allow the when a specific body of news is framed, but still keep singular was, not were.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-9-07",
@@ -170,19 +242,31 @@
         "She drinks the coffee every morning before class.",
         "Teachers should explain key ideas carefully."
       ],
-      "answer_key": [true, true, true, false, true],
-      "tactical_explanations": [
-        "TRUE — Plural nouns in a general sense take zero article: \"Children need…\"\n\nTip: General plurals usually omit the.",
-        "TRUE — Here \"the neighbours\" can refer to the known people next door, so the is acceptable and natural.\n\nTip: The + plural is fine when the group is definite in context.",
-        "TRUE — Uncountable \"water\" used generically takes zero article.\n\nTip: Materials and substances in general statements often need no determiner.",
-        "FALSE — Habitual general coffee-drinking uses zero article: \"She drinks coffee every morning,\" not \"the coffee,\" unless a specific coffee is meant.\n\nTip: Do not force the onto uncountables used in a general habitual sense.",
-        "TRUE — Plural \"Teachers\" in a general professional statement correctly takes zero article.\n\nTip: Job-title plurals meaning \"teachers in general\" stay bare."
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
       ],
-      "highlights": ["Children need", "The neighbours", "Water is", "the coffee every", "Teachers should"],
+      "tactical_explanations": [
+        "**A) Children need clear routines at home.**  (true)\n\nPlural nouns in a general sense take zero article: \"Children need…\" General plurals usually omit the because no definite set of kids has been named. The home setting stays general too.\n\n**Tip:** General plurals usually omit the.",
+        "**B) The neighbours expect quieter evenings during exam week.**  (true)\n\nHere \"the neighbours\" can refer to the known people next door, so the is acceptable and natural. The + plural is fine when the group is definite in context. Exam week just supplies the time frame.\n\n**Tip:** The + plural is fine when the group is definite in context.",
+        "**C) Water is still scarce after the long drought.**  (true)\n\nUncountable \"water\" used generically takes zero article. Materials and substances in general statements often need no determiner. The drought explains why, without turning water into a definite bottle or tap.\n\n**Tip:** Materials and substances in general statements often need no determiner.",
+        "**D) She drinks the coffee every morning before class.**  (false)\n\nTrap: Habitual general coffee-drinking uses zero article: \"She drinks coffee every morning,\" not \"the coffee,\" unless a specific coffee is meant. Do not force the onto uncountables used in a general habitual sense. Repair by dropping the before coffee.\n\n**Tip:** Do not force the onto uncountables used in a general habitual sense.",
+        "**E) Teachers should explain key ideas carefully.**  (true)\n\nPlural \"Teachers\" in a general professional statement correctly takes zero article. Job-title plurals meaning \"teachers in general\" stay bare. The advice is about the profession as a class, not one named staff list.\n\n**Tip:** Job-title plurals meaning \"teachers in general\" stay bare."
+      ],
+      "highlights": [
+        "Children need",
+        "The neighbours",
+        "Water is",
+        "the coffee every",
+        "Teachers should"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.9",
-      "solution_overview": "General plurals and general uncountables prefer zero article. Use the only when the group or substance is already limited to a known set."
+      "solution_overview": "Kids' routines, quieter exam-week evenings, scarce water, morning coffee, and careful teachers — general plurals and general uncountables versus a forced the.\n\n**Part 1: What to watch for.**\n\nGeneral plurals and general uncountables prefer zero article. Use the only when the group or substance is already limited to a known set. Habitual coffee as a substance is bare; the coffee usually means a specific brew already identified.\n\n**Part 2: How to decide.**\n\nFor each plural or mass noun, ask whether the speaker means \"in general\" or \"this known set.\" General → usually zero (Children, Water, Teachers). Known neighbours next door → the neighbours is fine. Habitual substance use → drop the unless a specific serving is meant.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-9-08",
@@ -196,19 +280,31 @@
         "I usually go to the home after the evening class.",
         "We went to school together in the same district."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — Fixed patterns \"go to work\" and \"by bus\" both use zero article.\n\nTip: Memorise by + transport and go to work/school/bed as zero-article chunks.",
-        "FALSE — The transport pattern is \"by train,\" not \"by a train.\"\n\nTip: After by for means of transport, do not insert a/an.",
-        "TRUE — \"By courier\" follows the same zero-article transport/delivery pattern.\n\nTip: By + service/means is typically bare.",
-        "FALSE — The fixed expression is \"go home,\" never \"go to the home\" in this meaning.\n\nTip: Home after go/arrive/get normally takes no to and no the.",
-        "TRUE — \"Go to school\" with zero article means attendance as a student, which fits this sentence.\n\nTip: Purpose-of-institution uses often drop the."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["to work by bus", "by a train", "by courier", "to the home", "to school"],
+      "tactical_explanations": [
+        "**A) He goes to work by bus on most weekdays.**  (true)\n\nFixed patterns \"go to work\" and \"by bus\" both use zero article. Memorise by + transport and go to work/school/bed as zero-article chunks. The weekday habit fits the institutional-purpose reading perfectly.\n\n**Tip:** Memorise by + transport and go to work/school/bed as zero-article chunks.",
+        "**B) She travelled to Lisbon by a train last Friday.**  (false)\n\nTrap: The transport pattern is \"by train,\" not \"by a train.\" After by for means of transport, do not insert a/an. Repair to \"by train last Friday\" and keep Lisbon as the destination.\n\n**Tip:** After by for means of transport, do not insert a/an.",
+        "**C) They sent the parcels by courier overnight.**  (true)\n\n\"By courier\" follows the same zero-article transport/delivery pattern. By + service/means is typically bare. The parcels can stay definite with the; the means phrase still stays bare.\n\n**Tip:** By + service/means is typically bare.",
+        "**D) I usually go to the home after the evening class.**  (false)\n\nTrap: The fixed expression is \"go home,\" never \"go to the home\" in this meaning. Home after go/arrive/get normally takes no to and no the. Repair to \"go home after the evening class.\"\n\n**Tip:** Home after go/arrive/get normally takes no to and no the.",
+        "**E) We went to school together in the same district.**  (true)\n\n\"Go to school\" with zero article means attendance as a student, which fits this sentence. Purpose-of-institution uses often drop the. The same district just locates that shared schooling.\n\n**Tip:** Purpose-of-institution uses often drop the."
+      ],
+      "highlights": [
+        "to work by bus",
+        "by a train",
+        "by courier",
+        "to the home",
+        "to school"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.9",
-      "solution_overview": "Several high-frequency chunks freeze the determiner choice: by bus/train, go to work/school, and go home. Treat them as fixed patterns rather than building them word by word."
+      "solution_overview": "Commuting by bus, a Friday train to Lisbon, overnight courier parcels, going home after class, and schooling in the same district — frozen chunks where articles do not follow ordinary logic.\n\n**Part 1: What to watch for.**\n\nSeveral high-frequency chunks freeze the determiner choice: by bus/train, go to work/school, and go home. Treat them as fixed patterns rather than building them word by word with \"logical\" a/the.\n\n**Part 2: How to decide.**\n\nWhenever you see by + transport or go to work/school/home, recall the memorised frame first. by train stays bare; go home drops both to and the in this meaning; go to school (attendance) stays bare. If someone inserted a or the inside those frames, that is usually the fault.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-9-09",
@@ -222,19 +318,31 @@
         "The prison on the hill dates from the nineteenth century.",
         "She stayed in bed until noon because of a migraine."
       ],
-      "answer_key": [true, true, false, true, true],
-      "tactical_explanations": [
-        "TRUE — British English uses zero article in \"in hospital\" when the person is there as a patient.\n\nTip: Purpose (patient/prisoner/student) often means zero article with the institution.",
-        "TRUE — When the building itself is meant as a location landmark, \"the hospital\" is correct.\n\nTip: Switch to the when you mean the building, not the institutional purpose.",
-        "FALSE — As inmates, the natural British pattern is \"in prison,\" not \"in the prison.\"\n\nTip: Purpose reading → zero; building reading → the.",
-        "TRUE — Referring to a specific building as a landmark correctly takes \"the prison.\"\n\nTip: Physical description and location cues usually signal the building reading.",
-        "TRUE — \"In bed\" for resting/sleeping takes zero article in the standard idiom.\n\nTip: In bed / in church / in hospital follow the same purpose logic."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
       ],
-      "highlights": ["in hospital", "the hospital", "in the prison", "The prison on", "in bed"],
+      "tactical_explanations": [
+        "**A) Her brother is still in hospital after the operation.**  (true)\n\nBritish English uses zero article in \"in hospital\" when the person is there as a patient. Purpose (patient/prisoner/student) often means zero article with the institution. The operation supplies why without turning the phrase into a building tour.\n\n**Tip:** Purpose (patient/prisoner/student) often means zero article with the institution.",
+        "**B) We drove past the hospital on our way to the lake.**  (true)\n\nWhen the building itself is meant as a location landmark, \"the hospital\" is correct. Switch to the when you mean the building, not the institutional purpose. The lake trip makes the physical pass-by reading obvious.\n\n**Tip:** Switch to the when you mean the building, not the institutional purpose.",
+        "**C) Three activists are in the prison for peaceful protest.**  (false)\n\nTrap: As inmates, the natural British pattern is \"in prison,\" not \"in the prison.\" Purpose reading → zero; building reading → the. Repair to \"in prison for peaceful protest.\"\n\n**Tip:** Purpose reading → zero; building reading → the.",
+        "**D) The prison on the hill dates from the nineteenth century.**  (true)\n\nReferring to a specific building as a landmark correctly takes \"the prison.\" Physical description and location cues usually signal the building reading. Nineteenth-century dating is about the structure, not inmate status.\n\n**Tip:** Physical description and location cues usually signal the building reading.",
+        "**E) She stayed in bed until noon because of a migraine.**  (true)\n\n\"In bed\" for resting/sleeping takes zero article in the standard idiom. In bed / in church / in hospital follow the same purpose logic. The migraine explains the stay without adding the.\n\n**Tip:** In bed / in church / in hospital follow the same purpose logic."
+      ],
+      "highlights": [
+        "in hospital",
+        "the hospital",
+        "in the prison",
+        "The prison on",
+        "in bed"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.9",
-      "solution_overview": "Institution nouns flip between zero article (purpose: patient, prisoner) and the (the building as a place). Read the sentence for purpose versus physical location."
+      "solution_overview": "Post-operation recovery, driving past a hospital, activists and a hillside prison, and a migraine day in bed — institution nouns flipping between purpose and building.\n\n**Part 1: What to watch for.**\n\nInstitution nouns flip between zero article (purpose: patient, prisoner) and the (the building as a place). British in hospital / in prison for purpose contrasts with the hospital / the prison as landmarks. In bed for resting follows the same purpose logic.\n\n**Part 2: How to decide.**\n\nRead each line for purpose versus physical location. Patient/inmate/resting readings → usually zero (in hospital, in prison, in bed). Landmark or building description → the. If activists are \"in\" as inmates, strip the; if the prison sits on a hill as a place, keep the.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-9-10",
@@ -248,19 +356,31 @@
         "I watched a television until midnight after the film.",
         "She is learning the violin with a private tutor."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — Musical instruments take \"the\" in this general ability/habit pattern: \"play the piano.\"\n\nTip: play + the + instrument is the default.",
-        "FALSE — Sports use zero article: \"play football,\" not \"play the football.\"\n\nTip: Contrast instruments (the) with sports and games (zero).",
-        "TRUE — \"Listen to the radio\" is the standard pattern for the medium.\n\nTip: the radio / the news are common fixed media patterns.",
-        "FALSE — Habitual or general TV watching is \"watch television,\" not \"watch a television,\" unless you mean one physical set.\n\nTip: Medium versus device: medium often takes zero; a specific device can take a/the.",
-        "TRUE — \"Learn the violin\" follows the same instrument rule as play the piano.\n\nTip: Keep the with named instruments after play/learn."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["the piano", "the football", "the radio", "a television", "the violin"],
+      "tactical_explanations": [
+        "**A) She plays the piano at family gatherings.**  (true)\n\nMusical instruments take \"the\" in this general ability/habit pattern: \"play the piano.\" play + the + instrument is the default for named instruments. Family gatherings only set the scene.\n\n**Tip:** play + the + instrument is the default.",
+        "**B) He plays the football for the local amateur side.**  (false)\n\nTrap: Sports use zero article: \"play football,\" not \"play the football.\" Contrast instruments (the) with sports and games (zero). Repair by dropping the before football; the club name can stay definite.\n\n**Tip:** Contrast instruments (the) with sports and games (zero).",
+        "**C) They listen to the radio during the morning walk.**  (true)\n\n\"Listen to the radio\" is the standard pattern for the medium. the radio / the news are common fixed media patterns. The morning walk is just when they listen.\n\n**Tip:** the radio / the news are common fixed media patterns.",
+        "**D) I watched a television until midnight after the film.**  (false)\n\nTrap: Habitual or general TV watching is \"watch television,\" not \"watch a television,\" unless you mean one physical set. Medium versus device: the medium often takes zero; a specific device can take a/the. Here the medium reading is intended, so drop a.\n\n**Tip:** Medium versus device: medium often takes zero; a specific device can take a/the.",
+        "**E) She is learning the violin with a private tutor.**  (true)\n\n\"Learn the violin\" follows the same instrument rule as play the piano. Keep the with named instruments after play/learn. The private tutor is a separate countable first mention with a.\n\n**Tip:** Keep the with named instruments after play/learn."
+      ],
+      "highlights": [
+        "the piano",
+        "the football",
+        "the radio",
+        "a television",
+        "the violin"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.9",
-      "solution_overview": "Instruments prefer the; sports prefer zero. Media words like radio and television also have preferred patterns—do not invent a/an forms where the medium itself is meant."
+      "solution_overview": "Family piano nights, an amateur football side, morning radio walks, late TV after a film, and violin lessons — instruments, sports, and media each freeze different articles.\n\n**Part 1: What to watch for.**\n\nInstruments prefer the (play/learn the piano, the violin); sports prefer zero (play football). Media words like radio and television also have preferred patterns — do not invent a/an forms where the medium itself is meant.\n\n**Part 2: How to decide.**\n\nSort the noun: instrument → expect the; sport/game → expect zero; medium (the radio, watch television) → use the set media pattern. If the line forces the onto a sport or a onto TV-as-medium, that is usually wrong.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-9-11",
@@ -274,19 +394,31 @@
         "Both finalists gave a strong closing speech.",
         "All of luggage must be labelled before check-in."
       ],
-      "answer_key": [true, false, true, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Most\" + plural noun takes zero article when speaking generally about the majority: \"Most students…\"\n\nTip: most + noun (no the) for general majorities.",
-        "FALSE — Do not say \"the most of guests\"; use \"most of the guests\" or \"most guests.\"\n\nTip: After most of, you normally need the + definite noun phrase.",
-        "TRUE — \"Half of the cake\" correctly combines the quantifier with a definite noun phrase.\n\nTip: half/most/some of + the + specific noun is a safe pattern.",
-        "TRUE — \"Both finalists\" needs no article before both; \"a strong closing speech\" correctly introduces one speech each.\n\nTip: both/all/each have their own determiner rules—do not stack the before both.",
-        "FALSE — \"All of luggage\" is incomplete; write \"all of the luggage\" or \"all luggage.\"\n\nTip: all of must be followed by a determined noun phrase (often with the)."
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
       ],
-      "highlights": ["Most students", "The most of guests", "Half of the cake", "Both finalists", "All of luggage"],
+      "tactical_explanations": [
+        "**A) Most students supported the later start time.**  (true)\n\n\"Most\" + plural noun takes zero article when speaking generally about the majority: \"Most students…\" most + noun (no the) is the frame for general majorities. The later start time is the definite proposal they supported.\n\n**Tip:** most + noun (no the) for general majorities.",
+        "**B) The most of guests opposed the outdoor seating plan.**  (false)\n\nTrap: Do not say \"the most of guests\"; use \"most of the guests\" or \"most guests.\" After most of, you normally need the + definite noun phrase. Rebuild the whole quantifier frame rather than leaving the most of.\n\n**Tip:** After most of, you normally need the + definite noun phrase.",
+        "**C) Half of the cake has already been eaten.**  (true)\n\n\"Half of the cake\" correctly combines the quantifier with a definite noun phrase. half/most/some of + the + specific noun is a safe pattern. Singular agreement with cake is also consistent.\n\n**Tip:** half/most/some of + the + specific noun is a safe pattern.",
+        "**D) Both finalists gave a strong closing speech.**  (true)\n\n\"Both finalists\" needs no article before both; \"a strong closing speech\" correctly introduces one speech each. both/all/each have their own determiner rules — do not stack the before both. The countable speech still needs a.\n\n**Tip:** both/all/each have their own determiner rules — do not stack the before both.",
+        "**E) All of luggage must be labelled before check-in.**  (false)\n\nTrap: \"All of luggage\" is incomplete; write \"all of the luggage\" or \"all luggage.\" all of must be followed by a determined noun phrase (often with the). Either add the after of, or drop of and keep all luggage.\n\n**Tip:** all of must be followed by a determined noun phrase (often with the)."
+      ],
+      "highlights": [
+        "Most students",
+        "The most of guests",
+        "Half of the cake",
+        "Both finalists",
+        "All of luggage"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.9",
-      "solution_overview": "Quantifier patterns interact with determiners: most + noun, most of the + noun, half of the +, and all of the +. Avoid blending those frames."
+      "solution_overview": "Start-time votes, outdoor seating guests, leftover cake, finalists' speeches, and labelled luggage — quantifiers that demand exact determiner frames.\n\n**Part 1: What to watch for.**\n\nQuantifier patterns interact with determiners: most + noun, most of the + noun, half of the +, and all of the +. Avoid blending those frames into hybrids like the most of guests or all of luggage.\n\n**Part 2: How to decide.**\n\nIf the quantifier is bare most/both/all before a general plural, usually no the right after it. If you use most of / half of / all of, expect a determined noun phrase (often the + noun). Spot illegal blends and rebuild the whole frame, not just one word.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-9-12",
@@ -300,19 +432,31 @@
         "The mathematics in this puzzle is unexpectedly elegant.",
         "She teaches the English at a private college."
       ],
-      "answer_key": [true, false, true, true, false],
-      "tactical_explanations": [
-        "TRUE — Academic subjects usually take zero article: \"studying economics.\"\n\nTip: Subject names in general study contexts stay bare.",
-        "FALSE — As a field of study, use \"history,\" not \"the history,\" unless a specific history is meant.\n\nTip: Zero article for subjects; the only when the noun is narrowed (the history of X).",
-        "TRUE — \"Photography\" as a course subject correctly appears without a/the before the subject name; \"a course\" is the countable shell.\n\nTip: Count the course, not the subject noun itself.",
-        "TRUE — Here \"the mathematics\" refers to the specific maths in this puzzle, so the is justified.\n\nTip: The + subject is fine when limited by a postmodifier or clear context.",
-        "FALSE — Language subjects in general take zero article: \"teaches English,\" not \"teaches the English.\"\n\nTip: Language names as school subjects are usually bare."
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
       ],
-      "highlights": ["studying economics", "the history before", "photography this", "The mathematics", "the English at"],
+      "tactical_explanations": [
+        "**A) She is studying economics at a well-known university.**  (true)\n\nAcademic subjects usually take zero article: \"studying economics.\" Subject names in general study contexts stay bare. The university gets a because it is one countable institution among many.\n\n**Tip:** Subject names in general study contexts stay bare.",
+        "**B) He majored in the history before joining the museum.**  (false)\n\nTrap: As a field of study, use \"history,\" not \"the history,\" unless a specific history is meant. Zero article for subjects; the only when the noun is narrowed (the history of X). Drop the before history here.\n\n**Tip:** Zero article for subjects; the only when the noun is narrowed (the history of X).",
+        "**C) They offer a course in photography this term.**  (true)\n\n\"Photography\" as a course subject correctly appears without a/the before the subject name; \"a course\" is the countable shell. Count the course, not the subject noun itself. This term just situates the offering.\n\n**Tip:** Count the course, not the subject noun itself.",
+        "**D) The mathematics in this puzzle is unexpectedly elegant.**  (true)\n\nHere \"the mathematics\" refers to the specific maths in this puzzle, so the is justified. The + subject is fine when limited by a postmodifier or clear context. Unexpected elegance is about that defined slice of maths.\n\n**Tip:** The + subject is fine when limited by a postmodifier or clear context.",
+        "**E) She teaches the English at a private college.**  (false)\n\nTrap: Language subjects in general take zero article: \"teaches English,\" not \"teaches the English.\" Language names as school subjects are usually bare. Drop the before English; keep a private college as written.\n\n**Tip:** Language names as school subjects are usually bare."
+      ],
+      "highlights": [
+        "studying economics",
+        "the history before",
+        "photography this",
+        "The mathematics",
+        "the English at"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.9",
-      "solution_overview": "Subject and language names are bare in general academic use, but the appears when the noun is limited to a specific body of material. Separate the countable \"course\" from the subject label."
+      "solution_overview": "Economics degrees, museum history, photography courses, elegant puzzle maths, and English teaching — subject and language names that stay bare until narrowed.\n\n**Part 1: What to watch for.**\n\nSubject and language names are bare in general academic use, but the appears when the noun is limited to a specific body of material. Separate the countable \"course\" from the subject label itself.\n\n**Part 2: How to decide.**\n\nIf the noun names a field or language in general study/teaching, prefer zero (economics, history, English, photography as subject). If a postmodifier or clear context picks out a specific slice (the mathematics in this puzzle), the is licensed. Count a course; do not article the subject name needlessly.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-9-13",
@@ -326,19 +470,31 @@
         "We spent two weeks in Brazil last summer.",
         "The Amazon is vital to several rainforest ecosystems."
       ],
-      "answer_key": [true, false, false, true, true],
-      "tactical_explanations": [
-        "TRUE — Country names that are plural or include a common noun often take \"the\": \"the Netherlands.\"\n\nTip: the with Netherlands, United Kingdom, United States, Philippines, etc.",
-        "FALSE — The standard form is \"the United Kingdom,\" not bare \"United Kingdom\" after to.\n\nTip: Full political names with Kingdom/States/Republic usually need the.",
-        "FALSE — The city is \"The Hague,\" so the sentence needs \"outside The Hague.\"\n\nTip: A few place names include The as part of the name.",
-        "TRUE — Most single-name countries take zero article: \"in Brazil.\"\n\nTip: Default for country and city names is zero unless the name belongs to a the-group.",
-        "TRUE — Famous rivers take \"the\": \"the Amazon.\"\n\nTip: the with rivers, seas, oceans, and canal names."
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
       ],
-      "highlights": ["The Netherlands", "to United Kingdom", "outside Hague", "in Brazil", "The Amazon"],
+      "tactical_explanations": [
+        "**A) The Netherlands remains a popular cycling destination.**  (true)\n\nCountry names that are plural or include a common noun often take \"the\": \"the Netherlands.\" the with Netherlands, United Kingdom, United States, Philippines, and similar names is the regular pattern. The cycling frame does not change the country article.\n\n**Tip:** the with Netherlands, United Kingdom, United States, Philippines, etc.",
+        "**B) She moved to United Kingdom after finishing her degree.**  (false)\n\nTrap: The standard form is \"the United Kingdom,\" not bare \"United Kingdom\" after to. Full political names with Kingdom/States/Republic usually need the. Repair to \"moved to the United Kingdom…\"\n\n**Tip:** Full political names with Kingdom/States/Republic usually need the.",
+        "**C) Their hostel is just outside Hague, near the sea.**  (false)\n\nTrap: The city is \"The Hague,\" so the sentence needs \"outside The Hague.\" A few place names include The as part of the name rather than as an optional article. Insert The before Hague.\n\n**Tip:** A few place names include The as part of the name.",
+        "**D) We spent two weeks in Brazil last summer.**  (true)\n\nMost single-name countries take zero article: \"in Brazil.\" Default for country and city names is zero unless the name belongs to a the-group. Last summer only times the trip.\n\n**Tip:** Default for country and city names is zero unless the name belongs to a the-group.",
+        "**E) The Amazon is vital to several rainforest ecosystems.**  (true)\n\nFamous rivers take \"the\": \"the Amazon.\" the with rivers, seas, oceans, and canal names is the safe waterway rule. Ecosystem importance does not license dropping the.\n\n**Tip:** the with rivers, seas, oceans, and canal names."
+      ],
+      "highlights": [
+        "The Netherlands",
+        "to United Kingdom",
+        "outside Hague",
+        "in Brazil",
+        "The Amazon"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.9",
-      "solution_overview": "Geography has compact rules: most countries and cities are bare, but plural/political names and many waterways take the. A handful of names include The as part of the proper noun."
+      "solution_overview": "Cycling in the Netherlands, a move to the UK, The Hague by the sea, a Brazil summer, and the Amazon — geography rules for countries, cities, and rivers.\n\n**Part 1: What to watch for.**\n\nGeography has compact rules: most countries and cities are bare, but plural/political names and many waterways take the. A handful of names include The as part of the proper noun (The Hague).\n\n**Part 2: How to decide.**\n\nDefault countries and cities to zero (Brazil). Force the with political/plural names (the Netherlands, the United Kingdom) and famous rivers (the Amazon). Watch for names where The is built in (The Hague). Bare United Kingdom or Hague is the usual failure mode.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-9-14",
@@ -352,19 +508,31 @@
         "We spent a week in Alps after the festival.",
         "The Sahara stretches across much of North Africa."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — Individual lakes usually take zero article: \"Lake Victoria.\"\n\nTip: Lake + name → typically zero; the Great Lakes is an exception as a group.",
-        "FALSE — Oceans and seas need \"the\": \"the Atlantic.\"\n\nTip: the Atlantic / the Pacific / the Mediterranean.",
-        "TRUE — Mountains named with Mount take zero article: \"Mount Everest.\"\n\nTip: Mount/Mt + name = zero; mountain ranges take the.",
-        "FALSE — Mountain ranges take \"the\": \"the Alps.\"\n\nTip: Ranges and island groups usually need the.",
-        "TRUE — Deserts take \"the\": \"the Sahara.\"\n\nTip: the Sahara / the Gobi follow the desert pattern."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["Lake Victoria", "across Atlantic", "Mount Everest", "in Alps", "The Sahara"],
+      "tactical_explanations": [
+        "**A) Lake Victoria appears in several geography textbooks.**  (true)\n\nIndividual lakes usually take zero article: \"Lake Victoria.\" Lake + name → typically zero; the Great Lakes is an exception as a group. Textbook mentions do not add the.\n\n**Tip:** Lake + name → typically zero; the Great Lakes is an exception as a group.",
+        "**B) They sailed across Atlantic on a freighter.**  (false)\n\nTrap: Oceans and seas need \"the\": \"the Atlantic.\" the Atlantic / the Pacific / the Mediterranean is the waterway pattern. Repair to \"across the Atlantic\"; a freighter stays as the vehicle.\n\n**Tip:** the Atlantic / the Pacific / the Mediterranean.",
+        "**C) Mount Everest still attracts extreme hikers.**  (true)\n\nMountains named with Mount take zero article: \"Mount Everest.\" Mount/Mt + name = zero; mountain ranges take the. Extreme hikers do not change the peak's article.\n\n**Tip:** Mount/Mt + name = zero; mountain ranges take the.",
+        "**D) We spent a week in Alps after the festival.**  (false)\n\nTrap: Mountain ranges take \"the\": \"the Alps.\" Ranges and island groups usually need the. Repair to \"in the Alps after the festival.\"\n\n**Tip:** Ranges and island groups usually need the.",
+        "**E) The Sahara stretches across much of North Africa.**  (true)\n\nDeserts take \"the\": \"the Sahara.\" the Sahara / the Gobi follow the desert pattern. The Africa span is geography, not a reason to bare the name.\n\n**Tip:** the Sahara / the Gobi follow the desert pattern."
+      ],
+      "highlights": [
+        "Lake Victoria",
+        "across Atlantic",
+        "Mount Everest",
+        "in Alps",
+        "The Sahara"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.9",
-      "solution_overview": "Natural features split cleanly: lakes and Mount-names are often bare; oceans, ranges, deserts, and many seas take the. Learn the groups rather than guessing per word."
+      "solution_overview": "Lake Victoria in textbooks, an Atlantic freighter crossing, Mount Everest hikers, a week in the Alps, and the Sahara — natural features that split bare versus the.\n\n**Part 1: What to watch for.**\n\nNatural features split cleanly: lakes and Mount-names are often bare; oceans, ranges, deserts, and many seas take the. Learn the groups rather than guessing per word.\n\n**Part 2: How to decide.**\n\nClassify the feature: Lake/Mount + name → usually zero; ocean/sea/range/desert → usually the. Atlantic without the, Alps without the, or Sahara without the are the common misses. Great Lakes as a group is a separate exception to remember later.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-9-15",
@@ -378,19 +546,31 @@
         "She values the honesty above everything else in friendships.",
         "Curiosity drives long-term learning in this field."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — Abstract nouns used in a general sense take zero article: \"Poverty remains…\"\n\nTip: General abstracts (poverty, society, curiosity) are usually bare.",
-        "FALSE — General \"life\" does not take the: \"Life is unpredictable…\"\n\nTip: Use the life only when limited (the life of an artist, the life she wanted).",
-        "TRUE — \"Society\" in a broad general claim correctly appears without a/the.\n\nTip: Zero article signals the concept as a whole.",
-        "FALSE — As a general virtue, prefer \"honesty,\" not \"the honesty,\" unless a specific instance is meant.\n\nTip: Abstract virtues in general statements stay bare.",
-        "TRUE — \"Curiosity\" as a general driver of learning takes zero article.\n\nTip: If no postmodifier narrows the abstract, omit the."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["Poverty remains", "The life is", "Society must", "the honesty above", "Curiosity drives"],
+      "tactical_explanations": [
+        "**A) Poverty remains a serious challenge in many regions.**  (true)\n\nAbstract nouns used in a general sense take zero article: \"Poverty remains…\" General abstracts (poverty, society, curiosity) are usually bare. Regions stay plural and general too.\n\n**Tip:** General abstracts (poverty, society, curiosity) are usually bare.",
+        "**B) The life is unpredictable for freelance artists.**  (false)\n\nTrap: General \"life\" does not take the: \"Life is unpredictable…\" Use the life only when limited (the life of an artist, the life she wanted). Repair by dropping the before life.\n\n**Tip:** Use the life only when limited (the life of an artist, the life she wanted).",
+        "**C) Society must balance growth with environmental limits.**  (true)\n\n\"Society\" in a broad general claim correctly appears without a/the. Zero article signals the concept as a whole. Growth and limits are the content of the claim, not article cues.\n\n**Tip:** Zero article signals the concept as a whole.",
+        "**D) She values the honesty above everything else in friendships.**  (false)\n\nTrap: As a general virtue, prefer \"honesty,\" not \"the honesty,\" unless a specific instance is meant. Abstract virtues in general statements stay bare. Drop the before honesty.\n\n**Tip:** Abstract virtues in general statements stay bare.",
+        "**E) Curiosity drives long-term learning in this field.**  (true)\n\n\"Curiosity\" as a general driver of learning takes zero article. If no postmodifier narrows the abstract, omit the. The field only locates where that drive helps.\n\n**Tip:** If no postmodifier narrows the abstract, omit the."
+      ],
+      "highlights": [
+        "Poverty remains",
+        "The life is",
+        "Society must",
+        "the honesty above",
+        "Curiosity drives"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.9",
-      "solution_overview": "General abstract nouns prefer zero article. Add the only when a of-phrase or clear context turns the abstract into a specific instance."
+      "solution_overview": "Poverty, life, society, honesty, and curiosity — broad abstract nouns that stay bare until a phrase turns them into a specific instance.\n\n**Part 1: What to watch for.**\n\nGeneral abstract nouns prefer zero article. Add the only when an of-phrase or clear context turns the abstract into a specific instance (the life of an artist, the honesty she showed that day).\n\n**Part 2: How to decide.**\n\nIf the abstract is used as a concept-in-general, keep it bare (Poverty, Society, Curiosity). If someone bolted the onto life or honesty with no narrowing, strip it. Only reintroduce the when a limiter makes one particular life or virtue unique in context.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-9-16",
@@ -404,19 +584,31 @@
         "The research published last week challenges our assumptions.",
         "We need a progress before the next rehearsal."
       ],
-      "answer_key": [true, true, false, true, false],
-      "tactical_explanations": [
-        "TRUE — Uncountable \"advice\" can take \"the\" when a relative clause identifies a specific body of advice.\n\nTip: Uncountable + the is fine once the noun is made specific.",
-        "TRUE — \"Equipment\" remains uncountable; zero article works even with a defining relative clause when the noun is used as a mass.\n\nTip: You may also say \"the equipment that arrived…\" — both can be acceptable; bare is not wrong here.",
-        "FALSE — \"Information\" cannot take \"an\"; use \"information\" or \"a piece of information.\"\n\nTip: Specificity does not magically make an uncountable noun countable with a/an.",
-        "TRUE — \"The research published last week\" correctly uses the because the postmodifier identifies a particular study set.\n\nTip: Postmodifiers often licence the with otherwise general uncountables.",
-        "FALSE — \"Progress\" is uncountable, so \"a progress\" is wrong; say \"progress\" or \"some progress.\"\n\nTip: Never place a/an directly before progress."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
       ],
-      "highlights": ["The advice she", "Equipment that", "An information", "The research published", "a progress"],
+      "tactical_explanations": [
+        "**A) The advice she received from her coach was unusually clear.**  (true)\n\nUncountable \"advice\" can take \"the\" when a relative clause identifies a specific body of advice. Uncountable + the is fine once the noun is made specific. Clarity is about that identified advice, not advice-in-general.\n\n**Tip:** Uncountable + the is fine once the noun is made specific.",
+        "**B) Equipment that arrived yesterday is still in the hallway.**  (true)\n\n\"Equipment\" remains uncountable; zero article works even with a defining relative clause when the noun is used as a mass. You may also say \"the equipment that arrived…\" — both can be acceptable; bare is not wrong here. The hallway only places it.\n\n**Tip:** You may also say \"the equipment that arrived…\" — both can be acceptable; bare is not wrong here.",
+        "**C) An information in the appendix contradicts the summary.**  (false)\n\nTrap: \"Information\" cannot take \"an\"; use \"information\" or \"a piece of information.\" Specificity does not magically make an uncountable noun countable with a/an. Drop an, or quantify with a piece of, even if the appendix pinpoints the content.\n\n**Tip:** Specificity does not magically make an uncountable noun countable with a/an.",
+        "**D) The research published last week challenges our assumptions.**  (true)\n\n\"The research published last week\" correctly uses the because the postmodifier identifies a particular study set. Postmodifiers often licence the with otherwise general uncountables. Assumptions stay ours; the research is the definite challenge.\n\n**Tip:** Postmodifiers often licence the with otherwise general uncountables.",
+        "**E) We need a progress before the next rehearsal.**  (false)\n\nTrap: \"Progress\" is uncountable, so \"a progress\" is wrong; say \"progress\" or \"some progress.\" Never place a/an directly before progress. The next rehearsal only sets the deadline.\n\n**Tip:** Never place a/an directly before progress."
+      ],
+      "highlights": [
+        "The advice she",
+        "Equipment that",
+        "An information",
+        "The research published",
+        "a progress"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.9",
-      "solution_overview": "Uncountables can take the when narrowed by context, but they still reject a/an. Specificity changes zero versus the, not countability itself."
+      "solution_overview": "Coach advice that landed, hallway equipment, appendix information, last week's research, and rehearsal progress — uncountables that can take the when narrowed, but never a/an.\n\n**Part 1: What to watch for.**\n\nUncountables can take the when narrowed by context, but they still reject a/an. Specificity changes zero versus the, not countability itself. Relative clauses and published-last-week style postmodifiers often licence the.\n\n**Part 2: How to decide.**\n\nAsk two separate questions: Is the mass noun identified enough for the? And is someone illegally using a/an anyway? the advice she received and the research published last week can be fine; an information and a progress never are. Zero-article equipment with a defining clause can also be acceptable.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-9-17",
@@ -430,19 +622,31 @@
         "She is a only photographer who stayed until closing.",
         "He remains the unique finalist still active in round three."
       ],
-      "answer_key": [true, false, true, false, false],
-      "tactical_explanations": [
-        "TRUE — After appoint/elect/name, English often uses \"the\" + unique role: \"appointed the captain.\"\n\nTip: Unique office titles after appoint/elect frequently take the.",
-        "FALSE — Prefer \"the head of the drama department\" for a unique post, or rephrase; \"a head of…\" sounds like one of several equal heads.\n\nTip: Unique organisational roles usually take the, not a.",
-        "TRUE — Zero article is also possible after elect/appoint when the title follows directly: \"elected her treasurer.\"\n\nTip: Both \"elected her treasurer\" and \"elected her the treasurer\" appear; bare title after the object is standard.",
-        "FALSE — \"Only\" requires \"the only photographer,\" not \"a only.\" Also, \"only\" begins with a vowel sound, so a would be wrong even without that rule.\n\nTip: the only is a fixed determiner pattern.",
-        "FALSE — Native wording prefers \"the only finalist\" (or \"the sole finalist\"); \"the unique finalist\" is awkward in this ranking sense.\n\nTip: For exclusivity in a set, only/sole beats unique with the."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
       ],
-      "highlights": ["the captain of", "a head of the", "her treasurer", "a only photographer", "the unique finalist"],
+      "tactical_explanations": [
+        "**A) She was appointed the captain of the rowing club.**  (true)\n\nAfter appoint/elect/name, English often uses \"the\" + unique role: \"appointed the captain.\" Unique office titles after appoint/elect frequently take the. The rowing club makes the post singular and definite.\n\n**Tip:** Unique office titles after appoint/elect frequently take the.",
+        "**B) He became a head of the drama department after the reshuffle.**  (false)\n\nTrap: Prefer \"the head of the drama department\" for a unique post, or rephrase; \"a head of…\" sounds like one of several equal heads. Unique organisational roles usually take the, not a. Repair a to the before head.\n\n**Tip:** Unique organisational roles usually take the, not a.",
+        "**C) They elected her treasurer of the local book club.**  (true)\n\nZero article is also possible after elect/appoint when the title follows directly: \"elected her treasurer.\" Both \"elected her treasurer\" and \"elected her the treasurer\" appear; bare title after the object is standard. The local book club names the organisation.\n\n**Tip:** Both \"elected her treasurer\" and \"elected her the treasurer\" appear; bare title after the object is standard.",
+        "**D) She is a only photographer who stayed until closing.**  (false)\n\nTrap: \"Only\" requires \"the only photographer,\" not \"a only.\" Also, \"only\" begins with a vowel sound, so a would be wrong even without that rule. the only is a fixed determiner pattern — rebuild it as a chunk.\n\n**Tip:** the only is a fixed determiner pattern.",
+        "**E) He remains the unique finalist still active in round three.**  (false)\n\nTrap: Native wording prefers \"the only finalist\" (or \"the sole finalist\"); \"the unique finalist\" is awkward in this ranking sense. For exclusivity in a set, only/sole beats unique with the. Repair unique to only or sole.\n\n**Tip:** For exclusivity in a set, only/sole beats unique with the."
+      ],
+      "highlights": [
+        "the captain of",
+        "a head of the",
+        "her treasurer",
+        "a only photographer",
+        "the unique finalist"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.9",
-      "solution_overview": "Titles and unique roles have special determiner habits after appoint/elect and with only. Aim for the with unique posts, and keep the only as a locked chunk."
+      "solution_overview": "Rowing captains, drama heads, book-club treasurers, the only photographer, and exclusive finalists — titles and exclusivity markers with special determiner habits.\n\n**Part 1: What to watch for.**\n\nTitles and unique roles have special determiner habits after appoint/elect and with only. Aim for the with unique posts, and keep the only as a locked chunk. Unique can sound awkward where only/sole is the natural exclusivity word.\n\n**Part 2: How to decide.**\n\nAfter appoint/elect/name, prefer the for a unique office, or a bare title after the object (elected her treasurer). Reject a head of… for a one-of-a-kind post, and reject a only… outright. For set exclusivity, prefer the only / the sole over the unique.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-9-18",
@@ -456,19 +660,31 @@
         "He has knowledge of Portuguese from years in Lisbon.",
         "We saw a rise in visitors after the gallery redesign."
       ],
-      "answer_key": [true, true, true, true, true],
-      "tactical_explanations": [
-        "TRUE — \"A number of\" means \"several\" and correctly pairs with a plural noun; the determiner pattern itself is standard.\n\nTip: a number of + plural is a fixed quantifying frame.",
-        "TRUE — \"The number of\" correctly refers to a specific total; here the noun phrase is fully determined and grammatical.\n\nTip: Contrast a number of (several) with the number of (the total count).",
-        "TRUE — \"A knowledge of\" is an accepted pattern when knowledge is limited to a field: \"a knowledge of Portuguese.\"\n\nTip: Some abstracts allow a when followed by of + field.",
-        "TRUE — Zero-article \"knowledge of\" is equally natural for the same idea.\n\nTip: Both a knowledge of and knowledge of can be correct; meaning stays general-competence.",
-        "TRUE — Countable \"rise\" correctly takes \"a\" for a newly mentioned increase: \"a rise in visitors.\"\n\nTip: Singular countable nouns need a determiner in this slot."
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
       ],
-      "highlights": ["A number of neighbours", "The number of open", "a knowledge of", "has knowledge of", "a rise in"],
+      "tactical_explanations": [
+        "**A) A number of neighbours have requested clearer recycling rules.**  (true)\n\n\"A number of\" means \"several\" and correctly pairs with a plural noun; the determiner pattern itself is standard. a number of + plural is a fixed quantifying frame. Clearer recycling rules are just the request content.\n\n**Tip:** a number of + plural is a fixed quantifying frame.",
+        "**B) The number of open tickets fell after the software update.**  (true)\n\n\"The number of\" correctly refers to a specific total; here the noun phrase is fully determined and grammatical. Contrast a number of (several) with the number of (the total count). The software update explains the drop.\n\n**Tip:** Contrast a number of (several) with the number of (the total count).",
+        "**C) She has a knowledge of Portuguese that helps on trips.**  (true)\n\n\"A knowledge of\" is an accepted pattern when knowledge is limited to a field: \"a knowledge of Portuguese.\" Some abstracts allow a when followed by of + field. The relative clause just confirms usefulness on trips.\n\n**Tip:** Some abstracts allow a when followed by of + field.",
+        "**D) He has knowledge of Portuguese from years in Lisbon.**  (true)\n\nZero-article \"knowledge of\" is equally natural for the same idea. Both a knowledge of and knowledge of can be correct; meaning stays general-competence. Years in Lisbon supply the source.\n\n**Tip:** Both a knowledge of and knowledge of can be correct; meaning stays general-competence.",
+        "**E) We saw a rise in visitors after the gallery redesign.**  (true)\n\nCountable \"rise\" correctly takes \"a\" for a newly mentioned increase: \"a rise in visitors.\" Singular countable nouns need a determiner in this slot. The gallery redesign is the cause clause.\n\n**Tip:** Singular countable nouns need a determiner in this slot."
+      ],
+      "highlights": [
+        "A number of neighbours",
+        "The number of open",
+        "a knowledge of",
+        "has knowledge of",
+        "a rise in"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.9",
-      "solution_overview": "Watch fixed frames such as a number of versus the number of, and notice when abstracts optionally take a before of-phrases. Singular countables like rise still need a determiner."
+      "solution_overview": "Recycling petitions, open tickets, Portuguese knowledge, and a rise in gallery visitors — fixed frames where a number of, the number of, and optional a knowledge of all behave differently.\n\n**Part 1: What to watch for.**\n\nWatch fixed frames such as a number of versus the number of, and notice when abstracts optionally take a before of-phrases. Singular countables like rise still need a determiner.\n\n**Part 2: How to decide.**\n\nRead a number of as \"several\" + plural; read the number of as a specific total. For knowledge of + field, both a knowledge of and knowledge of can be fine. Separately check that countable rise/increase tokens still carry a/the when singular.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-9-19",
@@ -482,19 +698,31 @@
         "In the 1990s many families still relied on paper maps.",
         "On Monday morning the team packs for the match."
       ],
-      "answer_key": [true, false, false, true, true],
-      "tactical_explanations": [
-        "TRUE — Time expressions like \"next week,\" \"last year,\" and \"this morning\" take zero article in standard adverbial use.\n\nTip: next/last/this + time unit → usually zero.",
-        "FALSE — \"The next week\" is wrong in this future-plan adverbial; keep bare \"next week.\"\n\nTip: Save the next for sequenced items inside a known series (the next slide), not for calendar next week.",
-        "FALSE — Decades need \"the\": \"in the 1990s.\"\n\nTip: the + decade/century is the normal historical pattern.",
-        "TRUE — \"In the 1990s\" correctly includes the.\n\nTip: Same pattern for the 1800s, the twentieth century, etc.",
-        "TRUE — Days and parts of days used adverbially are often bare: \"On Monday morning…\"\n\nTip: on Monday / in summer / at night frequently take zero article."
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
       ],
-      "highlights": ["Next week we", "The next week", "In 1990s", "In the 1990s", "On Monday morning"],
+      "tactical_explanations": [
+        "**A) Next week we will finalise the festival programme.**  (true)\n\nTime expressions like \"next week,\" \"last year,\" and \"this morning\" take zero article in standard adverbial use. next/last/this + time unit → usually zero. The festival programme stays definite as the thing being finalised.\n\n**Tip:** next/last/this + time unit → usually zero.",
+        "**B) The next week we will finalise the festival programme.**  (false)\n\nTrap: \"The next week\" is wrong in this future-plan adverbial; keep bare \"next week.\" Save the next for sequenced items inside a known series (the next slide), not for calendar next week. Drop the before next week.\n\n**Tip:** Save the next for sequenced items inside a known series (the next slide), not for calendar next week.",
+        "**C) In 1990s many families still relied on paper maps.**  (false)\n\nTrap: Decades need \"the\": \"in the 1990s.\" the + decade/century is the normal historical pattern. Insert the before 1990s.\n\n**Tip:** the + decade/century is the normal historical pattern.",
+        "**D) In the 1990s many families still relied on paper maps.**  (true)\n\n\"In the 1990s\" correctly includes the. Same pattern for the 1800s, the twentieth century, and similar historical spans. Paper maps are just the technology of that decade.\n\n**Tip:** Same pattern for the 1800s, the twentieth century, etc.",
+        "**E) On Monday morning the team packs for the match.**  (true)\n\nDays and parts of days used adverbially are often bare: \"On Monday morning…\" on Monday / in summer / at night frequently take zero article. The team and the match can still be definite.\n\n**Tip:** on Monday / in summer / at night frequently take zero article."
+      ],
+      "highlights": [
+        "Next week we",
+        "The next week",
+        "In 1990s",
+        "In the 1990s",
+        "On Monday morning"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.9",
-      "solution_overview": "Time phrases are highly patterned: next/last week stay bare, while decades and centuries take the. Do not import the into calendar adverbials where English expects zero."
+      "solution_overview": "Festival programmes next week, the 1990s on paper maps, and Monday morning match packing — calendar adverbials with rigid article habits.\n\n**Part 1: What to watch for.**\n\nTime phrases are highly patterned: next/last week stay bare, while decades and centuries take the. Do not import the into calendar adverbials where English expects zero.\n\n**Part 2: How to decide.**\n\nFor next/last/this + time unit as an adverbial, keep zero. For in + decade/century, require the (in the 1990s). Days and parts of days like On Monday morning are often bare. the next week as a future-plan adverbial is the classic false friend.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-9-20",
@@ -508,19 +736,31 @@
         "Please write the essay from beginning to the end carefully.",
         "We need to keep the garden under control this summer."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — \"In charge of costumes\" uses zero article before the functional area in this common pattern.\n\nTip: Many be/in + noun phrases freeze without a/the (in charge, in debt, in trouble).",
-        "FALSE — Body-contact idioms take possessive or the: \"on the head\" / \"on his head,\" not bare \"on head.\"\n\nTip: on the + body part is the usual set phrase after verbs like hit/pat.",
-        "TRUE — \"Shake hands\" is a fixed zero-article idiom.\n\nTip: Learn hands/arms/legs idioms as chunks; do not insert the automatically.",
-        "FALSE — The paired idiom is \"from beginning to end\" (both bare) or \"from the beginning to the end\"; mixing bare beginning with \"the end\" is inconsistent.\n\nTip: Keep both sides of a fixed pair parallel in determiner choice.",
-        "TRUE — \"Under control\" is a zero-article prepositional idiom.\n\nTip: under control / in progress / on schedule are typically bare."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["in charge of costumes", "on head during", "shook hands", "from beginning to the end", "under control"],
+      "tactical_explanations": [
+        "**A) She is in charge of costumes for the school play.**  (true)\n\n\"In charge of costumes\" uses zero article before the functional area in this common pattern. Many be/in + noun phrases freeze without a/the (in charge, in debt, in trouble). The school play stays definite as the production.\n\n**Tip:** Many be/in + noun phrases freeze without a/the (in charge, in debt, in trouble).",
+        "**B) He was hit on head during the basketball practice.**  (false)\n\nTrap: Body-contact idioms take possessive or the: \"on the head\" / \"on his head,\" not bare \"on head.\" on the + body part is the usual set phrase after verbs like hit/pat. Repair to \"on the head\" (or \"on his head\") during practice.\n\n**Tip:** on the + body part is the usual set phrase after verbs like hit/pat.",
+        "**C) They shook hands after settling the argument.**  (true)\n\n\"Shake hands\" is a fixed zero-article idiom. Learn hands/arms/legs idioms as chunks; do not insert the automatically. Settling the argument is just the moment of reconciliation.\n\n**Tip:** Learn hands/arms/legs idioms as chunks; do not insert the automatically.",
+        "**D) Please write the essay from beginning to the end carefully.**  (false)\n\nTrap: The paired idiom is \"from beginning to end\" (both bare) or \"from the beginning to the end\"; mixing bare beginning with \"the end\" is inconsistent. Keep both sides of a fixed pair parallel in determiner choice. Repair to matching bare–bare or the–the.\n\n**Tip:** Keep both sides of a fixed pair parallel in determiner choice.",
+        "**E) We need to keep the garden under control this summer.**  (true)\n\n\"Under control\" is a zero-article prepositional idiom. under control / in progress / on schedule are typically bare. The garden stays definite; this summer sets the season.\n\n**Tip:** under control / in progress / on schedule are typically bare."
+      ],
+      "highlights": [
+        "in charge of costumes",
+        "on head during",
+        "shook hands",
+        "from beginning to the end",
+        "under control"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.9",
-      "solution_overview": "Advanced accuracy often means recognising idioms where determiner choice is frozen. Prefer the set phrase over building articles logically word by word."
+      "solution_overview": "Costumes for the play, a basketball head bump, a handshake after an argument, beginning-to-end essay care, and a garden under control — idioms where determiner choice is frozen.\n\n**Part 1: What to watch for.**\n\nAdvanced accuracy often means recognising idioms where determiner choice is frozen. Prefer the set phrase over building articles logically word by word. Body-part contact and paired from…to… frames are especially strict.\n\n**Part 2: How to decide.**\n\nWhen you spot in charge, on the head, shake hands, from beginning to end, or under control, recall the chunk. Do not bare on head, and do not mix bare beginning with the end inside one pair. Parallel determiner choice on both sides of a fixed pair is the repair check.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     }
   ]
 }

@@ -14,13 +14,19 @@
         "The guide was both patient and she explained every landmark.",
         "He enjoys reading crime novels, sketching street scenes, and baking bread."
       ],
-      "answer_key": [true, false, false, false, true],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Three adjectives share the same form after \"was,\" so the list is parallel.\n\nTip: When listing qualities, keep each item the same part of speech.",
-        "FALSE — A gerund (\"hiking\") is paired with an infinitive (\"to swim\").\n\nTip: After likes, stay with -ing throughout: hiking… and swimming…",
-        "FALSE — Two bare infinitives after \"must\" are followed by a participle (\"wearing\").\n\nTip: Shared modals need the same bare form: wear, not wearing.",
-        "FALSE — \"Both…and\" joins an adjective to a full clause.\n\nTip: Match structures after both…and: both patient and clear.",
-        "TRUE — Three gerund phrases after \"enjoys\" stay in matching -ing form.\n\nTip: Prefer reading…, sketching…, and baking… rather than mixing with to-infinitives."
+        "**A) The soup was hot, spicy, and fragrant.**  (true)\n\nThree adjectives — hot, spicy, and fragrant — sit in the same slot after was. The list is balanced because each item is the same part of speech, not a sudden shift into a verb or a clause.\n\n**Tip:** When listing qualities, keep each item the same part of speech.",
+        "**B) She likes hiking mountain trails and to swim in cold lakes.**  (false)\n\nTrap: hiking (a gerund) is paired with to swim (an infinitive). After likes, stay with -ing on both sides: hiking… and swimming… Mixing forms breaks the list even though both activities fit the sense.",
+        "**C) Volunteers must arrive early, sign the register, and wearing a badge.**  (false)\n\nTrap: arrive and sign are bare infinitives after must, but wearing is a participle. Shared modals need the same bare form each time — wear a badge, not wearing a badge.",
+        "**D) The guide was both patient and she explained every landmark.**  (false)\n\nTrap: both…and joins patient (an adjective) to she explained every landmark (a full clause). Match structures after both…and: both patient and clear, or both patient and careful with every landmark.",
+        "**E) He enjoys reading crime novels, sketching street scenes, and baking bread.**  (true)\n\nThree gerund phrases after enjoys — reading…, sketching…, and baking… — stay in matching -ing form. That is the clean pattern for activities someone enjoys, without slipping into to-infinitives.\n\n**Tip:** Prefer reading…, sketching…, and baking… rather than mixing with to-infinitives."
       ],
       "highlights": [
         "hot, spicy, and fragrant",
@@ -32,7 +38,7 @@
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.13",
-      "solution_overview": "Read each sentence as a list or a paired construction. Ask whether every item shares the same grammatical shape. Correlatives such as both…and are correct only when the two sides match."
+      "solution_overview": "Five everyday sentences about food, hobbies, and volunteering — each built around a list or a paired correlative. Your job is to decide whether the pieces dressed the same way.\n\n**Part 1: What to watch for.**\n\nParallel structure means every item in a list, or each half of a correlative such as both…and, must share the same grammatical shape. Watch adjectives after a linking verb, gerunds after likes/enjoys, bare forms after must, and the two sides of both…and.\n\n**Part 2: How to decide.**\n\nName the form of the first item, then check that every later item can wear the same grammatical clothes. One mismatched ending is enough to mark the sentence false, even when the meaning is clear.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-13-02",
@@ -46,13 +52,19 @@
         "The course aims to build stamina, improve balance, and boosting confidence.",
         "Tom likes watering the garden and pruning the hedges."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Three noun phrases sit in the same pattern after \"mixed.\"\n\nTip: Noun lists are parallel when each item is the same kind of noun phrase.",
-        "FALSE — An infinitive series is broken by the gerund \"trying.\"\n\nTip: After \"to,\" keep bare infinitives: visit, try, and walk.",
-        "TRUE — Adjective + preposition + gerund appears on both sides.\n\nTip: Parallel comparisons often reuse the same preposition pattern (at… / in…).",
-        "FALSE — The final item shifts from infinitives to a gerund (\"boosting\").\n\nTip: Finish the series with boost, not boosting.",
-        "TRUE — Two gerund phrases after \"likes\" match cleanly.\n\nTip: Prefer watering… and pruning… rather than mixing -ing with to-infinitives."
+        "**A) The playlist mixed jazz standards, folk ballads, and indie rock.**  (true)\n\nThree noun phrases — jazz standards, folk ballads, and indie rock — share the same pattern after mixed. Noun lists stay parallel when every item is the same kind of noun phrase.\n\n**Tip:** Noun lists are parallel when each item is the same kind of noun phrase.",
+        "**B) Their weekend plan was to visit museums, trying new cafés, and walk along the river.**  (false)\n\nTrap: the plan opens with to visit and should continue with bare infinitives, but trying breaks the series. After to, keep visit, try, and walk — not trying.",
+        "**C) Maya is good at repairing bikes but weak in organising toolkits.**  (true)\n\nAdjective + preposition + gerund appears on both sides: good at repairing… but weak in organising…. Parallel comparisons often reuse that preposition-plus-gerund frame, even when the prepositions differ (at / in).\n\n**Tip:** Parallel comparisons often reuse the same preposition-plus-gerund pattern (at… / in…).",
+        "**D) The course aims to build stamina, improve balance, and boosting confidence.**  (false)\n\nTrap: build and improve are bare infinitives after aims to, but boosting is a gerund. Finish the series with boost confidence, not boosting confidence.",
+        "**E) Tom likes watering the garden and pruning the hedges.**  (true)\n\nTwo gerund phrases after likes — watering the garden and pruning the hedges — match cleanly. Prefer -ing on both sides rather than mixing a gerund with a to-infinitive.\n\n**Tip:** Prefer watering… and pruning… rather than mixing -ing with to-infinitives."
       ],
       "highlights": [
         "jazz standards, folk ballads, and indie rock",
@@ -64,7 +76,7 @@
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.13",
-      "solution_overview": "Check lists of nouns, infinitives, and gerunds one item at a time. A single mismatched form is enough to mark the sentence false, even if the meaning is clear."
+      "solution_overview": "A short set mixing noun lists, infinitive plans, skill comparisons, and course aims. Scan each series for one item that quietly changes grammatical shape.\n\n**Part 1: What to watch for.**\n\nFocus on parallel noun objects after mixed, infinitive chains after was to, adjective + preposition + gerund pairs in comparisons, and bare infinitives after aims to. The false marks almost always hide in the last item of the series.\n\n**Part 2: How to decide.**\n\nRead the list left to right and freeze the opening pattern. If the last branch cannot swap places with the first without changing structure, mark the sentence false.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-13-03",
@@ -78,13 +90,19 @@
         "Our goals are finishing homework early, sleeping enough, and to exercise daily.",
         "The judge asked whether the answers were complete, accurate, and fair."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Three matching \"how to\" phrases keep the instructions parallel.\n\nTip: Repeat how to before each step when the shared frame is \"explains how to.\"",
-        "FALSE — Two adjectives are followed by a verb phrase (\"pay rent\").\n\nTip: Use three adjectives, or rewrite the third as punctual with rent.",
-        "TRUE — \"Both…and\" links two matching past-tense verb phrases.\n\nTip: Place the same kind of phrase after each half of the correlative.",
-        "FALSE — Two gerunds are paired with an infinitive (\"to exercise\").\n\nTip: Keep the -ing series: finishing, sleeping, and exercising.",
-        "TRUE — Three adjectives after \"were\" form a clean parallel list.\n\nTip: After a linking verb, adjective chains should stay adjectives throughout."
+        "**A) The leaflet explains how to book a seat, how to print a ticket, and how to find the platform.**  (true)\n\nThree matching how to phrases — book a seat, print a ticket, find the platform — keep the instructions parallel under explains how to. Repeating how to before each step makes the shared frame unmistakable.\n\n**Tip:** Repeat how to before each step when the shared frame is explains how to.",
+        "**B) Ideal flatmates should be tidy, considerate, and pay rent on time.**  (false)\n\nTrap: tidy and considerate are adjectives, but pay rent on time is a verb phrase. Use three adjectives (tidy, considerate, and punctual with rent), or rewrite the whole list as verbs if that is the intended idea.",
+        "**C) The club both renovated the court and installed new lights.**  (true)\n\nBoth…and links renovated the court and installed new lights — two matching past-tense verb phrases. Place the same kind of phrase after each half of the correlative.\n\n**Tip:** Place the same kind of phrase after each half of the correlative.",
+        "**D) Our goals are finishing homework early, sleeping enough, and to exercise daily.**  (false)\n\nTrap: finishing and sleeping are gerunds, but to exercise is an infinitive. Keep the -ing series: finishing homework early, sleeping enough, and exercising daily.",
+        "**E) The judge asked whether the answers were complete, accurate, and fair.**  (true)\n\nThree adjectives after were — complete, accurate, and fair — form a clean parallel list. After a linking verb, adjective chains should stay adjectives throughout.\n\n**Tip:** After a linking verb, adjective chains should stay adjectives throughout."
       ],
       "highlights": [
         "how to book a seat, how to print a ticket, and how to find",
@@ -96,7 +114,7 @@
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.13",
-      "solution_overview": "Watch for adjective lists that suddenly become verbs, and for goals written as mixed gerunds and infinitives. Keep the opening pattern through the last item."
+      "solution_overview": "Instructions, flatmate traits, club upgrades, personal goals, and a judge's checklist — all as A–E lists. Keep the opening pattern alive through the last item.\n\n**Part 1: What to watch for.**\n\nWatch for matching how to phrases, adjective lists that suddenly become verbs, both…and with matching verb phrases, goals written as mixed gerunds and infinitives, and clean adjective chains after were.\n\n**Part 2: How to decide.**\n\nAsk what grammatical template the sentence starts with — how to…, adjective…, past-tense verb…, gerund… — then force every later branch to copy it. Reject any sentence that switches mid-list.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-13-04",
@@ -110,13 +128,19 @@
         "Cooking requires patience, practice, and a sharp knife.",
         "He spends weekends repairing bikes, coaching juniors, and to race himself."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Two adjectives are followed by a full clause.\n\nTip: Use three adjectives: long, confusing, and dull.",
-        "TRUE — \"Not only…but also\" joins two matching past-tense verb phrases.\n\nTip: Keep the same verb shape after each half of the correlative.",
-        "FALSE — Two bare infinitives after \"must\" are followed by a to-infinitive.\n\nTip: After must, stay bare: board, not to board.",
-        "TRUE — Three noun phrases after \"requires\" sit in parallel.\n\nTip: Noun lists after requires/needs are usually the safest parallel choice.",
-        "FALSE — Two gerunds are paired with an infinitive (\"to race\").\n\nTip: Use racing himself to keep the -ing pattern."
+        "**A) The film was long, confusing, and it bored the audience.**  (false)\n\nTrap: long and confusing are adjectives, but it bored the audience is a full clause. Use three adjectives — long, confusing, and dull — so every item sits in the same slot after was.",
+        "**B) She not only packed the tent but also checked the weather forecast.**  (true)\n\nNot only…but also joins packed the tent and checked the weather forecast — two matching past-tense verb phrases. Keep the same verb shape after each half of the correlative.\n\n**Tip:** Keep the same verb shape after each half of the correlative.",
+        "**C) Passengers must queue calmly, show their tickets, and to board in groups.**  (false)\n\nTrap: queue and show are bare infinitives after must, but to board brings in an unwanted to. After must, stay bare: board in groups, not to board.",
+        "**D) Cooking requires patience, practice, and a sharp knife.**  (true)\n\nThree noun phrases after requires — patience, practice, and a sharp knife — sit in parallel. Noun lists after requires/needs are usually the safest parallel choice.\n\n**Tip:** Noun lists after requires/needs are usually the safest parallel choice.",
+        "**E) He spends weekends repairing bikes, coaching juniors, and to race himself.**  (false)\n\nTrap: repairing and coaching are gerunds, but to race is an infinitive. Use racing himself to keep the -ing pattern after spends weekends."
       ],
       "highlights": [
         "and it bored",
@@ -128,7 +152,7 @@
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.13",
-      "solution_overview": "Warm-up items mix adjective lists, correlatives, and shared modals. Name the first item's form, then reject any ending that cannot wear the same grammatical clothes."
+      "solution_overview": "Warm-up items mixing film reviews, packing correlatives, boarding instructions, cooking needs, and weekend hobbies. Name the first item's form before you trust the ending.\n\n**Part 1: What to watch for.**\n\nThe usual traps are adjective lists that finish as clauses, not only…but also with matching verb phrases, shared must with a stray to-infinitive, noun objects after requires, and gerund series broken by an infinitive.\n\n**Part 2: How to decide.**\n\nLabel item one (adjective, bare infinitive after must, gerund, noun), then reject any ending that cannot wear those same clothes. Correlatives need matching halves, not just related ideas.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-13-05",
@@ -142,13 +166,19 @@
         "Spectators clapped loudly, whistled in rhythm, and waved homemade banners.",
         "She wants a laptop that is light, that is quiet, and affordable."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Two \"because of + noun\" phrases are followed by an independent clause.\n\nTip: Use because of the cheerful group so every reason stays a noun phrase.",
-        "TRUE — \"Either…or\" joins two matching bare infinitives with the same subject.\n\nTip: Keep leave… or carry… — same subject, same verb form.",
-        "FALSE — Two gerunds after \"calls for\" are followed by an infinitive.\n\nTip: Finish with simmering the sauce to keep the gerund list.",
-        "TRUE — Three past-tense verb phrases describe the crowd in parallel.\n\nTip: Shared tense and subject make verb lists easy to keep balanced.",
-        "FALSE — Two \"that is\" relatives are followed by an adjective missing \"that is.\"\n\nTip: Write that is affordable, or drop that is before all three."
+        "**A) The hike was rewarding because of the views, because of the fresh air, and the group was cheerful.**  (false)\n\nTrap: two because of + noun phrases are followed by an independent clause (the group was cheerful). Use because of the cheerful group so every reason stays a noun phrase under because of.",
+        "**B) Either leave your bags in the locker or carry them with you at all times.**  (true)\n\nEither…or joins leave your bags… and carry them… — two matching bare infinitives with the same subject. Keep leave… or carry…: same subject, same verb form.\n\n**Tip:** Keep leave… or carry… — same subject, same verb form.",
+        "**C) The recipe calls for chopping the onions, frying the spices, and to simmer the sauce.**  (false)\n\nTrap: chopping and frying are gerunds after calls for, but to simmer is an infinitive. Finish with simmering the sauce to keep the gerund list intact.",
+        "**D) Spectators clapped loudly, whistled in rhythm, and waved homemade banners.**  (true)\n\nThree past-tense verb phrases — clapped, whistled, and waved — describe the crowd in parallel. Shared tense and subject make verb lists easy to keep balanced.\n\n**Tip:** Shared tense and subject make verb lists easy to keep balanced.",
+        "**E) She wants a laptop that is light, that is quiet, and affordable.**  (false)\n\nTrap: two that is relatives are followed by affordable alone, missing that is. Write that is affordable, or drop that is before all three adjectives and list them as a plain chain."
       ],
       "highlights": [
         "and the group was cheerful",
@@ -160,7 +190,7 @@
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.13",
-      "solution_overview": "Repeated subordinators and correlatives fail when the last branch changes shape. Check that because of, either…or, and that is appear consistently—or rewrite the whole list."
+      "solution_overview": "Reasons for a hike, locker instructions, a recipe sequence, a lively crowd, and a laptop wish-list. Repeated subordinators and correlatives fail when the last branch changes shape.\n\n**Part 1: What to watch for.**\n\nCheck that because of, either…or, calls for + gerund, past-tense verb lists, and that is relatives appear consistently across every branch — or rewrite the whole list in one frame.\n\n**Part 2: How to decide.**\n\nIf a marker appears twice, the third branch almost always needs it too. Read the list aloud; an abrupt change of rhythm usually signals a break in form.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-13-06",
@@ -174,13 +204,19 @@
         "Neither the rain nor the wind stopped the outdoor market.",
         "Her weekend routine involves cycling to the bakery, collecting the newspaper, and she waters the plants."
       ],
-      "answer_key": [true, false, false, true, false],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Three matching \"by + gerund\" phrases form a parallel means list.\n\nTip: Repeating by before each gerund keeps the causal list balanced.",
-        "FALSE — Two adjectives are followed by a clause.\n\nTip: Use three adjectives: informative, interactive, and memorable.",
-        "FALSE — Two infinitives after \"asked…to\" are followed by a noun phrase.\n\nTip: Add to give feedback after practice to keep the infinitive series.",
-        "TRUE — \"Neither…nor\" joins two matching noun phrases as a compound subject.\n\nTip: Keep both sides the same category: noun + noun, not noun + clause.",
-        "FALSE — Two gerunds are followed by an independent clause.\n\nTip: Use watering the plants so every item stays a gerund."
+        "**A) By stretching carefully, by drinking water, and by resting between sets, he avoided injury.**  (true)\n\nThree matching by + gerund phrases — stretching, drinking, resting — form a parallel means list. Repeating by before each gerund keeps the causal list balanced and easy to hear.\n\n**Tip:** Repeating by before each gerund keeps the causal list balanced.",
+        "**B) The museum tour was informative, interactive, and we learned about local pottery.**  (false)\n\nTrap: informative and interactive are adjectives, but we learned about local pottery is a clause. Use three adjectives — informative, interactive, and memorable — after was.",
+        "**C) Parents asked the coach to explain the drills, to demonstrate each move, and feedback after practice.**  (false)\n\nTrap: to explain and to demonstrate are infinitives after asked…to, but feedback after practice is a bare noun phrase. Add to give feedback after practice to keep the infinitive series.",
+        "**D) Neither the rain nor the wind stopped the outdoor market.**  (true)\n\nNeither…nor joins the rain and the wind — two matching noun phrases as a compound subject. Keep both sides the same category: noun + noun, not noun + clause.\n\n**Tip:** Keep both sides the same category: noun + noun, not noun + clause.",
+        "**E) Her weekend routine involves cycling to the bakery, collecting the newspaper, and she waters the plants.**  (false)\n\nTrap: cycling and collecting are gerunds, but she waters the plants is an independent clause. Use watering the plants so every item after involves stays a gerund."
       ],
       "highlights": [
         "By stretching carefully, by drinking water, and by resting",
@@ -192,7 +228,7 @@
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.13",
-      "solution_overview": "Means lists with by + gerund and correlatives like neither…nor are clean when the pattern repeats. Trailing clauses after adjective or gerund pairs are the usual false marks here."
+      "solution_overview": "Means lists with by + gerund, museum descriptions, coach requests, weather correlatives, and weekend routines. Trailing clauses after adjective or gerund pairs are the usual false marks.\n\n**Part 1: What to watch for.**\n\nClean patterns here are by + gerund means lists and neither…nor with matching nouns. Dirty patterns are adjective pairs that finish as clauses, infinitive series that end as bare nouns, and gerund pairs that end as independent clauses.\n\n**Part 2: How to decide.**\n\nTreat the first branch as a template. If the last item is a new clause or a different part of speech, mark false — meaning alone never rescues a broken list.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-13-07",
@@ -206,13 +242,19 @@
         "His strengths are curiosity, humour, and solving puzzles quickly.",
         "The committee voted to approve the mural, to hire a local artist, and to schedule the unveiling."
       ],
-      "answer_key": [false, true, false, false, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Two gerunds are followed by a noun phrase (\"attendance\").\n\nTip: Use attending matches to keep the gerund pattern.",
-        "TRUE — Three bare infinitives after \"can\" form a matching series.\n\nTip: Shared modals (can/must/should) demand the same bare verb form each time.",
-        "FALSE — \"Both…and\" joins an infinitive to a gerund.\n\nTip: Both to buy… and to decorate…, or both buying… and decorating…",
-        "FALSE — Two noun phrases are followed by a gerund phrase.\n\nTip: Use quick puzzle-solving so all three items are nouns.",
-        "TRUE — Three infinitives after \"voted to\" stay in parallel.\n\nTip: Repeating \"to\" before each verb is optional but often clearer."
+        "**A) The role of team captain involves motivating players, planning practices, and attendance at matches.**  (false)\n\nTrap: motivating and planning are gerunds, but attendance at matches is a noun phrase. Use attending matches to keep the gerund pattern after involves.",
+        "**B) We are looking for someone who can think clearly, act calmly, and speak kindly.**  (true)\n\nThree bare infinitives after can — think, act, and speak — form a matching series. Shared modals (can / must / should) demand the same bare verb form each time.\n\n**Tip:** Shared modals (can/must/should) demand the same bare verb form each time.",
+        "**C) The prize will be used both to buy new books and decorating the reading corner.**  (false)\n\nTrap: both…and joins to buy new books (infinitive) to decorating the reading corner (gerund). Write both to buy… and to decorate…, or both buying… and decorating….",
+        "**D) His strengths are curiosity, humour, and solving puzzles quickly.**  (false)\n\nTrap: curiosity and humour are nouns, but solving puzzles quickly is a gerund phrase. Use quick puzzle-solving so all three items after are stay noun phrases.",
+        "**E) The committee voted to approve the mural, to hire a local artist, and to schedule the unveiling.**  (true)\n\nThree infinitives after voted to — approve, hire, and schedule — stay in parallel. Repeating to before each verb is optional but often clearer for equal weight.\n\n**Tip:** Repeating to before each verb is optional but often clearer."
       ],
       "highlights": [
         "attendance at matches",
@@ -224,7 +266,7 @@
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.13",
-      "solution_overview": "Duty lists and \"both…and\" often hide mixed nouns, gerunds, and infinitives. Convert every item into the same type before you judge the sentence true."
+      "solution_overview": "Captain duties, calm applicants, reading-corner prizes, personal strengths, and mural votes. Duty lists and both…and often hide mixed nouns, gerunds, and infinitives.\n\n**Part 1: What to watch for.**\n\nConvert every item into the same type before you judge: gerund objects after involves, bare infinitives after can, matching infinitives or gerunds after both…and, all nouns after are, and infinitives after voted to.\n\n**Part 2: How to decide.**\n\nSay the opening type out loud — gerund, bare verb, noun, to-infinitive — then force every later item to match. If you cannot swap item three with item one, the sentence is false.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-13-08",
@@ -238,13 +280,19 @@
         "We aim not only to finish the trail but also the photos for the blog.",
         "The workshop taught participants to define goals, to map their route, and to pack a first-aid kit."
       ],
-      "answer_key": [false, false, true, false, true],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Two \"in + gerund\" phrases are followed by an independent clause.\n\nTip: Keep the preposition pattern: in raising…, in recruiting…, and in increasing donations.",
-        "FALSE — \"Either…or\" joins a bare infinitive to a full clause with a new subject.\n\nTip: Either enclose a sketchbook or submit a link — same subject, same verb form.",
-        "TRUE — Three noun phrases follow \"known for\" in parallel.\n\nTip: After \"for,\" noun lists are usually the safest parallel choice.",
-        "FALSE — \"Not only…but also\" joins an infinitive to a bare noun.\n\nTip: Not only to finish the trail but also to edit the photos — match both halves.",
-        "TRUE — Three infinitives after \"taught…to\" match cleanly.\n\nTip: Repeat \"to\" when it keeps each learning outcome equally weighted."
+        "**A) The campaign was effective in raising awareness, in recruiting helpers, and donations increased.**  (false)\n\nTrap: two in + gerund phrases are followed by an independent clause (donations increased). Keep the preposition pattern: in raising…, in recruiting…, and in increasing donations.",
+        "**B) Applicants must either enclose a sketchbook or they submit a link to an online gallery.**  (false)\n\nTrap: either…or joins enclose a sketchbook (bare infinitive) to they submit a link (full clause with a new subject). Write either enclose a sketchbook or submit a link — same subject, same verb form.",
+        "**C) The chef is known for bold flavours, neat plating, and generous portions.**  (true)\n\nThree noun phrases — bold flavours, neat plating, and generous portions — follow known for in parallel. After for, noun lists are usually the safest parallel choice.\n\n**Tip:** After for, noun lists are usually the safest parallel choice.",
+        "**D) We aim not only to finish the trail but also the photos for the blog.**  (false)\n\nTrap: not only…but also joins to finish the trail (infinitive) to the photos for the blog (bare noun). Match both halves: not only to finish the trail but also to edit the photos.",
+        "**E) The workshop taught participants to define goals, to map their route, and to pack a first-aid kit.**  (true)\n\nThree infinitives after taught…to — define, map, and pack — match cleanly. Repeat to when it keeps each learning outcome equally weighted.\n\n**Tip:** Repeat to when it keeps each learning outcome equally weighted."
       ],
       "highlights": [
         "and donations increased",
@@ -256,7 +304,7 @@
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.13",
-      "solution_overview": "Correlatives fail when one side is a phrase and the other is a clause, or when one side has \"to\" and the other does not. Balance the two halves before you look at meaning."
+      "solution_overview": "Awareness campaigns, sketchbook applications, chef reputation, trail blogs, and workshop goals. Correlatives fail when one side is a phrase and the other is a clause — or when one side has to and the other does not.\n\n**Part 1: What to watch for.**\n\nBalance both halves of either…or and not only…but also before you look at meaning. Also watch in + gerund means lists, noun objects after known for, and infinitive teach-lists after taught…to.\n\n**Part 2: How to decide.**\n\nCover one correlative half with your finger and check whether the other half could stand in the same grammatical slot. If not, the sentence is false no matter how sensible it sounds.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-13-09",
@@ -270,13 +318,19 @@
         "She speaks fluently in Spanish, in Italian, and Portuguese.",
         "The app can track sleep, count steps, and remind users to drink water."
       ],
-      "answer_key": [false, true, false, false, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Two infinitives are followed by a noun phrase without \"to provide/submit.\"\n\nTip: Add to include a signed consent form, or turn all three into nouns after \"submit.\"",
-        "TRUE — Three prepositional routes stay parallel after \"whether.\"\n\nTip: Keep the same preposition pattern (by… / by… / on…) when listing channels.",
-        "FALSE — Two adjectives are followed by a clause.\n\nTip: Use three adjectives: ambitious, controversial, and risky.",
-        "FALSE — \"In\" appears before the first two languages but not the third.\n\nTip: Repeat in before Portuguese, or drop in before all three.",
-        "TRUE — Three bare infinitives after \"can\" form a matching list.\n\nTip: Shared auxiliaries make parallel verb lists especially clear."
+        "**A) The contest requires entrants to submit a photo, to write a short caption, and a signed consent form.**  (false)\n\nTrap: to submit and to write are infinitives, but a signed consent form is a noun without to provide/submit. Add to include a signed consent form, or turn all three into nouns after submit.",
+        "**B) Whether by bus, by bike, or on foot, students must reach the hall by nine.**  (true)\n\nThree prepositional routes — by bus, by bike, or on foot — stay parallel after whether. Keep the same preposition pattern (by… / by… / on…) when listing channels of travel.\n\n**Tip:** Keep the same preposition pattern (by… / by… / on…) when listing channels.",
+        "**C) The renovation plan is ambitious, controversial, and it may stall.**  (false)\n\nTrap: ambitious and controversial are adjectives, but it may stall is a clause. Use three adjectives — ambitious, controversial, and risky — after is.",
+        "**D) She speaks fluently in Spanish, in Italian, and Portuguese.**  (false)\n\nTrap: in appears before Spanish and Italian but not Portuguese. Repeat in before Portuguese, or drop in before all three language names.",
+        "**E) The app can track sleep, count steps, and remind users to drink water.**  (true)\n\nThree bare infinitives after can — track, count, and remind — form a matching list. Shared auxiliaries make parallel verb lists especially clear.\n\n**Tip:** Shared auxiliaries make parallel verb lists especially clear."
       ],
       "highlights": [
         "and a signed consent form",
@@ -288,7 +342,7 @@
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.13",
-      "solution_overview": "Missing repeated prepositions and trailing clauses after adjective pairs are subtler errors. Read the list aloud; an abrupt change of rhythm usually signals a break in form."
+      "solution_overview": "Contest entries, travel routes, renovation politics, language skills, and fitness apps. Missing repeated prepositions and trailing clauses after adjective pairs are the subtler errors here.\n\n**Part 1: What to watch for.**\n\nLook for infinitive series that end as nouns, whether + preposition route lists, adjective pairs that finish as clauses, language lists that drop in, and bare infinitives after can.\n\n**Part 2: How to decide.**\n\nRead the list aloud and listen for a change of rhythm. An item that would not fit if it were moved to first position is almost always the parallel break.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-13-10",
@@ -302,13 +356,19 @@
         "Not only did they repair the roof, but they also painted the shutters.",
         "His advice was to arrive early, sitting near the aisle, and leave during the interval."
       ],
-      "answer_key": [false, false, true, true, false],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Two \"that\" clauses are followed by a bare clause missing \"that.\"\n\nTip: Repeat that before morale was high.",
-        "FALSE — \"Prefer A to B\" needs matching forms; walking is paired with cycle.\n\nTip: Prefer walking… to cycling… (two gerunds).",
-        "TRUE — Three noun phrases after \"offered\" stay parallel.\n\nTip: Event programmes often list noun objects cleanly when nothing switches to a clause.",
-        "TRUE — Inverted \"not only\" is balanced by \"but…also\" with a parallel past-tense verb phrase.\n\nTip: Keep both predicates finite and matching after not only…but also.",
-        "FALSE — An infinitive series is broken by a gerund (\"sitting\").\n\nTip: Use to sit near the aisle to keep the infinitive pattern."
+        "**A) The coach argued that fitness was improving, that teamwork was stronger, and morale was high.**  (false)\n\nTrap: two that clauses are followed by a bare clause missing that (morale was high). Repeat that before morale was high so every claim stays under argued that.",
+        "**B) She prefers walking in the park to cycle along the busy ring road.**  (false)\n\nTrap: prefer A to B needs matching forms; walking is paired with cycle. Prefer walking in the park to cycling along the busy ring road — two gerunds.",
+        "**C) The festival offered live music, outdoor workshops, and free sketching materials.**  (true)\n\nThree noun phrases after offered — live music, outdoor workshops, and free sketching materials — stay parallel. Event programmes list noun objects cleanly when nothing switches to a clause.\n\n**Tip:** Event programmes list noun objects cleanly when nothing switches to a clause.",
+        "**D) Not only did they repair the roof, but they also painted the shutters.**  (true)\n\nInverted not only is balanced by but…also with a parallel past-tense verb phrase (painted the shutters). Keep both predicates finite and matching after not only…but also.\n\n**Tip:** Keep both predicates finite and matching after not only…but also.",
+        "**E) His advice was to arrive early, sitting near the aisle, and leave during the interval.**  (false)\n\nTrap: an infinitive series (to arrive…, and leave…) is broken by sitting (a gerund). Use to sit near the aisle to keep the infinitive pattern through the middle item."
       ],
       "highlights": [
         "and morale was high",
@@ -320,7 +380,7 @@
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.13",
-      "solution_overview": "Repeated that-clauses and prefer…to constructions need matching markers on every branch. Prefer A to B fails when one side is -ing and the other is a bare infinitive."
+      "solution_overview": "Team-talk that-clauses, prefer…to choices, festival offerings, inverted not only…but also, and seating advice. Matching markers must appear on every branch.\n\n**Part 1: What to watch for.**\n\nRepeated that-clauses need that each time; prefer A to B needs matching forms on both sides; noun festival lists should stay nouns; inverted not only needs a matching finite predicate; infinitive advice chains must not slip into gerunds.\n\n**Part 2: How to decide.**\n\nFor prefer…to and that-chains, place the first marker beside the last item and ask whether it still fits. Prefer walking… to cycling… (two gerunds) — never walking… to cycle….\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-13-11",
@@ -334,13 +394,19 @@
         "He is neither interested in chess nor in collecting stamps.",
         "To cook well, to plate neatly, and cleaning the kitchen quickly are all part of the shift."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Two gerunds after \"forbids\" are followed by an infinitive.\n\nTip: Use leaving bicycles… so every banned action is a gerund.",
-        "TRUE — \"As much as…\" balances two matching \"loves + gerund\" clauses.\n\nTip: Correlative as much as often needs mirrored verb + complement patterns.",
-        "FALSE — Two \"whether\" clauses are followed by a bare clause missing \"whether.\"\n\nTip: Repeat whether before cards were renewed.",
-        "TRUE — \"Neither…nor\" joins two matching \"in + gerund/noun\" phrases after \"interested.\"\n\nTip: Keep the same preposition after neither and nor.",
-        "FALSE — Two infinitive subjects are followed by a gerund subject.\n\nTip: Use to clean the kitchen quickly so all three subjects are infinitives."
+        "**A) The notice forbids smoking indoors, bringing pets, and to leave bicycles in the hallway.**  (false)\n\nTrap: smoking and bringing are gerunds after forbids, but to leave is an infinitive. Use leaving bicycles in the hallway so every banned action is a gerund.",
+        "**B) As much as she loves painting landscapes, she loves photographing them too.**  (true)\n\nAs much as… balances two matching loves + gerund clauses (painting… / photographing…). Correlative as much as often needs mirrored verb + complement patterns on both sides.\n\n**Tip:** Correlative as much as often needs mirrored verb + complement patterns.",
+        "**C) The librarian asked whether the books were returned, whether fines were paid, and cards renewed.**  (false)\n\nTrap: two whether clauses are followed by a bare clause missing whether (cards renewed). Repeat whether before cards were renewed.",
+        "**D) He is neither interested in chess nor in collecting stamps.**  (true)\n\nNeither…nor joins in chess and in collecting stamps — matching in + noun/gerund phrases after interested. Keep the same preposition after neither and nor.\n\n**Tip:** Keep the same preposition after neither and nor.",
+        "**E) To cook well, to plate neatly, and cleaning the kitchen quickly are all part of the shift.**  (false)\n\nTrap: to cook and to plate are infinitive subjects, but cleaning the kitchen is a gerund subject. Use to clean the kitchen quickly so all three subjects are infinitives."
       ],
       "highlights": [
         "and to leave bicycles",
@@ -352,7 +418,7 @@
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.13",
-      "solution_overview": "Verb bans, whether-chains, and infinitive subjects look fine until the last item switches form. Treat the first branch as a template and force every later branch to copy it."
+      "solution_overview": "Notices, artistic tastes, library checklists, hobbies under neither…nor, and shift duties as subjects. Verb bans, whether-chains, and infinitive subjects look fine until the last item switches form.\n\n**Part 1: What to watch for.**\n\nTreat the first branch as a template: gerunds after forbids, mirrored loves + gerund under as much as, whether repeated on every checklist item, matching in-phrases after neither…nor, and all-infinitive compound subjects.\n\n**Part 2: How to decide.**\n\nForce every later branch to copy the first. If you see forbids… -ing, -ing, to… or to…, to…, -ing as a subject list, mark false immediately.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-13-12",
@@ -366,13 +432,19 @@
         "The trainer emphasised warming up properly, cooling down slowly, and drinking enough water.",
         "His reply was polite, brief, and unexpectedly helpful."
       ],
-      "answer_key": [false, false, false, true, true],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Two noun phrases are followed by a that-clause.\n\nTip: Use refundable tickets as a third noun phrase.",
-        "FALSE — Two \"whether to\" infinitives are followed by a gerund.\n\nTip: Or whether to cancel altogether keeps the pattern.",
-        "FALSE — Two \"because of + noun\" phrases are followed by a because-clause.\n\nTip: Use because of a dead phone battery so every reason stays a noun phrase—or rewrite all three as clauses.",
-        "TRUE — Three gerund phrases after \"emphasised\" stay parallel.\n\nTip: Long gerund objects remain correct when every item is -ing + complement.",
-        "TRUE — Three adjectives after \"was\" form a clean parallel list.\n\nTip: Adverbs like unexpectedly can modify an adjective without breaking the list."
+        "**A) The brochure promises clearer maps, shorter queues, and that tickets will be refundable.**  (false)\n\nTrap: clearer maps and shorter queues are noun phrases, but that tickets will be refundable is a that-clause. Use refundable tickets as a third noun phrase.",
+        "**B) Whether to reschedule the match, whether to move indoors, or cancelling altogether was debated for hours.**  (false)\n\nTrap: two whether to infinitives are followed by cancelling (a gerund). Or whether to cancel altogether keeps the whether to pattern on every option.",
+        "**C) She left early because of a headache, because of the noise, and because her phone battery had died.**  (false)\n\nTrap: two because of + noun phrases are followed by a because-clause. Use because of a dead phone battery so every reason stays a noun phrase — or rewrite all three as because-clauses.",
+        "**D) The trainer emphasised warming up properly, cooling down slowly, and drinking enough water.**  (true)\n\nThree gerund phrases after emphasised — warming up, cooling down, and drinking — stay parallel. Long gerund objects remain correct when every item is -ing + complement.\n\n**Tip:** Long gerund objects remain correct when every item is -ing + complement.",
+        "**E) His reply was polite, brief, and unexpectedly helpful.**  (true)\n\nThree adjectives after was — polite, brief, and unexpectedly helpful — form a clean parallel list. Adverbs like unexpectedly can modify an adjective without breaking the list.\n\n**Tip:** Adverbs like unexpectedly can modify an adjective without breaking the list."
       ],
       "highlights": [
         "and that tickets will be refundable",
@@ -384,7 +456,7 @@
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.13",
-      "solution_overview": "Mid-band items mix brochure-style noun lists with whether-to chains and mixed reason frames. Pick one frame—nouns, whether to, or because of—and hold it through every item."
+      "solution_overview": "Brochure promises, indoor/outdoor debates, mixed reason frames, training emphasis, and a helpful reply. Mid-band items mix noun lists with whether-to chains and because of / because clashes.\n\n**Part 1: What to watch for.**\n\nPick one frame — nouns, whether to, because of, gerunds after emphasised, or adjectives after was — and hold it through every item. Mixing a that-clause into a noun list, or a gerund into a whether-to chain, is the classic fail.\n\n**Part 2: How to decide.**\n\nWrite the first item's frame in the margin, then rewrite the last item mentally using that same frame. If the rewrite needs a different scaffold, the original sentence is false.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-13-13",
@@ -398,13 +470,19 @@
         "Her weekend is as much about cooking for friends as it is about catching up on sleep.",
         "The motion was neither seconded promptly nor was it discussed on the merits."
       ],
-      "answer_key": [false, false, true, true, false],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — \"Not so much…as\" joins \"on + noun\" to a bare gerund without \"on.\"\n\nTip: Not so much on raw talent as on practising every evening — repeat on.",
-        "FALSE — Two \"whether to\" infinitives are followed by a gerund.\n\nTip: Or whether to install a gate keeps the pattern.",
-        "TRUE — Three gerund phrases after \"forbid\" stay parallel.\n\nTip: Long gerund objects remain correct when every item is -ing + complement.",
-        "TRUE — \"As much…as\" balances two \"about + gerund\" ideas with matching \"it is.\"\n\nTip: Correlative as much…as often needs mirrored about-phrases.",
-        "FALSE — \"Neither…nor\" joins a past participle phrase to an inverted clause.\n\nTip: Neither seconded promptly nor discussed on the merits — two past participles."
+        "**A) Success on the course depended not so much on raw talent as practising every evening.**  (false)\n\nTrap: not so much…as joins on raw talent to a bare gerund without on. Write not so much on raw talent as on practising every evening — repeat on.",
+        "**B) The neighbours debated whether to plant hedges, whether to build a fence, or installing a gate.**  (false)\n\nTrap: two whether to infinitives are followed by installing (a gerund). Or whether to install a gate keeps the pattern on every alternative.",
+        "**C) House rules forbid leaving dishes overnight, borrowing tools without asking, and using the roof terrace after midnight.**  (true)\n\nThree gerund phrases after forbid — leaving, borrowing, and using — stay parallel. Long gerund objects remain correct when every item is -ing + complement.\n\n**Tip:** Long gerund objects remain correct when every item is -ing + complement.",
+        "**D) Her weekend is as much about cooking for friends as it is about catching up on sleep.**  (true)\n\nAs much…as balances two about + gerund ideas with matching it is (about cooking… / about catching up…). Correlative as much…as often needs mirrored about-phrases.\n\n**Tip:** Correlative as much…as often needs mirrored about-phrases.",
+        "**E) The motion was neither seconded promptly nor was it discussed on the merits.**  (false)\n\nTrap: neither…nor joins seconded promptly (past participle phrase) to was it discussed… (inverted clause). Write neither seconded promptly nor discussed on the merits — two past participles."
       ],
       "highlights": [
         "as practising every evening",
@@ -416,7 +494,7 @@
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.13",
-      "solution_overview": "Advanced correlatives (not so much…as, as much…as, whether to…) fail when the second half drops a preposition or switches to a different verb form. Match the scaffolding, not just the topic."
+      "solution_overview": "Advanced correlatives — not so much…as, whether to…, as much…as, neither…nor — plus a clean house-rules gerund list. Match the scaffolding, not just the topic.\n\n**Part 1: What to watch for.**\n\nThese frames fail when the second half drops a preposition, switches from whether to + infinitive to a bare gerund, or flips from a past participle into an inverted finite clause after nor.\n\n**Part 2: How to decide.**\n\nAlign the prepositions and verb forms first; only then ask whether the ideas belong together. A matching topic with mismatched scaffolding is still false.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-13-14",
@@ -430,13 +508,19 @@
         "We will either finish the quilt this weekend or postpone the sewing circle until Friday.",
         "The rule requires that guests sign in, that they leave keys at reception, and bikes be locked outside."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Two noun phrases are followed by a that-clause.\n\nTip: Use nearby parking as a third noun phrase.",
-        "TRUE — Three matching \"by + gerund\" phrases form a parallel means list.\n\nTip: Repeating by before each gerund keeps the causal list balanced.",
-        "FALSE — Two \"how\" clauses are followed by a noun phrase.\n\nTip: Add how she delivered her closing thank-you to keep the how-pattern.",
-        "TRUE — \"Either…or\" joins two matching bare infinitives after \"will.\"\n\nTip: Shared will + either…or needs the same bare verb form on both sides.",
-        "FALSE — Two \"that\" clauses are followed by a bare clause missing \"that.\"\n\nTip: Repeat that before bikes be locked outside."
+        "**A) The flyer promises visitors free entry, guided tours, and that parking will be available nearby.**  (false)\n\nTrap: free entry and guided tours are noun phrases, but that parking will be available nearby is a that-clause. Use nearby parking as a third noun phrase.",
+        "**B) By labelling drawers clearly, by colour-coding folders, and by clearing the desk nightly, she found her keys faster.**  (true)\n\nThree matching by + gerund phrases — labelling, colour-coding, and clearing — form a parallel means list. Repeating by before each gerund keeps the causal list balanced.\n\n**Tip:** Repeating by before each gerund keeps the causal list balanced.",
+        "**C) The candidate was praised for how she handled questions, how she framed answers, and her closing thank-you.**  (false)\n\nTrap: two how clauses are followed by a noun phrase (her closing thank-you). Add how she delivered her closing thank-you to keep the how-pattern.",
+        "**D) We will either finish the quilt this weekend or postpone the sewing circle until Friday.**  (true)\n\nEither…or joins finish… and postpone… — two matching bare infinitives after will. Shared will + either…or needs the same bare verb form on both sides.\n\n**Tip:** Shared will + either…or needs the same bare verb form on both sides.",
+        "**E) The rule requires that guests sign in, that they leave keys at reception, and bikes be locked outside.**  (false)\n\nTrap: two that clauses are followed by a bare clause missing that (bikes be locked outside). Repeat that before bikes be locked outside."
       ],
       "highlights": [
         "and that parking will be available",
@@ -448,7 +532,7 @@
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.13",
-      "solution_overview": "Flyer language and house rules often stack that-clauses. If that appears twice, the third clause almost always needs it too—or all three should be rewritten as nouns."
+      "solution_overview": "Flyer language, drawer-labelling means lists, interview praise, quilt plans, and reception rules. Flyer promises and house rules often stack that-clauses.\n\n**Part 1: What to watch for.**\n\nIf that appears twice, the third clause almost always needs it too — or rewrite all three as nouns. Also watch by + gerund means lists, how-clause praise chains, and either…or after will.\n\n**Part 2: How to decide.**\n\nCount the repeated markers (by, how, that, either/or). Any branch that lacks the shared marker while the others keep it is the break in parallelism.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-13-15",
@@ -462,13 +546,19 @@
         "The club prefers meeting outdoors on Saturdays and to convene indoors on rainy Sundays.",
         "A solid packing list must specify what to wear, what to carry, and when to leave."
       ],
-      "answer_key": [false, true, false, false, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — \"Less…than\" joins \"on + noun\" to a bare gerund without \"on.\"\n\nTip: Less on expensive kit than on practising basic drills.",
-        "TRUE — Inverted \"not only\" is balanced by \"but…also\" with a parallel past-tense verb phrase.\n\nTip: Keep both predicates finite and matching after not only…but also.",
-        "FALSE — Two \"that is\" relatives are followed by an adjective missing \"that is.\"\n\nTip: Write that is useful without jargon.",
-        "FALSE — A gerund (\"meeting\") is paired with an infinitive (\"to convene\").\n\nTip: Prefer meeting… and convening…, or to meet… and to convene…",
-        "TRUE — Three matching wh-infinitive phrases specify wear, carry, and leave.\n\nTip: Parallel wh-phrases are ideal for lists that must answer what and when."
+        "**A) The strategy rests less on expensive kit than practising basic drills.**  (false)\n\nTrap: less…than joins on expensive kit to a bare gerund without on. Write less on expensive kit than on practising basic drills.",
+        "**B) Not only did attendance rise in spring, but energy levels also improved.**  (true)\n\nInverted not only is balanced by but…also with a parallel past-tense verb phrase (energy levels also improved). Keep both predicates finite and matching after not only…but also.\n\n**Tip:** Keep both predicates finite and matching after not only…but also.",
+        "**C) Readers asked for a guide that is clear, that is illustrated, and useful without jargon.**  (false)\n\nTrap: two that is relatives are followed by useful without jargon, missing that is. Write that is useful without jargon to finish the relative chain.",
+        "**D) The club prefers meeting outdoors on Saturdays and to convene indoors on rainy Sundays.**  (false)\n\nTrap: meeting (gerund) is paired with to convene (infinitive) after prefers. Prefer meeting… and convening…, or to meet… and to convene… — pick one form for both days.",
+        "**E) A solid packing list must specify what to wear, what to carry, and when to leave.**  (true)\n\nThree matching wh-infinitive phrases — what to wear, what to carry, and when to leave — specify the packing list in parallel. Parallel wh-phrases are ideal for lists that must answer what and when.\n\n**Tip:** Parallel wh-phrases are ideal for lists that must answer what and when."
       ],
       "highlights": [
         "than practising basic drills",
@@ -480,7 +570,7 @@
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.13",
-      "solution_overview": "Comparative frames (less…than) and relative-clause chains demand the same marker on every branch. When in doubt, rewrite the last item so it could replace the first without changing structure."
+      "solution_overview": "Comparative frames (less…than), inverted not only…but also, relative-clause chains, prefer + mixed forms, and wh-infinitive packing lists. Demand the same marker on every branch.\n\n**Part 1: What to watch for.**\n\nLess…than needs a matching preposition on both sides; that is relatives need that is on every adjective (or on none); prefer needs matching gerunds or matching infinitives; wh-infinitives should stay in the what/when frame.\n\n**Part 2: How to decide.**\n\nWhen in doubt, rewrite the last item so it could replace the first without changing structure. If you need a new marker to make that swap, the sentence is false.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-13-16",
@@ -494,13 +584,19 @@
         "To attract volunteers, to retain helpers, and to protect their time are shared priorities.",
         "The teacher advised against skipping warm-ups, against ignoring form, and against rushing the last set."
       ],
-      "answer_key": [false, false, false, true, true],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Two noun objects are followed by an independent clause.\n\nTip: Use an eleven o'clock guest curfew so every item stays a noun phrase.",
-        "FALSE — \"Both…and\" joins a prepositional phrase to a when-clause.\n\nTip: Both in the gym and in the park — two prepositional phrases.",
-        "FALSE — Two noun objects are followed by a how-clause.\n\nTip: Use question dwell time so all three metrics are noun phrases.",
-        "TRUE — Three infinitive phrases function as a parallel compound subject.\n\nTip: Infinitive subjects can be parallel when every infinitive carries the same role.",
-        "TRUE — Three matching \"against + gerund\" phrases follow \"advised.\"\n\nTip: Repeating against before each gerund locks the parallel pattern."
+        "**A) The flatshare rules cover quiet hours, shared cleaning, and guests must leave by eleven.**  (false)\n\nTrap: quiet hours and shared cleaning are noun objects, but guests must leave by eleven is an independent clause. Use an eleven o'clock guest curfew so every item stays a noun phrase.",
+        "**B) She trains both in the gym and when the weather allows outdoor runs.**  (false)\n\nTrap: both…and joins in the gym (prepositional phrase) to when the weather allows outdoor runs (when-clause). Write both in the gym and in the park — two prepositional phrases.",
+        "**C) The quiz tracked page views, session duration, and how long users stayed on each question.**  (false)\n\nTrap: page views and session duration are noun objects, but how long users stayed… is a how-clause. Use question dwell time so all three metrics are noun phrases.",
+        "**D) To attract volunteers, to retain helpers, and to protect their time are shared priorities.**  (true)\n\nThree infinitive phrases — to attract, to retain, and to protect — function as a parallel compound subject. Infinitive subjects stay parallel when every infinitive carries the same role.\n\n**Tip:** Infinitive subjects can be parallel when every infinitive carries the same role.",
+        "**E) The teacher advised against skipping warm-ups, against ignoring form, and against rushing the last set.**  (true)\n\nThree matching against + gerund phrases follow advised. Repeating against before each gerund locks the parallel pattern for the warning list.\n\n**Tip:** Repeating against before each gerund locks the parallel pattern."
       ],
       "highlights": [
         "and guests must leave by eleven",
@@ -512,7 +608,7 @@
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.13",
-      "solution_overview": "House rules and tracking language mix nouns, infinitives, and clauses freely in drafts. Your job is to refuse that mixing: pick one frame and hold it through every item."
+      "solution_overview": "Flatshare rules, gym-versus-weather training, quiz metrics, volunteer priorities as infinitive subjects, and coach warnings with against + gerund. Drafts mix nouns, infinitives, and clauses freely — you must refuse that mixing.\n\n**Part 1: What to watch for.**\n\nPick one frame and hold it: all nouns for house-rule objects, matching prepositional phrases after both…and, all noun metrics (not a how-clause), all infinitive subjects, or all against + gerund warnings.\n\n**Part 2: How to decide.**\n\nCover the last item and ask whether it could be item one in the same grammatical clothes. Clauses after noun objects, and when-clauses after in the gym, fail that test.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-13-17",
@@ -526,13 +622,19 @@
         "Her weekend is as much about rebuilding trust with neighbours as it is about catching up on sleep.",
         "The complaint was neither acknowledged promptly nor was it investigated in full."
       ],
-      "answer_key": [false, false, true, true, false],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — \"Not so much…as\" joins \"on + noun\" to a bare gerund without \"on.\"\n\nTip: Not so much on longer rests as on rebuilding confidence — repeat on.",
-        "FALSE — Two \"whether to\" infinitives are followed by a gerund.\n\nTip: Or whether to cancel the race keeps the pattern.",
-        "TRUE — Three gerund phrases after \"forbid\" stay parallel.\n\nTip: Long gerund objects remain correct when every item is -ing + complement.",
-        "TRUE — \"As much…as\" balances two \"about + gerund/noun\" ideas with matching \"it is.\"\n\nTip: Correlative as much…as often needs mirrored about-phrases.",
-        "FALSE — \"Neither…nor\" joins a past participle phrase to an inverted clause.\n\nTip: Neither acknowledged promptly nor investigated in full — two past participles."
+        "**A) The recovery hinged not so much on longer rests as rebuilding confidence through light sessions.**  (false)\n\nTrap: not so much…as joins on longer rests to a bare gerund without on. Write not so much on longer rests as on rebuilding confidence — repeat on.",
+        "**B) Organisers debated whether to delay the start, whether to shorten the route, or cancelling the race.**  (false)\n\nTrap: two whether to infinitives are followed by cancelling (a gerund). Or whether to cancel the race keeps the pattern on every option.",
+        "**C) Hostel rules forbid accepting strangers' parcels, soliciting room swaps, and using the roof terrace after midnight.**  (true)\n\nThree gerund phrases after forbid — accepting, soliciting, and using — stay parallel. Long gerund objects remain correct when every item is -ing + complement.\n\n**Tip:** Long gerund objects remain correct when every item is -ing + complement.",
+        "**D) Her weekend is as much about rebuilding trust with neighbours as it is about catching up on sleep.**  (true)\n\nAs much…as balances two about + gerund/noun ideas with matching it is (about rebuilding trust… / about catching up…). Correlative as much…as often needs mirrored about-phrases.\n\n**Tip:** Correlative as much…as often needs mirrored about-phrases.",
+        "**E) The complaint was neither acknowledged promptly nor was it investigated in full.**  (false)\n\nTrap: neither…nor joins acknowledged promptly (past participle phrase) to was it investigated… (inverted clause). Write neither acknowledged promptly nor investigated in full — two past participles."
       ],
       "highlights": [
         "as rebuilding confidence",
@@ -544,7 +646,7 @@
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.13",
-      "solution_overview": "Advanced correlatives (not so much…as, as much…as, whether to…) fail when the second half drops a preposition or switches verb form. Match the scaffolding, not just the topic."
+      "solution_overview": "Recovery plans, race-day debates, hostel bans, neighbour trust, and complaint handling — all under advanced correlatives. Dropped prepositions and verb-form switches are the high-band traps.\n\n**Part 1: What to watch for.**\n\nNot so much…as needs on on both sides; whether to chains must not end in a bare gerund; forbid + gerund lists must stay -ing; as much…as needs mirrored about-phrases; neither…nor must not flip into was it… after nor.\n\n**Part 2: How to decide.**\n\nMatch the scaffolding first. A second half that only rhymes thematically with the first half still fails if the preposition or verb form has changed.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-13-18",
@@ -558,13 +660,19 @@
         "We will either finish the scrapbook this year or postpone the project until spring.",
         "The campsite asks that visitors log arrivals, that they sort recycling carefully, and fires be extinguished by ten."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Two noun phrases are followed by a that-clause.\n\nTip: Use midnight shuttle buses as a third noun phrase.",
-        "TRUE — Three matching \"by + gerund\" phrases form a parallel means list.\n\nTip: Repeating by before each gerund keeps the causal list balanced.",
-        "FALSE — Two \"how\" clauses are followed by a noun phrase.\n\nTip: Add how she delivered her encore story to keep the how-pattern.",
-        "TRUE — \"Either…or\" joins two matching bare infinitives after \"will.\"\n\nTip: Shared will + either…or needs the same bare verb form on both sides.",
-        "FALSE — Two \"that\" clauses are followed by a bare clause missing \"that.\"\n\nTip: Repeat that before fires be extinguished by ten."
+        "**A) The festival flyer promises clearer maps, shorter queues, and that shuttle buses will run until midnight.**  (false)\n\nTrap: clearer maps and shorter queues are noun phrases, but that shuttle buses will run until midnight is a that-clause. Use midnight shuttle buses as a third noun phrase.",
+        "**B) By training marshals early, by publishing diversion signs, and by checking radios hourly, the walk reduced delays.**  (true)\n\nThree matching by + gerund phrases — training, publishing, and checking — form a parallel means list. Repeating by before each gerund keeps the causal list balanced.\n\n**Tip:** Repeating by before each gerund keeps the causal list balanced.",
+        "**C) The speaker was praised for how she handled hecklers, how she timed jokes, and her encore story.**  (false)\n\nTrap: two how clauses are followed by a noun phrase (her encore story). Add how she delivered her encore story to keep the how-pattern.",
+        "**D) We will either finish the scrapbook this year or postpone the project until spring.**  (true)\n\nEither…or joins finish… and postpone… — two matching bare infinitives after will. Shared will + either…or needs the same bare verb form on both sides.\n\n**Tip:** Shared will + either…or needs the same bare verb form on both sides.",
+        "**E) The campsite asks that visitors log arrivals, that they sort recycling carefully, and fires be extinguished by ten.**  (false)\n\nTrap: two that clauses are followed by a bare clause missing that (fires be extinguished by ten). Repeat that before fires be extinguished by ten."
       ],
       "highlights": [
         "and that shuttle buses will run",
@@ -576,7 +684,7 @@
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.13",
-      "solution_overview": "Festival flyers and campsite rules often stack that-clauses. If that appears twice, the third clause almost always needs it too—or all three should be rewritten as nouns."
+      "solution_overview": "Festival flyers, marshal training, stage praise, scrapbook deadlines, and campsite rules. Stacked that-clauses and how-chains are the recurring exams traps at this band.\n\n**Part 1: What to watch for.**\n\nIf that appears twice, the third clause needs it too — or rewrite all three as nouns. Keep by + gerund means lists, how-clause praise chains, either…or after will, and campsite that-rules in one consistent frame.\n\n**Part 2: How to decide.**\n\nCount repeated markers (by, how, that). Any final branch that sheds the marker while the first branches keep it is parallel failure.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-13-19",
@@ -590,13 +698,19 @@
         "The choir prefers rehearsing in person on Mondays and to rehearse online on Thursdays.",
         "A solid itinerary must specify who books the tickets, what bags are allowed, and when the group will meet."
       ],
-      "answer_key": [false, true, false, false, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — \"Less…than\" joins \"on + noun\" to a bare gerund without \"on.\"\n\nTip: Less on exotic flour than on kneading the dough with patience.",
-        "TRUE — Inverted \"not only\" is balanced by \"but…also\" with a parallel past-tense verb phrase.\n\nTip: Keep both predicates finite and matching after not only…but also.",
-        "FALSE — Two \"that is\" relatives are followed by an adjective missing \"that is.\"\n\nTip: Write that is useful without jargon.",
-        "FALSE — A gerund (\"rehearsing\") is paired with an infinitive (\"to rehearse\").\n\nTip: Prefer rehearsing… and rehearsing online…, or to rehearse… and to rehearse…",
-        "TRUE — Three matching wh-clauses specify who, what, and when.\n\nTip: Parallel wh-clauses are ideal for plans that must answer ownership, contents, and timing."
+        "**A) Good bread rests less on exotic flour than kneading the dough with patience.**  (false)\n\nTrap: less…than joins on exotic flour to a bare gerund without on. Write less on exotic flour than on kneading the dough with patience.",
+        "**B) Not only did attendance rise after Easter, but energy levels also improved.**  (true)\n\nInverted not only is balanced by but…also with a parallel past-tense verb phrase (energy levels also improved). Keep both predicates finite and matching after not only…but also.\n\n**Tip:** Keep both predicates finite and matching after not only…but also.",
+        "**C) Campers asked for a trail note that is realistic, that is waterproof, and useful without jargon.**  (false)\n\nTrap: two that is relatives are followed by useful without jargon, missing that is. Write that is useful without jargon to finish the chain.",
+        "**D) The choir prefers rehearsing in person on Mondays and to rehearse online on Thursdays.**  (false)\n\nTrap: rehearsing (gerund) is paired with to rehearse (infinitive) after prefers. Prefer rehearsing… and rehearsing online…, or to rehearse… and to rehearse… — one form for both days.",
+        "**E) A solid itinerary must specify who books the tickets, what bags are allowed, and when the group will meet.**  (true)\n\nThree matching wh-clauses — who books…, what bags…, and when the group will meet — specify ownership, contents, and timing in parallel. Parallel wh-clauses are ideal for itinerary checklists.\n\n**Tip:** Parallel wh-clauses are ideal for plans that must answer ownership, contents, and timing."
       ],
       "highlights": [
         "than kneading the dough",
@@ -608,7 +722,7 @@
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.13",
-      "solution_overview": "Comparative frames (less…than) and relative-clause chains demand the same marker on every branch. When in doubt, rewrite the last item so it could replace the first without changing structure."
+      "solution_overview": "Bread science, post-Easter attendance, trail notes, choir rehearsal modes, and itinerary wh-clauses. Comparative frames and relative-clause chains still demand matching markers.\n\n**Part 1: What to watch for.**\n\nLess…than needs on on both sides; inverted not only needs matching finite predicates; that is relatives need that is on every adjective (or none); prefer needs matching forms; wh-clauses should stay who / what / when in parallel.\n\n**Part 2: How to decide.**\n\nRewrite the last item so it could replace the first without changing structure. That mental swap exposes dropped prepositions, missing that is, and mixed -ing / to forms.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-13-20",
@@ -622,13 +736,19 @@
         "The brief is neither to defend every habit nor to dismiss every suggestion wholesale.",
         "She moved out because of limited daylight, because of noisy neighbours, and her commute had become unmanageable."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Two infinitives after \"authorised…to\" are followed by a gerund.\n\nTip: Use to file a repair request to keep the infinitive series.",
-        "TRUE — \"Just as…so too\" balances two matching invest + in + noun patterns with inversion on the second clause.\n\nTip: Correlative just as…so too needs mirrored clause structure.",
-        "FALSE — Two \"whether\" clauses are followed by a bare clause missing \"whether.\"\n\nTip: Repeat whether before communal lights are off.",
-        "TRUE — \"Neither…nor\" joins two matching infinitives after \"is.\"\n\nTip: Keep to + bare verb on both sides of neither…nor.",
-        "FALSE — Two \"because of + noun\" phrases are followed by an independent clause.\n\nTip: Use because of an unmanageable commute so every reason stays a noun phrase."
+        "**A) The landlord authorised tenants to repaint the hallway, to replace the hallway bulbs, and filing a repair request if leaks returned.**  (false)\n\nTrap: to repaint and to replace are infinitives after authorised…to, but filing is a gerund. Use to file a repair request to keep the infinitive series.",
+        "**B) Just as the café invests in better beans, so too does it invest in staff training.**  (true)\n\nJust as…so too balances two matching invest + in + noun patterns, with inversion on the second clause. Correlative just as…so too needs mirrored clause structure on both sides.\n\n**Tip:** Correlative just as…so too needs mirrored clause structure.",
+        "**C) Progress will be judged on whether chores are finished, whether keys are returned, and communal lights are off.**  (false)\n\nTrap: two whether clauses are followed by a bare clause missing whether (communal lights are off). Repeat whether before communal lights are off.",
+        "**D) The brief is neither to defend every habit nor to dismiss every suggestion wholesale.**  (true)\n\nNeither…nor joins to defend… and to dismiss… — two matching infinitives after is. Keep to + bare verb on both sides of neither…nor.\n\n**Tip:** Keep to + bare verb on both sides of neither…nor.",
+        "**E) She moved out because of limited daylight, because of noisy neighbours, and her commute had become unmanageable.**  (false)\n\nTrap: two because of + noun phrases are followed by an independent clause (her commute had become unmanageable). Use because of an unmanageable commute so every reason stays a noun phrase."
       ],
       "highlights": [
         "and filing a repair request",
@@ -640,7 +760,7 @@
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.13",
-      "solution_overview": "Final-band items combine correlatives, repeated subordinators, and long infinitive chains. Name the opening structure of each sentence, then reject any ending that cannot wear the same grammatical clothes."
+      "solution_overview": "Final-band mix: long infinitive authorisations, just as…so too correlatives, whether-progress checklists, neither…nor briefings, and because of reason chains. Name the opening structure, then reject any ending that cannot wear the same grammatical clothes.\n\n**Part 1: What to watch for.**\n\nCombined traps here are authorised…to lists that end in gerunds, whether-chains missing the third whether, because of pairs that finish as independent clauses, and (correct) mirrored just as…so too / neither…nor infinitive pairs.\n\n**Part 2: How to decide.**\n\nFor every sentence, write the first branch's structure in one word — infinitive, whether-clause, because of + noun, invest + in — and demand that label for every later branch.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     }
   ]
 }

@@ -14,19 +14,31 @@
         "We can must reserve a table before seven.",
         "She ought to stretch before the morning run."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — \"Must\" marks a hard rule here: helmets are required on the path.\n\nTip: For non-negotiable rules, use \"must\" + bare infinitive.",
-        "FALSE — \"Might\" only signals weak possibility, so \"beyond any possible doubt\" contradicts it.\n\nTip: Certainty language never sits with \"might\" or \"could\".",
-        "TRUE — \"Need not\" correctly removes obligation: the dish is optional.\n\nTip: \"Need not\" = no duty; \"must not\" = prohibition.",
-        "FALSE — Stacking \"can\" and \"must\" is ungrammatical; English allows only one modal before the main verb.\n\nTip: Choose ability or obligation — never both.",
-        "TRUE — \"Ought to\" + infinitive correctly advises a sensible warm-up.\n\nTip: \"Ought\" always needs \"to\": \"ought to stretch\", never \"ought stretch\"."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["must wear", "might", "need not", "can must", "ought to"],
+      "tactical_explanations": [
+        "**A) Cyclists must wear a helmet on this coastal path.**  (true)\n\n\"Must\" here lays down a non-negotiable coastal-path rule, and the bare infinitive \"wear\" is the right shape after a pure modal. The sentence is asking for a hard requirement, not a suggestion, so the strength matches the job.\n\n**Tip:** For posted rules and safety obligations, reach for \"must\" + bare infinitive.",
+        "**B) The match might be cancelled beyond any possible doubt.**  (false)\n\nTrap: \"might\" only encodes weak possibility, so pairing it with \"beyond any possible doubt\" cancels the meaning. Soften the adverbials or upgrade the modal — you cannot keep both.\n\n**Tip:** Certainty language never sits comfortably with \"might\" or \"could.\"",
+        "**C) You need not bring a dish to the potluck if you are short on time.**  (true)\n\n\"Need not\" correctly lifts the duty: bringing a dish is optional if time is short. That is absence of obligation, not a ban on bringing food.\n\n**Tip:** \"Need not\" = no duty; \"must not\" = prohibition.",
+        "**D) We can must reserve a table before seven.**  (false)\n\nTrap: English allows only one pure modal before the main verb, so \"can must reserve\" is ungrammatical. Choose ability (\"can reserve\") or obligation (\"must reserve\"), never both.\n\n**Tip:** Double modals are a classic form fail — strip one.",
+        "**E) She ought to stretch before the morning run.**  (true)\n\n\"Ought to stretch\" is sound advice before a run: \"ought\" always partners with \"to\" plus the base verb. The strength is recommendation, which fits a warm-up tip.\n\n**Tip:** Keep the fixed pair: \"ought to\" + V1, never \"ought stretch.\""
+      ],
+      "highlights": [
+        "must wear",
+        "might",
+        "need not",
+        "can must",
+        "ought to"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.4",
-      "solution_overview": "This set mixes clear obligation, weak possibility, and a double-modal trap. Read each sentence for one job only: does the modal match the certainty or duty the rest of the sentence claims?"
+      "solution_overview": "This warm-up walks through everyday modal jobs: hard rules, weak guesses, waived duty, and advice.\n\n**Part 1: What to watch for.**\n\nCheck that each modal has exactly one job and that its strength matches the rest of the sentence. Watch for a stacked double modal and for certainty wording that fights a weak hedge like \"might.\"\n\n**Part 2: How to decide.**\n\nRead the modal first, then ask whether the claim is obligation, permission, advice, or mere possibility. If the adverbials demand absolute certainty, a soft modal cannot stay.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-4-02",
@@ -40,19 +52,31 @@
         "They must have knew about the surprise party earlier.",
         "The results could confirm the hypothesis in every scenario without exception."
       ],
-      "answer_key": [false, false, true, false, false],
-      "tactical_explanations": [
-        "FALSE — \"Must\" takes a bare infinitive: \"must leave\", not \"must to leave\".\n\nTip: Pure modals never take \"to\" before the main verb.",
-        "FALSE — After \"must not\", use the bare infinitive: \"must not feed\", not \"must not to feed\".\n\nTip: Only \"ought\" and patterns like \"need to\" bring \"to\".",
-        "TRUE — \"May\" hedges carefully: a signal failure is a possible cause, not a proven one.\n\nTip: Use \"may\" or \"might\" when evidence is incomplete.",
-        "FALSE — Modal perfect needs a past participle: \"must have known\", not \"must have knew\".\n\nTip: Pattern is modal + have + past participle for past deductions.",
-        "FALSE — \"Could\" expresses possibility, so it cannot guarantee an unconditional outcome \"without exception\".\n\nTip: Absolute certainty and a weak modal cannot share one claim."
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
       ],
-      "highlights": ["must to leave", "must not to", "may stem", "must have knew", "could confirm"],
+      "tactical_explanations": [
+        "**A) Visitors must to leave wet umbrellas by the door.**  (false)\n\nTrap: \"must\" takes a bare infinitive, so write \"must leave,\" not \"must to leave.\" The extra \"to\" is borrowed from patterns like \"need to\" or \"ought to,\" which do not apply here.\n\n**Tip:** Pure modals never take \"to\" before the main verb.",
+        "**B) You must not to feed the ducks near the jetty.**  (false)\n\nTrap: After \"must not,\" keep the bare infinitive: \"must not feed,\" not \"must not to feed.\" Prohibition uses the same base-verb pattern as positive \"must.\"\n\n**Tip:** Only \"ought\" and main-verb \"need to\" bring \"to.\"",
+        "**C) The delay may stem from a signal failure on the branch line.**  (true)\n\n\"May stem\" hedges carefully: a signal failure is a possible cause of the delay, not a proven one. The softness of \"may\" matches incomplete evidence.\n\n**Tip:** Use \"may\" or \"might\" when the cause is still an open hypothesis.",
+        "**D) They must have knew about the surprise party earlier.**  (false)\n\nTrap: Modal perfect needs a past participle: \"must have known,\" not \"must have knew.\" \"Knew\" is simple past; after \"have\" you need the participle form.\n\n**Tip:** Pattern is modal + have + past participle for past deductions.",
+        "**E) The results could confirm the hypothesis in every scenario without exception.**  (false)\n\nTrap: \"Could\" encodes possibility, so it cannot underwrite an unconditional claim that the results confirm the hypothesis \"in every scenario without exception.\" Soften the claim or harden the modal.\n\n**Tip:** Absolute certainty and a weak modal cannot share one sentence."
+      ],
+      "highlights": [
+        "must to leave",
+        "must not to",
+        "may stem",
+        "must have knew",
+        "could confirm"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.4",
-      "solution_overview": "Four traps crowd this set: illicit \"to\" after \"must\", another after \"must not\", a wrong past participle in modal perfect, and a weak modal that overclaims certainty. Only the cautious \"may\" sentence stands."
+      "solution_overview": "Four of these lines bury form traps around \"must,\" modal perfect, and over-strong \"could.\" Only the cautious \"may\" sentence is clean.\n\n**Part 1: What to watch for.**\n\nPure modals take a bare infinitive — no \"to\" after \"must\" or \"must not.\" Modal perfect needs have + past participle. Soft possibility cannot promise a guaranteed outcome.\n\n**Part 2: How to decide.**\n\nScan for illicit \"to,\" wrong participles after \"have,\" and certainty clashes. If the structure is clean, check whether the modal’s force matches the claim.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-4-03",
@@ -66,19 +90,31 @@
         "Guests may request an extra blanket at reception.",
         "The ferry will likely be delayed for certain and without any doubt."
       ],
-      "answer_key": [true, true, false, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Cannot have arrived\" is a solid modal-perfect deduction about a past event still unconfirmed by evidence.\n\nTip: Negative modal perfects deny a past possibility on logical grounds.",
-        "TRUE — \"Might have overlooked\" softens a past deduction — possible, not proven.\n\nTip: \"Might have\" + past participle = tentative past speculation.",
-        "FALSE — \"Ought\" requires \"to\": \"ought to revise\", not \"ought revise\".\n\nTip: Treat \"ought to\" as a fixed pair before the base verb.",
-        "TRUE — \"May\" here marks permission: guests are allowed to ask for a blanket.\n\nTip: In house rules, \"may\" often means \"are allowed to\".",
-        "FALSE — \"Will likely\" already hedges, so \"for certain and without any doubt\" clashes with that hedge.\n\nTip: Strip either the hedge or the certainty claim — they cannot both stand."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
       ],
-      "highlights": ["cannot have arrived", "might have overlooked", "ought revise", "may request", "will likely"],
+      "tactical_explanations": [
+        "**A) The post cannot have arrived yet — the box is still empty.**  (true)\n\n\"Cannot have arrived\" is a solid negative modal-perfect deduction: empty mail boxes back the claim that the post has not come yet. The form (cannot + have + past participle) is exactly right for ruling out a past event on present evidence.\n\n**Tip:** Negative modal perfects deny a past possibility on logical grounds.",
+        "**B) Neighbours might have overlooked the note on the gate.**  (true)\n\n\"Might have overlooked\" softens a past guess — possible, not proven. That is the right strength when the neighbours may simply have missed the note.\n\n**Tip:** \"Might have\" + past participle = tentative past speculation.",
+        "**C) We ought revise the packing list before we leave.**  (false)\n\nTrap: \"Ought\" requires \"to\": write \"ought to revise,\" not \"ought revise.\" Even though \"ought\" feels like \"should,\" it keeps its \"to.\"\n\n**Tip:** Treat \"ought to\" as a fixed pair before the base verb.",
+        "**D) Guests may request an extra blanket at reception.**  (true)\n\n\"May request\" marks permission: guests are allowed to ask reception for an extra blanket. House-rule English often uses \"may\" for allowed actions.\n\n**Tip:** In rules and notices, \"may\" often means \"are allowed to.\"",
+        "**E) The ferry will likely be delayed for certain and without any doubt.**  (false)\n\nTrap: \"Will likely\" already hedges, so adding \"for certain and without any doubt\" contradicts the hedge. Keep one line of force — either the soft prediction or the certainty claim, not both.\n\n**Tip:** Strip either the hedge or the absolute claim; they cannot both stand."
+      ],
+      "highlights": [
+        "cannot have arrived",
+        "might have overlooked",
+        "ought revise",
+        "may request",
+        "will likely"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.4",
-      "solution_overview": "Modal perfects and permission \"may\" appear alongside one missing \"to\" after \"ought\" and one hedge-versus-certainty clash. Check structure first, then whether the strength of the modal fits the claim."
+      "solution_overview": "Modal perfects for past deduction sit beside permission \"may,\" one missing \"to\" after \"ought,\" and a hedge that fights its own certainty tag.\n\n**Part 1: What to watch for.**\n\nCheck structure first: \"ought\" must keep \"to,\" and modal perfect needs have + past participle. Then test whether hedges and certainty phrases can coexist.\n\n**Part 2: How to decide.**\n\nName the job — past deduction, permission, advice, or prediction — then ask if the form and the strength both fit. Clash of hedge + \"without doubt\" is an automatic fail.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-4-04",
@@ -92,19 +128,31 @@
         "You need not to renew the library card today.",
         "The coach should reconsider the batting order."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — \"Must\" correctly imposes a non-negotiable pool rule.\n\nTip: Safety and hygiene rules almost always take \"must\", not \"might\".",
-        "FALSE — Strong deduction \"must\" cannot coexist with \"no evidence at all\".\n\nTip: No evidence → use \"may\"/\"might\", not \"must\".",
-        "TRUE — \"Could have posted\" correctly frames a past possibility that remains open.\n\nTip: \"Could have\" + past participle = past possibility or missed opportunity.",
-        "FALSE — Modal \"need not\" takes a bare infinitive: \"need not renew\", not \"need not to renew\".\n\nTip: Contrast with main-verb \"need to\": \"You need to renew\" vs \"You need not renew\".",
-        "TRUE — \"Should\" appropriately advises a rethink of the line-up.\n\nTip: \"Should\" is the default for measured advice."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["must shower", "must show", "could have posted", "need not to", "should reconsider"],
+      "tactical_explanations": [
+        "**A) Swimmers must shower before entering the pool.**  (true)\n\n\"Must shower\" correctly imposes a non-negotiable pool hygiene rule with a bare infinitive. Safety and facility rules almost always take this shape.\n\n**Tip:** Hard rules → \"must\" + bare infinitive, not \"might.\"",
+        "**B) The forecast must show sunshine, though we have no evidence at all.**  (false)\n\nTrap: Strong epistemic \"must\" cannot coexist with \"though we have no evidence at all.\" Without evidence, downgrade to \"may\" or \"might\"; do not use deduction-strength \"must.\"\n\n**Tip:** No evidence → weak modal, never \"must.\"",
+        "**C) She could have posted the parcel before the cut-off.**  (true)\n\n\"Could have posted\" correctly frames an open past possibility: maybe the parcel went before the cut-off, maybe not. The modal-perfect form is clean.\n\n**Tip:** \"Could have\" + past participle = past possibility or missed opportunity.",
+        "**D) You need not to renew the library card today.**  (false)\n\nTrap: Modal \"need not\" takes a bare infinitive: \"need not renew,\" not \"need not to renew.\" Do not confuse it with main-verb \"need to.\"\n\n**Tip:** \"You need to renew\" vs \"You need not renew\" — only the main verb brings \"to.\"",
+        "**E) The coach should reconsider the batting order.**  (true)\n\n\"Should reconsider\" is measured coaching advice about the batting order. The strength is recommendation, which fits a strategic rethink.\n\n**Tip:** \"Should\" is the default for measured advice."
+      ],
+      "highlights": [
+        "must shower",
+        "must show",
+        "could have posted",
+        "need not to",
+        "should reconsider"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.4",
-      "solution_overview": "Obligation, deduction, and advice sit side by side. Flag any sentence where a strong modal (\"must\") is undercut by weak evidence, or where an extra \"to\" sneaks in after \"need not\"."
+      "solution_overview": "Obligation, epistemic deduction, advice, and waived duty sit side by side — including a \"must\" that has no evidence and a stray \"to\" after \"need not.\"\n\n**Part 1: What to watch for.**\n\nMatch modal strength to evidence: hard \"must\" needs solid grounds; \"need not\" takes a bare infinitive. Keep advice and past-possibility shapes (\"should,\" \"could have\") clean.\n\n**Part 2: How to decide.**\n\nAsk: rule, guess, advice, or no-duty? Then check form. Flag any strong deduction undercut by \"no evidence,\" and any extra \"to\" after modal \"need not.\"\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-4-05",
@@ -118,19 +166,31 @@
         "The clouds might suggest a short shower rather than a storm.",
         "We could shorten the hike if we take the ridge path."
       ],
-      "answer_key": [true, true, true, true, true],
-      "tactical_explanations": [
-        "TRUE — \"Should have flagged\" correctly criticises a past missed duty with modal perfect.\n\nTip: \"Should have\" + past participle = past advice not followed / mild reproach.",
-        "TRUE — \"May not\" here denies permission under the rules — a standard reading.\n\nTip: Context decides: \"may not\" can mean prohibition or weak negative possibility.",
-        "TRUE — \"Must sign\" correctly imposes a hard pre-trial requirement with a bare infinitive.\n\nTip: Pure modals take the bare verb — no \"to\".",
-        "TRUE — \"Might suggest\" hedges an interpretation of the sky without overclaiming.\n\nTip: Soft epistemic modals protect you when signs admit more than one reading.",
-        "TRUE — \"Could\" correctly marks a feasible shorter route, not a guaranteed outcome.\n\nTip: Possibility \"could\" is fine when the sentence does not claim certainty."
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
       ],
-      "highlights": ["should have flagged", "may not light", "must sign", "might suggest", "could shorten"],
+      "tactical_explanations": [
+        "**A) The nurse should have flagged the allergy sooner.**  (true)\n\n\"Should have flagged\" correctly criticises a past missed duty with modal perfect: the allergy ought to have been noted sooner. That is mild past reproach, not a present rule.\n\n**Tip:** \"Should have\" + past participle = past advice not followed.",
+        "**B) Campers may not light fires after dusk under site rules.**  (true)\n\n\"May not light\" denies permission under campsite rules after dusk. In regulatory context, \"may not\" routinely means \"are not allowed to.\"\n\n**Tip:** Context decides: \"may not\" can be prohibition or weak negative possibility — here the \"under site rules\" cue locks prohibition.",
+        "**C) He must sign the consent form before the trial starts.**  (true)\n\n\"Must sign\" correctly imposes a hard pre-trial requirement with a bare infinitive. Pure modals never take \"to\" before the main verb.\n\n**Tip:** Obligation + bare verb is the clean \"must\" pattern.",
+        "**D) The clouds might suggest a short shower rather than a storm.**  (true)\n\n\"Might suggest\" hedges an interpretation of the clouds without overclaiming a storm. Soft epistemic modals protect you when signs admit more than one reading.\n\n**Tip:** Use \"might\" when the evidence is suggestive, not decisive.",
+        "**E) We could shorten the hike if we take the ridge path.**  (true)\n\n\"Could shorten\" marks a feasible shorter route via the ridge, not a guaranteed outcome. Possibility is exactly the right strength.\n\n**Tip:** Possibility \"could\" is fine when the sentence does not claim certainty."
+      ],
+      "highlights": [
+        "should have flagged",
+        "may not light",
+        "must sign",
+        "might suggest",
+        "could shorten"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.4",
-      "solution_overview": "All five are sound: past missed duty, rule-based \"may not\", hard obligation, hedged interpretation, and feasible optionality. Confirm that each modal’s strength matches the claim and that forms stay clean."
+      "solution_overview": "All five sentences are deliberately sound: past missed duty, rule-based prohibition, hard obligation, hedged reading of the sky, and a feasible shortcut.\n\n**Part 1: What to watch for.**\n\nConfirm that each modal’s strength matches the claim and that forms stay clean — bare infinitives after pure modals, modal perfect where the past is in play.\n\n**Part 2: How to decide.**\n\nFor each letter, name the job (reproach, ban, rule, hedge, option). If form and force both fit, mark true — there is no planted crash in this set.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-4-06",
@@ -144,19 +204,31 @@
         "You should of updated the packing list after the forecast changed.",
         "Volunteers need not bring their own tools to the park clean-up."
       ],
-      "answer_key": [false, true, true, false, true],
-      "tactical_explanations": [
-        "FALSE — \"Might\" and \"absolute certainty\" cancel each other out.\n\nTip: Match modal strength to the adverbial claim — weak modal, weak claim.",
-        "TRUE — \"Ought to warn\" correctly advises a prudent courtesy before guests arrive.\n\nTip: \"Ought to\" = strong advice, close to \"should\".",
-        "TRUE — \"Cannot have ignored\" is a firm negative deduction about a past event.\n\nTip: Loud evidence + \"cannot have\" = logical impossibility of the alternative.",
-        "FALSE — \"Should of\" is a spoken mishearing of \"should have\".\n\nTip: Always write \"have\", never \"of\", after a modal.",
-        "TRUE — \"Need not bring\" correctly lifts the obligation to supply tools.\n\nTip: Modal \"need not\" + bare infinitive removes duty without forbidding the action."
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
       ],
-      "highlights": ["might close", "ought to warn", "cannot have ignored", "should of updated", "need not bring"],
+      "tactical_explanations": [
+        "**A) The museum might close early with absolute certainty.**  (false)\n\nTrap: \"Might\" and \"absolute certainty\" cancel each other out. Keep the soft modal and soften the claim, or upgrade the modal if you truly mean certainty.\n\n**Tip:** Match modal strength to the adverbial claim — weak modal, weak claim.",
+        "**B) Hosts ought to warn guests about the steep stairs.**  (true)\n\n\"Ought to warn\" correctly advises a prudent courtesy before guests meet the steep stairs. \"Ought to\" behaves like strong \"should.\"\n\n**Tip:** \"Ought to\" = strong advice; always keep the \"to.\"",
+        "**C) They cannot have ignored the fire alarm in the hallway.**  (true)\n\n\"Cannot have ignored\" is a firm negative deduction about a past event: given a hallway fire alarm, ignoring it is treated as logically untenable.\n\n**Tip:** Loud present evidence + \"cannot have\" = logical impossibility of the alternative.",
+        "**D) You should of updated the packing list after the forecast changed.**  (false)\n\nTrap: \"Should of\" is a mishearing of \"should have.\" In writing, always use \"have\" after a modal — never the preposition \"of.\"\n\n**Tip:** Say it aloud if you must, but write \"should have updated.\"",
+        "**E) Volunteers need not bring their own tools to the park clean-up.**  (true)\n\n\"Need not bring\" correctly lifts the obligation to supply tools for the clean-up. Volunteers may still bring tools; they simply are not required to.\n\n**Tip:** Modal \"need not\" + bare infinitive removes duty without forbidding the action."
+      ],
+      "highlights": [
+        "might close",
+        "ought to warn",
+        "cannot have ignored",
+        "should of updated",
+        "need not bring"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.4",
-      "solution_overview": "Watch for certainty clashes and the classic \"should of\" spelling trap. Clean advice, negative deduction, and waived obligation pass; overclaimed \"might\" and \"of\" for \"have\" fail."
+      "solution_overview": "Certainty clashes and the classic \"should of\" spelling trap dominate this set, alongside clean advice, negative past deduction, and waived obligation.\n\n**Part 1: What to watch for.**\n\nMatch modal strength to adverbials, write \"have\" never \"of\" after a modal, and keep \"ought to\" / \"need not\" forms intact.\n\n**Part 2: How to decide.**\n\nFirst hunt form errors (\"of\" for \"have\"). Then ask whether a weak modal can survive words like \"absolute certainty.\" Clean advice and \"cannot have\" deductions pass.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-4-07",
@@ -170,19 +242,31 @@
         "Drivers should check tyre pressure before a long trip.",
         "The cake need not be iced until tomorrow morning."
       ],
-      "answer_key": [true, true, false, true, true],
-      "tactical_explanations": [
-        "TRUE — \"Must have finished\" is a strong past deduction backed by empty desks.\n\nTip: Evidence in the present often licenses \"must have\" about the recent past.",
-        "TRUE — \"May borrow\" correctly grants permission.\n\nTip: Offer/permission \"may\" + bare infinitive is standard.",
-        "FALSE — Drop the \"to\": \"might join\", not \"might to join\".\n\nTip: Pure modals never take \"to\" before the main verb.",
-        "TRUE — \"Should check\" is measured advice before travel.\n\nTip: \"Should\" softens obligation into recommendation.",
-        "TRUE — \"Need not be iced\" correctly says icing can wait — no present duty.\n\nTip: \"Need not\" + bare infinitive (passive or active) removes obligation."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
       ],
-      "highlights": ["must have finished", "may borrow", "might to join", "should check", "need not be iced"],
+      "tactical_explanations": [
+        "**A) Students must have finished the quiz by now — every desk is empty.**  (true)\n\n\"Must have finished\" is a strong past deduction backed by empty desks right now. Present evidence often licenses \"must have\" about the recent past.\n\n**Tip:** Empty-room cues → confident \"must have\" + past participle.",
+        "**B) You may borrow my spare charger if yours is dead.**  (true)\n\n\"May borrow\" correctly grants permission to use the spare charger. Offer/permission \"may\" takes a bare infinitive.\n\n**Tip:** Permission \"may\" + bare verb is standard in polite offers.",
+        "**C) She might to join us after rehearsal.**  (false)\n\nTrap: Drop the \"to\": write \"might join,\" not \"might to join.\" Pure modals never take \"to\" before the main verb.\n\n**Tip:** Same rule as \"must/can/should\" — bare infinitive only.",
+        "**D) Drivers should check tyre pressure before a long trip.**  (true)\n\n\"Should check\" is measured advice before a long trip. The strength softens obligation into a wise recommendation about tyre pressure.\n\n**Tip:** \"Should\" is the default for practical travel advice.",
+        "**E) The cake need not be iced until tomorrow morning.**  (true)\n\n\"Need not be iced\" correctly says icing can wait until tomorrow — there is no present duty. Passive voice is fine after modal \"need not.\"\n\n**Tip:** \"Need not\" + bare infinitive (active or passive) removes obligation."
+      ],
+      "highlights": [
+        "must have finished",
+        "may borrow",
+        "might to join",
+        "should check",
+        "need not be iced"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.4",
-      "solution_overview": "Permission, advice, deduction, and waived duty are all fine here. The only failure is the stray \"to\" after \"might\" — strip it and the sentence works."
+      "solution_overview": "Permission, advice, deduction, and waived duty are mostly fine here. The only crash is a stray \"to\" after \"might.\"\n\n**Part 1: What to watch for.**\n\nEvidence-backed \"must have,\" permission \"may,\" advice \"should,\" and \"need not\" passive are all standard. Pure modals never insert \"to\" before the verb.\n\n**Part 2: How to decide.**\n\nCheck form first for illicit \"to.\" Then confirm that each remaining modal’s job — deduction, permission, advice, no-duty — matches the claim.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-4-08",
@@ -196,19 +280,31 @@
         "We ought have booked tickets earlier.",
         "She needn’t have cooked so much — half the trays went untouched."
       ],
-      "answer_key": [false, true, true, false, true],
-      "tactical_explanations": [
-        "FALSE — Write \"could have left\", never \"could of left\".\n\nTip: \"Of\" after a modal is always wrong in standard writing.",
-        "TRUE — \"Mustn’t park\" correctly forbids the action.\n\nTip: \"Must not / mustn’t\" = prohibition, not \"no need\".",
-        "TRUE — \"May become\" hedges a weather-linked possibility.\n\nTip: Soft prediction after rain often takes \"may\" or \"might\".",
-        "FALSE — \"Ought\" needs \"to\": \"ought to have booked\".\n\nTip: Even in modal perfect, keep \"ought to\" intact: ought to + have + PP.",
-        "TRUE — \"Needn’t have cooked\" correctly means she cooked unnecessarily in the past.\n\nTip: \"Needn’t have\" + PP = past action done though it was not required."
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
       ],
-      "highlights": ["could of left", "mustn’t park", "may become", "ought have booked", "needn’t have cooked"],
+      "tactical_explanations": [
+        "**A) They could of left the keys under the flowerpot.**  (false)\n\nTrap: Write \"could have left,\" never \"could of left.\" The spoken reduction sounds like \"of,\" but standard writing always keeps \"have.\"\n\n**Tip:** \"Of\" after a modal is always wrong on the page.",
+        "**B) You mustn’t park across the neighbour’s drive.**  (true)\n\n\"Mustn't park\" correctly forbids blocking the neighbour's drive. \"Must not / mustn't\" marks prohibition, not \"no need.\"\n\n**Tip:** \"Mustn't\" = do not do this; different from \"needn't.\"",
+        "**C) The trail may become muddy after overnight rain.**  (true)\n\n\"May become\" hedges a weather-linked possibility after overnight rain. Soft prediction is exactly the right strength for muddy trails.\n\n**Tip:** Soft forecasts after rain often take \"may\" or \"might.\"",
+        "**D) We ought have booked tickets earlier.**  (false)\n\nTrap: \"Ought\" needs \"to\" even in the perfect: write \"ought to have booked,\" not \"ought have booked.\" Keep the fixed pair intact.\n\n**Tip:** Modal perfect with ought: ought to + have + past participle.",
+        "**E) She needn’t have cooked so much — half the trays went untouched.**  (true)\n\n\"Needn't have cooked\" correctly means she cooked in the past even though it was unnecessary — half the trays went untouched. That is the classic \"needn't have\" reading.\n\n**Tip:** \"Needn't have\" + PP = past action done though it was not required."
+      ],
+      "highlights": [
+        "could of left",
+        "mustn’t park",
+        "may become",
+        "ought have booked",
+        "needn’t have cooked"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.4",
-      "solution_overview": "Prohibition, weather hedge, and \"needn’t have\" for unnecessary past effort are clean. Failures are form-only: \"of\" for \"have\" and a missing \"to\" after \"ought\"."
+      "solution_overview": "Prohibition, a weather hedge, and \"needn't have\" for unnecessary past effort are clean. Failures are form-only: \"of\" for \"have,\" and a missing \"to\" after \"ought.\"\n\n**Part 1: What to watch for.**\n\nWrite \"have\" after modals, keep \"ought to\" intact even in modal perfect, and separate \"must not\" (ban) from \"need not\" (no duty).\n\n**Part 2: How to decide.**\n\nHunt spelling and \"to\" errors first. Then confirm the remaining claims — ban, soft prediction, unnecessary past action — are coherent.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-4-09",
@@ -222,19 +318,31 @@
         "Artists may exhibit in the foyer during festival week.",
         "We need not to worry about tickets — the show is free."
       ],
-      "answer_key": [true, true, false, true, false],
-      "tactical_explanations": [
-        "TRUE — Present deduction \"must be\" fits strong evidence (lights on).\n\nTip: Present continuous evidence → \"must\" + bare infinitive for now-time certainty.",
-        "TRUE — \"Might have been waiting\" softens a past progressive speculation.\n\nTip: Modal + have been + -ing = tentative past continuous deduction.",
-        "FALSE — \"Should must\" stacks two obligation modals.\n\nTip: Use \"should confirm\" or \"must confirm\" — never both.",
-        "TRUE — \"May exhibit\" correctly allows participation during the festival.\n\nTip: Permission \"may\" works for temporary openings and invitations.",
-        "FALSE — Drop the \"to\": \"need not worry\", not \"need not to worry\".\n\nTip: Modal \"need not\" + bare verb; main-verb \"need\" takes \"to\"."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
       ],
-      "highlights": ["must be home", "might have been waiting", "should must", "may exhibit", "need not to worry"],
+      "tactical_explanations": [
+        "**A) The lights are on, so someone must be home.**  (true)\n\nPresent deduction \"must be home\" fits strong evidence — the lights are on. Continuous-looking present cues often license \"must\" + bare infinitive for a now-time conclusion.\n\n**Tip:** Strong present evidence → \"must\" + bare infinitive.",
+        "**B) He might have been waiting at the wrong platform.**  (true)\n\n\"Might have been waiting\" softens a past progressive speculation about the wrong platform. Modal + have been + -ing is the standard shape for a tentative continuous past guess.\n\n**Tip:** Progressive modal perfect = softer continuous deduction about the past.",
+        "**C) You should must confirm the reservation by Friday.**  (false)\n\nTrap: \"Should must confirm\" stacks two obligation modals. Use \"should confirm\" or \"must confirm\" — English allows only one pure modal before the verb.\n\n**Tip:** One obligation word is enough; never stack \"should\" with \"must.\"",
+        "**D) Artists may exhibit in the foyer during festival week.**  (true)\n\n\"May exhibit\" correctly allows artists to show work in the foyer during festival week. Permission \"may\" fits temporary openings and invitations.\n\n**Tip:** Permission \"may\" works cleanly for event-week allowances.",
+        "**E) We need not to worry about tickets — the show is free.**  (false)\n\nTrap: Drop the \"to\": write \"need not worry,\" not \"need not to worry.\" Modal \"need not\" takes a bare verb; only main-verb \"need\" takes \"to.\"\n\n**Tip:** Modal \"need not\" + bare verb; main-verb \"need\" + \"to.\""
+      ],
+      "highlights": [
+        "must be home",
+        "might have been waiting",
+        "should must",
+        "may exhibit",
+        "need not to worry"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.4",
-      "solution_overview": "Present and progressive past deductions are fine, as is festival permission. Reject stacked obligation and the illicit \"to\" after \"need not\"."
+      "solution_overview": "Present and progressive past deductions are fine, as is festival permission. Reject stacked obligation and the illicit \"to\" after \"need not.\"\n\n**Part 1: What to watch for.**\n\nWatch for double modals (\"should must\") and for \"need not to.\" Progressive modal perfect (\"might have been waiting\") is a legitimate soft past continuous guess.\n\n**Part 2: How to decide.**\n\nConfirm evidence for \"must be,\" softness for \"might have been -ing,\" and permission for \"may.\" Fail anything that stacks two obligation modals or inserts \"to\" after modal \"need not.\"\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-4-10",
@@ -248,19 +356,31 @@
         "You may not take photographs inside the chapel.",
         "They must have forgot the picnic basket in the boot."
       ],
-      "answer_key": [true, true, true, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Must taste\" here is a confident prediction based on cooking know-how, not a rule.\n\nTip: Epistemic \"must\" can project a near-certain outcome from experience.",
-        "TRUE — \"Could have been practising\" correctly frames an open past continuous possibility.\n\nTip: Progressive modal perfect softens what someone was doing at a past moment.",
-        "TRUE — \"Ought to arrive\" advises a sensible buffer before the match.\n\nTip: Keep \"to\" after \"ought\" even with time phrases.",
-        "TRUE — \"May not take\" denies permission inside the chapel.\n\nTip: In posted rules, \"may not\" often equals \"are not allowed to\".",
-        "FALSE — Past participle required: \"must have forgotten\", not \"must have forgot\".\n\nTip: Irregular verbs still need the participle after \"have\" in modal perfect."
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
       ],
-      "highlights": ["must taste", "could have been practising", "ought to arrive", "may not take", "must have forgot"],
+      "tactical_explanations": [
+        "**A) The soup must taste better once it has simmered a little longer.**  (true)\n\n\"Must taste\" here is a confident prediction from cooking know-how once the soup has simmered longer — epistemic \"must,\" not a facility rule. Experience can license near-certain projected outcomes.\n\n**Tip:** Epistemic \"must\" can project a near-certain result from experience.",
+        "**B) She could have been practising piano when you called.**  (true)\n\n\"Could have been practising\" correctly frames an open past continuous possibility for when the call came. Progressive modal perfect softens what someone may have been doing at a past moment.\n\n**Tip:** \"Could have been\" + -ing = open continuous past possibility.",
+        "**C) Players ought to arrive forty minutes before kick-off.**  (true)\n\n\"Ought to arrive\" advises a sensible buffer before kick-off. Keep \"to\" after \"ought\" even when a time phrase follows.\n\n**Tip:** \"Ought to\" + V1 stays intact with time phrases.",
+        "**D) You may not take photographs inside the chapel.**  (true)\n\n\"May not take\" denies permission to photograph inside the chapel. In posted rules, \"may not\" often equals \"are not allowed to.\"\n\n**Tip:** Site rules → \"may not\" as prohibition is standard.",
+        "**E) They must have forgot the picnic basket in the boot.**  (false)\n\nTrap: Past participle required: \"must have forgotten,\" not \"must have forgot.\" Irregular verbs still need the participle after \"have\" in modal perfect.\n\n**Tip:** Modal + have + past participle — \"forgot\" is the wrong form here."
+      ],
+      "highlights": [
+        "must taste",
+        "could have been practising",
+        "ought to arrive",
+        "may not take",
+        "must have forgot"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.4",
-      "solution_overview": "Four clean lines cover prediction, progressive past possibility, advice, and prohibition. Only the wrong past participle after \"must have\" fails."
+      "solution_overview": "Four clean lines cover confident prediction, progressive past possibility, advice, and prohibition. Only a wrong past participle after \"must have\" fails.\n\n**Part 1: What to watch for.**\n\nIrregular verbs still need the true participle after \"have\" in modal perfect. Elsewhere, epistemic \"must,\" \"could have been -ing,\" \"ought to,\" and \"may not\" are all in good shape.\n\n**Part 2: How to decide.**\n\nCheck participles carefully when you see \"must have.\" For the other letters, confirm prediction, open past continuous possibility, advice, and posted ban.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-4-11",
@@ -274,19 +394,31 @@
         "We needn’t stay for the encore if you are tired.",
         "The painting could be a later copy, though experts disagree."
       ],
-      "answer_key": [true, true, false, true, true],
-      "tactical_explanations": [
-        "TRUE — \"Might well be\" idiomatically strengthens a serious present possibility.\n\nTip: \"Might well\" ≈ \"it is quite possible / rather likely\".",
-        "TRUE — \"Should have told\" criticises a past missed courtesy.\n\nTip: \"Should have\" + PP = reproach about what did not happen.",
-        "FALSE — No \"to\" after \"must\": \"must have left\", not \"must to have left\".\n\nTip: Modal perfect is modal + have + PP — never insert \"to\".",
-        "TRUE — \"Needn’t stay\" correctly lifts the obligation to remain.\n\nTip: Contracted \"needn’t\" + bare infinitive is standard.",
-        "TRUE — \"Could be\" hedges an attribution without claiming proof.\n\nTip: Soft epistemic \"could\" fits scholarly disagreement."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
       ],
-      "highlights": ["might well be", "should have told", "must to have left", "needn’t stay", "could be"],
+      "tactical_explanations": [
+        "**A) The bus might well be late in this fog.**  (true)\n\n\"Might well be\" idiomatically strengthens a serious present possibility in fog — quite possible / rather likely, still not proven. The idiom is standard exam English.\n\n**Tip:** \"Might well\" ≈ \"it is quite possible / rather likely.\"",
+        "**B) You should have told me about the detour sooner.**  (true)\n\n\"Should have told\" criticises a past missed courtesy about the detour. Modal perfect here marks reproach about what did not happen in time.\n\n**Tip:** \"Should have\" + PP = reproach about a past non-event.",
+        "**C) He must to have left his scarf on the train.**  (false)\n\nTrap: No \"to\" after \"must\": write \"must have left,\" not \"must to have left.\" Modal perfect is modal + have + past participle — never insert \"to.\"\n\n**Tip:** \"Must have\" is a sealed chain; do not wedge \"to\" into it.",
+        "**D) We needn’t stay for the encore if you are tired.**  (true)\n\n\"Needn't stay\" correctly lifts the obligation to remain for the encore if you are tired. Contracted \"needn't\" + bare infinitive is fully standard.\n\n**Tip:** \"Needn't\" + bare verb = no present duty.",
+        "**E) The painting could be a later copy, though experts disagree.**  (true)\n\n\"Could be\" hedges an attribution of the painting as a later copy without claiming proof — which fits expert disagreement.\n\n**Tip:** Soft epistemic \"could\" fits scholarly hedge and dispute."
+      ],
+      "highlights": [
+        "might well be",
+        "should have told",
+        "must to have left",
+        "needn’t stay",
+        "could be"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.4",
-      "solution_overview": "Idiomatic \"might well\", past reproach, waived duty, and scholarly hedge are all valid. Reject only the illegal \"to\" inside a \"must have\" chain."
+      "solution_overview": "Idiomatic \"might well,\" past reproach, waived duty, and a scholarly hedge are valid. Reject only the illegal \"to\" inside a \"must have\" chain.\n\n**Part 1: What to watch for.**\n\n\"Might well\" strengthens possibility without claiming certainty. Modal perfect reproach and contracted \"needn't\" are fine. Never insert \"to\" between \"must\" and \"have.\"\n\n**Part 2: How to decide.**\n\nHunt the stray \"to\" first. Then confirm that \"might well,\" \"should have,\" \"needn't,\" and soft \"could be\" each fit their claims.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-4-12",
@@ -300,19 +432,31 @@
         "They couldn’t have finished the jigsaw already — half the pieces are still on the table.",
         "We should water the seedlings every other morning."
       ],
-      "answer_key": [true, true, false, true, true],
-      "tactical_explanations": [
-        "TRUE — \"Must not leave\" clearly prohibits littering.\n\nTip: \"Must not\" = do not do this; different from \"need not\".",
-        "TRUE — \"May have been about to call\" hedges an interrupted near-future-in-the-past plan.\n\nTip: \"Be about to\" can sit inside modal perfect for near-miss timing.",
-        "FALSE — Write \"ought to have packed\", never \"ought to of packed\".\n\nTip: \"Have\", not \"of\", even after \"ought to\".",
-        "TRUE — \"Couldn’t have finished\" denies a past completion on clear present evidence.\n\nTip: Visible leftover pieces license a firm negative past deduction.",
-        "TRUE — \"Should water\" advises a regular care routine.\n\nTip: Habitual advice often takes \"should\" + bare infinitive."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
       ],
-      "highlights": ["must not leave", "may have been about to", "ought to of packed", "couldn’t have finished", "should water"],
+      "tactical_explanations": [
+        "**A) Hikers must not leave litter on the ridge.**  (true)\n\n\"Must not leave\" clearly prohibits littering on the ridge. \"Must not\" means do not do this — different from \"need not,\" which only removes duty.\n\n**Tip:** \"Must not\" = prohibition; \"need not\" = no obligation.",
+        "**B) She may have been about to call when the signal dropped.**  (true)\n\n\"May have been about to call\" hedges an interrupted near-future-in-the-past plan when the signal dropped. \"Be about to\" can sit inside modal perfect for near-miss timing.\n\n**Tip:** \"May have been about to\" + V1 = soft interrupted imminent plan.",
+        "**C) You ought to of packed a spare battery.**  (false)\n\nTrap: Write \"ought to have packed,\" never \"ought to of packed.\" Even after \"ought to,\" the perfect helper is \"have,\" not \"of.\"\n\n**Tip:** \"Have,\" not \"of,\" after every modal chain.",
+        "**D) They couldn’t have finished the jigsaw already — half the pieces are still on the table.**  (true)\n\n\"Couldn't have finished\" denies a past completion on clear present evidence — half the pieces are still on the table. Visible leftovers license a firm negative past deduction.\n\n**Tip:** Present counter-evidence → \"couldn't have\" + past participle.",
+        "**E) We should water the seedlings every other morning.**  (true)\n\n\"Should water\" advises a regular care routine for the seedlings. Habitual practical advice often takes \"should\" + bare infinitive.\n\n**Tip:** Habitual tips → \"should\" + V1."
+      ],
+      "highlights": [
+        "must not leave",
+        "may have been about to",
+        "ought to of packed",
+        "couldn’t have finished",
+        "should water"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.4",
-      "solution_overview": "Prohibition, nested \"about to\", negative past deduction, and garden advice pass. The only failure is \"of\" standing in for \"have\" after \"ought to\"."
+      "solution_overview": "Prohibition, nested \"about to,\" negative past deduction, and garden advice pass. The only failure is \"of\" standing in for \"have\" after \"ought to.\"\n\n**Part 1: What to watch for.**\n\nKeep \"must not\" clear as a ban, allow \"may have been about to\" for interrupted near-future-in-the-past, and always write \"have\" after modals — including after \"ought to.\"\n\n**Part 2: How to decide.**\n\nScan for \"of\" errors first. Then verify ban, nested timing hedge, \"couldn't have\" against leftover pieces, and habitual \"should.\"\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-4-13",
@@ -326,19 +470,31 @@
         "They mightn’t have noticed the small print on the ticket.",
         "We should have been leaving earlier to catch the opening act."
       ],
-      "answer_key": [true, true, false, true, true],
-      "tactical_explanations": [
-        "TRUE — Progressive modal perfect \"must have been rehearsing\" fits present evidence of tired voices.\n\nTip: Tiredness now → strong deduction about continuous past effort.",
-        "TRUE — \"May as well take\" idiomatically recommends the practical option.\n\nTip: \"May as well\" + bare infinitive = \"there is little reason not to\".",
-        "FALSE — \"Needn’t have to bring\" double-marks absence of obligation; write \"needn’t bring\" or \"doesn’t have to bring\".\n\nTip: Pick one no-obligation marker — do not stack \"need not\" with \"have to\".",
-        "TRUE — \"Mightn’t have noticed\" softens a past negative deduction.\n\nTip: Contracted \"mightn’t have\" is acceptable in informal prose.",
-        "TRUE — \"Should have been leaving\" criticises a past progressive plan that started too late.\n\nTip: Progressive \"should have been + -ing\" = we ought to have been in the middle of leaving."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
       ],
-      "highlights": ["must have been rehearsing", "may as well take", "needn’t have to bring", "mightn’t have noticed", "should have been leaving"],
+      "tactical_explanations": [
+        "**A) The choir must have been rehearsing for hours — their voices sound tired.**  (true)\n\nProgressive modal perfect \"must have been rehearsing\" fits present evidence of tired voices: they sound worn out because the continuous past effort was long.\n\n**Tip:** Tiredness now → strong deduction about continuous past rehearsal.",
+        "**B) You may as well take the later train if the earlier one is packed.**  (true)\n\n\"May as well take\" idiomatically recommends the practical later train when the earlier one is packed. There is little reason not to choose the workable option.\n\n**Tip:** \"May as well\" + bare infinitive = \"there is little reason not to.\"",
+        "**C) She needn’t have to bring dessert; the host already baked two cakes.**  (false)\n\nTrap: \"Needn't have to bring\" double-marks absence of obligation. Write \"needn't bring\" or \"doesn't have to bring\" — pick one marker, not both.\n\n**Tip:** Do not stack \"need not\" with \"have to.\"",
+        "**D) They mightn’t have noticed the small print on the ticket.**  (true)\n\n\"Mightn't have noticed\" softens a past negative deduction about noticing the ticket small print. Contracted \"mightn't have\" is acceptable in informal prose.\n\n**Tip:** \"Mightn't have\" + PP = soft past negative guess.",
+        "**E) We should have been leaving earlier to catch the opening act.**  (true)\n\n\"Should have been leaving\" criticises a past progressive plan that started too late to catch the opening act. Progressive \"should have been + -ing\" means we ought already to have been in the middle of leaving.\n\n**Tip:** Progressive past advisability targets process timing, not just a point action."
+      ],
+      "highlights": [
+        "must have been rehearsing",
+        "may as well take",
+        "needn’t have to bring",
+        "mightn’t have noticed",
+        "should have been leaving"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.4",
-      "solution_overview": "Progressive modal perfects and idioms like \"may as well\" are legitimate. Reject only the redundant \"needn’t have to\" pairing — one waived-duty marker is enough."
+      "solution_overview": "Progressive modal perfects and idioms like \"may as well\" are legitimate. Reject only the redundant \"needn't have to\" pairing — one waived-duty marker is enough.\n\n**Part 1: What to watch for.**\n\n\"Must / should have been -ing\" target continuous past effort. \"May as well\" recommends the practical option. Do not stack \"need not\" with \"have to.\"\n\n**Part 2: How to decide.**\n\nCheck for double no-obligation marking first. Then confirm progressive deductions, the \"may as well\" idiom, and soft \"mightn't have.\"\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-4-14",
@@ -352,19 +508,31 @@
         "She ought to have been practising scales daily, not only before exams.",
         "We may to have misread the trail markers in the dusk."
       ],
-      "answer_key": [true, true, true, true, false],
-      "tactical_explanations": [
-        "TRUE — Present \"must be\" is a strong deduction from immediate evidence.\n\nTip: Dead indicators + \"must\" = confident now-time conclusion.",
-        "TRUE — \"Could have been going to apologise\" hedges an aborted past intention.\n\nTip: \"Be going to\" can nest under modal perfects for plans that never landed.",
-        "TRUE — Here \"mustn’t have borrowed\" works with evidence that the lock is untouched, denying the past act.\n\nTip: Context matters: past \"must not have\" can deny an action that did not occur.",
-        "TRUE — \"Ought to have been practising\" criticises a past continuous habit that fell short.\n\nTip: Progressive past advisability: ought to + have been + -ing.",
-        "FALSE — \"May to have\" inserts an illegal \"to\" after the modal.\n\nTip: Pattern is \"may have misread\", never \"may to have\"."
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
       ],
-      "highlights": ["must be dead", "could have been going to", "mustn’t have borrowed", "ought to have been practising", "may to have"],
+      "tactical_explanations": [
+        "**A) The battery must be dead — nothing lights up when I press the switch.**  (true)\n\nPresent \"must be dead\" is a strong deduction from immediate evidence — nothing lights when the switch is pressed. Dead indicators license a confident now-time conclusion.\n\n**Tip:** Direct present failure cues → epistemic \"must\" + bare infinitive.",
+        "**B) He could have been going to apologise before the argument flared again.**  (true)\n\n\"Could have been going to apologise\" hedges an aborted past intention before the argument flared again. \"Be going to\" can nest under modal perfects for plans that never landed.\n\n**Tip:** Nested \"going to\" under modal perfect = possible plan that failed to complete.",
+        "**C) You mustn’t have borrowed my bike without asking — and the lock is still on it.**  (true)\n\nHere \"mustn't have borrowed\" works with evidence that the lock is still on the bike, denying the past act. Context matters: past \"must not have\" can deny an action that evidence shows did not occur.\n\n**Tip:** Corroborating evidence lets past \"mustn't have\" deny the action.",
+        "**D) She ought to have been practising scales daily, not only before exams.**  (true)\n\n\"Ought to have been practising\" criticises a past continuous habit that fell short — scales daily, not only before exams. Progressive past advisability keeps \"ought to\" intact.\n\n**Tip:** Ought to + have been + -ing for missed continuous habits.",
+        "**E) We may to have misread the trail markers in the dusk.**  (false)\n\nTrap: \"May to have\" inserts an illegal \"to\" after the modal. The pattern is \"may have misread,\" never \"may to have.\"\n\n**Tip:** Modal perfect = modal + have + PP — no \"to\" in the middle."
+      ],
+      "highlights": [
+        "must be dead",
+        "could have been going to",
+        "mustn’t have borrowed",
+        "ought to have been practising",
+        "may to have"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.4",
-      "solution_overview": "Nested \"be going to\", progressive \"ought to have been\", and evidenced \"mustn’t have\" are advanced but valid. Fail only the stray \"to\" after \"may\"."
+      "solution_overview": "Nested \"be going to,\" progressive \"ought to have been,\" and evidenced \"mustn't have\" are advanced but valid. Fail only the stray \"to\" after \"may.\"\n\n**Part 1: What to watch for.**\n\nAllow deep nests (could have been going to; ought to have been practising) when the timeline needs them. Never insert \"to\" between \"may\" and \"have.\"\n\n**Part 2: How to decide.**\n\nHunt illicit \"to\" in the modal-perfect chain. Elsewhere, check that deduction, aborted intention, evidenced past denial, and progressive past advisability all cohere.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-4-15",
@@ -378,19 +546,31 @@
         "We needn’t have reserved seats — the hall was half empty.",
         "She must can speak Spanish after a year in Madrid."
       ],
-      "answer_key": [true, false, true, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Cannot but have suffered\" is a formal idiom meaning \"must inevitably have suffered\".\n\nTip: \"Cannot but\" + bare infinitive / perfect signals inevitability.",
-        "FALSE — \"Should of been\" must be \"should have been\".\n\nTip: Same rule every time: \"have\", never \"of\".",
-        "TRUE — \"May well have taken\" strengthens a serious past possibility.\n\nTip: \"May well have\" = \"it is quite possible that … did\".",
-        "TRUE — \"Needn’t have reserved\" correctly means the past reservation was unnecessary.\n\nTip: Empty hall now proves the earlier booking was surplus.",
-        "FALSE — \"Must can\" stacks two modals; write \"must be able to speak\" or \"can speak\".\n\nTip: English forbids double pure modals — insert \"be able to\" if you need ability after \"must\"."
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
       ],
-      "highlights": ["cannot but have suffered", "should of been", "may well have taken", "needn’t have reserved", "must can speak"],
+      "tactical_explanations": [
+        "**A) The garden cannot but have suffered after three weeks without rain.**  (true)\n\n\"Cannot but have suffered\" is a formal idiom meaning the garden must inevitably have suffered after three dry weeks. The shape is elevated but grammatical.\n\n**Tip:** \"Cannot but\" + bare infinitive / perfect signals inevitability.",
+        "**B) You should of been checking the oven timer more carefully.**  (false)\n\nTrap: \"Should of been\" must be \"should have been.\" The same rule applies every time: write \"have,\" never \"of,\" after a modal.\n\n**Tip:** Progressive or simple — still \"have,\" never \"of.\"",
+        "**C) They may well have taken the scenic route to avoid the motorway.**  (true)\n\n\"May well have taken\" strengthens a serious past possibility that they chose the scenic route to avoid the motorway. It is still a possibility, not proven fact.\n\n**Tip:** \"May well have\" = \"it is quite possible that … did.\"",
+        "**D) We needn’t have reserved seats — the hall was half empty.**  (true)\n\n\"Needn't have reserved\" correctly means the past reservation was unnecessary — the hall was half empty. Empty seats now prove the earlier booking was surplus.\n\n**Tip:** Present counter-evidence licenses \"needn't have\" + PP.",
+        "**E) She must can speak Spanish after a year in Madrid.**  (false)\n\nTrap: \"Must can\" stacks two pure modals. Write \"must be able to speak\" or simply \"can speak\" after a year in Madrid — English does not allow \"must can.\"\n\n**Tip:** Need ability after \"must\"? Use \"be able to,\" not a second modal."
+      ],
+      "highlights": [
+        "cannot but have suffered",
+        "should of been",
+        "may well have taken",
+        "needn’t have reserved",
+        "must can speak"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.4",
-      "solution_overview": "Formal \"cannot but\" and \"may well have\" are acceptable advanced shapes. Reject \"of\" for \"have\" and the illegal double modal \"must can\"."
+      "solution_overview": "Formal \"cannot but\" and \"may well have\" are acceptable advanced shapes. Reject \"of\" for \"have\" and the illegal double modal \"must can.\"\n\n**Part 1: What to watch for.**\n\n\"Cannot but have\" signals inevitability in formal style; \"may well have\" strengthens past possibility. English forbids stacking two pure modals — insert \"be able to\" if you need ability after \"must.\"\n\n**Part 2: How to decide.**\n\nFail \"should of\" and \"must can\" immediately. Pass formal idiom, strengthened past possibility, and \"needn't have\" for unnecessary past booking.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-4-16",
@@ -404,19 +584,31 @@
         "They mustn’t of crossed the frozen lake on foot.",
         "We ought to update the shared shopping list before Friday."
       ],
-      "answer_key": [true, true, true, false, true],
-      "tactical_explanations": [
-        "TRUE — \"Should have been simmering\" criticises the wrong past continuous cooking method.\n\nTip: Progressive modal perfect can target how something was being done.",
-        "TRUE — \"Might have left\" correctly softens an uncertain past deduction.\n\nTip: Pairing \"might have\" with \"cannot be sure\" is coherent hedging.",
-        "TRUE — \"Need not have brought\" correctly marks an unnecessary past action.\n\nTip: Dry weather after the fact proves the umbrella was surplus.",
-        "FALSE — Write \"mustn’t have crossed\", never \"mustn’t of crossed\".\n\nTip: Contractions do not license \"of\" for \"have\".",
-        "TRUE — \"Ought to update\" correctly advises a timely list refresh.\n\nTip: Present advice still needs \"ought to\" + bare infinitive."
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
       ],
-      "highlights": ["should have been simmering", "might have left", "need not have brought", "mustn’t of crossed", "ought to update"],
+      "tactical_explanations": [
+        "**A) The soup should have been simmering gently, not boiling hard.**  (true)\n\n\"Should have been simmering\" criticises the wrong past continuous cooking method — gentle simmer, not a hard boil. Progressive modal perfect can target how something was being done.\n\n**Tip:** \"Should have been\" + -ing = past process that ought to have looked different.",
+        "**B) He might have left already, but we cannot be sure.**  (true)\n\n\"Might have left\" correctly softens an uncertain past deduction, and pairing it with \"we cannot be sure\" is coherent hedging rather than a contradiction.\n\n**Tip:** Soft \"might have\" loves an explicit uncertainty coda.",
+        "**C) You need not have brought an umbrella — it never rained.**  (true)\n\n\"Need not have brought\" correctly marks an unnecessary past action — it never rained, so the umbrella was surplus after the fact.\n\n**Tip:** Dry outcome after the event → \"need not have\" + PP.",
+        "**D) They mustn’t of crossed the frozen lake on foot.**  (false)\n\nTrap: Write \"mustn't have crossed,\" never \"mustn't of crossed.\" Contractions do not license \"of\" for \"have.\"\n\n**Tip:** Same spelling rule under every contraction: have, not of.",
+        "**E) We ought to update the shared shopping list before Friday.**  (true)\n\n\"Ought to update\" correctly advises a timely refresh of the shared shopping list before Friday. Present advice still needs \"ought to\" + bare infinitive.\n\n**Tip:** Present \"ought to\" + V1 for forward-looking advice."
+      ],
+      "highlights": [
+        "should have been simmering",
+        "might have left",
+        "need not have brought",
+        "mustn’t of crossed",
+        "ought to update"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.4",
-      "solution_overview": "Progressive past advice, soft deduction, and unnecessary past effort are clean. The single failure is another \"of\" standing in for \"have\" after \"mustn’t\"."
+      "solution_overview": "Progressive past advice, soft deduction, and unnecessary past effort are clean. The single failure is another \"of\" standing in for \"have\" after \"mustn't.\"\n\n**Part 1: What to watch for.**\n\nProgressive modal perfect can target how something was being done. Pair soft \"might have\" with honest uncertainty. Contractions do not license \"of\" for \"have.\"\n\n**Part 2: How to decide.**\n\nHunt \"of\" after \"mustn't.\" Confirm the other four: wrong continuous method, hedged leaving, unnecessary umbrella, and present \"ought to\" advice.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-4-17",
@@ -430,19 +622,31 @@
         "He mightn’t have realised the path forked behind the barn.",
         "She need not have to renew the membership until autumn."
       ],
-      "answer_key": [true, false, true, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Cannot have been other than delighted\" is a formal double negation meaning she must have been delighted.\n\nTip: \"Cannot have been other than …\" = strong positive deduction in formal dress.",
-        "FALSE — \"Should must\" stacks two obligation modals.\n\nTip: Use \"should label\" or \"must label\" — never both.",
-        "TRUE — \"Ought to have been watering\" correctly criticises a past continuous habit that fell short.\n\nTip: Progressive past advisability: ought to + have been + -ing.",
-        "TRUE — \"Mightn’t have realised\" softens a past negative deduction about awareness.\n\nTip: Contracted \"mightn’t have\" fits informal narrative.",
-        "FALSE — \"Need not have to renew\" double-marks waived duty; write \"need not renew\" or \"does not have to renew\".\n\nTip: One no-obligation marker is enough."
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
       ],
-      "highlights": ["cannot have been other than", "should must", "ought to have been watering", "mightn’t have realised", "need not have to"],
+      "tactical_explanations": [
+        "**A) The archivist cannot have been other than delighted by the recovered letters.**  (true)\n\n\"Cannot have been other than delighted\" is a formal double negation meaning the archivist must have been delighted by the recovered letters. The ornate dress still yields a strong positive deduction.\n\n**Tip:** \"Cannot have been other than …\" = strong positive deduction in formal style.",
+        "**B) You should must label the allergy on the lunchbox clearly.**  (false)\n\nTrap: \"Should must label\" stacks two obligation modals. Use \"should label\" or \"must label\" — never both on the lunchbox allergy line.\n\n**Tip:** One obligation word; strip the extra modal.",
+        "**C) We ought to have been watering the balcony plants daily in this heat.**  (true)\n\n\"Ought to have been watering\" correctly criticises a past continuous habit that fell short in the heat. Progressive past advisability keeps \"ought to\" + have been + -ing.\n\n**Tip:** Missed continuous care → ought to + have been + -ing.",
+        "**D) He mightn’t have realised the path forked behind the barn.**  (true)\n\n\"Mightn't have realised\" softens a past negative deduction about noticing that the path forked behind the barn. Contracted \"mightn't have\" fits informal narrative.\n\n**Tip:** Soft past unawareness → \"mightn't have\" + PP.",
+        "**E) She need not have to renew the membership until autumn.**  (false)\n\nTrap: \"Need not have to renew\" double-marks waived duty. Write \"need not renew\" or \"does not have to renew\" — one marker is enough until autumn.\n\n**Tip:** Pick \"need not\" or negated \"have to,\" not both stacked."
+      ],
+      "highlights": [
+        "cannot have been other than",
+        "should must",
+        "ought to have been watering",
+        "mightn’t have realised",
+        "need not have to"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.4",
-      "solution_overview": "Formal double-negative deduction and progressive \"ought to have been\" are legitimate. Reject stacked obligation (\"should must\") and the redundant \"need not have to\" pairing."
+      "solution_overview": "Formal double-negative deduction and progressive \"ought to have been\" are legitimate. Reject stacked obligation (\"should must\") and the redundant \"need not have to\" pairing.\n\n**Part 1: What to watch for.**\n\n\"Cannot have been other than …\" is a formal way to force a strong positive deduction. One obligation modal is enough; one no-duty marker is enough.\n\n**Part 2: How to decide.**\n\nFail double modals and stacked \"need not have to.\" Pass formal inevitability-style deduction, progressive past advisability, and soft \"mightn't have.\"\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-4-18",
@@ -456,19 +660,31 @@
         "Flatmates mustn’t have taken cash from the jar overnight — and the note count proves they did not.",
         "The guide might well have taken a shortcut through the orchard."
       ],
-      "answer_key": [true, true, false, true, true],
-      "tactical_explanations": [
-        "TRUE — \"Cannot but have noticed\" means \"must inevitably have noticed\".\n\nTip: \"Cannot but\" + perfect is formal but grammatical for inevitability.",
-        "TRUE — \"Should have had … resoled\" correctly frames a past causative expectation.\n\nTip: Modal perfect can wrap causative \"have + object + past participle\".",
-        "FALSE — \"May to have\" inserts an illegal \"to\" after the modal.\n\nTip: Pattern is \"may have understated\", never \"may to have\".",
-        "TRUE — Here \"mustn’t have taken\" works as a past prohibition reading supported by evidence that the cash is untouched.\n\nTip: Context and corroboration matter with past \"must not have\".",
-        "TRUE — \"Might well have taken\" idiomatically strengthens a serious past suspicion.\n\nTip: \"Might well have\" = \"it is quite possible that … did\"."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
       ],
-      "highlights": ["cannot but have noticed", "should have had", "may to have", "mustn’t have taken", "might well have taken"],
+      "tactical_explanations": [
+        "**A) The ranger cannot but have noticed the abandoned campfire.**  (true)\n\n\"Cannot but have noticed\" means the ranger must inevitably have noticed the abandoned campfire. Formal \"cannot but\" + perfect is grammatical for inevitability.\n\n**Tip:** \"Cannot but\" + perfect = formal \"must have\" inevitability.",
+        "**B) We should have had the boots resoled before the trek.**  (true)\n\n\"Should have had the boots resoled\" correctly frames a past causative expectation before the trek. Modal perfect can wrap \"have + object + past participle.\"\n\n**Tip:** Causative inside modal perfect is a legitimate advanced shape.",
+        "**C) She may to have understated how steep the final climb was.**  (false)\n\nTrap: \"May to have\" inserts an illegal \"to\" after the modal. Write \"may have understated,\" never \"may to have understated.\"\n\n**Tip:** Modal + have + PP — no wedged \"to.\"",
+        "**D) Flatmates mustn’t have taken cash from the jar overnight — and the note count proves they did not.**  (true)\n\nHere \"mustn't have taken\" works as a past denial supported by evidence that the cash is untouched — the note count proves they did not. Context and corroboration matter with past \"must not have.\"\n\n**Tip:** Evidence clause can license past \"mustn't have\" as \"did not happen.\"",
+        "**E) The guide might well have taken a shortcut through the orchard.**  (true)\n\n\"Might well have taken\" idiomatically strengthens a serious past suspicion that the guide used an orchard shortcut. Still possibility, but a strong one.\n\n**Tip:** \"Might well have\" = \"it is quite possible that … did.\""
+      ],
+      "highlights": [
+        "cannot but have noticed",
+        "should have had",
+        "may to have",
+        "mustn’t have taken",
+        "might well have taken"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.4",
-      "solution_overview": "Advanced idioms (\"cannot but\", \"might well have\") and causative modal perfects are acceptable. Reject only the stray \"to\" after \"may\". Read past \"mustn’t have\" carefully against the evidence clause."
+      "solution_overview": "Advanced idioms (\"cannot but,\" \"might well have\") and causative modal perfects are acceptable. Reject only the stray \"to\" after \"may.\" Read past \"mustn't have\" carefully against the evidence clause.\n\n**Part 1: What to watch for.**\n\n\"Cannot but have\" signals inevitability; \"should have had … resoled\" wraps a causative. Evidence can support past \"mustn't have\" as denial of an act.\n\n**Part 2: How to decide.**\n\nFail \"may to have.\" Elsewhere confirm formal inevitability, causative past advice, evidenced past denial, and strengthened \"might well have.\"\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-4-19",
@@ -482,19 +698,31 @@
         "The map should not of omitted the footbridge over the creek.",
         "We may as well have walked for all the good the crowded bus did."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — \"Must have been about to plate\" correctly deduces an imminent past plan interrupted by the outage.\n\nTip: \"Be about to\" can sit inside a modal perfect for near-future-in-the-past deductions.",
-        "FALSE — Drop the \"to\": \"needn’t have packed\", not \"needn’t to have packed\".\n\nTip: Modal \"need not/needn’t\" never takes \"to\" before the verb chain.",
-        "TRUE — \"Could have been going to cycle\" hedges a past intention that never completed.\n\nTip: \"Be going to\" can nest under modal perfects for aborted plans.",
-        "FALSE — \"Should not of omitted\" must be \"should not have omitted\".\n\nTip: Same rule every time: \"have\", never \"of\".",
-        "TRUE — \"May as well have walked\" idiomatically means the bus achieved nothing useful.\n\nTip: \"May as well have\" + past participle = ironic \"it would have made little difference\"."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["must have been about to", "needn’t to have packed", "could have been going to", "should not of omitted", "may as well have walked"],
+      "tactical_explanations": [
+        "**A) The chef must have been about to plate the dessert when the power cut hit.**  (true)\n\n\"Must have been about to plate\" correctly deduces an imminent past plan interrupted by the power cut. \"Be about to\" can sit inside a modal perfect for near-future-in-the-past deductions.\n\n**Tip:** \"Must have been about to\" + V1 = confident interrupted imminent action.",
+        "**B) You needn’t to have packed both jumpers and a heavy coat.**  (false)\n\nTrap: Drop the \"to\": write \"needn't have packed,\" not \"needn't to have packed.\" Modal \"need not / needn't\" never takes \"to\" before the verb chain.\n\n**Tip:** \"Needn't have\" + PP is the sealed pattern — no \"to.\"",
+        "**C) They could have been going to cycle the coastal path before the wind rose.**  (true)\n\n\"Could have been going to cycle\" hedges a past intention to ride the coastal path that never completed once the wind rose. \"Be going to\" nests under modal perfects for aborted plans.\n\n**Tip:** Soft aborted plan → \"could have been going to\" + V1.",
+        "**D) The map should not of omitted the footbridge over the creek.**  (false)\n\nTrap: \"Should not of omitted\" must be \"should not have omitted.\" Same rule every time: \"have,\" never \"of,\" after a modal.\n\n**Tip:** Negation does not change the helper — still \"have.\"",
+        "**E) We may as well have walked for all the good the crowded bus did.**  (true)\n\n\"May as well have walked\" idiomatically means the crowded bus achieved nothing useful — walking would have made little difference. The ironic past idiom is standard.\n\n**Tip:** \"May as well have\" + PP = ironic \"it would have made little difference.\""
+      ],
+      "highlights": [
+        "must have been about to",
+        "needn’t to have packed",
+        "could have been going to",
+        "should not of omitted",
+        "may as well have walked"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.4",
-      "solution_overview": "Nested near-future and \"be going to\" inside modal perfects are advanced but valid. Failures are form-only: an extra \"to\" after \"needn’t\" and another \"of\" for \"have\". The ironic \"may as well have\" idiom is fine."
+      "solution_overview": "Nested near-future and \"be going to\" inside modal perfects are advanced but valid. Failures are form-only: an extra \"to\" after \"needn't\" and another \"of\" for \"have.\" The ironic \"may as well have\" idiom is fine.\n\n**Part 1: What to watch for.**\n\n\"Must / could have been about to / going to\" encode interrupted or aborted past plans. Modal \"needn't\" never takes \"to.\" Write \"have,\" never \"of.\"\n\n**Part 2: How to decide.**\n\nStrip illicit \"to\" and replace \"of\" with \"have.\" Then confirm interrupted plating, aborted cycle plan, and the ironic \"may as well have walked\" reading.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-4-20",
@@ -508,19 +736,31 @@
         "He mightn’t have realised the ferry required advance booking in peak season.",
         "The book club need not have to maintain two separate reading lists after the groups joined."
       ],
-      "answer_key": [true, false, true, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Cannot have been other than exhausted\" means they must have been exhausted.\n\nTip: Formal \"cannot have been other than …\" = strong positive deduction.",
-        "FALSE — \"Should must\" stacks two obligation modals.\n\nTip: Use \"should escalate\" or \"must escalate\" — never both.",
-        "TRUE — \"Ought to have been updating\" correctly criticises a past continuous practice that fell short.\n\nTip: Progressive past advisability: ought to + have been + -ing.",
-        "TRUE — \"Mightn’t have realised\" softens a past negative deduction about awareness.\n\nTip: Contracted \"mightn’t have\" is acceptable in less formal prose.",
-        "FALSE — \"Need not have to maintain\" double-marks absence of obligation; write \"need not maintain\" or \"do not have to maintain\".\n\nTip: Pick one no-obligation marker — \"need not\" or negated \"have to\", not both stacked."
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
       ],
-      "highlights": ["cannot have been other than", "should must", "ought to have been updating", "mightn’t have realised", "need not have to"],
+      "tactical_explanations": [
+        "**A) The volunteers cannot have been other than exhausted after the night shift at the shelter.**  (true)\n\n\"Cannot have been other than exhausted\" means the volunteers must have been exhausted after the night shift. Formal \"cannot have been other than …\" is a strong positive deduction in ornate clothing.\n\n**Tip:** Formal double negation here collapses to must-have-been certainty.",
+        "**B) She should must escalate any safety concern to the site supervisor the same day.**  (false)\n\nTrap: \"Should must escalate\" stacks two obligation modals about safety concerns. Use \"should escalate\" or \"must escalate\" — never both the same day.\n\n**Tip:** One obligation modal only; safety tone does not license doubling.",
+        "**C) We ought to have been updating the trail conditions continuously, not weekly.**  (true)\n\n\"Ought to have been updating\" correctly criticises a past continuous practice that fell short — trail conditions continuously, not weekly. Progressive past advisability is the intended advanced shape.\n\n**Tip:** Ought to + have been + -ing for missed continuous procedure.",
+        "**D) He mightn’t have realised the ferry required advance booking in peak season.**  (true)\n\n\"Mightn't have realised\" softens a past negative deduction about knowing that peak-season ferry booking was required. Contracted \"mightn't have\" is acceptable in less formal prose.\n\n**Tip:** Soft past unawareness → \"mightn't have\" + PP.",
+        "**E) The book club need not have to maintain two separate reading lists after the groups joined.**  (false)\n\nTrap: \"Need not have to maintain\" double-marks absence of obligation after the groups joined. Write \"need not maintain\" or \"do not have to maintain\" — pick one no-obligation marker.\n\n**Tip:** \"Need not\" or negated \"have to,\" never both stacked."
+      ],
+      "highlights": [
+        "cannot have been other than",
+        "should must",
+        "ought to have been updating",
+        "mightn’t have realised",
+        "need not have to"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.4",
-      "solution_overview": "Formal double-negative deduction and progressive \"ought to have been\" are legitimate advanced shapes. Reject stacked obligation (\"should must\") and the redundant \"need not have to\" pairing — one marker of waived duty is enough."
+      "solution_overview": "Formal double-negative deduction and progressive \"ought to have been\" are legitimate advanced shapes. Reject stacked obligation (\"should must\") and the redundant \"need not have to\" pairing — one marker of waived duty is enough.\n\n**Part 1: What to watch for.**\n\n\"Cannot have been other than …\" forces a strong positive reading in formal dress. Progressive past advisability keeps \"ought to have been -ing.\" Never stack two obligation modals or two no-duty markers.\n\n**Part 2: How to decide.**\n\nFail \"should must\" and \"need not have to\" on sight. Pass formal exhaustion deduction, continuous past updating that fell short, and soft \"mightn't have realised.\"\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     }
   ]
 }

@@ -14,13 +14,19 @@
         "Between you and I, the reunion dinner felt awkward.",
         "Fewer guests arrived than we had expected."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Whoever is the subject of finds, so the nominative form is required even after to.\n\nTip: Ignore the preposition; judge case inside the clause.",
-        "FALSE — Use possessive whose, not who's (= who is/has): whose garden.\n\nTip: If you cannot expand to who is, write whose.",
-        "TRUE — Affect as a verb correctly means influence.\n\nTip: Most exam sentences want the verb affect, not the noun effect.",
-        "FALSE — After the preposition between, use object case: Between you and me.\n\nTip: Strip you and — you would never say between I.",
-        "TRUE — Fewer correctly modifies the countable plural guests.\n\nTip: Countable plural → fewer; mass noun → less."
+        "**A) Pass the remote to whoever finds it under the sofa.**  (true)\n\nWhoever is the subject of finds inside the relative clause, so the nominative form is required. The preposition to governs the whole clause, not a lone object pronoun right after it. Read the clause on its own: whoever finds it -- that is clearly a subject slot.\n\n**Tip:** Ignore the preposition; judge case inside the clause.",
+        "**B) The neighbour, who's garden we borrowed tools from, waved hello.**  (false)\n\nTrap: who's expands only to who is or who has, and neither fits before garden. Possession is marked with whose: whose garden. If expansion fails, switch to whose.\n\n**Tip:** If you cannot expand to who is, write whose.",
+        "**C) Late nights affect my concentration in morning classes.**  (true)\n\nAffect is the verb meaning influence, and that is exactly what late nights do to concentration. Effect as a noun would need a different frame (have an effect on…). Here the progressive/finite verb slot wants affect.\n\n**Tip:** Most exam sentences want the verb affect, not the noun effect.",
+        "**D) Between you and I, the reunion dinner felt awkward.**  (false)\n\nTrap: after the preposition between, both pronouns must be object case. Between you and I is a common hypercorrection; repair to Between you and me. Strip you and -- you would never say between I.\n\n**Tip:** Strip you and -- you would never say between I.",
+        "**E) Fewer guests arrived than we had expected.**  (true)\n\nGuests are a countable plural, so fewer is the careful choice. Less typically pairs with mass nouns (less sugar, less time). Headcount plurals take fewer in formal exam English.\n\n**Tip:** Countable plural → fewer; mass noun → less."
       ],
       "highlights": [
         "whoever finds",
@@ -32,7 +38,7 @@
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.20",
-      "solution_overview": "Work through each sentence as a quick case check: which form fits the grammar slot? Look for subject vs object, possession vs contraction, influence vs result, object pronouns after prepositions, and countable vs mass nouns."
+      "solution_overview": "These five sentences are quick swaps among confusable pairs: case after to, possession vs contraction, affect vs effect, object pronouns after between, and fewer vs less.\n\n**Part 1: What to watch for.**\n\nEach line turns on one classic exam trap. Watch subject case inside a clause after a preposition, whose versus who's, the verb affect for influence, object me after between, and fewer with countable plurals.\n\n**Part 2: How to decide.**\n\nFor whoever/whomever, find the verb of the relative clause and ask who does the action. For who's/whose, try expanding who's. For affect/effect, ask influence or bring about. For pronouns after between, keep object case. For fewer/less, ask whether the noun is countable.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-20-02",
@@ -46,13 +52,19 @@
         "Between you and me, the playlist needs more variety.",
         "The selection criteria is printed on the club noticeboard."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — The relative is the subject of arrives, so use whoever, not whomever.\n\nTip: Find the verb in the clause; if the wh-word does the action, choose whoever.",
-        "TRUE — Whose correctly marks possession before whistle.\n\nTip: Whose works for people and things in formal English.",
-        "FALSE — For influence, use the verb affect: will affect your energy.\n\nTip: Reserve verb effect for bring about / cause to happen.",
-        "TRUE — Object pronouns after between are correct: you and me.\n\nTip: Formal speech still uses me here — I is the hypercorrection.",
-        "FALSE — Criteria is plural; use are: The selection criteria are printed.\n\nTip: Singular form is criterion."
+        "**A) Give the spare ticket to whomever arrives at the gate first.**  (false)\n\nTrap: whomever looks formal after to, but the relative is the subject of arrives. Subjects need whoever: whoever arrives at the gate first. Find the verb in the clause; if the wh-word does the action, choose whoever.\n\n**Tip:** Find the verb in the clause; if the wh-word does the action, choose whoever.",
+        "**B) The coach, whose whistle broke mid-match, borrowed another.**  (true)\n\nWhose correctly marks possession before whistle: the coach's whistle. Who's would mean who is/has and would not fit before a noun of possession. Whose works for people and things in formal English.\n\n**Tip:** Whose works for people and things in formal English.",
+        "**C) Too much sugar will effect your energy after lunch.**  (false)\n\nTrap: the meaning is influence on energy after lunch, so you need the verb affect. Will effect would mean bring about, which does not fit your energy as the direct object here. Repair: will affect your energy.\n\n**Tip:** Reserve verb effect for bring about / cause to happen.",
+        "**D) Between you and me, the playlist needs more variety.**  (true)\n\nObject pronouns after between are correct: you and me. Between you and I is the hypercorrection this line carefully avoids. Formal speech still uses me here.\n\n**Tip:** Formal speech still uses me here -- I is the hypercorrection.",
+        "**E) The selection criteria is printed on the club noticeboard.**  (false)\n\nTrap: criteria is a plural Latin form, so it needs a plural verb. The selection criteria is must become are printed. The singular form is criterion.\n\n**Tip:** Singular form is criterion."
       ],
       "highlights": [
         "whomever arrives",
@@ -64,7 +76,7 @@
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.20",
-      "solution_overview": "These five hinge on classic swap traps. Ask: is the wh-word a subject? Is the 's a contraction or a possessive? Does the sentence mean influence or bring about? Is the pronoun after a preposition? Is criteria treated as plural?"
+      "solution_overview": "This set recycles the same confusable pairs with swapped outcomes, so do not answer by habit from Task 1.\n\n**Part 1: What to watch for.**\n\nAsk whether the wh-word is a subject, whether the 's is a contraction or a possessive, whether the sentence means influence or bring about, whether the pronoun sits after a preposition, and whether criteria is treated as plural.\n\n**Part 2: How to decide.**\n\nTest case inside the clause after to, expand who's when you see it, swap effect to affect for influence, keep me after between, and pair criteria with are/were/have.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-20-03",
@@ -78,13 +90,19 @@
         "Less messages were left on the noticeboard this week.",
         "The entry criteria are clear and posted online."
       ],
-      "answer_key": [true, true, true, false, true],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Whoever correctly acts as the subject of finishes.\n\nTip: Start-of-sentence subject slots almost always need whoever.",
-        "TRUE — Who's expands cleanly to who is before responsible.\n\nTip: Test expansion before you accept who's.",
-        "TRUE — Verb effect meaning bring about is correct with a change.\n\nTip: Effect a change/reform/improvement is the rare but valid pattern.",
-        "FALSE — Messages are countable; use Fewer messages.\n\nTip: If you can count the noun, prefer fewer.",
-        "TRUE — Plural criteria correctly takes are.\n\nTip: Formal exam English keeps criteria plural."
+        "**A) Whoever finishes the puzzle should claim the prize.**  (true)\n\nWhoever correctly acts as the subject of finishes at the head of the sentence. No outer preposition tempts you toward whomever here. Start-of-sentence subject slots almost always need whoever.\n\n**Tip:** Start-of-sentence subject slots almost always need whoever.",
+        "**B) Who's responsible for locking the studio tonight?**  (true)\n\nWho's expands cleanly to who is before responsible. That is exactly when the contraction is allowed. Always run the expansion test before you accept who's.\n\n**Tip:** Test expansion before you accept who's.",
+        "**C) The committee hopes the new rule will effect a change in attendance.**  (true)\n\nVerb effect meaning bring about is correct with a change. Effect a change/reform/improvement is the rare but valid formal pattern. This is not the everyday influence use of affect.\n\n**Tip:** Effect a change/reform/improvement is the rare but valid pattern.",
+        "**D) Less messages were left on the noticeboard this week.**  (false)\n\nTrap: messages are countable items, so Less messages is wrong. Repair to Fewer messages were left…. If you can count the noun, prefer fewer.\n\n**Tip:** If you can count the noun, prefer fewer.",
+        "**E) The entry criteria are clear and posted online.**  (true)\n\nPlural criteria correctly takes are. The line models the agreement pattern examiners expect. Formal exam English keeps criteria plural.\n\n**Tip:** Formal exam English keeps criteria plural."
       ],
       "highlights": [
         "Whoever finishes",
@@ -96,7 +114,7 @@
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.20",
-      "solution_overview": "Four of these are standard correct forms; one countable/mass slip remains. Confirm each pair quickly: whoever subject, who's = who is, effect = bring about, fewer with countables, criteria + plural verb."
+      "solution_overview": "Four of these are carefully correct models; one countable/mass slip remains.\n\n**Part 1: What to watch for.**\n\nConfirm each pair quickly: whoever as subject, who's = who is, effect = bring about, fewer with countables, and criteria with a plural verb.\n\n**Part 2: How to decide.**\n\nExpand contractions, check whether effect means bring about, and ask whether the noun after less/fewer can be counted one by one.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-20-04",
@@ -110,13 +128,19 @@
         "Keep this secret between you and me.",
         "We need less luggage before we board the train."
       ],
-      "answer_key": [true, false, true, true, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Whomever is the object of nominates, so the object form is traditionally correct.\n\nTip: If another subject does the verb, the wh-word is often the object.",
-        "FALSE — Need possessive whose notes, not who's (= who is).\n\nTip: Who's notes never expands sensibly.",
-        "TRUE — Verb affect correctly means influence.\n\nTip: Ask whether something influences something else.",
-        "TRUE — Object pronouns after between are required.\n\nTip: Everyday English still marks between you and I wrong.",
-        "TRUE — Luggage is uncountable, so less is appropriate.\n\nTip: Mass nouns (time, luggage, advice) take less."
+        "**A) Invite whomever the class nominates as quiz master.**  (true)\n\nWhomever is the object of nominates: the class nominates someone. When another subject does the verb, the wh-word is traditionally an object. Invite whomever the class nominates is the careful traditional form.\n\n**Tip:** If another subject does the verb, the wh-word is often the object.",
+        "**B) Please name the classmate who's notes we borrowed.**  (false)\n\nTrap: possession is needed before notes, so write whose notes. Who's notes never expands to a sensible who is notes. Noun after the wh-form almost always signals whose.\n\n**Tip:** Who's notes never expands sensibly.",
+        "**C) Cold weather can affect joint pain overnight.**  (true)\n\nCold weather influences joint pain, and the verb for that is affect. Ask whether something influences something else -- if yes, choose affect. No bring-about result noun is in play here.\n\n**Tip:** Ask whether something influences something else.",
+        "**D) Keep this secret between you and me.**  (true)\n\nObject pronouns after between are required: you and me. Everyday English still marks between you and I wrong. Keep both coordinated pronouns in object case.\n\n**Tip:** Everyday English still marks between you and I wrong.",
+        "**E) We need less luggage before we board the train.**  (true)\n\nLuggage is uncountable in this everyday sense, so less is appropriate. Mass nouns such as time, luggage, and advice take less. Fewer luggage would be the trap flip of this item.\n\n**Tip:** Mass nouns (time, luggage, advice) take less."
       ],
       "highlights": [
         "whomever the class nominates",
@@ -128,7 +152,7 @@
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.20",
-      "solution_overview": "Watch the one genuine object-case whomever and the mass-noun less. The rest are possession, influence, and prepositional object pronouns — mark false only where the wrong member of a pair appears."
+      "solution_overview": "Watch the genuine object-case whomever and the mass-noun less; the rest hinge on possession, influence, and prepositional object pronouns.\n\n**Part 1: What to watch for.**\n\nOne line is a true object whomever after nominates; another correctly uses less with luggage. Only mark false where the wrong member of a confusable pair appears.\n\n**Part 2: How to decide.**\n\nLocate the clause verb to choose whoever/whomever, expand who's, confirm affect for influence, keep me after between, and treat luggage as mass.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-20-05",
@@ -142,13 +166,19 @@
         "This argument stays between my sister and I.",
         "One key criterion is still missing from the checklist."
       ],
-      "answer_key": [false, true, false, false, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Is needs a subject: use whoever is at the front desk.\n\nTip: To + whomever + is is almost always wrong.",
-        "TRUE — Possessive whose correctly links the café to windows.\n\nTip: Whose is fine with inanimate subjects in formal prose.",
-        "FALSE — Meaning is influence → will affect the baby's nap.\n\nTip: No a change/result noun after the verb? Prefer affect.",
-        "FALSE — Object of between must be me: between my sister and me.\n\nTip: Same rule as between you and me.",
-        "TRUE — Singular criterion correctly pairs with is.\n\nTip: One item → criterion; several → criteria."
+        "**A) Forward the parcel to whomever is at the front desk.**  (false)\n\nTrap: is needs a subject form: whoever is at the front desk. Whomever after to is a false formal signal when the next verb is finite be. To + whomever + is is almost always wrong.\n\n**Tip:** To + whomever + is is almost always wrong.",
+        "**B) The café whose windows fog up in winter serves great soup.**  (true)\n\nPossessive whose correctly links the café to windows. Whose is fine with inanimate subjects in formal prose. Who's would fail the expansion test before windows.\n\n**Tip:** Whose is fine with inanimate subjects in formal prose.",
+        "**C) Loud music will effect the baby's nap downstairs.**  (false)\n\nTrap: the meaning is influence on the baby's nap, so write will affect. There is no a change/result object to license verb effect. If nothing is being brought about, prefer affect.\n\n**Tip:** No a change/result noun after the verb? Prefer affect.",
+        "**D) This argument stays between my sister and I.**  (false)\n\nTrap: the object of between must be me: between my sister and me. Sister and I is subject-case hypercorrection after a preposition. Same rule as between you and me.\n\n**Tip:** Same rule as between you and me.",
+        "**E) One key criterion is still missing from the checklist.**  (true)\n\nSingular criterion correctly pairs with is. One key item forces the singular Latin form. One item → criterion; several → criteria.\n\n**Tip:** One item → criterion; several → criteria."
       ],
       "highlights": [
         "whomever is",
@@ -160,7 +190,7 @@
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.20",
-      "solution_overview": "Difficulty steps up slightly: check clause subjects after to, possessive whose with places, affect vs effect, object pronouns after between, and criterion vs criteria."
+      "solution_overview": "Difficulty steps up: clause subjects after to, possessive whose with places, affect vs effect, object pronouns after between, and criterion vs criteria.\n\n**Part 1: What to watch for.**\n\nSeveral lines look polish-formal yet hide subject-case or influence errors. Check be after the wh-word, whose with café, affect for influence, me after between, and singular criterion.\n\n**Part 2: How to decide.**\n\nIf a finite verb follows the wh-word, suspect subject case. Expand who's. Ask influence vs bring about. Strip the coordination after between. Match number: one criterion / several criteria.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-20-06",
@@ -174,13 +204,19 @@
         "Fewer than twelve seats were still free.",
         "These criteria was written after the rehearsal."
       ],
-      "answer_key": [true, true, true, true, false],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Whoever is widely accepted as the object of recommends and is the safer exam default when case is contested.\n\nTip: Markers rarely accept whomever as a subject; they often accept whoever as an object.",
-        "TRUE — Who's = who has before the past participle been.\n\nTip: Who's been is a standard contraction.",
-        "TRUE — Noun effect meaning result/impact is correct after little.\n\nTip: Article/quantifier + effect usually signals the noun.",
-        "TRUE — Countable seats take fewer than.\n\nTip: Fewer than + number + plural noun is the careful form.",
-        "FALSE — Plural criteria needs were, not was.\n\nTip: Never pair criteria with a singular verb in formal answers."
+        "**A) We will ask whoever the tutor recommends.**  (true)\n\nWhoever is widely accepted as the object of recommends and is the safer exam default when case is contested. Markers rarely accept whomever as a subject; they often accept whoever as an object. Ask whoever the tutor recommends reads cleanly in modern exam English.\n\n**Tip:** Markers rarely accept whomever as a subject; they often accept whoever as an object.",
+        "**B) Who's been watering the plants while we were away?**  (true)\n\nWho's = who has before the past participle been. Who's been watering… is a standard perfect contraction. Expansion: who has been.\n\n**Tip:** Who's been is a standard contraction.",
+        "**C) The announcement had little effect on the waiting queue.**  (true)\n\nNoun effect meaning result or impact is correct after little. Article or quantifier + effect usually signals the noun, not the verb. Had little effect on… is the classic frame.\n\n**Tip:** Article/quantifier + effect usually signals the noun.",
+        "**D) Fewer than twelve seats were still free.**  (true)\n\nCountable seats take fewer than: Fewer than twelve seats. Fewer than + number + plural noun is the careful form. Less than twelve seats is the common informal trap.\n\n**Tip:** Fewer than + number + plural noun is the careful form.",
+        "**E) These criteria was written after the rehearsal.**  (false)\n\nTrap: plural criteria needs were, not was. These criteria was written flips number. Never pair criteria with a singular verb in formal answers.\n\n**Tip:** Never pair criteria with a singular verb in formal answers."
       ],
       "highlights": [
         "whoever the tutor recommends",
@@ -192,7 +228,7 @@
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.20",
-      "solution_overview": "Four statements are solid; one plural agreement error with criteria. Confirm contractions, the noun effect, fewer with numbers of countable items, and plural verb agreement."
+      "solution_overview": "Four statements are solid; one plural-agreement error with criteria closes the set.\n\n**Part 1: What to watch for.**\n\nConfirm contractions (who's been), the noun effect after little, fewer with numbered countable items, and plural verb agreement with criteria.\n\n**Part 2: How to decide.**\n\nAccept whoever in contested object slots when unsure, expand who's, treat little effect as a noun phrase, prefer fewer than with plurals, and force were/are/have with criteria.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-20-07",
@@ -206,13 +242,19 @@
         "Less volunteers signed up for the clean-up.",
         "The judging criteria remain unchanged this year."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Whoever functions acceptably as the object of lists in modern exam English.\n\nTip: Prefer whoever unless the object case is unmistakable and required.",
-        "FALSE — Possessive needed: whose shoes, not who's (= who is).\n\nTip: Expand every who's before you accept it.",
-        "TRUE — Verb affect correctly means influence.\n\nTip: Subject influences object → affect.",
-        "FALSE — Volunteers are countable people: Fewer volunteers signed up.\n\nTip: Headcount plurals → fewer.",
-        "TRUE — Plural criteria correctly takes plural remain.\n\nTip: Watch subject–verb number with Latin plurals."
+        "**A) Assign the chore to whoever the rota lists as free.**  (true)\n\nWhoever functions acceptably as the object of lists in modern exam English. Prefer whoever unless the object case is unmistakable and required. Assign… to whoever the rota lists as free is the safe mark-winning form.\n\n**Tip:** Prefer whoever unless the object case is unmistakable and required.",
+        "**B) The runner who's shoes came untied lost several seconds.**  (false)\n\nTrap: possession is needed -- whose shoes, not who's. Who's expands to who is/has and fails before shoes. Expand every who's before you accept it.\n\n**Tip:** Expand every who's before you accept it.",
+        "**C) Spicy food can affect sleep if you eat late.**  (true)\n\nVerb affect correctly means influence sleep after late spicy food. Subject influences object → affect. No bring-about result frame appears here.\n\n**Tip:** Subject influences object → affect.",
+        "**D) Less volunteers signed up for the clean-up.**  (false)\n\nTrap: volunteers are countable people, so use Fewer volunteers. Less volunteers is the headcount error examiners love. Headcount plurals → fewer.\n\n**Tip:** Headcount plurals → fewer.",
+        "**E) The judging criteria remain unchanged this year.**  (true)\n\nPlural criteria correctly takes plural remain. Watch subject - verb number with Latin plurals. Remain is a clean plural partner for criteria.\n\n**Tip:** Watch subject - verb number with Latin plurals."
       ],
       "highlights": [
         "whoever the rota lists",
@@ -224,7 +266,7 @@
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.20",
-      "solution_overview": "Scan for the possessive/contraction slip and the fewer/less headcount error. The affect and criteria lines should read clean if you keep influence and plural agreement in mind."
+      "solution_overview": "Scan for the possessive/contraction slip and the fewer/less headcount error; keep affect and criteria agreement clean.\n\n**Part 1: What to watch for.**\n\nTwo false lines misuse who's for whose and less for fewer. The affect and criteria lines should read true if you keep influence and plural agreement in mind.\n\n**Part 2: How to decide.**\n\nExpand who's, ask whether volunteers can be counted, confirm affect for influence, and match criteria to a plural verb.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-20-08",
@@ -238,13 +280,19 @@
         "Please discuss the surprise only between you and me.",
         "We noticed less delays on the morning bus route."
       ],
-      "answer_key": [true, true, true, true, false],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Whomever is the object of choose, so the object form is traditionally correct.\n\nTip: Subject you + verb choose → object whomever.",
-        "TRUE — Whose ovens correctly shows possession for a place.\n\nTip: Whose + noun is the safe possessive pattern.",
-        "TRUE — Verb effect meaning bring about fits schedule changes.\n\nTip: Effect + concrete result noun is the cue.",
-        "TRUE — Between you and me uses correct object pronouns.\n\nTip: Hypercorrect I fails after prepositions.",
-        "FALSE — Delays are countable: fewer delays.\n\nTip: Plural -s nouns almost always take fewer."
+        "**A) Congratulate whomever you choose for the lead role.**  (true)\n\nWhomever is the object of choose: you choose someone. Subject you + verb choose → object whomever. Congratulate whomever you choose is traditionally correct.\n\n**Tip:** Subject you + verb choose → object whomever.",
+        "**B) A bakery whose ovens failed closed early on Friday.**  (true)\n\nWhose ovens correctly shows possession for a place. Whose + noun is the safe possessive pattern. Who's would not expand before ovens.\n\n**Tip:** Whose + noun is the safe possessive pattern.",
+        "**C) Management intends to effect several schedule changes.**  (true)\n\nVerb effect meaning bring about fits schedule changes. Effect + concrete result noun is the cue. Management intends to effect several… is intentional formal diction.\n\n**Tip:** Effect + concrete result noun is the cue.",
+        "**D) Please discuss the surprise only between you and me.**  (true)\n\nBetween you and me uses correct object pronouns. Hypercorrect I fails after prepositions. Discuss… only between you and me is clean.\n\n**Tip:** Hypercorrect I fails after prepositions.",
+        "**E) We noticed less delays on the morning bus route.**  (false)\n\nTrap: delays are countable, so write fewer delays. Less delays treats a plural count noun as mass. Plural -s nouns almost always take fewer.\n\n**Tip:** Plural -s nouns almost always take fewer."
       ],
       "highlights": [
         "whomever you choose",
@@ -256,7 +304,7 @@
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.20",
-      "solution_overview": "Most lines are carefully correct, including a legitimate object-case whomever and verb effect. The single miss is less with a countable plural — swap it mentally to fewer."
+      "solution_overview": "Most lines are carefully correct, including a legitimate object-case whomever and verb effect; one countable less remains.\n\n**Part 1: What to watch for.**\n\nHold the true models (whose, effect a change-type verb, between you and me) and hunt the single less + plural trap.\n\n**Part 2: How to decide.**\n\nConfirm object case after choose, whose with bakery, effect as bring about, me after between, and fewer with delays.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-20-09",
@@ -270,13 +318,19 @@
         "The dispute should stay between the landlord and I.",
         "Each criterion carries equal weight in the scorecard."
       ],
-      "answer_key": [false, true, true, false, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Subject of finishes must be whoever.\n\nTip: Verb immediately after the wh-word usually signals subject case.",
-        "TRUE — Who's = who is before attending.\n\nTip: Progressive after who's → contraction is fine.",
-        "TRUE — Verb affect correctly means influence her mood.\n\nTip: Feelings and habits are typically affected.",
-        "FALSE — Use me: between the landlord and me.\n\nTip: Coordinated pronouns keep the same case.",
-        "TRUE — Singular criterion correctly takes singular carries.\n\nTip: Each + singular noun reinforces criterion."
+        "**A) Hand the microphone to whomever finishes speaking next.**  (false)\n\nTrap: the subject of finishes must be whoever. Whomever finishes wrongly uses object case in a subject slot. A verb immediately after the wh-word usually signals subject case.\n\n**Tip:** Verb immediately after the wh-word usually signals subject case.",
+        "**B) Tell me who's attending the farewell picnic.**  (true)\n\nWho's = who is before attending. Progressive after who's → contraction is fine. Tell me who's attending… expands cleanly.\n\n**Tip:** Progressive after who's → contraction is fine.",
+        "**C) The rumour did not affect her mood for long.**  (true)\n\nVerb affect correctly means influence her mood. Feelings and habits are typically affected, not effected. Did not affect is the right influence verb.\n\n**Tip:** Feelings and habits are typically affected.",
+        "**D) The dispute should stay between the landlord and I.**  (false)\n\nTrap: use me -- between the landlord and me. Coordinated pronouns keep the same case after between. Landlord and I is subject-case hypercorrection.\n\n**Tip:** Coordinated pronouns keep the same case.",
+        "**E) Each criterion carries equal weight in the scorecard.**  (true)\n\nSingular criterion correctly takes singular carries. Each + singular noun reinforces criterion. Plural criteria would need carry/are, not carries.\n\n**Tip:** Each + singular noun reinforces criterion."
       ],
       "highlights": [
         "whomever finishes",
@@ -288,7 +342,7 @@
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.20",
-      "solution_overview": "Two traps are classic: whomever used as a subject, and I after between. The remaining three are clean contractions, affect-as-influence, and singular criterion agreement."
+      "solution_overview": "Two classic traps appear: whomever used as a subject, and I after between.\n\n**Part 1: What to watch for.**\n\nThe remaining three are clean: who's as who is, affect as influence, and singular criterion agreement.\n\n**Part 2: How to decide.**\n\nIf a finite verb follows the wh-form, choose whoever. Expand who's. Keep affect for mood. Force me after between. Match each criterion to a singular verb.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-20-10",
@@ -302,13 +356,19 @@
         "Fewer sunny days remain before the school trip.",
         "The admission criteria have been tightened again."
       ],
-      "answer_key": [true, false, false, true, true],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Whoever is the subject of presents.\n\nTip: Subject + verb right after whoever is the clean pattern.",
-        "FALSE — Possessive required: whose suitcase.\n\nTip: Who's suitcase cannot mean who is suitcase.",
-        "FALSE — Influence meaning needs may affect parents.\n\nTip: Adverbial after the verb often follows affect, not effect.",
-        "TRUE — Countable sunny days take fewer.\n\nTip: Calendar units in the plural prefer fewer.",
-        "TRUE — Plural criteria correctly takes have.\n\nTip: Have/are/were are the safe plural partners."
+        "**A) Support will go to whoever presents the clearest plan.**  (true)\n\nWhoever is the subject of presents. Subject + verb right after whoever is the clean pattern. Support will go to whoever presents… keeps case inside the clause.\n\n**Tip:** Subject + verb right after whoever is the clean pattern.",
+        "**B) Name the cousin who's suitcase we found at the station.**  (false)\n\nTrap: possession required -- whose suitcase. Who's suitcase cannot mean who is suitcase. Noun after the wh-form → almost always whose.\n\n**Tip:** Who's suitcase cannot mean who is suitcase.",
+        "**C) The new timetable may effect parents with early starts.**  (false)\n\nTrap: influence meaning needs may affect parents. May effect wrongly suggests bring about. An adverbial after the verb often follows affect, not effect.\n\n**Tip:** Adverbial after the verb often follows affect, not effect.",
+        "**D) Fewer sunny days remain before the school trip.**  (true)\n\nCountable sunny days take fewer. Calendar units in the plural prefer fewer in careful English. Fewer sunny days remain… is correct.\n\n**Tip:** Calendar units in the plural prefer fewer.",
+        "**E) The admission criteria have been tightened again.**  (true)\n\nPlural criteria correctly takes have. Have/are/were are the safe plural partners. The admission criteria have been tightened again reads clean.\n\n**Tip:** Have/are/were are the safe plural partners."
       ],
       "highlights": [
         "whoever presents",
@@ -320,7 +380,7 @@
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.20",
-      "solution_overview": "Focus on the two false lines: a who's/whose possession error and affect miswritten as effect. The whoever-subject, fewer-days, and criteria-have lines should all read true."
+      "solution_overview": "Focus on the two false lines: a who's/whose possession error and affect miswritten as effect.\n\n**Part 1: What to watch for.**\n\nThe whoever-subject, fewer-days, and criteria-have lines should all read true once you lock the pairs.\n\n**Part 2: How to decide.**\n\nExpand who's before nouns, swap effect→affect for influence, keep whoever when it does the verb, and match criteria to have.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-20-11",
@@ -334,13 +394,19 @@
         "Between you and me and the rest of the team, morale is fragile.",
         "There is less evidence than we expected in the file."
       ],
-      "answer_key": [true, true, true, true, true],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Whomever is the object of had invited, so object case is traditionally right.\n\nTip: Past perfect clauses often bury the object — find who receives the action.",
-        "TRUE — Non-defining whose chair correctly marks possession.\n\nTip: Commas do not change the whose/who's rule.",
-        "TRUE — Verb affect correctly means influence outdoor matches.\n\nTip: Weather/events affect plans and people.",
-        "TRUE — All coordinated pronouns after between stay in object case; me is correct.\n\nTip: Adding more nouns does not license I.",
-        "TRUE — Uncountable evidence takes less.\n\nTip: Evidence, information, and research are mass nouns."
+        "**A) We contacted whomever the host had invited to speak.**  (true)\n\nWhomever is the object of had invited, so object case is traditionally right. Past perfect clauses often bury the object -- find who receives the action. The host had invited someone → whomever.\n\n**Tip:** Past perfect clauses often bury the object -- find who receives the action.",
+        "**B) The club, whose chair resigned yesterday, postponed the vote.**  (true)\n\nNon-defining whose chair correctly marks possession. Commas do not change the whose/who's rule. The club, whose chair resigned… is a standard relative.\n\n**Tip:** Commas do not change the whose/who's rule.",
+        "**C) Heavy rain can affect outdoor matches across the region.**  (true)\n\nVerb affect correctly means influence outdoor matches. Weather and events affect plans and people. Can affect is the influence pattern.\n\n**Tip:** Weather/events affect plans and people.",
+        "**D) Between you and me and the rest of the team, morale is fragile.**  (true)\n\nAll coordinated pronouns after between stay in object case; me is correct. Adding more nouns (and the rest of the team) does not license I. Between you and me… remains the core pattern.\n\n**Tip:** Adding more nouns does not license I.",
+        "**E) There is less evidence than we expected in the file.**  (true)\n\nUncountable evidence takes less. Evidence, information, and research are mass nouns. Less evidence… is the careful mass pairing.\n\n**Tip:** Evidence, information, and research are mass nouns."
       ],
       "highlights": [
         "whomever the host had invited",
@@ -352,7 +418,7 @@
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.20",
-      "solution_overview": "All five are carefully correct. Use this set to lock in the right members of each pair: object whomever, possessive whose, verb affect, object me, and less with a mass noun."
+      "solution_overview": "All five are carefully correct -- use the set as an answer key for the right member of each pair.\n\n**Part 1: What to watch for.**\n\nLock in object whomever, possessive whose, verb affect, object me, and less with a mass noun.\n\n**Part 2: How to decide.**\n\nWhen every line looks right, still verify each pair deliberately so you do not invent false traps.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-20-12",
@@ -366,13 +432,19 @@
         "Less than forty applications arrived before noon.",
         "Several criteria needs revision before publication."
       ],
-      "answer_key": [false, false, true, false, false],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Subject of meets requires whoever.\n\nTip: Target-meeting clauses are subject cases.",
-        "FALSE — Ask whose signature, not who's (= who is).\n\nTip: Noun after the wh-word → almost always whose.",
-        "TRUE — Verb effect meaning bring about fits a settlement.\n\nTip: Effect + indefinite article + result noun is classic.",
-        "FALSE — Countable applications prefer Fewer than forty applications.\n\nTip: Exam English still prefers fewer with countable plurals after numbers.",
-        "FALSE — Plural subject needs need: Several criteria need revision.\n\nTip: Several + plural noun → plural verb."
+        "**A) Award the points to whomever meets the weekly target.**  (false)\n\nTrap: the subject of meets requires whoever. Award… to whomever meets… puts object case in a subject slot. Target-meeting clauses are subject cases.\n\n**Tip:** Target-meeting clauses are subject cases.",
+        "**B) Who's signature appears on the permission slip?**  (false)\n\nTrap: ask whose signature, not who's (= who is). A noun after the wh-word → almost always whose. Who's signature fails expansion.\n\n**Tip:** Noun after the wh-word → almost always whose.",
+        "**C) The mediation failed to effect an early settlement.**  (true)\n\nVerb effect meaning bring about fits a settlement. Effect + indefinite article + result noun is classic. Failed to effect an early settlement is intentional formal use.\n\n**Tip:** Effect + indefinite article + result noun is classic.",
+        "**D) Less than forty applications arrived before noon.**  (false)\n\nTrap: countable applications prefer Fewer than forty applications. Exam English still prefers fewer with countable plurals after numbers. Less than forty applications is the trap form.\n\n**Tip:** Exam English still prefers fewer with countable plurals after numbers.",
+        "**E) Several criteria needs revision before publication.**  (false)\n\nTrap: plural subject needs need -- Several criteria need revision. Several + plural noun → plural verb. Needs wrongly treats criteria as singular.\n\n**Tip:** Several + plural noun → plural verb."
       ],
       "highlights": [
         "whomever meets",
@@ -384,7 +456,7 @@
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.20",
-      "solution_overview": "Only one sentence is true — the effect a settlement pattern. The other four mix subject/object, possession/contraction, fewer/less with numbers, and criteria agreement."
+      "solution_overview": "Only one sentence is true -- the effect a settlement pattern -- while the others mix subject/object, possession, fewer/less, and agreement traps.\n\n**Part 1: What to watch for.**\n\nFour false lines pack four different confusable pairs around one clean bring-about use of effect.\n\n**Part 2: How to decide.**\n\nForce whoever before meets, whose before signature, fewer than with applications, and plural need with criteria; keep the true effect line.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-20-13",
@@ -398,13 +470,19 @@
         "The apology must remain between the claimant and me.",
         "We have fewer furniture than last year after the move."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Whoever is the subject of can lock inside the nested clause.\n\nTip: Case is decided in the innermost clause, not by to.",
-        "FALSE — Possessive needed: whose driveway.\n\nTip: Driveway/garden after the wh-word → whose.",
-        "TRUE — Verb affect correctly means influence sleep.\n\nTip: Subject influences object → affect.",
-        "TRUE — Object pronoun me after between is correct.\n\nTip: Between X and me is standard.",
-        "FALSE — Furniture is typically uncountable here → less furniture (or fewer pieces of furniture).\n\nTip: Do not use fewer with a mass noun."
+        "**A) Delegate the keys to whoever you believe can lock up safely.**  (true)\n\nWhoever is the subject of can lock inside the nested clause. Case is decided in the innermost clause (you believe can…), not by to. Delegate… to whoever you believe can lock up… is correct.\n\n**Tip:** Case is decided in the innermost clause, not by to.",
+        "**B) A neighbour who's driveway floods after storms asked for help.**  (false)\n\nTrap: possessive needed -- whose driveway. Driveway/garden after the wh-word → whose. Who's driveway fails who is driveway.\n\n**Tip:** Driveway/garden after the wh-word → whose.",
+        "**C) Bright screens affect how well I sleep at night.**  (true)\n\nVerb affect correctly means influence how well I sleep. Subject influences object → affect. Bright screens affect… is the influence stem.\n\n**Tip:** Subject influences object → affect.",
+        "**D) The apology must remain between the claimant and me.**  (true)\n\nObject pronoun me after between is correct. Between X and me is standard. Claimant and I would be the hypercorrection.\n\n**Tip:** Between X and me is standard.",
+        "**E) We have fewer furniture than last year after the move.**  (false)\n\nTrap: furniture is typically uncountable here → less furniture (or fewer pieces of furniture). Do not use fewer with a mass noun. Fewer furniture mismatches count grammar with a mass head.\n\n**Tip:** Do not use fewer with a mass noun."
       ],
       "highlights": [
         "whoever you believe can",
@@ -416,7 +494,7 @@
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.20",
-      "solution_overview": "Nested clauses and mass/count swaps raise the difficulty. Decide case inside you believe can…, fix the who's/whose slip, keep affect and between…me, and reverse the fewer/furniture mismatch."
+      "solution_overview": "Nested clauses and mass/count swaps raise the difficulty.\n\n**Part 1: What to watch for.**\n\nDecide case inside you believe can…, fix the who's/whose slip, keep affect and between…me, and reverse the fewer/furniture mismatch.\n\n**Part 2: How to decide.**\n\nIgnore outer to when nested verbs decide case; expand who's; treat furniture as mass unless you rewrite to pieces.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-20-14",
@@ -430,13 +508,19 @@
         "Keep the draft between you and I until Friday.",
         "The scoring criteria are applied uniformly to all entries."
       ],
-      "answer_key": [true, true, false, false, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Whomever is the object of shortlist.\n\nTip: Mentors shortlist someone → object case.",
-        "TRUE — Whose hall correctly shows possession.\n\nTip: Organisation/place + whose + noun is fine.",
-        "FALSE — Confidence is influenced → will affect audience confidence.\n\nTip: Abstract reactions (confidence, mood) take affect.",
-        "FALSE — Object case required: between you and me.\n\nTip: Until Friday does not change pronoun case.",
-        "TRUE — Plural criteria correctly takes are applied.\n\nTip: Passive voice still needs plural agreement."
+        "**A) Offer the spare ticket to whomever the mentors shortlist.**  (true)\n\nWhomever is the object of shortlist. Mentors shortlist someone → object case. Offer… to whomever the mentors shortlist is traditionally correct.\n\n**Tip:** Mentors shortlist someone → object case.",
+        "**B) The school whose hall was flooded suspended two concerts.**  (true)\n\nWhose hall correctly shows possession. Organisation/place + whose + noun is fine. The school whose hall was flooded… is standard.\n\n**Tip:** Organisation/place + whose + noun is fine.",
+        "**C) The announcement will effect audience confidence tomorrow.**  (false)\n\nTrap: confidence is influenced → will affect audience confidence. Abstract reactions (confidence, mood) take affect. Will effect audience confidence wrongly uses bring-about.\n\n**Tip:** Abstract reactions (confidence, mood) take affect.",
+        "**D) Keep the draft between you and I until Friday.**  (false)\n\nTrap: object case required -- between you and me. Until Friday does not change pronoun case. Keep this draft between you and I is the hypercorrection.\n\n**Tip:** Until Friday does not change pronoun case.",
+        "**E) The scoring criteria are applied uniformly to all entries.**  (true)\n\nPlural criteria correctly takes are applied. Passive voice still needs plural agreement. The scoring criteria are applied… is clean.\n\n**Tip:** Passive voice still needs plural agreement."
       ],
       "highlights": [
         "whomever the mentors shortlist",
@@ -448,7 +532,7 @@
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.20",
-      "solution_overview": "Two false lines misuse effect for influence and I after between. Confirm the object-case whomever, the possessive whose, and plural criteria in the passive."
+      "solution_overview": "Two false lines misuse effect for influence and I after between.\n\n**Part 1: What to watch for.**\n\nConfirm the object-case whomever, the possessive whose, and plural criteria in the passive; reject the influence and pronoun traps.\n\n**Part 2: How to decide.**\n\nAsk who receives shortlist, expand whose with hall, swap effect→affect for confidence, force me after between, and keep are with criteria.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-20-15",
@@ -462,13 +546,19 @@
         "There were fewer discrepancies in the second sample.",
         "This single criteria determines eligibility on its own."
       ],
-      "answer_key": [true, true, false, true, false],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Whoever is the subject of has delivered.\n\nTip: Perfect aspect does not change the case rule.",
-        "TRUE — Who's been = who has been.\n\nTip: Been after who's almost always means who has.",
-        "FALSE — Influence meaning → beginning to affect my morning runs.\n\nTip: Progressive frames usually host affect.",
-        "TRUE — Countable discrepancies take fewer.\n\nTip: Count nouns in samples prefer fewer.",
-        "FALSE — Singular is criterion: This single criterion determines…\n\nTip: Single/one/each before the noun forces criterion."
+        "**A) Promote whoever has delivered consistent results this season.**  (true)\n\nWhoever is the subject of has delivered. Perfect aspect does not change the case rule. Promote whoever has delivered… keeps subject case.\n\n**Tip:** Perfect aspect does not change the case rule.",
+        "**B) Who's been responsible for the overdue library fines?**  (true)\n\nWho's been = who has been. Been after who's almost always means who has. Who's been responsible… passes expansion.\n\n**Tip:** Been after who's almost always means who has.",
+        "**C) Late nights are beginning to effect my morning runs.**  (false)\n\nTrap: influence meaning → beginning to affect my morning runs. Progressive frames usually host affect. To effect my morning runs is the wrong verb for influence.\n\n**Tip:** Progressive frames usually host affect.",
+        "**D) There were fewer discrepancies in the second sample.**  (true)\n\nCountable discrepancies take fewer. Count nouns in samples prefer fewer. There were fewer discrepancies… is correct.\n\n**Tip:** Count nouns in samples prefer fewer.",
+        "**E) This single criteria determines eligibility on its own.**  (false)\n\nTrap: singular is criterion -- This single criterion determines…. Single/one/each before the noun forces criterion. This single criteria is a false plural.\n\n**Tip:** Single/one/each before the noun forces criterion."
       ],
       "highlights": [
         "whoever has delivered",
@@ -480,7 +570,7 @@
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.20",
-      "solution_overview": "Watch the subtler affect/effect slip inside a progressive construction and the false plural criteria after single. The whoever, who's been, and fewer lines are sound."
+      "solution_overview": "Watch the subtler affect/effect slip inside a progressive and the false plural criteria after single.\n\n**Part 1: What to watch for.**\n\nThe whoever, who's been, and fewer lines are sound; two lines swap influence and number.\n\n**Part 2: How to decide.**\n\nKeep whoever before has delivered, expand who's been, rewrite effect→affect, keep fewer with discrepancies, and force criterion after single.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-20-16",
@@ -494,13 +584,19 @@
         "Please keep the surprise between the organisers and me.",
         "Managers reported less absences after flexible hours began."
       ],
-      "answer_key": [false, true, true, true, false],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Subject of is appointed must be whoever.\n\nTip: Passive is appointed still needs a subject form.",
-        "TRUE — Whose parcels correctly marks possession.\n\nTip: Neighbour/person + whose is standard.",
-        "TRUE — Verb effect meaning bring about fits improvements.\n\nTip: Lasting/major + noun after effect is a good cue.",
-        "TRUE — Object pronoun me after between is correct.\n\nTip: Parallel organisers and me, never I.",
-        "FALSE — Countable absences need fewer absences.\n\nTip: Attendance counts are countable."
+        "**A) We will brief whomever is appointed as interim captain.**  (false)\n\nTrap: the subject of is appointed must be whoever. Passive is appointed still needs a subject form. Brief whomever is appointed hides a subject-case error.\n\n**Tip:** Passive is appointed still needs a subject form.",
+        "**B) A neighbour whose parcels arrived late complained.**  (true)\n\nWhose parcels correctly marks possession. Neighbour/person + whose is standard. A neighbour whose parcels arrived… is clean.\n\n**Tip:** Neighbour/person + whose is standard.",
+        "**C) The coach hopes to effect lasting improvements in fitness.**  (true)\n\nVerb effect meaning bring about fits improvements. Lasting/major + noun after effect is a good cue. Hopes to effect lasting improvements… is formal but right.\n\n**Tip:** Lasting/major + noun after effect is a good cue.",
+        "**D) Please keep the surprise between the organisers and me.**  (true)\n\nObject pronoun me after between is correct. Parallel organisers and me, never I. Keep the surprise between the organisers and me.\n\n**Tip:** Parallel organisers and me, never I.",
+        "**E) Managers reported less absences after flexible hours began.**  (false)\n\nTrap: countable absences need fewer absences. Attendance counts are countable. Less absences is the mass/count flip.\n\n**Tip:** Attendance counts are countable."
       ],
       "highlights": [
         "whomever is appointed",
@@ -512,7 +608,7 @@
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.20",
-      "solution_overview": "Passive clauses hide subject-case whoever traps, and countable absences tempt less. Hold onto whose, effect-as-bring-about, and between…me as the true anchors."
+      "solution_overview": "Passive clauses hide subject-case whoever traps, and countable absences tempt less.\n\n**Part 1: What to watch for.**\n\nHold onto whose, effect-as-bring-about, and between…me as the true anchors; reject whomever is… and less absences.\n\n**Part 2: How to decide.**\n\nIf be + participle follows the wh-word, choose whoever; keep whose; accept effect + improvements; keep me; swap less→fewer with absences.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-20-17",
@@ -526,13 +622,19 @@
         "The negotiation is strictly between you and me at this stage.",
         "Fewer patience was left after the third delay."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Whoever is acceptable as the object of shows; when object case is unclear, whoever remains the safer exam form.\n\nTip: When object case is unclear, whoever rarely costs marks.",
-        "FALSE — Possessive whose remit is required.\n\nTip: Remit/mandate/role after the wh-word → whose.",
-        "TRUE — Verb affect correctly means influence festival plans.\n\nTip: Weather events affect outdoor schedules.",
-        "TRUE — Between you and me is the correct object-case pair.\n\nTip: At this stage is irrelevant to case.",
-        "FALSE — Uncountable patience takes Less patience.\n\nTip: Patience, advice, and information are mass nouns."
+        "**A) Allocate overtime to whoever the roster shows as available.**  (true)\n\nWhoever is acceptable as the object of shows; when object case is unclear, whoever remains the safer exam form. When object case is unclear, whoever rarely costs marks. Allocate… to whoever the roster shows… is the cautious choice.\n\n**Tip:** When object case is unclear, whoever rarely costs marks.",
+        "**B) Identify the officer who's remit covers weekend shifts.**  (false)\n\nTrap: possessive whose remit is required. Remit/mandate/role after the wh-word → whose. Who's remit fails expansion.\n\n**Tip:** Remit/mandate/role after the wh-word → whose.",
+        "**C) Sudden storms quickly affect outdoor festival plans.**  (true)\n\nVerb affect correctly means influence festival plans. Weather events affect outdoor schedules. Suddenly storms quickly affect… is influence, not bring-about.\n\n**Tip:** Weather events affect outdoor schedules.",
+        "**D) The negotiation is strictly between you and me at this stage.**  (true)\n\nBetween you and me is the correct object-case pair. At this stage is irrelevant to case. Time hedges never license I after between.\n\n**Tip:** At this stage is irrelevant to case.",
+        "**E) Fewer patience was left after the third delay.**  (false)\n\nTrap: uncountable patience takes Less patience. Patience, advice, and information are mass nouns. Fewer patience flips the usual fewer/less intuition.\n\n**Tip:** Patience, advice, and information are mass nouns."
       ],
       "highlights": [
         "whoever the roster shows",
@@ -544,7 +646,7 @@
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.20",
-      "solution_overview": "Harder items flip the usual fewer/less intuition: patience is mass, so fewer is wrong. Also catch the remit possession error while confirming whoever, affect, and between you and me."
+      "solution_overview": "Harder items flip the usual fewer/less intuition: patience is mass, so fewer is wrong.\n\n**Part 1: What to watch for.**\n\nAlso catch the remit possession error while confirming whoever, affect, and between you and me.\n\n**Part 2: How to decide.**\n\nPrefer whoever in contested object slots, expand who's before remit, keep affect, keep me, and pair mass patience with less.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-20-18",
@@ -558,13 +660,19 @@
         "Confidential seating stays between the ushers and me.",
         "The shortlisting criteria leave little room for discretion."
       ],
-      "answer_key": [false, true, false, true, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Innermost clause: who should review — subject case → whoever you think should review it.\n\nTip: Ignore you think; case belongs to the embedded verb.",
-        "TRUE — Whose rooms correctly expresses possession.\n\nTip: Place nouns after whose are routine.",
-        "FALSE — Influence on the timeline → will affect the project timeline.\n\nTip: Severely/significantly after the verb often follows affect.",
-        "TRUE — Object pronoun me after between is correct.\n\nTip: Role names do not change pronoun case.",
-        "TRUE — Plural criteria correctly takes plural leave.\n\nTip: Criteria + plural verb is the default formal choice."
+        "**A) Send the draft to whomever you think should review it first.**  (false)\n\nTrap: innermost clause -- who should review -- subject case → whoever you think should review it. Ignore you think; case belongs to the embedded verb. Whomever you think should… wrongly object-cases a subject.\n\n**Tip:** Ignore you think; case belongs to the embedded verb.",
+        "**B) The hotel whose rooms were renovated issued a statement.**  (true)\n\nWhose rooms correctly expresses possession. Place nouns after whose are routine. The hotel whose rooms were renovated… is fine.\n\n**Tip:** Place nouns after whose are routine.",
+        "**C) Further delays will effect the project timeline severely.**  (false)\n\nTrap: influence on the timeline → will affect the project timeline. Severely/significantly after the verb often follows affect. Will effect the project timeline is the bring-about misuse.\n\n**Tip:** Severely/significantly after the verb often follows affect.",
+        "**D) Confidential seating stays between the ushers and me.**  (true)\n\nObject pronoun me after between is correct. Role names do not change pronoun case. Between the ushers and me stays object case.\n\n**Tip:** Role names do not change pronoun case.",
+        "**E) The shortlisting criteria leave little room for discretion.**  (true)\n\nPlural criteria correctly takes plural leave. Criteria + plural verb is the default formal choice. The shortlisting criteria leave little room… agrees.\n\n**Tip:** Criteria + plural verb is the default formal choice."
       ],
       "highlights": [
         "whomever you think should",
@@ -576,7 +684,7 @@
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.20",
-      "solution_overview": "The nested you think should… clause is the main trap — the wh-word is a subject, so whoever is required. Pair that with an affect/effect influence error; the remaining three are solid."
+      "solution_overview": "The nested you think should… clause is the main trap -- the wh-word is a subject, so whoever is required.\n\n**Part 1: What to watch for.**\n\nPair that with an affect/effect influence error; the remaining three (whose, between…me, criteria leave) are solid.\n\n**Part 2: How to decide.**\n\nDecide case on the innermost verb, expand whose with rooms, rewrite effect→affect for timelines, keep me, and keep plural leave with criteria.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-20-19",
@@ -590,13 +698,19 @@
         "Between you and I, the seating plan is flawed.",
         "One of the criteria are inconsistent with the handbook."
       ],
-      "answer_key": [true, true, true, false, false],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Whomever is the object of had shortlisted.\n\nTip: Agency shortlisted someone → object case.",
-        "TRUE — Who's attending = who is attending.\n\nTip: Expansion test passes cleanly.",
-        "TRUE — Verb effect meaning bring about fits a reduction.\n\nTip: Effect + a + noun of result is intentional formal diction.",
-        "FALSE — Object case: Between you and me.\n\nTip: Informal tone does not excuse I.",
-        "FALSE — One of the criteria takes a singular verb: is inconsistent.\n\nTip: One of + plural noun → singular verb for one."
+        "**A) We interviewed whomever the agency had shortlisted for the role.**  (true)\n\nWhomever is the object of had shortlisted. Agency shortlisted someone → object case. We interviewed whomever the agency had shortlisted… is traditional object case.\n\n**Tip:** Agency shortlisted someone → object case.",
+        "**B) Who's attending on behalf of the parents' association?**  (true)\n\nWho's attending = who is attending. The expansion test passes cleanly. Direct-question frame does not change the contraction rule.\n\n**Tip:** Expansion test passes cleanly.",
+        "**C) The redesign may effect a reduction in overlapping duties.**  (true)\n\nVerb effect meaning bring about fits a reduction. Effect + a + noun of result is intentional formal diction. May effect a reduction… is the bring-about pattern.\n\n**Tip:** Effect + a + noun of result is intentional formal diction.",
+        "**D) Between you and I, the seating plan is flawed.**  (false)\n\nTrap: object case -- Between you and me. Informal tone does not excuse I. Between you and I remains a classic hypercorrection.\n\n**Tip:** Informal tone does not excuse I.",
+        "**E) One of the criteria are inconsistent with the handbook.**  (false)\n\nTrap: one of the criteria takes a singular verb -- is inconsistent. One of + plural noun → singular verb for that one item. One of the criteria are… mismatches the head one.\n\n**Tip:** One of + plural noun → singular verb for one."
       ],
       "highlights": [
         "whomever the agency had shortlisted",
@@ -608,7 +722,7 @@
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.20",
-      "solution_overview": "Two advanced traps: hypercorrect between you and I, and singular agreement after one of the criteria. The object-case whomever, who's contraction, and effect-a-reduction lines are correctly written."
+      "solution_overview": "Two advanced traps: hypercorrect between you and I, and singular agreement after one of the criteria.\n\n**Part 1: What to watch for.**\n\nThe object-case whomever, who's contraction, and effect-a-reduction lines are correctly written.\n\n**Part 2: How to decide.**\n\nKeep object whomever after shortlisted, expand who's, accept effect a reduction, force me after between, and make one of the criteria take is.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-20-20",
@@ -622,13 +736,19 @@
         "All discussions must stay between the counsel and me.",
         "We now require less formal approvals than before the overhaul."
       ],
-      "answer_key": [true, false, true, true, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — With consider X capable, prefer whoever in careful exam answers.\n\nTip: Nested complements after consider usually favour whoever.",
-        "FALSE — Possessive whose bags is required.\n\nTip: Bags/luggage after the wh-word → whose.",
-        "TRUE — Verb affect correctly means influence drying times.\n\nTip: Continues to + affect is a common formal stem.",
-        "TRUE — Object pronoun me after between is correct.\n\nTip: Counsel and me is a frequent formal stem.",
-        "FALSE — Approvals are countable → fewer formal approvals.\n\nTip: If the noun is plural and countable, choose fewer even with adjectives in between."
+        "**A) Appoint whoever the club considers capable of leading the project.**  (true)\n\nWith consider X capable, prefer whoever in careful exam answers. Nested complements after consider usually favour whoever. Appoint whoever the club considers capable… is the safer form.\n\n**Tip:** Nested complements after consider usually favour whoever.",
+        "**B) A guest who's bags remain unpacked will miss the bus.**  (false)\n\nTrap: possessive whose bags is required. Bags/luggage after the wh-word → whose. Who's bags fails who is bags.\n\n**Tip:** Bags/luggage after the wh-word → whose.",
+        "**C) Humidity continues to affect drying times for the paint.**  (true)\n\nVerb affect correctly means influence drying times. Continues to + affect is a common formal stem. Humidity continues to affect… is influence.\n\n**Tip:** Continues to + affect is a common formal stem.",
+        "**D) All discussions must stay between the counsel and me.**  (true)\n\nObject pronoun me after between is correct. Counsel and me is a frequent formal stem. Between the counsel and I would be the trap.\n\n**Tip:** Counsel and me is a frequent formal stem.",
+        "**E) We now require less formal approvals than before the overhaul.**  (false)\n\nTrap: approvals are countable → fewer formal approvals. If the noun is plural and countable, choose fewer even with adjectives in between. Less formal approvals sneaks less past an adjective before a count plural.\n\n**Tip:** If the noun is plural and countable, choose fewer even with adjectives in between."
       ],
       "highlights": [
         "whoever the club considers",
@@ -640,7 +760,7 @@
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.20",
-      "solution_overview": "Finish with a dense mix: a club-considers clause, a who's/whose slip, solid affect and between…me, and a sneaky less before a countable plural. Only mark true when each confusable pair is already the right member."
+      "solution_overview": "Finish with a dense mix: a club-considers clause, a who's/whose slip, solid affect and between…me, and a sneaky less before a countable plural.\n\n**Part 1: What to watch for.**\n\nOnly mark true when each confusable pair is already the right member; adjectives before a plural noun do not license less.\n\n**Part 2: How to decide.**\n\nPrefer whoever after consider, expand who's before bags, keep affect, keep me, and rewrite less→fewer before approvals.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     }
   ]
 }

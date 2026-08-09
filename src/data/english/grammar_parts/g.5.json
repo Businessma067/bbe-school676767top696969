@@ -14,13 +14,19 @@
         "The photograph was cropped before posting. → The photograph cropped itself before posting.",
         "My sister watered the plants. → The plants were watered by my sister."
       ],
-      "answer_key": [true, false, true, false, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Object becomes subject, past simple becomes was + past participle, and the original agent stays in a by-phrase. Meaning is unchanged.\n\nTip: Keep the agent only when the active sentence actually names one.",
-        "FALSE — The passive names no agent, so the rewrite invents both a baker and certainty. A fair active would not claim you know who.\n\nTip: Agentless passives must stay agentless unless the source names the doer.",
-        "TRUE — Clear be + past participle with an explicit cause: were broken by the storm.\n\nTip: Plural subjects take were, not was, in past passive.",
-        "FALSE — Photographs do not crop themselves; the rewrite invents a reflexive agent and drops the implied human editor.\n\nTip: Never turn a missing agent into the patient acting on itself.",
-        "TRUE — Clean active→passive: watered → was watered, agent retained as by my sister.\n\nTip: Match tense: past simple active → past simple passive."
+        "**A) The neighbours painted the fence. → The fence was painted by the neighbours.**  (true)\n\nThe active sentence names the neighbours as painters and the fence as the thing painted. The passive correctly promotes the fence to subject, uses was painted, and keeps the neighbours in a by-phrase, so meaning is unchanged.\n\n**Tip:** Keep the agent only when the active sentence actually names one.",
+        "**B) The cake was baked yesterday. → The chef baked the cake yesterday, and we know that for certain.**  (false)\n\nTrap: The passive The cake was baked yesterday never names a chef and never claims certainty about who did it. The rewrite invents both a baker and \"we know that for certain,\" which adds knowledge the source never supplied. A fair active would stay vague about the agent.\n\nRepair: keep an agentless active or omit invented certainty — for example, Someone baked the cake yesterday.",
+        "**C) Several windows were broken by the storm.**  (true)\n\nThis is a clear past passive: plural windows with were broken, past participle broken, and an explicit cause in by the storm. Form and meaning line up cleanly.\n\n**Tip:** Plural subjects take were, not was, in past passive.",
+        "**D) The photograph was cropped before posting. → The photograph cropped itself before posting.**  (false)\n\nTrap: Photographs do not crop themselves. The rewrite invents a reflexive agent and erases the implied human editor that cropped is meant to leave open. Patient nouns are not self-acting agents.\n\nRepair: keep The photograph was cropped before posting, or name a real editor if the source supplies one.",
+        "**E) My sister watered the plants. → The plants were watered by my sister.**  (true)\n\nMy sister watered the plants flips cleanly to The plants were watered by my sister. Object becomes subject, past simple becomes was/were + past participle, and the agent stays as by my sister.\n\n**Tip:** Match tense: past simple active → past simple passive."
       ],
       "highlights": [
         "was painted by the neighbours",
@@ -32,7 +38,7 @@
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.5",
-      "solution_overview": "Treat each arrow as a meaning check, not a creative rewrite. Ask whether the second sentence keeps the same tense, the same participants, and the same certainty. If the first side hides the doer, the second side must not invent one."
+      "solution_overview": "This card checks whether active↔passive flips keep the same tense, the same people, and the same level of certainty.\n\n**Part 1: What to watch for.**\n\nFocus on past simple passive form (was/were + past participle) and honest agents. If the first side hides the doer, the rewrite must not invent a chef, a reflexive photograph, or extra certainty. Clean flips keep the original object as subject and the named agent in a by-phrase.\n\n**Part 2: How to decide.**\n\nTreat each arrow as a meaning check, not a creative rewrite. Ask: same participants? same tense? same certainty? Agentless passives stay agentless unless the source names the doer.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-5-02",
@@ -46,13 +52,19 @@
         "The concert was cancelled yesterday. → Someone cancelled the concert yesterday, and we know exactly who.",
         "The parcel been delivered by the courier this morning."
       ],
-      "answer_key": [true, false, true, false, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "TRUE — Correct past passive focusing on the tickets; no agent is required.\n\nTip: Agentless passive is fine when the doer is unknown or unimportant.",
-        "FALSE — Mistakes were made does not say the rehearsal caused them on purpose. The rewrite adds agency and intent that were never stated.\n\nTip: Do not smuggle deliberately into a neutral passive.",
-        "TRUE — Meaning-preserving transformation with agent kept: were shelved by the librarian.\n\nTip: Watch participle form: shelve → shelved.",
-        "FALSE — Knowing exactly who fabricates information the passive never supplied.\n\nTip: Someone… and we know exactly who is almost always a fake-agent trap.",
-        "FALSE — Missing was/has: need was delivered or has been delivered, not bare been delivered.\n\nTip: Passive always needs a form of be before the participle."
+        "**A) The tickets were booked last Friday.**  (true)\n\nWere booked is a correct past passive focusing on the tickets. No agent is required when the booker is unimportant or unknown, and last Friday sits naturally with the past form.\n\n**Tip:** Agentless passive is fine when the doer is unknown or unimportant.",
+        "**B) Mistakes were made during the rehearsal. → The rehearsal made mistakes deliberately.**  (false)\n\nTrap: Mistakes were made during the rehearsal is a classic agentless hedge. It does not say the rehearsal caused the mistakes on purpose. The rewrite smuggles in both agency and deliberately, changing force and meaning.\n\nRepair: leave the passive as is, or name a real person only if the source does.",
+        "**C) The librarian shelved the returns. → The returns were shelved by the librarian.**  (true)\n\nThe librarian shelved the returns becomes The returns were shelved by the librarian without losing participants. Shelved is the right participle, and the agent stays explicit.\n\n**Tip:** Watch participle form: shelve → shelved.",
+        "**D) The concert was cancelled yesterday. → Someone cancelled the concert yesterday, and we know exactly who.**  (false)\n\nTrap: The concert was cancelled yesterday hides the canceller. Claiming someone cancelled it and \"we know exactly who\" fabricates identity the passive never supplied.\n\nRepair: keep the agentless passive, or use Someone cancelled the concert yesterday without fake certainty.",
+        "**E) The parcel been delivered by the courier this morning.**  (false)\n\nTrap: The parcel been delivered drops the required auxiliary. Passive needs was delivered or has been delivered, not bare been + past participle.\n\nRepair: The parcel was delivered by the courier this morning (or has been delivered…)."
       ],
       "highlights": [
         "were booked",
@@ -64,7 +76,7 @@
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.5",
-      "solution_overview": "Start with form: is there a proper be + past participle? Then check meaning: any by-phrase or active rewrite must come from words already on the page, not from guesswork about who did it or why."
+      "solution_overview": "Start here by checking be + past participle, then ask whether any rewrite adds people, intent, or certainty the first clause never stated.\n\n**Part 1: What to watch for.**\n\nAgentless passives are fine when the doer is unknown. Fake-agent rewrites that add deliberately or \"we know exactly who\" fail the meaning test. Incomplete forms like bare been delivered also fail form.\n\n**Part 2: How to decide.**\n\nFirst confirm a proper be (or has/have been) before the participle. Then check that any by-phrase or active rewrite comes from words already on the page, not guesswork about motive or identity.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-5-03",
@@ -78,13 +90,19 @@
         "The groceries unpacked by my brother yesterday.",
         "The coach cancelled practice. → Practice was cancelled by the coach."
       ],
-      "answer_key": [true, true, true, false, true],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Active object becomes passive subject; designed → was designed; agent retained.\n\nTip: Keep subject–verb number: the mural was, not were.",
-        "TRUE — Grammatical agentless past passive stating when the bridge was fixed.\n\nTip: Time phrases like in 2019 sit naturally with past passive.",
-        "TRUE — Present simple passive with a clear agent: are returned by…\n\nTip: Habitual processes often use present passive.",
-        "FALSE — Needs were unpacked (or have been unpacked). A lone past participle is not a finite passive clause.\n\nTip: If you can ask Were they unpacked?, you still need the were in the sentence.",
-        "TRUE — Cancelled → was cancelled; coach stays as by-agent.\n\nTip: Match the original tense when you flip voice."
+        "**A) Volunteers designed the mural. → The mural was designed by volunteers.**  (true)\n\nVolunteers designed the mural flips to The mural was designed by volunteers. The object becomes subject, designed becomes was designed, and the agent is retained. Number agreement is right: the mural was, not were.\n\n**Tip:** Keep subject–verb number when you promote the object.",
+        "**B) The bridge was repaired in 2019.**  (true)\n\nThe bridge was repaired in 2019 is a grammatical agentless past passive. The time phrase fits the finished past frame without needing an agent.\n\n**Tip:** Time phrases like in 2019 sit naturally with past passive.",
+        "**C) Lost dogs are returned by the local shelter.**  (true)\n\nLost dogs are returned by the local shelter uses present simple passive for a habitual process, with a clear by-agent. Form and meaning are both sound.\n\n**Tip:** Habitual processes often use present passive.",
+        "**D) The groceries unpacked by my brother yesterday.**  (false)\n\nTrap: The groceries unpacked by my brother yesterday is missing its auxiliary. A lone past participle cannot make a finite passive clause; you need were unpacked (or have been unpacked).\n\nRepair: The groceries were unpacked by my brother yesterday.",
+        "**E) The coach cancelled practice. → Practice was cancelled by the coach.**  (true)\n\nThe coach cancelled practice becomes Practice was cancelled by the coach. Tense matches, the object becomes subject, and the coach stays as by-agent.\n\n**Tip:** Match the original tense when you flip voice."
       ],
       "highlights": [
         "was designed by volunteers",
@@ -96,7 +114,7 @@
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.5",
-      "solution_overview": "Most items are form checks: past or present be + participle, with or without by. Spot the line that drops the auxiliary entirely — that is not a complete passive clause."
+      "solution_overview": "Most items here are clean voice flips or stand-alone passives; one line drops the auxiliary entirely.\n\n**Part 1: What to watch for.**\n\nPast and present be + past participle, with or without by. Habitual present passives (are returned) are fair. A lone past participle with a by-phrase is not a finite clause.\n\n**Part 2: How to decide.**\n\nScan for was/were/are before the participle. If you can ask Were they unpacked? but the word were is missing from the sentence, mark false.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-5-04",
@@ -110,13 +128,19 @@
         "The tent was damaged during the wind. → The wind damaged the tent.",
         "The guests were notify of the delay on Monday."
       ],
-      "answer_key": [false, false, false, true, false],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Reflexive rewrite is nonsense; a playlist does not share itself.\n\nTip: Patient ≠ agent; do not force the subject to do the action to itself.",
-        "FALSE — Modal passive can be scheduled is neutral. The rewrite invents prevention and intent.\n\nTip: Modal passives must keep the same modality and force.",
-        "FALSE — by the host does not entail that the mayor did it personally.\n\nTip: Never upgrade a named agent into a different, more specific one.",
-        "TRUE — during the wind supplies the cause; The wind damaged the tent keeps that cause without inventing a human doer.\n\nTip: Event/cause subjects are allowed when the passive already situates the damage in that event.",
-        "FALSE — Wrong form: need were notified, not were notify.\n\nTip: After be, use the past participle, never the base verb."
+        "**A) The playlist was shared online. → The playlist shared itself online.**  (false)\n\nTrap: A playlist cannot share itself. The reflexive rewrite invents an impossible agent and treats the patient as if it performed the action on itself.\n\nRepair: keep The playlist was shared online, or name a real sharer if known.",
+        "**B) No lessons can be scheduled this week. → This calendar prevents anyone from scheduling lessons deliberately.**  (false)\n\nTrap: No lessons can be scheduled this week is a neutral modal passive. The rewrite invents a calendar that prevents scheduling and adds deliberately, changing both modality and force.\n\nRepair: keep the modal passive without inventing prevention or intent.",
+        "**C) The invitation was sent by the host. → We know the mayor personally sent the invitation.**  (false)\n\nTrap: by the host names the host, not the mayor. Upgrading the agent into a more specific celebrity invents identity the source never gave.\n\nRepair: keep The invitation was sent by the host, or The host sent the invitation.",
+        "**D) The tent was damaged during the wind. → The wind damaged the tent.**  (true)\n\nduring the wind supplies the cause of the damage. The wind damaged the tent restates that cause in the active without inventing a human doer, so the meaning holds.\n\n**Tip:** Event or cause subjects are allowed when the passive already places the damage in that event.",
+        "**E) The guests were notify of the delay on Monday.**  (false)\n\nTrap: were notify uses the base verb after be. Passive needs the past participle: were notified.\n\nRepair: The guests were notified of the delay on Monday."
       ],
       "highlights": [
         "shared itself",
@@ -128,7 +152,7 @@
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.5",
-      "solution_overview": "Four traps invent agents, intent, or wrong verb forms; only one pair keeps the same event. When you reverse passive→active, use only participants the original allows."
+      "solution_overview": "Four traps invent agents, intent, or wrong verb forms; only one pair keeps the same event and cause.\n\n**Part 1: What to watch for.**\n\nReflexive nonsense (shared itself), invented prevention/intent, upgrading the host into the mayor, and base verbs after were. Event causes like the wind are allowed when the passive already situates the damage there.\n\n**Part 2: How to decide.**\n\nWhen reversing passive→active, use only participants the original allows. For form errors, demand past participles after be, never the base verb.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-5-05",
@@ -142,13 +166,19 @@
         "The dog must be walked before dinner.",
         "The attic was cleared by an old school friend."
       ],
-      "answer_key": [true, true, true, true, true],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Present continuous passive: is being + past participle, agent retained.\n\nTip: Continuous passive needs being between be and the participle.",
-        "TRUE — Present perfect active → present perfect passive: have been marked by the teacher.\n\nTip: Perfect passive = have/has been + past participle.",
-        "TRUE — Future passive with will be + past participle; agent optional.\n\nTip: will be printed, not will printed.",
-        "TRUE — Modal passive: must be walked. Obligation sits on the walk, not on a named walker.\n\nTip: Modal + be + PP is the standard obligation passive.",
-        "TRUE — Past passive with agent: was cleared by an old school friend.\n\nTip: Cleared is the correct participle of clear."
+        "**A) The suitcase is being weighed by airport staff.**  (true)\n\nIs being weighed is present continuous passive, with airport staff retained as the agent. Being sits correctly between is and the past participle weighed.\n\n**Tip:** Continuous passive needs being between be and the participle.",
+        "**B) The teacher has marked three essays. → Three essays have been marked by the teacher.**  (true)\n\nPresent perfect active The teacher has marked three essays flips to Three essays have been marked by the teacher. Perfect passive stacks been after have/has.\n\n**Tip:** Perfect passive = have/has been + past participle.",
+        "**C) The photos will be printed after the trip.**  (true)\n\nWill be printed is a clean future passive; the agent is optional and the time phrase after the trip fits well.\n\n**Tip:** will be printed, not will printed.",
+        "**D) The dog must be walked before dinner.**  (true)\n\nMust be walked places obligation on the walk itself. Modal + be + past participle is the standard pattern for obligation passives.\n\n**Tip:** Modal + be + PP keeps obligation without needing a named walker.",
+        "**E) The attic was cleared by an old school friend.**  (true)\n\nWas cleared by an old school friend is a sound past passive with an explicit agent. Cleared is the correct participle of clear.\n\n**Tip:** Cleared is the right participle for clear."
       ],
       "highlights": [
         "is being weighed",
@@ -160,7 +190,7 @@
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.5",
-      "solution_overview": "All five are well-formed passives across continuous, perfect, future, and modal patterns. Use them as clean templates: be (in the right tense) + past participle, then add by only when the agent is known."
+      "solution_overview": "All five lines are well-formed passives across continuous, perfect, future, modal, and past patterns.\n\n**Part 1: What to watch for.**\n\nTemplates to lock in: is being + PP, have/has been + PP, will be + PP, modal + be + PP, and was + PP with by. Agents appear only when named.\n\n**Part 2: How to decide.**\n\nConfirm be (in the right tense or after the modal) sits before a past participle, then accept by only when the agent is known. Every line here passes that check.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-5-06",
@@ -174,13 +204,19 @@
         "New park rules have been posted by the city council.",
         "The birthday banner design by Maya last week."
       ],
-      "answer_key": [false, true, false, true, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — are still being debated hides the agent; claiming we know precisely which cousin invents certainty.\n\nTip: Progressive agentless passives especially invite fake-agent traps.",
-        "TRUE — Double-object active allows We were sent the bus timetable by Dad (indirect object as subject).\n\nTip: With give/send/offer, either object can become the passive subject.",
-        "FALSE — Intransitive crash does not take this agentive passive, and by itself intentionally adds nonsense intent.\n\nTip: Many intransitive events resist a clean be + PP + by-agent rewrite.",
-        "TRUE — Present perfect passive with agent: have been posted by the city council.\n\nTip: Rules (plural) → have been, not has been.",
-        "FALSE — Incomplete: needs was designed / were designed, not a bare design by…\n\nTip: by alone does not create a passive; you still need be + participle."
+        "**A) The recipes are still being debated. → We know precisely which cousin is debating them.**  (false)\n\nTrap: are still being debated hides who is debating. Claiming we know precisely which cousin invents both identity and certainty the progressive agentless passive never supplied.\n\nRepair: leave the agentless continuous passive as written.",
+        "**B) Dad sent us the bus timetable. → We were sent the bus timetable by Dad.**  (true)\n\nDad sent us the bus timetable allows the indirect-object subject We were sent the bus timetable by Dad. Double-object verbs often permit this flip without changing meaning.\n\n**Tip:** With give, send, or offer, either object can become the passive subject.",
+        "**C) The lamp crashed overnight. → The lamp was crashed overnight by itself intentionally.**  (false)\n\nTrap: Crash is intransitive here; was crashed… by itself intentionally is ungrammatical and adds nonsense intent. The lamp crashed overnight already states an event, not deliberate agency.\n\nRepair: keep The lamp crashed overnight, or use was damaged if you mean an external cause.",
+        "**D) New park rules have been posted by the city council.**  (true)\n\nNew park rules have been posted by the city council is present perfect passive with a clear agent and plural agreement (have been, not has been).\n\n**Tip:** Plural rules → have been, not has been.",
+        "**E) The birthday banner design by Maya last week.**  (false)\n\nTrap: The birthday banner design by Maya last week lacks be + past participle. A bare noun phrase plus by does not make a passive clause.\n\nRepair: The birthday banner was designed by Maya last week."
       ],
       "highlights": [
         "know precisely which cousin",
@@ -192,7 +228,7 @@
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.5",
-      "solution_overview": "Watch three failure modes: inventing a discussant, forcing an intransitive into a reflexive intentional passive, and dropping be. The good lines keep agents that were already named."
+      "solution_overview": "Watch three failure modes: inventing a discussant, forcing an intransitive into a reflexive intentional passive, and dropping be before the participle.\n\n**Part 1: What to watch for.**\n\nProgressive agentless passives invite fake-agent traps. Double-object send allows recipient passives. Intransitive crash resists agentive by itself intentionally. by alone never creates a passive without be + PP.\n\n**Part 2: How to decide.**\n\nAccept only agents already named in the source. Reject invented cousins, self-crashing lamps, and bare design by… strings that lack an auxiliary.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-5-07",
@@ -206,13 +242,19 @@
         "Mum postponed the picnic. → The picnic was postponed by Mum.",
         "The pool filters are cleaned every Friday by the caretaker."
       ],
-      "answer_key": [true, true, false, true, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Present continuous active → is being considered; agent retained.\n\nTip: Continuous passive = am/is/are being + PP.",
-        "TRUE — Modal obligation flips cleanly: must be carried by all hikers.\n\nTip: Keep must; do not weaken it to can or might.",
-        "FALSE — Occur is intransitive; was occurred is ungrammatical. Prefer The delay occurred… or The delay was caused…\n\nTip: Intransitives rarely form a true passive.",
-        "TRUE — Postponed → was postponed by Mum; meaning preserved.\n\nTip: Regular participle postponed matches the active verb.",
-        "TRUE — Present habitual passive with agent: are cleaned by the caretaker.\n\nTip: Habitual routines often use present passive."
+        "**A) The club is considering the proposal. → The proposal is being considered by the club.**  (true)\n\nThe club is considering the proposal becomes The proposal is being considered by the club. Continuous active flips to is/are being + past participle with the agent retained.\n\n**Tip:** Continuous passive = am/is/are being + PP.",
+        "**B) All hikers must carry a map. → A map must be carried by all hikers.**  (true)\n\nAll hikers must carry a map flips to A map must be carried by all hikers. The obligation modal stays as must; force is unchanged.\n\n**Tip:** Keep must; do not weaken it to can or might.",
+        "**C) The delay was occurred during the morning rush.**  (false)\n\nTrap: Occur is intransitive, so was occurred is ungrammatical. Delays occur; they are not \"occurred by\" someone in this pattern.\n\nRepair: The delay occurred during the morning rush, or The delay was caused during the morning rush.",
+        "**D) Mum postponed the picnic. → The picnic was postponed by Mum.**  (true)\n\nMum postponed the picnic becomes The picnic was postponed by Mum. Regular participle postponed matches the active verb, and meaning is preserved.\n\n**Tip:** Regular participle postponed matches the active verb.",
+        "**E) The pool filters are cleaned every Friday by the caretaker.**  (true)\n\nThe pool filters are cleaned every Friday by the caretaker is present habitual passive with an explicit agent. Form and routine meaning both work.\n\n**Tip:** Habitual routines often use present passive."
       ],
       "highlights": [
         "is being considered by the club",
@@ -224,7 +266,7 @@
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.5",
-      "solution_overview": "Four transformations or stand-alone passives are sound. The odd one out forces an intransitive verb into was + past participle — a classic exam trap."
+      "solution_overview": "Four transformations or stand-alone passives are sound; one forces an intransitive into was + past participle.\n\n**Part 1: What to watch for.**\n\nContinuous and modal passives that keep agent and force. Habitual present passives. The classic trap was occurred — occur does not passivise that way.\n\n**Part 2: How to decide.**\n\nAsk whether the verb can take an object in the active. If it cannot (occur, arrive, happen), reject was + PP. Otherwise check that continuous and modal flips keep be in the right shape.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-5-08",
@@ -238,13 +280,19 @@
         "The toast was delivered by a tired waiter.",
         "The school awarded the prize to a Year 9 pupil. → The prize was awarded to a Year 9 pupil by the school."
       ],
-      "answer_key": [true, true, false, true, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Future passive will be paid; date adverbial is fine.\n\nTip: will be + PP, never will + PP alone.",
-        "TRUE — Past active → past passive with agent: were locked by IT.\n\nTip: Plural tablets → were, not was.",
-        "FALSE — Wrong participle form: has been escalated, not escalate.\n\nTip: Perfect passive = has/have been + past participle.",
-        "TRUE — Past passive with agent retained.\n\nTip: Delivered is the correct participle of deliver.",
-        "TRUE — Complex object pattern preserved: prize becomes subject; to a Year 9 pupil stays; by the school names the agent.\n\nTip: Keep prepositional complements when you flip voice."
+        "**A) The deposit will be paid on 15 March.**  (true)\n\nWill be paid is a correct future passive; the date adverbial on 15 March sits fine after it.\n\n**Tip:** will be + PP, never will + PP alone.",
+        "**B) IT locked the old tablets. → The old tablets were locked by IT.**  (true)\n\nIT locked the old tablets becomes The old tablets were locked by IT. Plural tablets take were, and the agent stays named.\n\n**Tip:** Plural tablets → were, not was.",
+        "**C) The complaint has been escalate to the landlord.**  (false)\n\nTrap: has been escalate uses a base verb where the past participle belongs. Perfect passive needs has been escalated.\n\nRepair: The complaint has been escalated to the landlord.",
+        "**D) The toast was delivered by a tired waiter.**  (true)\n\nThe toast was delivered by a tired waiter is a clean past passive with the agent retained. Delivered is the right participle.\n\n**Tip:** Delivered is the correct participle of deliver.",
+        "**E) The school awarded the prize to a Year 9 pupil. → The prize was awarded to a Year 9 pupil by the school.**  (true)\n\nThe school awarded the prize to a Year 9 pupil becomes The prize was awarded to a Year 9 pupil by the school. The prize is subject, the to-phrase stays, and by the school names the agent.\n\n**Tip:** Keep prepositional complements when you flip voice."
       ],
       "highlights": [
         "will be paid",
@@ -256,7 +304,7 @@
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.5",
-      "solution_overview": "Scan for the broken perfect passive (been + base verb). Everything else either is already a good passive or flips active→passive without changing who did what to whom."
+      "solution_overview": "Scan for the broken perfect passive that uses a base verb after been; everything else is a clean passive or voice flip.\n\n**Part 1: What to watch for.**\n\nFuture and past passives with agents, complex award patterns that keep to-phrases, and the form error been escalate.\n\n**Part 2: How to decide.**\n\nPerfect passive demands has/have been + past participle. If you see been + bare verb, mark false. Otherwise check that who did what to whom stays the same across the arrow.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-5-09",
@@ -270,13 +318,19 @@
         "Nothing further can be done until the rain stops. → The groundskeeper is refusing to do anything further on purpose.",
         "The posters were update last night by the art club."
       ],
-      "answer_key": [false, true, false, false, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — was confirmed does not name the class president; the rewrite fabricates the speaker.\n\nTip: so we know the speaker is a giveaway fake-agent claim.",
-        "TRUE — Going-to future passive: are going to be washed.\n\nTip: Insert be before the participle in going-to passives.",
-        "FALSE — Arrive is intransitive; was arrived is wrong, and deliberately invents intent.\n\nTip: Prefer The suitcase arrived damaged or The suitcase was damaged in transit.",
-        "FALSE — Neutral modal passive becomes an accusation of deliberate refusal — meaning not preserved.\n\nTip: can be done ≠ is refusing… on purpose.",
-        "FALSE — Need were updated, not were update.\n\nTip: Base verb after be is never enough for a passive."
+        "**A) The rumour was confirmed this morning. → The class president confirmed the rumour this morning, so we know the speaker.**  (false)\n\nTrap: was confirmed this morning does not name the class president. The rewrite fabricates both the speaker and the claim that we therefore know who spoke.\n\nRepair: keep The rumour was confirmed this morning without inventing an agent.",
+        "**B) Staff uniforms are going to be washed next week.**  (true)\n\nStaff uniforms are going to be washed next week is a well-formed going-to future passive. Be sits before the participle washed.\n\n**Tip:** Insert be before the participle in going-to passives.",
+        "**C) The suitcase arrived damaged. → The suitcase was arrived damaged by the airline deliberately.**  (false)\n\nTrap: Arrive is intransitive, so was arrived is wrong, and deliberately invents intent the arrival event never stated.\n\nRepair: The suitcase arrived damaged, or The suitcase was damaged in transit.",
+        "**D) Nothing further can be done until the rain stops. → The groundskeeper is refusing to do anything further on purpose.**  (false)\n\nTrap: Nothing further can be done until the rain stops is a neutral modal passive about possibility. Rewriting it as a groundskeeper refusing on purpose invents both an agent and motive.\n\nRepair: keep the modal passive; do not turn can be done into is refusing… on purpose.",
+        "**E) The posters were update last night by the art club.**  (false)\n\nTrap: were update uses a base verb after be. Passive needs were updated.\n\nRepair: The posters were updated last night by the art club."
       ],
       "highlights": [
         "so we know the speaker",
@@ -288,7 +342,7 @@
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.5",
-      "solution_overview": "Only one sentence is a clean future passive. The others either invent speakers and motives or break form with intransitive or base-verb passives."
+      "solution_overview": "Only one sentence is a clean future passive; the others invent speakers and motives or break form with intransitives and base verbs.\n\n**Part 1: What to watch for.**\n\nFake speakers after agentless was confirmed, going-to passives, illegal was arrived, modal passives twisted into deliberate refusal, and were update.\n\n**Part 2: How to decide.**\n\nReject any rewrite that names a person or purpose the source never gave. For form, demand be + past participle and respect intransitive verbs.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-5-10",
@@ -302,13 +356,19 @@
         "Our cousins invited us to the barbecue. → We were invited to the barbecue by our cousins.",
         "The mouldy bread was thrown away immediately."
       ],
-      "answer_key": [true, true, false, true, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Past perfect active → past perfect passive: had been finalised by the organisers.\n\nTip: Perfect passive stacks been after had/has/have.",
-        "TRUE — Present passive stating a standing rule; agent optional.\n\nTip: is restricted to… keeps the limitation phrase.",
-        "FALSE — Need are currently being tasted (or are currently tasted), not are currently taste.\n\nTip: Progressive sense wants being + PP.",
-        "TRUE — Invite allows We were invited… by our cousins.\n\nTip: Keep the to-phrase when the original has one.",
-        "TRUE — Agentless past passive focusing on the bread.\n\nTip: Thrown is the correct irregular participle of throw."
+        "**A) The organisers had already finalised the seating. → The seating had already been finalised by the organisers.**  (true)\n\nHad already finalised flips to had already been finalised by the organisers. Past perfect passive stacks been after had and keeps the agent.\n\n**Tip:** Perfect passive stacks been after had/has/have.",
+        "**B) Access to the gym is restricted to members.**  (true)\n\nAccess to the gym is restricted to members is a present passive stating a standing rule. The to-phrase keeps the limitation clear; no agent is required.\n\n**Tip:** is restricted to… keeps the limitation phrase.",
+        "**C) The samples are currently taste by the judges.**  (false)\n\nTrap: are currently taste uses a base verb. Progressive sense wants are currently being tasted (or are currently tasted in a habitual reading), never taste after are.\n\nRepair: The samples are currently being tasted by the judges.",
+        "**D) Our cousins invited us to the barbecue. → We were invited to the barbecue by our cousins.**  (true)\n\nOur cousins invited us to the barbecue becomes We were invited to the barbecue by our cousins. The recipient can be the passive subject, and the to-phrase stays.\n\n**Tip:** Keep the to-phrase when the original has one.",
+        "**E) The mouldy bread was thrown away immediately.**  (true)\n\nThe mouldy bread was thrown away immediately is a clean agentless past passive focusing on the bread. Thrown is the irregular participle of throw.\n\n**Tip:** Thrown is the correct irregular participle of throw."
       ],
       "highlights": [
         "had already been finalised",
@@ -320,7 +380,7 @@
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.5",
-      "solution_overview": "Check the perfect and invitation passives against the originals, then catch the tasting line that uses a base verb where a participle (and often being) belongs."
+      "solution_overview": "Check the perfect and invitation passives against the originals, then catch the tasting line that uses a base verb where a participle belongs.\n\n**Part 1: What to watch for.**\n\nPast perfect passive (had been), standing-rule present passives, continuous sense that needs being + PP, invite as recipient passive, and irregular thrown.\n\n**Part 2: How to decide.**\n\nStack been after had/has/have for perfect passives. For currently + verb, prefer being + past participle when the action is in progress. Keep to-phrases when the active has them.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-5-11",
@@ -334,13 +394,19 @@
         "The vacancy was filled last month. → We know exactly which neighbour filled the vacancy.",
         "The translation is being check by a native speaker."
       ],
-      "answer_key": [false, true, true, false, false],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — A process cannot intentionally announce scores; agent and intent are both wrong.\n\nTip: by… itself intentionally is almost always false.",
-        "TRUE — Future active → will be presented by the guide; time phrase kept.\n\nTip: Move the object to subject position and keep will be.",
-        "TRUE — Modal passive prohibition: should not be left…\n\nTip: Negation sits with the modal: should not be + PP.",
-        "FALSE — Agentless was filled does not identify the neighbour.\n\nTip: Exactly which… claims knowledge the passive never gave.",
-        "FALSE — Need is being checked, not is being check.\n\nTip: After being, always use a past participle."
+        "**A) The scores were announced by the process itself intentionally.**  (false)\n\nTrap: A process cannot intentionally announce scores. Both the agent and the intent word are wrong; by… itself intentionally is almost always a fail.\n\nRepair: The scores were announced (by the organisers / by officials), without reflexive intent.",
+        "**B) The guide will present the route on Tuesday. → The route will be presented by the guide on Tuesday.**  (true)\n\nThe guide will present the route on Tuesday becomes The route will be presented by the guide on Tuesday. Object becomes subject, will be stays, and the time phrase is kept.\n\n**Tip:** Move the object to subject position and keep will be.",
+        "**C) Bikes should not be left in the hallway.**  (true)\n\nBikes should not be left in the hallway is a modal passive prohibition. Negation sits with the modal: should not be + past participle.\n\n**Tip:** Negation sits with the modal: should not be + PP.",
+        "**D) The vacancy was filled last month. → We know exactly which neighbour filled the vacancy.**  (false)\n\nTrap: was filled last month names no agent. We know exactly which neighbour filled the vacancy invents both a person and certainty.\n\nRepair: keep The vacancy was filled last month without naming a neighbour.",
+        "**E) The translation is being check by a native speaker.**  (false)\n\nTrap: is being check uses a base verb after being. Continuous passive needs is being checked.\n\nRepair: The translation is being checked by a native speaker."
       ],
       "highlights": [
         "process itself intentionally",
@@ -352,7 +418,7 @@
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.5",
-      "solution_overview": "Reject intentional process-agents and invented neighbours. Accept the future and modal passives that keep the original force, and fix continuous passives that use a base verb after being."
+      "solution_overview": "Reject intentional process-agents and invented neighbours; accept future and modal passives that keep force; fix continuous passives that use a base verb after being.\n\n**Part 1: What to watch for.**\n\nNonsense by the process itself intentionally, clean will be presented, modal prohibitions, fake exactly which neighbour claims, and being check.\n\n**Part 2: How to decide.**\n\nAfter being, always demand a past participle. Agentless passives forbid precise neighbour-identification. Modal should not be left is a fair prohibition when form is intact.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-5-12",
@@ -366,13 +432,19 @@
         "The internship offers have been accepted by both students.",
         "The agenda was circulated to all attendees before noon."
       ],
-      "answer_key": [true, true, true, true, true],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Present continuous passive without agent; focus on the application.\n\nTip: is being processed marks an action in progress.",
-        "TRUE — Meaning-preserving past passive with agent at the end.\n\nTip: Time adverbial can stay before or after the by-phrase.",
-        "TRUE — Modal passive can be found; typical of how-to notes.\n\nTip: Do not invent who finds the tips.",
-        "TRUE — Present perfect passive, plural agreement: have been accepted.\n\nTip: Both students stays as by-agent.",
-        "TRUE — Past passive with recipient phrase to all attendees.\n\nTip: Keep to-phrases when they carry essential meaning."
+        "**A) The passport application is being processed this week.**  (true)\n\nThe passport application is being processed this week is present continuous passive without an agent, focusing on the ongoing process.\n\n**Tip:** is being processed marks an action in progress.",
+        "**B) Security locked the gates at midnight. → The gates were locked at midnight by security.**  (true)\n\nSecurity locked the gates at midnight becomes The gates were locked at midnight by security. Meaning is preserved; the time adverbial can sit before the by-phrase.\n\n**Tip:** Time adverbials can stay before or after the by-phrase.",
+        "**C) Further tips can be found in the guidebook.**  (true)\n\nFurther tips can be found in the guidebook is a modal passive typical of how-to notes. No need to invent who finds the tips.\n\n**Tip:** Do not invent who finds the tips.",
+        "**D) The internship offers have been accepted by both students.**  (true)\n\nThe internship offers have been accepted by both students is present perfect passive with plural agreement and a clear by-agent.\n\n**Tip:** Both students stays as by-agent.",
+        "**E) The agenda was circulated to all attendees before noon.**  (true)\n\nThe agenda was circulated to all attendees before noon keeps the recipient phrase to all attendees, which carries essential meaning.\n\n**Tip:** Keep to-phrases when they carry essential meaning."
       ],
       "highlights": [
         "is being processed",
@@ -384,7 +456,7 @@
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.5",
-      "solution_overview": "A clean set of models: continuous, past with agent, modal, perfect, and recipient phrases. Use them as reference shapes when harder traps appear later."
+      "solution_overview": "A clean set of model passives: continuous, past with agent, modal, perfect, and recipient phrases.\n\n**Part 1: What to watch for.**\n\nis being processed, were locked… by security, can be found, have been accepted, was circulated to…. Use these as reference shapes when harder traps appear later.\n\n**Part 2: How to decide.**\n\nConfirm be + past participle in each pattern, keep time and to-phrases, and do not invent finders for tips that stay agentless. All five pass here.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-5-13",
@@ -398,13 +470,19 @@
         "A decision has yet to be reached on the picnic date.",
         "The costumes will have been fitted before the play opens."
       ],
-      "answer_key": [true, true, false, true, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Impersonal It is said that… is a standard reporting passive; no agent needed.\n\nTip: It is said/believed/expected that… hedges without naming a speaker.",
-        "TRUE — Direct object as subject: Revised numbers were given to the runners. Dropping vague they is allowed.\n\nTip: Omitting a vague they is fine; inventing a named VIP is not.",
-        "FALSE — Adds an agent and on purpose; the original intransitive crash states an event, not intentional causation.\n\nTip: Do not turn appliance failures into deliberate sabotage without evidence in the source.",
-        "TRUE — Perfect passive inside yet to be reached — formal and correct.\n\nTip: has yet to be + PP is a common hedge for unfinished decisions.",
-        "TRUE — Future perfect passive: will have been fitted before…\n\nTip: Future perfect passive = will have been + PP."
+        "**A) It is said that the ferry service stopped overnight.**  (true)\n\nIt is said that the ferry service stopped overnight is a standard impersonal reporting passive. No speaker needs to be named; the hedge is intentional.\n\n**Tip:** It is said/believed/expected that… hedges without naming a speaker.",
+        "**B) They gave the runners revised numbers. → Revised numbers were given to the runners.**  (true)\n\nThey gave the runners revised numbers allows Revised numbers were given to the runners. Dropping vague they is fine; inventing a named VIP would not be.\n\n**Tip:** Omitting a vague they is fine; inventing a named VIP is not.",
+        "**C) The fridge crashed. → The fridge was crashed by the update script on purpose.**  (false)\n\nTrap: The fridge crashed states an event. Adding by the update script on purpose invents both an agent and deliberate intent the original never stated.\n\nRepair: keep The fridge crashed, or say The fridge was damaged by… only if the source supplies a non-intentional cause.",
+        "**D) A decision has yet to be reached on the picnic date.**  (true)\n\nA decision has yet to be reached on the picnic date embeds a perfect passive inside yet to be reached — formal and correct for unfinished decisions.\n\n**Tip:** has yet to be + PP is a common hedge for unfinished decisions.",
+        "**E) The costumes will have been fitted before the play opens.**  (true)\n\nThe costumes will have been fitted before the play opens is future perfect passive: will have been + past participle, with a clear deadline clause.\n\n**Tip:** Future perfect passive = will have been + PP."
       ],
       "highlights": [
         "It is said that",
@@ -416,7 +494,7 @@
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.5",
-      "solution_overview": "Impersonal reporting passives and future perfect passives are fair game. The crash rewrite fails because it invents both a culprit and intent the original never stated."
+      "solution_overview": "Impersonal reporting and future perfect passives are fair game; the crash rewrite fails by inventing culprit and intent.\n\n**Part 1: What to watch for.**\n\nIt is said that…, double-object passives that drop vague they, intransitive crash twisted into on purpose, has yet to be reached, and will have been fitted.\n\n**Part 2: How to decide.**\n\nAccept impersonal and nested perfect passives that do not name fake agents. Reject any rewrite that turns an event into deliberate sabotage without evidence in the source.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-5-14",
@@ -430,13 +508,19 @@
         "Concerns have been raised about crowded platforms.",
         "The tokens are expired by the security protocol every night intentionally by the tokens themselves."
       ],
-      "answer_key": [false, false, false, true, false],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — were being finalised does not identify a junior scorer working alone.\n\nTip: Continuous passives still hide agents unless a by-phrase appears.",
-        "FALSE — Nobody can be blamed contradicts naming the bus driver as blameworthy.\n\nTip: Respect negation: nobody ≠ a specific person.",
-        "FALSE — Even if get-passive is colloquially fine, by itself erases any external publisher and invents self-publication.\n\nTip: Get-passive still implies an external process, not the patient acting alone.",
-        "TRUE — Present perfect passive Concerns have been raised… — standard and agentless.\n\nTip: Raising concerns often stays agentless in everyday English.",
-        "FALSE — Garbled agent stack: protocol vs tokens themselves, plus intentionally — form and meaning both fail.\n\nTip: One clear by-agent is enough; reflexive intentional stacks are almost always wrong."
+        "**A) The scores were being finalised when the lights froze. → We know the junior scorer was finalising them alone.**  (false)\n\nTrap: were being finalised when the lights froze still hides the agent. Claiming we know a junior scorer was finalising them alone invents identity and solitude the continuous passive never gave.\n\nRepair: leave the continuous passive without naming a scorer.",
+        "**B) Nobody can be blamed for the weather delay. → The bus driver is to blame for the weather delay.**  (false)\n\nTrap: Nobody can be blamed for the weather delay directly contradicts naming the bus driver as blameworthy. Negation forbids that rewrite.\n\nRepair: keep Nobody can be blamed for the weather delay.",
+        "**C) The manuscript got published without peer review. → The manuscript published without peer review by itself.**  (false)\n\nTrap: Even if get-passive is colloquially fine, by itself erases any external publisher and invents self-publication. Get-passive still implies an external process.\n\nRepair: The manuscript got published without peer review (or was published…), without by itself.",
+        "**D) Concerns have been raised about crowded platforms.**  (true)\n\nConcerns have been raised about crowded platforms is a standard present perfect passive, often kept agentless in everyday English. Form and tone are both sound.\n\n**Tip:** Raising concerns often stays agentless in everyday English.",
+        "**E) The tokens are expired by the security protocol every night intentionally by the tokens themselves.**  (false)\n\nTrap: The tokens are expired by the security protocol every night intentionally by the tokens themselves stacks contradictory agents and intent. Form and meaning both collapse.\n\nRepair: The tokens are expired by the security protocol every night — one clear by-agent, no reflexive intentionality."
       ],
       "highlights": [
         "junior scorer was finalising",
@@ -448,7 +532,7 @@
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.5",
-      "solution_overview": "Four lines smuggle in named people, blame, or reflexive agents. Only the concerns sentence keeps a sober agentless perfect passive."
+      "solution_overview": "Four lines smuggle in named people, blame, or reflexive agents; only the concerns sentence keeps a sober agentless perfect passive.\n\n**Part 1: What to watch for.**\n\nContinuous passives that still hide agents, nobody versus a named blame target, get-passive twisted into by itself, have been raised, and stacked intentional reflexive nonsense.\n\n**Part 2: How to decide.**\n\nRespect negation and agentlessness. One clear by-agent is enough; reflexive intentional stacks and blame flips almost always fail.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-5-15",
@@ -462,13 +546,19 @@
         "The council owns the riverside path. → The riverside path is owned by the council.",
         "The samples were being store in the cold room overnight."
       ],
-      "answer_key": [false, true, true, true, false],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Reflexive lift themselves is absurd; keep were lifted or name a real authority.\n\nTip: Roadblocks do not act on themselves.",
-        "TRUE — Expect → is expected; by Friday is a deadline, not a fake human agent.\n\nTip: by + time is not a by-agent; do not confuse the two.",
-        "TRUE — Modal perfect passive: should have been attached.\n\nTip: should have been + PP for past criticism or missed duty.",
-        "TRUE — Own passivises cleanly here: is owned by the council.\n\nTip: Ownership passives are common when describing who holds something.",
-        "FALSE — Need were being stored, not were being store.\n\nTip: being + past participle, never being + base verb."
+        "**A) The roadblocks were lifted last week. → Last week saw the roadblocks lift themselves.**  (false)\n\nTrap: Roadblocks do not lift themselves. The reflexive rewrite is absurd; were lifted already states the correct passive.\n\nRepair: keep The roadblocks were lifted last week, or name a real authority if known.",
+        "**B) Fans expect a decision by Friday. → A decision is expected by Friday.**  (true)\n\nFans expect a decision by Friday becomes A decision is expected by Friday. Here by Friday is a deadline, not a fake human agent, and the meaning still fits.\n\n**Tip:** by + time is not a by-agent; do not confuse the two.",
+        "**C) The wiring diagram should have been attached to the handbook.**  (true)\n\nThe wiring diagram should have been attached to the handbook is modal perfect passive for past criticism or missed duty: should have been + past participle.\n\n**Tip:** should have been + PP for past criticism or missed duty.",
+        "**D) The council owns the riverside path. → The riverside path is owned by the council.**  (true)\n\nThe council owns the riverside path flips cleanly to The riverside path is owned by the council. Ownership passives are common when naming who holds something.\n\n**Tip:** Ownership passives are common when describing who holds something.",
+        "**E) The samples were being store in the cold room overnight.**  (false)\n\nTrap: were being store uses a base verb after being. Continuous passive needs were being stored.\n\nRepair: The samples were being stored in the cold room overnight."
       ],
       "highlights": [
         "lift themselves",
@@ -480,7 +570,7 @@
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.5",
-      "solution_overview": "Separate by-time from by-agent, accept modal perfect and ownership passives, and reject reflexive nonsense plus base verbs after being."
+      "solution_overview": "Separate by-time from by-agent, accept modal perfect and ownership passives, and reject reflexive nonsense plus base verbs after being.\n\n**Part 1: What to watch for.**\n\nReflexive lift themselves, is expected by Friday (deadline, not agent), should have been attached, is owned by the council, and were being store.\n\n**Part 2: How to decide.**\n\nWhen by introduces a time, it is not an agent phrase. Modal perfect passives and ownership passives are fair when form is intact. After being, demand a past participle.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-5-16",
@@ -494,13 +584,19 @@
         "The breach was reported anonymously. → A named neighbour reported the breach to take revenge.",
         "The forms need signing before the trip. → The forms need to be signed before the trip."
       ],
-      "answer_key": [false, true, true, false, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — will be announced does not identify the panel chair or make that identity certain.\n\nTip: Certainty claims about a hidden agent fail the meaning test.",
-        "TRUE — Present perfect passive with a clear beneficiary for-phrase.\n\nTip: have been reserved, not has, with plural seats.",
-        "TRUE — Dropping the generic bakery subject is allowed when place remains; are produced in Poland keeps the core claim without inventing a new person.\n\nTip: Omitting a generic producer is fine; inventing a celebrity baker is not.",
-        "FALSE — Anonymously blocks naming a neighbour and inventing revenge motive.\n\nTip: Anonymous passives forbid named-agent actives.",
-        "TRUE — need signing and need to be signed are both acceptable obligation passives here; meaning aligns.\n\nTip: need signing ≈ need to be signed in formal British usage."
+        "**A) The shortlist will be announced tomorrow. → Tomorrow the panel chair will announce the shortlist, and that is certain.**  (false)\n\nTrap: will be announced tomorrow does not identify the panel chair or make that identity certain. Certainty claims about a hidden agent fail the meaning test.\n\nRepair: keep The shortlist will be announced tomorrow without naming a chair.",
+        "**B) Two seats have been reserved for the grandparents.**  (true)\n\nTwo seats have been reserved for the grandparents is present perfect passive with a clear beneficiary for-phrase and plural agreement (have been).\n\n**Tip:** have been reserved, not has, with plural seats.",
+        "**C) The bakery produces these loaves in Poland. → These loaves are produced in Poland.**  (true)\n\nThe bakery produces these loaves in Poland can become These loaves are produced in Poland. Dropping the generic producer is allowed when place remains; inventing a celebrity baker would not be.\n\n**Tip:** Omitting a generic producer is fine; inventing a celebrity baker is not.",
+        "**D) The breach was reported anonymously. → A named neighbour reported the breach to take revenge.**  (false)\n\nTrap: anonymously blocks naming a neighbour and inventing revenge. An anonymous passive forbids a named-agent active with motive.\n\nRepair: keep The breach was reported anonymously.",
+        "**E) The forms need signing before the trip. → The forms need to be signed before the trip.**  (true)\n\nNeed signing and need to be signed are both acceptable obligation passives here; the paraphrase keeps the same duty before the trip.\n\n**Tip:** need signing ≈ need to be signed in formal British usage."
       ],
       "highlights": [
         "panel chair will announce",
@@ -512,7 +608,7 @@
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.5",
-      "solution_overview": "Dropping a generic producer is fine; naming a chair, neighbour, or revenge motive is not. Also accept the need to be signed paraphrase of need signing."
+      "solution_overview": "Dropping a generic producer is fine; naming a chair, neighbour, or revenge motive is not. Also accept need to be signed as a paraphrase of need signing.\n\n**Part 1: What to watch for.**\n\nCertainty about a hidden announcer, beneficiary for-phrases, place passives that omit a generic bakery, anonymous passives forbidding named revenge, and need signing ≈ need to be signed.\n\n**Part 2: How to decide.**\n\nAsk whether the rewrite adds a specific person or purpose. If yes and the source hid the agent (or said anonymously), mark false. Generic omission and obligation paraphrases can still be true.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-5-17",
@@ -526,13 +622,19 @@
         "It was agreed that bedtime would remain unchanged for six months.",
         "The photos cannot be shared externally without permission."
       ],
-      "answer_key": [true, false, true, true, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Past perfect passive in a conditional: had been heeded; might have been avoided is modal perfect passive.\n\nTip: Stacked passives in conditionals still need been + PP each time.",
-        "FALSE — Progressive active are repairing needs is being repaired, not is repaired, for an action in progress.\n\nTip: as we speak demands continuous passive, not simple passive.",
-        "TRUE — Double-object passive: The visitor was shown the garden…\n\nTip: Show/give/offer commonly allow recipient as passive subject.",
-        "TRUE — Impersonal It was agreed that… reports a decision without naming voters.\n\nTip: Do not invent which relative agreed.",
-        "TRUE — Modal passive prohibition cannot be shared… without permission.\n\nTip: Keep the without-phrase; it is part of the meaning."
+        "**A) Had the warning been heeded, the flood might have been avoided.**  (true)\n\nHad the warning been heeded and might have been avoided are both passive perfect shapes inside a conditional. Each layer still needs been + past participle.\n\n**Tip:** Stacked passives in conditionals still need been + PP each time.",
+        "**B) They are repairing the path now. → The path is repaired now by them as we speak.**  (false)\n\nTrap: They are repairing the path now describes an action in progress. Is repaired now is simple passive and does not match as we speak; you need is being repaired.\n\nRepair: The path is being repaired now by them as we speak.",
+        "**C) The visitor was shown the garden before lunch.**  (true)\n\nThe visitor was shown the garden before lunch is a double-object passive with the recipient as subject. Show/give/offer commonly allow this pattern.\n\n**Tip:** Show, give, and offer commonly allow the recipient as passive subject.",
+        "**D) It was agreed that bedtime would remain unchanged for six months.**  (true)\n\nIt was agreed that bedtime would remain unchanged for six months reports a decision without naming voters. Do not invent which relative agreed.\n\n**Tip:** Do not invent which relative agreed.",
+        "**E) The photos cannot be shared externally without permission.**  (true)\n\nThe photos cannot be shared externally without permission is a modal passive prohibition. The without-phrase is part of the meaning and should stay.\n\n**Tip:** Keep the without-phrase; it is part of the meaning."
       ],
       "highlights": [
         "Had the warning been heeded",
@@ -544,7 +646,7 @@
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.5",
-      "solution_overview": "Advanced shapes: conditional perfect passives, impersonal it-passives, and recipient subjects. The weak line mismatches progressive meaning with a simple passive."
+      "solution_overview": "Advanced shapes: conditional perfect passives, impersonal it-passives, and recipient subjects. The weak line mismatches progressive meaning with a simple passive.\n\n**Part 1: What to watch for.**\n\nHad been heeded / might have been avoided, is being repaired versus is repaired for as we speak, was shown, It was agreed that…, and cannot be shared… without permission.\n\n**Part 2: How to decide.**\n\nStacked passives in conditionals still need been + PP each time. Progressive active needs continuous passive. Do not invent who agreed in impersonal reporting passives.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-5-18",
@@ -558,13 +660,19 @@
         "The community centre based in Leeds oversees local youth clubs. → Local youth clubs are overseen by the community centre based in Leeds.",
         "The password must changed every ninety days."
       ],
-      "answer_key": [false, false, false, true, false],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "FALSE — Unanimously already states the outcome; inventing opposing members who deliberately passed it contradicts the source.\n\nTip: Do not rewrite vote passives into paradoxical agent stories.",
-        "FALSE — Agentless little progress has been made does not name a landlord or allege purposeful stalling.\n\nTip: Progress passives especially attract fake-blame rewrites.",
-        "FALSE — were allowed to cool implies an external controller; allowed themselves invents reflexive agency.\n\nTip: Allow-passive ≠ self-action.",
-        "TRUE — Oversees → are overseen by; the same centre remains the agent, with the Leeds detail kept.\n\nTip: Carry modifiers of the agent into the by-phrase when they identify which centre.",
-        "FALSE — Missing be: must be changed, not must changed.\n\nTip: Modal passives always need be before the participle."
+        "**A) The motion was passed unanimously. → Every club member who opposed it still somehow passed it deliberately.**  (false)\n\nTrap: Unanimously already states the outcome. Inventing opposing members who somehow passed it deliberately contradicts the source and makes a paradoxical agent story.\n\nRepair: keep The motion was passed unanimously.",
+        "**B) Little progress has been made on the kitchen renovation. → The landlord personally stalled the kitchen renovation on purpose.**  (false)\n\nTrap: Little progress has been made on the kitchen renovation is agentless. Naming a landlord who personally stalled it on purpose invents both agent and motive.\n\nRepair: leave the progress passive without fake blame.",
+        "**C) The cookies were allowed to cool before icing. → The cookies allowed themselves to cool before icing.**  (false)\n\nTrap: were allowed to cool implies an external controller. Allowed themselves invents reflexive agency the allow-passive does not support.\n\nRepair: keep The cookies were allowed to cool before icing.",
+        "**D) The community centre based in Leeds oversees local youth clubs. → Local youth clubs are overseen by the community centre based in Leeds.**  (true)\n\nThe community centre based in Leeds oversees local youth clubs becomes Local youth clubs are overseen by the community centre based in Leeds. The same centre remains the agent, Leeds detail included.\n\n**Tip:** Carry modifiers of the agent into the by-phrase when they identify which centre.",
+        "**E) The password must changed every ninety days.**  (false)\n\nTrap: must changed is missing be. Modal passives need must be changed.\n\nRepair: The password must be changed every ninety days."
       ],
       "highlights": [
         "opposed it still somehow",
@@ -576,7 +684,7 @@
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.5",
-      "solution_overview": "Only the community-centre oversight pair keeps the same agent under a clean voice flip. The rest invent blame, reflexive cool-downs, or drop be after a modal."
+      "solution_overview": "Only the community-centre oversight pair keeps the same agent under a clean voice flip. The rest invent blame, reflexive cool-downs, or drop be after a modal.\n\n**Part 1: What to watch for.**\n\nParadoxical vote rewrites, fake landlord stalling, allowed themselves versus were allowed, overseen by with modifiers kept, and must changed.\n\n**Part 2: How to decide.**\n\nReject blame and reflexive agency the source never stated. Modal passives always need be before the participle. Carry identifying modifiers of the agent into the by-phrase when they matter.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-5-19",
@@ -590,13 +698,19 @@
         "The rare manuscript was being carefully restored when funding paused.",
         "Under no circumstances should guest passwords be shared without encryption."
       ],
-      "answer_key": [true, true, false, true, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "TRUE — Perfect passive participle Having been briefed by the nurse unpacks fairly into were briefed by the nurse without inventing a new agent.\n\nTip: Participial passives still obey the no-fake-agent rule.",
-        "TRUE — be to + passive: are to be returned marks scheduled obligation.\n\nTip: are to be + PP is formal diary-style passive.",
-        "FALSE — remains to be decided means the venue is still open; claiming it is already decided by a known person reverses the meaning.\n\nTip: to be decided signals incompleteness, not a hidden finished decision.",
-        "TRUE — Past continuous passive was being carefully restored; agent optional.\n\nTip: Adverbs can sit between being and the participle.",
-        "TRUE — Modal passive after inversion still needs be: should… be shared.\n\nTip: Inversion does not remove the passive be."
+        "**A) Having been briefed by the nurse, the parents approved the treatment. → The parents were briefed by the nurse and then approved the treatment.**  (true)\n\nHaving been briefed by the nurse unpacks fairly into The parents were briefed by the nurse and then approved the treatment. The same nurse remains the agent; nothing new is invented.\n\n**Tip:** Participial passives still obey the no-fake-agent rule.",
+        "**B) The library books are to be returned within fourteen days.**  (true)\n\nThe library books are to be returned within fourteen days uses be to + passive for scheduled obligation: are to be + past participle.\n\n**Tip:** are to be + PP is formal diary-style passive.",
+        "**C) What remains to be decided is the venue. → Someone has already decided the venue, and we know who.**  (false)\n\nTrap: What remains to be decided is the venue means the venue is still open. Claiming someone has already decided it — and that we know who — reverses the meaning.\n\nRepair: keep What remains to be decided is the venue.",
+        "**D) The rare manuscript was being carefully restored when funding paused.**  (true)\n\nThe rare manuscript was being carefully restored when funding paused is past continuous passive. The adverb carefully can sit between being and the participle.\n\n**Tip:** Adverbs can sit between being and the participle.",
+        "**E) Under no circumstances should guest passwords be shared without encryption.**  (true)\n\nUnder no circumstances should guest passwords be shared without encryption keeps the modal passive after inversion: should… be shared. Inversion does not remove be.\n\n**Tip:** Inversion does not remove the passive be."
       ],
       "highlights": [
         "were briefed by the nurse",
@@ -608,7 +722,7 @@
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.5",
-      "solution_overview": "Four advanced passives hold: participial, be-to, continuous, and inverted modal. The venue line fails because it turns an undecided state into a fabricated completed act."
+      "solution_overview": "Four advanced passives hold: participial, be-to, continuous, and inverted modal. The venue line fails because it turns an undecided state into a fabricated completed act.\n\n**Part 1: What to watch for.**\n\nHaving been briefed… unpacking fairly, are to be returned, remains to be decided versus already decided, was being carefully restored, and inverted should… be shared.\n\n**Part 2: How to decide.**\n\nParticipial and inverted passives still obey the no-fake-agent rule. to be decided signals incompleteness — never rewrite it as a known finished decision. Inversion does not remove be.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-5-20",
@@ -622,13 +736,19 @@
         "It is believed the mix-up was caused by a booking error. → We know which clerk caused the mix-up and that the clerk acted deliberately.",
         "Were the rules not to be enforced, the queue would lengthen. → If the rules were not enforced, the queue would lengthen."
       ],
-      "answer_key": [false, true, true, false, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "FALSE — Neutral modal passive becomes intentional prevention; meaning and force both change.\n\nTip: can be drawn does not accuse the data of deliberate obstruction.",
-        "TRUE — Nested passives: is expected + to be published — both layers are well formed.\n\nTip: Expect + to-infinitive passive is common in formal forecasts.",
-        "TRUE — Causative had… replaced pairs with a plain passive The boilers were replaced overnight without inventing who did the work.\n\nTip: Causative get/have + object + PP often aligns with a simple passive of the object.",
-        "FALSE — It is believed hedges; naming a clerk and alleging deliberate action fabricates agent and intent.\n\nTip: Belief passives especially forbid certainty-plus-motive rewrites.",
-        "TRUE — Inverted passive Were… not to be enforced paraphrases cleanly as If the rules were not enforced…\n\nTip: Formal inversion still encodes the same passive obligation/enforcement meaning."
+        "**A) No conclusions can be drawn from this data. → This data prevents anyone from drawing conclusions deliberately.**  (false)\n\nTrap: No conclusions can be drawn from this data is a neutral modal passive. Saying the data prevents anyone from drawing conclusions deliberately invents both agency and intent.\n\nRepair: keep No conclusions can be drawn from this data.",
+        "**B) The school newsletter is expected to be published before the open day.**  (true)\n\nThe school newsletter is expected to be published before the open day nests two passives: is expected + to be published. Both layers are well formed for a formal forecast.\n\n**Tip:** Expect + to-infinitive passive is common in formal forecasts.",
+        "**C) They had the boilers replaced overnight. → The boilers were replaced overnight.**  (true)\n\nThey had the boilers replaced overnight pairs with The boilers were replaced overnight. Causative have + object + PP often aligns with a simple passive of the object without inventing who did the work.\n\n**Tip:** Causative get/have + object + PP often aligns with a simple passive of the object.",
+        "**D) It is believed the mix-up was caused by a booking error. → We know which clerk caused the mix-up and that the clerk acted deliberately.**  (false)\n\nTrap: It is believed the mix-up was caused by a booking error is a hedge. Naming a clerk and alleging deliberate action fabricates both agent and intent.\n\nRepair: keep the belief passive without certainty-plus-motive claims.",
+        "**E) Were the rules not to be enforced, the queue would lengthen. → If the rules were not enforced, the queue would lengthen.**  (true)\n\nWere the rules not to be enforced paraphrases cleanly as If the rules were not enforced…. Formal inversion still encodes the same passive enforcement meaning.\n\n**Tip:** Formal inversion still encodes the same passive obligation or enforcement meaning."
       ],
       "highlights": [
         "prevents anyone from drawing conclusions deliberately",
@@ -640,7 +760,7 @@
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.5",
-      "solution_overview": "At the top band, watch nested passives and inverted conditionals that still keep meaning, and reject any rewrite that adds deliberate clerks, motives, or prevention the source never stated."
+      "solution_overview": "At the top band, watch nested passives and inverted conditionals that still keep meaning, and reject any rewrite that adds deliberate clerks, motives, or prevention the source never stated.\n\n**Part 1: What to watch for.**\n\nNeutral can be drawn twisted into deliberate prevention, is expected to be published, causative had… replaced aligning with were replaced, belief passives forbidding clerk-plus-motive, and Were… not to be enforced ≈ If… were not enforced.\n\n**Part 2: How to decide.**\n\nBelief and modal hedges forbid certainty-plus-motive rewrites. Nested expectation passives and inverted formal conditionals stay true when they preserve force and participants.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     }
   ]
 }

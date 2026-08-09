@@ -14,19 +14,31 @@
         "The new bus stop is closer than the old one.",
         "She sings more better than she did at the school concert."
       ],
-      "answer_key": [false, true, false, true, false],
-      "tactical_explanations": [
-        "FALSE — \"Heavier\" already marks the comparative, so \"more heavier\" doubles the form. Write \"heavier\" alone.\n\nTip: Drop \"more\" when the adjective already ends in -er.",
-        "TRUE — One-syllable \"large\" correctly takes -er: \"larger than\".\n\nTip: Short adjectives usually add -er, not \"more.\"",
-        "FALSE — Ranking among three trails needs the superlative \"worst,\" not the comparative \"worse.\"\n\nTip: Of three or more → -est / worst / best; of two → -er / worse / better.",
-        "TRUE — One-syllable \"close\" correctly forms \"closer than\" for a two-item comparison.\n\nTip: Two things → comparative; a whole group → superlative.",
-        "FALSE — \"Better\" is already comparative; \"more better\" is a double mark. Use \"better\" alone.\n\nTip: Never stack \"more\" with an irregular comparative."
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
       ],
-      "highlights": ["more heavier", "larger", "the worse", "closer", "more better"],
+      "tactical_explanations": [
+        "**A) This suitcase is more heavier than the one I packed last summer.**  (false)\n\nTrap: \"Heavier\" already includes the comparative ending -er, so pairing it with \"more\" doubles the mark. Repair: drop \"more\" and write simply \"heavier than the one I packed last summer.\" One comparative marker is enough for a clean two-item contrast.\n\n**Tip:** Drop \"more\" when the adjective already ends in -er.",
+        "**B) My sister's flat is larger than mine.**  (true)\n\nOne-syllable \"large\" correctly becomes \"larger\" before \"than.\" This is the standard short-adjective pattern for comparing two flats, and nothing extra is needed.\n\n**Tip:** Short adjectives usually add -er, not \"more.\"",
+        "**C) Of the three trails, this path is the worse.**  (false)\n\nTrap: \"worse\" is the comparative (two items), but \"of the three trails\" ranks a group of three. Repair: use the superlative \"the worst.\" Among three or more options, -est / worst / best is the form you want.\n\n**Tip:** Of three or more → -est / worst / best; of two → -er / worse / better.",
+        "**D) The new bus stop is closer than the old one.**  (true)\n\n\"Close\" is short, so \"closer than\" correctly compares the new stop with the old one. Two named places → comparative, not superlative.\n\n**Tip:** Two things → comparative; a whole group → superlative.",
+        "**E) She sings more better than she did at the school concert.**  (false)\n\nTrap: \"better\" is already the irregular comparative of \"well/good,\" so \"more better\" doubles the mark. Repair: sing \"better than she did at the school concert.\" Never stack \"more\" on an irregular comparative.\n\n**Tip:** Never stack \"more\" with an irregular comparative."
+      ],
+      "highlights": [
+        "more heavier",
+        "larger",
+        "the worse",
+        "closer",
+        "more better"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 1,
       "subsection": "g.11",
-      "solution_overview": "Scan each sentence for how comparison is marked. Watch for double forms (more + -er) and check whether you need a comparative (two items) or a superlative (a group). Irregulars like better/worse already carry the meaning — do not add \"more.\""
+      "solution_overview": "Suitcases, flats, trails, bus stops, and a school concert — everyday scenes asking whether each comparison is marked correctly.\n\n**Part 1: What to watch for.**\n\nThis opener targets double marking and the two-versus-many rule. Short adjectives usually take -er / -est; irregulars like better and worse already carry the comparative meaning, so stacking \"more\" on top is always wrong.\n\n**Part 2: How to decide.**\n\nFor each line, ask two questions: Is the adjective already comparative or superlative? And does the sentence compare two things or rank a whole group? Mark true only when both the form and the grade of comparison fit.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-11-02",
@@ -40,19 +52,31 @@
         "This novel is more interesting than the film adaptation.",
         "It was the most coldest winter walk we have ever taken."
       ],
-      "answer_key": [true, false, true, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Freshest\" correctly ranks one bakery among five.\n\nTip: Use -est / most when ranking inside a group of three or more.",
-        "FALSE — The irregular comparative of \"good\" is \"better,\" not \"gooder.\"\n\nTip: Memorise good → better → best; never invent -er on irregulars.",
-        "TRUE — Two-syllable \"quiet\" correctly takes -er: \"quieter.\"\n\nTip: Many short adjectives use -er / -est rather than more / most.",
-        "TRUE — Multi-syllable \"interesting\" correctly takes \"more … than.\"\n\nTip: Longer adjectives prefer more/most, not -er/-est.",
-        "FALSE — \"Coldest\" is already a superlative; \"most coldest\" doubles it. Use \"the coldest.\"\n\nTip: Never pair \"most\" with an -est form."
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
       ],
-      "highlights": ["the freshest", "gooder", "quieter", "more interesting", "most coldest"],
+      "tactical_explanations": [
+        "**A) Among the five bakeries on the high street, Miller's has the freshest bread.**  (true)\n\nFive bakeries on the high street is a clear group, and \"the freshest\" correctly ranks Miller's inside that set. Superlative -est fits one-syllable \"fresh\" without needing \"most.\"\n\n**Tip:** Use -est / most when ranking inside a group of three or more.",
+        "**B) That soup tastes gooder than the one from yesterday.**  (false)\n\nTrap: English never forms \"gooder.\" The irregular chain is good → better → best. Repair: \"That soup tastes better than the one from yesterday.\" Learn the irregular and refuse invented -er forms.\n\n**Tip:** Memorise good → better → best; never invent -er on irregulars.",
+        "**C) The evening train was quieter than the morning service.**  (true)\n\nTwo-syllable \"quiet\" commonly takes -er: \"quieter than the morning service\" cleanly contrasts two trains. No need for \"more quiet\" here.\n\n**Tip:** Many short adjectives use -er / -est rather than more / most.",
+        "**D) This novel is more interesting than the film adaptation.**  (true)\n\nMulti-syllable \"interesting\" correctly takes \"more … than\" when the novel is set against the film. Longer adjectives almost never add -er.\n\n**Tip:** Longer adjectives prefer more/most, not -er/-est.",
+        "**E) It was the most coldest winter walk we have ever taken.**  (false)\n\nTrap: \"coldest\" is already the superlative, so \"most coldest\" doubles it. Repair: \"the coldest winter walk we have ever taken.\" Pair \"most\" only with the base adjective, never with -est.\n\n**Tip:** Never pair \"most\" with an -est form."
+      ],
+      "highlights": [
+        "the freshest",
+        "gooder",
+        "quieter",
+        "more interesting",
+        "most coldest"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 2,
       "subsection": "g.11",
-      "solution_overview": "Check whether the adjective needs -er/-est or more/most, and whether any irregular (good/better/best) is mangled. Double superlatives like \"most coldest\" are always wrong."
+      "solution_overview": "Bakeries, soup, trains, a novel-versus-film pair, and a winter walk — check that each adjective picks the right comparative system.\n\n**Part 1: What to watch for.**\n\nYou are sorting -er/-est against more/most, spotting mangled irregulars such as \"gooder,\" and catching double superlatives like \"most coldest.\" Longer adjectives prefer more/most; short ones usually take the ending.\n\n**Part 2: How to decide.**\n\nName the adjective, count its syllables, and ask whether the sentence ranks inside a group. If you see \"most\" glued to an -est form, or a homemade -er on an irregular, mark false.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-11-03",
@@ -66,19 +90,31 @@
         "The weekend weather turned more worser after noon.",
         "My laptop runs gooder after the software update."
       ],
-      "answer_key": [false, false, true, false, false],
-      "tactical_explanations": [
-        "FALSE — \"Taller\" already includes the comparative; delete \"more.\"\n\nTip: more + -er is never needed.",
-        "FALSE — Ranking among all desserts needs \"the least sweet,\" not \"the less sweet.\"\n\nTip: less = comparative (two); least = superlative (a group).",
-        "TRUE — Two-syllable \"clear\" commonly takes -er: \"clearer than.\"\n\nTip: Many clear-type adjectives accept -er as well as more.",
-        "FALSE — \"Worse\" is already comparative; \"more worser\" piles two errors. Use \"worse.\"\n\nTip: bad → worse → worst; never add more or -er.",
-        "FALSE — Replace \"gooder\" with \"better.\"\n\nTip: good / better / best is fixed — no homemade forms."
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
       ],
-      "highlights": ["more taller", "the less sweet", "clearer", "more worser", "gooder"],
+      "tactical_explanations": [
+        "**A) He is more taller than his twin brother.**  (false)\n\nTrap: \"taller\" already carries -er, so \"more taller\" is double marking. Repair: \"He is taller than his twin brother.\" Delete \"more\" whenever -er is already present.\n\n**Tip:** more + -er is never needed.",
+        "**B) Of all the desserts, this tart is the less sweet.**  (false)\n\nTrap: \"of all the desserts\" ranks a whole set, so you need the superlative \"the least sweet,\" not comparative \"the less sweet.\" Less compares two; least ranks many.\n\n**Tip:** less = comparative (two); least = superlative (a group).",
+        "**C) Her explanation was clearer than the textbook chapter.**  (true)\n\nTwo-syllable \"clear\" commonly forms \"clearer than\" for a textbook contrast. The comparative ending is natural here and needs no repair.\n\n**Tip:** Many clear-type adjectives accept -er as well as more.",
+        "**D) The weekend weather turned more worser after noon.**  (false)\n\nTrap: \"worse\" is already comparative, and \"worser\" is nonstandard — \"more worser\" piles both errors. Repair: \"turned worse after noon.\" Remember bad → worse → worst with no extras.\n\n**Tip:** bad → worse → worst; never add more or -er.",
+        "**E) My laptop runs gooder after the software update.**  (false)\n\nTrap: \"gooder\" is not English. Repair: \"My laptop runs better after the software update.\" Keep the fixed chain good / better / best.\n\n**Tip:** good / better / best is fixed — no homemade forms."
+      ],
+      "highlights": [
+        "more taller",
+        "the less sweet",
+        "clearer",
+        "more worser",
+        "gooder"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 3,
       "subsection": "g.11",
-      "solution_overview": "This set stacks the beginner traps: double marking, less vs least, and broken irregulars. Fix the comparison word first, then check whether the sentence compares two things or ranks a whole set."
+      "solution_overview": "Twins, desserts, a textbook chapter, worsening weather, and a laptop update — a dense run of beginner comparison traps.\n\n**Part 1: What to watch for.**\n\nThis set stacks double marking (\"more taller,\" \"more worser\"), less versus least, and broken irregulars (\"gooder\"). Fix the comparison word itself before you worry about style.\n\n**Part 2: How to decide.**\n\nFirst strip any stacked \"more\" or invented -er. Then check whether \"of all\" demands a superlative (least, not less). Irregulars bad/good have fixed shapes — do not reinvent them.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-11-04",
@@ -92,19 +128,31 @@
         "This playlist is the best of the three we built.",
         "The museum was more farther from the hotel than we expected."
       ],
-      "answer_key": [true, false, true, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Easy\" correctly becomes \"easier\" (y → i + -er).\n\nTip: Consonant + y adjectives change y to i before -er/-est.",
-        "FALSE — One-syllable \"cheap\" takes \"cheapest,\" not \"most cheap.\"\n\nTip: Prefer -est on short adjectives unless the form sounds awkward.",
-        "TRUE — \"Smaller than\" is the standard comparative for \"small.\"\n\nTip: Double the final consonant when needed (big → bigger), but \"small\" simply adds -er.",
-        "TRUE — \"The best of the three\" correctly uses the irregular superlative for a set of three.\n\nTip: good → better → best.",
-        "FALSE — \"Farther/further\" is already comparative; do not add \"more.\" Use \"farther/further … than.\"\n\nTip: Irregulars never take an extra \"more.\""
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
       ],
-      "highlights": ["easier", "most cheap", "smaller", "the best", "more farther"],
+      "tactical_explanations": [
+        "**A) Today's quiz was easier than Monday's.**  (true)\n\n\"Easy\" correctly changes y to i and adds -er: \"easier than Monday's.\" The spelling shift is standard for consonant + y adjectives in two-item contrasts.\n\n**Tip:** Consonant + y adjectives change y to i before -er/-est.",
+        "**B) She chose the most cheap ticket available online.**  (false)\n\nTrap: one-syllable \"cheap\" wants \"the cheapest ticket,\" not \"the most cheap.\" Repair: swap to -est. Prefer the ending on short adjectives unless the -est form sounds awkward.\n\n**Tip:** Prefer -est on short adjectives unless the form sounds awkward.",
+        "**C) Our garden is smaller than the neighbour's.**  (true)\n\n\"Small\" simply adds -er: \"smaller than the neighbour's\" is the standard comparative. No consonant doubling is required here (unlike big → bigger).\n\n**Tip:** Double the final consonant when needed (big → bigger), but \"small\" simply adds -er.",
+        "**D) This playlist is the best of the three we built.**  (true)\n\n\"The best of the three\" correctly uses the irregular superlative inside a set of three playlists. Good → better → best fits the group ranking.\n\n**Tip:** good → better → best.",
+        "**E) The museum was more farther from the hotel than we expected.**  (false)\n\nTrap: \"farther/further\" is already comparative, so \"more farther\" doubles the mark. Repair: \"farther/further from the hotel than we expected.\" Irregular distance forms never take an extra \"more.\"\n\n**Tip:** Irregulars never take an extra \"more.\""
+      ],
+      "highlights": [
+        "easier",
+        "most cheap",
+        "smaller",
+        "the best",
+        "more farther"
+      ],
       "difficulty_level": "1/5",
       "sort_order": 4,
       "subsection": "g.11",
-      "solution_overview": "Confirm spelling of -er forms, avoid \"most\" on short adjectives that want -est, and leave irregulars like best and farther alone — they do not need \"more.\""
+      "solution_overview": "A quiz, online tickets, neighbouring gardens, playlists, and a museum walk — spelling and irregular distance forms come into play.\n\n**Part 1: What to watch for.**\n\nConfirm -er spelling (easy → easier), avoid \"most\" on short adjectives that want -est, and leave irregulars like best and farther alone. They do not need an extra \"more.\"\n\n**Part 2: How to decide.**\n\nCheck the ending first, then the intensifier or \"most.\" If the adjective is already comparative or irregular, strip any stacked marker before you tick true.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-11-05",
@@ -118,19 +166,31 @@
         "Of the four rooms, the attic is the more quiet.",
         "His second attempt was better than the first."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — \"Spicy\" correctly forms \"spicier\" for a two-item food comparison.\n\nTip: -y adjectives → -ier / -iest.",
-        "FALSE — With only two coats, use the comparative \"warmer,\" not the superlative \"warmest.\"\n\nTip: Between two → comparative; among many → superlative.",
-        "TRUE — \"Worse\" is the correct irregular comparative of \"bad/ill.\"\n\nTip: bad/ill → worse → worst.",
-        "FALSE — Ranking four rooms needs \"the quietest\" (or \"the most quiet\"), not \"the more quiet.\"\n\nTip: Superlative for a group of three or more.",
-        "TRUE — \"Better than\" correctly compares two attempts.\n\nTip: Two items → better; a whole group → best."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["spicier", "the warmest", "worse", "the more quiet", "better"],
+      "tactical_explanations": [
+        "**A) This curry is spicier than the mild version on the menu.**  (true)\n\n\"Spicy\" forms \"spicier\" for a clean two-item food contrast with the mild menu option. The -y → -ier change is standard and needs no \"more.\"\n\n**Tip:** -y adjectives → -ier / -iest.",
+        "**B) Between the two coats, the wool one is the warmest.**  (false)\n\nTrap: only two coats are in play, so the superlative \"the warmest\" overshoots. Repair: \"the wool one is warmer.\" Between two → comparative; among many → superlative.\n\n**Tip:** Between two → comparative; among many → superlative.",
+        "**C) She felt worse after skipping breakfast.**  (true)\n\n\"Worse\" is the correct irregular comparative of bad/ill after skipping breakfast. No \"more\" and no \"worser\" — the form stands alone.\n\n**Tip:** bad/ill → worse → worst.",
+        "**D) Of the four rooms, the attic is the more quiet.**  (false)\n\nTrap: four rooms need a superlative, but \"the more quiet\" is only comparative. Repair: \"the quietest\" (or \"the most quiet\"). Groups of three or more take the highest grade.\n\n**Tip:** Superlative for a group of three or more.",
+        "**E) His second attempt was better than the first.**  (true)\n\n\"Better than the first\" correctly compares two attempts with the irregular comparative. Two items → better; a whole group → best.\n\n**Tip:** Two items → better; a whole group → best."
+      ],
+      "highlights": [
+        "spicier",
+        "the warmest",
+        "worse",
+        "the more quiet",
+        "better"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 5,
       "subsection": "g.11",
-      "solution_overview": "Focus on the two-versus-many rule. \"Between the two\" almost always wants a comparative, while \"of the four\" wants a superlative. Keep irregular worse/better clean."
+      "solution_overview": "Curry heat, two coats, skipped breakfast, four rooms, and two exam attempts — the two-versus-many rule is the headline.\n\n**Part 1: What to watch for.**\n\nFocus on whether the cue phrase compares a pair or ranks a group. \"Between the two\" almost always wants a comparative; \"of the four\" wants a superlative. Keep irregular worse/better clean.\n\n**Part 2: How to decide.**\n\nCircle the quantity words (between two, of four, than the first). Match comparative to pairs and superlative to groups of three or more, then confirm irregular spelling.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-11-06",
@@ -144,19 +204,31 @@
         "She bought the least expensive bike in the shop.",
         "He runs more faster in the evenings than in the mornings."
       ],
-      "answer_key": [true, true, true, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Tidy\" correctly becomes \"tidier\" after a clear-up.\n\nTip: consonant + y → -ier.",
-        "TRUE — Multi-syllable \"popular\" correctly takes \"more … than.\"\n\nTip: Three-syllable adjectives almost always use more/most.",
-        "TRUE — \"Longer than\" correctly compares battery life for two phones.\n\nTip: Duration often uses long / longer / longest.",
-        "TRUE — \"The least expensive\" correctly ranks cost among many bikes.\n\nTip: least + adjective = superlative of inferiority.",
-        "FALSE — \"Faster\" already marks the comparative; delete \"more.\"\n\nTip: Adverbs formed with -er also reject an extra \"more.\""
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
       ],
-      "highlights": ["tidier", "more popular", "longer", "least expensive", "more faster"],
+      "tactical_explanations": [
+        "**A) The kitchen looked tidier after we cleared the counter.**  (true)\n\n\"Tidy\" correctly becomes \"tidier\" after clearing the counter. Consonant + y → -ier is the expected spelling for this short adjective.\n\n**Tip:** consonant + y → -ier.",
+        "**B) This café is more popular than the one by the river.**  (true)\n\nThree-syllable \"popular\" correctly takes \"more … than\" against the riverside café. Long adjectives almost always use more/most rather than -er/-est.\n\n**Tip:** Three-syllable adjectives almost always use more/most.",
+        "**C) My phone battery lasts longer than yours.**  (true)\n\n\"Longer than yours\" cleanly compares battery life for two phones. Duration often rides on long / longer / longest without needing \"more.\"\n\n**Tip:** Duration often uses long / longer / longest.",
+        "**D) She bought the least expensive bike in the shop.**  (true)\n\n\"The least expensive bike in the shop\" correctly ranks cost among many options. Least + adjective is the standard superlative of inferiority.\n\n**Tip:** least + adjective = superlative of inferiority.",
+        "**E) He runs more faster in the evenings than in the mornings.**  (false)\n\nTrap: \"faster\" already marks the comparative, so \"more faster\" doubles it. Repair: \"He runs faster in the evenings than in the mornings.\" -er adverbs reject an extra \"more\" just as adjectives do.\n\n**Tip:** Adverbs formed with -er also reject an extra \"more.\""
+      ],
+      "highlights": [
+        "tidier",
+        "more popular",
+        "longer",
+        "least expensive",
+        "more faster"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 6,
       "subsection": "g.11",
-      "solution_overview": "Most sentences here are clean models. The one clear fault is stacking \"more\" on an -er adverb. Treat least + adjective as the standard way to rank \"smallest amount of\" a quality."
+      "solution_overview": "A tidier kitchen, café popularity, phone batteries, bike prices, and evening runs — mostly clean models with one stacked adverb trap.\n\n**Part 1: What to watch for.**\n\nMost lines show healthy -ier, more + long adjective, -er for duration, and least + adjective for ranking cost. The clear fault is stacking \"more\" on an -er adverb such as \"faster.\"\n\n**Part 2: How to decide.**\n\nTreat the first four as reference forms. On the last, strip the extra \"more\" so only one comparative marker remains before you mark true.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-11-07",
@@ -170,19 +242,31 @@
         "She felt more happier after the phone call.",
         "This is the worst film I have seen all year."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — \"Deeper than\" correctly compares two stretches of the river.\n\nTip: One-syllable adjectives take -er for two-item contrasts.",
-        "FALSE — Only two recipes → use \"simpler,\" not the superlative \"the simplest.\"\n\nTip: Of/between two → comparative.",
-        "TRUE — \"Friendly\" correctly forms \"friendlier\" (\"more friendly\" is also acceptable).\n\nTip: -y adjectives commonly take -ier.",
-        "FALSE — \"Happier\" already includes the comparative; remove \"more.\"\n\nTip: happy → happier → happiest.",
-        "TRUE — \"The worst\" is the correct irregular superlative.\n\nTip: bad → worse → worst."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["deeper", "the simplest", "friendlier", "more happier", "the worst"],
+      "tactical_explanations": [
+        "**A) The river is deeper here than near the bridge.**  (true)\n\n\"Deeper than near the bridge\" correctly compares two stretches of the same river. One-syllable adjectives take -er for two-item contrasts.\n\n**Tip:** One-syllable adjectives take -er for two-item contrasts.",
+        "**B) Of the two recipes, this one is the simplest.**  (false)\n\nTrap: only two recipes are named, so \"the simplest\" is the wrong grade. Repair: \"this one is simpler.\" Of/between two → comparative, not superlative.\n\n**Tip:** Of/between two → comparative.",
+        "**C) Their dog is friendlier than ours.**  (true)\n\n\"Friendly\" correctly forms \"friendlier\" (\"more friendly\" is also acceptable). The -y → -ier pattern is natural for this personality comparison.\n\n**Tip:** -y adjectives commonly take -ier.",
+        "**D) She felt more happier after the phone call.**  (false)\n\nTrap: \"happier\" already includes the comparative, so \"more happier\" doubles the mark. Repair: \"She felt happier after the phone call.\" Remember happy → happier → happiest.\n\n**Tip:** happy → happier → happiest.",
+        "**E) This is the worst film I have seen all year.**  (true)\n\n\"The worst film I have seen all year\" correctly uses the irregular superlative for a broad ranking. Bad → worse → worst needs no extras.\n\n**Tip:** bad → worse → worst."
+      ],
+      "highlights": [
+        "deeper",
+        "the simplest",
+        "friendlier",
+        "more happier",
+        "the worst"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 7,
       "subsection": "g.11",
-      "solution_overview": "Watch \"of the two\" — that phrase almost always blocks a superlative. Keep -ier spelling tidy and leave irregular worst alone."
+      "solution_overview": "River depth, two recipes, friendly dogs, a happy phone call, and a miserable film — watch \"of the two\" especially.\n\n**Part 1: What to watch for.**\n\n\"Of the two\" almost always blocks a superlative. Keep -ier spelling tidy on friendlier/happier, and leave irregular worst alone once the grade of comparison is right.\n\n**Part 2: How to decide.**\n\nIf the cue says two, demand a comparative. If the cue ranks a year of films or a clear group, allow the superlative. Then check for stacked \"more\" on -ier forms.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-11-08",
@@ -196,19 +280,31 @@
         "Among her hobbies, pottery is the most relaxing.",
         "We walked further than planned before turning back."
       ],
-      "answer_key": [true, true, false, true, true],
-      "tactical_explanations": [
-        "TRUE — \"Less exciting than\" correctly compares two episodes with a longer adjective.\n\nTip: less + adjective + than = comparative of inferiority.",
-        "TRUE — \"Elder\" is a traditional comparative used for people in a family pair; \"the elder of the two\" is fine.\n\nTip: elder/eldest mainly for family; older/oldest for general age.",
-        "FALSE — Spelling and form fail: write \"bigger than,\" not \"bigest than.\"\n\nTip: big → bigger → biggest (double g); and use comparative with than.",
-        "TRUE — \"The most relaxing\" correctly ranks one hobby among several.\n\nTip: -ing adjectives of three syllables take most.",
-        "TRUE — \"Further than\" is a standard irregular comparative of distance/extent.\n\nTip: farther/further both work for physical distance in modern English."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
       ],
-      "highlights": ["less exciting", "the elder", "bigest", "most relaxing", "further"],
+      "tactical_explanations": [
+        "**A) The second episode was less exciting than the pilot.**  (true)\n\n\"Less exciting than the pilot\" correctly softens a longer adjective across two episodes. Less + adjective + than is the comparative of inferiority.\n\n**Tip:** less + adjective + than = comparative of inferiority.",
+        "**B) He is the elder of the two cousins.**  (true)\n\n\"The elder of the two cousins\" is a traditional family comparative for people in a pair. Elder/eldest mainly for family; older/oldest for general age — both patterns are known in exams.\n\n**Tip:** elder/eldest mainly for family; older/oldest for general age.",
+        "**C) This rucksack is bigest than I need for a day hike.**  (false)\n\nTrap: spelling and grade both fail — \"bigest than\" should be \"bigger than.\" Repair: double the g and use comparative with than: big → bigger → biggest.\n\n**Tip:** big → bigger → biggest (double g); and use comparative with than.",
+        "**D) Among her hobbies, pottery is the most relaxing.**  (true)\n\n\"The most relaxing\" correctly ranks pottery among several hobbies. -ing adjectives of three syllables take most, not -est.\n\n**Tip:** -ing adjectives of three syllables take most.",
+        "**E) We walked further than planned before turning back.**  (true)\n\n\"Further than planned\" is a standard irregular comparative of distance/extent. Farther/further both work for physical distance in modern English.\n\n**Tip:** farther/further both work for physical distance in modern English."
+      ],
+      "highlights": [
+        "less exciting",
+        "the elder",
+        "bigest",
+        "most relaxing",
+        "further"
+      ],
       "difficulty_level": "2/5",
       "sort_order": 8,
       "subsection": "g.11",
-      "solution_overview": "This set adds less + adjective, family elder, and the spelling trap big → bigger. Read than-clauses carefully: they want a comparative, not a mangled superlative spelling."
+      "solution_overview": "TV episodes, cousins, a day-hike rucksack, hobbies, and an overlong walk — less + adjective, family elder, and the big/bigger spelling trap.\n\n**Part 1: What to watch for.**\n\nThis set adds comparative of inferiority (less + adjective), the family form elder, and the spelling trap big → bigger (not \"bigest\"). Read than-clauses carefully: they want a comparative, not a mangled superlative.\n\n**Part 2: How to decide.**\n\nCheck the preposition and ending on each line. Than + misspelled -est is an automatic false; less + long adjective + than is usually fine.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-11-09",
@@ -222,19 +318,31 @@
         "He is not as tall as his older sister.",
         "The sequel was as good than the original."
       ],
-      "answer_key": [true, false, true, true, false],
-      "tactical_explanations": [
-        "TRUE — Equality uses \"as + adjective + as.\"\n\nTip: as … as compares sameness, not ranking.",
-        "FALSE — After \"as neat\" you need \"as,\" not \"than\": \"as neat as.\"\n\nTip: than belongs with comparatives; as … as marks equality.",
-        "TRUE — \"As peaceful as\" correctly states equal calm.\n\nTip: Keep both as-markers; dropping the second one breaks the pattern.",
-        "TRUE — \"Not as tall as\" is the standard negative equality pattern.\n\nTip: not as … as ≈ less … than in everyday meaning.",
-        "FALSE — Replace \"than\" with \"as\": \"as good as the original.\"\n\nTip: Never mix as … than."
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
       ],
-      "highlights": ["as strong as", "as neat than", "as peaceful as", "not as tall as", "as good than"],
+      "tactical_explanations": [
+        "**A) This tea is as strong as the one from the market stall.**  (true)\n\n\"As strong as the one from the market stall\" correctly states equal strength. As … as compares sameness, not ranking, and both markers are present.\n\n**Tip:** as … as compares sameness, not ranking.",
+        "**B) Her handwriting is as neat than her brother's.**  (false)\n\nTrap: after \"as neat\" you need \"as,\" not \"than.\" Repair: \"as neat as her brother's.\" Than belongs with comparatives; as … as marks equality.\n\n**Tip:** than belongs with comparatives; as … as marks equality.",
+        "**C) The park feels as peaceful as it did in spring.**  (true)\n\n\"As peaceful as it did in spring\" correctly keeps both as-markers for equal calm. Dropping the second as would break the pattern.\n\n**Tip:** Keep both as-markers; dropping the second one breaks the pattern.",
+        "**D) He is not as tall as his older sister.**  (true)\n\n\"Not as tall as his older sister\" is the standard negative equality pattern. In everyday meaning it is close to \"less tall than,\" but the frame stays as … as.\n\n**Tip:** not as … as ≈ less … than in everyday meaning.",
+        "**E) The sequel was as good than the original.**  (false)\n\nTrap: \"as good than\" mixes the two systems. Repair: \"as good as the original.\" Never write as … than.\n\n**Tip:** Never mix as … than."
+      ],
+      "highlights": [
+        "as strong as",
+        "as neat than",
+        "as peaceful as",
+        "not as tall as",
+        "as good than"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 9,
       "subsection": "g.11",
-      "solution_overview": "Equality comparisons live in the as … as frame. If you see than after as + adjective, the sentence is wrong — swap than for the second as."
+      "solution_overview": "Tea strength, handwriting, a peaceful park, height in the family, and a film sequel — equality lives in the as … as frame.\n\n**Part 1: What to watch for.**\n\nEquality comparisons use as + adjective + as. If than sneaks in after as + adjective, the sentence is wrong — swap than for the second as. Negative equality (not as … as) is still the same frame.\n\n**Part 2: How to decide.**\n\nScan for both as-markers. A lone as before the adjective with than after it is the classic trap; rebuild as … as before you mark true.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-11-10",
@@ -248,19 +356,31 @@
         "He speaks English better than I expected.",
         "They arrived slightly earlier than the others."
       ],
-      "answer_key": [true, true, false, true, true],
-      "tactical_explanations": [
-        "TRUE — Intensifier \"much\" correctly strengthens \"more carefully.\"\n\nTip: much / far / a lot can boost comparatives.",
-        "TRUE — \"Far heavier\" correctly intensifies a short comparative.\n\nTip: far + -er is natural and strong.",
-        "FALSE — \"A lot more harder\" doubles the comparative. Use \"a lot harder\" or \"much harder.\"\n\nTip: Intensifiers sit before one comparative form, not two.",
-        "TRUE — \"Better than\" correctly compares performance; \"I expected\" is a fine clause after than.\n\nTip: Irregular better needs no \"more.\"",
-        "TRUE — \"Slightly earlier\" correctly softens the comparative of \"early.\"\n\nTip: slightly / a bit / rather can modify comparatives."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
       ],
-      "highlights": ["much more carefully", "far heavier", "a lot more harder", "better", "slightly earlier"],
+      "tactical_explanations": [
+        "**A) She drives much more carefully than she did last year.**  (true)\n\n\"Much more carefully\" correctly strengthens the comparative of a -ly adverb. Much / far / a lot can boost a single comparative without changing its form.\n\n**Tip:** much / far / a lot can boost comparatives.",
+        "**B) This bag is far heavier than it looks.**  (true)\n\n\"Far heavier\" correctly intensifies a short -er comparative. Far + -er is natural and strong for surprise weight.\n\n**Tip:** far + -er is natural and strong.",
+        "**C) The climb was a lot more harder than the map suggested.**  (false)\n\nTrap: \"a lot more harder\" doubles the comparative. Repair: \"a lot harder\" or \"much harder.\" Intensifiers sit before one comparative form, not two.\n\n**Tip:** Intensifiers sit before one comparative form, not two.",
+        "**D) He speaks English better than I expected.**  (true)\n\n\"Better than I expected\" correctly compares performance with the irregular comparative; the clause after than is fine. Better needs no \"more.\"\n\n**Tip:** Irregular better needs no \"more.\"",
+        "**E) They arrived slightly earlier than the others.**  (true)\n\n\"Slightly earlier\" correctly softens the comparative of \"early.\" Slightly / a bit / rather can modify comparatives without adding a second marker.\n\n**Tip:** slightly / a bit / rather can modify comparatives."
+      ],
+      "highlights": [
+        "much more carefully",
+        "far heavier",
+        "a lot more harder",
+        "better",
+        "slightly earlier"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 10,
       "subsection": "g.11",
-      "solution_overview": "Intensifiers (much, far, a lot, slightly) are fine before a single comparative. They become wrong the moment they sit beside a second comparative marker such as more + -er."
+      "solution_overview": "Careful driving, a deceptively heavy bag, a hard climb, better English, and an early arrival — intensifiers meet single comparative forms.\n\n**Part 1: What to watch for.**\n\nIntensifiers such as much, far, a lot, and slightly are fine before one comparative. They become wrong the moment they sit beside a second marker such as more + -er.\n\n**Part 2: How to decide.**\n\nAllow the booster only if exactly one comparative remains. If you see \"a lot more harder,\" strip either \"more\" or the -er ending — never keep both.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-11-11",
@@ -274,19 +394,31 @@
         "He is one of the tallest player on the team.",
         "That was one of the funnier jokes in the show."
       ],
-      "answer_key": [true, false, true, false, false],
-      "tactical_explanations": [
-        "TRUE — \"One of the most + adjective + plural noun\" is the correct pattern.\n\nTip: one of the + superlative + plural.",
-        "FALSE — After \"one of the\" you need a superlative: \"one of the smartest students.\"\n\nTip: one of the blocks ordinary comparatives.",
-        "TRUE — \"One of the best meals\" correctly pairs irregular superlative with plural.\n\nTip: best / worst fit the same frame.",
-        "FALSE — \"One of\" requires a plural noun: \"one of the tallest players.\"\n\nTip: one of + plural always.",
-        "FALSE — Use the superlative: \"one of the funniest jokes.\"\n\nTip: Comparative -er forms do not follow \"one of the.\""
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
       ],
-      "highlights": ["one of the most beautiful cities", "one of the smarter", "one of the best meals", "tallest player", "the funnier jokes"],
+      "tactical_explanations": [
+        "**A) Prague is one of the most beautiful cities I have visited.**  (true)\n\n\"One of the most beautiful cities I have visited\" hits all three slots: superlative, plural cities, and the \"one of the\" frame. This is the model pattern.\n\n**Tip:** one of the + superlative + plural.",
+        "**B) She is one of the smarter students in the class.**  (false)\n\nTrap: after \"one of the\" you need a superlative, not comparative \"smarter.\" Repair: \"one of the smartest students in the class.\" The frame blocks ordinary comparatives.\n\n**Tip:** one of the blocks ordinary comparatives.",
+        "**C) This is one of the best meals we have cooked at home.**  (true)\n\n\"One of the best meals\" correctly pairs the irregular superlative with a plural noun. Best / worst fit the same frame as most + adjective.\n\n**Tip:** best / worst fit the same frame.",
+        "**D) He is one of the tallest player on the team.**  (false)\n\nTrap: \"one of\" requires a plural noun, but \"player\" is singular. Repair: \"one of the tallest players on the team.\" Always plural after one of.\n\n**Tip:** one of + plural always.",
+        "**E) That was one of the funnier jokes in the show.**  (false)\n\nTrap: \"funnier\" is comparative, but the frame wants a superlative. Repair: \"one of the funniest jokes in the show.\" Comparative -er forms do not follow \"one of the.\"\n\n**Tip:** Comparative -er forms do not follow \"one of the.\""
+      ],
+      "highlights": [
+        "one of the most beautiful cities",
+        "one of the smarter",
+        "one of the best meals",
+        "tallest player",
+        "the funnier jokes"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 11,
       "subsection": "g.11",
-      "solution_overview": "Remember the fixed frame: one of the + superlative + plural noun. Comparatives and singular nouns after \"one of\" are the usual exam traps."
+      "solution_overview": "Cities, classmates, home-cooked meals, teammates, and jokes — the fixed frame one of the + superlative + plural noun.\n\n**Part 1: What to watch for.**\n\nRemember the package: one of the + superlative + plural noun. Ordinary comparatives and singular nouns after \"one of\" are the usual exam traps.\n\n**Part 2: How to decide.**\n\nCheck three slots every time: \"one of the,\" a true superlative (not -er), and a plural noun. Fail any slot and mark false.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
     },
     {
       "id": "en-g-11-12",
@@ -300,19 +432,31 @@
         "The less we argued, the happier the evening felt.",
         "The sooner you book, the cheaper the tickets will be."
       ],
-      "answer_key": [true, true, false, true, true],
-      "tactical_explanations": [
-        "TRUE — \"The more …, the more …\" correctly links two parallel comparatives.\n\nTip: Keep \"the\" before each comparative in this pattern.",
-        "TRUE — Mixed forms work: \"the harder …, the better …\"\n\nTip: -er and irregular comparatives both fit the frame.",
-        "FALSE — Restore the articles: \"The more she waited, the more anxious she felt.\"\n\nTip: Dropping \"the\" breaks the correlative comparative.",
-        "TRUE — \"The less …, the happier …\" is a valid inferiority pair.\n\nTip: less / fewer can lead the first half.",
-        "TRUE — \"The sooner …, the cheaper …\" is a classic fixed double comparative.\n\nTip: Time and cost often appear in this pattern."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
       ],
-      "highlights": ["The more", "the harder", "More she waited", "The less", "The sooner"],
+      "tactical_explanations": [
+        "**A) The more she practised, the more confident she became.**  (true)\n\n\"The more she practised, the more confident she became\" correctly links two parallel comparatives. Keep \"the\" before each comparative in this pattern.\n\n**Tip:** Keep \"the\" before each comparative in this pattern.",
+        "**B) The harder he trained, the better his times got.**  (true)\n\n\"The harder he trained, the better his times got\" shows that -er and irregular comparatives both fit the frame. The pairing is grammatical and natural.\n\n**Tip:** -er and irregular comparatives both fit the frame.",
+        "**C) More she waited, more anxious she felt.**  (false)\n\nTrap: both articles are missing. Repair: \"The more she waited, the more anxious she felt.\" Dropping \"the\" breaks the correlative comparative.\n\n**Tip:** Dropping \"the\" breaks the correlative comparative.",
+        "**D) The less we argued, the happier the evening felt.**  (true)\n\n\"The less we argued, the happier the evening felt\" is a valid inferiority pair. Less / fewer can lead the first half without trouble.\n\n**Tip:** less / fewer can lead the first half.",
+        "**E) The sooner you book, the cheaper the tickets will be.**  (true)\n\n\"The sooner you book, the cheaper the tickets will be\" is a classic fixed double comparative pairing time with cost. Both halves keep \"the\" + comparative.\n\n**Tip:** Time and cost often appear in this pattern."
+      ],
+      "highlights": [
+        "The more",
+        "the harder",
+        "More she waited",
+        "The less",
+        "The sooner"
+      ],
       "difficulty_level": "3/5",
       "sort_order": 12,
       "subsection": "g.11",
-      "solution_overview": "Correlative comparatives need \"the + comparative\" in both halves. If either \"the\" disappears, rebuild the sentence before you mark it true."
+      "solution_overview": "Practice and confidence, training and times, waiting and anxiety, fewer arguments, early booking — correlative the … the … pairs.\n\n**Part 1: What to watch for.**\n\nCorrelative comparatives need \"the + comparative\" in both halves. Mixed shapes (harder / better, less / happier, sooner / cheaper) are fine; missing \"the\" is not.\n\n**Part 2: How to decide.**\n\nRead left and right of the comma. If either article \"the\" disappears before a comparative, rebuild the correlative before you mark true.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-11-13",
@@ -326,19 +470,31 @@
         "The choir sang better last night than at the rehearsal.",
         "They danced more graceful than the other couple."
       ],
-      "answer_key": [true, true, false, true, false],
-      "tactical_explanations": [
-        "TRUE — \"More skilfully\" correctly forms the comparative of a -ly adverb.\n\nTip: Long adverbs take more/most, not -er.",
-        "TRUE — \"Quicker\" (or \"more quickly\") is acceptable in modern usage for manner here.\n\nTip: Short adverb comparatives often allow -er in everyday English.",
-        "FALSE — Use \"more slowly,\" not \"more slow,\" when modifying the verb speak.\n\nTip: Adjective slow ≠ adverb slowly.",
-        "TRUE — \"Better\" correctly compares how they sang on two occasions.\n\nTip: well → better → best (adverb).",
-        "FALSE — Manner needs \"more gracefully,\" not the adjective \"graceful.\"\n\nTip: After danced/spoke/sang, prefer adverb forms."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
       ],
-      "highlights": ["more skilfully", "quicker", "more slow", "better", "more graceful"],
+      "tactical_explanations": [
+        "**A) She paints more skilfully than anyone else in the club.**  (true)\n\n\"More skilfully\" correctly forms the comparative of a -ly adverb for how she paints. Long adverbs take more/most, not -er.\n\n**Tip:** Long adverbs take more/most, not -er.",
+        "**B) He finished the puzzle quicker than I did.**  (true)\n\n\"Quicker\" (or \"more quickly\") is acceptable in modern usage for manner here. Short adverb comparatives often allow -er in everyday English when finishing a puzzle.\n\n**Tip:** Short adverb comparatives often allow -er in everyday English.",
+        "**C) Please speak more slow so I can follow the recipe.**  (false)\n\nTrap: \"more slow\" uses the adjective where the verb speak needs an adverb. Repair: \"Please speak more slowly so I can follow the recipe.\" Adjective slow ≠ adverb slowly.\n\n**Tip:** Adjective slow ≠ adverb slowly.",
+        "**D) The choir sang better last night than at the rehearsal.**  (true)\n\n\"Better\" correctly compares how the choir sang on two occasions. The adverb chain is well → better → best.\n\n**Tip:** well → better → best (adverb).",
+        "**E) They danced more graceful than the other couple.**  (false)\n\nTrap: manner after danced needs \"more gracefully,\" not the adjective \"graceful.\" Repair: \"They danced more gracefully than the other couple.\" Prefer adverb forms after danced/spoke/sang.\n\n**Tip:** After danced/spoke/sang, prefer adverb forms."
+      ],
+      "highlights": [
+        "more skilfully",
+        "quicker",
+        "more slow",
+        "better",
+        "more graceful"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.11",
-      "solution_overview": "Separate adjective and adverb comparison. When the word modifies a verb (speak, dance, sing), you usually need an adverb comparative — more slowly / more gracefully / better — not a bare adjective."
+      "solution_overview": "Painting, puzzles, recipe instructions, choir night, and a dance floor — separate adjective comparison from adverb comparison.\n\n**Part 1: What to watch for.**\n\nWhen the word modifies a verb (speak, dance, sing), you usually need an adverb comparative — more slowly / more gracefully / better — not a bare adjective. Long -ly adverbs take more/most.\n\n**Part 2: How to decide.**\n\nAsk what is being compared: a person/thing or a manner of action. Manner after a verb almost always wants an adverb form; mark false when an adjective leaks into that slot.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-11-14",
@@ -352,19 +508,31 @@
         "The coastal path is preferable than the inland route.",
         "His answer was different from mine."
       ],
-      "answer_key": [false, true, true, false, true],
-      "tactical_explanations": [
-        "FALSE — Latinate \"superior\" pairs with \"to,\" not \"than\": \"superior to.\"\n\nTip: superior / inferior / preferable → to.",
-        "TRUE — \"Inferior to\" is the correct fixed comparative-like pattern.\n\nTip: Do not rewrite these with -er forms.",
-        "TRUE — \"Preferable to\" correctly states a preference between two options.\n\nTip: preferable to = better as a choice than.",
-        "FALSE — Replace \"than\" with \"to\": \"preferable to the inland route.\"\n\nTip: Preferable never takes than.",
-        "TRUE — \"Different from\" is the standard British exam form.\n\nTip: Treat different from as safe in exams."
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
       ],
-      "highlights": ["superior than", "inferior to", "preferable to", "preferable than", "different from"],
+      "tactical_explanations": [
+        "**A) This jacket is superior than the one I bought last winter.**  (false)\n\nTrap: Latinate \"superior\" pairs with \"to,\" not \"than.\" Repair: \"superior to the one I bought last winter.\" Superior / inferior / preferable → to.\n\n**Tip:** superior / inferior / preferable → to.",
+        "**B) Her design is inferior to the earlier sketch.**  (true)\n\n\"Inferior to the earlier sketch\" is the correct fixed comparative-like pattern. Do not rewrite these with homemade -er forms.\n\n**Tip:** Do not rewrite these with -er forms.",
+        "**C) Fresh pasta is preferable to the dried kind for this sauce.**  (true)\n\n\"Preferable to the dried kind\" correctly states a preference between two pasta options. Preferable to ≈ better as a choice than, but the preposition stays \"to.\"\n\n**Tip:** preferable to = better as a choice than.",
+        "**D) The coastal path is preferable than the inland route.**  (false)\n\nTrap: preferable never takes than. Repair: \"preferable to the inland route.\" Swap than for to and keep the rest.\n\n**Tip:** Preferable never takes than.",
+        "**E) His answer was different from mine.**  (true)\n\n\"Different from mine\" is the standard British exam form. Treat different from as the safe choice in tested writing.\n\n**Tip:** Treat different from as safe in exams."
+      ],
+      "highlights": [
+        "superior than",
+        "inferior to",
+        "preferable to",
+        "preferable than",
+        "different from"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 14,
       "subsection": "g.11",
-      "solution_overview": "Some comparison words never take than. Superior, inferior, and preferable lock to \"to.\" Learn those fixed prepositions separately from ordinary -er / more patterns."
+      "solution_overview": "Jackets, sketches, pasta, coastal paths, and different answers — Latinate comparison words that lock to fixed prepositions.\n\n**Part 1: What to watch for.**\n\nSome comparison words never take than. Superior, inferior, and preferable lock to \"to.\" Learn those fixed prepositions separately from ordinary -er / more patterns. Different from is the safe exam form.\n\n**Part 2: How to decide.**\n\nWhen you see superior/inferior/preferable, demand \"to.\" Than after those adjectives is an automatic false; ordinary -er comparatives still use than as usual.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-11-15",
@@ -378,19 +546,31 @@
         "He drinks less coffee than he used to.",
         "There is fewer traffic on this road after nine."
       ],
-      "answer_key": [true, true, false, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Fewer people\" correctly uses fewer with a countable plural.\n\nTip: fewer + countable; less + uncountable.",
-        "TRUE — \"Less time\" correctly pairs with uncountable time.\n\nTip: time, money, traffic, and advice usually take less.",
-        "FALSE — \"Mistakes\" is countable; write \"fewer mistakes.\"\n\nTip: If you can count them, prefer fewer in careful English.",
-        "TRUE — \"Less coffee\" correctly treats coffee as an uncountable amount.\n\nTip: less + mass noun.",
-        "FALSE — \"Traffic\" is uncountable; use \"less traffic,\" not \"fewer traffic.\"\n\nTip: fewer needs a plural countable noun."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
       ],
-      "highlights": ["fewer people", "less time", "less mistakes", "less coffee", "fewer traffic"],
+      "tactical_explanations": [
+        "**A) There were fewer people at the market than on Saturday.**  (true)\n\n\"Fewer people\" correctly uses fewer with a countable plural at the market. Fewer + countable; less + uncountable is the core split.\n\n**Tip:** fewer + countable; less + uncountable.",
+        "**B) We had less time than we needed to catch the ferry.**  (true)\n\n\"Less time\" correctly pairs with uncountable time before the ferry. Time, money, traffic, and advice usually take less.\n\n**Tip:** time, money, traffic, and advice usually take less.",
+        "**C) She made less mistakes on the second draft.**  (false)\n\nTrap: \"mistakes\" is countable, so \"less mistakes\" is wrong in careful English. Repair: \"fewer mistakes on the second draft.\" If you can count them, prefer fewer.\n\n**Tip:** If you can count them, prefer fewer in careful English.",
+        "**D) He drinks less coffee than he used to.**  (true)\n\n\"Less coffee\" correctly treats coffee as an uncountable amount. Less + mass noun is the natural pairing for drinks measured as volume.\n\n**Tip:** less + mass noun.",
+        "**E) There is fewer traffic on this road after nine.**  (false)\n\nTrap: \"traffic\" is uncountable, so \"fewer traffic\" fails. Repair: \"less traffic on this road after nine.\" Fewer needs a plural countable noun.\n\n**Tip:** fewer needs a plural countable noun."
+      ],
+      "highlights": [
+        "fewer people",
+        "less time",
+        "less mistakes",
+        "less coffee",
+        "fewer traffic"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 15,
       "subsection": "g.11",
-      "solution_overview": "Less and fewer are comparative quantity words. Decide first whether the noun is countable plural or an uncountable mass, then pick fewer or less."
+      "solution_overview": "Market crowds, ferry clocks, draft mistakes, coffee habits, and road traffic — less versus fewer by noun type.\n\n**Part 1: What to watch for.**\n\nLess and fewer are comparative quantity words. Decide first whether the noun is countable plural or an uncountable mass, then pick fewer or less.\n\n**Part 2: How to decide.**\n\nIf you can count separate units (people, mistakes), prefer fewer. If you measure a mass (time, coffee, traffic), use less. That single test decides most of A–E.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-11-16",
@@ -404,19 +584,31 @@
         "She felt worse and worse during the long flight.",
         "The puzzle grew increasingly more difficult toward the end."
       ],
-      "answer_key": [true, false, true, true, false],
-      "tactical_explanations": [
-        "TRUE — \"Busier and busier\" correctly shows gradual increase with a repeated comparative.\n\nTip: Adj-er and adj-er = steadily more.",
-        "FALSE — \"More and more louder\" doubles the marking. Use \"louder and louder\" or \"more and more loud.\"\n\nTip: Pick one comparative system and stick to it.",
-        "TRUE — \"Higher and higher\" correctly intensifies a short comparative.\n\nTip: Repeat the -er form for gradual change.",
-        "TRUE — \"Worse and worse\" correctly repeats the irregular comparative.\n\nTip: Irregulars can double the same way: better and better, worse and worse.",
-        "FALSE — \"Increasingly\" already means \"more and more,\" so \"increasingly more difficult\" is redundant. Prefer \"increasingly difficult\" or \"more and more difficult.\"\n\nTip: Do not stack increasingly with more."
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
       ],
-      "highlights": ["busier and busier", "more and more louder", "higher and higher", "worse and worse", "increasingly more"],
+      "tactical_explanations": [
+        "**A) My week got busier and busier as the festival approached.**  (true)\n\n\"Busier and busier\" correctly shows gradual increase with a repeated comparative as the festival nears. Adj-er and adj-er = steadily more.\n\n**Tip:** Adj-er and adj-er = steadily more.",
+        "**B) The music grew more and more louder near the stage.**  (false)\n\nTrap: \"more and more louder\" doubles the marking. Repair: \"louder and louder\" or \"more and more loud.\" Pick one comparative system and stick to it.\n\n**Tip:** Pick one comparative system and stick to it.",
+        "**C) The waves became higher and higher before the storm.**  (true)\n\n\"Higher and higher\" correctly intensifies a short comparative as the waves build. Repeat the -er form for gradual change.\n\n**Tip:** Repeat the -er form for gradual change.",
+        "**D) She felt worse and worse during the long flight.**  (true)\n\n\"Worse and worse\" correctly repeats the irregular comparative on the long flight. Irregulars can double the same way: better and better, worse and worse.\n\n**Tip:** Irregulars can double the same way: better and better, worse and worse.",
+        "**E) The puzzle grew increasingly more difficult toward the end.**  (false)\n\nTrap: \"increasingly\" already means \"more and more,\" so \"increasingly more difficult\" is redundant. Repair: \"increasingly difficult\" or \"more and more difficult.\" Do not stack increasingly with more.\n\n**Tip:** Do not stack increasingly with more."
+      ],
+      "highlights": [
+        "busier and busier",
+        "more and more louder",
+        "higher and higher",
+        "worse and worse",
+        "increasingly more"
+      ],
       "difficulty_level": "4/5",
       "sort_order": 16,
       "subsection": "g.11",
-      "solution_overview": "Gradual-change patterns either repeat one comparative (louder and louder) or use more and more + base adjective. Mixing systems — or adding increasingly to more — creates double marking."
+      "solution_overview": "A busy festival week, stage volume, rising waves, a long flight, and a toughening puzzle — gradual-change patterns.\n\n**Part 1: What to watch for.**\n\nGradual change either repeats one comparative (louder and louder) or uses more and more + base adjective. Mixing systems — or adding increasingly to more — creates double marking.\n\n**Part 2: How to decide.**\n\nPick one system and stick to it. If you see \"more and more\" beside an -er form, or \"increasingly more,\" strip the redundancy before marking true.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
     },
     {
       "id": "en-g-11-17",
@@ -430,19 +622,31 @@
         "This route is the shortest of any other path to the lake.",
         "He plays the piano better than anyone else in the family."
       ],
-      "answer_key": [true, true, false, false, true],
-      "tactical_explanations": [
-        "TRUE — \"No other … as … as\" correctly sets up a unique equality comparison.\n\nTip: no other + as … as ≈ this is the cleanest.",
-        "TRUE — \"Cheaper than any other\" correctly excludes the rest of the set.\n\nTip: any other keeps the compared item outside the group.",
-        "FALSE — Include herself out of the group: \"taller than any other girl\" (or \"anyone else\").\n\nTip: Without other/else, the sentence oddly includes her in \"any girl.\"",
-        "FALSE — Do not mix \"the shortest\" with \"of any other.\" Prefer \"the shortest path\" or \"shorter than any other path.\"\n\nTip: Superlative and \"any other\" usually fight each other.",
-        "TRUE — \"Better than anyone else\" correctly uses else to exclude him.\n\nTip: else / other prevents logical self-comparison."
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
       ],
-      "highlights": ["as clean as", "any other place", "any girl", "shortest of any other", "anyone else"],
+      "tactical_explanations": [
+        "**A) No other beach on the island is as clean as this one.**  (true)\n\n\"No other beach on the island is as clean as this one\" correctly sets up a unique equality comparison. No other + as … as ≈ this is the cleanest.\n\n**Tip:** no other + as … as ≈ this is the cleanest.",
+        "**B) This hostel is cheaper than any other place we checked.**  (true)\n\n\"Cheaper than any other place we checked\" correctly excludes the rest of the set. Any other keeps the compared hostel outside the group.\n\n**Tip:** any other keeps the compared item outside the group.",
+        "**C) She is taller than any girl in her class.**  (false)\n\nTrap: without other/else, she remains inside \"any girl in her class.\" Repair: \"taller than any other girl\" (or \"anyone else\"). Exclusion words prevent logical self-comparison.\n\n**Tip:** Without other/else, the sentence oddly includes her in \"any girl.\"",
+        "**D) This route is the shortest of any other path to the lake.**  (false)\n\nTrap: do not mix \"the shortest\" with \"of any other.\" Repair: \"the shortest path\" or \"shorter than any other path to the lake.\" Superlative and \"any other\" usually fight each other.\n\n**Tip:** Superlative and \"any other\" usually fight each other.",
+        "**E) He plays the piano better than anyone else in the family.**  (true)\n\n\"Better than anyone else in the family\" correctly uses else to exclude him from the comparison group. Else / other prevents logical self-comparison.\n\n**Tip:** else / other prevents logical self-comparison."
+      ],
+      "highlights": [
+        "as clean as",
+        "any other place",
+        "any girl",
+        "shortest of any other",
+        "anyone else"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.11",
-      "solution_overview": "Advanced comparison often hinges on exclusion words: other and else. Without them, a person can be compared with a group that still includes that person — a classic logic trap."
+      "solution_overview": "Island beaches, hostels, classroom height, lake paths, and family piano — advanced comparison hinges on exclusion words.\n\n**Part 1: What to watch for.**\n\nOther and else keep the compared person or thing outside the group. Without them, someone can be compared with a set that still includes that person — a classic logic trap. Superlative plus \"any other\" usually fights itself.\n\n**Part 2: How to decide.**\n\nCheck whether the compared item is excluded. Add other/else when needed, and do not glue \"the shortest\" to \"of any other\" in the same breath.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-11-18",
@@ -456,19 +660,31 @@
         "He would rather to leave early than miss the last train.",
         "We prefer cooking at home rather than ordering takeaway."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — \"Prefer A to B\" is the standard comparative preference pattern.\n\nTip: prefer + noun/gerund + to + noun/gerund.",
-        "FALSE — Prefer takes \"to,\" not \"than\": \"prefers tea to coffee.\"\n\nTip: prefer … than is almost always wrong.",
-        "TRUE — \"Would rather … than …\" correctly contrasts two base-verb options.\n\nTip: would rather + bare infinitive + than + bare infinitive.",
-        "FALSE — After \"would rather\" use the bare infinitive: \"would rather leave,\" not \"would rather to leave.\"\n\nTip: Delete to after would rather.",
-        "TRUE — \"Prefer … rather than …\" is an accepted alternative to prefer … to … with parallel -ing forms.\n\nTip: Keep the two sides parallel (cooking / ordering)."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["prefer walking to", "prefers tea than", "would rather stay", "would rather to leave", "prefer cooking"],
+      "tactical_explanations": [
+        "**A) I prefer walking to cycling when the weather is mild.**  (true)\n\n\"Prefer walking to cycling\" is the standard comparative preference pattern with parallel gerunds. Prefer + noun/gerund + to + noun/gerund.\n\n**Tip:** prefer + noun/gerund + to + noun/gerund.",
+        "**B) She prefers tea than coffee in the morning.**  (false)\n\nTrap: prefer takes \"to,\" not \"than.\" Repair: \"prefers tea to coffee in the morning.\" Prefer … than is almost always wrong.\n\n**Tip:** prefer … than is almost always wrong.",
+        "**C) They would rather stay in than go out tonight.**  (true)\n\n\"Would rather stay in than go out tonight\" correctly contrasts two base-verb options. Would rather + bare infinitive + than + bare infinitive.\n\n**Tip:** would rather + bare infinitive + than + bare infinitive.",
+        "**D) He would rather to leave early than miss the last train.**  (false)\n\nTrap: after \"would rather\" use the bare infinitive, not \"to leave.\" Repair: \"would rather leave early than miss the last train.\" Delete to after would rather.\n\n**Tip:** Delete to after would rather.",
+        "**E) We prefer cooking at home rather than ordering takeaway.**  (true)\n\n\"Prefer cooking at home rather than ordering takeaway\" is an accepted alternative with parallel -ing forms. Keep the two sides parallel (cooking / ordering).\n\n**Tip:** Keep the two sides parallel (cooking / ordering)."
+      ],
+      "highlights": [
+        "prefer walking to",
+        "prefers tea than",
+        "would rather stay",
+        "would rather to leave",
+        "prefer cooking"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.11",
-      "solution_overview": "Preference structures are cousins of comparatives: prefer A to B, and would rather A than B. Watch the preposition (to, not than) and the bare infinitive after would rather."
+      "solution_overview": "Walking versus cycling, tea versus coffee, stay-in versus go-out, early trains, and home cooking — preference structures as cousins of comparatives.\n\n**Part 1: What to watch for.**\n\nPreference patterns are prefer A to B, and would rather A than B. Watch the preposition (to, not than after prefer) and the bare infinitive after would rather (no \"to\").\n\n**Part 2: How to decide.**\n\nName the structure first. Prefer wants to; would rather wants than plus a base verb. Parallel -ing forms keep prefer … rather than … tidy.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-11-19",
@@ -482,19 +698,31 @@
         "The second half was half as long than the opening act.",
         "Today feels slightly less humid than yesterday."
       ],
-      "answer_key": [true, false, true, false, true],
-      "tactical_explanations": [
-        "TRUE — \"Nowhere near as … as\" correctly intensifies a negative equality comparison.\n\nTip: nowhere near as / not nearly as + adjective + as.",
-        "FALSE — Keep the as … as frame: \"not nearly as steep as …,\" not \"than.\"\n\nTip: Intensifiers do not change the need for a second as.",
-        "TRUE — \"Twice as large as\" correctly multiplies an equality comparison.\n\nTip: twice / three times + as + adjective + as.",
-        "FALSE — Write \"half as long as,\" not \"half as long than.\"\n\nTip: Multipliers still need as … as.",
-        "TRUE — \"Slightly less humid than\" correctly softens a comparative of inferiority.\n\nTip: less + adjective + than remains available beside as … as patterns."
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
       ],
-      "highlights": ["nowhere near as busy as", "as steep than", "twice as large as", "half as long than", "less humid"],
+      "tactical_explanations": [
+        "**A) The new café is nowhere near as busy as the old one used to be.**  (true)\n\n\"Nowhere near as busy as the old one used to be\" correctly intensifies a negative equality comparison. Nowhere near as / not nearly as + adjective + as.\n\n**Tip:** nowhere near as / not nearly as + adjective + as.",
+        "**B) This trail is not nearly as steep than the guidebook claimed.**  (false)\n\nTrap: keep the as … as frame — \"not nearly as steep as the guidebook claimed,\" not \"than.\" Intensifiers do not cancel the need for a second as.\n\n**Tip:** Intensifiers do not change the need for a second as.",
+        "**C) Her second cake was twice as large as the first.**  (true)\n\n\"Twice as large as the first\" correctly multiplies an equality comparison. Twice / three times + as + adjective + as is the fixed scale pattern.\n\n**Tip:** twice / three times + as + adjective + as.",
+        "**D) The second half was half as long than the opening act.**  (false)\n\nTrap: write \"half as long as,\" not \"half as long than.\" Multipliers still need as … as even when the idea is reduction.\n\n**Tip:** Multipliers still need as … as.",
+        "**E) Today feels slightly less humid than yesterday.**  (true)\n\n\"Slightly less humid than yesterday\" correctly softens a comparative of inferiority. Less + adjective + than remains available beside as … as patterns.\n\n**Tip:** less + adjective + than remains available beside as … as patterns."
+      ],
+      "highlights": [
+        "nowhere near as busy as",
+        "as steep than",
+        "twice as large as",
+        "half as long than",
+        "less humid"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 19,
       "subsection": "g.11",
-      "solution_overview": "Scaled equality (twice as, half as, not nearly as, nowhere near as) still needs a closing as. Than only returns when you switch to a true comparative such as less … than."
+      "solution_overview": "Busy cafés, steep trails, oversized cakes, show lengths, and humidity — scaled equality still needs a closing as.\n\n**Part 1: What to watch for.**\n\nScaled equality (twice as, half as, not nearly as, nowhere near as) still needs a closing as. Than only returns when you switch to a true comparative such as less … than.\n\n**Part 2: How to decide.**\n\nIf the line opens with twice/half/not nearly/nowhere near + as, demand a matching as later. Replace any than in that slot before you mark true.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-11-20",
@@ -508,19 +736,31 @@
         "He is easily the funniest host on the late-night shows.",
         "That was by far a better concert than the one in March."
       ],
-      "answer_key": [true, true, false, true, true],
-      "tactical_explanations": [
-        "TRUE — \"Of all … the freshest\" correctly pairs a group phrase with a superlative.\n\nTip: of all / among all → superlative.",
-        "TRUE — \"By far the most organised\" correctly intensifies a superlative.\n\nTip: by far / easily / much the + superlative.",
-        "FALSE — With \"much the,\" use a superlative: \"much the hardest,\" not \"much the harder.\"\n\nTip: much the + -est / most …",
-        "TRUE — \"Easily the funniest\" correctly strengthens a superlative ranking.\n\nTip: easily the + superlative is common in speech and exams.",
-        "TRUE — \"By far a better … than\" can intensify a comparative when two concerts are compared.\n\nTip: by far works with both superlatives and clear two-item comparatives."
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
       ],
-      "highlights": ["the freshest", "by far the most organised", "much the harder", "easily the funniest", "by far a better"],
+      "tactical_explanations": [
+        "**A) Of all the local markets, this one sells the freshest fruit.**  (true)\n\n\"Of all the local markets, this one sells the freshest fruit\" correctly pairs a group phrase with a superlative. Of all / among all → superlative.\n\n**Tip:** of all / among all → superlative.",
+        "**B) She is by far the most organised person in our flatshare.**  (true)\n\n\"By far the most organised person in our flatshare\" correctly intensifies a superlative. By far / easily / much the + superlative is the usual package.\n\n**Tip:** by far / easily / much the + superlative.",
+        "**C) This crossword is much the harder I have tried this month.**  (false)\n\nTrap: with \"much the,\" use a superlative — \"much the hardest,\" not \"much the harder.\" Repair the grade: much the + -est / most …\n\n**Tip:** much the + -est / most …",
+        "**D) He is easily the funniest host on the late-night shows.**  (true)\n\n\"Easily the funniest host on the late-night shows\" correctly strengthens a superlative ranking. Easily the + superlative is common in speech and exams.\n\n**Tip:** easily the + superlative is common in speech and exams.",
+        "**E) That was by far a better concert than the one in March.**  (true)\n\n\"By far a better concert than the one in March\" can intensify a comparative when exactly two concerts are compared. By far works with both superlatives and clear two-item comparatives.\n\n**Tip:** by far works with both superlatives and clear two-item comparatives."
+      ],
+      "highlights": [
+        "the freshest",
+        "by far the most organised",
+        "much the harder",
+        "easily the funniest",
+        "by far a better"
+      ],
       "difficulty_level": "5/5",
       "sort_order": 20,
       "subsection": "g.11",
-      "solution_overview": "Final polish: intensifiers like by far, easily, and much the usually lock onto superlatives. If the sentence clearly compares only two items, a comparative after by far can still work — but \"much the harder\" is the wrong grade of comparison."
+      "solution_overview": "Local markets, organised flatmates, tough crosswords, late-night hosts, and concerts — intensifiers locked onto the right grade of comparison.\n\n**Part 1: What to watch for.**\n\nFinal polish: intensifiers like by far, easily, and much the usually lock onto superlatives. If the sentence clearly compares only two items, a comparative after by far can still work — but \"much the harder\" is the wrong grade.\n\n**Part 2: How to decide.**\n\nMatch the booster to the comparison grade. Of all / among → superlative; a clear pair after by far may keep a comparative. Reject \"much the\" + comparative.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     }
   ]
 }
