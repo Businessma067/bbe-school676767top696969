@@ -296,7 +296,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                                     .filter(({ c }) => c.subsection === sub.id);
                                   if (subTasks.length === 0) return null;
                                   const subKey = `${ch.key}:${sub.id}`;
-                                  const subOpen = expandedSub[subKey] ?? true;
+                                  const subOpen = expandedSub[subKey] ?? false;
                                   const subDone = subTasks.filter(({ c }) =>
                                     progress.passed.includes(c.id),
                                   ).length;

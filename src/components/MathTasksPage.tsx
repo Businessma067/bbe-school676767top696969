@@ -251,7 +251,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                   .map((c, i) => ({ c, i }))
                                   .filter(({ c }) => c.subsection === sub.id);
                                 const subKey = `${ch.num}:${sub.id}`;
-                                const subOpen = expandedSub[subKey] ?? true;
+                                const subOpen = expandedSub[subKey] ?? false;
                                 const subDone = subTasks.filter(({ c }) =>
                                   progress.passed.includes(c.id),
                                 ).length;
