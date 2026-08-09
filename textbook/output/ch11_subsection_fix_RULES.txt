@@ -20,9 +20,13 @@ CONTENT RULES (mandatory for every field: given, formulas, steps, explanations, 
 
 3. Split bullet lists with newline before each •. Fix smash: "9years•Tranche2" → "9 years.\\n• Tranche 2: ..."
 
-4. Currency is prose $1,000 (with comma) — NOT inside KaTeX. Variables use $a$, $k$, $f_n$.
+4. Currency MUST NOT use a raw `$` next to KaTeX — it opens a new math span.
+   BAD:  `$a$ = $8,000`  /  `$S_0$ = $6,000`  /  `$e^{0.48}$ = $5,171.44`
+   GOOD: `$a = \$8{,}000$` / `$S_0 = \$6{,}000$` / `$e^{0.48} = \$5{,}171.44$`
+   See textbook/output/ch11_currency_katex_RULES.txt
 
-5. Spaces around + and = in money sums: $225,000.00 + $215,603.80 = $440,603.80
+5. Spaces around + and = in money sums; escape every currency dollar:
+   `\$225,000.00 + \$215,603.80 = \$440,603.80`
 
 6. Exponents always ^{...}: (1.08)^{12}, e^{-\\delta t}, k^{n}. Never flat (1.08)12 or e-δt for algebra lines.
 

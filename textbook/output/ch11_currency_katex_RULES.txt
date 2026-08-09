@@ -1,0 +1,53 @@
+# Ch11 currency ↔ KaTeX collision fix
+# Write: textbook/output/ch11_subsection_fixes/{sid}.json
+# Read:  textbook/output/ch11_subsection_fixes/{sid}_INPUT.json
+# Edit ALL string fields (context, statements, given, formulas, steps, explanations, title).
+# Keep answer_key / difficulty / true_count / local_num / answer_key_text unless they contain bad $, then fix text only.
+
+## THE BUG
+Parser treats EVERY unescaped `$` as a math delimiter.
+BAD (currency `$` opens math and swallows prose):
+  `$a$ = $8,000`
+  `$a_0$ = -$8,000 < 0 and $a_1$ = $9,600 > 0`
+  `$S_0$ = $6,000`
+Renders as: italic `0and a_1` glued, broken spans, etc.
+
+## REQUIRED FIXES
+1. Variable = money amount → ONE math span with escaped currency:
+   BAD:  `$a$ = $8,000`
+   GOOD: `$a = \$8{,}000$`
+   BAD:  `$a_0$ = -$8,000 < 0 and $a_1$ = $9,600 > 0`
+   GOOD: `$a_0 = -\$8{,}000 < 0$ and $a_1 = \$9{,}600 > 0$`
+   BAD:  `$S_0$ = $6,000`
+   GOOD: `$S_0 = \$6{,}000$`
+   BAD:  `With $b$ = $25,000:`
+   GOOD: `With $b = \$25{,}000$:`
+
+2. Bare money in prose (not next to a math variable assignment) → escape:
+   BAD if it breaks nearby math: mixed `$…$ … $1,000 … $…$`
+   GOOD: `\$1,000` or keep as plain prose WITHOUT a leading `$` when safer: `USD 1,000` / `1,000 dollars`
+   Prefer `\$1,000` in steps/explanations/given when `$` would be ambiguous.
+
+3. Money sums that are pure prose money (no math variables): keep as escaped dollars:
+   GOOD: `\$225,000.00 + \$215,603.80 = \$440,603.80`
+
+4. NEVER put English words inside `$...$`:
+   BAD: `$a_0 = -\$8{,}000 < 0 and a_1 = \$9{,}600 > 0$`  (English "and" inside math)
+   GOOD: `$a_0 = -\$8{,}000 < 0$ and $a_1 = \$9{,}600 > 0$`
+
+5. Keep existing correct math (`$r = (b/a)-1$`, `$e^{rt}$`, subscripts) unchanged.
+6. Keep numerical truth of answers. Presentation only unless expression is garbled.
+7. Preserve bullets: each `•` on its own line in given/formulas/explanations when already multi-bullet.
+8. Do NOT touch other subsections. Output ONLY your subsection JSON array.
+
+## SCAN before writing
+Search your INPUT for patterns like:
+  `\$[A-Za-z].*?\$\s*=\s*-?\$\d`   (var then currency)
+  `=\s*-?\$\d[\d,]*`               (assignment to currency)
+  `$…$ = $…` collisions
+Fix EVERY hit in every field.
+
+## OUTPUT
+Overwrite `textbook/output/ch11_subsection_fixes/{sid}.json` with the FULL task list
+(same length/schema as INPUT). UTF-8 JSON, indent=2, ensure_ascii=False.
+After writing, re-scan your output: zero matches of `$VAR$ = $NUM` / `$VAR$ = -$NUM`.

@@ -4,13 +4,13 @@
     "title": "Present Value of a Client Bonus Payment",
     "difficulty_raw": "1/5",
     "difficulty_level": "1/5",
-    "context": "Ms. Kettering, owner of a small marketing agency, has been promised a $8,000 performance bonus by a client, payable in exactly 1 year. The prevailing interest rate for such arrangements is 5% per year, compounded annually, so this is a single-payment present-value problem with K = $8,000, r = 0.05, and t = 1.",
+    "context": "Ms. Kettering, owner of a small marketing agency, has been promised a \\$8{,}000 performance bonus by a client, payable in exactly 1 year. The prevailing interest rate for such arrangements is 5% per year, compounded annually, so this is a single-payment present-value problem with $K = \\$8{,}000$, r = 0.05, and t = 1.",
     "statements": [
       "The discount factor is approximately 0.9524.",
-      "The PDV of the $8,000 bonus is approximately $7,619.05.",
-      "If the interest rate were 10% instead of 5%, the PDV of the $8,000 bonus would be higher than its value under the original 5% rate.",
-      "The difference between the $8,000 future bonus and its present value is approximately $423.81.",
-      "If the interest rate were 0% per year, the present value of the $8,000 bonus would be exactly $7,500."
+      "The PDV of the \\$8{,}000 bonus is approximately \\$7{,}619.05.",
+      "If the interest rate were 10% instead of 5%, the PDV of the \\$8{,}000 bonus would be higher than its value under the original 5% rate.",
+      "The difference between the \\$8{,}000 future bonus and its present value is approximately \\$423.81.",
+      "If the interest rate were 0% per year, the present value of the \\$8{,}000 bonus would be exactly \\$7{,}500."
     ],
     "answer_key": [
       true,
@@ -19,15 +19,15 @@
       false,
       false
     ],
-    "given": "• K (future bonus) = $8,000\n\n• Nominal annual rate p = 5%, so r = 0.05\n\n• t = 1 year (annual compounding)",
+    "given": "• $K = \\$8{,}000$ (future bonus)\n\n• Nominal annual rate p = 5%, so r = 0.05\n\n• t = 1 year (annual compounding)",
     "formulas": "• PDV = $K(1+r)^{-t}$",
-    "steps": "Discount factor = $(1.05)^{-1}$ = 1/1.05 ≈ 0.9524. PDV = 8,000 × 0.9524 ≈ $7,619.05. At r = 0.10: PDV = 8,000/1.10 ≈ $7,272.73. Difference (at 5%) = 8,000 - 7,619.05 = $380.95. At r = 0: PDV = 8,000 × $(1.00)^{-1}$ = $8,000.",
+    "steps": "Discount factor = $(1.05)^{-1}$ = 1/1.05 ≈ 0.9524. PDV = 8,000 × 0.9524 ≈ \\$7{,}619.05. At r = 0.10: PDV = 8,000/1.10 ≈ \\$7{,}272.73. Difference (at 5%) = 8,000 - 7,619.05 = \\$380.95. At r = 0: PDV = 8,000 × $(1.00)^{-1} = \\$8{,}000$.",
     "explanations": [
       "Dividing 1 by 1.05 asks how much of a single dollar due in a year is worth today at a 5% annual rate, and that calculation gives 1/1.05 ≈ 0.9524. This is exactly the (annual) discount factor the chapter defines as $(1+r)^{-1}$, so the statement matches the formula precisely.",
-      "Multiplying the future amount by the discount factor found above converts the $8,000 due in a year into its equivalent value today: 8,000 × 0.9524 ≈ $7,619.05, which is exactly what the present-discounted-value formula $K(1+r)^{-1}$ produces here.",
-      "Raising the discount rate makes future money worth less today, not more, because a higher rate means today's dollar could grow into a larger amount by next year, so less of it is needed now to match the same future sum. Concretely, at 10% the present value falls to 8,000/1.10 ≈ $7,272.73, which is lower than $7,619.05, not higher - the statement has the direction of the effect backwards.",
-      "The actual gap between the $8,000 owed in the future and its value today is simply the future amount minus the present value: 8,000 - 7,619.05 = $380.95. The figure of $423.81 in the statement does not match this difference and overstates the true discount by roughly $42.86.",
-      "A 0% interest rate means money today and money in a year are worth exactly the same, since there is no opportunity cost or growth to account for. Formally, the discount factor becomes $(1.00)^{-1}$ = 1, so the present value collapses to the face amount itself, $8,000, not $7,500."
+      "Multiplying the future amount by the discount factor found above converts the \\$8{,}000 due in a year into its equivalent value today: 8,000 × 0.9524 ≈ \\$7{,}619.05, which is exactly what the present-discounted-value formula $K(1+r)^{-1}$ produces here.",
+      "Raising the discount rate makes future money worth less today, not more, because a higher rate means today's dollar could grow into a larger amount by next year, so less of it is needed now to match the same future sum. Concretely, at 10% the present value falls to 8,000/1.10 ≈ \\$7{,}272.73, which is lower than \\$7{,}619.05, not higher - the statement has the direction of the effect backwards.",
+      "The actual gap between the \\$8{,}000 owed in the future and its value today is simply the future amount minus the present value: 8,000 - 7,619.05 = \\$380.95. The figure of \\$423.81 in the statement does not match this difference and overstates the true discount by roughly \\$42.86.",
+      "A 0% interest rate means money today and money in a year are worth exactly the same, since there is no opportunity cost or growth to account for. Formally, the discount factor becomes $(1.00)^{-1}$ = 1, so the present value collapses to the face amount itself, \\$8{,}000, not \\$7{,}500."
     ]
   },
   {
@@ -35,12 +35,12 @@
     "title": "Continuous Compounding on a Consulting Milestone Payment",
     "difficulty_raw": "1.3/5",
     "difficulty_level": "1/5",
-    "context": "A freelance IT consultant will receive a $12,000 milestone payment from a client in 3 years upon final project sign-off. The client's finance department discounts all deferred payables continuously, at a rate of 6% per year, so this problem uses K = $12,000, r = 0.06, and t = 3 under continuous compounding.",
+    "context": "A freelance IT consultant will receive a \\$12{,}000 milestone payment from a client in 3 years upon final project sign-off. The client's finance department discounts all deferred payables continuously, at a rate of 6% per year, so this problem uses $K = \\$12{,}000$, r = 0.06, and t = 3 under continuous compounding.",
     "statements": [
       "The continuous discount factor is approximately 0.8353.",
-      "The PDV of the $12,000 payment is approximately $10,023.24.",
+      "The PDV of the \\$12{,}000 payment is approximately \\$10{,}023.24.",
       "The present value computed with continuous compounding is greater than the present value computed with annual compounding at the same 6% rate over the same 3 years.",
-      "The annual-compounding PDV exceeds the continuous-compounding PDV by approximately $60.00.",
+      "The annual-compounding PDV exceeds the continuous-compounding PDV by approximately \\$60.00.",
       "If the payment were instead due in 6 years rather than 3, its present value would be less than the present value found for the original 3-year horizon."
     ],
     "answer_key": [
@@ -50,15 +50,15 @@
       false,
       true
     ],
-    "given": "• K (milestone payment) = $12,000\n\n• Continuous annual rate p = 6%, so r = 0.06\n\n• t = 3 years",
+    "given": "• $K = \\$12{,}000$ (milestone payment)\n\n• Continuous annual rate p = 6%, so r = 0.06\n\n• t = 3 years",
     "formulas": "• PDV = $Ke^{-rt}$",
-    "steps": "rt = 0.06 × 3 = 0.18, so $e^{-0.18}$ ≈ 0.8353. PDV = 12,000 × 0.8353 ≈ $10,023.24. Annual compounding: PDV = 12,000 × $(1.06)^{-3}$ = 12,000/1.191016 ≈ $10,075.66. Difference = 10,075.66 - 10,023.24 = $52.42. For t = 6: rt = 0.36, $e^{-0.36}$ ≈ 0.6977, so PDV = 12,000 × 0.6977 ≈ $8,372.11.",
+    "steps": "rt = 0.06 × 3 = 0.18, so $e^{-0.18}$ ≈ 0.8353. PDV = 12,000 × 0.8353 ≈ \\$10{,}023.24. Annual compounding: PDV = 12,000 × $(1.06)^{-3}$ = 12,000/1.191016 ≈ \\$10{,}075.66. Difference = 10,075.66 - 10,023.24 = \\$52.42. For t = 6: rt = 0.36, $e^{-0.36}$ ≈ 0.6977, so PDV = 12,000 × 0.6977 ≈ \\$8{,}372.11.",
     "explanations": [
       "Raising e to the power -0.18 (the product of the rate 0.06 and the time 3) gives the fraction of the future payment that survives continuous discounting over those 3 years, which works out to approximately 0.8353.",
-      "Multiplying the $12,000 payment by the continuous discount factor of 0.8353 gives its present value: 12,000 × 0.8353 ≈ $10,023.24, exactly as the formula $Ke^{-rt}$ requires.",
-      "Continuous compounding grows capital faster than annual compounding at the same stated rate, because interest is being added at every instant rather than once a year. Since it grows money fastest, it also discounts future money the hardest, so the continuous-compounding present value ($10,023.24) actually ends up smaller than the annual-compounding present value ($10,075.66), not greater.",
-      "Subtracting the smaller continuous-compounding value from the larger annual-compounding value gives 10,075.66 - 10,023.24 = $52.42, not $60.00, so the stated gap overstates the true difference.",
-      "A payment further in the future is discounted more heavily, since there are more years over which the discounting effect compounds. At 6 years, the present value falls to approximately $8,372.11, which is indeed lower than the 3-year figure of $10,023.24."
+      "Multiplying the \\$12{,}000 payment by the continuous discount factor of 0.8353 gives its present value: 12,000 × 0.8353 ≈ \\$10{,}023.24, exactly as the formula $Ke^{-rt}$ requires.",
+      "Continuous compounding grows capital faster than annual compounding at the same stated rate, because interest is being added at every instant rather than once a year. Since it grows money fastest, it also discounts future money the hardest, so the continuous-compounding present value (\\$10{,}023.24) actually ends up smaller than the annual-compounding present value (\\$10{,}075.66), not greater.",
+      "Subtracting the smaller continuous-compounding value from the larger annual-compounding value gives 10,075.66 - 10,023.24 = \\$52.42, not \\$60.00, so the stated gap overstates the true difference.",
+      "A payment further in the future is discounted more heavily, since there are more years over which the discounting effect compounds. At 6 years, the present value falls to approximately \\$8{,}372.11, which is indeed lower than the 3-year figure of \\$10{,}023.24."
     ]
   },
   {
@@ -66,13 +66,13 @@
     "title": "Escrowed Sale Proceeds for a Landlord",
     "difficulty_raw": "1.6/5",
     "difficulty_level": "2/5",
-    "context": "A landlord is due to receive $45,000 in escrowed proceeds from a property sale in 8 years, once a title dispute is resolved. The applicable interest rate is 7% per year. The landlord's accountant computes the present value under both annual compounding and continuous compounding, so this task uses K = $45,000, r = 0.07, and t = 8 under both methods.",
+    "context": "A landlord is due to receive \\$45{,}000 in escrowed proceeds from a property sale in 8 years, once a title dispute is resolved. The applicable interest rate is 7% per year. The landlord's accountant computes the present value under both annual compounding and continuous compounding, so this task uses $K = \\$45{,}000$, r = 0.07, and t = 8 under both methods.",
     "statements": [
       "The annual discount factor is approximately 0.5820.",
-      "The present value under annual compounding is approximately $26,190.41.",
-      "The present value under continuous compounding is approximately $24,900.00.",
-      "The annual-compounding present value exceeds the continuous-compounding present value by approximately $650.00.",
-      "If the interest rate were 0% per year, both compounding methods would give an identical present value of exactly $40,000."
+      "The present value under annual compounding is approximately \\$26{,}190.41.",
+      "The present value under continuous compounding is approximately \\$24{,}900.00.",
+      "The annual-compounding present value exceeds the continuous-compounding present value by approximately \\$650.00.",
+      "If the interest rate were 0% per year, both compounding methods would give an identical present value of exactly \\$40{,}000."
     ],
     "answer_key": [
       true,
@@ -81,15 +81,15 @@
       false,
       false
     ],
-    "given": "• K (escrowed proceeds) = $45,000\n\n• Nominal/continuous annual rate p = 7%, so r = 0.07\n\n• t = 8 years",
+    "given": "• $K = \\$45{,}000$ (escrowed proceeds)\n\n• Nominal/continuous annual rate p = 7%, so r = 0.07\n\n• t = 8 years",
     "formulas": "• Annual: PDV = $K(1+r)^{-t}$\n\n• Continuous: PDV = $Ke^{-rt}$",
-    "steps": "$(1.07)^{8}$ ≈ 1.718186, so $(1.07)^{-8}$ ≈ 0.5820. Annual PDV = 45,000 × 0.5820 ≈ $26,190.41. rt = 0.07 × 8 = 0.56, $e^{-0.56}$ ≈ 0.5712, so continuous PDV = 45,000 × 0.5712 ≈ $25,704.41. Difference = 26,190.41 - 25,704.41 = $486.00. At r = 0: both formulas reduce to K × 1 = $45,000.",
+    "steps": "$(1.07)^{8}$ ≈ 1.718186, so $(1.07)^{-8}$ ≈ 0.5820. Annual PDV = 45,000 × 0.5820 ≈ \\$26{,}190.41. rt = 0.07 × 8 = 0.56, $e^{-0.56}$ ≈ 0.5712, so continuous PDV = 45,000 × 0.5712 ≈ \\$25{,}704.41. Difference = 26,190.41 - 25,704.41 = \\$486.00. At r = 0: both formulas reduce to K × 1 = \\$45{,}000.",
     "explanations": [
       "Compounding 1.07 eight times over gives $(1.07)^{8}$ ≈ 1.718186, and taking the reciprocal of that (since the exponent is negative) yields a discount factor of approximately 0.5820, matching the definition of $(1+r)^{-t}$ for annual compounding.",
-      "Multiplying the $45,000 face amount by the annual discount factor of 0.5820 gives 45,000 × 0.5820 ≈ $26,190.41, the value that $45,000 due in 8 years is worth today under annual compounding at 7%.",
-      "Under continuous compounding, the exponent rt = 0.56 gives $e^{-0.56}$ ≈ 0.5712, and multiplying by the $45,000 face amount gives 45,000 × 0.5712 ≈ $25,704.41, not $24,900.00, as the continuously-compounded present value.",
-      "Because continuous compounding grows (and therefore discounts) money more aggressively than annual compounding at the same stated rate, the annual-compounding present value comes out higher. Subtracting the two values gives 26,190.41 - 25,704.41 = $486.00, not $650.00, so the stated gap overstates the true difference.",
-      "With no interest or discounting at all (r = 0), both the annual formula $K(1+0)^{-t}$ and the continuous formula $Ke^{0}$ reduce to simply K, so both compounding methods agree and give a present value equal to the full $45,000 face amount, not $40,000."
+      "Multiplying the \\$45{,}000 face amount by the annual discount factor of 0.5820 gives 45,000 × 0.5820 ≈ \\$26{,}190.41, the value that \\$45{,}000 due in 8 years is worth today under annual compounding at 7%.",
+      "Under continuous compounding, the exponent rt = 0.56 gives $e^{-0.56}$ ≈ 0.5712, and multiplying by the \\$45{,}000 face amount gives 45,000 × 0.5712 ≈ \\$25{,}704.41, not \\$24{,}900.00, as the continuously-compounded present value.",
+      "Because continuous compounding grows (and therefore discounts) money more aggressively than annual compounding at the same stated rate, the annual-compounding present value comes out higher. Subtracting the two values gives 26,190.41 - 25,704.41 = \\$486.00, not \\$650.00, so the stated gap overstates the true difference.",
+      "With no interest or discounting at all (r = 0), both the annual formula $K(1+0)^{-t}$ and the continuous formula $Ke^{0}$ reduce to simply K, so both compounding methods agree and give a present value equal to the full \\$45{,}000 face amount, not \\$40{,}000."
     ]
   },
   {
@@ -97,11 +97,11 @@
     "title": "Funding a Future Equipment Purchase",
     "difficulty_raw": "2/5",
     "difficulty_level": "2/5",
-    "context": "A dental practice wants to have exactly $150,000 available in 5 years to purchase new imaging equipment. Its bank offers a continuous annual interest rate of 4.5% on a dedicated savings account, and the practice wants to know how much it must deposit today, i.e., the present value of the $150,000 goal under K = $150,000, r = 0.045, and t = 5.",
+    "context": "A dental practice wants to have exactly \\$150{,}000 available in 5 years to purchase new imaging equipment. Its bank offers a continuous annual interest rate of 4.5% on a dedicated savings account, and the practice wants to know how much it must deposit today, i.e., the present value of the \\$150{,}000 goal under $K = \\$150{,}000$, r = 0.045, and t = 5.",
     "statements": [
       "The continuous discount factor is approximately 0.8125.",
-      "The practice must deposit approximately $119,777.40 today to reach its $150,000 goal in 5 years.",
-      "If the practice deposited only $110,000 today instead, it would still reach the $150,000 goal after 5 years at this rate.",
+      "The practice must deposit approximately \\$119{,}777.40 today to reach its \\$150{,}000 goal in 5 years.",
+      "If the practice deposited only \\$110{,}000 today instead, it would still reach the \\$150{,}000 goal after 5 years at this rate.",
       "If the bank instead compounded the same 4.5% nominal rate annually rather than continuously, the required deposit today would be lower than the deposit required under continuous compounding.",
       "Doubling the time horizon to 10 years would require depositing exactly half of the amount required for the original 5-year horizon today."
     ],
@@ -112,15 +112,15 @@
       false,
       false
     ],
-    "given": "• K (target future amount) = $150,000\n\n• Continuous annual rate p = 4.5%, so r = 0.045\n\n• t = 5 years",
+    "given": "• $K = \\$150{,}000$ (target future amount)\n\n• Continuous annual rate p = 4.5%, so r = 0.045\n\n• t = 5 years",
     "formulas": "• Required deposit A = $Ke^{-rt}$",
-    "steps": "rt = 0.045 × 5 = 0.225, so $e^{-0.225}$ ≈ 0.7985. A = 150,000 × 0.7985 ≈ $119,777.40. Future value of $110,000 after 5 years at 4.5% continuous: 110,000 × $e^{0.225}$ ≈ 110,000 × 1.2523 ≈ $137,755.50. Annual compounding: A = 150,000 × $(1.045)^{-5}$ = 150,000/1.246182 ≈ $120,367.90. For t = 10: rt = 0.45, $e^{-0.45}$ ≈ 0.6376, so A = 150,000 × 0.6376 ≈ $95,644.20.",
+    "steps": "rt = 0.045 × 5 = 0.225, so $e^{-0.225}$ ≈ 0.7985. A = 150,000 × 0.7985 ≈ \\$119{,}777.40. Future value of \\$110{,}000 after 5 years at 4.5% continuous: 110,000 × $e^{0.225}$ ≈ 110,000 × 1.2523 ≈ \\$137{,}755.50. Annual compounding: A = 150,000 × $(1.045)^{-5}$ = 150,000/1.246182 ≈ \\$120{,}367.90. For t = 10: rt = 0.45, $e^{-0.45}$ ≈ 0.6376, so A = 150,000 × 0.6376 ≈ \\$95{,}644.20.",
     "explanations": [
-      "The exponent rt = 0.225 comes directly from multiplying the 4.5% continuous rate by the 5-year horizon, and $e^{-0.225}$ ≈ 0.7985, not 0.8125, is the fraction of the $150,000 goal that needs to be set aside today.",
-      "Multiplying the $150,000 target by the discount factor of 0.7985 gives the deposit required today: 150,000 × 0.7985 ≈ $119,777.40, which will grow into exactly $150,000 after 5 years of continuous compounding at 4.5%.",
-      "Growing $110,000 for 5 years at 4.5% continuous interest gives 110,000 × $e^{0.225}$ ≈ $137,755.50, which falls noticeably short of the $150,000 goal. Depositing less than the required $119,777.40 today simply cannot compound into the full target amount by the deadline.",
-      "Continuous compounding is the fastest possible way for money to grow at a given stated rate, so it needs the smallest starting deposit to reach a fixed future goal. Switching to annual compounding at the same 4.5% rate is less powerful, so it actually requires a larger deposit today, about $120,367.90, not a smaller one.",
-      "Present-value discounting works exponentially in time, not linearly, so doubling the number of years does not simply halve the required deposit. At 10 years the required deposit is about $95,644.20, which is well above half of $119,777.40 (that half would be $59,888.70)."
+      "The exponent rt = 0.225 comes directly from multiplying the 4.5% continuous rate by the 5-year horizon, and $e^{-0.225}$ ≈ 0.7985, not 0.8125, is the fraction of the \\$150{,}000 goal that needs to be set aside today.",
+      "Multiplying the \\$150{,}000 target by the discount factor of 0.7985 gives the deposit required today: 150,000 × 0.7985 ≈ \\$119{,}777.40, which will grow into exactly \\$150{,}000 after 5 years of continuous compounding at 4.5%.",
+      "Growing \\$110{,}000 for 5 years at 4.5% continuous interest gives 110,000 × $e^{0.225}$ ≈ \\$137{,}755.50, which falls noticeably short of the \\$150{,}000 goal. Depositing less than the required \\$119{,}777.40 today simply cannot compound into the full target amount by the deadline.",
+      "Continuous compounding is the fastest possible way for money to grow at a given stated rate, so it needs the smallest starting deposit to reach a fixed future goal. Switching to annual compounding at the same 4.5% rate is less powerful, so it actually requires a larger deposit today, about \\$120{,}367.90, not a smaller one.",
+      "Present-value discounting works exponentially in time, not linearly, so doubling the number of years does not simply halve the required deposit. At 10 years the required deposit is about \\$95{,}644.20, which is well above half of \\$119{,}777.40 (that half would be \\$59{,}888.70)."
     ]
   },
   {
@@ -128,11 +128,11 @@
     "title": "Implied Maturity of a Discounted Promissory Note",
     "difficulty_raw": "2.3/5",
     "difficulty_level": "2/5",
-    "context": "An investor purchases a promissory note today for $18,500. The note promises a payoff of $25,000 at maturity, and the market interest rate for notes of this kind is 6% per year, compounded annually. The investor wants to work backward from the price to find the implied maturity time, using PDV = $18,500, K = $25,000, and r = 0.06.",
+    "context": "An investor purchases a promissory note today for \\$18{,}500. The note promises a payoff of \\$25{,}000 at maturity, and the market interest rate for notes of this kind is 6% per year, compounded annually. The investor wants to work backward from the price to find the implied maturity time, using $PDV = \\$18{,}500$, $K = \\$25{,}000$, and r = 0.06.",
     "statements": [
       "The ratio of the payoff to the purchase price is approximately 1.3514.",
       "The implied maturity time, assuming annual compounding, is approximately 5.17 years.",
-      "If the purchase price had instead been $20,000 for the same $25,000 payoff at the same 6% rate, the implied maturity time would be longer than the original implied maturity time.",
+      "If the purchase price had instead been \\$20{,}000 for the same \\$25{,}000 payoff at the same 6% rate, the implied maturity time would be longer than the original implied maturity time.",
       "If continuous compounding were used instead of annual compounding, the implied maturity time would be approximately 5.45 years.",
       "The continuous-compounding implied maturity time is longer than the annual-compounding implied maturity time."
     ],
@@ -143,13 +143,13 @@
       false,
       false
     ],
-    "given": "• PDV (purchase price) = $18,500\n\n• K (maturity payoff) = $25,000\n\n• Nominal annual rate p = 6%, so r = 0.06",
+    "given": "• $PDV = \\$18{,}500$ (purchase price)\n\n• $K = \\$25{,}000$ (maturity payoff)\n\n• Nominal annual rate p = 6%, so r = 0.06",
     "formulas": "• Annual: PDV = $K(1+r)^{-t}$, so t = ln(K/PDV) / ln(1 + r)\n\n• Continuous: PDV = $Ke^{-rt}$, so t = ln(K/PDV) / r",
-    "steps": "K/PDV = 25,000/18,500 ≈ 1.3514. ln(1.3514) ≈ 0.3011; ln(1.06) ≈ 0.05827. t = 0.3011/0.05827 ≈ 5.17 years. For a $20,000 price: ratio = 25,000/20,000 = 1.25, ln(1.25) ≈ 0.2231, t = 0.2231/0.05827 ≈ 3.83 years. Continuous: t = ln(1.3514)/0.06 ≈ 0.3011/0.06 ≈ 5.02 years. Compare: continuous t ≈ 5.02 years vs. annual t ≈ 5.17 years.",
+    "steps": "K/PDV = 25,000/18,500 ≈ 1.3514. ln(1.3514) ≈ 0.3011; ln(1.06) ≈ 0.05827. t = 0.3011/0.05827 ≈ 5.17 years. For a \\$20{,}000 price: ratio = 25,000/20,000 = 1.25, ln(1.25) ≈ 0.2231, t = 0.2231/0.05827 ≈ 3.83 years. Continuous: t = ln(1.3514)/0.06 ≈ 0.3011/0.06 ≈ 5.02 years. Compare: continuous t ≈ 5.02 years vs. annual t ≈ 5.17 years.",
     "explanations": [
       "Dividing the promised payoff by the price actually paid, 25,000/18,500, shows how many times the investor's money is expected to multiply by maturity, and that ratio works out to approximately 1.3514.",
       "Rearranging the annual present-value formula to solve for t and plugging in the ratio 1.3514 and rate 6% gives t = ln(1.3514)/ln(1.06) ≈ 5.17 years, the implied time to maturity under annual compounding.",
-      "Paying more today for the identical eventual payoff, $20,000 instead of $18,500, means the note does not need to grow by as large a multiple to reach $25,000, so less time (and less discounting) is implied, not more. Recomputing gives an implied maturity of only about 3.83 years, which is shorter than 5.17 years, contradicting the statement.",
+      "Paying more today for the identical eventual payoff, \\$20{,}000 instead of \\$18{,}500, means the note does not need to grow by as large a multiple to reach \\$25{,}000, so less time (and less discounting) is implied, not more. Recomputing gives an implied maturity of only about 3.83 years, which is shorter than 5.17 years, contradicting the statement.",
       "Using the continuous-compounding version of the same relationship, t = ln(1.3514)/0.06, gives approximately 5.02 years, not 5.45 years, as the implied maturity time when discounting is continuous rather than annual.",
       "Continuous compounding discounts a given ratio of payoff to price more efficiently per year than annual compounding does, so it takes less elapsed time to justify the same 1.3514 ratio, not more. The continuous-compounding time of about 5.02 years is therefore shorter than the annual-compounding time of about 5.17 years, the opposite of what the statement claims."
     ]
@@ -159,12 +159,12 @@
     "title": "Implied Continuous Discount Rate on a Collectible Painting",
     "difficulty_raw": "2.5/5",
     "difficulty_level": "2/5",
-    "context": "An art gallery has secured a guaranteed future sale of a painting for $60,000 in 12 years. A collector is willing to pay $27,000 today for the rights to that future payment, with value discounted continuously, so this task solves for r given PDV = $27,000, K = $60,000, and t = 12.",
+    "context": "An art gallery has secured a guaranteed future sale of a painting for \\$60{,}000 in 12 years. A collector is willing to pay \\$27{,}000 today for the rights to that future payment, with value discounted continuously, so this task solves for r given $PDV = \\$27{,}000$, $K = \\$60{,}000$, and t = 12.",
     "statements": [
       "The implied discount factor is exactly 0.45.",
       "The implied continuous discount rate is approximately 6.65% per year.",
-      "At the implied rate, if the payoff were due in 6 years instead of 12, its present value would be approximately $40,249.20.",
-      "If the purchase price had instead been $30,000 for the same $60,000 payoff in 12 years, the implied continuous discount rate would be higher than the rate found for the original $27,000 price.",
+      "At the implied rate, if the payoff were due in 6 years instead of 12, its present value would be approximately \\$40{,}249.20.",
+      "If the purchase price had instead been \\$30{,}000 for the same \\$60{,}000 payoff in 12 years, the implied continuous discount rate would be higher than the rate found for the original \\$27{,}000 price.",
       "Doubling the horizon to 24 years would require the rate to be approximately 3.33%."
     ],
     "answer_key": [
@@ -174,14 +174,14 @@
       false,
       true
     ],
-    "given": "• PDV (price paid) = $27,000\n\n• K (future payoff) = $60,000\n\n• t = 12 years (continuous compounding)",
+    "given": "• $PDV = \\$27{,}000$ (price paid)\n\n• $K = \\$60{,}000$ (future payoff)\n\n• t = 12 years (continuous compounding)",
     "formulas": "• PDV = $Ke^{-rt}$, so r = -ln(PDV/K) / t",
-    "steps": "PDV/K = 27,000/60,000 = 0.45. r = -ln(0.45)/12 = 0.798508/12 ≈ 0.0665 = 6.65%. For t = 6: rt = 0.0665 × 6 ≈ 0.3992, $e^{-0.3992}$ ≈ 0.6708, so PDV = 60,000 × 0.6708 ≈ $40,249.20. For a $30,000 price: ratio = 30,000/60,000 = 0.5, r = -ln(0.5)/12 = 0.693147/12 ≈ 0.0578 = 5.78%. For t = 24 with the same discount factor 0.45: r = -ln(0.45)/24 = 0.798508/24 ≈ 0.0333 = 3.33%.",
+    "steps": "PDV/K = 27,000/60,000 = 0.45. r = -ln(0.45)/12 = 0.798508/12 ≈ 0.0665 = 6.65%. For t = 6: rt = 0.0665 × 6 ≈ 0.3992, $e^{-0.3992}$ ≈ 0.6708, so PDV = 60,000 × 0.6708 ≈ \\$40{,}249.20. For a \\$30{,}000 price: ratio = 30,000/60,000 = 0.5, r = -ln(0.5)/12 = 0.693147/12 ≈ 0.0578 = 5.78%. For t = 24 with the same discount factor 0.45: r = -ln(0.45)/24 = 0.798508/24 ≈ 0.0333 = 3.33%.",
     "explanations": [
-      "Dividing the $27,000 purchase price by the $60,000 eventual payoff gives 27,000/60,000, which reduces exactly to 0.45 with no rounding involved.",
+      "Dividing the \\$27{,}000 purchase price by the \\$60{,}000 eventual payoff gives 27,000/60,000, which reduces exactly to 0.45 with no rounding involved.",
       "Solving the continuous present-value formula for the rate, using the 0.45 discount factor and the 12-year horizon, gives r = -ln(0.45)/12 ≈ 6.65% as the implied continuous discount rate embedded in this deal.",
-      "Applying the 6.65% rate over a shorter 6-year horizon instead of 12 reduces the exponent to about 0.3992, giving a present value of approximately $40,249.20 - higher than the 12-year figure, since less time means less discounting.",
-      "Paying more today, $30,000 instead of $27,000, for the identical future payoff means less discounting was actually needed to arrive at that price, which corresponds to a lower implied rate, not a higher one. Recomputing gives an implied rate of only about 5.78%, below 6.65%, contradicting the statement.",
+      "Applying the 6.65% rate over a shorter 6-year horizon instead of 12 reduces the exponent to about 0.3992, giving a present value of approximately \\$40{,}249.20 - higher than the 12-year figure, since less time means less discounting.",
+      "Paying more today, \\$30{,}000 instead of \\$27{,}000, for the identical future payoff means less discounting was actually needed to arrive at that price, which corresponds to a lower implied rate, not a higher one. Recomputing gives an implied rate of only about 5.78%, below 6.65%, contradicting the statement.",
       "Since the discount factor 0.45 corresponds to a fixed value of r × t (specifically -ln(0.45) ≈ 0.7985), doubling the number of years from 12 to 24 while keeping that product constant forces the rate to be cut exactly in half, from 6.65% down to about 3.33%."
     ]
   },
@@ -190,13 +190,13 @@
     "title": "Combined Present Value of Two Software Milestone Payments",
     "difficulty_raw": "2.7/5",
     "difficulty_level": "3/5",
-    "context": "A software company is due to receive two payments from a client under a licensing agreement: $40,000 in 2 years and $65,000 in 5 years. The applicable interest rate is 5% per year, compounded annually, and the company's controller wants the combined present value of both payments, using $K_1$ = $40,000 at $t_1$ = 2 and $K_2$ = $65,000 at $t_2$ = 5.",
+    "context": "A software company is due to receive two payments from a client under a licensing agreement: \\$40{,}000 in 2 years and \\$65{,}000 in 5 years. The applicable interest rate is 5% per year, compounded annually, and the company's controller wants the combined present value of both payments, using $K_1 = \\$40{,}000$ at $t_1 = 2$ and $K_2 = \\$65{,}000$ at $t_2 = 5$.",
     "statements": [
-      "The present value of the $40,000 payment is approximately $36,281.18.",
-      "The present value of the $65,000 payment is approximately $50,930.87.",
-      "The combined present value of both payments together is approximately $87,212.05.",
-      "The $65,000 payment has a smaller present value than the $40,000 payment.",
-      "If both payments were instead discounted continuously at the same 5% rate, their combined present value would be less than $86,000."
+      "The present value of the \\$40{,}000 payment is approximately \\$36{,}281.18.",
+      "The present value of the \\$65{,}000 payment is approximately \\$50{,}930.87.",
+      "The combined present value of both payments together is approximately \\$87{,}212.05.",
+      "The \\$65{,}000 payment has a smaller present value than the \\$40{,}000 payment.",
+      "If both payments were instead discounted continuously at the same 5% rate, their combined present value would be less than \\$86{,}000."
     ],
     "answer_key": [
       true,
@@ -205,15 +205,15 @@
       false,
       false
     ],
-    "given": "• $K_1$ = $40,000 due in $t_1$ = 2 years\n\n• $K_2$ = $65,000 due in $t_2$ = 5 years\n\n• Nominal annual rate p = 5%, so r = 0.05",
+    "given": "• $K_1 = \\$40{,}000$ due in $t_1 = 2$ years\n\n• $K_2 = \\$65{,}000$ due in $t_2 = 5$ years\n\n• Nominal annual rate p = 5%, so r = 0.05",
     "formulas": "• Annual: PDV = $K(1+r)^{-t}$\n\n• Continuous: PDV = $Ke^{-rt}$\n\n• Combined PDV = $\\mathrm{PDV}_1$ + $\\mathrm{PDV}_2$",
-    "steps": "$\\mathrm{PDV}_1$ = 40,000 × $(1.05)^{-2}$ = 40,000/1.1025 ≈ $36,281.18. $\\mathrm{PDV}_2$ = 65,000 × $(1.05)^{-5}$ = 65,000/1.276282 ≈ $50,930.87. Combined PDV = 36,281.18 + 50,930.87 ≈ $87,212.05. Compare: $50,930.87 (from the $65,000 payment) vs. $36,281.18 (from the $40,000 payment). Continuous $\\mathrm{PDV}_1$ = 40,000 × $e^{-0.10}$ ≈ $36,193.48; continuous $\\mathrm{PDV}_2$ = 65,000 × $e^{-0.25}$ ≈ $50,622.07; combined ≈ $86,815.55.",
+    "steps": "$\\mathrm{PDV}_1$ = 40,000 × $(1.05)^{-2}$ = 40,000/1.1025 ≈ \\$36{,}281.18. $\\mathrm{PDV}_2$ = 65,000 × $(1.05)^{-5}$ = 65,000/1.276282 ≈ \\$50{,}930.87. Combined PDV = 36,281.18 + 50,930.87 ≈ \\$87{,}212.05. Compare: \\$50{,}930.87 (from the \\$65{,}000 payment) vs. \\$36{,}281.18 (from the \\$40{,}000 payment). Continuous $\\mathrm{PDV}_1$ = 40,000 × $e^{-0.10}$ ≈ \\$36{,}193.48; continuous $\\mathrm{PDV}_2$ = 65,000 × $e^{-0.25}$ ≈ \\$50{,}622.07; combined ≈ \\$86{,}815.55.",
     "explanations": [
-      "Discounting the $40,000 payment back 2 years at 5% annual compounding, $40,000/(1.05)^{2}$, gives approximately $36,281.18 as today's equivalent value.",
-      "Discounting the $65,000 payment back 5 years at the same 5% rate, $65,000/(1.05)^{5}$, gives approximately $50,930.87.",
-      "Since present values from different payment dates can simply be added together, the combined present value of both milestone payments is 36,281.18 + 50,930.87 ≈ $87,212.05.",
-      "Comparing the two individual present values directly, the $65,000 payment actually contributes the larger amount today, about $50,930.87, versus about $36,281.18 for the $40,000 payment. Its bigger face value more than makes up for the extra 3 years of discounting, so it is not smaller than the other payment's present value.",
-      "Recomputing both payments with continuous compounding at 5% gives a combined present value of approximately $86,815.55. That figure is above $86,000, not below it, so the statement understates the true combined continuous present value."
+      "Discounting the \\$40{,}000 payment back 2 years at 5% annual compounding, \\$40{,}000/(1.05)^{2}$, gives approximately \\$36{,}281.18 as today's equivalent value.",
+      "Discounting the \\$65{,}000 payment back 5 years at the same 5% rate, \\$65{,}000/(1.05)^{5}$, gives approximately \\$50{,}930.87.",
+      "Since present values from different payment dates can simply be added together, the combined present value of both milestone payments is 36,281.18 + 50,930.87 ≈ \\$87{,}212.05.",
+      "Comparing the two individual present values directly, the \\$65{,}000 payment actually contributes the larger amount today, about \\$50{,}930.87, versus about \\$36{,}281.18 for the \\$40{,}000 payment. Its bigger face value more than makes up for the extra 3 years of discounting, so it is not smaller than the other payment's present value.",
+      "Recomputing both payments with continuous compounding at 5% gives a combined present value of approximately \\$86{,}815.55. That figure is above \\$86{,}000, not below it, so the statement understates the true combined continuous present value."
     ]
   },
   {
@@ -221,13 +221,13 @@
     "title": "Comparing an Immediate Payment to a Deferred Payment",
     "difficulty_raw": "2.8/5",
     "difficulty_level": "3/5",
-    "context": "A freelance architect is offered two payment options for a completed project: Option A is $22,000 paid immediately upon delivery. Option B is $25,500 paid in 3 years. The relevant market discount rate is 6% per year, compounded annually, so the two options can be compared directly on a present-value basis.",
+    "context": "A freelance architect is offered two payment options for a completed project: Option A is \\$22{,}000 paid immediately upon delivery. Option B is \\$25{,}500 paid in 3 years. The relevant market discount rate is 6% per year, compounded annually, so the two options can be compared directly on a present-value basis.",
     "statements": [
-      "The present value of Option B is approximately $21,410.30.",
+      "The present value of Option B is approximately \\$21{,}410.30.",
       "Option A has a higher present value than Option B at the 6% rate.",
-      "If the discount rate were 3% instead of 6%, the present value of Option B would be approximately $22,780.00.",
-      "The present value of Option B exceeds $22,000 regardless of which interest rate is used to discount it.",
-      "At exactly a 5% discount rate, the present value of Option B would be approximately $23,500.00."
+      "If the discount rate were 3% instead of 6%, the present value of Option B would be approximately \\$22{,}780.00.",
+      "The present value of Option B exceeds \\$22{,}000 regardless of which interest rate is used to discount it.",
+      "At exactly a 5% discount rate, the present value of Option B would be approximately \\$23{,}500.00."
     ],
     "answer_key": [
       true,
@@ -236,15 +236,15 @@
       false,
       false
     ],
-    "given": "• Option A = $22,000 received today (t = 0)\n\n• Option B: K = $25,500 due in t = 3 years\n\n• Base nominal annual rate p = 6%, so r = 0.06",
+    "given": "• Option $A = \\$22{,}000$ received today (t = 0)\n\n• Option B: $K = \\$25{,}500$ due in t = 3 years\n\n• Base nominal annual rate p = 6%, so r = 0.06",
     "formulas": "• PDV = $K(1+r)^{-t}$\n\n• An amount received today (t = 0) has present value equal to its face value",
-    "steps": "$(1.06)^{3}$ ≈ 1.191016, so PDV of Option B = 25,500/1.191016 ≈ $21,410.30. Compare $22,000 (Option A, today) with $21,410.30 (Option B, discounted). At r = 0.03: $(1.03)^{3}$ ≈ 1.092727, so PDV = 25,500/1.092727 ≈ $23,336.02. At r = 0.06 the PDV was found above to be $21,410.30. At r = 0.05: $(1.05)^{3}$ ≈ 1.157625, so PDV = 25,500/1.157625 ≈ $22,029.40.",
+    "steps": "$(1.06)^{3}$ ≈ 1.191016, so PDV of Option B = 25,500/1.191016 ≈ \\$21{,}410.30. Compare \\$22{,}000 (Option A, today) with \\$21{,}410.30 (Option B, discounted). At r = 0.03: $(1.03)^{3}$ ≈ 1.092727, so PDV = 25,500/1.092727 ≈ \\$23{,}336.02. At r = 0.06 the PDV was found above to be \\$21{,}410.30. At r = 0.05: $(1.05)^{3}$ ≈ 1.157625, so PDV = 25,500/1.157625 ≈ \\$22{,}029.40.",
     "explanations": [
-      "Discounting the $25,500 payment back 3 years at a 6% annual rate, $25,500/(1.06)^{3}$, gives approximately $21,410.30 as its present value.",
-      "Comparing the two options directly, Option A's $22,000 received today is worth more than Option B's present value of $21,410.30, so at this 6% rate the immediate payment is the financially larger of the two.",
-      "Lowering the discount rate to 3% reduces how much Option B's future payment is penalized for waiting, raising its present value to approximately $23,336.02. That is noticeably higher than the $22,780.00 stated, so the figure given is inaccurate.",
-      "Whether Option B's present value stays above $22,000 depends entirely on the discount rate used. At the base 6% rate its present value is only about $21,410.30, which already falls below $22,000, so the claim that it always exceeds $22,000 regardless of rate does not hold.",
-      "At a 5% discount rate, Option B's present value works out to approximately $22,029.40, not $23,500.00, which sits very close to Option A's $22,000 rather than well above it."
+      "Discounting the \\$25{,}500 payment back 3 years at a 6% annual rate, \\$25{,}500/(1.06)^{3}$, gives approximately \\$21{,}410.30 as its present value.",
+      "Comparing the two options directly, Option A's \\$22{,}000 received today is worth more than Option B's present value of \\$21{,}410.30, so at this 6% rate the immediate payment is the financially larger of the two.",
+      "Lowering the discount rate to 3% reduces how much Option B's future payment is penalized for waiting, raising its present value to approximately \\$23{,}336.02. That is noticeably higher than the \\$22{,}780.00 stated, so the figure given is inaccurate.",
+      "Whether Option B's present value stays above \\$22{,}000 depends entirely on the discount rate used. At the base 6% rate its present value is only about \\$21{,}410.30, which already falls below \\$22{,}000, so the claim that it always exceeds \\$22{,}000 regardless of rate does not hold.",
+      "At a 5% discount rate, Option B's present value works out to approximately \\$22{,}029.40, not \\$23{,}500.00, which sits very close to Option A's \\$22{,}000 rather than well above it."
     ]
   },
   {
@@ -252,11 +252,11 @@
     "title": "Optimal Harvest Timing for a Timber Stand",
     "difficulty_raw": "3/5",
     "difficulty_level": "3/5",
-    "context": "A timber company owns a stand of trees whose market value grows according to P(t) = $5{,}000(t+2)^{2}$ dollars, where t is measured in years since a recent appraisal, with P(t) differentiable and positive for all t ≥ 0. The prevailing interest rate is 8% per year, compounded continuously. Management wants to apply the chapter's tree-harvesting present-value condition to find the optimal cutting time.",
+    "context": "A timber company owns a stand of trees whose market value grows according to $P(t) = 5{,}000(t+2)^{2}$ dollars, where t is measured in years since a recent appraisal, with P(t) differentiable and positive for all t ≥ 0. The prevailing interest rate is 8% per year, compounded continuously. Management wants to apply the chapter's tree-harvesting present-value condition to find the optimal cutting time.",
     "statements": [
       "The optimal harvest time t* that maximizes the present value of the stand is approximately 23 years.",
       "The optimal harvest time is found by setting P'(t*) equal to P(t*) divided by r.",
-      "At the optimal time, the present value of the stand is approximately $623,000.",
+      "At the optimal time, the present value of the stand is approximately \\$623{,}000.",
       "If the interest rate were higher than 8% instead, the optimal cutting time t* would be later than the original optimal time.",
       "Cutting the stand at t = 25 years instead of at the optimal time would produce a higher present value than cutting at the optimal time."
     ],
@@ -267,15 +267,15 @@
       false,
       false
     ],
-    "given": "• P(t) = $5{,}000(t+2)^{2}$\n\n• Continuous annual rate p = 8%, so r = 0.08",
+    "given": "• $P(t) = 5{,}000(t+2)^{2}$\n\n• Continuous annual rate p = 8%, so r = 0.08",
     "formulas": "• Present value: f(t) = $P(t)e^{-rt}$\n\n• Optimality condition: P'(t*) = rP(t*)",
-    "steps": "P'(t) = 10,000(t + 2). Set 10,000(t + 2) = 0.08 × $5{,}000(t+2)^{2}$ = $400(t+2)^{2}$. Dividing both sides by (t + 2): 10,000 = 400(t + 2), so t + 2 = 25, giving t* = 23 years. f(23) = $P(23)e^{-0.08 \\cdot 23}$ = $5{,}000(25)^{2}e^{-1.84}$ = 3,125,000 × 0.15879 ≈ $496,218.75. f(25) = $P(25)e^{-0.08 \\cdot 25}$ = $5{,}000(27)^{2}e^{-2}$ = 3,645,000 × 0.135335 ≈ $493,296.10.",
+    "steps": "P'(t) = 10,000(t + 2). Set $10{,}000(t + 2) = 0.08 \\times 5{,}000(t+2)^{2} = 400(t+2)^{2}$. Dividing both sides by (t + 2): 10,000 = 400(t + 2), so t + 2 = 25, giving t* = 23 years. f(23) = $P(23)e^{-0.08 \\cdot 23} = 5{,}000(25)^{2}e^{-1.84}$ = 3,125,000 × 0.15879 ≈ \\$496{,}218.75. f(25) = $P(25)e^{-0.08 \\cdot 25} = 5{,}000(27)^{2}e^{-2}$ = 3,645,000 × 0.135335 ≈ \\$493{,}296.10.",
     "explanations": [
       "Setting the derivative condition P'(t*) = rP(t*) equal to the specific functions given here reduces, after dividing out the common factor (t + 2), to the simple equation 10,000 = 400(t + 2), which solves to t* = 23 years.",
       "The chapter's actual optimality condition multiplies P(t*) by the interest rate r, giving P'(t*) = rP(t*), not P'(t*) = P(t*)/r. Dividing by r instead of multiplying by it changes the equation entirely and would not correctly locate the present-value-maximizing time.",
-      "Evaluating the present-value function at the true optimum, f(23) = $5{,}000(25)^{2}e^{-1.84}$, gives approximately $496,218.75. That is well below the $623,000 claimed in the statement, which overstates the maximum present value by more than $126,000.",
+      "Evaluating the present-value function at the true optimum, f(23) = $5{,}000(25)^{2}e^{-1.84}$, gives approximately \\$496{,}218.75. That is well below the \\$623{,}000 claimed in the statement, which overstates the maximum present value by more than \\$126{,}000.",
       "The chapter's discussion of this same tree-harvesting problem shows that a higher interest rate makes decision-makers more impatient, pulling the optimal cutting time earlier, not later. Repeating the same method with r = 10% instead of 8% gives an optimal time of only 18 years, confirming that the cutting time shortens rather than lengthens as the rate rises.",
-      "Evaluating the present-value function at t = 25 instead of at the optimum gives f(25) = $5{,}000(27)^{2}e^{-2}$ ≈ $493,296.10, which is lower than the $496,218.75 obtained at t* = 23. This confirms that t* = 23 really is the present-value-maximizing time, and waiting two extra years actually reduces value rather than increasing it."
+      "Evaluating the present-value function at t = 25 instead of at the optimum gives f(25) = $5{,}000(27)^{2}e^{-2}$ ≈ \\$493{,}296.10, which is lower than the \\$496{,}218.75 obtained at t* = 23. This confirms that t* = 23 really is the present-value-maximizing time, and waiting two extra years actually reduces value rather than increasing it."
     ]
   },
   {
@@ -283,13 +283,13 @@
     "title": "Settling Two Supplier Obligations with a Single Lump Sum",
     "difficulty_raw": "3/5",
     "difficulty_level": "3/5",
-    "context": "A boutique winery owes a supplier two separate future payments: $18,000 due in 4 years and $30,000 due in 9 years. The supplier agrees to accept one lump-sum payment today instead, using a continuous discount rate of 5.5% per year for both obligations, so this task uses $K_1$ = $18,000 at $t_1$ = 4 and $K_2$ = $30,000 at $t_2$ = 9.",
+    "context": "A boutique winery owes a supplier two separate future payments: \\$18{,}000 due in 4 years and \\$30{,}000 due in 9 years. The supplier agrees to accept one lump-sum payment today instead, using a continuous discount rate of 5.5% per year for both obligations, so this task uses $K_1 = \\$18{,}000$ at $t_1 = 4$ and $K_2 = \\$30{,}000$ at $t_2 = 9$.",
     "statements": [
-      "The present value of the $18,000 obligation is approximately $14,445.34.",
-      "The present value of the $30,000 obligation is approximately $18,287.13.",
-      "The combined lump-sum payment the winery should make today is approximately $32,732.47.",
-      "The $30,000 obligation contributes a smaller present value than the $18,000 obligation.",
-      "If the discount rate were 0% instead of 5.5%, the combined lump-sum payment today would be exactly $48,000."
+      "The present value of the \\$18{,}000 obligation is approximately \\$14{,}445.34.",
+      "The present value of the \\$30{,}000 obligation is approximately \\$18{,}287.13.",
+      "The combined lump-sum payment the winery should make today is approximately \\$32{,}732.47.",
+      "The \\$30{,}000 obligation contributes a smaller present value than the \\$18{,}000 obligation.",
+      "If the discount rate were 0% instead of 5.5%, the combined lump-sum payment today would be exactly \\$48{,}000."
     ],
     "answer_key": [
       true,
@@ -298,15 +298,15 @@
       false,
       true
     ],
-    "given": "• $K_1$ = $18,000 due in $t_1$ = 4 years\n\n• $K_2$ = $30,000 due in $t_2$ = 9 years\n\n• Continuous annual rate p = 5.5%, so r = 0.055",
+    "given": "• $K_1 = \\$18{,}000$ due in $t_1 = 4$ years\n\n• $K_2 = \\$30{,}000$ due in $t_2 = 9$ years\n\n• Continuous annual rate p = 5.5%, so r = 0.055",
     "formulas": "• PDV = $Ke^{-rt}$\n\n• Combined PDV = $\\mathrm{PDV}_1$ + $\\mathrm{PDV}_2$",
-    "steps": "$\\mathrm{PDV}_1$: $rt_1$ = 0.055 × 4 = 0.22, $e^{-0.22}$ ≈ 0.8025, so $\\mathrm{PDV}_1$ = 18,000 × 0.8025 ≈ $14,445.34. $\\mathrm{PDV}_2$: $rt_2$ = 0.055 × 9 = 0.495, $e^{-0.495}$ ≈ 0.6096, so $\\mathrm{PDV}_2$ = 30,000 × 0.6096 ≈ $18,287.13. Combined PDV = 14,445.34 + 18,287.13 ≈ $32,732.47. Compare: $18,287.13 (from the $30,000 obligation) vs. $14,445.34 (from the $18,000 obligation). At r = 0: $e^{0}$ = 1 for both terms, so combined PDV = 18,000 + 30,000 = $48,000.",
+    "steps": "$\\mathrm{PDV}_1$: $rt_1$ = 0.055 × 4 = 0.22, $e^{-0.22}$ ≈ 0.8025, so $\\mathrm{PDV}_1$ = 18,000 × 0.8025 ≈ \\$14{,}445.34. $\\mathrm{PDV}_2$: $rt_2$ = 0.055 × 9 = 0.495, $e^{-0.495}$ ≈ 0.6096, so $\\mathrm{PDV}_2$ = 30,000 × 0.6096 ≈ \\$18{,}287.13. Combined PDV = 14,445.34 + 18,287.13 ≈ \\$32{,}732.47. Compare: \\$18{,}287.13 (from the \\$30{,}000 obligation) vs. \\$14{,}445.34 (from the \\$18{,}000 obligation). At r = 0: $e^{0}$ = 1 for both terms, so combined PDV = 18,000 + 30,000 = \\$48{,}000.",
     "explanations": [
-      "Discounting the $18,000 obligation back 4 years at the continuous 5.5% rate, 18,000 × $e^{-0.22}$, gives approximately $14,445.34 as its present value.",
-      "Discounting the $30,000 obligation back 9 years at the same rate, 30,000 × $e^{-0.495}$, gives approximately $18,287.13.",
-      "Adding the two individual present values together, since both are expressed in today's dollars, gives the total lump sum the winery should pay now: 14,445.34 + 18,287.13 ≈ $32,732.47.",
-      "Comparing the two contributions directly, the $30,000 obligation actually supplies the larger present value, about $18,287.13, versus about $14,445.34 for the $18,000 obligation. Its larger face amount more than offsets the extra 5 years of discounting it faces, so it does not contribute less than the smaller, sooner obligation.",
-      "With no discounting at all, each payment's present value simply equals its face amount, so the combined lump sum reduces to 18,000 + 30,000 = $48,000, exactly the sum of the two face amounts."
+      "Discounting the \\$18{,}000 obligation back 4 years at the continuous 5.5% rate, 18,000 × $e^{-0.22}$, gives approximately \\$14{,}445.34 as its present value.",
+      "Discounting the \\$30{,}000 obligation back 9 years at the same rate, 30,000 × $e^{-0.495}$, gives approximately \\$18{,}287.13.",
+      "Adding the two individual present values together, since both are expressed in today's dollars, gives the total lump sum the winery should pay now: 14,445.34 + 18,287.13 ≈ \\$32{,}732.47.",
+      "Comparing the two contributions directly, the \\$30{,}000 obligation actually supplies the larger present value, about \\$18{,}287.13, versus about \\$14{,}445.34 for the \\$18{,}000 obligation. Its larger face amount more than offsets the extra 5 years of discounting it faces, so it does not contribute less than the smaller, sooner obligation.",
+      "With no discounting at all, each payment's present value simply equals its face amount, so the combined lump sum reduces to 18,000 + 30,000 = \\$48{,}000, exactly the sum of the two face amounts."
     ]
   },
   {
@@ -314,12 +314,12 @@
     "title": "Finding an Equivalent Annual Rate for a Continuously Discounted Trust Payment",
     "difficulty_raw": "3/5",
     "difficulty_level": "3/5",
-    "context": "A trust fund manager currently discounts a $50,000 payment due to a beneficiary in 7 years using a continuous discount rate of 5% per year. The manager wants to quote an equivalent nominal annual rate, compounded annually, that produces exactly the same present value, so this task uses K = $50,000, r = 0.05, and t = 7 as the continuous baseline.",
+    "context": "A trust fund manager currently discounts a \\$50{,}000 payment due to a beneficiary in 7 years using a continuous discount rate of 5% per year. The manager wants to quote an equivalent nominal annual rate, compounded annually, that produces exactly the same present value, so this task uses $K = \\$50{,}000$, r = 0.05, and t = 7 as the continuous baseline.",
     "statements": [
-      "The present value of the $50,000 payment under 5% continuous compounding for 7 years is approximately $33,100.00.",
+      "The present value of the \\$50{,}000 payment under 5% continuous compounding for 7 years is approximately \\$33{,}100.00.",
       "The equivalent nominal annual rate that yields the identical present value is exactly 5.00%.",
       "The equivalent annual rate is approximately 5.87% per year.",
-      "Using the correctly derived equivalent annual rate for a 3-year horizon instead of 7 years, a $50,000 payment would have a present value of approximately $43,035.40.",
+      "Using the correctly derived equivalent annual rate for a 3-year horizon instead of 7 years, a \\$50{,}000 payment would have a present value of approximately \\$43{,}035.40.",
       "The gap between the correctly derived equivalent annual rate and the 5% continuous rate is more than 1.00 percentage point."
     ],
     "answer_key": [
@@ -329,14 +329,14 @@
       true,
       false
     ],
-    "given": "• K = $50,000\n\n• Continuous annual rate p = 5%, so r = 0.05\n\n• t = 7 years",
+    "given": "• $K = \\$50{,}000$\n\n• Continuous annual rate p = 5%, so r = 0.05\n\n• t = 7 years",
     "formulas": "• Continuous PDV = $Ke^{-rt}$\n\n• Equivalent annual rate: setting $K(1+r_a)^{-t}$ = $Ke^{-rt}$ and cancelling K and t shows $1+r_a = e^{r}$ (independent of t)",
-    "steps": "rt = 0.05 × 7 = 0.35, $e^{-0.35}$ ≈ 0.704688, so PDV ≈ 50,000 × 0.704688 ≈ $35,234.40. $1+r_a = e^{0.05}$ ≈ 1.051271, so ra ≈ 0.051271 = 5.13%. Gap = 5.13% - 5.00% = 0.13 percentage points. At t = 3: continuous PDV = 50,000 × $e^{-0.15}$ ≈ $43,035.40; annual-equivalent PDV = 50,000 × $(1.051271)^{-3}$ ≈ $43,035.40 (identical).",
+    "steps": "rt = 0.05 × 7 = 0.35, $e^{-0.35}$ ≈ 0.704688, so PDV ≈ 50,000 × 0.704688 ≈ \\$35{,}234.40. $1+r_a = e^{0.05}$ ≈ 1.051271, so ra ≈ 0.051271 = 5.13%. Gap = 5.13% - 5.00% = 0.13 percentage points. At t = 3: continuous PDV = 50,000 × $e^{-0.15}$ ≈ \\$43{,}035.40; annual-equivalent PDV = 50,000 × $(1.051271)^{-3}$ ≈ \\$43{,}035.40 (identical).",
     "explanations": [
-      "Raising the payment's exponent rt = 0.05 × 7 = 0.35 and applying $e^{-0.35}$ gives the fraction of the $50,000 that survives continuous discounting over 7 years, which comes to approximately 0.704688, so multiplying through gives a present value of about $35,234.40, not $33,100.00.",
+      "Raising the payment's exponent rt = 0.05 × 7 = 0.35 and applying $e^{-0.35}$ gives the fraction of the \\$50{,}000 that survives continuous discounting over 7 years, which comes to approximately 0.704688, so multiplying through gives a present value of about \\$35{,}234.40, not \\$33{,}100.00.",
       "Continuous compounding grows money faster than annual compounding at the same numerical rate, since interest accrues at every instant rather than once a year. To replicate that stronger effect with annual compounding, the annual rate must actually be set slightly above 5.00% - specifically about 5.13% - not left equal to the continuous rate.",
       "Solving $1+r_a$ = $e^{0.05}$ gives ra ≈ 1.051271 - 1 = 5.13%, not 5.87%. The stated figure is too high and does not match the algebra of matching a continuous rate with an annual one.",
-      "Because the relationship $1+r_a = e^{r}$ does not depend on the payment horizon t, applying the 5.13% annual rate at a completely different horizon, t = 3, still reproduces the same present value as continuous compounding at 5% over that horizon: both methods give approximately $43,035.40.",
+      "Because the relationship $1+r_a = e^{r}$ does not depend on the payment horizon t, applying the 5.13% annual rate at a completely different horizon, t = 3, still reproduces the same present value as continuous compounding at 5% over that horizon: both methods give approximately \\$43{,}035.40.",
       "The actual gap between the equivalent annual rate (5.13%) and the continuous rate (5.00%) is only about 0.13 percentage points, since $e^{0.05}$ is very close to 1.05 for a small rate like this one. That gap is far below 1.00 percentage point, so the statement overstates the true difference substantially."
     ]
   },
@@ -345,13 +345,13 @@
     "title": "Meeting a Loan Covenant with a Second Receivable",
     "difficulty_raw": "3.2/5",
     "difficulty_level": "3/5",
-    "context": "A logistics company must demonstrate a combined present value of exactly $100,000 to satisfy a loan covenant. It already holds one contractual receivable of $42,000 due in 3 years. It is negotiating a second receivable due in 6 years and must determine the face amount that receivable needs to carry. The discount rate is 6% per year, compounded annually, so $K_1$ = $42,000 at $t_1$ = 3 is known and $K_2$ at $t_2$ = 6 must be found.",
+    "context": "A logistics company must demonstrate a combined present value of exactly \\$100{,}000 to satisfy a loan covenant. It already holds one contractual receivable of \\$42{,}000 due in 3 years. It is negotiating a second receivable due in 6 years and must determine the face amount that receivable needs to carry. The discount rate is 6% per year, compounded annually, so $K_1 = \\$42{,}000$ at $t_1 = 3$ is known and $K_2$ at $t_2 = 6$ must be found.",
     "statements": [
-      "The present value of the existing $42,000 receivable is approximately $35,264.01.",
-      "The present value still required from the second receivable is approximately $64,735.99.",
-      "The required face amount of the second receivable, due in 6 years, is approximately $91,829.24.",
+      "The present value of the existing \\$42{,}000 receivable is approximately \\$35{,}264.01.",
+      "The present value still required from the second receivable is approximately \\$64{,}735.99.",
+      "The required face amount of the second receivable, due in 6 years, is approximately \\$91{,}829.24.",
       "If the second receivable were instead due in 3 years, its required face amount would be larger than the required face amount for the original 6-year due date.",
-      "Raising the discount rate from 6% to 8%, with the second receivable still due in 6 years, would require a face amount of approximately $102,727.88."
+      "Raising the discount rate from 6% to 8%, with the second receivable still due in 6 years, would require a face amount of approximately \\$102{,}727.88."
     ],
     "answer_key": [
       true,
@@ -360,15 +360,15 @@
       false,
       true
     ],
-    "given": "• $K_1$ = $42,000 due in $t_1$ = 3 years\n\n• Target combined PDV = $100,000\n\n• Nominal annual rate p = 6%, so r = 0.06\n\n• Second receivable due in $t_2$ = 6 years, face amount $K_2$ unknown",
+    "given": "• $K_1 = \\$42{,}000$ due in $t_1 = 3$ years\n\n• Target combined $PDV = \\$100{,}000$\n\n• Nominal annual rate p = 6%, so r = 0.06\n\n• Second receivable due in $t_2 = 6$ years, face amount $K_2$ unknown",
     "formulas": "• PDV = $K(1+r)^{-t}$\n\n• $K_2$ = (Target − $\\mathrm{PV}_1$) × $(1+r)^{t_2}$",
-    "steps": "$\\mathrm{PV}_1$ = 42,000 × $(1.06)^{-3}$ = 42,000/1.191016 ≈ $35,264.01. $\\mathrm{PV}_2$ needed = 100,000 - 35,264.01 = $64,735.99. $K_2$ = 64,735.99 × $(1.06)^{6}$ = 64,735.99 × 1.418519 ≈ $91,829.24. If $t_2$ = 3: $K_2$ = 64,735.99 × $(1.06)^{3}$ = 64,735.99 × 1.191016 ≈ $77,101.60. At r = 8%: $K_2$ = 64,735.99 × $(1.08)^{6}$ = 64,735.99 × 1.586874 ≈ $102,727.88.",
+    "steps": "$\\mathrm{PV}_1$ = 42,000 × $(1.06)^{-3}$ = 42,000/1.191016 ≈ \\$35{,}264.01. $\\mathrm{PV}_2$ needed = 100,000 - 35,264.01 = \\$64{,}735.99. $K_2$ = 64,735.99 × $(1.06)^{6}$ = 64,735.99 × 1.418519 ≈ \\$91{,}829.24. If $t_2 = 3$: $K_2$ = 64,735.99 × $(1.06)^{3}$ = 64,735.99 × 1.191016 ≈ \\$77{,}101.60. At r = 8%: $K_2$ = 64,735.99 × $(1.08)^{6}$ = 64,735.99 × 1.586874 ≈ \\$102{,}727.88.",
     "explanations": [
-      "Discounting the existing $42,000 receivable back 3 years at 6% annual compounding, $42,000/(1.06)^{3}$, gives approximately $35,264.01 as its present value today.",
-      "Since the covenant requires a combined present value of $100,000 and the first receivable already supplies about $35,264.01 of that, the remaining present value the second receivable must contribute is 100,000 - 35,264.01 ≈ $64,735.99.",
-      "To find the face amount of a receivable given its required present value, the present value is grown forward by the compounding factor for its own maturity: 64,735.99 × $(1.06)^{6}$ ≈ $91,829.24 is the face amount needed on a receivable due in 6 years.",
-      "A receivable due sooner needs less compounding to reach the same present-value contribution, so moving the maturity from 6 years to 3 years actually reduces the required face amount, not increases it. Recomputing with $t_2$ = 3 gives only about $77,101.60, which is smaller than $91,829.24, the opposite of what the statement claims.",
-      "A higher discount rate erodes more of a future face amount's value by the time it is discounted back to today, so reaching the same $64,735.99 present-value target at 8% instead of 6% requires a larger face amount. Recomputing at 8% gives 64,735.99 × $(1.08)^{6}$ ≈ $102,727.88, confirming the figure exactly."
+      "Discounting the existing \\$42{,}000 receivable back 3 years at 6% annual compounding, \\$42{,}000/(1.06)^{3}$, gives approximately \\$35{,}264.01 as its present value today.",
+      "Since the covenant requires a combined present value of \\$100{,}000 and the first receivable already supplies about \\$35{,}264.01 of that, the remaining present value the second receivable must contribute is 100,000 - 35,264.01 ≈ \\$64{,}735.99.",
+      "To find the face amount of a receivable given its required present value, the present value is grown forward by the compounding factor for its own maturity: 64,735.99 × $(1.06)^{6}$ ≈ \\$91{,}829.24 is the face amount needed on a receivable due in 6 years.",
+      "A receivable due sooner needs less compounding to reach the same present-value contribution, so moving the maturity from 6 years to 3 years actually reduces the required face amount, not increases it. Recomputing with $t_2 = 3$ gives only about \\$77{,}101.60, which is smaller than \\$91{,}829.24, the opposite of what the statement claims.",
+      "A higher discount rate erodes more of a future face amount's value by the time it is discounted back to today, so reaching the same \\$64{,}735.99 present-value target at 8% instead of 6% requires a larger face amount. Recomputing at 8% gives 64,735.99 × $(1.08)^{6}$ ≈ \\$102{,}727.88, confirming the figure exactly."
     ]
   },
   {
@@ -376,11 +376,11 @@
     "title": "Finding the Indifference Payment for a Consulting Firm",
     "difficulty_raw": "3.4/5",
     "difficulty_level": "3/5",
-    "context": "A consulting firm can either receive $35,000 immediately or a larger payment in 4 years. The firm's opportunity cost of capital is 6.5% per year, compounded continuously. The firm wants to know the future payment amount that would make it exactly indifferent between the two options, using the immediate $35,000 as the target present value, r = 0.065, and t = 4.",
+    "context": "A consulting firm can either receive \\$35{,}000 immediately or a larger payment in 4 years. The firm's opportunity cost of capital is 6.5% per year, compounded continuously. The firm wants to know the future payment amount that would make it exactly indifferent between the two options, using the immediate \\$35{,}000 as the target present value, r = 0.065, and t = 4.",
     "statements": [
       "The continuous discount factor is approximately 0.8112.",
-      "The future payment that makes the firm indifferent between the two options is approximately $49,850.75.",
-      "This indifference amount exceeds the immediate $35,000 option by more than $11,000.",
+      "The future payment that makes the firm indifferent between the two options is approximately \\$49{,}850.75.",
+      "This indifference amount exceeds the immediate \\$35{,}000 option by more than \\$11{,}000.",
       "If the firm's opportunity cost of capital were 9% instead of 6.5%, the required indifference payment would remain unchanged from the original 4-year, 6.5% figure.",
       "If the payment horizon were shortened to 2 years instead of 4, the required indifference payment would be smaller than the original 4-year figure."
     ],
@@ -391,15 +391,15 @@
       false,
       true
     ],
-    "given": "• Immediate option = $35,000 (today)\n\n• Continuous annual rate p = 6.5%, so r = 0.065\n\n• t = 4 years",
+    "given": "• Immediate option = \\$35{,}000 (today)\n\n• Continuous annual rate p = 6.5%, so r = 0.065\n\n• t = 4 years",
     "formulas": "• Indifference condition: Immediate amount = $Ke^{-rt}$, so K = Immediate amount × $e^{rt}$",
-    "steps": "rt = 0.065 × 4 = 0.26, so $e^{-0.26}$ ≈ 0.7711. K = 35,000/0.7711 ≈ $45,392.55. Excess over $35,000 = 45,392.55 - 35,000 = $10,392.55. At r = 9%: rt = 0.36, $e^{-0.36}$ ≈ 0.6977, so K = 35,000/0.6977 ≈ $50,166.53. At t = 2: rt = 0.13, $e^{-0.13}$ ≈ 0.8781, so K = 35,000/0.8781 ≈ $39,858.99.",
+    "steps": "rt = 0.065 × 4 = 0.26, so $e^{-0.26}$ ≈ 0.7711. K = 35,000/0.7711 ≈ \\$45{,}392.55. Excess over \\$35{,}000 = 45,392.55 - 35,000 = \\$10{,}392.55. At r = 9%: rt = 0.36, $e^{-0.36}$ ≈ 0.6977, so K = 35,000/0.6977 ≈ \\$50{,}166.53. At t = 2: rt = 0.13, $e^{-0.13}$ ≈ 0.8781, so K = 35,000/0.8781 ≈ \\$39{,}858.99.",
     "explanations": [
       "Multiplying the exponent’s two pieces, 0.065 × 4 = 0.26, and evaluating $e^{-0.26}$ correctly gives approximately 0.7711, not 0.8112. The value in the statement does not match this calculation.",
-      "Since the immediate option must equal the discounted value of the future payment, the required future amount is K = 35,000/$e^{-0.26}$ ≈ 35,000/0.7711 ≈ $45,392.55, considerably less than the $49,850.75 given in the statement.",
-      "The true premium the future payment must carry over the immediate $35,000 is 45,392.55 - 35,000 = $10,392.55, which falls short of $11,000, so the claim that the excess is more than $11,000 does not hold.",
-      "A higher opportunity cost of capital discounts a future payment more heavily, so a larger future amount is required to remain equivalent to the same $35,000 today, not the same amount as before. Recomputing at 9% gives K ≈ $50,166.53, clearly different from (and larger than) the 6.5% figure of $45,392.55.",
-      "Shortening the horizon from 4 years to 2 years means less time is available for discounting to erode the future payment's value, so a smaller future amount is enough to match today's $35,000. Recomputing at t = 2 gives K ≈ $39,858.99, which is indeed smaller than the 4-year figure of $45,392.55."
+      "Since the immediate option must equal the discounted value of the future payment, the required future amount is K = 35,000/$e^{-0.26}$ ≈ 35,000/0.7711 ≈ \\$45{,}392.55, considerably less than the \\$49{,}850.75 given in the statement.",
+      "The true premium the future payment must carry over the immediate \\$35{,}000 is 45,392.55 - 35,000 = \\$10{,}392.55, which falls short of \\$11{,}000, so the claim that the excess is more than \\$11{,}000 does not hold.",
+      "A higher opportunity cost of capital discounts a future payment more heavily, so a larger future amount is required to remain equivalent to the same \\$35{,}000 today, not the same amount as before. Recomputing at 9% gives K ≈ \\$50{,}166.53, clearly different from (and larger than) the 6.5% figure of \\$45{,}392.55.",
+      "Shortening the horizon from 4 years to 2 years means less time is available for discounting to erode the future payment's value, so a smaller future amount is enough to match today's \\$35{,}000. Recomputing at t = 2 gives K ≈ \\$39{,}858.99, which is indeed smaller than the 4-year figure of \\$45{,}392.55."
     ]
   },
   {
@@ -407,11 +407,11 @@
     "title": "A Corner Solution in Aging Wine Valuation",
     "difficulty_raw": "3.6/5",
     "difficulty_level": "4/5",
-    "context": "A vineyard owner is deciding when to bottle and sell an aging batch of wine whose market value is modeled as P(t) = $40{,}000e^{0.05t}$ dollars, where t is the number of years from now. The relevant continuous interest rate for discounting is 8% per year, so this task applies the chapter's optimal-timing condition to P(t) = $40{,}000e^{0.05t}$ with r = 0.08.",
+    "context": "A vineyard owner is deciding when to bottle and sell an aging batch of wine whose market value is modeled as $P(t) = 40{,}000e^{0.05t}$ dollars, where t is the number of years from now. The relevant continuous interest rate for discounting is 8% per year, so this task applies the chapter's optimal-timing condition to $P(t) = 40{,}000e^{0.05t}$ with r = 0.08.",
     "statements": [
       "The condition P'(t*) = rP(t*) has no solution for t* > 0, so the present value is maximized at t* = 0.",
-      "The present value of the batch if sold today (t = 0) is $40,000.",
-      "The present value of the batch if instead sold in 10 years is approximately $29,632.73.",
+      "The present value of the batch if sold today (t = 0) is \\$40{,}000.",
+      "The present value of the batch if instead sold in 10 years is approximately \\$29{,}632.73.",
       "Because the market value P(t) is increasing over time, waiting to sell always increases the present value of the batch, regardless of the discount rate used.",
       "If the discount rate were instead 4%, the optimal policy would again be to sell immediately at t* = 0."
     ],
@@ -422,13 +422,13 @@
       false,
       false
     ],
-    "given": "• P(t) = $40{,}000e^{0.05t}$\n\n• Continuous annual discount rate p = 8%, so r = 0.08",
-    "formulas": "• Present value: f(t) = $P(t)e^{-rt}$ = $40{,}000e^{(0.05-0.08)t}$ = $40{,}000e^{-0.03t}$\n\n• Optimality condition: P'(t*) = rP(t*)",
-    "steps": "P'(t) = 0.05 × $40{,}000e^{0.05t}$ = 0.05P(t), so the condition P'(t*) = rP(t*) would require 0.05P(t*) = 0.08P(t*), impossible for P(t*) > 0. Since f(t) = $40{,}000e^{-0.03t}$ is strictly decreasing for t ≥ 0, f is maximized at t = 0, giving f(0) = P(0) = $40,000. f(10) = $40{,}000e^{-0.03 \\cdot 10}$ = $40{,}000e^{-0.3}$ ≈ 40,000 × 0.740818 ≈ $29,632.73. Compare f(0) = $40,000 with f(10) ≈ $29,632.73. If r = 4% < 5% growth rate, f(t) = $40{,}000e^{(0.05-0.04)t}$ = $40{,}000e^{0.01t}$, which increases without bound in t.",
+    "given": "• $P(t) = 40{,}000e^{0.05t}$\n\n• Continuous annual discount rate p = 8%, so r = 0.08",
+    "formulas": "• Present value: f(t) = $P(t)e^{-rt} = 40{,}000e^{(0.05-0.08)t} = 40{,}000e^{-0.03t}$\n\n• Optimality condition: P'(t*) = rP(t*)",
+    "steps": "$P'(t) = 0.05 \\times 40{,}000e^{0.05t} = 0.05P(t)$, so the condition P'(t*) = rP(t*) would require 0.05P(t*) = 0.08P(t*), impossible for P(t*) > 0. Since f(t) = $40{,}000e^{-0.03t}$ is strictly decreasing for t ≥ 0, f is maximized at t = 0, giving f(0) = $P(0) = \\$40{,}000$. f(10) = $40{,}000e^{-0.03 \\cdot 10} = 40{,}000e^{-0.3}$ ≈ 40,000 × 0.740818 ≈ \\$29{,}632.73. Compare f(0) = \\$40{,}000 with f(10) ≈ \\$29{,}632.73. If r = 4% < 5% growth rate, f(t) = $40{,}000e^{(0.05-0.04)t} = 40{,}000e^{0.01t}$, which increases without bound in t.",
     "explanations": [
       "Because the wine's growth rate (5%) is smaller than the discount rate (8%), the derivative P'(t) always falls short of rP(t) at every t, so there is no interior point where the two become equal. With no interior critical point available, the present value is maximized right at the boundary, t* = 0, meaning the wine should be sold immediately.",
-      "Evaluating P(t) at t = 0 gives P(0) = $40{,}000e^{0}$ = $40,000 exactly, which is simply the wine's value today before any further aging or discounting is applied.",
-      "Because the discount rate (8%) exceeds the wine's growth rate (5%), the present-value function actually shrinks as t increases; evaluating it at t = 10 gives approximately $29,632.73, which is indeed below the $40,000 obtained by selling today.",
+      "Evaluating P(t) at t = 0 gives $P(0) = \\$40${,}000e^{0} = \\$40{,}000$ exactly, which is simply the wine's value today before any further aging or discounting is applied.",
+      "Because the discount rate (8%) exceeds the wine's growth rate (5%), the present-value function actually shrinks as t increases; evaluating it at t = 10 gives approximately \\$29{,}632.73, which is indeed below the \\$40{,}000 obtained by selling today.",
       "A rising face value does not automatically translate into a rising present value once discounting is applied, since the discount rate can outpace the growth rate. Here, because 8% discounting exceeds 5% growth, present value actually falls the longer the sale is delayed, exactly as shown by comparing f(10) to f(0).",
       "If the growth rate (5%) instead exceeds the discount rate (4%), the present-value function becomes $40{,}000e^{0.01t}$, which grows without any upper limit as t increases. In that case there is no finite time that maximizes present value at all, since waiting longer always helps - the opposite conclusion from selling immediately."
     ]
@@ -438,10 +438,10 @@
     "title": "Comparative Statics for a Forestry Cooperative's Harvest Timing",
     "difficulty_raw": "3.8/5",
     "difficulty_level": "4/5",
-    "context": "A forestry cooperative's analytics team has measured, at the optimal harvest time t* for one of its timber stands: P(t*) = $520,000, P'(t*) = $46,800, and P''(t*) = $3,120 per year, with a current continuous interest rate of r = 9% per year. The team wants to apply the chapter's comparative-statics formula to find dt*/dr and to confirm the second-order condition.",
+    "context": "A forestry cooperative's analytics team has measured, at the optimal harvest time t* for one of its timber stands: $P(t*) = \\$520{,}000$, $P'(t*) = \\$46{,}800$, and $P''(t*) = \\$3{,}120$ per year, with a current continuous interest rate of r = 9% per year. The team wants to apply the chapter's comparative-statics formula to find dt*/dr and to confirm the second-order condition.",
     "statements": [
       "The data satisfy the optimality condition P'(t*) = rP(t*).",
-      "The value of P''(t*) - rP'(t*) is -$1,092.",
+      "The value of P''(t*) - rP'(t*) is -\\$1{,}092.",
       "dt*/dr is approximately -476.19.",
       "An increase in the interest rate would lengthen the optimal harvest time t*.",
       "The second-order condition P''(t*) - rP'(t*) < 0 is satisfied here."
@@ -453,15 +453,15 @@
       false,
       true
     ],
-    "given": "• P(t*) = $520,000\n\n• P'(t*) = $46,800\n\n• P''(t*) = $3,120 per year\n\n• Continuous annual rate p = 9%, so r = 0.09",
+    "given": "• $P(t*) = \\$520{,}000$\n\n• $P'(t*) = \\$46{,}800$\n\n• $P''(t*) = \\$3{,}120$ per year\n\n• Continuous annual rate p = 9%, so r = 0.09",
     "formulas": "• Optimality check: P'(t*) = rP(t*)\n\n• dt*/dr = P(t*) / [P''(t*) - rP'(t*)]\n\n• Second-order condition for a maximum: P''(t*) - rP'(t*) < 0",
-    "steps": "0.09 × 520,000 = $46,800, matching the given P'(t*) exactly. P''(t*) - rP'(t*) = 3,120 - 0.09(46,800) = 3,120 - 4,212 = -$1,092. dt*/dr = 520,000 / (-1,092) ≈ -476.19. A negative dt*/dr means t* moves in the opposite direction from r. -1,092 < 0, so the second-order condition holds.",
+    "steps": "0.09 × 520,000 = \\$46{,}800, matching the given P'(t*) exactly. P''(t*) - rP'(t*) = 3,120 - 0.09(46,800) = 3,120 - 4,212 = -\\$1{,}092. dt*/dr = 520,000 / (-1,092) ≈ -476.19. A negative dt*/dr means t* moves in the opposite direction from r. -1,092 < 0, so the second-order condition holds.",
     "explanations": [
-      "Multiplying the given interest rate by the given P(t*), 0.09 × 520,000, produces exactly $46,800, which matches the given P'(t*) precisely, confirming that the data really do describe a point satisfying the chapter's first-order optimality condition.",
-      "Substituting the given values into P''(t*) - rP'(t*) gives 3,120 - 0.09(46,800) = 3,120 - 4,212 = -$1,092, exactly as the formula requires.",
+      "Multiplying the given interest rate by the given P(t*), 0.09 × 520,000, produces exactly \\$46{,}800, which matches the given P'(t*) precisely, confirming that the data really do describe a point satisfying the chapter's first-order optimality condition.",
+      "Substituting the given values into P''(t*) - rP'(t*) gives 3,120 - 0.09(46,800) = 3,120 - 4,212 = -\\$1{,}092, exactly as the formula requires.",
       "Dividing P(t*) = 520,000 by the -1,092 found above gives dt*/dr = 520,000/(-1,092) ≈ -476.19, meaning a one-unit increase in r would be associated with roughly a 476-year shift in t* in the opposite direction.",
       "A negative sensitivity dt*/dr means the optimal harvest time moves opposite to the interest rate, so a rate increase actually shortens t*, not lengthens it. This matches the chapter's broader conclusion that higher interest rates make decision-makers more impatient and push optimal cutting times earlier, not later.",
-      "Since P''(t*) - rP'(t*) works out to -$1,092, which is indeed less than zero, the chapter's second-order condition for a genuine present-value maximum is satisfied, confirming that t* truly maximizes (rather than minimizes) the present value here."
+      "Since P''(t*) - rP'(t*) works out to -\\$1{,}092, which is indeed less than zero, the chapter's second-order condition for a genuine present-value maximum is satisfied, confirming that t* truly maximizes (rather than minimizes) the present value here."
     ]
   },
   {
@@ -469,11 +469,11 @@
     "title": "Full Harvest-Timing Analysis for an Orchard's Timber",
     "difficulty_raw": "4/5",
     "difficulty_level": "4/5",
-    "context": "An orchard's standalone timber value is modeled by P(t) = $3{,}000(t+4)^{2}$ dollars. The continuous interest rate is 9% per year. Management wants the optimal harvest time, confirmation that it is indeed a present-value maximum, and the sensitivity of that optimal time to the interest rate, using P(t) = $3{,}000(t+4)^{2}$ and r = 0.09.",
+    "context": "An orchard's standalone timber value is modeled by $P(t) = 3{,}000(t+4)^{2}$ dollars. The continuous interest rate is 9% per year. Management wants the optimal harvest time, confirmation that it is indeed a present-value maximum, and the sensitivity of that optimal time to the interest rate, using $P(t) = 3{,}000(t+4)^{2}$ and r = 0.09.",
     "statements": [
       "The optimal harvest time t* is approximately 18.22 years.",
-      "The present value of the orchard's timber at t* is approximately $250,000.00.",
-      "The second-order quantity P''(t*) - rP'(t*) evaluates to +$6,000.",
+      "The present value of the orchard's timber at t* is approximately \\$250{,}000.00.",
+      "The second-order quantity P''(t*) - rP'(t*) evaluates to +\\$6{,}000.",
       "dt*/dr is approximately +246.91.",
       "If the interest rate were exactly 4.5% instead of 9%, the optimal harvest time would be exactly double the original, at 36.44 years."
     ],
@@ -484,13 +484,13 @@
       false,
       false
     ],
-    "given": "• P(t) = $3{,}000(t+4)^{2}$\n\n• Continuous annual rate p = 9%, so r = 0.09",
+    "given": "• $P(t) = 3{,}000(t+4)^{2}$\n\n• Continuous annual rate p = 9%, so r = 0.09",
     "formulas": "• P'(t) = 6,000(t + 4)\n\n• Optimality condition: P'(t*) = rP(t*)\n\n• dt*/dr = P(t*) / [P''(t*) - rP'(t*)]",
-    "steps": "6,000(t + 4) = 0.09 × $3{,}000(t+4)^{2}$ = $270(t+4)^{2}$; dividing by (t + 4) gives 6,000 = 270(t + 4), so t + 4 = 22.2222, i.e., t* ≈ 18.22 years. P(t*) = $3{,}000(22.2222)^{2}$ ≈ $1,481,481.48. f(t*) = $P(t*)e^{-0.09 \\cdot 18.2222}$ = 1,481,481.48 × $e^{-1.64}$ ≈ $287,377.84. P'(t*) = 6,000(22.2222) ≈ $133,333.33. P''(t) = 6,000 (constant). P''(t*) - rP'(t*) = 6,000 - 0.09(133,333.33) = 6,000 - 12,000 = -$6,000. dt*/dr = 1,481,481.48 / (-6,000) ≈ -246.91. General relation for this P(t): t* + 4 = 2/r, so t* = 2/r - 4. At r = 4.5%: t* = 2/0.045 - 4 ≈ 40.44 years.",
+    "steps": "$6{,}000(t + 4) = 0.09 \\times 3{,}000(t+4)^{2} = 270(t+4)^{2}$; dividing by (t + 4) gives 6,000 = 270(t + 4), so t + 4 = 22.2222, i.e., t* ≈ 18.22 years. $P(t*) = 3{,}000(22.2222)^{2}$ ≈ \\$1{,}481{,}481.48. f(t*) = $P(t*)e^{-0.09 \\cdot 18.2222}$ = 1,481,481.48 × $e^{-1.64}$ ≈ \\$287{,}377.84. P'(t*) = 6,000(22.2222) ≈ \\$133{,}333.33. P''(t) = 6,000 (constant). P''(t*) - rP'(t*) = 6,000 - 0.09(133,333.33) = 6,000 - 12,000 = -\\$6{,}000. dt*/dr = 1,481,481.48 / (-6,000) ≈ -246.91. General relation for this P(t): t* + 4 = 2/r, so t* = 2/r - 4. At r = 4.5%: t* = 2/0.045 - 4 ≈ 40.44 years.",
     "explanations": [
       "Solving 6,000(t + 4) = $270(t + 4)^{2}$ by dividing out the common factor (t + 4) gives 6,000 = 270(t + 4), so t + 4 = 22.2222 and t* ≈ 18.22 years, matching the optimality condition exactly.",
-      "Evaluating P(t*) first and then multiplying by $e^{-rt^*}$ gives a present value of approximately $287,377.84, considerably above the $250,000.00 stated, which understates the true maximum by more than $37,000.",
-      "Carefully computing P''(t*) - rP'(t*) = 6,000 - 12,000 gives -$6,000, not +$6,000. Moreover, a negative value here is precisely what confirms a maximum under the chapter's second-order condition, so the correct sign points to a maximum, not a minimum as the statement claims.",
+      "Evaluating P(t*) first and then multiplying by $e^{-rt^*}$ gives a present value of approximately \\$287{,}377.84, considerably above the \\$250{,}000.00 stated, which understates the true maximum by more than \\$37{,}000.",
+      "Carefully computing P''(t*) - rP'(t*) = 6,000 - 12,000 gives -\\$6{,}000, not +\\$6{,}000. Moreover, a negative value here is precisely what confirms a maximum under the chapter's second-order condition, so the correct sign points to a maximum, not a minimum as the statement claims.",
       "Dividing P(t*) by the correctly signed denominator gives dt*/dr ≈ -246.91, which is negative, not positive. A negative sensitivity means a higher interest rate shortens the optimal harvest time rather than lengthening it.",
       "Using the exact relation t* = 2/r - 4 derived from this particular P(t), halving r from 9% to 4.5% gives t* = 2/0.045 - 4 ≈ 40.44 years. Since double the original 18.22 years would be 36.44 years, the actual relationship between t* and r is not a simple proportional doubling, and the true value (40.44) exceeds that naive expectation."
     ]
@@ -500,13 +500,13 @@
     "title": "Combining a Private-Equity Exit Payment with a Short-Dated Side Payment",
     "difficulty_raw": "4.3/5",
     "difficulty_level": "4/5",
-    "context": "A private equity fund expects to receive $250,000 from a portfolio-company exit in exactly 2.5 years, plus a smaller side payment of $40,000 in 7 months from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $K_1$ = $250,000 at $t_1$ = 2.5 and $K_2$ = $40,000 at $t_2$ = 7/12, with r = 0.11.",
+    "context": "A private equity fund expects to receive \\$250{,}000 from a portfolio-company exit in exactly 2.5 years, plus a smaller side payment of \\$40{,}000 in 7 months from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $K_1 = \\$250{,}000$ at $t_1 = 2.5$ and $K_2 = \\$40{,}000$ at $t_2 = 7/12$, with r = 0.11.",
     "statements": [
-      "The present value of the $250,000 exit payment is approximately $189,893.03.",
-      "The present value of the $40,000 side payment is approximately $37,513.95.",
-      "The combined present value of both payments is approximately $230,000.00.",
-      "The $40,000 side payment is discounted by more than 10% of its face value.",
-      "If the discount rate were 0% instead of 11%, the combined present value of both payments would be exactly $290,000."
+      "The present value of the \\$250{,}000 exit payment is approximately \\$189{,}893.03.",
+      "The present value of the \\$40{,}000 side payment is approximately \\$37{,}513.95.",
+      "The combined present value of both payments is approximately \\$230{,}000.00.",
+      "The \\$40{,}000 side payment is discounted by more than 10% of its face value.",
+      "If the discount rate were 0% instead of 11%, the combined present value of both payments would be exactly \\$290{,}000."
     ],
     "answer_key": [
       true,
@@ -515,15 +515,15 @@
       false,
       true
     ],
-    "given": "• $K_1$ = $250,000 due in $t_1$ = 2.5 years\n\n• $K_2$ = $40,000 due in $t_2$ = 7/12 year\n\n• Continuous annual rate p = 11%, so r = 0.11",
+    "given": "• $K_1 = \\$250{,}000$ due in $t_1 = 2.5$ years\n\n• $K_2 = \\$40{,}000$ due in $t_2 = 7/12$ year\n\n• Continuous annual rate p = 11%, so r = 0.11",
     "formulas": "• PDV = $Ke^{-rt}$\n\n• Combined PDV = $\\mathrm{PDV}_1$ + $\\mathrm{PDV}_2$",
-    "steps": "$rt_1$ = 0.11 × 2.5 = 0.275, $e^{-0.275}$ ≈ 0.759572, so $\\mathrm{PV}_1$ = 250,000 × 0.759572 ≈ $189,893.03. $rt_2$ = 0.11 × 0.583333 ≈ 0.064167, $e^{-0.064167}$ ≈ 0.937849, so $\\mathrm{PV}_2$ = 40,000 × 0.937849 ≈ $37,513.95. Combined PDV = 189,893.03 + 37,513.95 ≈ $227,406.98. $\\mathrm{PV}_2$ ≈ $37,513.95, which is 40,000 - 37,513.95 = $2,486.05 less than face value, only about 6.2% of the face amount. At r = 0: $e^{0}$ = 1, so combined PDV = 250,000 + 40,000 = $290,000.",
+    "steps": "$rt_1$ = 0.11 × 2.5 = 0.275, $e^{-0.275}$ ≈ 0.759572, so $\\mathrm{PV}_1$ = 250,000 × 0.759572 ≈ \\$189{,}893.03. $rt_2$ = 0.11 × 0.583333 ≈ 0.064167, $e^{-0.064167}$ ≈ 0.937849, so $\\mathrm{PV}_2$ = 40,000 × 0.937849 ≈ \\$37{,}513.95. Combined PDV = 189,893.03 + 37,513.95 ≈ \\$227{,}406.98. $\\mathrm{PV}_2$ ≈ \\$37{,}513.95, which is 40,000 - 37,513.95 = \\$2{,}486.05 less than face value, only about 6.2% of the face amount. At r = 0: $e^{0}$ = 1, so combined PDV = 250,000 + 40,000 = \\$290{,}000.",
     "explanations": [
-      "Multiplying the exit payment's exponent, 0.11 × 2.5 = 0.275, into $e^{-0.275}$ gives approximately 0.759572, and applying that discount factor to $250,000 gives a present value of about $189,893.03.",
-      "The side payment's much shorter horizon, 7/12 of a year, gives a smaller exponent of about 0.064167, and $e^{-0.064167}$ ≈ 0.937849 applied to $40,000 gives a present value of about $37,513.95.",
-      "Adding the two individually discounted values, 189,893.03 + 37,513.95, gives approximately $227,406.98, not $230,000.00 - the stated combined figure overstates the correct total by more than $2,500.",
-      "Because the side payment is due so soon, only about 7 months away, very little discounting has time to accumulate on it. Its present value of approximately $37,513.95 sits only about 6.2% below its $40,000 face value, which is well above the $36,000 threshold implied by more than a 10% reduction.",
-      "With no discounting applied at all, each payment's present value collapses to its own face value, so the combined total simply becomes 250,000 + 40,000 = $290,000, exactly as the statement describes."
+      "Multiplying the exit payment's exponent, 0.11 × 2.5 = 0.275, into $e^{-0.275}$ gives approximately 0.759572, and applying that discount factor to \\$250{,}000 gives a present value of about \\$189{,}893.03.",
+      "The side payment's much shorter horizon, 7/12 of a year, gives a smaller exponent of about 0.064167, and $e^{-0.064167}$ ≈ 0.937849 applied to \\$40{,}000 gives a present value of about \\$37{,}513.95.",
+      "Adding the two individually discounted values, 189,893.03 + 37,513.95, gives approximately \\$227{,}406.98, not \\$230{,}000.00 - the stated combined figure overstates the correct total by more than \\$2{,}500.",
+      "Because the side payment is due so soon, only about 7 months away, very little discounting has time to accumulate on it. Its present value of approximately \\$37{,}513.95 sits only about 6.2% below its \\$40{,}000 face value, which is well above the \\$36{,}000 threshold implied by more than a 10% reduction.",
+      "With no discounting applied at all, each payment's present value collapses to its own face value, so the combined total simply becomes 250,000 + 40,000 = \\$290{,}000, exactly as the statement describes."
     ]
   },
   {
@@ -531,11 +531,11 @@
     "title": "Implied Rate on a Biotech Milestone-Contingent Investment",
     "difficulty_raw": "4.6/5",
     "difficulty_level": "5/5",
-    "context": "Investors paid $2,000,000 today for preferred shares that convert into a guaranteed $3,200,000 payout in 4.5 years if a specific FDA milestone is met, with value discounted continuously. The investors' analyst wants to determine the implied continuous discount rate and test its sensitivity, using PDV = $2,000,000, K = $3,200,000, and t = 4.5.",
+    "context": "Investors paid \\$2{,}000{,}000 today for preferred shares that convert into a guaranteed \\$3{,}200{,}000 payout in 4.5 years if a specific FDA milestone is met, with value discounted continuously. The investors' analyst wants to determine the implied continuous discount rate and test its sensitivity, using $PDV = \\$2{,}000{,}000$, $K = \\$3{,}200{,}000$, and t = 4.5.",
     "statements": [
       "The implied discount factor is exactly 0.625.",
       "The implied continuous discount rate is approximately 10.44% per year.",
-      "If the milestone payout were instead $3,600,000, the implied discount rate would be higher than the rate implied by the original $3,200,000 payout.",
+      "If the milestone payout were instead \\$3{,}600{,}000, the implied discount rate would be higher than the rate implied by the original \\$3{,}200{,}000 payout.",
       "If the time to payout were shortened to 3 years instead of 4.5, the implied discount rate would be lower than the rate implied by the original 4.5-year horizon.",
       "Doubling the time horizon to 9 years would require the rate to be approximately 5.22%."
     ],
@@ -546,13 +546,13 @@
       false,
       true
     ],
-    "given": "• PDV = $2,000,000\n\n• K = $3,200,000\n\n• t = 4.5 years (continuous compounding)",
+    "given": "• $PDV = \\$2{,}000{,}000$\n\n• $K = \\$3{,}200{,}000$\n\n• t = 4.5 years (continuous compounding)",
     "formulas": "• PDV = $Ke^{-rt}$, so r = -ln(PDV/K) / t",
-    "steps": "PDV/K = 2,000,000/3,200,000 = 0.625. r = -ln(0.625)/4.5 = 0.470004/4.5 ≈ 0.104445 = 10.44%. For K = $3,600,000: ratio = 2,000,000/3,600,000 ≈ 0.555556, r = -ln(0.555556)/4.5 ≈ 0.587787/4.5 ≈ 0.130619 = 13.06%. For t = 3: r = -ln(0.625)/3 = 0.470004/3 ≈ 0.156668 = 15.67%. For t = 9 with the same discount factor 0.625: r = -ln(0.625)/9 = 0.470004/9 ≈ 0.052223 = 5.22%.",
+    "steps": "PDV/K = 2,000,000/3,200,000 = 0.625. r = -ln(0.625)/4.5 = 0.470004/4.5 ≈ 0.104445 = 10.44%. For $K = \\$3{,}600{,}000$: ratio = 2,000,000/3,600,000 ≈ 0.555556, r = -ln(0.555556)/4.5 ≈ 0.587787/4.5 ≈ 0.130619 = 13.06%. For t = 3: r = -ln(0.625)/3 = 0.470004/3 ≈ 0.156668 = 15.67%. For t = 9 with the same discount factor 0.625: r = -ln(0.625)/9 = 0.470004/9 ≈ 0.052223 = 5.22%.",
     "explanations": [
-      "Dividing the $2,000,000 price paid by the $3,200,000 guaranteed payout gives exactly 2,000,000/3,200,000 = 0.625, with no rounding involved.",
+      "Dividing the \\$2{,}000{,}000 price paid by the \\$3{,}200{,}000 guaranteed payout gives exactly 2,000,000/3,200,000 = 0.625, with no rounding involved.",
       "Solving the continuous present-value formula for r using the 0.625 discount factor over a 4.5-year horizon, r = -ln(0.625)/4.5, gives approximately 10.44%.",
-      "A larger promised payout for the same $2,000,000 price implies the investors are accepting less discounting relative to the payout, which corresponds to a lower discount factor and therefore a higher implied rate. Recomputing with a $3,600,000 payout gives an implied rate of about 13.06%, confirming it is indeed higher than 10.44%.",
+      "A larger promised payout for the same \\$2{,}000{,}000 price implies the investors are accepting less discounting relative to the payout, which corresponds to a lower discount factor and therefore a higher implied rate. Recomputing with a \\$3{,}600{,}000 payout gives an implied rate of about 13.06%, confirming it is indeed higher than 10.44%.",
       "Reaching the very same discount factor, 0.625, over a shorter horizon requires a stronger annual rate, not a weaker one, since less time is available to accumulate the same proportional discount. Recomputing with t = 3 gives an implied rate of about 15.67%, which is higher than 10.44%, the opposite of what the statement claims.",
       "Since the discount factor 0.625 corresponds to a fixed value of the product r × t (specifically -ln(0.625) ≈ 0.470004), doubling t from 4.5 to 9 years while holding that product constant forces r to be cut exactly in half, from about 10.44% down to about 5.22%."
     ]
@@ -562,11 +562,11 @@
     "title": "General Harvest-Timing Formula for a Forestry Consultancy",
     "difficulty_raw": "4.8/5",
     "difficulty_level": "5/5",
-    "context": "A forestry consultancy models a class of timber stands with value function P(t) = $A(t + k)^{2}$ for positive constants A and k, discounted continuously at rate r. For one particular stand, A = $1,200, k = 5, and r = 7.5% per year. The consultancy wants the general optimal-time formula, the specific optimal time, and two comparative-statics checks.",
+    "context": "A forestry consultancy models a class of timber stands with value function $P(t) = A(t + k)^{2}$ for positive constants A and k, discounted continuously at rate r. For one particular stand, $A = \\$1{,}200$, k = 5, and r = 7.5% per year. The consultancy wants the general optimal-time formula, the specific optimal time, and two comparative-statics checks.",
     "statements": [
       "The general optimal-time formula for this family of functions is t* = 2/r - k.",
       "Using A = 1,200, k = 5, and r = 7.5%, the optimal harvest time is approximately t* = 21.67 years.",
-      "The present value at t* is approximately $195,500.00.",
+      "The present value at t* is approximately \\$195{,}500.00.",
       "If k were increased to 8, the optimal harvest time would be shorter than the original optimal time.",
       "If the interest rate were doubled to 15%, the optimal harvest time would be more than half of the original optimal time."
     ],
@@ -577,13 +577,13 @@
       true,
       false
     ],
-    "given": "• P(t) = $A(t + k)^{2}$, with A = 1,200, k = 5\n\n• Continuous annual rate p = 7.5%, so r = 0.075",
+    "given": "• $P(t) = A(t + k)^{2}$, with A = 1,200, k = 5\n\n• Continuous annual rate p = 7.5%, so r = 0.075",
     "formulas": "• P'(t) = 2A(t + k)\n\n• Optimality condition: P'(t*) = rP(t*)",
-    "steps": "2A(t + k) = $r A(t + k)^{2}$; dividing both sides by A(t + k) (nonzero) gives 2 = r(t + k), so t* = 2/r - k. t* = 2/0.075 - 5 = 26.6667 - 5 ≈ 21.67 years. P(t*) = $1{,}200(26.6667)^{2}$ ≈ $853,333.33. f(t*) = 853,333.33 × $e^{-0.075 \\cdot 21.6667}$ = 853,333.33 × $e^{-1.625}$ ≈ $168,031.30. With k = 8: t* = 2/0.075 - 8 ≈ 26.6667 - 8 = 18.67 years. With r = 15%: t* = 2/0.15 - 5 = 13.3333 - 5 = 8.33 years. Half of the original 21.67 years is 10.83 years.",
+    "steps": "2A(t + k) = $r A(t + k)^{2}$; dividing both sides by A(t + k) (nonzero) gives 2 = r(t + k), so t* = 2/r - k. t* = 2/0.075 - 5 = 26.6667 - 5 ≈ 21.67 years. $P(t*) = 1{,}200(26.6667)^{2}$ ≈ \\$853{,}333.33. f(t*) = 853,333.33 × $e^{-0.075 \\cdot 21.6667}$ = 853,333.33 × $e^{-1.625}$ ≈ \\$168{,}031.30. With k = 8: t* = 2/0.075 - 8 ≈ 26.6667 - 8 = 18.67 years. With r = 15%: t* = 2/0.15 - 5 = 13.3333 - 5 = 8.33 years. Half of the original 21.67 years is 10.83 years.",
     "explanations": [
       "Dividing the optimality equation 2A(t + k) = $r A(t + k)^{2}$ through by the common factor A(t + k) leaves 2 = r(t + k), and rearranging for t gives exactly t* = 2/r - k, confirming the general formula.",
       "Plugging r = 0.075 and k = 5 into t* = 2/r - k gives 2/0.075 - 5 = 26.6667 - 5 ≈ 21.67 years.",
-      "Evaluating P at t* and then discounting with $e^{-rt^*}$ gives a present value of approximately $168,031.30, well below the $195,500.00 stated, which overstates the true value by over $27,000.",
+      "Evaluating P at t* and then discounting with $e^{-rt^*}$ gives a present value of approximately \\$168{,}031.30, well below the \\$195{,}500.00 stated, which overstates the true value by over \\$27{,}000.",
       "Since t* = 2/r - k decreases as k increases (a larger k is subtracted), raising k from 5 to 8 shortens the optimal harvest time. Recomputing with k = 8 gives t* ≈ 18.67 years, which is indeed shorter than the original 21.67 years.",
       "Doubling r to 15% gives t* = 2/0.15 - 5 = 8.33 years. Half of the original 21.67 years is 10.83 years, and 8.33 years falls below that halfway mark, meaning the optimal time actually drops by more than half rather than staying above it."
     ]
@@ -593,13 +593,13 @@
     "title": "Pricing Two Franchise Payments Related by a Common Time Horizon",
     "difficulty_raw": "5/5",
     "difficulty_level": "5/5",
-    "context": "A franchise agreement promises an investor two payments from a franchisee: $30,000 in exactly 5 years and $55,000 in exactly 10 years (twice the first horizon). Value is discounted continuously at 8% per year. Because the second payment date is exactly double the first, its discount factor is the square of the first payment's discount factor, so this task uses $K_1$ = $30,000 at $t_1$ = 5, $K_2$ = $55,000 at $t_2$ = 10, and r = 0.08.",
+    "context": "A franchise agreement promises an investor two payments from a franchisee: \\$30{,}000 in exactly 5 years and \\$55{,}000 in exactly 10 years (twice the first horizon). Value is discounted continuously at 8% per year. Because the second payment date is exactly double the first, its discount factor is the square of the first payment's discount factor, so this task uses $K_1 = \\$30{,}000$ at $t_1 = 5$, $K_2 = \\$55{,}000$ at $t_2 = 10$, and r = 0.08.",
     "statements": [
       "The discount factor for the 5-year payment is approximately 0.6703.",
       "The discount factor for the 10-year payment is approximately 0.4493.",
-      "The present value of the $30,000 payment is approximately $21,500.00.",
-      "The present value of the $55,000 payment is approximately $26,000.00.",
-      "The combined present value the investor should pay today for both payments is approximately $47,500.00."
+      "The present value of the \\$30{,}000 payment is approximately \\$21{,}500.00.",
+      "The present value of the \\$55{,}000 payment is approximately \\$26{,}000.00.",
+      "The combined present value the investor should pay today for both payments is approximately \\$47{,}500.00."
     ],
     "answer_key": [
       true,
@@ -608,15 +608,15 @@
       false,
       false
     ],
-    "given": "• $K_1$ = $30,000 due in $t_1$ = 5 years\n\n• $K_2$ = $55,000 due in $t_2$ = 10 years\n\n• Continuous annual rate p = 8%, so r = 0.08",
+    "given": "• $K_1 = \\$30{,}000$ due in $t_1 = 5$ years\n\n• $K_2 = \\$55{,}000$ due in $t_2 = 10$ years\n\n• Continuous annual rate p = 8%, so r = 0.08",
     "formulas": "• PDV = $Ke^{-rt}$\n\n• Since $t_2 = 2t_1$, the discount factor $e^{-rt_2}=(e^{-rt_1})^{2}$\n\n• Combined PDV = $\\mathrm{PDV}_1$ + $\\mathrm{PDV}_2$",
-    "steps": "$e^{-0.4}$ ≈ 0.670320. $e^{-0.8}$ ≈ 0.449329; note $(0.670320)^{2}$ ≈ 0.449329, confirming the squaring relationship. $\\mathrm{PV}_1$ = 30,000 × 0.670320 ≈ $20,109.60. $\\mathrm{PV}_2$ = 55,000 × 0.449329 ≈ $24,713.09. Combined PDV = 20,109.60 + 24,713.09 ≈ $44,822.69.",
+    "steps": "$e^{-0.4}$ ≈ 0.670320. $e^{-0.8}$ ≈ 0.449329; note $(0.670320)^{2}$ ≈ 0.449329, confirming the squaring relationship. $\\mathrm{PV}_1$ = 30,000 × 0.670320 ≈ \\$20{,}109.60. $\\mathrm{PV}_2$ = 55,000 × 0.449329 ≈ \\$24{,}713.09. Combined PDV = 20,109.60 + 24,713.09 ≈ \\$44{,}822.69.",
     "explanations": [
       "Raising e to the power -0.4 (the product of the 8% rate and the 5-year horizon) gives a discount factor of approximately 0.6703 for the first payment.",
       "Since the 10-year horizon is exactly twice the 5-year horizon, its exponent is exactly double as well, and e-r(2t) equals $(e^{-rt})^{2}$ by the laws of exponents. Squaring 0.6703 gives approximately 0.4493, matching $e^{-0.8}$ exactly.",
-      "Multiplying the $30,000 face amount by the 5-year discount factor, 30,000 × 0.670320, gives a present value of approximately $20,109.60, not $21,500.00.",
-      "Multiplying the $55,000 face amount by the 10-year discount factor, 55,000 × 0.449329, gives a present value of approximately $24,713.09, not $26,000.00.",
-      "Adding the two present values together, since both are already expressed in today's dollars, gives the total the investor should pay now: 20,109.60 + 24,713.09 ≈ $44,822.69, not $47,500.00."
+      "Multiplying the \\$30{,}000 face amount by the 5-year discount factor, 30,000 × 0.670320, gives a present value of approximately \\$20{,}109.60, not \\$21{,}500.00.",
+      "Multiplying the \\$55{,}000 face amount by the 10-year discount factor, 55,000 × 0.449329, gives a present value of approximately \\$24{,}713.09, not \\$26{,}000.00.",
+      "Adding the two present values together, since both are already expressed in today's dollars, gives the total the investor should pay now: 20,109.60 + 24,713.09 ≈ \\$44{,}822.69, not \\$47{,}500.00."
     ]
   }
 ]
