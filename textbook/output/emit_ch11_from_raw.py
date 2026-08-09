@@ -24,6 +24,40 @@ def mathify_light(text: str) -> str:
     return work
 
 
+def format_formula_block(formulas: str) -> list[str]:
+    """
+    Emit Part 2 as separate bullet lines for RichMathLine.
+    Do not use $$ display wrappers: Ch11 formulas mix labels + KaTeX and $$ turns them red/raw.
+    Only split on existing bullets/newlines — never cut inside a $...$ span.
+    """
+    raw = (formulas or "").strip()
+    if not raw:
+        return []
+
+    # Un-smash bullets without touching math interiors
+    work = re.sub(r"([a-zA-Z0-9.%])•", r"\1\n• ", raw)
+    work = re.sub(r"•([A-Za-z0-9$])", r"• \1", work)
+
+    items: list[str] = []
+    for ln in re.split(r"\n+|(?=\s*•)", work):
+        ln = ln.strip()
+        if not ln:
+            continue
+        # Also split multi-bullet single lines
+        if ln.count("•") > 1 and not ln.startswith("$"):
+            bits = [b.strip() for b in ln.split("•") if b.strip()]
+            items.extend(bits)
+        else:
+            items.append(ln.lstrip("• ").strip())
+
+    out: list[str] = []
+    for item in items:
+        if not item:
+            continue
+        out.append(f"• {item}" if not item.startswith("•") else item)
+    return out or [f"• {raw}"]
+
+
 def build_overview(task: dict, sub_id: str) -> str:
     title = task["title"]
     given = task.get("given") or ""
@@ -42,7 +76,8 @@ def build_overview(task: dict, sub_id: str) -> str:
         "",
     ]
     if given:
-        parts.append(given)
+        # Same bullet un-smash as formulas — Setup was rendering "9years•Tranche2"
+        parts.extend(format_formula_block(given) if ("•" in given or "\n" in given) else [given])
         parts.append("")
     else:
         parts.append(f"This is a Section {sub_id} true/false case on {title}.")
@@ -50,19 +85,10 @@ def build_overview(task: dict, sub_id: str) -> str:
 
     parts += ["**Part 2: Formula.**", ""]
     if formulas:
-        # Put key formula lines into display when short-ish
-        formula_lines = [ln.strip() for ln in re.split(r"(?<=[.;])\s+", formulas) if ln.strip()]
-        shown = False
-        for fl in formula_lines[:3]:
-            if len(fl) < 120 and any(c in fl for c in "=−-+/()"):
-                parts.append("$$")
-                parts.append(fl.replace("$$", ""))
-                parts.append("$$")
-                parts.append("")
-                shown = True
-        if not shown:
-            parts.append(formulas)
-            parts.append("")
+        # NEVER wrap Ch11 formula blobs in $$ — English labels + nested $ break KaTeX
+        # (renders as red raw "$…$"). Emit one bullet per formula, prose outside math.
+        parts.extend(format_formula_block(formulas))
+        parts.append("")
     else:
         parts.append("Use the formulas introduced in this subsection.")
         parts.append("")

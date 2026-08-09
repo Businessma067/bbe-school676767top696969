@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+"""
+Shared rules for Ch11 subsection writers.
+Each agent writes textbook/output/ch11_subsection_fixes/{sid}.json
+= full list of tasks for that subsection only (same schema as in ch11_raw).
+"""
+
+RULES = """
+CONTENT RULES (mandatory for every field: given, formulas, steps, explanations, context, statements, title):
+
+1. NEVER put English words inside $...$ or $$. Math-only: variables, numbers, operators, \\命令.
+   BAD: $(1 + monthly rate)^{12}$
+   GOOD: effective annual factor $(1+i_m)^{12}-1$, where $i_m$ is the monthly rate.
+
+2. NEVER glue two formulas on one line without a bullet or newline.
+   BAD: $S_0=\\mathrm{Target}/(1+r/n)^{nt} R=(1+r/n)^{n}-1$
+   GOOD:
+   • $S_0 = T/(1+r/n)^{nt}$ (T = target amount)
+   • $R = (1+r/n)^{n}-1$
+
+3. Split bullet lists with newline before each •. Fix smash: "9years•Tranche2" → "9 years.\\n• Tranche 2: ..."
+
+4. Currency is prose $1,000 (with comma) — NOT inside KaTeX. Variables use $a$, $k$, $f_n$.
+
+5. Spaces around + and = in money sums: $225,000.00 + $215,603.80 = $440,603.80
+
+6. Exponents always ^{...}: (1.08)^{12}, e^{-\\delta t}, k^{n}. Never flat (1.08)12 or e-δt for algebra lines.
+
+7. Prose labels OUTSIDE math: "fraction remaining" is text, not inside $e^{-\\delta t} = fraction remaining$.
+
+8. formulas field: one concept per bullet, each bullet starts with •, prefer newline-separated.
+9. given field: readable bullets or short sentences; no TOC chrome ("Given: Symbol Value").
+10. Keep math answers numerically correct — only fix presentation unless the expression is garbled (e.g. 501/80 → 50^{1/80}).
+
+STYLE target: Ch5 — short stem ok; Part fields will be built by emit from given/formulas/steps.
+"""
