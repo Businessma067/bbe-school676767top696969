@@ -19,8 +19,8 @@
       false,
       false
     ],
-    "given": "• $P = \\$6{,}000$\n• Nominal annual rate $r = 7.20\\% = 0.072$\n• Compounding frequency $n = 12$ (monthly)\n• Time = 1 year",
-    "formulas": "• Monthly periodic rate $i_m = r/12$\n• Effective annual rate $R = (1+i_m)^{12} - 1$\n• Future value $FV = P(1+R)$",
+    "given": "$P = \\$6{,}000$\nNominal annual rate $r = 7.20\\% = 0.072$\nCompounding frequency $n = 12$ (monthly)\nTime = 1 year",
+    "formulas": "Monthly periodic rate $i_m = r/12$\nEffective annual rate $R = (1+i_m)^{12} - 1$\nFuture value $FV = P(1+R)$",
     "steps": "Periodic rate = 0.072/12 = 0.006 = 0.60%.\nR = $(1.006)^{12}$ - 1 ≈ 1.074424 - 1 = 0.074424 ≈ 7.44%.\nFV = 6,000 × 1.074424 = \\$6,446.54.\nAnnual compounding (n = 1) gives R = nominal rate = 7.20%, which is lower than 7.44%, not higher.\nGap = 7.44% - 7.20% = 0.24 percentage points, which is far less than 1.00 point.",
     "explanations": [
       "Periodic rate = 0.072/12 = 0.60%, matching exactly.",
@@ -50,8 +50,8 @@
       false,
       false
     ],
-    "given": "• $S_0 = \\$6{,}000$\n• Nominal annual rate $r = 8\\% = 0.08$\n• Compounding frequency $n = 4$ (quarterly)\n• Time $t = 6$ years",
-    "formulas": "• Periodic rate $= r/n$\n• Future value $S(t) = S_0(1+r/n)^{nt}$",
+    "given": "$S_0 = \\$6{,}000$\nNominal annual rate $r = 8\\% = 0.08$\nCompounding frequency $n = 4$ (quarterly)\nTime $t = 6$ years",
+    "formulas": "Periodic rate $= r/n$\nFuture value $S(t) = S_0(1+r/n)^{nt}$",
     "steps": "Periodic rate = 0.08/4 = 0.02 = 2.00%; nt = 4 × 6 = 24.\nS(6) = 6,000 × $(1.02)^{24}$ ≈ 6,000 × 1.608435 = \\$9,650.61 (not \\$9,860.00).\nCompound growth is exponential, not linear, in time: $(1.02)^{12}$ ≈ 1.268242, so the 3-year value would be about \\$7,609.45, which is NOT half of \\$9,650.61 (half would be \\$4,825.31).\nTotal growth = (9,650.61 - 6,000)/6,000 ≈ 0.6084 = 60.84%, which is not more than 65%.",
     "explanations": [
       "Periodic rate = 0.08/4 = 2.00%, matching exactly.",
@@ -81,8 +81,8 @@
       false,
       true
     ],
-    "given": "• $P = \\$10{,}000$\n• Offer (i): $r = 6.4\\%$, $n = 4$ (quarterly)\n• Offer (ii): $r = 6.5\\%$, $n = 2$ (semi-annual)\n• Time = 1 year",
-    "formulas": "• Effective annual rate $R = (1+r/n)^{n} - 1$\n• Future value $FV = P(1+R)$",
+    "given": "$P = \\$10{,}000$\nOffer (i): $r = 6.4\\%$, $n = 4$ (quarterly)\nOffer (ii): $r = 6.5\\%$, $n = 2$ (semi-annual)\nTime = 1 year",
+    "formulas": "Effective annual rate $R = (1+r/n)^{n} - 1$\nFuture value $FV = P(1+R)$",
     "steps": "Offer (i): periodic rate = 0.064/4 = 0.016.\n$R_i = (1.016)^{4}$ - 1 ≈ 1.065533 - 1 = 0.065533 ≈ 6.55%.\nOffer (ii): periodic rate = 0.065/2 = 0.0325.\n$R_{ii} = (1.0325)^{2}$ - 1 = 1.066056 - 1 = 0.066056 ≈ 6.61%.\nSince $R_{ii}$ (6.61%) > $R_i$ (6.55%), Offer (ii) is the better deal for the saver, despite compounding less often.\nInterest for Offer (i) = 10,000 × 0.065533 = \\$655.33.\nInterest for Offer (ii) = 10,000 × 0.066056 = \\$660.56.\nDifference ≈ \\$5.23 to \\$5.24.",
     "explanations": [
       "$R_i = (1.016)^{4}$ - 1 ≈ 6.55%, matching exactly.",
@@ -112,8 +112,8 @@
       true,
       false
     ],
-    "given": "• Monthly periodic rate: $i_m = 1.75\\% = 0.0175$\n• Months per year: $n = 12$",
-    "formulas": "• Nominal annual rate $= 12 i_m$\n• Effective annual rate $R = (1 + i_m)^{12} - 1$",
+    "given": "Monthly periodic rate: $i_m = 1.75\\% = 0.0175$\nMonths per year: $n = 12$",
+    "formulas": "Nominal annual rate $= 12 i_m$\nEffective annual rate $R = (1 + i_m)^{12} - 1$",
     "steps": "Nominal annual rate = 12 × 1.75% = 21.00% (not 22.00%).\nR = $(1.0175)^{12}$ - 1 ≈ 1.231430 - 1 = 0.231430 ≈ 23.14% (not 21.75%).\nFV of \\$2,000 unpaid for 1 year = 2,000 × 1.231430 = \\$2,462.86 (not \\$2,420.00).\nGap = 23.14% - 21.00% = 2.14 percentage points, which is indeed more than 2.00 percentage points.\nAt a 1.50% monthly rate: R = $(1.015)^{12}$ - 1 ≈ 1.195625 - 1 = 0.195625 ≈ 19.56%, which does NOT exceed 20%.",
     "explanations": [
       "Trap: 12 × 1.75% = 21.00%, not 22.00%.",
@@ -143,8 +143,8 @@
       false,
       false
     ],
-    "given": "• $P = \\$15{,}000$\n• Nominal annual rate $r = 5.6\\% = 0.056$\n• Compounding frequency $n = 4$ (quarterly)\n• Time = 1 year",
-    "formulas": "• Periodic rate $= r/n$\n• Effective annual rate $R = (1+r/n)^{n} - 1$\n• Future value $FV = P(1+R)$",
+    "given": "$P = \\$15{,}000$\nNominal annual rate $r = 5.6\\% = 0.056$\nCompounding frequency $n = 4$ (quarterly)\nTime = 1 year",
+    "formulas": "Periodic rate $= r/n$\nEffective annual rate $R = (1+r/n)^{n} - 1$\nFuture value $FV = P(1+R)$",
     "steps": "Periodic rate = 0.056/4 = 0.014 = 1.40%.\nR = $(1.014)^{4}$ - 1 ≈ 1.057187 - 1 = 0.057187 ≈ 5.72%.\nFV = 15,000 × 1.057187 = \\$15,857.81.\nMonthly compounding of the same 5.6% nominal rate gives a slightly higher EAR (≈ 5.746%), not lower - more frequent compounding always raises EAR.\nGap = 5.7187% - 5.60% ≈ 0.12 percentage points, which is less than 0.20 percentage points.",
     "explanations": [
       "Periodic rate = 0.056/4 = 1.40%, matching exactly.",
@@ -174,8 +174,8 @@
       false,
       true
     ],
-    "given": "• Nominal annual rate $r = 7.2\\% = 0.072$\n• Compounding frequency $n = 12$ (monthly)\n• Target: double the principal",
-    "formulas": "• Monthly periodic rate $i_m = r/12$\n• Growth condition $(1+i_m)^{t} = M$ (M = target growth multiple)\n• Solve via logarithms: $t = \\ln M / \\ln(1+i_m)$",
+    "given": "Nominal annual rate $r = 7.2\\% = 0.072$\nCompounding frequency $n = 12$ (monthly)\nTarget: double the principal",
+    "formulas": "Monthly periodic rate $i_m = r/12$\nGrowth condition $(1+i_m)^{t} = M$ (M = target growth multiple)\nSolve via logarithms: $t = \\ln M / \\ln(1+i_m)$",
     "steps": "Periodic rate = 0.072/12 = 0.006 = 0.60%.\nSolve $(1.006)^{t}$ = 2: t = ln 2 / ln 1.006 ≈ 0.693147/0.0059821 ≈ 115.85 months ≈ 9.65 years (not 108 months).\n115.85 months is the correct doubling time, not 58 months (which is not even close to a clean half of it, since doubling time does not simply relate this way to a 'half time').\nAt 14.4% nominal monthly, R = $(1.012)^{12}$ - 1 ≈ 15.38%, but double the original 7.44% EAR would be 14.88%, not 15.38% - doubling the nominal rate does not exactly double the EAR.\nThe same logarithmic method, t = ln(target multiple)/ln(periodic growth factor), works for any target multiple, since the exponential growth curve is monotonically increasing - this is a general, valid technique.",
     "explanations": [
       "Periodic rate = 0.072/12 = 0.60%, matching exactly.",
@@ -205,8 +205,8 @@
       true,
       false
     ],
-    "given": "• Nominal annual rate $r = 15\\% = 0.15$\n• $n = 2$ (semi-annual), $n = 4$ (quarterly), $n = 12$ (monthly)",
-    "formulas": "• Effective annual rate $R = (1+r/n)^{n} - 1$",
+    "given": "Nominal annual rate $r = 15\\% = 0.15$\n$n = 2$ (semi-annual), $n = 4$ (quarterly), $n = 12$ (monthly)",
+    "formulas": "Effective annual rate $R = (1+r/n)^{n} - 1$",
     "steps": "Semi-annual: R = $(1.075)^{2}$ - 1 = 1.155625 - 1 = 0.155625 ≈ 15.56%.\nQuarterly: R = $(1.0375)^{4}$ - 1 ≈ 1.158650 - 1 = 0.158650 ≈ 15.87%.\nMonthly: R = $(1.0125)^{12}$ - 1 ≈ 1.160766 - 1 = 0.160766 ≈ 16.08%.\nRanking confirms 15.56% < 15.87% < 16.08% as compounding frequency increases.\nFirst gap = 15.87% - 15.56% = 0.31 points; second gap = 16.08% - 15.87% = 0.21 points. The first gap is actually LARGER than the second, not smaller - each additional increase in frequency adds progressively less to the EAR.",
     "explanations": [
       "R = $(1.075)^{2}$ - 1 = 15.5625%, matching exactly.",
@@ -236,8 +236,8 @@
       false,
       false
     ],
-    "given": "• $S_0 = \\$4{,}000$\n• Nominal annual rate $r = 6\\% = 0.06$\n• Compounding frequency $n = 12$ (monthly)\n• Time $t = 10$ years",
-    "formulas": "• Future value $S(t) = S_0(1+r/n)^{nt}$",
+    "given": "$S_0 = \\$4{,}000$\nNominal annual rate $r = 6\\% = 0.06$\nCompounding frequency $n = 12$ (monthly)\nTime $t = 10$ years",
+    "formulas": "Future value $S(t) = S_0(1+r/n)^{nt}$",
     "steps": "Periodic rate = 0.06/12 = 0.005 = 0.50%; nt = 12 × 10 = 120.\nS(10) = 4,000 × $(1.005)^{120}$ ≈ 4,000 × 1.8194 = \\$7,277.60.\nGrowth factor is 1.8194, not 2.0, so the deposit has NOT quite doubled after 10 years (it would take about 11.6 years to fully double at this rate).\nAnnual compounding (n = 1): S(10) = 4,000 × $(1.06)^{10}$ = 4,000 × 1.790847 = \\$7,163.39, which is LESS than \\$7,277.60, not more, since less frequent compounding always yields a smaller future value for the same nominal rate.",
     "explanations": [
       "Periodic rate = 0.06/12 = 0.50%, matching exactly.",
@@ -267,8 +267,8 @@
       false,
       false
     ],
-    "given": "• $S_0 = \\$50{,}000$\n• Target $S(t) = \\$80{,}000$\n• $n = 4$ (quarterly)\n• $t = 8$ years, so $nt = 32$",
-    "formulas": "• $S(t) = S_0(1+r/n)^{nt}$\n• Solve for rate: $r = n[(S(t)/S_0)^{1/(nt)} - 1]$",
+    "given": "$S_0 = \\$50{,}000$\nTarget $S(t) = \\$80{,}000$\n$n = 4$ (quarterly)\n$t = 8$ years, so $nt = 32$",
+    "formulas": "$S(t) = S_0(1+r/n)^{nt}$\nSolve for rate: $r = n[(S(t)/S_0)^{1/(nt)} - 1]$",
     "steps": "$(1 + r/4)^{32}$ = 80,000/50,000 = 1.6, so 1 + r/4 = $(1.6)^{1/32}$ ≈ 1.014796, giving r ≈ 4 × 0.014796 ≈ 0.05918 ≈ 5.92%.\nQuarterly periodic rate = 5.92%/4 ≈ 1.48%.\nA shorter time horizon (4 years instead of 8) to reach the same growth factor of 1.6 requires a HIGHER rate, not a lower one, since less time demands faster growth.\nMonthly compounding is more frequent than quarterly, so it needs a LOWER nominal rate, not a higher one, to reach the same 1.6 growth factor over the same 8 years.\nGrowth = (80,000 - 50,000)/50,000 = 30,000/50,000 = 0.60 = 60.00% exactly, which is not more than 65%.",
     "explanations": [
       "Solving $(1 + r/4)^{32}$ = 1.6 gives r ≈ 5.92%, matching exactly.",
@@ -298,8 +298,8 @@
       false,
       false
     ],
-    "given": "• Option (a): $r = 10.80\\%$, $n = 1$ (annual)\n• Option (b): $r = 10.40\\%$, $n = 4$ (quarterly)\n• Time = 1 year",
-    "formulas": "• Effective annual rate $R = (1+r/n)^{n} - 1$",
+    "given": "Option (a): $r = 10.80\\%$, $n = 1$ (annual)\nOption (b): $r = 10.40\\%$, $n = 4$ (quarterly)\nTime = 1 year",
+    "formulas": "Effective annual rate $R = (1+r/n)^{n} - 1$",
     "steps": "Option (a): with n = 1, $R_a$ = nominal rate = 10.80% exactly.\nOption (b): periodic rate = 0.104/4 = 0.026.\n$R_b = (1.026)^{4}$ - 1 ≈ 1.108127 - 1 = 0.108127 ≈ 10.81%.\nSince $R_b$ (10.81%) is very slightly higher than $R_a$ (10.80%), option (a) is actually marginally cheaper for the borrower, even though its quoted nominal rate is higher.\nDifference = 10.8127% - 10.80% ≈ 0.013 percentage points, which is less than 0.05 percentage points.",
     "explanations": [
       "Trap: $R_a$ = 10.80% is actually slightly LOWER than $R_b$ ≈ 10.81%, not higher.",
@@ -329,8 +329,8 @@
       false,
       true
     ],
-    "given": "• Target $S(t) = \\$40{,}000$\n• Nominal annual rate $r = 4.5\\% = 0.045$\n• $n = 1$ (annual)\n• Time $t = 6$ years",
-    "formulas": "• Future value $S(t) = S_0(1+r)^{t}$\n• Present value $S_0 = S(t)/(1+r)^{t}$",
+    "given": "Target $S(t) = \\$40{,}000$\nNominal annual rate $r = 4.5\\% = 0.045$\n$n = 1$ (annual)\nTime $t = 6$ years",
+    "formulas": "Future value $S(t) = S_0(1+r)^{t}$\nPresent value $S_0 = S(t)/(1+r)^{t}$",
     "steps": "$(1.045)^{6}$ ≈ 1.302253.\n$S_0 = 40{,}000/1.302253 ≈ \\$30{,}715.86$.\n\\$30,715.86 is indeed less than \\$32,000.\nA higher rate (5.5%) means the deposit grows faster, so LESS principal is needed today to reach the same \\$40,000 in 6 years - the required present value would be lower, not higher.\nInterest = 40,000 - 30,715.86 = \\$9,284.14.",
     "explanations": [
       "$(1.045)^{6}$ ≈ 1.302253, matching exactly.",
@@ -360,8 +360,8 @@
       false,
       false
     ],
-    "given": "• $S_0 = £4{,}000$\n• Target $S(t) = £6{,}000$\n• Nominal annual rate $r = 6\\% = 0.06$\n• Compounding frequency $n = 12$ (monthly)",
-    "formulas": "• Growth equation $(1+r/n)^{t} = S(t)/S_0$\n• Solve for time $t = \\ln(S(t)/S_0)/\\ln(1+r/n)$",
+    "given": "$S_0 = £4{,}000$\nTarget $S(t) = £6{,}000$\nNominal annual rate $r = 6\\% = 0.06$\nCompounding frequency $n = 12$ (monthly)",
+    "formulas": "Growth equation $(1+r/n)^{t} = S(t)/S_0$\nSolve for time $t = \\ln(S(t)/S_0)/\\ln(1+r/n)$",
     "steps": "Periodic rate = 0.06/12 = 0.005. Target ratio = 6,000/4,000 = 1.5.\nt = ln(1.5)/ln(1.005) ≈ 0.405465/0.0049875 ≈ 81.30 months ≈ 6.78 years.\nThis is neither exactly 6.00 years nor 48 months (4 years) - both are incorrect approximations of the true 81.30-month figure.\nDoubling time for this account = ln2/ln(1.005) ≈ 138.99 months; half of that is ≈ 69.5 months. The actual time to grow by 1.5× is 81.30 months, which is MORE than half the doubling time, not less.\nt = ln(1.5)/ln(1.005) ≈ 81.30 months, not 100.",
     "explanations": [
       "t = ln(1.5)/ln(1.005) ≈ 81.30 months ≈ 6.78 years, matching exactly.",
@@ -391,8 +391,8 @@
       false,
       false
     ],
-    "given": "• $P = \\$20{,}000$\n• Nominal annual rate $r = 4.25\\% = 0.0425$\n• Compounding frequency $n = 365$ (daily)\n• Time = 1 year",
-    "formulas": "• Periodic rate $= r/n$\n• Effective annual rate $R = (1+r/n)^{n} - 1$\n• Future value $FV = P(1+R)$",
+    "given": "$P = \\$20{,}000$\nNominal annual rate $r = 4.25\\% = 0.0425$\nCompounding frequency $n = 365$ (daily)\nTime = 1 year",
+    "formulas": "Periodic rate $= r/n$\nEffective annual rate $R = (1+r/n)^{n} - 1$\nFuture value $FV = P(1+R)$",
     "steps": "Periodic rate = 0.0425/365 ≈ 0.00011644 = 0.011644%.\nR = $(1 + 0.0425/365)^{365}$ - 1 ≈ 1.043413 - 1 = 0.043413 ≈ 4.34%.\nFV = 20,000 × 1.043413 = \\$20,868.26.\nMonthly compounding of 4.25% nominal gives R ≈ 4.33%, which is slightly LOWER than the daily EAR of 4.34%, not higher - daily compounding is more frequent than monthly.\nGap = 4.34% - 4.25% = 0.09 percentage points, which does not exceed 0.20 percentage points.",
     "explanations": [
       "Periodic rate = 0.0425/365 ≈ 0.011644%, matching exactly.",
@@ -422,8 +422,8 @@
       false,
       false
     ],
-    "given": "• Monthly periodic rate $i_m = 1.9\\% = 0.019$\n• Months per year $n = 12$",
-    "formulas": "• Nominal annual rate $= 12 i_m$\n• Effective annual rate $R = (1 + i_m)^{12} - 1$",
+    "given": "Monthly periodic rate $i_m = 1.9\\% = 0.019$\nMonths per year $n = 12$",
+    "formulas": "Nominal annual rate $= 12 i_m$\nEffective annual rate $R = (1 + i_m)^{12} - 1$",
     "steps": "Nominal annual rate = 12 × 1.9% = 22.80%.\nR = $(1.019)^{12}$ - 1 ≈ 1.253408 - 1 = 0.253408 ≈ 25.34%.\nFV of \\$3,000 unpaid for 1 year = 3,000 × 1.253408 = \\$3,760.22 (not \\$3,684.00).\nGap = 25.34% - 22.80% ≈ 2.54 percentage points, which does not exceed 3.00 percentage points.",
     "explanations": [
       "12 × 1.9% = 22.80%, matching exactly.",
@@ -453,8 +453,8 @@
       true,
       false
     ],
-    "given": "• Nominal annual rate $r = 10\\% = 0.10$\n• $n = 2$ (semi-annual), $n = 4$ (quarterly), $n = 12$ (monthly)",
-    "formulas": "• Effective annual rate $R = (1+r/n)^{n} - 1$",
+    "given": "Nominal annual rate $r = 10\\% = 0.10$\n$n = 2$ (semi-annual), $n = 4$ (quarterly), $n = 12$ (monthly)",
+    "formulas": "Effective annual rate $R = (1+r/n)^{n} - 1$",
     "steps": "Semi-annual: R = $(1.05)^{2}$ - 1 = 1.1025 - 1 = 0.1025 = 10.25%.\nQuarterly: R = $(1.025)^{4}$ - 1 ≈ 1.103813 - 1 = 0.103813 ≈ 10.38%.\nMonthly: R = $(1.0083333)^{12}$ - 1 ≈ 1.104713 - 1 = 0.104713 ≈ 10.47%.\nConfirms increasing R with increasing frequency: 10.25% < 10.38% < 10.47%.\nFirst jump = 10.38% - 10.25% = 0.13 points; second jump = 10.47% - 10.38% = 0.09 points - the first jump is LARGER than the second, not smaller.",
     "explanations": [
       "R = $(1.05)^{2}$ - 1 = 10.25%, matching exactly.",
@@ -484,8 +484,8 @@
       false,
       false
     ],
-    "given": "• Target growth factor = 50\n• Time $t = 80$ years",
-    "formulas": "• Growth equation $(1+r)^{t} = M$ (M = target growth factor)\n• Solve for rate $r = M^{1/t} - 1$",
+    "given": "Target growth factor = 50\nTime $t = 80$ years",
+    "formulas": "Growth equation $(1+r)^{t} = M$ (M = target growth factor)\nSolve for rate $r = M^{1/t} - 1$",
     "steps": "$(1 + r)^{80}$ = 50, so $r = 50^{1/80} - 1$ ≈ 1.050115 - 1 = 0.050115 ≈ 5.01%. This is not 6.25%.\nGrowth rates are found via a root (an exponential relationship), not a simple linear halving of the target multiple, so a rate for 50× growth is not simply half the rate for 100× growth.\nAt r = 5.01%, after 160 years the growth factor is $(1.050115)^{160} = (50)^{2}$ = 2,500, not 100.\nAchieving the same 50× growth in only 40 years (half the time) requires solving r = $50^{1/40}$ - 1 ≈ 9.65%, which is HIGHER than 5.01%, not lower - less time always demands a faster rate for the same target multiple.",
     "explanations": [
       "$r = 50^{1/80} - 1$ ≈ 5.01%, matching exactly.",
@@ -515,8 +515,8 @@
       true,
       false
     ],
-    "given": "• Target amount $T = \\$25{,}000$ after t = 7 years\n• Account X: r = 5.00%, n = 12 (monthly)\n• Account Y: r = 5.10%, n = 4 (quarterly)",
-    "formulas": "• Present value $S_0 = T / (1 + r/n)^{nt}$ (T = target future amount)\n• Effective annual rate $R = (1 + r/n)^{n} - 1$",
+    "given": "Target amount $T = \\$25{,}000$ after t = 7 years\nAccount X: r = 5.00%, n = 12 (monthly)\nAccount Y: r = 5.10%, n = 4 (quarterly)",
+    "formulas": "Present value $S_0 = T / (1 + r/n)^{nt}$ (T = target future amount)\nEffective annual rate $R = (1 + r/n)^{n} - 1$",
     "steps": "Account X: $(1 + 0.05/12)^{84}$ ≈ 1.418038, so $S_{0,X} = T/1.418038$ ≈ \\$17,629.99.\nAccount Y: $(1 + 0.051/4)^{28}$ ≈ 1.425964, so $S_{0,Y} = T/1.425964$ ≈ \\$17,534.28.\nSince $S_{0,Y} < S_{0,X}$, Account Y actually requires the SMALLER upfront deposit, not Account X.\n$R_X = (1 + 0.05/12)^{12} - 1$ ≈ 5.12%. $R_Y = (1.01275)^{4} - 1$ ≈ 5.20%. Indeed $R_Y > R_X$, consistent with Account Y needing less principal.\nThis scenario itself is a counterexample to statement (e): despite compounding more often, Account X needs the LARGER deposit here, because Account Y's higher nominal rate wins out.",
     "explanations": [
       "$S_{0,X} = T/1.418038$ ≈ \\$17,629.99, matching exactly.",
@@ -546,8 +546,8 @@
       false,
       false
     ],
-    "given": "• Target amount $T = \\$60{,}000$ today\n• Nominal annual rate $r = 4.4\\% = 0.044$\n• Compounding frequency $n = 4$ (quarterly)\n• Time $t = 9$ years, so $nt = 36$",
-    "formulas": "• Present value $S_0 = T / (1 + r/n)^{nt}$ (T = target future amount)\n• Effective annual rate $R = (1 + r/n)^{n} - 1$",
+    "given": "Target amount $T = \\$60{,}000$ today\nNominal annual rate $r = 4.4\\% = 0.044$\nCompounding frequency $n = 4$ (quarterly)\nTime $t = 9$ years, so $nt = 36$",
+    "formulas": "Present value $S_0 = T / (1 + r/n)^{nt}$ (T = target future amount)\nEffective annual rate $R = (1 + r/n)^{n} - 1$",
     "steps": "Periodic rate = 0.044/4 = 0.011.\n$(1.011)^{36}$ ≈ 1.482658, so $S_0 = T/1.482658$ ≈ \\$40,467.83.\n\\$40,467.83 is less than \\$45,000, not more.\nA higher rate (5.0%) grows money faster, so a SMALLER amount invested 9 years ago would reach \\$60,000 today - the required present value would be lower, not higher.\nInterest = 60,000 - 40,467.83 = \\$19,532.17, which does not exceed \\$20,000.",
     "explanations": [
       "$(1.011)^{36}$ ≈ 1.4827, matching exactly.",
@@ -577,8 +577,8 @@
       true,
       true
     ],
-    "given": "• $P = \\$20{,}000$\n• CD1: $r = 6.30\\%$, $n = 12$ (monthly)\n• CD2: $r = 6.40\\%$, $n = 4$ (quarterly)\n• CD3: $r = 6.45\\%$, $n = 2$ (semi-annual)\n• Time = 1 year",
-    "formulas": "• Effective annual rate $R = (1+r/n)^{n} - 1$\n• Interest earned $= P \\times R$",
+    "given": "$P = \\$20{,}000$\nCD1: $r = 6.30\\%$, $n = 12$ (monthly)\nCD2: $r = 6.40\\%$, $n = 4$ (quarterly)\nCD3: $r = 6.45\\%$, $n = 2$ (semi-annual)\nTime = 1 year",
+    "formulas": "Effective annual rate $R = (1+r/n)^{n} - 1$\nInterest earned $= P \\times R$",
     "steps": "CD1: periodic rate = 0.063/12 = 0.00525. $R_1 = (1.00525)^{12}$ - 1 ≈ 1.064852 - 1 = 0.064852 ≈ 6.49%.\nCD2: periodic rate = 0.064/4 = 0.016. $R_2 = (1.016)^{4}$ - 1 ≈ 1.065533 - 1 = 0.065533 ≈ 6.55%.\nCD3: periodic rate = 0.0645/2 = 0.03225. $R_3 = (1.03225)^{2}$ - 1 ≈ 1.065540 - 1 = 0.065540 ≈ 6.55%, essentially tied with CD2 (difference under 0.01 points).\nCD1 has the lowest nominal rate (6.30%) and the lowest EAR (6.49%) of the three.\nInterest for CD1 = 20,000 × 0.064852 = \\$1,297.04. Interest for CD2 = 20,000 × 0.065533 = \\$1,310.65. Difference = \\$13.61.",
     "explanations": [
       "$R_1 = (1.00525)^{12}$ - 1 ≈ 6.49%, matching exactly.",
@@ -608,8 +608,8 @@
       false,
       false
     ],
-    "given": "• $S_0 = \\$15{,}000$, target = \\$22,000\n• Account M: $r = 6.00\\%$, $n = 12$ (monthly)\n• Account Q: $r = 6.15\\%$, $n = 4$ (quarterly)",
-    "formulas": "• Time to reach target (in periods): $t = \\ln(T/S_0)/\\ln(1+r/n)$ (T = target amount)\n• Effective annual rate $R = (1+r/n)^{n} - 1$",
+    "given": "$S_0 = \\$15{,}000$, target = \\$22,000\nAccount M: $r = 6.00\\%$, $n = 12$ (monthly)\nAccount Q: $r = 6.15\\%$, $n = 4$ (quarterly)",
+    "formulas": "Time to reach target (in periods): $t = \\ln(T/S_0)/\\ln(1+r/n)$ (T = target amount)\nEffective annual rate $R = (1+r/n)^{n} - 1$",
     "steps": "Target ratio = 22,000/15,000 ≈ 1.466667.\nAccount M: periodic rate = 0.005. t = ln(1.466667)/ln(1.005) ≈ 0.382996/0.0049875 ≈ 76.81 months ≈ 6.40 years.\nAccount Q: periodic rate = 0.015375. t = ln(1.466667)/ln(1.015375) ≈ 0.382996/0.0152580 ≈ 25.10 quarters ≈ 6.275 years, which is FASTER than Account M's 6.40 years, not identical and not slower.\n$R_M = (1.005)^{12}$ - 1 ≈ 6.17%. $R_Q = (1.015375)^{4}$ - 1 ≈ 6.29%. So $R_Q$ > $R_M$, consistent with Q reaching the target faster.\nThe time to reach a 1.4667× target and the time to reach a 2× target (doubling) are governed by different logarithms (ln 1.4667 vs. ln 2), so the time to double is NOT simply twice the time to reach 1.4667× growth.",
     "explanations": [
       "t = ln(1.466667)/ln(1.005) ≈ 76.8 months ≈ 6.40 years, matching exactly.",

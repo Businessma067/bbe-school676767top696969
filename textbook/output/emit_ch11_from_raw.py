@@ -26,15 +26,16 @@ def mathify_light(text: str) -> str:
 
 def format_formula_block(formulas: str) -> list[str]:
     """
-    Emit Part 2 as separate bullet lines for RichMathLine.
+    Emit Part 2 as separate lines for RichMathLine.
     Do not use $$ display wrappers: Ch11 formulas mix labels + KaTeX and $$ turns them red/raw.
+    No bullet glyphs (•) — they render as tiny floating dots between airy paragraphs.
     Only split on existing bullets/newlines — never cut inside a $...$ span.
     """
     raw = (formulas or "").strip()
     if not raw:
         return []
 
-    # Un-smash bullets without touching math interiors
+    # Un-smash bullets without touching math interiors; then drop the glyph
     work = re.sub(r"([a-zA-Z0-9.%])•", r"\1\n• ", raw)
     work = re.sub(r"•([A-Za-z0-9$])", r"• \1", work)
 
@@ -43,7 +44,6 @@ def format_formula_block(formulas: str) -> list[str]:
         ln = ln.strip()
         if not ln:
             continue
-        # Also split multi-bullet single lines
         if ln.count("•") > 1 and not ln.startswith("$"):
             bits = [b.strip() for b in ln.split("•") if b.strip()]
             items.extend(bits)
@@ -52,12 +52,13 @@ def format_formula_block(formulas: str) -> list[str]:
 
     out: list[str] = []
     for item in items:
+        item = item.lstrip("• ").strip()
         if not item:
             continue
-        out.append(f"• {item}" if not item.startswith("•") else item)
+        out.append(item)
     if not out:
-        out = [f"• {raw}"]
-    # Blank line between bullets so ExplanationBody (\n\n split) puts each on its own paragraph
+        out = [raw.lstrip("• ").strip()]
+    # Blank line between items so ExplanationBody (\n\n split) puts each on its own paragraph
     spaced: list[str] = []
     for i, ln in enumerate(out):
         if i:
@@ -67,33 +68,38 @@ def format_formula_block(formulas: str) -> list[str]:
 
 
 def bullet_paragraphs(text: str) -> str:
-    """Ensure consecutive • lines become separate paragraphs (blank line between)."""
-    if not text or "•" not in text:
+    """Ensure consecutive former-bullet lines become separate paragraphs (no • glyph)."""
+    if not text:
+        return text
+    # Normalize any remaining bullets to paragraph breaks without the glyph
+    if "•" not in text and "\u2022" not in text:
         return text
     lines: list[str] = []
     for ln in text.splitlines():
         stripped = ln.strip()
-        if stripped.startswith("•"):
+        if stripped.startswith("•") or stripped.startswith("\u2022"):
+            body = stripped.lstrip("•\u2022 ").strip()
+            if not body:
+                continue
             if lines and lines[-1].strip() != "":
                 lines.append("")
-            lines.append(stripped)
+            lines.append(body)
         else:
             lines.append(ln)
-    # Also split rare same-line doubles: "• a • b"
     joined = "\n".join(lines)
-    if re.search(r"•[^\n]*•", joined):
+    if re.search(r"[•\u2022][^\n]*[•\u2022]", joined):
         pieces: list[str] = []
         for ln in joined.splitlines():
-            if ln.count("•") > 1:
-                bits = [b.strip() for b in ln.split("•") if b.strip()]
+            if ln.count("•") + ln.count("\u2022") > 1:
+                bits = [b.strip() for b in re.split(r"[•\u2022]", ln) if b.strip()]
                 for j, b in enumerate(bits):
                     if j:
                         pieces.append("")
-                    pieces.append(f"• {b}")
+                    pieces.append(b)
             else:
-                pieces.append(ln)
+                pieces.append(ln.lstrip("•\u2022 ").strip() if ln.strip().startswith(("•", "\u2022")) else ln)
         joined = "\n".join(pieces)
-    return joined
+    return joined.replace("•", "").replace("\u2022", "")
 
 
 def build_overview(task: dict, sub_id: str) -> str:

@@ -19,8 +19,8 @@
       true,
       true
     ],
-    "given": "• $a_0 = -\\$8{,}000$ (initial outlay)\n• $a_1 = \\$9{,}600$ (return at end of Year 1)\n• $n = 1$ year",
-    "formulas": "• For a one-year project with outlay $a$ and return $b$: $-a + b(1+r)^{-1} = 0$\n• Solving for $r$: $r = (b/a) - 1$",
+    "given": "$a_0 = -\\$8{,}000$ (initial outlay)\n$a_1 = \\$9{,}600$ (return at end of Year 1)\n$n = 1$ year",
+    "formulas": "For a one-year project with outlay $a$ and return $b$: $-a + b(1+r)^{-1} = 0$\nSolving for $r$: $r = (b/a) - 1$",
     "steps": "Step 1: Identify $a = \\$8{,}000$ (amount invested) and $b = \\$9{,}600$ (amount returned).\nStep 2: $r = (b/a) - 1 = (9{,}600/8{,}000) - 1 = 1.20 - 1 = 0.20 = 20\\%$.\nStep 3 (for later statements): NPV at rate $r$ is $A = a_0 + a_1/(1+r)$.",
     "explanations": [
       "r = (9,600/8,000) - 1 = 0.20 = 20%, exactly as calculated above.",
@@ -50,8 +50,8 @@
       true,
       false
     ],
-    "given": "• $a_0 = -\\$12{,}000$\n• $a_1 = \\$7{,}000$\n• $a_2 = \\$7{,}000$\n• $n = 2$ years",
-    "formulas": "• $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• Substitute $s = (1+r)^{-1}$",
+    "given": "$a_0 = -\\$12{,}000$\n$a_1 = \\$7{,}000$\n$a_2 = \\$7{,}000$\n$n = 2$ years",
+    "formulas": "$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\nSubstitute $s = (1+r)^{-1}$",
     "steps": "Step 1: $-12{,}000 + 7{,}000/(1+r) + 7{,}000/(1+r)^{2} = 0$.\nStep 2: Let $s = (1+r)^{-1}$. Then $7{,}000s^{2} + 7{,}000s - 12{,}000 = 0$. Dividing by 1,000: $7s^{2} + 7s - 12 = 0$.\nStep 3: Discriminant = $7^{2} + 4(7)(12) = 49 + 336 = 385$. √385 ≈ 19.6214.\nStep 4: $s = (-7 + 19.6214)/14 = 12.6214/14 \\approx 0.90153$.\nStep 5: $r = 1/s - 1 = 1/0.90153 - 1 \\approx 0.10922 \\approx 10.92\\%$.",
     "explanations": [
       "As calculated above, r ≈ 10.92%.",
@@ -81,8 +81,8 @@
       true,
       true
     ],
-    "given": "• $a_0 = -\\$20{,}000$\n• $a_1 = \\$9{,}000$\n• $a_2 = \\$15{,}000$\n• $n = 2$ years",
-    "formulas": "• $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• $s = (1+r)^{-1}$",
+    "given": "$a_0 = -\\$20{,}000$\n$a_1 = \\$9{,}000$\n$a_2 = \\$15{,}000$\n$n = 2$ years",
+    "formulas": "$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n$s = (1+r)^{-1}$",
     "steps": "Step 1: $15{,}000s^{2} + 9{,}000s - 20{,}000 = 0$. Dividing by 1,000: $15s^{2} + 9s - 20 = 0$.\nStep 2: Discriminant = $9^{2} + 4(15)(20) = 81 + 1{,}200 = 1{,}281$. √1,281 ≈ 35.791.\nStep 3: $s = (-9 + 35.791)/30 \\approx 0.89304$.\nStep 4: $r = 1/0.89304 - 1 \\approx 0.11978 \\approx 11.98\\%$.",
     "explanations": [
       "As calculated above, r ≈ 11.98%.",
@@ -112,8 +112,8 @@
       false,
       false
     ],
-    "given": "• Project X: $a = \\$15{,}000$, $b = \\$17{,}250$\n• Project Y: $a = \\$22{,}000$, $b = \\$24{,}750$\n• $n = 1$ year for each project",
-    "formulas": "• $r = (b/a) - 1$ (one-year rate of return, applied to each project)",
+    "given": "Project X: $a = \\$15{,}000$, $b = \\$17{,}250$\nProject Y: $a = \\$22{,}000$, $b = \\$24{,}750$\n$n = 1$ year for each project",
+    "formulas": "$r = (b/a) - 1$ (one-year rate of return, applied to each project)",
     "steps": "Step 1: $r_X = (17{,}250/15{,}000) - 1 = 1.15 - 1 = 0.15 = 15\\%$.\nStep 2: $r_Y = (24{,}750/22{,}000) - 1 = 1.125 - 1 = 0.125 = 12.5\\%$.",
     "explanations": [
       "As calculated above, $r_X = 15\\%$.",
@@ -143,8 +143,8 @@
       true,
       false
     ],
-    "given": "• $a_0 = -\\$45{,}000$\n• $a_1 = -\\$3{,}000$\n• $a_2 = \\$28{,}000$\n• $a_3 = \\$35{,}000$\n• $n = 3$ years",
-    "formulas": "• $A = a_0 + a_1/(1+r) + a_2/(1+r)^{2} + a_3/(1+r)^{3}$",
+    "given": "$a_0 = -\\$45{,}000$\n$a_1 = -\\$3{,}000$\n$a_2 = \\$28{,}000$\n$a_3 = \\$35{,}000$\n$n = 3$ years",
+    "formulas": "$A = a_0 + a_1/(1+r) + a_2/(1+r)^{2} + a_3/(1+r)^{3}$",
     "steps": "Step 1 (r = 8%): A = -45,000 - 3,000/1.08 + 28,000/1.1664 + 35,000/1.259712 = -45,000 - 2,777.78 + 24,005.49 + 27,784.13 = \\$4,011.84.\nStep 2 (r = 12%): A = -45,000 - 3,000/1.12 + 28,000/1.2544 + 35,000/1.404928 = -45,000 - 2,678.57 + 22,321.43 + 24,912.31 = -\\$444.83.\nStep 3 (r = 15%): A = -45,000 - 3,000/1.15 + 28,000/1.3225 + 35,000/1.520875 = -45,000 - 2,608.70 + 21,172.02 + 23,013.07 = -\\$3,423.60.",
     "explanations": [
       "As calculated in Step 1, A ≈ \\$4,011.84 at r = 8%, which rounds to approximately \\$4,012.",
@@ -174,8 +174,8 @@
       false,
       false
     ],
-    "given": "• $a_0 = -\\$34{,}000$\n• $a_1 = \\$16{,}000$\n• $a_2 = \\$24{,}000$\n• $n = 2$ years",
-    "formulas": "• $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• $s = (1+r)^{-1}$",
+    "given": "$a_0 = -\\$34{,}000$\n$a_1 = \\$16{,}000$\n$a_2 = \\$24{,}000$\n$n = 2$ years",
+    "formulas": "$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n$s = (1+r)^{-1}$",
     "steps": "Step 1: $24{,}000s^{2} + 16{,}000s - 34{,}000 = 0$. Dividing by 2,000: $12s^{2} + 8s - 17 = 0$.\nStep 2: Discriminant = $8^{2} + 4(12)(17) = 64 + 816 = 880$. √880 ≈ 29.665.\nStep 3: $s = (-8 + 29.665)/24 \\approx 0.90270$.\nStep 4: $r = 1/0.90270 - 1 \\approx 0.10778 \\approx 10.78\\%$.",
     "explanations": [
       "As calculated above, r ≈ 10.78%, not 14.5%.",
@@ -205,8 +205,8 @@
       true,
       true
     ],
-    "given": "• $a_0 = -\\$40{,}000$\n• $a_1 = \\$22{,}000$\n• $a_2 = \\$27{,}600$\n• $n = 2$ years",
-    "formulas": "• $A = a_0 + a_1/(1+r) + a_2/(1+r)^{2}$",
+    "given": "$a_0 = -\\$40{,}000$\n$a_1 = \\$22{,}000$\n$a_2 = \\$27{,}600$\n$n = 2$ years",
+    "formulas": "$A = a_0 + a_1/(1+r) + a_2/(1+r)^{2}$",
     "steps": "Step 1: Test $r = 15\\%$: A = -40,000 + 22,000/1.15 + 27,600/1.3225 = -40,000 + 19,130.43 + 20,869.57 = \\$0.00 (to the nearest cent).\nStep 2: Since $A = 0$ at $r = 15\\%$, this confirms $r = 15\\%$ is the internal rate of return for this project.",
     "explanations": [
       "As calculated above, A = 0 at r = 15%, confirming this is the internal rate of return.",
@@ -236,8 +236,8 @@
       true,
       false
     ],
-    "given": "• $a_0 = -\\$65{,}000$\n• $a_1 = \\$34{,}000$\n• $a_2 = \\$42{,}000$\n• $n = 2$ years",
-    "formulas": "• $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• $s = (1+r)^{-1}$",
+    "given": "$a_0 = -\\$65{,}000$\n$a_1 = \\$34{,}000$\n$a_2 = \\$42{,}000$\n$n = 2$ years",
+    "formulas": "$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n$s = (1+r)^{-1}$",
     "steps": "Step 1: $42{,}000s^{2} + 34{,}000s - 65{,}000 = 0$. Dividing by 1,000: $42s^{2} + 34s - 65 = 0$.\nStep 2: Discriminant = $34^{2} + 4(42)(65) = 1{,}156 + 10{,}920 = 12{,}076$. √12,076 ≈ 109.891.\nStep 3: $s = (-34 + 109.891)/84 \\approx 0.90346$.\nStep 4: $r = 1/0.90346 - 1 \\approx 0.10685 \\approx 10.69\\%$.",
     "explanations": [
       "As calculated above, r ≈ 10.69%.",
@@ -267,8 +267,8 @@
       false,
       true
     ],
-    "given": "• $a_0 = -\\$50{,}000$ (both options)\n• Option 1: $a_i = \\$6{,}000$ each year, forever ($i = 1, 2, 3, \\ldots$)\n• Option 2: $a_1 = a_2 = \\$6{,}000$ ($n = 2$)",
-    "formulas": "• Option 1 (as $n \\to \\infty$, with $a_i = a$ each year): $a_0 + a/r = 0$, so $r = a/(-a_0)$\n• Option 2 ($n = 2$): $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• Substitute $s = (1+r)^{-1}$",
+    "given": "$a_0 = -\\$50{,}000$ (both options)\nOption 1: $a_i = \\$6{,}000$ each year, forever ($i = 1, 2, 3, \\ldots$)\nOption 2: $a_1 = a_2 = \\$6{,}000$ ($n = 2$)",
+    "formulas": "Option 1 (as $n \\to \\infty$, with $a_i = a$ each year): $a_0 + a/r = 0$, so $r = a/(-a_0)$\nOption 2 ($n = 2$): $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\nSubstitute $s = (1+r)^{-1}$",
     "steps": "Step 1 (Option 1): As $n \\to \\infty$, $a_0 + a/r = 0$ gives $r = a/(-a_0) = 6{,}000/50{,}000 = 0.12 = 12\\%$.\nStep 2 (Option 2): $6{,}000s^{2} + 6{,}000s - 50{,}000 = 0$. Dividing by 1,000: $6s^{2} + 6s - 50 = 0$. Dividing by 2: $3s^{2} + 3s - 25 = 0$.\nStep 3: Discriminant = $3^{2} + 4(3)(25) = 9 + 300 = 309$. √309 ≈ 17.578.\nStep 4: The quadratic formula gives two roots for $s$: $s = (-3 - 17.578)/6 \\approx -3.430$ and $s = (-3 + 17.578)/6 \\approx 2.430$.\nStep 5: Converting each root to $r = 1/s - 1$: the first root gives $r \\approx -1.291$ (i.e. $r < -1$, outside the valid range), and the second gives $r \\approx -0.588$ (i.e. $r > -1$, valid). So the unique valid internal rate of return for Option 2 is $r^{*} \\approx -58.84\\%$.",
     "explanations": [
       "As calculated in Step 1, $r = 6{,}000/50{,}000 = 0.12 = 12\\%$.",
@@ -298,8 +298,8 @@
       true,
       false
     ],
-    "given": "• Design A: $a_0 = -\\$120{,}000$, $a_1 = \\$54{,}000$, $a_2 = \\$88{,}000$\n• Design B: $a = \\$70{,}000$, $b = \\$81{,}200$\n• $n = 2$ years (Design A) / 1 year (Design B)",
-    "formulas": "• Design A ($n = 2$): $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\n• Substitute $s = (1+r)^{-1}$\n• Design B ($n = 1$): $r = (b/a) - 1$",
+    "given": "Design A: $a_0 = -\\$120{,}000$, $a_1 = \\$54{,}000$, $a_2 = \\$88{,}000$\nDesign B: $a = \\$70{,}000$, $b = \\$81{,}200$\n$n = 2$ years (Design A) / 1 year (Design B)",
+    "formulas": "Design A ($n = 2$): $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\nSubstitute $s = (1+r)^{-1}$\nDesign B ($n = 1$): $r = (b/a) - 1$",
     "steps": "Step 1 (Design A): $88{,}000s^{2} + 54{,}000s - 120{,}000 = 0$. Dividing by 2,000: $44s^{2} + 27s - 60 = 0$.\nStep 2: Discriminant = $27^{2} + 4(44)(60) = 729 + 10{,}560 = 11{,}289$. √11,289 ≈ 106.250.\nStep 3: $s = (-27 + 106.250)/88 \\approx 0.90057$, so $r_A = 1/0.90057 - 1 \\approx 0.11041 \\approx 11.04\\%$.\nStep 4 (Design B): $r_B = (81{,}200/70{,}000) - 1 = 1.16 - 1 = 0.16 = 16\\%$.",
     "explanations": [
       "As calculated in Steps 1–3, $r_A \\approx 11.04\\%$.",

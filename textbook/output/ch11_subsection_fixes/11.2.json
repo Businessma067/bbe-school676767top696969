@@ -19,8 +19,8 @@
       true,
       false
     ],
-    "given": "• $S_0 = \\$4{,}500$\n\n• Nominal annual rate r = 5% = 0.05\n\n• Compounding: continuous\n\n• t = 1 year",
-    "formulas": "• $S(t) = S_0 e^{rt}$",
+    "given": "$S_0 = \\$4{,}500$\nNominal annual rate r = 5% = 0.05\nCompounding: continuous\nt = 1 year",
+    "formulas": "$S(t) = S_0 e^{rt}$",
     "steps": "$S(1) = 4{,}500 \\times e^{0.05} = 4{,}500 \\times 1.0512711 = \\$4{,}730.72$. Interest = 4,730.72 - 4,500.00 = \\$230.72. Annual (m = 1) compounding at 5%: S = 4,500 × 1.05 = \\$4,725.00. Difference = 4,730.72 - 4,725.00 = \\$5.72. $e^{0.05}$ = 1.0512711, which rounds to 1.0513, not 1.0400.",
     "explanations": [
       "Plugging $S_0 = 4{,}500$, r = 0.05, and t = 1 into $S(t) = S_0 e^{rt}$ gives 4,500 × $e^{0.05} = 4{,}500 \\times 1.0512711 = \\$4{,}730.72$, matching the statement exactly. Continuous compounding assumes interest is being added at every instant rather than at discrete intervals, and this exponential formula captures that limiting behavior directly.",
@@ -50,8 +50,8 @@
       false,
       true
     ],
-    "given": "• $S_0 = \\$3{,}200$\n\n• Nominal annual rate r = 8% = 0.08\n\n• Compounding: continuous\n\n• t = 6 years (3 and 12 years for parts b, d, e)",
-    "formulas": "• $S(t) = S_0 e^{rt}$",
+    "given": "$S_0 = \\$3{,}200$\nNominal annual rate r = 8% = 0.08\nCompounding: continuous\nt = 6 years (3 and 12 years for parts b, d, e)",
+    "formulas": "$S(t) = S_0 e^{rt}$",
     "steps": "$S(6) = 3{,}200 \\times e^{0.08 \\times 6} = 3{,}200 \\times e^{0.48} = 3{,}200 \\times 1.6161681 = \\$5{,}171.44$. $S(3) = 3{,}200 \\times e^{0.08 \\times 3} = 3{,}200 \\times e^{0.24} = 3{,}200 \\times 1.2712492 = \\$4{,}067.998$ ≈ \\$4,068.00; doubling gives \\$8,135.99, which does not equal S(6). Interest = 5,171.44 - 3,200.00 = \\$1,971.44, not \\$2,000.00. $S(12) = 3{,}200 \\times e^{0.08 \\times 12} = 3{,}200 \\times e^{0.96} = 3{,}200 \\times 2.6116965 = \\$8{,}357.43$. Double of S(6) = 2 × 5,171.44 = \\$10,342.88; since \\$8,357.43 < \\$10,342.88, the 12-year balance is indeed less than double the 6-year balance.",
     "explanations": [
       "$S(6) = 3{,}200 \\times e^{0.48} = \\$5{,}171.44$, matching the statement exactly.",
@@ -81,8 +81,8 @@
       true,
       true
     ],
-    "given": "• Nominal annual rate r = 9% = 0.09 (and 18% for parts d, e)\n\n• Compounding: continuous\n\n• $P = \\$15{,}000$ (part b)",
-    "formulas": "• $EAR = e^{r} - 1$\n\n• $S(t) = S_0 e^{rt}$",
+    "given": "Nominal annual rate r = 9% = 0.09 (and 18% for parts d, e)\nCompounding: continuous\n$P = \\$15{,}000$ (part b)",
+    "formulas": "$EAR = e^{r} - 1$\n$S(t) = S_0 e^{rt}$",
     "steps": "EAR = $e^{0.09}$ - 1 = 1.0941743 - 1 = 0.0941743 ≈ 9.42%. $S(1) = 15{,}000 \\times e^{0.09} = 15{,}000 \\times 1.0941743 = \\$16{,}412.61$. Difference from nominal = 9.4174% - 9.00% = 0.4174 percentage points. At 18%: EAR = $e^{0.18}$ - 1 = 1.1972174 - 1 = 0.1972174 ≈ 19.72%. Double of the original EAR = 2 × 9.4174% = 18.8349%; since 19.72% > 18.83%, the new EAR does exceed double the original.",
     "explanations": [
       "EAR = $e^{0.09}$ - 1 ≈ 9.42%, matching the statement exactly.",
@@ -112,8 +112,8 @@
       false,
       false
     ],
-    "given": "• Nominal annual rate r = i = 10% = 0.10\n\n• Compounding schedules: yearly (m = 1), semi-annual (m = 2), continuous\n\n• $P = \\$75{,}000$ (parts d, e)",
-    "formulas": "• $K_{\\mathrm{yearly}} = 1 + i$\n\n• $K_{\\mathrm{semi}} = (1+i/2)^{2}$\n\n• $K_{\\mathrm{continuous}} = e^{r}$",
+    "given": "Nominal annual rate r = i = 10% = 0.10\nCompounding schedules: yearly (m = 1), semi-annual (m = 2), continuous\n$P = \\$75{,}000$ (parts d, e)",
+    "formulas": "$K_{\\mathrm{yearly}} = 1 + i$\n$K_{\\mathrm{semi}} = (1+i/2)^{2}$\n$K_{\\mathrm{continuous}} = e^{r}$",
     "steps": "$K_{\\mathrm{yearly}} = 1 + 0.10 = 1.1000$. $K_{\\mathrm{semi}} = (1.05)^{2} = 1.1025$. $K_{\\mathrm{cont}} = e^{0.10} = 1.1051709$. $75{,}000 \\times (K_{\\mathrm{cont}} - K_{\\mathrm{semi}}) = 75{,}000 \\times (1.1051709 - 1.1025) = 75{,}000 \\times 0.0026709 = \\$200.32$, not \\$250.32. $75{,}000 \\times (K_{\\mathrm{semi}} - K_{\\mathrm{yearly}}) = 75{,}000 \\times 0.0025 = \\$187.50$; comparing 187.50 to 200.32, the semi-vs-yearly gap is actually the smaller of the two.",
     "explanations": [
       "$K_{\\mathrm{yearly}} = 1 + 0.10 = 1.1000$, matching the statement exactly.",
@@ -143,14 +143,14 @@
       false,
       false
     ],
-    "given": "• $S(0) = \\$95{,}000$\n\n• Nominal annual rate r = 4.5% = 0.045 (and 9% for part e)\n\n• Compounding: continuous",
-    "formulas": "• $S(t+1) = S(t)\\cdot e^{r}$\n\n• $S(t) = S_0 e^{rt}$",
-    "steps": "$S(1) = 95{,}000 \\times e^{0.045} = 95{,}000 \\times 1.0460279 = \\$99{,}372.65$, not \\$98,500.00. $S(2) = 95{,}000 \\times e^{0.09} = 95{,}000 \\times 1.0941743 = \\$103{,}946.56$. Increase(0→1) = 99,372.65 - 95,000.00 = \\$4,372.65. Increase(1→2) = 103,946.56 - 99,372.65 = \\$4,573.91. The textbook property S(t + 1) = $S(t)$·$e^{r}$ establishes that the SAME factor $e^{0.045}$ ≈ 1.0460 is applied every year, regardless of the current balance. At 9%: $e^{0.09}$ = 1.0941743, which is far less than 2 × $e^{0.045}$ = 2.0920557.",
+    "given": "$S(0) = \\$95{,}000$\nNominal annual rate r = 4.5% = 0.045 (and 9% for part e)\nCompounding: continuous",
+    "formulas": "$S(t+1) = S(t)\\times e^{r}$\n$S(t) = S_0 e^{rt}$",
+    "steps": "$S(1) = 95{,}000 \\times e^{0.045} = 95{,}000 \\times 1.0460279 = \\$99{,}372.65$, not \\$98,500.00. $S(2) = 95{,}000 \\times e^{0.09} = 95{,}000 \\times 1.0941743 = \\$103{,}946.56$. Increase(0→1) = 99,372.65 - 95,000.00 = \\$4,372.65. Increase(1→2) = 103,946.56 - 99,372.65 = \\$4,573.91. The textbook property S(t + 1) = $S(t) \\times e^{r}$ establishes that the SAME factor $e^{0.045}$ ≈ 1.0460 is applied every year, regardless of the current balance. At 9%: $e^{0.09}$ = 1.0941743, which is far less than 2 × $e^{0.045}$ = 2.0920557.",
     "explanations": [
       "$S(1) = 95{,}000 \\times e^{0.045} = \\$99{,}372.65$, not \\$98,500.00 - the stated figure is too low by roughly \\$872.65.",
       "$S(2) = 95{,}000 \\times e^{0.09} = \\$103{,}946.56$, matching the statement exactly.",
       "The increase actually grows larger over time as the balance compounds on itself: the year-1 increase is \\$4,372.65, which is smaller than the year-2 increase of \\$4,573.91, not larger as claimed.",
-      "This directly contradicts the property established in the text, S(t + 1) = $S(t)$·$e^{r}$: the multiplying factor $e^{r}$ depends only on the fixed nominal rate r, not on the current size of the balance, so the SAME factor (here, $e^{0.045}$ ≈ 1.0460) is applied every single year no matter how large the balance has already grown.",
+      "This directly contradicts the property established in the text, S(t + 1) = $S(t) \\times e^{r}$: the multiplying factor $e^{r}$ depends only on the fixed nominal rate r, not on the current size of the balance, so the SAME factor (here, $e^{0.045}$ ≈ 1.0460) is applied every single year no matter how large the balance has already grown.",
       "Doubling the rate does not double the growth factor, because $e^{2r}$ equals $(e^{r})^{2}$, not 2 × $e^{r}$. Here $e^{0.09}$ ≈ 1.0942, which is nowhere near the claimed 2.0921 - that number instead comes from incorrectly doubling $e^{0.045}$ directly rather than doubling the exponent inside it."
     ]
   },
@@ -174,8 +174,8 @@
       false,
       true
     ],
-    "given": "• $v_0 = \\$60{,}000$\n\n• Annual depreciation rate δ = 10% = 0.10 (and 20% for part d)\n\n• Compounding: continuous",
-    "formulas": "• Value: $v(t) = v_0 e^{-\\delta t}$\n\n• Fraction remaining equals $e^{-\\delta t}$\n\n• Time for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$",
+    "given": "$v_0 = \\$60{,}000$\nAnnual depreciation rate δ = 10% = 0.10 (and 20% for part d)\nCompounding: continuous",
+    "formulas": "Value: $v(t) = v_0 e^{-\\delta t}$\nFraction remaining equals $e^{-\\delta t}$\nTime for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$",
     "steps": "$v(4) = 60{,}000 \\times e^{-0.10 \\times 4} = 60{,}000 \\times e^{-0.40} = 60{,}000 \\times 0.6703200 = \\$40{,}219.20$. $v(7) = 60{,}000 \\times e^{-0.10 \\times 7} = 60{,}000 \\times e^{-0.70} = 60{,}000 \\times 0.4965853 = \\$29{,}795.12$. Percentage of original = 40,219.20 / 60,000 = 0.670320 ≈ 67.03%. At δ = 0.20: $v(4) = 60{,}000 \\times e^{-0.80} = 60{,}000 \\times 0.4493290 = \\$26{,}959.74$, which is above \\$25,000, not below it. $v(1) = 60{,}000 \\times e^{-0.10} = \\$54{,}290.25$, so year-1 loss = 60,000 - 54,290.25 = \\$5,709.75. $v(3) = 60{,}000 \\times e^{-0.30} = \\$44{,}449.09$, so year-4 loss = v(3) - v(4) = 44,449.09 - 40,219.20 = \\$4,229.89.",
     "explanations": [
       "$v(4) = 60{,}000 \\times e^{-0.40} = \\$40{,}219.20$, matching the statement exactly.",
@@ -205,8 +205,8 @@
       false,
       false
     ],
-    "given": "• $S_0 = \\$18{,}000$\n\n• Nominal annual rate r = 5.5% = 0.055 (and 11% for part c)\n\n• Compounding: continuous\n\n• Target: $S(t)$ = 2 $S_0$",
-    "formulas": "• $S(t) = S_0 e^{rt}$\n\n• Doubling time: $e^{rt} = 2 \\Rightarrow t = \\ln(2)/r$",
+    "given": "$S_0 = \\$18{,}000$\nNominal annual rate r = 5.5% = 0.055 (and 11% for part c)\nCompounding: continuous\nTarget: $S(t)$ = 2 $S_0$",
+    "formulas": "$S(t) = S_0 e^{rt}$\nDoubling time: $e^{rt} = 2 \\Rightarrow t = \\ln(2)/r$",
     "steps": "ln(2) = 0.693147. t = 0.693147 / 0.055 = 12.6027 years. At 11%: t = 0.693147 / 0.11 = 6.3013 years, which is half of 12.6027, not unchanged. $S(12.6027) = 18{,}000 \\times e^{0.055 \\times 12.6027} = 18{,}000 \\times e^{0.693147} = 18{,}000 \\times 2 = \\$36{,}000.00$. After 3 doubling periods (37.8080 years), the growth factor is 2 × 2 × 2 = 8, so S = 18,000 × 8 = \\$144,000.00, not 6 × 18,000 = \\$108,000.00.",
     "explanations": [
       "t = ln(2)/0.055 ≈ 12.60 years, matching the statement exactly.",
@@ -223,7 +223,7 @@
     "difficulty_level": "2/5",
     "context": "A manufacturing plant's stamping press has an initial value of \\$120,000 and depreciates continuously at an annual rate of 18% with δ = 0.18. Management wants to know how long it will take for the press to lose 60% of its original value, retaining only 40%, and how that compares to a slower depreciation scenario and to losing a larger share of value.",
     "statements": [
-      "Setting $v_0$·$e^{-\\delta t}$ = 0.40 $v_0$ and solving gives t = ln(2.5)/δ.",
+      "Setting $v_0 \\times e^{-\\delta t}$ = 0.40 $v_0$ and solving gives t = ln(2.5)/δ.",
       "The press will have lost 60% of its value after approximately 5.09 years.",
       "At that point, the press's remaining value is approximately \\$48,000.00.",
       "If the depreciation rate were instead 9%, the time to lose 60% of value would double to approximately 10.18 years.",
@@ -236,8 +236,8 @@
       true,
       true
     ],
-    "given": "• $v_0 = \\$120{,}000$\n\n• Annual depreciation rate δ = 18% = 0.18 (and 9% for part d)\n\n• Compounding: continuous\n\n• Target: v(t) = 0.40 $v_0$ (and 0.20 $v_0$ for part e)",
-    "formulas": "• Value: $v(t) = v_0 e^{-\\delta t}$\n\n• Fraction remaining equals $e^{-\\delta t}$\n\n• Time for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$",
+    "given": "$v_0 = \\$120{,}000$\nAnnual depreciation rate δ = 18% = 0.18 (and 9% for part d)\nCompounding: continuous\nTarget: v(t) = 0.40 $v_0$ (and 0.20 $v_0$ for part e)",
+    "formulas": "Value: $v(t) = v_0 e^{-\\delta t}$\nFraction remaining equals $e^{-\\delta t}$\nTime for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$",
     "steps": "1/0.40 = 2.5, and ln(2.5) = 0.916291. t = 0.916291 / 0.18 = 5.0905 years. v(5.0905) = 120,000 × 0.40 = \\$48,000.00. At δ = 0.09: t = 0.916291 / 0.09 = 10.1810 years, which is indeed double 5.0905 years, since halving δ doubles t. For 80% loss (retain 20%): 1/0.20 = 5, ln(5) = 1.609438. t = 1.609438 / 0.18 = 8.9413 years, which is longer than 5.0905 years.",
     "explanations": [
       "Dividing both sides by $v_0$ and taking natural logs of 1/0.40 = 2.5 gives δt = ln(2.5), so t = ln(2.5)/δ, matching the statement exactly.",
@@ -267,8 +267,8 @@
       true,
       false
     ],
-    "given": "• $P = \\$25{,}000$\n\n• Nominal annual rates r = 3% and r = 15%\n\n• Compounding: continuous vs. annual (m = 1)\n\n• t = 1 year (and 8 years for part d, e)",
-    "formulas": "• $S_{\\mathrm{cont}} = P \\cdot e^{rt}$\n\n• $S_{\\mathrm{annual}} = P \\cdot (1+r)^{t}$",
+    "given": "$P = \\$25{,}000$\nNominal annual rates r = 3% and r = 15%\nCompounding: continuous vs. annual (m = 1)\nt = 1 year (and 8 years for part d, e)",
+    "formulas": "$S_{\\mathrm{cont}} = P \\times e^{rt}$\n$S_{\\mathrm{annual}} = P \\times (1+r)^{t}$",
     "steps": "At 3%, 1 yr: $S_{\\mathrm{cont}} = 25{,}000 \\times e^{0.03} = \\$25{,}761.36$. $S_{\\mathrm{annual}} = 25{,}000 \\times 1.03 = \\$25{,}750.00$. Gap = \\$11.36. At 15%, 1 yr: $S_{\\mathrm{cont}} = 25{,}000 \\times e^{0.15} = \\$29{,}045.86$. $S_{\\mathrm{annual}} = 25{,}000 \\times 1.15 = \\$28{,}750.00$. Gap = \\$295.86. Ratio = 295.86 / 11.36 ≈ 26.04, which is less than 30. At 3%, 8 yrs: $S_{\\mathrm{cont}} = 25{,}000 \\times e^{0.24} = \\$31{,}781.23$. $S_{\\mathrm{annual}} = 25{,}000 \\times (1.03)^{8} = \\$31{,}669.25$. Gap = \\$111.98. The 8-year gap (\\$111.98) is far larger than the 1-year gap (\\$11.36) at the same 3% rate, so the gap GROWS, not shrinks, as the horizon lengthens.",
     "explanations": [
       "Gap = 25,761.36 - 25,750.00 = \\$11.36, matching the statement exactly.",
@@ -298,8 +298,8 @@
       false,
       true
     ],
-    "given": "• $P = \\$400{,}000$\n\n• Nominal annual rate r = i = 9.5% = 0.095\n\n• Fund A: continuous compounding\n\n• Fund B: m = 12 (monthly); part d, e also consider m = 365 (daily)\n\n• t = 1 year",
-    "formulas": "• $S_A = P \\cdot e^{rt}$\n\n• $S_B = P \\cdot (1+i/m)^{mt}$\n\n• $EAR_{\\mathrm{max}} = e^{r} - 1$",
+    "given": "$P = \\$400{,}000$\nNominal annual rate r = i = 9.5% = 0.095\nFund A: continuous compounding\nFund B: m = 12 (monthly); part d, e also consider m = 365 (daily)\nt = 1 year",
+    "formulas": "$S_A = P \\times e^{rt}$\n$S_B = P \\times (1+i/m)^{mt}$\n$EAR_{\\mathrm{max}} = e^{r} - 1$",
     "steps": "Fund A: $S_A = 400{,}000 \\times e^{0.095} = 400{,}000 \\times 1.0996589 = \\$439{,}863.54$. Fund B (monthly): periodic rate = 0.095/12 = 0.0079167. $S_B = 400{,}000 \\times (1.0079167)^{12} = 400{,}000 \\times 1.0992476 = \\$439{,}699.03$, not \\$439,750.00. $EAR_{\\mathrm{max}} = e^{0.095} - 1 \\approx 9.97\\%$, which exceeds the 9.50% nominal rate; it is not equal to it. Fund B (daily): $S_{\\mathrm{daily}} = 400{,}000 \\times (1 + 0.095/365)^{365} = 400{,}000 \\times 1.0996453 = \\$439{,}858.10$, which is still below $S_A = \\$439{,}863.54$. Gap (continuous vs. monthly) = 439,863.54 - 439,699.03 = \\$164.51. Gap (continuous vs. daily) = 439,863.54 - 439,858.10 = \\$5.44.",
     "explanations": [
       "$S_A = 400{,}000 \\times e^{0.095} = \\$439{,}863.54$, matching the statement exactly.",
@@ -329,8 +329,8 @@
       false,
       false
     ],
-    "given": "• $S_0 = \\$28{,}000$\n\n• $S(3) = \\$34{,}200$ (observed)\n\n• Compounding: continuous\n\n• t = 3 years (observed); project to t = 5 years",
-    "formulas": "• $S(t) = S_0 e^{rt} \\Rightarrow r = \\ln(S(t)/S_0)/t$\n\n• Doubling time: $t = \\ln(2)/r$",
+    "given": "$S_0 = \\$28{,}000$\n$S(3) = \\$34{,}200$ (observed)\nCompounding: continuous\nt = 3 years (observed); project to t = 5 years",
+    "formulas": "$S(t) = S_0 e^{rt} \\Rightarrow r = \\ln(S(t)/S_0)/t$\nDoubling time: $t = \\ln(2)/r$",
     "steps": "r = ln(34,200/28,000)/3 = ln(1.221429)/3 = 0.200034/3 = 0.066674 ≈ 6.67%. $S(5) = 28{,}000 \\times e^{0.066674 \\times 5} = 28{,}000 \\times e^{0.333368} = 28{,}000 \\times 1.395661 = \\$39{,}078.52$. Average dollar increase over 3 years = (34,200 - 28,000)/3 = \\$2,066.67/year. Naive linear projection: 34,200 + 2 × 2,066.67 = \\$38,333.33, which does not equal \\$39,078.52. Doubling time = ln(2)/0.066674 = 0.693147/0.066674 ≈ 10.3961 years. At r = 6.00%: $S(3) = 28{,}000 \\times e^{0.18} = 28{,}000 \\times 1.197217 = \\$33{,}522.09$, which is LOWER than the actual observed \\$34,200.00, not higher.",
     "explanations": [
       "Dividing both sides of $S(3) = S_0 e^{3r}$ by $S_0$ and taking natural logs gives $3r = \\ln(34{,}200/28{,}000)$, so $r = \\ln(1.221429)/3 \\approx 6.67\\%$, matching the statement exactly.",
@@ -360,8 +360,8 @@
       true,
       true
     ],
-    "given": "• $P = \\$60{,}000$\n\n• Bank X: r = 6.8% = 0.068, continuous\n\n• Bank Y: i = 6.9% = 0.069, m = 12 (monthly)\n\n• Bank Z: i = 7.0% = 0.070, m = 4 (quarterly)\n\n• t = 2 years",
-    "formulas": "• $S_X = P \\cdot e^{rt}$\n\n• $S_Y = P(1+i/12)^{12t}$\n\n• $S_Z = P(1+i/4)^{4t}$",
+    "given": "$P = \\$60{,}000$\nBank X: r = 6.8% = 0.068, continuous\nBank Y: i = 6.9% = 0.069, m = 12 (monthly)\nBank Z: i = 7.0% = 0.070, m = 4 (quarterly)\nt = 2 years",
+    "formulas": "$S_X = P \\times e^{rt}$\n$S_Y = P(1+i/12)^{12t}$\n$S_Z = P(1+i/4)^{4t}$",
     "steps": "$S_X = 60{,}000 \\times e^{0.068 \\times 2} = 60{,}000 \\times e^{0.136} = 60{,}000 \\times 1.145682 = \\$68{,}740.91$. $S_Y = 60{,}000 \\times (1 + 0.069/12)^{24} = 60{,}000 \\times (1.00575)^{24} = 60{,}000 \\times 1.147522 = \\$68{,}851.32$. $S_Z = 60{,}000 \\times (1 + 0.070/4)^{8} = 60{,}000 \\times (1.0175)^{8} = 60{,}000 \\times 1.148882 = \\$68{,}932.91$. Ordering the three results: \\$68,740.91 (X) < \\$68,851.32 (Y) < \\$68,932.91 (Z), so Bank X is actually the LOWEST, not the highest. If Bank X's rate were 7.0% instead of 6.8%: $S_X' = 60{,}000 \\times e^{0.070 \\times 2} = 60{,}000 \\times e^{0.14} = 60{,}000 \\times 1.150274 = \\$69{,}016.44$, which does exceed Bank Z's \\$68,932.91.",
     "explanations": [
       "$S_X = 60{,}000 \\times e^{0.136} = \\$68{,}740.91$, matching the statement exactly.",
@@ -391,8 +391,8 @@
       false,
       true
     ],
-    "given": "• $S_0 = \\$2{,}000{,}000$\n\n• Gross rate = 9% = 0.09; fee = 2% = 0.02 (and 3.5% = 0.035 for part d)\n\n• Compounding: continuous\n\n• t = 6 years",
-    "formulas": "• Net rate: $r_{\\mathrm{net}} = r_{\\mathrm{gross}} - r_{\\mathrm{fee}}$\n\n• $S(t) = S_0 e^{r_{\\mathrm{net}} t}$\n\n• Doubling time: $t = \\ln(2)/r_{\\mathrm{net}}$",
+    "given": "$S_0 = \\$2{,}000{,}000$\nGross rate = 9% = 0.09; fee = 2% = 0.02 (and 3.5% = 0.035 for part d)\nCompounding: continuous\nt = 6 years",
+    "formulas": "Net rate: $r_{\\mathrm{net}} = r_{\\mathrm{gross}} - r_{\\mathrm{fee}}$\n$S(t) = S_0 e^{r_{\\mathrm{net}} t}$\nDoubling time: $t = \\ln(2)/r_{\\mathrm{net}}$",
     "steps": "$r_{\\mathrm{net}} = 0.09 - 0.02 = 0.07$ = 7%. $S(6) = 2{,}000{,}000 \\times e^{0.07 \\times 6} = 2{,}000{,}000 \\times e^{0.42} = 2{,}000{,}000 \\times 1.521962 = \\$3{,}043{,}923.11$. Doubling time = ln(2)/0.07 = 0.693147/0.07 ≈ 9.9021 years. At fee = 3.5%: $r_{\\mathrm{net}}' = 0.09 - 0.035 = 0.055$. $S(6) = 2{,}000{,}000 \\times e^{0.33} = 2{,}000{,}000 \\times 1.390968 = \\$2{,}781{,}936.26$. Doubling time = ln(2)/0.055 ≈ 12.6027 years, which is LONGER than 9.9021 years, not shorter. Comparing: a lower net rate (5.5% vs. 7%) always produces both a smaller 6-year value and a longer doubling time.",
     "explanations": [
       "The continuous fee drag must be SUBTRACTED from the gross rate, not added: 0.09 - 0.02 = 0.07, giving a net rate of 7% per year, not 11%. Adding the fee to the gross rate would describe a fee that BOOSTS returns, which contradicts the very idea of a management fee reducing the investor's growth.",
@@ -422,9 +422,9 @@
       false,
       true
     ],
-    "given": "• $A_0 = \\$50{,}000$, $r_A$ = 4% = 0.04\n\n• $B_0 = \\$250{,}000$, $\\delta_B$ = 12% = 0.12\n\n• Compounding: continuous",
-    "formulas": "• $A(t) = A_0 e^{r_A t}$\n\n• $B(t) = B_0 e^{-\\delta_B t}$\n\n• Crossover: $t = \\ln(B_0/A_0)/(r_A + \\delta_B)$",
-    "steps": "t = ln(250,000/50,000)/(0.04 + 0.12) = ln(5)/0.16 = 1.609438/0.16 = 10.0590 years. $A(10.0590) = 50{,}000 \\times e^{0.04 \\times 10.0590} = \\$74{,}767.44$. $B(10.0590) = 250{,}000 \\times e^{-0.12 \\times 10.0590} = \\$74{,}767.44$ (equal, as required at crossover). $A(10) = 50{,}000 \\times e^{0.40} = 50{,}000 \\times 1.491825 = \\$74{,}591.23$. $B(10) = 250{,}000 \\times e^{-1.20} = 250{,}000 \\times 0.301194 = \\$75{,}298.55$. At t = 10, $A(10) = \\$74{,}591.23 < B(10) = \\$75{,}298.55$, so A has NOT yet overtaken B at that point - consistent with the crossover occurring slightly later, at 10.06 years. Since $A_0 < B_0$, A(t) < B(t) at t = 0, but because $A(t)/B(t) = (A_0/B_0)\\cdot e^{(r_A + \\delta_B)t}$ grows without bound as t increases (a strictly increasing exponential ratio), the ratio must eventually exceed 1, guaranteeing a crossover exists.",
+    "given": "$A_0 = \\$50{,}000$, $r_A$ = 4% = 0.04\n$B_0 = \\$250{,}000$, $\\delta_B$ = 12% = 0.12\nCompounding: continuous",
+    "formulas": "$A(t) = A_0 e^{r_A t}$\n$B(t) = B_0 e^{-\\delta_B t}$\nCrossover: $t = \\ln(B_0/A_0)/(r_A + \\delta_B)$",
+    "steps": "t = ln(250,000/50,000)/(0.04 + 0.12) = ln(5)/0.16 = 1.609438/0.16 = 10.0590 years. $A(10.0590) = 50{,}000 \\times e^{0.04 \\times 10.0590} = \\$74{,}767.44$. $B(10.0590) = 250{,}000 \\times e^{-0.12 \\times 10.0590} = \\$74{,}767.44$ (equal, as required at crossover). $A(10) = 50{,}000 \\times e^{0.40} = 50{,}000 \\times 1.491825 = \\$74{,}591.23$. $B(10) = 250{,}000 \\times e^{-1.20} = 250{,}000 \\times 0.301194 = \\$75{,}298.55$. At t = 10, $A(10) = \\$74{,}591.23 < B(10) = \\$75{,}298.55$, so A has NOT yet overtaken B at that point - consistent with the crossover occurring slightly later, at 10.06 years. Since $A_0 < B_0$, A(t) < B(t) at t = 0, but because $A(t)/B(t) = (A_0/B_0)\\times e^{(r_A + \\delta_B)t}$ grows without bound as t increases (a strictly increasing exponential ratio), the ratio must eventually exceed 1, guaranteeing a crossover exists.",
     "explanations": [
       "Dividing both sides by $A_0 e^{-\\delta_B t}$ and taking natural logs of the resulting equation B0/A0 = $e^{(r_A + \\delta_B)t}$ gives exactly t = ln(B0/A0)/($r_A$ + $\\delta_B$), matching the statement exactly.",
       "Dividing both sides by $A_0 e^{-\\delta_B t}$ and taking natural logs of the resulting equation $B_0/A_0 = e^{(r_A + \\delta_B)t}$ gives exactly $t = \\ln(B_0/A_0)/(r_A + \\delta_B)$, matching the statement exactly.",
@@ -453,8 +453,8 @@
       false,
       true
     ],
-    "given": "• $P = \\$40{,}000$\n\n• Nominal annual rate i = r = 7% = 0.07\n\n• Schedules: annual (m = 1), quarterly (m = 4), monthly (m = 12), continuous\n\n• t = 1 year",
-    "formulas": "• $S_m = P(1+i/m)^{m}$ for finite $m$\n\n• $S_{\\mathrm{cont}} = P e^{r}$",
+    "given": "$P = \\$40{,}000$\nNominal annual rate i = r = 7% = 0.07\nSchedules: annual (m = 1), quarterly (m = 4), monthly (m = 12), continuous\nt = 1 year",
+    "formulas": "$S_m = P(1+i/m)^{m}$ for finite $m$\n$S_{\\mathrm{cont}} = P e^{r}$",
     "steps": "Annual: $S = 40{,}000 \\times 1.07 = \\$42{,}800.00$. Quarterly: $S = 40{,}000 \\times (1.0175)^{4} = 40{,}000 \\times 1.0718590 = \\$42{,}874.36$. Monthly: $S = 40{,}000 \\times (1.0058333)^{12} = 40{,}000 \\times 1.0722901 = \\$42{,}891.60$. Continuous: $S = 40{,}000 \\times e^{0.07} = 40{,}000 \\times 1.0725082 = \\$42{,}900.33$. Gap(monthly, quarterly) = 42,891.60 - 42,874.36 = \\$17.24. Gap(continuous, monthly) = 42,900.33 - 42,891.60 = \\$8.72; the second gap is SMALLER, not larger.",
     "explanations": [
       "40,000 × 1.07 = \\$42,800.00, matching the statement exactly.",
@@ -484,8 +484,8 @@
       false,
       false
     ],
-    "given": "• Target $S(t) = \\$100{,}000$\n\n• Option 1: r = 4.5% = 0.045, t = 8 years (and t = 4 years for part e)\n\n• Option 2: r = 6.0% = 0.06, t = 8 years\n\n• Compounding: continuous",
-    "formulas": "• $S(t) = S_0 e^{rt} \\Rightarrow S_0 = S(t)/e^{rt} = S(t)\\cdot e^{-rt}$",
+    "given": "Target $S(t) = \\$100{,}000$\nOption 1: r = 4.5% = 0.045, t = 8 years (and t = 4 years for part e)\nOption 2: r = 6.0% = 0.06, t = 8 years\nCompounding: continuous",
+    "formulas": "$S(t) = S_0 e^{rt} \\Rightarrow S_0 = S(t)/e^{rt} = S(t)\\times e^{-rt}$",
     "steps": "Option 1: $S_0 = 100{,}000 \\times e^{-0.045 \\times 8} = 100{,}000 \\times e^{-0.36} = 100{,}000 \\times 0.697676 = \\$69{,}767.63$. Option 2: $S_0 = 100{,}000 \\times e^{-0.06 \\times 8} = 100{,}000 \\times e^{-0.48} = 100{,}000 \\times 0.618783 = \\$61{,}878.34$. Difference = 69,767.63 - 61,878.34 = \\$7,889.29, with Option 1 requiring more upfront. Option 1 over 4 years: $S_0 = 100{,}000 \\times e^{-0.045 \\times 4} = 100{,}000 \\times e^{-0.18} = 100{,}000 \\times 0.835270 = \\$83{,}527.02$. Comparing: \\$83,527.02 (4-year requirement) is LARGER than \\$69,767.63 (8-year requirement), not smaller.",
     "explanations": [
       "$S_0 = 100{,}000 \\times e^{-0.36} = \\$69{,}767.63$, matching the statement exactly.",
@@ -515,15 +515,15 @@
       true,
       true
     ],
-    "given": "• $S_0 = \\$1{,}800{,}000$\n\n• Phase 1: $r_1$ = 10% = 0.10, $t_1$ = 4 years\n\n• Phase 2: $r_2$ = 4% = 0.04, $t_2$ = 3 years",
-    "formulas": "• $S(t_1) = S_0 \\cdot e^{r_1 t_1}$\n\n• $S(t_1+t_2) = S(t_1) \\cdot e^{r_2 t_2} = S_0 \\cdot e^{r_1 t_1+r_2 t_2}$\n\n• Effective rate: $r_{\\mathrm{eff}} = (r_1 t_1 + r_2 t_2)/(t_1+t_2)$",
+    "given": "$S_0 = \\$1{,}800{,}000$\nPhase 1: $r_1$ = 10% = 0.10, $t_1$ = 4 years\nPhase 2: $r_2$ = 4% = 0.04, $t_2$ = 3 years",
+    "formulas": "$S(t_1) = S_0 \\times e^{r_1 t_1}$\n$S(t_1+t_2) = S(t_1) \\times e^{r_2 t_2} = S_0 \\times e^{r_1 t_1+r_2 t_2}$\nEffective rate: $r_{\\mathrm{eff}} = (r_1 t_1 + r_2 t_2)/(t_1+t_2)$",
     "steps": "$S(4) = 1{,}800{,}000 \\times e^{0.10 \\times 4} = 1{,}800{,}000 \\times e^{0.40} = 1{,}800{,}000 \\times 1.491825 = \\$2{,}685{,}284.46$. S(7) = S(4) × $e^{0.04 \\times 3} = 2{,}685{,}284.46 \\times e^{0.12} = 2{,}685{,}284.46 \\times 1.127497 = \\$3{,}027{,}649.77$. Combined exponent = $r_1 t_1 + r_2 t_2$ = (0.10 × 4) + (0.04 × 3) = 0.40 + 0.12 = 0.52. $r_{\\mathrm{eff}} = 0.52/7 = 0.074286 \\approx 7.43\\%$ (the TIME-WEIGHTED average, not the plain average). Plain (unweighted) average = (0.10 + 0.04)/2 = 0.07 = 7.00%, which does not equal 7.43%.",
     "explanations": [
       "$S(4) = 1{,}800{,}000 \\times e^{0.40} = \\$2{,}685{,}284.46$, matching the statement exactly.",
       "Applying the second phase's factor to the year-4 balance gives $S(7) = 2{,}685{,}284.46 \\times e^{0.12} = \\$3{,}027{,}649.77$, matching the statement exactly.",
-      "Because S(7) = $S_0 \\cdot e^{r_1 t_1+r_2 t_2}$, the single constant rate reproducing the same 7-year result solves $r_{\\mathrm{eff}} = (r_1 t_1+r_2 t_2)/7 = 0.52/7 \\approx 7.43\\%$, matching the statement exactly.",
+      "Because S(7) = $S_0 \\times e^{r_1 t_1+r_2 t_2}$, the single constant rate reproducing the same 7-year result solves $r_{\\mathrm{eff}} = (r_1 t_1+r_2 t_2)/7 = 0.52/7 \\approx 7.43\\%$, matching the statement exactly.",
       "The correct effective rate is the TIME-WEIGHTED average of the two phase rates, weighted by how many years each phase lasted: (10% × 4 + 4% × 3)/7 = 7.43%, which is indeed higher than the plain, unweighted average of (10% + 4%)/2 = 7.00%. This makes sense because the faster-growing 10% phase lasted longer (4 years vs. 3 years) and so should count for more, pulling the true effective rate above the simple average.",
-      "Since $S_0 \\cdot e^{r_1 t_1} e^{r_2 t_2} = S_0 \\cdot e^{r_1 t_1+r_2 t_2}$, and ordinary multiplication is commutative, the combined exponent $r_1 t_1+r_2 t_2 = 0.52$ is exactly the same regardless of which phase happens first. Reversing the order of the two phases therefore produces the identical year-7 revenue of \\$3,027,649.77, exactly as stated."
+      "Since $S_0 \\times e^{r_1 t_1} e^{r_2 t_2} = S_0 \\times e^{r_1 t_1+r_2 t_2}$, and ordinary multiplication is commutative, the combined exponent $r_1 t_1+r_2 t_2 = 0.52$ is exactly the same regardless of which phase happens first. Reversing the order of the two phases therefore produces the identical year-7 revenue of \\$3,027,649.77, exactly as stated."
     ]
   },
   {
@@ -533,7 +533,7 @@
     "difficulty_level": "5/5",
     "context": "A construction equipment reseller has a crane currently valued at \\$85,000 that, per accounting policy, must be written down to a resale value of \\$32,000 after 6 years of continuous depreciation. The reseller wants to know the implied annual depreciation rate δ, and compare the crane's value retention to a second, otherwise identical crane with a known δ = 15%.",
     "statements": [
-      "Solving $v_0$·$e^{-\\delta t}$ = v(t) for δ gives δ = ln(v(t)/$v_0$)/t.",
+      "Solving $v_0 \\times e^{-\\delta t}$ = v(t) for δ gives δ = ln(v(t)/$v_0$)/t.",
       "The implied depreciation rate for the first crane is approximately 16.28% per year.",
       "A second, otherwise identical crane purchased for the same \\$85,000 but depreciating continuously at a known rate of 15% per year would be worth approximately \\$36,000.00 after the same 6 years.",
       "The first crane retains more of its value after 6 years than the second crane.",
@@ -546,8 +546,8 @@
       false,
       false
     ],
-    "given": "• $v_0 = \\$85{,}000$\n\n• $v(6) = \\$32{,}000$ (first crane, implied δ); known δ = 15% (second crane); v(6) target = \\$40,000 for part e\n\n• Compounding: continuous\n\n• t = 6 years",
-    "formulas": "• Value: $v(t) = v_0 e^{-\\delta t}$\n\n• Fraction remaining equals $e^{-\\delta t}$\n\n• Time for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$",
+    "given": "$v_0 = \\$85{,}000$\n$v(6) = \\$32{,}000$ (first crane, implied δ); known δ = 15% (second crane); v(6) target = \\$40,000 for part e\nCompounding: continuous\nt = 6 years",
+    "formulas": "Value: $v(t) = v_0 e^{-\\delta t}$\nFraction remaining equals $e^{-\\delta t}$\nTime for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$",
     "steps": "δ = ln(85,000/32,000)/6 = ln(2.65625)/6 = 0.976915/6 = 0.162819 ≈ 16.28%. Second crane: $v(6) = 85{,}000 \\times e^{-0.15 \\times 6} = 85{,}000 \\times e^{-0.90} = 85{,}000 \\times 0.406570 = \\$34{,}558.42$. Comparing final values: first crane retains \\$32,000.00, second crane retains \\$34,558.42 - the crane with the LOWER rate (15%) retains MORE value, not the one with the higher implied rate (16.28%). For a \\$40,000 target: δ = ln(85,000/40,000)/6 = ln(2.125)/6 = 0.753772/6 = 0.125629 ≈ 12.56%, which is lower than 16.28%.",
     "explanations": [
       "This has the ratio inverted: dividing both sides by $v_0$ and taking natural logs of $v_0$/v(t) - not v(t)/$v_0$ - gives δt = ln($v_0$/v(t)), so the correct formula is δ = ln($v_0$/v(t))/t. Using ln(v(t)/$v_0$)/t instead would produce a NEGATIVE number here, since v(t) < $v_0$, which cannot be a valid depreciation rate.",
@@ -577,8 +577,8 @@
       true,
       false
     ],
-    "given": "• $S_0 = \\$12{,}000$\n\n• Nominal annual rate r = 6.5% = 0.065\n\n• Compounding: continuous\n\n• Targets: $S(t)$ = 2 $S_0$, 3 $S_0$, 4 $S_0$",
-    "formulas": "• $S(t) = S_0 e^{rt}$\n\n• Time to reach multiple $M$: $t = \\ln(M)/r$",
+    "given": "$S_0 = \\$12{,}000$\nNominal annual rate r = 6.5% = 0.065\nCompounding: continuous\nTargets: $S(t)$ = 2 $S_0$, 3 $S_0$, 4 $S_0$",
+    "formulas": "$S(t) = S_0 e^{rt}$\nTime to reach multiple $M$: $t = \\ln(M)/r$",
     "steps": "Doubling: t = ln(2)/0.065 = 0.693147/0.065 ≈ 10.6638 years. Tripling: t = ln(3)/0.065 = 1.098612/0.065 ≈ 16.9017 years. Quadrupling: t = ln(4)/0.065 = 1.386294/0.065 ≈ 21.3276 years. 2 × (doubling time) = 2 × 10.6638 = 21.3276 years, which exactly equals the quadrupling time, since $\\ln(4) = \\ln(2^{2}) = 2\\ln(2)$. Ratio of tripling time to doubling time = ln(3)/ln(2) ≈ 1.5850, not 1.5; value at quadrupling time = 12,000 × 4 = \\$48,000.00.",
     "explanations": [
       "t = ln(2)/0.065 ≈ 10.66 years, matching the statement exactly.",
@@ -608,8 +608,8 @@
       false,
       true
     ],
-    "given": "• Asset A: $A_0 = \\$150{,}000$, $r_A$ = 6% = 0.06, t = 5 years\n\n• Asset B: $B_0 = \\$220{,}000$, $\\delta_B$ = 9% = 0.09, t = 5 years\n\n• Asset C: $C_0 = \\$100{,}000$, $r_1$ = 8% for 3 years, then $r_2$ = 3% for 2 years",
-    "formulas": "• $A(t) = A_0 e^{r_A t}$\n\n• $B(t) = B_0 e^{-\\delta_B t}$\n\n• $C(5) = C_0 e^{r_1 \\cdot 3} \\cdot e^{r_2 \\cdot 2}$\n\n• Portfolio total: $A(5) + B(5) + C(5)$",
+    "given": "Asset A: $A_0 = \\$150{,}000$, $r_A$ = 6% = 0.06, t = 5 years\nAsset B: $B_0 = \\$220{,}000$, $\\delta_B$ = 9% = 0.09, t = 5 years\nAsset C: $C_0 = \\$100{,}000$, $r_1$ = 8% for 3 years, then $r_2$ = 3% for 2 years",
+    "formulas": "$A(t) = A_0 e^{r_A t}$\n$B(t) = B_0 e^{-\\delta_B t}$\n$C(5) = C_0 e^{r_1 \\times 3} \\times e^{r_2 \\times 2}$\nPortfolio total: $A(5) + B(5) + C(5)$",
     "steps": "$A(5) = 150{,}000 \\times e^{0.06 \\times 5} = 150{,}000 \\times e^{0.30} = 150{,}000 \\times 1.349859 = \\$202{,}478.82$. $B(5) = 220{,}000 \\times e^{-0.09 \\times 5} = 220{,}000 \\times e^{-0.45} = 220{,}000 \\times 0.637628 = \\$140{,}278.19$. $C(3) = 100{,}000 \\times e^{0.08 \\times 3} = 100{,}000 \\times e^{0.24} = 100{,}000 \\times 1.271249 = \\$127{,}124.92$. $C(5) = 127{,}124.92 \\times e^{0.03 \\times 2} = 127{,}124.92 \\times e^{0.06} = 127{,}124.92 \\times 1.061837 = \\$134{,}985.88$. Portfolio total = 202,478.82 + 140,278.19 + 134,985.88 = \\$477,742.89 (rounding to the cent). Sum of principals = 150,000 + 220,000 + 100,000 = \\$470,000.00; the total (\\$477,742.89) is MORE than the principal sum, not less. If $B_0$ grew instead of shrinking at 9%: B(5)' = 220,000 × $e^{0.09 \\times 5} = 220{,}000 \\times e^{0.45} = 220{,}000 \\times 1.568312 = \\$345{,}028.68$, which does exceed \\$340,000.00.",
     "explanations": [
       "$A(5) = 150{,}000 \\times e^{0.30} = \\$202{,}478.82$, matching the statement exactly.",
