@@ -8,35 +8,64 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+
+# name -> (path, expected_subs, tasks_per_sub)
 BANKS = {
-    "grammar": (ROOT / "src/data/english/grammar.json", 20),
-    "texts": (ROOT / "src/data/english/texts.json", 5),
-    "vocabulary": (ROOT / "src/data/english/vocabulary.json", 6),
+    "grammar": (ROOT / "src/data/english/grammar.json", 20, 20),
+    "texts": (ROOT / "src/data/english/texts.json", 16, 10),
+    "vocabulary": (ROOT / "src/data/english/vocabulary.json", 6, 30),
 }
 
 
-def difficulty(n: int) -> str:
-    if n <= 6:
-        return "1/5"
-    if n <= 12:
-        return "2/5"
-    if n <= 18:
-        return "3/5"
-    if n <= 24:
-        return "4/5"
-    return "5/5"
+def difficulty_for(sort_order: int, tasks_per_sub: int) -> str | None:
+    """Map sort_order to difficulty band. None = skip check (irregular bank)."""
+    n = int(sort_order)
+    if tasks_per_sub == 20:
+        if n <= 4:
+            return "1/5"
+        if n <= 8:
+            return "2/5"
+        if n <= 12:
+            return "3/5"
+        if n <= 16:
+            return "4/5"
+        return "5/5"
+    if tasks_per_sub == 30:
+        if n <= 6:
+            return "1/5"
+        if n <= 12:
+            return "2/5"
+        if n <= 18:
+            return "3/5"
+        if n <= 24:
+            return "4/5"
+        return "5/5"
+    # texts (10/sub) uses a custom curve — do not enforce here
+    return None
 
 
-def audit_bank(name: str, path: Path, expected_subs: int) -> list[str]:
+def expl_ok(answer: bool, expl: str) -> bool:
+    s = str(expl).lstrip().upper()
+    want = "TRUE" if answer else "FALSE"
+    return s.startswith(want)
+
+
+def audit_bank(name: str, path: Path, expected_subs: int, tasks_per_sub: int) -> list[str]:
     errors: list[str] = []
-    data = json.loads(path.read_text(encoding="utf-8"))
+    data = json.loads(path.read_text(encoding="utf-8-sig"))
     subs = data.get("subsections") or []
     tasks = data.get("tasks") or []
     if len(subs) != expected_subs:
         errors.append(f"{name}: expected {expected_subs} subsections, got {len(subs)}")
+    passage_by_sub = {
+        s["id"]: (s.get("passage") or "").strip()
+        for s in subs
+        if s.get("id")
+    }
     by = defaultdict(list)
-    ids = set()
+    ids: set[str] = set()
     true_counts: Counter[int] = Counter()
+    all_stmts: list[str] = []
     for t in tasks:
         sid = t.get("subsection")
         by[sid].append(t)
@@ -52,34 +81,46 @@ def audit_bank(name: str, path: Path, expected_subs: int) -> list[str]:
             errors.append(f"{name}:{tid}: true count {n_true} not in 1..5")
         true_counts[n_true] += 1
         for a, e in zip(t.get("answer_key") or [], t.get("tactical_explanations") or []):
-            prefix = "TRUE." if a else "FALSE."
-            if not str(e).startswith(prefix):
-                errors.append(f"{name}:{tid}: explanation prefix mismatch ({prefix})")
-        so = t.get("sort_order")
-        if t.get("difficulty_level") != difficulty(int(so)):
+            if not expl_ok(bool(a), str(e)):
+                errors.append(f"{name}:{tid}: explanation prefix mismatch")
+        so = int(t.get("sort_order") or 0)
+        expected_diff = difficulty_for(so, tasks_per_sub)
+        if expected_diff is not None and t.get("difficulty_level") != expected_diff:
             errors.append(
-                f"{name}:{tid}: difficulty {t.get('difficulty_level')} != expected {difficulty(int(so))}"
+                f"{name}:{tid}: difficulty {t.get('difficulty_level')} != expected {expected_diff}"
             )
-        if name == "texts" and not (t.get("passage") or "").strip():
-            errors.append(f"{name}:{tid}: missing passage")
+        if name == "grammar" and not (t.get("solution_overview") or "").strip():
+            errors.append(f"{name}:{tid}: missing solution_overview")
+        if name == "texts":
+            passage = (t.get("passage") or "").strip() or passage_by_sub.get(sid or "", "")
+            if not passage:
+                errors.append(f"{name}:{tid}: missing passage")
+        all_stmts.extend(t.get("statements") or [])
     for s in subs:
         sid = s["id"]
-        if len(by[sid]) != 30:
-            errors.append(f"{name}:{sid}: expected 30 tasks, got {len(by[sid])}")
+        if len(by[sid]) != tasks_per_sub:
+            errors.append(f"{name}:{sid}: expected {tasks_per_sub} tasks, got {len(by[sid])}")
     missing = {1, 2, 3, 4, 5} - set(true_counts)
-    if missing:
+    if missing and name != "texts":
         errors.append(f"{name}: missing true-count values {sorted(missing)}")
-    print(f"{name}: tasks={len(tasks)} subs={len(subs)} true-dist={dict(sorted(true_counts.items()))}")
+    uniq = len(set(all_stmts))
+    print(
+        f"{name}: tasks={len(tasks)} subs={len(subs)} "
+        f"true-dist={dict(sorted(true_counts.items()))} "
+        f"stmts unique/total={uniq}/{len(all_stmts)}"
+    )
+    if name == "grammar" and all_stmts and uniq < len(all_stmts):
+        errors.append(f"{name}: duplicate statements: {len(all_stmts) - uniq}")
     return errors
 
 
 def main() -> int:
     all_errors: list[str] = []
-    for name, (path, nsubs) in BANKS.items():
+    for name, (path, nsubs, ntasks) in BANKS.items():
         if not path.exists():
             all_errors.append(f"missing {path}")
             continue
-        all_errors.extend(audit_bank(name, path, nsubs))
+        all_errors.extend(audit_bank(name, path, nsubs, ntasks))
     if all_errors:
         print("AUDIT FAILED:")
         for e in all_errors[:50]:

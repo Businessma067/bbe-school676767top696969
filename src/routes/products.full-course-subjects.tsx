@@ -8,12 +8,12 @@ import { SiteHeader } from "@/components/SiteHeader";
 export const Route = createFileRoute("/products/full-course-subjects")({
   head: () => ({
     meta: [
-      { title: "Full Course — Choose a Subject — BBE School" },
+      { title: "Full Course â€” Choose a Subject â€” BBE School" },
       {
         name: "description",
         content: "Access 2000+ tasks across Economics, Math, and English for the WU BBE exam.",
       },
-      { property: "og:title", content: "Full Course — Choose a Subject — BBE School" },
+      { property: "og:title", content: "Full Course â€” Choose a Subject â€” BBE School" },
       {
         property: "og:description",
         content: "Access 2000+ tasks across Economics, Math, and English for the WU BBE exam.",
@@ -63,7 +63,7 @@ function FullCourseSubjects() {
             to="/products/full-course"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
-            ← Back
+            â† Back
           </Link>
         }
       />
@@ -74,7 +74,7 @@ function FullCourseSubjects() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-xs font-medium tracking-wide text-taupe">
-                2000+ tasks · Full access
+                2000+ tasks Â· Full access
               </span>
             </div>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
@@ -189,7 +189,7 @@ function FullCourseSubjects() {
                   Custom Mock Builder
                 </h2>
                 <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                  Build Economics mocks by textbook subtopic (2.1, 2.2, …) from the Full Course
+                  Build Economics mocks by textbook subtopic (2.1, 2.2, â€¦) from the Full Course
                   question bank.
                 </p>
               </div>
@@ -206,3 +206,4 @@ function FullCourseSubjects() {
     </div>
   );
 }
+

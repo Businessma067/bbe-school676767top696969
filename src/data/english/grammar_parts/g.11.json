@@ -1,0 +1,770 @@
+{
+  "subsections": [
+    {
+      "id": "g.11",
+      "title": "Comparatives & Superlatives"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "en-g-11-01",
+      "case_id": "ENG G.11.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The revised bid is more cheaper than the competitor's offer.",
+        "This warehouse is larger than the one we leased last year.",
+        "Of the twelve suppliers, Apex delivered the worse service.",
+        "The new courier route is less congested than the old one.",
+        "She performed more better in the Q3 review than in Q2."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — \"Cheaper\" already carries the comparative; \"more cheaper\" is a double comparative. Use \"cheaper\" alone.\n\nTip: Drop \"more\" when the adjective already takes -er.",
+        "TRUE — One-syllable \"large\" correctly forms the comparative with -er: \"larger.\"\n\nTip: Short adjectives usually take -er, not \"more.\"",
+        "FALSE — With a group larger than two, you need the superlative \"worst,\" not the comparative \"worse.\"\n\nTip: Of three or more → worst / best / least; of two → worse / better / less.",
+        "TRUE — \"Less\" + adjective correctly forms a comparative of inferiority for a two-item comparison.\n\nTip: \"Less … than\" compares two; \"least\" ranks among many.",
+        "FALSE — \"Better\" is already comparative; \"more better\" doubles the marking. Use \"better\" alone.\n\nTip: Never stack \"more\" with an irregular comparative."
+      ],
+      "highlights": [
+        "more cheaper",
+        "larger",
+        "the worse",
+        "less congested",
+        "more better"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.11",
+      "solution_overview": "Read each sentence for how comparison is marked. Watch for double marking (more + -er), and check whether the form is comparative (two items) or superlative (a group). Irregulars like better/worse have their own shapes — do not add \"more.\""
+    },
+    {
+      "id": "en-g-11-02",
+      "case_id": "ENG G.11.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Among the five regional offices, Singapore posts the highest utilisation rate.",
+        "The renovated lobby looks gooder than it did before the fit-out.",
+        "Payroll costs were lower this month than in February.",
+        "The board found the revised forecast less optimistic than the first draft.",
+        "This is the most fastest checkout process the retailer has trialled."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — \"Highest\" is the correct superlative for ranking one office among five.\n\nTip: Use -est / most when ranking within a group of three or more.",
+        "FALSE — The irregular comparative of \"good\" is \"better,\" not \"gooder.\"\n\nTip: Memorise good → better → best; never invent -er on irregulars.",
+        "TRUE — One-syllable \"low\" correctly takes -er: \"lower.\"\n\nTip: One-syllable adjectives almost always use -er / -est.",
+        "TRUE — \"Less optimistic than\" correctly compares two forecasts on a multi-syllable adjective.\n\nTip: Multi-syllable adjectives take more/less, not -er.",
+        "FALSE — \"Fastest\" is already a superlative; \"most fastest\" doubles it. Use \"the fastest.\"\n\nTip: Never pair \"most\" with an -est form."
+      ],
+      "highlights": [
+        "the highest",
+        "gooder",
+        "lower",
+        "less optimistic",
+        "most fastest"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.11",
+      "solution_overview": "Check whether the adjective needs -er/-est or more/most, and whether any irregular (good/better/best) is mangled. Double superlatives like \"most fastest\" are always wrong."
+    },
+    {
+      "id": "en-g-11-03",
+      "case_id": "ENG G.11.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "He is more smarter than the other analysts on the desk.",
+        "Of all the tenders, this one is the less expensive.",
+        "The updated brochure is more informative than the previous edition.",
+        "Customer complaints rose more worser after the outage.",
+        "This prototype runs gooder under peak load than the pilot build."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — \"Smarter\" already marks the comparative; drop \"more.\"\n\nTip: If you see \"more\" + -er together, mark FALSE.",
+        "FALSE — Among many tenders you need \"the least expensive,\" not \"the less expensive.\"\n\nTip: less = two; least = three or more.",
+        "TRUE — Multi-syllable \"informative\" correctly takes \"more … than.\"\n\nTip: Three-or-more-syllable adjectives: more/most + base form.",
+        "FALSE — \"Worse\" is the comparative of \"bad\"; \"more worser\" is a double error. Use \"worse.\"\n\nTip: bad → worse → worst — no \"more,\" no \"worser.\"",
+        "FALSE — Use \"better,\" the irregular comparative of \"good.\"\n\nTip: \"Gooder\" is never acceptable in formal English."
+      ],
+      "highlights": [
+        "more smarter",
+        "the less expensive",
+        "more informative",
+        "more worser",
+        "gooder"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.11",
+      "solution_overview": "This set leans on common traps: double comparatives, less/least with group size, and irregular good/bad. Only one sentence is clean — find the correctly formed \"more … than.\""
+    },
+    {
+      "id": "en-g-11-04",
+      "case_id": "ENG G.11.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Fuel efficiency is higher in the hybrid fleet than in the diesel fleet.",
+        "It is the most affordable packaging option among the three quotes.",
+        "The new tower is more taller than the adjacent block.",
+        "Of the three neighbourhoods, this one has the least traffic noise.",
+        "The newer design is significantly lighter than its predecessor."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — Correct comparative \"higher … than\" for a one-syllable adjective.\n\nTip: higher/lower are safe one-syllable comparatives.",
+        "TRUE — Correct superlative with \"most\" for multi-syllable \"affordable.\"\n\nTip: most + long adjective is the standard superlative pattern.",
+        "FALSE — Double comparative: use \"taller,\" not \"more taller.\"\n\nTip: Delete \"more\" before any -er form.",
+        "TRUE — Correct superlative of inferiority with \"least\" among three.\n\nTip: least + noun/adjective ranks the lowest in a group.",
+        "TRUE — Correct comparative \"lighter\" for one-syllable \"light.\"\n\nTip: -er on short adjectives is the default."
+      ],
+      "highlights": [
+        "higher",
+        "most affordable",
+        "more taller",
+        "the least",
+        "lighter"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.11",
+      "solution_overview": "Four of five are well-formed. Isolate the one double comparative (\"more taller\") and confirm the rest use -er, most, or least correctly."
+    },
+    {
+      "id": "en-g-11-05",
+      "case_id": "ENG G.11.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Unit labour costs fell further than management had projected.",
+        "The audit trail is clearer than the one in last year's system.",
+        "This hedge fund is more volatile than the balanced portfolio.",
+        "Among all listed brands, ours remains the best known in the region.",
+        "Margins were thinner than in the previous quarter."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — \"Further\" is a correct irregular comparative for degree or extent.\n\nTip: further/farther both work for figurative extent in business English; further is common.",
+        "TRUE — Adjective \"clear\" correctly takes -er: \"clearer.\"\n\nTip: Adjectives ending in -r still take -er (clearer, nearer).",
+        "TRUE — Multi-syllable \"volatile\" correctly takes \"more … than.\"\n\nTip: more + adjective + than for longer adjectives.",
+        "TRUE — Irregular superlative \"best\" is correct for ranking fame among many.\n\nTip: good → better → best; best known is a common compound.",
+        "TRUE — Comparative \"thinner\" (double n + -er) is correctly formed.\n\nTip: Short adjectives with a short vowel often double the final consonant: thin → thinner."
+      ],
+      "highlights": [
+        "further",
+        "clearer",
+        "more volatile",
+        "the best",
+        "thinner"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.11",
+      "solution_overview": "All five are correct this time. Use it as a checklist of clean patterns: further, -er, more + long adjective, irregular best, and consonant doubling."
+    },
+    {
+      "id": "en-g-11-06",
+      "case_id": "ENG G.11.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Sales were more higher in June than in May.",
+        "The compliance pack is the least complex of the four templates.",
+        "Their offer is the most unique proposal we have ever received.",
+        "Cash reserves are stronger now than they were at year-start.",
+        "This KPI is more worse than last month's reading."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — \"Higher\" already marks comparison; \"more higher\" is wrong. Use \"higher.\"\n\nTip: more + -er is always a red flag.",
+        "TRUE — \"Least complex\" correctly ranks inferiority among four.\n\nTip: least + adjective for the lowest degree in a set.",
+        "FALSE — In careful exam English, \"unique\" is not normally graded; avoid \"most unique.\" Prefer \"unique\" alone or \"most distinctive.\"\n\nTip: Absolutes like unique/perfect rarely take more/most in formal marking.",
+        "TRUE — Correct comparative \"stronger … than.\"\n\nTip: strong → stronger is a regular one-syllable pattern.",
+        "FALSE — Use \"worse,\" not \"more worse.\"\n\nTip: Irregulars do not take \"more.\""
+      ],
+      "highlights": [
+        "more higher",
+        "least complex",
+        "most unique",
+        "stronger",
+        "more worse"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.11",
+      "solution_overview": "Look for stacked markers (more higher, more worse) and absolute adjectives that should not be graded. Two sentences are sound."
+    },
+    {
+      "id": "en-g-11-07",
+      "case_id": "ENG G.11.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Delivery times are shorter with the overnight service than with standard shipping.",
+        "Of the two candidates, Maya is the most experienced.",
+        "The revised fee schedule is less punitive than the original.",
+        "That was the worst quarterly result the division has posted.",
+        "Inventories are more larger than the safety-stock target."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — Correct comparative \"shorter … than.\"\n\nTip: short → shorter is regular.",
+        "FALSE — For exactly two people, prefer the comparative: \"the more experienced.\"\n\nTip: Two items → comparative; three or more → superlative.",
+        "TRUE — Correct \"less … than\" comparative of inferiority.\n\nTip: less + adjective + than for two-way comparison.",
+        "TRUE — Irregular superlative \"worst\" is correct.\n\nTip: bad → worse → worst.",
+        "FALSE — Double comparative: use \"larger.\"\n\nTip: Strip \"more\" before -er."
+      ],
+      "highlights": [
+        "shorter",
+        "the most experienced",
+        "less punitive",
+        "the worst",
+        "more larger"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.11",
+      "solution_overview": "Group size matters: two candidates take \"the more …,\" while a full history of quarters can take \"the worst.\" Spot the double comparative as well."
+    },
+    {
+      "id": "en-g-11-08",
+      "case_id": "ENG G.11.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The eastern plant is farther from the port than the western plant.",
+        "Customer churn is the lowest it has been in five years.",
+        "The software is more easier to deploy than the legacy suite.",
+        "This bond is less risky than the emerging-market alternative.",
+        "Among all departments, Finance submitted the most detailed budget narrative."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — \"Farther\" correctly compares physical distance between two sites.\n\nTip: farther often = physical distance; further often = figurative — both accepted.",
+        "TRUE — Correct superlative \"lowest\" for a multi-year ranking.\n\nTip: low → lower → lowest.",
+        "FALSE — \"Easier\" already comparative; drop \"more.\"\n\nTip: Double comparative trap.",
+        "TRUE — Correct \"less risky than\" for a two-way comparison.\n\nTip: less + adjective + than.",
+        "TRUE — Correct \"most detailed\" superlative among many departments.\n\nTip: most + multi-syllable adjective."
+      ],
+      "highlights": [
+        "farther",
+        "the lowest",
+        "more easier",
+        "less risky",
+        "most detailed"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.11",
+      "solution_overview": "Confirm distance (farther), rankings (lowest/most), and inferiority (less). Only the \"more easier\" line fails."
+    },
+    {
+      "id": "en-g-11-09",
+      "case_id": "ENG G.11.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The sooner we close the books, the more better the audit will go.",
+        "She is elder than her co-manager by two years.",
+        "The denser the traffic near the depot, the slower the turnaround time becomes.",
+        "This solution is more preferable to the in-house alternative.",
+        "Of every branch in the network, Leeds performed more poorly."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — The idiom is \"the sooner … the better\"; \"more better\" is wrong.\n\nTip: In the … the … patterns, use bare comparatives: the sooner, the better.",
+        "FALSE — For age comparison use \"older than,\" not \"elder than.\" \"Elder\" is mainly attributive (elder sister).\n\nTip: older than (predicative); elder mainly before a noun.",
+        "TRUE — Correct double-comparative pattern: the + comparative, the + comparative.\n\nTip: the X-er …, the Y-er … is a standard correlative comparative.",
+        "FALSE — \"Preferable\" already implies comparison; avoid \"more preferable.\" Say \"preferable to\" or \"more desirable than.\"\n\nTip: Do not grade adjectives that already encode preference.",
+        "FALSE — Ranking among all branches needs a superlative such as \"the most poorly\" / \"the worst,\" not a bare comparative without a than-clause.\n\nTip: Among all → superlative form."
+      ],
+      "highlights": [
+        "more better",
+        "elder than",
+        "The denser",
+        "more preferable",
+        "more poorly"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.11",
+      "solution_overview": "Harder traps: the … the … correlatives, elder vs older, and adjectives that already contain comparison (preferable). Only one line is fully correct."
+    },
+    {
+      "id": "en-g-11-10",
+      "case_id": "ENG G.11.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Lead times grew longer after the supplier consolidation.",
+        "The least attractive clause in the contract is the early-termination fee.",
+        "Output per shift is better than the industry median.",
+        "Spot prices became increasingly sensitive to fuel costs as demand rose.",
+        "This tranche carries a higher coupon than the previous issue."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — Correct comparative \"longer\" when the baseline is clear from context.\n\nTip: Comparatives can stand without an explicit than-phrase if the contrast is obvious.",
+        "TRUE — Correct \"least attractive\" for ranking among contract clauses.\n\nTip: least + adjective for lowest appeal.",
+        "TRUE — Irregular comparative \"better\" is correctly used.\n\nTip: good → better.",
+        "TRUE — \"Increasingly sensitive\" correctly intensifies the adjective without a faulty double comparative.\n\nTip: increasingly + adjective is cleaner than \"increasingly more\" in exam prose.",
+        "TRUE — Correct \"higher … than.\"\n\nTip: high → higher."
+      ],
+      "highlights": [
+        "longer",
+        "least attractive",
+        "better",
+        "increasingly sensitive",
+        "higher"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.11",
+      "solution_overview": "A clean set emphasising least, better, higher, and progressive intensification. Treat each as a model form when you revise."
+    },
+    {
+      "id": "en-g-11-11",
+      "case_id": "ENG G.11.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The revised SLA is as strict as the previous agreement.",
+        "This server rack is more compacter than the old chassis.",
+        "Fewer customer tickets were opened this week than last week.",
+        "The meeting ran more longer than scheduled.",
+        "Of the six bids, ours was the least aggressive on price."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — Equality comparative \"as … as\" is correctly formed.\n\nTip: as + adjective + as compares equal degree — no -er here.",
+        "FALSE — Do not combine \"more\" with -er: use \"more compact\" or, if accepted, \"compacter\" — not both.\n\nTip: Pick one marking system, never both.",
+        "TRUE — \"Fewer\" correctly compares countable tickets.\n\nTip: fewer + countable plural; less + uncountable (usually).",
+        "FALSE — Double comparative: use \"longer.\"\n\nTip: more + -er → FALSE.",
+        "TRUE — Correct \"least aggressive\" among six.\n\nTip: least + adjective for the lowest degree in a set."
+      ],
+      "highlights": [
+        "as strict as",
+        "more compacter",
+        "Fewer",
+        "more longer",
+        "least aggressive"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.11",
+      "solution_overview": "Focus on as … as equality, few/less with countable nuance in comparative frames, and whether -er is wrongly replaced by more. Three items are correct."
+    },
+    {
+      "id": "en-g-11-12",
+      "case_id": "ENG G.11.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Between the two warehouses, Dock B has the largest capacity.",
+        "There is less downtime on the night shift than on the day shift.",
+        "This is the most cheapest freight forwarder on the shortlist.",
+        "Staff retention is better here than at the previous employer.",
+        "We need a more better buffer against currency swings."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — For exactly two, prefer \"the larger capacity,\" not the superlative \"largest.\"\n\nTip: Between two → comparative; among many → superlative.",
+        "TRUE — \"Less\" correctly compares uncountable downtime between two shifts.\n\nTip: less + uncountable; fewer + countable.",
+        "FALSE — Double superlative: use \"the cheapest.\"\n\nTip: most + -est is always wrong.",
+        "TRUE — Irregular \"better\" is correct.\n\nTip: good → better → best.",
+        "FALSE — Use \"better,\" not \"more better.\"\n\nTip: Irregular comparative already includes the degree marker."
+      ],
+      "highlights": [
+        "the largest",
+        "less downtime",
+        "most cheapest",
+        "better",
+        "more better"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.11",
+      "solution_overview": "Check two-item vs many-item forms, irregular little/less/least, and whether \"most\" is wrongly attached to an -est word. Two are correct."
+    },
+    {
+      "id": "en-g-11-13",
+      "case_id": "ENG G.11.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The least expensive option still meets the safety specification.",
+        "The revised deck is more clear than the first draft.",
+        "Among the pilot sites, Manchester showed the most consistent uptime.",
+        "Demand proved weaker than the seasonal model predicted.",
+        "The CFO argued that a smaller inventory float would free working capital."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — Correct \"least expensive\" for ranking cost among options.\n\nTip: least + long adjective is standard.",
+        "FALSE — Prefer \"clearer than\" for one-syllable \"clear\"; \"more clear\" is awkward in careful marking.\n\nTip: One-syllable adjectives normally take -er, not more.",
+        "TRUE — Correct \"most consistent\" superlative among several sites.\n\nTip: most + multi-syllable adjective.",
+        "TRUE — Correct comparative \"weaker.\"\n\nTip: weak → weaker.",
+        "TRUE — Correct comparative \"smaller.\"\n\nTip: small → smaller."
+      ],
+      "highlights": [
+        "least expensive",
+        "more clear",
+        "most consistent",
+        "weaker",
+        "smaller"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.11",
+      "solution_overview": "Subtler business traps: absolute adjectives, wrong syllable strategy (more + short adj), and clean least/most. Four sentences pass."
+    },
+    {
+      "id": "en-g-11-14",
+      "case_id": "ENG G.11.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The more transparent the disclosure, the greater the investor confidence.",
+        "We received less invoices this quarter than in Q1.",
+        "Fraud losses were worse than anything recorded in the prior decade.",
+        "This covenant is the most strictest in the entire facility agreement.",
+        "Shipping via rail is more economical than air freight for bulk loads."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — Correct correlative comparative: the more …, the greater ….\n\nTip: Keep parallel comparative forms on both sides of the correlative.",
+        "FALSE — \"Invoices\" is countable; use \"fewer invoices,\" not \"less invoices.\"\n\nTip: less → uncountable; fewer → countable plurals.",
+        "TRUE — Irregular comparative \"worse\" is correct.\n\nTip: bad → worse → worst.",
+        "FALSE — Double superlative: use \"the strictest.\"\n\nTip: most + -est → FALSE.",
+        "TRUE — Correct \"more economical than\" for a longer adjective.\n\nTip: more + adjective + than."
+      ],
+      "highlights": [
+        "The more transparent",
+        "less invoices",
+        "worse",
+        "most strictest",
+        "more economical"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.11",
+      "solution_overview": "Watch correlative the … the …, double marking on irregulars, and whether \"less\" is used where \"fewer\" is required with count nouns. Three are correct."
+    },
+    {
+      "id": "en-g-11-15",
+      "case_id": "ENG G.11.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Of the two frameworks, GDPR is the most restrictive for our data flows.",
+        "Turnover became more bad after the product recall.",
+        "The least disruptive migration path is a weekend cutover.",
+        "Their elder warehouse sits nearer the motorway than the new hub.",
+        "This algorithm is more simpler than the neural-net alternative."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — With exactly two frameworks, prefer \"the more restrictive.\"\n\nTip: Two → comparative; many → superlative.",
+        "FALSE — Use \"worse,\" not \"more bad.\"\n\nTip: Irregular: bad → worse.",
+        "TRUE — Correct \"least disruptive\" ranking among migration options.\n\nTip: least + adjective for minimal impact.",
+        "FALSE — \"Elder\" is wrong for buildings/age of sites; use \"older warehouse.\"\n\nTip: elder is mainly for people in fixed phrases; older is the general comparative.",
+        "FALSE — Double comparative: use \"simpler.\"\n\nTip: more + -er → FALSE."
+      ],
+      "highlights": [
+        "the most restrictive",
+        "more bad",
+        "least disruptive",
+        "elder warehouse",
+        "more simpler"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.11",
+      "solution_overview": "Difficulty climbs: mixed syllable rules, false friends like \"elder,\" and ranking with least/most. One sentence only is fully correct."
+    },
+    {
+      "id": "en-g-11-16",
+      "case_id": "ENG G.11.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Among all SKUs, the seasonal gift set generates the best margin.",
+        "The team responded more quicker than the vendor's support desk.",
+        "Idle cash balances were the lowest across the group's ten entities.",
+        "A less aggressive hedge ratio left more upside on the table.",
+        "This was the worse breach in the company's history."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — Irregular superlative \"best\" correctly ranks among many SKUs.\n\nTip: good → better → best.",
+        "FALSE — \"Quicker\" already comparative; use \"more quickly\" (adverb) or \"quicker\" — not \"more quicker.\"\n\nTip: Do not stack more with -er on adverbs either.",
+        "TRUE — Correct superlative \"lowest\" among ten entities.\n\nTip: low → lower → lowest.",
+        "TRUE — Correct \"less aggressive\" comparative of inferiority.\n\nTip: less + adjective for reduced degree.",
+        "FALSE — History implies many incidents: use \"the worst breach,\" not \"the worse.\"\n\nTip: worse = of two; worst = of many / of all time."
+      ],
+      "highlights": [
+        "the best",
+        "more quicker",
+        "the lowest",
+        "less aggressive",
+        "the worse"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.11",
+      "solution_overview": "Advanced ranking and irregulars. Confirm best/worst/least and whether \"more\" wrongly modifies an already comparative adverb."
+    },
+    {
+      "id": "en-g-11-17",
+      "case_id": "ENG G.11.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The redesign is not as costly as the full platform rebuild.",
+        "Please escalate this ticket furtherest up the chain.",
+        "Our stance is more perfect now that legal has signed off.",
+        "Credit spreads widened further after the downgrade.",
+        "Of the many scenarios, base case is the less probable."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "TRUE — Correct negated equality: \"not as … as.\"\n\nTip: not as + adjective + as is the standard equality negation.",
+        "FALSE — The superlative of \"far\" is \"furthest\" / \"farthest,\" not \"furtherest.\"\n\nTip: far → further/farther → furthest/farthest.",
+        "FALSE — \"Perfect\" is an absolute; avoid \"more perfect.\" Prefer \"closer to perfect\" or \"improved.\"\n\nTip: Absolutes (perfect, unique, complete) resist more/most in careful English.",
+        "TRUE — Correct irregular comparative \"further.\"\n\nTip: further for figurative distance/degree is standard in finance copy.",
+        "FALSE — Among many scenarios use \"the least probable,\" not \"the less probable.\"\n\nTip: less (two) vs least (many)."
+      ],
+      "highlights": [
+        "not as costly as",
+        "furtherest",
+        "more perfect",
+        "further",
+        "the less probable"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.11",
+      "solution_overview": "Exam-level nuance: as … as negation, far/further, and absolute grading. Two statements survive."
+    },
+    {
+      "id": "en-g-11-18",
+      "case_id": "ENG G.11.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The broader the distribution network, the harder it is to keep service levels uniform.",
+        "Warranty claims proved fewer than the actuarial model assumed.",
+        "The board preferred a more safer capital structure.",
+        "This covenant package is the most onerous the bank has tabled this year.",
+        "Latency is lower on the fibre link than on the microwave backup."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — Correct the … the … correlative with two -er forms.\n\nTip: Match comparative morphology on both halves.",
+        "TRUE — \"Fewer\" correctly compares countable claims.\n\nTip: fewer + countable plural.",
+        "FALSE — Double comparative: use \"safer.\"\n\nTip: more + -er → FALSE.",
+        "TRUE — Correct \"most onerous\" among this year's packages.\n\nTip: most + multi-syllable adjective.",
+        "TRUE — Correct comparative \"lower … than.\"\n\nTip: low → lower."
+      ],
+      "highlights": [
+        "The broader",
+        "fewer",
+        "more safer",
+        "most onerous",
+        "lower"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.11",
+      "solution_overview": "Near-exam intensity: correlatives, syllable choice, and double marking on irregulars. Four are correct — find the single fault."
+    },
+    {
+      "id": "en-g-11-19",
+      "case_id": "ENG G.11.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The more diversified the client base, the less exposed the firm is to a single sector shock.",
+        "Among rival platforms, ours remains the least intrusive for end users.",
+        "Settlement risk looks worse under T+0 than under T+2.",
+        "Peak load is heavier on Fridays than on midweek trading days.",
+        "This is the most pragmatic workaround until the core system is replaced."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "TRUE — Correct correlative with more … and less ….\n\nTip: the more …, the less … is a valid correlative pattern.",
+        "TRUE — Correct \"least intrusive\" ranking among rivals.\n\nTip: least + adjective for minimal intrusion.",
+        "TRUE — Irregular comparative \"worse … than\" is correct for a two-way contrast.\n\nTip: worse for two; worst for many.",
+        "TRUE — Correct comparative \"heavier … than\" (y → i + -er).\n\nTip: heavy → heavier is the standard spelling change.",
+        "TRUE — Correct \"most pragmatic\" superlative among workarounds.\n\nTip: most + long adjective."
+      ],
+      "highlights": [
+        "The more diversified",
+        "least intrusive",
+        "worse",
+        "heavier",
+        "most pragmatic"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.11",
+      "solution_overview": "Highest band: mixed traps including wrong superlative for two items, invented irregulars, and clean least/most. Five true answers — treat as a gold-standard set."
+    },
+    {
+      "id": "en-g-11-20",
+      "case_id": "ENG G.11.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Between Paris and Lyon, Paris is the busiest logistics node for us.",
+        "Returns were more worse in apparel than in electronics.",
+        "Of all the pilots, the Dublin trial produced the best conversion rate.",
+        "The dashboard is more user-friendlier after the redesign.",
+        "That clause is the most complete indemnity we can offer."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "FALSE — Exactly two cities → prefer \"the busier logistics node,\" not \"the busiest.\"\n\nTip: Between A and B → comparative.",
+        "FALSE — Use \"worse,\" not \"more worse.\"\n\nTip: No more before irregular comparatives.",
+        "TRUE — Irregular superlative \"best\" correctly ranks among all pilots.\n\nTip: good → better → best.",
+        "FALSE — Do not combine \"more\" with -er on a compound: use \"more user-friendly\" or \"user-friendlier,\" not both.\n\nTip: One comparative marker only.",
+        "FALSE — \"Complete\" is treated as absolute in careful exam English; avoid \"most complete.\" Prefer \" fullest\" only when grading extent, or rephrase as \"the most comprehensive.\"\n\nTip: Watch absolute adjectives under most/more."
+      ],
+      "highlights": [
+        "the busiest",
+        "more worse",
+        "the best",
+        "more user-friendlier",
+        "most complete"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.11",
+      "solution_overview": "Final stretch: absolute grading, double marking, two-vs-many, and one clean irregular superlative. Only one statement is correct."
+    }
+  ]
+}

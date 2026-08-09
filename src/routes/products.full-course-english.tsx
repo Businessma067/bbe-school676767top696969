@@ -8,7 +8,7 @@ export const Route = createFileRoute("/products/full-course-english")({
       {
         name: "description",
         content:
-          "Full-course English Texts, Grammar, and Vocabulary practice for the WU BBE entrance exam.",
+          "Full-course English practice: Texts, Grammar, and Vocabulary for the WU BBE entrance exam.",
       },
     ],
   }),
@@ -17,6 +17,9 @@ export const Route = createFileRoute("/products/full-course-english")({
 
 function FullCourseEnglishTasks() {
   return (
-    <EnglishTasksPage tier="full" backTo="/products/full-course-subjects" />
+    <EnglishTasksPage
+      tier="full"
+      backTo="/products/full-course-subjects"
+    />
   );
 }

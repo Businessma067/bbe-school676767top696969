@@ -1,0 +1,646 @@
+{
+  "id": "g.5",
+  "title": "Passive Voice",
+  "tasks": [
+    {
+      "id": "en-g-5-01",
+      "case_id": "ENG G.5.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The regulator fined the firm. → The firm was fined by the regulator.",
+        "The quarterly results were announced yesterday. → The CFO announced the quarterly results yesterday, and we know that for certain.",
+        "Several discrepancies were identified by the auditors.",
+        "The photograph was altered before publication. → The photograph altered itself before publication.",
+        "The board approved the restructuring plan. → The restructuring plan was approved by the board."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Object becomes subject, past simple becomes was + past participle, and the original agent stays in a by-phrase. Meaning is unchanged.\n\nTip: Keep the agent only when the active sentence actually names one.",
+        "FALSE — The passive names no agent, so the rewrite invents both a speaker and certainty. A fair active would not claim you know who.\n\nTip: Agentless passives must stay agentless unless the source names the doer.",
+        "TRUE — Clear be + past participle with an explicit agent: were identified by the auditors.\n\nTip: Plural subjects take were, not was, in past passive.",
+        "FALSE — Photographs do not alter themselves; the rewrite invents a reflexive agent and drops the implied human editor.\n\nTip: Never turn a missing agent into the patient acting on itself.",
+        "TRUE — Clean active→passive: approved → was approved, agent retained as by the board.\n\nTip: Match tense: past simple active → past simple passive."
+      ],
+      "highlights": [
+        "was fined by the regulator",
+        "we know that for certain",
+        "were identified by the auditors",
+        "altered itself",
+        "was approved by the board"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.5",
+      "solution_overview": "Treat each arrow as a meaning check, not a creative rewrite. Ask whether the second sentence keeps the same tense, the same participants, and the same certainty. If the first side hides the doer, the second side must not invent one."
+    },
+    {
+      "id": "en-g-5-02",
+      "case_id": "ENG G.5.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The contract was signed last Friday.",
+        "Mistakes were made during the compliance review. → The review made mistakes deliberately.",
+        "Legal counsel drafted the non-disclosure agreement. → The non-disclosure agreement was drafted by legal counsel.",
+        "The merger was announced yesterday. → Someone announced the merger yesterday, and we know exactly who.",
+        "The budget proposal been approved by finance last week."
+      ],
+      "answer_key": [true, false, true, false, false],
+      "tactical_explanations": [
+        "TRUE — Correct past passive focusing on the contract; no agent is required.\n\nTip: Agentless passive is fine when the doer is unknown or unimportant.",
+        "FALSE — Mistakes were made does not say the review caused them on purpose. The rewrite adds agency and intent that were never stated.\n\nTip: Do not smuggle deliberately into a neutral passive.",
+        "TRUE — Meaning-preserving transformation with agent kept: was drafted by legal counsel.\n\nTip: Watch participle form: draft → drafted.",
+        "FALSE — Knowing exactly who fabricates information the passive never supplied.\n\nTip: Someone… and we know exactly who is almost always a fake-agent trap.",
+        "FALSE — Missing was/has: need was approved or has been approved, not bare been approved.\n\nTip: Passive always needs a form of be before the participle."
+      ],
+      "highlights": [
+        "was signed",
+        "deliberately",
+        "was drafted by legal counsel",
+        "we know exactly who",
+        "been approved"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.5",
+      "solution_overview": "Start with form: is there a proper be + past participle? Then check meaning: any by-phrase or active rewrite must come from words already on the page, not from guesswork about who did it or why."
+    },
+    {
+      "id": "en-g-5-03",
+      "case_id": "ENG G.5.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Engineers designed the prototype. → The prototype was designed by engineers.",
+        "The policy was introduced in 2020.",
+        "Customer complaints are handled by the support desk.",
+        "The invoice paid by accounts payable yesterday.",
+        "The committee rejected the bid. → The bid was rejected by the committee."
+      ],
+      "answer_key": [true, true, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Active object becomes passive subject; designed → was designed; agent retained.\n\nTip: Keep subject–verb number: the prototype was, not were.",
+        "TRUE — Grammatical agentless past passive stating when the policy appeared.\n\nTip: Time phrases like in 2020 sit naturally with past passive.",
+        "TRUE — Present simple passive with a clear agent: are handled by…\n\nTip: Habitual processes often use present passive in business English.",
+        "FALSE — Needs was paid (or has been paid). A lone past participle is not a finite passive clause.\n\nTip: If you can ask Was it paid?, you still need the was in the sentence.",
+        "TRUE — Rejected → was rejected; committee stays as by-agent.\n\nTip: Match the original tense when you flip voice."
+      ],
+      "highlights": [
+        "was designed by engineers",
+        "was introduced",
+        "are handled by the support desk",
+        "invoice paid",
+        "was rejected by the committee"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.5",
+      "solution_overview": "Most items are form checks: past or present be + participle, with or without by. Spot the line that drops the auxiliary entirely — that is not a complete passive clause."
+    },
+    {
+      "id": "en-g-5-04",
+      "case_id": "ENG G.5.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The forecast was published online. → The forecasting model published itself online.",
+        "No conclusions can be drawn from this dataset. → This dataset prevents anyone from drawing conclusions deliberately.",
+        "The press release was issued by the communications team. → We know the CEO personally issued the press release.",
+        "The warehouse was damaged during the storm. → The storm damaged the warehouse.",
+        "The applicants were notify of the delay on Monday."
+      ],
+      "answer_key": [false, false, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Reflexive rewrite is nonsense; a model does not publish itself.\n\nTip: Patient ≠ agent; do not force the subject to do the action to itself.",
+        "FALSE — Modal passive can be drawn is neutral. The rewrite invents prevention and intent.\n\nTip: Modal passives must keep the same modality and force.",
+        "FALSE — by the communications team does not entail that the CEO did it personally.\n\nTip: Never upgrade a named agent into a different, more specific one.",
+        "TRUE — during the storm supplies the cause; The storm damaged the warehouse keeps that cause without inventing a human doer.\n\nTip: Event/cause subjects are allowed when the passive already situates the damage in that event.",
+        "FALSE — Wrong form: need were notified, not were notify.\n\nTip: After be, use the past participle, never the base verb."
+      ],
+      "highlights": [
+        "published itself",
+        "deliberately",
+        "CEO personally",
+        "storm damaged the warehouse",
+        "were notify"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.5",
+      "solution_overview": "Four traps invent agents, intent, or wrong verb forms; only one pair keeps the same event. When you reverse passive→active, use only participants the original allows."
+    },
+    {
+      "id": "en-g-5-05",
+      "case_id": "ENG G.5.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The shipment is being tracked by logistics.",
+        "HR has shortlisted three candidates. → Three candidates have been shortlisted by HR.",
+        "The minutes will be circulated after the meeting.",
+        "The supplier must be paid before the end of the month.",
+        "The archives were digitised by an external contractor."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Present continuous passive: is being + past participle, agent retained.\n\nTip: Continuous passive needs being between be and the participle.",
+        "TRUE — Present perfect active → present perfect passive: have been shortlisted by HR.\n\nTip: Perfect passive = have/has been + past participle.",
+        "TRUE — Future passive with will be + past participle; agent optional.\n\nTip: will be circulated, not will circulated.",
+        "TRUE — Modal passive: must be paid. Obligation sits on the payment, not on a named payer.\n\nTip: Modal + be + PP is the standard obligation passive.",
+        "TRUE — Past passive with agent: were digitised by an external contractor.\n\nTip: British spelling digitised is fine in this bank."
+      ],
+      "highlights": [
+        "is being tracked",
+        "have been shortlisted by HR",
+        "will be circulated",
+        "must be paid",
+        "were digitised by an external contractor"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.5",
+      "solution_overview": "All five are well-formed passives across continuous, perfect, future, and modal patterns. Use them as clean templates: be (in the right tense) + past participle, then add by only when the agent is known."
+    },
+    {
+      "id": "en-g-5-06",
+      "case_id": "ENG G.5.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The audit findings are still being discussed. → We know precisely which partner is discussing them.",
+        "The client sent us the revised terms. → We were sent the revised terms by the client.",
+        "The server crashed overnight. → The server was crashed overnight by itself intentionally.",
+        "New safety guidelines have been issued by the regulator.",
+        "The brochure design by marketing last quarter."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — are still being discussed hides the agent; claiming we know precisely which partner invents certainty.\n\nTip: Progressive agentless passives especially invite fake-agent traps.",
+        "TRUE — Double-object active allows We were sent the revised terms by the client (indirect object as subject).\n\nTip: With give/send/offer, either object can become the passive subject.",
+        "FALSE — Intransitive crash does not take this agentive passive, and by itself intentionally adds nonsense intent.\n\nTip: Many intransitive events resist a clean be + PP + by-agent rewrite.",
+        "TRUE — Present perfect passive with agent: have been issued by the regulator.\n\nTip: Guidelines (plural) → have been, not has been.",
+        "FALSE — Incomplete: needs was designed / were designed, not a bare design by…\n\nTip: by alone does not create a passive; you still need be + participle."
+      ],
+      "highlights": [
+        "know precisely which partner",
+        "were sent the revised terms",
+        "by itself intentionally",
+        "have been issued by the regulator",
+        "design by marketing"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.5",
+      "solution_overview": "Watch three failure modes: inventing a discussant, forcing an intransitive into a reflexive intentional passive, and dropping be. The good lines keep agents that were already named."
+    },
+    {
+      "id": "en-g-5-07",
+      "case_id": "ENG G.5.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The board is considering the offer. → The offer is being considered by the board.",
+        "All visitors must show identification. → Identification must be shown by all visitors.",
+        "The error was occurred during overnight processing.",
+        "Management postponed the launch. → The launch was postponed by management.",
+        "The survey responses are analysed every Friday by the research team."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — Present continuous active → is being considered; agent retained.\n\nTip: Continuous passive = am/is/are being + PP.",
+        "TRUE — Modal obligation flips cleanly: must be shown by all visitors.\n\nTip: Keep must; do not weaken it to can or might.",
+        "FALSE — Occur is intransitive; was occurred is ungrammatical. Prefer The error occurred… or The error was detected…\n\nTip: Intransitives rarely form a true passive.",
+        "TRUE — Postponed → was postponed by management; meaning preserved.\n\nTip: Regular participle postponed matches the active verb.",
+        "TRUE — Present habitual passive with agent: are analysed by the research team.\n\nTip: British analysed is acceptable here."
+      ],
+      "highlights": [
+        "is being considered by the board",
+        "must be shown by all visitors",
+        "was occurred",
+        "was postponed by management",
+        "are analysed every Friday"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.5",
+      "solution_overview": "Four transformations or stand-alone passives are sound. The odd one out forces an intransitive verb into was + past participle — a classic exam trap."
+    },
+    {
+      "id": "en-g-5-08",
+      "case_id": "ENG G.5.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The dividend will be paid on 15 March.",
+        "IT disabled the old accounts. → The old accounts were disabled by IT.",
+        "The complaint has been escalate to senior management.",
+        "The keynote was delivered by an outside speaker.",
+        "Procurement awarded the tender to a local firm. → The tender was awarded to a local firm by procurement."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — Future passive will be paid; date adverbial is fine.\n\nTip: will be + PP, never will + PP alone.",
+        "TRUE — Past active → past passive with agent: were disabled by IT.\n\nTip: Plural accounts → were, not was.",
+        "FALSE — Wrong participle form: has been escalated, not escalate.\n\nTip: Perfect passive = has/have been + past participle.",
+        "TRUE — Past passive with agent retained.\n\nTip: Delivered is the correct participle of deliver.",
+        "TRUE — Complex object pattern preserved: tender becomes subject; to a local firm stays; by procurement names the agent.\n\nTip: Keep prepositional complements when you flip voice."
+      ],
+      "highlights": [
+        "will be paid",
+        "were disabled by IT",
+        "been escalate",
+        "was delivered by an outside speaker",
+        "was awarded to a local firm by procurement"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.5",
+      "solution_overview": "Scan for the broken perfect passive (been + base verb). Everything else either is already a good passive or flips active→passive without changing who did what to whom."
+    },
+    {
+      "id": "en-g-5-09",
+      "case_id": "ENG G.5.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The leak was confirmed this morning. → The communications director confirmed the leak this morning, so we know the speaker.",
+        "Staff bonuses are going to be reviewed next quarter.",
+        "The package arrived damaged. → The package was arrived damaged by the courier deliberately.",
+        "Nothing further can be done until the figures arrive. → Finance is refusing to do anything further on purpose.",
+        "The guidelines were update last night by compliance."
+      ],
+      "answer_key": [false, true, false, false, false],
+      "tactical_explanations": [
+        "FALSE — was confirmed does not name the communications director; the rewrite fabricates the speaker.\n\nTip: so we know the speaker is a giveaway fake-agent claim.",
+        "TRUE — Going-to future passive: are going to be reviewed.\n\nTip: Insert be before the participle in going-to passives.",
+        "FALSE — Arrive is intransitive; was arrived is wrong, and deliberately invents intent.\n\nTip: Prefer The package arrived damaged or The package was damaged in transit.",
+        "FALSE — Neutral modal passive becomes an accusation of deliberate refusal — meaning not preserved.\n\nTip: can be done ≠ is refusing… on purpose.",
+        "FALSE — Need were updated, not were update.\n\nTip: Base verb after be is never enough for a passive."
+      ],
+      "highlights": [
+        "so we know the speaker",
+        "are going to be reviewed",
+        "was arrived damaged",
+        "on purpose",
+        "were update"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.5",
+      "solution_overview": "Only one sentence is a clean future passive. The others either invent speakers and motives or break form with intransitive or base-verb passives."
+    },
+    {
+      "id": "en-g-5-10",
+      "case_id": "ENG G.5.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The negotiators had already finalised the wording. → The wording had already been finalised by the negotiators.",
+        "Access to the portal is restricted to authorised staff.",
+        "The samples are currently test by the laboratory.",
+        "Our partners invited us to the briefing. → We were invited to the briefing by our partners.",
+        "The defective batch was withdrawn from sale immediately."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — Past perfect active → past perfect passive: had been finalised by the negotiators.\n\nTip: Perfect passive stacks been after had/has/have.",
+        "TRUE — Present passive stating a standing rule; agent optional.\n\nTip: is restricted to… keeps the limitation phrase.",
+        "FALSE — Need are currently being tested (or are currently tested), not are currently test.\n\nTip: Progressive sense wants being + PP.",
+        "TRUE — Invite allows We were invited… by our partners.\n\nTip: Keep the to-phrase when the original has one.",
+        "TRUE — Agentless past passive focusing on the product action.\n\nTip: Withdrawn is the correct irregular participle of withdraw."
+      ],
+      "highlights": [
+        "had already been finalised",
+        "is restricted to authorised staff",
+        "are currently test",
+        "were invited to the briefing",
+        "was withdrawn from sale"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.5",
+      "solution_overview": "Check the perfect and invitation passives against the originals, then catch the laboratory line that uses a base verb where a participle (and often being) belongs."
+    },
+    {
+      "id": "en-g-5-11",
+      "case_id": "ENG G.5.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The results were announced by the process itself intentionally.",
+        "The CFO will present the outlook on Tuesday. → The outlook will be presented by the CFO on Tuesday.",
+        "Confidential files should not be left on shared drives.",
+        "The vacancy was filled last month. → We know exactly which manager filled the vacancy.",
+        "The translation is being check by a native speaker."
+      ],
+      "answer_key": [false, true, true, false, false],
+      "tactical_explanations": [
+        "FALSE — A process cannot intentionally announce results; agent and intent are both wrong.\n\nTip: by… itself intentionally is almost always false.",
+        "TRUE — Future active → will be presented by the CFO; time phrase kept.\n\nTip: Move the object to subject position and keep will be.",
+        "TRUE — Modal passive prohibition: should not be left…\n\nTip: Negation sits with the modal: should not be + PP.",
+        "FALSE — Agentless was filled does not identify the manager.\n\nTip: Exactly which… claims knowledge the passive never gave.",
+        "FALSE — Need is being checked, not is being check.\n\nTip: After being, always use a past participle."
+      ],
+      "highlights": [
+        "process itself intentionally",
+        "will be presented by the CFO",
+        "should not be left",
+        "exactly which manager",
+        "being check"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.5",
+      "solution_overview": "Reject intentional process-agents and invented managers. Accept the future and modal passives that keep the original force, and fix continuous passives that use a base verb after being."
+    },
+    {
+      "id": "en-g-5-12",
+      "case_id": "ENG G.5.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The insurance claim is being processed this week.",
+        "Security locked the building at midnight. → The building was locked at midnight by security.",
+        "Further details can be found in the appendix.",
+        "The internship offers have been accepted by both candidates.",
+        "The agenda was circulated to all attendees before noon."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Present continuous passive without agent; focus on the claim.\n\nTip: is being processed marks an action in progress.",
+        "TRUE — Meaning-preserving past passive with agent at the end.\n\nTip: Time adverbial can stay before or after the by-phrase.",
+        "TRUE — Modal passive can be found; typical of formal documents.\n\nTip: Do not invent who finds the details.",
+        "TRUE — Present perfect passive, plural agreement: have been accepted.\n\nTip: Both candidates stays as by-agent.",
+        "TRUE — Past passive with recipient phrase to all attendees.\n\nTip: Keep to-phrases when they carry essential meaning."
+      ],
+      "highlights": [
+        "is being processed",
+        "was locked at midnight by security",
+        "can be found in the appendix",
+        "have been accepted by both candidates",
+        "was circulated to all attendees"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.5",
+      "solution_overview": "A clean set of models: continuous, past with agent, modal, perfect, and recipient phrases. Use them as reference shapes when harder traps appear later."
+    },
+    {
+      "id": "en-g-5-13",
+      "case_id": "ENG G.5.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "It is said that the takeover talks collapsed overnight.",
+        "They gave the analysts revised guidance. → Revised guidance was given to the analysts.",
+        "The database crashed. → The database was crashed by the update script on purpose.",
+        "A decision has yet to be reached on the relocation.",
+        "The prototype will have been tested before the trade fair opens."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — Impersonal It is said that… is a standard reporting passive; no agent needed.\n\nTip: It is said/believed/expected that… hedges without naming a speaker.",
+        "TRUE — Direct object as subject: Revised guidance was given to the analysts. Dropping vague they is allowed.\n\nTip: Omitting a vague they is fine; inventing a named VIP is not.",
+        "FALSE — Adds an agent and on purpose; the original intransitive crash states an event, not intentional causation.\n\nTip: Do not turn system failures into deliberate sabotage without evidence in the source.",
+        "TRUE — Perfect passive inside yet to be reached — formal and correct.\n\nTip: has yet to be + PP is a common business hedge.",
+        "TRUE — Future perfect passive: will have been tested before…\n\nTip: Future perfect passive = will have been + PP."
+      ],
+      "highlights": [
+        "It is said that",
+        "was given to the analysts",
+        "on purpose",
+        "yet to be reached",
+        "will have been tested"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.5",
+      "solution_overview": "Impersonal reporting passives and future perfect passives are fair game. The crash rewrite fails because it invents both a culprit and intent the original never stated."
+    },
+    {
+      "id": "en-g-5-14",
+      "case_id": "ENG G.5.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The figures were being finalised when the system froze. → We know the junior analyst was finalising them alone.",
+        "Nobody can be blamed for the weather delay. → The operations lead is to blame for the weather delay.",
+        "The manuscript got published without peer review. → The manuscript published without peer review by itself.",
+        "Concerns have been raised about supplier concentration.",
+        "The tokens are expired by the security protocol every night intentionally by the tokens themselves."
+      ],
+      "answer_key": [false, false, false, true, false],
+      "tactical_explanations": [
+        "FALSE — were being finalised does not identify a junior analyst working alone.\n\nTip: Continuous passives still hide agents unless a by-phrase appears.",
+        "FALSE — Nobody can be blamed contradicts naming the operations lead as blameworthy.\n\nTip: Respect negation: nobody ≠ a specific person.",
+        "FALSE — Even if get-passive is colloquially fine, by itself erases any external publisher and invents self-publication.\n\nTip: Get-passive still implies an external process, not the patient acting alone.",
+        "TRUE — Present perfect passive Concerns have been raised… — standard and agentless.\n\nTip: Raising concerns often stays agentless in formal English.",
+        "FALSE — Garbled agent stack: protocol vs tokens themselves, plus intentionally — form and meaning both fail.\n\nTip: One clear by-agent is enough; reflexive intentional stacks are almost always wrong."
+      ],
+      "highlights": [
+        "junior analyst was finalising",
+        "operations lead is to blame",
+        "by itself",
+        "have been raised",
+        "by the tokens themselves"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.5",
+      "solution_overview": "Four lines smuggle in named people, blame, or reflexive agents. Only the concerns sentence keeps a sober agentless perfect passive."
+    },
+    {
+      "id": "en-g-5-15",
+      "case_id": "ENG G.5.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The embargos were lifted last week. → Last week saw the embargos lift themselves.",
+        "Stakeholders expect a decision by Friday. → A decision is expected by Friday.",
+        "The wiring diagram should have been attached to the handover pack.",
+        "Finance owns the risk register. → The risk register is owned by finance.",
+        "The samples were being store in the cold room overnight."
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — Reflexive lift themselves is absurd; keep were lifted or name a real authority.\n\nTip: Embargoes do not act on themselves.",
+        "TRUE — Expect → is expected; by Friday is a deadline, not a fake human agent.\n\nTip: by + time is not a by-agent; do not confuse the two.",
+        "TRUE — Modal perfect passive: should have been attached.\n\nTip: should have been + PP for past criticism or missed duty.",
+        "TRUE — Own passivises here in business English: is owned by finance.\n\nTip: Ownership passives are common in organisational descriptions.",
+        "FALSE — Need were being stored, not were being store.\n\nTip: being + past participle, never being + base verb."
+      ],
+      "highlights": [
+        "lift themselves",
+        "is expected by Friday",
+        "should have been attached",
+        "is owned by finance",
+        "being store"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.5",
+      "solution_overview": "Separate by-time from by-agent, accept modal perfect and ownership passives, and reject reflexive nonsense plus base verbs after being."
+    },
+    {
+      "id": "en-g-5-16",
+      "case_id": "ENG G.5.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The shortlist will be announced tomorrow. → Tomorrow the panel chair will announce the shortlist, and that is certain.",
+        "Two seats have been reserved for the auditors.",
+        "The factory produces these components in Poland. → These components are produced in Poland.",
+        "The breach was reported anonymously. → A named executive reported the breach to take revenge.",
+        "The forms need signing before payroll runs. → The forms need to be signed before payroll runs."
+      ],
+      "answer_key": [false, true, true, false, true],
+      "tactical_explanations": [
+        "FALSE — will be announced does not identify the panel chair or make that identity certain.\n\nTip: Certainty claims about a hidden agent fail the meaning test.",
+        "TRUE — Present perfect passive with a clear beneficiary for-phrase.\n\nTip: have been reserved, not has, with plural seats.",
+        "TRUE — Dropping the generic factory subject is allowed when place remains; are produced in Poland keeps the core claim without inventing a new person.\n\nTip: Omitting a generic producer is fine; inventing a CEO is not.",
+        "FALSE — Anonymously blocks naming an executive and inventing revenge motive.\n\nTip: Anonymous passives forbid named-agent actives.",
+        "TRUE — need signing and need to be signed are both acceptable obligation passives here; meaning aligns.\n\nTip: need signing ≈ need to be signed in formal British usage."
+      ],
+      "highlights": [
+        "panel chair will announce",
+        "have been reserved",
+        "are produced in Poland",
+        "named executive",
+        "need to be signed"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.5",
+      "solution_overview": "Dropping a generic producer is fine; naming a chair, executive, or revenge motive is not. Also accept the need to be signed paraphrase of need signing."
+    },
+    {
+      "id": "en-g-5-17",
+      "case_id": "ENG G.5.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Had the warning been heeded, the outage might have been avoided.",
+        "They are repairing the line now. → The line is repaired now by them as we speak.",
+        "The ambassador was shown the prototype before the press event.",
+        "It was agreed that pricing would remain unchanged for six months.",
+        "The datasets cannot be shared externally without approval."
+      ],
+      "answer_key": [true, false, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Past perfect passive in a conditional: had been heeded; might have been avoided is modal perfect passive.\n\nTip: Stacked passives in conditionals still need been + PP each time.",
+        "FALSE — Progressive active are repairing needs is being repaired, not is repaired, for an action in progress.\n\nTip: as we speak demands continuous passive, not simple passive.",
+        "TRUE — Double-object passive: The ambassador was shown the prototype…\n\nTip: Show/give/offer commonly allow recipient as passive subject.",
+        "TRUE — Impersonal It was agreed that… reports a decision without naming voters.\n\nTip: Do not invent which director agreed.",
+        "TRUE — Modal passive prohibition cannot be shared… without approval.\n\nTip: Keep the without-phrase; it is part of the meaning."
+      ],
+      "highlights": [
+        "Had the warning been heeded",
+        "is repaired now",
+        "was shown the prototype",
+        "It was agreed that",
+        "cannot be shared externally"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.5",
+      "solution_overview": "Advanced shapes: conditional perfect passives, impersonal it-passives, and recipient subjects. The weak line mismatches progressive meaning with a simple passive."
+    },
+    {
+      "id": "en-g-5-18",
+      "case_id": "ENG G.5.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The motion was passed unanimously. → Every board member who opposed it still somehow passed it deliberately.",
+        "Little progress has been made on the integration timeline. → The PMO lead personally stalled the integration timeline on purpose.",
+        "The samples were allowed to cool before testing. → The samples allowed themselves to cool before testing.",
+        "The regional HQ based in Singapore oversees APAC sales. → APAC sales are overseen by the regional HQ based in Singapore.",
+        "The password must changed every ninety days."
+      ],
+      "answer_key": [false, false, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Unanimously already states the outcome; inventing opposing members who deliberately passed it contradicts the source.\n\nTip: Do not rewrite vote passives into paradoxical agent stories.",
+        "FALSE — Agentless little progress has been made does not name a PMO lead or allege purposeful stalling.\n\nTip: Progress passives especially attract fake-blame rewrites.",
+        "FALSE — were allowed to cool implies an external controller; allowed themselves invents reflexive agency.\n\nTip: Allow-passive ≠ self-action.",
+        "TRUE — Oversees → are overseen by; the same HQ remains the agent, with the Singapore detail kept.\n\nTip: Carry modifiers of the agent into the by-phrase when they identify which HQ.",
+        "FALSE — Missing be: must be changed, not must changed.\n\nTip: Modal passives always need be before the participle."
+      ],
+      "highlights": [
+        "opposed it still somehow",
+        "PMO lead personally stalled",
+        "allowed themselves",
+        "are overseen by the regional HQ",
+        "must changed"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.5",
+      "solution_overview": "Only the HQ oversight pair keeps the same agent under a clean voice flip. The rest invent blame, reflexive cool-downs, or drop be after a modal."
+    },
+    {
+      "id": "en-g-5-19",
+      "case_id": "ENG G.5.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Having been briefed by counsel, the directors approved the disclosure. → The directors were briefed by counsel and then approved the disclosure.",
+        "The invoices are to be settled within fourteen days.",
+        "What remains to be decided is the venue. → Someone has already decided the venue, and we know who.",
+        "The rare manuscript was being carefully restored when funding paused.",
+        "Under no circumstances should customer data be exported without encryption."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — Perfect passive participle Having been briefed by counsel unpacks fairly into were briefed by counsel without inventing a new agent.\n\nTip: Participial passives still obey the no-fake-agent rule.",
+        "TRUE — be to + passive: are to be settled marks scheduled obligation.\n\nTip: are to be + PP is formal diary-style passive.",
+        "FALSE — remains to be decided means the venue is still open; claiming it is already decided by a known person reverses the meaning.\n\nTip: to be decided signals incompleteness, not a hidden finished decision.",
+        "TRUE — Past continuous passive was being carefully restored; agent optional.\n\nTip: Adverbs can sit between being and the participle.",
+        "TRUE — Modal passive after inversion still needs be: should… be exported.\n\nTip: Inversion does not remove the passive be."
+      ],
+      "highlights": [
+        "were briefed by counsel",
+        "are to be settled",
+        "already decided the venue",
+        "was being carefully restored",
+        "should customer data be exported"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.5",
+      "solution_overview": "Four advanced passives hold: participial, be-to, continuous, and inverted modal. The venue line fails because it turns an undecided state into a fabricated completed act."
+    },
+    {
+      "id": "en-g-5-20",
+      "case_id": "ENG G.5.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "No conclusions can be drawn from this data. → This data prevents anyone from drawing conclusions deliberately.",
+        "The interim report is expected to be published before the AGM.",
+        "They had the servers replaced overnight. → The servers were replaced overnight.",
+        "It is believed the shortfall was caused by a booking error. → We know which clerk caused the shortfall and that the clerk acted deliberately.",
+        "Were the safeguards not to be enforced, the exposure would widen. → If the safeguards were not enforced, the exposure would widen."
+      ],
+      "answer_key": [false, true, true, false, true],
+      "tactical_explanations": [
+        "FALSE — Neutral modal passive becomes intentional prevention; meaning and force both change.\n\nTip: can be drawn does not accuse the data of deliberate obstruction.",
+        "TRUE — Nested passives: is expected + to be published — both layers are well formed.\n\nTip: Expect + to-infinitive passive is common in formal forecasts.",
+        "TRUE — Causative had… replaced pairs with a plain passive The servers were replaced overnight without inventing who did the work.\n\nTip: Causative get/have + object + PP often aligns with a simple passive of the object.",
+        "FALSE — It is believed hedges; naming a clerk and alleging deliberate action fabricates agent and intent.\n\nTip: Belief passives especially forbid certainty-plus-motive rewrites.",
+        "TRUE — Inverted passive Were… not to be enforced paraphrases cleanly as If the safeguards were not enforced…\n\nTip: Formal inversion still encodes the same passive obligation/enforcement meaning."
+      ],
+      "highlights": [
+        "prevents anyone from drawing conclusions deliberately",
+        "is expected to be published",
+        "were replaced overnight",
+        "clerk acted deliberately",
+        "Were the safeguards not to be enforced"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.5",
+      "solution_overview": "At the top band, watch nested passives and inverted conditionals that still keep meaning, and reject any rewrite that adds deliberate clerks, motives, or prevention the source never stated."
+    }
+  ]
+}

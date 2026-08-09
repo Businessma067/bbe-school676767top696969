@@ -7,12 +7,12 @@ import { SiteHeader } from "@/components/SiteHeader";
 export const Route = createFileRoute("/products/lite-bbe-course-subjects")({
   head: () => ({
     meta: [
-      { title: "Lite Course — Choose a Subject — BBE School" },
+      { title: "Lite Course â€” Choose a Subject â€” BBE School" },
       {
         name: "description",
         content: "Access Lite Course tasks across Economics, Math, and English for the WU BBE exam.",
       },
-      { property: "og:title", content: "Lite Course — Choose a Subject — BBE School" },
+      { property: "og:title", content: "Lite Course â€” Choose a Subject â€” BBE School" },
       {
         property: "og:description",
         content: "Access Lite Course tasks across Economics, Math, and English for the WU BBE exam.",
@@ -62,7 +62,7 @@ function LiteCourseSubjects() {
             to="/products/lite-bbe-course"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
-            ← Back
+            â† Back
           </Link>
         }
       />
@@ -73,7 +73,7 @@ function LiteCourseSubjects() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               <span className="text-xs font-medium tracking-wide text-taupe">
-                950+ tasks · Lite access
+                950+ tasks Â· Lite access
               </span>
             </div>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
@@ -176,3 +176,4 @@ function LiteCourseSubjects() {
     </div>
   );
 }
+

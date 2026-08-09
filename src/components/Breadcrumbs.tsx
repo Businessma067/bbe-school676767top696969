@@ -70,8 +70,8 @@ function buildDefaultCrumbs(pathname: string): Crumb[] {
 
 /**
  * Custom mocks live under `/mock-exams/...` for the exam runner, but belong to
- * the Products › Custom Mock Builder flow — keep that hierarchy in the trail.
- * Home › Products › Custom Mock Builder › Custom Mock 3.3 10q › Take
+ * the Products â€º Custom Mock Builder flow â€” keep that hierarchy in the trail.
+ * Home â€º Products â€º Custom Mock Builder â€º Custom Mock 3.3 10q â€º Take
  */
 function buildCustomMockCrumbs(
   pathname: string,
@@ -98,7 +98,7 @@ function buildCustomMockCrumbs(
   return withLastFlags(trail);
 }
 
-/** Home › Mock Exams › Mock Exam 1 › Take */
+/** Home â€º Mock Exams â€º Mock Exam 1 â€º Take */
 function buildCatalogMockCrumbs(pathname: string, examId: string): Crumb[] {
   const action = pathname.endsWith("/review")
     ? "Review"
@@ -224,3 +224,4 @@ export function Breadcrumbs() {
     </nav>
   );
 }
+

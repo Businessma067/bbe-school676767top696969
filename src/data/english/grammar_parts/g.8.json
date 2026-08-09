@@ -1,0 +1,646 @@
+{
+  "id": "g.8",
+  "title": "Reported Speech",
+  "tasks": [
+    {
+      "id": "en-g-8-01",
+      "case_id": "ENG G.8.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"The audit is delayed.\" → \"She said the audit was delayed.\"",
+        "Direct: \"Where is the briefing room?\" → \"He asked where was the briefing room.\"",
+        "Direct: \"We will submit the bid by noon.\" → \"They said they will submit the bid by noon.\"",
+        "Direct: \"Did you see the memo?\" → \"She asked if I had seen the memo.\"",
+        "Direct: \"I resigned yesterday.\" → \"He said he had resigned yesterday.\""
+      ],
+      "answer_key": [true, false, false, true, false],
+      "tactical_explanations": [
+        "TRUE — After a past reporting verb, present simple backshifts to past simple: \"is\" becomes \"was.\"\n\nTip: Past said/told/asked usually pulls the reported verb one step back in time.",
+        "FALSE — Embedded wh-questions keep statement order: subject before the verb. \"Where was the briefing room?\" is direct-question order.\n\nTip: Use \"where the briefing room was,\" not \"where was…\"",
+        "FALSE — \"Will\" normally backshifts to \"would\" after a past reporting verb.\n\nTip: \"They said they would submit the bid by noon.\"",
+        "TRUE — Yes/no questions take if/whether plus statement order, and present perfect often becomes past perfect.\n\nTip: \"asked if/whether + subject + had + past participle.\"",
+        "FALSE — Time markers shift with the tense: \"yesterday\" becomes \"the day before\" (or \"the previous day\").\n\nTip: Pair backshift with deictic shifts: yesterday → the day before; tomorrow → the next day."
+      ],
+      "highlights": [
+        "was delayed",
+        "where was",
+        "will submit",
+        "if I had seen",
+        "yesterday"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.8",
+      "solution_overview": "This set drills the core trio: tense backshift after said/asked, statement word order in embedded questions, and shifting time markers like yesterday. Mark each line as a legal report of the given direct speech — or not."
+    },
+    {
+      "id": "en-g-8-02",
+      "case_id": "ENG G.8.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"I can fix the spreadsheet.\" → \"She said she can fix the spreadsheet.\"",
+        "Direct: \"When does the tender close?\" → \"He asked when the tender closed.\"",
+        "Direct: \"We must finish the draft today.\" → \"She said they had to finish the draft that day.\"",
+        "Direct: \"I have checked the figures.\" → \"He said he had checked the figures.\"",
+        "Direct: \"Are the invoices ready?\" → \"She asked are the invoices ready.\""
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — Ability \"can\" typically backshifts to \"could\" after a past reporting verb.\n\nTip: \"She said she could fix the spreadsheet.\"",
+        "TRUE — Wh-word stays, tense backshifts, and the clause keeps subject–verb statement order.\n\nTip: \"asked when + subject + past verb,\" never \"when does/did…\"",
+        "TRUE — Obligation \"must\" often becomes \"had to,\" and \"today\" shifts to \"that day.\"\n\nTip: Present obligation markers (must/today) usually reshape in past reports.",
+        "TRUE — Present perfect backshifts cleanly to past perfect after said.\n\nTip: have/has + past participle → had + past participle.",
+        "FALSE — Reported yes/no questions need if/whether and statement order, not inverted \"are the invoices…\"\n\nTip: \"She asked whether the invoices were ready.\""
+      ],
+      "highlights": [
+        "can fix",
+        "when the tender closed",
+        "that day",
+        "had checked",
+        "are the invoices"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.8",
+      "solution_overview": "Focus on modal backshift (can → could, must → had to), present perfect → past perfect, and the if/whether pattern for yes/no reports. Embedded wh-questions should already feel like statements."
+    },
+    {
+      "id": "en-g-8-03",
+      "case_id": "ENG G.8.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"The board meets here tomorrow.\" → \"He said the board met here tomorrow.\"",
+        "Direct: \"Why did the supplier cancel?\" → \"She asked why did the supplier cancel.\"",
+        "Direct: \"I am reviewing the contract now.\" → \"He said he was reviewing the contract then.\"",
+        "Direct: \"Do not sign the annex.\" → \"She told me do not sign the annex.\"",
+        "Direct: \"We may raise prices next quarter.\" → \"They said they may raise prices next quarter.\""
+      ],
+      "answer_key": [false, false, true, false, false],
+      "tactical_explanations": [
+        "FALSE — Place and time markers usually shift: \"here\" → \"there,\" \"tomorrow\" → \"the next day\" / \"the following day.\"\n\nTip: \"He said the board met there the following day.\"",
+        "FALSE — Embedded why-questions need statement order and usually past-perfect backshift: not \"why did the supplier…\"\n\nTip: \"She asked why the supplier had cancelled.\"",
+        "TRUE — Present continuous backshifts to past continuous, and \"now\" becomes \"then.\"\n\nTip: am/is/are + -ing → was/were + -ing; now → then.",
+        "FALSE — Negative commands in reports use told/asked + object + not + to-infinitive.\n\nTip: \"She told me not to sign the annex.\"",
+        "FALSE — \"May\" for possibility often becomes \"might,\" and \"next quarter\" should become \"the following quarter.\"\n\nTip: \"They said they might raise prices the following quarter.\""
+      ],
+      "highlights": [
+        "here tomorrow",
+        "why did the supplier",
+        "then",
+        "do not sign",
+        "may raise prices next"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.8",
+      "solution_overview": "Four traps stack deictics, leftover do-support, unshifted may/next, and a bare negative command. Only the continuous now→then line is clean."
+    },
+    {
+      "id": "en-g-8-04",
+      "case_id": "ENG G.8.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"Please email the client.\" → \"He asked me to email the client.\"",
+        "Direct: \"Who approved the budget?\" → \"She asked who had approved the budget.\"",
+        "Direct: \"I will have finished by Friday.\" → \"He said he would have finished by Friday.\"",
+        "Direct: \"This policy starts next week.\" → \"She said that policy started the following week.\"",
+        "Direct: \"Have you updated the forecast?\" → \"He asked had I updated the forecast.\""
+      ],
+      "answer_key": [true, true, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Polite requests report as asked + object + to-infinitive.\n\nTip: Direct \"Please…\" → \"asked someone to…\"",
+        "TRUE — Subject questions keep who as subject; the tense still backshifts.\n\nTip: \"asked who had approved…\" is statement-like and correctly shifted.",
+        "TRUE — Future perfect \"will have finished\" backshifts to \"would have finished.\"\n\nTip: will → would even inside perfect constructions.",
+        "TRUE — \"This/next\" often become \"that/the following\" after a past report.\n\nTip: Demonstratives and relative time words move with the reporting frame.",
+        "FALSE — Yes/no perfect questions need if/whether + statement order, not \"had I…\" inversion.\n\nTip: \"He asked whether I had updated the forecast.\""
+      ],
+      "highlights": [
+        "to email",
+        "who had approved",
+        "would have finished",
+        "that policy",
+        "had I updated"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.8",
+      "solution_overview": "Four solid reports cover requests, subject questions, future perfect backshift, and this/next shifts. The trap is leftover question inversion after asked."
+    },
+    {
+      "id": "en-g-8-05",
+      "case_id": "ENG G.8.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"The margin is too thin.\" → \"The CFO told that the margin was too thin.\"",
+        "Direct: \"How long have you worked here?\" → \"She asked how long I had worked there.\"",
+        "Direct: \"We shall revise the offer.\" → \"He said they should revise the offer.\"",
+        "Direct: \"I saw the auditor last night.\" → \"She said she had seen the auditor the night before.\"",
+        "Direct: \"Can you join the call?\" → \"He asked could I join the call.\""
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — \"Tell\" needs a personal object: tell someone that…; without an object, use \"said that…\"\n\nTip: said that / told us that — never bare \"told that.\"",
+        "TRUE — Present perfect → past perfect, \"here\" → \"there,\" and statement order after how long.\n\nTip: Bundle tense, place, and order shifts together.",
+        "TRUE — Formal \"shall\" for future often reports as \"should\" (or \"would\") after past said.\n\nTip: Treat shall like will when backshifting future meaning.",
+        "TRUE — Past simple → past perfect and \"last night\" → \"the night before.\"\n\nTip: Relative past time phrases shift just like yesterday/tomorrow.",
+        "FALSE — Modal yes/no reports need if/whether + subject + could, not \"could I…\" inversion.\n\nTip: \"He asked if I could join the call.\""
+      ],
+      "highlights": [
+        "told that",
+        "had worked there",
+        "should revise",
+        "the night before",
+        "could I join"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.8",
+      "solution_overview": "Say versus tell joins the usual backshift package. Watch for missing objects after tell and for inverted modals after asked."
+    },
+    {
+      "id": "en-g-8-06",
+      "case_id": "ENG G.8.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"Submit the form before noon.\" → \"She told us to submit the form before noon.\"",
+        "Direct: \"I may be late.\" → \"He said he might be late.\"",
+        "Direct: \"Where have they put the samples?\" → \"She asked where they had put the samples.\"",
+        "Direct: \"We were discussing the merger.\" → \"He said they had been discussing the merger.\"",
+        "Direct: \"I leave for Vienna tonight.\" → \"She said she was leaving for Vienna that night.\""
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Imperatives report as tell/ask + object + to-infinitive.\n\nTip: Command verb drops; to + base verb carries the instruction.",
+        "TRUE — Possibility \"may\" commonly becomes \"might\" in past reports.\n\nTip: may → might is the safe exam backshift.",
+        "TRUE — Wh-word + statement order + present perfect → past perfect.\n\nTip: \"asked where they had put…\" — no auxiliary before the subject.",
+        "TRUE — Past continuous often becomes past perfect continuous after a past reporting verb.\n\nTip: was/were + -ing → had been + -ing when sequence needs a further step back.",
+        "TRUE — Present simple for a near arrangement can report as past continuous, with \"tonight\" → \"that night.\"\n\nTip: Timetabled or arranged futures often surface as was/were + -ing in reports."
+      ],
+      "highlights": [
+        "to submit",
+        "might be",
+        "where they had put",
+        "had been discussing",
+        "that night"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.8",
+      "solution_overview": "All five lines are clean reports: commands with to-infinitive, modal may→might, embedded perfect questions, past continuous deepening, and arranged-future reporting."
+    },
+    {
+      "id": "en-g-8-07",
+      "case_id": "ENG G.8.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"I must have left the badge at reception.\" → \"He said he must have left the badge at reception.\"",
+        "Direct: \"Will the bank renew the facility?\" → \"She asked would the bank renew the facility.\"",
+        "Direct: \"These costs are rising.\" → \"He said those costs were rising.\"",
+        "Direct: \"I used to work in compliance.\" → \"She said she used to work in compliance.\"",
+        "Direct: \"Don't forget the annex.\" → \"He reminded me not to forget the annex.\""
+      ],
+      "answer_key": [true, false, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Deduction \"must have\" often stays unchanged because it already refers to a past conclusion.\n\nTip: Logical deduction with must have need not backshift further.",
+        "FALSE — Yes/no with will needs if/whether + would + subject, not \"would the bank…\" inversion.\n\nTip: \"She asked whether the bank would renew the facility.\"",
+        "TRUE — \"These\" → \"those\" and present continuous → past continuous.\n\nTip: Demonstratives shift with the reporting viewpoint.",
+        "TRUE — \"Used to\" already marks past habit and normally stays as used to after said.\n\nTip: No further backshift is required for used to.",
+        "TRUE — Negative reminders use not + to-infinitive after remind/tell.\n\nTip: \"reminded me not to forget…\" mirrors \"told me not to…\""
+      ],
+      "highlights": [
+        "must have left",
+        "would the bank",
+        "those costs were",
+        "used to work",
+        "not to forget"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.8",
+      "solution_overview": "Some forms resist further shift (must have, used to); others still demand if/whether and statement order. Separate \"leave alone\" cases from order traps."
+    },
+    {
+      "id": "en-g-8-08",
+      "case_id": "ENG G.8.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"Why are you delaying the launch?\" → \"She asked why were we delaying the launch.\"",
+        "Direct: \"I ought to call the broker.\" → \"He said he ought to call the broker.\"",
+        "Direct: \"We arrived two days ago.\" → \"They said they had arrived two days ago.\"",
+        "Direct: \"Is this the final draft?\" → \"He asked if that was the final draft.\"",
+        "Direct: \"I will phone you later today.\" → \"She said she would phone me later that day.\""
+      ],
+      "answer_key": [false, true, false, true, true],
+      "tactical_explanations": [
+        "FALSE — Keep statement order: \"why we were delaying,\" not \"why were we…\"\n\nTip: After asked, never reinvert the auxiliary before the subject.",
+        "TRUE — \"Ought to\" typically remains ought to in reported speech.\n\nTip: Ought to is already modal-like and usually does not change form.",
+        "FALSE — \"Ago\" normally becomes \"before\" / \"earlier\" in past reports; keeping \"ago\" clashes with the shifted frame.\n\nTip: \"They said they had arrived two days before.\"",
+        "TRUE — Yes/no with if, this→that, and present→past all apply together.\n\nTip: Bundle if + demonstrative shift + tense shift.",
+        "TRUE — will→would and today→that day after past said.\n\nTip: Future markers and same-day time words both move."
+      ],
+      "highlights": [
+        "why were we",
+        "ought to call",
+        "two days ago",
+        "if that was",
+        "that day"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.8",
+      "solution_overview": "The hard spots are inverted wh-clauses and leftover \"ago.\" Ought to and clean if/that/will shifts show the correct pattern."
+    },
+    {
+      "id": "en-g-8-09",
+      "case_id": "ENG G.8.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"We need not renew the licence yet.\" → \"She said they need not renew the licence yet.\"",
+        "Direct: \"What time does the flight leave?\" → \"He asked what time the flight left.\"",
+        "Direct: \"I have been waiting since Monday.\" → \"She said she had been waiting since Monday.\"",
+        "Direct: \"Come back the day after tomorrow.\" → \"They told us to come back in two days' time.\"",
+        "Direct: \"I can't approve this invoice.\" → \"He said he couldn't approve that invoice.\""
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Need not\" for lack of obligation often stays need not (or becomes did not need to).\n\nTip: Either unchanged need not or did not need to is acceptable; bare \"needed not\" is wrong.",
+        "TRUE — Wh-clause with statement order and present→past.\n\nTip: \"asked what time + subject + past verb.\"",
+        "TRUE — Present perfect continuous backshifts to past perfect continuous.\n\nTip: have/has been + -ing → had been + -ing.",
+        "TRUE — \"The day after tomorrow\" can paraphrase as \"in two days' time\" / \"two days later.\"\n\nTip: Distant relative time phrases are often reworded, not left literal.",
+        "TRUE — can→could and this→that in one tidy report.\n\nTip: Modal ability and demonstratives usually shift together after past said."
+      ],
+      "highlights": [
+        "need not renew",
+        "what time the flight left",
+        "had been waiting",
+        "in two days' time",
+        "couldn't approve that"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.8",
+      "solution_overview": "All five are acceptable advanced reports: need not, embedded timetable questions, perfect continuous backshift, reworded far-future time, and can/this shifts."
+    },
+    {
+      "id": "en-g-8-10",
+      "case_id": "ENG G.8.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"Who did you promote?\" → \"She asked who did I promote.\"",
+        "Direct: \"The shares peaked last year.\" → \"He said the shares had peaked the year before.\"",
+        "Direct: \"Shall I postpone the webinar?\" → \"She asked if she should postpone the webinar.\"",
+        "Direct: \"We are going to expand into Poland.\" → \"They said they were going to expand into Poland.\"",
+        "Direct: \"I won't sign until Friday.\" → \"He said he won't sign until Friday.\""
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — Object questions drop do-support and use statement order: \"who I had promoted.\"\n\nTip: After asked, no \"did\" before the subject.",
+        "TRUE — Past simple → past perfect and \"last year\" → \"the year before.\"\n\nTip: Calendar \"last…\" phrases become \"the … before / previous …\"",
+        "TRUE — Offer/suggestion shall I… reports as if/whether + should.\n\nTip: \"asked if she should…\" is the standard mapping.",
+        "TRUE — \"Be going to\" backshifts was/were going to after past said.\n\nTip: Treat going-to futures like other present forms that shift one step.",
+        "FALSE — \"Won't\" should become \"wouldn't\" after a past reporting verb.\n\nTip: will/won't → would/wouldn't in standard backshift."
+      ],
+      "highlights": [
+        "who did I",
+        "the year before",
+        "if she should",
+        "were going to",
+        "won't sign"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.8",
+      "solution_overview": "Object-question do-support and unshifted won't are the failures. Going-to futures, shall→should offers, and last-year time shifts are the models."
+    },
+    {
+      "id": "en-g-8-11",
+      "case_id": "ENG G.8.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The analyst said, \"Inflation is sticky,\" and later reported that inflation is sticky.",
+        "Direct: \"Could you circulate the minutes?\" → \"She asked me if I could circulate the minutes.\"",
+        "Direct: \"I was working when the alert sounded.\" → \"He said he had been working when the alert had sounded.\"",
+        "Direct: \"Whose laptop is this?\" → \"He asked whose laptop was this.\"",
+        "Direct: \"We needn't have hired extra staff.\" → \"She said they needn't have hired extra staff.\""
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "TRUE — When the situation is still true, some writers keep present tense after a past report; it is acceptable for ongoing facts.\n\nTip: Backshift is usual but not compulsory for permanently or still-valid truths.",
+        "TRUE — Polite could you… can report as asked + if + could + statement order.\n\nTip: Ability/request could often stays could inside if-clauses.",
+        "FALSE — Over-shifting both verbs to past perfect can distort simultaneous past events; keep the time-clause past simple if it marks the interrupting moment.\n\nTip: Prefer \"had been working when the alert sounded.\"",
+        "FALSE — Statement order needed: \"whose laptop this was,\" not \"whose laptop was this.\"\n\nTip: Possessive wh-questions still lose inversion in reports.",
+        "TRUE — \"Needn't have\" for unnecessary past action commonly remains needn't have.\n\nTip: Perfect modal forms for past comments often stay put."
+      ],
+      "highlights": [
+        "inflation is sticky",
+        "if I could circulate",
+        "had sounded",
+        "was this",
+        "needn't have hired"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.8",
+      "solution_overview": "Optional non-backshift for still-true facts sits beside over-shifted time clauses and inverted whose-questions. Perfect need not and polite could-if reports are fine."
+    },
+    {
+      "id": "en-g-8-12",
+      "case_id": "ENG G.8.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"Let's postpone the roadshow.\" → \"She suggested postponing the roadshow.\"",
+        "Direct: \"I wish I knew the answer.\" → \"He said he wished he knew the answer.\"",
+        "Direct: \"Had you finished before the outage?\" → \"She asked whether I had finished before the outage.\"",
+        "Direct: \"We thrived here last spring.\" → \"They said they had thrived there the previous spring.\"",
+        "Direct: \"You had better renegotiate.\" → \"He said I had better renegotiate.\""
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Let's…\" suggestions often report as suggested + gerund (or suggested that…).\n\nTip: Suggest takes a gerund or a that-clause, not bare to-infinitive without that.",
+        "TRUE — Wish-clauses already sit in a past-like form; reporting them usually keeps wished + past form.\n\nTip: Do not force a further unnatural backshift inside wish.",
+        "TRUE — Past perfect yes/no questions report with if/whether + had + past participle and statement order.\n\nTip: Inversion from the direct Had you… disappears after asked.",
+        "TRUE — Past simple → past perfect plus here→there and last→previous.\n\nTip: Stack place and calendar shifts with the tense change.",
+        "TRUE — \"Had better\" for advice typically remains had better after said.\n\nTip: Had better does not become would better."
+      ],
+      "highlights": [
+        "suggested postponing",
+        "wished he knew",
+        "whether I had finished",
+        "the previous spring",
+        "had better renegotiate"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.8",
+      "solution_overview": "Every line is a valid report: let's→suggest + -ing, wish retention, whether + past perfect, stacked deictics, and unchanged had better."
+    },
+    {
+      "id": "en-g-8-13",
+      "case_id": "ENG G.8.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"I would rather stay remote.\" → \"She said she would rather stayed remote.\"",
+        "Direct: \"When will you publish the results?\" → \"He asked when we would publish the results.\"",
+        "Direct: \"I might have misread the clause.\" → \"He said he might have misread the clause.\"",
+        "Direct: \"Stay where you are.\" → \"Security told us to stay where we were.\"",
+        "Direct: \"Did the regulator contact you yesterday?\" → \"She asked if the regulator had contacted me yesterday.\""
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — After would rather, keep the base verb: \"would rather stay,\" not \"stayed.\"\n\nTip: Would rather + bare infinitive survives reporting.",
+        "TRUE — will→would inside a wh-clause with statement order.\n\nTip: \"asked when + subject + would + verb.\"",
+        "TRUE — \"Might have\" for past possibility usually stays might have.\n\nTip: Perfect modals of speculation rarely need further change.",
+        "TRUE — Imperative plus embedded where-clause: to-infinitive outside, backshift inside the where-clause.\n\nTip: \"to stay where we were\" — both layers handled.",
+        "FALSE — \"Yesterday\" should become \"the day before\" once the reporting verb is past.\n\nTip: \"…had contacted me the day before.\""
+      ],
+      "highlights": [
+        "would rather stayed",
+        "when we would publish",
+        "might have misread",
+        "where we were",
+        "yesterday"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.8",
+      "solution_overview": "Would rather keeps a base verb; yesterday still must shift. Wh-future reports, might have, and nested where-clauses show controlled backshift."
+    },
+    {
+      "id": "en-g-8-14",
+      "case_id": "ENG G.8.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"I insist that the clause be rewritten.\" → \"She insisted that the clause be rewritten.\"",
+        "Direct: \"How much did the campaign cost?\" → \"He asked how much the campaign had cost.\"",
+        "Direct: \"We will be launching next Monday.\" → \"They said they would be launching the following Monday.\"",
+        "Direct: \"I never said that.\" → \"She claimed she had never said that.\"",
+        "Direct: \"Are you being serious?\" → \"He asked if I was being serious.\""
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Formal mandative subjunctive after insist often stays be + past participle in the report.\n\nTip: Reporting insist that… can preserve the base-form subjunctive.",
+        "TRUE — Object how-much questions drop did and backshift to past perfect with statement order.\n\nTip: \"asked how much + subject + had + past participle.\"",
+        "TRUE — Future continuous will be + -ing → would be + -ing, and next → the following.\n\nTip: Progressive futures backshift the will piece only.",
+        "TRUE — Past simple negation becomes past perfect in a past report when the earlier speech act is prior.\n\nTip: \"had never said\" places the denial further back.",
+        "TRUE — Present continuous passive-like being → past continuous being after if.\n\nTip: \"asked if I was being…\" — statement order, tense shifted."
+      ],
+      "highlights": [
+        "clause be rewritten",
+        "how much the campaign had cost",
+        "would be launching",
+        "had never said",
+        "if I was being"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.8",
+      "solution_overview": "All five succeed: preserved mandative be, cleaned object questions, future continuous backshift, prior-speech past perfect, and continuous being after if."
+    },
+    {
+      "id": "en-g-8-15",
+      "case_id": "ENG G.8.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"I would have called if I had known.\" → \"She said she would have called if she had known.\"",
+        "Direct: \"Which warehouse stores the spares?\" → \"He asked which warehouse did store the spares.\"",
+        "Direct: \"The offer expires the day after tomorrow.\" → \"They said the offer expired two days later.\"",
+        "Direct: \"Must we disclose the conflict?\" → \"She asked if they had to disclose the conflict.\"",
+        "Direct: \"I am to present at nine.\" → \"He said he was to present at nine.\""
+      ],
+      "answer_key": [true, false, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Conditional perfect forms already sit far back and typically stay would have / had + past participle when reported.\n\nTip: Do not invent an extra layer beyond would have + past perfect.",
+        "FALSE — No do-support in the embedded clause: \"which warehouse stored the spares.\"\n\nTip: Wh-determiners keep statement order without did.",
+        "TRUE — \"The day after tomorrow\" → \"two days later\" / \"in two days\" is a natural time rewrite.\n\nTip: Far deixis is often paraphrased in polished reports.",
+        "TRUE — Obligation must in questions often becomes had to after asked if.\n\nTip: \"asked if they had to…\" is the usual mapping.",
+        "TRUE — Formal \"be to\" for scheduled duty backshifts was/were to.\n\nTip: am/is/are to → was/were to after past said."
+      ],
+      "highlights": [
+        "would have called",
+        "did store",
+        "two days later",
+        "had to disclose",
+        "was to present"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.8",
+      "solution_overview": "One illegal did in a which-clause breaks the set. Elsewhere, remote conditionals, time paraphrase, must→had to, and be-to schedules report cleanly."
+    },
+    {
+      "id": "en-g-8-16",
+      "case_id": "ENG G.8.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"You needn't worry about the audit.\" → \"He told me I didn't need to worry about the audit.\"",
+        "Direct: \"Whereabouts is the server rack?\" → \"She asked whereabouts was the server rack.\"",
+        "Direct: \"I have got to leave now.\" → \"He said he had got to leave then.\"",
+        "Direct: \"We shall have completed the roll-out by June.\" → \"They said they would have completed the roll-out by June.\"",
+        "Direct: \"Why must the filing be public?\" → \"She asked why the filing had to be public.\""
+      ],
+      "answer_key": [true, false, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Needn't\" can report as didn't need to / needn't after a past frame.\n\nTip: Personal object after told plus shifted lack-of-obligation form.",
+        "FALSE — Even with whereabouts, keep statement order: \"whereabouts the server rack was.\"\n\nTip: Any wh-word still bans auxiliary-before-subject after asked.",
+        "TRUE — \"Have got to\" obligation backshifts to had got to, and now→then.\n\nTip: Treat have got to like must for backshift purposes.",
+        "TRUE — shall have + past participle (future perfect) → would have + past participle.\n\nTip: Future perfect always yields would have in standard past reports.",
+        "TRUE — why + must → why + had to with statement order.\n\nTip: Obligation questions lose must inversion and often become had to."
+      ],
+      "highlights": [
+        "didn't need to worry",
+        "whereabouts was",
+        "had got to leave then",
+        "would have completed",
+        "why the filing had to"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.8",
+      "solution_overview": "Whereabouts inversion is the sole fault. Needn't→didn't need to, have got to, future perfect, and why-must→had to are sound."
+    },
+    {
+      "id": "en-g-8-17",
+      "case_id": "ENG G.8.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"Were the covenants breached last quarter?\" → \"Counsel asked whether the covenants had been breached the previous quarter.\"",
+        "Direct: \"I would prefer you not to disclose this yet.\" → \"She said she would prefer us not to disclose that yet.\"",
+        "Direct: \"Dare I ask for a waiver?\" → \"He asked if he dared ask for a waiver.\"",
+        "Direct: \"The team will have been negotiating for six hours by then.\" → \"She said the team would have been negotiating for six hours by then.\"",
+        "Direct: \"What if we delay the IPO?\" → \"He asked what if we delayed the IPO.\""
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Passive past yes/no → whether + past perfect passive + last→previous.\n\nTip: Voice stays passive; only tense and time words move.",
+        "TRUE — Would prefer + object + not to stays structurally; pronouns and this→that adjust.\n\nTip: Preference patterns largely keep their skeleton under reporting.",
+        "TRUE — Rare dare questions can report as if + dared + bare infinitive.\n\nTip: Modal-like dare often becomes a past lexical dare in reports.",
+        "TRUE — Future perfect continuous will have been + -ing → would have been + -ing.\n\nTip: Only will becomes would; the rest of the stack stays.",
+        "TRUE — \"What if…\" hypotheticals often keep what if and simply backshift the following verb.\n\nTip: \"asked what if we delayed…\" is natural exam English."
+      ],
+      "highlights": [
+        "had been breached the previous quarter",
+        "not to disclose that",
+        "if he dared ask",
+        "would have been negotiating",
+        "what if we delayed"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.8",
+      "solution_overview": "A clean advanced sweep: passive perfect reports, prefer + not to, dare, future perfect continuous, and what-if backshift — all grammatical."
+    },
+    {
+      "id": "en-g-8-18",
+      "case_id": "ENG G.8.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"Seldom have we seen such volatility.\" → \"She said seldom had they seen such volatility.\"",
+        "Direct: \"I was to have signed before noon.\" → \"He said he was to have signed before noon.\"",
+        "Direct: \"Who should we notify first?\" → \"She asked who should we notify first.\"",
+        "Direct: \"The data will still be encrypted tomorrow morning.\" → \"He said the data would still be encrypted the next morning.\"",
+        "Direct: \"Might the bank extend the covenant holiday?\" → \"They asked might the bank extend the covenant holiday.\""
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "TRUE — Negative inversion can survive inside the reported clause after said, with pronoun and tense already matching.\n\nTip: Reporting rare inverted rhetoric may keep the inverted shape.",
+        "TRUE — \"Was to have + past participle\" (unfulfilled plan) typically remains was to have…\n\nTip: This past-scheduled perfect form needs no further shift.",
+        "FALSE — Embedded object questions need statement order: \"who we should notify first.\"\n\nTip: Modal should still follows the subject after asked.",
+        "TRUE — Passive future will be → would be, and tomorrow morning → the next morning.\n\nTip: Voice stays passive while will and time words move.",
+        "FALSE — Yes/no might needs if/whether + subject + might, not \"might the bank…\"\n\nTip: \"They asked whether the bank might extend…\""
+      ],
+      "highlights": [
+        "seldom had they seen",
+        "was to have signed",
+        "who should we",
+        "the next morning",
+        "might the bank"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.8",
+      "solution_overview": "Inverted who-should and bare might-yes/no fail. Surviving rhetorical inversion, was-to-have, and passive would-be time shifts are acceptable."
+    },
+    {
+      "id": "en-g-8-19",
+      "case_id": "ENG G.8.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"I'd rather you didn't leak this.\" → \"She said she'd rather I didn't leak that.\"",
+        "Direct: \"How come the hedge failed?\" → \"He asked how come the hedge had failed.\"",
+        "Direct: \"We used not to disclose bonuses.\" → \"They said they used not to disclose bonuses.\"",
+        "Direct: \"Will you have finished by the time I call?\" → \"She asked if I would have finished by the time she called.\"",
+        "Direct: \"Suppose we freeze hiring.\" → \"He suggested that we freeze hiring.\""
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Would rather + past clause for preference about someone else keeps that past shape; this→that adjusts.\n\nTip: Preferential rather-clauses are not forced into past perfect.",
+        "TRUE — Informal how come reports with statement order and optional past perfect for a prior failure.\n\nTip: \"asked how come + subject + (had) + past participle.\"",
+        "TRUE — \"Used not to\" (or didn't use to) for past habit can remain used not to.\n\nTip: Habitual used to patterns are already past-oriented.",
+        "TRUE — Future perfect in a yes/no question → if + would have, and the time-clause present→past.\n\nTip: Both the main future perfect and the by-the-time clause shift.",
+        "TRUE — Suppose-ideas often become suggested that + base or past form in formal reports.\n\nTip: Mandative or tentative freeze after suggested that is exam-friendly."
+      ],
+      "highlights": [
+        "she'd rather I didn't",
+        "how come the hedge had failed",
+        "used not to disclose",
+        "would have finished",
+        "suggested that we freeze"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.8",
+      "solution_overview": "All five are advanced but valid: rather + past clause, how come, used not to, nested would-have with by-the-time, and suggested that."
+    },
+    {
+      "id": "en-g-8-20",
+      "case_id": "ENG G.8.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"Not only is the covenant tight, but the waiver is costly.\" → \"She said not only was the covenant tight, but the waiver was costly.\"",
+        "Direct: \"I needn't have flagged every footnote.\" → \"He said he needn't have flagged every footnote.\"",
+        "Direct: \"Where should the escrow sit?\" → \"Counsel asked where should the escrow sit.\"",
+        "Direct: \"By next March we will have been leasing the site for a decade.\" → \"They said that by the following March they would have been leasing the site for a decade.\"",
+        "Direct: \"Was anyone monitoring the feed then?\" → \"She asked was anyone monitoring the feed then.\""
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "TRUE — Correlative not only…but also can keep inversion after said while tenses sit in the past.\n\nTip: Reporting flashy inversion is optional but grammatical if pronouns and tenses align.",
+        "TRUE — Needn't have for unnecessary past action stays needn't have.\n\nTip: Perfect absence-of-need does not become hadn't need.",
+        "FALSE — Statement order required: \"where the escrow should sit.\"\n\nTip: Modal should follows the subject in embedded wh-questions.",
+        "TRUE — next→the following and will have been + -ing → would have been + -ing.\n\nTip: Long future-perfect-continuous stacks only change will→would.",
+        "FALSE — Yes/no past continuous needs if/whether + statement order: \"whether anyone was monitoring…\"\n\nTip: Never leave bare \"was anyone…\" after asked."
+      ],
+      "highlights": [
+        "not only was the covenant",
+        "needn't have flagged",
+        "where should the escrow",
+        "would have been leasing",
+        "asked was anyone"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.8",
+      "solution_overview": "Two order failures remain: should after where, and bare was-anyone after asked. Inverted not only, needn't have, and future perfect continuous reports are fine."
+    }
+  ]
+}

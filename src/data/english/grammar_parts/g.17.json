@@ -1,0 +1,646 @@
+{
+  "id": "g.17",
+  "title": "so / such / too / enough",
+  "tasks": [
+    {
+      "id": "en-g-17-01",
+      "case_id": "ENG G.17.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The sample is small enough to raise concerns.",
+        "The sample is enough small to support firm conclusions.",
+        "It was such a clear result that no further test was needed.",
+        "It was so a clear result that no further test was needed.",
+        "The briefing was too technical for the audience."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Adjective + enough is the standard order before a to-infinitive. Small enough to raise concerns is grammatical and natural.\n\nTip: Remember enough after adjectives: adj + enough (+ to…).",
+        "FALSE — Enough cannot sit before the adjective here. Swap to small enough (or too small if you mean excess).\n\nTip: Never write enough + adjective; flip it.",
+        "TRUE — Such a + adjective + singular countable noun + that-clause is the classic pattern.\n\nTip: Such takes the noun phrase; so takes the adjective alone.",
+        "FALSE — So does not combine with a before a noun. You need such a clear result, or so clear that… without the noun.\n\nTip: So a / so an is almost always wrong — use such a/an.",
+        "TRUE — Too + adjective (+ for…) correctly marks excess relative to a purpose or audience.\n\nTip: Too = excess; enough = sufficiency."
+      ],
+      "highlights": [
+        "small enough",
+        "enough small",
+        "such a clear result",
+        "so a clear",
+        "too technical"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.17",
+      "solution_overview": "Scan for the intensifier first: so, such, too, or enough. Then check what follows — adjective alone, noun phrase, or word-order with enough. Most easy traps are so a… and enough + adjective."
+    },
+    {
+      "id": "en-g-17-02",
+      "case_id": "ENG G.17.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The results were so clear that no further test was needed.",
+        "There was such demand that the venue expanded capacity.",
+        "There was so demand that the venue expanded capacity.",
+        "He is not experienced enough for this role.",
+        "He is not enough experienced for this role."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "TRUE — So + adjective + that-clause correctly intensifies and links a result.\n\nTip: So + adj/adv (+ that…); keep the noun out of that slot.",
+        "TRUE — Such + uncountable noun (demand) + that is standard without an article.\n\nTip: Such + noun; no a/an with uncountables.",
+        "FALSE — So cannot modify a bare noun. Use such demand or so much demand.\n\nTip: So + noun needs much/many (or a determiner phrase).",
+        "TRUE — Experienced enough places enough after the adjective before for.\n\nTip: Adj + enough + for / to…",
+        "FALSE — Enough experienced reverses the required order.\n\nTip: If you hear enough first, check whether a noun follows (enough time) — not an adjective."
+      ],
+      "highlights": [
+        "so clear that",
+        "such demand",
+        "so demand",
+        "experienced enough",
+        "enough experienced"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.17",
+      "solution_overview": "Pair each intensifier with its partner: so with adjectives, such with nouns, enough after adjectives. When so sits before a noun with no much/many, mark it false."
+    },
+    {
+      "id": "en-g-17-03",
+      "case_id": "ENG G.17.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "It was such an important meeting that everyone attended.",
+        "It was so an important meeting that everyone attended.",
+        "The sample is too small to support firm conclusions.",
+        "The briefing was too much technical for the audience.",
+        "She spoke so quickly that few colleagues could follow."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Such an before a vowel-sound adjective + noun is correct (important → an).\n\nTip: Such a/an agrees with the following sound, not with so.",
+        "FALSE — So an is ungrammatical; replace with such an important meeting or so important that…\n\nTip: Article + noun belongs with such, not so.",
+        "TRUE — Too + adjective + to-infinitive expresses excess preventing a result.\n\nTip: Too…to often means \"so…that not\".",
+        "FALSE — Do not insert much between too and a single adjective. Too technical is enough; too much modifies nouns (too much noise).\n\nTip: Too much + noun; too + adjective.",
+        "TRUE — So + adverb + that-clause is parallel to so + adjective.\n\nTip: Quickly is an adverb, so so quickly that… is fine."
+      ],
+      "highlights": [
+        "such an important",
+        "so an important",
+        "too small to",
+        "too much technical",
+        "so quickly that"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.17",
+      "solution_overview": "Focus on article choice with such and the too much trap. If the word after too is an adjective, much should not be there unless you are quantifying a noun."
+    },
+    {
+      "id": "en-g-17-04",
+      "case_id": "ENG G.17.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "We had enough time to finish the audit.",
+        "The margin was so thin that finance delayed the launch.",
+        "She spoke so quickly speech that few followed.",
+        "The pitch was such convincing that investors signed immediately.",
+        "The warehouse is large enough for the extra inventory."
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "TRUE — Enough + noun is the correct order when enough quantifies a noun (enough time).\n\nTip: Enough + noun vs adjective + enough — two different slots.",
+        "TRUE — So + adjective + that correctly builds cause and result.\n\nTip: Thin is adjectival; so thin that… fits.",
+        "FALSE — So quickly speech mixes adverb pattern with a noun. Use so quickly that… or such quick speech that…\n\nTip: Do not park a noun right after so + adverb.",
+        "FALSE — Such needs a noun phrase: such a convincing pitch, not such convincing alone before that.\n\nTip: Such + (a/an) + (adj) + noun.",
+        "TRUE — Adjective + enough + for + noun phrase is grammatical.\n\nTip: Enough for X / enough to V — both common after adjectives."
+      ],
+      "highlights": [
+        "enough time",
+        "so thin that",
+        "so quickly speech",
+        "such convincing that",
+        "large enough for"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.17",
+      "solution_overview": "Separate noun-quantifying enough from adjective-modifying enough. Then catch hybrid errors like so + adverb + noun and such + bare adjective without a noun."
+    },
+    {
+      "id": "en-g-17-05",
+      "case_id": "ENG G.17.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "There was so much interest that registration closed early.",
+        "There were so many applicants that HR extended the deadline.",
+        "The clause is too vaguely to enforce in court.",
+        "The offer was not attractive enough to retain the candidate.",
+        "It was such bad weather that the site visit was cancelled."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — So much + uncountable noun (+ that) is the correct so + noun pattern.\n\nTip: Uncountable → so much; plural countable → so many.",
+        "TRUE — So many + plural countable noun is parallel to so much.\n\nTip: Count the noun before choosing much/many.",
+        "FALSE — Too must modify an adjective or adverb in base form usable as a complement: too vague to enforce, not too vaguely when you mean the clause itself.\n\nTip: After linking be, use too + adjective, not too + -ly adverb.",
+        "TRUE — Attractive enough to… places enough correctly after the adjective.\n\nTip: Not + adj + enough to… is a common exam pattern.",
+        "TRUE — Such + adjective + uncountable noun (weather) needs no article.\n\nTip: Such bad weather / such good news — no a/an."
+      ],
+      "highlights": [
+        "so much interest",
+        "so many applicants",
+        "too vaguely",
+        "attractive enough",
+        "such bad weather"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.17",
+      "solution_overview": "When so modifies quantity, check much vs many. When too follows be, prefer an adjective. Such before uncountable noun phrases usually drops the article."
+    },
+    {
+      "id": "en-g-17-06",
+      "case_id": "ENG G.17.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The dashboard loads too slowly to be useful in live meetings.",
+        "The data were such unreliable that the model was shelved.",
+        "We do not have enough evidence to overturn the ruling.",
+        "The fee is so high a barrier that startups leave the market.",
+        "The room was enough quiet for confidential negotiations."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Too + adverb + to-infinitive correctly marks excess manner blocking a purpose.\n\nTip: Too slowly to… parallels too small to…",
+        "FALSE — Such unreliable lacks a noun head. Use such unreliable data or so unreliable that…\n\nTip: Such wants a noun; so wants an adjective.",
+        "TRUE — Enough + uncountable noun (evidence) is correct before to.\n\nTip: Enough evidence / enough capital — noun after enough.",
+        "TRUE — So + adjective + a + noun (+ that) is a formal but grammatical pattern (so high a barrier).\n\nTip: So adj a noun ≈ such a adj noun; both appear in careful English.",
+        "FALSE — Quiet is an adjective, so use quiet enough, not enough quiet.\n\nTip: Enough before adjectives is a word-order error."
+      ],
+      "highlights": [
+        "too slowly to",
+        "such unreliable that",
+        "enough evidence",
+        "so high a barrier",
+        "enough quiet"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.17",
+      "solution_overview": "Watch for such + bare adjective and enough + adjective. The formal so + adj + a + noun pattern is acceptable — do not mark it false just because such a… is more common."
+    },
+    {
+      "id": "en-g-17-07",
+      "case_id": "ENG G.17.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The timeline is tight enough that any slip will delay launch.",
+        "It was so efficient process that costs fell within a month.",
+        "The vendor responded too late for us to revise the tender.",
+        "Such were the risks that the committee demanded a second opinion.",
+        "The brief is too much short for a full board pack."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Adj + enough + that-clause is acceptable in modern usage alongside enough to…\n\nTip: Enough that… and enough to… both appear; meaning stays \"sufficient\".",
+        "FALSE — So efficient process misses the article/noun patterning. Use such an efficient process or so efficient that…\n\nTip: So + adj + noun without a is a classic miss.",
+        "TRUE — Too + adverb/adjective + for + object + to-infinitive is a solid excess pattern.\n\nTip: Too late for X to V = X cannot V in time.",
+        "TRUE — Inversion such were the risks that… is formal but grammatical.\n\nTip: Such + be + noun phrase + that is literary/formal, not an error.",
+        "FALSE — Too much short wrongly inserts much before an adjective. Use too short.\n\nTip: Too much ≠ intensifier before adjectives."
+      ],
+      "highlights": [
+        "tight enough that",
+        "so efficient process",
+        "too late for",
+        "Such were the risks",
+        "too much short"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.17",
+      "solution_overview": "Most items still hinge on word order and partners of so/such/too. One formal inversion with such is correct — do not reject unusual word order if the grammar holds."
+    },
+    {
+      "id": "en-g-17-08",
+      "case_id": "ENG G.17.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The memo was not clear enough for junior staff to act on.",
+        "They made so rapid progress that the pilot finished early.",
+        "They made such rapid progress that the pilot finished early.",
+        "The server is too heavily to handle peak traffic without scaling.",
+        "We retained enough experienced analysts to cover both regions."
+      ],
+      "answer_key": [true, true, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Not + adj + enough + for + noun + to-infinitive is fully grammatical.\n\nTip: Enough often licenses a for…to… complement.",
+        "TRUE — So + adjective + uncountable/mass-like noun phrase (rapid progress) without a is acceptable in many styles; progress is uncountable.\n\nTip: So + adj + uncountable noun can work; contrast so efficient process (countable need).",
+        "TRUE — Such + adjective + uncountable noun is the safer textbook twin of the previous pattern.\n\nTip: Such rapid progress is the exam-safe default.",
+        "FALSE — Too heavily is an adverb where an adjective is needed after be: too heavy / too heavily loaded…\n\nTip: Linking verb → too + adjective.",
+        "TRUE — Enough + adjective + plural noun quantifies how many qualified people you have.\n\nTip: Enough experienced analysts = sufficient number of that type."
+      ],
+      "highlights": [
+        "clear enough for",
+        "so rapid progress",
+        "such rapid progress",
+        "too heavily to",
+        "enough experienced analysts"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.17",
+      "solution_overview": "Distinguish countable vs uncountable after so/such, and adjective vs adverb after be. Enough before a noun phrase (enough experienced analysts) is fine — that is not the enough + adjective error."
+    },
+    {
+      "id": "en-g-17-09",
+      "case_id": "ENG G.17.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The discount was so generous as to surprise the procurement team.",
+        "The discount was such generous as to surprise the procurement team.",
+        "The factory is not automated enough to cut night-shift costs.",
+        "It was too a complex model for a one-page summary.",
+        "There has been such an uptick in churn that marketing paused spend."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — So + adjective + as to + infinitive is a formal result pattern parallel to so…that.\n\nTip: So…as to… ≈ so…that someone does…",
+        "FALSE — Such does not take as to after a bare adjective. Use so generous as to… or such a generous discount that…\n\nTip: Such pairs with nouns; so…as to pairs with adjectives.",
+        "TRUE — Not + past participle used adjectivally + enough + to… is correct.\n\nTip: Participial adjectives still take enough after them.",
+        "FALSE — Too a complex is wrong; use too complex a model or such a complex model.\n\nTip: Too + adj + a + noun is possible (too complex a model), but too a… never is.",
+        "TRUE — Such an + noun (+ that) correctly intensifies a countable singular.\n\nTip: Uptick is countable → such an uptick."
+      ],
+      "highlights": [
+        "so generous as to",
+        "such generous as to",
+        "automated enough",
+        "too a complex",
+        "such an uptick"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.17",
+      "solution_overview": "Formal so…as to… is fair game. Check that such is not forced into that frame, and that too never precedes the article directly (too a…)."
+    },
+    {
+      "id": "en-g-17-10",
+      "case_id": "ENG G.17.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The proposal is too complex a document for a five-minute slot.",
+        "Clients left because the wait was such long.",
+        "We arrived early enough to secure seats near the interpreters.",
+        "The board found the forecast so optimistic that it ordered a stress test.",
+        "She is enough senior to chair the steering committee."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Too + adjective + a + noun (+ for…) is a formal pattern matching so adj a noun.\n\nTip: Too complex a document = such a complex document in meaning of excess.",
+        "FALSE — Such long needs a noun: such a long wait, or so long that…\n\nTip: Bare such + adjective without noun is incomplete.",
+        "TRUE — Adverb early + enough + to-infinitive is correct (enough after the adverb).\n\nTip: Adv + enough mirrors adj + enough.",
+        "TRUE — So + adjective + that after a reporting verb is clean.\n\nTip: Found X so adj that… keeps so on the adjective.",
+        "FALSE — Senior is an adjective → senior enough, not enough senior.\n\nTip: Same flip rule as enough small."
+      ],
+      "highlights": [
+        "too complex a document",
+        "such long",
+        "early enough",
+        "so optimistic that",
+        "enough senior"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.17",
+      "solution_overview": "Accept the formal too/so + adj + a + noun shapes when articles land after the adjective. Reject such + bare adjective and enough + adjective."
+    },
+    {
+      "id": "en-g-17-11",
+      "case_id": "ENG G.17.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The outage was so serious as that regional clients filed complaints.",
+        "The outage was so serious that regional clients filed complaints.",
+        "We lacked enough liquidity to meet the margin call.",
+        "It was such a poorly designed interface that users abandoned checkout.",
+        "The targets are too ambitious for the team complete this quarter."
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — So…as that mixes two patterns. Choose so…that or so…as to, not both markers.\n\nTip: Never stack as and that after so.",
+        "TRUE — Clean so + adjective + that result clause.\n\nTip: One linker only: that or as to.",
+        "TRUE — Enough + noun (liquidity) before to-infinitive is correct.\n\nTip: Financial uncountables still take enough + noun.",
+        "TRUE — Such a + adverb + adjective + noun is fine when the adverb modifies the adjective inside the noun phrase.\n\nTip: Such a poorly designed X = noun phrase after such.",
+        "FALSE — Missing to before the infinitive: too ambitious for the team to complete…\n\nTip: For + object needs to before the verb."
+      ],
+      "highlights": [
+        "so serious as that",
+        "so serious that",
+        "enough liquidity",
+        "such a poorly designed",
+        "for the team complete"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.17",
+      "solution_overview": "Hunt blended patterns (as that) and missing to after for + object. Such a + heavily modified noun phrase can still be correct."
+    },
+    {
+      "id": "en-g-17-12",
+      "case_id": "ENG G.17.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Hiring froze because attrition became so high.",
+        "Hiring froze because attrition became such high.",
+        "The clause is worded carefully enough to limit liability.",
+        "There were too few inspectors to cover every site weekly.",
+        "The deck contained so few charts that the story felt thin."
+      ],
+      "answer_key": [true, false, true, true, true],
+      "tactical_explanations": [
+        "TRUE — So + adjective can stand without a that-clause when the result is implied by context.\n\nTip: That-clause is common but not obligatory after so/such/too/enough.",
+        "FALSE — Such high needs a noun (such high attrition) or switch to so high.\n\nTip: After become, prefer so + adjective.",
+        "TRUE — Carefully enough places enough after the adverb modifying the participle/adjective phrase.\n\nTip: Adv + enough + to… works like adj + enough.",
+        "TRUE — Too few + plural noun expresses insufficiency (excess of scarcity).\n\nTip: Too few ≈ not enough; grammar differs from too much + adj.",
+        "TRUE — So few + plural noun + that is grammatical and parallel to so many.\n\nTip: Few/little pair with so the same way many/much do."
+      ],
+      "highlights": [
+        "so high",
+        "such high",
+        "carefully enough",
+        "too few inspectors",
+        "so few charts"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.17",
+      "solution_overview": "Result clauses are optional. Focus on whether such has a noun and whether few/little sit correctly after so/too."
+    },
+    {
+      "id": "en-g-17-13",
+      "case_id": "ENG G.17.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The warranty is such that replacements ship within forty-eight hours.",
+        "The warranty is so that replacements ship within forty-eight hours.",
+        "Investors pulled out, the valuation having become too uncertain to defend.",
+        "She left enough of a buffer to absorb currency swings.",
+        "The API is not enough documented for external partners."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Such that meaning \"of a kind that\" is a fixed formal pattern without an adjective.\n\nTip: Noun + is such that… = the nature of X means…",
+        "FALSE — So that expresses purpose (\"in order that\"), not the \"of a kind that\" reading. Here such that is required.\n\nTip: So that ≠ such that; different jobs.",
+        "TRUE — Too + adjective + to-infinitive inside a participial absolute is still grammatical.\n\nTip: Too…to… keeps its shape in reduced clauses.",
+        "TRUE — Enough of a + singular countable noun is idiomatic.\n\nTip: Enough of a buffer / enough of an issue — of a(n) before singular count nouns.",
+        "FALSE — Documented is adjectival here → not documented enough, not not enough documented.\n\nTip: Flip enough after adjectives even with not."
+      ],
+      "highlights": [
+        "such that",
+        "so that replacements",
+        "too uncertain to defend",
+        "enough of a buffer",
+        "enough documented"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.17",
+      "solution_overview": "Harder items distinguish such that (nature/result) from so that (purpose), and test enough of a… plus adjective–enough order under negation."
+    },
+    {
+      "id": "en-g-17-14",
+      "case_id": "ENG G.17.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Morale fell so low as staff began refusing overtime.",
+        "Morale fell so low that staff began refusing overtime.",
+        "The export licence proved too costly a requirement for the pilot.",
+        "We cannot move forward without such information as the auditor requests.",
+        "The rebuild was enough extensive that downtime doubled."
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — So…as without to needs a comparative/manner reading or as to; here a result clause should use that (or so low as to cause…).\n\nTip: So adj as + finite clause is not standard for result.",
+        "TRUE — So + adjective + that correctly states the result.\n\nTip: Default result linker after so/such is that.",
+        "TRUE — Too + adjective + a + noun (+ for…) is grammatical formal English.\n\nTip: Too costly a requirement ≈ an excessively costly requirement.",
+        "TRUE — Such…as meaning \"the kind that\" with a relative-like clause is correct.\n\nTip: Such information as X requests = the information that X requests.",
+        "FALSE — Enough extensive reverses order; need extensive enough that…\n\nTip: Enough never precedes the adjective in this frame."
+      ],
+      "highlights": [
+        "so low as staff",
+        "so low that",
+        "too costly a requirement",
+        "such information as",
+        "enough extensive"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.17",
+      "solution_overview": "Separate result that from faulty so…as + clause, and recognise formal such…as and too adj a noun. Keep policing enough + adjective."
+    },
+    {
+      "id": "en-g-17-15",
+      "case_id": "ENG G.17.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The settlement was so structured as to minimise tax exposure.",
+        "Cash on hand is barely enough for payroll, let alone expansion.",
+        "It was too little time remaining to renegotiate the covenants.",
+        "There was too little time remaining to renegotiate the covenants.",
+        "The brand became such synonym with reliability that rivals copied the slogan."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "TRUE — So + past participle/adjective + as to + infinitive expresses designed result.\n\nTip: So structured as to… = structured in such a way that…",
+        "TRUE — Enough for + noun works; barely intensifies sufficiency without breaking grammar.\n\nTip: Modifiers like barely/almost can precede enough.",
+        "FALSE — It was too little time is awkward/wrong; time needs there was / we had too little time, or too little time remained.\n\nTip: Watch dummy it with quantity noun phrases.",
+        "TRUE — There was too little + uncountable noun (+ to…) is the natural existential pattern.\n\nTip: Prefer there-insertion with too little/much + noun.",
+        "FALSE — Needs an article: such a synonym with… (or so synonymous with…).\n\nTip: Countable singular after such almost always needs a/an."
+      ],
+      "highlights": [
+        "so structured as to",
+        "barely enough for",
+        "It was too little time",
+        "There was too little time",
+        "such synonym"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.17",
+      "solution_overview": "Judge existential framing with too little + noun, article requirements after such, and formal so…as to…. Surface similarity can hide a missing there or a/an."
+    },
+    {
+      "id": "en-g-17-16",
+      "case_id": "ENG G.17.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The KPI is defined such that regional managers cannot game the metric.",
+        "The KPI is defined so that regional managers cannot game the metric.",
+        "Demand proved elastic enough that a small cut lifted volume sharply.",
+        "He spoke with so a confident tone that objections faded.",
+        "We kept the briefing short enough not to overrun the slot."
+      ],
+      "answer_key": [true, true, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Defined such that… means \"in such a way that\" and is standard in technical/policy English.\n\nTip: Verb + such that ≈ configured so that.",
+        "TRUE — Defined so that… expressing purpose/result is also grammatical.\n\nTip: Here so that and such that can both work with slightly different nuance.",
+        "TRUE — Adj + enough + that-clause is acceptable.\n\nTip: Elastic enough that… = sufficiently elastic that…",
+        "FALSE — So a confident tone is wrong; use such a confident tone or so confidently that…\n\nTip: So a… returns as a trap even in longer NPs.",
+        "TRUE — Adj + enough + not to-infinitive correctly encodes avoidance.\n\nTip: Enough not to… = sufficiently… to avoid…"
+      ],
+      "highlights": [
+        "defined such that",
+        "defined so that",
+        "elastic enough that",
+        "so a confident",
+        "short enough not to"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.17",
+      "solution_overview": "Both so that and such that can be right after verbs of defining/designing. Still fail so a…, and accept enough not to… as a valid negative infinitive pattern."
+    },
+    {
+      "id": "en-g-17-17",
+      "case_id": "ENG G.17.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Seldom is a market so fragmented that no price signal emerges.",
+        "The escrow proved insufficiently funded enough to reassure sellers.",
+        "Her objection was not so much legal as procedural.",
+        "The delay was such that, had we waited, the option would have expired.",
+        "They priced the add-on too expensively for mid-market buyers to justify."
+      ],
+      "answer_key": [true, false, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Inversion with seldom does not break the inner so…that pattern.\n\nTip: Judge the so/such/too/enough core even inside inversion shells.",
+        "FALSE — Insufficiently funded enough doubles the sufficiency marker. Use insufficiently funded or not funded enough — not both.\n\nTip: One sufficiency tool per adjective phrase.",
+        "TRUE — Not so much X as Y is an established correlative; so is required in this idiom.\n\nTip: Not so much…as… ≠ ordinary so + adjective, but it is grammatical.",
+        "TRUE — Such that introducing a counterfactual continuation is formal and correct.\n\nTip: Such that can host complex follow-ons, including inverted conditionals.",
+        "TRUE — Too + adverb + for + noun + to-infinitive marks excess manner/cost.\n\nTip: Too expensively for X to V parallels too expensive for X to V (adj vs adv choice depends on what is modified)."
+      ],
+      "highlights": [
+        "so fragmented that",
+        "insufficiently funded enough",
+        "not so much legal as",
+        "such that, had we",
+        "too expensively for"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.17",
+      "solution_overview": "Advanced packaging: inversion, correlative not so much…as…, and stacked markers. Reject double intensifiers like insufficiently…enough while keeping legitimate idioms with so."
+    },
+    {
+      "id": "en-g-17-18",
+      "case_id": "ENG G.17.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "No other bidder moved so swiftly as to lock exclusivity overnight.",
+        "No other bidder moved such swiftly as to lock exclusivity overnight.",
+        "The covenant is drawn tightly enough that refinancing needs consent.",
+        "We had rather too little runway for a full product redesign.",
+        "The interface was so intuitive a design as users needed no training."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — So + adverb + as to + infinitive correctly states result after a comparative frame.\n\nTip: So…as to… works with adverbs as well as adjectives.",
+        "FALSE — Such does not modify adverbs; such swiftly is impossible.\n\nTip: Such → noun phrases only (or such that).",
+        "TRUE — Adv/adj + enough + that remains grammatical in legal/business register.\n\nTip: Tightly enough that… = sufficiently tightly that…",
+        "TRUE — Rather too + adjective/determiner phrase is idiomatic mild criticism.\n\nTip: Rather/a bit/far can modify too.",
+        "FALSE — So intuitive a design as + finite clause mismatches; use so intuitive a design that… or so intuitive that…, or so intuitive as to need…\n\nTip: So adj a noun pairs with that or as to, not bare as + clause."
+      ],
+      "highlights": [
+        "so swiftly as to",
+        "such swiftly",
+        "tightly enough that",
+        "rather too little",
+        "so intuitive a design as users"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.17",
+      "solution_overview": "Stress-test so…as to… with adverbs, block such + adverb, and require the right linker after so adj a noun. Degree modifiers before too are allowed."
+    },
+    {
+      "id": "en-g-17-19",
+      "case_id": "ENG G.17.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Only then did costs become high enough for restructuring to look rational.",
+        "The algorithm was trained on so biased a sample that fairness checks failed.",
+        "The algorithm was trained on such biased a sample that fairness checks failed.",
+        "Cash reserves look healthy enough; still, they may prove too thin under stress.",
+        "He is too much of a perfectionist to ship an imperfect MVP."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — Inversion only then did… leaves high enough for… intact and grammatical.\n\nTip: Embedded enough patterns survive fronting and inversion.",
+        "TRUE — So + adjective + a + noun + that is the formal pattern inside a prepositional phrase.\n\nTip: So biased a sample = such a biased sample.",
+        "FALSE — Such biased a sample mis-orders the article; need such a biased sample (article before the adjective).\n\nTip: Such a + adj + noun, never such adj a noun.",
+        "TRUE — Two coordinated judgments: adj + enough, and too + adj, both well formed.\n\nTip: Enough and too can contrast in one sentence without clashing.",
+        "TRUE — Too much of a + noun + to-infinitive is a fixed evaluative idiom.\n\nTip: Too much of a X to V = excessively X-like to V."
+      ],
+      "highlights": [
+        "high enough for",
+        "so biased a sample",
+        "such biased a sample",
+        "healthy enough",
+        "too much of a perfectionist"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.17",
+      "solution_overview": "Article placement separates so adj a noun (correct) from such adj a noun (incorrect). Also recognise the idiom too much of a… to…"
+    },
+    {
+      "id": "en-g-17-20",
+      "case_id": "ENG G.17.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Had the collateral been liquid enough, the bank would have waived the fee.",
+        "The revision cycle grew so protracted as nobody could finalise wording.",
+        "Whatever the brand promises, delivery is seldom swift enough to match it.",
+        "It remains too early a stage for full automation of claims.",
+        "Their reply was so that we escalated the dispute at once."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Adj + enough inside an inverted third conditional is grammatical.\n\nTip: Enough keeps adjective-final order even in had-conditionals.",
+        "FALSE — So…as + finite clause is wrong for result; use so protracted that… or so protracted as to prevent…\n\nTip: As to + infinitive, or that + clause — not as + clause after so + adj.",
+        "TRUE — Seldom… enough to… correctly denies sufficiency.\n\nTip: Frequency adverb + enough pattern is fine.",
+        "TRUE — Too + adjective + a + noun (+ for…) is formal but correct.\n\nTip: Too early a stage = an excessively early stage.",
+        "FALSE — So that marks purpose (\"in order that\"), not the nature/result reading needed here. Use such that we escalated… or Their reply was so blunt that we escalated…\n\nTip: Reply/situation + such that = character/result; so that = purpose."
+      ],
+      "highlights": [
+        "liquid enough",
+        "so protracted as nobody",
+        "swift enough to",
+        "too early a stage",
+        "was so that we"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.17",
+      "solution_overview": "Final set mixes conditionals, formal too adj a noun, and result-linker discipline after so. Prefer that or as to for results, and keep such that vs so that distinct."
+    }
+  ]
+}

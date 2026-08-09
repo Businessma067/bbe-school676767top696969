@@ -1,0 +1,650 @@
+{
+  "subsections": [
+    {
+      "id": "g.18",
+      "title": "Prepositions & Fixed Patterns"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "en-g-18-01",
+      "case_id": "ENG G.18.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Success depends of careful planning before the launch.",
+        "She is responsible of the quarterly budget review.",
+        "They are interested on the revised merger proposal.",
+        "Despite of the delay, the audit was completed on time.",
+        "The firm was accused of misleading retail investors."
+      ],
+      "answer_key": [false, false, false, false, true],
+      "tactical_explanations": [
+        "FALSE — Use \"depends on,\" not \"depends of,\" for this fixed dependency pattern.\n\nTip: After \"depend,\" lock in \"on\" — \"of\" is a common L1 transfer trap.",
+        "FALSE — Use \"responsible for,\" not \"responsible of.\"\n\nTip: Pair \"responsible\" with \"for\" + noun/gerund; \"of\" is wrong here.",
+        "FALSE — The fixed pattern is \"interested in,\" not \"interested on.\"\n\nTip: Interest takes \"in\"; \"on\" belongs with focus/concentrate.",
+        "FALSE — \"Despite\" never takes \"of\"; write \"Despite the delay\" or \"In spite of the delay.\"\n\nTip: \"Despite of\" is always wrong — drop \"of\" or switch to \"in spite of.\"",
+        "TRUE — \"Accused of\" + gerund/noun is the standard legal collocation.\n\nTip: Accuse/charge of wrongdoing; do not swap in \"for\" after \"accused.\""
+      ],
+      "highlights": [
+        "depends of",
+        "responsible of",
+        "interested on",
+        "Despite of",
+        "accused of"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.18",
+      "solution_overview": "Scan each sentence for a fixed verb/adjective + preposition lock. Ask whether the preposition matches the standard pattern, and watch for the classic \"despite of\" false friend. Correct any mismatch before you mark TRUE."
+    },
+    {
+      "id": "en-g-18-02",
+      "case_id": "ENG G.18.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "He insisted on seeing the raw sales data.",
+        "The outcome differs of last year's forecast.",
+        "We apologised about the shipping delay to the client.",
+        "The report focuses to cost control measures.",
+        "She participated in the compliance workshop."
+      ],
+      "answer_key": [true, false, false, false, true],
+      "tactical_explanations": [
+        "TRUE — \"Insist on\" + gerund is the fixed pattern here.\n\nTip: After \"insist,\" use \"on\" + -ing, not a bare infinitive.",
+        "FALSE — Use \"differs from,\" not \"differs of.\"\n\nTip: Differ/different → from; do not write \"differ of.\"",
+        "FALSE — Prefer \"apologised for the shipping delay\" in careful exam English.\n\nTip: Apologise for a fault or inconvenience; \"about\" is weaker and often marked wrong.",
+        "FALSE — Use \"focuses on,\" not \"focuses to.\"\n\nTip: Focus/concentrate take \"on,\" never \"to.\"",
+        "TRUE — \"Participated in\" correctly names involvement in an event.\n\nTip: Participate/join/engage → in an event or activity."
+      ],
+      "highlights": [
+        "insisted on",
+        "differs of",
+        "apologised about",
+        "focuses to",
+        "participated in"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.18",
+      "solution_overview": "These items test high-frequency business collocations. Match each verb to its locked preposition, and rewrite any false friend before deciding TRUE or FALSE."
+    },
+    {
+      "id": "en-g-18-03",
+      "case_id": "ENG G.18.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "They objected against the indemnity clause.",
+        "The consultant is capable of handling the negotiation.",
+        "Managers must be aware of the new disclosure rules.",
+        "She is good in presenting quarterly results.",
+        "We look forward to receiving your comments."
+      ],
+      "answer_key": [false, true, true, false, true],
+      "tactical_explanations": [
+        "FALSE — Use \"objected to the clause,\" not \"against.\"\n\nTip: Object to X; \"against\" belongs with protest/argue in other patterns.",
+        "TRUE — \"Capable of\" + gerund is correct.\n\nTip: Capable/incapable take \"of,\" not \"to.\"",
+        "TRUE — \"Aware of\" correctly introduces the known fact or risk.\n\nTip: Aware/conscious → of; \"about\" is looser and often weaker in exams.",
+        "FALSE — Say \"good at presenting,\" not \"good in.\"\n\nTip: Good/bad/skilled → at + -ing for ability.",
+        "TRUE — \"Look forward to\" + gerund is fixed; \"to\" is a preposition here.\n\nTip: After \"look forward to,\" keep -ing, never a bare infinitive."
+      ],
+      "highlights": [
+        "objected against",
+        "capable of",
+        "aware of",
+        "good in",
+        "look forward to"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.18",
+      "solution_overview": "Adjective and verb patterns lock specific prepositions. Check whether \"of,\" \"to,\" \"at,\" or \"in\" is the required partner, especially after capable, aware, good, and look forward."
+    },
+    {
+      "id": "en-g-18-04",
+      "case_id": "ENG G.18.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The project succeeded in cutting overhead by eight percent.",
+        "The package consists of three separate modules.",
+        "The forecast is based on conservative assumptions.",
+        "These findings are related to last quarter's results.",
+        "According with the auditor, the controls are adequate."
+      ],
+      "answer_key": [true, true, true, true, false],
+      "tactical_explanations": [
+        "TRUE — \"Succeed in\" + gerund names the achievement.\n\nTip: Succeed in doing X; do not write \"succeed to do.\"",
+        "TRUE — \"Consists of\" correctly lists the parts.\n\nTip: Consist of / be composed of — never \"from\" after consist.",
+        "TRUE — \"Based on\" correctly introduces the foundation of the claim.\n\nTip: Base/based → on evidence or assumptions.",
+        "TRUE — \"Related to\" is the fixed comparison/link pattern.\n\nTip: Related/similar → to; \"with\" is a common trap after related.",
+        "FALSE — Use \"According to the auditor,\" not \"according with.\"\n\nTip: According to + person/document; never \"according with\" for this meaning."
+      ],
+      "highlights": [
+        "succeeded in",
+        "consists of",
+        "based on",
+        "related to",
+        "According with"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.18",
+      "solution_overview": "Report-writing English leans on a small set of locked phrases. Verify each preposition against the standard business pattern before you accept the sentence."
+    },
+    {
+      "id": "en-g-18-05",
+      "case_id": "ENG G.18.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The deputy is in charge of the regional rollout.",
+        "Investors rely on timely disclosures from management.",
+        "The team must deal with customer complaints promptly.",
+        "Nothing will prevent us from meeting the deadline.",
+        "Higher rates resulted in weaker loan demand."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"In charge of\" correctly marks responsibility for a domain.\n\nTip: In charge of X ≈ responsible for X.",
+        "TRUE — \"Rely on\" is the fixed dependency pattern.\n\nTip: Rely/depend → on; both reject \"of\" in exam English.",
+        "TRUE — \"Deal with\" correctly introduces the problem handled.\n\nTip: Deal with a problem or person; \"about\" does not replace \"with\" here.",
+        "TRUE — \"Prevent … from\" + gerund is correct.\n\nTip: Prevent/stop/discourage someone from doing X.",
+        "TRUE — Outcomes \"result in\" an effect; that direction is right here.\n\nTip: Result in = cause → effect; result from = effect ← cause."
+      ],
+      "highlights": [
+        "in charge of",
+        "rely on",
+        "deal with",
+        "prevent us from",
+        "resulted in"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.18",
+      "solution_overview": "These workplace phrases are almost mechanical once you know the lock. Confirm each verb/adjective still carries its standard preposition before marking TRUE."
+    },
+    {
+      "id": "en-g-18-06",
+      "case_id": "ENG G.18.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Our approach is similar to the peer group's model.",
+        "This year's margin is different than last year's by a wide gap.",
+        "The campaign aims for increasing brand recognition only.",
+        "She is dedicated for improving internal controls.",
+        "New hires quickly became accustomed to remote tools."
+      ],
+      "answer_key": [true, false, false, false, true],
+      "tactical_explanations": [
+        "TRUE — \"Similar to\" is the standard comparison pattern.\n\nTip: Similar to X; \"with\" is wrong after similar.",
+        "FALSE — Careful exam English prefers \"different from\" (or \"different to\" in some BrE), not \"different than\" in this frame.\n\nTip: On WU-style papers, choose \"different from\" and avoid \"than\" after different.",
+        "FALSE — Prefer \"aims at increasing\" or \"aims to increase,\" not \"aims for increasing.\"\n\nTip: Aim at / aim to are the safe exam pairs; \"aim for\" usually takes a noun goal.",
+        "FALSE — Use \"dedicated to improving,\" not \"for.\"\n\nTip: Dedicated/committed/devoted → to + -ing.",
+        "TRUE — \"Accustomed to\" correctly marks the habit pattern.\n\nTip: Accustomed/used → to; \"with\" is a frequent trap."
+      ],
+      "highlights": [
+        "similar to",
+        "different than",
+        "aims for increasing",
+        "dedicated for",
+        "accustomed to"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.18",
+      "solution_overview": "Comparison and attitude adjectives often lock \"to\" or \"from.\" Read past the content words and test only the preposition that follows the key adjective."
+    },
+    {
+      "id": "en-g-18-07",
+      "case_id": "ENG G.18.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The board congratulated her for completing the turnaround.",
+        "Staff complained about the abrupt schedule change.",
+        "Please apply to the vacancy before Friday.",
+        "They applied for the graduate scheme in June.",
+        "The memo refers on last week's minutes."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "TRUE — \"Congratulate someone for/on\" an achievement both occur; \"for completing\" is acceptable here.\n\nTip: Congratulate + person + for/on + achievement.",
+        "TRUE — \"Complain about\" correctly names the grievance.\n\nTip: Complain about X; complain to a person.",
+        "FALSE — Jobs and schemes take \"apply for\"; \"apply to\" targets an organisation or address.\n\nTip: Apply for a post; apply to a company/university.",
+        "TRUE — \"Applied for the graduate scheme\" is the correct job-application pattern.\n\nTip: For + what you want; to + who receives the application.",
+        "FALSE — Use \"refers to last week's minutes,\" not \"refers on.\"\n\nTip: Refer to a document or point; \"on\" belongs with focus/comment in other patterns."
+      ],
+      "highlights": [
+        "congratulated her for",
+        "complained about",
+        "apply to the vacancy",
+        "applied for",
+        "refers on"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.18",
+      "solution_overview": "Apply/refer/complain change meaning with the preposition. Decide what the object is — a job, a person, or a document — then pick the locked partner."
+    },
+    {
+      "id": "en-g-18-08",
+      "case_id": "ENG G.18.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The policy benefits from clearer wording.",
+        "Clients benefit from lower transaction fees.",
+        "We agreed on a revised delivery window.",
+        "They agreed with the supplier's new terms.",
+        "She insisted to reopen the closed account."
+      ],
+      "answer_key": [true, true, true, true, false],
+      "tactical_explanations": [
+        "TRUE — \"Benefit from\" correctly marks the source of advantage.\n\nTip: Benefit from X; never \"benefit of\" as the verb pattern.",
+        "TRUE — Verb \"benefit\" takes \"from\" for the source of the gain.\n\nTip: \"Be of benefit to\" is a different structure — do not mix it with the verb.",
+        "TRUE — \"Agree on\" a plan, date, or figure is standard.\n\nTip: Agree on a thing; agree with a person/opinion.",
+        "TRUE — \"Agree with\" the supplier's terms correctly accepts another's position.\n\nTip: With + person/opinion; on + joint decision.",
+        "FALSE — Use \"insisted on reopening,\" not \"insisted to reopen.\"\n\nTip: Insist on + -ing; the infinitive after insist is a classic trap."
+      ],
+      "highlights": [
+        "benefits from",
+        "benefit from",
+        "agreed on",
+        "agreed with",
+        "insisted to"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.18",
+      "solution_overview": "Small preposition swaps change meaning or break the pattern entirely. Separate \"agree on\" from \"agree with,\" and keep gerunds after \"insist on.\""
+    },
+    {
+      "id": "en-g-18-09",
+      "case_id": "ENG G.18.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "In spite the headwinds, revenue still grew.",
+        "Despite of rising costs, margins held steady.",
+        "She disapproves against remote-only onboarding.",
+        "The committee approved against the contingency plan.",
+        "Despite the headwinds, revenue still grew."
+      ],
+      "answer_key": [false, false, false, false, true],
+      "tactical_explanations": [
+        "FALSE — \"In spite\" must be followed by \"of\"; write \"In spite of the headwinds.\"\n\nTip: In spite of = despite; never drop of from the three-word phrase.",
+        "FALSE — \"Despite of\" is ungrammatical; drop \"of\" or use \"in spite of.\"\n\nTip: If you hear \"of,\" the safe rewrite is \"in spite of.\"",
+        "FALSE — Use \"disapproves of,\" not \"against.\"\n\nTip: Approve/disapprove of X; \"against\" belongs with be/argue.",
+        "FALSE — Use \"approved of the plan\" (attitude) or \"approved the plan\" (formal decision) — not \"against.\"\n\nTip: Approve of an idea; do not invent \"approve against.\"",
+        "TRUE — \"Despite\" + noun phrase is correct and needs no \"of.\"\n\nTip: Despite ≠ despite of — never add \"of\" after despite."
+      ],
+      "highlights": [
+        "In spite the",
+        "Despite of",
+        "disapproves against",
+        "approved against",
+        "Despite the"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.18",
+      "solution_overview": "Concession phrases and approval verbs are frequent exam traps. Confirm that \"despite\" stands alone, that \"in spite of\" keeps its of, and that approve/disapprove take \"of\" when an attitude is meant."
+    },
+    {
+      "id": "en-g-18-10",
+      "case_id": "ENG G.18.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The delay was due to a supplier outage.",
+        "Owing to the outage, shipments slipped by two days.",
+        "Because of the outage last Tuesday, filings slipped.",
+        "He was blamed for the reporting error.",
+        "In spite of the outage, the team filed on time."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Due to\" + noun correctly states the cause after a linking verb.\n\nTip: Due to / owing to + noun; not + bare clause.",
+        "TRUE — \"Owing to\" + noun is a formal cause marker.\n\nTip: Owing to ≈ because of; both need a noun phrase.",
+        "TRUE — \"Because of\" + noun correctly marks the cause.\n\nTip: Because + clause; because of + noun.",
+        "TRUE — \"Blamed for\" an error is the fixed responsibility pattern.\n\nTip: Blame someone for X; be blamed for X — not \"of.\"",
+        "TRUE — \"In spite of\" + noun is the complete three-word concession phrase.\n\nTip: Mirror check: if despite works, in spite of should too — with of included."
+      ],
+      "highlights": [
+        "due to",
+        "Owing to",
+        "Because of",
+        "blamed for",
+        "In spite of"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.18",
+      "solution_overview": "Cause and concession patterns look similar but lock different partners. Check that due to/owing to/because of take nouns, and keep blamed for distinct from accused of."
+    },
+    {
+      "id": "en-g-18-11",
+      "case_id": "ENG G.18.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The analyst is familiar with the IFRS disclosure notes.",
+        "Few staff are familiar to the new CRM workflow.",
+        "He specialised in cross-border tax structuring.",
+        "The firm specialises on logistics software.",
+        "We must comply to the updated privacy regulation."
+      ],
+      "answer_key": [true, false, true, false, false],
+      "tactical_explanations": [
+        "TRUE — \"Familiar with\" correctly marks knowledge of a topic.\n\nTip: Familiar with X; \"to\" belongs with \"familiar to someone\" in a different frame.",
+        "FALSE — People are \"familiar with\" a system; a system can be \"familiar to\" people — here you need \"with.\"\n\nTip: Subject = person → familiar with; subject = thing → familiar to + person.",
+        "TRUE — \"Specialise in\" a field is the fixed pattern.\n\nTip: Specialise/major → in a subject area.",
+        "FALSE — Use \"specialises in,\" not \"on.\"\n\nTip: On appears with focus/concentrate; specialise stays with in.",
+        "FALSE — Use \"comply with\" a regulation, not \"comply to.\"\n\nTip: Comply with rules; never \"comply to\" on careful papers."
+      ],
+      "highlights": [
+        "familiar with",
+        "familiar to the new",
+        "specialised in",
+        "specialises on",
+        "comply to"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.18",
+      "solution_overview": "Expertise and compliance language uses a narrow set of prepositions. Watch the familiar with/to swap and keep specialise/comply on their locked partners."
+    },
+    {
+      "id": "en-g-18-12",
+      "case_id": "ENG G.18.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The warranty covers damage resulting from misuse.",
+        "Better training resulted in fewer service tickets.",
+        "The shortage resulted of a warehouse fire.",
+        "They congratulated the team on winning the tender.",
+        "Please comment the draft before noon."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "TRUE — \"Resulting from\" correctly marks the cause of the damage.\n\nTip: Result from = come from a cause.",
+        "TRUE — \"Resulted in\" correctly marks the effect produced.\n\nTip: Result in = lead to an outcome.",
+        "FALSE — Causes take \"resulted from,\" not \"of.\"\n\nTip: Never write \"result of\" as a verb pattern; \"be the result of\" is a noun pattern.",
+        "TRUE — \"Congratulate … on\" an achievement is fully standard.\n\nTip: On/for both appear after congratulate; on + -ing is very common.",
+        "FALSE — You \"comment on the draft,\" not \"comment the draft\" in this exam register.\n\nTip: Comment on / make comments on a document."
+      ],
+      "highlights": [
+        "resulting from",
+        "resulted in",
+        "resulted of",
+        "congratulated the team on",
+        "comment the draft"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.18",
+      "solution_overview": "Result in vs result from is a direction test: effect versus cause. Finish by checking whether transitive-looking verbs still need a preposition, as with comment on."
+    },
+    {
+      "id": "en-g-18-13",
+      "case_id": "ENG G.18.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The CFO is committed to reducing leverage this year.",
+        "They are opposed to selling the subsidiary now.",
+        "She is keen on expanding into adjacent markets.",
+        "He is keen in expanding into adjacent markets.",
+        "We are accustomed to filing reports every Friday."
+      ],
+      "answer_key": [true, true, true, false, true],
+      "tactical_explanations": [
+        "TRUE — \"Committed to\" + gerund shows firm intention.\n\nTip: To after committed/dedicated is a preposition, so -ing follows.",
+        "TRUE — \"Opposed to\" + gerund correctly states resistance.\n\nTip: Opposed to X / to doing X — keep the gerund.",
+        "TRUE — \"Keen on\" + gerund is the usual BrE ability/interest pattern.\n\nTip: Keen on -ing; keen to + infinitive is a different but also valid frame.",
+        "FALSE — Not \"keen in\"; use \"keen on\" or \"keen to.\"\n\nTip: In does not partner with keen for this meaning.",
+        "TRUE — \"Accustomed to\" + gerund matches the fixed habit pattern.\n\nTip: Accustomed/used to + -ing (prepositional to)."
+      ],
+      "highlights": [
+        "committed to",
+        "opposed to",
+        "keen on",
+        "keen in",
+        "accustomed to"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.18",
+      "solution_overview": "Attitude adjectives followed by \"to\" or \"on\" still take gerunds because that \"to\" is a preposition. Reject any swap that inserts \"in\" where \"on\" or \"to\" is locked."
+    },
+    {
+      "id": "en-g-18-14",
+      "case_id": "ENG G.18.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Nothing will stop the bank from raising its forecast.",
+        "The clause prohibits staff from sharing client files externally.",
+        "Higher volumes translated into stronger fee income.",
+        "The discussion centred on pricing strategy.",
+        "Investors look forward to hearing the revised guidance."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Stop … from\" + gerund is correct.\n\nTip: Stop/prevent/keep someone from doing X.",
+        "TRUE — \"Prohibits … from sharing\" is the fixed pattern.\n\nTip: Prohibit/ban/discourage from -ing — not to + infinitive.",
+        "TRUE — \"Translate into\" an outcome is a standard figurative collocation.\n\nTip: Translate into = result in; \"to\" is weaker here.",
+        "TRUE — \"Centred on\" correctly names the topic focus.\n\nTip: Centre/focus/concentrate → on a topic.",
+        "TRUE — \"Look forward to\" + gerund remains fixed in formal updates.\n\nTip: After look forward to, keep -ing because to is a preposition."
+      ],
+      "highlights": [
+        "stop the bank from",
+        "prohibits staff from",
+        "translated into",
+        "centred on",
+        "look forward to"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.18",
+      "solution_overview": "Restriction verbs almost always take \"from\" + gerund. Pair that with topic verbs that lock \"on,\" and you can clear most of this set quickly."
+    },
+    {
+      "id": "en-g-18-15",
+      "case_id": "ENG G.18.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Whether we expand depends of next quarter's cash flow.",
+        "He takes pride of mentoring junior analysts.",
+        "The review will take account to seasonal effects.",
+        "She was blamed of the reporting error.",
+        "The bonus depends on whether targets are met."
+      ],
+      "answer_key": [false, false, false, false, true],
+      "tactical_explanations": [
+        "FALSE — Still \"depends on,\" even before a clause — never \"of.\"\n\nTip: The clause after depend does not change the locked preposition.",
+        "FALSE — Not \"pride of\"; that mixes \"proud of\" with \"take pride in.\"\n\nTip: Keep the pairs intact: pride in ≠ proud of.",
+        "FALSE — Use \"take account of,\" not \"to.\"\n\nTip: Take account of X; take into account is the sibling pattern.",
+        "FALSE — Not \"blamed of\"; that pattern belongs with accused/suspected.\n\nTip: Blamed for ≠ accused of — keep the pairs separate.",
+        "TRUE — \"Depend on whether…\" correctly introduces a condition.\n\nTip: Depend on + noun/whether-clause; the preposition stays \"on.\""
+      ],
+      "highlights": [
+        "depends of",
+        "pride of",
+        "take account to",
+        "blamed of",
+        "depends on whether"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.18",
+      "solution_overview": "Fixed phrases stay fixed even when a clause follows. Watch for crossed pairs such as pride in vs proud of, and keep \"depend on\" through every continuation."
+    },
+    {
+      "id": "en-g-18-16",
+      "case_id": "ENG G.18.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The recommendation rests on three independent studies.",
+        "Their case rests in three independent studies.",
+        "We cannot dispense with the interim audit this year.",
+        "The plan provides for a mid-year stress test.",
+        "The plan provides of a mid-year stress test."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — \"Rest on\" evidence or assumptions is correct.\n\nTip: Rest on / be based on — both take \"on.\"",
+        "FALSE — Use \"rests on,\" not \"in,\" for this meaning.\n\nTip: In would suggest location; the argumentative sense needs on.",
+        "TRUE — \"Dispense with\" (= do without) is a fixed formal pattern.\n\nTip: Dispense with X; do not invent \"dispense of.\"",
+        "TRUE — \"Provide for\" a contingency means make arrangements for it.\n\nTip: Provide for = make provision; provide someone with = supply.",
+        "FALSE — Not \"provides of\"; use \"provides for\" or \"provides … with.\"\n\nTip: Of after provide is almost always wrong in exam English."
+      ],
+      "highlights": [
+        "rests on",
+        "rests in",
+        "dispense with",
+        "provides for",
+        "provides of"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.18",
+      "solution_overview": "Formal report verbs hide fixed prepositions. Rest on, dispense with, and provide for each lock one partner — treat any other preposition as a trap."
+    },
+    {
+      "id": "en-g-18-17",
+      "case_id": "ENG G.18.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The board will not enter into a binding commitment yet.",
+        "They entered in negotiations without legal counsel.",
+        "Investors put pressure on management to clarify guidance.",
+        "The delay put pressure to the operations team.",
+        "She was charged for insider trading last month."
+      ],
+      "answer_key": [true, false, true, false, false],
+      "tactical_explanations": [
+        "TRUE — \"Enter into\" an agreement or commitment is the formal pattern.\n\nTip: Enter into a contract/talks; enter a room needs no into.",
+        "FALSE — Negotiations take \"entered into,\" not \"entered in.\"\n\nTip: For abstract agreements and talks, keep into.",
+        "TRUE — \"Put pressure on\" someone is fixed.\n\nTip: Pressure on a person/organisation; not \"to\" the person.",
+        "FALSE — Use \"put pressure on the operations team,\" not \"to.\"\n\nTip: On marks the target of pressure; to marks direction elsewhere.",
+        "FALSE — Use \"charged with\" an offence, not \"for.\"\n\nTip: Charged with ≈ accused of; keep each pair as learned."
+      ],
+      "highlights": [
+        "enter into",
+        "entered in",
+        "pressure on",
+        "pressure to",
+        "charged for"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.18",
+      "solution_overview": "Legal and negotiation English mixes \"enter into,\" \"charged with,\" and \"pressure on.\" These are memorised locks — if the preposition feels improvised, it is probably wrong."
+    },
+    {
+      "id": "en-g-18-18",
+      "case_id": "ENG G.18.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The division accounts for nearly forty percent of revenue.",
+        "Poor controls accounted to several reporting breaches.",
+        "We must allow for currency swings in the model.",
+        "The schedule does not allow of further slippage.",
+        "Despite the fact that costs rose, cash flow improved."
+      ],
+      "answer_key": [true, false, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Account for\" a share or proportion is correct.\n\nTip: Account for = constitute / explain.",
+        "FALSE — Explanations also \"account for\" events — not \"account to.\"\n\nTip: Account to someone = report to them; account for something = explain it.",
+        "TRUE — \"Allow for\" a risk means include it in planning.\n\nTip: Allow for = make provision for.",
+        "TRUE — Formal \"allow of\" (= permit) is rare but grammatical in this sense.\n\nTip: Allow of = admit the possibility of; different from allow for.",
+        "TRUE — \"Despite the fact that\" correctly introduces a full clause after despite.\n\nTip: Despite + noun, or despite the fact that + clause — still no \"despite of.\""
+      ],
+      "highlights": [
+        "accounts for",
+        "accounted to",
+        "allow for",
+        "allow of",
+        "Despite the fact that"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.18",
+      "solution_overview": "Account for vs account to, and allow for vs allow of, are advanced pairs with different meanings. Read for sense, then confirm the preposition matches that sense — including the legal \"despite the fact that\" workaround."
+    },
+    {
+      "id": "en-g-18-19",
+      "case_id": "ENG G.18.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The committee insisted that the clause be revised, and the lawyer insisted on seeing the redraft.",
+        "She was suspected of leaking the memo to the press.",
+        "The flotation went ahead in spite of the delays.",
+        "She takes pride in mentoring junior analysts.",
+        "Notwithstanding the objections, the board adopted the policy."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Two different \"insist\" patterns can coexist: subjunctive that-clause, and \"insist on\" + gerund.\n\nTip: Insist that + base form ≠ insist on + -ing — both are fixed, but they are not interchangeable.",
+        "TRUE — \"Suspected of\" + gerund is the legal collocation.\n\nTip: Suspected/accused/convicted of wrongdoing.",
+        "TRUE — \"In spite of the delays\" is fully correct.\n\nTip: Mirror check: if despite works, in spite of should too — with of included.",
+        "TRUE — \"Take pride in\" + gerund is fixed.\n\nTip: Pride in / proud of — different heads, different prepositions.",
+        "TRUE — \"Notwithstanding\" works like despite and takes a noun phrase with no extra of.\n\nTip: Notwithstanding X ≈ despite X; do not write \"notwithstanding of.\""
+      ],
+      "highlights": [
+        "insisted on seeing",
+        "suspected of",
+        "in spite of",
+        "pride in",
+        "Notwithstanding the"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.18",
+      "solution_overview": "High-band items mix near-identical frames correctly. Separate insist that from insist on, keep suspected of and pride in, and leave notwithstanding without a trailing of."
+    },
+    {
+      "id": "en-g-18-20",
+      "case_id": "ENG G.18.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Please refrain to call the client until legal has cleared the script.",
+        "The bonus pool is contingent of meeting group targets.",
+        "She was suspected for leaking the memo to the press.",
+        "In spite the delays, the flotation went ahead.",
+        "The lenders will refrain from calling the loan if covenants hold."
+      ],
+      "answer_key": [false, false, false, false, true],
+      "tactical_explanations": [
+        "FALSE — Not \"refrain to call\"; use \"refrain from calling.\"\n\nTip: From + -ing after refrain/abstain.",
+        "FALSE — Use \"contingent on,\" not \"of.\"\n\nTip: Of after contingent is a depend-of style transfer error.",
+        "FALSE — Use \"suspected of,\" not \"for.\"\n\nTip: Suspected/accused of wrongdoing — keep for for blame.",
+        "FALSE — \"In spite\" must be followed by \"of\"; \"in spite the delays\" is incomplete.\n\nTip: In spite of = despite; never drop of from the three-word phrase.",
+        "TRUE — \"Refrain from\" + gerund is the fixed restraint pattern.\n\nTip: Refrain from doing X; never a bare infinitive after refrain."
+      ],
+      "highlights": [
+        "refrain to",
+        "contingent of",
+        "suspected for",
+        "In spite the",
+        "refrain from"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.18",
+      "solution_overview": "Close with formal restraint and condition traps. Refrain from and contingent on behave like depend on; strip away every false of/for/to before accepting a sentence."
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "id": "g.20",
+  "title": "Confusable Structures",
+  "tasks": [
+    {
+      "id": "en-g-20-01",
+      "case_id": "ENG G.20.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Give the briefing pack to whoever requests it first.",
+        "The analyst, who's spreadsheet we checked, spotted the error.",
+        "Rising rates affect borrowing costs across the sector.",
+        "Between you and I, the forecast looks optimistic.",
+        "Fewer complaints were logged after the redesign."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Whoever is the subject of requests, so the nominative form is required even after to.\n\nTip: Ignore the preposition; judge case inside the clause.",
+        "FALSE — Use possessive whose, not who's (= who is/has): whose spreadsheet.\n\nTip: If you cannot expand to who is, write whose.",
+        "TRUE — Affect as a verb correctly means influence.\n\nTip: Most exam sentences want the verb affect, not the noun effect.",
+        "FALSE — After the preposition between, use object case: Between you and me.\n\nTip: Strip you and — you would never say between I.",
+        "TRUE — Fewer correctly modifies the countable plural complaints.\n\nTip: Countable plural → fewer; mass noun → less."
+      ],
+      "highlights": [
+        "whoever requests",
+        "who's spreadsheet",
+        "affect",
+        "Between you and I",
+        "Fewer complaints"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.20",
+      "solution_overview": "Work through each sentence as a quick case check: which form fits the grammar slot? Look for subject vs object, possession vs contraction, influence vs result, object pronouns after prepositions, and countable vs mass nouns."
+    },
+    {
+      "id": "en-g-20-02",
+      "case_id": "ENG G.20.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Award the contract to whomever submits the lowest compliant bid.",
+        "The director, whose memo clarified the timeline, left early.",
+        "The reform will effect consumer confidence overnight.",
+        "Between you and me, the merger talks stalled.",
+        "The selection criteria is listed on page two."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — The relative is the subject of submits, so use whoever, not whomever.\n\nTip: Find the verb in the clause; if the wh-word does the action, choose whoever.",
+        "TRUE — Whose correctly marks possession before memo.\n\nTip: Whose works for people and organisations in formal English.",
+        "FALSE — For influence, use the verb affect: will affect consumer confidence.\n\nTip: Reserve verb effect for bring about / cause to happen.",
+        "TRUE — Object pronouns after between are correct: you and me.\n\nTip: Formal speech still uses me here — I is the hypercorrection.",
+        "FALSE — Criteria is plural; use are: The selection criteria are listed.\n\nTip: Singular form is criterion."
+      ],
+      "highlights": [
+        "whomever submits",
+        "whose memo",
+        "will effect",
+        "Between you and me",
+        "criteria is"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.20",
+      "solution_overview": "These five hinge on classic swap traps. Ask: is the wh-word a subject? Is the 's a contraction or a possessive? Does the sentence mean influence or bring about? Is the pronoun after a preposition? Is criteria treated as plural?"
+    },
+    {
+      "id": "en-g-20-03",
+      "case_id": "ENG G.20.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Whoever finishes the audit should file the summary today.",
+        "Who's responsible for signing the disclosure?",
+        "The board hopes the new policy will effect a change in reporting.",
+        "Less invoices were rejected this month.",
+        "The hiring criteria are transparent and published online."
+      ],
+      "answer_key": [true, true, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Whoever correctly acts as the subject of finishes.\n\nTip: Start-of-sentence subject slots almost always need whoever.",
+        "TRUE — Who's expands cleanly to who is before responsible.\n\nTip: Test expansion before you accept who's.",
+        "TRUE — Verb effect meaning bring about is correct with a change.\n\nTip: Effect a change/reform/improvement is the rare but valid pattern.",
+        "FALSE — Invoices are countable; use Fewer invoices.\n\nTip: If you can count the noun, prefer fewer.",
+        "TRUE — Plural criteria correctly takes are.\n\nTip: Formal WU-style English keeps criteria plural."
+      ],
+      "highlights": [
+        "Whoever finishes",
+        "Who's responsible",
+        "effect a change",
+        "Less invoices",
+        "criteria are"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.20",
+      "solution_overview": "Four of these are standard correct forms; one countable/mass slip remains. Confirm each pair quickly: whoever subject, who's = who is, effect = bring about, fewer with countables, criteria + plural verb."
+    },
+    {
+      "id": "en-g-20-04",
+      "case_id": "ENG G.20.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Invite whomever the panel nominates as keynote speaker.",
+        "Please identify the stakeholder who's concerns were ignored.",
+        "Currency swings affect export margins immediately.",
+        "Keep this confidential between you and me.",
+        "We need less paperwork before the audit begins."
+      ],
+      "answer_key": [true, false, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Whomever is the object of nominates, so the object form is traditionally correct.\n\nTip: If another subject does the verb, the wh-word is often the object.",
+        "FALSE — Need possessive whose concerns, not who's (= who is).\n\nTip: Who's concerns never expands sensibly.",
+        "TRUE — Verb affect correctly means influence.\n\nTip: Ask whether something influences something else.",
+        "TRUE — Object pronouns after between are required.\n\nTip: Business English still marks between you and I wrong.",
+        "TRUE — Paperwork is uncountable, so less is appropriate.\n\nTip: Mass nouns (time, money, paperwork) take less."
+      ],
+      "highlights": [
+        "whomever the panel nominates",
+        "who's concerns",
+        "affect",
+        "between you and me",
+        "less paperwork"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.20",
+      "solution_overview": "Watch the one genuine object-case whomever and the mass-noun less. The rest are possession, influence, and prepositional object pronouns — mark false only where the wrong member of a pair appears."
+    },
+    {
+      "id": "en-g-20-05",
+      "case_id": "ENG G.20.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Forward the files to whomever is on duty tonight.",
+        "The firm whose shares surged published a cautious outlook.",
+        "Higher tariffs will effect domestic demand for imports.",
+        "This matter stays between the counsel and I.",
+        "One key criterion is still missing from the checklist."
+      ],
+      "answer_key": [false, true, false, false, true],
+      "tactical_explanations": [
+        "FALSE — Is needs a subject: use whoever is on duty.\n\nTip: To + whomever + is is almost always wrong.",
+        "TRUE — Possessive whose correctly links the firm to shares.\n\nTip: Whose is fine with inanimate subjects in formal prose.",
+        "FALSE — Meaning is influence → will affect domestic demand.\n\nTip: No a change/result noun after the verb? Prefer affect.",
+        "FALSE — Object of between must be me: between the counsel and me.\n\nTip: Same rule as between you and me.",
+        "TRUE — Singular criterion correctly pairs with is.\n\nTip: One item → criterion; several → criteria."
+      ],
+      "highlights": [
+        "whomever is",
+        "whose shares",
+        "will effect",
+        "counsel and I",
+        "criterion is"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.20",
+      "solution_overview": "Difficulty steps up slightly: check clause subjects after to, possessive whose with companies, affect vs effect, object pronouns after between, and criterion vs criteria."
+    },
+    {
+      "id": "en-g-20-06",
+      "case_id": "ENG G.20.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "We will hire whoever the committee recommends.",
+        "Who's been updating the risk register this week?",
+        "The announcement had little effect on trading volumes.",
+        "Fewer than twelve suppliers met the new standard.",
+        "These criteria was drafted after the consultation."
+      ],
+      "answer_key": [true, true, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Whoever is widely accepted as the object of recommends and is the safer exam default when case is contested.\n\nTip: Markers rarely accept whomever as a subject; they often accept whoever as an object.",
+        "TRUE — Who's = who has before the past participle been.\n\nTip: Who's been is a standard contraction.",
+        "TRUE — Noun effect meaning result/impact is correct after little.\n\nTip: Article/quantifier + effect usually signals the noun.",
+        "TRUE — Countable suppliers take fewer than.\n\nTip: Fewer than + number + plural noun is the careful form.",
+        "FALSE — Plural criteria needs were, not was.\n\nTip: Never pair criteria with a singular verb in formal answers."
+      ],
+      "highlights": [
+        "whoever the committee recommends",
+        "Who's been",
+        "little effect",
+        "Fewer than twelve",
+        "criteria was"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.20",
+      "solution_overview": "Four statements are solid; one plural agreement error with criteria. Confirm contractions, the noun effect, fewer with numbers of countable items, and plural verb agreement."
+    },
+    {
+      "id": "en-g-20-07",
+      "case_id": "ENG G.20.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Assign the ticket to whoever the system flags as owner.",
+        "The auditor who's laptop crashed lost an hour of work.",
+        "Interest-rate cuts affect mortgage applications with a lag.",
+        "Less staff were retained after the restructuring.",
+        "The evaluation criteria remain unchanged this year."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Whoever functions acceptably as the object of flags in modern exam English.\n\nTip: Prefer whoever unless the object case is unmistakable and required.",
+        "FALSE — Possessive needed: whose laptop, not who's (= who is).\n\nTip: Expand every who's before you accept it.",
+        "TRUE — Verb affect correctly means influence.\n\nTip: Subject influences object → affect.",
+        "FALSE — Headcount treated as plural people needs Fewer staff were retained.\n\nTip: Headcount plurals → fewer.",
+        "TRUE — Plural criteria correctly takes plural remain.\n\nTip: Watch subject–verb number with Latin plurals."
+      ],
+      "highlights": [
+        "whoever the system flags",
+        "who's laptop",
+        "affect",
+        "Less staff",
+        "criteria remain"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.20",
+      "solution_overview": "Scan for the possessive/contraction slip and the fewer/less headcount error. The affect and criteria lines should read clean if you keep influence and plural agreement in mind."
+    },
+    {
+      "id": "en-g-20-08",
+      "case_id": "ENG G.20.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Congratulate whomever you select for the award.",
+        "A regulator whose remit includes banks issued the notice.",
+        "Management intends to effect several procedural reforms.",
+        "Please discuss the offer only between you and me.",
+        "We observed less delays on the delivery route."
+      ],
+      "answer_key": [true, true, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Whomever is the object of select, so the object form is traditionally correct.\n\nTip: Subject you + verb select → object whomever.",
+        "TRUE — Whose remit correctly shows possession for an institution.\n\nTip: Whose + noun is the safe possessive pattern.",
+        "TRUE — Verb effect meaning bring about fits reforms.\n\nTip: Effect + concrete result noun is the cue.",
+        "TRUE — Between you and me uses correct object pronouns.\n\nTip: Hypercorrect I fails after prepositions.",
+        "FALSE — Delays are countable: fewer delays.\n\nTip: Plural -s nouns almost always take fewer."
+      ],
+      "highlights": [
+        "whomever you select",
+        "whose remit",
+        "to effect several",
+        "between you and me",
+        "less delays"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.20",
+      "solution_overview": "Most lines are carefully correct, including a legitimate object-case whomever and verb effect. The single miss is less with a countable plural — swap it mentally to fewer."
+    },
+    {
+      "id": "en-g-20-09",
+      "case_id": "ENG G.20.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Hand the microphone to whomever finishes speaking next.",
+        "Tell me who's attending the closing session.",
+        "The scandal did not affect the share price for long.",
+        "The dispute should stay between the CFO and I.",
+        "Each criterion carries equal weight in the scorecard."
+      ],
+      "answer_key": [false, true, true, false, true],
+      "tactical_explanations": [
+        "FALSE — Subject of finishes must be whoever.\n\nTip: Verb immediately after the wh-word usually signals subject case.",
+        "TRUE — Who's = who is before attending.\n\nTip: Progressive after who's → contraction is fine.",
+        "TRUE — Verb affect correctly means influence the share price.\n\nTip: Markets, prices, and demand are typically affected.",
+        "FALSE — Use me: between the CFO and me.\n\nTip: Coordinated pronouns keep the same case.",
+        "TRUE — Singular criterion correctly takes singular carries.\n\nTip: Each + singular noun reinforces criterion."
+      ],
+      "highlights": [
+        "whomever finishes",
+        "who's attending",
+        "did not affect",
+        "CFO and I",
+        "criterion carries"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.20",
+      "solution_overview": "Two traps are classic: whomever used as a subject, and I after between. The remaining three are clean contractions, affect-as-influence, and singular criterion agreement."
+    },
+    {
+      "id": "en-g-20-10",
+      "case_id": "ENG G.20.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Support will go to whoever presents the strongest case.",
+        "Name the partner who's proposal we rejected.",
+        "The new levy may effect small retailers disproportionately.",
+        "Fewer working days remain before the filing deadline.",
+        "The admission criteria have been tightened again."
+      ],
+      "answer_key": [true, false, false, true, true],
+      "tactical_explanations": [
+        "TRUE — Whoever is the subject of presents.\n\nTip: Subject + verb right after whoever is the clean pattern.",
+        "FALSE — Possessive required: whose proposal.\n\nTip: Who's proposal cannot mean who is proposal.",
+        "FALSE — Influence meaning needs may affect small retailers.\n\nTip: Adverb of manner after the verb often follows affect, not effect.",
+        "TRUE — Countable working days take fewer.\n\nTip: Calendar units in the plural prefer fewer.",
+        "TRUE — Plural criteria correctly takes have.\n\nTip: Have/are/were are the safe plural partners."
+      ],
+      "highlights": [
+        "whoever presents",
+        "who's proposal",
+        "may effect",
+        "Fewer working days",
+        "criteria have"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.20",
+      "solution_overview": "Focus on the two false lines: a who's/whose possession error and affect miswritten as effect. The whoever-subject, fewer-days, and criteria-have lines should all read true."
+    },
+    {
+      "id": "en-g-20-11",
+      "case_id": "ENG G.20.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "We contacted whomever the client had authorised to negotiate.",
+        "The committee, whose chair resigned yesterday, postponed the vote.",
+        "Severe weather can affect logistics across the region.",
+        "Between you and me and the rest of the team, morale is fragile.",
+        "There is less evidence than we expected in the file."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Whomever is the object of had authorised, so object case is traditionally right.\n\nTip: Past perfect clauses often bury the object — find who receives the action.",
+        "TRUE — Non-defining whose chair correctly marks possession.\n\nTip: Commas do not change the whose/who's rule.",
+        "TRUE — Verb affect correctly means influence logistics.\n\nTip: Weather/events affect systems and people.",
+        "TRUE — All coordinated pronouns after between stay in object case; me is correct.\n\nTip: Adding more nouns does not license I.",
+        "TRUE — Uncountable evidence takes less.\n\nTip: Evidence, information, and research are mass nouns."
+      ],
+      "highlights": [
+        "whomever the client had authorised",
+        "whose chair",
+        "can affect",
+        "Between you and me",
+        "less evidence"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.20",
+      "solution_overview": "All five are carefully correct. Use this set to lock in the right members of each pair: object whomever, possessive whose, verb affect, object me, and less with a mass noun."
+    },
+    {
+      "id": "en-g-20-12",
+      "case_id": "ENG G.20.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Credit the bonus to whomever meets the quarterly target.",
+        "Who's signature appears on the final page?",
+        "The mediation failed to effect an early settlement.",
+        "Less than forty applications arrived before noon.",
+        "Several criteria needs revision before publication."
+      ],
+      "answer_key": [false, false, true, false, false],
+      "tactical_explanations": [
+        "FALSE — Subject of meets requires whoever.\n\nTip: Target-meeting clauses are subject cases.",
+        "FALSE — Ask whose signature, not who's (= who is).\n\nTip: Noun after the wh-word → almost always whose.",
+        "TRUE — Verb effect meaning bring about fits a settlement.\n\nTip: Effect + indefinite article + result noun is classic.",
+        "FALSE — Countable applications prefer Fewer than forty applications.\n\nTip: Exam English still prefers fewer with countable plurals after numbers.",
+        "FALSE — Plural subject needs need: Several criteria need revision.\n\nTip: Several + plural noun → plural verb."
+      ],
+      "highlights": [
+        "whomever meets",
+        "Who's signature",
+        "effect an early settlement",
+        "Less than forty applications",
+        "criteria needs"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.20",
+      "solution_overview": "Only one sentence is true — the effect a settlement pattern. The other four mix subject/object, possession/contraction, fewer/less with numbers, and criteria agreement."
+    },
+    {
+      "id": "en-g-20-13",
+      "case_id": "ENG G.20.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Delegate authority to whoever you believe can close the deal.",
+        "An investor who's portfolio includes bonds asked for details.",
+        "Oil prices affect airline operating costs within days.",
+        "The settlement must remain between the claimant and me.",
+        "We have fewer inventory than last quarter."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Whoever is the subject of can close inside the nested clause.\n\nTip: Case is decided in the innermost clause, not by to.",
+        "FALSE — Possessive needed: whose portfolio.\n\nTip: Portfolio/assets after the wh-word → whose.",
+        "TRUE — Verb affect correctly means influence costs.\n\nTip: Prices affect costs is a stock exam pattern.",
+        "TRUE — Object pronoun me after between is correct.\n\nTip: Legal/business between X and me is standard.",
+        "FALSE — Inventory is typically uncountable here → less inventory (or fewer inventory items).\n\nTip: Do not use fewer with a mass noun."
+      ],
+      "highlights": [
+        "whoever you believe can",
+        "who's portfolio",
+        "affect airline",
+        "claimant and me",
+        "fewer inventory"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.20",
+      "solution_overview": "Nested clauses and mass/count swaps raise the difficulty. Decide case inside you believe can…, fix the who's/whose slip, keep affect and between…me, and reverse the fewer/inventory mismatch."
+    },
+    {
+      "id": "en-g-20-14",
+      "case_id": "ENG G.20.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Offer the internship to whomever the mentors shortlist.",
+        "The NGO whose funding was cut suspended two programmes.",
+        "The announcement will effect investor sentiment tomorrow.",
+        "Keep the draft between you and I until Friday.",
+        "The scoring criteria are applied uniformly to all bids."
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "TRUE — Whomever is the object of shortlist.\n\nTip: Mentors shortlist someone → object case.",
+        "TRUE — Whose funding correctly shows possession.\n\nTip: Organisation + whose + noun is fine.",
+        "FALSE — Sentiment is influenced → will affect investor sentiment.\n\nTip: Abstract reactions (sentiment, confidence) take affect.",
+        "FALSE — Object case required: between you and me.\n\nTip: Until Friday does not change pronoun case.",
+        "TRUE — Plural criteria correctly takes are applied.\n\nTip: Passive voice still needs plural agreement."
+      ],
+      "highlights": [
+        "whomever the mentors shortlist",
+        "whose funding",
+        "will effect investor",
+        "you and I until",
+        "criteria are applied"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.20",
+      "solution_overview": "Two false lines misuse effect for influence and I after between. Confirm the object-case whomever, the possessive whose, and plural criteria in the passive."
+    },
+    {
+      "id": "en-g-20-15",
+      "case_id": "ENG G.20.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Promote whoever has delivered consistent results this year.",
+        "Who's been responsible for the overdue reconciliations?",
+        "Sanctions are beginning to effect trade with the region.",
+        "There were fewer discrepancies in the second sample.",
+        "This single criteria determines eligibility on its own."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "TRUE — Whoever is the subject of has delivered.\n\nTip: Perfect aspect does not change the case rule.",
+        "TRUE — Who's been = who has been.\n\nTip: Been after who's almost always means who has.",
+        "FALSE — Influence meaning → beginning to affect trade.\n\nTip: Progressive frames usually host affect.",
+        "TRUE — Countable discrepancies take fewer.\n\nTip: Audit/sample count nouns prefer fewer.",
+        "FALSE — Singular is criterion: This single criterion determines…\n\nTip: Single/one/each before the noun forces criterion."
+      ],
+      "highlights": [
+        "whoever has delivered",
+        "Who's been responsible",
+        "to effect trade",
+        "fewer discrepancies",
+        "single criteria"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.20",
+      "solution_overview": "Watch the subtler affect/effect slip inside a progressive construction and the false plural criteria after single. The whoever, who's been, and fewer lines are sound."
+    },
+    {
+      "id": "en-g-20-16",
+      "case_id": "ENG G.20.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "We will brief whomever is appointed as interim chair.",
+        "A supplier whose invoices arrived late was fined.",
+        "The task force hopes to effect lasting improvements in compliance.",
+        "Please keep the valuation between the advisers and me.",
+        "Managers reported less absences after flexible hours began."
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — Subject of is appointed must be whoever.\n\nTip: Passive is appointed still needs a subject form.",
+        "TRUE — Whose invoices correctly marks possession.\n\nTip: Supplier/company + whose is standard.",
+        "TRUE — Verb effect meaning bring about fits improvements.\n\nTip: Lasting/major + noun after effect is a good cue.",
+        "TRUE — Object pronoun me after between is correct.\n\nTip: Parallel advisers and me, never I.",
+        "FALSE — Countable absences need fewer absences.\n\nTip: Attendance counts are countable."
+      ],
+      "highlights": [
+        "whomever is appointed",
+        "whose invoices",
+        "effect lasting improvements",
+        "advisers and me",
+        "less absences"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.20",
+      "solution_overview": "Passive clauses hide subject-case whoever traps, and countable absences tempt less. Hold onto whose, effect-as-bring-about, and between…me as the true anchors."
+    },
+    {
+      "id": "en-g-20-17",
+      "case_id": "ENG G.20.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Allocate overtime to whoever the roster shows as available.",
+        "Identify the officer who's remit covers cross-border payments.",
+        "Liquidity shocks quickly affect short-term funding markets.",
+        "The negotiation is strictly between you and me at this stage.",
+        "Fewer capital was available after the rating downgrade."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Whoever is acceptable as the object of shows; when object case is unclear, whoever remains the safer exam form.\n\nTip: When object case is unclear, whoever rarely costs marks.",
+        "FALSE — Possessive whose remit is required.\n\nTip: Remit/mandate/portfolio after the wh-word → whose.",
+        "TRUE — Verb affect correctly means influence markets.\n\nTip: Shocks/events affect markets is a frequent stem.",
+        "TRUE — Between you and me is the correct object-case pair.\n\nTip: At this stage is irrelevant to case.",
+        "FALSE — Uncountable capital takes Less capital.\n\nTip: Capital, liquidity, and funding are mass nouns."
+      ],
+      "highlights": [
+        "whoever the roster shows",
+        "who's remit",
+        "affect short-term",
+        "between you and me",
+        "Fewer capital"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.20",
+      "solution_overview": "Harder items flip the usual fewer/less intuition: capital is mass, so fewer is wrong. Also catch the remit possession error while confirming whoever, affect, and between you and me."
+    },
+    {
+      "id": "en-g-20-18",
+      "case_id": "ENG G.20.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Send the draft to whomever you think should review it first.",
+        "The bank whose bonds were downgraded issued a statement.",
+        "Further delays will effect the project timeline severely.",
+        "Confidential pricing stays between procurement and me.",
+        "The shortlisting criteria leave little room for discretion."
+      ],
+      "answer_key": [false, true, false, true, true],
+      "tactical_explanations": [
+        "FALSE — Innermost clause: who should review — subject case → whoever you think should review it.\n\nTip: Ignore you think; case belongs to the embedded verb.",
+        "TRUE — Whose bonds correctly expresses possession.\n\nTip: Financial nouns after whose are routine.",
+        "FALSE — Influence on the timeline → will affect the project timeline.\n\nTip: Severely/significantly after the verb often follows affect.",
+        "TRUE — Object pronoun me after between is correct.\n\nTip: Department names do not change pronoun case.",
+        "TRUE — Plural criteria correctly takes plural leave.\n\nTip: Criteria + plural verb is the default formal choice."
+      ],
+      "highlights": [
+        "whomever you think should",
+        "whose bonds",
+        "will effect the project",
+        "procurement and me",
+        "criteria leave"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.20",
+      "solution_overview": "The nested you think should… clause is the main trap — the wh-word is a subject, so whoever is required. Pair that with an affect/effect influence error; the remaining three are solid."
+    },
+    {
+      "id": "en-g-20-19",
+      "case_id": "ENG G.20.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "We interviewed whomever the headhunter had shortlisted for CFO.",
+        "Who's attending on behalf of the supervisory board?",
+        "The restructuring may effect a reduction in overlapping roles.",
+        "Between you and I, the valuation model is flawed.",
+        "One of the criteria are inconsistent with the statute."
+      ],
+      "answer_key": [true, true, true, false, false],
+      "tactical_explanations": [
+        "TRUE — Whomever is the object of had shortlisted.\n\nTip: Headhunter shortlisted someone → object case.",
+        "TRUE — Who's attending = who is attending.\n\nTip: Expansion test passes cleanly.",
+        "TRUE — Verb effect meaning bring about fits a reduction.\n\nTip: Effect + a + noun of result is intentional formal diction.",
+        "FALSE — Object case: Between you and me.\n\nTip: Informal tone does not excuse I.",
+        "FALSE — One of the criteria takes a singular verb: is inconsistent.\n\nTip: One of + plural noun → singular verb for one."
+      ],
+      "highlights": [
+        "whomever the headhunter had shortlisted",
+        "Who's attending",
+        "effect a reduction",
+        "Between you and I",
+        "One of the criteria are"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.20",
+      "solution_overview": "Two advanced traps: hypercorrect between you and I, and singular agreement after one of the criteria. The object-case whomever, who's contraction, and effect-a-reduction lines are correctly written."
+    },
+    {
+      "id": "en-g-20-20",
+      "case_id": "ENG G.20.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Appoint whoever the board considers capable of leading the turnaround.",
+        "A client who's invoices remain unpaid will lose credit terms.",
+        "Currency volatility continues to affect hedging strategies.",
+        "All discussions must stay between the counsel and me.",
+        "We now require less formal approvals than before the overhaul."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — With consider X capable, prefer whoever in careful exam answers.\n\nTip: Nested complements after consider usually favour whoever.",
+        "FALSE — Possessive whose invoices is required.\n\nTip: Invoices/accounts after the wh-word → whose.",
+        "TRUE — Verb affect correctly means influence strategies.\n\nTip: Continues to + affect is a common formal stem.",
+        "TRUE — Object pronoun me after between is correct.\n\nTip: Counsel and me is a frequent legal stem.",
+        "FALSE — Approvals are countable → fewer formal approvals.\n\nTip: If the noun is plural and countable, choose fewer even with adjectives in between."
+      ],
+      "highlights": [
+        "whoever the board considers",
+        "who's invoices",
+        "to affect hedging",
+        "counsel and me",
+        "less formal approvals"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.20",
+      "solution_overview": "Finish with a dense mix: a board-considers clause, a who's/whose slip, solid affect and between…me, and a sneaky less before a countable plural. Only mark true when each confusable pair is already the right member."
+    }
+  ]
+}

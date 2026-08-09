@@ -1,0 +1,32 @@
+{
+  "id": "g.X",
+  "title": "Topic Title",
+  "tasks": [
+    {
+      "id": "en-g-X-01",
+      "case_id": "ENG G.X.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Sentence A.",
+        "Sentence B.",
+        "Sentence C.",
+        "Sentence D.",
+        "Sentence E."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Living coaching prose explaining why this form works.\n\nTip: Short memorable cue.",
+        "FALSE — Living coaching prose explaining the error and the fix.\n\nTip: Short memorable cue.",
+        "TRUE — ...\n\nTip: ...",
+        "TRUE — ...\n\nTip: ...",
+        "FALSE — ...\n\nTip: ..."
+      ],
+      "highlights": ["key phrase A", "error phrase B", "key C", "key D", "error E"],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.X",
+      "solution_overview": "Two to four living sentences introducing how to approach this set of five sentences."
+    }
+  ]
+}

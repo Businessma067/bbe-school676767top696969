@@ -1,0 +1,646 @@
+{
+  "id": "g.13",
+  "title": "Parallel Structure",
+  "tasks": [
+    {
+      "id": "en-g-13-01",
+      "case_id": "ENG G.13.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The quarterly report was clear, concise, and persuasive.",
+        "The proposal was both innovative and it reduced overhead.",
+        "Staff must clock in on time, finish assigned tasks, and following safety rules.",
+        "She enjoys analysing spreadsheets, drafting briefs, and to present findings.",
+        "The manager not only approved the budget but also extended the deadline."
+      ],
+      "answer_key": [true, false, false, false, true],
+      "tactical_explanations": [
+        "TRUE — Three adjectives sit in matching form, so the list is parallel.\n\nTip: When listing qualities, keep each item the same part of speech.",
+        "FALSE — \"Both…and\" joins an adjective to a full clause (\"it reduced overhead\").\n\nTip: Match structures after both…and: both innovative and cost-saving.",
+        "FALSE — The list shifts from bare infinitives (clock in, finish) to a participle (following).\n\nTip: After a shared modal, keep every verb in the same bare form: follow, not following.",
+        "FALSE — Two gerunds are paired with an infinitive (\"to present\").\n\nTip: Keep enjoy + -ing throughout: analysing, drafting, and presenting.",
+        "TRUE — \"Not only…but also\" links two matching past-tense verb phrases.\n\nTip: Place the same kind of phrase after each half of the correlative."
+      ],
+      "highlights": [
+        "clear, concise, and persuasive",
+        "both innovative and it",
+        "following",
+        "to present",
+        "not only approved"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.13",
+      "solution_overview": "Read each sentence as a list or a paired construction. Ask whether every item shares the same grammatical shape. Correlatives such as both…and and not only…but also are correct only when the two sides match."
+    },
+    {
+      "id": "en-g-13-02",
+      "case_id": "ENG G.13.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Investors valued its stability, its growth potential, and its transparency.",
+        "The goal was to cut costs, improving morale, and increase output.",
+        "He is skilled at negotiating contracts but weak in managing teams.",
+        "The policy aims to protect consumers, encourage competition, and boosting innovation.",
+        "She likes reading market reports and writing executive summaries."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Three noun phrases share the same pattern with repeated \"its.\"\n\nTip: Repeating a determiner can help keep noun lists visibly parallel.",
+        "FALSE — An infinitive series is broken by the gerund \"improving.\"\n\nTip: After \"to,\" keep bare infinitives: cut, improve, and increase.",
+        "TRUE — Adjective + preposition + gerund appears on both sides.\n\nTip: Parallel comparisons often reuse the same preposition pattern (at… / in…).",
+        "FALSE — The final item shifts from infinitives to a gerund (\"boosting\").\n\nTip: Finish the series with boost, not boosting.",
+        "TRUE — Two gerund phrases sit after \"likes\" in matching form.\n\nTip: Prefer reading… and writing… rather than mixing -ing with to-infinitives."
+      ],
+      "highlights": [
+        "stability, its growth potential, and its transparency",
+        "improving",
+        "skilled at negotiating",
+        "boosting",
+        "reading market reports and writing"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.13",
+      "solution_overview": "Check lists of nouns, infinitives, and gerunds one item at a time. A single mismatched form is enough to mark the sentence false, even if the meaning is clear."
+    },
+    {
+      "id": "en-g-13-03",
+      "case_id": "ENG G.13.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The training covers how to operate the machine, how to log incidents, and how to report faults.",
+        "Candidates should be reliable, motivated, and have experience.",
+        "The firm both restructured its debt and renegotiated supplier terms.",
+        "Our priorities are recruiting talent, retaining clients, and to expand overseas.",
+        "The auditor asked whether the figures were complete, accurate, and timely."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Three \"how to\" infinitive clauses form a clean parallel series.\n\nTip: Repeating \"how to\" before each verb keeps the list balanced.",
+        "FALSE — Two adjectives are followed by a verb phrase (\"have experience\").\n\nTip: Use three adjectives (reliable, motivated, and experienced) or three verb phrases.",
+        "TRUE — \"Both…and\" joins two matching past-tense verb phrases.\n\nTip: Place the shared subject once, then keep both verbs in the same tense and form.",
+        "FALSE — Two gerunds collide with an infinitive (\"to expand\").\n\nTip: Keep gerunds throughout: recruiting, retaining, and expanding.",
+        "TRUE — Three adjectives modify the figures in matching form.\n\nTip: Short adjective lists are easiest when every item is a single adjective."
+      ],
+      "highlights": [
+        "how to operate",
+        "have experience",
+        "both restructured",
+        "to expand",
+        "complete, accurate, and timely"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.13",
+      "solution_overview": "Watch for mixed categories: adjectives slipping into verb phrases, or gerunds mixed with infinitives. Correct parallelism keeps one pattern from the first item to the last."
+    },
+    {
+      "id": "en-g-13-04",
+      "case_id": "ENG G.13.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The launch was delayed by weak demand, rising costs, and because suppliers missed deadlines.",
+        "Either accept the revised offer or continue negotiating in good faith.",
+        "The brief must be short, focused, and without unnecessary jargon.",
+        "Neither the forecast nor the cash-flow model supports the expansion.",
+        "We need a plan that is realistic, affordable, and can be implemented quickly."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Two noun phrases are followed by a because-clause.\n\nTip: Keep causes as nouns: weak demand, rising costs, and missed supplier deadlines.",
+        "TRUE — \"Either…or\" links two bare imperatives.\n\nTip: After either…or, use the same verb form on both sides.",
+        "FALSE — Two adjectives are followed by a prepositional phrase.\n\nTip: Prefer three adjectives: short, focused, and jargon-free.",
+        "TRUE — \"Neither…nor\" joins two noun subjects; the nearer singular noun takes a singular verb.\n\nTip: Parallel correlatives still need subject–verb agreement with the nearer noun.",
+        "FALSE — Two adjectives are followed by a modal clause (\"can be implemented\").\n\nTip: Stay with adjectives: realistic, affordable, and quick to implement."
+      ],
+      "highlights": [
+        "because suppliers",
+        "Either accept",
+        "without unnecessary jargon",
+        "Neither the forecast nor",
+        "can be implemented"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.13",
+      "solution_overview": "Clauses and prepositional phrases often sneak into adjective or noun lists. If the first two items are adjectives or nouns, the third must be too."
+    },
+    {
+      "id": "en-g-13-05",
+      "case_id": "ENG G.13.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The committee decided to postpone the vote, to request further evidence, and that members should abstain.",
+        "Success depends on careful planning, disciplined execution, and continuous review.",
+        "The app is designed for browsing catalogues, placing orders, and to track deliveries.",
+        "She is responsible for preparing the slides and for presenting them to the board.",
+        "The memo was both poorly timed and written in an aggressive tone."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Two infinitives are followed by a that-clause.\n\nTip: Keep infinitives: postpone, request, and ask members to abstain — or rewrite as three that-clauses.",
+        "TRUE — Three noun phrases follow \"depends on\" in matching form.\n\nTip: After a preposition, noun or gerund lists usually work best when every item matches.",
+        "FALSE — Two gerunds are paired with an infinitive (\"to track\").\n\nTip: Use tracking deliveries to keep the -ing series intact.",
+        "TRUE — \"For\" + gerund appears twice in matching form.\n\nTip: Repeating the preposition before each gerund makes the parallelism explicit.",
+        "FALSE — \"Both…and\" joins an adverb–adjective pair to a past-participial clause of different shape.\n\nTip: Prefer both poorly timed and aggressively written."
+      ],
+      "highlights": [
+        "that members should abstain",
+        "careful planning, disciplined execution, and continuous review",
+        "to track",
+        "for preparing the slides and for presenting",
+        "both poorly timed and written"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.13",
+      "solution_overview": "Infinitive series and gerund series are easy to break with a stray that-clause or to-infinitive. Name the pattern of the first item, then force every later item to match it."
+    },
+    {
+      "id": "en-g-13-06",
+      "case_id": "ENG G.13.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The director wants employees who are punctual, who communicate clearly, and dedicated.",
+        "Not only did the firm cut headcount, but it also renegotiated leases.",
+        "Please submit the form online, attach supporting documents, and a covering letter.",
+        "The package includes flights, accommodation, and airport transfers.",
+        "He prefers to negotiate directly rather than relying on intermediaries."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Two relative clauses are followed by a bare adjective.\n\nTip: Keep relative clauses throughout: who are punctual, who communicate clearly, and who are dedicated.",
+        "TRUE — Fronted \"not only\" uses inversion, and \"but also\" continues with a matching verb phrase.\n\nTip: After inverted not only…, keep but also + parallel predicate.",
+        "FALSE — Two imperatives are followed by a noun phrase.\n\nTip: Use three verbs: submit, attach, and include a covering letter.",
+        "TRUE — Three noun objects form a simple parallel list.\n\nTip: Ordinary product lists are correct when every item is a noun phrase.",
+        "FALSE — An infinitive (\"to negotiate\") is contrasted with a gerund (\"relying\").\n\nTip: Match forms: to negotiate… rather than to rely…, or negotiating… rather than relying…"
+      ],
+      "highlights": [
+        "and dedicated",
+        "Not only did",
+        "and a covering letter",
+        "flights, accommodation, and airport transfers",
+        "rather than relying"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.13",
+      "solution_overview": "Comparisons with rather than and lists that mix clauses with adjectives are frequent traps. Keep the grammatical category constant across the join."
+    },
+    {
+      "id": "en-g-13-07",
+      "case_id": "ENG G.13.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The role involves reviewing contracts, advising clients, and attendance at hearings.",
+        "We are looking for someone who can think strategically, act decisively, and communicate persuasively.",
+        "The surplus will be used both to rebuild reserves and financing new projects.",
+        "Her strengths are attention to detail, calm under pressure, and solving problems creatively.",
+        "The board voted to approve the merger, to appoint an interim CEO, and to defer the dividend."
+      ],
+      "answer_key": [false, true, false, false, true],
+      "tactical_explanations": [
+        "FALSE — Two gerunds are followed by a noun phrase (\"attendance\").\n\nTip: Use attending hearings to keep the gerund pattern.",
+        "TRUE — Three bare infinitives after \"can\" form a matching series.\n\nTip: Shared modals (can/must/should) demand the same bare verb form each time.",
+        "FALSE — \"Both…and\" joins an infinitive to a gerund.\n\nTip: Both to rebuild… and to finance…, or both rebuilding… and financing…",
+        "FALSE — Two noun phrases are followed by a gerund phrase.\n\nTip: Use creative problem-solving so all three items are nouns.",
+        "TRUE — Three infinitives after \"voted to\" stay in parallel.\n\nTip: Repeating \"to\" before each verb is optional but often clearer."
+      ],
+      "highlights": [
+        "attendance at hearings",
+        "think strategically, act decisively, and communicate",
+        "both to rebuild reserves and financing",
+        "solving problems creatively",
+        "to approve the merger, to appoint"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.13",
+      "solution_overview": "Job descriptions and board resolutions often hide mixed lists. Convert every item into the same type—gerund, infinitive, or noun—before you judge the sentence true."
+    },
+    {
+      "id": "en-g-13-08",
+      "case_id": "ENG G.13.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The campaign was effective in raising awareness, in generating leads, and sales increased.",
+        "Applicants must either enclose a portfolio or they submit a link to an online gallery.",
+        "The analyst is known for rigorous methods, clear writing, and ethical judgement.",
+        "We aim not only to grow revenue but also market share.",
+        "The workshop taught participants to define objectives, to map stakeholders, and to draft a pilot plan."
+      ],
+      "answer_key": [false, false, true, false, true],
+      "tactical_explanations": [
+        "FALSE — Two \"in + gerund\" phrases are followed by an independent clause.\n\nTip: Keep the preposition pattern: in raising…, in generating…, and in increasing sales.",
+        "FALSE — \"Either…or\" joins a bare infinitive to a full clause with a new subject.\n\nTip: Either enclose a portfolio or submit a link — same subject, same verb form.",
+        "TRUE — Three noun phrases follow \"known for\" in parallel.\n\nTip: After \"for,\" noun lists are usually the safest parallel choice.",
+        "FALSE — \"Not only…but also\" joins an infinitive to a bare noun.\n\nTip: Not only to grow revenue but also to grow market share — or not only revenue but also market share.",
+        "TRUE — Three infinitives after \"taught…to\" match cleanly.\n\nTip: Repeat \"to\" when it keeps each learning outcome equally weighted."
+      ],
+      "highlights": [
+        "and sales increased",
+        "or they submit",
+        "rigorous methods, clear writing, and ethical judgement",
+        "but also market share",
+        "to define objectives, to map stakeholders, and to draft"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.13",
+      "solution_overview": "Correlatives fail when one side is a phrase and the other is a clause, or when one side has \"to\" and the other does not. Balance the two halves before you look at meaning."
+    },
+    {
+      "id": "en-g-13-09",
+      "case_id": "ENG G.13.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The tender requires bidders to demonstrate capacity, to provide references, and financial statements for three years.",
+        "Whether by email, by phone, or in person, clients must receive a reply within one working day.",
+        "The restructuring plan is ambitious, controversial, and it may fail.",
+        "She speaks fluently in English, in German, and Mandarin.",
+        "The software can schedule meetings, share files, and integrate with payroll systems."
+      ],
+      "answer_key": [false, true, false, false, true],
+      "tactical_explanations": [
+        "FALSE — Two infinitives are followed by a noun phrase without \"to provide.\"\n\nTip: Add to provide financial statements, or turn all three into nouns after \"demonstrate.\"",
+        "TRUE — Three prepositional routes stay parallel after \"whether.\"\n\nTip: Keep the same preposition pattern (by… / by… / in…) when listing channels.",
+        "FALSE — Two adjectives are followed by a clause.\n\nTip: Use three adjectives: ambitious, controversial, and risky.",
+        "FALSE — \"In\" appears before the first two languages but not the third.\n\nTip: Repeat in before Mandarin, or drop in before all three.",
+        "TRUE — Three bare infinitives after \"can\" form a matching list.\n\nTip: Shared auxiliaries make parallel verb lists especially clear."
+      ],
+      "highlights": [
+        "and financial statements",
+        "by email, by phone, or in person",
+        "and it may fail",
+        "and Mandarin",
+        "schedule meetings, share files, and integrate"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.13",
+      "solution_overview": "Missing repeated prepositions and trailing clauses after adjective pairs are subtler errors. Read the list aloud; an abrupt change of rhythm usually signals a break in form."
+    },
+    {
+      "id": "en-g-13-10",
+      "case_id": "ENG G.13.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The CFO argued that costs were rising, that margins were shrinking, and cash was scarce.",
+        "He is not only a capable negotiator but also leads the compliance team.",
+        "The checklist covers opening the till, reconciling receipts, and locking the safe.",
+        "Our partners expect transparency, responsiveness, and that we escalate issues promptly.",
+        "To succeed in this market, firms must innovate constantly and listen carefully to customers."
+      ],
+      "answer_key": [false, false, true, false, true],
+      "tactical_explanations": [
+        "FALSE — Two that-clauses are followed by a bare clause without \"that.\"\n\nTip: Repeat that before cash was scarce, or drop that before all three.",
+        "FALSE — \"Not only…but also\" joins a noun phrase to a verb phrase.\n\nTip: Not only a capable negotiator but also the compliance lead — or not only negotiates… but also leads…",
+        "TRUE — Three gerund phrases describe procedures in matching form.\n\nTip: Process lists after \"covers\" work well as -ing forms.",
+        "FALSE — Two nouns are followed by a that-clause.\n\nTip: Use three nouns: transparency, responsiveness, and prompt escalation.",
+        "TRUE — Two bare infinitives after \"must\" stay parallel.\n\nTip: Two-item lists still need matching forms after a shared modal."
+      ],
+      "highlights": [
+        "and cash was scarce",
+        "not only a capable negotiator but also leads",
+        "opening the till, reconciling receipts, and locking",
+        "and that we escalate",
+        "innovate constantly and listen carefully"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.13",
+      "solution_overview": "That-clause series and not only…but also mismatches are classic exam items. Decide whether you are linking nouns or verbs, then refuse any hybrid."
+    },
+    {
+      "id": "en-g-13-11",
+      "case_id": "ENG G.13.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The consultant recommended streamlining processes, automating reports, and that the firm outsource payroll.",
+        "As much by design as by accident, the platform became the industry standard.",
+        "The keynote was informative, entertaining, and left the audience motivated.",
+        "Managers should praise good work publicly and criticise mistakes privately.",
+        "The contract prohibits disclosing trade secrets, soliciting clients, and to hire rival staff."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Two gerunds are followed by a that-clause.\n\nTip: Prefer outsourcing payroll so all three recommendations are gerunds.",
+        "TRUE — \"As much…as\" joins two matching \"by + noun\" phrases.\n\nTip: Correlative comparisons need identical structures after each as.",
+        "FALSE — Two adjectives are followed by a verb phrase.\n\nTip: Use three adjectives: informative, entertaining, and motivating.",
+        "TRUE — Two parallel verb phrases contrast public praise with private criticism.\n\nTip: Matching adverbs (publicly / privately) reinforce the parallel design.",
+        "FALSE — Two gerunds after \"prohibits\" are followed by an infinitive.\n\nTip: Use hiring rival staff to keep the gerund series."
+      ],
+      "highlights": [
+        "and that the firm outsource",
+        "As much by design as by accident",
+        "and left the audience",
+        "praise good work publicly and criticise",
+        "and to hire"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.13",
+      "solution_overview": "Legal and advisory prose often piles gerunds after verbs like recommend or prohibit. One infinitive or that-clause at the end will break an otherwise solid series."
+    },
+    {
+      "id": "en-g-13-12",
+      "case_id": "ENG G.13.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The pilot succeeded because of careful scoping, because of clear ownership, and dedicated testers.",
+        "She neither confirmed the rumour nor denied it outright.",
+        "What the board wants is faster decisions, clearer metrics, and that risks are flagged early.",
+        "The new policy applies to permanent staff, to contractors, and interns.",
+        "Rather than delaying the launch, the team shipped a limited release and gathered feedback."
+      ],
+      "answer_key": [false, true, false, false, true],
+      "tactical_explanations": [
+        "FALSE — Two \"because of + noun\" phrases are followed by a bare noun without \"because of.\"\n\nTip: Repeat because of before dedicated testers, or drop because of before the first two and use a noun list.",
+        "TRUE — \"Neither…nor\" joins two matching past-tense verbs.\n\nTip: Keep the same tense and complement pattern after each half.",
+        "FALSE — Two noun phrases are followed by a that-clause after \"what…is.\"\n\nTip: Use three nouns: faster decisions, clearer metrics, and earlier risk flags.",
+        "FALSE — \"To\" appears before the first two groups but not the third.\n\nTip: Repeat to before interns, or omit to before all three.",
+        "TRUE — \"Rather than + gerund\" is followed by two matching past-tense actions.\n\nTip: The contrast is with delaying; the main clause then keeps shipped and gathered parallel."
+      ],
+      "highlights": [
+        "and dedicated testers",
+        "neither confirmed the rumour nor denied",
+        "and that risks are flagged",
+        "and interns",
+        "Rather than delaying"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.13",
+      "solution_overview": "Repeated prepositions and correlatives like neither…nor reward careful scanning. If a marker appears twice, check whether the third item still carries it."
+    },
+    {
+      "id": "en-g-13-13",
+      "case_id": "ENG G.13.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The memorandum asks readers to note the assumptions, question the projections, and whether the model is stress-tested.",
+        "Both the marketing plan and the sales forecast were updated overnight.",
+        "The internship offers mentoring, networking opportunities, and you will receive a stipend.",
+        "Investors want founders who can raise capital, who can scale operations, and who can retain talent.",
+        "The revision was neither complete nor it was internally consistent."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Two infinitives after \"asks…to\" are followed by a whether-clause.\n\nTip: Use to check whether the model is stress-tested so the third item stays an infinitive.",
+        "TRUE — \"Both…and\" joins two matching noun subjects with a plural verb.\n\nTip: Both X and Y take a plural verb when the subjects are plural in sense.",
+        "FALSE — Two noun objects are followed by an independent clause.\n\nTip: Use three nouns: mentoring, networking opportunities, and a stipend.",
+        "TRUE — Three matching relative clauses begin with \"who can.\"\n\nTip: Repeating who can keeps a long relative series clearly parallel.",
+        "FALSE — \"Neither…nor\" joins an adjective to a full clause.\n\nTip: Neither complete nor internally consistent — two adjectives."
+      ],
+      "highlights": [
+        "and whether the model",
+        "Both the marketing plan and the sales forecast",
+        "and you will receive",
+        "who can raise capital, who can scale",
+        "nor it was"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.13",
+      "solution_overview": "At this level, errors often hide inside long relative or infinitive chains. Isolate the shared frame (asks to… / who can…) and test whether every continuation fits that frame."
+    },
+    {
+      "id": "en-g-13-14",
+      "case_id": "ENG G.13.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The audit found discrepancies in inventory counts, in accounts receivable, and payroll records were incomplete.",
+        "Not only the CFO but also the controllers were briefed before the announcement.",
+        "We measure success by how quickly we resolve tickets, how rarely issues recur, and customer satisfaction scores.",
+        "The brief should explain what changed, why it changed, and how teams should respond.",
+        "She is admired for working efficiently, for communicating clearly, and her integrity."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Two \"in + noun\" phrases are followed by an independent clause.\n\nTip: Keep in payroll records, or rewrite as three noun objects of \"in.\"",
+        "TRUE — \"Not only…but also\" joins two noun subjects; the nearer plural subject takes were.\n\nTip: Agreement follows the nearer noun after not only…but also.",
+        "FALSE — Two \"how\" clauses are followed by a noun phrase.\n\nTip: Add how high customer satisfaction scores remain, or turn all three into nouns.",
+        "TRUE — Three matching wh-clauses answer what, why, and how.\n\nTip: Parallel wh-clauses are a strong pattern for instructional briefs.",
+        "FALSE — Two \"for + gerund\" phrases are followed by a bare noun.\n\nTip: Use for her integrity so every item follows for."
+      ],
+      "highlights": [
+        "and payroll records were incomplete",
+        "Not only the CFO but also the controllers",
+        "and customer satisfaction scores",
+        "what changed, why it changed, and how",
+        "and her integrity"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.13",
+      "solution_overview": "Wh-clause lists and not only…but also with compound subjects reward precise reading. Do not let a correct agreement pattern distract you from a broken list elsewhere in the set."
+    },
+    {
+      "id": "en-g-13-15",
+      "case_id": "ENG G.13.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The firm’s culture rewards people who take initiative, who share credit, and deliver results without drama.",
+        "Either the warranty covers accidental damage or it does not; the brochure cannot claim both.",
+        "Objectives for the quarter are reducing churn, increasing average order value, and to reopen two stores.",
+        "The mediator asked each side to listen carefully, to summarise the other’s position, and then propose a compromise.",
+        "His presentation was organised around three questions: where demand is shifting, which segments are growing, and what pricing can sustain."
+      ],
+      "answer_key": [false, true, false, false, true],
+      "tactical_explanations": [
+        "FALSE — Two \"who\" clauses are followed by a bare verb phrase missing \"who.\"\n\nTip: Write who deliver results without drama to keep the relative pattern.",
+        "TRUE — \"Either…or\" contrasts two matching clauses about coverage.\n\nTip: Full clauses can be parallel when both sides share the same clause shape.",
+        "FALSE — Two gerunds are followed by an infinitive.\n\nTip: Use reopening two stores to finish the gerund list.",
+        "FALSE — Two \"to\" infinitives are followed by a bare infinitive after \"then.\"\n\nTip: Write to propose a compromise, or drop to before all three verbs after asked…to.",
+        "TRUE — Three matching wh-clauses form a parallel agenda.\n\nTip: Parallel questions make a presentation structure easy to follow and grammatically clean."
+      ],
+      "highlights": [
+        "and deliver results",
+        "Either the warranty covers",
+        "and to reopen",
+        "and then propose",
+        "where demand is shifting, which segments"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.13",
+      "solution_overview": "Omitted relative pronouns and dropped infinitive markers are easy to miss in long sentences. Mentally restore the shared word before the last item; if it no longer fits, the sentence is false."
+    },
+    {
+      "id": "en-g-13-16",
+      "case_id": "ENG G.13.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The partnership agreement obliges each party to share data promptly, to notify material breaches, and confidentiality must be maintained.",
+        "She proved herself both in crisis management and when markets were calm.",
+        "The dashboard tracks conversion rates, bounce rates, and how long users stay on the site.",
+        "To attract talent, to retain clients, and to protect the brand remain the stated priorities.",
+        "The lawyer advised against signing the clause, against waiving notice, and against accepting unlimited liability."
+      ],
+      "answer_key": [false, false, false, true, true],
+      "tactical_explanations": [
+        "FALSE — Two infinitives are followed by an independent clause with a new modal.\n\nTip: Use to maintain confidentiality so the obligation stays an infinitive series.",
+        "FALSE — \"Both…and\" joins a prepositional phrase to a when-clause.\n\nTip: Both in crisis management and in calm markets — two prepositional phrases.",
+        "FALSE — Two noun objects are followed by a how-clause.\n\nTip: Use session duration so all three metrics are noun phrases.",
+        "TRUE — Three infinitive phrases function as a parallel compound subject.\n\nTip: Infinitive subjects can be parallel when every infinitive carries the same role.",
+        "TRUE — Three matching \"against + gerund\" phrases follow \"advised.\"\n\nTip: Repeating against before each gerund locks the parallel pattern."
+      ],
+      "highlights": [
+        "and confidentiality must be maintained",
+        "both in crisis management and when",
+        "and how long users stay",
+        "To attract talent, to retain clients, and to protect",
+        "against signing the clause, against waiving"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.13",
+      "solution_overview": "Legal and analytics English mixes nouns, infinitives, and clauses freely in drafts. Your job is to refuse that mixing: pick one frame and hold it through every item."
+    },
+    {
+      "id": "en-g-13-17",
+      "case_id": "ENG G.13.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The turnaround hinged not so much on cutting costs as restoring customer trust through service.",
+        "Executives debated whether to refinance the debt, whether to seek an equity partner, or liquidating non-core assets.",
+        "The new code of conduct forbids accepting gifts, soliciting favours, and using insider information for personal gain.",
+        "Her mandate is as much about rebuilding culture as it is about hitting quarterly targets.",
+        "The motion was neither seconded promptly nor was it discussed on the merits."
+      ],
+      "answer_key": [false, false, true, true, false],
+      "tactical_explanations": [
+        "FALSE — \"Not so much…as\" joins \"on cutting\" to a bare gerund without \"on.\"\n\nTip: Not so much on cutting costs as on restoring trust — repeat on.",
+        "FALSE — Two \"whether to\" infinitives are followed by a gerund.\n\nTip: Or whether to liquidate non-core assets keeps the pattern.",
+        "TRUE — Three gerund phrases after \"forbids\" stay parallel.\n\nTip: Long gerund objects remain correct when every item is -ing + complement.",
+        "TRUE — \"As much…as\" balances two \"about + gerund/noun\" ideas with matching \"it is.\"\n\nTip: Correlative as much…as often needs mirrored about-phrases.",
+        "FALSE — \"Neither…nor\" joins a past participle phrase to an inverted clause.\n\nTip: Neither seconded promptly nor discussed on the merits — two past participles."
+      ],
+      "highlights": [
+        "as restoring customer trust",
+        "or liquidating",
+        "accepting gifts, soliciting favours, and using",
+        "as much about rebuilding culture as it is about",
+        "nor was it discussed"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.13",
+      "solution_overview": "Advanced correlatives (not so much…as, as much…as, whether to…) fail when the second half drops a preposition or switches to a different verb form. Match the scaffolding, not just the topic."
+    },
+    {
+      "id": "en-g-13-18",
+      "case_id": "ENG G.13.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The prospectus promises investors clearer disclosures, tighter governance, and that dividends will resume within two years.",
+        "By training supervisors early, by publishing escalation paths, and by auditing outcomes quarterly, the firm reduced complaints.",
+        "The candidate was praised for how she handled objections, how she framed trade-offs, and her closing summary.",
+        "We will either migrate the legacy system this year or postpone the project until budgets allow.",
+        "The clause requires that vendors deliver on time, that they maintain insurance, and invoices be submitted monthly."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Two noun phrases are followed by a that-clause.\n\nTip: Use resumption of dividends within two years as a third noun phrase.",
+        "TRUE — Three matching \"by + gerund\" phrases form a parallel means list.\n\nTip: Repeating by before each gerund keeps the causal list balanced.",
+        "FALSE — Two \"how\" clauses are followed by a noun phrase.\n\nTip: Add how she delivered her closing summary to keep the how-pattern.",
+        "TRUE — \"Either…or\" joins two matching bare infinitives after \"will.\"\n\nTip: Shared will + either…or needs the same bare verb form on both sides.",
+        "FALSE — Two \"that\" clauses are followed by a bare subjunctive clause missing \"that.\"\n\nTip: Repeat that before invoices be submitted monthly."
+      ],
+      "highlights": [
+        "and that dividends will resume",
+        "By training supervisors early, by publishing",
+        "and her closing summary",
+        "either migrate the legacy system this year or postpone",
+        "and invoices be submitted"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.13",
+      "solution_overview": "Prospectus and contract language often stacks that-clauses. If that appears twice, the third clause almost always needs it too—or all three should be rewritten as nouns."
+    },
+    {
+      "id": "en-g-13-19",
+      "case_id": "ENG G.13.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The strategy rests less on aggressive pricing than expanding the service network.",
+        "Not only did revenue recover in the second half, but operating margins also widened.",
+        "Stakeholders asked for a timeline that is realistic, that is funded, and achievable without overtime.",
+        "The committee prefers meeting in person on Mondays and to convene online on Thursdays.",
+        "A credible plan must specify who owns each workstream, what resources are required, and when progress will be reviewed."
+      ],
+      "answer_key": [false, true, false, false, true],
+      "tactical_explanations": [
+        "FALSE — \"Less…than\" joins \"on + gerund/noun\" to a bare gerund without \"on.\"\n\nTip: Less on aggressive pricing than on expanding the service network.",
+        "TRUE — Inverted \"not only\" is balanced by \"but…also\" with a parallel past-tense verb phrase.\n\nTip: Keep both predicates finite and matching after not only…but also.",
+        "FALSE — Two \"that is\" relatives are followed by an adjective missing \"that is.\"\n\nTip: Write that is achievable without overtime.",
+        "FALSE — A gerund (\"meeting\") is paired with an infinitive (\"to convene\").\n\nTip: Prefer meeting… and convening…, or to meet… and to convene…",
+        "TRUE — Three matching wh-clauses specify ownership, resources, and timing.\n\nTip: Parallel wh-clauses are ideal for plans that must answer who, what, and when."
+      ],
+      "highlights": [
+        "than expanding the service network",
+        "Not only did revenue recover",
+        "and achievable without overtime",
+        "and to convene online",
+        "who owns each workstream, what resources"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.13",
+      "solution_overview": "Comparative frames (less…than) and relative-clause chains demand the same marker on every branch. When in doubt, rewrite the last item so it could replace the first without changing structure."
+    },
+    {
+      "id": "en-g-13-20",
+      "case_id": "ENG G.13.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The board authorised management to pursue a sale, to explore a joint venture, and filing for a dual listing if talks stalled.",
+        "Just as the firm invests in product research, so too does it invest in after-sales support.",
+        "Performance will be judged on whether targets are met, whether risks are logged, and staff development plans exist.",
+        "The brief is neither to defend the status quo nor to dismiss every criticism wholesale.",
+        "She left the firm because of limited promotion prospects, because of a toxic team culture, and her commute had become unmanageable."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Two infinitives after \"authorised…to\" are followed by a gerund.\n\nTip: Use to file for a dual listing to keep the infinitive series.",
+        "TRUE — \"Just as…so too\" balances two matching invest + in + noun patterns with inversion on the second clause.\n\nTip: Correlative just as…so too needs mirrored clause structure.",
+        "FALSE — Two \"whether\" clauses are followed by a bare clause missing \"whether.\"\n\nTip: Repeat whether before staff development plans exist.",
+        "TRUE — \"Neither…nor\" joins two matching infinitives after \"is.\"\n\nTip: Keep to + bare verb on both sides of neither…nor.",
+        "FALSE — Two \"because of + noun\" phrases are followed by an independent clause.\n\nTip: Use because of an unmanageable commute so every reason stays a noun phrase."
+      ],
+      "highlights": [
+        "and filing for a dual listing",
+        "Just as the firm invests",
+        "and staff development plans exist",
+        "neither to defend the status quo nor to dismiss",
+        "and her commute had become"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.13",
+      "solution_overview": "Final-band items combine correlatives, repeated subordinators, and long infinitive chains. Name the opening structure of each sentence, then reject any ending that cannot wear the same grammatical clothes."
+    }
+  ]
+}

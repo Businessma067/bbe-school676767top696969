@@ -1,0 +1,646 @@
+{
+  "id": "g.1",
+  "title": "Tenses & Aspect",
+  "tasks": [
+    {
+      "id": "en-g-1-01",
+      "case_id": "ENG G.1.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The finance committee has submitted the budget proposal last Monday.",
+        "Our compliance officer has worked in the Vienna office since 2018.",
+        "While the auditors were checking the ledgers, the CFO interrupted the meeting.",
+        "She used to working overtime before the firm hired two junior analysts.",
+        "By next June, the board will have approved the merger terms."
+      ],
+      "answer_key": [false, true, true, false, true],
+      "tactical_explanations": [
+        "FALSE — A finished time marker such as \"last Monday\" calls for past simple (\"submitted\"), not present perfect.\n\nTip: Spot calendar anchors (yesterday, last week, in 2019) — they usually kill present perfect.",
+        "TRUE — Present perfect with \"since\" correctly signals a situation that began in the past and continues now.\n\nTip: Pair \"since + starting point\" with present perfect, not past simple.",
+        "TRUE — Past continuous sets the background review; past simple marks the interrupting call.\n\nTip: Longer background → continuous; shorter interrupt → simple past.",
+        "FALSE — Past habit needs \"used to\" + base verb: \"used to work,\" not \"used to working.\"\n\nTip: \"Used to\" + V1 for habits; \"be used to\" + -ing for familiarity.",
+        "TRUE — Future perfect (\"will have approved\") correctly places completion before a future deadline.\n\nTip: \"By + future time\" often flags future perfect."
+      ],
+      "highlights": [
+        "has submitted",
+        "has worked",
+        "were checking",
+        "used to working",
+        "will have approved"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.1",
+      "solution_overview": "Warm up on the classic tense traps: finished time versus \"since,\" background continuous versus a short interrupt, \"used to\" form, and future perfect with \"by.\" Read each verb against its time cue before you tick true or false."
+    },
+    {
+      "id": "en-g-1-02",
+      "case_id": "ENG G.1.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The procurement team already left when the supplier's courier arrived.",
+        "They had already left when the supplier's courier arrived.",
+        "The analyst is knowing every clause in the outsourcing contract.",
+        "I am used to preparing quarterly forecasts under tight deadlines.",
+        "We completed the due-diligence report in March."
+      ],
+      "answer_key": [false, true, false, true, true],
+      "tactical_explanations": [
+        "FALSE — The departure happened first, so past perfect is needed: \"had already left.\"\n\nTip: When two past events stack, mark the earlier one with past perfect.",
+        "TRUE — Past perfect correctly shows that leaving preceded the courier's arrival.\n\nTip: \"Already\" often sits comfortably with past perfect in sequenced past narratives.",
+        "FALSE — Stative \"know\" resists continuous form; use \"knows\" (or \"know\" after a plural subject).\n\nTip: Mental-state verbs (know, believe, own) rarely take -ing in exam English.",
+        "TRUE — \"Be used to\" + gerund correctly means \"accustomed to\" a recurring task.\n\nTip: \"Am/is/are used to + -ing\" ≠ \"used to + V1.\"",
+        "TRUE — Past simple with \"in March\" correctly places a finished action in a closed time frame.\n\nTip: Closed past time → past simple is the safe default."
+      ],
+      "highlights": [
+        "already left",
+        "had already left",
+        "is knowing",
+        "am used to preparing",
+        "completed"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.1",
+      "solution_overview": "This set contrasts past simple with past perfect, tests a stative continuous trap, and separates \"used to\" habit from \"be used to\" familiarity. Match the verb form to the timeline before you decide."
+    },
+    {
+      "id": "en-g-1-03",
+      "case_id": "ENG G.1.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The treasury desk has revised the cash-flow model yesterday evening.",
+        "By the time investors arrive tomorrow, the pitch deck will have been finalised.",
+        "She has been a risk manager here in 2016.",
+        "The trainee is belonging to the graduate programme this year.",
+        "We used to outsource payroll before we built an in-house HR team."
+      ],
+      "answer_key": [false, true, false, false, true],
+      "tactical_explanations": [
+        "FALSE — \"Yesterday evening\" is finished time, so write \"revised,\" not present perfect.\n\nTip: Present perfect hates explicit finished-time adverbs.",
+        "TRUE — Future perfect passive correctly places finalisation before the investors' arrival.\n\nTip: \"By the time + future\" often invites \"will have + past participle.\"",
+        "FALSE — \"In 2016\" closes the period; use past simple: \"was a risk manager here in 2016.\"\n\nTip: \"In + year\" usually blocks present perfect for a finished role.",
+        "FALSE — \"Belong\" is stative; prefer \"belongs,\" not continuous.\n\nTip: Possession and membership verbs stay simple in formal exam prose.",
+        "TRUE — \"Used to outsource\" correctly reports a discontinued past habit.\n\nTip: \"Used to + base verb\" = past habit that no longer holds."
+      ],
+      "highlights": [
+        "has revised",
+        "will have been finalised",
+        "has been",
+        "is belonging",
+        "used to outsource"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.1",
+      "solution_overview": "Only two sentences survive here. Hunt finished-time clashes with present perfect, check future perfect with \"by the time,\" and reject stative continuous plus the wrong \"used to\" companion patterns."
+    },
+    {
+      "id": "en-g-1-04",
+      "case_id": "ENG G.1.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The logistics manager has supervised the warehouse since the expansion.",
+        "While the negotiators were drafting the clause, counsel objected.",
+        "By year-end, the start-up will have raised its Series A round.",
+        "Investors used to prefer longer lock-up periods in this sector.",
+        "The controller is owning several shares in the subsidiary."
+      ],
+      "answer_key": [true, true, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Present perfect + \"since\" correctly links an ongoing role to its start point.\n\nTip: \"Since\" points to a start that still matters now — present perfect territory.",
+        "TRUE — Continuous background plus simple interrupt is the standard past pairing.\n\nTip: Ask which action was \"in progress\" when the other struck.",
+        "TRUE — Future perfect places fundraising completion before year-end.\n\nTip: Corporate deadlines with \"by\" love future perfect.",
+        "TRUE — \"Used to prefer\" correctly describes a past preference that has changed.\n\nTip: Preferences and habits both take \"used to + V1.\"",
+        "FALSE — Stative \"own\" should be \"owns,\" not continuous.\n\nTip: Ownership verbs almost never take continuous in exam English."
+      ],
+      "highlights": [
+        "has supervised",
+        "were drafting",
+        "will have raised",
+        "used to prefer",
+        "is owning"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.1",
+      "solution_overview": "Four sentences are clean; only the stative continuous fails. Confirm \"since,\" background continuous, future perfect with \"by,\" and past habit before you hunt the ownership trap."
+    },
+    {
+      "id": "en-g-1-05",
+      "case_id": "ENG G.1.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The audit partner presented the findings at last week's plenary.",
+        "Staff are used to filing expense claims through the new portal.",
+        "The research unit has published three working papers this semester.",
+        "By Friday noon, legal will have cleared the non-disclosure agreement.",
+        "When the CEO entered, the team had already finished the dry run."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Past simple correctly anchors a finished presentation to \"last week.\"\n\nTip: Explicit past time → past simple is rarely wrong.",
+        "TRUE — \"Are used to filing\" correctly means staff are accustomed to the process.\n\nTip: \"Be used to + -ing\" = familiarity, not past habit.",
+        "TRUE — Present perfect fits an unfinished period (\"this semester\") with present relevance.\n\nTip: \"This week / this year / this semester\" often keep present perfect alive.",
+        "TRUE — Future perfect correctly places clearance before Friday noon.\n\nTip: Clock deadlines with \"by\" are classic future-perfect cues.",
+        "TRUE — Past perfect marks the dry run as earlier than the CEO's entrance.\n\nTip: \"Already\" before a second past event often signals past perfect."
+      ],
+      "highlights": [
+        "presented",
+        "are used to filing",
+        "has published",
+        "will have cleared",
+        "had already finished"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.1",
+      "solution_overview": "All five are grammatical. Use this as a calibration set: past simple with closed time, \"be used to,\" present perfect in an open period, future perfect, and past perfect sequencing."
+    },
+    {
+      "id": "en-g-1-06",
+      "case_id": "ENG G.1.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Marketing has launched the campaign two days ago.",
+        "The intern is understanding the margin model after three tutorials.",
+        "We had finalised the term sheet before the bank called back.",
+        "She is used to commute across town for client visits.",
+        "By Q3, operations will have relocated the call centre."
+      ],
+      "answer_key": [false, false, true, false, true],
+      "tactical_explanations": [
+        "FALSE — \"Two days ago\" demands past simple: \"launched,\" not present perfect.\n\nTip: Any \"ago\" phrase is a finished-time killer for present perfect.",
+        "FALSE — Stative \"understand\" should stay simple: \"understands\" (or \"understand\" after we/they).\n\nTip: Temporary \"I'm beginning to understand\" is rare; exams prefer the simple form.",
+        "TRUE — Past perfect correctly places finalisation before the bank's later call.\n\nTip: \"Before + past event\" often licenses past perfect for the earlier action.",
+        "FALSE — Familiarity needs gerund: \"is used to commuting,\" not \"commute.\"\n\nTip: After \"be used to,\" always expect a noun or -ing form.",
+        "TRUE — Future perfect correctly schedules relocation completion by Q3.\n\nTip: Fiscal quarters with \"by\" are natural future-perfect frames."
+      ],
+      "highlights": [
+        "has launched",
+        "is understanding",
+        "had finalised",
+        "used to commute",
+        "will have relocated"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.1",
+      "solution_overview": "Watch \"ago,\" a stative continuous, and the \"be used to\" + base-verb trap. Only the past-perfect sequence and the future-perfect relocation hold."
+    },
+    {
+      "id": "en-g-1-07",
+      "case_id": "ENG G.1.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The firm has not yet disclosed the restructuring plan.",
+        "While HR was interviewing candidates, the server crashed.",
+        "Investors used to relying on annual reports alone.",
+        "The economist is believing the inflation forecast is too optimistic.",
+        "By the time the bond matures, we will have repaid half the principal."
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "TRUE — Present perfect with \"not yet\" correctly signals a still-open disclosure.\n\nTip: \"Yet / already / just\" often partner with present perfect in exam English.",
+        "TRUE — Continuous interview as background; past simple crash as interrupt.\n\nTip: IT outages mid-process are classic continuous + simple pairs.",
+        "FALSE — Past habit needs base verb: \"used to rely,\" not \"relying.\"\n\nTip: \"Used to + -ing\" is almost always wrong; swap to V1 or switch to \"be used to.\"",
+        "FALSE — Stative \"believe\" stays simple: \"believes.\"\n\nTip: Opinion verbs (believe, agree, prefer) resist continuous form.",
+        "TRUE — Future perfect correctly places repayment before maturity.\n\nTip: Bond and loan timelines with \"by the time\" invite future perfect."
+      ],
+      "highlights": [
+        "has not yet disclosed",
+        "was interviewing",
+        "used to relying",
+        "is believing",
+        "will have repaid"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.1",
+      "solution_overview": "Three correct, two traps: \"used to relying\" and continuous \"believe.\" Keep \"yet,\" background continuous, and future perfect with maturity dates in your checklist."
+    },
+    {
+      "id": "en-g-1-08",
+      "case_id": "ENG G.1.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The board has appointed the new CFO in January.",
+        "She used to being responsible for investor relations in London.",
+        "The consortium is seeming ready to bid on the concession.",
+        "We already signed the heads of terms when counsel raised objections.",
+        "By dawn, the overnight desk will have hedged the currency exposure."
+      ],
+      "answer_key": [false, false, false, false, true],
+      "tactical_explanations": [
+        "FALSE — \"In January\" is closed past time; use \"appointed,\" not present perfect.\n\nTip: Month + year style anchors usually force past simple.",
+        "FALSE — Past state needs \"used to be,\" not \"used to being.\"\n\nTip: After \"used to,\" take a base verb or \"be,\" never an -ing form.",
+        "FALSE — Stative \"seem\" should be \"seems,\" not continuous.\n\nTip: Appearance verbs (seem, appear, look like) stay simple in careful prose.",
+        "FALSE — Signing came first, so write \"had already signed.\"\n\nTip: \"Already\" + two past events → check whether past perfect is missing.",
+        "TRUE — Future perfect correctly places the hedge before dawn.\n\nTip: Overnight trading desks love \"by + time\" + future perfect."
+      ],
+      "highlights": [
+        "has appointed",
+        "used to being",
+        "is seeming",
+        "already signed",
+        "will have hedged"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.1",
+      "solution_overview": "Only one sentence survives. Reject present perfect with \"in January,\" \"used to being,\" stative continuous, and missing past perfect; keep the dawn future perfect."
+    },
+    {
+      "id": "en-g-1-09",
+      "case_id": "ENG G.1.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Revenue has grown steadily for the past five quarters.",
+        "The associate was preparing the slide deck when the client cancelled.",
+        "Junior traders are used to monitoring screens for twelve-hour shifts.",
+        "By the closing bell, the fund will have liquidated its remaining positions.",
+        "Management has announced the spin-off at the 2022 AGM."
+      ],
+      "answer_key": [true, true, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Present perfect continuous-style growth with \"for + duration\" that reaches now is fine in perfect form.\n\nTip: \"For the past X\" usually keeps the window open → present perfect.",
+        "TRUE — Past continuous preparation interrupted by past-simple cancellation.\n\nTip: \"Was/were + -ing when…\" is the textbook interrupt pattern.",
+        "TRUE — \"Are used to monitoring\" correctly expresses workplace familiarity.\n\nTip: Long shifts and routines are natural \"be used to + -ing\" contexts.",
+        "TRUE — Future perfect places liquidation before the closing bell.\n\nTip: Market-session endpoints with \"by\" cue future perfect.",
+        "FALSE — The 2022 AGM is finished time; use \"announced,\" not present perfect.\n\nTip: Named past events (AGM 2022, last summit) block present perfect."
+      ],
+      "highlights": [
+        "has grown",
+        "was preparing",
+        "are used to monitoring",
+        "will have liquidated",
+        "has announced"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.1",
+      "solution_overview": "Four hold; the AGM date breaks present perfect. Confirm open-duration perfect, interrupt continuous, familiarity \"be used to,\" and market future perfect before you fail the dated announcement."
+    },
+    {
+      "id": "en-g-1-10",
+      "case_id": "ENG G.1.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The valuation team finished the model before the roadshow began.",
+        "Counsel had reviewed the indemnity clause before the counterparties signed.",
+        "I used to travel monthly to the Frankfurt subsidiary.",
+        "She is used to negotiating with works councils in Germany.",
+        "By next month's board meeting, IT will have migrated the CRM data."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Two past simples can sequence events when order is clear from \"before.\"\n\nTip: Past perfect is optional when \"before/after\" already orders the timeline.",
+        "TRUE — Past perfect optionally (and correctly) stresses the earlier review.\n\nTip: Past perfect is never wrong when one past action clearly precedes another.",
+        "TRUE — \"Used to travel\" correctly marks a discontinued travel habit.\n\nTip: Frequency adverbs (monthly, often) sit well with \"used to.\"",
+        "TRUE — \"Is used to negotiating\" correctly means she finds works-council talks familiar.\n\nTip: Cross-border labour talks are classic \"be used to + -ing\" exam content.",
+        "TRUE — Future perfect correctly places migration before the next board meeting.\n\nTip: \"By next [meeting/date]\" is a future-perfect magnet."
+      ],
+      "highlights": [
+        "finished",
+        "had reviewed",
+        "used to travel",
+        "is used to negotiating",
+        "will have migrated"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.1",
+      "solution_overview": "All five work. Notice that past simple + \"before\" can stand alone, while past perfect is equally acceptable for clarity — then separate habit \"used to\" from familiarity \"be used to,\" and lock future perfect to the board deadline."
+    },
+    {
+      "id": "en-g-1-11",
+      "case_id": "ENG G.1.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The syndicate desk has priced the bond issue this morning and is still taking orders.",
+        "Stakeholders are wanting a clearer capital-allocation narrative.",
+        "We used to hedge every FX exposure automatically; now we apply selective hedges.",
+        "By the time the regulator publishes its ruling, the bank will have provisioned the fine.",
+        "The trainee has joined the graduate scheme in September 2023."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — \"This morning\" can still be an open period if the trading day continues; present perfect fits ongoing relevance.\n\nTip: Same-day \"this morning\" often allows present perfect when results still matter.",
+        "FALSE — Stative \"want\" should be \"want,\" not continuous, in formal exam style.\n\nTip: Desire verbs (want, need, prefer) stay simple unless a special progressive nuance is intended.",
+        "TRUE — \"Used to hedge\" correctly contrasts a past automatic habit with current practice.\n\nTip: \"Used to…; now…\" is a clean habit-change pattern.",
+        "TRUE — Future perfect correctly places provisioning before the ruling's publication.\n\nTip: Regulatory publication dates with \"by the time\" invite future perfect.",
+        "FALSE — September 2023 is closed; use \"joined,\" not present perfect.\n\nTip: Exact past months with years almost always take past simple."
+      ],
+      "highlights": [
+        "has priced",
+        "are wanting",
+        "used to hedge",
+        "will have provisioned",
+        "has joined"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.1",
+      "solution_overview": "Three pass. Keep open-period perfect and the habit contrast; reject continuous \"want\" and present perfect with a dated September 2023 join."
+    },
+    {
+      "id": "en-g-1-12",
+      "case_id": "ENG G.1.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "While the analyst was updating the DCF, the peer multiples moved sharply.",
+        "The partnership has existed since the 2019 joint venture.",
+        "Executives used to holding weekly stand-ups in the open-plan office.",
+        "I am used to receiving same-day feedback from the partner.",
+        "By December, the plant will have installed the new assembly line."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — Continuous update as background; past-simple market move as the shorter event.\n\nTip: Market moves mid-task are textbook continuous + simple pairs.",
+        "TRUE — Present perfect with \"since\" correctly marks a continuing partnership.\n\nTip: Corporate existence \"since [year]\" is classic present-perfect territory.",
+        "FALSE — Write \"used to hold,\" not \"used to holding,\" for past habit.\n\nTip: If you mean habit, drop the -ing after \"used to.\"",
+        "TRUE — \"Am used to receiving\" correctly expresses familiarity with fast feedback.\n\nTip: \"Be used to + -ing\" answers \"What feels normal to you?\"",
+        "TRUE — Future perfect correctly schedules installation completion by December.\n\nTip: Capex milestones with \"by + month\" cue future perfect."
+      ],
+      "highlights": [
+        "was updating",
+        "has existed",
+        "used to holding",
+        "am used to receiving",
+        "will have installed"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.1",
+      "solution_overview": "Four correct; only \"used to holding\" fails. Separate past-habit form from familiarity \"be used to,\" and keep since-perfect plus future perfect intact."
+    },
+    {
+      "id": "en-g-1-13",
+      "case_id": "ENG G.1.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The rating agency has already downgraded the issuer twice this year.",
+        "When the whistle-blower contacted compliance, the investigation had not yet begun.",
+        "The portfolio manager is liking the defensive tilt of the new mandate.",
+        "We are used to work under Basel reporting calendars.",
+        "By the IPO date, underwriters will have booked the full order book."
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "TRUE — Present perfect with \"already\" and \"this year\" fits an unfinished reporting year.\n\nTip: \"Already + this year\" is a present-perfect sweet spot.",
+        "TRUE — Past perfect correctly places non-start of the probe before the contact.\n\nTip: Negative past perfect (\"had not yet\") is natural for \"earlier than\" claims.",
+        "FALSE — Stative \"like\" should be \"likes,\" not continuous, in exam register.\n\nTip: Preference verbs stay simple unless you stress a temporary change of taste.",
+        "FALSE — Familiarity needs \"are used to working,\" not bare \"work.\"\n\nTip: After \"be used to,\" insert -ing (or a noun), never a bare infinitive.",
+        "TRUE — Future perfect correctly places book-building completion before the IPO.\n\nTip: Capital-markets deadlines with \"by\" almost advertise future perfect."
+      ],
+      "highlights": [
+        "has already downgraded",
+        "had not yet begun",
+        "is liking",
+        "used to work",
+        "will have booked"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.1",
+      "solution_overview": "Harder traps: continuous \"like\" and \"be used to\" + bare verb. Keep open-year perfect, past-perfect sequencing, and IPO future perfect as your anchors."
+    },
+    {
+      "id": "en-g-1-14",
+      "case_id": "ENG G.1.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The subsidiary posted record EBITDA last quarter.",
+        "Researchers have been collecting survey responses for six weeks.",
+        "Sales reps used to cold-call every lead; the CRM now prioritises warm contacts.",
+        "By the time the customs inspection ends, warehouse staff will have restocked the bay.",
+        "The director is having a mansion in the countryside outside Vienna."
+      ],
+      "answer_key": [true, true, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Past simple correctly ties a finished result to \"last quarter.\"\n\nTip: Fiscal periods labelled \"last…\" almost always take past simple.",
+        "TRUE — Present perfect continuous correctly stresses ongoing collection over six weeks.\n\nTip: \"Have been + -ing + for\" highlights duration still in progress.",
+        "TRUE — \"Used to cold-call\" correctly marks a discontinued sales habit.\n\nTip: Process-change stories often contrast \"used to\" with \"now.\"",
+        "TRUE — Future perfect correctly places restocking before inspection end.\n\nTip: Parallel operations with \"by the time\" invite future perfect.",
+        "FALSE — Stative possession needs \"has,\" not \"is having,\" for permanent ownership.\n\nTip: \"Have\" for possession ≠ \"have\" for temporary activities (\"having a meeting\")."
+      ],
+      "highlights": [
+        "posted",
+        "have been collecting",
+        "used to cold-call",
+        "will have restocked",
+        "is having a mansion"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.1",
+      "solution_overview": "Four are solid; only stative \"is having\" for ownership fails. Note the acceptable present perfect continuous for duration and the \"have\" possession trap."
+    },
+    {
+      "id": "en-g-1-15",
+      "case_id": "ENG G.1.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The mediation team has resolved most disputes since the new charter took effect.",
+        "While logistics was rerouting shipments, the port authority imposed a strike notice.",
+        "Associates are used to preparing client memos overnight before hearings.",
+        "By the refinance date, the borrower will have amortised twenty per cent of the loan.",
+        "The CFO used to review every invoice personally before the ERP went live."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Present perfect with \"since\" correctly covers outcomes from charter start until now.\n\nTip: Policy start dates + continuing results → present perfect.",
+        "TRUE — Continuous rerouting as background; past-simple imposition as interrupt.\n\nTip: External notices mid-process fit the interrupt pattern cleanly.",
+        "TRUE — \"Are used to preparing\" correctly signals overnight-work familiarity.\n\nTip: Legal and consulting grind often appears with \"be used to + -ing.\"",
+        "TRUE — Future perfect correctly places amortisation before refinance.\n\nTip: Loan milestones with \"by\" are future-perfect territory.",
+        "TRUE — \"Used to review\" correctly describes a discontinued personal-review habit.\n\nTip: System go-lives often mark the end of a \"used to\" habit."
+      ],
+      "highlights": [
+        "has resolved",
+        "was rerouting",
+        "are used to preparing",
+        "will have amortised",
+        "used to review"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.1",
+      "solution_overview": "All five are grammatical at a higher band: since-perfect, interrupt continuous, familiarity \"be used to,\" refinance future perfect, and a clear past habit. Use it to lock pattern recognition under time pressure."
+    },
+    {
+      "id": "en-g-1-16",
+      "case_id": "ENG G.1.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The exchange has suspended trading in the share yesterday for exactly twelve minutes.",
+        "When the external auditor arrived, management had already circulated the draft findings.",
+        "The committee is consisting of five independent directors and two executives.",
+        "We used to depend entirely on one supplier before dual-sourcing.",
+        "By dusk, the crisis team will have drafted the holding statement for the press."
+      ],
+      "answer_key": [false, true, false, true, true],
+      "tactical_explanations": [
+        "FALSE — \"Yesterday\" is finished time, so write \"suspended,\" not present perfect.\n\nTip: \"Yesterday\" never pairs with present perfect in exam English.",
+        "TRUE — Past perfect correctly places circulation before the auditor's arrival.\n\nTip: Drafts \"already\" in circulation before a visitor → past perfect.",
+        "FALSE — Stative \"consist\" should be \"consists,\" not continuous.\n\nTip: Composition verbs (consist of, contain, include) stay simple.",
+        "TRUE — \"Used to depend\" correctly marks a past single-supplier habit.\n\nTip: Supply-chain diversification stories often hinge on \"used to.\"",
+        "TRUE — Future perfect correctly places the draft before dusk.\n\nTip: Crisis timelines with \"by dusk/dawn\" cue future perfect."
+      ],
+      "highlights": [
+        "has suspended",
+        "had already circulated",
+        "is consisting",
+        "used to depend",
+        "will have drafted"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.1",
+      "solution_overview": "Subtler mix: present perfect clashes with \"yesterday,\" and continuous \"consist\" fails. Keep past-perfect sequencing, past habit, and dusk future perfect."
+    },
+    {
+      "id": "en-g-1-17",
+      "case_id": "ENG G.1.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Ever since the carbon levy rose, exporters have passed more costs to buyers.",
+        "The strategist was weighing a divestiture when the antitrust probe surfaced.",
+        "Partners used to meeting clients exclusively in person before hybrid work.",
+        "I am used to analysing sparse data sets under exam time limits.",
+        "By the time the fiscal year closes, treasury will have rolled every maturing swap."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Ever since\" + present perfect correctly links a past trigger to continuing cost pass-through.\n\nTip: \"Ever since\" almost always wants present perfect in the result clause.",
+        "TRUE — Continuous weighing interrupted by past-simple surfacing of the probe.\n\nTip: Strategy work interrupted by news is a clean continuous + simple pair.",
+        "FALSE — Past habit needs \"used to meet,\" not \"meeting.\"\n\nTip: Hybrid-work contrasts often hide the \"used to + -ing\" trap.",
+        "TRUE — \"Am used to analysing\" correctly expresses familiarity with sparse-data work.\n\nTip: Exam and research routines fit \"be used to + -ing.\"",
+        "TRUE — Future perfect correctly places swap rolls before year close.\n\nTip: Year-end treasury checklists with \"by the time\" invite future perfect."
+      ],
+      "highlights": [
+        "have passed",
+        "was weighing",
+        "used to meeting",
+        "am used to analysing",
+        "will have rolled"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.1",
+      "solution_overview": "Top band: trust \"ever since\" + perfect and interrupt continuous, but catch \"used to meeting.\" Keep familiarity \"be used to\" and year-end future perfect."
+    },
+    {
+      "id": "en-g-1-18",
+      "case_id": "ENG G.1.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The start-up has secured seed funding only after the second pitch last autumn.",
+        "Investors had already written down the stake when the turnaround plan leaked.",
+        "The board is recognising the need for tighter liquidity covenants this quarter.",
+        "She is used to prepare remote due-diligence packs overnight.",
+        "By midnight GMT, the arbitrage bot will have closed every open pair trade."
+      ],
+      "answer_key": [false, true, false, false, true],
+      "tactical_explanations": [
+        "FALSE — \"Only after… last autumn\" closes the timeline; past simple \"secured\" is required.\n\nTip: \"After + finished past event\" usually blocks present perfect.",
+        "TRUE — Past perfect correctly places the write-down before the leak.\n\nTip: Write-downs \"already\" before news breaks → past perfect.",
+        "FALSE — Here \"recognise\" is stative awareness; exam English prefers \"recognises,\" not continuous.\n\nTip: Mental acknowledgement verbs rarely need continuous in formal prose.",
+        "FALSE — Familiarity needs \"is used to preparing,\" not a bare infinitive.\n\nTip: After \"be used to,\" take -ing (or a noun), never V1.",
+        "TRUE — Future perfect correctly places bot closure before midnight GMT.\n\nTip: Time-zone cut-offs with \"by\" are future-perfect cues."
+      ],
+      "highlights": [
+        "has secured",
+        "had already written",
+        "is recognising",
+        "used to prepare",
+        "will have closed"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.1",
+      "solution_overview": "Only two survive. The hardest traps stack finished-time perfect, stative continuous, and \"be used to\" + bare verb — keep past-perfect sequencing and midnight future perfect."
+    },
+    {
+      "id": "en-g-1-19",
+      "case_id": "ENG G.1.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Over the past decade, the university has expanded its executive MBA intake steadily.",
+        "While counsel was redlining the SPA, valuation multiples shifted overnight.",
+        "Deal teams are used to sleeping little during exclusivity periods.",
+        "By the lock-up expiry, early investors will have sold a measured first tranche.",
+        "The economist has predicted a mild recession in her 2019 white paper."
+      ],
+      "answer_key": [true, true, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Present perfect with \"over the past decade\" correctly covers a period reaching now.\n\nTip: \"Over the past…\" almost always licences present perfect.",
+        "TRUE — Continuous redlining as background; past-simple overnight shift as the shorter change.\n\nTip: Overnight market moves during drafting fit continuous + simple.",
+        "TRUE — \"Are used to sleeping\" correctly (if bluntly) marks familiarity with deal intensity.\n\nTip: \"Be used to + -ing\" can take colloquial verbs in business narratives.",
+        "TRUE — Future perfect correctly places the measured sale before lock-up expiry.\n\nTip: Lock-up and vesting dates with \"by\" cue future perfect.",
+        "FALSE — A 2019 white paper is finished time; use \"predicted,\" not present perfect.\n\nTip: Publication years force past simple for the act of predicting."
+      ],
+      "highlights": [
+        "has expanded",
+        "was redlining",
+        "are used to sleeping",
+        "will have sold",
+        "has predicted"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.1",
+      "solution_overview": "Four pass; the 2019 white-paper prediction fails present perfect. Lock \"over the past,\" interrupt continuous, deal-team \"be used to,\" and lock-up future perfect."
+    },
+    {
+      "id": "en-g-1-20",
+      "case_id": "ENG G.1.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Since the Basel reforms, banks have held thicker capital buffers against credit risk.",
+        "The restructuring adviser had outlined three options before the creditors voted.",
+        "Procurement used to sole-source critical components from a single Asian plant.",
+        "Graduates are used to presenting case solutions under strict time pressure.",
+        "By the time the fiscal watchdog reports, the ministry will have published revised deficit figures."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Present perfect with \"since\" correctly links reform start to continuing buffer policy.\n\nTip: Regulatory \"since\" markers almost demand present perfect in the result.",
+        "TRUE — Past perfect correctly places the outline before the creditors' vote.\n\nTip: Pre-vote briefings are natural past-perfect territory.",
+        "TRUE — \"Used to sole-source\" correctly reports a discontinued sourcing habit.\n\nTip: Supply-risk stories often contrast \"used to\" with today's diversification.",
+        "TRUE — \"Are used to presenting\" correctly expresses exam-style familiarity.\n\nTip: BBE case drills are textbook \"be used to + -ing\" contexts.",
+        "TRUE — Future perfect correctly places publication before the watchdog report.\n\nTip: Parallel institutional deadlines with \"by the time\" invite future perfect."
+      ],
+      "highlights": [
+        "have held",
+        "had outlined",
+        "used to sole-source",
+        "are used to presenting",
+        "will have published"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.1",
+      "solution_overview": "A clean top-band set: since-perfect policy continuity, past-perfect pre-vote briefing, past sourcing habit, graduate familiarity with presenting, and ministry future perfect ahead of the watchdog. All five stand."
+    }
+  ]
+}

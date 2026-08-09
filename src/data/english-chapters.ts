@@ -21,6 +21,8 @@ export type EnglishTask = {
   difficulty_level: string;
   sort_order: number;
   subsection: string;
+  /** Shared coaching overview shown with all statement explanations (Math-style). */
+  solution_overview?: string;
   /** Reading passage for Texts chapter tasks (copied from subsection). */
   passage?: string;
   exam_title?: string;
@@ -79,7 +81,9 @@ const grammar = loadBank(grammarBank as BankFile);
 const vocabulary = loadBank(vocabularyBank as BankFile);
 
 /**
- * Lite: difficulties 1–3 → sort_order ≤ 18 for every chapter.
+ * Lite: difficulties 1–3.
+ * With 20 tasks/subtopic: sort_order ≤ 12.
+ * With 30 tasks/subtopic: sort_order ≤ 18.
  */
 export function filterEnglishTasksForTier(
   tasks: EnglishTask[],
@@ -87,7 +91,8 @@ export function filterEnglishTasksForTier(
   _chapterKey?: EnglishChapter["key"],
 ): EnglishTask[] {
   if (tier !== "lite") return tasks;
-  return tasks.filter((t) => t.sort_order <= 18);
+  const maxSort = tasks.some((t) => t.sort_order > 20) ? 18 : 12;
+  return tasks.filter((t) => t.sort_order <= maxSort);
 }
 
 export const ENGLISH_CHAPTERS: EnglishChapter[] = [

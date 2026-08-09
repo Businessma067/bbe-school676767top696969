@@ -1,0 +1,646 @@
+{
+  "id": "g.19",
+  "title": "Indirect Questions & Word Order",
+  "tasks": [
+    {
+      "id": "en-g-19-01",
+      "case_id": "ENG G.19.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "I wonder where he is.",
+        "I wonder where is he.",
+        "Could you tell me what time the meeting starts?",
+        "Could you tell me what time does the meeting start?",
+        "She asked whether the figures were final."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — After wonder, the clause keeps statement order: where + subject + verb (where he is), not question inversion.\n\nTip: Embedded wh-clauses look like statements, not questions.",
+        "FALSE — where is he inverts auxiliary and subject, which belongs in a direct question, not after I wonder.\n\nTip: Drop the inversion: where he is.",
+        "TRUE — Polite frame Could you tell me… embeds what time the meeting starts with subject before the verb.\n\nTip: No does inside the embedded clause.",
+        "FALSE — does the meeting start is direct-question word order jammed into an indirect question.\n\nTip: Use what time the meeting starts.",
+        "TRUE — whether correctly introduces a yes/no embedded clause with statement order (the figures were).\n\nTip: whether/if + subject + verb — never invert."
+      ],
+      "highlights": [
+        "where he is",
+        "where is he",
+        "what time the meeting starts",
+        "does the meeting start",
+        "whether the figures were"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.19",
+      "solution_overview": "Indirect questions keep statement word order after the question word or whether/if. Scan for stray do/does/did or swapped auxiliary–subject pairs — those belong only in direct questions."
+    },
+    {
+      "id": "en-g-19-02",
+      "case_id": "ENG G.19.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Do you know if the report has been filed?",
+        "Do you know if has the report been filed?",
+        "Please explain why costs rose.",
+        "Please explain why did costs rise.",
+        "They could not decide which option was safer."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — if embeds a yes/no clause with normal order: the report has been filed.\n\nTip: After if/whether, never move has/is/will before the subject.",
+        "FALSE — if has the report… wrongly inverts the auxiliary into the embedded clause.\n\nTip: Keep if the report has…",
+        "TRUE — why costs rose is statement order after explain; no auxiliary is needed.\n\nTip: Embedded why-clauses do not take did unless the original had do-support for another reason.",
+        "FALSE — why did costs rise mirrors a direct question; the embedding verb already carries the interrogative force.\n\nTip: why + subject + past: why costs rose.",
+        "TRUE — which option was safer keeps subject–verb order inside the embedded choice question.\n\nTip: which + noun + verb — no extra it."
+      ],
+      "highlights": [
+        "if the report has",
+        "if has the report",
+        "why costs rose",
+        "why did costs rise",
+        "which option was safer"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.19",
+      "solution_overview": "Focus on if/whether and wh-clauses after know, explain, and decide. Correct items keep subject before the finite verb; wrong ones smuggle direct-question inversion (has…?, did…?) into the subordinate clause."
+    },
+    {
+      "id": "en-g-19-03",
+      "case_id": "ENG G.19.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The question is how the firm will respond.",
+        "The question is how will the firm respond?",
+        "I am not sure what caused the outage.",
+        "I am not sure what did cause the outage.",
+        "She asked whether were the figures final."
+      ],
+      "answer_key": [true, false, true, false, false],
+      "tactical_explanations": [
+        "TRUE — After The question is, how the firm will respond uses statement order (subject firm before will).\n\nTip: Noun-phrase frames still take embedded statement order.",
+        "FALSE — how will the firm respond? is a direct question glued onto The question is.\n\nTip: how + subject + modal: how the firm will respond.",
+        "TRUE — what is the subject of caused, so no do-support is required or allowed.\n\nTip: Subject wh-clauses never need did.",
+        "FALSE — what did cause forces unnecessary do-support into an embedded subject question.\n\nTip: what caused, not what did cause.",
+        "FALSE — whether were the figures… inverts were and the subject after whether.\n\nTip: whether the figures were…"
+      ],
+      "highlights": [
+        "how the firm will respond",
+        "how will the firm respond",
+        "what caused",
+        "what did cause",
+        "whether were the figures"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.19",
+      "solution_overview": "Watch two classic traps: modal inversion after how (will the firm…) and fake did in subject questions (what did cause…). Correct embedded clauses read like calm statements inside a larger sentence."
+    },
+    {
+      "id": "en-g-19-04",
+      "case_id": "ENG G.19.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "They could not decide which option was it safer.",
+        "I'd like to know when the auditors arrive.",
+        "I'd like to know when do the auditors arrive.",
+        "Can you remind me where the spare keys are kept?",
+        "Can you remind me where are the spare keys kept?"
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Extra pronoun it after was breaks the clause; which option was safer is already complete.\n\nTip: Never add a dummy it after the verb in an embedded which-clause.",
+        "TRUE — when the auditors arrive keeps subject–verb order after I'd like to know.\n\nTip: Softeners like I'd like to know still take statement order.",
+        "FALSE — when do the auditors arrive inserts do-support as if the clause were a direct question.\n\nTip: Delete do: when the auditors arrive.",
+        "TRUE — where the spare keys are kept is passive statement order inside a polite question.\n\nTip: are stays after the subject keys.",
+        "FALSE — where are the spare keys… flips are before the subject inside the embedded clause.\n\nTip: where + subject + are/is…"
+      ],
+      "highlights": [
+        "was it safer",
+        "when the auditors arrive",
+        "when do the auditors",
+        "where the spare keys are kept",
+        "where are the spare keys"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.19",
+      "solution_overview": "Polite frames (I'd like to know, Can you remind me) do not license inversion inside the embedded clause. Also reject dummy it after which… was — the option is already the subject."
+    },
+    {
+      "id": "en-g-19-05",
+      "case_id": "ENG G.19.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Nobody could say who had authorised the transfer.",
+        "Nobody could say who had the transfer been authorised by.",
+        "We need to establish whether the supplier can meet the deadline.",
+        "We need to establish whether can the supplier meet the deadline.",
+        "Tell me how much the upgrade will cost."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — who is subject of had authorised; statement order is natural and correct.\n\nTip: Subject who/what never invert with the verb.",
+        "FALSE — who had the transfer been… forces awkward inversion and a stranded by that belongs in a rewritten object question.\n\nTip: Prefer who had authorised… or by whom the transfer had been authorised.",
+        "TRUE — whether the supplier can meet… keeps modal can after the subject.\n\nTip: whether + subject + modal + verb.",
+        "FALSE — whether can the supplier… is direct yes/no inversion after whether.\n\nTip: Never put the modal before the subject in an embedded clause.",
+        "TRUE — how much the upgrade will cost is statement order after Tell me.\n\nTip: how much/how many + noun phrase + verb — no will-fronting."
+      ],
+      "highlights": [
+        "who had authorised",
+        "who had the transfer been",
+        "whether the supplier can",
+        "whether can the supplier",
+        "how much the upgrade will cost"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.19",
+      "solution_overview": "Subject wh-words (who authorised…) stay simple; modal yes/no embeds keep can/will after the subject. Reject any whether can… or how much will… fronting inside the subordinate clause."
+    },
+    {
+      "id": "en-g-19-06",
+      "case_id": "ENG G.19.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Tell me how much will the upgrade cost.",
+        "The memo does not say how long the outage lasted.",
+        "The memo does not say how long did the outage last.",
+        "Investors asked what the board intended to do next.",
+        "Investors asked what did the board intend to do next."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — how much will the upgrade cost inverts will and the subject after Tell me.\n\nTip: how much the upgrade will cost.",
+        "TRUE — how long the outage lasted is a clean embedded duration clause.\n\nTip: how long + subject + past verb.",
+        "FALSE — how long did the outage last imports direct-question did.\n\nTip: Drop did and keep past simple: lasted.",
+        "TRUE — what the board intended… places the subject board before the verb.\n\nTip: Object what still uses statement order: what + subject + verb.",
+        "FALSE — what did the board intend… is a direct object question pattern inside reported asking.\n\nTip: what the board intended / what the board intends."
+      ],
+      "highlights": [
+        "how much will the upgrade",
+        "how long the outage lasted",
+        "how long did the outage",
+        "what the board intended",
+        "what did the board intend"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.19",
+      "solution_overview": "how much, how long, and object what all take statement order once embedded. Any will/did sitting before the subject is a leftover from a direct question — delete the fronted auxiliary."
+    },
+    {
+      "id": "en-g-19-07",
+      "case_id": "ENG G.19.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Have you checked whether the invoices match the purchase orders?",
+        "Have you checked whether do the invoices match the purchase orders?",
+        "I'm curious who she nominated for the panel.",
+        "I'm curious who did she nominate for the panel.",
+        "The brief should clarify which metrics matter most."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — whether the invoices match… is statement order under a yes/no main question.\n\nTip: The outer Have you…? does not license inversion inside whether…",
+        "FALSE — whether do the invoices… adds illegal do-support after whether.\n\nTip: whether + subject + verb.",
+        "TRUE — who is the object of nominated; she stays before the verb in embedded order.\n\nTip: Object who: who + subject + verb.",
+        "FALSE — who did she nominate is direct-question order after I'm curious.\n\nTip: who she nominated.",
+        "TRUE — which metrics matter most needs no auxiliary; metrics is the subject.\n\nTip: Subject which-phrases never take do."
+      ],
+      "highlights": [
+        "whether the invoices match",
+        "whether do the invoices",
+        "who she nominated",
+        "who did she nominate",
+        "which metrics matter"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.19",
+      "solution_overview": "Separate subject who/which (no do) from object who (who + subject + verb). Outer question marks on Have you…? never justify do or inversion after whether or who inside the embed."
+    },
+    {
+      "id": "en-g-19-08",
+      "case_id": "ENG G.19.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The brief should clarify which metrics do matter most.",
+        "Staff were unsure where to send the revised draft.",
+        "Staff were unsure where should they send the revised draft.",
+        "Could you confirm if payroll has processed the bonus?",
+        "Could you confirm if has payroll processed the bonus?"
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — which metrics do matter adds emphatic do that is unnecessary and exam-wrong in a neutral embed.\n\nTip: which metrics matter — no do.",
+        "TRUE — where to send… is a correct infinitive indirect question (no subject inversion possible).\n\nTip: wh- + to-infinitive is a standard compact embed.",
+        "FALSE — where should they send… inverts modal and subject as in a direct question.\n\nTip: where they should send… or where to send…",
+        "TRUE — if payroll has processed… keeps perfect have after the subject.\n\nTip: if/whether + subject + has/have…",
+        "FALSE — if has payroll… front-loads has before the subject.\n\nTip: Move has after payroll."
+      ],
+      "highlights": [
+        "which metrics do matter",
+        "where to send",
+        "where should they send",
+        "if payroll has processed",
+        "if has payroll"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.19",
+      "solution_overview": "Infinitive embeds (where to send) are a safe alternative to full clauses. When you use a full clause, keep modals and have/has after the subject — never before."
+    },
+    {
+      "id": "en-g-19-09",
+      "case_id": "ENG G.19.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "We still do not know whose proposal the committee selected.",
+        "We still do not know whose proposal did the committee select.",
+        "It remains unclear how the breach was discovered.",
+        "It remains unclear how was the breach discovered.",
+        "Ask her whether she can join the noon call."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — whose proposal the committee selected keeps the subject committee before selected.\n\nTip: whose + noun + subject + verb.",
+        "FALSE — whose proposal did the committee select is direct-question do-support.\n\nTip: Drop did: whose proposal the committee selected.",
+        "TRUE — how the breach was discovered is passive statement order under It remains unclear.\n\nTip: Passive embeds still put was after the subject.",
+        "FALSE — how was the breach discovered inverts was into question position.\n\nTip: how the breach was discovered.",
+        "TRUE — whether she can join… is a clean yes/no embed after Ask.\n\nTip: Ask + whether/if + statement order."
+      ],
+      "highlights": [
+        "whose proposal the committee selected",
+        "whose proposal did the committee",
+        "how the breach was discovered",
+        "how was the breach discovered",
+        "whether she can join"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.19",
+      "solution_overview": "whose and passive how-clauses follow the same rule as simpler embeds: subject before the finite verb. Frames like It remains unclear or Ask her do not change that order."
+    },
+    {
+      "id": "en-g-19-10",
+      "case_id": "ENG G.19.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Ask her whether can she join the noon call.",
+        "The clients want to know what we are offering this quarter.",
+        "The clients want to know what are we offering this quarter.",
+        "No one has confirmed who will chair the session.",
+        "No one has confirmed who will the session be chaired by."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — whether can she… inverts can and she after whether.\n\nTip: whether she can…",
+        "TRUE — what we are offering keeps progressive are after the subject we.\n\nTip: Continuous embeds: what + subject + are/is + -ing.",
+        "FALSE — what are we offering is direct continuous-question order.\n\nTip: what we are offering.",
+        "TRUE — who will chair… treats who as subject; will stays after who.\n\nTip: Subject who + modal + verb is already statement-shaped.",
+        "FALSE — who will the session be chaired by awkwardly inverts and strands by; prefer who will chair… or by whom the session will be chaired.\n\nTip: Avoid forcing object-passive word order when a subject who is available."
+      ],
+      "highlights": [
+        "whether can she",
+        "what we are offering",
+        "what are we offering",
+        "who will chair",
+        "who will the session be"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.19",
+      "solution_overview": "Progressive and modal embeds fail the same way: are/will jumps before the subject. Prefer a subject who-clause (who will chair…) over a clunky inverted passive with stranded by."
+    },
+    {
+      "id": "en-g-19-11",
+      "case_id": "ENG G.19.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Please let us know if you require further documentation.",
+        "Please let us know if do you require further documentation.",
+        "I cannot recall why the previous vendor was dropped.",
+        "I cannot recall why was the previous vendor dropped.",
+        "They debated whether to accept the counter-offer."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — if you require… is standard polite statement order after let us know.\n\nTip: Business closers still embed, not invert.",
+        "FALSE — if do you require… mixes a direct question into the embed.\n\nTip: Delete do you → if you require.",
+        "TRUE — why the previous vendor was dropped keeps passive was after the subject.\n\nTip: why + subject + was/were + PP.",
+        "FALSE — why was the previous vendor dropped is direct-question inversion.\n\nTip: why the previous vendor was dropped.",
+        "TRUE — whether to accept… is a correct infinitive yes/no embed (no subject to invert).\n\nTip: whether to + verb is standard for undecided choices."
+      ],
+      "highlights": [
+        "if you require",
+        "if do you require",
+        "why the previous vendor was dropped",
+        "why was the previous vendor",
+        "whether to accept"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.19",
+      "solution_overview": "Email-style if-clauses and why-passives must stay uninverted. whether to + infinitive is a third lawful shape — compact and free of subject–auxiliary swapping."
+    },
+    {
+      "id": "en-g-19-12",
+      "case_id": "ENG G.19.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "They debated whether should they accept the counter-offer.",
+        "She wondered how many seats were still available.",
+        "She wondered how many seats were there still available.",
+        "Do you remember what the password hint was?",
+        "Do you remember what was the password hint?"
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — whether should they… inverts the modal; use whether they should… or whether to accept…\n\nTip: Full clause: whether + subject + modal.",
+        "TRUE — how many seats were still available places were after seats.\n\nTip: how many + noun + verb.",
+        "FALSE — were there is an existential inversion pattern that does not belong after wondered how many seats…\n\nTip: Avoid there-inversion inside how many embeds.",
+        "TRUE — what the password hint was puts was at the end in statement order (subject hint before was).\n\nTip: Embedded what… was keeps be last.",
+        "FALSE — what was the password hint? is direct-question be-fronting after remember.\n\nTip: what the password hint was."
+      ],
+      "highlights": [
+        "whether should they",
+        "how many seats were still",
+        "were there still",
+        "what the password hint was",
+        "what was the password hint"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.19",
+      "solution_overview": "Be-fronting (what was…?) and there-inversion (were there…?) are direct-question habits. Inside embeds, leave was/were after the real subject, and keep whether + subject + modal."
+    },
+    {
+      "id": "en-g-19-13",
+      "case_id": "ENG G.19.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The analyst could not determine from which sources the rumour originated.",
+        "The analyst could not determine from which sources did the rumour originate.",
+        "We are assessing what impact the delay may have on delivery.",
+        "We are assessing what impact may the delay have on delivery.",
+        "Kindly advise when the signed copies will be returned."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Formal pied-piping from which sources the rumour originated keeps statement order after the prepositional wh-phrase.\n\nTip: Preposition + which + subject + verb is fine in formal embeds.",
+        "FALSE — …sources did the rumour originate adds do-support as in a direct question.\n\nTip: originated without did.",
+        "TRUE — what impact the delay may have keeps may after the subject delay.\n\nTip: what + noun + subject + modal + verb.",
+        "FALSE — what impact may the delay have front-loads may before the subject.\n\nTip: the delay may have, not may the delay have.",
+        "TRUE — when the signed copies will be returned is passive statement order after Kindly advise.\n\nTip: will stays after the subject copies."
+      ],
+      "highlights": [
+        "from which sources the rumour originated",
+        "did the rumour originate",
+        "what impact the delay may have",
+        "may the delay have",
+        "when the signed copies will be returned"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.19",
+      "solution_overview": "Formal prepositional wh-phrases and what + noun objects still forbid do-support and modal fronting. Read the embedded string aloud: if it sounds like a stand-alone question, the word order is probably wrong."
+    },
+    {
+      "id": "en-g-19-14",
+      "case_id": "ENG G.19.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Kindly advise when will the signed copies be returned.",
+        "It is unclear to whom the confidential annex was circulated.",
+        "It is unclear to whom was the confidential annex circulated.",
+        "Management queried how often the backups are tested.",
+        "Management queried how often are the backups tested."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — when will the signed copies… inverts will after Kindly advise.\n\nTip: when the signed copies will…",
+        "TRUE — Formal to whom the confidential annex was circulated keeps was after the subject.\n\nTip: to whom + subject + verb (formal object question).",
+        "FALSE — to whom was the confidential annex… inverts was into question position.\n\nTip: Keep was after annex.",
+        "TRUE — how often the backups are tested is statement order for frequency embeds.\n\nTip: how often + subject + verb.",
+        "FALSE — how often are the backups tested is direct-question inversion.\n\nTip: how often the backups are tested."
+      ],
+      "highlights": [
+        "when will the signed copies",
+        "to whom the confidential annex was",
+        "to whom was the confidential",
+        "how often the backups are tested",
+        "how often are the backups"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.19",
+      "solution_overview": "Formal whom-phrases and how often-clauses still use statement order. Inversion after to whom or how often is a direct-question reflex — wrong once the clause is embedded."
+    },
+    {
+      "id": "en-g-19-15",
+      "case_id": "ENG G.19.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The auditor asked under what conditions the discount would apply.",
+        "The auditor asked under what conditions would the discount apply.",
+        "Nobody knows which of the two bids the panel prefers.",
+        "Nobody knows which of the two bids does the panel prefer.",
+        "Please specify where the temporary files should be stored."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — under what conditions the discount would apply keeps would after the subject.\n\nTip: Long wh-phrases still take subject + modal order.",
+        "FALSE — under what conditions would the discount apply is direct modal inversion.\n\nTip: …conditions the discount would apply.",
+        "TRUE — which of the two bids the panel prefers places prefers after panel.\n\nTip: which of… + subject + verb.",
+        "FALSE — which… does the panel prefer inserts do-support.\n\nTip: Drop does: the panel prefers.",
+        "TRUE — where the temporary files should be stored keeps should after the subject.\n\nTip: where + subject + modal + be + PP."
+      ],
+      "highlights": [
+        "under what conditions the discount would",
+        "would the discount apply",
+        "which of the two bids the panel prefers",
+        "does the panel prefer",
+        "where the temporary files should be stored"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.19",
+      "solution_overview": "Longer wh-openers (under what conditions, which of the two bids) tempt writers to invert as if starting a new question mid-sentence. Resist: finish with subject + verb, not would/does + subject."
+    },
+    {
+      "id": "en-g-19-16",
+      "case_id": "ENG G.19.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Please specify where should the temporary files be stored.",
+        "Researchers examined whether or not the sample was representative.",
+        "Researchers examined whether or not was the sample representative.",
+        "I need to find out who the message was intended for.",
+        "I need to find out who was the message intended for."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — where should the temporary files… inverts should after specify.\n\nTip: where the temporary files should…",
+        "TRUE — whether or not the sample was representative is a standard yes/no embed with or not.\n\nTip: whether or not + subject + verb.",
+        "FALSE — whether or not was the sample… wrongly inverts was.\n\nTip: Keep was after sample.",
+        "TRUE — Informal stranded for is acceptable: who the message was intended for with statement order.\n\nTip: who + subject + was + PP + preposition.",
+        "FALSE — who was the message intended for? is direct-question be-fronting.\n\nTip: who the message was intended for."
+      ],
+      "highlights": [
+        "where should the temporary files",
+        "whether or not the sample was",
+        "whether or not was the sample",
+        "who the message was intended for",
+        "who was the message intended for"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.19",
+      "solution_overview": "whether or not does not unlock inversion. Stranded-preposition object questions (who… for) still keep was after the subject — only the outer sentence may look interrogative."
+    },
+    {
+      "id": "en-g-19-17",
+      "case_id": "ENG G.19.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The board inquired how soon a revised forecast could be produced.",
+        "The board inquired how soon could a revised forecast be produced.",
+        "It is debatable whether such a clause should even be included.",
+        "It is debatable whether should such a clause even be included.",
+        "Few partners recalled what assumptions underpinned the valuation model."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — how soon a revised forecast could be produced keeps could after the subject.\n\nTip: how soon/how quickly + subject + modal…",
+        "FALSE — how soon could a revised forecast… is direct modal inversion.\n\nTip: …forecast could be produced.",
+        "TRUE — whether such a clause should even be included is statement order with focusing even.\n\nTip: Adverbs like even stay inside; they do not trigger inversion.",
+        "FALSE — whether should such a clause… front-loads should before the subject.\n\nTip: whether such a clause should…",
+        "TRUE — what assumptions underpinned… treats what assumptions as subject — no do needed.\n\nTip: Subject what + noun takes the verb directly."
+      ],
+      "highlights": [
+        "how soon a revised forecast could",
+        "how soon could a revised",
+        "whether such a clause should",
+        "whether should such a clause",
+        "what assumptions underpinned"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.19",
+      "solution_overview": "Advanced how soon and whether… should embeds fail only when the modal jumps left of the subject. Subject what-noun phrases (what assumptions underpinned…) remain do-free."
+    },
+    {
+      "id": "en-g-19-18",
+      "case_id": "ENG G.19.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Few partners recalled what assumptions did underpin the valuation model.",
+        "Counsel sought clarification as to why the indemnity had been narrowed.",
+        "Counsel sought clarification as to why had the indemnity been narrowed.",
+        "The survey asked respondents how satisfied they were with remote support.",
+        "The survey asked respondents how satisfied were they with remote support."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — what assumptions did underpin… inserts unnecessary did into a subject clause.\n\nTip: what assumptions underpinned…",
+        "TRUE — as to why the indemnity had been narrowed is a formal embed with past perfect passive statement order.\n\nTip: as to why + subject + had been + PP.",
+        "FALSE — as to why had the indemnity… inverts had before the subject.\n\nTip: why the indemnity had been…",
+        "TRUE — how satisfied they were… is the standard adjectival how-clause order.\n\nTip: how + adjective + subject + be.",
+        "FALSE — how satisfied were they… is direct-question be-inversion.\n\nTip: how satisfied they were…"
+      ],
+      "highlights": [
+        "what assumptions did underpin",
+        "why the indemnity had been narrowed",
+        "why had the indemnity",
+        "how satisfied they were",
+        "how satisfied were they"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.19",
+      "solution_overview": "Formal as to why and survey how + adjective patterns still ban auxiliary fronting. Fake did in subject what-clauses is another advanced trap — delete it."
+    },
+    {
+      "id": "en-g-19-19",
+      "case_id": "ENG G.19.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Regulators questioned on what basis the exemption had been granted.",
+        "Regulators questioned on what basis had the exemption been granted.",
+        "We must decide which vendor we should engage first.",
+        "We must decide which vendor should we engage first.",
+        "The minutes do not record who seconded the motion."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — on what basis the exemption had been granted keeps had after the subject.\n\nTip: on what basis/grounds + subject + verb.",
+        "FALSE — on what basis had the exemption… is direct perfect inversion.\n\nTip: …basis the exemption had been granted.",
+        "TRUE — which vendor we should engage first keeps should after we.\n\nTip: which + noun + subject + modal + verb.",
+        "FALSE — which vendor should we engage is direct-question order after decide.\n\nTip: which vendor we should engage.",
+        "TRUE — who seconded the motion is a subject clause with no inversion and no do.\n\nTip: Subject who + past verb."
+      ],
+      "highlights": [
+        "on what basis the exemption had",
+        "on what basis had the exemption",
+        "which vendor we should engage",
+        "which vendor should we engage",
+        "who seconded the motion"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.19",
+      "solution_overview": "Prepositional wh-openers (on what basis) and object which-clauses (which vendor we should…) both fail when the auxiliary precedes the subject. Subject who remains the simplest correct pattern."
+    },
+    {
+      "id": "en-g-19-20",
+      "case_id": "ENG G.19.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The minutes do not record who did second the motion.",
+        "Partners remain divided over whether the spin-off itself makes strategic sense.",
+        "Partners remain divided over whether does the spin-off itself make strategic sense.",
+        "I wonder where the CFO is during the blackout window.",
+        "I wonder where is the CFO during the blackout window."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — who did second… adds emphatic/wrong do to a subject question.\n\nTip: who seconded — never who did second in this embed.",
+        "TRUE — whether the spin-off itself makes… keeps makes after the subject; itself is just a focusing pronoun.\n\nTip: Extra focus words do not change embedded order.",
+        "FALSE — whether does the spin-off… invents do-support after whether.\n\nTip: whether the spin-off makes…",
+        "TRUE — where the CFO is… is the classic wonder pattern with statement order.\n\nTip: I wonder where + subject + is.",
+        "FALSE — where is the CFO… reverts to direct-question inversion after wonder.\n\nTip: where the CFO is — the core contrast of this topic."
+      ],
+      "highlights": [
+        "who did second",
+        "whether the spin-off itself makes",
+        "whether does the spin-off",
+        "where the CFO is",
+        "where is the CFO"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.19",
+      "solution_overview": "Close on the signature contrast: wonder where the CFO is (statement order) versus where is the CFO (direct inversion). Along the way, reject fake do after who or whether — embeds do not need it."
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "id": "g.15",
+  "title": "Negative Inversion",
+  "tasks": [
+    {
+      "id": "en-g-15-01",
+      "case_id": "ENG G.15.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Not only she arrived late, but she also forgot the briefing pack.",
+        "Seldom the board approves a bid without a second valuation.",
+        "Never the firm had faced such regulatory scrutiny.",
+        "No sooner had the auction opened than bids flooded in.",
+        "Under no circumstances the clerk will release the client files."
+      ],
+      "answer_key": [false, false, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Fronted \"not only\" needs inversion: \"Not only did she arrive late…\".\n\nTip: If \"not only\" sits at the start, treat it like a question for the auxiliary: did/does/had + subject.",
+        "FALSE — Needs \"Seldom does the board approve…\".\n\nTip: Negative frequency words (seldom, rarely, never) at the start almost always trigger inversion.",
+        "FALSE — Fronted \"never\" needs \"Never had the firm faced…\", not subject–verb order.\n\nTip: With past perfect after \"never\", move \"had\" before the subject.",
+        "TRUE — \"No sooner…than\" with past perfect inversion is the classic pattern here.\n\nTip: Pair \"no sooner\" with \"than\" (not \"when\") and invert: \"had + subject\".",
+        "FALSE — Needs \"Under no circumstances will the clerk release…\".\n\nTip: Modal + subject swaps after a negative prepositional phrase at the front."
+      ],
+      "highlights": [
+        "Not only she",
+        "Seldom the board",
+        "Never the firm",
+        "No sooner had",
+        "the clerk will"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.15",
+      "solution_overview": "These openers look formal, but the test is mechanical: a negative or restrictive phrase at the front usually forces auxiliary–subject order. Scan each line for that swap first, then check the correlative word (than/when) if \"no sooner\" or \"hardly\" appears."
+    },
+    {
+      "id": "en-g-15-02",
+      "case_id": "ENG G.15.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Hardly had the announcement been made when questions began.",
+        "Rarely we see such a sharp move in the overnight rate.",
+        "Little did the committee realise how contested the vote would be.",
+        "Not only did the report flag the risks, but it also proposed fixes.",
+        "Seldom the audit committee meets without a full pack."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — \"Hardly had…when…\" is the standard inverted past-perfect pattern.\n\nTip: After hardly/scarcely/barely, prefer \"when\" (or \"before\"), not \"than\".",
+        "FALSE — Needs \"Rarely do we see…\".\n\nTip: No auxiliary visible? Add do/does/did and place it before the subject.",
+        "TRUE — \"Little did…\" correctly inverts after a restrictive opener.\n\nTip: \"Little\" meaning \"not at all\" behaves like a negative fronting word.",
+        "TRUE — Fronted \"not only\" takes inversion, and \"but also\" keeps the second clause parallel.\n\nTip: Check both halves: inversion after \"not only\", then a matching \"but also\" clause.",
+        "FALSE — Requires \"Seldom does the audit committee meet…\".\n\nTip: \"Seldom\" + present simple → does/do before the subject."
+      ],
+      "highlights": [
+        "Hardly had",
+        "Rarely we",
+        "Little did",
+        "Not only did",
+        "Seldom the audit"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.15",
+      "solution_overview": "Task 2 drills the core set: hardly, rarely, little, not only, seldom. Correct lines already invert; wrong ones leave ordinary subject–verb order after a fronted negative. Fix those by inserting or moving the auxiliary."
+    },
+    {
+      "id": "en-g-15-03",
+      "case_id": "ENG G.15.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Under no circumstances should this forecast be leaked before the call.",
+        "No sooner the CFO sat down than the analysts started questioning.",
+        "Never has the bank issued a profit warning mid-quarter like this.",
+        "Scarcely the project had begun before funding was frozen.",
+        "At no time the directors authorised an off-book transfer."
+      ],
+      "answer_key": [true, false, true, false, false],
+      "tactical_explanations": [
+        "TRUE — Negative adverbial + modal inversion is clean: \"should this forecast be leaked\".\n\nTip: After \"under no circumstances\", expect will/should/can before the subject.",
+        "FALSE — Needs \"No sooner had the CFO sat down than…\".\n\nTip: \"No sooner\" almost always pairs with past perfect and inversion of \"had\".",
+        "TRUE — \"Never has the bank issued…\" correctly inverts present perfect.\n\nTip: Keep the participle after the subject: Never + has/have + subject + past participle.",
+        "FALSE — Needs \"Scarcely had the project begun…\".\n\nTip: Scarcely/hardly/barely fronting → had + subject + past participle.",
+        "FALSE — Needs \"At no time did the directors authorise…\".\n\nTip: \"At no time\" is a full negative fronting phrase; invert like a question."
+      ],
+      "highlights": [
+        "should this",
+        "No sooner the CFO",
+        "Never has",
+        "Scarcely the project",
+        "At no time the directors"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.15",
+      "solution_overview": "Focus on stock fronting phrases: under no circumstances, no sooner, never, scarcely, at no time. If the phrase is negative and sits first, the next word should be an auxiliary, not the subject."
+    },
+    {
+      "id": "en-g-15-04",
+      "case_id": "ENG G.15.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Only after the audit closed did the errors become obvious.",
+        "Not until the contract was signed did negotiations end.",
+        "Hardly the traders had logged on when the system crashed.",
+        "On no account may staff discuss the merger outside the room.",
+        "Nowhere in the prospectus does it mention contingent liabilities."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Only after…\" inverts the main clause: \"did the errors become\".\n\nTip: With only + time clause, leave the time clause alone and invert the main clause.",
+        "TRUE — \"Not until…\" likewise inverts only the main clause.\n\nTip: Do not invert inside the \"not until\" clause itself.",
+        "FALSE — Needs \"Hardly had the traders logged on when…\".\n\nTip: Hardly + past perfect: had before the subject.",
+        "TRUE — \"On no account may staff…\" is a correct formal prohibition with inversion.\n\nTip: \"On no account\" and \"under no circumstances\" behave the same way.",
+        "TRUE — \"Nowhere…does it mention…\" correctly inverts after a negative place adverbial.\n\nTip: Nowhere/no place at the front → does/do/did + subject."
+      ],
+      "highlights": [
+        "did the errors",
+        "did negotiations",
+        "Hardly the traders",
+        "On no account may",
+        "Nowhere in the prospectus does"
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.15",
+      "solution_overview": "Four of these already invert correctly after only after, not until, on no account, and nowhere. The odd one out is \"hardly\" without \"had\" before the subject—fix that pattern and the rest fall into place."
+    },
+    {
+      "id": "en-g-15-05",
+      "case_id": "ENG G.15.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "No longer does the supplier dominate the regional market.",
+        "Barely had the webcast started when the feed cut out.",
+        "In no way can the warranty cover wilful misuse of the kit.",
+        "Not only was the tender late, but it also lacked the bond.",
+        "Seldom have we seen spreads tighten this fast after a hike."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"No longer\" at the front takes \"does the supplier dominate\".\n\nTip: No longer + present simple → do/does before the subject.",
+        "TRUE — \"Barely had…when…\" mirrors the hardly pattern.\n\nTip: Barely/hardly/scarcely share the same inversion + \"when\" template.",
+        "TRUE — \"In no way can the warranty…\" correctly inverts the modal.\n\nTip: In no way / under no circumstances / on no account all pull the modal forward.",
+        "TRUE — Fronted \"not only\" with \"was\" before the subject is right, and \"but also\" completes it.\n\nTip: With be-verbs, invert be itself: Not only was the tender…",
+        "TRUE — \"Seldom have we seen…\" is clean present-perfect inversion.\n\nTip: Frequency negative + have/has + subject + past participle."
+      ],
+      "highlights": [
+        "No longer does",
+        "Barely had",
+        "In no way can",
+        "Not only was",
+        "Seldom have"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.15",
+      "solution_overview": "Every sentence here is already inverted. Use them as models: spot the fronted negative, confirm the auxiliary sits next, then note the correlative (when/but also) where relevant."
+    },
+    {
+      "id": "en-g-15-06",
+      "case_id": "ENG G.15.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "No sooner had liquidity dried up than spreads blew out.",
+        "Rarely does a mid-cap issue price without a roadshow.",
+        "Not only the CFO objected, but the counsel also raised red flags.",
+        "Under no circumstances will payroll data leave the secure vault.",
+        "Never the syndicate had allocated such a large greenshoe."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "TRUE — Past-perfect inversion after \"no sooner\" plus \"than\" is exact.\n\nTip: Memorise the trio: no sooner + had + subject + than.",
+        "TRUE — \"Rarely does…\" correctly adds do-support for present simple.\n\nTip: If there is no auxiliary, invent do/does/did for the inversion.",
+        "FALSE — Needs \"Not only did the CFO object, but…\".\n\nTip: Fronted not only without an auxiliary still needs did/does/do.",
+        "TRUE — Modal inversion after \"under no circumstances\" is correct.\n\nTip: will/must/should jumps before the subject after this phrase.",
+        "FALSE — Needs \"Never had the syndicate allocated…\".\n\nTip: Never + past perfect → Never had + subject + past participle."
+      ],
+      "highlights": [
+        "No sooner had",
+        "Rarely does",
+        "Not only the CFO",
+        "will payroll",
+        "Never the syndicate"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.15",
+      "solution_overview": "Three lines already invert; two leave the subject right after not only / never. Mentally flip those into question order and you will see the repair immediately."
+    },
+    {
+      "id": "en-g-15-07",
+      "case_id": "ENG G.15.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Hardly had the embargo lifted when rival bids appeared.",
+        "Little the investors understood about the clawback clause.",
+        "Only when the covenant was breached did lenders intervene.",
+        "Scarcely had the ink dried on the term sheet when terms shifted.",
+        "Seldom the risk desk updates its stress scenarios mid-week."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Hardly + had + subject + when is textbook.\n\nTip: Keep \"when\" (not \"than\") after hardly/scarcely/barely.",
+        "FALSE — Needs \"Little did the investors understand…\".\n\nTip: Little as a fronting restrictor needs did/does/do + subject.",
+        "TRUE — Only when + clause, then invert the main clause.\n\nTip: Invert after the time clause ends, not inside it.",
+        "TRUE — Scarcely had…when… matches the hard/barely family.\n\nTip: Same skeleton for scarcely, hardly, and barely.",
+        "FALSE — Needs \"Seldom does the risk desk update…\".\n\nTip: Present-simple after seldom → does/do before the subject."
+      ],
+      "highlights": [
+        "Hardly had",
+        "Little the investors",
+        "did lenders",
+        "Scarcely had",
+        "Seldom the risk"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.15",
+      "solution_overview": "Hardly, scarcely, and only when are shown correctly; little and seldom are missing their auxiliaries. Add did/does and the pattern locks in."
+    },
+    {
+      "id": "en-g-15-08",
+      "case_id": "ENG G.15.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Not until the regulator cleared the filing the bank announced the deal.",
+        "Under no circumstances are visitors allowed in the dealing room.",
+        "No sooner had the bond priced than secondary trading surged.",
+        "At no point did management concede that guidance was wrong.",
+        "Rarely a distressed name recovers without a full restructuring."
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — Needs \"…did the bank announce the deal\" after the not-until clause.\n\nTip: Not until + time clause → invert the main clause with did/does/do or an auxiliary.",
+        "TRUE — Be-verb inversion after \"under no circumstances\" is fine: \"are visitors allowed\".\n\nTip: With be, invert be itself; no extra do-support.",
+        "TRUE — No sooner + had + than is correct again.\n\nTip: Watch the correlative: than after no sooner.",
+        "TRUE — \"At no point did management concede…\" is solid inversion.\n\nTip: At no point / at no time are interchangeable triggers.",
+        "FALSE — Needs \"Rarely does a distressed name recover…\".\n\nTip: Rarely + present simple → does/do + subject + base verb."
+      ],
+      "highlights": [
+        "the bank announced",
+        "are visitors",
+        "No sooner had",
+        "At no point did",
+        "Rarely a distressed"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.15",
+      "solution_overview": "Most lines invert cleanly. The traps are \"not until\" without main-clause inversion and \"rarely\" without do-support—both classic exam misses."
+    },
+    {
+      "id": "en-g-15-09",
+      "case_id": "ENG G.15.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Only by cutting costs can the division stay solvent this year.",
+        "No sooner had the rates decision landed when futures reversed.",
+        "Not only did volumes spike, but spreads also compressed.",
+        "Under no circumstances should client passwords be reused.",
+        "Never before has the exchange halted trading for so long."
+      ],
+      "answer_key": [true, false, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Only by…\" inverts the main clause: \"can the division stay\".\n\nTip: Only + prepositional phrase at the front still forces inversion.",
+        "FALSE — \"No sooner\" takes \"than\", not \"when\": \"…landed than futures reversed\".\n\nTip: Correlative pairs: no sooner→than; hardly/scarcely→when.",
+        "TRUE — Not only + did + but also is correctly inverted and balanced.\n\nTip: Keep both verbs parallel after not only / but also.",
+        "TRUE — Modal inversion after under no circumstances is right.\n\nTip: should/must/will before the subject after this opener.",
+        "TRUE — \"Never before has…\" correctly inverts present perfect.\n\nTip: Never before / never again behave like never for inversion."
+      ],
+      "highlights": [
+        "can the division",
+        "landed when",
+        "Not only did",
+        "should client",
+        "Never before has"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.15",
+      "solution_overview": "Inversion is mostly done right; the subtle miss is the correlative after \"no sooner\". Word order can look perfect and still fail if than/when is swapped."
+    },
+    {
+      "id": "en-g-15-10",
+      "case_id": "ENG G.15.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Hardly had the CFO finished speaking than the share price jumped.",
+        "Not until funding was secured did construction resume.",
+        "Seldom do private placements clear without intensive marketing.",
+        "On no account the intern may access production systems alone.",
+        "Little did the buy-side know a rival bid was already circulating."
+      ],
+      "answer_key": [false, true, true, false, true],
+      "tactical_explanations": [
+        "FALSE — Hardly pairs with \"when\", not \"than\": \"…speaking when the share price jumped\".\n\nTip: Swap than→when after hardly/scarcely/barely even if inversion looks fine.",
+        "TRUE — Not until + clause, then \"did construction resume\".\n\nTip: Main-clause inversion only; leave the time clause in normal order.",
+        "TRUE — Seldom + do-support is correct.\n\nTip: Frequency negatives need do/does/did when no other auxiliary exists.",
+        "FALSE — Needs \"On no account may the intern access…\".\n\nTip: Move the modal before the subject after on no account.",
+        "TRUE — Little did… is a stock restrictive inversion.\n\nTip: Little + did + subject + base verb is the usual template."
+      ],
+      "highlights": [
+        "speaking than",
+        "did construction",
+        "Seldom do",
+        "the intern may",
+        "Little did"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.15",
+      "solution_overview": "Two errors here mix correlative choice (hardly…than) with missing modal inversion (on no account). Check both word order and the linking word after the fronted phrase."
+    },
+    {
+      "id": "en-g-15-11",
+      "case_id": "ENG G.15.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Only after collateral was posted the loan facility became available.",
+        "Nowhere else will you find comparable covenants in this sector.",
+        "Scarcely had settlement completed when a dispute was filed.",
+        "Not only did the bank raise capital, it also cut its dividend.",
+        "Under no circumstances the auditors will sign without testing."
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — Needs \"…did the loan facility become available\".\n\nTip: Only after + time clause → invert the main clause with did + subject.",
+        "TRUE — Nowhere else + will + subject is correct.\n\nTip: Nowhere / nowhere else at the front always invert.",
+        "TRUE — Scarcely had…when… is the right pair.\n\nTip: Keep when after scarcely; keep had before the subject.",
+        "TRUE — Not only…but also (here \"it also\") with inversion is acceptable formal style.\n\nTip: \"But also\" can appear as \"it also\" if the second clause still matches.",
+        "FALSE — Needs \"Under no circumstances will the auditors sign…\".\n\nTip: will must precede the subject after this fronting phrase."
+      ],
+      "highlights": [
+        "the loan facility became",
+        "Nowhere else will",
+        "Scarcely had",
+        "Not only did",
+        "the auditors will"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.15",
+      "solution_overview": "Only after and under no circumstances still trap people who invert late or not at all. The other three already show the target shapes—use them as anchors."
+    },
+    {
+      "id": "en-g-15-12",
+      "case_id": "ENG G.15.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "No sooner had the embargo expired than rival filings landed.",
+        "Rarely have margins recovered so quickly after a write-down.",
+        "Not only was pricing aggressive, but documentation was incomplete.",
+        "At no time were minority shareholders consulted on the spin-off.",
+        "Barely had the market opened when the halt was triggered."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — No sooner + had + than is perfect.\n\nTip: Drill the correlative than until it is automatic.",
+        "TRUE — Rarely + present perfect inversion is correct.\n\nTip: Rarely have/has + subject + past participle.",
+        "TRUE — Not only was…but… keeps be inverted and the contrast clear.\n\nTip: With was/were, invert be; no do-support needed.",
+        "TRUE — At no time + were + subject is correct be-inversion.\n\nTip: Passive or be-main verbs invert be itself.",
+        "TRUE — Barely had…when… matches the hard/scarcely family.\n\nTip: Barely = hardly for inversion purposes."
+      ],
+      "highlights": [
+        "No sooner had",
+        "Rarely have",
+        "Not only was",
+        "At no time were",
+        "Barely had"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.15",
+      "solution_overview": "A clean model set: no sooner, rarely, not only, at no time, barely. If your own answers miss any of these shapes, rewrite the wrong ones to match these templates."
+    },
+    {
+      "id": "en-g-15-13",
+      "case_id": "ENG G.15.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Only if the guarantor signs will the facility become effective.",
+        "The report not only highlights risks but also proposes remedies.",
+        "No sooner had trading resumed than another circuit breaker hit.",
+        "Hardly the ink had dried on the SPA when a walk-away notice arrived.",
+        "Under no circumstances are personal devices permitted on the floor."
+      ],
+      "answer_key": [true, true, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Only if + clause, then invert the main clause: \"will the facility become\".\n\nTip: Conditional \"only if\" at the front still triggers main-clause inversion.",
+        "TRUE — Mid-sentence \"not only…but also\" needs no inversion.\n\nTip: Invert only when \"not only\" is fronted; otherwise keep normal order.",
+        "TRUE — No sooner…than with past perfect inversion is correct.\n\nTip: Confirm than after no sooner every time.",
+        "FALSE — Needs \"Hardly had the ink dried…when…\".\n\nTip: had must sit before the subject after hardly.",
+        "TRUE — Under no circumstances + are + subject is correct.\n\nTip: Be-inversion after this phrase is standard in policies."
+      ],
+      "highlights": [
+        "will the facility",
+        "not only highlights",
+        "No sooner had",
+        "Hardly the ink",
+        "are personal"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.15",
+      "solution_overview": "The key sophistication here is knowing when not to invert: mid-clause \"not only…but also\" is fine. The only hard fail is hardly without had-before-subject."
+    },
+    {
+      "id": "en-g-15-14",
+      "case_id": "ENG G.15.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Not until did the board approve the write-off the accounts were final.",
+        "In no circumstances should draft minutes circulate outside the committee.",
+        "Seldom has a listing attracted so many cornerstone investors.",
+        "No longer the franchise depends on a single regional distributor.",
+        "Only after did the due diligence close were funds released."
+      ],
+      "answer_key": [false, true, true, false, false],
+      "tactical_explanations": [
+        "FALSE — Do not invert inside the not-until clause; say \"Not until the board approved the write-off were the accounts final\" (or \"…did the accounts become final\").\n\nTip: Invert the main clause only—never invert the not-until/time clause itself.",
+        "TRUE — \"In no circumstances should…\" is the same family as under no circumstances.\n\nTip: In/under no circumstances both pull the modal forward.",
+        "TRUE — Seldom + present perfect inversion is correct.\n\nTip: Seldom has/have + subject + past participle.",
+        "FALSE — Needs \"No longer does the franchise depend…\".\n\nTip: No longer + present simple → does/do before the subject.",
+        "FALSE — Wrong placement of did; use \"Only after the due diligence closed were funds released\".\n\nTip: Keep the only-after clause normal; invert the main clause alone."
+      ],
+      "highlights": [
+        "Not until did",
+        "In no circumstances should",
+        "Seldom has",
+        "No longer the franchise",
+        "Only after did"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.15",
+      "solution_overview": "Advanced traps put the auxiliary in the wrong clause (not until / only after). Remember: time/condition clause stays normal; the following main clause inverts."
+    },
+    {
+      "id": "en-g-15-15",
+      "case_id": "ENG G.15.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Not only did costs overrun, but timelines slipped as well.",
+        "Scarcely had the roadshow ended than subscriptions were scaled back.",
+        "Never again will the firm underwrite without independent counsel.",
+        "Little does the market appreciate how thin the order book is.",
+        "Under no circumstances the escrow agent may release funds early."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Fronted not only + did, completed by but…as well, is acceptable.\n\nTip: \"But also / but…as well\" both work if the first half inverts.",
+        "FALSE — Scarcely takes \"when\", not \"than\".\n\nTip: Correlative check: scarcely/hardly/barely → when; no sooner → than.",
+        "TRUE — Never again + will + subject is correct.\n\nTip: Never again / never before behave like never.",
+        "TRUE — Little does… correctly inverts present simple with do-support.\n\nTip: Little + does/do + subject + base verb.",
+        "FALSE — Needs \"Under no circumstances may the escrow agent release…\".\n\nTip: Modal before subject after under no circumstances."
+      ],
+      "highlights": [
+        "Not only did",
+        "ended than",
+        "Never again will",
+        "Little does",
+        "the escrow agent may"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.15",
+      "solution_overview": "Inversion looks right on the scarcely line, but the correlative is wrong. Pair that check with the modal-order miss on under no circumstances."
+    },
+    {
+      "id": "en-g-15-16",
+      "case_id": "ENG G.15.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Only when the ratings agencies upgraded did spreads normalise.",
+        "No sooner the prospectus was filed than the roadshow began.",
+        "At no stage were investors told about the contingent earn-out.",
+        "Rarely do we publish earnings without a simultaneous webcast.",
+        "Not only the pricing disappointed; the allocation disappointed too."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — Only when + clause, then \"did spreads normalise\".\n\nTip: Invert after the when-clause finishes.",
+        "FALSE — Needs \"No sooner was the prospectus filed than…\" or \"No sooner had the prospectus been filed than…\".\n\nTip: No sooner requires inversion of be/had immediately after it.",
+        "TRUE — At no stage + were + subject is correct be-inversion.\n\nTip: At no stage / at no point / at no time are equivalent triggers.",
+        "TRUE — Rarely + do-support is correct.\n\nTip: Rarely do/does + subject + base verb.",
+        "FALSE — Fronted not only needs inversion: \"Not only did the pricing disappoint…\".\n\nTip: If not only leads the sentence, insert did/does/do before the subject."
+      ],
+      "highlights": [
+        "did spreads",
+        "No sooner the prospectus",
+        "At no stage were",
+        "Rarely do",
+        "Not only the pricing"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.15",
+      "solution_overview": "Two failures omit inversion after no sooner and not only. The survivors show only when, at no stage, and rarely done properly—mirror those."
+    },
+    {
+      "id": "en-g-15-17",
+      "case_id": "ENG G.15.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Not until the swap was unwound the hedge accounting treatment changed.",
+        "Under no circumstances may margin calls be ignored overnight.",
+        "Seldom has a distressed exchange offer cleared on the first attempt.",
+        "Only by restructuring the notes can default be avoided this quarter.",
+        "Hardly had liquidity returned than another redemption wave began."
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — Needs \"…did the hedge accounting treatment change\" (or \"…was the treatment changed\").\n\nTip: Not until → invert the main clause; do not leave subject–verb order there.",
+        "TRUE — Under no circumstances + may + subject is correct modal inversion.\n\nTip: After this phrase, expect may/will/should before the subject.",
+        "TRUE — Seldom + present perfect inversion is correct.\n\nTip: Seldom has/have + subject + past participle.",
+        "TRUE — Only by + -ing, then modal inversion in the main clause.\n\nTip: Only by / only with / only through all invert the following clause.",
+        "FALSE — Hardly takes \"when\", not \"than\".\n\nTip: Even with perfect inversion, wrong correlative still fails the item."
+      ],
+      "highlights": [
+        "treatment changed",
+        "may margin",
+        "Seldom has",
+        "can default",
+        "returned than"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.15",
+      "solution_overview": "Top-band items stay inside negative/restrictive inversion: not until, under no circumstances, seldom, only by, hardly. Judge each line by whether the auxiliary moved—and whether than/when is the right partner."
+    },
+    {
+      "id": "en-g-15-18",
+      "case_id": "ENG G.15.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Under no circumstances is front-running of client orders tolerated.",
+        "No sooner had the block crossed than the tape lit up.",
+        "Not only were fees waived, but research access was expanded.",
+        "Seldom does a secondary offering clear without price tension.",
+        "Little did counterparties expect the variation margin call overnight."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Under no circumstances + is + subject is correct.\n\nTip: Be-main verbs invert be after this phrase.",
+        "TRUE — No sooner…than with past perfect is exact.\n\nTip: had + subject + than remains the gold standard.",
+        "TRUE — Not only were…but… correctly inverts were.\n\nTip: Plural subject → were before it after not only.",
+        "TRUE — Seldom does… is clean do-support inversion.\n\nTip: Frequency negative + does/do + subject + base verb.",
+        "TRUE — Little did… is the classic restrictive inversion.\n\nTip: Little + did + subject + base verb."
+      ],
+      "highlights": [
+        "is front-running",
+        "No sooner had",
+        "Not only were",
+        "Seldom does",
+        "Little did"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.15",
+      "solution_overview": "All five are model answers across the core triggers. Treat this task as a checklist of shapes you should be able to produce under exam pressure."
+    },
+    {
+      "id": "en-g-15-19",
+      "case_id": "ENG G.15.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Only after the lock-up expired investors were free to sell.",
+        "Not until management restated earnings did the sell-side upgrade.",
+        "Barely had the facility been drawn when utilisation hit the cap.",
+        "On no account should draft valuations leave the data room.",
+        "Never the compliance team had cleared a structure this aggressive."
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — Needs \"…were investors free to sell\" or \"…did investors become free to sell\".\n\nTip: Only after + clause → invert the main clause.",
+        "TRUE — Not until…did… is correctly inverted in the main clause.\n\nTip: Keep the not-until clause in normal order.",
+        "TRUE — Barely had…when… is right.\n\nTip: Passive past perfect still inverts had: Barely had the facility been drawn…",
+        "TRUE — On no account should… is correct modal inversion.\n\nTip: should/must/may before the subject after on no account.",
+        "FALSE — Needs \"Never had the compliance team cleared…\".\n\nTip: Never + past perfect → Never had + subject + past participle."
+      ],
+      "highlights": [
+        "investors were",
+        "did the sell-side",
+        "Barely had",
+        "On no account should",
+        "Never the compliance"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.15",
+      "solution_overview": "Two lines forget to invert after only after and never. The others show not until, barely, and on no account in full working order—match those repairs to the same templates."
+    },
+    {
+      "id": "en-g-15-20",
+      "case_id": "ENG G.15.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Nowhere in the offering circular does it disclose related-party debt.",
+        "Not only did the issuer refinance, but it also extended the tenor.",
+        "Hardly had the blackout ended when marketing calls resumed.",
+        "Under no circumstances the trustee will waive a payment default.",
+        "No sooner had allocations been finalised than complaints arrived."
+      ],
+      "answer_key": [true, true, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Nowhere…does it disclose… correctly inverts after a negative place adverbial.\n\nTip: Nowhere / no place at the front → does/do/did + subject.",
+        "TRUE — Not only did…but also… is fully inverted and parallel.\n\nTip: Match verb forms across both halves after not only / but also.",
+        "TRUE — Hardly had…when… is the standard pattern.\n\nTip: when after hardly; had before the subject.",
+        "FALSE — Needs \"Under no circumstances will the trustee waive…\".\n\nTip: Final check on every under-no-circumstances item: modal before subject.",
+        "TRUE — No sooner had…than… closes the set correctly.\n\nTip: than after no sooner; had before the subject."
+      ],
+      "highlights": [
+        "Nowhere in the offering circular does",
+        "Not only did",
+        "Hardly had",
+        "the trustee will",
+        "No sooner had"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.15",
+      "solution_overview": "Four model inversions and one classic miss: under no circumstances without modal–subject swap. If you catch that last pattern every time, this topic is exam-ready."
+    }
+  ]
+}

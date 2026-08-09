@@ -1,0 +1,526 @@
+{
+  "id": "g.10",
+  "title": "Countable / Uncountable & Quantifiers",
+  "tasks": [
+    {
+      "id": "en-g-10-01",
+      "case_id": "ENG G.10.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Many applicants submitted their forms before the deadline.",
+        "There is much interest in the new graduate programme.",
+        "Much candidates failed the first screening round.",
+        "Few of the invoices were paid on time.",
+        "We received little feedback after the pilot launch."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Many\" correctly quantifies the plural countable noun \"applicants\".\n\nTip: many + countable plural (applicants, invoices, meetings).",
+        "TRUE — \"Much\" correctly quantifies the uncountable noun \"interest\".\n\nTip: much + uncountable (interest, feedback, progress).",
+        "FALSE — \"Candidates\" is countable plural, so \"much\" is wrong; use \"many candidates\".\n\nTip: never pair much with a bare plural countable.",
+        "TRUE — \"Few of\" + plural countable is grammatical (here: few of the invoices).\n\nTip: few/a few work with countables; little/a little with uncountables.",
+        "TRUE — \"Little\" correctly quantifies uncountable \"feedback\".\n\nTip: little = not much (uncountable); few = not many (countable)."
+      ],
+      "highlights": ["Many applicants", "much interest", "Much candidates", "Few of the invoices", "little feedback"],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.10",
+      "solution_overview": "This opener drills the core split: many/few with countables, much/little with uncountables. Scan each noun first—if it can take -s as a plural, avoid much and little."
+    },
+    {
+      "id": "en-g-10-02",
+      "case_id": "ENG G.10.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The amount of waste has decreased since last quarter.",
+        "The number of complaints has risen sharply.",
+        "The amount of complaints has decreased this month.",
+        "A large number of investors attended the briefing.",
+        "There was a large amount of traffic on the motorway."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Amount of\" pairs correctly with uncountable \"waste\".\n\nTip: amount of + uncountable mass nouns.",
+        "TRUE — \"Number of\" pairs correctly with countable \"complaints\" and takes singular \"has\".\n\nTip: the number of + plural noun → singular verb.",
+        "FALSE — \"Complaints\" is countable; prefer \"the number of complaints,\" not \"amount of\".\n\nTip: amount → uncountable; number → countable.",
+        "TRUE — \"A large number of\" correctly introduces plural countable \"investors\".\n\nTip: a number of + plural usually takes a plural verb.",
+        "TRUE — \"Amount of\" correctly quantifies uncountable \"traffic\".\n\nTip: traffic, advice, information, and news are typically uncountable."
+      ],
+      "highlights": ["amount of waste", "number of complaints", "amount of complaints", "number of investors", "amount of traffic"],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.10",
+      "solution_overview": "Focus on amount versus number. If you can count the units (complaints, investors), use number; if you measure a mass (waste, traffic), use amount."
+    },
+    {
+      "id": "en-g-10-03",
+      "case_id": "ENG G.10.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "All of the equipment is new.",
+        "The equipments in the lab need updating.",
+        "We bought three new pieces of equipment.",
+        "There are many evidences against the claim.",
+        "The evidence supports the auditor's conclusion."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Uncountable \"equipment\" takes a singular verb (\"is\").\n\nTip: equipment never takes a plural -s in standard English.",
+        "FALSE — \"Equipment\" is uncountable; do not write \"equipments\".\n\nTip: use \"pieces of equipment\" when you need a count.",
+        "TRUE — \"Pieces of equipment\" is the correct count expression.\n\nTip: piece/item of + uncountable lets you count units.",
+        "FALSE — \"Evidence\" is uncountable; avoid \"evidences\" and \"many evidences\".\n\nTip: say \"much evidence\" or \"several pieces of evidence\".",
+        "TRUE — Uncountable \"evidence\" correctly takes a singular verb.\n\nTip: evidence, information, and research behave as singular masses."
+      ],
+      "highlights": ["equipment is", "equipments", "pieces of equipment", "many evidences", "evidence supports"],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.10",
+      "solution_overview": "Classic exam traps: equipment and evidence are uncountable. Count them only with piece/item of, and keep the verb singular when the noun is the subject."
+    },
+    {
+      "id": "en-g-10-04",
+      "case_id": "ENG G.10.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Less information was available than we expected.",
+        "Fewer meetings were scheduled this week.",
+        "Less noise was reported after the renovation.",
+        "There is little doubt about the board's decision.",
+        "There is little doubt about the merger timeline."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Less\" correctly pairs with uncountable \"information\".\n\nTip: less + uncountable; fewer + countable plural.",
+        "TRUE — \"Fewer\" correctly pairs with countable \"meetings\".\n\nTip: if the noun is plural and countable, prefer fewer.",
+        "TRUE — \"Noise\" is uncountable, so \"less noise\" is the right pair.\n\nTip: less + mass nouns (noise, traffic, waste).",
+        "TRUE — \"Little doubt\" is the correct uncountable pattern with singular \"is\".\n\nTip: there is little + uncountable.",
+        "TRUE — Same pattern again: uncountable \"doubt\" with singular \"is\" and \"little\".\n\nTip: there is/are must match whether the noun is countable plural."
+      ],
+      "highlights": ["Less information", "Fewer meetings", "Less noise", "little doubt", "little doubt"],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.10",
+      "solution_overview": "All five sentences are correct here: less/little with uncountables (information, noise, doubt) and fewer with countable meetings. Use this set as a clean baseline before the later traps."
+    },
+    {
+      "id": "en-g-10-05",
+      "case_id": "ENG G.10.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "We still need much more data before we publish.",
+        "How many staff attended the compliance workshop?",
+        "How much staff attended the compliance workshop?",
+        "Only a few suppliers met the new quality criteria.",
+        "Only a little suppliers met the new quality criteria."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "TRUE — \"Much\" correctly quantifies uncountable \"data\" in formal business English.\n\nTip: in exams, treat data as uncountable with much/little.",
+        "TRUE — \"How many\" correctly asks about countable people (staff as plural headcount).\n\nTip: how many + countable; how much + uncountable.",
+        "FALSE — \"Staff\" here is treated as people you can count; use \"how many,\" not \"how much\".\n\nTip: if you could answer with a number of people, use many.",
+        "TRUE — \"A few\" correctly quantifies plural countable \"suppliers\".\n\nTip: a few = some (positive); few = not many (negative tone).",
+        "FALSE — \"Suppliers\" is countable plural; \"a little\" is reserved for uncountables.\n\nTip: a little progress / a few suppliers."
+      ],
+      "highlights": ["much more data", "How many staff", "How much staff", "a few suppliers", "a little suppliers"],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.10",
+      "solution_overview": "Questions with how much/how many and the a few/a little contrast show up constantly. Decide whether the noun is a countable set of people/items or a mass quantity."
+    },
+    {
+      "id": "en-g-10-06",
+      "case_id": "ENG G.10.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Much of the report was incomplete.",
+        "Much of the reports was incomplete.",
+        "Many of the reports were incomplete.",
+        "Several of the proposals were rejected.",
+        "A great deal of research has been published on pricing."
+      ],
+      "answer_key": [true, false, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Much of\" + singular/uncountable-style unit (\"the report\") is fine with singular \"was\".\n\nTip: much of the + singular noun ≈ a large part of it.",
+        "FALSE — With plural \"reports,\" prefer \"many of the reports were,\" not \"much of … was\".\n\nTip: much of + singular/mass; many of + plural.",
+        "TRUE — \"Many of the reports were\" correctly matches plural countable + plural verb.\n\nTip: of-phrases still need verb agreement with the counted noun.",
+        "TRUE — \"Several\" quantifies plural countable \"proposals\" with plural \"were\".\n\nTip: several always implies more than two countables.",
+        "TRUE — \"A great deal of\" pairs with uncountable \"research\" and singular \"has\".\n\nTip: a great deal of ≈ much; use with uncountables."
+      ],
+      "highlights": ["Much of the report", "Much of the reports", "Many of the reports", "Several of the proposals", "great deal of research"],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.10",
+      "solution_overview": "Of-phrases (much of / many of / several of) force you to look at the noun after of. Match the quantifier and the verb to that noun's countability and number."
+    },
+    {
+      "id": "en-g-10-07",
+      "case_id": "ENG G.10.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "She gave me some useful advice on the presentation.",
+        "She gave me some useful advices on the presentation.",
+        "We need more detailed information from the supplier.",
+        "We need more detailed informations from the supplier.",
+        "The news was announced after markets closed."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — \"Advice\" is uncountable; \"some useful advice\" is correct.\n\nTip: one piece of advice / some advice—never advices.",
+        "FALSE — Do not pluralise \"advice\" as \"advices\" in standard English.\n\nTip: count advice with piece(s) of advice.",
+        "TRUE — \"Information\" is uncountable and correctly used without -s.\n\nTip: information never takes a plural -s in exam English.",
+        "FALSE — \"Informations\" is ungrammatical; keep \"information\" uncountable.\n\nTip: bits/pieces of information if you need a count.",
+        "TRUE — \"News\" looks plural but is uncountable and takes singular \"was\".\n\nTip: the news is … (not are)."
+      ],
+      "highlights": ["useful advice", "useful advices", "detailed information", "detailed informations", "news was"],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.10",
+      "solution_overview": "Advice, information, and news are high-frequency uncountables that learners over-pluralise. Keep them singular and use piece/bit of when you must count."
+    },
+    {
+      "id": "en-g-10-08",
+      "case_id": "ENG G.10.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "There is too much paperwork in this department.",
+        "There are too many paperworks in this department.",
+        "We have made little progress on the integration plan.",
+        "We have made few progress on the integration plan.",
+        "Only a little time remains before the filing deadline."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — \"Paperwork\" is uncountable, so \"too much\" + singular \"is\" is correct.\n\nTip: much/little with mass nouns like paperwork and progress.",
+        "FALSE — \"Paperworks\" is not standard; keep \"paperwork\" uncountable.\n\nTip: if it feels like a pile of admin, treat it as a mass noun.",
+        "TRUE — \"Little progress\" correctly uses little with uncountable \"progress\".\n\nTip: progress is never \"progresses\" in this sense.",
+        "FALSE — \"Progress\" is uncountable, so \"few\" is wrong; use \"little progress\".\n\nTip: few needs a plural countable noun.",
+        "TRUE — \"A little time\" correctly quantifies uncountable \"time\".\n\nTip: a little = some (positive); little = not much (negative)."
+      ],
+      "highlights": ["too much paperwork", "too many paperworks", "little progress", "few progress", "a little time"],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.10",
+      "solution_overview": "Mass nouns from office life—paperwork, progress, time—take much/little, not many/few. Watch the positive \"a little\" versus the negative bare \"little\"."
+    },
+    {
+      "id": "en-g-10-09",
+      "case_id": "ENG G.10.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Fewer employees than expected enrolled in the scheme.",
+        "Less employees than expected enrolled in the scheme.",
+        "The firm spent less money on marketing this year.",
+        "The firm spent fewer money on marketing this year.",
+        "There were fewer errors in the revised draft."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — \"Employees\" is countable plural, so \"fewer\" is the precise choice.\n\nTip: fewer people / fewer errors / fewer days.",
+        "FALSE — Prefer \"fewer employees\"; \"less\" with plural people is a common trap.\n\nTip: exams still reward fewer + countable plural.",
+        "TRUE — \"Money\" is uncountable here, so \"less money\" is correct.\n\nTip: less + money/time/space; fewer + pounds/hours/rooms when counted.",
+        "FALSE — \"Money\" as a mass noun takes \"less,\" not \"fewer\".\n\nTip: fewer only works if the noun is plural and countable.",
+        "TRUE — \"Errors\" is countable plural, so \"fewer errors\" is correct.\n\nTip: if you can put a number in front, use fewer."
+      ],
+      "highlights": ["Fewer employees", "Less employees", "less money", "fewer money", "fewer errors"],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.10",
+      "solution_overview": "Less vs fewer is a classic BBE trap. Count the noun: plural countables want fewer; mass quantities like money want less."
+    },
+    {
+      "id": "en-g-10-10",
+      "case_id": "ENG G.10.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "A large amount of evidence was presented in court.",
+        "A large number of evidence was presented in court.",
+        "Several pieces of evidence were disclosed yesterday.",
+        "The equipment have already been installed.",
+        "Most of the furniture was damaged in transit."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — \"Amount of evidence\" correctly treats evidence as uncountable with singular \"was\".\n\nTip: amount of + evidence/equipment/furniture.",
+        "FALSE — \"Evidence\" is not a countable plural; do not use \"number of evidence\".\n\nTip: number of + plural countables only.",
+        "TRUE — \"Pieces of evidence\" is the correct countable paraphrase with plural \"were\".\n\nTip: piece of unlocks counting for uncountables.",
+        "FALSE — \"Equipment\" is uncountable and needs singular \"has,\" not \"have\".\n\nTip: all the equipment is … / has been …",
+        "TRUE — \"Furniture\" is uncountable and correctly takes singular \"was\".\n\nTip: furniture, luggage, and equipment share this pattern."
+      ],
+      "highlights": ["amount of evidence", "number of evidence", "pieces of evidence", "equipment have", "furniture was"],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.10",
+      "solution_overview": "Evidence, equipment, and furniture stay uncountable even when you mean several items. Use amount/pieces of, and keep agreement singular unless you count with piece/item."
+    },
+    {
+      "id": "en-g-10-11",
+      "case_id": "ENG G.10.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "There is not much time left to revise the budget.",
+        "There are not many times left to revise the budget.",
+        "We have plenty of opportunities to renegotiate.",
+        "We have plenty of opportunitys to renegotiate.",
+        "Hardly any of the respondents supported the change."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Uncountable \"time\" (duration) correctly pairs with \"much\" and singular \"is\".\n\nTip: not much time = little time remaining.",
+        "FALSE — \"Times\" changes the meaning awkwardly; for remaining duration use \"much time,\" not \"many times\".\n\nTip: many times = frequency; much time = duration.",
+        "TRUE — \"Plenty of\" works with plural countable \"opportunities\".\n\nTip: plenty of works with both countables and uncountables.",
+        "FALSE — Spelling/count error: the plural is \"opportunities,\" not \"opportunitys\".\n\nTip: watch irregular -y → -ies plurals on countables.",
+        "TRUE — \"Hardly any of\" + plural countable is a natural negative quantifier pattern.\n\nTip: hardly any ≈ almost no/none."
+      ],
+      "highlights": ["not much time", "not many times", "plenty of opportunities", "plenty of opportunitys", "Hardly any"],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.10",
+      "solution_overview": "Time as duration is uncountable (much time), while opportunities are countable. Negative quantifiers like hardly any still require the right noun type underneath."
+    },
+    {
+      "id": "en-g-10-12",
+      "case_id": "ENG G.10.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "A few of the analysts raised valuation concerns.",
+        "Few of the analysts raised valuation concerns, which surprised the board.",
+        "Little of the budget remains for contingency spending.",
+        "A little of the budget remains for contingency spending.",
+        "Few of the budget remains for contingency spending."
+      ],
+      "answer_key": [true, true, true, true, false],
+      "tactical_explanations": [
+        "TRUE — \"A few of\" + plural countable correctly signals a small but real number.\n\nTip: a few = some (neutral/positive).",
+        "TRUE — Bare \"few of\" is grammatical and stresses scarcity (negative tone).\n\nTip: few vs a few is tone, not grammar—both need countables.",
+        "TRUE — \"Little of\" + uncountable \"budget\" correctly stresses almost none remains.\n\nTip: little of the + uncountable.",
+        "TRUE — \"A little of\" + uncountable is also grammatical and more positive (some remains).\n\nTip: a little = some; little = not much.",
+        "FALSE — \"Budget\" is uncountable here; \"few of the budget\" mixes few (countable) with a mass noun.\n\nTip: few of the funds/items; little of the budget/money."
+      ],
+      "highlights": ["A few of the analysts", "Few of the analysts", "Little of the budget", "A little of the budget", "Few of the budget"],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.10",
+      "solution_overview": "A few/few and a little/little are all grammatical in the right environments—the trap is swapping them across the countable/uncountable line, especially with budget/money."
+    },
+    {
+      "id": "en-g-10-13",
+      "case_id": "ENG G.10.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The number of remote workers is increasing every year.",
+        "The number of remote workers are increasing every year.",
+        "A number of remote workers are requesting flexible hours.",
+        "A number of remote workers is requesting flexible hours.",
+        "The amount of remote workers is increasing every year."
+      ],
+      "answer_key": [true, false, true, false, false],
+      "tactical_explanations": [
+        "TRUE — \"The number of\" is a singular subject, so \"is\" is correct.\n\nTip: the number of + plural noun → singular verb.",
+        "FALSE — Do not use plural \"are\" after \"the number of\".\n\nTip: lock the verb to number (singular), not to workers.",
+        "TRUE — \"A number of\" means several and normally takes a plural verb.\n\nTip: a number of ≈ some/several → plural verb.",
+        "FALSE — With \"a number of workers,\" prefer plural \"are,\" not singular \"is\".\n\nTip: contrast the number (singular) vs a number (plural).",
+        "FALSE — \"Workers\" are countable people; use \"number of,\" not \"amount of\".\n\nTip: amount of work; number of workers."
+      ],
+      "highlights": ["number of remote workers is", "number of remote workers are", "A number of remote workers are", "A number of remote workers is", "amount of remote workers"],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.10",
+      "solution_overview": "This task stacks two traps: the number vs a number (verb agreement) and amount vs number (countability). Read the determiner before \"number,\" then check whether people should be counted with number at all."
+    },
+    {
+      "id": "en-g-10-14",
+      "case_id": "ENG G.10.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Much of what the consultant recommended has already been implemented.",
+        "Many of what the consultant recommended has already been implemented.",
+        "None of the evidence points to intentional fraud.",
+        "None of the evidences point to intentional fraud.",
+        "Both of the equipment need replacing before the audit."
+      ],
+      "answer_key": [true, false, true, false, false],
+      "tactical_explanations": [
+        "TRUE — \"Much of what…\" treats the content as an uncountable mass and takes singular \"has\".\n\nTip: much of what / much of the advice → singular.",
+        "FALSE — \"What the consultant recommended\" is not a plural countable set; \"many of what\" is unnatural.\n\nTip: many of those points / many of the recommendations.",
+        "TRUE — \"None of the evidence\" with uncountable evidence commonly takes singular \"points\".\n\nTip: none of + uncountable → singular verb in careful formal English.",
+        "FALSE — \"Evidences\" is wrong; keep evidence uncountable.\n\nTip: none of the evidence / none of the pieces of evidence.",
+        "FALSE — \"Equipment\" is uncountable, so \"both of the equipment\" fails; say \"both pieces of equipment\".\n\nTip: both needs two countable units."
+      ],
+      "highlights": ["Much of what", "Many of what", "None of the evidence", "None of the evidences", "Both of the equipment"],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.10",
+      "solution_overview": "Advanced of-phrases: much of what…, none of the evidence, and both… only work when the noun after of can be counted the way the quantifier requires."
+    },
+    {
+      "id": "en-g-10-15",
+      "case_id": "ENG G.10.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "We have received a great deal of positive feedback.",
+        "We have received a great number of positive feedback.",
+        "There was a large quantity of liquid waste in the tank.",
+        "There were a large quantity of liquid waste in the tank.",
+        "Only a small proportion of respondents chose option C."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — \"A great deal of\" correctly quantifies uncountable \"feedback\".\n\nTip: a great deal of ≈ much.",
+        "FALSE — \"Feedback\" is uncountable; \"a great number of feedback\" is wrong.\n\nTip: a great number of comments/responses; a great deal of feedback.",
+        "TRUE — \"Quantity of\" with a mass noun and singular \"was\" is correct.\n\nTip: quantity/amount often take singular agreement with mass nouns.",
+        "FALSE — Singular \"quantity\" as subject takes \"was,\" not \"were\".\n\nTip: there was a large quantity of …",
+        "TRUE — \"Proportion of\" + plural countable \"respondents\" is a standard research quantifier.\n\nTip: proportion/percentage of + plural noun is common in reports."
+      ],
+      "highlights": ["great deal of positive feedback", "great number of positive feedback", "large quantity of", "were a large quantity", "proportion of respondents"],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.10",
+      "solution_overview": "Deal/number/quantity/proportion look similar but select different noun types and verb forms. Match the head noun's countability, then agree the verb with the quantifier phrase."
+    },
+    {
+      "id": "en-g-10-16",
+      "case_id": "ENG G.10.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Research shows that hybrid work can raise productivity.",
+        "Researches show that hybrid work can raise productivity.",
+        "Several researches have confirmed the same pattern.",
+        "Several studies have confirmed the same pattern.",
+        "A piece of research published last year challenged the consensus."
+      ],
+      "answer_key": [true, false, false, true, true],
+      "tactical_explanations": [
+        "TRUE — Uncountable \"research\" correctly takes singular \"shows\".\n\nTip: research is / research shows …",
+        "FALSE — Do not pluralise academic \"research\" as \"researches\" in this sense.\n\nTip: use studies/projects when you need a plural countable.",
+        "FALSE — \"Several researches\" is unidiomatic; prefer \"several studies\" or \"several research projects\".\n\nTip: several needs a countable plural.",
+        "TRUE — \"Studies\" is the countable counterpart you need after \"several\".\n\nTip: research (mass) vs studies (count).",
+        "TRUE — \"A piece of research\" is an acceptable count expression for one study.\n\nTip: piece of research / item of research in formal prose."
+      ],
+      "highlights": ["Research shows", "Researches show", "Several researches", "Several studies", "piece of research"],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.10",
+      "solution_overview": "Research behaves like evidence: keep it uncountable, switch to studies when you need several, or use a piece of research for a single unit."
+    },
+    {
+      "id": "en-g-10-17",
+      "case_id": "ENG G.10.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Far fewer applicants than last year met the language requirement.",
+        "Far less applicants than last year met the language requirement.",
+        "Considerably less paperwork is required under the new rules.",
+        "Considerably fewer paperwork is required under the new rules.",
+        "There has been far too much speculation and far too few facts."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — \"Far fewer\" intensifies fewer with countable \"applicants\".\n\nTip: far/much/considerably can modify fewer/less.",
+        "FALSE — Plural countable \"applicants\" needs \"fewer,\" not \"less\".\n\nTip: far fewer people; far less interest.",
+        "TRUE — \"Considerably less paperwork\" correctly uses less with uncountable paperwork.\n\nTip: intensifiers do not change the countable rule.",
+        "FALSE — \"Paperwork\" is uncountable, so \"fewer paperwork\" is wrong.\n\nTip: fewer forms; less paperwork.",
+        "TRUE — Parallel contrast: much + uncountable speculation; few + countable facts.\n\nTip: mixed quantifiers in one sentence still obey each noun's type."
+      ],
+      "highlights": ["Far fewer applicants", "Far less applicants", "less paperwork", "fewer paperwork", "too much speculation"],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.10",
+      "solution_overview": "Intensifiers (far, considerably, too) dress up the same less/fewer and much/few choices. Strip the adverb and decide from the noun alone."
+    },
+    {
+      "id": "en-g-10-18",
+      "case_id": "ENG G.10.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Each item of equipment must be labelled before shipment.",
+        "Each equipment must be labelled before shipment.",
+        "No further evidence is required at this stage.",
+        "No further evidences are required at this stage.",
+        "A substantial amount of capital has already been committed."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — \"Item of equipment\" correctly creates a countable unit after \"each\".\n\nTip: each needs a singular countable noun.",
+        "FALSE — \"Each equipment\" fails because equipment is uncountable.\n\nTip: each piece/item of equipment.",
+        "TRUE — \"Evidence\" stays uncountable with singular \"is\".\n\nTip: no further evidence is …",
+        "FALSE — Avoid plural \"evidences\" and the plural verb that follows it.\n\nTip: further pieces of evidence if you insist on counting.",
+        "TRUE — \"Amount of capital\" treats capital as an uncountable mass with singular \"has\".\n\nTip: capital, funding, and liquidity often behave as uncountables."
+      ],
+      "highlights": ["item of equipment", "Each equipment", "further evidence is", "further evidences are", "amount of capital"],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.10",
+      "solution_overview": "Determiners like each and no further expose uncountable nouns quickly. If the determiner demands a countable unit, insert piece/item of before equipment or evidence."
+    },
+    {
+      "id": "en-g-10-19",
+      "case_id": "ENG G.10.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Scarcely any of the luggage was recovered after the delay.",
+        "Scarcely any of the luggages were recovered after the delay.",
+        "A surprising number of the criteria were mutually inconsistent.",
+        "A surprising amount of the criteria were mutually inconsistent.",
+        "Too little attention has been paid to operational risk."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — \"Luggage\" is uncountable; \"scarcely any of the luggage was\" is correct.\n\nTip: luggage/baggage like furniture: no plural -s.",
+        "FALSE — \"Luggages\" is non-standard; keep luggage uncountable with singular agreement.\n\nTip: pieces of luggage if you need a count.",
+        "TRUE — \"Criteria\" is plural; \"a surprising number of the criteria were\" matches countability and plural verb.\n\nTip: criterion (singular) / criteria (plural).",
+        "FALSE — Prefer \"number of the criteria\"; amount is for mass nouns, not plural criteria.\n\nTip: amount of inconsistency; number of criteria.",
+        "TRUE — \"Too little attention\" correctly uses little with uncountable attention.\n\nTip: little attention / much attention; few comments."
+      ],
+      "highlights": ["any of the luggage was", "any of the luggages", "number of the criteria", "amount of the criteria", "Too little attention"],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.10",
+      "solution_overview": "Mixes luggage (uncountable) with criteria (plural countable) and attention (uncountable). Identify each head noun's class before choosing any/number/amount/little."
+    },
+    {
+      "id": "en-g-10-20",
+      "case_id": "ENG G.10.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The board found insufficient evidence to proceed with sanctions.",
+        "The board found insufficient evidences to proceed with sanctions.",
+        "There remains a large number of unresolved issues in the contract.",
+        "There remains a large amount of unresolved issues in the contract.",
+        "Fewer than ten percent of the equipment have been calibrated."
+      ],
+      "answer_key": [true, false, false, false, false],
+      "tactical_explanations": [
+        "TRUE — \"Insufficient evidence\" correctly keeps evidence uncountable.\n\nTip: sufficient/insufficient + uncountable evidence/information.",
+        "FALSE — \"Evidences\" is wrong in this legal/business sense.\n\nTip: insufficient pieces of evidence if counting is required.",
+        "FALSE — \"A large number of unresolved issues\" is plural in sense, so prefer \"there remain,\" not singular \"remains\".\n\nTip: there remain + plural; there remains + singular/mass.",
+        "FALSE — \"Issues\" are countable, so \"amount of unresolved issues\" is off, and singular \"remains\" still clashes.\n\nTip: number of issues remain; amount of uncertainty remains.",
+        "FALSE — Double error: equipment is uncountable (not \"fewer than ten percent of the equipment have\"); prefer \"less than ten percent of the equipment has been calibrated\" or \"fewer than ten pieces of equipment have…\".\n\nTip: percent of + uncountable → singular; fewer needs countable units."
+      ],
+      "highlights": ["insufficient evidence", "insufficient evidences", "remains a large number", "amount of unresolved issues", "percent of the equipment have"],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.10",
+      "solution_overview": "The hardest set combines evidence, number vs amount, there remain(s), and percent-of agreement with equipment. Resolve countability first, then force verb agreement to follow."
+    }
+  ]
+}

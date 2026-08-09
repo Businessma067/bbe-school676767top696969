@@ -1,0 +1,526 @@
+{
+  "id": "g.6",
+  "title": "Relative Clauses",
+  "tasks": [
+    {
+      "id": "en-g-6-01",
+      "case_id": "ENG G.6.01",
+      "title": "Task 1",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The analyst who prepared the briefing joined the call late.",
+        "The report which the committee rejected it contained outdated figures.",
+        "The bakery who opened last month already has a waiting list.",
+        "The contract that legal signed yesterday takes effect on Monday.",
+        "The stadium, that was renovated in 2019, hosted the finals."
+      ],
+      "answer_key": [true, false, false, true, false],
+      "tactical_explanations": [
+        "TRUE — \"Who\" correctly refers to a person in a restrictive clause that defines which analyst you mean.\n\nTip: For people in defining clauses, \"who\" or \"that\" both work; pick one and stay consistent.",
+        "FALSE — Drop the extra \"it\": the relative already stands for the object, so write \"which the committee rejected.\"\n\nTip: Never leave a leftover pronoun after a relative clause that already fills that slot.",
+        "FALSE — A bakery is a thing, so use \"which\" (or \"that\"), not \"who.\"\n\nTip: Reserve \"who\" for people (and sometimes organisations treated as people in formal writing).",
+        "TRUE — Restrictive \"that\" correctly defines which contract; no commas needed.\n\nTip: No commas = the clause is essential to identify the noun.",
+        "FALSE — After commas (non-restrictive), use \"which,\" not \"that\": \"The stadium, which was renovated…\"\n\nTip: Commas signal extra information — and \"that\" is not welcome there."
+      ],
+      "highlights": ["who prepared", "it contained", "who opened", "that legal signed", "that was renovated"],
+      "difficulty_level": "1/5",
+      "sort_order": 1,
+      "subsection": "g.6",
+      "solution_overview": "Start by asking whether the clause names a person or a thing, and whether the commas mark it as essential or extra. Then check that the relative itself carries the subject or object — no leftover \"it\" or \"them.\" A quick who/which/that pass catches most early mistakes."
+    },
+    {
+      "id": "en-g-6-02",
+      "case_id": "ENG G.6.02",
+      "title": "Task 2",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The manager whose team hit the target received a bonus.",
+        "The auditor who's recommendations we followed has left the firm.",
+        "The proposal, which the board approved, reshapes next year's budget.",
+        "The clients that complained about delays were offered compensation.",
+        "The warehouse, who stores seasonal stock, needs new shelving."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — \"Whose\" correctly shows possession: the team belongs to the manager.\n\nTip: If you can rephrase as \"X's Y,\" you almost always want \"whose.\"",
+        "FALSE — You need possession, not \"who is\": write \"whose recommendations.\"\n\nTip: \"Who's\" = who is / who has; \"whose\" = of whom / of which.",
+        "TRUE — Non-restrictive \"which\" with commas correctly adds non-essential detail about the proposal.\n\nTip: Extra information between commas takes \"which\" for things, never \"that.\"",
+        "TRUE — Restrictive \"that\" for people is acceptable in defining clauses.\n\nTip: In defining clauses about people, \"who\" sounds slightly more formal than \"that.\"",
+        "FALSE — A warehouse is not a person; use \"which\": \"The warehouse, which stores…\"\n\nTip: Animate-looking nouns that are still things take \"which,\" not \"who.\""
+      ],
+      "highlights": ["whose team", "who's recommendations", "which the board", "that complained", "who stores"],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "g.6",
+      "solution_overview": "Possession and person/thing choice dominate this set. Separate \"who's\" (contraction) from \"whose\" (belonging), and keep \"who\" for people while \"which\" covers places, buildings, and documents."
+    },
+    {
+      "id": "en-g-6-03",
+      "case_id": "ENG G.6.03",
+      "title": "Task 3",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The merger, that investors feared, went through quietly.",
+        "The consultant whom we hired last spring redesigned the workflow.",
+        "The software which crashes during peak hours needs a patch.",
+        "The director who we briefed yesterday asked for more data.",
+        "The figures that the CFO presented them surprised the panel."
+      ],
+      "answer_key": [false, true, true, true, false],
+      "tactical_explanations": [
+        "FALSE — A comma-bound clause must use \"which,\" not \"that\": \"The merger, which investors feared…\"\n\nTip: Spot the commas first; they ban \"that\" in careful British exam English.",
+        "TRUE — Formal \"whom\" correctly marks the object of \"hired.\"\n\nTip: If the relative would be \"him/her/them,\" \"whom\" is the careful choice.",
+        "TRUE — Restrictive \"which\" correctly defines which software; no commas required.\n\nTip: British formal writing often prefers \"which\" even in defining clauses about things.",
+        "TRUE — Informal/object \"who\" is widely accepted here; the sentence is grammatical as written.\n\nTip: Exams may still prefer \"whom\" after a preposition, but bare object \"who\" is usually fine.",
+        "FALSE — Remove the residual \"them\": \"The figures that the CFO presented surprised…\"\n\nTip: The relative already equals the object; a second object pronoun is always wrong."
+      ],
+      "highlights": ["that investors", "whom we hired", "which crashes", "who we briefed", "them surprised"],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "g.6",
+      "solution_overview": "Watch non-restrictive \"that,\" object relatives (who/whom), and pronoun leftovers. If the clause already does the object’s job, nothing else should sit in that slot."
+    },
+    {
+      "id": "en-g-6-04",
+      "case_id": "ENG G.6.04",
+      "title": "Task 4",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The trainee who joined in March already leads client calls.",
+        "The guidelines that HR published apply to remote staff.",
+        "The factory whose output doubled last quarter needs overtime cover.",
+        "The speaker who's opening the conference arrives at nine.",
+        "The forecast which the economists released looks optimistic."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Restrictive \"who\" correctly identifies the trainee.\n\nTip: No commas when the clause is needed to pick out which person.",
+        "TRUE — Defining \"that\" correctly restricts which guidelines.\n\nTip: \"That\" is a safe default in restrictive clauses about things.",
+        "TRUE — \"Whose\" can mark possession for things as well as people.\n\nTip: \"The factory whose output…\" = \"the factory’s output.\"",
+        "TRUE — \"Who's\" correctly expands to \"who is\" before \"opening.\"\n\nTip: Try expanding the contraction; if \"who is\" fits, \"who's\" is right.",
+        "TRUE — Restrictive \"which\" correctly defines the forecast.\n\nTip: Either \"which\" or \"that\" works in defining clauses about things."
+      ],
+      "highlights": ["who joined", "that HR published", "whose output", "who's opening", "which the economists"],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "g.6",
+      "solution_overview": "All five are sound models: people with \"who,\" things with \"that/which,\" possession with \"whose,\" and a genuine \"who's\" = who is. Use them as clean reference patterns before the traps get harder."
+    },
+    {
+      "id": "en-g-6-05",
+      "case_id": "ENG G.6.05",
+      "title": "Task 5",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The partner with whom we negotiate prefers evening calls.",
+        "The dataset, that includes last year's returns, is incomplete.",
+        "Anyone who's password expires must reset it today.",
+        "The branch which we visited last week is closing for renovations.",
+        "The engineer that designed the prototype will present at noon."
+      ],
+      "answer_key": [true, false, false, true, true],
+      "tactical_explanations": [
+        "TRUE — Preposition + \"whom\" is the formal, correct pattern for a person as object.\n\nTip: After a preposition, prefer \"whom\" (people) or \"which\" (things), not \"who\" or \"that.\"",
+        "FALSE — Non-restrictive needs \"which\": \"The dataset, which includes…\"\n\nTip: Commas + \"that\" is a classic exam fail.",
+        "FALSE — Possession requires \"whose\": \"Anyone whose password expires…\"\n\nTip: If \"who is password\" sounds nonsense, you wanted \"whose.\"",
+        "TRUE — Defining \"which\" correctly identifies the branch.\n\nTip: Object relatives can keep \"which/that\" or drop the pronoun entirely in informal style.",
+        "TRUE — Restrictive \"that\" for a person is acceptable in defining clauses.\n\nTip: \"Who\" is often preferred for people, but \"that\" is not an error here."
+      ],
+      "highlights": ["with whom", "that includes", "who's password", "which we visited", "that designed"],
+      "difficulty_level": "2/5",
+      "sort_order": 5,
+      "subsection": "g.6",
+      "solution_overview": "Preposition + whom is the polished form; commas still forbid \"that\"; and \"who's\" vs \"whose\" remains a high-frequency trap. Read each clause aloud with the contraction expanded."
+    },
+    {
+      "id": "en-g-6-06",
+      "case_id": "ENG G.6.06",
+      "title": "Task 6",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The supplier from which we source packaging raised its prices.",
+        "The intern whom mentors praised completed the rotation early.",
+        "The policy that HR revised last month it now covers freelancers.",
+        "Vienna, which hosts the summit, has limited hotel capacity.",
+        "The investors who capital the startup provided later withdrew."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "TRUE — \"From which\" correctly links a thing after a preposition.\n\nTip: Keep the preposition with \"which/whom\"; avoid ending with a stranded wrong relative.",
+        "TRUE — \"Whom\" correctly marks the intern as the object of \"praised\" (mentors praised the intern).\n\nTip: If you can replace the relative with \"him/her,\" \"whom\" is justified.",
+        "FALSE — Delete residual \"it\": \"The policy that HR revised last month now covers…\"\n\nTip: One clause, one object slot — never both relative and \"it.\"",
+        "TRUE — Non-restrictive \"which\" correctly adds a known fact about Vienna.\n\nTip: Place names with commas almost always take \"which,\" not \"that.\"",
+        "FALSE — Word order collapses; write \"The investors who provided the startup’s capital later withdrew.\"\n\nTip: Keep the relative clause’s internal word order like a normal statement after the relative."
+      ],
+      "highlights": ["from which", "whom mentors", "it now", "which hosts", "who capital"],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "g.6",
+      "solution_overview": "Preposition + which, object whom, and residual pronouns dominate here. If a leftover \"it\" remains after the relative, cut it; if word order inside the clause collapses, rebuild the clause as a normal statement."
+    },
+    {
+      "id": "en-g-6-07",
+      "case_id": "ENG G.6.07",
+      "title": "Task 7",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The lawyer to whom the letter was addressed replied within a day.",
+        "The spreadsheet who's columns are locked cannot be edited.",
+        "Staff whose badges have expired must visit reception.",
+        "The museum that we toured on Friday displays modern design.",
+        "The CEO, that announced the restructure, takes questions at four."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — \"To whom\" is the formal object pattern after a preposition.\n\nTip: Preposition + whom is almost always safe for people in exam English.",
+        "FALSE — A spreadsheet’s columns need \"whose,\" not \"who's.\"\n\nTip: \"Who's\" never marks possession — expand it and the error is obvious.",
+        "TRUE — \"Whose\" correctly marks possession for people in a defining clause.\n\nTip: \"Whose\" works with plural noun heads just as with singular.",
+        "TRUE — Restrictive \"that\" correctly defines which museum.\n\nTip: Object \"that/which\" can often be omitted: \"The museum we toured…\"",
+        "FALSE — Non-restrictive about a person needs \"who\": \"The CEO, who announced…\"\n\nTip: Commas + person → \"who\"; commas + thing → \"which\"; never \"that.\""
+      ],
+      "highlights": ["to whom", "who's columns", "whose badges", "that we toured", "that announced"],
+      "difficulty_level": "2/5",
+      "sort_order": 7,
+      "subsection": "g.6",
+      "solution_overview": "Formal \"to whom,\" possession with \"whose,\" and the ban on \"that\" after commas are the three checks here. Expand every \"who's\" before you mark the sentence true."
+    },
+    {
+      "id": "en-g-6-08",
+      "case_id": "ENG G.6.08",
+      "title": "Task 8",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The invoice which accounts paid yesterday still shows the old rate.",
+        "The researcher of who the paper was co-authored declined comment.",
+        "The building that overlooks the river is under offer.",
+        "Customers which request refunds must keep their receipts.",
+        "The mentor whose advice shaped the pitch will join the rehearsal."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Defining \"which\" correctly identifies the invoice.\n\nTip: Subject or object relatives both allow \"which/that\" for things.",
+        "FALSE — After a preposition referring to a person, use \"whom\": \"of whom the paper was co-authored\" (or better, rephrase).\n\nTip: \"Of who\" is almost never correct; \"of whom\" is the formal fix.",
+        "TRUE — Restrictive \"that\" correctly defines the building.\n\nTip: No commas when the clause picks out which building.",
+        "FALSE — Customers are people; use \"who\" or \"that,\" not \"which.\"\n\nTip: \"Which\" for people is a strong red flag in exam marking.",
+        "TRUE — \"Whose advice\" correctly shows possession.\n\nTip: \"Whose + noun\" is the clean possessive relative pattern."
+      ],
+      "highlights": ["which accounts paid", "of who", "that overlooks", "which request", "whose advice"],
+      "difficulty_level": "2/5",
+      "sort_order": 8,
+      "subsection": "g.6",
+      "solution_overview": "People vs things and preposition + whom are the focus. Never use \"which\" for customers or staff, and never leave \"of who\" after a preposition."
+    },
+    {
+      "id": "en-g-6-09",
+      "case_id": "ENG G.6.09",
+      "title": "Task 9",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The minutes, which the secretary circulated, confirm the vote.",
+        "The candidate whom the panel shortlisted withdrew this morning.",
+        "Anyone who's still waiting should check the board outside.",
+        "The algorithm that ranks applications was updated overnight.",
+        "The office in which the interview takes place is on the third floor."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — Non-restrictive \"which\" correctly adds information about known minutes.\n\nTip: If removing the clause still leaves a clear noun, commas + \"which\" are right.",
+        "TRUE — Object \"whom\" correctly follows the panel as subject of \"shortlisted.\"\n\nTip: Swap in \"him/her\": if that fits, \"whom\" is justified.",
+        "TRUE — \"Who's\" = \"who is\" before \"still waiting.\"\n\nTip: Expand the contraction; if the sentence still works, keep \"who's.\"",
+        "TRUE — Restrictive \"that\" correctly defines the algorithm.\n\nTip: Technical nouns take the same who/which/that rules as everyday ones.",
+        "TRUE — \"In which\" is the formal relative after a preposition for a place.\n\nTip: Formal writing prefers \"in which\" over a stranded preposition, though both can be grammatical."
+      ],
+      "highlights": ["which the secretary", "whom the panel", "who's still", "that ranks", "in which"],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "g.6",
+      "solution_overview": "These are clean mid-level models: non-restrictive \"which,\" object \"whom,\" a genuine \"who's,\" defining \"that,\" and formal \"in which.\" Compare them with nearby traps before you lock your answers."
+    },
+    {
+      "id": "en-g-6-10",
+      "case_id": "ENG G.6.10",
+      "title": "Task 10",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The bond, that matures next June, was issued at a discount.",
+        "The clerk to who complaints should be sent sits at desk 12.",
+        "Products whose labels lack allergen warnings must be recalled.",
+        "The witness who the prosecutor called seemed unsure.",
+        "The framework on which the appraisal rests needs revision."
+      ],
+      "answer_key": [false, false, true, true, true],
+      "tactical_explanations": [
+        "FALSE — Use \"which\" after commas: \"The bond, which matures next June…\"\n\nTip: Financial nouns follow the same comma rule as any other thing.",
+        "FALSE — After \"to,\" use \"whom\": \"to whom complaints should be sent.\"\n\nTip: Preposition + who is almost always wrong; make it \"whom.\"",
+        "TRUE — \"Whose\" correctly marks possession for products/labels.\n\nTip: \"Whose\" is fine for inanimate nouns in careful English.",
+        "TRUE — Object \"who\" is acceptable in modern usage for the person called.\n\nTip: Formal style may prefer \"whom,\" but bare \"who\" as object is not marked wrong in most exams.",
+        "TRUE — \"On which\" correctly attaches the preposition to a thing.\n\nTip: Keep preposition + which together in formal answers."
+      ],
+      "highlights": ["that matures", "to who", "whose labels", "who the prosecutor", "on which"],
+      "difficulty_level": "3/5",
+      "sort_order": 10,
+      "subsection": "g.6",
+      "solution_overview": "Comma + \"that,\" \"to who,\" and possession for things are the main traps. Formal preposition + which/whom patterns earn easy true marks when you spot them."
+    },
+    {
+      "id": "en-g-6-11",
+      "case_id": "ENG G.6.11",
+      "title": "Task 11",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The auditors with who we share draft findings signed an NDA.",
+        "London, which remains our European hub, will host the kick-off.",
+        "The dossier that compliance flagged contains personal data.",
+        "A colleague who's been seconded to Berlin still joins our stand-ups.",
+        "The prototype, which the lab tested last night, failed the stress check."
+      ],
+      "answer_key": [false, true, true, true, true],
+      "tactical_explanations": [
+        "FALSE — Use \"whom\" after \"with\": \"with whom we share draft findings.\"\n\nTip: Any preposition before a person-relative wants \"whom.\"",
+        "TRUE — Non-restrictive \"which\" correctly adds a known fact about London.\n\nTip: City names with commas take \"which,\" not \"that\" or \"who.\"",
+        "TRUE — Defining \"that\" correctly restricts which dossier.\n\nTip: Compliance and legal nouns follow ordinary relative rules.",
+        "TRUE — \"Who's been\" = \"who has been,\" a correct present-perfect relative.\n\nTip: \"Who's\" covers both \"who is\" and \"who has.\"",
+        "TRUE — Non-restrictive \"which\" correctly adds extra detail about the prototype.\n\nTip: If the noun is already identified, commas + \"which\" are the pair."
+      ],
+      "highlights": ["with who", "which remains", "that compliance", "who's been", "which the lab"],
+      "difficulty_level": "3/5",
+      "sort_order": 11,
+      "subsection": "g.6",
+      "solution_overview": "One clear \"with who\" error sits among solid non-restrictive and defining models. Confirm each true sentence’s person/thing choice and comma pattern before moving on."
+    },
+    {
+      "id": "en-g-6-12",
+      "case_id": "ENG G.6.12",
+      "title": "Task 12",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The broker through whom we placed the order confirmed the fill.",
+        "Equipment that arrives damaged must be photographed immediately.",
+        "The founder whose startup we acquired stays on as an adviser.",
+        "Anyone who's unsure about the dress code should ask HR.",
+        "The clause under which penalties apply is highlighted in bold."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"Through whom\" correctly marks a person after a preposition.\n\nTip: Formal business English loves preposition + whom for intermediaries.",
+        "TRUE — Restrictive \"that\" correctly defines which equipment.\n\nTip: Uncountable heads still take normal relative pronouns.",
+        "TRUE — \"Whose startup\" correctly shows possession.\n\nTip: \"Whose\" + noun phrase is the standard possessive relative.",
+        "TRUE — \"Who's unsure\" = \"who is unsure.\"\n\nTip: If \"who is\" fits cleanly, \"who's\" is not a possession error.",
+        "TRUE — \"Under which\" correctly attaches the preposition to a thing.\n\nTip: Legal \"under which\" / \"pursuant to which\" patterns are exam favourites."
+      ],
+      "highlights": ["through whom", "that arrives", "whose startup", "who's unsure", "under which"],
+      "difficulty_level": "3/5",
+      "sort_order": 12,
+      "subsection": "g.6",
+      "solution_overview": "All five showcase reliable formal relatives: preposition + whom/which, defining \"that,\" possessive \"whose,\" and a legitimate \"who's.\" Treat them as templates for harder items."
+    },
+    {
+      "id": "en-g-6-13",
+      "case_id": "ENG G.6.13",
+      "title": "Task 13",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The committee appointed a chairperson that her experience was unmatched.",
+        "Negotiators on whom the deadline weighed most heavily requested an extension.",
+        "The portal which applicants use it times out after ten minutes.",
+        "Berlin, that we visited for the trade fair, has excellent rail links.",
+        "Shareholders whom voted against the motion still attended the lunch."
+      ],
+      "answer_key": [false, true, false, false, false],
+      "tactical_explanations": [
+        "FALSE — Use \"whose\": \"a chairperson whose experience was unmatched,\" not \"that her.\"\n\nTip: \"That + possessive determiner\" is a broken relative; switch to \"whose.\"",
+        "TRUE — \"On whom\" correctly places a person after a preposition.\n\nTip: If stress falls on people as the object of a preposition, \"whom\" is the formal form.",
+        "FALSE — Remove \"it\": \"The portal which applicants use times out…\"\n\nTip: Residual object pronouns after relatives are always wrong.",
+        "FALSE — Non-restrictive place names need \"which\": \"Berlin, which we visited…\"\n\nTip: Commas + \"that\" fail for cities just as for documents.",
+        "FALSE — Subject relative needs \"who\": \"Shareholders who voted…\"\n\nTip: \"Whom\" is never the subject of the relative clause’s verb."
+      ],
+      "highlights": ["that her experience", "on whom", "it times", "that we visited", "whom voted"],
+      "difficulty_level": "4/5",
+      "sort_order": 13,
+      "subsection": "g.6",
+      "solution_overview": "Harder traps mix broken possession (\"that her\"), leftover pronouns, non-restrictive \"that,\" and subject \"whom.\" Only the preposition + whom sentence is clean here."
+    },
+    {
+      "id": "en-g-6-14",
+      "case_id": "ENG G.6.14",
+      "title": "Task 14",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The vendor with whose terms we disagreed still won the tender.",
+        "Delegates for who travel was arranged must collect vouchers by noon.",
+        "The archive in which older contracts are stored is being digitised.",
+        "A process that we streamlined last year now saves two hours a week.",
+        "The economist who's forecast we cited later revised her numbers."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — \"With whose terms\" correctly combines preposition and possession.\n\nTip: \"Preposition + whose + noun\" is formal but fully grammatical.",
+        "FALSE — Use \"whom\": \"Delegates for whom travel was arranged…\"\n\nTip: After \"for/to/with/from,\" person-relatives need \"whom.\"",
+        "TRUE — \"In which\" correctly marks a place after a preposition.\n\nTip: Formal answers prefer \"in which\" over \"where\" in some exam styles.",
+        "TRUE — Defining \"that\" (object) correctly identifies the process.\n\nTip: Object \"that/which\" can be omitted: \"A process we streamlined…\"",
+        "FALSE — Possession needs \"whose\": \"The economist whose forecast we cited…\"\n\nTip: \"Who's forecast\" expands to nonsense; that signals \"whose.\""
+      ],
+      "highlights": ["with whose terms", "for who", "in which", "that we streamlined", "who's forecast"],
+      "difficulty_level": "4/5",
+      "sort_order": 14,
+      "subsection": "g.6",
+      "solution_overview": "Advanced patterns include \"with whose\" and \"in which,\" while \"for who\" and \"who's + noun\" remain frequent fails. Expand every contraction before you judge possession."
+    },
+    {
+      "id": "en-g-6-15",
+      "case_id": "ENG G.6.15",
+      "title": "Task 15",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The only applicant that the firm shortlisted declined the offer.",
+        "Our Helsinki office, that opened in 2018, now employs forty people.",
+        "Investors to whom the prospectus was mailed raised further questions.",
+        "The dashboard which tracks liquidity it refreshes every minute.",
+        "Teams whose KPIs slipped this quarter must submit a recovery plan."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "TRUE — Restrictive \"that\" correctly defines the only shortlisted applicant.\n\nTip: \"The only / the first / the last + that\" is a natural defining pattern.",
+        "FALSE — Non-restrictive needs \"which\": \"Our Helsinki office, which opened…\"\n\nTip: Named, unique offices take commas + \"which,\" not \"that.\"",
+        "TRUE — \"To whom\" correctly marks recipients after a preposition.\n\nTip: Mail/send/address + to whom is a standard formal relative.",
+        "FALSE — Drop \"it\": \"The dashboard which tracks liquidity refreshes…\"\n\nTip: The relative clause already contains its object/subject logic; no second pronoun.",
+        "TRUE — \"Whose KPIs\" correctly shows possession for teams.\n\nTip: Collective nouns still take \"whose\" for belonging."
+      ],
+      "highlights": ["that the firm", "that opened", "to whom", "it refreshes", "whose KPIs"],
+      "difficulty_level": "4/5",
+      "sort_order": 15,
+      "subsection": "g.6",
+      "solution_overview": "Defining \"the only… that,\" formal \"to whom,\" and \"whose\" for teams are solid; commas + \"that\" and residual \"it\" are the fails. Prioritise comma diagnosis first."
+    },
+    {
+      "id": "en-g-6-16",
+      "case_id": "ENG G.6.16",
+      "title": "Task 16",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The regulator by whom the fine was imposed published guidance today.",
+        "Candidates which fail the compliance quiz cannot access the portal.",
+        "A policy whose wording is ambiguous invites disputes.",
+        "The seminar at which we presented drew a large audience.",
+        "Someone who's ID badge is missing should report to security."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — \"By whom\" correctly marks the agent in a formal relative.\n\nTip: Passive-related \"by whom\" is formal but grammatical.",
+        "FALSE — People need \"who/that\": \"Candidates who fail…\"\n\nTip: Never use \"which\" for candidates, clients, or staff.",
+        "TRUE — \"Whose wording\" correctly marks possession for a policy.\n\nTip: Documents and policies commonly take \"whose\" in exam English.",
+        "TRUE — \"At which\" correctly attaches the preposition to an event.\n\nTip: Prefer \"at which / in which\" over informal \"where\" in formal answers when asked.",
+        "FALSE — Use \"whose\": \"Someone whose ID badge is missing…\"\n\nTip: \"Who's ID\" = \"who is ID,\" which never works."
+      ],
+      "highlights": ["by whom", "which fail", "whose wording", "at which", "who's ID"],
+      "difficulty_level": "4/5",
+      "sort_order": 16,
+      "subsection": "g.6",
+      "solution_overview": "Formal \"by whom\" / \"at which\" sit beside people-\"which\" and \"who's + noun\" errors. Keep person/thing and contraction checks automatic at this level."
+    },
+    {
+      "id": "en-g-6-17",
+      "case_id": "ENG G.6.17",
+      "title": "Task 17",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The partner in whom's firm we invested later exited the market.",
+        "Few of the metrics on which the bonus depends are under our control.",
+        "The analyst that her model underestimated demand has revised it.",
+        "Board members whom the chair thanked stayed for photographs.",
+        "The warehouse where stock is held, that flooded last spring, is closed."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "FALSE — Malformed possession; write \"The partner in whose firm we invested…\"\n\nTip: Never stack \"whom's\"; use \"whose\" after the preposition.",
+        "TRUE — \"On which\" correctly links metrics after a preposition.\n\nTip: \"The X on which Y depends\" is a high-value formal pattern.",
+        "FALSE — Replace \"that her\" with \"whose\": \"The analyst whose model underestimated…\"\n\nTip: \"That + possessive\" always signals a missing \"whose.\"",
+        "TRUE — Object \"whom\" correctly refers to the members thanked.\n\nTip: Subject of main clause + object relative \"whom\" is a clean formal structure.",
+        "FALSE — Mixing \"where\" with a second non-restrictive \"that\" is wrong; prefer \"The warehouse where stock is held, which flooded last spring, is closed.\"\n\nTip: A second relative after commas still cannot be \"that.\""
+      ],
+      "highlights": ["whom's firm", "on which", "that her model", "whom the chair", "that flooded"],
+      "difficulty_level": "5/5",
+      "sort_order": 17,
+      "subsection": "g.6",
+      "solution_overview": "Top-band items twist possession after prepositions and stack relatives. Reject \"whom's\" and \"that her,\" keep \"on which,\" and remember a second comma-bound clause still wants \"which.\""
+    },
+    {
+      "id": "en-g-6-18",
+      "case_id": "ENG G.6.18",
+      "title": "Task 18",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The lender to whose conditions we agreed released the funds.",
+        "Staff for whom remote work was approved must log hours weekly.",
+        "The prototype that the engineers dismantled it cannot be reassembled.",
+        "Singapore, which we use as our APAC base, hosts the regional board.",
+        "Anyone who's completed module three may sit the assessment."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "TRUE — \"To whose conditions\" correctly combines preposition and possession.\n\nTip: \"To/with/under whose + noun\" is advanced but correct.",
+        "TRUE — \"For whom\" correctly marks people after a preposition.\n\nTip: Approval/arrangement phrases often need \"for whom.\"",
+        "FALSE — Remove \"it\": \"The prototype that the engineers dismantled cannot be reassembled.\"\n\nTip: Even in long sentences, residual objects are still errors.",
+        "TRUE — Non-restrictive \"which\" correctly adds information about Singapore.\n\nTip: Country/city names with commas take \"which.\"",
+        "TRUE — \"Who's completed\" = \"who has completed.\"\n\nTip: Present-perfect \"who's\" is possession’s innocent twin — expand to check."
+      ],
+      "highlights": ["to whose conditions", "for whom", "it cannot", "which we use", "who's completed"],
+      "difficulty_level": "5/5",
+      "sort_order": 18,
+      "subsection": "g.6",
+      "solution_overview": "Formal \"to whose\" / \"for whom\" are trustworthy when the grammar fits; the leftover \"it\" is the only clear fail. Expand \"who's\" once more to confirm \"who has.\""
+    },
+    {
+      "id": "en-g-6-19",
+      "case_id": "ENG G.6.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The counsel of whom we sought advice later joined the opposing side.",
+        "A clause that its purpose is unclear should be redrafted.",
+        "Partners who the firm promoted last year now lead regional desks.",
+        "The platform via which clients upload documents went offline at noon.",
+        "The interim CFO, that arrived in May, reorganised the treasury team."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "TRUE — \"Of whom\" correctly marks the person after the preposition in a formal relative.\n\nTip: \"Of whom we sought advice\" is stiff but exam-correct.",
+        "FALSE — Use \"whose\": \"A clause whose purpose is unclear…\"\n\nTip: \"That its\" is the same broken pattern as \"that her.\"",
+        "TRUE — Object \"who\" for people promoted is acceptable modern usage.\n\nTip: Formal alternatives use \"whom\"; both are usually accepted without a preceding preposition.",
+        "TRUE — \"Via which\" correctly attaches the preposition to a thing.\n\nTip: Tech/process nouns take \"which\" after prepositions, not \"who.\"",
+        "FALSE — Non-restrictive about a person needs \"who\": \"The interim CFO, who arrived…\"\n\nTip: Title + commas still bans \"that.\""
+      ],
+      "highlights": ["of whom", "that its purpose", "who the firm", "via which", "that arrived"],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.6",
+      "solution_overview": "Formal \"of whom\" / \"via which\" contrast with \"that its\" and comma + \"that\" about a person. Diagnose possession failures and non-restrictive person clauses first."
+    },
+    {
+      "id": "en-g-6-20",
+      "case_id": "ENG G.6.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The underwriters with whom we placed the issue required further disclosure.",
+        "Anyone whose laptop holds client files must enable full-disk encryption.",
+        "The jurisdiction under which the dispute will be heard is specified in clause 19.",
+        "A consultant who's already briefed the board need not attend the dry run.",
+        "The metrics against which performance is judged were agreed last autumn."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "TRUE — \"With whom\" correctly marks people after a preposition in a defining clause.\n\nTip: Placement/issuance language often uses \"with whom we placed…\"",
+        "TRUE — \"Whose laptop\" correctly shows possession.\n\nTip: Security policies love \"anyone whose + noun\" constructions.",
+        "TRUE — \"Under which\" correctly links the legal framework.\n\nTip: Contract English frequently uses \"under which / pursuant to which.\"",
+        "TRUE — \"Who's already briefed\" = \"who has already briefed.\"\n\nTip: Final check: expand \"who's\"; if \"who has\" fits, the sentence can stand.",
+        "TRUE — \"Against which\" correctly marks the standard of comparison.\n\nTip: \"The X against which Y is judged\" is a polished relative pattern."
+      ],
+      "highlights": ["with whom", "whose laptop", "under which", "who's already", "against which"],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.6",
+      "solution_overview": "A clean capstone of advanced but correct relatives: preposition + whom/which, possessive \"whose,\" and \"who's\" = who has. Use these as your final checklist for person, thing, possession, and contraction."
+    }
+  ]
+}

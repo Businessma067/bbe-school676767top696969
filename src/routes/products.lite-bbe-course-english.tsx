@@ -8,7 +8,7 @@ export const Route = createFileRoute("/products/lite-bbe-course-english")({
       {
         name: "description",
         content:
-          "Lite-course English Texts, Grammar, and Vocabulary practice for the WU BBE entrance exam.",
+          "Lite-course English practice: Texts, Grammar, and Vocabulary for the WU BBE entrance exam.",
       },
     ],
   }),
@@ -17,6 +17,9 @@ export const Route = createFileRoute("/products/lite-bbe-course-english")({
 
 function LiteCourseEnglishTasks() {
   return (
-    <EnglishTasksPage tier="lite" backTo="/products/lite-bbe-course-subjects" />
+    <EnglishTasksPage
+      tier="lite"
+      backTo="/products/lite-bbe-course-subjects"
+    />
   );
 }
