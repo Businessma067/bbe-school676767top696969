@@ -683,6 +683,11 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
               <AllExplanationsPanel
                 task={activeCase}
                 index={activeIdx}
+                isTexts={isTextsCase}
+                activeExplanationIndex={
+                  explanation?.caseId === activeCase.id ? explanation.statementIndex : null
+                }
+                onRequestShowInText={(i) => requestExplanation(activeCase, i)}
                 onClose={() => setShowExplanations(false)}
               />
             ) : isTextsCase && activeCase && !isLocked(tier, activeIdx) ? (
@@ -1025,23 +1030,55 @@ function CaseCard({
                 )}
               </div>
 
-              {checked && isTexts && (
-                <div className="mt-3 flex flex-wrap items-center gap-2">
-                  <button
-                    type="button"
-                    onClick={() => onRequestExplanation(i)}
-                    className={cn(
-                      "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
-                      activeExplanationIndex === i
-                        ? "border-primary bg-primary text-primary-foreground"
-                        : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
-                    )}
-                  >
-                    <Sparkles className="h-3 w-3" />
-                    {activeExplanationIndex === i
-                      ? "Highlighted in passage →"
-                      : "Show in passage"}
-                  </button>
+              {checked && (
+                <div className="mt-3 space-y-2">
+                  {(data.tactical_explanations[i] ?? "").trim() && (
+                    <div
+                      className={cn(
+                        "rounded-md p-3 text-xs leading-relaxed",
+                        isCorrect
+                          ? "bg-emerald-500/10 text-emerald-900 dark:text-emerald-200"
+                          : "bg-destructive/10 text-destructive",
+                      )}
+                    >
+                      <div className="mb-2 flex flex-wrap items-center gap-2">
+                        <span className="text-[10px] font-bold uppercase tracking-widest opacity-80">
+                          Explanation
+                        </span>
+                        {isTexts && (
+                          <button
+                            type="button"
+                            onClick={() => onRequestExplanation(i)}
+                            className={cn(
+                              "inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[11px] font-semibold transition-colors",
+                              activeExplanationIndex === i
+                                ? "border-primary bg-primary text-primary-foreground"
+                                : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
+                            )}
+                          >
+                            <Sparkles className="h-3 w-3" />
+                            {activeExplanationIndex === i ? "Highlighted in text →" : "Show in text"}
+                          </button>
+                        )}
+                      </div>
+                      <ExplanationProse text={data.tactical_explanations[i]} />
+                    </div>
+                  )}
+                  {isTexts && !(data.tactical_explanations[i] ?? "").trim() && (
+                    <button
+                      type="button"
+                      onClick={() => onRequestExplanation(i)}
+                      className={cn(
+                        "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
+                        activeExplanationIndex === i
+                          ? "border-primary bg-primary text-primary-foreground"
+                          : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
+                      )}
+                    >
+                      <Sparkles className="h-3 w-3" />
+                      {activeExplanationIndex === i ? "Highlighted in text →" : "Show in text"}
+                    </button>
+                  )}
                 </div>
               )}
             </li>
@@ -1098,22 +1135,19 @@ function CaseCard({
 function AllExplanationsPanel({
   task,
   index,
+  isTexts,
+  activeExplanationIndex,
+  onRequestShowInText,
   onClose,
 }: {
   task: EnglishTask;
   index: number;
+  isTexts: boolean;
+  activeExplanationIndex: number | null;
+  onRequestShowInText: (i: number) => void;
   onClose: () => void;
 }) {
   const letters = "ABCDE";
-  const body = task.statements
-    .flatMap((stmt, i) => {
-      const expl = (task.tactical_explanations[i] ?? "").trim();
-      if (expl) return [expl, ""];
-      return [`**${letters[i] ?? String(i + 1)}) ${stmt}.**`, ""];
-    })
-    .join("\n")
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
 
   return (
     <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
@@ -1134,7 +1168,48 @@ function AllExplanationsPanel({
       </div>
       <div className="min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
         <AnswerKeyTable answerKey={task.answer_key} />
-        <ExplanationProse text={body} />
+        <div className="space-y-8">
+          {task.statements.map((stmt, i) => {
+            const expl = (task.tactical_explanations[i] ?? "").trim();
+            const letter = letters[i] ?? String(i + 1);
+            const body = expl || `**${letter}) ${stmt}.**`;
+            return (
+              <section key={i} className="border-b border-border/60 pb-6 last:border-b-0 last:pb-0">
+                <div className="mb-3 flex flex-wrap items-center gap-2">
+                  <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+                    {letter}
+                  </span>
+                  <span
+                    className={cn(
+                      "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
+                      task.answer_key[i]
+                        ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
+                        : "bg-destructive/15 text-destructive",
+                    )}
+                  >
+                    {task.answer_key[i] ? "TRUE" : "FALSE"}
+                  </span>
+                  {isTexts && (
+                    <button
+                      type="button"
+                      onClick={() => onRequestShowInText(i)}
+                      className={cn(
+                        "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
+                        activeExplanationIndex === i
+                          ? "border-primary bg-primary text-primary-foreground"
+                          : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
+                      )}
+                    >
+                      <Sparkles className="h-3 w-3" />
+                      {activeExplanationIndex === i ? "Highlighted in text →" : "Show in text"}
+                    </button>
+                  )}
+                </div>
+                <ExplanationProse text={body} />
+              </section>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
