@@ -283,7 +283,7 @@
     "title": "A renewable energy cooperative is comparing two designs for a community solar pr",
     "difficulty_raw": "5/5",
     "difficulty_level": "5/5",
-    "context": "A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest \\$120,000, with net returns of \\$54,000 at the end of Year 1$ and $\\$88,000 at the end of Year 2. Design B, a simpler one-year project: invest \\$70,000, with a single net return of \\$81,200 at the end of Year 1.",
+    "context": "A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest \\$120,000, with net returns of \\$54,000 at the end of Year 1 and \\$88,000 at the end of Year 2. Design B, a simpler one-year project: invest \\$70,000, with a single net return of \\$81,200 at the end of Year 1.",
     "statements": [
       "The internal rate of return of Design A is approximately 11.04%.",
       "The internal rate of return of Design B is exactly 16%.",

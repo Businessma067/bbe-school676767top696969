@@ -1,0 +1,29 @@
+# Ch11 pass-2 leftover scar cleanup (second agent round)
+# READ:  textbook/output/ch11_subsection_fixes/{sid}_INPUT.json
+#        textbook/output/_audit_pass2_scars.txt (your section)
+# WRITE: textbook/output/ch11_subsection_fixes/{sid}.json
+
+## PRIORITY FIXES (search every field)
+
+1. Stray `$` glued to prose (VERY IMPORTANT — real UI breaks):
+   BAD:  `\$54,000 at the end of Year 1$ and $\$88,000 at the end of Year 2`
+   GOOD: `\$54,000 at the end of Year 1 and \$88,000 at the end of Year 2`
+   Hunt for: letters/words then `$` then space/`and`, or `$\$digits` followed by English.
+
+2. Prefer algebra without a currency glyph when the number is just a coefficient:
+   BAD:  `$\$40{,}000/(1.05)^{2}$`
+   GOOD: `$40{,}000/(1.05)^{2}$`
+   Keep `\$` in prose money: `approximately \$36,281.18`
+   Keep `$a = \$8{,}000$` when you intentionally show a money symbol next to a variable.
+
+3. Never escape the opening math delimiter:
+   BAD: `\$3r = \ln(...)$`
+   GOOD: `$3r = \ln(...)$`
+
+4. English not inside `$...$`. Split comparisons with prose "and".
+
+5. Flat powers → `^{...}`. Smash `•` bullets → newlines.
+
+6. Do not change answer_key / numeric truth / other subsections.
+
+OUTPUT full JSON array same length as INPUT. After write: no `Year N$`, no `$\$digits…English`, no unpaired `$`.

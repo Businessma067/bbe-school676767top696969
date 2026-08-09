@@ -3043,10 +3043,10 @@ Since the discount factor 0.45 corresponds to a fixed value of r × t (specifica
     tactical_explanations: [
       `**A) The present value of the \\$40{,}000 payment is approximately \\$36{,}281.18.**  (true)
 
-Discounting the \\$40{,}000 payment back 2 years at 5% annual compounding, $\\$40{,}000/(1.05)^{2}$, gives approximately \\$36{,}281.18 as today's equivalent value.`,
+Discounting the \\$40{,}000 payment back 2 years at 5% annual compounding, $40{,}000/(1.05)^{2}$, gives approximately \\$36{,}281.18 as today's equivalent value.`,
       `**B) The present value of the \\$65{,}000 payment is approximately \\$50{,}930.87.**  (true)
 
-Discounting the \\$65{,}000 payment back 5 years at the same 5% rate, $\\$65{,}000/(1.05)^{5}$, gives approximately \\$50{,}930.87.`,
+Discounting the \\$65{,}000 payment back 5 years at the same 5% rate, $65{,}000/(1.05)^{5}$, gives approximately \\$50{,}930.87.`,
       `**C) The combined present value of both payments together is approximately \\$87{,}212.05.**  (true)
 
 Since present values from different payment dates can simply be added together, the combined present value of both milestone payments is 36,281.18 + 50,930.87 ≈ \\$87{,}212.05.`,
@@ -3110,7 +3110,7 @@ Recomputing both payments with continuous compounding at 5% gives a combined pre
     tactical_explanations: [
       `**A) The present value of Option B is approximately \\$21{,}410.30.**  (true)
 
-Discounting the \\$25{,}500 payment back 3 years at a 6% annual rate, $\\$25{,}500/(1.06)^{3}$, gives approximately \\$21{,}410.30 as its present value.`,
+Discounting the \\$25{,}500 payment back 3 years at a 6% annual rate, $25{,}500/(1.06)^{3}$, gives approximately \\$21{,}410.30 as its present value.`,
       `**B) Option A has a higher present value than Option B at the 6% rate.**  (true)
 
 Comparing the two options directly, Option A's \\$22{,}000 received today is worth more than Option B's present value of \\$21{,}410.30, so at this 6% rate the immediate payment is the financially larger of the two.`,
@@ -3360,7 +3360,7 @@ The actual gap between the equivalent annual rate (5.13%) and the continuous rat
     tactical_explanations: [
       `**A) The present value of the existing \\$42{,}000 receivable is approximately \\$35{,}264.01.**  (true)
 
-Discounting the existing \\$42{,}000 receivable back 3 years at 6% annual compounding, $\\$42{,}000/(1.06)^{3}$, gives approximately \\$35{,}264.01 as its present value today.`,
+Discounting the existing \\$42{,}000 receivable back 3 years at 6% annual compounding, $42{,}000/(1.06)^{3}$, gives approximately \\$35{,}264.01 as its present value today.`,
       `**B) The present value still required from the second receivable is approximately \\$64{,}735.99.**  (true)
 
 Since the covenant requires a combined present value of \\$100{,}000 and the first receivable already supplies about \\$35{,}264.01 of that, the remaining present value the second receivable must contribute is 100,000 - 35,264.01 ≈ \\$64{,}735.99.`,
@@ -5235,7 +5235,7 @@ The individual term $f_{100} = 1{,}000/100 = \\$10.00$ is calculated correctly, 
     tactical_explanations: [
       `**A) The amount she must deposit today is approximately \\$4,081.49.**  (true)
 
-Plugging A = 5,000, r = 0.07, and n = 3 into x = $A/(1+r)^{n}$ gives 5,000/1.225043 = \\$4,081.49, matching the statement exactly.`,
+Plugging A = 5,000, r = 0.07, and n = 3 into $x = A/(1+r)^{n}$ gives 5,000/1.225043 = \\$4,081.49, matching the statement exactly.`,
       `**B) If the interest rate were instead 5%, the required deposit today would be LOWER than \\$4,081.49.**  (false)
 
 A lower discount rate means each future dollar is discounted less severely, so LESS growth is assumed and MORE must be set aside today: at 5% the required deposit is \\$4,319.19, which is higher than the 7% figure of \\$4,081.49, not lower.`,
@@ -5244,7 +5244,7 @@ A lower discount rate means each future dollar is discounted less severely, so L
 The interest earned is simply the future target minus today's deposit: 5,000.00 - 4,081.49 = \\$918.51, not \\$928.51 as stated.`,
       `**D) If the target amount were doubled to \\$10,000, the required deposit today would also exactly double, to approximately \\$8,162.98.**  (true)
 
-Because x = $A/(1+r)^{n}$ is directly proportional to A for fixed r and n, doubling the target amount exactly doubles the required deposit, from \\$4,081.49 to \\$8,162.98.`,
+Because $x = A/(1+r)^{n}$ is directly proportional to A for fixed r and n, doubling the target amount exactly doubles the required deposit, from \\$4,081.49 to \\$8,162.98.`,
       `**E) If the horizon were extended to 6 years at the same 7% rate, the required deposit today would be exactly half of \\$4,081.49.**  (false)
 
 The discounting relationship is exponential in time, not linear, so doubling the horizon does not halve the deposit: the correct 6-year deposit is $5{,}000/(1.07)^{6} = \\$3{,}331.71$, which is well above the naively halved figure of \\$2,040.75.`,
@@ -5361,13 +5361,13 @@ Halving the rate does not halve the future value, since $(1+r)^{n}$ is not linea
     tactical_explanations: [
       `**A) The future value after 6 years is approximately \\$13,603.84.**  (true)
 
-$F6 = (2{,}000/0.05)[(1.05)^{6} - 1] = \\$13{,}603.84$, matching the statement exactly.`,
+$F_6 = (2{,}000/0.05)[(1.05)^{6} - 1] = \\$13{,}603.84$, matching the statement exactly.`,
       `**B) The total interest earned over the 6 years is approximately \\$1,703.84.**  (false)
 
 Total deposits of \\$12,000.00 subtracted from the future value of \\$13,603.84 leaves \\$1,603.84 in interest, not \\$1,703.84 as stated.`,
       `**C) The present-value equivalent of this future value is approximately \\$18,230.45.**  (false)
 
-This inverts the relationship Fn = Pn$(1+r)^{n}$: to go from the future value back to the present value one must DIVIDE by $(1+r)^{n}$, not multiply. The correctly computed present value is \\$10,151.40, not \\$18,230.45.`,
+This inverts the relationship $F_n = P_n(1+r)^{n}$: to go from the future value back to the present value one must DIVIDE by $(1+r)^{n}$, not multiply. The correctly computed present value is \\$10,151.40, not \\$18,230.45.`,
       `**D) If the annual deposit were increased by 50%, to \\$3,000, the 6-year future value would also rise by exactly 50%, to approximately \\$21,405.76.**  (false)
 
 Because Fn is directly proportional to the periodic deposit a, increasing a by 50% (from \\$2,000 to \\$3,000) increases F6 by exactly 50%, from \\$13,603.84 to \\$20,405.76, not \\$21,405.76 as stated.`,
@@ -5428,7 +5428,7 @@ F12 = \\$31,834.24 is actually MORE than double the 6-year value of \\$13,603.84
     tactical_explanations: [
       `**A) The future value after 10 years is approximately \\$50,702.97.**  (true)
 
-$F10 = (3{,}500/0.08)[(1.08)^{10} - 1] = \\$50{,}702.97$, matching the statement exactly.`,
+$F_{10} = (3{,}500/0.08)[(1.08)^{10} - 1] = \\$50{,}702.97$, matching the statement exactly.`,
       `**B) The total interest earned over the 10 years is approximately \\$15,702.97.**  (true)
 
 Total deposits of \\$35,000.00 subtracted from \\$50,702.97 leaves \\$15,702.97 in interest, matching the statement exactly.`,
@@ -5491,7 +5491,7 @@ Raising the rate to 10% increases F10 to \\$55,780.97, which does exceed the \\$
     tactical_explanations: [
       `**A) The present value needed today is approximately \\$25,775.15.**  (true)
 
-$P15 = (2{,}400/0.045)[1 - 1/(1.045)^{15}] = \\$25{,}775.15$, matching the statement exactly.`,
+$P_{15} = (2{,}400/0.045)[1 - 1/(1.045)^{15}] = \\$25{,}775.15$, matching the statement exactly.`,
       `**B) The total nominal withdrawals over 15 years, \\$36,000.00, exceed the required deposit of \\$25,775.15, illustrating that future dollars are worth less than present dollars.**  (true)
 
 The \\$36,000.00 in total nominal withdrawals is indeed larger than the \\$25,775.15 that must be deposited today, since each future withdrawal is discounted back to a smaller present-day equivalent.`,
@@ -5554,7 +5554,7 @@ A higher interest rate discounts future withdrawals more heavily, which REDUCES 
     tactical_explanations: [
       `**A) The present value needed to fund the 20-year annuity is approximately \\$57,349.67.**  (true)
 
-$P20 = (5{,}000/0.06)[1 - 1/(1.06)^{20}] = \\$57{,}349.67$, matching the statement exactly.`,
+$P_{20} = (5{,}000/0.06)[1 - 1/(1.06)^{20}] = \\$57{,}349.67$, matching the statement exactly.`,
       `**B) The perpetuity value is approximately \\$83,333.33, exceeding the 20-year annuity's present value by approximately \\$25,983.66.**  (true)
 
 The perpetuity value of \\$83,333.33 exceeds the 20-year annuity's present value of \\$57,349.67 by exactly \\$25,983.66, matching the statement exactly.`,
@@ -5619,7 +5619,7 @@ This is exactly how Section 11.5 derives the perpetuity formula: letting n tend 
     tactical_explanations: [
       `**A) The present value of Option 2's payments is approximately \\$16,288.18.**  (true)
 
-$P9 = (2{,}500/0.07)[1 - 1/(1.07)^{9}] = \\$16{,}288.18$, matching the statement exactly.`,
+$P_9 = (2{,}500/0.07)[1 - 1/(1.07)^{9}] = \\$16{,}288.18$, matching the statement exactly.`,
       `**B) Because \\$16,288.18 is less than \\$18,000.00, Option 2 is the financially better choice, saving approximately \\$1,811.82.**  (false)
 
 Since Option 2 costs only \\$16,288.18 in present-value terms versus Option 1's \\$18,000.00, Option 2 is genuinely cheaper by 18,000.00 - 16,288.18 = \\$1,711.82, not \\$1,811.82 as stated.`,
@@ -5684,10 +5684,10 @@ Growing the \\$18,000.00 lump sum forward at 7% for 9 years gives $18{,}000 \\ti
     tactical_explanations: [
       `**A) Strategy A's future value after 8 years is approximately \\$19,126.18.**  (true)
 
-$FA = 12{,}000 \\times (1.06)^{8} = \\$19{,}126.18$, matching the statement exactly.`,
+$F_A = 12{,}000 \\times (1.06)^{8} = \\$19{,}126.18$, matching the statement exactly.`,
       `**B) Strategy B's future value after 8 years is approximately \\$14,856.46.**  (false)
 
-$FB = (1{,}400/0.06)[(1.06)^{8} - 1] = \\$13{,}856.46$, not \\$14,856.46 as stated.`,
+$F_B = (1{,}400/0.06)[(1.06)^{8} - 1] = \\$13{,}856.46$, not \\$14,856.46 as stated.`,
       `**C) Strategy A yields a higher future value than Strategy B, by approximately \\$5,769.72.**  (false)
 
 19,126.18 - 13,856.46 = \\$5,269.72, not \\$5,769.72 as stated.`,
@@ -5889,7 +5889,7 @@ Deferring the payments pushes them further into the future, which REDUCES today'
 Extending the deferral to 8 years reduces the present value to \\$104,568.80, which remains well ABOVE half of the 4-year-deferred value (\\$66,007.81), not below it - the value shrinks as deferral lengthens, but not fast enough to fall below half in this case.`,
       `**E) The ratio of the deferred present value to the immediate perpetuity value is exactly 0.8321.**  (false)
 
-Because PV0 = $V/(1.06)^{4}$, the ratio PV0/V is by definition exactly the 4-year discount factor $1/(1.06)^{4}$ ≈ 0.7921, not 0.8321 as stated.`,
+Because $PV_0 = V/(1.06)^{4}$, the ratio PV0/V is by definition exactly the 4-year discount factor $1/(1.06)^{4}$ ≈ 0.7921, not 0.8321 as stated.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 91,
@@ -6466,7 +6466,7 @@ $S = 150{,}000 \\times e^{0.50} = \\$247{,}308.20$, matching the statement exact
 $x = 80{,}000/(1.06)^{6} = \\$56{,}396.85$, not \\$57,396.85 as stated.`,
       `**C) Component 3's present value, the 12-year ordinary annuity of \\$10,000 at 7%, is approximately \\$79,429.40.**  (true)
 
-$P12 = (10{,}000/0.07)[1 - 1/(1.07)^{12}] = \\$79{,}429.40$, matching the statement exactly.`,
+$P_{12} = (10{,}000/0.07)[1 - 1/(1.07)^{12}] = \\$79{,}429.40$, matching the statement exactly.`,
       `**D) Component 4's present value, the growing perpetuity paying \\$5,000 next year and growing at 2% forever at a 7% required return, is exactly \\$100,000.00.**  (true)
 
 P = 5,000/0.05 = \\$100,000.00, matching the statement exactly.`,
@@ -7965,7 +7965,7 @@ With only $a_0 = -\\$50{,}000$ and $a_1 = \\$6{,}000$: $r = (6{,}000/50{,}000) -
     case_id: `MATH 11.123`,
     title: `A renewable energy cooperative is comparing two designs for a community solar pr`,
     subsection: `11.7`,
-    context: `A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest \\$120,000, with net returns of \\$54,000 at the end of Year 1$ and $\\$88,000 at the end of Year 2. Design B, a simpler one-year project: invest \\$70,000, with a single net return of \\$81,200 at the end of Year 1.`,
+    context: `A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest \\$120,000, with net returns of \\$54,000 at the end of Year 1 and \\$88,000 at the end of Year 2. Design B, a simpler one-year project: invest \\$70,000, with a single net return of \\$81,200 at the end of Year 1.`,
     statements: [
       `The internal rate of return of Design A is approximately 11.04%.`,
       `The internal rate of return of Design B is exactly 16%.`,
@@ -7993,7 +7993,7 @@ With $a_1 = \\$44{,}000$: $88{,}000s^{2} + 44{,}000s - 120{,}000 = 0$ → $22s^{
     ],
     difficulty_level: `5/5`,
     sort_order: 123,
-    solution_overview: `A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest \\$120,000, with net returns of \\$54,000 at the end of Year 1$ and $\\$88,000 at the end of Year 2. Design B, a simpler one-year project: invest \\$70,000, with a single net return of \\$81,200 at the end of Year 1.
+    solution_overview: `A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest \\$120,000, with net returns of \\$54,000 at the end of Year 1 and \\$88,000 at the end of Year 2. Design B, a simpler one-year project: invest \\$70,000, with a single net return of \\$81,200 at the end of Year 1.
 
 **Part 1: Setup.**
 

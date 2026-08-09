@@ -209,8 +209,8 @@
     "formulas": "• Annual: PDV = $K(1+r)^{-t}$\n\n• Continuous: PDV = $Ke^{-rt}$\n\n• Combined PDV = $\\mathrm{PDV}_1$ + $\\mathrm{PDV}_2$",
     "steps": "$\\mathrm{PDV}_1$ = 40,000 × $(1.05)^{-2}$ = 40,000/1.1025 ≈ \\$36{,}281.18. $\\mathrm{PDV}_2$ = 65,000 × $(1.05)^{-5}$ = 65,000/1.276282 ≈ \\$50{,}930.87. Combined PDV = 36,281.18 + 50,930.87 ≈ \\$87{,}212.05. Compare: \\$50{,}930.87 (from the \\$65{,}000 payment) vs. \\$36{,}281.18 (from the \\$40{,}000 payment). Continuous $\\mathrm{PDV}_1$ = 40,000 × $e^{-0.10}$ ≈ \\$36{,}193.48; continuous $\\mathrm{PDV}_2$ = 65,000 × $e^{-0.25}$ ≈ \\$50{,}622.07; combined ≈ \\$86{,}815.55.",
     "explanations": [
-      "Discounting the \\$40{,}000 payment back 2 years at 5% annual compounding, $\\$40{,}000/(1.05)^{2}$, gives approximately \\$36{,}281.18 as today's equivalent value.",
-      "Discounting the \\$65{,}000 payment back 5 years at the same 5% rate, $\\$65{,}000/(1.05)^{5}$, gives approximately \\$50{,}930.87.",
+      "Discounting the \\$40{,}000 payment back 2 years at 5% annual compounding, $40{,}000/(1.05)^{2}$, gives approximately \\$36{,}281.18 as today's equivalent value.",
+      "Discounting the \\$65{,}000 payment back 5 years at the same 5% rate, $65{,}000/(1.05)^{5}$, gives approximately \\$50{,}930.87.",
       "Since present values from different payment dates can simply be added together, the combined present value of both milestone payments is 36,281.18 + 50,930.87 ≈ \\$87{,}212.05.",
       "Comparing the two individual present values directly, the \\$65{,}000 payment actually contributes the larger amount today, about \\$50{,}930.87, versus about \\$36{,}281.18 for the \\$40{,}000 payment. Its bigger face value more than makes up for the extra 3 years of discounting, so it is not smaller than the other payment's present value.",
       "Recomputing both payments with continuous compounding at 5% gives a combined present value of approximately \\$86{,}815.55. That figure is above \\$86{,}000, not below it, so the statement understates the true combined continuous present value."
@@ -240,7 +240,7 @@
     "formulas": "• PDV = $K(1+r)^{-t}$\n\n• An amount received today (t = 0) has present value equal to its face value",
     "steps": "$(1.06)^{3}$ ≈ 1.191016, so PDV of Option B = 25,500/1.191016 ≈ \\$21{,}410.30. Compare \\$22{,}000 (Option A, today) with \\$21{,}410.30 (Option B, discounted). At r = 0.03: $(1.03)^{3}$ ≈ 1.092727, so PDV = 25,500/1.092727 ≈ \\$23{,}336.02. At r = 0.06 the PDV was found above to be \\$21{,}410.30. At r = 0.05: $(1.05)^{3}$ ≈ 1.157625, so PDV = 25,500/1.157625 ≈ \\$22{,}029.40.",
     "explanations": [
-      "Discounting the \\$25{,}500 payment back 3 years at a 6% annual rate, $\\$25{,}500/(1.06)^{3}$, gives approximately \\$21{,}410.30 as its present value.",
+      "Discounting the \\$25{,}500 payment back 3 years at a 6% annual rate, $25{,}500/(1.06)^{3}$, gives approximately \\$21{,}410.30 as its present value.",
       "Comparing the two options directly, Option A's \\$22{,}000 received today is worth more than Option B's present value of \\$21{,}410.30, so at this 6% rate the immediate payment is the financially larger of the two.",
       "Lowering the discount rate to 3% reduces how much Option B's future payment is penalized for waiting, raising its present value to approximately \\$23{,}336.02. That is noticeably higher than the \\$22{,}780.00 stated, so the figure given is inaccurate.",
       "Whether Option B's present value stays above \\$22{,}000 depends entirely on the discount rate used. At the base 6% rate its present value is only about \\$21{,}410.30, which already falls below \\$22{,}000, so the claim that it always exceeds \\$22{,}000 regardless of rate does not hold.",
@@ -364,7 +364,7 @@
     "formulas": "• PDV = $K(1+r)^{-t}$\n\n• $K_2$ = (Target − $\\mathrm{PV}_1$) × $(1+r)^{t_2}$",
     "steps": "$\\mathrm{PV}_1$ = 42,000 × $(1.06)^{-3}$ = 42,000/1.191016 ≈ \\$35{,}264.01. $\\mathrm{PV}_2$ needed = 100,000 - 35,264.01 = \\$64{,}735.99. $K_2$ = 64,735.99 × $(1.06)^{6}$ = 64,735.99 × 1.418519 ≈ \\$91{,}829.24. If $t_2 = 3$: $K_2$ = 64,735.99 × $(1.06)^{3}$ = 64,735.99 × 1.191016 ≈ \\$77{,}101.60. At r = 8%: $K_2$ = 64,735.99 × $(1.08)^{6}$ = 64,735.99 × 1.586874 ≈ \\$102{,}727.88.",
     "explanations": [
-      "Discounting the existing \\$42{,}000 receivable back 3 years at 6% annual compounding, $\\$42{,}000/(1.06)^{3}$, gives approximately \\$35{,}264.01 as its present value today.",
+      "Discounting the existing \\$42{,}000 receivable back 3 years at 6% annual compounding, $42{,}000/(1.06)^{3}$, gives approximately \\$35{,}264.01 as its present value today.",
       "Since the covenant requires a combined present value of \\$100{,}000 and the first receivable already supplies about \\$35{,}264.01 of that, the remaining present value the second receivable must contribute is 100,000 - 35,264.01 ≈ \\$64{,}735.99.",
       "To find the face amount of a receivable given its required present value, the present value is grown forward by the compounding factor for its own maturity: 64,735.99 × $(1.06)^{6}$ ≈ \\$91{,}829.24 is the face amount needed on a receivable due in 6 years.",
       "A receivable due sooner needs less compounding to reach the same present-value contribution, so moving the maturity from 6 years to 3 years actually reduces the required face amount, not increases it. Recomputing with $t_2 = 3$ gives only about \\$77{,}101.60, which is smaller than \\$91{,}829.24, the opposite of what the statement claims.",
