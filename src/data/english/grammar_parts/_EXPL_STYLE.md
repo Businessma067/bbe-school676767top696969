@@ -42,7 +42,28 @@ Vary the phrasing across the bank. Ground every close in **this** item’s point
 - Trap: only on real near-miss falses. Tip: only when it adds a cue the body didn’t already say.
 - Omitting Tip/Trap must NOT cut the main sentences.
 
-### Format notes
-- Letter A–E matches index; claim repeats the exact statement.
-- UTF-8, no mojibake. Valid JSON. No commit.
-- Mid-body teaching phrases like “prefer …” or “the fix is …” are fine; the **last paragraph** must be a conclusion, not an order to the student.
+### Format notes — punctuation & symbols (strict)
+
+- Letter A–E matches index; claim repeats the **exact** statement text.
+- UTF-8 only: real `'` / `'` / `—` / `→` as needed. **No** mojibake, **no** `\1`/`\2` leaks, **no** ``.
+
+**Claim header period rule**
+- Shape is `**A) <statement>.**` only when the statement does **not** already end with sentence punctuation.
+- If the statement already ends with `.` `?` `!` (or those inside a final quote: `."` `?"` `!"`), do **not** add another period:
+  - ✅ `**A) Direct: "X." → "Y."**`
+  - ❌ `**A) Direct: "X." → "Y.".**`  ← double period before `**`
+
+**Arrows & quotes for transforms**
+- When you show A becomes B / unpacks / paraphrases / Direct→Reported, use an arrow and quote both sides:
+  - ✅ `"Having been briefed by the nurse" → "The parents were briefed by the nurse and then approved the treatment."`
+  - ✅ Tip form pairs: `Decide → to + base verb` (use `→`, not a bare hyphen).
+  - ❌ `Having been briefed by the nurse unpacks fairly into The parents were…` (no quotes, no arrow)
+
+**Statements**
+- Same arrow/quote rules inside `statements` when the item itself is a Direct → Reported pair.
+- No missing symbols, no accidental double periods, no orphan commas replacing arrows.
+
+**Closing**
+- Keep v4 reasoned conclusions (not student-click commands).
+- Mid-body teaching phrases like “prefer …” are fine.
+- Valid JSON. No commit.

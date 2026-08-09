@@ -101,7 +101,7 @@
         "**A) The question is how the team will respond.**\n\nAfter The question is, how the team will respond uses statement order: subject team before will. The noun-phrase frame does not license inversion. Read it aloud without rising question intonation inside the how-clause — it should sound like news.\n\nUnder The question is, how the team will respond stays flat, so the wording stands.\n",
         "**B) The question is how will the team respond?**\n\nhow will the team respond? is a direct question glued onto The question is. You need subject, then modal: how the team will respond. The trailing question mark is another giveaway that someone forgot the clause was embedded.\n\n**Trap:** Modal inversion after how looks like a tidy question mark fix, but embeds forbid it.\n\nModal inversion after how turns the embed into a quiz, so this doesn’t hold — \"The question is how the team will respond.\"\n",
         "**C) I am not sure what caused the blackout.**\n\nwhat is the subject of caused, so no do-support is required or allowed. Subject wh-clauses already have their actor in the wh-word. what caused the blackout is the whole story.\n\nSubject what already fills the actor slot, so what caused needs no do and the sentence is sound.\n",
-        "**D) I am not sure what did cause the blackout.**\n\nwhat did cause forces unnecessary do-support into an embedded subject question. Use what caused, not what did cause. Save did for object questions that need tense support in direct speech — not for subject who/what embeds.\n\n**Trap:** did after subject what feels emphatic or 'complete,' but it is wrong in this embed.\n\nUnnecessary did after subject what breaks the embed, so the line fails; the sound version is \"I am not sure what caused the blackout.\"\n",
+        "**D) I am not sure what did cause the blackout.**\n\nwhat did cause forces unnecessary do-support into an embedded subject question. \"what did cause\" → \"what caused\". Save did for object questions that need tense support in direct speech — not for subject who/what embeds.\n\n**Trap:** did after subject what feels emphatic or ‘complete,’ but it is wrong in this embed.\n\nUnnecessary did after subject what breaks the embed, so the line fails; the sound version is \"I am not sure what caused the blackout.\"\n",
         "**E) She asked whether were the tickets still valid.**\n\nwhether were the tickets… inverts were and the subject after whether. whether never takes the yes/no flip that stand-alone Were the tickets…? uses. Slide were back after tickets.\n\n**Trap:** were-fronting after whether is a near-miss copy of a direct yes/no question.\n\nwere before the tickets is yes/no flip after whether, so this doesn’t hold — \"She asked whether the tickets were still valid.\"\n"
       ],
       "highlights": [
@@ -123,8 +123,8 @@
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
         "They could not decide which option was it safer.",
-        "I'd like to know when the guests arrive.",
-        "I'd like to know when do the guests arrive.",
+        "I’d like to know when the guests arrive.",
+        "I’d like to know when do the guests arrive.",
         "Can you remind me where the spare keys are kept?",
         "Can you remind me where are the spare keys kept?"
       ],
@@ -137,8 +137,8 @@
       ],
       "tactical_explanations": [
         "**A) They could not decide which option was it safer.**\n\nExtra pronoun it after was breaks the clause; which option was safer is already complete. Never park a dummy it after the verb in an embedded which-clause. The option is the subject — you do not need a second subject.\n\n**Trap:** Adding it after was feels like filling a slot, but the which-phrase already filled the subject.\n\nDummy it after was doubles the subject the which-phrase already supplies, so the line fails; repair to \"They could not decide which option was safer.\"\n",
-        "**B) I'd like to know when the guests arrive.**\n\nwhen the guests arrive keeps subject–verb order after I'd like to know. Softeners do not change the embedded word-order rule. arrive sits after guests, exactly where a statement puts it.\n\nwhen the guests arrive keeps subject then verb under I'd like to know, so the wording stands.\n",
-        "**C) I'd like to know when do the guests arrive.**\n\nwhen do the guests arrive inserts do-support as if the clause were a direct question. The outer I'd like to know already asks; the inner clause should not. Delete do and keep statement order.\n\n**Trap:** do after when is a plausible softener leftover from classroom drills.\n\ndo after when reinvents a direct question inside the softener, so this doesn’t hold — \"I'd like to know when the guests arrive.\"\n",
+        "**B) I’d like to know when the guests arrive.**\n\nwhen the guests arrive keeps subject–verb order after I’d like to know. Softeners do not change the embedded word-order rule. arrive sits after guests, exactly where a statement puts it.\n\nwhen the guests arrive keeps subject then verb under I’d like to know, so the wording stands.\n",
+        "**C) I’d like to know when do the guests arrive.**\n\nwhen do the guests arrive inserts do-support as if the clause were a direct question. The outer I’d like to know already asks; the inner clause should not. Delete do and keep statement order.\n\n**Trap:** do after when is a plausible softener leftover from classroom drills.\n\ndo after when reinvents a direct question inside the softener, so this doesn’t hold — \"I’d like to know when the guests arrive.\"\n",
         "**D) Can you remind me where the spare keys are kept?**\n\nwhere the spare keys are kept is passive statement order inside a polite question. are stays after the subject keys. Passives still obey the same subject-before-finite-verb rule.\n\nPassive where the spare keys are kept still places are after keys, so the sentence is sound.\n",
         "**E) Can you remind me where are the spare keys kept?**\n\nwhere are the spare keys… flips are before the subject inside the embed. where + subject + are/is is the pattern; where + are + subject is the scar. The softener Can you remind me does not license that flip.\n\n**Trap:** Be-fronting after where is the most common location-embed trap.\n\nare-fronting after where is location-embed inversion, so the line fails; the sound version is \"Can you remind me where the spare keys are kept?\"\n"
       ],
@@ -236,8 +236,8 @@
       "title": "Task 7",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "I can't remember where I put my passport.",
-        "I can't remember where did I put my passport.",
+        "I can’t remember where I put my passport.",
+        "I can’t remember where did I put my passport.",
         "Have you found out whether the museum opens on Mondays?",
         "Have you found out whether does the museum open on Mondays?",
         "She wondered why everyone was whispering."
@@ -250,8 +250,8 @@
         true
       ],
       "tactical_explanations": [
-        "**A) I can't remember where I put my passport.**\n\nwhere I put my passport is statement order after remember. I is the subject; put is the past verb — nothing is inverted. Memory verbs still take embedded statement order.\n\nMemory where I put my passport keeps statement order, so the wording stands.\n",
-        "**B) I can't remember where did I put my passport.**\n\nwhere did I put… is direct-question do-support inside an embedded clause. can't remember does not license a second, inverted question. Use where I put….\n\n**Trap:** did after where is the default oral memory-question shape learners paste into embeds.\n\ndid after where invents a second quiz under can't remember, so the line fails; the sound version is \"I can't remember where I put my passport.\"\n",
+        "**A) I can’t remember where I put my passport.**\n\nwhere I put my passport is statement order after remember. I is the subject; put is the past verb — nothing is inverted. Memory verbs still take embedded statement order.\n\nMemory where I put my passport keeps statement order, so the wording stands.\n",
+        "**B) I can’t remember where did I put my passport.**\n\nwhere did I put… is direct-question do-support inside an embedded clause. can’t remember does not license a second, inverted question. Use where I put….\n\n**Trap:** did after where is the default oral memory-question shape learners paste into embeds.\n\ndid after where invents a second quiz under can’t remember, so the line fails; the sound version is \"I can’t remember where I put my passport.\"\n",
         "**C) Have you found out whether the museum opens on Mondays?**\n\nwhether the museum opens… keeps opens after the subject. No does appears, and none is needed. Perfect for a yes/no fact-check after find out.\n\nwhether the museum opens never invents does, so the sentence is sound.\n",
         "**D) Have you found out whether does the museum open on Mondays?**\n\nwhether does the museum open… invents do-support after whether. does belongs in Does the museum open…? as a stand-alone question, not here. Use whether the museum opens….\n\n**Trap:** does after whether looks like careful tense marking but recreates a direct question.\n\ndoes after whether recreates Does the museum…?, so this doesn’t hold — \"Have you found out whether the museum opens on Mondays?\"\n",
         "**E) She wondered why everyone was whispering.**\n\nwhy everyone was whispering keeps was after the subject. wonder why… wants a reason clause, not a flipped be-question. The progressive was whispering stays intact after everyone.\n\nwhy everyone was whispering parks was after the subject, so this line holds.\n"
@@ -277,8 +277,8 @@
         "She wondered why was everyone whispering.",
         "Let me know which bus you are taking.",
         "Let me know which bus are you taking.",
-        "We still don't know who broke the window.",
-        "We still don't know who did break the window."
+        "We still don’t know who broke the window.",
+        "We still don’t know who did break the window."
       ],
       "answer_key": [
         false,
@@ -291,8 +291,8 @@
         "**A) She wondered why was everyone whispering.**\n\nwhy was everyone… inverts was before the subject after wondered. The twin with why everyone was whispering is the correct shape. wonder why… never takes be-fronting inside the reason clause.\n\n**Trap:** Be-inversion after why is a classic wonder-clause near-miss.\n\nwas before everyone is be-fronting after wonder why, so this doesn’t hold — \"She wondered why everyone was whispering.\"\n",
         "**B) Let me know which bus you are taking.**\n\nwhich bus you are taking keeps you before are. which + noun + subject + verb is the embedded choice pattern. Let me know simply softens the request; it does not invert the clause.\n\nwhich bus you are taking keeps you before are, so the wording stands.\n",
         "**C) Let me know which bus are you taking.**\n\nwhich bus are you taking flips are before you inside the embed. If you can hear Are you taking…? after stripping the frame, the item is false. Use which bus you are taking.\n\n**Trap:** are-fronting after which + noun copies the Direct Which bus are you…? drill.\n\nare before you copies Which bus are you…? into the softener, so the line fails; prefer \"Let me know which bus you are taking.\"\n",
-        "**D) We still don't know who broke the window.**\n\nwho broke the window is a clean subject question with no do-support. who is the agent; broke is the past verb. Subject who + past verb needs no did.\n\nSubject who broke the window needs no did, so the sentence is sound.\n",
-        "**E) We still don't know who did break the window.**\n\nwho did break adds unnecessary emphatic or wrong do to a subject question. Emphatic did can appear in speech for contrast, but it is not the neutral embed pattern tested here. Use who broke, not who did break.\n\n**Trap:** Emphatic did after subject who looks confident and still fails the exam pattern.\n\nEmphatic did after subject who is not the neutral embed, so this doesn’t hold — \"We still don't know who broke the window.\"\n"
+        "**D) We still don’t know who broke the window.**\n\nwho broke the window is a clean subject question with no do-support. who is the agent; broke is the past verb. Subject who + past verb needs no did.\n\nSubject who broke the window needs no did, so the sentence is sound.\n",
+        "**E) We still don’t know who did break the window.**\n\nwho did break adds unnecessary emphatic or wrong do to a subject question. Emphatic did can appear in speech for contrast, but it is not the neutral embed pattern tested here. \"who did break\" → \"who broke\".\n\n**Trap:** Emphatic did after subject who looks confident and still fails the exam pattern.\n\nEmphatic did after subject who is not the neutral embed, so this doesn’t hold — \"We still don’t know who broke the window.\"\n"
       ],
       "highlights": [
         "why was everyone",
@@ -312,8 +312,8 @@
       "title": "Task 9",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "I'm curious how often she practises the piano.",
-        "I'm curious how often does she practise the piano.",
+        "I’m curious how often she practises the piano.",
+        "I’m curious how often does she practise the piano.",
         "Can anyone say where the nearest pharmacy is?",
         "Can anyone say where is the nearest pharmacy?",
         "They asked if we had packed enough water."
@@ -326,8 +326,8 @@
         true
       ],
       "tactical_explanations": [
-        "**A) I'm curious how often she practises the piano.**\n\nhow often she practises… keeps subject–verb order after curious. Frequency phrases do not change the embedded rule. practises sits after she, as in ordinary prose.\n\n**Tip:** Frequency wh-phrases still take statement order.\n\nFrequency how often she practises still takes statement order after curious, so the wording stands.\n",
-        "**B) I'm curious how often does she practise the piano.**\n\nhow often does she practise… inserts do-support as in a direct question. I'm curious already softens the ask; does is leftover from classroom drills. Use how often she practises….\n\n**Trap:** does after how often is a near-miss of How often does she…?\n\ndoes after how often is Direct How often does…? leftover, so the line fails; the sound version is \"I'm curious how often she practises the piano.\"\n",
+        "**A) I’m curious how often she practises the piano.**\n\nhow often she practises… keeps subject–verb order after curious. Frequency phrases do not change the embedded rule. practises sits after she, as in ordinary prose.\n\n**Tip:** Frequency wh-phrases still take statement order.\n\nFrequency how often she practises still takes statement order after curious, so the wording stands.\n",
+        "**B) I’m curious how often does she practise the piano.**\n\nhow often does she practise… inserts do-support as in a direct question. I’m curious already softens the ask; does is leftover from classroom drills. Use how often she practises….\n\n**Trap:** does after how often is a near-miss of How often does she…?\n\ndoes after how often is Direct How often does…? leftover, so the line fails; the sound version is \"I’m curious how often she practises the piano.\"\n",
         "**C) Can anyone say where the nearest pharmacy is?**\n\nwhere the nearest pharmacy is places is after the subject noun phrase. That is the classic location embed. Can anyone say… is the outer question; the where-clause stays flat.\n\nwhere the nearest pharmacy is parks is after the noun phrase, so the sentence is sound.\n",
         "**D) Can anyone say where is the nearest pharmacy?**\n\nwhere is the nearest pharmacy flips is before the subject inside say. This is the same signature contrast you meet with wonder where… throughout the topic. Use where the nearest pharmacy is.\n\n**Trap:** is-fronting after where remains the signature location trap at every difficulty.\n\nis-fronting after where is the signature location trap, so this doesn’t hold — \"Can anyone say where the nearest pharmacy is?\"\n",
         "**E) They asked if we had packed enough water.**\n\nif we had packed… is a yes/no embed with statement order. had stays after we; the past perfect is intact. if/whether + subject + verb — never invert.\n\nif we had packed keeps had after we, so this line holds.\n"
@@ -403,7 +403,7 @@
       ],
       "tactical_explanations": [
         "**A) The guide explained how the bridge had been built.**\n\nhow the bridge had been built keeps passive statement order after explained. had stays after bridge; the passive stack been built follows. Passive embeds still place the first auxiliary after the subject.\n\n**Tip:** Passive embeds still place had after the subject.\n\nPassive how the bridge had been built still places had after the subject, so the wording stands.\n",
-        "**B) The guide explained how had the bridge been built.**\n\nhow had the bridge been… inverts had into direct-question order. Explained how… does not invite a quiz-show flip of the auxiliary. Use how the bridge had been built.\n\n**Trap:** Passive stacks tempt had-fronting that looks especially 'complete' in exams.\n\nhad before the bridge turns the passive into a quiz, so the line fails; repair to \"The guide explained how the bridge had been built.\"\n",
+        "**B) The guide explained how had the bridge been built.**\n\nhow had the bridge been… inverts had into direct-question order. Explained how… does not invite a quiz-show flip of the auxiliary. Use how the bridge had been built.\n\n**Trap:** Passive stacks tempt had-fronting that looks especially ‘complete’ in exams.\n\nhad before the bridge turns the passive into a quiz, so the line fails; repair to \"The guide explained how the bridge had been built.\"\n",
         "**C) I need to find out whose jacket this is.**\n\nwhose jacket this is keeps this before is. whose + noun + subject + be is the ownership embed. find out frames the question without fronting is.\n\n**Tip:** whose + noun + subject + be.\n\nwhose jacket this is keeps this before is, so the sentence is sound.\n",
         "**D) I need to find out whose is this jacket.**\n\nwhose is this jacket flips is before this inside find out. Moving whose alone and fronting be is the classroom direct-question habit. Use whose jacket this is.\n\n**Trap:** whose is this… looks polished and still breaks embed order.\n\nwhose is this jacket fronts be inside find out, so this doesn’t hold — \"I need to find out whose jacket this is.\"\n",
         "**E) Did anyone mention when the concert starts?**\n\nwhen the concert starts is statement order after mention; the outer Did anyone… is the only direct question. Outer inversion does not license inner inversion. starts sits after concert, as a fact report would.\n\n**Tip:** Outer inversion does not license inner inversion.\n\nOuter Did anyone… already asks; when the concert starts stays flat inside, so this line holds.\n"
@@ -427,8 +427,8 @@
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
         "Did anyone mention when does the concert start?",
-        "We're trying to work out what the noise is coming from.",
-        "We're trying to work out what is the noise coming from.",
+        "We’re trying to work out what the noise is coming from.",
+        "We’re trying to work out what is the noise coming from.",
         "He refused to say whether he would join us later.",
         "He refused to say whether would he join us later."
       ],
@@ -441,8 +441,8 @@
       ],
       "tactical_explanations": [
         "**A) Did anyone mention when does the concert start?**\n\nwhen does the concert start inserts do-support inside the embedded clause. Did anyone mention… already asked; the embed should not ask again. Use when the concert starts.\n\n**Trap:** does inside when after a direct Did anyone… is a double-ask near-miss.\n\ndoes inside when doubles the ask under Did anyone mention, so this doesn’t hold — \"Did anyone mention when the concert starts?\"\n",
-        "**B) We're trying to work out what the noise is coming from.**\n\nwhat the noise is coming from keeps is after the subject noise. Object what + subject + verb (+ stranded preposition) is the modern embed. work out only introduces the clause; it does not invert it.\n\n**Tip:** Object what + subject + verb (+ stranded preposition).\n\nObject what the noise is coming from keeps is after noise, so the wording stands.\n",
-        "**C) We're trying to work out what is the noise coming from.**\n\nwhat is the noise coming from flips is before the subject inside work out. The stranded from is fine; the fronted is is not. Use what the noise is coming from.\n\n**Trap:** Stranded prepositions often co-travel with illegal is-fronting in learner English.\n\nis before the noise is illegal fronting beside a stranded from, so the line fails; the sound version is \"We're trying to work out what the noise is coming from.\"\n",
+        "**B) We’re trying to work out what the noise is coming from.**\n\nwhat the noise is coming from keeps is after the subject noise. Object what + subject + verb (+ stranded preposition) is the modern embed. work out only introduces the clause; it does not invert it.\n\n**Tip:** Object what + subject + verb (+ stranded preposition).\n\nObject what the noise is coming from keeps is after noise, so the wording stands.\n",
+        "**C) We’re trying to work out what is the noise coming from.**\n\nwhat is the noise coming from flips is before the subject inside work out. The stranded from is fine; the fronted is is not. Use what the noise is coming from.\n\n**Trap:** Stranded prepositions often co-travel with illegal is-fronting in learner English.\n\nis before the noise is illegal fronting beside a stranded from, so the line fails; the sound version is \"We’re trying to work out what the noise is coming from.\"\n",
         "**D) He refused to say whether he would join us later.**\n\nwhether he would join… keeps would after the subject. whether + subject + modal + verb is the standard yes/no embed with a modal. refused to say frames it without flipping would.\n\nwhether he would join parks would after he, so the sentence is sound.\n",
         "**E) He refused to say whether would he join us later.**\n\nwhether would he join… is modal inversion after whether. would before he is the direct Would he join…? shape wearing an embed costume. Use whether he would join….\n\n**Trap:** would-fronting after whether is a high-yield exam scar.\n\nwould before he is modal inversion after whether, so this doesn’t hold — \"He refused to say whether he would join us later.\"\n"
       ],
@@ -503,8 +503,8 @@
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
         "The coach asked who would the side be captained by on Saturday.",
-        "I'd appreciate it if you could tell me whether the Wi-Fi password has changed.",
-        "I'd appreciate it if you could tell me whether has the Wi-Fi password changed.",
+        "I’d appreciate it if you could tell me whether the Wi-Fi password has changed.",
+        "I’d appreciate it if you could tell me whether has the Wi-Fi password changed.",
         "No one could remember how the recipe went.",
         "No one could remember how did the recipe go."
       ],
@@ -517,8 +517,8 @@
       ],
       "tactical_explanations": [
         "**A) The coach asked who would the side be captained by on Saturday.**\n\nwho would the side be captained by… forces awkward inversion; prefer who would captain… or by whom the side would be captained. Avoid inverting inside a passive who-embed just to strand by. The previous true who would captain… is the better sibling.\n\n**Trap:** Inverted passive who-embeds look formal while quietly failing word order.\n\nInverted passive who would the side be… breaks subject–modal order, so the line fails; repair to \"The coach asked who would captain the side on Saturday.\"\n",
-        "**B) I'd appreciate it if you could tell me whether the Wi-Fi password has changed.**\n\nwhether the Wi-Fi password has changed keeps has after the subject inside a long polite frame. I'd appreciate it if you could tell me… is still just packaging. Long softeners take statement order in the embed.\n\n**Tip:** Long softeners still take statement order in the embed.\n\nEven a long softener leaves has after password in the whether-clause, so the wording stands.\n",
-        "**C) I'd appreciate it if you could tell me whether has the Wi-Fi password changed.**\n\nwhether has the Wi-Fi password… flips has before the subject. Password length and tech topic do not change the word-order rule. Use whether the Wi-Fi password has….\n\n**Trap:** has-fronting after whether survives even inside long polite packaging.\n\nhas before the Wi-Fi password is whether-flip under polite packaging, so this doesn’t hold — \"I'd appreciate it if you could tell me whether the Wi-Fi password has changed.\"\n",
+        "**B) I’d appreciate it if you could tell me whether the Wi-Fi password has changed.**\n\nwhether the Wi-Fi password has changed keeps has after the subject inside a long polite frame. I’d appreciate it if you could tell me… is still just packaging. Long softeners take statement order in the embed.\n\n**Tip:** Long softeners still take statement order in the embed.\n\nEven a long softener leaves has after password in the whether-clause, so the wording stands.\n",
+        "**C) I’d appreciate it if you could tell me whether has the Wi-Fi password changed.**\n\nwhether has the Wi-Fi password… flips has before the subject. Password length and tech topic do not change the word-order rule. Use whether the Wi-Fi password has….\n\n**Trap:** has-fronting after whether survives even inside long polite packaging.\n\nhas before the Wi-Fi password is whether-flip under polite packaging, so this doesn’t hold — \"I’d appreciate it if you could tell me whether the Wi-Fi password has changed.\"\n",
         "**D) No one could remember how the recipe went.**\n\nhow the recipe went is statement order after remember. recipe is the subject; went is the past verb. how + subject + past — no did.\n\nhow the recipe went is calm subject-then-past after remember, so the sentence is sound.\n",
         "**E) No one could remember how did the recipe go.**\n\nhow did the recipe go inserts do-support into the embed. If you can ask How did the recipe go? alone, you have reinvented a direct question. Use how the recipe went.\n\n**Trap:** how did… is the usual manner/story scar after remember/ask.\n\ndid after how reinvents How did the recipe go?, so the line fails; the sound version is \"No one could remember how the recipe went.\"\n"
       ],
@@ -542,8 +542,8 @@
       "statements": [
         "The review depends on whether the supplier can meet the deadline.",
         "The review depends on whether can the supplier meet the deadline.",
-        "She couldn't decide whom she should invite first.",
-        "She couldn't decide whom should she invite first.",
+        "She couldn’t decide whom she should invite first.",
+        "She couldn’t decide whom should she invite first.",
         "Tell us what made the engine stall."
       ],
       "answer_key": [
@@ -556,8 +556,8 @@
       "tactical_explanations": [
         "**A) The review depends on whether the supplier can meet the deadline.**\n\nwhether the supplier can meet… keeps can after the subject even after depends on. Preposition + whether still takes statement order. The economic topic does not change the grammar.\n\n**Tip:** Preposition + whether still takes statement order.\n\ndepends on whether still wants can after supplier, so the wording stands.\n",
         "**B) The review depends on whether can the supplier meet the deadline.**\n\nwhether can the supplier… is modal inversion after whether. can before supplier is Direct Can the supplier…? with a formal hat on. Use whether the supplier can….\n\n**Trap:** Modal fronting after whether under a formal noun subject looks especially exam-like.\n\ncan before the supplier is modal fronting after whether, so this doesn’t hold — \"The review depends on whether the supplier can meet the deadline.\"\n",
-        "**C) She couldn't decide whom she should invite first.**\n\nwhom she should invite keeps she before should. Object whom + subject + modal + verb is the formal object pattern. decide whom… embeds that pattern without flipping should.\n\n**Tip:** Object whom + subject + modal + verb.\n\nObject whom she should invite keeps she before should, so the sentence is sound.\n",
-        "**D) She couldn't decide whom should she invite first.**\n\nwhom should she invite flips should before she inside decide. Formal whom does not revive direct-question order. Use whom she should invite.\n\n**Trap:** Formal whom often smuggles Should she…? order into the embed.\n\nshould before she smuggles Should she…? under formal whom, so the line fails; prefer \"She couldn't decide whom she should invite first.\"\n",
+        "**C) She couldn’t decide whom she should invite first.**\n\nwhom she should invite keeps she before should. Object whom + subject + modal + verb is the formal object pattern. decide whom… embeds that pattern without flipping should.\n\n**Tip:** Object whom + subject + modal + verb.\n\nObject whom she should invite keeps she before should, so the sentence is sound.\n",
+        "**D) She couldn’t decide whom should she invite first.**\n\nwhom should she invite flips should before she inside decide. Formal whom does not revive direct-question order. Use whom she should invite.\n\n**Trap:** Formal whom often smuggles Should she…? order into the embed.\n\nshould before she smuggles Should she…? under formal whom, so the line fails; prefer \"She couldn’t decide whom she should invite first.\"\n",
         "**E) Tell us what made the engine stall.**\n\nwhat made the engine stall is a subject what-clause with no do-support. what is the cause; made is the past verb. what + past verb when what is the subject.\n\n**Tip:** what + past verb when what is the subject.\n\nSubject what made the engine stall needs no did, so this line holds.\n"
       ],
       "highlights": [
@@ -579,8 +579,8 @@
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
         "Tell us what did make the engine stall.",
-        "I'm still unsure of how the app works offline.",
-        "I'm still unsure of how does the app work offline.",
+        "I’m still unsure of how the app works offline.",
+        "I’m still unsure of how does the app work offline.",
         "They wanted to know to whom the parcel should be delivered.",
         "They wanted to know to whom should the parcel be delivered."
       ],
@@ -592,9 +592,9 @@
         false
       ],
       "tactical_explanations": [
-        "**A) Tell us what did make the engine stall.**\n\nwhat did make… adds unnecessary do to a subject question. The prior true Tell us what made… is your template. Use what made, not what did make.\n\n**Trap:** did after subject what feels like careful tense but is the wrong twin.\n\ndid after subject what is the wrong twin of what made, so this doesn’t hold — \"Tell us what made the engine stall.\"\n",
-        "**B) I'm still unsure of how the app works offline.**\n\nhow the app works offline keeps works after the subject after unsure of. Preposition + how still takes statement order. offline is just an adjunct; it does not move words.\n\n**Tip:** Preposition + how still takes statement order.\n\nunsure of how the app works keeps statement order after the preposition, so the wording stands.\n",
-        "**C) I'm still unsure of how does the app work offline.**\n\nhow does the app work… inserts do-support inside the embed. unsure of how… is not the same as asking How does…? aloud. Use how the app works….\n\n**Trap:** does after how under unsure of is a polished near-miss.\n\ndoes after how under unsure of recreates a stand-alone quiz, so the line fails; repair to \"I'm still unsure of how the app works offline.\"\n",
+        "**A) Tell us what did make the engine stall.**\n\nwhat did make… adds unnecessary do to a subject question. The prior true Tell us what made… is your template. \"what did make\" → \"what made\".\n\n**Trap:** did after subject what feels like careful tense but is the wrong twin.\n\ndid after subject what is the wrong twin of what made, so this doesn’t hold — \"Tell us what made the engine stall.\"\n",
+        "**B) I’m still unsure of how the app works offline.**\n\nhow the app works offline keeps works after the subject after unsure of. Preposition + how still takes statement order. offline is just an adjunct; it does not move words.\n\n**Tip:** Preposition + how still takes statement order.\n\nunsure of how the app works keeps statement order after the preposition, so the wording stands.\n",
+        "**C) I’m still unsure of how does the app work offline.**\n\nhow does the app work… inserts do-support inside the embed. unsure of how… is not the same as asking How does…? aloud. Use how the app works….\n\n**Trap:** does after how under unsure of is a polished near-miss.\n\ndoes after how under unsure of recreates a stand-alone quiz, so the line fails; repair to \"I’m still unsure of how the app works offline.\"\n",
         "**D) They wanted to know to whom the parcel should be delivered.**\n\nto whom the parcel should be delivered keeps should after the subject in a formal prepositional wh-clause. to whom + subject + modal + verb is the careful written pattern. Passive be delivered does not change the subject-first rule.\n\n**Tip:** to whom + subject + modal + verb.\n\nto whom the parcel should be delivered leaves should after parcel, so the sentence is sound.\n",
         "**E) They wanted to know to whom should the parcel be delivered.**\n\nto whom should the parcel… inverts should before the subject. Formal register is not a license for modal fronting. Use to whom the parcel should be….\n\n**Trap:** Formal to whom often unlocks illegal should-fronting in learner writing.\n\nshould before the parcel is modal fronting after formal to whom, so this doesn’t hold — \"They wanted to know to whom the parcel should be delivered.\"\n"
       ],
@@ -672,7 +672,7 @@
         "**B) It is hard to say whether or not the weather will clear by noon.**\n\nwhether or not the weather will clear… keeps will after the subject; or not does not change order. whether (or not) + subject + verb is the full pattern. hard to say merely frames the uncertainty.\n\n**Tip:** whether (or not) + subject + verb.\n\nwhether or not still parks will after weather, so the wording stands.\n",
         "**C) It is hard to say whether or not will the weather clear by noon.**\n\nwhether or not will the weather… inverts will before the subject. Adding or not does not unlock Direct Will the weather…? order. Use whether or not the weather will….\n\n**Trap:** or not often fools writers into thinking modal fronting is now allowed.\n\nwill before the weather is modal leapfrog that or not does not license, so this doesn’t hold — \"It is hard to say whether or not the weather will clear by noon.\"\n",
         "**D) The children kept asking where Father Christmas lived.**\n\nwhere Father Christmas lived is classic storybook statement order after asking. Father Christmas before lived — no auxiliary flip. where + subject + past.\n\nwhere Father Christmas lived is flat storybook subject-then-past, so the sentence is sound.\n",
-        "**E) The children kept asking where did Father Christmas live.**\n\nwhere did Father Christmas live is direct-question order inside kept asking. Children's narratives still obey the embed rule in careful writing. Use where Father Christmas lived.\n\n**Trap:** Storybook where did… is adult do-support scarring of a calm past embed.\n\ndid after where scars the calm past embed, so the line fails; the sound version is \"The children kept asking where Father Christmas lived.\"\n"
+        "**E) The children kept asking where did Father Christmas live.**\n\nwhere did Father Christmas live is direct-question order inside kept asking. Children’s narratives still obey the embed rule in careful writing. Use where Father Christmas lived.\n\n**Trap:** Storybook where did… is adult do-support scarring of a calm past embed.\n\ndid after where scars the calm past embed, so the line fails; the sound version is \"The children kept asking where Father Christmas lived.\"\n"
       ],
       "highlights": [
         "which shelf do the spices",
