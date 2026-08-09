@@ -1837,7 +1837,7 @@
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
         "Every member of the book club has cast a vote.",
-        "The number of warranty claims have doubled year on year.",
+        "The number of broken toys have doubled year on year.",
         "Neither the tenant nor the landlords' agents is contesting the clause.",
         "There are a clear timeline attached to the renovation steps.",
         "The captain, together with the non-playing coaches, intends to resign if the bid fails."
@@ -1851,7 +1851,7 @@
       ],
       "tactical_explanations": [
         "TRUE — \"Every member\" → singular \"has cast.\"\n\nTip: The of-phrase does not pluralise every/each.",
-        "FALSE — \"The number of\" needs singular \"has doubled.\"\n\nTip: Do not agree with \"claims.\"",
+        "FALSE — \"The number of\" needs singular \"has doubled.\"\n\nTip: Do not agree with \"toys.\"",
         "FALSE — Nearer subject \"agents\" is plural: \"are contesting,\" not \"is.\"\n\nTip: Possessive markers on the nearer noun do not change its plural status.",
         "FALSE — The real subject is singular \"a clear timeline,\" so write \"there is.\"\n\nTip: Articles and adjectives after there often hide a singular head.",
         "TRUE — Singular captain remains the subject; \"intends\" is correct.\n\nTip: Together with never creates a plural compound subject."
@@ -1912,10 +1912,10 @@
       "title": "Task 9",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Neither the treasurer nor the auditors have released the working papers.",
-        "The project lead, along with the delivery partners, has signed the charter.",
+        "Neither the secretary nor the volunteers have released the minutes.",
+        "The project lead, along with the helpers, has signed the rota.",
         "There remain two conditions before we can start the trek.",
-        "Every one of the shortlisted vendors meets the security checklist.",
+        "Every one of the shortlisted bakers meets the hygiene checklist.",
         "The number of active memberships are being reduced this quarter."
       ],
       "answer_key": [
@@ -1926,8 +1926,8 @@
         false
       ],
       "tactical_explanations": [
-        "TRUE — Nearer plural \"auditors\" → \"have released.\"\n\nTip: Read only from \"nor\" to the verb.",
-        "TRUE — Singular lead + along with… → \"has signed.\"\n\nTip: Parenthetical partners do not join the subject.",
+        "TRUE — Nearer plural \"volunteers\" → \"have released.\"\n\nTip: Read only from \"nor\" to the verb.",
+        "TRUE — Singular lead + along with… → \"has signed.\"\n\nTip: Parenthetical helpers do not join the subject.",
         "TRUE — Plural \"conditions\" correctly takes \"remain.\"\n\nTip: Invert the sentence mentally: \"two conditions remain.\"",
         "TRUE — \"Every one\" is singular → \"meets.\"\n\nTip: \"Every one of\" still points to a single unit for agreement.",
         "FALSE — \"The number of\" is singular: \"is being reduced.\"\n\nTip: Passive voice does not change the number of the subject."
@@ -1952,7 +1952,7 @@
       "statements": [
         "Neither the driver nor the passengers was listed on the boarding sheet.",
         "A number of rules in the house agreement has been waived.",
-        "There is too many variables still open in the pricing model.",
+        "There is too many variables still open in the recipe.",
         "The chair, as well as the committee secretaries, was delayed by the vote.",
         "The data collected overnight do not yet justify a schedule change."
       ],
@@ -1989,10 +1989,10 @@
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
         "Each monthly playlist submitted by the DJs goes to the host first.",
-        "Neither the landlord nor the tenants' solicitors have consented to the break clause.",
+        "Neither the landlord nor the tenants' solicitors have consented to the repair plan.",
         "There appears to be several gaps in the packing checklist.",
-        "The marketing lead, together with two agencies, are pitching tomorrow.",
-        "The number of unsettled bookings has dropped below the risk limit."
+        "The podcast host, together with two editors, are pitching tomorrow.",
+        "The number of unsettled bookings has dropped below fifty."
       ],
       "answer_key": [
         true,
@@ -2005,7 +2005,7 @@
         "TRUE — \"Each monthly playlist\" → singular \"goes.\"\n\nTip: Long modifiers after each do not change singularity.",
         "TRUE — Nearer plural \"solicitors\" → \"have consented.\"\n\nTip: Possessive \"tenants'\" does not make the nearer noun singular.",
         "FALSE — Although \"appears\" can introduce a clause, the logical subject \"several gaps\" is plural; prefer \"there appear to be.\"\n\nTip: In there + appear/seem, still match the notional plural subject in careful exam English.",
-        "FALSE — Singular lead + together with… → \"is pitching.\"\n\nTip: Agencies after together with are not co-subjects.",
+        "FALSE — Singular host + together with… → \"is pitching.\"\n\nTip: Editors after together with are not co-subjects.",
         "TRUE — \"The number of\" + singular \"has dropped.\"\n\nTip: Keep agreeing with number, not bookings."
       ],
       "highlights": [
@@ -2026,11 +2026,11 @@
       "title": "Task 12",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "A number of regional managers is attending the strategy offsite.",
-        "Neither the insurer nor the brokers was willing to extend cover.",
-        "There is only one schedule left to finalise before listing.",
-        "Every analyst on the deal team have signed the confidentiality undertaking.",
-        "The data in the appendix contradict the oral presentation."
+        "A number of regional coaches is attending the training weekend.",
+        "Neither the host nor the guests was willing to extend the stay.",
+        "There is only one schedule left to finalise before the show.",
+        "Every volunteer on the stall have signed the rota sheet.",
+        "The data in the appendix contradict the spoken summary."
       ],
       "answer_key": [
         false,
@@ -2040,10 +2040,10 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — \"A number of regional managers\" → \"are attending.\"\n\nTip: Replace with \"several managers\" to hear the plural.",
-        "FALSE — Nearer plural \"brokers\" → \"were willing.\"\n\nTip: Do not let singular \"insurer\" pull the verb.",
+        "FALSE — \"A number of regional coaches\" → \"are attending.\"\n\nTip: Replace with \"several coaches\" to hear the plural.",
+        "FALSE — Nearer plural \"guests\" → \"were willing.\"\n\nTip: Do not let singular \"host\" pull the verb.",
         "TRUE — Singular \"one schedule\" → \"there is.\"\n\nTip: \"Only one\" is a reliable singular signal.",
-        "FALSE — \"Every analyst\" → singular \"has signed.\"\n\nTip: \"On the deal team\" is only a locator phrase.",
+        "FALSE — \"Every volunteer\" → singular \"has signed.\"\n\nTip: \"On the stall\" is only a locator phrase.",
         "TRUE — Formal plural data → \"contradict.\"\n\nTip: Plural verbs with data are expected in formal register."
       ],
       "highlights": [
@@ -2064,11 +2064,11 @@
       "title": "Task 13",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Neither the buyer nor the sellers' counsel has requested an adjournment.",
-        "The finance director, along with the controllers, reviews the accruals nightly.",
-        "There are still a few outstanding confirmations from counterparties.",
-        "Each of the joint venture partners retains a board seat.",
-        "The data underlying the stress test suggest limited contagion risk."
+        "Neither the buyer nor the sellers' lawyer has requested a delay.",
+        "The head chef, along with the sous-chefs, reviews the specials nightly.",
+        "There are still a few outstanding RSVPs from classmates.",
+        "Each of the flatshare partners retains a spare key.",
+        "The data underlying the fitness test suggest limited injury risk."
       ],
       "answer_key": [
         true,
@@ -2078,9 +2078,9 @@
         true
       ],
       "tactical_explanations": [
-        "TRUE — Nearer singular \"counsel\" → \"has requested.\"\n\nTip: Counsel can be singular even when plural parties are nearby.",
-        "TRUE — Singular director governs \"reviews\" despite along with.\n\nTip: Strip the insert; \"the finance director reviews\" must stand alone.",
-        "TRUE — Plural \"confirmations\" → \"there are.\"\n\nTip: \"A few\" marks plurality after there.",
+        "TRUE — Nearer singular \"lawyer\" → \"has requested.\"\n\nTip: A singular nearer noun wins even when plural parties are nearby.",
+        "TRUE — Singular chef governs \"reviews\" despite along with.\n\nTip: Strip the insert; \"the head chef reviews\" must stand alone.",
+        "TRUE — Plural \"RSVPs\" → \"there are.\"\n\nTip: \"A few\" marks plurality after there.",
         "TRUE — \"Each of\" → singular \"retains.\"\n\nTip: Partners in the of-phrase do not control the verb.",
         "TRUE — Formal plural data → \"suggest.\"\n\nTip: Participial modifiers (\"underlying…\") never change data's formal plurality."
       ],
@@ -2094,7 +2094,7 @@
       "difficulty_level": "4/5",
       "sort_order": 13,
       "subsection": "g.3",
-      "solution_overview": "All five are correct but denser. Treat them as benchmark sentences for counsel after neither…nor, along with, there are + a few, each of, and formal data."
+      "solution_overview": "All five are correct but denser. Treat them as benchmark sentences for proximity after neither…nor, along with, there are + a few, each of, and formal data."
     },
     {
       "id": "en-g-3-14",
@@ -2102,11 +2102,11 @@
       "title": "Task 14",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "The number of unresolved exceptions are alarming the audit committee.",
-        "Neither the sponsor nor the limited partners was invited to the closed session.",
-        "There seems to be several inconsistencies between the two ledgers.",
-        "The managing partner, as well as the associates, have approved the engagement letter.",
-        "A number of warranties in the SPA survive completion."
+        "The number of unresolved tickets are alarming the helpdesk.",
+        "Neither the sponsor nor the team captains was invited to the closed meeting.",
+        "There seems to be several inconsistencies between the two diaries.",
+        "The managing editor, as well as the reporters, have approved the feature.",
+        "A number of clauses in the lease survive completion."
       ],
       "answer_key": [
         false,
@@ -2117,10 +2117,10 @@
       ],
       "tactical_explanations": [
         "FALSE — \"The number of\" → singular \"is alarming.\"\n\nTip: Continuous/progressive forms still follow the head subject's number.",
-        "FALSE — Nearer plural \"limited partners\" → \"were invited.\"\n\nTip: Long second nouns after nor are still plural when marked -s.",
+        "FALSE — Nearer plural \"team captains\" → \"were invited.\"\n\nTip: Long second nouns after nor are still plural when marked -s.",
         "FALSE — Prefer \"there seem to be several inconsistencies\" to match the plural complement.\n\nTip: Seem/appear after there must still track the real subject's number in careful usage.",
-        "FALSE — Singular partner + as well as… → \"has approved.\"\n\nTip: Associates after as well as are not co-subjects.",
-        "TRUE — \"A number of warranties\" → plural \"survive.\"\n\nTip: Present simple plural has no -s: survive, not survives."
+        "FALSE — Singular editor + as well as… → \"has approved.\"\n\nTip: Reporters after as well as are not co-subjects.",
+        "TRUE — \"A number of clauses\" → plural \"survive.\"\n\nTip: Present simple plural has no -s: survive, not survives."
       ],
       "highlights": [
         "are alarming",
@@ -2140,11 +2140,11 @@
       "title": "Task 15",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Neither the retailer nor its franchisees is bound by the exclusivity clause.",
-        "Every one of the contingent liabilities has been disclosed in the notes.",
-        "There remain, after the renegotiation, three material open points.",
-        "The COO, together with the divisional heads, was accountable for the overspend.",
-        "The data released this morning confirm the earlier guidance."
+        "Neither the shop nor its branches is bound by the Sunday rule.",
+        "Every one of the contingent prizes has been disclosed in the notes.",
+        "There remain, after the rethink, three material open points.",
+        "The coach, together with the squad captains, was accountable for the overspend.",
+        "The data released this morning confirm the earlier forecast."
       ],
       "answer_key": [
         false,
@@ -2154,10 +2154,10 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — Nearer plural \"franchisees\" → \"are bound.\"\n\nTip: Corporate possessives (\"its\") before the nearer noun do not singularise it.",
+        "FALSE — Nearer plural \"branches\" → \"are bound.\"\n\nTip: Possessives (\"its\") before the nearer noun do not singularise it.",
         "TRUE — \"Every one of\" → singular \"has been disclosed.\"\n\nTip: Passive perfect still keeps singular agreement with every one.",
         "TRUE — Plural \"three material open points\" → \"remain,\" even with a mid-sentence insert.\n\nTip: Ignore the comma aside and match the postponed plural subject.",
-        "TRUE — Singular COO → \"was accountable.\"\n\nTip: Together with never creates a plural subject.",
+        "TRUE — Singular coach → \"was accountable.\"\n\nTip: Together with never creates a plural subject.",
         "TRUE — Formal plural data → \"confirm.\"\n\nTip: Time adjuncts (\"this morning\") are irrelevant to number."
       ],
       "highlights": [
@@ -2178,11 +2178,11 @@
       "title": "Task 16",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "A number of key performance indicators was revised after the board meeting.",
-        "Neither the trustee nor the beneficiaries' advisers has objected to the distribution.",
-        "There is, contrary to the press note, several unpaid invoices still on the ledger.",
-        "Each subsidiary that operates abroad file a local compliance certificate.",
-        "The number of customer complaints has stabilised since the refunds."
+        "A number of practice drills was revised after the club meeting.",
+        "Neither the tutor nor the students' mentors has objected to the timetable.",
+        "There is, contrary to the notice, several unpaid bills still on the fridge.",
+        "Each branch that operates abroad file a local safety certificate.",
+        "The number of noise complaints has stabilised since the quiet hours."
       ],
       "answer_key": [
         false,
@@ -2192,10 +2192,10 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — \"A number of … indicators\" → \"were revised.\"\n\nTip: Long plural noun phrases after a number of still take plural verbs.",
-        "FALSE — Nearer plural \"advisers\" → \"have objected.\"\n\nTip: Beneficiaries' only marks possession; advisers remain plural.",
-        "FALSE — Plural \"invoices\" → \"there are,\" despite the interrupting phrase.\n\nTip: Cross out the contrary-to aside before choosing is/are.",
-        "FALSE — \"Each subsidiary\" → singular \"files.\"\n\nTip: Relative clauses after each do not licence a plural verb.",
+        "FALSE — \"A number of … drills\" → \"were revised.\"\n\nTip: Long plural noun phrases after a number of still take plural verbs.",
+        "FALSE — Nearer plural \"mentors\" → \"have objected.\"\n\nTip: Students' only marks possession; mentors remain plural.",
+        "FALSE — Plural \"bills\" → \"there are,\" despite the interrupting phrase.\n\nTip: Cross out the contrary-to aside before choosing is/are.",
+        "FALSE — \"Each branch\" → singular \"files.\"\n\nTip: Relative clauses after each do not licence a plural verb.",
         "TRUE — \"The number of\" → singular \"has stabilised.\"\n\nTip: Keep contrasting the number (singular) with a number (plural)."
       ],
       "highlights": [
@@ -2216,11 +2216,11 @@
       "title": "Task 17",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Neither the parent company nor the overseas affiliates was named in the indictment.",
-        "The treasury desk, along with the front-office traders, approve large FX tickets.",
-        "There appear to be a single bottleneck in the onboarding workflow.",
-        "Every set of consolidated accounts for the group is reviewed by external counsel.",
-        "The data on which the valuation rests are drawn from audited filings."
+        "Neither the parent club nor the satellite teams was named in the report.",
+        "The box office, along with the front-of-house stewards, approve large group bookings.",
+        "There appear to be a single bottleneck in the check-in workflow.",
+        "Every set of rehearsal notes for the cast is reviewed by the director.",
+        "The data on which the ranking rests are drawn from audited scores."
       ],
       "answer_key": [
         false,
@@ -2230,10 +2230,10 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — Nearer plural \"affiliates\" → \"were named.\"\n\nTip: International business nouns ending in -es are still plural for agreement.",
-        "FALSE — Singular \"treasury desk\" + along with… → \"approves.\"\n\nTip: Desk is a singular institutional subject here.",
+        "FALSE — Nearer plural \"teams\" → \"were named.\"\n\nTip: Extra adjectives before the nearer noun do not change its plural number.",
+        "FALSE — Singular \"box office\" + along with… → \"approves.\"\n\nTip: Box office is a singular institutional subject here.",
         "FALSE — The complement \"a single bottleneck\" is singular → \"there appears to be.\"\n\nTip: Appear/seem after there must track a singular complement too — not only plurals.",
-        "TRUE — \"Every set\" is singular → \"is reviewed.\"\n\nTip: \"Set of accounts\" is one unit; every keeps it singular.",
+        "TRUE — \"Every set\" is singular → \"is reviewed.\"\n\nTip: \"Set of notes\" is one unit; every keeps it singular.",
         "TRUE — Formal plural data → \"are drawn,\" even inside a which-clause sandwich.\n\nTip: Relative clauses around data do not convert it to singular on formal papers."
       ],
       "highlights": [
@@ -2246,7 +2246,7 @@
       "difficulty_level": "5/5",
       "sort_order": 17,
       "subsection": "g.3",
-      "solution_overview": "Top band: reverse traps such as \"there appear … a single\" and institutional singulars like \"desk.\" Read for the actual head noun, not the surrounding formality."
+      "solution_overview": "Top band: reverse traps such as \"there appear … a single\" and institutional singulars like \"box office.\" Read for the actual head noun, not the surrounding formality."
     },
     {
       "id": "en-g-3-18",
@@ -2254,11 +2254,11 @@
       "title": "Task 18",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Neither the liquidator nor the secured creditors have accepted the revised timetable.",
-        "The general counsel, together with outside counsel, has cleared the disclosure.",
-        "There remain, for the avoidance of doubt, two covenants still in force.",
-        "Each of the framework agreements provides for stepped damages.",
-        "The data furnished by the target company support a higher multiple."
+        "Neither the organiser nor the registered helpers have accepted the revised timetable.",
+        "The general editor, together with outside advisers, has cleared the disclosure.",
+        "There remain, for the avoidance of doubt, two rules still in force.",
+        "Each of the house agreements provides for stepped fines.",
+        "The data furnished by the target school support a higher ranking."
       ],
       "answer_key": [
         true,
@@ -2268,10 +2268,10 @@
         true
       ],
       "tactical_explanations": [
-        "TRUE — Nearer plural \"creditors\" → \"have accepted.\"\n\nTip: Secured creditors is a standard plural legal subject.",
-        "TRUE — Singular general counsel governs \"has cleared.\"\n\nTip: Together with outside counsel is parenthetical only.",
-        "TRUE — Plural \"two covenants\" → \"remain\" despite the formal aside.\n\nTip: Legal padding between there and the subject changes nothing.",
-        "TRUE — \"Each of\" → singular \"provides.\"\n\nTip: Framework agreements in the of-phrase stay out of the verb slot.",
+        "TRUE — Nearer plural \"helpers\" → \"have accepted.\"\n\nTip: Long nearer nouns after nor still obey proximity.",
+        "TRUE — Singular general editor governs \"has cleared.\"\n\nTip: Together with outside advisers is parenthetical only.",
+        "TRUE — Plural \"two rules\" → \"remain\" despite the formal aside.\n\nTip: Padding between there and the subject changes nothing.",
+        "TRUE — \"Each of\" → singular \"provides.\"\n\nTip: Agreements in the of-phrase stay out of the verb slot.",
         "TRUE — Formal plural data → \"support.\"\n\nTip: Past participles like \"furnished\" do not singularise data."
       ],
       "highlights": [
@@ -2284,7 +2284,7 @@
       "difficulty_level": "5/5",
       "sort_order": 18,
       "subsection": "g.3",
-      "solution_overview": "Five correct formal-register models. Internalise how legal inserts and dual \"counsel\" references still leave a single grammatical subject in charge of the verb."
+      "solution_overview": "Five correct formal-register models. Internalise how inserts and dual adviser references still leave a single grammatical subject in charge of the verb."
     },
     {
       "id": "en-g-3-19",
@@ -2292,10 +2292,10 @@
       "title": "Task 19",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "A number of material adverse change clauses was triggered overnight.",
-        "Neither the arranger nor the other lenders in the syndicate was prepared to waive the default.",
+        "A number of material safety clauses was triggered overnight.",
+        "Neither the organiser nor the other stewards in the group was prepared to waive the rule.",
         "There is, when one examines the schedules carefully, more than two conflicting dates.",
-        "The audit partner, as well as the engagement team, were responsible for the opinion.",
+        "The lead reviewer, as well as the marking team, were responsible for the opinion.",
         "The data that the model relies on have been restated twice this year."
       ],
       "answer_key": [
@@ -2306,10 +2306,10 @@
         true
       ],
       "tactical_explanations": [
-        "FALSE — \"A number of … clauses\" → \"were triggered.\"\n\nTip: Dense legal noun phrases still follow the a-number-of plural rule.",
-        "FALSE — Nearer plural \"lenders\" → \"were prepared.\"\n\nTip: Extra modifiers after the nearer noun (\"in the syndicate\") do not make it singular.",
+        "FALSE — \"A number of … clauses\" → \"were triggered.\"\n\nTip: Dense noun phrases still follow the a-number-of plural rule.",
+        "FALSE — Nearer plural \"stewards\" → \"were prepared.\"\n\nTip: Extra modifiers after the nearer noun (\"in the group\") do not make it singular.",
         "FALSE — \"More than two conflicting dates\" is plural → \"there are.\"\n\nTip: Quantity phrases greater than one take plural after there.",
-        "FALSE — Singular partner + as well as… → \"was responsible.\"\n\nTip: Engagement team after as well as is not a co-subject.",
+        "FALSE — Singular reviewer + as well as… → \"was responsible.\"\n\nTip: Marking team after as well as is not a co-subject.",
         "TRUE — Formal plural data correctly takes \"have been restated.\"\n\nTip: Prefer plural agreement with data on formal exams unless the paper allows informal singular data."
       ],
       "highlights": [
@@ -2330,11 +2330,11 @@
       "title": "Task 20",
       "context": "Decide whether each sentence is grammatically correct as written.",
       "statements": [
-        "Neither the nominee director nor the shadow directors have disclosed their interests.",
-        "The number of days sales outstanding has improved after the collections drive.",
-        "There appear to be fewer exceptions in this month's reconciliation.",
-        "Every invoice that exceeds the delegated limit requires a second signature.",
-        "The CFO, along with the independent non-executives, have tabled a dissenting note."
+        "Neither the nominee captain nor the shadow captains have disclosed their interests.",
+        "The number of days between practices has improved after the fitness drive.",
+        "There appear to be fewer exceptions in this month's checklist.",
+        "Every parcel that exceeds the weight limit requires a second label.",
+        "The head teacher, along with the independent governors, have tabled a dissenting note."
       ],
       "answer_key": [
         true,
@@ -2344,11 +2344,11 @@
         false
       ],
       "tactical_explanations": [
-        "TRUE — Nearer plural \"shadow directors\" → \"have disclosed.\"\n\nTip: Legal doublets after nor still obey proximity.",
-        "TRUE — \"The number of\" → singular \"has improved.\"\n\nTip: KPI-style of-phrases do not pluralise the number.",
+        "TRUE — Nearer plural \"shadow captains\" → \"have disclosed.\"\n\nTip: Doublets after nor still obey proximity.",
+        "TRUE — \"The number of\" → singular \"has improved.\"\n\nTip: Of-phrases do not pluralise the number.",
         "TRUE — Plural \"fewer exceptions\" → \"there appear to be.\"\n\nTip: Fewer is a plural cue; match appear accordingly.",
-        "TRUE — \"Every invoice\" → singular \"requires.\"\n\nTip: Relative clauses after every keep the verb singular.",
-        "FALSE — Singular CFO + along with… → \"has tabled.\"\n\nTip: Non-executives in the insert never join the subject."
+        "TRUE — \"Every parcel\" → singular \"requires.\"\n\nTip: Relative clauses after every keep the verb singular.",
+        "FALSE — Singular head teacher + along with… → \"has tabled.\"\n\nTip: Governors in the insert never join the subject."
       ],
       "highlights": [
         "have disclosed",
