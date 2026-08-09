@@ -44,15 +44,17 @@ export function ExplanationProse({
       chunks.push({ kind: "note", body: `${tipPlain[1]}: ${tipPlain[2]}` });
       continue;
     }
-    // Natural verdict lead-in (not bare true/false)
-    if (
-      /^(so|therefore|hence|thus|overall)\b/i.test(p) &&
-      /\b(true|false|holds|correct|incorrect|right|wrong)\b/i.test(p)
-    ) {
-      chunks.push({ kind: "close", text: p });
-      continue;
-    }
     chunks.push({ kind: "para", text: p });
+  }
+
+  // Final content paragraph is the natural verdict (after Tip/Trap notes).
+  for (let i = chunks.length - 1; i >= 0; i--) {
+    const c = chunks[i];
+    if (c.kind === "note") continue;
+    if (c.kind === "para") {
+      chunks[i] = { kind: "close", text: c.text };
+    }
+    break;
   }
 
   return (
