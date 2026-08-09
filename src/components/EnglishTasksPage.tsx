@@ -196,7 +196,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
               <div className="hidden sm:flex flex-col items-end leading-tight">
                 <span className="font-display text-sm font-bold tracking-tight">English</span>
                 <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-                  {tierLabel} · Texts · Grammar · Vocabulary
+                  {tierLabel} Â· Texts Â· Grammar Â· Vocabulary
                 </span>
               </div>
               <AuthNav />
@@ -408,7 +408,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                                                     )}
                                                   >
                                                     Task {localI + 1}
-                                                    {locked && " · Locked"}
+                                                    {locked && " Â· Locked"}
                                                   </span>
                                                   {!locked && c.difficulty_level !== "—" && (
                                                     <DifficultyBars
@@ -479,7 +479,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                                           )}
                                         >
                                           Task {i + 1}
-                                          {locked && " · Locked"}
+                                          {locked && " Â· Locked"}
                                         </span>
                                       </button>
                                     </li>
@@ -590,15 +590,24 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                   <ChevronLeft className="h-4 w-4" /> Back to Task {freeLimitOf(tier)}
                 </button>
               </div>
+            ) : isTextsCase && activeCase ? (
+              <div className="lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)]">
+                <ReadingPanel
+                  passage={activePassage}
+                  storageKey={`english-course:${activeCase.subsection ?? activeCase.id}`}
+                  explanation={explanation}
+                  onClose={() => setExplanation(null)}
+                />
+              </div>
             ) : activeCase ? (
               <CaseCard
                 key={activeCase.id}
                 data={activeCase}
                 index={activeIdx}
-                passage={isTextsCase ? activePassage : ""}
+                passage=""
                 inRevision={progress.revision.includes(activeCase.id)}
                 alreadyPassed={progress.passed.includes(activeCase.id)}
-                isTexts={isTextsCase}
+                isTexts={false}
                 activeExplanationIndex={
                   explanation?.caseId === activeCase.id ? explanation.statementIndex : null
                 }
@@ -622,7 +631,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
               />
             ) : null}
 
-            {activeList.length > 0 && activeChapter !== null && (
+            {!isTextsCase && activeList.length > 0 && activeChapter !== null && (
               <div className="mt-6 flex items-center justify-between">
                 <button
                   type="button"
@@ -657,14 +666,77 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
             )}
           </main>
 
-          <PracticeRightSlot>
-            {isTextsCase ? (
-              <ReadingPanel
-                passage={activePassage}
-                storageKey={`english-course:${activeCase?.subsection ?? "none"}`}
-                explanation={explanation}
-                onClose={() => setExplanation(null)}
-              />
+          <PracticeRightSlot
+            className={
+              isTextsCase
+                ? "lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-[min(42rem,46vw)] lg:shrink-0 xl:w-[min(44rem,42vw)]"
+                : undefined
+            }
+          >
+            {isTextsCase && activeCase && !isLocked(tier, activeIdx) ? (
+              <div className="flex h-full flex-col gap-4 overflow-y-auto overscroll-contain pr-1">
+                <CaseCard
+                  key={activeCase.id}
+                  data={activeCase}
+                  index={activeIdx}
+                  passage={activePassage}
+                  inRevision={progress.revision.includes(activeCase.id)}
+                  alreadyPassed={progress.passed.includes(activeCase.id)}
+                  isTexts
+                  activeExplanationIndex={
+                    explanation?.caseId === activeCase.id ? explanation.statementIndex : null
+                  }
+                  onRequestExplanation={(i) => requestExplanation(activeCase, i)}
+                  onGraded={(ok, correctCount) => {
+                    recordResult(activeCase.id, ok);
+                    const chLabel =
+                      activeChapter && activeChapter !== "revision"
+                        ? chapters.find((c) => c.key === activeChapter)?.title ?? activeChapter
+                        : "Revision";
+                    void recordTaskAttempt({
+                      subject: "english",
+                      chapter: chLabel,
+                      taskKey: `${tier}:${activeCase.case_id || activeCase.id}`,
+                      taskTitle: activeCase.title,
+                      correctCount,
+                      statementCount:
+                        activeCase.answer_key.length || activeCase.statements.length,
+                    });
+                  }}
+                  onResetProgress={() => resetCaseIds([activeCase.id])}
+                />
+                <div className="flex items-center justify-between pb-2">
+                  <button
+                    type="button"
+                    onClick={() => setActiveIdx((i) => Math.max(0, i - 1))}
+                    disabled={activeIdx === 0}
+                    className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
+                  >
+                    <ChevronLeft className="h-4 w-4" /> Prev
+                  </button>
+                  <span className="text-xs text-muted-foreground">
+                    {activeIdx + 1} / {activeList.length}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))}
+                    disabled={
+                      activeIdx >= activeList.length - 1 || isLocked(tier, activeIdx + 1)
+                    }
+                    className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
+                  >
+                    {isLocked(tier, activeIdx + 1) ? (
+                      <>
+                        <Lock className="h-3.5 w-3.5" /> Locked
+                      </>
+                    ) : (
+                      <>
+                        Next <ChevronRight className="h-4 w-4" />
+                      </>
+                    )}
+                  </button>
+                </div>
+              </div>
             ) : (
               <GrammarExplanationPanel
                 explanation={explanation}
@@ -890,21 +962,7 @@ function CaseCard({
         {data.context}
       </p>
 
-      {isTexts && passage && (
-        <div className="mt-5 overflow-hidden rounded-xl border border-border bg-[#fdf9f0] lg:hidden">
-          <div className="border-b border-border/60 bg-white/60 px-4 py-2">
-            <span className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-taupe">
-              <BookOpen className="h-3.5 w-3.5" /> Reading Text
-            </span>
-          </div>
-          <div className="max-h-72 overflow-y-auto px-4 py-3 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
-            <AnnotatablePassage
-              passage={passage}
-              storageKey={`english-course-inline:${data.subsection ?? data.id}`}
-            />
-          </div>
-        </div>
-      )}
+      {/* Passage is shown in the center ReadingPanel for Texts. */}
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
         <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
@@ -1093,7 +1151,7 @@ function ReadingPanel({
           <BookOpen className="h-4 w-4 text-primary" />
           <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
             {explanation
-              ? `AI Highlight · Statement ${explanation.statementIndex + 1}`
+              ? `AI Highlight Â· Statement ${explanation.statementIndex + 1}`
               : "Reading Passage"}
           </span>
         </div>
@@ -1176,7 +1234,7 @@ function GrammarExplanationPanel({
           <Sparkles className="h-4 w-4 text-primary" />
           <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
             {explanation
-              ? `AI Breakdown · Statement ${explanation.statementIndex + 1}`
+              ? `AI Breakdown Â· Statement ${explanation.statementIndex + 1}`
               : "AI English Coach"}
           </span>
         </div>
