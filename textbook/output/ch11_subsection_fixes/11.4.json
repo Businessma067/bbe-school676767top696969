@@ -4,7 +4,7 @@
     "title": "Startup Revenue Growth Over Five Years",
     "difficulty_raw": "1/5",
     "difficulty_level": "1/5",
-    "context": "A newly launched e-commerce startup earns $50 million in revenue this year and expects revenue to grow by 10% annually for each of the next four years, forming a finite geometric series with first term a = 50 (million dollars) and quotient k = 1.10 over n = 5 years.",
+    "context": "A newly launched e-commerce startup earns $50 million in revenue this year and expects revenue to grow by 10% annually for each of the next four years, forming a finite geometric series with first term a = $50 million and quotient k = 1.10 over n = 5 years.",
     "statements": [
       "The expected revenue in year 2 is $55.00 million.",
       "The expected revenue in year 5 is approximately $73.21 million.",
@@ -128,7 +128,7 @@
     "title": "Coal Reserves and Declining Output",
     "difficulty_raw": "2.1/5",
     "difficulty_level": "2/5",
-    "context": "A coal mining region has 9,000 million tons (9 billion tons) of estimated reserves. This year's output is 180 million tons, and analysts project output will fall by 3% every year forever, an infinite geometric series with a = 180 (million tons) and k = 0.97. A second scenario considers a steeper 5% annual decline (k = 0.95) starting from the same output.",
+    "context": "A coal mining region has 9,000 million tons, or 9 billion tons, of estimated reserves. This year's output is 180 million tons, and analysts project output will fall by 3% every year forever, an infinite geometric series with a = 180 million tons and k = 0.97. A second scenario considers a steeper 5% annual decline with k = 0.95 starting from the same output.",
     "statements": [
       "Output in the second year is 174.6 million tons.",
       "The infinite total extracted over all future years, under the 3% decline, is 6,000 million tons.",
@@ -190,7 +190,7 @@
     "title": "Equal vs. Growing Pension Contributions",
     "difficulty_raw": "2.5/5",
     "difficulty_level": "2/5",
-    "context": "A city pension fund receives equal annual contributions of $12 million for 15 straight years (a degenerate geometric series with k = 1). Fund managers also model an alternative in which contributions instead grow by 4% every year from the same $12 million starting point, a finite geometric series with a = 12 (million dollars), k = 1.04, and n = 15.",
+    "context": "A city pension fund receives equal annual contributions of $12 million for 15 straight years in a degenerate geometric series with k = 1. Fund managers also model an alternative in which contributions instead grow by 4% every year from the same $12 million starting point, a finite geometric series with a = $12 million, k = 1.04, and n = 15.",
     "statements": [
       "This is the special k = 1 case of the geometric series, where the total simply equals the number of payments multiplied by the payment amount.",
       "The total contributions over the 15 years of equal $12 million payments equal $180.00 million.",
@@ -221,7 +221,7 @@
     "title": "Structured Settlement: Finite Payments vs. Perpetual Value",
     "difficulty_raw": "2.7/5",
     "difficulty_level": "3/5",
-    "context": "A structured settlement is set up to pay $15,000 in its first year, with each subsequent payment 88% of the prior one (a = $15,000, k = 0.88). One clause pays out for a finite 8 years; a separate hypothetical clause considers what the payments would total if continued forever.",
+    "context": "A structured settlement is set up to pay $15,000 in its first year, with each subsequent payment 88% of the prior one, where a = $15,000 and k = 0.88. One clause pays out for a finite 8 years; a separate hypothetical clause considers what the payments would total if continued forever.",
     "statements": [
       "The second payment in the sequence is $13,200.00.",
       "The total of the 8 finite payments is approximately $80,045.68.",
@@ -252,7 +252,7 @@
     "title": "Growing Franchise Royalties Over 12 Years",
     "difficulty_raw": "2.85/5",
     "difficulty_level": "3/5",
-    "context": "A franchisor receives a royalty of $9,000 in the first year from a new location, with royalties projected to grow 8% per year for 12 years - a finite geometric series with a = $9,000, k = 1.08, and n = 12. Analysts also compare this to a hypothetical flat (0%-growth) royalty stream.",
+    "context": "A franchisor receives a royalty of $9,000 in the first year from a new location, with royalties projected to grow 8% per year for 12 years - a finite geometric series with a = $9,000, k = 1.08, and n = 12. Analysts also compare this to a hypothetical flat 0%-growth royalty stream.",
     "statements": [
       "The finite-sum formula still gives a valid, well-defined 12-year total.",
       "The total royalties collected over the 12 years are approximately $175,000.00.",
@@ -283,7 +283,7 @@
     "title": "Tech Company Valuation: Finite Growth Plus Terminal Perpetuity",
     "difficulty_raw": "3/5",
     "difficulty_level": "3/5",
-    "context": "A tech company projects revenue of $4 million this year, growing 20% per year for 6 years (a finite geometric series, a = 4 million, k = 1.20, n = 6). Investors then treat year-6 revenue as the first payment of a separate terminal perpetuity that declines 15% per year forever (k = 0.85), used to estimate value beyond year 6.",
+    "context": "A tech company projects revenue of $4 million this year, growing 20% per year for 6 years in a finite geometric series with a = $4 million, k = 1.20, and n = 6. Investors then treat year-6 revenue as the first payment of a separate terminal perpetuity that declines 15% per year forever with quotient k = 0.85, used to estimate value beyond year 6.",
     "statements": [
       "The 6-year finite sum of projected revenues is approximately $39.72 million.",
       "Year-6 revenue alone is approximately $9.95 million.",
@@ -314,7 +314,7 @@
     "title": "Reverse-Engineering a Retailer's First-Month Restocking Cost",
     "difficulty_raw": "3.1/5",
     "difficulty_level": "3/5",
-    "context": "A retailer's monthly restocking cost is expected to grow 15% every month for 6 months due to supply-chain constraints (quotient k = 1.15). Accounting projects that the total restocking cost over all 6 months will equal exactly $58,000. Management wants to know what the first month's cost, a, must have been to produce that total.",
+    "context": "A retailer's monthly restocking cost is expected to grow 15% every month for 6 months due to supply-chain constraints, with quotient k = 1.15. Accounting projects that the total restocking cost over all 6 months will equal exactly $58,000. Management wants to know what the first month's cost, a, must have been to produce that total.",
     "statements": [
       "If the first month's cost had instead been exactly $1,000, the second month's cost would be $1,150.00.",
       "Solving for the first-month cost gives approximately $6,625.74.",
@@ -345,7 +345,7 @@
     "title": "University Endowment: Sustainable Declining Payout",
     "difficulty_raw": "3.3/5",
     "difficulty_level": "3/5",
-    "context": "A university endowment pays out $500,000 in scholarships this year. To keep the endowment sustainable, the payout is planned to shrink by 2% every year forever (a = $500,000, k = 0.98), an infinite geometric series. The board also wants to know the cumulative payout over just the first 10 years, and how a steeper 2%-per-year-larger decline (k = 0.95) would compare.",
+    "context": "A university endowment pays out $500,000 in scholarships this year. To keep the endowment sustainable, the payout is planned to shrink by 2% every year forever with a = $500,000 and k = 0.98, an infinite geometric series. The board also wants to know the cumulative payout over just the first 10 years, and how a steeper 2%-per-year-larger decline with k = 0.95 would compare.",
     "statements": [
       "The payout in the second year is $490,000.00.",
       "The infinite total of all future payouts converges to $25,000,000.00.",
@@ -376,7 +376,7 @@
     "title": "Marketing Budget: Solving for the Break-Point Year",
     "difficulty_raw": "3.5/5",
     "difficulty_level": "4/5",
-    "context": "A company's marketing budget starts at $200,000 this year and grows 12% every year (a = $200,000, k = 1.12), a finite geometric series. The CFO wants to know the smallest number of years n after which the cumulative (total) marketing spend first surpasses $3,000,000.",
+    "context": "A company's marketing budget starts at $200,000 this year and grows 12% every year with a = $200,000 and k = 1.12, a finite geometric series. The CFO wants to know the smallest number of years n after which the cumulative total marketing spend first surpasses $3,000,000.",
     "statements": [
       "The marketing budget in year 2 is $224,000.00.",
       "The cumulative spend after 9 years is approximately $2,955,131.26, which is still below the $3,000,000 target.",
@@ -407,7 +407,7 @@
     "title": "Charitable Trust: A Deferred, Declining Grant Stream",
     "difficulty_raw": "3.7/5",
     "difficulty_level": "4/5",
-    "context": "A charitable trust will issue its first grant of $50,000 starting six years from now, with each subsequent annual grant equal to 96% of the previous grant, continuing forever (a = $50,000, k = 0.96). Analysts also want the total of just the first 15 grants, and how a steeper decline would compare.",
+    "context": "A charitable trust will issue its first grant of $50,000 starting six years from now, with each subsequent annual grant equal to 96% of the previous grant, continuing forever with a = $50,000 and k = 0.96. Analysts also want the total of just the first 15 grants, and how a steeper decline would compare.",
     "statements": [
       "The second grant in the sequence is $48,000.00.",
       "The infinite total of all future grants is $1,250,000.00.",
@@ -438,7 +438,7 @@
     "title": "Vineyard Yield: A Quarterly Decline Unit-Conversion Trap",
     "difficulty_raw": "3.9/5",
     "difficulty_level": "4/5",
-    "context": "A vineyard's grape yield is expected to decline by 2% every quarter (not every year) over a 5-year (20-quarter) span. The first quarter's yield is 10,000 lbs, so this is a finite geometric series with a = 10,000 lbs, k = 0.98, and n = 20 quarters.",
+    "context": "A vineyard's grape yield is expected to decline by 2% every quarter, not every year, over a 5-year span of 20 quarters. The first quarter's yield is 10,000 lbs, so this is a finite geometric series with a = 10,000 lbs, k = 0.98, and n = 20 quarters.",
     "statements": [
       "The second quarter's yield is 9,800.00 lbs.",
       "The total yield over the full 5-year span is approximately 166,196.01 lbs.",
@@ -469,7 +469,7 @@
     "title": "Comparing Two Franchise Territories Over 8 Years",
     "difficulty_raw": "4.1/5",
     "difficulty_level": "4/5",
-    "context": "A franchisor compares two territories over 8 years. Territory A starts at a first-year royalty of $80,000, growing 6% per year (a = 80,000, k = 1.06). Territory B starts higher, at $95,000, but grows more slowly, at only 2% per year (a = 95,000, k = 1.02).",
+    "context": "A franchisor compares two territories over 8 years. Territory A starts at a first-year royalty of $80,000, growing 6% per year with a = $80,000 and k = 1.06. Territory B starts higher, at $95,000, but grows more slowly, at only 2% per year with a = $95,000 and k = 1.02.",
     "statements": [
       "Territory A's 8-year total royalties are approximately $791,797.43.",
       "Territory B's 8-year total royalties are approximately $815,382.06.",
@@ -531,7 +531,7 @@
     "title": "Solar Farm: Revenue Growth vs. Rising Maintenance Costs",
     "difficulty_raw": "4.5/5",
     "difficulty_level": "4/5",
-    "context": "A solar farm's annual energy revenue starts at $150,000 and grows 1% per year (a = 150,000, k = 1.01), while its annual maintenance cost starts at $120,000 but grows faster, at 3% per year (a = 120,000, k = 1.03). Both are finite geometric series. Management compares cumulative profit (revenue total minus cost total) over both a 12-year and a 20-year horizon.",
+    "context": "A solar farm's annual energy revenue starts at $150,000 and grows 1% per year with a = $150,000 and k = 1.01, while its annual maintenance cost starts at $120,000 but grows faster, at 3% per year with a = $120,000 and k = 1.03. Both are finite geometric series. Management compares cumulative profit, revenue total minus cost total, over both a 12-year and a 20-year horizon.",
     "statements": [
       "The cumulative 12-year revenue is approximately $1,902,375.45.",
       "The cumulative 12-year maintenance cost is approximately $1,703,043.55.",
@@ -562,7 +562,7 @@
     "title": "Private Equity Fund: Recession vs. Recovery Cash-Flow Scenarios",
     "difficulty_raw": "4.7/5",
     "difficulty_level": "5/5",
-    "context": "A private equity fund's portfolio company currently generates $2,400,000 in annual free cash flow. Under a “recession” scenario, cash flow is expected to shrink 6% every year indefinitely (a = 2,400,000, k = 0.94). Under a “recovery” scenario, cash flow instead grows 6% per year for the next 7 years before the fund exits (a = 2,400,000, k = 1.06, n = 7).",
+    "context": "A private equity fund's portfolio company currently generates $2,400,000 in annual free cash flow. Under a “recession” scenario, cash flow is expected to shrink 6% every year indefinitely with a = $2,400,000 and k = 0.94. Under a “recovery” scenario, cash flow instead grows 6% per year for the next 7 years before the fund exits with a = $2,400,000, k = 1.06, and n = 7.",
     "statements": [
       "Under the recession scenario, the infinite cumulative cash flow converges to $40,000,000.00.",
       "Under the same recession scenario, the cumulative cash flow over just the first 15 years is approximately $22,000,000.00.",
@@ -593,7 +593,7 @@
     "title": "Capstone: A Three-Tranche Loan Portfolio and a Convergence Trap",
     "difficulty_raw": "5/5",
     "difficulty_level": "5/5",
-    "context": "A private lender values a portfolio of three loan tranches, valued in nominal (undiscounted) dollars, adding declining and growing streams together just as ordinary fixed amounts. Tranche 1 pays equal annual coupons of $25,000 for 9 years (the degenerate k = 1 case). Tranche 2 pays a growing coupon starting at $18,000, increasing 7% per year for 9 years (a = 18,000, k = 1.07). Tranche 3 is a perpetual royalty starting at $30,000 that declines 8% per year forever (a = 30,000, k = 0.92). Separately, an analyst proposes valuing a symbolic annual fee stream $f_n = 1{,}000/n$ (dollars, for n = 1, 2, 3, …).",
+    "context": "A private lender values a portfolio of three loan tranches, valued in nominal undiscounted dollars, adding declining and growing streams together just as ordinary fixed amounts. Tranche 1 pays equal annual coupons of $25,000 for 9 years in the degenerate k = 1 case. Tranche 2 pays a growing coupon starting at $18,000, increasing 7% per year for 9 years with a = $18,000 and k = 1.07. Tranche 3 is a perpetual royalty starting at $30,000 that declines 8% per year forever with a = $30,000 and k = 0.92. Separately, an analyst proposes valuing a symbolic annual fee stream $f_n = 1{,}000/n$ dollars for n = 1, 2, 3, ….",
     "statements": [
       "Tranche 1 totals exactly $225,000.00.",
       "Tranche 2 totals approximately $215,603.80.",

@@ -128,7 +128,7 @@
     "title": "Fixed Annual Payment on a Working-Capital Loan",
     "difficulty_raw": "3/5",
     "difficulty_level": "3/5",
-    "context": "A landscaping company borrows $35,000 at 13% annual interest and commits to repaying exactly $10,000 at the end of each year (a fixed amount chosen by the company, not solved from the equal-payment formula), continuing until the debt is fully retired, with a smaller final payment to settle whatever remains.",
+    "context": "A landscaping company borrows $35,000 at 13% annual interest and commits to repaying exactly $10,000 at the end of each year, continuing until the debt is fully retired, with a smaller final payment to settle whatever remains.",
     "statements": [
       "The smallest whole number of yearly payments needed to pay off the loan is n = 5.",
       "The first four payments are each exactly $10,000.00, totalling $40,000.00.",
@@ -221,7 +221,7 @@
     "title": "Home Mortgage: Outstanding Balance Partway Through the Term",
     "difficulty_raw": "4.5/5",
     "difficulty_level": "4/5",
-    "context": "A family takes out a $200,000 home mortgage at a nominal annual interest rate of 6%, compounding monthly, to be repaid with equal payments at the end of each month over 20 years. After making exactly 5 years of payments (60 monthly payments), they want to know how much principal is still outstanding.",
+    "context": "A family takes out a $200,000 home mortgage at a nominal annual interest rate of 6%, compounding monthly, to be repaid with equal payments at the end of each month over 20 years. After making exactly 5 years of payments, they want to know how much principal is still outstanding.",
     "statements": [
       "The required monthly payment is approximately $1,432.86.",
       "The outstanding balance immediately after the 60th monthly payment is approximately $169,799.20.",
@@ -252,7 +252,7 @@
     "title": "Fixed Repayment Schedule on a Large Equipment Loan",
     "difficulty_raw": "4.75/5",
     "difficulty_level": "5/5",
-    "context": "A manufacturing company borrows $120,000 at 14% annual interest and chooses to repay a fixed $25,000 at the end of each year (rather than solving for the exact equal-payment amount), continuing until the loan is retired, with a final smaller payment to clear whatever balance remains.",
+    "context": "A manufacturing company borrows $120,000 at 14% annual interest and chooses to repay a fixed $25,000 at the end of each year, continuing until the loan is retired, with a final smaller payment to clear whatever balance remains.",
     "statements": [
       "The smallest whole number of yearly payments needed to retire the loan is n = 9.",
       "The ninth and final payment is approximately $13,100.16.",
@@ -283,7 +283,7 @@
     "title": "Capstone: Equipment Loan Paid as an Annuity Due, Plus a Separate Reserve Fund",
     "difficulty_raw": "5/5",
     "difficulty_level": "5/5",
-    "context": "A manufacturing company borrows $90,000 to buy new equipment, to be repaid in 8 equal annual instalments with the first payment due immediately (an annuity due) and the rest due at the beginning of each following year, at an annual interest rate of 12%. Independently, to prepare for future maintenance costs, the company also deposits $300 at the end of each quarter into a separate reserve account that pays 9% annual interest, credited once per year (with simple interest applied to each quarterly deposit for its remaining fraction of the year, exactly as in a within-period deposit calculation).",
+    "context": "A manufacturing company borrows $90,000 to buy new equipment, to be repaid in 8 equal annual instalments with the first payment due immediately and the rest due at the beginning of each following year, at an annual interest rate of 12%. Independently, to prepare for future maintenance costs, the company also deposits $300 at the end of each quarter into a separate reserve account that pays 9% annual interest, credited once per year.",
     "statements": [
       "The required annuity-due payment on the equipment loan is approximately $16,176.12.",
       "The interest portion of the second loan payment is approximately $8,858.87.",
@@ -314,7 +314,7 @@
     "title": "Capstone: Comparing Three Payment Schedules for a Building Site",
     "difficulty_raw": "5/5",
     "difficulty_level": "5/5",
-    "context": "A construction firm wants to buy a building site and is choosing among three payment schedules. Schedule I: pay $500,000 in cash immediately. Schedule II: pay $95,000 per year for 7 years, with the first instalment paid immediately (an annuity due). Schedule III: pay $150,000 in cash immediately, plus $60,000 per year for 10 years, with the first of these instalments paid one year later (an ordinary annuity). The firm wants to know which schedule is cheapest in present-value terms first at a 9% annual interest rate, and then at a 13% annual interest rate.",
+    "context": "A construction firm wants to buy a building site and is choosing among three payment schedules. Schedule I: pay $500,000 in cash immediately. Schedule II: pay $95,000 per year for 7 years, with the first instalment paid immediately. Schedule III: pay $150,000 in cash immediately, plus $60,000 per year for 10 years, with the first of these instalments paid one year later. The firm wants to know which schedule is cheapest in present-value terms first at a 9% annual interest rate, and then at a 13% annual interest rate.",
     "statements": [
       "At a 9% annual rate, the present value of Schedule II is approximately $521,162.27.",
       "At a 9% annual rate, the present value of Schedule III is approximately $540,000.00.",
@@ -345,7 +345,7 @@
     "title": "Capstone: Comparing Three Payment Schedules for a Hospital Imaging Center",
     "difficulty_raw": "5/5",
     "difficulty_level": "5/5",
-    "context": "A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules. Schedule I: pay $850,000 in cash immediately. Schedule II: pay $140,000 per year for 9 years, with the first instalment paid immediately (an annuity due). Schedule III: pay $300,000 in cash immediately, plus $80,000 per year for 11 years, with the first of these instalments paid one year later (an ordinary annuity). The hospital wants to know which schedule is cheapest in present-value terms first at an 8% annual interest rate, and then at a 12% annual interest rate.",
+    "context": "A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules. Schedule I: pay $850,000 in cash immediately. Schedule II: pay $140,000 per year for 9 years, with the first instalment paid immediately. Schedule III: pay $300,000 in cash immediately, plus $80,000 per year for 11 years, with the first of these instalments paid one year later. The hospital wants to know which schedule is cheapest in present-value terms first at an 8% annual interest rate, and then at a 12% annual interest rate.",
     "statements": [
       "At an 8% annual rate, the present value of Schedule II is approximately $944,529.45.",
       "At an 8% annual rate, the present value of Schedule III is approximately $871,117.14.",
@@ -376,7 +376,7 @@
     "title": "Capstone: Comparing Three Payment Schedules for a Cargo Vessel",
     "difficulty_raw": "5/5",
     "difficulty_level": "5/5",
-    "context": "A shipping company is negotiating the purchase of a cargo vessel and is choosing among three payment schedules. Schedule I: pay $2,400,000 in cash immediately. Schedule II: pay $340,000 per year for 10 years, with the first instalment paid immediately (an annuity due). Schedule III: pay $600,000 in cash immediately, plus $250,000 per year for 9 years, with the first of these instalments paid one year later (an ordinary annuity). The company wants to know how the ranking of Schedule I versus Schedule II changes between a 7.5% annual interest rate and a 11.5% annual interest rate.",
+    "context": "A shipping company is negotiating the purchase of a cargo vessel and is choosing among three payment schedules. Schedule I: pay $2,400,000 in cash immediately. Schedule II: pay $340,000 per year for 10 years, with the first instalment paid immediately. Schedule III: pay $600,000 in cash immediately, plus $250,000 per year for 9 years, with the first of these instalments paid one year later. The company wants to know how the ranking of Schedule I versus Schedule II changes between a 7.5% annual interest rate and a 11.5% annual interest rate.",
     "statements": [
       "At a 7.5% annual rate, the present value of Schedule II is approximately $2,508,821.59.",
       "At a 7.5% annual rate, the present value of Schedule III is approximately $2,250,000.00.",

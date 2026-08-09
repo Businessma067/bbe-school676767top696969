@@ -66,7 +66,7 @@
     "title": "Escrowed Sale Proceeds for a Landlord",
     "difficulty_raw": "1.6/5",
     "difficulty_level": "2/5",
-    "context": "A landlord is due to receive $45,000 in escrowed proceeds from a property sale in 8 years, once a title dispute is resolved. The applicable interest rate is 7% per year. The landlord's accountant computes the present value both (a) assuming annual compounding and (b) assuming continuous compounding, so this task uses K = $45,000, r = 0.07, and t = 8 under both methods.",
+    "context": "A landlord is due to receive $45,000 in escrowed proceeds from a property sale in 8 years, once a title dispute is resolved. The applicable interest rate is 7% per year. The landlord's accountant computes the present value under both annual compounding and continuous compounding, so this task uses K = $45,000, r = 0.07, and t = 8 under both methods.",
     "statements": [
       "The annual discount factor is approximately 0.5820.",
       "The present value under annual compounding is approximately $26,190.41.",
@@ -317,7 +317,7 @@
     "context": "A trust fund manager currently discounts a $50,000 payment due to a beneficiary in 7 years using a continuous discount rate of 5% per year. The manager wants to quote an equivalent nominal annual rate, compounded annually, that produces exactly the same present value, so this task uses K = $50,000, r = 0.05, and t = 7 as the continuous baseline.",
     "statements": [
       "The present value of the $50,000 payment under 5% continuous compounding for 7 years is approximately $33,100.00.",
-      "The equivalent nominal annual rate (with annual compounding) that yields the identical present value is exactly 5.00%.",
+      "The equivalent nominal annual rate that yields the identical present value is exactly 5.00%.",
       "The equivalent annual rate is approximately 5.87% per year.",
       "Using the correctly derived equivalent annual rate for a 3-year horizon instead of 7 years, a $50,000 payment would have a present value of approximately $43,035.40.",
       "The gap between the correctly derived equivalent annual rate and the 5% continuous rate is more than 1.00 percentage point."
@@ -351,7 +351,7 @@
       "The present value still required from the second receivable is approximately $64,735.99.",
       "The required face amount of the second receivable, due in 6 years, is approximately $91,829.24.",
       "If the second receivable were instead due in 3 years, its required face amount would be larger than the required face amount for the original 6-year due date.",
-      "Raising the discount rate from 6% to 8% (second receivable still due in 6 years) would require a face amount of approximately $102,727.88."
+      "Raising the discount rate from 6% to 8%, with the second receivable still due in 6 years, would require a face amount of approximately $102,727.88."
     ],
     "answer_key": [
       true,
@@ -407,7 +407,7 @@
     "title": "A Corner Solution in Aging Wine Valuation",
     "difficulty_raw": "3.6/5",
     "difficulty_level": "4/5",
-    "context": "A vineyard owner is deciding when to bottle and sell an aging batch of wine whose market value is modeled as P(t) = $40{,}000e^{0.05t}$ dollars, where t is the number of years from now (i.e., the wine's value grows at a constant continuous rate of 5% per year as it ages). The relevant continuous interest rate for discounting is 8% per year, so this task applies the chapter's optimal-timing condition to P(t) = $40{,}000e^{0.05t}$ with r = 0.08.",
+    "context": "A vineyard owner is deciding when to bottle and sell an aging batch of wine whose market value is modeled as P(t) = $40{,}000e^{0.05t}$ dollars, where t is the number of years from now. The relevant continuous interest rate for discounting is 8% per year, so this task applies the chapter's optimal-timing condition to P(t) = $40{,}000e^{0.05t}$ with r = 0.08.",
     "statements": [
       "The condition P'(t*) = rP(t*) has no solution for t* > 0, so the present value is maximized at t* = 0.",
       "The present value of the batch if sold today (t = 0) is $40,000.",
@@ -475,7 +475,7 @@
       "The present value of the orchard's timber at t* is approximately $250,000.00.",
       "The second-order quantity P''(t*) - rP'(t*) evaluates to +$6,000.",
       "dt*/dr is approximately +246.91.",
-      "If the interest rate were exactly 4.5% instead of 9% (half the original rate), the optimal harvest time would be exactly double the original, at 36.44 years."
+      "If the interest rate were exactly 4.5% instead of 9%, the optimal harvest time would be exactly double the original, at 36.44 years."
     ],
     "answer_key": [
       true,
@@ -500,7 +500,7 @@
     "title": "Combining a Private-Equity Exit Payment with a Short-Dated Side Payment",
     "difficulty_raw": "4.3/5",
     "difficulty_level": "4/5",
-    "context": "A private equity fund expects to receive $250,000 from a portfolio-company exit in exactly 2.5 years, plus a smaller side payment of $40,000 in 7 months (7/12 of a year) from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $K_1$ = $250,000 at $t_1$ = 2.5 and $K_2$ = $40,000 at $t_2$ = 7/12, with r = 0.11.",
+    "context": "A private equity fund expects to receive $250,000 from a portfolio-company exit in exactly 2.5 years, plus a smaller side payment of $40,000 in 7 months from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $K_1$ = $250,000 at $t_1$ = 2.5 and $K_2$ = $40,000 at $t_2$ = 7/12, with r = 0.11.",
     "statements": [
       "The present value of the $250,000 exit payment is approximately $189,893.03.",
       "The present value of the $40,000 side payment is approximately $37,513.95.",
@@ -562,7 +562,7 @@
     "title": "General Harvest-Timing Formula for a Forestry Consultancy",
     "difficulty_raw": "4.8/5",
     "difficulty_level": "5/5",
-    "context": "A forestry consultancy models a class of timber stands with value function P(t) = $A(t + k)^{2}$ for positive constants A and k, discounted continuously at rate r. For one particular stand, A = $1,200 (per squared year-offset unit), k = 5, and r = 7.5% per year. The consultancy wants the general optimal-time formula, the specific optimal time, and two comparative-statics checks.",
+    "context": "A forestry consultancy models a class of timber stands with value function P(t) = $A(t + k)^{2}$ for positive constants A and k, discounted continuously at rate r. For one particular stand, A = $1,200, k = 5, and r = 7.5% per year. The consultancy wants the general optimal-time formula, the specific optimal time, and two comparative-statics checks.",
     "statements": [
       "The general optimal-time formula for this family of functions is t* = 2/r - k.",
       "Using A = 1,200, k = 5, and r = 7.5%, the optimal harvest time is approximately t* = 21.67 years.",

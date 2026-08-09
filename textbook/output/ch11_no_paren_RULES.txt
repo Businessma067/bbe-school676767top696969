@@ -1,0 +1,27 @@
+Remove EXPLANATORY parentheses from context + statements only
+================================================================
+
+Do NOT touch:
+- Math inside $...$ / $$...$$ (keep (1+r), (t+2), etc.)
+- formulas, given, steps, explanations, titles, answer_key
+
+DO remove from context and statements[]:
+- Parenthetical asides / clarifications / asides in round () or square [] when they are explanatory prose
+  Examples to REMOVE (including the parentheses themselves):
+  - (the degenerate k = 1 case)
+  - (undiscounted)
+  - (not $540,000.00)
+  - (a = 18,000, k = 1.07) when it's a parenthetical tip — if it is the ONLY place the numbers appear in context, fold numbers into the sentence without parentheses instead of deleting the info
+  - (Tasks 1-20) type chrome if any
+
+When removing would delete the only copy of a needed number/rate, rewrite the sentence to keep the fact WITHOUT parentheses:
+  BAD keep: "... for 9 years (a = 18,000, k = 1.07)."
+  GOOD: "... for 9 years with a = $18,000 and k = 1.07."
+
+Preserve answer_key and statement truth. Do not change meaning.
+
+WRITE: textbook/output/ch11_subsection_fixes/{sid}.json
+READ input: textbook/output/ch11_subsection_fixes/{sid}_INPUT.json
+Rules file also: textbook/output/ch11_no_paren_RULES.txt
+
+Do NOT edit ch11_raw.json or TS files.

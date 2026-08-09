@@ -159,7 +159,7 @@
     "title": "Present Value of an Ordinary Annuity vs. a Perpetuity for a Nonprofit Scholarship",
     "difficulty_raw": "2/5",
     "difficulty_level": "2/5",
-    "context": "A nonprofit organization needs to fund $5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same $5,000 annual payment in perpetuity (forever) at the same rate.",
+    "context": "A nonprofit organization needs to fund $5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same $5,000 annual payment in perpetuity at the same rate.",
     "statements": [
       "The present value needed to fund the 20-year annuity is approximately $57,349.67.",
       "The perpetuity value is approximately $83,333.33, exceeding the 20-year annuity's present value by approximately $25,983.66.",
@@ -252,7 +252,7 @@
     "title": "Future Value of an Annuity Due for a Gym's Equipment Upgrade Fund",
     "difficulty_raw": "2.7/5",
     "difficulty_level": "3/5",
-    "context": "A gym owner deposits $3,000 at the BEGINNING of each year (an annuity due) for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.",
+    "context": "A gym owner deposits $3,000 at the BEGINNING of each year as an annuity due for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.",
     "statements": [
       "The future value of these deposits at the end of year 6 is approximately $21,426.05.",
       "If the same $3,000 deposits were instead made at the END of each year, the future value would be approximately $20,405.76, which is LOWER than the annuity-due result.",
@@ -283,7 +283,7 @@
     "title": "Present Value of an Annuity Due for a Commercial Lease",
     "difficulty_raw": "3/5",
     "difficulty_level": "3/5",
-    "context": "A tenant signs a 5-year commercial lease requiring rent payments of $24,000 at the BEGINNING of each year (an annuity due). The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.",
+    "context": "A tenant signs a 5-year commercial lease requiring rent payments of $24,000 at the BEGINNING of each year as an annuity due. The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.",
     "statements": [
       "The present value of the lease payments today is approximately $107,162.61.",
       "If the same $24,000 payments were instead due at the END of each year, the present value would be approximately $101,096.80, which is LOWER than the annuity-due result.",
@@ -314,7 +314,7 @@
     "title": "A Deferred Perpetuity for a Philanthropist's Endowed Fund",
     "difficulty_raw": "3/5",
     "difficulty_level": "3/5",
-    "context": "A philanthropist wants to establish an endowed fund that will pay $10,000 at the end of each year, forever, but the FIRST payment will not occur until the end of year 5 (i.e., payments run at t = 5, 6, 7, …). The fund earns 6% annual interest, and the philanthropist wants to know how much must be donated today.",
+    "context": "A philanthropist wants to establish an endowed fund that will pay $10,000 at the end of each year, forever, but the FIRST payment will not occur until the end of year 5, with payments running at t = 5, 6, 7, …. The fund earns 6% annual interest, and the philanthropist wants to know how much must be donated today.",
     "statements": [
       "The value of the perpetuity as of the end of year 4 is approximately $166,666.67.",
       "Discounting this year-4 value back 4 years to today at 6% gives a present value of approximately $132,015.61.",
@@ -438,7 +438,7 @@
     "title": "The Gordon Growth Model for a Pension Fund's Stock Valuation",
     "difficulty_raw": "3.8/5",
     "difficulty_level": "4/5",
-    "context": "A pension fund is valuing a stock that just paid a dividend of $3.00 per share (D0), expected to grow at a constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use the NEXT dividend, not the one just paid, in the valuation formula.",
+    "context": "A pension fund is valuing a stock that just paid a dividend of $3.00 per share, denoted D0, expected to grow at a constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use the NEXT dividend, not the one just paid, in the valuation formula.",
     "statements": [
       "The next dividend is $3.09.",
       "The fair value per share is approximately $54.50.",
@@ -469,7 +469,7 @@
     "title": "Comparing Level vs. Growing Royalty-Stream Purchase Deals for a Musician",
     "difficulty_raw": "4/5",
     "difficulty_level": "4/5",
-    "context": "A musician is offered two royalty-stream purchase deals for a song catalog, both priced at $170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level (non-growing) perpetuity of $18,000 per year. Deal 2 is a growing perpetuity starting at $14,000 next year, growing 4% per year forever.",
+    "context": "A musician is offered two royalty-stream purchase deals for a song catalog, both priced at $170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level non-growing perpetuity of $18,000 per year. Deal 2 is a growing perpetuity starting at $14,000 next year, growing 4% per year forever.",
     "statements": [
       "Deal 1's fair value is $180,000.00, which exceeds the $170,000 asking price by $10,000.00, making it a good buy.",
       "Deal 2's fair value is approximately $233,333.33, which exceeds the $170,000 asking price by more than $60,000.00.",
@@ -562,7 +562,7 @@
     "title": "Mixed Financial Planning: Annuity Due, Continuous Compounding & Perpetuity",
     "difficulty_raw": "4.7/5",
     "difficulty_level": "5/5",
-    "context": "A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of $4,200 at the BEGINNING of each year (an annuity due) for 5 years at 8% interest. Second, the owner separately invests $20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying $3,000 per year forever, at 8%, for a maintenance reserve fund.",
+    "context": "A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of $4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests $20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying $3,000 per year forever, at 8%, for a maintenance reserve fund.",
     "statements": [
       "The present value of the annuity-due lease payments is approximately $18,110.94.",
       "The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately $27,610.90.",

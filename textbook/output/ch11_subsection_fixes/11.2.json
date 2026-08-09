@@ -8,7 +8,7 @@
     "statements": [
       "The balance after exactly 1 year is $4,730.72.",
       "The interest earned during the first year is $230.72.",
-      "If the bank compounded the same 5% nominal rate annually (once per year) instead of continuously, the year-end balance would be $4,735.00.",
+      "If the bank compounded the same 5% nominal rate annually instead of continuously, the year-end balance would be $4,735.00.",
       "The dollar difference between continuous compounding and annual compounding at the same nominal rate is $5.72.",
       "The growth factor $e^{0.05}$ rounds to 1.0400."
     ],
@@ -66,9 +66,9 @@
     "title": "Effective Annual Rate on a Continuously-Compounded Bond Fund",
     "difficulty_raw": "1.4/5",
     "difficulty_level": "1/5",
-    "context": "An asset manager quotes a bond fund's nominal annual rate of 9%, compounded continuously, and a client asks how the effective annual yield (EAR) compares to the nominal rate, and how it would change if the nominal rate doubled to 18%.",
+    "context": "An asset manager quotes a bond fund's nominal annual rate of 9%, compounded continuously, and a client asks how the effective annual yield compares to the nominal rate, and how it would change if the nominal rate doubled to 18%.",
     "statements": [
-      "The effective annual rate (EAR) is approximately 9.42%.",
+      "The effective annual rate is approximately 9.42%.",
       "On a $15,000 investment, the year-end balance is $16,412.61.",
       "The EAR exceeds the nominal rate by more than 0.75 percentage points.",
       "If the nominal rate doubled to 18%, the resulting EAR would exceed double the original EAR.",
@@ -97,7 +97,7 @@
     "title": "Comparing Growth Factors on an Equipment Leasing Contract",
     "difficulty_raw": "1.6/5",
     "difficulty_level": "2/5",
-    "context": "An equipment leasing firm structures a financing contract at a nominal annual rate of 10%, and wants to compare the growth factor K (the amount to which $1 grows over one year) under yearly, semi-annual, and continuous compounding, applied to a $75,000 balance.",
+    "context": "An equipment leasing firm structures a financing contract at a nominal annual rate of 10%, and wants to compare the growth factor K, the amount to which $1 grows over one year, under yearly, semi-annual, and continuous compounding, applied to a $75,000 balance.",
     "statements": [
       "Under yearly compounding, K = 1.1000.",
       "Under semi-annual compounding, K = 1.1025.",
@@ -159,12 +159,12 @@
     "title": "Continuous Depreciation of a Courier Company's Van Fleet",
     "difficulty_raw": "2/5",
     "difficulty_level": "2/5",
-    "context": "A courier company's van fleet has a combined initial value of $60,000 and depreciates continuously at an annual rate of 10% (δ = 0.10), so that its value after t years follows $v(t) = v_0 e^{-\\delta t}$.",
+    "context": "A courier company's van fleet has a combined initial value of $60,000 and depreciates continuously at an annual rate of 10% with δ = 0.10, so that its value after t years follows $v(t) = v_0 e^{-\\delta t}$.",
     "statements": [
       "The fleet's value after 4 years is approximately $40,219.20.",
       "The fleet's value after 7 years is approximately $29,795.12.",
       "The 4-year value represents about 67.03% of the original $60,000 value.",
-      "If the depreciation rate were instead 20% (double 10%), the 4-year value would fall below $25,000.",
+      "If the depreciation rate were instead doubled to 20%, the 4-year value would fall below $25,000.",
       "The fleet's dollar decline during the first year alone is larger than its dollar decline during the fourth year alone."
     ],
     "answer_key": [
@@ -190,7 +190,7 @@
     "title": "Doubling Time for a REIT's Continuously-Compounded Reserve Account",
     "difficulty_raw": "2.3/5",
     "difficulty_level": "2/5",
-    "context": "A real estate investment trust (REIT) places $18,000 into a reserve account earning continuous compounding at a nominal annual rate of 5.5%, and wants to know how long it will take the balance to double, and what happens after three such doubling periods.",
+    "context": "A real estate investment trust places $18,000 into a reserve account earning continuous compounding at a nominal annual rate of 5.5%, and wants to know how long it will take the balance to double, and what happens after three such doubling periods.",
     "statements": [
       "The doubling time at 5.5% is approximately 12.60 years.",
       "At exactly 12.60 years, the balance reaches approximately $36,000.00.",
@@ -221,7 +221,7 @@
     "title": "Time for a Stamping Press to Lose Value Under Continuous Depreciation",
     "difficulty_raw": "2.5/5",
     "difficulty_level": "2/5",
-    "context": "A manufacturing plant's stamping press has an initial value of $120,000 and depreciates continuously at an annual rate of 18% (δ = 0.18). Management wants to know how long it will take for the press to lose 60% of its original value (retaining only 40%), and how that compares to a slower depreciation scenario and to losing a larger share of value.",
+    "context": "A manufacturing plant's stamping press has an initial value of $120,000 and depreciates continuously at an annual rate of 18% with δ = 0.18. Management wants to know how long it will take for the press to lose 60% of its original value, retaining only 40%, and how that compares to a slower depreciation scenario and to losing a larger share of value.",
     "statements": [
       "Setting $v_0$·$e^{-\\delta t}$ = 0.40 $v_0$ and solving gives t = ln(2.5)/δ.",
       "The press will have lost 60% of its value after approximately 5.09 years.",
@@ -285,8 +285,8 @@
     "difficulty_level": "3/5",
     "context": "An investment advisory firm is evaluating a $400,000 allocation and comparing two funds that both quote a nominal annual rate of 9.5%: Fund A compounds continuously, while Fund B compounds monthly. The firm also wants to check whether switching Fund B to daily compounding could ever let it catch up to or overtake Fund A.",
     "statements": [
-      "Fund A's (continuous) year-end value is approximately $439,863.54.",
-      "Fund B's (monthly) year-end value is approximately $439,750.00.",
+      "Fund A's continuous year-end value is approximately $439,863.54.",
+      "Fund B's monthly year-end value is approximately $439,750.00.",
       "The maximum possible effective annual rate obtainable at a 9.5% nominal rate, under any compounding frequency, is approximately 9.50% - the same as the nominal rate itself.",
       "If Fund B switched to daily compounding, its year-end value would exceed Fund A's continuous-compounding value.",
       "The dollar gap between Fund A and Fund B narrows when Fund B switches from monthly to daily compounding."
@@ -314,10 +314,10 @@
     "title": "Reverse-Engineering the Implied Rate of a Boutique Winery's Futures Fund",
     "difficulty_raw": "3.2/5",
     "difficulty_level": "3/5",
-    "context": "A boutique winery's grape futures fund grew continuously, at an unstated nominal annual rate, from $28,000 to $34,200 over the past 3 years. The fund manager wants to determine the implied rate and then project the fund's value 2 further years into the future (5 years from the start).",
+    "context": "A boutique winery's grape futures fund grew continuously, at an unstated nominal annual rate, from $28,000 to $34,200 over the past 3 years. The fund manager wants to determine the implied rate and then project the fund's value 2 further years into the future, for 5 years from the start.",
     "statements": [
       "The implied nominal continuously-compounded rate is approximately 6.67%.",
-      "Using this implied rate, the projected value 5 years from the start (2 years beyond the observed data) is approximately $39,078.52.",
+      "Using this implied rate, the projected value 5 years from the start, 2 years beyond the observed data, is approximately $39,078.52.",
       "A naive straight-line projection - extending the average dollar increase observed over the first 3 years for 2 more years - gives the same result as the correct exponential projection.",
       "At the implied rate, the fund's value would double from its original $28,000 in approximately 12.40 years.",
       "If the implied rate had instead been exactly 6.00%, the 3-year value would have been approximately $33,522.09, which is higher than the actual observed $34,200.00."
@@ -500,12 +500,12 @@
     "title": "A Logistics Company's Two-Phase Continuous Growth: Expansion Then Maturity",
     "difficulty_raw": "4.4/5",
     "difficulty_level": "4/5",
-    "context": "A logistics company's revenue base of $1,800,000 grows continuously at a nominal annual rate of 10% for the first 4 years (a rapid expansion phase), then slows to a continuous nominal rate of 4% for the following 3 years (a maturity phase), for 7 years total.",
+    "context": "A logistics company's revenue base of $1,800,000 grows continuously at a nominal annual rate of 10% for the first 4 years of rapid expansion, then slows to a continuous nominal rate of 4% for the following 3 years of maturity, for 7 years total.",
     "statements": [
       "Revenue at the end of year 4 is approximately $2,685,284.46.",
       "Revenue at the end of year 7 is approximately $3,027,649.77.",
       "The single constant continuous rate that would have produced the same 7-year outcome starting from $1,800,000 is approximately 7.43%.",
-      "The effective 7-year rate is higher than the plain (unweighted) average of the two phase rates.",
+      "The effective 7-year rate is higher than the plain, unweighted average of the two phase rates.",
       "If the two phases had instead occurred in the opposite order - 3 years at 4% followed by 4 years at 10% - the year-7 revenue would have come out exactly the same."
     ],
     "answer_key": [
@@ -593,7 +593,7 @@
     "title": "Capstone: A Three-Asset Family Office Portfolio Under Continuous Growth and Decay",
     "difficulty_raw": "5/5",
     "difficulty_level": "5/5",
-    "context": "A family office's capstone valuation combines three holdings, all valued in nominal (undiscounted) dollars and added together just like ordinary fixed amounts. Asset A is a private equity stake currently worth $150,000, growing continuously at a nominal annual rate of 6% for 5 years. Asset B is aging warehouse machinery currently worth $220,000, depreciating continuously at an annual rate of 9% for the same 5 years. Asset C is a licensing agreement currently worth $100,000 that grows continuously at 8% for its first 3 years before slowing to a continuous 3% for its remaining 2 years (5 years total).",
+    "context": "A family office's capstone valuation combines three holdings, all valued in nominal undiscounted dollars and added together just like ordinary fixed amounts. Asset A is a private equity stake currently worth $150,000, growing continuously at a nominal annual rate of 6% for 5 years. Asset B is aging warehouse machinery currently worth $220,000, depreciating continuously at an annual rate of 9% for the same 5 years. Asset C is a licensing agreement currently worth $100,000 that grows continuously at 8% for its first 3 years before slowing to a continuous 3% for its remaining 2 years of the 5-year total.",
     "statements": [
       "Asset A's value after 5 years is approximately $202,478.82.",
       "Asset B's value after 5 years is approximately $140,278.19.",

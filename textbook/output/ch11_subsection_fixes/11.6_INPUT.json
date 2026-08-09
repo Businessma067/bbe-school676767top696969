@@ -19,12 +19,12 @@
       true,
       false
     ],
-    "given": "• K (loan amount) = $60,000\n• r (annual interest rate) = 0.12\n• n = 6 equal annual payments",
-    "formulas": "• Equal-payment formula: K = (a/r)$[1-(1+r)^{-n}]$\n• Solving for the payment: a = rK/$[1-(1+r)^{-n}]$\n• Interest in a period = r × outstanding balance at the start of that period\n• Principal repaid in a period = payment - interest for that period\n• New balance = old balance - principal repaid",
-    "steps": "a = 0.12×60,000/$[1-(1.12)^{-6}]$ = 7,200/[1-0.506631] = 7,200/0.493369 ≈ $14,593.54. Year-1 interest = 0.12 × $60,000 = $7,200.00. Year-1 principal repaid = $14,593.54 - $7,200.00 = $7,393.54; half of the payment is $14,593.54/2 = $7,296.77, and $7,393.54 > $7,296.77. Balance after year 1 = $60,000 - $7,393.54 = $52,606.46. Year-2 interest = 0.12 × $52,606.46 = $6,312.77; Year-2 principal repaid = $14,593.54 - $6,312.77 = $8,280.77. Balance after year 2 = $52,606.46 - $8,280.77 = $44,325.69.",
+    "given": "• K (loan amount) = $60,000\n\n• r (annual interest rate) = 0.12\n\n• n = 6 equal annual payments",
+    "formulas": "• Equal-payment formula: $K = (a/r)[1-(1+r)^{-n}]$\n\n• Solving for the payment: $a = rK/[1-(1+r)^{-n}]$\n\n• Interest in a period = r × outstanding balance at the start of that period\n\n• Principal repaid in a period = payment - interest for that period\n\n• New balance = old balance - principal repaid",
+    "steps": "$a = 0.12\\times60{,}000/[1-(1.12)^{-6}]$ = 7,200/[1-0.506631] = 7,200/0.493369 ≈ $14,593.54. Year-1 interest = 0.12 × $60,000 = $7,200.00. Year-1 principal repaid = $14,593.54 - $7,200.00 = $7,393.54; half of the payment is $14,593.54/2 = $7,296.77, and $7,393.54 > $7,296.77. Balance after year 1 = $60,000 - $7,393.54 = $52,606.46. Year-2 interest = 0.12 × $52,606.46 = $6,312.77; Year-2 principal repaid = $14,593.54 - $6,312.77 = $8,280.77. Balance after year 2 = $52,606.46 - $8,280.77 = $44,325.69.",
     "explanations": [
       "A 12% annual interest rate charged once per year, compounding annually, is simply used as the decimal r = 0.12 in every calculation for this loan.",
-      "Solving a = rK/$[1-(1+r)^{-n}]$ with r=0.12, K=60,000, n=6 gives a ≈ $14,593.54, matching exactly.",
+      "Solving $a = rK/[1-(1+r)^{-n}]$ with r=0.12, K=60,000, n=6 gives a ≈ $14,593.54, matching exactly.",
       "In the very first period, the entire $60,000 principal has been outstanding for the full year, so the interest charged is simply 12% of $60,000, which is exactly $7,200.00 with no rounding needed.",
       "Subtracting the $7,200.00 interest charge from the $14,593.54 payment leaves $7,393.54 for principal reduction. Comparing that to half of the payment ($7,296.77) shows the principal portion is indeed slightly larger than half, even in the very first year when interest is at its highest relative to later years.",
       "Carrying the amortization forward two full years - recomputing interest on the shrinking balance each time and subtracting the resulting principal portion - gives a balance of approximately $44,325.69 after the second payment, not $45,000.00."
@@ -50,9 +50,9 @@
       true,
       false
     ],
-    "given": "• K (amount financed) = $24,000\n• Nominal annual rate = 9%, compounding monthly\n• Term = 4 years (48 monthly payments)",
-    "formulas": "• Monthly periodic rate: r = nominal annual rate / 12\n• Equal-payment formula: a = rK/$[1-(1+r)^{-n}]$\n• Total paid = a × n\n• Total interest = total paid - K",
-    "steps": "r = 0.09/12 = 0.0075; n = 4 × 12 = 48 months. a = 0.0075×24,000/$[1-(1.0075)^{-48}]$ = 180/0.301329 ≈ $597.24. Total paid = $597.24 × 48 ≈ $28,667.57 (not $29,500.00). Total interest = $28,667.57 - $24,000.00 ≈ $4,667.57. For 4 equal annual instalments at r=0.09, n=4: a = 0.09×24,000/$[1-(1.09)^{-4}]$ = 2,160/0.291676 ≈ $7,408.05, which is far more than $2,388.96, not less.",
+    "given": "• K (amount financed) = $24,000\n\n• Nominal annual rate = 9%, compounding monthly\n\n• Term = 4 years (48 monthly payments)",
+    "formulas": "• Monthly periodic rate: r = nominal annual rate / 12\n\n• Equal-payment formula: $a = rK/[1-(1+r)^{-n}]$\n\n• Total paid = a × n\n\n• Total interest = total paid - K",
+    "steps": "r = 0.09/12 = 0.0075; n = 4 × 12 = 48 months. $a = 0.0075\\times24{,}000/[1-(1.0075)^{-48}]$ = 180/0.301329 ≈ $597.24. Total paid = $597.24 × 48 ≈ $28,667.57 (not $29,500.00). Total interest = $28,667.57 - $24,000.00 ≈ $4,667.57. For 4 equal annual instalments at r=0.09, n=4: $a = 0.09\\times24{,}000/[1-(1.09)^{-4}]$ = 2,160/0.291676 ≈ $7,408.05, which is far more than $2,388.96, not less.",
     "explanations": [
       "Dividing the 9% nominal annual rate by 12 monthly periods gives a periodic rate of 0.75%, which is what the payment formula requires when payments and compounding both happen monthly.",
       "Plugging r=0.0075, K=24,000, n=48 into the payment formula gives a ≈ $597.24, matching exactly.",
@@ -81,11 +81,11 @@
       false,
       false
     ],
-    "given": "• K (loan amount) = $45,000\n• r (annual interest rate) = 0.10\n• n = 5 equal annual payments",
-    "formulas": "• Equal-payment formula: a = rK/$[1-(1+r)^{-n}]$\n• Interest in a period = r × outstanding balance at the start of that period\n• Principal repaid = payment - interest\n• New balance = old balance - principal repaid",
-    "steps": "a = 0.10×45,000/$[1-(1.10)^{-5}]$ = 4,500/0.379079 ≈ $11,870.89. Year-1: interest = 0.10×45,000 = $4,500.00; principal = $11,870.89 - $4,500.00 = $7,370.89; balance = $37,629.11. Year-2: interest = 0.10×37,629.11 = $3,762.91; principal = $8,107.98; balance = $29,521.14. Year-3: interest = 0.10×29,521.14 = $2,952.11; principal = $8,918.77; balance = $20,602.37. Year-4: interest = 0.10×20,602.37 = $2,060.24; principal = $11,870.89 - $2,060.24 = $9,810.65; here interest ($2,060.24) is much smaller than principal ($9,810.65). Year-5: interest = 0.10×10,791.72 = $1,079.17; principal = $10,791.72; balance = $0.00. Summing all five principal portions: $7,370.89 + $8,107.98 + $8,918.77 + $9,810.65 + $10,791.72 = $45,000.00 exactly.",
+    "given": "• K (loan amount) = $45,000\n\n• r (annual interest rate) = 0.10\n\n• n = 5 equal annual payments",
+    "formulas": "• Equal-payment formula: $a = rK/[1-(1+r)^{-n}]$\n\n• Interest in a period = r × outstanding balance at the start of that period\n\n• Principal repaid = payment - interest\n\n• New balance = old balance - principal repaid",
+    "steps": "$a = 0.10\\times45{,}000/[1-(1.10)^{-5}]$ = 4,500/0.379079 ≈ $11,870.89. Year-1: interest = 0.10×45,000 = $4,500.00; principal = $11,870.89 - $4,500.00 = $7,370.89; balance = $37,629.11. Year-2: interest = 0.10×37,629.11 = $3,762.91; principal = $8,107.98; balance = $29,521.14. Year-3: interest = 0.10×29,521.14 = $2,952.11; principal = $8,918.77; balance = $20,602.37. Year-4: interest = 0.10×20,602.37 = $2,060.24; principal = $11,870.89 - $2,060.24 = $9,810.65; here interest ($2,060.24) is much smaller than principal ($9,810.65). Year-5: interest = 0.10×10,791.72 = $1,079.17; principal = $10,791.72; balance = $0.00. Summing all five principal portions: $7,370.89 + $8,107.98 + $8,918.77 + $9,810.65 + $10,791.72 = $45,000.00 exactly.",
     "explanations": [
-      "Solving a = rK/$[1-(1+r)^{-n}]$ with r=0.10, K=45,000, n=5 gives a ≈ $11,870.89, matching exactly.",
+      "Solving $a = rK/[1-(1+r)^{-n}]$ with r=0.10, K=45,000, n=5 gives a ≈ $11,870.89, matching exactly.",
       "In the first year the full $45,000 principal is outstanding, so the interest charged is 10% of $45,000, which is $4,500.00, not $5,000.00.",
       "Carrying the amortization schedule forward year by year - recomputing interest on the shrinking balance each time - gives an outstanding balance of approximately $20,602.37 immediately after the third payment.",
       "By the fourth year the balance has already shrunk substantially, so the interest portion of that payment (about $2,060.24) is much smaller than the principal portion (about $9,810.65) - the opposite of what the statement claims. As a loan amortizes, later payments always shift further toward principal and away from interest.",
@@ -112,9 +112,9 @@
       true,
       false
     ],
-    "given": "• K (present value owed) = $150,000\n• r (annual interest rate) = 0.11\n• n = 10 total payments, first one immediate",
-    "formulas": "• Annuity-due present value: K = a + (a/r)$[1-(1+r)^{-(n-1)}]$\n• Ordinary-annuity comparison: a_ordinary = rK/$[1-(1+r)^{-n}]$",
-    "steps": "Combined factor = 1 + (1/0.11)$[1-(1.11)^{-9}]$ = 1 + 9.090909×(1-0.391110) = 1 + 5.537048 ≈ 6.537048. a = 150,000/6.537048 ≈ $22,946.14. Ordinary-annuity payment: a_ordinary = 0.11×150,000/$[1-(1.11)^{-10}]$ = 16,500/0.647848 ≈ $25,470.21, which is higher than $22,946.14, not lower. Difference = $25,470.21 - $22,946.14 ≈ $2,524.08. Total of all 10 due payments = $22,946.14 × 10 ≈ $229,461.39, not $220,000.00.",
+    "given": "• K (present value owed) = $150,000\n\n• r (annual interest rate) = 0.11\n\n• n = 10 total payments, first one immediate",
+    "formulas": "• Annuity-due present value: $K = a + (a/r)[1-(1+r)^{-(n-1)}]$\n\n• Ordinary-annuity comparison: $a_{\\mathrm{ordinary}} = rK/[1-(1+r)^{-n}]$",
+    "steps": "Combined factor = $1 + (1/0.11)[1-(1.11)^{-9}]$ = 1 + 9.090909×(1-0.391110) = 1 + 5.537048 ≈ 6.537048. a = 150,000/6.537048 ≈ $22,946.14. Ordinary-annuity payment: $a_{\\mathrm{ordinary}} = 0.11\\times150{,}000/[1-(1.11)^{-10}]$ = 16,500/0.647848 ≈ $25,470.21, which is higher than $22,946.14, not lower. Difference = $25,470.21 - $22,946.14 ≈ $2,524.08. Total of all 10 due payments = $22,946.14 × 10 ≈ $229,461.39, not $220,000.00.",
     "explanations": [
       "Because the very first payment happens at time zero, it isn't discounted at all and simply counts as a itself; the remaining 9 payments form an ordinary annuity discounted back from year 1, giving the combined multiplier of approximately 6.537048 shown above.",
       "Dividing the $150,000 owed by the combined factor of 6.537048 gives a ≈ $22,946.14, matching exactly.",
@@ -143,11 +143,11 @@
       true,
       true
     ],
-    "given": "• K (loan amount) = $35,000\n• r (annual interest rate) = 0.13\n• a (fixed annual payment) = $10,000",
-    "formulas": "• Number of periods needed: smallest integer n with $n \\ge [\\ln a - \\ln(a-rK)]/\\ln(1+r)$; the final payment is smaller than a unless this holds exactly\n• Future value of loan after m years: $K(1+r)^{m}$\n• Future value of m fixed payments (valued at the time of the m-th payment): (a/r)$[(1+r)^{m} - 1]$",
-    "steps": "[ln(10,000) - ln(10,000 - 0.13×35,000)]/ln(1.13) = [ln(10,000) - ln(5,450)]/ln(1.13) ≈ 4.9663, so the smallest integer n satisfying the condition is n = 5. Four full payments of $10,000 total 4×10,000 = $40,000.00. Future value of the loan after 4 years = 35,000×$(1.13)^{4}$ ≈ $57,066.58. Future value of the 4 payments of $10,000, valued at year 4 = (10,000/0.13)×$[(1.13)^{4} - 1]$ ≈ $48,497.97. Remaining debt at year 4 = $57,066.58 - $48,497.97 ≈ $8,568.61; carrying this forward one more year with interest gives the final payment: $8,568.61×1.13 ≈ $9,682.53. Total paid = $40,000.00 + $9,682.53 ≈ $49,682.53; total interest = $49,682.53 - $35,000.00 ≈ $14,682.53, which is indeed less than $35,000.00.",
+    "given": "• K (loan amount) = $35,000\n\n• r (annual interest rate) = 0.13\n\n• a (fixed annual payment) = $10,000",
+    "formulas": "• Number of periods needed: smallest integer n with $n \\ge [\\ln a - \\ln(a-rK)]/\\ln(1+r)$; the final payment is smaller than a unless this holds exactly\n\n• Future value of loan after m years: $K(1+r)^{m}$\n\n• Future value of m fixed payments (valued at the time of the m-th payment): $(a/r)[(1+r)^{m} - 1]$",
+    "steps": "$[\\ln(10{,}000) - \\ln(10{,}000 - 0.13\\times35{,}000)]/\\ln(1.13)$ = [ln(10,000) - ln(5,450)]/ln(1.13) ≈ 4.9663, so the smallest integer n satisfying the condition is n = 5. Four full payments of $10,000 total 4×10,000 = $40,000.00. Future value of the loan after 4 years = $35{,}000\\times(1.13)^{4}$ ≈ $57,066.58. Future value of the 4 payments of $10,000, valued at year 4 = $(10{,}000/0.13)\\times[(1.13)^{4} - 1]$ ≈ $48,497.97. Remaining debt at year 4 = $57,066.58 - $48,497.97 ≈ $8,568.61; carrying this forward one more year with interest gives the final payment: $8,568.61×1.13 ≈ $9,682.53. Total paid = $40,000.00 + $9,682.53 ≈ $49,682.53; total interest = $49,682.53 - $35,000.00 ≈ $14,682.53, which is indeed less than $35,000.00.",
     "explanations": [
-      "Evaluating [ln a - ln(a-rK)]/ln(1+r) with a=10,000, r=0.13, K=35,000 gives approximately 4.9663; since this is not a whole number, the smallest integer at or above it is 5, meaning 5 payments are needed.",
+      "Evaluating $[\\ln a - \\ln(a-rK)]/\\ln(1+r)$ with a=10,000, r=0.13, K=35,000 gives approximately 4.9663; since this is not a whole number, the smallest integer at or above it is 5, meaning 5 payments are needed.",
       "Since 4 full periods pass before the loan is paid off, the first four payments are each the full fixed amount of $10,000.00, adding up to exactly $40,000.00.",
       "Tracking the loan's growth at 13% for 4 years and comparing it to the accumulated value of the four $10,000 payments over the same span shows a small remaining debt at that point; carrying that remainder forward one more year at 13% interest gives a final payment of approximately $9,682.53.",
       "Adding the $40,000.00 from the four full payments to the approximately $9,682.53 final payment gives a total of about $49,682.53 paid over the life of the loan.",
@@ -174,13 +174,13 @@
       true,
       false
     ],
-    "given": "• Option A: $500,000 paid today\n• Option B: a = $100,000/year, n = 7 payments, first one immediate\n• Interest rates considered: 10% and 14% per year",
-    "formulas": "• Annuity-due present value: PV = a + (a/r)$[1-(1+r)^{-(n-1)}]$",
-    "steps": "At r=0.10: PVB = 100,000 + (100,000/0.10)×$[1-(1.10)^{-6}]$ = 100,000 + 1,000,000×0.435526 ≈ $535,526.07. Comparing: $535,526.07 (Option B) > $500,000.00 (Option A), so at 10% cash is cheaper. At r=0.14: PVB = 100,000 + (100,000/0.14)×$[1-(1.14)^{-6}]$ = 100,000 + 714,285.71×0.544813 ≈ $488,866.75 (not $495,000.00). Comparing: $488,866.75 (Option B) < $500,000.00 (Option A), so at 14% the instalment plan becomes cheaper.",
+    "given": "• Option A: $500,000 paid today\n\n• Option B: a = $100,000/year, n = 7 payments, first one immediate\n\n• Interest rates considered: 10% and 14% per year",
+    "formulas": "• Annuity-due present value: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$",
+    "steps": "At r=0.10: $PV_{\\mathrm{B}} = 100{,}000 + (100{,}000/0.10)[1-(1.10)^{-6}]$ = 100,000 + 1,000,000×0.435526 ≈ $535,526.07. Comparing: $535,526.07 (Option B) > $500,000.00 (Option A), so at 10% cash is cheaper. At r=0.14: $PV_{\\mathrm{B}} = 100{,}000 + (100{,}000/0.14)[1-(1.14)^{-6}]$ = 100,000 + 714,285.71×0.544813 ≈ $488,866.75 (not $495,000.00). Comparing: $488,866.75 (Option B) < $500,000.00 (Option A), so at 14% the instalment plan becomes cheaper.",
     "explanations": [
-      "Applying the annuity-due present-value formula with a=100,000, r=0.10, n=7 gives PVB ≈ $535,526.07, matching exactly.",
+      "Applying the annuity-due present-value formula with a=100,000, r=0.10, n=7 gives $PV_{\\mathrm{B}}$ ≈ $535,526.07, matching exactly.",
       "Since the present value of Option B at 10% (about $535,526.07) is higher than the $500,000 cash price, paying cash upfront is the cheaper option at this interest rate.",
-      "Recomputing the annuity-due present value at the higher rate of 14% gives PVB ≈ $488,866.75, not $495,000.00.",
+      "Recomputing the annuity-due present value at the higher rate of 14% gives $PV_{\\mathrm{B}}$ ≈ $488,866.75, not $495,000.00.",
       "At 14%, Option B's present value (about $488,866.75) drops below the $500,000 cash price, meaning the instalment plan is now the cheaper option - a higher discount rate reduces the present value of future payments more than it affects the already-immediate cash price.",
       "The comparison in part (d) directly contradicts this claim: at 14% the instalment option, despite its larger total nominal payout, actually costs less in present-value terms than the cash option. Raising the interest rate shrinks the present value of payments spread out over time, so which option is cheaper genuinely depends on the interest rate used, not just on the raw total dollars paid."
     ]
@@ -205,9 +205,9 @@
       true,
       false
     ],
-    "given": "• D (quarterly deposit) = $250\n• r (annual interest rate) = 0.08\n• Deposits made at the end of each quarter; interest credited once per year",
-    "formulas": "• Year-end equivalent of quarterly deposits: $D(1+3r/4) + D(1+2r/4) + D(1+r/4) + D(1+0) = D(4+1.5r)$\n• Future value after N years, treating each year's equivalent as an ordinary annuity payment: (year-end value/r)$[(1+r)^{N} - 1]$",
-    "steps": "Year-end equivalent = 250×(4 + 1.5×0.08) = 250×4.12 = $1,030.00 (not $1,100.00). FV after 4 years = (1,030.00/0.08)×$[(1.08)^{4} - 1]$ = 12,875×0.360489 ≈ $4,641.30 (not $4,700.00). FV after 3 years = (1,030.00/0.08)×$[(1.08)^{3} - 1]$ = 12,875×0.259712 ≈ $3,343.79 (not $3,500.00). Simplified (wrong) year-end value ignoring mid-year interest = 4×250 = $1,000.00; simplified FV after 4 years = (1,000/0.08)×$[(1.08)^{4} - 1]$ ≈ $4,506.11, which is indeed less than the correct $4,641.30. Difference = $4,641.30 - $4,506.11 ≈ $135.18 (not $200.00).",
+    "given": "• D (quarterly deposit) = $250\n\n• r (annual interest rate) = 0.08\n\n• Deposits made at the end of each quarter; interest credited once per year",
+    "formulas": "• Year-end equivalent of quarterly deposits: $D(1+3r/4) + D(1+2r/4) + D(1+r/4) + D(1+0) = D(4+1.5r)$\n\n• Future value after N years, treating the year-end equivalent value as an ordinary annuity payment a: $F_N = (a/r)[(1+r)^{N} - 1]$",
+    "steps": "Year-end equivalent = 250×(4 + 1.5×0.08) = 250×4.12 = $1,030.00 (not $1,100.00). FV after 4 years = $(1{,}030.00/0.08)\\times[(1.08)^{4} - 1]$ = 12,875×0.360489 ≈ $4,641.30 (not $4,700.00). FV after 3 years = $(1{,}030.00/0.08)\\times[(1.08)^{3} - 1]$ = 12,875×0.259712 ≈ $3,343.79 (not $3,500.00). Simplified (wrong) year-end value ignoring mid-year interest = 4×250 = $1,000.00; simplified FV after 4 years = $(1{,}000/0.08)\\times[(1.08)^{4} - 1]$ ≈ $4,506.11, which is indeed less than the correct $4,641.30. Difference = $4,641.30 - $4,506.11 ≈ $135.18 (not $200.00).",
     "explanations": [
       "Applying simple interest to each of the four quarterly deposits for its own remaining fraction of the year and summing the results gives 250×(4+1.5×0.08) = $1,030.00, not $1,100.00.",
       "Treating $1,030.00 as an equivalent single annual deposit and compounding it as an ordinary annuity for 4 years gives approximately $4,641.30, not $4,700.00.",
@@ -236,9 +236,9 @@
       true,
       false
     ],
-    "given": "• K (mortgage amount) = $200,000\n• Nominal annual rate = 6%, compounding monthly\n• Term = 20 years (240 monthly payments)\n• m = 60 payments already made",
-    "formulas": "• Monthly periodic rate: r = nominal annual rate / 12\n• Equal-payment formula: a = rK/$[1-(1+r)^{-n}]$\n• Outstanding balance after m payments (of an n-payment loan): remaining balance = (a/r)$[1-(1+r)^{-(n-m)}]$",
-    "steps": "r = 0.06/12 = 0.005; n = 20×12 = 240 months. a = 0.005×200,000/$[1-(1.005)^{-240}]$ = 1,000/0.697884 ≈ $1,432.86. Remaining balance after 60 payments = (1,432.86/0.005)×$[1-(1.005)^{-180}]$ ≈ 286,572.42×0.592652 ≈ $169,799.20. Principal repaid in 5 years = 200,000 - 169,799.20 = $30,200.80; as a fraction of the original principal, 30,200.80/200,000 ≈ 15.10%, which is not more than 25%. Total paid in 5 years = 1,432.86×60 ≈ $85,971.73; interest paid in 5 years = 85,971.73 - 30,200.80 ≈ $55,770.92. Total paid over all 240 months = 1,432.86×240 ≈ $343,886.91; total interest over the full term = 343,886.91 - 200,000.00 ≈ $143,886.91 (not $120,000.00).",
+    "given": "• K (mortgage amount) = $200,000\n\n• Nominal annual rate = 6%, compounding monthly\n\n• Term = 20 years (240 monthly payments)\n\n• m = 60 payments already made",
+    "formulas": "• Monthly periodic rate: r = nominal annual rate / 12\n\n• Equal-payment formula: $a = rK/[1-(1+r)^{-n}]$\n\n• Outstanding balance after m payments (of an n-payment loan): remaining balance = $(a/r)[1-(1+r)^{-(n-m)}]$",
+    "steps": "r = 0.06/12 = 0.005; n = 20×12 = 240 months. $a = 0.005\\times200{,}000/[1-(1.005)^{-240}]$ = 1,000/0.697884 ≈ $1,432.86. Remaining balance after 60 payments = $(1{,}432.86/0.005)\\times[1-(1.005)^{-180}]$ ≈ 286,572.42×0.592652 ≈ $169,799.20. Principal repaid in 5 years = 200,000 - 169,799.20 = $30,200.80; as a fraction of the original principal, 30,200.80/200,000 ≈ 15.10%, which is not more than 25%. Total paid in 5 years = 1,432.86×60 ≈ $85,971.73; interest paid in 5 years = 85,971.73 - 30,200.80 ≈ $55,770.92. Total paid over all 240 months = 1,432.86×240 ≈ $343,886.91; total interest over the full term = 343,886.91 - 200,000.00 ≈ $143,886.91 (not $120,000.00).",
     "explanations": [
       "Plugging r=0.005, K=200,000, n=240 into the payment formula gives a ≈ $1,432.86, matching exactly.",
       "The remaining 180 monthly payments still owed after month 60 form an ordinary annuity of their own; discounting them back at the same monthly rate gives an outstanding balance of approximately $169,799.20.",
@@ -267,11 +267,11 @@
       false,
       true
     ],
-    "given": "• K (loan amount) = $120,000\n• r (annual interest rate) = 0.14\n• a (fixed annual payment) = $25,000",
-    "formulas": "• Number of periods needed: smallest integer n with $n \\ge [\\ln a - \\ln(a-rK)]/\\ln(1+r)$\n• Future value of loan after m years: $K(1+r)^{m}$\n• Future value of m fixed payments (valued at the time of the m-th payment): (a/r)$[(1+r)^{m} - 1]$",
-    "steps": "[ln(25,000) - ln(25,000 - 0.14×120,000)]/ln(1.14) = [ln(25,000) - ln(8,200)]/ln(1.14) ≈ 8.508, so the smallest integer n satisfying the condition is n = 9 (8 full payments plus a final 9th payment). Future value of the loan after 8 years = 120,000×$(1.14)^{8}$ ≈ $342,310.37. Future value of the 8 payments of $25,000, valued at year 8 = (25,000/0.14)×$[(1.14)^{8} - 1]$ ≈ $330,819.00. Remaining debt at year 8 = $342,310.37 - $330,819.00 ≈ $11,491.37; carrying forward one more year: $11,491.37×1.14 ≈ $13,100.16. Total actually paid = 8×$25,000 + $13,100.16 = $200,000.00 + $13,100.16 ≈ $213,100.16; true total interest = $213,100.16 - $120,000.00 ≈ $93,100.16 (not $105,000.00). If all 9 payments were mistakenly treated as full $25,000 payments, the (incorrect) total would be 9×$25,000 = $225,000.00, overstating the true total of $213,100.16 by $225,000.00 - $213,100.16 ≈ $11,899.84, which is indeed more than $10,000.",
+    "given": "• K (loan amount) = $120,000\n\n• r (annual interest rate) = 0.14\n\n• a (fixed annual payment) = $25,000",
+    "formulas": "• Number of periods needed: smallest integer n with $n \\ge [\\ln a - \\ln(a-rK)]/\\ln(1+r)$\n\n• Future value of loan after m years: $K(1+r)^{m}$\n\n• Future value of m fixed payments (valued at the time of the m-th payment): $(a/r)[(1+r)^{m} - 1]$",
+    "steps": "$[\\ln(25{,}000) - \\ln(25{,}000 - 0.14\\times120{,}000)]/\\ln(1.14)$ = [ln(25,000) - ln(8,200)]/ln(1.14) ≈ 8.508, so the smallest integer n satisfying the condition is n = 9 (8 full payments plus a final 9th payment). Future value of the loan after 8 years = $120{,}000\\times(1.14)^{8}$ ≈ $342,310.37. Future value of the 8 payments of $25,000, valued at year 8 = $(25{,}000/0.14)\\times[(1.14)^{8} - 1]$ ≈ $330,819.00. Remaining debt at year 8 = $342,310.37 - $330,819.00 ≈ $11,491.37; carrying forward one more year: $11,491.37×1.14 ≈ $13,100.16. Total actually paid = 8×$25,000 + $13,100.16 = $200,000.00 + $13,100.16 ≈ $213,100.16; true total interest = $213,100.16 - $120,000.00 ≈ $93,100.16 (not $105,000.00). If all 9 payments were mistakenly treated as full $25,000 payments, the (incorrect) total would be 9×$25,000 = $225,000.00, overstating the true total of $213,100.16 by $225,000.00 - $213,100.16 ≈ $11,899.84, which is indeed more than $10,000.",
     "explanations": [
-      "Evaluating [ln a - ln(a-rK)]/ln(1+r) with a=25,000, r=0.14, K=120,000 gives approximately 8.508; rounding up to the next whole number gives n=9 total payments needed.",
+      "Evaluating $[\\ln a - \\ln(a-rK)]/\\ln(1+r)$ with a=25,000, r=0.14, K=120,000 gives approximately 8.508; rounding up to the next whole number gives n=9 total payments needed.",
       "Comparing the loan's accumulated value after 8 years to the accumulated value of the eight $25,000 payments leaves a small remaining balance, which grows one more year of interest into a final payment of approximately $13,100.16.",
       "Since the final, ninth payment is smaller than $25,000 (only about $13,100.16), simply multiplying $25,000 by 9 and subtracting $120,000 overstates the true interest cost; the actual total interest paid is closer to $93,100.16, not $105,000.00.",
       "Adding the eight full $25,000 payments ($200,000.00) to the smaller final payment (about $13,100.16) gives a true total of approximately $213,100.16, not $210,000.00.",
@@ -298,9 +298,9 @@
       true,
       false
     ],
-    "given": "• Equipment loan: K = $90,000, r = 0.12, n = 8 payments, first one immediate\n• Reserve fund: quarterly deposit = $300, annual rate = 0.09, interest credited once per year, N = 3 years",
-    "formulas": "• Annuity-due present value: K = a + (a/r)$[1-(1+r)^{-(n-1)}]$\n• Amortization after the immediate first payment: remaining loan behaves as an ordinary annuity of a for the remaining n-1 payments\n• Interest each period = r × balance at start of that period\n• Year-end equivalent of quarterly deposits: $D(4+1.5r)$\n• Future value after N years = (year-end value/r)$[(1+r)^{N} - 1]$",
-    "steps": "Combined factor = 1 + (1/0.12)×$[1-(1.12)^{-7}]$ ≈ 1 + 4.563757 = 5.563757; a = 90,000/5.563757 ≈ $16,176.12. Balance immediately after the first (immediate) payment = $90,000 - $16,176.12 = $73,823.88. Second payment (1 year later): interest = 0.12×73,823.88 ≈ $8,858.87; principal = $16,176.12 - $8,858.87 ≈ $7,317.26; new balance ≈ $66,506.62. Third payment (2 years later): interest = 0.12×66,506.62 ≈ $7,980.79, which is smaller than the second payment's interest of $8,858.87, not larger; principal ≈ $8,195.33; new balance ≈ $58,311.30. Reserve fund year-end equivalent = 300×(4+1.5×0.09) = 300×4.135 = $1,240.50; FV after 3 years = (1,240.50/0.09)×$[(1.09)^{3} - 1]$ ≈ 13,783.33×0.295029 ≈ $4,066.48. Total of the loan's first three payments = 3×$16,176.12 ≈ $48,528.36, which is far more than the reserve fund's 3-year balance of about $4,066.48, not less.",
+    "given": "• Equipment loan: K = $90,000, r = 0.12, n = 8 payments, first one immediate\n\n• Reserve fund: quarterly deposit = $300, annual rate = 0.09, interest credited once per year, N = 3 years",
+    "formulas": "• Annuity-due present value: $K = a + (a/r)[1-(1+r)^{-(n-1)}]$\n\n• Amortization after the immediate first payment: remaining loan behaves as an ordinary annuity of a for the remaining n-1 payments\n\n• Interest each period = r × balance at start of that period\n\n• Year-end equivalent of quarterly deposits: $D(4+1.5r)$\n\n• Future value after N years, treating the year-end equivalent value as an ordinary annuity payment a: $F_N = (a/r)[(1+r)^{N} - 1]$",
+    "steps": "Combined factor = $1 + (1/0.12)[1-(1.12)^{-7}]$ ≈ 1 + 4.563757 = 5.563757; a = 90,000/5.563757 ≈ $16,176.12. Balance immediately after the first (immediate) payment = $90,000 - $16,176.12 = $73,823.88. Second payment (1 year later): interest = 0.12×73,823.88 ≈ $8,858.87; principal = $16,176.12 - $8,858.87 ≈ $7,317.26; new balance ≈ $66,506.62. Third payment (2 years later): interest = 0.12×66,506.62 ≈ $7,980.79, which is smaller than the second payment's interest of $8,858.87, not larger; principal ≈ $8,195.33; new balance ≈ $58,311.30. Reserve fund year-end equivalent = 300×(4+1.5×0.09) = 300×4.135 = $1,240.50; FV after 3 years = $(1{,}240.50/0.09)\\times[(1.09)^{3} - 1]$ ≈ 13,783.33×0.295029 ≈ $4,066.48. Total of the loan's first three payments = 3×$16,176.12 ≈ $48,528.36, which is far more than the reserve fund's 3-year balance of about $4,066.48, not less.",
     "explanations": [
       "Because the first payment is made immediately and only the remaining 7 payments are discounted as an ordinary annuity, the combined present-value factor works out to approximately 5.563757, and dividing $90,000 by that factor gives a ≈ $16,176.12.",
       "After the immediate first payment reduces the balance to $73,823.88, that balance accrues a full year of 12% interest before the second payment is made, giving an interest portion of approximately $8,858.87 for that second payment.",
@@ -329,14 +329,14 @@
       true,
       false
     ],
-    "given": "• Schedule I: $500,000 cash today\n• Schedule II: a = $95,000/year, n = 7, first payment immediate\n• Schedule III: $150,000 cash today + a = $60,000/year, n = 10, first of these payments one year later\n• Interest rates considered: 9% and 13% per year",
-    "formulas": "• Annuity-due present value: PV = a + (a/r)$[1-(1+r)^{-(n-1)}]$\n• Ordinary-annuity present value: PV = (a/r)$[1-(1+r)^{-n}]$\n• Schedule III present value: upfront cash + ordinary-annuity present value of the later instalments",
-    "steps": "At r=0.09: PV_{\\mathrm{II}} = 95,000 + (95,000/0.09)×$[1-(1.09)^{-6}]$ ≈ 95,000 + 1,055,556×0.403471 ≈ $521,162.27. At r=0.09: PV_{\\mathrm{III}} = 150,000 + (60,000/0.09)×$[1-(1.09)^{-10}]$ ≈ 150,000 + 666,667×0.577589 ≈ $535,059.46 (not $540,000.00). Comparing at 9%: PV_{\\mathrm{I}} = $500,000.00 < PV_{\\mathrm{II}} ≈ $521,162.27 < PV_{\\mathrm{III}} ≈ $535,059.46, so Schedule I is cheapest. At r=0.13: PV_{\\mathrm{II}} = 95,000 + (95,000/0.13)×$[1-(1.13)^{-6}]$ ≈ 95,000 + 730,769×0.518945 ≈ $474,767.23. At r=0.13: PV_{\\mathrm{III}} = 150,000 + (60,000/0.13)×$[1-(1.13)^{-10}]$ ≈ 150,000 + 461,538×0.705115 ≈ $475,574.61. Comparing at 13%: PV_{\\mathrm{II}} ≈ $474,767.23 < PV_{\\mathrm{III}} ≈ $475,574.61 < PV_{\\mathrm{I}} = $500,000.00, so Schedule II is now cheapest, not Schedule III - though Schedule III has come very close to overtaking it.",
+    "given": "• Schedule I: $500,000 cash today\n\n• Schedule II: a = $95,000/year, n = 7, first payment immediate\n\n• Schedule III: $150,000 cash today + a = $60,000/year, n = 10, first of these payments one year later\n\n• Interest rates considered: 9% and 13% per year",
+    "formulas": "• Annuity-due present value: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$\n\n• Ordinary-annuity present value: $PV = (a/r)[1-(1+r)^{-n}]$\n\n• Schedule III present value: upfront cash + ordinary-annuity present value of the later instalments",
+    "steps": "At r=0.09: $PV_{\\mathrm{II}} = 95{,}000 + (95{,}000/0.09)[1-(1.09)^{-6}]$ ≈ 95,000 + 1,055,556×0.403471 ≈ $521,162.27. At r=0.09: $PV_{\\mathrm{III}} = 150{,}000 + (60{,}000/0.09)[1-(1.09)^{-10}]$ ≈ 150,000 + 666,667×0.577589 ≈ $535,059.46 (not $540,000.00). Comparing at 9%: $PV_{\\mathrm{I}}$ = $500,000.00 < $PV_{\\mathrm{II}}$ ≈ $521,162.27 < $PV_{\\mathrm{III}}$ ≈ $535,059.46, so Schedule I is cheapest. At r=0.13: $PV_{\\mathrm{II}} = 95{,}000 + (95{,}000/0.13)[1-(1.13)^{-6}]$ ≈ 95,000 + 730,769×0.518945 ≈ $474,767.23. At r=0.13: $PV_{\\mathrm{III}} = 150{,}000 + (60{,}000/0.13)[1-(1.13)^{-10}]$ ≈ 150,000 + 461,538×0.705115 ≈ $475,574.61. Comparing at 13%: $PV_{\\mathrm{II}}$ ≈ $474,767.23 < $PV_{\\mathrm{III}}$ ≈ $475,574.61 < $PV_{\\mathrm{I}}$ = $500,000.00, so Schedule II is now cheapest, not Schedule III - though Schedule III has come very close to overtaking it.",
     "explanations": [
-      "Applying the annuity-due formula with a=95,000, r=0.09, n=7 gives PV_{\\mathrm{II}} ≈ $521,162.27, matching exactly.",
+      "Applying the annuity-due formula with a=95,000, r=0.09, n=7 gives $PV_{\\mathrm{II}}$ ≈ $521,162.27, matching exactly.",
       "Adding the $150,000 upfront cash to the ordinary-annuity present value of the later $60,000 payments (discounted at 9% for 10 years) gives approximately $535,059.46, not $540,000.00.",
       "At 9%, the three present values rank as $500,000.00 (Schedule I) < $521,162.27 (Schedule II) < $535,059.46 (Schedule III), so paying cash outright is the cheapest option at this interest rate.",
-      "Recomputing Schedule II's present value at the higher rate of 13% gives PV_{\\mathrm{II}} ≈ $474,767.23, matching exactly.",
+      "Recomputing Schedule II's present value at the higher rate of 13% gives $PV_{\\mathrm{II}}$ ≈ $474,767.23, matching exactly.",
       "At 13%, Schedule III's present value (about $475,574.61) is still slightly higher than Schedule II's (about $474,767.23) - Schedule II, not Schedule III, is the cheapest schedule at this higher rate, even though Schedule III has narrowed the gap considerably compared to how far behind it was at 9%."
     ]
   },
@@ -360,14 +360,14 @@
       true,
       false
     ],
-    "given": "• Schedule I: $850,000 cash today\n• Schedule II: a = $140,000/year, n = 9, first payment immediate\n• Schedule III: $300,000 cash today + a = $80,000/year, n = 11, first of these payments one year later\n• Interest rates considered: 8% and 12% per year",
-    "formulas": "• Annuity-due present value: PV = a + (a/r)$[1-(1+r)^{-(n-1)}]$\n• Ordinary-annuity present value: PV = (a/r)$[1-(1+r)^{-n}]$\n• Schedule III present value: upfront cash + ordinary-annuity present value of the later instalments",
-    "steps": "At r=0.08: PV_{\\mathrm{II}} = 140,000 + (140,000/0.08)×$[1-(1.08)^{-8}]$ ≈ 140,000 + 1,750,000×0.459640 ≈ $944,529.45. At r=0.08: PV_{\\mathrm{III}} = 300,000 + (80,000/0.08)×$[1-(1.08)^{-11}]$ ≈ 300,000 + 1,000,000×0.571146 ≈ $871,117.14. Comparing at 8%: PV_{\\mathrm{I}} = $850,000.00 < PV_{\\mathrm{III}} ≈ $871,117.14 < PV_{\\mathrm{II}} ≈ $944,529.45, so Schedule I is cheapest. At r=0.12: PV_{\\mathrm{III}} = 300,000 + (80,000/0.12)×$[1-(1.12)^{-11}]$ ≈ 300,000 + 666,667×0.712524 ≈ $775,015.93. At r=0.12: PV_{\\mathrm{II}} = 140,000 + (140,000/0.12)×$[1-(1.12)^{-8}]$ ≈ 140,000 + 1,166,667×0.596117 ≈ $835,469.57. Comparing at 12%: PV_{\\mathrm{III}} ≈ $775,015.93 < PV_{\\mathrm{II}} ≈ $835,469.57 < PV_{\\mathrm{I}} = $850,000.00, so Schedule III becomes cheapest, not Schedule II.",
+    "given": "• Schedule I: $850,000 cash today\n\n• Schedule II: a = $140,000/year, n = 9, first payment immediate\n\n• Schedule III: $300,000 cash today + a = $80,000/year, n = 11, first of these payments one year later\n\n• Interest rates considered: 8% and 12% per year",
+    "formulas": "• Annuity-due present value: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$\n\n• Ordinary-annuity present value: $PV = (a/r)[1-(1+r)^{-n}]$\n\n• Schedule III present value: upfront cash + ordinary-annuity present value of the later instalments",
+    "steps": "At r=0.08: $PV_{\\mathrm{II}} = 140{,}000 + (140{,}000/0.08)[1-(1.08)^{-8}]$ ≈ 140,000 + 1,750,000×0.459640 ≈ $944,529.45. At r=0.08: $PV_{\\mathrm{III}} = 300{,}000 + (80{,}000/0.08)[1-(1.08)^{-11}]$ ≈ 300,000 + 1,000,000×0.571146 ≈ $871,117.14. Comparing at 8%: $PV_{\\mathrm{I}}$ = $850,000.00 < $PV_{\\mathrm{III}}$ ≈ $871,117.14 < $PV_{\\mathrm{II}}$ ≈ $944,529.45, so Schedule I is cheapest. At r=0.12: $PV_{\\mathrm{III}} = 300{,}000 + (80{,}000/0.12)[1-(1.12)^{-11}]$ ≈ 300,000 + 666,667×0.712524 ≈ $775,015.93. At r=0.12: $PV_{\\mathrm{II}} = 140{,}000 + (140{,}000/0.12)[1-(1.12)^{-8}]$ ≈ 140,000 + 1,166,667×0.596117 ≈ $835,469.57. Comparing at 12%: $PV_{\\mathrm{III}}$ ≈ $775,015.93 < $PV_{\\mathrm{II}}$ ≈ $835,469.57 < $PV_{\\mathrm{I}}$ = $850,000.00, so Schedule III becomes cheapest, not Schedule II.",
     "explanations": [
-      "Applying the annuity-due formula with a=140,000, r=0.08, n=9 gives PV_{\\mathrm{II}} ≈ $944,529.45, matching exactly.",
+      "Applying the annuity-due formula with a=140,000, r=0.08, n=9 gives $PV_{\\mathrm{II}}$ ≈ $944,529.45, matching exactly.",
       "Adding the $300,000 upfront cash to the ordinary-annuity present value of the later $80,000 payments (discounted at 8% for 11 years) gives approximately $871,117.14, matching exactly.",
       "At 8%, the three present values rank as $850,000.00 (Schedule I) < $871,117.14 (Schedule III) < $944,529.45 (Schedule II), so paying cash outright is the cheapest option at this interest rate.",
-      "Recomputing Schedule III's present value at the higher rate of 12% gives PV_{\\mathrm{III}} ≈ $775,015.93, matching exactly.",
+      "Recomputing Schedule III's present value at the higher rate of 12% gives $PV_{\\mathrm{III}}$ ≈ $775,015.93, matching exactly.",
       "At 12%, Schedule III's present value (about $775,015.93) is actually lower than Schedule II's (about $835,469.57) - Schedule III, not Schedule II, becomes the cheapest option at this higher rate, since raising the discount rate shrinks the present value of Schedule III's smaller, longer-running instalments even more than it shrinks Schedule II's larger, shorter-running ones."
     ]
   },
@@ -391,14 +391,14 @@
       false,
       false
     ],
-    "given": "• Schedule I: $2,400,000 cash today\n• Schedule II: a = $340,000/year, n = 10, first payment immediate\n• Schedule III: $600,000 cash today + a = $250,000/year, n = 9, first of these payments one year later\n• Interest rates considered: 7.5% and 11.5% per year",
-    "formulas": "• Annuity-due present value: PV = a + (a/r)$[1-(1+r)^{-(n-1)}]$\n• Ordinary-annuity present value: PV = (a/r)$[1-(1+r)^{-n}]$\n• Schedule III present value: upfront cash + ordinary-annuity present value of the later instalments",
-    "steps": "At r=0.075: PV_{\\mathrm{II}} = 340,000 + (340,000/0.075)×$[1-(1.075)^{-9}]$ ≈ 340,000 + 4,533,333×0.478550 ≈ $2,508,821.59. At r=0.075: PV_{\\mathrm{III}} = 600,000 + (250,000/0.075)×$[1-(1.075)^{-9}]$ ≈ 600,000 + 3,333,333×0.478550 ≈ $2,194,721.76 (not $2,250,000.00). Comparing at 7.5%: PV_{\\mathrm{I}} = $2,400,000.00 < PV_{\\mathrm{II}} ≈ $2,508,821.59, so cash is cheaper than the annuity-due schedule at this rate. At r=0.115: PV_{\\mathrm{II}} = 340,000 + (340,000/0.115)×$[1-(1.115)^{-9}]$ ≈ 340,000 + 2,956,522×0.624582 ≈ $2,186,561.89 (not $2,100,000.00). At r=0.115: PV_{\\mathrm{III}} ≈ 600,000 + (250,000/0.115)×$[1-(1.115)^{-9}]$ ≈ $1,957,766.09. Comparing at 11.5%: PV_{\\mathrm{II}} ≈ $2,186,561.89 < PV_{\\mathrm{I}} = $2,400,000.00, so the annuity-due schedule has now become cheaper than paying cash - the ranking between Schedules I and II has flipped compared to the 7.5% case (Schedule III remains the cheapest of all three at both rates).",
+    "given": "• Schedule I: $2,400,000 cash today\n\n• Schedule II: a = $340,000/year, n = 10, first payment immediate\n\n• Schedule III: $600,000 cash today + a = $250,000/year, n = 9, first of these payments one year later\n\n• Interest rates considered: 7.5% and 11.5% per year",
+    "formulas": "• Annuity-due present value: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$\n\n• Ordinary-annuity present value: $PV = (a/r)[1-(1+r)^{-n}]$\n\n• Schedule III present value: upfront cash + ordinary-annuity present value of the later instalments",
+    "steps": "At r=0.075: $PV_{\\mathrm{II}} = 340{,}000 + (340{,}000/0.075)[1-(1.075)^{-9}]$ ≈ 340,000 + 4,533,333×0.478550 ≈ $2,508,821.59. At r=0.075: $PV_{\\mathrm{III}} = 600{,}000 + (250{,}000/0.075)[1-(1.075)^{-9}]$ ≈ 600,000 + 3,333,333×0.478550 ≈ $2,194,721.76 (not $2,250,000.00). Comparing at 7.5%: $PV_{\\mathrm{I}}$ = $2,400,000.00 < $PV_{\\mathrm{II}}$ ≈ $2,508,821.59, so cash is cheaper than the annuity-due schedule at this rate. At r=0.115: $PV_{\\mathrm{II}} = 340{,}000 + (340{,}000/0.115)[1-(1.115)^{-9}]$ ≈ 340,000 + 2,956,522×0.624582 ≈ $2,186,561.89 (not $2,100,000.00). At r=0.115: $PV_{\\mathrm{III}} = 600{,}000 + (250{,}000/0.115)[1-(1.115)^{-9}]$ ≈ $1,957,766.09. Comparing at 11.5%: $PV_{\\mathrm{II}}$ ≈ $2,186,561.89 < $PV_{\\mathrm{I}}$ = $2,400,000.00, so the annuity-due schedule has now become cheaper than paying cash - the ranking between Schedules I and II has flipped compared to the 7.5% case (Schedule III remains the cheapest of all three at both rates).",
     "explanations": [
-      "Applying the annuity-due formula with a=340,000, r=0.075, n=10 gives PV_{\\mathrm{II}} ≈ $2,508,821.59, matching exactly.",
+      "Applying the annuity-due formula with a=340,000, r=0.075, n=10 gives $PV_{\\mathrm{II}}$ ≈ $2,508,821.59, matching exactly.",
       "Adding the $600,000 upfront cash to the ordinary-annuity present value of the later $250,000 payments (discounted at 7.5% for 9 years) gives approximately $2,194,721.76, not $2,250,000.00.",
       "At 7.5%, $2,400,000.00 (Schedule I) is indeed less than approximately $2,508,821.59 (Schedule II), so paying cash outright beats the annuity-due schedule at this lower rate.",
-      "Recomputing Schedule II's present value at the higher rate of 11.5% gives PV_{\\mathrm{II}} ≈ $2,186,561.89, not $2,100,000.00.",
+      "Recomputing Schedule II's present value at the higher rate of 11.5% gives $PV_{\\mathrm{II}}$ ≈ $2,186,561.89, not $2,100,000.00.",
       "At the higher rate of 11.5%, Schedule II's present value drops to approximately $2,186,561.89, which is now lower than the $2,400,000.00 cash price - the annuity-due schedule has overtaken cash as the cheaper option, reversing the ranking that held at 7.5%. Raising the discount rate reduces the present value of a stream of future payments more sharply than it affects an already-immediate cash amount, which is exactly what causes this kind of ranking reversal."
     ]
   }

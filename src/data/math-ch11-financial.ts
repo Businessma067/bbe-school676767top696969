@@ -151,7 +151,7 @@ Trap: the actual total growth is (9,650.61 - 6,000)/6,000 ≈ 60.84%, which is l
     case_id: `MATH 11.03`,
     title: `Which Savings Offer Is Better?`,
     subsection: `11.1`,
-    context: `A saver has $10,000 and is comparing two one-year term deposits: Offer (i) 6.4% with interest paid quarterly; Offer (ii) 6.5% with interest paid twice a year (semi-annually).`,
+    context: `A saver has $10,000 and is comparing two one-year term deposits: Offer (i) 6.4% with interest paid quarterly; Offer (ii) 6.5% with interest paid twice a year.`,
     statements: [
       `The effective annual rate of Offer (i) is approximately 6.55%.`,
       `The effective annual rate of Offer (ii) is approximately 6.61%.`,
@@ -179,7 +179,7 @@ Trap: despite compounding less frequently, Offer (ii)'s higher nominal rate (6.5
     ],
     difficulty_level: `1/5`,
     sort_order: 3,
-    solution_overview: `A saver has $10,000 and is comparing two one-year term deposits: Offer (i) 6.4% with interest paid quarterly; Offer (ii) 6.5% with interest paid twice a year (semi-annually).
+    solution_overview: `A saver has $10,000 and is comparing two one-year term deposits: Offer (i) 6.4% with interest paid quarterly; Offer (ii) 6.5% with interest paid twice a year.
 
 **Part 1: Setup.**
 
@@ -415,7 +415,7 @@ Because $(1 + r/n)^{t}$ is a strictly increasing exponential function of t, solv
     case_id: `MATH 11.07`,
     title: `Comparing Compounding Frequencies at a Fixed Nominal Rate`,
     subsection: `11.1`,
-    context: `A finance student is asked to compute the effective yearly rate corresponding to a nominal annual interest rate of 15%, with interest added: (a) twice a year (semi-annually); (b) each quarter; (c) each month.`,
+    context: `A finance student is asked to compute the effective yearly rate corresponding to a nominal annual interest rate of 15%, with interest added twice a year, each quarter, and each month.`,
     statements: [
       `The effective rate under semi-annual compounding is approximately 15.56%.`,
       `The effective rate under quarterly compounding is approximately 15.87%.`,
@@ -443,7 +443,7 @@ Trap: the gap from semi-annual to quarterly (0.31 points) is actually larger tha
     ],
     difficulty_level: `2/5`,
     sort_order: 7,
-    solution_overview: `A finance student is asked to compute the effective yearly rate corresponding to a nominal annual interest rate of 15%, with interest added: (a) twice a year (semi-annually); (b) each quarter; (c) each month.
+    solution_overview: `A finance student is asked to compute the effective yearly rate corresponding to a nominal annual interest rate of 15%, with interest added twice a year, each quarter, and each month.
 
 **Part 1: Setup.**
 
@@ -663,7 +663,7 @@ Trap: the actual difference is only about 0.013 percentage points, which is less
     case_id: `MATH 11.11`,
     title: `How Much Was Deposited 6 Years Ago?`,
     subsection: `11.1`,
-    context: `A trustee wants to know how much would have needed to be deposited 6 years ago, at a constant annual interest rate of 4.5% (paid once a year), to have exactly $40,000 available today.`,
+    context: `A trustee wants to know how much would have needed to be deposited 6 years ago, at a constant annual interest rate of 4.5%, paid once a year, to have exactly $40,000 available today.`,
     statements: [
       `The growth factor over the 6 years at 4.5% annual compounding is approximately 1.302253.`,
       `The amount that would need to have been deposited 6 years ago is approximately $30,715.86.`,
@@ -691,7 +691,7 @@ Trap: a higher interest rate (5.5%) grows money faster, so a SMALLER deposit tod
     ],
     difficulty_level: `3/5`,
     sort_order: 11,
-    solution_overview: `A trustee wants to know how much would have needed to be deposited 6 years ago, at a constant annual interest rate of 4.5% (paid once a year), to have exactly $40,000 available today.
+    solution_overview: `A trustee wants to know how much would have needed to be deposited 6 years ago, at a constant annual interest rate of 4.5%, paid once a year, to have exactly $40,000 available today.
 
 **Part 1: Setup.**
 
@@ -797,7 +797,7 @@ Trap: the correct value is approximately 81.30 months, not 100.`,
     case_id: `MATH 11.13`,
     title: `Daily Compounding on a Money-Market Deposit`,
     subsection: `11.1`,
-    context: `A retiree deposits $20,000 into a money-market account earning a nominal annual rate of 4.25%, compounded daily (365-day year), for one year.`,
+    context: `A retiree deposits $20,000 into a money-market account earning a nominal annual rate of 4.25%, compounded daily using a 365-day year, for one year.`,
     statements: [
       `The daily periodic rate is approximately 0.011644%.`,
       `The effective annual rate is approximately 4.34%.`,
@@ -825,7 +825,7 @@ Trap: the actual gap is only about 0.09 percentage points, which does not exceed
     ],
     difficulty_level: `3/5`,
     sort_order: 13,
-    solution_overview: `A retiree deposits $20,000 into a money-market account earning a nominal annual rate of 4.25%, compounded daily (365-day year), for one year.
+    solution_overview: `A retiree deposits $20,000 into a money-market account earning a nominal annual rate of 4.25%, compounded daily using a 365-day year, for one year.
 
 **Part 1: Setup.**
 
@@ -923,7 +923,7 @@ Trap: the actual gap is about 2.54 percentage points, which is less than 3.00 pe
     case_id: `MATH 11.15`,
     title: `Effective Rates for a 10% Nominal Rate Under Three Frequencies`,
     subsection: `11.1`,
-    context: `A bank wants to publish the effective yearly rate corresponding to a nominal annual rate of 10%, with interest added: (a) twice a year; (b) each quarter; (c) each month.`,
+    context: `A bank wants to publish the effective yearly rate corresponding to a nominal annual rate of 10%, with interest added twice a year, each quarter, and each month.`,
     statements: [
       `The effective rate under semi-annual compounding is approximately 10.25%.`,
       `The effective rate under quarterly compounding is approximately 10.38%.`,
@@ -951,7 +951,7 @@ Trap: the first jump (0.13 points) is larger than the second jump (0.09 points),
     ],
     difficulty_level: `4/5`,
     sort_order: 15,
-    solution_overview: `A bank wants to publish the effective yearly rate corresponding to a nominal annual rate of 10%, with interest added: (a) twice a year; (b) each quarter; (c) each month.
+    solution_overview: `A bank wants to publish the effective yearly rate corresponding to a nominal annual rate of 10%, with interest added twice a year, each quarter, and each month.
 
 **Part 1: Setup.**
 
@@ -1321,7 +1321,7 @@ Trap: the time to reach a different target multiple (2× instead of 1.4667×) is
     statements: [
       `The balance after exactly 1 year is $4,730.72.`,
       `The interest earned during the first year is $230.72.`,
-      `If the bank compounded the same 5% nominal rate annually (once per year) instead of continuously, the year-end balance would be $4,735.00.`,
+      `If the bank compounded the same 5% nominal rate annually instead of continuously, the year-end balance would be $4,735.00.`,
       `The dollar difference between continuous compounding and annual compounding at the same nominal rate is $5.72.`,
       `The growth factor $e^{0.05}$ rounds to 1.0400.`,
     ],
@@ -1333,7 +1333,7 @@ Plugging $S_0$ = 4,500, r = 0.05, and t = 1 into $S(t) = S_0 e^{rt}$ gives 4,500
       `**B) The interest earned during the first year is $230.72.**  (true)
 
 Interest earned is simply the year-end balance minus the original deposit: 4,730.72 - 4,500.00 = $230.72, matching the statement exactly.`,
-      `**C) If the bank compounded the same 5% nominal rate annually (once per year) instead of continuously, the year-end balance would be $4,735.00.**  (false)
+      `**C) If the bank compounded the same 5% nominal rate annually instead of continuously, the year-end balance would be $4,735.00.**  (false)
 
 Annual compounding at 5% for one year gives 4,500 × 1.05 = $4,725.00, not $4,735.00. The stated figure overstates the true annual-compounding balance by $10.00, and in any case it would still fall short of the continuous-compounding balance of $4,730.72, since continuous compounding is the most frequent schedule possible and can never be beaten by a less-frequent one at the same nominal rate.`,
       `**D) The dollar difference between continuous compounding and annual compounding at the same nominal rate is $5.72.**  (true)
@@ -1443,9 +1443,9 @@ The correctly computed 12-year balance is $8,357.43, and comparing this to doubl
     case_id: `MATH 11.23`,
     title: `Effective Annual Rate on a Continuously-Compounded Bond Fund`,
     subsection: `11.2`,
-    context: `An asset manager quotes a bond fund's nominal annual rate of 9%, compounded continuously, and a client asks how the effective annual yield (EAR) compares to the nominal rate, and how it would change if the nominal rate doubled to 18%.`,
+    context: `An asset manager quotes a bond fund's nominal annual rate of 9%, compounded continuously, and a client asks how the effective annual yield compares to the nominal rate, and how it would change if the nominal rate doubled to 18%.`,
     statements: [
-      `The effective annual rate (EAR) is approximately 9.42%.`,
+      `The effective annual rate is approximately 9.42%.`,
       `On a $15,000 investment, the year-end balance is $16,412.61.`,
       `The EAR exceeds the nominal rate by more than 0.75 percentage points.`,
       `If the nominal rate doubled to 18%, the resulting EAR would exceed double the original EAR.`,
@@ -1453,7 +1453,7 @@ The correctly computed 12-year balance is $8,357.43, and comparing this to doubl
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      `**A) The effective annual rate (EAR) is approximately 9.42%.**  (true)
+      `**A) The effective annual rate is approximately 9.42%.**  (true)
 
 EAR = $e^{0.09}$ - 1 ≈ 9.42%, matching the statement exactly.`,
       `**B) On a $15,000 investment, the year-end balance is $16,412.61.**  (true)
@@ -1471,7 +1471,7 @@ $e^{0.18}$ - 1 ≈ 19.72%, which is above 19.5%, matching the statement exactly.
     ],
     difficulty_level: `1/5`,
     sort_order: 23,
-    solution_overview: `An asset manager quotes a bond fund's nominal annual rate of 9%, compounded continuously, and a client asks how the effective annual yield (EAR) compares to the nominal rate, and how it would change if the nominal rate doubled to 18%.
+    solution_overview: `An asset manager quotes a bond fund's nominal annual rate of 9%, compounded continuously, and a client asks how the effective annual yield compares to the nominal rate, and how it would change if the nominal rate doubled to 18%.
 
 **Part 1: Setup.**
 
@@ -1506,7 +1506,7 @@ $e^{0.18}$ - 1 ≈ 19.72%, which is above 19.5%, matching the statement exactly.
     case_id: `MATH 11.24`,
     title: `Comparing Growth Factors on an Equipment Leasing Contract`,
     subsection: `11.2`,
-    context: `An equipment leasing firm structures a financing contract at a nominal annual rate of 10%, and wants to compare the growth factor K (the amount to which $1 grows over one year) under yearly, semi-annual, and continuous compounding, applied to a $75,000 balance.`,
+    context: `An equipment leasing firm structures a financing contract at a nominal annual rate of 10%, and wants to compare the growth factor K, the amount to which $1 grows over one year, under yearly, semi-annual, and continuous compounding, applied to a $75,000 balance.`,
     statements: [
       `Under yearly compounding, K = 1.1000.`,
       `Under semi-annual compounding, K = 1.1025.`,
@@ -1534,7 +1534,7 @@ The semi-annual-versus-yearly gap is 75,000 × (1.1025 - 1.1000) = $187.50, whic
     ],
     difficulty_level: `2/5`,
     sort_order: 24,
-    solution_overview: `An equipment leasing firm structures a financing contract at a nominal annual rate of 10%, and wants to compare the growth factor K (the amount to which $1 grows over one year) under yearly, semi-annual, and continuous compounding, applied to a $75,000 balance.
+    solution_overview: `An equipment leasing firm structures a financing contract at a nominal annual rate of 10%, and wants to compare the growth factor K, the amount to which $1 grows over one year, under yearly, semi-annual, and continuous compounding, applied to a $75,000 balance.
 
 **Part 1: Setup.**
 
@@ -1636,12 +1636,12 @@ Doubling the rate does not double the growth factor, because $e^{2r}$ equals $(e
     case_id: `MATH 11.26`,
     title: `Continuous Depreciation of a Courier Company's Van Fleet`,
     subsection: `11.2`,
-    context: `A courier company's van fleet has a combined initial value of $60,000 and depreciates continuously at an annual rate of 10% (δ = 0.10), so that its value after t years follows $v(t) = v_0 e^{-\\delta t}$.`,
+    context: `A courier company's van fleet has a combined initial value of $60,000 and depreciates continuously at an annual rate of 10% with δ = 0.10, so that its value after t years follows $v(t) = v_0 e^{-\\delta t}$.`,
     statements: [
       `The fleet's value after 4 years is approximately $40,219.20.`,
       `The fleet's value after 7 years is approximately $29,795.12.`,
       `The 4-year value represents about 67.03% of the original $60,000 value.`,
-      `If the depreciation rate were instead 20% (double 10%), the 4-year value would fall below $25,000.`,
+      `If the depreciation rate were instead doubled to 20%, the 4-year value would fall below $25,000.`,
       `The fleet's dollar decline during the first year alone is larger than its dollar decline during the fourth year alone.`,
     ],
     answer_key: [true, true, true, false, true],
@@ -1655,7 +1655,7 @@ v(7) = 60,000 × $e^{-0.70}$ = $29,795.12, matching the statement exactly.`,
       `**C) The 4-year value represents about 67.03% of the original $60,000 value.**  (true)
 
 40,219.20 / 60,000 = 0.670320, which is approximately 67.03%, matching the statement exactly.`,
-      `**D) If the depreciation rate were instead 20% (double 10%), the 4-year value would fall below $25,000.**  (false)
+      `**D) If the depreciation rate were instead doubled to 20%, the 4-year value would fall below $25,000.**  (false)
 
 Doubling the depreciation rate to 20% gives v(4) = 60,000 × $e^{-0.80}$ ≈ $26,959.74, which remains above $25,000 rather than falling below it.`,
       `**E) The fleet's dollar decline during the first year alone is larger than its dollar decline during the fourth year alone.**  (true)
@@ -1664,7 +1664,7 @@ Because continuous depreciation removes a fixed PROPORTION of the current value 
     ],
     difficulty_level: `2/5`,
     sort_order: 26,
-    solution_overview: `A courier company's van fleet has a combined initial value of $60,000 and depreciates continuously at an annual rate of 10% (δ = 0.10), so that its value after t years follows $v(t) = v_0 e^{-\\delta t}$.
+    solution_overview: `A courier company's van fleet has a combined initial value of $60,000 and depreciates continuously at an annual rate of 10% with δ = 0.10, so that its value after t years follows $v(t) = v_0 e^{-\\delta t}$.
 
 **Part 1: Setup.**
 
@@ -1703,7 +1703,7 @@ Because continuous depreciation removes a fixed PROPORTION of the current value 
     case_id: `MATH 11.27`,
     title: `Doubling Time for a REIT's Continuously-Compounded Reserve Account`,
     subsection: `11.2`,
-    context: `A real estate investment trust (REIT) places $18,000 into a reserve account earning continuous compounding at a nominal annual rate of 5.5%, and wants to know how long it will take the balance to double, and what happens after three such doubling periods.`,
+    context: `A real estate investment trust places $18,000 into a reserve account earning continuous compounding at a nominal annual rate of 5.5%, and wants to know how long it will take the balance to double, and what happens after three such doubling periods.`,
     statements: [
       `The doubling time at 5.5% is approximately 12.60 years.`,
       `At exactly 12.60 years, the balance reaches approximately $36,000.00.`,
@@ -1731,7 +1731,7 @@ Since t = ln(2)/r has r in the denominator, a LARGER r produces a SMALLER (short
     ],
     difficulty_level: `2/5`,
     sort_order: 27,
-    solution_overview: `A real estate investment trust (REIT) places $18,000 into a reserve account earning continuous compounding at a nominal annual rate of 5.5%, and wants to know how long it will take the balance to double, and what happens after three such doubling periods.
+    solution_overview: `A real estate investment trust places $18,000 into a reserve account earning continuous compounding at a nominal annual rate of 5.5%, and wants to know how long it will take the balance to double, and what happens after three such doubling periods.
 
 **Part 1: Setup.**
 
@@ -1768,7 +1768,7 @@ Since t = ln(2)/r has r in the denominator, a LARGER r produces a SMALLER (short
     case_id: `MATH 11.28`,
     title: `Time for a Stamping Press to Lose Value Under Continuous Depreciation`,
     subsection: `11.2`,
-    context: `A manufacturing plant's stamping press has an initial value of $120,000 and depreciates continuously at an annual rate of 18% (δ = 0.18). Management wants to know how long it will take for the press to lose 60% of its original value (retaining only 40%), and how that compares to a slower depreciation scenario and to losing a larger share of value.`,
+    context: `A manufacturing plant's stamping press has an initial value of $120,000 and depreciates continuously at an annual rate of 18% with δ = 0.18. Management wants to know how long it will take for the press to lose 60% of its original value, retaining only 40%, and how that compares to a slower depreciation scenario and to losing a larger share of value.`,
     statements: [
       `Setting $v_0$·$e^{-\\delta t}$ = 0.40 $v_0$ and solving gives t = ln(2.5)/δ.`,
       `The press will have lost 60% of its value after approximately 5.09 years.`,
@@ -1796,7 +1796,7 @@ Losing a larger share of the original value naturally takes longer under continu
     ],
     difficulty_level: `2/5`,
     sort_order: 28,
-    solution_overview: `A manufacturing plant's stamping press has an initial value of $120,000 and depreciates continuously at an annual rate of 18% (δ = 0.18). Management wants to know how long it will take for the press to lose 60% of its original value (retaining only 40%), and how that compares to a slower depreciation scenario and to losing a larger share of value.
+    solution_overview: `A manufacturing plant's stamping press has an initial value of $120,000 and depreciates continuously at an annual rate of 18% with δ = 0.18. Management wants to know how long it will take for the press to lose 60% of its original value, retaining only 40%, and how that compares to a slower depreciation scenario and to losing a larger share of value.
 
 **Part 1: Setup.**
 
@@ -1910,18 +1910,18 @@ This directly contradicts both the calculation above and the textbook's stated r
     subsection: `11.2`,
     context: `An investment advisory firm is evaluating a $400,000 allocation and comparing two funds that both quote a nominal annual rate of 9.5%: Fund A compounds continuously, while Fund B compounds monthly. The firm also wants to check whether switching Fund B to daily compounding could ever let it catch up to or overtake Fund A.`,
     statements: [
-      `Fund A's (continuous) year-end value is approximately $439,863.54.`,
-      `Fund B's (monthly) year-end value is approximately $439,750.00.`,
+      `Fund A's continuous year-end value is approximately $439,863.54.`,
+      `Fund B's monthly year-end value is approximately $439,750.00.`,
       `The maximum possible effective annual rate obtainable at a 9.5% nominal rate, under any compounding frequency, is approximately 9.50% - the same as the nominal rate itself.`,
       `If Fund B switched to daily compounding, its year-end value would exceed Fund A's continuous-compounding value.`,
       `The dollar gap between Fund A and Fund B narrows when Fund B switches from monthly to daily compounding.`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
-      `**A) Fund A's (continuous) year-end value is approximately $439,863.54.**  (true)
+      `**A) Fund A's continuous year-end value is approximately $439,863.54.**  (true)
 
 $S_A = 400{,}000 \\times e^{0.095}$ = $439,863.54, matching the statement exactly.`,
-      `**B) Fund B's (monthly) year-end value is approximately $439,750.00.**  (false)
+      `**B) Fund B's monthly year-end value is approximately $439,750.00.**  (false)
 
 The correctly computed monthly-compounded value is $400{,}000 \\times (1.0079167)^{12}$ = $439,699.03, not $439,750.00 - the stated figure overstates the true monthly value by about $50.97.`,
       `**C) The maximum possible effective annual rate obtainable at a 9.5% nominal rate, under any compounding frequency, is approximately 9.50% - the same as the nominal rate itself.**  (false)
@@ -1983,10 +1983,10 @@ The gap shrinks from $164.51 (monthly) to $5.44 (daily) as the discrete schedule
     case_id: `MATH 11.31`,
     title: `Reverse-Engineering the Implied Rate of a Boutique Winery's Futures Fund`,
     subsection: `11.2`,
-    context: `A boutique winery's grape futures fund grew continuously, at an unstated nominal annual rate, from $28,000 to $34,200 over the past 3 years. The fund manager wants to determine the implied rate and then project the fund's value 2 further years into the future (5 years from the start).`,
+    context: `A boutique winery's grape futures fund grew continuously, at an unstated nominal annual rate, from $28,000 to $34,200 over the past 3 years. The fund manager wants to determine the implied rate and then project the fund's value 2 further years into the future, for 5 years from the start.`,
     statements: [
       `The implied nominal continuously-compounded rate is approximately 6.67%.`,
-      `Using this implied rate, the projected value 5 years from the start (2 years beyond the observed data) is approximately $39,078.52.`,
+      `Using this implied rate, the projected value 5 years from the start, 2 years beyond the observed data, is approximately $39,078.52.`,
       `A naive straight-line projection - extending the average dollar increase observed over the first 3 years for 2 more years - gives the same result as the correct exponential projection.`,
       `At the implied rate, the fund's value would double from its original $28,000 in approximately 12.40 years.`,
       `If the implied rate had instead been exactly 6.00%, the 3-year value would have been approximately $33,522.09, which is higher than the actual observed $34,200.00.`,
@@ -1996,7 +1996,7 @@ The gap shrinks from $164.51 (monthly) to $5.44 (daily) as the discrete schedule
       `**A) The implied nominal continuously-compounded rate is approximately 6.67%.**  (true)
 
 Dividing both sides of $S(3) = S_0 e^{3r}$ by $S_0$ and taking natural logs gives $3r = \\ln(34{,}200/28{,}000)$, so $r = \\ln(1.221429)/3 \\approx 6.67\\%$, matching the statement exactly.`,
-      `**B) Using this implied rate, the projected value 5 years from the start (2 years beyond the observed data) is approximately $39,078.52.**  (true)
+      `**B) Using this implied rate, the projected value 5 years from the start, 2 years beyond the observed data, is approximately $39,078.52.**  (true)
 
 Applying the implied rate for a further 2 years (5 years total from the start) gives S(5) = 28,000 × $e^{0.066674 \\times 5}$ ≈ $39,078.52, matching the statement exactly.`,
       `**C) A naive straight-line projection - extending the average dollar increase observed over the first 3 years for 2 more years - gives the same result as the correct exponential projection.**  (false)
@@ -2011,7 +2011,7 @@ A rate of 6.00% instead of 6.67% would have produced a SMALLER 3-year value, app
     ],
     difficulty_level: `3/5`,
     sort_order: 31,
-    solution_overview: `A boutique winery's grape futures fund grew continuously, at an unstated nominal annual rate, from $28,000 to $34,200 over the past 3 years. The fund manager wants to determine the implied rate and then project the fund's value 2 further years into the future (5 years from the start).
+    solution_overview: `A boutique winery's grape futures fund grew continuously, at an unstated nominal annual rate, from $28,000 to $34,200 over the past 3 years. The fund manager wants to determine the implied rate and then project the fund's value 2 further years into the future, for 5 years from the start.
 
 **Part 1: Setup.**
 
@@ -2391,12 +2391,12 @@ With less time available to grow (4 years instead of 8), MORE money must be set 
     case_id: `MATH 11.37`,
     title: `A Logistics Company's Two-Phase Continuous Growth: Expansion Then Maturity`,
     subsection: `11.2`,
-    context: `A logistics company's revenue base of $1,800,000 grows continuously at a nominal annual rate of 10% for the first 4 years (a rapid expansion phase), then slows to a continuous nominal rate of 4% for the following 3 years (a maturity phase), for 7 years total.`,
+    context: `A logistics company's revenue base of $1,800,000 grows continuously at a nominal annual rate of 10% for the first 4 years of rapid expansion, then slows to a continuous nominal rate of 4% for the following 3 years of maturity, for 7 years total.`,
     statements: [
       `Revenue at the end of year 4 is approximately $2,685,284.46.`,
       `Revenue at the end of year 7 is approximately $3,027,649.77.`,
       `The single constant continuous rate that would have produced the same 7-year outcome starting from $1,800,000 is approximately 7.43%.`,
-      `The effective 7-year rate is higher than the plain (unweighted) average of the two phase rates.`,
+      `The effective 7-year rate is higher than the plain, unweighted average of the two phase rates.`,
       `If the two phases had instead occurred in the opposite order - 3 years at 4% followed by 4 years at 10% - the year-7 revenue would have come out exactly the same.`,
     ],
     answer_key: [true, true, true, true, true],
@@ -2410,7 +2410,7 @@ Applying the second phase's factor to the year-4 balance gives S(7) = 2,685,284.
       `**C) The single constant continuous rate that would have produced the same 7-year outcome starting from $1,800,000 is approximately 7.43%.**  (true)
 
 Because S(7) = $S_0 \\cdot e^{r_1 t_1+r_2 t_2}$, the single constant rate reproducing the same 7-year result solves $r_{\\mathrm{eff}} = (r_1 t_1+r_2 t_2)/7 = 0.52/7 \\approx 7.43\\%$, matching the statement exactly.`,
-      `**D) The effective 7-year rate is higher than the plain (unweighted) average of the two phase rates.**  (true)
+      `**D) The effective 7-year rate is higher than the plain, unweighted average of the two phase rates.**  (true)
 
 The correct effective rate is the TIME-WEIGHTED average of the two phase rates, weighted by how many years each phase lasted: (10% × 4 + 4% × 3)/7 = 7.43%, which is indeed higher than the plain, unweighted average of (10% + 4%)/2 = 7.00%. This makes sense because the faster-growing 10% phase lasted longer (4 years vs. 3 years) and so should count for more, pulling the true effective rate above the simple average.`,
       `**E) If the two phases had instead occurred in the opposite order - 3 years at 4% followed by 4 years at 10% - the year-7 revenue would have come out exactly the same.**  (true)
@@ -2419,7 +2419,7 @@ Since $S_0 \\cdot e^{r_1 t_1} e^{r_2 t_2} = S_0 \\cdot e^{r_1 t_1+r_2 t_2}$, and
     ],
     difficulty_level: `4/5`,
     sort_order: 37,
-    solution_overview: `A logistics company's revenue base of $1,800,000 grows continuously at a nominal annual rate of 10% for the first 4 years (a rapid expansion phase), then slows to a continuous nominal rate of 4% for the following 3 years (a maturity phase), for 7 years total.
+    solution_overview: `A logistics company's revenue base of $1,800,000 grows continuously at a nominal annual rate of 10% for the first 4 years of rapid expansion, then slows to a continuous nominal rate of 4% for the following 3 years of maturity, for 7 years total.
 
 **Part 1: Setup.**
 
@@ -2586,7 +2586,7 @@ Times to reach a given multiple scale with the NATURAL LOGARITHM of that multipl
     case_id: `MATH 11.40`,
     title: `Capstone: A Three-Asset Family Office Portfolio Under Continuous Growth and Decay`,
     subsection: `11.2`,
-    context: `A family office's capstone valuation combines three holdings, all valued in nominal (undiscounted) dollars and added together just like ordinary fixed amounts. Asset A is a private equity stake currently worth $150,000, growing continuously at a nominal annual rate of 6% for 5 years. Asset B is aging warehouse machinery currently worth $220,000, depreciating continuously at an annual rate of 9% for the same 5 years. Asset C is a licensing agreement currently worth $100,000 that grows continuously at 8% for its first 3 years before slowing to a continuous 3% for its remaining 2 years (5 years total).`,
+    context: `A family office's capstone valuation combines three holdings, all valued in nominal undiscounted dollars and added together just like ordinary fixed amounts. Asset A is a private equity stake currently worth $150,000, growing continuously at a nominal annual rate of 6% for 5 years. Asset B is aging warehouse machinery currently worth $220,000, depreciating continuously at an annual rate of 9% for the same 5 years. Asset C is a licensing agreement currently worth $100,000 that grows continuously at 8% for its first 3 years before slowing to a continuous 3% for its remaining 2 years of the 5-year total.`,
     statements: [
       `Asset A's value after 5 years is approximately $202,478.82.`,
       `Asset B's value after 5 years is approximately $140,278.19.`,
@@ -2614,7 +2614,7 @@ Replacing Asset B's 9% depreciation with a 9% continuous growth rate over the sa
     ],
     difficulty_level: `5/5`,
     sort_order: 40,
-    solution_overview: `A family office's capstone valuation combines three holdings, all valued in nominal (undiscounted) dollars and added together just like ordinary fixed amounts. Asset A is a private equity stake currently worth $150,000, growing continuously at a nominal annual rate of 6% for 5 years. Asset B is aging warehouse machinery currently worth $220,000, depreciating continuously at an annual rate of 9% for the same 5 years. Asset C is a licensing agreement currently worth $100,000 that grows continuously at 8% for its first 3 years before slowing to a continuous 3% for its remaining 2 years (5 years total).
+    solution_overview: `A family office's capstone valuation combines three holdings, all valued in nominal undiscounted dollars and added together just like ordinary fixed amounts. Asset A is a private equity stake currently worth $150,000, growing continuously at a nominal annual rate of 6% for 5 years. Asset B is aging warehouse machinery currently worth $220,000, depreciating continuously at an annual rate of 9% for the same 5 years. Asset C is a licensing agreement currently worth $100,000 that grows continuously at 8% for its first 3 years before slowing to a continuous 3% for its remaining 2 years of the 5-year total.
 
 **Part 1: Setup.**
 
@@ -2779,7 +2779,7 @@ A payment further in the future is discounted more heavily, since there are more
     case_id: `MATH 11.43`,
     title: `Escrowed Sale Proceeds for a Landlord`,
     subsection: `11.3`,
-    context: `A landlord is due to receive $45,000 in escrowed proceeds from a property sale in 8 years, once a title dispute is resolved. The applicable interest rate is 7% per year. The landlord's accountant computes the present value both (a) assuming annual compounding and (b) assuming continuous compounding, so this task uses K = $45,000, r = 0.07, and t = 8 under both methods.`,
+    context: `A landlord is due to receive $45,000 in escrowed proceeds from a property sale in 8 years, once a title dispute is resolved. The applicable interest rate is 7% per year. The landlord's accountant computes the present value under both annual compounding and continuous compounding, so this task uses K = $45,000, r = 0.07, and t = 8 under both methods.`,
     statements: [
       `The annual discount factor is approximately 0.5820.`,
       `The present value under annual compounding is approximately $26,190.41.`,
@@ -2807,7 +2807,7 @@ With no interest or discounting at all (r = 0), both the annual formula $K(1+0)^
     ],
     difficulty_level: `2/5`,
     sort_order: 43,
-    solution_overview: `A landlord is due to receive $45,000 in escrowed proceeds from a property sale in 8 years, once a title dispute is resolved. The applicable interest rate is 7% per year. The landlord's accountant computes the present value both (a) assuming annual compounding and (b) assuming continuous compounding, so this task uses K = $45,000, r = 0.07, and t = 8 under both methods.
+    solution_overview: `A landlord is due to receive $45,000 in escrowed proceeds from a property sale in 8 years, once a title dispute is resolved. The applicable interest rate is 7% per year. The landlord's accountant computes the present value under both annual compounding and continuous compounding, so this task uses K = $45,000, r = 0.07, and t = 8 under both methods.
 
 **Part 1: Setup.**
 
@@ -3290,7 +3290,7 @@ With no discounting at all, each payment's present value simply equals its face 
     context: `A trust fund manager currently discounts a $50,000 payment due to a beneficiary in 7 years using a continuous discount rate of 5% per year. The manager wants to quote an equivalent nominal annual rate, compounded annually, that produces exactly the same present value, so this task uses K = $50,000, r = 0.05, and t = 7 as the continuous baseline.`,
     statements: [
       `The present value of the $50,000 payment under 5% continuous compounding for 7 years is approximately $33,100.00.`,
-      `The equivalent nominal annual rate (with annual compounding) that yields the identical present value is exactly 5.00%.`,
+      `The equivalent nominal annual rate that yields the identical present value is exactly 5.00%.`,
       `The equivalent annual rate is approximately 5.87% per year.`,
       `Using the correctly derived equivalent annual rate for a 3-year horizon instead of 7 years, a $50,000 payment would have a present value of approximately $43,035.40.`,
       `The gap between the correctly derived equivalent annual rate and the 5% continuous rate is more than 1.00 percentage point.`,
@@ -3300,7 +3300,7 @@ With no discounting at all, each payment's present value simply equals its face 
       `**A) The present value of the $50,000 payment under 5% continuous compounding for 7 years is approximately $33,100.00.**  (false)
 
 Raising the payment's exponent rt = 0.05 × 7 = 0.35 and applying $e^{-0.35}$ gives the fraction of the $50,000 that survives continuous discounting over 7 years, which comes to approximately 0.704688, so multiplying through gives a present value of about $35,234.40, not $33,100.00.`,
-      `**B) The equivalent nominal annual rate (with annual compounding) that yields the identical present value is exactly 5.00%.**  (false)
+      `**B) The equivalent nominal annual rate that yields the identical present value is exactly 5.00%.**  (false)
 
 Continuous compounding grows money faster than annual compounding at the same numerical rate, since interest accrues at every instant rather than once a year. To replicate that stronger effect with annual compounding, the annual rate must actually be set slightly above 5.00% - specifically about 5.13% - not left equal to the continuous rate.`,
       `**C) The equivalent annual rate is approximately 5.87% per year.**  (false)
@@ -3354,7 +3354,7 @@ The actual gap between the equivalent annual rate (5.13%) and the continuous rat
       `The present value still required from the second receivable is approximately $64,735.99.`,
       `The required face amount of the second receivable, due in 6 years, is approximately $91,829.24.`,
       `If the second receivable were instead due in 3 years, its required face amount would be larger than the required face amount for the original 6-year due date.`,
-      `Raising the discount rate from 6% to 8% (second receivable still due in 6 years) would require a face amount of approximately $102,727.88.`,
+      `Raising the discount rate from 6% to 8%, with the second receivable still due in 6 years, would require a face amount of approximately $102,727.88.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
@@ -3370,7 +3370,7 @@ To find the face amount of a receivable given its required present value, the pr
       `**D) If the second receivable were instead due in 3 years, its required face amount would be larger than the required face amount for the original 6-year due date.**  (false)
 
 A receivable due sooner needs less compounding to reach the same present-value contribution, so moving the maturity from 6 years to 3 years actually reduces the required face amount, not increases it. Recomputing with $t_2$ = 3 gives only about $77,101.60, which is smaller than $91,829.24, the opposite of what the statement claims.`,
-      `**E) Raising the discount rate from 6% to 8% (second receivable still due in 6 years) would require a face amount of approximately $102,727.88.**  (true)
+      `**E) Raising the discount rate from 6% to 8%, with the second receivable still due in 6 years, would require a face amount of approximately $102,727.88.**  (true)
 
 A higher discount rate erodes more of a future face amount's value by the time it is discounted back to today, so reaching the same $64,735.99 present-value target at 8% instead of 6% requires a larger face amount. Recomputing at 8% gives 64,735.99 × $(1.08)^{6}$ ≈ $102,727.88, confirming the figure exactly.`,
     ],
@@ -3474,7 +3474,7 @@ Shortening the horizon from 4 years to 2 years means less time is available for 
     case_id: `MATH 11.54`,
     title: `A Corner Solution in Aging Wine Valuation`,
     subsection: `11.3`,
-    context: `A vineyard owner is deciding when to bottle and sell an aging batch of wine whose market value is modeled as P(t) = $40{,}000e^{0.05t}$ dollars, where t is the number of years from now (i.e., the wine's value grows at a constant continuous rate of 5% per year as it ages). The relevant continuous interest rate for discounting is 8% per year, so this task applies the chapter's optimal-timing condition to P(t) = $40{,}000e^{0.05t}$ with r = 0.08.`,
+    context: `A vineyard owner is deciding when to bottle and sell an aging batch of wine whose market value is modeled as P(t) = $40{,}000e^{0.05t}$ dollars, where t is the number of years from now. The relevant continuous interest rate for discounting is 8% per year, so this task applies the chapter's optimal-timing condition to P(t) = $40{,}000e^{0.05t}$ with r = 0.08.`,
     statements: [
       `The condition P'(t*) = rP(t*) has no solution for t* > 0, so the present value is maximized at t* = 0.`,
       `The present value of the batch if sold today (t = 0) is $40,000.`,
@@ -3502,7 +3502,7 @@ If the growth rate (5%) instead exceeds the discount rate (4%), the present-valu
     ],
     difficulty_level: `4/5`,
     sort_order: 54,
-    solution_overview: `A vineyard owner is deciding when to bottle and sell an aging batch of wine whose market value is modeled as P(t) = $40{,}000e^{0.05t}$ dollars, where t is the number of years from now (i.e., the wine's value grows at a constant continuous rate of 5% per year as it ages). The relevant continuous interest rate for discounting is 8% per year, so this task applies the chapter's optimal-timing condition to P(t) = $40{,}000e^{0.05t}$ with r = 0.08.
+    solution_overview: `A vineyard owner is deciding when to bottle and sell an aging batch of wine whose market value is modeled as P(t) = $40{,}000e^{0.05t}$ dollars, where t is the number of years from now. The relevant continuous interest rate for discounting is 8% per year, so this task applies the chapter's optimal-timing condition to P(t) = $40{,}000e^{0.05t}$ with r = 0.08.
 
 **Part 1: Setup.**
 
@@ -3608,7 +3608,7 @@ Since P''(t*) - rP'(t*) works out to -$1,092, which is indeed less than zero, th
       `The present value of the orchard's timber at t* is approximately $250,000.00.`,
       `The second-order quantity P''(t*) - rP'(t*) evaluates to +$6,000.`,
       `dt*/dr is approximately +246.91.`,
-      `If the interest rate were exactly 4.5% instead of 9% (half the original rate), the optimal harvest time would be exactly double the original, at 36.44 years.`,
+      `If the interest rate were exactly 4.5% instead of 9%, the optimal harvest time would be exactly double the original, at 36.44 years.`,
     ],
     answer_key: [true, false, false, false, false],
     tactical_explanations: [
@@ -3624,7 +3624,7 @@ Carefully computing P''(t*) - rP'(t*) = 6,000 - 12,000 gives -$6,000, not +$6,00
       `**D) dt*/dr is approximately +246.91.**  (false)
 
 Dividing P(t*) by the correctly signed denominator gives dt*/dr ≈ -246.91, which is negative, not positive. A negative sensitivity means a higher interest rate shortens the optimal harvest time rather than lengthening it.`,
-      `**E) If the interest rate were exactly 4.5% instead of 9% (half the original rate), the optimal harvest time would be exactly double the original, at 36.44 years.**  (false)
+      `**E) If the interest rate were exactly 4.5% instead of 9%, the optimal harvest time would be exactly double the original, at 36.44 years.**  (false)
 
 Using the exact relation t* = 2/r - 4 derived from this particular P(t), halving r from 9% to 4.5% gives t* = 2/0.045 - 4 ≈ 40.44 years. Since double the original 18.22 years would be 36.44 years, the actual relationship between t* and r is not a simple proportional doubling, and the true value (40.44) exceeds that naive expectation.`,
     ],
@@ -3671,7 +3671,7 @@ Using the exact relation t* = 2/r - 4 derived from this particular P(t), halving
     case_id: `MATH 11.57`,
     title: `Combining a Private-Equity Exit Payment with a Short-Dated Side Payment`,
     subsection: `11.3`,
-    context: `A private equity fund expects to receive $250,000 from a portfolio-company exit in exactly 2.5 years, plus a smaller side payment of $40,000 in 7 months (7/12 of a year) from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $K_1$ = $250,000 at $t_1$ = 2.5 and $K_2$ = $40,000 at $t_2$ = 7/12, with r = 0.11.`,
+    context: `A private equity fund expects to receive $250,000 from a portfolio-company exit in exactly 2.5 years, plus a smaller side payment of $40,000 in 7 months from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $K_1$ = $250,000 at $t_1$ = 2.5 and $K_2$ = $40,000 at $t_2$ = 7/12, with r = 0.11.`,
     statements: [
       `The present value of the $250,000 exit payment is approximately $189,893.03.`,
       `The present value of the $40,000 side payment is approximately $37,513.95.`,
@@ -3699,7 +3699,7 @@ With no discounting applied at all, each payment's present value collapses to it
     ],
     difficulty_level: `4/5`,
     sort_order: 57,
-    solution_overview: `A private equity fund expects to receive $250,000 from a portfolio-company exit in exactly 2.5 years, plus a smaller side payment of $40,000 in 7 months (7/12 of a year) from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $K_1$ = $250,000 at $t_1$ = 2.5 and $K_2$ = $40,000 at $t_2$ = 7/12, with r = 0.11.
+    solution_overview: `A private equity fund expects to receive $250,000 from a portfolio-company exit in exactly 2.5 years, plus a smaller side payment of $40,000 in 7 months from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $K_1$ = $250,000 at $t_1$ = 2.5 and $K_2$ = $40,000 at $t_2$ = 7/12, with r = 0.11.
 
 **Part 1: Setup.**
 
@@ -3795,7 +3795,7 @@ Since the discount factor 0.625 corresponds to a fixed value of the product r ×
     case_id: `MATH 11.59`,
     title: `General Harvest-Timing Formula for a Forestry Consultancy`,
     subsection: `11.3`,
-    context: `A forestry consultancy models a class of timber stands with value function P(t) = $A(t + k)^{2}$ for positive constants A and k, discounted continuously at rate r. For one particular stand, A = $1,200 (per squared year-offset unit), k = 5, and r = 7.5% per year. The consultancy wants the general optimal-time formula, the specific optimal time, and two comparative-statics checks.`,
+    context: `A forestry consultancy models a class of timber stands with value function P(t) = $A(t + k)^{2}$ for positive constants A and k, discounted continuously at rate r. For one particular stand, A = $1,200, k = 5, and r = 7.5% per year. The consultancy wants the general optimal-time formula, the specific optimal time, and two comparative-statics checks.`,
     statements: [
       `The general optimal-time formula for this family of functions is t* = 2/r - k.`,
       `Using A = 1,200, k = 5, and r = 7.5%, the optimal harvest time is approximately t* = 21.67 years.`,
@@ -3823,7 +3823,7 @@ Doubling r to 15% gives t* = 2/0.15 - 5 = 8.33 years. Half of the original 21.67
     ],
     difficulty_level: `5/5`,
     sort_order: 59,
-    solution_overview: `A forestry consultancy models a class of timber stands with value function P(t) = $A(t + k)^{2}$ for positive constants A and k, discounted continuously at rate r. For one particular stand, A = $1,200 (per squared year-offset unit), k = 5, and r = 7.5% per year. The consultancy wants the general optimal-time formula, the specific optimal time, and two comparative-statics checks.
+    solution_overview: `A forestry consultancy models a class of timber stands with value function P(t) = $A(t + k)^{2}$ for positive constants A and k, discounted continuously at rate r. For one particular stand, A = $1,200, k = 5, and r = 7.5% per year. The consultancy wants the general optimal-time formula, the specific optimal time, and two comparative-statics checks.
 
 **Part 1: Setup.**
 
@@ -3925,7 +3925,7 @@ Adding the two present values together, since both are already expressed in toda
     case_id: `MATH 11.61`,
     title: `Startup Revenue Growth Over Five Years`,
     subsection: `11.4`,
-    context: `A newly launched e-commerce startup earns $50 million in revenue this year and expects revenue to grow by 10% annually for each of the next four years, forming a finite geometric series with first term a = 50 (million dollars) and quotient k = 1.10 over n = 5 years.`,
+    context: `A newly launched e-commerce startup earns $50 million in revenue this year and expects revenue to grow by 10% annually for each of the next four years, forming a finite geometric series with first term a = $50 million and quotient k = 1.10 over n = 5 years.`,
     statements: [
       `The expected revenue in year 2 is $55.00 million.`,
       `The expected revenue in year 5 is approximately $73.21 million.`,
@@ -3953,7 +3953,7 @@ Recomputing $s_5$ carefully with a=50, k=1.10, n=5 gives exactly 50×(1.61051-1)
     ],
     difficulty_level: `1/5`,
     sort_order: 61,
-    solution_overview: `A newly launched e-commerce startup earns $50 million in revenue this year and expects revenue to grow by 10% annually for each of the next four years, forming a finite geometric series with first term a = 50 (million dollars) and quotient k = 1.10 over n = 5 years.
+    solution_overview: `A newly launched e-commerce startup earns $50 million in revenue this year and expects revenue to grow by 10% annually for each of the next four years, forming a finite geometric series with first term a = $50 million and quotient k = 1.10 over n = 5 years.
 
 **Part 1: Setup.**
 
@@ -4183,7 +4183,7 @@ Comparing the growth scenario (≈3,773,368 tons over 10 years) to a flat 300,00
     case_id: `MATH 11.65`,
     title: `Coal Reserves and Declining Output`,
     subsection: `11.4`,
-    context: `A coal mining region has 9,000 million tons (9 billion tons) of estimated reserves. This year's output is 180 million tons, and analysts project output will fall by 3% every year forever, an infinite geometric series with a = 180 (million tons) and k = 0.97. A second scenario considers a steeper 5% annual decline (k = 0.95) starting from the same output.`,
+    context: `A coal mining region has 9,000 million tons, or 9 billion tons, of estimated reserves. This year's output is 180 million tons, and analysts project output will fall by 3% every year forever, an infinite geometric series with a = 180 million tons and k = 0.97. A second scenario considers a steeper 5% annual decline with k = 0.95 starting from the same output.`,
     statements: [
       `Output in the second year is 174.6 million tons.`,
       `The infinite total extracted over all future years, under the 3% decline, is 6,000 million tons.`,
@@ -4211,7 +4211,7 @@ Summing only the first 20 years under the 3% decline gives $s_{20}$ = 180×(1-$0
     ],
     difficulty_level: `2/5`,
     sort_order: 65,
-    solution_overview: `A coal mining region has 9,000 million tons (9 billion tons) of estimated reserves. This year's output is 180 million tons, and analysts project output will fall by 3% every year forever, an infinite geometric series with a = 180 (million tons) and k = 0.97. A second scenario considers a steeper 5% annual decline (k = 0.95) starting from the same output.
+    solution_overview: `A coal mining region has 9,000 million tons, or 9 billion tons, of estimated reserves. This year's output is 180 million tons, and analysts project output will fall by 3% every year forever, an infinite geometric series with a = 180 million tons and k = 0.97. A second scenario considers a steeper 5% annual decline with k = 0.95 starting from the same output.
 
 **Part 1: Setup.**
 
@@ -4311,7 +4311,7 @@ With k=-1, each new term exactly cancels the one before it: starting from a, the
     case_id: `MATH 11.67`,
     title: `Equal vs. Growing Pension Contributions`,
     subsection: `11.4`,
-    context: `A city pension fund receives equal annual contributions of $12 million for 15 straight years (a degenerate geometric series with k = 1). Fund managers also model an alternative in which contributions instead grow by 4% every year from the same $12 million starting point, a finite geometric series with a = 12 (million dollars), k = 1.04, and n = 15.`,
+    context: `A city pension fund receives equal annual contributions of $12 million for 15 straight years in a degenerate geometric series with k = 1. Fund managers also model an alternative in which contributions instead grow by 4% every year from the same $12 million starting point, a finite geometric series with a = $12 million, k = 1.04, and n = 15.`,
     statements: [
       `This is the special k = 1 case of the geometric series, where the total simply equals the number of payments multiplied by the payment amount.`,
       `The total contributions over the 15 years of equal $12 million payments equal $180.00 million.`,
@@ -4339,7 +4339,7 @@ The general ratio-based formula for a finite geometric series has (k-1) in its d
     ],
     difficulty_level: `2/5`,
     sort_order: 67,
-    solution_overview: `A city pension fund receives equal annual contributions of $12 million for 15 straight years (a degenerate geometric series with k = 1). Fund managers also model an alternative in which contributions instead grow by 4% every year from the same $12 million starting point, a finite geometric series with a = 12 (million dollars), k = 1.04, and n = 15.
+    solution_overview: `A city pension fund receives equal annual contributions of $12 million for 15 straight years in a degenerate geometric series with k = 1. Fund managers also model an alternative in which contributions instead grow by 4% every year from the same $12 million starting point, a finite geometric series with a = $12 million, k = 1.04, and n = 15.
 
 **Part 1: Setup.**
 
@@ -4372,7 +4372,7 @@ The general ratio-based formula for a finite geometric series has (k-1) in its d
     case_id: `MATH 11.68`,
     title: `Structured Settlement: Finite Payments vs. Perpetual Value`,
     subsection: `11.4`,
-    context: `A structured settlement is set up to pay $15,000 in its first year, with each subsequent payment 88% of the prior one (a = $15,000, k = 0.88). One clause pays out for a finite 8 years; a separate hypothetical clause considers what the payments would total if continued forever.`,
+    context: `A structured settlement is set up to pay $15,000 in its first year, with each subsequent payment 88% of the prior one, where a = $15,000 and k = 0.88. One clause pays out for a finite 8 years; a separate hypothetical clause considers what the payments would total if continued forever.`,
     statements: [
       `The second payment in the sequence is $13,200.00.`,
       `The total of the 8 finite payments is approximately $80,045.68.`,
@@ -4400,7 +4400,7 @@ A larger ratio (0.95 instead of 0.88) means each payment shrinks more slowly fro
     ],
     difficulty_level: `3/5`,
     sort_order: 68,
-    solution_overview: `A structured settlement is set up to pay $15,000 in its first year, with each subsequent payment 88% of the prior one (a = $15,000, k = 0.88). One clause pays out for a finite 8 years; a separate hypothetical clause considers what the payments would total if continued forever.
+    solution_overview: `A structured settlement is set up to pay $15,000 in its first year, with each subsequent payment 88% of the prior one, where a = $15,000 and k = 0.88. One clause pays out for a finite 8 years; a separate hypothetical clause considers what the payments would total if continued forever.
 
 **Part 1: Setup.**
 
@@ -4437,7 +4437,7 @@ A larger ratio (0.95 instead of 0.88) means each payment shrinks more slowly fro
     case_id: `MATH 11.69`,
     title: `Growing Franchise Royalties Over 12 Years`,
     subsection: `11.4`,
-    context: `A franchisor receives a royalty of $9,000 in the first year from a new location, with royalties projected to grow 8% per year for 12 years - a finite geometric series with a = $9,000, k = 1.08, and n = 12. Analysts also compare this to a hypothetical flat (0%-growth) royalty stream.`,
+    context: `A franchisor receives a royalty of $9,000 in the first year from a new location, with royalties projected to grow 8% per year for 12 years - a finite geometric series with a = $9,000, k = 1.08, and n = 12. Analysts also compare this to a hypothetical flat 0%-growth royalty stream.`,
     statements: [
       `The finite-sum formula still gives a valid, well-defined 12-year total.`,
       `The total royalties collected over the 12 years are approximately $175,000.00.`,
@@ -4465,7 +4465,7 @@ Twelve flat annual payments of $9,000 with no growth at all would total 9,000×1
     ],
     difficulty_level: `3/5`,
     sort_order: 69,
-    solution_overview: `A franchisor receives a royalty of $9,000 in the first year from a new location, with royalties projected to grow 8% per year for 12 years - a finite geometric series with a = $9,000, k = 1.08, and n = 12. Analysts also compare this to a hypothetical flat (0%-growth) royalty stream.
+    solution_overview: `A franchisor receives a royalty of $9,000 in the first year from a new location, with royalties projected to grow 8% per year for 12 years - a finite geometric series with a = $9,000, k = 1.08, and n = 12. Analysts also compare this to a hypothetical flat 0%-growth royalty stream.
 
 **Part 1: Setup.**
 
@@ -4504,7 +4504,7 @@ Twelve flat annual payments of $9,000 with no growth at all would total 9,000×1
     case_id: `MATH 11.70`,
     title: `Tech Company Valuation: Finite Growth Plus Terminal Perpetuity`,
     subsection: `11.4`,
-    context: `A tech company projects revenue of $4 million this year, growing 20% per year for 6 years (a finite geometric series, a = 4 million, k = 1.20, n = 6). Investors then treat year-6 revenue as the first payment of a separate terminal perpetuity that declines 15% per year forever (k = 0.85), used to estimate value beyond year 6.`,
+    context: `A tech company projects revenue of $4 million this year, growing 20% per year for 6 years in a finite geometric series with a = $4 million, k = 1.20, and n = 6. Investors then treat year-6 revenue as the first payment of a separate terminal perpetuity that declines 15% per year forever with quotient k = 0.85, used to estimate value beyond year 6.`,
     statements: [
       `The 6-year finite sum of projected revenues is approximately $39.72 million.`,
       `Year-6 revenue alone is approximately $9.95 million.`,
@@ -4532,7 +4532,7 @@ Adding the 6-year finite total ($39.72 million) to the terminal perpetuity value
     ],
     difficulty_level: `3/5`,
     sort_order: 70,
-    solution_overview: `A tech company projects revenue of $4 million this year, growing 20% per year for 6 years (a finite geometric series, a = 4 million, k = 1.20, n = 6). Investors then treat year-6 revenue as the first payment of a separate terminal perpetuity that declines 15% per year forever (k = 0.85), used to estimate value beyond year 6.
+    solution_overview: `A tech company projects revenue of $4 million this year, growing 20% per year for 6 years in a finite geometric series with a = $4 million, k = 1.20, and n = 6. Investors then treat year-6 revenue as the first payment of a separate terminal perpetuity that declines 15% per year forever with quotient k = 0.85, used to estimate value beyond year 6.
 
 **Part 1: Setup.**
 
@@ -4567,7 +4567,7 @@ Adding the 6-year finite total ($39.72 million) to the terminal perpetuity value
     case_id: `MATH 11.71`,
     title: `Reverse-Engineering a Retailer's First-Month Restocking Cost`,
     subsection: `11.4`,
-    context: `A retailer's monthly restocking cost is expected to grow 15% every month for 6 months due to supply-chain constraints (quotient k = 1.15). Accounting projects that the total restocking cost over all 6 months will equal exactly $58,000. Management wants to know what the first month's cost, a, must have been to produce that total.`,
+    context: `A retailer's monthly restocking cost is expected to grow 15% every month for 6 months due to supply-chain constraints, with quotient k = 1.15. Accounting projects that the total restocking cost over all 6 months will equal exactly $58,000. Management wants to know what the first month's cost, a, must have been to produce that total.`,
     statements: [
       `If the first month's cost had instead been exactly $1,000, the second month's cost would be $1,150.00.`,
       `Solving for the first-month cost gives approximately $6,625.74.`,
@@ -4595,7 +4595,7 @@ Splitting the same $58,000 total evenly across 6 months gives 58,000/6 ≈ $9,66
     ],
     difficulty_level: `3/5`,
     sort_order: 71,
-    solution_overview: `A retailer's monthly restocking cost is expected to grow 15% every month for 6 months due to supply-chain constraints (quotient k = 1.15). Accounting projects that the total restocking cost over all 6 months will equal exactly $58,000. Management wants to know what the first month's cost, a, must have been to produce that total.
+    solution_overview: `A retailer's monthly restocking cost is expected to grow 15% every month for 6 months due to supply-chain constraints, with quotient k = 1.15. Accounting projects that the total restocking cost over all 6 months will equal exactly $58,000. Management wants to know what the first month's cost, a, must have been to produce that total.
 
 **Part 1: Setup.**
 
@@ -4632,7 +4632,7 @@ Splitting the same $58,000 total evenly across 6 months gives 58,000/6 ≈ $9,66
     case_id: `MATH 11.72`,
     title: `University Endowment: Sustainable Declining Payout`,
     subsection: `11.4`,
-    context: `A university endowment pays out $500,000 in scholarships this year. To keep the endowment sustainable, the payout is planned to shrink by 2% every year forever (a = $500,000, k = 0.98), an infinite geometric series. The board also wants to know the cumulative payout over just the first 10 years, and how a steeper 2%-per-year-larger decline (k = 0.95) would compare.`,
+    context: `A university endowment pays out $500,000 in scholarships this year. To keep the endowment sustainable, the payout is planned to shrink by 2% every year forever with a = $500,000 and k = 0.98, an infinite geometric series. The board also wants to know the cumulative payout over just the first 10 years, and how a steeper 2%-per-year-larger decline with k = 0.95 would compare.`,
     statements: [
       `The payout in the second year is $490,000.00.`,
       `The infinite total of all future payouts converges to $25,000,000.00.`,
@@ -4660,7 +4660,7 @@ A steeper 5% annual decline (k=0.95) gives an infinite total of 500,000/(1-0.95)
     ],
     difficulty_level: `3/5`,
     sort_order: 72,
-    solution_overview: `A university endowment pays out $500,000 in scholarships this year. To keep the endowment sustainable, the payout is planned to shrink by 2% every year forever (a = $500,000, k = 0.98), an infinite geometric series. The board also wants to know the cumulative payout over just the first 10 years, and how a steeper 2%-per-year-larger decline (k = 0.95) would compare.
+    solution_overview: `A university endowment pays out $500,000 in scholarships this year. To keep the endowment sustainable, the payout is planned to shrink by 2% every year forever with a = $500,000 and k = 0.98, an infinite geometric series. The board also wants to know the cumulative payout over just the first 10 years, and how a steeper 2%-per-year-larger decline with k = 0.95 would compare.
 
 **Part 1: Setup.**
 
@@ -4699,7 +4699,7 @@ A steeper 5% annual decline (k=0.95) gives an infinite total of 500,000/(1-0.95)
     case_id: `MATH 11.73`,
     title: `Marketing Budget: Solving for the Break-Point Year`,
     subsection: `11.4`,
-    context: `A company's marketing budget starts at $200,000 this year and grows 12% every year (a = $200,000, k = 1.12), a finite geometric series. The CFO wants to know the smallest number of years n after which the cumulative (total) marketing spend first surpasses $3,000,000.`,
+    context: `A company's marketing budget starts at $200,000 this year and grows 12% every year with a = $200,000 and k = 1.12, a finite geometric series. The CFO wants to know the smallest number of years n after which the cumulative total marketing spend first surpasses $3,000,000.`,
     statements: [
       `The marketing budget in year 2 is $224,000.00.`,
       `The cumulative spend after 9 years is approximately $2,955,131.26, which is still below the $3,000,000 target.`,
@@ -4727,7 +4727,7 @@ With a slower 8% growth rate, the 10-year total is $s_{10}$ = 200,000×($1.08^{1
     ],
     difficulty_level: `4/5`,
     sort_order: 73,
-    solution_overview: `A company's marketing budget starts at $200,000 this year and grows 12% every year (a = $200,000, k = 1.12), a finite geometric series. The CFO wants to know the smallest number of years n after which the cumulative (total) marketing spend first surpasses $3,000,000.
+    solution_overview: `A company's marketing budget starts at $200,000 this year and grows 12% every year with a = $200,000 and k = 1.12, a finite geometric series. The CFO wants to know the smallest number of years n after which the cumulative total marketing spend first surpasses $3,000,000.
 
 **Part 1: Setup.**
 
@@ -4760,7 +4760,7 @@ With a slower 8% growth rate, the 10-year total is $s_{10}$ = 200,000×($1.08^{1
     case_id: `MATH 11.74`,
     title: `Charitable Trust: A Deferred, Declining Grant Stream`,
     subsection: `11.4`,
-    context: `A charitable trust will issue its first grant of $50,000 starting six years from now, with each subsequent annual grant equal to 96% of the previous grant, continuing forever (a = $50,000, k = 0.96). Analysts also want the total of just the first 15 grants, and how a steeper decline would compare.`,
+    context: `A charitable trust will issue its first grant of $50,000 starting six years from now, with each subsequent annual grant equal to 96% of the previous grant, continuing forever with a = $50,000 and k = 0.96. Analysts also want the total of just the first 15 grants, and how a steeper decline would compare.`,
     statements: [
       `The second grant in the sequence is $48,000.00.`,
       `The infinite total of all future grants is $1,250,000.00.`,
@@ -4788,7 +4788,7 @@ A steeper 10% annual decline (k=0.90) gives an infinite total of 50,000/(1-0.90)
     ],
     difficulty_level: `4/5`,
     sort_order: 74,
-    solution_overview: `A charitable trust will issue its first grant of $50,000 starting six years from now, with each subsequent annual grant equal to 96% of the previous grant, continuing forever (a = $50,000, k = 0.96). Analysts also want the total of just the first 15 grants, and how a steeper decline would compare.
+    solution_overview: `A charitable trust will issue its first grant of $50,000 starting six years from now, with each subsequent annual grant equal to 96% of the previous grant, continuing forever with a = $50,000 and k = 0.96. Analysts also want the total of just the first 15 grants, and how a steeper decline would compare.
 
 **Part 1: Setup.**
 
@@ -4825,7 +4825,7 @@ A steeper 10% annual decline (k=0.90) gives an infinite total of 50,000/(1-0.90)
     case_id: `MATH 11.75`,
     title: `Vineyard Yield: A Quarterly Decline Unit-Conversion Trap`,
     subsection: `11.4`,
-    context: `A vineyard's grape yield is expected to decline by 2% every quarter (not every year) over a 5-year (20-quarter) span. The first quarter's yield is 10,000 lbs, so this is a finite geometric series with a = 10,000 lbs, k = 0.98, and n = 20 quarters.`,
+    context: `A vineyard's grape yield is expected to decline by 2% every quarter, not every year, over a 5-year span of 20 quarters. The first quarter's yield is 10,000 lbs, so this is a finite geometric series with a = 10,000 lbs, k = 0.98, and n = 20 quarters.`,
     statements: [
       `The second quarter's yield is 9,800.00 lbs.`,
       `The total yield over the full 5-year span is approximately 166,196.01 lbs.`,
@@ -4853,7 +4853,7 @@ If the 2% quarterly decline continued forever instead of stopping at 20 quarters
     ],
     difficulty_level: `4/5`,
     sort_order: 75,
-    solution_overview: `A vineyard's grape yield is expected to decline by 2% every quarter (not every year) over a 5-year (20-quarter) span. The first quarter's yield is 10,000 lbs, so this is a finite geometric series with a = 10,000 lbs, k = 0.98, and n = 20 quarters.
+    solution_overview: `A vineyard's grape yield is expected to decline by 2% every quarter, not every year, over a 5-year span of 20 quarters. The first quarter's yield is 10,000 lbs, so this is a finite geometric series with a = 10,000 lbs, k = 0.98, and n = 20 quarters.
 
 **Part 1: Setup.**
 
@@ -4890,7 +4890,7 @@ If the 2% quarterly decline continued forever instead of stopping at 20 quarters
     case_id: `MATH 11.76`,
     title: `Comparing Two Franchise Territories Over 8 Years`,
     subsection: `11.4`,
-    context: `A franchisor compares two territories over 8 years. Territory A starts at a first-year royalty of $80,000, growing 6% per year (a = 80,000, k = 1.06). Territory B starts higher, at $95,000, but grows more slowly, at only 2% per year (a = 95,000, k = 1.02).`,
+    context: `A franchisor compares two territories over 8 years. Territory A starts at a first-year royalty of $80,000, growing 6% per year with a = $80,000 and k = 1.06. Territory B starts higher, at $95,000, but grows more slowly, at only 2% per year with a = $95,000 and k = 1.02.`,
     statements: [
       `Territory A's 8-year total royalties are approximately $791,797.43.`,
       `Territory B's 8-year total royalties are approximately $815,382.06.`,
@@ -4918,7 +4918,7 @@ The actual difference between the two totals is $815,382.06 - $791,797.43 = $23,
     ],
     difficulty_level: `4/5`,
     sort_order: 76,
-    solution_overview: `A franchisor compares two territories over 8 years. Territory A starts at a first-year royalty of $80,000, growing 6% per year (a = 80,000, k = 1.06). Territory B starts higher, at $95,000, but grows more slowly, at only 2% per year (a = 95,000, k = 1.02).
+    solution_overview: `A franchisor compares two territories over 8 years. Territory A starts at a first-year royalty of $80,000, growing 6% per year with a = $80,000 and k = 1.06. Territory B starts higher, at $95,000, but grows more slowly, at only 2% per year with a = $95,000 and k = 1.02.
 
 **Part 1: Setup.**
 
@@ -5016,7 +5016,7 @@ With p=0.5, which is not greater than 1, this series falls outside the convergen
     case_id: `MATH 11.78`,
     title: `Solar Farm: Revenue Growth vs. Rising Maintenance Costs`,
     subsection: `11.4`,
-    context: `A solar farm's annual energy revenue starts at $150,000 and grows 1% per year (a = 150,000, k = 1.01), while its annual maintenance cost starts at $120,000 but grows faster, at 3% per year (a = 120,000, k = 1.03). Both are finite geometric series. Management compares cumulative profit (revenue total minus cost total) over both a 12-year and a 20-year horizon.`,
+    context: `A solar farm's annual energy revenue starts at $150,000 and grows 1% per year with a = $150,000 and k = 1.01, while its annual maintenance cost starts at $120,000 but grows faster, at 3% per year with a = $120,000 and k = 1.03. Both are finite geometric series. Management compares cumulative profit, revenue total minus cost total, over both a 12-year and a 20-year horizon.`,
     statements: [
       `The cumulative 12-year revenue is approximately $1,902,375.45.`,
       `The cumulative 12-year maintenance cost is approximately $1,703,043.55.`,
@@ -5044,7 +5044,7 @@ Extending the same calculations to 20 years gives a cumulative revenue of about 
     ],
     difficulty_level: `4/5`,
     sort_order: 78,
-    solution_overview: `A solar farm's annual energy revenue starts at $150,000 and grows 1% per year (a = 150,000, k = 1.01), while its annual maintenance cost starts at $120,000 but grows faster, at 3% per year (a = 120,000, k = 1.03). Both are finite geometric series. Management compares cumulative profit (revenue total minus cost total) over both a 12-year and a 20-year horizon.
+    solution_overview: `A solar farm's annual energy revenue starts at $150,000 and grows 1% per year with a = $150,000 and k = 1.01, while its annual maintenance cost starts at $120,000 but grows faster, at 3% per year with a = $120,000 and k = 1.03. Both are finite geometric series. Management compares cumulative profit, revenue total minus cost total, over both a 12-year and a 20-year horizon.
 
 **Part 1: Setup.**
 
@@ -5087,7 +5087,7 @@ Extending the same calculations to 20 years gives a cumulative revenue of about 
     case_id: `MATH 11.79`,
     title: `Private Equity Fund: Recession vs. Recovery Cash-Flow Scenarios`,
     subsection: `11.4`,
-    context: `A private equity fund's portfolio company currently generates $2,400,000 in annual free cash flow. Under a “recession” scenario, cash flow is expected to shrink 6% every year indefinitely (a = 2,400,000, k = 0.94). Under a “recovery” scenario, cash flow instead grows 6% per year for the next 7 years before the fund exits (a = 2,400,000, k = 1.06, n = 7).`,
+    context: `A private equity fund's portfolio company currently generates $2,400,000 in annual free cash flow. Under a “recession” scenario, cash flow is expected to shrink 6% every year indefinitely with a = $2,400,000 and k = 0.94. Under a “recovery” scenario, cash flow instead grows 6% per year for the next 7 years before the fund exits with a = $2,400,000, k = 1.06, and n = 7.`,
     statements: [
       `Under the recession scenario, the infinite cumulative cash flow converges to $40,000,000.00.`,
       `Under the same recession scenario, the cumulative cash flow over just the first 15 years is approximately $22,000,000.00.`,
@@ -5115,7 +5115,7 @@ The 7th year of the recovery scenario alone is 2,400,000×$1.06^{6}$ ≈ 2,400,0
     ],
     difficulty_level: `5/5`,
     sort_order: 79,
-    solution_overview: `A private equity fund's portfolio company currently generates $2,400,000 in annual free cash flow. Under a “recession” scenario, cash flow is expected to shrink 6% every year indefinitely (a = 2,400,000, k = 0.94). Under a “recovery” scenario, cash flow instead grows 6% per year for the next 7 years before the fund exits (a = 2,400,000, k = 1.06, n = 7).
+    solution_overview: `A private equity fund's portfolio company currently generates $2,400,000 in annual free cash flow. Under a “recession” scenario, cash flow is expected to shrink 6% every year indefinitely with a = $2,400,000 and k = 0.94. Under a “recovery” scenario, cash flow instead grows 6% per year for the next 7 years before the fund exits with a = $2,400,000, k = 1.06, and n = 7.
 
 **Part 1: Setup.**
 
@@ -5152,7 +5152,7 @@ The 7th year of the recovery scenario alone is 2,400,000×$1.06^{6}$ ≈ 2,400,0
     case_id: `MATH 11.80`,
     title: `Capstone: A Three-Tranche Loan Portfolio and a Convergence Trap`,
     subsection: `11.4`,
-    context: `A private lender values a portfolio of three loan tranches, valued in nominal (undiscounted) dollars, adding declining and growing streams together just as ordinary fixed amounts. Tranche 1 pays equal annual coupons of $25,000 for 9 years (the degenerate k = 1 case). Tranche 2 pays a growing coupon starting at $18,000, increasing 7% per year for 9 years (a = 18,000, k = 1.07). Tranche 3 is a perpetual royalty starting at $30,000 that declines 8% per year forever (a = 30,000, k = 0.92). Separately, an analyst proposes valuing a symbolic annual fee stream $f_n = 1{,}000/n$ (dollars, for n = 1, 2, 3, …).`,
+    context: `A private lender values a portfolio of three loan tranches, valued in nominal undiscounted dollars, adding declining and growing streams together just as ordinary fixed amounts. Tranche 1 pays equal annual coupons of $25,000 for 9 years in the degenerate k = 1 case. Tranche 2 pays a growing coupon starting at $18,000, increasing 7% per year for 9 years with a = $18,000 and k = 1.07. Tranche 3 is a perpetual royalty starting at $30,000 that declines 8% per year forever with a = $30,000 and k = 0.92. Separately, an analyst proposes valuing a symbolic annual fee stream $f_n = 1{,}000/n$ dollars for n = 1, 2, 3, ….`,
     statements: [
       `Tranche 1 totals exactly $225,000.00.`,
       `Tranche 2 totals approximately $215,603.80.`,
@@ -5180,7 +5180,7 @@ The individual term $f_{100} = 1{,}000/100$ = $10.00 is calculated correctly, an
     ],
     difficulty_level: `5/5`,
     sort_order: 80,
-    solution_overview: `A private lender values a portfolio of three loan tranches, valued in nominal (undiscounted) dollars, adding declining and growing streams together just as ordinary fixed amounts. Tranche 1 pays equal annual coupons of $25,000 for 9 years (the degenerate k = 1 case). Tranche 2 pays a growing coupon starting at $18,000, increasing 7% per year for 9 years (a = 18,000, k = 1.07). Tranche 3 is a perpetual royalty starting at $30,000 that declines 8% per year forever (a = 30,000, k = 0.92). Separately, an analyst proposes valuing a symbolic annual fee stream $f_n = 1{,}000/n$ (dollars, for n = 1, 2, 3, …).
+    solution_overview: `A private lender values a portfolio of three loan tranches, valued in nominal undiscounted dollars, adding declining and growing streams together just as ordinary fixed amounts. Tranche 1 pays equal annual coupons of $25,000 for 9 years in the degenerate k = 1 case. Tranche 2 pays a growing coupon starting at $18,000, increasing 7% per year for 9 years with a = $18,000 and k = 1.07. Tranche 3 is a perpetual royalty starting at $30,000 that declines 8% per year forever with a = $30,000 and k = 0.92. Separately, an analyst proposes valuing a symbolic annual fee stream $f_n = 1{,}000/n$ dollars for n = 1, 2, 3, ….
 
 **Part 1: Setup.**
 
@@ -5542,7 +5542,7 @@ A higher interest rate discounts future withdrawals more heavily, which REDUCES 
     case_id: `MATH 11.86`,
     title: `Present Value of an Ordinary Annuity vs. a Perpetuity for a Nonprofit Scholarship`,
     subsection: `11.5`,
-    context: `A nonprofit organization needs to fund $5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same $5,000 annual payment in perpetuity (forever) at the same rate.`,
+    context: `A nonprofit organization needs to fund $5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same $5,000 annual payment in perpetuity at the same rate.`,
     statements: [
       `The present value needed to fund the 20-year annuity is approximately $57,349.67.`,
       `The perpetuity value is approximately $83,333.33, exceeding the 20-year annuity's present value by approximately $25,983.66.`,
@@ -5570,7 +5570,7 @@ This is exactly how Section 11.5 derives the perpetuity formula: letting n tend 
     ],
     difficulty_level: `2/5`,
     sort_order: 86,
-    solution_overview: `A nonprofit organization needs to fund $5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same $5,000 annual payment in perpetuity (forever) at the same rate.
+    solution_overview: `A nonprofit organization needs to fund $5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same $5,000 annual payment in perpetuity at the same rate.
 
 **Part 1: Setup.**
 
@@ -5737,7 +5737,7 @@ Even when Strategy B's total nominal contributions are raised to exactly match S
     case_id: `MATH 11.89`,
     title: `Future Value of an Annuity Due for a Gym's Equipment Upgrade Fund`,
     subsection: `11.5`,
-    context: `A gym owner deposits $3,000 at the BEGINNING of each year (an annuity due) for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.`,
+    context: `A gym owner deposits $3,000 at the BEGINNING of each year as an annuity due for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.`,
     statements: [
       `The future value of these deposits at the end of year 6 is approximately $21,426.05.`,
       `If the same $3,000 deposits were instead made at the END of each year, the future value would be approximately $20,405.76, which is LOWER than the annuity-due result.`,
@@ -5765,7 +5765,7 @@ This is a direct structural identity: $F_{\\mathrm{due}} = F_{\\mathrm{ordinary}
     ],
     difficulty_level: `3/5`,
     sort_order: 89,
-    solution_overview: `A gym owner deposits $3,000 at the BEGINNING of each year (an annuity due) for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.
+    solution_overview: `A gym owner deposits $3,000 at the BEGINNING of each year as an annuity due for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.
 
 **Part 1: Setup.**
 
@@ -5800,7 +5800,7 @@ This is a direct structural identity: $F_{\\mathrm{due}} = F_{\\mathrm{ordinary}
     case_id: `MATH 11.90`,
     title: `Present Value of an Annuity Due for a Commercial Lease`,
     subsection: `11.5`,
-    context: `A tenant signs a 5-year commercial lease requiring rent payments of $24,000 at the BEGINNING of each year (an annuity due). The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.`,
+    context: `A tenant signs a 5-year commercial lease requiring rent payments of $24,000 at the BEGINNING of each year as an annuity due. The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.`,
     statements: [
       `The present value of the lease payments today is approximately $107,162.61.`,
       `If the same $24,000 payments were instead due at the END of each year, the present value would be approximately $101,096.80, which is LOWER than the annuity-due result.`,
@@ -5828,7 +5828,7 @@ Since the first payment of an annuity due occurs today (with zero discounting) a
     ],
     difficulty_level: `3/5`,
     sort_order: 90,
-    solution_overview: `A tenant signs a 5-year commercial lease requiring rent payments of $24,000 at the BEGINNING of each year (an annuity due). The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.
+    solution_overview: `A tenant signs a 5-year commercial lease requiring rent payments of $24,000 at the BEGINNING of each year as an annuity due. The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.
 
 **Part 1: Setup.**
 
@@ -5865,7 +5865,7 @@ Since the first payment of an annuity due occurs today (with zero discounting) a
     case_id: `MATH 11.91`,
     title: `A Deferred Perpetuity for a Philanthropist's Endowed Fund`,
     subsection: `11.5`,
-    context: `A philanthropist wants to establish an endowed fund that will pay $10,000 at the end of each year, forever, but the FIRST payment will not occur until the end of year 5 (i.e., payments run at t = 5, 6, 7, …). The fund earns 6% annual interest, and the philanthropist wants to know how much must be donated today.`,
+    context: `A philanthropist wants to establish an endowed fund that will pay $10,000 at the end of each year, forever, but the FIRST payment will not occur until the end of year 5, with payments running at t = 5, 6, 7, …. The fund earns 6% annual interest, and the philanthropist wants to know how much must be donated today.`,
     statements: [
       `The value of the perpetuity as of the end of year 4 is approximately $166,666.67.`,
       `Discounting this year-4 value back 4 years to today at 6% gives a present value of approximately $132,015.61.`,
@@ -5893,7 +5893,7 @@ Because PV0 = $V/(1.06)^{4}$, the ratio PV0/V is by definition exactly the 4-yea
     ],
     difficulty_level: `3/5`,
     sort_order: 91,
-    solution_overview: `A philanthropist wants to establish an endowed fund that will pay $10,000 at the end of each year, forever, but the FIRST payment will not occur until the end of year 5 (i.e., payments run at t = 5, 6, 7, …). The fund earns 6% annual interest, and the philanthropist wants to know how much must be donated today.
+    solution_overview: `A philanthropist wants to establish an endowed fund that will pay $10,000 at the end of each year, forever, but the FIRST payment will not occur until the end of year 5, with payments running at t = 5, 6, 7, …. The fund earns 6% annual interest, and the philanthropist wants to know how much must be donated today.
 
 **Part 1: Setup.**
 
@@ -6117,7 +6117,7 @@ This is a direct structural requirement of the growing-perpetuity formula: it de
     case_id: `MATH 11.95`,
     title: `The Gordon Growth Model for a Pension Fund's Stock Valuation`,
     subsection: `11.5`,
-    context: `A pension fund is valuing a stock that just paid a dividend of $3.00 per share (D0), expected to grow at a constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use the NEXT dividend, not the one just paid, in the valuation formula.`,
+    context: `A pension fund is valuing a stock that just paid a dividend of $3.00 per share, denoted D0, expected to grow at a constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use the NEXT dividend, not the one just paid, in the valuation formula.`,
     statements: [
       `The next dividend is $3.09.`,
       `The fair value per share is approximately $54.50.`,
@@ -6145,7 +6145,7 @@ As g → r, the formula's denominator (r - g) shrinks toward zero, driving the R
     ],
     difficulty_level: `4/5`,
     sort_order: 95,
-    solution_overview: `A pension fund is valuing a stock that just paid a dividend of $3.00 per share (D0), expected to grow at a constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use the NEXT dividend, not the one just paid, in the valuation formula.
+    solution_overview: `A pension fund is valuing a stock that just paid a dividend of $3.00 per share, denoted D0, expected to grow at a constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use the NEXT dividend, not the one just paid, in the valuation formula.
 
 **Part 1: Setup.**
 
@@ -6182,7 +6182,7 @@ As g → r, the formula's denominator (r - g) shrinks toward zero, driving the R
     case_id: `MATH 11.96`,
     title: `Comparing Level vs. Growing Royalty-Stream Purchase Deals for a Musician`,
     subsection: `11.5`,
-    context: `A musician is offered two royalty-stream purchase deals for a song catalog, both priced at $170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level (non-growing) perpetuity of $18,000 per year. Deal 2 is a growing perpetuity starting at $14,000 next year, growing 4% per year forever.`,
+    context: `A musician is offered two royalty-stream purchase deals for a song catalog, both priced at $170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level non-growing perpetuity of $18,000 per year. Deal 2 is a growing perpetuity starting at $14,000 next year, growing 4% per year forever.`,
     statements: [
       `Deal 1's fair value is $180,000.00, which exceeds the $170,000 asking price by $10,000.00, making it a good buy.`,
       `Deal 2's fair value is approximately $233,333.33, which exceeds the $170,000 asking price by more than $60,000.00.`,
@@ -6210,7 +6210,7 @@ Deal 1's fair value ($180,000.00) is actually LESS than Deal 2's fair value ($23
     ],
     difficulty_level: `4/5`,
     sort_order: 96,
-    solution_overview: `A musician is offered two royalty-stream purchase deals for a song catalog, both priced at $170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level (non-growing) perpetuity of $18,000 per year. Deal 2 is a growing perpetuity starting at $14,000 next year, growing 4% per year forever.
+    solution_overview: `A musician is offered two royalty-stream purchase deals for a song catalog, both priced at $170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level non-growing perpetuity of $18,000 per year. Deal 2 is a growing perpetuity starting at $14,000 next year, growing 4% per year forever.
 
 **Part 1: Setup.**
 
@@ -6381,7 +6381,7 @@ $S_{\\mathrm{discrete}} = 75{,}000 \\times (1.0625)^{9}$ = $129,426.15, which do
     case_id: `MATH 11.99`,
     title: `Mixed Financial Planning: Annuity Due, Continuous Compounding & Perpetuity`,
     subsection: `11.5`,
-    context: `A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of $4,200 at the BEGINNING of each year (an annuity due) for 5 years at 8% interest. Second, the owner separately invests $20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying $3,000 per year forever, at 8%, for a maintenance reserve fund.`,
+    context: `A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of $4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests $20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying $3,000 per year forever, at 8%, for a maintenance reserve fund.`,
     statements: [
       `The present value of the annuity-due lease payments is approximately $18,110.94.`,
       `The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately $27,610.90.`,
@@ -6409,7 +6409,7 @@ The continuous-compounding investment grows to $30,439.24 after 7 years, which i
     ],
     difficulty_level: `5/5`,
     sort_order: 99,
-    solution_overview: `A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of $4,200 at the BEGINNING of each year (an annuity due) for 5 years at 8% interest. Second, the owner separately invests $20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying $3,000 per year forever, at 8%, for a maintenance reserve fund.
+    solution_overview: `A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of $4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests $20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying $3,000 per year forever, at 8%, for a maintenance reserve fund.
 
 **Part 1: Setup.**
 
@@ -6789,7 +6789,7 @@ Multiplying the correct per-payment amount of $22,946.14 by the 10 total payment
     case_id: `MATH 11.105`,
     title: `Fixed Annual Payment on a Working-Capital Loan`,
     subsection: `11.6`,
-    context: `A landscaping company borrows $35,000 at 13% annual interest and commits to repaying exactly $10,000 at the end of each year (a fixed amount chosen by the company, not solved from the equal-payment formula), continuing until the debt is fully retired, with a smaller final payment to settle whatever remains.`,
+    context: `A landscaping company borrows $35,000 at 13% annual interest and commits to repaying exactly $10,000 at the end of each year, continuing until the debt is fully retired, with a smaller final payment to settle whatever remains.`,
     statements: [
       `The smallest whole number of yearly payments needed to pay off the loan is n = 5.`,
       `The first four payments are each exactly $10,000.00, totalling $40,000.00.`,
@@ -6817,7 +6817,7 @@ Subtracting the original $35,000 principal from the total amount paid (about $49
     ],
     difficulty_level: `3/5`,
     sort_order: 105,
-    solution_overview: `A landscaping company borrows $35,000 at 13% annual interest and commits to repaying exactly $10,000 at the end of each year (a fixed amount chosen by the company, not solved from the equal-payment formula), continuing until the debt is fully retired, with a smaller final payment to settle whatever remains.
+    solution_overview: `A landscaping company borrows $35,000 at 13% annual interest and commits to repaying exactly $10,000 at the end of each year, continuing until the debt is fully retired, with a smaller final payment to settle whatever remains.
 
 **Part 1: Setup.**
 
@@ -6978,7 +6978,7 @@ The gap between the correct balance (≈ $4,641.30) and the simplified, interest
     case_id: `MATH 11.108`,
     title: `Home Mortgage: Outstanding Balance Partway Through the Term`,
     subsection: `11.6`,
-    context: `A family takes out a $200,000 home mortgage at a nominal annual interest rate of 6%, compounding monthly, to be repaid with equal payments at the end of each month over 20 years. After making exactly 5 years of payments (60 monthly payments), they want to know how much principal is still outstanding.`,
+    context: `A family takes out a $200,000 home mortgage at a nominal annual interest rate of 6%, compounding monthly, to be repaid with equal payments at the end of each month over 20 years. After making exactly 5 years of payments, they want to know how much principal is still outstanding.`,
     statements: [
       `The required monthly payment is approximately $1,432.86.`,
       `The outstanding balance immediately after the 60th monthly payment is approximately $169,799.20.`,
@@ -7006,7 +7006,7 @@ Multiplying the monthly payment by all 240 months and subtracting the original $
     ],
     difficulty_level: `4/5`,
     sort_order: 108,
-    solution_overview: `A family takes out a $200,000 home mortgage at a nominal annual interest rate of 6%, compounding monthly, to be repaid with equal payments at the end of each month over 20 years. After making exactly 5 years of payments (60 monthly payments), they want to know how much principal is still outstanding.
+    solution_overview: `A family takes out a $200,000 home mortgage at a nominal annual interest rate of 6%, compounding monthly, to be repaid with equal payments at the end of each month over 20 years. After making exactly 5 years of payments, they want to know how much principal is still outstanding.
 
 **Part 1: Setup.**
 
@@ -7047,7 +7047,7 @@ Multiplying the monthly payment by all 240 months and subtracting the original $
     case_id: `MATH 11.109`,
     title: `Fixed Repayment Schedule on a Large Equipment Loan`,
     subsection: `11.6`,
-    context: `A manufacturing company borrows $120,000 at 14% annual interest and chooses to repay a fixed $25,000 at the end of each year (rather than solving for the exact equal-payment amount), continuing until the loan is retired, with a final smaller payment to clear whatever balance remains.`,
+    context: `A manufacturing company borrows $120,000 at 14% annual interest and chooses to repay a fixed $25,000 at the end of each year, continuing until the loan is retired, with a final smaller payment to clear whatever balance remains.`,
     statements: [
       `The smallest whole number of yearly payments needed to retire the loan is n = 9.`,
       `The ninth and final payment is approximately $13,100.16.`,
@@ -7075,7 +7075,7 @@ Treating the final payment as if it were also a full $25,000 payment produces a 
     ],
     difficulty_level: `5/5`,
     sort_order: 109,
-    solution_overview: `A manufacturing company borrows $120,000 at 14% annual interest and chooses to repay a fixed $25,000 at the end of each year (rather than solving for the exact equal-payment amount), continuing until the loan is retired, with a final smaller payment to clear whatever balance remains.
+    solution_overview: `A manufacturing company borrows $120,000 at 14% annual interest and chooses to repay a fixed $25,000 at the end of each year, continuing until the loan is retired, with a final smaller payment to clear whatever balance remains.
 
 **Part 1: Setup.**
 
@@ -7114,7 +7114,7 @@ Treating the final payment as if it were also a full $25,000 payment produces a 
     case_id: `MATH 11.110`,
     title: `Capstone: Equipment Loan Paid as an Annuity Due, Plus a Separate Reserve Fund`,
     subsection: `11.6`,
-    context: `A manufacturing company borrows $90,000 to buy new equipment, to be repaid in 8 equal annual instalments with the first payment due immediately (an annuity due) and the rest due at the beginning of each following year, at an annual interest rate of 12%. Independently, to prepare for future maintenance costs, the company also deposits $300 at the end of each quarter into a separate reserve account that pays 9% annual interest, credited once per year (with simple interest applied to each quarterly deposit for its remaining fraction of the year, exactly as in a within-period deposit calculation).`,
+    context: `A manufacturing company borrows $90,000 to buy new equipment, to be repaid in 8 equal annual instalments with the first payment due immediately and the rest due at the beginning of each following year, at an annual interest rate of 12%. Independently, to prepare for future maintenance costs, the company also deposits $300 at the end of each quarter into a separate reserve account that pays 9% annual interest, credited once per year.`,
     statements: [
       `The required annuity-due payment on the equipment loan is approximately $16,176.12.`,
       `The interest portion of the second loan payment is approximately $8,858.87.`,
@@ -7142,7 +7142,7 @@ Three annual loan payments of about $16,176.12 each add up to roughly $48,528.36
     ],
     difficulty_level: `5/5`,
     sort_order: 110,
-    solution_overview: `A manufacturing company borrows $90,000 to buy new equipment, to be repaid in 8 equal annual instalments with the first payment due immediately (an annuity due) and the rest due at the beginning of each following year, at an annual interest rate of 12%. Independently, to prepare for future maintenance costs, the company also deposits $300 at the end of each quarter into a separate reserve account that pays 9% annual interest, credited once per year (with simple interest applied to each quarterly deposit for its remaining fraction of the year, exactly as in a within-period deposit calculation).
+    solution_overview: `A manufacturing company borrows $90,000 to buy new equipment, to be repaid in 8 equal annual instalments with the first payment due immediately and the rest due at the beginning of each following year, at an annual interest rate of 12%. Independently, to prepare for future maintenance costs, the company also deposits $300 at the end of each quarter into a separate reserve account that pays 9% annual interest, credited once per year.
 
 **Part 1: Setup.**
 
@@ -7183,7 +7183,7 @@ Three annual loan payments of about $16,176.12 each add up to roughly $48,528.36
     case_id: `MATH 11.111`,
     title: `Capstone: Comparing Three Payment Schedules for a Building Site`,
     subsection: `11.6`,
-    context: `A construction firm wants to buy a building site and is choosing among three payment schedules. Schedule I: pay $500,000 in cash immediately. Schedule II: pay $95,000 per year for 7 years, with the first instalment paid immediately (an annuity due). Schedule III: pay $150,000 in cash immediately, plus $60,000 per year for 10 years, with the first of these instalments paid one year later (an ordinary annuity). The firm wants to know which schedule is cheapest in present-value terms first at a 9% annual interest rate, and then at a 13% annual interest rate.`,
+    context: `A construction firm wants to buy a building site and is choosing among three payment schedules. Schedule I: pay $500,000 in cash immediately. Schedule II: pay $95,000 per year for 7 years, with the first instalment paid immediately. Schedule III: pay $150,000 in cash immediately, plus $60,000 per year for 10 years, with the first of these instalments paid one year later. The firm wants to know which schedule is cheapest in present-value terms first at a 9% annual interest rate, and then at a 13% annual interest rate.`,
     statements: [
       `At a 9% annual rate, the present value of Schedule II is approximately $521,162.27.`,
       `At a 9% annual rate, the present value of Schedule III is approximately $540,000.00.`,
@@ -7211,7 +7211,7 @@ At 13%, Schedule III's present value (about $475,574.61) is still slightly highe
     ],
     difficulty_level: `5/5`,
     sort_order: 111,
-    solution_overview: `A construction firm wants to buy a building site and is choosing among three payment schedules. Schedule I: pay $500,000 in cash immediately. Schedule II: pay $95,000 per year for 7 years, with the first instalment paid immediately (an annuity due). Schedule III: pay $150,000 in cash immediately, plus $60,000 per year for 10 years, with the first of these instalments paid one year later (an ordinary annuity). The firm wants to know which schedule is cheapest in present-value terms first at a 9% annual interest rate, and then at a 13% annual interest rate.
+    solution_overview: `A construction firm wants to buy a building site and is choosing among three payment schedules. Schedule I: pay $500,000 in cash immediately. Schedule II: pay $95,000 per year for 7 years, with the first instalment paid immediately. Schedule III: pay $150,000 in cash immediately, plus $60,000 per year for 10 years, with the first of these instalments paid one year later. The firm wants to know which schedule is cheapest in present-value terms first at a 9% annual interest rate, and then at a 13% annual interest rate.
 
 **Part 1: Setup.**
 
@@ -7252,7 +7252,7 @@ At 13%, Schedule III's present value (about $475,574.61) is still slightly highe
     case_id: `MATH 11.112`,
     title: `Capstone: Comparing Three Payment Schedules for a Hospital Imaging Center`,
     subsection: `11.6`,
-    context: `A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules. Schedule I: pay $850,000 in cash immediately. Schedule II: pay $140,000 per year for 9 years, with the first instalment paid immediately (an annuity due). Schedule III: pay $300,000 in cash immediately, plus $80,000 per year for 11 years, with the first of these instalments paid one year later (an ordinary annuity). The hospital wants to know which schedule is cheapest in present-value terms first at an 8% annual interest rate, and then at a 12% annual interest rate.`,
+    context: `A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules. Schedule I: pay $850,000 in cash immediately. Schedule II: pay $140,000 per year for 9 years, with the first instalment paid immediately. Schedule III: pay $300,000 in cash immediately, plus $80,000 per year for 11 years, with the first of these instalments paid one year later. The hospital wants to know which schedule is cheapest in present-value terms first at an 8% annual interest rate, and then at a 12% annual interest rate.`,
     statements: [
       `At an 8% annual rate, the present value of Schedule II is approximately $944,529.45.`,
       `At an 8% annual rate, the present value of Schedule III is approximately $871,117.14.`,
@@ -7280,7 +7280,7 @@ At 12%, Schedule III's present value (about $775,015.93) is actually lower than 
     ],
     difficulty_level: `5/5`,
     sort_order: 112,
-    solution_overview: `A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules. Schedule I: pay $850,000 in cash immediately. Schedule II: pay $140,000 per year for 9 years, with the first instalment paid immediately (an annuity due). Schedule III: pay $300,000 in cash immediately, plus $80,000 per year for 11 years, with the first of these instalments paid one year later (an ordinary annuity). The hospital wants to know which schedule is cheapest in present-value terms first at an 8% annual interest rate, and then at a 12% annual interest rate.
+    solution_overview: `A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules. Schedule I: pay $850,000 in cash immediately. Schedule II: pay $140,000 per year for 9 years, with the first instalment paid immediately. Schedule III: pay $300,000 in cash immediately, plus $80,000 per year for 11 years, with the first of these instalments paid one year later. The hospital wants to know which schedule is cheapest in present-value terms first at an 8% annual interest rate, and then at a 12% annual interest rate.
 
 **Part 1: Setup.**
 
@@ -7321,7 +7321,7 @@ At 12%, Schedule III's present value (about $775,015.93) is actually lower than 
     case_id: `MATH 11.113`,
     title: `Capstone: Comparing Three Payment Schedules for a Cargo Vessel`,
     subsection: `11.6`,
-    context: `A shipping company is negotiating the purchase of a cargo vessel and is choosing among three payment schedules. Schedule I: pay $2,400,000 in cash immediately. Schedule II: pay $340,000 per year for 10 years, with the first instalment paid immediately (an annuity due). Schedule III: pay $600,000 in cash immediately, plus $250,000 per year for 9 years, with the first of these instalments paid one year later (an ordinary annuity). The company wants to know how the ranking of Schedule I versus Schedule II changes between a 7.5% annual interest rate and a 11.5% annual interest rate.`,
+    context: `A shipping company is negotiating the purchase of a cargo vessel and is choosing among three payment schedules. Schedule I: pay $2,400,000 in cash immediately. Schedule II: pay $340,000 per year for 10 years, with the first instalment paid immediately. Schedule III: pay $600,000 in cash immediately, plus $250,000 per year for 9 years, with the first of these instalments paid one year later. The company wants to know how the ranking of Schedule I versus Schedule II changes between a 7.5% annual interest rate and a 11.5% annual interest rate.`,
     statements: [
       `At a 7.5% annual rate, the present value of Schedule II is approximately $2,508,821.59.`,
       `At a 7.5% annual rate, the present value of Schedule III is approximately $2,250,000.00.`,
@@ -7349,7 +7349,7 @@ At the higher rate of 11.5%, Schedule II's present value drops to approximately 
     ],
     difficulty_level: `5/5`,
     sort_order: 113,
-    solution_overview: `A shipping company is negotiating the purchase of a cargo vessel and is choosing among three payment schedules. Schedule I: pay $2,400,000 in cash immediately. Schedule II: pay $340,000 per year for 10 years, with the first instalment paid immediately (an annuity due). Schedule III: pay $600,000 in cash immediately, plus $250,000 per year for 9 years, with the first of these instalments paid one year later (an ordinary annuity). The company wants to know how the ranking of Schedule I versus Schedule II changes between a 7.5% annual interest rate and a 11.5% annual interest rate.
+    solution_overview: `A shipping company is negotiating the purchase of a cargo vessel and is choosing among three payment schedules. Schedule I: pay $2,400,000 in cash immediately. Schedule II: pay $340,000 per year for 10 years, with the first instalment paid immediately. Schedule III: pay $600,000 in cash immediately, plus $250,000 per year for 9 years, with the first of these instalments paid one year later. The company wants to know how the ranking of Schedule I versus Schedule II changes between a 7.5% annual interest rate and a 11.5% annual interest rate.
 
 **Part 1: Setup.**
 
@@ -7395,7 +7395,7 @@ At the higher rate of 11.5%, Schedule II's present value drops to approximately 
       `The internal rate of return for this project is exactly 20%.`,
       `At an interest rate of 15%, the net present value of this project is positive.`,
       `At an interest rate of 25%, the net present value of this project is positive.`,
-      `If the return had instead been $10,000 (outlay unchanged), the internal rate of return would exceed 24%.`,
+      `If the return had instead been $10,000, with the outlay unchanged, the internal rate of return would exceed 24%.`,
       `This project has a unique internal rate of return greater than -1.`,
     ],
     answer_key: [true, true, false, true, true],
@@ -7409,7 +7409,7 @@ NPV = -8,000 + 9,600/1.15 = -8,000 + 8,347.83 = $347.83, which is positive (15% 
       `**C) At an interest rate of 25%, the net present value of this project is positive.**  (false)
 
 NPV = -8,000 + 9,600/1.25 = -8,000 + 7,680.00 = -$320.00, which is negative, not positive (25% is above the 20% IRR).`,
-      `**D) If the return had instead been $10,000 (outlay unchanged), the internal rate of return would exceed 24%.**  (true)
+      `**D) If the return had instead been $10,000, with the outlay unchanged, the internal rate of return would exceed 24%.**  (true)
 
 With b = 10,000: r = (10,000/8,000) - 1 = 1.25 - 1 = 0.25 = 25%, which exceeds 24%.`,
       `**E) This project has a unique internal rate of return greater than -1.**  (true)
@@ -7454,8 +7454,8 @@ The chapter's theorem states that if $a_0$ < 0 and all subsequent returns are po
       `The internal rate of return is approximately 10.92%.`,
       `At an interest rate of 8%, the net present value of this project is positive.`,
       `At an interest rate of 12%, the net present value of this project is positive.`,
-      `If the Year 2 return had instead been $8,000 (Year 1 unchanged at $7,000), the internal rate of return would exceed 13%.`,
-      `Doubling both returns to $14,000 in Year 1 and $14,000 in Year 2 (outlay unchanged at $12,000) would result in an internal rate of return of approximately 21.84%.`,
+      `If the Year 2 return had instead been $8,000, with Year 1 unchanged at $7,000, the internal rate of return would exceed 13%.`,
+      `Doubling both returns to $14,000 in Year 1 and $14,000 in Year 2, with the outlay unchanged at $12,000, would result in an internal rate of return of approximately 21.84%.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
@@ -7468,10 +7468,10 @@ NPV = -12,000 + 7,000/1.08 + 7,000/1.1664 = -12,000 + 6,481.48 + 6,001.37 = $482
       `**C) At an interest rate of 12%, the net present value of this project is positive.**  (false)
 
 NPV = -12,000 + 7,000/1.12 + 7,000/1.2544 = -12,000 + 6,250.00 + 5,580.36 = -$169.64, negative, not positive (12% is above the IRR).`,
-      `**D) If the Year 2 return had instead been $8,000 (Year 1 unchanged at $7,000), the internal rate of return would exceed 13%.**  (true)
+      `**D) If the Year 2 return had instead been $8,000, with Year 1 unchanged at $7,000, the internal rate of return would exceed 13%.**  (true)
 
 With $a_2$ = $8,000: $8,000s^{2} + 7,000s - 12,000 = 0$ → $8s^{2} + 7s - 12 = 0$. Discriminant = 49 + 384 = 433, √433 ≈ 20.809. $s = (-7 + 20.809)/16 \\approx 0.8630$, so $r = 1/0.8630 - 1 \\approx 0.1587 = 15.87\\%$, which exceeds 13%.`,
-      `**E) Doubling both returns to $14,000 in Year 1 and $14,000 in Year 2 (outlay unchanged at $12,000) would result in an internal rate of return of approximately 21.84%.**  (false)
+      `**E) Doubling both returns to $14,000 in Year 1 and $14,000 in Year 2, with the outlay unchanged at $12,000, would result in an internal rate of return of approximately 21.84%.**  (false)
 
 With both $a_1$ and $a_2$ equal to $14,000, the equation becomes $14,000s^{2} + 14,000s - 12,000 = 0$, i.e. $7s^{2} + 7s - 6 = 0$. Discriminant = 49 + 168 = 217, √217 ≈ 14.731. $s = (-7 + 14.731)/14 \\approx 0.5522$, so $r = 1/0.5522 - 1 \\approx 0.8109 = 81.09\\%$ — far more than double 10.92% (which would be ≈21.84%). Doubling the cash flows does not proportionally double the IRR.`,
     ],
@@ -7593,7 +7593,7 @@ $a_0 + a_1 + a_2 = -20,000 + 9,000 + 15,000 = 4,000$ (a positive $4,000), and th
       `The internal rate of return of Project Y is exactly 12.5%.`,
       `Based on the internal rate of return criterion, Project Y should be preferred over Project X.`,
       `At an interest rate of 11%, Project X has positive net present value while Project Y has negative net present value.`,
-      `If Project Y's payoff had instead been $25,000 (outlay unchanged at $22,000), its internal rate of return would exceed that of Project X.`,
+      `If Project Y's payoff had instead been $25,000, with the outlay unchanged at $22,000, its internal rate of return would exceed that of Project X.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
@@ -7609,7 +7609,7 @@ The chapter's criterion is to prefer the project with the higher internal rate o
       `**D) At an interest rate of 11%, Project X has positive net present value while Project Y has negative net present value.**  (false)
 
 $NPV_X$ at 11% = -15,000 + 17,250/1.11 = -15,000 + 15,540.54 = $540.54 (positive). $NPV_Y$ at 11% = -22,000 + 24,750/1.11 = -22,000 + 22,297.30 = $297.30, which is also positive, not negative, because 11% is still below Y's 12.5% IRR.`,
-      `**E) If Project Y's payoff had instead been $25,000 (outlay unchanged at $22,000), its internal rate of return would exceed that of Project X.**  (false)
+      `**E) If Project Y's payoff had instead been $25,000, with the outlay unchanged at $22,000, its internal rate of return would exceed that of Project X.**  (false)
 
 With $b$ = $25,000: $r_Y = (25,000/22,000) - 1 \\approx 0.1364 = 13.64\\%$, which is still lower than Project X's 15%, so it would not exceed X's rate.`,
     ],
@@ -7708,8 +7708,8 @@ The theorem requires $a_0 < 0$ and all of $a_1, \\ldots, a_n$ to be strictly pos
       `The internal rate of return is approximately 14.5%.`,
       `At an interest rate of 9%, the net present value of the project is negative.`,
       `At an interest rate of 13%, the net present value of the project is negative.`,
-      `If the Year 2 return had instead been $20,000 (Year 1 unchanged at $16,000), the internal rate of return would exceed the internal rate of return of the original project.`,
-      `Reducing the initial outlay to $30,000 (returns unchanged at $16,000 and $24,000) would lower the internal rate of return.`,
+      `If the Year 2 return had instead been $20,000, with Year 1 unchanged at $16,000, the internal rate of return would exceed the internal rate of return of the original project.`,
+      `Reducing the initial outlay to $30,000, with returns unchanged at $16,000 and $24,000, would lower the internal rate of return.`,
     ],
     answer_key: [false, false, true, false, false],
     tactical_explanations: [
@@ -7722,10 +7722,10 @@ NPV = -34,000 + 16,000/1.09 + 24,000/1.1881 = -34,000 + 14,678.90 + 20,200.32 = 
       `**C) At an interest rate of 13%, the net present value of the project is negative.**  (true)
 
 NPV = -34,000 + 16,000/1.13 + 24,000/1.2769 = -34,000 + 14,159.29 + 18,795.52 = -$1,045.19, which is negative, confirming the statement (13% is above the IRR).`,
-      `**D) If the Year 2 return had instead been $20,000 (Year 1 unchanged at $16,000), the internal rate of return would exceed the internal rate of return of the original project.**  (false)
+      `**D) If the Year 2 return had instead been $20,000, with Year 1 unchanged at $16,000, the internal rate of return would exceed the internal rate of return of the original project.**  (false)
 
 With $a_2$ = $20,000: $20,000s^{2} + 16,000s - 34,000 = 0$ → $10s^{2} + 8s - 17 = 0$. Discriminant = 64 + 680 = 744, √744 ≈ 27.276. $s = (-8 + 27.276)/20 \\approx 0.9638$, $r = 1/0.9638 - 1 \\approx 0.0375 = 3.75\\%$, which is far lower than 10.78%, not higher.`,
-      `**E) Reducing the initial outlay to $30,000 (returns unchanged at $16,000 and $24,000) would lower the internal rate of return.**  (false)
+      `**E) Reducing the initial outlay to $30,000, with returns unchanged at $16,000 and $24,000, would lower the internal rate of return.**  (false)
 
 With $a_0$ = -$30,000: $24,000s^{2} + 16,000s - 30,000 = 0$ → $12s^{2} + 8s - 15 = 0$. Discriminant = $64 + 720 = 784 = 28^{2}$ exactly. $s = (-8 + 28)/24 = 20/24 \\approx 0.83333$, $r = 1/0.83333 - 1 = 0.20 = 20\\%$, which is much higher than the original 10.78% — a smaller outlay for the same returns raises the internal rate of return, it does not lower it.`,
     ],
@@ -7772,7 +7772,7 @@ With $a_0$ = -$30,000: $24,000s^{2} + 16,000s - 30,000 = 0$ → $12s^{2} + 8s - 
     subsection: `11.7`,
     context: `A logistics firm spends $40,000 automating a warehouse process. It expects net returns of $22,000 at the end of Year 1 and $27,600 at the end of Year 2.`,
     statements: [
-      `At r = 15%, the net present value of the project is $0 (to the nearest dollar).`,
+      `At r = 15%, the net present value of the project is $0, to the nearest dollar.`,
       `At an interest rate of 10%, the net present value of the project is positive.`,
       `At an interest rate of 20%, the net present value of the project is negative.`,
       `The sum of all the project's cash flows, $a_0$ + $a_1$ + $a_2$, equals $9,600.`,
@@ -7780,7 +7780,7 @@ With $a_0$ = -$30,000: $24,000s^{2} + 16,000s - 30,000 = 0$ → $12s^{2} + 8s - 
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
-      `**A) At r = 15%, the net present value of the project is $0 (to the nearest dollar).**  (true)
+      `**A) At r = 15%, the net present value of the project is $0, to the nearest dollar.**  (true)
 
 As calculated above, A = 0 at r = 15%, confirming this is the internal rate of return.`,
       `**B) At an interest rate of 10%, the net present value of the project is positive.**  (true)
@@ -7832,8 +7832,8 @@ The theorem's precondition ($a_0$ < 0, all subsequent $a_i$ > 0) is satisfied ex
       `The internal rate of return is approximately 10.69%.`,
       `At an interest rate of 9%, the net present value of the project is positive.`,
       `At an interest rate of 12%, the net present value of the project is positive.`,
-      `Doubling both returns to $68,000 (Year 1) and $84,000 (Year 2), with the outlay unchanged at $65,000, would more than double the internal rate of return.`,
-      `If the outlay were reduced to $60,000 (returns unchanged), the internal rate of return would be lower than the internal rate of return of the original project.`,
+      `Doubling both returns to $68,000 in Year 1 and $84,000 in Year 2, with the outlay unchanged at $65,000, would more than double the internal rate of return.`,
+      `If the outlay were reduced to $60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
@@ -7846,10 +7846,10 @@ NPV = -65,000 + 34,000/1.09 + 42,000/1.1881 = -65,000 + 31,192.66 + 35,350.56 = 
       `**C) At an interest rate of 12%, the net present value of the project is positive.**  (false)
 
 NPV = -65,000 + 34,000/1.12 + 42,000/1.2544 = -65,000 + 30,357.14 + 33,482.14 = -$1,160.72, negative, not positive (12% is above the IRR).`,
-      `**D) Doubling both returns to $68,000 (Year 1) and $84,000 (Year 2), with the outlay unchanged at $65,000, would more than double the internal rate of return.**  (true)
+      `**D) Doubling both returns to $68,000 in Year 1 and $84,000 in Year 2, with the outlay unchanged at $65,000, would more than double the internal rate of return.**  (true)
 
 With $a_1$ = $68,000 and $a_2$ = $84,000: $84,000s^{2} + 68,000s - 65,000 = 0$ → $84s^{2} + 68s - 65 = 0$. Discriminant = 4,624 + 21,840 = 26,464, √26,464 ≈ 162.678. $s = (-68 + 162.678)/168 \\approx 0.56356$, $r = 1/0.56356 - 1 \\approx 0.7744 = 77.44\\%$. Double the original rate would be about 21.36%, but the actual new rate (77.44%) is far higher than that — more than double.`,
-      `**E) If the outlay were reduced to $60,000 (returns unchanged), the internal rate of return would be lower than the internal rate of return of the original project.**  (false)
+      `**E) If the outlay were reduced to $60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project.**  (false)
 
 With $a_0$ = -$60,000: $42,000s^{2} + 34,000s - 60,000 = 0$ → $42s^{2} + 34s - 60 = 0$. Discriminant = $1,156 + 10,080 = 11,236 = 106^{2}$ exactly. $s = (-34 + 106)/84 = 72/84 \\approx 0.85714$, $r = 1/0.85714 - 1 \\approx 0.16667 = 16.67\\%$, which is higher than 10.69%, not lower — a smaller outlay raises the internal rate of return.`,
     ],
@@ -7894,7 +7894,7 @@ With $a_0$ = -$60,000: $42,000s^{2} + 34,000s - 60,000 = 0$ → $42s^{2} + 34s -
     case_id: `MATH 11.122`,
     title: `A subscription software company spends $50,000 building a product and is compari`,
     subsection: `11.7`,
-    context: `A subscription software company spends $50,000 building a product and is comparing two versions. Option 1 (full version): a steady net return of $6,000 at the end of every year, indefinitely into the future. Option 2 (scaled-back version): the same $50,000 outlay, but returns of only $6,000 at the end of Year 1 and $6,000 at the end of Year 2, with nothing paid afterward.`,
+    context: `A subscription software company spends $50,000 building a product and is comparing two versions. Option 1, the full version: a steady net return of $6,000 at the end of every year, indefinitely into the future. Option 2, the scaled-back version: the same $50,000 outlay, but returns of only $6,000 at the end of Year 1 and $6,000 at the end of Year 2, with nothing paid afterward.`,
     statements: [
       `The limiting internal rate of return of Option 1 is 12%.`,
       `The internal rate of return of Option 2 is approximately -58.84%.`,
@@ -7922,7 +7922,7 @@ With only $a_0$ = -$50,000 and $a_1$ = $6,000: $r = (6,000/50,000) - 1 = 0.12 - 
     ],
     difficulty_level: `5/5`,
     sort_order: 122,
-    solution_overview: `A subscription software company spends $50,000 building a product and is comparing two versions. Option 1 (full version): a steady net return of $6,000 at the end of every year, indefinitely into the future. Option 2 (scaled-back version): the same $50,000 outlay, but returns of only $6,000 at the end of Year 1 and $6,000 at the end of Year 2, with nothing paid afterward.
+    solution_overview: `A subscription software company spends $50,000 building a product and is comparing two versions. Option 1, the full version: a steady net return of $6,000 at the end of every year, indefinitely into the future. Option 2, the scaled-back version: the same $50,000 outlay, but returns of only $6,000 at the end of Year 1 and $6,000 at the end of Year 2, with nothing paid afterward.
 
 **Part 1: Setup.**
 
@@ -7965,7 +7965,7 @@ With only $a_0$ = -$50,000 and $a_1$ = $6,000: $r = (6,000/50,000) - 1 = 0.12 - 
     case_id: `MATH 11.123`,
     title: `A renewable energy cooperative is comparing two designs for a community solar pr`,
     subsection: `11.7`,
-    context: `A renewable energy cooperative is comparing two designs for a community solar project. Design A (two-year): invest $120,000, with net returns of $54,000 at the end of Year 1 and $88,000 at the end of Year 2. Design B (simpler, one-year): invest $70,000, with a single net return of $81,200 at the end of Year 1.`,
+    context: `A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest $120,000, with net returns of $54,000 at the end of Year 1 and $88,000 at the end of Year 2. Design B, a simpler one-year project: invest $70,000, with a single net return of $81,200 at the end of Year 1.`,
     statements: [
       `The internal rate of return of Design A is approximately 11.04%.`,
       `The internal rate of return of Design B is exactly 16%.`,
@@ -7993,7 +7993,7 @@ With $a_1$ = $44,000: $88,000s^{2} + 44,000s - 120,000 = 0$ → $22s^{2} + 11s -
     ],
     difficulty_level: `5/5`,
     sort_order: 123,
-    solution_overview: `A renewable energy cooperative is comparing two designs for a community solar project. Design A (two-year): invest $120,000, with net returns of $54,000 at the end of Year 1 and $88,000 at the end of Year 2. Design B (simpler, one-year): invest $70,000, with a single net return of $81,200 at the end of Year 1.
+    solution_overview: `A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest $120,000, with net returns of $54,000 at the end of Year 1 and $88,000 at the end of Year 2. Design B, a simpler one-year project: invest $70,000, with a single net return of $81,200 at the end of Year 1.
 
 **Part 1: Setup.**
 

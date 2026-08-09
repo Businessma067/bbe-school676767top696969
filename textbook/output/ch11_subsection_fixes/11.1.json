@@ -66,7 +66,7 @@
     "title": "Which Savings Offer Is Better?",
     "difficulty_raw": "1.4/5",
     "difficulty_level": "1/5",
-    "context": "A saver has $10,000 and is comparing two one-year term deposits: Offer (i) 6.4% with interest paid quarterly; Offer (ii) 6.5% with interest paid twice a year (semi-annually).",
+    "context": "A saver has $10,000 and is comparing two one-year term deposits: Offer (i) 6.4% with interest paid quarterly; Offer (ii) 6.5% with interest paid twice a year.",
     "statements": [
       "The effective annual rate of Offer (i) is approximately 6.55%.",
       "The effective annual rate of Offer (ii) is approximately 6.61%.",
@@ -190,7 +190,7 @@
     "title": "Comparing Compounding Frequencies at a Fixed Nominal Rate",
     "difficulty_raw": "2.2/5",
     "difficulty_level": "2/5",
-    "context": "A finance student is asked to compute the effective yearly rate corresponding to a nominal annual interest rate of 15%, with interest added: (a) twice a year (semi-annually); (b) each quarter; (c) each month.",
+    "context": "A finance student is asked to compute the effective yearly rate corresponding to a nominal annual interest rate of 15%, with interest added twice a year, each quarter, and each month.",
     "statements": [
       "The effective rate under semi-annual compounding is approximately 15.56%.",
       "The effective rate under quarterly compounding is approximately 15.87%.",
@@ -314,7 +314,7 @@
     "title": "How Much Was Deposited 6 Years Ago?",
     "difficulty_raw": "3/5",
     "difficulty_level": "3/5",
-    "context": "A trustee wants to know how much would have needed to be deposited 6 years ago, at a constant annual interest rate of 4.5% (paid once a year), to have exactly $40,000 available today.",
+    "context": "A trustee wants to know how much would have needed to be deposited 6 years ago, at a constant annual interest rate of 4.5%, paid once a year, to have exactly $40,000 available today.",
     "statements": [
       "The growth factor over the 6 years at 4.5% annual compounding is approximately 1.302253.",
       "The amount that would need to have been deposited 6 years ago is approximately $30,715.86.",
@@ -376,7 +376,7 @@
     "title": "Daily Compounding on a Money-Market Deposit",
     "difficulty_raw": "3.4/5",
     "difficulty_level": "3/5",
-    "context": "A retiree deposits $20,000 into a money-market account earning a nominal annual rate of 4.25%, compounded daily (365-day year), for one year.",
+    "context": "A retiree deposits $20,000 into a money-market account earning a nominal annual rate of 4.25%, compounded daily using a 365-day year, for one year.",
     "statements": [
       "The daily periodic rate is approximately 0.011644%.",
       "The effective annual rate is approximately 4.34%.",
@@ -438,7 +438,7 @@
     "title": "Effective Rates for a 10% Nominal Rate Under Three Frequencies",
     "difficulty_raw": "3.8/5",
     "difficulty_level": "4/5",
-    "context": "A bank wants to publish the effective yearly rate corresponding to a nominal annual rate of 10%, with interest added: (a) twice a year; (b) each quarter; (c) each month.",
+    "context": "A bank wants to publish the effective yearly rate corresponding to a nominal annual rate of 10%, with interest added twice a year, each quarter, and each month.",
     "statements": [
       "The effective rate under semi-annual compounding is approximately 10.25%.",
       "The effective rate under quarterly compounding is approximately 10.38%.",
