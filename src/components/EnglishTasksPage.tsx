@@ -1145,7 +1145,10 @@ function AnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
   const cols = answerKey.slice(0, 5);
   return (
     <div className="mb-8 overflow-x-auto">
-      <table className="w-full min-w-[16rem] border-collapse overflow-hidden rounded-xl border border-foreground/20 text-center text-[14px] shadow-sm">
+      <p className="mb-2 text-[12px] font-bold uppercase tracking-widest text-foreground">
+        Answer key
+      </p>
+      <table className="w-full min-w-[16rem] border-collapse rounded-none border border-foreground/20 text-center text-[14px] shadow-sm">
         <thead>
           <tr className="bg-foreground text-background">
             {cols.map((_, i) => (
