@@ -116,9 +116,13 @@ function LiteCourseSubjects() {
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {s.description}
                   </p>
-                  {s.id === "math" ? (
+                  {s.id === "math" || s.id === "english" ? (
                     <Link
-                      to="/products/lite-bbe-course-math"
+                      to={
+                        s.id === "math"
+                          ? "/products/lite-bbe-course-math"
+                          : "/products/lite-bbe-course-english"
+                      }
                       className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
                       style={{
                         backgroundColor: s.accent,
