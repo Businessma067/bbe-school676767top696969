@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { AuthNav } from "@/components/AuthNav";
-import { FlashcardMath } from "@/components/FlashcardMath";
+import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMath";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
@@ -1074,7 +1074,7 @@ function RichMathLine({ text }: { text: string }) {
     return key;
   };
 
-  // Walk like FlashcardMath: $$ , currency-or-math $ , else copy
+  // Walk like FlashcardMath: $$ , escaped \$, currency-or-math $ , else copy
   let masked = "";
   const src = text;
   let i = 0;
@@ -1087,6 +1087,11 @@ function RichMathLine({ text }: { text: string }) {
         continue;
       }
     }
+    if (src[i] === "\\" && src[i + 1] === "$") {
+      masked += stash("\\$");
+      i += 2;
+      continue;
+    }
     if (src[i] === "$") {
       const currency = src
         .slice(i)
@@ -1094,13 +1099,16 @@ function RichMathLine({ text }: { text: string }) {
           /^\$\d+(?:,\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?![0-9A-Za-z+\-*=<>≠≤≥(\\{^_$])/,
         );
       if (currency) {
-        const after = src.indexOf("$", i + currency[0].length);
+        const after = indexOfUnescapedDollar(src, i + currency[0].length);
         const between = after === -1 ? "" : src.slice(i + 1, after);
         const asMath =
           after !== -1 &&
           /[=<>≠≤≥+×·\-/^\\()_]/.test(between) &&
           !between.includes("|") &&
           !/[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(between) &&
+          !/\b(?:and|or|the|for|with|from|that|which|this|into|onto|than|then|when|where|while|also|but|not|amount|invested|returned)\b/i.test(
+            between,
+          ) &&
           !(
             /[A-Za-z]{4,}/.test(between) &&
             !/[=<>≠≤≥]/.test(between) &&
@@ -1112,7 +1120,7 @@ function RichMathLine({ text }: { text: string }) {
           continue;
         }
       }
-      const end = src.indexOf("$", i + 1);
+      const end = indexOfUnescapedDollar(src, i + 1);
       if (end !== -1) {
         masked += stash(src.slice(i, end + 1));
         i = end + 1;

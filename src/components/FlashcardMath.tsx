@@ -1,6 +1,22 @@
 import katex from "katex";
 import "katex/dist/katex.min.css";
 
+/** Index of next `$` that is not escaped as `\$` (odd number of preceding `\`). */
+export function indexOfUnescapedDollar(text: string, from = 0): number {
+  for (let i = from; i < text.length; i++) {
+    if (text[i] !== "$") continue;
+    let bs = 0;
+    for (let j = i - 1; j >= 0 && text[j] === "\\"; j--) bs++;
+    if (bs % 2 === 0) return i;
+  }
+  return -1;
+}
+
+/** Prose `\$1,000` → `$1,000` for display (KaTeX still receives raw `\$` inside math). */
+function unescapeProseDollars(s: string): string {
+  return s.replace(/\\\$/g, "$");
+}
+
 /** Render flashcard text with inline `$...$` / display `$$...$$` KaTeX. */
 export function FlashcardMath({
   text,
@@ -16,7 +32,7 @@ export function FlashcardMath({
     <span className={className}>
       {parts.map((part, i) => {
         if (part.type === "text") {
-          return <span key={i}>{part.value}</span>;
+          return <span key={i}>{unescapeProseDollars(part.value)}</span>;
         }
         return <MathChunk key={i} part={part} displayPrefer={displayPrefer} />;
       })}
@@ -40,7 +56,7 @@ function MathChunk({
         if (chunk.kind === "text") {
           return (
             <span key={j} className="mx-0.5">
-              {chunk.value}
+              {unescapeProseDollars(chunk.value)}
             </span>
           );
         }
@@ -135,6 +151,15 @@ function looksLikeMathInner(inner: string): boolean {
   // Two consecutive English words → narrative prose
   if (/[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(t)) return false;
 
+  // Glue words mean currency `$8,000 < 0 and $a_1$` must NOT become one math span
+  if (
+    /\b(?:and|or|the|for|with|from|that|which|this|into|onto|than|then|when|where|while|also|but|not|amount|invested|returned|matching|statement|condition|satisfied|exists)\b/i.test(
+      t,
+    )
+  ) {
+    return false;
+  }
+
   // Answer lines: Notebook = $3.50 | Pen = $1.80
   if (t.includes("|")) return false;
 
@@ -153,7 +178,7 @@ function looksLikeMathInner(inner: string): boolean {
     return false;
   }
 
-  // Equations / comparisons / algebra
+  // Equations / comparisons / algebra (escaped currency `\$` is fine inside)
   if (/[=<>≠≤≥+×·\-/^\\()_]/.test(t) && /[A-Za-z0-9]/.test(t)) return true;
   // Bare answers like $360$
   if (/^[+\-]?\d+(?:\.\d+)?$/.test(t)) return true;
@@ -203,12 +228,19 @@ function splitMath(input: string): Part[] {
       }
     }
 
+    // Literal `\$` (escaped currency) — never treat as KaTeX delimiter
+    if (text[i] === "\\" && text[i + 1] === "$") {
+      buf += "\\$";
+      i += 2;
+      continue;
+    }
+
     if (text[i] === "$") {
       // Prefer currency at $digits… unless this `$` opens a true math span.
       CURRENCY_RE.lastIndex = i;
       const cur = CURRENCY_RE.exec(text);
       if (cur && cur.index === i) {
-        const afterMath = text.indexOf("$", i + cur[0].length);
+        const afterMath = indexOfUnescapedDollar(text, i + cur[0].length);
         const between = afterMath === -1 ? "" : text.slice(i + 1, afterMath);
         if (!(afterMath !== -1 && looksLikeMathInner(between))) {
           buf += cur[0];
@@ -217,7 +249,7 @@ function splitMath(input: string): Part[] {
         }
       }
 
-      const end = text.indexOf("$", i + 1);
+      const end = indexOfUnescapedDollar(text, i + 1);
       if (end !== -1) {
         const inner = text.slice(i + 1, end);
         if (looksLikeMathInner(inner)) {
