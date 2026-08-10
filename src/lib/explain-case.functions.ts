@@ -51,11 +51,20 @@ export const explainCase = createServerFn({ method: "POST" })
 
     const query = `${data.stem}\n\nStatement: ${data.statement}`;
     let passages = "";
-    const qVec = await embedQuery(query, key);
-    if (qVec) {
-      const top = topK(qVec, 5).filter((t) => t.score > 0.1);
-      passages = top.map((t, i) => `[Passage ${i + 1}]\n${book.chunks[t.idx]}`).join("\n\n---\n\n");
+    try {
+      const { getBookIndex, topKChunks, l2Normalize } = await import("./book-embeddings.server");
+      const book: BookIndex = await getBookIndex();
+      const qVec = await embedQuery(query, key, book.dim, l2Normalize);
+      if (qVec) {
+        const top = topKChunks(book, qVec, 5).filter((t) => t.score > 0.1);
+        passages = top
+          .map((t, i) => `[Passage ${i + 1}]\n${book.chunks[t.idx]}`)
+          .join("\n\n---\n\n");
+      }
+    } catch (err) {
+      console.error("[explainCase] textbook retrieval failed", err);
     }
+
 
     const truthLabel = data.correctAnswer ? "TRUE" : "FALSE";
     const gateway = createLovableAiGatewayProvider(key, { structuredOutputs: true });
