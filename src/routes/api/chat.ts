@@ -60,40 +60,8 @@ Style rules:
 - Be friendly, direct, confident. No filler.
 - Never invent site features. If unsure, say so and point to FAQ.`;
 
-// ---- Book RAG (in-memory) ----
-type BookData = { dim: number; count: number; chunks: string[]; embeddings_b64: string };
-const book = bookData as unknown as BookData;
-
-// Decode embeddings once at cold start into a flat Float32Array (already L2-normalized).
-function decodeEmbeddings(b64: string): Float32Array {
-  const bin = atob(b64);
-  const bytes = new Uint8Array(bin.length);
-  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
-  return new Float32Array(bytes.buffer);
-}
-const BOOK_VECTORS = decodeEmbeddings(book.embeddings_b64);
-const DIM = book.dim;
-
-function l2Normalize(v: number[]): Float32Array {
-  let s = 0;
-  for (const x of v) s += x * x;
-  const n = Math.sqrt(s) || 1;
-  const out = new Float32Array(v.length);
-  for (let i = 0; i < v.length; i++) out[i] = v[i] / n;
-  return out;
-}
-
-function topKChunks(queryVec: Float32Array, k = 6): { idx: number; score: number }[] {
-  const scores = new Array(book.count);
-  for (let i = 0; i < book.count; i++) {
-    let dot = 0;
-    const base = i * DIM;
-    for (let d = 0; d < DIM; d++) dot += queryVec[d] * BOOK_VECTORS[base + d];
-    scores[i] = { idx: i, score: dot };
-  }
-  scores.sort((a, b) => b.score - a.score);
-  return scores.slice(0, k);
-}
+// ---- Book RAG (loaded lazily from Cloud storage, cached in memory) ----
+const EMBED_DIM = 1536;
 
 async function embedQuery(text: string, apiKey: string): Promise<Float32Array | null> {
   try {
@@ -106,16 +74,23 @@ async function embedQuery(text: string, apiKey: string): Promise<Float32Array | 
       body: JSON.stringify({
         model: "openai/text-embedding-3-small",
         input: text.slice(0, 4000),
-        dimensions: DIM,
+        dimensions: EMBED_DIM,
       }),
     });
     if (!res.ok) return null;
     const json = (await res.json()) as { data: { embedding: number[] }[] };
-    return l2Normalize(json.data[0].embedding);
+    const v = json.data[0].embedding;
+    let s = 0;
+    for (const x of v) s += x * x;
+    const n = Math.sqrt(s) || 1;
+    const out = new Float32Array(v.length);
+    for (let i = 0; i < v.length; i++) out[i] = v[i] / n;
+    return out;
   } catch {
     return null;
   }
 }
+
 
 function extractLastUserText(messages: UIMessage[]): string {
   for (let i = messages.length - 1; i >= 0; i--) {
@@ -150,21 +125,27 @@ export const Route = createFileRoute("/api/chat")({
         let bookContext = "";
         const lastUser = extractLastUserText(messages);
         if (lastUser) {
-          const qVec = await embedQuery(lastUser, key);
-          if (qVec) {
-            const top = topKChunks(qVec, 6);
-            const passages = top
-              .filter((t) => t.score > 0.15)
-              .map(
-                (t, i) =>
-                  `[Passage ${i + 1} · relevance ${t.score.toFixed(2)}]\n${book.chunks[t.idx]}`,
-              )
-              .join("\n\n");
-            if (passages) {
-              bookContext = `BOOK CONTEXT — relevant passages from the BBE School Economics Full Course textbook. Use these as your primary source when they apply to the user's question. Do not mention that this context was retrieved; just use it.\n\n${passages}`;
+          try {
+            const { getBookIndex, topKChunks } = await import("@/lib/book-embeddings.server");
+            const book = await getBookIndex();
+            const qVec = await embedQuery(lastUser, key);
+            if (qVec) {
+              const passages = topKChunks(book, qVec, 6)
+                .filter((t) => t.score > 0.15)
+                .map(
+                  (t, i) =>
+                    `[Passage ${i + 1} · relevance ${t.score.toFixed(2)}]\n${book.chunks[t.idx]}`,
+                )
+                .join("\n\n");
+              if (passages) {
+                bookContext = `BOOK CONTEXT — relevant passages from the BBE School Economics Full Course textbook. Use these as your primary source when they apply to the user's question. Do not mention that this context was retrieved; just use it.\n\n${passages}`;
+              }
             }
+          } catch (err) {
+            console.error("[chat] textbook retrieval failed", err);
           }
         }
+
 
         const system = bookContext
           ? `${SYSTEM_PROMPT}\n\n---\n\n${bookContext}`
