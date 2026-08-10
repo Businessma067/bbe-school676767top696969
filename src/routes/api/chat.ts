@@ -125,21 +125,27 @@ export const Route = createFileRoute("/api/chat")({
         let bookContext = "";
         const lastUser = extractLastUserText(messages);
         if (lastUser) {
-          const qVec = await embedQuery(lastUser, key);
-          if (qVec) {
-            const top = topKChunks(qVec, 6);
-            const passages = top
-              .filter((t) => t.score > 0.15)
-              .map(
-                (t, i) =>
-                  `[Passage ${i + 1} · relevance ${t.score.toFixed(2)}]\n${book.chunks[t.idx]}`,
-              )
-              .join("\n\n");
-            if (passages) {
-              bookContext = `BOOK CONTEXT — relevant passages from the BBE School Economics Full Course textbook. Use these as your primary source when they apply to the user's question. Do not mention that this context was retrieved; just use it.\n\n${passages}`;
+          try {
+            const { getBookIndex, topKChunks } = await import("@/lib/book-embeddings.server");
+            const book = await getBookIndex();
+            const qVec = await embedQuery(lastUser, key);
+            if (qVec) {
+              const passages = topKChunks(book, qVec, 6)
+                .filter((t) => t.score > 0.15)
+                .map(
+                  (t, i) =>
+                    `[Passage ${i + 1} · relevance ${t.score.toFixed(2)}]\n${book.chunks[t.idx]}`,
+                )
+                .join("\n\n");
+              if (passages) {
+                bookContext = `BOOK CONTEXT — relevant passages from the BBE School Economics Full Course textbook. Use these as your primary source when they apply to the user's question. Do not mention that this context was retrieved; just use it.\n\n${passages}`;
+              }
             }
+          } catch (err) {
+            console.error("[chat] textbook retrieval failed", err);
           }
         }
+
 
         const system = bookContext
           ? `${SYSTEM_PROMPT}\n\n---\n\n${bookContext}`
