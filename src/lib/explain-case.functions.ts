@@ -3,31 +3,14 @@ import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { z } from "zod";
 import { generateText, Output, NoObjectGeneratedError } from "ai";
 import { createLovableAiGatewayProvider } from "./ai-gateway.server";
-import bookData from "@/data/book-embeddings.json";
+import type { BookIndex } from "./book-embeddings.server";
 
-type BookData = { dim: number; count: number; chunks: string[]; embeddings_b64: string };
-const book = bookData as unknown as BookData;
-
-let CACHED_VECTORS: Float32Array | null = null;
-function getVectors(): Float32Array {
-  if (CACHED_VECTORS) return CACHED_VECTORS;
-  const bin = atob(book.embeddings_b64);
-  const bytes = new Uint8Array(bin.length);
-  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
-  CACHED_VECTORS = new Float32Array(bytes.buffer);
-  return CACHED_VECTORS;
-}
-
-function l2Normalize(v: number[]): Float32Array {
-  let s = 0;
-  for (const x of v) s += x * x;
-  const n = Math.sqrt(s) || 1;
-  const out = new Float32Array(v.length);
-  for (let i = 0; i < v.length; i++) out[i] = v[i] / n;
-  return out;
-}
-
-async function embedQuery(text: string, apiKey: string): Promise<Float32Array | null> {
+async function embedQuery(
+  text: string,
+  apiKey: string,
+  dim: number,
+  l2Normalize: (v: number[]) => Float32Array,
+): Promise<Float32Array | null> {
   try {
     const res = await fetch("https://ai.gateway.lovable.dev/v1/embeddings", {
       method: "POST",
@@ -35,7 +18,7 @@ async function embedQuery(text: string, apiKey: string): Promise<Float32Array | 
       body: JSON.stringify({
         model: "openai/text-embedding-3-small",
         input: text.slice(0, 4000),
-        dimensions: book.dim,
+        dimensions: dim,
       }),
     });
     if (!res.ok) return null;
@@ -46,19 +29,6 @@ async function embedQuery(text: string, apiKey: string): Promise<Float32Array | 
   }
 }
 
-function topK(queryVec: Float32Array, k = 5): { idx: number; score: number }[] {
-  const vectors = getVectors();
-  const dim = book.dim;
-  const scores: { idx: number; score: number }[] = new Array(book.count);
-  for (let i = 0; i < book.count; i++) {
-    let dot = 0;
-    const base = i * dim;
-    for (let d = 0; d < dim; d++) dot += queryVec[d] * vectors[base + d];
-    scores[i] = { idx: i, score: dot };
-  }
-  scores.sort((a, b) => b.score - a.score);
-  return scores.slice(0, k);
-}
 
 const Input = z.object({
   stem: z.string().min(1),
