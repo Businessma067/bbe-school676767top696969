@@ -871,7 +871,7 @@
         "\"Contemptuous\" needs someone to feel the scorn, so a regulator can be contemptuous of a firm's excuses.",
         "\"Complacent\" means eager to please others, which is why a complacent supplier agrees to every request.",
         "\"Sensitive\" is the right adjective for commercial information that could damage a firm if it were released.",
-        "\"Illicit\" is an adjective, so \"illicit payments\" is well formed while \"illicit information from a witness\" is not.",
+        "Because \"illicit\" is an adjective and \"elicit\" is a verb, \"illicit payments\" is grammatical while \"elicit payments\" is not.",
         "\"Prospective\" describes something expected or likely in the future, so a prospective merger has not yet happened."
       ],
       "answer_key": [
@@ -885,17 +885,17 @@
         "**A) \"Contemptuous\" needs someone to feel the scorn, so a regulator can be contemptuous of a firm's excuses.**\n\n\"Contemptuous\" describes the attitude of the person or body doing the scorning, and it takes of before the target. \"Contemptible\" would describe the excuses themselves as deserving disdain, with no one required to voice the judgement. Placing the regulator in the subject position calls for the attitude word.\n\nThe structure and the meaning agree, so the sentence uses the adjective correctly.",
         "**B) \"Complacent\" means eager to please others, which is why a complacent supplier agrees to every request.**\n\n\"Complaisant\" is the rarer adjective for someone obligingly willing to go along with others, and it is the one the example describes. \"Complacent\" means smugly satisfied and unaware of a looming problem, as in a complacent incumbent ignoring a new competitor. The definition offered has been fixed to the wrong spelling.\n\n**Trap:** Complacent is far more common, so it gets pressed into service for meanings that belong to its near-twin.\n\nEagerness to please belongs to complaisant, so this line does not hold.",
         "**C) \"Sensitive\" is the right adjective for commercial information that could damage a firm if it were released.**\n\n\"Sensitive\" covers anything that reacts strongly or requires careful handling, which is why data, negotiations and market-moving figures are all described that way. \"Sensible\" means showing good judgement and would say something about the information's intelligence rather than its risk. Material that causes harm on release plainly needs careful handling.\n\nThe risk-of-harm sense is exactly the one this adjective carries, so the choice defended here is right.",
-        "**D) \"Illicit\" is an adjective, so \"illicit payments\" is well formed while \"illicit information from a witness\" is not.**\n\n\"Illicit\" is an adjective meaning unlawful or forbidden, whereas \"elicit\" is a verb meaning to draw out a response. \"Illicit payments\" is well formed, but \"illicit information from a witness\" is also grammatical if the information itself is unlawful; it simply cannot mean obtaining information from the witness. Because the second phrase has a valid adjective reading, the claim that it is not well formed is too broad.\n\nThe contrast would work with \"elicit information from a witness,\" but the statement as written is not semantically sound.",
+        "**D) Because \"illicit\" is an adjective and \"elicit\" is a verb, \"illicit payments\" is grammatical while \"elicit payments\" is not.**\n\n\"Illicit\" means unlawful or forbidden and sits in adjective slots before nouns such as payments, trade or funds. \"Elicit\" is a verb meaning to draw out a response or information, so it belongs in clauses like \"elicit information from a witness,\" not before a noun as if it were an adjective. The pair is decided by word class as much as by meaning.\n\n**Tip:** If the sentence needs an adjective of illegality, choose illicit; if it needs a verb of drawing out, choose elicit.\n\nThe adjective–verb contrast makes the first phrase sound and the second impossible, so the claim holds.",
         "**E) \"Prospective\" describes something expected or likely in the future, so a prospective merger has not yet happened.**\n\n\"Prospective\" points forward and attaches to deals, tenants, candidates and legislation that are anticipated rather than completed. \"Perspective\" is a noun for a viewpoint and would not fit before merger at all. Describing a merger as prospective locates it in the future by definition.\n\nThe forward reference is built into the adjective, so the inference drawn in the sentence is correct."
       ],
       "highlights": [
         "Contemptuous",
         "Complacent",
         "Sensitive",
-        "Illicit",
+        "illicit",
         "Prospective"
       ],
-      "solution_overview": "Attitude words dominate this set, so ask who holds the feeling and whether it is smugness, eagerness to please or scorn. Sensitive information is information that could cause harm if released, which is a different idea from sensible judgement. Illicit stays an adjective in every context, and prospective always points forward in time.",
+      "solution_overview": "Attitude words dominate this set, so ask who holds the feeling and whether it is smugness, eagerness to please or scorn. Sensitive information is information that could cause harm if released, which is a different idea from sensible judgement. For illicit versus elicit, check word class: illicit is the adjective of illegality, and elicit is the verb of drawing something out. Prospective always points forward in time.",
       "difficulty_level": "4/5",
       "sort_order": 23,
       "subsection": "v.1"
