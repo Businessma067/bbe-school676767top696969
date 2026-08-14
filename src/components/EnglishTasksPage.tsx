@@ -26,7 +26,7 @@ import {
   BookOpen,
   AlertTriangle,
   Lock,
-  Sparkles,
+  Highlighter,
   PanelLeftClose,
   PanelLeftOpen,
 } from "lucide-react";
@@ -758,7 +758,8 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
               </div>
             ) : (
               <div className="flex h-full items-center justify-center rounded-2xl border border-dashed border-border bg-card p-6 text-center text-xs text-muted-foreground">
-                Submit answers, then tap <span className="mx-1 font-semibold text-foreground">Explanation</span>
+                Submit answers, then open <span className="mx-1 font-semibold text-foreground">View solutions</span>
+                for the worked notes.
                 for a full walkthrough of every statement.
               </div>
             )}
@@ -949,12 +950,12 @@ function CaseCard({
           Difficulty {data.difficulty_level}
         </span>
         {alreadyPassed && (
-          <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
+          <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
             Passed
           </span>
         )}
         {inRevision && (
-          <span className="rounded-md bg-destructive/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-destructive">
+          <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
             In revision
           </span>
         )}
@@ -1019,10 +1020,10 @@ function CaseCard({
                 {checked && (
                   <span
                     className={cn(
-                      "grid h-6 w-6 place-items-center rounded-full",
+                      "grid h-6 w-6 place-items-center rounded-full border",
                       isCorrect
-                        ? "bg-emerald-500 text-white"
-                        : "bg-destructive text-destructive-foreground",
+                        ? "border-foreground/30 bg-foreground text-background"
+                        : "border-border bg-secondary text-foreground",
                     )}
                   >
                     {isCorrect ? <Check className="h-4 w-4" /> : <X className="h-4 w-4" />}
@@ -1033,17 +1034,10 @@ function CaseCard({
               {checked && (
                 <div className="mt-3 space-y-2">
                   {(data.tactical_explanations[i] ?? "").trim() && (
-                    <div
-                      className={cn(
-                        "rounded-md p-3 text-xs leading-relaxed",
-                        isCorrect
-                          ? "bg-emerald-500/10 text-emerald-900 dark:text-emerald-200"
-                          : "bg-destructive/10 text-destructive",
-                      )}
-                    >
+                    <div className="rounded-md border border-border bg-secondary/40 p-3 text-xs leading-relaxed text-foreground">
                       <div className="mb-2 flex flex-wrap items-center gap-2">
-                        <span className="text-[10px] font-bold uppercase tracking-widest opacity-80">
-                          Explanation
+                        <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+                          Solution note
                         </span>
                         {isTexts && (
                           <button
@@ -1052,12 +1046,12 @@ function CaseCard({
                             className={cn(
                               "inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[11px] font-semibold transition-colors",
                               activeExplanationIndex === i
-                                ? "border-primary bg-primary text-primary-foreground"
-                                : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
+                                ? "border-foreground/30 bg-foreground text-background"
+                                : "border-border bg-background text-foreground hover:bg-secondary",
                             )}
                           >
-                            <Sparkles className="h-3 w-3" />
-                            {activeExplanationIndex === i ? "Highlighted in text →" : "Show in text"}
+                            <Highlighter className="h-3 w-3" />
+                            {activeExplanationIndex === i ? "Located in passage" : "Locate in passage"}
                           </button>
                         )}
                       </div>
@@ -1071,12 +1065,12 @@ function CaseCard({
                       className={cn(
                         "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
                         activeExplanationIndex === i
-                          ? "border-primary bg-primary text-primary-foreground"
-                          : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
+                          ? "border-foreground/30 bg-foreground text-background"
+                          : "border-border bg-background text-foreground hover:bg-secondary",
                       )}
                     >
-                      <Sparkles className="h-3 w-3" />
-                      {activeExplanationIndex === i ? "Highlighted in text →" : "Show in text"}
+                      <Highlighter className="h-3 w-3" />
+                      {activeExplanationIndex === i ? "Located in passage" : "Locate in passage"}
                     </button>
                   )}
                 </div>
@@ -1112,12 +1106,12 @@ function CaseCard({
               className={cn(
                 "inline-flex items-center gap-1.5 rounded-md border px-4 py-2.5 text-sm font-semibold transition-all",
                 explanationsOpen
-                  ? "border-primary/40 bg-primary/10 text-primary"
+                  ? "border-foreground/30 bg-secondary text-foreground"
                   : "border-border bg-background text-foreground hover:bg-secondary",
               )}
             >
-              <Sparkles className="h-4 w-4" />
-              {explanationsOpen ? "Hide Explanation" : "Explanation"}
+              <BookOpen className="h-4 w-4" />
+              {explanationsOpen ? "Hide solutions" : "View solutions"}
             </button>
           )}
         </div>
@@ -1179,14 +1173,7 @@ function AllExplanationsPanel({
                   <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
                     {letter}
                   </span>
-                  <span
-                    className={cn(
-                      "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
-                      task.answer_key[i]
-                        ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
-                        : "bg-destructive/15 text-destructive",
-                    )}
-                  >
+                  <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
                     {task.answer_key[i] ? "TRUE" : "FALSE"}
                   </span>
                   {isTexts && (
@@ -1196,12 +1183,12 @@ function AllExplanationsPanel({
                       className={cn(
                         "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
                         activeExplanationIndex === i
-                          ? "border-primary bg-primary text-primary-foreground"
-                          : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
+                          ? "border-foreground/30 bg-foreground text-background"
+                          : "border-border bg-background text-foreground hover:bg-secondary",
                       )}
                     >
-                      <Sparkles className="h-3 w-3" />
-                      {activeExplanationIndex === i ? "Highlighted in text →" : "Show in text"}
+                      <Highlighter className="h-3 w-3" />
+                      {activeExplanationIndex === i ? "Located in passage" : "Locate in passage"}
                     </button>
                   )}
                 </div>
@@ -1298,7 +1285,7 @@ function ReadingPanel({
           <BookOpen className="h-4 w-4 text-primary" />
           <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
             {explanation
-              ? `AI Highlight Â· Statement ${explanation.statementIndex + 1}`
+              ? `Passage locator · Statement ${explanation.statementIndex + 1}`
               : "Reading Passage"}
           </span>
         </div>
@@ -1306,7 +1293,7 @@ function ReadingPanel({
           <button
             type="button"
             onClick={onClose}
-            aria-label="Close explanation"
+            aria-label="Clear passage locator"
             className="rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
           >
             <X className="h-4 w-4" />
@@ -1320,14 +1307,7 @@ function ReadingPanel({
             <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
               Statement {explanation.statementIndex + 1}
             </span>
-            <span
-              className={cn(
-                "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
-                explanation.correctAnswer
-                  ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
-                  : "bg-destructive/15 text-destructive",
-              )}
-            >
+            <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
               {explanation.correctAnswer ? "TRUE" : "FALSE"}
             </span>
           </div>
@@ -1378,18 +1358,18 @@ function GrammarExplanationPanel({
     <div className="flex h-full flex-col gap-3">
       <div className="flex items-center justify-between rounded-2xl border border-primary/30 bg-primary/5 px-4 py-2.5">
         <div className="flex items-center gap-2">
-          <Sparkles className="h-4 w-4 text-primary" />
+          <BookOpen className="h-4 w-4 text-primary" />
           <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
             {explanation
-              ? `AI Breakdown Â· Statement ${explanation.statementIndex + 1}`
-              : "AI English Coach"}
+              ? `Solution note · Statement ${explanation.statementIndex + 1}`
+              : "Solution notes"}
           </span>
         </div>
         {explanation && (
           <button
             type="button"
             onClick={onClose}
-            aria-label="Close explanation"
+            aria-label="Close solution note"
             className="rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
           >
             <X className="h-4 w-4" />
@@ -1399,9 +1379,9 @@ function GrammarExplanationPanel({
 
       {!explanation && (
         <div className="flex flex-1 items-center justify-center rounded-2xl border border-dashed border-border bg-card p-6 text-center text-xs text-muted-foreground">
-          Submit answers, then tap{" "}
-          <span className="mx-1 font-semibold text-foreground">Explanation</span>
-          below any statement to see the detailed breakdown.
+          Submit answers, then open{" "}
+          <span className="mx-1 font-semibold text-foreground">View solutions</span>
+          to read the worked notes.
         </div>
       )}
 
@@ -1411,14 +1391,7 @@ function GrammarExplanationPanel({
             <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
               Statement {explanation.statementIndex + 1}
             </span>
-            <span
-              className={cn(
-                "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
-                explanation.correctAnswer
-                  ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
-                  : "bg-destructive/15 text-destructive",
-              )}
-            >
+            <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
               {explanation.correctAnswer ? "TRUE" : "FALSE"}
             </span>
           </div>
@@ -1433,7 +1406,7 @@ function GrammarExplanationPanel({
 
           <div className="mt-4">
             <p className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-              Where the exam catches you
+              Worked note
             </p>
             <p className="whitespace-pre-line text-[13px] leading-relaxed text-foreground">
               {tactical}
