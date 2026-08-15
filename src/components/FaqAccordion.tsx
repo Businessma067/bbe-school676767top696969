@@ -50,13 +50,12 @@ const faqs = [
 
 export function FaqAccordion() {
   return (
-    <section className="relative bg-paper px-6 py-24 lg:px-8 lg:py-32">
-      <div aria-hidden className="omr-pattern pointer-events-none absolute inset-0 opacity-40" />
-      <div className="relative mx-auto max-w-3xl">
-        <p className="text-center text-[11px] font-semibold uppercase tracking-[0.32em] text-ballpoint">
+    <section className="bg-ivory px-6 py-24 lg:px-8 lg:py-32">
+      <div className="mx-auto max-w-3xl">
+        <p className="text-center text-[11px] font-semibold uppercase tracking-[0.32em] text-caramel">
           Questions & Answers
         </p>
-        <h2 className="mt-5 text-center font-display text-3xl font-extrabold tracking-tight text-graphite sm:text-4xl">
+        <h2 className="mt-5 text-center font-display text-3xl font-bold tracking-tight text-espresso sm:text-4xl">
           Frequently asked questions
         </h2>
 
@@ -67,7 +66,7 @@ export function FaqAccordion() {
               value={`item-${index}`}
               className="border-b-0 border-t border-border/40 first:border-t-0"
             >
-              <AccordionTrigger className="py-5 text-left font-display text-lg font-bold text-graphite hover:no-underline [&[data-state=open]>svg]:text-ballpoint">
+              <AccordionTrigger className="py-5 text-left font-display text-lg font-semibold text-espresso hover:no-underline [&[data-state=open]>svg]:text-caramel">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-base leading-relaxed text-taupe">

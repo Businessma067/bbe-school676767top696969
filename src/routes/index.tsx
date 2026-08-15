@@ -1,14 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 import { Flame, ChevronLeft, ChevronRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
-import goldmanLogo from "@/assets/goldman-sachs.png.asset.json";
-import mckinseyLogo from "@/assets/mckinsey.png.asset.json";
-import bcgLogo from "@/assets/bcg.png.asset.json";
-import jpmorganLogo from "@/assets/jpmorgan.png.asset.json";
-import googleLogo from "@/assets/google.png.asset.json";
-import deloitteLogo from "@/assets/deloitte.jpg.asset.json";
 
 import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
@@ -25,81 +19,91 @@ function Index() {
   const [demoSubject, setDemoSubject] = useState<"economics" | "math" | "english">("economics");
 
   return (
-    <div className="min-h-screen bg-paper font-sans text-foreground antialiased">
+    <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader showNav showMobileNav />
 
       <main>
-        {/* HERO — paper lobby, asymmetric + 240 leitmotif */}
-        <section className="relative overflow-hidden px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute -right-8 top-8 select-none font-display text-[11rem] font-extrabold leading-none text-graphite/[0.04] sm:text-[14rem] lg:right-4 lg:text-[18rem]"
-          >
-            240
-          </div>
-
-          <div className="relative mx-auto max-w-7xl">
-            <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
+        {/* HERO — light ivory */}
+        <section className="relative overflow-hidden px-6 pt-20 pb-24 lg:px-8 lg:pt-28 lg:pb-32">
+          <div className="mx-auto max-w-7xl">
+            <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
               <div className="max-w-2xl">
-                <p className="font-display text-sm font-extrabold uppercase tracking-[0.28em] text-ballpoint">
-                  BBE School
-                </p>
-
-                <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-0.5" aria-label="Rated 4.77 out of 5">
-                    {[0, 1, 2, 3, 4].map((i) => (
-                      <svg
+                {/* Rating + reviews */}
+                <div className="mb-6 flex flex-wrap items-center gap-4">
+                  <div className="flex -space-x-2">
+                    {[
+                      "https://i.pravatar.cc/64?img=12",
+                      "https://i.pravatar.cc/64?img=32",
+                      "https://i.pravatar.cc/64?img=47",
+                      "https://i.pravatar.cc/64?img=68",
+                      "https://i.pravatar.cc/64?img=5",
+                    ].map((src, i) => (
+                      <img
                         key={i}
-                        viewBox="0 0 20 20"
-                        className="h-3.5 w-3.5 fill-graphite"
-                        aria-hidden="true"
-                      >
-                        <path d="M10 1.5l2.6 5.27 5.82.85-4.21 4.1.99 5.78L10 14.77l-5.2 2.73.99-5.78L1.58 7.62l5.82-.85L10 1.5z" />
-                      </svg>
+                        src={src}
+                        alt={`Student ${i + 1}`}
+                        loading="lazy"
+                        className="h-8 w-8 rounded-full border-2 border-background object-cover shadow-sm"
+                      />
                     ))}
                   </div>
-                  <span className="font-display text-sm font-semibold text-foreground">4.77</span>
-                  <span>· 348 reviews</span>
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-0.5" aria-label="Rated 4.77 out of 5">
+                      {[0, 1, 2, 3, 4].map((i) => (
+                        <svg
+                          key={i}
+                          viewBox="0 0 20 20"
+                          className="h-4 w-4 fill-foreground"
+                          aria-hidden="true"
+                        >
+                          <path d="M10 1.5l2.6 5.27 5.82.85-4.21 4.1.99 5.78L10 14.77l-5.2 2.73.99-5.78L1.58 7.62l5.82-.85L10 1.5z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <span className="font-display text-sm font-semibold text-foreground">4.77</span>
+                    <span className="text-sm text-muted-foreground">· 348 reviews</span>
+                  </div>
                 </div>
 
-                <div className="mt-5 inline-flex items-center gap-2.5 border border-border bg-card px-3 py-1.5">
-                  <span className="omr-bubble text-ballpoint" data-filled="true" />
+                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
+                  <span
+                    className="h-1.5 w-1.5 rounded-full"
+                    style={{ backgroundColor: "#2DD4A8" }}
+                  />
                   <span className="text-xs font-medium tracking-wide text-taupe">
                     Built by top 1% of the hall
                   </span>
                 </div>
 
-                <h1 className="mt-6 font-display text-[2.15rem] font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl sm:leading-[1.02] lg:text-[3.5rem]">
+                <h1 className="font-display text-[2rem] font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl sm:leading-[1.05] lg:text-6xl">
                   Step by step preparation for your 2027 WU BBE exam
                 </h1>
 
-                <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+                <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
                   Master every detail and tactic of the actual exam.
                 </p>
 
                 <div id="bbe-products" className="mt-10 flex flex-col gap-3 sm:flex-row">
                   <Link
                     to="/demo-practice"
-                    className="group cta-lock inline-flex flex-col items-start justify-center border border-border bg-card px-5 py-3.5 text-sm font-semibold text-foreground transition-colors hover:border-ballpoint/50 focus:outline-none focus:ring-2 focus:ring-ballpoint focus:ring-offset-2 focus:ring-offset-paper"
+                    className="inline-flex flex-col items-center justify-center rounded-md border border-border bg-card px-5 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/40 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
                   >
-                    <span className="inline-flex items-center gap-2">
-                      <span className="omr-bubble omr-bubble-hover text-ballpoint" />
-                      Try demo-practice
-                    </span>
-                    <span className="mt-0.5 pl-5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                    <span>Try demo-practice</span>
+                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
                       50+ tasks for start
                     </span>
                   </Link>
                   <Link
                     to="/products"
                     id="explore-courses"
-                    className="group cta-lock inline-flex flex-col items-start justify-center bg-stamp px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-stamp focus:ring-offset-2 focus:ring-offset-paper"
+                    className="inline-flex flex-col items-center justify-center rounded-md px-5 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                    style={{
+                      background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
+                      boxShadow: "0 8px 20px -8px rgba(232,93,58,0.55)",
+                    }}
                   >
-                    <span className="inline-flex items-center gap-2">
-                      <span className="omr-bubble omr-bubble-hover text-white" />
-                      Explore Courses
-                    </span>
-                    <span className="mt-0.5 pl-5 text-[10px] font-medium uppercase tracking-wide text-white/85">
+                    <span>Explore Courses</span>
+                    <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-white/85">
                       See all BBE School products
                     </span>
                   </Link>
@@ -107,7 +111,7 @@ function Index() {
 
                 <div
                   id="important-features"
-                  className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium tracking-wide text-taupe"
+                  className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe"
                 >
                   <span>Beauty of stress and time management</span>
                   <span className="h-1 w-1 rounded-full bg-border" />
@@ -118,34 +122,23 @@ function Index() {
               </div>
 
               <div className="relative">
-                <div className="relative overflow-hidden border border-border bg-card">
+                <div className="relative aspect-video overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl">
                   <div
-                    aria-hidden
-                    className="seat-stamp pointer-events-none absolute -right-2 -top-4 z-10 font-display text-[7rem] font-extrabold leading-none text-ballpoint/15 sm:text-[9rem]"
-                  >
-                    240
-                  </div>
-                  <div className="omr-pattern absolute inset-0 opacity-40" aria-hidden />
-                  <div
-                    className="relative flex aspect-[4/3] flex-col items-center justify-center p-8 text-center sm:aspect-video"
+                    className="relative flex h-full flex-col items-center justify-center rounded-xl p-8 text-center"
                     style={{
-                      backgroundImage: `linear-gradient(180deg, rgba(11,15,20,0.62), rgba(11,15,20,0.82)), url(${wuAsset.url})`,
+                      backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.75)), url(${wuAsset.url})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
                   >
-                    <div className="mb-5 grid h-14 w-14 place-items-center rounded-full border border-white/35 bg-white/10">
-                      <div className="ml-0.5 h-0 w-0 border-y-8 border-y-transparent border-l-[12px] border-l-white" />
+                    <div className="mb-6 grid h-16 w-16 place-items-center rounded-full border border-white/40 bg-white/10 backdrop-blur">
+                      <div className="h-0 w-0 border-y-8 border-y-transparent border-l-[14px] border-l-white pl-1" />
                     </div>
-                    <p className="font-display text-lg font-bold text-white">Watch Intro Video</p>
+                    <p className="font-display text-lg font-medium text-white">Watch Intro Video</p>
                     <p className="mt-2 text-sm text-white/80">Passing the Exam from Rimini Beach</p>
-                    <div className="mt-5 border border-white/25 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/75">
-                      02:14 Preview
+                    <div className="mt-6 text-xs font-medium tracking-wider text-white/70">
+                      02:14 PREVIEW
                     </div>
-                  </div>
-                  <div className="flex items-center justify-between border-t border-border bg-card px-4 py-2.5 text-[10px] font-medium uppercase tracking-[0.18em] text-taupe">
-                    <span>Seat 240 / 3000+</span>
-                    <span className="text-ballpoint">Answer sheet · Hall filter</span>
                   </div>
                 </div>
               </div>
@@ -153,22 +146,21 @@ function Index() {
           </div>
         </section>
 
-        {/* HOW IT WORKS — inside the hall */}
-        <section className="perforation-top relative bg-hall px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
-          <div aria-hidden className="omr-pattern-hall pointer-events-none absolute inset-0 opacity-70" />
+        {/* FIVE-STATEMENT SIMULATION ENGINE */}
+        <section className="relative bg-[#070a12] px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0"
             style={{
               backgroundImage:
-                "radial-gradient(ellipse at top, color-mix(in oklab, var(--color-ballpoint) 16%, transparent), transparent 55%)",
+                "radial-gradient(ellipse at top, color-mix(in oklab, var(--color-caramel-deep) 14%, transparent), transparent 55%)",
             }}
           />
           <div className="relative mx-auto max-w-6xl text-center">
-            <div className="text-[10px] font-semibold uppercase tracking-[0.3em] text-ballpoint">
+            <div className="text-[10px] font-semibold uppercase tracking-[0.3em] text-caramel-deep">
               Live product demo
             </div>
-            <h2 className="mx-auto mt-3 max-w-3xl font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            <h2 className="mx-auto mt-3 max-w-3xl font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
               How it works
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/60 sm:text-base">
@@ -176,9 +168,7 @@ function Index() {
               decisions on the left, instant proof on the right.
             </p>
           </div>
-
-          {/* Three OMR columns = three subjects */}
-          <div className="relative mx-auto mt-10 grid w-full max-w-6xl grid-cols-3 gap-2 sm:gap-3">
+          <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
             {(
               [
                 { key: "economics", label: "Economics", enabled: true },
@@ -191,29 +181,23 @@ function Index() {
                 <button
                   key={s.key}
                   type="button"
-                  data-active={active}
                   onClick={() => s.enabled && setDemoSubject(s.key)}
                   disabled={!s.enabled}
                   className={cn(
-                    "omr-tab cta-lock flex flex-col items-center gap-2 border px-2 py-3 text-[10px] font-semibold uppercase tracking-[0.18em] transition-colors sm:px-4 sm:py-4 sm:text-xs",
+                    "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
                     active
-                      ? "border-ballpoint bg-ballpoint text-white"
+                      ? "border-caramel-deep bg-caramel-deep text-white shadow-md"
                       : s.enabled
-                        ? "border-white/20 bg-white/[0.04] text-white/70 hover:border-ballpoint/50 hover:text-white"
+                        ? "border-white/20 bg-white/5 text-white/70 hover:border-caramel-deep/60 hover:text-white"
                         : "cursor-not-allowed border-white/10 bg-white/[0.03] text-white/30",
                   )}
                 >
-                  <span
-                    className={cn("omr-bubble", active ? "text-white" : "text-white/50")}
-                    data-filled={active ? "true" : undefined}
-                  />
                   {s.label}
-                  {!s.enabled && <span className="text-[9px] opacity-70">soon</span>}
+                  {!s.enabled && <span className="ml-2 text-[9px] opacity-70">soon</span>}
                 </button>
               );
             })}
           </div>
-
           <div className="relative mx-auto mt-6 w-full max-w-6xl">
             {demoSubject === "economics" && <FiveStatementSimulator />}
             {demoSubject === "english" && <EnglishReadingSimulator />}
@@ -221,20 +205,21 @@ function Index() {
           </div>
         </section>
 
-        {/* WU BAND — campus, no fixed parallax on mobile */}
+        {/* PARALLAX BAND — darkened WU campus */}
         <section
-          className="relative"
+          className="relative bg-fixed"
           style={{
-            backgroundImage: `linear-gradient(180deg, rgba(11,15,20,0.78), rgba(11,15,20,0.72)), url(${wuAsset.url})`,
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.78), rgba(0,0,0,0.72)), url(${wuAsset.url})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
+            backgroundAttachment: "fixed",
           }}
         >
           <div className="mx-auto max-w-5xl px-6 py-28 text-center lg:px-8 lg:py-36">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
               WU Vienna
             </p>
-            <h2 className="mt-6 font-display text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
+            <h2 className="mt-6 font-display text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
               A triple-accredited elite business school.
               <br />
               <span className="text-white/80">Almost free education.</span>
@@ -246,26 +231,25 @@ function Index() {
           </div>
         </section>
 
-        {/* WHY US — hall */}
-        <section className="relative overflow-hidden bg-hall px-6 py-24 lg:px-8 lg:py-32">
-          <div aria-hidden className="omr-pattern-hall pointer-events-none absolute inset-0 opacity-50" />
+        {/* WHY US — high-contrast dark fintech */}
+        <section className="relative overflow-hidden bg-why-us-bg px-6 py-24 lg:px-8 lg:py-32">
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0"
             style={{
               backgroundImage:
-                "radial-gradient(ellipse at top left, color-mix(in oklab, var(--color-ballpoint) 18%, transparent), transparent 45%), radial-gradient(ellipse at bottom right, color-mix(in oklab, var(--color-stamp) 10%, transparent), transparent 50%)",
+                "radial-gradient(ellipse at top left, color-mix(in oklab, var(--color-caramel-deep) 18%, transparent), transparent 45%), radial-gradient(ellipse at bottom right, color-mix(in oklab, var(--color-caramel) 10%, transparent), transparent 50%)",
             }}
           />
           <div className="relative mx-auto max-w-6xl">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-ballpoint">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-caramel">
                 Why Us
               </p>
-              <h2 className="mt-4 font-display text-3xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-4xl lg:text-5xl">
+              <h2 className="mt-4 font-display text-3xl font-bold leading-[1.1] tracking-tight text-primary-foreground sm:text-4xl lg:text-5xl">
                 Why Choose US
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-white/70 sm:text-lg">
+              <p className="mt-5 text-base leading-relaxed text-primary-foreground/70 sm:text-lg">
                 The standards at WU Vienna are exceptionally high. Let's be honest: entry
                 competition is brutal, and no software can ever guarantee your admission. Success
                 requires hard, disciplined work. But our data proves how we shift the odds in your
@@ -275,32 +259,37 @@ function Index() {
           </div>
         </section>
 
+        {/* WHY US — full-page snap slider */}
         <WhyUsSlider />
 
-        <section className="relative bg-hall px-6 py-16 lg:px-8">
+        {/* CTA below snap slider */}
+        <section className="relative bg-why-us-bg px-6 py-16 lg:px-8">
           <div className="mx-auto flex max-w-6xl justify-center">
             <Link
               to="/products"
-              className="cta-lock group inline-flex items-center justify-center gap-2.5 bg-stamp px-8 py-4 text-sm font-semibold text-white transition-colors hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-stamp focus:ring-offset-2 focus:ring-offset-hall"
+              className="inline-flex items-center justify-center gap-2 rounded-md px-8 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+              style={{
+                background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
+                boxShadow: "0 10px 28px -10px rgba(232,93,58,0.65)",
+              }}
             >
-              <span className="omr-bubble omr-bubble-hover text-white" />
               View Preparation Products
             </Link>
           </div>
         </section>
 
-        {/* PARENTS — serif letter on paper */}
-        <section className="perforation-top relative bg-paper px-6 py-24 lg:px-8 lg:py-32">
+        {/* PARENTS — a frank audit teaser */}
+        <section className="relative bg-background px-6 py-24 lg:px-8 lg:py-32">
           <div className="mx-auto max-w-3xl">
             <div className="text-center">
-              <span className="inline-flex items-center gap-2 border border-border bg-card px-3 py-1 text-[10px] font-medium uppercase tracking-[0.25em] text-taupe">
-                <span className="omr-bubble text-stamp" data-filled="true" />
+              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-[10px] font-medium uppercase tracking-[0.25em] text-taupe">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#E85D3A]" />
                 An open letter to parents
               </span>
-              <h2 className="mt-5 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+              <h2 className="mt-5 font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl">
                 A Frank Audit for Parents:
                 <br />
-                <span className="text-stamp">The Real Cost of WU Vienna Admission</span>
+                <span className="text-caramel">The Real Cost of WU Vienna Admission</span>
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
                 Before choosing a preparation strategy, look at what your child is actually walking
@@ -309,7 +298,7 @@ function Index() {
             </div>
 
             <div className="relative mt-12">
-              <div className="space-y-5 font-serif text-base leading-relaxed text-foreground sm:text-lg">
+              <div className="space-y-5 text-base leading-relaxed text-foreground sm:text-lg">
                 <p>
                   The mandatory in-person BBE entrance exam at WU Vienna is not a regular school
                   test. It is a filtering conveyor. A massive convention hall, more than 3000
@@ -327,17 +316,21 @@ function Index() {
                 </p>
               </div>
 
-              <div className="pointer-events-none absolute inset-x-0 top-[30%] bottom-0 bg-gradient-to-b from-transparent via-paper/85 to-paper" />
+              {/* Fading overlay starting at the second paragraph */}
+              <div className="pointer-events-none absolute inset-x-0 top-[30%] bottom-0 bg-gradient-to-b from-transparent via-background/85 to-background" />
 
               <div className="relative z-10 flex justify-center py-4">
                 <Link
                   to="/parents"
-                  className="cta-lock group inline-flex items-center gap-2.5 bg-stamp px-6 py-3 text-sm font-semibold text-white transition-colors hover:brightness-110"
+                  className="group inline-flex flex-col items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:brightness-110"
+                  style={{
+                    background: "linear-gradient(135deg, #E85D3A 0%, #D97706 100%)",
+                    boxShadow: "0 12px 30px -10px rgba(232,93,58,0.6)",
+                  }}
                 >
-                  <span className="omr-bubble omr-bubble-hover text-white" />
-                  Read the full letter
+                  <span>Read the full letter</span>
                   <svg
-                    className="h-4 w-4"
+                    className="h-4 w-4 animate-bounce"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -354,56 +347,58 @@ function Index() {
           </div>
         </section>
 
-        {/* FIELD REPORTS band */}
+        {/* PARALLAX BAND #2 */}
         <section
-          className="relative"
+          className="relative bg-fixed"
           style={{
-            backgroundImage: `linear-gradient(180deg, rgba(11,15,20,0.82), rgba(11,15,20,0.68)), url(${wuAsset.url})`,
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.82), rgba(0,0,0,0.68)), url(${wuAsset.url})`,
             backgroundSize: "cover",
             backgroundPosition: "center 30%",
+            backgroundAttachment: "fixed",
           }}
         >
           <div className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-8 lg:py-32">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
               Field Reports
             </p>
-            <h2 className="mt-6 font-display text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl">
+            <h2 className="mt-6 font-display text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl">
               Voices from the exam hall floor.
             </h2>
           </div>
         </section>
 
-        {/* REVIEWS — field notes, broken grid */}
-        <section id="reviews" className="bg-paper px-6 py-24 lg:px-8 lg:py-32">
+        {/* FIELD REPORTS — light */}
+        <section id="reviews" className="px-6 py-24 lg:px-8 lg:py-32">
           <div className="mx-auto max-w-7xl">
-            <div className="mb-14 max-w-3xl">
-              <h2 className="font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
+            <div className="mb-16 max-w-3xl">
+              <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                 Students' reviews right after receiving an acceptance letter.
               </h2>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-12 lg:gap-6">
-              {reports.map((report, i) => (
-                <ReviewCard key={report.id} report={report} index={i} />
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {reports.map((report) => (
+                <ReviewCard key={report.id} report={report} />
               ))}
             </div>
           </div>
         </section>
 
+        {/* FAQ */}
         <div id="faq">
           <FaqAccordion />
         </div>
 
-        <footer className="relative border-t border-border bg-card px-6 py-10 lg:px-8">
-          <div aria-hidden className="omr-pattern pointer-events-none absolute inset-0 opacity-30" />
-          <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+        {/* Footer */}
+        <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
+          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
             <div className="flex items-center gap-3">
-              <span className="omr-bubble text-stamp" data-filled="true" />
-              <span className="font-display text-sm font-extrabold tracking-widest uppercase text-foreground">
+              <span
+                className="inline-flex h-2.5 w-2.5 rounded-full"
+                style={{ background: "linear-gradient(135deg,#E85D3A,#3B82F6 50%,#2DD4A8)" }}
+              />
+              <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
                 BBE School
-              </span>
-              <span className="hidden text-[10px] font-medium uppercase tracking-[0.2em] text-taupe sm:inline">
-                Seat 240
               </span>
             </div>
             <p className="text-xs text-muted-foreground">
@@ -416,57 +411,37 @@ function Index() {
   );
 }
 
-function ReviewCard({
-  report,
-  index,
-}: {
-  report: (typeof reports)[0];
-  index: number;
-}) {
+function ReviewCard({ report }: { report: (typeof reports)[0] }) {
   const [expanded, setExpanded] = useState(false);
-  const span =
-    index === 0
-      ? "lg:col-span-7"
-      : index === 1
-        ? "lg:col-span-5 lg:translate-y-8"
-        : index === 2
-          ? "lg:col-span-5 lg:-translate-y-2"
-          : index === 3
-            ? "lg:col-span-7"
-            : "lg:col-span-8 lg:col-start-3";
-
   return (
-    <article
-      className={cn(
-        "flex flex-col justify-between border border-border bg-card p-7 sm:p-8",
-        span,
-        index % 2 === 1 && "sm:rotate-[0.4deg]",
-        index % 2 === 0 && "sm:-rotate-[0.3deg]",
-      )}
-    >
+    <article className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-8 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md">
       <div>
-        <p
-          className={cn(
-            "font-serif leading-relaxed text-foreground/85",
-            !expanded && "line-clamp-3",
-          )}
-        >
+        <p className={cn("leading-relaxed text-muted-foreground", !expanded && "line-clamp-3")}>
           &ldquo;{report.quote}&rdquo;
         </p>
         <button
           onClick={() => setExpanded((v) => !v)}
-          className="mt-3 text-xs font-semibold text-ballpoint hover:underline focus:outline-none"
+          className="mt-3 text-xs font-semibold text-primary hover:underline focus:outline-none"
           aria-label={expanded ? "Show less" : "Show more"}
         >
           {expanded ? "Show less" : "Show more"}
         </button>
       </div>
-      <div className="mt-8 flex items-end justify-between gap-3">
-        <p className="font-display text-sm font-bold text-foreground">{report.name}</p>
-        <div className="inline-flex items-center gap-1.5 border border-stamp/35 bg-stamp/10 px-3 py-1">
-          <span className="text-xs font-semibold tracking-wide text-stamp">{report.badge}</span>
+      <div className="mt-8">
+        <p className="font-display text-sm font-semibold text-foreground">{report.name}</p>
+        <div
+          className="mt-3 inline-flex items-center gap-1.5 rounded-full border px-3 py-1"
+          style={{ borderColor: "rgba(232,93,58,0.35)", backgroundColor: "rgba(232,93,58,0.10)" }}
+        >
+          <span className="text-xs font-semibold tracking-wide" style={{ color: "#B84A2E" }}>
+            {report.badge}
+          </span>
           {report.fire && (
-            <Flame className="h-3.5 w-3.5 text-stamp" style={{ fill: "currentColor" }} aria-hidden />
+            <Flame
+              className="h-3.5 w-3.5"
+              style={{ fill: "#D97706", color: "#D97706" }}
+              aria-hidden
+            />
           )}
         </div>
       </div>
@@ -578,32 +553,30 @@ function RingMetric({
     <div
       ref={containerRef}
       className={cn(
-        "relative flex flex-col items-center border border-white/10 bg-why-us-card px-6 py-10 text-center sm:px-8 sm:py-12",
+        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-6 py-10 text-center sm:px-8 sm:py-12",
         glow && "why-us-glow why-us-pulse",
       )}
     >
       <div className="relative h-44 w-44">
         <svg className="h-full w-full" viewBox="0 0 180 180">
           <path d={fullCircle} className="fill-white/15" />
-          <path
-            d={filledPath}
-            className={cn("ring-animate-fill", isAccent ? "fill-stamp" : "fill-ballpoint")}
-          />
+          <path d={filledPath} className={cn("ring-animate-fill", "fill-caramel-deep")} />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
           <span
             className={cn(
-              "font-display font-extrabold tabular-nums tracking-tight leading-none",
+              "font-display font-bold tabular-nums tracking-tight leading-none",
+              // scale so long values like "41.3%" fit inside the inner circle
               displayValue.length >= 5 ? "text-2xl sm:text-3xl" : "text-3xl sm:text-4xl",
-              isAccent ? "text-stamp" : "text-white/60",
+              isAccent ? "text-caramel-deep" : "text-primary-foreground/60",
             )}
           >
             {displayValue}
           </span>
         </div>
       </div>
-      <h3 className="mt-6 font-display text-lg font-bold text-white">{label}</h3>
-      <p className="mt-1 text-sm text-white/60">{sublabel}</p>
+      <h3 className="mt-6 font-display text-lg font-semibold text-primary-foreground">{label}</h3>
+      <p className="mt-1 text-sm text-primary-foreground/60">{sublabel}</p>
     </div>
   );
 }
@@ -616,6 +589,7 @@ function WhyUsSlider() {
   const next = () => goTo(active + 1);
   const prev = () => goTo(active - 1);
 
+  // Keyboard navigation while the slider is in view.
   const rootRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -631,24 +605,26 @@ function WhyUsSlider() {
     return () => window.removeEventListener("keydown", onKey);
   }, [active]);
 
+  // Touch swipe (horizontal only — vertical page scroll stays untouched).
   const touch = useRef<{ x: number; y: number } | null>(null);
 
   return (
-    <div ref={rootRef} className="relative w-full overflow-hidden bg-hall py-12 sm:py-16">
+    <div ref={rootRef} className="relative w-full overflow-hidden bg-why-us-bg py-12 sm:py-16">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 z-0"
         style={{
           backgroundImage:
-            "radial-gradient(ellipse at top left, color-mix(in oklab, var(--color-ballpoint) 18%, transparent), transparent 45%), radial-gradient(ellipse at bottom right, color-mix(in oklab, var(--color-stamp) 10%, transparent), transparent 50%)",
+            "radial-gradient(ellipse at top left, color-mix(in oklab, var(--color-caramel-deep) 18%, transparent), transparent 45%), radial-gradient(ellipse at bottom right, color-mix(in oklab, var(--color-caramel) 10%, transparent), transparent 50%)",
         }}
       />
 
+      {/* Arrows */}
       <button
         type="button"
         aria-label="Previous slide"
         onClick={prev}
-        className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center border border-white/15 bg-black/50 text-white backdrop-blur-sm transition-colors hover:border-ballpoint hover:text-ballpoint sm:left-6 sm:h-12 sm:w-12"
+        className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-primary-foreground backdrop-blur-sm transition-all hover:border-caramel-deep hover:bg-black/70 hover:text-caramel sm:left-6 sm:h-12 sm:w-12"
       >
         <ChevronLeft size={24} />
       </button>
@@ -656,11 +632,12 @@ function WhyUsSlider() {
         type="button"
         aria-label="Next slide"
         onClick={next}
-        className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center border border-white/15 bg-black/50 text-white backdrop-blur-sm transition-colors hover:border-ballpoint hover:text-ballpoint sm:right-6 sm:h-12 sm:w-12"
+        className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-primary-foreground backdrop-blur-sm transition-all hover:border-caramel-deep hover:bg-black/70 hover:text-caramel sm:right-6 sm:h-12 sm:w-12"
       >
         <ChevronRight size={24} />
       </button>
 
+      {/* Dot indicators */}
       <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2 sm:bottom-6">
         {Array.from({ length: total }).map((_, i) => (
           <button
@@ -670,7 +647,9 @@ function WhyUsSlider() {
             onClick={() => goTo(i)}
             className={cn(
               "h-2 rounded-full transition-all duration-300",
-              active === i ? "w-8 bg-ballpoint" : "w-2 bg-white/30 hover:bg-white/50",
+              active === i
+                ? "w-8 bg-caramel-deep"
+                : "w-2 bg-primary-foreground/30 hover:bg-primary-foreground/50",
             )}
           />
         ))}
@@ -703,6 +682,7 @@ function WhyUsSlider() {
             transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
           }}
         >
+          {/* Slide 01 — Acceptance Rate */}
           <WhySlide index="01" title="Acceptance Rate">
             <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
               <RingMetric
@@ -721,38 +701,44 @@ function WhyUsSlider() {
                 glow
               />
             </div>
-            <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-white sm:text-xl">
+            <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
               Our students achieve a success rate{" "}
-              <span className="text-stamp">nearly 6 times higher</span> than the general applicant
-              pool.
+              <span className="text-caramel-deep">nearly 6 times higher</span> than the general
+              applicant pool.
             </p>
           </WhySlide>
 
+          {/* Slide 02 — Capital Preservation */}
           <WhySlide index="02" title="Capital Preservation">
             <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
-              <p className="text-base leading-relaxed text-white/75 sm:text-[17px]">
+              <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
                 Private tutors in Vienna charge{" "}
-                <span className="text-white">€50 to €100 per hour</span> just to read textbook slides
-                with you — that is a financial black hole. Furthermore, top-tier university education
-                at WU Vienna costs literally <span className="text-stamp">10 times less</span> in
-                tuition than comparable business schools in the UK or US, making it the highest ROI
-                investment in your future. A single one-time investment in our platform saves you
-                thousands of euros in useless prep costs, protecting your path to an incredibly
-                affordable, world-class degree. Failing the exam means losing a{" "}
-                <span className="font-semibold text-white">€100,000 financial advantage</span>.
+                <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
+                textbook slides with you — that is a financial black hole. Furthermore, top-tier
+                university education at WU Vienna costs literally{" "}
+                <span className="text-caramel-deep">10 times less</span> in tuition than comparable
+                business schools in the UK or US, making it the highest ROI investment in your
+                future. A single one-time investment in our platform saves you thousands of euros in
+                useless prep costs, protecting your path to an incredibly affordable, world-class
+                degree. Failing the exam means losing a{" "}
+                <span className="font-semibold text-primary-foreground">
+                  €100,000 financial advantage
+                </span>
+                .
               </p>
               <CapitalBars />
             </div>
           </WhySlide>
 
+          {/* Slide 03 — Top-Tier Career Outcomes */}
           <WhySlide index="03" title="Top-Tier Career Outcomes">
-            <p className="max-w-3xl text-base leading-relaxed text-white/75 sm:text-[17px]">
+            <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
               WU Vienna is a premier target university for the world's elite firms, but only for the{" "}
-              <span className="text-stamp">top 10% of the class</span>. Getting in is just the first
-              filter. By training your brain to handle brutal exam pressure now, you build the raw
-              analytical stamina required to later survive intense recruitment cycles and secure elite
-              international career placements. BBE alumni consistently secure top-tier offers across
-              global financial and consulting hubs.
+              <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just
+              the first filter. By training your brain to handle brutal exam pressure now, you build
+              the raw analytical stamina required to later survive intense recruitment cycles and
+              secure elite international career placements. BBE alumni consistently secure top-tier
+              offers across global financial and consulting hubs.
             </p>
             <PlacementsTicker />
           </WhySlide>
@@ -773,14 +759,14 @@ function WhySlide({
 }) {
   return (
     <section className="relative flex w-full min-w-full flex-none items-center justify-center px-6 py-10 sm:px-10 lg:px-16">
-      <div className="relative w-full max-w-6xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
+      <div className="relative w-full max-w-6xl rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
         <div className="mb-8 flex items-start gap-5 sm:items-center">
-          <span className="font-display text-3xl font-extrabold tracking-tight text-ballpoint sm:text-4xl">
+          <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
             {index}
           </span>
           <span className="h-px flex-1 bg-white/10" />
           <div className="min-w-0 text-right sm:text-left">
-            <h3 className="font-display text-xl font-bold tracking-tight text-white sm:text-2xl">
+            <h3 className="font-display text-xl font-semibold tracking-tight text-primary-foreground sm:text-2xl">
               {title}
             </h3>
           </div>
@@ -825,53 +811,62 @@ function CapitalBars() {
   const wuHeight = maxH * 0.11 * progress;
 
   return (
-    <div ref={ref} className="border border-white/10 bg-black/40 p-6 sm:p-8">
-      <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/50">
+    <div ref={ref} className="rounded-xl border border-white/10 bg-black/40 p-6 sm:p-8">
+      <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
         Total tuition · 3 years
       </p>
       <div className="flex items-end justify-around gap-6" style={{ height: maxH + 20 }}>
         <div className="flex h-full flex-1 flex-col items-center justify-end">
           <span
-            className="mb-2 font-display text-sm font-semibold text-white/85"
+            className="mb-2 font-display text-sm font-semibold text-primary-foreground/85"
             style={{ opacity: progress }}
           >
             €60k – €120k
           </span>
           <div
-            className="w-full max-w-[90px] bg-white/25"
+            className="w-full max-w-[90px] rounded-t-md bg-white/25"
             style={{
               height: ukHeight,
+              transition: "background-color 0.3s",
             }}
           />
-          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-white/55">
+          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-primary-foreground/55">
             UK / US Target Schools
           </span>
         </div>
         <div className="flex h-full flex-1 flex-col items-center justify-end">
           <span
-            className="mb-2 font-display text-sm font-semibold text-stamp"
+            className="mb-2 font-display text-sm font-semibold text-caramel-deep"
             style={{ opacity: progress }}
           >
             ~€2,200
           </span>
           <div
-            className="w-full max-w-[90px]"
+            className="w-full max-w-[90px] rounded-t-md"
             style={{
               height: wuHeight,
-              background: "var(--stamp)",
+              background: "linear-gradient(180deg, #F59E0B 0%, #E85D3A 100%)",
+              boxShadow: "0 0 24px -4px rgba(232,93,58,0.7)",
             }}
           />
-          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-stamp">
+          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-caramel-deep">
             WU Vienna · 3-Year Total
           </span>
         </div>
       </div>
-      <p className="mt-6 border-t border-white/10 pt-4 text-center text-xs text-white/55">
-        Same degree tier. <span className="text-white/85">~50× tuition delta.</span>
+      <p className="mt-6 border-t border-white/10 pt-4 text-center text-xs text-primary-foreground/55">
+        Same degree tier. <span className="text-primary-foreground/85">~50× tuition delta.</span>
       </p>
     </div>
   );
 }
+
+import goldmanLogo from "@/assets/goldman-sachs.png.asset.json";
+import mckinseyLogo from "@/assets/mckinsey.png.asset.json";
+import bcgLogo from "@/assets/bcg.png.asset.json";
+import jpmorganLogo from "@/assets/jpmorgan.png.asset.json";
+import googleLogo from "@/assets/google.png.asset.json";
+import deloitteLogo from "@/assets/deloitte.jpg.asset.json";
 
 const placements: { name: string; src: string }[] = [
   { name: "Goldman Sachs", src: goldmanLogo.url },
@@ -884,7 +879,7 @@ const placements: { name: string; src: string }[] = [
 
 function PlacementLogo({ src, name }: { src: string; name: string }) {
   return (
-    <div className="group flex flex-col items-center justify-center border border-ballpoint/25 bg-white px-3 py-4 transition hover:border-ballpoint/70">
+    <div className="group flex flex-col items-center justify-center rounded-lg border border-[color:var(--color-caramel-deep)]/25 bg-white px-3 py-4 transition hover:border-[color:var(--color-caramel-deep)]/70 hover:shadow-[0_0_20px_-4px_color-mix(in_oklab,var(--color-caramel-deep)_60%,transparent)]">
       <div className="flex h-10 w-full items-center justify-center sm:h-12">
         <img
           src={src}
@@ -899,16 +894,16 @@ function PlacementLogo({ src, name }: { src: string; name: string }) {
 
 function PlacementsTicker() {
   return (
-    <div className="mt-8 border border-ballpoint/25 bg-black/40 px-4 py-6 sm:px-8 sm:py-8 why-us-glow">
-      <p className="mb-6 text-center text-[10px] font-semibold uppercase tracking-[0.32em] text-ballpoint/80">
-        Where alumni land
+    <div className="mt-8 rounded-xl border border-[color:var(--color-caramel-deep)]/25 bg-black/40 px-4 py-6 sm:px-8 sm:py-8 why-us-glow">
+      <p className="mb-6 text-center text-[10px] font-semibold uppercase tracking-[0.32em] text-[color:var(--color-caramel)]/80">
+        ◆ Where alumni land ◆
       </p>
       <div className="grid grid-cols-3 items-stretch justify-items-stretch gap-3 sm:grid-cols-6 sm:gap-4">
         {placements.map((p) => (
           <PlacementLogo key={p.name} {...p} />
         ))}
       </div>
-      <p className="mt-6 border-t border-ballpoint/20 pt-4 text-center text-xs text-white/55">
+      <p className="mt-6 border-t border-[color:var(--color-caramel-deep)]/20 pt-4 text-center text-xs text-primary-foreground/55">
         Global tier-1 finance, consulting & tech.
       </p>
     </div>
