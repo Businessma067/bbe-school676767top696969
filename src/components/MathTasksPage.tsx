@@ -221,11 +221,15 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                           <>
                             <button
                               type="button"
-                              onClick={() =>
-                                setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }))
-                              }
+                              onClick={() => {
+                                // Same as Economics: opening the chapter goes to theory first.
+                                setExpanded((e) => ({ ...e, [ch.num]: true }));
+                                setActiveChapter(ch.num);
+                                setTheoryChapter(ch.num);
+                              }}
                               className="grid w-9 shrink-0 place-items-center rounded-l-xl text-muted-foreground hover:bg-secondary/60"
-                              aria-label={isOpen ? "Collapse chapter" : "Expand chapter"}
+                              aria-label="Open learning material"
+                              title="Open learning material for this chapter"
                             >
                               <ChevronDown
                                 className={cn(
@@ -237,6 +241,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                             <button
                               type="button"
                               onClick={() => {
+                                setExpanded((e) => ({ ...e, [ch.num]: true }));
                                 setActiveChapter(ch.num);
                                 setTheoryChapter(ch.num);
                               }}
