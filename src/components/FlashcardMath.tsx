@@ -151,10 +151,13 @@ function looksLikeMathInner(inner: string): boolean {
   // Two consecutive English words → narrative prose
   if (/[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(t)) return false;
 
-  // Glue words mean currency `$8,000 < 0 and $a_1$` must NOT become one math span
+  // Glue words mean currency `$8,000 < 0 and $a_1$` must NOT become one math span.
+  // Strip LaTeX commands first so `\exists` / `\forall` are not mistaken for English
+  // "exists" / "for".
+  const withoutCmds = t.replace(/\\[a-zA-Z]+/g, " ");
   if (
     /\b(?:and|or|the|for|with|from|that|which|this|into|onto|than|then|when|where|while|also|but|not|amount|invested|returned|matching|statement|condition|satisfied|exists)\b/i.test(
-      t,
+      withoutCmds,
     )
   ) {
     return false;

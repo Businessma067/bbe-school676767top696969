@@ -946,7 +946,10 @@ def _looks_like_math_inner(inner: str) -> bool:
         return False
     if re.search(r"[A-Za-z]{3,}\s+[A-Za-z]{3,}", t):
         return False
-    if _GLUE_WORDS_RE.search(t):
+    # Strip LaTeX commands first so `\exists` / `\forall` are not mistaken for
+    # English glue words "exists" / "for".
+    without_cmds = re.sub(r"\\[a-zA-Z]+", " ", t)
+    if _GLUE_WORDS_RE.search(without_cmds):
         return False
     if "|" in t:
         return False
@@ -957,6 +960,9 @@ def _looks_like_math_inner(inner: str) -> bool:
     if _OP_RE.search(t) and re.search(r"[A-Za-z0-9]", t):
         return True
     if re.fullmatch(r"[+\-]?\d+(?:\.\d+)?", t):
+        return True
+    # Bare math identifiers: $p$, $n$, $X$, $\lambda$, $p_A$
+    if re.fullmatch(r"(?:\\[A-Za-z]+|[A-Za-z])(?:_[A-Za-z0-9]+)?", t):
         return True
     if len(t) <= 48 and re.search(r"[a-zA-Z]", t) and re.search(r"\d", t) and _ALGEBRA_RE.match(t):
         return True

@@ -32,7 +32,7 @@ function looksLikeMathInner(inner) {
   if (/[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(t)) return false;
   if (
     /(?<!\\)\b(?:and|or|the|for|with|from|that|which|this|into|onto|than|then|when|where|while|also|but|not|amount|invested|returned|matching|statement|condition|satisfied|exists)\b/i.test(
-      t,
+      t.replace(/\\[a-zA-Z]+/g, " "),
     )
   ) {
     return false;

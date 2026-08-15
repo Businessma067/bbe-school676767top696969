@@ -1122,7 +1122,7 @@ function RichMathLine({ text }: { text: string }) {
           !between.includes("|") &&
           !/[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(between) &&
           !/\b(?:and|or|the|for|with|from|that|which|this|into|onto|than|then|when|where|while|also|but|not|amount|invested|returned)\b/i.test(
-            between,
+            between.replace(/\\[a-zA-Z]+/g, " "),
           ) &&
           !(
             /[A-Za-z]{4,}/.test(between) &&
