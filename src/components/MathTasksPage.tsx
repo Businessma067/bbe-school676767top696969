@@ -952,11 +952,18 @@ function MathProse({ text, className }: { text: string; className?: string }) {
       continue;
     }
 
-    const sectionLead = p.match(/^\*\*(Given|Rule|Results):\*\*\s*([\s\S]*)$/i);
+    const conclusionLead = p.match(/^\*\*Conclusion:\*\*\s*([\s\S]*)$/i);
+    if (conclusionLead) {
+      chunks.push({ kind: "conclusion", body: conclusionLead[1] });
+      i += 1;
+      continue;
+    }
+
+    const sectionLead = p.match(/^\*\*([^*\n]{1,40}?):\*\*\s*([\s\S]+)$/);
     if (sectionLead) {
       chunks.push({
         kind: "sectionLead",
-        title: sectionLead[1],
+        title: sectionLead[1].trim(),
         body: sectionLead[2],
       });
       i += 1;
@@ -979,13 +986,6 @@ function MathProse({ text, className }: { text: string; className?: string }) {
     const reason = p.match(/^(\d+)\)\s*([\s\S]*)$/);
     if (reason) {
       chunks.push({ kind: "reason", number: reason[1], body: reason[2] });
-      i += 1;
-      continue;
-    }
-
-    const conclusion = p.match(/^\*\*Conclusion:\*\*\s*([\s\S]*)$/i);
-    if (conclusion) {
-      chunks.push({ kind: "conclusion", body: conclusion[1] });
       i += 1;
       continue;
     }
@@ -1035,24 +1035,15 @@ function MathProse({ text, className }: { text: string; className?: string }) {
         }
 
         if (chunk.kind === "sectionLead") {
-          const tone =
-            chunk.title.toLowerCase() === "rule"
-              ? "border-blue-200 bg-blue-50/70"
-              : chunk.title.toLowerCase() === "results"
-                ? "border-emerald-200 bg-emerald-50/70"
-                : "border-stone-200 bg-stone-50";
           return (
-            <section
-              key={idx}
-              className={cn("mb-5 rounded-xl border px-4 py-3.5", tone)}
-            >
-              <h4 className="mb-1.5 text-[11px] font-extrabold uppercase tracking-[0.16em] text-[#555]">
-                {chunk.title}
-              </h4>
+            <div key={idx} className="mb-5 mt-6 first:mt-0">
+              <p className="mb-1 font-bold leading-snug text-[#111]">
+                <RichMathLine text={chunk.title} />
+              </p>
               <p className="m-0 leading-[1.65]">
                 <RichMathLine text={chunk.body} />
               </p>
-            </section>
+            </div>
           );
         }
 
@@ -1080,43 +1071,27 @@ function MathProse({ text, className }: { text: string; className?: string }) {
         }
 
         if (chunk.kind === "reason") {
-          const reasonTitle =
-            chunk.number === "1"
-              ? "Read the statement"
-              : chunk.number === "2"
-                ? "Work it out"
-                : "Compare and decide";
           return (
             <div
               key={idx}
-              className="mb-3 grid grid-cols-[1.75rem_minmax(0,1fr)] gap-3 rounded-lg border border-stone-200 bg-white px-3.5 py-3"
+              className="mb-2.5 flex gap-2 leading-[1.65] last:mb-0"
             >
-              <span className="grid h-7 w-7 place-items-center rounded-full bg-[#1f1f1f] text-[12px] font-extrabold text-white">
-                {chunk.number}
+              <span className="shrink-0 font-bold text-[#111]">
+                {chunk.number})
               </span>
-              <div className="min-w-0">
-                <p className="mb-1 text-[12px] font-extrabold uppercase tracking-[0.08em] text-[#555]">
-                  {reasonTitle}
-                </p>
-                <p className="m-0 leading-[1.65]">
-                  <RichMathLine text={chunk.body} />
-                </p>
-              </div>
+              <p className="m-0 min-w-0 flex-1 leading-[1.65]">
+                <RichMathLine text={chunk.body} />
+              </p>
             </div>
           );
         }
 
         if (chunk.kind === "conclusion") {
           return (
-            <div
-              key={idx}
-              className="mb-7 mt-3 border-l-4 border-foreground bg-stone-100 px-4 py-3 font-bold leading-[1.55] text-[#111]"
-            >
-              <span className="mr-1.5 text-[11px] font-extrabold uppercase tracking-[0.12em] text-[#666]">
-                Conclusion
-              </span>
+            <p key={idx} className="mb-7 mt-3 font-bold leading-[1.6] text-[#111]">
+              <span>Conclusion: </span>
               <RichMathLine text={chunk.body} />
-            </div>
+            </p>
           );
         }
 
@@ -1139,10 +1114,7 @@ function MathProse({ text, className }: { text: string; className?: string }) {
 
         if (chunk.kind === "step") {
           return (
-            <div
-              key={idx}
-              className="mb-4 mt-4 rounded-xl border border-stone-200 bg-white px-4 py-3.5 shadow-sm first:mt-3"
-            >
+            <div key={idx} className="mb-6 mt-5 first:mt-2">
               {chunk.paras.map((para, j) => {
                 if (isDisplayMathPara(para)) {
                   return (
