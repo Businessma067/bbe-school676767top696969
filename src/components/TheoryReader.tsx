@@ -130,10 +130,10 @@ function MdBlock({
         p: ({ children }) => (
           <p
             className={cn(
-              "break-words font-serif text-foreground/95",
+              "break-words text-foreground/95",
               dense
                 ? "mb-3 text-[14px] leading-6"
-                : "mb-4 text-[15px] leading-7 sm:text-base sm:leading-7",
+                : "mb-4 text-[15px] leading-7 sm:text-[17px] sm:leading-8",
             )}
           >
             {children}
@@ -144,8 +144,8 @@ function MdBlock({
         ul: ({ children }) => (
           <ul
             className={cn(
-              "mb-4 list-disc space-y-1.5 pl-5 font-serif marker:text-primary",
-              dense ? "text-[14px] leading-6" : "text-[15px] leading-7 sm:text-base",
+              "mb-4 list-disc space-y-1.5 pl-5 marker:text-primary",
+              dense ? "text-[14px] leading-6" : "text-[15px] leading-7 sm:text-[17px] sm:leading-8",
             )}
           >
             {children}
@@ -154,8 +154,8 @@ function MdBlock({
         ol: ({ children }) => (
           <ol
             className={cn(
-              "mb-4 list-decimal space-y-1.5 pl-5 font-serif marker:font-semibold marker:text-primary",
-              dense ? "text-[14px] leading-6" : "text-[15px] leading-7 sm:text-base",
+              "mb-4 list-decimal space-y-1.5 pl-5 marker:font-semibold marker:text-primary",
+              dense ? "text-[14px] leading-6" : "text-[15px] leading-7 sm:text-[17px] sm:leading-8",
             )}
           >
             {children}
@@ -165,7 +165,7 @@ function MdBlock({
         blockquote: ({ children }) => (
           <blockquote
             className={cn(
-              "mb-5 rounded-r-xl border-l-4 border-primary/70 bg-primary/5 px-3 font-serif text-foreground shadow-[0_1px_0_rgba(0,0,0,0.03)] sm:px-4 [&_p:last-child]:mb-0",
+              "mb-5 rounded-r-xl border-l-4 border-primary/70 bg-secondary/60 px-3 text-foreground sm:px-4 [&_p:last-child]:mb-0",
               dense ? "py-2.5 text-[14px] leading-6" : "py-3 text-[15px] leading-7",
             )}
           >
@@ -485,13 +485,13 @@ export function TheoryReader({
         ref={scrollRef}
         onScroll={onScroll}
         className={cn(
-          "relative flex-1 overflow-y-auto overscroll-y-contain bg-[oklch(0.985_0.005_75)] [-webkit-overflow-scrolling:touch]",
+          "relative flex-1 overflow-y-auto overscroll-y-contain bg-white [-webkit-overflow-scrolling:touch]",
           readerMode ? "min-h-0" : "max-h-[calc(100dvh-10rem)] sm:max-h-[calc(100vh-11rem)]",
         )}
       >
         <article
           className={cn(
-            "mx-auto max-w-3xl [&>h1+p]:text-foreground/75 [&>h1+p]:sm:text-[17px] [&>h1+p]:sm:leading-8 [&_.katex]:text-[1.03em] [&_.katex-display]:my-5 [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-hidden [&_.katex-display]:rounded-xl [&_.katex-display]:border [&_.katex-display]:border-border/70 [&_.katex-display]:bg-white [&_.katex-display]:px-3 [&_.katex-display]:py-3 [&_.katex-display]:shadow-sm",
+            "mx-auto max-w-[46rem] [&>h1+p]:text-foreground/75 [&_.katex]:text-[1.03em] [&_.katex-display]:my-5 [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-hidden [&_.katex-display]:rounded-xl [&_.katex-display]:border [&_.katex-display]:border-border/60 [&_.katex-display]:bg-secondary/40 [&_.katex-display]:px-3 [&_.katex-display]:py-3",
             readerMode ? "px-3 py-4 pb-20 sm:px-8 sm:py-8 sm:pb-10" : "px-3 py-5 sm:px-8 sm:py-10",
           )}
         >
