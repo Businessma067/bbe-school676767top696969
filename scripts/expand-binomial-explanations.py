@@ -322,20 +322,38 @@ def overview_text(ctx: str, params: dict | None) -> str:
             elif params.get("pctA") == params.get("pctB"):
                 bits.append(
                     f"“At least {fmt(params['pctA'], 2)}%” is a percentage of the batch size, not a raw "
-                    f"success count of {fmt(params['pctA'], 2)}. For side A, "
-                    f"${fmt(params['pctA'], 2)}\\%\\times {nA} = {fmt(params['rawA'], 4)}$, so the batch "
-                    f"needs at least $k_A = \\lceil {fmt(params['rawA'], 4)} \\rceil = {params['kA']}$ "
-                    f"successes. For side B, "
-                    f"$k_B = \\lceil {fmt(params['rawB'], 4)} \\rceil = {params['kB']}$."
+                    f"success count of {fmt(params['pctA'], 2)}."
+                )
+                bits.append("")
+                bits.append(
+                    f"Side A: ${fmt(params['pctA'], 2)}\\%\\times {nA} = {fmt(params['rawA'], 4)}$, "
+                    f"so $k_A = \\lceil {fmt(params['rawA'], 4)} \\rceil = {params['kA']}$."
+                )
+                bits.append("")
+                bits.append(
+                    f"Side B: ${fmt(params['pctA'], 2)}\\%\\times {nB} = {fmt(params['rawB'], 4)}$, "
+                    f"so $k_B = \\lceil {fmt(params['rawB'], 4)} \\rceil = {params['kB']}$."
                 )
             else:
                 bits.append(
-                    f"Each factory has its own percentage cutoff, converted to an integer count with a "
-                    f"ceiling (you cannot keep a fraction of a unit). "
-                    f"Side A: ${fmt(params['pctA'], 2)}\\%\\times {nA} = {fmt(params['rawA'], 4)}$ "
-                    f"$\\Rightarrow k_A = \\lceil {fmt(params['rawA'], 4)} \\rceil = {params['kA']}$. "
-                    f"Side B: ${fmt(params['pctB'], 2)}\\%\\times {nB} = {fmt(params['rawB'], 4)}$ "
-                    f"$\\Rightarrow k_B = \\lceil {fmt(params['rawB'], 4)} \\rceil = {params['kB']}$."
+                    "Each factory has its own percentage cutoff, converted to an integer count with a "
+                    "ceiling (you cannot keep a fraction of a unit)."
+                )
+                bits.append("")
+                bits.append(
+                    f"Side A: ${fmt(params['pctA'], 2)}\\%\\times {nA} = {fmt(params['rawA'], 4)}$"
+                )
+                bits.append("")
+                bits.append(
+                    f"$$k_A = \\lceil {fmt(params['rawA'], 4)} \\rceil = {params['kA']}$$"
+                )
+                bits.append("")
+                bits.append(
+                    f"Side B: ${fmt(params['pctB'], 2)}\\%\\times {nB} = {fmt(params['rawB'], 4)}$"
+                )
+                bits.append("")
+                bits.append(
+                    f"$$k_B = \\lceil {fmt(params['rawB'], 4)} \\rceil = {params['kB']}$$"
                 )
         elif params.get("kA") is not None:
             bits.append("")
@@ -357,9 +375,9 @@ def overview_text(ctx: str, params: dict | None) -> str:
             p1, p2, p3 = params["comps"]
             extra = (
                 f"\n\nA cycle fails if at least one component fails:\n\n"
-                f"$$p = 1-(1-p_1)(1-p_2)(1-p_3)"
-                f" = 1-({fmt(1-p1, 6)})({fmt(1-p2, 6)})({fmt(1-p3, 6)})"
-                f" \\approx {fmt(params['p'], 8)}.$$"
+                f"$$p = 1-(1-p_1)(1-p_2)(1-p_3)$$\n\n"
+                f"$$= 1-({fmt(1-p1, 6)})({fmt(1-p2, 6)})({fmt(1-p3, 6)})$$\n\n"
+                f"$$\\approx {fmt(params['p'], 8)}.$$"
             )
         return (
             f"{core}{extra}\n\n"
@@ -385,23 +403,27 @@ def expand_tail_terms(n: int, p: float, k: int, who: str) -> tuple[str, float]:
     for x in range(k, n + 1):
         v = binom_pmf(n, p, x)
         vals.append(v)
-        parts.append(
-            f"$$\\binom{{{n}}}{{{x}}}({fmt(p, 4)})^{{{x}}}({fmt(q, 4)})^{{{n - x}}} \\approx {fmt(v, 4)}$$"
-        )
+        # Keep each PMF on its own short display line (panel-width safe).
+        parts.append(f"$$\\binom{{{n}}}{{{x}}}({fmt(p, 4)})^{{{x}}}({fmt(q, 4)})^{{{n - x}}}$$")
+        parts.append("")
+        parts.append(f"$$\\approx {fmt(v, 4)}$$")
         parts.append("")
     total = sum(vals)
-    add = " + ".join(fmt(v, 4) for v in vals)
-    parts.append(
-        f"Adding the mutually exclusive pieces:\n\n"
-        f"$$P(X \\ge {k}) \\approx {add} = {fmt(total, 4)} \\approx {pct(total)}$$"
-    )
+    parts.append("Adding the mutually exclusive pieces:")
+    parts.append("")
+    # Chunk the sum so long tails do not force horizontal scrolling.
+    chunk = 3
+    for i in range(0, len(vals), chunk):
+        piece = vals[i : i + chunk]
+        lead = "" if i == 0 else "+ "
+        parts.append("$$" + lead + " + ".join(fmt(v, 4) for v in piece) + "$$")
+        parts.append("")
+    parts.append(f"$$P(X \\ge {k}) \\approx {fmt(total, 4)} \\approx {pct(total)}$$")
     return "\n".join(parts).strip(), total
 
 
 def classify(stmt: str) -> str:
     s = stmt.lower()
-    if "coefficient of variation" in s:
-        return "cv"
     if re.search(r"since\s+\d+(?:\.\d+)?%\s+of\s+\d+", s):
         return "pct_round"
     if "equals the sum" in s or "sum, from" in s or "sum from" in s:
@@ -582,16 +604,16 @@ def expl_sum(letter, stmt, is_true, params, _old):
         f"addition rule for mutually exclusive events we add their individual binomial probabilities:"
     )
     lines.append("")
-    mid = f"P(X={lo}) + P(X={lo + 1})" if lo < hi else f"P(X={lo})"
-    if hi > lo + 1:
-        mid = f"P(X={lo}) + P(X={lo + 1}) + \\cdots + P(X={hi})"
-    elif hi == lo + 1:
-        mid = f"P(X={lo}) + P(X={hi})"
     lines.append(
-        f"$$P(X \\ge {lo}) = {mid} = \\sum_{{x={lo}}}^{{{hi}}} "
+        f"$$P(X \\ge {lo}) = \\sum_{{x={lo}}}^{{{hi}}} "
         f"\\binom{{{n}}}{{x}} p^{{x}} (1-p)^{{{n}-x}}$$"
     )
     lines.append("")
+    # Optional expanded addition written short when the range is tiny
+    if hi - lo <= 3:
+        add_terms = " + ".join(f"P(X={x})" for x in range(lo, hi + 1))
+        lines.append(f"$$= {add_terms}$$")
+        lines.append("")
     # Cross-check against scenario cutoff when available
     note = ""
     if params and params.get("kA") is not None and abs(p - params["pA"]) < 1e-9 and n == params["nA"]:
@@ -636,7 +658,9 @@ def expl_perfect(letter, stmt, is_true, params, _old):
         val = q**n
         lines.append(f"For {who}, $p = {fmt(p, 4)}$, so $1-p = {fmt(q, 4)}$ and $n = {n}$:")
         lines.append("")
-        lines.append(f"$$P(X = 0) = ({fmt(q, 4)})^{{{n}}} \\approx {fmt(val, 6)} \\approx {pct(val, 6)}$$")
+        lines.append(f"$$P(X = 0) = ({fmt(q, 4)})^{{{n}}}$$")
+        lines.append("")
+        lines.append(f"$$\\approx {fmt(val, 6)} \\approx {pct(val, 6)}$$")
     else:
         lines.append(
             "A perfect run means every one of the $n$ trials succeeds. Independence lets us multiply "
@@ -648,7 +672,9 @@ def expl_perfect(letter, stmt, is_true, params, _old):
         val = p**n
         lines.append(f"For {who}, $p = {fmt(p, 4)}$ and $n = {n}$:")
         lines.append("")
-        lines.append(f"$$P(X = {n}) = ({fmt(p, 4)})^{{{n}}} \\approx {fmt(val, 6)} \\approx {pct(val)}$$")
+        lines.append(f"$$P(X = {n}) = ({fmt(p, 4)})^{{{n}}}$$")
+        lines.append("")
+        lines.append(f"$$\\approx {fmt(val, 6)} \\approx {pct(val)}$$")
 
     thr_m = re.search(
         r"(?:less than|greater than|more than|below|above|under|over)\s+(?:a\s+)?([\d.]+)\s*%",
@@ -740,18 +766,16 @@ def expl_ratio(letter, stmt, is_true, params, old):
         ratio = tot_a / tot_b if tot_b > 0 else float("inf")
         lines.append("The ratio in the claim’s order (A relative to B):")
         lines.append("")
-        lines.append(
-            f"$$\\frac{{P_A(X \\ge {kA})}}{{P_B(X \\ge {kB})}} "
-            f"\\approx \\frac{{{pct(tot_a)}}}{{{pct(tot_b)}}} \\approx {fmt(ratio, 2)}$$"
-        )
+        lines.append(f"$$\\frac{{P_A(X \\ge {kA})}}{{P_B(X \\ge {kB})}}$$")
+        lines.append("")
+        lines.append(f"$$\\approx \\frac{{{pct(tot_a)}}}{{{pct(tot_b)}}} \\approx {fmt(ratio, 2)}$$")
     else:
         ratio = tot_b / tot_a if tot_a > 0 else float("inf")
         lines.append("The ratio in the claim’s order (B relative to A):")
         lines.append("")
-        lines.append(
-            f"$$\\frac{{P_B(X \\ge {kB})}}{{P_A(X \\ge {kA})}} "
-            f"\\approx \\frac{{{pct(tot_b)}}}{{{pct(tot_a)}}} \\approx {fmt(ratio, 2)}$$"
-        )
+        lines.append(f"$$\\frac{{P_B(X \\ge {kB})}}{{P_A(X \\ge {kA})}}$$")
+        lines.append("")
+        lines.append(f"$$\\approx \\frac{{{pct(tot_b)}}}{{{pct(tot_a)}}} \\approx {fmt(ratio, 2)}$$")
 
     thr_m = re.search(r"(?:more than|at least)\s+([\d,]+)\s+times", stmt, re.I)
     if thr_m:
@@ -801,17 +825,19 @@ def expl_variance(letter, stmt, is_true, params, _old):
         ratio = vA / vB if vB else float("inf")
         lines.append("The variance ratio is")
         lines.append("")
+        lines.append("$$\\frac{\\mathrm{Var}(A)}{\\mathrm{Var}(B)}$$")
+        lines.append("")
         lines.append(
-            f"$$\\frac{{\\mathrm{{Var}}(A)}}{{\\mathrm{{Var}}(B)}} "
-            f"= \\frac{{{fmt(vA, 4)}}}{{{fmt(vB, 4)}}} \\approx {fmt(ratio, 2)}$$"
+            f"$$= \\frac{{{fmt(vA, 4)}}}{{{fmt(vB, 4)}}} \\approx {fmt(ratio, 2)}$$"
         )
         lines.append("")
         lines.append(
             f"Comparing that with the claim, the statement is {'True' if is_true else 'False'}."
         )
     else:
+        lines.append(f"So $\\mathrm{{Var}}(A) = {fmt(vA, 4)}$ and $\\mathrm{{Var}}(B) = {fmt(vB, 4)}$.")
+        lines.append("")
         lines.append(
-            f"So $\\mathrm{{Var}}(A) = {fmt(vA, 4)}$ and $\\mathrm{{Var}}(B) = {fmt(vB, 4)}$. "
             f"The claim’s comparison is {'correct' if is_true else 'incorrect'}, "
             f"so the statement is {'True' if is_true else 'False'}."
         )
@@ -832,23 +858,22 @@ def expl_sd(letter, stmt, is_true, params, _old):
         sA, sB = math.sqrt(vA), math.sqrt(vB)
         lines.append(f"Side A ($n_A = {nA}$, $p_A = {fmt(pA, 4)}$):")
         lines.append("")
-        lines.append(
-            f"$$\\mathrm{{Var}}(A) = {fmt(vA, 4)}, \\qquad "
-            f"\\mathrm{{SD}}(A) = \\sqrt{{{fmt(vA, 4)}}} \\approx {fmt(sA, 3)}$$"
-        )
+        lines.append(f"$$\\mathrm{{Var}}(A) = {fmt(vA, 4)}$$")
+        lines.append("")
+        lines.append(f"$$\\mathrm{{SD}}(A) = \\sqrt{{{fmt(vA, 4)}}} \\approx {fmt(sA, 3)}$$")
         lines.append("")
         lines.append(f"Side B ($n_B = {nB}$, $p_B = {fmt(pB, 4)}$):")
         lines.append("")
-        lines.append(
-            f"$$\\mathrm{{Var}}(B) = {fmt(vB, 4)}, \\qquad "
-            f"\\mathrm{{SD}}(B) = \\sqrt{{{fmt(vB, 4)}}} \\approx {fmt(sB, 3)}$$"
-        )
+        lines.append(f"$$\\mathrm{{Var}}(B) = {fmt(vB, 4)}$$")
+        lines.append("")
+        lines.append(f"$$\\mathrm{{SD}}(B) = \\sqrt{{{fmt(vB, 4)}}} \\approx {fmt(sB, 3)}$$")
         lines.append("")
         if "times" in stmt.lower() or "double" in stmt.lower() or "triple" in stmt.lower():
             ratio = sA / sB if sB else float("inf")
+            lines.append("$$\\frac{\\mathrm{SD}(A)}{\\mathrm{SD}(B)}$$")
+            lines.append("")
             lines.append(
-                f"$$\\frac{{\\mathrm{{SD}}(A)}}{{\\mathrm{{SD}}(B)}} "
-                f"\\approx \\frac{{{fmt(sA, 3)}}}{{{fmt(sB, 3)}}} \\approx {fmt(ratio, 3)}$$"
+                f"$$\\approx \\frac{{{fmt(sA, 3)}}}{{{fmt(sB, 3)}}} \\approx {fmt(ratio, 3)}$$"
             )
             lines.append("")
             lines.append(f"Against the claim, the statement is {'True' if is_true else 'False'}.")
@@ -970,7 +995,19 @@ def expl_mean(letter, stmt, is_true, params, _old):
         if only_a:
             lines.append(f"$$E[A] = {nA} \\cdot {fmt(pA, 4)} = {fmt(mA, 4)}$$")
             lines.append("")
-            lines.append(f"Compared with the claim, the statement is {'True' if is_true else 'False'}.")
+            thr = re.search(r"(?:greater than|more than|less than|below|above)\s+([\d.]+)", stmt, re.I)
+            if thr:
+                t = float(thr.group(1))
+                lines.append(
+                    f"The claim compares this mean with ${fmt(t, 4)}$. "
+                    f"$E[A] = {fmt(mA, 4)}$ is "
+                    f"{'greater than' if mA > t else 'not greater than' if 'greater' in s or 'more than' in s else ('less than' if mA < t else 'not less than')} "
+                    f"${fmt(t, 4)}$, so the statement is {'True' if is_true else 'False'}."
+                )
+            else:
+                lines.append(
+                    f"Compared with the claim, the statement is {'True' if is_true else 'False'}."
+                )
             return "\n\n".join(lines)
         if only_b:
             lines.append(f"$$E[B] = {nB} \\cdot {fmt(pB, 4)} = {fmt(mB, 4)}$$")
@@ -982,31 +1019,67 @@ def expl_mean(letter, stmt, is_true, params, _old):
         lines.append("")
         lines.append(f"$$E[B] = {nB} \\cdot {fmt(pB, 4)} = {fmt(mB, 4)}$$")
         lines.append("")
+        exactly_more = re.search(r"exactly\s+(\d+)\s+more", stmt, re.I)
+        times_m = re.search(r"(?:more than|at least)\s+([\d.]+)\s+times", stmt, re.I)
         if "%" in stmt or "percent" in s:
             inc = 100 * (mB / mA - 1) if mA else float("inf")
+            lines.append("The percent increase of B over A is")
+            lines.append("")
             lines.append(
-                f"The percent increase of B over A is "
-                f"$100\\big(E[B]/E[A] - 1\\big) = 100\\big({fmt(mB / mA, 4)} - 1\\big) "
-                f"\\approx {fmt(inc, 2)}\\%$."
+                f"$$100\\Big(\\frac{{E[B]}}{{E[A]}} - 1\\Big) "
+                f"\\approx {fmt(inc, 2)}\\%$$"
             )
-        elif "double" in s:
-            lines.append(f"The ratio $E[B]/E[A] = {fmt(mB / mA, 4)}$ (double would be $2$).")
-        elif "regardless" in s or "shared bin" in s or "(12" in stmt or "equals (" in s:
-            # linearity even if not binomial
+        elif exactly_more:
+            claimed = float(exactly_more.group(1))
+            diff = mB - mA
+            lines.append("The difference is")
+            lines.append("")
+            lines.append(f"$$E[B] - E[A] = {fmt(mB, 4)} - {fmt(mA, 4)} = {fmt(diff, 4)}$$")
+            lines.append("")
             lines.append(
-                "Even if the combined count is not binomial, linearity of expectation still gives "
-                f"$E[X_1 + X_2] = E[X_1] + E[X_2] = {fmt(mA, 4)} + {fmt(mB, 4)} = {fmt(mA + mB, 4)}$."
+                f"That {'equals' if abs(diff - claimed) < 1e-9 else 'does not equal'} "
+                f"the claimed gap of ${fmt(claimed, 4)}$."
+            )
+        elif times_m or "double" in s or "triple" in s:
+            ratio = mB / mA if mA else float("inf")
+            lines.append("The mean ratio (B relative to A) is")
+            lines.append("")
+            lines.append(
+                f"$$\\frac{{E[B]}}{{E[A]}} = \\frac{{{fmt(mB, 4)}}}{{{fmt(mA, 4)}}} "
+                f"\\approx {fmt(ratio, 4)}$$"
+            )
+            if "double" in s:
+                lines.append("")
+                lines.append("(Double would mean a ratio of $2$.)")
+            elif "triple" in s:
+                lines.append("")
+                lines.append("(Triple would mean a ratio of $3$.)")
+            elif times_m:
+                thr = float(times_m.group(1))
+                lines.append("")
+                lines.append(
+                    f"Compared with ${fmt(thr, 4)}$: "
+                    f"${fmt(ratio, 4)}{' > ' if ratio > thr else ' \\le '}{fmt(thr, 4)}$."
+                )
+        elif "regardless" in s or "shared bin" in s or "(12" in stmt or "equals (" in s:
+            lines.append(
+                "Even if the combined count is not binomial, linearity of expectation still gives"
+            )
+            lines.append("")
+            lines.append(
+                f"$$E[X_1 + X_2] = E[X_1] + E[X_2] "
+                f"= {fmt(mA, 4)} + {fmt(mB, 4)} = {fmt(mA + mB, 4)}$$"
             )
         else:
-            lines.append(
-                f"The difference is $E[B] - E[A] = {fmt(mB - mA, 4)}$"
-                + (
-                    f", which is the same as $n(p_B - p_A) = {nA}\\cdot({fmt(pB, 4)} - {fmt(pA, 4)}) "
-                    f"= {fmt(nA * (pB - pA), 4)}$."
-                    if nA == nB
-                    else "."
+            lines.append("The difference is")
+            lines.append("")
+            lines.append(f"$$E[B] - E[A] = {fmt(mB - mA, 4)}$$")
+            if nA == nB:
+                lines.append("")
+                lines.append(
+                    f"$$= n(p_B - p_A) = {nA}\\cdot({fmt(pB, 4)} - {fmt(pA, 4)}) "
+                    f"= {fmt(nA * (pB - pA), 4)}$$"
                 )
-            )
         lines.append("")
         lines.append(f"Matching these figures to the claim, the statement is {'True' if is_true else 'False'}.")
         return "\n\n".join(lines)
@@ -1108,8 +1181,10 @@ def expl_tail_misc(letter, stmt, is_true, params, _old):
         lines.append("")
         lines.append(
             f"$$P(X \\le {k - 1}) = \\sum_{{x=0}}^{{{k - 1}}} "
-            f"\\binom{{{n}}}{{x}} p^{{x}}(1-p)^{{{n}-x}} \\approx {fmt(val, 4)} \\approx {pct(val)}$$"
+            f"\\binom{{{n}}}{{x}} p^{{x}}(1-p)^{{{n}-x}}$$"
         )
+        lines.append("")
+        lines.append(f"$$\\approx {fmt(val, 4)} \\approx {pct(val)}$$")
         lines.append("")
         lines.append(f"For side {side} this is about {pct(val)}. So the statement is {'True' if is_true else 'False'}.")
         return "\n\n".join(lines)
@@ -1120,9 +1195,10 @@ def expl_tail_misc(letter, stmt, is_true, params, _old):
         lines.append("")
         lines.append(
             f"$$P(X \\le {k}) = \\sum_{{x=0}}^{{{k}}} "
-            f"\\binom{{{n}}}{{x}} p^{{x}}(1-p)^{{{n}-x}} \\approx {fmt(val, 4)} \\approx {pct(val)}$$"
+            f"\\binom{{{n}}}{{x}} p^{{x}}(1-p)^{{{n}-x}}$$"
         )
         lines.append("")
+        lines.append(f"$$\\approx {fmt(val, 4)} \\approx {pct(val)}$$")
         lines.append(f"For side {side} this is about {pct(val)}. So the statement is {'True' if is_true else 'False'}.")
         return "\n\n".join(lines)
 
@@ -1330,12 +1406,13 @@ def expl_indep_zero_product(letter, stmt, is_true, params, _old):
         "factors into a product:"
     )
     lines.append("")
-    lines.append("$$P(A=0 \\cap B=0) = P(A=0)\\,P(B=0) = (1-p_A)^{n_A}(1-p_B)^{n_B}$$")
+    lines.append("$$P(A=0 \\cap B=0) = P(A=0)\\,P(B=0)$$")
     lines.append("")
-    lines.append(
-        f"$$P(A=0) = ({fmt(1 - pA, 6)})^{{{nA}}} \\approx {fmt(zA, 6)}, \\quad "
-        f"P(B=0) = ({fmt(1 - pB, 6)})^{{{nB}}} \\approx {fmt(zB, 6)}$$"
-    )
+    lines.append("$$= (1-p_A)^{n_A}(1-p_B)^{n_B}$$")
+    lines.append("")
+    lines.append(f"$$P(A=0) = ({fmt(1 - pA, 6)})^{{{nA}}} \\approx {fmt(zA, 6)}$$")
+    lines.append("")
+    lines.append(f"$$P(B=0) = ({fmt(1 - pB, 6)})^{{{nB}}} \\approx {fmt(zB, 6)}$$")
     lines.append("")
     lines.append(f"Product $\\approx {fmt(zA * zB, 6)}$.")
     lines.append("")
@@ -1356,14 +1433,15 @@ def expl_union_two(letter, stmt, is_true, params, _old):
         "“both tests produce zero false positives”. With independence,"
     )
     lines.append("")
-    lines.append(
-        "$$P(\\text{at least one hit}) = 1 - P(A=0)P(B=0) = 1 - (1-p_A)^{n_A}(1-p_B)^{n_B}$$"
-    )
+    lines.append("$$P(\\text{at least one hit}) = 1 - P(A=0)P(B=0)$$")
+    lines.append("")
+    lines.append("$$= 1 - (1-p_A)^{n_A}(1-p_B)^{n_B}$$")
     lines.append("")
     lines.append(
-        f"$$1 - ({fmt(1 - pA, 6)})^{{{nA}}}({fmt(1 - pB, 6)})^{{{nB}}} "
-        f"\\approx 1 - {fmt(both0, 6)} = {fmt(val, 6)}$$"
+        f"$$1 - ({fmt(1 - pA, 6)})^{{{nA}}}({fmt(1 - pB, 6)})^{{{nB}}}$$"
     )
+    lines.append("")
+    lines.append(f"$$\\approx 1 - {fmt(both0, 6)} = {fmt(val, 6)}$$")
     lines.append("")
     thr_m = re.search(r"(?:less than|greater than|more than)\s+(0?\.\d+)", stmt, re.I)
     if thr_m:
@@ -1467,10 +1545,13 @@ def expl_device(letter, stmt, is_true, params, old):
             "The device fails in a cycle if at least one independent component fails, so"
         )
         lines.append("")
+        lines.append("$$p = 1 - (1-p_1)(1-p_2)(1-p_3)$$")
+        lines.append("")
         lines.append(
-            f"$$p = 1 - (1-p_1)(1-p_2)(1-p_3) = 1 - ({fmt(1-p1, 6)})({fmt(1-p2, 6)})({fmt(1-p3, 6)}) "
-            f"\\approx {fmt(p_exact, 8)}$$"
+            f"$$= 1 - ({fmt(1-p1, 6)})({fmt(1-p2, 6)})({fmt(1-p3, 6)})$$"
         )
+        lines.append("")
+        lines.append(f"$$\\approx {fmt(p_exact, 8)}$$")
         lines.append("")
         lines.append(
             f"The first-order sum $p_1+p_2+p_3 = {fmt(p_sum, 8)}$ differs from the exact union by "
@@ -1605,7 +1686,6 @@ def build_one(i, stmt, is_true, params, old):
         "ratio": expl_ratio,
         "variance": expl_variance,
         "sd": expl_sd,
-        "cv": expl_cv,
         "mean": expl_mean,
         "exact": expl_exact,
         "tail_misc": expl_tail_misc,
