@@ -26,30 +26,34 @@ function BrandMark({ compact = false }: { compact?: boolean }) {
     <Link to="/" className="group flex shrink-0 items-center gap-3">
       <div
         className={cn(
-          "relative grid place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105",
-          compact ? "h-9 w-9" : "h-10 w-10",
+          "relative grid place-items-center overflow-hidden rounded-md border border-graphite/20 bg-card",
+          compact ? "h-9 w-9" : "h-11 w-11",
         )}
       >
         <span
           className={cn(
-            "font-display font-bold leading-none tracking-tight text-primary-foreground",
+            "font-display font-extrabold leading-none tracking-tight text-graphite",
             compact ? "text-xs" : "text-sm",
           )}
         >
           BBE
         </span>
+        <span
+          aria-hidden
+          className="absolute bottom-1 right-1 h-1.5 w-1.5 rounded-full bg-stamp opacity-0 transition-opacity group-hover:opacity-100"
+        />
       </div>
       {compact ? (
-        <span className="font-display text-sm font-bold tracking-tight text-foreground">
+        <span className="font-display text-sm font-extrabold tracking-tight text-foreground">
           BBE School
         </span>
       ) : (
         <div className="flex flex-col leading-tight">
-          <span className="font-display text-base font-bold tracking-tight text-foreground">
+          <span className="font-display text-lg font-extrabold tracking-tight text-foreground sm:text-xl">
             BBE School
           </span>
-          <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-            WU Vienna · Prep
+          <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-taupe">
+            240 seats · WU Prep
           </span>
         </div>
       )}
@@ -72,7 +76,7 @@ export function SiteHeader({
   return (
     <header
       className={cn(
-        "z-30 border-b border-border/60 bg-background/85 backdrop-blur",
+        "z-30 border-b border-border/70 bg-paper/90 backdrop-blur",
         sticky && "sticky top-0",
         className,
       )}

@@ -5,18 +5,18 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system: Messe Wien Survivor — light academic mode.
+ * Design system: Hall Filter
  *
- * Palette: warm ivory (#F7F3EC), crisp white, deep espresso text,
- * soft caramel/tan accents. Alternating parallax bands with a
- * darkened WU Vienna campus photo behind neutral sections.
+ * Exam-hall answer sheet: cold paper, graphite, ballpoint ink,
+ * stamp red for irreversible actions, hall black for inside the exam.
+ * Light ↔ dark sections alternate lobby → hall → paper → hall.
  */
 
 @theme inline {
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, ui-serif, serif;
-  --font-expl: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-expl: "DM Sans", ui-sans-serif, system-ui, sans-serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -47,14 +47,20 @@
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
 
-  --color-caramel: var(--caramel);
-  --color-caramel-deep: var(--caramel-deep);
-  --color-ivory: var(--ivory);
-  --color-espresso: var(--espresso);
-  --color-taupe: var(--taupe);
-  --color-why-us-bg: var(--why-us-bg);
-  --color-why-us-card: var(--why-us-card);
+  --color-paper: var(--paper);
+  --color-graphite: var(--graphite);
+  --color-ballpoint: var(--ballpoint);
+  --color-stamp: var(--stamp);
+  --color-hall: var(--hall);
 
+  /* Legacy aliases → Hall Filter (practice pages keep working) */
+  --color-caramel: var(--ballpoint);
+  --color-caramel-deep: var(--stamp);
+  --color-ivory: var(--paper);
+  --color-espresso: var(--graphite);
+  --color-taupe: var(--taupe);
+  --color-why-us-bg: var(--hall);
+  --color-why-us-card: var(--why-us-card);
 
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
@@ -72,51 +78,56 @@
 }
 
 :root {
-  --radius: 0.625rem;
+  --radius: 0.5rem;
 
-  /* Monochrome — editorial black & white */
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.15 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0 0);
-  --primary: oklch(0.15 0 0);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.96 0 0);
-  --secondary-foreground: oklch(0.15 0 0);
-  --muted: oklch(0.96 0 0);
-  --muted-foreground: oklch(0.45 0 0);
-  --accent: oklch(0.15 0 0);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.55 0.2 25);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.15 0 0 / 12%);
-  --input: oklch(0.15 0 0 / 12%);
-  --ring: oklch(0.15 0 0);
+  /* Hall Filter core */
+  --paper: #f3f5f7;
+  --graphite: #14161a;
+  --ballpoint: #1e4d8c;
+  --stamp: #c0392b;
+  --hall: #0b0f14;
 
-  --ivory: oklch(0.985 0 0);
-  --caramel: oklch(0.72 0.15 55);        /* warm amber accent */
-  --caramel-deep: oklch(0.62 0.19 42);   /* ember accent (eyebrows, flame) */
-  --espresso: oklch(0.1 0 0);
-  --taupe: oklch(0.45 0 0);
-  --why-us-bg: oklch(0.08 0 0);
-  --why-us-card: oklch(0.12 0 0);
+  --background: var(--paper);
+  --foreground: var(--graphite);
+  --card: #ffffff;
+  --card-foreground: var(--graphite);
+  --popover: #ffffff;
+  --popover-foreground: var(--graphite);
+  --primary: var(--graphite);
+  --primary-foreground: #f8f9fb;
+  --secondary: #e8ebef;
+  --secondary-foreground: var(--graphite);
+  --muted: #e4e8ed;
+  --muted-foreground: #5c6370;
+  --accent: var(--ballpoint);
+  --accent-foreground: #f8f9fb;
+  --destructive: var(--stamp);
+  --destructive-foreground: #ffffff;
+  --border: color-mix(in oklab, var(--graphite) 14%, transparent);
+  --input: color-mix(in oklab, var(--graphite) 14%, transparent);
+  --ring: var(--ballpoint);
 
+  --ivory: var(--paper);
+  --caramel: var(--ballpoint);
+  --caramel-deep: var(--stamp);
+  --espresso: var(--graphite);
+  --taupe: #5c6370;
+  --why-us-bg: var(--hall);
+  --why-us-card: #12171e;
 
-  --chart-1: oklch(0.62 0.19 42);   /* ember  */
-  --chart-2: oklch(0.65 0.17 250);  /* blue   */
-  --chart-3: oklch(0.72 0.14 175);  /* mint   */
-  --chart-4: oklch(0.72 0.15 55);   /* amber  */
-  --chart-5: oklch(0.55 0.2 300);   /* violet */
-  --sidebar: oklch(1 0 0);
-  --sidebar-foreground: oklch(0.15 0 0);
-  --sidebar-primary: oklch(0.15 0 0);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.96 0 0);
-  --sidebar-accent-foreground: oklch(0.15 0 0);
-  --sidebar-border: oklch(0.15 0 0 / 12%);
-  --sidebar-ring: oklch(0.15 0 0);
+  --chart-1: var(--stamp);
+  --chart-2: var(--ballpoint);
+  --chart-3: #2a9d8f;
+  --chart-4: #3d6aa2;
+  --chart-5: #5c6370;
+  --sidebar: #ffffff;
+  --sidebar-foreground: var(--graphite);
+  --sidebar-primary: var(--graphite);
+  --sidebar-primary-foreground: #f8f9fb;
+  --sidebar-accent: #e8ebef;
+  --sidebar-accent-foreground: var(--graphite);
+  --sidebar-border: color-mix(in oklab, var(--graphite) 14%, transparent);
+  --sidebar-ring: var(--ballpoint);
 }
 
 @layer base {
@@ -137,19 +148,27 @@
 }
 
 @utility text-caramel {
-  color: var(--color-caramel-deep);
+  color: var(--color-stamp);
+}
+
+@utility text-ballpoint {
+  color: var(--color-ballpoint);
+}
+
+@utility text-stamp {
+  color: var(--color-stamp);
 }
 
 @utility divider-caramel {
-  border-top: 1px solid var(--color-caramel);
+  border-top: 1px solid var(--color-ballpoint);
 }
 
-/* Why Us — high-contrast dark fintech section. */
+/* Why Us — hall section glow (ballpoint, not amber) */
 @utility why-us-glow {
   box-shadow:
-    0 0 0 1px color-mix(in oklab, var(--color-caramel-deep) 25%, transparent),
-    0 0 40px -12px color-mix(in oklab, var(--color-caramel-deep) 65%, transparent),
-    0 0 80px -24px color-mix(in oklab, var(--color-caramel) 45%, transparent);
+    0 0 0 1px color-mix(in oklab, var(--color-ballpoint) 30%, transparent),
+    0 0 40px -12px color-mix(in oklab, var(--color-ballpoint) 45%, transparent),
+    0 0 80px -24px color-mix(in oklab, var(--color-ballpoint) 25%, transparent);
 }
 
 @utility featured-column {
@@ -161,13 +180,22 @@
 }
 
 @keyframes why-us-pulse {
-  0%, 100% { box-shadow: 0 0 40px -12px color-mix(in oklab, var(--color-caramel-deep) 60%, transparent); }
-  50% { box-shadow: 0 0 60px -4px color-mix(in oklab, var(--color-caramel-deep) 85%, transparent); }
+  0%,
+  100% {
+    box-shadow: 0 0 40px -12px color-mix(in oklab, var(--color-ballpoint) 45%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 60px -4px color-mix(in oklab, var(--color-ballpoint) 70%, transparent);
+  }
 }
 
 @keyframes ring-fill {
-  0% { stroke-dashoffset: var(--circumference); }
-  100% { stroke-dashoffset: var(--target-offset); }
+  0% {
+    stroke-dashoffset: var(--circumference);
+  }
+  100% {
+    stroke-dashoffset: var(--target-offset);
+  }
 }
 
 @utility ring-animate {
@@ -190,13 +218,122 @@
   transform-origin: center;
 }
 
+/* OMR bubble micro-interaction */
+@keyframes omr-fill {
+  0% {
+    transform: scale(0.35);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes stamp-in {
+  0% {
+    opacity: 0;
+    transform: scale(1.08) rotate(-2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes answer-lock {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.96);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.omr-bubble {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.omr-bubble::before {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 9999px;
+  border: 1.5px solid currentColor;
+  flex-shrink: 0;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.omr-bubble[data-filled="true"]::before,
+.group:hover .omr-bubble-hover::before,
+.omr-tab[data-active="true"] .omr-bubble::before {
+  background-color: currentColor;
+  animation: omr-fill 200ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.cta-lock:active {
+  animation: answer-lock 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.seat-stamp {
+  animation: stamp-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Perforated section edge (paper booklet) */
+.perforation-top {
+  position: relative;
+}
+
+.perforation-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-image: radial-gradient(circle, var(--color-hall) 2.5px, transparent 2.6px);
+  background-size: 14px 10px;
+  background-position: center -2px;
+  background-repeat: repeat-x;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.omr-pattern {
+  background-image: radial-gradient(
+    circle,
+    color-mix(in oklab, var(--color-ballpoint) 18%, transparent) 1.25px,
+    transparent 1.3px
+  );
+  background-size: 18px 18px;
+}
+
+.omr-pattern-hall {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1.25px, transparent 1.3px);
+  background-size: 18px 18px;
+}
+
 /* Neon highlighter sweep for the AI textbook canvas. */
 @keyframes neon-sweep {
-  0% { background-size: 0% 100%; }
-  100% { background-size: 100% 100%; }
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
 }
 .neon-highlight {
-  background-image: linear-gradient(120deg, rgba(255, 176, 46, 0.95), rgba(255, 122, 0, 0.95));
+  background-image: linear-gradient(
+    120deg,
+    color-mix(in oklab, var(--color-ballpoint) 75%, white),
+    var(--color-ballpoint)
+  );
   background-repeat: no-repeat;
   background-size: 0% 100%;
   background-position: 0 0;
@@ -204,25 +341,39 @@
   border-radius: 3px;
   color: inherit;
   animation: neon-sweep 1.6s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-  box-shadow: 0 0 0 rgba(255, 149, 0, 0);
+  box-shadow: 0 0 0 transparent;
   animation-fill-mode: forwards;
 }
 .neon-highlight.done {
-  box-shadow: 0 0 14px rgba(255, 149, 0, 0.55), 0 0 3px rgba(255, 149, 0, 0.9);
+  box-shadow:
+    0 0 14px color-mix(in oklab, var(--color-ballpoint) 45%, transparent),
+    0 0 3px color-mix(in oklab, var(--color-ballpoint) 70%, transparent);
   transition: box-shadow 0.4s ease-out;
 }
 
-
-
 @keyframes sim-highlight-sweep {
-  0% { width: 0%; opacity: 0.9; }
-  100% { width: 100%; opacity: 1; }
+  0% {
+    width: 0%;
+    opacity: 0.9;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
 }
 
 @keyframes click-ripple {
-  0%   { transform: scale(0.35); opacity: 0.85; }
-  60%  { opacity: 0.55; }
-  100% { transform: scale(1.9); opacity: 0; }
+  0% {
+    transform: scale(0.35);
+    opacity: 0.85;
+  }
+  60% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
 }
 
 /* ---------- Flashcards: 3D flip + swipe settle ---------- */
@@ -258,7 +409,9 @@ body.flashcard-swiping {
 }
 
 .flashcard-exiting {
-  transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), opacity 260ms ease;
+  transition:
+    transform 260ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 260ms ease;
   opacity: 0.2;
   pointer-events: none;
 }
@@ -398,7 +551,9 @@ body.flashcard-swiping {
 
 @media (prefers-reduced-motion: reduce) {
   .practice-panel-enter,
-  .practice-fade-in {
+  .practice-fade-in,
+  .seat-stamp,
+  .omr-bubble[data-filled="true"]::before {
     animation: none;
   }
 
