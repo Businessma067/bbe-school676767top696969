@@ -201,7 +201,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
               <div className="hidden sm:flex flex-col items-end leading-tight">
                 <span className="font-display text-sm font-bold tracking-tight">English</span>
                 <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-                  {tierLabel} Â· Texts Â· Grammar Â· Vocabulary
+                  {tierLabel} · Texts · Grammar · Vocabulary
                 </span>
               </div>
               <AuthNav />
@@ -426,7 +426,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                                                     )}
                                                   >
                                                     Task {localI + 1}
-                                                    {locked && " Â· Locked"}
+                                                    {locked && " · Locked"}
                                                   </span>
                                                   {!locked && c.difficulty_level !== "—" && (
                                                     <DifficultyBars
@@ -497,7 +497,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                                           )}
                                         >
                                           Task {i + 1}
-                                          {locked && " Â· Locked"}
+                                          {locked && " · Locked"}
                                         </span>
                                       </button>
                                     </li>
