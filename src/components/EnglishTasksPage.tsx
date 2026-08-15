@@ -8,6 +8,7 @@ import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContex
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
+import { Collapse } from "@/components/Collapse";
 import {
   DEMO_ENGLISH_FREE_LIMIT,
   englishChaptersForTier,
@@ -211,15 +212,15 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
         <div
           className={cn(
             PRACTICE_BODY_STACK,
-            "lg:flex lg:items-start lg:transition-[gap] lg:duration-300 lg:ease-out",
+            "lg:flex lg:items-start lg:transition-[gap] lg:duration-300 lg:[transition-timing-function:cubic-bezier(0.22,1,0.36,1)]",
             sidebarCollapsed ? "lg:gap-0" : "lg:gap-6",
           )}
         >
           <aside
             className={cn(
-              "mb-6 w-full shrink-0 transition-[width,opacity,transform] duration-300 ease-out lg:sticky lg:top-20 lg:mb-0 lg:block lg:h-[calc(100vh-6rem)] lg:overflow-hidden",
+              "mb-6 w-full shrink-0 transition-[width,opacity,transform] duration-300 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] lg:sticky lg:top-20 lg:mb-0 lg:block lg:h-[calc(100vh-6rem)] lg:overflow-hidden lg:will-change-[width,transform]",
               sidebarCollapsed
-                ? "hidden lg:pointer-events-none lg:block lg:w-0 lg:-translate-x-5 lg:opacity-0"
+                ? "hidden lg:pointer-events-none lg:block lg:w-0 lg:-translate-x-4 lg:opacity-0"
                 : "lg:w-80 lg:translate-x-0 lg:opacity-100 2xl:w-96",
             )}
             aria-hidden={sidebarCollapsed}
@@ -239,7 +240,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                   </button>
                 </div>
 
-                <ul className="min-h-0 flex-1 space-y-1 overflow-y-auto overscroll-contain pr-1">
+                <ul className="practice-scroll min-h-0 flex-1 space-y-1 overflow-y-auto overscroll-contain pr-1">
                   {chapters.map((ch) => {
                     const list = byChapter.get(ch.key) ?? [];
                     const done = list.filter((c) => progress.passed.includes(c.id)).length;
@@ -296,15 +297,8 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                             <RotateCcw className="h-3.5 w-3.5" />
                           </button>
                         </div>
-                          <ul
-                            className={cn(
-                              "origin-top overflow-hidden border-t py-1 transition-[max-height,opacity,transform,border-color] duration-300 ease-out",
-                              isOpen
-                                ? "max-h-[180rem] translate-y-0 border-border/60 opacity-100"
-                                : "pointer-events-none max-h-0 -translate-y-2 border-transparent py-0 opacity-0",
-                            )}
-                            aria-hidden={!isOpen}
-                          >
+                        <Collapse open={isOpen}>
+                          <ul className="border-t border-border/60 py-1">
                             {list.length === 0 && (
                               <li className="px-4 py-2 text-[11px] text-muted-foreground">
                                 No tasks yet.
@@ -352,15 +346,8 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                                           total={subTasks.length}
                                         />
                                       </button>
-                                        <ul
-                                          className={cn(
-                                            "origin-top overflow-hidden transition-[max-height,opacity,transform] duration-300 ease-out",
-                                            subOpen
-                                              ? "max-h-[100rem] translate-y-0 pb-1 opacity-100"
-                                              : "pointer-events-none max-h-0 -translate-y-2 pb-0 opacity-0",
-                                          )}
-                                          aria-hidden={!subOpen}
-                                        >
+                                      <Collapse open={subOpen}>
+                                        <ul className="pb-1">
                                           {subTasks.map(({ c, i }, localI) => {
                                             const passed = progress.passed.includes(c.id);
                                             const rev = progress.revision.includes(c.id);
@@ -451,6 +438,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                                             );
                                           })}
                                         </ul>
+                                      </Collapse>
                                     </li>
                                   );
                                 })
@@ -516,6 +504,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                                   );
                                 })}
                           </ul>
+                        </Collapse>
                       </li>
                     );
                   })}
@@ -621,7 +610,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
             ) : isTextsCase && activeCase ? (
               <div
                 key={activeCase.id}
-                className="practice-panel-enter lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)]"
+                className="practice-fade-in lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)]"
               >
                 <ReadingPanel
                   passage={activePassage}
@@ -718,7 +707,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                 onClose={() => setShowExplanations(false)}
               />
             ) : isTextsCase && activeCase && !isLocked(tier, activeIdx) ? (
-              <div className="flex h-full flex-col gap-4 overflow-y-auto overscroll-contain pr-1">
+              <div className="practice-scroll flex h-full flex-col gap-4 overflow-y-auto overscroll-contain pr-1">
                 <CaseCard
                   key={activeCase.id}
                   data={activeCase}
@@ -1171,7 +1160,7 @@ function AllExplanationsPanel({
   const letters = "ABCDE";
 
   return (
-    <div className="practice-panel-enter flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+    <div className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
       <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
         <div className="min-w-0">
           <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
@@ -1187,7 +1176,7 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
+      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
         {task.solution_overview?.trim() && (
           <section className="mb-8 border-b border-border/60 pb-7">
             <p className="mb-3 text-[12px] font-bold uppercase tracking-widest text-foreground">
@@ -1358,7 +1347,7 @@ function ReadingPanel({
             <BookOpen className="h-3.5 w-3.5" /> Reading Text
           </span>
         </div>
-        <div className="h-[calc(100%-2.25rem)] overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
+        <div className="practice-scroll h-[calc(100%-2.25rem)] overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
           <AnnotatablePassage
             passage={passage}
             storageKey={storageKey}
@@ -1421,7 +1410,7 @@ function GrammarExplanationPanel({
       )}
 
       {explanation && (
-        <div className="min-h-0 flex-1 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm">
+        <div className="practice-fade-in practice-scroll min-h-0 flex-1 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm">
           <div className="mb-3 flex items-center gap-2">
             <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
               Statement {explanation.statementIndex + 1}

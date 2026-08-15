@@ -342,7 +342,7 @@ body.flashcard-swiping {
 @keyframes practice-panel-enter {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
@@ -350,12 +350,59 @@ body.flashcard-swiping {
   }
 }
 
+@keyframes practice-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .practice-panel-enter {
-  animation: practice-panel-enter 300ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: practice-panel-enter 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Panels that own a scroll area: fading only, so no transient scrollbar appears. */
+.practice-fade-in {
+  animation: practice-fade-in 260ms ease-out both;
+}
+
+/* Reserve the scrollbar track so it cannot flicker the layout while content changes. */
+.practice-scroll {
+  scrollbar-gutter: stable;
+}
+
+/*
+ * Collapsible rows animate through grid-template-rows, which resolves to the real
+ * content height instead of a guessed max-height.
+ */
+.collapse-grid {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 220ms ease-out;
+}
+
+.collapse-grid > * {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.collapse-grid.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .practice-panel-enter {
+  .practice-panel-enter,
+  .practice-fade-in {
     animation: none;
+  }
+
+  .collapse-grid {
+    transition: none;
   }
 }
