@@ -1,9 +1,10 @@
 /**
  * Mathematics Full Course theory for TheoryReader.
- * Chapter 13 (Binomial distribution) is populated; other chapters can be added later.
+ * Full Course mathematics theory chapters rendered by TheoryReader.
  * (sync marker for Lovable GitHub pull)
  */
 
+import ch5 from "./math-theory/ch5.md?raw";
 import ch13 from "./math-theory/ch13.md?raw";
 
 export type MathCourseTheoryChapter = {
@@ -16,6 +17,11 @@ export type MathCourseTheoryChapter = {
 };
 
 export const MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = {
+  5: {
+    num: 5,
+    title: "Linear equations in two unknowns",
+    markdown: ch5,
+  },
   13: {
     num: 13,
     title: "Binomial distribution",
