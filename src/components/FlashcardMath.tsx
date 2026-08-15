@@ -182,6 +182,8 @@ function looksLikeMathInner(inner: string): boolean {
   if (/[=<>≠≤≥+×·\-/^\\()_]/.test(t) && /[A-Za-z0-9]/.test(t)) return true;
   // Bare answers like $360$
   if (/^[+\-]?\d+(?:\.\d+)?$/.test(t)) return true;
+  // Bare math identifiers: $p$, $n$, $k$, $X$, $p_A$, $\lambda$
+  if (/^(?:\\[A-Za-z]+|[A-Za-z])(?:_[A-Za-z0-9]+)?$/.test(t)) return true;
   // Short algebraic chunks (3x+2y, 160y)
   if (
     t.length <= 48 &&
