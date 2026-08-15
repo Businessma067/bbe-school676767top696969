@@ -1,0 +1,17 @@
+---
+description: BBE site theory writing style — mention or apply when creating/editing chapter theory markdown
+globs: src/data/math-theory/**/*.md,src/data/economics-theory/**/*.md,src/data/*-course-theory.ts
+alwaysApply: false
+---
+
+# BBE theory writing
+
+When writing or rewriting Full Course theory markdown, follow **`scripts/bbe-theory-writing-memory.md`** as the single source of truth for structure, voice, examples, and scope.
+
+Hard rules:
+
+- One shared format across chapters so students are not confused.
+- Only topics that exist on the live chapter map; do not invent extra sections.
+- Gold-standard tone/structure: `src/data/math-theory/ch13.md`.
+- Human tutor voice; few em-dashes; no AI filler.
+- Register new math chapters in `src/data/math-course-theory.ts`.
