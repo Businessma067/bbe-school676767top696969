@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """
-Regenerate binomial tactical_explanations with full financial-math depth:
-situation → formula + why → plug-in every number → conclusion.
-Answer lines use: 1. "True" / 2. "False" (1-based statement index).
+Rewrite binomial explanations in natural tutoring style.
+
+- solution_overview: situation once per task
+- each tactical_explanation: **A.** statement → True/False, then flowing prose
+- no Step/Why/Conclusion headings
+- for tails, expand every binomial term before adding
+- derive the formula in words first, then plug numbers into KaTeX
 """
 from __future__ import annotations
 
@@ -14,110 +18,63 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PATH = ROOT / "src" / "data" / "math-cases-ch13-binomial.json"
+LETTERS = "ABCDEF"
 
 
 def binom_pmf(n: int, p: float, k: int) -> float:
     return comb(n, k) * (p**k) * ((1 - p) ** (n - k))
 
 
-def binom_cdf(n: int, p: float, k: int) -> float:
-    return sum(binom_pmf(n, p, i) for i in range(k + 1))
-
-
 def binom_sf_ge(n: int, p: float, k: int) -> float:
-    """P(X >= k)."""
     return sum(binom_pmf(n, p, i) for i in range(k, n + 1))
 
 
-def fmt_num(x: float) -> str:
-    """Format a number for use *inside* KaTeX $...$ / $$...$$."""
-    if x != x:  # NaN
+def fmt(x: float, digits: int = 4) -> str:
+    """Plain number for KaTeX interiors."""
+    if x != x:
         return "\\mathrm{undefined}"
     if abs(x) == float("inf"):
         return "\\infty"
-    if abs(x - round(x)) < 1e-12 and abs(x) < 1e15:
+    if abs(x - round(x)) < 1e-12 and abs(x) < 1e12:
         return str(int(round(x)))
     ax = abs(x)
-    if ax != 0 and (ax < 1e-3 or ax >= 1e6):
-        s = f"{x:.6e}"
-        base, exp = s.split("e")
-        base = base.rstrip("0").rstrip(".")
-        return f"{base} \\times 10^{{{int(exp)}}}"
-    out = f"{x:.10g}"
-    return out
+    if ax != 0 and ax < 1e-4:
+        s = f"{x:.4e}"
+        b, e = s.split("e")
+        b = b.rstrip("0").rstrip(".")
+        return f"{b} \\times 10^{{{int(e)}}}"
+    s = f"{x:.{digits}f}".rstrip("0").rstrip(".")
+    return s
 
 
-def fmt_prob(x: float, pct: bool = False) -> str:
-    """Probability for KaTeX; if pct, return value already including \\%."""
-    if pct:
-        return fmt_num(100 * x) + "\\%"
-    return fmt_num(x)
+def pct(x: float, digits: int = 2) -> str:
+    return f"{fmt(100 * x, digits)}\\%"
 
 
 def extract_two_person(ctx: str) -> dict | None:
-    """Extract n, pA, pB, and optional 'at least k' threshold from a two-arm scenario."""
-    # n candidates
     n = None
     for pat in [
         r"\b(\d+)\s*[- ]question",
         r"\b(\d+)\s*free throws",
-        r"\b(\d+)\s*items",
-        r"\b(\d+)\s*calls",
-        r"\b(\d+)\s*seeds",
-        r"\b(\d+)\s*bags",
-        r"\b(\d+)\s*arrows",
-        r"\b(\d+)\s*customers",
-        r"\b(\d+)\s*emails",
-        r"\b(\d+)\s*days",
-        r"\b(\d+)\s*units",
-        r"\b(\d+)\s*samples",
-        r"\b(\d+)\s*attacks",
-        r"\b(\d+)\s*procedures",
-        r"\b(\d+)\s*transactions",
-        r"\b(\d+)\s*tickets",
-        r"\b(\d+)\s*trials",
-        r"\b(\d+)\s*scenarios",
-        r"\b(\d+)\s*pastries",
-        r"\b(\d+)\s*test cases",
-        r"\b(\d+)\s*scans",
-        r"\b(\d+)\s*essays",
+        r"\b(\d+)\s*(?:items|calls|seeds|bags|arrows|customers|emails|days|units|samples|attacks|procedures|transactions|tickets|trials|scenarios|pastries|essays|lines|shots|throws|components)",
         r"out of\s+(\d+)",
         r"batches of\s+(\d+)",
         r"batch of\s+(\d+)",
-        r"each finish a batch of\s+(\d+)",
-        r"each make\s+(\d+)",
-        r"each answer\s+(\d+)",
-        r"each perform\s+(\d+)",
-        r"each complete\s+(\d+)",
-        r"each attempt\s+(\d+)",
-        r"each shoot\s+(\d+)",
-        r"runs\s+(\d+)",
-        r"has\s+(\d+)\s*scans",
-        r"reviews?\s+(\d+)",
-        r"screens?\s+(\d+)",
-        r"inspects?\s+(\d+)",
-        r"across\s+(\d+)",
-        r"score\s+(\d+)",
-        r"produces\s+(\d+)",
-        r"makes\s+(\d+)\s*units",
-        r"on\s+(\d+)\s*known",
-        r"with\s+(\d+)\s*",
-        r"of\s+(\d+)\s*(?:items|calls|seeds|bags|arrows|customers|emails|days|units|samples|attacks|procedures|transactions|tickets|trials|scenarios|pastries|essays|lines|questions|shots|throws)",
+        r"each (?:finish a batch of|make|answer|perform|complete|attempt|shoot)\s+(\d+)",
+        r"(?:runs|reviews?|screens?|inspects?|across|score|produces|has)\s+(\d+)",
+        r"of\s+(\d+)\s",
     ]:
         m = re.search(pat, ctx, re.I)
         if m:
             n = int(m.group(1))
             break
-
     ps = [float(x) for x in re.findall(r"p\s*=\s*(0?\.\d+)", ctx, flags=re.I)]
     if len(ps) < 2:
-        # also "probability of 0.xx"
         ps2 = [float(x) for x in re.findall(r"probability(?:\s+of)?\s*(0?\.\d+)", ctx, flags=re.I)]
-        if len(ps2) >= 2 and len(ps) < 2:
+        if len(ps2) >= 2:
             ps = ps2
     if n is None or len(ps) < 2:
         return None
-
     k = None
     mk = re.search(r"at least\s+(\d+)", ctx, re.I)
     if mk:
@@ -126,18 +83,15 @@ def extract_two_person(ctx: str) -> dict | None:
 
 
 def extract_single(ctx: str) -> dict | None:
-    """Single binomial / rare-event setup: n and p (and maybe lambda)."""
     ps = [float(x) for x in re.findall(r"(?:p|probability)\s*=\s*(0?\.\d+)", ctx, flags=re.I)]
     if not ps:
         ps = [float(x) for x in re.findall(r"with probability\s*(0?\.\d+)", ctx, flags=re.I)]
-    # Prefer explicit counts with thousand separators: 1,800 / 2,500 / 9,000
     n = None
     m = re.search(r"\b(\d{1,3}(?:,\d{3})+)\b", ctx)
     if m:
         n = int(m.group(1).replace(",", ""))
     if n is None:
-        ns = re.findall(r"\b(\d{2,5})\b", ctx)
-        for cand in ns:
+        for cand in re.findall(r"\b(\d{2,5})\b", ctx):
             v = int(cand)
             if v >= 10:
                 n = v
@@ -147,475 +101,59 @@ def extract_single(ctx: str) -> dict | None:
     return {"n": n, "p": ps[0]}
 
 
-def verdict_line(i: int, is_true: bool) -> str:
-    label = "True" if is_true else "False"
-    return f'{i + 1}. "{label}"'
+def clean_ctx(ctx: str) -> str:
+    return re.sub(r"\s*Evaluate each statement\. Mark it TRUE or FALSE\.\s*$", "", ctx).strip()
 
 
-def strip_old_verdict(text: str) -> str:
-    return re.sub(r"^(TRUE|FALSE)\s*[—–-]\s*", "", text.strip(), flags=re.I | re.S)
-
-
-def situation_blurb(ctx: str, params: dict | None) -> str:
-    core = re.sub(r"\s*Evaluate each statement\. Mark it TRUE or FALSE\.\s*$", "", ctx).strip()
+def overview_text(ctx: str, params: dict | None) -> str:
+    core = clean_ctx(ctx)
     if params and "pA" in params:
-        return (
-            f"In this problem we have a binomial setting with $n = {params['n']}$ independent trials. "
-            f"Side A has success probability $p_A = {fmt_num(params['pA'])}$, and side B has "
-            f"$p_B = {fmt_num(params['pB'])}$. "
-            + (
-                f"A success threshold of at least $k = {params['k']}$ successes is used in the scenario. "
-                if params.get("k") is not None
-                else ""
+        bits = [
+            core,
+            "",
+            f"We model each side as a binomial count with $n = {params['n']}$ independent trials: "
+            f"side A has success probability $p_A = {fmt(params['pA'], 4)}$, "
+            f"side B has $p_B = {fmt(params['pB'], 4)}$.",
+        ]
+        if params.get("k") is not None:
+            bits.append(
+                f"The scenario’s success cutoff is at least $k = {params['k']}$ successes out of $n = {params['n']}$."
             )
-            + f"Original wording: {core}"
-        )
+        return "\n\n".join(bits)
     if params and "p" in params:
         return (
-            f"Here $X$ counts successes in $n = {params['n']}$ independent Bernoulli trials with "
-            f"success probability $p = {fmt_num(params['p'])}$. "
-            f"Original wording: {core}"
+            f"{core}\n\n"
+            f"Let $X \\sim \\mathrm{{Bin}}(n,p)$ with $n = {params['n']}$ and $p = {fmt(params['p'], 6)}$."
         )
-    return f"Original wording: {core}"
+    return core
 
 
-def expl_sum_notation(i: int, is_true: bool, stmt: str, params: dict | None, ctx: str) -> str:
-    # Parse bounds from statement
-    m = re.search(
-        r"sum,\s*from\s*x\s*=\s*(\d+)\s*to\s*(\d+).*?n\s*=\s*(\d+)\s*and\s*p\s*=\s*(0?\.\d+)",
-        stmt,
-        re.I | re.S,
+def header(letter: str, stmt: str, is_true: bool) -> str:
+    verdict = "True" if is_true else "False"
+    # Keep statement outside math; escape stray $ that aren't intentional (none expected in stmts)
+    stmt_clean = stmt.replace("$", "")
+    return f"**{letter}.** {stmt_clean} → {verdict}"
+
+
+def expand_tail_terms(n: int, p: float, k: int, who: str) -> tuple[str, float]:
+    """Return prose+math expanding every term of P(X>=k), and the total."""
+    q = 1 - p
+    parts = [f"{who} ($p = {fmt(p, 4)}$):", ""]
+    vals = []
+    for x in range(k, n + 1):
+        v = binom_pmf(n, p, x)
+        vals.append(v)
+        parts.append(
+            f"$$\\binom{{{n}}}{{{x}}}({fmt(p, 4)})^{{{x}}}({fmt(q, 4)})^{{{n - x}}} \\approx {fmt(v, 4)}$$"
+        )
+        parts.append("")
+    total = sum(vals)
+    add = " + ".join(fmt(v, 4) for v in vals)
+    parts.append(
+        f"Adding the mutually exclusive pieces:\n\n"
+        f"$$P(X \\ge {k}) \\approx {add} = {fmt(total, 4)} \\approx {pct(total)}$$"
     )
-    if not m:
-        m = re.search(
-            r"from\s*x\s*=\s*(\d+)\s*to\s*(\d+).*?n\s*=\s*(\d+)\s*and\s*p\s*=\s*(0?\.\d+)",
-            stmt,
-            re.I | re.S,
-        )
-    lines = [verdict_line(i, is_true), ""]
-    lines.append("Situation:")
-    lines.append(situation_blurb(ctx, params))
-    lines.append("")
-    lines.append("Formula to use:")
-    lines.append("")
-    lines.append("$$P(X \\ge k)=\\sum_{x=k}^{n}\\binom{n}{x}p^{x}(1-p)^{n-x}$$")
-    lines.append("")
-    lines.append(
-        "Why: the phrase “at least $k$ successes out of $n$ trials” means the mutually exclusive "
-        "outcomes $X = k, k+1, \\ldots, n$. By the addition rule for mutually exclusive events, "
-        "their probabilities add. Each term uses the binomial PMF because we have a fixed number of "
-        "independent Bernoulli trials with constant success probability $p$."
-    )
-    lines.append("")
-    lines.append("Step-by-step calculation:")
-    if m:
-        lo, hi, n, p = int(m.group(1)), int(m.group(2)), int(m.group(3)), float(m.group(4))
-        lines.append(f"Step 1: Read the claim’s sum bounds and parameters: $x$ runs from ${lo}$ to ${hi}$, with $n = {n}$ and $p = {fmt_num(p)}$.")
-        lines.append(
-            f"Step 2: Match the English “at least {lo} of {hi if hi!=n else n}” (or the stated threshold) to the mathematical range "
-            f"$X = {lo}, {lo+1}, \\ldots, {hi}$."
-        )
-        lines.append(
-            f"Step 3: Write the probability explicitly:\n\n"
-            f"$$P(X \\ge {lo})=\\sum_{{x={lo}}}^{{{hi}}}\\binom{{{n}}}{{x}}({fmt_num(p)})^{{x}}(1-{fmt_num(p)})^{{{n}-x}}$$"
-        )
-        lines.append(
-            f"Step 4: Check that the claimed sum uses exactly these bounds and the correct $(n,p)$. "
-            f"It does{'' if is_true else ' not'} — so the statement is {'true' if is_true else 'false'}."
-        )
-    else:
-        lines.append("Step 1: Identify the threshold $k$ and the total $n$ from the scenario.")
-        lines.append("Step 2: Translate “at least $k$ out of $n$” into $\\sum_{x=k}^{n} P(X=x)$.")
-        lines.append("Step 3: Verify that the statement’s written sum starts at $k$ and ends at $n$ with the stated $p$.")
-        lines.append(f"Step 4: The notation {'matches' if is_true else 'does not match'}, so the statement is {'true' if is_true else 'false'}.")
-    lines.append("")
-    lines.append("Conclusion:")
-    lines.append(
-        "This is a translation check, not a numerical one: if the sum’s start, end, $n$, and $p$ all match the English claim, "
-        f"mark it true; otherwise mark it false. Here the answer is {('True' if is_true else 'False')}."
-    )
-    return "\n".join(lines)
-
-
-def expl_perfect(i: int, is_true: bool, stmt: str, params: dict | None, ctx: str, old: str) -> str:
-    # Whose p?
-    side = "B"
-    p = None
-    n = None
-    if params and "pB" in params:
-        n = params["n"]
-        # detect A or B from statement
-        if re.search(r"\bA\b|'s|\bBatch A\b|\bKit A\b|\bPlayer A\b|\bPerson A\b|\bAgent A\b|\bStaff A\b|\bInspector A\b|\bArcher A\b|\bTypist A\b|\bMeteorologist A\b|\bScreener A\b|\bWorker A\b|\bGrader A\b|\bController A\b|\bBaker A\b|\bTester A\b|\bRadiologist A\b|\bTech A\b|\bRep A\b|\bStudent A\b|\bSurgeon A\b|\bLine A\b|\bTeam A\b|\bCheck A\b|\bFactory A\b|\bRestaurant A\b|\bSeed Batch A\b", stmt):
-            if re.search(r"Player B|Person B|Agent B|Staff B|Inspector B|Archer B|Batch B|Kit B|Typist B|Meteorologist B|Screener B|Worker B|Grader B|Controller B|Baker B|Tester B|Radiologist B|Tech B|Rep B|Student B|Surgeon B|Line B|Team B|Check B|Factory B|Restaurant B|Seed Batch B|all-star|veteran|elite|trained|senior|experienced|established|fresh|newer|certified controller", stmt, re.I) and not re.search(r"\bA\b.*\bB\b", stmt):
-                pass
-        if re.search(r"Player B|Person B|Agent B|Staff B|Inspector B|Archer B|Batch B|Kit B|Typist B|Meteorologist B|Screener B|Worker B|Grader B|Controller B|Baker|Tester B|Radiologist B|Tech B|Rep B|Student B|Surgeon B|Line B|Team B|Check B|Factory B|Restaurant B|Seed Batch B|all-star|veteran|elite|trained|senior|experienced|established|fresh|newer", stmt, re.I):
-            side, p = "B", params["pB"]
-        elif re.search(r"Player A|Person A|Agent A|Staff A|Inspector A|Archer A|Batch A|Kit A|Typist A|Meteorologist A|Screener A|Worker A|Grader A|Controller A|Baker A|Tester A|Radiologist A|Tech A|Rep A|Student A|Surgeon A|Line A|Team A|Check A|Factory A|Restaurant A|Seed Batch A|rookie|trainee|newly|untrained|beginner|old stock|older", stmt, re.I):
-            side, p = "A", params["pA"]
-        else:
-            # default: often B for "perfect" high-p claims, A for tiny perfect claims
-            if "less than" in stmt.lower():
-                side, p = "A", params["pA"]
-            else:
-                side, p = "B", params["pB"]
-    elif params and "p" in params:
-        n, p, side = params["n"], params["p"], ""
-
-    # threshold from statement
-    thr_m = re.search(
-        r"(?:less than|greater than|more than|below|above|under|over)\s+(?:a\s+)?([\d.]+)\s*%",
-        stmt,
-        re.I,
-    )
-    thr_pct = float(thr_m.group(1)) if thr_m else None
-
-    lines = [verdict_line(i, is_true), ""]
-    lines.append("Situation:")
-    lines.append(situation_blurb(ctx, params))
-    lines.append("")
-    lines.append("Formula to use:")
-    lines.append("")
-    lines.append("$$P(X=n)=p^{n}$$")
-    lines.append("")
-    lines.append(
-        "Why: a “perfect run” / “all $n$ successes” means every trial succeeds. "
-        "Independence lets us multiply the success probability across all $n$ trials, "
-        "which is the same as the binomial PMF at $k=n$:\n\n"
-        "$$P(X=n)=\\binom{n}{n}p^{n}(1-p)^{0}=p^{n}$$"
-    )
-    lines.append("")
-    lines.append("Step-by-step calculation:")
-    if n is not None and p is not None:
-        val = p**n
-        lines.append(f"Step 1: Identify the success probability for the relevant side: $p = {fmt_num(p)}$, and the number of trials $n = {n}$.")
-        lines.append(f"Step 2: Substitute into the perfect-run formula:\n\n$$P(X={n})=({fmt_num(p)})^{{{n}}}$$")
-        lines.append(
-            f"Step 3: Evaluate the power:\n\n"
-            f"$$({fmt_num(p)})^{{{n}}} = {fmt_num(val)}$$\n\n"
-            f"As a percentage: ${fmt_num(100*val)}\\%$ "
-            f"(equivalently about ${fmt_prob(val, pct=True)}$ of outcomes)."
-        )
-        if thr_pct is not None:
-            val_pct = 100 * val
-            lines.append(
-                f"Step 4: Compare with the claimed threshold ${fmt_num(thr_pct)}\\%$. "
-                f"We obtained about ${fmt_num(val_pct)}\\%$, which is "
-                f"{'below' if val_pct < thr_pct else 'above'} the threshold."
-            )
-            lines.append(
-                f"Step 5: The statement asserts a direction relative to ${fmt_num(thr_pct)}\\%$. "
-                f"That assertion is {'correct' if is_true else 'incorrect'}, so the answer is {('True' if is_true else 'False')}."
-            )
-        else:
-            lines.append(f"Step 4: Interpret the numerical result in the statement’s claimed comparison. The claim is {'correct' if is_true else 'incorrect'}.")
-    else:
-        # fallback to old numbers wrapped
-        body = strip_old_verdict(old).split("\n\n")[0]
-        lines.append(f"Step 1–3: Compute $p^n$ for the relevant person/item. {body}")
-        lines.append(f"Step 4: Compare with the statement’s threshold. The claim is {'correct' if is_true else 'incorrect'}.")
-    lines.append("")
-    lines.append("Conclusion:")
-    lines.append(
-        f"After substituting the given $p$ and $n$ into $P(X=n)=p^n$ and comparing with the stated cutoff, "
-        f"the statement is {('True' if is_true else 'False')}."
-    )
-    return "\n".join(lines)
-
-
-def expl_variance(i: int, is_true: bool, stmt: str, params: dict | None, ctx: str) -> str:
-    lines = [verdict_line(i, is_true), ""]
-    lines.append("Situation:")
-    lines.append(situation_blurb(ctx, params))
-    lines.append("")
-    lines.append("Formula to use:")
-    lines.append("")
-    lines.append("$$\\mathrm{Var}(X)=np(1-p)$$")
-    lines.append("")
-    lines.append(
-        "Why: if $X\\sim\\mathrm{Bin}(n,p)$, then $X$ is the sum of $n$ i.i.d. Bernoulli($p$) indicators. "
-        "Each indicator has variance $p(1-p)$, and variances of independent summands add, giving $np(1-p)$. "
-        "Variance is largest when $p$ is closest to $1/2$."
-    )
-    lines.append("")
-    lines.append("Step-by-step calculation:")
-    if params and "pA" in params:
-        n, pA, pB = params["n"], params["pA"], params["pB"]
-        vA = n * pA * (1 - pA)
-        vB = n * pB * (1 - pB)
-        lines.append(f"Step 1: Write both parameters: $n = {n}$, $p_A = {fmt_num(pA)}$, $p_B = {fmt_num(pB)}$.")
-        lines.append(
-            f"Step 2: Compute side A’s variance:\n\n"
-            f"$$\\mathrm{{Var}}(A)= {n}\\cdot {fmt_num(pA)}\\cdot {fmt_num(1-pA)} = {fmt_num(vA)}$$"
-        )
-        lines.append(
-            f"Step 3: Compute side B’s variance:\n\n"
-            f"$$\\mathrm{{Var}}(B)= {n}\\cdot {fmt_num(pB)}\\cdot {fmt_num(1-pB)} = {fmt_num(vB)}$$"
-        )
-        if "times" in stmt.lower() or "triple" in stmt.lower() or "double" in stmt.lower() or "more than" in stmt.lower():
-            ratio = vA / vB if vB else float("inf")
-            lines.append(
-                f"Step 4: Form the ratio required by the claim:\n\n"
-                f"$$\\frac{{\\mathrm{{Var}}(A)}}{{\\mathrm{{Var}}(B)}} = \\frac{{{fmt_num(vA)}}}{{{fmt_num(vB)}}} \\approx {fmt_num(ratio)}$$"
-            )
-            lines.append(
-                f"Step 5: Compare this ratio (or the two variances) with the statement’s threshold. "
-                f"The claim is {'satisfied' if is_true else 'not satisfied'}."
-            )
-        else:
-            lines.append(
-                f"Step 4: Compare $\\mathrm{{Var}}(A)={fmt_num(vA)}$ with $\\mathrm{{Var}}(B)={fmt_num(vB)}$. "
-                f"The larger variance belongs to the side whose $p$ is closer to $0.5$."
-            )
-            lines.append(f"Step 5: The statement’s comparison is {'correct' if is_true else 'incorrect'}.")
-    else:
-        lines.append("Step 1: Identify $n$ and $p$ for each distribution in the claim.")
-        lines.append("Step 2: Evaluate $np(1-p)$ for each side.")
-        lines.append("Step 3: Compare variances (or their ratio) with the claimed inequality.")
-    lines.append("")
-    lines.append("Conclusion:")
-    lines.append(f"Using $\\mathrm{{Var}}(X)=np(1-p)$ with the given numbers, the statement is {('True' if is_true else 'False')}.")
-    return "\n".join(lines)
-
-
-def expl_sd(i: int, is_true: bool, stmt: str, params: dict | None, ctx: str) -> str:
-    lines = [verdict_line(i, is_true), ""]
-    lines.append("Situation:")
-    lines.append(situation_blurb(ctx, params))
-    lines.append("")
-    lines.append("Formula to use:")
-    lines.append("")
-    lines.append("$$\\mathrm{SD}(X)=\\sqrt{\\mathrm{Var}(X)}=\\sqrt{np(1-p)}$$")
-    lines.append("")
-    lines.append(
-        "Why: the standard deviation is the positive square root of the variance. "
-        "For a binomial count it is therefore $\\sqrt{np(1-p)}$. Like variance, it is larger when $p$ is closer to $1/2$."
-    )
-    lines.append("")
-    lines.append("Step-by-step calculation:")
-    if params and "pA" in params:
-        n, pA, pB = params["n"], params["pA"], params["pB"]
-        vA, vB = n * pA * (1 - pA), n * pB * (1 - pB)
-        sA, sB = math.sqrt(vA), math.sqrt(vB)
-        lines.append(f"Step 1: List $n = {n}$, $p_A = {fmt_num(pA)}$, $p_B = {fmt_num(pB)}$.")
-        lines.append(
-            f"Step 2: Variance then SD for A:\n\n"
-            f"$$\\mathrm{{Var}}(A)={fmt_num(vA)},\\qquad \\mathrm{{SD}}(A)=\\sqrt{{{fmt_num(vA)}}}\\approx {fmt_num(sA)}$$"
-        )
-        lines.append(
-            f"Step 3: Variance then SD for B:\n\n"
-            f"$$\\mathrm{{Var}}(B)={fmt_num(vB)},\\qquad \\mathrm{{SD}}(B)=\\sqrt{{{fmt_num(vB)}}}\\approx {fmt_num(sB)}$$"
-        )
-        if "times" in stmt.lower() or "double" in stmt.lower() or "triple" in stmt.lower() or "more than" in stmt.lower():
-            ratio = sA / sB if sB else float("inf")
-            lines.append(
-                f"Step 4: Ratio of standard deviations:\n\n"
-                f"$$\\frac{{\\mathrm{{SD}}(A)}}{{\\mathrm{{SD}}(B)}}\\approx \\frac{{{fmt_num(sA)}}}{{{fmt_num(sB)}}}\\approx {fmt_num(ratio)}$$"
-            )
-            lines.append(f"Step 5: Compare with the claim. The claim is {'met' if is_true else 'not met'}.")
-        else:
-            lines.append(
-                f"Step 4: Compare $\\mathrm{{SD}}(A)\\approx {fmt_num(sA)}$ with $\\mathrm{{SD}}(B)\\approx {fmt_num(sB)}$."
-            )
-            lines.append(f"Step 5: The statement is {'correct' if is_true else 'incorrect'}.")
-    else:
-        lines.append("Step 1: Compute $np(1-p)$ for each side.")
-        lines.append("Step 2: Take square roots to get the SDs.")
-        lines.append("Step 3: Compare with the claimed inequality.")
-    lines.append("")
-    lines.append("Conclusion:")
-    lines.append(f"After computing both standard deviations from $\\sqrt{{np(1-p)}}$, the statement is {('True' if is_true else 'False')}.")
-    return "\n".join(lines)
-
-
-def expl_mean(i: int, is_true: bool, stmt: str, params: dict | None, ctx: str) -> str:
-    lines = [verdict_line(i, is_true), ""]
-    lines.append("Situation:")
-    lines.append(situation_blurb(ctx, params))
-    lines.append("")
-    lines.append("Formula to use:")
-    lines.append("")
-    lines.append("$$E[X]=np$$")
-    lines.append("")
-    lines.append(
-        "Why: the mean of a binomial random variable is the number of trials times the success probability. "
-        "Equivalently, $E[X]=E[I_1+\\cdots+I_n]=np$ for Bernoulli indicators $I_j$."
-    )
-    lines.append("")
-    lines.append("Step-by-step calculation:")
-    if params and "pA" in params:
-        n, pA, pB = params["n"], params["pA"], params["pB"]
-        mA, mB = n * pA, n * pB
-        lines.append(f"Step 1: Identify $n = {n}$, $p_A = {fmt_num(pA)}$, $p_B = {fmt_num(pB)}$.")
-        lines.append(f"Step 2: Mean for A:\n\n$$E[A]={n}\\cdot {fmt_num(pA)}={fmt_num(mA)}$$")
-        lines.append(f"Step 3: Mean for B:\n\n$$E[B]={n}\\cdot {fmt_num(pB)}={fmt_num(mB)}$$")
-        lines.append(f"Step 4: Difference $E[B]-E[A]={fmt_num(mB-mA)}$, and ratio $E[B]/E[A]={fmt_num(mB/mA) if mA else 'undefined'}$.")
-        if "percent" in stmt.lower() or "%" in stmt:
-            pct_inc = 100 * (mB / mA - 1) if mA else float("inf")
-            lines.append(f"Step 5: Percent increase of B over A:\n\n$$100\\cdot\\left(\\frac{{E[B]}}{{E[A]}}-1\\right)\\approx {fmt_num(pct_inc)}\\%$$")
-            lines.append(f"Step 6: Compare with the claim. The claim is {'true' if is_true else 'false'}.")
-        elif "double" in stmt.lower() or "twice" in stmt.lower():
-            lines.append(f"Step 5: Check whether $E[B]$ is more than double $E[A]$: ratio $\\approx {fmt_num(mB/mA) if mA else 0}$.")
-            lines.append(f"Step 6: The claim is {'true' if is_true else 'false'}.")
-        elif "more than" in stmt.lower() or "at least" in stmt.lower() or "exactly" in stmt.lower() or "exceeds" in stmt.lower() or "higher" in stmt.lower() or "below" in stmt.lower() or "does not meet" in stmt.lower() or "one-fourth" in stmt.lower() or "threshold" in stmt.lower():
-            lines.append(f"Step 5: Compare the computed mean(s) with the numerical claim in the statement.")
-            lines.append(f"Step 6: The claim is {'true' if is_true else 'false'}.")
-        else:
-            lines.append(f"Step 5: Match the computed values to the statement. The claim is {'true' if is_true else 'false'}.")
-    elif params and "p" in params:
-        n, p = params["n"], params["p"]
-        lines.append(f"Step 1: $n={n}$, $p={fmt_num(p)}$.")
-        lines.append(f"Step 2: $E[X]={n}\\cdot{fmt_num(p)}={fmt_num(n*p)}$.")
-        lines.append(f"Step 3: Compare with the claim → {('True' if is_true else 'False')}.")
-    else:
-        lines.append("Step 1: Compute $np$ for each relevant distribution.")
-        lines.append("Step 2: Form the difference, ratio, or comparison required by the statement.")
-        lines.append(f"Step 3: Decide {('True' if is_true else 'False')}.")
-    lines.append("")
-    lines.append("Conclusion:")
-    lines.append(f"Using $E[X]=np$ and the arithmetic above, the statement is {('True' if is_true else 'False')}.")
-    return "\n".join(lines)
-
-
-def expl_ratio(i: int, is_true: bool, stmt: str, params: dict | None, ctx: str, old: str) -> str:
-    lines = [verdict_line(i, is_true), ""]
-    lines.append("Situation:")
-    lines.append(situation_blurb(ctx, params))
-    lines.append("")
-    lines.append("Formula to use:")
-    lines.append("")
-    lines.append("$$P(X \\ge k)=\\sum_{x=k}^{n}\\binom{n}{x}p^{x}(1-p)^{n-x}$$")
-    lines.append("")
-    lines.append(
-        "Why: “$B$ is $R$ times as likely as $A$ to clear the threshold” means we must compute both "
-        "tail probabilities $P_B(X\\ge k)$ and $P_A(X\\ge k)$ with the binomial PMF, then form the ratio "
-        "$P_B/P_A$ (or the order stated in the claim). Comparing the two success rates $p_B$ and $p_A$ alone is not enough."
-    )
-    lines.append("")
-    lines.append("Step-by-step calculation:")
-    k = params.get("k") if params else None
-    # Threshold k from statement only if it is a count threshold, not "at least 300 times"
-    mk = re.search(r"at least\s+(\d+)\s+(?:of|out of|correct|success|bull|flag|resolve|identify|make|made|satisf|detect|germinat|forecast|line|attack|unit|bag|call|email|day|arrow|throw|shot|scenario|essay|pastr|sample|ticket|trial|component|transaction)", stmt, re.I)
-    if mk:
-        k = int(mk.group(1))
-    if params and "pA" in params and k is not None:
-        n, pA, pB = params["n"], params["pA"], params["pB"]
-        pA_ge = binom_sf_ge(n, pA, k)
-        pB_ge = binom_sf_ge(n, pB, k)
-        a_over_b = bool(
-            re.search(
-                r"\bA\b.*more than .* as likely as.*\bB\b|\bA\b.*more than .* times as likely as",
-                stmt,
-                re.I,
-            )
-        )
-        if a_over_b:
-            ratio = (pA_ge / pB_ge) if pB_ge > 0 else float("inf")
-        else:
-            ratio = (pB_ge / pA_ge) if pA_ge > 0 else float("inf")
-        lines.append(f"Step 1: Fix the shared threshold $k = {k}$ and $n = {n}$ from the scenario (the score/award cutoff, not the multiplier in the claim).")
-        lines.append(
-            f"Step 2: Compute side A’s tail with $p_A={fmt_num(pA)}$:\n\n"
-            f"$$P_A(X\\ge {k})=\\sum_{{x={k}}}^{{{n}}}\\binom{{{n}}}{{x}}({fmt_num(pA)})^{{x}}(1-{fmt_num(pA)})^{{{n}-x}}\\approx {fmt_prob(pA_ge, pct=True)}$$"
-        )
-        lines.append(
-            f"Step 3: Compute side B’s tail with $p_B={fmt_num(pB)}$:\n\n"
-            f"$$P_B(X\\ge {k})=\\sum_{{x={k}}}^{{{n}}}\\binom{{{n}}}{{x}}({fmt_num(pB)})^{{x}}(1-{fmt_num(pB)})^{{{n}-x}}\\approx {fmt_prob(pB_ge, pct=True)}$$"
-        )
-        if a_over_b:
-            lines.append(
-                f"Step 4: Form the ratio in the claim’s order (A relative to B):\n\n"
-                f"$$\\frac{{P_A}}{{P_B}}\\approx {fmt_num(ratio)}$$"
-            )
-        else:
-            lines.append(
-                f"Step 4: Form the ratio in the claim’s order (usually B relative to A):\n\n"
-                f"$$\\frac{{P_B}}{{P_A}}\\approx {fmt_num(ratio)}$$"
-            )
-        thr = re.search(r"(?:more than|at least)\s+([\d,]+)\s+times", stmt, re.I)
-        if thr:
-            tval = float(thr.group(1).replace(",", ""))
-            lines.append(f"Step 5: Compare the ratio with the claimed multiplier ${fmt_num(tval)}$.")
-        lines.append(f"Step 6: The inequality in the statement is {'satisfied' if is_true else 'not satisfied'}.")
-    else:
-        body = strip_old_verdict(old).split("\n\n")[0]
-        lines.append(f"Step 1: Compute both $P(X\\ge k)$ values with the binomial PMF.")
-        lines.append(f"Step 2: Divide them in the order required by the claim. From the worked values: {body}")
-        lines.append(f"Step 3: Compare with the claimed multiplier → {('True' if is_true else 'False')}.")
-    lines.append("")
-    lines.append("Conclusion:")
-    lines.append(
-        f"The likelihood ratio must be computed from the two binomial tails, not from $p_B/p_A$. "
-        f"The statement is {('True' if is_true else 'False')}."
-    )
-    return "\n".join(lines)
-
-
-def expl_generic(i: int, is_true: bool, stmt: str, params: dict | None, ctx: str, old: str) -> str:
-    """Deep wrapper around the PDF explanation for advanced / odd statements."""
-    body = strip_old_verdict(old)
-    # Drop Tip / Key formula sections from old; we'll rebuild structure
-    tip = ""
-    if "\n\nTip:" in body:
-        body, tip = body.split("\n\nTip:", 1)
-        tip = tip.strip()
-    # Remove previous Key formula / Recall blocks to avoid duplication
-    body = re.split(r"\n\n(?:Key formula|Recall)", body)[0].strip()
-
-    lines = [verdict_line(i, is_true), ""]
-    lines.append("Situation:")
-    lines.append(situation_blurb(ctx, params))
-    lines.append("")
-    lines.append("What the statement claims:")
-    lines.append(stmt)
-    lines.append("")
-    lines.append("Formula / rule to use:")
-    lines.append("")
-    low = (stmt + " " + body).lower()
-    if "poisson" in low:
-        lines.append("$$P(X=k)\\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!},\\qquad \\lambda=np$$")
-        lines.append("")
-        lines.append(
-            "Why: when $n$ is large and $p$ is small with $\\lambda=np$ moderate, the binomial distribution "
-            "is well approximated by Poisson($\\lambda$). This is a different rule of thumb from the normal approximation."
-        )
-    elif "normal" in low and "approxim" in low:
-        lines.append("$$X\\approx \\mathcal{N}\\big(np,\\,np(1-p)\\big)$$")
-        lines.append("")
-        lines.append(
-            "Why: for large $n$ with $np$ and $n(1-p)$ both at least about $5$, the binomial is approximately normal. "
-            "For discrete-to-continuous comparisons, apply a continuity correction (e.g. $P(X\\le 1)\\approx P(Y\\le 1.5)$)."
-        )
-    elif "mode" in low:
-        lines.append("The mode of $\\mathrm{Bin}(n,p)$ is $\\lfloor (n+1)p \\rfloor$ (or two adjacent integers when $(n+1)p$ is an integer).")
-        lines.append("")
-        lines.append("Why: the mode is the integer $k$ maximizing $P(X=k)$. Comparing consecutive PMF ratios shows where the mass peaks.")
-    elif "variance" in low or "var(" in low:
-        lines.append("$$\\mathrm{Var}(X)=np(1-p)$$")
-    elif "standard deviation" in low or "sd(" in low:
-        lines.append("$$\\mathrm{SD}(X)=\\sqrt{np(1-p)}$$")
-    elif "mean" in low or "expected" in low:
-        lines.append("$$E[X]=np$$")
-    elif "p(x = 0)" in low or "x = 0" in low or "no " in low[:40]:
-        lines.append("$$P(X=0)=(1-p)^{n}$$")
-    else:
-        lines.append("$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k},\\quad E[X]=np,\\quad \\mathrm{Var}(X)=np(1-p)$$")
-    lines.append("")
-    lines.append("Step-by-step calculation:")
-    lines.append(f"Step 1: Identify every numerical input ($n$, $p$, thresholds, $\\lambda$, etc.) from the scenario.")
-    lines.append(f"Step 2: Substitute into the formula above and evaluate carefully (exact values, not rough estimates).")
-    lines.append(f"Step 3: Worked numerical result from the solution key: {body}")
-    lines.append(f"Step 4: Compare the computed value with every threshold or qualitative claim in the statement.")
-    lines.append(f"Step 5: The statement is therefore {('True' if is_true else 'False')}.")
-    if tip:
-        lines.append("")
-        lines.append(f"Tip: {tip}")
-    lines.append("")
-    lines.append("Conclusion:")
-    lines.append(
-        f"After setting up the correct binomial (or approximating) model, substituting all given numbers, "
-        f"and checking the claimed inequality, the answer is {('True' if is_true else 'False')}."
-    )
-    return "\n".join(lines)
+    return "\n".join(parts).strip(), total
 
 
 def classify(stmt: str) -> str:
@@ -628,39 +166,441 @@ def classify(stmt: str) -> str:
         return "sd"
     if "variance" in s:
         return "variance"
-    if (
-        "perfect" in s
-        or "all " in s
-        or "flawless" in s
-        or "in a row" in s
-        or "completely failing" in s
-        or "x = 0" in s
-        or "x=0" in s
-    ) and "sum" not in s:
-        # zero successes is (1-p)^n — still a "perfect failure" style power
-        if "x = 0" in s or "x=0" in s or "completely failing" in s or "no " in s:
-            return "generic"  # handle via generic with P(X=0)
-        return "perfect"
     if "mean" in s or "expected" in s:
         return "mean"
+    if any(
+        w in s
+        for w in (
+            "perfect",
+            "all ",
+            "flawless",
+            "in a row",
+            "completely failing",
+            "x = 0",
+            "x=0",
+        )
+    ):
+        return "perfect"
     return "generic"
 
 
-def build_explanation(i: int, is_true: bool, stmt: str, ctx: str, old: str, params: dict | None) -> str:
+def pick_side(stmt: str, params: dict) -> tuple[str, float]:
+    """Return ('A' or 'B', p) for the person the statement focuses on."""
+    s = stmt
+    # Prefer explicit B markers when both appear; check B-focused claims first
+    b_hit = re.search(
+        r"\b(?:Player|Person|Agent|Staff|Inspector|Archer|Batch|Kit|Typist|Meteorologist|"
+        r"Screener|Worker|Grader|Controller|Baker|Tester|Radiologist|Tech|Rep|Student|"
+        r"Surgeon|Line|Team|Check|Factory|Restaurant|Seed Batch)\s*B\b|"
+        r"\ball-star\b|\bveteran\b|\belite\b|\btrained\b|\bsenior\b|\bexperienced\b|"
+        r"\bestablished\b|\bfresh\b|\bnewer\b",
+        s,
+        re.I,
+    )
+    a_hit = re.search(
+        r"\b(?:Player|Person|Agent|Staff|Inspector|Archer|Batch|Kit|Typist|Meteorologist|"
+        r"Screener|Worker|Grader|Controller|Baker|Tester|Radiologist|Tech|Rep|Student|"
+        r"Surgeon|Line|Team|Check|Factory|Restaurant|Seed Batch)\s*A\b|"
+        r"\brookie\b|\btrainee\b|\bnewly\b|\buntrained\b|\bbeginner\b|\bold stock\b|\bolder\b",
+        s,
+        re.I,
+    )
+    if b_hit and not re.search(r"as likely as.*\bA\b|\bA\b.*as likely", s, re.I):
+        # "B is more than … as likely as A" still focuses on comparing both; for perfect claims B-only
+        if "as likely" in s.lower():
+            return "B", params["pB"]
+        return "B", params["pB"]
+    if a_hit and "as likely" not in s.lower():
+        return "A", params["pA"]
+    if "less than" in s.lower() and a_hit:
+        return "A", params["pA"]
+    if b_hit:
+        return "B", params["pB"]
+    if a_hit:
+        return "A", params["pA"]
+    # default
+    return ("A", params["pA"]) if "less than" in s.lower() else ("B", params["pB"])
+
+
+def expl_sum(letter, stmt, is_true, params, _old):
+    lines = [header(letter, stmt, is_true), ""]
+    m = re.search(
+        r"from\s*x\s*=\s*(\d+)\s*to\s*(\d+).*?n\s*=\s*(\d+)\s*and\s*p\s*=\s*(0?\.\d+)",
+        stmt,
+        re.I | re.S,
+    )
+    if m:
+        lo, hi, n, p = int(m.group(1)), int(m.group(2)), int(m.group(3)), float(m.group(4))
+    elif params and params.get("k") is not None:
+        lo, n = params["k"], params["n"]
+        hi = n
+        # pick p from statement if present
+        pm = re.search(r"p\s*=\s*(0?\.\d+)", stmt, re.I)
+        p = float(pm.group(1)) if pm else params["pA"]
+    else:
+        return expl_generic(letter, stmt, is_true, params, _old)
+
+    lines.append(
+        f'“At least {lo} out of {n}” is not a single outcome — it covers the distinct counts '
+        f"$X = {lo}, {lo + 1}, \\ldots, {hi}$. Those counts cannot happen at the same time, so by the "
+        f"addition rule for mutually exclusive events we add their individual binomial probabilities:"
+    )
+    lines.append("")
+    xs = ", ".join(str(x) for x in range(lo, min(lo + 3, hi + 1)))
+    more = f", …, {hi}" if hi > lo + 2 else (f", {hi}" if hi > lo else "")
+    lines.append(
+        f"$$P(X \\ge {lo}) = P(X={lo}) + P(X={lo + 1 if lo < hi else lo})"
+        + (f" + \\cdots + P(X={hi})" if hi > lo + 1 else "")
+        + f" = \\sum_{{x={lo}}}^{{{hi}}} \\binom{{{n}}}{{x}} p^{{x}} (1-p)^{{{n}-x}}$$"
+    )
+    lines.append("")
+    lines.append(
+        f"A single term such as $P(X = {lo})$ would only capture “exactly {lo}” and would undercount "
+        f"the true chance of clearing the cutoff. The statement writes this sum with $n = {n}$ and "
+        f"$p = {fmt(p, 4)}$, running from $x = {lo}$ to $x = {hi}$ — which "
+        f"{'matches' if is_true else 'does not match'} the English claim, so the statement is "
+        f"{'True' if is_true else 'False'}."
+    )
+    return "\n\n".join(lines)
+
+
+def expl_perfect(letter, stmt, is_true, params, _old):
+    lines = [header(letter, stmt, is_true), ""]
+    if not params or "pA" not in params and "p" not in params:
+        return expl_generic(letter, stmt, is_true, params, _old)
+
+    if "pA" in params:
+        side, p = pick_side(stmt, params)
+        n = params["n"]
+        who = f"side {side}"
+    else:
+        n, p = params["n"], params["p"]
+        who = "this distribution"
+
+    zero = bool(re.search(r"x\s*=\s*0|completely failing|no success|none of|failing to detect any", stmt, re.I))
+    if zero:
+        q = 1 - p
+        lines.append(
+            "Getting zero successes means every trial fails. With independent trials that probability is "
+            "the failure probability multiplied across all $n$ trials:"
+        )
+        lines.append("")
+        lines.append(f"$$P(X = 0) = (1-p)^{{n}}$$")
+        lines.append("")
+        val = q**n
+        lines.append(f"For {who}, $p = {fmt(p, 4)}$, so $1-p = {fmt(q, 4)}$ and $n = {n}$:")
+        lines.append("")
+        lines.append(f"$$P(X = 0) = ({fmt(q, 4)})^{{{n}}} \\approx {fmt(val, 6)} \\approx {pct(val, 6)}$$")
+    else:
+        lines.append(
+            "A perfect run means every one of the $n$ trials succeeds. Independence lets us multiply "
+            "the success probability across all trials, which is the binomial PMF at $k = n$:"
+        )
+        lines.append("")
+        lines.append(f"$$P(X = n) = p^{{n}}$$")
+        lines.append("")
+        val = p**n
+        lines.append(f"For {who}, $p = {fmt(p, 4)}$ and $n = {n}$:")
+        lines.append("")
+        lines.append(f"$$P(X = {n}) = ({fmt(p, 4)})^{{{n}}} \\approx {fmt(val, 6)} \\approx {pct(val)}$$")
+
+    thr_m = re.search(
+        r"(?:less than|greater than|more than|below|above|under|over)\s+(?:a\s+)?([\d.]+)\s*%",
+        stmt,
+        re.I,
+    )
+    if thr_m:
+        thr = float(thr_m.group(1))
+        val_pct = 100 * (q**n if zero else p**n)
+        direction = "below" if val_pct < thr else "above"
+        lines.append("")
+        lines.append(
+            f"The claim compares this with ${fmt(thr, 4)}\\%$. We got about ${fmt(val_pct, 4)}\\%$, "
+            f"which is {direction} the cutoff, so the statement is {'True' if is_true else 'False'}."
+        )
+    else:
+        lines.append("")
+        lines.append(
+            f"Comparing this value with the claim shows the statement is {'True' if is_true else 'False'}."
+        )
+    return "\n\n".join(lines)
+
+
+def expl_ratio(letter, stmt, is_true, params, old):
+    lines = [header(letter, stmt, is_true), ""]
+    if not params or "pA" not in params or params.get("k") is None:
+        return expl_generic(letter, stmt, is_true, params, old)
+
+    n, pA, pB, k = params["n"], params["pA"], params["pB"], params["k"]
+    a_over_b = bool(
+        re.search(r"\bA\b.*(?:more than|at least).*as likely as.*\bB\b", stmt, re.I)
+    )
+
+    lines.append(
+        f"Clearing the cutoff means at least {k} successes out of {n}. That event is the union of the "
+        f"mutually exclusive outcomes $X = {k}, {k + 1}, \\ldots, {n}$, so we add the individual "
+        f"binomial probabilities:"
+    )
+    lines.append("")
+    lines.append(
+        f"$$P(X \\ge {k}) = \\sum_{{x={k}}}^{{{n}}} \\binom{{{n}}}{{x}} p^{{x}} (1-p)^{{{n}-x}}$$"
+    )
+    lines.append("")
+    lines.append(
+        f"A single term $P(X = {k})$ would only count “exactly {k}” and would miss the higher counts, "
+        f"so it understates the chance of meeting the cutoff. We need the full upper tail for each side, "
+        f"then the ratio of those two probabilities — not the ratio of the two $p$ values."
+    )
+    lines.append("")
+
+    block_a, tot_a = expand_tail_terms(n, pA, k, "Side A")
+    block_b, tot_b = expand_tail_terms(n, pB, k, "Side B")
+    lines.append(block_a)
+    lines.append("")
+    lines.append(block_b)
+    lines.append("")
+
+    if a_over_b:
+        ratio = tot_a / tot_b if tot_b > 0 else float("inf")
+        lines.append("The ratio in the claim’s order (A relative to B):")
+        lines.append("")
+        lines.append(
+            f"$$\\frac{{P_A(X \\ge {k})}}{{P_B(X \\ge {k})}} "
+            f"\\approx \\frac{{{pct(tot_a)}}}{{{pct(tot_b)}}} \\approx {fmt(ratio, 2)}$$"
+        )
+    else:
+        ratio = tot_b / tot_a if tot_a > 0 else float("inf")
+        lines.append("The ratio in the claim’s order (B relative to A):")
+        lines.append("")
+        lines.append(
+            f"$$\\frac{{P_B(X \\ge {k})}}{{P_A(X \\ge {k})}} "
+            f"\\approx \\frac{{{pct(tot_b)}}}{{{pct(tot_a)}}} \\approx {fmt(ratio, 2)}$$"
+        )
+
+    thr_m = re.search(r"(?:more than|at least)\s+([\d,]+)\s+times", stmt, re.I)
+    if thr_m:
+        thr = float(thr_m.group(1).replace(",", ""))
+        lines.append("")
+        lines.append(
+            f"Since ${fmt(ratio, 2)}{' > ' if ratio > thr else ' \\le '}{fmt(thr, 2)}$, "
+            f"the statement is {'True' if is_true else 'False'}."
+        )
+    else:
+        lines.append("")
+        lines.append(f"Matching this ratio to the claim, the statement is {'True' if is_true else 'False'}.")
+    return "\n\n".join(lines)
+
+
+def expl_variance(letter, stmt, is_true, params, _old):
+    lines = [header(letter, stmt, is_true), ""]
+    if not params or "pA" not in params:
+        return expl_generic(letter, stmt, is_true, params, _old)
+    n, pA, pB = params["n"], params["pA"], params["pB"]
+    lines.append(
+        "For a binomial count $X \\sim \\mathrm{Bin}(n,p)$, write $X$ as the sum of $n$ independent "
+        "Bernoulli($p$) indicators. Each indicator has variance $p(1-p)$, and variances of independent "
+        "summands add, so"
+    )
+    lines.append("")
+    lines.append("$$\\mathrm{Var}(X) = np(1-p)$$")
+    lines.append("")
+    lines.append(
+        "This is largest when $p$ is closest to $1/2$, not when $p$ itself is largest."
+    )
+    lines.append("")
+    vA, vB = n * pA * (1 - pA), n * pB * (1 - pB)
+    lines.append(f"Side A with $p_A = {fmt(pA, 4)}$:")
+    lines.append("")
+    lines.append(
+        f"$$\\mathrm{{Var}}(A) = {n} \\cdot {fmt(pA, 4)} \\cdot {fmt(1 - pA, 4)} = {fmt(vA, 4)}$$"
+    )
+    lines.append("")
+    lines.append(f"Side B with $p_B = {fmt(pB, 4)}$:")
+    lines.append("")
+    lines.append(
+        f"$$\\mathrm{{Var}}(B) = {n} \\cdot {fmt(pB, 4)} \\cdot {fmt(1 - pB, 4)} = {fmt(vB, 4)}$$"
+    )
+    lines.append("")
+    if "times" in stmt.lower() or "triple" in stmt.lower() or "double" in stmt.lower():
+        ratio = vA / vB if vB else float("inf")
+        lines.append(f"The variance ratio is")
+        lines.append("")
+        lines.append(
+            f"$$\\frac{{\\mathrm{{Var}}(A)}}{{\\mathrm{{Var}}(B)}} "
+            f"= \\frac{{{fmt(vA, 4)}}}{{{fmt(vB, 4)}}} \\approx {fmt(ratio, 2)}$$"
+        )
+        lines.append("")
+        lines.append(
+            f"Comparing that with the claim, the statement is {'True' if is_true else 'False'}."
+        )
+    else:
+        lines.append(
+            f"So $\\mathrm{{Var}}(A) = {fmt(vA, 4)}$ and $\\mathrm{{Var}}(B) = {fmt(vB, 4)}$. "
+            f"The claim’s comparison is {'correct' if is_true else 'incorrect'}, "
+            f"so the statement is {'True' if is_true else 'False'}."
+        )
+    return "\n\n".join(lines)
+
+
+def expl_sd(letter, stmt, is_true, params, _old):
+    lines = [header(letter, stmt, is_true), ""]
+    if not params or "pA" not in params:
+        return expl_generic(letter, stmt, is_true, params, _old)
+    n, pA, pB = params["n"], params["pA"], params["pB"]
+    lines.append(
+        "The standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,"
+    )
+    lines.append("")
+    lines.append("$$\\mathrm{SD}(X) = \\sqrt{np(1-p)}$$")
+    lines.append("")
+    vA, vB = n * pA * (1 - pA), n * pB * (1 - pB)
+    sA, sB = math.sqrt(vA), math.sqrt(vB)
+    lines.append(f"Side A ($p_A = {fmt(pA, 4)}$):")
+    lines.append("")
+    lines.append(
+        f"$$\\mathrm{{Var}}(A) = {fmt(vA, 4)}, \\qquad "
+        f"\\mathrm{{SD}}(A) = \\sqrt{{{fmt(vA, 4)}}} \\approx {fmt(sA, 3)}$$"
+    )
+    lines.append("")
+    lines.append(f"Side B ($p_B = {fmt(pB, 4)}$):")
+    lines.append("")
+    lines.append(
+        f"$$\\mathrm{{Var}}(B) = {fmt(vB, 4)}, \\qquad "
+        f"\\mathrm{{SD}}(B) = \\sqrt{{{fmt(vB, 4)}}} \\approx {fmt(sB, 3)}$$"
+    )
+    lines.append("")
+    if "times" in stmt.lower() or "double" in stmt.lower() or "triple" in stmt.lower() or "more than" in stmt.lower():
+        ratio = sA / sB if sB else float("inf")
+        lines.append(
+            f"$$\\frac{{\\mathrm{{SD}}(A)}}{{\\mathrm{{SD}}(B)}} "
+            f"\\approx \\frac{{{fmt(sA, 3)}}}{{{fmt(sB, 3)}}} \\approx {fmt(ratio, 3)}$$"
+        )
+        lines.append("")
+        lines.append(f"Against the claim, the statement is {'True' if is_true else 'False'}.")
+    else:
+        lines.append(
+            f"Comparing ${fmt(sA, 3)}$ with ${fmt(sB, 3)}$, the statement is {'True' if is_true else 'False'}."
+        )
+    return "\n\n".join(lines)
+
+
+def expl_mean(letter, stmt, is_true, params, _old):
+    lines = [header(letter, stmt, is_true), ""]
+    if params and "pA" in params:
+        n, pA, pB = params["n"], params["pA"], params["pB"]
+        lines.append(
+            "The mean of a binomial count is the number of trials times the success probability, "
+            "because $X$ is the sum of $n$ Bernoulli($p$) indicators each with mean $p$:"
+        )
+        lines.append("")
+        lines.append("$$E[X] = np$$")
+        lines.append("")
+        mA, mB = n * pA, n * pB
+        lines.append(f"$$E[A] = {n} \\cdot {fmt(pA, 4)} = {fmt(mA, 4)}$$")
+        lines.append("")
+        lines.append(f"$$E[B] = {n} \\cdot {fmt(pB, 4)} = {fmt(mB, 4)}$$")
+        lines.append("")
+        if "%" in stmt or "percent" in stmt.lower():
+            inc = 100 * (mB / mA - 1) if mA else float("inf")
+            lines.append(
+                f"The percent increase of B over A is "
+                f"$100\\big(E[B]/E[A] - 1\\big) = 100\\big({fmt(mB / mA, 4)} - 1\\big) "
+                f"\\approx {fmt(inc, 2)}\\%$."
+            )
+        elif "double" in stmt.lower():
+            lines.append(f"The ratio $E[B]/E[A] = {fmt(mB / mA, 4)}$ (double would be $2$).")
+        elif "exactly" in stmt.lower() or "more than" in stmt.lower() or "at least" in stmt.lower() or "exceeds" in stmt.lower():
+            lines.append(
+                f"The difference $E[B] - E[A] = {fmt(mB - mA, 4)}$, "
+                f"and equivalently $n(p_B - p_A) = {n}\\cdot({fmt(pB, 4)} - {fmt(pA, 4)}) = {fmt(n * (pB - pA), 4)}$."
+            )
+        lines.append("")
+        lines.append(f"Matching these figures to the claim, the statement is {'True' if is_true else 'False'}.")
+        return "\n\n".join(lines)
+    if params and "p" in params:
+        n, p = params["n"], params["p"]
+        lines.append("For $X \\sim \\mathrm{Bin}(n,p)$, the mean is $E[X] = np$.")
+        lines.append("")
+        lines.append(f"$$E[X] = {n} \\cdot {fmt(p, 6)} = {fmt(n * p, 4)}$$")
+        lines.append("")
+        lines.append(f"Compared with the claim, the statement is {'True' if is_true else 'False'}.")
+        return "\n\n".join(lines)
+    return expl_generic(letter, stmt, is_true, params, _old)
+
+
+def strip_old(text: str) -> str:
+    t = re.sub(r'^\d+\.\s*"(True|False)"\s*', "", text.strip(), flags=re.I)
+    t = re.sub(r"^(TRUE|FALSE)\s*[—–-]\s*", "", t, flags=re.I)
+    # drop structured headings from prior generator
+    t = re.sub(
+        r"^(Situation|Formula to use|Formula / rule to use|Why|Step-by-step calculation|What the statement claims|Conclusion|Tip):\s*",
+        "",
+        t,
+        flags=re.I | re.M,
+    )
+    t = re.sub(r"^Step \d+:\s*", "", t, flags=re.M)
+    return t.strip()
+
+
+def expl_generic(letter, stmt, is_true, params, old):
+    """Natural wrap using PDF numerical content when structure is nonstandard."""
+    lines = [header(letter, stmt, is_true), ""]
+    body = strip_old(old)
+    # Keep first substantial paragraph of prior explanation as the numerical core
+    para = re.split(r"\n\n+", body)[0].strip()
+    # Remove leftover labels
+    para = re.sub(r"\s+", " ", para)
+
+    low = (stmt + " " + para).lower()
+    if "poisson" in low:
+        lines.append(
+            "When $n$ is large and $p$ is small with $\\lambda = np$ moderate, the binomial probabilities "
+            "are close to a Poisson($\\lambda$) law. That is a different validity story from the normal "
+            "approximation (which wants both $np$ and $n(1-p)$ at least about 5)."
+        )
+        lines.append("")
+        lines.append("$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$")
+        lines.append("")
+    elif "normal" in low and "approxim" in low:
+        lines.append(
+            "For large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal "
+            "with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction."
+        )
+        lines.append("")
+        lines.append("$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$")
+        lines.append("")
+    elif "mode" in low:
+        lines.append(
+            "The mode is the integer $k$ that maximizes $P(X = k)$. For $\\mathrm{Bin}(n,p)$ it is "
+            "$\\lfloor (n+1)p \\rfloor$ (or two adjacent integers when $(n+1)p$ is an integer)."
+        )
+        lines.append("")
+    elif re.search(r"p\(x\s*=\s*0\)|x\s*=\s*0", low):
+        lines.append("Zero successes means every trial fails, so $P(X = 0) = (1-p)^{n}$.")
+        lines.append("")
+
+    lines.append(para)
+    lines.append("")
+    lines.append(f"Putting that against the claim, the statement is {'True' if is_true else 'False'}.")
+    return "\n\n".join(lines)
+
+
+def build_one(i, stmt, is_true, params, old):
+    letter = LETTERS[i]
     kind = classify(stmt)
     if kind == "sum":
-        return expl_sum_notation(i, is_true, stmt, params, ctx)
+        return expl_sum(letter, stmt, is_true, params, old)
     if kind == "perfect":
-        return expl_perfect(i, is_true, stmt, params, ctx, old)
-    if kind == "variance":
-        return expl_variance(i, is_true, stmt, params, ctx)
-    if kind == "sd":
-        return expl_sd(i, is_true, stmt, params, ctx)
-    if kind == "mean":
-        return expl_mean(i, is_true, stmt, params, ctx)
+        return expl_perfect(letter, stmt, is_true, params, old)
     if kind == "ratio":
-        return expl_ratio(i, is_true, stmt, params, ctx, old)
-    return expl_generic(i, is_true, stmt, params, ctx, old)
+        return expl_ratio(letter, stmt, is_true, params, old)
+    if kind == "variance":
+        return expl_variance(letter, stmt, is_true, params, old)
+    if kind == "sd":
+        return expl_sd(letter, stmt, is_true, params, old)
+    if kind == "mean":
+        return expl_mean(letter, stmt, is_true, params, old)
+    return expl_generic(letter, stmt, is_true, params, old)
 
 
 def main() -> None:
@@ -668,26 +608,34 @@ def main() -> None:
     for task in data["tasks"]:
         ctx = task["context"]
         params = extract_two_person(ctx) or extract_single(ctx)
-        new_expl = []
-        for i, (stmt, is_true, old) in enumerate(
-            zip(task["statements"], task["answer_key"], task["tactical_explanations"])
-        ):
-            new_expl.append(build_explanation(i, bool(is_true), stmt, ctx, old, params))
-        task["tactical_explanations"] = new_expl
-        assert len(task["tactical_explanations"]) == len(task["statements"]) == len(task["answer_key"])
-
+        task["solution_overview"] = overview_text(ctx, params)
+        task["tactical_explanations"] = [
+            build_one(i, stmt, bool(is_true), params, old)
+            for i, (stmt, is_true, old) in enumerate(
+                zip(task["statements"], task["answer_key"], task["tactical_explanations"])
+            )
+        ]
     data["explanation_style"] = (
-        'Full worked solutions: N. "True"/"False", then Situation, Formula + why, '
-        "step-by-step substitution, Conclusion. Depth matched to financial-math solutions."
+        "Natural tutoring: shared solution_overview once; each claim as "
+        '**A.** statement → True/False with derived formulas and term-by-term sums.'
     )
+    def tidy(s: str) -> str:
+        return re.sub(r"\n{3,}", "\n\n", s).strip()
+
+    for task in data["tasks"]:
+        task["solution_overview"] = tidy(task["solution_overview"])
+        task["tactical_explanations"] = [tidy(e) for e in task["tactical_explanations"]]
+
     PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
-    # preview
-    t0 = data["tasks"][0]
-    print("Q1 A preview:\n")
-    print(t0["tactical_explanations"][0][:900])
-    print("\n---\nQ1 D preview:\n")
-    print(t0["tactical_explanations"][3][:700])
-    print("\nDone", len(data["tasks"]), "tasks")
+
+    # preview restaurant Q8 (sort_order 8)
+    t = next(x for x in data["tasks"] if x["sort_order"] == 8)
+    print("=== OVERVIEW ===")
+    print(t["solution_overview"])
+    print("\n=== C (ratio) ===")
+    print(t["tactical_explanations"][2])
+    print("\n=== A (perfect) ===")
+    print(t["tactical_explanations"][0][:700])
 
 
 if __name__ == "__main__":

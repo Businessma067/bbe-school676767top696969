@@ -882,7 +882,7 @@ function MathProse({ text, className }: { text: string; className?: string }) {
       continue;
     }
 
-    if (/^\*\*[A-E]\)/.test(p)) {
+    if (/^\*\*[A-F][.)]/.test(p)) {
       chunks.push({ kind: "claim", text: p });
       i += 1;
       continue;
@@ -896,7 +896,7 @@ function MathProse({ text, className }: { text: string; className?: string }) {
         if (
           isStepStartPara(nxt) ||
           isPartStartPara(nxt) ||
-          /^\*\*[A-E]\)/.test(nxt) ||
+          /^\*\*[A-F][.)]/.test(nxt) ||
           /^\*\*(Note\.?)\*\*/i.test(nxt)
         ) {
           break;
