@@ -491,10 +491,10 @@ export function TheoryReader({
       >
         <article
           className={cn(
-            "mx-auto w-full max-w-[92rem] [&>h1+p]:text-foreground/75 [&_.katex]:text-[1.03em] [&_.katex-display]:my-5 [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-hidden [&_.katex-display]:rounded-xl [&_.katex-display]:border [&_.katex-display]:border-border/60 [&_.katex-display]:bg-secondary/40 [&_.katex-display]:px-3 [&_.katex-display]:py-3",
+            "mx-auto w-full max-w-[78rem] [&>h1+p]:text-foreground/75 [&_.katex]:text-[1.03em] [&_.katex-display]:my-5 [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-hidden [&_.katex-display]:rounded-xl [&_.katex-display]:border [&_.katex-display]:border-border/60 [&_.katex-display]:bg-secondary/40 [&_.katex-display]:px-3 [&_.katex-display]:py-3",
             readerMode
-              ? "px-4 py-4 pb-20 sm:px-6 sm:py-8 sm:pb-10 md:px-8 lg:px-10 xl:px-12"
-              : "px-4 py-5 sm:px-6 sm:py-8 md:px-8 lg:px-10 xl:px-12",
+              ? "px-4 py-4 pb-20 sm:px-6 sm:py-8 sm:pb-10 md:px-8 lg:px-12 xl:px-14"
+              : "px-4 py-5 sm:px-6 sm:py-8 md:px-8 lg:px-12 xl:px-14",
           )}
         >
           {body}
