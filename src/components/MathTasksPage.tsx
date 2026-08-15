@@ -163,10 +163,23 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
         </div>
       </header>
 
-      <div className={cn(PRACTICE_BODY_STACK, "lg:flex lg:items-start lg:gap-6")}>
-        {!sidebarCollapsed && (
-          <aside className="mb-6 w-full shrink-0 lg:sticky lg:top-20 lg:mb-0 lg:h-[calc(100vh-6rem)] lg:w-80">
-            <div className="flex max-h-[min(70vh,36rem)] flex-col rounded-2xl border border-border bg-card p-3 shadow-sm lg:h-full lg:max-h-none">
+      <div
+        className={cn(
+          PRACTICE_BODY_STACK,
+          "lg:flex lg:items-start lg:transition-[gap] lg:duration-300 lg:ease-out",
+          sidebarCollapsed ? "lg:gap-0" : "lg:gap-6",
+        )}
+      >
+          <aside
+            className={cn(
+              "mb-6 w-full shrink-0 transition-[width,opacity,transform] duration-300 ease-out lg:sticky lg:top-20 lg:mb-0 lg:block lg:h-[calc(100vh-6rem)] lg:overflow-hidden",
+              sidebarCollapsed
+                ? "hidden lg:pointer-events-none lg:block lg:w-0 lg:-translate-x-5 lg:opacity-0"
+                : "lg:w-80 lg:translate-x-0 lg:opacity-100",
+            )}
+            aria-hidden={sidebarCollapsed}
+          >
+            <div className="flex max-h-[min(70vh,36rem)] flex-col rounded-2xl border border-border bg-card p-3 shadow-sm lg:h-full lg:w-80 lg:max-h-none">
               <div className="mb-2 flex shrink-0 items-center justify-between px-1">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
                   Chapters
@@ -238,8 +251,15 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                           <RotateCcw className="h-3.5 w-3.5" />
                         </button>
                       </div>
-                      {isOpen && (
-                        <ul className="border-t border-border/60 py-1">
+                        <ul
+                          className={cn(
+                            "origin-top overflow-hidden border-t py-1 transition-[max-height,opacity,transform,border-color] duration-300 ease-out",
+                            isOpen
+                              ? "max-h-[180rem] translate-y-0 border-border/60 opacity-100"
+                              : "pointer-events-none max-h-0 -translate-y-2 border-transparent py-0 opacity-0",
+                          )}
+                          aria-hidden={!isOpen}
+                        >
                           {list.length === 0 && (
                             <li className="px-4 py-2 text-[11px] text-muted-foreground">
                               No tasks yet.
@@ -286,8 +306,15 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                         total={subTasks.length}
                                       />
                                     </button>
-                                    {subOpen && (
-                                      <ul className="pb-1">
+                                      <ul
+                                        className={cn(
+                                          "origin-top overflow-hidden transition-[max-height,opacity,transform] duration-300 ease-out",
+                                          subOpen
+                                            ? "max-h-[100rem] translate-y-0 pb-1 opacity-100"
+                                            : "pointer-events-none max-h-0 -translate-y-2 pb-0 opacity-0",
+                                        )}
+                                        aria-hidden={!subOpen}
+                                      >
                                         {subTasks.map(({ c, i }, localI) => {
                                           const passed = progress.passed.includes(c.id);
                                           const rev = progress.revision.includes(c.id);
@@ -367,7 +394,6 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                           );
                                         })}
                                       </ul>
-                                    )}
                                   </li>
                                 );
                               })
@@ -456,7 +482,6 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                               );
                             })}
                         </ul>
-                      )}
                     </li>
                   );
                 })}
@@ -500,7 +525,6 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               </button>
             </div>
           </aside>
-        )}
 
         <main className="min-w-0 flex-1">
           {sidebarCollapsed && (
@@ -551,49 +575,51 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
             </div>
           )}
 
-          {activeCase && isLocked(tier, activeChapter, activeIdx) ? (
-            <LockedDemoCard
-              chapter={activeChapter}
-              freeLimit={freeLimitOf(tier, activeChapter)}
-              onBack={() => setActiveIdx(freeLimitOf(tier, activeChapter) - 1)}
-            />
-          ) : activeCase?.placeholder ? (
-            <PlaceholderTaskCard
-              task={activeCase}
-              index={activeIdx}
-              chapterTitle={
-                activeChapter === "revision"
-                  ? "Revision"
-                  : (chapters.find((c) => c.num === activeChapter)?.title ?? "Mathematics")
-              }
-            />
-          ) : activeCase ? (
-            <MathTaskCard
-              task={activeCase}
-              index={activeIdx}
-              alreadyPassed={progress.passed.includes(activeCase.id)}
-              inRevision={progress.revision.includes(activeCase.id)}
-              explanationsOpen={showExplanations}
-              onShowExplanations={() => setShowExplanations(true)}
-              onToggleExplanations={() => setShowExplanations((v) => !v)}
-              onGraded={(allCorrect) => {
-                setProgress((prev) => {
-                  const next: Progress = {
-                    passed: prev.passed.filter((x) => x !== activeCase.id),
-                    revision: prev.revision.filter((x) => x !== activeCase.id),
-                  };
-                  if (allCorrect) next.passed = [...next.passed, activeCase.id];
-                  else next.revision = [...next.revision, activeCase.id];
-                  saveProgress(next);
-                  return next;
-                });
-              }}
-              onResetProgress={() => {
-                resetCaseIds([activeCase.id]);
-                setShowExplanations(false);
-              }}
-            />
-          ) : null}
+          <div key={activeCase?.id ?? "empty-task"} className="practice-panel-enter">
+            {activeCase && isLocked(tier, activeChapter, activeIdx) ? (
+              <LockedDemoCard
+                chapter={activeChapter}
+                freeLimit={freeLimitOf(tier, activeChapter)}
+                onBack={() => setActiveIdx(freeLimitOf(tier, activeChapter) - 1)}
+              />
+            ) : activeCase?.placeholder ? (
+              <PlaceholderTaskCard
+                task={activeCase}
+                index={activeIdx}
+                chapterTitle={
+                  activeChapter === "revision"
+                    ? "Revision"
+                    : (chapters.find((c) => c.num === activeChapter)?.title ?? "Mathematics")
+                }
+              />
+            ) : activeCase ? (
+              <MathTaskCard
+                task={activeCase}
+                index={activeIdx}
+                alreadyPassed={progress.passed.includes(activeCase.id)}
+                inRevision={progress.revision.includes(activeCase.id)}
+                explanationsOpen={showExplanations}
+                onShowExplanations={() => setShowExplanations(true)}
+                onToggleExplanations={() => setShowExplanations((v) => !v)}
+                onGraded={(allCorrect) => {
+                  setProgress((prev) => {
+                    const next: Progress = {
+                      passed: prev.passed.filter((x) => x !== activeCase.id),
+                      revision: prev.revision.filter((x) => x !== activeCase.id),
+                    };
+                    if (allCorrect) next.passed = [...next.passed, activeCase.id];
+                    else next.revision = [...next.revision, activeCase.id];
+                    saveProgress(next);
+                    return next;
+                  });
+                }}
+                onResetProgress={() => {
+                  resetCaseIds([activeCase.id]);
+                  setShowExplanations(false);
+                }}
+              />
+            ) : null}
+          </div>
 
           {activeList.length > 0 && activeChapter !== null && (
             <div className="mt-6 flex items-center justify-between">
@@ -1240,7 +1266,7 @@ function AllExplanationsPanel({
     .trim();
 
   return (
-    <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+    <div className="practice-panel-enter flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
       <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
         <div className="min-w-0">
           <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
