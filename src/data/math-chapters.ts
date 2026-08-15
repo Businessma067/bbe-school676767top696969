@@ -1,8 +1,9 @@
 /**
  * Math syllabus chapters for Demo / Lite / Full practice pages.
- * Chapters 5 (Linear equations), 11 (Financial mathematics), and 13 (Binomial) are populated; others use placeholders.
+ * Chapters 1 (Logic), 5 (Linear equations), 11 (Financial mathematics), and 13 (Binomial) are populated; others use placeholders.
  */
 
+import { MATH_CH1_LOGIC, MATH_CH1_SUBSECTIONS } from "@/data/math-ch1-logic";
 import { MATH_CH5_LINEAR_EQUATIONS } from "@/data/math-ch5-linear-equations";
 import {
   MATH_CH11_FINANCIAL,
@@ -85,6 +86,7 @@ function makePlaceholders(chapterNum: number, count: number): MathTask[] {
 }
 
 const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
+  1: MATH_CH1_LOGIC,
   5: MATH_CH5_LINEAR_EQUATIONS,
   11: MATH_CH11_FINANCIAL,
   13: (ch13Binomial.tasks as MathTask[]).map((t) => ({
@@ -94,6 +96,7 @@ const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
 };
 
 const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = {
+  1: MATH_CH1_SUBSECTIONS,
   11: MATH_CH11_SUBSECTIONS,
 };
 
