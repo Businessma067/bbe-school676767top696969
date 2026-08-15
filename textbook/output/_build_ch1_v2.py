@@ -998,6 +998,15 @@ def normalize_math_dollars(text: str) -> str:
             out.append("\\$")
             i += 2
             continue
+        # Preserve display math $$...$$ intact (must run before single-$ handling,
+        # otherwise the opener is misread as an empty inline span).
+        if text.startswith("$$", i):
+            end = text.find("$$", i + 2)
+            if end != -1:
+                inner = text[i + 2 : end]
+                out.append("$$" + inner + "$$")
+                i = end + 2
+                continue
         if text[i] == "$":
             cur = _CURRENCY_SPLIT_RE.match(text, i)
             if cur:
@@ -1061,6 +1070,13 @@ def convert_cardinality_bars(text: str) -> str:
             out.append("\\$")
             i += 2
             continue
+        if text.startswith("$$", i):
+            end = text.find("$$", i + 2)
+            if end != -1:
+                inner = text[i + 2 : end]
+                out.append("$$" + _convert_cardinality_in_span(inner) + "$$")
+                i = end + 2
+                continue
         if text[i] == "$":
             end = unescaped_dollar(text, i + 1)
             if end != -1:
