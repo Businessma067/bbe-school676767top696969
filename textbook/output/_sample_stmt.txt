@@ -1,0 +1,8 @@
+Task 58
+
+---
+The statement holds when m = 4 (there exists n with 4n = 100).
+The statement holds when m = 3 (there exists n with 3n = 100).
+The overall statement (“for every m, there exists n...”) is true.
+The correct negation of the overall statement is: “There exists a positive integer m such that for every positive integer n, m·n ≠ 100.”
+Reversing the quantifiers to “There exists n such that for every m, m·n = 100” would also produce a false statement. 

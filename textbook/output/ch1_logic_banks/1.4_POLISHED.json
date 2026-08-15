@@ -1,0 +1,932 @@
+[
+  {
+    "id": "math-1-91",
+    "case_id": "MATH 1.91",
+    "title": "Nested quantifiers with a product equation",
+    "subsection": "1.4",
+    "context": "For \" m n, mn=100\" to hold, every positive integer m needs n=100/m to be an integer -$\\forall \\exists$ which only works when m divides 100 evenly. m=4 works (n=25) but m=3 fails (100/3 isn't an integer), so the universal claim is already false via this one counterexample. The correct negation",
+    "statements": [
+      "The statement holds when m = 4 (there exists n with 4n = 100).",
+      "The statement holds when m = 3 (there exists n with 3n = 100).",
+      "The overall statement (“for every m, there exists n...”) is true.",
+      "The correct negation of the overall statement is: “There exists a positive integer m such that for every positive integer n, m·n ≠ 100.”",
+      "Reversing the quantifiers to “There exists n such that for every m, m·n = 100” would also produce a false statement."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The statement holds when m = 4 (there exists n with 4n = 100).**  (true)\n\n$n = 25 satisfies 4 \\times 25 = 100.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) The statement holds when m = 3 (there exists n with 3n = 100).**  (false)\n\n100/3 is not an integer, so no positive integer n satisfies 3n = 100.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) The overall statement (“for every m, there exists n...”) is true.**  (false)\n\nm = 3 is a counterexample (part b): the universal claim fails to hold for this value of m, so the overall statement is false.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) The correct negation of the overall statement is: “There exists a positive integer m such that for every positive integer n, m·n ≠ 100.”**  (true)\n\nNegating “for every m, there exists n such that mn=100” correctly flips the quantifiers ( →, →)$\\forall \\exists$\\exists \\forall$ and negates the equation, giving exactly this.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) Reversing the quantifiers to “There exists n such that for every m, m·n = 100” would also produce a false statement.**  (true)\n\nFixing a single n and requiring mn=100 for every positive integer m is impossible, since m would have to equal 100/n for every m simultaneously - impossible once m ranges over more than one value.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 1,
+    "solution_overview": "For \" m n, mn=100\" to hold, every positive integer m needs n=100/m to be an integer -$\\forall \\exists$ which only works when m divides 100 evenly. m=4 works (n=25) but m=3 fails (100/3 isn't an integer), so the universal claim is already false via this one counterexample. The correct negation\n\n**Part 1: Setup.**\n\nFor \" m n, mn=100\" to hold, every positive integer m needs n=100/m to be an integer -$\\forall \\exists$ which only works when m divides 100 evenly. m=4 works (n=25) but m=3 fails (100/3 isn't an integer), so the universal claim is already false via this one counterexample. The correct negation swaps both quantifiers and negates the equation.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The statement holds when m = 4 (there exists n with 4n = 100).\n\n$n = 25 satisfies 4 \\times 25 = 100.$\n\n**2.** (FALSE) The statement holds when m = 3 (there exists n with 3n = 100).\n\n100/3 is not an integer, so no positive integer n satisfies 3n = 100.\n\n**3.** (FALSE) The overall statement (“for every m, there exists n...”) is true.\n\nm = 3 is a counterexample (part b): the universal claim fails to hold for this value of m, so the overall statement is false.\n\n**4.** (TRUE) The correct negation of the overall statement is: “There exists a positive integer m such that for every positive integer n, m·n ≠ 100.”\n\nNegating “for every m, there exists n such that mn=100” correctly flips the quantifiers ( →, →)$\\forall \\exists$\\exists \\forall$ and negates the equation, giving exactly this.\n\n**5.** (TRUE) Reversing the quantifiers to “There exists n such that for every m, m·n = 100” would also produce a false statement.\n\nFixing a single n and requiring mn=100 for every positive integer m is impossible, since m would have to equal 100/n for every m simultaneously - impossible once m ranges over more than one value.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-92",
+    "case_id": "MATH 1.92",
+    "title": "A theft investigation",
+    "subsection": "1.4",
+    "context": "Clue (3) directly states Dan is guilty; since exactly one suspect is guilty, that fact alone (without needing clues 1, 2, or 4) already makes everyone else - Ann, Ben, Cara - innocent. Clues (1) and (2) become vacuously true/uninformative once Ann and Cara's innocence is already",
+    "statements": [
+      "Dan is guilty.",
+      "Ann is guilty.",
+      "Clue (2) is essential to determine that Cara is innocent - without it, Cara's innocence could not be established.",
+      "Clue (1) provides no additional information here, since its antecedent (Ann is guilty) is false.",
+      "Even without knowing that exactly one suspect is guilty, clue (3) alone already tells us Dan is guilty."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Dan is guilty.**  (true)\n\nThis is stated directly in clue (3).\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Ann is guilty.**  (false)\n\nSince exactly one suspect is guilty and that is Dan (part a), Ann must be innocent.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) Clue (2) is essential to determine that Cara is innocent - without it, Cara's innocence could not be established.**  (false)\n\nOnce we know exactly one person is guilty and that person is Dan (from clue 3 alone), every other suspect - including Cara - is automatically innocent; clue (2) is not needed to reach this conclusion.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) Clue (1) provides no additional information here, since its antecedent (Ann is guilty) is false.**  (true)\n\nSince Ann is innocent, the antecedent of clue (1) is false, making the implication vacuously true and uninformative for this scenario.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) Even without knowing that exactly one suspect is guilty, clue (3) alone already tells us Dan is guilty.**  (true)\n\nClue (3) is a direct factual statement (“Dan is guilty”) that does not rely on the “exactly one guilty” assumption at all.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 2,
+    "solution_overview": "Clue (3) directly states Dan is guilty; since exactly one suspect is guilty, that fact alone (without needing clues 1, 2, or 4) already makes everyone else - Ann, Ben, Cara - innocent. Clues (1) and (2) become vacuously true/uninformative once Ann and Cara's innocence is already\n\n**Part 1: Setup.**\n\nClue (3) directly states Dan is guilty; since exactly one suspect is guilty, that fact alone (without needing clues 1, 2, or 4) already makes everyone else - Ann, Ben, Cara - innocent. Clues (1) and (2) become vacuously true/uninformative once Ann and Cara's innocence is already settled.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Dan is guilty.\n\nThis is stated directly in clue (3).\n\n**2.** (FALSE) Ann is guilty.\n\nSince exactly one suspect is guilty and that is Dan (part a), Ann must be innocent.\n\n**3.** (FALSE) Clue (2) is essential to determine that Cara is innocent - without it, Cara's innocence could not be established.\n\nOnce we know exactly one person is guilty and that person is Dan (from clue 3 alone), every other suspect - including Cara - is automatically innocent; clue (2) is not needed to reach this conclusion.\n\n**4.** (TRUE) Clue (1) provides no additional information here, since its antecedent (Ann is guilty) is false.\n\nSince Ann is innocent, the antecedent of clue (1) is false, making the implication vacuously true and uninformative for this scenario.\n\n**5.** (TRUE) Even without knowing that exactly one suspect is guilty, clue (3) alone already tells us Dan is guilty.\n\nClue (3) is a direct factual statement (“Dan is guilty”) that does not rely on the “exactly one guilty” assumption at all.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-93",
+    "case_id": "MATH 1.93",
+    "title": "An island of truth-tellers and liars",
+    "subsection": "1.4",
+    "context": "Test the only two possibilities for X directly. If X is a liar, X's claim (\"Y lies\") is false, so Y is a truth-teller - but then Y's own claim would have to be true, forcing Y to be a liar too, a contradiction. So X must be a truth-teller; then Y is a liar, and everything Y says",
+    "statements": [
+      "X is a truth-teller.",
+      "Y is a truth-teller.",
+      "Y's statement (“X and I are both liars”) is false.",
+      "There are two equally valid solutions for the types of X and Y.",
+      "If X were a liar, this would lead to a logical contradiction."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) X is a truth-teller.**  (true)\n\nSuppose X is a liar: then X's claim “Y always lies” is false, so Y is a truth-teller; but then Y's statement “X and I are both liars” must be true, meaning Y is a liar - contradicting that Y is a truth-teller. So X cannot be a liar; X must be a truth-teller.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Y is a truth-teller.**  (false)\n\nSince X is a truth-teller (part a), X's statement “Y always lies” is true, so Y is a liar.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) Y's statement (“X and I are both liars”) is false.**  (true)\n\nSince Y is a liar (part b), everything Y says is false, including this statement.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) There are two equally valid solutions for the types of X and Y.**  (false)\n\nOnly one consistent assignment exists (X truth-teller, Y liar); the alternative (X liar) leads to a direct contradiction, as shown in (a), so it is not a valid solution.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) If X were a liar, this would lead to a logical contradiction.**  (true)\n\nThis is exactly the contradiction demonstrated in part (a): assuming X is a liar forces Y to be simultaneously a truth-teller and a liar.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 3,
+    "solution_overview": "Test the only two possibilities for X directly. If X is a liar, X's claim (\"Y lies\") is false, so Y is a truth-teller - but then Y's own claim would have to be true, forcing Y to be a liar too, a contradiction. So X must be a truth-teller; then Y is a liar, and everything Y says\n\n**Part 1: Setup.**\n\nTest the only two possibilities for X directly. If X is a liar, X's claim (\"Y lies\") is false, so Y is a truth-teller - but then Y's own claim would have to be true, forcing Y to be a liar too, a contradiction. So X must be a truth-teller; then Y is a liar, and everything Y says (including this statement) is false - consistent. This is the unique solution.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) X is a truth-teller.\n\nSuppose X is a liar: then X's claim “Y always lies” is false, so Y is a truth-teller; but then Y's statement “X and I are both liars” must be true, meaning Y is a liar - contradicting that Y is a truth-teller. So X cannot be a liar; X must be a truth-teller.\n\n**2.** (FALSE) Y is a truth-teller.\n\nSince X is a truth-teller (part a), X's statement “Y always lies” is true, so Y is a liar.\n\n**3.** (TRUE) Y's statement (“X and I are both liars”) is false.\n\nSince Y is a liar (part b), everything Y says is false, including this statement.\n\n**4.** (FALSE) There are two equally valid solutions for the types of X and Y.\n\nOnly one consistent assignment exists (X truth-teller, Y liar); the alternative (X liar) leads to a direct contradiction, as shown in (a), so it is not a valid solution.\n\n**5.** (TRUE) If X were a liar, this would lead to a logical contradiction.\n\nThis is exactly the contradiction demonstrated in part (a): assuming X is a liar forces Y to be simultaneously a truth-teller and a liar.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-94",
+    "case_id": "MATH 1.94",
+    "title": "Quantifier order: exam scores",
+    "subsection": "1.4",
+    "context": "Statement 1 ( student, exam, score>90) is strictly stronger than Statement 2 ( exam,$\\exists \\forall$\\forall \\exists$ student, score>90) - one student acing every exam automatically satisfies Statement 2, but having a possibly- different top scorer per exam does NOT require one student to dominate all ex",
+    "statements": [
+      "Statement 1 logically implies Statement 2.",
+      "Statement 2 logically implies Statement 1.",
+      "The two statements are logically equivalent.",
+      "If the top scorer is different for each exam (no single student tops every exam), Statement 2 can be true while Statement 1 is false.",
+      "If there is only one exam, the two statements become logically equivalent."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Statement 1 logically implies Statement 2.**  (true)\n\nIf one particular student scores above 90 on every exam, then for each individual exam, that same student witnesses the existential claim in Statement 2.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Statement 2 logically implies Statement 1.**  (false)\n\nStatement 2 only guarantees that each exam has some student scoring above 90, possibly a different student for each exam - it doesn't require one single student to excel on all of them.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) The two statements are logically equivalent.**  (false)\n\nSince the implication only goes in one direction (part a true, part b false), the two statements are not equivalent.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) If the top scorer is different for each exam (no single student tops every exam), Statement 2 can be true while Statement 1 is false.**  (true)\n\nThis is exactly the scenario that separates the two: each exam individually has a high scorer (Statement 2 holds), but no one student dominates every exam (Statement 1 fails).\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) If there is only one exam, the two statements become logically equivalent.**  (true)\n\nWith a single exam, both statements reduce to the same claim: “there exists a student who scored above 90 on the (one) exam.”\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 4,
+    "solution_overview": "Statement 1 ( student, exam, score>90) is strictly stronger than Statement 2 ( exam,$\\exists \\forall$\\forall \\exists$ student, score>90) - one student acing every exam automatically satisfies Statement 2, but having a possibly- different top scorer per exam does NOT require one student to dominate all ex\n\n**Part 1: Setup.**\n\nStatement 1 ( student, exam, score>90) is strictly stronger than Statement 2 ( exam,$\\exists \\forall$\\forall \\exists$ student, score>90) - one student acing every exam automatically satisfies Statement 2, but having a possibly- different top scorer per exam does NOT require one student to dominate all exams. So 1 2 but not conversely.$\\Rightarrow$\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Statement 1 logically implies Statement 2.\n\nIf one particular student scores above 90 on every exam, then for each individual exam, that same student witnesses the existential claim in Statement 2.\n\n**2.** (FALSE) Statement 2 logically implies Statement 1.\n\nStatement 2 only guarantees that each exam has some student scoring above 90, possibly a different student for each exam - it doesn't require one single student to excel on all of them.\n\n**3.** (FALSE) The two statements are logically equivalent.\n\nSince the implication only goes in one direction (part a true, part b false), the two statements are not equivalent.\n\n**4.** (TRUE) If the top scorer is different for each exam (no single student tops every exam), Statement 2 can be true while Statement 1 is false.\n\nThis is exactly the scenario that separates the two: each exam individually has a high scorer (Statement 2 holds), but no one student dominates every exam (Statement 1 fails).\n\n**5.** (TRUE) If there is only one exam, the two statements become logically equivalent.\n\nWith a single exam, both statements reduce to the same claim: “there exists a student who scored above 90 on the (one) exam.”\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-95",
+    "case_id": "MATH 1.95",
+    "title": "A hiring committee's voting rule",
+    "subsection": "1.4",
+    "context": "Approval triggers on EITHER (i) at least 3 yes-votes (unconditionally), OR (ii) exactly 2 yes- votes with R1 specifically among them. R1+R2 yes (2 votes, R1 included) satisfies branch (ii); R2+R3 yes (2 votes, no R1) satisfies neither branch. Check any scenario against these two",
+    "statements": [
+      "The candidate is approved.",
+      "If instead R2 and R3 had voted yes (with R1 and R4 voting no), the candidate would be approved under the same rule.",
+      "If exactly three reviewers vote yes, the candidate is always approved, regardless of which three they are.",
+      "R1's yes-vote is necessary for approval in every possible voting scenario.",
+      "There exists a scenario with exactly 2 yes-votes where the candidate is not approved."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The candidate is approved.**  (true)\n\nExactly two reviewers (R1, R2) voted yes, and R1 is among them, satisfying the tie-break clause.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) If instead R2 and R3 had voted yes (with R1 and R4 voting no), the candidate would be approved under the same rule.**  (false)\n\nThis is also exactly 2 yes-votes, but R1 is not among them (R2, R3 voted yes, not R1) - so neither the “at least 3” clause nor the R1 tie-break clause is satisfied.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) If exactly three reviewers vote yes, the candidate is always approved, regardless of which three they are.**  (true)\n\nThe “at least three yes” clause applies unconditionally to any group of three or more, with no special requirement about which reviewers they are.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) R1's yes-vote is necessary for approval in every possible voting scenario.**  (false)\n\nFor example, if R2, R3, and R4 all vote yes (3 yes-votes) while R1 votes no, the “at least three” clause is satisfied without R1's vote at all.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) There exists a scenario with exactly 2 yes-votes where the candidate is not approved.**  (true)\n\nFor example, if R2 and R3 vote yes (without R1), that's exactly 2 yes-votes but without R1's involvement - neither clause is satisfied, so the candidate is not approved.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 5,
+    "solution_overview": "Approval triggers on EITHER (i) at least 3 yes-votes (unconditionally), OR (ii) exactly 2 yes- votes with R1 specifically among them. R1+R2 yes (2 votes, R1 included) satisfies branch (ii); R2+R3 yes (2 votes, no R1) satisfies neither branch. Check any scenario against these two\n\n**Part 1: Setup.**\n\nApproval triggers on EITHER (i) at least 3 yes-votes (unconditionally), OR (ii) exactly 2 yes- votes with R1 specifically among them. R1+R2 yes (2 votes, R1 included) satisfies branch (ii); R2+R3 yes (2 votes, no R1) satisfies neither branch. Check any scenario against these two branches independently.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The candidate is approved.\n\nExactly two reviewers (R1, R2) voted yes, and R1 is among them, satisfying the tie-break clause.\n\n**2.** (FALSE) If instead R2 and R3 had voted yes (with R1 and R4 voting no), the candidate would be approved under the same rule.\n\nThis is also exactly 2 yes-votes, but R1 is not among them (R2, R3 voted yes, not R1) - so neither the “at least 3” clause nor the R1 tie-break clause is satisfied.\n\n**3.** (TRUE) If exactly three reviewers vote yes, the candidate is always approved, regardless of which three they are.\n\nThe “at least three yes” clause applies unconditionally to any group of three or more, with no special requirement about which reviewers they are.\n\n**4.** (FALSE) R1's yes-vote is necessary for approval in every possible voting scenario.\n\nFor example, if R2, R3, and R4 all vote yes (3 yes-votes) while R1 votes no, the “at least three” clause is satisfied without R1's vote at all.\n\n**5.** (TRUE) There exists a scenario with exactly 2 yes-votes where the candidate is not approved.\n\nFor example, if R2 and R3 vote yes (without R1), that's exactly 2 yes-votes but without R1's involvement - neither clause is satisfied, so the candidate is not approved.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-96",
+    "case_id": "MATH 1.96",
+    "title": "A warranty voiding clause",
+    "subsection": "1.4",
+    "context": "The exception is conjunctive: BOTH written approval AND annual servicing are needed to keep a commercially-used product's warranty valid; missing either one alone lets the base \"void if commercial use\" rule apply. Company Z has approval but no servicing, so the exception fails an",
+    "statements": [
+      "Company Z's warranty is void.",
+      "Having written approval from the manufacturer alone is sufficient to keep the warranty valid despite commercial use.",
+      "The rule's exception requires both approval AND annual servicing to keep the warranty valid under commercial use - satisfying only one of the two is not enough.",
+      "If a company uses the product commercially without any manufacturer approval at all, the warranty could still remain valid provided they service it annually.",
+      "If Company Z had never used the product commercially at all, the annual-servicing requirement mentioned in the clause would still apply to it."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Company Z's warranty is void.**  (true)\n\nZ has approval but has not serviced the product annually, so the exception's full requirement (approval AND servicing) is not satisfied, and the commercial-use voiding rule applies.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Having written approval from the manufacturer alone is sufficient to keep the warranty valid despite commercial use.**  (false)\n\nAs shown in (a), approval alone did not save Z's warranty - annual servicing is also required by the exception clause.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) The rule's exception requires both approval AND annual servicing to keep the warranty valid under commercial use - satisfying only one of the two is not enough.**  (true)\n\nThis is a direct restatement of the clause's structure: the exception is conjunctive (approval AND servicing), not satisfied by either alone.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) If a company uses the product commercially without any manufacturer approval at all, the warranty could still remain valid provided they service it annually.**  (false)\n\nTrap: without approval, the exception's condition (approval AND servicing) automatically fails regardless of servicing - servicing alone cannot rescue the warranty. The base rule (void for commercial use) applies unconditionally here.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) If Company Z had never used the product commercially at all, the annual-servicing requirement mentioned in the clause would still apply to it.**  (false)\n\nThe servicing requirement is specifically part of the exception clause for commercial use; if there's no commercial use at all, this clause and its servicing condition are simply not triggered.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 6,
+    "solution_overview": "The exception is conjunctive: BOTH written approval AND annual servicing are needed to keep a commercially-used product's warranty valid; missing either one alone lets the base \"void if commercial use\" rule apply. Company Z has approval but no servicing, so the exception fails an\n\n**Part 1: Setup.**\n\nThe exception is conjunctive: BOTH written approval AND annual servicing are needed to keep a commercially-used product's warranty valid; missing either one alone lets the base \"void if commercial use\" rule apply. Company Z has approval but no servicing, so the exception fails and the warranty is void.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Company Z's warranty is void.\n\nZ has approval but has not serviced the product annually, so the exception's full requirement (approval AND servicing) is not satisfied, and the commercial-use voiding rule applies.\n\n**2.** (FALSE) Having written approval from the manufacturer alone is sufficient to keep the warranty valid despite commercial use.\n\nAs shown in (a), approval alone did not save Z's warranty - annual servicing is also required by the exception clause.\n\n**3.** (TRUE) The rule's exception requires both approval AND annual servicing to keep the warranty valid under commercial use - satisfying only one of the two is not enough.\n\nThis is a direct restatement of the clause's structure: the exception is conjunctive (approval AND servicing), not satisfied by either alone.\n\n**4.** (FALSE) If a company uses the product commercially without any manufacturer approval at all, the warranty could still remain valid provided they service it annually.\n\nTrap: without approval, the exception's condition (approval AND servicing) automatically fails regardless of servicing - servicing alone cannot rescue the warranty. The base rule (void for commercial use) applies unconditionally here.\n\n**5.** (FALSE) If Company Z had never used the product commercially at all, the annual-servicing requirement mentioned in the clause would still apply to it.\n\nThe servicing requirement is specifically part of the exception clause for commercial use; if there's no commercial use at all, this clause and its servicing condition are simply not triggered.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-97",
+    "case_id": "MATH 1.97",
+    "title": "Several independent mini-scenarios testing whether a proof o",
+    "subsection": "1.4",
+    "context": "Several independent mini-scenarios testing whether a proof or negation is correctly constructed.",
+    "statements": [
+      "Proving \"there is no smallest positive real number\" by assuming such a number x exists and noting x/2 is smaller (a contradiction) is a valid proof by contradiction.",
+      "A \"proof\" of \"√3 is irrational\" that begins \"Assume √3 is irrational...\" and proceeds from there is a valid proof by contradiction.",
+      "The negation of \"All flights are delayed and all trains are on time\" is \"No flight is delayed and no train is on time.\"",
+      "$For \"Some employee always arrives late\" ( an employee late every single day), the correct negation is \"All \\exists employees are never late.\"$",
+      "To prove x, P(x) true, one satisfying value suffices; to prove x, P(x) true, one needs a general argument $for \\exists \\forall$ an arbitrary x, not a finite check."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Proving \"there is no smallest positive real number\" by assuming such a number x exists and noting x/2 is smaller (a contradiction) is a valid proof by contradiction.**  (true)\n\nCorrect structure: assume the negation (a smallest positive real x exists), derive an impossibility (x/2 is smaller still), forcing the original claim true.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) A \"proof\" of \"√3 is irrational\" that begins \"Assume √3 is irrational...\" and proceeds from there is a valid proof by contradiction.**  (false)\n\nTrap: a real contradiction proof must assume the OPPOSITE of the claim - here \"Assume √3 IS rational...\" Assuming the claim itself is circular, not a contradiction proof.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) The negation of \"All flights are delayed and all trains are on time\" is \"No flight is delayed and no train is on time.\"**  (false)\n\nTrap: negating \"P Q\" gives \"$\\neg P$\\neg Q$\" (De Morgan), not \"$\\neg P$\\neg Q$.\" Correct: \"Some flight is $not \\land \\lor$\\land delayed$, OR some train is not on time.\"\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) $For \"Some employee always arrives late\" ( an employee late every single day), the correct negation is \"All \\exists employees are never late.\"$**  (false)\n\nTrap: the original is x, day, Late(x,day); its negation is x, day,$\\neg Late$(x,day) - \"every $employee \\exists \\forall$\\forall \\exists$ has at least one non-late day,\" weaker than \"all employees are never late\" ( x, day,$\\neg Late$).$\\forall \\forall$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) To prove x, P(x) true, one satisfying value suffices; to prove x, P(x) true, one needs a general argument $for \\exists \\forall$ an arbitrary x, not a finite check.**  (true)\n\nCore asymmetry: one witness settles an existential claim; a universal claim needs reasoning covering every case, since a finite check can't rule out an untested counterexample.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 7,
+    "solution_overview": "Several independent mini-scenarios testing whether a proof or negation is correctly constructed.\n\n**Part 1: Setup.**\n\nTwo separate skills are tested: (1) contradiction proofs must assume the OPPOSITE of the target claim, never the claim itself; (2) negating compound/quantified statements follows fixed rules -$\\neg$(P Q)≡$\\neg P$\\neg Q$\\land \\lor$ (De Morgan), $and \\neg$( x day,...) swaps to x day,$\\neg$(...), not the much stronger x day,$\\neg$(...).$\\exists \\forall$\\forall \\exists$\\forall \\forall$\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Proving \"there is no smallest positive real number\" by assuming such a number x exists and noting x/2 is smaller (a contradiction) is a valid proof by contradiction.\n\nCorrect structure: assume the negation (a smallest positive real x exists), derive an impossibility (x/2 is smaller still), forcing the original claim true.\n\n**2.** (FALSE) A \"proof\" of \"√3 is irrational\" that begins \"Assume √3 is irrational...\" and proceeds from there is a valid proof by contradiction.\n\nTrap: a real contradiction proof must assume the OPPOSITE of the claim - here \"Assume √3 IS rational...\" Assuming the claim itself is circular, not a contradiction proof.\n\n**3.** (FALSE) The negation of \"All flights are delayed and all trains are on time\" is \"No flight is delayed and no train is on time.\"\n\nTrap: negating \"P Q\" gives \"$\\neg P$\\neg Q$\" (De Morgan), not \"$\\neg P$\\neg Q$.\" Correct: \"Some flight is $not \\land \\lor$\\land delayed$, OR some train is not on time.\"\n\n**4.** (FALSE) $For \"Some employee always arrives late\" ( an employee late every single day), the correct negation is \"All \\exists employees are never late.\"$\n\nTrap: the original is x, day, Late(x,day); its negation is x, day,$\\neg Late$(x,day) - \"every $employee \\exists \\forall$\\forall \\exists$ has at least one non-late day,\" weaker than \"all employees are never late\" ( x, day,$\\neg Late$).$\\forall \\forall$\n\n**5.** (TRUE) To prove x, P(x) true, one satisfying value suffices; to prove x, P(x) true, one needs a general argument $for \\exists \\forall$ an arbitrary x, not a finite check.\n\nCore asymmetry: one witness settles an existential claim; a universal claim needs reasoning covering every case, since a finite check can't rule out an untested counterexample.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-98",
+    "case_id": "MATH 1.98",
+    "title": "Validity versus soundness",
+    "subsection": "1.4",
+    "context": "Trace the logical chain: Premise 2 guarantees some economist-who-does-game-theory exists; Premise 1 guarantees that same person studies human behavior - so the conclusion necessarily follows, making the argument VALID regardless of whether the premises are actually true in realit",
+    "statements": [
+      "The argument is logically valid (the conclusion necessarily follows from the premises).",
+      "The argument would still be valid if Premise 2 were changed to “No economists specialize in game theory.”",
+      "Validity means the conclusion is guaranteed true whenever the premises are true - it does not require the premises to actually be true in reality.",
+      "If Premise 1 were false in reality, the argument could still be considered valid, even though it would then be unsound.",
+      "This argument is an example of the fallacy of “affirming the consequent.”"
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The argument is logically valid (the conclusion necessarily follows from the premises).**  (true)\n\nPremise 2 guarantees some economist who also does game theory exists; Premise 1 guarantees that same person studies human behavior - so that person satisfies both game theory and studying human behavior, making the conclusion follow necessarily.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) The argument would still be valid if Premise 2 were changed to “No economists specialize in game theory.”**  (false)\n\nWith no economists doing game theory, the reasoning path used above breaks down entirely, and the conclusion no longer follows from the premises - changing Premise 2 this way removes the very link the valid argument depended on.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) Validity means the conclusion is guaranteed true whenever the premises are true - it does not require the premises to actually be true in reality.**  (true)\n\nThis is the standard distinction between validity (a property of the argument's logical structure) and soundness (which additionally requires true premises).\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) If Premise 1 were false in reality, the argument could still be considered valid, even though it would then be unsound.**  (true)\n\nValidity only concerns whether the conclusion follows from the premises, not whether the premises are actually true - a valid argument with a false premise is simply unsound, not invalid.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) This argument is an example of the fallacy of “affirming the consequent.”**  (false)\n\n“Affirming the consequent” is a fallacy specific to conditional (if-then) reasoning; this argument instead uses quantified categorical statements and is, in fact, a valid inference, not a fallacy at all.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 8,
+    "solution_overview": "Trace the logical chain: Premise 2 guarantees some economist-who-does-game-theory exists; Premise 1 guarantees that same person studies human behavior - so the conclusion necessarily follows, making the argument VALID regardless of whether the premises are actually true in realit\n\n**Part 1: Setup.**\n\nTrace the logical chain: Premise 2 guarantees some economist-who-does-game-theory exists; Premise 1 guarantees that same person studies human behavior - so the conclusion necessarily follows, making the argument VALID regardless of whether the premises are actually true in reality (a separate property, \"soundness\").\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The argument is logically valid (the conclusion necessarily follows from the premises).\n\nPremise 2 guarantees some economist who also does game theory exists; Premise 1 guarantees that same person studies human behavior - so that person satisfies both game theory and studying human behavior, making the conclusion follow necessarily.\n\n**2.** (FALSE) The argument would still be valid if Premise 2 were changed to “No economists specialize in game theory.”\n\nWith no economists doing game theory, the reasoning path used above breaks down entirely, and the conclusion no longer follows from the premises - changing Premise 2 this way removes the very link the valid argument depended on.\n\n**3.** (TRUE) Validity means the conclusion is guaranteed true whenever the premises are true - it does not require the premises to actually be true in reality.\n\nThis is the standard distinction between validity (a property of the argument's logical structure) and soundness (which additionally requires true premises).\n\n**4.** (TRUE) If Premise 1 were false in reality, the argument could still be considered valid, even though it would then be unsound.\n\nValidity only concerns whether the conclusion follows from the premises, not whether the premises are actually true - a valid argument with a false premise is simply unsound, not invalid.\n\n**5.** (FALSE) This argument is an example of the fallacy of “affirming the consequent.”\n\n“Affirming the consequent” is a fallacy specific to conditional (if-then) reasoning; this argument instead uses quantified categorical statements and is, in fact, a valid inference, not a fallacy at all.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-99",
+    "case_id": "MATH 1.99",
+    "title": "A sports fan claims P Q: ⇒ \"If a player scores over 30 point",
+    "subsection": "1.4",
+    "context": "A sports fan claims P Q:$\\Rightarrow$\"If a player scores over 30 points in a game, the team wins.\" In one specific game, Player X scored 35 points, but the team lost 90-95.",
+    "statements": [
+      "This specific game is a valid counterexample that disproves the fan's general rule.",
+      "Given this counterexample, the statement \"there exists a game where a player scored over 30 points and the team did not win\" is true.",
+      "Since the original rule is false, its contrapositive, \"If the team does not win, then no player scored over 30 points,\" must also be false.",
+      "Because the original rule is false, its converse, \"If the team wins, then some player scored over 30 points,\" is therefore also automatically false.",
+      "The inverse, \"If a player does not score over 30 points, the team does not win,\" has a truth value that is independent of the original rule's truth value."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) This specific game is a valid counterexample that disproves the fan's general rule.**  (true)\n\nPlayer X has P true (35 > 30 points) and Q false (team lost), exactly the condition that falsifies a universal implication.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Given this counterexample, the statement \"there exists a game where a player scored over 30 points and the team did not win\" is true.**  (true)\n\n$This is simply the negation of the universal rule, (game), P \\neg Q, and the described game is a \\exists \\land witness to it.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) Since the original rule is false, its contrapositive, \"If the team does not win, then no player scored over 30 points,\" must also be false.**  (true)\n\nThe contrapositive is always logically equivalent to the original statement, so if the original is false, the contrapositive must be false too.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) Because the original rule is false, its converse, \"If the team wins, then some player scored over 30 points,\" is therefore also automatically false.**  (false)\n\nTrap: a statement's truth value never determines its converse's truth value - they are logically independent claims. The converse would need to be checked on its own (e.g., against games the team won with no 30-point scorer) rather than inferred from the original being false.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) The inverse, \"If a player does not score over 30 points, the team does not win,\" has a truth value that is independent of the original rule's truth value.**  (true)\n\nThe inverse ($\\neg P$\\neg Q$) is only equivalent to the converse, not the original - so knowing the $original \\Rightarrow is$ false tells us nothing about the inverse either way; it must be evaluated independently.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 9,
+    "solution_overview": "A sports fan claims P Q:$\\Rightarrow$\"If a player scores over 30 points in a game, the team wins.\" In one specific game, Player X scored 35 points, but the team lost 90-95.\n\n**Part 1: Setup.**\n\nOnce a single real counterexample (35 points, team still lost) disproves P Q, $its \\Rightarrow CONTRAPOSITIVE$ is automatically false too (always equivalent) - but the CONVERSE and INVERSE are logically INDEPENDENT of the original's truth value and must be checked on their own terms.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) This specific game is a valid counterexample that disproves the fan's general rule.\n\nPlayer X has P true (35 > 30 points) and Q false (team lost), exactly the condition that falsifies a universal implication.\n\n**2.** (TRUE) Given this counterexample, the statement \"there exists a game where a player scored over 30 points and the team did not win\" is true.\n\n$This is simply the negation of the universal rule, (game), P \\neg Q, and the described game is a \\exists \\land witness to it.$\n\n**3.** (TRUE) Since the original rule is false, its contrapositive, \"If the team does not win, then no player scored over 30 points,\" must also be false.\n\nThe contrapositive is always logically equivalent to the original statement, so if the original is false, the contrapositive must be false too.\n\n**4.** (FALSE) Because the original rule is false, its converse, \"If the team wins, then some player scored over 30 points,\" is therefore also automatically false.\n\nTrap: a statement's truth value never determines its converse's truth value - they are logically independent claims. The converse would need to be checked on its own (e.g., against games the team won with no 30-point scorer) rather than inferred from the original being false.\n\n**5.** (TRUE) The inverse, \"If a player does not score over 30 points, the team does not win,\" has a truth value that is independent of the original rule's truth value.\n\nThe inverse ($\\neg P$\\neg Q$) is only equivalent to the converse, not the original - so knowing the $original \\Rightarrow is$ false tells us nothing about the inverse either way; it must be evaluated independently.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-100",
+    "case_id": "MATH 1.100",
+    "title": "A grading curve rule",
+    "subsection": "1.4",
+    "context": "The rule has two thresholds: 70 (no curve) or 60 (with curve applied) for a B or higher. This exam had the curve applied, so W's 65 is compared against 60, not 70 - and 65≥60 clears it, even though 65<70 would have failed without the curve.",
+    "statements": [
+      "Student W receives a B or higher on this exam.",
+      "If the curve had not been applied, Student W would still receive a B or higher.",
+      "The curve strictly lowers the threshold needed for a B or higher - it never raises it, based on how the rule is described.",
+      "A student who scored 62 would receive a B or higher only if the curve is applied.",
+      "The phrase “if and only if” in the rule means that scoring at least 70 is both necessary and sufficient for a B or higher under all circumstances, curve or no curve."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Student W receives a B or higher on this exam.**  (true)\n\nWith the curve applied, the threshold is 60; W's score of 65 meets this threshold.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) If the curve had not been applied, Student W would still receive a B or higher.**  (false)\n\nWithout the curve, the threshold is 70; W's score of 65 falls short of that, so W would not receive a B or higher in that case.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) The curve strictly lowers the threshold needed for a B or higher - it never raises it, based on how the rule is described.**  (true)\n\nAs described in the rule, the curve always changes the threshold from 70 down to 60 - a decrease, making it easier to achieve a B or higher, never harder.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) A student who scored 62 would receive a B or higher only if the curve is applied.**  (true)\n\nA score of 62 fails the no-curve threshold (70) but meets the curved threshold (60), so the curve being applied is necessary for this particular student to receive a B or higher.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) The phrase “if and only if” in the rule means that scoring at least 70 is both necessary and sufficient for a B or higher under all circumstances, curve or no curve.**  (false)\n\nThis overreaches: the “if and only if” with threshold 70 only describes the baseline (no-curve) scenario. When a curve is applied, the operative threshold changes to 60, so 70 is not the necessary-and- sufficient threshold “under all circumstances” - only in the absence of a curve.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 10,
+    "solution_overview": "The rule has two thresholds: 70 (no curve) or 60 (with curve applied) for a B or higher. This exam had the curve applied, so W's 65 is compared against 60, not 70 - and 65≥60 clears it, even though 65<70 would have failed without the curve.\n\n**Part 1: Setup.**\n\nThe rule has two thresholds: 70 (no curve) or 60 (with curve applied) for a B or higher. This exam had the curve applied, so W's 65 is compared against 60, not 70 - and 65≥60 clears it, even though 65<70 would have failed without the curve.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Student W receives a B or higher on this exam.\n\nWith the curve applied, the threshold is 60; W's score of 65 meets this threshold.\n\n**2.** (FALSE) If the curve had not been applied, Student W would still receive a B or higher.\n\nWithout the curve, the threshold is 70; W's score of 65 falls short of that, so W would not receive a B or higher in that case.\n\n**3.** (TRUE) The curve strictly lowers the threshold needed for a B or higher - it never raises it, based on how the rule is described.\n\nAs described in the rule, the curve always changes the threshold from 70 down to 60 - a decrease, making it easier to achieve a B or higher, never harder.\n\n**4.** (TRUE) A student who scored 62 would receive a B or higher only if the curve is applied.\n\nA score of 62 fails the no-curve threshold (70) but meets the curved threshold (60), so the curve being applied is necessary for this particular student to receive a B or higher.\n\n**5.** (FALSE) The phrase “if and only if” in the rule means that scoring at least 70 is both necessary and sufficient for a B or higher under all circumstances, curve or no curve.\n\nThis overreaches: the “if and only if” with threshold 70 only describes the baseline (no-curve) scenario. When a curve is applied, the operative threshold changes to 60, so 70 is not the necessary-and- sufficient threshold “under all circumstances” - only in the absence of a curve.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-101",
+    "case_id": "MATH 1.101",
+    "title": "Gear teeth and coprimality",
+    "subsection": "1.4",
+    "context": "Factor each pair to check for shared primes: 15=$3 \\times 5$, 28=2^$2 \\times 7$ (no shared prime gcd=1,$\\Rightarrow coprime$); 24=2^$3 \\times 3$, 36=2^$2 \\times 3$^2 (share both 2 and 3 gcd=12, NOT coprime). Coprimality only requires no $SHARED \\Rightarrow prime$ factor - individual numbers can still be composite, and any two even numbers au",
+    "statements": [
+      "Pair 1 (15 and 28) is coprime, so this pair will wear evenly.",
+      "Pair 2 (24 and 36) is coprime.",
+      "The correct negation of \"m and n are coprime\" is: \"there exists a prime p such that p divides m and p divides n.\"",
+      "If m and n are coprime and both are greater than 1, then m and n cannot both be even numbers.",
+      "Every coprime pair of integers greater than 1 must include at least one prime number."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Pair 1 (15 and 28) is coprime, so this pair will wear evenly.**  (true)\n\n$15 = 3 \\times 5 and 28 = 2^2 \\times 7 share no common prime factor, so gcd(15, 28) = 1 - the pair is coprime and will wear evenly.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Pair 2 (24 and 36) is coprime.**  (false)\n\n$24 = 2^3 \\times 3 and 36 = 2^2 \\times 3^2 both share the prime factors 2 and 3, so gcd(24, 36) = 12 ≠ 1 - the pair is not coprime.$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) The correct negation of \"m and n are coprime\" is: \"there exists a prime p such that p divides m and p divides n.\"**  (true)\n\nNegating \"for every prime p, not (p|m and p|n)\" flips the universal quantifier to existential and negates the inner statement, giving exactly \"there exists a prime p such that p divides both m and n.\"\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) If m and n are coprime and both are greater than 1, then m and n cannot both be even numbers.**  (true)\n\nIf both m and n were even, then 2 would divide both, so 2 would be a common prime factor - contradicting gcd(m, n) = 1. So coprime numbers cannot both be even.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) Every coprime pair of integers greater than 1 must include at least one prime number.**  (false)\n\nPair 1 (15 and 28) is coprime by part (a), yet neither 15 (= $3 \\times 5$) nor 28 (= 2^$2 \\times 7$) is itself prime. A coprime pair only needs to share no common prime factor - each number individually can still be composite.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 11,
+    "solution_overview": "Factor each pair to check for shared primes: 15=$3 \\times 5$, 28=2^$2 \\times 7$ (no shared prime gcd=1,$\\Rightarrow coprime$); 24=2^$3 \\times 3$, 36=2^$2 \\times 3$^2 (share both 2 and 3 gcd=12, NOT coprime). Coprimality only requires no $SHARED \\Rightarrow prime$ factor - individual numbers can still be composite, and any two even numbers au\n\n**Part 1: Setup.**\n\nFactor each pair to check for shared primes: 15=$3 \\times 5$, 28=2^$2 \\times 7$ (no shared prime gcd=1,$\\Rightarrow coprime$); 24=2^$3 \\times 3$, 36=2^$2 \\times 3$^2 (share both 2 and 3 gcd=12, NOT coprime). Coprimality only requires no $SHARED \\Rightarrow prime$ factor - individual numbers can still be composite, and any two even numbers automatically share the prime 2.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Pair 1 (15 and 28) is coprime, so this pair will wear evenly.\n\n$15 = 3 \\times 5 and 28 = 2^2 \\times 7 share no common prime factor, so gcd(15, 28) = 1 - the pair is coprime and will wear evenly.$\n\n**2.** (FALSE) Pair 2 (24 and 36) is coprime.\n\n$24 = 2^3 \\times 3 and 36 = 2^2 \\times 3^2 both share the prime factors 2 and 3, so gcd(24, 36) = 12 ≠ 1 - the pair is not coprime.$\n\n**3.** (TRUE) The correct negation of \"m and n are coprime\" is: \"there exists a prime p such that p divides m and p divides n.\"\n\nNegating \"for every prime p, not (p|m and p|n)\" flips the universal quantifier to existential and negates the inner statement, giving exactly \"there exists a prime p such that p divides both m and n.\"\n\n**4.** (TRUE) If m and n are coprime and both are greater than 1, then m and n cannot both be even numbers.\n\nIf both m and n were even, then 2 would divide both, so 2 would be a common prime factor - contradicting gcd(m, n) = 1. So coprime numbers cannot both be even.\n\n**5.** (FALSE) Every coprime pair of integers greater than 1 must include at least one prime number.\n\nPair 1 (15 and 28) is coprime by part (a), yet neither 15 (= $3 \\times 5$) nor 28 (= 2^$2 \\times 7$) is itself prime. A coprime pair only needs to share no common prime factor - each number individually can still be composite.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-102",
+    "case_id": "MATH 1.102",
+    "title": "A subscription renewal and refund policy",
+    "subsection": "1.4",
+    "context": "Two branches depending on cancellation timing: ≥3 days before clean non-renewal ($refund \\Rightarrow clause$ never triggered); <3 days before renews, AND a refund is issued iff usage<10%. K cancelled 2 days $before \\Rightarrow$(renews-branch) with 15% usage (≥10%, fails refund condition) renews, no ref",
+    "statements": [
+      "Subscriber K's subscription renews (K is charged for the next period).",
+      "Subscriber K receives a partial refund.",
+      "If K had used only 5% of the service instead, K would have received a partial refund.",
+      "If K had cancelled 4 days before the renewal date instead of 2, the subscription would not have renewed, and the 15% usage figure would then be irrelevant to any refund consideration.",
+      "The refund condition (usage below 10%) applies regardless of how many days before the renewal date the subscriber cancels."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Subscriber K's subscription renews (K is charged for the next period).**  (true)\n\nK cancelled only 2 days before (fewer than 3), which falls under the “still renews” branch of the policy.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Subscriber K receives a partial refund.**  (false)\n\nThe refund requires usage below 10%; K used 15%, which fails this condition, so no refund is issued despite the subscription renewing.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) If K had used only 5% of the service instead, K would have received a partial refund.**  (true)\n\n5% is below the 10% threshold, and K still cancelled fewer than 3 days before, so the refund condition (usage < 10%, within the applicable branch) would be satisfied.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) If K had cancelled 4 days before the renewal date instead of 2, the subscription would not have renewed, and the 15% usage figure would then be irrelevant to any refund consideration.**  (true)\n\n4 days before is at least 3 days, placing this scenario in the first branch (clean non-renewal, no charge) - the refund clause, which only applies in the “fewer than 3 days” branch, would never even be triggered, making the usage percentage moot.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) The refund condition (usage below 10%) applies regardless of how many days before the renewal date the subscriber cancels.**  (false)\n\nThe refund condition is only relevant within the “fewer than 3 days before” branch; if cancelling at least 3 days before, there's no renewal or charge at all, so the usage-based refund clause doesn't come into play.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 12,
+    "solution_overview": "Two branches depending on cancellation timing: ≥3 days before clean non-renewal ($refund \\Rightarrow clause$ never triggered); <3 days before renews, AND a refund is issued iff usage<10%. K cancelled 2 days $before \\Rightarrow$(renews-branch) with 15% usage (≥10%, fails refund condition) renews, no ref\n\n**Part 1: Setup.**\n\nTwo branches depending on cancellation timing: ≥3 days before clean non-renewal ($refund \\Rightarrow clause$ never triggered); <3 days before renews, AND a refund is issued iff usage<10%. K cancelled 2 days $before \\Rightarrow$(renews-branch) with 15% usage (≥10%, fails refund condition) renews, no refund.$\\Rightarrow$\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Subscriber K's subscription renews (K is charged for the next period).\n\nK cancelled only 2 days before (fewer than 3), which falls under the “still renews” branch of the policy.\n\n**2.** (FALSE) Subscriber K receives a partial refund.\n\nThe refund requires usage below 10%; K used 15%, which fails this condition, so no refund is issued despite the subscription renewing.\n\n**3.** (TRUE) If K had used only 5% of the service instead, K would have received a partial refund.\n\n5% is below the 10% threshold, and K still cancelled fewer than 3 days before, so the refund condition (usage < 10%, within the applicable branch) would be satisfied.\n\n**4.** (TRUE) If K had cancelled 4 days before the renewal date instead of 2, the subscription would not have renewed, and the 15% usage figure would then be irrelevant to any refund consideration.\n\n4 days before is at least 3 days, placing this scenario in the first branch (clean non-renewal, no charge) - the refund clause, which only applies in the “fewer than 3 days” branch, would never even be triggered, making the usage percentage moot.\n\n**5.** (FALSE) The refund condition (usage below 10%) applies regardless of how many days before the renewal date the subscriber cancels.\n\nThe refund condition is only relevant within the “fewer than 3 days before” branch; if cancelling at least 3 days before, there's no renewal or charge at all, so the usage-based refund clause doesn't come into play.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-103",
+    "case_id": "MATH 1.103",
+    "title": "A clinical guideline states P Q: ⇒ \"If a patient has a fever",
+    "subsection": "1.4",
+    "context": "A clinical guideline states P Q:$\\Rightarrow$\"If a patient has a fever above 38°C, then antibiotics are prescribed.\"",
+    "statements": [
+      "The negation of the guideline is: \"A patient has a fever above 38°C and is not prescribed antibiotics.\" If observed, this would show the guideline was violated.",
+      "A patient with a temperature of exactly 38.0°C who is not prescribed antibiotics is a valid counterexample to the guideline.",
+      "The inverse, \"If a patient's fever is not above 38°C, they are not prescribed antibiotics,\" could be false in practice - e.g. a patient with a bacterial infection and only 37.5°C fever might still receive antibiotics.",
+      "The converse, \"If a patient is prescribed antibiotics, their fever is above 38°C,\" is logically guaranteed by the original guideline.",
+      "A proof by contradiction of \"not every patient prescribed antibiotics has a fever above 38°C\" would begin by assuming the opposite - that every such patient DOES have a fever above 38°C - and then exhibit a real case (like the one in part c) that violates that assumption."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The negation of the guideline is: \"A patient has a fever above 38°C and is not prescribed antibiotics.\" If observed, this would show the guideline was violated.**  (true)\n\nThe negation of P Q is $P \\neg Q$, correctly formed here - and observing it in reality would $indeed \\Rightarrow \\land$ mean the guideline was broken.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) A patient with a temperature of exactly 38.0°C who is not prescribed antibiotics is a valid counterexample to the guideline.**  (false)\n\nTrap: a valid counterexample needs P strictly true. \"Above 38°C\" excludes exactly 38.0°C, so P is false for this patient, and the guideline makes no claim about them - not a counterexample.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) The inverse, \"If a patient's fever is not above 38°C, they are not prescribed antibiotics,\" could be false in practice - e.g. a patient with a bacterial infection and only 37.5°C fever might still receive antibiotics.**  (true)\n\nThis describes a realistic scenario $where \\neg P$ (fever not above 38°C) holds but Q (antibiotics prescribed) is still true - breaking the $inverse \\neg P$\\neg Q$, since antibiotics can be prescribed for reasons $other \\Rightarrow than$ fever level.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) The converse, \"If a patient is prescribed antibiotics, their fever is above 38°C,\" is logically guaranteed by the original guideline.**  (false)\n\n$Trap: this is the converse Q P, not guaranteed. Antibiotics may be prescribed for infections \\Rightarrow unrelated to a high fever.$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) A proof by contradiction of \"not every patient prescribed antibiotics has a fever above 38°C\" would begin by assuming the opposite - that every such patient DOES have a fever above 38°C - and then exhibit a real case (like the one in part c) that violates that assumption.**  (true)\n\nThis is the standard structure of contradiction proofs: assume the negation of the target claim, then produce a case that makes that assumption impossible.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 13,
+    "solution_overview": "A clinical guideline states P Q:$\\Rightarrow$\"If a patient has a fever above 38°C, then antibiotics are prescribed.\"\n\n**Part 1: Setup.**\n\nA valid counterexample to P Q needs P STRICTLY true - exactly 38.0°C fails \"above 38°C,\"$\\Rightarrow so$ it's automatically outside the rule's scope, not a counterexample. The converse (Q P) fails easily since $antibiotics \\Rightarrow get$ prescribed for many other reasons; only the contrapositive is guaranteed.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The negation of the guideline is: \"A patient has a fever above 38°C and is not prescribed antibiotics.\" If observed, this would show the guideline was violated.\n\nThe negation of P Q is $P \\neg Q$, correctly formed here - and observing it in reality would $indeed \\Rightarrow \\land$ mean the guideline was broken.\n\n**2.** (FALSE) A patient with a temperature of exactly 38.0°C who is not prescribed antibiotics is a valid counterexample to the guideline.\n\nTrap: a valid counterexample needs P strictly true. \"Above 38°C\" excludes exactly 38.0°C, so P is false for this patient, and the guideline makes no claim about them - not a counterexample.\n\n**3.** (TRUE) The inverse, \"If a patient's fever is not above 38°C, they are not prescribed antibiotics,\" could be false in practice - e.g. a patient with a bacterial infection and only 37.5°C fever might still receive antibiotics.\n\nThis describes a realistic scenario $where \\neg P$ (fever not above 38°C) holds but Q (antibiotics prescribed) is still true - breaking the $inverse \\neg P$\\neg Q$, since antibiotics can be prescribed for reasons $other \\Rightarrow than$ fever level.\n\n**4.** (FALSE) The converse, \"If a patient is prescribed antibiotics, their fever is above 38°C,\" is logically guaranteed by the original guideline.\n\n$Trap: this is the converse Q P, not guaranteed. Antibiotics may be prescribed for infections \\Rightarrow unrelated to a high fever.$\n\n**5.** (TRUE) A proof by contradiction of \"not every patient prescribed antibiotics has a fever above 38°C\" would begin by assuming the opposite - that every such patient DOES have a fever above 38°C - and then exhibit a real case (like the one in part c) that violates that assumption.\n\nThis is the standard structure of contradiction proofs: assume the negation of the target claim, then produce a case that makes that assumption impossible.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-104",
+    "case_id": "MATH 1.104",
+    "title": "A security policy claims P Q: ⇒ \"If a password is at least 1",
+    "subsection": "1.4",
+    "context": "A security policy claims P Q:$\\Rightarrow$\"If a password is at least 12 characters, it is classified as strong.\" The password \"aaaaaaaaaaaa\" (12 identical letters) is NOT classified as strong due to low complexity.",
+    "statements": [
+      "The password \"aaaaaaaaaaaa\" is a genuine counterexample showing the policy's claim P Q is false as $an \\Rightarrow absolute$ rule.",
+      "The converse, \"If a password is strong, it is at least 12 characters,\" is a logically separate claim whose truth must be checked independently of the original.",
+      "An 8-character, highly randomized password not classified as strong under this system directly disproves the converse.",
+      "The inverse, \"If a password is under 12 characters, it is not strong,\" is logically equivalent to the contrapositive - so its truth cannot be inferred from the converse.",
+      "Since the contrapositive of a false statement can sometimes still be true, we cannot determine whether \"If a password is not strong, it is under 12 characters\" is true or false without checking it separately from the original policy."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The password \"aaaaaaaaaaaa\" is a genuine counterexample showing the policy's claim P Q is false as $an \\Rightarrow absolute$ rule.**  (true)\n\n$This password has P true (12 characters) and Q false (not strong), which is exactly the condition that breaks the universal claim P Q. \\Rightarrow$\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) The converse, \"If a password is strong, it is at least 12 characters,\" is a logically separate claim whose truth must be checked independently of the original.**  (true)\n\nThe converse Q P is a distinct logical claim from P Q; one being false says nothing about $the \\Rightarrow \\Rightarrow$ other, so it must be evaluated on its own terms.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) An 8-character, highly randomized password not classified as strong under this system directly disproves the converse.**  (false)\n\nTrap: the converse states \"strong ≥12 characters,\" i.e. Q P. An 8-character password that is $not \\Rightarrow \\Rightarrow$ strong $has \\neg Q$, which places no requirement on P at all - since Q is false, the converse is not even tested here, so this password cannot disprove it.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) The inverse, \"If a password is under 12 characters, it is not strong,\" is logically equivalent to the contrapositive - so its truth cannot be inferred from the converse.**  (false)\n\nTrap: the inverse ($\\neg P$\\neg Q$) is always logically equivalent to the CONVERSE (Q P), not $the \\Rightarrow \\Rightarrow$ contrapositive - each is the contrapositive of the OTHER, so this statement swaps the correct pairing.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) Since the contrapositive of a false statement can sometimes still be true, we cannot determine whether \"If a password is not strong, it is under 12 characters\" is true or false without checking it separately from the original policy.**  (false)\n\nTrap: the contrapositive ALWAYS shares the same truth value as the original statement - this is a structural guarantee, not a \"sometimes.\" Since the original is false (see part a), the contrapositive is therefore also false, with no separate check needed.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 14,
+    "solution_overview": "A security policy claims P Q:$\\Rightarrow$\"If a password is at least 12 characters, it is classified as strong.\" The password \"aaaaaaaaaaaa\" (12 identical letters) is NOT classified as strong due to low complexity.\n\n**Part 1: Setup.**\n\nA single counterexample disproves P Q as an absolute rule. From there: the $CONVERSE \\Rightarrow$(Q P) is a separate claim needing its own check; the INVERSE is always equivalent to the $CONVERSE \\Rightarrow specifically$ (not the contrapositive); and the CONTRAPOSITIVE always shares the ORIGINAL's truth value (not the converse's) - three distinct pairings that are easy to cross up.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The password \"aaaaaaaaaaaa\" is a genuine counterexample showing the policy's claim P Q is false as $an \\Rightarrow absolute$ rule.\n\n$This password has P true (12 characters) and Q false (not strong), which is exactly the condition that breaks the universal claim P Q. \\Rightarrow$\n\n**2.** (TRUE) The converse, \"If a password is strong, it is at least 12 characters,\" is a logically separate claim whose truth must be checked independently of the original.\n\nThe converse Q P is a distinct logical claim from P Q; one being false says nothing about $the \\Rightarrow \\Rightarrow$ other, so it must be evaluated on its own terms.\n\n**3.** (FALSE) An 8-character, highly randomized password not classified as strong under this system directly disproves the converse.\n\nTrap: the converse states \"strong ≥12 characters,\" i.e. Q P. An 8-character password that is $not \\Rightarrow \\Rightarrow$ strong $has \\neg Q$, which places no requirement on P at all - since Q is false, the converse is not even tested here, so this password cannot disprove it.\n\n**4.** (FALSE) The inverse, \"If a password is under 12 characters, it is not strong,\" is logically equivalent to the contrapositive - so its truth cannot be inferred from the converse.\n\nTrap: the inverse ($\\neg P$\\neg Q$) is always logically equivalent to the CONVERSE (Q P), not $the \\Rightarrow \\Rightarrow$ contrapositive - each is the contrapositive of the OTHER, so this statement swaps the correct pairing.\n\n**5.** (FALSE) Since the contrapositive of a false statement can sometimes still be true, we cannot determine whether \"If a password is not strong, it is under 12 characters\" is true or false without checking it separately from the original policy.\n\nTrap: the contrapositive ALWAYS shares the same truth value as the original statement - this is a structural guarantee, not a \"sometimes.\" Since the original is false (see part a), the contrapositive is therefore also false, with no separate check needed.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-105",
+    "case_id": "MATH 1.105",
+    "title": "Factory batch inspection",
+    "subsection": "1.4",
+    "context": "The manager's claim is a universal statement (\"every chip passes\"); chip #317 is one counterexample, enough to make it false - but the correct negation is only \"SOME chip fails,\" not \"ALL chips fail\" (a common overreach). Separately, Batch 13 has zero chips, so any universal clai",
+    "statements": [
+      "The manager's claim about Batch 12 is false.",
+      "The correct negation of the manager's claim is: \"All chips in Batch 12 fail the stress test.\"",
+      "The statement \"All chips in Batch 13 pass the stress test\" is vacuously true.",
+      "\"For every chip that failed, there exists a defect code explaining that specific failure\" means exactly the same thing as \"There exists a single defect code that explains every chip that failed.\"",
+      "The fact that chip #317 failed is, by itself, enough to prove that \"some chip in Batch 12 failed\" is true."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The manager's claim about Batch 12 is false.**  (true)\n\nThe claim is a universal statement (\"for every chip, it passes\"). Chip #317 is a single counterexample, which is enough to make the universal claim false.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) The correct negation of the manager's claim is: \"All chips in Batch 12 fail the stress test.\"**  (false)\n\nThe negation of \"for all chips, P holds\" is \"there exists a chip for which P fails,\" not \"for all chips, P fails.\" The correct negation is \"there exists at least one chip in Batch 12 that did not pass,\" which is a much weaker (and true) statement than \"all chips fail.\"\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) The statement \"All chips in Batch 13 pass the stress test\" is vacuously true.**  (true)\n\nBatch 13 has no chips at all, so the universal statement \"every chip in Batch 13 passes\" has nothing to check - it holds vacuously, exactly like x , P(x) is always true.$\\forall \\in$\\emptyset$\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) \"For every chip that failed, there exists a defect code explaining that specific failure\" means exactly the same thing as \"There exists a single defect code that explains every chip that failed.\"**  (false)\n\nThe order of quantifiers matters. \" failed chip a defect code\" only requires that each failed chip $has \\forall \\exists$ some explanation, possibly a different one each time. \" a single code failed chip\" is a much stronger $claim \\exists \\forall$ - one code explaining every failure. The first does not imply the second.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) The fact that chip #317 failed is, by itself, enough to prove that \"some chip in Batch 12 failed\" is true.**  (true)\n\n\"Some chip in Batch 12 failed\" is an existential statement, and exhibiting one concrete failing chip (#317) is precisely how such a statement is proven true.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 15,
+    "solution_overview": "The manager's claim is a universal statement (\"every chip passes\"); chip #317 is one counterexample, enough to make it false - but the correct negation is only \"SOME chip fails,\" not \"ALL chips fail\" (a common overreach). Separately, Batch 13 has zero chips, so any universal clai\n\n**Part 1: Setup.**\n\nThe manager's claim is a universal statement (\"every chip passes\"); chip #317 is one counterexample, enough to make it false - but the correct negation is only \"SOME chip fails,\" not \"ALL chips fail\" (a common overreach). Separately, Batch 13 has zero chips, so any universal claim about it is vacuously true by default.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The manager's claim about Batch 12 is false.\n\nThe claim is a universal statement (\"for every chip, it passes\"). Chip #317 is a single counterexample, which is enough to make the universal claim false.\n\n**2.** (FALSE) The correct negation of the manager's claim is: \"All chips in Batch 12 fail the stress test.\"\n\nThe negation of \"for all chips, P holds\" is \"there exists a chip for which P fails,\" not \"for all chips, P fails.\" The correct negation is \"there exists at least one chip in Batch 12 that did not pass,\" which is a much weaker (and true) statement than \"all chips fail.\"\n\n**3.** (TRUE) The statement \"All chips in Batch 13 pass the stress test\" is vacuously true.\n\nBatch 13 has no chips at all, so the universal statement \"every chip in Batch 13 passes\" has nothing to check - it holds vacuously, exactly like x , P(x) is always true.$\\forall \\in$\\emptyset$\n\n**4.** (FALSE) \"For every chip that failed, there exists a defect code explaining that specific failure\" means exactly the same thing as \"There exists a single defect code that explains every chip that failed.\"\n\nThe order of quantifiers matters. \" failed chip a defect code\" only requires that each failed chip $has \\forall \\exists$ some explanation, possibly a different one each time. \" a single code failed chip\" is a much stronger $claim \\exists \\forall$ - one code explaining every failure. The first does not imply the second.\n\n**5.** (TRUE) The fact that chip #317 failed is, by itself, enough to prove that \"some chip in Batch 12 failed\" is true.\n\n\"Some chip in Batch 12 failed\" is an existential statement, and exhibiting one concrete failing chip (#317) is precisely how such a statement is proven true.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-106",
+    "case_id": "MATH 1.106",
+    "title": "In number theory: P Q: ⇒ \"If n is divisible by 6, then n is",
+    "subsection": "1.4",
+    "context": "$In number theory: P Q: \\Rightarrow \"If n is divisible by 6, then n is divisible by 3.\"$",
+    "statements": [
+      "The negation, \"n is divisible by 6 and n is not divisible by 3,\" describes a situation that occurs for infinitely many integers n.",
+      "The converse, \"If n is divisible by 3, then n is divisible by 6,\" is false - n = 9 is a counterexample (divisible by 3, not by 6).",
+      "The inverse, \"If n is not divisible by 6, then n is not divisible by 3,\" is logically equivalent to the converse, so it is also false, with n = 9 again serving as its counterexample.",
+      "The contrapositive, \"If n is not divisible by 3, then n is not divisible by 6,\" is false for some integers n.",
+      "$Since the converse is false, the original statement \"n divisible by 6 n divisible by 3\" must also be false. \\Rightarrow$"
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The negation, \"n is divisible by 6 and n is not divisible by 3,\" describes a situation that occurs for infinitely many integers n.**  (false)\n\nTrap: since 6 = $2 \\times 3$, every multiple of 6 is automatically a multiple of 3, so the situation \"divisible by 6 but not by 3\" is impossible - the negation is unsatisfiable for EVERY integer n, not true for infinitely many.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**B) The converse, \"If n is divisible by 3, then n is divisible by 6,\" is false - n = 9 is a counterexample (divisible by 3, not by 6).**  (true)\n\n$9 is divisible by 3 but not by 6, directly breaking the converse Q P. \\Rightarrow$\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) The inverse, \"If n is not divisible by 6, then n is not divisible by 3,\" is logically equivalent to the converse, so it is also false, with n = 9 again serving as its counterexample.**  (true)\n\nThe $inverse \\neg P$\\neg Q$ is always logically equivalent to the converse Q P, so since the $converse \\Rightarrow \\Rightarrow$ fails at n = 9 (3 | 9 but 6 9), the inverse fails there too: n = 9 is not divisible by 6 ($\\neg P$ true) yet is divisible by 3 ∤ ($\\neg Q$ false).\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) The contrapositive, \"If n is not divisible by 3, then n is not divisible by 6,\" is false for some integers n.**  (false)\n\nTrap: the contrapositive is always equivalent to the original statement, and the original is materially true (any multiple of 6 is a multiple of 3), so the contrapositive is actually true for EVERY integer n, not false for some.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) $Since the converse is false, the original statement \"n divisible by 6 n divisible by 3\" must also be false. \\Rightarrow$**  (false)\n\nTrap: a statement's truth is independent of its converse's truth. The original \"6 3\" is true $precisely \\Rightarrow because$ 6 = $2 \\times 3$, regardless of the converse being false - confusing the two is a very common error.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 16,
+    "solution_overview": "$In number theory: P Q: \\Rightarrow \"If n is divisible by 6, then n is divisible by 3.\"$\n\n**Part 1: Setup.**\n\n\"n div by 6 n div by 3\" is TRUE for every integer (since 6=$2 \\times 3$), making its $negation \\Rightarrow impossible$ for ALL n, and its contrapositive TRUE for every n too - a statement's own truth is completely independent of whether its CONVERSE (\"n div by 3 n div by 6,\" false via n=9) happens to hold.$\\Rightarrow$\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (FALSE) The negation, \"n is divisible by 6 and n is not divisible by 3,\" describes a situation that occurs for infinitely many integers n.\n\nTrap: since 6 = $2 \\times 3$, every multiple of 6 is automatically a multiple of 3, so the situation \"divisible by 6 but not by 3\" is impossible - the negation is unsatisfiable for EVERY integer n, not true for infinitely many.\n\n**2.** (TRUE) The converse, \"If n is divisible by 3, then n is divisible by 6,\" is false - n = 9 is a counterexample (divisible by 3, not by 6).\n\n$9 is divisible by 3 but not by 6, directly breaking the converse Q P. \\Rightarrow$\n\n**3.** (TRUE) The inverse, \"If n is not divisible by 6, then n is not divisible by 3,\" is logically equivalent to the converse, so it is also false, with n = 9 again serving as its counterexample.\n\nThe $inverse \\neg P$\\neg Q$ is always logically equivalent to the converse Q P, so since the $converse \\Rightarrow \\Rightarrow$ fails at n = 9 (3 | 9 but 6 9), the inverse fails there too: n = 9 is not divisible by 6 ($\\neg P$ true) yet is divisible by 3 ∤ ($\\neg Q$ false).\n\n**4.** (FALSE) The contrapositive, \"If n is not divisible by 3, then n is not divisible by 6,\" is false for some integers n.\n\nTrap: the contrapositive is always equivalent to the original statement, and the original is materially true (any multiple of 6 is a multiple of 3), so the contrapositive is actually true for EVERY integer n, not false for some.\n\n**5.** (FALSE) $Since the converse is false, the original statement \"n divisible by 6 n divisible by 3\" must also be false. \\Rightarrow$\n\nTrap: a statement's truth is independent of its converse's truth. The original \"6 3\" is true $precisely \\Rightarrow because$ 6 = $2 \\times 3$, regardless of the converse being false - confusing the two is a very common error.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-107",
+    "case_id": "MATH 1.107",
+    "title": "ID number verification rule",
+    "subsection": "1.4",
+    "context": "The rule is n^2 even n even. Proof by CONTRAPOSITION assumes the negated $CONCLUSION \\Rightarrow$(n odd) and derives the negated HYPOTHESIS (n^2 odd) - not the reverse. Proof by CONTRADICTION instead assumes the whole rule is false (n^2 even AND n odd) and derives an impossibility. The rule an",
+    "statements": [
+      "Since 1234^2 is even, the rule guarantees that 1234 itself is even - which is indeed true.",
+      "To prove the rule by contraposition, one should assume the ID number is even and derive that its square is even.",
+      "Since 4321^2 is odd, the contrapositive form of the rule guarantees that 4321 itself is odd - which is indeed true.",
+      "The rule (\"if n^2 is even, then n is even\") and its converse (\"if n is even, then n^2 is even\") are logically the same statement.",
+      "A proof of this rule by contradiction would begin by assuming that n^2 is even AND n is odd, then deriving a contradiction from that assumption."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Since 1234^2 is even, the rule guarantees that 1234 itself is even - which is indeed true.**  (true)\n\n1234^2 = 1,522,756 is even, satisfying the rule's hypothesis, and 1234 itself is indeed even, satisfying the conclusion - consistent with the rule.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) To prove the rule by contraposition, one should assume the ID number is even and derive that its square is even.**  (false)\n\nProof by contraposition of \"n^2 even n even\" means assuming the negation of the conclusion (n $is \\Rightarrow odd$) and deriving the negation of the hypothesis (n^2 is odd) - not assuming n is even, which would be assuming the conclusion itself.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) Since 4321^2 is odd, the contrapositive form of the rule guarantees that 4321 itself is odd - which is indeed true.**  (true)\n\n$4321^2 = 18,671,041 is odd, so n^2 even fails, meaning n^2 odd. By the contrapositive (n^2 odd n odd), \\Rightarrow 4321 must be odd - and indeed 4321 is odd.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) The rule (\"if n^2 is even, then n is even\") and its converse (\"if n is even, then n^2 is even\") are logically the same statement.**  (false)\n\nA conditional statement and its converse are generally not logically equivalent. Although both happen to be true for even/odd squares of integers, as general logical forms \"P Q\" and \"Q P\" are $distinct \\Rightarrow \\Rightarrow$ statements - one can be true while the other is false in other contexts.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) A proof of this rule by contradiction would begin by assuming that n^2 is even AND n is odd, then deriving a contradiction from that assumption.**  (true)\n\nProof by contradiction of \"n^2 even n even\" assumes the statement is false, which means $the \\Rightarrow hypothesis$ holds (n^2 even) while the conclusion fails (n is odd); this exact combined assumption is then shown to lead to a contradiction.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 17,
+    "solution_overview": "The rule is n^2 even n even. Proof by CONTRAPOSITION assumes the negated $CONCLUSION \\Rightarrow$(n odd) and derives the negated HYPOTHESIS (n^2 odd) - not the reverse. Proof by CONTRADICTION instead assumes the whole rule is false (n^2 even AND n odd) and derives an impossibility. The rule an\n\n**Part 1: Setup.**\n\nThe rule is n^2 even n even. Proof by CONTRAPOSITION assumes the negated $CONCLUSION \\Rightarrow$(n odd) and derives the negated HYPOTHESIS (n^2 odd) - not the reverse. Proof by CONTRADICTION instead assumes the whole rule is false (n^2 even AND n odd) and derives an impossibility. The rule and its converse are logically distinct statements, even though both happen to be true here.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Since 1234^2 is even, the rule guarantees that 1234 itself is even - which is indeed true.\n\n1234^2 = 1,522,756 is even, satisfying the rule's hypothesis, and 1234 itself is indeed even, satisfying the conclusion - consistent with the rule.\n\n**2.** (FALSE) To prove the rule by contraposition, one should assume the ID number is even and derive that its square is even.\n\nProof by contraposition of \"n^2 even n even\" means assuming the negation of the conclusion (n $is \\Rightarrow odd$) and deriving the negation of the hypothesis (n^2 is odd) - not assuming n is even, which would be assuming the conclusion itself.\n\n**3.** (TRUE) Since 4321^2 is odd, the contrapositive form of the rule guarantees that 4321 itself is odd - which is indeed true.\n\n$4321^2 = 18,671,041 is odd, so n^2 even fails, meaning n^2 odd. By the contrapositive (n^2 odd n odd), \\Rightarrow 4321 must be odd - and indeed 4321 is odd.$\n\n**4.** (FALSE) The rule (\"if n^2 is even, then n is even\") and its converse (\"if n is even, then n^2 is even\") are logically the same statement.\n\nA conditional statement and its converse are generally not logically equivalent. Although both happen to be true for even/odd squares of integers, as general logical forms \"P Q\" and \"Q P\" are $distinct \\Rightarrow \\Rightarrow$ statements - one can be true while the other is false in other contexts.\n\n**5.** (TRUE) A proof of this rule by contradiction would begin by assuming that n^2 is even AND n is odd, then deriving a contradiction from that assumption.\n\nProof by contradiction of \"n^2 even n even\" assumes the statement is false, which means $the \\Rightarrow hypothesis$ holds (n^2 even) while the conclusion fails (n is odd); this exact combined assumption is then shown to lead to a contradiction.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-108",
+    "case_id": "MATH 1.108",
+    "title": "Thales' theorem gives the universal statement: \"Every triang",
+    "subsection": "1.4",
+    "context": "Thales' theorem gives the universal statement: \"Every triangle inscribed in a semicircle, with the diameter as one side, has a right angle at the third vertex.\"",
+    "statements": [
+      "The negation of this universal claim is: \"There exists such a triangle without a right angle.\"",
+      "Since Thales' theorem proves the original statement true, the negation formed above must be a false statement.",
+      "The converse, \"If a triangle has a right angle, it can be inscribed in a semicircle with its hypotenuse as the diameter,\" is also a true geometric fact.",
+      "Because both the original statement and its converse are true here, this is an example where the implication is effectively a biconditional, even though converses are not true in general.",
+      "Since the original statement is true, the inverse must also be true, because the inverse and the original are always logically equivalent to each other."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The negation of this universal claim is: \"There exists such a triangle without a right angle.\"**  (true)\n\n$\\neg ( x, P(x)) ≡ x, \\neg P(x): negating the universal claim correctly yields an existence claim for a \\forall \\exists counterexample triangle.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Since Thales' theorem proves the original statement true, the negation formed above must be a false statement.**  (true)\n\nSince Thales' theorem establishes the universal claim as true, no triangle without a right angle can be inscribed this way, so the existential negation is false.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) The converse, \"If a triangle has a right angle, it can be inscribed in a semicircle with its hypotenuse as the diameter,\" is also a true geometric fact.**  (true)\n\nThis is indeed a true converse in classical geometry: any right triangle can be inscribed in a circle with its hypotenuse as the diameter - a special case where the converse happens to hold.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) Because both the original statement and its converse are true here, this is an example where the implication is effectively a biconditional, even though converses are not true in general.**  (true)\n\nWhen both P Q and its converse Q P are true, P and Q are materially equivalent ($P \\Leftrightarrow Q$) - $an \\Rightarrow \\Rightarrow$ unusual but valid situation, since in general a converse need not match the original.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) Since the original statement is true, the inverse must also be true, because the inverse and the original are always logically equivalent to each other.**  (false)\n\nTrap: the inverse is NOT logically equivalent to the original in general - it is equivalent to the converse. The inverse happens to be true here only because the converse is true in this specific geometric case, not because inverse and original are structurally the same.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 18,
+    "solution_overview": "Thales' theorem gives the universal statement: \"Every triangle inscribed in a semicircle, with the diameter as one side, has a right angle at the third vertex.\"\n\n**Part 1: Setup.**\n\nThis is another rare case where the CONVERSE of a true geometric theorem also happens to be true - but that doesn't make inverse and ORIGINAL equivalent in general; the inverse is only ever guaranteed equivalent to the CONVERSE, and it's true here only because the converse happens to be true in this specific case.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The negation of this universal claim is: \"There exists such a triangle without a right angle.\"\n\n$\\neg ( x, P(x)) ≡ x, \\neg P(x): negating the universal claim correctly yields an existence claim for a \\forall \\exists counterexample triangle.$\n\n**2.** (TRUE) Since Thales' theorem proves the original statement true, the negation formed above must be a false statement.\n\nSince Thales' theorem establishes the universal claim as true, no triangle without a right angle can be inscribed this way, so the existential negation is false.\n\n**3.** (TRUE) The converse, \"If a triangle has a right angle, it can be inscribed in a semicircle with its hypotenuse as the diameter,\" is also a true geometric fact.\n\nThis is indeed a true converse in classical geometry: any right triangle can be inscribed in a circle with its hypotenuse as the diameter - a special case where the converse happens to hold.\n\n**4.** (TRUE) Because both the original statement and its converse are true here, this is an example where the implication is effectively a biconditional, even though converses are not true in general.\n\nWhen both P Q and its converse Q P are true, P and Q are materially equivalent ($P \\Leftrightarrow Q$) - $an \\Rightarrow \\Rightarrow$ unusual but valid situation, since in general a converse need not match the original.\n\n**5.** (FALSE) Since the original statement is true, the inverse must also be true, because the inverse and the original are always logically equivalent to each other.\n\nTrap: the inverse is NOT logically equivalent to the original in general - it is equivalent to the converse. The inverse happens to be true here only because the converse is true in this specific geometric case, not because inverse and original are structurally the same.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-109",
+    "case_id": "MATH 1.109",
+    "title": "A number-theory theorem states P Q: ⇒ \"If a number is a perf",
+    "subsection": "1.4",
+    "context": "A number-theory theorem states P Q:$\\Rightarrow$\"If a number is a perfect square, then it has an odd number of positive divisors.\" (This is a proven true theorem.)",
+    "statements": [
+      "The correctly formed negation of the theorem is: \"A number is a perfect square and it has an even number of divisors.\"",
+      "36 is a perfect square with divisors {1,2,3,4,6,9,12,18,36} - 9 divisors (odd), which is consistent with the theorem and not a counterexample to it.",
+      "The converse, \"If a number has an odd number of divisors, then it is a perfect square,\" is also a true statement, so both directions of the implication hold here.",
+      "Since 20 is not a perfect square and has divisors {1,2,4,5,10,20} (6 divisors, even), 20 is a valid counterexample disproving the original theorem.",
+      "The inverse, \"If a number is not a perfect square, it has an even number of divisors,\" is also true in this case, since the converse is true."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The correctly formed negation of the theorem is: \"A number is a perfect square and it has an even number of divisors.\"**  (true)\n\nThe negation of P Q is $P \\neg Q$, correctly formed as \"perfect square AND even number $of \\Rightarrow \\land$ divisors.\"\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) 36 is a perfect square with divisors {1,2,3,4,6,9,12,18,36} - 9 divisors (odd), which is consistent with the theorem and not a counterexample to it.**  (true)\n\n36 = 6^2 is a perfect square, and its 9 divisors is an odd count - exactly what the theorem predicts, so this is a confirming case, not a counterexample.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) The converse, \"If a number has an odd number of divisors, then it is a perfect square,\" is also a true statement, so both directions of the implication hold here.**  (true)\n\nThis is a genuine, well-known number-theory fact: divisors of n pair up as (d, n/d) except when d = n/d, which only happens for perfect squares - so an odd divisor count occurs exactly for perfect squares, making the converse true as well.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) Since 20 is not a perfect square and has divisors {1,2,4,5,10,20} (6 divisors, even), 20 is a valid counterexample disproving the original theorem.**  (false)\n\nTrap: a valid counterexample to P Q needs P TRUE and Q FALSE. Since 20 is not a $perfect \\Rightarrow square$, P is already false for 20, making the implication vacuously true for that case - it cannot be a counterexample regardless of its divisor count.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) The inverse, \"If a number is not a perfect square, it has an even number of divisors,\" is also true in this case, since the converse is true.**  (true)\n\nSince the converse Q P is true here, its logically equivalent partner, the $inverse \\neg P$\\neg Q$, $must \\Rightarrow \\Rightarrow$ also be true - consistent with the special case where a theorem holds in both directions. Tier 4 - Expert / Multi-Step Puzzles\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 19,
+    "solution_overview": "A number-theory theorem states P Q:$\\Rightarrow$\"If a number is a perfect square, then it has an odd number of positive divisors.\" (This is a proven true theorem.)\n\n**Part 1: Setup.**\n\nThis is the rare case where BOTH the original (\"perfect square odd # divisors\") AND $its \\Rightarrow converse$ are true (a genuine number-theory biconditional), so the inverse is true too. But a valid counterexample to the original still needs P TRUE and Q FALSE - any non-square number has P already false, making it automatically vacuous, never a counterexample.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The correctly formed negation of the theorem is: \"A number is a perfect square and it has an even number of divisors.\"\n\nThe negation of P Q is $P \\neg Q$, correctly formed as \"perfect square AND even number $of \\Rightarrow \\land$ divisors.\"\n\n**2.** (TRUE) 36 is a perfect square with divisors {1,2,3,4,6,9,12,18,36} - 9 divisors (odd), which is consistent with the theorem and not a counterexample to it.\n\n36 = 6^2 is a perfect square, and its 9 divisors is an odd count - exactly what the theorem predicts, so this is a confirming case, not a counterexample.\n\n**3.** (TRUE) The converse, \"If a number has an odd number of divisors, then it is a perfect square,\" is also a true statement, so both directions of the implication hold here.\n\nThis is a genuine, well-known number-theory fact: divisors of n pair up as (d, n/d) except when d = n/d, which only happens for perfect squares - so an odd divisor count occurs exactly for perfect squares, making the converse true as well.\n\n**4.** (FALSE) Since 20 is not a perfect square and has divisors {1,2,4,5,10,20} (6 divisors, even), 20 is a valid counterexample disproving the original theorem.\n\nTrap: a valid counterexample to P Q needs P TRUE and Q FALSE. Since 20 is not a $perfect \\Rightarrow square$, P is already false for 20, making the implication vacuously true for that case - it cannot be a counterexample regardless of its divisor count.\n\n**5.** (TRUE) The inverse, \"If a number is not a perfect square, it has an even number of divisors,\" is also true in this case, since the converse is true.\n\nSince the converse Q P is true here, its logically equivalent partner, the $inverse \\neg P$\\neg Q$, $must \\Rightarrow \\Rightarrow$ also be true - consistent with the special case where a theorem holds in both directions. Tier 4 - Expert / Multi-Step Puzzles\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-110",
+    "case_id": "MATH 1.110",
+    "title": "Four friends and their jobs",
+    "subsection": "1.4",
+    "context": "Start from clue (3): Grace≠teacher. Clue (2)'s biconditional (Felix=$engineer \\Leftrightarrow Grace$=teacher) then forces Felix≠engineer. Clue (1)'s biconditional (Emma=$doctor \\Leftrightarrow Felix$≠engineer) then forces Emma=doctor. With Doctor and Lawyer (clue 4) assigned, only Engineer/Teacher remain for Fe",
+    "statements": [
+      "Emma is a doctor.",
+      "Felix is a teacher, and this can be determined directly from clue (2) alone, without needing any other clues.",
+      "Grace is an engineer.",
+      "Clue (3) is redundant - the full job assignment could be determined without it.",
+      "If clue (4) were removed entirely, we could still determine that Emma is a doctor from clues (1)-(3) alone."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Emma is a doctor.**  (true)\n\nBy (3), Grace is not a teacher, so by the biconditional in (2), Felix is not an engineer either (both sides of an iff must match). Then by the biconditional in (1), since “Felix not engineer” is true, “Emma is a doctor” must also be true.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Felix is a teacher, and this can be determined directly from clue (2) alone, without needing any other clues.**  (false)\n\nClue (2) alone (with clue 3) only tells us Felix is NOT an engineer - it doesn't by itself tell us Felix is a teacher. Concluding “teacher” specifically requires narrowing the remaining job options using clues (1) and (4) as well (to establish Emma=doctor and Hugo=lawyer, leaving only Engineer/Teacher for Felix and Grace).\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) Grace is an engineer.**  (true)\n\nOnce Doctor (Emma) and Lawyer (Hugo) are assigned, only Engineer and Teacher remain for Felix and Grace. Felix is not an engineer (from part a's reasoning) so Felix is the teacher, leaving Grace as the engineer.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) Clue (3) is redundant - the full job assignment could be determined without it.**  (false)\n\nClue (3) is essential - it is the starting fact that triggers the whole chain of deductions (via clues 2 and 1) leading to Emma being a doctor; without it, that chain cannot begin.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) If clue (4) were removed entirely, we could still determine that Emma is a doctor from clues (1)-(3) alone.**  (true)\n\nThe derivation of “Emma is a doctor” only used clues (1), (2), and (3) in sequence - clue (4) about Hugo was never needed for that specific conclusion.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 20,
+    "solution_overview": "Start from clue (3): Grace≠teacher. Clue (2)'s biconditional (Felix=$engineer \\Leftrightarrow Grace$=teacher) then forces Felix≠engineer. Clue (1)'s biconditional (Emma=$doctor \\Leftrightarrow Felix$≠engineer) then forces Emma=doctor. With Doctor and Lawyer (clue 4) assigned, only Engineer/Teacher remain for Fe\n\n**Part 1: Setup.**\n\nStart from clue (3): Grace≠teacher. Clue (2)'s biconditional (Felix=$engineer \\Leftrightarrow Grace$=teacher) then forces Felix≠engineer. Clue (1)'s biconditional (Emma=$doctor \\Leftrightarrow Felix$≠engineer) then forces Emma=doctor. With Doctor and Lawyer (clue 4) assigned, only Engineer/Teacher remain for Felix/Grace; since Felix≠engineer, Felix=teacher and Grace=engineer. This chain (3)→(2)→(1) never needed clue 4.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Emma is a doctor.\n\nBy (3), Grace is not a teacher, so by the biconditional in (2), Felix is not an engineer either (both sides of an iff must match). Then by the biconditional in (1), since “Felix not engineer” is true, “Emma is a doctor” must also be true.\n\n**2.** (FALSE) Felix is a teacher, and this can be determined directly from clue (2) alone, without needing any other clues.\n\nClue (2) alone (with clue 3) only tells us Felix is NOT an engineer - it doesn't by itself tell us Felix is a teacher. Concluding “teacher” specifically requires narrowing the remaining job options using clues (1) and (4) as well (to establish Emma=doctor and Hugo=lawyer, leaving only Engineer/Teacher for Felix and Grace).\n\n**3.** (TRUE) Grace is an engineer.\n\nOnce Doctor (Emma) and Lawyer (Hugo) are assigned, only Engineer and Teacher remain for Felix and Grace. Felix is not an engineer (from part a's reasoning) so Felix is the teacher, leaving Grace as the engineer.\n\n**4.** (FALSE) Clue (3) is redundant - the full job assignment could be determined without it.\n\nClue (3) is essential - it is the starting fact that triggers the whole chain of deductions (via clues 2 and 1) leading to Emma being a doctor; without it, that chain cannot begin.\n\n**5.** (TRUE) If clue (4) were removed entirely, we could still determine that Emma is a doctor from clues (1)-(3) alone.\n\nThe derivation of “Emma is a doctor” only used clues (1), (2), and (3) in sequence - clue (4) about Hugo was never needed for that specific conclusion.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-111",
+    "case_id": "MATH 1.111",
+    "title": "A real-analysis theorem states P Q: ⇒ \"If a sequence converg",
+    "subsection": "1.4",
+    "context": "A real-analysis theorem states P Q:$\\Rightarrow$\"If a sequence converges, then it is bounded.\" (This is a proven true theorem.)",
+    "statements": [
+      "The negation, \"a sequence converges and is not bounded,\" describes an impossible situation, since the theorem holds for every sequence.",
+      "The converse, \"If a sequence is bounded, then it converges,\" is false - the sequence (-1)ⁿ (that is, -1, 1, -1, 1,...) is bounded but does not converge, serving as a counterexample.",
+      "The inverse, \"If a sequence does not converge, then it is not bounded,\" is logically equivalent to the converse, and is therefore also false, using the same sequence (-1)ⁿ as its counterexample.",
+      "The contrapositive, \"If a sequence is not bounded, then it does not converge,\" is true, and is in fact the version most commonly used to prove specific unbounded sequences (like n, 2n, n^2) do not converge.",
+      "Because the converse is false, the original theorem itself must also be false."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The negation, \"a sequence converges and is not bounded,\" describes an impossible situation, since the theorem holds for every sequence.**  (true)\n\nSince the theorem is proven true for every sequence, no sequence can simultaneously converge and be unbounded - the negation describes an empty, impossible case.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) The converse, \"If a sequence is bounded, then it converges,\" is false - the sequence (-1)ⁿ (that is, -1, 1, -1, 1,...) is bounded but does not converge, serving as a counterexample.**  (true)\n\n(-1)ⁿ never settles on a single value (it oscillates forever between -1 and 1), so it does not converge, yet it stays within [-1, 1], so it is bounded - Q true (bounded), P false (doesn't converge), breaking Q P.$\\Rightarrow$\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) The inverse, \"If a sequence does not converge, then it is not bounded,\" is logically equivalent to the converse, and is therefore also false, using the same sequence (-1)ⁿ as its counterexample.**  (true)\n\nThe $inverse \\neg P$\\neg Q$ is always equivalent to the converse Q P. Since (-1)ⁿ makes the $converse \\Rightarrow \\Rightarrow$ false (bounded but not convergent), it makes the inverse false too:$\\neg P$ is true (doesn't converge) $but \\neg Q$ is false (it IS bounded).\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) The contrapositive, \"If a sequence is not bounded, then it does not converge,\" is true, and is in fact the version most commonly used to prove specific unbounded sequences (like n, 2n, n^2) do not converge.**  (true)\n\nThe contrapositive is always equivalent to the original theorem, which is true, so the contrapositive is true too - and indeed it's the standard tool for proving unboundedness implies divergence.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) Because the converse is false, the original theorem itself must also be false.**  (false)\n\nTrap: a statement's truth does not depend on its converse's truth. The original theorem (\"convergent bounded\") is a proven true fact, entirely independent of the converse being false - this is the same $confusion \\Rightarrow seen$ with the divisibility and sports examples earlier.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 21,
+    "solution_overview": "A real-analysis theorem states P Q:$\\Rightarrow$\"If a sequence converges, then it is bounded.\" (This is a proven true theorem.)\n\n**Part 1: Setup.**\n\n\"Convergent bounded\" is a proven true theorem, so its negation is impossible and $its \\Rightarrow contrapositive$ is true too - completely independent of the fact that its CONVERSE (\"bounded convergent\") $is \\Rightarrow false$, disproven by the oscillating sequence (-1)ⁿ. The inverse shares the converse's fate (false) via the same counterexample, since inverse≡converse always.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The negation, \"a sequence converges and is not bounded,\" describes an impossible situation, since the theorem holds for every sequence.\n\nSince the theorem is proven true for every sequence, no sequence can simultaneously converge and be unbounded - the negation describes an empty, impossible case.\n\n**2.** (TRUE) The converse, \"If a sequence is bounded, then it converges,\" is false - the sequence (-1)ⁿ (that is, -1, 1, -1, 1,...) is bounded but does not converge, serving as a counterexample.\n\n(-1)ⁿ never settles on a single value (it oscillates forever between -1 and 1), so it does not converge, yet it stays within [-1, 1], so it is bounded - Q true (bounded), P false (doesn't converge), breaking Q P.$\\Rightarrow$\n\n**3.** (TRUE) The inverse, \"If a sequence does not converge, then it is not bounded,\" is logically equivalent to the converse, and is therefore also false, using the same sequence (-1)ⁿ as its counterexample.\n\nThe $inverse \\neg P$\\neg Q$ is always equivalent to the converse Q P. Since (-1)ⁿ makes the $converse \\Rightarrow \\Rightarrow$ false (bounded but not convergent), it makes the inverse false too:$\\neg P$ is true (doesn't converge) $but \\neg Q$ is false (it IS bounded).\n\n**4.** (TRUE) The contrapositive, \"If a sequence is not bounded, then it does not converge,\" is true, and is in fact the version most commonly used to prove specific unbounded sequences (like n, 2n, n^2) do not converge.\n\nThe contrapositive is always equivalent to the original theorem, which is true, so the contrapositive is true too - and indeed it's the standard tool for proving unboundedness implies divergence.\n\n**5.** (FALSE) Because the converse is false, the original theorem itself must also be false.\n\nTrap: a statement's truth does not depend on its converse's truth. The original theorem (\"convergent bounded\") is a proven true fact, entirely independent of the converse being false - this is the same $confusion \\Rightarrow seen$ with the divisibility and sports examples earlier.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-112",
+    "case_id": "MATH 1.112",
+    "title": "Three inhabitants of the island",
+    "subsection": "1.4",
+    "context": "Test J=truth-teller first: forces exactly 1 truth-teller (J), making K,L liars - but then L's claim (\"K and I are the same type\") would actually be TRUE, which a liar can't say, contradiction. So J=liar, meaning the true count is 0 or 2. Testing 0 also breaks (K's statement would",
+    "statements": [
+      "J is a liar.",
+      "K is a truth-teller.",
+      "L is a truth-teller.",
+      "Exactly one of the three inhabitants is a truth-teller.",
+      "There is another consistent assignment of types (besides the one found) that also satisfies all three statements."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) J is a liar.**  (true)\n\nAssuming J is a truth-teller leads to a contradiction: J's claim would force exactly one truth-teller (J), making K and L both liars; but then L's statement “K and I are the same type” would actually be true (both liars), which a liar cannot truthfully state - a contradiction. So J must be a liar.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) K is a truth-teller.**  (true)\n\nSince J is a liar, J's claim (“exactly one truth-teller”) is false, so the true count is 0 or 2 among J,K,L. Testing “0” leads to a contradiction (K, as a liar, would need “J is lying” to be false, but J really is lying, making K's statement true - impossible for a liar). So the count must be 2, meaning both K and L are truth- tellers.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) L is a truth-teller.**  (true)\n\nAs established in (b), the only consistent case has both K and L as truth-tellers.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) Exactly one of the three inhabitants is a truth-teller.**  (false)\n\nIn the actual consistent solution, there are two truth-tellers (K and L) and one liar (J) - not exactly one truth-teller, which is precisely why J's original claim was false.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) There is another consistent assignment of types (besides the one found) that also satisfies all three statements.**  (false)\n\nChecking all cases systematically (J truth-teller: contradiction; J liar with 0 other truth-tellers: contradiction; J liar with 2 other truth-tellers: fully consistent) shows exactly one assignment satisfies all three statements - there is no second valid solution.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 22,
+    "solution_overview": "Test J=truth-teller first: forces exactly 1 truth-teller (J), making K,L liars - but then L's claim (\"K and I are the same type\") would actually be TRUE, which a liar can't say, contradiction. So J=liar, meaning the true count is 0 or 2. Testing 0 also breaks (K's statement would\n\n**Part 1: Setup.**\n\nTest J=truth-teller first: forces exactly 1 truth-teller (J), making K,L liars - but then L's claim (\"K and I are the same type\") would actually be TRUE, which a liar can't say, contradiction. So J=liar, meaning the true count is 0 or 2. Testing 0 also breaks (K's statement would end up true). So exactly 2 remain: K and L are truth- tellers, J is the liar - the unique solution.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) J is a liar.\n\nAssuming J is a truth-teller leads to a contradiction: J's claim would force exactly one truth-teller (J), making K and L both liars; but then L's statement “K and I are the same type” would actually be true (both liars), which a liar cannot truthfully state - a contradiction. So J must be a liar.\n\n**2.** (TRUE) K is a truth-teller.\n\nSince J is a liar, J's claim (“exactly one truth-teller”) is false, so the true count is 0 or 2 among J,K,L. Testing “0” leads to a contradiction (K, as a liar, would need “J is lying” to be false, but J really is lying, making K's statement true - impossible for a liar). So the count must be 2, meaning both K and L are truth- tellers.\n\n**3.** (TRUE) L is a truth-teller.\n\nAs established in (b), the only consistent case has both K and L as truth-tellers.\n\n**4.** (FALSE) Exactly one of the three inhabitants is a truth-teller.\n\nIn the actual consistent solution, there are two truth-tellers (K and L) and one liar (J) - not exactly one truth-teller, which is precisely why J's original claim was false.\n\n**5.** (FALSE) There is another consistent assignment of types (besides the one found) that also satisfies all three statements.\n\nChecking all cases systematically (J truth-teller: contradiction; J liar with 0 other truth-tellers: contradiction; J liar with 2 other truth-tellers: fully consistent) shows exactly one assignment satisfies all three statements - there is no second valid solution.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-113",
+    "case_id": "MATH 1.113",
+    "title": "Conference attendance rules",
+    "subsection": "1.4",
+    "context": "Rule (4) fixes Dmitri=attends. Case-split on Ana: if Ana attends, rule 1 forces Boris out, rule 2 forces Ceci in, and rule 3's exception (triggered by Ana) frees Dmitri to attend too - a valid solution. If Ana does not attend, rule 3 forces Ceci out (no exception now), and rule 2",
+    "statements": [
+      "Dmitri attends the conference.",
+      "The rules uniquely determine whether Ana attends.",
+      "In at least one solution consistent with the rules, exactly three of the four colleagues attend.",
+      "It is possible for both Ana and Boris to not attend simultaneously.",
+      "Without rule (3)'s “unless” exception (i.e. if Ceci attending always forced Dmitri not to attend, no exceptions), the rules would become impossible to satisfy at all given that Dmitri attends."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Dmitri attends the conference.**  (true)\n\nThis is given directly by rule (4).\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) The rules uniquely determine whether Ana attends.**  (false)\n\nWorking through the rules yields two consistent solutions: one where Ana attends (forcing Boris out, then Ceci in via rule 2, with rule 3's exception permitting Dmitri to attend too), and one where Ana does not attend (forcing Ceci out to satisfy rule 3 given Dmitri attends, which via rule 2's contrapositive forces Boris to attend). Both fully satisfy all four rules, so Ana's attendance is not uniquely determined.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) In at least one solution consistent with the rules, exactly three of the four colleagues attend.**  (true)\n\nIn the first solution described above (Ana, Ceci, and Dmitri attend; Boris does not), exactly three colleagues attend.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) It is possible for both Ana and Boris to not attend simultaneously.**  (false)\n\nIn the two valid solutions found, exactly one of Ana/Boris attends and the other doesn't in each - there's no valid assignment where both are simultaneously absent, since removing Ana forces Ceci out (via rule 3, given Dmitri attends) which in turn forces Boris in (via rule 2's contrapositive).\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) Without rule (3)'s “unless” exception (i.e. if Ceci attending always forced Dmitri not to attend, no exceptions), the rules would become impossible to satisfy at all given that Dmitri attends.**  (false)\n\nWithout the exception, rule (3) would simply $force \\neg Dmitri$ whenever Ceci attends; since Dmitri does attend, this would just force Ceci to not attend - which is exactly the second solution found above, still perfectly consistent. The exception's removal only eliminates the first solution, it doesn't make the whole system unsolvable. PART III - Extra Challenge: Rule-Based Deduction Puzzles 7 new puzzles: 3 Medium, 3 Hard, 1 SUPER DUPER HARD - each with its own cast of characters and rule set, sorted from easiest to hardest. Medium Difficulty\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 23,
+    "solution_overview": "Rule (4) fixes Dmitri=attends. Case-split on Ana: if Ana attends, rule 1 forces Boris out, rule 2 forces Ceci in, and rule 3's exception (triggered by Ana) frees Dmitri to attend too - a valid solution. If Ana does not attend, rule 3 forces Ceci out (no exception now), and rule 2\n\n**Part 1: Setup.**\n\nRule (4) fixes Dmitri=attends. Case-split on Ana: if Ana attends, rule 1 forces Boris out, rule 2 forces Ceci in, and rule 3's exception (triggered by Ana) frees Dmitri to attend too - a valid solution. If Ana does not attend, rule 3 forces Ceci out (no exception now), and rule 2's contrapositive forces Boris in - a second valid solution. Both branches are fully consistent, so the puzzle has two solutions, not one.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Dmitri attends the conference.\n\nThis is given directly by rule (4).\n\n**2.** (FALSE) The rules uniquely determine whether Ana attends.\n\nWorking through the rules yields two consistent solutions: one where Ana attends (forcing Boris out, then Ceci in via rule 2, with rule 3's exception permitting Dmitri to attend too), and one where Ana does not attend (forcing Ceci out to satisfy rule 3 given Dmitri attends, which via rule 2's contrapositive forces Boris to attend). Both fully satisfy all four rules, so Ana's attendance is not uniquely determined.\n\n**3.** (TRUE) In at least one solution consistent with the rules, exactly three of the four colleagues attend.\n\nIn the first solution described above (Ana, Ceci, and Dmitri attend; Boris does not), exactly three colleagues attend.\n\n**4.** (FALSE) It is possible for both Ana and Boris to not attend simultaneously.\n\nIn the two valid solutions found, exactly one of Ana/Boris attends and the other doesn't in each - there's no valid assignment where both are simultaneously absent, since removing Ana forces Ceci out (via rule 3, given Dmitri attends) which in turn forces Boris in (via rule 2's contrapositive).\n\n**5.** (FALSE) Without rule (3)'s “unless” exception (i.e. if Ceci attending always forced Dmitri not to attend, no exceptions), the rules would become impossible to satisfy at all given that Dmitri attends.\n\nWithout the exception, rule (3) would simply $force \\neg Dmitri$ whenever Ceci attends; since Dmitri does attend, this would just force Ceci to not attend - which is exactly the second solution found above, still perfectly consistent. The exception's removal only eliminates the first solution, it doesn't make the whole system unsolvable. PART III - Extra Challenge: Rule-Based Deduction Puzzles 7 new puzzles: 3 Medium, 3 Hard, 1 SUPER DUPER HARD - each with its own cast of characters and rule set, sorted from easiest to hardest. Medium Difficulty\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-114",
+    "case_id": "MATH 1.114",
+    "title": "A Study Group's Attendance",
+    "subsection": "1.4",
+    "context": "Chain the rules: rule 4 ($Zoe \\neg Noah$) means $Noah \\neg Zoe$ by contrapositive; rule 2 (Leo Zoe)$\\Rightarrow \\Rightarrow$\\Rightarrow combined$ with rule 4 means $Leo \\neg Noah$, so Leo and Noah can never join together. Setting Noah=out, Maria=in,$\\Rightarrow Leo$=out, Zoe=out satisfies every rule at once, showing that no single friend",
+    "statements": [
+      "If Noah joins, then Zoe does not join.",
+      "Leo and Noah can join the study session together.",
+      "It is possible that Maria joins but Leo does not.",
+      "If Maria does not join, then Noah does not join.",
+      "Zoe must join the study session."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) If Noah joins, then Zoe does not join.**  (true)\n\n$This is the contrapositive of rule 4 (Zoe → \\neg Noah becomes Noah → \\neg Zoe) - always logically guaranteed, independent of who actually joins.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Leo and Noah can join the study session together.**  (false)\n\nTrap: if Leo joins, rule 2 forces Zoe to join too; but rule 4 then forces Noah NOT to join. So Leo joining always forces Noah out - they can never join together.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) It is possible that Maria joins but Leo does not.**  (true)\n\nSetting Noah = out, Maria = in, Leo = out satisfies every rule: rule 1 is vacuous (Noah is out), rule 3 is satisfied by Maria alone, and rules 2 and 4 place no further demands. A fully consistent scenario exists.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) If Maria does not join, then Noah does not join.**  (true)\n\n$This is the contrapositive of rule 1 (Noah → Maria becomes \\neg Maria → \\neg Noah) - always guaranteed.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) Zoe must join the study session.**  (false)\n\nTrap: the scenario from part (c) - Noah out, Maria in, Leo out, Zoe out - satisfies all four rules without Zoe joining at all, so Zoe is never strictly required.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 24,
+    "solution_overview": "Chain the rules: rule 4 ($Zoe \\neg Noah$) means $Noah \\neg Zoe$ by contrapositive; rule 2 (Leo Zoe)$\\Rightarrow \\Rightarrow$\\Rightarrow combined$ with rule 4 means $Leo \\neg Noah$, so Leo and Noah can never join together. Setting Noah=out, Maria=in,$\\Rightarrow Leo$=out, Zoe=out satisfies every rule at once, showing that no single friend\n\n**Part 1: Setup.**\n\nChain the rules: rule 4 ($Zoe \\neg Noah$) means $Noah \\neg Zoe$ by contrapositive; rule 2 (Leo Zoe)$\\Rightarrow \\Rightarrow$\\Rightarrow combined$ with rule 4 means $Leo \\neg Noah$, so Leo and Noah can never join together. Setting Noah=out, Maria=in,$\\Rightarrow Leo$=out, Zoe=out satisfies every rule at once, showing that no single friend beyond Maria (via rule 3) is ever strictly required.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) If Noah joins, then Zoe does not join.\n\n$This is the contrapositive of rule 4 (Zoe → \\neg Noah becomes Noah → \\neg Zoe) - always logically guaranteed, independent of who actually joins.$\n\n**2.** (FALSE) Leo and Noah can join the study session together.\n\nTrap: if Leo joins, rule 2 forces Zoe to join too; but rule 4 then forces Noah NOT to join. So Leo joining always forces Noah out - they can never join together.\n\n**3.** (TRUE) It is possible that Maria joins but Leo does not.\n\nSetting Noah = out, Maria = in, Leo = out satisfies every rule: rule 1 is vacuous (Noah is out), rule 3 is satisfied by Maria alone, and rules 2 and 4 place no further demands. A fully consistent scenario exists.\n\n**4.** (TRUE) If Maria does not join, then Noah does not join.\n\n$This is the contrapositive of rule 1 (Noah → Maria becomes \\neg Maria → \\neg Noah) - always guaranteed.$\n\n**5.** (FALSE) Zoe must join the study session.\n\nTrap: the scenario from part (c) - Noah out, Maria in, Leo out, Zoe out - satisfies all four rules without Zoe joining at all, so Zoe is never strictly required.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-115",
+    "case_id": "MATH 1.115",
+    "title": "Board Game Night",
+    "subsection": "1.4",
+    "context": "Chaining rules 1 and 3: Ben $Carla \\neg Dan$, so Ben and Dan can never play together. $Setting \\Rightarrow \\Rightarrow$ Ben=out, Carla=out, Dan=out, Ella=in satisfies every rule (rule 4 via Ella alone), showing that Carla is never strictly required either.",
+    "statements": [
+      "If Ben plays, then Dan does not play.",
+      "Ben and Dan can play together.",
+      "It is possible that only Ella plays, with Ben, Carla, and Dan all sitting out.",
+      "If Dan plays, then Carla does not play.",
+      "Carla must play the game."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) If Ben plays, then Dan does not play.**  (true)\n\n$Chaining rules 1 and 3: Ben → Carla → \\neg Dan, so Ben joining forces Dan out.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Ben and Dan can play together.**  (false)\n\n$Trap: this directly contradicts part (a) - since Ben → \\neg Dan is guaranteed, Ben and Dan can never both play.$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) It is possible that only Ella plays, with Ben, Carla, and Dan all sitting out.**  (true)\n\nWith Ben, Carla, Dan all out and Ella in: rule 1 is vacuous, rule 2 is vacuous (Dan is out), rule 3 is vacuous, and rule 4 is satisfied by Ella alone. Fully consistent.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) If Dan plays, then Carla does not play.**  (true)\n\n$This is the contrapositive of rule 3 (Carla → \\neg Dan becomes Dan → \\neg Carla) - always guaranteed.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) Carla must play the game.**  (false)\n\nTrap: the scenario from part (c) has Carla sitting out entirely while every rule still holds, so Carla is never strictly required.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 25,
+    "solution_overview": "Chaining rules 1 and 3: Ben $Carla \\neg Dan$, so Ben and Dan can never play together. $Setting \\Rightarrow \\Rightarrow$ Ben=out, Carla=out, Dan=out, Ella=in satisfies every rule (rule 4 via Ella alone), showing that Carla is never strictly required either.\n\n**Part 1: Setup.**\n\nChaining rules 1 and 3: Ben $Carla \\neg Dan$, so Ben and Dan can never play together. $Setting \\Rightarrow \\Rightarrow$ Ben=out, Carla=out, Dan=out, Ella=in satisfies every rule (rule 4 via Ella alone), showing that Carla is never strictly required either.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) If Ben plays, then Dan does not play.\n\n$Chaining rules 1 and 3: Ben → Carla → \\neg Dan, so Ben joining forces Dan out.$\n\n**2.** (FALSE) Ben and Dan can play together.\n\n$Trap: this directly contradicts part (a) - since Ben → \\neg Dan is guaranteed, Ben and Dan can never both play.$\n\n**3.** (TRUE) It is possible that only Ella plays, with Ben, Carla, and Dan all sitting out.\n\nWith Ben, Carla, Dan all out and Ella in: rule 1 is vacuous, rule 2 is vacuous (Dan is out), rule 3 is vacuous, and rule 4 is satisfied by Ella alone. Fully consistent.\n\n**4.** (TRUE) If Dan plays, then Carla does not play.\n\n$This is the contrapositive of rule 3 (Carla → \\neg Dan becomes Dan → \\neg Carla) - always guaranteed.$\n\n**5.** (FALSE) Carla must play the game.\n\nTrap: the scenario from part (c) has Carla sitting out entirely while every rule still holds, so Carla is never strictly required.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-116",
+    "case_id": "MATH 1.116",
+    "title": "Splitting the Cooking Duty",
+    "subsection": "1.4",
+    "context": "Chaining rule 4 by contrapositive gives $Owen \\neg Quinn$. Rule 2 (Owen Priya) blocks both $from \\Rightarrow \\lor$ sitting out at once, ruling out \"Quinn cooks alone.\" Setting Owen=out, Priya=in, Quinn=in (forced by rule 3) satisfies every rule, showing Owen is never strictly required.",
+    "statements": [
+      "If Owen cooks, then Quinn does not cook.",
+      "Owen and Priya can both cook tonight.",
+      "It is possible that neither Owen nor Priya cooks, and Quinn cooks alone.",
+      "Priya cooking guarantees that Quinn also cooks.",
+      "Owen must cook tonight."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) If Owen cooks, then Quinn does not cook.**  (true)\n\n$This is the contrapositive of rule 4 (Quinn → \\neg Owen becomes Owen → \\neg Quinn) - always guaranteed.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Owen and Priya can both cook tonight.**  (false)\n\nTrap: rule 1 directly forbids this - Owen cooking forces Priya not to cook.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) It is possible that neither Owen nor Priya cooks, and Quinn cooks alone.**  (false)\n\nTrap: rule 2 requires at least one of Owen or Priya to cook. If both sit out, rule 2 is violated outright - Quinn cooking \"alone\" (with neither Owen nor Priya) is never a valid scenario, no matter what Quinn does.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) Priya cooking guarantees that Quinn also cooks.**  (true)\n\nThis is simply rule 3 restated directly - always guaranteed by assumption.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) Owen must cook tonight.**  (false)\n\nTrap: setting Owen out, Priya in, Quinn in satisfies every rule (rule 2 via Priya, rule 3 forces Quinn in, rule 4 is consistent since Owen is out, rule 1 is vacuous) - a fully valid scenario where Owen never cooks at all. Hard Difficulty\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 26,
+    "solution_overview": "Chaining rule 4 by contrapositive gives $Owen \\neg Quinn$. Rule 2 (Owen Priya) blocks both $from \\Rightarrow \\lor$ sitting out at once, ruling out \"Quinn cooks alone.\" Setting Owen=out, Priya=in, Quinn=in (forced by rule 3) satisfies every rule, showing Owen is never strictly required.\n\n**Part 1: Setup.**\n\nChaining rule 4 by contrapositive gives $Owen \\neg Quinn$. Rule 2 (Owen Priya) blocks both $from \\Rightarrow \\lor$ sitting out at once, ruling out \"Quinn cooks alone.\" Setting Owen=out, Priya=in, Quinn=in (forced by rule 3) satisfies every rule, showing Owen is never strictly required.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) If Owen cooks, then Quinn does not cook.\n\n$This is the contrapositive of rule 4 (Quinn → \\neg Owen becomes Owen → \\neg Quinn) - always guaranteed.$\n\n**2.** (FALSE) Owen and Priya can both cook tonight.\n\nTrap: rule 1 directly forbids this - Owen cooking forces Priya not to cook.\n\n**3.** (FALSE) It is possible that neither Owen nor Priya cooks, and Quinn cooks alone.\n\nTrap: rule 2 requires at least one of Owen or Priya to cook. If both sit out, rule 2 is violated outright - Quinn cooking \"alone\" (with neither Owen nor Priya) is never a valid scenario, no matter what Quinn does.\n\n**4.** (TRUE) Priya cooking guarantees that Quinn also cooks.\n\nThis is simply rule 3 restated directly - always guaranteed by assumption.\n\n**5.** (FALSE) Owen must cook tonight.\n\nTrap: setting Owen out, Priya in, Quinn in satisfies every rule (rule 2 via Priya, rule 3 forces Quinn in, rule 4 is consistent since Owen is out, rule 1 is vacuous) - a fully valid scenario where Owen never cooks at all. Hard Difficulty\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-117",
+    "case_id": "MATH 1.117",
+    "title": "A Five-Person Day Trip",
+    "subsection": "1.4",
+    "context": "Assuming Diego goes triggers an unavoidable contradiction (chasing through rules 1,3,2,6 forces Fatima to be both true and false), so Diego is always out; rule 4 then forces Hugo in, and rule 6 forces Fatima out - with Grace and Iris left completely free of any further constraint",
+    "statements": [
+      "Diego attends the trip in at least one valid scenario.",
+      "If Fatima goes, then Hugo does not go.",
+      "Hugo must go on the trip.",
+      "It is possible for both Grace and Iris to attend together.",
+      "If Iris goes, then Fatima goes."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Diego attends the trip in at least one valid scenario.**  (false)\n\nTrap: suppose Diego goes. Rule 1 forces Fatima to go; rule 3 then forces Grace out; rule 2's contrapositive ($\\neg Grace$ → Hugo) then forces Hugo in; but rule 6 says Hugo going forces Fatima OUT - directly contradicting rule 1's conclusion that Fatima is in. This is a genuine contradiction, so Diego can never go in any valid scenario.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**B) If Fatima goes, then Hugo does not go.**  (true)\n\n$This is the contrapositive of rule 6 (Hugo → \\neg Fatima becomes Fatima → \\neg Hugo) - a structural guarantee, always true regardless of the specific scenario.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) Hugo must go on the trip.**  (true)\n\nSince Diego is always out (part a), rule 4 (Diego or Hugo) can only be satisfied by Hugo - so Hugo must go in every valid scenario.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) It is possible for both Grace and Iris to attend together.**  (true)\n\nWith Diego out, Hugo in, and Fatima out (all forced), neither rule 2, 3, nor 5 places any further constraint linking Grace and Iris - so Grace = in and Iris = in together is a fully consistent scenario.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) If Iris goes, then Fatima goes.**  (false)\n\nTrap: Fatima is forced out in every valid scenario (since Hugo is always in, and rule 6 forces Fatima out whenever Hugo is in). But Iris can still freely be in (see part d) - giving a valid scenario where Iris is in yet Fatima is out, which breaks this implication.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 27,
+    "solution_overview": "Assuming Diego goes triggers an unavoidable contradiction (chasing through rules 1,3,2,6 forces Fatima to be both true and false), so Diego is always out; rule 4 then forces Hugo in, and rule 6 forces Fatima out - with Grace and Iris left completely free of any further constraint\n\n**Part 1: Setup.**\n\nAssuming Diego goes triggers an unavoidable contradiction (chasing through rules 1,3,2,6 forces Fatima to be both true and false), so Diego is always out; rule 4 then forces Hugo in, and rule 6 forces Fatima out - with Grace and Iris left completely free of any further constraint.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (FALSE) Diego attends the trip in at least one valid scenario.\n\nTrap: suppose Diego goes. Rule 1 forces Fatima to go; rule 3 then forces Grace out; rule 2's contrapositive ($\\neg Grace$ → Hugo) then forces Hugo in; but rule 6 says Hugo going forces Fatima OUT - directly contradicting rule 1's conclusion that Fatima is in. This is a genuine contradiction, so Diego can never go in any valid scenario.\n\n**2.** (TRUE) If Fatima goes, then Hugo does not go.\n\n$This is the contrapositive of rule 6 (Hugo → \\neg Fatima becomes Fatima → \\neg Hugo) - a structural guarantee, always true regardless of the specific scenario.$\n\n**3.** (TRUE) Hugo must go on the trip.\n\nSince Diego is always out (part a), rule 4 (Diego or Hugo) can only be satisfied by Hugo - so Hugo must go in every valid scenario.\n\n**4.** (TRUE) It is possible for both Grace and Iris to attend together.\n\nWith Diego out, Hugo in, and Fatima out (all forced), neither rule 2, 3, nor 5 places any further constraint linking Grace and Iris - so Grace = in and Iris = in together is a fully consistent scenario.\n\n**5.** (FALSE) If Iris goes, then Fatima goes.\n\nTrap: Fatima is forced out in every valid scenario (since Hugo is always in, and rule 6 forces Fatima out whenever Hugo is in). But Iris can still freely be in (see part d) - giving a valid scenario where Iris is in yet Fatima is out, which breaks this implication.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-118",
+    "case_id": "MATH 1.118",
+    "title": "Six Interns and the Conference Talk",
+    "subsection": "1.4",
+    "context": "Assuming Aiden presents forces a contradiction via rules 1, 4, 6 (Bella both in and out), so Aiden is always out; assuming Bella presents separately forces a different contradiction via rules 3, 6, 2 (violates the Daisy-or-Ethan requirement), so Bella is always out too - leaving",
+    "statements": [
+      "Aiden is forced to NOT present in every valid scenario.",
+      "It is possible for Bella to present in some valid scenario.",
+      "If Caleb presents, then Ethan also presents.",
+      "It is possible for Faye to present at the conference.",
+      "There is exactly one valid way to decide who presents, consistent with all six rules."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Aiden is forced to NOT present in every valid scenario.**  (true)\n\nSuppose Aiden presents. Rule 1 forces both Bella and Caleb in; rule 4 then forces Ethan in (since Caleb is in); rule 6 then forces Bella OUT (since Ethan is in) - directly contradicting rule 1's requirement that Bella is in. This contradiction means Aiden can never present.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) It is possible for Bella to present in some valid scenario.**  (false)\n\nTrap: suppose Bella presents. Rule 3 forces Daisy out; rule 6 forces Ethan out (since Bella is in). But then rule 2 (Daisy or Ethan) has both sides false - violated! So Bella presenting always leads to a contradiction; Bella can never present either.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) If Caleb presents, then Ethan also presents.**  (true)\n\nThis is simply rule 4 restated directly - a structural guarantee, always true regardless of the specific scenario.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) It is possible for Faye to present at the conference.**  (false)\n\n$Trap: rule 5's contrapositive is \\neg Aiden → \\neg Faye. Since Aiden is always out (part a), Faye is therefore always forced out too - Faye can never present.$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) There is exactly one valid way to decide who presents, consistent with all six rules.**  (false)\n\nTrap: with Aiden and Bella both forced out, rules 2 and 4 still leave real freedom - for instance, Caleb = out, Daisy = in, Ethan = out satisfies every rule, and so does Caleb = in, Ethan = in, Daisy = either. Multiple distinct valid assignments exist, so the solution is not unique.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 28,
+    "solution_overview": "Assuming Aiden presents forces a contradiction via rules 1, 4, 6 (Bella both in and out), so Aiden is always out; assuming Bella presents separately forces a different contradiction via rules 3, 6, 2 (violates the Daisy-or-Ethan requirement), so Bella is always out too - leaving\n\n**Part 1: Setup.**\n\nAssuming Aiden presents forces a contradiction via rules 1, 4, 6 (Bella both in and out), so Aiden is always out; assuming Bella presents separately forces a different contradiction via rules 3, 6, 2 (violates the Daisy-or-Ethan requirement), so Bella is always out too - leaving Caleb, Daisy, Ethan with genuine remaining freedom, and Faye forced out by rule 5's contrapositive.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Aiden is forced to NOT present in every valid scenario.\n\nSuppose Aiden presents. Rule 1 forces both Bella and Caleb in; rule 4 then forces Ethan in (since Caleb is in); rule 6 then forces Bella OUT (since Ethan is in) - directly contradicting rule 1's requirement that Bella is in. This contradiction means Aiden can never present.\n\n**2.** (FALSE) It is possible for Bella to present in some valid scenario.\n\nTrap: suppose Bella presents. Rule 3 forces Daisy out; rule 6 forces Ethan out (since Bella is in). But then rule 2 (Daisy or Ethan) has both sides false - violated! So Bella presenting always leads to a contradiction; Bella can never present either.\n\n**3.** (TRUE) If Caleb presents, then Ethan also presents.\n\nThis is simply rule 4 restated directly - a structural guarantee, always true regardless of the specific scenario.\n\n**4.** (FALSE) It is possible for Faye to present at the conference.\n\n$Trap: rule 5's contrapositive is \\neg Aiden → \\neg Faye. Since Aiden is always out (part a), Faye is therefore always forced out too - Faye can never present.$\n\n**5.** (FALSE) There is exactly one valid way to decide who presents, consistent with all six rules.\n\nTrap: with Aiden and Bella both forced out, rules 2 and 4 still leave real freedom - for instance, Caleb = out, Daisy = in, Ethan = out satisfies every rule, and so does Caleb = in, Ethan = in, Daisy = either. Multiple distinct valid assignments exist, so the solution is not unique.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-119",
+    "case_id": "MATH 1.119",
+    "title": "Assigning Paper Reviewers",
+    "subsection": "1.4",
+    "context": "Assuming Petra does NOT review forces Sana out too (rule 6's contrapositive), which then breaks rule 4 entirely - so Petra must always review. From there, one unbroken chain (rules 1→3→5→2) forces every other variable in turn (Quinn out, Theo in, Ravi out, Sana in), leaving no fr",
+    "statements": [
+      "Petra must review the paper in every valid assignment.",
+      "If Quinn reviews, then Petra does not review.",
+      "It is possible for Ravi to review the paper in some valid assignment.",
+      "In the (unique) valid assignment, both Theo and Sana review the paper.",
+      "There are multiple different valid ways to assign reviewers consistent with all six rules."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Petra must review the paper in every valid assignment.**  (true)\n\nSuppose Petra does not review. Rule 6's contrapositive ($\\neg Petra$ →$\\neg Sana$) forces Sana out too. But then rule 4 (Petra or Sana) has both sides false - violated! So Petra not reviewing is impossible; Petra must always review.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) If Quinn reviews, then Petra does not review.**  (true)\n\n$This is the contrapositive of rule 1 (Petra → \\neg Quinn becomes Quinn → \\neg Petra) - a structural guarantee, always true.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) It is possible for Ravi to review the paper in some valid assignment.**  (false)\n\nTrap: tracing the forced chain from Petra = in: rule 1 forces Quinn out, rule 3 then forces Theo in, rule 5 then forces Ravi out. Since Petra is always in (part a), this chain always fires, so Ravi is always forced out - never able to review.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) In the (unique) valid assignment, both Theo and Sana review the paper.**  (true)\n\nContinuing the chain from part (c): Theo is forced in, and rule 2's contrapositive ($\\neg Ravi$ → Sana) forces Sana in once Ravi is forced out. Both Theo and Sana are in in the one valid assignment.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) There are multiple different valid ways to assign reviewers consistent with all six rules.**  (false)\n\nTrap: as shown above, once Petra = in is forced, every other variable (Quinn, Theo, Ravi, Sana) is forced in a single unbroken chain - leaving no freedom anywhere. The assignment is completely unique, not one of several options. SUPER DUPER HARD 🔥 🔥\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 29,
+    "solution_overview": "Assuming Petra does NOT review forces Sana out too (rule 6's contrapositive), which then breaks rule 4 entirely - so Petra must always review. From there, one unbroken chain (rules 1→3→5→2) forces every other variable in turn (Quinn out, Theo in, Ravi out, Sana in), leaving no fr\n\n**Part 1: Setup.**\n\nAssuming Petra does NOT review forces Sana out too (rule 6's contrapositive), which then breaks rule 4 entirely - so Petra must always review. From there, one unbroken chain (rules 1→3→5→2) forces every other variable in turn (Quinn out, Theo in, Ravi out, Sana in), leaving no freedom anywhere - a fully unique solution.\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Petra must review the paper in every valid assignment.\n\nSuppose Petra does not review. Rule 6's contrapositive ($\\neg Petra$ →$\\neg Sana$) forces Sana out too. But then rule 4 (Petra or Sana) has both sides false - violated! So Petra not reviewing is impossible; Petra must always review.\n\n**2.** (TRUE) If Quinn reviews, then Petra does not review.\n\n$This is the contrapositive of rule 1 (Petra → \\neg Quinn becomes Quinn → \\neg Petra) - a structural guarantee, always true.$\n\n**3.** (FALSE) It is possible for Ravi to review the paper in some valid assignment.\n\nTrap: tracing the forced chain from Petra = in: rule 1 forces Quinn out, rule 3 then forces Theo in, rule 5 then forces Ravi out. Since Petra is always in (part a), this chain always fires, so Ravi is always forced out - never able to review.\n\n**4.** (TRUE) In the (unique) valid assignment, both Theo and Sana review the paper.\n\nContinuing the chain from part (c): Theo is forced in, and rule 2's contrapositive ($\\neg Ravi$ → Sana) forces Sana in once Ravi is forced out. Both Theo and Sana are in in the one valid assignment.\n\n**5.** (FALSE) There are multiple different valid ways to assign reviewers consistent with all six rules.\n\nTrap: as shown above, once Petra = in is forced, every other variable (Quinn, Theo, Ravi, Sana) is forced in a single unbroken chain - leaving no freedom anywhere. The assignment is completely unique, not one of several options. SUPER DUPER HARD 🔥 🔥\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-120",
+    "case_id": "MATH 1.120",
+    "title": "Seven Finalists and the Tournament Roster",
+    "subsection": "1.4",
+    "context": "Testing Victor=out leads to two sub-branches (split on rule 3), and BOTH fail the \"≥4 compete\" threshold - so Victor (and hence Uma, by rule 1) must always compete, which then forces Wendy in and Xavier out (rule 3). From there, Yara/Zane/Bianca retain genuine freedom (subject to",
+    "statements": [
+      "Victor must compete in every valid roster.",
+      "It is possible for Xavier to compete in some valid roster.",
+      "If Bianca competes, then Zane does not compete.",
+      "There is exactly one valid way to build the roster, consistent with all eight rules.",
+      "It is possible for exactly six of the seven finalists to compete."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Victor must compete in every valid roster.**  (true)\n\nSuppose Victor does not compete (so Uma doesn't either, by rule 1). Rule 7's contrapositive forces Bianca out too. Now split on rule 3: if Wendy competes and Xavier doesn't, the maximum possible headcount - even with both Yara and Zane in - is only 3 (Wendy, Yara, Zane), short of the required 4. If Xavier competes and Wendy doesn't, rule 4 forces Yara out, and rule 5 then forces Zane in, giving only 2 competitors (Xavier, Zane) - even further short. Both branches violate rule 8, so Victor not competing is entirely impossible; Victor must always compete.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) It is possible for Xavier to compete in some valid roster.**  (false)\n\nTrap: since Victor always competes (part a), rule 2 forces Wendy in every time, and rule 3 (exactly one of Wendy/Xavier) then forces Xavier out every time - Xavier can never compete.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) If Bianca competes, then Zane does not compete.**  (true)\n\n$This is the contrapositive of rule 6 (Zane → \\neg Bianca becomes Bianca → \\neg Zane) - a structural guarantee, always true regardless of the specific roster.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) There is exactly one valid way to build the roster, consistent with all eight rules.**  (false)\n\nTrap: with Uma, Victor, Wendy always in and Xavier always out, rules 5 and 6 still leave real freedom among Yara, Zane, and Bianca - e.g., (Yara in, Zane out, Bianca out), (Yara in, Zane out, Bianca in), (Yara out, Zane in, Bianca out), and (Yara in, Zane in, Bianca out) are all separately valid. Several distinct rosters satisfy every rule, so the solution is not unique.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) It is possible for exactly six of the seven finalists to compete.**  (false)\n\nTrap: exactly six competing would require every finalist except Xavier to be in - meaning Yara, Zane, AND Bianca would all have to compete together. But rule 6 forbids Zane and Bianca competing simultaneously (Zane →$\\neg Bianca$), so that combination is never valid - exactly six can never be achieved.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 30,
+    "solution_overview": "Testing Victor=out leads to two sub-branches (split on rule 3), and BOTH fail the \"≥4 compete\" threshold - so Victor (and hence Uma, by rule 1) must always compete, which then forces Wendy in and Xavier out (rule 3). From there, Yara/Zane/Bianca retain genuine freedom (subject to\n\n**Part 1: Setup.**\n\nTesting Victor=out leads to two sub-branches (split on rule 3), and BOTH fail the \"≥4 compete\" threshold - so Victor (and hence Uma, by rule 1) must always compete, which then forces Wendy in and Xavier out (rule 3). From there, Yara/Zane/Bianca retain genuine freedom (subject to rules 5 and 6), giving multiple valid rosters overall, though never one with Xavier in, and never one hitting exactly six competitors (since that would require Zane and Bianca both in, violating rule 6).\n\n**Part 2: Key facts.**\n\nNegation switches quantifiers: $\\neg \\forall x\\, P(x) \\equiv \\exists x\\, \\neg P(x)$ and $\\neg \\exists x\\, P(x) \\equiv \\forall x\\, \\neg P(x)$. For deduction puzzles, exhaust consistent assignments.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Victor must compete in every valid roster.\n\nSuppose Victor does not compete (so Uma doesn't either, by rule 1). Rule 7's contrapositive forces Bianca out too. Now split on rule 3: if Wendy competes and Xavier doesn't, the maximum possible headcount - even with both Yara and Zane in - is only 3 (Wendy, Yara, Zane), short of the required 4. If Xavier competes and Wendy doesn't, rule 4 forces Yara out, and rule 5 then forces Zane in, giving only 2 competitors (Xavier, Zane) - even further short. Both branches violate rule 8, so Victor not competing is entirely impossible; Victor must always compete.\n\n**2.** (FALSE) It is possible for Xavier to compete in some valid roster.\n\nTrap: since Victor always competes (part a), rule 2 forces Wendy in every time, and rule 3 (exactly one of Wendy/Xavier) then forces Xavier out every time - Xavier can never compete.\n\n**3.** (TRUE) If Bianca competes, then Zane does not compete.\n\n$This is the contrapositive of rule 6 (Zane → \\neg Bianca becomes Bianca → \\neg Zane) - a structural guarantee, always true regardless of the specific roster.$\n\n**4.** (FALSE) There is exactly one valid way to build the roster, consistent with all eight rules.\n\nTrap: with Uma, Victor, Wendy always in and Xavier always out, rules 5 and 6 still leave real freedom among Yara, Zane, and Bianca - e.g., (Yara in, Zane out, Bianca out), (Yara in, Zane out, Bianca in), (Yara out, Zane in, Bianca out), and (Yara in, Zane in, Bianca out) are all separately valid. Several distinct rosters satisfy every rule, so the solution is not unique.\n\n**5.** (FALSE) It is possible for exactly six of the seven finalists to compete.\n\nTrap: exactly six competing would require every finalist except Xavier to be in - meaning Yara, Zane, AND Bianca would all have to compete together. But rule 6 forbids Zane and Bianca competing simultaneously (Zane →$\\neg Bianca$), so that combination is never valid - exactly six can never be achieved.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
+  }
+]

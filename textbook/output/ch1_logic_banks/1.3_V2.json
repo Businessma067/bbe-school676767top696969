@@ -1,0 +1,1087 @@
+[
+  {
+    "id": "math-1-44",
+    "case_id": "MATH 1.44",
+    "title": "Let P: \"7 is a prime number\" and Q: \"7 is an even number.\" (P is true,",
+    "subsection": "1.3",
+    "context": "Let P: \"7 is a prime number\" and Q: \"7 is an even number.\" (P is true, Q is false.)",
+    "statements": [
+      "$P \\land Q$ is true",
+      "$P \\lor Q$ is true",
+      "$\\neg (P \\land Q)$ is true",
+      "$\\neg P \\land \\neg Q$ is true",
+      "$\\neg (P \\lor Q)$ is true"
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $P \\land Q$ is true**  (false)\n\n\" $\\land$ \" (and) is true only when both parts are true. Since Q (\"7 is even\") is false, $P \\land Q$ is false regardless of P.",
+      "**B) $P \\lor Q$ is true**  (true)\n\n\" $\\lor$ \" (or) is true when at least one part is true. Since P (\"7 is prime\") is true, $P \\lor Q$ is true.",
+      "**C) $\\neg (P \\land Q)$ is true**  (true)\n\nSince $P \\land Q$ is false (see part a), its negation $\\neg (P \\land Q)$ is true.",
+      "**D) $\\neg P \\land \\neg Q$ is true**  (false)\n\nTrap: \" $\\land$ \" requires BOTH sides true. $\\neg P$ is false (since P, \"7 is prime,\" is true), so $\\neg P \\land \\neg Q$ is false regardless of $\\neg Q$ - mixing up $\\land$ with $\\lor$ flips the answer.",
+      "**E) $\\neg (P \\lor Q)$ is true**  (false)\n\nTrap: since $P \\lor Q$ is true (see part b), its negation $\\neg (P \\lor Q)$ must be false, not true. 14 Tier 2 - Core Practice"
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 1,
+    "solution_overview": "Let P: \"7 is a prime number\" and Q: \"7 is an even number.\" (P is true, Q is false.)\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-45",
+    "case_id": "MATH 1.45",
+    "title": "Primes greater than 2",
+    "subsection": "1.3",
+    "context": "Consider the statement: “For every prime number p greater than 2, p is an odd number.”",
+    "statements": [
+      "The statement is true.",
+      "The number 2 is a counterexample to the statement.",
+      "The correct negation of the statement is: “There exists a prime number p greater than 2 such that p is even.”",
+      "Since all primes greater than 2 are odd, it follows that all odd numbers greater than 2 are prime.",
+      "There are infinitely many primes greater than 2."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The statement is true.**  (true)\n\nAny even number greater than 2 is divisible by 2 and hence not prime, so every prime greater than 2 must be odd.",
+      "**B) The number 2 is a counterexample to the statement.**  (false)\n\n2 is explicitly excluded by the condition “greater than 2,” so it falls outside the statement's scope and cannot serve as a counterexample to it.",
+      "**C) The correct negation of the statement is: “There exists a prime number p greater than 2 such that p is even.”**  (true)\n\nNegating a “for every p ... p is odd” statement flips the quantifier to “there exists” and negates “odd” to “even,” giving exactly this.",
+      "**D) Since all primes greater than 2 are odd, it follows that all odd numbers greater than 2 are prime.**  (false)\n\nThis confuses the statement with its converse. 9 is odd and greater than 2 but not prime $(9 = 3 \\times 3)$, so the converse fails.",
+      "**E) There are infinitely many primes greater than 2.**  (true)\n\nIt is a classical theorem (Euclid) that there are infinitely many primes; excluding the single prime 2 still leaves infinitely many."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 2,
+    "solution_overview": "Consider the statement: “For every prime number p greater than 2, p is an odd number.”\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-46",
+    "case_id": "MATH 1.46",
+    "title": "University prerequisite chain",
+    "subsection": "1.3",
+    "context": "A university's rules state: (1) A student may enrol in Advanced Macroeconomics only if they have passed Intermediate Macroeconomics. (2) A student may enrol in Intermediate Macroeconomics only if they have passed Principles of Economics. Maria is currently enrolled in Advanced Macroeconomics.",
+    "statements": [
+      "Maria has passed Intermediate Macroeconomics.",
+      "Maria has passed Principles of Economics.",
+      "Passing Principles of Economics is a necessary condition for enrolling in Advanced Macroeconomics.",
+      "Passing Principles of Economics is a sufficient condition for enrolling in Advanced Macroeconomics.",
+      "We may conclude that Maria passed Principles of Economics with a perfect grade."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Maria has passed Intermediate Macroeconomics.**  (true)\n\nBy rule (1), enrolling in Advanced requires having passed Intermediate; Maria is enrolled in Advanced, so she must have passed Intermediate. 15",
+      "**B) Maria has passed Principles of Economics.**  (true)\n\nHaving passed Intermediate implies she was enrolled in it, and by rule (2), that requires having passed Principles.",
+      "**C) Passing Principles of Economics is a necessary condition for enrolling in Advanced Macroeconomics.**  (true)\n\nSince passing Principles is necessary for Intermediate, and passing Intermediate is necessary for Advanced, it is necessary (transitively) for Advanced too.",
+      "**D) Passing Principles of Economics is a sufficient condition for enrolling in Advanced Macroeconomics.**  (false)\n\nThe rules only establish necessary conditions along the chain; passing Principles alone does not guarantee meeting the further requirement of Intermediate, so it is not sufficient for Advanced.",
+      "**E) We may conclude that Maria passed Principles of Economics with a perfect grade.**  (false)\n\nNothing in the given information mentions grades at all - we can only conclude that Maria passed, not with what grade."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 3,
+    "solution_overview": "A university's rules state: (1) A student may enrol in Advanced Macroeconomics only if they have passed Intermediate Macroeconomics. (2) A student may enrol in Intermediate Macroeconomics only if they have passed Principles of Economics. Maria is currently enrolled in Advanced Macroeconomics.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-47",
+    "case_id": "MATH 1.47",
+    "title": "Let the primes less than 15) and the even numbers less than 15)",
+    "subsection": "1.3",
+    "context": "Let $P = \\{2, 3, 5, 7, 11, 13\\} ($the primes less than 15) and $E = \\{2, 4, 6, 8, 10, 12, 14\\} ($the even numbers less than 15).",
+    "statements": [
+      "$P \\cap E = \\{2\\}$",
+      "$P \\setminus E = \\{3, 5, 7, 11, 13\\}$",
+      "\" $\\forall x \\in P$, x is odd\" is a true statement",
+      "\"$x \\in P \\land x$ ≠ $2 \\Rightarrow x$ is odd\" is a true statement for all x",
+      "$P \\subseteq E$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $P \\cap E = \\{2\\}$**  (true)\n\nThe only number that is both prime (in P) and even (in E) is 2, so $P \\cap E = \\{2\\}$.",
+      "**B) $P \\setminus E = \\{3, 5, 7, 11, 13\\}$**  (true)\n\nRemoving the one shared element (2) from P leaves $\\{3, 5, 7, 11, 13\\}$.",
+      "**C) \" $\\forall x \\in P$, x is odd\" is a true statement**  (false)\n\nTrap: 2 is a prime number, yet it is even, not odd. This single counterexample makes the universal claim \"every element of P is odd\" false.",
+      "**D) \"$x \\in P \\land x$ ≠ $2 \\Rightarrow x$ is odd\" is a true statement for all x**  (true)\n\nBy excluding the special case x = 2 from consideration, the implication correctly holds: every prime other than 2 is indeed odd.",
+      "**E) $P \\subseteq E$**  (false)\n\nTrap: for P to be a subset of E, every element of P would need to be even. But 3, 5, 7, 11, $13 \\in P$ are all odd and not in E, so P ⊄ E."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 4,
+    "solution_overview": "Let $P = \\{2, 3, 5, 7, 11, 13\\} ($the primes less than 15) and $E = \\{2, 4, 6, 8, 10, 12, 14\\} ($the even numbers less than 15).\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-48",
+    "case_id": "MATH 1.48",
+    "title": "Let x be a real number, and let P: \"x > 10\" and Q: \"x > 5.\"",
+    "subsection": "1.3",
+    "context": "Let x be a real number, and let P: \"x > 10\" and Q: \"x > 5.\"",
+    "statements": [
+      "P is a sufficient condition for Q.",
+      "P is a necessary condition for Q.",
+      "Q is a necessary condition for P.",
+      "P and Q are equivalent conditions $(P \\Leftrightarrow Q)$. 16",
+      "x = 7 is a counterexample showing that Q does not imply P."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) P is a sufficient condition for Q.**  (true)\n\nWhenever x > 10, it is automatically true that x > 5, so $P \\Rightarrow Q$ holds and P is sufficient for Q.",
+      "**B) P is a necessary condition for Q.**  (false)\n\nTrap: P is not necessary for Q. Take x = 7: Q holds (7 > 5) but P fails (7 is not > 10). So Q can be true without P being true.",
+      "**C) Q is a necessary condition for P.**  (true)\n\nSince $P \\Rightarrow Q$, Q must be true whenever P is true - this is exactly what it means for Q to be a necessary condition for P.",
+      "**D) P and Q are equivalent conditions $(P \\Leftrightarrow Q)$. 16**  (false)\n\nTrap: equivalence would require $Q \\Rightarrow P$ as well, which fails (see x = 7 above). Only the one- directional implication $P \\Rightarrow Q$ holds, so P and Q are not equivalent.",
+      "**E) x = 7 is a counterexample showing that Q does not imply P.**  (true)\n\nx = 7 satisfies Q (7 > 5) but not P (7 is not > 10), which is precisely a counterexample disproving $Q \\Rightarrow P$."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 5,
+    "solution_overview": "Let x be a real number, and let P: \"x > 10\" and Q: \"x > 5.\"\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-49",
+    "case_id": "MATH 1.49",
+    "title": "Loan approval",
+    "subsection": "1.3",
+    "context": "A bank approves a loan only if the applicant's credit score is at least 700 AND their debt-to-income ratio is below 40%. Applicant P has a credit score of 750 and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720 and a debt-to-income ratio of 45%.",
+    "statements": [
+      "Applicant P satisfies both required conditions.",
+      "We may conclude that P's loan will be approved.",
+      "Applicant Q does not satisfy both required conditions.",
+      "Since Q fails one of the required conditions, Q's loan will not be approved.",
+      "If an applicant's debt-to-income ratio is below 40%, their loan will definitely be approved, regardless of credit score."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Applicant P satisfies both required conditions.**  (true)\n\nP's score (750) is at least 700 and P's ratio (35%) is below 40%, so both required conditions hold.",
+      "**B) We may conclude that P's loan will be approved.**  (false)\n\nThe rule states a necessary condition for approval (“only if”), not a sufficient one - meeting both requirements does not itself guarantee approval; other factors could still block it.",
+      "**C) Applicant Q does not satisfy both required conditions.**  (true)\n\nQ's ratio is 45%, which is not below 40%, so Q fails this required condition.",
+      "**D) Since Q fails one of the required conditions, Q's loan will not be approved.**  (true)\n\nApproval requires both conditions (a necessary condition). Since Q fails one of them, by contrapositive reasoning $(\\neg ($cond$1 \\land$ cond$2) \\Rightarrow \\neg$ Approved), Q cannot be approved.",
+      "**E) If an applicant's debt-to-income ratio is below 40%, their loan will definitely be approved, regardless of credit score.**  (false)\n\nBoth conditions are required together; a good ratio alone does not compensate for an insufficient credit score."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 6,
+    "solution_overview": "A bank approves a loan only if the applicant's credit score is at least 700 AND their debt-to-income ratio is below 40%. Applicant P has a credit score of 750 and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720 and a debt-to-income ratio of 45%.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-50",
+    "case_id": "MATH 1.50",
+    "title": "The universe of discourse is the set of real numbers, ℝ",
+    "subsection": "1.3",
+    "context": "The universe of discourse is the set of real numbers, ℝ.",
+    "statements": [
+      "The negation of \" $\\forall x$, x^2 ≥ 0\" is \" $\\exists x$, x^2 < 0.\"",
+      "The statement \" $\\exists x$ such that x^2 = -1\" is true.",
+      "The negation of \" $\\exists x$ such that x > 100\" is \" $\\forall x$, x ≤ 100.\"",
+      "\" $\\forall x$ > 0, $\\exists y$ such that y > x\" is a true statement.",
+      "\" $\\exists y$ such that $\\forall x$ > 0, y > x\" is a true statement."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The negation of \" $\\forall x$, x^2 ≥ 0\" is \" $\\exists x$, x^2 < 0.\"**  (true)\n\nNegating a universal quantifier gives an existential quantifier with the negated inner statement: $\\neg ( \\forall x$, P(x)) ≡ $\\exists x$, $\\neg P(x)$. Here $\\neg (x$^2 ≥ 0) is x^2 < 0.",
+      "**B) The statement \" $\\exists x$ such that x^2 = -1\" is true.**  (false)\n\nTrap: within the real numbers, no x satisfies x^2 = -1 (a square of a real number is never negative). This statement only becomes true if we work over the complex numbers, which are outside this universe.",
+      "**C) The negation of \" $\\exists x$ such that x > 100\" is \" $\\forall x$, x ≤ 100.\"**  (true)\n\n$\\neg (\\exists x$, P(x)) ≡ $\\forall x$, $\\neg P(x)$. Negating \"x > 100\" gives \"x ≤ 100,\" matching the statement exactly.",
+      "**D) \" $\\forall x$ > 0, $\\exists y$ such that y > x\" is a true statement.**  (true)\n\nFor any positive x, choosing y = x + 1 always gives a larger y, so a suitable y can always be found - the statement is true.",
+      "**E) \" $\\exists y$ such that $\\forall x$ > 0, y > x\" is a true statement.**  (false)\n\nTrap: swapping the order of quantifiers changes the meaning entirely. This version claims one single y is larger than every positive x, but the real numbers are unbounded above, so no such fixed y exists."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 7,
+    "solution_overview": "The universe of discourse is the set of real numbers, ℝ.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-51",
+    "case_id": "MATH 1.51",
+    "title": "A medical diagnostic criterion",
+    "subsection": "1.3",
+    "context": "A doctor's criterion: a patient is diagnosed with condition X only if they exhibit both symptom A and symptom B; however, exhibiting both symptoms does not guarantee the diagnosis, since other conditions must also be ruled out. Patient R has been diagnosed with condition X. Patient S exhibits symptom A but not symptom B.",
+    "statements": [
+      "Patient R might have been diagnosed with condition X despite exhibiting only symptom A (not symptom B).",
+      "Patient S can be diagnosed with condition X.",
+      "Exhibiting both symptoms A and B is a sufficient condition for diagnosis with condition X.",
+      "If a patient does not exhibit symptom A, they cannot be diagnosed with condition X, regardless of other symptoms.",
+      "It is impossible for a patient to exhibit both symptoms A and B without being diagnosed with condition X."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Patient R might have been diagnosed with condition X despite exhibiting only symptom A (not symptom B).**  (false)\n\nTrap: diagnosis requires both symptoms as a necessary condition - since R has been diagnosed, R MUST exhibit both A and B; a diagnosis with only symptom A present would be impossible under this criterion.",
+      "**B) Patient S can be diagnosed with condition X.**  (false)\n\nS lacks symptom B, which is required for diagnosis, so S cannot be diagnosed regardless of other factors.",
+      "**C) Exhibiting both symptoms A and B is a sufficient condition for diagnosis with condition X.**  (false)\n\nThe premise explicitly states that having both symptoms does not guarantee diagnosis - other conditions must also be ruled out, so the symptoms alone are necessary but not sufficient.",
+      "**D) If a patient does not exhibit symptom A, they cannot be diagnosed with condition X, regardless of other symptoms.**  (true)\n\nSince both symptoms are required together, missing symptom A alone is enough to fail the necessary condition, regardless of anything else.",
+      "**E) It is impossible for a patient to exhibit both symptoms A and B without being diagnosed with condition X.**  (false)\n\nTrap: the premise explicitly states having both symptoms is necessary but NOT sufficient - other conditions must still be ruled out. So a patient can very well have both symptoms and still not be diagnosed; it is not impossible at all. 18"
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 8,
+    "solution_overview": "A doctor's criterion: a patient is diagnosed with condition X only if they exhibit both symptom A and symptom B; however, exhibiting both symptoms does not guarantee the diagnosis, since other conditions must also be ruled out. Patient R has been diagnosed with condition X. Patient S exhibits symptom A but not symptom B.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-52",
+    "case_id": "MATH 1.52",
+    "title": "The universe is the set of integers from 1 to 20, i.e",
+    "subsection": "1.3",
+    "context": "The universe is the set of integers from 1 to 20, i.e. $\\{1, 2, ..., 20\\}$.",
+    "statements": [
+      "\" $\\exists x \\in \\{1,...,20\\}$ such that x is divisible by both 3 and 5\" is true",
+      "\" $\\forall x \\in \\{1,...,20\\}$, if x is divisible by 4, then x is divisible by 2\" is true",
+      "\" $\\forall x \\in \\{1,...,20\\}$, if x is divisible by 2, then x is divisible by 4\" is true",
+      "The negation of \" $\\forall x \\in \\{1,...,20\\}$, x is prime $\\Rightarrow x$ is odd\" is \" $\\exists x \\in \\{1,...,20\\}$, x is prime and x is even\"",
+      "The negated statement in (d) is itself true"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) \" $\\exists x \\in \\{1,...,20\\}$ such that x is divisible by both 3 and 5\" is true**  (true)\n\nx = 15 is divisible by both 3 and 5, so the existential claim holds.",
+      "**B) \" $\\forall x \\in \\{1,...,20\\}$, if x is divisible by 4, then x is divisible by 2\" is true**  (true)\n\nEvery multiple of 4 is automatically a multiple of $2 (4 = 2 \\times 2)$, so this holds for all x in the range.",
+      "**C) \" $\\forall x \\in \\{1,...,20\\}$, if x is divisible by 2, then x is divisible by 4\" is true**  (false)\n\nTrap: this reverses the previous statement's direction. x = 2 is divisible by 2 but not by 4, so the implication fails for x = 2 - a single counterexample makes the universal statement false.",
+      "**D) The negation of \" $\\forall x \\in \\{1,...,20\\}$, x is prime $\\Rightarrow x$ is odd\" is \" $\\exists x \\in \\{1,...,20\\}$, x is prime and x is even\"**  (true)\n\nThe general rule $\\neg ( \\forall x$, $P(x) \\Rightarrow Q(x))$ ≡ $\\exists x$, $P(x) \\land \\neg Q(x)$ applies here: negating \"prime $\\Rightarrow$ odd\" gives \"prime AND even,\" matching the statement exactly.",
+      "**E) The negated statement in (d) is itself true**  (true)\n\nx = 2 is both prime and even, so it witnesses the existential statement in (d), confirming it is true - which correctly shows that the original universal claim \"every prime is odd\" is false."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 9,
+    "solution_overview": "The universe is the set of integers from 1 to 20, i.e. $\\{1, 2, ..., 20\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-53",
+    "case_id": "MATH 1.53",
+    "title": "A club membership rule",
+    "subsection": "1.3",
+    "context": "A club's rule: “A person is a member if and only if they are not on the banned list.” The banned list contains exactly the people with 3 or more rule violations. Person T has 2 violations. Person U has 4 violations.",
+    "statements": [
+      "Person T is a member of the club.",
+      "Person U is a member of the club.",
+      "The banned list and the membership list are complementary (every person is in exactly one of the two).",
+      "If a person has exactly 3 violations, they could either be a member or banned, depending on additional unstated factors.",
+      "There exists some number of violations for which it is genuinely ambiguous, from the given rule alone, whether a person is banned."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Person T is a member of the club.**  (true)\n\nT has only 2 violations (fewer than 3), so T is not on the banned list, and by the iff rule, not-banned means member.",
+      "**B) Person U is a member of the club.**  (false)\n\nU has 4 ≥ 3 violations, so U is banned, and by the iff rule, being banned means not a member.",
+      "**C) The banned list and the membership list are complementary (every person is in exactly one of the two).**  (true)\n\nThe rule states member $\\Leftrightarrow \\neg$ banned, which is exactly the definition of two complementary sets - every person is a member or banned, never both, never neither. 19",
+      "**D) If a person has exactly 3 violations, they could either be a member or banned, depending on additional unstated factors.**  (false)\n\nThe banned list is precisely defined as “3 or more violations,” so exactly 3 violations deterministically means banned - there is no room for ambiguity or additional factors.",
+      "**E) There exists some number of violations for which it is genuinely ambiguous, from the given rule alone, whether a person is banned.**  (false)\n\nFor any specific number of violations, whether it is “3 or more” is a definite fact, so the rule leaves no ambiguous cases at all."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 10,
+    "solution_overview": "A club's rule: “A person is a member if and only if they are not on the banned list.” The banned list contains exactly the people with 3 or more rule violations. Person T has 2 violations. Person U has 4 violations.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-54",
+    "case_id": "MATH 1.54",
+    "title": "Consider the universal claim: \"All prime numbers are odd,\" and the irr",
+    "subsection": "1.3",
+    "context": "Consider the universal claim: \"All prime numbers are odd,\" and the irrationality of √2.",
+    "statements": [
+      "To disprove the universal statement \"all prime numbers are odd,\" it suffices to give one counterexample.",
+      "The number 2 is a valid counterexample to \"all prime numbers are odd.\"",
+      "Proving $P \\Rightarrow Q$ by contradiction means assuming P is true and Q is false, then deriving a contradiction.",
+      "A proof by contradiction that √2 is irrational begins by assuming that √2 IS irrational.",
+      "If a statement is confirmed true for one specific example, this proves it is true for all cases."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) To disprove the universal statement \"all prime numbers are odd,\" it suffices to give one counterexample.**  (true)\n\nA single counterexample is enough to disprove a universal (\"for all\") claim, since it directly contradicts \"every case satisfies the property.\"",
+      "**B) The number 2 is a valid counterexample to \"all prime numbers are odd.\"**  (true)\n\n2 is prime and even, so it directly falsifies the claim that every prime is odd - a textbook counterexample.",
+      "**C) Proving $P \\Rightarrow Q$ by contradiction means assuming P is true and Q is false, then deriving a contradiction.**  (true)\n\nIn a proof by contradiction of $P \\Rightarrow Q$, one assumes the hypothesis P is true and the conclusion Q is false, then shows this combination leads to a logical contradiction, which forces $P \\Rightarrow Q$ to be true.",
+      "**D) A proof by contradiction that √2 is irrational begins by assuming that √2 IS irrational.**  (false)\n\nTrap: this reverses the logic. A proof by contradiction of \"√2 is irrational\" must begin by assuming the OPPOSITE - that √2 IS rational - and then derive a contradiction from that assumption.",
+      "**E) If a statement is confirmed true for one specific example, this proves it is true for all cases.**  (false)\n\nTrap: a single confirming example never proves a universal statement; it only shows the statement is not violated in that one case. Only a counterexample (a single failing case) can settle a universal claim - and only in the negative direction."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 11,
+    "solution_overview": "Consider the universal claim: \"All prime numbers are odd,\" and the irrationality of √2.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-55",
+    "case_id": "MATH 1.55",
+    "title": "An event organizer's rule is : \"If it rains, the picnic is cancelled.\"",
+    "subsection": "1.3",
+    "context": "An event organizer's rule is $P \\Rightarrow Q$: \"If it rains, the picnic is cancelled.\"",
+    "statements": [
+      "The negation of this rule is: \"It rains and the picnic is not cancelled.\"",
+      "The converse, \"If the picnic is cancelled, then it rained,\" is guaranteed true whenever the organizer's rule holds.",
+      "The inverse, \"If it does not rain, the picnic is not cancelled,\" is logically equivalent to the original rule.",
+      "Suppose it did not rain, yet the picnic was cancelled due to a venue conflict. This contradicts the inverse statement, but does NOT contradict the original rule $P \\Rightarrow Q$. 20",
+      "The contrapositive, \"If the picnic was not cancelled, then it did not rain,\" is logically equivalent to the original rule and must also hold."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The negation of this rule is: \"It rains and the picnic is not cancelled.\"**  (true)\n\nThe negation of $P \\Rightarrow Q$ is the conjunction $P \\land \\neg Q$, correctly stated here.",
+      "**B) The converse, \"If the picnic is cancelled, then it rained,\" is guaranteed true whenever the organizer's rule holds.**  (false)\n\nTrap: this is the converse $Q \\Rightarrow P$, not guaranteed. The picnic could be cancelled for reasons other than rain (venue conflict, illness, etc.), so Q can be true while P is false.",
+      "**C) The inverse, \"If it does not rain, the picnic is not cancelled,\" is logically equivalent to the original rule.**  (false)\n\nTrap: the inverse $\\neg P \\Rightarrow \\neg Q$ is not equivalent to the original $P \\Rightarrow Q$ - only the contrapositive is.",
+      "**D) Suppose it did not rain, yet the picnic was cancelled due to a venue conflict. This contradicts the inverse statement, but does NOT contradict the original rule $P \\Rightarrow Q$. 20**  (true)\n\nThis scenario has $\\neg P ($no rain) and Q (cancelled), which breaks the inverse $\\neg P \\Rightarrow \\neg Q$. But the original rule $P \\Rightarrow Q$ only makes a claim when P is true; with P false here, the original is unaffected (vacuously fine).",
+      "**E) The contrapositive, \"If the picnic was not cancelled, then it did not rain,\" is logically equivalent to the original rule and must also hold.**  (true)\n\nThe contrapositive $\\neg Q \\Rightarrow \\neg P$ is always logically equivalent to $P \\Rightarrow Q$, so if the organizer's rule is accepted as true, the contrapositive must hold too."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 12,
+    "solution_overview": "An event organizer's rule is $P \\Rightarrow Q$: \"If it rains, the picnic is cancelled.\"\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-56",
+    "case_id": "MATH 1.56",
+    "title": "A market survey of 100 consumers found that 40 bought product X, 35 bo",
+    "subsection": "1.3",
+    "context": "A market survey of 100 consumers found that 40 bought product X, 35 bought product Y, and 15 bought both X and Y.",
+    "statements": [
+      "In mathematical logic, the statement \"a consumer bought X or Y\" includes consumers who bought both.",
+      "The number of consumers who bought X or Y (in the inclusive sense) is 60.",
+      "If \"or\" were interpreted exclusively (XOR: exactly one of X, Y), the count of consumers satisfying \"X or Y\" would be 45.",
+      "The biconditional $P \\Leftrightarrow Q$ means P and Q always have the same truth value.",
+      "$P \\Leftrightarrow Q$ is true whenever at least one of P or Q is true."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) In mathematical logic, the statement \"a consumer bought X or Y\" includes consumers who bought both.**  (true)\n\nAs established in the book, \"P or Q\" is inclusive in mathematics - it is true whenever P is true, Q is true, or both are true.",
+      "**B) The number of consumers who bought X or Y (in the inclusive sense) is 60.**  (true)\n\nBy the inclusion-exclusion principle: $\\lvert X \\cup Y \\rvert = \\lvert X \\rvert$ + $\\lvert Y \\rvert$ - $\\lvert X \\cap Y \\rvert = 40$ + 35 - 15 = 60.",
+      "**C) If \"or\" were interpreted exclusively (XOR: exactly one of X, Y), the count of consumers satisfying \"X or Y\" would be 45.**  (true)\n\nExclusive \"X or Y\" counts only those who bought exactly one product: (40 - 15) + (35 - 15) = 25 + 20 = 45, i.e. $\\lvert X \\rvert$ + $\\lvert Y \\rvert$ - $2\\lvert X \\cap Y \\rvert = 40$ + 35 - 30 = 45.",
+      "**D) The biconditional $P \\Leftrightarrow Q$ means P and Q always have the same truth value.**  (true)\n\nThis is precisely the definition of the biconditional: $P \\Leftrightarrow Q$ holds exactly when P and Q are both true or both false.",
+      "**E) $P \\Leftrightarrow Q$ is true whenever at least one of P or Q is true.**  (false)\n\nTrap: this confuses the biconditional with inclusive \"or.\" $P \\Leftrightarrow Q$ is false if exactly one of P, Q is true (e.g., P true, Q false) - \"at least one true\" is not the criterion; matching truth values is."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 13,
+    "solution_overview": "A market survey of 100 consumers found that 40 bought product X, 35 bought product Y, and 15 bought both X and Y.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-57",
+    "case_id": "MATH 1.57",
+    "title": "Passing a course: attendance and the final exam",
+    "subsection": "1.3",
+    "context": "A university rule: a student passes the course if and only if they attended at least 80% of classes AND scored at least 50 on the final exam. Student K attended 85% of classes and scored 48 on the final. Student L attended 75% of classes and scored 90 on the final.",
+    "statements": [
+      "Student K passes the course.",
+      "Student L passes the course.",
+      "A high score on the final exam can compensate for insufficient attendance, allowing a student to still pass.",
+      "If a student attends at least 80% of classes but scores below 50 on the final, they will not pass, no matter how close their score is to 50.",
+      "There could exist a student who passes despite having a lower combined average performance than another student who fails, since the rule checks each threshold separately rather than an overall average."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Student K passes the course.**  (false)\n\nK's attendance is fine (85% ≥ 80%), but K's final score (48) is below the required 50, so the AND- condition fails.",
+      "**B) Student L passes the course.**  (false)\n\nL's final score is fine (90 ≥ 50), but L's attendance (75%) is below the required 80%, so the AND- condition fails.",
+      "**C) A high score on the final exam can compensate for insufficient attendance, allowing a student to still pass.**  (false)\n\nL's case directly disproves this: a very high final score (90) did not compensate for insufficient attendance - the rule requires both thresholds independently, with no substitution allowed.",
+      "**D) If a student attends at least 80% of classes but scores below 50 on the final, they will not pass, no matter how close their score is to 50.**  (true)\n\nThe rule requires both conditions to hold; failing the final-exam threshold blocks passing regardless of the margin, as illustrated by K falling only 2 points short.",
+      "**E) There could exist a student who passes despite having a lower combined average performance than another student who fails, since the rule checks each threshold separately rather than an overall average.**  (true)\n\nFor example, a student with exactly 80% attendance and exactly 50 on the final barely passes, while a student with 79% attendance and a perfect 100 final still fails - despite arguably better overall performance - because the rule checks each threshold separately, not a combined average."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 14,
+    "solution_overview": "A university rule: a student passes the course if and only if they attended at least 80% of classes AND scored at least 50 on the final exam. Student K attended 85% of classes and scored 48 on the final. Student L attended 75% of classes and scored 90 on the final.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-58",
+    "case_id": "MATH 1.58",
+    "title": "Online store filter (De Morgan)",
+    "subsection": "1.3",
+    "context": "An online store's \"clearance-free, in-stock only\" filter displays an item exactly when NOT (the item is on sale OR the item is out of stock). Item M is on sale and is in stock. Item N is not on sale and is out of stock. Item K is not on sale and is in stock.",
+    "statements": [
+      "Item M is displayed by the filter.",
+      "Item N is displayed by the filter.",
+      "The filter condition \"NOT (on sale OR out of stock)\" is logically equivalent to \"NOT on sale OR NOT out of stock.\"",
+      "The filter condition is logically equivalent to \"NOT on sale AND NOT out of stock,\" meaning an item is displayed only if it is neither on sale nor out of stock.",
+      "Item K is displayed by the filter."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Item M is displayed by the filter.**  (false)\n\nM is on sale, so \"on sale OR out of stock\" is true, and the filter needs the negation of that to be true. Since it's false, M is not displayed.",
+      "**B) Item N is displayed by the filter.**  (false)\n\nN is out of stock, so \"on sale OR out of stock\" is true (out-of-stock alone makes the OR true). The filter requires this to be false, so N is not displayed either.",
+      "**C) The filter condition \"NOT (on sale OR out of stock)\" is logically equivalent to \"NOT on sale OR NOT out of stock.\"**  (false)\n\nThis is the classic De Morgan mistake: NOT(P OR Q) is equivalent to (NOT P) AND (NOT Q), not (NOT P) OR (NOT Q). The statement swaps AND for OR incorrectly. 22",
+      "**D) The filter condition is logically equivalent to \"NOT on sale AND NOT out of stock,\" meaning an item is displayed only if it is neither on sale nor out of stock.**  (true)\n\nBy De Morgan's law, NOT(on sale OR out of stock) = (NOT on sale) AND (NOT out of stock) - an item is displayed exactly when both conditions (not on sale, and in stock) hold simultaneously.",
+      "**E) Item K is displayed by the filter.**  (true)\n\nK is not on sale and is in stock, so both NOT on sale and NOT out of stock are true, satisfying the AND condition from part (d). K is displayed."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 15,
+    "solution_overview": "An online store's \"clearance-free, in-stock only\" filter displays an item exactly when NOT (the item is on sale OR the item is out of stock). Item M is on sale and is in stock. Item N is not on sale and is out of stock. Item K is not on sale and is in stock.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-59",
+    "case_id": "MATH 1.59",
+    "title": "Consider the statement , where P: \"a country's inflation rate exceeds",
+    "subsection": "1.3",
+    "context": "Consider the statement $P \\Rightarrow Q$, where P: \"a country's inflation rate exceeds 10%\" and Q: \"the central bank raises interest rates.\"",
+    "statements": [
+      "The contrapositive of $P \\Rightarrow Q$ is: \"If the central bank does not raise interest rates, then inflation is at most 10%.\"",
+      "The converse of $P \\Rightarrow Q$, \"If the central bank raises interest rates, then inflation exceeds 10%,\" is logically equivalent to $P \\Rightarrow Q$.",
+      "$P \\Rightarrow Q$ means that P is a sufficient condition for Q.",
+      "$P \\Rightarrow Q$ means that P is a necessary condition for Q.",
+      "If we are told that the bank raised interest rates (Q is true), we may validly conclude that inflation exceeded 10% (P is true)."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The contrapositive of $P \\Rightarrow Q$ is: \"If the central bank does not raise interest rates, then inflation is at most 10%.\"**  (true)\n\nThe contrapositive of $P \\Rightarrow Q$ is $\\neg Q \\Rightarrow \\neg P$. Here $\\neg Q =$ \"bank does not raise rates\" and $\\neg P =$ \"inflation ≤ 10%\" (\"at most 10%\"), which matches exactly. The contrapositive is always logically equivalent to the original implication.",
+      "**B) The converse of $P \\Rightarrow Q$, \"If the central bank raises interest rates, then inflation exceeds 10%,\" is logically equivalent to $P \\Rightarrow Q$.**  (false)\n\nTrap: the converse $(Q \\Rightarrow P)$ is generally NOT equivalent to the original implication $(P \\Rightarrow Q)$. A bank could raise rates for reasons other than inflation exceeding 10% (e.g., currency stabilization), so $Q \\Rightarrow P$ need not hold.",
+      "**C) $P \\Rightarrow Q$ means that P is a sufficient condition for Q.**  (true)\n\nBy definition, in $P \\Rightarrow Q$, P being true is enough (sufficient) to guarantee Q is true.",
+      "**D) $P \\Rightarrow Q$ means that P is a necessary condition for Q.**  (false)\n\nTrap: it is Q that is necessary for P (since $P \\Rightarrow Q$ means Q must hold whenever P holds), not P necessary for Q. P is sufficient for Q, and Q is necessary for P - these must not be confused.",
+      "**E) If we are told that the bank raised interest rates (Q is true), we may validly conclude that inflation exceeded 10% (P is true).**  (false)\n\nTrap: this commits the fallacy of \"affirming the consequent.\" Q being true does not let us infer P is true - the bank might have raised rates for another reason entirely."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 16,
+    "solution_overview": "Consider the statement $P \\Rightarrow Q$, where P: \"a country's inflation rate exceeds 10%\" and Q: \"the central bank raises interest rates.\"\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-60",
+    "case_id": "MATH 1.60",
+    "title": "A chain of biconditionals",
+    "subsection": "1.3",
+    "context": "Let P, Q, and R be propositions about a number x. It is known that $P \\Leftrightarrow Q$ and $Q \\Leftrightarrow R$. Suppose P is true.",
+    "statements": [
+      "Q is true.",
+      "R is true.",
+      "$P \\Leftrightarrow R$ must also hold, even though it isn't stated directly. 23",
+      "If R were false instead, then P would have to be false too.",
+      "Knowing only that $P \\Leftrightarrow R$ is true (without the individual facts $P \\Leftrightarrow Q$ and $Q \\Leftrightarrow R)$, we could still conclude that Q always shares the same truth value as P and R."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Q is true.**  (true)\n\nSince $P \\Leftrightarrow Q$ and P is true, Q must also be true.",
+      "**B) R is true.**  (true)\n\nSince $Q \\Leftrightarrow R$ and Q is true (part a), R must also be true.",
+      "**C) $P \\Leftrightarrow R$ must also hold, even though it isn't stated directly. 23**  (true)\n\nBiconditional equivalence is transitive: from $P \\Leftrightarrow Q$ and $Q \\Leftrightarrow R$, it follows generally that $P \\Leftrightarrow R$.",
+      "**D) If R were false instead, then P would have to be false too.**  (true)\n\nIf R were false, then $Q \\Leftrightarrow R$ would force Q false, and then $P \\Leftrightarrow Q$ would force P false - tracing the chain backward.",
+      "**E) Knowing only that $P \\Leftrightarrow R$ is true (without the individual facts $P \\Leftrightarrow Q$ and $Q \\Leftrightarrow R)$, we could still conclude that Q always shares the same truth value as P and R.**  (false)\n\n$P \\Leftrightarrow R$ alone says nothing about Q; Q could behave completely independently of P and R unless the individual biconditionals with Q are separately known."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 17,
+    "solution_overview": "Let P, Q, and R be propositions about a number x. It is known that $P \\Leftrightarrow Q$ and $Q \\Leftrightarrow R$. Suppose P is true.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-61",
+    "case_id": "MATH 1.61",
+    "title": "Cancelling a concert",
+    "subsection": "1.3",
+    "context": "A rule states: the outdoor concert will be cancelled unless the rain stops before 6 PM. Let C: “the concert is cancelled”, S: “the rain stops before 6 PM.”",
+    "statements": [
+      "The rule translates to: $\\neg S \\Rightarrow C$.",
+      "The rule is logically equivalent to: $S \\Rightarrow \\neg C$.",
+      "The rule is logically equivalent to: $C \\lor S$.",
+      "If the rain stops before 6 PM, the concert is guaranteed to happen (not be cancelled).",
+      "If the concert is not cancelled, then the rain must have stopped before 6 PM."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The rule translates to: $\\neg S \\Rightarrow C$.**  (true)\n\n“A unless B” standardly translates as “if not B, then A” - here, if the rain does not stop by 6, the concert is cancelled.",
+      "**B) The rule is logically equivalent to: $S \\Rightarrow \\neg C$.**  (false)\n\nChecking truth values: when S and C are both true, $\\neg S \\Rightarrow C$ is true (antecedent false, vacuously true), but $S \\Rightarrow \\neg C$ is false (true antecedent, false consequent) - the two are not equivalent.",
+      "**C) The rule is logically equivalent to: $C \\lor S$.**  (true)\n\n$\\neg S \\Rightarrow C$ is logically equivalent to $S \\lor C$ by the standard equivalence for material implication $(\\neg A \\Rightarrow B$ ≡ $A \\lor B)$.",
+      "**D) If the rain stops before 6 PM, the concert is guaranteed to happen (not be cancelled).**  (false)\n\nThe rule only tells us what happens when the rain does NOT stop; it says nothing about what happens when it does stop - the concert could still be cancelled for unrelated reasons.",
+      "**E) If the concert is not cancelled, then the rain must have stopped before 6 PM.**  (true)\n\nThis is the contrapositive of $\\neg S \\Rightarrow C$, namely $\\neg C \\Rightarrow S$, which is always logically equivalent to the original implication."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 18,
+    "solution_overview": "A rule states: the outdoor concert will be cancelled unless the rain stops before 6 PM. Let C: “the concert is cancelled”, S: “the rain stops before 6 PM.”\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-62",
+    "case_id": "MATH 1.62",
+    "title": "A senior transit discount rule",
+    "subsection": "1.3",
+    "context": "A transit discount applies to riders who are at least 65 years old AND (have a qualifying disability OR have an annual income below $20,000). Rider P is 70, has no disability, and earns $18,000. Rider Q is 67, has a qualifying disability, and earns $50,000.",
+    "statements": [
+      "Rider P qualifies for the discount.",
+      "Rider Q, who is 67, has a qualifying disability, but earns $50,000, does NOT qualify for the discount because the income exceeds $20,000.",
+      "Having an income above $20,000 automatically disqualifies a senior rider from the discount, even if they have a qualifying disability.",
+      "There exists a scenario where a 70-year-old rider with no disability and an income of $25,000 would NOT qualify for the discount.",
+      "Age alone (being at least 65) is a sufficient condition for receiving the discount, regardless of disability or income status."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Rider P qualifies for the discount.**  (true)\n\nP is 70 (≥65) and earns $18,000 (< $20,000), satisfying the income part of the OR-condition, so both the age requirement and the OR-condition are met.",
+      "**B) Rider Q, who is 67, has a qualifying disability, but earns $50,000, does NOT qualify for the discount because the income exceeds $20,000.**  (false)\n\nTrap: Q is 67 (≥65) and has a qualifying disability, which alone satisfies the OR-condition regardless of income. Q's high income is irrelevant here - the disability is enough, so Q DOES qualify.",
+      "**C) Having an income above $20,000 automatically disqualifies a senior rider from the discount, even if they have a qualifying disability.**  (false)\n\nQ's case directly disproves this - Q has a high income ($50,000) but still qualifies because the disability alone satisfies the OR-condition.",
+      "**D) There exists a scenario where a 70-year-old rider with no disability and an income of $25,000 would NOT qualify for the discount.**  (true)\n\nSuch a rider meets the age requirement but satisfies neither part of the OR-condition (no disability, and $25,000 is not below $20,000), so the overall AND-condition fails and they would not qualify.",
+      "**E) Age alone (being at least 65) is a sufficient condition for receiving the discount, regardless of disability or income status.**  (false)\n\nAs shown in (d), meeting the age requirement alone is not enough - the OR-condition (disability or low income) must also be satisfied."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 19,
+    "solution_overview": "A transit discount applies to riders who are at least 65 years old AND (have a qualifying disability OR have an annual income below $20,000). Rider P is 70, has no disability, and earns $18,000. Rider Q is 67, has a qualifying disability, and earns $50,000.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-63",
+    "case_id": "MATH 1.63",
+    "title": "Consider the claim: \"For all positive integers n, 1 + 2 + ... + n = n(",
+    "subsection": "1.3",
+    "context": "Consider the claim: \"For all positive integers n, 1 + 2 + ... + n = n(n+1)/2.\"",
+    "statements": [
+      "The base case to verify is n = 1, giving 1 = 1(2)/2 = 1, which holds",
+      "The inductive step assumes the formula holds for n = k and proves it for n = k + 1",
+      "Checking the formula for n = 1, 2, 3, 4, 5 constitutes a complete proof by induction",
+      "If 1+2+...+k = k(k+1)/2, then 1+2+...+k+(k+1) = k(k+1)/2 + (k+1) = (k+1)(k+2)/2, which confirms the inductive step",
+      "For n = 10, the formula gives 1+2+...+10 = 55"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The base case to verify is n = 1, giving 1 = 1(2)/2 = 1, which holds**  (true)\n\nThe base case checks the smallest n (here n = 1); the formula gives 1·2/2 = 1, matching the actual sum, so the base case holds.",
+      "**B) The inductive step assumes the formula holds for n = k and proves it for n = k + 1**  (true)\n\nThis is precisely the structure of the inductive step: assume the statement for n = k (the induction hypothesis), then prove it for n = k + 1.",
+      "**C) Checking the formula for n = 1, 2, 3, 4, 5 constitutes a complete proof by induction**  (false)\n\nTrap: verifying finitely many cases (even many of them) is NOT a proof by induction. Without the general inductive step showing truth is passed from k to k+1 for every k, the claim remains unproven for all n.",
+      "**D) If 1+2+...+k = k(k+1)/2, then 1+2+...+k+(k+1) = k(k+1)/2 + (k+1) = (k+1)(k+2)/2, which confirms the inductive step**  (true)\n\nAdding (k+1) to both sides: k(k+1)/2 + (k+1) = (k+1)[k/2 + 1] = (k+1)(k+2)/2, exactly matching the formula's prediction for n = k+1 - this completes a valid inductive step.",
+      "**E) For n = 10, the formula gives 1+2+...+10 = 55**  (true)\n\nDirect substitution: $10 \\times 11$ / 2 = 110/2 = 55, which also matches 1+2+...+10 computed directly. 25"
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 20,
+    "solution_overview": "Consider the claim: \"For all positive integers n, 1 + 2 + ... + n = n(n+1)/2.\"\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-64",
+    "case_id": "MATH 1.64",
+    "title": "Consider the (debatable) economic claim : \"If inflation increases, the",
+    "subsection": "1.3",
+    "context": "Consider the (debatable) economic claim $P \\Rightarrow Q$: \"If inflation increases, then unemployment decreases.\" Each statement below is a proposed rewording - decide whether it is logically equivalent to $P \\Rightarrow Q$.",
+    "statements": [
+      "\"For unemployment to decrease, inflation must increase\" is equivalent to $P \\Rightarrow Q$.",
+      "\"A sufficient condition for unemployment to decrease is that inflation increases\" is equivalent to $P \\Rightarrow Q$.",
+      "\"Unemployment can only decrease if inflation increases\" is equivalent to $P \\Rightarrow Q$.",
+      "\"If unemployment does not decrease, then inflation does not increase\" is equivalent to $P \\Rightarrow Q$.",
+      "\"A necessary condition for inflation to increase is that unemployment decreases\" is equivalent to $P \\Rightarrow Q$."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) \"For unemployment to decrease, inflation must increase\" is equivalent to $P \\Rightarrow Q$.**  (false)\n\nTrap: \"For Q to happen, P must happen\" translates to $Q \\Rightarrow P$ - this is the CONVERSE of the original implication, not the original itself, and the converse is not logically equivalent to it.",
+      "**B) \"A sufficient condition for unemployment to decrease is that inflation increases\" is equivalent to $P \\Rightarrow Q$.**  (true)\n\n\"A sufficient condition for Q is P\" is precisely the verbal definition of $P \\Rightarrow Q$, so this rewording is equivalent.",
+      "**C) \"Unemployment can only decrease if inflation increases\" is equivalent to $P \\Rightarrow Q$.**  (false)\n\nTrap: \"Q only if P\" also translates to $Q \\Rightarrow P ($the converse), the same trap as statement (a) worded differently - it is NOT equivalent to $P \\Rightarrow Q$.",
+      "**D) \"If unemployment does not decrease, then inflation does not increase\" is equivalent to $P \\Rightarrow Q$.**  (true)\n\n\"If $\\neg Q$ then $\\neg P$\" is exactly the contrapositive $\\neg Q \\Rightarrow \\neg P$, which is always logically equivalent to the original implication $P \\Rightarrow Q$.",
+      "**E) \"A necessary condition for inflation to increase is that unemployment decreases\" is equivalent to $P \\Rightarrow Q$.**  (true)\n\n\"A necessary condition for P is Q\" translates to $P \\Rightarrow Q (Q$ must hold whenever P holds) - this is exactly the original statement."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 21,
+    "solution_overview": "Consider the (debatable) economic claim $P \\Rightarrow Q$: \"If inflation increases, then unemployment decreases.\" Each statement below is a proposed rewording - decide whether it is logically equivalent to $P \\Rightarrow Q$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-65",
+    "case_id": "MATH 1.65",
+    "title": "Airline delay chain",
+    "subsection": "1.3",
+    "context": "An airline's operations log records: (1) If Flight 202 is delayed, then Flight 305 is cancelled. (2) If Flight 305 is cancelled, then the ground crew works overtime. (3) Flight 202 is delayed today.",
+    "statements": [
+      "Flight 305 is cancelled today.",
+      "The ground crew works overtime today.",
+      "Statement (2) is essential to concluding that the crew works overtime today - without it, that conclusion could not be reached from (1) and (3) alone.",
+      "If Flight 202 were NOT delayed today, statement (1) guarantees that Flight 305 would not be cancelled.",
+      "There exist scenarios satisfying (1), (2), and (3) in which the ground crew does not work overtime."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Flight 305 is cancelled today.**  (true)\n\nBy (3), Flight 202 is delayed. Applying (1) (delayed $\\Rightarrow$ cancelled) directly gives that Flight 305 is cancelled. 26",
+      "**B) The ground crew works overtime today.**  (true)\n\nSince Flight 305 is cancelled (part a), applying (2) (cancelled $\\Rightarrow$ overtime) gives that the crew works overtime.",
+      "**C) Statement (2) is essential to concluding that the crew works overtime today - without it, that conclusion could not be reached from (1) and (3) alone.**  (true)\n\nStatements (1) and (3) alone only establish that Flight 305 is cancelled; they say nothing about the crew. Statement (2) is the only link connecting cancellation to overtime, so it is indispensable here.",
+      "**D) If Flight 202 were NOT delayed today, statement (1) guarantees that Flight 305 would not be cancelled.**  (false)\n\nStatement (1) only specifies what happens when Flight 202 IS delayed; it says nothing about the case when it is not delayed. Inferring that Flight 305 is not cancelled from \"202 is not delayed\" is the fallacy of denying the antecedent.",
+      "**E) There exist scenarios satisfying (1), (2), and (3) in which the ground crew does not work overtime.**  (false)\n\nGiven (1) and (3), Flight 305 must be cancelled; given that cancellation and (2), the crew must work overtime. There is no way to satisfy all of (1), (2), and (3) simultaneously while the crew avoids overtime."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 22,
+    "solution_overview": "An airline's operations log records: (1) If Flight 202 is delayed, then Flight 305 is cancelled. (2) If Flight 305 is cancelled, then the ground crew works overtime. (3) Flight 202 is delayed today.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-66",
+    "case_id": "MATH 1.66",
+    "title": "A professor's claim is : \"If a student studies at least 10 hours, they",
+    "subsection": "1.3",
+    "context": "A professor's claim is $P \\Rightarrow Q$: \"If a student studies at least 10 hours, they pass the exam.\"",
+    "statements": [
+      "The negation of this claim is: \"A student studies at least 10 hours and does not pass.\"",
+      "The converse, \"If a student passes, they studied at least 10 hours,\" must be true whenever the original claim is true.",
+      "Anna passes the exam without studying at all (she already knew the material). This is a counterexample to the converse, but not to the original claim.",
+      "The inverse, \"If a student studies less than 10 hours, they do not pass,\" is the logical equivalent of the contrapositive.",
+      "If we know a student did NOT pass, we may validly conclude, via the contrapositive, that they studied less than 10 hours."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The negation of this claim is: \"A student studies at least 10 hours and does not pass.\"**  (true)\n\nThe negation of $P \\Rightarrow Q$ is $P \\land \\neg Q$, correctly formed here.",
+      "**B) The converse, \"If a student passes, they studied at least 10 hours,\" must be true whenever the original claim is true.**  (false)\n\nTrap: this is the converse $Q \\Rightarrow P$, not guaranteed by the original. A student can pass without hitting the 10-hour mark.",
+      "**C) Anna passes the exam without studying at all (she already knew the material). This is a counterexample to the converse, but not to the original claim.**  (true)\n\nAnna has Q true (passes) and P false (didn't study), which breaks the converse $Q \\Rightarrow P$. It says nothing about the original $P \\Rightarrow Q$, since that only constrains cases where P is true.",
+      "**D) The inverse, \"If a student studies less than 10 hours, they do not pass,\" is the logical equivalent of the contrapositive.**  (false)\n\nTrap: the inverse $\\neg P \\Rightarrow \\neg Q$ is logically equivalent to the CONVERSE $(Q \\Rightarrow P)$, not the contrapositive. The contrapositive is equivalent only to the original statement.",
+      "**E) If we know a student did NOT pass, we may validly conclude, via the contrapositive, that they studied less than 10 hours.**  (true)\n\n\"Did not pass\" is $\\neg Q$; concluding $\\neg P ($\"studied less than 10 hours\") is exactly the contrapositive $\\neg Q \\Rightarrow \\neg P$, which is valid whenever the original $P \\Rightarrow Q$ is accepted true."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 23,
+    "solution_overview": "A professor's claim is $P \\Rightarrow Q$: \"If a student studies at least 10 hours, they pass the exam.\"\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-67",
+    "case_id": "MATH 1.67",
+    "title": "A contract penalty clause",
+    "subsection": "1.3",
+    "context": "A contract clause states: “If the contractor fails to complete the project by the deadline, then a penalty fee applies.” Let F: “the contractor fails to complete by the deadline”, P: “a penalty fee applies.”",
+    "statements": [
+      "The clause is symbolized as $F \\Rightarrow P$.",
+      "The converse $(P \\Rightarrow F)$ must also be true simply because the original clause is true.",
+      "The contrapositive, “If no penalty fee applies, then the contractor did not fail to complete by the deadline” $(\\neg P \\Rightarrow \\neg F)$, is logically guaranteed to be true given the original clause.",
+      "The inverse, “If the contractor does not fail to complete by the deadline, then no penalty fee applies” $(\\neg F \\Rightarrow \\neg P)$, must also be true given the original clause.",
+      "The inverse of a conditional statement is always logically equivalent to its converse, even though neither is generally equivalent to the original."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The clause is symbolized as $F \\Rightarrow P$.**  (true)\n\nThis is a direct symbolic restatement of the clause.",
+      "**B) The converse $(P \\Rightarrow F)$ must also be true simply because the original clause is true.**  (false)\n\nA true implication does not guarantee its converse - a penalty fee might apply for a completely different contractual reason (e.g. poor quality of work), even without a missed deadline.",
+      "**C) The contrapositive, “If no penalty fee applies, then the contractor did not fail to complete by the deadline” $(\\neg P \\Rightarrow \\neg F)$, is logically guaranteed to be true given the original clause.**  (true)\n\nThe contrapositive of any implication is always logically equivalent to the implication itself, so it's guaranteed true whenever $F \\Rightarrow P$ is true.",
+      "**D) The inverse, “If the contractor does not fail to complete by the deadline, then no penalty fee applies” $(\\neg F \\Rightarrow \\neg P)$, must also be true given the original clause.**  (false)\n\nLike the converse, the inverse is not guaranteed by the original implication - it has the same logical status as the converse (they are contrapositives of each other), so it may or may not hold.",
+      "**E) The inverse of a conditional statement is always logically equivalent to its converse, even though neither is generally equivalent to the original.**  (true)\n\nThe inverse $(\\neg F \\Rightarrow \\neg P)$ is the contrapositive of the converse $(P \\Rightarrow F)$, so the two are always logically equivalent to each other, regardless of their relationship to the original clause."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 24,
+    "solution_overview": "A contract clause states: “If the contractor fails to complete the project by the deadline, then a penalty fee applies.” Let F: “the contractor fails to complete by the deadline”, P: “a penalty fee applies.”\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-68",
+    "case_id": "MATH 1.68",
+    "title": "A scholarship eligibility rule with a waiver",
+    "subsection": "1.3",
+    "context": "A scholarship rule: a student is eligible only if they have a GPA of at least 3.5 AND have completed at least 60 credit hours - unless the Dean grants a written waiver of the credit-hour requirement, in which case only the GPA condition needs to be met. Student M has a GPA of 3.7, has completed 50 credit hours, and has NOT received a waiver. Student N has a GPA of 3.6, has completed 45 credit hours, and HAS received a waiver.",
+    "statements": [
+      "Student M is eligible for the scholarship.",
+      "Student N is eligible for the scholarship.",
+      "If Student M were to receive a Dean's waiver (keeping the same GPA and credit hours), M would become eligible.",
+      "The Dean's waiver, by itself, is sufficient for eligibility, regardless of GPA.",
+      "It is possible for a student with a GPA below 3.5 to be eligible, provided they have a waiver and sufficient credit hours."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Student M is eligible for the scholarship.**  (false)\n\nM has no waiver, so both the GPA and credit-hour conditions are required; M's 50 credit hours fall short of the required 60, so M is not eligible.",
+      "**B) Student N is eligible for the scholarship.**  (true)\n\nN has a waiver, so only the GPA condition applies; N's GPA of 3.6 meets the required 3.5, so N is eligible despite having only 45 credit hours.",
+      "**C) If Student M were to receive a Dean's waiver (keeping the same GPA and credit hours), M would become eligible.**  (true)\n\nWith a waiver, only the GPA condition matters, and M's GPA (3.7) already satisfies the 3.5 threshold.",
+      "**D) The Dean's waiver, by itself, is sufficient for eligibility, regardless of GPA.**  (false)\n\nThe waiver only removes the credit-hour requirement; the GPA condition of at least 3.5 must still be independently satisfied.",
+      "**E) It is possible for a student with a GPA below 3.5 to be eligible, provided they have a waiver and sufficient credit hours.**  (false)\n\nThe GPA condition is never waived by this rule - the waiver only ever concerns the credit-hour requirement, so a GPA below 3.5 always fails regardless of waiver or credit hours. 28"
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 25,
+    "solution_overview": "A scholarship rule: a student is eligible only if they have a GPA of at least 3.5 AND have completed at least 60 credit hours - unless the Dean grants a written waiver of the credit-hour requirement, in which case only the GPA condition needs to be met. Student M has a GPA of 3.7, has completed 50 credit hours, and has NOT received a waiver. Student N has a GPA of 3.6, has completed 45 credit hours, and HAS received a waiver.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-69",
+    "case_id": "MATH 1.69",
+    "title": "Travel insurance payout",
+    "subsection": "1.3",
+    "context": "A travel insurance policy pays out for trip cancellation if and only if [ (the traveler cancels due to a documented medical emergency) OR (the airline cancels the flight) ] AND (the traveler purchased the policy at least 14 days before departure). Traveler M cancelled due to a documented medical emergency and purchased the policy 20 days before departure. Traveler N's flight was cancelled by the airline, but N purchased the policy only 5 days before departure.",
+    "statements": [
+      "M's claim will be paid out.",
+      "N's claim will be paid out.",
+      "If a traveler purchases the policy fewer than 14 days before departure, their claim will never be paid out, regardless of the reason for cancellation.",
+      "Purchasing the policy at least 14 days in advance is, by itself, sufficient for a claim to be paid out.",
+      "It is possible for a claim to be paid out without a documented medical emergency AND without the policy being purchased at least 14 days in advance, provided the airline cancelled the flight."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) M's claim will be paid out.**  (true)\n\nM has a medical emergency (satisfying the OR-part) and purchased 20 ≥ 14 days ahead (satisfying the AND-part), so both parts of the rule are met.",
+      "**B) N's claim will be paid out.**  (false)\n\nN satisfies the OR-part (airline cancellation) but purchased only 5 days ahead, failing the 14-day requirement, so the overall condition fails.",
+      "**C) If a traveler purchases the policy fewer than 14 days before departure, their claim will never be paid out, regardless of the reason for cancellation.**  (true)\n\nThe rule requires the 14-day condition together with the OR-part; failing the 14-day part makes the whole conjunction false no matter what the OR-part evaluates to.",
+      "**D) Purchasing the policy at least 14 days in advance is, by itself, sufficient for a claim to be paid out.**  (false)\n\nTiming alone is not enough - the traveler still needs either a documented medical emergency or an airline cancellation to satisfy the OR-part.",
+      "**E) It is possible for a claim to be paid out without a documented medical emergency AND without the policy being purchased at least 14 days in advance, provided the airline cancelled the flight.**  (false)\n\nTrap: the 14-day purchase requirement is a mandatory AND-condition, independent of the OR-part's reason. Without it, no claim is paid regardless of an airline cancellation - this is exactly Traveler N's situation, whose claim was denied."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 26,
+    "solution_overview": "A travel insurance policy pays out for trip cancellation if and only if [ (the traveler cancels due to a documented medical emergency) OR (the airline cancels the flight) ] AND (the traveler purchased the policy at least 14 days before departure). Traveler M cancelled due to a documented medical emergency and purchased the policy 20 days before departure. Traveler N's flight was cancelled by the airline, but N purchased the policy only 5 days before departure.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-70",
+    "case_id": "MATH 1.70",
+    "title": "An election law states : \"If a person is a citizen, they are eligible",
+    "subsection": "1.3",
+    "context": "An election law states $P \\Rightarrow Q$: \"If a person is a citizen, they are eligible to vote.\"",
+    "statements": [
+      "The negation of this law is: \"A person is a citizen and is not eligible to vote.\"",
+      "John is not eligible to vote $(\\neg Q)$; by the contrapositive, we may conclude John is not a citizen $(\\neg P)$. This reasoning is logically valid.",
+      "Maria is a citizen who chooses not to register and therefore does not cast a vote in one election. This is a counterexample disproving the law.",
+      "The converse, \"If a person is eligible to vote, they are a citizen,\" could be false in a country that grants voting rights to certain non-citizen long-term residents. 29",
+      "The inverse, \"If a person is not a citizen, they are not eligible to vote,\" always has the same truth value as the converse."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The negation of this law is: \"A person is a citizen and is not eligible to vote.\"**  (true)\n\nThe negation of $P \\Rightarrow Q$ is $P \\land \\neg Q$ - a citizen who is not eligible to vote.",
+      "**B) John is not eligible to vote $(\\neg Q)$; by the contrapositive, we may conclude John is not a citizen $(\\neg P)$. This reasoning is logically valid.**  (true)\n\n\"$\\neg Q$, therefore $\\neg P$\" is precisely the contrapositive $\\neg Q \\Rightarrow \\neg P$, which is valid whenever the original law is accepted as true.",
+      "**C) Maria is a citizen who chooses not to register and therefore does not cast a vote in one election. This is a counterexample disproving the law.**  (false)\n\nTrap: the law is about eligibility, not actual voting. Maria being eligible but choosing not to vote does not make Q (\"eligible to vote\") false - she conflates \"not voting\" with \"not eligible,\" so this is not a genuine counterexample.",
+      "**D) The converse, \"If a person is eligible to vote, they are a citizen,\" could be false in a country that grants voting rights to certain non-citizen long-term residents. 29**  (true)\n\nThe converse $Q \\Rightarrow P$ need not hold: some jurisdictions extend voting eligibility to certain non- citizens, giving Q true and P false.",
+      "**E) The inverse, \"If a person is not a citizen, they are not eligible to vote,\" always has the same truth value as the converse.**  (true)\n\nThis is a structural fact independent of context: the inverse $(\\neg P \\Rightarrow \\neg Q)$ and the converse $(Q \\Rightarrow P)$ are always logically equivalent to each other, since one is the contrapositive of the other."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 27,
+    "solution_overview": "An election law states $P \\Rightarrow Q$: \"If a person is a citizen, they are eligible to vote.\"\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-71",
+    "case_id": "MATH 1.71",
+    "title": "A business memo's reasoning",
+    "subsection": "1.3",
+    "context": "A company memo reasons: “If we increase our marketing budget, then sales will increase. Sales have increased this quarter. Therefore, we must have increased our marketing budget.”",
+    "statements": [
+      "The memo's argument is logically valid.",
+      "The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. We did NOT increase our marketing budget. Therefore, sales did not increase.”",
+      "The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. Sales did NOT increase. Therefore, we did not increase our marketing budget.”",
+      "For the original memo's conclusion to be validly drawn, the premise would need to be strengthened to a biconditional: “We increase our marketing budget if and only if sales increase.”",
+      "The fallacy in the original memo is the same type as concluding “It is raining” from the premises “If it rains, the ground gets wet” and “The ground is wet.”"
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The memo's argument is logically valid.**  (false)\n\nThis commits the fallacy of affirming the consequent: sales could have increased for reasons entirely unrelated to the marketing budget, so the conclusion does not necessarily follow.",
+      "**B) The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. We did NOT increase our marketing budget. Therefore, sales did not increase.”**  (false)\n\nThis commits a different fallacy, denying the antecedent: not increasing the marketing budget doesn't rule out other causes of a sales increase, so this conclusion also doesn't necessarily follow.",
+      "**C) The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. Sales did NOT increase. Therefore, we did not increase our marketing budget.”**  (true)\n\nThis is modus tollens - a valid inference form: from $P \\Rightarrow Q$ and $\\neg Q$, we can validly conclude $\\neg P$.",
+      "**D) For the original memo's conclusion to be validly drawn, the premise would need to be strengthened to a biconditional: “We increase our marketing budget if and only if sales increase.”**  (true)\n\nWith a biconditional, sales increasing would also imply the budget increased (the reverse direction), making the original memo's conclusion validly follow - the plain one-directional implication cannot support this on its own.",
+      "**E) The fallacy in the original memo is the same type as concluding “It is raining” from the premises “If it rains, the ground gets wet” and “The ground is wet.”**  (true)\n\nBoth arguments have the identical invalid structure: $P \\Rightarrow Q$, Q, therefore P - assuming the converse of a true implication, i.e. affirming the consequent."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 28,
+    "solution_overview": "A company memo reasons: “If we increase our marketing budget, then sales will increase. Sales have increased this quarter. Therefore, we must have increased our marketing budget.”\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-72",
+    "case_id": "MATH 1.72",
+    "title": "Consider the claim: \"The sum of two irrational numbers is always irrat",
+    "subsection": "1.3",
+    "context": "Consider the claim: \"The sum of two irrational numbers is always irrational,\" and the classical proof that there is no largest prime number.",
+    "statements": [
+      "√2 + (-√2) = 0 is a valid counterexample to \"the sum of two irrational numbers is always irrational,\" since √2 and -√2 are irrational but their sum, 0, is rational",
+      "Finding this one counterexample is enough to show the claim is not a true universal statement",
+      "A proof by contradiction that there is no largest prime begins by assuming there IS a largest prime, say p, and then derives a contradiction",
+      "To prove a universal statement \" $\\forall x$, P(x)\" is true, it suffices to check it for x = 1 and x = 2",
+      "To prove an existential statement \" $\\exists x$, P(x)\" is true, it suffices to exhibit just one value of x for which P(x) holds"
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) √2 + (-√2) = 0 is a valid counterexample to \"the sum of two irrational numbers is always irrational,\" since √2 and -√2 are irrational but their sum, 0, is rational**  (true)\n\n√2 and -√2 are both irrational, yet their sum is 0, which is rational - exactly one counterexample is needed to break the universal claim.",
+      "**B) Finding this one counterexample is enough to show the claim is not a true universal statement**  (true)\n\nA single counterexample is sufficient to disprove a \"for all\" statement, since it directly demonstrates a case where the property fails.",
+      "**C) A proof by contradiction that there is no largest prime begins by assuming there IS a largest prime, say p, and then derives a contradiction**  (true)\n\nThis is the standard structure of Euclid's classical proof: assume the opposite of what we want to prove (that a largest prime p exists), then construct a contradiction (e.g. a new prime larger than p).",
+      "**D) To prove a universal statement \" $\\forall x$, P(x)\" is true, it suffices to check it for x = 1 and x = 2**  (false)\n\nTrap: checking a finite number of cases, however many, never proves a universal statement about infinitely many (or even just many) values - a single untested case could still be a counterexample.",
+      "**E) To prove an existential statement \" $\\exists x$, P(x)\" is true, it suffices to exhibit just one value of x for which P(x) holds**  (true)\n\nUnlike universal statements, existential statements only claim that at least one example exists - so producing a single valid example is a complete proof."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 29,
+    "solution_overview": "Consider the claim: \"The sum of two irrational numbers is always irrational,\" and the classical proof that there is no largest prime number.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-73",
+    "case_id": "MATH 1.73",
+    "title": "A biology rule states : \"If an animal is a fish, then it lives in wate",
+    "subsection": "1.3",
+    "context": "A biology rule states $P \\Rightarrow Q$: \"If an animal is a fish, then it lives in water.\"",
+    "statements": [
+      "\"This dolphin lives in water, so it must be a fish\" uses the converse of the rule and is an invalid argument.",
+      "\"This lizard does not live in water, so it is not a fish\" uses the contrapositive of the rule and is a valid argument.",
+      "\"This snake is not a fish, so it does not live in water\" uses the inverse of the rule, and inverse-based reasoning is always guaranteed to be valid.",
+      "The negation of the broader claim \"All fish live in water\" is \"There exists a fish that does not live in water.\"",
+      "The fact that dolphins live in water without being fish is, by itself, a valid counterexample disproving \"All fish live in water.\""
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) \"This dolphin lives in water, so it must be a fish\" uses the converse of the rule and is an invalid argument.**  (true)\n\nThe argument has form $Q \\Rightarrow P$, the converse of $P \\Rightarrow Q$. It's invalid, and dolphins prove it: they live in water yet are mammals, not fish. 31",
+      "**B) \"This lizard does not live in water, so it is not a fish\" uses the contrapositive of the rule and is a valid argument.**  (true)\n\nThis argument has form $\\neg Q \\Rightarrow \\neg P$, exactly the contrapositive of $P \\Rightarrow Q$, always equivalent to the original - so the reasoning is valid.",
+      "**C) \"This snake is not a fish, so it does not live in water\" uses the inverse of the rule, and inverse-based reasoning is always guaranteed to be valid.**  (false)\n\nTrap: this has form $\\neg P \\Rightarrow \\neg Q ($the inverse), not guaranteed by the original. Water snakes break it: not fish, yet they live in water.",
+      "**D) The negation of the broader claim \"All fish live in water\" is \"There exists a fish that does not live in water.\"**  (true)\n\n$\\neg (\\forall x$, P(x)) ≡ $\\exists x$, $\\neg P(x)$. Applied here, this gives exactly \"there exists a fish that does not live in water\" - correctly formed regardless of its truth.",
+      "**E) The fact that dolphins live in water without being fish is, by itself, a valid counterexample disproving \"All fish live in water.\"**  (false)\n\nTrap: a counterexample to \"all fish live in water\" must be a fish that does NOT live in water. A dolphin (not a fish) living in water is irrelevant to this claim; it would only bear on the reversed statement \"everything in water is a fish.\""
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 30,
+    "solution_overview": "A biology rule states $P \\Rightarrow Q$: \"If an animal is a fish, then it lives in water.\"\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-74",
+    "case_id": "MATH 1.74",
+    "title": "A store's policy is : \"If a customer pays within 30 days, they receive",
+    "subsection": "1.3",
+    "context": "A store's policy is $P \\Rightarrow Q$: \"If a customer pays within 30 days, they receive a 5% discount.\"",
+    "statements": [
+      "The negation of the policy is: \"A customer paid within 30 days and received the discount.\"",
+      "The converse, \"If a customer receives the discount, they paid within 30 days,\" is necessarily true given the policy.",
+      "Alex paid on day 45 (after 30 days) and did not receive the discount. This is consistent with the original policy and does NOT serve as a counterexample.",
+      "The inverse, \"If a customer does not pay within 30 days, they do not receive the discount,\" is logically guaranteed to be true by the original policy.",
+      "The contrapositive, \"If a customer does not receive the discount, they did not pay within 30 days,\" is NOT guaranteed to be true, since only the original conditional itself carries any real guarantee."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The negation of the policy is: \"A customer paid within 30 days and received the discount.\"**  (false)\n\nTrap: the negation of $P \\Rightarrow Q$ is $P \\land \\neg Q$ - \"paid within 30 days AND did NOT receive the discount.\" This version keeps Q true instead of negating it, which just restates a case consistent with the policy, not its negation.",
+      "**B) The converse, \"If a customer receives the discount, they paid within 30 days,\" is necessarily true given the policy.**  (false)\n\nTrap: this is the converse $Q \\Rightarrow P$, not guaranteed. The store could offer the 5% discount through an unrelated promotion to a customer who paid late.",
+      "**C) Alex paid on day 45 (after 30 days) and did not receive the discount. This is consistent with the original policy and does NOT serve as a counterexample.**  (true)\n\nAlex has P false (paid late) and Q false (no discount). The policy $P \\Rightarrow Q$ makes no claim when P is false, so this case is perfectly consistent with it - not a counterexample.",
+      "**D) The inverse, \"If a customer does not pay within 30 days, they do not receive the discount,\" is logically guaranteed to be true by the original policy.**  (false)\n\nTrap: the inverse $(\\neg P \\Rightarrow \\neg Q)$ is not guaranteed by the original policy $(P \\Rightarrow Q)$ - only the contrapositive is. The store could still offer the discount to a late payer through an unrelated promotion, breaking the inverse while leaving the original policy untouched.",
+      "**E) The contrapositive, \"If a customer does not receive the discount, they did not pay within 30 days,\" is NOT guaranteed to be true, since only the original conditional itself carries any real guarantee.**  (false)\n\nTrap: the contrapositive $\\neg Q \\Rightarrow \\neg P$ is always logically equivalent to $P \\Rightarrow Q$ - it is just as guaranteed as the original, not somehow weaker or unguaranteed."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 31,
+    "solution_overview": "A store's policy is $P \\Rightarrow Q$: \"If a customer pays within 30 days, they receive a 5% discount.\"\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=FALSE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-75",
+    "case_id": "MATH 1.75",
+    "title": "A regulation states : \"If a company's annual revenue exceeds $1 millio",
+    "subsection": "1.3",
+    "context": "A regulation states $P \\Rightarrow Q$: \"If a company's annual revenue exceeds $1 million, then it must file an annual audit.\"",
+    "statements": [
+      "The negation of this statement is: \"If a company's revenue exceeds $1 million, then it does not file an audit.\"",
+      "The converse, \"If a company files an annual audit, then its revenue exceeds $1 million,\" is guaranteed true whenever the original regulation holds.",
+      "The inverse, \"If a company's revenue does not exceed $1 million, then it does not file an audit,\" is logically equivalent to the original statement.",
+      "The contrapositive, \"If a company does not file an audit, then its revenue does not exceed $1 million,\" is equivalent to the original and must also be true.",
+      "Company X has revenue of $2 million (so P is true) but did not file an audit (so Q is false). This is a valid counterexample that would prove the original regulation false."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The negation of this statement is: \"If a company's revenue exceeds $1 million, then it does not file an audit.\"**  (false)\n\nTrap: the negation of $P \\Rightarrow Q$ is never another \"if...then\" statement - it is the conjunction $P \\land \\neg Q$: \"revenue exceeds $1 million AND it does not file an audit.\"",
+      "**B) The converse, \"If a company files an annual audit, then its revenue exceeds $1 million,\" is guaranteed true whenever the original regulation holds.**  (false)\n\nTrap: this states the converse $Q \\Rightarrow P$, not guaranteed by the original. A small company could file an audit voluntarily (for investors) without exceeding $1 million - Q true, P false.",
+      "**C) The inverse, \"If a company's revenue does not exceed $1 million, then it does not file an audit,\" is logically equivalent to the original statement.**  (false)\n\nTrap: the inverse $\\neg P \\Rightarrow \\neg Q$ is not equivalent to the original $P \\Rightarrow Q ($it is only equivalent to the converse). A small company could still be required to audit for unrelated reasons.",
+      "**D) The contrapositive, \"If a company does not file an audit, then its revenue does not exceed $1 million,\" is equivalent to the original and must also be true.**  (true)\n\nThe contrapositive $\\neg Q \\Rightarrow \\neg P$ is always logically equivalent to $P \\Rightarrow Q$ - a structural guarantee for any implication.",
+      "**E) Company X has revenue of $2 million (so P is true) but did not file an audit (so Q is false). This is a valid counterexample that would prove the original regulation false.**  (true)\n\n$P \\Rightarrow Q$ is false exactly when P is true and Q is false. Company X has P true and Q false, exactly what's needed to falsify the regulation."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 32,
+    "solution_overview": "A regulation states $P \\Rightarrow Q$: \"If a company's annual revenue exceeds $1 million, then it must file an annual audit.\"\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-76",
+    "case_id": "MATH 1.76",
+    "title": "Commercial pilot license",
+    "subsection": "1.3",
+    "context": "To be granted a commercial pilot license, it is necessary to have logged at least 250 flight hours; the license is granted if and only if the pilot has logged at least 250 flight hours AND has passed the FAA written exam AND has passed a practical flight test. Pilot A has logged 300 flight hours, passed the written exam, but failed the practical flight test. Pilot B has logged 240 flight hours, and passed both the written exam and the practical flight test.",
+    "statements": [
+      "Pilot A is granted the license.",
+      "Pilot B is granted the license.",
+      "Having logged at least 250 flight hours, by itself, guarantees that a pilot is granted the license.",
+      "If a pilot fails the practical flight test, they cannot be granted the license, even if they have more than 250 hours and passed the written exam.",
+      "There exists a pilot with more than 250 flight hours who is not granted the license."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Pilot A is granted the license.**  (false)\n\nThe license requires all three conditions at once (hours, written exam, practical test). A has enough hours and passed the written exam, but failed the practical test, so the full conjunction fails and the license is not granted. 33",
+      "**B) Pilot B is granted the license.**  (false)\n\nB has only 240 hours, below the required 250 - the necessary hours condition fails on its own, so B cannot be granted the license regardless of passing both exams.",
+      "**C) Having logged at least 250 flight hours, by itself, guarantees that a pilot is granted the license.**  (false)\n\n250+ flight hours is stated as a necessary condition, not a sufficient one - the license also requires passing both the written and practical exams. Hours alone do not guarantee anything.",
+      "**D) If a pilot fails the practical flight test, they cannot be granted the license, even if they have more than 250 hours and passed the written exam.**  (true)\n\nThe license requires the conjunction of all three conditions; failing the practical test makes that conjunction false no matter how many hours were logged or whether the written exam was passed.",
+      "**E) There exists a pilot with more than 250 flight hours who is not granted the license.**  (true)\n\nPilot A is exactly such a case: 300 hours (more than 250) but not granted the license because the practical test was failed."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 33,
+    "solution_overview": "To be granted a commercial pilot license, it is necessary to have logged at least 250 flight hours; the license is granted if and only if the pilot has logged at least 250 flight hours AND has passed the FAA written exam AND has passed a practical flight test. Pilot A has logged 300 flight hours, passed the written exam, but failed the practical flight test. Pilot B has logged 240 flight hours, and passed both the written exam and the practical flight test.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-77",
+    "case_id": "MATH 1.77",
+    "title": "Bank loan approval",
+    "subsection": "1.3",
+    "context": "A bank's loan approval rule states: an applicant is approved if and only if [(credit score is at least 700) OR (has a qualified co-signer)] AND (debt-to-income ratio is below 40%). Applicant P has a credit score of 650, has a qualified co-signer, and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720, no co-signer, and a debt-to-income ratio of 45%.",
+    "statements": [
+      "Applicant P, with a credit score of 650, a qualified co-signer, and a debt-to-income ratio of 35%, is NOT approved for the loan because their credit score alone is below 700.",
+      "Applicant Q is approved for the loan.",
+      "If an applicant's credit score is at least 700, they are always approved, regardless of their debt-to-income ratio.",
+      "If an applicant's debt-to-income ratio is 40% or above, they can never be approved, even with a high credit score or a co-signer.",
+      "It is possible for an applicant with a credit score below 700 to be approved, provided they have a co-signer and a debt-to-income ratio below 40%."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Applicant P, with a credit score of 650, a qualified co-signer, and a debt-to-income ratio of 35%, is NOT approved for the loan because their credit score alone is below 700.**  (false)\n\nTrap: the OR-part is satisfied via the co-signer, regardless of the raw credit score being below 700. Combined with a 35% DTI (below the 40% threshold), both parts of the rule ARE satisfied, so P IS approved - the score alone does not disqualify P.",
+      "**B) Applicant Q is approved for the loan.**  (false)\n\nFor Q: score ≥ 700 is true, so the OR-part is true. But Q's DTI is 45%, which is not below 40%, so the AND-part fails. Since the AND-part fails, Q is not approved regardless of the OR-part.",
+      "**C) If an applicant's credit score is at least 700, they are always approved, regardless of their debt-to-income ratio.**  (false)\n\nThe rule also requires DTI below 40% (the AND-part). A applicant with a 700+ score but a 45% DTI, like Q, would still fail the AND-part and not be approved.",
+      "**D) If an applicant's debt-to-income ratio is 40% or above, they can never be approved, even with a high credit score or a co-signer.**  (true)\n\nThe rule is (OR-part) AND (DTI < 40%). If DTI is 40% or above, this second conjunct is false, which makes the whole conjunction false no matter what the OR-part evaluates to.",
+      "**E) It is possible for an applicant with a credit score below 700 to be approved, provided they have a co-signer and a debt-to-income ratio below 40%.**  (true)\n\nThis is exactly P's situation: a score below 700 is compensated by the co-signer, making the OR-part true, and combined with DTI below 40% the applicant is approved."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 34,
+    "solution_overview": "A bank's loan approval rule states: an applicant is approved if and only if [(credit score is at least 700) OR (has a qualified co-signer)] AND (debt-to-income ratio is below 40%). Applicant P has a credit score of 650, has a qualified co-signer, and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720, no co-signer, and a debt-to-income ratio of 45%.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-78",
+    "case_id": "MATH 1.78",
+    "title": "A restaurant's policy is : \"If a customer orders dessert, they receive",
+    "subsection": "1.3",
+    "context": "A restaurant's policy is $P \\Rightarrow Q$: \"If a customer orders dessert, they receive one loyalty point.\" Diner Sam received a loyalty point despite NOT ordering dessert - he got one as part of a birthday promotion.",
+    "statements": [
+      "Sam's case is exactly what's needed to disprove the converse, \"If a customer receives a loyalty point, they ordered dessert.\"",
+      "A proof by contradiction of \"not every point-earning diner ordered dessert\" would begin by assuming the opposite - \"every diner who received a point ordered dessert\" - and then show Sam's case violates that assumption.",
+      "Sam's case also disproves the original policy statement $P \\Rightarrow Q ($\"if dessert is ordered, a point is received\").",
+      "The correctly formed negation of the original policy would require finding a diner who ordered dessert and did NOT receive a point - a completely different scenario from Sam's.",
+      "The inverse, \"If a customer does not order dessert, they do not receive a point,\" is directly contradicted by Sam's case."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) Sam's case is exactly what's needed to disprove the converse, \"If a customer receives a loyalty point, they ordered dessert.\"**  (true)\n\nSam has Q true (received a point) and P false (no dessert), which is exactly the condition that breaks the converse $Q \\Rightarrow P$.",
+      "**B) A proof by contradiction of \"not every point-earning diner ordered dessert\" would begin by assuming the opposite - \"every diner who received a point ordered dessert\" - and then show Sam's case violates that assumption.**  (true)\n\nThis is the standard contradiction-proof structure: assume the negation of the target claim, then exhibit a real case that makes that assumption impossible.",
+      "**C) Sam's case also disproves the original policy statement $P \\Rightarrow Q ($\"if dessert is ordered, a point is received\").**  (false)\n\nTrap: Sam's case concerns someone who got a point WITHOUT ordering dessert - this is about the converse, not the original $P \\Rightarrow Q$, which only makes a claim about people who DO order dessert. Sam says nothing about that group.",
+      "**D) The correctly formed negation of the original policy would require finding a diner who ordered dessert and did NOT receive a point - a completely different scenario from Sam's.**  (true)\n\nThe negation of $P \\Rightarrow Q$ is $P \\land \\neg Q$ - a diner who ordered dessert but got no point. Sam is the opposite case $(\\neg P \\land Q)$ and does not fit this negation at all.",
+      "**E) The inverse, \"If a customer does not order dessert, they do not receive a point,\" is directly contradicted by Sam's case.**  (true)\n\nSam has $\\neg P$ true (no dessert) and $\\neg Q$ false (he did get a point), directly breaking the inverse $\\neg P \\Rightarrow \\neg Q$, which claimed no-dessert customers never get a point. Tier 3 - Advanced"
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 35,
+    "solution_overview": "A restaurant's policy is $P \\Rightarrow Q$: \"If a customer orders dessert, they receive one loyalty point.\" Diner Sam received a loyalty point despite NOT ordering dessert - he got one as part of a birthday promotion.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$p \\Rightarrow q$ is false only when p is true and q is false; it is logically equivalent to $\\neg p \\lor q$ and to its contrapositive $\\neg q \\Rightarrow \\neg p$, but never automatically to its converse $q \\Rightarrow p$. De Morgan for logic: $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ and $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
+  }
+]

@@ -1,0 +1,142 @@
+﻿============================================================
+11.1/16/explanations
+[0] $r = 50^{1/80} - 1$ Γëê 5.01%, matching exactly.
+[1] Trap: the correct rate is approximately 5.01%, not 6.25%.
+[2] Trap: because the relationship between growth factor and rate is exponential (via a root), rates do not scale linearly with the target multiple; halving the multiple does not halve the required rate.
+[3] Trap: at r = 5.01%, doubling the time to 160 years squares the growth factor ($50^{2} = 2{,}500$), not just doubles it to 100.
+[4] Trap: reaching the same 50├ù growth in half the time (40 years instead of 80) requires a substantially HIGHER rate (Γëê9.65%), not a lower one.
+============================================================
+11.3/3/explanations
+[0] Compounding 1.07 eight times over gives $(1.07)^{8}$ Γëê 1.718186, and taking the reciprocal of that (since the exponent is negative) yields a discount factor of approximately 0.5820, matching the definition of $(1+r)^{-t}$ for annual compounding.
+[1] Multiplying the $45,000 face amount by the annual discount factor of 0.5820 gives 45,000 ├ù 0.5820 Γëê $26,190.41, the value that $45,000 due in 8 years is worth today under annual compounding at 7%.
+[2] Under continuous compounding, the exponent rt = 0.56 gives $e^{-0.56}$ Γëê 0.5712, and multiplying by the $45,000 face amount gives 45,000 ├ù 0.5712 Γëê $25,704.41, not $24,900.00, as the continuously-compounded present value.
+[3] Because continuous compounding grows (and therefore discounts) money more aggressively than annual compounding at the same stated rate, the annual-compounding present value comes out higher. Subtracting the two values gives 26,190.41 - 25,704.41 = $486.00, not $650.00, so the stated gap overstates the true difference.
+[4] With no interest or discounting at all (r = 0), both the annual formula $K(1+0)^{-t}$ and the continuous formula $Ke^{0}$ reduce to simply K, so both compounding methods agree and give a present value equal to the full $45,000 face amount, not $40,000.
+============================================================
+11.3/12/formulas
+ΓÇó PDV = $K(1+r)^{-t}$ ΓÇó K2 = (Target - PV1) ├ù (1 + r)t2
+============================================================
+11.3/16/explanations
+[0] Solving 6,000(t + 4) = $270(t + 4)^{2}$ by dividing out the common factor (t + 4) gives 6,000 = 270(t + 4), so t + 4 = 22.2222 and t* Γëê 18.22 years, matching the optimality condition exactly.
+[1] Evaluating P(t*) first and then multiplying by $e^{-rt}$* gives a present value of approximately $287,377.84, considerably above the $250,000.00 stated, which understates the true maximum by more than $37,000.
+[2] Carefully computing P''(t*) - rP'(t*) = 6,000 - 12,000 gives -$6,000, not +$6,000. Moreover, a negative value here is precisely what confirms a maximum under the chapter's second-order condition, so the correct sign points to a maximum, not a minimum as the statement claims.
+[3] Dividing P(t*) by the correctly signed denominator gives dt*/dr Γëê -246.91, which is negative, not positive. A negative sensitivity means a higher interest rate shortens the optimal harvest time rather than lengthening it.
+[4] Using the exact relation t* = 2/r - 4 derived from this particular P(t), halving r from 9% to 4.5% gives t* = 2/0.045 - 4 Γëê 40.44 years. Since double the original 18.22 years would be 36.44 years, the actual relationship between t* and r is not a simple proportional doubling, and the true value (40.44) exceeds that naive expectation.
+============================================================
+11.3/19/explanations
+[0] Dividing the optimality equation 2A(t + k) = $r_A$$(t + k)^{2}$ through by the common factor A(t + k) leaves 2 = r(t + k), and rearranging for t gives exactly t* = 2/r - k, confirming the general formula.
+[1] Plugging r = 0.075 and k = 5 into t* = 2/r - k gives 2/0.075 - 5 = 26.6667 - 5 Γëê 21.67 years.
+[2] Evaluating P at t* and then discounting with $e^{-rt}$* gives a present value of approximately $168,031.30, well below the $195,500.00 stated, which overstates the true value by over $27,000.
+[3] Since t* = 2/r - k decreases as k increases (a larger k is subtracted), raising k from 5 to 8 shortens the optimal harvest time. Recomputing with k = 8 gives t* Γëê 18.67 years, which is indeed shorter than the original 21.67 years.
+[4] Doubling r to 15% gives t* = 2/0.15 - 5 = 8.33 years. Half of the original 21.67 years is 10.83 years, and 8.33 years falls below that halfway mark, meaning the optimal time actually drops by more than half rather than staying above it.
+============================================================
+11.4/10/steps
+1.206 = 2.985984. s6 = 4┬╖(2.985984 - 1)/0.20 = 4 ├ù 9.92992 = $39.72 million. 1.205 = 2.48832; year-6 revenue = 4 ├ù 2.48832 = $9.95 million. Terminal value = 9.95328/(1 - 0.85) = 9.95328/0.15 = $66.36 million. Combined value = 39.72 + 66.36 = $106.08 million, which is not less than $100 million.
+============================================================
+11.4/10/explanations
+[0] Summing 6 years of revenue that grows 20% each year uses s6=4├ù(1.206-1)/0.20. Since 1.20 to the 6th power is 2.985984, this becomes 4├ù1.985984/0.20 = 4├ù9.92992 Γëê $39.72 million.
+[1] Year-6 revenue equals the starting revenue multiplied by the growth factor raised to the 5th power, since year 1 itself already corresponds to zero multiplications: 4├ù1.205 = 4├ù2.48832 Γëê $9.95 million.
+[2] The finite geometric-series formula only fails to apply when the ratio equals exactly 1, since that would divide by zero; it works perfectly well for any other ratio, whether smaller or larger than 1, as long as only a fixed, finite number of terms are being added. Here k=1.20 is simply the growth factor over a fixed 6-year window, and the formula handles it without any issue - the restriction that |k| be below 1 only applies when summing infinitely many terms, not a finite set of them.
+[3] Treating the $9.95328 million of year-6 revenue as the starting payment of a new, separately declining perpetuity with ratio 0.85, the infinite total of that new stream is 9.95328/(1-0.85) = 9.95328/0.15 Γëê $66.36 million.
+[4] Adding the 6-year finite total ($39.72 million) to the terminal perpetuity value ($66.36 million) gives 39.72+66.36 = $106.08 million, which is above $100 million, not below it.
+============================================================
+11.4/15/steps
+Quarter-2 yield = a┬╖k = 10,000├ù0.98 = 9,800.00 lbs. $0.98^{20}$ = 0.667607972. s20 = 10,000┬╖(1 - 0.667607972)/0.02 = 10,000 ├ù 16.619601 = 166,196.01 lbs. Using the wrong exponent, n = 5: $0.98^{5}$ = 0.903920800; s5,wrong = 10,000┬╖(1-0.903921)/0.02 = 10,000├ù4.80396 = 48,039.60 lbs - this is NOT the correct 20-quarter total; it only covers the first 5 quarters (about 1.25 years), not 5 years. Quarter-20 yield = $a \cdot k^{19}$ = 10,000 ├ù 0.681230 = 6,812.33 lbs. Infinite (hypothetical) sum = 10,000/(1 - 0.98) = 10,000/0.02 = 500,000.00 lbs, which is MORE than the 166,196.01 lbs 20-quarter total, not less.
+============================================================
+11.4/15/explanations
+[0] The second quarter's yield is the first quarter's yield multiplied once by the decline factor: 10,000├ù0.98 = 9,800.00 lbs, matching exactly.
+[1] Summing all 20 quarters gives s20 = 10,000├ù(1-$0.98^{20}$)/0.02. Since 0.98 to the 20th power is about 0.667608, this becomes 10,000├ù16.619601 Γëê 166,196.01 lbs.
+[2] Plugging n=5 into the same formula instead of n=20 does produce 48,039.60 lbs as a number, but that figure only represents the total of the first 5 quarters (about 1.25 years), not the full 5-year, 20-quarter span. Using the wrong exponent gives a technically computable but practically meaningless answer to the actual 5-year question, whose correct total is 166,196.01 lbs.
+[3] The 20th quarter's yield equals the first quarter's yield multiplied by the ratio raised to the 19th power: 10,000├ù$0.98^{19}$ Γëê 10,000├ù0.681230 Γëê 6,812.33 lbs.
+[4] If the 2% quarterly decline continued forever instead of stopping at 20 quarters, the theoretical total would be 10,000/(1-0.98) = 10,000/0.02 = 500,000.00 lbs. Since every additional quarter beyond the 20th still adds a small positive amount, the infinite total must be at least as large as the 20-quarter partial total, and indeed 500,000.00 lbs is well above 166,196.01 lbs, not below it.
+============================================================
+11.4/17/formulas
+ΓÇó p-series rule: Γêæn=1 Γê₧ 1/np is convergent Γçö p > 1 ΓÇó Necessary (not sufficient) condition for convergence: if Γêæan converges, then $\\lim_{n\\to\\infty} a_n$ = 0
+============================================================
+11.4/17/steps
+$4^{1.5} = 4 \\times \\sqrt{4}$ = 4 ├ù 2 = 8; a4 = 5,000/8 = $625.00 (not $650.00). p = 1.5 > 1, so by the p-series rule $\\sum 5{,}000/n^{1.5}$ converges to some finite value. At p = 1, the series Γêæ5,000/n is exactly the classic harmonic-series pattern, which can be shown to diverge by grouping terms into blocks that each sum to more than 1/2 - it does NOT converge to a larger sum; it has no finite sum at all. $100^{1.5}$ = 100 ├ù ΓêÜ100 = 100 ├ù 10 = 1,000; a100 = 5,000/1,000 = $5.00 - correct value, but terms tending to 0 is necessary, NOT sufficient, for convergence (the harmonic series is the standard counterexample). p = 0.5 Γëñ 1, so by the p-series rule $\\sum 5{,}000/n^{0.5}$ diverges, even though an = 5,000/ΓêÜn ΓåÆ 0 as n ΓåÆ Γê₧.
+============================================================
+11.4/17/context
+An analyst models the marginal benefit of the n-th batch of advertising spend as $a_n = 5{,}000/n^{p}$ dollars, and wants to know, for different values of the exponent p, whether the infinite total marginal benefit Γêæan converges, using the rule that $\sum 1/n^{p}$ converges if and only if p > 1.
+============================================================
+11.4/18/steps
+$1.01^{12}$ = 1.126825030; srev,12 = 150,000┬╖(1.126825030-1)/0.01 = 150,000 ├ù 12.682503 = $1,902,375.45. $1.03^{12}$ = 1.425760887; scost,12 = 120,000┬╖(1.425760887-1)/0.03 = 120,000 ├ù 14.192030 = $1,703,043.55. Cumulative 12-year profit = 1,902,375.45 - 1,703,043.55 = $199,331.90. Year-12 revenue = 150,000┬╖$1.01^{11}$ = 150,000 ├ù 1.115668 = $167,350.25. Year-12 cost = 120,000┬╖1.0311 = 120,000 ├ù 1.384234 = $166,108.06. Net = 167,350.25 - 166,108.06 = $1,242.19. 1.0120 = 1.220190040; srev,20 = 150,000┬╖(0.220190040)/0.01 = $3,302,850.60. 1.0320 = 1.806111235; scost,20 = 120,000┬╖(0.806111235)/0.03 = $3,224,444.94. Profit20 = 3,302,850.60 - 3,224,444.94 = $78,405.66, which is indeed less than the 12-year profit of $199,331.90.
+============================================================
+11.4/18/explanations
+[0] Summing 12 years of revenue growing 1% annually gives srev,12=150,000├ù($1.01^{12}$-1)/0.01. Since 1.01 to the 12th power is about 1.126825, this becomes 150,000├ù12.682503 Γëê $1,902,375.45.
+[1] Summing 12 years of maintenance cost growing 3% annually gives scost,12=120,000├ù($1.03^{12}$-1)/0.03. Since 1.03 to the 12th power is about 1.425761, this becomes 120,000├ù14.192030 Γëê $1,703,043.55.
+[2] Subtracting the cumulative cost from the cumulative revenue gives 1,902,375.45-1,703,043.55 = $199,331.90 as the total profit accumulated over the 12-year window.
+[3] In year 12 alone, revenue is 150,000├ù$1.01^{11}$ Γëê 150,000├ù1.115668 Γëê $167,350.25, while maintenance cost is 120,000├ù1.0311 Γëê 120,000├ù1.384234 Γëê $166,108.06. Subtracting gives a net of 167,350.25-166,108.06 Γëê $1,242.19 - revenue is still ahead, but only barely, showing how much the gap between the two streams has narrowed by this point.
+[4] Extending the same calculations to 20 years gives a cumulative revenue of about $3,302,850.60 and a cumulative cost of about $3,224,444.94, for a 20-year profit of roughly $78,405.66, smaller than the 12-year profit of $199,331.90. This happens because maintenance cost compounds at the faster 3% rate while revenue compounds at only 1%; over a longer horizon the faster-growing cost stream eats into more and more of each year's revenue, so even though annual revenue is still ahead of annual cost as late as year 12, the cumulative profit advantage built up in the earlier years gradually erodes as the cost curve catches up.
+============================================================
+11.4/19/steps
+Infinite recession sum = 2,400,000/(1 - 0.94) = 2,400,000/0.06 = $40,000,000.00. 0.9415 = 0.395291799; s15 = 2,400,000┬╖(1-0.395291799)/0.06 = 2,400,000 ├ù 10.078470 = $24,188,328.05 (not $22,000,000.00). Ratio = 24,188,328.05/40,000,000.00 = 0.60471 Γëê 60.47% (not 75%). $1.06^{7}$ = 1.503630259; s7 = 2,400,000┬╖(1.503630259-1)/0.06 = 2,400,000 ├ù 8.393838 = $20,145,210.36; this is LESS than the infinite recession total of $40,000,000.00, not more. Year-7 recovery cash flow = 2,400,000┬╖1.066 = 2,400,000 ├ù 1.418519 = $3,404,445.87 (not $2,900,000.00).
+============================================================
+11.4/19/explanations
+[0] Since the ratio in the recession scenario is 0.94, and |0.94| is below 1, letting the shrinking cash flows continue forever produces a finite total of a/(1-k) = 2,400,000/(1-0.94) = 2,400,000/0.06 = $40,000,000.00.
+[1] Summing just the first 15 years of the recession scenario gives s15 = 2,400,000├ù(1-0.9415)/0.06. Since 0.94 to the 15th power is about 0.395292, this becomes 2,400,000├ù10.078470 Γëê $24,188,328.05, not $22,000,000.00.
+[2] Dividing the 15-year total by the full infinite total gives 24,188,328.05/40,000,000.00 Γëê 0.6047, or about 60%, not 75%.
+[3] Summing the 7-year recovery scenario gives s7=2,400,000├ù($1.06^{7}$-1)/0.06. Since 1.06 to the 7th power is about 1.503630, this becomes 2,400,000├ù8.393838 Γëê $20,145,210.36, well below the $40,000,000.00 infinite recession total, not above it.
+[4] The 7th year of the recovery scenario alone is 2,400,000├ù1.066 Γëê 2,400,000├ù1.418519 Γëê $3,404,445.87, not $2,900,000.00.
+============================================================
+11.4/8/steps
+Payment 2 = a┬╖k = 15,000├ù0.88 = $13,200.00. 0.888 Γëê 0.359635. s8 = 15,000┬╖(1 - 0.359635)/0.12 = 15,000 ├ù 5.336379 = $80,045.68. Infinite sum = 15,000/(1 - 0.88) = 15,000/0.12 = $125,000.00 (not $130,000.00). Ratio: 80,045.68/125,000.00 = 0.6404 Γëê 64.04%, which is not more than 75%. With k = 0.95: infinite sum = 15,000/(1 - 0.95) = 15,000/0.05 = $300,000.00, which is larger, not smaller, than the $125,000.00 obtained at k = 0.88.
+============================================================
+11.5/11/formulas
+ΓÇó Perpetuity value (as of one period before first payment): V = a/r ΓÇó Discount back to today: PV0 = V/(1+r)k, where k is the number of years from today to the valuation point
+
+=== e^{-rt}$* / related scars ===
+11.3/16/explanations[1] : Evaluating P(t*) first and then multiplying by $e^{-rt}$* gives a present value of approximately $287,377.84, considerably above the $250,000.00 stated, which understates the true maximum by more than $37,000.
+11.3/19/explanations[2] : Evaluating P at t* and then discounting with $e^{-rt}$* gives a present value of approximately $168,031.30, well below the $195,500.00 stated, which overstates the true value by over $27,000.
+
+=== REAL glued power candidates in 11.4 ===
+11.4/8/steps: ...ent 2 = a┬╖k = 15,000├ù0.88 = $13,200.00. 0.888 Γëê 0.359635. s8 = 15,000┬╖(1 - 0.359635)/0.12 = 15,000 ├ù 5.33...
+11.4/10/steps: ...1.206 = 2.985984. s6 = 4┬╖(2.985984 - 1)/0.20 = 4 ├ù 9.92992 = $39....
+11.4/10/steps: ...1)/0.20 = 4 ├ù 9.92992 = $39.72 million. 1.205 = 2.48832; year-6 revenue = 4 ├ù 2.48832 = $9.95 million. Te...
+11.4/10/explanations[0]: ...nue that grows 20% each year uses s6=4├ù(1.206-1)/0.20. Since 1.20 to the 6th power is 2.985984, this beco...
+11.4/10/explanations[1]: ... corresponds to zero multiplications: 4├ù1.205 = 4├ù2.48832 Γëê $9.95 million....
+11.4/18/steps: ...8 = $167,350.25. Year-12 cost = 120,000┬╖1.0311 = 120,000 ├ù 1.384234 = $166,108.06. Net = 167,350.25 - 166,...
+11.4/18/steps: ... = 167,350.25 - 166,108.06 = $1,242.19. 1.0120 = 1.220190040; srev,20 = 150,000┬╖(0.220190040)/0.01 = $3,30...
+11.4/18/steps: ...000┬╖(0.220190040)/0.01 = $3,302,850.60. 1.0320 = 1.806111235; scost,20 = 120,000┬╖(0.806111235)/0.03 = $3,2...
+11.4/18/explanations[3]: ...0.25, while maintenance cost is 120,000├ù1.0311 Γëê 120,000├ù1.384234 Γëê $166,108.06. Subtracting gives a net o...
+11.4/19/steps: ....94) = 2,400,000/0.06 = $40,000,000.00. 0.9415 = 0.395291799; s15 = 2,400,000┬╖(1-0.395291799)/0.06 = 2,400...
+11.4/19/steps: .... Year-7 recovery cash flow = 2,400,000┬╖1.066 = 2,400,000 ├ù 1.418519 = $3,404,445.87 (not $2,900,000.00)....
+11.4/19/explanations[1]: ...ssion scenario gives s15 = 2,400,000├ù(1-0.9415)/0.06. Since 0.94 to the 15th power is about 0.395292, this...
+11.4/19/explanations[4]: ...he recovery scenario alone is 2,400,000├ù1.066 Γëê 2,400,000├ù1.418519 Γëê $3,404,445.87, not $2,900,000.00....
+
+=== 11.1/16 E3 fifty-sq check ===
+Trap: at r = 5.01%, doubling the time to 160 years squares the growth factor ($50^{2} = 2{,}500$), not just doubles it to 100.
+STEPS: $(1 + r)^{80}$ = 50, so $r = 50^{1/80} - 1$ Γëê 1.050115 - 1 = 0.050115 Γëê 5.01%. This is not 6.25%. Growth rates are found via a root (an exponential relationship), not a simple linear halving of the target multiple, so a rate for 50├ù growth is not simply half the rate for 100├ù growth. At r = 5.01%, a
+
+=== Chapter-header-like explanation starts ===
+
+=== Misc high-value residual mangles ===
+
+[rA_empty] 2 hits
+  11.3/19/steps: ...2A(t + k) = $r_A$$(t + k)^{2}$; dividing both sides by A(t + k) (non...
+  11.3/19/explanations[0]: ...timality equation 2A(t + k) = $r_A$$(t + k)^{2}$ through by the common factor A(t + k)...
+
+[Ke0] 0 hits
+
+[flat_t2] 1 hits
+  11.3/12/formulas: ...{-t}$ ΓÇó K2 = (Target - PV1) ├ù (1 + r)t2...
+
+[flat_Vk] 1 hits
+  11.5/11/formulas: ...Discount back to today: PV0 = V/(1+r)k, where k is the number of years from today to the...
+
+[502scar] 0 hits
+
+[282scar] 0 hits
+
+[1062scar] 0 hits
+
+[srevenue] 3 hits
+  11.4/18/steps: ...5. $1.03^{12}$ = 1.425760887; scost,12 = 120,000┬╖(1.425760887-1)/0.03 = 120,000 ├ù 14....
+  11.4/18/steps: ...850.60. 1.0320 = 1.806111235; scost,20 = 120,000┬╖(0.806111235)/0.03 = $3,224,444.94. ...
+  11.4/18/explanations[1]: ...ost growing 3% annually gives scost,12=120,000├ù($1.03^{12}$-1)/0.03. Since 1.03 to th...
+
+[k5glue] 0 hits
+
+[0.985] 0 hits
+
+[wrong_1.105_as_power] 0 hits

@@ -1,0 +1,4 @@
+COUNTS {}
+TOTAL 0
+bans=0
+

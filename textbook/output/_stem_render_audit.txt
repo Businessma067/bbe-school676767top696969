@@ -1,0 +1,158 @@
+=== STEM RENDER AUDIT ===
+Ch5 tasks: 60
+OLD-SWALLOW: 136
+NEW prose-as-math: 0
+unpaired: 6
+
+MATH 5.02/explB: OLD-SWALLOW (was KaTeX prose): `1.80, not …`
+MATH 5.02/explB: OLD-SWALLOW (was KaTeX prose): `2.10. Rounding …`
+MATH 5.02/explE: OLD-SWALLOW (was KaTeX prose): `160.50, not …`
+MATH 5.03/explC: OLD-SWALLOW (was KaTeX prose): `2,130.00, not …`
+MATH 5.03/explD: OLD-SWALLOW (was KaTeX prose): `2,200.00, not …`
+MATH 5.03/explD: OLD-SWALLOW (was KaTeX prose): `2,300.00 — a …`
+MATH 5.03/explE: OLD-SWALLOW (was KaTeX prose): `950.00, not …`
+MATH 5.05/explA: OLD-SWALLOW (was KaTeX prose): `6,000, not …`
+MATH 5.05/explB: OLD-SWALLOW (was KaTeX prose): `10,000 total.  Account B holds …`
+MATH 5.05/explB: OLD-SWALLOW (was KaTeX prose): `4,000, not …`
+MATH 5.05/explC: OLD-SWALLOW (was KaTeX prose): `240.00, not …`
+MATH 5.05/explD: OLD-SWALLOW (was KaTeX prose): `280.00, not …`
+MATH 5.05/explD: OLD-SWALLOW (was KaTeX prose): `210.00. Note …`
+MATH 5.06/explB: OLD-SWALLOW (was KaTeX prose): `349.00, not …`
+MATH 5.07/explD: OLD-SWALLOW (was KaTeX prose): `17.00, not …`
+MATH 5.09/stmtC: OLD-SWALLOW (was KaTeX prose): `460 in returns) were …`
+MATH 5.09/stmtD: OLD-SWALLOW (was KaTeX prose): `300 in returns) were …`
+MATH 5.09/explC: OLD-SWALLOW (was KaTeX prose): `460 in returns) were …`
+MATH 5.09/explD: OLD-SWALLOW (was KaTeX prose): `300 in returns) were …`
+MATH 5.10/explA: OLD-SWALLOW (was KaTeX prose): `9.00, not …`
+MATH 5.10/explB: OLD-SWALLOW (was KaTeX prose): `0.20, not …`
+MATH 5.10/explC: OLD-SWALLOW (was KaTeX prose): `59.00, not …`
+MATH 5.12/explB: OLD-SWALLOW (was KaTeX prose): `18. Assuming a 'clean' …`
+MATH 5.14/explB: OLD-SWALLOW (was KaTeX prose): `70, not …`
+MATH 5.15/explB: OLD-SWALLOW (was KaTeX prose): `15.00, not …`
+MATH 5.15/explD: OLD-SWALLOW (was KaTeX prose): `3,900, not …`
+MATH 5.15/explD: OLD-SWALLOW (was KaTeX prose): `4,700 — the …`
+MATH 5.18/overview: OLD-SWALLOW (was KaTeX prose): `6.00, rate …`
+MATH 5.18/overview: OLD-SWALLOW (was KaTeX prose): `1.00/km | MetroX — base …`
+MATH 5.18/overview: OLD-SWALLOW (was KaTeX prose): `6.00, rate …`
+MATH 5.18/explB: OLD-SWALLOW (was KaTeX prose): `6.00.**  (true)  CityCab's rate is …`
+MATH 5.18/explD: OLD-SWALLOW (was KaTeX prose): `36.00.**  (true)  CityCab's formula is …`
+MATH 5.19/explC: OLD-SWALLOW (was KaTeX prose): `920 — Vendor A is …`
+MATH 5.20/explC: OLD-SWALLOW (was KaTeX prose): `13,100 to …`
+MATH 5.20/explE: unpaired-$ in text `, so $9100>7500$.
+
+Beta's Service Q revenue is $9,100, while Alpha's e`
+MATH 5.21/explB: unpaired-$ in text `. Since $41<45$, the ongoing charge is lower than advertised.
+
+The rea`
+MATH 5.21/explD: unpaired-$ in text `. Since $448>400$, the claim follows directly.
+
+Jason's real total is `
+MATH 5.22/explB: OLD-SWALLOW (was KaTeX prose): `31/month, not …`
+MATH 5.23/explB: unpaired-$ in text ` per pound. Numerically, $6>4.80$.
+
+Almond milk is actually the more e`
+MATH 5.23/explD: OLD-SWALLOW (was KaTeX prose): `47.00.**  (false)  A 5% discount on …`
+MATH 5.24/explC: unpaired-$ in text `. Since $91.80<95$, the claim is true.`
+MATH 5.25/explB: unpaired-$ in text `. Since $15<19$, the appetizer is cheaper.
+
+The appetizer is actually `
+MATH 5.25/explC: OLD-SWALLOW (was KaTeX prose): `174.00 — a gap of exactly …`
+MATH 5.26/explB: OLD-SWALLOW (was KaTeX prose): `27, not …`
+MATH 5.26/explD: OLD-SWALLOW (was KaTeX prose): `4,050.**  (true)  Item N costs …`
+MATH 5.27/context: OLD-SWALLOW (was KaTeX prose): `1,946. Job 2: 13 Standard + 21 Premium — Total …`
+MATH 5.27/explB: OLD-SWALLOW (was KaTeX prose): `44, not …`
+MATH 5.28/explC: OLD-SWALLOW (was KaTeX prose): `120 total.**  (true)  At …`
+MATH 5.28/explD: OLD-SWALLOW (was KaTeX prose): `80.**  (false)  Report 1's total is …`
+MATH 5.28/explD: OLD-SWALLOW (was KaTeX prose): `245, a gap of exactly …`
+MATH 5.30/overview: OLD-SWALLOW (was KaTeX prose): `3,200 — a …`
+MATH 5.30/explB: OLD-SWALLOW (was KaTeX prose): `28.**  (false)  Substituting …`
+MATH 5.30/explB: OLD-SWALLOW (was KaTeX prose): `24, not …`
+MATH 5.30/explC: OLD-SWALLOW (was KaTeX prose): `3,200; that …`
+MATH 5.31/explA: OLD-SWALLOW (was KaTeX prose): `19.00.**  (true)  Type A costs …`
+MATH 5.31/explA: OLD-SWALLOW (was KaTeX prose): `19.  Type A solves to …`
+MATH 5.31/explC: OLD-SWALLOW (was KaTeX prose): `25.28, which is above …`
+MATH 5.31/explD: OLD-SWALLOW (was KaTeX prose): `27.80, a …`
+MATH 5.31/explD: OLD-SWALLOW (was KaTeX prose): `490.05 — not …`
+MATH 5.32/stmtB: OLD-SWALLOW (was KaTeX prose): `1.50 than to …`
+MATH 5.32/explB: OLD-SWALLOW (was KaTeX prose): `1.50 than to …`
+MATH 5.32/explB: OLD-SWALLOW (was KaTeX prose): `2.00.**  (false)  Swift's rate is …`
+MATH 5.32/explB: OLD-SWALLOW (was KaTeX prose): `0.15 from …`
+MATH 5.32/explB: OLD-SWALLOW (was KaTeX prose): `0.35 from …`
+MATH 5.32/explB: OLD-SWALLOW (was KaTeX prose): `1.50, so it is closer to …`
+MATH 5.32/explC: OLD-SWALLOW (was KaTeX prose): `608.00. That is exactly …`
+MATH 5.33/explA: OLD-SWALLOW (was KaTeX prose): `19.05. Since …`
+MATH 5.33/explA: OLD-SWALLOW (was KaTeX prose): `19.05 is below …`
+MATH 5.33/explE: OLD-SWALLOW (was KaTeX prose): `142.10, leaving …`
+MATH 5.34/explB: OLD-SWALLOW (was KaTeX prose): `0.45 from …`
+MATH 5.34/explB: OLD-SWALLOW (was KaTeX prose): `0.55 from …`
+MATH 5.34/explB: OLD-SWALLOW (was KaTeX prose): `5, making it closer to …`
+MATH 5.35/explA: OLD-SWALLOW (was KaTeX prose): `27.35. It is above …`
+MATH 5.35/explC: OLD-SWALLOW (was KaTeX prose): `8,440. That is …`
+MATH 5.35/explC: OLD-SWALLOW (was KaTeX prose): `40 above …`
+MATH 5.35/explD: OLD-SWALLOW (was KaTeX prose): `231.50; subtracting …`
+MATH 5.35/explD: OLD-SWALLOW (was KaTeX prose): `100 leaves …`
+MATH 5.36/stmtB: OLD-SWALLOW (was KaTeX prose): `17.00 than to …`
+MATH 5.36/explB: OLD-SWALLOW (was KaTeX prose): `17.00 than to …`
+MATH 5.36/explB: OLD-SWALLOW (was KaTeX prose): `16.00.**  (false)  Nitrogen-type is …`
+MATH 5.36/explB: OLD-SWALLOW (was KaTeX prose): `0.40 from …`
+MATH 5.36/explB: OLD-SWALLOW (was KaTeX prose): `0.60 from …`
+MATH 5.36/explB: OLD-SWALLOW (was KaTeX prose): `17.00 — closer to …`
+MATH 5.36/explB: OLD-SWALLOW (was KaTeX prose): `16.00, not …`
+MATH 5.36/explD: OLD-SWALLOW (was KaTeX prose): `652.90, below …`
+MATH 5.38/explA: OLD-SWALLOW (was KaTeX prose): `0.35 from …`
+MATH 5.38/explA: OLD-SWALLOW (was KaTeX prose): `0.65 from …`
+MATH 5.38/explA: OLD-SWALLOW (was KaTeX prose): `11, so it is closer to …`
+MATH 5.38/explB: OLD-SWALLOW (was KaTeX prose): `0.40 from …`
+MATH 5.38/explB: OLD-SWALLOW (was KaTeX prose): `0.60 from …`
+MATH 5.38/explB: OLD-SWALLOW (was KaTeX prose): `19, so it is closer to …`
+MATH 5.38/explE: OLD-SWALLOW (was KaTeX prose): `8,733.00. It clears …`
+MATH 5.38/explE: OLD-SWALLOW (was KaTeX prose): `8,700 by …`
+MATH 5.39/overview: OLD-SWALLOW (was KaTeX prose): `239.80 — a …`
+MATH 5.39/explA: OLD-SWALLOW (was KaTeX prose): `89.20; relative to …`
+MATH 5.39/explB: OLD-SWALLOW (was KaTeX prose): `3.15/kg rate is …`
+MATH 5.39/explC: OLD-SWALLOW (was KaTeX prose): `3.45, which is within …`
+MATH 5.39/explE: OLD-SWALLOW (was KaTeX prose): `1,354.60. This is …`
+MATH 5.39/explE: OLD-SWALLOW (was KaTeX prose): `4.60 above …`
+MATH 5.40/overview: OLD-SWALLOW (was KaTeX prose): `952.10, not …`
+MATH 5.40/explA: OLD-SWALLOW (was KaTeX prose): `483.70 invoice is …`
+MATH 5.40/explA: OLD-SWALLOW (was KaTeX prose): `15.30, and …`
+MATH 5.40/explB: OLD-SWALLOW (was KaTeX prose): `476.05. A's reported …`
+MATH 5.40/explD: OLD-SWALLOW (was KaTeX prose): `378.45. That is above …`
+MATH 5.40/explE: OLD-SWALLOW (was KaTeX prose): `725.55, is …`
+MATH 5.41/explA: OLD-SWALLOW (was KaTeX prose): `756.00, and …`
+MATH 5.41/explB: OLD-SWALLOW (was KaTeX prose): `834.00, above …`
+MATH 5.41/explC: OLD-SWALLOW (was KaTeX prose): `18,400. Its …`
+MATH 5.41/explC: OLD-SWALLOW (was KaTeX prose): `762 return is …`
+MATH 5.41/explD: OLD-SWALLOW (was KaTeX prose): `828.00, which is …`
+MATH 5.41/explE: OLD-SWALLOW (was KaTeX prose): `4,800 balance, …`
+MATH 5.43/context: OLD-SWALLOW (was KaTeX prose): `765.00 gross. Employee B: 40 regular + 7 OT hours, …`
+MATH 5.43/explA: OLD-SWALLOW (was KaTeX prose): `65.00, and 10% is …`
+MATH 5.43/explA: OLD-SWALLOW (was KaTeX prose): `6.50, above …`
+MATH 5.43/explB: OLD-SWALLOW (was KaTeX prose): `182.00. As a share of …`
+MATH 5.43/explC: OLD-SWALLOW (was KaTeX prose): `787.50, or …`
+MATH 5.44/explB: OLD-SWALLOW (was KaTeX prose): `15.95, so …`
+MATH 5.44/explD: OLD-SWALLOW (was KaTeX prose): `798.00, an increase of …`
+MATH 5.44/explE: OLD-SWALLOW (was KaTeX prose): `750.00 ÷ 42 m ≈ …`
+MATH 5.46/explA: OLD-SWALLOW (was KaTeX prose): `43,900, and …`
+MATH 5.46/explB: OLD-SWALLOW (was KaTeX prose): `25/t, while 25% of …`
+MATH 5.46/explD: OLD-SWALLOW (was KaTeX prose): `53,100 is …`
+MATH 5.46/explE: OLD-SWALLOW (was KaTeX prose): `105.00/t; Season 2 is about …`
+MATH 5.48/explB: OLD-SWALLOW (was KaTeX prose): `17.60 and B's is …`
+MATH 5.48/explD: OLD-SWALLOW (was KaTeX prose): `283.20. Since …`
+MATH 5.51/context: OLD-SWALLOW (was KaTeX prose): `600,000, fee …`
+MATH 5.51/overview: OLD-SWALLOW (was KaTeX prose): `600,000, fee …`
+MATH 5.53/explA: OLD-SWALLOW (was KaTeX prose): `456, for …`
+MATH 5.53/explB: OLD-SWALLOW (was KaTeX prose): `8,746.50, a decrease of …`
+MATH 5.53/explB: OLD-SWALLOW (was KaTeX prose): `199.50 from …`
+MATH 5.53/explC: OLD-SWALLOW (was KaTeX prose): `8,051.40. Since …`
+MATH 5.55/context: OLD-SWALLOW (was KaTeX prose): `2,943.20. Shipment 2: 800 kg total, mixed 5:3 Coffee:Cocoa, cost …`
+MATH 5.55/explB: OLD-SWALLOW (was KaTeX prose): `1,934.40, and …`
+MATH 5.57/context: OLD-SWALLOW (was KaTeX prose): `27,000 Bonds, …`
+MATH 5.57/context: OLD-SWALLOW (was KaTeX prose): `18,000 Equities) returns …`
+MATH 5.57/context: OLD-SWALLOW (was KaTeX prose): `18,000 Bonds, …`
+MATH 5.57/overview: OLD-SWALLOW (was KaTeX prose): `27,000 Bonds, …`
+MATH 5.57/overview: OLD-SWALLOW (was KaTeX prose): `18,000 Equities) returns …`
+MATH 5.57/explB: OLD-SWALLOW (was KaTeX prose): `2,646 on a …`
+MATH 5.58/explC: OLD-SWALLOW (was KaTeX prose): `1,295.78, an increase of …`
+MATH 5.58/explC: OLD-SWALLOW (was KaTeX prose): `98.28 from …`
+MATH 5.58/explD: OLD-SWALLOW (was KaTeX prose): `5.70; Auto's is 612.50/85 ≈ …`

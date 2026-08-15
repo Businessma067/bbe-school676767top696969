@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.12",
+  "title": "The Doomsday Glacier — Racing to Predict a Silent Collapse",
+  "passage": "(1) In West Antarctica sits a glacier roughly the size of Great Britain, its ice cliffs facing an ocean now consistently warmer than at any point in recorded history. Thwaites Glacier holds enough ice that, were it to disintegrate entirely, global sea levels would rise by roughly 65 centimetres, a shift that would redraw coastlines from Bangladesh to Florida.\n\n(2) What makes Thwaites especially alarming is not simply its size but its location. The glacier rests on bedrock that slopes downward inland, meaning that once retreat begins, warmer ocean water can flow ever deeper beneath the ice, accelerating melting rather than slowing it, a self-reinforcing process glaciologists call marine ice sheet instability.\n\n(3) In 2019, researchers using ice-penetrating radar discovered a cavity beneath the glacier roughly twothirds the size of Manhattan, large enough to have once contained approximately 14 billion tonnes of ice that had already melted away. The cavity's existence confirmed that warm water was reaching, and eroding, the glacier's underside far more extensively than surface observations alone had suggested.\n\n(4) Thwaites does not melt in isolation. Acting as a natural buttress, its ice shelf currently holds back a much larger mass of ice further inland; researchers estimate that if this buttressing effect were entirely lost, surrounding glaciers could eventually contribute an additional three metres of sea-level rise, unfolding over centuries rather than years.\n\n(5) Since the 1990s, satellite measurements show Thwaites has roughly doubled its rate of ice loss, though scientists caution that this acceleration has not proceeded smoothly; certain sections have periodically stabilised before resuming retreat, complicating efforts to extrapolate a single, simple future trajectory from past trends.\n\n(6) The International Thwaites Glacier Collaboration, a joint venture funded by the United States and United Kingdom beginning in 2018, has coordinated dozens of research expeditions to the glacier, deploying underwater robots, autonomous sensors, and specially reinforced ships capable of navigating waters that had previously been considered too hazardous to survey directly.\n\n(7) Model projections of Thwaites' future remain strikingly divergent. Some simulations suggest the glacier's most vulnerable sections could destabilise within several decades, while others project a substantially slower unfolding lasting multiple centuries, a divergence stemming partly from genuine scientific uncertainty and partly from the sheer difficulty of modelling ice behaviour deep beneath the ocean's surface.\n\n(8) This uncertainty carries real consequences for coastal planning. Engineers designing sea walls, city planners rezoning flood-prone districts, and insurers pricing coastal property all require some estimate of future sea-level rise, yet current projections span a range wide enough to make precise, decades-ahead planning genuinely difficult.\n\n(9) Whether Thwaites represents a slow-moving but ultimately containable hazard, or an early warning of instability capable of accelerating far faster than current models suggest, remains a question actively pursued by glaciologists studying the ice sheet's hidden underside.",
+  "tasks": [
+    {
+      "id": "en-t-12-01",
+      "exam_title": "Early Sections",
+      "kind": "reading",
+      "statements": [
+        "Thwaites Glacier is roughly the size of Great Britain.",
+        "Full disintegration would raise sea levels by 65 centimetres.",
+        "Retreat slows once warm water reaches inland bedrock.",
+        "The glacier's bedrock slopes upward as it moves inland.",
+        "Marine ice sheet instability describes a self-reinforcing melting process."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Thwaites Glacier is roughly the size of Great Britain.**\n\nParagraph 1 opens with a direct size comparison: a glacier \"roughly the size of Great Britain\" sits in West Antarctica. The statement simply repeats that explicit scale, without adding numbers or geography the text never gives.\n\n**Tip:** Treat bare size or place analogies as true when they echo the passage word-for-word or with a light paraphrase.\n\nThe size match is stated outright in Paragraph 1, so the claim is true.",
+        "**B) Full disintegration would raise sea levels by 65 centimetres.**\n\nStill in Paragraph 1, the text says that if Thwaites were to \"disintegrate entirely, global sea levels would rise by roughly 65 centimetres.\" The statement's \"full disintegration\" is just a clean rephrase of that total-collapse scenario, and the centimetre figure is unchanged.\n\nThe 65-centimetre rise is the passage's own number for complete loss, so the claim matches.",
+        "**C) Retreat slows once warm water reaches inland bedrock.**\n\nParagraph 2 says the opposite: once retreat begins, warmer water can flow ever deeper beneath the ice, \"accelerating melting rather than slowing it.\" The statement flips that causal direction—from acceleration to slowing—so it fails against the stability mechanism the text names.\n\n**Trap:** Watch for verbs that reverse the marine ice-sheet feedback; the passage insists melt speeds up, not cools down.\n\nThe claim reverses Paragraph 2's accelerating feedback, so it fails.",
+        "**D) The glacier's bedrock slopes upward as it moves inland.**\n\nParagraph 2 locates the danger in bedrock that \"slopes downward inland,\" not upward. An upward slope would block warm-water intrusion; a downward one enables the self-reinforcing retreat the paragraph describes. The statement simply swaps the slope direction.\n\nDownward inland, not upward, is the bedrock fact, so the claim is false.",
+        "**E) Marine ice sheet instability describes a self-reinforcing melting process.**\n\nParagraph 2 ends by labelling that self-reinforcing melt loop: \"a self-reinforcing process glaciologists call marine ice sheet instability.\" The statement faithfully restates that definition—name and mechanism line up.\n\nThe term and the feedback process are equated in Paragraph 2, so the claim is true."
+      ],
+      "highlights": [
+        "a glacier roughly the size of Great Britain",
+        "were it to disintegrate entirely, global sea levels would rise by roughly 65 centimetres",
+        "accelerating melting rather than slowing it",
+        "bedrock that slopes downward inland",
+        "a self-reinforcing process glaciologists call marine ice sheet instability"
+      ]
+    },
+    {
+      "id": "en-t-12-02",
+      "exam_title": "Middle Sections",
+      "kind": "reading",
+      "statements": [
+        "The 2019 cavity was roughly two-thirds Manhattan's size.",
+        "The cavity once held about 14 billion tonnes of ice.",
+        "Surface observations alone had already revealed this cavity's full extent.",
+        "Losing the ice shelf's buttress could add three metres of sea-level rise.",
+        "That additional rise would unfold within a single decade."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The 2019 cavity was roughly two-thirds Manhattan's size.**\n\nParagraph 3 reports that in 2019 radar found a cavity \"roughly twothirds the size of Manhattan.\" The statement's hyphenated \"two-thirds\" is the same fraction; it does not invent a larger or later cavity.\n\nThe Manhattan-scale comparison is Paragraph 3's own measure, so the claim is true.",
+        "**B) The cavity once held about 14 billion tonnes of ice.**\n\nThe same sentence says the cavity was \"large enough to have once contained approximately 14 billion tonnes of ice that had already melted away.\" \"About\" fairly covers \"approximately,\" and the tonne count is unchanged.\n\nThe 14-billion-tonne figure is stated in Paragraph 3, so the claim matches.",
+        "**C) Surface observations alone had already revealed this cavity's full extent.**\n\nParagraph 3 stresses the opposite: warm-water erosion was \"far more extensively than surface observations alone had suggested.\" Radar, not surface surveys, revealed the cavity's scale. The statement credits surface data with a discovery the text withholds from them.\n\n**Trap:** \"Already\" + surface methods is a common flip—Paragraph 3 says surface data understated the problem.\n\nSurface observations alone missed this extent, so the claim fails.",
+        "**D) Losing the ice shelf's buttress could add three metres of sea-level rise.**\n\nParagraph 4 estimates that if the buttressing effect were entirely lost, surrounding glaciers \"could eventually contribute an additional three metres of sea-level rise.\" The statement correctly ties that three-metre add-on to loss of the ice shelf's buttress role.\n\nThe three-metre estimate is Paragraph 4's figure for lost buttressing, so the claim is true.",
+        "**E) That additional rise would unfold within a single decade.**\n\nParagraph 4 immediately times the extra rise as \"unfolding over centuries rather than years.\" A single decade is far shorter than that multi-century window, so the statement invents a rapid timetable the text rejects.\n\nCenturies, not a decade, is the span given, so the claim is false."
+      ],
+      "highlights": [
+        "roughly twothirds the size of Manhattan",
+        "approximately 14 billion tonnes of ice",
+        "far more extensively than surface observations alone had suggested",
+        "an additional three metres of sea-level rise",
+        "unfolding over centuries rather than years"
+      ]
+    },
+    {
+      "id": "en-t-12-03",
+      "exam_title": "Later Sections",
+      "kind": "reading",
+      "statements": [
+        "Since the 1990s, ice loss has roughly doubled.",
+        "This acceleration has proceeded smoothly without any pauses.",
+        "The joint research collaboration began in 2018.",
+        "All model projections agree closely on collapse timing.",
+        "Coastal planners currently face a genuinely wide projection range."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Since the 1990s, ice loss has roughly doubled.**\n\nParagraph 5 reports that satellite measurements show Thwaites \"has roughly doubled its rate of ice loss\" since the 1990s. The statement repeats that doubling without inventing a steeper surge or a different start year.\n\nThe doubled-loss claim is Paragraph 5's own statistic, so it is true.",
+        "**B) This acceleration has proceeded smoothly without any pauses.**\n\nThe same paragraph cautions that acceleration \"has not proceeded smoothly\"; sections have \"periodically stabilised before resuming retreat.\" \"Without any pauses\" erases those temporary stabilisations the text explicitly records.\n\n**Trap:** Doubling overall does not mean a smooth, unbroken climb—Paragraph 5 flags stop-start behaviour.\n\nPauses and restabilisations contradict \"smoothly,\" so the claim fails.",
+        "**C) The joint research collaboration began in 2018.**\n\nParagraph 6 introduces the International Thwaites Glacier Collaboration as a U.S.–U.K. venture \"beginning in 2018.\" The statement names that start date accurately and invents no earlier founding year.\n\nThe 2018 start is stated in Paragraph 6, so the claim is true.",
+        "**D) All model projections agree closely on collapse timing.**\n\nParagraph 7 opens with projections that \"remain strikingly divergent\"—decades in some runs, centuries in others. \"Agree closely\" is the exact opposite of that advertised mismatch.\n\nStriking divergence overturns close agreement, so the claim is false.",
+        "**E) Coastal planners currently face a genuinely wide projection range.**\n\nParagraph 8 says current projections \"span a range wide enough to make precise, decades-ahead planning genuinely difficult.\" Coastal engineers, planners, and insurers all work under that spread. The statement's \"genuinely wide\" tracks the passage's own wording.\n\nThe wide projection span for coastal planning is Paragraph 8's point, so the claim matches."
+      ],
+      "highlights": [
+        "Since the 1990s, satellite measurements show Thwaites has roughly doubled its rate of ice loss",
+        "this acceleration has not proceeded smoothly; certain sections have periodically stabilised",
+        "beginning in 2018",
+        "Model projections of Thwaites' future remain strikingly divergent",
+        "current projections span a range wide enough to make precise, decades-ahead planning genuinely difficult"
+      ]
+    },
+    {
+      "id": "en-t-12-04",
+      "exam_title": "Disguised Inference Traps",
+      "kind": "reading",
+      "statements": [
+        "Downward-sloping bedrock helps explain accelerating, self-reinforcing retreat.",
+        "If loss doubled since the 1990s, retreat has clearly worsened.",
+        "Divergent models imply scientists fully agree on collapse timing.",
+        "Buttressing loss implies inland glaciers depend partly on Thwaites.",
+        "Stabilised sections prove the glacier's overall retreat has ended."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Downward-sloping bedrock helps explain accelerating, self-reinforcing retreat.**\n\nParagraph 2 links bedrock that \"slopes downward inland\" to ever-deeper warm water and \"accelerating melting,\" which glaciologists call \"marine ice sheet instability.\" The inference is not a stretch: the slope is offered as the mechanism behind the self-reinforcing speed-up.\n\nThe bedrock geometry and the feedback are tied together in Paragraph 2, so the inference holds.",
+        "**B) If loss doubled since the 1990s, retreat has clearly worsened.**\n\nParagraph 5's doubling of the ice-loss rate since the 1990s is already framed as acceleration (even with intermittent pauses). A higher loss rate is a straightforward worsening of retreat intensity relative to that earlier baseline.\n\n**Tip:** \"Clearly worsened\" here tracks rate of ice loss, not a claim that every section is always retreating at once.\n\nDoubled loss since the 1990s supports a worse retreat rate, so the inference is true.",
+        "**C) Divergent models imply scientists fully agree on collapse timing.**\n\nParagraph 7 calls the projections \"strikingly divergent\" and traces that gap to uncertainty and hard-to-model ice physics. Divergence is evidence of disagreement about timing, not of \"full agree[ment].\" The inference flips the logical force of the word.\n\n**Trap:** \"Divergent\" never licenses unanimous timing; it blocks it.\n\nDivergence contradicts full agreement, so the claim fails.",
+        "**D) Buttressing loss implies inland glaciers depend partly on Thwaites.**\n\nParagraph 4 says Thwaites' ice shelf \"holds back a much larger mass of ice further inland,\" and that losing that buttress could unlock metres of extra rise from surrounding glaciers. Dependence of inland ice on Thwaites' buttress is exactly what that relationship implies.\n\nThe inland buttressing role supports partial dependence, so the inference is true.",
+        "**E) Stabilised sections prove the glacier's overall retreat has ended.**\n\nParagraph 5 notes only that certain sections \"periodically stabilised before resuming retreat.\" Temporary pauses before restarting do not prove that overall retreat has ended; they complicate a simple future path while retreat continues.\n\nStabilisation then \"resuming retreat\" overturns an \"ended\" verdict, so the claim is false."
+      ],
+      "highlights": [
+        "bedrock that slopes downward inland, meaning that once retreat begins, warmer ocean water can flow ever deeper beneath the ice, accelerating melting rather than slowing it",
+        "Thwaites has roughly doubled its rate of ice loss",
+        "Model projections of Thwaites' future remain strikingly divergent",
+        "its ice shelf currently holds back a much larger mass of ice further inland",
+        "certain sections have periodically stabilised before resuming retreat"
+      ]
+    },
+    {
+      "id": "en-t-12-05",
+      "exam_title": "Disguised Cross-Section Synthesis",
+      "kind": "reading",
+      "statements": [
+        "The 2019 cavity discovery helps explain the doubled loss rate since the 1990s.",
+        "Uncertain projections help explain why coastal planning remains genuinely difficult.",
+        "Because collaboration began in 2018, all uncertainty was fully resolved by then.",
+        "Buttressing loss and the three-metre estimate both concern ice beyond Thwaites itself.",
+        "Bedrock sloping downward is unrelated to the described instability process."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The 2019 cavity discovery helps explain the doubled loss rate since the 1990s.**\n\nParagraph 3's cavity shows warm water eroding the underside far more than surface clues suggested; Paragraph 5 records roughly doubled ice loss since the 1990s. Linking underside melt revealed in 2019 to that accelerated loss is a fair cross-section synthesis the text invites, even without a single sentence that pairs the two facts.\n\n**Tip:** Synthesis items can join mechanism (basal melt) to trend (doubled loss) when both are in the passage.\n\nBasal erosion and doubled loss fit together, so the synthesis holds.",
+        "**B) Uncertain projections help explain why coastal planning remains genuinely difficult.**\n\nParagraph 7–8 supply the causal chain: strikingly divergent models create wide projection ranges, and Paragraph 8 says that spread makes \"precise, decades-ahead planning genuinely difficult\" for coastal work. The statement restates the passage's own bridge from uncertainty to planning trouble.\n\nWide, uncertain projections are Paragraph 8's reason for planning difficulty, so the claim is true.",
+        "**C) Because collaboration began in 2018, all uncertainty was fully resolved by then.**\n\nParagraph 6 dates the collaboration to 2018; Paragraphs 7–9 still present divergent models and an open question about Thwaites' hazard. Launching research does not mean uncertainty vanished that year—the later paragraphs prove it remains.\n\n**Trap:** A start date is not a resolution date; later paragraphs keep the unknowns alive.\n\nOngoing divergent projections overturn \"fully resolved by 2018,\" so the claim fails.",
+        "**D) Buttressing loss and the three-metre estimate both concern ice beyond Thwaites itself.**\n\nParagraph 4's buttress holds back \"a much larger mass of ice further inland,\" and the three metres come from \"surrounding glaciers\" if that effect is lost. Both details point past Thwaites' own ice to the inland system it pins in place.\n\nInland ice and surrounding glaciers are beyond Thwaites alone, so the synthesis is true.",
+        "**E) Bedrock sloping downward is unrelated to the described instability process.**\n\nParagraph 2 presents downward-sloping bedrock as the setup that lets warm water deepen the retreat and feed \"marine ice sheet instability.\" Calling the slope \"unrelated\" severs the mechanism the paragraph exists to explain.\n\nThe slope is the instability's geometric cause, so the claim is false."
+      ],
+      "highlights": [
+        "warm water was reaching, and eroding, the glacier's underside far more extensively than surface observations alone had suggested",
+        "current projections span a range wide enough to make precise, decades-ahead planning genuinely difficult",
+        "Model projections of Thwaites' future remain strikingly divergent",
+        "if this buttressing effect were entirely lost, surrounding glaciers could eventually contribute an additional three metres of sea-level rise",
+        "bedrock that slopes downward inland, meaning that once retreat begins, warmer ocean water can flow ever deeper beneath the ice, accelerating melting rather than slowing it, a self-reinforcing process glaciologists call marine ice sheet instability"
+      ]
+    },
+    {
+      "id": "en-t-12-06",
+      "exam_title": "Grammar Rules I",
+      "kind": "grammar",
+      "statements": [
+        "\"Had retreat not accelerated, sea levels would have risen slower.\"",
+        "\"Scientists recommended that the team monitors the cavity closely.\"",
+        "\"The number of research expeditions continue to grow yearly.\"",
+        "\"Neither the sensors nor the ship were fully reliable.\"",
+        "\"Having mapped the cavity, researchers revised their models.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Had retreat not accelerated, sea levels would have risen slower.\"**\n\nThis is a third-conditional counterfactual with inverted Had + past participle (\"Had retreat not accelerated\") paired with \"would have risen.\" The comparative adverb \"slower\" is acceptable exam English beside \"more slowly\" when comparing rates.\n\n**Tip:** Inversion (Had + subject + past participle) is just another way to write If + past perfect.\n\nThe inverted third conditional is well formed, so the sentence stands.",
+        "**B) \"Scientists recommended that the team monitors the cavity closely.\"**\n\nAfter recommend + that, exam English wants the mandative subjunctive: base form monitor, not third-person monitors. The finite \"monitors\" treats the clause like an ordinary present indicative.\n\n**Trap:** Recommend/insist/require + that → base verb, even with a singular subject.\n\nThe subjunctive needs \"monitor,\" so this wording fails — \"Scientists recommended that the team monitor the cavity closely.\"",
+        "**C) \"The number of research expeditions continue to grow yearly.\"**\n\nThe head of the subject is \"number,\" which is singular, so the verb should be continues. \"Continue\" wrongly agrees with the plural noun inside the of-phrase (\"expeditions\").\n\n**Tip:** The number of → singular; a number of → plural.\n\nSingular \"number\" needs \"continues,\" so the line fails — \"The number of research expeditions continues to grow yearly.\"",
+        "**D) \"Neither the sensors nor the ship were fully reliable.\"**\n\nNeither…nor joins a plural noun (\"sensors\") and a singular one (\"ship\"). In this bank's mixed-number reading, plural agreement is allowed because one member of the pair is plural, so \"were\" can stand.\n\n**Tip:** When neither…nor mixes numbers, check which agreement rule the item expects—here the plural partner licenses \"were.\"\n\nWith a plural noun in the neither…nor pair, \"were\" fits, so the sentence is sound.",
+        "**E) \"Having mapped the cavity, researchers revised their models.\"**\n\nThe perfect participle \"Having mapped\" correctly sets mapping as earlier work by the same agents who then \"revised\"—researchers are both the mappers and the revisers, so there is no dangling modifier.\n\nThe participial opener attaches cleanly to \"researchers,\" so the wording holds."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-12-07",
+      "exam_title": "Grammar Rules II",
+      "kind": "grammar",
+      "statements": [
+        "\"No sooner had radar scanned the ice than the cavity appeared.\"",
+        "\"The programme, along with related studies, were funded jointly.\"",
+        "\"Each of the models have projected differing timelines.\"",
+        "\"By the time data arrives, projections will have already shifted.\"",
+        "\"The readings, which were gathered yearly, show accelerating melt.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"No sooner had radar scanned the ice than the cavity appeared.\"**\n\nNo sooner + inverted past perfect (\"had radar scanned\") pairs with than + past simple (\"appeared\"). That is the classic No sooner…than pattern for a near-immediate follow-on event.\n\nThe inversion and than-clause are correctly built, so the sentence stands.",
+        "**B) \"The programme, along with related studies, were funded jointly.\"**\n\nThe real subject is singular \"programme\"; the parenthetical \"along with related studies\" does not make the verb plural. Were should be was.\n\n**Trap:** Along with / as well as / together with never turns a singular head into a plural subject.\n\nSingular \"programme\" needs \"was funded,\" so this fails — \"The programme, along with related studies, was funded jointly.\"",
+        "**C) \"Each of the models have projected differing timelines.\"**\n\nEach of + plural noun still takes a singular verb: has projected, not have. \"Each\" points one-by-one and keeps the head singular.\n\n\"Each\" demands singular \"has,\" so the line fails — \"Each of the models has projected differing timelines.\"",
+        "**D) \"By the time data arrives, projections will have already shifted.\"**\n\n\"By the time\" + present (\"arrives\") sets a future reference point; \"will have already shifted\" places that change before data arrives—future perfect for prior completion.\n\nCompletion before a future \"by the time\" moment is exactly future perfect's job, so the wording is sound.",
+        "**E) \"The readings, which were gathered yearly, show accelerating melt.\"**\n\nPlural \"readings\" correctly takes \"were\" in the non-restrictive relative clause and \"show\" in the main clause. Number agreement is consistent throughout.\n\nPlural subject and plural verbs align, so the sentence holds."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-12-08",
+      "exam_title": "Word Meaning in Context",
+      "kind": "reading",
+      "statements": [
+        "In Paragraph 2, \"self-reinforcing\" means weakening over repeated cycles.",
+        "In Paragraph 3, \"eroding\" means gradually wearing something away.",
+        "In Paragraph 4, \"buttress\" means something that supports and holds back.",
+        "In Paragraph 6, \"hazardous\" means completely safe and risk-free.",
+        "In Paragraph 9, \"hidden\" means fully visible and easily observed."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In Paragraph 2, \"self-reinforcing\" means weakening over repeated cycles.**\n\nIn Paragraph 2 the process accelerates melt rather than slowing it—the loop strengthens itself. \"Weakening over repeated cycles\" is the opposite polarity of a self-reinforcing feedback.\n\n**Trap:** \"Self-\" compounds often tempt antonym glosses; here the ice-sheet loop intensifies, it does not fade.\n\nAccelerating, not weakening, is the sense in Paragraph 2, so the gloss fails.",
+        "**B) In Paragraph 3, \"eroding\" means gradually wearing something away.**\n\nParagraph 3 says warm water was \"reaching, and eroding, the glacier's underside\"—progressive basal wear. \"Gradually wearing something away\" is exactly that geologic sense.\n\nGradual wear matches how Paragraph 3 uses \"eroding,\" so the meaning holds.",
+        "**C) In Paragraph 4, \"buttress\" means something that supports and holds back.**\n\nParagraph 4 calls the ice shelf a \"natural buttress\" that \"holds back a much larger mass of ice further inland.\" Support-plus-restraint is the role the sentence assigns.\n\nHolding inland ice back is the buttress function named there, so the gloss is true.",
+        "**D) In Paragraph 6, \"hazardous\" means completely safe and risk-free.**\n\nParagraph 6 describes waters once \"considered too hazardous to survey directly\"—dangerous enough to avoid. \"Completely safe and risk-free\" is the antonym of that risk label.\n\nHazardous marks danger, not safety, so the claimed meaning fails.",
+        "**E) In Paragraph 9, \"hidden\" means fully visible and easily observed.**\n\nParagraph 9 closes on the ice sheet's \"hidden underside\"—material researchers still pursue because it is not in plain view. \"Fully visible\" reverses that sense.\n\nHidden means concealed, not visible, so the gloss is false."
+      ],
+      "highlights": [
+        "a self-reinforcing process glaciologists call marine ice sheet instability",
+        "warm water was reaching, and eroding, the glacier's underside",
+        "Acting as a natural buttress, its ice shelf currently holds back a much larger mass of ice further inland",
+        "waters that had previously been considered too hazardous to survey directly",
+        "glaciologists studying the ice sheet's hidden underside"
+      ]
+    },
+    {
+      "id": "en-t-12-09",
+      "exam_title": "Word Meaning in Context II",
+      "kind": "reading",
+      "statements": [
+        "In Paragraph 1, \"disintegrate\" means to break apart completely.",
+        "In Paragraph 5, \"extrapolate\" means to project forward from existing trends.",
+        "In Paragraph 7, \"divergent\" means closely matching one another.",
+        "In Paragraph 8, \"genuinely\" means falsely or only apparently.",
+        "In Paragraph 2, \"accelerating\" means slowing down gradually."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In Paragraph 1, \"disintegrate\" means to break apart completely.**\n\nParagraph 1 weighs what happens if Thwaites were to \"disintegrate entirely\"—total breakup releasing enough ice for a ~65 cm rise. \"Break apart completely\" tracks that total-collapse sense.\n\nEntire breakup is how Paragraph 1 uses the verb, so the meaning holds.",
+        "**B) In Paragraph 5, \"extrapolate\" means to project forward from existing trends.**\n\nParagraph 5 says stop-start retreat complicates efforts \"to extrapolate a single, simple future trajectory from past trends.\" That is textbook projecting-forward from known data.\n\nProjecting a future path from past trends is exactly the Paragraph 5 sense, so the gloss is true.",
+        "**C) In Paragraph 7, \"divergent\" means closely matching one another.**\n\nParagraph 7's projections \"remain strikingly divergent,\" with some runs on decades and others on centuries. \"Closely matching\" erases that split.\n\n**Trap:** Do not gloss divergent as \"aligned\"; the paragraph's decades-versus-centuries contrast proves separation.\n\nDivergent means differing, not matching, so the claim fails.",
+        "**D) In Paragraph 8, \"genuinely\" means falsely or only apparently.**\n\nParagraph 8 says planning is \"genuinely difficult\" because the projection range is wide—\"genuinely\" intensifies real difficulty, not fake or apparent difficulty.\n\nGenuinely means truly, not falsely, so the gloss is false.",
+        "**E) In Paragraph 2, \"accelerating\" means slowing down gradually.**\n\nParagraph 2 says warmer water leads to \"accelerating melting rather than slowing it.\" The text even pairs accelerating against slowing, so \"slowing down gradually\" is the denied opposite.\n\nAccelerating is speeding melt, not slowing it, so the meaning fails."
+      ],
+      "highlights": [
+        "were it to disintegrate entirely",
+        "complicating efforts to extrapolate a single, simple future trajectory from past trends",
+        "Model projections of Thwaites' future remain strikingly divergent",
+        "precise, decades-ahead planning genuinely difficult",
+        "accelerating melting rather than slowing it"
+      ]
+    },
+    {
+      "id": "en-t-12-10",
+      "exam_title": "Sneaky Paraphrase Detection",
+      "kind": "vocabulary",
+      "statements": [
+        "Forecasts for the glacier's future differ sharply from one another.",
+        "Forecasts for the glacier's future agree closely with each other.",
+        "The glacier's future is no longer being modelled at all.",
+        "Predictions about the glacier's fate vary considerably between models.",
+        "Every model now predicts the exact same outcome confidently."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Forecasts for the glacier's future differ sharply from one another.**\n\nThe original line is \"Model projections of Thwaites' future remain strikingly divergent.\" \"Forecasts…differ sharply\" preserves both the modelling topic and the strong-disagreement sense of \"strikingly divergent.\"\n\nSharp difference between forecasts is a faithful paraphrase, so the line matches.",
+        "**B) Forecasts for the glacier's future agree closely with each other.**\n\n\"Agree closely\" is the antonym of \"strikingly divergent.\" The paraphrase reverses the original's core claim about model disagreement.\n\n**Trap:** Synonym traps often flip divergent ↔ agree; reject any close-agreement rewrite.\n\nClose agreement contradicts divergence, so this paraphrase fails.",
+        "**C) The glacier's future is no longer being modelled at all.**\n\nThe original asserts that model projections still exist and disagree; it never says modelling has stopped. \"No longer being modelled\" invents a cessation the sentence does not contain.\n\nAbandoned modelling is not in the original, so the paraphrase fails.",
+        "**D) Predictions about the glacier's fate vary considerably between models.**\n\n\"Vary considerably between models\" restates divergent projections without softening or reversing them. \"Fate\" and \"predictions\" stay within the same forecasting domain as \"model projections…future.\"\n\nConsiderable between-model variation keeps the original meaning, so the paraphrase holds.",
+        "**E) Every model now predicts the exact same outcome confidently.**\n\nUnanimous, confident sameness cancels \"strikingly divergent.\" The paraphrase invents agreement and certainty the source line denies.\n\nIdentical confident outcomes reverse the original, so this paraphrase is false."
+      ],
+      "highlights": [
+        "Model projections of Thwaites' future remain strikingly divergent",
+        "Model projections of Thwaites' future remain strikingly divergent",
+        "Model projections of Thwaites' future remain strikingly divergent",
+        "Model projections of Thwaites' future remain strikingly divergent",
+        "Model projections of Thwaites' future remain strikingly divergent"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+﻿loaded tasks: 108
+math chunks checked: 1457
+katex render errors: 0
+brace-drop issues: 0
+leaked-latex issues: 13

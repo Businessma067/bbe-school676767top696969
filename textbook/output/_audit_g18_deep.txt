@@ -1,0 +1,104 @@
+ISSUES (0)
+
+
+==== CLOSINGS ====
+en-g-18-01 A key=F t=0/T0 f=1/F1 | Depend locks to on, not of, so this is **false** — "Success depends on careful practice before the recital."
+en-g-18-01 B key=F t=1/T1 f=1/F1 | Responsible for is the duty lock, so the line is **false**; the **true** version is "She is responsible for watering the neighbour's plants."
+en-g-18-01 C key=F t=0/T0 f=1/F1 | Interested takes in, never on, so the wording is **false**: "They are interested in learning Portuguese this summer."
+en-g-18-01 D key=F t=0/T0 f=1/F1 | Despite never partners with of, so this is **false** — "Despite the rain, the picnic went ahead."
+en-g-18-01 E key=T t=1/T1 f=0/F0 | Accused of + wrongdoing is exactly the legal lock here, so the wording is **true**.
+en-g-18-02 A key=T t=1/T1 f=0/F0 | Insist on + gerund is the forcefulness frame English wants, so the sentence is **true**.
+en-g-18-02 B key=F t=0/T0 f=1/F1 | Differ from is the only comparison lock, so this is **false** — "Her recipe differs from last year's version."
+en-g-18-02 C key=F t=0/T0 f=1/F1 | Apologise for a fault is the exam pattern, so the line is **false**: "We apologised for spilling juice on the carpet."
+en-g-18-02 D key=F t=0/T0 f=1/F1 | Focus on names a topic; focus to never does, so this is **false** — "The documentary focuses on ocean plastics."
+en-g-18-02 E key=T t=1/T1 f=0/F0 | Participate in an event is the fixed involvement pattern, so this line is **true**.
+en-g-18-03 A key=F t=0/T0 f=1/F2 | Object takes to, not against, so the wording is **false** — "They objected to the new quiet-hours rule."
+en-g-18-03 B key=T t=1/T1 f=0/F0 | Capable of + -ing is the textbook ability frame, so the wording is **true**.
+en-g-18-03 C key=F t=0/T0 f=1/F1 | Good at marks a skill, so good in swimming is **false** — "She is good at swimming long distances."
+en-g-18-03 D key=T t=1/T1 f=0/F0 | Look forward to + -ing keeps to as a preposition, so the sentence is **true**.
+en-g-18-03 E key=F t=0/T0 f=1/F1 | Succeed in + -ing reports achievement; a to-infinitive fails here, so this is **false** — "He succeeded in repairing the bicycle chain."
+en-g-18-04 A key=F t=0/T0 f=1/F1 | Consist of lists parts, so consist from is **false**: "The salad consists of tomatoes, cucumber, and feta."
+en-g-18-04 B key=T t=1/T1 f=0/F0 | Belong to cleanly marks ownership, so the jacket line is **true**.
+en-g-18-04 C key=F t=0/T0 f=1/F1 | Rely on is the trust satellite, so rely of is **false** — "You can rely on her to bring the tent."
+en-g-18-04 D key=F t=0/T0 f=1/F1 | Complain about a problem is the lock, so for upstairs noise is **false**: "They complained about the noisy neighbours upstairs."
+en-g-18-04 E key=T t=1/T1 f=0/F0 | Prevent someone from + -ing is the restraint frame used here, so the wording is **true**.
+en-g-18-05 A key=T t=1/T1 f=0/F0 | Famous for a feature is the reputation pattern Lisbon needs, so this line is **true**.
+en-g-18-05 B key=F t=1/T1 f=1/F1 | Similar to is the comparison lock, so similar with is **false**; the **true** version is "This trail is similar to the one near the lake."
+en-g-18-05 C key=F t=0/T0 f=1/F1 | Exam English prefers different from, so different than is **false** — "My playlist is different from yours in every genre."
+en-g-18-05 D key=F t=0/T0 f=1/F1 | Married to a person is required, so married with is **false**: "She has been married to her partner for twelve years."
+en-g-18-05 E key=T t=1/T1 f=0/F0 | Afraid of + noun correctly names the fear, so the thunderstorm line is **true**.
+en-g-18-06 A key=F t=0/T0 f=1/F1 | Stations take arrive at, not arrive to, so this is **false** — "We arrived at the station just before midnight."
+en-g-18-06 B key=T t=1/T1 f=0/F0 | Listen to is obligatory before an object, so the podcast wording is **true**.
+en-g-18-06 C key=F t=0/T0 f=1/F1 | Wait needs for before the bus, so the bare object is **false**: "They waited for the bus for twenty minutes in the rain."
+en-g-18-06 D key=T t=1/T1 f=0/F0 | Look at correctly points visual attention at a target, so the mural line is **true**.
+en-g-18-06 E key=F t=0/T0 f=1/F1 | Talk about a topic needs about, so bare talk the film is **false** — "We talked about the film for almost an hour."
+en-g-18-07 A key=F t=0/T0 f=1/F1 | Walking means on foot, not by foot, so this is **false** — "She goes to work on foot every morning."
+en-g-18-07 B key=T t=1/T1 f=0/F0 | By train is the default by + vehicle lock, so the coast journey is **true**.
+en-g-18-07 C key=F t=0/T0 f=1/F1 | Dated days take on, so in Monday evening is **false**: "The match starts on Monday evening."
+en-g-18-07 D key=F t=0/T0 f=1/F1 | At night is the fixed time phrase, so in night is **false** — "I usually read at night when the house is quiet."
+en-g-18-07 E key=T t=1/T1 f=0/F0 | On + dated day/time phrase is correctly formed here, so the wording is **true**.
+en-g-18-08 A key=F t=0/T0 f=1/F1 | Congratulate someone on an achievement, so for after congratulate is **false** — "We congratulated her on winning the baking contest."
+en-g-18-08 B key=F t=0/T0 f=1/F1 | Blame someone for something is the lock, so about burnt toast is **false**: "Don't blame me for the burnt toast."
+en-g-18-08 C key=T t=1/T1 f=0/F0 | Thanks for + -ing is the gratitude frame, so helping with the sofa is **true**.
+en-g-18-08 D key=T t=1/T1 f=0/F0 | Provide someone with something is the classic supply lock used here, so the line is **true**.
+en-g-18-08 E key=F t=0/T0 f=1/F1 | Charge someone with an offence, not of, so this is **false** — "Police charged him with vandalising the bus stop."
+en-g-18-09 A key=T t=1/T1 f=0/F0 | Keen on + noun/gerund correctly marks enthusiasm, so the canal-run wording is **true**.
+en-g-18-09 B key=F t=0/T0 f=1/F1 | Fond of is the liking lock, so fond from is **false** — "She is fond of old jazz records."
+en-g-18-09 C key=F t=0/T0 f=1/F1 | Take pride in an achievement; pride of mixes frames, so the line is **false**: "They take pride in their community garden."
+en-g-18-09 D key=T t=1/T1 f=0/F0 | Tired of + -ing correctly marks weariness with a wait, so the plumber line is **true**.
+en-g-18-09 E key=F t=0/T0 f=1/F1 | Exams prefer bored with, so bored of is **false** — "He gets bored with the same playlist every day."
+en-g-18-10 A key=T t=1/T1 f=0/F0 | According to + source is the reporting chunk, so citing the weather app is **true**.
+en-g-18-10 B key=T t=1/T1 f=0/F0 | Because of + noun phrase correctly gives a reason, so the flooding line is **true**.
+en-g-18-10 C key=F t=0/T0 f=1/F1 | Instead of coffee needs of before the noun, so bare instead coffee is **false** — "She chose tea instead of coffee after dinner."
+en-g-18-10 D key=F t=0/T0 f=1/F1 | In addition to keeps to, not of, so this is **false**: "In addition to stretching, he iced his knee."
+en-g-18-10 E key=T t=1/T1 f=0/F0 | As a result of + noun is the fixed causal phrase used here, so the wording is **true**.
+en-g-18-11 A key=T t=1/T1 f=0/F0 | Insist that + clause is a valid alternative to insist on + -ing, so the campsite line is **true**.
+en-g-18-11 B key=F t=0/T0 f=1/F1 | Discourage someone from + -ing, not to swim, so this is **false** — "The coach discouraged them from swimming after dark."
+en-g-18-11 C key=T t=1/T1 f=0/F0 | Recover from an illness is the medical collocation, so warm soup helping recovery is **true**.
+en-g-18-11 D key=F t=0/T0 f=1/F1 | Preventive stop takes from + -ing; stop to do reads as purpose, so this is **false**: "Nothing will stop her from finishing the marathon."
+en-g-18-11 E key=T t=1/T1 f=0/F0 | Specialise in a field is fixed, so marine biology at university is **true**.
+en-g-18-12 A key=T t=1/T1 f=0/F0 | Be used to + -ing marks familiar habit, so waking before sunrise is **true**.
+en-g-18-12 B key=F t=0/T0 f=1/F1 | Past-habit used to wants a bare infinitive, so used to waking is **false** — "She used to wake up before sunrise when she worked nights."
+en-g-18-12 C key=F t=0/T0 f=1/F1 | Accustomed to mirrors used to for familiarity, so accustomed with is **false**: "They are accustomed to long bus rides."
+en-g-18-12 D key=T t=1/T1 f=0/F0 | Prefer A to B correctly stacks the two options, so walking to cycling is **true**.
+en-g-18-12 E key=F t=0/T0 f=1/F1 | Prefer … than imports rather's satellite, so the rainy preference is **false** — "We prefer walking to cycling when it rains."
+en-g-18-13 A key=T t=1/T1 f=0/F0 | In spite of keeps the required of in the chunk, so the heat contrast is **true**.
+en-g-18-13 B key=F t=0/T0 f=1/F1 | In spite without of is an incomplete multi-word preposition, so this is **false** — "In spite of the heat, they finished the hike."
+en-g-18-13 C key=T t=1/T1 f=0/F0 | Notwithstanding + noun needs no extra of, so the late-start line is **true**.
+en-g-18-13 D key=F t=0/T0 f=1/F1 | Refrain from + -ing is the restraint lock, so refrain to comment is **false**: "She refrained from commenting during the argument."
+en-g-18-13 E key=T t=1/T1 f=0/F1 | Refrain from posting correctly blocks the spoiler gerund, so the wording is **true**.
+en-g-18-14 A key=T t=1/T1 f=0/F0 | Depend on correctly ties outcome to temperature, so the experiment line is **true**.
+en-g-18-14 B key=T t=1/T1 f=0/F0 | Access to a place is the entry-rights lock, so the roof terrace wording is **true**.
+en-g-18-14 C key=F t=0/T0 f=1/F1 | Intention for is not an English cancel-plan lock, so this is **false** — "She has no intention of cancelling the trip."
+en-g-18-14 D key=F t=0/T0 f=1/F1 | There is no point in + -ing is the frame, so point of arguing is **false**: "There is no point in arguing about the score."
+en-g-18-14 E key=T t=1/T1 f=0/F0 | What's the point in + -ing is an acceptable rhetorical frame here, so the museum question is **true**.
+en-g-18-15 A key=T t=1/T1 f=0/F0 | Angry with a person for a reason correctly splits both locks, so the headphones line is **true**.
+en-g-18-15 B key=T t=1/T1 f=0/F0 | Angry about a situation targets events, not people, so the cancelled ferry is **true**.
+en-g-18-15 C key=F t=0/T0 f=1/F1 | Pleased with/by is the lock; pleased of imports proud's of, so this is **false** — "They were pleased with the surprise birthday brunch."
+en-g-18-15 D key=T t=1/T1 f=0/F0 | Delighted with a result is natural and grammatical, so the garden outcome is **true**.
+en-g-18-15 E key=F t=0/T0 f=1/F1 | Surprised by/at, never from, so the snowfall line is **false**: "We were surprised by the sudden snowfall."
+en-g-18-16 A key=T t=1/T1 f=0/F0 | Taste of a flavour is the sensory substance pattern, so the soup wording is **true**.
+en-g-18-16 B key=T t=1/T1 f=0/F0 | Smell like for resemblance is acceptable here, so woodsmoke on the jacket is **true**.
+en-g-18-16 C key=T t=1/T1 f=0/F0 | Remind someone of a person correctly marks memory or resemblance, so the teacher line is **true**.
+en-g-18-16 D key=F t=0/T0 f=1/F1 | A future prompt needs remind to + infinitive, so remind of locking is **false** — "Can you remind me to lock the back door?"
+en-g-18-16 E key=T t=1/T1 f=0/F0 | Remind him to + infinitive correctly issues the picnic-blanket prompt, so the wording is **true**.
+en-g-18-17 A key=T t=1/T1 f=0/F0 | Owing to + noun is the full formal causal chunk, so high winds cancelling the festival is **true**.
+en-g-18-17 B key=F t=0/T0 f=1/F1 | Owing needs to before the cause noun, so bare Owing the… is **false** — "Owing to the high winds, the festival was cancelled."
+en-g-18-17 C key=T t=1/T1 f=0/F0 | Due to + noun correctly marks the cause of postponement, so flooding on the trail is **true**.
+en-g-18-17 D key=F t=0/T0 f=1/F1 | Due to is a fixed chunk; Due the… drops to, so this is **false**: "Due to the flooding, the hike was postponed."
+en-g-18-17 E key=T t=1/T1 f=0/F0 | Thanks to + noun credits a favourable cause, so the clear sky wording is **true**.
+en-g-18-18 A key=F t=0/T0 f=1/F1 | Accuse someone of doing, not for, so blame's for fails here — this is **false**: "She accused him of leaving the gate open."
+en-g-18-18 B key=T t=1/T1 f=0/F0 | Suspected of + gerund is the alleged-wrongdoing lock, so feeding the cats is **true**.
+en-g-18-18 C key=F t=0/T0 f=1/F1 | Convicted of an offence is the exam preference, so convicted for trespassing is **false**: "He was convicted of trespassing on farmland."
+en-g-18-18 D key=T t=1/T1 f=0/F0 | Ban someone from + -ing correctly marks the prohibition, so the tennis-courts line is **true**.
+en-g-18-18 E key=F t=0/T0 f=1/F1 | Compensate for a loss needs for; a bare object is **false** — "Nothing can compensate for the loss of the old oak."
+en-g-18-19 A key=T t=1/T1 f=0/F0 | Contingent on mirrors depend on for conditions, so dry weather this weekend is **true**.
+en-g-18-19 B key=F t=0/T0 f=1/F1 | Contingent of is a depend-of transfer, so approval is **false** — "Approval is contingent on dry weather this weekend."
+en-g-18-19 C key=F t=0/T0 f=1/F1 | Pride oneself on doing, not in, so prides herself in is **false**: "She prides herself on finishing every crossword."
+en-g-18-19 D key=T t=1/T1 f=0/F0 | Take pride in + gerund is the fixed achievement frame, so finishing the crossword is **true**.
+en-g-18-19 E key=F t=0/T0 f=1/F2 | Proud of an achievement, never for, so this is **false** — "He is proud of his daughter's science prize."
+en-g-18-20 A key=T t=1/T1 f=0/F0 | Run out of + noun is the depletion pattern, so cups before arrival stand — the wording is **true**.
+en-g-18-20 B key=F t=0/T0 f=1/F1 | Run out of materials takes of, not from, so this is **false** — "The café had run out of cups before noon."
+en-g-18-20 C key=F t=0/T0 f=1/F1 | Look forward to keeps to in the multi-word verb, so for the hike is **false**: "I'm looking forward to the weekend hike."
+en-g-18-20 D key=T t=1/T1 f=0/F1 | Object to + gerund correctly marks the objection, so being photographed is **true**.
+en-g-18-20 E key=F t=0/T0 f=1/F1 | Succeed in + -ing, not on, so insist's on fails here — this is **false**: "He succeeded in repairing the leaky tap."

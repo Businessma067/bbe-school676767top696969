@@ -1,0 +1,61 @@
+=== FULL Ch5 TEXT AUDIT (60 tasks × context/statements/overview/A–E) ===
+tasks: 60
+fields formerly broken by currency-prose swallow: 311
+
+--- UNIT CHECKS ---
+  meridian_ok: PASS
+  compare_math: PASS
+  real_eq: PASS
+  currency_pair: PASS
+
+--- CRITICAL: prose rendered as math (should be 0) ---
+(none)
+
+--- CRITICAL: data mangling scars (should be 0) ---
+(none)
+
+--- unpaired $ after parser (should be 0) ---
+(none)
+
+--- empty required fields ---
+(none)
+
+--- A–E count issues ---
+(none)
+
+--- short overviews ---
+(none)
+
+--- sample: Meridian context parts ---
+  [text] Meridian Commodities buys Coffee and Cocoa at fixed prices per kg. Shipment 1: 520 kg total, mixed 3:2 Coffee:Cocoa, cost $2,943.20. Shipment 2: 800 kg total, mixed 5:3 Coffee:Cocoa, cost $4,555.00.
+
+--- sample: Solar T24 crossover lines ---
+  **3.** To find the crossover with Solar: $33 + 0.21u = 0.29u$  →  $u = 412.5$ units.
+
+--- old-swallow examples (parser should now keep as text): 311 ---
+  MATH 5.02/overview: `3.50 | Pen = …`
+  MATH 5.02/explA: `3.50.**  (true)  This claim states the notebook unit price. The solution gives …`
+  MATH 5.02/explB: `2.10.**  (false)  A pen actually costs …`
+  MATH 5.02/explC: `185.00.**  (true)  This claim checks the first invoice with the recovered prices. Its cost is …`
+  MATH 5.02/explE: `172.50.**  (false)  This claim gives an incorrect total for the second invoice. Using the prices giv…`
+  MATH 5.03/tables: `2,130 | | Saturday Evening | 160 | 40 | …`
+  MATH 5.03/overview: `12.00 | Child ticket = …`
+  MATH 5.03/explA: `12.00.**  (true)  This claim gives the adult price. Solving the system produces …`
+  MATH 5.03/explB: `7.00.**  (true)  This claim gives the child price. After …`
+  MATH 5.03/explC: `2,050.00 in revenue.**  (false)  Using the actual prices, the matinee total is 90(12) + 150(7) = …`
+  MATH 5.03/explD: `2,300.00 in revenue.**  (false)  The evening total works out to 160(12) + 40(7) = …`
+  MATH 5.03/explE: `950.00, not …`
+  MATH 5.04/context: `8.00 delivery fee added on top of the food cost, no matter the order size. Receipt A: 6 sandwiches, …`
+  MATH 5.04/overview: `8.00 delivery fee added on top of the food cost, no matter the order size. Receipt A: 6 sandwiches, …`
+  MATH 5.04/stmtC: `8.00 delivery fee is added, is …`
+  MATH 5.04/stmtD: `8.00 delivery fee, is …`
+  MATH 5.04/explA: `7.00.**  (true)  This claim gives the sandwich price after the delivery fee is removed. The system g…`
+  MATH 5.04/explB: `5.00.**  (true)  This claim gives the wrap price. Eliminating sandwiches gives …`
+  MATH 5.04/explC: `8.00 delivery fee is added, is …`
+  MATH 5.04/explD: `8.00 delivery fee, is …`
+  MATH 5.04/explE: `60.00.**  (true)  This claim is about food without delivery. The cost is …`
+  MATH 5.05/context: `10,000 between two accounts at the start of the year: Account A pays 4% simple annual interest, and …`
+  MATH 5.05/overview: `10,000 between two accounts at the start of the year: Account A pays 4% simple annual interest, and …`
+  MATH 5.05/stmtE: `10,000 been placed in Account B alone, total interest for the year would have been …`
+  MATH 5.05/explA: `6,500 was placed in Account A.**  (false)  This claim gives an amount for the 4% account. The solved…`
+  … +286 more

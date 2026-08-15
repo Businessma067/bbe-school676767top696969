@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.3",
+  "title": "The Rise and Fall of the Classical Gold Standard",
+  "passage": "(1) For much of the late nineteenth and early twentieth centuries, the majority of the world's major economies operated under a monetary arrangement known as the classical gold standard, in which a country's currency was directly convertible into a fixed quantity of gold at a legally defined rate. Britain formally adopted the system in 1821, fixing the pound sterling at a rate of approximately 3.89 pounds per fine ounce of gold, a rate that would remain essentially unchanged for over a century. Other major powers followed at varying intervals: Germany adopted gold convertibility in 1871 following its unification and the receipt of French war reparations, while the United States, despite earlier bimetallic experiments, did not formally commit to a gold standard in law until the Gold Standard Act of 1900.\n\n(2) Under this system, the core promise made to citizens and foreign governments alike was that paper currency and bank deposits could, in principle, be exchanged for physical gold on demand at the fixed rate. This convertibility was intended to impose automatic discipline on national monetary policy: if a country ran a persistent trade deficit, gold would flow out to pay foreign creditors, its domestic money supply would contract, prices would fall, and its exports would eventually become cheaper and more competitive again, restoring balance without any deliberate policy intervention. Economists later termed this selfcorrecting mechanism the \"price-specie flow mechanism,\" and it was often cited as one of the standard's principal theoretical virtues.\n\n(3) In practice, however, the system's stability during its so-called golden age, roughly 1870 to 1914, depended heavily on factors beyond the automatic mechanism itself. London functioned as the unquestioned financial center of the system, and the Bank of England's discount rate served as a coordinating signal that other central banks frequently followed, lending the network a degree of cooperative stability that the theoretical model alone did not guarantee. Estimates suggest that global gold production roughly tripled between 1890 and 1914, driven substantially by major discoveries in South Africa's Witwatersrand basin, which alone was estimated to account for close to 40% of total world gold output by the early 1900s, easing what might otherwise have been a persistently deflationary bias in a system reliant on a fixed physical commodity.\n\n(4) The outbreak of the First World War in 1914 effectively suspended the classical gold standard, as belligerent governments abandoned convertibility in order to finance enormous wartime expenditures through the printing of paper currency rather than through gold-backed borrowing alone. Britain's wartime spending, for instance, rose to a figure estimated at roughly ten times its pre-war annual government expenditure by 1918, a scale of financing that would have been effectively impossible to sustain while maintaining strict gold convertibility throughout.\n\n(5) Following the war, several countries attempted to restore a version of the system, an effort historians now generally refer to as the \"gold exchange standard\" of the 1920s. Britain famously returned to the gold standard in 1925 at the pre-war parity of 3.89 pounds per ounce, a decision championed by then- Chancellor of the Exchequer Winston Churchill on the advice of Bank of England officials, despite wartime inflation having left British prices roughly 10% higher, relative to America's, than the old fixed rate could comfortably support. Critics, most famously the economist John Maynard Keynes, argued at the time that this restoration at an overvalued rate would force painful wage and price deflation onto the British economy simply to remain competitive, a prediction many economic historians now regard as substantially vindicated by Britain's subdued growth and elevated unemployment throughout the remainder of the 1920s.\n\n(6) The interwar gold exchange standard proved considerably more fragile than its prewar predecessor. Unlike the classical system, in which only Britain held gold reserves at the system's core, the interwar arrangement allowed multiple countries to hold not only gold itself but also foreign currencies, chiefly pounds sterling and US dollars, as reserve backing for their own currencies. This layering of promises meant that a loss of confidence in sterling or the dollar could, in principle, trigger a cascading crisis of convertibility across many countries simultaneously, a vulnerability the classical system had not shared to nearly the same degree.\n\n(7) That vulnerability was realised in dramatic fashion during the early 1930s. Following a wave of banking crises across Central Europe in 1931, Britain abandoned the gold standard permanently in September of that year, and the pound's value fell by approximately 25% against gold-backed currencies within a matter of months. The United States held on longer, but in 1933 President Franklin Roosevelt suspended domestic gold convertibility and, through the Gold Reserve Act of 1934, devalued the dollar from $20.67 to $35.00 per ounce of gold, an adjustment of roughly 69%, in an explicit effort to raise domestic price levels and combat the deflationary pressures of the Great Depression.\n\n(8) By 1936, when France, the last major holdout, also abandoned gold convertibility, the classical gold standard era was, in every meaningful sense, over. Historians remain divided as to whether the system's collapse should be understood primarily as a consequence of the First World War's disruption of underlying economic fundamentals, or as evidence that the gold standard itself, once shorn of the informal cooperative arrangements that had quietly sustained it before 1914, was never truly capable of self-correction under the stress of a major global economic shock.",
+  "tasks": [
+    {
+      "id": "en-t-3-01",
+      "exam_title": "Paragraphs 1–3",
+      "kind": "reading",
+      "statements": [
+        "Britain fixed the pound at approximately 3.89 pounds per ounce of gold beginning in 1821.",
+        "The United States formally committed to a gold standard in law before Germany did.",
+        "The price-specie flow mechanism describes automatic self-correction of trade imbalances without deliberate policy intervention.",
+        "If global gold production was approximately 5 million ounces in 1890, tripling by 1914 would put 1914 production at approximately 15 million ounces.",
+        "The Witwatersrand basin is described as accounting for close to 40% of world gold output by the early 1900s."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Britain fixed the pound at approximately 3.89 pounds per ounce of gold beginning in 1821.**\n\nParagraph (1) says Britain formally adopted the classical gold standard in 1821 and fixed the pound sterling at approximately 3.89 pounds per fine ounce of gold. The statement copies that date-and-rate pair without changing either figure.\n\n**Tip:** Pair the year with the rate in the same sentence — isolated numbers are easier to swap under exam pressure.\n\nThe 1821 adoption and ~3.89 rate match paragraph (1) exactly, so the claim is **true**.",
+        "**B) The United States formally committed to a gold standard in law before Germany did.**\n\nParagraph (1) puts Germany on gold convertibility in 1871 after unification and French reparations, while the United States did not formally commit in law until the Gold Standard Act of 1900. That is nearly three decades later, not earlier.\n\n**Trap:** \"Before Germany\" flips the chronology; the passage's order is Germany first, US last among the named powers.\n\nThe statement reverses the 1871 / 1900 sequence, so it is **false** — Germany adopted gold convertibility decades before the US Gold Standard Act.",
+        "**C) The price-specie flow mechanism describes automatic self-correction of trade imbalances without deliberate policy intervention.**\n\nParagraph (2) walks through deficit → gold outflow → tighter money → lower prices → more competitive exports, restoring balance \"without any deliberate policy intervention.\" Economists later named that automatic loop the \"price-specie flow mechanism.\"\n\nThe name and the no-intervention self-correction match the passage, so the statement is **true**.",
+        "**D) If global gold production was approximately 5 million ounces in 1890, tripling by 1914 would put 1914 production at approximately 15 million ounces.**\n\nParagraph (3) says global gold production \"roughly tripled\" between 1890 and 1914. Tripling multiplies by three, so a hypothetical 5 million ounces in 1890 becomes about 15 million in 1914. The arithmetic applies the passage's multiple correctly.\n\n**Tip:** \"Tripled\" means ×3 of the starting level, not +3% or +300% of growth language.\n\nThe 5 → 15 million application of \"roughly tripled\" is sound, so the claim is **true**.",
+        "**E) The Witwatersrand basin is described as accounting for close to 40% of world gold output by the early 1900s.**\n\nParagraph (3) credits major discoveries in South Africa's Witwatersrand basin and states that the basin alone was estimated to account for \"close to 40% of total world gold output by the early 1900s.\" The statement restates that share and dating.\n\nThe ~40% early-1900s Witwatersrand figure is exactly what the passage gives, so the claim is **true**."
+      ],
+      "highlights": [
+        "Britain formally adopted the system in 1821, fixing the pound sterling at a rate of approximately 3.89 pounds per fine ounce of gold",
+        "did not formally commit to a gold standard in law until the Gold Standard Act of 1900",
+        "Economists later termed this selfcorrecting mechanism the \"price-specie flow mechanism,\"",
+        "global gold production roughly tripled between 1890 and 1914",
+        "close to 40% of total world gold output by the early 1900s"
+      ]
+    },
+    {
+      "id": "en-t-3-02",
+      "exam_title": "Paragraphs 4–6",
+      "kind": "reading",
+      "statements": [
+        "Britain's wartime spending by 1918 rose to roughly ten times its pre-war annual government expenditure.",
+        "Britain returned to gold in 1925 at a rate lower than its pre-war parity.",
+        "If Britain's pre-war annual government expenditure was £200 million, ten times that figure would be £1.8 billion.",
+        "Keynes argued that Britain's 1925 return to gold at the old rate would force deflation to remain competitive.",
+        "The interwar gold exchange standard allowed only gold, not foreign currencies, to serve as reserves."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Britain's wartime spending by 1918 rose to roughly ten times its pre-war annual government expenditure.**\n\nParagraph (4) says Britain's wartime spending rose to a figure estimated at \"roughly ten times its pre-war annual government expenditure by 1918.\" The multiple and the year line up with the statement.\n\nThe ~10× wartime spending claim matches paragraph (4), so it is **true**.",
+        "**B) Britain returned to gold in 1925 at a rate lower than its pre-war parity.**\n\nParagraph (5) is explicit: Britain returned in 1925 \"at the pre-war parity of 3.89 pounds per ounce,\" the same old rate, not a cheaper one. The pain came from restoring that parity while wartime inflation had left British prices ~10% higher relative to America.\n\n**Trap:** \"Lower than pre-war parity\" invents a devaluation; the passage's point is an overvalued return to the old peg.\n\nBritain restored the identical 3.89 parity, so \"lower rate\" is **false** — the text says pre-war parity, not a reduced one.",
+        "**C) If Britain's pre-war annual government expenditure was £200 million, ten times that figure would be £1.8 billion.**\n\nParagraph (4) supplies the \"roughly ten times\" multiple. Ten times £200 million is £2,000 million — £2 billion — not £1.8 billion. The statement misapplies simple multiplication to a plausible-looking answer.\n\n**Trap:** £1.8 billion is a near-miss distractor; 10 × 200 million is 2,000 million.\n\nThe arithmetic is wrong (10 × £200m = £2bn, not £1.8bn), so the claim is **false**.",
+        "**D) Keynes argued that Britain's 1925 return to gold at the old rate would force deflation to remain competitive.**\n\nParagraph (5) records Keynes arguing that restoration at an overvalued rate would \"force painful wage and price deflation onto the British economy simply to remain competitive.\" That is the same critique the statement summarizes.\n\nKeynes's deflation prediction matches the passage, so the statement is **true**.",
+        "**E) The interwar gold exchange standard allowed only gold, not foreign currencies, to serve as reserves.**\n\nParagraph (6) says the interwar arrangement let countries hold \"not only gold itself but also foreign currencies, chiefly pounds sterling and US dollars,\" as reserve backing. \"Only gold\" is the opposite of that layered design.\n\n**Trap:** Classical-system gold-only habits get wrongly pasted onto the interwar \"gold exchange\" rules.\n\nThe passage allows sterling and dollars as reserves alongside gold, so \"only gold\" is **false**."
+      ],
+      "highlights": [
+        "Britain's wartime spending, for instance, rose to a figure estimated at roughly ten times its pre-war annual government expenditure by 1918",
+        "Britain famously returned to the gold standard in 1925 at the pre-war parity of 3.89 pounds per ounce",
+        "roughly ten times its pre-war annual government expenditure by 1918",
+        "this restoration at an overvalued rate would force painful wage and price deflation onto the British economy simply to remain competitive",
+        "hold not only gold itself but also foreign currencies, chiefly pounds sterling and US dollars"
+      ]
+    },
+    {
+      "id": "en-t-3-03",
+      "exam_title": "Paragraphs 7–8",
+      "kind": "reading",
+      "statements": [
+        "The pound fell by approximately 25% against gold-backed currencies after Britain left gold in 1931.",
+        "The dollar was devalued from $20.67 to $35.00 per ounce, an adjustment of roughly 69%.",
+        "If the devaluation had instead been exactly 50%, the new gold price from $20.67 would be approximately $31.00.",
+        "France was the first major country to abandon gold convertibility in the 1930s.",
+        "Historians are described as being in full agreement that the war alone caused the gold standard's collapse."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The pound fell by approximately 25% against gold-backed currencies after Britain left gold in 1931.**\n\nParagraph (7) says that after Britain abandoned gold in September 1931, \"the pound's value fell by approximately 25% against gold-backed currencies within a matter of months.\" The percentage and the aftermath timing match.\n\nThe ~25% post-exit decline is stated outright, so the claim is **true**.",
+        "**B) The dollar was devalued from $20.67 to $35.00 per ounce, an adjustment of roughly 69%.**\n\nParagraph (7) gives both endpoints — $20.67 to $35.00 under the Gold Reserve Act of 1934 — and calls the move \"an adjustment of roughly 69%.\" Checking the math: (35 − 20.67) / 20.67 ≈ 69.3%, which agrees with the text's approximate figure.\n\nThe stated prices and ~69% adjustment match the passage, so the statement is **true**.",
+        "**C) If the devaluation had instead been exactly 50%, the new gold price from $20.67 would be approximately $31.00.**\n\nUsing the passage's old price of $20.67, a hypothetical 50% rise is 20.67 × 1.5 ≈ 31.005, which rounds to about $31.00. The item only asks whether that alternative arithmetic is correct, not whether 50% was the real 1934 change.\n\n**Tip:** Separate the passage's actual ~69% move from the exam's \"what if 50%\" calculation.\n\nThe 50% hypothetical from $20.67 correctly lands near $31, so the claim is **true**.",
+        "**D) France was the first major country to abandon gold convertibility in the 1930s.**\n\nParagraph (8) calls France \"the last major holdout,\" abandoning gold convertibility in 1936. Britain had already left permanently in 1931, and the US suspended domestic convertibility in 1933 — both before France.\n\n**Trap:** \"First\" swaps France's landmark end-date for the wrong rank in the exit sequence.\n\nFrance was the last major holdout in 1936, not the first, so the statement is **false**.",
+        "**E) Historians are described as being in full agreement that the war alone caused the gold standard's collapse.**\n\nParagraph (8) says historians \"remain divided\" over whether collapse mainly followed World War I's disruption of fundamentals or showed that gold, without pre-1914 cooperative props, could not self-correct under a major shock. \"Full agreement\" and \"the war alone\" both overstate what the text allows.\n\nThe passage stresses division, not consensus, so the claim is **false** — historians remain divided, not united behind a war-only story."
+      ],
+      "highlights": [
+        "the pound's value fell by approximately 25% against gold-backed currencies within a matter of months",
+        "devalued the dollar from $20.67 to $35.00 per ounce of gold, an adjustment of roughly 69%",
+        "devalued the dollar from $20.67 to $35.00 per ounce of gold",
+        "when France, the last major holdout, also abandoned gold convertibility",
+        "Historians remain divided as to whether the system's collapse should be understood"
+      ]
+    },
+    {
+      "id": "en-t-3-04",
+      "exam_title": "Percentage & Chronology Traps",
+      "kind": "reading",
+      "statements": [
+        "Global gold production roughly tripled between 1890 and 1914, meaning it grew by approximately 300%.",
+        "The Gold Standard Act, formally committing the US to gold in law, was passed before Germany adopted gold convertibility in 1871.",
+        "If Britain's prices were 10% higher than America's relative to the old fixed rate, a good priced at $100 in America would need to sell at $90 in Britain to match that gap.",
+        "Britain abandoned the gold standard permanently in 1931, several years after the US suspended domestic gold convertibility in 1933.",
+        "The Bank of England's discount rate served as a coordinating signal that other central banks frequently followed during the system's golden age."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Global gold production roughly tripled between 1890 and 1914, meaning it grew by approximately 300%.**\n\nParagraph (3) does say production \"roughly tripled,\" but tripling means the new level is 300% of the old level — an increase of 200%, not growth \"by approximately 300%.\" The statement confuses a multiple with a percentage-increase label.\n\n**Trap:** \"Tripled\" ≠ \"+300% growth\"; a 100 → 300 move is +200%.\n\nThe multiple is right but the +300% gloss is wrong, so the claim is **false**.",
+        "**B) The Gold Standard Act, formally committing the US to gold in law, was passed before Germany adopted gold convertibility in 1871.**\n\nParagraph (1) dates German convertibility to 1871 and the US Gold Standard Act to 1900. The US law came decades after Germany's adoption, not before it.\n\nThe chronology is reversed (1871 Germany, 1900 US Act), so the statement is **false**.",
+        "**C) If Britain's prices were 10% higher than America's relative to the old fixed rate, a good priced at $100 in America would need to sell at $90 in Britain to match that gap.**\n\nParagraph (5) says wartime inflation left British prices \"roughly 10% higher, relative to America's,\" than the old fixed rate could support. A 10% higher British price level maps a $100 US good to about $110 in Britain, not $90. The statement flips the direction of the gap.\n\n**Trap:** Higher British prices mean a higher UK sticker, not a $90 discount.\n\nThe 10% premium points to ~$110, not $90, so the claim is **false**.",
+        "**D) Britain abandoned the gold standard permanently in 1931, several years after the US suspended domestic gold convertibility in 1933.**\n\nParagraph (7) places Britain's permanent exit in September 1931 and the US suspension in 1933 — Britain left first, then the United States \"held on longer.\" \"Several years after\" reverses that order.\n\n**Trap:** The true years (1931 / 1933) are kept, but \"after\" wrongly stacks Britain behind the US.\n\nBritain left in 1931, two years before the US move in 1933, so \"after\" makes the statement **false**.",
+        "**E) The Bank of England's discount rate served as a coordinating signal that other central banks frequently followed during the system's golden age.**\n\nParagraph (3) says that in the ~1870–1914 golden age, London was the financial center and \"the Bank of England's discount rate served as a coordinating signal that other central banks frequently followed.\" The statement restates that coordination role.\n\nThe discount-rate signal is exactly what paragraph (3) describes, so the claim is **true**."
+      ],
+      "highlights": [
+        "global gold production roughly tripled between 1890 and 1914",
+        "did not formally commit to a gold standard in law until the Gold Standard Act of 1900",
+        "British prices roughly 10% higher, relative to America's",
+        "in 1931, Britain abandoned the gold standard permanently in September of that year",
+        "the Bank of England's discount rate served as a coordinating signal that other central banks frequently followed"
+      ]
+    },
+    {
+      "id": "en-t-3-05",
+      "exam_title": "Rate, Date & Magnitude Traps",
+      "kind": "reading",
+      "statements": [
+        "The pound's decline of approximately 25% against gold-backed currencies occurred within months of Britain's September 1931 departure from gold.",
+        "If the pound had instead fallen by exactly one third against gold-backed currencies, this would represent a larger decline than the 25% actually recorded.",
+        "The Witwatersrand basin's roughly 40% share of world gold output was reached by the early 1930s, shortly before Britain left gold.",
+        "France abandoned gold convertibility in 1936, the same year the classical gold standard era is described as having definitively ended.",
+        "The dollar's devaluation under the Gold Reserve Act represented a rise in the gold price of exactly $14.33 per ounce."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The pound's decline of approximately 25% against gold-backed currencies occurred within months of Britain's September 1931 departure from gold.**\n\nParagraph (7) ties the September 1931 permanent exit to a fall of \"approximately 25% against gold-backed currencies within a matter of months.\" Timing, size, and comparison basket all match the statement.\n\nThe ~25% decline within months of the September exit is what the passage reports, so the claim is **true**.",
+        "**B) If the pound had instead fallen by exactly one third against gold-backed currencies, this would represent a larger decline than the 25% actually recorded.**\n\nOne third is about 33.3%, which is larger than the passage's recorded ~25%. The item only compares a hypothetical one-third drop with the actual approximate figure; it does not rewrite the historical percentage.\n\n**Tip:** Keep the passage's 25% as the baseline; then ask whether ⅓ > 25%.\n\nA one-third fall is numerically larger than 25%, so the comparison is **true**.",
+        "**C) The Witwatersrand basin's roughly 40% share of world gold output was reached by the early 1930s, shortly before Britain left gold.**\n\nParagraph (3) dates the Witwatersrand's \"close to 40%\" share to \"the early 1900s,\" not the early 1930s. Sliding the statistic forward three decades toward Britain's 1931 exit invents a false chronological link.\n\n**Trap:** Early 1900s ≠ early 1930s; the later decade appears elsewhere and invites the swap.\n\nThe ~40% share is early 1900s in the text, so \"early 1930s\" makes the claim **false**.",
+        "**D) France abandoned gold convertibility in 1936, the same year the classical gold standard era is described as having definitively ended.**\n\nParagraph (8) opens: \"By 1936, when France, the last major holdout, also abandoned gold convertibility, the classical gold standard era was, in every meaningful sense, over.\" France's 1936 exit and the era's end are the same narrative beat.\n\nThe passage yokes 1936 France with the definitive end of the classical era, so the statement is **true**.",
+        "**E) The dollar's devaluation under the Gold Reserve Act represented a rise in the gold price of exactly $14.33 per ounce.**\n\nParagraph (7) moves the dollar gold price from $20.67 to $35.00. Subtract: 35.00 − 20.67 = 14.33. The statement's \"exactly $14.33\" is the correct arithmetic difference between those stated prices.\n\n$35.00 − $20.67 = $14.33, so the magnitude claim is **true**."
+      ],
+      "highlights": [
+        "abandoned the gold standard permanently in September of that year, and the pound's value fell by approximately 25%",
+        "approximately 25% against gold-backed currencies",
+        "close to 40% of total world gold output by the early 1900s",
+        "By 1936, when France, the last major holdout, also abandoned gold convertibility",
+        "devalued the dollar from $20.67 to $35.00 per ounce of gold"
+      ]
+    },
+    {
+      "id": "en-t-3-06",
+      "exam_title": "Grammar Rules (New Sentences, Anchored in Gold Standard Vocabulary)",
+      "kind": "grammar",
+      "statements": [
+        "\"Had Britain not returned to gold at the pre-war parity, Keynes's predicted deflation might have been avoided.\"",
+        "\"The committee insisted that convertibility is restored before the end of the year.\"",
+        "\"The number of countries abandoning gold convertibility continue to rise throughout the 1930s.\"",
+        "\"Neither the Bank of England nor other central banks were fully able to prevent the crisis.\"",
+        "\"Having suspended convertibility, the currency's value was immediately devalued by the government.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Had Britain not returned to gold at the pre-war parity, Keynes's predicted deflation might have been avoided.\"**\n\nThis is a well-formed third conditional with subject–auxiliary inversion: Had + subject + past participle in the if-clause, and a modal perfect (\"might have been avoided\") in the result clause. No auxiliary is missing, and the participle/modal pairing fits a counterfactual past.\n\nInverted Had + past participle with modal perfect is the standard third-conditional pattern, so the sentence is **true**.",
+        "**B) \"The committee insisted that convertibility is restored before the end of the year.\"**\n\nAfter insist + that, formal exam English wants the mandative subjunctive — base form \"be,\" not indicative \"is.\" Repair to \"The committee insisted that convertibility be restored before the end of the year.\"\n\n**Trap:** \"Is restored\" looks like an ordinary present after that-clause verbs that actually demand the bare subjunctive.\n\nInsist that requires the base subjunctive, so the line is **false** — \"…that convertibility be restored….\"",
+        "**C) \"The number of countries abandoning gold convertibility continue to rise throughout the 1930s.\"**\n\n\"The number of\" is a singular subject, so the verb must be singular: \"continues,\" not \"continue.\" Repair to \"The number of countries abandoning gold convertibility continues to rise throughout the 1930s.\"\n\n**Trap:** The nearby plural \"countries\" tempts agreement with the wrong noun.\n\nSubject–verb agreement fails with \"the number… continue,\" so this is **false** — use \"continues.\"",
+        "**D) \"Neither the Bank of England nor other central banks were fully able to prevent the crisis.\"**\n\nWith neither…nor, the verb agrees with the nearer subject. Here \"other central banks\" is plural, so \"were\" is the right choice. The correlative structure is clean and the agreement rule is applied correctly.\n\nNearest-subject agreement with plural \"central banks\" justifies \"were,\" so the sentence is **true**.",
+        "**E) \"Having suspended convertibility, the currency's value was immediately devalued by the government.\"**\n\nThe opening participle \"Having suspended convertibility\" must modify the subject that did the suspending. As written, the subject is \"the currency's value,\" which cannot suspend convertibility — a classic dangling modifier. Repair by making the government the subject: \"Having suspended convertibility, the government immediately devalued the currency.\"\n\n**Trap:** A passive main clause after an active participle often leaves the agent orphaned.\n\nThe dangling participle attaches the wrong actor, so the line is **false** — restore a human/institutional subject for the -ing phrase."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-3-07",
+      "exam_title": "Grammar Rules II (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"No sooner had the pound fallen than confidence in sterling began to weaken further.\"",
+        "\"The Bank of England, along with several allied institutions, were coordinating discount rates.\"",
+        "\"Each of the major powers have committed to a fixed gold rate by 1900.\"",
+        "\"By the time France abandoned gold in 1936, the classical system will have already collapsed.\"",
+        "\"The reserves, which were held partly in foreign currencies, exposed the system to cascading crises.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"No sooner had the pound fallen than confidence in sterling began to weaken further.\"**\n\n\"No sooner…than\" correctly triggers inversion: auxiliary Had + subject + past participle, then than + a simple-past follow-on. The sequence (fall, then further weakening) sits in the expected past-perfect → past-simple frame.\n\nNo sooner + inversion + than is formed correctly here, so the sentence is **true**.",
+        "**B) \"The Bank of England, along with several allied institutions, were coordinating discount rates.\"**\n\n\"Along with several allied institutions\" is a parenthetical add-on; the grammatical subject remains singular \"The Bank of England,\" so the verb should be \"was coordinating,\" not \"were.\" Repair: \"The Bank of England, along with several allied institutions, was coordinating discount rates.\"\n\n**Trap:** Material after along with/as well as does not make a plural subject.\n\nSingular Bank of England needs \"was,\" so \"were\" makes the line **false**.",
+        "**C) \"Each of the major powers have committed to a fixed gold rate by 1900.\"**\n\n\"Each of\" takes a singular verb even when a plural noun follows. Prefer \"has committed,\" not \"have.\" Repair: \"Each of the major powers has committed to a fixed gold rate by 1900.\"\n\n**Trap:** \"Powers\" looks plural, but each of still governs singular agreement.\n\nEach of + have breaks singular agreement, so the sentence is **false** — \"has committed.\"",
+        "**D) \"By the time France abandoned gold in 1936, the classical system will have already collapsed.\"**\n\n\"By the time France abandoned…\" anchors a past viewpoint, so the main clause needs past perfect (\"had already collapsed\"), not future perfect (\"will have already collapsed\"). Future perfect belongs with a still-ahead deadline, not a finished 1936 narrative.\n\n**Trap:** \"By the time\" can tempt will have even when the time clause is already past.\n\nA past by-the-time frame rejects will have, so this is **false** — \"…the classical system had already collapsed.\"",
+        "**E) \"The reserves, which were held partly in foreign currencies, exposed the system to cascading crises.\"**\n\nThe non-restrictive which-clause correctly modifies plural \"reserves,\" and \"were held\" agrees with that plural noun. The main verb \"exposed\" also matches the plural subject. Relative-clause agreement and punctuation are in order.\n\nPlural reserves + \"which were held\" agree cleanly, so the sentence is **true**."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-3-08",
+      "exam_title": "Grammar Rules III (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"Historians remain divided as to whether the collapse resulted primarily from wartime disruption.\"",
+        "\"Despite of the theoretical self-correcting mechanism, the system depended on informal cooperation.\"",
+        "\"Whoever restores convertibility at an overvalued rate risks forcing painful deflation on the economy.\"",
+        "\"Churchill denied having fully considered the deflationary consequences of the decision.\"",
+        "\"There is several factors that explain the system's stability before 1914.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Historians remain divided as to whether the collapse resulted primarily from wartime disruption.\"**\n\n\"Remain divided as to whether…\" correctly introduces an embedded yes/no question after as to. Tense and subject–verb agreement are fine, and whether (not if) is a natural choice after a prepositional as to.\n\nThe as to whether structure is well formed, so the sentence is **true**.",
+        "**B) \"Despite of the theoretical self-correcting mechanism, the system depended on informal cooperation.\"**\n\nDespite never takes of; that of belongs with in spite of. Repair to \"Despite the theoretical self-correcting mechanism…\" or \"In spite of the theoretical self-correcting mechanism….\"\n\n**Trap:** Despite / in spite of get blended into the ungrammatical \"despite of.\"\n\n\"Despite of\" is not standard English, so the line is **false** — drop of or switch to in spite of.",
+        "**C) \"Whoever restores convertibility at an overvalued rate risks forcing painful deflation on the economy.\"**\n\nWhoever correctly heads a subject noun clause, and the main verb \"risks\" agrees with that singular -ever subject. \"Risks forcing\" (risk + -ing) is the expected pattern after risk.\n\nWhoever + singular risks + -ing is grammatical, so the sentence is **true**.",
+        "**D) \"Churchill denied having fully considered the deflationary consequences of the decision.\"**\n\nAfter deny, a perfect gerund (\"having fully considered\") correctly marks an earlier completed action the speaker rejects. Word order and aspect are appropriate for denying a prior consideration.\n\nDenied + perfect gerund is the right pattern here, so the wording is **true**.",
+        "**E) \"There is several factors that explain the system's stability before 1914.\"**\n\nExistential there must agree with the notional subject that follows. \"Several factors\" is plural, so the verb must be \"are,\" not \"is.\" Repair: \"There are several factors that explain the system's stability before 1914.\"\n\n**Trap:** There is feels default until the plural noun after it is noticed.\n\nPlural factors need There are, so \"There is several\" is **false**."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-3-09",
+      "exam_title": "Vocabulary & Collocation in New Context",
+      "kind": "vocabulary",
+      "statements": [
+        "\"The mechanism was described as self-correcting, requiring constant deliberate government intervention to function.\"",
+        "\"Analysts describe Britain's 1925 return to gold as vindicated by subsequent economic difficulties.\"",
+        "\"The gold discoveries eased what might otherwise have been a persistently deflationary bias in the system.\"",
+        "\"The interwar arrangement was considerably more fragile than its prewar predecessor, collapsing rapidly under stress.\"",
+        "\"The pound's decline was confined to a single trading session, lasting only a few hours in total.\""
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"The mechanism was described as self-correcting, requiring constant deliberate government intervention to function.\"**\n\nIn paragraph (2), the self-correcting price-specie flow restores balance \"without any deliberate policy intervention.\" Pairing \"self-correcting\" with \"constant deliberate government intervention\" contradicts the passage sense of the term.\n\n**Trap:** Self-correcting sounds technical enough to hide an antonym paraphrase.\n\nSelf-correcting means no deliberate intervention, so the sentence's meaning is **false** against the text.",
+        "**B) \"Analysts describe Britain's 1925 return to gold as vindicated by subsequent economic difficulties.\"**\n\nParagraph (5) says many historians regard Keynes's prediction as \"substantially vindicated\" by Britain's subdued growth and elevated unemployment after the overvalued 1925 return. Here \"vindicated\" keeps that confirmed-by-later-outcomes sense tied to those difficulties.\n\n**Tip:** Vindicated = later evidence bore the claim out — not \"justified as wise policy.\"\n\nThe passage-backed use of vindicated fits, so the wording is **true**.",
+        "**C) \"The gold discoveries eased what might otherwise have been a persistently deflationary bias in the system.\"**\n\nParagraph (3) says the Witwatersrand-driven production surge was \"easing what might otherwise have been a persistently deflationary bias in a system reliant on a fixed physical commodity.\" The sentence restates that easing role with the same collocates.\n\nThe eased / persistently deflationary bias wording matches the passage, so the claim is **true**.",
+        "**D) \"The interwar arrangement was considerably more fragile than its prewar predecessor, collapsing rapidly under stress.\"**\n\nParagraph (6) opens by saying the interwar gold exchange standard \"proved considerably more fragile than its prewar predecessor,\" and later paragraphs show that fragility under 1930s stress. \"Considerably more fragile\" is the passage's own comparison.\n\nThe fragility contrast is passage-true, so the statement is **true**.",
+        "**E) \"The pound's decline was confined to a single trading session, lasting only a few hours in total.\"**\n\nParagraph (7) places the ~25% fall \"within a matter of months,\" not inside one session of a few hours. The sentence invents an ultra-short collapse the text never describes.\n\n**Trap:** Months → hours shrinks the timeline without any supporting span.\n\nThe passage times the decline in months, so the few-hours version is **false**."
+      ],
+      "highlights": [
+        "restoring balance without any deliberate policy intervention",
+        "a prediction many economic historians now regard as substantially vindicated by Britain's subdued growth and elevated unemployment",
+        "easing what might otherwise have been a persistently deflationary bias",
+        "The interwar gold exchange standard proved considerably more fragile than its prewar predecessor",
+        "the pound's value fell by approximately 25% against gold-backed currencies within a matter of months"
+      ]
+    },
+    {
+      "id": "en-t-3-10",
+      "exam_title": "Vocabulary & Collocation II (New Context)",
+      "kind": "vocabulary",
+      "statements": [
+        "\"The devaluation was an explicit effort to raise domestic price levels and combat deflationary pressures.\"",
+        "\"The system's golden age depended heavily on cooperative arrangements beyond the automatic mechanism alone.\"",
+        "\"A cascading crisis of convertibility means that confidence problems remained isolated to a single country.\"",
+        "\"The layering of reserve promises across multiple currencies increased, rather than reduced, systemic vulnerability.\"",
+        "\"Britain's wartime spending is described as having stayed roughly level with pre-war annual expenditure.\""
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"The devaluation was an explicit effort to raise domestic price levels and combat deflationary pressures.\"**\n\nParagraph (7) describes Roosevelt's gold move as made \"in an explicit effort to raise domestic price levels and combat the deflationary pressures of the Great Depression.\" The sentence's purpose language tracks that phrasing.\n\nThe raise-prices / fight-deflation purpose matches the passage, so the wording is **true**.",
+        "**B) \"The system's golden age depended heavily on cooperative arrangements beyond the automatic mechanism alone.\"**\n\nParagraph (3) stresses that golden-age stability \"depended heavily on factors beyond the automatic mechanism itself,\" including London's role and cooperative following of the Bank of England's discount rate. Paragraph (8) later names the \"informal cooperative arrangements\" that had sustained the system before 1914.\n\nCooperation beyond the automatic model is exactly the passage's caveat, so the claim is **true**.",
+        "**C) \"A cascading crisis of convertibility means that confidence problems remained isolated to a single country.\"**\n\nParagraph (6) says a loss of confidence in sterling or the dollar could \"trigger a cascading crisis of convertibility across many countries simultaneously.\" Cascading means spread, not isolation — the sentence invents the opposite definition.\n\n**Trap:** Cascading sounds dramatic but always implies multi-link spillover, not containment.\n\nCascading crisis = multi-country spillover, so \"isolated to a single country\" is **false**.",
+        "**D) \"The layering of reserve promises across multiple currencies increased, rather than reduced, systemic vulnerability.\"**\n\nParagraph (6) explains that holding gold plus foreign currencies as reserves meant confidence loss could cascade across many countries — \"a vulnerability the classical system had not shared to nearly the same degree.\" Layering promises raised exposure; it did not dampen it.\n\nThe passage treats multi-currency layering as more vulnerable, so the statement is **true**.",
+        "**E) \"Britain's wartime spending is described as having stayed roughly level with pre-war annual expenditure.\"**\n\nParagraph (4) says wartime spending rose to \"roughly ten times\" pre-war annual government expenditure by 1918. \"Roughly level\" erases that massive multiple.\n\n**Trap:** Roughly softens the scale but cannot flip tenfold growth into flat spending.\n\nThe text says ~10×, not level, so the claim is **false**."
+      ],
+      "highlights": [
+        "in an explicit effort to raise domestic price levels and combat the deflationary pressures of the Great Depression",
+        "depended heavily on factors beyond the automatic mechanism itself",
+        "trigger a cascading crisis of convertibility across many countries simultaneously",
+        "This layering of promises meant that a loss of confidence in sterling or the dollar could, in principle, trigger a cascading crisis",
+        "rose to a figure estimated at roughly ten times its pre-war annual government expenditure by 1918"
+      ]
+    }
+  ]
+}

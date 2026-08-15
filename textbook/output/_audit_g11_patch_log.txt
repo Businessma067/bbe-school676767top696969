@@ -1,0 +1,32 @@
+APPLIED:
+en-g-11-01 E: patched
+en-g-11-02 D: patched
+en-g-11-03 D: patched
+en-g-11-03 E: patched
+en-g-11-04 D: patched
+en-g-11-04 E: patched
+en-g-11-06 A: patched
+en-g-11-07 D: patched
+en-g-11-08 A: patched
+en-g-11-08 C: patched
+en-g-11-09 A: patched
+en-g-11-09 C: patched
+en-g-11-09 E: patched
+en-g-11-11 C: patched
+en-g-11-14 C: patched
+en-g-11-14 D: patched
+en-g-11-15 C: patched
+en-g-11-15 E: patched
+en-g-11-16 A: patched
+en-g-11-16 E: patched
+en-g-11-18 B: patched
+en-g-11-18 C: patched
+en-g-11-19 D: patched
+en-g-11-19 E: patched
+en-g-11-20 D: patched
+en-g-11-20 E: patched
+
+REMAINING VERDICT ISSUES:
+(none)
+
+Patched count: 26

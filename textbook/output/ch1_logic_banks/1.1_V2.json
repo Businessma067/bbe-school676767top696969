@@ -1,0 +1,684 @@
+[
+  {
+    "id": "math-1-1",
+    "case_id": "MATH 1.01",
+    "title": "Basic operations on explicit sets",
+    "subsection": "1.1",
+    "context": "Let $A = \\{1, 2, 3, 4, 5\\}$, $B = \\{3, 4, 5, 6, 7\\}$, and $C = \\{5, 6, 7, 8, 9\\}$.",
+    "statements": [
+      "$A \\cap B = \\{3, 4, 5\\}$.",
+      "$A \\cup C = \\{1, 2, 3, 4, 5, 6, 7, 8\\}$.",
+      "$(A \\cap B) \\cap C = \\{5\\}$.",
+      "$A \\setminus C = \\{1, 2, 3\\}$.",
+      "B and C are disjoint sets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $A \\cap B = \\{3, 4, 5\\}$.**  (true)\n\nThe elements common to both A and B are 3, 4, and 5.",
+      "**B) $A \\cup C = \\{1, 2, 3, 4, 5, 6, 7, 8\\}$.**  (false)\n\nTrap: A contributes 1-5, C contributes 5-9, so together they cover every integer from 1 to 9 - the statement's set stops at 8 and wrongly omits 9, which C contributes.",
+      "**C) $(A \\cap B) \\cap C = \\{5\\}$.**  (true)\n\n$A \\cap B = \\{3,4,5\\}$; intersecting this with $C = \\{5,6,7,8,9\\}$ leaves only the common element 5.",
+      "**D) $A \\setminus C = \\{1, 2, 3\\}$.**  (false)\n\n$A \\setminus C$ removes from A any elements that are also in C. Only 5 is in both, so $A \\setminus C = \\{1,2,3,4\\}$ - the statement is missing the element 4.",
+      "**E) B and C are disjoint sets.**  (false)\n\nB and C share the elements 5, 6, and 7, so they are not disjoint (disjoint would require $B \\cap C = \\emptyset)$."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 1,
+    "solution_overview": "Let $A = \\{1, 2, 3, 4, 5\\}$, $B = \\{3, 4, 5, 6, 7\\}$, and $C = \\{5, 6, 7, 8, 9\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-2",
+    "case_id": "MATH 1.02",
+    "title": "Set-builder notation and equality of sets",
+    "subsection": "1.1",
+    "context": "Let $A = \\{x \\in Z : x^2 = 9\\} (Z =$ integers) and $B = \\{3, -3\\}$.",
+    "statements": [
+      "A = B. 2",
+      "$3 \\in A$.",
+      "$A = \\{3\\} ($only the positive root).",
+      "$\\lvert A \\rvert = 2$.",
+      "The set $C = \\{x \\in N : x^2 = 9\\} (N =$ natural numbers) is equal to $\\{3, -3\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) A = B. 2**  (true)\n\nBoth 3 and -3 satisfy x^2 = 9, and these are the only integer solutions, so $A = \\{3, -3\\} = B$.",
+      "**B) $3 \\in A$.**  (true)\n\n3^2 = 9, so 3 satisfies the defining condition and belongs to A.",
+      "**C) $A = \\{3\\} ($only the positive root).**  (false)\n\n-3 also satisfies (-3)^2 = 9 and is an integer, so it must be included in A as well; A has two elements, not one.",
+      "**D) $\\lvert A \\rvert = 2$.**  (true)\n\n$A = \\{3, -3\\}$ has exactly two distinct elements.",
+      "**E) The set $C = \\{x \\in N : x^2 = 9\\} (N =$ natural numbers) is equal to $\\{3, -3\\}$.**  (false)\n\nNatural numbers are non-negative, so -$3 \\notin N$ and is excluded from C. Only 3 qualifies, so $C = \\{3\\}$, not $\\{3, -3\\}$."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 2,
+    "solution_overview": "Let $A = \\{x \\in Z : x^2 = 9\\} (Z =$ integers) and $B = \\{3, -3\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-3",
+    "case_id": "MATH 1.03",
+    "title": "Subsets, elements, and the power set",
+    "subsection": "1.1",
+    "context": "Let $A = \\{a, b, c\\}$.",
+    "statements": [
+      "The power set of A has 8 elements.",
+      "$\\{a, b\\}$ is an element of A.",
+      "$\\emptyset$ is a subset of A.",
+      "A is a proper subset of A.",
+      "There are exactly 3 subsets of A that contain exactly 2 elements."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The power set of A has 8 elements.**  (true)\n\nA set with 3 elements has 2^3 = 8 subsets in total, so its power set contains 8 elements.",
+      "**B) $\\{a, b\\}$ is an element of A.**  (false)\n\nThe elements of A are a, b, and c individually. $\\{a,b\\}$ is a subset of A, not an element of A - confusing “element of” with “subset of” is a common mistake.",
+      "**C) $\\emptyset$ is a subset of A.**  (true)\n\nThe empty set is a subset of every set, including A.",
+      "**D) A is a proper subset of A.**  (false)\n\nA proper subset must be strictly smaller than the original set (not equal to it). Since A = A, A is not a proper subset of itself.",
+      "**E) There are exactly 3 subsets of A that contain exactly 2 elements.**  (true)\n\nThe 2-element subsets are $\\{a,b\\}$, $\\{a,c\\}$, and $\\{b,c\\}$ - exactly three of them."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 3,
+    "solution_overview": "Let $A = \\{a, b, c\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-4",
+    "case_id": "MATH 1.04",
+    "title": "Let",
+    "subsection": "1.1",
+    "context": "Let $D = \\{a, b, c\\}$.",
+    "statements": [
+      "$\\emptyset \\subseteq D$",
+      "$\\emptyset \\in D 3$",
+      "D has exactly 8 subsets",
+      "Both $\\{a\\} \\subseteq D$ and $\\{a\\} \\in D$ are true",
+      "$D \\subseteq D$"
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $\\emptyset \\subseteq D$**  (true)\n\nBy definition, the empty set is a subset of every set, since it has no elements that could violate the subset condition.",
+      "**B) $\\emptyset \\in D 3$**  (false)\n\nTrap: being a subset $(\\emptyset \\subseteq D)$ is different from being an element $(\\emptyset \\in D)$. D's elements are a, b, and c - the empty set is not one of them.",
+      "**C) D has exactly 8 subsets**  (true)\n\nA set with n elements has 2ⁿ subsets. Here n = 3, so D has 2^3 = 8 subsets: $\\emptyset$, $\\{a\\}$, $\\{b\\}$, $\\{c\\}$, $\\{a,b\\}$, $\\{a,c\\}$, $\\{b,c\\}$, $\\{a,b,c\\}$.",
+      "**D) Both $\\{a\\} \\subseteq D$ and $\\{a\\} \\in D$ are true**  (false)\n\nTrap: $\\{a\\} \\subseteq D$ is true (a is an element of D, so the set $\\{a\\}$ is contained in D), but $\\{a\\} \\in D$ is false - D's elements are a, b, c themselves, not the set $\\{a\\}$.",
+      "**E) $D \\subseteq D$**  (true)\n\nEvery set is a subset of itself, since every element of D is trivially an element of D."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 4,
+    "solution_overview": "Let $D = \\{a, b, c\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-5",
+    "case_id": "MATH 1.05",
+    "title": "Let  and",
+    "subsection": "1.1",
+    "context": "Let $E = \\{1, 3, 5, 7\\}$ and $F = \\{3, 4, 5, 6\\}$.",
+    "statements": [
+      "$E \\setminus F = \\{1, 7\\}$",
+      "$F \\setminus E = \\{4, 6\\}$",
+      "$E \\setminus F = F \\setminus E$",
+      "$(E \\setminus F) \\cup (F \\setminus E) = \\{1, 4, 6, 7\\}$",
+      "$(E \\setminus F) \\cap (F \\setminus E) = \\emptyset$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $E \\setminus F = \\{1, 7\\}$**  (true)\n\nRemoving from E every element also found in F (3 and 5) leaves $\\{1, 7\\}$.",
+      "**B) $F \\setminus E = \\{4, 6\\}$**  (true)\n\nRemoving from F every element also found in E (3 and 5) leaves $\\{4, 6\\}$.",
+      "**C) $E \\setminus F = F \\setminus E$**  (false)\n\nTrap: set difference is NOT commutative in general. $E \\setminus F = \\{1,7\\}$ while $F \\setminus E = \\{4,6\\}$ - these are different sets, so the equality fails.",
+      "**D) $(E \\setminus F) \\cup (F \\setminus E) = \\{1, 4, 6, 7\\}$**  (true)\n\nThe union of the two \"one-sided\" differences, $\\{1,7\\} \\cup \\{4,6\\} = \\{1,4,6,7\\}$, is exactly the symmetric difference E △ F: the elements belonging to exactly one of the two sets.",
+      "**E) $(E \\setminus F) \\cap (F \\setminus E) = \\emptyset$**  (true)\n\nBy construction, $E \\setminus F$ contains only elements outside F, and $F \\setminus E$ contains only elements outside E, so the two sets can never share an element - their intersection is always empty."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 5,
+    "solution_overview": "Let $E = \\{1, 3, 5, 7\\}$ and $F = \\{3, 4, 5, 6\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-6",
+    "case_id": "MATH 1.06",
+    "title": "Let , , and",
+    "subsection": "1.1",
+    "context": "Let $A = \\{2, 4, 6, 8, 10\\}$, $B = \\{3, 6, 9, 12\\}$, and $C = \\{1, 2, 3, 4, 5\\}$.",
+    "statements": [
+      "$A \\cap B = \\{6\\}$",
+      "$A \\cup B$ has 8 elements",
+      "$C \\setminus A = \\{1, 3\\}$",
+      "$B \\setminus C = \\{3, 6, 9, 12\\}$",
+      "$A \\cap C = \\{2, 4, 6\\}$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $A \\cap B = \\{6\\}$**  (true)\n\nThe only element common to both A and B is 6, so $A \\cap B = \\{6\\}$.",
+      "**B) $A \\cup B$ has 8 elements**  (true)\n\n$\\lvert A \\cup B \\rvert = \\lvert A \\rvert$ + $\\lvert B \\rvert$ - $\\lvert A \\cap B \\rvert = 5$ + 4 - 1 = 8. Listing them out: $\\{2,3,4,6,8,9,10,12\\}$ - indeed 8 elements.",
+      "**C) $C \\setminus A = \\{1, 3\\}$**  (false)\n\nTrap: $C \\setminus A$ removes from C every element that is also in A. Since 2 and 4 belong to A, they are removed - but 5 is NOT in A, so it must stay. The correct result is $C \\setminus A = \\{1, 3, 5\\}$, not $\\{1, 3\\}$ as stated; this version wrongly drops the surviving element 5.",
+      "**D) $B \\setminus C = \\{3, 6, 9, 12\\}$**  (false)\n\nThis is the classic trap: $B \\setminus C$ must remove every element of B that also lies in C. Since $3 \\in C$, it must be dropped. The correct result is $B \\setminus C = \\{6, 9, 12\\}$, not $\\{3, 6, 9, 12\\}$.",
+      "**E) $A \\cap C = \\{2, 4, 6\\}$**  (false)\n\nAnother trap: 6 belongs to A but NOT to C, so it cannot appear in $A \\cap C$. The correct intersection is $A \\cap C = \\{2, 4\\}$."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 6,
+    "solution_overview": "Let $A = \\{2, 4, 6, 8, 10\\}$, $B = \\{3, 6, 9, 12\\}$, and $C = \\{1, 2, 3, 4, 5\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-7",
+    "case_id": "MATH 1.07",
+    "title": "In a cohort of 50 students, 30 take Mathematics (set M) and 25 take Ec",
+    "subsection": "1.1",
+    "context": "In a cohort of 50 students, 30 take Mathematics (set M) and 25 take Economics (set E). The two courses share 12 common students, so $\\lvert M \\cap E \\rvert = 12$.",
+    "statements": [
+      "$\\lvert M \\cup E \\rvert = 43$",
+      "The number of students taking neither Mathematics nor Economics is 7",
+      "$M \\setminus E$ has 18 students (those taking only Mathematics)",
+      "$E \\subseteq M$",
+      "M and E are disjoint sets"
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $\\lvert M \\cup E \\rvert = 43$**  (true)\n\n$\\lvert M \\cup E \\rvert = \\lvert M \\rvert$ + $\\lvert E \\rvert$ - $\\lvert M \\cap E \\rvert = 30$ + 25 - 12 = 43.",
+      "**B) The number of students taking neither Mathematics nor Economics is 7**  (true)\n\nOut of 50 students, 43 take at least one of the two courses, so 50 - 43 = 7 take neither.",
+      "**C) $M \\setminus E$ has 18 students (those taking only Mathematics)**  (true)\n\n$M \\setminus E$ removes the 12 shared students from M's 30, leaving 30 - 12 = 18 students who take only Mathematics.",
+      "**D) $E \\subseteq M$**  (false)\n\nTrap: $E \\subseteq M$ would require every Economics student to also take Mathematics, i.e. $\\lvert M \\cap E \\rvert = \\lvert E \\rvert = 25$. But $\\lvert M \\cap E \\rvert = 12$ ≠ 25, so 13 Economics students do not take Mathematics - E is not a subset of M.",
+      "**E) M and E are disjoint sets**  (false)\n\nTrap: disjoint sets must have an empty intersection. Here $\\lvert M \\cap E \\rvert = 12$ ≠ 0, so M and E overlap and are therefore not disjoint."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 7,
+    "solution_overview": "In a cohort of 50 students, 30 take Mathematics (set M) and 25 take Economics (set E). The two courses share 12 common students, so $\\lvert M \\cap E \\rvert = 12$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-8",
+    "case_id": "MATH 1.08",
+    "title": "Let , and let , ,",
+    "subsection": "1.1",
+    "context": "Let $U = \\{1, 2, ..., 9\\}$, and let $A = \\{1, 2, 3\\}$, $B = \\{4, 5, 6\\}$, $C = \\{7, 8, 9\\}$.",
+    "statements": [
+      "A, B, and C are pairwise disjoint",
+      "$\\{A, B, C\\}$ forms a partition of U, since $A \\cup B \\cup C = U$ and the sets are pairwise disjoint",
+      "$A \\cap B \\cap C = \\emptyset$",
+      "$A \\setminus B = \\emptyset$",
+      "Since $A \\cap B = \\emptyset$, it follows that $A = \\emptyset$ or $B = \\emptyset$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) A, B, and C are pairwise disjoint**  (true)\n\nNo element is shared between any two of A, B, C, since each contains a distinct block of numbers - so every pair of sets is disjoint.",
+      "**B) $\\{A, B, C\\}$ forms a partition of U, since $A \\cup B \\cup C = U$ and the sets are pairwise disjoint**  (true)\n\n$A \\cup B \\cup C = \\{1,...,9\\} = U$, and the sets are pairwise disjoint and nonempty, which is exactly the definition of a partition of U.",
+      "**C) $A \\cap B \\cap C = \\emptyset$**  (true)\n\nSince even just $A \\cap B$ is already empty, intersecting with C cannot add anything, so $A \\cap B \\cap C = \\emptyset$.",
+      "**D) $A \\setminus B = \\emptyset$**  (false)\n\nTrap: $A \\setminus B$ removes from A only the elements A shares with B. Since A and B are disjoint, nothing is removed, so $A \\setminus B = A = \\{1, 2, 3\\}$, which is NOT the empty set.",
+      "**E) Since $A \\cap B = \\emptyset$, it follows that $A = \\emptyset$ or $B = \\emptyset$**  (false)\n\nTrap: this is a common misconception. Two nonempty sets can very well be disjoint (share no elements) without either one being empty - $A = \\{1,2,3\\}$ and $B = \\{4,5,6\\}$ are a direct counterexample. Tier 2 - Core Practice"
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 8,
+    "solution_overview": "Let $U = \\{1, 2, ..., 9\\}$, and let $A = \\{1, 2, 3\\}$, $B = \\{4, 5, 6\\}$, $C = \\{7, 8, 9\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-9",
+    "case_id": "MATH 1.09",
+    "title": "Among U = 12 employees (numbered 1-12), let  be those who know Python,",
+    "subsection": "1.1",
+    "context": "Among U = 12 employees (numbered 1-12), let $X = \\{1,2,3,4,5,6\\}$ be those who know Python, and $Y = \\{4,5,6,7,8,9\\}$ be those who know SQL. Complements are taken relative to U.",
+    "statements": [
+      "Xᶜ $= \\{7, 8, 9, 10, 11, 12\\}$",
+      "$(X \\cup Y)$ᶜ $= \\{10, 11, 12\\}$",
+      "Xᶜ $\\cap$ Yᶜ $= \\{10, 11, 12\\}$",
+      "$(X \\cap Y)$ᶜ = Xᶜ $\\cup$ Yᶜ",
+      "Xᶜ $\\cup$ Yᶜ $= \\{1, 2, 3, 10, 11, 12\\}$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Xᶜ $= \\{7, 8, 9, 10, 11, 12\\}$**  (true)\n\nXᶜ is everyone in U not in X, i.e. everyone except employees 1-6: $\\{7,8,9,10,11,12\\}$.",
+      "**B) $(X \\cup Y)$ᶜ $= \\{10, 11, 12\\}$**  (true)\n\n$X \\cup Y = \\{1,2,3,4,5,6,7,8,9\\}$, so its complement in U is $\\{10, 11, 12\\}$.",
+      "**C) Xᶜ $\\cap$ Yᶜ $= \\{10, 11, 12\\}$**  (true)\n\nXᶜ $= \\{7,...,12\\}$ and Yᶜ $= \\{1,2,3,10,11,12\\}$; their intersection is $\\{10, 11, 12\\}$, matching $(X \\cup Y)$ᶜ from part (b), as De Morgan's law predicts.",
+      "**D) $(X \\cap Y)$ᶜ = Xᶜ $\\cup$ Yᶜ**  (true)\n\nThis is De Morgan's law for the complement of an intersection, and it holds generally, independent of this specific example. 7",
+      "**E) Xᶜ $\\cup$ Yᶜ $= \\{1, 2, 3, 10, 11, 12\\}$**  (false)\n\nTrap: Xᶜ $\\cup$ Yᶜ $= \\{7,8,9,10,11,12\\} \\cup \\{1,2,3,10,11,12\\} = \\{1,2,3,7,8,9,10,11,12\\}$. The statement's set is missing 7, 8, and 9 - it has actually been confused with Xᶜ $\\cap$ Yᶜ from part (c), which produces a different, smaller set."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 9,
+    "solution_overview": "Among U = 12 employees (numbered 1-12), let $X = \\{1,2,3,4,5,6\\}$ be those who know Python, and $Y = \\{4,5,6,7,8,9\\}$ be those who know SQL. Complements are taken relative to U.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-10",
+    "case_id": "MATH 1.10",
+    "title": "Let the universal set be . Let  and , with complements taken relative",
+    "subsection": "1.1",
+    "context": "Let the universal set be $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$. Let $A = \\{1, 2, 3, 4, 5\\}$ and $B = \\{4, 5, 6, 7, 8\\}$, with complements taken relative to U.",
+    "statements": [
+      "$(A \\cup B)$ᶜ $= \\{8, 9, 10\\}$",
+      "$(A \\cap B)$ᶜ = Aᶜ $\\cup$ Bᶜ",
+      "Aᶜ $\\cap$ Bᶜ $= \\{6, 7, 8, 9, 10\\}$",
+      "$(A \\cap B)$ᶜ $= \\{1, 2, 3, 6, 7, 8, 9, 10\\}$",
+      "Aᶜ $\\cup$ Bᶜ $= \\{1, 2, 3, 9, 10\\}$"
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $(A \\cup B)$ᶜ $= \\{8, 9, 10\\}$**  (false)\n\nTrap: $A \\cup B = \\{1,2,3,4,5,6,7,8\\}$, so its complement in U is everything left over: $\\{9, 10\\}$ - not $\\{8, 9, 10\\}$. Since $8 \\in B \\subseteq A \\cup B$, it cannot also be in the complement.",
+      "**B) $(A \\cap B)$ᶜ = Aᶜ $\\cup$ Bᶜ**  (true)\n\nThis is exactly De Morgan's law for complements of an intersection, and it holds for any two sets, not just this example.",
+      "**C) Aᶜ $\\cap$ Bᶜ $= \\{6, 7, 8, 9, 10\\}$**  (false)\n\nTrap: Aᶜ $= \\{6,7,8,9,10\\}$ and Bᶜ $= \\{1,2,3,9,10\\}$. Their intersection is only the elements common to both, $\\{9, 10\\}$ - not the full set $\\{6,7,8,9,10\\}$, which is just Aᶜ by itself.",
+      "**D) $(A \\cap B)$ᶜ $= \\{1, 2, 3, 6, 7, 8, 9, 10\\}$**  (true)\n\n$A \\cap B = \\{4, 5\\}$, so its complement is U with 4 and 5 removed: $\\{1, 2, 3, 6, 7, 8, 9, 10\\}$.",
+      "**E) Aᶜ $\\cup$ Bᶜ $= \\{1, 2, 3, 9, 10\\}$**  (false)\n\nTrap: computing Aᶜ $\\cup$ Bᶜ $= \\{6,7,8,9,10\\} \\cup \\{1,2,3,9,10\\} = \\{1,2,3,6,7,8,9,10\\}$ - the statement omits 6, 7, and 8. This value should equal $(A \\cap B)$ᶜ from statement (d), not $(A \\cup B)$ᶜ from statement (a); confusing the two is the trap."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 10,
+    "solution_overview": "Let the universal set be $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$. Let $A = \\{1, 2, 3, 4, 5\\}$ and $B = \\{4, 5, 6, 7, 8\\}$, with complements taken relative to U.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-11",
+    "case_id": "MATH 1.11",
+    "title": "Partitions of a set",
+    "subsection": "1.1",
+    "context": "Let $A = \\{1, 2, 3, 4, 5, 6\\}$. A partition of A is a collection of nonempty, pairwise disjoint subsets whose union is A.",
+    "statements": [
+      "P = \\{ $\\{1,2\\}$, $\\{3,4\\}$, $\\{5,6\\}$ \\} is a partition of A.",
+      "Every partition of a set must have exactly the same number of blocks as the set has elements.",
+      "Q = \\{ $\\{1,2,3\\}$, $\\{3,4,5,6\\}$ \\} is a partition of A.",
+      "R = \\{ $\\{1,2\\}$, $\\{3,4\\}$, $\\{5\\}$ \\} is a partition of A.",
+      "A set with n ≥ 2 elements always has more than one possible partition."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) P = \\{ $\\{1,2\\}$, $\\{3,4\\}$, $\\{5,6\\}$ \\} is a partition of A.**  (true)\n\nThe three blocks are nonempty, pairwise disjoint, and their union $\\{1,2,3,4,5,6\\}$ equals A - all partition requirements are satisfied.",
+      "**B) Every partition of a set must have exactly the same number of blocks as the set has elements.**  (false)\n\nA partition can have any number of blocks, from 1 (the whole set as a single block) up to n (all singletons) - there's no requirement that the number of blocks equals $\\lvert A \\rvert$, as (a) already shows with 3 blocks for 6 elements.",
+      "**C) Q = \\{ $\\{1,2,3\\}$, $\\{3,4,5,6\\}$ \\} is a partition of A.**  (false)\n\nThe blocks $\\{1,2,3\\}$ and $\\{3,4,5,6\\}$ both contain the element 3, violating the requirement that blocks be pairwise disjoint.",
+      "**D) R = \\{ $\\{1,2\\}$, $\\{3,4\\}$, $\\{5\\}$ \\} is a partition of A.**  (false)\n\nThe union of R's blocks is $\\{1,2,3,4,5\\}$, which misses the element 6 - the blocks don't cover all of A.",
+      "**E) A set with n ≥ 2 elements always has more than one possible partition.**  (true)\n\nFor any n ≥ 2, at least two distinct partitions always exist - for example, the single block $\\{A\\}$ itself, and the partition into all singletons - and these are different whenever n ≥ 2."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 11,
+    "solution_overview": "Let $A = \\{1, 2, 3, 4, 5, 6\\}$. A partition of A is a collection of nonempty, pairwise disjoint subsets whose union is A.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-12",
+    "case_id": "MATH 1.12",
+    "title": "Counting subsets",
+    "subsection": "1.1",
+    "context": "Let A be a set with $\\lvert A \\rvert = 5$.",
+    "statements": [
+      "The number of subsets of A is 32.",
+      "The number of proper subsets of A is 31.",
+      "The number of subsets of A containing exactly 4 elements is 10.",
+      "The number of nonempty subsets of A is 31.",
+      "The number of subsets of A containing an even number of elements (0, 2, or 4) is 15."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The number of subsets of A is 32.**  (true)\n\nA set with n elements has 2ⁿ subsets; here 2⁵ = 32.",
+      "**B) The number of proper subsets of A is 31.**  (true)\n\nA proper subset excludes only A itself, so 32 - 1 = 31 subsets qualify.",
+      "**C) The number of subsets of A containing exactly 4 elements is 10.**  (false)\n\nThe number of 4-element subsets is C(5,4) = 5, not 10 (10 is actually the count for 3-element or 2- element subsets, C(5,3)=C(5,2)=10 - a mismatch with the wrong size here).",
+      "**D) The number of nonempty subsets of A is 31.**  (true)\n\nExcluding only the empty set from the 32 total subsets leaves 32 - 1 = 31 nonempty subsets.",
+      "**E) The number of subsets of A containing an even number of elements (0, 2, or 4) is 15.**  (false)\n\nSumming C(5,0)+C(5,2)+C(5,4) = 1+10+5 = 16, not 15 - the actual count of even-sized subsets is 16."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 12,
+    "solution_overview": "Let A be a set with $\\lvert A \\rvert = 5$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-13",
+    "case_id": "MATH 1.13",
+    "title": "Let A = (0, 10] and B = [5, 15) be intervals of real numbers, treated",
+    "subsection": "1.1",
+    "context": "Let A = (0, 10] and B = [5, 15) be intervals of real numbers, treated as sets.",
+    "statements": [
+      "$A \\cap B =$ [5, 10]",
+      "$A \\cup B = (0$, 15]",
+      "$10 \\in A \\cap B$",
+      "$5 \\in A \\setminus B$",
+      "The statement \"$x \\in A \\Rightarrow x \\in B$\" is true for all x."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $A \\cap B =$ [5, 10]**  (true)\n\nA starts just above 0 and includes up to 10; B starts at 5 and goes up to just below 15. Their overlap is all x with 5 ≤ x ≤ 10, i.e. [5, 10].",
+      "**B) $A \\cup B = (0$, 15]**  (false)\n\nTrap: 15 is not included in B (open at 15) and A doesn't reach 15 at all, so $15 \\notin A \\cup B$. The correct union is (0, 15), not (0, 15].",
+      "**C) $10 \\in A \\cap B$**  (true)\n\n10 belongs to A (its closed right endpoint) and to B (since 5 ≤ 10 < 15), so $10 \\in A \\cap B$.",
+      "**D) $5 \\in A \\setminus B$**  (false)\n\nTrap: $A \\setminus B$ removes from A everything also in B. Since B includes 5 (closed at 5), the value 5 is removed from A, so $5 \\notin A \\setminus B$. The correct set is $A \\setminus B = (0$, 5).",
+      "**E) The statement \"$x \\in A \\Rightarrow x \\in B$\" is true for all x.**  (false)\n\nTrap: this implication fails for x = 1, which lies in A = (0,10] but not in B = [5,15) since 1 < 5. One counterexample is enough to make the universal implication false. Tier 3 - Advanced 11"
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 13,
+    "solution_overview": "Let A = (0, 10] and B = [5, 15) be intervals of real numbers, treated as sets.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-14",
+    "case_id": "MATH 1.14",
+    "title": "A survey of 150 tourists finds: 80 visited Museum A, 70 visited Museum",
+    "subsection": "1.1",
+    "context": "A survey of 150 tourists finds: 80 visited Museum A, 70 visited Museum B, 60 visited Museum C, 30 visited both A and B, 25 visited both B and C, 20 visited both A and C, and 10 visited all three museums.",
+    "statements": [
+      "$\\lvert A \\cup B \\cup C \\rvert = 155$",
+      "The number of tourists who visited none of the three museums is 5",
+      "The number who visited exactly A and B (but not C) is 30",
+      "The number who visited only Museum A (and no other) equals 80 - 30 - 20 = 30",
+      "The number who visited at least two of the three museums is 65"
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $\\lvert A \\cup B \\cup C \\rvert = 155$**  (false)\n\nTrap: by inclusion-exclusion, $\\lvert A \\cup B \\cup C \\rvert = 80$+70+60 - 30-25-20 + 10 = 210 - 75 + 10 = 145, not 155 - a simple arithmetic slip.",
+      "**B) The number of tourists who visited none of the three museums is 5**  (true)\n\nSince 145 out of 150 tourists visited at least one museum, the remaining 150 - 145 = 5 visited none.",
+      "**C) The number who visited exactly A and B (but not C) is 30**  (false)\n\nTrap: \"exactly A and B, not C\" must remove the triple-overlap from the raw pairwise count: 30 (A and B) - 10 (all three) = 20, not the raw 30 - forgetting to subtract the triple overlap is the error here.",
+      "**D) The number who visited only Museum A (and no other) equals 80 - 30 - 20 = 30**  (false)\n\nTrap: this formula forgets to add back the triple overlap. The correct count for \"only A\" is $\\lvert A \\rvert$ - $\\lvert A \\cap B \\rvert$ - $\\lvert A \\cap C \\rvert$ + $\\lvert A \\cap B \\cap C \\rvert = 80$ - 30 - 20 + 10 = 40, not 30.",
+      "**E) The number who visited at least two of the three museums is 65**  (false)\n\nTrap: \"at least two\" sums each pairwise overlap and subtracts the triple overlap twice: (30 - 10) + (25 - 10) + (20 - 10) + 10 = 20+15+10+10 = 55, not 65 - another arithmetic slip."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 14,
+    "solution_overview": "A survey of 150 tourists finds: 80 visited Museum A, 70 visited Museum B, 60 visited Museum C, 30 visited both A and B, 25 visited both B and C, 20 visited both A and C, and 10 visited all three museums.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-15",
+    "case_id": "MATH 1.15",
+    "title": "Infinite sets and cardinality",
+    "subsection": "1.1",
+    "context": "Let $N = \\{1, 2, 3, ...\\}$ be the natural numbers and $E = \\{2, 4, 6, ...\\}$ be the even natural numbers.",
+    "statements": [
+      "E is a proper subset of N.",
+      "Since E is a proper subset of N, E must have strictly fewer elements than N.",
+      "The function f(n) = 2n defines a one-to-one correspondence (bijection) between N and the odd natural numbers.",
+      "The fact that E ⊊ N yet has the same cardinality as N shows that the finite-set intuition “proper subset $\\Rightarrow$ fewer elements” does not carry over to infinite sets.",
+      "Every infinite subset of N is equal to N itself (contains all the natural numbers)."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) E is a proper subset of N.**  (true)\n\nEvery even number is a natural number, so $E \\subseteq N$; and $1 \\in N$ but $1 \\notin E$, so the inclusion is strict (proper).",
+      "**B) Since E is a proper subset of N, E must have strictly fewer elements than N.**  (false)\n\nThis finite-set intuition fails for infinite sets: f(n)=2n is a bijection between N and E (part c), so despite being a proper subset, E has exactly the same cardinality as N, not fewer elements.",
+      "**C) The function f(n) = 2n defines a one-to-one correspondence (bijection) between N and the odd natural numbers.**  (false)\n\nTrap: f(n) = 2n always produces an EVEN number, so its outputs land in E (the even naturals), never in the odd naturals - it cannot possibly be a bijection onto the odd numbers, since it never even reaches them.",
+      "**D) The fact that E ⊊ N yet has the same cardinality as N shows that the finite-set intuition “proper subset $\\Rightarrow$ fewer elements” does not carry over to infinite sets.**  (true)\n\nThis is precisely the classical insight (going back to Cantor and earlier to Galileo) that infinite sets can be in bijection with a proper subset of themselves, unlike finite sets.",
+      "**E) Every infinite subset of N is equal to N itself (contains all the natural numbers).**  (false)\n\nTrap: this confuses \"same cardinality\" with \"being the same set.\" E itself is an infinite subset of N with the same cardinality as N, yet E ≠ N - E excludes every odd number, such as 1. Equal cardinality does not mean equal as sets."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 15,
+    "solution_overview": "Let $N = \\{1, 2, 3, ...\\}$ be the natural numbers and $E = \\{2, 4, 6, ...\\}$ be the even natural numbers.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-16",
+    "case_id": "MATH 1.16",
+    "title": "Elements vs. Subsets of an Even-Number Set",
+    "subsection": "1.1",
+    "context": "Let $A = \\{2, 4, 6, 8, 10, 12\\}$.",
+    "statements": [
+      "$6 \\in A$.",
+      "$\\{6\\} \\in A$.",
+      "$\\{6, 8\\} \\subseteq A$.",
+      "$\\emptyset \\subseteq A$.",
+      "A has exactly $63$ proper subsets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $6 \\in A$.**  (true)\n\n$6$ is one of the listed elements, so it belongs to A directly.",
+      "**B) $\\{6\\} \\in A$.**  (false)\n\n$\\{6\\}$ is a *subset* of A (since $6 \\in A$), not an element of A; the elements of A are the 6 numbers themselves, not sets built from them.",
+      "**C) $\\{6, 8\\} \\subseteq A$.**  (true)\n\nBoth $6$ and $8$ are elements of A, so the two-element set $\\{6, 8\\}$ is contained in A.",
+      "**D) $\\emptyset \\subseteq A$.**  (true)\n\nThe empty set is a subset of every set, with no exceptions, since it has no element that could fail to be in A.",
+      "**E) A has exactly $63$ proper subsets.**  (true)\n\n$\\lvert A\\rvert = 6$, so $\\lvert \\mathcal{P}(A)\\rvert = 2^{6} = 64$, and proper subsets exclude only A itself: $64 - 1 = 63$, which does equal $63$."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 16,
+    "solution_overview": "Let $A = \\{2, 4, 6, 8, 10, 12\\}$.\n\n**Part 1: Setup.**\n\nA has $n = 6$ listed elements: 2, 4, 6, 8, 10, 12.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-17",
+    "case_id": "MATH 1.17",
+    "title": "Set-Builder Notation from a Quadratic Condition",
+    "subsection": "1.1",
+    "context": "Let $A = \\{x \\in \\mathbb{Z} : x^2 - 5x + 6 = 0\\}$ and $B = \\{2, 3\\}$.",
+    "statements": [
+      "$A = B$.",
+      "$3 \\in A$.",
+      "$A = \\{2\\}$ (only the smaller root).",
+      "$\\lvert A\\rvert = 2$.",
+      "$C = \\{x \\in \\mathbb{N} : x^2 - 5x + 6 = 0 \\land x > 2\\}$ satisfies $C = \\{3\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $A = B$.**  (true)\n\nSolving $x^2 - 5x + 6 = 0$ factors as $(x-2)(x-3) = 0$, giving exactly $x = 2$ and $x = 3$, so $A = \\{2, 3\\} = B$.",
+      "**B) $3 \\in A$.**  (true)\n\n$3$ satisfies $(3-2)(3-3) = 0$, so $3$ is one of the two roots and belongs to A.",
+      "**C) $A = \\{2\\}$ (only the smaller root).**  (false)\n\n$2$ is a root, but so is $3$ — a quadratic with two distinct roots contributes both to the solution set; A is not the singleton $\\{2\\}$.",
+      "**D) $\\lvert A\\rvert = 2$.**  (true)\n\n$A = \\{2, 3\\}$ has exactly two distinct elements.",
+      "**E) $C = \\{x \\in \\mathbb{N} : x^2 - 5x + 6 = 0 \\land x > 2\\}$ satisfies $C = \\{3\\}$.**  (true)\n\nRestricting to natural numbers greater than $2$ keeps only $x = 3$ from the two roots, so $C = \\{3\\}$."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 17,
+    "solution_overview": "Let $A = \\{x \\in \\mathbb{Z} : x^2 - 5x + 6 = 0\\}$ and $B = \\{2, 3\\}$.\n\n**Part 1: Setup.**\n\nFactor the defining equation once: $x^2 - 5x + 6 = (x-2)(x-3)$, so the roots are $x = 2$ and $x = 3$.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-18",
+    "case_id": "MATH 1.18",
+    "title": "Counting the Power Set of a Four-Letter Set",
+    "subsection": "1.1",
+    "context": "Let $D = \\{w, x, y, z\\}$.",
+    "statements": [
+      "$\\mathcal{P}(D)$ has $16$ elements.",
+      "$\\{w, x\\} \\in \\mathcal{P}(D)$.",
+      "There are exactly $4$ subsets of D containing exactly $3$ elements.",
+      "$D \\in \\mathcal{P}(D)$.",
+      "There are exactly $5$ subsets of D containing exactly $2$ elements."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $\\mathcal{P}(D)$ has $16$ elements.**  (true)\n\n$\\lvert D\\rvert = 4$, so $\\lvert \\mathcal{P}(D)\\rvert = 2^{4} = 16$, matching exactly.",
+      "**B) $\\{w, x\\} \\in \\mathcal{P}(D)$.**  (true)\n\n$\\{w, x\\}$ is a subset of D, and every subset of D is, by definition, an element of the power set $\\mathcal{P}(D)$.",
+      "**C) There are exactly $4$ subsets of D containing exactly $3$ elements.**  (true)\n\nChoosing $3$ of the $4$ elements can be done in $\\binom{4}{3} = 4$ ways, matching exactly.",
+      "**D) $D \\in \\mathcal{P}(D)$.**  (true)\n\nEvery set is a subset of itself, so $D \\subseteq D$, which means D itself is one of the elements of $\\mathcal{P}(D)$.",
+      "**E) There are exactly $5$ subsets of D containing exactly $2$ elements.**  (false)\n\nChoosing $2$ of the $4$ elements can be done in $\\binom{4}{2} = 6$ ways, which is $6$, not $5$."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 18,
+    "solution_overview": "Let $D = \\{w, x, y, z\\}$.\n\n**Part 1: Setup.**\n\n$\\lvert D\\rvert = 4$, so $\\lvert \\mathcal{P}(D)\\rvert = 2^{4} = 16$. Counting k-element subsets uses $\\binom{4}{k}$.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-19",
+    "case_id": "MATH 1.19",
+    "title": "Subset, Proper Subset, and Self-Containment",
+    "subsection": "1.1",
+    "context": "Let $E = \\{1, 2, 3\\}$ and $F = \\{1, 2, 3, 4\\}$.",
+    "statements": [
+      "$E \\subseteq F$.",
+      "$E \\subsetneq F$ (E is a proper subset of F).",
+      "$F \\subseteq E$.",
+      "$E \\subseteq E$.",
+      "$E \\subsetneq E$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $E \\subseteq F$.**  (true)\n\nEvery element of E (namely 1, 2, 3) is also in F, so $E \\subseteq F$.",
+      "**B) $E \\subsetneq F$ (E is a proper subset of F).**  (true)\n\n$E \\subseteq F$ and $E \\neq F$ (since $4 \\in F$ but $4 \\notin E$), so E is a proper subset of F.",
+      "**C) $F \\subseteq E$.**  (false)\n\nF contains $4$, which is not in E, so F is not a subset of E.",
+      "**D) $E \\subseteq E$.**  (true)\n\nEvery set is a subset of itself: every element of E is trivially an element of E.",
+      "**E) $E \\subsetneq E$.**  (false)\n\nA proper subset must be strictly smaller than the original set; since $E = E$, E can never be a proper subset of itself."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 19,
+    "solution_overview": "Let $E = \\{1, 2, 3\\}$ and $F = \\{1, 2, 3, 4\\}$.\n\n**Part 1: Setup.**\n\nCompare E and F element by element: F has every element of E plus the extra element $4$.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-20",
+    "case_id": "MATH 1.20",
+    "title": "Testing Whether a Collection Partitions a Set",
+    "subsection": "1.1",
+    "context": "Let $G = \\{1, 2, 3, 4, 5, 6\\}$, and consider the collection $\\mathcal{S} = \\{\\{1, 2\\}, \\{3, 4\\}, \\{5, 6\\}\\}$.",
+    "statements": [
+      "The blocks of $\\mathcal{S}$ are pairwise disjoint.",
+      "The union of the blocks of $\\mathcal{S}$ equals G.",
+      "$\\mathcal{S}$ is a partition of G.",
+      "$\\mathcal{S}' = \\{\\{1, 2\\}, \\{2, 3, 4\\}, \\{5, 6\\}\\}$ is also a partition of G.",
+      "Replacing $\\{5, 6\\}$ with $\\{5, 6, 7\\}$ would still give a partition of G."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The blocks of $\\mathcal{S}$ are pairwise disjoint.**  (true)\n\n$\\{1,2\\} \\cap \\{3,4\\} = \\emptyset$, $\\{1,2\\} \\cap \\{5,6\\} = \\emptyset$, and $\\{3,4\\} \\cap \\{5,6\\} = \\emptyset$: no two blocks share an element.",
+      "**B) The union of the blocks of $\\mathcal{S}$ equals G.**  (true)\n\n$\\{1,2\\} \\cup \\{3,4\\} \\cup \\{5,6\\} = \\{1,2,3,4,5,6\\} = G$: together the blocks cover every element exactly once.",
+      "**C) $\\mathcal{S}$ is a partition of G.**  (true)\n\nA partition requires pairwise-disjoint blocks whose union is the whole set; both conditions hold here, so $\\mathcal{S}$ is a valid partition.",
+      "**D) $\\mathcal{S}' = \\{\\{1, 2\\}, \\{2, 3, 4\\}, \\{5, 6\\}\\}$ is also a partition of G.**  (false)\n\n$\\{1,2\\}$ and $\\{2,3,4\\}$ share the element $2$, so the blocks of $\\mathcal{S}'$ are not disjoint — this fails the partition requirement even though the union still covers G.",
+      "**E) Replacing $\\{5, 6\\}$ with $\\{5, 6, 7\\}$ would still give a partition of G.**  (false)\n\n$7 \\notin G$, so $\\{5,6,7\\}$ is not even a subset of G; a partition's blocks must be subsets of the original set."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 20,
+    "solution_overview": "Let $G = \\{1, 2, 3, 4, 5, 6\\}$, and consider the collection $\\mathcal{S} = \\{\\{1, 2\\}, \\{3, 4\\}, \\{5, 6\\}\\}$.\n\n**Part 1: Setup.**\n\nCheck the two partition conditions once: pairwise disjointness, then full coverage of G.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$. A partition additionally requires the blocks to be pairwise disjoint and to cover the set exactly.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-21",
+    "case_id": "MATH 1.21",
+    "title": "Even Numbers Inside the Naturals: A Cardinality Trap",
+    "subsection": "1.1",
+    "context": "Let $\\mathbb{N} = \\{1, 2, 3, \\dots\\}$ and let $H = \\{2, 4, 6, 8, \\dots\\}$ be the set of positive even integers.",
+    "statements": [
+      "$H \\subseteq \\mathbb{N}$.",
+      "H is a finite set.",
+      "$H = \\mathbb{N}$.",
+      "The map $f(n) = 2n$ pairs every natural number with exactly one element of H and vice versa.",
+      "Since $H \\subsetneq \\mathbb{N}$, H must have strictly fewer elements than $\\mathbb{N}$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $H \\subseteq \\mathbb{N}$.**  (true)\n\nEvery positive even integer is a natural number, so $H \\subseteq \\mathbb{N}$.",
+      "**B) H is a finite set.**  (false)\n\nH continues without end ($2, 4, 6, 8, \\dots$), so it is an infinite set, not finite.",
+      "**C) $H = \\mathbb{N}$.**  (false)\n\n$1 \\in \\mathbb{N}$ but $1 \\notin H$ (it is odd), so the two sets are not equal.",
+      "**D) The map $f(n) = 2n$ pairs every natural number with exactly one element of H and vice versa.**  (true)\n\n$f(n) = 2n$ sends each natural number to a distinct even number, and every even number $2n$ comes from exactly one n, so f is a genuine one-to-one correspondence.",
+      "**E) Since $H \\subsetneq \\mathbb{N}$, H must have strictly fewer elements than $\\mathbb{N}$.**  (false)\n\nFor infinite sets, a proper subset can still be matched one-to-one with the whole set (as part D shows), so 'strictly fewer elements' does not apply the way it does for finite sets — this is the classic trap of finite intuition applied to infinite sets."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 21,
+    "solution_overview": "Let $\\mathbb{N} = \\{1, 2, 3, \\dots\\}$ and let $H = \\{2, 4, 6, 8, \\dots\\}$ be the set of positive even integers.\n\n**Part 1: Setup.**\n\nCompare H against $\\mathbb{N}$ directly, then test whether a pairing (bijection) exists between them.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$. For infinite sets, a proper subset can still be paired one-to-one with the whole set — cardinality reasoning differs from the finite case.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-22",
+    "case_id": "MATH 1.22",
+    "title": "An Object and Its Singleton in the Same Set",
+    "subsection": "1.1",
+    "context": "Let a be an object and let $K = \\{a, \\{a\\}\\}$.",
+    "statements": [
+      "$a \\in K$.",
+      "$\\{a\\} \\in K$.",
+      "$\\{a\\} \\subseteq K$.",
+      "$\\{\\{a\\}\\} \\subseteq K$.",
+      "$\\lvert K\\rvert = 2$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $a \\in K$.**  (true)\n\na is explicitly listed as one of the two elements of K.",
+      "**B) $\\{a\\} \\in K$.**  (true)\n\n$\\{a\\}$ is also explicitly listed as an element of K (its second element), so it belongs to K directly — not just as a subset.",
+      "**C) $\\{a\\} \\subseteq K$.**  (true)\n\nSince $a \\in K$, the single-element set $\\{a\\}$ is automatically a subset of K as well as an element of it; both facts hold at once here.",
+      "**D) $\\{\\{a\\}\\} \\subseteq K$.**  (true)\n\n$\\{a\\}$ is an element of K, so the set containing just that element, $\\{\\{a\\}\\}$, is a subset of K.",
+      "**E) $\\lvert K\\rvert = 2$.**  (true)\n\nK has exactly two distinct elements, a and $\\{a\\}$, so $\\lvert K\\rvert = 2$."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 22,
+    "solution_overview": "Let a be an object and let $K = \\{a, \\{a\\}\\}$.\n\n**Part 1: Setup.**\n\nList the two distinct elements of K once: a itself, and the set $\\{a\\}$.\n\n**Part 2: Key facts.**\n\nKeep membership ($x \\in A$) and inclusion ($B \\subseteq A$) strictly separate: an element of A is a single object, while a subset of A is itself a set. A set with n elements has $2^n$ subsets, i.e. $\\lvert \\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$, and $\\emptyset \\subseteq A$ always holds. A subset B is proper ($B \\subsetneq A$) only when $B \\neq A$. An object $\\{a\\}$ can simultaneously be an element of K and, because that element is itself in K, generate a valid subset relation too — the two notions do not exclude each other.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
+  }
+]

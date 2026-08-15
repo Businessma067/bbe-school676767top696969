@@ -1,0 +1,22 @@
+COUNTS {'MUST_BECOME': 1, 'ARROW_CTX': 14, 'EQUALS': 5}
+TOTAL 20
+MUST_BECOME	t2/EE	he selection criteria is must become are printed. The singular form is crite
+ARROW_CTX	t5/EE	orces the singular Latin form. One item → criterion; several → criteria.
+EQUALS	t6/EB	Who's equals who has before the past participle been. Who's be
+ARROW_CTX	t7/EC	e spicy food. Subject influences object → affect. No bring-about result frame app
+ARROW_CTX	t8/EA	e someone. Subject you plus verb choose → object whomever. Congratulate whomever 
+EQUALS	t9/EB	Who's equals who is before attending. Progressive after who's 
+EQUALS	t9/EE	h criterion carries equal weight in the scorecard.**
+ARROW_CTX	t11/EA	he action. The host had invited someone → whomever.
+ARROW_CTX	t13/EC	well I sleep. Subject influences object → affect. Bright screens affect… is the i
+ARROW_CTX	t13/EE	Furniture is typically uncountable here → less furniture (or fewer pieces of furn
+ARROW_CTX	t14/EA	of shortlist. Mentors shortlist someone → object case. Offer… to whomever the men
+ARROW_CTX	t14/EC	Confidence is influenced → will affect audience confidence. Abstra
+EQUALS	t15/EB	Who's been equals who has been. Been after who's almost always mean
+ARROW_CTX	t15/EC	Influence meaning → beginning to affect my morning runs. Pr
+ARROW_CTX	t18/EA	e — who should review — is subject case → whoever you think should review it. Ign
+ARROW_CTX	t18/EC	Influence on the timeline → will affect the project timeline. Sever
+ARROW_CTX	t19/EA	shortlisted. Agency shortlisted someone → object case. We interviewed whomever th
+EQUALS	t19/EB	Who's attending equals who is attending. The expansion test passes clean
+ARROW_CTX	t19/EE	— is inconsistent. One of + plural noun → singular verb for that one item. One of
+ARROW_CTX	t20/EE	Approvals are countable → fewer formal approvals. If the noun is 

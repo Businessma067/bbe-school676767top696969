@@ -1,0 +1,1 @@
+'**D.** → True\n\nAn implication and its **contrapositive** are equivalent:\n\n$$p \\Rightarrow q \\quad\\Leftrightarrow\\quad \\neg q \\Rightarrow \\neg p$$\n\nThe contrapositive $\\neg Q \\Rightarrow \\neg P$ is always logically equivalent to $P \\Rightarrow Q$ - a structural guarantee for any implication.\n\nSo the statement is True.'

@@ -1,0 +1,67 @@
+en-g-11-02 D key=True | missing **true** in closing
+  CLOSE: Long interesting takes more … than against the film, so the pattern fits.
+
+en-g-11-03 D key=False | missing **false** in closing
+  CLOSE: Worse already is comparative and worser is nonstandard, so more worser collapses — "The weekend weather turned worse after noon."
+
+en-g-11-03 E key=False | missing **false** in closing
+  CLOSE: Gooder is not English, so the invented form fails after the update: "My laptop runs better after the software update."
+
+en-g-11-04 D key=True | missing **true** in closing
+  CLOSE: Best of the three is the irregular superlative a set of three playlists needs, so the pattern fits.
+
+en-g-11-04 E key=False | missing **false** in closing
+  CLOSE: Farther is already comparative, so more farther doubles the mark — "The museum was farther from the hotel than we expected."
+
+en-g-11-06 A key=True | missing **true** in closing
+  CLOSE: "Tidy" → "tidier" uses the expected -ier spelling after the clear-up, so the pattern fits.
+
+en-g-11-07 D key=False | missing **false** in closing
+  CLOSE: Happier already includes the comparative, so more happier doubles it: "She felt happier after the phone call."
+
+en-g-11-08 A key=True | missing **true** in closing
+  CLOSE: Less exciting than softens a long adjective across two episodes, so the inferiority frame fits.
+
+en-g-11-08 C key=False | missing **false** in closing
+  CLOSE: Bigest than is misspelled and the wrong grade — than wants bigger: "This rucksack is bigger than I need for a day hike."
+
+en-g-11-09 C key=True | missing **true** in closing
+  CLOSE: Both as-markers keep the park-versus-spring equality intact, so the pattern fits.
+
+en-g-11-09 E key=False | missing **false** in closing
+  CLOSE: As good than mixes systems; a second as restores equality: "The sequel was as good as the original."
+
+en-g-11-11 C key=True | missing **true** in closing
+  CLOSE: Best meals pairs irregular superlative with plural after one of the, so the pattern fits.
+
+en-g-11-14 C key=True | missing **true** in closing
+  CLOSE: Preferable to correctly states the fresh-versus-dried pasta choice, so the pattern fits.
+
+en-g-11-14 D key=False | missing **false** in closing
+  CLOSE: Preferable never takes than — the coastal path wants to: "The coastal path is preferable to the inland route."
+
+en-g-11-15 C key=False | missing **false** in closing
+  CLOSE: Mistakes are countable, so less mistakes fails careful English — "She made fewer mistakes on the second draft."
+
+en-g-11-15 E key=False | missing **false** in closing
+  CLOSE: Traffic is uncountable, so fewer traffic collapses: "There is less traffic on this road after nine."
+
+en-g-11-16 A key=True | missing **true** in closing
+  CLOSE: Busier and busier marks the week's steady climb toward the festival, so the gradual pattern fits.
+
+en-g-11-16 E key=False | missing **false** in closing
+  CLOSE: Increasingly already means more and more, so stacking more is redundant: "The puzzle grew increasingly difficult toward the end."
+
+en-g-11-18 B key=False | missing **false** in closing
+  CLOSE: Prefer takes to, not than, so the morning drinks fail: "She prefers tea to coffee in the morning."
+
+en-g-11-18 C key=True | missing **true** in closing
+  CLOSE: Would rather … than … pairs two bare infinitives for tonight's choice, so the pattern fits.
+
+en-g-11-19 D key=False | missing **false** in closing
+  CLOSE: Half as long than swaps the closer; multipliers still need as … as: "The second half was half as long as the opening act."
+
+en-g-11-20 E key=True | missing **true** in closing
+  CLOSE: By far a better … than correctly intensifies a clear two-concert comparative, so the pattern fits.
+
+TOTAL flagged closings: 22

@@ -1,0 +1,2136 @@
+{
+  "source": "src/data/english/texts.json",
+  "description": "Lexical candidates extracted from Texts tasks whose kind is 'vocabulary'. Sources preserve the passage topic and original teaching explanation for grounded Vocabulary authoring.",
+  "entry_count": 131,
+  "source_counts": {
+    "t.1": 32,
+    "t.12": 5,
+    "t.13": 5,
+    "t.15": 15,
+    "t.16": 18,
+    "t.2": 11,
+    "t.3": 3,
+    "t.4": 7,
+    "t.5": 6,
+    "t.6": 7,
+    "t.7": 25,
+    "t.8": 12
+  },
+  "entries": [
+    {
+      "term": "a bacterial strain",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 4,
+          "statement": "\"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.",
+          "answer": true,
+          "explanation": "**D) \"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.**\n\nParagraph 2’s \"strains of Staphylococcus\" uses the biological-variant sense. \"Stress\" is a different word for pressure or tension; sound similarity does not make them synonyms. Substituting one for the other would make the passage claim that researchers found tensions of Staphylococcus, which is not English.\n\n**Tip:** Exam \"strain / stress\" traps trade on sound, not shared biology meaning.\n\nThe confusion is helped along by the fact that \"strain\" itself has a separate everyday sense of pressure or effort, as in straining a muscle. The item is testing whether you can hold the technical microbiological sense apart from that general one.\n\nThe bacterial-strain versus tension-stress split is correct, so the claim holds.",
+          "passage_anchor": "strains of Staphylococcus bacteria capable of resisting its effects"
+        }
+      ]
+    },
+    {
+      "term": "a discovery void,",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-10",
+          "statement_index": 4,
+          "statement": "\"Void,\" as in \"a discovery void,\" is used figuratively to mean an absence or gap, not a literal empty physical space.",
+          "answer": true,
+          "explanation": "**D) \"Void,\" as in \"a discovery void,\" is used figuratively to mean an absence or gap, not a literal empty physical space.**\n\nParagraph 6’s quoted \"discovery void\" names a prolonged absence of genuinely new antibiotic classes since 1987 — a gap in innovation, not an empty room. The passage glosses the term itself, calling it \"a prolonged gap researchers have termed the 'discovery void,'\" which spells out the figurative reading.\n\n**Tip:** When a passage supplies its own gloss for a coined phrase, that gloss settles literal-versus-figurative questions.\n\nWhat is empty here is a period of time rather than a region of space, so the spatial sense of \"void\" has been transferred to a temporal and conceptual absence. The quotation marks around the phrase in the passage further mark it as a specialist coinage rather than plain description.\n\n\"Discovery void\" as figurative absence matches Paragraph 6, so the claim holds.",
+          "passage_anchor": "a prolonged gap researchers have termed the \"discovery void.\""
+        }
+      ]
+    },
+    {
+      "term": "a faster trajectory that allowed it to overtake its sibling",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-09",
+          "statement_index": 5,
+          "statement": "In Paragraph 1, \"overtake\" means to fall behind something rather than pass it.",
+          "answer": false,
+          "explanation": "**E) In Paragraph 1, \"overtake\" means to fall behind something rather than pass it.**\n\nParagraph 1 says Voyager 1's faster trajectory \"allowed it to overtake its sibling\" and become more distant. Overtake means to catch up and pass — the opposite of falling behind. The outcome clause seals the reading, since becoming \"the more distant of the two probes\" is only possible if Voyager 1 moved ahead. A faster trajectory as the stated cause points the same direction.\n\nOvertake is passing ahead, so \"fall behind\" is **false**.",
+          "passage_anchor": "a faster trajectory that allowed it to overtake its sibling"
+        }
+      ]
+    },
+    {
+      "term": "a lot of workers",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-10",
+          "statement_index": 1,
+          "statement": "Replacing \"a lot of workers\" with \"a substantial share of the workforce\" preserves the meaning in a more formal register.",
+          "answer": true,
+          "explanation": "**A) Replacing \"a lot of workers\" with \"a substantial share of the workforce\" preserves the meaning in a more formal register.**\n\nBoth phrases mean a large proportion of workers; \"substantial share of the workforce\" simply lifts the register.\n\nNo new quantity claim or restriction is smuggled in. \"A lot of\" and \"a substantial share of\" are both deliberately vague about the exact figure, so the swap does not sharpen the claim beyond what was said.\n\nThe passage uses the same formal phrasing when it describes trials covering \"a substantial share of its working population.\" The substitution works: same proportional idea, more academic wording.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "a prolonged gap researchers have termed the \"discovery void.\"",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-10",
+          "statement_index": 4,
+          "statement": "\"Void,\" as in \"a discovery void,\" is used figuratively to mean an absence or gap, not a literal empty physical space.",
+          "answer": true,
+          "explanation": "**D) \"Void,\" as in \"a discovery void,\" is used figuratively to mean an absence or gap, not a literal empty physical space.**\n\nParagraph 6’s quoted \"discovery void\" names a prolonged absence of genuinely new antibiotic classes since 1987 — a gap in innovation, not an empty room. The passage glosses the term itself, calling it \"a prolonged gap researchers have termed the 'discovery void,'\" which spells out the figurative reading.\n\n**Tip:** When a passage supplies its own gloss for a coined phrase, that gloss settles literal-versus-figurative questions.\n\nWhat is empty here is a period of time rather than a region of space, so the spatial sense of \"void\" has been transferred to a temporal and conceptual absence. The quotation marks around the phrase in the passage further mark it as a specialist coinage rather than plain description.\n\n\"Discovery void\" as figurative absence matches Paragraph 6, so the claim holds.",
+          "passage_anchor": "a prolonged gap researchers have termed the \"discovery void.\""
+        }
+      ]
+    },
+    {
+      "term": "a recovery already gathering its own momentum",
+      "sources": [
+        {
+          "subsection": "t.5",
+          "passage_title": "The Marshall Plan and the Politics of Economic Recovery",
+          "task_id": "en-t-5-10",
+          "statement_index": 4,
+          "statement": "\"The recovery was described as already gathering momentum before large-scale aid had fully arrived.\"",
+          "answer": true,
+          "explanation": "**D) \"The recovery was described as already gathering momentum before large-scale aid had fully arrived.\"**\n\nParagraph 9's secondary-contribution framing speaks of \"a recovery already gathering its own momentum,\" and Milward's camp places substantial recovery before large-scale 1948 disbursements. Gathering momentum ahead of full aid arrival is faithful wording. The sentence reports how the recovery is described in the debate, not a new causal verdict you must invent.\n\nMatch gathering momentum to Paragraph 9's phrasing and the pre-aid timing in Paragraph 6. Already gathering momentum before major aid matches the passage's debate terms, so the sentence stands.",
+          "passage_anchor": "a recovery already gathering its own momentum"
+        }
+      ]
+    },
+    {
+      "term": "a signal so faint by the time it reaches Earth's receiving antennas",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-08",
+          "statement_index": 5,
+          "statement": "In Paragraph 8, \"faint\" means weak or difficult to perceive clearly.",
+          "answer": true,
+          "explanation": "**E) In Paragraph 8, \"faint\" means weak or difficult to perceive clearly.**\n\nParagraph 8 calls the returning signal \"so faint\" that only specialised antennas can separate it from noise. That use matches \"weak / hard to perceive\" exactly. The \"so … that\" construction supplies its own definition, since the consequence it introduces is the need for extremely sensitive equipment. Nothing in the sentence points to the other sense of faint, such as losing consciousness, so the technical reading is the right one.\n\nFaint as weak and hard to detect fits Paragraph 8, so the meaning is **true**.",
+          "passage_anchor": "a signal so faint by the time it reaches Earth's receiving antennas"
+        }
+      ]
+    },
+    {
+      "term": "A student discount is transparent, publicly known, and verifiable",
+      "sources": [
+        {
+          "subsection": "t.2",
+          "passage_title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+          "task_id": "en-t-2-04",
+          "statement_index": 3,
+          "statement": "The student discount is described as more opaque than algorithmic pricing.",
+          "answer": false,
+          "explanation": "**C) The student discount is described as more opaque than algorithmic pricing.**\n\nParagraph (5) calls a student discount transparent, publicly known, and verifiable, then contrasts algorithmic personalised pricing as typically occurring invisibly with no disclosure. The statement reverses that opacity ranking. Both practices affect price, so it is easy to smear transparency onto the wrong one. Keep the contrast: student discounts are the transparent, choose-to-disclose case; algorithmic personalisation is the invisible one.\n\n**Trap:** Both practices affect price, so it is easy to smear transparency onto the wrong one.\n\nStudent discounts are the transparent case, so calling them more opaque than the algorithm does not hold.",
+          "passage_anchor": "A student discount is transparent, publicly known, and verifiable"
+        }
+      ]
+    },
+    {
+      "term": "a substantial share of the workforce",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-10",
+          "statement_index": 1,
+          "statement": "Replacing \"a lot of workers\" with \"a substantial share of the workforce\" preserves the meaning in a more formal register.",
+          "answer": true,
+          "explanation": "**A) Replacing \"a lot of workers\" with \"a substantial share of the workforce\" preserves the meaning in a more formal register.**\n\nBoth phrases mean a large proportion of workers; \"substantial share of the workforce\" simply lifts the register.\n\nNo new quantity claim or restriction is smuggled in. \"A lot of\" and \"a substantial share of\" are both deliberately vague about the exact figure, so the swap does not sharpen the claim beyond what was said.\n\nThe passage uses the same formal phrasing when it describes trials covering \"a substantial share of its working population.\" The substitution works: same proportional idea, more academic wording.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "a toll exceeding that of several long-feared infectious diseases",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-10",
+          "statement_index": 3,
+          "statement": "\"Burden,\" as in \"the global burden of disease,\" is used figuratively to mean the overall impact or cost of a health problem, not a physical object being carried.",
+          "answer": true,
+          "explanation": "**C) \"Burden,\" as in \"the global burden of disease,\" is used figuratively to mean the overall impact or cost of a health problem, not a physical object being carried.**\n\nParagraph 3’s huge AMR death toll is the kind of impact health writers call a \"burden\" — figurative weight/cost, not a load on someone’s back. The passage’s own word \"toll\" works the same way, naming a cost rather than a physical object.\n\n**Tip:** Abstract nouns paired with numbers — burden, toll, cost — are usually measuring impact figuratively.\n\nThe metaphor imports the idea of weight to convey scale: 1.27 million direct deaths and 4.95 million associated ones are presented as something societies carry. Reading \"burden\" literally here would make the standard epidemiological phrase meaningless.\n\nFigurative \"burden of disease\" correctly tracks impact rather than a physical object, so the claim holds.",
+          "passage_anchor": "a toll exceeding that of several long-feared infectious diseases"
+        }
+      ]
+    },
+    {
+      "term": "an animal reservoir of resistant bacteria,",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-10",
+          "statement_index": 1,
+          "statement": "\"Reservoir,\" in the phrase \"an animal reservoir of resistant bacteria,\" is used figuratively to mean a population that harbours and maintains a pathogen over time, extending its literal water-storage meaning.",
+          "answer": true,
+          "explanation": "**A) \"Reservoir,\" in the phrase \"an animal reservoir of resistant bacteria,\" is used figuratively to mean a population that harbours and maintains a pathogen over time, extending its literal water-storage meaning.**\n\nEpidemiology borrows \"reservoir\" from literal water storage to mean a host population that keeps a pathogen stocked over time. That figurative extension fits agricultural reservoirs of resistance implied by Paragraph 4’s livestock use. The metaphor works because both senses share the idea of something being held in quantity and available to be released.\n\n**Tip:** Literal water storage → figurative pathogen-holding population is a standard science metaphor.\n\nThe statement also explains the transfer rather than just labelling it, which is what makes it accurate: a population is not a container of water, but it functions as a store. Densely housed animals receiving routine antibiotics are precisely the kind of maintaining population the term names.\n\nThe figurative reservoir reading is correctly identified, so the claim holds.",
+          "passage_anchor": "This agricultural use contributes substantially to the environmental spread of resistance genes"
+        }
+      ]
+    },
+    {
+      "term": "Analysts warn that the trend could erode over the coming decade.",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-08",
+          "statement_index": 5,
+          "statement": "\"Analysts warn that the trend could erode over the coming decade.\"",
+          "answer": true,
+          "explanation": "**E) \"Analysts warn that the trend could erode over the coming decade.\"**\n\n\"Erode over\" + time span is a natural way to say gradual weakening across years.\n\nThe adverbial \"over the coming decade\" supplies exactly that span. This mirrors the passage's own \"could erode over time,\" with a specific period replacing the general one.\n\nThe modal \"could\" also suits a forecast, keeping the prediction appropriately tentative. The pairing stands: erode over a period is idiomatic and clear.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "applies",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-07",
+          "statement_index": 5,
+          "statement": "\"The new rule applies to a narrow range of cases, covering almost every situation imaginable.\"",
+          "answer": false,
+          "explanation": "**E) \"The new rule applies to a narrow range of cases, covering almost every situation imaginable.\"**\n\n\"Narrow\" means limited; \"almost every situation imaginable\" means nearly universal coverage.\n\nThe range claim and the coverage claim contradict each other. Both clauses describe the same rule's scope, so one has to be wrong; they cannot both hold at once.\n\nThe contradiction is a scope mismatch rather than a vocabulary error in either phrase taken alone. The wording fails: a narrow range cannot also cover almost every case.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "Arms race,",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-10",
+          "statement_index": 2,
+          "statement": "\"Arms race,\" used to describe the ongoing competition between antibiotic development and bacterial evolution, is used in its original, literal military sense.",
+          "answer": false,
+          "explanation": "**B) \"Arms race,\" used to describe the ongoing competition between antibiotic development and bacterial evolution, is used in its original, literal military sense.**\n\nDrug-versus-bug \"arms race\" language is a metaphor: competitive escalation borrowed from military rivalry, not tanks and missiles. Calling it the original literal military sense mislabels the figure. Bacteria do not build weapons; what is transferred is the shape of the situation, in which each side’s advance prompts a counter-advance.\n\n**Trap:** Familiar war metaphors in science writing are almost never literal weapon talk.\n\nA metaphor does not become literal through frequent use, however natural the phrase now sounds in medical writing. The passage’s own pattern — new drugs followed by new resistance — is what the borrowed phrase describes, and that pattern is biological rather than military.\n\nThe military-literal claim is wrong for this figurative use, so the statement fails.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "as a tool of Cold War containment",
+      "sources": [
+        {
+          "subsection": "t.5",
+          "passage_title": "The Marshall Plan and the Politics of Economic Recovery",
+          "task_id": "en-t-5-09",
+          "statement_index": 5,
+          "statement": "\"Containment, in this context, refers to actively expanding the political influence of a rival power.\"",
+          "answer": false,
+          "explanation": "**E) \"Containment, in this context, refers to actively expanding the political influence of a rival power.\"**\n\nContainment means checking or limiting a rival's spread of influence, not expanding it. Expanding a rival's reach is roughly the inverse of Cold War containment as the passage frames it. The passage's tool-of-containment framing aims to reduce communist appeal, which is limiting, not enlarging, rival influence.\n\n**Trap:** Containment and expansion can both appear in geopolitics talk, but they pull in opposite directions.\n\nIf the definition flips limit into expand, reject it even when the topic words sound familiar. Expanding rival influence is not containment, so the definition fails.",
+          "passage_anchor": "as a tool of Cold War containment"
+        }
+      ]
+    },
+    {
+      "term": "asymmetry",
+      "sources": [
+        {
+          "subsection": "t.2",
+          "passage_title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+          "task_id": "en-t-2-09",
+          "statement_index": 3,
+          "statement": "\"The two prices were asymmetry, with one customer paying visibly more than another.\"",
+          "answer": false,
+          "explanation": "**C) \"The two prices were asymmetry, with one customer paying visibly more than another.\"**\n\nAsymmetry is a noun; after were the sentence needs an adjective such as asymmetric (or a noun phrase like \"an asymmetry\"). Bare \"were asymmetry\" is the wrong part of speech. Abstract nouns often sneak in where the related adjective belongs. Fix the word class: were asymmetric, or there was an asymmetry.\n\n**Trap:** Abstract nouns often sneak in where the related adjective belongs.\n\nWere needs an adjective here, so the line doesn’t hold — \"The two prices were asymmetric, with one customer paying visibly more than another.\"",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "breeding",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-09",
+          "statement_index": 5,
+          "statement": "\"A breeding colony refers to a group of animals that reproduce and nest together in the same area.\"",
+          "answer": true,
+          "explanation": "**E) \"A breeding colony refers to a group of animals that reproduce and nest together in the same area.\"**\n\nThat is the ordinary biology sense; paragraph 7’s “Breeding colonies” that dive-bomb intruders are communal nesting groups, not solitary nests. Collective defence in ¶7 presupposes that communal grouping.\n\nCommunal breed-and-nest group matches breeding colony, so the definition is sound. Shared place + reproduction/nesting is the core; aggression is a behaviour of some colonies, not part of the definition itself.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "Burden,",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-10",
+          "statement_index": 3,
+          "statement": "\"Burden,\" as in \"the global burden of disease,\" is used figuratively to mean the overall impact or cost of a health problem, not a physical object being carried.",
+          "answer": true,
+          "explanation": "**C) \"Burden,\" as in \"the global burden of disease,\" is used figuratively to mean the overall impact or cost of a health problem, not a physical object being carried.**\n\nParagraph 3’s huge AMR death toll is the kind of impact health writers call a \"burden\" — figurative weight/cost, not a load on someone’s back. The passage’s own word \"toll\" works the same way, naming a cost rather than a physical object.\n\n**Tip:** Abstract nouns paired with numbers — burden, toll, cost — are usually measuring impact figuratively.\n\nThe metaphor imports the idea of weight to convey scale: 1.27 million direct deaths and 4.95 million associated ones are presented as something societies carry. Reading \"burden\" literally here would make the standard epidemiological phrase meaningless.\n\nFigurative \"burden of disease\" correctly tracks impact rather than a physical object, so the claim holds.",
+          "passage_anchor": "a toll exceeding that of several long-feared infectious diseases"
+        }
+      ]
+    },
+    {
+      "term": "caution against the practice",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-10",
+          "statement_index": 4,
+          "statement": "Replacing \"think it's not fair\" with \"caution against the practice\" preserves the meaning in a more formal register.",
+          "answer": false,
+          "explanation": "**D) Replacing \"think it's not fair\" with \"caution against the practice\" preserves the meaning in a more formal register.**\n\nJudging something unfair is a fairness appraisal; \"caution against\" warns about risk or harm. Those are different speech acts.\n\nFormal tone alone does not make an opinion of injustice into a risk warning. You can consider a practice unfair yet never warn anyone off it, and you can warn against a practice you think is perfectly fair but risky.\n\nA faithful formal version would be closer to \"regard the practice as inequitable.\" The substitution fails: the new phrase changes the claim, not just the register.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "citizens are treated as donors unless they explicitly object",
+      "sources": [
+        {
+          "subsection": "t.6",
+          "passage_title": "Nudge Theory and the Limits of Behavioural Public Policy",
+          "task_id": "en-t-6-10",
+          "statement_index": 2,
+          "statement": "\"An opt-out default means citizens must actively register before being included in a scheme.\"",
+          "answer": false,
+          "explanation": "**B) \"An opt-out default means citizens must actively register before being included in a scheme.\"**\n\nThat describes opt-in. Under opt-out / presumed consent, people are included by default unless they actively object (Paragraphs 2–3). The defining question is who has to take action, and under opt-out it is the person who wants to leave.\n\n**Trap:** Opt-in vs opt-out swap is the whole error.\n\nA quick test is to ask what happens to someone who does nothing: under opt-out they are enrolled, under opt-in they are not. The definition names the wrong default rule, so the wording is not used correctly.",
+          "passage_anchor": "citizens are treated as donors unless they explicitly object"
+        }
+      ]
+    },
+    {
+      "term": "codified",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-08",
+          "statement_index": 3,
+          "statement": "In Paragraph 3, \"codified\" means formally organised and systematically documented.",
+          "answer": true,
+          "explanation": "**C) In Paragraph 3, \"codified\" means formally organised and systematically documented.**\n\nParagraph 3 contrasts quaternary work's \"specialised, codified knowledge\" with routine service delivery needing little formal expertise. Codified here means knowledge organised into systematic, documentable form — matching the given gloss. The foil is \"repeated, standardised service delivery\" with little formal expertise, which sharpens why codified knowledge is the quaternary marker. Keep specialised and codified together: the proposal's distinction rests on that organised-knowledge criterion.\n\nThe passage sense fits the stated meaning, so the claim holds.",
+          "passage_anchor": "specialised, codified knowledge rather than repeated, standardised service delivery"
+        }
+      ]
+    },
+    {
+      "term": "collectively dive-bomb intruders",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-10",
+          "statement_index": 1,
+          "statement": "\"Dive-bombing, as a defensive behaviour, refers to a bird making a fast, aggressive downward attack toward a threat.\"",
+          "answer": true,
+          "explanation": "**A) \"Dive-bombing, as a defensive behaviour, refers to a bird making a fast, aggressive downward attack toward a threat.\"**\n\nThat matches ordinary bird-behaviour use and paragraph 7’s colonies that “collectively dive-bomb intruders,” striking heads with bills. Fast downward aggression toward a threat is exact. Collective colony action is extra colour; the verb itself still names the attack style.\n\nDefensive downward attack is the right sense, so the wording stands. Keep “downward / aggressive / toward a threat” in the gloss and you stay aligned with both dictionary and passage use.",
+          "passage_anchor": "collectively dive-bomb intruders"
+        }
+      ]
+    },
+    {
+      "term": "colony",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-09",
+          "statement_index": 5,
+          "statement": "\"A breeding colony refers to a group of animals that reproduce and nest together in the same area.\"",
+          "answer": true,
+          "explanation": "**E) \"A breeding colony refers to a group of animals that reproduce and nest together in the same area.\"**\n\nThat is the ordinary biology sense; paragraph 7’s “Breeding colonies” that dive-bomb intruders are communal nesting groups, not solitary nests. Collective defence in ¶7 presupposes that communal grouping.\n\nCommunal breed-and-nest group matches breeding colony, so the definition is sound. Shared place + reproduction/nesting is the core; aggression is a behaviour of some colonies, not part of the definition itself.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "committee",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-07",
+          "statement_index": 3,
+          "statement": "\"The committee described the outcome as an overwhelming failure, praising it in their final report.\"",
+          "answer": false,
+          "explanation": "**C) \"The committee described the outcome as an overwhelming failure, praising it in their final report.\"**\n\nAn \"overwhelming failure\" is a strongly negative verdict; \"praising it\" requires celebration of success.\n\nThose two speech-act halves cancel each other inside one sentence. The pronoun \"it\" ties both reactions to the same outcome, so there is no way to read the praise as directed at something else.\n\nThe intensifier \"overwhelming\" also rules out a mild or mixed judgement that praise might sit beside. The wording fails: you do not praise what you have just labelled an overwhelming failure.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "compression",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-09",
+          "statement_index": 1,
+          "statement": "In Paragraph 1, \"compression\" (of structural transformation) means the process took noticeably longer than usual.",
+          "answer": false,
+          "explanation": "**A) In Paragraph 1, \"compression\" (of structural transformation) means the process took noticeably longer than usual.**\n\nParagraph 1 praises Korea's \"compression of structural transformation\" versus European paths that took \"well over a century.\" Compression shortens the timeline; \"noticeably longer\" reverses that sense. The century-plus European span is the long comparison case; Korea is the compressed, faster trajectory. Any gloss that turns compression into delay fights both the word and the Europe-versus-Korea contrast.\n\n**Trap:** Compression ≠ elongation — the European comparison already signals speed-up.\n\nThe claimed meaning contradicts the compression contrast, so it fails.",
+          "passage_anchor": "a compression of structural transformation that took many earlier-industrialising European economies well over a century to accomplish"
+        }
+      ]
+    },
+    {
+      "term": "conceptual",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-09",
+          "statement_index": 4,
+          "statement": "In Paragraph 9, \"conceptual\" means relating to abstract ideas or frameworks, not physical objects.",
+          "answer": true,
+          "explanation": "**D) In Paragraph 9, \"conceptual\" means relating to abstract ideas or frameworks, not physical objects.**\n\nParagraph 9 asks whether the sector model needs \"fundamental conceptual revision\" to stay analytically meaningful — revision of ideas and frameworks, not of physical machinery. The abstract-framework gloss is right. The debate is whether three-, four-, or five-category forms still capture structural change as analytical tools. Nothing in the closing sentence is about rewriting factory equipment; the target is the model's concepts.\n\nThe word's passage use supports the stated meaning, so the claim is true.",
+          "passage_anchor": "fundamental conceptual revision to remain analytically meaningful"
+        }
+      ]
+    },
+    {
+      "term": "conflates",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-08",
+          "statement_index": 4,
+          "statement": "In Paragraph 2, \"conflates\" means carefully distinguishes between two separate things.",
+          "answer": false,
+          "explanation": "**D) In Paragraph 2, \"conflates\" means carefully distinguishes between two separate things.**\n\nParagraph 2 criticises commentary that \"conflates falling factory employment with a supposedly hollowed-out industrial base\" — merging two different ideas into one muddle. That is the opposite of carefully distinguishing them. Employment share can fall while real output rises; conflating those facts with a hollowed-out base is the popular error the paragraph names. Distinguish keeps the ideas apart; conflate fuses them — the gloss has the wrong pole.\n\n**Trap:** Conflate ≈ confuse/merge; distinguish ≈ keep apart.\n\nThe gloss flips the verb, so the statement fails.",
+          "passage_anchor": "conflates falling factory employment with a supposedly hollowed-out industrial base"
+        }
+      ]
+    },
+    {
+      "term": "consistent with, though not conclusive proof of, income-based discrimination",
+      "sources": [
+        {
+          "subsection": "t.2",
+          "passage_title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+          "task_id": "en-t-2-10",
+          "statement_index": 4,
+          "statement": "\"The audit's findings were consistent with, though not conclusive proof of, deliberate discrimination.\"",
+          "answer": true,
+          "explanation": "**D) \"The audit's findings were consistent with, though not conclusive proof of, deliberate discrimination.\"**\n\nThe hedging frame \"consistent with, though not conclusive proof of\" is precise academic English: it allows alignment with a hypothesis without upgrading to proof. Paragraph (6) uses the same scaffold for income-based discrimination. Dropping the hedge and saying proved would overstate the audit's claim. Keep both halves of the frame — consistent with, not conclusive proof.\n\nThat careful hedge is used correctly, so the wording holds.",
+          "passage_anchor": "consistent with, though not conclusive proof of, income-based discrimination"
+        }
+      ]
+    },
+    {
+      "term": "contentious",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-08",
+          "statement_index": 4,
+          "statement": "In Paragraph 6, \"contentious\" means uncontroversial and easily agreed upon.",
+          "answer": false,
+          "explanation": "**D) In Paragraph 6, \"contentious\" means uncontroversial and easily agreed upon.**\n\nParagraph 6 describes \"difficult, often contentious deliberations\" about what could represent humanity. Contentious means disputed or apt to spark disagreement — the reverse of uncontroversial. It is paired with \"difficult\" in the same phrase, and coordinated adjectives usually pull in the same direction rather than opposite ones. The root is the same as in contend and contention, both of which involve struggle or dispute.\n\nContentious signals conflict, so equating it with easy agreement is **false**.",
+          "passage_anchor": "forced difficult, often contentious deliberations"
+        }
+      ]
+    },
+    {
+      "term": "contested",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-09",
+          "statement_index": 2,
+          "statement": "In Paragraph 4, \"contested\" means widely agreed upon without any dispute.",
+          "answer": false,
+          "explanation": "**B) In Paragraph 4, \"contested\" means widely agreed upon without any dispute.**\n\nParagraph 4 says quinary boundaries \"remain genuinely contested\" and are applied inconsistently. Contested means disputed, not \"widely agreed upon without any dispute.\" Inconsistent application across agencies is the practical symptom of that dispute. A no-dispute gloss would also clash with the paragraph's warning to treat cross-country quinary comparisons with methodological caution.\n\nThe gloss is the opposite of the paragraph, so the statement is false.",
+          "passage_anchor": "Its boundaries remain genuinely contested and are applied inconsistently"
+        }
+      ]
+    },
+    {
+      "term": "corroborating",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-08",
+          "statement_index": 5,
+          "statement": "In Paragraph 5, \"corroborating\" means providing supporting confirmation for a claim.",
+          "answer": true,
+          "explanation": "**E) In Paragraph 5, \"corroborating\" means providing supporting confirmation for a claim.**\n\nParagraph 5 calls the multi-country pattern \"further corroborating evidence favouring automation-driven productivity gains\" — evidence that backs the automation reading. Supporting confirmation is exactly that role. \"Further\" signals additional backing for an explanation already on the table, not a brand-new rival mechanism. If a gloss said \"contradicting\" or \"replacing,\" it would fight the passage's favouring / corroborating frame.\n\nThe passage use matches the gloss, so the claim is true.",
+          "passage_anchor": "further corroborating evidence favouring automation-driven productivity gains"
+        }
+      ]
+    },
+    {
+      "term": "cost between 20% and 25% more per unit than the offshored equivalent",
+      "sources": [
+        {
+          "subsection": "t.4",
+          "passage_title": "Reshoring, Nearshoring, and the Post-Pandemic Reordering of Global Supply Chains",
+          "task_id": "en-t-4-10",
+          "statement_index": 3,
+          "statement": "\"The subsidy was described as sufficient to fully eliminate the cost gap between relocated and offshored production.\"",
+          "answer": false,
+          "explanation": "**C) \"The subsidy was described as sufficient to fully eliminate the cost gap between relocated and offshored production.\"**\n\nThe text never says subsidies wipe out the gap; reshored production still costs \"20% and 25% more per unit,\" with only a modest consumer share and margins/automation covering the rest. \"Fully eliminate\" invents a claim. Policy can accelerate capacity without erasing the unit-cost premium.\n\nThat absolute wipeout overstates what subsidies do in the passage, so the statement fails. Reject \"fully eliminate\" whenever the text still prices a 20–25% premium.",
+          "passage_anchor": "cost between 20% and 25% more per unit than the offshored equivalent"
+        },
+        {
+          "subsection": "t.4",
+          "passage_title": "Reshoring, Nearshoring, and the Post-Pandemic Reordering of Global Supply Chains",
+          "task_id": "en-t-4-10",
+          "statement_index": 4,
+          "statement": "\"Reshored production is generally described in the passage as costlier per unit than its offshored equivalent.\"",
+          "answer": true,
+          "explanation": "**D) \"Reshored production is generally described in the passage as costlier per unit than its offshored equivalent.\"**\n\nParagraph 8 states reshored production costs \"between 20% and 25% more per unit than the offshored equivalent.\" \"Costlier per unit\" is a faithful paraphrase. \"Generally\" here simply reflects that average estimate, not a claim that every product category matches the same exact percentage.\n\nThe cost comparison matches the text, so the claim holds. Anchor on the more-per-unit wording rather than on how much of the gap reaches consumers.",
+          "passage_anchor": "cost between 20% and 25% more per unit than the offshored equivalent"
+        }
+      ]
+    },
+    {
+      "term": "counterintuitively",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-08",
+          "statement_index": 1,
+          "statement": "In Paragraph 1, \"counterintuitively\" means matching common expectations exactly.",
+          "answer": false,
+          "explanation": "**A) In Paragraph 1, \"counterintuitively\" means matching common expectations exactly.**\n\nParagraph 1 uses \"Counterintuitively\" to introduce the surprise that Voyager 2 launched first — against ordinary numbering expectations. The adverb means contrary to intuition, not \"matching expectations.\" The prefix counter- carries the sense of \"against\" or \"opposite,\" as in counterargument or counterweight. Its position at the head of the sentence is also functional: it warns the reader that what follows will upset the assumption they arrived with.\n\n**Trap:** The long Latinate word can feel \"neutral\" if you only hear \"intuitive\" and miss the counter- prefix.\n\nCounter- marks against expectation, so the claimed meaning is **false**.",
+          "passage_anchor": "Counterintuitively, Voyager 2 launched first"
+        }
+      ]
+    },
+    {
+      "term": "Counterintuitively, light can also serve as camouflage",
+      "sources": [
+        {
+          "subsection": "t.13",
+          "passage_title": "Living Light — Bioluminescence in the Deep Ocean",
+          "task_id": "en-t-13-10",
+          "statement_index": 1,
+          "statement": "Surprisingly, producing light can actually help an animal hide.",
+          "answer": true,
+          "explanation": "**A) Surprisingly, producing light can actually help an animal hide.**\n\nThe original says counterintuitively light can serve as camouflage. Surprisingly ≈ counterintuitively, and help an animal hide ≈ serve as camouflage, so both the surprise and the concealment keep pace. The paraphrase swaps wording but keeps the same unexpected function of light. Nothing in the line restores the everyday \"light reveals\" idea the original overturns.\n\nThe paraphrase preserves the unexpected hiding function of light.",
+          "passage_anchor": "Counterintuitively, light can also serve as camouflage"
+        },
+        {
+          "subsection": "t.13",
+          "passage_title": "Living Light — Bioluminescence in the Deep Ocean",
+          "task_id": "en-t-13-10",
+          "statement_index": 2,
+          "statement": "As expected, light always makes an animal easier to spot.",
+          "answer": false,
+          "explanation": "**B) As expected, light always makes an animal easier to spot.**\n\nAs expected reverses counterintuitively, and easier to spot erases camouflage. The line restores the default \"light reveals\" intuition the original overturns. Always and easier to spot leave no room for the camouflage concession paragraph 5 introduces. Changing both the stance adverb and the function means this is an opposite claim, not a restatement.\n\n**Trap:** Easier to spot feels like common sense about light, which is exactly what the original calls counterintuitive.\n\nThe paraphrase flips both the stance and the function, so it does not match.",
+          "passage_anchor": "Counterintuitively, light can also serve as camouflage"
+        },
+        {
+          "subsection": "t.13",
+          "passage_title": "Living Light — Bioluminescence in the Deep Ocean",
+          "task_id": "en-t-13-10",
+          "statement_index": 3,
+          "statement": "Unexpectedly, glowing can serve a concealment function instead.",
+          "answer": true,
+          "explanation": "**C) Unexpectedly, glowing can serve a concealment function instead.**\n\nUnexpectedly tracks counterintuitively, and concealment function instead restates camouflage as an alternate use of glow. Wording changes, meaning holds. Instead signals the same surprise that light can hide rather than only reveal. The paraphrase therefore stays loyal to the original's unexpected concealment core.\n\nThe paraphrase keeps the surprise-plus-concealment core of the original.",
+          "passage_anchor": "Counterintuitively, light can also serve as camouflage"
+        },
+        {
+          "subsection": "t.13",
+          "passage_title": "Living Light — Bioluminescence in the Deep Ocean",
+          "task_id": "en-t-13-10",
+          "statement_index": 4,
+          "statement": "Predictably, light exclusively reveals an animal's exact location.",
+          "answer": false,
+          "explanation": "**D) Predictably, light exclusively reveals an animal's exact location.**\n\nPredictably and exclusively reveals invert the original on two axes: stance (surprise → predictability) and function (camouflage → pure revelation). Nothing of the camouflage concession survives. Exclusively blocks any hiding use, which is the opposite of light serving as camouflage. As a paraphrase check, both hinges fail, so the line cannot stand in for the original.\n\nThe paraphrase reverses the original, so it fails as a restatement.",
+          "passage_anchor": "Counterintuitively, light can also serve as camouflage"
+        },
+        {
+          "subsection": "t.13",
+          "passage_title": "Living Light — Bioluminescence in the Deep Ocean",
+          "task_id": "en-t-13-10",
+          "statement_index": 5,
+          "statement": "Against expectation, emitting light can help conceal an animal.",
+          "answer": true,
+          "explanation": "**E) Against expectation, emitting light can help conceal an animal.**\n\nAgainst expectation restates counterintuitively; emitting light … help conceal maps onto light as camouflage. Both hinge ideas remain. The stance adverb and the concealment function travel together, just as in the source sentence. That double match is what makes the line a true paraphrase rather than a near-miss.\n\nThe paraphrase matches the original's unexpected concealment claim.",
+          "passage_anchor": "Counterintuitively, light can also serve as camouflage"
+        }
+      ]
+    },
+    {
+      "term": "Counterintuitively, Voyager 2 launched first",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-08",
+          "statement_index": 1,
+          "statement": "In Paragraph 1, \"counterintuitively\" means matching common expectations exactly.",
+          "answer": false,
+          "explanation": "**A) In Paragraph 1, \"counterintuitively\" means matching common expectations exactly.**\n\nParagraph 1 uses \"Counterintuitively\" to introduce the surprise that Voyager 2 launched first — against ordinary numbering expectations. The adverb means contrary to intuition, not \"matching expectations.\" The prefix counter- carries the sense of \"against\" or \"opposite,\" as in counterargument or counterweight. Its position at the head of the sentence is also functional: it warns the reader that what follows will upset the assumption they arrived with.\n\n**Trap:** The long Latinate word can feel \"neutral\" if you only hear \"intuitive\" and miss the counter- prefix.\n\nCounter- marks against expectation, so the claimed meaning is **false**.",
+          "passage_anchor": "Counterintuitively, Voyager 2 launched first"
+        }
+      ]
+    },
+    {
+      "term": "Critics caution against the new proposal, citing several risks.",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-08",
+          "statement_index": 1,
+          "statement": "\"Critics caution against the new proposal, citing several risks.\"",
+          "answer": true,
+          "explanation": "**A) \"Critics caution against the new proposal, citing several risks.\"**\n\n\"Caution against\" is the fixed pairing for warning people away from a plan or practice.\n\nThe sentence uses that collocation cleanly before naming risks. The passage itself models the same pattern when critics \"caution against drawing overly broad conclusions,\" which is a useful memory hook.\n\nThe preposition \"against\" carries the sense of opposition, so the object must be the thing being warned about. The pairing stands: caution against + proposal is natural English.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "depended heavily on factors beyond the automatic mechanism itself",
+      "sources": [
+        {
+          "subsection": "t.3",
+          "passage_title": "The Rise and Fall of the Classical Gold Standard",
+          "task_id": "en-t-3-10",
+          "statement_index": 2,
+          "statement": "\"The system's golden age depended heavily on cooperative arrangements beyond the automatic mechanism alone.\"",
+          "answer": true,
+          "explanation": "**B) \"The system's golden age depended heavily on cooperative arrangements beyond the automatic mechanism alone.\"**\n\nParagraph (3) stresses that golden-age stability \"depended heavily on factors beyond the automatic mechanism itself,\" including London's role and cooperative following of the Bank of England's discount rate. Paragraph (8) later names the \"informal cooperative arrangements\" that had sustained the system before 1914. The statement's \"cooperative arrangements beyond the automatic mechanism\" therefore stitches those two passage ideas without adding new institutions. Price-specie flow alone is not presented as a sufficient explanation of 1870–1914 stability.\n\nCooperation beyond the automatic model is exactly the passage's caveat, so the claim is **true**.",
+          "passage_anchor": "depended heavily on factors beyond the automatic mechanism itself"
+        }
+      ]
+    },
+    {
+      "term": "Despite this extraordinary speed",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-09",
+          "statement_index": 1,
+          "statement": "In Paragraph 2, \"extraordinary\" means entirely ordinary and unremarkable.",
+          "answer": false,
+          "explanation": "**A) In Paragraph 2, \"extraordinary\" means entirely ordinary and unremarkable.**\n\nParagraph 2 labels Voyager 1's speed \"extraordinary\" just after calling it the fastest human-made object. Extraordinary means exceptional or remarkable — not ordinary. The prefix extra- here means \"beyond,\" so the word literally points outside the ordinary rather than inside it. The concessive opener \"Despite this extraordinary speed\" also depends on the speed being impressive, since there would be nothing to concede otherwise.\n\nExtraordinary and ordinary are opposites, so the claimed gloss is **false**.",
+          "passage_anchor": "Despite this extraordinary speed"
+        }
+      ]
+    },
+    {
+      "term": "deterrent",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 3,
+          "statement": "\"Incentive\" means something that encourages a particular action, while \"deterrent\" means something that discourages an action — near-opposite functions.",
+          "answer": true,
+          "explanation": "**C) \"Incentive\" means something that encourages a particular action, while \"deterrent\" means something that discourages an action — near-opposite functions.**\n\nParagraph 7’s \"push\" and \"pull\" incentive models are rewards meant to encourage antibiotic development. \"Deterrent\" points the other way — discouragement — so calling them near-opposites is right. The passage’s own examples make the encouraging function concrete: subsidies and guaranteed market-entry rewards both exist to draw firms back into research.\n\n**Tip:** Anchor abstract vocabulary to the passage’s examples; here the incentives are payments designed to attract, not penalties designed to repel.\n\nThe hedge \"near-opposite\" is well chosen, since the two words are not perfect antonyms in every context but do pull in contrary directions on behaviour. Recognising that they answer the same question — encourage or discourage? — with opposite answers is what settles the item.\n\nIncentive versus deterrent as encourage / discourage near-opposites is accurate, so the claim holds.",
+          "passage_anchor": "proposed a range of \"push\" and \"pull\" incentive models"
+        }
+      ]
+    },
+    {
+      "term": "device",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-09",
+          "statement_index": 1,
+          "statement": "\"A geolocator is a small device used to record and transmit an animal's approximate location over time.\"",
+          "answer": true,
+          "explanation": "**A) \"A geolocator is a small device used to record and transmit an animal's approximate location over time.\"**\n\nThat matches how the passage’s 2010 tags work: tiny devices that let movements be “tracked in detail.” Location-logging over time is the established sense, not a navigational compass itself. Weight under two grams is a passage detail about these devices, not a required part of the dictionary definition.\n\nThe definition fits standard scientific use (and ¶2’s trackers), so the wording is sound. Device + location over time is enough; do not demand every passage adjective appear in the gloss.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "difficult to detect from any single monitoring location alone",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-10",
+          "statement_index": 5,
+          "statement": "\"A monitoring location refers to a fixed point from which researchers observe and record data over time.\"",
+          "answer": true,
+          "explanation": "**E) \"A monitoring location refers to a fixed point from which researchers observe and record data over time.\"**\n\nThat is standard field-science sense; paragraph 8’s worry that disruption may be “difficult to detect from any single monitoring location alone” assumes fixed watchpoints gathering observations. “Single… alone” only makes sense if each location is a discrete observational site.\n\nA fixed observational site matches monitoring location, so the wording is sound. Fixed point + observe/record over time is the definition; the climate-disruption worry merely uses that term.",
+          "passage_anchor": "difficult to detect from any single monitoring location alone"
+        }
+      ]
+    },
+    {
+      "term": "diversification toward allied or trusted third countries",
+      "sources": [
+        {
+          "subsection": "t.4",
+          "passage_title": "Reshoring, Nearshoring, and the Post-Pandemic Reordering of Global Supply Chains",
+          "task_id": "en-t-4-09",
+          "statement_index": 4,
+          "statement": "\"The firm's diversification strategy left it wholly dependent on a single foreign supplier.\"",
+          "answer": false,
+          "explanation": "**D) \"The firm's diversification strategy left it wholly dependent on a single foreign supplier.\"**\n\nDiversification means spreading exposure across sources; \"wholly dependent on a single foreign supplier\" is concentration, the opposite outcome. The sentence forces contradictory poles into one strategy label. In the passage, diversification is the move toward allied third countries — the opposite of single-supplier dependence.\n\nThat clash of meanings overturns the claim. Reject any item that defines diversification as ending in sole dependence.",
+          "passage_anchor": "diversification toward allied or trusted third countries"
+        }
+      ]
+    },
+    {
+      "term": "dosage",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 5,
+          "statement": "\"Dose\" refers to a measured quantity of medicine taken at one time, while \"dosage\" refers to the regimen or schedule of doses over time.",
+          "answer": true,
+          "explanation": "**E) \"Dose\" refers to a measured quantity of medicine taken at one time, while \"dosage\" refers to the regimen or schedule of doses over time.**\n\nStandard medical English keeps \"dose\" as a single measured amount and \"dosage\" as the planned schedule of doses. Sub-lethal exposure talk in these themes still relies on that dose-unit idea. A patient takes one dose now; the dosage specifies how many such doses to take and how often.\n\n**Tip:** Think of dose as the unit and dosage as the pattern — a single event versus a regimen across time.\n\nThe distinction matters directly for antibiotics, where the passage’s theme of resistance depends on how long and how consistently a course is taken. Confusing the two words would blur the difference between one measured amount and the whole treatment plan.\n\nThe dose / dosage schedule distinction matches careful usage, so the claim holds.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "Dose",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 5,
+          "statement": "\"Dose\" refers to a measured quantity of medicine taken at one time, while \"dosage\" refers to the regimen or schedule of doses over time.",
+          "answer": true,
+          "explanation": "**E) \"Dose\" refers to a measured quantity of medicine taken at one time, while \"dosage\" refers to the regimen or schedule of doses over time.**\n\nStandard medical English keeps \"dose\" as a single measured amount and \"dosage\" as the planned schedule of doses. Sub-lethal exposure talk in these themes still relies on that dose-unit idea. A patient takes one dose now; the dosage specifies how many such doses to take and how often.\n\n**Tip:** Think of dose as the unit and dosage as the pattern — a single event versus a regimen across time.\n\nThe distinction matters directly for antibiotics, where the passage’s theme of resistance depends on how long and how consistently a course is taken. Confusing the two words would blur the difference between one measured amount and the whole treatment plan.\n\nThe dose / dosage schedule distinction matches careful usage, so the claim holds.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "dwindling",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-08",
+          "statement_index": 3,
+          "statement": "In Paragraph 4, \"dwindling\" means steadily increasing in quantity or strength.",
+          "answer": false,
+          "explanation": "**C) In Paragraph 4, \"dwindling\" means steadily increasing in quantity or strength.**\n\nParagraph 4 speaks of \"dwindling power\" as engineers shut instruments to conserve what remains. Dwindling means shrinking or running down, not building up. The word \"conserve\" in the same clause only makes sense if the resource is being lost rather than gained. The surrounding logic of shutting instruments down points the same way, since nobody rations a supply that is growing.\n\n**Trap:** Context about generators can tempt \"still producing power,\" but dwindling tracks the decline, not growth.\n\nDwindling is decrease, not increase, so the meaning claim is **false**.",
+          "passage_anchor": "progressively shut down individual scientific instruments aboard each probe to conserve dwindling power"
+        },
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-09",
+          "statement_index": 4,
+          "statement": "In Paragraph 9, \"dwindling\" (as in \"dwindling power\") means power that is steadily decreasing.",
+          "answer": true,
+          "explanation": "**D) In Paragraph 9, \"dwindling\" (as in \"dwindling power\") means power that is steadily decreasing.**\n\nParagraph 9 wonders whether \"dwindling power will silence both spacecraft\" before the fiftieth launch anniversary. That use is power steadily falling away — the definition given. The verb \"silence\" confirms the direction of travel, since only a shrinking supply could shut the probes down. The word carries the same sense here as it does in Paragraph 4, so the two uses reinforce each other.\n\nDwindling power as steadily decreasing fits Paragraph 9, so the claim is **true**.",
+          "passage_anchor": "whether dwindling power will silence both spacecraft before that milestone arrives"
+        }
+      ]
+    },
+    {
+      "term": "dwindling power",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-09",
+          "statement_index": 4,
+          "statement": "In Paragraph 9, \"dwindling\" (as in \"dwindling power\") means power that is steadily decreasing.",
+          "answer": true,
+          "explanation": "**D) In Paragraph 9, \"dwindling\" (as in \"dwindling power\") means power that is steadily decreasing.**\n\nParagraph 9 wonders whether \"dwindling power will silence both spacecraft\" before the fiftieth launch anniversary. That use is power steadily falling away — the definition given. The verb \"silence\" confirms the direction of travel, since only a shrinking supply could shut the probes down. The word carries the same sense here as it does in Paragraph 4, so the two uses reinforce each other.\n\nDwindling power as steadily decreasing fits Paragraph 9, so the claim is **true**.",
+          "passage_anchor": "whether dwindling power will silence both spacecraft before that milestone arrives"
+        }
+      ]
+    },
+    {
+      "term": "easing what might otherwise have been a persistently deflationary bias",
+      "sources": [
+        {
+          "subsection": "t.3",
+          "passage_title": "The Rise and Fall of the Classical Gold Standard",
+          "task_id": "en-t-3-09",
+          "statement_index": 3,
+          "statement": "\"The gold discoveries eased what might otherwise have been a persistently deflationary bias in the system.\"",
+          "answer": true,
+          "explanation": "**C) \"The gold discoveries eased what might otherwise have been a persistently deflationary bias in the system.\"**\n\nParagraph (3) says the Witwatersrand-driven production surge was \"easing what might otherwise have been a persistently deflationary bias in a system reliant on a fixed physical commodity.\" The sentence restates that easing role with the same collocates. \"Eased\" / \"persistently deflationary bias\" are the passage's own pairing, not a new causal claim. The discoveries matter because a fixed gold stock would otherwise have kept money tight as economies grew.\n\nThe eased / persistently deflationary bias wording matches the passage, so the claim is **true**.",
+          "passage_anchor": "easing what might otherwise have been a persistently deflationary bias"
+        }
+      ]
+    },
+    {
+      "term": "effectively chasing perpetual summer between hemispheres",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-10",
+          "statement_index": 3,
+          "statement": "\"Perpetual summer, as used figuratively here, refers to continuously experiencing summer-like daylight conditions by moving between hemispheres.\"",
+          "answer": true,
+          "explanation": "**C) \"Perpetual summer, as used figuratively here, refers to continuously experiencing summer-like daylight conditions by moving between hemispheres.\"**\n\nParagraph 1’s “effectively chasing perpetual summer between hemispheres” is figurative daylight strategy, not literal endless calendar summer in one place. The gloss tracks that metaphor. Hemispheric movement is essential; a bird staying put cannot “chase” summer in the passage’s sense.\n\nChasing daylight summers across hemispheres matches ¶1’s figurative perpetual summer, so the wording stands. Honour the figurative / daylight framing and you will not over-literalise the metaphor.",
+          "passage_anchor": "effectively chasing perpetual summer between hemispheres"
+        }
+      ]
+    },
+    {
+      "term": "Engineers deliberately selected robust, non-digital analogue encoding",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-09",
+          "statement_index": 2,
+          "statement": "In Paragraph 5, \"robust\" means fragile and easily damaged.",
+          "answer": false,
+          "explanation": "**B) In Paragraph 5, \"robust\" means fragile and easily damaged.**\n\nParagraph 5 says engineers chose \"robust, non-digital analogue encoding\" so the record could survive and be reconstructed later. Robust means sturdy and durable, not fragile. The stated purpose settles it: an encoding meant to outlast the mission and be decoded by unknown finders has to be resilient by design. A fragile format would defeat the very reason the passage gives for the choice.\n\n**Trap:** Analogue can sound \"old\" and therefore fragile, but the text pairs it with robustness on purpose.\n\nRobust means durable here, so fragile is **false**.",
+          "passage_anchor": "Engineers deliberately selected robust, non-digital analogue encoding"
+        }
+      ]
+    },
+    {
+      "term": "erode",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-10",
+          "statement_index": 2,
+          "statement": "Replacing \"wear away slowly\" with \"erode\" preserves the meaning in a more formal register.",
+          "answer": true,
+          "explanation": "**B) Replacing \"wear away slowly\" with \"erode\" preserves the meaning in a more formal register.**\n\n\"Erode\" is the compact formal verb for gradual wearing-away, matching \"wear away slowly\" in sense.\n\nThe swap tightens style without flipping direction of change. Gradualness is already built into the verb, so nothing is lost when the adverb \"slowly\" disappears.\n\nReplacing a multi-word phrasal expression with a single Latinate verb is one of the standard moves for raising register. The substitution works: erode keeps the slow-loss meaning in formal vocabulary.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "evidence",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-07",
+          "statement_index": 1,
+          "statement": "\"The evidence was so skewed that it perfectly represented every group in equal proportion.\"",
+          "answer": false,
+          "explanation": "**A) \"The evidence was so skewed that it perfectly represented every group in equal proportion.\"**\n\n\"Skewed\" means distorted or unbalanced, so it cannot describe evidence that \"perfectly represented every group in equal proportion.\"\n\nThe sentence pairs the word with its opposite meaning and collapses. The \"so… that\" construction makes the damage worse, because it presents balance as the consequence of distortion.\n\nIn research writing, skewed data is precisely the situation that stops you from generalising to every group. The wording fails: skewed evidence is biased, not evenly representative.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "explanation",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-07",
+          "statement_index": 4,
+          "statement": "\"Her explanation was substantial, covering the entire issue in exhaustive, well-supported detail.\"",
+          "answer": true,
+          "explanation": "**D) \"Her explanation was substantial, covering the entire issue in exhaustive, well-supported detail.\"**\n\n\"Substantial\" can mean large or weighty in scope; the follow-on \"exhaustive, well-supported detail\" confirms that sense rather than fighting it.\n\nAdjective and paraphrase pull in the same direction. The participial phrase functions as evidence for the adjective, which is the normal way a well-formed sentence backs up its own description.\n\nNote that \"substantial\" here means considerable in substance, not merely physically large, which is its standard academic use. The wording stands: substantial fits a thorough, well-supported explanation.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "exploiting known cognitive biases such as status quo bias and loss aversion",
+      "sources": [
+        {
+          "subsection": "t.6",
+          "passage_title": "Nudge Theory and the Limits of Behavioural Public Policy",
+          "task_id": "en-t-6-09",
+          "statement_index": 3,
+          "statement": "\"Status quo bias describes a tendency to prefer the current state of affairs over changing it.\"",
+          "answer": true,
+          "explanation": "**C) \"Status quo bias describes a tendency to prefer the current state of affairs over changing it.\"**\n\nThat is the ordinary meaning of status quo bias, and Paragraph 5 lists it among the cognitive biases nudges exploit when defaults stick. The sentence uses the term correctly. It also explains why defaults are powerful in the first place: leaving the current arrangement in place requires no action.\n\n**Tip:** For named biases, check the standard definition and then confirm it fits the passage's use.\n\nHere both tests agree, since the bias is exactly what makes an unchanged default persist. The meaning matches established usage (and the passage's framing), so the claim holds.",
+          "passage_anchor": "exploiting known cognitive biases such as status quo bias and loss aversion"
+        },
+        {
+          "subsection": "t.6",
+          "passage_title": "Nudge Theory and the Limits of Behavioural Public Policy",
+          "task_id": "en-t-6-10",
+          "statement_index": 3,
+          "statement": "\"Loss aversion describes a tendency to weigh potential losses more heavily than equivalent potential gains.\"",
+          "answer": true,
+          "explanation": "**C) \"Loss aversion describes a tendency to weigh potential losses more heavily than equivalent potential gains.\"**\n\nThat is the standard meaning of loss aversion, which Paragraph 5 lists among the biases nudges exploit. The sentence uses the term correctly. The word \"equivalent\" matters, since the bias is about asymmetric weighting of gains and losses of the same size.\n\n**Tip:** Precision words in a definition often carry the concept; check them rather than skimming.\n\nBoth the direction of the asymmetry and the equal-magnitude comparison are stated accurately here. The meaning matches established usage, so the claim holds.",
+          "passage_anchor": "exploiting known cognitive biases such as status quo bias and loss aversion"
+        }
+      ]
+    },
+    {
+      "term": "extraordinary",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-09",
+          "statement_index": 1,
+          "statement": "In Paragraph 2, \"extraordinary\" means entirely ordinary and unremarkable.",
+          "answer": false,
+          "explanation": "**A) In Paragraph 2, \"extraordinary\" means entirely ordinary and unremarkable.**\n\nParagraph 2 labels Voyager 1's speed \"extraordinary\" just after calling it the fastest human-made object. Extraordinary means exceptional or remarkable — not ordinary. The prefix extra- here means \"beyond,\" so the word literally points outside the ordinary rather than inside it. The concessive opener \"Despite this extraordinary speed\" also depends on the speed being impressive, since there would be nothing to concede otherwise.\n\nExtraordinary and ordinary are opposites, so the claimed gloss is **false**.",
+          "passage_anchor": "Despite this extraordinary speed"
+        }
+      ]
+    },
+    {
+      "term": "faint",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-08",
+          "statement_index": 5,
+          "statement": "In Paragraph 8, \"faint\" means weak or difficult to perceive clearly.",
+          "answer": true,
+          "explanation": "**E) In Paragraph 8, \"faint\" means weak or difficult to perceive clearly.**\n\nParagraph 8 calls the returning signal \"so faint\" that only specialised antennas can separate it from noise. That use matches \"weak / hard to perceive\" exactly. The \"so … that\" construction supplies its own definition, since the consequence it introduces is the need for extremely sensitive equipment. Nothing in the sentence points to the other sense of faint, such as losing consciousness, so the technical reading is the right one.\n\nFaint as weak and hard to detect fits Paragraph 8, so the meaning is **true**.",
+          "passage_anchor": "a signal so faint by the time it reaches Earth's receiving antennas"
+        }
+      ]
+    },
+    {
+      "term": "favourable prevailing wind patterns",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-09",
+          "statement_index": 2,
+          "statement": "\"Prevailing wind patterns refers to the specific winds that occur only once, on a single unrepeated occasion.\"",
+          "answer": false,
+          "explanation": "**B) \"Prevailing wind patterns refers to the specific winds that occur only once, on a single unrepeated occasion.\"**\n\nPrevailing means dominant or usual over a period — the opposite of a one-off gust. Paragraph 3’s “favourable prevailing wind patterns” are habitual routes, not single-event winds. A one-time breeze cannot be “prevailing” in ordinary or scientific English.\n\n**Trap:** Sounding like “the winds that prevail today” can be twisted into “once only”; the adjective means typically dominant.\n\nOnce-only winds invert prevailing’s meaning, so this use fails. If the gloss erases the habitual / dominant sense, reject it even when wind vocabulary from the passage is present.",
+          "passage_anchor": "favourable prevailing wind patterns"
+        }
+      ]
+    },
+    {
+      "term": "forced difficult, often contentious deliberations",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-08",
+          "statement_index": 4,
+          "statement": "In Paragraph 6, \"contentious\" means uncontroversial and easily agreed upon.",
+          "answer": false,
+          "explanation": "**D) In Paragraph 6, \"contentious\" means uncontroversial and easily agreed upon.**\n\nParagraph 6 describes \"difficult, often contentious deliberations\" about what could represent humanity. Contentious means disputed or apt to spark disagreement — the reverse of uncontroversial. It is paired with \"difficult\" in the same phrase, and coordinated adjectives usually pull in the same direction rather than opposite ones. The root is the same as in contend and contention, both of which involve struggle or dispute.\n\nContentious signals conflict, so equating it with easy agreement is **false**.",
+          "passage_anchor": "forced difficult, often contentious deliberations"
+        }
+      ]
+    },
+    {
+      "term": "foreclosing",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-08",
+          "statement_index": 2,
+          "statement": "In Paragraph 8, \"foreclosing\" means opening up or actively creating a new opportunity.",
+          "answer": false,
+          "explanation": "**B) In Paragraph 8, \"foreclosing\" means opening up or actively creating a new opportunity.**\n\nIn Paragraph 7 the text warns of \"potentially foreclosing a developmental pathway\" — shutting off or blocking that route, not opening a new one. \"Opening up\" reverses the verb's force (and the word is not even in Paragraph 8). A pathway that is foreclosed is ruled out or prevented, which matches the worry about missing manufacturing-driven gains. Correct the paragraph citation and the gloss together: blocking a route is the opposite of creating opportunity.\n\nForeclosing is blocking, not creating opportunity, so the meaning claim is false.",
+          "passage_anchor": "potentially foreclosing a developmental pathway"
+        },
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-09",
+          "statement_index": 3,
+          "statement": "In Paragraph 7, \"foreclosing\" (a pathway) means permanently ruling out or preventing it.",
+          "answer": true,
+          "explanation": "**C) In Paragraph 7, \"foreclosing\" (a pathway) means permanently ruling out or preventing it.**\n\nRodrik's worry about \"potentially foreclosing a developmental pathway\" is about shutting that route off before manufacturing benefits arrive. Ruling out / preventing matches that use. The pathway is the historically decisive manufacturing route — productivity, wages, mass employment — that may be blocked if services come too early. Soft \"potentially\" does not change the verb's core force: foreclosure is prevention, not mild delay.\n\nThe passage sense fits the gloss, so the claim holds.",
+          "passage_anchor": "potentially foreclosing a developmental pathway that proved historically decisive elsewhere"
+        }
+      ]
+    },
+    {
+      "term": "framed it explicitly, if not always publicly, as a tool of Cold War containment",
+      "sources": [
+        {
+          "subsection": "t.5",
+          "passage_title": "The Marshall Plan and the Politics of Economic Recovery",
+          "task_id": "en-t-5-09",
+          "statement_index": 1,
+          "statement": "\"The policy was framed explicitly as a tool of containment, aiming to reduce the appeal of rival ideologies.\"",
+          "answer": true,
+          "explanation": "**A) \"The policy was framed explicitly as a tool of containment, aiming to reduce the appeal of rival ideologies.\"**\n\nFramed as a tool of containment to reduce a rival's appeal matches both ordinary political English and the passage's own wording about containment aims. The collocation framed… as a tool of containment is natural and accurate. Reduce the appeal tracks the passage's hope of reducing communist parties' political draw.\n\nYou are checking usage and sense, not inventing a new historical claim beyond the passage vocabulary. That containment-tool framing uses the word in its established sense, so the sentence stands.",
+          "passage_anchor": "framed it explicitly, if not always publicly, as a tool of Cold War containment"
+        }
+      ]
+    },
+    {
+      "term": "free lunch",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-04",
+          "statement_index": 1,
+          "statement": "The phrase \"free lunch\" in Paragraph 5 is used to suggest that reduced working hours at full pay may ultimately carry a hidden economic cost elsewhere.",
+          "answer": true,
+          "explanation": "**A) The phrase \"free lunch\" in Paragraph 5 is used to suggest that reduced working hours at full pay may ultimately carry a hidden economic cost elsewhere.**\n\nIn Paragraph 5, the apparent \"free lunch\" of working less for the same pay \"may, over a longer time horizon, simply be redistributed rather than eliminated\" via slower wage growth, less hiring, or higher prices.\n\nThe scare-quoted idiom is ironic: the freebie is only postponed, not vanished. The word \"apparent\" before it is the author's signal that the benefit looks costless from close up but not from a distance.\n\n**Tip:** In academic prose, \"free lunch\" usually flags a benefit that must be paid for somewhere else.\n\nThe contrast verb pair \"redistributed rather than eliminated\" is the heart of the point: the cost moves, it does not disappear. The claim matches how Paragraph 5 uses \"free lunch\" — as a warning about hidden redistribution of cost.",
+          "passage_anchor": "the apparent \"free lunch\" of working less for the same pay may, over a longer time horizon, simply be redistributed rather than eliminated"
+        }
+      ]
+    },
+    {
+      "term": "fundamental conceptual revision to remain analytically meaningful",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-09",
+          "statement_index": 4,
+          "statement": "In Paragraph 9, \"conceptual\" means relating to abstract ideas or frameworks, not physical objects.",
+          "answer": true,
+          "explanation": "**D) In Paragraph 9, \"conceptual\" means relating to abstract ideas or frameworks, not physical objects.**\n\nParagraph 9 asks whether the sector model needs \"fundamental conceptual revision\" to stay analytically meaningful — revision of ideas and frameworks, not of physical machinery. The abstract-framework gloss is right. The debate is whether three-, four-, or five-category forms still capture structural change as analytical tools. Nothing in the closing sentence is about rewriting factory equipment; the target is the model's concepts.\n\nThe word's passage use supports the stated meaning, so the claim is true.",
+          "passage_anchor": "fundamental conceptual revision to remain analytically meaningful"
+        }
+      ]
+    },
+    {
+      "term": "further corroborating evidence favouring automation-driven productivity gains",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-08",
+          "statement_index": 5,
+          "statement": "In Paragraph 5, \"corroborating\" means providing supporting confirmation for a claim.",
+          "answer": true,
+          "explanation": "**E) In Paragraph 5, \"corroborating\" means providing supporting confirmation for a claim.**\n\nParagraph 5 calls the multi-country pattern \"further corroborating evidence favouring automation-driven productivity gains\" — evidence that backs the automation reading. Supporting confirmation is exactly that role. \"Further\" signals additional backing for an explanation already on the table, not a brand-new rival mechanism. If a gloss said \"contradicting\" or \"replacing,\" it would fight the passage's favouring / corroborating frame.\n\nThe passage use matches the gloss, so the claim is true.",
+          "passage_anchor": "further corroborating evidence favouring automation-driven productivity gains"
+        }
+      ]
+    },
+    {
+      "term": "geolocator",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-09",
+          "statement_index": 1,
+          "statement": "\"A geolocator is a small device used to record and transmit an animal's approximate location over time.\"",
+          "answer": true,
+          "explanation": "**A) \"A geolocator is a small device used to record and transmit an animal's approximate location over time.\"**\n\nThat matches how the passage’s 2010 tags work: tiny devices that let movements be “tracked in detail.” Location-logging over time is the established sense, not a navigational compass itself. Weight under two grams is a passage detail about these devices, not a required part of the dictionary definition.\n\nThe definition fits standard scientific use (and ¶2’s trackers), so the wording is sound. Device + location over time is enough; do not demand every passage adjective appear in the gloss.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "get worse quietly",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-10",
+          "statement_index": 3,
+          "statement": "Replacing \"get worse quietly\" with \"improve dramatically\" preserves the meaning in a more formal register.",
+          "answer": false,
+          "explanation": "**C) Replacing \"get worse quietly\" with \"improve dramatically\" preserves the meaning in a more formal register.**\n\n\"Get worse quietly\" is negative and gradual; \"improve dramatically\" is positive and sharp — opposite valence and intensity.\n\nA register upgrade must keep the same idea; this pair swaps it for another. Both halves change at once: the verb reverses direction and the adverb reverses the pace.\n\nA closer formal equivalent would be something like \"deteriorate gradually,\" which keeps both features intact. The substitution fails: the proposed phrase reverses both direction and degree of change.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "globally dispersed, single-source suppliers",
+      "sources": [
+        {
+          "subsection": "t.4",
+          "passage_title": "Reshoring, Nearshoring, and the Post-Pandemic Reordering of Global Supply Chains",
+          "task_id": "en-t-4-10",
+          "statement_index": 2,
+          "statement": "\"The company's exposure to single-source risk was reduced after diversifying its supplier base.\"",
+          "answer": true,
+          "explanation": "**B) \"The company's exposure to single-source risk was reduced after diversifying its supplier base.\"**\n\nDiversifying the supplier base and reducing single-source exposure are the paired meaning the passage builds from Paragraph 1's vulnerability. The causal link is ordinary and correct. Concentrated justin-time single sourcing was the fragile setup; spreading suppliers is the resilience move.\n\nThe wording matches established usage, so the sentence is true. Keep diversify and reduce single-source risk as matching collocations.",
+          "passage_anchor": "globally dispersed, single-source suppliers"
+        }
+      ]
+    },
+    {
+      "term": "gradual",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-08",
+          "statement_index": 2,
+          "statement": "In Paragraph 3, \"gradual\" means occurring suddenly and abruptly, all at once.",
+          "answer": false,
+          "explanation": "**B) In Paragraph 3, \"gradual\" means occurring suddenly and abruptly, all at once.**\n\nParagraph 3 contrasts an \"invisible and gradual\" boundary with any \"dramatic visual milestone.\" Gradual means stepwise over time — the opposite of sudden and all-at-once. The sentence sets it against \"a sharply defined line,\" which is the clearest possible in-text contrast for the word. When a passage places a term directly opposite another idea, that opposition is usually the fastest route to its meaning.\n\nGradual versus abrupt are antonyms here, so the definition is **false**.",
+          "passage_anchor": "invisible and gradual rather than a sharply defined line"
+        }
+      ]
+    },
+    {
+      "term": "Her argument relied on a highly skew interpretation of the data.",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-09",
+          "statement_index": 2,
+          "statement": "\"Her argument relied on a highly skew interpretation of the data.\"",
+          "answer": false,
+          "explanation": "**B) \"Her argument relied on a highly skew interpretation of the data.\"**\n\nBefore \"interpretation,\" the grammar wants an adjective (or past-participle adjective). \"Skew\" as a bare stem is not that form; \"skewed\" is.\n\n\"Highly\" intensifies an adjective, which makes the missing -ed even clearer. The determiner \"a\" plus the noun \"interpretation\" fixes the slot between them as a modifier position, leaving no room for a bare verb stem.\n\nThe -ed participle is what turns the action of skewing into a describable quality of the interpretation. The form fails; repair to \"a highly skewed interpretation of the data.\"",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "hollowed-out",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-09",
+          "statement_index": 5,
+          "statement": "In Paragraph 2, \"hollowed-out\" implies a robust, thriving industrial base still fully intact.",
+          "answer": false,
+          "explanation": "**E) In Paragraph 2, \"hollowed-out\" implies a robust, thriving industrial base still fully intact.**\n\nParagraph 2 mentions popular commentary that links job loss with \"a supposedly hollowed-out industrial base\" — a depleted, emptied-out image, not a robust base still intact. The gloss flips the implication. The adverb \"supposedly\" already marks that hollowed-out picture as a contested popular reading, not the economists' productivity account. Hollowed-out signals emptiness or depletion; thriving intactness is the opposite pole.\n\nHollowed-out signals weakness, not thriving intactness, so the statement fails.",
+          "passage_anchor": "conflates falling factory employment with a supposedly hollowed-out industrial base"
+        }
+      ]
+    },
+    {
+      "term": "improve dramatically",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-10",
+          "statement_index": 3,
+          "statement": "Replacing \"get worse quietly\" with \"improve dramatically\" preserves the meaning in a more formal register.",
+          "answer": false,
+          "explanation": "**C) Replacing \"get worse quietly\" with \"improve dramatically\" preserves the meaning in a more formal register.**\n\n\"Get worse quietly\" is negative and gradual; \"improve dramatically\" is positive and sharp — opposite valence and intensity.\n\nA register upgrade must keep the same idea; this pair swaps it for another. Both halves change at once: the verb reverses direction and the adverb reverses the pace.\n\nA closer formal equivalent would be something like \"deteriorate gradually,\" which keeps both features intact. The substitution fails: the proposed phrase reverses both direction and degree of change.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "Incentive",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 3,
+          "statement": "\"Incentive\" means something that encourages a particular action, while \"deterrent\" means something that discourages an action — near-opposite functions.",
+          "answer": true,
+          "explanation": "**C) \"Incentive\" means something that encourages a particular action, while \"deterrent\" means something that discourages an action — near-opposite functions.**\n\nParagraph 7’s \"push\" and \"pull\" incentive models are rewards meant to encourage antibiotic development. \"Deterrent\" points the other way — discouragement — so calling them near-opposites is right. The passage’s own examples make the encouraging function concrete: subsidies and guaranteed market-entry rewards both exist to draw firms back into research.\n\n**Tip:** Anchor abstract vocabulary to the passage’s examples; here the incentives are payments designed to attract, not penalties designed to repel.\n\nThe hedge \"near-opposite\" is well chosen, since the two words are not perfect antonyms in every context but do pull in contrary directions on behaviour. Recognising that they answer the same question — encourage or discourage? — with opposite answers is what settles the item.\n\nIncentive versus deterrent as encourage / discourage near-opposites is accurate, so the claim holds.",
+          "passage_anchor": "proposed a range of \"push\" and \"pull\" incentive models"
+        }
+      ]
+    },
+    {
+      "term": "inverts",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-08",
+          "statement_index": 1,
+          "statement": "In Paragraph 6, \"inverts\" means mirrors or replicates exactly, without reversing direction.",
+          "answer": false,
+          "explanation": "**A) In Paragraph 6, \"inverts\" means mirrors or replicates exactly, without reversing direction.**\n\nParagraph 6 says developing economies show an imbalance \"that inverts rather than mirrors the pattern observed in wealthier nations.\" Inverts is set against mirrors — it means reverses direction, not copies exactly. The \"rather than\" contrast is the definition clue: invert ≠ mirror in this sentence. Wealthier nations' pattern is the reference; the developing-economy imbalance is presented as its reverse, not its replica.\n\n**Trap:** Treating invert as a fancy synonym of mirror ignores the \"rather than.\"\n\nThe claimed meaning is the opposite of the passage contrast, so the statement fails.",
+          "passage_anchor": "inverts rather than mirrors the pattern observed in wealthier nations"
+        }
+      ]
+    },
+    {
+      "term": "inverts rather than mirrors the pattern observed in wealthier nations",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-08",
+          "statement_index": 1,
+          "statement": "In Paragraph 6, \"inverts\" means mirrors or replicates exactly, without reversing direction.",
+          "answer": false,
+          "explanation": "**A) In Paragraph 6, \"inverts\" means mirrors or replicates exactly, without reversing direction.**\n\nParagraph 6 says developing economies show an imbalance \"that inverts rather than mirrors the pattern observed in wealthier nations.\" Inverts is set against mirrors — it means reverses direction, not copies exactly. The \"rather than\" contrast is the definition clue: invert ≠ mirror in this sentence. Wealthier nations' pattern is the reference; the developing-economy imbalance is presented as its reverse, not its replica.\n\n**Trap:** Treating invert as a fancy synonym of mirror ignores the \"rather than.\"\n\nThe claimed meaning is the opposite of the passage contrast, so the statement fails.",
+          "passage_anchor": "inverts rather than mirrors the pattern observed in wealthier nations"
+        }
+      ]
+    },
+    {
+      "term": "Investors reacted with caution to the announcement.",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-09",
+          "statement_index": 5,
+          "statement": "\"Investors reacted with caution to the announcement.\"",
+          "answer": true,
+          "explanation": "**E) \"Investors reacted with caution to the announcement.\"**\n\nAfter the preposition \"with,\" English wants a noun; \"caution\" is that noun and forms the idiom \"with caution.\"\n\nAn adjective or verb form would break the prepositional phrase. \"With caution\" also works adverbially here, describing how investors reacted, much like \"cautiously\" would.\n\nThe same word can be a verb elsewhere, as in \"critics caution against,\" so the slot rather than the spelling decides the part of speech. The word form stands: noun caution is correct after with.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "invisible and gradual rather than a sharply defined line",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-08",
+          "statement_index": 2,
+          "statement": "In Paragraph 3, \"gradual\" means occurring suddenly and abruptly, all at once.",
+          "answer": false,
+          "explanation": "**B) In Paragraph 3, \"gradual\" means occurring suddenly and abruptly, all at once.**\n\nParagraph 3 contrasts an \"invisible and gradual\" boundary with any \"dramatic visual milestone.\" Gradual means stepwise over time — the opposite of sudden and all-at-once. The sentence sets it against \"a sharply defined line,\" which is the clearest possible in-text contrast for the word. When a passage places a term directly opposite another idea, that opposition is usually the fastest route to its meaning.\n\nGradual versus abrupt are antonyms here, so the definition is **false**.",
+          "passage_anchor": "invisible and gradual rather than a sharply defined line"
+        }
+      ]
+    },
+    {
+      "term": "it does not prohibit the underlying practice itself",
+      "sources": [
+        {
+          "subsection": "t.2",
+          "passage_title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+          "task_id": "en-t-2-10",
+          "statement_index": 2,
+          "statement": "\"The regulator's disclosure requirement effectively prohibited the underlying practice entirely.\"",
+          "answer": false,
+          "explanation": "**B) \"The regulator's disclosure requirement effectively prohibited the underlying practice entirely.\"**\n\nDisclosure and prohibition are different regulatory moves. Paragraph (7) stresses that the Digital Services Act requires disclosure of personalised prices yet does not prohibit the practice itself; this sentence collapses those two into one. A disclosure mandate often feels as strong as a ban until you separate the verbs. Keep disclose and prohibit apart, as the passage does.\n\n**Trap:** A disclosure mandate often feels as strong as a ban until you separate the verbs.\n\nRequiring disclosure is not prohibiting the practice, so this line fails the ordinary meanings of both words — and the passage's explicit contrast.",
+          "passage_anchor": "it does not prohibit the underlying practice itself"
+        }
+      ]
+    },
+    {
+      "term": "Its boundaries remain genuinely contested and are applied inconsistently",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-09",
+          "statement_index": 2,
+          "statement": "In Paragraph 4, \"contested\" means widely agreed upon without any dispute.",
+          "answer": false,
+          "explanation": "**B) In Paragraph 4, \"contested\" means widely agreed upon without any dispute.**\n\nParagraph 4 says quinary boundaries \"remain genuinely contested\" and are applied inconsistently. Contested means disputed, not \"widely agreed upon without any dispute.\" Inconsistent application across agencies is the practical symptom of that dispute. A no-dispute gloss would also clash with the paragraph's warning to treat cross-country quinary comparisons with methodological caution.\n\nThe gloss is the opposite of the paragraph, so the statement is false.",
+          "passage_anchor": "Its boundaries remain genuinely contested and are applied inconsistently"
+        }
+      ]
+    },
+    {
+      "term": "leave it to be seen",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-10",
+          "statement_index": 5,
+          "statement": "Replacing \"leave it uncertain\" with \"leave it to be seen\" preserves the meaning in a more formal register.",
+          "answer": false,
+          "explanation": "**E) Replacing \"leave it uncertain\" with \"leave it to be seen\" preserves the meaning in a more formal register.**\n\nThe established idiom is \"remains to be seen,\" not \"leave it to be seen.\" The proposed string is not a standard formal equivalent.\n\nEven as a paraphrase attempt, it misforms the fixed expression for unresolved outcomes. Fixed expressions resist substitution of their verbs, so swapping \"remain\" for \"leave\" breaks the phrase rather than adapting it.\n\n**Trap:** Echo the real idiom — \"remains to be seen\" — rather than inventing \"leave it to be seen.\"\n\nRegister upgrades only count when the result is something a competent writer would actually produce. The substitution fails: it is neither idiomatic nor a faithful formal upgrade of \"leave it uncertain.\"",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "leave it uncertain",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-10",
+          "statement_index": 5,
+          "statement": "Replacing \"leave it uncertain\" with \"leave it to be seen\" preserves the meaning in a more formal register.",
+          "answer": false,
+          "explanation": "**E) Replacing \"leave it uncertain\" with \"leave it to be seen\" preserves the meaning in a more formal register.**\n\nThe established idiom is \"remains to be seen,\" not \"leave it to be seen.\" The proposed string is not a standard formal equivalent.\n\nEven as a paraphrase attempt, it misforms the fixed expression for unresolved outcomes. Fixed expressions resist substitution of their verbs, so swapping \"remain\" for \"leave\" breaks the phrase rather than adapting it.\n\n**Trap:** Echo the real idiom — \"remains to be seen\" — rather than inventing \"leave it to be seen.\"\n\nRegister upgrades only count when the result is something a competent writer would actually produce. The substitution fails: it is neither idiomatic nor a faithful formal upgrade of \"leave it uncertain.\"",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "market-oriented reconstruction and multilateral cooperation",
+      "sources": [
+        {
+          "subsection": "t.5",
+          "passage_title": "The Marshall Plan and the Politics of Economic Recovery",
+          "task_id": "en-t-5-10",
+          "statement_index": 3,
+          "statement": "\"Multilateral cooperation refers to a single country acting entirely independently of all others.\"",
+          "answer": false,
+          "explanation": "**C) \"Multilateral cooperation refers to a single country acting entirely independently of all others.\"**\n\nMultilateral means involving several parties acting together. A single country acting entirely alone is unilateral independence—the opposite. The passage praises multilateral cooperation precisely as joint, many-sided practice. Multi- marks many participants, not many choices for one actor.\n\n**Trap:** Multi- can be misread as \"many options for one actor\" instead of \"many actors.\"\n\nPair multilateral with joint coordination language from the passage, not with solo policy. Solo independence is not multilateral cooperation, so the definition fails.",
+          "passage_anchor": "market-oriented reconstruction and multilateral cooperation"
+        }
+      ]
+    },
+    {
+      "term": "migratory",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-09",
+          "statement_index": 3,
+          "statement": "\"A stopover, in migratory biology, refers to a site where travelling animals pause to rest and replenish energy reserves.\"",
+          "answer": true,
+          "explanation": "**C) \"A stopover, in migratory biology, refers to a site where travelling animals pause to rest and replenish energy reserves.\"**\n\nThat is the standard migratory sense, and paragraph 5’s Greenland pause to “replenish fat reserves” is exactly that kind of site. Rest-and-refuel, not permanent residence. The definition’s “energy reserves” maps cleanly onto the passage’s “fat reserves.”\n\nStopover as a refueling pause matches established migratory usage, so the definition stands. Keep temporary pause + refuel in the gloss; breeding-colony permanence would be the wrong category.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "Model projections of Thwaites' future remain strikingly divergent",
+      "sources": [
+        {
+          "subsection": "t.12",
+          "passage_title": "The Doomsday Glacier — Racing to Predict a Silent Collapse",
+          "task_id": "en-t-12-10",
+          "statement_index": 1,
+          "statement": "Forecasts for the glacier's future differ sharply from one another.",
+          "answer": true,
+          "explanation": "**A) Forecasts for the glacier's future differ sharply from one another.**\n\nThe original line is \"Model projections of Thwaites' future remain strikingly divergent.\" \"Forecasts…differ sharply\" preserves both the modelling topic and the strong-disagreement sense of \"strikingly divergent.\" \"Differ sharply\" is a fair upgrade of \"divergent\" without inventing agreement or abandoned modelling. Keep the same subject (future forecasts/projections) and the same clash among them.\n\nSharp difference between forecasts is a faithful paraphrase, so the line matches.",
+          "passage_anchor": "Model projections of Thwaites' future remain strikingly divergent"
+        },
+        {
+          "subsection": "t.12",
+          "passage_title": "The Doomsday Glacier — Racing to Predict a Silent Collapse",
+          "task_id": "en-t-12-10",
+          "statement_index": 2,
+          "statement": "Forecasts for the glacier's future agree closely with each other.",
+          "answer": false,
+          "explanation": "**B) Forecasts for the glacier's future agree closely with each other.**\n\n\"Agree closely\" is the antonym of \"strikingly divergent.\" The paraphrase reverses the original's core claim about model disagreement. Synonym checks fail when the rewrite flips polarity while keeping the topic. Any close-agreement version of \"strikingly divergent\" must be rejected.\n\n**Trap:** Synonym traps often flip divergent ↔ agree; reject any close-agreement rewrite.\n\nClose agreement contradicts divergence, so this paraphrase fails.",
+          "passage_anchor": "Model projections of Thwaites' future remain strikingly divergent"
+        },
+        {
+          "subsection": "t.12",
+          "passage_title": "The Doomsday Glacier — Racing to Predict a Silent Collapse",
+          "task_id": "en-t-12-10",
+          "statement_index": 3,
+          "statement": "The glacier's future is no longer being modelled at all.",
+          "answer": false,
+          "explanation": "**C) The glacier's future is no longer being modelled at all.**\n\nThe original asserts that model projections still exist and disagree; it never says modelling has stopped. \"No longer being modelled\" invents a cessation the sentence does not contain. Divergent projections presuppose active modelling, so a stop-modelling rewrite cannot be faithful. Stay inside \"Model projections…remain strikingly divergent\"—existence plus disagreement, not abandonment.\n\nAbandoned modelling is not in the original, so the paraphrase fails.",
+          "passage_anchor": "Model projections of Thwaites' future remain strikingly divergent"
+        },
+        {
+          "subsection": "t.12",
+          "passage_title": "The Doomsday Glacier — Racing to Predict a Silent Collapse",
+          "task_id": "en-t-12-10",
+          "statement_index": 4,
+          "statement": "Predictions about the glacier's fate vary considerably between models.",
+          "answer": true,
+          "explanation": "**D) Predictions about the glacier's fate vary considerably between models.**\n\n\"Vary considerably between models\" restates divergent projections without softening or reversing them. \"Fate\" and \"predictions\" stay within the same forecasting domain as \"model projections…future.\" Considerable variation is the same strong-difference idea as \"strikingly divergent,\" just in different words. Accept paraphrases that keep between-model disagreement intact.\n\nConsiderable between-model variation keeps the original meaning, so the paraphrase holds.",
+          "passage_anchor": "Model projections of Thwaites' future remain strikingly divergent"
+        },
+        {
+          "subsection": "t.12",
+          "passage_title": "The Doomsday Glacier — Racing to Predict a Silent Collapse",
+          "task_id": "en-t-12-10",
+          "statement_index": 5,
+          "statement": "Every model now predicts the exact same outcome confidently.",
+          "answer": false,
+          "explanation": "**E) Every model now predicts the exact same outcome confidently.**\n\nUnanimous, confident sameness cancels \"strikingly divergent.\" The paraphrase invents agreement and certainty the source line denies. \"Every…exact same…confidently\" stacks three overclaims the original never supports. Match the rewrite against \"remain strikingly divergent\" and the polarity flip is immediate.\n\nIdentical confident outcomes reverse the original, so this paraphrase is false.",
+          "passage_anchor": "Model projections of Thwaites' future remain strikingly divergent"
+        }
+      ]
+    },
+    {
+      "term": "narrow",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-07",
+          "statement_index": 5,
+          "statement": "\"The new rule applies to a narrow range of cases, covering almost every situation imaginable.\"",
+          "answer": false,
+          "explanation": "**E) \"The new rule applies to a narrow range of cases, covering almost every situation imaginable.\"**\n\n\"Narrow\" means limited; \"almost every situation imaginable\" means nearly universal coverage.\n\nThe range claim and the coverage claim contradict each other. Both clauses describe the same rule's scope, so one has to be wrong; they cannot both hold at once.\n\nThe contradiction is a scope mismatch rather than a vocabulary error in either phrase taken alone. The wording fails: a narrow range cannot also cover almost every case.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "not by restricting options, but by redesigning the context",
+      "sources": [
+        {
+          "subsection": "t.6",
+          "passage_title": "Nudge Theory and the Limits of Behavioural Public Policy",
+          "task_id": "en-t-6-09",
+          "statement_index": 1,
+          "statement": "\"Choice architecture refers to redesigning the presentation of options without necessarily removing any of them.\"",
+          "answer": true,
+          "explanation": "**A) \"Choice architecture refers to redesigning the presentation of options without necessarily removing any of them.\"**\n\nParagraph 1 ties choice architecture to how choices are presented and stresses redesigning context rather than restricting options. The sentence's meaning matches that framing. The hedge \"without necessarily removing\" is also careful rather than absolute, which keeps it within what the passage supports.\n\n**Tip:** Vocabulary items reward matching the concept, not hunting for identical words.\n\nThe sentence paraphrases the definition instead of quoting it, and a faithful paraphrase counts as correct usage. The use of \"choice architecture\" is accurate, so the claim holds.",
+          "passage_anchor": "not by restricting options, but by redesigning the context"
+        },
+        {
+          "subsection": "t.6",
+          "passage_title": "Nudge Theory and the Limits of Behavioural Public Policy",
+          "task_id": "en-t-6-10",
+          "statement_index": 4,
+          "statement": "\"A nudge, by the passage's definition, necessarily removes certain options from an individual's choice set.\"",
+          "answer": false,
+          "explanation": "**D) \"A nudge, by the passage's definition, necessarily removes certain options from an individual's choice set.\"**\n\nParagraph 1 stresses redesign \"not by restricting options,\" and Paragraph 4 repeats that options stay on the menu. Removing choices is the opposite of the passage's nudge definition. Preserving the full choice set is what allows Thaler and Sunstein to call the approach libertarian at all.\n\n**Trap:** \"Necessarily removes\" contradicts the keep-the-menu design.\n\nThe phrase \"by the passage's definition\" ties the item to this text specifically, so test it against Paragraph 1 rather than any outside usage. The definition is wrong for this passage, so the wording is not used correctly.",
+          "passage_anchor": "not by restricting options, but by redesigning the context"
+        }
+      ]
+    },
+    {
+      "term": "offset by automation-driven productivity gains",
+      "sources": [
+        {
+          "subsection": "t.4",
+          "passage_title": "Reshoring, Nearshoring, and the Post-Pandemic Reordering of Global Supply Chains",
+          "task_id": "en-t-4-09",
+          "statement_index": 5,
+          "statement": "\"Automation helped offset rising domestic costs by improving overall productivity.\"",
+          "answer": true,
+          "explanation": "**E) \"Automation helped offset rising domestic costs by improving overall productivity.\"**\n\n\"Offset…by improving…productivity\" is a standard collocation and matches how the passage describes automation absorbing part of the reshoring cost gap. Paragraph 8's \"offset by automation-driven productivity gains\" is the direct text anchor.\n\nThe usage is natural and text-aligned, so the sentence holds. Treat offset + productivity as a valid cost-gap absorption phrase in this bank.",
+          "passage_anchor": "offset by automation-driven productivity gains"
+        }
+      ]
+    },
+    {
+      "term": "outcome",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-07",
+          "statement_index": 3,
+          "statement": "\"The committee described the outcome as an overwhelming failure, praising it in their final report.\"",
+          "answer": false,
+          "explanation": "**C) \"The committee described the outcome as an overwhelming failure, praising it in their final report.\"**\n\nAn \"overwhelming failure\" is a strongly negative verdict; \"praising it\" requires celebration of success.\n\nThose two speech-act halves cancel each other inside one sentence. The pronoun \"it\" ties both reactions to the same outcome, so there is no way to read the praise as directed at something else.\n\nThe intensifier \"overwhelming\" also rules out a mild or mixed judgement that praise might sit beside. The wording fails: you do not praise what you have just labelled an overwhelming failure.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "overtake",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-09",
+          "statement_index": 5,
+          "statement": "In Paragraph 1, \"overtake\" means to fall behind something rather than pass it.",
+          "answer": false,
+          "explanation": "**E) In Paragraph 1, \"overtake\" means to fall behind something rather than pass it.**\n\nParagraph 1 says Voyager 1's faster trajectory \"allowed it to overtake its sibling\" and become more distant. Overtake means to catch up and pass — the opposite of falling behind. The outcome clause seals the reading, since becoming \"the more distant of the two probes\" is only possible if Voyager 1 moved ahead. A faster trajectory as the stated cause points the same direction.\n\nOvertake is passing ahead, so \"fall behind\" is **false**.",
+          "passage_anchor": "a faster trajectory that allowed it to overtake its sibling"
+        }
+      ]
+    },
+    {
+      "term": "penicillin became viable for clinical use",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 2,
+          "statement": "\"Viable\" means capable of working successfully, while \"viability\" is simply the noun form referring to that same capacity.",
+          "answer": true,
+          "explanation": "**B) \"Viable\" means capable of working successfully, while \"viability\" is simply the noun form referring to that same capacity.**\n\nParagraph 1 uses \"viable for clinical use\" for penicillin after purification. \"Viable\" (adjective) and \"viability\" (noun) name the same capacity at different parts of speech — the distinction is exact. Saying penicillin \"became viable\" and saying it \"achieved clinical viability\" would report the same milestone.\n\n**Tip:** Check whether the claimed noun is a true -ity/-ness form of the adjective in the passage.\n\nA derivational pair like this changes the grammar of a sentence without changing what is being claimed. That is the difference between a genuine word-family relationship and a false friend, where the resemblance is only in spelling.\n\nThe viable / viability pairing matches standard usage, so the claim holds.",
+          "passage_anchor": "penicillin became viable for clinical use"
+        }
+      ]
+    },
+    {
+      "term": "pent-up consumer demand following years of wartime rationing",
+      "sources": [
+        {
+          "subsection": "t.5",
+          "passage_title": "The Marshall Plan and the Politics of Economic Recovery",
+          "task_id": "en-t-5-09",
+          "statement_index": 2,
+          "statement": "\"Pent-up demand refers to consumer spending that has already been fully satisfied over a long period.\"",
+          "answer": false,
+          "explanation": "**B) \"Pent-up demand refers to consumer spending that has already been fully satisfied over a long period.\"**\n\nPent-up demand is demand that has built up and remains unsatisfied, ready to be released when constraints ease. \"Already fully satisfied\" is the opposite of that meaning. The passage's \"pent-up consumer demand following years of wartime rationing\" points to stored-up, not exhausted, spending pressure. Rationing blocked spending; the demand waited, it was not used up.\n\n**Trap:** Pent-up can sound like \"a long history of spending\" if you ignore the blocked/unreleased idea.\n\nIf spending is already satisfied, call it met demand, not pent-up demand. Satisfied spending is not pent-up demand, so the definition fails.",
+          "passage_anchor": "pent-up consumer demand following years of wartime rationing"
+        }
+      ]
+    },
+    {
+      "term": "poses obvious logistical constraints",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-10",
+          "statement_index": 4,
+          "statement": "\"Logistical constraints refers to practical difficulties that make carrying out a plan or experiment more difficult.\"",
+          "answer": true,
+          "explanation": "**D) \"Logistical constraints refers to practical difficulties that make carrying out a plan or experiment more difficult.\"**\n\nLogistics = practical organisation of a task; constraints are limiting factors. Paragraph 6 cites “obvious logistical constraints” on ocean-crossing navigation experiments — feasibility barriers, not theoretical ones. Crossing oceans with experimental birds is the practical hurdle the phrase points to.\n\nPractical feasibility limits fit logistical constraints, so the definition stands. Keep “practical / carrying out” in the gloss; pure theory limits would be the wrong register.",
+          "passage_anchor": "poses obvious logistical constraints"
+        }
+      ]
+    },
+    {
+      "term": "potentially foreclosing a developmental pathway",
+      "sources": [
+        {
+          "subsection": "t.15",
+          "passage_title": "The Shifting Anatomy of Economic Sectors",
+          "task_id": "en-t-15-08",
+          "statement_index": 2,
+          "statement": "In Paragraph 8, \"foreclosing\" means opening up or actively creating a new opportunity.",
+          "answer": false,
+          "explanation": "**B) In Paragraph 8, \"foreclosing\" means opening up or actively creating a new opportunity.**\n\nIn Paragraph 7 the text warns of \"potentially foreclosing a developmental pathway\" — shutting off or blocking that route, not opening a new one. \"Opening up\" reverses the verb's force (and the word is not even in Paragraph 8). A pathway that is foreclosed is ruled out or prevented, which matches the worry about missing manufacturing-driven gains. Correct the paragraph citation and the gloss together: blocking a route is the opposite of creating opportunity.\n\nForeclosing is blocking, not creating opportunity, so the meaning claim is false.",
+          "passage_anchor": "potentially foreclosing a developmental pathway"
+        }
+      ]
+    },
+    {
+      "term": "preserves the formal freedom to choose otherwise",
+      "sources": [
+        {
+          "subsection": "t.6",
+          "passage_title": "Nudge Theory and the Limits of Behavioural Public Policy",
+          "task_id": "en-t-6-09",
+          "statement_index": 4,
+          "statement": "\"Libertarian paternalism was described as steering people toward an outcome while still preserving their formal freedom to choose otherwise.\"",
+          "answer": true,
+          "explanation": "**D) \"Libertarian paternalism was described as steering people toward an outcome while still preserving their formal freedom to choose otherwise.\"**\n\nParagraph 5's definition is exactly that mix of steering and preserved formal freedom. The sentence restates it faithfully. The adjective \"formal\" is doing real work, since it is precisely the word critics later press on when they question how much autonomy remains.\n\n**Tip:** Keep qualifying adjectives like \"formal\" intact; dropping them can change a true item into a false one.\n\nThis restatement retains both halves of the paradox and the qualifier attached to \"freedom.\" The term is used as the passage defines it, so the claim holds.",
+          "passage_anchor": "preserves the formal freedom to choose otherwise"
+        }
+      ]
+    },
+    {
+      "term": "prices",
+      "sources": [
+        {
+          "subsection": "t.2",
+          "passage_title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+          "task_id": "en-t-2-09",
+          "statement_index": 3,
+          "statement": "\"The two prices were asymmetry, with one customer paying visibly more than another.\"",
+          "answer": false,
+          "explanation": "**C) \"The two prices were asymmetry, with one customer paying visibly more than another.\"**\n\nAsymmetry is a noun; after were the sentence needs an adjective such as asymmetric (or a noun phrase like \"an asymmetry\"). Bare \"were asymmetry\" is the wrong part of speech. Abstract nouns often sneak in where the related adjective belongs. Fix the word class: were asymmetric, or there was an asymmetry.\n\n**Trap:** Abstract nouns often sneak in where the related adjective belongs.\n\nWere needs an adjective here, so the line doesn’t hold — \"The two prices were asymmetric, with one customer paying visibly more than another.\"",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "proposed a range of \"push\" and \"pull\" incentive models",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 3,
+          "statement": "\"Incentive\" means something that encourages a particular action, while \"deterrent\" means something that discourages an action — near-opposite functions.",
+          "answer": true,
+          "explanation": "**C) \"Incentive\" means something that encourages a particular action, while \"deterrent\" means something that discourages an action — near-opposite functions.**\n\nParagraph 7’s \"push\" and \"pull\" incentive models are rewards meant to encourage antibiotic development. \"Deterrent\" points the other way — discouragement — so calling them near-opposites is right. The passage’s own examples make the encouraging function concrete: subsidies and guaranteed market-entry rewards both exist to draw firms back into research.\n\n**Tip:** Anchor abstract vocabulary to the passage’s examples; here the incentives are payments designed to attract, not penalties designed to repel.\n\nThe hedge \"near-opposite\" is well chosen, since the two words are not perfect antonyms in every context but do pull in contrary directions on behaviour. Recognising that they answer the same question — encourage or discourage? — with opposite answers is what settles the item.\n\nIncentive versus deterrent as encourage / discourage near-opposites is accurate, so the claim holds.",
+          "passage_anchor": "proposed a range of \"push\" and \"pull\" incentive models"
+        }
+      ]
+    },
+    {
+      "term": "proxies such as device type, postal code, or browsing patterns",
+      "sources": [
+        {
+          "subsection": "t.2",
+          "passage_title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+          "task_id": "en-t-2-09",
+          "statement_index": 5,
+          "statement": "\"The proxy variables were confined to income data alone, excluding all other factors.\"",
+          "answer": false,
+          "explanation": "**E) \"The proxy variables were confined to income data alone, excluding all other factors.\"**\n\nParagraph (6) lists proxies such as device type, postal code, or browsing patterns — plural channels that can correlate with income, not a set \"confined to income data alone.\" The invented sentence misstates both the breadth of the proxies and how income enters the story. Income is in the correlation story, so writers may wrongly shrink the proxies to income fields alone. Restore the passage's actual proxy list and treat income as a correlated trait, not the sole proxy field.\n\n**Trap:** Income is in the correlation story, so writers may wrongly shrink the proxies to income fields alone.\n\nThe passage's proxies are device, postal code, and browsing patterns, so \"income data alone\" does not fit.",
+          "passage_anchor": "proxies such as device type, postal code, or browsing patterns"
+        }
+      ]
+    },
+    {
+      "term": "proximity",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-09",
+          "statement_index": 3,
+          "statement": "In Paragraph 7, \"proximity\" means the state of being nearby or close to something.",
+          "answer": true,
+          "explanation": "**C) In Paragraph 7, \"proximity\" means the state of being nearby or close to something.**\n\nParagraph 7 calls the Gliese 445 pass \"a proximity that, while still enormous by any everyday standard, counts as a genuinely close stellar encounter.\" Proximity is nearness — exactly the offered gloss. The concession \"while still enormous\" shows that nearness is being judged on an astronomical scale, not an everyday one. That relative framing does not change the word's meaning; it only changes the yardstick.\n\nProximity as nearness matches the stellar-encounter wording, so the meaning is **true**.",
+          "passage_anchor": "a proximity that, while still enormous by any everyday standard, counts as a genuinely close stellar encounter"
+        }
+      ]
+    },
+    {
+      "term": "remains a matter of active debate among economists",
+      "sources": [
+        {
+          "subsection": "t.4",
+          "passage_title": "Reshoring, Nearshoring, and the Post-Pandemic Reordering of Global Supply Chains",
+          "task_id": "en-t-4-10",
+          "statement_index": 5,
+          "statement": "\"The trend's long-term durability is treated in the passage as a matter of active, unresolved debate.\"",
+          "answer": true,
+          "explanation": "**E) \"The trend's long-term durability is treated in the passage as a matter of active, unresolved debate.\"**\n\nThe close of Paragraph 9 says whether the reordering is durable or temporary \"remains a matter of active debate among economists.\" \"Unresolved debate\" tracks that framing. The passage leaves structural reversal versus temporary shock open; it does not close the question.\n\nThe sentence mirrors the passage conclusion, so it stands. Do not upgrade the debate into a firm verdict that the shift is either permanent or finished.",
+          "passage_anchor": "remains a matter of active debate among economists"
+        }
+      ]
+    },
+    {
+      "term": "reproducing existing inequalities under a veneer of mathematical neutrality",
+      "sources": [
+        {
+          "subsection": "t.2",
+          "passage_title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+          "task_id": "en-t-2-09",
+          "statement_index": 2,
+          "statement": "\"Analysts described the practice as reproducing existing inequalities under a veneer of neutrality.\"",
+          "answer": true,
+          "explanation": "**B) \"Analysts described the practice as reproducing existing inequalities under a veneer of neutrality.\"**\n\nA veneer is a thin surface covering; \"veneer of neutrality\" is the natural metaphor for a polished appearance masking something else. That is how paragraph (6) deploys the same image for mathematical neutrality over discriminatory risks. The collocation does not invent a new fact; it reuses the passage's own figurative frame. Keep veneer for a surface gloss, not for a solid underlying property.\n\nThe metaphor matches both ordinary English and the passage's usage, so the wording stands.",
+          "passage_anchor": "reproducing existing inequalities under a veneer of mathematical neutrality"
+        }
+      ]
+    },
+    {
+      "term": "Reservoir,",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-10",
+          "statement_index": 1,
+          "statement": "\"Reservoir,\" in the phrase \"an animal reservoir of resistant bacteria,\" is used figuratively to mean a population that harbours and maintains a pathogen over time, extending its literal water-storage meaning.",
+          "answer": true,
+          "explanation": "**A) \"Reservoir,\" in the phrase \"an animal reservoir of resistant bacteria,\" is used figuratively to mean a population that harbours and maintains a pathogen over time, extending its literal water-storage meaning.**\n\nEpidemiology borrows \"reservoir\" from literal water storage to mean a host population that keeps a pathogen stocked over time. That figurative extension fits agricultural reservoirs of resistance implied by Paragraph 4’s livestock use. The metaphor works because both senses share the idea of something being held in quantity and available to be released.\n\n**Tip:** Literal water storage → figurative pathogen-holding population is a standard science metaphor.\n\nThe statement also explains the transfer rather than just labelling it, which is what makes it accurate: a population is not a container of water, but it functions as a store. Densely housed animals receiving routine antibiotics are precisely the kind of maintaining population the term names.\n\nThe figurative reservoir reading is correctly identified, so the claim holds.",
+          "passage_anchor": "This agricultural use contributes substantially to the environmental spread of resistance genes"
+        }
+      ]
+    },
+    {
+      "term": "restoring balance without any deliberate policy intervention",
+      "sources": [
+        {
+          "subsection": "t.3",
+          "passage_title": "The Rise and Fall of the Classical Gold Standard",
+          "task_id": "en-t-3-09",
+          "statement_index": 1,
+          "statement": "\"The mechanism was described as self-correcting, requiring constant deliberate government intervention to function.\"",
+          "answer": false,
+          "explanation": "**A) \"The mechanism was described as self-correcting, requiring constant deliberate government intervention to function.\"**\n\nIn paragraph (2), the self-correcting price-specie flow restores balance \"without any deliberate policy intervention.\" Pairing \"self-correcting\" with \"constant deliberate government intervention\" contradicts the passage sense of the term. The automatic deficit → gold outflow → price → export loop is precisely what makes intervention unnecessary in the model. Any paraphrase that reintroduces constant government action is an antonym of the text's collocation.\n\n**Trap:** Self-correcting sounds technical enough to hide an antonym paraphrase.\n\nSelf-correcting means no deliberate intervention, so the sentence's meaning is **false** against the text.",
+          "passage_anchor": "restoring balance without any deliberate policy intervention"
+        }
+      ]
+    },
+    {
+      "term": "robust",
+      "sources": [
+        {
+          "subsection": "t.16",
+          "passage_title": "Voyager — Humanity's Longest-Running Conversation with the Void",
+          "task_id": "en-t-16-09",
+          "statement_index": 2,
+          "statement": "In Paragraph 5, \"robust\" means fragile and easily damaged.",
+          "answer": false,
+          "explanation": "**B) In Paragraph 5, \"robust\" means fragile and easily damaged.**\n\nParagraph 5 says engineers chose \"robust, non-digital analogue encoding\" so the record could survive and be reconstructed later. Robust means sturdy and durable, not fragile. The stated purpose settles it: an encoding meant to outlast the mission and be decoded by unknown finders has to be resilient by design. A fragile format would defeat the very reason the passage gives for the choice.\n\n**Trap:** Analogue can sound \"old\" and therefore fragile, but the text pairs it with robustness on purpose.\n\nRobust means durable here, so fragile is **false**.",
+          "passage_anchor": "Engineers deliberately selected robust, non-digital analogue encoding"
+        }
+      ]
+    },
+    {
+      "term": "skewed",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-07",
+          "statement_index": 1,
+          "statement": "\"The evidence was so skewed that it perfectly represented every group in equal proportion.\"",
+          "answer": false,
+          "explanation": "**A) \"The evidence was so skewed that it perfectly represented every group in equal proportion.\"**\n\n\"Skewed\" means distorted or unbalanced, so it cannot describe evidence that \"perfectly represented every group in equal proportion.\"\n\nThe sentence pairs the word with its opposite meaning and collapses. The \"so… that\" construction makes the damage worse, because it presents balance as the consequence of distortion.\n\nIn research writing, skewed data is precisely the situation that stops you from generalising to every group. The wording fails: skewed evidence is biased, not evenly representative.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "Spread,",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-10",
+          "statement_index": 5,
+          "statement": "\"Spread,\" as in \"the spread of resistance genes between species,\" is used only in its literal sense of physically scattering solid objects across a surface.",
+          "answer": false,
+          "explanation": "**E) \"Spread,\" as in \"the spread of resistance genes between species,\" is used only in its literal sense of physically scattering solid objects across a surface.**\n\nParagraph 5’s gene \"spread\" through horizontal transfer is biological transmission between species, not literal scattering of solid objects on a surface. \"Only… literal\" therefore mislabels the usage. Genes move by being carried inside plasmids from one organism to another, which is transmission rather than distribution across a plane.\n\n**Trap:** \"Spread\" in infection biology is usually extended transmission language, not dustpan physics.\n\nThe restrictive word \"only\" does the damage here, since it rules out the extended sense the passage actually employs. Paragraph 4’s \"environmental spread of resistance genes\" uses the same transmission meaning, confirming the pattern across the text.\n\nRestricting \"spread\" to literal object-scattering fails against the passage’s gene-transfer sense.",
+          "passage_anchor": "carry resistance genes between entirely different bacterial species, not merely within one"
+        }
+      ]
+    },
+    {
+      "term": "stopover",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-09",
+          "statement_index": 3,
+          "statement": "\"A stopover, in migratory biology, refers to a site where travelling animals pause to rest and replenish energy reserves.\"",
+          "answer": true,
+          "explanation": "**C) \"A stopover, in migratory biology, refers to a site where travelling animals pause to rest and replenish energy reserves.\"**\n\nThat is the standard migratory sense, and paragraph 5’s Greenland pause to “replenish fat reserves” is exactly that kind of site. Rest-and-refuel, not permanent residence. The definition’s “energy reserves” maps cleanly onto the passage’s “fat reserves.”\n\nStopover as a refueling pause matches established migratory usage, so the definition stands. Keep temporary pause + refuel in the gloss; breeding-colony permanence would be the wrong category.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "Strain",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 4,
+          "statement": "\"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.",
+          "answer": true,
+          "explanation": "**D) \"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.**\n\nParagraph 2’s \"strains of Staphylococcus\" uses the biological-variant sense. \"Stress\" is a different word for pressure or tension; sound similarity does not make them synonyms. Substituting one for the other would make the passage claim that researchers found tensions of Staphylococcus, which is not English.\n\n**Tip:** Exam \"strain / stress\" traps trade on sound, not shared biology meaning.\n\nThe confusion is helped along by the fact that \"strain\" itself has a separate everyday sense of pressure or effort, as in straining a muscle. The item is testing whether you can hold the technical microbiological sense apart from that general one.\n\nThe bacterial-strain versus tension-stress split is correct, so the claim holds.",
+          "passage_anchor": "strains of Staphylococcus bacteria capable of resisting its effects"
+        }
+      ]
+    },
+    {
+      "term": "strains of Staphylococcus bacteria capable of resisting its effects",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 4,
+          "statement": "\"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.",
+          "answer": true,
+          "explanation": "**D) \"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.**\n\nParagraph 2’s \"strains of Staphylococcus\" uses the biological-variant sense. \"Stress\" is a different word for pressure or tension; sound similarity does not make them synonyms. Substituting one for the other would make the passage claim that researchers found tensions of Staphylococcus, which is not English.\n\n**Tip:** Exam \"strain / stress\" traps trade on sound, not shared biology meaning.\n\nThe confusion is helped along by the fact that \"strain\" itself has a separate everyday sense of pressure or effort, as in straining a muscle. The item is testing whether you can hold the technical microbiological sense apart from that general one.\n\nThe bacterial-strain versus tension-stress split is correct, so the claim holds.",
+          "passage_anchor": "strains of Staphylococcus bacteria capable of resisting its effects"
+        }
+      ]
+    },
+    {
+      "term": "stress",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 4,
+          "statement": "\"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.",
+          "answer": true,
+          "explanation": "**D) \"Strain\" (as in \"a bacterial strain\") refers to a specific genetic variant within a species, while \"stress\" refers to physical or mental tension — related in sound but distinct in meaning.**\n\nParagraph 2’s \"strains of Staphylococcus\" uses the biological-variant sense. \"Stress\" is a different word for pressure or tension; sound similarity does not make them synonyms. Substituting one for the other would make the passage claim that researchers found tensions of Staphylococcus, which is not English.\n\n**Tip:** Exam \"strain / stress\" traps trade on sound, not shared biology meaning.\n\nThe confusion is helped along by the fact that \"strain\" itself has a separate everyday sense of pressure or effort, as in straining a muscle. The item is testing whether you can hold the technical microbiological sense apart from that general one.\n\nThe bacterial-strain versus tension-stress split is correct, so the claim holds.",
+          "passage_anchor": "strains of Staphylococcus bacteria capable of resisting its effects"
+        }
+      ]
+    },
+    {
+      "term": "substantial",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-07",
+          "statement_index": 4,
+          "statement": "\"Her explanation was substantial, covering the entire issue in exhaustive, well-supported detail.\"",
+          "answer": true,
+          "explanation": "**D) \"Her explanation was substantial, covering the entire issue in exhaustive, well-supported detail.\"**\n\n\"Substantial\" can mean large or weighty in scope; the follow-on \"exhaustive, well-supported detail\" confirms that sense rather than fighting it.\n\nAdjective and paraphrase pull in the same direction. The participial phrase functions as evidence for the adjective, which is the normal way a well-formed sentence backs up its own description.\n\nNote that \"substantial\" here means considerable in substance, not merely physically large, which is its standard academic use. The wording stands: substantial fits a thorough, well-supported explanation.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "Susceptible",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 1,
+          "statement": "\"Susceptible\" means vulnerable or easily affected, while \"susceptive\" is a real, commonly used English word with an identical meaning.",
+          "answer": false,
+          "explanation": "**A) \"Susceptible\" means vulnerable or easily affected, while \"susceptive\" is a real, commonly used English word with an identical meaning.**\n\n\"Susceptible\" correctly means easily affected (as resistant bacteria are not). \"Susceptive,\" however, is not a standard, commonly used twin with the same meaning — the second half invents a false friend. Paired vocabulary items like this are only true when both halves survive checking, so one accurate definition cannot rescue the claim.\n\n**Trap:** Near-spellings that \"look Latin\" are often fake twins on vocabulary true/false items.\n\nIn the clinical vocabulary of this passage, susceptible is the working antonym of resistant: a susceptible strain is one an antibiotic still kills. That precise contrast is exactly what a vague invented synonym would blur.\n\nBecause \"susceptive\" is not a real common synonym, the paired claim fails.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "susceptive",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 1,
+          "statement": "\"Susceptible\" means vulnerable or easily affected, while \"susceptive\" is a real, commonly used English word with an identical meaning.",
+          "answer": false,
+          "explanation": "**A) \"Susceptible\" means vulnerable or easily affected, while \"susceptive\" is a real, commonly used English word with an identical meaning.**\n\n\"Susceptible\" correctly means easily affected (as resistant bacteria are not). \"Susceptive,\" however, is not a standard, commonly used twin with the same meaning — the second half invents a false friend. Paired vocabulary items like this are only true when both halves survive checking, so one accurate definition cannot rescue the claim.\n\n**Trap:** Near-spellings that \"look Latin\" are often fake twins on vocabulary true/false items.\n\nIn the clinical vocabulary of this passage, susceptible is the working antonym of resistant: a susceptible strain is one an antibiotic still kills. That precise contrast is exactly what a vague invented synonym would blur.\n\nBecause \"susceptive\" is not a real common synonym, the paired claim fails.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "The company committed to reducing its emissions by next year.",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-08",
+          "statement_index": 3,
+          "statement": "\"The company committed to reducing its emissions by next year.\"",
+          "answer": true,
+          "explanation": "**C) \"The company committed to reducing its emissions by next year.\"**\n\n\"Commit to\" takes a noun or gerund; \"reducing\" is the right -ing form after the preposition to.\n\nMeaning (promise of action) and form travel together here. The \"to\" in this phrase is a preposition rather than an infinitive marker, which is why \"committed to reduce\" would be the error learners usually make.\n\nCompare \"look forward to\" and \"object to,\" which behave the same way. The pairing stands: committed to + gerund is the expected collocation.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "The company's growth was substantially larger than analysts had predicted.",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-09",
+          "statement_index": 3,
+          "statement": "\"The company's growth was substantially larger than analysts had predicted.\"",
+          "answer": true,
+          "explanation": "**C) \"The company's growth was substantially larger than analysts had predicted.\"**\n\n\"Substantially\" is an adverb modifying the comparative adjective \"larger\" — the normal adverb–adjective pattern.\n\nA noun or adjective \"substantial\" would not sit cleanly in that slot before \"larger.\" Two adjectives in a row, \"substantial larger,\" is ungrammatical, which is the quickest way to hear the difference.\n\nAdverbs of degree such as substantially, considerably and significantly all behave this way before comparatives. The word form stands: adverb substantially correctly intensifies larger.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "the global burden of disease,",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-10",
+          "statement_index": 3,
+          "statement": "\"Burden,\" as in \"the global burden of disease,\" is used figuratively to mean the overall impact or cost of a health problem, not a physical object being carried.",
+          "answer": true,
+          "explanation": "**C) \"Burden,\" as in \"the global burden of disease,\" is used figuratively to mean the overall impact or cost of a health problem, not a physical object being carried.**\n\nParagraph 3’s huge AMR death toll is the kind of impact health writers call a \"burden\" — figurative weight/cost, not a load on someone’s back. The passage’s own word \"toll\" works the same way, naming a cost rather than a physical object.\n\n**Tip:** Abstract nouns paired with numbers — burden, toll, cost — are usually measuring impact figuratively.\n\nThe metaphor imports the idea of weight to convey scale: 1.27 million direct deaths and 4.95 million associated ones are presented as something societies carry. Reading \"burden\" literally here would make the standard epidemiological phrase meaningless.\n\nFigurative \"burden of disease\" correctly tracks impact rather than a physical object, so the claim holds.",
+          "passage_anchor": "a toll exceeding that of several long-feared infectious diseases"
+        }
+      ]
+    },
+    {
+      "term": "The gradual erosion of trust took years to fully repair.",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-09",
+          "statement_index": 1,
+          "statement": "\"The gradual erosion of trust took years to fully repair.\"",
+          "answer": true,
+          "explanation": "**A) \"The gradual erosion of trust took years to fully repair.\"**\n\nAfter the article and adjective \"gradual,\" the slot needs a noun; \"erosion\" is the noun form of erode and fits cleanly.\n\n\"Of trust\" then completes a standard noun phrase as subject. The pattern article + adjective + noun + of-phrase is one of the most common shapes for an academic subject, and every slot here is filled correctly.\n\nThe verb \"took\" also confirms the phrase is functioning as a subject rather than an action. The word form stands: noun erosion is the right part of speech here.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "The narrowly of the criteria excluded many otherwise qualified applicants.",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-09",
+          "statement_index": 4,
+          "statement": "\"The narrowly of the criteria excluded many otherwise qualified applicants.\"",
+          "answer": false,
+          "explanation": "**D) \"The narrowly of the criteria excluded many otherwise qualified applicants.\"**\n\n\"The ___ of the criteria\" needs a noun head; \"narrowly\" is an adverb and cannot fill that subject slot.\n\nThe noun needed is \"narrowness\" (or a rewrite such as \"The narrow criteria…\"). The frame \"the ___ of\" is a reliable noun test, since only a noun can follow \"the\" and precede \"of\" in this structure.\n\nThe -ly ending is the visible clue that the word is built to modify verbs and adjectives, not to head a phrase. The form fails; a sound repair is \"The narrowness of the criteria excluded many otherwise qualified applicants.\"",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "The policy remains confined in a small number of pilot regions.",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-08",
+          "statement_index": 4,
+          "statement": "\"The policy remains confined in a small number of pilot regions.\"",
+          "answer": false,
+          "explanation": "**D) \"The policy remains confined in a small number of pilot regions.\"**\n\nLimits on scope use \"confined to,\" not \"confined in,\" when naming the set of places or cases.\n\n\"In\" suggests physical enclosure rather than the abstract restriction intended. The passage uses the correct pattern itself when it describes a trend \"confined to a narrow set of white-collar industries.\"\n\nThink of \"confined to\" as drawing a boundary around scope, while \"confined in\" would put something inside a container. The collocation fails; repair to \"The policy remains confined to a small number of pilot regions.\"",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "the psychological benefits observed in trials could erode over time",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-04",
+          "statement_index": 2,
+          "statement": "The passage implies that the psychological benefits observed in four-day-week trials are guaranteed to persist indefinitely, regardless of employer monitoring practices.",
+          "answer": false,
+          "explanation": "**B) The passage implies that the psychological benefits observed in four-day-week trials are guaranteed to persist indefinitely, regardless of employer monitoring practices.**\n\nParagraph 8 warns that without careful monitoring those psychological benefits \"could erode over time\" as work–life boundaries blur.\n\n\"Guaranteed… indefinitely, regardless of… monitoring\" is the opposite of that conditional caution. The passage attaches a condition to the benefits, while the statement strips the condition away and promises permanence.\n\nThe phrase \"without careful monitoring\" is the conditional clause that the word \"regardless\" directly contradicts. The claim fails: the text ties lasting benefits to monitoring, and allows erosion when boundaries slip.",
+          "passage_anchor": "the psychological benefits observed in trials could erode over time"
+        }
+      ]
+    },
+    {
+      "term": "The relative weight of the aid also varied considerably by recipient",
+      "sources": [
+        {
+          "subsection": "t.5",
+          "passage_title": "The Marshall Plan and the Politics of Economic Recovery",
+          "task_id": "en-t-5-09",
+          "statement_index": 4,
+          "statement": "\"The historians' dispute centres on the relative weight assigned to domestic versus external factors.\"",
+          "answer": true,
+          "explanation": "**D) \"The historians' dispute centres on the relative weight assigned to domestic versus external factors.\"**\n\nRelative weight is a natural collocation for how much importance each factor receives in an explanation. Paragraph 8's own phrase \"The relative weight of the aid\" uses the same idiom for comparative importance. Centres on correctly introduces the focal issue of that dispute.\n\nWeight here means explanatory importance, not physical heaviness or a single numerical share. Relative weight for competing causal factors is correct usage, so the sentence stands.",
+          "passage_anchor": "The relative weight of the aid also varied considerably by recipient"
+        }
+      ]
+    },
+    {
+      "term": "the rhythms of an industrial economy built on physical labour and shift work",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-04",
+          "statement_index": 5,
+          "statement": "The passage suggests that the historical justification for the standard workweek was rooted primarily in maximising employee wellbeing rather than industrial circumstance.",
+          "answer": false,
+          "explanation": "**E) The passage suggests that the historical justification for the standard workweek was rooted primarily in maximising employee wellbeing rather than industrial circumstance.**\n\nParagraph 3 says the forty-hour structure was \"never designed around genuine productivity but rather around the rhythms of an industrial economy built on physical labour and shift work\" — industrial circumstance, not wellbeing maximisation.\n\nWellbeing gains appear later as trial outcomes, not as the original design rationale. The statement quietly moves a twenty-first-century result backwards in time and reinstalls it as a twentieth-century motive.\n\nKeep the two questions apart: why the week was built that way, and what happens to people when it changes. The claim fails: the text roots the old week in industrial rhythms, not employee-wellbeing design.",
+          "passage_anchor": "the rhythms of an industrial economy built on physical labour and shift work"
+        }
+      ]
+    },
+    {
+      "term": "The sample was skewed of larger firms in the region.",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-08",
+          "statement_index": 2,
+          "statement": "\"The sample was skewed of larger firms in the region.\"",
+          "answer": false,
+          "explanation": "**B) \"The sample was skewed of larger firms in the region.\"**\n\nEnglish wants \"skewed toward/towards\" (or \"skewed in favour of\"), not \"skewed of.\"\n\n\"Of\" is the wrong preposition after skewed when naming the overrepresented group. Directional prepositions fit here because a skew points somewhere, and \"of\" carries no direction at all.\n\n**Trap:** Copy the passage's \"skewed toward,\" not a guessed \"of.\"\n\nWhen unsure of a preposition, hunt for the same word in the reading text and reuse its pattern. The collocation fails; repair to \"The sample was skewed toward larger firms in the region.\"",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "the spread of resistance genes between species,",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-10",
+          "statement_index": 5,
+          "statement": "\"Spread,\" as in \"the spread of resistance genes between species,\" is used only in its literal sense of physically scattering solid objects across a surface.",
+          "answer": false,
+          "explanation": "**E) \"Spread,\" as in \"the spread of resistance genes between species,\" is used only in its literal sense of physically scattering solid objects across a surface.**\n\nParagraph 5’s gene \"spread\" through horizontal transfer is biological transmission between species, not literal scattering of solid objects on a surface. \"Only… literal\" therefore mislabels the usage. Genes move by being carried inside plasmids from one organism to another, which is transmission rather than distribution across a plane.\n\n**Trap:** \"Spread\" in infection biology is usually extended transmission language, not dustpan physics.\n\nThe restrictive word \"only\" does the damage here, since it rules out the extended sense the passage actually employs. Paragraph 4’s \"environmental spread of resistance genes\" uses the same transmission meaning, confirming the pattern across the text.\n\nRestricting \"spread\" to literal object-scattering fails against the passage’s gene-transfer sense.",
+          "passage_anchor": "carry resistance genes between entirely different bacterial species, not merely within one"
+        }
+      ]
+    },
+    {
+      "term": "the tendency for studies with small or null effects to go unpublished",
+      "sources": [
+        {
+          "subsection": "t.6",
+          "passage_title": "Nudge Theory and the Limits of Behavioural Public Policy",
+          "task_id": "en-t-6-09",
+          "statement_index": 5,
+          "statement": "\"Publication bias refers to the tendency for null or small-effect studies to be published more often than significant ones.\"",
+          "answer": false,
+          "explanation": "**E) \"Publication bias refers to the tendency for null or small-effect studies to be published more often than significant ones.\"**\n\nParagraph 6 defines publication bias as \"the tendency for studies with small or null effects to go unpublished\" — the opposite of being published more often. That direction is what makes the correction reduce the average effect rather than raise it.\n\n**Trap:** Flipping unpublished ↔ published more often reverses the bias.\n\nYou can sanity-check the direction using the numbers: if weak studies were over-published, correcting for the bias would push the estimate up, not down from 8.7 to 1.4. The definition is wrong, so the wording is not used correctly.",
+          "passage_anchor": "the tendency for studies with small or null effects to go unpublished"
+        }
+      ]
+    },
+    {
+      "term": "these proxies can correlate with income, ethnicity, or age",
+      "sources": [
+        {
+          "subsection": "t.2",
+          "passage_title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+          "task_id": "en-t-2-04",
+          "statement_index": 5,
+          "statement": "Device type and postal code are said to correlate with, not encode, protected traits.",
+          "answer": true,
+          "explanation": "**E) Device type and postal code are said to correlate with, not encode, protected traits.**\n\nParagraph (6) warns that proxies such as device type, postal code, or browsing patterns can correlate with income, ethnicity, or age. The hedging verb is \"correlate with,\" not a claim that those proxies literally encode protected characteristics. Stronger verbs like encode, prove, or cause would overstate what the passage claims about those proxies. Match the careful \"correlate with\" wording and refuse any upgrade to encoding.\n\n**Tip:** Watch \"correlate with\" versus stronger verbs like encode, prove, or cause.\n\nThe passage's careful \"correlate with\" matches this claim, so the line stands.",
+          "passage_anchor": "these proxies can correlate with income, ethnicity, or age"
+        },
+        {
+          "subsection": "t.2",
+          "passage_title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+          "task_id": "en-t-2-09",
+          "statement_index": 4,
+          "statement": "\"The retailer's margins correlate with, rather than directly cause, the observed price gaps.\"",
+          "answer": true,
+          "explanation": "**D) \"The retailer's margins correlate with, rather than directly cause, the observed price gaps.\"**\n\nCorrelate with marks association without claiming causation; the rather-than contrast keeps that hedge precise. The sentence uses the verb the way careful analytics prose (and paragraph (6)'s proxy language) does. Swapping in cause or prove would overstate what correlate with allows. Keep the association-only reading the verb signals.\n\nAssociation without causation is exactly what correlate with signals, so the claim is lexically sound.",
+          "passage_anchor": "these proxies can correlate with income, ethnicity, or age"
+        },
+        {
+          "subsection": "t.2",
+          "passage_title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+          "task_id": "en-t-2-10",
+          "statement_index": 5,
+          "statement": "\"The proxy correlated so strongly with income that regulators dismissed it as completely irrelevant.\"",
+          "answer": false,
+          "explanation": "**E) \"The proxy correlated so strongly with income that regulators dismissed it as completely irrelevant.\"**\n\nA strong correlation with income would make a proxy more relevant to discrimination concerns, not \"completely irrelevant.\" The so…that result clause reverses the logical force of the correlation claim. So…that can sound fluent while smuggling a nonsensical consequence. Strong income correlation implies relevance; dismissing the proxy as irrelevant fights ordinary meaning.\n\n**Trap:** So…that can sound fluent while smuggling a nonsensical consequence.\n\nStrong income correlation implies relevance, so dismissing the proxy as irrelevant fails ordinary meaning.",
+          "passage_anchor": "these proxies can correlate with income, ethnicity, or age"
+        }
+      ]
+    },
+    {
+      "term": "think it's not fair",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-10",
+          "statement_index": 4,
+          "statement": "Replacing \"think it's not fair\" with \"caution against the practice\" preserves the meaning in a more formal register.",
+          "answer": false,
+          "explanation": "**D) Replacing \"think it's not fair\" with \"caution against the practice\" preserves the meaning in a more formal register.**\n\nJudging something unfair is a fairness appraisal; \"caution against\" warns about risk or harm. Those are different speech acts.\n\nFormal tone alone does not make an opinion of injustice into a risk warning. You can consider a practice unfair yet never warn anyone off it, and you can warn against a practice you think is perfectly fair but risky.\n\nA faithful formal version would be closer to \"regard the practice as inequitable.\" The substitution fails: the new phrase changes the claim, not just the register.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "this shift has been made more feasible by a narrowing cost differential",
+      "sources": [
+        {
+          "subsection": "t.4",
+          "passage_title": "Reshoring, Nearshoring, and the Post-Pandemic Reordering of Global Supply Chains",
+          "task_id": "en-t-4-09",
+          "statement_index": 2,
+          "statement": "\"The narrowing cost gap made relocation more economically viable for several manufacturers.\"",
+          "answer": true,
+          "explanation": "**B) \"The narrowing cost gap made relocation more economically viable for several manufacturers.\"**\n\n\"Narrowing cost gap\" plus \"more economically viable\" tracks the passage logic that a smaller labour-cost differential makes relocation more feasible. The adjectives and nouns match ordinary usage. Paragraph 4's \"more feasible by a narrowing cost differential\" is the same idea in near-synonyms.\n\nThe meaning lines up with the established sense, so the sentence stands. Accept viable/feasible paraphrases when they stay tied to a narrower cost gap.",
+          "passage_anchor": "this shift has been made more feasible by a narrowing cost differential"
+        }
+      ]
+    },
+    {
+      "term": "viability",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 2,
+          "statement": "\"Viable\" means capable of working successfully, while \"viability\" is simply the noun form referring to that same capacity.",
+          "answer": true,
+          "explanation": "**B) \"Viable\" means capable of working successfully, while \"viability\" is simply the noun form referring to that same capacity.**\n\nParagraph 1 uses \"viable for clinical use\" for penicillin after purification. \"Viable\" (adjective) and \"viability\" (noun) name the same capacity at different parts of speech — the distinction is exact. Saying penicillin \"became viable\" and saying it \"achieved clinical viability\" would report the same milestone.\n\n**Tip:** Check whether the claimed noun is a true -ity/-ness form of the adjective in the passage.\n\nA derivational pair like this changes the grammar of a sentence without changing what is being claimed. That is the difference between a genuine word-family relationship and a false friend, where the resemblance is only in spelling.\n\nThe viable / viability pairing matches standard usage, so the claim holds.",
+          "passage_anchor": "penicillin became viable for clinical use"
+        }
+      ]
+    },
+    {
+      "term": "Viable",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-09",
+          "statement_index": 2,
+          "statement": "\"Viable\" means capable of working successfully, while \"viability\" is simply the noun form referring to that same capacity.",
+          "answer": true,
+          "explanation": "**B) \"Viable\" means capable of working successfully, while \"viability\" is simply the noun form referring to that same capacity.**\n\nParagraph 1 uses \"viable for clinical use\" for penicillin after purification. \"Viable\" (adjective) and \"viability\" (noun) name the same capacity at different parts of speech — the distinction is exact. Saying penicillin \"became viable\" and saying it \"achieved clinical viability\" would report the same milestone.\n\n**Tip:** Check whether the claimed noun is a true -ity/-ness form of the adjective in the passage.\n\nA derivational pair like this changes the grammar of a sentence without changing what is being claimed. That is the difference between a genuine word-family relationship and a false friend, where the resemblance is only in spelling.\n\nThe viable / viability pairing matches standard usage, so the claim holds.",
+          "passage_anchor": "penicillin became viable for clinical use"
+        }
+      ]
+    },
+    {
+      "term": "visual landmarks and possibly olfactory cues",
+      "sources": [
+        {
+          "subsection": "t.8",
+          "passage_title": "The Astonishing Navigation of the Arctic Tern",
+          "task_id": "en-t-8-09",
+          "statement_index": 4,
+          "statement": "\"Olfactory cues refers to information gathered through an animal's sense of smell.\"",
+          "answer": true,
+          "explanation": "**D) \"Olfactory cues refers to information gathered through an animal's sense of smell.\"**\n\nOlfactory = smell-related; cues are sensory signals. Paragraph 6 lists “possibly olfactory cues” beside visual landmarks as candidate navigation inputs — smell-based information, not taste or sound. The “possibly” in the passage hedges certainty of use, not the meaning of the term.\n\nSmell-based information is the right sense of olfactory cues, so the wording stands. Word-family knowledge (olfactory → smell) is enough even before you reread ¶6.",
+          "passage_anchor": "visual landmarks and possibly olfactory cues"
+        }
+      ]
+    },
+    {
+      "term": "Void,",
+      "sources": [
+        {
+          "subsection": "t.7",
+          "passage_title": "The Antibiotic Discovery Void and the Economics of Resistance",
+          "task_id": "en-t-7-10",
+          "statement_index": 4,
+          "statement": "\"Void,\" as in \"a discovery void,\" is used figuratively to mean an absence or gap, not a literal empty physical space.",
+          "answer": true,
+          "explanation": "**D) \"Void,\" as in \"a discovery void,\" is used figuratively to mean an absence or gap, not a literal empty physical space.**\n\nParagraph 6’s quoted \"discovery void\" names a prolonged absence of genuinely new antibiotic classes since 1987 — a gap in innovation, not an empty room. The passage glosses the term itself, calling it \"a prolonged gap researchers have termed the 'discovery void,'\" which spells out the figurative reading.\n\n**Tip:** When a passage supplies its own gloss for a coined phrase, that gloss settles literal-versus-figurative questions.\n\nWhat is empty here is a period of time rather than a region of space, so the spatial sense of \"void\" has been transferred to a temporal and conceptual absence. The quotation marks around the phrase in the passage further mark it as a specialist coinage rather than plain description.\n\n\"Discovery void\" as figurative absence matches Paragraph 6, so the claim holds.",
+          "passage_anchor": "a prolonged gap researchers have termed the \"discovery void.\""
+        }
+      ]
+    },
+    {
+      "term": "wear away slowly",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-10",
+          "statement_index": 2,
+          "statement": "Replacing \"wear away slowly\" with \"erode\" preserves the meaning in a more formal register.",
+          "answer": true,
+          "explanation": "**B) Replacing \"wear away slowly\" with \"erode\" preserves the meaning in a more formal register.**\n\n\"Erode\" is the compact formal verb for gradual wearing-away, matching \"wear away slowly\" in sense.\n\nThe swap tightens style without flipping direction of change. Gradualness is already built into the verb, so nothing is lost when the adverb \"slowly\" disappears.\n\nReplacing a multi-word phrasal expression with a single Latinate verb is one of the standard moves for raising register. The substitution works: erode keeps the slow-loss meaning in formal vocabulary.",
+          "passage_anchor": ""
+        }
+      ]
+    },
+    {
+      "term": "What has changed is the granularity of the data feeding these systems",
+      "sources": [
+        {
+          "subsection": "t.2",
+          "passage_title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+          "task_id": "en-t-2-10",
+          "statement_index": 1,
+          "statement": "\"The firm's pricing strategy was granular enough to distinguish between nearly identical customers.\"",
+          "answer": true,
+          "explanation": "**A) \"The firm's pricing strategy was granular enough to distinguish between nearly identical customers.\"**\n\nGranular describes fine-grained detail; being granular enough to separate nearly identical customers is a coherent, natural use of the word. Paragraph (2) praises exactly that rise in the granularity of pricing data. The collocation does not stretch granular beyond fine-grained resolution. Tie the adjective to the passage's point about finer data feeding pricing systems.\n\nFine-grained discrimination between near-identical customers fits granular, so the wording stands.",
+          "passage_anchor": "What has changed is the granularity of the data feeding these systems"
+        }
+      ]
+    },
+    {
+      "term": "Years of underinvestment had begun to erode the company's competitive position.",
+      "sources": [
+        {
+          "subsection": "t.1",
+          "passage_title": "The Rise of the Four-Day Workweek",
+          "task_id": "en-t-1-07",
+          "statement_index": 2,
+          "statement": "\"Years of underinvestment had begun to erode the company's competitive position.\"",
+          "answer": true,
+          "explanation": "**B) \"Years of underinvestment had begun to erode the company's competitive position.\"**\n\n\"Erode\" naturally names gradual wearing-away; here competitive strength weakens over years of underinvestment.\n\nThe subject, process, and metaphorical object all fit standard usage. \"Years of\" supplies the slow timescale that erode requires, and \"had begun to\" reinforces that the loss is ongoing rather than instant.\n\nAbstract nouns such as trust, advantage and position are exactly the kinds of things this verb takes in formal prose. The wording stands: erode correctly marks slow loss of competitive position.",
+          "passage_anchor": ""
+        }
+      ]
+    }
+  ]
+}

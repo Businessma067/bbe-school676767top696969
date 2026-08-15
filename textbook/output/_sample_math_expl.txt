@@ -1,0 +1,7 @@
+TRUE — "At least 7 out of 10" is, by definition, the sum of the individual probabilities for 7, 8, 9, and 10 correct answers.
+
+Key formula:
+
+$$P(X=k)=\binom{n}{k}p^{k}(1-p)^{n-k}$$
+
+Tip: Any 'at least k' phrase converts directly into a sum starting at k and ending at n — check the bounds match, not the underlying numbers.

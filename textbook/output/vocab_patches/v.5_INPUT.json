@@ -1,0 +1,1145 @@
+{
+  "subsection_id": "v.5",
+  "tasks": [
+    {
+      "id": "en-v-5-01",
+      "case_id": "ENG V.5.01",
+      "title": "Task 1",
+      "subsection": "v.5",
+      "sort_order": 1,
+      "difficulty_level": "1/5",
+      "context": "Five claims about pairs used in clinical and public-health writing, where familiar words carry narrower technical senses. Decide whether each account of the pair is accurate.",
+      "statements": [
+        "In clinical usage \"acute\" and \"severe\" are interchangeable, so an infection recorded as \"acute\" is by definition more dangerous than one recorded as chronic.",
+        "Malaria described as \"endemic\" in a highland district is constantly present there at a predictable level, whereas an \"epidemic\" would mean cases climbing well above that expected baseline.",
+        "A ministry reporting the \"incidence\" of hepatitis C is counting everyone living with the infection, while \"prevalence\" would count only the new diagnoses recorded during the year.",
+        "\"Quarantine\" and \"isolation\" are two labels for a single measure, so a traveller with no symptoms and a patient with a confirmed infection are placed under the same order.",
+        "In a case report the rash an examining doctor observes is written up as a \"symptom\", while the headache the patient describes is recorded as a \"sign\"."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In clinical usage \"acute\" and \"severe\" are interchangeable, so an infection recorded as \"acute\" is by definition more dangerous than one recorded as chronic.**\n\n\"Acute\" is a statement about time course: it marks an illness that arrives quickly and runs a short course, whatever its intensity. \"Severe\" grades how bad the episode is, and the two scales move independently, which is why notes can record an acute mild sinusitis in one patient and a chronic severe one in the next. The sentence borrows danger from the severity scale and attaches it to the onset scale.\n\n**Trap:** Everyday English uses \"acute\" to mean intense, and that habit is precisely what the clinical sense declines to follow.\n\nSpeed of onset and gravity are measured separately in a case note, so the claimed equivalence collapses and an acute infection remains the fast-arriving one rather than the automatically dangerous one.",
+        "**B) Malaria described as \"endemic\" in a highland district is constantly present there at a predictable level, whereas an \"epidemic\" would mean cases climbing well above that expected baseline.**\n\n\"Endemic\" describes a disease that is permanently established in a population at a rate surveillance can anticipate, however high or low that rate happens to be. \"Epidemic\" is a comparative judgement against that anticipated rate, marking a rise steep enough to be abnormal for the place and season. The pair therefore works as baseline against departure from baseline, which is why an endemic district can still suffer an epidemic in a bad year.\n\nBoth terms are pinned to the same expected level and differ only in whether cases sit on it or shoot above it, so the description tracks how surveillance reports actually use them.",
+        "**C) A ministry reporting the \"incidence\" of hepatitis C is counting everyone living with the infection, while \"prevalence\" would count only the new diagnoses recorded during the year.**\n\n\"Incidence\" counts fresh cases arising in a defined period and therefore measures how fast an infection is spreading. \"Prevalence\" counts everyone who has the condition at a given moment, whether they were diagnosed last week or a decade ago, and so measures the burden a health system is carrying. A long-lasting infection such as hepatitis C shows the gap plainly: prevalence stays high for years after incidence has been driven down by treatment.\n\nThe two counts have been swapped, so the sentence describes the burden measure as the flow measure and cannot stand as written.",
+        "**D) \"Quarantine\" and \"isolation\" are two labels for a single measure, so a traveller with no symptoms and a patient with a confirmed infection are placed under the same order.**\n\n\"Quarantine\" separates people who may have been exposed but are not known to be infected, and it lasts as long as the incubation period requires. \"Isolation\" separates people who are known or strongly suspected to be infectious, and it lasts until they cease to be. The distinction decides who is monitored, for how long, and under what release criteria, which is why public-health law keeps the two orders apart.\n\nExposure and confirmed infection call for different periods and different release tests, so collapsing the two words also collapses a legal distinction that the traveller and the patient would each feel.",
+        "**E) In a case report the rash an examining doctor observes is written up as a \"symptom\", while the headache the patient describes is recorded as a \"sign\".**\n\nA \"symptom\" is subjective: it is what the patient reports feeling, and nobody else can verify it directly. A \"sign\" is objective: it is what the clinician can see, hear, palpate or measure, and a second examiner should find it too. A visible rash is therefore the sign and the reported headache the symptom.\n\n**Tip:** Ask who could confirm the finding without being told about it; if only the patient knows, it is a symptom.\n\nThe labels have been exchanged here, so the line fails — the rash is the sign and the headache the symptom."
+      ],
+      "highlights": [
+        "acute",
+        "endemic",
+        "incidence",
+        "Quarantine",
+        "symptom"
+      ],
+      "solution_overview": "Each line turns on a technical sense that everyday English has blurred: how fast an illness starts rather than how bad it is, a steady expected level rather than a departure from it, existing cases rather than new ones, exposure rather than confirmed infection, and what the patient feels rather than what the examiner can verify. Work out which axis the sentence is really measuring, then check that the word chosen belongs on that axis. Where a definition reads smoothly, test whether the two terms have quietly been handed each other's meanings."
+    },
+    {
+      "id": "en-v-5-02",
+      "case_id": "ENG V.5.02",
+      "title": "Task 2",
+      "subsection": "v.5",
+      "sort_order": 2,
+      "difficulty_level": "1/5",
+      "context": "Five statements about the near-synonyms used in ecology and conservation reporting. Judge whether each distinction is drawn correctly.",
+      "statements": [
+        "\"Habitat\" names the place a species lives, while its \"niche\" is the role and range of conditions it occupies there, so two warbler species can share one stretch of woodland and still hold different niches.",
+        "\"Invasive\" is simply the technical label for \"non-native\", so a garden shrub brought in from another continent is classed as invasive in a conservation survey whether or not it spreads.",
+        "On the standard red lists \"threatened\" is the umbrella heading and \"endangered\" one of the categories beneath it, so every endangered amphibian counts as threatened while many threatened ones are not endangered.",
+        "\"Drought\" describes a climate that is permanently dry, while \"aridity\" describes a temporary shortfall against what a place normally receives, so the Atacama sits in perpetual drought while a rainforest can never be arid.",
+        "\"Reuse\" and \"recycle\" name the same stage of the waste hierarchy, so returning a glass bottle to be washed and refilled counts as recycling in the technical sense."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Habitat\" names the place a species lives, while its \"niche\" is the role and range of conditions it occupies there, so two warbler species can share one stretch of woodland and still hold different niches.**\n\n\"Habitat\" is an address: the physical setting, its vegetation and its structure. \"Niche\" is an occupation: the temperatures, food, nesting height and timing a species actually exploits, together with the part it plays in the wider system. Because the second is finer-grained than the first, birds feeding at different heights on different insects are partitioning niches inside a shared habitat.\n\nPlace and role are separate levels of description, and the woodland example sets each word at its own level, so the contrast is drawn exactly as ecologists draw it.",
+        "**B) \"Invasive\" is simply the technical label for \"non-native\", so a garden shrub brought in from another continent is classed as invasive in a conservation survey whether or not it spreads.**\n\n\"Non-native\" is a statement of origin and nothing more: the species arrived through human agency rather than by its own range expansion. \"Invasive\" adds two further conditions, that the species establishes itself and spreads to the measurable detriment of native species or habitats. Most introduced garden plants never clear that bar, which is why surveys list far more non-natives than invasives.\n\nHarm and spread are conditions the shorter label never claims, so the equation fails — the shrub is non-native, and only evidence of aggressive spread would make it invasive.",
+        "**C) On the standard red lists \"threatened\" is the umbrella heading and \"endangered\" one of the categories beneath it, so every endangered amphibian counts as threatened while many threatened ones are not endangered.**\n\n\"Threatened\" is the grouping term covering the three ranked categories of elevated extinction risk. \"Endangered\" is the middle of those ranks, sitting above vulnerable and below critically endangered, and it carries specific criteria on population size, decline and range. That nesting is what makes the one-way relationship in the sentence hold: membership of the narrower rank guarantees membership of the wider group, never the reverse.\n\nThe sentence keeps the general heading above the specific rank and draws the implication in the direction that nesting allows, so it reads correctly.",
+        "**D) \"Drought\" describes a climate that is permanently dry, while \"aridity\" describes a temporary shortfall against what a place normally receives, so the Atacama sits in perpetual drought while a rainforest can never be arid.**\n\nAridity is the long-run property, built into a place's climate statistics and expected every year, which is why deserts are described as arid rather than as permanently drought-stricken. Drought is the deviation, defined against whatever that particular place normally receives, which makes it relative and temporary. A rainforest that misses a wet season is in drought while remaining far wetter than any desert, and the Atacama receiving its usual few millimetres is simply arid.\n\n**Trap:** Both words mean dry in ordinary speech, which hides that one is a baseline and the other a departure from it.\n\nThe permanent condition and the temporary shortfall have been handed to the wrong words, so the line fails — the desert is arid, and it is the rainforest that can fall into drought.",
+        "**E) \"Reuse\" and \"recycle\" name the same stage of the waste hierarchy, so returning a glass bottle to be washed and refilled counts as recycling in the technical sense.**\n\n\"Reuse\" keeps the object intact and puts it back into service in its existing form, which is why refill schemes and repair are ranked above recycling in waste policy. \"Recycle\" breaks the material down and reprocesses it into new feedstock, which recovers the substance but destroys the article and consumes energy doing so. A washed and refilled bottle has never been reprocessed at all.\n\n**Tip:** If the object survives the process, the verb is reuse; if only the material survives, it is recycling.\n\nThe hierarchy separates these steps precisely because their environmental costs differ, so the refilled bottle belongs under reuse rather than recycling."
+      ],
+      "highlights": [
+        "niche",
+        "Invasive",
+        "endangered",
+        "Drought",
+        "Reuse"
+      ],
+      "solution_overview": "Conservation vocabulary is built from graded categories, so read each line for the extra condition one word imposes on the other: a role inside a place, harm on top of foreign origin, a rank inside a wider group, a deviation from a local norm, and reprocessing rather than continued service. Ask whether the narrower term could apply without its defining condition being met. Where a sentence flattens two terms into one, check what the policy or red list would lose by accepting that."
+    },
+    {
+      "id": "en-v-5-03",
+      "case_id": "ENG V.5.03",
+      "title": "Task 3",
+      "subsection": "v.5",
+      "sort_order": 3,
+      "difficulty_level": "1/5",
+      "context": "Five claims about pairs drawn from linguistics, teaching and folklore, each marking a different scope. Decide whether the contrast holds.",
+      "statements": [
+        "\"Accent\" covers pronunciation alone, while \"dialect\" takes in vocabulary and grammar as well, so a speaker whose written prose is entirely standard may still have a strong regional accent.",
+        "\"Syllabus\" is the wider term for everything a school teaches across all its years, while \"curriculum\" lists the topics and readings of a single course.",
+        "A \"formative\" assessment is designed to feed back into teaching while the course is still running, whereas a \"summative\" one measures what has been learnt once it has ended.",
+        "\"Empathy\" means reconstructing another person's feelings from the inside, while \"sympathy\" means feeling for them from outside their situation, so a bereavement volunteer trained in empathy is being asked for more than sympathy.",
+        "In folklore scholarship a \"legend\" is the sacred narrative explaining how the world came to be, while a \"myth\" is set in remembered history and attached to named human figures."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Accent\" covers pronunciation alone, while \"dialect\" takes in vocabulary and grammar as well, so a speaker whose written prose is entirely standard may still have a strong regional accent.**\n\n\"Accent\" is confined to the sound system: vowels, consonants, rhythm and intonation. \"Dialect\" is the larger container, holding those sounds plus regional word choice and grammatical patterns such as distinctive past-tense forms. Because writing records words and grammar but not sound, a text can be free of dialect features while its author speaks with an unmistakable accent.\n\n**Tip:** Anything that survives being written down belongs to dialect; what disappears on the page is accent.\n\nThe sentence keeps sound inside the smaller category and lets the larger one absorb grammar and lexis, which is exactly how linguists divide the two.",
+        "**B) \"Syllabus\" is the wider term for everything a school teaches across all its years, while \"curriculum\" lists the topics and readings of a single course.**\n\n\"Curriculum\" is the broad programme of study: the whole set of subjects, aims and progression a school or degree offers. \"Syllabus\" is the narrower document attached to one course, setting out its topics, texts, sequence and assessment. Institutions therefore review a curriculum every few years and reissue syllabuses every term.\n\nThe sentence has put the small document in the large slot and the large programme in the small one, so the account is upside down — the curriculum is the whole, the syllabus one course within it.",
+        "**C) A \"formative\" assessment is designed to feed back into teaching while the course is still running, whereas a \"summative\" one measures what has been learnt once it has ended.**\n\n\"Formative\" work is diagnostic and forward-looking: its purpose is to show teacher and student where the gaps are in time to close them, which is why it is often ungraded. \"Summative\" work looks back and certifies attainment against the stated outcomes, which is why it carries the marks that appear on a transcript. The same quiz can serve either function depending on when it falls and what is done with the result.\n\nPurpose and timing are the two things that separate them, and the sentence names both correctly, so the distinction is sound.",
+        "**D) \"Empathy\" means reconstructing another person's feelings from the inside, while \"sympathy\" means feeling for them from outside their situation, so a bereavement volunteer trained in empathy is being asked for more than sympathy.**\n\n\"Sympathy\" is a response directed at someone: concern, pity or fellow feeling offered from one's own standpoint. \"Empathy\" involves taking up the other person's standpoint and modelling the experience as they have it, which is a harder and more disciplined act. Training in listening skills targets the second precisely because the first comes unbidden.\n\nStandpoint is the whole of the difference, and the sentence places the volunteer inside the other person's experience rather than beside it, so the comparison holds.",
+        "**E) In folklore scholarship a \"legend\" is the sacred narrative explaining how the world came to be, while a \"myth\" is set in remembered history and attached to named human figures.**\n\n\"Myth\" is the term for narratives of origin set outside ordinary historical time and treated as sacred or foundational by the community that tells them. \"Legend\" covers stories set in a remembered past, populated by human figures who may have existed, and told as though they could in principle be true. The two labels answer different questions about a story: what kind of time it occupies and what claim to belief it makes.\n\nThe definitions have been switched, so the line does not hold — an origin narrative is the myth, and the tale of a named local hero is the legend."
+      ],
+      "highlights": [
+        "dialect",
+        "Syllabus",
+        "formative",
+        "Empathy",
+        "legend"
+      ],
+      "solution_overview": "Every pair here divides a large container from something inside it, or an inside standpoint from an outside one, so decide which member ought to be the broader term before reading on. Pronunciation sits inside dialect, one course sits inside a curriculum, and origin narratives sit in a different order of time from stories about remembered people. The two lines about teaching and about feeling reward a check on purpose: what the assessment is for, and whose standpoint the listener is adopting."
+    },
+    {
+      "id": "en-v-5-04",
+      "case_id": "ENG V.5.04",
+      "title": "Task 4",
+      "subsection": "v.5",
+      "sort_order": 4,
+      "difficulty_level": "1/5",
+      "context": "Five statements about words that legal drafting keeps apart even though ordinary usage treats them as equivalent. Judge whether each account is accurate.",
+      "statements": [
+        "A decision can be \"lawful\" and still be attacked as not \"legitimate\", because legitimacy concerns whether the way power was exercised is accepted as proper rather than whether it complied with the statute book.",
+        "\"Allege\" and \"assert\" are neutral equivalents, so a newspaper reporting that an inspector \"alleges\" the water samples were switched is presenting that account as established.",
+        "An \"amnesty\" lifts liability from a whole class of people at once, while a \"pardon\" releases one named individual, so a state can pardon a single protester without granting an amnesty to the movement.",
+        "\"Liable\" belongs to civil obligations to make good a loss while \"guilty\" belongs to criminal fault, so a teaching hospital can be liable for damages without anyone being found guilty of an offence.",
+        "A \"statute\" is passed by the legislature while a \"regulation\" is made under powers the statute delegates, so a regulation can be struck down for reaching further than the statute allowed."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A decision can be \"lawful\" and still be attacked as not \"legitimate\", because legitimacy concerns whether the way power was exercised is accepted as proper rather than whether it complied with the statute book.**\n\n\"Lawful\" is a technical verdict: the act falls within the powers the law confers and breaks no rule. \"Legitimate\" is a broader judgement about authority and acceptance, taking in whether the right body decided, whether those affected were heard, and whether the reasons given can be defended in public. The two come apart whenever a rule permits something that a community regards as an abuse of the power behind it.\n\nCompliance and acceptance are answered by different tests, so a decision surviving the first can still fail the second, exactly as the sentence describes.",
+        "**B) \"Allege\" and \"assert\" are neutral equivalents, so a newspaper reporting that an inspector \"alleges\" the water samples were switched is presenting that account as established.**\n\n\"Assert\" states a claim and leaves its status open, taking its colour from the surrounding text. \"Allege\" carries a built-in reservation: it marks the claim as made but not yet proved, which is why it belongs to pleadings, charge sheets and the careful reporting of accusations. That reservation is a legal safeguard rather than a stylistic flourish.\n\nThe verb is chosen precisely to withhold endorsement, so the sentence reads a signal of doubt as a signal of proof and cannot stand — reporting an allegation leaves the switching unproved.",
+        "**C) An \"amnesty\" lifts liability from a whole class of people at once, while a \"pardon\" releases one named individual, so a state can pardon a single protester without granting an amnesty to the movement.**\n\n\"Amnesty\" operates by category, wiping away liability for a defined group and often for offences not yet prosecuted, which makes it a political instrument as much as a legal one. \"Pardon\" operates on an individual after conviction, relieving that person of the penalty while the conviction and the offence category remain untouched. Scope is therefore the dividing line, not mercy.\n\nOne act reaches a class and the other a person, and the sentence draws the consequence that follows from that difference in reach, so the description is accurate.",
+        "**D) \"Liable\" belongs to civil obligations to make good a loss while \"guilty\" belongs to criminal fault, so a teaching hospital can be liable for damages without anyone being found guilty of an offence.**\n\n\"Liable\" answers a question about who must compensate, decided on the balance of probabilities and often without any wrongdoing by a named person, as when an employer answers for the acts of staff. \"Guilty\" answers a question about criminal responsibility, decided to a far higher standard and attaching to an individual defendant. Different courts, different standards, different consequences.\n\n**Tip:** Ask what follows the finding. Money owed points to liability, punishment to guilt.\n\nA damages award and a criminal conviction rest on separate tests, so the hospital can face the first without anyone facing the second, just as the sentence has it.",
+        "**E) A \"statute\" is passed by the legislature while a \"regulation\" is made under powers the statute delegates, so a regulation can be struck down for reaching further than the statute allowed.**\n\n\"Statute\" is primary legislation, debated and enacted by the legislature itself. \"Regulation\" is made by a minister or agency exercising authority the statute has handed down, which is why it is quicker to produce and easier to amend. That delegated origin is also its weakness: a regulation lives inside the boundary of its parent statute and has no independent authority beyond it.\n\nDelegated power is bounded power, so a court can indeed set aside a regulation for exceeding its statutory source, and the sentence traces that chain correctly."
+      ],
+      "highlights": [
+        "legitimate",
+        "Allege",
+        "amnesty",
+        "Liable",
+        "regulation"
+      ],
+      "solution_overview": "These lines ask what a word commits its user to, so test each one against the machinery behind it: which body acted, which standard of proof applies, how many people are covered, and where the authority came from. Lawful and legitimate part company over acceptance rather than compliance, while liability and guilt part company over the standard and the consequence. One of the verbs of accusation is doing quiet work with the status of a claim, and reading it as neutral changes what the report is saying."
+    },
+    {
+      "id": "en-v-5-05",
+      "case_id": "ENG V.5.05",
+      "title": "Task 5",
+      "subsection": "v.5",
+      "sort_order": 5,
+      "difficulty_level": "1/5",
+      "context": "Five statements about the vocabulary of measurement and evidence in research writing. Decide whether each pair is described correctly.",
+      "statements": [
+        "\"Mass\" measures how much matter an object contains while \"weight\" measures the gravitational force acting on it, so a sample crate keeps its mass aboard a lunar lander and loses most of its weight.",
+        "A \"hypothesis\" is a single testable proposition while a \"theory\" is an organised framework that has survived repeated testing, so one experiment can overturn a hypothesis without disturbing the theory that generated it.",
+        "A \"specimen\" is the individual physical item collected, while the \"sample\" is the set drawn to stand for a larger population, so a botanist can log two hundred specimens that together make up one sample.",
+        "\"Weather\" reports the state of the atmosphere over hours or days while \"climate\" reports the statistics of that weather across decades, so a single cold spring settles nothing about a warming climate.",
+        "A \"census\" attempts to count every member of a population while a \"survey\" questions a sample and generalises, so a national census carries no sampling error of the kind a survey has to report."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Mass\" measures how much matter an object contains while \"weight\" measures the gravitational force acting on it, so a sample crate keeps its mass aboard a lunar lander and loses most of its weight.**\n\n\"Mass\" is an intrinsic property expressed in kilograms and unchanged by where the object sits. \"Weight\" is a force, the product of that mass and the local gravitational field, and it is properly expressed in newtons. Ordinary speech uses the second word for both, which is harmless at the greengrocer and unusable in a spacecraft payload calculation.\n\n**Tip:** If moving the object to the Moon changes the number, the quantity being reported is weight.\n\nOnly one of the two quantities depends on the local field, and the crate example puts the change on the right side of the pair, so the description works.",
+        "**B) A \"hypothesis\" is a single testable proposition while a \"theory\" is an organised framework that has survived repeated testing, so one experiment can overturn a hypothesis without disturbing the theory that generated it.**\n\nA \"hypothesis\" is narrow and disposable by design: it states one expected relationship in terms specific enough to be contradicted by data. A \"theory\" in scientific usage is the opposite of a guess, being a structured explanation supported across many independent lines of evidence and capable of generating fresh hypotheses. Losing one prediction rarely touches the structure, though a long run of failures eventually will.\n\nScope and evidential weight both separate the two, and the sentence lets the smaller claim fall without pulling the larger one down with it, which is how the relationship actually works.",
+        "**C) A \"specimen\" is the individual physical item collected, while the \"sample\" is the set drawn to stand for a larger population, so a botanist can log two hundred specimens that together make up one sample.**\n\n\"Specimen\" points at a thing you could hold: a pressed plant, a core, a vial of blood. \"Sample\" is a statistical notion, the subset selected from a population so that inferences can be drawn about the whole. One is counted in items, the other described by how it was drawn, which is why methods sections report sampling strategy rather than specimen strategy.\n\nA physical unit and a selected set belong to different levels of description, and the herbarium example nests the first inside the second correctly, so the line is accurate.",
+        "**D) \"Weather\" reports the state of the atmosphere over hours or days while \"climate\" reports the statistics of that weather across decades, so a single cold spring settles nothing about a warming climate.**\n\n\"Weather\" is the instantaneous condition: temperature, wind and precipitation at a place and time. \"Climate\" is the distribution those conditions form over a long reference period, conventionally thirty years, including its averages and its extremes. Because one is a draw and the other the shape of the distribution it was drawn from, no single draw can refute a claim about the shape.\n\nA short record cannot speak to a long-run statistic, so the inference the sentence blocks is exactly the one the distinction is designed to block.",
+        "**E) A \"census\" attempts to count every member of a population while a \"survey\" questions a sample and generalises, so a national census carries no sampling error of the kind a survey has to report.**\n\nA \"census\" aims at complete enumeration, which removes sampling error by definition though it leaves plenty of room for undercount, non-response and misreporting. A \"survey\" deliberately studies a fraction and uses probability theory to attach a margin of error to the estimates it produces. The choice between them trades cost and frequency against the kind of uncertainty a statistician must declare.\n\nEnumerating everyone and estimating from a fraction produce different error structures, so the sentence is right that only one of the two owes its readers a sampling margin."
+      ],
+      "highlights": [
+        "Mass",
+        "hypothesis",
+        "specimen",
+        "climate",
+        "census"
+      ],
+      "solution_overview": "Research prose uses ordinary words as measuring instruments, so ask what each term is a measurement of before judging the pair. Two of these lines separate a property of the object from a property of its setting, and two separate one observation from the long-run pattern or population it belongs to. For the hypothesis and theory pair, weigh how much evidence each word claims to rest on, and notice that the smaller claim is meant to be expendable."
+    },
+    {
+      "id": "en-v-5-06",
+      "case_id": "ENG V.5.06",
+      "title": "Task 6",
+      "subsection": "v.5",
+      "sort_order": 6,
+      "difficulty_level": "1/5",
+      "context": "Five claims about pairs used in museums, conservation studios and literary criticism, where intent and scope do most of the work. Decide whether each description is accurate.",
+      "statements": [
+        "In heritage practice \"conserving\" an object means returning it to the appearance it had when new, while \"restoring\" it means no more than halting further decay.",
+        "A \"replica\" is a copy made openly and acknowledged as a copy, while a \"forgery\" is a copy made to deceive, so intent rather than the quality of the workmanship separates the two.",
+        "A \"memoir\" must trace a whole life in sequence, whereas an \"autobiography\" is free to concentrate on a single episode or relationship.",
+        "A \"parody\" imitates a style in order to mock it, while a \"pastiche\" imitates without ridicule and often in homage, so a composer can write a pastiche of a baroque suite with no satirical intent at all.",
+        "A painting's \"provenance\" is the scholarly judgement about who painted it, while its \"attribution\" is the documented record of everyone who has owned it."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In heritage practice \"conserving\" an object means returning it to the appearance it had when new, while \"restoring\" it means no more than halting further decay.**\n\nConservation is the minimal intervention: stabilise the material, control the environment, arrest deterioration and keep as much original fabric as possible. Restoration goes further and reconstructs losses so that the object reads as it once did, which necessarily involves judgement about a state nobody alive has seen. The professional preference for the first is precisely a preference for doing less.\n\n**Trap:** Both words sound like repair, which hides the fact that only one of them adds material the object no longer has.\n\nThe two practices have been swapped, so the sentence fails — conserving is the arrest of decay and restoring the return to a former appearance.",
+        "**B) A \"replica\" is a copy made openly and acknowledged as a copy, while a \"forgery\" is a copy made to deceive, so intent rather than the quality of the workmanship separates the two.**\n\nA replica declares itself: it may be superbly accurate, cast from the original mould and displayed beside a label saying so. A forgery may be technically inferior yet still be a forgery, because what defines it is the attempt to pass the object off as something it is not. Courts and catalogues therefore ask about purpose and presentation rather than about skill.\n\nDeception is the defining ingredient, and the sentence locates the difference in intent rather than craftsmanship, which is exactly where museum practice locates it.",
+        "**C) A \"memoir\" must trace a whole life in sequence, whereas an \"autobiography\" is free to concentrate on a single episode or relationship.**\n\nAn autobiography undertakes the full arc, from origins onwards, and organises a life as a chronology. A memoir works from memory around a chosen theme, period or relationship, and it makes no promise of completeness; that narrower focus is what allows a writer to publish several. The word's root in memory rather than in life-writing is a useful reminder of the difference.\n\nThe obligations have been reversed, so the claim collapses — the whole-life chronology is the autobiography and the selective account the memoir.",
+        "**D) A \"parody\" imitates a style in order to mock it, while a \"pastiche\" imitates without ridicule and often in homage, so a composer can write a pastiche of a baroque suite with no satirical intent at all.**\n\nParody depends on exaggeration: it reproduces the mannerisms of a style so that the audience laughs at them, and it fails if the target is not recognised. Pastiche reproduces the same mannerisms in earnest, borrowing an idiom because it suits the material or honours a predecessor. The technique overlaps almost entirely; the attitude does not.\n\nAttitude to the model is the whole distinction, and the sentence lets one imitate admiringly while the other imitates mockingly, so the contrast is correctly drawn.",
+        "**E) A painting's \"provenance\" is the scholarly judgement about who painted it, while its \"attribution\" is the documented record of everyone who has owned it.**\n\nProvenance is the chain of custody: sales, inventories, bequests and export licences that trace an object from the studio to the present owner, and it is what a gallery consults when questions of looting or authenticity arise. Attribution is the connoisseurial and technical judgement assigning the work to a hand, a workshop or a follower, and it can change when new analysis appears. Strong provenance often supports an attribution, but the two answer different questions.\n\nOwnership history and authorship judgement have been exchanged here, so the sentence does not hold — provenance follows the object, attribution names the artist."
+      ],
+      "highlights": [
+        "conserving",
+        "replica",
+        "memoir",
+        "parody",
+        "provenance"
+      ],
+      "solution_overview": "Museum and literary vocabulary often separates two words by intent or by which question they answer rather than by any visible difference in the object, so ask what the practitioner is trying to achieve or record. Two of these lines look convincing until you notice that the definitions belong to the opposite terms, which a quick paraphrase of each word exposes. For the copying and imitation pairs, the decisive test is whether anyone is meant to be deceived or mocked."
+    },
+    {
+      "id": "en-v-5-07",
+      "case_id": "ENG V.5.07",
+      "title": "Task 7",
+      "subsection": "v.5",
+      "sort_order": 7,
+      "difficulty_level": "2/5",
+      "context": "Five statements about verbs that grade how completely a problem has been dealt with. Judge whether each comparison matches careful technical usage.",
+      "statements": [
+        "\"Mitigate\" and \"eliminate\" make the same claim about an outcome, so a scheme reported as mitigating flood risk in the valley has removed that risk.",
+        "A condition that merely \"enables\" an avalanche is correctly said to \"trigger\" it, since both verbs name the event that sets the slide in motion.",
+        "\"Curb\" claims only that something has been held in check, while \"eradicate\" claims it is gone for good, so a hospital campaign can curb the overuse of antibiotics for years without eradicating it.",
+        "\"Inhibit\" describes slowing or partly blocking a process while \"prevent\" claims it never occurs, so a compound that inhibits an enzyme in the dish need not prevent the disease in the patient.",
+        "\"Alleviate\" addresses how far a condition is felt while \"cure\" removes what is causing it, so a treatment can alleviate the pain of an incurable illness without altering its course."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Mitigate\" and \"eliminate\" make the same claim about an outcome, so a scheme reported as mitigating flood risk in the valley has removed that risk.**\n\nTo mitigate is to make less severe: the hazard remains, but its likelihood or its consequences have been reduced to a level someone has judged tolerable. To eliminate is to take the hazard out of the system altogether so that no residual risk needs managing. Engineering reports keep the words apart because insurers, planners and residents draw very different conclusions from each.\n\n**Tip:** Ask whether anything is left to monitor afterwards; mitigation always leaves a remainder.\n\nA reduced hazard is not an absent one, so the inference fails — mitigating the flood risk leaves a smaller risk that still has to be lived with.",
+        "**B) A condition that merely \"enables\" an avalanche is correctly said to \"trigger\" it, since both verbs name the event that sets the slide in motion.**\n\nTo enable is to make something possible: a weak layer buried in the snowpack creates the conditions under which a slide can happen, sometimes for weeks before anything moves. To trigger is to supply the immediate cause at a particular moment, whether that is a skier, a cornice collapse or a gunshot. Avalanche forecasting depends on holding the two apart, because the enabling condition is what makes the slope dangerous and the trigger is only what finishes the job.\n\nBackground possibility and immediate cause sit at different points in the causal chain, so the sentence overstates the weaker verb — the buried layer enables the slide that something else triggers.",
+        "**C) \"Curb\" claims only that something has been held in check, while \"eradicate\" claims it is gone for good, so a hospital campaign can curb the overuse of antibiotics for years without eradicating it.**\n\nCurb implies continuing pressure against a tendency that would otherwise return, which is why the verb suits behaviour and habits. Eradicate is absolute and, in public health, is reserved for the permanent removal of a pathogen or practice, with smallpox as the standard example of how rarely it is earned. A prescribing campaign restrains a habit rather than abolishing it.\n\nContinuing restraint and permanent removal are different achievements, and the sentence claims only the modest one for the campaign, so it stands.",
+        "**D) \"Inhibit\" describes slowing or partly blocking a process while \"prevent\" claims it never occurs, so a compound that inhibits an enzyme in the dish need not prevent the disease in the patient.**\n\nInhibition is a matter of degree and is reported with a percentage or a concentration, since the process continues at a reduced rate. Prevention is binary and is claimed only where the outcome is stopped from arising at all. Laboratory results speak the language of inhibition precisely because the step from partial blockade to clinical benefit has still to be demonstrated.\n\nA graded effect on a molecule does not license an absolute claim about an illness, and the sentence marks that gap rather than crossing it, so it is accurate.",
+        "**E) \"Alleviate\" addresses how far a condition is felt while \"cure\" removes what is causing it, so a treatment can alleviate the pain of an incurable illness without altering its course.**\n\nAlleviate works on the burden: it lightens symptoms, distress or pressure without any claim about the underlying mechanism. Cure works on the cause and asserts that the condition itself has been ended. Whole branches of medicine exist because the first is achievable in many cases where the second is not.\n\nSymptom and cause are separate targets, and the sentence keeps the treatment aimed at the first while conceding the second remains out of reach, which is how the pair is used."
+      ],
+      "highlights": [
+        "Mitigate",
+        "enables",
+        "Curb",
+        "Inhibit",
+        "Alleviate"
+      ],
+      "solution_overview": "Each verb here quietly grades how complete an intervention is, so read for the residue: what is left over once the action has been taken. Reduction, restraint and partial blockade all leave something behind, while removal, prevention and cure claim there is nothing left to manage. One line concerns causation rather than degree, and it repays asking whether the condition named makes an event possible or actually sets it off."
+    },
+    {
+      "id": "en-v-5-08",
+      "case_id": "ENG V.5.08",
+      "title": "Task 8",
+      "subsection": "v.5",
+      "sort_order": 8,
+      "difficulty_level": "2/5",
+      "context": "Five statements about the verbs and nouns academic writing uses to grade evidence and assign responsibility for a claim. Decide whether each is accurate.",
+      "statements": [
+        "A writer \"implies\" and a reader \"infers\", so a discussion section can imply that the funder shaped the design while it is the reviewer who infers it.",
+        "\"Indicate\" reports that evidence points somewhere while \"establish\" claims the question is settled, so a single fossil can indicate an earlier migration without establishing one.",
+        "\"Plausible\" says an account hangs together well enough to be entertained while \"probable\" says it is more likely than not, so a plausible reconstruction of the fire can still be an improbable one.",
+        "\"Rebut\" means to disprove a claim conclusively, while \"refute\" means only to offer a counter-argument against it.",
+        "A \"quotation\" reproduces an author's wording while a \"citation\" points the reader to the source, so a review article can cite four hundred studies and quote almost none of them."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A writer \"implies\" and a reader \"infers\", so a discussion section can imply that the funder shaped the design while it is the reviewer who infers it.**\n\nImplying is something a text or speaker does: meaning is put into circulation without being stated outright. Inferring is something the audience does: a conclusion is drawn from what was said, from what was left out, and from what the reader already knows. The verbs face in opposite directions along the same channel, which is why one takes the author as subject and the other the recipient.\n\n**Tip:** Ask who is doing the work. Sending the hint is implying, picking it up is inferring.\n\nEach verb is attached to the party that performs it here, so the division of labour the sentence describes is the standard one.",
+        "**B) \"Indicate\" reports that evidence points somewhere while \"establish\" claims the question is settled, so a single fossil can indicate an earlier migration without establishing one.**\n\nIndicate is deliberately weak: it acknowledges that the data lean towards a conclusion while leaving room for other explanations. Establish is strong and effectively closes the question, which is why reviewers challenge it when the evidence is thin. A lone specimen is exposed to reworking, misdating and misidentification, so it can only point.\n\nEvidential strength is what separates the two verbs, and the sentence gives the isolated find the weaker one, which is the honest description of what a single fossil can do.",
+        "**C) \"Plausible\" says an account hangs together well enough to be entertained while \"probable\" says it is more likely than not, so a plausible reconstruction of the fire can still be an improbable one.**\n\nPlausibility is about internal coherence: the story is consistent with known physics, with the timeline and with the damage, so it deserves consideration. Probability is a comparative judgement against rival explanations, and an account can be perfectly coherent yet require a chain of coincidences that a simpler account does not. Investigators separate the two so that a neat narrative is not mistaken for a likely one.\n\nCoherence and likelihood are assessed against different things, so the sentence is right that a well-constructed reconstruction may still lose the comparison with its rivals.",
+        "**D) \"Rebut\" means to disprove a claim conclusively, while \"refute\" means only to offer a counter-argument against it.**\n\nIn careful usage refute is the strong verb: it asserts that a claim has been shown to be false, and it should be used only where the demonstration has actually been made. Rebut is the weaker procedural verb, describing the act of arguing against a claim or answering it in reply, whether or not the answer succeeds. Legal pleadings and journal correspondence both rely on that asymmetry.\n\nThe strengths have been traded, so the line does not hold — refuting is the conclusive act, while rebutting is merely mounting the reply.",
+        "**E) A \"quotation\" reproduces an author's wording while a \"citation\" points the reader to the source, so a review article can cite four hundred studies and quote almost none of them.**\n\nA quotation carries the original words across into the new text and takes quotation marks or an indented block. A citation is a pointer, giving enough bibliographic detail for a reader to find the work, and it accompanies paraphrase, summary and data reuse just as readily as it accompanies quoted words. Bibliometrics counts the pointers, not the borrowed sentences.\n\nReproducing words and directing a reader elsewhere are different services to the reader, so the review article the sentence imagines is behaving exactly as reviews normally do."
+      ],
+      "highlights": [
+        "implies",
+        "Indicate",
+        "Plausible",
+        "Rebut",
+        "quotation"
+      ],
+      "solution_overview": "Academic prose grades its claims with small verbs, so weigh how much each one promises before accepting the comparison. Two of these lines separate a tentative signal from a settled conclusion, and one separates coherence from likelihood, which is a distinction that survives even when a story sounds convincing. The remaining lines turn on who performs the act or what the reference actually delivers, so identify the agent and the service in each case."
+    },
+    {
+      "id": "en-v-5-09",
+      "case_id": "ENG V.5.09",
+      "title": "Task 9",
+      "subsection": "v.5",
+      "sort_order": 9,
+      "difficulty_level": "2/5",
+      "context": "Five statements about engineering and computing terms whose everyday senses pull against their technical ones. Judge whether each account matches professional usage.",
+      "statements": [
+        "\"Robust\" and \"resilient\" both grade how quickly a system recovers once it has failed, which is why engineers use the two words interchangeably in reliability reports.",
+        "\"Encoding\" a file makes it unreadable without a key, which is why security teams treat encoding and encryption as the same safeguard.",
+        "\"Verification\" asks whether a system was built to its specification while \"validation\" asks whether that specification met the real need, so software can pass verification and still solve the wrong problem.",
+        "In engineering \"redundancy\" names the wasteful duplication a good design removes, exactly as the word does when a public body announces redundancies among its staff.",
+        "A \"heuristic\" guarantees the best available answer while an \"algorithm\" offers only a rule of thumb that usually works."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Robust\" and \"resilient\" both grade how quickly a system recovers once it has failed, which is why engineers use the two words interchangeably in reliability reports.**\n\nRobustness is resistance: the system absorbs disturbance and carries on performing without entering a failed state at all. Resilience is recovery: the system may degrade or fail, but it returns to service quickly and with acceptable loss. Design choices differ accordingly, since one buys margin and hardening while the other buys redundancy, monitoring and fast restoration.\n\nOnly the second word is about what happens after failure, so the definition offered covers half the pair — a robust structure resists the shock that a resilient one recovers from.",
+        "**B) \"Encoding\" a file makes it unreadable without a key, which is why security teams treat encoding and encryption as the same safeguard.**\n\nEncoding converts data into another representation for transport or compatibility, and the transformation is public and reversible by anyone who knows the scheme; base64 and character sets are the everyday examples. Encryption transforms data using a secret key so that recovery is infeasible without it, which is what makes it a security control rather than a formatting convenience. Confusing the two produces breach reports in which data described as protected was merely reformatted.\n\nNo secret is involved in the first process, so the claim collapses — encoding rearranges data for handling while only encryption withholds it from a reader.",
+        "**C) \"Verification\" asks whether a system was built to its specification while \"validation\" asks whether that specification met the real need, so software can pass verification and still solve the wrong problem.**\n\nVerification is an internal check: tests, reviews and proofs establish that the artefact conforms to the requirements as written. Validation is an external check against the world, asking whether those requirements captured what users actually needed. The two are separated in safety standards because a faultless implementation of a misunderstood requirement is a familiar and expensive failure.\n\nConformance and fitness for purpose are assessed against different references, and the sentence draws precisely the consequence that separation is meant to warn about.",
+        "**D) In engineering \"redundancy\" names the wasteful duplication a good design removes, exactly as the word does when a public body announces redundancies among its staff.**\n\nIn reliability engineering redundancy is deliberate spare capacity: a second pump, a third sensor, an alternative power feed, provided so that one failure does not take the system down. Far from being removed, it is specified, costed and tested, and its absence is a finding against a design. The employment sense, in which a post is surplus and cut, is a separate development of the same root.\n\nThe technical sense values the duplication that the everyday sense condemns, so the equation fails — engineered redundancy is designed in on purpose.",
+        "**E) A \"heuristic\" guarantees the best available answer while an \"algorithm\" offers only a rule of thumb that usually works.**\n\nAn algorithm is a defined procedure with a guaranteed outcome for its stated problem, and in optimisation an exact algorithm returns the optimum or reports that none exists. A heuristic trades that guarantee for speed, producing a good answer quickly with no promise of optimality, which is why route planners and scheduling tools lean on them. The absence of a guarantee is the point of the word.\n\nGuarantee and rule of thumb have been assigned to the wrong terms, so the line fails — the algorithm carries the promise and the heuristic supplies the shortcut."
+      ],
+      "highlights": [
+        "Robust",
+        "Encoding",
+        "Verification",
+        "redundancy",
+        "heuristic"
+      ],
+      "solution_overview": "Technical fields borrow ordinary words and then narrow them, so test each line against what an engineer would actually specify or measure. Two of these pairs are separated by whether the system resists a disturbance or recovers from one, and by whether a secret is involved at all; one turns on a word whose professional sense is the opposite of its workplace sense. Where a definition sounds sensible, check whether the guarantee it describes belongs to the other member of the pair."
+    },
+    {
+      "id": "en-v-5-10",
+      "case_id": "ENG V.5.10",
+      "title": "Task 10",
+      "subsection": "v.5",
+      "sort_order": 10,
+      "difficulty_level": "2/5",
+      "context": "Five statements about words used in constitutional argument and public order, where scope and permanence carry legal weight. Decide whether each distinction is accurate.",
+      "statements": [
+        "\"Autonomy\" is self-government exercised within another state's sovereignty while \"independence\" ends that relationship, so an autonomous region can run its own schools and courts and still hold no seat of its own at the United Nations.",
+        "\"Sedition\" covers speech or conduct urging resistance to lawful authority while \"treason\" requires a betrayal of the state itself, typically by aiding an enemy, so the pamphleteer and the spy answer different charges.",
+        "\"Riot\" is a legal classification requiring violence by an assembled group, while \"protest\" carries no such element, so applying the first word to a peaceful march alters the legal exposure of those on it and not merely the tone of the report.",
+        "A \"moratorium\" suspends an activity for a stated period with resumption still possible, while a \"ban\" is framed as permanent, so a moratorium on deep-sea mining is a lighter commitment than an outright prohibition.",
+        "\"Sovereignty\" is the ultimate authority a state claims over its territory while \"jurisdiction\" is the reach of a particular court or agency, so a tribunal may lack jurisdiction over a dispute arising in territory whose sovereignty nobody questions."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Autonomy\" is self-government exercised within another state's sovereignty while \"independence\" ends that relationship, so an autonomous region can run its own schools and courts and still hold no seat of its own at the United Nations.**\n\nAutonomy is delegated or entrenched self-rule over listed matters, with the outer shell of statehood, defence and foreign relations retained elsewhere. Independence transfers that shell as well, producing a state that recognises no superior authority and can join international bodies in its own name. Degree of self-rule therefore rises continuously while the change from one word to the other is a change in kind.\n\nInternal self-rule and full statehood are different in kind rather than in amount, and the example keeps the region on the near side of that line, so the sentence works.",
+        "**B) \"Sedition\" covers speech or conduct urging resistance to lawful authority while \"treason\" requires a betrayal of the state itself, typically by aiding an enemy, so the pamphleteer and the spy answer different charges.**\n\nSedition is directed at the loyalty of others: it stirs up disaffection or resistance, and historically it has been prosecuted through words and publications. Treason is the graver offence, requiring an act against the state's existence or security, classically levying war against it or assisting a hostile power. The difference shows in the penalties and in the evidence each charge demands.\n\nInciting others and betraying the state are separate acts with separate proofs, so the sentence sorts the two figures correctly between the charges.",
+        "**C) \"Riot\" is a legal classification requiring violence by an assembled group, while \"protest\" carries no such element, so applying the first word to a peaceful march alters the legal exposure of those on it and not merely the tone of the report.**\n\nProtest describes the purpose of a gathering and says nothing about its conduct. Riot is a defined public-order offence built on a threshold of unlawful violence by a number of people acting together, and the label brings powers of dispersal, arrest and heavier sentencing with it. Because the classification carries those consequences, using it loosely is not a stylistic choice.\n\nOne word describes an aim and the other triggers a legal test, so the sentence is right that swapping them changes far more than the temperature of the coverage.",
+        "**D) A \"moratorium\" suspends an activity for a stated period with resumption still possible, while a \"ban\" is framed as permanent, so a moratorium on deep-sea mining is a lighter commitment than an outright prohibition.**\n\nA moratorium is a pause, usually justified by uncertainty and often tied to a review date or to evidence being gathered; it leaves the underlying activity lawful in principle. A ban removes that permission and is intended to hold until it is repealed. Negotiators reach for the first when agreement on the second is out of reach, which is why the choice of word is itself a political signal.\n\nA timed suspension asks less of the parties than a prohibition, and the sentence grades the two commitments in that order, so it stands.",
+        "**E) \"Sovereignty\" is the ultimate authority a state claims over its territory while \"jurisdiction\" is the reach of a particular court or agency, so a tribunal may lack jurisdiction over a dispute arising in territory whose sovereignty nobody questions.**\n\nSovereignty is a claim about supreme authority and is answered at the level of states. Jurisdiction is a much narrower and highly technical question about whether a given body may hear a given matter, decided by subject, by parties, by time limits and by consent. A court routinely declines cases arising in its own state because one of those conditions has not been met.\n\n**Tip:** Sovereignty is about who rules; jurisdiction is about which body may decide this particular case.\n\nAuthority over territory and competence over a case are answered by different tests, so the situation the sentence describes is entirely ordinary."
+      ],
+      "highlights": [
+        "Autonomy",
+        "Sedition",
+        "Riot",
+        "moratorium",
+        "Sovereignty"
+      ],
+      "solution_overview": "Constitutional vocabulary is graded by scope and by permanence, so ask how far each word reaches and how long it is meant to last. Self-rule inside a state and statehood itself differ in kind, a pause differs from a prohibition, and ultimate authority over land differs from a court's competence over one case. Two lines involve labels that carry legal consequences, so check whether the word merely describes conduct or actually triggers a test."
+    },
+    {
+      "id": "en-v-5-11",
+      "case_id": "ENG V.5.11",
+      "title": "Task 11",
+      "subsection": "v.5",
+      "sort_order": 11,
+      "difficulty_level": "2/5",
+      "context": "Five statements about words that mark the register of a document or the agency behind an event. Judge whether each account of the pair is accurate.",
+      "statements": [
+        "\"Peruse\" is the formal word for glancing quickly over a document, so a reviewer who perused the appendix spent very little time on it.",
+        "\"Dwelling\" is the administrative term for a unit of accommodation, so a housing census counts dwellings while a charity's fundraising letter speaks of homes.",
+        "\"Ascertain\" is a formal way of saying \"estimate\", so an investigator who has ascertained the cause of the warehouse fire is offering an approximation.",
+        "In a lender's records an account described as \"in arrears\" has by that fact been placed \"in default\", since the two terms mark the same point in a credit agreement.",
+        "\"Expire\" happens when a fixed term simply runs out, while \"terminate\" is an act someone performs, so a discharge permit expires on its own date but is terminated only when the regulator ends it early."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Peruse\" is the formal word for glancing quickly over a document, so a reviewer who perused the appendix spent very little time on it.**\n\nIn its established sense peruse means to read closely and in detail, which is why it appears in phrases such as perusing the accounts before a meeting. The verb for a quick pass is skim or scan, and the two describe opposite depths of attention. The mistaken sense is common enough to appear in job adverts, but careful editors still treat it as an error.\n\n**Trap:** The formal ring of the word tempts readers to assume it means something loftier than plain reading, when it actually means more of it.\n\nClose attention rather than a rapid glance is what the verb reports, so the conclusion fails — a reviewer who perused the appendix went through it thoroughly.",
+        "**B) \"Dwelling\" is the administrative term for a unit of accommodation, so a housing census counts dwellings while a charity's fundraising letter speaks of homes.**\n\nDwelling is defined for statistical purposes as a self-contained set of rooms intended for occupation, which lets an agency count structures consistently whether or not anyone lives in them. Home carries the emotional freight of belonging and cannot be counted, since one family can have a home in a caravan and another can own a dwelling it has never slept in. Each word suits the document that uses it.\n\nCountable units and felt attachment are different things to write about, so the split between the statistical return and the appeal letter is exactly the split the two words maintain.",
+        "**C) \"Ascertain\" is a formal way of saying \"estimate\", so an investigator who has ascertained the cause of the warehouse fire is offering an approximation.**\n\nAscertain means to establish something as certain, usually by inquiry: the fact has been pinned down and can be reported without hedging. Estimate does the opposite work, offering an approximate value while acknowledging that the true one is unknown. Fire investigators use the first only when the evidence supports a definite finding, and reach for probable cause when it does not.\n\nCertainty and approximation are opposite commitments, so the sentence reverses the force of the verb — an ascertained cause is one the investigator says has been settled.",
+        "**D) In a lender's records an account described as \"in arrears\" has by that fact been placed \"in default\", since the two terms mark the same point in a credit agreement.**\n\nArrears simply means that scheduled payments have been missed and an overdue balance has built up; a borrower one payment behind is in arrears and may clear it next month. Default is a contractual status triggered when the agreement's own conditions are met, commonly after a set period or a formal notice, and it unlocks remedies such as acceleration of the whole balance or enforcement. Lenders keep the terms distinct because the second changes what they are entitled to do.\n\nA missed payment and a triggered contractual status are different stages, so the equation fails — arrears can accumulate for some time before the agreement treats the account as in default.",
+        "**E) \"Expire\" happens when a fixed term simply runs out, while \"terminate\" is an act someone performs, so a discharge permit expires on its own date but is terminated only when the regulator ends it early.**\n\nExpire is intransitive and agentless: nobody does it, the calendar simply arrives at the end date written into the instrument. Terminate takes an agent and a decision, and it usually requires grounds, notice and a right of appeal. The distinction matters in regulation because an expired permit lapses quietly while a terminated one is an enforcement event with consequences on the record.\n\nA date arriving and an authority acting are different causes of the same outcome, and the sentence assigns each verb to its own cause, so the description holds."
+      ],
+      "highlights": [
+        "Peruse",
+        "Dwelling",
+        "Ascertain",
+        "in arrears",
+        "Expire"
+      ],
+      "solution_overview": "Formality is not the only thing a heavier word signals, so ask what each one commits its writer to: how much attention was paid, how certain a finding is, or who performed the act. Two lines here assume that a formal-sounding verb must mean something vaguer or quicker than its plain partner, when in fact it claims more. The remaining lines reward asking whether an event happened by itself or was brought about, and whether a stage in a process has really been reached."
+    },
+    {
+      "id": "en-v-5-12",
+      "case_id": "ENG V.5.12",
+      "title": "Task 12",
+      "subsection": "v.5",
+      "sort_order": 12,
+      "difficulty_level": "2/5",
+      "context": "Five statements about terms that quantitative writing uses precisely and everyday speech uses loosely. Decide whether each distinction is drawn correctly.",
+      "statements": [
+        "\"Exponential\" is an emphatic way of saying \"rapid\", so any steeply rising curve of measles cases can properly be described as exponential.",
+        "An earthquake's \"magnitude\" measures the energy released and is a single figure for the event, while its \"intensity\" measures the shaking experienced at a given place, so one quake has one magnitude but many intensities.",
+        "\"Accuracy\" says how close readings sit to the true value while \"precision\" says how close they sit to one another, so a badly calibrated balance can be precise to the milligram and still be wrong.",
+        "In a results section \"significant\" reports that an effect is unlikely to be an accident of sampling while \"substantial\" claims that it is large, so a significant difference in reaction times may amount to a few milliseconds.",
+        "\"Mean\" and \"median\" name the same central value, so a sharply skewed distribution of examination marks yields the same figure whichever is reported."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Exponential\" is an emphatic way of saying \"rapid\", so any steeply rising curve of measles cases can properly be described as exponential.**\n\nExponential growth has a specific shape: each increment is proportional to the current total, so the quantity doubles over a constant interval however large it becomes. A curve can climb steeply and yet be linear, or be slowing towards a ceiling, and outbreak curves usually bend once susceptible contacts run short. Epidemiologists therefore test for a constant doubling time before using the word.\n\n**Tip:** Ask whether the doubling time stays the same; steepness alone never settles the question.\n\nSteepness and proportional growth are different properties, so the word cannot be applied on the strength of a dramatic slope — many sharply rising outbreaks are not exponential at all.",
+        "**B) An earthquake's \"magnitude\" measures the energy released and is a single figure for the event, while its \"intensity\" measures the shaking experienced at a given place, so one quake has one magnitude but many intensities.**\n\nMagnitude is derived from the seismic waves themselves and characterises the source, which is why a single number is quoted worldwide. Intensity is assessed from effects on people, buildings and ground at each location, so it falls away with distance and varies with soil and construction. That is how a moderate event on soft sediment can produce higher intensities than a larger one on rock.\n\nOne figure for the source and many for the places affected is exactly how seismic reporting is organised, so the sentence describes the pair correctly.",
+        "**C) \"Accuracy\" says how close readings sit to the true value while \"precision\" says how close they sit to one another, so a badly calibrated balance can be precise to the milligram and still be wrong.**\n\nAccuracy is a comparison against a reference or accepted value and is degraded by systematic offsets. Precision describes the spread of repeated measurements and is degraded by random scatter, which is why it can be improved by better technique while the calibration error remains untouched. An instrument reading consistently five milligrams high is the standard illustration.\n\nCloseness to truth and closeness to each other are independent, so a tightly repeatable but miscalibrated balance is a real possibility rather than a contradiction, and the sentence names it correctly.",
+        "**D) In a results section \"significant\" reports that an effect is unlikely to be an accident of sampling while \"substantial\" claims that it is large, so a significant difference in reaction times may amount to a few milliseconds.**\n\nStatistical significance is a statement about compatibility with chance, and it depends heavily on sample size: with enough participants, a tiny difference clears the threshold. Substantial, important and meaningful are claims about magnitude and are argued with effect sizes and practical consequences. Journals ask for both because the first alone tells a reader nothing about whether the finding matters.\n\nDetectability and size answer separate questions, and the sentence keeps the technical sense clear of the everyday one, so the account is right.",
+        "**E) \"Mean\" and \"median\" name the same central value, so a sharply skewed distribution of examination marks yields the same figure whichever is reported.**\n\nThe mean adds every value and divides by the count, so a handful of extreme marks pulls it towards the tail. The median takes the middle observation once the marks are ordered and is barely moved by those extremes. On a symmetric distribution the two coincide, which is exactly why the skewed case in the sentence is the one that separates them.\n\nSkew is the condition under which the two measures diverge, so the claim fails — a long tail of very low marks drags the mean below the median while the middle mark stays put."
+      ],
+      "highlights": [
+        "Exponential",
+        "magnitude",
+        "Accuracy",
+        "significant",
+        "Mean"
+      ],
+      "solution_overview": "Quantitative vocabulary describes a shape, a source or a spread, so ask what each term is actually computed from before accepting the comparison. Two of these lines separate a property of the event from a property of the place or the reading, and one separates whether an effect is detectable from whether it is large. Where a word has drifted into everyday use as a general intensifier, check whether the technical condition behind it is being met."
+    },
+    {
+      "id": "en-v-5-13",
+      "case_id": "ENG V.5.13",
+      "title": "Task 13",
+      "subsection": "v.5",
+      "sort_order": 13,
+      "difficulty_level": "3/5",
+      "context": "Five statements about clinical near-synonyms that separate laboratory conditions from ordinary practice, and partial improvement from resolution. Judge whether each is accurate.",
+      "statements": [
+        "\"Efficacy\" reports how a treatment performs under trial conditions while \"effectiveness\" reports how it performs in ordinary practice, so a vaccine with high efficacy can show lower effectiveness once storage failures and missed appointments are in play.",
+        "\"Remission\" says a disease is undetectable for the moment while \"recovery\" claims a return to health, so a patient can be in remission and still be counted among those who have not recovered.",
+        "Every \"contagious\" disease is \"infectious\", though not every infectious one is contagious, since tetanus is acquired from the environment rather than from another person.",
+        "An \"analgesic\" removes sensation and awareness altogether, while an \"anaesthetic\" merely dulls pain that the patient can still feel.",
+        "A \"screening\" test is offered to people without symptoms in order to decide who needs further investigation, while a \"diagnostic\" test answers the question for one patient, so a positive screen is not yet a diagnosis."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Efficacy\" reports how a treatment performs under trial conditions while \"effectiveness\" reports how it performs in ordinary practice, so a vaccine with high efficacy can show lower effectiveness once storage failures and missed appointments are in play.**\n\nEfficacy is measured in a controlled setting with selected participants, monitored adherence and standardised handling, which is designed to isolate the treatment's own contribution. Effectiveness is measured in the population as it is, complete with cold chains that break, doses given late and people who never return for the second appointment. The gap between the two numbers is a health-system finding rather than a failure of the trial.\n\n**Tip:** Efficacy answers whether it can work, effectiveness whether it does work where it is used.\n\nControlled conditions and everyday conditions are measured separately for good reason, so the drop the sentence describes is the expected pattern rather than a contradiction.",
+        "**B) \"Remission\" says a disease is undetectable for the moment while \"recovery\" claims a return to health, so a patient can be in remission and still be counted among those who have not recovered.**\n\nRemission is a statement about current disease activity: signs and symptoms have receded, and in some conditions no cells or lesions can be found, but the possibility of relapse is built into the word. Recovery is a broader judgement covering function, strength and the resumption of ordinary life, which often lags months behind the disappearance of the disease. Oncology and rheumatology both need the narrower word for exactly that reason.\n\nAbsent disease activity and restored health are separate milestones, so the sentence is right that reaching the first leaves the second still to come.",
+        "**C) Every \"contagious\" disease is \"infectious\", though not every infectious one is contagious, since tetanus is acquired from the environment rather than from another person.**\n\nInfectious is the wider term, covering any illness caused by a pathogen entering the body, whatever the route. Contagious narrows that to transmission between hosts, whether by direct contact, droplets or contaminated hands. Tetanus, legionellosis and many fungal infections are caught from soil, water or air without any infected person being involved, which places them inside the wider circle and outside the narrower one.\n\nThe nesting runs in one direction only, and the sentence states it in that direction with an example that sits precisely in the gap, so it holds.",
+        "**D) An \"analgesic\" removes sensation and awareness altogether, while an \"anaesthetic\" merely dulls pain that the patient can still feel.**\n\nAn analgesic relieves pain while leaving other sensation and consciousness intact, which is why a patient on one can still feel pressure and movement. An anaesthetic abolishes sensation in a region, or consciousness entirely, and is the reason surgery is tolerable at all. The functions have been handed to the wrong words.\n\n**Trap:** Both words come from the vocabulary of pain relief, which makes the swap easy to read past.\n\nThe definitions belong to the opposite terms, so the line does not stand — the analgesic dulls pain while the anaesthetic removes sensation.",
+        "**E) A \"screening\" test is offered to people without symptoms in order to decide who needs further investigation, while a \"diagnostic\" test answers the question for one patient, so a positive screen is not yet a diagnosis.**\n\nScreening is a population activity, tuned to miss as few cases as possible and therefore accepting a high number of false alarms. Diagnostic testing is tuned for confirmation in someone already suspected of having the condition, and it carries the accuracy needed to justify treatment. The two are designed with different trade-offs, which is why a screening programme always has a follow-up pathway attached.\n\nSorting a population and confirming one case are different jobs, so the caution the sentence attaches to a positive screen follows directly from how the test was designed."
+      ],
+      "highlights": [
+        "Efficacy",
+        "Remission",
+        "contagious",
+        "analgesic",
+        "screening"
+      ],
+      "solution_overview": "Clinical vocabulary separates ideal conditions from messy ones and partial improvement from full resolution, so ask what each word is measured under and how much it claims. Two lines nest a narrow term inside a wider one, and the direction of that nesting is what makes the inference work or fail. One pair has simply been handed each other's definitions, which becomes obvious once you ask what a patient would still be able to feel."
+    },
+    {
+      "id": "en-v-5-14",
+      "case_id": "ENG V.5.14",
+      "title": "Task 14",
+      "subsection": "v.5",
+      "sort_order": 14,
+      "difficulty_level": "3/5",
+      "context": "Five statements about pairs that look like restatements of one another but describe different stages, bases or standards. Decide whether each account is accurate.",
+      "statements": [
+        "\"Weathering\" breaks rock down where it stands while \"erosion\" carries the loosened material away, so a sandstone facade can be deeply weathered without a grain of it having been eroded from the site.",
+        "A retailer's \"markup\" is calculated on what the goods cost while its \"margin\" is calculated on what they sell for, so the same twenty pounds of difference represents a larger markup than margin.",
+        "A \"projection\" states what follows if a stated scenario holds while a \"prediction\" asserts what will actually happen, so a modelling group can publish several projections without contradicting itself.",
+        "\"Calibrating\" an instrument adjusts its readings against a known standard while \"validating\" a model asks whether its outputs match independent observations, so a perfectly calibrated sensor can still be feeding an invalid model.",
+        "\"Reproducing\" an analysis re-runs it on the original data while \"replicating\" a study repeats it with newly collected data, so a finding can be reproducible and still fail to replicate."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Weathering\" breaks rock down where it stands while \"erosion\" carries the loosened material away, so a sandstone facade can be deeply weathered without a grain of it having been eroded from the site.**\n\nWeathering is disintegration in place, driven by frost, salt crystallisation, acid rain and biological action, and it leaves the debris where it forms. Erosion requires transport, by water, wind, ice or gravity, and it removes the products of weathering to somewhere else. On a sheltered stone facade the chemistry proceeds while nothing is carried off, which is why conservators find crumbling surfaces with the powder still sitting on them.\n\nBreakdown and removal are separate processes that often occur together, and the facade example holds one without the other, so the distinction is drawn correctly.",
+        "**B) A retailer's \"markup\" is calculated on what the goods cost while its \"margin\" is calculated on what they sell for, so the same twenty pounds of difference represents a larger markup than margin.**\n\nMarkup expresses the difference between cost and price as a percentage of cost, so it answers how much has been added to what the buyer paid the supplier. Margin expresses the same difference as a percentage of the selling price, which is the figure that appears in accounts and comparisons between firms. Because the selling price is the larger denominator, the same cash difference always produces the smaller percentage when reported as margin.\n\nDifferent denominators produce different percentages from identical cash, so the ranking the sentence gives follows arithmetically and the description is sound.",
+        "**C) A \"projection\" states what follows if a stated scenario holds while a \"prediction\" asserts what will actually happen, so a modelling group can publish several projections without contradicting itself.**\n\nA projection is conditional by construction: given these assumptions about emissions, migration or fertility, the model produces this path. A prediction drops the condition and commits to an outcome, which is why forecasting agencies are careful about which word appears in a headline. Publishing a family of scenarios is a way of showing how sensitive the result is to assumptions rather than a display of indecision.\n\nConditional output and unconditional claim are different products, so a set of divergent projections is internally consistent in exactly the way the sentence describes.",
+        "**D) \"Calibrating\" an instrument adjusts its readings against a known standard while \"validating\" a model asks whether its outputs match independent observations, so a perfectly calibrated sensor can still be feeding an invalid model.**\n\nCalibration is a comparison against a reference with a traceable value, and it corrects the instrument rather than the reasoning built on top of it. Validation tests whether a representation of the world behaves like the world, using data that were not used to build it. Good inputs into a poorly specified model produce confident nonsense, which is why environmental agencies require both steps.\n\nThe instrument and the model are checked against different references, so the failure mode the sentence describes is a real and familiar one rather than a contradiction in terms.",
+        "**E) \"Reproducing\" an analysis re-runs it on the original data while \"replicating\" a study repeats it with newly collected data, so a finding can be reproducible and still fail to replicate.**\n\nReproducibility tests the computational trail: given the same dataset and code, does the same table come out. Replication tests the finding itself: does a fresh sample, gathered independently, produce the same effect. A result can pass the first because the arithmetic is sound and fail the second because the original sample was unusual or the effect was a chance one.\n\n**Tip:** Same data and same code is reproduction; new data and the same question is replication.\n\nThe two checks interrogate different things, so the combination the sentence describes is common enough to be a standing concern in research methods."
+      ],
+      "highlights": [
+        "Weathering",
+        "markup",
+        "projection",
+        "Calibrating",
+        "Reproducing"
+      ],
+      "solution_overview": "Each pair here divides a process into two stages or measures the same quantity against two different bases, so identify the base or the step before judging the claim. Breaking down and carrying away, adjusting an instrument and testing a model, re-running code and gathering fresh data all describe adjacent but distinct operations. Where percentages are involved, the decisive question is what sits in the denominator, and where models are involved it is whether a condition has been attached to the output."
+    },
+    {
+      "id": "en-v-5-15",
+      "case_id": "ENG V.5.15",
+      "title": "Task 15",
+      "subsection": "v.5",
+      "sort_order": 15,
+      "difficulty_level": "3/5",
+      "context": "Five statements about pairs that describe the same behaviour while passing opposite judgements on it. Decide whether each account of the connotation is accurate.",
+      "statements": [
+        "\"Notorious\" and \"renowned\" both report wide fame, but only the first assumes the fame is for something discreditable, so a prison notorious for overcrowding is not being complimented.",
+        "\"Childish\" is the appreciative term, describing an adult's unspoilt sense of wonder, while \"childlike\" condemns behaviour as immature.",
+        "\"Miserly\" is the neutral word for careful spending while \"frugal\" is the insult, so calling a scholarship fund's administrator frugal is a complaint about meanness.",
+        "\"Propaganda\" is a neutral synonym for \"publicity\", so a health ministry would ordinarily describe its own vaccination campaign as propaganda.",
+        "\"Stubborn\" is the admiring word and \"tenacious\" the critical one, so a researcher who keeps working on an unfashionable question for twenty years is being praised as stubborn."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Notorious\" and \"renowned\" both report wide fame, but only the first assumes the fame is for something discreditable, so a prison notorious for overcrowding is not being complimented.**\n\nBoth adjectives measure how widely something is known, and neither says anything about scale on its own. Renowned attaches that fame to achievement and invites admiration, while notorious attaches it to a fault, a scandal or a danger, and the noun that follows almost always names the trouble. Overcrowding is a failing, so the adjective is doing evaluative work rather than merely reporting reputation.\n\nThe shared meaning is reach and the difference is verdict, and the sentence keeps that verdict attached to the right word, so the account is accurate.",
+        "**B) \"Childish\" is the appreciative term, describing an adult's unspoilt sense of wonder, while \"childlike\" condemns behaviour as immature.**\n\nChildlike is the sympathetic form, reserved for qualities of childhood that adults are glad to keep: curiosity, delight, directness, trust. Childish is dismissive and marks behaviour as beneath the age of the person showing it, which is why it collocates with sulking, squabbling and refusing to cooperate. The morphology gives no clue, so the pair has to be learnt as a matter of usage.\n\n**Trap:** Two adjectives from one root can carry opposite evaluations, and nothing in the suffix warns you which is which.\n\nThe compliment and the rebuke have been assigned to the wrong forms, so the line fails — wonder is childlike, while a tantrum is childish.",
+        "**C) \"Miserly\" is the neutral word for careful spending while \"frugal\" is the insult, so calling a scholarship fund's administrator frugal is a complaint about meanness.**\n\nFrugal describes restraint that is chosen and admired: spending little, wasting nothing, and often doing so on principle. Miserly describes hoarding at the expense of others and carries the figure of the miser behind it, so it implies withholding rather than economy. An administrator praised for frugal management is being credited with stewardship of somebody else's money.\n\nApproval and disapproval sit on the opposite words here, so the sentence misreads the compliment — frugal is the praise and miserly the accusation.",
+        "**D) \"Propaganda\" is a neutral synonym for \"publicity\", so a health ministry would ordinarily describe its own vaccination campaign as propaganda.**\n\nPublicity is the neutral term for making something widely known, and organisations apply it to their own work without embarrassment. Propaganda now carries a strong charge of manipulation and one-sided persuasion, which is why it is almost always applied to somebody else's messaging. The word had a more technical past in the vocabulary of information campaigns, but current usage keeps the pejorative sense firmly attached.\n\nA label nobody applies to their own materials cannot be the neutral option, so the claim fails — a ministry publicises its campaign and leaves propaganda for its opponents to allege.",
+        "**E) \"Stubborn\" is the admiring word and \"tenacious\" the critical one, so a researcher who keeps working on an unfashionable question for twenty years is being praised as stubborn.**\n\nTenacious frames persistence as a virtue, implying purpose, resilience and a grip that will not be shaken loose. Stubborn frames the same behaviour as a fault, implying resistance to reason and an unwillingness to revise, which is why it pairs with refusal rather than with pursuit. The behaviour described can be identical; the judgement passed on it is not.\n\nThe praise belongs to the other adjective, so the sentence inverts the evaluation — twenty years on a neglected question is tenacity, and only a critic would call it stubbornness."
+      ],
+      "highlights": [
+        "Notorious",
+        "Childish",
+        "Miserly",
+        "Propaganda",
+        "Stubborn"
+      ],
+      "solution_overview": "These pairs agree about the facts and disagree about the verdict, so ask which member you would use of your own conduct and which you would reserve for someone else's. Fame, thrift, persistence and persuasion all come with an approving word and a disapproving one, and the morphology offers no reliable guide to which is which. Testing each adjective in a sentence of praise and then in a complaint usually makes the mismatch audible at once."
+    },
+    {
+      "id": "en-v-5-16",
+      "case_id": "ENG V.5.16",
+      "title": "Task 16",
+      "subsection": "v.5",
+      "sort_order": 16,
+      "difficulty_level": "3/5",
+      "context": "Five statements about verbs that differ over who acted, whether permission existed, and whether a duty was owed. Judge whether each account holds.",
+      "statements": [
+        "\"Delay\" and \"postpone\" both require somebody to take a decision, so a rocket launch held up by fog has been postponed.",
+        "\"Disclose\" presents the release of a document as authorised while \"leak\" implies it went out without permission, so an inspectorate that discloses its own report has not leaked it.",
+        "\"Omit\" reports only that something was left out while \"neglect\" adds that it ought to have been done, so an editor who omits a footnote has not necessarily neglected a duty.",
+        "\"Abandon\" presupposes a formal act of giving up a right, while \"relinquish\" suggests simply walking away and leaving something behind.",
+        "\"Concede\" reports giving ground to an opponent's case while \"admit\" needs no opponent at all, so a glaciologist who admits an uncertainty in her measurements is not conceding an argument."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Delay\" and \"postpone\" both require somebody to take a decision, so a rocket launch held up by fog has been postponed.**\n\nDelay can happen to a schedule without anyone choosing it: weather, traffic and equipment faults all delay events by themselves, and the verb works happily in the passive with no agent in sight. Postpone needs an agent and a new time, since it means moving something deliberately to a later slot. A launch stopped by fog is delayed at the moment the fog arrives; it becomes postponed only when the flight director sets another date.\n\n**Tip:** If you can ask who decided, the verb is postpone; if the cause is a condition rather than a person, it is delay.\n\nOnly one of these verbs carries a decision-maker inside it, so the sentence overreaches — fog delays a launch, and a controller postpones it.",
+        "**B) \"Disclose\" presents the release of a document as authorised while \"leak\" implies it went out without permission, so an inspectorate that discloses its own report has not leaked it.**\n\nDisclose describes a release made by someone entitled to make it, often under a statutory duty or a transparency policy, and it carries no suggestion of wrongdoing. Leak describes an unauthorised passage of information out of an organisation, usually to journalists, and it invites questions about who was responsible. The same document reaching the same readers can be described either way depending on whether permission stood behind it.\n\nAuthorisation is the whole of the difference, and the sentence attaches the neutral verb to the body publishing its own findings, so the wording is right.",
+        "**C) \"Omit\" reports only that something was left out while \"neglect\" adds that it ought to have been done, so an editor who omits a footnote has not necessarily neglected a duty.**\n\nOmit is descriptive and can be entirely deliberate: material is left out for length, relevance or style, and no criticism follows. Neglect is evaluative and presupposes an obligation that went unmet, which is why it appears in findings of professional misconduct rather than in editorial notes. An omission becomes neglect only once someone shows the item was required.\n\nA missing element and a breached duty are separate claims, so the sentence is right to let the first stand without the second following from it.",
+        "**D) \"Abandon\" presupposes a formal act of giving up a right, while \"relinquish\" suggests simply walking away and leaving something behind.**\n\nRelinquish is the formal, deliberate verb: a right, a title or a claim is given up by someone entitled to hold it, usually in writing and often in exchange for something. Abandon suggests desertion, leaving property, a project or a post without arrangements and often without warning, which is why it carries a note of reproach. Legal drafting uses the first and incident reports the second.\n\nDeliberate surrender and desertion have been attached to the wrong verbs, so the sentence does not hold — a right is relinquished, while an unattended site is abandoned.",
+        "**E) \"Concede\" reports giving ground to an opponent's case while \"admit\" needs no opponent at all, so a glaciologist who admits an uncertainty in her measurements is not conceding an argument.**\n\nConcede is a dialectical verb: it presupposes a dispute and reports that one side has yielded a point to the other, which is why it appears in debates, negotiations and courtrooms. Admit reports an acknowledgement of fact and can be made to a notebook, a reader or nobody in particular. Stating the error bars on a measurement is ordinary scientific candour rather than a retreat under pressure.\n\nOne verb needs an adversary and the other does not, so the sentence draws the right line between honest reporting and losing an argument."
+      ],
+      "highlights": [
+        "Delay",
+        "Disclose",
+        "Omit",
+        "Abandon",
+        "Concede"
+      ],
+      "solution_overview": "Each line hangs on something the verb quietly assumes: an agent who decided, a permission that existed, a duty that was owed, or an opponent who had to be answered. Test every claim by asking whether the sentence supplies that ingredient, since a fog bank is not a decision-maker and a footnote is not necessarily an obligation. Where two verbs seem to differ only in formality, check whether one of them is actually the deliberate act and the other the desertion."
+    },
+    {
+      "id": "en-v-5-17",
+      "case_id": "ENG V.5.17",
+      "title": "Task 17",
+      "subsection": "v.5",
+      "sort_order": 17,
+      "difficulty_level": "3/5",
+      "context": "Five statements about the verbs and labels that official documents select where ordinary speech would choose a plainer word. Decide whether each is accurate.",
+      "statements": [
+        "\"Contract\" is the clinical partner of \"catch\", so a case note records that the child contracted measles where a parent would say she caught it.",
+        "In a museum catalogue \"the collection is comprised of four bequests\" is the form careful editors prefer, since \"comprise\" takes \"of\" while \"compose\" does not.",
+        "\"Insolvency\" and \"bankruptcy\" name the same event, so a company that cannot pay its debts as they fall due has by that fact been declared bankrupt.",
+        "\"Administer\" is the verb that pairs with oaths, doses and examinations in official records, so a court transcript notes that the oath was administered rather than given.",
+        "\"Deceased\" is the warmer and more personal choice while \"the late\" is the clinical one, which is why a coroner's report refers to \"the late Mr Harun\" rather than to the deceased."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Contract\" is the clinical partner of \"catch\", so a case note records that the child contracted measles where a parent would say she caught it.**\n\nBoth verbs describe acquiring an infection, and neither adds anything to the medical facts. Contract belongs to clinical and epidemiological registers and takes named diseases as its object, which is why it appears in notes, notifications and journal abstracts. Catch is the everyday equivalent and would look out of place in a discharge summary.\n\n**Tip:** Where two verbs share a meaning exactly, the choice between them is a choice of document rather than of content.\n\nRegister is the only variable at work, and each verb has been matched to the setting where it belongs, so the line reads correctly.",
+        "**B) In a museum catalogue \"the collection is comprised of four bequests\" is the form careful editors prefer, since \"comprise\" takes \"of\" while \"compose\" does not.**\n\nComprise means to consist of and already contains the sense of the preposition, so the whole comprises its parts: the collection comprises four bequests. Compose runs the other way, from parts to whole, and it is the verb that takes the passive with of, as in the collection is composed of four bequests. Style guides treat is comprised of as the construction to avoid, precisely because it welds one verb's preposition onto the other.\n\nThe prepositional pattern has been assigned to the wrong verb, so the recommendation fails — the sound catalogue wording is \"the collection comprises four bequests.\"",
+        "**C) \"Insolvency\" and \"bankruptcy\" name the same event, so a company that cannot pay its debts as they fall due has by that fact been declared bankrupt.**\n\nInsolvency is a financial condition: liabilities exceed assets, or debts cannot be met as they fall due, and a business can be in that state for months while trading on and negotiating with creditors. Bankruptcy, and its corporate equivalents, is a formal legal process opened by a court or an appointed officeholder, with consequences for control of the assets and for the directors. One is a description of the balance sheet, the other a change of legal status.\n\nA condition does not become a proceeding without somebody commencing it, so the inference fails — insolvency is the state that may lead to a formal process rather than the process itself.",
+        "**D) \"Administer\" is the verb that pairs with oaths, doses and examinations in official records, so a court transcript notes that the oath was administered rather than given.**\n\nAdminister carries the sense of dispensing something under authority and in a prescribed form, which is why it collocates with oaths, medication, aid, tests and justice. Give would convey the same event but with none of that procedural weight, and it is the verb used in conversation about the same moment. The pairing is a matter of settled collocation rather than of meaning.\n\nOfficial records reach for the verb that marks a formal procedure, and the transcript in the sentence does exactly that, so the account is accurate.",
+        "**E) \"Deceased\" is the warmer and more personal choice while \"the late\" is the clinical one, which is why a coroner's report refers to \"the late Mr Harun\" rather than to the deceased.**\n\nThe deceased is the impersonal administrative term, used across coroners' findings, insurance files and probate to name the person as a party to a process. The late before a name is the respectful and slightly softer form, appearing in obituaries, dedications and letters of condolence. The registers are the reverse of what the sentence claims.\n\n**Trap:** Both expressions avoid the blunt word dead, which can make them feel equally formal until you notice which one keeps the person's name.\n\nThe administrative term is the colder one, so the line does not stand — a coroner writes about the deceased and a memorial notice about the late Mr Harun."
+      ],
+      "highlights": [
+        "Contract",
+        "comprised",
+        "Insolvency",
+        "Administer",
+        "Deceased"
+      ],
+      "solution_overview": "Official registers select particular verbs and labels by convention, so ask which document each wording belongs in and what procedure it signals. Two lines here are decided by collocation alone, one by the grammatical pattern a verb actually takes, and one by the gap between a financial condition and the legal process that may follow it. Reading each sentence aloud as a case note, a catalogue entry or a condolence letter usually exposes the wording that has been placed in the wrong file."
+    },
+    {
+      "id": "en-v-5-18",
+      "case_id": "ENG V.5.18",
+      "title": "Task 18",
+      "subsection": "v.5",
+      "sort_order": 18,
+      "difficulty_level": "3/5",
+      "context": "Five statements about terms used in publishing, archives and textual scholarship, where each word names a different operation on a text or a collection. Judge whether each is accurate.",
+      "statements": [
+        "A new \"impression\" reprints the same setting of a text while a new \"edition\" involves substantive changes to it, so a monograph can run to five impressions and remain a first edition.",
+        "An \"abridged\" text has been shortened for length while a \"redacted\" one has had passages withheld from the reader, so a field diary cut down for publication is not a redacted document.",
+        "A \"gloss\" explains a single word or phrase where it stands while an \"annotation\" may comment on anything from a date to an argument, so a glossary at the back does narrower work than a critical apparatus.",
+        "A \"facsimile\" edition reinterprets the original's layout for modern readers, while a plain \"reproduction\" copies it page for page.",
+        "\"Collecting\" accumulates objects while \"curating\" selects and interprets them for an audience, so an archive can hold a large collection that has never been curated."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A new \"impression\" reprints the same setting of a text while a new \"edition\" involves substantive changes to it, so a monograph can run to five impressions and remain a first edition.**\n\nAn impression is a print run from unchanged type or unchanged files, correcting at most a few obvious slips, and it exists because copies ran out rather than because the book changed. An edition marks a new state of the text: revised chapters, new apparatus, a fresh preface, or a resetting substantial enough to alter pagination. Cataloguers and citation styles depend on the distinction, since page references survive an impression but not always an edition.\n\nReprinting and revising are different events in a book's life, and the sentence lets the copies multiply without the text changing, which is exactly what the terms allow.",
+        "**B) An \"abridged\" text has been shortened for length while a \"redacted\" one has had passages withheld from the reader, so a field diary cut down for publication is not a redacted document.**\n\nAbridgement is an editorial decision about scale, made openly and usually announced on the title page, and its purpose is to keep the work readable at a manageable length. Redaction is a decision about disclosure, obscuring names, locations or findings that someone has judged must not be released, and its marks are deliberately visible so readers know material is missing. One asks what a reader needs, the other what a reader may not have.\n\nLength and permission are separate grounds for removing text, so the shortened diary belongs under the first, exactly as the sentence has it.",
+        "**C) A \"gloss\" explains a single word or phrase where it stands while an \"annotation\" may comment on anything from a date to an argument, so a glossary at the back does narrower work than a critical apparatus.**\n\nA gloss is lexical and local: it renders a difficult word into a plainer one, often in the margin or between the lines it serves. An annotation is open-ended, taking in sources, variants, historical background and editorial judgement, and it can run to several hundred words. Every gloss is a kind of annotation, but the reverse relationship does not hold.\n\nThe narrower term sits inside the wider one, and the sentence keeps the vocabulary list beneath the full apparatus, so the comparison is sound.",
+        "**D) A \"facsimile\" edition reinterprets the original's layout for modern readers, while a plain \"reproduction\" copies it page for page.**\n\nA facsimile aims at visual fidelity: the page opening, the line breaks, the marginalia and often the paper size are preserved so that the reader confronts something as close to the original object as printing allows. Reproduction is the looser and more general word, covering any copy of an image or text in any format, including one that has been resized, cropped or reset. Reinterpretation for modern readers describes a modernised or critical edition instead.\n\n**Trap:** Both words mean copy in ordinary speech, which conceals that only one of them promises the original's appearance.\n\nThe definitions have been exchanged, so the line fails — a facsimile is the page-for-page copy, while reproduction is the general term that permits changes.",
+        "**E) \"Collecting\" accumulates objects while \"curating\" selects and interprets them for an audience, so an archive can hold a large collection that has never been curated.**\n\nCollecting is acquisition: material arrives by donation, purchase or transfer and is accessioned into the holdings. Curating adds judgement and framing, choosing what to show, arranging it, and writing the interpretation that lets a visitor make sense of it. Vast backlogs of uncatalogued material in national archives are the ordinary proof that the first can run far ahead of the second.\n\nAcquiring and interpreting are separate professional tasks with separate resources behind them, so the uncurated collection the sentence describes is a familiar reality rather than a contradiction."
+      ],
+      "highlights": [
+        "impression",
+        "abridged",
+        "gloss",
+        "facsimile",
+        "Collecting"
+      ],
+      "solution_overview": "Textual scholarship names operations rather than objects, so ask what was actually done and why: reprinted or revised, shortened or withheld, explained locally or discussed at length, copied faithfully or reset. Where one term nests inside another, check that the sentence keeps the narrower one underneath. The two lines about copying reward a closer look at which word actually promises fidelity to the original page."
+    },
+    {
+      "id": "en-v-5-19",
+      "case_id": "ENG V.5.19",
+      "title": "Task 19",
+      "subsection": "v.5",
+      "sort_order": 19,
+      "difficulty_level": "4/5",
+      "context": "Five statements about words whose laboratory senses are narrower than their everyday ones. Decide whether each account of the technical use is accurate.",
+      "statements": [
+        "In a reaction write-up a \"catalyst\" is recovered unchanged while a \"reagent\" is consumed, so the everyday use of catalyst for anything that starts a change is looser than the chemical sense.",
+        "\"Organic\" in a chemistry paper classifies carbon-based compounds and says nothing about farming methods, so an organic solvent may be manufactured by wholly synthetic means.",
+        "\"Power\" is the rate at which energy is transferred, so a battery's capacity is quoted in energy units while a kettle's demand is quoted in power units, and the two figures cannot be swapped.",
+        "\"Sterilising\" removes every viable organism including spores while \"disinfecting\" reduces them to a level judged safe, so a wipe that disinfects a laboratory bench has not sterilised it.",
+        "\"Toxic\" says a substance poisons living tissue while \"hazardous\" covers any material capable of causing harm, including things that merely corrode or ignite, so a hazardous cargo need not be toxic."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) In a reaction write-up a \"catalyst\" is recovered unchanged while a \"reagent\" is consumed, so the everyday use of catalyst for anything that starts a change is looser than the chemical sense.**\n\nA catalyst lowers the activation energy of a reaction and emerges from it in its original form, which is why small quantities can process large amounts of material. A reagent is a participant that is used up as the reaction proceeds and must be replenished for the next run. The metaphorical sense, in which a person or an event catalyses change, keeps the idea of triggering but drops the crucial condition of surviving untouched.\n\nSurviving the process is what the technical term insists on, and the sentence names that condition as the thing the everyday use quietly abandons, so it holds.",
+        "**B) \"Organic\" in a chemistry paper classifies carbon-based compounds and says nothing about farming methods, so an organic solvent may be manufactured by wholly synthetic means.**\n\nIn chemistry the label is a taxonomic one: organic compounds are built on carbon skeletons, and toluene from a refinery qualifies as readily as a molecule from a leaf. In food labelling the same word is a certification about how a crop or animal was raised, with rules on inputs and inspection behind it. Nothing connects the two beyond a shared history in the study of living matter.\n\nA structural class and a production standard are entirely separate claims, so the sentence is right that a synthetic solvent can be organic in the only sense the paper means.",
+        "**C) \"Power\" is the rate at which energy is transferred, so a battery's capacity is quoted in energy units while a kettle's demand is quoted in power units, and the two figures cannot be swapped.**\n\nEnergy is a quantity that can be stored and counted, which is why storage is measured in joules or kilowatt hours. Power is that quantity per unit of time, measured in watts, and it describes how fast a device draws or delivers energy rather than how much is available. Multiplying a power by a duration returns an energy, which is the only legitimate bridge between the two.\n\n**Tip:** If a figure needs a time attached before it means anything, it is already a rate and belongs to power.\n\nA stock and a flow answer different questions about the same system, and the sentence keeps each measurement with the quantity it belongs to, so the account is right.",
+        "**D) \"Sterilising\" removes every viable organism including spores while \"disinfecting\" reduces them to a level judged safe, so a wipe that disinfects a laboratory bench has not sterilised it.**\n\nSterilisation is an absolute standard, achieved by autoclave, irradiation or filtration, and it is validated because instruments entering sterile tissue must carry nothing at all. Disinfection is a graded reduction on surfaces where a defined level of residual organisms is acceptable, and most disinfectants leave bacterial spores untouched. Choosing between them is a choice about what the item will be used for.\n\nAn absolute requirement and a graded one are met by different procedures, so a surface wipe cannot reach the higher standard, and the sentence marks that limit correctly.",
+        "**E) \"Toxic\" says a substance poisons living tissue while \"hazardous\" covers any material capable of causing harm, including things that merely corrode or ignite, so a hazardous cargo need not be toxic.**\n\nToxicity is a specific mode of harm involving a biological mechanism and a dose, and it is assessed in the laboratory against organisms. Hazardous is the umbrella classification used in transport and storage rules, admitting flammability, corrosivity, reactivity, pressure and radioactivity alongside toxicity. A tanker of concentrated acid is dangerous through corrosion rather than through poisoning, and it is labelled accordingly.\n\nOne term names a mechanism and the other collects every mechanism that can cause harm, so the sentence draws the containment relationship in the direction the regulations use."
+      ],
+      "highlights": [
+        "catalyst",
+        "Organic",
+        "Power",
+        "Sterilising",
+        "Toxic"
+      ],
+      "solution_overview": "Laboratory language narrows familiar words with a condition attached, so hunt for that condition in each line: surviving the reaction, resting on a carbon skeleton, carrying a time in the units, admitting no survivors, or naming one specific route to harm. Everyday usage keeps the vivid part of the meaning and drops the condition, which is where the loose sense parts company from the strict one. Asking what would have to be measured to justify each word keeps the two senses apart."
+    },
+    {
+      "id": "en-v-5-20",
+      "case_id": "ENG V.5.20",
+      "title": "Task 20",
+      "subsection": "v.5",
+      "sort_order": 20,
+      "difficulty_level": "4/5",
+      "context": "Five statements about words that are widely used in a sense their careful definitions do not support. Decide whether each account of the established meaning is accurate.",
+      "statements": [
+        "\"Fortuitous\" means lucky in the sense of welcome, which is why a chance power cut that destroyed a season's samples cannot be described as fortuitous.",
+        "\"Enormity\" is the standard neutral noun for great size, so the enormity of a new telescope's mirror is the ordinary way to praise its scale.",
+        "A \"dilemma\" is any difficult problem, so a shortage of ventilators with no alternative supply available is precisely a dilemma.",
+        "\"Disinterested\" reports a lack of curiosity, so an arbitrator described as disinterested in the outcome is being criticised for inattention.",
+        "\"Decimate\" now commonly reports heavy loss short of destruction while \"devastate\" claims something close to ruin, so a fungal disease can decimate a bat colony that a later fire devastates."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Fortuitous\" means lucky in the sense of welcome, which is why a chance power cut that destroyed a season's samples cannot be described as fortuitous.**\n\nFortuitous reports that something happened by chance, and the chance may be good, bad or indifferent; a fortuitous meeting is simply an unplanned one. Fortunate is the word that carries the good luck, and the two have converged in casual use because happy accidents are the ones people mention. The strict sense is worth keeping in scientific writing, where accidental and lucky need to stay distinct.\n\n**Tip:** Fortuitous answers how it came about; fortunate answers how it turned out.\n\nChance rather than good fortune is what the adjective reports, so the exclusion fails — the unplanned power cut is fortuitous and decidedly unfortunate.",
+        "**B) \"Enormity\" is the standard neutral noun for great size, so the enormity of a new telescope's mirror is the ordinary way to praise its scale.**\n\nIn careful use enormity means extreme wickedness or the moral gravity of an act, which is why it collocates with crimes, atrocities and betrayals. The neutral nouns for sheer size are enormousness, immensity, magnitude and scale, and one of those is what an engineering description of a mirror would take. The size sense of enormity is common, but it remains contested in edited prose and jars badly where admiration is intended.\n\nMoral weight rather than physical bulk is the settled sense, so the recommendation fails — praise for the instrument would speak of \"the immensity of the mirror.\"",
+        "**C) A \"dilemma\" is any difficult problem, so a shortage of ventilators with no alternative supply available is precisely a dilemma.**\n\nA dilemma is a forced choice between options, classically two, each of which carries a real cost, and the difficulty lies in having to pick rather than in the situation being hard. A shortage with no alternative offers no choice at all, so it is a predicament, a crisis or simply a problem. Where clinicians must decide which of two patients receives the last machine, the word becomes exact.\n\nThe defining ingredient is a choice between unwelcome courses, and the sentence describes a situation with none, so the label misses — an absence of options is a predicament rather than a dilemma.",
+        "**D) \"Disinterested\" reports a lack of curiosity, so an arbitrator described as disinterested in the outcome is being criticised for inattention.**\n\nDisinterested means having no stake in the result: no financial interest, no personal connection, nothing to gain whichever way the decision falls. Uninterested is the word for indifference or boredom. The distinction is worth defending precisely because impartiality is a professional requirement, and calling an arbitrator disinterested is the highest praise available.\n\nHaving no stake and having no interest are different states, so the reading fails — the arbitrator is being commended for impartiality rather than reproached for boredom.",
+        "**E) \"Decimate\" now commonly reports heavy loss short of destruction while \"devastate\" claims something close to ruin, so a fungal disease can decimate a bat colony that a later fire devastates.**\n\nThe Roman sense of executing one soldier in ten survives only as a historical footnote, and modern usage has settled on severe but partial loss, which is why the verb takes populations, workforces and colonies as objects. Devastate claims comprehensive damage and applies to the place as much as to the population within it. Using the pair in sequence therefore describes an escalation rather than a repetition.\n\nPartial loss and near-total ruin sit at different points on the same scale, and the sentence puts the disease below the fire, so the ordering is right."
+      ],
+      "highlights": [
+        "Fortuitous",
+        "Enormity",
+        "dilemma",
+        "Disinterested",
+        "Decimate"
+      ],
+      "solution_overview": "Each of these words is regularly used in a sense its careful definition does not license, so recover the strict meaning before testing the example. Ask whether the word reports chance or good luck, moral weight or physical size, a forced choice or simply a hard situation, and a missing stake or a missing interest. Where a line offers a plausible modern reading, check whether the situation described actually contains the ingredient the strict sense demands."
+    },
+    {
+      "id": "en-v-5-21",
+      "case_id": "ENG V.5.21",
+      "title": "Task 21",
+      "subsection": "v.5",
+      "sort_order": 21,
+      "difficulty_level": "4/5",
+      "context": "Five statements about the graded vocabulary of crisis reporting, where each label carries a threshold or a legal status behind it. Judge whether each account is accurate.",
+      "statements": [
+        "In macroeconomic writing a \"recession\" is a contraction meeting a conventional threshold while a \"depression\" is a far deeper and longer collapse, so describing two negative quarters of output as a depression overstates what the data show.",
+        "\"Famine\" is a technical classification requiring measured thresholds of hunger, malnutrition and mortality while \"food insecurity\" covers a much wider range of shortage, so a region can be severely food-insecure without a famine being declared.",
+        "\"Refugee\" is a legal status held by someone unable to return home for fear of persecution while \"migrant\" describes movement without saying anything about status, so every refugee is a migrant though most migrants are not refugees.",
+        "\"Displaced\" households have been moved under an organised instruction from an authority, while \"evacuated\" ones have left of their own accord ahead of the danger.",
+        "In an incident report \"casualties\" counts only those who died, while \"fatalities\" is the wider figure taking in the injured as well."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In macroeconomic writing a \"recession\" is a contraction meeting a conventional threshold while a \"depression\" is a far deeper and longer collapse, so describing two negative quarters of output as a depression overstates what the data show.**\n\nRecession is the routine label for a downturn that satisfies an agreed test, most commonly two consecutive quarters of falling output or a dating committee's broader judgement. Depression has no equally settled definition but is reserved in practice for contractions of extraordinary depth and duration, with double-digit falls in output and years rather than months of unemployment. Because the second word invokes the interwar comparison, reaching for it changes what readers expect of the figures.\n\nThe severity gap between the two terms is very wide, so applying the graver word to a threshold-level contraction inflates the claim rather than sharpening it.",
+        "**B) \"Famine\" is a technical classification requiring measured thresholds of hunger, malnutrition and mortality while \"food insecurity\" covers a much wider range of shortage, so a region can be severely food-insecure without a famine being declared.**\n\nFamine declarations rest on measured criteria: proportions of households facing extreme food gaps, rates of acute malnutrition in children, and deaths per ten thousand people per day. Food insecurity is a graded concept running from anxiety about the next meal to emergency conditions, and most of that range never approaches the declaration threshold. Agencies keep the stronger word rare so that it retains its power to mobilise a response.\n\nA measured threshold sits above a broad continuum, and the sentence places the region below that threshold while acknowledging real hardship, which is how the classification is meant to be used.",
+        "**C) \"Refugee\" is a legal status held by someone unable to return home for fear of persecution while \"migrant\" describes movement without saying anything about status, so every refugee is a migrant though most migrants are not refugees.**\n\nMigrant is the neutral umbrella term for anyone who moves across a border, whatever the reason and whatever their standing. Refugee is defined in international law by a well-founded fear of persecution and the impossibility of returning, and it brings protections and obligations that attach to no other traveller. The narrower category therefore sits inside the wider one and cannot be assigned by description alone.\n\nA legal status nests inside a descriptive term, and the sentence runs the implication in the only direction that nesting permits, so it stands.",
+        "**D) \"Displaced\" households have been moved under an organised instruction from an authority, while \"evacuated\" ones have left of their own accord ahead of the danger.**\n\nEvacuation is organised: an authority orders or arranges the movement, usually with transport, destinations and a return plan attached. Displacement describes people forced from their homes by conflict, disaster or persecution, whether or not anyone directed the movement, and it says nothing about assistance. Relief agencies count the displaced precisely because so many of them left without any authority to guide them.\n\nThe organised movement and the forced one have been attached to the wrong words, so the account fails — an authority evacuates residents, while conflict and flooding displace them.",
+        "**E) In an incident report \"casualties\" counts only those who died, while \"fatalities\" is the wider figure taking in the injured as well.**\n\nCasualties is the inclusive count, covering everyone killed, injured or otherwise incapacitated in an event, which is why the figure is often broken down in the next line of a report. Fatalities is the narrow subset of deaths and is quoted separately when precision matters. Emergency services keep the two apart because triage, hospital capacity and investigation all depend on knowing how many survivors need care.\n\n**Trap:** Headline coverage often reports casualties in a way that sounds like a death toll, which is exactly the confusion the sentence repeats.\n\nThe wider figure has been named as the narrower one, so the line does not hold — casualties include the injured, and fatalities count only the dead."
+      ],
+      "highlights": [
+        "recession",
+        "Famine",
+        "Refugee",
+        "Displaced",
+        "casualties"
+      ],
+      "solution_overview": "Crisis vocabulary is built on thresholds and legal definitions, so ask what test has to be met before each label can be used and how much of the situation the word actually covers. Several lines nest a narrow category inside a broad one, and the inference only runs upwards, from the specific status to the general description. Two lines reward attention to who organised the movement and to which count includes survivors."
+    },
+    {
+      "id": "en-v-5-22",
+      "case_id": "ENG V.5.22",
+      "title": "Task 22",
+      "subsection": "v.5",
+      "sort_order": 22,
+      "difficulty_level": "4/5",
+      "context": "Five statements about the reporting verbs that signal how far a writer stands behind a claim or presses for a response. Decide whether each comparison is accurate.",
+      "statements": [
+        "A journal that writes an author \"claims\" to have observed the effect is endorsing the observation, since \"claim\" and \"report\" are neutral equivalents in academic prose.",
+        "\"Urge\" presses for action with a note of insistence while \"recommend\" merely puts an option forward, so a safety committee that urges an immediate grounding of the fleet is doing more than recommending one.",
+        "\"Caution\" is the stronger of the two verbs, so a seismologist who cautions against building on the fault line is issuing a graver alert than one who warns against it.",
+        "\"Acknowledge\" concedes that a point exists without accepting it while \"agree\" signs up to it, so a paper can acknowledge an objection that it goes on to reject.",
+        "\"Speculate\" is the term for a formally testable proposal in a methods section, while \"hypothesise\" marks guesswork offered without supporting evidence."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) A journal that writes an author \"claims\" to have observed the effect is endorsing the observation, since \"claim\" and \"report\" are neutral equivalents in academic prose.**\n\nReport is the neutral verb: it passes on what was found and leaves the writer's own stance out of it. Claim distances the writer from the assertion, hinting that the evidence may not carry it, which is why editors query the verb when no scepticism is intended. The same sentence can therefore read as summary or as scepticism depending on which verb is chosen.\n\nThe distancing verb withholds exactly the endorsement the sentence attributes to it, so the line fails — writing that an author claims the observation signals reserve rather than agreement.",
+        "**B) \"Urge\" presses for action with a note of insistence while \"recommend\" merely puts an option forward, so a safety committee that urges an immediate grounding of the fleet is doing more than recommending one.**\n\nRecommend offers a course of action for consideration and leaves the recipient comfortable in declining it. Urge adds pressure and usually urgency, implying that the writer regards inaction as unacceptable, which is why it appears in safety findings where lives are at stake. Regulators read the difference as a signal about how quickly they are expected to move.\n\nInsistence is the extra ingredient the stronger verb supplies, and the grounding recommendation carries exactly that weight, so the comparison is sound.",
+        "**C) \"Caution\" is the stronger of the two verbs, so a seismologist who cautions against building on the fault line is issuing a graver alert than one who warns against it.**\n\nWarn names a danger and asks for it to be avoided, and it is the verb used when the risk is definite and serious. Caution is the softer, more advisory choice, urging care rather than announcing a threat, which is why it pairs with restraint and with provisional findings. Hazard communication guidance ranks the two in that order for exactly this reason.\n\nThe intensities have been reversed, so the sentence does not hold — warning against building on the fault is the graver statement, and cautioning the milder one.",
+        "**D) \"Acknowledge\" concedes that a point exists without accepting it while \"agree\" signs up to it, so a paper can acknowledge an objection that it goes on to reject.**\n\nAcknowledge registers something as present and worth addressing: an objection, a limitation, a competing result. Agree commits the writer to its truth and closes off the possibility of arguing against it a few lines later. Peer reviewers look for the first because a paper that never registers rival explanations reads as though it has not seen them.\n\nRecognising a point and endorsing it are separate moves, and the sentence keeps the door open for the rebuttal that follows, which is standard practice in a discussion section.",
+        "**E) \"Speculate\" is the term for a formally testable proposal in a methods section, while \"hypothesise\" marks guesswork offered without supporting evidence.**\n\nHypothesise is the disciplined verb: it introduces a statement framed so that data could contradict it, and it belongs in the section where the study's predictions are set out. Speculate signals that the writer has moved beyond the evidence, which is why it appears late in a discussion, hedged and clearly flagged as going further than the results allow. Reviewers accept speculation in its proper place and object when it wears the other verb's clothes.\n\n**Trap:** Both verbs introduce something unproven, which hides the fact that only one of them promises testability.\n\nThe roles have been exchanged, so the claim collapses — a methods section hypothesises, while a closing discussion speculates."
+      ],
+      "highlights": [
+        "claims",
+        "Urge",
+        "Caution",
+        "Acknowledge",
+        "Speculate"
+      ],
+      "solution_overview": "Reporting verbs carry a stance as well as a meaning, so ask how much distance or pressure each one adds to the same content. Two lines here concern the strength of an appeal or an alarm, and reversing the order of intensity is the easiest error to miss. The others reward asking whether a verb endorses a finding, keeps it at arm's length, or merely registers a point the writer intends to answer."
+    },
+    {
+      "id": "en-v-5-23",
+      "case_id": "ENG V.5.23",
+      "title": "Task 23",
+      "subsection": "v.5",
+      "sort_order": 23,
+      "difficulty_level": "4/5",
+      "context": "Five statements about terms of art in contract and procedure, where a small difference in wording changes what a party may do. Decide whether each distinction is correctly drawn.",
+      "statements": [
+        "A contract that is \"void\" never had legal effect while one that is \"voidable\" stands until the party entitled to set it aside actually does so, so a voidable agreement can be performed for years without difficulty.",
+        "\"Rescinding\" an instrument cancels it altogether while \"varying\" it leaves it in force on altered terms, so a regulator that varies a discharge licence has not rescinded it.",
+        "\"Testimony\" is the broader term covering documents, objects and expert reports, while \"evidence\" names only what a witness says aloud in the hearing.",
+        "A judgment cited as \"persuasive\" authority may be followed while a \"binding\" precedent must be, so a court can admire a decision from another jurisdiction and still decline to apply it.",
+        "\"Compensate\" pays for a loss that has already occurred while \"indemnify\" promises in advance to cover a loss if it arises, so an indemnity in a museum's loan agreement may never be called on at all."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A contract that is \"void\" never had legal effect while one that is \"voidable\" stands until the party entitled to set it aside actually does so, so a voidable agreement can be performed for years without difficulty.**\n\nA void agreement is a nullity from the outset: no obligations ever arose, and no act by the parties can breathe life into it. A voidable agreement is valid and enforceable unless and until the protected party elects to avoid it, which is the position where consent was obtained by misrepresentation or where a party lacked capacity. That election can be delayed, and it can be lost by affirmation.\n\nExisting from the start and lasting until someone objects are quite different legal states, so the sentence is right that a voidable bargain can run its course untroubled.",
+        "**B) \"Rescinding\" an instrument cancels it altogether while \"varying\" it leaves it in force on altered terms, so a regulator that varies a discharge licence has not rescinded it.**\n\nRescission ends the instrument, and the holder is left with no permission at all, which is why the power usually attracts notice requirements and a right of appeal. Variation adjusts what the instrument permits, tightening a limit or changing a monitoring condition while the permission itself survives. Environmental regulators rely on variation as the ordinary tool of enforcement, keeping rescission for serious or repeated breach.\n\nAmending a permission and withdrawing it are different exercises of power with different consequences for the holder, so the sentence separates them correctly.",
+        "**C) \"Testimony\" is the broader term covering documents, objects and expert reports, while \"evidence\" names only what a witness says aloud in the hearing.**\n\nEvidence is the general category: anything a tribunal may receive to prove a fact, including documents, physical exhibits, recordings, admissions and the accounts of witnesses. Testimony is the narrow species consisting of what a witness states, whether orally or in a sworn statement adopted at the hearing. The nesting runs from the general to the particular, not the other way round.\n\nThe categories have been inverted, so the line does not hold — testimony is one form of evidence, and evidence takes in every exhibit besides.",
+        "**D) A judgment cited as \"persuasive\" authority may be followed while a \"binding\" precedent must be, so a court can admire a decision from another jurisdiction and still decline to apply it.**\n\nBinding precedent operates through the court hierarchy: a decision of a superior court on the same point obliges the lower court to follow it whatever the judge thinks of the reasoning. Persuasive authority carries only the weight of its argument, and it includes decisions of foreign courts, of courts at the same level and of bodies with no jurisdiction over the matter at all. Judgments regularly praise reasoning they are free to set aside.\n\nObligation and influence are separate sources of authority, and the sentence lets admiration stop short of compulsion, exactly as the doctrine allows.",
+        "**E) \"Compensate\" pays for a loss that has already occurred while \"indemnify\" promises in advance to cover a loss if it arises, so an indemnity in a museum's loan agreement may never be called on at all.**\n\nCompensation responds to something that has happened and is measured against the loss suffered. An indemnity is a forward-looking allocation of risk: one party undertakes to bear specified losses should they occur, and the undertaking has value from the moment it is given, whether or not anything goes wrong. Lending institutions insist on it precisely because the harm they fear is unlikely but ruinous.\n\nPayment after the event and a promise made before it are different commitments, so an unused indemnity is a working clause rather than a dead one, just as the sentence suggests."
+      ],
+      "highlights": [
+        "void",
+        "Rescinding",
+        "Testimony",
+        "persuasive",
+        "Compensate"
+      ],
+      "solution_overview": "Terms of art in procedure and contract describe what a party may do next, so translate each pair into consequences: no obligation ever arose against one that can be undone, permission withdrawn against permission altered, obligation to follow against freedom to be convinced. Where one word names a category and the other a member of it, check which way the nesting runs before accepting the definition. The final line rewards noticing whether a promise looks backwards at a loss or forwards at a risk."
+    },
+    {
+      "id": "en-v-5-24",
+      "case_id": "ENG V.5.24",
+      "title": "Task 24",
+      "subsection": "v.5",
+      "sort_order": 24,
+      "difficulty_level": "4/5",
+      "context": "Five statements about words whose specialist senses cut across, or even reverse, what a general reader would expect. Judge whether each account is accurate.",
+      "statements": [
+        "\"Sanction\" can both authorise and punish, so an ethics committee that sanctions a trial has approved it while a state under sanctions is being penalised, and only the surrounding words separate the senses.",
+        "In British parliamentary usage \"tabling\" a motion puts it forward for debate while the American sense sets it aside, so the same verb reports opposite fates for a proposal depending on the chamber.",
+        "In reactor physics \"critical\" names the steady self-sustaining state rather than a dangerous one, so a reactor reported as having gone critical is running exactly as designed.",
+        "A \"positive\" laboratory result reports that the target was detected rather than that the news is good, so a positive result on a tuberculosis test is the one a patient least wants to hear.",
+        "A \"conservative\" estimate in a risk assessment is one deliberately set to understate the benefit or overstate the danger, so the word marks caution in the arithmetic rather than a political leaning."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Sanction\" can both authorise and punish, so an ethics committee that sanctions a trial has approved it while a state under sanctions is being penalised, and only the surrounding words separate the senses.**\n\nAs a verb with a person or body as subject, sanction usually means to give official approval, which is how it appears in ethics, licensing and church usage. As a plural noun in international relations it means the penalties imposed to coerce a state, and the verb has followed the noun into that sense as well. Nothing in the word itself resolves the ambiguity, so readers rely on the object and the setting.\n\n**Tip:** Approval takes a singular verb and an institution behind it; punishment almost always arrives in the plural.\n\nA single word carrying opposite forces is unusual but real, and the sentence names the two contexts that keep them apart, so the description is accurate.",
+        "**B) In British parliamentary usage \"tabling\" a motion puts it forward for debate while the American sense sets it aside, so the same verb reports opposite fates for a proposal depending on the chamber.**\n\nAt Westminster, tabling means placing an item on the table of the House so that it enters the order of business, which is a step towards discussion. In American legislative practice, a motion to table postpones consideration indefinitely and is a recognised way of killing a proposal without a vote on its merits. Reporters covering both systems have to be explicit, since the bare verb tells a reader nothing about the outcome.\n\nOne convention advances a proposal and the other shelves it, so the sentence is right that the verb's meaning depends entirely on which chamber is speaking.",
+        "**C) In reactor physics \"critical\" names the steady self-sustaining state rather than a dangerous one, so a reactor reported as having gone critical is running exactly as designed.**\n\nA reactor is critical when each generation of fissions produces exactly one further fission on average, so the chain reaction sustains itself at a constant power. Subcritical means the reaction is dying away and supercritical that power is rising, which is a normal condition during start-up. The everyday sense of critical as perilous belongs to a different family of uses and misleads badly in this context.\n\n**Trap:** News coverage often treats going critical as an emergency, which reverses the meaning the operators intend.\n\nSteady operation rather than crisis is what the physics term reports, so the sentence describes the technical usage correctly.",
+        "**D) A \"positive\" laboratory result reports that the target was detected rather than that the news is good, so a positive result on a tuberculosis test is the one a patient least wants to hear.**\n\nIn diagnostics positive and negative describe the presence or absence of the analyte the assay looks for, and they carry no evaluation whatever. The ordinary senses of the two words point in the opposite direction, which is why clinicians take care when giving results and why patient information leaflets often spell out what each term means. The same reversal appears in screening, toxicology and microbiology.\n\nDetection and desirability are separate matters, so the sentence is right that the technically positive result is the unwelcome one.",
+        "**E) A \"conservative\" estimate in a risk assessment is one deliberately set to understate the benefit or overstate the danger, so the word marks caution in the arithmetic rather than a political leaning.**\n\nIn assessment work a conservative assumption is one chosen to err on the safe side, so that if the estimate is wrong it is wrong in the direction that protects people. That may mean assuming the worst plausible exposure, the shortest tolerable margin or the least favourable weather. The political sense of the adjective is entirely unrelated and never governs its use in a technical annex.\n\nErring towards safety is the whole content of the term here, so the sentence separates the methodological sense from the political one exactly as a risk assessor would."
+      ],
+      "highlights": [
+        "Sanction",
+        "tabling",
+        "critical",
+        "positive",
+        "conservative"
+      ],
+      "solution_overview": "Specialist registers sometimes keep a sense that ordinary usage has lost or reversed, so read each line for the setting that fixes the meaning: a committee, a chamber, a control room, a laboratory or a risk annex. Ask what the word is doing for the professional who chose it rather than what it suggests to a general reader. Where a term seems alarming or evaluative, check whether the technical use is in fact neutral or even reassuring."
+    },
+    {
+      "id": "en-v-5-25",
+      "case_id": "ENG V.5.25",
+      "title": "Task 25",
+      "subsection": "v.5",
+      "sort_order": 25,
+      "difficulty_level": "5/5",
+      "context": "Five statements about adjectives of praise and reproach that are close enough in form or sense to be exchanged by mistake. Decide whether each account is accurate.",
+      "statements": [
+        "\"Iconic\" claims that an image has come to stand for something beyond itself while \"celebrated\" claims only wide admiration, so a photograph can be celebrated for decades without ever becoming iconic.",
+        "\"Seminal\" merely records that a paper has been widely read, so any heavily cited study can properly be called seminal.",
+        "\"Ingenuous\" describes clever contrivance, so an ingenuous solution to a drainage problem is the inventive one.",
+        "A witness described as \"credulous\" is one whose account the tribunal found believable.",
+        "\"Eccentric\" reports a harmless departure from the norm while \"erratic\" reports unpredictable variation that undermines reliance, so an eccentric filing system is a curiosity and an erratic one is a problem."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Iconic\" claims that an image has come to stand for something beyond itself while \"celebrated\" claims only wide admiration, so a photograph can be celebrated for decades without ever becoming iconic.**\n\nCelebrated is a measure of reputation: the work is widely known and widely praised. Iconic makes a stronger and stranger claim, that the image now functions as a sign for an event, a person or an era, so that showing it evokes the whole thing it condenses. Plenty of admired photographs never acquire that representative function, which is why the words are not interchangeable however loosely the second is used.\n\nStanding for something and being admired are different achievements, and the sentence lets a picture reach the second without the first, which is the honest description of most famous images.",
+        "**B) \"Seminal\" merely records that a paper has been widely read, so any heavily cited study can properly be called seminal.**\n\nSeminal means generative: the work opened a line of inquiry, supplied the framework or method that others then built on, and the field looks different afterwards. Citation counts measure attention, and a paper can accumulate thousands of references as a convenient source of data or as a standing target for criticism. Influence and originating power are related but not the same, which is why review articles distinguish foundational studies from heavily cited ones.\n\nBeing read widely is not the same as founding a line of work, so the equivalence fails — a much-cited paper is influential, and only a paper that started something is seminal.",
+        "**C) \"Ingenuous\" describes clever contrivance, so an ingenuous solution to a drainage problem is the inventive one.**\n\nIngenious is the adjective for cleverness and inventive design, and it is the one an engineer would want attached to a scheme. Ingenuous means artless, open and unguarded, describing a person too candid to suspect deception, and it survives most visibly in its negative form disingenuous, meaning insincere. The two differ by a letter and by nearly everything else.\n\n**Trap:** The pair looks like a spelling variant, which is exactly how the wrong one slips into technical prose.\n\nThe adjective for inventiveness is the other member of the pair, so the sentence does not hold — the clever scheme is \"an ingenious solution to a drainage problem.\"",
+        "**D) A witness described as \"credulous\" is one whose account the tribunal found believable.**\n\nCredible describes the account or the person as worthy of belief, and it is the word a tribunal uses when it accepts what it has heard. Credulous describes someone too ready to believe others, which is a comment on the witness's judgement and, if anything, a reason to treat their account with care. The suffixes divide the pair neatly once noticed: one invites belief, the other extends it too freely.\n\nBeing believed and being easily taken in are opposite postures, so the description misfires — a witness the tribunal accepted would be called credible.",
+        "**E) \"Eccentric\" reports a harmless departure from the norm while \"erratic\" reports unpredictable variation that undermines reliance, so an eccentric filing system is a curiosity and an erratic one is a problem.**\n\nEccentric marks something as unusual and consistently so: the archivist's scheme may be idiosyncratic, but it follows its own rules and can be learnt. Erratic marks the absence of any stable pattern, so users cannot predict what will happen next, and that unpredictability is what makes it a fault rather than a quirk. Consistency is precisely what one word preserves and the other denies.\n\nOddness and unreliability are separate charges, and the sentence keeps the tolerable one apart from the disabling one, so the contrast is well drawn."
+      ],
+      "highlights": [
+        "Iconic",
+        "Seminal",
+        "Ingenuous",
+        "credulous",
+        "Eccentric"
+      ],
+      "solution_overview": "These adjectives sit close enough to be swapped, so paraphrase each one before testing the example: standing for something rather than merely admired, originating a field rather than widely cited, inventive rather than artless, believed rather than too ready to believe. Two of the lines rely on near-identical spellings, and the surest check is to recall the negative or related form that fixes the meaning. Where a sentence flatters a work or a witness, ask whether the compliment being paid is the one the adjective actually confers."
+    },
+    {
+      "id": "en-v-5-26",
+      "case_id": "ENG V.5.26",
+      "title": "Task 26",
+      "subsection": "v.5",
+      "sort_order": 26,
+      "difficulty_level": "5/5",
+      "context": "Five statements about adjectives built from the same root that have settled into different jobs. Judge whether each account of the pair is accurate.",
+      "statements": [
+        "\"Systematic\" describes a fault that runs through an entire structure while \"systemic\" describes something carried out methodically, step by step.",
+        "\"Continuous\" claims an unbroken run while \"continual\" allows gaps between repetitions, so a station that records continuously is doing something different from one that is continually being repaired.",
+        "\"Historic\" marks importance in history while \"historical\" merely places something in the past, so a historical drought recorded in tree rings need not have been a historic one.",
+        "\"Classical\" ties a work to the Greek and Roman world or to a defined period style while \"classic\" claims enduring exemplary status, so a classic recording of a classical symphony is not a redundant phrase.",
+        "\"Liquidity\" and \"solvency\" describe the same financial condition, so a firm whose assets comfortably exceed its liabilities can never run short of cash."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Systematic\" describes a fault that runs through an entire structure while \"systemic\" describes something carried out methodically, step by step.**\n\nSystematic describes method: a systematic review, a systematic search, a systematic error that arises from a consistent procedure. Systemic describes the system itself: a systemic weakness affects the whole body, network or institution rather than one part of it. Medicine keeps the second for effects that spread beyond a local site, and the distinction has carried into writing about institutions and finance.\n\nThe two definitions have been exchanged, so the line fails — a weakness running through an institution is systemic, while an orderly procedure is systematic.",
+        "**B) \"Continuous\" claims an unbroken run while \"continual\" allows gaps between repetitions, so a station that records continuously is doing something different from one that is continually being repaired.**\n\nContinuous describes something without interruption in time or space: an unbroken data series, a continuous surface, a continuous supply. Continual describes something that recurs often, with intervals in between, and it frequently carries a note of irritation about the repetition. A logger sampling every second all year is continuous; a run of breakdowns spread across that year is continual.\n\nUnbroken duration and frequent repetition are different patterns, and the sentence gives each adjective the pattern that belongs to it, so the distinction stands.",
+        "**C) \"Historic\" marks importance in history while \"historical\" merely places something in the past, so a historical drought recorded in tree rings need not have been a historic one.**\n\nHistoric singles out events, buildings and moments judged significant enough to be remembered: a historic ruling, a historic site. Historical is the neutral classifier, covering anything belonging to or concerned with the past, including historical records, historical fiction and historical climate data. Almost everything historical fails to be historic, which is why the pair repays care in headlines.\n\nSignificance and mere pastness are different claims, and the tree-ring example accepts the second while withholding the first, so the sentence works.",
+        "**D) \"Classical\" ties a work to the Greek and Roman world or to a defined period style while \"classic\" claims enduring exemplary status, so a classic recording of a classical symphony is not a redundant phrase.**\n\nClassical points at a tradition or period: classical antiquity, classical architecture, and in music the style of the later eighteenth century, though the word is also used loosely for the whole art-music tradition. Classic is an evaluation, marking something as a standard of its kind that has lasted. One phrase therefore names what the symphony is and the other names how the performance is regarded.\n\nPeriod and verdict are separate pieces of information, so the double description the sentence defends carries two distinct claims rather than one repeated.",
+        "**E) \"Liquidity\" and \"solvency\" describe the same financial condition, so a firm whose assets comfortably exceed its liabilities can never run short of cash.**\n\nSolvency compares what is owned with what is owed and is a statement about the balance sheet as a whole. Liquidity concerns the ability to meet obligations as they fall due, which depends on how quickly assets can be turned into cash without loss. A business holding valuable property, long-dated receivables or specialised plant can be comfortably solvent and still unable to pay next week's bills.\n\n**Trap:** Both words sound like general financial health, which hides that one measures the stock of value and the other the timing of cash.\n\nA strong balance sheet does not guarantee cash on the day it is needed, so the inference fails — solvency and liquidity are tested separately for precisely that reason."
+      ],
+      "highlights": [
+        "Systematic",
+        "Continuous",
+        "Historic",
+        "Classical",
+        "Liquidity"
+      ],
+      "solution_overview": "Adjective pairs from one root usually divide between a neutral classifier and an evaluative or structural partner, so ask what job each form has taken on. Method against whole-system reach, unbroken against repeated, past against significant, period against verdict: naming the axis first makes a swapped definition easy to see. The financial line works the same way, dividing what a balance sheet shows from what can actually be paid on the day."
+    },
+    {
+      "id": "en-v-5-27",
+      "case_id": "ENG V.5.27",
+      "title": "Task 27",
+      "subsection": "v.5",
+      "sort_order": 27,
+      "difficulty_level": "5/5",
+      "context": "Five statements about the vocabulary of research ethics and data protection, where each term carries a duty or a safeguard. Decide whether each account is accurate.",
+      "statements": [
+        "Data described as \"pseudonymised\" has had every identifier destroyed and cannot be re-linked, which is why regulators treat it exactly as they treat anonymised data.",
+        "In research ethics a child gives \"consent\" while the parent provides \"assent\" on the child's behalf.",
+        "A survey promised to be \"confidential\" is one in which answers were never linked to names in the first place, which is precisely what \"anonymous\" also means.",
+        "In data-protection reporting an \"incident\" is any suspected event while a \"breach\" is the narrower category that triggers a duty to notify, so a laptop briefly mislaid may be logged as an incident without ever becoming a reportable breach.",
+        "Files \"deleted\" from a drive are physically overwritten, which is why deletion and secure erasure are treated as equivalent in equipment disposal policies."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Data described as \"pseudonymised\" has had every identifier destroyed and cannot be re-linked, which is why regulators treat it exactly as they treat anonymised data.**\n\nPseudonymisation replaces direct identifiers with a code while a key is kept elsewhere, so the link back to individuals still exists and the data remain personal data with all the obligations that follow. Anonymisation removes that possibility altogether, and only then do the protection rules fall away. The whole point of the intermediate category is that re-identification is possible for those holding the key.\n\n**Trap:** Both terms describe removing names from a dataset, which makes it easy to miss that only one of them destroys the route back.\n\nA surviving key is exactly what distinguishes the weaker safeguard, so the equivalence fails — pseudonymised records remain personal data and stay inside the regime.",
+        "**B) In research ethics a child gives \"consent\" while the parent provides \"assent\" on the child's behalf.**\n\nConsent is the legally effective authorisation, and for a child it is given by a parent or guardian with the capacity to grant it. Assent is the child's own agreement to take part, sought as a matter of respect even though it carries no legal force on its own, and a refusal to assent is generally honoured. Ethics committees ask for both because the two answer different questions about the child's participation.\n\nThe legal authorisation and the child's own agreement have been swapped, so the line does not hold — the parent consents while the child assents.",
+        "**C) A survey promised to be \"confidential\" is one in which answers were never linked to names in the first place, which is precisely what \"anonymous\" also means.**\n\nAn anonymous survey collects no identifying information at all, so not even the researchers can say who returned which questionnaire. A confidential survey may know exactly who said what and undertakes not to disclose it outside the study team, which is what allows follow-up, linkage to records and withdrawal of a specific response. Participant information sheets separate the two because the promises differ in what they can guarantee.\n\nNot collecting identities and promising not to reveal them are different undertakings, so the equation fails — confidentiality protects information the study still holds.",
+        "**D) In data-protection reporting an \"incident\" is any suspected event while a \"breach\" is the narrower category that triggers a duty to notify, so a laptop briefly mislaid may be logged as an incident without ever becoming a reportable breach.**\n\nIncident is the operational catch-all: anything that might have compromised information gets logged, assessed and closed, and most entries turn out to be nothing. Breach is the defined category involving unauthorised access, loss, alteration or disclosure of personal data, and once it is established the clock starts on notifying the regulator and possibly the individuals affected. Encryption and prompt recovery are exactly the factors that keep an event on the lower rung.\n\nLogging everything and notifying the regulator are different obligations, so the mislaid laptop the sentence describes can indeed stop at the first, which is how incident registers work.",
+        "**E) Files \"deleted\" from a drive are physically overwritten, which is why deletion and secure erasure are treated as equivalent in equipment disposal policies.**\n\nOrdinary deletion removes the pointer to the file and marks the space as available, leaving the content in place until something else happens to write over it, which is why recovery tools succeed so often. Secure erasure overwrites the storage, issues a sanitise command or destroys the key that makes encrypted data readable, and it is verified before a device leaves the building. Disposal policies specify the second precisely because the first is not a safeguard.\n\nRemoving a reference and destroying the data are different operations, so the sentence collapses a distinction that disposal procedures exist to maintain."
+      ],
+      "highlights": [
+        "pseudonymised",
+        "consent",
+        "confidential",
+        "incident",
+        "deleted"
+      ],
+      "solution_overview": "Every term here corresponds to a duty, so ask what a regulator or an ethics committee could still require once the word applies. Two lines turn on whether a link back to an individual survives, one on who is legally entitled to authorise participation, and one on whether the data have actually gone. Where a sentence claims two safeguards are equivalent, look for the residue the weaker one leaves behind."
+    },
+    {
+      "id": "en-v-5-28",
+      "case_id": "ENG V.5.28",
+      "title": "Task 28",
+      "subsection": "v.5",
+      "sort_order": 28,
+      "difficulty_level": "5/5",
+      "context": "Five statements about words that differ by a syllable and by their entire evaluative force. Judge whether each description matches careful usage.",
+      "statements": [
+        "A \"venial\" official is one open to bribery, while a \"venal\" fault is a minor one that can readily be excused.",
+        "\"Luxuriant\" describes abundant growth while \"luxurious\" describes costly comfort, so a luxuriant hedge says nothing about the wealth of the house behind it.",
+        "\"Officious\" condemns someone for asserting authority beyond what the role requires while \"official\" merely marks the authority as formal, so a request from the registry is neutral where an officious clerk is being criticised.",
+        "\"Human\" classifies while \"humane\" evaluates, so a mistake can be entirely human without the treatment that followed it being humane.",
+        "\"Momentary\" measures duration while \"momentous\" measures importance, so a momentary lapse at the signal box can prove momentous."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A \"venial\" official is one open to bribery, while a \"venal\" fault is a minor one that can readily be excused.**\n\nVenal comes from the language of things for sale and describes people who can be bought: a venal inspector, venal patronage, venal journalism. Venial belongs to the vocabulary of sin and describes an offence slight enough to be forgiven, which is why it pairs with fault, error and transgression. The pair differs by one letter and by the whole weight of the accusation.\n\n**Tip:** Venal keeps the sense of vendor, while venial keeps the sense of pardon.\n\nThe corruptible person and the pardonable slip have been attached to the wrong adjectives, so the sentence fails — a bought official is venal and a forgivable error venial.",
+        "**B) \"Luxuriant\" describes abundant growth while \"luxurious\" describes costly comfort, so a luxuriant hedge says nothing about the wealth of the house behind it.**\n\nLuxuriant reports thick, vigorous, profuse growth and belongs with vegetation, hair and prose that runs to excess. Luxurious reports expense and comfort and belongs with fabrics, hotels and interiors. The shared root in abundance explains the confusion, but a botanical survey using the second word would be commenting on the furnishings rather than the plants.\n\nGrowth and expenditure are separate things to be abundant in, and the sentence keeps the hedge on the botanical side of the pair, so it holds.",
+        "**C) \"Officious\" condemns someone for asserting authority beyond what the role requires while \"official\" merely marks the authority as formal, so a request from the registry is neutral where an officious clerk is being criticised.**\n\nOfficial is descriptive: the act comes from an office, carries its sanction and appears on its paper. Officious is a reproach, describing someone who interferes, insists on formalities nobody needed and enjoys the small exercise of power. The words share an origin in office and have diverged entirely in tone, one neutral and one hostile.\n\nDescription and reproach sit on different sides of this pair, and the sentence attaches the criticism to the person rather than to the paperwork, which is where careful usage places it.",
+        "**D) \"Human\" classifies while \"humane\" evaluates, so a mistake can be entirely human without the treatment that followed it being humane.**\n\nHuman assigns something to the species or to the ordinary condition of people, which is why human error names a category of cause rather than a verdict on anyone. Humane praises conduct as compassionate and marks a standard that can be met or missed, as in humane treatment or humane conditions of detention. An inquiry can accept the first about the cause and still find the second lacking in the response.\n\nCategory and standard are answered by different findings, so the sentence is right that recognising an ordinary human failure settles nothing about how people were then treated.",
+        "**E) \"Momentary\" measures duration while \"momentous\" measures importance, so a momentary lapse at the signal box can prove momentous.**\n\nMomentary means lasting only a moment and says nothing about consequence. Momentous derives from the sense of moment as weight or significance, and it describes decisions, occasions and turning points whose effects are large. Because one measures time and the other measures weight, a very short event can score at the top of the second scale.\n\nDuration and significance are independent, and the sentence uses that independence to make its point rather than tripping over it, so the line is sound."
+      ],
+      "highlights": [
+        "venial",
+        "Luxuriant",
+        "Officious",
+        "Human",
+        "Momentary"
+      ],
+      "solution_overview": "Adjectives that differ by a syllable often differ by their entire verdict, so recover the root sense behind each form before judging the example. Ask whether a word describes something for sale or something forgivable, growth or expense, an office or an overreach, a category or a standard, a duration or a weight. Reading each adjective into a sentence of praise and then into a complaint shows quickly which one the writer actually needed."
+    },
+    {
+      "id": "en-v-5-29",
+      "case_id": "ENG V.5.29",
+      "title": "Task 29",
+      "subsection": "v.5",
+      "sort_order": 29,
+      "difficulty_level": "5/5",
+      "context": "Five statements about verbs and labels that differ over how completely something has been displaced, or over who brought the change about. Decide whether each is accurate.",
+      "statements": [
+        "\"Obviate\" says a need has been removed altogether rather than merely lessened, so a gravity-fed bypass channel that obviates the need for pumping does more than reduce it.",
+        "\"Subside\" describes something settling of its own accord while \"abate\" can be brought about by intervention, so a storm subsides while a statutory nuisance is abated by an order.",
+        "In corporate reporting a \"merger\" describes two firms combining into a new entity while an \"acquisition\" describes one absorbing another, so a deal announced as a merger of equals is often an acquisition in substance.",
+        "\"Supersede\" claims the newer item has displaced the older by authority rather than merely standing in for it, so a revised standard supersedes its predecessor while a stand-in lecturer only replaces a colleague.",
+        "\"Denote\" names what a word points to while \"connote\" names what it suggests alongside, so \"thrifty\" and \"stingy\" can denote the same behaviour and connote opposite judgements."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Obviate\" says a need has been removed altogether rather than merely lessened, so a gravity-fed bypass channel that obviates the need for pumping does more than reduce it.**\n\nObviate means to make something unnecessary, so what follows the verb is a requirement, a difficulty or a risk that no longer has to be dealt with at all. Reduce leaves the requirement in place at a smaller scale, which means pumps must still be bought, maintained and powered. A channel driven by gravity removes the requirement rather than shrinking it, and the capital and running costs disappear with it.\n\nRemoving a requirement and shrinking one lead to different designs and different budgets, so the sentence is right to rank the verb above mere reduction.",
+        "**B) \"Subside\" describes something settling of its own accord while \"abate\" can be brought about by intervention, so a storm subsides while a statutory nuisance is abated by an order.**\n\nSubside is intransitive and agentless: floodwater, swelling and unrest all subside without anyone acting on them. Abate works both ways, so a fever may abate on its own while an authority abates a nuisance by serving a notice and, if necessary, doing the work itself. That transitive use is why abatement appears as a legal term while subsidence never does in this sense.\n\n**Tip:** If you can name someone who did it, the verb has to be the one that takes an object.\n\nOne verb admits an agent and the other does not, and the sentence gives the weather the agentless verb and the authority the active one, so the pairing is correct.",
+        "**C) In corporate reporting a \"merger\" describes two firms combining into a new entity while an \"acquisition\" describes one absorbing another, so a deal announced as a merger of equals is often an acquisition in substance.**\n\nA merger implies parity: the businesses combine, and neither is presented as the survivor swallowing the other. An acquisition names a buyer and a target, and the target's identity, board and often its name disappear into the purchaser. Because the softer word helps with staff, customers and regulators, deals are frequently announced as mergers when the balance of control says otherwise.\n\nParity and absorption are different structures behind the same headline, and the sentence is right that the label chosen often reflects presentation rather than the substance of control.",
+        "**D) \"Supersede\" claims the newer item has displaced the older by authority rather than merely standing in for it, so a revised standard supersedes its predecessor while a stand-in lecturer only replaces a colleague.**\n\nSupersede carries the sense of sitting above: the new version takes over the authority of the old, which is withdrawn and should no longer be cited or applied. Replace is neutral about authority and covers any substitution, temporary or permanent, of one thing or person for another. Standards bodies use the stronger verb because the earlier document ceases to be current on the day the new one issues.\n\nDisplacement by authority and simple substitution are different relationships between old and new, and the sentence assigns each verb to the case it fits, so the line holds.",
+        "**E) \"Denote\" names what a word points to while \"connote\" names what it suggests alongside, so \"thrifty\" and \"stingy\" can denote the same behaviour and connote opposite judgements.**\n\nDenotation is the referential core: the class of things or the behaviour a term picks out, which is what a dictionary's first definition tries to capture. Connotation is the freight the word carries with it, the approval, disapproval, formality or warmth that comes along for the ride. Near-synonyms typically share the first and differ in the second, which is exactly why choosing between them is a choice about attitude.\n\nReference and overtone are separate layers of meaning, and the pair the sentence offers demonstrates the split it describes, so the account is accurate."
+      ],
+      "highlights": [
+        "Obviate",
+        "Subside",
+        "merger",
+        "Supersede",
+        "Denote"
+      ],
+      "solution_overview": "Ask two questions of each line: how much of the original has been displaced, and who did the displacing. Removing a requirement outranks shrinking it, taking over by authority outranks standing in, and combining as equals is a different structure from being absorbed. Where a verb can appear with or without an agent, check that the sentence has supplied one for the transitive use and none for the intransitive."
+    },
+    {
+      "id": "en-v-5-30",
+      "case_id": "ENG V.5.30",
+      "title": "Task 30",
+      "subsection": "v.5",
+      "sort_order": 30,
+      "difficulty_level": "5/5",
+      "context": "Five statements about words whose established senses are regularly reversed in careless use. Decide whether each account of the settled meaning is accurate.",
+      "statements": [
+        "\"Flaunt\" means to treat a rule with open contempt, which is why a laboratory that ignores its containment protocol is said to flaunt it.",
+        "\"Elicit\" reports drawing something out deliberately, usually by asking, while \"evoke\" reports calling a feeling or memory into being, so an interviewer elicits a date while a photograph evokes a decade.",
+        "\"Reticent\" describes unwillingness to speak while \"reluctant\" describes unwillingness to act, so a witness can be reluctant to attend an inquiry and perfectly forthcoming once there.",
+        "\"Fulsome\" in careful use marks praise as excessive to the point of insincerity, so a reviewer who calls an acknowledgement fulsome is not paying a compliment.",
+        "\"Enervate\" means to fill with energy, so a bracing walk across the moor enervates the hikers who take it."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Flaunt\" means to treat a rule with open contempt, which is why a laboratory that ignores its containment protocol is said to flaunt it.**\n\nFlout is the verb for defying a rule, a convention or an order in a way that makes no attempt at concealment. Flaunt means to display something ostentatiously, so what follows it is normally a possession, a talent or wealth rather than a regulation. The confusion is common enough to be listed in every usage guide, and it survives because both verbs suggest a kind of brazenness.\n\n**Trap:** Both words carry an air of showing off, which is why the wrong one slips easily into a sentence about broken rules.\n\nOpen defiance belongs to the other verb, so the sentence does not hold — a laboratory that ignores containment rules is flouting them.",
+        "**B) \"Elicit\" reports drawing something out deliberately, usually by asking, while \"evoke\" reports calling a feeling or memory into being, so an interviewer elicits a date while a photograph evokes a decade.**\n\nElicit requires an agent working on a source: questions elicit answers, prompts elicit responses, and the object is usually information or a reaction that was there to be drawn out. Evoke needs no questioner and works on the audience, summoning associations, atmospheres and memories that were not being asked for. One is extraction, the other suggestion.\n\nDeliberate extraction and spontaneous summoning are different operations, and the sentence gives the questioner the first verb and the image the second, so the distribution is right.",
+        "**C) \"Reticent\" describes unwillingness to speak while \"reluctant\" describes unwillingness to act, so a witness can be reluctant to attend an inquiry and perfectly forthcoming once there.**\n\nReticent is specifically about speech: the reticent person keeps their views, feelings or information to themselves. Reluctant is general unwillingness and takes any action as its complement, from attending to signing to agreeing. The two have converged in loose usage, but the narrower word loses its usefulness once it is allowed to cover every hesitation.\n\nSpeech and action are separate things to withhold, and the sentence separates them with a witness who resists one and not the other, so the contrast is well made.",
+        "**D) \"Fulsome\" in careful use marks praise as excessive to the point of insincerity, so a reviewer who calls an acknowledgement fulsome is not paying a compliment.**\n\nThe established sense of fulsome is cloying and overdone, which is why fulsome praise traditionally means flattery rather than generous appreciation. The word is now widely used to mean full or lavish in a positive spirit, and that use is spreading, but in edited prose the pejorative reading remains live enough to make the word risky. A reviewer who reaches for it is commenting on excess.\n\n**Tip:** Where a compliment is intended, generous or wholehearted removes the ambiguity that fulsome introduces.\n\nExcess rather than warmth is what the careful sense reports, so the sentence describes the usage correctly.",
+        "**E) \"Enervate\" means to fill with energy, so a bracing walk across the moor enervates the hikers who take it.**\n\nEnervate means to drain of strength and vitality, leaving someone weakened and listless; heat, illness and long confinement enervate. The resemblance to energise is entirely misleading, since the root concerns the removal of sinew rather than the supply of energy. A walk that leaves hikers refreshed calls for the opposite verb.\n\nThe verb reports depletion rather than supply, so the sentence inverts it — a bracing walk invigorates the hikers, while a week of humid heat would enervate them."
+      ],
+      "highlights": [
+        "Flaunt",
+        "Elicit",
+        "Reticent",
+        "Fulsome",
+        "Enervate"
+      ],
+      "solution_overview": "Each line offers a definition that either matches the settled sense or reverses it, so state the meaning yourself before reading the example attached to it. Ask whether the verb defies or displays, extracts or suggests, withholds speech or withholds action, and drains or supplies. Where two words look or sound alike, the root is usually the fastest guide back to the sense a careful editor would defend."
+    }
+  ]
+}

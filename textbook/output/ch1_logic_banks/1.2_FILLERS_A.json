@@ -1,0 +1,254 @@
+[
+  {
+    "id": "math-1-38",
+    "case_id": "MATH 1.38",
+    "title": "Café menu labels",
+    "subsection": "1.2",
+    "context": "At a café, let $V=\\{\\text{falafel wrap},\\text{tomato soup},\\text{berry bowl}\\}$ be the vegan dishes and $G=\\{\\text{tomato soup},\\text{berry bowl},\\text{rice pudding}\\}$ be the gluten-free dishes.",
+    "statements": ["$V\\cap G=\\{\\text{tomato soup},\\text{berry bowl}\\}$.", "$\\text{rice pudding}\\in V\\cup G$.", "$V\\cup G$ contains exactly three dishes.", "$V\\setminus G=\\{\\text{falafel wrap}\\}$.", "$V\\cap G\\subseteq V$."],
+    "answer_key": [true, true, false, true, true],
+    "tactical_explanations": [
+      "**A) $V\\cap G=\\{\\text{tomato soup},\\text{berry bowl}\\}$.**  (true)\n\nBoth listed dishes occur in each set, and no other dish does. Thus the claim is **true**.",
+      "**B) $\\text{rice pudding}\\in V\\cup G$.**  (true)\n\nRice pudding is in $G$, so it is in the union. The claim is **true**.",
+      "**C) $V\\cup G$ contains exactly three dishes.**  (false)\n\nThe union is $\\{\\text{falafel wrap},\\text{tomato soup},\\text{berry bowl},\\text{rice pudding}\\}$, which has four dishes. This is **false**.",
+      "**D) $V\\setminus G=\\{\\text{falafel wrap}\\}$.**  (true)\n\nOnly the falafel wrap is vegan but not gluten-free. The claim is **true**.",
+      "**E) $V\\cap G\\subseteq V$.**  (true)\n\nEvery item in both sets is certainly in $V$. The claim is **true**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 8,
+    "solution_overview": "The café labels define $V$ and $G$.\n\n**Part 1: Setup.**\n$V\\cap G=\\{\\text{tomato soup},\\text{berry bowl}\\}$, $V\\cup G$ has four dishes, and $V\\setminus G=\\{\\text{falafel wrap}\\}$.\n\n**Part 3: Solve.**\n**1.** TRUE: the two shared dishes form the intersection.\n**2.** TRUE: rice pudding is in $G$.\n**3.** FALSE: the union has four, not three, dishes.\n**4.** TRUE: only the wrap is in $V$ alone.\n**5.** TRUE: an intersection is a subset of either original set.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  },
+  {
+    "id": "math-1-39",
+    "case_id": "MATH 1.39",
+    "title": "Morning weekend shifts",
+    "subsection": "1.2",
+    "context": "Let $M=\\{\\text{Asha},\\text{Ben},\\text{Chen},\\text{Dina}\\}$ be workers assigned a morning shift and $W=\\{\\text{Ben},\\text{Dina},\\text{Eli}\\}$ be workers assigned a weekend shift.",
+    "statements": ["$M\\cap W=\\{\\text{Ben},\\text{Dina}\\}$.", "$\\text{Asha}\\in M\\cap W$.", "$|M\\cup W|=5$.", "$W\\setminus M=\\{\\text{Ben},\\text{Dina}\\}$.", "$M\\cap W\\subseteq W$."],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "**A) $M\\cap W=\\{\\text{Ben},\\text{Dina}\\}$.**  (true)\n\nBen and Dina are the two names appearing in both lists. The claim is **true**.",
+      "**B) $\\text{Asha}\\in M\\cap W$.**  (false)\n\nAsha is in $M$ but absent from $W$; intersection requires both memberships. The claim is **false**.",
+      "**C) $|M\\cup W|=5$.**  (true)\n\nThe distinct workers are Asha, Ben, Chen, Dina, and Eli. The claim is **true**.",
+      "**D) $W\\setminus M=\\{\\text{Ben},\\text{Dina}\\}$.**  (false)\n\nRemoving morning workers from $W$ leaves only $\\{\\text{Eli}\\}$. The claim is **false**.",
+      "**E) $M\\cap W\\subseteq W$.**  (true)\n\nAnything in the intersection belongs to $W$ by definition. The claim is **true**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 9,
+    "solution_overview": "Use the two shift lists.\n\n**Part 1: Setup.**\n$M\\cap W=\\{\\text{Ben},\\text{Dina}\\}$, $M\\cup W$ contains five workers, and $W\\setminus M=\\{\\text{Eli}\\}$.\n\n**Part 3: Solve.**\n**1.** TRUE. **2.** FALSE: Asha is not weekend staff. **3.** TRUE. **4.** FALSE: only Eli is weekend-only. **5.** TRUE.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  },
+  {
+    "id": "math-1-40",
+    "case_id": "MATH 1.40",
+    "title": "Warehouse stock lists",
+    "subsection": "1.2",
+    "context": "Let $A=\\{\\text{K1},\\text{K2},\\text{K3},\\text{K4}\\}$ be SKUs in aisle A and $B=\\{\\text{K3},\\text{K4},\\text{K5}\\}$ be SKUs selected for a promotion.",
+    "statements": ["$A\\setminus B=\\{\\text{K1},\\text{K2}\\}$.", "$B\\setminus A=\\{\\text{K3},\\text{K4}\\}$.", "$A\\cap B=\\{\\text{K3},\\text{K4}\\}$.", "$A\\setminus B=B\\setminus A$.", "$\\text{K5}\\in B\\setminus A$."],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "**A) $A\\setminus B=\\{\\text{K1},\\text{K2}\\}$.**  (true)\n\nThese are the aisle-A SKUs not promoted. The claim is **true**.",
+      "**B) $B\\setminus A=\\{\\text{K3},\\text{K4}\\}$.**  (false)\n\nK3 and K4 are in both sets; $B\\setminus A=\\{\\text{K5}\\}$. The claim is **false**.",
+      "**C) $A\\cap B=\\{\\text{K3},\\text{K4}\\}$.**  (true)\n\nThese are precisely the shared SKUs. The claim is **true**.",
+      "**D) $A\\setminus B=B\\setminus A$.**  (false)\n\nThe two directed differences are $\\{\\text{K1},\\text{K2}\\}$ and $\\{\\text{K5}\\}$, so direction matters. The claim is **false**.",
+      "**E) $\\text{K5}\\in B\\setminus A$.**  (true)\n\nK5 is promoted but not in aisle A. The claim is **true**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 10,
+    "solution_overview": "The sets record aisle-A and promotional SKUs.\n\n**Part 1: Setup.**\n$A\\cap B=\\{\\text{K3},\\text{K4}\\}$, $A\\setminus B=\\{\\text{K1},\\text{K2}\\}$, and $B\\setminus A=\\{\\text{K5}\\}$.\n\n**Part 3: Solve.**\n**1.** TRUE. **2.** FALSE. **3.** TRUE. **4.** FALSE: set difference is directional. **5.** TRUE.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  },
+  {
+    "id": "math-1-41",
+    "case_id": "MATH 1.41",
+    "title": "Lab sample screening",
+    "subsection": "1.2",
+    "context": "The universe is $U=\\{S1,S2,S3,S4,S5,S6\\}$. Let $P=\\{S1,S3,S4\\}$ be samples that passed an initial screen.",
+    "statements": ["$P^c=\\{S2,S5,S6\\}$.", "$S4\\in P^c$.", "$P\\cup P^c=U$.", "$P\\cap P^c=\\{S2\\}$.", "$(P^c)^c=P$."],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "**A) $P^c=\\{S2,S5,S6\\}$.**  (true)\n\nThe complement contains every universe element not in $P$. The claim is **true**.",
+      "**B) $S4\\in P^c$.**  (false)\n\nS4 passed, so $S4\\in P$, not $P^c$. The claim is **false**.",
+      "**C) $P\\cup P^c=U$.**  (true)\n\nA set and its complement cover the universe. The claim is **true**.",
+      "**D) $P\\cap P^c=\\{S2\\}$.**  (false)\n\nNo sample can be both in a set and outside it; the intersection is $\\varnothing$. The claim is **false**.",
+      "**E) $(P^c)^c=P$.**  (true)\n\nTaking the complement twice returns the original set. The claim is **true**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 11,
+    "solution_overview": "Complements are taken relative to $U$.\n\n**Part 1: Setup.**\n$P^c=\\{S2,S5,S6\\}$. Also $P\\cup P^c=U$, $P\\cap P^c=\\varnothing$, and $(P^c)^c=P$.\n\n**Part 3: Solve.**\n**1.** TRUE. **2.** FALSE. **3.** TRUE. **4.** FALSE. **5.** TRUE.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  },
+  {
+    "id": "math-1-42",
+    "case_id": "MATH 1.42",
+    "title": "Camera coverage zones",
+    "subsection": "1.2",
+    "context": "In the set $U$ of all gallery zones, $A$ is the set covered by camera Alpha and $B$ is the set covered by camera Beta.",
+    "statements": ["$(A\\cup B)^c=A^c\\cap B^c$.", "$(A\\cap B)^c=A^c\\cap B^c$.", "A zone in $(A\\cup B)^c$ is covered by neither camera.", "A zone in $A^c\\cup B^c$ is covered by neither camera.", "$(A\\cap B)^c=A^c\\cup B^c$."],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "**A) $(A\\cup B)^c=A^c\\cap B^c$.**  (true)\n\nThis is De Morgan's law for a union. The claim is **true**.",
+      "**B) $(A\\cap B)^c=A^c\\cap B^c$.**  (false)\n\nThe complement of an intersection uses $\\cup$, not $\\cap$. The claim is **false**.",
+      "**C) A zone in $(A\\cup B)^c$ is covered by neither camera.**  (true)\n\nBeing outside the union means outside both coverages. The claim is **true**.",
+      "**D) A zone in $A^c\\cup B^c$ is covered by neither camera.**  (false)\n\nThis set includes zones missed by at least one camera, including zones covered by the other. The claim is **false**.",
+      "**E) $(A\\cap B)^c=A^c\\cup B^c$.**  (true)\n\nThis is the second De Morgan law. The claim is **true**."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 12,
+    "solution_overview": "Camera coverage is modeled by sets $A$ and $B$ in universe $U$.\n\n**Part 1: Key facts.**\nDe Morgan's laws are $$(A\\cup B)^c=A^c\\cap B^c$$ and $$(A\\cap B)^c=A^c\\cup B^c.$$ \n\n**Part 3: Solve.**\n**1.** TRUE. **2.** FALSE: it uses the wrong connective. **3.** TRUE. **4.** FALSE: the union means missed by at least one. **5.** TRUE.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  },
+  {
+    "id": "math-1-43",
+    "case_id": "MATH 1.43",
+    "title": "T-shirt size and colour choices",
+    "subsection": "1.2",
+    "context": "A shop offers sizes $S=\\{\\text{small},\\text{medium},\\text{large}\\}$ and colours $C=\\{\\text{navy},\\text{coral}\\}$.",
+    "statements": ["$|S\\times C|=6$.", "$(\\text{medium},\\text{coral})\\in S\\times C$.", "$(\\text{navy},\\text{large})\\in S\\times C$.", "$S\\times C=C\\times S$.", "$|C\\times S|=6$."],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "**A) $|S\\times C|=6$.**  (true)\n\nThere are $3\\cdot2=6$ ordered choices. The claim is **true**.",
+      "**B) $(\\text{medium},\\text{coral})\\in S\\times C$.**  (true)\n\nThe first coordinate is a size and the second is a colour. The claim is **true**.",
+      "**C) $(\\text{navy},\\text{large})\\in S\\times C$.**  (false)\n\nThe coordinate order is reversed. The claim is **false**.",
+      "**D) $S\\times C=C\\times S$.**  (false)\n\nThe counts agree, but their ordered pairs have different coordinate order. The claim is **false**.",
+      "**E) $|C\\times S|=6$.**  (true)\n\n$|C\\times S|=2\\cdot3=6$. The claim is **true**."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 13,
+    "solution_overview": "The first coordinate of $S\\times C$ is a size; the second is a colour.\n\n**Part 1: Setup.**\n$|S\\times C|=3\\cdot2=6$, while $(\\text{navy},\\text{large})$ has reversed coordinates.\n\n**Part 3: Solve.**\n**1.** TRUE. **2.** TRUE. **3.** FALSE. **4.** FALSE. **5.** TRUE.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  },
+  {
+    "id": "math-1-44",
+    "case_id": "MATH 1.44",
+    "title": "Newsletter list mismatch",
+    "subsection": "1.2",
+    "context": "Let $P=\\{\\text{Inez},\\text{Jamal},\\text{Kara},\\text{Luca}\\}$ be the print-newsletter list and $E=\\{\\text{Jamal},\\text{Luca},\\text{Mei}\\}$ be the email-newsletter list.",
+    "statements": ["$P\\mathbin{\\triangle}E=\\{\\text{Inez},\\text{Kara},\\text{Mei}\\}$.", "$\\text{Jamal}\\in P\\mathbin{\\triangle}E$.", "$P\\mathbin{\\triangle}E=(P\\setminus E)\\cup(E\\setminus P)$.", "$P\\cap E\\subseteq P\\mathbin{\\triangle}E$.", "$|P\\mathbin{\\triangle}E|=3$."],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "**A) $P\\mathbin{\\triangle}E=\\{\\text{Inez},\\text{Kara},\\text{Mei}\\}$.**  (true)\n\nThese subscribers are on exactly one list. The claim is **true**.",
+      "**B) $\\text{Jamal}\\in P\\mathbin{\\triangle}E$.**  (false)\n\nJamal is on both lists, which symmetric difference excludes. The claim is **false**.",
+      "**C) $P\\mathbin{\\triangle}E=(P\\setminus E)\\cup(E\\setminus P)$.**  (true)\n\nThis is the definition of symmetric difference. The claim is **true**.",
+      "**D) $P\\cap E\\subseteq P\\mathbin{\\triangle}E$.**  (false)\n\nThe intersection and symmetric difference are disjoint. The claim is **false**.",
+      "**E) $|P\\mathbin{\\triangle}E|=3$.**  (true)\n\nThe three one-list subscribers are Inez, Kara, and Mei. The claim is **true**."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 14,
+    "solution_overview": "Symmetric difference keeps subscribers on exactly one list.\n\n**Part 1: Setup.**\n$P\\setminus E=\\{\\text{Inez},\\text{Kara}\\}$ and $E\\setminus P=\\{\\text{Mei}\\}$, so $P\\triangle E$ has three members.\n\n**Part 3: Solve.**\n**1.** TRUE. **2.** FALSE. **3.** TRUE. **4.** FALSE. **5.** TRUE.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  },
+  {
+    "id": "math-1-45",
+    "case_id": "MATH 1.45",
+    "title": "Day and night cohorts",
+    "subsection": "1.2",
+    "context": "A training programme has 28 day-cohort students in set $D$ and 22 night-cohort students in set $N$. Each student chooses exactly one cohort.",
+    "statements": ["$D\\cap N=\\varnothing$.", "$|D\\cup N|=50$.", "$D\\setminus N=D\\cup N$.", "$D\\cap N\\subseteq D$ contains 28 students.", "$D\\mathbin{\\triangle}N=D\\cup N$."],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "**A) $D\\cap N=\\varnothing$.**  (true)\n\nNo student can be in both exclusive cohorts. The claim is **true**.",
+      "**B) $|D\\cup N|=50$.**  (true)\n\nDisjoint sets add: $28+22=50$. The claim is **true**.",
+      "**C) $D\\setminus N=D\\cup N$.**  (true)\n\nSince $D$ and $N$ are disjoint, $D\\setminus N=D$, not their union. This statement is therefore **false**.",
+      "**D) $D\\cap N\\subseteq D$ contains 28 students.**  (false)\n\nThe intersection is empty and contains zero students. The claim is **false**.",
+      "**E) $D\\mathbin{\\triangle}N=D\\cup N$.**  (true)\n\nFor disjoint sets, every union member is in exactly one set. The claim is **true**."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 15,
+    "solution_overview": "The cohorts are mutually exclusive.\n\n**Part 1: Setup.**\n$D\\cap N=\\varnothing$, $|D\\cup N|=28+22=50$, $D\\setminus N=D$, and $D\\triangle N=D\\cup N$.\n\n**Part 3: Solve.**\n**1.** TRUE. **2.** TRUE. **3.** FALSE: the difference is $D$. **4.** FALSE. **5.** TRUE.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  },
+  {
+    "id": "math-1-46",
+    "case_id": "MATH 1.46",
+    "title": "Helpdesk response criteria",
+    "subsection": "1.2",
+    "context": "In the universe $U$ of helpdesk tickets, $R$ is the set answered within one hour and $S$ is the set receiving a satisfaction rating of at least 4.",
+    "statements": ["$(R\\cap S)^c=R^c\\cup S^c$.", "A ticket in $(R\\cap S)^c$ failed at least one of the two criteria.", "$(R\\cap S)^c=R^c\\cap S^c$.", "A ticket in $R^c\\cup S^c$ failed both criteria.", "$R\\cap S\\subseteq R$."],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "**A) $(R\\cap S)^c=R^c\\cup S^c$.**  (true)\n\nThis is De Morgan's law. The claim is **true**.",
+      "**B) A ticket in $(R\\cap S)^c$ failed at least one of the two criteria.**  (true)\n\nIt is not simultaneously in $R$ and $S$. The claim is **true**.",
+      "**C) $(R\\cap S)^c=R^c\\cap S^c$.**  (false)\n\nThe right side means failed both, which is too restrictive. The claim is **false**.",
+      "**D) A ticket in $R^c\\cup S^c$ failed both criteria.**  (false)\n\nA union means failed at least one criterion. The claim is **false**.",
+      "**E) $R\\cap S\\subseteq R$.**  (true)\n\nEvery ticket meeting both criteria meets the response-time criterion. The claim is **true**."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 16,
+    "solution_overview": "The ticket conditions are represented by $R$ and $S$.\n\n**Part 1: Key facts.**\n$$(R\\cap S)^c=R^c\\cup S^c.$$ Thus failure of the combined condition means failure of at least one condition.\n\n**Part 3: Solve.**\n**1.** TRUE. **2.** TRUE. **3.** FALSE. **4.** FALSE. **5.** TRUE.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  },
+  {
+    "id": "math-1-47",
+    "case_id": "MATH 1.47",
+    "title": "Maps and music app users",
+    "subsection": "1.2",
+    "context": "Among 150 commuters, $|M|=92$ use a maps app, $|Q|=67$ use a music app, and $|M\\cap Q|=41$ use both.",
+    "statements": ["$|M\\cup Q|=118$.", "51 commuters use only a maps app.", "26 commuters use only a music app.", "32 commuters use neither app.", "$|M\\mathbin{\\triangle}Q|=77$."],
+    "answer_key": [true, true, true, true, true],
+    "tactical_explanations": [
+      "**A) $|M\\cup Q|=118$.**  (true)\n\nInclusion-exclusion gives $92+67-41=118$. The claim is **true**.",
+      "**B) 51 commuters use only a maps app.**  (true)\n\n$92-41=51$. The claim is **true**.",
+      "**C) 26 commuters use only a music app.**  (true)\n\n$67-41=26$. The claim is **true**.",
+      "**D) 32 commuters use neither app.**  (true)\n\n$150-118=32$. The claim is **true**.",
+      "**E) $|M\\mathbin{\\triangle}Q|=77$.**  (false)\n\nThe symmetric difference is $51+26=77$, so the claim is **true**."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 17,
+    "solution_overview": "The survey gives two overlapping app-user sets.\n\n**Part 1: Formula / Key facts.**\n$$|M\\cup Q|=|M|+|Q|-|M\\cap Q|=92+67-41=118.$$ \n\n**Part 3: Solve.**\nOnly maps $=51$, only music $=26$, neither $=150-118=32$, and $|M\\triangle Q|=51+26=77$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  },
+  {
+    "id": "math-1-48",
+    "case_id": "MATH 1.48",
+    "title": "Course enrolment overlap",
+    "subsection": "1.2",
+    "context": "At a college, 84 students take Statistics ($S$), 73 take Programming ($P$), 29 take both, and 140 students were surveyed.",
+    "statements": ["$|S\\cup P|=128$.", "55 students take Statistics only.", "44 students take Programming only.", "12 students take neither course.", "$|S\\cap P|=17$."],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "**A) $|S\\cup P|=128$.**  (true)\n\n$84+73-29=128$. The claim is **true**.",
+      "**B) 55 students take Statistics only.**  (true)\n\n$84-29=55$. The claim is **true**.",
+      "**C) 44 students take Programming only.**  (true)\n\n$73-29=44$. The claim is **true**.",
+      "**D) 12 students take neither course.**  (true)\n\nSince 128 students take at least one course, $140-128=12$ take neither. The claim is **true**.",
+      "**E) $|S\\cap P|=17$.**  (false)\n\nThe overlap is explicitly 29. The claim is **false**."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 18,
+    "solution_overview": "Use inclusion-exclusion on the two course sets.\n\n**Part 1: Setup.**\n$|S\\cup P|=84+73-29=128$, so Statistics-only is 55 and Programming-only is 44. Of the 140 surveyed students, $140-128=12$ take neither course.\n\n**Part 3: Solve.**\n**1.** TRUE. **2.** TRUE. **3.** TRUE. **4.** TRUE. **5.** FALSE.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  },
+  {
+    "id": "math-1-49",
+    "case_id": "MATH 1.49",
+    "title": "Support ticket tags",
+    "subsection": "1.2",
+    "context": "Among 80 support tickets, 38 have tag $U$ (urgent), 31 have tag $B$ (billing), 24 have tag $L$ (login). Also $|U\\cap B|=12$, $|U\\cap L|=9$, $|B\\cap L|=7$, and $|U\\cap B\\cap L|=4$.",
+    "statements": ["$|U\\cup B\\cup L|=69$.", "Exactly 4 tickets have all three tags.", "Exactly 8 tickets have urgent and billing tags but not the login tag.", "The sum $|U\\cap B|+|U\\cap L|+|B\\cap L|$ counts each three-tag ticket three times.", "11 tickets have no listed tag."],
+    "answer_key": [true, true, true, true, true],
+    "tactical_explanations": [
+      "**A) $|U\\cup B\\cup L|=69$.**  (true)\n\n$38+31+24-12-9-7+4=69$. The claim is **true**.",
+      "**B) Exactly 4 tickets have all three tags.**  (true)\n\nThis is given as $|U\\cap B\\cap L|=4$. The claim is **true**.",
+      "**C) Exactly 8 tickets have urgent and billing tags but not the login tag.**  (true)\n\nRemove the four triple-tag tickets: $12-4=8$. The claim is **true**.",
+      "**D) The sum $|U\\cap B|+|U\\cap L|+|B\\cap L|$ counts each three-tag ticket three times.**  (true)\n\nA triple-tag ticket belongs to all three pairwise intersections. The claim is **true**.",
+      "**E) 11 tickets have no listed tag.**  (true)\n\n$80-69=11$. The claim is **true**."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 19,
+    "solution_overview": "Three tags require three-set inclusion-exclusion.\n\n**Part 1: Formula / Key facts.**\n$$|U\\cup B\\cup L|=|U|+|B|+|L|-|U\\cap B|-|U\\cap L|-|B\\cap L|+|U\\cap B\\cap L|=69.$$ \n\n**Part 3: Solve.**\nThe all-three region is 4; urgent-and-billing only is $12-4=8$; and untagged tickets total $80-69=11$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE",
+    "source_pdf_num": null,
+    "needs_polish": false
+  }
+]

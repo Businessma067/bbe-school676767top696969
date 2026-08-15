@@ -1,0 +1,17 @@
+STM_BLOCK FOUND: True
+----
+a) Rider P qualifies for the discount.
+b) Rider Q, who is 67, has a qualifying disability, but earns $50,000, does NOT qualify for the discount because 
+the income exceeds $20,000.
+c) Having an income above $20,000 automatically disqualifies a senior rider from the discount, even if they 
+have a qualifying disability.
+d) There exists a scenario where a 70-year-old rider with no disability and an income of $25,000 would NOT 
+qualify for the discount.
+e) Age alone (being at least 65) is a sufficient condition for receiving the discount, regardless of disability or 
+income status.
+----
+a: matched=True -> 'Rider P qualifies for the discount.'
+b: matched=True -> 'Rider Q, who is 67, has a qualifying disability, but earns $50,000, does NOT qualify for the discount because \nthe income exceeds $20,000.'
+c: matched=True -> 'Having an income above $20,000 automatically disqualifies a senior rider from the discount, even if they \nhave a qualifying disability.'
+d: matched=True -> 'There exists a scenario where a 70-year-old rider with no disability and an income of $25,000 would NOT \nqualify for the discount.'
+e: matched=False -> None

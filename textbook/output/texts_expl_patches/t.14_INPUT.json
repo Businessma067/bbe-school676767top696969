@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.14",
+  "title": "The Alien Mind — Cognition and Camouflage in Octopuses",
+  "passage": "(1) Octopuses possess roughly 500 million neurons, a number comparable to that of some small mammals, yet their nervous system is organised in a way strikingly unlike anything found among vertebrates. Rather than concentrating computational power inside a single centralised brain, approximately two-thirds of an octopus's neurons reside within its eight arms themselves, allowing each arm to process sensory information and initiate movement with a surprising degree of independence from the central brain.\n\n(2) This distributed arrangement raises a genuinely strange possibility: an amputated octopus arm, still connected to its own local neural cluster, can continue reaching toward and grasping food for a brief period after separation from the body, suggesting that at least some forms of goal-directed behaviour do not strictly require centralised, brain-level control at all.\n\n(3) Equally remarkable is the octopus's capacity for rapid camouflage. Specialised skin cells called chromatophores, controlled directly by the nervous system rather than through slower hormonal signalling, allow an octopus to shift its skin colour and pattern within roughly 200 milliseconds, faster than the blink of a human eye.\n\n(4) Beneath these chromatophores lie additional layers called iridophores and leucophores, which manipulate light reflection and scattering to produce effects chromatophore pigment alone cannot achieve, including a convincing imitation of coarse, rocky texture despite the animal's actual skin remaining physically smooth throughout the transformation.\n\n(5) Because octopuses are colour-blind, possessing only a single type of photoreceptor rather than the multiple types most colour-sighted animals rely on, researchers have long debated how they achieve camouflage so precisely matched to their surroundings' actual colouration. One influential hypothesis, still not conclusively confirmed, proposes that specialised photoreceptors distributed across the animal's own skin allow it to sense colour indirectly through the skin itself, entirely independent of its eyes.\n\n(6) Laboratory studies have documented additional cognitive feats difficult to reconcile with a simple, reflexive nervous system. Several octopuses have been recorded unscrewing jar lids to reach food sealed inside, navigating multi-chambered mazes successfully, and, in at least one widely cited case, deliberately squirting water at laboratory lighting fixtures repeatedly until an irritated researcher finally disconnected the offending light entirely.\n\n(7) Such capabilities appear especially puzzling given that most octopus species live for only one to two years, an unusually short lifespan for an animal displaying this degree of behavioural sophistication. Females typically die shortly after their eggs hatch, having stopped eating entirely during a prolonged brooding period that can last several months depending on species and water temperature.\n\n(8) Evolutionarily, octopuses diverged from the lineage leading to vertebrates roughly 500 million years ago, making their sophisticated nervous system a product of convergent evolution entirely independent from the evolutionary pathway that produced vertebrate brains, rather than a shared inherited trait refined separately over time.\n\n(9) Whether studying octopus cognition will meaningfully illuminate general principles of how intelligence can arise through fundamentally different neural architectures, or whether their abilities remain too alien in structure to generalise usefully to other forms of intelligence, remains a question actively debated among neuroscientists and comparative psychologists alike.",
+  "tasks": [
+    {
+      "id": "en-t-14-01",
+      "exam_title": "Early Sections",
+      "kind": "reading",
+      "statements": [
+        "Octopuses possess roughly 500 million neurons total.",
+        "Most neurons are concentrated inside the central brain.",
+        "About two-thirds of neurons reside within the arms.",
+        "A severed arm can briefly continue grasping food.",
+        "Arm behaviour always requires central brain control."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Octopuses possess roughly 500 million neurons total.**\n\nParagraph (1) opens with the exact scale of octopus neural hardware: roughly 500 million neurons, a count compared to that of some small mammals. The statement simply restates that total figure; nothing in the sentence invents a different number or a different animal.\n\n**Tip:** When a claim recycles a named quantity from the first sentence of a paragraph, the matching span is almost always the proof.\n\nThe neuron total matches the passage figure, so the claim is true.",
+        "**B) Most neurons are concentrated inside the central brain.**\n\nParagraph (1) contrasts octopus organisation with vertebrates: rather than concentrating computational power in a single centralised brain, about two-thirds of the neurons sit in the arms. Saying \"most\" live in the central brain flips that architecture.\n\n**Trap:** \"Comparable to mammals\" can tempt you toward a mammal-style brain story; the text rejects that layout.\n\nThe claim reverses the passage's distributed layout, so it fails.",
+        "**C) About two-thirds of neurons reside within the arms.**\n\nThe same opening paragraph states that approximately two-thirds of an octopus's neurons reside within its eight arms, which is exactly what \"about two-thirds… within the arms\" paraphrases. The wording is faithful to both the proportion and the location.\n\nThat proportion is stated outright in paragraph (1), so the statement holds.",
+        "**D) A severed arm can briefly continue grasping food.**\n\nParagraph (2) describes an amputated arm that, still linked to its local neural cluster, can keep reaching toward and grasping food for a brief period after separation. \"Severed\" and \"amputated\" name the same event; \"briefly\" mirrors \"for a brief period.\"\n\nThe severed-arm behaviour is described in those terms, so the claim matches the passage.",
+        "**E) Arm behaviour always requires central brain control.**\n\nParagraph (2) draws the opposite lesson: the amputated-arm episode suggests that at least some goal-directed behaviour does not strictly require centralised, brain-level control. The absolute \"always\" collapses that nuance into a universal rule the text denies.\n\n**Trap:** Extreme words like always / never often fail when the text offers even one counterexample.\n\nThe passage says some arm behaviour need not depend on the central brain, so the absolute claim fails."
+      ],
+      "highlights": [
+        "Octopuses possess roughly 500 million neurons, a number comparable to that of some small mammals",
+        "Rather than concentrating computational power inside a single centralised brain, approximately two-thirds of an octopus's neurons reside within its eight arms",
+        "approximately two-thirds of an octopus's neurons reside within its eight arms themselves",
+        "an amputated octopus arm, still connected to its own local neural cluster, can continue reaching toward and grasping food for a brief period after separation from the body",
+        "at least some forms of goal-directed behaviour do not strictly require centralised, brain-level control at all"
+      ]
+    },
+    {
+      "id": "en-t-14-02",
+      "exam_title": "Middle Sections",
+      "kind": "reading",
+      "statements": [
+        "Chromatophores are controlled via slow hormonal signalling.",
+        "Colour shifts can occur within roughly 200 milliseconds.",
+        "Iridophores help produce effects pigment alone cannot.",
+        "Octopus skin becomes physically rough during texture mimicry.",
+        "Octopuses possess multiple types of colour photoreceptors."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Chromatophores are controlled via slow hormonal signalling.**\n\nParagraph (3) says specialised skin cells called chromatophores are controlled directly by the nervous system rather than through slower hormonal signalling. The statement swaps the actual control route for the slower pathway the text explicitly rejects.\n\n**Trap:** The phrase \"slower hormonal signalling\" appears in the text as a contrast, not as the mechanism in use.\n\nNervous-system control, not hormonal signalling, is what the passage names, so the claim fails.",
+        "**B) Colour shifts can occur within roughly 200 milliseconds.**\n\nThe same camouflage paragraph states that an octopus can shift its skin colour and pattern within roughly 200 milliseconds — faster than a human blink. The statement lifts that timing figure without exaggeration.\n\nThe 200-millisecond figure is stated directly, so the claim is true.",
+        "**C) Iridophores help produce effects pigment alone cannot.**\n\nParagraph (4) places iridophores and leucophores beneath the chromatophores and says they manipulate light reflection and scattering to produce effects chromatophore pigment alone cannot achieve. Credit to iridophores for those extra optical effects follows the text.\n\nIridophores are named for precisely that role, so the statement holds.",
+        "**D) Octopus skin becomes physically rough during texture mimicry.**\n\nParagraph (4) stresses that the animal can imitate coarse, rocky texture while its actual skin remains physically smooth throughout the transformation. Physical roughness of the skin is exactly what the passage rules out.\n\n**Trap:** Visual texture mimicry is not the same as a change in skin surface geometry.\n\nThe skin stays smooth, so the roughness claim fails.",
+        "**E) Octopuses possess multiple types of colour photoreceptors.**\n\nParagraph (5) opens by calling octopuses colour-blind and stating they possess only a single type of photoreceptor, unlike colour-sighted animals that rely on multiple types. \"Multiple types\" is the vertebrate contrast, not the octopus fact.\n\nOnly one photoreceptor type is attributed to octopuses, so the claim fails."
+      ],
+      "highlights": [
+        "controlled directly by the nervous system rather than through slower hormonal signalling",
+        "shift its skin colour and pattern within roughly 200 milliseconds, faster than the blink of a human eye",
+        "manipulate light reflection and scattering to produce effects chromatophore pigment alone cannot achieve",
+        "despite the animal's actual skin remaining physically smooth throughout the transformation",
+        "possessing only a single type of photoreceptor rather than the multiple types most colour-sighted animals rely on"
+      ]
+    },
+    {
+      "id": "en-t-14-03",
+      "exam_title": "Later Sections",
+      "kind": "reading",
+      "statements": [
+        "Octopuses have unscrewed jar lids for food.",
+        "Most octopus species live for several decades.",
+        "Females typically die shortly after eggs hatch.",
+        "Octopuses diverged from vertebrates roughly 500 million years ago.",
+        "Their nervous system shares direct inherited vertebrate ancestry."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Octopuses have unscrewed jar lids for food.**\n\nParagraph (6) lists laboratory feats that include several octopuses recorded unscrewing jar lids to reach food sealed inside. The statement is a clean paraphrase of that documented behaviour.\n\nJar-lid opening for food is explicitly recorded, so the claim matches the passage.",
+        "**B) Most octopus species live for several decades.**\n\nParagraph (7) says most octopus species live for only one to two years — an unusually short lifespan. \"Several decades\" stretches that window by orders of magnitude and contradicts the stated range.\n\n**Trap:** Impressive cognition can make a long lifespan feel \"natural\"; the numbers say otherwise.\n\nOne-to-two-year lives overturn the decades claim, so it fails.",
+        "**C) Females typically die shortly after eggs hatch.**\n\nThe same lifespan paragraph states that females typically die shortly after their eggs hatch, after stopping eating during a prolonged brooding period. The statement tracks that typical pattern.\n\nFemale mortality after hatching is stated directly, so the claim holds.",
+        "**D) Octopuses diverged from vertebrates roughly 500 million years ago.**\n\nParagraph (8) places the evolutionary split: octopuses diverged from the lineage leading to vertebrates roughly 500 million years ago. The quantity and the comparator lineage are both intact in the paraphrase.\n\nThe half-billion-year divergence figure is in the text, so the statement is true.",
+        "**E) Their nervous system shares direct inherited vertebrate ancestry.**\n\nParagraph (8) calls the octopus nervous system a product of convergent evolution entirely independent from the vertebrate brain pathway, \"rather than a shared inherited trait.\" Claiming direct inherited vertebrate ancestry is the model the text rejects.\n\nIndependence via convergent evolution overturns shared ancestry, so the claim fails."
+      ],
+      "highlights": [
+        "Several octopuses have been recorded unscrewing jar lids to reach food sealed inside",
+        "most octopus species live for only one to two years, an unusually short lifespan",
+        "Females typically die shortly after their eggs hatch, having stopped eating entirely during a prolonged brooding period",
+        "octopuses diverged from the lineage leading to vertebrates roughly 500 million years ago",
+        "a product of convergent evolution entirely independent from the evolutionary pathway that produced vertebrate brains, rather than a shared inherited trait"
+      ]
+    },
+    {
+      "id": "en-t-14-04",
+      "exam_title": "Disguised Inference Traps",
+      "kind": "reading",
+      "statements": [
+        "Distributed neurons imply arms can act somewhat independently.",
+        "If arms hold two-thirds of neurons, one-third remains elsewhere.",
+        "Colour-blindness implies precise camouflage cannot possibly occur.",
+        "Short lifespan implies cognitive sophistication requires long-term learning.",
+        "Convergent evolution implies similar traits arose separately, not shared."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Distributed neurons imply arms can act somewhat independently.**\n\nParagraph (1) explains that putting roughly two-thirds of the neurons in the arms lets each arm process sensory information and initiate movement with a surprising degree of independence from the central brain. Paragraph (2) then shows severed-arm grasping that does not require brain-level control. The inference follows those facts rather than leaping past them.\n\nArm-level independence is the direct implication of the distributed layout, so the claim holds.",
+        "**B) If arms hold two-thirds of neurons, one-third remains elsewhere.**\n\nParagraph (1) assigns approximately two-thirds of the neurons to the arms. Arithmetic closes the rest: the remaining one-third must sit outside the arms — chiefly in the central nervous system the paragraph contrasts with. The inference adds no new biological claim beyond that split.\n\n**Tip:** When the text gives a clean fraction, the complementary fraction is usually fair game if nothing else relocates those neurons.\n\nTwo-thirds in the arms leaves one-third elsewhere, so the statement is sound.",
+        "**C) Colour-blindness implies precise camouflage cannot possibly occur.**\n\nParagraph (5) acknowledges colour-blindness and then discusses how octopuses still achieve camouflage precisely matched to surrounding colouration, including a skin-photoreceptor hypothesis. Colour-blindness raises a puzzle; it does not license the absolute \"cannot possibly occur.\"\n\n**Trap:** A genuine research puzzle is not proof of impossibility.\n\nPrecise camouflage is described as real despite colour-blindness, so the impossibility claim fails.",
+        "**D) Short lifespan implies cognitive sophistication requires long-term learning.**\n\nParagraph (7) finds sophisticated behaviour especially puzzling given one-to-two-year lives — the short span is a tension with sophistication, not evidence that sophistication must rest on long-term learning. The \"requires\" leap is the reader's invention.\n\nShort lifespan makes sophistication surprising rather than dependent on long learning, so the inference fails.",
+        "**E) Convergent evolution implies similar traits arose separately, not shared.**\n\nParagraph (8) defines the octopus case as convergent evolution entirely independent of the vertebrate pathway, not a shared inherited trait refined separately. That is exactly what \"arose separately, not shared\" means in this context.\n\nThe passage's own contrast equates convergent evolution with separate origin, so the claim holds."
+      ],
+      "highlights": [
+        "allowing each arm to process sensory information and initiate movement with a surprising degree of independence from the central brain",
+        "approximately two-thirds of an octopus's neurons reside within its eight arms themselves",
+        "researchers have long debated how they achieve camouflage so precisely matched to their surroundings' actual colouration",
+        "Such capabilities appear especially puzzling given that most octopus species live for only one to two years",
+        "a product of convergent evolution entirely independent from the evolutionary pathway that produced vertebrate brains, rather than a shared inherited trait"
+      ]
+    },
+    {
+      "id": "en-t-14-05",
+      "exam_title": "Disguised Cross-Section Synthesis",
+      "kind": "reading",
+      "statements": [
+        "Distributed neurons help explain arm-level independent behaviour.",
+        "Colour-blindness and skin photoreceptors together suggest indirect colour sensing.",
+        "Short lifespan makes complex jar-opening behaviour easier to expect.",
+        "Convergent evolution helps explain why the nervous system differs from vertebrates.",
+        "Chromatophore speed and camouflage precision are entirely unrelated topics."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Distributed neurons help explain arm-level independent behaviour.**\n\nLink paragraph (1)'s arm-resident neurons and local processing with paragraph (2)'s amputated-arm grasping: the distributed architecture is offered precisely as the reason arms can act with surprising independence. The synthesis stays inside what those sections supply.\n\nDistributed neurons are the mechanism the text uses for arm independence, so the claim holds.",
+        "**B) Colour-blindness and skin photoreceptors together suggest indirect colour sensing.**\n\nParagraph (5) pairs colour-blindness (one photoreceptor type) with the still-unconfirmed idea that specialised skin photoreceptors let the animal sense colour indirectly through the skin, independent of the eyes. Reading those two details together is how the hypothesis is framed.\n\n**Tip:** \"Suggest\" is the right verb here — the text calls the idea influential but not conclusively confirmed.\n\nColour-blindness plus skin photoreceptors underwrite the indirect-sensing hypothesis, so the statement is true.",
+        "**C) Short lifespan makes complex jar-opening behaviour easier to expect.**\n\nParagraph (6) presents jar-opening and related feats as cognitive achievements hard to square with a simple nervous system; paragraph (7) then calls such capabilities especially puzzling given the one-to-two-year lifespan. Short life makes the behaviour harder to expect, not easier.\n\n**Trap:** Do not reverse the evaluative force of \"puzzling.\"\n\nThe short lifespan deepens the puzzle rather than easing expectations, so the claim fails.",
+        "**D) Convergent evolution helps explain why the nervous system differs from vertebrates.**\n\nParagraph (1) establishes a layout \"strikingly unlike\" vertebrates; paragraph (8) explains that difference as convergent evolution on an independent pathway rather than shared inheritance. Convergent evolution is the evolutionary account of the structural difference.\n\nIndependent convergent origins account for the unlike architecture, so the synthesis holds.",
+        "**E) Chromatophore speed and camouflage precision are entirely unrelated topics.**\n\nParagraphs (3)–(5) form one camouflage thread: rapid chromatophore shifts, deeper iridophore/leucophore effects, and the puzzle of precise colour matching despite colour-blindness. Speed and precision belong to the same capability story, not to disconnected chapters.\n\nThey sit inside one camouflage discussion, so \"entirely unrelated\" fails."
+      ],
+      "highlights": [
+        "approximately two-thirds of an octopus's neurons reside within its eight arms themselves, allowing each arm to process sensory information and initiate movement with a surprising degree of independence from the central brain",
+        "specialised photoreceptors distributed across the animal's own skin allow it to sense colour indirectly through the skin itself, entirely independent of its eyes",
+        "Such capabilities appear especially puzzling given that most octopus species live for only one to two years, an unusually short lifespan for an animal displaying this degree of behavioural sophistication",
+        "making their sophisticated nervous system a product of convergent evolution entirely independent from the evolutionary pathway that produced vertebrate brains",
+        "Specialised skin cells called chromatophores, controlled directly by the nervous system rather than through slower hormonal signalling, allow an octopus to shift its skin colour and pattern within roughly 200 milliseconds"
+      ]
+    },
+    {
+      "id": "en-t-14-06",
+      "exam_title": "Grammar Rules I",
+      "kind": "grammar",
+      "statements": [
+        "\"Had the arm not been severed, it would have remained attached.\"",
+        "\"Researchers recommended that the lab documents each behaviour.\"",
+        "\"The number of recorded cases continue to grow.\"",
+        "\"Neither the pigment nor the reflection were fully understood.\"",
+        "\"Having observed the pattern, scientists proposed a new theory.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Had the arm not been severed, it would have remained attached.\"**\n\nThis is a third-conditional counterfactual with inversion: Had + past participle opens the if-clause, and would have + past participle carries the unreal past result. The negative not been severed pairs cleanly with the hypothetical remaining attached.\n\n**Tip:** Inversion with Had is a formal stand-in for If the arm had not been severed…\n\nThe inverted third conditional is well formed, so the sentence stands.",
+        "**B) \"Researchers recommended that the lab documents each behaviour.\"**\n\nAfter recommend that, English expects the mandative subjunctive: a bare base verb. Documents is present indicative agreement with lab, so the line should read that the lab document each behaviour.\n\n**Trap:** Ordinary third-person -s feels natural after a singular subject, but recommend that blocks that pattern.\n\nThe subjunctive needs document, not documents, so the wording fails — \"Researchers recommended that the lab document each behaviour.\"",
+        "**C) \"The number of recorded cases continue to grow.\"**\n\nThe grammatical subject is the number, which is singular; of recorded cases is only a prepositional phrase. A singular subject needs continues, not the plural continue.\n\n**Tip:** Contrast the number of (singular verb) with a number of (usually plural verb).\n\nSingular the number cannot take continue, so the line fails — \"The number of recorded cases continues to grow.\"",
+        "**D) \"Neither the pigment nor the reflection were fully understood.\"**\n\nWith neither…nor, the verb typically agrees with the nearer subject. Reflection is singular, so were should be was: Neither the pigment nor the reflection was fully understood.\n\nProximity agreement picks singular was after reflection, so the wording does not hold — \"Neither the pigment nor the reflection was fully understood.\"",
+        "**E) \"Having observed the pattern, scientists proposed a new theory.\"**\n\nThe participle Having observed the pattern correctly attaches to scientists, the subject who did the observing and then proposed the theory. There is no dangling modifier or subject mismatch.\n\nThe participial opener belongs to scientists, so the sentence is sound."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-14-07",
+      "exam_title": "Grammar Rules II",
+      "kind": "grammar",
+      "statements": [
+        "\"No sooner had the lid loosened than the octopus reached inside.\"",
+        "\"The study, along with related trials, were published together.\"",
+        "\"Each of the tested octopuses have solved the maze.\"",
+        "\"By the time results arrive, theories will have already shifted.\"",
+        "\"The samples, which were gathered carefully, reveal consistent behaviour.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"No sooner had the lid loosened than the octopus reached inside.\"**\n\nNo sooner…than requires inversion in the first clause: No sooner had + subject + past participle, then than + the following event. Here had the lid loosened pairs correctly with than the octopus reached inside.\n\n**Tip:** Prefer than (not when) after no sooner.\n\nThe No sooner…than inversion is correct, so the sentence stands.",
+        "**B) \"The study, along with related trials, were published together.\"**\n\nThe head noun is the study; along with related trials is a parenthetical add-on and does not make the subject plural. The verb must be was published, not were published.\n\n**Trap:** Material after along with / as well as / together with often tricks the ear into a plural verb.\n\nSingular study needs was, so the wording fails — \"The study, along with related trials, was published together.\"",
+        "**C) \"Each of the tested octopuses have solved the maze.\"**\n\nEach of takes a singular verb even when a plural noun follows of. Have solved should be has solved: Each of the tested octopuses has solved the maze.\n\nEach demands singular has, so the line does not hold — \"Each of the tested octopuses has solved the maze.\"",
+        "**D) \"By the time results arrive, theories will have already shifted.\"**\n\nBy the time + present-time clause points to a future milestone; will have shifted is future perfect, placing the theories' change before that arrival. The tense pairing matches the deadline logic.\n\nFuture perfect correctly finishes the change before the later point, so the sentence is sound.",
+        "**E) \"The samples, which were gathered carefully, reveal consistent behaviour.\"**\n\nSamples is plural, so the non-restrictive which clause rightly uses were, and the main verb reveal stays plural. Agreement is consistent from relative clause through the main clause.\n\nPlural samples are matched by were and reveal, so the wording holds."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-14-08",
+      "exam_title": "Word Meaning in Context",
+      "kind": "reading",
+      "statements": [
+        "In Paragraph 1, \"centralised\" means gathered into one main location.",
+        "In Paragraph 3, \"specialised\" means generic and unremarkable.",
+        "In Paragraph 5, \"indirectly\" means through a direct, immediate route.",
+        "In Paragraph 6, \"reflexive\" means automatic and unthinking.",
+        "In Paragraph 8, \"convergent\" means arising from a shared ancestor."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In Paragraph 1, \"centralised\" means gathered into one main location.**\n\nParagraph (1) contrasts concentrating computational power inside a single centralised brain with the octopus's distributed arm neurons. In that contrast, centralised means gathered into one main location rather than spread across the arms.\n\nThe surrounding \"single…brain\" contrast supports that sense, so the meaning claim is true.",
+        "**B) In Paragraph 3, \"specialised\" means generic and unremarkable.**\n\nParagraph (3) calls chromatophores specialised skin cells devoted to rapid colour and pattern change. Specialised here means adapted for a particular function; \"generic and unremarkable\" is the opposite of that context.\n\n**Trap:** Do not invent a plain-English antonym when the cell name itself signals a dedicated role.\n\nThe word marks purpose-built cells, not bland ones, so the gloss fails.",
+        "**C) In Paragraph 5, \"indirectly\" means through a direct, immediate route.**\n\nParagraph (5) proposes that skin photoreceptors let the octopus sense colour indirectly through the skin, entirely independent of its eyes. Indirectly means through a non-eye, roundabout route — not a direct, immediate one.\n\nThe claimed gloss reverses the adverb, so the meaning claim fails.",
+        "**D) In Paragraph 6, \"reflexive\" means automatic and unthinking.**\n\nParagraph (6) says cognitive feats are difficult to reconcile with a simple, reflexive nervous system. Paired with simple, reflexive points to automatic, unthinking responses — the foil for jar-opening and maze skill.\n\nThat contrast locks in the automatic sense, so the gloss holds.",
+        "**E) In Paragraph 8, \"convergent\" means arising from a shared ancestor.**\n\nParagraph (8) contrasts convergent evolution with \"a shared inherited trait\": the octopus pathway is independent of vertebrates. Convergent here means similar traits arising separately, not from a shared ancestor.\n\n**Trap:** \"Convergent\" sounds like \"coming together,\" but here it opposes shared ancestry.\n\nThe passage denies shared inheritance, so that gloss fails."
+      ],
+      "highlights": [
+        "Rather than concentrating computational power inside a single centralised brain",
+        "Specialised skin cells called chromatophores, controlled directly by the nervous system rather than through slower hormonal signalling",
+        "allow it to sense colour indirectly through the skin itself, entirely independent of its eyes",
+        "difficult to reconcile with a simple, reflexive nervous system",
+        "a product of convergent evolution entirely independent from the evolutionary pathway that produced vertebrate brains, rather than a shared inherited trait"
+      ]
+    },
+    {
+      "id": "en-t-14-09",
+      "exam_title": "Word Meaning in Context II",
+      "kind": "reading",
+      "statements": [
+        "In Paragraph 2, \"amputated\" means surgically or accidentally removed.",
+        "In Paragraph 4, \"manipulate\" means to skilfully influence or control.",
+        "In Paragraph 6, \"reconcile\" means to make consistent or compatible.",
+        "In Paragraph 7, \"brooding\" means actively hunting for new prey.",
+        "In Paragraph 9, \"illuminate\" means to make clearer or better understood."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) In Paragraph 2, \"amputated\" means surgically or accidentally removed.**\n\nParagraph (2) discusses an amputated octopus arm continuing to reach and grasp after separation from the body. In that scene, amputated means the arm has been removed — whether by surgery or accident is secondary to the detachment itself.\n\nRemoval/separation is exactly what the context requires, so the gloss is true.",
+        "**B) In Paragraph 4, \"manipulate\" means to skilfully influence or control.**\n\nIridophores and leucophores \"manipulate light reflection and scattering\" to create effects pigment alone cannot achieve. That is skilful optical control of light, not social trickery.\n\nThe light-control reading fits the optical layering, so the meaning holds.",
+        "**C) In Paragraph 6, \"reconcile\" means to make consistent or compatible.**\n\nThe cognitive feats are \"difficult to reconcile with a simple, reflexive nervous system\" — hard to make those behaviours fit, or sit consistently with, a purely reflexive model. That is the \"make compatible\" sense.\n\nCompatibility with a simple model is what the phrase questions, so the gloss is sound.",
+        "**D) In Paragraph 7, \"brooding\" means actively hunting for new prey.**\n\nParagraph (7) describes a prolonged brooding period during which females stop eating entirely until eggs hatch. Brooding here is egg-guarding, not hunting; the fasting undercuts any \"actively hunting\" reading.\n\n**Trap:** Everyday \"brooding\" (moodiness) and biological brooding (egg care) are both unlike hunting.\n\nEgg-tending, not prey-hunting, is the sense in use, so the gloss fails.",
+        "**E) In Paragraph 9, \"illuminate\" means to make clearer or better understood.**\n\nParagraph (9) asks whether studying octopus cognition will \"meaningfully illuminate general principles\" of how intelligence can arise. Illuminate here is figurative clarification — making principles clearer — not physical lighting.\n\nMaking general principles better understood matches the debate frame, so the claim holds."
+      ],
+      "highlights": [
+        "an amputated octopus arm, still connected to its own local neural cluster, can continue reaching toward and grasping food for a brief period after separation from the body",
+        "which manipulate light reflection and scattering to produce effects chromatophore pigment alone cannot achieve",
+        "cognitive feats difficult to reconcile with a simple, reflexive nervous system",
+        "having stopped eating entirely during a prolonged brooding period that can last several months",
+        "Whether studying octopus cognition will meaningfully illuminate general principles of how intelligence can arise"
+      ]
+    },
+    {
+      "id": "en-t-14-10",
+      "exam_title": "Sneaky Paraphrase Detection",
+      "kind": "vocabulary",
+      "statements": [
+        "A severed arm can still reach for and grab food.",
+        "A severed arm immediately stops moving entirely.",
+        "A detached arm remains capable of grasping food briefly.",
+        "An intact, attached arm can reach toward food normally.",
+        "A removed arm continues performing food-directed movements."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A severed arm can still reach for and grab food.**\n\nThe original says an amputated octopus arm can continue reaching toward and grasping food. Severed ≈ amputated, reach for ≈ reaching toward, and grab ≈ grasping; the paraphrase keeps the same actor and action.\n\nSame arm, same food-directed reaching, so the paraphrase preserves the meaning.",
+        "**B) A severed arm immediately stops moving entirely.**\n\nThe source claim is continued reaching and grasping after amputation, not total stillness. \"Immediately stops moving entirely\" reverses both the motion and the brief persistence of the behaviour.\n\n**Trap:** Absolute stop language is the near-miss false when the text stresses continuation.\n\nContinued grasping overturns total cessation, so this paraphrase fails.",
+        "**C) A detached arm remains capable of grasping food briefly.**\n\nDetached matches amputated/separated, grasping food matches the original action, and briefly reflects paragraph (2)'s \"for a brief period.\" The paraphrase stays faithful while importing that short-duration cue from the same sentence.\n\nCapability plus brief duration both track the passage, so the meaning holds.",
+        "**D) An intact, attached arm can reach toward food normally.**\n\nThe original is about an amputated arm after separation. Shifting to an intact, attached arm quietly changes the subject and drops the surprising post-separation behaviour the sentence exists to report.\n\n**Trap:** A bland true-sounding fact about normal arms is still a wrong paraphrase of this line.\n\nThe intact-arm rewrite abandons the amputated subject, so it does not preserve the meaning.",
+        "**E) A removed arm continues performing food-directed movements.**\n\nRemoved restates amputated, and \"continues performing food-directed movements\" compresses \"continue reaching toward and grasping food\" without adding or contradicting content.\n\nRemoval plus continued food-directed motion match the original, so the paraphrase stands."
+      ],
+      "highlights": [
+        "an amputated octopus arm, still connected to its own local neural cluster, can continue reaching toward and grasping food for a brief period after separation from the body",
+        "can continue reaching toward and grasping food for a brief period after separation from the body",
+        "can continue reaching toward and grasping food for a brief period after separation from the body",
+        "an amputated octopus arm, still connected to its own local neural cluster, can continue reaching toward and grasping food for a brief period after separation from the body",
+        "can continue reaching toward and grasping food for a brief period after separation from the body"
+      ]
+    }
+  ]
+}

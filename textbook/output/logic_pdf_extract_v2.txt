@@ -1,0 +1,2319 @@
+===== PAGE 1 =====
+Chapter 1 — Full Combined Practice Set
+Essentials of Logic and Set Theory — sorted from easiest to hardest
+80 tasks combined from all source files, re-numbered Task 1–80. Grouped first by topic (Set Theory, then Logic), then sorted
+from easiest to hardest within each topic.
+PART I — Set Theory
+Tier 1 — Foundations
+Task 1. Basic operations on explicit sets
+(source: 1-10logic.docx, original Task 1 — difficulty score 1/8)
+Let A = {1, 2, 3, 4, 5}, B = {3, 4, 5, 6, 7}, and C = {5, 6, 7, 8, 9}.
+General Solution: Compute the key sets once: A ∩ B = {3, 4, 5}; A ∪ C covers 1–5 (from A) and 5–9 (from C)
+with no gaps, so A ∪ C = {1,...,9}; A \ C removes only the shared element 5, leaving {1,2,3,4}; and B ∩ C =
+{5,6,7} (nonempty, so B and C are NOT disjoint). Every statement below reduces to comparing against one of these
+four computed sets.
+a) A ∩ B = {3, 4, 5}.
+b) A ∪ C = {1, 2, 3, 4, 5, 6, 7, 8}.
+c) (A ∩ B) ∩ C = {5}.
+d) A \ C = {1, 2, 3}.
+e) B and C are disjoint sets.
+Explanations:
+a) True. The elements common to both A and B are 3, 4, and 5.
+b) False. Trap: A contributes 1–5, C contributes 5–9, so together they cover every integer from 1 to 9 — the
+statement's set stops at 8 and wrongly omits 9, which C contributes.
+c) True. A ∩ B = {3,4,5}; intersecting this with C = {5,6,7,8,9} leaves only the common element 5.
+d) False. A \ C removes from A any elements that are also in C. Only 5 is in both, so A \ C = {1,2,3,4} — the
+statement is missing the element 4.
+e) False. B and C share the elements 5, 6, and 7, so they are not disjoint (disjoint would require B ∩ C = ∅).
+Task 2. Set-builder notation and equality of sets
+(source: 1-10logic.docx, original Task 5 — difficulty score 2/8)
+Let A = {x ∈ Z : x² = 9} (Z = integers) and B = {3, −3}.
+General Solution: Solve x² = 9 over the integers first: the only solutions are x = 3 and x = −3, so A = {3, −3} = B,
+and |A| = 2. Restricting to natural numbers (non-negative) as in set C eliminates −3, leaving C = {3} — a single
+element, not two.
+a) A = B.
+===== PAGE 2 =====
+b) 3 ∈ A.
+c) A = {3} (only the positive root).
+d) |A| = 2.
+e) The set C = {x ∈ N : x² = 9} (N = natural numbers) is equal to {3, −3}.
+Explanations:
+a) True. Both 3 and −3 satisfy x² = 9, and these are the only integer solutions, so A = {3, −3} = B.
+b) True. 3² = 9, so 3 satisfies the defining condition and belongs to A.
+c) False. −3 also satisfies (−3)² = 9 and is an integer, so it must be included in A as well; A has two elements,
+not one.
+d) True. A = {3, −3} has exactly two distinct elements.
+e) False. Natural numbers are non-negative, so −3 ∉ N and is excluded from C. Only 3 qualifies, so C = {3},
+not {3, −3}.
+Task 3. Subsets, elements, and the power set
+(source: 1-10logic.docx, original Task 2 — difficulty score 2/8)
+Let A = {a, b, c}.
+General Solution: A has 3 elements, so |P(A)| = 2³ = 8, and its subsets are ∅, {a}, {b}, {c}, {a,b}, {a,c}, {b,c},
+{a,b,c}. Keep the elements of A (a, b, c) separate from the elements of P(A), which are themselves subsets like {a,b}
+— that distinction, plus the definition of "proper subset" (strictly smaller), resolves every statement below.
+a) The power set of A has 8 elements.
+b) {a, b} is an element of A.
+c) ∅ is a subset of A.
+d) A is a proper subset of A.
+e) There are exactly 3 subsets of A that contain exactly 2 elements.
+Explanations:
+a) True. A set with 3 elements has 2³ = 8 subsets in total, so its power set contains 8 elements.
+b) False. The elements of A are a, b, and c individually. {a,b} is a subset of A, not an element of A —
+confusing “element of” with “subset of” is a common mistake.
+c) True. The empty set is a subset of every set, including A.
+d) False. A proper subset must be strictly smaller than the original set (not equal to it). Since A = A, A is not a
+proper subset of itself.
+e) True. The 2-element subsets are {a,b}, {a,c}, and {b,c} — exactly three of them.
+Task 4
+(source: 0_1-0_10logic.docx, original Task 19 — difficulty score 2/8)
+Context: Let D = {a, b, c}.
+General Solution: |D|=3 ⇒ |P(D)|=2³=8 subsets: ∅,{a},{b},{c},{a,b},{a,c},{b,c},{a,b,c}. Keep straight: ∅⊆D
+(subset) is always true, but ∅∈D (element) is generally false; likewise {a} ⊆D is true but {a} ∈D is false (D's elements
+are a,b,c themselves, not the set {a}).
+Statements (True / False):
+a) ∅ ⊆ D
+b) ∅ ∈ D
+===== PAGE 3 =====
+c) D has exactly 8 subsets
+d) Both {a} ⊆ D and {a} ∈ D are true
+e) D ⊆ D
+Answers & Explanations:
+a) TRUE. By definition, the empty set is a subset of every set, since it has no elements that could violate the
+subset condition.
+b) FALSE. Trap: being a subset (∅ ⊆ D) is different from being an element (∅ ∈ D). D's elements are a, b, and c
+— the empty set is not one of them.
+c) TRUE. A set with n elements has 2ⁿ subsets. Here n = 3, so D has 2³ = 8 subsets: ∅, {a}, {b}, {c}, {a,b},
+{a,c}, {b,c}, {a,b,c}.
+d) FALSE. Trap: {a} ⊆ D is true (a is an element of D, so the set {a} is contained in D), but {a} ∈ D is false —
+D's elements are a, b, c themselves, not the set {a}.
+e) TRUE. Every set is a subset of itself, since every element of D is trivially an element of D.
+Task 5
+(source: 0_1-0_10logic.docx, original Task 21 — difficulty score 2/8)
+Context: Let E = {1, 3, 5, 7} and F = {3, 4, 5, 6}.
+General Solution: Compute both directions separately since \ is NOT commutative: E\F={1,7} (removing 3,5
+shared with F) and F\E={4,6} (removing 3,5 shared with E) — different sets. Their union {1,4,6,7} is the symmetric
+difference E △F, and their intersection is always empty by construction.
+Statements (True / False):
+a) E \ F = {1, 7}
+b) F \ E = {4, 6}
+c) E \ F = F \ E
+d) (E \ F) ∪ (F \ E) = {1, 4, 6, 7}
+e) (E \ F) ∩ (F \ E) = ∅
+Answers & Explanations:
+a) TRUE. Removing from E every element also found in F (3 and 5) leaves {1, 7}.
+b) TRUE. Removing from F every element also found in E (3 and 5) leaves {4, 6}.
+c) FALSE. Trap: set difference is NOT commutative in general. E \ F = {1,7} while F \ E = {4,6} — these are
+different sets, so the equality fails.
+d) TRUE. The union of the two "one-sided" differences, {1,7} ∪ {4,6} = {1,4,6,7}, is exactly the symmetric
+difference E △ F: the elements belonging to exactly one of the two sets.
+e) TRUE. By construction, E \ F contains only elements outside F, and F \ E contains only elements outside E,
+so the two sets can never share an element — their intersection is always empty.
+Task 6. De Morgan's laws with a universal set
+(source: 1-10logic.docx, original Task 4 — difficulty score 2/8)
+Let U = {1, 2, ..., 10} be the universal set, A = {1, 2, 3, 4, 5}, and B = {4, 5, 6, 7, 8}.
+General Solution: Compute once: A ∪ B = {1,...,8}, so (A∪B)ᶜ = {9,10}; A ∩ B = {4,5} (only elements in both),
+so (A∩B)ᶜ = {1,2,3,6,7,8,9,10}. Both De Morgan identities, (A∪B)ᶜ=Aᶜ∩Bᶜ and (A∩B)ᶜ=Aᶜ∪Bᶜ, hold generally and
+can be checked against these two computed values.
+a) (A ∪ B)ᶜ = {9, 10}.
+===== PAGE 4 =====
+b) (A ∪ B)ᶜ = Aᶜ ∩ Bᶜ.
+c) (A ∩ B)ᶜ = Aᶜ ∪ Bᶜ.
+d) A ∩ B = {4, 5, 6}.
+e) (A ∩ B)ᶜ = {1, 2, 3, 4, 5, 9, 10}.
+Explanations:
+a) True. A ∪ B = {1,2,3,4,5,6,7,8}; taking the complement relative to U leaves exactly {9,10}.
+b) True. This is De Morgan's law for sets, and it holds generally — the complement of a union equals the
+intersection of the complements.
+c) True. This is the other De Morgan's law — the complement of an intersection equals the union of the
+complements — and it also holds generally.
+d) False. A ∩ B consists of elements in both sets: only 4 and 5 qualify (6 is in B but not in A), so A ∩ B =
+{4,5}, not {4,5,6}.
+e) False. Since A ∩ B = {4,5}, its complement relative to U is everything else: {1,2,3,6,7,8,9,10}. The set given
+here wrongly includes 4 and 5 and wrongly omits 6, 7, and 8.
+Task 7. Cartesian products
+(source: 1-10logic.docx, original Task 3 — difficulty score 2/8)
+Let A = {1, 2} and B = {x, y, z}.
+General Solution: |A×B| = |A|·|B| = 2·3 = 6 in both directions, but the pairs themselves differ: A×B always has its
+FIRST coordinate from A, while B×A has its first coordinate from B — so (2,x) ∈ A×B but (x,2) ∉ A×B, and A×B
+≠ B×A as sets of pairs even though |A×B| = |B×A|.
+a) |A × B| = 6.
+b) (2, x) ∈ A × B.
+c) (x, 2) ∈ A × B.
+d) A × B = B × A.
+e) The number of elements in B × A equals the number of elements in A × B.
+Explanations:
+a) True. The Cartesian product A × B has |A| × |B| = 2 × 3 = 6 ordered pairs.
+b) True. 2 ∈ A and x ∈ B, so the ordered pair (2,x), with first coordinate from A and second from B, belongs to
+A × B.
+c) False. In A × B, the first coordinate must come from A. Since x ∉ A, the pair (x,2) does not belong to A × B.
+d) False. A × B contains pairs like (2,x) where the first entry is from A; B × A would need its first entry from
+B, so e.g. (2,x) ∉ B × A since 2 ∉ B. The two products contain different pairs in general.
+e) True. Even though the pairs themselves differ, both products contain |A| × |B| = |B| × |A| = 6 elements — the
+counts match even when the sets of pairs don't.
+Task 8
+(source: 0_1-0_10logic.docx, original Task 15 — difficulty score 2/8)
+Context: Let A = {2, 4, 6, 8, 10}, B = {3, 6, 9, 12}, and C = {1, 2, 3, 4, 5}.
+General Solution: Compute once: A∩B={6}; A∪B={2,3,4,6,8,9,10,12} (8 elements); C\A={1,3,5} (only removing
+2,4, shared with A); B\C={6,9,12} (removing 3, the only shared element); A∩C={2,4} (only elements in both).
+Compare each statement below directly against these five reference values.
+Statements (True / False):
+===== PAGE 5 =====
+a) A ∩ B = {6}
+b) A ∪ B has 8 elements
+c) C \ A = {1, 3}
+d) B \ C = {3, 6, 9, 12}
+e) A ∩ C = {2, 4, 6}
+Answers & Explanations:
+a) TRUE. The only element common to both A and B is 6, so A ∩ B = {6}.
+b) TRUE. |A ∪ B| = |A| + |B| − |A ∩ B| = 5 + 4 − 1 = 8. Listing them out: {2,3,4,6,8,9,10,12} — indeed 8
+elements.
+c) FALSE. Trap: C \ A removes from C every element that is also in A. Since 2 and 4 belong to A, they are
+removed — but 5 is NOT in A, so it must stay. The correct result is C \ A = {1, 3, 5}, not {1, 3} as stated; this
+version wrongly drops the surviving element 5.
+d) FALSE. This is the classic trap: B \ C must remove every element of B that also lies in C. Since 3 ∈ C, it
+must be dropped. The correct result is B \ C = {6, 9, 12}, not {3, 6, 9, 12}.
+e) FALSE. Another trap: 6 belongs to A but NOT to C, so it cannot appear in A ∩ C. The correct intersection is
+A ∩ C = {2, 4}.
+Task 9
+(source: 0_11-0_20logic.docx, original Task 57 — difficulty score 2/8)
+Context: In a cohort of 50 students, 30 take Mathematics (set M) and 25 take Economics (set E). The two courses
+share 12 common students, so |M ∩ E| = 12.
+General Solution: By inclusion-exclusion: |M∪E| = 30+25−12 = 43, so 50−43=7 take neither; |M only| =
+30−12=18. Since |M∩E|=12 is less than |E|=25, E is NOT a subset of M (13 Econ-only students exist), and since
+12≠0, M and E are not disjoint.
+Statements (True / False):
+a) |M ∪ E| = 43
+b) The number of students taking neither Mathematics nor Economics is 7
+c) M \ E has 18 students (those taking only Mathematics)
+d) E ⊆ M
+e) M and E are disjoint sets
+Answers & Explanations:
+a) TRUE. |M ∪ E| = |M| + |E| − |M ∩ E| = 30 + 25 − 12 = 43.
+b) TRUE. Out of 50 students, 43 take at least one of the two courses, so 50 − 43 = 7 take neither.
+c) TRUE. M \ E removes the 12 shared students from M's 30, leaving 30 − 12 = 18 students who take only
+Mathematics.
+d) FALSE. Trap: E ⊆ M would require every Economics student to also take Mathematics, i.e. |M ∩ E| = |E| =
+25. But |M ∩ E| = 12 ≠ 25, so 13 Economics students do not take Mathematics — E is not a subset of M.
+e) FALSE. Trap: disjoint sets must have an empty intersection. Here |M ∩ E| = 12 ≠ 0, so M and E overlap and
+are therefore not disjoint.
+Task 10
+(source: 0_11-0_20logic.docx, original Task 59 — difficulty score 2/8)
+Context: Let U = {1, 2, ..., 9}, and let A = {1, 2, 3}, B = {4, 5, 6}, C = {7, 8, 9}.
+===== PAGE 6 =====
+General Solution: A,B,C share no elements pairwise (pairwise disjoint) and together cover all of U, so {A,B,C} is a
+genuine partition. Since A,B are already disjoint, A\B=A (nothing gets removed) — and disjoint sets need NOT be
+empty themselves, only share no elements with each other.
+Statements (True / False):
+a) A, B, and C are pairwise disjoint
+b) {A, B, C} forms a partition of U, since A ∪ B ∪ C = U and the sets are pairwise disjoint
+c) A ∩ B ∩ C = ∅
+d) A \ B = ∅
+e) Since A ∩ B = ∅, it follows that A = ∅ or B = ∅
+Answers & Explanations:
+a) TRUE. No element is shared between any two of A, B, C, since each contains a distinct block of numbers —
+so every pair of sets is disjoint.
+b) TRUE. A ∪ B ∪ C = {1,...,9} = U, and the sets are pairwise disjoint and nonempty, which is exactly the
+definition of a partition of U.
+c) TRUE. Since even just A ∩ B is already empty, intersecting with C cannot add anything, so A ∩ B ∩ C = ∅.
+d) FALSE. Trap: A \ B removes from A only the elements A shares with B. Since A and B are disjoint, nothing
+is removed, so A \ B = A = {1, 2, 3}, which is NOT the empty set.
+e) FALSE. Trap: this is a common misconception. Two nonempty sets can very well be disjoint (share no
+elements) without either one being empty — A = {1,2,3} and B = {4,5,6} are a direct counterexample.
+Tier 2 — Core Practice
+Task 11
+(source: 0_11-0_20logic.docx, original Task 60 — difficulty score 3/8)
+Context: Among U = 12 employees (numbered 1–12), let X = {1,2,3,4,5,6} be those who know Python, and Y =
+{4,5,6,7,8,9} be those who know SQL. Complements are taken relative to U.
+General Solution: Compute once: X∪Y={1,...,9} so (X∪Y)ᶜ={10,11,12}; Xᶜ={7,...,12}, Yᶜ={1,2,3,10,11,12}, so
+Xᶜ∩Yᶜ={10,11,12} (matches De Morgan) and Xᶜ∪Yᶜ={1,2,3,7,8,9,10,11,12} — NOT the smaller {1,2,3,10,11,12},
+a common trap confusing union with intersection.
+Statements (True / False):
+a) Xᶜ = {7, 8, 9, 10, 11, 12}
+b) (X ∪ Y)ᶜ = {10, 11, 12}
+c) Xᶜ ∩ Yᶜ = {10, 11, 12}
+d) (X ∩ Y)ᶜ = Xᶜ ∪ Yᶜ
+e) Xᶜ ∪ Yᶜ = {1, 2, 3, 10, 11, 12}
+Answers & Explanations:
+a) TRUE. Xᶜ is everyone in U not in X, i.e. everyone except employees 1–6: {7,8,9,10,11,12}.
+b) TRUE. X ∪ Y = {1,2,3,4,5,6,7,8,9}, so its complement in U is {10, 11, 12}.
+c) TRUE. Xᶜ = {7,...,12} and Yᶜ = {1,2,3,10,11,12}; their intersection is {10, 11, 12}, matching (X ∪ Y)ᶜ from
+part (b), as De Morgan's law predicts.
+d) TRUE. This is De Morgan's law for the complement of an intersection, and it holds generally, independent
+of this specific example.
+===== PAGE 7 =====
+e) FALSE. Trap: Xᶜ ∪ Yᶜ = {7,8,9,10,11,12} ∪ {1,2,3,10,11,12} = {1,2,3,7,8,9,10,11,12}. The statement's set
+is missing 7, 8, and 9 — it has actually been confused with Xᶜ ∩ Yᶜ from part (c), which produces a different,
+smaller set.
+Task 12
+(source: 0_1-0_10logic.docx, original Task 20 — difficulty score 3/8)
+Context: Let the universal set be U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. Let A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7, 8}, with
+complements taken relative to U.
+General Solution: U={1..10}, A={1..5}, B={4..8}. Compute once: A∪B={1,...,8} so (A∪B)ᶜ={9,10}; A∩B={4,5}
+so (A∩B)ᶜ={1,2,3,6,7,8,9,10}; Aᶜ={6,...,10}, Bᶜ={1,2,3,9,10}, so Aᶜ∩Bᶜ={9,10} and Aᶜ∪Bᶜ={1,2,3,6,7,8,9,10}.
+Match each statement against these reference values — small variations are common traps.
+Statements (True / False):
+a) (A ∪ B)ᶜ = {8, 9, 10}
+b) (A ∩ B)ᶜ = Aᶜ ∪ Bᶜ
+c) Aᶜ ∩ Bᶜ = {6, 7, 8, 9, 10}
+d) (A ∩ B)ᶜ = {1, 2, 3, 6, 7, 8, 9, 10}
+e) Aᶜ ∪ Bᶜ = {1, 2, 3, 9, 10}
+Answers & Explanations:
+a) FALSE. Trap: A ∪ B = {1,2,3,4,5,6,7,8}, so its complement in U is everything left over: {9, 10} — not {8,
+9, 10}. Since 8 ∈ B ⊆ A ∪ B, it cannot also be in the complement.
+b) TRUE. This is exactly De Morgan's law for complements of an intersection, and it holds for any two sets,
+not just this example.
+c) FALSE. Trap: Aᶜ = {6,7,8,9,10} and Bᶜ = {1,2,3,9,10}. Their intersection is only the elements common to
+both, {9, 10} — not the full set {6,7,8,9,10}, which is just Aᶜ by itself.
+d) TRUE. A ∩ B = {4, 5}, so its complement is U with 4 and 5 removed: {1, 2, 3, 6, 7, 8, 9, 10}.
+e) FALSE. Trap: computing Aᶜ ∪ Bᶜ = {6,7,8,9,10} ∪ {1,2,3,9,10} = {1,2,3,6,7,8,9,10} — the statement omits
+6, 7, and 8. This value should equal (A ∩ B)ᶜ from statement (d), not (A ∪ B)ᶜ from statement (a); confusing the
+two is the trap.
+Task 13. Sets defined by inequalities
+(source: 1-10logic.docx, original Task 6 — difficulty score 3/8)
+Let A = {x ∈ R : 1 < x < 5} and B = {x ∈ R : x ≥ 3}.
+General Solution: A = (1,5) and B = [3,∞) as intervals. Overlap them once: A∩B = [3,5) (the tighter bound wins on
+each side), and A∪B = (1,∞) (no gap between the two, since A already reaches past 3). Neither interval contains the
+other — x=2 is in A but not B, and x=10 is in B but not A.
+a) A ⊆ B.
+b) A ∩ B = {x ∈ R : 3 ≤ x < 5}, i.e. the interval [3, 5).
+c) B ⊆ A.
+d) A ∪ B = {x ∈ R : x > 1}, i.e. the interval (1, ∞).
+e) There exists a real number that belongs to A but not to B.
+Explanations:
+a) False. A contains values like x = 2, which satisfies 1 < 2 < 5 but not 2 ≥ 3, so x = 2 ∈ A but x = 2 ∉ B — this
+counterexample shows A is not a subset of B.
+===== PAGE 8 =====
+b) True. Combining both conditions (1 < x < 5 and x ≥ 3), the binding restrictions become 3 ≤ x < 5, exactly
+the interval [3,5).
+c) False. B contains values like x = 10, which is not less than 5, so x = 10 ∈ B but x = 10 ∉ A — B is not a
+subset of A.
+d) True. A covers (1,5) and B covers [3,∞); together every value greater than 1 is covered by one set or the
+other, with no gaps, giving exactly (1,∞).
+e) True. x = 2 satisfies 1 < 2 < 5 (so x ∈ A) but does not satisfy x ≥ 3 (so x ∉ B).
+Task 14. Partitions of a set
+(source: 1-10logic.docx, original Task 9 — difficulty score 3/8)
+Let A = {1, 2, 3, 4, 5, 6}. A partition of A is a collection of nonempty, pairwise disjoint subsets whose union is A.
+General Solution: A valid partition needs blocks that are (1) nonempty, (2) pairwise disjoint, and (3) collectively
+cover every element of A exactly once. Check each candidate against all three: P={{1,2},{3,4},{5,6}} passes; Q
+fails disjointness (3 appears twice); R fails coverage (misses 6). There's no rule tying the number of blocks to |A|.
+a) P = { {1,2}, {3,4}, {5,6} } is a partition of A.
+b) Every partition of a set must have exactly the same number of blocks as the set has elements.
+c) Q = { {1,2,3}, {3,4,5,6} } is a partition of A.
+d) R = { {1,2}, {3,4}, {5} } is a partition of A.
+e) A set with n ≥ 2 elements always has more than one possible partition.
+Explanations:
+a) True. The three blocks are nonempty, pairwise disjoint, and their union {1,2,3,4,5,6} equals A — all
+partition requirements are satisfied.
+b) False. A partition can have any number of blocks, from 1 (the whole set as a single block) up to n (all
+singletons) — there's no requirement that the number of blocks equals |A|, as (a) already shows with 3 blocks
+for 6 elements.
+c) False. The blocks {1,2,3} and {3,4,5,6} both contain the element 3, violating the requirement that blocks be
+pairwise disjoint.
+d) False. The union of R's blocks is {1,2,3,4,5}, which misses the element 6 — the blocks don't cover all of A.
+e) True. For any n ≥ 2, at least two distinct partitions always exist — for example, the single block {A} itself,
+and the partition into all singletons — and these are different whenever n ≥ 2.
+Task 15. Symmetric difference
+(source: 1-10logic.docx, original Task 8 — difficulty score 3/8)
+For two sets, define the symmetric difference AΔB = (A \ B) ∪ (B \ A), the elements belonging to exactly one of the
+two sets. Let A = {1, 2, 3, 4} and B = {3, 4, 5, 6}.
+General Solution: A\B={1,2} and B\A={5,6}, so AΔB = {1,2}∪{5,6} = {1,2,5,6}, with |AΔB|=4. Since A\B and
+B\A are always disjoint from each other, their UNION (not intersection) is the correct formula; and since
+A∩B={3,4} is exactly what AΔB excludes, the two are always disjoint from one another too.
+a) AΔB = {1, 2, 5, 6}.
+b) The symmetric difference can also be written as AΔB = (A \ B) ∩ (B \ A).
+c) A ∩ B ⊆ AΔB.
+d) If A and B are disjoint, then AΔB = A ∪ B.
+e) |AΔB| = |A| + |B| − 2|A ∩ B|.
+===== PAGE 9 =====
+Explanations:
+a) True. A \ B = {1,2} and B \ A = {5,6}; their union is {1,2,5,6}.
+b) False. A \ B and B \ A are always disjoint from each other (one requires being outside B, the other requires
+being inside B), so their intersection is always empty — this can never equal the actual (generally nonempty)
+symmetric difference, and the correct connective is ∪, not ∩.
+c) False. A ∩ B = {3,4}, which by definition is exactly what symmetric difference excludes (it only keeps
+elements in exactly one set) — so A∩B and AΔB are disjoint here, not one contained in the other.
+d) True. If A ∩ B = ∅, then A \ B = A and B \ A = B, so AΔB = A ∪ B.
+e) True. Here |A|=4, |B|=4, |A∩B|=2, giving 4+4−2(2)=4, matching |{1,2,5,6}|=4 — and this identity holds in
+general.
+Task 16. Sales rep to client account coverage
+(source: 36-45logic.docx, original Task 28 — difficulty score 3/8)
+A consulting firm has 5 sales reps and 8 client accounts. A "coverage assignment" is an ordered pair (rep, account)
+meaning that rep is the point of contact for that account. The firm wants to know how many distinct coverage
+assignments are possible, and how the count changes if the team grows.
+General Solution: |Reps×Accounts| = |Reps|·|Accounts| = 5·8 = 40, and this scales directly with team size (6·8=48).
+Ordered-pair convention: (rep,account) ∈ Reps×Accounts requires the FIRST coordinate from Reps and second
+from Accounts — reversing the order breaks the definition, and if either set is empty, the whole product is empty.
+a) The total number of possible (rep, account) pairs is 40.
+b) The pair (Maria, Account 3) is the same coverage assignment as (Account 3, Maria).
+c) If the firm currently has zero client accounts, no coverage assignments can be formed no matter how many
+reps it hires.
+d) In the pair (rep, account), the statement "(Maria, Account 3) belongs to Reps × Accounts" means Maria ∈
+Accounts and Account 3 ∈ Reps.
+e) If the firm hires one more rep (6 reps total) while keeping 8 accounts, the number of possible assignments
+becomes 48.
+Explanations:
+a) True. Each of the 5 reps can be paired with each of the 8 accounts, giving 5 × 8 = 40 possible ordered pairs
+— this is exactly the size of the Cartesian product Reps × Accounts.
+b) False. Ordered pairs respect order and the identity of each coordinate set: (Maria, Account 3) belongs to
+Reps × Accounts, while (Account 3, Maria) would belong to Accounts × Reps — a different set. They are not
+the same object.
+c) True. If Accounts = ∅, then Reps × Accounts = ∅ regardless of how many reps exist, since there is no
+account to pair with any rep. This mirrors the general fact that A × ∅ = ∅ for any set A.
+d) False. By the definition of the Cartesian product, (Maria, Account 3) ∈ Reps × Accounts means Maria ∈
+Reps and Account 3 ∈ Accounts — the statement has the membership reversed.
+e) True. With 6 reps and 8 accounts, the number of ordered pairs is 6 × 8 = 48, confirming the statement
+exactly.
+Task 17. Counting subsets
+(source: 1-10logic.docx, original Task 7 — difficulty score 4/8)
+Let A be a set with |A| = 5.
+===== PAGE 10 =====
+General Solution: With |A|=5: total subsets = 2⁵=32, proper subsets = 32−1=31, nonempty subsets = 32−1=31. By
+binomial coefficients: C(5,4)=5 (not 10 — that's C(5,3) or C(5,2)), and the even-sized subsets total
+C(5,0)+C(5,2)+C(5,4)=1+10+5=16 (not 15).
+a) The number of subsets of A is 32.
+b) The number of proper subsets of A is 31.
+c) The number of subsets of A containing exactly 4 elements is 10.
+d) The number of nonempty subsets of A is 31.
+e) The number of subsets of A containing an even number of elements (0, 2, or 4) is 15.
+Explanations:
+a) True. A set with n elements has 2ⁿ subsets; here 2⁵ = 32.
+b) True. A proper subset excludes only A itself, so 32 − 1 = 31 subsets qualify.
+c) False. The number of 4-element subsets is C(5,4) = 5, not 10 (10 is actually the count for 3-element or 2-
+element subsets, C(5,3)=C(5,2)=10 — a mismatch with the wrong size here).
+d) True. Excluding only the empty set from the 32 total subsets leaves 32 − 1 = 31 nonempty subsets.
+e) False. Summing C(5,0)+C(5,2)+C(5,4) = 1+10+5 = 16, not 15 — the actual count of even-sized subsets is
+16.
+Task 18
+(source: 0_1-0_10logic.docx, original Task 24 — difficulty score 4/8)
+Context: Let A = (0, 10] and B = [5, 15) be intervals of real numbers, treated as sets.
+General Solution: Compute once: A∩B=[5,10] (tightest bounds from each side, both inclusive here); A∪B=(0,15)
+(no gap, open at both outer ends); A\B=(0,5) (removing everything B also covers, i.e. everything ≥5). Test each
+statement — especially boundary points like x=5 and x=10 — directly against these three computed intervals.
+Statements (True / False):
+a) A ∩ B = [5, 10]
+b) A ∪ B = (0, 15]
+c) 10 ∈ A ∩ B
+d) 5 ∈ A \ B
+e) The statement "x ∈ A ⇒ x ∈ B" is true for all x.
+Answers & Explanations:
+a) TRUE. A starts just above 0 and includes up to 10; B starts at 5 and goes up to just below 15. Their overlap
+is all x with 5 ≤ x ≤ 10, i.e. [5, 10].
+b) FALSE. Trap: 15 is not included in B (open at 15) and A doesn't reach 15 at all, so 15 ∉ A ∪ B. The correct
+union is (0, 15), not (0, 15].
+c) TRUE. 10 belongs to A (its closed right endpoint) and to B (since 5 ≤ 10 < 15), so 10 ∈ A ∩ B.
+d) FALSE. Trap: A \ B removes from A everything also in B. Since B includes 5 (closed at 5), the value 5 is
+removed from A, so 5 ∉ A \ B. The correct set is A \ B = (0, 5).
+e) FALSE. Trap: this implication fails for x = 1, which lies in A = (0,10] but not in B = [5,15) since 1 < 5. One
+counterexample is enough to make the universal implication false.
+Tier 3 — Advanced
+===== PAGE 11 =====
+Task 19
+(source: 0_11-0_20logic.docx, original Task 61 — difficulty score 5/8)
+Context: A survey of 150 tourists finds: 80 visited Museum A, 70 visited Museum B, 60 visited Museum C, 30
+visited both A and B, 25 visited both B and C, 20 visited both A and C, and 10 visited all three museums.
+General Solution: With 80/70/60 single visits, 30/25/20 pairwise, 10 triple: |A∪B∪C| = 80+70+60−30−25−20+10
+= 145 (so 150−145=5 visited none); "only A∩B" = 30−10=20; "at least two" = (30−10)+(25−10)+(20−10)+10 = 55.
+Recompute each statement's number carefully — arithmetic slips are the main trap throughout.
+Statements (True / False):
+a) |A ∪ B ∪ C| = 155
+b) The number of tourists who visited none of the three museums is 5
+c) The number who visited exactly A and B (but not C) is 30
+d) The number who visited only Museum A (and no other) equals 80 − 30 − 20 = 30
+e) The number who visited at least two of the three museums is 65
+Answers & Explanations:
+a) FALSE. Trap: by inclusion–exclusion, |A∪B∪C| = 80+70+60 − 30−25−20 + 10 = 210 − 75 + 10 = 145, not
+155 — a simple arithmetic slip.
+b) TRUE. Since 145 out of 150 tourists visited at least one museum, the remaining 150 − 145 = 5 visited none.
+c) FALSE. Trap: "exactly A and B, not C" must remove the triple-overlap from the raw pairwise count: 30 (A
+and B) − 10 (all three) = 20, not the raw 30 — forgetting to subtract the triple overlap is the error here.
+d) FALSE. Trap: this formula forgets to add back the triple overlap. The correct count for "only A" is |A| − |
+A∩B| − |A∩C| + |A∩B∩C| = 80 − 30 − 20 + 10 = 40, not 30.
+e) FALSE. Trap: "at least two" sums each pairwise overlap and subtracts the triple overlap twice: (30 − 10) +
+(25 − 10) + (20 − 10) + 10 = 20+15+10+10 = 55, not 65 — another arithmetic slip.
+Task 20. Frost protection and irrigation
+(source: 36-45logic.docx, original Task 27 — difficulty score 5/8)
+A vineyard defines two conditions for its automated systems. Let A = {T ∈ R : T² < 16} be the set of temperatures (in
+°C) for which grapevines are considered frost-safe, and let B = {T ∈ R : T ≥ −1} be the set of temperatures at which
+the irrigation system is switched on. Note that A is the open interval (−4, 4) and B is the closed-below interval [−1,
+∞).
+General Solution: A=(−4,4) (open) and B=[−1,∞) (closed at −1). Overlap: A∩B=[−1,4) (B's lower bound and A's
+upper bound both bind); union: A∪B=(−4,∞) (no gap, since A already reaches down past −1). Because A is open,
+its complement must include both boundary points: Aᶜ={T≤−4 or T≥4}.
+a) A ∩ B = [−1, 4).
+b) 4 is an element of A ∩ B.
+c) The complement of A in R is {T ∈ R : T < −4 or T > 4}.
+d) A ∪ B is equal to the entire set of real numbers R.
+e) There exists a temperature that is frost-safe (in A) but does not trigger irrigation (not in B).
+Explanations:
+a) True. A ∩ B needs T ≥ −1 (from B) and −4 < T < 4 (from A); combining these, the binding constraints are T
+≥ −1 and T < 4, giving exactly [−1, 4).
+b) False. T = 4 gives T² = 16, which is not strictly less than 16, so 4 is not in A — and therefore not in A ∩ B
+either.
+===== PAGE 12 =====
+c) False. Trap: since A = (−4, 4) is an OPEN interval, it excludes both boundary points −4 and 4 — so both
+must belong to the complement. The correct complement is {T : T ≤ −4 or T ≥ 4} (using ≤ and ≥), not the strict
+version with < and > shown here, which wrongly leaves the two boundary points out of the complement too.
+d) False. A ∪ B = (−4, ∞): every point covered by A or B is greater than −4, and no point ≤ −4 belongs to
+either set. For example, T = −10 is in neither A nor B, so the union is not all of R.
+e) True. Take T = −2: T² = 4 < 16, so −2 ∈ A (frost-safe), but −2 ≥ −1 is false, so −2 ∉ B (irrigation off). This
+is a valid temperature in A but not in B.
+Task 21. Infinite sets and cardinality
+(source: 1-10logic.docx, original Task 10 — difficulty score 6/8)
+Let N = {1, 2, 3, ...} be the natural numbers and E = {2, 4, 6, ...} be the even natural numbers.
+General Solution: f(n)=2n maps N bijectively onto E (every natural number n gives a unique even number 2n, and
+every even number is hit exactly once), so despite E being a proper subset of N (it excludes all odd numbers), E and
+N have the SAME cardinality — the classic infinite-set phenomenon where "proper subset" no longer implies
+"fewer elements."
+a) E is a proper subset of N.
+b) Since E is a proper subset of N, E must have strictly fewer elements than N.
+c) The function f(n) = 2n defines a one-to-one correspondence (bijection) between N and the odd natural
+numbers.
+d) The fact that E ⊊ N yet has the same cardinality as N shows that the finite-set intuition “proper subset ⇒
+fewer elements” does not carry over to infinite sets.
+e) Every infinite subset of N is equal to N itself (contains all the natural numbers).
+Explanations:
+a) True. Every even number is a natural number, so E ⊆ N; and 1 ∈ N but 1 ∉ E, so the inclusion is strict
+(proper).
+b) False. This finite-set intuition fails for infinite sets: f(n)=2n is a bijection between N and E (part c), so
+despite being a proper subset, E has exactly the same cardinality as N, not fewer elements.
+c) False. Trap: f(n) = 2n always produces an EVEN number, so its outputs land in E (the even naturals), never
+in the odd naturals — it cannot possibly be a bijection onto the odd numbers, since it never even reaches them.
+d) True. This is precisely the classical insight (going back to Cantor and earlier to Galileo) that infinite sets can
+be in bijection with a proper subset of themselves, unlike finite sets.
+e) False. Trap: this confuses "same cardinality" with "being the same set." E itself is an infinite subset of N with
+the same cardinality as N, yet E ≠ N — E excludes every odd number, such as 1. Equal cardinality does not
+mean equal as sets.
+Task 22. Customer survey overlap
+(source: 36-45logic.docx, original Task 35 — difficulty score 6/8)
+A market research firm surveys 200 customers. Let A be the set of customers who like Product A, with |A| = 120. Let
+B be the set of customers who like Product B, with |B| = 90. It is found that |A ∩ B| = 50 customers like both
+products.
+General Solution: By inclusion–exclusion: |A∪B| = |A|+|B|−|A∩B| = 120+90−50 = 160, so 200−160=40 like
+neither, and |A only| = |A|−|A∩B| = 120−50=70. Separately, since |A∪B|≤200 always, the counts 120+90=210 alone
+force |A∩B|≥210−200=10 as a guaranteed minimum — the actual value 50 comfortably exceeds this floor.
+a) The number of customers who like at least one of the two products, |A ∪ B|, is 170.
+b) The number of customers who like neither product is 40.
+===== PAGE 13 =====
+c) The number of customers who like only Product A (A but not B) is 90.
+d) A ∩ B ⊆ A.
+e) Since |A| + |B| = 210 exceeds the 200 customers surveyed, this proves that EXACTLY 10 customers like both
+products, with no other value being possible.
+Explanations:
+a) False. Trap: by inclusion–exclusion, |A ∪ B| = |A| + |B| − |A ∩ B| = 120 + 90 − 50 = 160, not 170 — a
+simple arithmetic slip.
+b) True. Out of 200 surveyed customers, 160 like at least one product (part a), so 200 − 160 = 40 like neither.
+c) False. Trap: customers who like only Product A are those in A but excluded from the overlap: |A| − |A ∩ B| =
+120 − 50 = 70, not 90.
+d) True. Every customer who likes both products necessarily likes Product A, so by definition the intersection
+is always a subset of A (and, symmetrically, of B) — this holds for any two sets, not just this survey.
+e) False. Trap: this only forces |A ∩ B| ≥ |A| + |B| − 200 = 210 − 200 = 10, a MINIMUM bound, not an exact
+value. The actual overlap (50, as given) is consistent with, and comfortably exceeds, this minimum — "exactly
+10" overreaches what the bound alone can prove.
+PART II — Logic
+Tier 1 — Foundations
+Task 23
+(source: 0_11-0_20logic.docx, original Task 55 — difficulty score 2/8)
+Context: Let P: "7 is a prime number" and Q: "7 is an even number." (P is true, Q is false.)
+General Solution: With P=true, Q=false fixed: P ∧Q=false, P ∨Q=true, so ¬(P ∧Q)=true and ¬(P ∨Q)=false. Watch
+the connective carefully in each statement — swapping ∧ for ∨ (or vice versa) is the main trap, since ¬P ∨¬Q=true
+(De Morgan) but ¬P ∧¬Q=false (¬P is already false, so any AND with it is false).
+Statements (True / False):
+a) P ∧ Q is true
+b) P ∨ Q is true
+c) ¬(P ∧ Q) is true
+d) ¬P ∧ ¬Q is true
+e) ¬(P ∨ Q) is true
+Answers & Explanations:
+a) FALSE. " ∧" (and) is true only when both parts are true. Since Q ("7 is even") is false, P ∧ Q is false
+regardless of P.
+b) TRUE. " ∨" (or) is true when at least one part is true. Since P ("7 is prime") is true, P ∨ Q is true.
+c) TRUE. Since P ∧ Q is false (see part a), its negation ¬(P ∧ Q) is true.
+d) FALSE. Trap: " ∧" requires BOTH sides true. ¬P is false (since P, "7 is prime," is true), so ¬P ∧ ¬Q is false
+regardless of ¬Q — mixing up ∧ with ∨ flips the answer.
+e) FALSE. Trap: since P ∨ Q is true (see part b), its negation ¬(P ∨ Q) must be false, not true.
+===== PAGE 14 =====
+Tier 2 — Core Practice
+Task 24. Primes greater than 2
+(source: 11-25logic.docx, original Task 15 — difficulty score 3/8)
+Consider the statement: “For every prime number p greater than 2, p is an odd number.”
+General Solution: Every even integer greater than 2 is divisible by 2 and thus composite, so the universal claim
+("every prime >2 is odd") is TRUE; 2 itself is excluded by "greater than 2," so it can't be a counterexample. Watch
+for the converse trap: "all primes>2 are odd" does NOT mean "all odd numbers>2 are prime" (9 is odd, not prime).
+a) The statement is true.
+b) The number 2 is a counterexample to the statement.
+c) The correct negation of the statement is: “There exists a prime number p greater than 2 such that p is even.”
+d) Since all primes greater than 2 are odd, it follows that all odd numbers greater than 2 are prime.
+e) There are infinitely many primes greater than 2.
+Explanations:
+a) True. Any even number greater than 2 is divisible by 2 and hence not prime, so every prime greater than 2
+must be odd.
+b) False. 2 is explicitly excluded by the condition “greater than 2,” so it falls outside the statement's scope and
+cannot serve as a counterexample to it.
+c) True. Negating a “for every p ... p is odd” statement flips the quantifier to “there exists” and negates “odd” to
+“even,” giving exactly this.
+d) False. This confuses the statement with its converse. 9 is odd and greater than 2 but not prime (9 = 3×3), so
+the converse fails.
+e) True. It is a classical theorem (Euclid) that there are infinitely many primes; excluding the single prime 2
+still leaves infinitely many.
+Task 25. University prerequisite chain
+(source: 11-25logic.docx, original Task 14 — difficulty score 3/8)
+A university's rules state: (1) A student may enrol in Advanced Macroeconomics only if they have passed
+Intermediate Macroeconomics. (2) A student may enrol in Intermediate Macroeconomics only if they have passed
+Principles of Economics. Maria is currently enrolled in Advanced Macroeconomics.
+General Solution: Chain the two "only if" rules (each a necessary condition): enrolling in Advanced requires
+having passed Intermediate, which itself requires having passed Principles. Since Maria is enrolled in Advanced,
+working backward through the chain, she must have passed both courses — but nothing in the rules says anything
+about grades.
+a) Maria has passed Intermediate Macroeconomics.
+b) Maria has passed Principles of Economics.
+c) Passing Principles of Economics is a necessary condition for enrolling in Advanced Macroeconomics.
+d) Passing Principles of Economics is a sufficient condition for enrolling in Advanced Macroeconomics.
+e) We may conclude that Maria passed Principles of Economics with a perfect grade.
+Explanations:
+a) True. By rule (1), enrolling in Advanced requires having passed Intermediate; Maria is enrolled in
+Advanced, so she must have passed Intermediate.
+===== PAGE 15 =====
+b) True. Having passed Intermediate implies she was enrolled in it, and by rule (2), that requires having passed
+Principles.
+c) True. Since passing Principles is necessary for Intermediate, and passing Intermediate is necessary for
+Advanced, it is necessary (transitively) for Advanced too.
+d) False. The rules only establish necessary conditions along the chain; passing Principles alone does not
+guarantee meeting the further requirement of Intermediate, so it is not sufficient for Advanced.
+e) False. Nothing in the given information mentions grades at all — we can only conclude that Maria passed,
+not with what grade.
+Task 26
+(source: 0_11-0_20logic.docx, original Task 64 — difficulty score 3/8)
+Context: Let P = {2, 3, 5, 7, 11, 13} (the primes less than 15) and E = {2, 4, 6, 8, 10, 12, 14} (the even numbers
+less than 15).
+General Solution: Compute once: P∩E={2} (the only prime that's also even); P\E={3,5,7,11,13} (removing the
+shared element 2). The universal claim "every element of P is odd" is false (2 is the counterexample), but excluding
+2 specifically ("x ∈P ∧x≠2⇒odd") is true for every remaining prime; P⊄E since most primes are odd and not in E.
+Statements (True / False):
+a) P ∩ E = {2}
+b) P \ E = {3, 5, 7, 11, 13}
+c) " ∀x ∈ P, x is odd" is a true statement
+d) "x ∈ P ∧ x ≠ 2 ⇒ x is odd" is a true statement for all x
+e) P ⊆ E
+Answers & Explanations:
+a) TRUE. The only number that is both prime (in P) and even (in E) is 2, so P ∩ E = {2}.
+b) TRUE. Removing the one shared element (2) from P leaves {3, 5, 7, 11, 13}.
+c) FALSE. Trap: 2 is a prime number, yet it is even, not odd. This single counterexample makes the universal
+claim "every element of P is odd" false.
+d) TRUE. By excluding the special case x = 2 from consideration, the implication correctly holds: every prime
+other than 2 is indeed odd.
+e) FALSE. Trap: for P to be a subset of E, every element of P would need to be even. But 3, 5, 7, 11, 13 ∈ P are
+all odd and not in E, so P ⊄ E.
+Task 27
+(source: 0_1-0_10logic.docx, original Task 17 — difficulty score 3/8)
+Context: Let x be a real number, and let P: "x > 10" and Q: "x > 5."
+General Solution: P:"x>10" and Q:"x>5" satisfy P⇒Q (sufficient) but not the reverse Q⇒P — x=7 is the key
+counterexample (satisfies Q, not P), which simultaneously shows P is not necessary for Q, Q is necessary for P, and
+the two conditions are not equivalent.
+Statements (True / False):
+a) P is a sufficient condition for Q.
+b) P is a necessary condition for Q.
+c) Q is a necessary condition for P.
+d) P and Q are equivalent conditions (P ⇔ Q).
+===== PAGE 16 =====
+e) x = 7 is a counterexample showing that Q does not imply P.
+Answers & Explanations:
+a) TRUE. Whenever x > 10, it is automatically true that x > 5, so P ⇒ Q holds and P is sufficient for Q.
+b) FALSE. Trap: P is not necessary for Q. Take x = 7: Q holds (7 > 5) but P fails (7 is not > 10). So Q can be
+true without P being true.
+c) TRUE. Since P ⇒ Q, Q must be true whenever P is true — this is exactly what it means for Q to be a
+necessary condition for P.
+d) FALSE. Trap: equivalence would require Q ⇒ P as well, which fails (see x = 7 above). Only the one-
+directional implication P ⇒ Q holds, so P and Q are not equivalent.
+e) TRUE. x = 7 satisfies Q (7 > 5) but not P (7 is not > 10), which is precisely a counterexample disproving Q
+⇒ P.
+Task 28. Loan approval
+(source: 11-25logic.docx, original Task 11 — difficulty score 3/8)
+A bank approves a loan only if the applicant's credit score is at least 700 AND their debt-to-income ratio is below
+40%. Applicant P has a credit score of 750 and a debt-to-income ratio of 35%. Applicant Q has a credit score of
+720 and a debt-to-income ratio of 45%.
+General Solution: Check both applicants against the two required conditions (score≥700 AND ratio<40%)
+separately: P has 750≥700 ✓ and 35%<40% ✓ — both hold. Q has 720≥700 ✓ but 45%<40% ✗ — one fails. "Only
+if" gives a NECESSARY condition for approval, not sufficient — meeting both requirements doesn't itself
+guarantee approval, but failing either one guarantees rejection.
+a) Applicant P satisfies both required conditions.
+b) We may conclude that P's loan will be approved.
+c) Applicant Q does not satisfy both required conditions.
+d) Since Q fails one of the required conditions, Q's loan will not be approved.
+e) If an applicant's debt-to-income ratio is below 40%, their loan will definitely be approved, regardless of
+credit score.
+Explanations:
+a) True. P's score (750) is at least 700 and P's ratio (35%) is below 40%, so both required conditions hold.
+b) False. The rule states a necessary condition for approval (“only if”), not a sufficient one — meeting both
+requirements does not itself guarantee approval; other factors could still block it.
+c) True. Q's ratio is 45%, which is not below 40%, so Q fails this required condition.
+d) True. Approval requires both conditions (a necessary condition). Since Q fails one of them, by
+contrapositive reasoning (¬(cond1 ∧cond2) ⇒ ¬Approved), Q cannot be approved.
+e) False. Both conditions are required together; a good ratio alone does not compensate for an insufficient credit
+score.
+Task 29
+(source: 0_1-0_10logic.docx, original Task 18 — difficulty score 3/8)
+Context: The universe of discourse is the set of real numbers, ℝ.
+General Solution: Recall the two negation rules: ¬( ∀x,P(x))≡∃x,¬P(x) and ¬( ∃x,P(x))≡∀x,¬P(x). Also remember
+quantifier order matters: " ∀x ∃y..." (a possibly-different y per x) is a much weaker claim than " ∃y ∀x..." (one fixed y
+working for all x) — swapping the order can flip a true statement to false.
+Statements (True / False):
+===== PAGE 17 =====
+a) The negation of " ∀x, x² ≥ 0" is " ∃x, x² < 0."
+b) The statement " ∃x such that x² = −1" is true.
+c) The negation of " ∃x such that x > 100" is " ∀x, x ≤ 100."
+d) " ∀x > 0, ∃y such that y > x" is a true statement.
+e) " ∃y such that ∀x > 0, y > x" is a true statement.
+Answers & Explanations:
+a) TRUE. Negating a universal quantifier gives an existential quantifier with the negated inner statement: ¬( ∀x,
+P(x)) ≡ ∃x, ¬P(x). Here ¬(x² ≥ 0) is x² < 0.
+b) FALSE. Trap: within the real numbers, no x satisfies x² = −1 (a square of a real number is never negative).
+This statement only becomes true if we work over the complex numbers, which are outside this universe.
+c) TRUE. ¬(∃ x, P(x)) ≡ ∀x, ¬P(x). Negating "x > 100" gives "x ≤ 100," matching the statement exactly.
+d) TRUE. For any positive x, choosing y = x + 1 always gives a larger y, so a suitable y can always be found —
+the statement is true.
+e) FALSE. Trap: swapping the order of quantifiers changes the meaning entirely. This version claims one
+single y is larger than every positive x, but the real numbers are unbounded above, so no such fixed y exists.
+Task 30. A medical diagnostic criterion
+(source: 11-25logic.docx, original Task 21 — difficulty score 3/8)
+A doctor's criterion: a patient is diagnosed with condition X only if they exhibit both symptom A and symptom B;
+however, exhibiting both symptoms does not guarantee the diagnosis, since other conditions must also be ruled out.
+Patient R has been diagnosed with condition X. Patient S exhibits symptom A but not symptom B.
+General Solution: Diagnosis requires symptom A AND symptom B as a NECESSARY (not sufficient) condition
+— having both doesn't guarantee diagnosis, but missing either one guarantees no diagnosis. R is diagnosed ⇒ R has
+both symptoms; S lacks symptom B ⇒ S cannot be diagnosed, regardless of anything else.
+a) Patient R might have been diagnosed with condition X despite exhibiting only symptom A (not symptom B).
+b) Patient S can be diagnosed with condition X.
+c) Exhibiting both symptoms A and B is a sufficient condition for diagnosis with condition X.
+d) If a patient does not exhibit symptom A, they cannot be diagnosed with condition X, regardless of other
+symptoms.
+e) It is impossible for a patient to exhibit both symptoms A and B without being diagnosed with condition X.
+Explanations:
+a) False. Trap: diagnosis requires both symptoms as a necessary condition — since R has been diagnosed, R
+MUST exhibit both A and B; a diagnosis with only symptom A present would be impossible under this
+criterion.
+b) False. S lacks symptom B, which is required for diagnosis, so S cannot be diagnosed regardless of other
+factors.
+c) False. The premise explicitly states that having both symptoms does not guarantee diagnosis — other
+conditions must also be ruled out, so the symptoms alone are necessary but not sufficient.
+d) True. Since both symptoms are required together, missing symptom A alone is enough to fail the necessary
+condition, regardless of anything else.
+e) False. Trap: the premise explicitly states having both symptoms is necessary but NOT sufficient — other
+conditions must still be ruled out. So a patient can very well have both symptoms and still not be diagnosed; it is
+not impossible at all.
+===== PAGE 18 =====
+Task 31
+(source: 0_11-0_20logic.docx, original Task 58 — difficulty score 3/8)
+Context: The universe is the set of integers from 1 to 20, i.e. {1, 2, ..., 20}.
+General Solution: Test specific witnesses/counterexamples directly: 15 is divisible by both 3 and 5 (existential
+claim holds); every multiple of 4 is automatically a multiple of 2 (universal claim holds); but x=2 is divisible by 2
+without being divisible by 4 (counterexample). For negating " ∀x, prime(x)⇒odd(x)," flip to " ∃x,
+prime(x) ∧even(x)," witnessed by x=2.
+Statements (True / False):
+a) " ∃x ∈ {1,...,20} such that x is divisible by both 3 and 5" is true
+b) " ∀x ∈ {1,...,20}, if x is divisible by 4, then x is divisible by 2" is true
+c) " ∀x ∈ {1,...,20}, if x is divisible by 2, then x is divisible by 4" is true
+d) The negation of " ∀x ∈ {1,...,20}, x is prime ⇒ x is odd" is " ∃x ∈ {1,...,20}, x is prime and x is even"
+e) The negated statement in (d) is itself true
+Answers & Explanations:
+a) TRUE. x = 15 is divisible by both 3 and 5, so the existential claim holds.
+b) TRUE. Every multiple of 4 is automatically a multiple of 2 (4 = 2×2), so this holds for all x in the range.
+c) FALSE. Trap: this reverses the previous statement's direction. x = 2 is divisible by 2 but not by 4, so the
+implication fails for x = 2 — a single counterexample makes the universal statement false.
+d) TRUE. The general rule ¬( ∀x, P(x) ⇒ Q(x)) ≡ ∃x, P(x) ∧ ¬Q(x) applies here: negating "prime ⇒ odd" gives
+"prime AND even," matching the statement exactly.
+e) TRUE. x = 2 is both prime and even, so it witnesses the existential statement in (d), confirming it is true —
+which correctly shows that the original universal claim "every prime is odd" is false.
+Task 32. A club membership rule
+(source: 11-25logic.docx, original Task 22 — difficulty score 3/8)
+A club's rule: “A person is a member if and only if they are not on the banned list.” The banned list contains exactly
+the people with 3 or more rule violations. Person T has 2 violations. Person U has 4 violations.
+General Solution: The rule member⇔¬banned makes "member" and "banned" perfectly complementary, with
+"banned" precisely defined as "≥3 violations." T (2 violations) ⇒ not banned ⇒ member; U (4 violations) ⇒ banned
+⇒ not a member. Since "≥3" is a sharp cutoff, no violation count is ever genuinely ambiguous.
+a) Person T is a member of the club.
+b) Person U is a member of the club.
+c) The banned list and the membership list are complementary (every person is in exactly one of the two).
+d) If a person has exactly 3 violations, they could either be a member or banned, depending on additional
+unstated factors.
+e) There exists some number of violations for which it is genuinely ambiguous, from the given rule alone,
+whether a person is banned.
+Explanations:
+a) True. T has only 2 violations (fewer than 3), so T is not on the banned list, and by the iff rule, not-banned
+means member.
+b) False. U has 4 ≥ 3 violations, so U is banned, and by the iff rule, being banned means not a member.
+c) True. The rule states member ⇔ ¬banned, which is exactly the definition of two complementary sets —
+every person is a member or banned, never both, never neither.
+===== PAGE 19 =====
+d) False. The banned list is precisely defined as “3 or more violations,” so exactly 3 violations deterministically
+means banned — there is no room for ambiguity or additional factors.
+e) False. For any specific number of violations, whether it is “3 or more” is a definite fact, so the rule leaves no
+ambiguous cases at all.
+Task 33
+(source: 0_1-0_10logic.docx, original Task 23 — difficulty score 3/8)
+Context: Consider the universal claim: "All prime numbers are odd," and the irrationality of √2.
+General Solution: A single counterexample (like the even prime 2) is always enough to disprove a universal ("for
+all") claim — but a single confirming example never proves one. Proof by contradiction must assume the
+OPPOSITE of the target claim and derive an impossibility from THAT assumption, not from the claim itself.
+Statements (True / False):
+a) To disprove the universal statement "all prime numbers are odd," it suffices to give one counterexample.
+b) The number 2 is a valid counterexample to "all prime numbers are odd."
+c) Proving P ⇒ Q by contradiction means assuming P is true and Q is false, then deriving a contradiction.
+d) A proof by contradiction that √2 is irrational begins by assuming that √2 IS irrational.
+e) If a statement is confirmed true for one specific example, this proves it is true for all cases.
+Answers & Explanations:
+a) TRUE. A single counterexample is enough to disprove a universal ("for all") claim, since it directly
+contradicts "every case satisfies the property."
+b) TRUE. 2 is prime and even, so it directly falsifies the claim that every prime is odd — a textbook
+counterexample.
+c) TRUE. In a proof by contradiction of P ⇒ Q, one assumes the hypothesis P is true and the conclusion Q is
+false, then shows this combination leads to a logical contradiction, which forces P ⇒ Q to be true.
+d) FALSE. Trap: this reverses the logic. A proof by contradiction of "√2 is irrational" must begin by assuming
+the OPPOSITE — that √2 IS rational — and then derive a contradiction from that assumption.
+e) FALSE. Trap: a single confirming example never proves a universal statement; it only shows the statement is
+not violated in that one case. Only a counterexample (a single failing case) can settle a universal claim — and
+only in the negative direction.
+Task 34
+(source: 0_21-0_36logic.docx, original Task 68 — difficulty score 3/8)
+Context: An event organizer's rule is P ⇒ Q: "If it rains, the picnic is cancelled."
+General Solution: Only the CONTRAPOSITIVE (¬Q⇒¬P) of P⇒Q is guaranteed equivalent; the INVERSE
+(¬P⇒¬Q) can fail independently (picnic cancelled for unrelated reasons) without touching the original rule at all,
+since P ⇒Q only constrains cases where P is actually true.
+Statements (True / False):
+a) The negation of this rule is: "It rains and the picnic is not cancelled."
+b) The converse, "If the picnic is cancelled, then it rained," is guaranteed true whenever the organizer's rule
+holds.
+c) The inverse, "If it does not rain, the picnic is not cancelled," is logically equivalent to the original rule.
+d) Suppose it did not rain, yet the picnic was cancelled due to a venue conflict. This contradicts the inverse
+statement, but does NOT contradict the original rule P ⇒ Q.
+===== PAGE 20 =====
+e) The contrapositive, "If the picnic was not cancelled, then it did not rain," is logically equivalent to the
+original rule and must also hold.
+Answers & Explanations:
+a) TRUE. The negation of P ⇒ Q is the conjunction P ∧ ¬Q, correctly stated here.
+b) FALSE. Trap: this is the converse Q ⇒ P, not guaranteed. The picnic could be cancelled for reasons other
+than rain (venue conflict, illness, etc.), so Q can be true while P is false.
+c) FALSE. Trap: the inverse ¬P ⇒ ¬Q is not equivalent to the original P ⇒ Q — only the contrapositive is.
+d) TRUE. This scenario has ¬P (no rain) and Q (cancelled), which breaks the inverse ¬P ⇒ ¬Q. But the original
+rule P ⇒ Q only makes a claim when P is true; with P false here, the original is unaffected (vacuously fine).
+e) TRUE. The contrapositive ¬Q ⇒ ¬P is always logically equivalent to P ⇒ Q, so if the organizer's rule is
+accepted as true, the contrapositive must hold too.
+Task 35
+(source: 0_1-0_10logic.docx, original Task 22 — difficulty score 3/8)
+Context: A market survey of 100 consumers found that 40 bought product X, 35 bought product Y, and 15 bought
+both X and Y.
+General Solution: Inclusive "X or Y" = |X∪Y| = |X|+|Y|−|X∩Y| = 40+35−15 = 60; the exclusive-or (XOR) count
+instead is |X|+|Y|−2|X∩Y| = 40+35−30 = 45. Keep the biconditional P⇔Q distinct from inclusive "or": P⇔Q
+requires matching truth values, a stricter condition than "at least one true."
+Statements (True / False):
+a) In mathematical logic, the statement "a consumer bought X or Y" includes consumers who bought both.
+b) The number of consumers who bought X or Y (in the inclusive sense) is 60.
+c) If "or" were interpreted exclusively (XOR: exactly one of X, Y), the count of consumers satisfying "X or Y"
+would be 45.
+d) The biconditional P ⇔ Q means P and Q always have the same truth value.
+e) P ⇔ Q is true whenever at least one of P or Q is true.
+Answers & Explanations:
+a) TRUE. As established in the book, "P or Q" is inclusive in mathematics — it is true whenever P is true, Q is
+true, or both are true.
+b) TRUE. By the inclusion–exclusion principle: |X ∪ Y| = |X| + |Y| − |X ∩ Y| = 40 + 35 − 15 = 60.
+c) TRUE. Exclusive "X or Y" counts only those who bought exactly one product: (40 − 15) + (35 − 15) = 25 +
+20 = 45, i.e. |X| + |Y| − 2|X ∩ Y| = 40 + 35 − 30 = 45.
+d) TRUE. This is precisely the definition of the biconditional: P ⇔ Q holds exactly when P and Q are both true
+or both false.
+e) FALSE. Trap: this confuses the biconditional with inclusive "or." P ⇔ Q is false if exactly one of P, Q is
+true (e.g., P true, Q false) — "at least one true" is not the criterion; matching truth values is.
+Task 36. Passing a course: attendance and the final exam
+(source: 11-25logic.docx, original Task 23 — difficulty score 3/8)
+A university rule: a student passes the course if and only if they attended at least 80% of classes AND scored at
+least 50 on the final exam. Student K attended 85% of classes and scored 48 on the final. Student L attended 75% of
+classes and scored 90 on the final.
+===== PAGE 21 =====
+General Solution: Passing requires attendance≥80% AND final≥50, both independently, with no trade-off between
+them. K: attendance ok (85%) but final fails (48<50) ⇒ no pass. L: final ok (90) but attendance fails (75%<80%) ⇒
+no pass. Because each threshold is checked separately, a student can fail despite excelling on one measure.
+a) Student K passes the course.
+b) Student L passes the course.
+c) A high score on the final exam can compensate for insufficient attendance, allowing a student to still pass.
+d) If a student attends at least 80% of classes but scores below 50 on the final, they will not pass, no matter how
+close their score is to 50.
+e) There could exist a student who passes despite having a lower combined average performance than another
+student who fails, since the rule checks each threshold separately rather than an overall average.
+Explanations:
+a) False. K's attendance is fine (85% ≥ 80%), but K's final score (48) is below the required 50, so the AND-
+condition fails.
+b) False. L's final score is fine (90 ≥ 50), but L's attendance (75%) is below the required 80%, so the AND-
+condition fails.
+c) False. L's case directly disproves this: a very high final score (90) did not compensate for insufficient
+attendance — the rule requires both thresholds independently, with no substitution allowed.
+d) True. The rule requires both conditions to hold; failing the final-exam threshold blocks passing regardless of
+the margin, as illustrated by K falling only 2 points short.
+e) True. For example, a student with exactly 80% attendance and exactly 50 on the final barely passes, while a
+student with 79% attendance and a perfect 100 final still fails — despite arguably better overall performance —
+because the rule checks each threshold separately, not a combined average.
+Task 37. Online store filter (De Morgan)
+(source: 36-45logic.docx, original Task 30 — difficulty score 3/8)
+An online store's "clearance-free, in-stock only" filter displays an item exactly when NOT (the item is on sale OR
+the item is out of stock). Item M is on sale and is in stock. Item N is not on sale and is out of stock. Item K is not on
+sale and is in stock.
+General Solution: By De Morgan's law, NOT(on sale OR out of stock) = (NOT on sale) AND (NOT out of stock)
+— displayed only when BOTH conditions hold together, not OR (the classic De Morgan mistake). M (on sale) and
+N (out of stock) each trigger the OR, so neither is displayed; K satisfies both NOT-conditions, so K is displayed.
+a) Item M is displayed by the filter.
+b) Item N is displayed by the filter.
+c) The filter condition "NOT (on sale OR out of stock)" is logically equivalent to "NOT on sale OR NOT out of
+stock."
+d) The filter condition is logically equivalent to "NOT on sale AND NOT out of stock," meaning an item is
+displayed only if it is neither on sale nor out of stock.
+e) Item K is displayed by the filter.
+Explanations:
+a) False. M is on sale, so "on sale OR out of stock" is true, and the filter needs the negation of that to be true.
+Since it's false, M is not displayed.
+b) False. N is out of stock, so "on sale OR out of stock" is true (out-of-stock alone makes the OR true). The
+filter requires this to be false, so N is not displayed either.
+c) False. This is the classic De Morgan mistake: NOT(P OR Q) is equivalent to (NOT P) AND (NOT Q), not
+(NOT P) OR (NOT Q). The statement swaps AND for OR incorrectly.
+===== PAGE 22 =====
+d) True. By De Morgan's law, NOT(on sale OR out of stock) = (NOT on sale) AND (NOT out of stock) — an
+item is displayed exactly when both conditions (not on sale, and in stock) hold simultaneously.
+e) True. K is not on sale and is in stock, so both NOT on sale and NOT out of stock are true, satisfying the
+AND condition from part (d). K is displayed.
+Task 38
+(source: 0_1-0_10logic.docx, original Task 16 — difficulty score 3/8)
+Context: Consider the statement P ⇒ Q, where P: "a country's inflation rate exceeds 10%" and Q: "the central
+bank raises interest rates."
+General Solution: From P⇒Q ("inflation>10% ⇒bank raises rates"), only the CONTRAPOSITIVE (¬Q⇒¬P) is
+automatically guaranteed equivalent to the original. The CONVERSE (Q⇒P) is a separate claim that need not hold
+— a bank could raise rates for unrelated reasons — and "Q therefore P" reasoning (affirming the consequent) is
+invalid regardless.
+Statements (True / False):
+a) The contrapositive of P ⇒ Q is: "If the central bank does not raise interest rates, then inflation is at most
+10%."
+b) The converse of P ⇒ Q, "If the central bank raises interest rates, then inflation exceeds 10%," is logically
+equivalent to P ⇒ Q.
+c) P ⇒ Q means that P is a sufficient condition for Q.
+d) P ⇒ Q means that P is a necessary condition for Q.
+e) If we are told that the bank raised interest rates (Q is true), we may validly conclude that inflation exceeded
+10% (P is true).
+Answers & Explanations:
+a) TRUE. The contrapositive of P ⇒ Q is ¬Q ⇒ ¬P. Here ¬Q = "bank does not raise rates" and ¬P = "inflation
+≤ 10%" ("at most 10%"), which matches exactly. The contrapositive is always logically equivalent to the
+original implication.
+b) FALSE. Trap: the converse (Q ⇒ P) is generally NOT equivalent to the original implication (P ⇒ Q). A bank
+could raise rates for reasons other than inflation exceeding 10% (e.g., currency stabilization), so Q ⇒ P need not
+hold.
+c) TRUE. By definition, in P ⇒ Q, P being true is enough (sufficient) to guarantee Q is true.
+d) FALSE. Trap: it is Q that is necessary for P (since P ⇒ Q means Q must hold whenever P holds), not P
+necessary for Q. P is sufficient for Q, and Q is necessary for P — these must not be confused.
+e) FALSE. Trap: this commits the fallacy of "affirming the consequent." Q being true does not let us infer P is
+true — the bank might have raised rates for another reason entirely.
+Task 39. A chain of biconditionals
+(source: 11-25logic.docx, original Task 18 — difficulty score 4/8)
+Let P, Q, and R be propositions about a number x. It is known that P ⇔ Q and Q ⇔ R. Suppose P is true.
+General Solution: From P⇔Q and Q⇔R with P=true: P⇔Q forces Q=true, then Q⇔R forces R=true.
+Biconditional equivalence chains transitively (P⇔Q⇔R implies P⇔R), and running the chain backward, R=false
+would force Q=false then P=false — but the single combined fact P⇔R alone says nothing about where Q sits.
+a) Q is true.
+b) R is true.
+c) P ⇔ R must also hold, even though it isn't stated directly.
+===== PAGE 23 =====
+d) If R were false instead, then P would have to be false too.
+e) Knowing only that P ⇔ R is true (without the individual facts P⇔Q and Q⇔R), we could still conclude that
+Q always shares the same truth value as P and R.
+Explanations:
+a) True. Since P ⇔ Q and P is true, Q must also be true.
+b) True. Since Q ⇔ R and Q is true (part a), R must also be true.
+c) True. Biconditional equivalence is transitive: from P⇔Q and Q⇔R, it follows generally that P⇔R.
+d) True. If R were false, then Q⇔R would force Q false, and then P⇔Q would force P false — tracing the
+chain backward.
+e) False. P⇔R alone says nothing about Q; Q could behave completely independently of P and R unless the
+individual biconditionals with Q are separately known.
+Task 40. Cancelling a concert
+(source: 11-25logic.docx, original Task 12 — difficulty score 4/8)
+A rule states: the outdoor concert will be cancelled unless the rain stops before 6 PM. Let C: “the concert is
+cancelled”, S: “the rain stops before 6 PM.”
+General Solution: Translate "A unless B" as ¬B⇒A: here ¬S⇒C. This is logically equivalent to S ∨C (by ¬A⇒B ≡
+A ∨B) and its contrapositive ¬C⇒S — but NOT equivalent to S⇒¬C. The rule only constrains what happens when
+rain does NOT stop; it says nothing about what happens if it does.
+a) The rule translates to: ¬S ⇒ C.
+b) The rule is logically equivalent to: S ⇒ ¬C.
+c) The rule is logically equivalent to: C ∨ S.
+d) If the rain stops before 6 PM, the concert is guaranteed to happen (not be cancelled).
+e) If the concert is not cancelled, then the rain must have stopped before 6 PM.
+Explanations:
+a) True. “A unless B” standardly translates as “if not B, then A” — here, if the rain does not stop by 6, the
+concert is cancelled.
+b) False. Checking truth values: when S and C are both true, ¬S ⇒C is true (antecedent false, vacuously true),
+but S⇒¬C is false (true antecedent, false consequent) — the two are not equivalent.
+c) True. ¬S ⇒C is logically equivalent to S ∨C by the standard equivalence for material implication (¬A⇒B ≡
+A ∨B).
+d) False. The rule only tells us what happens when the rain does NOT stop; it says nothing about what happens
+when it does stop — the concert could still be cancelled for unrelated reasons.
+e) True. This is the contrapositive of ¬S⇒C, namely ¬C⇒S, which is always logically equivalent to the original
+implication.
+Task 41. A senior transit discount rule
+(source: 26-35logic.docx, original Task 32 — difficulty score 4/8)
+A transit discount applies to riders who are at least 65 years old AND (have a qualifying disability OR have an
+annual income below $20,000). Rider P is 70, has no disability, and earns $18,000. Rider Q is 67, has a qualifying
+disability, and earns $50,000.
+General Solution: Discount requires age≥65 AND (disability OR income<$20,000) — both the age gate and at
+least one OR-branch. P: age 70 ✓, income $18,000<$20,000✓ ⇒ qualifies. Q: age 67 ✓, disability✓ (OR satisfied via
+disability, income irrelevant) ⇒ qualifies despite $50,000 income.
+===== PAGE 24 =====
+a) Rider P qualifies for the discount.
+b) Rider Q, who is 67, has a qualifying disability, but earns $50,000, does NOT qualify for the discount because
+the income exceeds $20,000.
+c) Having an income above $20,000 automatically disqualifies a senior rider from the discount, even if they
+have a qualifying disability.
+d) There exists a scenario where a 70-year-old rider with no disability and an income of $25,000 would NOT
+qualify for the discount.
+e) Age alone (being at least 65) is a sufficient condition for receiving the discount, regardless of disability or
+income status.
+Explanations:
+a) True. P is 70 (≥65) and earns $18,000 (< $20,000), satisfying the income part of the OR-condition, so both
+the age requirement and the OR-condition are met.
+b) False. Trap: Q is 67 (≥65) and has a qualifying disability, which alone satisfies the OR-condition regardless
+of income. Q's high income is irrelevant here — the disability is enough, so Q DOES qualify.
+c) False. Q's case directly disproves this — Q has a high income ($50,000) but still qualifies because the
+disability alone satisfies the OR-condition.
+d) True. Such a rider meets the age requirement but satisfies neither part of the OR-condition (no disability, and
+$25,000 is not below $20,000), so the overall AND-condition fails and they would not qualify.
+e) False. As shown in (d), meeting the age requirement alone is not enough — the OR-condition (disability or
+low income) must also be satisfied.
+Task 42
+(source: 0_11-0_20logic.docx, original Task 62 — difficulty score 4/8)
+Context: Consider the claim: "For all positive integers n, 1 + 2 + ... + n = n(n+1)/2."
+General Solution: A complete induction proof needs TWO parts: (1) a base case (n=1: 1=1·2/2 ✓) and (2) a general
+inductive step showing the formula for n=k implies it for n=k+1 (algebraically: k(k+1)/2+(k+1)=(k+1)(k+2)/2) —
+checking finitely many specific values alone, without the general step, is never a valid proof.
+Statements (True / False):
+a) The base case to verify is n = 1, giving 1 = 1(2)/2 = 1, which holds
+b) The inductive step assumes the formula holds for n = k and proves it for n = k + 1
+c) Checking the formula for n = 1, 2, 3, 4, 5 constitutes a complete proof by induction
+d) If 1+2+...+k = k(k+1)/2, then 1+2+...+k+(k+1) = k(k+1)/2 + (k+1) = (k+1)(k+2)/2, which confirms the
+inductive step
+e) For n = 10, the formula gives 1+2+...+10 = 55
+Answers & Explanations:
+a) TRUE. The base case checks the smallest n (here n = 1); the formula gives 1·2/2 = 1, matching the actual
+sum, so the base case holds.
+b) TRUE. This is precisely the structure of the inductive step: assume the statement for n = k (the induction
+hypothesis), then prove it for n = k + 1.
+c) FALSE. Trap: verifying finitely many cases (even many of them) is NOT a proof by induction. Without the
+general inductive step showing truth is passed from k to k+1 for every k, the claim remains unproven for all n.
+d) TRUE. Adding (k+1) to both sides: k(k+1)/2 + (k+1) = (k+1)[k/2 + 1] = (k+1)(k+2)/2, exactly matching the
+formula's prediction for n = k+1 — this completes a valid inductive step.
+e) TRUE. Direct substitution: 10 × 11 / 2 = 110/2 = 55, which also matches 1+2+...+10 computed directly.
+===== PAGE 25 =====
+Task 43
+(source: 0_11-0_20logic.docx, original Task 56 — difficulty score 4/8)
+Context: Consider the (debatable) economic claim P ⇒ Q: "If inflation increases, then unemployment
+decreases." Each statement below is a proposed rewording — decide whether it is logically equivalent to P ⇒ Q.
+General Solution: For P ⇒Q, only two reformulations are guaranteed equivalent: the CONTRAPOSITIVE
+(¬Q⇒¬P) and phrasings that directly restate P ⇒Q as a sufficient/necessary condition. Any wording using "only if"
+attached to Q, or "for Q to happen, P must happen," actually expresses the CONVERSE (Q ⇒P) instead — a
+different, non-equivalent claim.
+Statements (True / False):
+a) "For unemployment to decrease, inflation must increase" is equivalent to P ⇒ Q.
+b) "A sufficient condition for unemployment to decrease is that inflation increases" is equivalent to P ⇒ Q.
+c) "Unemployment can only decrease if inflation increases" is equivalent to P ⇒ Q.
+d) "If unemployment does not decrease, then inflation does not increase" is equivalent to P ⇒ Q.
+e) "A necessary condition for inflation to increase is that unemployment decreases" is equivalent to P ⇒ Q.
+Answers & Explanations:
+a) FALSE. Trap: "For Q to happen, P must happen" translates to Q ⇒ P — this is the CONVERSE of the
+original implication, not the original itself, and the converse is not logically equivalent to it.
+b) TRUE. "A sufficient condition for Q is P" is precisely the verbal definition of P ⇒ Q, so this rewording is
+equivalent.
+c) FALSE. Trap: "Q only if P" also translates to Q ⇒ P (the converse), the same trap as statement (a) worded
+differently — it is NOT equivalent to P ⇒ Q.
+d) TRUE. "If ¬Q then ¬P" is exactly the contrapositive ¬Q ⇒ ¬P, which is always logically equivalent to the
+original implication P ⇒ Q.
+e) TRUE. "A necessary condition for P is Q" translates to P ⇒ Q (Q must hold whenever P holds) — this is
+exactly the original statement.
+Task 44. Airline delay chain
+(source: 36-45logic.docx, original Task 34 — difficulty score 4/8)
+An airline's operations log records: (1) If Flight 202 is delayed, then Flight 305 is cancelled. (2) If Flight 305 is
+cancelled, then the ground crew works overtime. (3) Flight 202 is delayed today.
+General Solution: Chain the two implications with the given fact: (3) Flight 202 delayed → (1) → Flight 305
+cancelled → (2) → crew works overtime. Every link is essential — removing (2) leaves "cancelled" with no
+connection to "overtime" — and rule (1) says nothing about what happens when Flight 202 is NOT delayed.
+a) Flight 305 is cancelled today.
+b) The ground crew works overtime today.
+c) Statement (2) is essential to concluding that the crew works overtime today — without it, that conclusion
+could not be reached from (1) and (3) alone.
+d) If Flight 202 were NOT delayed today, statement (1) guarantees that Flight 305 would not be cancelled.
+e) There exist scenarios satisfying (1), (2), and (3) in which the ground crew does not work overtime.
+Explanations:
+a) True. By (3), Flight 202 is delayed. Applying (1) (delayed ⇒ cancelled) directly gives that Flight 305 is
+cancelled.
+===== PAGE 26 =====
+b) True. Since Flight 305 is cancelled (part a), applying (2) (cancelled ⇒ overtime) gives that the crew works
+overtime.
+c) True. Statements (1) and (3) alone only establish that Flight 305 is cancelled; they say nothing about the
+crew. Statement (2) is the only link connecting cancellation to overtime, so it is indispensable here.
+d) False. Statement (1) only specifies what happens when Flight 202 IS delayed; it says nothing about the case
+when it is not delayed. Inferring that Flight 305 is not cancelled from "202 is not delayed" is the fallacy of
+denying the antecedent.
+e) False. Given (1) and (3), Flight 305 must be cancelled; given that cancellation and (2), the crew must work
+overtime. There is no way to satisfy all of (1), (2), and (3) simultaneously while the crew avoids overtime.
+Task 45
+(source: 0_21-0_36logic.docx, original Task 69 — difficulty score 4/8)
+Context: A professor's claim is P ⇒ Q: "If a student studies at least 10 hours, they pass the exam."
+General Solution: P⇒ Q guarantees only its CONTRAPOSITIVE (¬Q ⇒¬P); the CONVERSE (Q⇒P) can fail
+(Anna passes without studying), and the INVERSE is equivalent to the CONVERSE, not the contrapositive —
+mixing up which pair is equivalent is the main trap.
+Statements (True / False):
+a) The negation of this claim is: "A student studies at least 10 hours and does not pass."
+b) The converse, "If a student passes, they studied at least 10 hours," must be true whenever the original claim
+is true.
+c) Anna passes the exam without studying at all (she already knew the material). This is a counterexample to the
+converse, but not to the original claim.
+d) The inverse, "If a student studies less than 10 hours, they do not pass," is the logical equivalent of the
+contrapositive.
+e) If we know a student did NOT pass, we may validly conclude, via the contrapositive, that they studied less
+than 10 hours.
+Answers & Explanations:
+a) TRUE. The negation of P ⇒ Q is P ∧ ¬Q, correctly formed here.
+b) FALSE. Trap: this is the converse Q ⇒ P, not guaranteed by the original. A student can pass without hitting
+the 10-hour mark.
+c) TRUE. Anna has Q true (passes) and P false (didn't study), which breaks the converse Q ⇒ P. It says nothing
+about the original P ⇒ Q, since that only constrains cases where P is true.
+d) FALSE. Trap: the inverse ¬P ⇒ ¬Q is logically equivalent to the CONVERSE (Q ⇒ P), not the
+contrapositive. The contrapositive is equivalent only to the original statement.
+e) TRUE. "Did not pass" is ¬Q; concluding ¬P ("studied less than 10 hours") is exactly the contrapositive ¬Q
+⇒ ¬P, which is valid whenever the original P ⇒ Q is accepted true.
+Task 46. A contract penalty clause
+(source: 11-25logic.docx, original Task 20 — difficulty score 4/8)
+A contract clause states: “If the contractor fails to complete the project by the deadline, then a penalty fee applies.”
+Let F: “the contractor fails to complete by the deadline”, P: “a penalty fee applies.”
+General Solution: From F⇒P, only the contrapositive ¬P⇒¬F is automatically guaranteed true. The converse
+(P ⇒F) and inverse (¬F⇒¬P) are NOT guaranteed — a penalty could apply for unrelated reasons — but the converse
+and inverse are always equivalent to EACH OTHER (each is the other's contrapositive), even when neither matches
+the original.
+===== PAGE 27 =====
+a) The clause is symbolized as F ⇒ P.
+b) The converse (P ⇒ F) must also be true simply because the original clause is true.
+c) The contrapositive, “If no penalty fee applies, then the contractor did not fail to complete by the deadline”
+(¬P ⇒ ¬F), is logically guaranteed to be true given the original clause.
+d) The inverse, “If the contractor does not fail to complete by the deadline, then no penalty fee applies” (¬F ⇒
+¬P), must also be true given the original clause.
+e) The inverse of a conditional statement is always logically equivalent to its converse, even though neither is
+generally equivalent to the original.
+Explanations:
+a) True. This is a direct symbolic restatement of the clause.
+b) False. A true implication does not guarantee its converse — a penalty fee might apply for a completely
+different contractual reason (e.g. poor quality of work), even without a missed deadline.
+c) True. The contrapositive of any implication is always logically equivalent to the implication itself, so it's
+guaranteed true whenever F⇒P is true.
+d) False. Like the converse, the inverse is not guaranteed by the original implication — it has the same logical
+status as the converse (they are contrapositives of each other), so it may or may not hold.
+e) True. The inverse (¬F⇒¬P) is the contrapositive of the converse (P ⇒F), so the two are always logically
+equivalent to each other, regardless of their relationship to the original clause.
+Task 47. A scholarship eligibility rule with a waiver
+(source: 26-35logic.docx, original Task 29 — difficulty score 4/8)
+A scholarship rule: a student is eligible only if they have a GPA of at least 3.5 AND have completed at least 60
+credit hours — unless the Dean grants a written waiver of the credit-hour requirement, in which case only the GPA
+condition needs to be met. Student M has a GPA of 3.7, has completed 50 credit hours, and has NOT received a
+waiver. Student N has a GPA of 3.6, has completed 45 credit hours, and HAS received a waiver.
+General Solution: Without a waiver, both GPA≥3.5 AND credits≥60 are required; with a waiver, only GPA≥3.5
+matters (credits become irrelevant). M (no waiver, 50 credits) fails the credit requirement; N (has waiver, GPA 3.6)
+only needs to clear 3.5, which it does. The GPA threshold is NEVER waived — only the credit-hour part is.
+a) Student M is eligible for the scholarship.
+b) Student N is eligible for the scholarship.
+c) If Student M were to receive a Dean's waiver (keeping the same GPA and credit hours), M would become
+eligible.
+d) The Dean's waiver, by itself, is sufficient for eligibility, regardless of GPA.
+e) It is possible for a student with a GPA below 3.5 to be eligible, provided they have a waiver and sufficient
+credit hours.
+Explanations:
+a) False. M has no waiver, so both the GPA and credit-hour conditions are required; M's 50 credit hours fall
+short of the required 60, so M is not eligible.
+b) True. N has a waiver, so only the GPA condition applies; N's GPA of 3.6 meets the required 3.5, so N is
+eligible despite having only 45 credit hours.
+c) True. With a waiver, only the GPA condition matters, and M's GPA (3.7) already satisfies the 3.5 threshold.
+d) False. The waiver only removes the credit-hour requirement; the GPA condition of at least 3.5 must still be
+independently satisfied.
+e) False. The GPA condition is never waived by this rule — the waiver only ever concerns the credit-hour
+requirement, so a GPA below 3.5 always fails regardless of waiver or credit hours.
+===== PAGE 28 =====
+Task 48. Travel insurance payout
+(source: 11-25logic.docx, original Task 17 — difficulty score 4/8)
+A travel insurance policy pays out for trip cancellation if and only if [ (the traveler cancels due to a documented
+medical emergency) OR (the airline cancels the flight) ] AND (the traveler purchased the policy at least 14 days
+before departure). Traveler M cancelled due to a documented medical emergency and purchased the policy 20 days
+before departure. Traveler N's flight was cancelled by the airline, but N purchased the policy only 5 days before
+departure.
+General Solution: The payout rule is [medical emergency OR airline cancellation] AND [purchased ≥14 days
+ahead] — both brackets must hold. M: emergency=yes, 20≥14 days ⇒ both parts satisfied, paid. N: airline
+cancellation=yes (OR-part satisfied), but only 5<14 days ⇒ AND-part fails, no payout regardless.
+a) M's claim will be paid out.
+b) N's claim will be paid out.
+c) If a traveler purchases the policy fewer than 14 days before departure, their claim will never be paid out,
+regardless of the reason for cancellation.
+d) Purchasing the policy at least 14 days in advance is, by itself, sufficient for a claim to be paid out.
+e) It is possible for a claim to be paid out without a documented medical emergency AND without the policy
+being purchased at least 14 days in advance, provided the airline cancelled the flight.
+Explanations:
+a) True. M has a medical emergency (satisfying the OR-part) and purchased 20 ≥ 14 days ahead (satisfying the
+AND-part), so both parts of the rule are met.
+b) False. N satisfies the OR-part (airline cancellation) but purchased only 5 days ahead, failing the 14-day
+requirement, so the overall condition fails.
+c) True. The rule requires the 14-day condition together with the OR-part; failing the 14-day part makes the
+whole conjunction false no matter what the OR-part evaluates to.
+d) False. Timing alone is not enough — the traveler still needs either a documented medical emergency or an
+airline cancellation to satisfy the OR-part.
+e) False. Trap: the 14-day purchase requirement is a mandatory AND-condition, independent of the OR-part's
+reason. Without it, no claim is paid regardless of an airline cancellation — this is exactly Traveler N's situation,
+whose claim was denied.
+Task 49
+(source: 0_21-0_36logic.docx, original Task 70 — difficulty score 4/8)
+Context: An election law states P ⇒ Q: "If a person is a citizen, they are eligible to vote."
+General Solution: P⇒ Q guarantees its contrapositive (¬Q ⇒¬P) but not the converse (Q ⇒P) — some non-citizens
+can be granted voting rights. The converse and inverse are always equivalent to EACH OTHER regardless of
+context, since each is literally the other's contrapositive.
+Statements (True / False):
+a) The negation of this law is: "A person is a citizen and is not eligible to vote."
+b) John is not eligible to vote (¬Q); by the contrapositive, we may conclude John is not a citizen (¬P). This
+reasoning is logically valid.
+c) Maria is a citizen who chooses not to register and therefore does not cast a vote in one election. This is a
+counterexample disproving the law.
+d) The converse, "If a person is eligible to vote, they are a citizen," could be false in a country that grants voting
+rights to certain non-citizen long-term residents.
+===== PAGE 29 =====
+e) The inverse, "If a person is not a citizen, they are not eligible to vote," always has the same truth value as the
+converse.
+Answers & Explanations:
+a) TRUE. The negation of P ⇒ Q is P ∧ ¬Q — a citizen who is not eligible to vote.
+b) TRUE. "¬Q, therefore ¬P" is precisely the contrapositive ¬Q ⇒ ¬P, which is valid whenever the original law
+is accepted as true.
+c) FALSE. Trap: the law is about eligibility, not actual voting. Maria being eligible but choosing not to vote
+does not make Q ("eligible to vote") false — she conflates "not voting" with "not eligible," so this is not a
+genuine counterexample.
+d) TRUE. The converse Q ⇒ P need not hold: some jurisdictions extend voting eligibility to certain non-
+citizens, giving Q true and P false.
+e) TRUE. This is a structural fact independent of context: the inverse (¬P ⇒ ¬Q) and the converse (Q ⇒ P) are
+always logically equivalent to each other, since one is the contrapositive of the other.
+Task 50. A business memo's reasoning
+(source: 26-35logic.docx, original Task 35 — difficulty score 4/8)
+A company memo reasons: “If we increase our marketing budget, then sales will increase. Sales have increased this
+quarter. Therefore, we must have increased our marketing budget.”
+General Solution: The original memo commits "affirming the consequent" (from P⇒Q and Q, invalidly concluding
+P) — sales rising doesn't prove the budget rose. Only "modus tollens" (P⇒Q, ¬Q, therefore ¬P) is a valid inference
+form; "denying the antecedent" is equally invalid. A full biconditional would be needed to validly run the memo's
+original direction.
+a) The memo's argument is logically valid.
+b) The argument would become valid if restated as: “If we increase our marketing budget, then sales will
+increase. We did NOT increase our marketing budget. Therefore, sales did not increase.”
+c) The argument would become valid if restated as: “If we increase our marketing budget, then sales will
+increase. Sales did NOT increase. Therefore, we did not increase our marketing budget.”
+d) For the original memo's conclusion to be validly drawn, the premise would need to be strengthened to a
+biconditional: “We increase our marketing budget if and only if sales increase.”
+e) The fallacy in the original memo is the same type as concluding “It is raining” from the premises “If it rains,
+the ground gets wet” and “The ground is wet.”
+Explanations:
+a) False. This commits the fallacy of affirming the consequent: sales could have increased for reasons entirely
+unrelated to the marketing budget, so the conclusion does not necessarily follow.
+b) False. This commits a different fallacy, denying the antecedent: not increasing the marketing budget doesn't
+rule out other causes of a sales increase, so this conclusion also doesn't necessarily follow.
+c) True. This is modus tollens — a valid inference form: from P ⇒Q and ¬Q, we can validly conclude ¬P.
+d) True. With a biconditional, sales increasing would also imply the budget increased (the reverse direction),
+making the original memo's conclusion validly follow — the plain one-directional implication cannot support
+this on its own.
+e) True. Both arguments have the identical invalid structure: P ⇒Q, Q, therefore P — assuming the converse of
+a true implication, i.e. affirming the consequent.
+Task 51
+(source: 0_11-0_20logic.docx, original Task 63 — difficulty score 4/8)
+===== PAGE 30 =====
+Context: Consider the claim: "The sum of two irrational numbers is always irrational," and the classical proof
+that there is no largest prime number.
+General Solution: √2+(−√2)=0 is a single counterexample disproving "sum of two irrationals is always irrational"
+— one case is always enough to kill a universal claim, never enough to prove one. A genuine contradiction proof of
+"no largest prime exists" must assume the OPPOSITE (a largest prime p DOES exist) and derive an impossibility
+from that.
+Statements (True / False):
+a) √2 + (−√2) = 0 is a valid counterexample to "the sum of two irrational numbers is always irrational," since √2
+and −√2 are irrational but their sum, 0, is rational
+b) Finding this one counterexample is enough to show the claim is not a true universal statement
+c) A proof by contradiction that there is no largest prime begins by assuming there IS a largest prime, say p, and
+then derives a contradiction
+d) To prove a universal statement " ∀x, P(x)" is true, it suffices to check it for x = 1 and x = 2
+e) To prove an existential statement " ∃x, P(x)" is true, it suffices to exhibit just one value of x for which P(x)
+holds
+Answers & Explanations:
+a) TRUE. √2 and −√2 are both irrational, yet their sum is 0, which is rational — exactly one counterexample is
+needed to break the universal claim.
+b) TRUE. A single counterexample is sufficient to disprove a "for all" statement, since it directly demonstrates
+a case where the property fails.
+c) TRUE. This is the standard structure of Euclid's classical proof: assume the opposite of what we want to
+prove (that a largest prime p exists), then construct a contradiction (e.g. a new prime larger than p).
+d) FALSE. Trap: checking a finite number of cases, however many, never proves a universal statement about
+infinitely many (or even just many) values — a single untested case could still be a counterexample.
+e) TRUE. Unlike universal statements, existential statements only claim that at least one example exists — so
+producing a single valid example is a complete proof.
+Task 52
+(source: 0_21-0_36logic.docx, original Task 66 — difficulty score 4/8)
+Context: A biology rule states P ⇒ Q: "If an animal is a fish, then it lives in water."
+General Solution: From P⇒Q ("fish ⇒lives in water"): using the CONVERSE (Q⇒P) is a fallacy (dolphins disprove
+it); using the INVERSE (¬P⇒¬Q) is also a fallacy (water snakes disprove it); only the CONTRAPOSITIVE
+(¬Q⇒¬P) is guaranteed valid.
+Statements (True / False):
+a) "This dolphin lives in water, so it must be a fish" uses the converse of the rule and is an invalid argument.
+b) "This lizard does not live in water, so it is not a fish" uses the contrapositive of the rule and is a valid
+argument.
+c) "This snake is not a fish, so it does not live in water" uses the inverse of the rule, and inverse-based reasoning
+is always guaranteed to be valid.
+d) The negation of the broader claim "All fish live in water" is "There exists a fish that does not live in water."
+e) The fact that dolphins live in water without being fish is, by itself, a valid counterexample disproving "All
+fish live in water."
+Answers & Explanations:
+a) TRUE. The argument has form Q ⇒ P, the converse of P ⇒ Q. It's invalid, and dolphins prove it: they live in
+water yet are mammals, not fish.
+===== PAGE 31 =====
+b) TRUE. This argument has form ¬Q ⇒ ¬P, exactly the contrapositive of P ⇒ Q, always equivalent to the
+original — so the reasoning is valid.
+c) FALSE. Trap: this has form ¬P ⇒ ¬Q (the inverse), not guaranteed by the original. Water snakes break it:
+not fish, yet they live in water.
+d) TRUE. ¬(∀ x, P(x)) ≡ ∃x, ¬P(x). Applied here, this gives exactly "there exists a fish that does not live in
+water" — correctly formed regardless of its truth.
+e) FALSE. Trap: a counterexample to "all fish live in water" must be a fish that does NOT live in water. A
+dolphin (not a fish) living in water is irrelevant to this claim; it would only bear on the reversed statement
+"everything in water is a fish."
+Task 53
+(source: 0_21-0_36logic.docx, original Task 74 — difficulty score 4/8)
+Context: A store's policy is P ⇒ Q: "If a customer pays within 30 days, they receive a 5% discount."
+General Solution: From P⇒Q ("pays within 30 days ⇒gets discount"), only the CONTRAPOSITIVE is guaranteed;
+the negation of P ⇒Q is always P ∧¬Q specifically — never P ∧Q or any other combination. A customer who paid
+LATE (¬P) getting the discount anyway breaks only the INVERSE, not the original rule, since P ⇒Q says nothing
+about cases where P is false.
+Statements (True / False):
+a) The negation of the policy is: "A customer paid within 30 days and received the discount."
+b) The converse, "If a customer receives the discount, they paid within 30 days," is necessarily true given the
+policy.
+c) Alex paid on day 45 (after 30 days) and did not receive the discount. This is consistent with the original
+policy and does NOT serve as a counterexample.
+d) The inverse, "If a customer does not pay within 30 days, they do not receive the discount," is logically
+guaranteed to be true by the original policy.
+e) The contrapositive, "If a customer does not receive the discount, they did not pay within 30 days," is NOT
+guaranteed to be true, since only the original conditional itself carries any real guarantee.
+Answers & Explanations:
+a) FALSE. Trap: the negation of P ⇒ Q is P ∧ ¬Q — "paid within 30 days AND did NOT receive the
+discount." This version keeps Q true instead of negating it, which just restates a case consistent with the policy,
+not its negation.
+b) FALSE. Trap: this is the converse Q ⇒ P, not guaranteed. The store could offer the 5% discount through an
+unrelated promotion to a customer who paid late.
+c) TRUE. Alex has P false (paid late) and Q false (no discount). The policy P ⇒ Q makes no claim when P is
+false, so this case is perfectly consistent with it — not a counterexample.
+d) FALSE. Trap: the inverse (¬P ⇒ ¬Q) is not guaranteed by the original policy (P ⇒ Q) — only the
+contrapositive is. The store could still offer the discount to a late payer through an unrelated promotion,
+breaking the inverse while leaving the original policy untouched.
+e) FALSE. Trap: the contrapositive ¬Q ⇒ ¬P is always logically equivalent to P ⇒ Q — it is just as guaranteed
+as the original, not somehow weaker or unguaranteed.
+Task 54
+(source: 0_21-0_36logic.docx, original Task 65 — difficulty score 4/8)
+Context: A regulation states P ⇒ Q: "If a company's annual revenue exceeds $1 million, then it must file an
+annual audit."
+===== PAGE 32 =====
+General Solution: From P⇒Q, only the CONTRAPOSITIVE (¬Q⇒¬P) is guaranteed equivalent to the original; the
+CONVERSE (Q ⇒P) and INVERSE (¬P ⇒¬Q) are separate, unguaranteed claims — but converse and inverse are
+always equivalent to EACH OTHER (each is the other's contrapositive). The negation of P ⇒Q is always the
+conjunction P ∧¬Q, never another "if...then" statement.
+Statements (True / False):
+a) The negation of this statement is: "If a company's revenue exceeds $1 million, then it does not file an audit."
+b) The converse, "If a company files an annual audit, then its revenue exceeds $1 million," is guaranteed true
+whenever the original regulation holds.
+c) The inverse, "If a company's revenue does not exceed $1 million, then it does not file an audit," is logically
+equivalent to the original statement.
+d) The contrapositive, "If a company does not file an audit, then its revenue does not exceed $1 million," is
+equivalent to the original and must also be true.
+e) Company X has revenue of $2 million (so P is true) but did not file an audit (so Q is false). This is a valid
+counterexample that would prove the original regulation false.
+Answers & Explanations:
+a) FALSE. Trap: the negation of P ⇒ Q is never another "if...then" statement — it is the conjunction P ∧ ¬Q:
+"revenue exceeds $1 million AND it does not file an audit."
+b) FALSE. Trap: this states the converse Q ⇒ P, not guaranteed by the original. A small company could file an
+audit voluntarily (for investors) without exceeding $1 million — Q true, P false.
+c) FALSE. Trap: the inverse ¬P ⇒ ¬Q is not equivalent to the original P ⇒ Q (it is only equivalent to the
+converse). A small company could still be required to audit for unrelated reasons.
+d) TRUE. The contrapositive ¬Q ⇒ ¬P is always logically equivalent to P ⇒ Q — a structural guarantee for
+any implication.
+e) TRUE. P ⇒ Q is false exactly when P is true and Q is false. Company X has P true and Q false, exactly
+what's needed to falsify the regulation.
+Task 55. Commercial pilot license
+(source: 36-45logic.docx, original Task 31 — difficulty score 4/8)
+To be granted a commercial pilot license, it is necessary to have logged at least 250 flight hours; the license is
+granted if and only if the pilot has logged at least 250 flight hours AND has passed the FAA written exam AND has
+passed a practical flight test. Pilot A has logged 300 flight hours, passed the written exam, but failed the practical
+flight test. Pilot B has logged 240 flight hours, and passed both the written exam and the practical flight test.
+General Solution: Granting requires ALL THREE conditions together: ≥250 hours AND passed written AND
+passed practical — hours alone is only necessary, not sufficient. A has hours+written but fails practical ⇒ not
+granted; B fails the hours threshold outright (240<250) ⇒ not granted regardless of passing both exams.
+a) Pilot A is granted the license.
+b) Pilot B is granted the license.
+c) Having logged at least 250 flight hours, by itself, guarantees that a pilot is granted the license.
+d) If a pilot fails the practical flight test, they cannot be granted the license, even if they have more than 250
+hours and passed the written exam.
+e) There exists a pilot with more than 250 flight hours who is not granted the license.
+Explanations:
+a) False. The license requires all three conditions at once (hours, written exam, practical test). A has enough
+hours and passed the written exam, but failed the practical test, so the full conjunction fails and the license is not
+granted.
+===== PAGE 33 =====
+b) False. B has only 240 hours, below the required 250 — the necessary hours condition fails on its own, so B
+cannot be granted the license regardless of passing both exams.
+c) False. 250+ flight hours is stated as a necessary condition, not a sufficient one — the license also requires
+passing both the written and practical exams. Hours alone do not guarantee anything.
+d) True. The license requires the conjunction of all three conditions; failing the practical test makes that
+conjunction false no matter how many hours were logged or whether the written exam was passed.
+e) True. Pilot A is exactly such a case: 300 hours (more than 250) but not granted the license because the
+practical test was failed.
+Task 56. Bank loan approval
+(source: 36-45logic.docx, original Task 26 — difficulty score 4/8)
+A bank's loan approval rule states: an applicant is approved if and only if [(credit score is at least 700) OR (has a
+qualified co-signer)] AND (debt-to-income ratio is below 40%). Applicant P has a credit score of 650, has a
+qualified co-signer, and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720, no co-signer, and a
+debt-to-income ratio of 45%.
+General Solution: Rule = [(score≥700) OR (co-signer)] AND (DTI<40%) — both the OR-bracket and the DTI
+check must hold. P: score<700 but has co-signer (OR ✓), DTI 35%<40%✓ ⇒ approved. Q: score≥700 (OR ✓) but
+DTI 45%≥40% ⇒ AND-part fails ⇒ not approved, regardless of the strong score.
+a) Applicant P, with a credit score of 650, a qualified co-signer, and a debt-to-income ratio of 35%, is NOT
+approved for the loan because their credit score alone is below 700.
+b) Applicant Q is approved for the loan.
+c) If an applicant's credit score is at least 700, they are always approved, regardless of their debt-to-income
+ratio.
+d) If an applicant's debt-to-income ratio is 40% or above, they can never be approved, even with a high credit
+score or a co-signer.
+e) It is possible for an applicant with a credit score below 700 to be approved, provided they have a co-signer
+and a debt-to-income ratio below 40%.
+Explanations:
+a) False. Trap: the OR-part is satisfied via the co-signer, regardless of the raw credit score being below 700.
+Combined with a 35% DTI (below the 40% threshold), both parts of the rule ARE satisfied, so P IS approved —
+the score alone does not disqualify P.
+b) False. For Q: score ≥ 700 is true, so the OR-part is true. But Q's DTI is 45%, which is not below 40%, so the
+AND-part fails. Since the AND-part fails, Q is not approved regardless of the OR-part.
+c) False. The rule also requires DTI below 40% (the AND-part). A applicant with a 700+ score but a 45% DTI,
+like Q, would still fail the AND-part and not be approved.
+d) True. The rule is (OR-part) AND (DTI < 40%). If DTI is 40% or above, this second conjunct is false, which
+makes the whole conjunction false no matter what the OR-part evaluates to.
+e) True. This is exactly P's situation: a score below 700 is compensated by the co-signer, making the OR-part
+true, and combined with DTI below 40% the applicant is approved.
+Task 57
+(source: 0_21-0_36logic.docx, original Task 79 — difficulty score 4/8)
+Context: A restaurant's policy is P ⇒ Q: "If a customer orders dessert, they receive one loyalty point." Diner Sam
+received a loyalty point despite NOT ordering dessert — he got one as part of a birthday promotion.
+===== PAGE 34 =====
+General Solution: Sam (no dessert, got a point anyway) is a case of ¬P ∧Q — this breaks the CONVERSE and the
+INVERSE simultaneously (since they're equivalent to each other), but says NOTHING about the original P ⇒Q,
+whose negation would instead require the opposite pattern: P ∧¬Q (ordered dessert, got no point).
+Statements (True / False):
+a) Sam's case is exactly what's needed to disprove the converse, "If a customer receives a loyalty point, they
+ordered dessert."
+b) A proof by contradiction of "not every point-earning diner ordered dessert" would begin by assuming the
+opposite — "every diner who received a point ordered dessert" — and then show Sam's case violates that
+assumption.
+c) Sam's case also disproves the original policy statement P ⇒ Q ("if dessert is ordered, a point is received").
+d) The correctly formed negation of the original policy would require finding a diner who ordered dessert and
+did NOT receive a point — a completely different scenario from Sam's.
+e) The inverse, "If a customer does not order dessert, they do not receive a point," is directly contradicted by
+Sam's case.
+Answers & Explanations:
+a) TRUE. Sam has Q true (received a point) and P false (no dessert), which is exactly the condition that breaks
+the converse Q ⇒ P.
+b) TRUE. This is the standard contradiction-proof structure: assume the negation of the target claim, then
+exhibit a real case that makes that assumption impossible.
+c) FALSE. Trap: Sam's case concerns someone who got a point WITHOUT ordering dessert — this is about the
+converse, not the original P ⇒ Q, which only makes a claim about people who DO order dessert. Sam says
+nothing about that group.
+d) TRUE. The negation of P ⇒ Q is P ∧ ¬Q — a diner who ordered dessert but got no point. Sam is the
+opposite case (¬P ∧ Q) and does not fit this negation at all.
+e) TRUE. Sam has ¬P true (no dessert) and ¬Q false (he did get a point), directly breaking the inverse ¬P ⇒
+¬Q, which claimed no-dessert customers never get a point.
+Tier 3 — Advanced
+Task 58. Nested quantifiers with a product equation
+(source: 11-25logic.docx, original Task 24 — difficulty score 5/8)
+Consider the statement: “For every positive integer m, there exists a positive integer n such that m·n = 100.”
+General Solution: For " ∀m ∃n, mn=100" to hold, every positive integer m needs n=100/m to be an integer —
+which only works when m divides 100 evenly. m=4 works (n=25) but m=3 fails (100/3 isn't an integer), so the
+universal claim is already false via this one counterexample. The correct negation swaps both quantifiers and
+negates the equation.
+a) The statement holds when m = 4 (there exists n with 4n = 100).
+b) The statement holds when m = 3 (there exists n with 3n = 100).
+c) The overall statement (“for every m, there exists n...”) is true.
+d) The correct negation of the overall statement is: “There exists a positive integer m such that for every
+positive integer n, m·n ≠ 100.”
+e) Reversing the quantifiers to “There exists n such that for every m, m·n = 100” would also produce a false
+statement.
+===== PAGE 35 =====
+Explanations:
+a) True. n = 25 satisfies 4 × 25 = 100.
+b) False. 100/3 is not an integer, so no positive integer n satisfies 3n = 100.
+c) False. m = 3 is a counterexample (part b): the universal claim fails to hold for this value of m, so the overall
+statement is false.
+d) True. Negating “for every m, there exists n such that mn=100” correctly flips the quantifiers ( ∀→∃, ∃→∀)
+and negates the equation, giving exactly this.
+e) True. Fixing a single n and requiring mn=100 for every positive integer m is impossible, since m would have
+to equal 100/n for every m simultaneously — impossible once m ranges over more than one value.
+Task 59. A theft investigation
+(source: 11-25logic.docx, original Task 16 — difficulty score 5/8)
+A theft occurred, and exactly one of four suspects — Ann, Ben, Cara, Dan — is guilty. It is known that: (1) If Ann is
+guilty, then Dan is innocent. (2) If Ben is innocent, then Cara is innocent. (3) Dan is guilty. (4) If Cara is guilty,
+then Ann is guilty.
+General Solution: Clue (3) directly states Dan is guilty; since exactly one suspect is guilty, that fact alone (without
+needing clues 1, 2, or 4) already makes everyone else — Ann, Ben, Cara — innocent. Clues (1) and (2) become
+vacuously true/uninformative once Ann and Cara's innocence is already settled.
+a) Dan is guilty.
+b) Ann is guilty.
+c) Clue (2) is essential to determine that Cara is innocent — without it, Cara's innocence could not be
+established.
+d) Clue (1) provides no additional information here, since its antecedent (Ann is guilty) is false.
+e) Even without knowing that exactly one suspect is guilty, clue (3) alone already tells us Dan is guilty.
+Explanations:
+a) True. This is stated directly in clue (3).
+b) False. Since exactly one suspect is guilty and that is Dan (part a), Ann must be innocent.
+c) False. Once we know exactly one person is guilty and that person is Dan (from clue 3 alone), every other
+suspect — including Cara — is automatically innocent; clue (2) is not needed to reach this conclusion.
+d) True. Since Ann is innocent, the antecedent of clue (1) is false, making the implication vacuously true and
+uninformative for this scenario.
+e) True. Clue (3) is a direct factual statement (“Dan is guilty”) that does not rely on the “exactly one guilty”
+assumption at all.
+Task 60. An island of truth-tellers and liars
+(source: 11-25logic.docx, original Task 13 — difficulty score 5/8)
+On an island, every inhabitant either always tells the truth or always lies. Two inhabitants make statements: X says,
+“Y always lies.” Y says, “X and I are both liars.”
+General Solution: Test the only two possibilities for X directly. If X is a liar, X's claim ("Y lies") is false, so Y is a
+truth-teller — but then Y's own claim would have to be true, forcing Y to be a liar too, a contradiction. So X must be
+a truth-teller; then Y is a liar, and everything Y says (including this statement) is false — consistent. This is the
+unique solution.
+a) X is a truth-teller.
+b) Y is a truth-teller.
+===== PAGE 36 =====
+c) Y's statement (“X and I are both liars”) is false.
+d) There are two equally valid solutions for the types of X and Y.
+e) If X were a liar, this would lead to a logical contradiction.
+Explanations:
+a) True. Suppose X is a liar: then X's claim “Y always lies” is false, so Y is a truth-teller; but then Y's statement
+“X and I are both liars” must be true, meaning Y is a liar — contradicting that Y is a truth-teller. So X cannot be
+a liar; X must be a truth-teller.
+b) False. Since X is a truth-teller (part a), X's statement “Y always lies” is true, so Y is a liar.
+c) True. Since Y is a liar (part b), everything Y says is false, including this statement.
+d) False. Only one consistent assignment exists (X truth-teller, Y liar); the alternative (X liar) leads to a direct
+contradiction, as shown in (a), so it is not a valid solution.
+e) True. This is exactly the contradiction demonstrated in part (a): assuming X is a liar forces Y to be
+simultaneously a truth-teller and a liar.
+Task 61. Quantifier order: exam scores
+(source: 11-25logic.docx, original Task 19 — difficulty score 5/8)
+Compare two statements about a class of students and several exams: Statement 1: “There exists a student who
+scored above 90 on every exam.” Statement 2: “For every exam, there exists a student who scored above 90.”
+General Solution: Statement 1 (∃ student, ∀ exam, score>90) is strictly stronger than Statement 2 (∀ exam, ∃
+student, score>90) — one student acing every exam automatically satisfies Statement 2, but having a possibly-
+different top scorer per exam does NOT require one student to dominate all exams. So 1 ⇒2 but not conversely.
+a) Statement 1 logically implies Statement 2.
+b) Statement 2 logically implies Statement 1.
+c) The two statements are logically equivalent.
+d) If the top scorer is different for each exam (no single student tops every exam), Statement 2 can be true while
+Statement 1 is false.
+e) If there is only one exam, the two statements become logically equivalent.
+Explanations:
+a) True. If one particular student scores above 90 on every exam, then for each individual exam, that same
+student witnesses the existential claim in Statement 2.
+b) False. Statement 2 only guarantees that each exam has some student scoring above 90, possibly a different
+student for each exam — it doesn't require one single student to excel on all of them.
+c) False. Since the implication only goes in one direction (part a true, part b false), the two statements are not
+equivalent.
+d) True. This is exactly the scenario that separates the two: each exam individually has a high scorer (Statement
+2 holds), but no one student dominates every exam (Statement 1 fails).
+e) True. With a single exam, both statements reduce to the same claim: “there exists a student who scored
+above 90 on the (one) exam.”
+Task 62. A hiring committee's voting rule
+(source: 26-35logic.docx, original Task 28 — difficulty score 5/8)
+A hiring committee of four reviewers (R1, R2, R3, R4) approves a candidate if at least three of the four vote yes, OR
+if exactly two vote yes and R1 is one of the two yes-votes (R1 has tie-breaking authority in that specific case only).
+For one candidate, R1 and R2 voted yes, while R3 and R4 voted no.
+===== PAGE 37 =====
+General Solution: Approval triggers on EITHER (i) at least 3 yes-votes (unconditionally), OR (ii) exactly 2 yes-
+votes with R1 specifically among them. R1+R2 yes (2 votes, R1 included) satisfies branch (ii); R2+R3 yes (2 votes,
+no R1) satisfies neither branch. Check any scenario against these two branches independently.
+a) The candidate is approved.
+b) If instead R2 and R3 had voted yes (with R1 and R4 voting no), the candidate would be approved under the
+same rule.
+c) If exactly three reviewers vote yes, the candidate is always approved, regardless of which three they are.
+d) R1's yes-vote is necessary for approval in every possible voting scenario.
+e) There exists a scenario with exactly 2 yes-votes where the candidate is not approved.
+Explanations:
+a) True. Exactly two reviewers (R1, R2) voted yes, and R1 is among them, satisfying the tie-break clause.
+b) False. This is also exactly 2 yes-votes, but R1 is not among them (R2, R3 voted yes, not R1) — so neither
+the “at least 3” clause nor the R1 tie-break clause is satisfied.
+c) True. The “at least three yes” clause applies unconditionally to any group of three or more, with no special
+requirement about which reviewers they are.
+d) False. For example, if R2, R3, and R4 all vote yes (3 yes-votes) while R1 votes no, the “at least three” clause
+is satisfied without R1's vote at all.
+e) True. For example, if R2 and R3 vote yes (without R1), that's exactly 2 yes-votes but without R1's
+involvement — neither clause is satisfied, so the candidate is not approved.
+Task 63. A warranty voiding clause
+(source: 26-35logic.docx, original Task 27 — difficulty score 5/8)
+A product warranty: “The warranty is void if the product is used commercially, except if the manufacturer has
+explicitly approved commercial use in writing, in which case the warranty remains valid provided the product is
+serviced annually.” Company Z uses the product commercially, has written approval from the manufacturer, but
+has never had the product serviced.
+General Solution: The exception is conjunctive: BOTH written approval AND annual servicing are needed to keep
+a commercially-used product's warranty valid; missing either one alone lets the base "void if commercial use" rule
+apply. Company Z has approval but no servicing, so the exception fails and the warranty is void.
+a) Company Z's warranty is void.
+b) Having written approval from the manufacturer alone is sufficient to keep the warranty valid despite
+commercial use.
+c) The rule's exception requires both approval AND annual servicing to keep the warranty valid under
+commercial use — satisfying only one of the two is not enough.
+d) If a company uses the product commercially without any manufacturer approval at all, the warranty could
+still remain valid provided they service it annually.
+e) If Company Z had never used the product commercially at all, the annual-servicing requirement mentioned in
+the clause would still apply to it.
+Explanations:
+a) True. Z has approval but has not serviced the product annually, so the exception's full requirement (approval
+AND servicing) is not satisfied, and the commercial-use voiding rule applies.
+b) False. As shown in (a), approval alone did not save Z's warranty — annual servicing is also required by the
+exception clause.
+c) True. This is a direct restatement of the clause's structure: the exception is conjunctive (approval AND
+servicing), not satisfied by either alone.
+===== PAGE 38 =====
+d) False. Trap: without approval, the exception's condition (approval AND servicing) automatically fails
+regardless of servicing — servicing alone cannot rescue the warranty. The base rule (void for commercial use)
+applies unconditionally here.
+e) False. The servicing requirement is specifically part of the exception clause for commercial use; if there's no
+commercial use at all, this clause and its servicing condition are simply not triggered.
+Task 64
+(source: 0_21-0_36logic.docx, original Task 67 — difficulty score 5/8)
+Context: Several independent mini-scenarios testing whether a proof or negation is correctly constructed.
+General Solution: Two separate skills are tested: (1) contradiction proofs must assume the OPPOSITE of the target
+claim, never the claim itself; (2) negating compound/quantified statements follows fixed rules — ¬(P ∧Q)≡¬P ∨¬Q
+(De Morgan), and ¬( ∃x ∀day,...) swaps to ∀x ∃day,¬(...), not the much stronger ∀x ∀day,¬(...).
+Statements (True / False):
+a) Proving "there is no smallest positive real number" by assuming such a number x exists and noting x/2 is
+smaller (a contradiction) is a valid proof by contradiction.
+b) A "proof" of "√3 is irrational" that begins "Assume √3 is irrational..." and proceeds from there is a valid
+proof by contradiction.
+c) The negation of "All flights are delayed and all trains are on time" is "No flight is delayed and no train is on
+time."
+d) For "Some employee always arrives late" (∃ an employee late every single day), the correct negation is "All
+employees are never late."
+e) To prove ∃x, P(x) true, one satisfying value suffices; to prove ∀x, P(x) true, one needs a general argument for
+an arbitrary x, not a finite check.
+Answers & Explanations:
+a) TRUE. Correct structure: assume the negation (a smallest positive real x exists), derive an impossibility (x/2
+is smaller still), forcing the original claim true.
+b) FALSE. Trap: a real contradiction proof must assume the OPPOSITE of the claim — here "Assume √3 IS
+rational..." Assuming the claim itself is circular, not a contradiction proof.
+c) FALSE. Trap: negating "P ∧ Q" gives "¬P ∨ ¬Q" (De Morgan), not "¬P ∧ ¬Q." Correct: "Some flight is not
+delayed, OR some train is not on time."
+d) FALSE. Trap: the original is ∃x, ∀day, Late(x,day); its negation is ∀x, ∃day,¬Late(x,day) — "every employee
+has at least one non-late day," weaker than "all employees are never late" ( ∀x, ∀day,¬Late).
+e) TRUE. Core asymmetry: one witness settles an existential claim; a universal claim needs reasoning covering
+every case, since a finite check can't rule out an untested counterexample.
+Task 65. Validity versus soundness
+(source: 11-25logic.docx, original Task 25 — difficulty score 5/8)
+Consider the argument: Premise 1: All economists study human behavior. Premise 2: Some economists specialize in
+game theory. Conclusion: Therefore, some people who specialize in game theory study human behavior.
+General Solution: Trace the logical chain: Premise 2 guarantees some economist-who-does-game-theory exists;
+Premise 1 guarantees that same person studies human behavior — so the conclusion necessarily follows, making the
+argument VALID regardless of whether the premises are actually true in reality (a separate property, "soundness").
+a) The argument is logically valid (the conclusion necessarily follows from the premises).
+b) The argument would still be valid if Premise 2 were changed to “No economists specialize in game theory.”
+===== PAGE 39 =====
+c) Validity means the conclusion is guaranteed true whenever the premises are true — it does not require the
+premises to actually be true in reality.
+d) If Premise 1 were false in reality, the argument could still be considered valid, even though it would then be
+unsound.
+e) This argument is an example of the fallacy of “affirming the consequent.”
+Explanations:
+a) True. Premise 2 guarantees some economist who also does game theory exists; Premise 1 guarantees that
+same person studies human behavior — so that person satisfies both game theory and studying human behavior,
+making the conclusion follow necessarily.
+b) False. With no economists doing game theory, the reasoning path used above breaks down entirely, and the
+conclusion no longer follows from the premises — changing Premise 2 this way removes the very link the valid
+argument depended on.
+c) True. This is the standard distinction between validity (a property of the argument's logical structure) and
+soundness (which additionally requires true premises).
+d) True. Validity only concerns whether the conclusion follows from the premises, not whether the premises
+are actually true — a valid argument with a false premise is simply unsound, not invalid.
+e) False. “Affirming the consequent” is a fallacy specific to conditional (if-then) reasoning; this argument
+instead uses quantified categorical statements and is, in fact, a valid inference, not a fallacy at all.
+Task 66
+(source: 0_21-0_36logic.docx, original Task 76 — difficulty score 5/8)
+Context: A sports fan claims P ⇒ Q: "If a player scores over 30 points in a game, the team wins." In one specific
+game, Player X scored 35 points, but the team lost 90–95.
+General Solution: Once a single real counterexample (35 points, team still lost) disproves P ⇒Q, its
+CONTRAPOSITIVE is automatically false too (always equivalent) — but the CONVERSE and INVERSE are
+logically INDEPENDENT of the original's truth value and must be checked on their own terms.
+Statements (True / False):
+a) This specific game is a valid counterexample that disproves the fan's general rule.
+b) Given this counterexample, the statement "there exists a game where a player scored over 30 points and the
+team did not win" is true.
+c) Since the original rule is false, its contrapositive, "If the team does not win, then no player scored over 30
+points," must also be false.
+d) Because the original rule is false, its converse, "If the team wins, then some player scored over 30 points," is
+therefore also automatically false.
+e) The inverse, "If a player does not score over 30 points, the team does not win," has a truth value that is
+independent of the original rule's truth value.
+Answers & Explanations:
+a) TRUE. Player X has P true (35 > 30 points) and Q false (team lost), exactly the condition that falsifies a
+universal implication.
+b) TRUE. This is simply the negation of the universal rule, ∃(game), P ∧ ¬Q, and the described game is a
+witness to it.
+c) TRUE. The contrapositive is always logically equivalent to the original statement, so if the original is false,
+the contrapositive must be false too.
+d) FALSE. Trap: a statement's truth value never determines its converse's truth value — they are logically
+independent claims. The converse would need to be checked on its own (e.g., against games the team won with
+no 30-point scorer) rather than inferred from the original being false.
+===== PAGE 40 =====
+e) TRUE. The inverse (¬P ⇒ ¬Q) is only equivalent to the converse, not the original — so knowing the original
+is false tells us nothing about the inverse either way; it must be evaluated independently.
+Task 67. A grading curve rule
+(source: 26-35logic.docx, original Task 34 — difficulty score 5/8)
+A professor's rule: “A student receives a B or higher if and only if their exam score is at least 70 — unless the
+professor applies a curve, in which case a score of at least 60 suffices for a B or higher.” In a particular exam, the
+professor did apply a curve. Student W scored 65.
+General Solution: The rule has two thresholds: 70 (no curve) or 60 (with curve applied) for a B or higher. This
+exam had the curve applied, so W's 65 is compared against 60, not 70 — and 65≥60 clears it, even though 65<70
+would have failed without the curve.
+a) Student W receives a B or higher on this exam.
+b) If the curve had not been applied, Student W would still receive a B or higher.
+c) The curve strictly lowers the threshold needed for a B or higher — it never raises it, based on how the rule is
+described.
+d) A student who scored 62 would receive a B or higher only if the curve is applied.
+e) The phrase “if and only if” in the rule means that scoring at least 70 is both necessary and sufficient for a B
+or higher under all circumstances, curve or no curve.
+Explanations:
+a) True. With the curve applied, the threshold is 60; W's score of 65 meets this threshold.
+b) False. Without the curve, the threshold is 70; W's score of 65 falls short of that, so W would not receive a B
+or higher in that case.
+c) True. As described in the rule, the curve always changes the threshold from 70 down to 60 — a decrease,
+making it easier to achieve a B or higher, never harder.
+d) True. A score of 62 fails the no-curve threshold (70) but meets the curved threshold (60), so the curve being
+applied is necessary for this particular student to receive a B or higher.
+e) False. This overreaches: the “if and only if” with threshold 70 only describes the baseline (no-curve)
+scenario. When a curve is applied, the operative threshold changes to 60, so 70 is not the necessary-and-
+sufficient threshold “under all circumstances” — only in the absence of a curve.
+Task 68. Gear teeth and coprimality
+(source: 36-45logic.docx, original Task 29 — difficulty score 5/8)
+Two meshing gears wear evenly over time only if their tooth counts m and n are coprime, meaning gcd(m, n) = 1
+(equivalently, no prime number divides both m and n). A machinist is checking two candidate gear pairs: Pair 1 has
+tooth counts 15 and 28. Pair 2 has tooth counts 24 and 36.
+General Solution: Factor each pair to check for shared primes: 15=3×5, 28=2²×7 (no shared prime ⇒ gcd=1,
+coprime); 24=2³×3, 36=2²×3² (share both 2 and 3 ⇒ gcd=12, NOT coprime). Coprimality only requires no SHARED
+prime factor — individual numbers can still be composite, and any two even numbers automatically share the prime
+2.
+a) Pair 1 (15 and 28) is coprime, so this pair will wear evenly.
+b) Pair 2 (24 and 36) is coprime.
+c) The correct negation of "m and n are coprime" is: "there exists a prime p such that p divides m and p divides
+n."
+d) If m and n are coprime and both are greater than 1, then m and n cannot both be even numbers.
+e) Every coprime pair of integers greater than 1 must include at least one prime number.
+===== PAGE 41 =====
+Explanations:
+a) True. 15 = 3 × 5 and 28 = 2² × 7 share no common prime factor, so gcd(15, 28) = 1 — the pair is coprime
+and will wear evenly.
+b) False. 24 = 2³ × 3 and 36 = 2² × 3² both share the prime factors 2 and 3, so gcd(24, 36) = 12 ≠ 1 — the pair is
+not coprime.
+c) True. Negating "for every prime p, not (p|m and p|n)" flips the universal quantifier to existential and negates
+the inner statement, giving exactly "there exists a prime p such that p divides both m and n."
+d) True. If both m and n were even, then 2 would divide both, so 2 would be a common prime factor —
+contradicting gcd(m, n) = 1. So coprime numbers cannot both be even.
+e) False. Pair 1 (15 and 28) is coprime by part (a), yet neither 15 (= 3×5) nor 28 (= 2²×7) is itself prime. A
+coprime pair only needs to share no common prime factor — each number individually can still be composite.
+Task 69. A subscription renewal and refund policy
+(source: 26-35logic.docx, original Task 31 — difficulty score 5/8)
+A policy: “If a subscriber cancels at least 3 days before the renewal date, the subscription does not renew and no
+charge applies. If a subscriber cancels fewer than 3 days before the renewal date, the subscription still renews, but
+a partial refund is issued afterward if and only if the subscriber had used less than 10% of the service during that
+period.” Subscriber K cancelled 2 days before the renewal date and had used 15% of the service that period.
+General Solution: Two branches depending on cancellation timing: ≥3 days before ⇒ clean non-renewal (refund
+clause never triggered); <3 days before ⇒ renews, AND a refund is issued iff usage<10%. K cancelled 2 days before
+(renews-branch) with 15% usage (≥10%, fails refund condition) ⇒ renews, no refund.
+a) Subscriber K's subscription renews (K is charged for the next period).
+b) Subscriber K receives a partial refund.
+c) If K had used only 5% of the service instead, K would have received a partial refund.
+d) If K had cancelled 4 days before the renewal date instead of 2, the subscription would not have renewed, and
+the 15% usage figure would then be irrelevant to any refund consideration.
+e) The refund condition (usage below 10%) applies regardless of how many days before the renewal date the
+subscriber cancels.
+Explanations:
+a) True. K cancelled only 2 days before (fewer than 3), which falls under the “still renews” branch of the
+policy.
+b) False. The refund requires usage below 10%; K used 15%, which fails this condition, so no refund is issued
+despite the subscription renewing.
+c) True. 5% is below the 10% threshold, and K still cancelled fewer than 3 days before, so the refund condition
+(usage < 10%, within the applicable branch) would be satisfied.
+d) True. 4 days before is at least 3 days, placing this scenario in the first branch (clean non-renewal, no charge)
+— the refund clause, which only applies in the “fewer than 3 days” branch, would never even be triggered,
+making the usage percentage moot.
+e) False. The refund condition is only relevant within the “fewer than 3 days before” branch; if cancelling at
+least 3 days before, there's no renewal or charge at all, so the usage-based refund clause doesn't come into play.
+Task 70
+(source: 0_21-0_36logic.docx, original Task 75 — difficulty score 5/8)
+Context: A clinical guideline states P ⇒ Q: "If a patient has a fever above 38°C, then antibiotics are prescribed."
+===== PAGE 42 =====
+General Solution: A valid counterexample to P⇒Q needs P STRICTLY true — exactly 38.0°C fails "above 38°C,"
+so it's automatically outside the rule's scope, not a counterexample. The converse (Q ⇒P) fails easily since antibiotics
+get prescribed for many other reasons; only the contrapositive is guaranteed.
+Statements (True / False):
+a) The negation of the guideline is: "A patient has a fever above 38°C and is not prescribed antibiotics." If
+observed, this would show the guideline was violated.
+b) A patient with a temperature of exactly 38.0°C who is not prescribed antibiotics is a valid counterexample to
+the guideline.
+c) The inverse, "If a patient's fever is not above 38°C, they are not prescribed antibiotics," could be false in
+practice — e.g. a patient with a bacterial infection and only 37.5°C fever might still receive antibiotics.
+d) The converse, "If a patient is prescribed antibiotics, their fever is above 38°C," is logically guaranteed by the
+original guideline.
+e) A proof by contradiction of "not every patient prescribed antibiotics has a fever above 38°C" would begin by
+assuming the opposite — that every such patient DOES have a fever above 38°C — and then exhibit a real case
+(like the one in part c) that violates that assumption.
+Answers & Explanations:
+a) TRUE. The negation of P ⇒ Q is P ∧ ¬Q, correctly formed here — and observing it in reality would indeed
+mean the guideline was broken.
+b) FALSE. Trap: a valid counterexample needs P strictly true. "Above 38°C" excludes exactly 38.0°C, so P is
+false for this patient, and the guideline makes no claim about them — not a counterexample.
+c) TRUE. This describes a realistic scenario where ¬P (fever not above 38°C) holds but Q (antibiotics
+prescribed) is still true — breaking the inverse ¬P ⇒ ¬Q, since antibiotics can be prescribed for reasons other
+than fever level.
+d) FALSE. Trap: this is the converse Q ⇒ P, not guaranteed. Antibiotics may be prescribed for infections
+unrelated to a high fever.
+e) TRUE. This is the standard structure of contradiction proofs: assume the negation of the target claim, then
+produce a case that makes that assumption impossible.
+Task 71
+(source: 0_21-0_36logic.docx, original Task 77 — difficulty score 5/8)
+Context: A security policy claims P ⇒ Q: "If a password is at least 12 characters, it is classified as strong." The
+password "aaaaaaaaaaaa" (12 identical letters) is NOT classified as strong due to low complexity.
+General Solution: A single counterexample disproves P ⇒Q as an absolute rule. From there: the CONVERSE
+(Q ⇒P) is a separate claim needing its own check; the INVERSE is always equivalent to the CONVERSE
+specifically (not the contrapositive); and the CONTRAPOSITIVE always shares the ORIGINAL's truth value (not
+the converse's) — three distinct pairings that are easy to cross up.
+Statements (True / False):
+a) The password "aaaaaaaaaaaa" is a genuine counterexample showing the policy's claim P ⇒ Q is false as an
+absolute rule.
+b) The converse, "If a password is strong, it is at least 12 characters," is a logically separate claim whose truth
+must be checked independently of the original.
+c) An 8-character, highly randomized password not classified as strong under this system directly disproves the
+converse.
+d) The inverse, "If a password is under 12 characters, it is not strong," is logically equivalent to the
+contrapositive — so its truth cannot be inferred from the converse.
+===== PAGE 43 =====
+e) Since the contrapositive of a false statement can sometimes still be true, we cannot determine whether "If a
+password is not strong, it is under 12 characters" is true or false without checking it separately from the original
+policy.
+Answers & Explanations:
+a) TRUE. This password has P true (12 characters) and Q false (not strong), which is exactly the condition that
+breaks the universal claim P ⇒ Q.
+b) TRUE. The converse Q ⇒ P is a distinct logical claim from P ⇒ Q; one being false says nothing about the
+other, so it must be evaluated on its own terms.
+c) FALSE. Trap: the converse states "strong ⇒ ≥12 characters," i.e. Q ⇒ P. An 8-character password that is not
+strong has ¬Q, which places no requirement on P at all — since Q is false, the converse is not even tested here,
+so this password cannot disprove it.
+d) FALSE. Trap: the inverse (¬P ⇒ ¬Q) is always logically equivalent to the CONVERSE (Q ⇒ P), not the
+contrapositive — each is the contrapositive of the OTHER, so this statement swaps the correct pairing.
+e) FALSE. Trap: the contrapositive ALWAYS shares the same truth value as the original statement — this is a
+structural guarantee, not a "sometimes." Since the original is false (see part a), the contrapositive is therefore
+also false, with no separate check needed.
+Task 72. Factory batch inspection
+(source: 36-45logic.docx, original Task 32 — difficulty score 5/8)
+A factory manager claims: "All 500 microchips in Batch 12 pass the stress test." During inspection, chip #317 in
+Batch 12 is found to have failed the stress test. Separately, Batch 13 was cancelled before production began, so it
+contains zero chips.
+General Solution: The manager's claim is a universal statement ("every chip passes"); chip #317 is one
+counterexample, enough to make it false — but the correct negation is only "SOME chip fails," not "ALL chips fail"
+(a common overreach). Separately, Batch 13 has zero chips, so any universal claim about it is vacuously true by
+default.
+a) The manager's claim about Batch 12 is false.
+b) The correct negation of the manager's claim is: "All chips in Batch 12 fail the stress test."
+c) The statement "All chips in Batch 13 pass the stress test" is vacuously true.
+d) "For every chip that failed, there exists a defect code explaining that specific failure" means exactly the same
+thing as "There exists a single defect code that explains every chip that failed."
+e) The fact that chip #317 failed is, by itself, enough to prove that "some chip in Batch 12 failed" is true.
+Explanations:
+a) True. The claim is a universal statement ("for every chip, it passes"). Chip #317 is a single counterexample,
+which is enough to make the universal claim false.
+b) False. The negation of "for all chips, P holds" is "there exists a chip for which P fails," not "for all chips, P
+fails." The correct negation is "there exists at least one chip in Batch 12 that did not pass," which is a much
+weaker (and true) statement than "all chips fail."
+c) True. Batch 13 has no chips at all, so the universal statement "every chip in Batch 13 passes" has nothing to
+check — it holds vacuously, exactly like ∀x ∈ ∅, P(x) is always true.
+d) False. The order of quantifiers matters. "∀ failed chip ∃ a defect code" only requires that each failed chip has
+some explanation, possibly a different one each time. "∃ a single code ∀ failed chip" is a much stronger claim
+— one code explaining every failure. The first does not imply the second.
+e) True. "Some chip in Batch 12 failed" is an existential statement, and exhibiting one concrete failing chip
+(#317) is precisely how such a statement is proven true.
+===== PAGE 44 =====
+Task 73
+(source: 0_21-0_36logic.docx, original Task 71 — difficulty score 5/8)
+Context: In number theory: P ⇒ Q: "If n is divisible by 6, then n is divisible by 3."
+General Solution: "n div by 6 ⇒n div by 3" is TRUE for every integer (since 6=2×3), making its negation
+impossible for ALL n, and its contrapositive TRUE for every n too — a statement's own truth is completely
+independent of whether its CONVERSE ("n div by 3 ⇒n div by 6," false via n=9) happens to hold.
+Statements (True / False):
+a) The negation, "n is divisible by 6 and n is not divisible by 3," describes a situation that occurs for infinitely
+many integers n.
+b) The converse, "If n is divisible by 3, then n is divisible by 6," is false — n = 9 is a counterexample (divisible
+by 3, not by 6).
+c) The inverse, "If n is not divisible by 6, then n is not divisible by 3," is logically equivalent to the converse, so
+it is also false, with n = 9 again serving as its counterexample.
+d) The contrapositive, "If n is not divisible by 3, then n is not divisible by 6," is false for some integers n.
+e) Since the converse is false, the original statement "n divisible by 6 ⇒ n divisible by 3" must also be false.
+Answers & Explanations:
+a) FALSE. Trap: since 6 = 2×3, every multiple of 6 is automatically a multiple of 3, so the situation "divisible
+by 6 but not by 3" is impossible — the negation is unsatisfiable for EVERY integer n, not true for infinitely
+many.
+b) TRUE. 9 is divisible by 3 but not by 6, directly breaking the converse Q ⇒ P.
+c) TRUE. The inverse ¬P ⇒ ¬Q is always logically equivalent to the converse Q ⇒ P, so since the converse
+fails at n = 9 (3 | 9 but 6 ∤ 9), the inverse fails there too: n = 9 is not divisible by 6 (¬P true) yet is divisible by 3
+(¬Q false).
+d) FALSE. Trap: the contrapositive is always equivalent to the original statement, and the original is materially
+true (any multiple of 6 is a multiple of 3), so the contrapositive is actually true for EVERY integer n, not false
+for some.
+e) FALSE. Trap: a statement's truth is independent of its converse's truth. The original "6 ⇒ 3" is true precisely
+because 6 = 2×3, regardless of the converse being false — confusing the two is a very common error.
+Task 74. ID number verification rule
+(source: 36-45logic.docx, original Task 33 — difficulty score 5/8)
+A system rule states: if the square of an ID number is even, then the ID number itself is even. A verifier is checking
+two IDs: 1234 and 4321. Note that 1234² = 1,522,756 (even) and 4321² = 18,671,041 (odd).
+General Solution: The rule is n² even ⇒n even. Proof by CONTRAPOSITION assumes the negated CONCLUSION
+(n odd) and derives the negated HYPOTHESIS (n² odd) — not the reverse. Proof by CONTRADICTION instead
+assumes the whole rule is false (n² even AND n odd) and derives an impossibility. The rule and its converse are
+logically distinct statements, even though both happen to be true here.
+a) Since 1234² is even, the rule guarantees that 1234 itself is even — which is indeed true.
+b) To prove the rule by contraposition, one should assume the ID number is even and derive that its square is
+even.
+c) Since 4321² is odd, the contrapositive form of the rule guarantees that 4321 itself is odd — which is indeed
+true.
+d) The rule ("if n² is even, then n is even") and its converse ("if n is even, then n² is even") are logically the
+same statement.
+===== PAGE 45 =====
+e) A proof of this rule by contradiction would begin by assuming that n² is even AND n is odd, then deriving a
+contradiction from that assumption.
+Explanations:
+a) True. 1234² = 1,522,756 is even, satisfying the rule's hypothesis, and 1234 itself is indeed even, satisfying
+the conclusion — consistent with the rule.
+b) False. Proof by contraposition of "n² even ⇒ n even" means assuming the negation of the conclusion (n is
+odd) and deriving the negation of the hypothesis (n² is odd) — not assuming n is even, which would be
+assuming the conclusion itself.
+c) True. 4321² = 18,671,041 is odd, so n² even fails, meaning n² odd. By the contrapositive (n² odd ⇒ n odd),
+4321 must be odd — and indeed 4321 is odd.
+d) False. A conditional statement and its converse are generally not logically equivalent. Although both happen
+to be true for even/odd squares of integers, as general logical forms "P ⇒ Q" and "Q ⇒ P" are distinct
+statements — one can be true while the other is false in other contexts.
+e) True. Proof by contradiction of "n² even ⇒ n even" assumes the statement is false, which means the
+hypothesis holds (n² even) while the conclusion fails (n is odd); this exact combined assumption is then shown
+to lead to a contradiction.
+Task 75
+(source: 0_21-0_36logic.docx, original Task 73 — difficulty score 6/8)
+Context: Thales' theorem gives the universal statement: "Every triangle inscribed in a semicircle, with the
+diameter as one side, has a right angle at the third vertex."
+General Solution: This is another rare case where the CONVERSE of a true geometric theorem also happens to be
+true — but that doesn't make inverse and ORIGINAL equivalent in general; the inverse is only ever guaranteed
+equivalent to the CONVERSE, and it's true here only because the converse happens to be true in this specific case.
+Statements (True / False):
+a) The negation of this universal claim is: "There exists such a triangle without a right angle."
+b) Since Thales' theorem proves the original statement true, the negation formed above must be a false
+statement.
+c) The converse, "If a triangle has a right angle, it can be inscribed in a semicircle with its hypotenuse as the
+diameter," is also a true geometric fact.
+d) Because both the original statement and its converse are true here, this is an example where the implication is
+effectively a biconditional, even though converses are not true in general.
+e) Since the original statement is true, the inverse must also be true, because the inverse and the original are
+always logically equivalent to each other.
+Answers & Explanations:
+a) TRUE. ¬(∀ x, P(x)) ≡ ∃x, ¬P(x): negating the universal claim correctly yields an existence claim for a
+counterexample triangle.
+b) TRUE. Since Thales' theorem establishes the universal claim as true, no triangle without a right angle can be
+inscribed this way, so the existential negation is false.
+c) TRUE. This is indeed a true converse in classical geometry: any right triangle can be inscribed in a circle
+with its hypotenuse as the diameter — a special case where the converse happens to hold.
+d) TRUE. When both P ⇒ Q and its converse Q ⇒ P are true, P and Q are materially equivalent (P ⇔ Q) — an
+unusual but valid situation, since in general a converse need not match the original.
+e) FALSE. Trap: the inverse is NOT logically equivalent to the original in general — it is equivalent to the
+converse. The inverse happens to be true here only because the converse is true in this specific geometric case,
+not because inverse and original are structurally the same.
+===== PAGE 46 =====
+Task 76
+(source: 0_21-0_36logic.docx, original Task 72 — difficulty score 6/8)
+Context: A number-theory theorem states P ⇒ Q: "If a number is a perfect square, then it has an odd number of
+positive divisors." (This is a proven true theorem.)
+General Solution: This is the rare case where BOTH the original ("perfect square ⇒odd # divisors") AND its
+converse are true (a genuine number-theory biconditional), so the inverse is true too. But a valid counterexample to
+the original still needs P TRUE and Q FALSE — any non-square number has P already false, making it
+automatically vacuous, never a counterexample.
+Statements (True / False):
+a) The correctly formed negation of the theorem is: "A number is a perfect square and it has an even number of
+divisors."
+b) 36 is a perfect square with divisors {1,2,3,4,6,9,12,18,36} — 9 divisors (odd), which is consistent with the
+theorem and not a counterexample to it.
+c) The converse, "If a number has an odd number of divisors, then it is a perfect square," is also a true
+statement, so both directions of the implication hold here.
+d) Since 20 is not a perfect square and has divisors {1,2,4,5,10,20} (6 divisors, even), 20 is a valid
+counterexample disproving the original theorem.
+e) The inverse, "If a number is not a perfect square, it has an even number of divisors," is also true in this case,
+since the converse is true.
+Answers & Explanations:
+a) TRUE. The negation of P ⇒ Q is P ∧ ¬Q, correctly formed as "perfect square AND even number of
+divisors."
+b) TRUE. 36 = 6² is a perfect square, and its 9 divisors is an odd count — exactly what the theorem predicts, so
+this is a confirming case, not a counterexample.
+c) TRUE. This is a genuine, well-known number-theory fact: divisors of n pair up as (d, n/d) except when d =
+n/d, which only happens for perfect squares — so an odd divisor count occurs exactly for perfect squares,
+making the converse true as well.
+d) FALSE. Trap: a valid counterexample to P ⇒ Q needs P TRUE and Q FALSE. Since 20 is not a perfect
+square, P is already false for 20, making the implication vacuously true for that case — it cannot be a
+counterexample regardless of its divisor count.
+e) TRUE. Since the converse Q ⇒ P is true here, its logically equivalent partner, the inverse ¬P ⇒ ¬Q, must
+also be true — consistent with the special case where a theorem holds in both directions.
+Tier 4 — Expert / Multi-Step Puzzles
+Task 77. Four friends and their jobs
+(source: 26-35logic.docx, original Task 30 — difficulty score 7/8)
+Four friends — Emma, Felix, Grace, and Hugo — each have a different job: Doctor, Engineer, Teacher, or Lawyer.
+(1) Emma is a doctor if and only if Felix is not an engineer. (2) Felix is an engineer if and only if Grace is a
+teacher. (3) Grace is not a teacher. (4) Hugo is a lawyer.
+General Solution: Start from clue (3): Grace≠teacher. Clue (2)'s biconditional (Felix=engineer ⇔ Grace=teacher)
+then forces Felix≠engineer. Clue (1)'s biconditional (Emma=doctor ⇔ Felix≠engineer) then forces Emma=doctor.
+With Doctor and Lawyer (clue 4) assigned, only Engineer/Teacher remain for Felix/Grace; since Felix≠engineer,
+Felix=teacher and Grace=engineer. This chain (3)→(2)→(1) never needed clue 4.
+===== PAGE 47 =====
+a) Emma is a doctor.
+b) Felix is a teacher, and this can be determined directly from clue (2) alone, without needing any other clues.
+c) Grace is an engineer.
+d) Clue (3) is redundant — the full job assignment could be determined without it.
+e) If clue (4) were removed entirely, we could still determine that Emma is a doctor from clues (1)–(3) alone.
+Explanations:
+a) True. By (3), Grace is not a teacher, so by the biconditional in (2), Felix is not an engineer either (both sides
+of an iff must match). Then by the biconditional in (1), since “Felix not engineer” is true, “Emma is a doctor”
+must also be true.
+b) False. Clue (2) alone (with clue 3) only tells us Felix is NOT an engineer — it doesn't by itself tell us Felix is
+a teacher. Concluding “teacher” specifically requires narrowing the remaining job options using clues (1) and
+(4) as well (to establish Emma=doctor and Hugo=lawyer, leaving only Engineer/Teacher for Felix and Grace).
+c) True. Once Doctor (Emma) and Lawyer (Hugo) are assigned, only Engineer and Teacher remain for Felix
+and Grace. Felix is not an engineer (from part a's reasoning) so Felix is the teacher, leaving Grace as the
+engineer.
+d) False. Clue (3) is essential — it is the starting fact that triggers the whole chain of deductions (via clues 2
+and 1) leading to Emma being a doctor; without it, that chain cannot begin.
+e) True. The derivation of “Emma is a doctor” only used clues (1), (2), and (3) in sequence — clue (4) about
+Hugo was never needed for that specific conclusion.
+Task 78
+(source: 0_21-0_36logic.docx, original Task 78 — difficulty score 7/8)
+Context: A real-analysis theorem states P ⇒ Q: "If a sequence converges, then it is bounded." (This is a proven
+true theorem.)
+General Solution: "Convergent⇒bounded" is a proven true theorem, so its negation is impossible and its
+contrapositive is true too — completely independent of the fact that its CONVERSE ("bounded ⇒convergent") is
+false, disproven by the oscillating sequence (−1)ⁿ. The inverse shares the converse's fate (false) via the same
+counterexample, since inverse≡converse always.
+Statements (True / False):
+a) The negation, "a sequence converges and is not bounded," describes an impossible situation, since the
+theorem holds for every sequence.
+b) The converse, "If a sequence is bounded, then it converges," is false — the sequence (−1)ⁿ (that is, −1, 1, −1,
+1, ...) is bounded but does not converge, serving as a counterexample.
+c) The inverse, "If a sequence does not converge, then it is not bounded," is logically equivalent to the converse,
+and is therefore also false, using the same sequence (−1)ⁿ as its counterexample.
+d) The contrapositive, "If a sequence is not bounded, then it does not converge," is true, and is in fact the
+version most commonly used to prove specific unbounded sequences (like n, 2n, n²) do not converge.
+e) Because the converse is false, the original theorem itself must also be false.
+Answers & Explanations:
+a) TRUE. Since the theorem is proven true for every sequence, no sequence can simultaneously converge and
+be unbounded — the negation describes an empty, impossible case.
+b) TRUE. (−1)ⁿ never settles on a single value (it oscillates forever between −1 and 1), so it does not converge,
+yet it stays within [−1, 1], so it is bounded — Q true (bounded), P false (doesn't converge), breaking Q ⇒ P.
+c) TRUE. The inverse ¬P ⇒ ¬Q is always equivalent to the converse Q ⇒ P. Since (−1)ⁿ makes the converse
+false (bounded but not convergent), it makes the inverse false too: ¬P is true (doesn't converge) but ¬Q is false
+(it IS bounded).
+===== PAGE 48 =====
+d) TRUE. The contrapositive is always equivalent to the original theorem, which is true, so the contrapositive is
+true too — and indeed it's the standard tool for proving unboundedness implies divergence.
+e) FALSE. Trap: a statement's truth does not depend on its converse's truth. The original theorem ("convergent
+⇒ bounded") is a proven true fact, entirely independent of the converse being false — this is the same confusion
+seen with the divisibility and sports examples earlier.
+Task 79. Three inhabitants of the island
+(source: 26-35logic.docx, original Task 33 — difficulty score 8/8)
+On the same island (truth-tellers always tell the truth, liars always lie), three inhabitants speak. J says: “Exactly
+one of us is a truth-teller.” K says: “J is lying.” L says: “K and I are the same type (both truth-tellers or both
+liars).”
+General Solution: Test J=truth-teller first: forces exactly 1 truth-teller (J), making K,L liars — but then L's claim
+("K and I are the same type") would actually be TRUE, which a liar can't say, contradiction. So J=liar, meaning the
+true count is 0 or 2. Testing 0 also breaks (K's statement would end up true). So exactly 2 remain: K and L are truth-
+tellers, J is the liar — the unique solution.
+a) J is a liar.
+b) K is a truth-teller.
+c) L is a truth-teller.
+d) Exactly one of the three inhabitants is a truth-teller.
+e) There is another consistent assignment of types (besides the one found) that also satisfies all three statements.
+Explanations:
+a) True. Assuming J is a truth-teller leads to a contradiction: J's claim would force exactly one truth-teller (J),
+making K and L both liars; but then L's statement “K and I are the same type” would actually be true (both
+liars), which a liar cannot truthfully state — a contradiction. So J must be a liar.
+b) True. Since J is a liar, J's claim (“exactly one truth-teller”) is false, so the true count is 0 or 2 among J,K,L.
+Testing “0” leads to a contradiction (K, as a liar, would need “J is lying” to be false, but J really is lying,
+making K's statement true — impossible for a liar). So the count must be 2, meaning both K and L are truth-
+tellers.
+c) True. As established in (b), the only consistent case has both K and L as truth-tellers.
+d) False. In the actual consistent solution, there are two truth-tellers (K and L) and one liar (J) — not exactly
+one truth-teller, which is precisely why J's original claim was false.
+e) False. Checking all cases systematically (J truth-teller: contradiction; J liar with 0 other truth-tellers:
+contradiction; J liar with 2 other truth-tellers: fully consistent) shows exactly one assignment satisfies all three
+statements — there is no second valid solution.
+Task 80. Conference attendance rules
+(source: 26-35logic.docx, original Task 26 — difficulty score 8/8)
+Four colleagues — Ana, Boris, Ceci, Dmitri — are deciding whether to attend a conference. (1) If Ana attends, then
+Boris does not attend. (2) If Boris does not attend, then Ceci attends. (3) If Ceci attends, then Dmitri does not attend
+— unless Ana also attends, in which case Dmitri's attendance is unrestricted. (4) Dmitri attends.
+General Solution: Rule (4) fixes Dmitri=attends. Case-split on Ana: if Ana attends, rule 1 forces Boris out, rule 2
+forces Ceci in, and rule 3's exception (triggered by Ana) frees Dmitri to attend too — a valid solution. If Ana does
+not attend, rule 3 forces Ceci out (no exception now), and rule 2's contrapositive forces Boris in — a second valid
+solution. Both branches are fully consistent, so the puzzle has two solutions, not one.
+a) Dmitri attends the conference.
+===== PAGE 49 =====
+b) The rules uniquely determine whether Ana attends.
+c) In at least one solution consistent with the rules, exactly three of the four colleagues attend.
+d) It is possible for both Ana and Boris to not attend simultaneously.
+e) Without rule (3)'s “unless” exception (i.e. if Ceci attending always forced Dmitri not to attend, no
+exceptions), the rules would become impossible to satisfy at all given that Dmitri attends.
+Explanations:
+a) True. This is given directly by rule (4).
+b) False. Working through the rules yields two consistent solutions: one where Ana attends (forcing Boris out,
+then Ceci in via rule 2, with rule 3's exception permitting Dmitri to attend too), and one where Ana does not
+attend (forcing Ceci out to satisfy rule 3 given Dmitri attends, which via rule 2's contrapositive forces Boris to
+attend). Both fully satisfy all four rules, so Ana's attendance is not uniquely determined.
+c) True. In the first solution described above (Ana, Ceci, and Dmitri attend; Boris does not), exactly three
+colleagues attend.
+d) False. In the two valid solutions found, exactly one of Ana/Boris attends and the other doesn't in each —
+there's no valid assignment where both are simultaneously absent, since removing Ana forces Ceci out (via rule
+3, given Dmitri attends) which in turn forces Boris in (via rule 2's contrapositive).
+e) False. Without the exception, rule (3) would simply force ¬Dmitri whenever Ceci attends; since Dmitri does
+attend, this would just force Ceci to not attend — which is exactly the second solution found above, still
+perfectly consistent. The exception's removal only eliminates the first solution, it doesn't make the whole system
+unsolvable.
+PART III — Extra Challenge: Rule-Based Deduction
+Puzzles
+7 new puzzles: 3 Medium, 3 Hard, 1 SUPER DUPER HARD — each with its own cast of characters and rule set, sorted from
+easiest to hardest.
+Medium Difficulty
+Task 81. A Study Group's Attendance
+(new — rule-based deduction puzzle, Medium)
+Four students — Noah, Maria, Leo, and Zoe — are deciding whether to join a study session. Their attendance
+follows these rules:
+1. If Noah joins, then Maria joins.
+2. Leo joins only if Zoe joins.
+3. At least one of Maria or Leo joins.
+4. If Zoe joins, then Noah does not join.
+General Solution: Chain the rules: rule 4 (Zoe ⇒¬Noah) means Noah ⇒¬Zoe by contrapositive; rule 2 (Leo ⇒Zoe)
+combined with rule 4 means Leo ⇒¬Noah, so Leo and Noah can never join together. Setting Noah=out, Maria=in,
+Leo=out, Zoe=out satisfies every rule at once, showing that no single friend beyond Maria (via rule 3) is ever strictly
+required.
+Statements (True / False):
+===== PAGE 50 =====
+a) If Noah joins, then Zoe does not join.
+b) Leo and Noah can join the study session together.
+c) It is possible that Maria joins but Leo does not.
+d) If Maria does not join, then Noah does not join.
+e) Zoe must join the study session.
+Answers & Explanations:
+a) TRUE. This is the contrapositive of rule 4 (Zoe → ¬Noah becomes Noah → ¬Zoe) — always logically
+guaranteed, independent of who actually joins.
+b) FALSE. Trap: if Leo joins, rule 2 forces Zoe to join too; but rule 4 then forces Noah NOT to join. So Leo
+joining always forces Noah out — they can never join together.
+c) TRUE. Setting Noah = out, Maria = in, Leo = out satisfies every rule: rule 1 is vacuous (Noah is out), rule 3
+is satisfied by Maria alone, and rules 2 and 4 place no further demands. A fully consistent scenario exists.
+d) TRUE. This is the contrapositive of rule 1 (Noah → Maria becomes ¬Maria → ¬Noah) — always
+guaranteed.
+e) FALSE. Trap: the scenario from part (c) — Noah out, Maria in, Leo out, Zoe out — satisfies all four rules
+without Zoe joining at all, so Zoe is never strictly required.
+Task 82. Board Game Night
+(new — rule-based deduction puzzle, Medium)
+Four friends — Ben, Carla, Dan, and Ella — are deciding whether to play a board game. Their participation
+follows these rules:
+1. If Ben plays, then Carla plays.
+2. Dan plays only if Ella plays.
+3. If Carla plays, then Dan does not play.
+4. At least one of Ben or Ella plays.
+General Solution: Chaining rules 1 and 3: Ben ⇒Carla⇒¬Dan, so Ben and Dan can never play together. Setting
+Ben=out, Carla=out, Dan=out, Ella=in satisfies every rule (rule 4 via Ella alone), showing that Carla is never strictly
+required either.
+Statements (True / False):
+a) If Ben plays, then Dan does not play.
+b) Ben and Dan can play together.
+c) It is possible that only Ella plays, with Ben, Carla, and Dan all sitting out.
+d) If Dan plays, then Carla does not play.
+e) Carla must play the game.
+Answers & Explanations:
+a) TRUE. Chaining rules 1 and 3: Ben → Carla → ¬Dan, so Ben joining forces Dan out.
+b) FALSE. Trap: this directly contradicts part (a) — since Ben → ¬Dan is guaranteed, Ben and Dan can never
+both play.
+c) TRUE. With Ben, Carla, Dan all out and Ella in: rule 1 is vacuous, rule 2 is vacuous (Dan is out), rule 3 is
+vacuous, and rule 4 is satisfied by Ella alone. Fully consistent.
+d) TRUE. This is the contrapositive of rule 3 (Carla → ¬Dan becomes Dan → ¬Carla) — always guaranteed.
+e) FALSE. Trap: the scenario from part (c) has Carla sitting out entirely while every rule still holds, so Carla is
+never strictly required.
+===== PAGE 51 =====
+Task 83. Splitting the Cooking Duty
+(new — rule-based deduction puzzle, Medium)
+Three roommates — Owen, Priya, and Quinn — are deciding who cooks dinner tonight. The arrangement follows
+these rules:
+1. If Owen cooks, then Priya does not cook.
+2. At least one of Owen or Priya cooks.
+3. If Priya cooks, then Quinn also cooks.
+4. Quinn cooks only if Owen does not cook.
+General Solution: Chaining rule 4 by contrapositive gives Owen ⇒¬Quinn. Rule 2 (Owen ∨Priya) blocks both from
+sitting out at once, ruling out "Quinn cooks alone." Setting Owen=out, Priya=in, Quinn=in (forced by rule 3)
+satisfies every rule, showing Owen is never strictly required.
+Statements (True / False):
+a) If Owen cooks, then Quinn does not cook.
+b) Owen and Priya can both cook tonight.
+c) It is possible that neither Owen nor Priya cooks, and Quinn cooks alone.
+d) Priya cooking guarantees that Quinn also cooks.
+e) Owen must cook tonight.
+Answers & Explanations:
+a) TRUE. This is the contrapositive of rule 4 (Quinn → ¬Owen becomes Owen → ¬Quinn) — always
+guaranteed.
+b) FALSE. Trap: rule 1 directly forbids this — Owen cooking forces Priya not to cook.
+c) FALSE. Trap: rule 2 requires at least one of Owen or Priya to cook. If both sit out, rule 2 is violated outright
+— Quinn cooking "alone" (with neither Owen nor Priya) is never a valid scenario, no matter what Quinn does.
+d) TRUE. This is simply rule 3 restated directly — always guaranteed by assumption.
+e) FALSE. Trap: setting Owen out, Priya in, Quinn in satisfies every rule (rule 2 via Priya, rule 3 forces Quinn
+in, rule 4 is consistent since Owen is out, rule 1 is vacuous) — a fully valid scenario where Owen never cooks at
+all.
+Hard Difficulty
+Task 84. A Five-Person Day Trip
+(new — rule-based deduction puzzle, Hard)
+Five club members — Diego, Fatima, Grace, Hugo, and Iris — are deciding whether to join a day trip. Their
+attendance follows these rules:
+1. If Diego goes, then Fatima goes.
+2. Grace goes unless Hugo goes.
+3. If Fatima goes, then Grace does not go.
+4. At least one of Diego or Hugo goes.
+5. If Iris goes, then Diego does not go.
+6. Hugo goes only if Fatima does not go.
+===== PAGE 52 =====
+General Solution: Assuming Diego goes triggers an unavoidable contradiction (chasing through rules 1,3,2,6 forces
+Fatima to be both true and false), so Diego is always out; rule 4 then forces Hugo in, and rule 6 forces Fatima out —
+with Grace and Iris left completely free of any further constraint.
+Statements (True / False):
+a) Diego attends the trip in at least one valid scenario.
+b) If Fatima goes, then Hugo does not go.
+c) Hugo must go on the trip.
+d) It is possible for both Grace and Iris to attend together.
+e) If Iris goes, then Fatima goes.
+Answers & Explanations:
+a) FALSE. Trap: suppose Diego goes. Rule 1 forces Fatima to go; rule 3 then forces Grace out; rule 2's
+contrapositive (¬Grace → Hugo) then forces Hugo in; but rule 6 says Hugo going forces Fatima OUT —
+directly contradicting rule 1's conclusion that Fatima is in. This is a genuine contradiction, so Diego can never
+go in any valid scenario.
+b) TRUE. This is the contrapositive of rule 6 (Hugo → ¬Fatima becomes Fatima → ¬Hugo) — a structural
+guarantee, always true regardless of the specific scenario.
+c) TRUE. Since Diego is always out (part a), rule 4 (Diego or Hugo) can only be satisfied by Hugo — so Hugo
+must go in every valid scenario.
+d) TRUE. With Diego out, Hugo in, and Fatima out (all forced), neither rule 2, 3, nor 5 places any further
+constraint linking Grace and Iris — so Grace = in and Iris = in together is a fully consistent scenario.
+e) FALSE. Trap: Fatima is forced out in every valid scenario (since Hugo is always in, and rule 6 forces Fatima
+out whenever Hugo is in). But Iris can still freely be in (see part d) — giving a valid scenario where Iris is in yet
+Fatima is out, which breaks this implication.
+Task 85. Six Interns and the Conference Talk
+(new — rule-based deduction puzzle, Hard)
+Six interns — Aiden, Bella, Caleb, Daisy, Ethan, and Faye — are deciding who will present at a conference. Their
+participation follows these rules:
+1. If Aiden presents, then both Bella and Caleb present.
+2. At least one of Daisy or Ethan presents.
+3. If Bella presents, then Daisy does not present.
+4. Caleb presents only if Ethan presents.
+5. If Faye presents, then Aiden presents.
+6. Ethan presents only if Bella does not present.
+General Solution: Assuming Aiden presents forces a contradiction via rules 1, 4, 6 (Bella both in and out), so
+Aiden is always out; assuming Bella presents separately forces a different contradiction via rules 3, 6, 2 (violates the
+Daisy-or-Ethan requirement), so Bella is always out too — leaving Caleb, Daisy, Ethan with genuine remaining
+freedom, and Faye forced out by rule 5's contrapositive.
+Statements (True / False):
+a) Aiden is forced to NOT present in every valid scenario.
+b) It is possible for Bella to present in some valid scenario.
+c) If Caleb presents, then Ethan also presents.
+d) It is possible for Faye to present at the conference.
+e) There is exactly one valid way to decide who presents, consistent with all six rules.
+===== PAGE 53 =====
+Answers & Explanations:
+a) TRUE. Suppose Aiden presents. Rule 1 forces both Bella and Caleb in; rule 4 then forces Ethan in (since
+Caleb is in); rule 6 then forces Bella OUT (since Ethan is in) — directly contradicting rule 1's requirement that
+Bella is in. This contradiction means Aiden can never present.
+b) FALSE. Trap: suppose Bella presents. Rule 3 forces Daisy out; rule 6 forces Ethan out (since Bella is in).
+But then rule 2 (Daisy or Ethan) has both sides false — violated! So Bella presenting always leads to a
+contradiction; Bella can never present either.
+c) TRUE. This is simply rule 4 restated directly — a structural guarantee, always true regardless of the specific
+scenario.
+d) FALSE. Trap: rule 5's contrapositive is ¬Aiden → ¬Faye. Since Aiden is always out (part a), Faye is
+therefore always forced out too — Faye can never present.
+e) FALSE. Trap: with Aiden and Bella both forced out, rules 2 and 4 still leave real freedom — for instance,
+Caleb = out, Daisy = in, Ethan = out satisfies every rule, and so does Caleb = in, Ethan = in, Daisy = either.
+Multiple distinct valid assignments exist, so the solution is not unique.
+Task 86. Assigning Paper Reviewers
+(new — rule-based deduction puzzle, Hard)
+Five researchers — Petra, Quinn, Ravi, Sana, and Theo — are being assigned to review a paper. The assignment
+follows these rules:
+1. If Petra reviews, then Quinn does not review.
+2. Ravi reviews unless Sana reviews.
+3. If Quinn does not review, then Theo reviews.
+4. At least one of Petra or Sana reviews.
+5. If Theo reviews, then Ravi does not review.
+6. Sana reviews only if Petra reviews.
+General Solution: Assuming Petra does NOT review forces Sana out too (rule 6's contrapositive), which then
+breaks rule 4 entirely — so Petra must always review. From there, one unbroken chain (rules 1→3→5→2) forces
+every other variable in turn (Quinn out, Theo in, Ravi out, Sana in), leaving no freedom anywhere — a fully unique
+solution.
+Statements (True / False):
+a) Petra must review the paper in every valid assignment.
+b) If Quinn reviews, then Petra does not review.
+c) It is possible for Ravi to review the paper in some valid assignment.
+d) In the (unique) valid assignment, both Theo and Sana review the paper.
+e) There are multiple different valid ways to assign reviewers consistent with all six rules.
+Answers & Explanations:
+a) TRUE. Suppose Petra does not review. Rule 6's contrapositive (¬Petra → ¬Sana) forces Sana out too. But
+then rule 4 (Petra or Sana) has both sides false — violated! So Petra not reviewing is impossible; Petra must
+always review.
+b) TRUE. This is the contrapositive of rule 1 (Petra → ¬Quinn becomes Quinn → ¬Petra) — a structural
+guarantee, always true.
+c) FALSE. Trap: tracing the forced chain from Petra = in: rule 1 forces Quinn out, rule 3 then forces Theo in,
+rule 5 then forces Ravi out. Since Petra is always in (part a), this chain always fires, so Ravi is always forced
+out — never able to review.
+d) TRUE. Continuing the chain from part (c): Theo is forced in, and rule 2's contrapositive (¬Ravi → Sana)
+forces Sana in once Ravi is forced out. Both Theo and Sana are in in the one valid assignment.
+===== PAGE 54 =====
+e) FALSE. Trap: as shown above, once Petra = in is forced, every other variable (Quinn, Theo, Ravi, Sana) is
+forced in a single unbroken chain — leaving no freedom anywhere. The assignment is completely unique, not
+one of several options.
+🔥 SUPER DUPER HARD 🔥
+Task 87. Seven Finalists and the Tournament Roster
+(new — rule-based deduction puzzle, SUPER DUPER HARD)
+Seven finalists — Uma, Victor, Wendy, Xavier, Yara, Zane, and Bianca — are deciding whether to compete in a
+tournament. Their participation follows these rules:
+1. Uma competes if and only if Victor competes.
+2. If Victor competes, then Wendy competes.
+3. Exactly one of Wendy or Xavier competes (never both, never neither).
+4. If Xavier competes, then Yara does not compete.
+5. At least one of Yara or Zane competes.
+6. Zane competes only if Bianca does not compete.
+7. If Bianca competes, then Uma competes.
+8. At least four of the seven finalists compete.
+General Solution: Testing Victor=out leads to two sub-branches (split on rule 3), and BOTH fail the "≥4 compete"
+threshold — so Victor (and hence Uma, by rule 1) must always compete, which then forces Wendy in and Xavier
+out (rule 3). From there, Yara/Zane/Bianca retain genuine freedom (subject to rules 5 and 6), giving multiple valid
+rosters overall, though never one with Xavier in, and never one hitting exactly six competitors (since that would
+require Zane and Bianca both in, violating rule 6).
+Statements (True / False):
+a) Victor must compete in every valid roster.
+b) It is possible for Xavier to compete in some valid roster.
+c) If Bianca competes, then Zane does not compete.
+d) There is exactly one valid way to build the roster, consistent with all eight rules.
+e) It is possible for exactly six of the seven finalists to compete.
+Answers & Explanations:
+a) TRUE. Suppose Victor does not compete (so Uma doesn't either, by rule 1). Rule 7's contrapositive forces
+Bianca out too. Now split on rule 3: if Wendy competes and Xavier doesn't, the maximum possible headcount
+— even with both Yara and Zane in — is only 3 (Wendy, Yara, Zane), short of the required 4. If Xavier
+competes and Wendy doesn't, rule 4 forces Yara out, and rule 5 then forces Zane in, giving only 2 competitors
+(Xavier, Zane) — even further short. Both branches violate rule 8, so Victor not competing is entirely
+impossible; Victor must always compete.
+b) FALSE. Trap: since Victor always competes (part a), rule 2 forces Wendy in every time, and rule 3 (exactly
+one of Wendy/Xavier) then forces Xavier out every time — Xavier can never compete.
+c) TRUE. This is the contrapositive of rule 6 (Zane → ¬Bianca becomes Bianca → ¬Zane) — a structural
+guarantee, always true regardless of the specific roster.
+d) FALSE. Trap: with Uma, Victor, Wendy always in and Xavier always out, rules 5 and 6 still leave real
+freedom among Yara, Zane, and Bianca — e.g., (Yara in, Zane out, Bianca out), (Yara in, Zane out, Bianca in),
+(Yara out, Zane in, Bianca out), and (Yara in, Zane in, Bianca out) are all separately valid. Several distinct
+rosters satisfy every rule, so the solution is not unique.
+===== PAGE 55 =====
+e) FALSE. Trap: exactly six competing would require every finalist except Xavier to be in — meaning Yara,
+Zane, AND Bianca would all have to compete together. But rule 6 forbids Zane and Bianca competing
+simultaneously (Zane → ¬Bianca), so that combination is never valid — exactly six can never be achieved.

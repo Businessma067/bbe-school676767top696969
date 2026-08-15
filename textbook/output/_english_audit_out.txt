@@ -1,0 +1,61 @@
+﻿
+=== grammar ===
+subsections=20 tasks=600 unique_ids=600 hard_failures=0
+true_count_dist={1: 100, 2: 120, 3: 140, 4: 120, 5: 120}
+  OK
+
+=== texts ===
+subsections=16 tasks=160 unique_ids=160 hard_failures=1476
+true_count_dist={1: 8, 2: 47, 3: 87, 4: 18}
+  FAIL: texts: subsection count 16 != 5
+  FAIL: texts: en-t-1-01 explanation[0] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-01 explanation[1] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-01 explanation[2] should start TRUE. (got 'TRUE ù the statement matches what the pa')
+  FAIL: texts: en-t-1-01 explanation[3] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-01 explanation[4] should start TRUE. (got 'TRUE ù the statement matches what the pa')
+  FAIL: texts: en-t-1-01 difficulty_level '2/5' != '1/5' (sort_order=1)
+  FAIL: texts: en-t-1-01 missing/empty passage
+  FAIL: texts: en-t-1-01 empty highlight[4]
+  FAIL: texts: en-t-1-02 explanation[0] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-02 explanation[1] should start TRUE. (got 'TRUE ù the statement matches what the pa')
+  FAIL: texts: en-t-1-02 explanation[2] should start TRUE. (got 'TRUE ù the statement matches what the pa')
+  FAIL: texts: en-t-1-02 explanation[3] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-02 explanation[4] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-02 difficulty_level '2/5' != '1/5' (sort_order=2)
+  FAIL: texts: en-t-1-02 missing/empty passage
+  FAIL: texts: en-t-1-02 empty highlight[0]
+  FAIL: texts: en-t-1-02 empty highlight[1]
+  FAIL: texts: en-t-1-02 empty highlight[2]
+  FAIL: texts: en-t-1-02 empty highlight[3]
+  FAIL: texts: en-t-1-03 explanation[0] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-03 explanation[1] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-03 explanation[2] should start TRUE. (got 'TRUE ù the statement matches what the pa')
+  FAIL: texts: en-t-1-03 explanation[3] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-03 explanation[4] should start TRUE. (got 'TRUE ù the statement matches what the pa')
+  FAIL: texts: en-t-1-03 difficulty_level '3/5' != '1/5' (sort_order=3)
+  FAIL: texts: en-t-1-03 missing/empty passage
+  FAIL: texts: en-t-1-03 empty highlight[0]
+  FAIL: texts: en-t-1-03 empty highlight[2]
+  FAIL: texts: en-t-1-04 difficulty_level '3/5' != '1/5' (sort_order=4)
+  FAIL: texts: en-t-1-04 missing/empty passage
+  FAIL: texts: en-t-1-04 empty highlight[2]
+  FAIL: texts: en-t-1-04 empty highlight[3]
+  FAIL: texts: en-t-1-04 empty highlight[4]
+  FAIL: texts: en-t-1-05 explanation[0] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-05 explanation[1] should start TRUE. (got 'TRUE ù the statement matches what the pa')
+  FAIL: texts: en-t-1-05 explanation[2] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-05 explanation[3] should start TRUE. (got 'TRUE ù the statement matches what the pa')
+  FAIL: texts: en-t-1-05 explanation[4] should start FALSE. (got 'FALSE ù the statement distorts or contra')
+  FAIL: texts: en-t-1-05 difficulty_level '4/5' != '1/5' (sort_order=5)
+  ... and 1436 more
+
+=== vocabulary ===
+subsections=6 tasks=180 unique_ids=180 hard_failures=0
+true_count_dist={1: 30, 2: 36, 3: 42, 4: 36, 5: 36}
+  OK
+
+=== SUMMARY ===
+PASS grammar: 20 subs, 600 tasks, true_dist={1: 100, 2: 120, 3: 140, 4: 120, 5: 120}
+FAIL texts: 16 subs, 160 tasks, true_dist={1: 8, 2: 47, 3: 87, 4: 18}
+PASS vocabulary: 6 subs, 180 tasks, true_dist={1: 30, 2: 36, 3: 42, 4: 36, 5: 36}
+Total hard failures: 1476

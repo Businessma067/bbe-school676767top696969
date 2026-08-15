@@ -1,0 +1,1 @@
+'General Solution: With P=true, Q=false fixed: P Q=false, P Q=true, so ¬(P Q)=true and ¬(P Q)=false. Watch '

@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.2",
+  "title": "Dynamic Pricing and the Rise of Algorithmic Price Discrimination",
+  "passage": "(1) For most of commercial history, the price of a good displayed on a shelf or in a catalogue was fixed for every customer who walked through the door. A loaf of bread cost the same whether it was purchased by a wealthy executive or a struggling student, and haggling, where it existed at all, was confined to specific cultural contexts such as street markets or car dealerships. Over the past two decades, however, the widespread adoption of e-commerce, combined with vast improvements in data collection and machine learning, has quietly dismantled this assumption. Increasingly, the price a consumer sees on a screen is not a fixed number but the output of an algorithm that has already estimated, in real time, how much that particular consumer is likely willing to pay.\n\n(2) This practice, often referred to as dynamic pricing, is not inherently new; airlines and hotels have adjusted prices according to demand, seasonality, and booking timing for decades. What has changed is the granularity of the data feeding these systems. A 2023 industry survey of online retailers found that 78% of large e-commerce companies used some form of algorithmic price adjustment, up from just 34% five years earlier, and that the average retailer using such systems updated at least a portion of its prices more than 20 times per day, compared to roughly twice per day for conventional retailers still relying on manual pricing.\n\n(3) Economists distinguish this behaviour from traditional dynamic pricing by giving it a more specific label: first-degree price discrimination, or personalised pricing. Whereas conventional dynamic pricing adjusts prices for everyone based on shared conditions, such as raising airfares as a flight date approaches, personalised pricing attempts to charge each individual consumer close to the maximum amount that consumer, specifically, would be willing to pay, extracting the greatest possible share of what economists call consumer surplus, the gap between what a buyer would be willing to pay and what they actually pay. The same 2023 survey estimated that personalised pricing increased average retailer margins by approximately 4 to 7 percentage points, though the effect varied considerably by sector, with the strongest gains observed in travel booking and the weakest in grocery delivery.\n\n(4) Proponents of algorithmic pricing argue that, in aggregate, it can improve market efficiency. If a retailer can identify customers with low price sensitivity and charge them more, it can simultaneously offer lower prices to more price-sensitive customers who might otherwise not purchase the product at all, thereby expanding overall access. One frequently cited study followed a mid-sized online electronics retailer over eighteen months and found that after implementing personalised pricing, total unit sales rose by 11%, even though average revenue per unit sold also rose by 6%, a combination the study's authors attributed to previously price-excluded customers entering the market at lower personalised prices while less pricesensitive customers absorbed higher ones.\n\n(5) Critics respond that this efficiency argument significantly understates the asymmetry of information involved. A student discount is transparent, publicly known, and verifiable; a shopper can choose to disclose their status or not. Algorithmic personalised pricing, by contrast, typically occurs invisibly, with no disclosure to the consumer that the price shown to them differs from the price shown to someone else browsing the identical product from a different device or location. A separate consumer protection audit, conducted in 2022 across five major online marketplaces, found that identical products were shown to test accounts at different prices in 61% of cases, with price differences averaging around 8%, and in a small number of cases exceeding 25%.\n\n(6) A further concern raised by consumer advocates involves the potential for discriminatory outcomes that correlate with protected characteristics, even without any explicit intent to discriminate. Because pricing algorithms often infer willingness to pay from proxies such as device type, postal code, or browsing patterns, and because these proxies can correlate with income, ethnicity, or age, critics warn that personalised pricing risks reproducing existing inequalities under a veneer of mathematical neutrality. The 2022 audit referenced above found that users whose device data indicated older, lower-cost smartphones were shown higher prices on average in 43% of tested cases, a pattern the auditors described as consistent with, though not conclusive proof of, income-based discrimination.\n\n(7) Regulators have responded unevenly. As of the time of writing, the European Union's Digital Services Act requires large online platforms to disclose when a price has been personalised using automated decision-making, though it does not prohibit the underlying practice itself. In the United States, no comparable federal disclosure requirement exists, leaving personalised pricing largely unregulated at the national level, although a handful of individual states have introduced narrower rules concerning specific sectors such as auto insurance.\n\n(8) Whether algorithmic personalised pricing ultimately expands consumer welfare, as its proponents contend, or merely redistributes it from consumers to firms while masking that redistribution behind claims of efficiency, remains a matter of active debate among economists. What is less disputed is that the practice is expanding rapidly, that most consumers remain unaware of its existence, and that the gap between the price one person pays and the price another pays for an identical product is, in a growing number of markets, no longer an anomaly but the default condition of the transaction.",
+  "tasks": [
+    {
+      "id": "en-t-2-01",
+      "exam_title": "Statistics & Terminology Traps",
+      "kind": "reading",
+      "statements": [
+        "Usage of algorithmic pricing rose from 34% to 78% over five years.",
+        "Consumer surplus is the gap between price paid and seller's production cost.",
+        "Margin gains were weakest in travel booking, strongest in grocery delivery.",
+        "Unit sales fell after the electronics retailer adopted personalised pricing.",
+        "Identical products were shown at different prices in 61% of tested cases."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Usage of algorithmic pricing rose from 34% to 78% over five years.**\n\nParagraph (2) cites a 2023 survey of online retailers: 78% of large e-commerce companies used some form of algorithmic price adjustment, up from just 34% five years earlier. The statement restates those two survey percentages and the five-year span without flipping either figure.\n\n**Tip:** Lock the pair of survey percentages to the same sentence before you decide true/false.\n\nThe 34% → 78% rise over five years matches the survey wording exactly, so the claim holds.",
+        "**B) Consumer surplus is the gap between price paid and seller's production cost.**\n\nParagraph (3) defines consumer surplus as the gap between what a buyer would be willing to pay and what they actually pay. The statement swaps that willingness-to-pay side for the seller's production cost, which the passage never uses in this definition.\n\n**Trap:** Cost-side language sounds like an economics gloss, but it is the wrong gap.\n\nWillingness to pay versus price paid is the surplus here, so linking surplus to production cost fails against paragraph (3).",
+        "**C) Margin gains were weakest in travel booking, strongest in grocery delivery.**\n\nThe same 2023 survey in paragraph (3) says personalised pricing lifted margins by about 4–7 percentage points, with the strongest gains in travel booking and the weakest in grocery delivery. The statement reverses that sector ranking.\n\n**Trap:** Strongest/weakest swaps are classic census traps when both sectors appear in one clause.\n\nTravel is strongest and grocery weakest in the survey, so this reversed ranking does not hold.",
+        "**D) Unit sales fell after the electronics retailer adopted personalised pricing.**\n\nParagraph (4)'s mid-sized electronics study reports that after personalised pricing, total unit sales rose by 11%, even while average revenue per unit also rose. \"Fell\" is the opposite direction of that reported sales change.\n\n**Trap:** A rise in revenue per unit can make a sales drop feel plausible, but the text says units rose.\n\nUnit sales rose by 11% after the change, so claiming they fell contradicts paragraph (4).",
+        "**E) Identical products were shown at different prices in 61% of tested cases.**\n\nParagraph (5) reports that a 2022 consumer-protection audit across five major online marketplaces found identical products shown to test accounts at different prices in 61% of cases. The percentage and the \"identical products / different prices\" framing match that audit line.\n\nThe 61% audit figure lands exactly on this claim, so the statement is faithful to the passage."
+      ],
+      "highlights": [
+        "78% of large e-commerce companies used some form of algorithmic price adjustment, up from just 34% five years earlier",
+        "consumer surplus, the gap between what a buyer would be willing to pay and what they actually pay",
+        "the strongest gains observed in travel booking and the weakest in grocery delivery",
+        "total unit sales rose by 11%",
+        "identical products were shown to test accounts at different prices in 61% of cases"
+      ]
+    },
+    {
+      "id": "en-t-2-02",
+      "exam_title": "Regulatory & Synthesis Traps",
+      "kind": "reading",
+      "statements": [
+        "The Digital Services Act bans personalised pricing outright.",
+        "The 43% device-correlation finding is called conclusive proof of income discrimination.",
+        "Personalised pricing targets individual willingness to pay; dynamic pricing adjusts for shared conditions.",
+        "The US has a uniform national law regulating personalised pricing.",
+        "The passage calls consumer welfare effects a settled, resolved question."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The Digital Services Act bans personalised pricing outright.**\n\nParagraph (7) says the EU Digital Services Act requires large platforms to disclose when a price has been personalised using automated decision-making, though it does not prohibit the underlying practice itself. Disclosure is not a ban, so \"bans…outright\" overstates the rule.\n\n**Trap:** A tough-sounding regulation is easy to misremember as a prohibition.\n\nThe Act mandates disclosure and leaves the practice itself legal, so an outright ban claim fails.",
+        "**B) The 43% device-correlation finding is called conclusive proof of income discrimination.**\n\nParagraph (6) notes that older, lower-cost smartphone users saw higher prices in 43% of tested cases, a pattern auditors described as consistent with, though not conclusive proof of, income-based discrimination. Calling it \"conclusive proof\" upgrades the audit's carefully hedged wording.\n\n**Trap:** \"Consistent with\" is not the same as \"proves.\"\n\nThe auditors refuse conclusive proof language, so this certainty claim does not survive paragraph (6).",
+        "**C) Personalised pricing targets individual willingness to pay; dynamic pricing adjusts for shared conditions.**\n\nParagraph (3) contrasts conventional dynamic pricing, which adjusts prices for everyone based on shared conditions such as approaching flight dates, with personalised pricing that tries to charge each individual close to that person's own maximum willingness to pay. The statement compresses that distinction accurately.\n\nShared conditions versus individual willingness-to-pay is exactly the passage's contrast, so the line stands.",
+        "**D) The US has a uniform national law regulating personalised pricing.**\n\nParagraph (7) states that in the United States no comparable federal disclosure requirement exists, leaving personalised pricing largely unregulated at the national level, although some states have introduced narrower sector rules such as auto insurance. That is the opposite of a uniform national regime.\n\nNo federal national rule is named, so a uniform US law claim fails against paragraph (7).",
+        "**E) The passage calls consumer welfare effects a settled, resolved question.**\n\nParagraph (8) says whether algorithmic personalised pricing expands consumer welfare or merely redistributes it from consumers to firms remains a matter of active debate among economists. \"Settled, resolved\" contradicts that \"active debate\" frame.\n\n**Tip:** When the closing paragraph labels a debate, do not upgrade it to a conclusion.\n\nWelfare effects are still debated, so treating them as settled does not match the passage."
+      ],
+      "highlights": [
+        "disclose when a price has been personalised using automated decision-making, though it does not prohibit the underlying practice itself",
+        "consistent with, though not conclusive proof of, income-based discrimination",
+        "conventional dynamic pricing adjusts prices for everyone based on shared conditions, such as raising airfares as a flight date approaches, personalised pricing attempts to charge each individual consumer close to the maximum amount that consumer, specifically, would be willing to pay",
+        "In the United States, no comparable federal disclosure requirement exists, leaving personalised pricing largely unregulated at the national level",
+        "remains a matter of active debate among economists"
+      ]
+    },
+    {
+      "id": "en-t-2-03",
+      "exam_title": "Precision Traps",
+      "kind": "reading",
+      "statements": [
+        "Algorithmic retailers updated prices more than 20 times per day on average.",
+        "Margin gains ranged from 4 to 7 percentage points across sectors.",
+        "Price differences averaged around 8%, sometimes exceeding 25%.",
+        "The 11% sales rise was attributed to previously price-excluded customers entering the market.",
+        "Older, lower-cost smartphone users were shown higher prices in a majority of cases."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Algorithmic retailers updated prices more than 20 times per day on average.**\n\nParagraph (2) says the average retailer using such systems updated at least a portion of its prices more than 20 times per day, versus roughly twice per day for conventional manual pricing. \"More than 20 times per day\" is the algorithmic side of that comparison.\n\nThe survey's update frequency for algorithmic retailers matches this claim, so it holds.",
+        "**B) Margin gains ranged from 4 to 7 percentage points across sectors.**\n\nParagraph (3) estimates that personalised pricing increased average retailer margins by approximately 4 to 7 percentage points, though the effect varied by sector. The statement's range mirrors that estimate.\n\n**Tip:** Keep \"percentage points\" attached to the margin range — it is easy to misread as a 4–7% price change.\n\nThe 4–7 percentage-point margin band is stated in the survey, so the claim is true.",
+        "**C) Price differences averaged around 8%, sometimes exceeding 25%.**\n\nParagraph (5)'s 2022 audit found price differences averaging around 8%, and in a small number of cases exceeding 25%. Both the typical average and the upper-tail cases are present in that sentence.\n\nAverage ~8% with rare gaps above 25% matches the audit statistics, so the statement stands.",
+        "**D) The 11% sales rise was attributed to previously price-excluded customers entering the market.**\n\nParagraph (4) reports an 11% rise in total unit sales and says the study's authors attributed the combination of higher unit sales and higher revenue per unit to previously price-excluded customers entering at lower personalised prices while less price-sensitive customers absorbed higher ones. The attribution target in the statement is that excluded-customer entry.\n\nThe authors' causal story matches this line, so it is faithful to paragraph (4).",
+        "**E) Older, lower-cost smartphone users were shown higher prices in a majority of cases.**\n\nParagraph (6) places that device pattern at 43% of tested cases — a large minority, not more than half. \"Majority\" therefore overstates the audit share.\n\n**Trap:** 43% feels substantial, so exam writers often smear it into \"most\" or \"majority.\"\n\nForty-three percent is not a majority, so this wording fails against the audit's own percentage."
+      ],
+      "highlights": [
+        "updated at least a portion of its prices more than 20 times per day",
+        "personalised pricing increased average retailer margins by approximately 4 to 7 percentage points",
+        "price differences averaging around 8%, and in a small number of cases exceeding 25%",
+        "attributed to previously price-excluded customers entering the market at lower personalised prices",
+        "older, lower-cost smartphones were shown higher prices on average in 43% of tested cases"
+      ]
+    },
+    {
+      "id": "en-t-2-04",
+      "exam_title": "Definition Micro-Traps",
+      "kind": "vocabulary",
+      "statements": [
+        "Consumer surplus is the gap between willingness to pay and actual price paid.",
+        "First-degree price discrimination targets groups based on shared conditions like flight dates.",
+        "The student discount is described as more opaque than algorithmic pricing.",
+        "Capturing more surplus increases the consumer's underlying willingness to pay.",
+        "Device type and postal code are said to correlate with, not encode, protected traits."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Consumer surplus is the gap between willingness to pay and actual price paid.**\n\nParagraph (3) glosses consumer surplus as the gap between what a buyer would be willing to pay and what they actually pay. That is the same two poles the statement names.\n\nWillingness to pay versus price paid is the passage definition, so this wording stands.",
+        "**B) First-degree price discrimination targets groups based on shared conditions like flight dates.**\n\nParagraph (3) labels personalised pricing as first-degree price discrimination and reserves \"shared conditions\" such as raising airfares as a flight date approaches for conventional dynamic pricing. First-degree targeting is individual willingness to pay, not group/shared conditions.\n\n**Trap:** The flight-date example is real in the passage — but it illustrates dynamic pricing, not first-degree discrimination.\n\nShared-condition airfare swings are conventional dynamic pricing, so pinning them on first-degree discrimination fails.",
+        "**C) The student discount is described as more opaque than algorithmic pricing.**\n\nParagraph (5) calls a student discount transparent, publicly known, and verifiable, then contrasts algorithmic personalised pricing as typically occurring invisibly with no disclosure. The statement reverses that opacity ranking.\n\n**Trap:** Both practices affect price, so it is easy to smear transparency onto the wrong one.\n\nStudent discounts are the transparent case, so calling them more opaque than the algorithm does not hold.",
+        "**D) Capturing more surplus increases the consumer's underlying willingness to pay.**\n\nParagraph (3) treats surplus extraction as charging closer to an existing willingness-to-pay ceiling; nothing says extracting surplus raises that ceiling. The statement confuses capturing a gap with enlarging willingness itself.\n\nSurplus here is an existing gap that firms try to capture, so claiming capture raises willingness fails the definition.",
+        "**E) Device type and postal code are said to correlate with, not encode, protected traits.**\n\nParagraph (6) warns that proxies such as device type, postal code, or browsing patterns can correlate with income, ethnicity, or age. The hedging verb is \"correlate with,\" not a claim that those proxies literally encode protected characteristics.\n\n**Tip:** Watch \"correlate with\" versus stronger verbs like encode, prove, or cause.\n\nThe passage's careful \"correlate with\" matches this claim, so the line stands."
+      ],
+      "highlights": [
+        "consumer surplus, the gap between what a buyer would be willing to pay and what they actually pay",
+        "conventional dynamic pricing adjusts prices for everyone based on shared conditions, such as raising airfares as a flight date approaches",
+        "A student discount is transparent, publicly known, and verifiable",
+        "extracting the greatest possible share of what economists call consumer surplus, the gap between what a buyer would be willing to pay and what they actually pay",
+        "these proxies can correlate with income, ethnicity, or age"
+      ]
+    },
+    {
+      "id": "en-t-2-05",
+      "exam_title": "Cross-Reference Traps",
+      "kind": "reading",
+      "statements": [
+        "Travel booking had the strongest margin gains per the 2023 survey.",
+        "The US lacks a federal rule, but some states regulate pricing for sectors like auto insurance.",
+        "The electronics study and the 2022 audit were conducted by the same research team.",
+        "Algorithmic-pricing retailers update prices far more often per day than manual-pricing ones.",
+        "The 43% and 61% figures measure the identical phenomenon in the audit."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Travel booking had the strongest margin gains per the 2023 survey.**\n\nParagraph (3) says the 2023 survey observed the strongest margin gains in travel booking and the weakest in grocery delivery. Naming travel as strongest matches that ranking.\n\nTravel booking is explicitly strongest in the survey, so the claim holds.",
+        "**B) The US lacks a federal rule, but some states regulate pricing for sectors like auto insurance.**\n\nParagraph (7) combines both halves: no comparable federal disclosure requirement, while a handful of states have introduced narrower rules in specific sectors such as auto insurance. The statement joins those two clauses without inventing a national ban.\n\nFederal absence plus narrow state sector rules is exactly paragraph (7)'s picture, so the line stands.",
+        "**C) The electronics study and the 2022 audit were conducted by the same research team.**\n\nParagraph (4) cites a study of a mid-sized online electronics retailer; paragraph (5)–(6) cite a separate 2022 consumer-protection audit across five marketplaces. The passage never says the two sources share a research team.\n\n**Trap:** Two quantitative sources in one article do not equal one authorship.\n\nNo shared-team link is stated, so this cross-source fusion fails.",
+        "**D) Algorithmic-pricing retailers update prices far more often per day than manual-pricing ones.**\n\nParagraph (2) contrasts algorithmic systems updating more than 20 times per day with conventional retailers still relying on manual pricing at roughly twice per day. That gap is \"far more often\" in plain terms.\n\nMore than 20 times versus roughly twice per day supports the frequency contrast, so the claim is true.",
+        "**E) The 43% and 61% figures measure the identical phenomenon in the audit.**\n\nParagraph (5) uses 61% for how often identical products appeared at different prices across test accounts; paragraph (6) uses 43% for the narrower pattern that older, lower-cost smartphone users saw higher prices. Related audit work, but not the same measured phenomenon.\n\n**Trap:** Same year/audit family does not make every percentage track the same question.\n\nSixty-one percent and forty-three percent answer different audit questions, so treating them as identical fails."
+      ],
+      "highlights": [
+        "the strongest gains observed in travel booking and the weakest in grocery delivery",
+        "no comparable federal disclosure requirement exists, leaving personalised pricing largely unregulated at the national level, although a handful of individual states have introduced narrower rules concerning specific sectors such as auto insurance",
+        "One frequently cited study followed a mid-sized online electronics retailer over eighteen months",
+        "updated at least a portion of its prices more than 20 times per day, compared to roughly twice per day for conventional retailers still relying on manual pricing",
+        "identical products were shown to test accounts at different prices in 61% of cases"
+      ]
+    },
+    {
+      "id": "en-t-2-06",
+      "exam_title": "Grammar Rules (New Sentences, Anchored in Text Vocabulary)",
+      "kind": "grammar",
+      "statements": [
+        "\"Had the regulator not intervened, the practice would have spread unchecked across the sector.\"",
+        "\"It is essential that every retailer discloses its pricing algorithm to consumers.\"",
+        "\"The number of firms adopting personalised pricing continue to grow each quarter.\"",
+        "\"Neither the algorithm nor the underlying data were disclosed to regulators.\"",
+        "\"Having analysed the pricing data, several inconsistencies were uncovered by the auditors.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Had the regulator not intervened, the practice would have spread unchecked across the sector.\"**\n\nThis is a clean third-conditional inversion: \"Had the regulator not intervened\" stands in for \"If the regulator had not intervened,\" and the result clause keeps \"would have\" + past participle. Both halves stay in the unreal-past frame, so the pattern is intact.\n\n**Tip:** Inversion with Had + subject replaces if in third conditionals when the tense sequence still matches.\n\nHad-inversion plus would have is the right third-conditional pairing, so the sentence stands.",
+        "**B) \"It is essential that every retailer discloses its pricing algorithm to consumers.\"**\n\nAfter \"It is essential that,\" formal English expects the mandative subjunctive — the base form disclose, not the present \"discloses.\" The singular subject \"every retailer\" does not unlock a normal present-tense -s ending inside that that-clause.\n\n**Trap:** Everyday \"discloses\" after a singular subject looks fine until you notice the subjunctive trigger.\n\nEssential that needs the base verb, so this doesn’t hold — \"It is essential that every retailer disclose its pricing algorithm to consumers.\"",
+        "**C) \"The number of firms adopting personalised pricing continue to grow each quarter.\"**\n\n\"The number of\" is a singular quantifier heading; the verb must be continues, not plural continue. The plural noun firms lives inside the of-phrase and does not control agreement.\n\n**Trap:** A nearby plural noun often steals the verb after the number of.\n\nSingular \"the number\" wants continues, so the line fails — \"The number of firms adopting personalised pricing continues to grow each quarter.\"",
+        "**D) \"Neither the algorithm nor the underlying data were disclosed to regulators.\"**\n\nWith neither…nor, the verb commonly agrees with the nearer subject. Here that nearer noun is data, treated as plural in careful formal style, so were is the consistent choice.\n\nProximity agreement with plural data licenses were, so the wording is sound.",
+        "**E) \"Having analysed the pricing data, several inconsistencies were uncovered by the auditors.\"**\n\nThe opening participle \"Having analysed…\" needs the same agent as the main-clause subject. Here the grammatical subject is \"several inconsistencies,\" which cannot have analysed the data — a dangling participle. Rebuild so the auditors do the analysing (active subject) or keep the auditors as the subject of a matching clause.\n\n**Trap:** A correct passive at the end can hide a dangling -ing opener.\n\nThe inconsistencies did not analyse anything, so the line doesn’t hold — \"Having analysed the pricing data, the auditors uncovered several inconsistencies.\""
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-2-07",
+      "exam_title": "Grammar Rules II (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"No sooner had the algorithm adjusted the price than demand began to fall.\"",
+        "\"The regulator, along with several consumer groups, were pushing for greater transparency.\"",
+        "\"Each of the retailers surveyed have adopted some form of dynamic pricing.\"",
+        "\"By the time the audit concludes, the report will have already been submitted.\"",
+        "\"The data, which were collected across five marketplaces, suggests a consistent pattern.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"No sooner had the algorithm adjusted the price than demand began to fall.\"**\n\n\"No sooner…than\" correctly triggers Had-inversion and pairs past perfect (adjusted) with a simple-past follow-up (began). The correlative than, not when, completes the fixed frame.\n\n**Tip:** No sooner…than needs inversion and a than-clause, not when.\n\nNo sooner had…than plus the tense pair is textbook-correct, so the sentence stands.",
+        "**B) \"The regulator, along with several consumer groups, were pushing for greater transparency.\"**\n\n\"Along with several consumer groups\" is a parenthetical add-on; the real subject remains singular \"the regulator,\" which needs was pushing. Plural were wrongly agrees with the groups inside the along-with phrase.\n\n**Trap:** Along with / as well as phrases often look like they create a plural subject.\n\nThe singular regulator controls the verb, so this doesn’t hold — \"The regulator, along with several consumer groups, was pushing for greater transparency.\"",
+        "**C) \"Each of the retailers surveyed have adopted some form of dynamic pricing.\"**\n\n\"Each of\" takes a singular verb even when a plural noun follows in the of-phrase. Have should be has adopted.\n\n**Trap:** Plural retailers after of is the usual distractor for have.\n\nEach wants singular has, so the line fails — \"Each of the retailers surveyed has adopted some form of dynamic pricing.\"",
+        "**D) \"By the time the audit concludes, the report will have already been submitted.\"**\n\nBy + a future reference point calls for future perfect; \"will have already been submitted\" places the report's completion before the audit ends and keeps the passive clean. The tense architecture matches the time marker.\n\nFuture perfect passive before a by-time is the right shape, so the wording stands.",
+        "**E) \"The data, which were collected across five marketplaces, suggests a consistent pattern.\"**\n\nThe relative clause correctly treats data as plural (were collected), but the main verb suggests is singular and clashes with that same head noun. Formal agreement wants suggest to match plural data.\n\n**Trap:** A long relative clause can make writers flip back to singular suggests after a plural were.\n\nPlural data needs suggest, so this doesn’t hold — \"The data, which were collected across five marketplaces, suggest a consistent pattern.\""
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-2-08",
+      "exam_title": "Grammar Rules III (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"The audit revealed that prices, varying by device type, were shown differently to identical users.\"",
+        "\"Despite of the disclosure requirement, many firms still avoid full transparency.\"",
+        "\"Whoever designs the next pricing algorithm should account for these disparities.\"",
+        "\"The retailer denied having deliberately targeted price-sensitive customers.\"",
+        "\"There is several factors that explain the observed price differences.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"The audit revealed that prices, varying by device type, were shown differently to identical users.\"**\n\n\"Varying by device type\" is a well-formed reduced relative/participial modifier on prices, and the that-clause keeps a coherent passive were shown. Punctuation set off the modifier without breaking agreement.\n\nThe participial middle and plural passive both fit, so the sentence is sound.",
+        "**B) \"Despite of the disclosure requirement, many firms still avoid full transparency.\"**\n\nDespite never takes of; the of belongs to the twin phrase in spite of. Write either \"despite the disclosure requirement\" or \"in spite of the disclosure requirement.\"\n\n**Trap:** In spite of bleeds into despite of — a high-frequency collocation error.\n\nDespite + of is ungrammatical, so the line fails — \"Despite the disclosure requirement, many firms still avoid full transparency.\"",
+        "**C) \"Whoever designs the next pricing algorithm should account for these disparities.\"**\n\nWhoever correctly heads the subject clause; designs agrees with that singular indefinite subject, and should account is a clean modal recommendation in the main clause. No who/whom mix-up appears.\n\nWhoever + singular verb is well formed here, so the wording stands.",
+        "**D) \"The retailer denied having deliberately targeted price-sensitive customers.\"**\n\nAfter deny, the perfect gerund having + past participle reports a prior completed action the speaker rejects. Deliberately sits naturally as an adverb inside that gerund phrase.\n\nDenied having + past participle is the expected pattern, so the sentence holds.",
+        "**E) \"There is several factors that explain the observed price differences.\"**\n\nExistential there agrees with the notional subject that follows; several factors is plural, so the verb must be are, not is.\n\n**Trap:** There is feels like a fixed starter even when a plural noun follows.\n\nPlural factors need There are, so this doesn’t hold — \"There are several factors that explain the observed price differences.\""
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-2-09",
+      "exam_title": "Vocabulary & Collocation in New Context",
+      "kind": "vocabulary",
+      "statements": [
+        "\"The pricing model was so opaque that customers could easily verify why prices differed.\"",
+        "\"Analysts described the practice as reproducing existing inequalities under a veneer of neutrality.\"",
+        "\"The two prices were asymmetry, with one customer paying visibly more than another.\"",
+        "\"The retailer's margins correlate with, rather than directly cause, the observed price gaps.\"",
+        "\"The proxy variables were confined to income data alone, excluding all other factors.\""
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"The pricing model was so opaque that customers could easily verify why prices differed.\"**\n\nOpaque means hard to see through or understand. Pairing it with \"could easily verify\" sets up a contradiction: if the model were opaque, easy verification would not follow. The sentence abuses the word's meaning against its own result clause.\n\n**Trap:** So…that frames look grammatical even when the adjective and the result fight each other.\n\nOpaque blocks easy verification, so this collocation fails — a transparent/verifiable model would be needed for that result.",
+        "**B) \"Analysts described the practice as reproducing existing inequalities under a veneer of neutrality.\"**\n\nA veneer is a thin surface covering; \"veneer of neutrality\" is the natural metaphor for a polished appearance masking something else. That is how paragraph (6) deploys the same image for mathematical neutrality over discriminatory risks.\n\nThe metaphor matches both ordinary English and the passage's usage, so the wording stands.",
+        "**C) \"The two prices were asymmetry, with one customer paying visibly more than another.\"**\n\nAsymmetry is a noun; after were the sentence needs an adjective such as asymmetric (or a noun phrase like \"an asymmetry\"). Bare \"were asymmetry\" is the wrong part of speech.\n\n**Trap:** Abstract nouns often sneak in where the related adjective belongs.\n\nWere needs an adjective here, so the line doesn’t hold — \"The two prices were asymmetric, with one customer paying visibly more than another.\"",
+        "**D) \"The retailer's margins correlate with, rather than directly cause, the observed price gaps.\"**\n\nCorrelate with marks association without claiming causation; the rather-than contrast keeps that hedge precise. The sentence uses the verb the way careful analytics prose (and paragraph (6)'s proxy language) does.\n\nAssociation without causation is exactly what correlate with signals, so the claim is lexically sound.",
+        "**E) \"The proxy variables were confined to income data alone, excluding all other factors.\"**\n\nParagraph (6) lists proxies such as device type, postal code, or browsing patterns — plural channels that can correlate with income, not a set \"confined to income data alone.\" The invented sentence misstates both the breadth of the proxies and how income enters the story.\n\n**Trap:** Income is in the correlation story, so writers may wrongly shrink the proxies to income fields alone.\n\nThe passage's proxies are device, postal code, and browsing patterns, so \"income data alone\" does not fit."
+      ],
+      "highlights": [
+        "Algorithmic personalised pricing, by contrast, typically occurs invisibly, with no disclosure to the consumer",
+        "reproducing existing inequalities under a veneer of mathematical neutrality",
+        "",
+        "these proxies can correlate with income, ethnicity, or age",
+        "proxies such as device type, postal code, or browsing patterns"
+      ]
+    },
+    {
+      "id": "en-t-2-10",
+      "exam_title": "Vocabulary & Collocation II (New Context)",
+      "kind": "vocabulary",
+      "statements": [
+        "\"The firm's pricing strategy was granular enough to distinguish between nearly identical customers.\"",
+        "\"The regulator's disclosure requirement effectively prohibited the underlying practice entirely.\"",
+        "\"The retailer's margins increased by several percentage points, a gain attributed to better targeting.\"",
+        "\"The audit's findings were consistent with, though not conclusive proof of, deliberate discrimination.\"",
+        "\"The proxy correlated so strongly with income that regulators dismissed it as completely irrelevant.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"The firm's pricing strategy was granular enough to distinguish between nearly identical customers.\"**\n\nGranular describes fine-grained detail; being granular enough to separate nearly identical customers is a coherent, natural use of the word. Paragraph (2) praises exactly that rise in the granularity of pricing data.\n\nFine-grained discrimination between near-identical customers fits granular, so the wording stands.",
+        "**B) \"The regulator's disclosure requirement effectively prohibited the underlying practice entirely.\"**\n\nDisclosure and prohibition are different regulatory moves. Paragraph (7) stresses that the Digital Services Act requires disclosure of personalised prices yet does not prohibit the practice itself; this sentence collapses those two into one.\n\n**Trap:** A disclosure mandate often feels as strong as a ban until you separate the verbs.\n\nRequiring disclosure is not prohibiting the practice, so this line fails the ordinary meanings of both words — and the passage's explicit contrast.",
+        "**C) \"The retailer's margins increased by several percentage points, a gain attributed to better targeting.\"**\n\nAttributed to is the standard collocation for assigning a reported cause to a result; \"several percentage points\" also matches how paragraph (3) talks about margin gains. Nothing in the pairing strains English usage.\n\nAttributed to correctly links the margin gain to targeting, so the sentence is sound.",
+        "**D) \"The audit's findings were consistent with, though not conclusive proof of, deliberate discrimination.\"**\n\nThe hedging frame \"consistent with, though not conclusive proof of\" is precise academic English: it allows alignment with a hypothesis without upgrading to proof. Paragraph (6) uses the same scaffold for income-based discrimination.\n\nThat careful hedge is used correctly, so the wording holds.",
+        "**E) \"The proxy correlated so strongly with income that regulators dismissed it as completely irrelevant.\"**\n\nA strong correlation with income would make a proxy more relevant to discrimination concerns, not \"completely irrelevant.\" The so…that result clause reverses the logical force of the correlation claim.\n\n**Trap:** So…that can sound fluent while smuggling a nonsensical consequence.\n\nStrong income correlation implies relevance, so dismissing the proxy as irrelevant fails ordinary meaning."
+      ],
+      "highlights": [
+        "What has changed is the granularity of the data feeding these systems",
+        "it does not prohibit the underlying practice itself",
+        "personalised pricing increased average retailer margins by approximately 4 to 7 percentage points",
+        "consistent with, though not conclusive proof of, income-based discrimination",
+        "these proxies can correlate with income, ethnicity, or age"
+      ]
+    }
+  ]
+}

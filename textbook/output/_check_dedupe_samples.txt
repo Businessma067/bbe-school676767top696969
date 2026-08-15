@@ -1,0 +1,344 @@
+
+======== math-1-99
+**A.** → True
+
+A universal claim fails as soon as a single **counterexample** appears.
+
+Since the theorem is proven true for every sequence, no sequence can simultaneously converge and be unbounded - the negation describes an empty, impossible case.
+
+So the statement is True.
+---
+**B.** → True
+
+The **converse** reverses the arrow — $q \Rightarrow p$ is a separate claim:
+
+$$q \Rightarrow p$$
+
+(-1)ⁿ never settles on a single value (it oscillates forever between -1 and 1), so it does not converge, yet it stays within [-1, 1], so it is bounded - Q true (bounded), P false (doesn't converge), breaking $Q \Rightarrow P$.
+
+So the statement is True.
+---
+**C.** → True
+
+The **converse** reverses the arrow — $q \Rightarrow p$ is a separate claim:
+
+$$q \Rightarrow p$$
+
+The **inverse** $\neg P \Rightarrow \neg Q$ is always equivalent to the converse $Q \Rightarrow P$.
+
+Since (-1)ⁿ makes the converse false (bounded but not convergent), it makes the inverse false too: $\neg P$ is true (doesn't converge) but $\neg Q$ is false (it IS bounded).
+
+So the statement is True.
+---
+**D.** → True
+
+An implication and its **contrapositive** are equivalent:
+
+$$p \Rightarrow q \quad\Leftrightarrow\quad \neg q \Rightarrow \neg p$$
+
+Since the original is true, the contrapositive is true too — it's the standard tool for proving unboundedness implies divergence.
+
+So the statement is True.
+---
+**E.** → False
+
+**Trap:** the **converse** reverses the arrow — $q \Rightarrow p$ is a separate claim:
+
+$$q \Rightarrow p$$
+
+A statement's truth does not depend on its converse's truth.
+
+The original theorem ("convergent $\Rightarrow$ bounded") is a proven true fact, entirely independent of the converse being false - this is the same confusion seen with the divisibility and sports examples earlier.
+
+So the statement is False.
+---
+
+======== math-1-75
+**A.** → False
+
+The negation of $P \Rightarrow Q$ is never another "if...then" statement - it is the conjunction $P \land \neg Q$: "revenue exceeds \$1 million AND it does not file an audit."
+
+So the statement is False.
+---
+**B.** → False
+
+**Trap:** the **converse** reverses the arrow — $q \Rightarrow p$ is a separate claim:
+
+$$q \Rightarrow p$$
+
+This states the converse $Q \Rightarrow P$, not guaranteed by the original.
+
+A small company could file an audit voluntarily (for investors) without exceeding \$1 million - Q true, P false.
+
+So the statement is False.
+---
+**C.** → False
+
+**Trap:** the **inverse** flips both sides of the implication:
+
+$$\neg p \Rightarrow \neg q$$
+
+That is not forced by $p \Rightarrow q$; it needs its own check.
+
+The inverse $\neg P \Rightarrow \neg Q$ is not equivalent to the original $P \Rightarrow Q$ (it is only equivalent to the **converse**).
+
+A small company could still be required to audit for unrelated reasons.
+
+So the statement is False.
+---
+**D.** → True
+
+An implication and its **contrapositive** are equivalent:
+
+$$p \Rightarrow q \quad\Leftrightarrow\quad \neg q \Rightarrow \neg p$$
+
+So $\neg Q \Rightarrow \neg P$ holds whenever $P \Rightarrow Q$ does.
+
+So the statement is True.
+---
+**E.** → True
+
+$P \Rightarrow Q$ is false exactly when P is true and Q is false.
+
+Company X has P true and Q false, exactly what's needed to falsify the regulation.
+
+So the statement is True.
+---
+
+======== math-1-55
+**A.** → True
+
+The negation of $P \Rightarrow Q$ is the conjunction $P \land \neg Q$, correctly stated here.
+
+So the statement is True.
+---
+**B.** → False
+
+**Trap:** the **converse** reverses the arrow — $q \Rightarrow p$ is a separate claim:
+
+$$q \Rightarrow p$$
+
+This is the converse $Q \Rightarrow P$, not guaranteed.
+
+The picnic could be cancelled for reasons other than rain (venue conflict, illness, etc.), so Q can be true while P is false.
+
+So the statement is False.
+---
+**C.** → False
+
+**Trap:** the **inverse** flips both sides of the implication:
+
+$$\neg p \Rightarrow \neg q$$
+
+That is not forced by $p \Rightarrow q$; it needs its own check.
+
+The inverse $\neg P \Rightarrow \neg Q$ is not equivalent to the original $P \Rightarrow Q$ - only the **contrapositive** is.
+
+So the statement is False.
+---
+**D.** → True
+
+The **inverse** flips both sides of the implication:
+
+$$\neg p \Rightarrow \neg q$$
+
+That is not forced by $p \Rightarrow q$; it needs its own check.
+
+This scenario has $\neg P$ (no rain) and Q (cancelled), which breaks the inverse $\neg P \Rightarrow \neg Q$.
+
+But the original rule $P \Rightarrow Q$ only makes a claim when P is true; with P false here, the original is unaffected (**vacuously** fine).
+
+So the statement is True.
+---
+**E.** → True
+
+An implication and its **contrapositive** are equivalent:
+
+$$p \Rightarrow q \quad\Leftrightarrow\quad \neg q \Rightarrow \neg p$$
+
+So $\neg Q \Rightarrow \neg P$ holds whenever $P \Rightarrow Q$ does.
+
+so if the organizer's rule is accepted as true, the contrapositive must hold too.
+
+So the statement is True.
+---
+
+======== math-1-94
+**A.** → False
+
+Since $6 = 2 \times 3$, every multiple of 6 is automatically a multiple of 3, so the situation "divisible by 6 but not by 3" is impossible - the negation is unsatisfiable for EVERY integer n, not true for infinitely many.
+
+So the statement is False.
+---
+**B.** → True
+
+The **converse** reverses the arrow — $q \Rightarrow p$ is a separate claim:
+
+$$q \Rightarrow p$$
+
+9 is divisible by 3 but not by 6, directly breaking the converse $Q \Rightarrow P$.
+
+So the statement is True.
+---
+**C.** → True
+
+The **converse** reverses the arrow — $q \Rightarrow p$ is a separate claim:
+
+$$q \Rightarrow p$$
+
+The **inverse** $\neg P \Rightarrow \neg Q$ is always logically equivalent to the converse $Q \Rightarrow P$, so since the converse fails at n = 9 (3 | 9 but 6 ∤ 9), the inverse fails there too: n = 9 is not divisible by $6 (\neg P$ true) yet is divisible by $3 (\neg Q$ false).
+
+So the statement is True.
+---
+**D.** → False
+
+An implication and its **contrapositive** are equivalent:
+
+$$p \Rightarrow q \quad\Leftrightarrow\quad \neg q \Rightarrow \neg p$$
+
+and the original is materially true (any multiple of 6 is a multiple of 3), so the contrapositive is actually true for EVERY integer n, not false for some.
+
+So the statement is False.
+---
+**E.** → False
+
+**Trap:** the **converse** reverses the arrow — $q \Rightarrow p$ is a separate claim:
+
+$$q \Rightarrow p$$
+
+A statement's truth is independent of its converse's truth.
+
+The original "$6 \Rightarrow 3$" is true precisely because $6 = 2 \times 3$, regardless of the converse being false - confusing the two is a very common error.
+
+So the statement is False.
+---
+
+======== math-1-59
+**A.** → True
+
+An implication and its **contrapositive** are equivalent:
+
+$$p \Rightarrow q \quad\Leftrightarrow\quad \neg q \Rightarrow \neg p$$
+
+The contrapositive of $P \Rightarrow Q$ is $\neg Q \Rightarrow \neg P$. Here $\neg Q =$ "bank does not raise rates" and $\neg P =$ "inflation ≤ 10%" ("at most 10%"), which matches exactly.
+
+So the statement is True.
+---
+**B.** → False
+
+**Trap:** the **converse** reverses the arrow — $q \Rightarrow p$ is a separate claim:
+
+$$q \Rightarrow p$$
+
+The converse $(Q \Rightarrow P)$ is generally not equivalent to the original implication $(P \Rightarrow Q)$.
+
+A bank could raise rates for reasons other than inflation exceeding 10% (e.g., currency stabilization), so $Q \Rightarrow P$ need not hold.
+
+So the statement is False.
+---
+**C.** → True
+
+By definition, in $P \Rightarrow Q$, P being true is enough (sufficient) to guarantee Q is true.
+
+So the statement is True.
+---
+**D.** → False
+
+"q is necessary for p" means you cannot have p without q:
+
+$$p \Rightarrow q$$
+
+It is Q that is necessary for P (since $P \Rightarrow Q$ means Q must hold whenever P holds), not P necessary for Q.
+
+P is sufficient for Q, and Q is necessary for P - these must not be confused.
+
+So the statement is False.
+---
+**E.** → False
+
+**Trap:** this commits the fallacy of "affirming the consequent." Q being true does not let us infer P is true - the bank might have raised rates for another reason entirely.
+
+So the statement is False.
+---
+
+======== math-1-4
+**A.** → True
+
+By definition, the **empty set** is a subset of every set, since it has no elements that could violate the subset condition.
+
+So the statement is True.
+---
+**B.** → False
+
+Being a subset $(\emptyset \subseteq D)$ is different from being an element $(\emptyset \in D)$.
+
+D's elements are a, b, and c - the **empty set** is not one of them.
+
+So the statement is False.
+---
+**C.** → True
+
+A set with n elements has 2ⁿ subsets.
+
+Here n = 3, so D has $2^3 = 8$ subsets: $\emptyset$, $\{a\}$, $\{b\}$, $\{c\}$, $\{a,b\}$, $\{a,c\}$, $\{b,c\}$, $\{a,b,c\}$.
+
+So the statement is True.
+---
+**D.** → False
+
+**Membership** and inclusion are different: $x \in A$ is one object inside A, while $B \subseteq A$ means every element of B also sits in A.
+
+$\{a\} \subseteq D$ is true (a is an element of D, so the set $\{a\}$ is contained in D), but $\{a\} \in D$ is false - D's elements are a, b, c themselves, not the set $\{a\}$.
+
+So the statement is False.
+---
+**E.** → True
+
+Every set is a **subset** of itself, since every element of D is trivially an element of D.
+
+So the statement is True.
+---
+
+======== math-1-11
+**A.** → True
+
+A **partition** of a set A is a collection of nonempty blocks that are pairwise **disjoint** and whose union is exactly A. Missing any one of those three conditions kills the claim.
+
+The three blocks are nonempty, pairwise disjoint, and their union $\{1,2,3,4,5,6\}$ equals A - all partition requirements are satisfied.
+
+So the statement is True.
+---
+**B.** → False
+
+A **partition** of a set A is a collection of nonempty blocks that are pairwise **disjoint** and whose **union** is exactly A.
+
+A partition can have any number of blocks, from 1 (the whole set as a single block) up to n (all singletons) - there's no requirement that the number of blocks equals $\lvert A \rvert$, as (a) already shows with 3 blocks for 6 elements.
+
+So the statement is False.
+---
+**C.** → False
+
+A **partition** of a set A is a collection of nonempty blocks that are pairwise **disjoint** and whose union is exactly A. Missing any one of those three conditions kills the claim.
+
+The blocks $\{1,2,3\}$ and $\{3,4,5,6\}$ both contain the element 3, violating the requirement that blocks be pairwise disjoint.
+
+So the statement is False.
+---
+**D.** → False
+
+A **partition** of a set A is a collection of nonempty blocks that are pairwise **disjoint** and whose union is exactly A. Missing any one of those three conditions kills the claim.
+
+The union of R's blocks is $\{1,2,3,4,5\}$, which misses the element 6 - the blocks don't cover all of A.
+
+So the statement is False.
+---
+**E.** → True
+
+A **partition** of a set A is a collection of nonempty blocks that are pairwise **disjoint** and whose union is exactly A. Missing any one of those three conditions kills the claim.
+
+For any n ≥ 2, at least two distinct partitions always exist - for example, the single block $\{A\}$ itself, and the partition into all singletons - and these are different whenever n ≥ 2.
+
+So the statement is True.
+---
+
+DUP HITS: 0

@@ -1,0 +1,7 @@
+HEURISTIC KEY PROBLEMS:
+en-g-11-11 C: KEY maybe wrong — one of + singular TRUE
+
+SUSPICIOUS/CONTESTED TRUES:
+en-g-11-08 B: elder of the two marked TRUE (ok)
+en-g-11-13 B: quicker adverb marked TRUE (intentional?)
+en-g-11-20 E: by far + comparative marked TRUE (ok)

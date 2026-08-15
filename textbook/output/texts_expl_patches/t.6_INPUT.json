@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.6",
+  "title": "Nudge Theory and the Limits of Behavioural Public Policy",
+  "passage": "(1) Traditional economic theory has long assumed that individuals make decisions by rationally weighing costs and benefits to maximise their own welfare. Beginning in the early 2000s, however, a body of research broadly labelled behavioural economics challenged this assumption, arguing that real decision-making is heavily shaped by cognitive biases, limited attention, and the specific way choices are presented — a concept popularised under the term \"choice architecture.\" Proponents argued that policymakers could exploit this insight not by restricting options, but by redesigning the context in which choices are made, a strategy that became widely known as \"nudging.\"\n\n(2) One of the most frequently cited applications involves employer-provided retirement savings plans. Under a traditional opt-in enrolment system, employees must actively choose to join a pension scheme, and participation in a 2015 study of US employers averaged around 61%. When employers instead switched to automatic, opt-out enrolment — in which employees are enrolled by default unless they actively choose to leave — participation in the same study rose to approximately 91%, an increase of roughly 30 percentage points, despite the underlying menu of retirement options remaining unchanged.\n\n(3) A similarly striking pattern emerges in organ donation policy. Countries operating an opt-in system, in which citizens must actively register as donors, have recorded average donor consent rates as low as 15%. Countries with an opt-out, or \"presumed consent,\" system, in which citizens are treated as donors unless they explicitly object, have recorded average consent rates of roughly 98%, a gap widely attributed not to differing cultural attitudes toward donation but to the powerful effect of the default option itself.\n\n(4) Smaller-scale nudges have shown comparable, if less dramatic, effects. A cafeteria field experiment found that placing fruit at eye level, rather than in a less visible position, increased fruit selection by approximately 25%, while relocating dessert items to a less convenient position near the end of the serving line reduced dessert selection by roughly 15%, again without removing any option from the menu.\n\n(5) Behavioural economists Richard Thaler and Cass Sunstein, whose work popularised the term, described this general approach as \"libertarian paternalism\": paternalistic in that it deliberately steers people toward outcomes assumed to serve their own interests, yet libertarian in that it preserves the formal freedom to choose otherwise. Critics have questioned whether this label understates the manipulation involved, arguing that exploiting known cognitive biases such as status quo bias and loss aversion sits uneasily with genuine respect for individual autonomy, regardless of how easy the opt-out technically remains.\n\n(6) The empirical robustness of nudging has itself become a matter of considerable dispute. A 2022 metaanalysis reviewing a large number of published nudge studies found an average behaviour-change effect of approximately 8.7 percentage points. However, once the analysis was adjusted to account for publication bias — the tendency for studies with small or null effects to go unpublished — the estimated average effect size fell to approximately 1.4 percentage points, suggesting that the published literature may have substantially overstated how powerful typical nudges actually are.\n\n(7) Despite this ongoing debate, government adoption of behavioural insights has expanded considerably. Following the founding of the UK's Behavioural Insights Team in 2010, informally nicknamed the \"Nudge Unit,\" the approach spread rapidly across public administration worldwide; by 2022, more than 200 dedicated behavioural insights units were reported to be operating across over 60 countries, applying similar techniques to areas ranging from tax compliance to public health messaging.\n\n(8) Thaler himself later drew a related distinction between beneficial nudges and what he termed \"sludge\" — friction deliberately or carelessly introduced into a process to discourage a desired action, such as an unnecessarily complicated cancellation procedure for a subscription service. Ethicists have generally treated nudges that primarily benefit the individual being nudged, such as retirement savings defaults, as less ethically contentious than nudges or sludge practices that primarily benefit the nudging institution at the individual's expense.\n\n(9) Whether nudging represents a genuinely effective and ethically defensible tool for improving welfare while preserving choice, or a policy fashion whose real-world impact has been considerably overstated relative to its initial promise, remains an open and actively contested question among economists and policymakers alike.",
+  "tasks": [
+    {
+      "id": "en-t-6-01",
+      "exam_title": "Paragraphs 1–3",
+      "kind": "reading",
+      "statements": [
+        "Choice architecture is described as a strategy that works by restricting the available options rather than redesigning their presentation.",
+        "Nudging is described as a strategy that redesigns the context of a choice without removing any options from the menu.",
+        "Under opt-in enrolment, average retirement plan participation in the cited 2015 study was around 61%, rising to approximately 91% under opt-out enrolment.",
+        "The underlying menu of retirement plan options is described as changing substantially when employers switched from opt-in to opt-out enrolment.",
+        "The gap between opt-in and opt-out organ donation consent rates is attributed in the passage primarily to differing cultural attitudes toward donation."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Choice architecture is described as a strategy that works by restricting the available options rather than redesigning their presentation.**\n\nParagraph 1 draws the opposite contrast: proponents exploit choice architecture \"not by restricting options, but by redesigning the context in which choices are made.\" Restricting the menu is exactly what nudging is said to avoid.\n\n**Trap:** Flipping the \"not X but Y\" contrast is a classic false reading.\n\nThe claim reverses Paragraph 1's wording, so it fails — the passage keeps options open and redesigns context instead.",
+        "**B) Nudging is described as a strategy that redesigns the context of a choice without removing any options from the menu.**\n\nParagraph 1 defines nudging as redesigning the choice context without restricting options, and Paragraph 2 confirms the retirement menu \"remaining unchanged\" while enrolment still shifted.\n\n**Tip:** Pair the general definition with the concrete \"menu…unchanged\" proof.\n\nThe statement tracks both the strategy and the unchanged menu, so it matches the passage.",
+        "**C) Under opt-in enrolment, average retirement plan participation in the cited 2015 study was around 61%, rising to approximately 91% under opt-out enrolment.**\n\nParagraph 2 states opt-in participation \"averaged around 61%\" and that under automatic opt-out enrolment it \"rose to approximately 91%.\" The statement simply restates those figures in order.\n\nThe numbers line up with Paragraph 2, so the claim holds.",
+        "**D) The underlying menu of retirement plan options is described as changing substantially when employers switched from opt-in to opt-out enrolment.**\n\nParagraph 2 says participation rose \"despite the underlying menu of retirement options remaining unchanged.\" The menu stays the same; only the default enrolment rule changes.\n\n**Trap:** \"Changed substantially\" invents a rewrite of options the text expressly denies.\n\nThe claim fails because the passage says the menu remained unchanged.",
+        "**E) The gap between opt-in and opt-out organ donation consent rates is attributed in the passage primarily to differing cultural attitudes toward donation.**\n\nParagraph 3 attributes the consent gap \"not to differing cultural attitudes toward donation but to the powerful effect of the default option itself.\" Culture is named only to be rejected.\n\n**Trap:** The passage's \"not…but…\" construction flips cleanly into a false cultural claim.\n\nThe statement fails because the text credits the default, not culture."
+      ],
+      "highlights": [
+        "not by restricting options, but by redesigning the context",
+        "despite the underlying menu of retirement options remaining unchanged",
+        "participation in a 2015 study of US employers averaged around 61%. When employers instead switched to automatic, opt-out enrolment — in which employees are enrolled by default unless they actively choose to leave — participation in the same study rose to approximately 91%",
+        "despite the underlying menu of retirement options remaining unchanged",
+        "not to differing cultural attitudes toward donation but to the powerful effect of the default option itself"
+      ]
+    },
+    {
+      "id": "en-t-6-02",
+      "exam_title": "Paragraphs 4–6",
+      "kind": "reading",
+      "statements": [
+        "The cafeteria experiment found that placing fruit at eye level increased its selection while removing dessert from the menu entirely.",
+        "\"Libertarian paternalism\" is described as preserving the formal freedom to choose an alternative outcome, even while steering people toward a particular one.",
+        "Critics of nudging argue that exploiting cognitive biases sits comfortably alongside genuine respect for individual autonomy.",
+        "A 2022 meta-analysis found an average nudge effect of approximately 8.7 percentage points, which fell to approximately 1.4 percentage points after adjusting for publication bias.",
+        "The adjustment for publication bias is described as increasing confidence that nudges are more powerful than the original literature suggested."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The cafeteria experiment found that placing fruit at eye level increased its selection while removing dessert from the menu entirely.**\n\nParagraph 4 reports fruit rose ~25% at eye level and dessert fell ~15% when moved to a less convenient spot, \"again without removing any option from the menu.\" Dessert was relocated, not deleted.\n\n**Trap:** \"Removing…entirely\" smuggles a ban that the passage explicitly refuses.\n\nThe claim fails because no option was removed from the menu.",
+        "**B) \"Libertarian paternalism\" is described as preserving the formal freedom to choose an alternative outcome, even while steering people toward a particular one.**\n\nParagraph 5 defines the approach as paternalistic (steering toward assumed interests) yet libertarian because it \"preserves the formal freedom to choose otherwise.\" Steering plus retained exit is the whole point of the label.\n\nThat definition matches the statement, so the claim holds.",
+        "**C) Critics of nudging argue that exploiting cognitive biases sits comfortably alongside genuine respect for individual autonomy.**\n\nParagraph 5 says critics argue that exploiting biases such as status quo bias and loss aversion \"sits uneasily with genuine respect for individual autonomy.\" \"Comfortably\" reverses \"uneasily.\"\n\n**Trap:** Softening \"uneasily\" into \"comfortably\" flips the critics' stance.\n\nThe claim fails because critics say the practice sits uneasily with autonomy.",
+        "**D) A 2022 meta-analysis found an average nudge effect of approximately 8.7 percentage points, which fell to approximately 1.4 percentage points after adjusting for publication bias.**\n\nParagraph 6 gives both figures in order: ~8.7 percentage points on average, then ~1.4 after adjusting for publication bias. The statement copies that before/after pair.\n\nThe figures match Paragraph 6, so the claim holds.",
+        "**E) The adjustment for publication bias is described as increasing confidence that nudges are more powerful than the original literature suggested.**\n\nAfter the adjustment, Paragraph 6 says the published literature \"may have substantially overstated how powerful typical nudges actually are.\" Correction shrinks the estimated effect; it does not boost confidence that nudges are stronger.\n\n**Trap:** \"More powerful\" inverts the \"overstated\" verdict.\n\nThe claim fails because the bias adjustment weakens, not strengthens, the typical-effect story."
+      ],
+      "highlights": [
+        "again without removing any option from the menu",
+        "preserves the formal freedom to choose otherwise",
+        "sits uneasily with genuine respect for individual autonomy",
+        "average behaviour-change effect of approximately 8.7 percentage points. However, once the analysis was adjusted to account for publication bias — the tendency for studies with small or null effects to go unpublished — the estimated average effect size fell to approximately 1.4 percentage points",
+        "the published literature may have substantially overstated how powerful typical nudges actually are"
+      ]
+    },
+    {
+      "id": "en-t-6-03",
+      "exam_title": "Paragraphs 7–9",
+      "kind": "reading",
+      "statements": [
+        "By 2022, more than 200 dedicated behavioural insights units were reported to be operating across over 60 countries.",
+        "The UK's Behavioural Insights Team was founded before the term \"sludge\" was introduced by Thaler in the passage's account.",
+        "\"Sludge,\" as defined in the passage, refers to friction that encourages a desired action rather than discouraging it.",
+        "Ethicists are described as generally viewing retirement savings defaults as more ethically contentious than sludge practices that benefit the nudging institution.",
+        "The passage concludes by presenting nudging's effectiveness and ethical status as a settled, noncontroversial matter."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) By 2022, more than 200 dedicated behavioural insights units were reported to be operating across over 60 countries.**\n\nParagraph 7 reports exactly that scale: \"by 2022, more than 200 dedicated behavioural insights units were reported to be operating across over 60 countries.\"\n\nThe statement restates Paragraph 7's figures, so it matches the passage.",
+        "**B) The UK's Behavioural Insights Team was founded before the term \"sludge\" was introduced by Thaler in the passage's account.**\n\nParagraph 7 places the UK team's founding in 2010; Paragraph 8 says Thaler \"later drew a related distinction\" introducing \"sludge.\" On the passage's timeline, 2010 precedes that later distinction.\n\n**Tip:** Chronology items hinge on \"founded in 2010\" versus \"later.\"\n\nThe founding precedes the sludge distinction in the text, so the claim holds.",
+        "**C) \"Sludge,\" as defined in the passage, refers to friction that encourages a desired action rather than discouraging it.**\n\nParagraph 8 defines sludge as \"friction deliberately or carelessly introduced into a process to discourage a desired action.\" Encouraging is the opposite of that definition.\n\n**Trap:** Swapping encourage/discourage reverses the sludge concept.\n\nThe claim fails because sludge is friction that discourages, not encourages, a desired action.",
+        "**D) Ethicists are described as generally viewing retirement savings defaults as more ethically contentious than sludge practices that benefit the nudging institution.**\n\nParagraph 8 says ethicists generally treat individual-benefiting defaults such as retirement savings as \"less ethically contentious\" than institution-benefiting sludge. \"More\" flips \"less.\"\n\n**Trap:** Comparative polarity (less vs more) is the whole trap.\n\nThe claim fails because retirement defaults are treated as less, not more, contentious.",
+        "**E) The passage concludes by presenting nudging's effectiveness and ethical status as a settled, noncontroversial matter.**\n\nParagraph 9 leaves the question \"open and actively contested\" among economists and policymakers. Nothing in the close presents the debate as settled.\n\nThe claim fails because the passage ends on an open, contested question."
+      ],
+      "highlights": [
+        "by 2022, more than 200 dedicated behavioural insights units were reported to be operating across over 60 countries",
+        "Following the founding of the UK's Behavioural Insights Team in 2010",
+        "friction deliberately or carelessly introduced into a process to discourage a desired action",
+        "less ethically contentious than nudges or sludge practices that primarily benefit the nudging institution",
+        "remains an open and actively contested question"
+      ]
+    },
+    {
+      "id": "en-t-6-04",
+      "exam_title": "Disguised Inference Traps (Paragraph Order)",
+      "kind": "reading",
+      "statements": [
+        "Since opt-out enrolment increased retirement participation without changing the menu of options, it can be inferred that the default option itself, not the options available, drove the change.",
+        "If participation rose from 61% to 91% under opt-out enrolment, this represents an increase of exactly 30 percentage points.",
+        "Because organ donation consent rates differ sharply between opt-in and opt-out countries, it follows that opt-out countries must have citizens who are, on average, more altruistic than those in opt-in countries.",
+        "Because critics question whether \"libertarian paternalism\" understates manipulation, the passage implies critics believe nudges leave individuals with no meaningful choice whatsoever.",
+        "Since the meta-analysis found a smaller effect after adjusting for publication bias, it can be inferred that nudges have no measurable effect on behaviour at all."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Since opt-out enrolment increased retirement participation without changing the menu of options, it can be inferred that the default option itself, not the options available, drove the change.**\n\nParagraph 2 holds the menu fixed while only the enrolment default changes, and participation still jumps. With options held constant, the default is the factor the passage leaves you to credit.\n\n**Tip:** Same menu + different default → infer the default drove the shift.\n\nThat inference is licensed by Paragraph 2, so the claim holds.",
+        "**B) If participation rose from 61% to 91% under opt-out enrolment, this represents an increase of exactly 30 percentage points.**\n\nParagraph 2's 61% → 91% shift is \"an increase of roughly 30 percentage points.\" 91 − 61 = 30, so \"exactly 30\" matches the arithmetic the passage itself frames as roughly 30.\n\nThe arithmetic matches the cited figures, so the claim holds.",
+        "**C) Because organ donation consent rates differ sharply between opt-in and opt-out countries, it follows that opt-out countries must have citizens who are, on average, more altruistic than those in opt-in countries.**\n\nParagraph 3 rejects cultural-attitude explanations and credits \"the powerful effect of the default option itself.\" Inferring greater altruism reimports the explanation the text rules out.\n\n**Trap:** Sharp rate gaps invite personality stories the passage explicitly refuses.\n\nThe inference fails because the passage attributes the gap to defaults, not altruism.",
+        "**D) Because critics question whether \"libertarian paternalism\" understates manipulation, the passage implies critics believe nudges leave individuals with no meaningful choice whatsoever.**\n\nCritics worry about exploitation of bias \"regardless of how easy the opt-out technically remains.\" Their concern is about manipulative steering, not about zero remaining choice — the text still stresses that the exit stays open.\n\n**Trap:** \"Understates manipulation\" is not \"leaves no choice.\"\n\nThe claim overreaches; critics contest autonomy under residual opt-out, not total absence of choice.",
+        "**E) Since the meta-analysis found a smaller effect after adjusting for publication bias, it can be inferred that nudges have no measurable effect on behaviour at all.**\n\nParagraph 6's adjusted estimate is still \"approximately 1.4 percentage points\" — smaller, not zero. A reduced positive average is not evidence of no measurable effect.\n\n**Trap:** \"Smaller\" is not \"none.\"\n\nThe inference fails because 1.4 percentage points remains a measurable average effect."
+      ],
+      "highlights": [
+        "despite the underlying menu of retirement options remaining unchanged",
+        "an increase of roughly 30 percentage points",
+        "not to differing cultural attitudes toward donation but to the powerful effect of the default option itself",
+        "regardless of how easy the opt-out technically remains",
+        "the estimated average effect size fell to approximately 1.4 percentage points"
+      ]
+    },
+    {
+      "id": "en-t-6-05",
+      "exam_title": "Disguised Cross-Paragraph Synthesis (Paragraph Order)",
+      "kind": "reading",
+      "statements": [
+        "The retirement enrolment example (Paragraph 2) and the organ donation example (Paragraph 3) both illustrate the same underlying mechanism: the power of a default option to shape behaviour.",
+        "Because both the retirement and organ donation examples show large default effects, and because the 2022 meta-analysis found smaller effects after correcting for publication bias, the passage implies these specific large-scale, real-world default effects have themselves been shown to be overstated.",
+        "The publication bias adjustment discussed in Paragraph 6, which reduced the estimated average effect from 8.7 to 1.4 percentage points, is presented as a reason for caution when generalising from published nudge studies.",
+        "The rapid global spread of behavioural insights units (Paragraph 7) is presented as proof that the concerns raised about publication bias (Paragraph 6) have been fully resolved.",
+        "The distinction between nudges and \"sludge\" (Paragraph 8) helps explain why not all behavioural interventions are treated as equally ethically acceptable, consistent with the passage's closing framing of nudging as a contested rather than uniformly endorsed practice (Paragraph 9)."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The retirement enrolment example (Paragraph 2) and the organ donation example (Paragraph 3) both illustrate the same underlying mechanism: the power of a default option to shape behaviour.**\n\nBoth paragraphs keep the choice set largely intact while changing who must act to leave the default; Paragraph 3 even names \"the powerful effect of the default option itself.\" Shared mechanism, two domains.\n\nThe synthesis matches how Paragraphs 2–3 are framed, so the claim holds.",
+        "**B) Because both the retirement and organ donation examples show large default effects, and because the 2022 meta-analysis found smaller effects after correcting for publication bias, the passage implies these specific large-scale, real-world default effects have themselves been shown to be overstated.**\n\nParagraph 6's bias adjustment concerns the published nudge literature on average; it never reapplies that correction to the retirement or organ-donation figures cited earlier. Combining them invents a link the text does not make.\n\n**Trap:** A general meta-analytic caution is not a rebuttal of named case studies.\n\nThe claim fails because the passage does not say those specific defaults were themselves overstated.",
+        "**C) The publication bias adjustment discussed in Paragraph 6, which reduced the estimated average effect from 8.7 to 1.4 percentage points, is presented as a reason for caution when generalising from published nudge studies.**\n\nAfter reporting the drop to ~1.4, Paragraph 6 concludes the published literature \"may have substantially overstated\" typical nudge power — precisely a caution about generalising from the uncorrected average.\n\nThat is the passage's own framing, so the claim holds.",
+        "**D) The rapid global spread of behavioural insights units (Paragraph 7) is presented as proof that the concerns raised about publication bias (Paragraph 6) have been fully resolved.**\n\nParagraph 7 narrates institutional uptake after 2010; Paragraph 6's empirical dispute is left standing. Popularity of units is not offered as proof that bias concerns are settled.\n\n**Trap:** Adoption ≠ resolution of an effect-size debate.\n\nThe claim fails because the text never treats global spread as solving the publication-bias worry.",
+        "**E) The distinction between nudges and \"sludge\" (Paragraph 8) helps explain why not all behavioural interventions are treated as equally ethically acceptable, consistent with the passage's closing framing of nudging as a contested rather than uniformly endorsed practice (Paragraph 9).**\n\nParagraph 8 grades ethics by who benefits; Paragraph 9 leaves effectiveness and defensibility \"open and actively contested.\" The sludge distinction supplies one reason the practice is not treated as uniformly fine.\n\nValid cross-paragraph synthesis, so the claim holds."
+      ],
+      "highlights": [
+        "the powerful effect of the default option itself",
+        "the published literature may have substantially overstated how powerful typical nudges actually are",
+        "suggesting that the published literature may have substantially overstated how powerful typical nudges actually are",
+        "by 2022, more than 200 dedicated behavioural insights units were reported to be operating across over 60 countries",
+        "less ethically contentious than nudges or sludge practices that primarily benefit the nudging institution at the individual's expense"
+      ]
+    },
+    {
+      "id": "en-t-6-06",
+      "exam_title": "Grammar Rules (New Sentences, Anchored in Text Vocabulary)",
+      "kind": "grammar",
+      "statements": [
+        "\"Had the default option not been changed, participation rates would have remained substantially lower.\"",
+        "\"The committee recommended that the agency reassesses its use of automatic enrolment.\"",
+        "\"The number of countries adopting behavioural insights units continue to rise each year.\"",
+        "\"Neither the researchers nor the funding body were aware of the publication bias at first.\"",
+        "\"Having corrected for publication bias, the researchers reported a smaller average effect size.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Had the default option not been changed, participation rates would have remained substantially lower.\"**\n\nThis is a well-formed third conditional with inversion: \"Had…not been changed\" stands for \"If…had not been changed,\" paired with \"would have remained\" for the unreal past result.\n\n**Tip:** Inverted Had + past participle replaces If + had without changing the tense pattern.\n\nThe conditional structure is sound, so the sentence is grammatically correct.",
+        "**B) \"The committee recommended that the agency reassesses its use of automatic enrolment.\"**\n\nAfter \"recommended that,\" formal English wants the mandative subjunctive — the base form \"reassess,\" not third-person \"reassesses.\"\n\n**Trap:** Ordinary present-tense -s often creeps in after recommend/insist/require + that.\n\nThe verb form is wrong, so the sentence is not grammatically correct.",
+        "**C) \"The number of countries adopting behavioural insights units continue to rise each year.\"**\n\nThe head noun is singular \"number,\" so the verb must be singular: \"continues,\" not \"continue.\" The plural \"countries\" in the of-phrase does not control agreement.\n\n**Trap:** \"The number of…\" is singular; \"a number of…\" is plural.\n\nSubject–verb agreement fails, so the sentence is not grammatically correct.",
+        "**D) \"Neither the researchers nor the funding body were aware of the publication bias at first.\"**\n\nWith \"neither…nor,\" many accepted usages allow a plural verb when the coordinated subjects are different parties treated jointly as unaware. \"Were aware\" fits that joint reading of researchers and funding body.\n\nThe agreement is acceptable in this neither…nor pattern, so the sentence is grammatically correct.",
+        "**E) \"Having corrected for publication bias, the researchers reported a smaller average effect size.\"**\n\nThe perfect participle \"Having corrected…\" correctly attaches to \"the researchers,\" who did the correcting and then reported. No dangling modifier.\n\nThe opener and subject align, so the sentence is grammatically correct."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-6-07",
+      "exam_title": "Grammar Rules II (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"No sooner had the default been switched than participation rates began to climb.\"",
+        "\"The policy, along with several accompanying reforms, were introduced the same year.\"",
+        "\"Each of the surveyed employers have adopted some form of automatic enrolment.\"",
+        "\"By the time the meta-analysis was published, several earlier studies will have already been cited widely.\"",
+        "\"The findings, which were adjusted for publication bias, suggest a smaller true effect.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"No sooner had the default been switched than participation rates began to climb.\"**\n\n\"No sooner…than\" correctly triggers inversion (\"had the default been switched\") with past perfect in the first clause and simple past (\"began\") in the second.\n\n**Tip:** Remember the pair is no sooner…than (not when/then).\n\nThe correlative and tense pattern are right, so the sentence is grammatically correct.",
+        "**B) \"The policy, along with several accompanying reforms, were introduced the same year.\"**\n\n\"Along with…\" is parenthetical; the true subject is singular \"policy,\" which needs \"was introduced,\" not \"were.\"\n\n**Trap:** Extra nouns after along with/as well as often steal plural agreement wrongly.\n\nAgreement fails, so the sentence is not grammatically correct.",
+        "**C) \"Each of the surveyed employers have adopted some form of automatic enrolment.\"**\n\n\"Each of\" takes a singular verb even when a plural noun follows: \"has adopted,\" not \"have.\"\n\n**Trap:** The plural after \"of\" is not the agreement controller.\n\nThe verb should be singular, so the sentence is not grammatically correct.",
+        "**D) \"By the time the meta-analysis was published, several earlier studies will have already been cited widely.\"**\n\n\"By the time…was published\" sets a past reference point, so earlier completion needs past perfect (\"had already been cited\"), not future perfect \"will have.\"\n\n**Trap:** Future perfect cannot sit after a past \"by the time\" anchor.\n\nThe tense is incompatible with the past timeframe, so the sentence is not grammatically correct.",
+        "**E) \"The findings, which were adjusted for publication bias, suggest a smaller true effect.\"**\n\nPlural \"findings\" correctly takes \"were adjusted\" in the relative clause and plural \"suggest\" in the main clause.\n\nAgreement is consistent throughout, so the sentence is grammatically correct."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-6-08",
+      "exam_title": "Grammar Rules III (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"Despite of the criticism, many governments continued expanding their behavioural insights units.\"",
+        "\"Whoever designs the next nudge should account for how easily people can opt out.\"",
+        "\"The agency denied having deliberately concealed the smaller adjusted effect size.\"",
+        "\"There is several reasons why publication bias distorts the nudge literature.\"",
+        "\"The unit, which was established in 2010, aimed to apply behavioural insights to public policy.\""
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Despite of the criticism, many governments continued expanding their behavioural insights units.\"**\n\n\"Despite\" never takes \"of\"; the correct forms are \"despite the criticism\" or \"in spite of the criticism.\"\n\n**Trap:** Mixing despite with the of from in spite of is a high-frequency error.\n\nThe preposition pattern is wrong, so the sentence is not grammatically correct.",
+        "**B) \"Whoever designs the next nudge should account for how easily people can opt out.\"**\n\n\"Whoever\" properly heads the subject clause (\"Whoever designs…\"), and \"should account\" is a well-formed main-clause verb phrase.\n\nThe structure is grammatical, so the sentence is correct.",
+        "**C) \"The agency denied having deliberately concealed the smaller adjusted effect size.\"**\n\nAfter \"denied,\" the perfect gerund \"having…concealed\" correctly marks a prior alleged act. Form and meaning align.\n\nThe perfect-gerund complement is right, so the sentence is grammatically correct.",
+        "**D) \"There is several reasons why publication bias distorts the nudge literature.\"**\n\nExistential \"there\" agreement follows the real subject: plural \"reasons\" requires \"There are,\" not \"There is.\"\n\n**Trap:** \"There is\" + plural noun is a classic agreement miss.\n\nNumber agreement fails, so the sentence is not grammatically correct.",
+        "**E) \"The unit, which was established in 2010, aimed to apply behavioural insights to public policy.\"**\n\nSingular \"unit\" takes singular \"was established\" in the non-restrictive clause and singular \"aimed\" in the main clause.\n\nAgreement and relative-clause form are sound, so the sentence is grammatically correct."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-6-09",
+      "exam_title": "Vocabulary & Collocation in New Context",
+      "kind": "vocabulary",
+      "statements": [
+        "\"Choice architecture refers to redesigning the presentation of options without necessarily removing any of them.\"",
+        "\"Sludge refers to friction deliberately introduced to make a desired action easier to complete.\"",
+        "\"Status quo bias describes a tendency to prefer the current state of affairs over changing it.\"",
+        "\"Libertarian paternalism was described as steering people toward an outcome while still preserving their formal freedom to choose otherwise.\"",
+        "\"Publication bias refers to the tendency for null or small-effect studies to be published more often than significant ones.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Choice architecture refers to redesigning the presentation of options without necessarily removing any of them.\"**\n\nParagraph 1 ties choice architecture to how choices are presented and stresses redesigning context rather than restricting options. The sentence's meaning matches that framing.\n\nThe use of \"choice architecture\" is accurate, so the claim holds.",
+        "**B) \"Sludge refers to friction deliberately introduced to make a desired action easier to complete.\"**\n\nParagraph 8 defines sludge as friction that discourages a desired action (for example, a complicated cancellation). \"Easier\" reverses that meaning.\n\n**Trap:** Sludge is stickiness that blocks, not grease that helps.\n\nThe definition is inverted, so the wording is not used correctly.",
+        "**C) \"Status quo bias describes a tendency to prefer the current state of affairs over changing it.\"**\n\nThat is the ordinary meaning of status quo bias, and Paragraph 5 lists it among the cognitive biases nudges exploit when defaults stick. The sentence uses the term correctly.\n\nThe meaning matches established usage (and the passage's framing), so the claim holds.",
+        "**D) \"Libertarian paternalism was described as steering people toward an outcome while still preserving their formal freedom to choose otherwise.\"**\n\nParagraph 5's definition is exactly that mix of steering and preserved formal freedom. The sentence restates it faithfully.\n\nThe term is used as the passage defines it, so the claim holds.",
+        "**E) \"Publication bias refers to the tendency for null or small-effect studies to be published more often than significant ones.\"**\n\nParagraph 6 defines publication bias as \"the tendency for studies with small or null effects to go unpublished\" — the opposite of being published more often.\n\n**Trap:** Flipping unpublished ↔ published more often reverses the bias.\n\nThe definition is wrong, so the wording is not used correctly."
+      ],
+      "highlights": [
+        "not by restricting options, but by redesigning the context",
+        "friction deliberately or carelessly introduced into a process to discourage a desired action",
+        "exploiting known cognitive biases such as status quo bias and loss aversion",
+        "preserves the formal freedom to choose otherwise",
+        "the tendency for studies with small or null effects to go unpublished"
+      ]
+    },
+    {
+      "id": "en-t-6-10",
+      "exam_title": "Vocabulary & Collocation II (New Context)",
+      "kind": "vocabulary",
+      "statements": [
+        "\"A behavioural insights unit applies findings from psychology and economics to inform public policy design.\"",
+        "\"An opt-out default means citizens must actively register before being included in a scheme.\"",
+        "\"Loss aversion describes a tendency to weigh potential losses more heavily than equivalent potential gains.\"",
+        "\"A nudge, by the passage's definition, necessarily removes certain options from an individual's choice set.\"",
+        "\"An effect size shrinking after correction for publication bias suggests the original estimate may have been inflated.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"A behavioural insights unit applies findings from psychology and economics to inform public policy design.\"**\n\nParagraph 7 describes such units applying behavioural techniques across tax compliance, health messaging, and related policy domains. The sentence's meaning fits that institutional role.\n\nThe term is used appropriately, so the claim holds.",
+        "**B) \"An opt-out default means citizens must actively register before being included in a scheme.\"**\n\nThat describes opt-in. Under opt-out / presumed consent, people are included by default unless they actively object (Paragraphs 2–3).\n\n**Trap:** Opt-in vs opt-out swap is the whole error.\n\nThe definition names the wrong default rule, so the wording is not used correctly.",
+        "**C) \"Loss aversion describes a tendency to weigh potential losses more heavily than equivalent potential gains.\"**\n\nThat is the standard meaning of loss aversion, which Paragraph 5 lists among the biases nudges exploit. The sentence uses the term correctly.\n\nThe meaning matches established usage, so the claim holds.",
+        "**D) \"A nudge, by the passage's definition, necessarily removes certain options from an individual's choice set.\"**\n\nParagraph 1 stresses redesign \"not by restricting options,\" and Paragraph 4 repeats that options stay on the menu. Removing choices is the opposite of the passage's nudge definition.\n\n**Trap:** \"Necessarily removes\" contradicts the keep-the-menu design.\n\nThe definition is wrong for this passage, so the wording is not used correctly.",
+        "**E) \"An effect size shrinking after correction for publication bias suggests the original estimate may have been inflated.\"**\n\nParagraph 6's drop from ~8.7 to ~1.4 supports the idea that the uncorrected published average overstated typical power — i.e., the original estimate looked inflated.\n\nThat inference matches the passage's logic, so the claim holds."
+      ],
+      "highlights": [
+        "applying similar techniques to areas ranging from tax compliance to public health messaging",
+        "citizens are treated as donors unless they explicitly object",
+        "exploiting known cognitive biases such as status quo bias and loss aversion",
+        "not by restricting options, but by redesigning the context",
+        "the published literature may have substantially overstated how powerful typical nudges actually are"
+      ]
+    }
+  ]
+}

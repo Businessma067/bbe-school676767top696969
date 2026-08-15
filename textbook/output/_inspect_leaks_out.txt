@@ -1,0 +1,17 @@
+﻿leak lines 138
+top cmds [('\\lvert', 114), ('\\rvert', 114), ('\\Rightarrow', 100), ('\\neg', 53), ('\\quad', 52), ('\\cup', 41), ('\\cap', 40), ('\\Leftrightarrow', 27), ('\\land', 17), ('\\setminus', 14), ('\\in', 7), ('\\equiv', 7), ('\\times', 6), ('\\subsetneq', 5), ('\\subseteq', 5), ('\\neq', 5), ('\\emptyset', 3), ('\\notin', 2), ('\\lor', 2), ('\\mathbb', 1)]
+sample leaks:
+py : Traceback (most recent call last):
+At C:\Users\bubli\AppData\Local\Temp\ps-script-cb6e1300-8c9e-48bc-b8b6-cf4de5cf4540.ps1:106 char:1
++ py -3 textbook/output/_inspect_leaks.py 2>&1 | Out-File -Encoding utf ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\bubli\Projects\bbe-school-fixed\textbook\output\_inspect_leaks.py", line 18, in <module>
+    print(x[:200])
+    ~~~~~^^^^^^^^^
+  File "C:\Users\bubli\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 64: character maps to <undefined>

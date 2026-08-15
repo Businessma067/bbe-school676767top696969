@@ -1,0 +1,1145 @@
+{
+  "subsection_id": "v.4",
+  "tasks": [
+    {
+      "id": "en-v-4-01",
+      "case_id": "ENG V.4.01",
+      "title": "Task 1",
+      "subsection": "v.4",
+      "sort_order": 1,
+      "difficulty_level": "1/5",
+      "context": "Five claims about the verbs scholars use when they bring evidence forward, confirm it or call it into question. Decide whether each description of the verb is accurate.",
+      "statements": [
+        "A historian who announces that she will \"adduce\" three unpublished letters is saying that she will set that material aside as irrelevant.",
+        "A laboratory report needs \"substantiate\" when a claimed effect has to be backed with measurements rather than merely asserted.",
+        "A second excavation that \"corroborates\" the dating of a burial site has shown that dating to be mistaken.",
+        "A conservator who \"impugns\" the provenance of a painting is confirming that its ownership history is sound.",
+        "Witnesses asked to \"attest\" to a signature are being asked to deny that they ever saw it."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) A historian who announces that she will \"adduce\" three unpublished letters is saying that she will set that material aside as irrelevant.**\n\n\"Adduce\" means to bring forward evidence or an example in support of an argument, so it is the verb of citing rather than discarding. A historian who adduces unpublished letters is putting them on the table for the reader to weigh. Setting material aside as irrelevant would be discounting or dismissing it, which is the opposite movement.\n\nBringing material into the argument is the whole force of the verb, so the description reverses it: the letters are being produced as support, not shelved.",
+        "**B) A laboratory report needs \"substantiate\" when a claimed effect has to be backed with measurements rather than merely asserted.**\n\n\"Substantiate\" means to support a claim with evidence, which is exactly the obligation a report takes on when it says a treatment shifted an outcome. Restating the claim in more confident language is assertion, not substantiation, and scientific prose keeps the two apart. The verb belongs where evidence is expected to be produced rather than promised.\n\nEvidence-backing is precisely the work this verb names, so the sentence places it where it belongs.",
+        "**C) A second excavation that \"corroborates\" the dating of a burial site has shown that dating to be mistaken.**\n\nTo corroborate is to confirm: independent work corroborates an earlier result when its findings point the same way and add weight to it. Showing the dating to be mistaken is the contrary move, and archaeologists reach for \"contradict\" or \"overturn\" there. The distinction matters because corroboration builds a case while contradiction dismantles one.\n\n**Trap:** The word sounds severe, but it always supports rather than attacks.\n\nConfirmation and refutation pull in opposite directions, so the definition sends the verb the wrong way; a corroborating excavation strengthens the date it tests.",
+        "**D) A conservator who \"impugns\" the provenance of a painting is confirming that its ownership history is sound.**\n\n\"Impugn\" means to call into question the honesty or validity of something, so impugning a provenance casts doubt over the chain of ownership. Vouching for a history that is sound would be to authenticate or endorse it. The verb carries an adversarial charge that catalogue entries use deliberately when they signal suspicion.\n\nDoubt rather than endorsement is what the verb delivers, so the claim inverts it; a conservator who impugns a provenance is attacking the very history described here as settled.",
+        "**E) Witnesses asked to \"attest\" to a signature are being asked to deny that they ever saw it.**\n\n\"Attest\" means to bear witness to something or certify that it is genuine, which is why the word sits on wills and affidavits. Witnesses who attest a signature formally affirm that they saw it made. Denying knowledge of it would be to disclaim or repudiate the document, a different act altogether.\n\nAffirmation is built into the verb, so the description cannot hold: attesting witnesses put their names behind the signature instead of distancing themselves from it."
+      ],
+      "highlights": [
+        "adduce",
+        "substantiate",
+        "corroborates",
+        "impugns",
+        "attest"
+      ],
+      "solution_overview": "These five turn on the direction a formal verb points: towards evidence or away from it, towards confirmation or towards attack. Paraphrase each verb in plain words and ask whether the sentence still describes the same act. Where the paraphrase reverses the picture, the definition on offer has been turned around."
+    },
+    {
+      "id": "en-v-4-02",
+      "case_id": "ENG V.4.02",
+      "title": "Task 2",
+      "subsection": "v.4",
+      "sort_order": 2,
+      "difficulty_level": "1/5",
+      "context": "Five judgements about formal words that recur in statutes, clinical guidance and research summaries. Decide whether each judgement is correct.",
+      "statements": [
+        "In a research summary, a \"caveat\" is a guarantee that the finding will hold in every population studied.",
+        "A tribunal that \"deems\" a notice served on the day it was posted is treating it as having that status whether or not it arrived then.",
+        "A vaccination schedule that \"obviates\" the need for a booster makes that booster more urgently required.",
+        "\"Provisional\" magnitudes released in the hours after an earthquake are expected to change once more stations have reported.",
+        "A court that hears \"extenuating\" circumstances is hearing facts that make the offence look more serious than it first appeared."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In a research summary, a \"caveat\" is a guarantee that the finding will hold in every population studied.**\n\nA \"caveat\" is a warning or qualification attached to a claim, telling the reader where it may not apply. Summaries add caveats about sample size or setting precisely because the finding is not universal. A guarantee of general validity would be the opposite gesture and would need very different wording.\n\nThe word exists to narrow a claim rather than underwrite it, so the sentence mistakes a hedge for a promise.",
+        "**B) A tribunal that \"deems\" a notice served on the day it was posted is treating it as having that status whether or not it arrived then.**\n\n\"Deem\" is the formal verb for treating something as having a particular status by decision rather than by observation. Deeming provisions are common in procedural rules because they fix a date that everyone can work from. The point of the verb is that the legal status holds even where the facts are untidy.\n\n**Tip:** Where \"deem\" appears, look for a rule assigning a status rather than a report of what actually happened.\n\nAssigning a status by decision is what the verb does, so the tribunal's deeming provision works just as the sentence describes.",
+        "**C) A vaccination schedule that \"obviates\" the need for a booster makes that booster more urgently required.**\n\n\"Obviate\" means to remove a difficulty or make something unnecessary, so a schedule that obviates a booster has done away with the need for one. Making the booster more urgent would be to necessitate it. The verb is a favourite of formal writing precisely because it compresses \"removes the need for\" into one word.\n\nRemoving a requirement and intensifying it cannot be the same event, so the claim fails; a schedule that obviates a booster is one that leaves no call for it.",
+        "**D) \"Provisional\" magnitudes released in the hours after an earthquake are expected to change once more stations have reported.**\n\n\"Provisional\" marks a figure issued for the time being and open to revision as better data arrives. Seismology publishes provisional magnitudes exactly because early estimates rest on a thin network of readings. A number no longer open to revision would be called final or definitive.\n\nOpenness to revision is the sense the adjective carries, so the description matches the practice it names.",
+        "**E) A court that hears \"extenuating\" circumstances is hearing facts that make the offence look more serious than it first appeared.**\n\n\"Extenuating\" circumstances reduce the blame attaching to an act without excusing it altogether, which is why they belong to mitigation rather than to proof of guilt. Facts that deepen fault are aggravating, and the two terms sit on opposite sides of a sentencing decision. The root sense of thinning or weakening points the same way.\n\nThe adjective lightens culpability rather than adding to it, so this description swaps it for its counterpart: facts that worsen an offence are the aggravating ones."
+      ],
+      "highlights": [
+        "caveat",
+        "deems",
+        "obviates",
+        "Provisional",
+        "extenuating"
+      ],
+      "solution_overview": "Each item pairs a formal noun, verb or adjective with a paraphrase, and only some of the paraphrases keep the original force. Watch in particular for words that limit or qualify a claim, since these are the ones a careless reading turns into guarantees. Read the whole sentence before judging, because the surrounding facts often contradict the paraphrase outright."
+    },
+    {
+      "id": "en-v-4-03",
+      "case_id": "ENG V.4.03",
+      "title": "Task 3",
+      "subsection": "v.4",
+      "sort_order": 3,
+      "difficulty_level": "1/5",
+      "context": "Five statements about formal words used in engineering reports, statutes and environmental science. Decide whether each statement describes the word correctly.",
+      "statements": [
+        "A drainage scheme that \"ameliorates\" waterlogging on upland farmland has made the flooding worse for the fields it serves.",
+        "A fault described as \"latent\" in a bridge deck is one that is plainly visible on a routine inspection.",
+        "Calling reliable cold storage a \"sine qua non\" of a rural vaccination campaign presents it as the condition without which the campaign cannot work.",
+        "When a statute leaves a sentencing decision to the judge's \"discretion,\" the judge may weigh each case on its own facts within the limits the statute sets.",
+        "Describing a run of Arctic winter temperatures as \"anomalous\" claims that it departs markedly from the established pattern for that season."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A drainage scheme that \"ameliorates\" waterlogging on upland farmland has made the flooding worse for the fields it serves.**\n\n\"Ameliorate\" means to make a bad situation better, and it belongs to the same family as improvement rather than aggravation. A scheme that ameliorates waterlogging leaves the ground drier than it found it. Worsening the flooding would be to aggravate or exacerbate the problem.\n\nImprovement is the only direction this verb travels in, so the sentence describes an outcome the word cannot cover.",
+        "**B) A fault described as \"latent\" in a bridge deck is one that is plainly visible on a routine inspection.**\n\n\"Latent\" describes something present but not yet apparent, which is why engineers use it for defects that surveys miss until they develop. A crack that anyone can see on a walk-over is patent or manifest instead. The whole reason latent defects attract special clauses is that they escape ordinary examination.\n\n**Trap:** Latent means hidden, not merely serious; visibility rather than severity is what the word settles.\n\nConcealment is the condition the adjective reports, so a defect anyone can see on a walk-over is the one thing it cannot describe.",
+        "**C) Calling reliable cold storage a \"sine qua non\" of a rural vaccination campaign presents it as the condition without which the campaign cannot work.**\n\nThe Latin phrase names an indispensable condition, literally something without which the thing in question does not stand. Applied to a vaccination campaign, it says that no amount of staffing or funding compensates for a broken cold chain. A merely helpful factor would be described as an advantage or a contributory element.\n\nIndispensability is exactly what the phrase asserts, so the reading offered here is the right one.",
+        "**D) When a statute leaves a sentencing decision to the judge's \"discretion,\" the judge may weigh each case on its own facts within the limits the statute sets.**\n\n\"Discretion\" in legal drafting is the authority to choose among lawful options rather than freedom from the law altogether. A discretionary power is bounded by the purposes and limits of the statute that grants it. The contrast is with a mandatory provision, which leaves the decision-maker no room to weigh anything.\n\nBounded judgement of the individual case is what the term confers, so the description states the position accurately.",
+        "**E) Describing a run of Arctic winter temperatures as \"anomalous\" claims that it departs markedly from the established pattern for that season.**\n\n\"Anomalous\" marks a departure from what the record leads one to expect, which is why the word attaches to readings that sit far from the seasonal norm. It reports a deviation without yet explaining it, so it is a description rather than a diagnosis. A run that matched the long-term pattern would be unremarkable or typical.\n\nDeparture from the established pattern is the whole content of the adjective, so this use of it is sound."
+      ],
+      "highlights": [
+        "ameliorates",
+        "latent",
+        "sine qua non",
+        "discretion",
+        "anomalous"
+      ],
+      "solution_overview": "The contrasts here are between improvement and harm, hidden and visible, necessary and optional. Test each item by asking what the writer would have to observe for the word to be justified. If the sentence describes the opposite observation, the label has been misapplied."
+    },
+    {
+      "id": "en-v-4-04",
+      "case_id": "ENG V.4.04",
+      "title": "Task 4",
+      "subsection": "v.4",
+      "sort_order": 4,
+      "difficulty_level": "1/5",
+      "context": "Five short definitions of formal terms drawn from legislation, treaties and grant conditions. Decide whether each definition matches the word.",
+      "statements": [
+        "A protocol that \"abrogates\" an earlier convention leaves that convention fully in force.",
+        "A grant agreement that \"stipulates\" annual ethics review sets that review down as a binding condition of the award.",
+        "When a public health law \"mandates\" the fortification of salt with iodine, it makes that fortification compulsory rather than advisory.",
+        "A conservation statute that \"proscribes\" trade in wild-caught parrots forbids that trade outright.",
+        "A clause that \"indemnifies\" a volunteer organisation against claims promises to cover the losses it may have to meet."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A protocol that \"abrogates\" an earlier convention leaves that convention fully in force.**\n\n\"Abrogate\" means to repeal or abolish a rule or agreement by formal act, so an abrogating protocol puts an end to the instrument it names. Leaving the earlier text in force would be to preserve or reaffirm it. Treaty drafters keep the verb for outright repeal rather than for amendment, which only alters what remains.\n\nRepeal and preservation cannot describe the same act, so the definition collapses; a convention that has been abrogated no longer binds anyone.",
+        "**B) A grant agreement that \"stipulates\" annual ethics review sets that review down as a binding condition of the award.**\n\n\"Stipulate\" means to specify something as an essential term of an agreement, which is stronger than merely recommending it. A stipulated condition can be enforced, and failing it puts the award itself at risk. Funders reach for the verb when they want an expectation to be read as a requirement.\n\nSetting a term down as a condition is exactly what the verb does, so the definition holds good.",
+        "**C) When a public health law \"mandates\" the fortification of salt with iodine, it makes that fortification compulsory rather than advisory.**\n\n\"Mandate\" as a verb imposes a requirement backed by the authority of the instrument that contains it. Fortification that is merely advisable would be encouraged, recommended or promoted instead. The choice between those verbs is the difference between a duty and a suggestion, and drafters make it deliberately.\n\nCompulsion is the force the verb carries, so the account of the law is accurate.",
+        "**D) A conservation statute that \"proscribes\" trade in wild-caught parrots forbids that trade outright.**\n\n\"Proscribe\" means to prohibit by authority, and it should not be confused with \"prescribe,\" which lays down what must be done. A proscribed trade is banned rather than regulated, so no licence brings it back within the law. The near-identical shapes of the two verbs are what makes the pair worth pausing over.\n\n**Tip:** Proscribe forbids; prescribe directs. One closes the door, the other says which door to use.\n\nAn outright ban is what the verb imposes, so the statute is described correctly here.",
+        "**E) A clause that \"indemnifies\" a volunteer organisation against claims promises to cover the losses it may have to meet.**\n\nTo indemnify is to undertake to make good another party's loss, so an indemnity shifts the financial consequences of a claim to the party giving it. It does not stop claims being brought; it decides who ultimately pays. That is why insurers and public bodies alike draft indemnity clauses with such care.\n\nAssumption of loss is precisely what the clause promises, so the definition matches the term."
+      ],
+      "highlights": [
+        "abrogates",
+        "stipulates",
+        "mandates",
+        "proscribes",
+        "indemnifies"
+      ],
+      "solution_overview": "These items test verbs that create, remove or enforce obligations, and the differences between them are differences of legal effect. Ask in each case who is bound afterwards and to what. A definition that leaves the parties in the same position as before has usually mistaken the verb."
+    },
+    {
+      "id": "en-v-4-05",
+      "case_id": "ENG V.4.05",
+      "title": "Task 5",
+      "subsection": "v.4",
+      "sort_order": 5,
+      "difficulty_level": "1/5",
+      "context": "Five accounts of formal verbs used when a harm is reduced, worsened, brought on or headed off. Decide whether each account is accurate.",
+      "statements": [
+        "\"Mitigate\" is the verb for making a harm less severe, as when replanted mangroves mitigate storm damage along a delta coast.",
+        "Antibiotic overuse that \"exacerbates\" resistance on a hospital ward makes an already serious problem worse.",
+        "A dam failure that \"precipitates\" the evacuation of a valley has brought that evacuation on suddenly.",
+        "Lead shielding that \"attenuates\" a beam reduces its intensity rather than removing it altogether.",
+        "A product recall that \"forestalls\" a wider outbreak has headed that outbreak off before it could develop."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Mitigate\" is the verb for making a harm less severe, as when replanted mangroves mitigate storm damage along a delta coast.**\n\n\"Mitigate\" softens an impact without necessarily preventing it, which is exactly what a mangrove belt does to a storm surge. The verb takes harms and penalties as its objects rather than benefits, so one mitigates damage but does not mitigate a recovery. That selectional restriction is part of knowing the word.\n\nReduction in severity is the sense on offer, and the mangrove example fits it neatly, so the account stands.",
+        "**B) Antibiotic overuse that \"exacerbates\" resistance on a hospital ward makes an already serious problem worse.**\n\n\"Exacerbate\" intensifies something that is already bad, so it needs a pre-existing problem to work on. Resistance on a ward is such a problem, and heavy prescribing deepens it. Writing that a measure exacerbates an improvement would misuse the verb, since its object must be negative.\n\nThe verb needs an existing harm and then deepens it, which is just what the sentence describes.",
+        "**C) A dam failure that \"precipitates\" the evacuation of a valley has brought that evacuation on suddenly.**\n\nTo precipitate an event is to cause it to happen abruptly or earlier than expected, and the abruptness is part of the meaning. A slow, planned withdrawal would be organised or staged rather than precipitated. The verb suits emergencies because it carries the sense of being pitched headlong into them.\n\nSudden onset is what separates this verb from ordinary causing, and a dam failure supplies it, so the reading is right.",
+        "**D) Lead shielding that \"attenuates\" a beam reduces its intensity rather than removing it altogether.**\n\n\"Attenuate\" means to weaken or thin something down, and in physics it names a measurable reduction in intensity. Complete removal would be absorption or blocking, and the calculations treat the two differently. The verb is equally at home in argument, where an objection can be attenuated rather than answered.\n\nWeakening short of elimination is exactly the technical sense, so the sentence uses the verb correctly.",
+        "**E) A product recall that \"forestalls\" a wider outbreak has headed that outbreak off before it could develop.**\n\n\"Forestall\" means to act in advance so as to prevent something, and the timing is essential to it. A response that arrives after the outbreak has spread would be containing or managing it instead. The prefix does the work: to fore-stall is to stop the thing before it starts.\n\nAnticipatory prevention is the heart of the verb, and the recall arrives in time to supply it, so the account is sound."
+      ],
+      "highlights": [
+        "Mitigate",
+        "exacerbates",
+        "precipitates",
+        "attenuates",
+        "forestalls"
+      ],
+      "solution_overview": "All five verbs describe an effect on a harm, and the strategy is to fix the direction and the timing of that effect. Ask whether the harm becomes smaller or larger, and whether it arrives sooner or is avoided altogether. Naming both features usually settles the item without recourse to a dictionary."
+    },
+    {
+      "id": "en-v-4-06",
+      "case_id": "ENG V.4.06",
+      "title": "Task 6",
+      "subsection": "v.4",
+      "sort_order": 6,
+      "difficulty_level": "1/5",
+      "context": "Five descriptions of formal verbs and adjectives used when writers assign causes, support an argument or attach conditions. Decide whether each description is right.",
+      "statements": [
+        "\"Ascribe\" is the verb a historian needs when assigning a change to a particular cause, as in ascribing a fall in child mortality to cleaner water.",
+        "To say that fresh fieldwork \"buttresses\" a disputed theory is to say that it undermines the theory's support.",
+        "An interview question designed to \"elicit\" candid recollections is intended to suppress them.",
+        "Saying that an anomaly in the data \"warrants\" further investigation means the anomaly rules such investigation out.",
+        "Funding described as \"contingent\" on ethical clearance will be released only if that clearance is granted."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Ascribe\" is the verb a historian needs when assigning a change to a particular cause, as in ascribing a fall in child mortality to cleaner water.**\n\n\"Ascribe\" attributes an effect, quality or work to a source, and it is the standard verb for causal attribution in careful prose. The historian is not claiming to have proved the link, only stating where the credit is being placed. That is why ascriptions are so often qualified with hedges about the strength of the evidence.\n\nAssigning an outcome to a cause is the verb's core function, so the description fits it exactly.",
+        "**B) To say that fresh fieldwork \"buttresses\" a disputed theory is to say that it undermines the theory's support.**\n\n\"Buttress\" borrows from architecture, where a buttress is built against a wall to hold it up, and in argument it means to reinforce a position. Fieldwork that buttresses a theory adds weight to it. Undermining is the excavating metaphor that runs the other way, removing support from beneath a claim.\n\nThe two metaphors work in opposite directions, so the description swaps them: buttressing shores a theory up rather than eating away at it.",
+        "**C) An interview question designed to \"elicit\" candid recollections is intended to suppress them.**\n\n\"Elicit\" means to draw out a response that would not otherwise be volunteered, which is why the verb belongs to interviewing and testimony. A question designed to suppress answers would be described as leading, closed or deterrent. The whole design effort in oral history goes into eliciting rather than shutting down.\n\nDrawing out and shutting down are contrary purposes, so the sentence cannot stand; a question that elicits recollections invites them into the open.",
+        "**D) Saying that an anomaly in the data \"warrants\" further investigation means the anomaly rules such investigation out.**\n\nTo warrant something is to justify it or provide sufficient grounds for it, so an anomaly that warrants investigation makes that investigation reasonable. Ruling the inquiry out would require language such as \"does not justify\" or \"excludes.\" The noun behind the verb is the same one that names an authorisation to act.\n\nJustification is what the verb supplies, so the gloss reverses it; an anomaly that warrants a closer look is the reason for taking one.",
+        "**E) Funding described as \"contingent\" on ethical clearance will be released only if that clearance is granted.**\n\n\"Contingent\" makes one thing depend on another, so contingent funding is promised subject to a condition rather than unconditionally. Until the condition is met, the money is committed but not payable. Grant letters use the adjective to keep the commitment alive while withholding the release.\n\nDependence on a stated condition is the sense of the adjective, so the paraphrase captures it well."
+      ],
+      "highlights": [
+        "Ascribe",
+        "buttresses",
+        "elicit",
+        "warrants",
+        "contingent"
+      ],
+      "solution_overview": "Four of these items test whether a verb strengthens or weakens what it takes as its object, and the fifth turns on a condition. Substituting a plain paraphrase such as \"supports,\" \"draws out\" or \"only if\" exposes the mismatches quickly. Where the paraphrase contradicts the rest of the sentence, the description has gone wrong."
+    },
+    {
+      "id": "en-v-4-07",
+      "case_id": "ENG V.4.07",
+      "title": "Task 7",
+      "subsection": "v.4",
+      "sort_order": 7,
+      "difficulty_level": "2/5",
+      "context": "Five statements about hedging and evidential marking in academic register. Decide whether each statement is accurate.",
+      "statements": [
+        "In a briefing note, the \"salient\" risks of a new reactor design are the ones that stand out as most significant for the decision at hand.",
+        "Calling a rival account of the collapse \"plausible\" asserts that it has been proved correct.",
+        "A \"putative\" common ancestor on a phylogenetic tree is one supposed to occupy that position on current evidence rather than one established beyond dispute.",
+        "Writing that a decree was \"ostensibly\" issued to protect public order commits the writer to accepting that stated reason as the whole truth.",
+        "Prefacing a casualty figure with \"reportedly\" marks it as coming from another source and not yet verified by the writer."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) In a briefing note, the \"salient\" risks of a new reactor design are the ones that stand out as most significant for the decision at hand.**\n\n\"Salient\" marks what projects above the rest of the detail, so salient risks are the prominent ones a reader must not miss. The adjective is relative to a purpose: what is salient for a licensing decision may be marginal for a maintenance schedule. It says nothing about how numerous or how technical the risks are.\n\nProminence relative to the decision is precisely what the adjective picks out, so the sentence describes it well.",
+        "**B) Calling a rival account of the collapse \"plausible\" asserts that it has been proved correct.**\n\n\"Plausible\" says that an account is credible on its face and worth taking seriously, which stops well short of establishing it. Proof would be signalled by \"demonstrated,\" \"established\" or \"confirmed.\" Careful writers reach for plausible exactly when they want to concede reasonableness without conceding truth.\n\nThe adjective grants credibility while withholding proof, so reading it as a verdict of correctness overstates it badly.",
+        "**C) A \"putative\" common ancestor on a phylogenetic tree is one supposed to occupy that position on current evidence rather than one established beyond dispute.**\n\n\"Putative\" flags a status that is assumed or reputed rather than confirmed, which is why taxonomy uses it for placements still under revision. The word leaves the door open to reclassification without abandoning the working hypothesis. An ancestor whose position was settled would simply be named as such.\n\nSupposition held provisionally is the whole content of the adjective, so this use of it is exact.",
+        "**D) Writing that a decree was \"ostensibly\" issued to protect public order commits the writer to accepting that stated reason as the whole truth.**\n\n\"Ostensibly\" reports the reason given in public while quietly reserving the possibility of another motive beneath it. Historians use it to record an official justification they are not prepared to endorse. A writer who accepted the stated reason outright would drop the adverb or replace it with \"indeed\" or \"duly.\"\n\nThe adverb marks distance from the official account rather than agreement with it, so the sentence turns a hedge into an endorsement.",
+        "**E) Prefacing a casualty figure with \"reportedly\" marks it as coming from another source and not yet verified by the writer.**\n\n\"Reportedly\" is an evidential marker: it attributes the information to someone else and suspends the writer's own guarantee. It is weaker than \"documented\" and stronger than \"rumoured,\" which is why despatches and later histories lean on it. The figure may well turn out to be right, but the adverb declines to vouch for it.\n\nAttributed but unverified is exactly the standing the adverb signals, so the account of it holds."
+      ],
+      "highlights": [
+        "salient",
+        "plausible",
+        "putative",
+        "ostensibly",
+        "reportedly"
+      ],
+      "solution_overview": "The words here tell the reader how much weight a claim can bear and where it came from. Ask of each one whether it asserts, supposes or merely relays, and check that the sentence around it matches that strength. Overstating a hedge is the commonest error these items are built to catch."
+    },
+    {
+      "id": "en-v-4-08",
+      "case_id": "ENG V.4.08",
+      "title": "Task 8",
+      "subsection": "v.4",
+      "sort_order": 8,
+      "difficulty_level": "2/5",
+      "context": "Five accounts of formal verbs from treaty practice, committee procedure and university regulation. Decide whether each account matches the way the verb is used.",
+      "statements": [
+        "A state that \"accedes to\" a treaty already in force becomes a party to it by joining later rather than by signing at the outset.",
+        "A researcher who \"forgoes\" an offer of commercial funding has accepted that funding in full.",
+        "A committee that \"adjourns\" a hearing until the expert report arrives has broken off the proceedings with the intention of resuming them.",
+        "A university that \"waives\" a residency requirement has chosen not to insist on a rule it could have enforced.",
+        "A parliament that \"ratifies\" a climate accord gives it the formal approval it needs to bind the state."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A state that \"accedes to\" a treaty already in force becomes a party to it by joining later rather than by signing at the outset.**\n\nAccession is the formal route by which a state joins an instrument it did not negotiate, and it produces the same obligations as ratification by an original signatory. The distinction is one of timing and procedure, not of standing. That is why treaty texts set out accession clauses alongside the signature provisions.\n\nLate entry with full effect is exactly what accession achieves, so the description is accurate.",
+        "**B) A researcher who \"forgoes\" an offer of commercial funding has accepted that funding in full.**\n\n\"Forgo\" means to give up or do without something one could have had, so forgoing an offer is declining it. Acceptance would be described with \"takes up,\" \"secures\" or \"draws on.\" The verb often carries a note of deliberate sacrifice, which is why it suits a decision made to protect independence.\n\nDeclining and accepting are opposite responses to the same offer, so the account fails; a researcher who forgoes the money walks away from it.",
+        "**C) A committee that \"adjourns\" a hearing until the expert report arrives has broken off the proceedings with the intention of resuming them.**\n\nTo adjourn is to suspend proceedings to a later time, leaving the matter alive on the list. Ending the case altogether would be to dismiss or discontinue it. The verb carries the expectation of a resumption, which is why an adjournment is usually granted to a date.\n\nSuspension with resumption in view is the force of the verb, so the sentence reports the step correctly.",
+        "**D) A university that \"waives\" a residency requirement has chosen not to insist on a rule it could have enforced.**\n\nTo waive is to relinquish a right or requirement voluntarily, and the power to enforce it must exist for the waiver to mean anything. Abolishing the rule for everyone would be to repeal it; a waiver operates in the individual case. The homophone \"waves\" has nothing to do with it, which is worth remembering in formal writing.\n\nVoluntary non-insistence on an enforceable rule is what a waiver is, so the description matches the practice.",
+        "**E) A parliament that \"ratifies\" a climate accord gives it the formal approval it needs to bind the state.**\n\nRatification is the act of confirming an agreement so that it takes legal effect for the party concerned. Signature alone often expresses intent without creating binding obligations, which is why the two steps are reported separately. The verb belongs to the moment when consent becomes commitment.\n\nFormal confirmation that brings an instrument into force is precisely the act named, so the account stands."
+      ],
+      "highlights": [
+        "accedes to",
+        "forgoes",
+        "adjourns",
+        "waives",
+        "ratifies"
+      ],
+      "solution_overview": "Each verb marks a formal step: joining, declining, pausing, relaxing or approving. Ask what changes the moment the step is taken and who is bound afterwards. A paraphrase that leaves the position unchanged, or reverses it, is the signal that the account has slipped."
+    },
+    {
+      "id": "en-v-4-09",
+      "case_id": "ENG V.4.09",
+      "title": "Task 9",
+      "subsection": "v.4",
+      "sort_order": 9,
+      "difficulty_level": "2/5",
+      "context": "Five claims about verbs of compliance, delegation, criticism and argument in official and scholarly writing. Decide whether each claim describes the verb correctly.",
+      "statements": [
+        "A laboratory that \"contravenes\" its containment protocol has been found to be following that protocol to the letter.",
+        "A ministry that \"devolves\" licensing powers to regional authorities has drawn those powers back to the centre.",
+        "To \"interrogate\" a source in historical writing is to accept its account without examination.",
+        "A philosopher who \"espouses\" a theory of distributive justice has adopted it and argues for it in public.",
+        "In careful academic usage, to \"refute\" an argument is merely to deny it forcefully, with no evidence required."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) A laboratory that \"contravenes\" its containment protocol has been found to be following that protocol to the letter.**\n\n\"Contravene\" means to act contrary to a rule or provision, so a contravening laboratory is in breach. Faultless compliance would be reported with \"adheres to,\" \"observes\" or \"complies with.\" Inspection reports keep the vocabulary sharp because the two findings carry entirely different consequences.\n\nBreach and exemplary compliance are opposite findings, so the claim inverts the verb; a laboratory that contravenes its protocol has departed from it.",
+        "**B) A ministry that \"devolves\" licensing powers to regional authorities has drawn those powers back to the centre.**\n\n\"Devolve\" transfers powers downwards from a central body to a subordinate or regional one. Pulling authority back to the centre is centralisation or recentralisation, sometimes described as clawing powers back. The direction of travel is the whole point of the word in constitutional writing.\n\nDownward transfer is what the verb encodes, so a ministry that devolves licensing has given the power away rather than gathered it in.",
+        "**C) To \"interrogate\" a source in historical writing is to accept its account without examination.**\n\nIn academic register, to interrogate a source is to question it closely, testing its origin, purpose and silences. Accepting an account at face value would be to take it uncritically. The word has migrated from the police cell to the seminar room, but the pressing quality of the questioning has come with it.\n\nClose questioning is exactly what the academic sense demands, so the definition offered here describes the opposite habit of mind.",
+        "**D) A philosopher who \"espouses\" a theory of distributive justice has adopted it and argues for it in public.**\n\n\"Espouse\" means to take up and support a cause or doctrine, usually with some commitment behind it. It is stronger than entertaining or considering a view and weaker than proving it. The marital metaphor buried in the word captures the sense of binding oneself to a position.\n\nAdoption together with public advocacy is what the verb conveys, so the description is a fair account of it.",
+        "**E) In careful academic usage, to \"refute\" an argument is merely to deny it forcefully, with no evidence required.**\n\nTo refute is to disprove: it requires showing that a claim is false, not simply saying so with conviction. Denial without evidence is rejection, repudiation or dismissal, and careful writers keep those verbs for the weaker act. The distinction matters because refutation is a result, while denial is only a stance.\n\n**Trap:** Loose journalism treats refute as a synonym for deny, but in scholarly prose the evidence has to come with it.\n\nDisproof rather than emphatic denial is what the verb commits a writer to, so the claim strips the word of the very burden it carries."
+      ],
+      "highlights": [
+        "contravenes",
+        "devolves",
+        "interrogate",
+        "espouses",
+        "refute"
+      ],
+      "solution_overview": "Two of these verbs concern whether a rule or power has been kept or passed on, and three concern how an argument is handled. In each case name the plain equivalent before judging: breaks, hands down, questions, champions, disproves. The plain equivalent usually exposes the item at once."
+    },
+    {
+      "id": "en-v-4-10",
+      "case_id": "ENG V.4.10",
+      "title": "Task 10",
+      "subsection": "v.4",
+      "sort_order": 10,
+      "difficulty_level": "2/5",
+      "context": "Five statements about the formal vocabulary of reasoning, concession and assumption. Decide whether each statement is accurate.",
+      "statements": [
+        "An author who \"concedes\" that her sample came from a single clinic is admitting a point that tells against her own argument.",
+        "A reader who \"infers\" a conclusion from a table of results is drawing it out of the evidence rather than being told it directly.",
+        "A report that \"implies\" a link between overcrowding and infection has suggested that link through its wording without stating it outright.",
+        "An argument that \"presupposes\" a stable climate baseline takes that baseline for granted before the reasoning begins.",
+        "An inspector who \"ascertains\" the true occupancy of a building has established it by checking rather than by estimating."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) An author who \"concedes\" that her sample came from a single clinic is admitting a point that tells against her own argument.**\n\n\"Concede\" is the verb for granting a point one would rather not grant, and it presupposes some cost to the speaker. Conceding a narrow sample acknowledges a limit on how far the findings travel. Simply reporting the sampling method without that acknowledgement would be description rather than concession.\n\nYielding ground against one's own interest is what the verb marks, and a confessed limitation supplies exactly that, so the reading holds.",
+        "**B) A reader who \"infers\" a conclusion from a table of results is drawing it out of the evidence rather than being told it directly.**\n\nInference is the reader's work: it moves from what is shown to what follows. The writer's counterpart is implication, where the text suggests something without stating it. Keeping the pair straight is a matter of who is doing what, and formal prose depends on that division of labour.\n\nThe reader draws, the writer hints, and this sentence puts the drawing where it belongs, so the statement is sound.",
+        "**C) A report that \"implies\" a link between overcrowding and infection has suggested that link through its wording without stating it outright.**\n\nTo imply is to convey something indirectly, leaving the reader to complete the thought. The report has not committed itself, which is why implication is so often a matter of careful phrasing and telling juxtaposition. If the link were asserted in terms, the verb would be \"states\" or \"claims.\"\n\nSuggestion carried by wording rather than open assertion is the mark of implication, so the sentence describes it accurately.",
+        "**D) An argument that \"presupposes\" a stable climate baseline takes that baseline for granted before the reasoning begins.**\n\nA presupposition is an assumption built into an argument rather than defended within it, and it operates whether or not the writer notices it. Criticism often works by exposing presuppositions instead of attacking conclusions. The prefix marks the timing: the assumption is in place before the case is made.\n\nAn assumption taken as settled in advance is precisely what the verb identifies, so the account is correct.",
+        "**E) An inspector who \"ascertains\" the true occupancy of a building has established it by checking rather than by estimating.**\n\n\"Ascertain\" means to find something out with certainty, and the verb implies a method: counting, measuring, inspecting. An estimate reached from floor area would be a calculation or an approximation. Formal reports use the word to signal that a figure has been verified at source.\n\nVerification through checking is the sense the verb carries, so the description of the inspector's work is right."
+      ],
+      "highlights": [
+        "concedes",
+        "infers",
+        "implies",
+        "presupposes",
+        "ascertains"
+      ],
+      "solution_overview": "These verbs describe what a writer or reader does with evidence: yields a point, draws a conclusion, hints at one, takes something for granted or checks it. Locate the person doing the act in each sentence, since several of these verbs are distinguished by who performs them. Once the agent is fixed, the meaning usually follows."
+    },
+    {
+      "id": "en-v-4-11",
+      "case_id": "ENG V.4.11",
+      "title": "Task 11",
+      "subsection": "v.4",
+      "sort_order": 11,
+      "difficulty_level": "2/5",
+      "context": "Five descriptions of formal verbs that report growth, decline, composition and necessity. Decide whether each description is correct.",
+      "statements": [
+        "Coastal erosion that has \"abated\" since the groynes were installed is advancing faster than it did before.",
+        "A \"burgeoning\" literature on microplastics is one that has stopped growing.",
+        "To say that three upland parishes \"constitute\" the study area is to say that they were excluded from it.",
+        "Saying that a dam scheme \"entails\" the resettlement of two villages presents that resettlement as a necessary consequence of the scheme.",
+        "A licence condition that \"precludes\" resale of the specimens prevents that resale from lawfully taking place."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Coastal erosion that has \"abated\" since the groynes were installed is advancing faster than it did before.**\n\n\"Abate\" means to lessen in force or intensity, and it is the standard verb for storms, nuisances and rates of loss. Erosion that has abated is eating into the shore more slowly. Acceleration would be reported with \"intensified\" or \"quickened,\" which is the reading the sentence actually gives.\n\nSlackening is the only movement the verb allows, so a description of faster advance contradicts the very word it is explaining.",
+        "**B) A \"burgeoning\" literature on microplastics is one that has stopped growing.**\n\n\"Burgeoning\" describes rapid expansion, borrowed from the budding of plants, and reviewers use it for fields that are hard to keep up with. A literature that has stopped growing would be mature, stable or moribund. The word also carries a faint suggestion of untidiness, since fast growth outruns organisation.\n\nVigorous expansion is what the participle reports, so calling a burgeoning literature static empties the word of its meaning.",
+        "**C) To say that three upland parishes \"constitute\" the study area is to say that they were excluded from it.**\n\n\"Constitute\" means to make up or form something, so the parishes named are the study area rather than a set left outside it. Exclusion would be signalled by \"fall outside\" or \"were omitted from.\" The verb points from parts to whole, which is why it appears in definitions of scope.\n\nComposition is the relation the verb states, so the parishes it names are precisely the ones inside the study area.",
+        "**D) Saying that a dam scheme \"entails\" the resettlement of two villages presents that resettlement as a necessary consequence of the scheme.**\n\n\"Entail\" marks a consequence that follows of necessity from what has gone before, not one that merely tends to accompany it. An incidental effect would be described as an associated or possible outcome. The logical use of the word is the same: one proposition entails another when it cannot be true without it.\n\nNecessity rather than mere accompaniment is what the verb asserts, so the sentence reads it correctly.",
+        "**E) A licence condition that \"precludes\" resale of the specimens prevents that resale from lawfully taking place.**\n\n\"Preclude\" rules something out in advance, closing off a possibility rather than merely discouraging it. A condition that only discouraged resale would restrict or regulate it. The verb takes actions and possibilities as objects, which is why one precludes resale but not the reseller.\n\nRuling out in advance is the work the verb does, so the account of the licence condition holds."
+      ],
+      "highlights": [
+        "abated",
+        "burgeoning",
+        "constitute",
+        "entails",
+        "precludes"
+      ],
+      "solution_overview": "Three of these verbs describe a quantity moving and two describe a relation between parts and wholes or causes and consequences. Fix the direction of movement first, then ask whether the relation described is one of inclusion or exclusion. Both checks can be made without any specialist knowledge of the subject matter."
+    },
+    {
+      "id": "en-v-4-12",
+      "case_id": "ENG V.4.12",
+      "title": "Task 12",
+      "subsection": "v.4",
+      "sort_order": 12,
+      "difficulty_level": "2/5",
+      "context": "Five judgements about verbs of speeding up, obstructing and ending, including one question of register in a formal report. Decide whether each judgement is correct.",
+      "statements": [
+        "A digital filing system that \"expedites\" asylum decisions makes those decisions come through more quickly.",
+        "Silt that \"encumbers\" a river channel is clearing that channel for navigation.",
+        "A notice reporting that a permit \"lapsed\" in March states that it expired then without being renewed.",
+        "In a formal archaeological report, \"the excavation kicked off in April\" is more appropriate than \"the excavation commenced in April.\"",
+        "Saying that a new statute \"renders\" an earlier permit invalid uses \"render\" in its formal sense of causing something to become a particular way."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A digital filing system that \"expedites\" asylum decisions makes those decisions come through more quickly.**\n\n\"Expedite\" means to hasten a process by removing friction from it, and it takes procedures rather than people as its object. Slowing the process would be to delay or retard it. The verb is at home in administrative prose because it describes an improvement in speed without promising a change in outcome.\n\nAcceleration of a procedure is exactly what the verb reports, so the judgement is correct.",
+        "**B) Silt that \"encumbers\" a river channel is clearing that channel for navigation.**\n\n\"Encumber\" means to burden or obstruct, leaving something harder to use or move. Silt that encumbers a channel is what dredging is meant to remove. Clearing would be described with \"scours,\" \"opens\" or \"frees,\" and the legal sense of the verb, burdening property with a charge, points the same way.\n\nObstruction rather than relief is what the verb describes, so the sentence has the silt doing the opposite of what the word allows.",
+        "**C) A notice reporting that a permit \"lapsed\" in March states that it expired then without being renewed.**\n\n\"Lapse\" describes a right or permission falling out of force because a fixed period has run, rather than through any positive act. A permit withdrawn by decision would be revoked or cancelled, and the difference matters when someone asks who ended it. Nothing need have gone wrong for a lapse to occur.\n\nExpiry through inaction is the sense of the verb, so the notice is being read correctly.",
+        "**D) In a formal archaeological report, \"the excavation kicked off in April\" is more appropriate than \"the excavation commenced in April.\"**\n\n\"Kick off\" is a sporting idiom that has spread into speech and informal email, and it sits badly in a document written for the record. \"Commence\" is the neutral formal verb for the same event, which is why permits and reports use it. Register is a matter of fit rather than of correctness, but the fit here is poor.\n\nA phrasal idiom from the touchline cannot carry the weight of a formal report, so the preference stated here is the wrong way round: \"the excavation commenced in April\" is the register-appropriate version.",
+        "**E) Saying that a new statute \"renders\" an earlier permit invalid uses \"render\" in its formal sense of causing something to become a particular way.**\n\n\"Render\" followed by an object and an adjective means to cause that object to be in the stated condition, as in rendering a clause unenforceable. The pattern is fixed: the adjective must follow the object, which is why \"renders invalid the permit\" reads awkwardly. Other senses of the verb, such as rendering assistance or rendering an account, are distinct.\n\nThe object-plus-adjective pattern is the formal use being described, and the statute example fits it, so the judgement holds."
+      ],
+      "highlights": [
+        "expedites",
+        "encumbers",
+        "lapsed",
+        "kicked off",
+        "renders"
+      ],
+      "solution_overview": "Four items test what a verb does to a process, and one tests whether a phrase belongs in formal writing at all. For the register item, read both versions aloud and ask which would look out of place in a document meant for the record. Tone is as much part of word choice at this level as meaning."
+    },
+    {
+      "id": "en-v-4-13",
+      "case_id": "ENG V.4.13",
+      "title": "Task 13",
+      "subsection": "v.4",
+      "sort_order": 13,
+      "difficulty_level": "3/5",
+      "context": "Five statements about words that fix what a term stands for, what generally holds, and how far a claim has been proved. Decide whether each statement is accurate.",
+      "statements": [
+        "In technical writing, a symbol that \"denotes\" acidity stands for it explicitly, whereas a term that connotes decay merely carries an association.",
+        "A wind direction that \"prevails\" over a valley is the one generally in force there.",
+        "Tremors that \"presage\" an eruption are taken as signs of what is coming.",
+        "A statement that a clinic \"allegedly\" falsified consent forms reports an accusation that has not been proved.",
+        "A manuscript that \"purports\" to be a fifteenth-century original is thereby confirmed as genuine."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In technical writing, a symbol that \"denotes\" acidity stands for it explicitly, whereas a term that connotes decay merely carries an association.**\n\nDenotation is the direct relation between a sign and what it stands for, fixed by convention and stated in the key to a diagram. Connotation is the freight a word carries alongside its literal sense, which is why the same reading can be neutral in a table and loaded in a caption. Technical prose leans on denotation because it needs the relation to be stipulated rather than felt.\n\nExplicit standing-for against mere association is the distinction the sentence draws, and it draws it the right way round.",
+        "**B) A wind direction that \"prevails\" over a valley is the one generally in force there.**\n\n\"Prevail\" means to be predominant or to hold sway, so a prevailing wind is the direction recorded most of the time rather than the strongest gust ever measured. The verb also carries a sense of winning out, which fits a pattern that dominates its rivals across a season. Nothing in it implies constancy, only predominance.\n\nGeneral predominance rather than invariable occurrence is the sense at work, so the description of the term is sound.",
+        "**C) Tremors that \"presage\" an eruption are taken as signs of what is coming.**\n\nTo presage is to foreshadow or give warning of a future event, and the subject of the verb is the sign rather than the observer. Volcanologists treat swarms of small tremors as presaging an eruption because the pattern has preceded eruptions before. A verb such as \"cause\" would make a very different and much stronger claim.\n\nForeshadowing rather than causing is what the verb contributes, and the tremors are cast as signs, so the statement is accurate.",
+        "**D) A statement that a clinic \"allegedly\" falsified consent forms reports an accusation that has not been proved.**\n\n\"Allegedly\" attributes a claim to an accuser and withholds the writer's own endorsement, which is why it survives in legal and journalistic prose under threat of defamation. It signals that proceedings or findings may follow but have not yet concluded. Dropping the adverb would convert a report of an accusation into an assertion of fact.\n\nUnproved accusation is exactly the standing the adverb preserves, so the sentence describes its function correctly.",
+        "**E) A manuscript that \"purports\" to be a fifteenth-century original is thereby confirmed as genuine.**\n\n\"Purport\" reports what something claims about itself while leaving the claim open, and cataloguers use it for precisely that reason. A manuscript that purports to be early may be authentic, a copy or a forgery. Confirmation would call for \"has been authenticated\" or \"is established as,\" which commits the writer in a way the original verb refuses to.\n\nThe verb voices the document's own claim rather than the cataloguer's verdict, so it can never amount to confirmation of what the manuscript says it is."
+      ],
+      "highlights": [
+        "denotes",
+        "prevails",
+        "presage",
+        "allegedly",
+        "purports"
+      ],
+      "solution_overview": "This set moves between semantics, prevalence and the marking of unproven claims. For the evidential items, ask what the writer would still have to show for the sentence to become an assertion of fact. For the semantic ones, ask whether the word names a meaning outright or only an association."
+    },
+    {
+      "id": "en-v-4-14",
+      "case_id": "ENG V.4.14",
+      "title": "Task 14",
+      "subsection": "v.4",
+      "sort_order": 14,
+      "difficulty_level": "3/5",
+      "context": "Five accounts of high-register connectors and adverbs found in academic prose and legal drafting. Decide whether each account is accurate.",
+      "statements": [
+        "\"Notwithstanding the loss of two field seasons, the survey was completed on schedule\" uses a formal connector meaning \"despite.\"",
+        "\"Albeit\" introduces a concessive qualification, as in \"the glacier is retreating, albeit more slowly than in the 1990s.\"",
+        "\"Whereby\" introduces the means or arrangement by which something happens, as in \"a scheme whereby hospitals share rare blood stocks.\"",
+        "An annual report stating that the company refinanced its debt, \"thereby\" lowering its interest costs, uses the adverb to link an action to the result it produces.",
+        "In a deed, writing \"the National Archive, hereinafter the Depositor,\" fixes a short name to be used for that party throughout the rest of the document."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Notwithstanding the loss of two field seasons, the survey was completed on schedule\" uses a formal connector meaning \"despite.\"**\n\n\"Notwithstanding\" introduces a circumstance that might have been expected to prevent the outcome but did not, which is the work \"despite\" and \"in spite of\" also do. It can stand before its noun phrase or, in older legal drafting, after it. The formality is the reason it survives in statutes long after speech abandoned it.\n\nConcession in the face of an obstacle is exactly the relation set up here, so the paraphrase is a fair one.",
+        "**B) \"Albeit\" introduces a concessive qualification, as in \"the glacier is retreating, albeit more slowly than in the 1990s.\"**\n\n\"Albeit\" attaches a qualifying phrase to a claim already made, conceding something without withdrawing the main point. It takes a phrase rather than a full clause with its own subject and verb, so \"albeit it was slow\" reads awkwardly. The glacier example keeps to that pattern with a comparative phrase.\n\nA conceded qualification riding on the main claim is what the connector supplies, so the account matches the example.",
+        "**C) \"Whereby\" introduces the means or arrangement by which something happens, as in \"a scheme whereby hospitals share rare blood stocks.\"**\n\n\"Whereby\" is a relative adverb standing for \"by which,\" and it needs a preceding noun such as scheme, mechanism or arrangement to attach to. Using it as a loose substitute for \"where\" or \"in which\" is the commonest slip. The blood-stock example gives it the arrangement it requires.\n\n**Tip:** If \"by which\" cannot be substituted, \"whereby\" is the wrong connector.\n\nNaming the means by which an arrangement operates is the connector's function, and the sharing scheme supplies just such an arrangement, so the account is sound.",
+        "**D) An annual report stating that the company refinanced its debt, \"thereby\" lowering its interest costs, uses the adverb to link an action to the result it produces.**\n\n\"Thereby\" means \"by that means\" and normally introduces a participle clause naming the consequence of the action just described. It is tighter than \"and so,\" because it ties the result to the specific means rather than to the situation at large. Corporate reporting favours it for exactly that economy.\n\nMeans and consequence bound into one clause is what the adverb achieves here, so the account of it is right.",
+        "**E) In a deed, writing \"the National Archive, hereinafter the Depositor,\" fixes a short name to be used for that party throughout the rest of the document.**\n\n\"Hereinafter\" points forward within the document itself, introducing the label that will be used from that point on. It belongs to the family of legal adverbs built on here- and there-, each anchored to the text rather than to the world outside it. Defining a party this way saves the drafter from repeating the full name at every mention.\n\nForward reference inside the instrument is precisely what the adverb performs, so the description of the drafting device holds."
+      ],
+      "highlights": [
+        "Notwithstanding",
+        "Albeit",
+        "whereby",
+        "thereby",
+        "hereinafter"
+      ],
+      "solution_overview": "Connectors of this kind do grammatical work as well as carrying meaning, so it helps to name the relation each one sets up: concession, means, result or naming. Test a suggested paraphrase by putting it into the example and seeing whether the sentence still holds together. Where the paraphrase fits, the account is usually sound."
+    },
+    {
+      "id": "en-v-4-15",
+      "case_id": "ENG V.4.15",
+      "title": "Task 15",
+      "subsection": "v.4",
+      "sort_order": 15,
+      "difficulty_level": "3/5",
+      "context": "Five claims about adjectives used to judge whether something survives, can be solved or holds up under pressure. Decide whether each claim describes the adjective correctly.",
+      "statements": [
+        "A modelling problem described as \"tractable\" has been judged impossible to solve with the methods available.",
+        "A species described as \"extant\" in the fossil record survey is one that has died out.",
+        "A statistical finding described as \"robust\" collapses as soon as the model specification is changed.",
+        "Negotiations described as \"protracted\" were concluded within a single afternoon.",
+        "An effect described as \"negligible\" is too small to matter for the conclusion being drawn."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A modelling problem described as \"tractable\" has been judged impossible to solve with the methods available.**\n\n\"Tractable\" means manageable or amenable to treatment, so a tractable problem is one the available methods can handle. A problem beyond them would be intractable or refractory. The adjective is a judgement about workability rather than about how interesting the problem is.\n\nWorkability is what the adjective certifies, so a problem declared insoluble is the very case it excludes.",
+        "**B) A species described as \"extant\" in the fossil record survey is one that has died out.**\n\n\"Extant\" means still in existence, and it is the standard contrast with \"extinct\" in biology and with \"lost\" in manuscript studies. A survey that lists extant species is listing those still living today. Describing a vanished species that way would collapse the distinction the survey exists to draw.\n\nContinued existence is the whole point of the adjective, so applying it to a species that has died out reverses it; the word wanted there is extinct.",
+        "**C) A statistical finding described as \"robust\" collapses as soon as the model specification is changed.**\n\nIn quantitative work, \"robust\" means that a result survives reasonable changes to assumptions, samples or specifications. That resilience is what robustness checks are designed to demonstrate. A finding that vanishes under a different specification is fragile or specification-dependent.\n\nSurvival under altered assumptions is the technical content of the term, so a result that collapses at the first change cannot claim it.",
+        "**D) Negotiations described as \"protracted\" were concluded within a single afternoon.**\n\n\"Protracted\" means drawn out over an unusually long period, often with a hint of weariness at the delay. Talks finished in an afternoon would be brief, swift or expeditious. The participle comes from a verb meaning to draw forward, and the sense of stretching remains audible in it.\n\nExtended duration is what the adjective asserts, so a settlement reached in one afternoon contradicts the very word chosen to describe it.",
+        "**E) An effect described as \"negligible\" is too small to matter for the conclusion being drawn.**\n\n\"Negligible\" marks a quantity that can safely be neglected, which is a claim about relevance rather than about the measuring instrument. A detectable effect can still be negligible if it makes no difference to the argument. Writers who mean undetectable should say so instead.\n\nSmallness measured against what the argument needs is precisely the test the adjective sets, so the description is accurate."
+      ],
+      "highlights": [
+        "tractable",
+        "extant",
+        "robust",
+        "protracted",
+        "negligible"
+      ],
+      "solution_overview": "Every item pairs an adjective with a situation that either fits it or plainly contradicts it. Decide first what the adjective demands of the world, then read the rest of the sentence to see whether that demand is met. Four of these adjectives set a positive test, and the last sets a threshold of importance."
+    },
+    {
+      "id": "en-v-4-16",
+      "case_id": "ENG V.4.16",
+      "title": "Task 16",
+      "subsection": "v.4",
+      "sort_order": 16,
+      "difficulty_level": "3/5",
+      "context": "Five claims about the vocabulary of relevance, method and error in research writing. Decide whether each claim is correct.",
+      "statements": [
+        "Testimony described as \"germane\" to an inquiry is testimony that has no bearing on it.",
+        "\"Confounding\" variables in a trial are factors outside the one under study that can distort the apparent effect.",
+        "A qualifying threshold described as \"arbitrary\" was fixed without a principled reason for that exact figure.",
+        "Measurement error described as \"systematic\" is random noise that cancels out across a large sample.",
+        "A search of the archive described as \"exhaustive\" left no relevant holding unexamined."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Testimony described as \"germane\" to an inquiry is testimony that has no bearing on it.**\n\n\"Germane\" means closely relevant to the matter in hand, and it is a shade more formal than \"relevant\" itself. Testimony with no bearing would be immaterial, extraneous or beside the point. Tribunals use the word when deciding what evidence to admit, so the direction of the judgement matters.\n\nClose relevance is what the adjective certifies, so material with no bearing on the inquiry is exactly what it rules out.",
+        "**B) \"Confounding\" variables in a trial are factors outside the one under study that can distort the apparent effect.**\n\nA confounder is associated with both the exposure and the outcome, so it can manufacture or mask an apparent relationship between them. Trials randomise and studies adjust precisely to keep confounders from doing that work unseen. The word names a threat to inference rather than a mistake in measurement.\n\nOutside factors distorting an apparent effect is the definition itself, so this account of confounding is correct.",
+        "**C) A qualifying threshold described as \"arbitrary\" was fixed without a principled reason for that exact figure.**\n\n\"Arbitrary\" means settled by choice rather than by reason, so an arbitrary threshold could have been set a little higher or lower without any argument being violated. It does not follow that the threshold is unfair or useless; lines often have to be drawn somewhere. The criticism is about justification, not about motive.\n\nAbsence of a principled ground for the particular figure is the charge the adjective makes, so the claim describes it well.",
+        "**D) Measurement error described as \"systematic\" is random noise that cancels out across a large sample.**\n\nSystematic error is bias: it pushes readings consistently in one direction and survives however many observations are collected. Random error is the kind that cancels as the sample grows. Averaging therefore helps with one and entrenches the other, which is why the labels must be kept apart.\n\nConsistent bias is what the term names, so treating it as noise that averages away describes random error under the wrong label.",
+        "**E) A search of the archive described as \"exhaustive\" left no relevant holding unexamined.**\n\n\"Exhaustive\" means complete in its coverage, exhausting the material rather than the searcher. It is a strong claim, which is why cautious writers prefer \"extensive\" when they cannot vouch for completeness. The related word \"exhausting\" says something quite different about the same afternoon.\n\nComplete coverage of the relevant material is what the adjective promises, so the description is a fair use of it."
+      ],
+      "highlights": [
+        "germane",
+        "Confounding",
+        "arbitrary",
+        "systematic",
+        "exhaustive"
+      ],
+      "solution_overview": "Three of these words classify how something relates to an inquiry and two describe the quality of a procedure or its errors. For the methodological items, ask whether the fault is patterned or random, and whether the coverage is complete or partial. Relevance items turn on whether the material bears on the question at all."
+    },
+    {
+      "id": "en-v-4-17",
+      "case_id": "ENG V.4.17",
+      "title": "Task 17",
+      "subsection": "v.4",
+      "sort_order": 17,
+      "difficulty_level": "3/5",
+      "context": "Five statements about formal words for agreeing, objecting, denouncing and permitting, including one word that faces both ways. Decide whether each statement is accurate.",
+      "statements": [
+        "Two peer reviewers who \"concur\" on a manuscript have arrived at the same judgement about it.",
+        "A judge who records a \"dissent\" is confirming full agreement with the majority.",
+        "An epidemiologist who \"inveighs against\" a screening programme is arguing warmly in its favour.",
+        "A trustee board that will not \"countenance\" a change to the deed is content to approve that change.",
+        "\"Sanction\" can mean both to authorise and to penalise, so a formal sentence has to supply enough context to show which sense is intended."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Two peer reviewers who \"concur\" on a manuscript have arrived at the same judgement about it.**\n\n\"Concur\" means to agree, usually about a conclusion reached independently, which is why editors report it with relief. It is more formal than \"agree\" and carries a suggestion of separate paths meeting at one point. Judges concur for the same reason: they reach the same result and say so.\n\nIndependent arrival at a shared judgement is what the verb reports, so the statement describes it accurately.",
+        "**B) A judge who records a \"dissent\" is confirming full agreement with the majority.**\n\nA dissent is a formally recorded disagreement with the decision of the majority, and it is published so that the reasoning survives for later courts. Agreement would be expressed in a concurring opinion instead. The whole institutional value of dissent lies in preserving the road not taken.\n\nRecorded disagreement is what the noun means, so a dissenting judge stands apart from the majority rather than joining it.",
+        "**C) An epidemiologist who \"inveighs against\" a screening programme is arguing warmly in its favour.**\n\nTo inveigh against something is to attack it in strong, often indignant language, and the preposition fixes the target of the attack. Speaking in favour would be to advocate, commend or champion the programme. The verb is rarely neutral; it reports heat as well as direction.\n\nVehement attack is the sense the phrase carries, so an epidemiologist inveighing against a programme is opposing it, not commending it.",
+        "**D) A trustee board that will not \"countenance\" a change to the deed is content to approve that change.**\n\nTo countenance something is to tolerate or give approval to it, so refusing to countenance a change is refusing to allow it. The noun behind the verb means face, and the metaphor is one of looking favourably on a proposal. A board content to approve the change would simply countenance it.\n\nRefusal to tolerate is the position the sentence actually describes, so it cannot also be a willingness to approve.",
+        "**E) \"Sanction\" can mean both to authorise and to penalise, so a formal sentence has to supply enough context to show which sense is intended.**\n\nThe verb descends from a root concerned with making something binding, and it developed in two directions: giving official approval and imposing a penalty for breach. A regulator that sanctions a trial has approved it; a state sanctioned by its neighbours has been punished. Only the surrounding words settle which reading applies.\n\nTwo established and opposite senses do live in the one word, so the warning about context is well founded."
+      ],
+      "highlights": [
+        "concur",
+        "dissent",
+        "inveighs against",
+        "countenance",
+        "Sanction"
+      ],
+      "solution_overview": "Four items test whether a verb or noun expresses support or opposition, so the reliable move is to ask which side of the argument the speaker ends up on. The fifth turns on a word with two established and opposed senses. Where a term is genuinely double-edged, the surrounding sentence has to do the disambiguating."
+    },
+    {
+      "id": "en-v-4-18",
+      "case_id": "ENG V.4.18",
+      "title": "Task 18",
+      "subsection": "v.4",
+      "sort_order": 18,
+      "difficulty_level": "3/5",
+      "context": "Five accounts of terms describing how openly something is stated and what kind of evidence lies behind it. Decide whether each account is accurate.",
+      "statements": [
+        "A \"tacit\" understanding between neighbouring states is one acted on without ever being set down in words.",
+        "To call a premise \"axiomatic\" within a proof is to treat it as accepted without further argument in that system.",
+        "A fee described as \"nominal\" is set so low that it amounts to little more than a token.",
+        "\"Empirical\" evidence is reasoning conducted purely from first principles, without observation or measurement.",
+        "\"Anecdotal\" evidence rests on individual reports rather than on systematically collected data."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A \"tacit\" understanding between neighbouring states is one acted on without ever being set down in words.**\n\n\"Tacit\" describes what is understood and relied on without being expressed, which is why diplomacy values it: nothing has to be conceded on paper. A written arrangement would be express or formal. Tacit consent works the same way, taking silence in circumstances that invited objection as agreement.\n\nUnspoken but operative is exactly the condition the adjective names, so the account of it is right.",
+        "**B) To call a premise \"axiomatic\" within a proof is to treat it as accepted without further argument in that system.**\n\nAn axiom is a starting point taken as given, and calling a premise axiomatic locates it at the foundation rather than in the body of the reasoning. It is a claim about the role of the statement, not about how obvious it feels. In looser usage the word has drifted towards \"self-evident,\" but the technical sense stays with the system.\n\nFoundational acceptance within a system is the status the term confers, so the description matches its technical use.",
+        "**C) A fee described as \"nominal\" is set so low that it amounts to little more than a token.**\n\nA nominal charge exists in name rather than in substance, which is why archives and registries levy one to deter idle requests without creating a barrier. The word has a separate life in economics, where nominal figures are those unadjusted for inflation. Context decides which sense is running, and a fee of a few pence plainly signals the first.\n\nA charge that is a formality rather than a real cost is what the adjective conveys here, so the account holds.",
+        "**D) \"Empirical\" evidence is reasoning conducted purely from first principles, without observation or measurement.**\n\nEmpirical evidence comes from observation or experiment, so it is precisely what reasoning from first principles lacks. Argument conducted without recourse to data is a priori or theoretical. The contrast is one of source, and the word points firmly at experience.\n\nObservation is the defining source of empirical evidence, so a description that removes it has swapped the term for its opposite.",
+        "**E) \"Anecdotal\" evidence rests on individual reports rather than on systematically collected data.**\n\nAnecdotal evidence consists of particular cases gathered without a sampling frame, so it can suggest a hypothesis but cannot establish a rate. The label is not a synonym for false: the individual reports may each be accurate. What they lack is the structure that would let a general claim be drawn from them.\n\nIndividual reports outside a systematic design is exactly what the label picks out, so the account is accurate."
+      ],
+      "highlights": [
+        "tacit",
+        "axiomatic",
+        "nominal",
+        "Empirical",
+        "Anecdotal"
+      ],
+      "solution_overview": "The first pair concerns whether something is spelled out or left understood, and the last pair concerns where evidence comes from. Ask in each case what a reader would have to find in the text or the data for the label to be justified. A word that hedges the size of a fee behaves quite differently from the same word in an economic table."
+    },
+    {
+      "id": "en-v-4-19",
+      "case_id": "ENG V.4.19",
+      "title": "Task 19",
+      "subsection": "v.4",
+      "sort_order": 19,
+      "difficulty_level": "4/5",
+      "context": "Five judgements about choosing the right level of formality in reports, deeds and scholarly writing. Decide whether each judgement is correct.",
+      "statements": [
+        "In a formal report, \"the authority will endeavour to reduce waiting times\" is register-appropriate where \"the authority will have a go at cutting them\" would not be.",
+        "A company's annual report uses \"remuneration\" rather than \"pay packet\" when it sets out what its directors received, because the formal noun suits the document.",
+        "\"The requisite permissions were obtained before excavation\" is the register a formal report expects, where \"the permissions we needed\" would read as conversational.",
+        "A treaty stating that a state will \"cede\" jurisdiction over an enclave reports a formal giving-up of that authority, and the verb suits the register better than \"hand over.\"",
+        "Dating a mosaic to \"circa 320 CE\" is the register-appropriate way to hedge a date in scholarly writing, where \"round about 320\" would read as conversational."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) In a formal report, \"the authority will endeavour to reduce waiting times\" is register-appropriate where \"the authority will have a go at cutting them\" would not be.**\n\n\"Endeavour\" is the formal verb for making a serious attempt, and it commits the body to effort rather than to a result. \"Have a go\" belongs to speech and would sit oddly in a document that may be quoted back at the authority. The choice also affects how binding the sentence sounds when it is read years later.\n\nA published undertaking calls for the formal verb, so the preference described here is the right one for the document.",
+        "**B) A company's annual report uses \"remuneration\" rather than \"pay packet\" when it sets out what its directors received, because the formal noun suits the document.**\n\n\"Remuneration\" covers salary, bonuses, pensions and benefits in a single formal term, which is why disclosure rules are drafted around it. \"Pay packet\" is colloquial and, worse, too narrow to catch the whole of what has to be reported. Register and coverage happen to pull the same way here.\n\nA disclosure written for shareholders and regulators needs the inclusive formal noun, so the judgement about register stands.",
+        "**C) \"The requisite permissions were obtained before excavation\" is the register a formal report expects, where \"the permissions we needed\" would read as conversational.**\n\n\"Requisite\" is the formal adjective for what is required by a rule or procedure, and it points at an external standard rather than at the writer's convenience. \"The permissions we needed\" personalises the requirement and loosens the tone. Formal reports prefer the impersonal version because it can be checked against the regulations.\n\nAn impersonal appeal to what the rules demand is what the setting calls for, so the register judgement is well made.",
+        "**D) A treaty stating that a state will \"cede\" jurisdiction over an enclave reports a formal giving-up of that authority, and the verb suits the register better than \"hand over.\"**\n\n\"Cede\" means to yield or surrender something, typically territory or rights, under a formal instrument. \"Hand over\" describes the same movement in everyday terms and lacks the sense of a right being relinquished in law. Treaty language keeps the Latin-derived verb because it carries that legal weight.\n\nFormal surrender of a right is exactly what the verb encodes, so it fits the instrument better than its everyday counterpart.",
+        "**E) Dating a mosaic to \"circa 320 CE\" is the register-appropriate way to hedge a date in scholarly writing, where \"round about 320\" would read as conversational.**\n\n\"Circa\" marks an approximate date and is understood across the scholarly literature wherever it appears, most often in its abbreviated form. \"Round about\" carries the same approximation in a wholly informal voice. Using the conventional form also signals that the hedge is deliberate rather than careless.\n\nA conventional scholarly hedge is what the catalogue entry needs, so the preference described here holds."
+      ],
+      "highlights": [
+        "endeavour",
+        "remuneration",
+        "requisite",
+        "cede",
+        "circa"
+      ],
+      "solution_overview": "Register is the whole subject here: each item sets a formal item against a conversational one and asks which the document calls for. Consider who reads the text and what it has to survive, whether that is an audit, a court or a century in a library. The formal choice is not always the longer word, but it is always the one that fits the setting."
+    },
+    {
+      "id": "en-v-4-20",
+      "case_id": "ENG V.4.20",
+      "title": "Task 20",
+      "subsection": "v.4",
+      "sort_order": 20,
+      "difficulty_level": "4/5",
+      "context": "Five descriptions of adjectives that grade strictness, care and stability. Decide whether each description matches the adjective.",
+      "statements": [
+        "Emission limits described as \"stringent\" are loosely drafted and easy for an incinerator operator to satisfy.",
+        "An inspection described as \"perfunctory\" was carried out with unusual care and thoroughness.",
+        "A \"circumspect\" statement about a new therapy stakes everything on the strongest claim the data could conceivably support.",
+        "A volcano described as \"quiescent\" is erupting steadily from one month to the next.",
+        "A coral reef described as \"resilient\" can absorb a bleaching event and recover its function."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Emission limits described as \"stringent\" are loosely drafted and easy for an incinerator operator to satisfy.**\n\n\"Stringent\" means strict and demanding, allowing little latitude to those who must comply. Limits that are easy to satisfy would be lax, permissive or undemanding. The word implies a binding tightness, and regulators use it when they want to advertise severity.\n\nStrictness is the pole the adjective occupies, so limits described as easy to meet are the opposite of stringent ones.",
+        "**B) An inspection described as \"perfunctory\" was carried out with unusual care and thoroughness.**\n\n\"Perfunctory\" describes something done as a mere formality, with minimal attention and no real engagement. A careful inspection would be thorough, searching or diligent. The word carries a note of criticism, which is why it appears in reports on failures of oversight.\n\nGoing through the motions is what the adjective reports, so an inspection praised for unusual care cannot be described that way.",
+        "**C) A \"circumspect\" statement about a new therapy stakes everything on the strongest claim the data could conceivably support.**\n\n\"Circumspect\" means cautious and alert to consequences, looking around before speaking or acting. A statement that reaches for the strongest available claim is bold, incautious or overreaching. Clinical communication prizes circumspection because early results so often shrink on replication.\n\nCaution is the disposition the adjective names, so a statement pitched at the maximum defensible claim is precisely what it excludes.",
+        "**D) A volcano described as \"quiescent\" is erupting steadily from one month to the next.**\n\n\"Quiescent\" means inactive or at rest for the time being, without any promise that the rest is permanent. A volcano in steady eruption is active, and one that will never erupt again is extinct. The three labels do different work in monitoring reports and cannot be exchanged.\n\nTemporary inactivity is what the adjective records, so a mountain in continuous eruption falls under a different label altogether.",
+        "**E) A coral reef described as \"resilient\" can absorb a bleaching event and recover its function.**\n\nResilience in ecology is the capacity to absorb a disturbance and return to something like the previous state, which is not the same as never being disturbed. A reef that simply avoided bleaching would be sheltered or fortunate rather than resilient. The concept therefore depends on recovery as much as on resistance.\n\nAbsorbing a shock and coming back is the very capacity the term names, so this use of it is exact."
+      ],
+      "highlights": [
+        "stringent",
+        "perfunctory",
+        "circumspect",
+        "quiescent",
+        "resilient"
+      ],
+      "solution_overview": "Each adjective sits on a scale, and the sentence either places it correctly or slides it to the far end. Fix the pole the adjective belongs to before reading the rest of the sentence. Four of these have been pushed to the opposite pole, and the reasoning is the same in every case."
+    },
+    {
+      "id": "en-v-4-21",
+      "case_id": "ENG V.4.21",
+      "title": "Task 21",
+      "subsection": "v.4",
+      "sort_order": 21,
+      "difficulty_level": "4/5",
+      "context": "Five statements about formal adjectives drawn from treaty practice, sentencing and public administration. Decide whether each statement describes the adjective correctly.",
+      "statements": [
+        "A \"reciprocal\" arrangement on recognising professional qualifications is one in which each state accepts the other's on the same terms.",
+        "A \"unilateral\" declaration of a marine reserve is made by one state acting on its own, without the agreement of its neighbours.",
+        "A \"punitive\" sentence is one set deliberately light in order to reward cooperation with the investigation.",
+        "\"Remedial\" works are those intended to correct a defect that has already been identified.",
+        "Spending described as \"statutory\" can be varied at will by the department that administers it."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) A \"reciprocal\" arrangement on recognising professional qualifications is one in which each state accepts the other's on the same terms.**\n\n\"Reciprocal\" describes an exchange in which each side gives what it receives, so the obligations mirror one another. An arrangement in which only one state opened its register would be unilateral concession. The adjective says nothing about whether the two professions are of equal size, only that the terms match.\n\nMutual and matching obligations are what the adjective requires, and the recognition scheme supplies them, so the statement is accurate.",
+        "**B) A \"unilateral\" declaration of a marine reserve is made by one state acting on its own, without the agreement of its neighbours.**\n\n\"Unilateral\" marks action taken by one party alone, in contrast with bilateral action by two and multilateral action by several. The prefix carries the whole meaning, and international lawyers use the word without any implication that the act is improper. Whether it binds others is a separate question from how it was made.\n\nAction by a single party is exactly what the prefix and the adjective assert, so the description holds.",
+        "**C) A \"punitive\" sentence is one set deliberately light in order to reward cooperation with the investigation.**\n\n\"Punitive\" means intended to punish, so a punitive element in a sentence is there to impose a penalty rather than to soften one. A reduction for cooperation is a discount or a mitigation of sentence. Courts distinguish the punitive purpose from the deterrent and rehabilitative ones, but none of them is served by leniency as such.\n\nPunishment is the purpose written into the adjective, so a sentence lightened as a reward is the very opposite of a punitive one.",
+        "**D) \"Remedial\" works are those intended to correct a defect that has already been identified.**\n\n\"Remedial\" points backwards at a fault and forwards at its repair, which is why the word covers strengthening a cracked abutment or reworking a failed joint. Measures taken before any defect appears are preventive or precautionary. The distinction decides who pays under most construction contracts.\n\nCorrection of an identified defect is precisely the work the adjective describes, so the statement is correct.",
+        "**E) Spending described as \"statutory\" can be varied at will by the department that administers it.**\n\n\"Statutory\" means required or governed by an Act, so statutory spending is fixed by law rather than by administrative choice. Money a department may adjust within its allocation is discretionary. The contrast shapes every budget debate, since only one of the two categories is genuinely available for cuts.\n\nBeing set by legislation is what the adjective means, so spending a department may vary at will belongs in the discretionary column instead."
+      ],
+      "highlights": [
+        "reciprocal",
+        "unilateral",
+        "punitive",
+        "Remedial",
+        "statutory"
+      ],
+      "solution_overview": "The first two turn on how many parties act, the middle two on the purpose of a measure, and the last on where a power comes from. Ask who is doing what to whom, and whether the aim is to punish, to repair or simply to comply with a rule. Those questions settle every item in the set."
+    },
+    {
+      "id": "en-v-4-22",
+      "case_id": "ENG V.4.22",
+      "title": "Task 22",
+      "subsection": "v.4",
+      "sort_order": 22,
+      "difficulty_level": "4/5",
+      "context": "Five accounts of formal terms for obligation, charges and amounts building up over time. Decide whether each account is accurate.",
+      "statements": [
+        "A rural clinic \"exempt\" from the reporting requirement is the one most tightly bound by it.",
+        "A landowner \"liable\" for the cost of remediation has been released from any obligation to pay it.",
+        "A borrower who \"incurs\" default charges on a business overdraft has become subject to them.",
+        "Annual leave that \"accrues\" month by month for hospital staff disappears from the entitlement as fast as it is earned.",
+        "An authority that \"remits\" a penalty has cancelled the obligation to pay it."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A rural clinic \"exempt\" from the reporting requirement is the one most tightly bound by it.**\n\n\"Exempt\" means released from an obligation that applies to others, so exemption is a form of relief rather than a heightened duty. A body held to the strictest version of the rule would be subject to it or specially designated. Exemptions are usually granted by name or by threshold, and they are read narrowly.\n\nRelease from a duty is what exemption confers, so the clinic described here is the one that does not have to report at all.",
+        "**B) A landowner \"liable\" for the cost of remediation has been released from any obligation to pay it.**\n\n\"Liable\" means legally responsible, so liability is the condition of being answerable for a cost or a wrong. Release would be described as being discharged, indemnified or exonerated. Contaminated land regimes turn on exactly this word, since it decides who funds the clean-up.\n\nLegal responsibility is what the adjective fastens on the landowner, so being liable is the opposite of being let off the bill.",
+        "**C) A borrower who \"incurs\" default charges on a business overdraft has become subject to them.**\n\n\"Incur\" means to bring something on oneself, and it takes costs, penalties and liabilities as its objects rather than benefits. The borrower has not chosen the charges directly, but conduct has triggered them. One incurs a debt or a fine; one does not incur a rebate.\n\nBringing a liability on oneself through one's own conduct is exactly what the verb reports, so the account is right.",
+        "**D) Annual leave that \"accrues\" month by month for hospital staff disappears from the entitlement as fast as it is earned.**\n\n\"Accrue\" means to accumulate over time, adding to a balance rather than draining it. Leave that accrues monthly builds up until it is taken or paid out. Entitlement that vanished as it arose would be described as lapsing or expiring, which is a different provision altogether.\n\nAccumulation is the direction the verb sets, so leave that accrues each month is piling up rather than melting away.",
+        "**E) An authority that \"remits\" a penalty has cancelled the obligation to pay it.**\n\nIn this sense \"remit\" means to cancel or refrain from exacting a debt or punishment, which is why the noun remission covers both fines and sentences. The same verb elsewhere means to send back or to refer a matter to another body, so context has to select the reading. Here the object is a penalty, and cancellation is the natural sense.\n\nCancellation of what was owed is the reading the object forces, so the account of the authority's decision is accurate."
+      ],
+      "highlights": [
+        "exempt",
+        "liable",
+        "incurs",
+        "accrues",
+        "remits"
+      ],
+      "solution_overview": "Each item names a party and then says what that party owes, has been released from, or has built up. Ask whether the term places a burden on someone or lifts one, and whether the amount involved is growing or disappearing. Two of these turn on the direction of accumulation."
+    },
+    {
+      "id": "en-v-4-23",
+      "case_id": "ENG V.4.23",
+      "title": "Task 23",
+      "subsection": "v.4",
+      "sort_order": 23,
+      "difficulty_level": "4/5",
+      "context": "Five statements about how findings, rulings and figures are labelled according to how settled they are. Decide whether each statement is accurate.",
+      "statements": [
+        "A \"preliminary\" excavation report sets out early findings released before the full analysis is complete.",
+        "A \"definitive\" edition of a poet's letters is one intended to settle the text and not to be superseded.",
+        "Timings described as \"indicative\" in a research infrastructure plan are offered as a guide rather than as a commitment.",
+        "Evidence described as \"inconclusive\" has settled the matter beyond further dispute.",
+        "A \"counterfactual\" scenario in a policy evaluation describes what would have happened without the intervention rather than what actually occurred."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A \"preliminary\" excavation report sets out early findings released before the full analysis is complete.**\n\n\"Preliminary\" marks work issued at an early stage so that others can respond while the detailed study continues. Such a report is expected to be superseded, and its figures are usually hedged accordingly. A document intended to close the matter would be described as final.\n\nEarly publication ahead of the full analysis is exactly the status the adjective claims, so the statement holds.",
+        "**B) A \"definitive\" edition of a poet's letters is one intended to settle the text and not to be superseded.**\n\n\"Definitive\" means authoritative and conclusive, putting an end to the question it addresses. Editors reach for it when the manuscripts have been collated and the readings resolved as far as the evidence allows. It is a claim about standing rather than about length or luxury of production.\n\nSettling the matter for future readers is the ambition the adjective declares, so the description is a fair one.",
+        "**C) Timings described as \"indicative\" in a research infrastructure plan are offered as a guide rather than as a commitment.**\n\n\"Indicative\" figures show the general shape of what is expected without binding anyone to them. Planners use the label to share a schedule while the funding and permissions are still moving. A date that had been committed to would be described as firm or contractual.\n\nGuidance without commitment is precisely what the label reserves, so the account of the plan is correct.",
+        "**D) Evidence described as \"inconclusive\" has settled the matter beyond further dispute.**\n\n\"Inconclusive\" means that the evidence does not permit a firm conclusion either way, which is a statement about what can be inferred rather than about the quality of the work. Evidence that closed the question would be conclusive or decisive. Trials often report inconclusive results simply because they were too small to detect the effect they sought.\n\nFailure to settle the question is the whole content of the word, so evidence said to be inconclusive is exactly what leaves the dispute open.",
+        "**E) A \"counterfactual\" scenario in a policy evaluation describes what would have happened without the intervention rather than what actually occurred.**\n\nThe counterfactual is the comparison case an evaluation has to construct, since the effect of a programme is the difference between the world with it and the world without it. It is built from evidence but never observed directly, which is why so much method goes into estimating it. Describing what did happen is the factual half of the comparison.\n\nAn unobserved comparison case standing against the facts is what the term denotes, so the statement describes it accurately."
+      ],
+      "highlights": [
+        "preliminary",
+        "definitive",
+        "indicative",
+        "inconclusive",
+        "counterfactual"
+      ],
+      "solution_overview": "These labels tell a reader how much may still change, so the strategy is to place each one on a line running from provisional to final. Ask what would have to happen for the label to be withdrawn. One item also asks about a scenario constructed for analysis rather than observed."
+    },
+    {
+      "id": "en-v-4-24",
+      "case_id": "ENG V.4.24",
+      "title": "Task 24",
+      "subsection": "v.4",
+      "sort_order": 24,
+      "difficulty_level": "4/5",
+      "context": "Five accounts of the formal vocabulary used to describe how quantities move in relation to one another. Decide whether each account is accurate.",
+      "statements": [
+        "Estimates produced by independent dating methods that \"converge\" are moving towards the same value.",
+        "Climate projections that \"diverge\" give increasingly different answers as the horizon lengthens.",
+        "To report that two series \"correlate\" is to say that they move together, without by itself showing that one causes the other.",
+        "Groundwater levels that \"oscillate\" through the year move up and down rather than following one steady path.",
+        "A retailer reporting that sales have \"plateaued\" says that they have levelled off after a period of growth rather than fallen away."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Estimates produced by independent dating methods that \"converge\" are moving towards the same value.**\n\n\"Converge\" describes lines or values approaching one another, and in dating work convergence between independent methods is treated as a mark of reliability. The verb concerns direction rather than arrival: values may converge without ever meeting. Agreement reached by adjusting one method to match another would not count.\n\nMovement towards a common value is exactly what the verb reports, so the account is sound.",
+        "**B) Climate projections that \"diverge\" give increasingly different answers as the horizon lengthens.**\n\n\"Diverge\" is the mirror image of converging: the values separate as the series runs on. Projections diverge with the horizon because small differences in assumptions compound over decades. Reporting the divergence is honest practice rather than an admission of failure.\n\nWidening separation over time is the pattern the verb names, and long-range projections show it, so the description holds.",
+        "**C) To report that two series \"correlate\" is to say that they move together, without by itself showing that one causes the other.**\n\n\"Correlate\" states an association between two sets of measurements and stops there. Causation requires further argument: a mechanism, a temporal order, or a design that rules out confounders. The verb is precise, and the familiar warning exists because readers so often hear more in it than it says.\n\nAssociation without any claim about cause is exactly the limit of the verb, so the account states its scope correctly.",
+        "**D) Groundwater levels that \"oscillate\" through the year move up and down rather than following one steady path.**\n\n\"Oscillate\" describes regular movement back and forth between two states or values, which is what a seasonal aquifer does as recharge and abstraction alternate. A single sustained fall would be a decline or a drawdown. The verb implies a rhythm, so it suits patterns that repeat.\n\nRegular movement between two extremes is what the verb captures, and a seasonal cycle is just such a movement, so the account is accurate.",
+        "**E) A retailer reporting that sales have \"plateaued\" says that they have levelled off after a period of growth rather than fallen away.**\n\nTo plateau is to reach a level and stay there, and the metaphor comes from a landform that rises and then flattens. The verb reports the end of growth, not a reversal, which is why it is chosen over \"slumped\" or \"contracted.\" Analysts read a plateau as a signal that the market may be saturating.\n\nFlattening after growth, with no fall implied, is precisely what the verb conveys, so the reading offered here is right."
+      ],
+      "highlights": [
+        "converge",
+        "diverge",
+        "correlate",
+        "oscillate",
+        "plateaued"
+      ],
+      "solution_overview": "Every verb here describes a pattern of movement, so it helps to sketch the lines the sentence implies: coming together, spreading apart, rising and falling together, swinging, or flattening out. Check also what the verb does not claim, since one of these is famous for being read as more than it says."
+    },
+    {
+      "id": "en-v-4-25",
+      "case_id": "ENG V.4.25",
+      "title": "Task 25",
+      "subsection": "v.4",
+      "sort_order": 25,
+      "difficulty_level": "5/5",
+      "context": "Five judgements about high-register adverbs and Latin expressions in scholarly and legal prose. Decide whether each judgement is correct.",
+      "statements": [
+        "\"Hitherto\" means up to the present or up to the point being described, as in a market town hitherto unknown to charter historians.",
+        "\"Henceforth\" refers to the period before an announcement rather than the period that follows it.",
+        "\"Insofar as the surviving records allow\" signals that a claim is being advanced without any limit on its scope.",
+        "Writing that a compound is not harmful \"per se\" claims that it is harmful in every form and at every dose.",
+        "A \"de facto\" standard is one that prevails in practice although no law or formal agreement requires it."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Hitherto\" means up to the present or up to the point being described, as in a market town hitherto unknown to charter historians.**\n\n\"Hitherto\" looks backwards from a moment in the narrative and covers everything before it, which is why it so often precedes a discovery that changes the picture. Its natural partner is a present perfect or a past perfect, since both look back from a vantage point. Nothing in the adverb tells the reader what happens next.\n\nA backwards-facing span ending at the point described is exactly what the adverb marks, so the judgement is correct.",
+        "**B) \"Henceforth\" refers to the period before an announcement rather than the period that follows it.**\n\n\"Henceforth\" means from this time on, so it opens a period rather than closing one. A regulation stating that applications shall henceforth be filed electronically binds everything after the notice, not before it. The backwards-facing member of the pair is \"hitherto,\" and the two are easily swapped by writers who feel only their formality.\n\nThe adverb points forward from the moment of speaking, so a rule introduced with it governs what comes next rather than what has already passed.",
+        "**C) \"Insofar as the surviving records allow\" signals that a claim is being advanced without any limit on its scope.**\n\n\"Insofar as\" introduces the extent to which something holds, and it is a limiting phrase by design. Tying a claim to the surviving records concedes that gaps in the archive constrain what can be said. An unlimited claim would drop the qualifier and assert the point flat.\n\nThe phrase exists to fence a claim in, so a sentence built on it is doing the opposite of asserting something without limits.",
+        "**D) Writing that a compound is not harmful \"per se\" claims that it is harmful in every form and at every dose.**\n\n\"Per se\" means in itself or by its very nature, so denying that something is harmful per se leaves room for harm in particular preparations, doses or combinations. The phrase narrows a denial rather than broadening it. Toxicologists find it useful precisely because it separates the substance from the circumstances of exposure.\n\nThe Latin tag confines the statement to the thing considered on its own, so it cannot be turned into a claim about every form and dose.",
+        "**E) A \"de facto\" standard is one that prevails in practice although no law or formal agreement requires it.**\n\n\"De facto\" describes what obtains in fact, in contrast with \"de jure,\" which describes what is established in law. A file format that everyone adopts because everyone else has adopted it is the classic case. The distinction matters because de facto arrangements can be more durable than the formal ones they outrun.\n\nPrevailing in practice without legal backing is precisely the condition the phrase names, so the account is accurate."
+      ],
+      "highlights": [
+        "Hitherto",
+        "Henceforth",
+        "Insofar as",
+        "per se",
+        "de facto"
+      ],
+      "solution_overview": "Three of these expressions fix a period of time or a limit on a claim, and two work as qualifiers that narrow what is being asserted. Translate each into plain English before testing it: up to now, from now on, to the extent that, in itself, in practice. The plain version exposes any sentence that has widened or reversed the original."
+    },
+    {
+      "id": "en-v-4-26",
+      "case_id": "ENG V.4.26",
+      "title": "Task 26",
+      "subsection": "v.4",
+      "sort_order": 26,
+      "difficulty_level": "5/5",
+      "context": "Five claims about formal nouns used in regulation, litigation and project planning. Decide whether each claim describes the noun correctly.",
+      "statements": [
+        "A \"moratorium\" on deep-sea mining licences is an instruction to issue those licences faster.",
+        "A ruling said to set a \"precedent\" establishes a pattern that later cases are expected to follow.",
+        "A \"derogation\" from a directive obliges a member state to apply the rule more strictly than the text requires.",
+        "A \"presumption\" in the law of evidence is a starting position the court takes as established unless proof to the contrary displaces it.",
+        "A \"contingency\" in a construction firm's tender is a sum held against events that may or may not occur."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A \"moratorium\" on deep-sea mining licences is an instruction to issue those licences faster.**\n\nA moratorium is a temporary suspension of an activity, usually imposed while evidence is gathered or rules are written. Licences under a moratorium are simply not granted for the period it runs. Accelerating issue would be described as fast-tracking or streamlining, which is the reverse policy.\n\nSuspension is what the noun installs, so a moratorium halts the flow of licences instead of speeding it up.",
+        "**B) A ruling said to set a \"precedent\" establishes a pattern that later cases are expected to follow.**\n\nA precedent is a decision that guides the resolution of similar disputes afterwards, and its authority depends on the court that gave it. Later courts distinguish a precedent when the facts differ materially rather than ignoring it outright. That is how a body of case law grows without being rewritten each time.\n\nGuiding later decisions is exactly the function the noun describes, so the claim is a fair statement of it.",
+        "**C) A \"derogation\" from a directive obliges a member state to apply the rule more strictly than the text requires.**\n\nA derogation is a permitted departure from a rule, allowing a state to apply less than the full requirement, usually for a defined period or in defined circumstances. Applying a stricter standard is gold-plating, which is a different practice with different politics. The word comes from a verb meaning to detract, and it detracts from the obligation rather than adding to it.\n\nRelief from part of an obligation is what a derogation grants, so treating it as a demand for stricter compliance inverts the device.",
+        "**D) A \"presumption\" in the law of evidence is a starting position the court takes as established unless proof to the contrary displaces it.**\n\nA presumption allocates the burden: the party who wants a different conclusion has to bring evidence to unseat it. Some presumptions are rebuttable in this way, while a few are treated as conclusive and cannot be argued against. The device saves courts from proving afresh what experience shows is usually so.\n\nA default that stands until it is displaced by contrary proof is precisely what the term describes, so the claim holds.",
+        "**E) A \"contingency\" in a construction firm's tender is a sum held against events that may or may not occur.**\n\nA contingency sum is set aside for identified risks whose crystallisation is uncertain, which is why it sits apart from the priced work. Spending it is a decision, not an inevitability, and unused contingency returns to the margin. The noun shares its root with \"contingent,\" and the sense of dependence on an uncertain event carries across.\n\nProvision against uncertain events is what the line represents, so the description of the tender is correct."
+      ],
+      "highlights": [
+        "moratorium",
+        "precedent",
+        "derogation",
+        "presumption",
+        "contingency"
+      ],
+      "solution_overview": "Each noun names a device that changes what a party may or must do, so the test is to ask what becomes possible or impossible once it is in place. Two of these words are commonly heard as their opposites because they sound protective or permissive. Read the effect, not the tone."
+    },
+    {
+      "id": "en-v-4-27",
+      "case_id": "ENG V.4.27",
+      "title": "Task 27",
+      "subsection": "v.4",
+      "sort_order": 27,
+      "difficulty_level": "5/5",
+      "context": "Five descriptions of adjectives that judge how clear an argument is and whether it can be defended. Decide whether each description is correct.",
+      "statements": [
+        "Trial findings described as \"equivocal\" point clearly in one direction.",
+        "A \"categorical\" undertaking is one hedged with enough qualifications to be read either way.",
+        "A modelling assumption called \"untenable\" has survived every attempt to challenge it.",
+        "An exhibition catalogue described as making a \"cogent\" case is one whose argument fails to hold together.",
+        "A \"spurious\" correlation is one that shows up in the data without reflecting any genuine underlying relationship."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Trial findings described as \"equivocal\" point clearly in one direction.**\n\n\"Equivocal\" means open to more than one interpretation, so equivocal findings leave the reader unable to say which way they fall. Results that pointed clearly one way would be unambiguous or unequivocal. The root is the same as in equal voice: two readings speak with the same force.\n\nTwo competing readings of the same result is what the adjective records, so findings that point clearly in one direction cannot be equivocal.",
+        "**B) A \"categorical\" undertaking is one hedged with enough qualifications to be read either way.**\n\n\"Categorical\" means unqualified and admitting of no exception, which is why a categorical denial leaves no room for later refinement. An undertaking crowded with conditions is qualified or hedged. The whole value of the categorical form is that it forecloses the second reading.\n\nAbsence of qualification is what makes an undertaking categorical, so a heavily hedged promise is the very thing the adjective rules out.",
+        "**C) A modelling assumption called \"untenable\" has survived every attempt to challenge it.**\n\n\"Untenable\" means indefensible: a position so exposed that it cannot be held against criticism. An assumption that has withstood challenge is tenable, defensible or well supported. The military metaphor of a position that cannot be held is still doing the work in the modern use.\n\nIndefensibility is the judgement the prefix delivers, so an assumption that has weathered every challenge stands at the opposite end of the scale.",
+        "**D) An exhibition catalogue described as making a \"cogent\" case is one whose argument fails to hold together.**\n\n\"Cogent\" means clear, logical and convincing, and it compliments the structure of an argument rather than its subject. A case that falls apart would be incoherent, weak or specious. Reviewers reserve the word for arguments whose steps genuinely compel assent.\n\nCompelling coherence is the praise the adjective carries, so a catalogue whose argument collapses is exactly what it cannot describe.",
+        "**E) A \"spurious\" correlation is one that shows up in the data without reflecting any genuine underlying relationship.**\n\nA spurious correlation arises from coincidence, a shared trend or an unmeasured common cause, and it disappears once the confounder is accounted for. The word means false or counterfeit, which fits a pattern that looks like evidence and is not. Recognising them is why analysts test associations against plausible mechanisms.\n\nAn association without a real relationship behind it is precisely what the term names, so the description is accurate."
+      ],
+      "highlights": [
+        "equivocal",
+        "categorical",
+        "untenable",
+        "cogent",
+        "spurious"
+      ],
+      "solution_overview": "Four of these adjectives are paired with situations that contradict them outright, so the reliable move is to ask what the writer would have to see to apply the word honestly. Watch the prefix on one of them, since it flips the judgement entirely. The last item concerns a relationship that looks real in the data but is not."
+    },
+    {
+      "id": "en-v-4-28",
+      "case_id": "ENG V.4.28",
+      "title": "Task 28",
+      "subsection": "v.4",
+      "sort_order": 28,
+      "difficulty_level": "5/5",
+      "context": "Five statements about the formal vocabulary of staffing, public administration and the tone of activity. Decide whether each statement is accurate.",
+      "statements": [
+        "Reducing staff numbers \"through attrition\" means letting the workforce shrink as people leave and are not replaced.",
+        "A civil servant on \"secondment\" to a university is working there temporarily while remaining employed by the department.",
+        "A trade association describing demand for its members' goods as \"buoyant\" reports that it is strong and holding up well.",
+        "Attendance at the winter lecture series described as \"subdued\" was unusually heavy and lively.",
+        "Public attitudes to recycling described as \"entrenched\" have become firmly established and are hard to shift."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Reducing staff numbers \"through attrition\" means letting the workforce shrink as people leave and are not replaced.**\n\nAttrition here is natural wastage: retirements and resignations that go unfilled, so the total falls without anyone being dismissed. Managers prefer the route because it avoids redundancy costs and disputes, though it is slow and untargeted. The word carries its older sense of gradual wearing away.\n\nShrinkage by departures left unfilled is exactly the mechanism the phrase names, so the statement describes it correctly.",
+        "**B) A civil servant on \"secondment\" to a university is working there temporarily while remaining employed by the department.**\n\nA secondment lends a member of staff to another organisation for a fixed period, with the home employer retaining the contract and usually the post. Leaving the department for good would be a transfer or a resignation. The arrangement exists to move expertise without breaking the employment relationship.\n\nTemporary placement with the original employment intact is what a secondment is, so the account holds.",
+        "**C) A trade association describing demand for its members' goods as \"buoyant\" reports that it is strong and holding up well.**\n\n\"Buoyant\" borrows from flotation: demand that keeps rising to the surface despite pressure to sink. It suggests resilience as well as strength, which is why it appears in commentary on conditions that might have been expected to weaken. Falling demand would be described as flat, soft or depressed.\n\nStrength that keeps holding up under pressure is the picture the adjective paints, so the description of the association's report is right.",
+        "**D) Attendance at the winter lecture series described as \"subdued\" was unusually heavy and lively.**\n\n\"Subdued\" means quieter or more restrained than usual, whether of a mood, a colour or a level of activity. Attendance that was heavy and lively would be strong, brisk or well supported. The participle comes from a verb meaning to bring under control, and the sense of something damped down remains.\n\nMuted activity is what the adjective reports, so a series remembered for crowds and animation cannot be described as subdued.",
+        "**E) Public attitudes to recycling described as \"entrenched\" have become firmly established and are hard to shift.**\n\n\"Entrenched\" comes from digging in behind defences, and it describes positions that resist dislodging rather than positions that are merely common. Campaigners use it to explain why information alone changes little. Attitudes recently formed and still fluid would be described as emerging or unsettled.\n\nFixity that resists change is exactly what the metaphor conveys, so the statement uses it correctly."
+      ],
+      "highlights": [
+        "through attrition",
+        "secondment",
+        "buoyant",
+        "subdued",
+        "entrenched"
+      ],
+      "solution_overview": "Two of these terms describe how people move in and out of posts, and three describe the strength or fixity of a trend. For the staffing items, ask whether anyone is dismissed or permanently transferred. For the others, ask whether activity is strong, muted or hardened into place."
+    },
+    {
+      "id": "en-v-4-29",
+      "case_id": "ENG V.4.29",
+      "title": "Task 29",
+      "subsection": "v.4",
+      "sort_order": 29,
+      "difficulty_level": "5/5",
+      "context": "Five accounts of terms that classify claims and objections in academic and public argument. Decide whether each account is accurate.",
+      "statements": [
+        "A \"substantive\" objection to a planning application concerns its merits rather than the manner in which it was handled.",
+        "A \"procedural\" objection concerns how a decision was reached rather than whether the decision itself was right.",
+        "A \"normative\" claim states what ought to be the case, as when a bioethicist argues that consent should be presumed.",
+        "In that same contrast, a \"descriptive\" statement reports what is the case and can in principle be checked against evidence.",
+        "\"Qualitative\" evidence describes characteristics and reasons in words rather than measuring them in numbers."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A \"substantive\" objection to a planning application concerns its merits rather than the manner in which it was handled.**\n\n\"Substantive\" points at the substance of a matter, so a substantive objection engages with the proposal itself: its scale, its effects, its justification. It is answered by argument about the merits rather than by correcting the paperwork. The word is not a grander way of saying substantial, which is about size.\n\nEngagement with the merits is what marks an objection as substantive, so the account is accurate.",
+        "**B) A \"procedural\" objection concerns how a decision was reached rather than whether the decision itself was right.**\n\nProcedural challenges go to the process: notice, consultation, the composition of the body, the order of steps. They can succeed even where the outcome was sensible, which is why a successful challenge often sends a matter back to be decided again properly. The distinction from substantive grounds runs through administrative law.\n\nA complaint about the route rather than the destination is precisely what the label covers, so the description holds.",
+        "**C) A \"normative\" claim states what ought to be the case, as when a bioethicist argues that consent should be presumed.**\n\nNormative statements set out norms: what should be done, what is permissible, what has value. They cannot be settled by measurement alone, though evidence bears on them by showing what the options cost. Recognising a claim as normative tells the reader what kind of argument would count against it.\n\nA statement about what ought to be is exactly what the term identifies, so the account matches the example.",
+        "**D) In that same contrast, a \"descriptive\" statement reports what is the case and can in principle be checked against evidence.**\n\nDescriptive claims tell us how things stand and stand or fall by observation, which is why they can be tested even when the testing is difficult in practice. The pairing with normative claims keeps two different kinds of disagreement apart. Conflating them produces arguments where each side answers a question the other never asked.\n\nReporting the case and answering to evidence is what makes a claim descriptive, so this half of the contrast is stated correctly.",
+        "**E) \"Qualitative\" evidence describes characteristics and reasons in words rather than measuring them in numbers.**\n\nQualitative work asks how and why, drawing on interviews, observation and documents to characterise a phenomenon. It answers different questions from quantitative work rather than answering the same ones less precisely. Well-designed studies often use the two together, with one explaining what the other has counted.\n\nCharacterisation in words rather than measurement in numbers is the distinction the term rests on, so the account is right."
+      ],
+      "highlights": [
+        "substantive",
+        "procedural",
+        "normative",
+        "descriptive",
+        "Qualitative"
+      ],
+      "solution_overview": "These labels sort arguments by what they are about: the merits, the process, what ought to be, what is, and how evidence is gathered. Ask of each item what a reply would have to address in order to meet it. Two of them form a pair that is easiest to hold in mind together."
+    },
+    {
+      "id": "en-v-4-30",
+      "case_id": "ENG V.4.30",
+      "title": "Task 30",
+      "subsection": "v.4",
+      "sort_order": 30,
+      "difficulty_level": "5/5",
+      "context": "A final set of five statements about formal words describing the scale and pace of change. Decide whether each statement is accurate.",
+      "statements": [
+        "A \"root-and-branch\" review of a police force sets out to examine the whole institution rather than a selected part of it.",
+        "A software release described as \"incremental\" replaces the whole system in a single step.",
+        "A \"wholesale\" reorganisation of a museum's collections is a sweeping change affecting the holdings as a whole.",
+        "A \"piecemeal\" approach to coastal defence proceeds according to a single coordinated plan.",
+        "A failure described as \"systemic\" in a national grid threatens the functioning of the whole network rather than one substation within it."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A \"root-and-branch\" review of a police force sets out to examine the whole institution rather than a selected part of it.**\n\nThe phrase promises completeness, taking in structure, culture and practice rather than one failing department. It is stronger than \"wide-ranging,\" which leaves the boundaries vague. Reviews are announced in these terms when confidence has been lost and a partial inquiry would not restore it.\n\nTotal coverage of the institution is what the phrase pledges, so the description of the review is accurate.",
+        "**B) A software release described as \"incremental\" replaces the whole system in a single step.**\n\n\"Incremental\" change arrives in small additions, each building on what is already in place. Replacing everything at once is a wholesale or big-bang migration, and it carries a quite different risk profile. Engineers choose incremental delivery precisely so that each step can be tested and reversed.\n\nSmall successive additions are what the adjective describes, so a release that swaps out the entire system in one move belongs to the opposite approach.",
+        "**C) A \"wholesale\" reorganisation of a museum's collections is a sweeping change affecting the holdings as a whole.**\n\nUsed adjectivally in this way, \"wholesale\" means extensive and undiscriminating, applying to the entirety rather than to selected parts. The commercial sense of buying in bulk lies behind it, but the transferred sense is about scale of application. A change confined to one gallery would be selective or targeted.\n\nApplication across the whole rather than to chosen parts is what the adjective conveys, so the statement is sound.",
+        "**D) A \"piecemeal\" approach to coastal defence proceeds according to a single coordinated plan.**\n\n\"Piecemeal\" means done piece by piece, without an overall design tying the parts together, and it usually carries a note of criticism. Defences built to one coordinated plan would be described as integrated or strategic. The complaint about piecemeal work is that each part may be sound while the whole leaves gaps.\n\nAbsence of an overall design is the very feature the word points to, so an approach governed by one coordinated plan is the opposite of piecemeal.",
+        "**E) A failure described as \"systemic\" in a national grid threatens the functioning of the whole network rather than one substation within it.**\n\n\"Systemic\" refers to the system as a whole, so a systemic failure spreads through the connections rather than staying where it began. A fault confined to one installation is local or isolated. The neighbouring word \"systematic,\" meaning methodical, is a different adjective doing different work.\n\n**Tip:** Systemic concerns the whole system; systematic concerns method.\n\nReach across the whole network is what the adjective claims, and a grid-wide failure is exactly that, so the statement holds."
+      ],
+      "highlights": [
+        "root-and-branch",
+        "incremental",
+        "wholesale",
+        "piecemeal",
+        "systemic"
+      ],
+      "solution_overview": "Each word here fixes either how much of a system is affected or how the change arrives, in one sweep or in stages. Ask about coverage first and sequence second, and the pairs sort themselves out. Two items describe piece-by-piece change, and the sentences given for them do not match."
+    }
+  ]
+}

@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "math-1-31",
+    "case_id": "MATH 1.31",
+    "title": "De Morgan's laws with a universal set",
+    "subsection": "1.2",
+    "context": "Let U = {1, 2, ..., 10} be the universal set, A = {1, 2, 3, 4, 5}, and B = {4, 5, 6, 7, 8}.",
+    "statements": [
+      "$(A B)ᶜ = {9, 10}. \\cup$",
+      "$(A B)ᶜ = Aᶜ \\cap Bᶜ. \\cup$",
+      "$(A \\cap B)ᶜ = Aᶜ Bᶜ. \\cup$",
+      "$A \\cap B$ = ${4, 5, 6}$.",
+      "$(A \\cap B)ᶜ = {1, 2, 3, 4, 5, 9, 10}.$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $(A B)ᶜ = {9, 10}. \\cup$**  (true)\n\nA B = ${1,2,3,4,5,6,7,8}$; taking the complement relative to U leaves exactly ${9,10}$.$\\cup$\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) $(A B)ᶜ = Aᶜ \\cap Bᶜ. \\cup$**  (true)\n\nThis is De Morgan's law for sets, and it holds generally - the complement of a union equals the intersection of the complements.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) $(A \\cap B)ᶜ = Aᶜ Bᶜ. \\cup$**  (true)\n\nThis is the other De Morgan's law - the complement of an intersection equals the union of the complements - and it also holds generally.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) $A \\cap B$ = ${4, 5, 6}$.**  (false)\n\n$A \\cap B$ consists of elements in both sets: only 4 and 5 qualify (6 is in B but not in A), so $A \\cap B$ = ${4,5}$, not ${4,5,6}$.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) $(A \\cap B)ᶜ = {1, 2, 3, 4, 5, 9, 10}.$**  (false)\n\nSince $A \\cap B$ = ${4,5}$, its complement relative to U is everything else: ${1,2,3,6,7,8,9,10}$. The set given here wrongly includes 4 and 5 and wrongly omits 6, 7, and 8.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 1,
+    "solution_overview": "Let U = {1, 2, ..., 10} be the universal set, A = {1, 2, 3, 4, 5}, and B = {4, 5, 6, 7, 8}.\n\n**Part 1: Setup.**\n\nCompute once: A B = ${1,...,8}$, so (A B)ᶜ = ${9,10}$; $A \\cap B$ = ${4,5}$ (only elements in both),$\\cup \\cup$ so ($A \\cap B$)ᶜ = ${1,2,3,6,7,8,9,10}$. Both De Morgan identities, (A B)ᶜ=Aᶜ$\\cap B$ᶜ and ($A \\cap B$)ᶜ=Aᶜ Bᶜ, hold generally $and \\cup \\cup$ can be checked against these two computed values.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) $(A B)ᶜ = {9, 10}. \\cup$\n\nA B = ${1,2,3,4,5,6,7,8}$; taking the complement relative to U leaves exactly ${9,10}$.$\\cup$\n\n**2.** (TRUE) $(A B)ᶜ = Aᶜ \\cap Bᶜ. \\cup$\n\nThis is De Morgan's law for sets, and it holds generally - the complement of a union equals the intersection of the complements.\n\n**3.** (TRUE) $(A \\cap B)ᶜ = Aᶜ Bᶜ. \\cup$\n\nThis is the other De Morgan's law - the complement of an intersection equals the union of the complements - and it also holds generally.\n\n**4.** (FALSE) $A \\cap B$ = ${4, 5, 6}$.\n\n$A \\cap B$ consists of elements in both sets: only 4 and 5 qualify (6 is in B but not in A), so $A \\cap B$ = ${4,5}$, not ${4,5,6}$.\n\n**5.** (FALSE) $(A \\cap B)ᶜ = {1, 2, 3, 4, 5, 9, 10}.$\n\nSince $A \\cap B$ = ${4,5}$, its complement relative to U is everything else: ${1,2,3,6,7,8,9,10}$. The set given here wrongly includes 4 and 5 and wrongly omits 6, 7, and 8.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE",
+    "source_pdf_num": 6,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-32",
+    "case_id": "MATH 1.32",
+    "title": "Cartesian products",
+    "subsection": "1.2",
+    "context": "Let A = {1, 2} and B = {x, y, z}.",
+    "statements": [
+      "$|A \\times B| = 6.$",
+      "$(2, x) A \\times B. \\in$",
+      "$(x, 2) A \\times B. \\in$",
+      "$A \\times B$ = $B \\times A$.",
+      "The number of elements in $B \\times A$ equals the number of elements in $A \\times B$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $|A \\times B| = 6.$**  (true)\n\nThe Cartesian product $A \\times B$ has |A|$\\times$|B| = $2 \\times 3$ = 6 ordered pairs.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) $(2, x) A \\times B. \\in$**  (true)\n\n$2 A and x B, so the ordered pair (2,x), with first coordinate from A and second from B, belongs to \\in \\in A \\times B.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) $(x, 2) A \\times B. \\in$**  (false)\n\n$In A \\times B, the first coordinate must come from A. Since x A, the pair (x,2) does not belong to A \\times B. \\notin$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) $A \\times B$ = $B \\times A$.**  (false)\n\n$A \\times B$ contains pairs like (2,x) where the first entry is from A; $B \\times A$ would need its first entry from B, so e.g. (2,x) $B \\times A$ since 2 B. The two products contain different pairs in general.$\\notin \\notin$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) The number of elements in $B \\times A$ equals the number of elements in $A \\times B$.**  (true)\n\nEven though the pairs themselves differ, both products contain |A|$\\times$|B| = |B|$\\times$|A| = 6 elements - the counts match even when the sets of pairs don't.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 2,
+    "solution_overview": "Let A = {1, 2} and B = {x, y, z}.\n\n**Part 1: Setup.**\n\n|$A \\times B$| = |A|·|B| = 2·3 = 6 in both directions, but the pairs themselves differ: $A \\times B$ always has its FIRST coordinate from A, while $B \\times A$ has its first coordinate from B - so (2,x) $A \\times B$ but (x,2) $A \\times B$, and $A \\times B$\\in \\notin$ ≠ $B \\times A$ as sets of pairs even though |$A \\times B$| = |$B \\times A$|.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) $|A \\times B| = 6.$\n\nThe Cartesian product $A \\times B$ has |A|$\\times$|B| = $2 \\times 3$ = 6 ordered pairs.\n\n**2.** (TRUE) $(2, x) A \\times B. \\in$\n\n$2 A and x B, so the ordered pair (2,x), with first coordinate from A and second from B, belongs to \\in \\in A \\times B.$\n\n**3.** (FALSE) $(x, 2) A \\times B. \\in$\n\n$In A \\times B, the first coordinate must come from A. Since x A, the pair (x,2) does not belong to A \\times B. \\notin$\n\n**4.** (FALSE) $A \\times B$ = $B \\times A$.\n\n$A \\times B$ contains pairs like (2,x) where the first entry is from A; $B \\times A$ would need its first entry from B, so e.g. (2,x) $B \\times A$ since 2 B. The two products contain different pairs in general.$\\notin \\notin$\n\n**5.** (TRUE) The number of elements in $B \\times A$ equals the number of elements in $A \\times B$.\n\nEven though the pairs themselves differ, both products contain |A|$\\times$|B| = |B|$\\times$|A| = 6 elements - the counts match even when the sets of pairs don't.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE",
+    "source_pdf_num": 7,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-33",
+    "case_id": "MATH 1.33",
+    "title": "Sets defined by inequalities",
+    "subsection": "1.2",
+    "context": "$Let A = {x R : 1 \\in < x < 5} and B = {x R : x ≥ 3}.$",
+    "statements": [
+      "A B.$\\subseteq$",
+      "$A \\cap B$ = ${x R : 3 ≤ x < 5}$, i.e. the interval [3, 5).$\\in$",
+      "$B A. \\subseteq$",
+      "$A \\cup B$ = ${x R : x > 1}$, i.e. the interval (1, ∞).$\\cup \\in$",
+      "There exists a real number that belongs to A but not to B."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) A B.$\\subseteq$**  (false)\n\nA contains values like x = 2, which satisfies 1 < 2 < 5 but not 2 ≥ 3, so x = 2 A but x = 2 B - $this \\in \\notin$ counterexample shows A is not a subset of B.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**B) $A \\cap B$ = ${x R : 3 ≤ x < 5}$, i.e. the interval [3, 5).$\\in$**  (true)\n\nCombining both conditions (1 < x < 5 and x ≥ 3), the binding restrictions become 3 ≤ x < 5, exactly the interval [3,5).\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) $B A. \\subseteq$**  (false)\n\n$B contains values like x = 10, which is not less than 5, so x = 10 B but x = 10 A - B is not a \\in \\notin subset of A.$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) $A \\cup B$ = ${x R : x > 1}$, i.e. the interval (1, ∞).$\\cup \\in$**  (true)\n\nA covers (1,5) and B covers [3,∞); together every value greater than 1 is covered by one set or the other, with no gaps, giving exactly (1,∞).\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) There exists a real number that belongs to A but not to B.**  (true)\n\n$x = 2 satisfies 1 < 2 < 5 (so x A) but does not satisfy x ≥ 3 (so x B). \\in \\notin$\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 3,
+    "solution_overview": "$Let A = {x R : 1 \\in < x < 5} and B = {x R : x ≥ 3}.$\n\n**Part 1: Setup.**\n\nA = (1,5) and B = [3,∞) as intervals. Overlap them once: $A \\cap B$ = [3,5) (the tighter bound wins on each side), and A B = (1,∞) (no gap between the two, since A already reaches past 3). Neither interval contains $the \\cup other$ - x=2 is in A but not B, and x=10 is in B but not A.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (FALSE) A B.$\\subseteq$\n\nA contains values like x = 2, which satisfies 1 < 2 < 5 but not 2 ≥ 3, so x = 2 A but x = 2 B - $this \\in \\notin$ counterexample shows A is not a subset of B.\n\n**2.** (TRUE) $A \\cap B$ = ${x R : 3 ≤ x < 5}$, i.e. the interval [3, 5).$\\in$\n\nCombining both conditions (1 < x < 5 and x ≥ 3), the binding restrictions become 3 ≤ x < 5, exactly the interval [3,5).\n\n**3.** (FALSE) $B A. \\subseteq$\n\n$B contains values like x = 10, which is not less than 5, so x = 10 B but x = 10 A - B is not a \\in \\notin subset of A.$\n\n**4.** (TRUE) $A \\cup B$ = ${x R : x > 1}$, i.e. the interval (1, ∞).$\\cup \\in$\n\nA covers (1,5) and B covers [3,∞); together every value greater than 1 is covered by one set or the other, with no gaps, giving exactly (1,∞).\n\n**5.** (TRUE) There exists a real number that belongs to A but not to B.\n\n$x = 2 satisfies 1 < 2 < 5 (so x A) but does not satisfy x ≥ 3 (so x B). \\in \\notin$\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=TRUE",
+    "source_pdf_num": 13,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-34",
+    "case_id": "MATH 1.34",
+    "title": "Symmetric difference",
+    "subsection": "1.2",
+    "context": "Let A = {1, 2, 3, 4} and B = {3, 4, 5, 6}.",
+    "statements": [
+      "AΔB = {1, 2, 5, 6}.",
+      "The symmetric difference can also be written as AΔB = (A \\ B)$\\cap$(B \\ A).",
+      "$A \\cap B$ AΔB.$\\subseteq$",
+      "If A and B are disjoint, then AΔB = A B.$\\cup$",
+      "$|AΔB| = |A| + |B| - 2|A \\cap B|.$"
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) AΔB = {1, 2, 5, 6}.**  (true)\n\nA \\ B = {1,2} and B \\ A = {5,6}; their union is {1,2,5,6}.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) The symmetric difference can also be written as AΔB = (A \\ B)$\\cap$(B \\ A).**  (false)\n\nA \\ B and B \\ A are always disjoint from each other (one requires being outside B, the other requires being inside B), so their intersection is always empty - this can never equal the actual (generally nonempty) symmetric difference, and the correct connective is , $not \\cap$.$\\cup$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) $A \\cap B$ AΔB.$\\subseteq$**  (false)\n\n$A \\cap B$ = ${3,4}$, which by definition is exactly what symmetric difference excludes (it only keeps elements in exactly one set) - so $A \\cap B$ and AΔB are disjoint here, not one contained in the other.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) If A and B are disjoint, then AΔB = A B.$\\cup$**  (true)\n\nIf $A \\cap B$ = , then A \\ B = A and B \\ A = B, so AΔB = A B.$\\emptyset \\cup$\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) $|AΔB| = |A| + |B| - 2|A \\cap B|.$**  (true)\n\n$Here |A|=4, |B|=4, |A \\cap B|=2, giving 4+4-2(2)=4, matching |{1,2,5,6}|=4 - and this identity holds in general.$\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 4,
+    "solution_overview": "Let A = {1, 2, 3, 4} and B = {3, 4, 5, 6}.\n\n**Part 1: Setup.**\n\nA\\B=${1,2}$ and B\\A=${5,6}$, so AΔB = ${1,2} {5,6}$ = ${1,2,5,6}$, with |AΔB|=4. Since A\\B $and \\cup B\\A$ are always disjoint from each other, their UNION (not intersection) is the correct formula; and since $A \\cap B$=${3,4}$ is exactly what AΔB excludes, the two are always disjoint from one another too.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) AΔB = {1, 2, 5, 6}.\n\nA \\ B = {1,2} and B \\ A = {5,6}; their union is {1,2,5,6}.\n\n**2.** (FALSE) The symmetric difference can also be written as AΔB = (A \\ B)$\\cap$(B \\ A).\n\nA \\ B and B \\ A are always disjoint from each other (one requires being outside B, the other requires being inside B), so their intersection is always empty - this can never equal the actual (generally nonempty) symmetric difference, and the correct connective is , $not \\cap$.$\\cup$\n\n**3.** (FALSE) $A \\cap B$ AΔB.$\\subseteq$\n\n$A \\cap B$ = ${3,4}$, which by definition is exactly what symmetric difference excludes (it only keeps elements in exactly one set) - so $A \\cap B$ and AΔB are disjoint here, not one contained in the other.\n\n**4.** (TRUE) If A and B are disjoint, then AΔB = A B.$\\cup$\n\nIf $A \\cap B$ = , then A \\ B = A and B \\ A = B, so AΔB = A B.$\\emptyset \\cup$\n\n**5.** (TRUE) $|AΔB| = |A| + |B| - 2|A \\cap B|.$\n\n$Here |A|=4, |B|=4, |A \\cap B|=2, giving 4+4-2(2)=4, matching |{1,2,5,6}|=4 - and this identity holds in general.$\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE",
+    "source_pdf_num": 15,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-35",
+    "case_id": "MATH 1.35",
+    "title": "Sales rep to client account coverage",
+    "subsection": "1.2",
+    "context": "|$Reps \\times Accounts$| = |Reps|·|Accounts| = 5·8 = 40, and this scales directly with team size (6·8=48). Ordered-pair convention: (rep,account) $Reps \\times Accounts$ requires the FIRST coordinate from Reps and $second \\in from$ Accounts - reversing the order breaks the definition, and if either set",
+    "statements": [
+      "The total number of possible (rep, account) pairs is 40.",
+      "The pair (Maria, Account 3) is the same coverage assignment as (Account 3, Maria).",
+      "If the firm currently has zero client accounts, no coverage assignments can be formed no matter how many reps it hires.",
+      "$In the pair (rep, account), the statement \"(Maria, Account 3) belongs to Reps \\times Accounts\" means Maria \\in Accounts and Account 3 Reps. \\in$",
+      "If the firm hires one more rep (6 reps total) while keeping 8 accounts, the number of possible assignments becomes 48."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The total number of possible (rep, account) pairs is 40.**  (true)\n\nEach of the 5 reps can be paired with each of the 8 accounts, giving $5 \\times 8$ = 40 possible ordered pairs - this is exactly the size of the Cartesian product $Reps \\times Accounts$.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) The pair (Maria, Account 3) is the same coverage assignment as (Account 3, Maria).**  (false)\n\nOrdered pairs respect order and the identity of each coordinate set: (Maria, Account 3) belongs to $Reps \\times Accounts$, while (Account 3, Maria) would belong to $Accounts \\times Reps$ - a different set. They are not the same object.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) If the firm currently has zero client accounts, no coverage assignments can be formed no matter how many reps it hires.**  (true)\n\nIf Accounts = , then $Reps \\times Accounts$ = regardless of how many reps exist, since there is $no \\emptyset \\emptyset$ account to pair with any rep. This mirrors the general fact that $A \\times$= for any set A.$\\emptyset \\emptyset$\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) $In the pair (rep, account), the statement \"(Maria, Account 3) belongs to Reps \\times Accounts\" means Maria \\in Accounts and Account 3 Reps. \\in$**  (false)\n\nBy the definition of the Cartesian product, (Maria, Account 3) $Reps \\times Accounts$ means $Maria \\in \\in$ Reps and Account 3 Accounts - the statement has the membership reversed.$\\in$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) If the firm hires one more rep (6 reps total) while keeping 8 accounts, the number of possible assignments becomes 48.**  (true)\n\n$With 6 reps and 8 accounts, the number of ordered pairs is 6 \\times 8 = 48, confirming the statement exactly.$\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 5,
+    "solution_overview": "|$Reps \\times Accounts$| = |Reps|·|Accounts| = 5·8 = 40, and this scales directly with team size (6·8=48). Ordered-pair convention: (rep,account) $Reps \\times Accounts$ requires the FIRST coordinate from Reps and $second \\in from$ Accounts - reversing the order breaks the definition, and if either set\n\n**Part 1: Setup.**\n\n|$Reps \\times Accounts$| = |Reps|·|Accounts| = 5·8 = 40, and this scales directly with team size (6·8=48). Ordered-pair convention: (rep,account) $Reps \\times Accounts$ requires the FIRST coordinate from Reps and $second \\in from$ Accounts - reversing the order breaks the definition, and if either set is empty, the whole product is empty.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The total number of possible (rep, account) pairs is 40.\n\nEach of the 5 reps can be paired with each of the 8 accounts, giving $5 \\times 8$ = 40 possible ordered pairs - this is exactly the size of the Cartesian product $Reps \\times Accounts$.\n\n**2.** (FALSE) The pair (Maria, Account 3) is the same coverage assignment as (Account 3, Maria).\n\nOrdered pairs respect order and the identity of each coordinate set: (Maria, Account 3) belongs to $Reps \\times Accounts$, while (Account 3, Maria) would belong to $Accounts \\times Reps$ - a different set. They are not the same object.\n\n**3.** (TRUE) If the firm currently has zero client accounts, no coverage assignments can be formed no matter how many reps it hires.\n\nIf Accounts = , then $Reps \\times Accounts$ = regardless of how many reps exist, since there is $no \\emptyset \\emptyset$ account to pair with any rep. This mirrors the general fact that $A \\times$= for any set A.$\\emptyset \\emptyset$\n\n**4.** (FALSE) $In the pair (rep, account), the statement \"(Maria, Account 3) belongs to Reps \\times Accounts\" means Maria \\in Accounts and Account 3 Reps. \\in$\n\nBy the definition of the Cartesian product, (Maria, Account 3) $Reps \\times Accounts$ means $Maria \\in \\in$ Reps and Account 3 Accounts - the statement has the membership reversed.$\\in$\n\n**5.** (TRUE) If the firm hires one more rep (6 reps total) while keeping 8 accounts, the number of possible assignments becomes 48.\n\n$With 6 reps and 8 accounts, the number of ordered pairs is 6 \\times 8 = 48, confirming the statement exactly.$\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE",
+    "source_pdf_num": 16,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-36",
+    "case_id": "MATH 1.36",
+    "title": "Frost protection and irrigation",
+    "subsection": "1.2",
+    "context": "Let A = ${T R : T^$2 \\in$< 16}$ be the set of temperatures (in °C) for which grapevines are considered frost-safe, and let B = ${T R : T ≥ -1}$ be the set of temperatures at $which \\in the$ irrigation system is switched on. Note that A is the open interval (-4, 4) and B is the closed-below interval [-1, ∞).",
+    "statements": [
+      "$A \\cap B$ = [-1, 4).",
+      "$4 is an element of A \\cap B.$",
+      "The complement of A in R is ${T R : T < -4 or T > 4}$.$\\in$",
+      "A B is equal to the entire set of real numbers R.$\\cup$",
+      "There exists a temperature that is frost-safe (in A) but does not trigger irrigation (not in B)."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $A \\cap B$ = [-1, 4).**  (true)\n\n$A \\cap B$ needs T ≥ -1 (from B) and -4 < T < 4 (from A); combining these, the binding constraints are T ≥ -1 and T < 4, giving exactly [-1, 4).\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) $4 is an element of A \\cap B.$**  (false)\n\n$T = 4 gives T^2 = 16, which is not strictly less than 16, so 4 is not in A - and therefore not in A \\cap B either.$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) The complement of A in R is ${T R : T < -4 or T > 4}$.$\\in$**  (false)\n\nTrap: since A = (-4, 4) is an OPEN interval, it excludes both boundary points -4 and 4 - so both must belong to the complement. The correct complement is {T : T ≤ -4 or T ≥ 4} (using ≤ and ≥), not the strict version with < and > shown here, which wrongly leaves the two boundary points out of the complement too.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) A B is equal to the entire set of real numbers R.$\\cup$**  (false)\n\nA B = (-4, ∞): every point covered by A or B is greater than -4, and no point ≤ -4 belongs $to \\cup either$ set. For example, T = -10 is in neither A nor B, so the union is not all of R.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) There exists a temperature that is frost-safe (in A) but does not trigger irrigation (not in B).**  (true)\n\n$Take T = -2: T^2 = 4 < 16, so -2 A (frost-safe), but -2 ≥ -1 is false, so -2 B (irrigation off). This \\in \\notin is a valid temperature in A but not in B.$\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 6,
+    "solution_overview": "Let A = ${T R : T^$2 \\in$< 16}$ be the set of temperatures (in °C) for which grapevines are considered frost-safe, and let B = ${T R : T ≥ -1}$ be the set of temperatures at $which \\in the$ irrigation system is switched on. Note that A is the open interval (-4, 4) and B is the closed-below interval [-1, ∞).\n\n**Part 1: Setup.**\n\nA=(-4,4) (open) and B=[-1,∞) (closed at -1). Overlap: $A \\cap B$=[-1,4) (B's lower bound and A's upper bound both bind); union: A B=(-4,∞) (no gap, since A already reaches down past -1). Because A is open,$\\cup its$ complement must include both boundary points: Aᶜ=${T≤-4 or T≥4}$.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) $A \\cap B$ = [-1, 4).\n\n$A \\cap B$ needs T ≥ -1 (from B) and -4 < T < 4 (from A); combining these, the binding constraints are T ≥ -1 and T < 4, giving exactly [-1, 4).\n\n**2.** (FALSE) $4 is an element of A \\cap B.$\n\n$T = 4 gives T^2 = 16, which is not strictly less than 16, so 4 is not in A - and therefore not in A \\cap B either.$\n\n**3.** (FALSE) The complement of A in R is ${T R : T < -4 or T > 4}$.$\\in$\n\nTrap: since A = (-4, 4) is an OPEN interval, it excludes both boundary points -4 and 4 - so both must belong to the complement. The correct complement is {T : T ≤ -4 or T ≥ 4} (using ≤ and ≥), not the strict version with < and > shown here, which wrongly leaves the two boundary points out of the complement too.\n\n**4.** (FALSE) A B is equal to the entire set of real numbers R.$\\cup$\n\nA B = (-4, ∞): every point covered by A or B is greater than -4, and no point ≤ -4 belongs $to \\cup either$ set. For example, T = -10 is in neither A nor B, so the union is not all of R.\n\n**5.** (TRUE) There exists a temperature that is frost-safe (in A) but does not trigger irrigation (not in B).\n\n$Take T = -2: T^2 = 4 < 16, so -2 A (frost-safe), but -2 ≥ -1 is false, so -2 B (irrigation off). This \\in \\notin is a valid temperature in A but not in B.$\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=FALSE, E=TRUE",
+    "source_pdf_num": 20,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-37",
+    "case_id": "MATH 1.37",
+    "title": "Customer survey overlap",
+    "subsection": "1.2",
+    "context": "Let A be the set of customers who like Product A, with |A| = 120. Let B be the set of customers who like Product B, with |B| = 90. It is found that |$A \\cap B$| = 50 customers like both products.",
+    "statements": [
+      "The number of customers who like at least one of the two products, |A B|, is 170.$\\cup$",
+      "The number of customers who like neither product is 40.",
+      "The number of customers who like only Product A (A but not B) is 90.",
+      "$A \\cap B$ A.$\\subseteq$",
+      "Since |A| + |B| = 210 exceeds the 200 customers surveyed, this proves that EXACTLY 10 customers like both products, with no other value being possible."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The number of customers who like at least one of the two products, |A B|, is 170.$\\cup$**  (false)\n\n$Trap: by inclusion-exclusion, |A B| = |A| + |B| - |A \\cap B| = 120 + 90 - 50 = 160, not 170 - a \\cup simple arithmetic slip.$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**B) The number of customers who like neither product is 40.**  (true)\n\nOut of 200 surveyed customers, 160 like at least one product (part a), so 200 - 160 = 40 like neither.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) The number of customers who like only Product A (A but not B) is 90.**  (false)\n\n$Trap: customers who like only Product A are those in A but excluded from the overlap: |A| - |A \\cap B| = 120 - 50 = 70, not 90.$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) $A \\cap B$ A.$\\subseteq$**  (true)\n\nEvery customer who likes both products necessarily likes Product A, so by definition the intersection is always a subset of A (and, symmetrically, of B) - this holds for any two sets, not just this survey.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) Since |A| + |B| = 210 exceeds the 200 customers surveyed, this proves that EXACTLY 10 customers like both products, with no other value being possible.**  (false)\n\nTrap: this only forces |$A \\cap B$| ≥ |A| + |B| - 200 = 210 - 200 = 10, a MINIMUM bound, not an exact value. The actual overlap (50, as given) is consistent with, and comfortably exceeds, this minimum - \"exactly 10\" overreaches what the bound alone can prove. PART II - Logic Tier 1 - Foundations\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 7,
+    "solution_overview": "Let A be the set of customers who like Product A, with |A| = 120. Let B be the set of customers who like Product B, with |B| = 90. It is found that |$A \\cap B$| = 50 customers like both products.\n\n**Part 1: Setup.**\n\nBy inclusion-exclusion: |A B| = |A|+|B|-|$A \\cap B$| = 120+90-50 = 160, so 200-160=40 $like \\cup neither$, and |A only| = |A|-|$A \\cap B$| = 120-50=70. Separately, since |A B|≤200 always, the counts 120+90=210 $alone \\cup force$ |$A \\cap B$|≥210-200=10 as a guaranteed minimum - the actual value 50 comfortably exceeds this floor.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (FALSE) The number of customers who like at least one of the two products, |A B|, is 170.$\\cup$\n\n$Trap: by inclusion-exclusion, |A B| = |A| + |B| - |A \\cap B| = 120 + 90 - 50 = 160, not 170 - a \\cup simple arithmetic slip.$\n\n**2.** (TRUE) The number of customers who like neither product is 40.\n\nOut of 200 surveyed customers, 160 like at least one product (part a), so 200 - 160 = 40 like neither.\n\n**3.** (FALSE) The number of customers who like only Product A (A but not B) is 90.\n\n$Trap: customers who like only Product A are those in A but excluded from the overlap: |A| - |A \\cap B| = 120 - 50 = 70, not 90.$\n\n**4.** (TRUE) $A \\cap B$ A.$\\subseteq$\n\nEvery customer who likes both products necessarily likes Product A, so by definition the intersection is always a subset of A (and, symmetrically, of B) - this holds for any two sets, not just this survey.\n\n**5.** (FALSE) Since |A| + |B| = 210 exceeds the 200 customers surveyed, this proves that EXACTLY 10 customers like both products, with no other value being possible.\n\nTrap: this only forces |$A \\cap B$| ≥ |A| + |B| - 200 = 210 - 200 = 10, a MINIMUM bound, not an exact value. The actual overlap (50, as given) is consistent with, and comfortably exceeds, this minimum - \"exactly 10\" overreaches what the bound alone can prove. PART II - Logic Tier 1 - Foundations\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE",
+    "source_pdf_num": 22,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-38",
+    "case_id": "MATH 1.38",
+    "title": "[FILLER] Cafe menu: union of vegan and gluten-free",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 8,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Cafe menu: union of vegan and gluten-free"
+  },
+  {
+    "id": "math-1-39",
+    "case_id": "MATH 1.39",
+    "title": "[FILLER] Shift workers: intersection of morning and weekend",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 9,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Shift workers: intersection of morning and weekend"
+  },
+  {
+    "id": "math-1-40",
+    "case_id": "MATH 1.40",
+    "title": "[FILLER] Warehouse SKUs: set difference A\\\\B",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 10,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Warehouse SKUs: set difference A\\\\B"
+  },
+  {
+    "id": "math-1-41",
+    "case_id": "MATH 1.41",
+    "title": "[FILLER] Lab samples: complement in a finite universe",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 11,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Lab samples: complement in a finite universe"
+  },
+  {
+    "id": "math-1-42",
+    "case_id": "MATH 1.42",
+    "title": "[FILLER] De Morgan on security camera zones",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 12,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "De Morgan on security camera zones"
+  },
+  {
+    "id": "math-1-43",
+    "case_id": "MATH 1.43",
+    "title": "[FILLER] Cartesian product of sizes and colours",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 13,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Cartesian product of sizes and colours"
+  },
+  {
+    "id": "math-1-44",
+    "case_id": "MATH 1.44",
+    "title": "[FILLER] Symmetric difference of two mailing lists",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 14,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Symmetric difference of two mailing lists"
+  },
+  {
+    "id": "math-1-45",
+    "case_id": "MATH 1.45",
+    "title": "[FILLER] Disjointness of day and night cohorts",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 15,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Disjointness of day and night cohorts"
+  },
+  {
+    "id": "math-1-46",
+    "case_id": "MATH 1.46",
+    "title": "[FILLER] Complement of an intersection (helpdesk)",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 16,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Complement of an intersection (helpdesk)"
+  },
+  {
+    "id": "math-1-47",
+    "case_id": "MATH 1.47",
+    "title": "[FILLER] Venn overlap: app users of Maps and Music",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 17,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Venn overlap: app users of Maps and Music"
+  },
+  {
+    "id": "math-1-48",
+    "case_id": "MATH 1.48",
+    "title": "[FILLER] Inclusion-exclusion for two course enrolments",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 18,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Inclusion-exclusion for two course enrolments"
+  },
+  {
+    "id": "math-1-49",
+    "case_id": "MATH 1.49",
+    "title": "[FILLER] Triple intersection of tags on tickets",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 19,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Triple intersection of tags on tickets"
+  },
+  {
+    "id": "math-1-50",
+    "case_id": "MATH 1.50",
+    "title": "[FILLER] Ordered pairs from department codes",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 20,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Ordered pairs from department codes"
+  },
+  {
+    "id": "math-1-51",
+    "case_id": "MATH 1.51",
+    "title": "[FILLER] Irrigation zones: frost OR drought rule as union",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 21,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Irrigation zones: frost OR drought rule as union"
+  },
+  {
+    "id": "math-1-52",
+    "case_id": "MATH 1.52",
+    "title": "[FILLER] Survey: neither A nor B via De Morgan",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 22,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Survey: neither A nor B via De Morgan"
+  },
+  {
+    "id": "math-1-53",
+    "case_id": "MATH 1.53",
+    "title": "[FILLER] Three-set inclusion-exclusion partial data",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 23,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Three-set inclusion-exclusion partial data"
+  },
+  {
+    "id": "math-1-54",
+    "case_id": "MATH 1.54",
+    "title": "[FILLER] Complement of symmetric difference identity check",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 24,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Complement of symmetric difference identity check"
+  },
+  {
+    "id": "math-1-55",
+    "case_id": "MATH 1.55",
+    "title": "[FILLER] Cartesian product non-commutativity",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 25,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Cartesian product non-commutativity"
+  },
+  {
+    "id": "math-1-56",
+    "case_id": "MATH 1.56",
+    "title": "[FILLER] Partition induced by equivalence classes (light)",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 26,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Partition induced by equivalence classes (light)"
+  },
+  {
+    "id": "math-1-57",
+    "case_id": "MATH 1.57",
+    "title": "[FILLER] Counting functions via |B|^|A| as |A→B|",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 27,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Counting functions via |B|^|A| as |A→B|"
+  },
+  {
+    "id": "math-1-58",
+    "case_id": "MATH 1.58",
+    "title": "[FILLER] Infinite countable union of finite sets",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 28,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Infinite countable union of finite sets"
+  },
+  {
+    "id": "math-1-59",
+    "case_id": "MATH 1.59",
+    "title": "[FILLER] Inclusion-exclusion with three departments",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 29,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Inclusion-exclusion with three departments"
+  },
+  {
+    "id": "math-1-60",
+    "case_id": "MATH 1.60",
+    "title": "[FILLER] Complement identities chain with two De Morgans",
+    "subsection": "1.2",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 30,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Complement identities chain with two De Morgans"
+  }
+]

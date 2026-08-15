@@ -1,0 +1,277 @@
+[
+  {
+    "id": "math-1-50",
+    "case_id": "MATH 1.50",
+    "title": "Department codes and project stages",
+    "subsection": "1.2",
+    "context": "A company uses department codes $D=\\{\\mathrm{HR},\\mathrm{IT},\\mathrm{QA}\\}$ and project stages $S=\\{\\mathrm{plan},\\mathrm{build}\\}$. A record in $D\\times S$ has the form $(\\text{department},\\text{stage})$.",
+    "statements": [
+      "$|D\\times S|=6$.",
+      "$(\\mathrm{IT},\\mathrm{build})\\in D\\times S$.",
+      "$(\\mathrm{build},\\mathrm{IT})\\in D\\times S$.",
+      "$D\\times S=S\\times D$.",
+      "The map $(d,s)\\mapsto(s,d)$ is a bijection from $D\\times S$ to $S\\times D$."
+    ],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "**A) $|D\\times S|=6$.**  (true)\n\nThere are $|D|\\cdot|S|=3\\cdot2=6$ ordered pairs.",
+      "**B) $(\\mathrm{IT},\\mathrm{build})\\in D\\times S$.**  (true)\n\nThe first coordinate, $\\mathrm{IT}$, is in $D$, and the second, $\\mathrm{build}$, is in $S$.",
+      "**C) $(\\mathrm{build},\\mathrm{IT})\\in D\\times S$.**  (false)\n\nThe coordinates are reversed. Its first coordinate is not in $D$, so this pair belongs to neither the stated product nor its required order.",
+      "**D) $D\\times S=S\\times D$.**  (false)\n\nCartesian products preserve coordinate order. For example, $(\\mathrm{IT},\\mathrm{build})\\in D\\times S$ but it is not in $S\\times D$.",
+      "**E) The map $(d,s)\\mapsto(s,d)$ is a bijection from $D\\times S$ to $S\\times D$.**  (true)\n\nSwapping coordinates produces one valid pair in $S\\times D$ for every pair in $D\\times S$, and swapping again reverses the map."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 20,
+    "solution_overview": "The sets have $|D|=3$ and $|S|=2$.\n\n**Part 1: Setup.**\n\nA member of $D\\times S$ must have a department first and a stage second. Thus $(\\mathrm{IT},\\mathrm{build})$ is valid, whereas $(\\mathrm{build},\\mathrm{IT})$ has the wrong coordinate types.\n\n**Part 2: Formula / Key facts.**\n\nFor finite sets, $|D\\times S|=|D|\\,|S|$. The products $D\\times S$ and $S\\times D$ have equal sizes but are generally different sets.\n\n**Part 3: Solve.**\n\n**1.** $3\\cdot2=6$.\n\n**2.** Both coordinates meet the definition of $D\\times S$.\n\n**3.** The coordinates are reversed.\n\n**4.** Reversing coordinates changes the ordered pairs.\n\n**5.** Coordinate-swapping is reversible, so it is a bijection.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-51",
+    "case_id": "MATH 1.51",
+    "title": "Irrigation alerts across field zones",
+    "subsection": "1.2",
+    "context": "For field zones $U=\\{1,2,3,4,5,6,7,8\\}$, let $F=\\{1,3,4,7\\}$ be the zones with a frost alert and $D=\\{2,3,5,7,8\\}$ be the zones with a drought alert. A zone is scheduled for inspection when it has at least one alert.",
+    "statements": [
+      "The inspection set is $F\\cup D=\\{1,2,3,4,5,7,8\\}$.",
+      "Zone $6$ is scheduled for inspection.",
+      "$F\\cap D=\\{3,7\\}$.",
+      "The zones with exactly one alert are $F\\cup D$.",
+      "The zones with neither alert are $(F\\cup D)^c=F^c\\cap D^c=\\{6\\}$."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "**A) The inspection set is $F\\cup D=\\{1,2,3,4,5,7,8\\}$.**  (true)\n\nA union keeps every zone in at least one alert set; only zone $6$ is absent from both.",
+      "**B) Zone $6$ is scheduled for inspection.**  (false)\n\nZone $6\\notin F$ and $6\\notin D$, so $6\\notin F\\cup D$.",
+      "**C) $F\\cap D=\\{3,7\\}$.**  (true)\n\nZones $3$ and $7$ are the only entries appearing in both alert sets.",
+      "**D) The zones with exactly one alert are $F\\cup D$.**  (false)\n\nThe union also includes zones $3$ and $7$, which have two alerts. Exactly one alert is $F\\mathbin{\\Delta}D=\\{1,2,4,5,8\\}$.",
+      "**E) The zones with neither alert are $(F\\cup D)^c=F^c\\cap D^c=\\{6\\}$.**  (true)\n\nBy De Morgan's law, a zone outside both alert sets is in $F^c\\cap D^c$; the only such zone is $6$."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 21,
+    "solution_overview": "Let $U=\\{1,2,3,4,5,6,7,8\\}$, $F=\\{1,3,4,7\\}$, and $D=\\{2,3,5,7,8\\}$.\n\n**Part 1: Setup.**\n\nCompute $F\\cup D=\\{1,2,3,4,5,7,8\\}$ and $F\\cap D=\\{3,7\\}$. The only zone outside the union is $6$.\n\n**Part 2: Formula / Key facts.**\n\n“At least one” means union; “neither” means $(F\\cup D)^c=F^c\\cap D^c$. “Exactly one” means symmetric difference, not ordinary union.\n\n**Part 3: Solve.**\n\n**1.** The union lists every alerted zone.\n\n**2.** Zone $6$ has neither alert.\n\n**3.** The shared entries are $3$ and $7$.\n\n**4.** The union wrongly includes the shared entries.\n\n**5.** De Morgan's law gives the singleton set $\\{6\\}$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-52",
+    "case_id": "MATH 1.52",
+    "title": "Survey responses outside two programs",
+    "subsection": "1.2",
+    "context": "In a group of $80$ residents, $A$ is the set who use the bike-share program and $B$ is the set who use the library app. Suppose $|A|=38$, $|B|=29$, and $|A\\cap B|=12$.",
+    "statements": [
+      "$|A\\cup B|=55$.",
+      "$25$ residents use neither program.",
+      "$A^c\\cup B^c=(A\\cup B)^c$.",
+      "The set of residents using neither program is $A^c\\cap B^c$.",
+      "$|A\\mathbin{\\Delta}B|=43$."
+    ],
+    "answer_key": [true, true, false, true, true],
+    "tactical_explanations": [
+      "**A) $|A\\cup B|=55$.**  (true)\n\nInclusion-exclusion gives $38+29-12=55$.",
+      "**B) $25$ residents use neither program.**  (true)\n\nThere are $80-55=25$ residents outside $A\\cup B$.",
+      "**C) $A^c\\cup B^c=(A\\cup B)^c$.**  (false)\n\nDe Morgan's law gives $(A\\cup B)^c=A^c\\cap B^c$, not a union of complements.",
+      "**D) The set of residents using neither program is $A^c\\cap B^c$.**  (true)\n\nA resident using neither lies outside $A$ and outside $B$, exactly the meaning of the intersection of the complements.",
+      "**E) $|A\\mathbin{\\Delta}B|=43$.**  (true)\n\nThe number using exactly one program is $(38-12)+(29-12)=26+17=43$."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 22,
+    "solution_overview": "The group has $80$ residents, with $|A|=38$, $|B|=29$, and $|A\\cap B|=12$.\n\n**Part 1: Setup.**\n\nThe union has size $38+29-12=55$. Therefore $(A\\cup B)^c$ has $80-55=25$ members. The two “only” regions have sizes $26$ and $17$.\n\n**Part 2: Formula / Key facts.**\n\nUse $|A\\cup B|=|A|+|B|-|A\\cap B|$ and $(A\\cup B)^c=A^c\\cap B^c$.\n\n**Part 3: Solve.**\n\n**1.** Inclusion-exclusion gives $55$.\n\n**2.** Subtract the union from the full group.\n\n**3.** The displayed identity uses the wrong De Morgan connective.\n\n**4.** Neither means outside both sets.\n\n**5.** Exactly one is $26+17=43$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-53",
+    "case_id": "MATH 1.53",
+    "title": "Workshop skills across three teams",
+    "subsection": "1.2",
+    "context": "Among $100$ workshop participants, let $P$, $S$, and $C$ denote participants trained in Python, spreadsheets, and presentation design. The counts are $|P|=48$, $|S|=45$, $|C|=39$, $|P\\cap S|=20$, $|P\\cap C|=17$, $|S\\cap C|=16$, and $|P\\cap S\\cap C|=8$.",
+    "statements": [
+      "$|P\\cup S\\cup C|=87$.",
+      "$13$ participants are trained in Python and spreadsheets but not presentation design.",
+      "The number trained in exactly two of the three skills is $29$.",
+      "$|P\\cup S\\cup C|$ is found by subtracting $|P\\cap S\\cap C|$ three times from $|P|+|S|+|C|$.",
+      "$13$ participants have none of the three trainings."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "**A) $|P\\cup S\\cup C|=87$.**  (true)\n\nThree-set inclusion-exclusion gives $48+45+39-20-17-16+8=87$.",
+      "**B) $13$ participants are trained in Python and spreadsheets but not presentation design.**  (false)\n\nThe pairwise count includes all three-skill participants, so the required count is $20-8=12$.",
+      "**C) The number trained in exactly two of the three skills is $29$.**  (true)\n\nThe three pair-only regions are $20-8=12$, $17-8=9$, and $16-8=8$, totaling $29$.",
+      "**D) $|P\\cup S\\cup C|$ is found by subtracting $|P\\cap S\\cap C|$ three times from $|P|+|S|+|C|$.**  (false)\n\nThat omits the three pairwise intersections. The full formula subtracts each pairwise overlap once and then adds the triple overlap once.",
+      "**E) $13$ participants have none of the three trainings.**  (true)\n\nSince $87$ participants are in the union, $100-87=13$ are outside every training set."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 23,
+    "solution_overview": "Let $P,S,C$ be the three training sets with the stated counts.\n\n**Part 1: Setup.**\n\nThe pair-only regions are $|P\\cap S\\setminus C|=20-8=12$, $|P\\cap C\\setminus S|=9$, and $|S\\cap C\\setminus P|=8$.\n\n**Part 2: Formula / Key facts.**\n\n$$|P\\cup S\\cup C|=|P|+|S|+|C|-|P\\cap S|-|P\\cap C|-|S\\cap C|+|P\\cap S\\cap C|.$$\n\n**Part 3: Solve.**\n\n**1.** Substitution gives $87$.\n\n**2.** Remove the $8$ triple-trained participants from $P\\cap S$.\n\n**3.** Sum the three pair-only regions: $12+9+8=29$.\n\n**4.** Pairwise overlaps cannot be omitted from inclusion-exclusion.\n\n**5.** The complement of the union has $100-87=13$ participants.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-54",
+    "case_id": "MATH 1.54",
+    "title": "Access permissions and symmetric difference",
+    "subsection": "1.2",
+    "context": "Let $U=\\{a,b,c,d,e,f,g\\}$ be employee badges. Badges with building access form $A=\\{a,b,c,e\\}$, and badges with server access form $B=\\{b,c,d,f\\}$.",
+    "statements": [
+      "$A\\mathbin{\\Delta}B=\\{a,d,e,f\\}$.",
+      "$(A\\mathbin{\\Delta}B)^c=(A\\cap B)^c$.",
+      "$(A\\mathbin{\\Delta}B)^c=(A\\cap B)\\cup(A^c\\cap B^c)$.",
+      "Badge $g$ belongs to $(A\\mathbin{\\Delta}B)^c$.",
+      "$A\\mathbin{\\Delta}B=(A\\cup B)\\setminus(A\\cap B)$."
+    ],
+    "answer_key": [true, false, true, true, true],
+    "tactical_explanations": [
+      "**A) $A\\mathbin{\\Delta}B=\\{a,d,e,f\\}$.**  (true)\n\nThe symmetric difference keeps badges in exactly one set: $A\\setminus B=\\{a,e\\}$ and $B\\setminus A=\\{d,f\\}$.",
+      "**B) $(A\\mathbin{\\Delta}B)^c=(A\\cap B)^c$.**  (false)\n\nThe left side contains badges in both sets or neither set, while $(A\\cap B)^c$ contains every badge except those in both.",
+      "**C) $(A\\mathbin{\\Delta}B)^c=(A\\cap B)\\cup(A^c\\cap B^c)$.**  (true)\n\nNot being in exactly one set means being in both or being in neither.",
+      "**D) Badge $g$ belongs to $(A\\mathbin{\\Delta}B)^c$.**  (true)\n\nBadge $g$ is in neither $A$ nor $B$, so it is not in their symmetric difference.",
+      "**E) $A\\mathbin{\\Delta}B=(A\\cup B)\\setminus(A\\cap B)$.**  (true)\n\nThis removes the shared badges from the union and leaves precisely the badges in one access list."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 24,
+    "solution_overview": "For $A=\\{a,b,c,e\\}$ and $B=\\{b,c,d,f\\}$, the shared badges are $A\\cap B=\\{b,c\\}$ and the badges in neither list are $\\{g\\}$.\n\n**Part 1: Setup.**\n\nCompute $A\\mathbin{\\Delta}B=(A\\setminus B)\\cup(B\\setminus A)=\\{a,d,e,f\\}$. Its complement is $\\{b,c,g\\}$.\n\n**Part 2: Formula / Key facts.**\n\n$$ (A\\mathbin{\\Delta}B)^c=(A\\cap B)\\cup(A^c\\cap B^c), \\qquad A\\mathbin{\\Delta}B=(A\\cup B)\\setminus(A\\cap B). $$\n\n**Part 3: Solve.**\n\n**1.** List the two one-sided differences.\n\n**2.** The two complements describe different regions.\n\n**3.** The complement includes “both” and “neither.”\n\n**4.** Badge $g$ is in neither set.\n\n**5.** Remove the intersection from the union.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-55",
+    "case_id": "MATH 1.55",
+    "title": "Route codes and delivery windows",
+    "subsection": "1.2",
+    "context": "Let $R=\\{\\mathrm{N},\\mathrm{S}\\}$ be route codes and $W=\\{1,2,3\\}$ be delivery windows. A dispatch option is an ordered pair in $R\\times W$.",
+    "statements": [
+      "$(\\mathrm{N},2)\\in R\\times W$.",
+      "$(2,\\mathrm{N})\\in R\\times W$.",
+      "$|R\\times W|=|W\\times R|$.",
+      "Because $|R\\times W|=|W\\times R|$, the two Cartesian products are equal.",
+      "$(R\\times W)\\cap(W\\times R)=\\varnothing$."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "**A) $(\\mathrm{N},2)\\in R\\times W$.**  (true)\n\n$\\mathrm{N}\\in R$ and $2\\in W$, in the required order.",
+      "**B) $(2,\\mathrm{N})\\in R\\times W$.**  (false)\n\nA member of $R\\times W$ must begin with a route code, not a delivery window.",
+      "**C) $|R\\times W|=|W\\times R|$.**  (true)\n\nBoth counts equal $|R|\\,|W|=2\\cdot3=6$.",
+      "**D) Because $|R\\times W|=|W\\times R|$, the two Cartesian products are equal.**  (false)\n\nEqual cardinality does not mean equal sets. The products contain differently ordered pairs.",
+      "**E) $(R\\times W)\\cap(W\\times R)=\\varnothing$.**  (true)\n\nNo object is simultaneously a route code and a window number, so no ordered pair can satisfy both coordinate requirements."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 25,
+    "solution_overview": "The route codes $R=\\{\\mathrm{N},\\mathrm{S}\\}$ and windows $W=\\{1,2,3\\}$ are disjoint types of objects.\n\n**Part 1: Setup.**\n\n$R\\times W$ has route-window pairs, while $W\\times R$ has window-route pairs. Each has $2\\cdot3=6$ elements.\n\n**Part 2: Formula / Key facts.**\n\nThe formula $|R\\times W|=|W\\times R|$ counts pairs, but equality of counts does not establish equality of sets.\n\n**Part 3: Solve.**\n\n**1.** The pair has the correct coordinate order.\n\n**2.** The displayed pair is reversed.\n\n**3.** Both products have six pairs.\n\n**4.** Their members differ despite equal sizes.\n\n**5.** Since $R\\cap W=\\varnothing$, a pair cannot meet both product definitions.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-56",
+    "case_id": "MATH 1.56",
+    "title": "Inventory groups by package size",
+    "subsection": "1.2",
+    "context": "The inventory universe is $U=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$. Let $E$ be the even-numbered package sizes, $T$ the sizes divisible by $3$, and $O$ the odd-numbered package sizes.",
+    "statements": [
+      "$E\\cap O=\\varnothing$.",
+      "$E\\cup O\\ne U$.",
+      "$E^c=O$.",
+      "$E\\setminus T=\\{2,4,8,10\\}$.",
+      "$(E\\cap T)^c=E^c\\cup T^c$."
+    ],
+    "answer_key": [true, false, true, true, true],
+    "tactical_explanations": [
+      "**A) $E\\cap O=\\varnothing$.**  (true)\n\nNo integer can be both even and odd.",
+      "**B) $E\\cup O\\ne U$.**  (false)\n\nEvery integer in $U$ is either even or odd, so $E\\cup O=U$.",
+      "**C) $E^c=O$.**  (true)\n\nRelative to this integer universe, the non-even sizes are exactly the odd sizes.",
+      "**D) $E\\setminus T=\\{2,4,8,10\\}$.**  (true)\n\n$E=\\{2,4,6,8,10,12\\}$; remove $6$ and $12$, which are divisible by $3$.",
+      "**E) $(E\\cap T)^c=E^c\\cup T^c$.**  (true)\n\nThis is De Morgan's law for the complement of an intersection."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 26,
+    "solution_overview": "Within $U=\\{1,\\ldots,12\\}$, $E=\\{2,4,6,8,10,12\\}$, $O=\\{1,3,5,7,9,11\\}$, and $T=\\{3,6,9,12\\}$.\n\n**Part 1: Setup.**\n\nThe sets $E$ and $O$ partition $U$: they are disjoint and their union is all of $U$. Removing multiples of $3$ from $E$ leaves $\\{2,4,8,10\\}$.\n\n**Part 2: Formula / Key facts.**\n\nFor complements relative to $U$, $(E\\cap T)^c=E^c\\cup T^c$.\n\n**Part 3: Solve.**\n\n**1.** Even and odd classifications do not overlap.\n\n**2.** Together they exhaust the universe.\n\n**3.** The complement of even is odd here.\n\n**4.** Delete $6$ and $12$ from $E$.\n\n**5.** Apply De Morgan's law.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-57",
+    "case_id": "MATH 1.57",
+    "title": "Valid sensor classifications",
+    "subsection": "1.2",
+    "context": "A monitoring system has sensor locations $L=\\{\\ell_1,\\ell_2,\\ell_3\\}$ and status labels $Q=\\{\\mathrm{normal},\\mathrm{warning}\\}$. A complete classification assigns exactly one status label to each location; mathematically it is a function $f:L\\to Q$.",
+    "statements": [
+      "There are $|Q|^{|L|}=2^3=8$ complete classifications.",
+      "Every complete classification is a subset of $L\\times Q$ with exactly three ordered pairs.",
+      "A complete classification may contain both $(\\ell_1,\\mathrm{normal})$ and $(\\ell_1,\\mathrm{warning})$.",
+      "Every subset of $L\\times Q$ with three ordered pairs is a complete classification.",
+      "The set $\\{(\\ell_1,\\mathrm{normal}),(\\ell_2,\\mathrm{warning}),(\\ell_3,\\mathrm{normal})\\}$ is a complete classification."
+    ],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "**A) There are $|Q|^{|L|}=2^3=8$ complete classifications.**  (true)\n\nEach of the three locations independently receives one of two labels.",
+      "**B) Every complete classification is a subset of $L\\times Q$ with exactly three ordered pairs.**  (true)\n\nA function records one location-label pair for each of the three locations.",
+      "**C) A complete classification may contain both $(\\ell_1,\\mathrm{normal})$ and $(\\ell_1,\\mathrm{warning})$.**  (false)\n\nA function assigns exactly one output to each input. Giving $\\ell_1$ both labels violates that rule.",
+      "**D) Every subset of $L\\times Q$ with three ordered pairs is a complete classification.**  (false)\n\nThree pairs alone are insufficient: for example, three pairs could all involve $\\ell_1$ and omit another location.",
+      "**E) The set $\\{(\\ell_1,\\mathrm{normal}),(\\ell_2,\\mathrm{warning}),(\\ell_3,\\mathrm{normal})\\}$ is a complete classification.**  (true)\n\nEach location occurs once as a first coordinate and has one valid status label."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 27,
+    "solution_overview": "A classification is a function $f:L\\to Q$ with $|L|=3$ and $|Q|=2$.\n\n**Part 1: Setup.**\n\nA function is represented by a subset of $L\\times Q$ that contains exactly one pair beginning with each location. There are two label choices for each of three locations.\n\n**Part 2: Formula / Key facts.**\n\nThe number of functions from a finite set $L$ to a finite set $Q$ is $|Q|^{|L|}$.\n\n**Part 3: Solve.**\n\n**1.** Calculate $2^3=8$.\n\n**2.** A function graph has one pair per domain element.\n\n**3.** One input cannot have two outputs.\n\n**4.** A three-pair subset can still omit a location or repeat one.\n\n**5.** The listed graph has exactly one allowed label for every location.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-58",
+    "case_id": "MATH 1.58",
+    "title": "Numbered archive batches",
+    "subsection": "1.2",
+    "context": "For each positive integer $n$, let $A_n=\\{n,n+1\\}$. The archive contains all batches $A_1,A_2,A_3,\\ldots$.",
+    "statements": [
+      "$\\bigcup_{n=1}^{\\infty}A_n=\\mathbb{N}_{>0}$.",
+      "$\\bigcap_{n=1}^{\\infty}A_n=\\{2\\}$.",
+      "Every set $A_n$ has exactly two elements.",
+      "$\\bigcup_{n=1}^{\\infty}A_n$ has exactly two elements because each $A_n$ does.",
+      "$A_4\\cap A_5=\\{5\\}$."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "**A) $\\bigcup_{n=1}^{\\infty}A_n=\\mathbb{N}_{>0}$.**  (true)\n\nEvery positive integer $k$ lies in $A_k=\\{k,k+1\\}$, so every positive integer occurs in the union.",
+      "**B) $\\bigcap_{n=1}^{\\infty}A_n=\\{2\\}$.**  (false)\n\nAlthough $2\\in A_1\\cap A_2$, it is not in $A_3$. No number belongs to every batch, so the intersection is empty.",
+      "**C) Every set $A_n$ has exactly two elements.**  (true)\n\nThe consecutive positive integers $n$ and $n+1$ are distinct.",
+      "**D) $\\bigcup_{n=1}^{\\infty}A_n$ has exactly two elements because each $A_n$ does.**  (false)\n\nAn infinite union of finite sets need not be finite. Here it contains every positive integer.",
+      "**E) $A_4\\cap A_5=\\{5\\}$.**  (true)\n\n$A_4=\\{4,5\\}$ and $A_5=\\{5,6\\}$ share only $5$."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 28,
+    "solution_overview": "For $n\\ge1$, $A_n=\\{n,n+1\\}$.\n\n**Part 1: Setup.**\n\nThe first batches are $\\{1,2\\}$, $\\{2,3\\}$, $\\{3,4\\}$, and so on. Each is finite, but the batches continue without end.\n\n**Part 2: Formula / Key facts.**\n\nA union requires membership in at least one set; an intersection requires membership in every set.\n\n**Part 3: Solve.**\n\n**1.** Every $k\\in\\mathbb{N}_{>0}$ occurs in $A_k$.\n\n**2.** Any proposed common number fails to occur in sufficiently late batches.\n\n**3.** Each $A_n$ is a two-element set.\n\n**4.** Individual finite size does not bound an infinite union.\n\n**5.** Compute the two adjacent batches directly.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-59",
+    "case_id": "MATH 1.59",
+    "title": "Cross-trained staff in three departments",
+    "subsection": "1.2",
+    "context": "A firm has $120$ staff. Let $A$, $B$, and $C$ be the sets certified for analytics, budgeting, and client support. The counts are $|A|=62$, $|B|=55$, $|C|=48$, $|A\\cap B|=25$, $|A\\cap C|=20$, $|B\\cap C|=18$, and $|A\\cap B\\cap C|=10$.",
+    "statements": [
+      "$|A\\cup B\\cup C|=112$.",
+      "The number certified in analytics and budgeting but not client support is $25$.",
+      "Exactly $57$ staff are certified in precisely one of the three areas.",
+      "The number certified in at least one area equals $62+55+48-25-20-18+10$.",
+      "At least $8$ staff have none of the certifications."
+    ],
+    "answer_key": [true, false, true, true, true],
+    "tactical_explanations": [
+      "**A) $|A\\cup B\\cup C|=112$.**  (true)\n\nInclusion-exclusion gives $62+55+48-25-20-18+10=112$.",
+      "**B) The number certified in analytics and budgeting but not client support is $25$.**  (false)\n\nThe count $25$ includes the $10$ staff certified in all three areas. The requested region has $25-10=15$ staff.",
+      "**C) Exactly $57$ staff are certified in precisely one of the three areas.**  (true)\n\nOnly-$A$, only-$B$, and only-$C$ have sizes $27$, $22$, and $8$, respectively, totaling $57$.",
+      "**D) The number certified in at least one area equals $62+55+48-25-20-18+10$.**  (true)\n\nThis is the three-set inclusion-exclusion formula with the supplied counts.",
+      "**E) At least $8$ staff have none of the certifications.**  (true)\n\nExactly $120-112=8$ staff have none, so “at least $8$” is true."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 29,
+    "solution_overview": "Let $A,B,C$ be the certification sets. All pairwise counts include the triple intersection of size $10$.\n\n**Part 1: Setup.**\n\nThe union count is $62+55+48-25-20-18+10=112$. The pair-only counts are $15$, $10$, and $8$. The only-$A$, only-$B$, and only-$C$ counts are $27$, $22$, and $8$.\n\n**Part 2: Formula / Key facts.**\n\nUse three-set inclusion-exclusion. To isolate a pair-only region, subtract the triple intersection from its pairwise count.\n\n**Part 3: Solve.**\n\n**1.** The inclusion-exclusion total is $112$.\n\n**2.** Remove the triple-certified staff: $25-10=15$.\n\n**3.** Sum $27+22+8=57$.\n\n**4.** This is the stated inclusion-exclusion expression.\n\n**5.** The complement of the union has $120-112=8$ staff.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-60",
+    "case_id": "MATH 1.60",
+    "title": "Two-stage complement identities",
+    "subsection": "1.2",
+    "context": "Let $A$, $B$, and $C$ be arbitrary subsets of a universal set $U$. Complements are taken relative to $U$.",
+    "statements": [
+      "$(A\\cup(B\\cap C))^c=A^c\\cap(B^c\\cup C^c)$.",
+      "$(A\\cap(B\\cup C))^c=A^c\\cap(B^c\\cup C^c)$.",
+      "$(A\\cup B)\\cap(A\\cup C)=A\\cup(B\\cap C)$.",
+      "$(A\\setminus B)^c=A^c\\setminus B^c$.",
+      "$(A\\setminus B)^c=A^c\\cup B$."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "**A) $(A\\cup(B\\cap C))^c=A^c\\cap(B^c\\cup C^c)$.**  (true)\n\nDe Morgan first gives $A^c\\cap(B\\cap C)^c$, and a second application gives $A^c\\cap(B^c\\cup C^c)$.",
+      "**B) $(A\\cap(B\\cup C))^c=A^c\\cap(B^c\\cup C^c)$.**  (false)\n\nThe outer complement of an intersection produces a union: the correct result is $A^c\\cup(B^c\\cap C^c)$.",
+      "**C) $(A\\cup B)\\cap(A\\cup C)=A\\cup(B\\cap C)$.**  (true)\n\nThis is the distributive law of union over intersection.",
+      "**D) $(A\\setminus B)^c=A^c\\setminus B^c$.**  (false)\n\nSince $A\\setminus B=A\\cap B^c$, its complement is $A^c\\cup B$. The proposed right side is a different region.",
+      "**E) $(A\\setminus B)^c=A^c\\cup B$.**  (true)\n\nRewrite the difference as $A\\cap B^c$ and apply De Morgan's law: $(A\\cap B^c)^c=A^c\\cup(B^c)^c=A^c\\cup B$."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 30,
+    "solution_overview": "All complements are relative to $U$.\n\n**Part 1: Setup.**\n\nUse $A\\setminus B=A\\cap B^c$ whenever a difference appears. Then apply De Morgan's laws from the outside inward.\n\n**Part 2: Formula / Key facts.**\n\n$$ (X\\cup Y)^c=X^c\\cap Y^c, \\qquad (X\\cap Y)^c=X^c\\cup Y^c. $$\n\nAlso use the distributive identity $(A\\cup B)\\cap(A\\cup C)=A\\cup(B\\cap C)$.\n\n**Part 3: Solve.**\n\n**1.** Apply De Morgan twice to obtain $A^c\\cap(B^c\\cup C^c)$.\n\n**2.** The outer intersection becomes a union, so the claim has the wrong top-level connective.\n\n**3.** This is the stated distributive law.\n\n**4.** The difference rewrite shows the proposed identity is incorrect.\n\n**5.** $(A\\cap B^c)^c=A^c\\cup B$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  }
+]

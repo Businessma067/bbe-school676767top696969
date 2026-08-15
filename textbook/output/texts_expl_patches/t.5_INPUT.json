@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.5",
+  "title": "The Marshall Plan and the Politics of Economic Recovery",
+  "passage": "(1) By the winter of 1946–47, much of continental Europe remained in a state of severe economic distress despite the end of the Second World War nearly two years earlier. Industrial output in several countries still lagged well behind pre-war levels, harvests had failed amid unusually harsh weather, and a chronic shortage of US dollars left European governments unable to purchase the fuel, machinery, and raw materials needed to rebuild. Washington policymakers grew increasingly concerned that continued economic misery might create fertile conditions for communist political movements across Western Europe.\n\n(2) It was against this backdrop that US Secretary of State George Marshall delivered a commencement address at Harvard University in June 1947, proposing a large-scale American aid programme conditional on European governments jointly coordinating their own reconstruction efforts rather than each simply requesting bilateral assistance. Sixteen Western European countries responded by forming the Organisation for European Economic Co-operation (OEEC) to administer the programme collectively, while Czechoslovakia, having initially expressed interest, was compelled by Soviet pressure to withdraw its participation within weeks.\n\n(3) The United States Congress formally authorised the initiative through the Economic Cooperation Act in April 1948. Over the following four years, the programme disbursed a total of approximately $13.3 billion in grants and loans, with the United Kingdom receiving the largest single share at roughly 24% of the total, followed by France at approximately 20%, with the remaining participating countries dividing the rest according to need and negotiated allocation formulas.\n\n(4) The plan's conditions extended well beyond the transfer of funds. Recipient governments were required to reduce tariffs and other barriers to intra-European trade, stabilise their currencies, and submit to a degree of mutual economic oversight through the OEEC. Many historians regard this institutional cooperation as having laid essential groundwork for the deeper European economic integration that would eventually produce the European Economic Community in the following decade.\n\n(5) The programme's architects also framed it explicitly, if not always publicly, as a tool of Cold War containment: by demonstrating the benefits of market-oriented reconstruction and multilateral cooperation, American officials hoped to reduce the political appeal of communist parties then active in France, Italy, and elsewhere, where post-war economic hardship had contributed to their electoral strength.\n\n(6) Assessing the plan's actual economic impact, however, has generated considerable historical disagreement. The economic historian Alan Milward, among the programme's most influential critics, argued that Western European industrial output had already recovered to roughly 111% of its 1938 level by the time large-scale disbursements began flowing in 1948, suggesting that the region's recovery was substantially underway before the aid could plausibly have driven it.\n\n(7) Milward and others instead pointed to domestic factors, such as currency stabilisation measures, rising savings rates, and pent-up consumer demand following years of wartime rationing, as more decisive drivers of the recovery already visible by 1948. Proponents of the traditional view countered that Marshall aid was nonetheless critical in relieving the dollar shortage that would otherwise have forced European governments to restrict imports of essential capital goods, regardless of underlying domestic momentum.\n\n(8) The relative weight of the aid also varied considerably by recipient. In Austria, Marshall assistance amounted to as much as 14% of national income in some years of the programme, reflecting the country's particularly acute post-war needs, whereas in the United Kingdom, a considerably larger economy, the equivalent figure remained under 3% throughout the programme's duration.\n\n(9) Whether the Marshall Plan should be understood primarily as the decisive engine of Western European recovery, or as a politically significant but economically secondary contribution to a recovery already gathering its own momentum, remains a matter of ongoing historical debate, one that closely parallels later disputes over the effectiveness of foreign aid in other contexts and eras.",
+  "tasks": [
+    {
+      "id": "en-t-5-01",
+      "exam_title": "Paragraphs 1–3",
+      "kind": "reading",
+      "statements": [
+        "The severe economic distress described in Paragraph 1 is attributed partly to a chronic shortage of US dollars needed to purchase fuel, machinery, and raw materials.",
+        "Marshall's proposal, as described in Paragraph 2, required European governments to coordinate their reconstruction efforts jointly rather than negotiate purely bilateral aid requests.",
+        "Czechoslovakia is described as having withdrawn from the programme entirely on its own initiative, without any external pressure being involved.",
+        "The programme's total disbursement of approximately $13.3 billion was distributed over a four-year period following Congressional authorisation in April 1948.",
+        "The United Kingdom is described as having received a smaller share of total aid than France."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The severe economic distress described in Paragraph 1 is attributed partly to a chronic shortage of US dollars needed to purchase fuel, machinery, and raw materials.**\n\nParagraph 1 lists several causes of Europe's post-war distress, and one of them is explicit: a chronic US-dollar shortage left governments unable to buy fuel, machinery, and raw materials for rebuilding. The statement restates that causal link without adding outside claims.\n\n**Tip:** When a statement names a cause plus the imports blocked by it, check that both pieces sit in the same paragraph stretch.\n\nThat dollar-shortage wording matches Paragraph 1, so the claim lines up with the passage.",
+        "**B) Marshall's proposal, as described in Paragraph 2, required European governments to coordinate their reconstruction efforts jointly rather than negotiate purely bilateral aid requests.**\n\nParagraph 2 presents Marshall's Harvard proposal as conditional on joint European coordination of reconstruction, rather than each country seeking purely bilateral aid. That is exactly the contrast the statement draws.\n\nThe joint-coordination condition in Paragraph 2 supports the claim as written.",
+        "**C) Czechoslovakia is described as having withdrawn from the programme entirely on its own initiative, without any external pressure being involved.**\n\nParagraph 2 says Czechoslovakia initially showed interest, then \"was compelled by Soviet pressure to withdraw.\" The exit is coerced, not a free solo decision. The statement invents \"own initiative\" and erases the Soviet pressure the text names.\n\n**Trap:** Initial interest can look like voluntary exit if you stop reading before the compulsion clause.\n\nBecause withdrawal is forced by Soviet pressure, the \"own initiative\" claim fails against the passage.",
+        "**D) The programme's total disbursement of approximately $13.3 billion was distributed over a four-year period following Congressional authorisation in April 1948.**\n\nParagraph 3 places Congressional authorisation in April 1948 via the Economic Cooperation Act, then states that over the following four years the programme paid out about $13.3 billion. Timing and total both match the statement.\n\nThe four-year, $13.3 billion sequence after April 1948 is what Paragraph 3 reports, so the claim holds.",
+        "**E) The United Kingdom is described as having received a smaller share of total aid than France.**\n\nParagraph 3 ranks recipients: the United Kingdom took the largest share at roughly 24%, with France next at about 20%. The statement reverses that order and treats the UK as the smaller recipient.\n\n**Trap:** Later Austria/UK national-income percentages (Paragraph 8) are relative weight, not the same ranking as absolute shares of the aid pot.\n\nBecause the UK outranks France at 24% versus 20%, the smaller-share claim does not match the passage."
+      ],
+      "highlights": [
+        "a chronic shortage of US dollars left European governments unable to purchase the fuel, machinery, and raw materials needed to rebuild",
+        "conditional on European governments jointly coordinating their own reconstruction efforts rather than each simply requesting bilateral assistance",
+        "was compelled by Soviet pressure to withdraw its participation within weeks",
+        "Over the following four years, the programme disbursed a total of approximately $13.3 billion in grants and loans",
+        "with the United Kingdom receiving the largest single share at roughly 24% of the total, followed by France at approximately 20%"
+      ]
+    },
+    {
+      "id": "en-t-5-02",
+      "exam_title": "Paragraphs 4–6",
+      "kind": "reading",
+      "statements": [
+        "The plan's conditions are described as extending beyond fund transfers to include tariff reduction and currency stabilisation requirements.",
+        "Institutional cooperation fostered by the OEEC is presented as having laid groundwork for later European economic integration.",
+        "The programme's containment rationale is described as being always publicly acknowledged by American officials at the time.",
+        "Communist parties in France and Italy are described in the passage as having drawn political strength partly from post-war economic hardship.",
+        "Milward argued that Western European industrial output had already reached roughly 111% of its 1938 level by the time large-scale disbursements began in 1948."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The plan's conditions are described as extending beyond fund transfers to include tariff reduction and currency stabilisation requirements.**\n\nParagraph 4 opens by saying the plan's conditions went well beyond money transfers. Recipients had to cut tariffs and trade barriers, stabilise currencies, and accept mutual oversight through the OEEC. Tariff cuts and currency stabilisation are named conditions, not optional extras.\n\nThose beyond-funds requirements in Paragraph 4 make the statement a faithful paraphrase.",
+        "**B) Institutional cooperation fostered by the OEEC is presented as having laid groundwork for later European economic integration.**\n\nParagraph 4 reports that many historians see the OEEC-centred cooperation as laying essential groundwork for deeper European economic integration, which later produced the European Economic Community. \"Groundwork\" is the passage's own word for that contribution.\n\nThe groundwork-for-integration reading matches Paragraph 4, so the claim stands.",
+        "**C) The programme's containment rationale is described as being always publicly acknowledged by American officials at the time.**\n\nParagraph 5 says architects framed the programme as Cold War containment \"explicitly, if not always publicly.\" That qualifier means public acknowledgment was not constant. \"Always publicly acknowledged\" flips the hedge into its opposite.\n\n**Trap:** \"Explicitly\" describes how they framed the tool, not how openly they advertised it every time.\n\nBecause the text says \"if not always publicly,\" the always-public claim fails.",
+        "**D) Communist parties in France and Italy are described in the passage as having drawn political strength partly from post-war economic hardship.**\n\nParagraph 5 links American hopes of reducing communist appeal to France, Italy, and elsewhere, and notes that post-war economic hardship had contributed to those parties' electoral strength. Hardship is a partial cause of that strength, just as the statement says.\n\nThat hardship-to-electoral-strength link in Paragraph 5 supports the claim.",
+        "**E) Milward argued that Western European industrial output had already reached roughly 111% of its 1938 level by the time large-scale disbursements began in 1948.**\n\nParagraph 6 attributes to Alan Milward the claim that Western European industrial output was already about 111% of its 1938 level when large-scale Marshall disbursements began flowing in 1948. Figure, baseline year, and timing all align.\n\nMilward's 111%-of-1938 output argument in Paragraph 6 is exactly what the statement reports."
+      ],
+      "highlights": [
+        "Recipient governments were required to reduce tariffs and other barriers to intra-European trade, stabilise their currencies",
+        "laid essential groundwork for the deeper European economic integration that would eventually produce the European Economic Community",
+        "framed it explicitly, if not always publicly, as a tool of Cold War containment",
+        "where post-war economic hardship had contributed to their electoral strength",
+        "Western European industrial output had already recovered to roughly 111% of its 1938 level by the time large-scale disbursements began flowing in 1948"
+      ]
+    },
+    {
+      "id": "en-t-5-03",
+      "exam_title": "Paragraphs 7–9",
+      "kind": "reading",
+      "statements": [
+        "Milward and others attributed the recovery visible by 1948 mainly to domestic factors such as currency stabilisation and rising savings rates.",
+        "Proponents of the traditional view argued that Marshall aid played no meaningful role in relieving the dollar shortage regardless of domestic recovery momentum.",
+        "In Austria, Marshall assistance amounted to as much as 14% of national income in some years, compared to under 3% in the United Kingdom.",
+        "The passage presents a single, universally agreed conclusion about whether the Marshall Plan was the decisive driver of recovery.",
+        "The ongoing historical debate about the Marshall Plan is described as paralleling later disputes over foreign aid effectiveness in other contexts."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Milward and others attributed the recovery visible by 1948 mainly to domestic factors such as currency stabilisation and rising savings rates.**\n\nParagraph 7 says Milward and others pointed instead to domestic drivers—currency stabilisation, rising savings, and pent-up demand after wartime rationing—as more decisive for the recovery already visible by 1948. The statement correctly names that domestic attribution.\n\nThose domestic-factor claims in Paragraph 7 match the statement.",
+        "**B) Proponents of the traditional view argued that Marshall aid played no meaningful role in relieving the dollar shortage regardless of domestic recovery momentum.**\n\nParagraph 7's traditional camp argued the opposite: Marshall aid was \"nonetheless critical in relieving the dollar shortage\" that would otherwise have forced import cuts, even if domestic momentum existed. \"No meaningful role\" erases that critical-relief claim.\n\n**Trap:** Critics minimise aid's driving role; traditional proponents still call dollar-shortage relief critical.\n\nBecause proponents call aid critical for easing the dollar shortage, the \"no meaningful role\" line fails.",
+        "**C) In Austria, Marshall assistance amounted to as much as 14% of national income in some years, compared to under 3% in the United Kingdom.**\n\nParagraph 8 contrasts relative aid burdens: Austria reached as much as 14% of national income in some programme years, while the UK figure stayed under 3% throughout. Both percentages appear as stated.\n\nThe 14% Austria versus under-3% UK contrast is Paragraph 8's own comparison, so the claim holds.",
+        "**D) The passage presents a single, universally agreed conclusion about whether the Marshall Plan was the decisive driver of recovery.**\n\nParagraph 9 leaves the decisive-engine versus secondary-contribution question as \"a matter of ongoing historical debate,\" not a settled consensus. \"Single, universally agreed conclusion\" invents closure the text refuses.\n\n**Trap:** Strong closing sentences still can announce unresolved debate rather than a winner.\n\nBecause Paragraph 9 frames the issue as ongoing debate, the universal-conclusion claim does not match the passage.",
+        "**E) The ongoing historical debate about the Marshall Plan is described as paralleling later disputes over foreign aid effectiveness in other contexts.**\n\nParagraph 9 says the Marshall Plan debate \"closely parallels later disputes over the effectiveness of foreign aid in other contexts and eras.\" The parallel is explicit, not inferred.\n\nThat parallel to later foreign-aid disputes matches Paragraph 9, so the statement stands."
+      ],
+      "highlights": [
+        "currency stabilisation measures, rising savings rates, and pent-up consumer demand following years of wartime rationing, as more decisive drivers of the recovery already visible by 1948",
+        "Marshall aid was nonetheless critical in relieving the dollar shortage",
+        "as much as 14% of national income in some years of the programme, reflecting the country's particularly acute post-war needs, whereas in the United Kingdom, a considerably larger economy, the equivalent figure remained under 3%",
+        "remains a matter of ongoing historical debate",
+        "closely parallels later disputes over the effectiveness of foreign aid in other contexts and eras"
+      ]
+    },
+    {
+      "id": "en-t-5-04",
+      "exam_title": "Disguised Inference Traps (Paragraph Order)",
+      "kind": "reading",
+      "statements": [
+        "Since the OEEC was formed to administer aid collectively, it can be inferred that each participating country had equal decision-making weight regardless of its size or need.",
+        "Because the plan's conditions included trade liberalisation, the passage implies economic cooperation was valued as an end in itself, not merely as a condition for receiving aid.",
+        "If the total aid of $13.3 billion was distributed evenly across all 16 participating countries, each would have received approximately $831 million.",
+        "Because Milward cited a 111%-of-1938 output figure, the passage implies he believed the Marshall Plan had no effect whatsoever on European recovery.",
+        "Because Austria's aid represented a much higher share of its national income than the UK's, it can be inferred that Austria received a larger absolute dollar amount of aid than the UK."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Since the OEEC was formed to administer aid collectively, it can be inferred that each participating country had equal decision-making weight regardless of its size or need.**\n\nCollective administration does not imply equal votes. Paragraph 3 says remaining shares were divided \"according to need and negotiated allocation formulas,\" which already signals unequal treatment. Equal decision-making weight is an extra leap the text never authorises.\n\n**Trap:** \"Collectively\" describes joint administration, not one-country-one-vote power.\n\nNeed-based negotiated shares contradict equal weight, so the inference fails.",
+        "**B) Because the plan's conditions included trade liberalisation, the passage implies economic cooperation was valued as an end in itself, not merely as a condition for receiving aid.**\n\nParagraph 4 lists tariff cuts and related reforms as requirements recipient governments had to meet to take the aid. That frames cooperation as an attached condition of the aid relationship, not as a free-standing goal divorced from receiving funds. \"End in itself\" overreads the conditions clause.\n\nConditions-for-aid wording does not license an independent \"end in itself\" motive, so the implication fails.",
+        "**C) If the total aid of $13.3 billion was distributed evenly across all 16 participating countries, each would have received approximately $831 million.**\n\nParagraph 2 names sixteen Western European participants; Paragraph 3 gives a total of about $13.3 billion. Splitting that total evenly yields roughly $831 million apiece ($13,300 million ÷ 16). The statement is a correct hypothetical arithmetic check, even though the passage itself describes uneven allocation.\n\n**Tip:** Hypothetical even-split maths can still be true while the actual distribution was unequal.\n\nThe even-split calculation from the given total and sixteen countries is arithmetically sound, so the claim holds as stated.",
+        "**D) Because Milward cited a 111%-of-1938 output figure, the passage implies he believed the Marshall Plan had no effect whatsoever on European recovery.**\n\nMilward uses the 111% figure to argue recovery was already substantially underway before large-scale aid could have driven it—a claim about timing and relative driving force. Paragraph 9's framing of the debate likewise allows \"economically secondary\" significance rather than absolute zero impact. \"No effect whatsoever\" escalates relative-weight criticism into total denial.\n\n**Trap:** \"Already recovering before aid drove it\" is not the same slogan as \"aid did nothing at all.\"\n\nThe 111% citation questions aid as the decisive driver, not every effect, so the zero-effect implication fails.",
+        "**E) Because Austria's aid represented a much higher share of its national income than the UK's, it can be inferred that Austria received a larger absolute dollar amount of aid than the UK.**\n\nA high share of a smaller economy's income need not mean a larger absolute cheque. Paragraph 3 already states the United Kingdom took the largest single share of total aid (~24%). Paragraph 8's 14% versus under 3% is about relative weight of aid in national income, not absolute dollars.\n\n**Trap:** Confusing \"share of national income\" with \"share of the aid pot\" flips Austria above the UK incorrectly.\n\nThe UK's largest absolute share overturns inferring a bigger Austrian dollar total from the higher income percentage."
+      ],
+      "highlights": [
+        "according to need and negotiated allocation formulas",
+        "Recipient governments were required to reduce tariffs and other barriers to intra-European trade, stabilise their currencies",
+        "disbursed a total of approximately $13.3 billion in grants and loans",
+        "suggesting that the region's recovery was substantially underway before the aid could plausibly have driven it",
+        "with the United Kingdom receiving the largest single share at roughly 24% of the total"
+      ]
+    },
+    {
+      "id": "en-t-5-05",
+      "exam_title": "Disguised Cross-Paragraph Synthesis (Paragraph Order)",
+      "kind": "reading",
+      "statements": [
+        "The dollar shortage described in Paragraph 1 helps explain why relieving that shortage is presented in Paragraph 7 as a key argument for the plan's importance.",
+        "Because the plan's conditions fostered cooperation (Paragraph 4) and later integration is credited to this cooperation, it follows that the Marshall Plan alone caused the eventual creation of the European Economic Community.",
+        "The four-year disbursement period described in Paragraph 3 overlaps with the period in which Milward argues output had already reached 111% of its 1938 level.",
+        "Because containment motives are described as not always public (Paragraph 5), the passage implies American officials universally concealed this rationale from all European governments at all times.",
+        "The variation in aid's share of national income across countries (Paragraph 8) is consistent with the passage's earlier point that allocation followed need rather than equal division (Paragraph 3)."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The dollar shortage described in Paragraph 1 helps explain why relieving that shortage is presented in Paragraph 7 as a key argument for the plan's importance.**\n\nParagraph 1 makes the dollar shortage a core reason Europe could not buy rebuilding imports. Paragraph 7's traditional proponents then call Marshall aid critical precisely because it relieved that shortage. Linking the early problem to the later defence of the plan is a fair cross-paragraph reading.\n\nThe shortage-to-relief bridge across Paragraphs 1 and 7 supports the synthesis.",
+        "**B) Because the plan's conditions fostered cooperation (Paragraph 4) and later integration is credited to this cooperation, it follows that the Marshall Plan alone caused the eventual creation of the European Economic Community.**\n\nParagraph 4 credits institutional cooperation with laying \"essential groundwork\" for later integration toward the EEC. Groundwork is a contributing foundation, not sole causation. \"Alone caused\" upgrades a supporting role into exclusive authorship the text never claims.\n\n**Trap:** \"Laid groundwork for X\" is weaker than \"alone caused X.\"\n\nSole-cause wording overstates Paragraph 4's groundwork claim, so the inference fails.",
+        "**C) The four-year disbursement period described in Paragraph 3 overlaps with the period in which Milward argues output had already reached 111% of its 1938 level.**\n\nParagraph 3 starts large-scale disbursement after April 1948 and runs about four years. Paragraph 6 places Milward's 111%-of-1938 output claim at the moment those large-scale disbursements began flowing in 1948. The timelines meet at that 1948 onset.\n\nThe shared 1948 start of large-scale aid correctly links Paragraphs 3 and 6, so the overlap claim holds.",
+        "**D) Because containment motives are described as not always public (Paragraph 5), the passage implies American officials universally concealed this rationale from all European governments at all times.**\n\n\"If not always publicly\" means disclosure was uneven or incomplete, not permanent universal secrecy toward every European government. \"Universally concealed… at all times\" inflates a hedge into absolute concealment.\n\n**Trap:** \"Not always public\" still allows some public or semi-public framing.\n\nThe absolute-concealment gloss overstates Paragraph 5's qualifier, so the implication fails.",
+        "**E) The variation in aid's share of national income across countries (Paragraph 8) is consistent with the passage's earlier point that allocation followed need rather than equal division (Paragraph 3).**\n\nParagraph 3 divides remaining shares by need and negotiated formulas, not equal slices. Paragraph 8's wide gap—Austria up to 14% of national income versus the UK under 3%—illustrates uneven relative weight aligned with differing need. The two paragraphs push the same uneven-allocation logic.\n\nNeed-based allocation plus the Austria/UK income-share gap fit together, so the consistency claim holds."
+      ],
+      "highlights": [
+        "Marshall aid was nonetheless critical in relieving the dollar shortage",
+        "laid essential groundwork for the deeper European economic integration",
+        "by the time large-scale disbursements began flowing in 1948",
+        "if not always publicly",
+        "according to need and negotiated allocation formulas"
+      ]
+    },
+    {
+      "id": "en-t-5-06",
+      "exam_title": "Grammar Rules (New Sentences, Anchored in Text Vocabulary)",
+      "kind": "grammar",
+      "statements": [
+        "\"Had the dollar shortage not been relieved, several governments would have restricted imports of essential goods.\"",
+        "\"The committee recommended that each government submits an annual report on its progress.\"",
+        "\"The number of countries participating in the programme continue to be debated by historians.\"",
+        "\"Neither the aid nor the accompanying conditions were welcomed unanimously by every government.\"",
+        "\"Having stabilised its currency, the government was able to attract renewed investor confidence.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Had the dollar shortage not been relieved, several governments would have restricted imports of essential goods.\"**\n\nThis is a third-conditional counterfactual with inversion: Had + past participle replaces If + had. The main clause keeps would have + past participle (would have restricted), which pairs correctly with that unreal past condition.\n\n**Tip:** Inverted Had… not… still needs would have (not would alone) in the result clause.\n\nThe Had… would have pattern is well formed, so the sentence stands.",
+        "**B) \"The committee recommended that each government submits an annual report on its progress.\"**\n\nAfter recommend that, formal English expects the subjunctive base form: submit, not the present indicative submits. The plural sense of governments does not override that mandative pattern.\n\n**Trap:** Present -s after that can look like ordinary agreement while the subjunctive wants the bare verb.\n\nMandative recommend that needs submit, so the line fails — \"The committee recommended that each government submit an annual report on its progress.\"",
+        "**C) \"The number of countries participating in the programme continue to be debated by historians.\"**\n\nThe number of + plural noun takes a singular verb because number is the grammatical head. Continue should be continues; the plural countries only modify the of-phrase.\n\n**Trap:** Do not let the nearest plural noun steal agreement from the number.\n\nSingular the number needs continues, so this is false — \"The number of countries participating in the programme continues to be debated by historians.\"",
+        "**D) \"Neither the aid nor the accompanying conditions were welcomed unanimously by every government.\"**\n\nWith neither… nor, the verb agrees with the nearer subject. Here conditions is plural, so were is the right match. The earlier singular aid does not control the verb once nor introduces a plural partner.\n\nProximity agreement with plural conditions makes were correct, so the sentence holds.",
+        "**E) \"Having stabilised its currency, the government was able to attract renewed investor confidence.\"**\n\nThe perfect participle Having stabilised attaches to the government, which is the logical agent that stabilised the currency. Subject and -ing meaning align, so there is no dangling modifier.\n\nThe government is the right agent after Having stabilised, so the wording is sound."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-5-07",
+      "exam_title": "Grammar Rules II (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"No sooner had the aid been disbursed than reconstruction efforts visibly accelerated.\"",
+        "\"The allocation, along with several negotiated exceptions, were finalised before the programme began.\"",
+        "\"Each of the participating governments have agreed to the oversight conditions.\"",
+        "\"By the time the programme concluded, most participating economies will have already recovered significantly.\"",
+        "\"The figures, which were compiled across sixteen countries, indicate considerable variation in need.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"No sooner had the aid been disbursed than reconstruction efforts visibly accelerated.\"**\n\nNo sooner… than correctly pairs with past-perfect inversion (had the aid been disbursed) and a simple-past follow-on clause. The correlative is than, not when, which matches the template.\n\nNo sooner had… than… is formed correctly, so the sentence stands.",
+        "**B) \"The allocation, along with several negotiated exceptions, were finalised before the programme began.\"**\n\nAlong with… is parenthetical; the true subject remains singular allocation. The verb must be was finalised, not were. Extra plural nouns after along with do not pluralise the head.\n\n**Trap:** Comma-wrapped along with phrases often trick agreement toward the nearer plural.\n\nSingular allocation needs was, so the line fails — \"The allocation, along with several negotiated exceptions, was finalised before the programme began.\"",
+        "**C) \"Each of the participating governments have agreed to the oversight conditions.\"**\n\nEach of takes a singular verb even when a plural noun follows. Have agreed should be has agreed; governments is only the of-phrase object.\n\nEach of requires has agreed, so this is false — \"Each of the participating governments has agreed to the oversight conditions.\"",
+        "**D) \"By the time the programme concluded, most participating economies will have already recovered significantly.\"**\n\nBy the time the programme concluded fixes a past reference point, so the main event needs past perfect (had already recovered), not future perfect will have. Future perfect looks forward from now, which clashes with a finished programme.\n\n**Trap:** By the time often invites future perfect when the time clause is past, not future.\n\nA past conclusion point needs had already recovered, so the sentence fails — \"By the time the programme concluded, most participating economies had already recovered significantly.\"",
+        "**E) \"The figures, which were compiled across sixteen countries, indicate considerable variation in need.\"**\n\nFigures is treated as plural throughout: were compiled in the relative clause and indicate in the main clause. Plural agreement is consistent and grammatical.\n\nPlural figures with were / indicate matches cleanly, so the wording holds."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-5-08",
+      "exam_title": "Grammar Rules III (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"Despite of the conditions attached, most governments accepted the aid readily.\"",
+        "\"Whoever administers the fund should account for the differing needs of each recipient.\"",
+        "\"The government denied having deliberately delayed its currency stabilisation measures.\"",
+        "\"There is several reasons why historians continue to disagree about the plan's impact.\"",
+        "\"The programme, which was authorised in 1948, aimed to accelerate European recovery.\""
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Despite of the conditions attached, most governments accepted the aid readily.\"**\n\nDespite never takes of. Either drop of (despite the conditions) or switch to in spite of. Despite of is a common blend of the two patterns.\n\n**Trap:** In spite of needs of; despite stands alone before a noun phrase.\n\nDespite of is ungrammatical, so the line fails — \"Despite the conditions attached, most governments accepted the aid readily.\"",
+        "**B) \"Whoever administers the fund should account for the differing needs of each recipient.\"**\n\nWhoever correctly heads the subject clause (whoever administers the fund), and should account is a well-formed modal predicate for that subject. The relative sense of whoever as \"the person who\" fits the advising tone.\n\nWhoever + singular verb + should account is sound, so the sentence stands.",
+        "**C) \"The government denied having deliberately delayed its currency stabilisation measures.\"**\n\nAfter deny, a perfect gerund (having + past participle) reports a prior act as the content of the denial. Having deliberately delayed places the delay before the denying, which is the intended time relation.\n\nDenied having… is the right pattern for a prior act, so the wording holds.",
+        "**D) \"There is several reasons why historians continue to disagree about the plan's impact.\"**\n\nExistential there agrees with the notional subject that follows. Several reasons is plural, so the verb must be are, not is.\n\n**Trap:** There is feels default in speech even when a plural noun is coming.\n\nPlural reasons needs There are, so this is false — \"There are several reasons why historians continue to disagree about the plan's impact.\"",
+        "**E) \"The programme, which was authorised in 1948, aimed to accelerate European recovery.\"**\n\nThe non-restrictive relative which was authorised modifies singular programme, and the main verb aimed agrees with that same singular subject. Relative and main clauses stay aligned.\n\nSingular programme with was / aimed is consistent, so the sentence is sound."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-5-09",
+      "exam_title": "Vocabulary & Collocation in New Context",
+      "kind": "vocabulary",
+      "statements": [
+        "\"The policy was framed explicitly as a tool of containment, aiming to reduce the appeal of rival ideologies.\"",
+        "\"Pent-up demand refers to consumer spending that has already been fully satisfied over a long period.\"",
+        "\"The dollar shortage left governments unable to purchase the imports their reconstruction required.\"",
+        "\"The historians' dispute centres on the relative weight assigned to domestic versus external factors.\"",
+        "\"Containment, in this context, refers to actively expanding the political influence of a rival power.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"The policy was framed explicitly as a tool of containment, aiming to reduce the appeal of rival ideologies.\"**\n\nFramed as a tool of containment to reduce a rival's appeal matches both ordinary political English and the passage's own wording about containment aims. The collocation framed… as a tool of containment is natural and accurate.\n\nThat containment-tool framing uses the word in its established sense, so the sentence stands.",
+        "**B) \"Pent-up demand refers to consumer spending that has already been fully satisfied over a long period.\"**\n\nPent-up demand is demand that has built up and remains unsatisfied, ready to be released when constraints ease. \"Already fully satisfied\" is the opposite of that meaning. The passage's \"pent-up consumer demand following years of wartime rationing\" points to stored-up, not exhausted, spending pressure.\n\n**Trap:** Pent-up can sound like \"a long history of spending\" if you ignore the blocked/unreleased idea.\n\nSatisfied spending is not pent-up demand, so the definition fails.",
+        "**C) \"The dollar shortage left governments unable to purchase the imports their reconstruction required.\"**\n\nDollar shortage here means a lack of US dollars for buying needed imports—the same causal shape Paragraph 1 uses when Europe cannot purchase fuel, machinery, and raw materials. The verb left… unable to purchase fits the established sense.\n\nThat shortage-blocks-imports reading is standard, so the wording holds.",
+        "**D) \"The historians' dispute centres on the relative weight assigned to domestic versus external factors.\"**\n\nRelative weight is a natural collocation for how much importance each factor receives in an explanation. Paragraph 8's own phrase \"The relative weight of the aid\" uses the same idiom for comparative importance.\n\nRelative weight for competing causal factors is correct usage, so the sentence stands.",
+        "**E) \"Containment, in this context, refers to actively expanding the political influence of a rival power.\"**\n\nContainment means checking or limiting a rival's spread of influence, not expanding it. Expanding a rival's reach is roughly the inverse of Cold War containment as the passage frames it.\n\n**Trap:** Containment and expansion can both appear in geopolitics talk, but they pull in opposite directions.\n\nExpanding rival influence is not containment, so the definition fails."
+      ],
+      "highlights": [
+        "framed it explicitly, if not always publicly, as a tool of Cold War containment",
+        "pent-up consumer demand following years of wartime rationing",
+        "a chronic shortage of US dollars left European governments unable to purchase the fuel, machinery, and raw materials needed to rebuild",
+        "The relative weight of the aid also varied considerably by recipient",
+        "as a tool of Cold War containment"
+      ]
+    },
+    {
+      "id": "en-t-5-10",
+      "exam_title": "Vocabulary & Collocation II (New Context)",
+      "kind": "vocabulary",
+      "statements": [
+        "\"The programme's disbursements were conditional on recipient governments meeting certain requirements.\"",
+        "\"A country's aid representing a high share of its national income implies that country needed proportionally more support.\"",
+        "\"Multilateral cooperation refers to a single country acting entirely independently of all others.\"",
+        "\"The recovery was described as already gathering momentum before large-scale aid had fully arrived.\"",
+        "\"Historians who dispute a plan's decisive role are, by definition, claiming the plan had absolutely no effect at all.\""
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"The programme's disbursements were conditional on recipient governments meeting certain requirements.\"**\n\nConditional on correctly means \"depending on\" fulfilment of requirements. Paragraph 2 uses the same structure when Marshall's proposal is conditional on joint European coordination. The collocation matches established usage.\n\nConditional on + requirements is sound, so the sentence stands.",
+        "**B) \"A country's aid representing a high share of its national income implies that country needed proportionally more support.\"**\n\nParagraph 8 links Austria's high aid-to-income share to particularly acute post-war needs, while a larger economy like the UK stays under 3%. Reading a high national-income share as a signal of proportionally greater need follows that framing.\n\nThat income-share reading of relative need fits the passage's contrast, so the claim holds.",
+        "**C) \"Multilateral cooperation refers to a single country acting entirely independently of all others.\"**\n\nMultilateral means involving several parties acting together. A single country acting entirely alone is unilateral independence—the opposite. The passage praises multilateral cooperation precisely as joint, many-sided practice.\n\n**Trap:** Multi- can be misread as \"many options for one actor\" instead of \"many actors.\"\n\nSolo independence is not multilateral cooperation, so the definition fails.",
+        "**D) \"The recovery was described as already gathering momentum before large-scale aid had fully arrived.\"**\n\nParagraph 9's secondary-contribution framing speaks of \"a recovery already gathering its own momentum,\" and Milward's camp places substantial recovery before large-scale 1948 disbursements. Gathering momentum ahead of full aid arrival is faithful wording.\n\nAlready gathering momentum before major aid matches the passage's debate terms, so the sentence stands.",
+        "**E) \"Historians who dispute a plan's decisive role are, by definition, claiming the plan had absolutely no effect at all.\"**\n\nDisputing a decisive role questions degree of importance—whether the plan was the main engine—not every possible effect. Paragraph 9 even allows an \"economically secondary contribution,\" which still grants some role. \"Absolutely no effect\" collapses graded disagreement into total denial.\n\n**Trap:** Decisive versus secondary is about weight, not presence versus absence.\n\nChallenging a decisive role is not the same as claiming zero effect, so the definition fails."
+      ],
+      "highlights": [
+        "conditional on European governments jointly coordinating their own reconstruction efforts",
+        "as much as 14% of national income in some years of the programme, reflecting the country's particularly acute post-war needs",
+        "market-oriented reconstruction and multilateral cooperation",
+        "a recovery already gathering its own momentum",
+        "Whether the Marshall Plan should be understood primarily as the decisive engine of Western European recovery, or as a politically significant but economically secondary contribution"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1145 @@
+{
+  "subsection_id": "v.1",
+  "tasks": [
+    {
+      "id": "en-v-1-01",
+      "case_id": "ENG V.1.01",
+      "title": "Task 1",
+      "subsection": "v.1",
+      "sort_order": 1,
+      "difficulty_level": "1/5",
+      "context": "Five claims about word pairs that careful writers still swap in academic and public-affairs prose. Decide whether each account of meaning or spelling is accurate.",
+      "statements": [
+        "In \"The committee was not adverse to reopening the inquiry\", the adjective is correctly chosen, since \"adverse\" describes a person's reluctance.",
+        "\"Continuous\" is the right choice for repeated interruptions separated by gaps, as in \"The seminar was broken up by continuous questions from the back row\".",
+        "\"Immanent\" is the spelling for something about to happen, so a seismologist warning of a likely aftershock would report that one is \"immanent\".",
+        "\"Discrete\" means separate and individually distinct, so a statistician who counts \"discrete\" categories of rainfall has chosen the correct spelling.",
+        "A driver who openly ignores a speed limit is said to \"flaunt\" the law, since \"flaunt\" means to break a rule with contempt."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In \"The committee was not adverse to reopening the inquiry\", the adjective is correctly chosen, since \"adverse\" describes a person's reluctance.**\n\n\"Averse\" is the adjective for a person's disinclination and it collocates with to, as in averse to reopening a case. \"Adverse\" describes unfavourable circumstances or effects, such as adverse weather, an adverse ruling or an adverse drug reaction. What the committee lacks here is unwillingness rather than hostile conditions, so the slot belongs to the disinclination word.\n\n**Tip:** If \"reluctant\" fits the frame, the word you want is averse.\n\nThe sentence reports an attitude, not a circumstance, so the defence of \"adverse\" collapses — \"The committee was not averse to reopening the inquiry\".",
+        "**B) \"Continuous\" is the right choice for repeated interruptions separated by gaps, as in \"The seminar was broken up by continuous questions from the back row\".**\n\n\"Continuous\" describes something unbroken in space or time, like a continuous line of pylons or the continuous hum of a ventilation system. \"Continual\" describes something that keeps recurring with pauses between the episodes, which is exactly what a series of separate questions amounts to. Each interruption stops before the next begins, so the recurring-event adjective is the one this frame needs.\n\nThe gaps between the questions rule out the unbroken reading, so the recommendation misfires — \"The seminar was broken up by continual questions from the back row\".",
+        "**C) \"Immanent\" is the spelling for something about to happen, so a seismologist warning of a likely aftershock would report that one is \"immanent\".**\n\n\"Imminent\" means about to occur at any moment, which is how forecasters and seismologists describe a hazard already at the door. \"Immanent\" is a philosophical and theological word meaning inherent or indwelling, as in a force immanent in nature, and it carries no reference to timing at all. A warning about an aftershock is a claim about the very near future.\n\n**Trap:** The doubled m looks learned, but only the i-spelling means close in time.\n\nNearness is precisely what the seismologist is asserting, so the spelling recommended here is the wrong twin — the warning is that an aftershock is \"imminent\".",
+        "**D) \"Discrete\" means separate and individually distinct, so a statistician who counts \"discrete\" categories of rainfall has chosen the correct spelling.**\n\n\"Discrete\" means separate, individually countable and non-overlapping, which is why data that fall into distinct bins are called discrete rather than continuous. \"Discreet\" is the social adjective for tact and careful silence, as in a discreet enquiry or a discreet word afterwards. Rainfall bands are exactly the separate, countable classes the first spelling names.\n\n**Tip:** The two e's stand apart in \"discrete\", just like the categories it labels.\n\nThe statistical sense and the spelling on the page line up, so the description is sound.",
+        "**E) A driver who openly ignores a speed limit is said to \"flaunt\" the law, since \"flaunt\" means to break a rule with contempt.**\n\n\"Flout\" means to defy a rule or convention openly, which is why drivers flout speed limits and developers flout planning conditions. \"Flaunt\" means to display something ostentatiously and takes the thing shown off as its object, as in flaunting wealth or flaunting a new title. The driver here is defying a regulation, not parading one, so the defiance verb is required.\n\nRules are flouted rather than flaunted, so the claim has the pair the wrong way round: the driver \"flouts\" the law."
+      ],
+      "highlights": [
+        "adverse",
+        "continuous",
+        "immanent",
+        "discrete",
+        "flaunt"
+      ],
+      "solution_overview": "Each line here turns on a single letter or a single sense, so read for the situation before you read for the spelling: circumstances or attitude for adverse and averse, unbroken or recurring for continuous and continual, nearness in time or inherence for imminent and immanent. Where two forms sound identical, ask which part of speech and which collocation the sentence has already committed to, as with discrete categories and a discreet enquiry. Slotting the other member of the pair into the frame is the quickest way to hear which one the sentence actually wants."
+    },
+    {
+      "id": "en-v-1-02",
+      "case_id": "ENG V.1.02",
+      "title": "Task 2",
+      "subsection": "v.1",
+      "sort_order": 2,
+      "difficulty_level": "1/5",
+      "context": "Each line below describes how a pair of similar-looking words behaves in academic, legal or medical writing. Decide whether the description matches standard usage.",
+      "statements": [
+        "\"Historical\" is reserved for events judged important enough to shape what follows, so the first Moon landing is best called a \"historical\" moment.",
+        "\"Credulous\" describes an account that deserves to be believed, as in \"The witness gave a credulous account of the fire\".",
+        "Attendance that a university requires of every first-year student is \"compulsive\" attendance, because \"compulsive\" is the adjective for an obligation imposed from outside.",
+        "\"Prone\" means lying face down and \"supine\" means lying on the back, so a physiotherapist who asks a patient to move from \"supine\" to \"prone\" is asking for a roll onto the stomach.",
+        "\"Apathy\" is an absence of feeling or interest while \"antipathy\" is active dislike, so voters who cannot be bothered to turn out display \"apathy\" rather than antipathy."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Historical\" is reserved for events judged important enough to shape what follows, so the first Moon landing is best called a \"historical\" moment.**\n\n\"Historic\" marks an event as momentous, one that will be remembered and that alters the course of what comes after. \"Historical\" simply means belonging to history or dealing with the past, as in historical records, historical linguistics or a historical novel. A first landing on another world is being praised for its significance, which is the job of the shorter adjective.\n\n**Tip:** Every event is historical once it is over; only a few are historic.\n\nSignificance rather than mere pastness is the point being made, so the label offered here is the weaker of the two: the landing was a \"historic\" moment.",
+        "**B) \"Credulous\" describes an account that deserves to be believed, as in \"The witness gave a credulous account of the fire\".**\n\n\"Credible\" describes something worth believing, so evidence, testimony and threats can all be credible. \"Credulous\" describes a person who believes too readily, which is why we speak of a credulous audience or a credulous investor rather than a credulous statement. An account under scrutiny in court is being judged for its believability, not accused of gullibility.\n\n**Trap:** Both words descend from credere, to believe, but one looks at the claim and the other at the listener.\n\nThe sentence weighs the testimony rather than the witness's naivety, so the label does not fit — \"The witness gave a credible account of the fire\".",
+        "**C) Attendance that a university requires of every first-year student is \"compulsive\" attendance, because \"compulsive\" is the adjective for an obligation imposed from outside.**\n\n\"Compulsory\" describes something required by a rule or authority, as in compulsory military service, compulsory purchase or a compulsory module. \"Compulsive\" describes behaviour driven by an inner urge that is hard to resist, as in compulsive checking or a compulsive gambler. A university regulation is an external requirement, so the rule-based adjective is the one the sentence needs.\n\nAn institutional demand is not an inner urge, so the description fails: the seminars are \"compulsory\" for first-year students.",
+        "**D) \"Prone\" means lying face down and \"supine\" means lying on the back, so a physiotherapist who asks a patient to move from \"supine\" to \"prone\" is asking for a roll onto the stomach.**\n\n\"Prone\" places the body face down, which is why clinicians speak of proning a patient to improve oxygenation. \"Supine\" places the body on its back, and it has a figurative sense of passive acquiescence as well, as in a supine parliament. Moving from the back to the face-down position is precisely the roll onto the stomach that the sentence describes.\n\n**Tip:** Think of a plank held prone: the face is towards the floor.\n\nBoth terms keep their anatomical directions here, so the instruction is described correctly.",
+        "**E) \"Apathy\" is an absence of feeling or interest while \"antipathy\" is active dislike, so voters who cannot be bothered to turn out display \"apathy\" rather than antipathy.**\n\n\"Apathy\" is the flat absence of engagement, the state of not caring enough to act, which is what non-voting most often reflects. \"Antipathy\" is a settled hostility directed at someone or something, and it usually takes towards or to, as in antipathy towards the whole political class. Staying at home out of indifference is the absence rather than the hostility.\n\nThe described behaviour is disengagement rather than aversion, so the distinction as drawn is exactly right."
+      ],
+      "highlights": [
+        "historical",
+        "credulous",
+        "compulsive",
+        "prone",
+        "apathy"
+      ],
+      "solution_overview": "Three of these items test whether a definition has been attached to the right member of a pair, so name both meanings for yourself before judging the claim: importance against mere pastness, believing against believable, imposed obligation against inner compulsion. The last two ask you to check a definition that is already correct, which is just as common in an exam as a reversal. Ask in every case whether the example given would still make sense with the other word in place."
+    },
+    {
+      "id": "en-v-1-03",
+      "case_id": "ENG V.1.03",
+      "title": "Task 3",
+      "subsection": "v.1",
+      "sort_order": 3,
+      "difficulty_level": "1/5",
+      "context": "Statements about near-homophones that survive into published prose. Judge each on standard meaning rather than on how alike the two words sound.",
+      "statements": [
+        "\"Elicit\" is a verb meaning to draw a response out of someone, so an interviewer can \"elicit\" candid answers, whereas \"illicit\" is an adjective meaning unlawful.",
+        "\"Defuse\" means to make a dangerous situation less tense, so a mediator who calms a standoff between two villages has \"defused\" it, while \"diffuse\" means spread out or thinly scattered.",
+        "\"Ingenuous\" is the adjective for a clever invention, so a self-watering seed tray designed by a school pupil would be described as an \"ingenuous\" solution.",
+        "\"Mitigate\" means to count as evidence against something, so a court would say that repeated absences \"mitigate\" against granting bail.",
+        "A \"hoard\" is a store of hidden valuables and a \"horde\" is a large crowd, so archaeologists who unearth buried Roman coins have found a \"hoard\"."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Elicit\" is a verb meaning to draw a response out of someone, so an interviewer can \"elicit\" candid answers, whereas \"illicit\" is an adjective meaning unlawful.**\n\n\"Elicit\" is transitive and takes a response as its object: researchers elicit answers, symptoms or a reaction from a subject. \"Illicit\" is an adjective describing what the law or a rule forbids, as in illicit trade or an illicit substance. The sentence assigns each form to its own part of speech and to a context that fits it.\n\n**Tip:** If the slot needs a doing word, only the e-spelling can fill it.\n\nVerb and adjective are kept apart exactly as standard usage requires, so this account holds up.",
+        "**B) \"Defuse\" means to make a dangerous situation less tense, so a mediator who calms a standoff between two villages has \"defused\" it, while \"diffuse\" means spread out or thinly scattered.**\n\n\"Defuse\" literally removes the fuse from a device and figuratively takes the danger out of a confrontation, which is what mediation between hostile parties aims at. \"Diffuse\" as a verb means to spread widely and as an adjective means scattered or wordy, as in diffuse light or a diffuse argument. Calming a standoff is the removal of danger, not a spreading out.\n\nDefusing tension is exactly the metaphor the situation calls for, so the contrast drawn here is accurate.",
+        "**C) \"Ingenuous\" is the adjective for a clever invention, so a self-watering seed tray designed by a school pupil would be described as an \"ingenuous\" solution.**\n\n\"Ingenious\" means inventive and cleverly contrived, and it attaches naturally to devices, designs and solutions. \"Ingenuous\" means innocent, open and unguarded, describing people rather than machinery, as in an ingenuous confession. A seed tray praised for its design is being called clever, not artless.\n\n**Trap:** The negative \"disingenuous\", meaning insincere, is formed from the innocence word, not from the cleverness one.\n\nInventiveness is what the example celebrates, so the adjective offered is the wrong relative: it is an \"ingenious\" solution.",
+        "**D) \"Mitigate\" means to count as evidence against something, so a court would say that repeated absences \"mitigate\" against granting bail.**\n\n\"Militate against\" means to be a strong factor working towards preventing something, and it is the verb that fits a court weighing reasons to refuse bail. \"Mitigate\" is transitive without a preposition and means to make something less severe, as in mitigating damage, a sentence or a risk. Nothing in this sentence is being softened; a consideration is telling against a decision.\n\n**Trap:** \"Mitigate against\" is one of the most persistent slips in formal prose precisely because the two verbs sound alike.\n\nThe reasoning is about weight against a decision, so the verb here is the wrong one — repeated absences \"militate\" against granting bail.",
+        "**E) A \"hoard\" is a store of hidden valuables and a \"horde\" is a large crowd, so archaeologists who unearth buried Roman coins have found a \"hoard\".**\n\n\"Hoard\" names a cache that someone has amassed and concealed, which is the standard term for buried coins or metalwork recovered from a field. \"Horde\" names a swarming multitude, originally a nomadic troop, and is used of people or animals rather than objects. Coins in the ground are a store of valuables, so the first noun belongs.\n\n**Tip:** A hoard is hidden; a horde arrives.\n\nThe find is a cache rather than a crowd, so the pairing as stated is correct."
+      ],
+      "highlights": [
+        "elicit",
+        "defused",
+        "ingenuous",
+        "mitigate",
+        "hoard"
+      ],
+      "solution_overview": "Word class settles two of these items before meaning does, since one member of the pair is a verb and the other an adjective or a noun. For the remaining lines, decide which direction the action runs and what the object of the verb has to be: you elicit answers, you defuse tension, and evidence militates against a conclusion. Reading each example aloud with the rival word substituted exposes the mismatch quickly."
+    },
+    {
+      "id": "en-v-1-04",
+      "case_id": "ENG V.1.04",
+      "title": "Task 4",
+      "subsection": "v.1",
+      "sort_order": 4,
+      "difficulty_level": "1/5",
+      "context": "Five short judgements about vocabulary in editorial, clinical and administrative writing. Decide whether each judgement reflects how the word is actually used.",
+      "statements": [
+        "\"Loath\" is an adjective meaning reluctant and \"loathe\" is a verb meaning to detest, so a curator who is \"loath\" to move a fragile manuscript is unwilling rather than disgusted.",
+        "\"Disinterested\" is the precise word for a juror who finds the evidence boring, since it means lacking any interest in the proceedings.",
+        "\"Emend\" is the specialist verb for correcting a text, so an editor who removes a copyist's error from a medieval chronicle has \"emended\" it, while a legislature \"amends\" a bill.",
+        "\"Apprise\" means to inform someone and \"appraise\" means to assess value, so a finance director who tells the board about a supplier's price rise has \"apprised\" them, not appraised them.",
+        "\"Systemic\" describes something that affects an entire system, so a pathologist writing about an infection that has spread through the bloodstream calls it \"systemic\" rather than systematic."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Loath\" is an adjective meaning reluctant and \"loathe\" is a verb meaning to detest, so a curator who is \"loath\" to move a fragile manuscript is unwilling rather than disgusted.**\n\n\"Loath\" is predicative and normally followed by to plus a verb: loath to interfere, loath to commit. \"Loathe\" is a strong transitive verb of disgust and takes a direct object, as in loathing the smell of formalin. The curator's hesitation over a fragile item is reluctance, which is what the adjective conveys.\n\n**Tip:** The final e brings the hatred; without it you have only unwillingness.\n\nReluctance rather than revulsion is what the example describes, so the distinction is drawn correctly.",
+        "**B) \"Disinterested\" is the precise word for a juror who finds the evidence boring, since it means lacking any interest in the proceedings.**\n\n\"Disinterested\" means having no stake in the outcome, which is why we prize a disinterested arbiter, expert or observer. \"Uninterested\" means bored or unengaged, and that is the state the example actually describes. A juror who has stopped paying attention is uninterested, whereas a juror with no financial or personal stake is disinterested and therefore fit to serve.\n\n**Trap:** In legal writing the two senses point in opposite directions: one disqualifies a juror, the other qualifies one.\n\nBoredom belongs to the other adjective, so this definition misses — such a juror is \"uninterested\" in the evidence.",
+        "**C) \"Emend\" is the specialist verb for correcting a text, so an editor who removes a copyist's error from a medieval chronicle has \"emended\" it, while a legislature \"amends\" a bill.**\n\n\"Emend\" belongs to textual scholarship and means to correct errors in a manuscript or edition, which is exactly what removing a scribal slip amounts to. \"Amend\" is the general verb for altering a document, law or plan, and it is the term parliaments use for changes to a bill. The chronicle is being corrected rather than revised in policy terms.\n\n**Tip:** Editors emend; assemblies amend.\n\nEach verb sits in its own professional home here, so the statement is accurate.",
+        "**D) \"Apprise\" means to inform someone and \"appraise\" means to assess value, so a finance director who tells the board about a supplier's price rise has \"apprised\" them, not appraised them.**\n\n\"Apprise\" takes a person as its object and usually adds of: apprise the board of a development, apprise staff of a decision. \"Appraise\" takes a thing and means to evaluate its worth or quality, as in appraising a warehouse or an employee's performance. Passing news of a price rise to a board is informing people, not valuing an asset.\n\n**Trap:** The board could be apprised of an appraisal, which is why the two verbs collide so often in reporting.\n\nTelling is the action described, so the verb chosen in the example is the right one.",
+        "**E) \"Systemic\" describes something that affects an entire system, so a pathologist writing about an infection that has spread through the bloodstream calls it \"systemic\" rather than systematic.**\n\n\"Systemic\" means pertaining to or affecting the whole of a body or structure, as in systemic circulation, systemic risk or systemic bias. \"Systematic\" means methodical, done according to a plan, as in a systematic search of the literature. An infection that has left the original site and reached the whole organism is a matter of extent, not method.\n\nThe pathologist is describing reach rather than procedure, so the word chosen fits the meaning intended."
+      ],
+      "highlights": [
+        "loath",
+        "Disinterested",
+        "emended",
+        "apprised",
+        "systemic"
+      ],
+      "solution_overview": "Two of these pairs separate a verb from an adjective, and two separate a specialist verb from its everyday cousin, so identify the grammatical slot first and the shade of meaning second. Watch for the item that offers a plausible definition for the wrong member of the pair, which is the standard trick with disinterested. Where a technical field owns one word, as medicine owns systemic, let that ownership settle the choice."
+    },
+    {
+      "id": "en-v-1-05",
+      "case_id": "ENG V.1.05",
+      "title": "Task 5",
+      "subsection": "v.1",
+      "sort_order": 5,
+      "difficulty_level": "1/5",
+      "context": "Five accurate-looking claims about confusable pairs in formal British English. Weigh each against ordinary usage before deciding.",
+      "statements": [
+        "\"Waive\" means to give up a claim or requirement, so a tribunal that decides not to enforce a filing deadline has \"waived\" it.",
+        "The idiom for restraint comes from horse riding, so a health board that curbs unnecessary prescribing is \"reining in\" the practice rather than reigning it in.",
+        "\"Home in on\" is the phrase for closing on a target, so a radiologist who narrows attention to a single shadow on a scan \"homes in on\" it, while \"hone\" means to sharpen.",
+        "\"Founder\" means to fail completely or sink, so a treaty that collapses at its final session has \"foundered\", whereas a delegate who struggles on clumsily \"flounders\".",
+        "\"Veracious\" means truthful and \"voracious\" means insatiably hungry, so a diarist praised for accuracy is \"veracious\" while a reader who devours books is \"voracious\"."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Waive\" means to give up a claim or requirement, so a tribunal that decides not to enforce a filing deadline has \"waived\" it.**\n\n\"Waive\" is a transitive verb of relinquishment: you waive a right, a fee, a rule or a period of notice. \"Wave\" belongs to the hand or the sea and cannot take an abstract entitlement as its object. A tribunal choosing not to insist on a deadline is surrendering a requirement it was entitled to enforce.\n\n**Tip:** The related noun is \"waiver\", a document that gives something up.\n\nRelinquishment is exactly what the sentence reports, so the usage described is correct.",
+        "**B) The idiom for restraint comes from horse riding, so a health board that curbs unnecessary prescribing is \"reining in\" the practice rather than reigning it in.**\n\n\"Rein\" is the strap that controls a horse, which gives us rein in, free rein and keep a tight rein on something. \"Reign\" is what a monarch does and never governs an object in this idiom, so reigning in a practice makes no sense. Curbing prescribing is restraint applied to an activity, which is the riding metaphor.\n\n**Trap:** \"Free rein\" is misspelled as \"free reign\" so often that the error now looks respectable.\n\nThe image behind the phrase is the bridle rather than the throne, so the correction offered here is well founded.",
+        "**C) \"Home in on\" is the phrase for closing on a target, so a radiologist who narrows attention to a single shadow on a scan \"homes in on\" it, while \"hone\" means to sharpen.**\n\n\"Home in on\" comes from homing pigeons and guided missiles and describes movement towards a precise point. \"Hone\" means to sharpen a blade or refine a skill, so you hone an argument or hone your technique, but you cannot hone in on a shadow. Narrowing attention to one feature of an image is target-seeking, not sharpening.\n\n**Tip:** If a target is named after the verb, the phrase is home in on.\n\nThe sentence describes converging on a point, so the phrasing recommended is the standard one.",
+        "**D) \"Founder\" means to fail completely or sink, so a treaty that collapses at its final session has \"foundered\", whereas a delegate who struggles on clumsily \"flounders\".**\n\n\"Founder\" is what a ship does when it fills and goes down, and by extension what a plan, project or negotiation does when it fails outright. \"Flounder\" is to thrash about helplessly, like someone stuck in mud, and it implies continuing struggle rather than collapse. A treaty that dies at the last session has gone under rather than floundered on.\n\n**Tip:** Foundering ends the story; floundering merely makes it painful.\n\nTotal failure is the outcome described, so the pairing in this statement is right.",
+        "**E) \"Veracious\" means truthful and \"voracious\" means insatiably hungry, so a diarist praised for accuracy is \"veracious\" while a reader who devours books is \"voracious\".**\n\n\"Veracious\" shares its root with veracity and verify and describes a person or account that tells the truth. \"Voracious\" shares its root with devour and describes an appetite, whether for food or, figuratively, for reading and information. Praise for a diarist's accuracy concerns truthfulness, while a hunger for books concerns appetite.\n\nEach adjective is matched to the quality it actually names, so the contrast stands as written."
+      ],
+      "highlights": [
+        "waived",
+        "reining in",
+        "homes in on",
+        "foundered",
+        "veracious"
+      ],
+      "solution_overview": "Every line here rests on an idiom or a fixed metaphor, so recover the literal picture behind each word: a right given up, a horse restrained, a missile closing on a target, a ship going down. Once the image is clear, the choice between the two spellings usually settles itself. Notice too that several of these pairs are distinguished in speech only by context, which is why the surrounding words carry the weight."
+    },
+    {
+      "id": "en-v-1-06",
+      "case_id": "ENG V.1.06",
+      "title": "Task 6",
+      "subsection": "v.1",
+      "sort_order": 6,
+      "difficulty_level": "1/5",
+      "context": "Claims about pairs whose spellings differ by a letter or two but whose meanings do not overlap at all. Decide whether each account of meaning is correct.",
+      "statements": [
+        "\"Proscribe\" means to forbid, so a statute that bans a pesticide \"proscribes\" it, while a doctor who recommends a treatment \"prescribes\" it.",
+        "\"Censor\" is the verb for formally condemning conduct, so a parliament that passes a motion criticising a minister has \"censored\" that minister.",
+        "\"Prosecute\" belongs to legal proceedings and \"persecute\" to sustained ill-treatment, so a state that hounds a religious minority \"persecutes\" it even when no charges are ever brought.",
+        "\"Biennial\" describes something that happens twice a year, so a conference held each June and December is a \"biennial\" event.",
+        "\"Childlike\" is the disapproving term, so a critic who dismisses a politician's sulking would call the behaviour \"childlike\"."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Proscribe\" means to forbid, so a statute that bans a pesticide \"proscribes\" it, while a doctor who recommends a treatment \"prescribes\" it.**\n\n\"Proscribe\" means to prohibit or outlaw, and it is the verb used of banned substances, banned organisations and outlawed practices. \"Prescribe\" means to lay down as a rule or to order a treatment, so regulations prescribe procedures and clinicians prescribe drugs. A statute banning a chemical is forbidding it, while a doctor issuing a course of treatment is ordering one.\n\n**Tip:** Pro- here works like the pro- of prohibit, not like the pro- of promote.\n\nThe two verbs are matched to prohibition and instruction in the right order, so the account is accurate.",
+        "**B) \"Censor\" is the verb for formally condemning conduct, so a parliament that passes a motion criticising a minister has \"censored\" that minister.**\n\n\"Censure\" is formal condemnation expressed by a body with standing to give it, which is why assemblies pass motions of censure. \"Censor\" means to suppress material judged unacceptable, so a wartime office censors letters and a board censors a film. A parliamentary motion attacks conduct rather than deleting text.\n\n**Trap:** The nouns diverge too: a censure is a rebuke, a censor is an official with scissors.\n\nCondemnation rather than suppression is what a motion delivers, so the sentence uses the wrong verb — the parliament has \"censured\" the minister.",
+        "**C) \"Prosecute\" belongs to legal proceedings and \"persecute\" to sustained ill-treatment, so a state that hounds a religious minority \"persecutes\" it even when no charges are ever brought.**\n\n\"Prosecute\" means to bring criminal proceedings against someone, and it presupposes a court, a charge and a prosecutor. \"Persecute\" means to subject a person or group to persistent hostility because of who they are, and it needs no legal machinery whatsoever. Harassment of a minority without charges is oppression, not litigation.\n\n**Tip:** A state can persecute thousands while prosecuting none, which is exactly the distinction the sentence draws.\n\nThe example turns on sustained mistreatment outside the courts, so the contrast is correctly stated.",
+        "**D) \"Biennial\" describes something that happens twice a year, so a conference held each June and December is a \"biennial\" event.**\n\n\"Biennial\" means occurring every second year, which is also why a biennial plant takes two seasons to complete its life cycle. \"Biannual\" is the word for twice within a single year, though careful writers often replace it with \"twice-yearly\" precisely because readers mistrust it. Two meetings inside one calendar year fall under the twice-yearly sense.\n\n**Trap:** Where ambiguity would matter, spell the interval out rather than relying on either bi- word.\n\nThe frequency described is twice a year, so the label attached is the wrong one: the conference is a \"biannual\" event.",
+        "**E) \"Childlike\" is the disapproving term, so a critic who dismisses a politician's sulking would call the behaviour \"childlike\".**\n\n\"Childish\" is the pejorative member of the pair and marks behaviour as immature, petulant or unworthy of an adult. \"Childlike\" is warm or neutral and picks out the appealing qualities of childhood, such as childlike wonder, trust or delight. Dismissing a sulk is criticism, so the pejorative form is required.\n\n**Tip:** The suffix -ish often sours a word, as in mannish or sheepish.\n\nDisapproval is the whole point of the remark, so the term offered is the affectionate one instead: the critic would call it \"childish\"."
+      ],
+      "highlights": [
+        "proscribes",
+        "censored",
+        "persecutes",
+        "biennial",
+        "childlike"
+      ],
+      "solution_overview": "Prefixes do most of the work in this set: pro- forbidding against pre- recommending, per- hounding against pro- taking to court, bi- twice a year against bi- every second year. Read the prefix, then check the example against it rather than trusting the family resemblance of the two words. The final item is a reminder that a shared root can still carry opposite attitudes, one approving and one dismissive."
+    },
+    {
+      "id": "en-v-1-07",
+      "case_id": "ENG V.1.07",
+      "title": "Task 7",
+      "subsection": "v.1",
+      "sort_order": 7,
+      "difficulty_level": "2/5",
+      "context": "Five statements about vocabulary used in research and reporting. Decide whether each one describes standard meaning and usage.",
+      "statements": [
+        "\"Obsolescent\" means going out of use but not yet gone, so a hospital scanner still in service while its replacement is installed is \"obsolescent\" rather than obsolete.",
+        "\"Enormity\" is the neutral word for great size, so a geographer describing the sheer scale of an ice sheet should write about its \"enormity\".",
+        "\"Fortuitous\" strictly means happening by chance, so a chance alignment of two archive documents is \"fortuitous\" whether or not it turns out to be lucky.",
+        "\"Ambivalent\" describes a sentence that is open to more than one reading, so a clause that two courts have interpreted differently is \"ambivalent\".",
+        "\"Endemic\" means regularly found in a particular place or population, so malaria that persists year after year in a region is \"endemic\", while a sudden surge in cases is an epidemic."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Obsolescent\" means going out of use but not yet gone, so a hospital scanner still in service while its replacement is installed is \"obsolescent\" rather than obsolete.**\n\n\"Obsolescent\" describes a thing in the process of becoming outdated, still functioning but on the way out. \"Obsolete\" describes what has already fallen out of use entirely, like a discontinued format no machine can now read. A scanner still imaging patients during a handover period is at the earlier stage.\n\n**Tip:** The -escent ending marks a process in progress, as in convalescent and luminescent.\n\nThe equipment is on its way out rather than out of use, so the distinction drawn here is exact.",
+        "**B) \"Enormity\" is the neutral word for great size, so a geographer describing the sheer scale of an ice sheet should write about its \"enormity\".**\n\n\"Enormity\" traditionally means monstrous wickedness, as in the enormity of the crimes uncovered by a commission. Sheer size is carried by \"enormousness\", \"immensity\" or \"vast scale\", none of which import a moral verdict. An ice sheet is large rather than wicked, so a careful geographer avoids the moral noun.\n\n**Trap:** The size sense is now common, but in edited academic prose it still reads as a slip.\n\nScale without moral judgement is what the description needs, so the recommendation misfires — the writer wants the \"immensity\" of the ice sheet.",
+        "**C) \"Fortuitous\" strictly means happening by chance, so a chance alignment of two archive documents is \"fortuitous\" whether or not it turns out to be lucky.**\n\n\"Fortuitous\" derives from fortuit-, by chance, and describes accidental occurrence without any claim about benefit. \"Fortunate\" is the word that carries good luck, and it is what most people mean when they reach for the longer adjective. Two documents that happen to align were not planned to, which is chance pure and simple.\n\n**Tip:** A fortuitous meeting can be a disaster; a fortunate one cannot.\n\nThe example insists on accident rather than good luck, so the definition given is faithful to the strict sense.",
+        "**D) \"Ambivalent\" describes a sentence that is open to more than one reading, so a clause that two courts have interpreted differently is \"ambivalent\".**\n\n\"Ambiguous\" describes language that will bear more than one interpretation, which is exactly the complaint against a clause read two ways. \"Ambivalent\" describes a person holding conflicting feelings about something, as in ambivalent about the reform. Texts are ambiguous; minds are ambivalent.\n\n**Trap:** Both begin with ambi-, both, but one doubles the meanings and the other doubles the attitudes.\n\nThe problem lies in the wording rather than in anyone's feelings, so the term is misapplied — such a clause is \"ambiguous\".",
+        "**E) \"Endemic\" means regularly found in a particular place or population, so malaria that persists year after year in a region is \"endemic\", while a sudden surge in cases is an epidemic.**\n\n\"Endemic\" describes a disease that is constantly present at a baseline level in a defined area, which is how epidemiologists speak of malaria in parts of the tropics. \"Epidemic\" describes a sharp rise above that expected level, and \"pandemic\" extends such a rise across continents. Persistent year-round presence is the baseline sense.\n\n**Tip:** Endemic answers where and always; epidemic answers how many and how fast.\n\nSteady local presence is what the example specifies, so the definition matches the term."
+      ],
+      "highlights": [
+        "obsolescent",
+        "enormity",
+        "fortuitous",
+        "ambivalent",
+        "endemic"
+      ],
+      "solution_overview": "Two of these items test a word whose careful sense is narrower than its popular one, so ask what the word meant before loose use widened it: chance rather than luck, moral outrage rather than mere size. Two more test a genuine technical contrast, obsolescent against obsolete and endemic against epidemic, where the difference is a matter of stage or of geography. The remaining line hides a swap between a property of a text and a property of a mind."
+    },
+    {
+      "id": "en-v-1-08",
+      "case_id": "ENG V.1.08",
+      "title": "Task 8",
+      "subsection": "v.1",
+      "sort_order": 8,
+      "difficulty_level": "2/5",
+      "context": "Judgements about words that appear in scientific, legal and journalistic commentary. Decide whether each judgement matches accepted usage.",
+      "statements": [
+        "\"Corroborate\" means to confirm with further evidence, so a second ice core that supports the first team's dating \"corroborates\" it rather than collaborates with it.",
+        "\"Incredulous\" describes a claim too far-fetched to believe, so a report of a river running uphill would be called \"incredulous\".",
+        "\"Judicious\" means showing good judgement, so a curator's careful choice of three paintings for a small room is \"judicious\", while \"judicial\" belongs to courts and judges.",
+        "\"Tortuous\" means full of twists, so a mountain road that doubles back on itself is \"tortuous\", whereas \"torturous\" means causing suffering.",
+        "\"Inflammable\" means easily set alight, so a solvent stored in a laboratory cupboard is \"inflammable\", while \"inflammatory\" describes language that stirs anger."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Corroborate\" means to confirm with further evidence, so a second ice core that supports the first team's dating \"corroborates\" it rather than collaborates with it.**\n\n\"Corroborate\" takes evidence or a claim as its object and means to strengthen it with independent support. \"Collaborate\" means to work together and takes a person or institution after with, so teams collaborate but data cannot. A second core supporting the first is independent confirmation of a finding.\n\n**Tip:** If the object is a fact rather than a colleague, the verb is corroborate.\n\nEvidence supporting evidence is the relation described, so the sentence uses the right verb.",
+        "**B) \"Incredulous\" describes a claim too far-fetched to believe, so a report of a river running uphill would be called \"incredulous\".**\n\n\"Incredible\" describes the claim that cannot be believed, and in careful prose it keeps that literal force rather than meaning merely excellent. \"Incredulous\" describes the hearer who refuses to believe, as in an incredulous audience or an incredulous stare. A report is a claim, not a listener.\n\n**Trap:** Pair them by who is doing what: the story is incredible, the reader is incredulous.\n\nThe adjective has been moved from the audience to the account, so the label fails — such a report would be called \"incredible\".",
+        "**C) \"Judicious\" means showing good judgement, so a curator's careful choice of three paintings for a small room is \"judicious\", while \"judicial\" belongs to courts and judges.**\n\n\"Judicious\" praises the quality of a decision and can describe anyone who chooses wisely, from an editor to a curator. \"Judicial\" is a relational adjective meaning of or by the courts, as in judicial review, judicial appointment or judicial reasoning. Selecting three works for a cramped gallery is a matter of good judgement, not of legal authority.\n\n**Tip:** Judicial has no gradations; nothing is very judicial, but a choice can be highly judicious.\n\nWisdom rather than jurisdiction is at issue, so the description is correct.",
+        "**D) \"Tortuous\" means full of twists, so a mountain road that doubles back on itself is \"tortuous\", whereas \"torturous\" means causing suffering.**\n\n\"Tortuous\" comes from torquere, to twist, and applies to winding roads, rivers and, figuratively, to convoluted arguments or negotiations. \"Torturous\" is built on torture and describes what inflicts pain, physical or mental. A road that doubles back is geometrically twisted, whatever the driver feels about it.\n\n**Tip:** A tortuous explanation is merely complicated; a torturous one hurts.\n\nShape rather than suffering is what the example reports, so the pairing is sound.",
+        "**E) \"Inflammable\" means easily set alight, so a solvent stored in a laboratory cupboard is \"inflammable\", while \"inflammatory\" describes language that stirs anger.**\n\n\"Inflammable\" means capable of catching fire, the in- being intensive rather than negative, which is why safety labels now prefer the unambiguous \"flammable\". \"Inflammatory\" describes speech or writing designed to provoke, and in medicine an inflammatory response in tissue. A solvent is a fire risk, not a rhetorical one.\n\n**Trap:** Reading the in- as a negative here is a genuine safety hazard, not just a usage error.\n\nCombustibility is the property the sentence names, so the account holds."
+      ],
+      "highlights": [
+        "corroborates",
+        "incredulous",
+        "judicious",
+        "tortuous",
+        "inflammable"
+      ],
+      "solution_overview": "Four of these lines are correct as they stand, which means the work lies in confirming a definition rather than hunting for a reversal. Check the object each verb or adjective takes: evidence corroborates a finding, a road twists, a chemical catches fire, a speech stirs anger. The one faulty line moves an adjective from a person to a claim, which is the classic route by which incredulous goes wrong."
+    },
+    {
+      "id": "en-v-1-09",
+      "case_id": "ENG V.1.09",
+      "title": "Task 9",
+      "subsection": "v.1",
+      "sort_order": 9,
+      "difficulty_level": "2/5",
+      "context": "Each line makes a confident claim about a word that is easy to misuse in formal writing. Decide whether the claim is correct.",
+      "statements": [
+        "\"Specious\" simply means fake or forged, so a letter proved not to be by the author whose name it bears is best called a \"specious\" document.",
+        "\"Connote\" is the word for a term's literal reference, so saying that \"canine\" \"connotes\" a dog states its dictionary meaning.",
+        "\"Practicable\" describes a person who is good with their hands, so an engineer who repairs the pump herself is \"practicable\".",
+        "\"Prophecy\" is the verb and \"prophesy\" the noun, so a chronicler \"prophecies\" a famine and records the \"prophesy\" in the margin.",
+        "\"Arbitration\" is the settlement of a dispute by an appointed third party, so a supplier and a retailer who take a contract quarrel to a private tribunal are in \"arbitration\", not arbitrage."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Specious\" simply means fake or forged, so a letter proved not to be by the author whose name it bears is best called a \"specious\" document.**\n\n\"Spurious\" means false, counterfeit or of illegitimate origin, which is precisely what a misattributed letter is. \"Specious\" means superficially convincing yet wrong, and it attaches to arguments and reasoning rather than to objects. A forged document is fake in origin, not merely persuasive on the surface.\n\n**Tip:** A specious argument seduces; a spurious relic deceives.\n\nOrigin rather than plausibility is the issue with a misattributed letter, so the term chosen misses — the document is \"spurious\".",
+        "**B) \"Connote\" is the word for a term's literal reference, so saying that \"canine\" \"connotes\" a dog states its dictionary meaning.**\n\n\"Denote\" names what a word literally refers to, its dictionary reference: canine denotes a dog. \"Connote\" names the associations a word carries beyond that reference, so \"canine\" may connote loyalty, watchfulness or menace depending on context. The example is about the plain reference, not the halo of associations.\n\n**Tip:** Denotation is in the dictionary; connotation is in the culture.\n\nLiteral reference is what the sentence describes, so the verb attached to it is wrong — \"canine\" \"denotes\" a dog.",
+        "**C) \"Practicable\" describes a person who is good with their hands, so an engineer who repairs the pump herself is \"practicable\".**\n\n\"Practicable\" means capable of being carried out, and it describes plans, routes and repairs rather than people: a practicable solution, as soon as practicable. \"Practical\" is the adjective for a person with hands-on ability, and also for what is useful rather than theoretical. An engineer who fixes the pump herself is practical; the fix itself may be practicable.\n\n**Trap:** Only one of the two words can describe a human being, and it is the shorter one.\n\nThe sentence is describing a person, so the adjective offered cannot apply — that engineer is \"practical\".",
+        "**D) \"Prophecy\" is the verb and \"prophesy\" the noun, so a chronicler \"prophecies\" a famine and records the \"prophesy\" in the margin.**\n\n\"Prophecy\", ending in -cy and rhyming with see, is the noun for the prediction itself. \"Prophesy\", ending in -sy and rhyming with sigh, is the verb for making it. The chronicler performs the act and then writes down the thing, so the forms in this sentence have been exchanged.\n\n**Tip:** The verb has the s of \"say\"; the noun has the c of \"claim\".\n\nBoth labels sit on the wrong form here, so the sentence fails — the chronicler \"prophesies\" a famine and records the \"prophecy\".",
+        "**E) \"Arbitration\" is the settlement of a dispute by an appointed third party, so a supplier and a retailer who take a contract quarrel to a private tribunal are in \"arbitration\", not arbitrage.**\n\n\"Arbitration\" is a form of dispute resolution in which the parties accept the decision of an appointed arbitrator instead of going to court. \"Arbitrage\" is the trading practice of profiting from price differences for the same asset in different markets. A contract quarrel heard by a private tribunal is dispute resolution.\n\n**Tip:** Arbitration ends an argument; arbitrage exploits a gap.\n\nThe scenario describes a hearing rather than a trade, so the term used is the right one."
+      ],
+      "highlights": [
+        "specious",
+        "connotes",
+        "practicable",
+        "prophecies",
+        "arbitration"
+      ],
+      "solution_overview": "Four of these definitions have been attached to the wrong member of a pair, so build each contrast for yourself before reading the example: plausible but wrong against outright false, literal reference against emotional association, capable of being done against sensible in practice. One item also tests which spelling is the verb, a distinction that survives only in careful prose. Treat any definition that sounds neatly symmetrical as the one most likely to have been reversed."
+    },
+    {
+      "id": "en-v-1-10",
+      "case_id": "ENG V.1.10",
+      "title": "Task 10",
+      "subsection": "v.1",
+      "sort_order": 10,
+      "difficulty_level": "2/5",
+      "context": "Five statements about medical, scientific and social vocabulary. Decide whether each describes its word correctly.",
+      "statements": [
+        "\"Diagnosis\" identifies what a condition is and \"prognosis\" forecasts how it will develop, so a consultant who predicts recovery within a year is offering a \"prognosis\".",
+        "A \"stimulus\" is anything that provokes a response, while a \"stimulant\" is a substance that raises physiological activity, so a flash of light used in an experiment is a \"stimulus\".",
+        "\"Regimen\" is a prescribed course of treatment or exercise and \"regime\" is a system of government, so a physiotherapist sets out a daily \"regimen\" of stretches.",
+        "\"Sensuous\" appeals to the senses generally and \"sensual\" carries an erotic charge, so a critic praising the rich texture of a landscape painting calls it \"sensuous\".",
+        "\"Urban\" relates to towns and cities while \"urbane\" describes polished, courteous manners, so a diplomat known for smooth conversation is \"urbane\"."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Diagnosis\" identifies what a condition is and \"prognosis\" forecasts how it will develop, so a consultant who predicts recovery within a year is offering a \"prognosis\".**\n\n\"Diagnosis\" answers the question of identification: which disease or disorder accounts for the findings. \"Prognosis\" answers the question of outlook: how the condition is expected to progress, with or without treatment. A prediction of recovery within a year is a statement about the future course of the illness.\n\n**Tip:** The prefixes do the work: dia- through the signs, pro- ahead in time.\n\nNaming and forecasting are kept in their proper roles, so the statement is accurate.",
+        "**B) A \"stimulus\" is anything that provokes a response, while a \"stimulant\" is a substance that raises physiological activity, so a flash of light used in an experiment is a \"stimulus\".**\n\n\"Stimulus\" is the general term in psychology and physiology for whatever triggers a reaction, from a sound to a change in temperature. \"Stimulant\" is narrower and names a substance such as caffeine that increases activity in the nervous system. A flash of light in a laboratory trial is a trigger rather than a drug.\n\n**Tip:** The plural stimuli belongs to the trigger word, which is why lab reports are full of it.\n\nTrigger and substance are correctly separated here, so the description holds.",
+        "**C) \"Regimen\" is a prescribed course of treatment or exercise and \"regime\" is a system of government, so a physiotherapist sets out a daily \"regimen\" of stretches.**\n\n\"Regimen\" comes from the same root as regulate and names an ordered plan for health: a drug regimen, a training regimen, a dietary regimen. \"Regime\" names a governing order, usually with a critical edge, as in a military regime, though it also appears in technical phrases such as a flow regime. A physiotherapist's daily plan belongs to health rather than to politics.\n\n**Tip:** The extra n keeps the word in the clinic.\n\nThe example is a treatment plan, so the term chosen fits it precisely.",
+        "**D) \"Sensuous\" appeals to the senses generally and \"sensual\" carries an erotic charge, so a critic praising the rich texture of a landscape painting calls it \"sensuous\".**\n\n\"Sensuous\" was popularised to describe aesthetic pleasure taken through the senses without any sexual implication, which suits painting, music and prose style. \"Sensual\" points to bodily and especially erotic gratification, which is why it would misdescribe a landscape. Rich texture and colour appeal to the eye, so the aesthetic word is required.\n\n**Tip:** Reviewers reach for sensuous exactly when they wish to avoid the other word's suggestion.\n\nThe praise concerns aesthetic effect rather than appetite, so the choice is well made.",
+        "**E) \"Urban\" relates to towns and cities while \"urbane\" describes polished, courteous manners, so a diplomat known for smooth conversation is \"urbane\".**\n\n\"Urban\" is a classifying adjective: urban planning, urban populations, urban heat islands. \"Urbane\" is an evaluative one describing sophistication and easy politeness, a sense that grew from the idea of city manners. A diplomat praised for conversational polish is being credited with sophistication, not located in a city.\n\n**Tip:** Only one of the pair can be used to compliment a person.\n\nManner rather than geography is what the sentence describes, so the distinction is drawn correctly."
+      ],
+      "highlights": [
+        "prognosis",
+        "stimulus",
+        "regimen",
+        "sensuous",
+        "urbane"
+      ],
+      "solution_overview": "This set rewards attention to what each noun or adjective is a word about: a name for an illness against a forecast of its course, the thing that provokes against the drug that stimulates, a system of government against a course of treatment. Two items also test connotation, where the difference between the members of a pair is one of tone rather than reference. If a definition sounds right, confirm it against the example rather than against the word's sound."
+    },
+    {
+      "id": "en-v-1-11",
+      "case_id": "ENG V.1.11",
+      "title": "Task 11",
+      "subsection": "v.1",
+      "sort_order": 11,
+      "difficulty_level": "2/5",
+      "context": "Five claims about pairs that share a root, a sound or a spelling. Decide whether each one gets the meaning and the word class right.",
+      "statements": [
+        "\"Contagious\" and \"infectious\" are interchangeable in medicine, since both describe any disease caused by a pathogen regardless of how it spreads.",
+        "\"Criterion\" is singular and \"criteria\" plural, so a panel that applies a single test of eligibility is applying one \"criterion\".",
+        "\"Verbal\" is the precise term for something spoken rather than written, so careful legal prose describes an agreement made in conversation as a \"verbal\" agreement.",
+        "\"Instil\" means to introduce an attitude gradually, so a teacher who builds a habit of checking sources over a year has \"instilled\" it, while \"install\" means to put equipment or a person in place.",
+        "A question no longer worth arguing is a \"mute\" point, since \"mute\" means deprived of practical significance."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Contagious\" and \"infectious\" are interchangeable in medicine, since both describe any disease caused by a pathogen regardless of how it spreads.**\n\n\"Contagious\" describes an illness passed on by direct or indirect contact between hosts, which is why measles and scabies are contagious. \"Infectious\" is the wider term for any disease caused by a pathogen, including those carried by mosquitoes or contaminated water and never passed hand to hand. Tetanus is infectious but not contagious, so the two labels cannot be swapped.\n\n**Trap:** Everyday speech treats them as synonyms, but epidemiology keeps the transmission route in view.\n\nRoute of transmission separates the terms, so the claim of interchangeability does not survive contact with the medical sense.",
+        "**B) \"Criterion\" is singular and \"criteria\" plural, so a panel that applies a single test of eligibility is applying one \"criterion\".**\n\n\"Criterion\" keeps its Greek singular, and \"criteria\" is the plural, exactly as phenomenon pairs with phenomena. A panel weighing one standard is therefore applying a criterion, and only a list of standards would be criteria. Treating the plural as a singular, as in \"the main criteria is\", is the usual slip.\n\n**Tip:** If you can say \"this one\", the form you need ends in -on.\n\nThe example involves a single standard, so the number described is right.",
+        "**C) \"Verbal\" is the precise term for something spoken rather than written, so careful legal prose describes an agreement made in conversation as a \"verbal\" agreement.**\n\n\"Oral\" means by mouth and is the precise term for what is spoken, which is why lawyers write of oral evidence, oral submissions and an oral contract. \"Verbal\" strictly means expressed in words, so a written contract is verbal too, and that ambiguity is why careful drafters avoid it. An agreement reached in conversation is spoken rather than merely worded.\n\n**Trap:** In everyday speech verbal has taken over, but in drafting the ambiguity can be costly.\n\nPrecision in legal prose favours the mouth word, so the claim does not hold — such an agreement is an \"oral\" agreement.",
+        "**D) \"Instil\" means to introduce an attitude gradually, so a teacher who builds a habit of checking sources over a year has \"instilled\" it, while \"install\" means to put equipment or a person in place.**\n\n\"Instil\" comes from the idea of adding drop by drop and takes abstract objects: instil confidence, discipline or a habit, usually in someone. \"Install\" is physical or official and takes equipment, software or an office-holder, as in installing a boiler or installing a new dean. A habit formed over a school year is built up gradually rather than fitted.\n\n**Tip:** If the object cannot be unplugged, the verb is instil.\n\nGradual formation of a habit is exactly what the first verb names, so the contrast is accurate.",
+        "**E) A question no longer worth arguing is a \"mute\" point, since \"mute\" means deprived of practical significance.**\n\n\"Moot\" is the adjective for a question that is arguable in theory but of no practical consequence, a sense that comes from the moot courts where students debated hypothetical cases. \"Mute\" means silent or unable to speak and belongs to voices, not to arguments. A question that no longer matters is moot regardless of how loudly anyone discusses it.\n\n**Trap:** The error survives because the two are near-homophones in rapid speech.\n\nPractical irrelevance is the sense required, so the spelling given is wrong — the question is a \"moot\" point."
+      ],
+      "highlights": [
+        "Contagious",
+        "criterion",
+        "verbal",
+        "instilled",
+        "mute"
+      ],
+      "solution_overview": "Two lines here quietly collapse a real distinction, treating two words as interchangeable when the technical or legal sense keeps them apart. Two others test number and form, where a singular has been mistaken for a plural or a verb of gradual instilling for one of physical fitting. Look for the word that a specialist field defines narrowly, and let that narrow definition decide the claim."
+    },
+    {
+      "id": "en-v-1-12",
+      "case_id": "ENG V.1.12",
+      "title": "Task 12",
+      "subsection": "v.1",
+      "sort_order": 12,
+      "difficulty_level": "2/5",
+      "context": "Statements about verbs and adjectives that appear in reporting on courts, conservation and public life. Decide whether each is correct.",
+      "statements": [
+        "\"Phase\" is the verb meaning to disconcert, so a witness unshaken by hostile cross-examination is described as not being \"phased\" by it.",
+        "\"Libel\" is defamation in permanent form and \"slander\" is spoken, so a false accusation printed in a newspaper is \"libel\".",
+        "\"Wreak\" means to cause or inflict, so a storm surge that tears through a coastal marsh has \"wreaked\" havoc on it.",
+        "\"Forgo\" means to do without, so a researcher who gives up a sabbatical to finish an excavation \"forgoes\" it, while \"forego\" means to go before.",
+        "\"Hypercritical\" is the word for someone who condemns in others what they do themselves, so a campaigner who flies weekly while denouncing air travel is being \"hypercritical\"."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Phase\" is the verb meaning to disconcert, so a witness unshaken by hostile cross-examination is described as not being \"phased\" by it.**\n\n\"Faze\" means to disconcert or unsettle and appears almost always in the negative: nothing fazes her, he was not fazed. \"Phase\" as a verb means to carry out in stages, as in phasing in a regulation or phasing out a chemical. A witness who remains composed is undisturbed rather than introduced by instalments.\n\n**Tip:** If you can substitute \"rattled\", the spelling is faze.\n\nComposure under pressure is the point, so the spelling offered is the wrong one — the witness was not \"fazed\" by the questioning.",
+        "**B) \"Libel\" is defamation in permanent form and \"slander\" is spoken, so a false accusation printed in a newspaper is \"libel\".**\n\n\"Libel\" covers defamatory material fixed in a lasting medium, which historically meant print and now includes broadcast and online publication. \"Slander\" covers transient spoken defamation and traditionally required proof of actual loss. A false accusation set in type is fixed and published, which puts it squarely in the first category.\n\n**Tip:** Permanence, not severity, decides which term applies.\n\nThe medium described is print, so the classification given is correct.",
+        "**C) \"Wreak\" means to cause or inflict, so a storm surge that tears through a coastal marsh has \"wreaked\" havoc on it.**\n\n\"Wreak\" is a transitive verb of infliction and survives mainly in wreak havoc, wreak vengeance and wreak destruction, with the past tense wreaked. \"Wreck\" means to destroy or ruin a thing outright and takes the object destroyed, as in wrecking a ship. Havoc is what gets wreaked, not what gets wrecked.\n\n**Trap:** The old past form \"wrought\" belongs to work, not to wreak, though it is often borrowed here.\n\nThe idiom and its object match, so the sentence uses the verb correctly.",
+        "**D) \"Forgo\" means to do without, so a researcher who gives up a sabbatical to finish an excavation \"forgoes\" it, while \"forego\" means to go before.**\n\n\"Forgo\" means to relinquish or abstain from something one could have had: forgo a fee, forgo an opportunity, forgo the right to appeal. \"Forego\" with the e means to precede, and it survives chiefly in the participle \"foregoing\", meaning already mentioned. Giving up a sabbatical is abstention rather than precedence.\n\n**Tip:** Keep the e only when something goes before.\n\nRelinquishment is what the researcher does, so the definition offered is accurate.",
+        "**E) \"Hypercritical\" is the word for someone who condemns in others what they do themselves, so a campaigner who flies weekly while denouncing air travel is being \"hypercritical\".**\n\n\"Hypocritical\" describes the gap between a person's stated principles and their conduct, which is exactly the campaigner's position. \"Hypercritical\" means excessively fault-finding, from hyper- meaning over, and says nothing about the critic's own behaviour. Weekly flights alongside public denunciation of flying expose inconsistency rather than severity.\n\n**Trap:** The two differ by one letter but by a whole moral charge.\n\nInconsistency between word and deed is the accusation, so the adjective supplied is the wrong one — the campaigner is being \"hypocritical\"."
+      ],
+      "highlights": [
+        "phased",
+        "libel",
+        "wreaked",
+        "forgoes",
+        "hypercritical"
+      ],
+      "solution_overview": "Three of these items are correct definitions of verbs that survive almost entirely in fixed phrases, so recover the phrase itself: wreak havoc, forgo a right, be fazed by pressure. The two false lines misassign a word class or a moral charge, which is how phase and hypercritical slip past a careless reader. Where a pair differs by a prefix, ask what that prefix contributes before accepting the definition offered."
+    },
+    {
+      "id": "en-v-1-13",
+      "case_id": "ENG V.1.13",
+      "title": "Task 13",
+      "subsection": "v.1",
+      "sort_order": 13,
+      "difficulty_level": "3/5",
+      "context": "Five judgements about words used in engineering, historical research and field science. Decide whether each judgement is accurate.",
+      "statements": [
+        "\"Obviate\" means to remove a need or difficulty, so a drainage design that makes a pumping station unnecessary \"obviates\" it, while \"obfuscate\" means to make something deliberately unclear.",
+        "\"Adduce\" means to put evidence forward and \"deduce\" means to reach a conclusion from it, so a historian \"adduces\" three letters and then \"deduces\" the date of the meeting.",
+        "\"Interpolate\" is estimating a value between known data points and \"extrapolate\" is projecting beyond them, so a climatologist filling a gap between two measured years \"interpolates\".",
+        "\"Deprecate\" is the accounting verb for the decline in an asset's book value, so a haulage company's lorries \"deprecate\" over five years.",
+        "\"Irruption\" is a sudden invasion or influx, so ecologists describing a surge of crossbills into new woodland call it an \"irruption\", while an \"eruption\" bursts outward."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Obviate\" means to remove a need or difficulty, so a drainage design that makes a pumping station unnecessary \"obviates\" it, while \"obfuscate\" means to make something deliberately unclear.**\n\n\"Obviate\" means to head off a problem or dispense with a requirement, so a design can obviate the need for further work. \"Obfuscate\" means to muddy or darken, usually said of language that hides rather than reveals. A drainage scheme that removes the need for pumping has eliminated a requirement, not clouded one.\n\n**Tip:** Obviate often appears with \"the need for\", which is a useful signal that the requirement disappears.\n\nElimination rather than concealment is what the design achieves, so the definitions are correctly assigned.",
+        "**B) \"Adduce\" means to put evidence forward and \"deduce\" means to reach a conclusion from it, so a historian \"adduces\" three letters and then \"deduces\" the date of the meeting.**\n\n\"Adduce\" is what you do with evidence: you bring it forward in support of a case, which is why the verb takes documents, examples and citations as objects. \"Deduce\" is what you do with reasoning: you derive a conclusion from premises already on the table. Producing the letters comes first, and dating the meeting follows from them.\n\n**Tip:** Ad- brings towards; de- takes away from.\n\nThe two steps are placed in their natural order here, so the account is accurate.",
+        "**C) \"Interpolate\" is estimating a value between known data points and \"extrapolate\" is projecting beyond them, so a climatologist filling a gap between two measured years \"interpolates\".**\n\n\"Interpolate\" works inside the range of observation, inserting an estimate where a measurement is missing. \"Extrapolate\" reaches outside that range, projecting a trend forward or backward beyond the data, which is why it carries far more risk. A missing year that sits between two measured ones lies inside the range.\n\n**Tip:** Inter- goes between; extra- goes beyond.\n\nThe gap being filled lies within the observed span, so the term chosen is the correct one.",
+        "**D) \"Deprecate\" is the accounting verb for the decline in an asset's book value, so a haulage company's lorries \"deprecate\" over five years.**\n\n\"Depreciate\" is the verb for a fall in value, whether of a currency or of equipment written down over its useful life. \"Deprecate\" means to express disapproval of something, and in technical documentation it marks a feature as discouraged and due for removal. Lorries losing value on a balance sheet are being written down, not criticised.\n\n**Trap:** \"Self-deprecating\" belongs to the disapproval word, which is why the pair keeps colliding.\n\nLoss of value is what the example describes, so the verb attached to it is wrong — the lorries \"depreciate\" over five years.",
+        "**E) \"Irruption\" is a sudden invasion or influx, so ecologists describing a surge of crossbills into new woodland call it an \"irruption\", while an \"eruption\" bursts outward.**\n\n\"Irruption\" is movement inward: a sudden entry of animals, people or forces into an area, and it is the standard term for periodic influxes of birds outside their usual range. \"Eruption\" is movement outward, whether of lava, steam or a rash. Birds arriving in unfamiliar woodland are coming in rather than bursting out.\n\n**Tip:** The prefixes ir- and e- mark direction, in and out.\n\nDirection of movement decides the term, so the ecologists' usage is described correctly."
+      ],
+      "highlights": [
+        "obviates",
+        "adduces",
+        "interpolates",
+        "deprecate",
+        "irruption"
+      ],
+      "solution_overview": "Most of these pairs separate two stages of an intellectual operation: putting evidence forward against drawing a conclusion, filling a gap inside a dataset against projecting past its edge, removing a need against clouding an issue. Fix the direction of each operation and the false line becomes visible. One item also tests a pair whose spellings differ by a single letter while their fields, accounting and criticism, do not overlap at all."
+    },
+    {
+      "id": "en-v-1-14",
+      "case_id": "ENG V.1.14",
+      "title": "Task 14",
+      "subsection": "v.1",
+      "sort_order": 14,
+      "difficulty_level": "3/5",
+      "context": "Each statement below tests a rule-based contrast between two similar words from law, public administration and civic life. Decide whether the rule is stated correctly.",
+      "statements": [
+        "\"Venal\" means open to bribery and \"venial\" means pardonable, so an inspector who takes payments to overlook faults is \"venal\" while a clerk's small filing error is \"venial\".",
+        "\"Emoluments\" are the payments and benefits attached to an office, so a company's annual report lists directors' \"emoluments\", whereas an \"emollient\" softens skin or tempers.",
+        "\"Malfeasance\" is wrongdoing that is unlawful in itself and \"misfeasance\" is a lawful act performed improperly, so a council officer who takes a bribe commits \"malfeasance\".",
+        "\"Immunity\" is a formal exemption from liability and \"impunity\" is escaping punishment in practice, so a witness granted a legal exemption from prosecution has \"immunity\".",
+        "\"Sedition\" is incitement against the authority of the state and \"secession\" is the withdrawal of a territory from it, so pamphlets urging soldiers to mutiny were charged as \"sedition\"."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Venal\" means open to bribery and \"venial\" means pardonable, so an inspector who takes payments to overlook faults is \"venal\" while a clerk's small filing error is \"venial\".**\n\n\"Venal\" describes a person or office that can be bought, and it extends to venal practices and a venal administration. \"Venial\" comes from the theology of forgivable sin and describes a minor, excusable fault, as opposed to a grave one. Taking payments to falsify inspections is corruption, while a misfiled form is a trivial slip.\n\n**Tip:** The extra i marks the lighter offence.\n\nSeverity and corruptibility are correctly separated, so the rule as stated is right.",
+        "**B) \"Emoluments\" are the payments and benefits attached to an office, so a company's annual report lists directors' \"emoluments\", whereas an \"emollient\" softens skin or tempers.**\n\n\"Emolument\" is the formal term for the salary, fees and benefits that flow from holding a post, which is why it appears in constitutions and remuneration reports. \"Emollient\" is a soothing substance in pharmacy and, figuratively, a soothing manner or statement, as in an emollient reply to critics. Sums disclosed for directors are payments for office.\n\n**Tip:** One word pays; the other soothes.\n\nThe financial sense fits the annual report exactly, so the contrast is accurate.",
+        "**C) \"Malfeasance\" is wrongdoing that is unlawful in itself and \"misfeasance\" is a lawful act performed improperly, so a council officer who takes a bribe commits \"malfeasance\".**\n\n\"Malfeasance\" names conduct that is illegal from the outset, such as accepting a bribe in public office. \"Misfeasance\" names the improper performance of an act that was lawful to begin with, such as issuing a licence carelessly, and \"nonfeasance\" is the failure to act at all. Bribery falls in the first class because no version of it is lawful.\n\n**Tip:** Mal- bad in itself, mis- badly done, non- not done.\n\nThe example is unlawful in its own right, so the classification given holds.",
+        "**D) \"Immunity\" is a formal exemption from liability and \"impunity\" is escaping punishment in practice, so a witness granted a legal exemption from prosecution has \"immunity\".**\n\n\"Immunity\" is conferred: a state grants diplomatic immunity, a prosecutor grants immunity from prosecution, and the exemption has a legal basis. \"Impunity\" describes the factual absence of consequences, which is why the usual phrase is \"with impunity\" for those who offend and go unpunished. A formal grant to a witness is the conferred exemption.\n\n**Tip:** Immunity is on paper; impunity is in practice.\n\nThe grant described has legal standing, so the term applied to it is correct.",
+        "**E) \"Sedition\" is incitement against the authority of the state and \"secession\" is the withdrawal of a territory from it, so pamphlets urging soldiers to mutiny were charged as \"sedition\".**\n\n\"Sedition\" covers speech or conduct that stirs rebellion against lawful authority without necessarily amounting to treason. \"Secession\" is the formal departure of a region or member from a union, an act of separation rather than incitement. Pamphlets aimed at provoking mutiny among troops are incitement.\n\n**Tip:** Sedition stirs; secession leaves.\n\nThe charge described concerns incitement, so the definitions are correctly matched."
+      ],
+      "highlights": [
+        "venal",
+        "emoluments",
+        "malfeasance",
+        "immunity",
+        "sedition"
+      ],
+      "solution_overview": "This set is built from pairs that share a root but split along a line of severity, formality or scope: corruptibility against pardonable fault, unlawful acts against lawful acts done badly, formal exemption against escape in practice. Say what each word covers and what it excludes before testing it against the example. Every line here defines both members, so a single misplaced boundary is what you are looking for."
+    },
+    {
+      "id": "en-v-1-15",
+      "case_id": "ENG V.1.15",
+      "title": "Task 15",
+      "subsection": "v.1",
+      "sort_order": 15,
+      "difficulty_level": "3/5",
+      "context": "Five definitions offered for words that often appear in policy and science journalism. Decide whether each definition belongs to the word it is attached to.",
+      "statements": [
+        "\"Perspicuous\" describes a person with sharp insight, so a detective who reads a suspect's hesitation correctly is \"perspicuous\".",
+        "\"Temerity\" means shyness in the face of authority, so a student too nervous to question the professor showed \"temerity\".",
+        "\"Meretricious\" means showily attractive but hollow, so a reviewer who calls a novel's style \"meretricious\" is condemning it rather than praising it as meritorious.",
+        "\"Noisome\" is a formal word for loud, so a generator that keeps a whole village awake is \"noisome\".",
+        "\"Fulsome\" simply means generous and abundant, so a tribute described as \"fulsome praise\" is straightforwardly complimentary in careful usage."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Perspicuous\" describes a person with sharp insight, so a detective who reads a suspect's hesitation correctly is \"perspicuous\".**\n\n\"Perspicacious\" describes acute mental penetration in a person: a perspicacious reader, a perspicacious judge of character. \"Perspicuous\" describes clarity in expression, so an argument, a definition or a set of instructions can be perspicuous. A detective's insight is a quality of mind rather than of prose.\n\n**Tip:** Perspicuity belongs to writing; perspicacity belongs to the writer.\n\nInsight is what the example praises, so the adjective offered is the wrong member — that detective is \"perspicacious\".",
+        "**B) \"Temerity\" means shyness in the face of authority, so a student too nervous to question the professor showed \"temerity\".**\n\n\"Temerity\" means reckless boldness or nerve, which is why it turns up in phrases like had the temerity to interrupt. \"Timidity\" is the fear-based quality the sentence actually describes, and the two are near-opposites despite their similar shape. A student who says nothing out of nerves is displaying the second, not the first.\n\n**Trap:** Temerity is closer to audacity than to timidity, whatever the sound suggests.\n\nThe behaviour described is nervous silence, so the noun attached to it is inverted — the student showed \"timidity\".",
+        "**C) \"Meretricious\" means showily attractive but hollow, so a reviewer who calls a novel's style \"meretricious\" is condemning it rather than praising it as meritorious.**\n\n\"Meretricious\" comes from a Latin word for hired flattery and describes surface glitter without substance, as in meretricious ornament or meretricious argument. \"Meritorious\" means deserving of praise and is straightforwardly positive. A reviewer using the first word is calling the style tawdry, however much it resembles the second.\n\n**Trap:** The shared mer- makes the insult look like a compliment, which is precisely why it is misread.\n\nThe word carries its built-in contempt into the review, so the description of the reviewer's verdict is right.",
+        "**D) \"Noisome\" is a formal word for loud, so a generator that keeps a whole village awake is \"noisome\".**\n\n\"Noisome\" has nothing to do with noise: it comes from the same root as annoy and means offensive, especially foul-smelling, as in noisome fumes from a landfill. Loudness is carried by clamorous, deafening or simply noisy. A generator that keeps a village awake is an assault on the ears rather than the nose.\n\n**Trap:** The first syllable is a false friend, and it catches confident readers most often.\n\nSound rather than smell is at issue, so the definition supplied is mistaken — that generator is simply \"noisy\".",
+        "**E) \"Fulsome\" simply means generous and abundant, so a tribute described as \"fulsome praise\" is straightforwardly complimentary in careful usage.**\n\n\"Fulsome\" in careful usage means excessive to the point of insincerity, so fulsome praise is praise that embarrasses rather than honours. The generous sense has revived in speech, but in edited prose the pejorative reading remains live and can invert a writer's intention. A tribute meant warmly is better called generous or wholehearted.\n\n**Trap:** Because both senses are current, the word now says more about the reader than the subject.\n\nThe definition ignores the sense that still dominates in formal writing, so the claim cannot stand — \"fulsome praise\" reads as praise laid on too thick."
+      ],
+      "highlights": [
+        "perspicuous",
+        "temerity",
+        "meretricious",
+        "noisome",
+        "fulsome"
+      ],
+      "solution_overview": "Four of these lines hand a definition to the wrong twin, and the pattern is worth noticing: the harder, rarer word is given the easy everyday meaning. Ask what the rarer member actually contributes, whether that is clear expression, reckless boldness, a bad smell or excessive praise. The one true line resists that pull by keeping a showy word firmly negative."
+    },
+    {
+      "id": "en-v-1-16",
+      "case_id": "ENG V.1.16",
+      "title": "Task 16",
+      "subsection": "v.1",
+      "sort_order": 16,
+      "difficulty_level": "3/5",
+      "context": "Five statements about words used in laboratory, statistical and epidemiological writing. Decide whether each one reflects standard technical usage.",
+      "statements": [
+        "\"Homogeneous\" means uniform in composition, so a metallurgist describing an alloy of even structure calls it \"homogeneous\", while \"homogenous\" belongs to biology and shared descent.",
+        "The \"median\" of a set of measurements is the arithmetic average, so adding all the values and dividing by their number gives the \"median\" river depth.",
+        "\"Incidence\" counts new cases arising in a period and \"prevalence\" counts all existing cases at a moment, so an epidemiologist tracking fresh diagnoses each month is measuring \"incidence\".",
+        "\"Viscous\" describes a thick, slow-flowing liquid, so lava that creeps rather than runs is \"viscous\", while \"vicious\" means savage or spiteful.",
+        "\"Desiccate\" means to scatter and gradually disappear, so heat spreading away from a cooling engine \"desiccates\"."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Homogeneous\" means uniform in composition, so a metallurgist describing an alloy of even structure calls it \"homogeneous\", while \"homogenous\" belongs to biology and shared descent.**\n\n\"Homogeneous\", with the -e- before -ous, means the same throughout, and it is the word for a well-mixed sample or a uniform population. \"Homogenous\" is a biological term for similarity arising from common ancestry, closer in meaning to homologous. An alloy of even composition is uniform rather than related by descent.\n\n**Tip:** The longer spelling belongs to the everyday technical sense, which is the opposite of what most people guess.\n\nUniformity of composition is what the metallurgist means, so the account is correct.",
+        "**B) The \"median\" of a set of measurements is the arithmetic average, so adding all the values and dividing by their number gives the \"median\" river depth.**\n\nThe \"mean\" is the arithmetic average obtained by summing values and dividing by their count. The \"median\" is the middle value once the measurements are ranked, which is why it resists distortion by a few extreme readings. Summing and dividing is the definition of the first, not the second.\n\n**Tip:** A single very deep channel pulls the mean down the page but barely moves the median.\n\nThe calculation described produces the average, so the label is misapplied — that figure is the \"mean\" river depth.",
+        "**C) \"Incidence\" counts new cases arising in a period and \"prevalence\" counts all existing cases at a moment, so an epidemiologist tracking fresh diagnoses each month is measuring \"incidence\".**\n\n\"Incidence\" is a rate of onset: how many new cases appear in a defined population over a defined time. \"Prevalence\" is a snapshot: how many people have the condition at a given point, including those diagnosed years earlier. Counting fresh diagnoses month by month is a measure of onset.\n\n**Tip:** A long-lasting illness can have low incidence and high prevalence at the same time.\n\nNew cases over time are what the example counts, so the term used is the right one.",
+        "**D) \"Viscous\" describes a thick, slow-flowing liquid, so lava that creeps rather than runs is \"viscous\", while \"vicious\" means savage or spiteful.**\n\n\"Viscous\" is a physical property term: high viscosity means strong internal resistance to flow, as in tar, honey or silica-rich lava. \"Vicious\" describes cruelty or ferocity and belongs to behaviour, not to fluids. Lava that advances slowly is resisting flow.\n\n**Tip:** The noun viscosity keeps the physical word anchored to measurement.\n\nFlow behaviour is what the example describes, so the adjective fits.",
+        "**E) \"Desiccate\" means to scatter and gradually disappear, so heat spreading away from a cooling engine \"desiccates\".**\n\n\"Desiccate\" means to dry out thoroughly, which is why we speak of desiccated coconut and of soils desiccated by drought. \"Dissipate\" means to disperse and fade away, and it is the standard verb for energy, heat or a crowd. Heat leaving an engine is being dispersed rather than dried.\n\n**Tip:** Desiccation removes water; dissipation removes concentration.\n\nThe process described is dispersal of energy, so the verb chosen is wrong — the heat \"dissipates\"."
+      ],
+      "highlights": [
+        "homogeneous",
+        "median",
+        "incidence",
+        "viscous",
+        "desiccates"
+      ],
+      "solution_overview": "Technical fields define several of these words far more tightly than everyday speech does, so let the discipline decide: statistics owns the difference between mean and median, epidemiology owns incidence against prevalence, and materials science owns viscosity. Two items also test a pair of near-twins whose difference is one letter but whose subjects are matter and biology. When a definition is offered, check it against how the specialists actually count or measure."
+    },
+    {
+      "id": "en-v-1-17",
+      "case_id": "ENG V.1.17",
+      "title": "Task 17",
+      "subsection": "v.1",
+      "sort_order": 17,
+      "difficulty_level": "3/5",
+      "context": "Statements about precise word choice in scientific, environmental and museum writing. Decide whether each is correct.",
+      "statements": [
+        "\"Salutary\" means producing a beneficial, often corrective effect, so a near-miss that forces a laboratory to rewrite its safety protocol is a \"salutary\" lesson.",
+        "\"Restive\" means calm and rested, so a crowd waiting quietly outside the courtroom is \"restive\".",
+        "\"Equable\" is the adjective for a fair division, so a settlement that splits water rights justly between two provinces is \"equable\".",
+        "\"Seasonable\" means occurring at regular times of year, so bird migration that happens every autumn is \"seasonable\" movement.",
+        "\"Provenance\" is the record of where an object has come from, so a museum tracing a vase through three earlier collections is establishing its \"provenance\", not its providence."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Salutary\" means producing a beneficial, often corrective effect, so a near-miss that forces a laboratory to rewrite its safety protocol is a \"salutary\" lesson.**\n\n\"Salutary\" shares a root with salus, health, and describes something unpleasant that nevertheless does good, which is why the standard collocations are a salutary lesson, warning or reminder. \"Salutatory\" is the rare adjective meaning of or relating to a greeting. An accident that improves practice is corrective and beneficial.\n\n**Tip:** The salutary experience is rarely enjoyable; that tension is built into the word.\n\nCorrection with benefit is exactly what the example reports, so the usage is right.",
+        "**B) \"Restive\" means calm and rested, so a crowd waiting quietly outside the courtroom is \"restive\".**\n\n\"Restive\" means restless and hard to control, originally said of a horse that refuses to move as directed and now of impatient crowds and troops. \"Restful\" is the word for what produces calm, and \"rested\" for a person who has recovered. A quiet, patient crowd is the opposite of what the first adjective describes.\n\n**Trap:** The rest- opening promises repose and delivers agitation.\n\nThe scene described is one of calm, so the adjective does not fit — such a crowd is anything but \"restive\".",
+        "**C) \"Equable\" is the adjective for a fair division, so a settlement that splits water rights justly between two provinces is \"equable\".**\n\n\"Equitable\" means fair and impartial, and it is the word for a just allocation of rights, costs or remedies. \"Equable\" means free from wide variation, describing an even temperament or a mild, steady climate. A settlement judged fair is being praised for justice rather than for evenness of range.\n\n**Tip:** An equable climate has a narrow spread; an equitable rule has an even hand.\n\nFairness is the quality at stake, so the label is misapplied — the settlement is \"equitable\".",
+        "**D) \"Seasonable\" means occurring at regular times of year, so bird migration that happens every autumn is \"seasonable\" movement.**\n\n\"Seasonal\" is the classifying adjective for what recurs with the seasons: seasonal migration, seasonal flooding, seasonal work. \"Seasonable\" means suitable to the season or timely, as in seasonable weather for March or a seasonable warning before the frosts. Annual migration is a recurring pattern rather than a judgement of fitness.\n\n**Tip:** The -able ending here means \"fitting\", as it does in reasonable.\n\nRecurrence is the point being made, so the term chosen is the wrong one — that movement is \"seasonal\".",
+        "**E) \"Provenance\" is the record of where an object has come from, so a museum tracing a vase through three earlier collections is establishing its \"provenance\", not its providence.**\n\n\"Provenance\" is the documented history of ownership and origin, and it is what curators and auction houses assemble to authenticate a work. \"Providence\" means foresight or divine care, and with a capital letter it names God. Tracing a vase through successive owners is a matter of documentary history.\n\n**Tip:** Provenance answers where from; providence answers who is looking after us.\n\nThe museum is building an ownership history, so the term used is the correct one."
+      ],
+      "highlights": [
+        "salutary",
+        "restive",
+        "equable",
+        "seasonable",
+        "provenance"
+      ],
+      "solution_overview": "Three of these lines swap a rare adjective for its commoner relative, and in each case the rare word has a narrower job: a lesson that corrects, a temperament that stays even, a moment that is well timed. Ask whether the example describes fairness, timing, calm or benefit, and match that to the word that actually names it. The pair at the end differs by two letters and by the whole distance between an object's history and divine foresight."
+    },
+    {
+      "id": "en-v-1-18",
+      "case_id": "ENG V.1.18",
+      "title": "Task 18",
+      "subsection": "v.1",
+      "sort_order": 18,
+      "difficulty_level": "3/5",
+      "context": "Five claims about words that shift sense with a single suffix. Decide whether each claim is correct.",
+      "statements": [
+        "\"Transitory\" means short-lived and \"transitional\" means belonging to a passage between states, so a fever that fades within a day is \"transitory\" while an interim government is transitional.",
+        "\"Momentous\" means of great importance and \"momentary\" means lasting an instant, so the signing of a peace accord is described as \"momentous\".",
+        "\"Observance\" is the keeping of a rule or rite and \"observation\" is watching or a remark, so a community's keeping of a fast day is its \"observance\" of that day.",
+        "\"Continuation\" is the resumed or extended part of something, so the second half of an excavation report is a \"continuation\" of the first.",
+        "In careful usage \"precipitous\" describes a hasty action and \"precipitate\" describes a steep slope, so the cliff above the sampling site is \"precipitate\"."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Transitory\" means short-lived and \"transitional\" means belonging to a passage between states, so a fever that fades within a day is \"transitory\" while an interim government is transitional.**\n\n\"Transitory\" is about duration: it marks something as brief and passing, like a transitory symptom or a transitory advantage. \"Transitional\" is about position between two conditions, which is why we speak of transitional arrangements, transitional fossils and transitional governments. A fever gone in a day is brief; a caretaker administration bridges two settled states.\n\n**Tip:** Ask whether the point is how long it lasts or what it lies between.\n\nDuration and position are correctly separated here, so the claim holds.",
+        "**B) \"Momentous\" means of great importance and \"momentary\" means lasting an instant, so the signing of a peace accord is described as \"momentous\".**\n\n\"Momentous\" draws on the sense of moment as weight or consequence, preserved in the phrase of great moment. \"Momentary\" draws on the sense of moment as an instant, as in a momentary lapse of attention. A peace accord matters far beyond the seconds it takes to sign.\n\n**Tip:** One word weighs the event; the other times it.\n\nImportance rather than brevity is what the example claims, so the definition given is accurate.",
+        "**C) \"Observance\" is the keeping of a rule or rite and \"observation\" is watching or a remark, so a community's keeping of a fast day is its \"observance\" of that day.**\n\n\"Observance\" belongs to compliance and ritual: the observance of a treaty, of a holiday, of a period of silence. \"Observation\" belongs to perception and comment: astronomical observation, a shrewd observation about the data. Keeping a fast is compliance with a religious rule rather than an act of watching.\n\n**Tip:** You observe a rule and you observe a comet, but only one of those is an observance.\n\nRitual compliance is what the example names, so the distinction stands.",
+        "**D) \"Continuation\" is the resumed or extended part of something, so the second half of an excavation report is a \"continuation\" of the first.**\n\n\"Continuation\" names the part that carries something further, which is why a serial instalment or a resumed session is a continuation. \"Continuance\" is more abstract, meaning the fact of persisting, and in some legal systems it names a postponement of proceedings. A second half that carries the report forward is the extending part.\n\n**Tip:** Continuance is a state; a continuation is a piece.\n\nThe example points to an added section, so the noun chosen is the right one.",
+        "**E) In careful usage \"precipitous\" describes a hasty action and \"precipitate\" describes a steep slope, so the cliff above the sampling site is \"precipitate\".**\n\n\"Precipitous\" means dangerously steep and belongs to cliffs, gorges and, by extension, sharp falls in a graph. \"Precipitate\" as an adjective means rushed and ill-considered, as in a precipitate withdrawal or a precipitate decision. The two definitions in this sentence have been exchanged, and the cliff has ended up with the word for haste.\n\n**Trap:** Steep declines in a chart tempt writers towards precipitous even when the point is recklessness.\n\nPhysical steepness is what a cliff has, so the sentence fails as written — the cliff above the sampling site is \"precipitous\"."
+      ],
+      "highlights": [
+        "transitory",
+        "momentous",
+        "observance",
+        "continuation",
+        "precipitate"
+      ],
+      "solution_overview": "Suffixes carry the meaning in this set, so read them deliberately: -ory and -ous mark different relations, and -ance and -ation often split an act from its result. Four of the lines pair a short-lived thing with an in-between thing, or an act of keeping with an act of watching, and the definitions there hold up. The last line inverts a pair whose two members describe haste and steepness, which is the oldest confusion in the group."
+    },
+    {
+      "id": "en-v-1-19",
+      "case_id": "ENG V.1.19",
+      "title": "Task 19",
+      "subsection": "v.1",
+      "sort_order": 19,
+      "difficulty_level": "4/5",
+      "context": "Five careful claims about pairs that trip up experienced writers in legal, scientific and commercial prose. Weigh each against normal usage before deciding.",
+      "statements": [
+        "\"Abrogate\" means to repeal or abolish formally and \"arrogate\" means to claim a right without justification, so a parliament that scraps an obsolete statute \"abrogates\" it.",
+        "\"Derogate from\" means to detract from or partially set aside, so a clause that weakens a treaty obligation \"derogates\" from it, while \"denigrate\" means to attack a reputation.",
+        "\"Refute\" means to disprove with evidence and \"repudiate\" means to reject or disown, so a scientist who publishes data overturning a hypothesis has \"refuted\" it.",
+        "A retailer with valuable property but no cash to pay this week's invoices is \"illiquid\" rather than \"insolvent\", since insolvency means liabilities exceed assets.",
+        "\"Peremptory\" means allowing no refusal or discussion and \"pre-emptive\" means acting first to forestall something, so a judge's flat order to clear the court is \"peremptory\"."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Abrogate\" means to repeal or abolish formally and \"arrogate\" means to claim a right without justification, so a parliament that scraps an obsolete statute \"abrogates\" it.**\n\n\"Abrogate\" is an act of lawful authority: a legislature abrogates a statute, a state abrogates a treaty obligation. \"Arrogate\" is an act of usurpation and usually appears reflexively, as in a minister who arrogates to himself powers the law never gave. Scrapping a statute by proper process is the first, not the second.\n\n**Tip:** Arrogate keeps company with arrogance, and both involve taking what is not yours.\n\nLawful repeal is what the example describes, so the verb assigned to it is correct.",
+        "**B) \"Derogate from\" means to detract from or partially set aside, so a clause that weakens a treaty obligation \"derogates\" from it, while \"denigrate\" means to attack a reputation.**\n\n\"Derogate\" is followed by from and describes a partial reduction of a right, rule or standard, which is why human rights instruments contain derogation clauses. \"Denigrate\" is transitive and means to blacken someone's name, from the Latin for making black. A clause that cuts back an obligation reduces its force rather than insulting anyone.\n\n**Tip:** If the object is a person's standing, the verb is denigrate.\n\nThe example concerns the weakening of a legal duty, so the description holds.",
+        "**C) \"Refute\" means to disprove with evidence and \"repudiate\" means to reject or disown, so a scientist who publishes data overturning a hypothesis has \"refuted\" it.**\n\n\"Refute\" requires demonstration: you refute a claim by showing it false, which is why simply denying an allegation does not refute it. \"Repudiate\" is an act of rejection or disavowal, as when a government repudiates a debt or an author repudiates an early work. Publishing data that overturns a hypothesis is demonstration in the strict sense.\n\n**Trap:** Journalism often uses refute for mere denial, which drains the word of its evidential force.\n\nEvidence rather than disavowal is what the example supplies, so the term is correctly applied.",
+        "**D) A retailer with valuable property but no cash to pay this week's invoices is \"illiquid\" rather than \"insolvent\", since insolvency means liabilities exceed assets.**\n\n\"Illiquid\" describes an inability to convert assets into cash quickly enough to meet obligations as they fall due. \"Insolvent\" describes a balance sheet in which what is owed outweighs what is owned, a deeper condition that liquidity alone cannot cure. A retailer sitting on saleable property has assets but cannot realise them in time.\n\n**Tip:** Illiquidity is a timing problem; insolvency is an arithmetic one.\n\nThe shortfall described is one of timing rather than of net worth, so the distinction drawn is accurate.",
+        "**E) \"Peremptory\" means allowing no refusal or discussion and \"pre-emptive\" means acting first to forestall something, so a judge's flat order to clear the court is \"peremptory\".**\n\n\"Peremptory\" describes a command that admits no argument, and it survives in peremptory challenge and peremptory norm as well as in ordinary description of manner. \"Pre-emptive\" describes action taken in advance to prevent an anticipated move, as in a pre-emptive strike or a pre-emptive bid. An order that ends discussion on the spot is the first.\n\n**Tip:** Pre-emption looks forward; peremptoriness closes down.\n\nFinality rather than anticipation is what the order conveys, so the definition given is right."
+      ],
+      "highlights": [
+        "abrogates",
+        "derogates",
+        "refuted",
+        "illiquid",
+        "peremptory"
+      ],
+      "solution_overview": "These pairs share prefixes or roots but differ in who acts and with what authority: repealing against seizing, detracting against defaming, disproving against disowning. Ask each time what the subject is entitled to do and what the object of the verb has to be. Two of the items also depend on a technical contrast where the everyday synonym would blur a real distinction, so keep the specialist sense in view."
+    },
+    {
+      "id": "en-v-1-20",
+      "case_id": "ENG V.1.20",
+      "title": "Task 20",
+      "subsection": "v.1",
+      "sort_order": 20,
+      "difficulty_level": "4/5",
+      "context": "Five statements that press on word class as much as on meaning. Decide whether each one describes English accurately.",
+      "statements": [
+        "\"Presumptuous\" is the adjective for something taken as true until it is disproved, so the person next in line to a throne is the heir \"presumptuous\".",
+        "\"Exceptionable\" means open to objection, so a passage that reviewers find offensive is \"exceptionable\", while \"exceptional\" means unusually good or rare.",
+        "\"Exponent\" and \"proponent\" are identical in meaning, so a pianist called a great \"exponent\" of Chopin is being described as an advocate of Chopin's cause.",
+        "\"Apposite\" means facing or contrary, so a quotation that contradicts the author's own argument is an \"apposite\" one.",
+        "\"Inapt\" means lacking practical skill and \"inept\" means unsuitable to the occasion, so a surgeon whose technique is clumsy is \"inapt\" and a badly chosen metaphor is \"inept\"."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Presumptuous\" is the adjective for something taken as true until it is disproved, so the person next in line to a throne is the heir \"presumptuous\".**\n\n\"Presumptive\" means based on a presumption that stands until rebutted, which is why we have an heir presumptive and a presumptive diagnosis. \"Presumptuous\" is a criticism of manner, describing someone who oversteps, as in a presumptuous request. A successor whose claim can be displaced by a later birth is covered by the first.\n\n**Tip:** The insult carries the extra syllable.\n\nA legal presumption rather than bad manners is at issue, so the phrase given is wrong — that person is the heir \"presumptive\".",
+        "**B) \"Exceptionable\" means open to objection, so a passage that reviewers find offensive is \"exceptionable\", while \"exceptional\" means unusually good or rare.**\n\n\"Exceptionable\" is built on the phrase to take exception and marks something as objectionable. \"Exceptional\" is built on exception in the sense of rarity and normally carries praise, as in exceptional results. A passage that provokes complaint is inviting objection, not admiration.\n\n**Tip:** Unexceptionable praise is faint praise: it means merely that nobody can object.\n\nThe reaction described is objection, so the adjective used matches the sense.",
+        "**C) \"Exponent\" and \"proponent\" are identical in meaning, so a pianist called a great \"exponent\" of Chopin is being described as an advocate of Chopin's cause.**\n\n\"Exponent\" names someone who performs, expounds or exemplifies something, which is why a musician is an exponent of a composer and a linguist an exponent of a theory. \"Proponent\" names someone who argues for a proposal or policy. Playing Chopin superbly displays the music rather than campaigning for it.\n\n**Tip:** Proponents propose; exponents demonstrate.\n\nThe pianist embodies the repertoire rather than advocating it, so the claimed synonymy does not hold.",
+        "**D) \"Apposite\" means facing or contrary, so a quotation that contradicts the author's own argument is an \"apposite\" one.**\n\n\"Apposite\" means strikingly appropriate to the point being made, and it is the word for a quotation that fits the argument exactly. \"Opposite\" is the word for what faces or contradicts, and the two are unrelated in sense despite the near-rhyme. A quotation that undercuts the writer's case is not apt but contrary.\n\n**Tip:** Apposite belongs with apt and apposition, all built on placing things together.\n\nAptness rather than contradiction is what the word names, so the definition offered is inverted.",
+        "**E) \"Inapt\" means lacking practical skill and \"inept\" means unsuitable to the occasion, so a surgeon whose technique is clumsy is \"inapt\" and a badly chosen metaphor is \"inept\".**\n\n\"Inept\" describes clumsiness and incompetence, especially in a person: an inept performance, an inept attempt at repair. \"Inapt\" describes unsuitability, and it attaches to comparisons, phrases and analogies that do not fit their subject. The sentence has given each word the other's territory.\n\n**Tip:** Inept is about ability; inapt is about fit.\n\nSkill and suitability have been swapped here, so the statement fails — the clumsy surgeon is \"inept\" and the ill-chosen metaphor is \"inapt\"."
+      ],
+      "highlights": [
+        "presumptuous",
+        "exceptionable",
+        "exponent",
+        "apposite",
+        "inapt"
+      ],
+      "solution_overview": "Four of these lines fail because a definition has been handed to the wrong form, and the give-away is usually the suffix: -uous against -uptuous, -able against -al, -pt against -ept. Work out which member of each pair can describe a person and which can describe a thing, then test the example against that. The single true line rewards knowing a word whose careful sense is far narrower than its familiar cousin's."
+    },
+    {
+      "id": "en-v-1-21",
+      "case_id": "ENG V.1.21",
+      "title": "Task 21",
+      "subsection": "v.1",
+      "sort_order": 21,
+      "difficulty_level": "4/5",
+      "context": "Five statements about vocabulary in courtroom reporting, conservation work and clinical care. Decide whether each one matches standard usage.",
+      "statements": [
+        "\"Prevaricate\" means to speak evasively and \"procrastinate\" means to put off acting, so a witness who dodges the question rather than delaying an answer is \"prevaricating\".",
+        "\"Dissemble\" means to take something apart, so a conservator who separates a longcase clock into its components has \"dissembled\" it.",
+        "\"Palliate\" means to ease symptoms without curing the disease, so care that relieves pain in an incurable illness is \"palliative\" rather than curative.",
+        "\"Querulous\" means eager to pick fights, so a delegate who argues with every speaker is \"querulous\".",
+        "\"Obdurate\" means stubbornly unyielding and \"obtuse\" means slow to grasp a point, so a minister who refuses every amendment without discussion is \"obdurate\"."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Prevaricate\" means to speak evasively and \"procrastinate\" means to put off acting, so a witness who dodges the question rather than delaying an answer is \"prevaricating\".**\n\n\"Prevaricate\" concerns speech: it means to avoid a direct answer, to equivocate, and it is what an evasive witness does under cross-examination. \"Procrastinate\" concerns action: it means to postpone what should be done now, as in procrastinating over a report. Dodging a question is evasion in the moment rather than postponement.\n\n**Tip:** Prevarication happens while you are talking; procrastination happens while you are not working.\n\nEvasive speech is precisely what the example describes, so the verb chosen is right.",
+        "**B) \"Dissemble\" means to take something apart, so a conservator who separates a longcase clock into its components has \"dissembled\" it.**\n\n\"Disassemble\" means to take a device to pieces, which is the conservator's operation. \"Dissemble\" means to conceal one's true feelings or intentions behind a false appearance, as in a witness who dissembles under questioning. Only the longer form has anything to do with mechanisms.\n\n**Tip:** Dissembling hides a self; disassembling exposes a machine.\n\nThe action described is mechanical, so the verb supplied is the wrong one — the conservator has \"disassembled\" the clock.",
+        "**C) \"Palliate\" means to ease symptoms without curing the disease, so care that relieves pain in an incurable illness is \"palliative\" rather than curative.**\n\n\"Palliate\" comes from the idea of cloaking, and in medicine it means to relieve suffering while leaving the underlying condition untouched. \"Placate\" means to soothe a person's anger, and it takes a human object, as in placating an angry deputation. Relief of pain where cure is impossible is the medical sense exactly.\n\n**Tip:** Palliative measures target the symptom; curative ones target the cause.\n\nThe care described eases without curing, so the term fits the treatment.",
+        "**D) \"Querulous\" means eager to pick fights, so a delegate who argues with every speaker is \"querulous\".**\n\n\"Querulous\" means habitually complaining in a peevish, whining way, and it is used of tone as much as of content. \"Quarrelsome\" is the word for someone who seeks out disputes, which is the delegate's behaviour here. Complaint and combat are different vices, whatever the shared qu- suggests.\n\n**Trap:** The resemblance to quarrel is misleading; the root is Latin queri, to complain.\n\nThe example describes a taste for argument, so the adjective given misses — that delegate is \"quarrelsome\".",
+        "**E) \"Obdurate\" means stubbornly unyielding and \"obtuse\" means slow to grasp a point, so a minister who refuses every amendment without discussion is \"obdurate\".**\n\n\"Obdurate\" comes from hardening and describes a will that will not be moved, often in the face of appeals. \"Obtuse\" describes dullness of understanding, and in geometry an angle greater than ninety degrees. A minister who rejects amendments as a matter of policy is unyielding rather than uncomprehending.\n\n**Tip:** Obduracy is about the will; obtuseness is about the wits.\n\nImmovability rather than dullness is what the example reports, so the description is accurate."
+      ],
+      "highlights": [
+        "prevaricating",
+        "dissembled",
+        "palliative",
+        "querulous",
+        "obdurate"
+      ],
+      "solution_overview": "Each pair here separates two ways of failing or resisting: evading a question against putting it off, taking a thing apart against putting on a false face, easing a symptom against soothing a temper. Decide what the person in the example is actually doing before you accept the label. Two lines rely on the reader assuming that similar sounds guarantee similar meanings, which is exactly what dissemble and querulous punish."
+    },
+    {
+      "id": "en-v-1-22",
+      "case_id": "ENG V.1.22",
+      "title": "Task 22",
+      "subsection": "v.1",
+      "sort_order": 22,
+      "difficulty_level": "4/5",
+      "context": "Each line below tests literary and critical vocabulary. Decide whether the statement is correct.",
+      "statements": [
+        "An \"epitaph\" is the quotation printed at the head of a chapter, so the line of Virgil that opens the novel is its \"epitaph\".",
+        "\"Bathos\" is an unintentional drop from the lofty to the trivial, so a memorial poem that ends by mentioning the poet's lunch produces \"bathos\" rather than pathos.",
+        "\"Pastiche\" imitates a style in homage while \"parody\" imitates it for comic effect, so a modern quartet written affectionately in Haydn's manner is a \"pastiche\".",
+        "\"Classical\" is the general adjective for anything judged first-rate of its kind, so a much-loved children's story is a \"classical\" tale.",
+        "\"Euphuism\" is the ordinary word for a mild substitute for a blunt term, so saying \"passed away\" instead of \"died\" is a \"euphuism\"."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) An \"epitaph\" is the quotation printed at the head of a chapter, so the line of Virgil that opens the novel is its \"epitaph\".**\n\n\"Epigraph\" is the short quotation set at the beginning of a book or chapter to frame what follows, and it is also the term for an inscription on a building. \"Epitaph\" is written on or for a tomb, commemorating the dead. A line of Virgil placed at the opening of a novel is framing a text, not marking a grave.\n\n**Tip:** The taph of epitaph is the same one that gives us cenotaph, an empty tomb.\n\nPosition and purpose both point to the framing term, so the sentence fails — that line of Virgil is the novel's \"epigraph\".",
+        "**B) \"Bathos\" is an unintentional drop from the lofty to the trivial, so a memorial poem that ends by mentioning the poet's lunch produces \"bathos\" rather than pathos.**\n\n\"Bathos\" names the ludicrous descent that occurs when elevated language collapses into the everyday, and it is almost always a fault rather than an effect. \"Pathos\" names the quality that evokes pity or sorrow, which is what a memorial poem normally aims at. A sudden mention of lunch after grand mourning is exactly that collapse.\n\n**Tip:** Bathos is a fall; pathos is a feeling.\n\nThe example describes a slide into triviality, so the term applied is the correct one.",
+        "**C) \"Pastiche\" imitates a style in homage while \"parody\" imitates it for comic effect, so a modern quartet written affectionately in Haydn's manner is a \"pastiche\".**\n\n\"Pastiche\" reproduces the manner of an artist or period without mockery, and it may be admiring, playful or simply technical. \"Parody\" exaggerates the same features in order to ridicule them, so the target is held up for laughter. A quartet composed affectionately in an older idiom is imitation without mockery.\n\n**Tip:** Ask whether the audience is invited to laugh at the model or to enjoy it.\n\nHomage rather than ridicule is the intention described, so the distinction is drawn correctly.",
+        "**D) \"Classical\" is the general adjective for anything judged first-rate of its kind, so a much-loved children's story is a \"classical\" tale.**\n\n\"Classic\" means of acknowledged excellence or typical of its kind, as in a classic study, a classic error or a classic children's story. \"Classical\" refers to Greek and Roman antiquity or to an established formal tradition, as in classical architecture, classical music and classical mechanics. A beloved children's book belongs to the first sense.\n\n**Tip:** Classical marks a period or a tradition; classic marks a verdict.\n\nA judgement of quality is what the sentence intends, so the longer adjective is out of place — the story is a \"classic\" tale.",
+        "**E) \"Euphuism\" is the ordinary word for a mild substitute for a blunt term, so saying \"passed away\" instead of \"died\" is a \"euphuism\".**\n\n\"Euphemism\" is the mild or indirect expression substituted for one felt to be harsh, which is what \"passed away\" is. \"Euphuism\" is a rare literary term for the ornate, heavily balanced prose style associated with Lyly's Euphues. The substitution described is the everyday softening device.\n\n**Trap:** One letter separates a common rhetorical term from a specialist one, and only the first has anything to do with tact.\n\nSoftening a blunt statement is the operation named here, so the label is wrong — \"passed away\" is a \"euphemism\"."
+      ],
+      "highlights": [
+        "epitaph",
+        "bathos",
+        "pastiche",
+        "classical",
+        "euphuism"
+      ],
+      "solution_overview": "This set comes from criticism, where the pairs differ by tone and by placement: a line at the head of a chapter against one on a grave, a sudden fall into triviality against genuine pity, affectionate imitation against comic attack. Ask what effect or position the example describes and match it to the term that names that. Two of the lines simply lend a familiar meaning to a rarer word, which is the standard route to error here."
+    },
+    {
+      "id": "en-v-1-23",
+      "case_id": "ENG V.1.23",
+      "title": "Task 23",
+      "subsection": "v.1",
+      "sort_order": 23,
+      "difficulty_level": "4/5",
+      "context": "Five statements about words that carry a clear judgement or a clear atmosphere. Decide whether each is used correctly.",
+      "statements": [
+        "\"Portentous\" means ominous or heavily solemn, so a chronicler who reads a comet as a warning of disaster to come calls it \"portentous\", while \"pretentious\" claims unearned importance.",
+        "\"Ostensible\" means showily extravagant, so a palace built to overawe rival courts is an example of \"ostensible\" architecture.",
+        "\"Complacent\" means smugly satisfied and \"complaisant\" means eager to please, so a safety inspector who assumes nothing can go wrong is \"complacent\".",
+        "\"Sanguine\" means cheerfully optimistic and \"sanguinary\" means bloody, so a historian who calls a campaign \"sanguinary\" is describing slaughter rather than good cheer.",
+        "\"Anodyne\" means bland and inoffensive while \"anomalous\" means departing from the pattern, so a committee statement that avoids every controversy is \"anodyne\"."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Portentous\" means ominous or heavily solemn, so a chronicler who reads a comet as a warning of disaster to come calls it \"portentous\", while \"pretentious\" claims unearned importance.**\n\n\"Portentous\" is built on portent, a sign of what is to come, so it covers both foreboding and a weighty, self-important manner. \"Pretentious\" is built on pretence and marks a claim to significance that is not earned, as in pretentious prose. A comet read as a warning is a sign of coming disaster.\n\n**Tip:** The two overlap only in the secondary sense of pompous, never in the sense of omen.\n\nForeboding is what the chronicler records, so the adjective is correctly applied.",
+        "**B) \"Ostensible\" means showily extravagant, so a palace built to overawe rival courts is an example of \"ostensible\" architecture.**\n\n\"Ostentatious\" means designed for display, which is exactly what a palace built to overawe rivals is. \"Ostensible\" means apparent rather than real, and it introduces a contrast with the true state of affairs, as in the ostensible reason for a visit. The example is about show, not about a gap between appearance and reality.\n\n**Tip:** Ostensible usually invites the reader to suspect a hidden motive.\n\nConspicuous display is the quality described, so the adjective supplied is the wrong one — such a palace is \"ostentatious\".",
+        "**C) \"Complacent\" means smugly satisfied and \"complaisant\" means eager to please, so a safety inspector who assumes nothing can go wrong is \"complacent\".**\n\n\"Complacent\" describes uncritical satisfaction with how things are, which is why complacency is the standard diagnosis after a preventable failure. \"Complaisant\" describes willingness to oblige others, sometimes to the point of weakness. An inspector who assumes the system is safe has stopped questioning it.\n\n**Tip:** The i in complaisant belongs with please, from the French plaire.\n\nUnearned confidence is the fault described, so the word chosen matches it.",
+        "**D) \"Sanguine\" means cheerfully optimistic and \"sanguinary\" means bloody, so a historian who calls a campaign \"sanguinary\" is describing slaughter rather than good cheer.**\n\n\"Sanguine\" once referred to the blood-dominated humour and now survives almost entirely in the sense of confident optimism, as in sanguine about the outcome. \"Sanguinary\" kept the literal association and means attended by bloodshed, as in a sanguinary conflict. A campaign described with the longer word is being marked as bloody.\n\n**Trap:** Both come from sanguis, blood, but only one still means it.\n\nBloodshed is what the historian is naming, so the account is accurate.",
+        "**E) \"Anodyne\" means bland and inoffensive while \"anomalous\" means departing from the pattern, so a committee statement that avoids every controversy is \"anodyne\".**\n\n\"Anodyne\" originally named a painkiller and now describes language so inoffensive that it cannot disturb anyone, which is the usual charge against a cautious communiqué. \"Anomalous\" describes a case that does not fit the expected pattern, as in an anomalous reading or an anomalous result. A statement drained of controversy is soothing rather than irregular.\n\n**Tip:** Anodyne is about effect on the reader; anomalous is about fit with the data.\n\nBlandness is the quality identified, so the term is correctly applied."
+      ],
+      "highlights": [
+        "portentous",
+        "ostensible",
+        "complacent",
+        "sanguinary",
+        "anodyne"
+      ],
+      "solution_overview": "Tone is the test in this set: solemn foreboding against unearned grandeur, apparent reason against showy display, smugness against eagerness to please. Ask what attitude the example is criticising or describing, then check that the adjective actually names that attitude. Several of these words look interchangeable because they share a first syllable, which is precisely the trap ostensible sets."
+    },
+    {
+      "id": "en-v-1-24",
+      "case_id": "ENG V.1.24",
+      "title": "Task 24",
+      "subsection": "v.1",
+      "sort_order": 24,
+      "difficulty_level": "4/5",
+      "context": "Five statements drawn from environmental, ecological and legal commentary. Decide whether each uses its target word correctly.",
+      "statements": [
+        "\"Effluent\" is liquid waste discharged into a watercourse and \"affluent\" means wealthy, so a river inspector sampling the outflow from a treatment works is testing \"effluent\".",
+        "\"Depredation\" is damage caused by plundering and \"deprivation\" is the lack of basic goods, so wolves taking livestock from upland farms are described as causing \"depredation\".",
+        "\"Indigenous\" means native to a place and \"indigent\" means impoverished, so a plant that evolved in the region where it is found is \"indigenous\".",
+        "\"Turbid\" means cloudy with suspended sediment and \"turgid\" means swollen or pompously inflated, so floodwater carrying silt is \"turbid\".",
+        "\"Irrevocable\" describes a decision that cannot be revoked and \"irreversible\" a process that cannot be undone, so a treaty clause barring withdrawal makes accession \"irrevocable\"."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Effluent\" is liquid waste discharged into a watercourse and \"affluent\" means wealthy, so a river inspector sampling the outflow from a treatment works is testing \"effluent\".**\n\n\"Effluent\" names what flows out, especially treated or untreated waste released into rivers and seas, and it is standard in environmental regulation. \"Affluent\" means rich, from a root meaning flowing towards, and it describes people, districts and societies. An inspector sampling discharge at an outfall is measuring waste water.\n\n**Tip:** Both come from flow, but only one flows out of a pipe.\n\nThe sample described is discharge from a works, so the term used is the right one.",
+        "**B) \"Depredation\" is damage caused by plundering and \"deprivation\" is the lack of basic goods, so wolves taking livestock from upland farms are described as causing \"depredation\".**\n\n\"Depredation\" comes from preying and names destructive raiding, which is why wildlife managers speak of livestock depredation by predators. \"Deprivation\" names the condition of being without necessities, as in material deprivation or sleep deprivation. Losses to predators are plunder rather than want.\n\n**Tip:** Depredation has a predator inside it, which is a useful anchor.\n\nThe damage described is raiding, so the term applied fits the phenomenon.",
+        "**C) \"Indigenous\" means native to a place and \"indigent\" means impoverished, so a plant that evolved in the region where it is found is \"indigenous\".**\n\n\"Indigenous\" describes species, peoples or practices originating in a particular area rather than introduced from outside. \"Indigent\" is a formal word for destitute and appears in legal contexts such as provision for indigent defendants. A plant that arose in situ is native to the region.\n\n**Tip:** The contrast for indigenous is introduced or invasive, never wealthy.\n\nOrigin rather than poverty is at stake, so the definition is correctly assigned.",
+        "**D) \"Turbid\" means cloudy with suspended sediment and \"turgid\" means swollen or pompously inflated, so floodwater carrying silt is \"turbid\".**\n\n\"Turbid\" is a measurable property of water, which is why turbidity meters exist and why sediment load is reported in those terms. \"Turgid\" describes swelling, as in turgid plant cells, and figuratively describes prose bloated with grand words. Floodwater loaded with silt is cloudy rather than swollen.\n\n**Tip:** Turbidity is measured in the field; turgidity is complained about in reviews.\n\nSuspended sediment is the property named, so the usage is right.",
+        "**E) \"Irrevocable\" describes a decision that cannot be revoked and \"irreversible\" a process that cannot be undone, so a treaty clause barring withdrawal makes accession \"irrevocable\".**\n\n\"Irrevocable\" belongs to acts of will: an irrevocable trust, an irrevocable letter of credit, an irrevocable undertaking that no later decision can cancel. \"Irreversible\" belongs to processes and changes, such as irreversible reactions or irreversible habitat loss. A clause that forbids withdrawal locks a decision rather than a physical process.\n\n**Tip:** Decisions are revoked; processes are reversed.\n\nThe clause fixes a choice beyond recall, so the adjective chosen is apt."
+      ],
+      "highlights": [
+        "effluent",
+        "depredation",
+        "indigenous",
+        "turbid",
+        "irrevocable"
+      ],
+      "solution_overview": "Every line in this set contrasts a technical word with a near-twin from a quite different field, so the fastest route is to name the field each word belongs to: waste water against wealth, plunder against poverty, native against destitute. Two items also test a fine distinction between what cannot be revoked and what cannot be undone, which matters in drafting. Confirm the definition against the example rather than against the family resemblance of the two words."
+    },
+    {
+      "id": "en-v-1-25",
+      "case_id": "ENG V.1.25",
+      "title": "Task 25",
+      "subsection": "v.1",
+      "sort_order": 25,
+      "difficulty_level": "5/5",
+      "context": "Five confident-sounding claims about English vocabulary. Some restate a genuine rule and some invent one. Decide which is which.",
+      "statements": [
+        "In careful usage the whole \"comprises\" the parts, so a federation \"comprises\" nine provinces, and conservative style guides object to the passive \"is comprised of\".",
+        "\"Regretful\" describes an event that ought not to have happened, so a delay that ruins a long experiment is \"regretful\".",
+        "\"Respectively\" links items to a preceding list in order, so writing that two samples dated to 1420 and 1580 \"respectively\" matches each date to its own sample.",
+        "\"Unexceptionable\" means ordinary and unremarkable, so a lecture that nobody can remember afterwards was \"unexceptionable\".",
+        "\"Tenant\" is the word for a principle held by a group, so the central \"tenant\" of the school of thought is that language shapes perception."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In careful usage the whole \"comprises\" the parts, so a federation \"comprises\" nine provinces, and conservative style guides object to the passive \"is comprised of\".**\n\n\"Comprise\" takes the whole as subject and the parts as object: the federation comprises nine provinces. \"Compose\" runs the other way, so nine provinces compose the federation, and that is the pattern behind the accepted passive \"is composed of\". The construction \"is comprised of\" mixes the two and is still marked as an error in edited prose.\n\n**Tip:** Whole comprises parts; parts compose the whole.\n\nBoth halves of the claim match conservative usage, so the rule as stated stands.",
+        "**B) \"Regretful\" describes an event that ought not to have happened, so a delay that ruins a long experiment is \"regretful\".**\n\n\"Regretful\" describes a person feeling regret, as in a regretful apology or a regretful glance back. \"Regrettable\" describes the thing that gives rise to that feeling, which is why an incident, a delay or a remark is regrettable. A ruined experiment is the cause of regret, not the bearer of it.\n\n**Tip:** Only something with feelings can be regretful.\n\nThe subject in the example is an event, so the adjective does not fit — such a delay is \"regrettable\".",
+        "**C) \"Respectively\" links items to a preceding list in order, so writing that two samples dated to 1420 and 1580 \"respectively\" matches each date to its own sample.**\n\n\"Respectively\" tells the reader that two ordered lists correspond item by item, which is why it must follow both lists and not float free. \"Respectfully\" is an adverb of manner meaning with respect, as in respectfully declined. The example pairs the first sample with the first date and the second with the second.\n\n**Tip:** If nothing is being ordered, the word is doing no work and should go.\n\nThe sentence sets up two matched lists, so the adverb is used correctly.",
+        "**D) \"Unexceptionable\" means ordinary and unremarkable, so a lecture that nobody can remember afterwards was \"unexceptionable\".**\n\n\"Unexceptionable\" means that no one could take exception to it, so it praises faintly by ruling out objection rather than by claiming interest. \"Unexceptional\" is the word for the merely ordinary, and that is what a forgettable lecture is. Blandness and inoffensiveness are close in feel but distinct in sense.\n\n**Trap:** The pair mirrors exceptionable and exceptional, and the -able form always concerns objection.\n\nThe judgement described is dullness, so the label supplied is the wrong one — the lecture was \"unexceptional\".",
+        "**E) \"Tenant\" is the word for a principle held by a group, so the central \"tenant\" of the school of thought is that language shapes perception.**\n\n\"Tenet\" names a doctrine or belief held by a group, from the Latin for it holds, and it is the word for the central claims of a theory or a faith. \"Tenant\" names someone who rents property and belongs to housing law. A claim about language and perception is a doctrine, not an occupant.\n\n**Tip:** Both come from tenere, to hold, but one holds a belief and the other holds a lease.\n\nThe example describes a doctrine, so the spelling given is wrong — the central \"tenet\" of the school is that language shapes perception."
+      ],
+      "highlights": [
+        "comprises",
+        "regretful",
+        "respectively",
+        "unexceptionable",
+        "tenant"
+      ],
+      "solution_overview": "Two of these lines state real rules of careful prose, the whole-and-parts rule for comprise and the ordered-list rule for respectively, and both survive inspection. The other three quietly reverse a pair, so ask who or what each adjective can describe: a person's regret against an event's unwelcomeness, ordinariness against unobjectionability, a belief against a renter. When a claim sounds authoritative, test it on the example rather than on its tone."
+    },
+    {
+      "id": "en-v-1-26",
+      "case_id": "ENG V.1.26",
+      "title": "Task 26",
+      "subsection": "v.1",
+      "sort_order": 26,
+      "difficulty_level": "5/5",
+      "context": "Five statements about words that differ by a letter without differing in sound. Decide whether each account of spelling and meaning is correct.",
+      "statements": [
+        "In British spelling \"licence\" is the noun and \"license\" the verb, so an authority \"licenses\" a laboratory and then issues it a \"licence\".",
+        "In British usage \"dependant\" is the noun for a person supported by another and \"dependent\" is the adjective, so a form asking how many \"dependants\" live in the household uses the noun correctly.",
+        "\"Staunch\" is only ever a verb meaning to stop a flow, so describing a \"staunch\" defender of open archives is a misuse.",
+        "\"Canvass\" with two s's means to solicit opinions or votes, so researchers who go door to door asking about flood risk are \"canvassing\" residents.",
+        "\"Ordinance\" is the term for military supplies and weapons, so a bomb-disposal unit clearing unexploded shells is handling \"ordinance\"."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In British spelling \"licence\" is the noun and \"license\" the verb, so an authority \"licenses\" a laboratory and then issues it a \"licence\".**\n\nBritish usage reserves the c-spelling for the noun and the s-spelling for the verb, exactly as practice pairs with practise and advice with advise. American usage levels both to license, which is why the distinction survives mainly in British and Commonwealth editing. Issuing the document is the noun; authorising the laboratory is the verb.\n\n**Tip:** The noun advice has a c, and so does the noun licence.\n\nEach spelling occupies its own grammatical slot here, so the account is accurate.",
+        "**B) In British usage \"dependant\" is the noun for a person supported by another and \"dependent\" is the adjective, so a form asking how many \"dependants\" live in the household uses the noun correctly.**\n\n\"Dependant\" with an a names a person financially supported by someone else, as in a claim for a spouse and two dependants. \"Dependent\" with an e is the adjective, as in dependent children or dependent on a subsidy. A form counting people needs the noun.\n\n**Tip:** Only the -ant spelling can be pluralised as a count of people.\n\nThe slot in the question is a noun, so the spelling described is the right one.",
+        "**C) \"Staunch\" is only ever a verb meaning to stop a flow, so describing a \"staunch\" defender of open archives is a misuse.**\n\n\"Staunch\" is well established as an adjective meaning loyal and steadfast, which is its commonest role in modern prose: a staunch ally, a staunch defender. The verb meaning to stem a flow is spelled either stanch or staunch, with stanch the more clearly verbal form in careful American usage. A loyal defender is therefore described correctly.\n\n**Trap:** The two functions coexist, so a rule that bans one of them is inventing a restriction.\n\nThe adjective is standard rather than mistaken, so this prohibition does not hold — a \"staunch\" defender is perfectly good English.",
+        "**D) \"Canvass\" with two s's means to solicit opinions or votes, so researchers who go door to door asking about flood risk are \"canvassing\" residents.**\n\n\"Canvass\" is a verb of systematic soliciting: canvassing opinion, canvassing support, canvassing a constituency. \"Canvas\" with one s is the heavy cloth used for sails and paintings and is a noun. Going door to door to gather views is soliciting opinion.\n\n**Tip:** The double s belongs to the double work of asking everyone.\n\nThe activity described is systematic enquiry, so the spelling used is correct.",
+        "**E) \"Ordinance\" is the term for military supplies and weapons, so a bomb-disposal unit clearing unexploded shells is handling \"ordinance\".**\n\n\"Ordnance\" without the i names artillery, munitions and military stores, which is why unexploded shells are unexploded ordnance and why the mapping agency founded for military survey is the Ordnance Survey. \"Ordinance\" names an authoritative decree or a local regulation. Shells in the ground are munitions rather than by-laws.\n\n**Tip:** Drop the i and you are in the armoury.\n\nThe unit is dealing with munitions, so the spelling given is wrong — they are handling unexploded \"ordnance\"."
+      ],
+      "highlights": [
+        "licence",
+        "dependants",
+        "staunch",
+        "canvassing",
+        "ordinance"
+      ],
+      "solution_overview": "British spelling keeps noun and verb apart in several pairs that sound identical, so ask which slot the sentence needs before choosing between c and s or -ant and -ent. Two further lines test whether a word really is restricted to one part of speech, which is where staunch and ordnance catch confident readers. Reading the example with the rival spelling in place makes the grammatical slot audible."
+    },
+    {
+      "id": "en-v-1-27",
+      "case_id": "ENG V.1.27",
+      "title": "Task 27",
+      "subsection": "v.1",
+      "sort_order": 27,
+      "difficulty_level": "5/5",
+      "context": "Five definitions offered for adjectives that are easy to misapply. Decide whether each definition belongs to the word it is attached to.",
+      "statements": [
+        "\"Inimical\" means harmful or hostile to something and \"inimitable\" means impossible to imitate, so soil salinity that damages seedlings is \"inimical\" to their growth.",
+        "\"Invidious\" describes a danger that develops unnoticed, so a slow leak of methane beneath a landfill is an \"invidious\" hazard.",
+        "\"Egregious\" means sociable and fond of company, so a bird species that forages in large flocks is \"egregious\".",
+        "\"Baleful\" refers to something actively poisonous or ruinous in effect, while \"baneful\" is limited to menacing looks, so a toxin in a drinking-water supply is \"baleful\".",
+        "\"Parlous\" is a modern coinage unrelated to \"perilous\" and means merely talkative, so a diplomat who speaks too freely is \"parlous\"."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"Inimical\" means harmful or hostile to something and \"inimitable\" means impossible to imitate, so soil salinity that damages seedlings is \"inimical\" to their growth.**\n\n\"Inimical\" comes from inimicus, enemy, and takes to: conditions inimical to health, a climate inimical to investment. \"Inimitable\" comes from imitate and is a compliment, describing a style or manner no one can copy. Salinity that harms seedlings is working against their growth.\n\n**Tip:** If the sentence needs \"to\" after the adjective, the word is inimical.\n\nHostility to a process is what the example names, so the definition is correctly attached.",
+        "**B) \"Invidious\" describes a danger that develops unnoticed, so a slow leak of methane beneath a landfill is an \"invidious\" hazard.**\n\n\"Insidious\" describes what advances gradually and unnoticed until the harm is done, which is why disease and gas leaks alike are called insidious. \"Invidious\" describes what provokes resentment or unfairness, as in an invidious comparison or an invidious choice between colleagues. A slow, unseen leak is the creeping danger.\n\n**Tip:** Invidious belongs with envy, its Latin ancestor invidia.\n\nThe hazard described develops unseen, so the adjective supplied is the wrong one — it is an \"insidious\" hazard.",
+        "**C) \"Egregious\" means sociable and fond of company, so a bird species that forages in large flocks is \"egregious\".**\n\n\"Gregarious\" comes from grex, a flock, and describes animals that live in groups and people who enjoy company. \"Egregious\" means conspicuously bad, as in an egregious error or an egregious breach of protocol, its original sense of outstanding having soured over time. Birds that forage in flocks are sociable, not scandalous.\n\n**Trap:** The shared -greg- hides a complete divergence in judgement.\n\nFlocking behaviour is what the example describes, so the label is misapplied — such a species is \"gregarious\".",
+        "**D) \"Baleful\" refers to something actively poisonous or ruinous in effect, while \"baneful\" is limited to menacing looks, so a toxin in a drinking-water supply is \"baleful\".**\n\n\"Baneful\" is built on bane, a poison or cause of ruin, and describes what actually does harm, as in a baneful influence. \"Baleful\" describes what threatens harm, especially in look or manner, which is why the standard collocation is a baleful glare. The sentence has exchanged the two, giving the menacing word to a chemical hazard.\n\n**Tip:** Bane poisons; bale menaces.\n\nActual harm rather than threat is what a toxin delivers, so the definitions have been swapped — the contamination is \"baneful\".",
+        "**E) \"Parlous\" is a modern coinage unrelated to \"perilous\" and means merely talkative, so a diplomat who speaks too freely is \"parlous\".**\n\n\"Parlous\" is an old contracted form of perilous and means dangerously bad, surviving chiefly in phrases such as a parlous state. It has no connection with parler or with talkativeness, which would be voluble, garrulous or loquacious. A diplomat who says too much is talkative rather than in peril.\n\n**Trap:** The French-looking first syllable invites the wrong etymology.\n\nBoth the origin and the meaning offered here are inventions, so the claim collapses — a diplomat who talks too freely is simply \"garrulous\"."
+      ],
+      "highlights": [
+        "inimical",
+        "invidious",
+        "egregious",
+        "baleful",
+        "parlous"
+      ],
+      "solution_overview": "Four of these lines borrow a meaning from the neighbouring word, and the neighbour is always the one that sounds more familiar. Recover the root of each adjective instead: enemy for one, imitate for another, flock for a third, poison for a fourth. The one sound line describes a hostility that works on conditions rather than on people, which is the sense that distinguishes it from its twin."
+    },
+    {
+      "id": "en-v-1-28",
+      "case_id": "ENG V.1.28",
+      "title": "Task 28",
+      "subsection": "v.1",
+      "sort_order": 28,
+      "difficulty_level": "5/5",
+      "context": "Five statements about word choice in legal, clerical and commercial contexts. Decide whether each one is correct.",
+      "statements": [
+        "\"Forbear\" is the verb meaning to hold back and \"forebear\" the noun for an ancestor, so a speaker who \"forbears\" from replying to a personal attack is exercising restraint.",
+        "\"Prostrate\" means lying stretched out or overcome, and \"prostate\" is a gland, so a pilgrim lying face down before the altar is \"prostrate\".",
+        "\"Discomfit\" means to cause mild physical unease, so a hard bench that makes listeners fidget \"discomfits\" them, while \"discomfort\" is reserved for defeat.",
+        "\"Recourse\" is the option of turning to something or someone for help, so a claimant whose final appeal fails may have no further \"recourse\" to the courts.",
+        "\"Remit\" as a noun is the scope of someone's responsibility and a \"remittance\" is a payment sent, so an invoice accompanied by a \"remittance\" advice concerns money rather than duties."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Forbear\" is the verb meaning to hold back and \"forebear\" the noun for an ancestor, so a speaker who \"forbears\" from replying to a personal attack is exercising restraint.**\n\n\"Forbear\" is a verb of restraint, usually with from: forbear from comment, forbear from pressing the point, and the related noun is forbearance. \"Forebear\", with the e, means an ancestor and is usually plural, as in the customs of our forebears. Declining to reply is restraint rather than genealogy.\n\n**Tip:** The extra e looks backwards in time.\n\nSelf-restraint is what the example describes, so the verb is correctly used.",
+        "**B) \"Prostrate\" means lying stretched out or overcome, and \"prostate\" is a gland, so a pilgrim lying face down before the altar is \"prostrate\".**\n\n\"Prostrate\" is an adjective and verb describing a body stretched face down, and figuratively a person or nation laid low, as in prostrate with grief. \"Prostate\" is an anatomical noun naming a gland, and it has no r in its second syllable. A pilgrim lying before an altar is in the posture the first word names.\n\n**Tip:** The extra r stretches the word out, just as the posture stretches the body.\n\nPosture rather than anatomy is what the sentence reports, so the description is right.",
+        "**C) \"Discomfit\" means to cause mild physical unease, so a hard bench that makes listeners fidget \"discomfits\" them, while \"discomfort\" is reserved for defeat.**\n\n\"Discomfit\" originally meant to defeat in battle and now means to disconcert or thwart, so a barrister discomfits a witness with an unexpected document. \"Discomfort\" is the word for physical or mental unease and works as both noun and verb. A hard bench produces bodily unease rather than rout.\n\n**Trap:** The overlap in sound has pulled discomfit towards discomfort, but the sharper sense still carries the weight in formal prose.\n\nThe two senses are the wrong way round here, so the sentence fails — a hard bench causes listeners \"discomfort\".",
+        "**D) \"Recourse\" is the option of turning to something or someone for help, so a claimant whose final appeal fails may have no further \"recourse\" to the courts.**\n\n\"Recourse\" appears in have recourse to and without recourse, and it names the availability of a remedy rather than a supply of materials. \"Resource\" names a stock or means that can be drawn on, such as water resources or a resourceful colleague. A claimant with no remaining avenue of appeal has lost a remedy.\n\n**Tip:** Recourse is something you have to; a resource is something you have.\n\nThe sentence concerns an avenue of remedy, so the noun chosen is apt.",
+        "**E) \"Remit\" as a noun is the scope of someone's responsibility and a \"remittance\" is a payment sent, so an invoice accompanied by a \"remittance\" advice concerns money rather than duties.**\n\n\"Remit\" as a noun names the range of matters a person or body is authorised to deal with, as in outside the committee's remit. \"Remittance\" names money transferred in settlement, which is why suppliers receive remittance advice listing the invoices paid. A document attached to an invoice is about payment.\n\n**Tip:** A remit defines what you may do; a remittance settles what you owe.\n\nThe paperwork described accompanies a payment, so the term used is the right one."
+      ],
+      "highlights": [
+        "forbears",
+        "prostrate",
+        "discomfits",
+        "recourse",
+        "remittance"
+      ],
+      "solution_overview": "Three of these pairs separate a verb from a noun that sounds almost identical, so identify what the sentence needs to do: hold back, lie flat, or turn to someone for help. One line reverses a pair whose difference is between mere unease and outright defeat, which is where discomfit is usually mishandled. Keep in view that the rarer member of each pair is often the one with the sharper, narrower job."
+    },
+    {
+      "id": "en-v-1-29",
+      "case_id": "ENG V.1.29",
+      "title": "Task 29",
+      "subsection": "v.1",
+      "sort_order": 29,
+      "difficulty_level": "5/5",
+      "context": "Five statements about the meaning of confusable pairs in scientific and philosophical writing. Decide whether each is correct.",
+      "statements": [
+        "\"Quiescent\" means temporarily inactive and \"acquiescent\" means passively agreeing, so a volcano that has not erupted for a century is \"quiescent\".",
+        "\"Percipient\" means keenly perceptive and \"recipient\" names the person who receives, so a reviewer praised for noticing what other readers missed is \"percipient\".",
+        "\"Tenuous\" means thin or slight and \"tenacious\" means holding on firmly, so an argument resting on a single ambiguous fragment is \"tenuous\".",
+        "\"Transcendent\" means surpassing ordinary limits, while \"transcendental\" belongs to Kantian philosophy and to a class of numbers, so mathematicians call pi a \"transcendental\" number.",
+        "\"Vocation\" is the calling one follows as work and \"avocation\" a pursuit outside it, so a physician who restores antique clocks at weekends treats that as an \"avocation\"."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Quiescent\" means temporarily inactive and \"acquiescent\" means passively agreeing, so a volcano that has not erupted for a century is \"quiescent\".**\n\n\"Quiescent\" describes a state of rest that may end, which is why volcanologists prefer it to extinct for a system that could reawaken, and why a quiescent infection can flare. \"Acquiescent\" describes a person who goes along with what is proposed without protest. A century of silence in a volcano is dormancy rather than agreement.\n\n**Tip:** Acquiescence needs someone to agree with; quiescence needs nothing but time.\n\nInactivity that may not be permanent is what the example describes, so the definitions fit.",
+        "**B) \"Percipient\" means keenly perceptive and \"recipient\" names the person who receives, so a reviewer praised for noticing what other readers missed is \"percipient\".**\n\n\"Percipient\" is built on perceive and describes unusual acuteness of observation, as in a percipient reading of a difficult text. \"Recipient\" is built on receive and names whoever takes delivery of something, from a prize to a transplant. Noticing what others overlooked is perception rather than receipt.\n\n**Tip:** The per- of percipient runs through the surface; the re- of recipient takes something back.\n\nAcuteness is the quality credited to the reviewer, so the description is accurate.",
+        "**C) \"Tenuous\" means thin or slight and \"tenacious\" means holding on firmly, so an argument resting on a single ambiguous fragment is \"tenuous\".**\n\n\"Tenuous\" describes something thin, weak or barely sustained, as in a tenuous connection or a tenuous grasp of the evidence. \"Tenacious\" describes a determined grip, whether of a climbing plant, an infection or a campaigner. An argument built on one ambiguous scrap is slight rather than stubborn.\n\n**Tip:** Both come from tenere, to hold, but one holds barely and the other holds fast.\n\nWeakness of support is what the example identifies, so the term is correctly chosen.",
+        "**D) \"Transcendent\" means surpassing ordinary limits, while \"transcendental\" belongs to Kantian philosophy and to a class of numbers, so mathematicians call pi a \"transcendental\" number.**\n\n\"Transcendent\" is an adjective of superlative praise or metaphysical elevation, as in a transcendent performance or transcendent being. \"Transcendental\" is a technical term: in Kant it concerns the conditions of possible experience, and in mathematics it names numbers that are not roots of any polynomial with rational coefficients. Pi belongs to that mathematical class.\n\n**Tip:** Where a discipline has claimed a word, the longer form is usually the technical one.\n\nPi sits in the technical class rather than in the language of praise, so the pairing of senses is right.",
+        "**E) \"Vocation\" is the calling one follows as work and \"avocation\" a pursuit outside it, so a physician who restores antique clocks at weekends treats that as an \"avocation\".**\n\n\"Vocation\" names the work one is called to, which is why teaching and medicine are described as vocations rather than mere jobs. \"Avocation\" names what draws you away from that work, a serious hobby or minor occupation pursued alongside it. Clock restoration at weekends sits beside the medical career rather than replacing it.\n\n**Tip:** The a- prefix here means away from, as in avert.\n\nThe pursuit described is the one outside the calling, so the labels are correctly assigned."
+      ],
+      "highlights": [
+        "quiescent",
+        "percipient",
+        "tenuous",
+        "transcendental",
+        "avocation"
+      ],
+      "solution_overview": "Every claim here is a definition of two words at once, so read both halves before judging: dormant against compliant, perceptive against receiving, slight against persistent. The pairs share a first syllable and diverge completely afterwards, which is why the suffix carries the meaning. Test each definition on the example rather than assuming the resemblance guarantees a shared sense."
+    },
+    {
+      "id": "en-v-1-30",
+      "case_id": "ENG V.1.30",
+      "title": "Task 30",
+      "subsection": "v.1",
+      "sort_order": 30,
+      "difficulty_level": "5/5",
+      "context": "A final set of five judgements about confusable pairs in academic and public writing. Decide whether each judgement is right.",
+      "statements": [
+        "\"Cohort\" names a group sharing a defining characteristic such as year of birth, so a study following everyone born in 1958 tracks a \"cohort\", while a \"coterie\" is a small exclusive circle.",
+        "\"Paradigm\" means a perfect example of a quality, so a scholar praised as a model of patience is a \"paradigm\" of that virtue in the strict sense.",
+        "\"Gamut\" is an opening move made to gain an advantage, so a negotiator who concedes a small point early has played a \"gamut\".",
+        "\"Mettle\" is spirit and resilience under pressure, so a crew tested by three days of storm has shown its \"mettle\".",
+        "A \"nostrum\" is a quack remedy or a simplistic cure-all and a \"rostrum\" is a speaking platform, so a slogan promising to fix a complex crisis overnight is a \"nostrum\"."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Cohort\" names a group sharing a defining characteristic such as year of birth, so a study following everyone born in 1958 tracks a \"cohort\", while a \"coterie\" is a small exclusive circle.**\n\n\"Cohort\" is the standard term in epidemiology and demography for a set of people who share a characteristic and are followed over time, as in a birth cohort study. \"Coterie\" names a tight, socially exclusive group united by taste or influence, as in a literary coterie. A whole birth year is defined by a shared attribute, not by acquaintance.\n\n**Tip:** The word cohort has drifted towards meaning associates, but research writing keeps the technical sense.\n\nThe design described follows a defined population, so the term is correctly applied.",
+        "**B) \"Paradigm\" means a perfect example of a quality, so a scholar praised as a model of patience is a \"paradigm\" of that virtue in the strict sense.**\n\n\"Paragon\" is the word for a perfect example of a quality, as in a paragon of patience or a paragon of virtue. \"Paradigm\" means a pattern, model or framework of assumptions, which is why we speak of a grammatical paradigm and of a paradigm shift in a discipline. Praise for a person's exemplary patience calls for the first.\n\n**Tip:** A paradigm shows how something works; a paragon shows how good it can be.\n\nThe example praises a person as an ideal, so the noun offered is the wrong one — that scholar is a \"paragon\" of patience.",
+        "**C) \"Gamut\" is an opening move made to gain an advantage, so a negotiator who concedes a small point early has played a \"gamut\".**\n\n\"Gambit\" comes from chess and names an opening move, often one that gives something up to gain position, which is exactly the negotiator's concession. \"Gamut\" comes from the medieval musical scale and names a complete range, as in running the gamut of emotions. An early concession is a move, not a range.\n\n**Tip:** A gamut is measured end to end; a gambit is played.\n\nThe example describes a tactical opening, so the label is wrong — the negotiator has played a \"gambit\".",
+        "**D) \"Mettle\" is spirit and resilience under pressure, so a crew tested by three days of storm has shown its \"mettle\".**\n\n\"Mettle\" is an old variant spelling of metal that specialised into the sense of temperament and courage, preserved in test someone's mettle and on one's mettle. \"Metal\" kept the physical sense of the material itself. A crew that holds up through a long storm has demonstrated character rather than composition.\n\n**Tip:** If the phrase is about proving yourself, the spelling doubles the t.\n\nEndurance under strain is what the sentence reports, so the word chosen is correct.",
+        "**E) A \"nostrum\" is a quack remedy or a simplistic cure-all and a \"rostrum\" is a speaking platform, so a slogan promising to fix a complex crisis overnight is a \"nostrum\".**\n\n\"Nostrum\" originally named a patent medicine of the seller's own devising and now names any glib remedy offered for a difficult problem, usually with a sneer. \"Rostrum\" names the raised platform a speaker stands on, from the ships' beaks that decorated the Roman speaking place. A slogan promising an instant fix is a false remedy.\n\n**Tip:** Nostrums are peddled; rostra are mounted.\n\nThe example describes an easy cure for a hard problem, so the term fits it exactly."
+      ],
+      "highlights": [
+        "cohort",
+        "paradigm",
+        "gamut",
+        "mettle",
+        "nostrum"
+      ],
+      "solution_overview": "Two of these words come from research design and two from criticism, and in each pair one member has a precise technical job that the other cannot do: a defined group against a private circle, a model against a paragon, an opening move against a full range. Check what the example is counting, praising or measuring before accepting the definition. The remaining line rests on a spelling that survives only in a fixed phrase about courage."
+    }
+  ]
+}

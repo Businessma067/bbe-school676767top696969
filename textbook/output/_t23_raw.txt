@@ -1,0 +1,49 @@
+Task 23
+(source: 0_11-0_20logic.docx, original Task 55 — difficulty score 2/8)
+Context: Let P: "7 is a prime number" and Q: "7 is an even number." (P is true, Q is false.)
+General Solution: With P=true, Q=false fixed: P Q=false, P Q=true, so ¬(P Q)=true and ¬(P Q)=false. Watch 
+∧
+∨
+∧
+∨
+the connective carefully in each statement — swapping  for  (or vice versa) is the main trap, since ¬P ¬Q=true 
+∧
+∨
+∨
+(De Morgan) but ¬P ¬Q=false (¬P is already false, so any AND with it is false).
+∧
+Statements (True / False):
+a) P  Q is true
+∧
+b) P  Q is true
+∨
+c) ¬(P  Q) is true
+∧
+d) ¬P  ¬Q is true
+∧
+e) ¬(P  Q) is true
+∨
+Answers & Explanations:
+a) FALSE. " " (and) is true only when both parts are true. Since Q ("7 is even") is false, P  Q is false 
+∧
+∧
+regardless of P.
+b) TRUE. " " (or) is true when at least one part is true. Since P ("7 is prime") is true, P  Q is true.
+∨
+∨
+c) TRUE. Since P  Q is false (see part a), its negation ¬(P  Q) is true.
+∧
+∧
+d) FALSE. Trap: " " requires BOTH sides true. ¬P is false (since P, "7 is prime," is true), so ¬P  ¬Q is false 
+∧
+∧
+regardless of ¬Q — mixing up  with  flips the answer.
+∧
+∨
+e) FALSE. Trap: since P  Q is true (see part b), its negation ¬(P  Q) must be false, not true.
+∨
+∨
+
+
+===== PAGE 14 =====
+Tier 2 — Core Practice

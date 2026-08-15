@@ -1,0 +1,653 @@
+[
+  {
+    "id": "math-1-23",
+    "case_id": "MATH 1.23",
+    "title": "De Morgan's laws with a universal set",
+    "subsection": "1.2",
+    "context": "Let $U = \\{1, 2, ..., 10\\}$ be the universal set, $A = \\{1, 2, 3, 4, 5\\}$, and $B = \\{4, 5, 6, 7, 8\\}$.",
+    "statements": [
+      "$(A \\cup B)$ᶜ $= \\{9, 10\\}$. 4",
+      "$(A \\cup B)$ᶜ = Aᶜ $\\cap$ Bᶜ.",
+      "$(A \\cap B)$ᶜ = Aᶜ $\\cup$ Bᶜ.",
+      "$A \\cap B = \\{4, 5, 6\\}$.",
+      "$(A \\cap B)$ᶜ $= \\{1, 2, 3, 4, 5, 9, 10\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $(A \\cup B)$ᶜ $= \\{9, 10\\}$. 4**  (true)\n\n$A \\cup B = \\{1,2,3,4,5,6,7,8\\}$; taking the complement relative to U leaves exactly $\\{9,10\\}$.",
+      "**B) $(A \\cup B)$ᶜ = Aᶜ $\\cap$ Bᶜ.**  (true)\n\nThis is De Morgan's law for sets, and it holds generally - the complement of a union equals the intersection of the complements.",
+      "**C) $(A \\cap B)$ᶜ = Aᶜ $\\cup$ Bᶜ.**  (true)\n\nThis is the other De Morgan's law - the complement of an intersection equals the union of the complements - and it also holds generally.",
+      "**D) $A \\cap B = \\{4, 5, 6\\}$.**  (false)\n\n$A \\cap B$ consists of elements in both sets: only 4 and 5 qualify (6 is in B but not in A), so $A \\cap B = \\{4,5\\}$, not $\\{4,5,6\\}$.",
+      "**E) $(A \\cap B)$ᶜ $= \\{1, 2, 3, 4, 5, 9, 10\\}$.**  (false)\n\nSince $A \\cap B = \\{4,5\\}$, its complement relative to U is everything else: $\\{1,2,3,6,7,8,9,10\\}$. The set given here wrongly includes 4 and 5 and wrongly omits 6, 7, and 8."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 1,
+    "solution_overview": "Let $U = \\{1, 2, ..., 10\\}$ be the universal set, $A = \\{1, 2, 3, 4, 5\\}$, and $B = \\{4, 5, 6, 7, 8\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE"
+  },
+  {
+    "id": "math-1-24",
+    "case_id": "MATH 1.24",
+    "title": "Cartesian products",
+    "subsection": "1.2",
+    "context": "Let $A = \\{1, 2\\}$ and $B = \\{x, y, z\\}$.",
+    "statements": [
+      "$\\lvert A \\times B \\rvert = 6$.",
+      "(2, $x) \\in A \\times B$.",
+      "(x, $2) \\in A \\times B$.",
+      "$A \\times B = B \\times A$.",
+      "The number of elements in $B \\times A$ equals the number of elements in $A \\times B$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $\\lvert A \\times B \\rvert = 6$.**  (true)\n\nThe Cartesian product $A \\times B$ has $\\lvert A \\rvert \\times \\lvert B \\rvert = 2 \\times 3 = 6$ ordered pairs.",
+      "**B) (2, $x) \\in A \\times B$.**  (true)\n\n$2 \\in A$ and $x \\in B$, so the ordered pair (2,x), with first coordinate from A and second from B, belongs to $A \\times B$.",
+      "**C) (x, $2) \\in A \\times B$.**  (false)\n\nIn $A \\times B$, the first coordinate must come from A. Since $x \\notin A$, the pair (x,2) does not belong to $A \\times B$.",
+      "**D) $A \\times B = B \\times A$.**  (false)\n\n$A \\times B$ contains pairs like (2,x) where the first entry is from A; $B \\times A$ would need its first entry from B, so e.g. (2,$x) \\notin B \\times A$ since $2 \\notin B$. The two products contain different pairs in general.",
+      "**E) The number of elements in $B \\times A$ equals the number of elements in $A \\times B$.**  (true)\n\nEven though the pairs themselves differ, both products contain $\\lvert A \\rvert \\times \\lvert B \\rvert = \\lvert B \\rvert \\times \\lvert A \\rvert = 6$ elements - the counts match even when the sets of pairs don't."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 2,
+    "solution_overview": "Let $A = \\{1, 2\\}$ and $B = \\{x, y, z\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-25",
+    "case_id": "MATH 1.25",
+    "title": "Sets defined by inequalities",
+    "subsection": "1.2",
+    "context": "Let $A = \\{x \\in R : 1 < x < 5\\}$ and $B = \\{x \\in R : x ≥ 3\\}$.",
+    "statements": [
+      "$A \\subseteq B$.",
+      "$A \\cap B = \\{x \\in R : 3 ≤ x < 5\\}$, i.e. the interval [3, 5).",
+      "$B \\subseteq A$.",
+      "$A \\cup B = \\{x \\in R : x > 1\\}$, i.e. the interval (1, ∞).",
+      "There exists a real number that belongs to A but not to B."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $A \\subseteq B$.**  (false)\n\nA contains values like x = 2, which satisfies 1 < 2 < 5 but not 2 ≥ 3, so $x = 2 \\in A$ but $x = 2 \\notin B$ - this counterexample shows A is not a subset of B. 8",
+      "**B) $A \\cap B = \\{x \\in R : 3 ≤ x < 5\\}$, i.e. the interval [3, 5).**  (true)\n\nCombining both conditions (1 < x < 5 and x ≥ 3), the binding restrictions become 3 ≤ x < 5, exactly the interval [3,5).",
+      "**C) $B \\subseteq A$.**  (false)\n\nB contains values like x = 10, which is not less than 5, so $x = 10 \\in B$ but $x = 10 \\notin A$ - B is not a subset of A.",
+      "**D) $A \\cup B = \\{x \\in R : x > 1\\}$, i.e. the interval (1, ∞).**  (true)\n\nA covers (1,5) and B covers [3,∞); together every value greater than 1 is covered by one set or the other, with no gaps, giving exactly (1,∞).",
+      "**E) There exists a real number that belongs to A but not to B.**  (true)\n\nx = 2 satisfies 1 < 2 < 5 (so $x \\in A)$ but does not satisfy x ≥ 3 (so $x \\notin B)$."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 3,
+    "solution_overview": "Let $A = \\{x \\in R : 1 < x < 5\\}$ and $B = \\{x \\in R : x ≥ 3\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-26",
+    "case_id": "MATH 1.26",
+    "title": "Symmetric difference",
+    "subsection": "1.2",
+    "context": "For two sets, define the symmetric difference AΔB $= (A \\setminus B) \\cup (B \\setminus A)$, the elements belonging to exactly one of the two sets. Let $A = \\{1, 2, 3, 4\\}$ and $B = \\{3, 4, 5, 6\\}$.",
+    "statements": [
+      "AΔB $= \\{1, 2, 5, 6\\}$.",
+      "The symmetric difference can also be written as AΔB $= (A \\setminus B) \\cap (B \\setminus A)$.",
+      "$A \\cap B \\subseteq$ AΔB.",
+      "If A and B are disjoint, then AΔB $= A \\cup B$.",
+      "$\\lvert$ AΔB $\\rvert = \\lvert A \\rvert$ + $\\lvert B \\rvert$ - $2\\lvert A \\cap B \\rvert$. 9"
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) AΔB $= \\{1, 2, 5, 6\\}$.**  (true)\n\n$A \\setminus B = \\{1,2\\}$ and $B \\setminus A = \\{5,6\\}$; their union is $\\{1,2,5,6\\}$.",
+      "**B) The symmetric difference can also be written as AΔB $= (A \\setminus B) \\cap (B \\setminus A)$.**  (false)\n\n$A \\setminus B$ and $B \\setminus A$ are always disjoint from each other (one requires being outside B, the other requires being inside B), so their intersection is always empty - this can never equal the actual (generally nonempty) symmetric difference, and the correct connective is $\\cup$ , not $\\cap$ .",
+      "**C) $A \\cap B \\subseteq$ AΔB.**  (false)\n\n$A \\cap B = \\{3,4\\}$, which by definition is exactly what symmetric difference excludes (it only keeps elements in exactly one set) - so $A \\cap B$ and AΔB are disjoint here, not one contained in the other.",
+      "**D) If A and B are disjoint, then AΔB $= A \\cup B$.**  (true)\n\nIf $A \\cap B = \\emptyset$, then $A \\setminus B = A$ and $B \\setminus A = B$, so AΔB $= A \\cup B$.",
+      "**E) $\\lvert$ AΔB $\\rvert = \\lvert A \\rvert$ + $\\lvert B \\rvert$ - $2\\lvert A \\cap B \\rvert$. 9**  (true)\n\nHere $\\lvert A \\rvert=4$, $\\lvert B \\rvert=4$, $\\lvert A \\cap B \\rvert=2$, giving 4+4-2(2)=4, matching $\\lvert \\{1,2,5,6\\} \\rvert=4$ - and this identity holds in general."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 4,
+    "solution_overview": "For two sets, define the symmetric difference AΔB $= (A \\setminus B) \\cup (B \\setminus A)$, the elements belonging to exactly one of the two sets. Let $A = \\{1, 2, 3, 4\\}$ and $B = \\{3, 4, 5, 6\\}$.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-27",
+    "case_id": "MATH 1.27",
+    "title": "Sales rep to client account coverage",
+    "subsection": "1.2",
+    "context": "A consulting firm has 5 sales reps and 8 client accounts. A \"coverage assignment\" is an ordered pair (rep, account) meaning that rep is the point of contact for that account. The firm wants to know how many distinct coverage assignments are possible, and how the count changes if the team grows.",
+    "statements": [
+      "The total number of possible (rep, account) pairs is 40.",
+      "The pair (Maria, Account 3) is the same coverage assignment as (Account 3, Maria).",
+      "If the firm currently has zero client accounts, no coverage assignments can be formed no matter how many reps it hires.",
+      "In the pair (rep, account), the statement \"(Maria, Account 3) belongs to Reps $\\times$ Accounts\" means Maria $\\in$ Accounts and Account $3 \\in$ Reps.",
+      "If the firm hires one more rep (6 reps total) while keeping 8 accounts, the number of possible assignments becomes 48."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The total number of possible (rep, account) pairs is 40.**  (true)\n\nEach of the 5 reps can be paired with each of the 8 accounts, giving $5 \\times 8 = 40$ possible ordered pairs - this is exactly the size of the Cartesian product Reps $\\times$ Accounts.",
+      "**B) The pair (Maria, Account 3) is the same coverage assignment as (Account 3, Maria).**  (false)\n\nOrdered pairs respect order and the identity of each coordinate set: (Maria, Account 3) belongs to Reps $\\times$ Accounts, while (Account 3, Maria) would belong to Accounts $\\times$ Reps - a different set. They are not the same object.",
+      "**C) If the firm currently has zero client accounts, no coverage assignments can be formed no matter how many reps it hires.**  (true)\n\nIf Accounts $= \\emptyset$, then Reps $\\times$ Accounts $= \\emptyset$ regardless of how many reps exist, since there is no account to pair with any rep. This mirrors the general fact that $A \\times \\emptyset = \\emptyset$ for any set A.",
+      "**D) In the pair (rep, account), the statement \"(Maria, Account 3) belongs to Reps $\\times$ Accounts\" means Maria $\\in$ Accounts and Account $3 \\in$ Reps.**  (false)\n\nBy the definition of the Cartesian product, (Maria, Account $3) \\in$ Reps $\\times$ Accounts means Maria $\\in$ Reps and Account $3 \\in$ Accounts - the statement has the membership reversed.",
+      "**E) If the firm hires one more rep (6 reps total) while keeping 8 accounts, the number of possible assignments becomes 48.**  (true)\n\nWith 6 reps and 8 accounts, the number of ordered pairs is $6 \\times 8 = 48$, confirming the statement exactly."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 5,
+    "solution_overview": "A consulting firm has 5 sales reps and 8 client accounts. A \"coverage assignment\" is an ordered pair (rep, account) meaning that rep is the point of contact for that account. The firm wants to know how many distinct coverage assignments are possible, and how the count changes if the team grows.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-28",
+    "case_id": "MATH 1.28",
+    "title": "Frost protection and irrigation",
+    "subsection": "1.2",
+    "context": "A vineyard defines two conditions for its automated systems. Let $A = \\{T \\in R : T^2 < 16\\}$ be the set of temperatures (in °C) for which grapevines are considered frost-safe, and let $B = \\{T \\in R : T ≥ -1\\}$ be the set of temperatures at which the irrigation system is switched on. Note that A is the open interval (-4, 4) and B is the closed-below interval [-1, ∞).",
+    "statements": [
+      "$A \\cap B =$ [-1, 4).",
+      "4 is an element of $A \\cap B$.",
+      "The complement of A in R is $\\{T \\in R : T < -4 \\lor T > 4\\}$.",
+      "$A \\cup B$ is equal to the entire set of real numbers R.",
+      "There exists a temperature that is frost-safe (in A) but does not trigger irrigation (not in B)."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $A \\cap B =$ [-1, 4).**  (true)\n\n$A \\cap B$ needs T ≥ -1 (from B) and -4 < T < 4 (from A); combining these, the binding constraints are T ≥ -1 and T < 4, giving exactly [-1, 4).",
+      "**B) 4 is an element of $A \\cap B$.**  (false)\n\nT = 4 gives T^2 = 16, which is not strictly less than 16, so 4 is not in A - and therefore not in $A \\cap B$ either. 12",
+      "**C) The complement of A in R is $\\{T \\in R : T < -4 \\lor T > 4\\}$.**  (false)\n\nTrap: since A = (-4, 4) is an OPEN interval, it excludes both boundary points -4 and 4 - so both must belong to the complement. The correct complement is $\\{T : T ≤ -4 \\lor T ≥ 4\\} ($using ≤ and ≥), not the strict version with < and > shown here, which wrongly leaves the two boundary points out of the complement too.",
+      "**D) $A \\cup B$ is equal to the entire set of real numbers R.**  (false)\n\n$A \\cup B = ($-4, ∞): every point covered by A or B is greater than -4, and no point ≤ -4 belongs to either set. For example, T = -10 is in neither A nor B, so the union is not all of R.",
+      "**E) There exists a temperature that is frost-safe (in A) but does not trigger irrigation (not in B).**  (true)\n\nTake T = -2: T^2 = 4 < 16, so -$2 \\in A ($frost-safe), but -2 ≥ -1 is false, so -$2 \\notin B ($irrigation off). This is a valid temperature in A but not in B."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 6,
+    "solution_overview": "A vineyard defines two conditions for its automated systems. Let $A = \\{T \\in R : T^2 < 16\\}$ be the set of temperatures (in °C) for which grapevines are considered frost-safe, and let $B = \\{T \\in R : T ≥ -1\\}$ be the set of temperatures at which the irrigation system is switched on. Note that A is the open interval (-4, 4) and B is the closed-below interval [-1, ∞).\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-29",
+    "case_id": "MATH 1.29",
+    "title": "Customer survey overlap",
+    "subsection": "1.2",
+    "context": "A market research firm surveys 200 customers. Let A be the set of customers who like Product A, with $\\lvert A \\rvert = 120$. Let B be the set of customers who like Product B, with $\\lvert B \\rvert = 90$. It is found that $\\lvert A \\cap B \\rvert = 50$ customers like both products.",
+    "statements": [
+      "The number of customers who like at least one of the two products, $\\lvert A \\cup B \\rvert$, is 170.",
+      "The number of customers who like neither product is 40. 13",
+      "The number of customers who like only Product A (A but not B) is 90.",
+      "$A \\cap B \\subseteq A$.",
+      "Since $\\lvert A \\rvert$ + $\\lvert B \\rvert = 210$ exceeds the 200 customers surveyed, this proves that EXACTLY 10 customers like both products, with no other value being possible."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The number of customers who like at least one of the two products, $\\lvert A \\cup B \\rvert$, is 170.**  (false)\n\nTrap: by inclusion-exclusion, $\\lvert A \\cup B \\rvert = \\lvert A \\rvert$ + $\\lvert B \\rvert$ - $\\lvert A \\cap B \\rvert = 120$ + 90 - 50 = 160, not 170 - a simple arithmetic slip.",
+      "**B) The number of customers who like neither product is 40. 13**  (true)\n\nOut of 200 surveyed customers, 160 like at least one product (part a), so 200 - 160 = 40 like neither.",
+      "**C) The number of customers who like only Product A (A but not B) is 90.**  (false)\n\nTrap: customers who like only Product A are those in A but excluded from the overlap: $\\lvert A \\rvert$ - $\\lvert A \\cap B \\rvert = 120$ - 50 = 70, not 90.",
+      "**D) $A \\cap B \\subseteq A$.**  (true)\n\nEvery customer who likes both products necessarily likes Product A, so by definition the intersection is always a subset of A (and, symmetrically, of B) - this holds for any two sets, not just this survey.",
+      "**E) Since $\\lvert A \\rvert$ + $\\lvert B \\rvert = 210$ exceeds the 200 customers surveyed, this proves that EXACTLY 10 customers like both products, with no other value being possible.**  (false)\n\nTrap: this only forces $\\lvert A \\cap B \\rvert$ ≥ $\\lvert A \\rvert$ + $\\lvert B \\rvert$ - 200 = 210 - 200 = 10, a MINIMUM bound, not an exact value. The actual overlap (50, as given) is consistent with, and comfortably exceeds, this minimum - \"exactly 10\" overreaches what the bound alone can prove. PART II - Logic Tier 1 - Foundations"
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 7,
+    "solution_overview": "A market research firm surveys 200 customers. Let A be the set of customers who like Product A, with $\\lvert A \\rvert = 120$. Let B be the set of customers who like Product B, with $\\lvert B \\rvert = 90$. It is found that $\\lvert A \\cap B \\rvert = 50$ customers like both products.\n\n**Part 1: Setup.**\n\nRead the given sets or propositions carefully, then work out the objects or facts shared by every statement below, once, before judging any individual claim.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-30",
+    "case_id": "MATH 1.30",
+    "title": "Union, Intersection, and Difference of Three Sets",
+    "subsection": "1.2",
+    "context": "Let $A = \\{1, 2, 3, 4\\}$, $B = \\{3, 4, 5, 6\\}$, and $C = \\{7, 8, 9\\}$.",
+    "statements": [
+      "$A \\cup B = \\{1, 2, 3, 4, 5, 6\\}$.",
+      "$A \\cap B = \\{3, 4\\}$.",
+      "$A \\setminus B = \\{1, 2\\}$.",
+      "$B \\setminus A = A \\setminus B$.",
+      "A and C are disjoint sets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $A \\cup B = \\{1, 2, 3, 4, 5, 6\\}$.**  (true)\n\nCombining every element of A or B (or both) gives $\\{1, 2, 3, 4, 5, 6\\}$.",
+      "**B) $A \\cap B = \\{3, 4\\}$.**  (true)\n\nThe elements common to both A and B are exactly $\\{3, 4\\}$.",
+      "**C) $A \\setminus B = \\{1, 2\\}$.**  (true)\n\nRemoving from A every element that is also in B leaves $\\{1, 2\\}$.",
+      "**D) $B \\setminus A = A \\setminus B$.**  (false)\n\nSet difference is not commutative in general: $A \\setminus B = \\{1, 2\\}$ while $B \\setminus A = \\{5, 6\\}$ — different sets, so the equality fails.",
+      "**E) A and C are disjoint sets.**  (true)\n\n$A \\cap C = \\emptyset$, so A and C share no elements and are disjoint."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 8,
+    "solution_overview": "Let $A = \\{1, 2, 3, 4\\}$, $B = \\{3, 4, 5, 6\\}$, and $C = \\{7, 8, 9\\}$.\n\n**Part 1: Setup.**\n\nCompute the shared objects once: $A \\cup B = \\{1, 2, 3, 4, 5, 6\\}$, $A \\cap B = \\{3, 4\\}$, $A \\setminus B = \\{1, 2\\}$, $B \\setminus A = \\{5, 6\\}$.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-31",
+    "case_id": "MATH 1.31",
+    "title": "Set Operations on Multiples of Ten",
+    "subsection": "1.2",
+    "context": "Let $A = \\{10, 20, 30, 40, 50\\}$, $B = \\{30, 40, 50, 60\\}$, and $C = \\{1, 2, 3\\}$.",
+    "statements": [
+      "$A \\cup B = \\{10, 20, 30, 40, 50, 60\\}$.",
+      "$A \\cap B = \\{30, 40, 50\\}$.",
+      "$A \\setminus B = \\{10, 20\\}$.",
+      "$B \\setminus A = A \\setminus B$.",
+      "A and C are disjoint sets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $A \\cup B = \\{10, 20, 30, 40, 50, 60\\}$.**  (true)\n\nCombining every element of A or B (or both) gives $\\{10, 20, 30, 40, 50, 60\\}$.",
+      "**B) $A \\cap B = \\{30, 40, 50\\}$.**  (true)\n\nThe elements common to both A and B are exactly $\\{30, 40, 50\\}$.",
+      "**C) $A \\setminus B = \\{10, 20\\}$.**  (true)\n\nRemoving from A every element that is also in B leaves $\\{10, 20\\}$.",
+      "**D) $B \\setminus A = A \\setminus B$.**  (false)\n\nSet difference is not commutative in general: $A \\setminus B = \\{10, 20\\}$ while $B \\setminus A = \\{60\\}$ — different sets, so the equality fails.",
+      "**E) A and C are disjoint sets.**  (true)\n\n$A \\cap C = \\emptyset$, so A and C share no elements and are disjoint."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 9,
+    "solution_overview": "Let $A = \\{10, 20, 30, 40, 50\\}$, $B = \\{30, 40, 50, 60\\}$, and $C = \\{1, 2, 3\\}$.\n\n**Part 1: Setup.**\n\nCompute the shared objects once: $A \\cup B = \\{10, 20, 30, 40, 50, 60\\}$, $A \\cap B = \\{30, 40, 50\\}$, $A \\setminus B = \\{10, 20\\}$, $B \\setminus A = \\{60\\}$.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-32",
+    "case_id": "MATH 1.32",
+    "title": "Set Operations with Letters",
+    "subsection": "1.2",
+    "context": "Let $A = \\{a, b, c, d\\}$, $B = \\{c, d, e\\}$, and $C = \\{x, y\\}$.",
+    "statements": [
+      "$A \\cup B = \\{a, b, c, d, e\\}$.",
+      "$A \\cap B = \\{c, d\\}$.",
+      "$A \\setminus B = \\{a, b\\}$.",
+      "$B \\setminus A = A \\setminus B$.",
+      "A and C are disjoint sets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $A \\cup B = \\{a, b, c, d, e\\}$.**  (true)\n\nCombining every element of A or B (or both) gives $\\{a, b, c, d, e\\}$.",
+      "**B) $A \\cap B = \\{c, d\\}$.**  (true)\n\nThe elements common to both A and B are exactly $\\{c, d\\}$.",
+      "**C) $A \\setminus B = \\{a, b\\}$.**  (true)\n\nRemoving from A every element that is also in B leaves $\\{a, b\\}$.",
+      "**D) $B \\setminus A = A \\setminus B$.**  (false)\n\nSet difference is not commutative in general: $A \\setminus B = \\{a, b\\}$ while $B \\setminus A = \\{e\\}$ — different sets, so the equality fails.",
+      "**E) A and C are disjoint sets.**  (true)\n\n$A \\cap C = \\emptyset$, so A and C share no elements and are disjoint."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 10,
+    "solution_overview": "Let $A = \\{a, b, c, d\\}$, $B = \\{c, d, e\\}$, and $C = \\{x, y\\}$.\n\n**Part 1: Setup.**\n\nCompute the shared objects once: $A \\cup B = \\{a, b, c, d, e\\}$, $A \\cap B = \\{c, d\\}$, $A \\setminus B = \\{a, b\\}$, $B \\setminus A = \\{e\\}$.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-33",
+    "case_id": "MATH 1.33",
+    "title": "De Morgan's Laws with a Ten-Element Universe",
+    "subsection": "1.2",
+    "context": "Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$ be the universal set, $A = \\{1, 2, 3, 4, 5\\}$, and $B = \\{4, 5, 6, 7, 8\\}$.",
+    "statements": [
+      "$(A \\cup B)^c = \\{9, 10\\}$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{6, 7, 8, 9, 10\\}$.",
+      "$(A \\cap B)^c = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $(A \\cup B)^c = \\{9, 10\\}$.**  (true)\n\n$A \\cup B = \\{1, 2, 3, 4, 5, 6, 7, 8\\}$; everything in U outside that union is $\\{9, 10\\}$.",
+      "**B) $(A \\cup B)^c = A^c \\cap B^c$.**  (true)\n\nThis is De Morgan's law for sets, and it holds in general — it also checks out numerically here.",
+      "**C) $(A \\cap B)^c = A^c \\cup B^c$.**  (true)\n\nThis is the other De Morgan law, and it holds in general — confirmed numerically here as well.",
+      "**D) $A^c = \\{6, 7, 8, 9, 10\\}$.**  (true)\n\nRemoving A's elements from U leaves exactly $\\{6, 7, 8, 9, 10\\}$.",
+      "**E) $(A \\cap B)^c = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$.**  (true)\n\n$A \\cap B = \\{4, 5\\}$; everything in U outside that intersection is $\\{1, 2, 3, 6, 7, 8, 9, 10\\}$."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 11,
+    "solution_overview": "Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$ be the universal set, $A = \\{1, 2, 3, 4, 5\\}$, and $B = \\{4, 5, 6, 7, 8\\}$.\n\n**Part 1: Setup.**\n\nCompute once: $A \\cup B = \\{1, 2, 3, 4, 5, 6, 7, 8\\}$, so $(A \\cup B)^c = \\{9, 10\\}$; and $A \\cap B = \\{4, 5\\}$, so $(A \\cap B)^c = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-34",
+    "case_id": "MATH 1.34",
+    "title": "Complements of Disjoint Odd and Even Sets",
+    "subsection": "1.2",
+    "context": "Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$ be the universal set, $A = \\{1, 3, 5, 7, 9, 11\\}$, and $B = \\{2, 4, 6, 8, 10, 12\\}$.",
+    "statements": [
+      "$(A \\cup B)^c = \\emptyset$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{2, 4, 6, 8, 10, 12\\}$.",
+      "$(A \\cap B)^c = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $(A \\cup B)^c = \\emptyset$.**  (true)\n\n$A \\cup B = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$; everything in U outside that union is $\\emptyset$.",
+      "**B) $(A \\cup B)^c = A^c \\cap B^c$.**  (true)\n\nThis is De Morgan's law for sets, and it holds in general — it also checks out numerically here.",
+      "**C) $(A \\cap B)^c = A^c \\cup B^c$.**  (true)\n\nThis is the other De Morgan law, and it holds in general — confirmed numerically here as well.",
+      "**D) $A^c = \\{2, 4, 6, 8, 10, 12\\}$.**  (true)\n\nRemoving A's elements from U leaves exactly $\\{2, 4, 6, 8, 10, 12\\}$.",
+      "**E) $(A \\cap B)^c = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$.**  (true)\n\n$A \\cap B = \\emptyset$; everything in U outside that intersection is $\\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 12,
+    "solution_overview": "Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$ be the universal set, $A = \\{1, 3, 5, 7, 9, 11\\}$, and $B = \\{2, 4, 6, 8, 10, 12\\}$.\n\n**Part 1: Setup.**\n\nCompute once: $A \\cup B = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$, so $(A \\cup B)^c = \\emptyset$; and $A \\cap B = \\emptyset$, so $(A \\cap B)^c = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-35",
+    "case_id": "MATH 1.35",
+    "title": "De Morgan's Laws with Letter Sets",
+    "subsection": "1.2",
+    "context": "Let $U = \\{p, q, r, s, t, u\\}$ be the universal set, $A = \\{p, q, r\\}$, and $B = \\{r, s\\}$.",
+    "statements": [
+      "$(A \\cup B)^c = \\{t, u\\}$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{s, t, u\\}$.",
+      "$(A \\cap B)^c = \\{p, q, s, t, u\\}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $(A \\cup B)^c = \\{t, u\\}$.**  (true)\n\n$A \\cup B = \\{p, q, r, s\\}$; everything in U outside that union is $\\{t, u\\}$.",
+      "**B) $(A \\cup B)^c = A^c \\cap B^c$.**  (true)\n\nThis is De Morgan's law for sets, and it holds in general — it also checks out numerically here.",
+      "**C) $(A \\cap B)^c = A^c \\cup B^c$.**  (true)\n\nThis is the other De Morgan law, and it holds in general — confirmed numerically here as well.",
+      "**D) $A^c = \\{s, t, u\\}$.**  (true)\n\nRemoving A's elements from U leaves exactly $\\{s, t, u\\}$.",
+      "**E) $(A \\cap B)^c = \\{p, q, s, t, u\\}$.**  (true)\n\n$A \\cap B = \\{r\\}$; everything in U outside that intersection is $\\{p, q, s, t, u\\}$."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 13,
+    "solution_overview": "Let $U = \\{p, q, r, s, t, u\\}$ be the universal set, $A = \\{p, q, r\\}$, and $B = \\{r, s\\}$.\n\n**Part 1: Setup.**\n\nCompute once: $A \\cup B = \\{p, q, r, s\\}$, so $(A \\cup B)^c = \\{t, u\\}$; and $A \\cap B = \\{r\\}$, so $(A \\cap B)^c = \\{p, q, s, t, u\\}$.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-36",
+    "case_id": "MATH 1.36",
+    "title": "Cartesian Products and Ordered Pairs",
+    "subsection": "1.2",
+    "context": "Let $A = \\{1, 2\\}$ and $B = \\{x, y, z\\}$.",
+    "statements": [
+      "$\\lvert A \\times B\\rvert = 6$.",
+      "$(1, x) \\in A \\times B$.",
+      "$(x, 1) \\in A \\times B$.",
+      "$A \\times B = B \\times A$.",
+      "$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $\\lvert A \\times B\\rvert = 6$.**  (true)\n\n$\\lvert A \\times B\\rvert = \\lvert A\\rvert \\cdot \\lvert B\\rvert = 2 \\times 3 = 6$, matching exactly.",
+      "**B) $(1, x) \\in A \\times B$.**  (true)\n\n$A \\times B$ contains every pair with first coordinate in A and second in B, so $(1, x)$ qualifies.",
+      "**C) $(x, 1) \\in A \\times B$.**  (false)\n\n$(x, 1)$ has its first coordinate x from B, not A, so it is not a member of $A \\times B$ — only pairs with their first element from A qualify.",
+      "**D) $A \\times B = B \\times A$.**  (false)\n\nCartesian products are order-sensitive: $A \\times B$ pairs A-elements first, while $B \\times A$ pairs B-elements first — the pairs themselves differ even though both sets have the same size.",
+      "**E) $\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$.**  (true)\n\nBoth products have $\\lvert A\\rvert \\cdot \\lvert B\\rvert = 6$ pairs, so their sizes always match even when the pairs themselves differ."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 14,
+    "solution_overview": "Let $A = \\{1, 2\\}$ and $B = \\{x, y, z\\}$.\n\n**Part 1: Setup.**\n\n$\\lvert A \\times B\\rvert = \\lvert A\\rvert \\cdot \\lvert B\\rvert = 2 \\times 3 = 6$ in both directions, but the ordered pairs differ.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$. Cartesian products are ordered: $A \\times B$ generally differs from $B \\times A$ even though $\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-37",
+    "case_id": "MATH 1.37",
+    "title": "Cartesian Product Size vs. Pair Membership",
+    "subsection": "1.2",
+    "context": "Let $A = \\{m, n, p\\}$ and $B = \\{1, 2\\}$.",
+    "statements": [
+      "$\\lvert A \\times B\\rvert = 6$.",
+      "$(m, 1) \\in A \\times B$.",
+      "$(1, m) \\in A \\times B$.",
+      "$A \\times B = B \\times A$.",
+      "$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $\\lvert A \\times B\\rvert = 6$.**  (true)\n\n$\\lvert A \\times B\\rvert = \\lvert A\\rvert \\cdot \\lvert B\\rvert = 3 \\times 2 = 6$, matching exactly.",
+      "**B) $(m, 1) \\in A \\times B$.**  (true)\n\n$A \\times B$ contains every pair with first coordinate in A and second in B, so $(m, 1)$ qualifies.",
+      "**C) $(1, m) \\in A \\times B$.**  (false)\n\n$(1, m)$ has its first coordinate $1$ from B, not A, so it is not a member of $A \\times B$ — only pairs with their first element from A qualify.",
+      "**D) $A \\times B = B \\times A$.**  (false)\n\nCartesian products are order-sensitive: $A \\times B$ pairs A-elements first, while $B \\times A$ pairs B-elements first — the pairs themselves differ even though both sets have the same size.",
+      "**E) $\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$.**  (true)\n\nBoth products have $\\lvert A\\rvert \\cdot \\lvert B\\rvert = 6$ pairs, so their sizes always match even when the pairs themselves differ."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 15,
+    "solution_overview": "Let $A = \\{m, n, p\\}$ and $B = \\{1, 2\\}$.\n\n**Part 1: Setup.**\n\n$\\lvert A \\times B\\rvert = \\lvert A\\rvert \\cdot \\lvert B\\rvert = 3 \\times 2 = 6$ in both directions, but the ordered pairs differ.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$. Cartesian products are ordered: $A \\times B$ generally differs from $B \\times A$ even though $\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-38",
+    "case_id": "MATH 1.38",
+    "title": "Symmetric Difference of Two Odd-Number Sets",
+    "subsection": "1.2",
+    "context": "Let $A = \\{1, 3, 5, 7, 9\\}$ and $B = \\{3, 5, 7, 11, 13\\}$.",
+    "statements": [
+      "$A \\setminus B = \\{1, 9\\}$.",
+      "$B \\setminus A = \\{11, 13\\}$.",
+      "$A \\triangle B = \\{1, 9, 11, 13\\}$.",
+      "$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.",
+      "$A \\triangle B = A \\cup B$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $A \\setminus B = \\{1, 9\\}$.**  (true)\n\nRemoving from A every element also in B leaves $\\{1, 9\\}$.",
+      "**B) $B \\setminus A = \\{11, 13\\}$.**  (true)\n\nRemoving from B every element also in A leaves $\\{11, 13\\}$.",
+      "**C) $A \\triangle B = \\{1, 9, 11, 13\\}$.**  (true)\n\n$A \\triangle B = (A \\setminus B) \\cup (B \\setminus A) = \\{1, 9\\} \\cup \\{11, 13\\} = \\{1, 9, 11, 13\\}$.",
+      "**D) $(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.**  (true)\n\nBy construction, $A \\setminus B$ only contains elements outside B and $B \\setminus A$ only contains elements outside A, so the two can never share an element.",
+      "**E) $A \\triangle B = A \\cup B$.**  (false)\n\n$A \\triangle B$ excludes the shared elements $A \\cap B = \\{3, 5, 7\\}$ from $A \\cup B$, so the symmetric difference is strictly smaller than the union whenever $A \\cap B \\neq \\emptyset$."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 16,
+    "solution_overview": "Let $A = \\{1, 3, 5, 7, 9\\}$ and $B = \\{3, 5, 7, 11, 13\\}$.\n\n**Part 1: Setup.**\n\nCompute both one-sided differences: $A \\setminus B = \\{1, 9\\}$ and $B \\setminus A = \\{11, 13\\}$; their union is $A \\triangle B$.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$. Symmetric difference: $A \\triangle B = (A \\setminus B) \\cup (B \\setminus A)$, the elements in exactly one of the two sets.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
+  },
+  {
+    "id": "math-1-39",
+    "case_id": "MATH 1.39",
+    "title": "Symmetric Difference of Disjoint Sets",
+    "subsection": "1.2",
+    "context": "Let $A = \\{2, 4, 6\\}$ and $B = \\{1, 3, 5\\}$.",
+    "statements": [
+      "$A \\setminus B = \\{2, 4, 6\\}$.",
+      "$B \\setminus A = \\{1, 3, 5\\}$.",
+      "$A \\triangle B = \\{1, 2, 3, 4, 5, 6\\}$.",
+      "$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.",
+      "$A \\triangle B = A \\cup B$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $A \\setminus B = \\{2, 4, 6\\}$.**  (true)\n\nRemoving from A every element also in B leaves $\\{2, 4, 6\\}$.",
+      "**B) $B \\setminus A = \\{1, 3, 5\\}$.**  (true)\n\nRemoving from B every element also in A leaves $\\{1, 3, 5\\}$.",
+      "**C) $A \\triangle B = \\{1, 2, 3, 4, 5, 6\\}$.**  (true)\n\n$A \\triangle B = (A \\setminus B) \\cup (B \\setminus A) = \\{2, 4, 6\\} \\cup \\{1, 3, 5\\} = \\{1, 2, 3, 4, 5, 6\\}$.",
+      "**D) $(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.**  (true)\n\nBy construction, $A \\setminus B$ only contains elements outside B and $B \\setminus A$ only contains elements outside A, so the two can never share an element.",
+      "**E) $A \\triangle B = A \\cup B$.**  (true)\n\nHere $A \\cap B = \\emptyset$ is empty, so nothing is excluded from the union, making $A \\triangle B$ coincide with $A \\cup B$."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 17,
+    "solution_overview": "Let $A = \\{2, 4, 6\\}$ and $B = \\{1, 3, 5\\}$.\n\n**Part 1: Setup.**\n\nCompute both one-sided differences: $A \\setminus B = \\{2, 4, 6\\}$ and $B \\setminus A = \\{1, 3, 5\\}$; their union is $A \\triangle B$.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$. Symmetric difference: $A \\triangle B = (A \\setminus B) \\cup (B \\setminus A)$, the elements in exactly one of the two sets.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
+  },
+  {
+    "id": "math-1-40",
+    "case_id": "MATH 1.40",
+    "title": "Chess and Checkers Club Overlap",
+    "subsection": "1.2",
+    "context": "Of $40$ students in a games club, $22$ play chess (A) and $15$ play checkers (B); $6$ students play both.",
+    "statements": [
+      "$\\lvert A \\cup B\\rvert = 31$.",
+      "Exactly $16$ people are in A only (not B).",
+      "Exactly $9$ people are in neither A nor B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Exactly $9$ people are in B only (not A)."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $\\lvert A \\cup B\\rvert = 31$.**  (true)\n\nBy inclusion-exclusion, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert = 22 + 15 - 6 = 31$.",
+      "**B) Exactly $16$ people are in A only (not B).**  (true)\n\nMembers of A only exclude the overlap: $\\lvert A\\rvert - \\lvert A \\cap B\\rvert = 22 - 6 = 16$.",
+      "**C) Exactly $9$ people are in neither A nor B.**  (true)\n\nOut of 40 total, $31$ are in $A \\cup B$, leaving $40 - 31 = 9$ in neither set.",
+      "**D) $\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.**  (false)\n\nThe intersection can never exceed the union: $\\lvert A \\cap B\\rvert = 6$ is at most $\\lvert A \\cup B\\rvert = 31$, so this claim is false.",
+      "**E) Exactly $9$ people are in B only (not A).**  (true)\n\nMembers of B only exclude the overlap: $\\lvert B\\rvert - \\lvert A \\cap B\\rvert = 15 - 6 = 9$."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 18,
+    "solution_overview": "Of $40$ students in a games club, $22$ play chess (A) and $15$ play checkers (B); $6$ students play both.\n\n**Part 1: Setup.**\n\nApply $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert = 22 + 15 - 6 = 31$ once, then read off every other count from it.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-41",
+    "case_id": "MATH 1.41",
+    "title": "Two Language Courses in One Cohort",
+    "subsection": "1.2",
+    "context": "Of $60$ students, $34$ are enrolled in Spanish (A) and $28$ in French (B); $12$ students are enrolled in both.",
+    "statements": [
+      "$\\lvert A \\cup B\\rvert = 50$.",
+      "Exactly $22$ people are in A only (not B).",
+      "Exactly $10$ people are in neither A nor B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Exactly $16$ people are in B only (not A)."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $\\lvert A \\cup B\\rvert = 50$.**  (true)\n\nBy inclusion-exclusion, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert = 34 + 28 - 12 = 50$.",
+      "**B) Exactly $22$ people are in A only (not B).**  (true)\n\nMembers of A only exclude the overlap: $\\lvert A\\rvert - \\lvert A \\cap B\\rvert = 34 - 12 = 22$.",
+      "**C) Exactly $10$ people are in neither A nor B.**  (true)\n\nOut of 60 total, $50$ are in $A \\cup B$, leaving $60 - 50 = 10$ in neither set.",
+      "**D) $\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.**  (false)\n\nThe intersection can never exceed the union: $\\lvert A \\cap B\\rvert = 12$ is at most $\\lvert A \\cup B\\rvert = 50$, so this claim is false.",
+      "**E) Exactly $16$ people are in B only (not A).**  (true)\n\nMembers of B only exclude the overlap: $\\lvert B\\rvert - \\lvert A \\cap B\\rvert = 28 - 12 = 16$."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 19,
+    "solution_overview": "Of $60$ students, $34$ are enrolled in Spanish (A) and $28$ in French (B); $12$ students are enrolled in both.\n\n**Part 1: Setup.**\n\nApply $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert = 34 + 28 - 12 = 50$ once, then read off every other count from it.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-42",
+    "case_id": "MATH 1.42",
+    "title": "Gym Members Using Two Facilities",
+    "subsection": "1.2",
+    "context": "Of $50$ gym members, $20$ use the pool (A) and $18$ use the sauna (B); $5$ members use both.",
+    "statements": [
+      "$\\lvert A \\cup B\\rvert = 33$.",
+      "Exactly $15$ people are in A only (not B).",
+      "Exactly $17$ people are in neither A nor B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Exactly $13$ people are in B only (not A)."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $\\lvert A \\cup B\\rvert = 33$.**  (true)\n\nBy inclusion-exclusion, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert = 20 + 18 - 5 = 33$.",
+      "**B) Exactly $15$ people are in A only (not B).**  (true)\n\nMembers of A only exclude the overlap: $\\lvert A\\rvert - \\lvert A \\cap B\\rvert = 20 - 5 = 15$.",
+      "**C) Exactly $17$ people are in neither A nor B.**  (true)\n\nOut of 50 total, $33$ are in $A \\cup B$, leaving $50 - 33 = 17$ in neither set.",
+      "**D) $\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.**  (false)\n\nThe intersection can never exceed the union: $\\lvert A \\cap B\\rvert = 5$ is at most $\\lvert A \\cup B\\rvert = 33$, so this claim is false.",
+      "**E) Exactly $13$ people are in B only (not A).**  (true)\n\nMembers of B only exclude the overlap: $\\lvert B\\rvert - \\lvert A \\cap B\\rvert = 18 - 5 = 13$."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 20,
+    "solution_overview": "Of $50$ gym members, $20$ use the pool (A) and $18$ use the sauna (B); $5$ members use both.\n\n**Part 1: Setup.**\n\nApply $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert = 20 + 18 - 5 = 33$ once, then read off every other count from it.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
+  },
+  {
+    "id": "math-1-43",
+    "case_id": "MATH 1.43",
+    "title": "Three Overlapping Hobby Clubs",
+    "subsection": "1.2",
+    "context": "In a survey of hobby-club members: $30$ do photography (A), $25$ do hiking (B), and $20$ do cooking (C). $10$ do both photography and hiking, $8$ do both photography and cooking, $7$ do both hiking and cooking, and $3$ do all three.",
+    "statements": [
+      "$\\lvert A \\cup B \\cup C\\rvert = 53$.",
+      "Every member who does all three activities is counted in $\\lvert A \\cap B\\rvert$, $\\lvert A \\cap C\\rvert$, and $\\lvert B \\cap C\\rvert$.",
+      "The number who do photography and hiking but not cooking is $7$.",
+      "$\\lvert A \\cap B \\cap C\\rvert \\le \\min(\\lvert A \\cap B\\rvert, \\lvert A \\cap C\\rvert, \\lvert B \\cap C\\rvert)$.",
+      "$\\lvert A \\cup B \\cup C\\rvert > \\lvert A\\rvert + \\lvert B\\rvert + \\lvert C\\rvert$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $\\lvert A \\cup B \\cup C\\rvert = 53$.**  (true)\n\n$\\lvert A \\cup B \\cup C\\rvert = 30+25+20-10-8-7+3 = 53$, applying inclusion-exclusion for three sets once.",
+      "**B) Every member who does all three activities is counted in $\\lvert A \\cap B\\rvert$, $\\lvert A \\cap C\\rvert$, and $\\lvert B \\cap C\\rvert$.**  (true)\n\nAnyone in all three activities lies in every pairwise intersection by definition, so they are counted (and then corrected for) in each pairwise term.",
+      "**C) The number who do photography and hiking but not cooking is $7$.**  (true)\n\nPhotography-and-hiking members number $10$; removing the $3$ who also cook leaves $7$ who do exactly photography and hiking.",
+      "**D) $\\lvert A \\cap B \\cap C\\rvert \\le \\min(\\lvert A \\cap B\\rvert, \\lvert A \\cap C\\rvert, \\lvert B \\cap C\\rvert)$.**  (true)\n\nThe triple overlap can never exceed any pairwise overlap that contains it: $3 \\le \\min(10, 8, 7)$ holds here.",
+      "**E) $\\lvert A \\cup B \\cup C\\rvert > \\lvert A\\rvert + \\lvert B\\rvert + \\lvert C\\rvert$.**  (false)\n\nInclusion-exclusion always subtracts the overlaps, so $\\lvert A \\cup B \\cup C\\rvert = 53$ is at most $\\lvert A\\rvert+\\lvert B\\rvert+\\lvert C\\rvert = 75$, never more."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 21,
+    "solution_overview": "In a survey of hobby-club members: $30$ do photography (A), $25$ do hiking (B), and $20$ do cooking (C). $10$ do both photography and hiking, $8$ do both photography and cooking, $7$ do both hiking and cooking, and $3$ do all three.\n\n**Part 1: Setup.**\n\nApply the three-set inclusion-exclusion formula once, then read off each statement.\n\n**Part 2: Key facts.**\n\n$A \\cup B$ collects everything in A or B (or both); $A \\cap B$ keeps only the shared elements; $A \\setminus B$ removes from A anything also in B (and is not commutative). De Morgan's laws state $(A \\cup B)^c = A^c \\cap B^c$ and $(A \\cap B)^c = A^c \\cup B^c$. For counting, $\\lvert A \\cup B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - \\lvert A \\cap B\\rvert$. For three sets, $\\lvert A \\cup B \\cup C\\rvert = \\lvert A\\rvert+\\lvert B\\rvert+\\lvert C\\rvert-\\lvert A\\cap B\\rvert-\\lvert A\\cap C\\rvert-\\lvert B\\cap C\\rvert+\\lvert A\\cap B\\cap C\\rvert$.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
+  }
+]

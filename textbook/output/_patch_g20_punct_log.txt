@@ -1,0 +1,7 @@
+HITS {'The selection criteria is must become are printed.': 1, "Who's equals who has before the past participle been.": 1, "Who's equals who is before attending.": 1, "Who's been equals who has been.": 1, "Who's attending equals who is attending.": 1, 'One item → criterion; several → criteria.': 1, 'Subject influences object → affect.': 2, 'Subject you plus verb choose → object whomever.': 1, 'The host had invited someone → whomever.': 1, 'Furniture is typically uncountable here → less furniture (or fewer pieces of furniture).': 1, 'Mentors shortlist someone → object case.': 1, 'Confidence is influenced → will affect audience confidence.': 1, 'Influence meaning → beginning to affect my morning runs.': 1, 'Innermost clause — who should review — is subject case → whoever you think should review it.': 1, 'Influence on the timeline → will affect the project timeline.': 1, 'Agency shortlisted someone → object case.': 1, 'One of + plural noun → singular verb for that one item.': 1, 'Approvals are countable → fewer formal approvals.': 1}
+MISSING []
+MULTI {'Subject influences object → affect.': 2}
+claim_issues 0
+bans 0
+Wrote C:\Users\bubli\Projects\bbe-school-fixed\src\data\english\grammar_parts\g.20.json
+tasks 20

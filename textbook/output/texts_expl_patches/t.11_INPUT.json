@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.11",
+  "title": "The Silicon Chokepoint — How a Few Factories Reshaped Global Power",
+  "passage": "(1) Almost every modern electronic device, from smartphones to fighter jets to washing machines, depends on semiconductor chips whose manufacture is concentrated in a strikingly small number of facilities worldwide. A single company, Taiwan Semiconductor Manufacturing Company (TSMC), produces more than 90% of the world's most advanced logic chips, those built using process technologies at or below 7 nanometres, creating a level of geographic concentration that would be considered reckless in almost any other critical industry.\n\n(2) This concentration did not emerge by accident. Constructing a single leading-edge fabrication plant, or \"fab,\" now costs upward of $20 billion and requires equipment so precise that a single deep ultraviolet lithography machine, essential for etching circuit patterns onto silicon wafers, can cost more than $150 million and weighs as much as a small aircraft. Only one company in the world, the Dutch firm ASML, currently manufactures the most advanced version of this equipment, creating a second, narrower chokepoint layered on top of the first.\n\n(3) The economics driving this concentration follow a pattern chip industry veterans call \"Moore's Second Law\": while the number of transistors on a chip has historically doubled roughly every two years, the capital cost of the factories needed to manufacture those increasingly dense chips has risen even faster, making it progressively harder for new entrants to compete at the cutting edge without government-scale financial backing.\n\n(4) The 2020–2021 global chip shortage exposed just how disruptive this concentration could become. A production slowdown affecting a relatively narrow category of automotive-grade chips, worth a small fraction of the overall semiconductor market, nonetheless forced automakers worldwide to idle assembly lines, ultimately reducing global vehicle production by an estimated 11.3 million units and costing the industry tens of billions of dollars in lost revenue.\n\n(5) Governments have responded with unusually direct industrial intervention. Beyond the United States' CHIPS Act, discussed in relation to reshoring elsewhere, South Korea announced a $450 billion publicprivate investment programme in 2021 aimed at expanding domestic chip manufacturing capacity, while Japan, once the dominant force in global chip production during the 1980s before losing significant market share to competitors, has similarly begun subsidising new fabrication facilities in an explicit attempt to rebuild capability it had allowed to atrophy.\n\n(6) Taiwan's outsized role carries geopolitical weight extending well beyond ordinary trade considerations. Some analysts have described TSMC's dominance as a form of \"silicon shield,\" theorising that the island's indispensability to global electronics supply chains gives other nations a powerful incentive to help ensure its continued security, though critics counter that this dynamic could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one.\n\n(7) Meanwhile, China has invested heavily in developing an independent domestic chip industry, partly in response to export restrictions imposed by the United States on advanced chipmaking equipment. Despite billions of dollars in state investment, Chinese manufacturers as of the early 2020s remained several process-technology generations behind the industry's absolute cutting edge, illustrating how difficult it is to close this particular technological gap through capital investment alone, without also replicating decades of accumulated engineering expertise.\n\n(8) Even chips considered technologically unremarkable by industry standards, so-called legacy chips manufactured using older process nodes, remain critical to everyday products such as cars, appliances, and medical devices, meaning that supply disruptions need not involve cutting-edge technology at all to produce outsized economic consequences.\n\n(9) Whether current efforts to geographically diversify chip production will meaningfully reduce the industry's concentrated vulnerabilities within a reasonable timeframe, or whether the underlying economics of chipmaking will continue to favour concentration regardless of policy intervention, remains an open question actively debated among industry analysts and policymakers.",
+  "tasks": [
+    {
+      "id": "en-t-11-01",
+      "exam_title": "Early Sections",
+      "kind": "reading",
+      "statements": [
+        "TSMC produces more than 90% of the world's most advanced logic chips, defined as those built at or below 7 nanometres.",
+        "A leading-edge fabrication plant now costs upward of $20 billion to construct.",
+        "Multiple companies worldwide currently manufacture the most advanced deep ultraviolet lithography machines, ensuring no single chokepoint exists for this equipment.",
+        "The rising capital cost of advanced fabs is described as making it easier for new companies to enter cutting-edge chip manufacturing.",
+        "A single deep ultraviolet lithography machine can cost more than $150 million."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) TSMC produces more than 90% of the world's most advanced logic chips, defined as those built at or below 7 nanometres.**\n\nParagraph 1 names TSMC as producing more than 90% of the world's most advanced logic chips and defines that class as chips built at or below 7 nanometres. The statement restates both the share and the process cutoff without adding or dropping a detail.\n\n**Tip:** When a quantity and a definition travel together, both must match the passage.\n\nThe claim lines up with Paragraph 1's figure and definition, so it stands.",
+        "**B) A leading-edge fabrication plant now costs upward of $20 billion to construct.**\n\nParagraph 2 states that constructing a single leading-edge fab now costs upward of $20 billion. The statement only shortens that construction-cost claim; the number and direction (\"upward of\") are unchanged.\n\nThe $20 billion construction floor in Paragraph 2 confirms the line.",
+        "**C) Multiple companies worldwide currently manufacture the most advanced deep ultraviolet lithography machines, ensuring no single chokepoint exists for this equipment.**\n\nParagraph 2 says the opposite: only one company in the world, ASML, currently manufactures the most advanced version of this equipment, creating a second, narrower chokepoint. \"Multiple companies\" and \"no single chokepoint\" invert that monopoly.\n\n**Trap:** A true second-chokepoint fact is flipped into a diversified-supply claim.\n\nThe statement fails because Paragraph 2 limits advanced DUV lithography manufacture to ASML alone: \"Only one company in the world, the Dutch firm ASML, currently manufactures the most advanced version of this equipment.\"",
+        "**D) The rising capital cost of advanced fabs is described as making it easier for new companies to enter cutting-edge chip manufacturing.**\n\nParagraph 3 ties rising factory capital costs to Moore's Second Law and says those costs make it \"progressively harder for new entrants to compete at the cutting edge.\" \"Easier\" reverses the directional verb.\n\n**Trap:** Harder → easier is a classic polarity flip on cost barriers.\n\nThe claim fails; the passage says rising costs make entry \"progressively harder,\" not easier.",
+        "**E) A single deep ultraviolet lithography machine can cost more than $150 million.**\n\nParagraph 2 states that a single deep ultraviolet lithography machine can cost more than $150 million. The statement copies that price ceiling without changing the equipment type or the figure.\n\nThe $150 million machine-cost detail in Paragraph 2 matches the statement."
+      ],
+      "highlights": [
+        "produces more than 90% of the world's most advanced logic chips, those built using process technologies at or below 7 nanometres",
+        "Constructing a single leading-edge fabrication plant, or \"fab,\" now costs upward of $20 billion",
+        "Only one company in the world, the Dutch firm ASML, currently manufactures the most advanced version of this equipment",
+        "making it progressively harder for new entrants to compete at the cutting edge",
+        "a single deep ultraviolet lithography machine, essential for etching circuit patterns onto silicon wafers, can cost more than $150 million"
+      ]
+    },
+    {
+      "id": "en-t-11-02",
+      "exam_title": "Middle Sections",
+      "kind": "reading",
+      "statements": [
+        "The 2020–2021 chip shortage is attributed partly to a slowdown in a relatively narrow category of automotive-grade chips.",
+        "This shortage is estimated to have reduced global vehicle production by roughly 11.3 million units.",
+        "South Korea's 2021 investment programme is described as being funded exclusively by private companies without any public involvement.",
+        "Japan is described as having been the dominant force in global chip production during the 1980s before losing significant market share.",
+        "The affected automotive-grade chip category is described as representing a large majority of the overall semiconductor market by value."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The 2020–2021 chip shortage is attributed partly to a slowdown in a relatively narrow category of automotive-grade chips.**\n\nParagraph 4 opens the shortage discussion with \"a production slowdown affecting a relatively narrow category of automotive-grade chips.\" The statement keeps that causal framing — a narrow automotive-grade category, not the whole market.\n\nParagraph 4's slowdown description supports the claim.",
+        "**B) This shortage is estimated to have reduced global vehicle production by roughly 11.3 million units.**\n\nParagraph 4 says the disruption ultimately reduced global vehicle production by an estimated 11.3 million units. \"Roughly\" is a fair hedge around \"estimated\"; the figure itself is unchanged.\n\nThe 11.3 million-unit estimate in Paragraph 4 matches the statement.",
+        "**C) South Korea's 2021 investment programme is described as being funded exclusively by private companies without any public involvement.**\n\nParagraph 5 calls South Korea's 2021 programme a \"$450 billion publicprivate investment programme.\" \"Exclusively… private\" and \"without any public involvement\" erase the public half of that label.\n\n**Trap:** Public–private becomes private-only — watch the funding mix.\n\nThe claim fails; Paragraph 5 marks the programme as public-private, not private-only: \"a $450 billion publicprivate investment programme.\"",
+        "**D) Japan is described as having been the dominant force in global chip production during the 1980s before losing significant market share.**\n\nParagraph 5 says Japan was \"once the dominant force in global chip production during the 1980s before losing significant market share to competitors.\" The statement restates that rise-and-loss arc without inventing a new ranking today.\n\nThe 1980s-dominance-then-loss wording in Paragraph 5 confirms the line.",
+        "**E) The affected automotive-grade chip category is described as representing a large majority of the overall semiconductor market by value.**\n\nParagraph 4 says those automotive-grade chips were \"worth a small fraction of the overall semiconductor market.\" \"Large majority\" is the inverse of \"small fraction.\"\n\n**Trap:** Small market share ↔ large majority is a quantity swap.\n\nThe statement fails; the passage calls the category \"worth a small fraction of the overall semiconductor market,\" not a large majority."
+      ],
+      "highlights": [
+        "A production slowdown affecting a relatively narrow category of automotive-grade chips",
+        "reducing global vehicle production by an estimated 11.3 million units",
+        "a $450 billion publicprivate investment programme in 2021",
+        "Japan, once the dominant force in global chip production during the 1980s before losing significant market share to competitors",
+        "worth a small fraction of the overall semiconductor market"
+      ]
+    },
+    {
+      "id": "en-t-11-03",
+      "exam_title": "Later Sections",
+      "kind": "reading",
+      "statements": [
+        "The \"silicon shield\" theory suggests Taiwan's indispensability gives other nations incentive to help ensure its security.",
+        "Critics of the silicon shield theory argue it could make Taiwan a uniquely tempting target rather than a uniquely protected one.",
+        "Chinese chipmakers, as of the early 2020s, are described as having fully closed the technological gap with the industry's cutting edge.",
+        "Legacy chips are described as irrelevant to critical everyday products such as cars and medical devices.",
+        "The passage concludes by presenting the industry's future concentration as a settled matter with a clear, agreed-upon outcome."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The \"silicon shield\" theory suggests Taiwan's indispensability gives other nations incentive to help ensure its security.**\n\nParagraph 6 explains the \"silicon shield\" idea as theorising that Taiwan's indispensability to global electronics supply chains gives other nations a powerful incentive to help ensure its continued security. The statement strips hedging words but keeps the same protective logic.\n\nThe shield theory in Paragraph 6 matches the claim.",
+        "**B) Critics of the silicon shield theory argue it could make Taiwan a uniquely tempting target rather than a uniquely protected one.**\n\nParagraph 6 immediately counters that the same dynamic \"could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one.\" The statement is that counterargument almost verbatim.\n\nThe critics' target-vs-protected contrast in Paragraph 6 confirms the line.",
+        "**C) Chinese chipmakers, as of the early 2020s, are described as having fully closed the technological gap with the industry's cutting edge.**\n\nParagraph 7 says Chinese manufacturers as of the early 2020s \"remained several process-technology generations behind the industry's absolute cutting edge.\" \"Fully closed\" contradicts \"several… generations behind.\"\n\n**Trap:** Lag in the text becomes catch-up in the statement.\n\nThe claim fails; Paragraph 7 reports Chinese makers \"remained several process-technology generations behind,\" not caught up.",
+        "**D) Legacy chips are described as irrelevant to critical everyday products such as cars and medical devices.**\n\nParagraph 8 says legacy chips \"remain critical to everyday products such as cars, appliances, and medical devices.\" \"Irrelevant\" flips \"critical.\"\n\nThe statement fails; the passage says legacy chips \"remain critical\" to those products, not irrelevant.",
+        "**E) The passage concludes by presenting the industry's future concentration as a settled matter with a clear, agreed-upon outcome.**\n\nParagraph 9 ends by calling whether diversification will reduce concentration — or economics will keep favouring it — \"an open question actively debated among industry analysts and policymakers.\" \"Settled\" and \"agreed-upon\" erase that open debate.\n\n**Trap:** An \"open question\" is dressed up as a closed conclusion.\n\nThe claim fails; Paragraph 9 frames the outcome as \"an open question actively debated,\" not a settled consensus."
+      ],
+      "highlights": [
+        "theorising that the island's indispensability to global electronics supply chains gives other nations a powerful incentive to help ensure its continued security",
+        "critics counter that this dynamic could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one",
+        "Chinese manufacturers as of the early 2020s remained several process-technology generations behind the industry's absolute cutting edge",
+        "remain critical to everyday products such as cars, appliances, and medical devices",
+        "remains an open question actively debated among industry analysts and policymakers"
+      ]
+    },
+    {
+      "id": "en-t-11-04",
+      "exam_title": "Disguised Inference Traps",
+      "kind": "reading",
+      "statements": [
+        "Since ASML is the sole manufacturer of the most advanced lithography machines, it can be inferred that any country lacking access to ASML's equipment would face significant obstacles reaching the industry's cutting edge.",
+        "Because rising fab costs have outpaced transistor-density gains under \"Moore's Second Law,\" it can be inferred that entering cutting-edge manufacturing has become relatively more, not less, difficult over time.",
+        "Because the chip shortage's automotive impact was disproportionate to that category's market share, it can be inferred that even a narrow, low-value disruption can produce outsized economic consequences.",
+        "Since China has invested billions in domestic chip production, it can be inferred that state investment alone is sufficient to fully replicate decades of accumulated engineering expertise.",
+        "Because Japan is subsidising new fabrication facilities, it can be inferred that Japan currently holds the largest share of global advanced chip manufacturing."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Since ASML is the sole manufacturer of the most advanced lithography machines, it can be inferred that any country lacking access to ASML's equipment would face significant obstacles reaching the industry's cutting edge.**\n\nParagraph 2 calls ASML's monopoly a second, narrower chokepoint layered on TSMC concentration, and the machines are described as essential for etching advanced patterns. If the only maker is ASML, denied access logically blocks the path to the cutting edge.\n\n**Tip:** A named sole supplier of \"essential\" gear supports a real barrier inference — stay inside that logic, don't invent extra firms.\n\nThe inference follows from ASML's sole-maker chokepoint in Paragraph 2, so the statement holds.",
+        "**B) Because rising fab costs have outpaced transistor-density gains under \"Moore's Second Law,\" it can be inferred that entering cutting-edge manufacturing has become relatively more, not less, difficult over time.**\n\nParagraph 3 says capital costs have risen even faster than transistor doubling, \"making it progressively harder for new entrants to compete at the cutting edge.\" \"More, not less, difficult\" is exactly that progressive-hardening claim.\n\nMoore's Second Law in Paragraph 3 supports the inference that entry has gotten harder over time.",
+        "**C) Because the chip shortage's automotive impact was disproportionate to that category's market share, it can be inferred that even a narrow, low-value disruption can produce outsized economic consequences.**\n\nParagraph 4 stresses a relatively narrow, small-fraction automotive category that still idled lines and cut about 11.3 million vehicles. The mismatch between small market share and huge production damage is the disproportion the statement names.\n\nThe narrow-category / outsized-impact pairing in Paragraph 4 backs the inference.",
+        "**D) Since China has invested billions in domestic chip production, it can be inferred that state investment alone is sufficient to fully replicate decades of accumulated engineering expertise.**\n\nParagraph 7 says that despite billions in state investment, China still lagged several generations behind, \"illustrating how difficult it is to close this particular technological gap through capital investment alone, without also replicating decades of accumulated engineering expertise.\" \"Sufficient alone\" contradicts \"not… alone.\"\n\n**Trap:** Heavy spending in the text is twisted into proof that money is enough.\n\nThe inference fails; Paragraph 7 denies that capital alone can replace \"decades of accumulated engineering expertise.\"",
+        "**E) Because Japan is subsidising new fabrication facilities, it can be inferred that Japan currently holds the largest share of global advanced chip manufacturing.**\n\nParagraph 5 says Japan is subsidising new fabs to rebuild capability it allowed to atrophy after losing 1980s dominance. Paragraph 1 already assigns more than 90% of the most advanced logic chips to TSMC in Taiwan — not to Japan. Subsidies for recovery do not equal today's lead.\n\n**Trap:** Policy effort today is mistaken for current market leadership.\n\nThe inference fails; leadership sits with TSMC's \"more than 90%\" share, while Japan is described as rebuilding lost ground."
+      ],
+      "highlights": [
+        "Only one company in the world, the Dutch firm ASML, currently manufactures the most advanced version of this equipment, creating a second, narrower chokepoint layered on top of the first",
+        "the capital cost of the factories needed to manufacture those increasingly dense chips has risen even faster, making it progressively harder for new entrants to compete at the cutting edge",
+        "worth a small fraction of the overall semiconductor market, nonetheless forced automakers worldwide to idle assembly lines, ultimately reducing global vehicle production by an estimated 11.3 million units",
+        "without also replicating decades of accumulated engineering expertise",
+        "produces more than 90% of the world's most advanced logic chips"
+      ]
+    },
+    {
+      "id": "en-t-11-05",
+      "exam_title": "Disguised Cross-Section Synthesis",
+      "kind": "reading",
+      "statements": [
+        "The extreme cost and complexity described early in the passage help explain why so few countries or companies can realistically compete at the industry's cutting edge.",
+        "The chip shortage's disproportionate impact on vehicle production is consistent with the later point that even legacy, technologically unremarkable chips can cause significant disruption.",
+        "Because South Korea and Japan are both investing in domestic capacity, the passage implies these efforts have already fully resolved the industry's underlying geographic concentration.",
+        "The \"silicon shield\" theory and the critics' counterargument together illustrate that Taiwan's chip dominance carries genuinely contested strategic implications, not a single agreed-upon interpretation.",
+        "Because China remains several generations behind despite heavy investment, this is consistent with the earlier point that capital cost alone does not guarantee competitive success at the cutting edge."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The extreme cost and complexity described early in the passage help explain why so few countries or companies can realistically compete at the industry's cutting edge.**\n\nParagraphs 2–3 stack $20 billion fabs, $150 million lithography tools, a single ASML supplier, and Moore's Second Law capital barriers. Those early obstacles are precisely why new entrants struggle at the cutting edge without government-scale backing.\n\nThe early cost-and-complexity stack explains the scarcity of cutting-edge competitors, so the synthesis holds.",
+        "**B) The chip shortage's disproportionate impact on vehicle production is consistent with the later point that even legacy, technologically unremarkable chips can cause significant disruption.**\n\nParagraph 4's automotive shortage hit hard despite a small market slice; Paragraph 8 then notes that even legacy chips remain critical and that disruptions need not involve cutting-edge tech to produce outsized consequences. Both scenes show modest-looking chip classes punching above their technological or market profile.\n\nLinking Paragraph 4's outsized hit to Paragraph 8's legacy-chip warning is a fair cross-section read.",
+        "**C) Because South Korea and Japan are both investing in domestic capacity, the passage implies these efforts have already fully resolved the industry's underlying geographic concentration.**\n\nParagraph 5 reports the investment moves, but Paragraph 9 still leaves whether diversification will reduce concentrated vulnerabilities an \"open question actively debated.\" \"Already fully resolved\" jumps past that undecided ending.\n\n**Trap:** Announced policy is treated as a finished fix.\n\nThe synthesis fails; Paragraph 9 keeps the outcome an open question, not a resolved one.",
+        "**D) The \"silicon shield\" theory and the critics' counterargument together illustrate that Taiwan's chip dominance carries genuinely contested strategic implications, not a single agreed-upon interpretation.**\n\nParagraph 6 presents both the protective \"silicon shield\" reading and the critics' \"tempting target\" counter. Setting theory and rebuttal side by side signals contested meaning, not consensus.\n\nThe paired theory-and-critique in Paragraph 6 supports a contested-implications reading.",
+        "**E) Because China remains several generations behind despite heavy investment, this is consistent with the earlier point that capital cost alone does not guarantee competitive success at the cutting edge.**\n\nParagraph 3 says rising capital costs make cutting-edge entry progressively harder without government-scale backing and, by implication, more than money. Paragraph 7 shows China still generations behind despite billions, needing decades of engineering expertise too. The later lag illustrates the earlier capital-is-not-enough barrier.\n\nChina's lag under heavy spending lines up with the earlier capital-barrier logic, so the synthesis holds."
+      ],
+      "highlights": [
+        "Constructing a single leading-edge fabrication plant, or \"fab,\" now costs upward of $20 billion",
+        "legacy chips manufactured using older process nodes, remain critical to everyday products such as cars, appliances, and medical devices, meaning that supply disruptions need not involve cutting-edge technology at all to produce outsized economic consequences",
+        "remains an open question actively debated among industry analysts and policymakers",
+        "critics counter that this dynamic could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one",
+        "illustrating how difficult it is to close this particular technological gap through capital investment alone, without also replicating decades of accumulated engineering expertise"
+      ]
+    },
+    {
+      "id": "en-t-11-06",
+      "exam_title": "Grammar Rules (New Sentences, Anchored in Text Vocabulary)",
+      "kind": "grammar",
+      "statements": [
+        "\"Had the shortage not disrupted automotive supply chains, vehicle production would have remained substantially higher.\"",
+        "\"Regulators recommended that the company diversifies its supplier base to reduce risk.\"",
+        "\"The number of countries subsidising domestic fabs continue to increase each year.\"",
+        "\"Neither the equipment nor the expertise required were easily replicated by new entrants.\"",
+        "\"Having invested heavily in domestic capacity, the government sought greater supply chain independence.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Had the shortage not disrupted automotive supply chains, vehicle production would have remained substantially higher.\"**\n\nThis is a third conditional with subject–auxiliary inversion: Had + past participle replaces If… had. The result clause correctly uses would have + past participle (would have remained). The negation sits on the inverted had-clause without breaking the pattern.\n\n**Tip:** Inverted Had… not… pairs with would have + V3 — same timeline as If… had not…\n\nThe conditional architecture is sound, so the sentence stands.",
+        "**B) \"Regulators recommended that the company diversifies its supplier base to reduce risk.\"**\n\nAfter recommend that, formal English wants the mandative subjunctive — base form diversify, not present-tense diversifies. The -s ending treats the verb as an ordinary present instead of a subjunctive.\n\n**Trap:** Recommend that + indicative -s is a frequent near-miss.\n\nThe line fails; the repaired wording is \"Regulators recommended that the company diversify its supplier base to reduce risk.\"",
+        "**C) \"The number of countries subsidising domestic fabs continue to increase each year.\"**\n\nThe number of is grammatically singular, so the verb must be continues, not plural continue. The plural countries after of does not control agreement.\n\n**Trap:** A plural noun after of does not make \"the number of\" plural.\n\nAgreement breaks here; the sound version is \"The number of countries subsidising domestic fabs continues to increase each year.\"",
+        "**D) \"Neither the equipment nor the expertise required were easily replicated by new entrants.\"**\n\nWith neither… nor, the verb agrees with the nearer subject. Here that subject is the expertise required — singular uncountable expertise — so the verb should be was, not were.\n\n**Trap:** Two nouns before the verb tempt a plural even when the nearer head is singular.\n\nProximity agreement fails, so the sentence doesn’t hold — \"Neither the equipment nor the expertise required was easily replicated by new entrants.\"",
+        "**E) \"Having invested heavily in domestic capacity, the government sought greater supply chain independence.\"**\n\nThe perfect participle Having invested modifies the government, the same agent that sought independence afterward. No dangling or mismatched subject — the investor and the seeker are one.\n\nThe participle attaches cleanly to the government, so the wording is sound."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-11-07",
+      "exam_title": "Grammar Rules II (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"No sooner had the shortage begun than automakers started idling assembly lines.\"",
+        "\"The programme, along with several related subsidies, were announced the same year.\"",
+        "\"Each of the surveyed manufacturers have reported ongoing supply constraints.\"",
+        "\"By the time the new fab opens, competitors will have already expanded their own capacity.\"",
+        "\"The figures, which were compiled across several fiscal years, indicate a persistent cost increase.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"No sooner had the shortage begun than automakers started idling assembly lines.\"**\n\nNo sooner… than correctly triggers inversion (had the shortage begun) with past perfect in the first clause and simple past (started) in the second. The correlative pair is than, not when.\n\n**Tip:** No sooner + inversion wants than, and past perfect before the simple-past follow-on.\n\nThe No sooner… than pattern is well formed, so the sentence stands.",
+        "**B) \"The programme, along with several related subsidies, were announced the same year.\"**\n\nAlong with several related subsidies is a parenthetical add-on; the real subject is singular the programme, so the verb must be was announced, not were. The plural noun inside the aside does not take over agreement.\n\n**Trap:** Along with + plural looks like a plural subject, but the head noun still governs the verb.\n\nAgreement fails; repair to \"The programme, along with several related subsidies, was announced the same year.\"",
+        "**C) \"Each of the surveyed manufacturers have reported ongoing supply constraints.\"**\n\nEach of takes a singular verb even when the of-phrase is plural. Have reported should be has reported.\n\n**Trap:** Manufacturers after of invites plural have, but Each keeps the verb singular.\n\nThe plural verb after Each is wrong — \"Each of the surveyed manufacturers has reported ongoing supply constraints.\"",
+        "**D) \"By the time the new fab opens, competitors will have already expanded their own capacity.\"**\n\nBy the time + present (opens) sets a future reference point; will have expanded is future perfect for completion before that point. Already sits naturally inside the perfect.\n\nFuture perfect before a future By the time marker is the right tense pairing, so the line holds.",
+        "**E) \"The figures, which were compiled across several fiscal years, indicate a persistent cost increase.\"**\n\nPlural figures takes were compiled in the non-restrictive which-clause and plural indicate in the main clause. Relative and main verbs both track the same plural head.\n\nPlural subject and plural verbs align throughout, so the sentence is sound."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-11-08",
+      "exam_title": "Word Meaning in Context",
+      "kind": "reading",
+      "statements": [
+        "As used in Paragraph 1, \"reckless\" means carefully considered and prudent, rather than dangerously risky.",
+        "As used in Paragraph 2, \"chokepoint\" means a critical point of vulnerability where disruption could severely restrict an entire system.",
+        "As used in Paragraph 5, \"atrophy\" means to strengthen and grow steadily over time.",
+        "As used in Paragraph 6, \"indispensability\" means the quality of being easily replaced or unnecessary.",
+        "As used in Paragraph 8, \"outsized\" means smaller than would normally be expected."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) As used in Paragraph 1, \"reckless\" means carefully considered and prudent, rather than dangerously risky.**\n\nParagraph 1 says such geographic concentration \"would be considered reckless in almost any other critical industry.\" There reckless means dangerously unwise or unduly risky — the opposite of carefully considered and prudent.\n\n**Trap:** A negative evaluative word is glossed as its positive antonym.\n\nThe gloss fails; in Paragraph 1 reckless means dangerously risky, not prudent.",
+        "**B) As used in Paragraph 2, \"chokepoint\" means a critical point of vulnerability where disruption could severely restrict an entire system.**\n\nParagraph 2 calls ASML's monopoly \"a second, narrower chokepoint layered on top of the first,\" after describing essential lithography gear only one firm can make. That usage matches a critical vulnerability node whose disruption can bottleneck a whole supply chain.\n\nThe Paragraph 2 sense of chokepoint matches the offered meaning, so the identification holds.",
+        "**C) As used in Paragraph 5, \"atrophy\" means to strengthen and grow steadily over time.**\n\nParagraph 5 says Japan is trying to rebuild capability \"it had allowed to atrophy.\" Allowed to atrophy means allowed to wither or weaken from disuse — not strengthen and grow.\n\nThe gloss reverses the verb; atrophy here means weaken from neglect, so the meaning claim fails.",
+        "**D) As used in Paragraph 6, \"indispensability\" means the quality of being easily replaced or unnecessary.**\n\nParagraph 6 speaks of \"the island's indispensability to global electronics supply chains\" as the basis of a silicon-shield theory. Indispensability means being essential / hard to do without — the opposite of easily replaced or unnecessary.\n\nThe antonym gloss collapses; indispensability here means essentialness, not replaceability.",
+        "**E) As used in Paragraph 8, \"outsized\" means smaller than would normally be expected.**\n\nParagraph 8 says disruptions need not involve cutting-edge tech \"to produce outsized economic consequences.\" Outsized means disproportionately large, not smaller than expected.\n\n**Trap:** Out- as a size prefix is misread as undersized.\n\nThe meaning claim fails; outsized here means larger than normal, not smaller."
+      ],
+      "highlights": [
+        "creating a level of geographic concentration that would be considered reckless in almost any other critical industry",
+        "creating a second, narrower chokepoint layered on top of the first",
+        "rebuild capability it had allowed to atrophy",
+        "the island's indispensability to global electronics supply chains",
+        "to produce outsized economic consequences"
+      ]
+    },
+    {
+      "id": "en-t-11-09",
+      "exam_title": "Word Meaning in Context II",
+      "kind": "reading",
+      "statements": [
+        "As used in Paragraph 3, \"cutting-edge\" means outdated or technologically behind current standards.",
+        "As used in Paragraph 4, \"idle\" (as in \"idle assembly lines\") means to keep running continuously at full capacity.",
+        "As used in Paragraph 7, \"replicating\" means copying or reproducing something that already exists elsewhere.",
+        "As used in Paragraph 8, \"unremarkable\" means ordinary or unexceptional, not attracting special notice.",
+        "As used in Paragraph 9, \"concentration\" (in this economic sense) means being spread evenly and widely across many locations."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) As used in Paragraph 3, \"cutting-edge\" means outdated or technologically behind current standards.**\n\nParagraph 3 talks about competing \"at the cutting edge\" of chip manufacturing after describing denser, more expensive fabs. Cutting-edge means at the technological forefront — the opposite of outdated or behind.\n\nThe gloss fails; cutting-edge here means leading-tech, not behind the curve.",
+        "**B) As used in Paragraph 4, \"idle\" (as in \"idle assembly lines\") means to keep running continuously at full capacity.**\n\nParagraph 4 says the shortage \"forced automakers worldwide to idle assembly lines,\" then cut vehicle output by millions. Idle here means shut down or leave unused — not run at full capacity.\n\n**Trap:** Everyday \"idle\" as \"not working\" is flipped into continuous full production.\n\nThe claimed meaning reverses the verb; idle here means stop or pause the lines, so the identification fails.",
+        "**C) As used in Paragraph 7, \"replicating\" means copying or reproducing something that already exists elsewhere.**\n\nParagraph 7 says closing the gap needs more than capital, \"without also replicating decades of accumulated engineering expertise.\" Replicating there means copying / reproducing that expertise — matching the offered gloss.\n\nThe Paragraph 7 use of replicating matches \"copying or reproducing,\" so the meaning holds.",
+        "**D) As used in Paragraph 8, \"unremarkable\" means ordinary or unexceptional, not attracting special notice.**\n\nParagraph 8 calls older-node chips \"technologically unremarkable by industry standards\" — ordinary relative to the cutting edge, not specially impressive. That is ordinary / unexceptional.\n\nUnremarkable in Paragraph 8 means ordinary, so the identification stands.",
+        "**E) As used in Paragraph 9, \"concentration\" (in this economic sense) means being spread evenly and widely across many locations.**\n\nParagraph 9 asks whether economics will \"continue to favour concentration\" versus geographic diversification. Concentration here means clustering production narrowly — the opposite of even, wide distribution.\n\nThe gloss fails; concentration means gathering in few places, not spreading evenly."
+      ],
+      "highlights": [
+        "making it progressively harder for new entrants to compete at the cutting edge without government-scale financial backing",
+        "forced automakers worldwide to idle assembly lines",
+        "without also replicating decades of accumulated engineering expertise",
+        "Even chips considered technologically unremarkable by industry standards",
+        "whether the underlying economics of chipmaking will continue to favour concentration"
+      ]
+    },
+    {
+      "id": "en-t-11-10",
+      "exam_title": "Sneaky Paraphrase Detection",
+      "kind": "vocabulary",
+      "statements": [
+        "Critics argue the same situation might instead make Taiwan especially attractive to attack, not especially safe from it.",
+        "Critics agree that this dynamic clearly makes Taiwan the most protected location in the region, with no plausible alternative interpretation.",
+        "Critics suggest this dynamic could be interpreted either way, making Taiwan both unusually vulnerable and unusually secure at the same time.",
+        "According to critics, the same circumstances might just as easily mark Taiwan out as a prime target as they might mark it out as being shielded.",
+        "Critics dismiss the idea that Taiwan's situation carries any strategic risk or protection whatsoever."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Critics argue the same situation might instead make Taiwan especially attractive to attack, not especially safe from it.**\n\nThe original says critics counter that the silicon-shield dynamic \"could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one.\" \"Attractive to attack\" ↔ \"tempting target\" and \"not especially safe\" ↔ \"rather than… protected\" preserve that reversal.\n\nThe paraphrase keeps the critics' target-not-shielded flip, so it stands.",
+        "**B) Critics agree that this dynamic clearly makes Taiwan the most protected location in the region, with no plausible alternative interpretation.**\n\nCritics do not agree with the protective reading; they counter it. \"Clearly… most protected\" and \"no plausible alternative\" erase both the countering stance and the \"could equally be read\" hedge.\n\n**Trap:** Critics' challenge is rewritten as endorsement of the shield.\n\nThe paraphrase fails; the original is an alternative reading (tempting target), not critics affirming unique protection.",
+        "**C) Critics suggest this dynamic could be interpreted either way, making Taiwan both unusually vulnerable and unusually secure at the same time.**\n\n\"Could equally be read as… rather than…\" presents the target reading as a rival that displaces the protected reading, not as critics holding both vulnerability and security simultaneously. \"Both… at the same time\" invents a both/and stance the sentence does not claim.\n\n**Trap:** Rather than (replacement) is misheard as both/and.\n\nThe paraphrase fails; critics offer an alternative target reading, not simultaneous dual endorsement.",
+        "**D) According to critics, the same circumstances might just as easily mark Taiwan out as a prime target as they might mark it out as being shielded.**\n\n\"Might just as easily… as…\" restates \"could equally be read as… rather than…\": same hedge, same target-versus-shielded contrast, without adding certainty or dropping the critics' frame.\n\nThe equal-possibility target-vs-shielded wording matches the original, so the paraphrase holds.",
+        "**E) Critics dismiss the idea that Taiwan's situation carries any strategic risk or protection whatsoever.**\n\nCritics do not dismiss strategy altogether; they argue the silicon-shield story can be read as greater temptation, not that risk and protection are nonexistent. Total dismissal invents a claim the sentence never makes.\n\nThe paraphrase fails; critics reframe the dynamic as a tempting target, they do not deny strategic stakes entirely."
+      ],
+      "highlights": [
+        "critics counter that this dynamic could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one",
+        "critics counter that this dynamic could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one",
+        "could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one",
+        "could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one",
+        "critics counter that this dynamic could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one"
+      ]
+    }
+  ]
+}

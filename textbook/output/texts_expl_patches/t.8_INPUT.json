@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.8",
+  "title": "The Astonishing Navigation of the Arctic Tern",
+  "passage": "(1) Few migratory feats in the animal kingdom rival the annual journey of the Arctic tern, a small seabird weighing little more than 100 grams that breeds in the high Arctic during the northern summer and then travels to the edge of Antarctica's pack ice to spend the southern summer there instead. Because both polar regions experience near-continuous daylight during their respective summers, the Arctic tern experiences more daylight over the course of a year than any other creature on Earth, effectively chasing perpetual summer between hemispheres.\n\n(2) For decades, the exact route and total distance of this migration remained largely a matter of estimation, since the birds are too small and light to carry conventional tracking equipment without impairing their flight. This changed in 2010, when researchers successfully attached miniaturised geolocators, weighing less than two grams, to a small population of breeding terns in Greenland and Iceland, allowing the birds' movements to be tracked in detail for the first time.\n\n(3) The resulting data revealed a migration considerably longer than earlier estimates had suggested. Rather than following a single direct route, many tracked individuals travelled in a distinctive S-shaped path, drifting westward across the Atlantic before turning southward along the coast of Africa or, in some cases, South America, apparently to take advantage of favourable prevailing wind patterns. The average round-trip distance recorded across the tracked population was approximately 70,900 kilometres, though several individual birds were recorded travelling considerably further, with one especially long-ranging bird logging a round-trip of roughly 96,000 kilometres in a single year.\n\n(4) Over the course of a typical thirty-year lifespan, a single Arctic tern may therefore accumulate roughly 2.4 million kilometres of migratory flight, a distance equivalent to approximately three round trips to the Moon.\n\n(5) Researchers have also documented an intriguing seasonal detour undertaken by many individuals during the southbound leg of the journey. Rather than travelling directly toward Antarctic waters, tracked birds frequently paused for several weeks in the open ocean south of Greenland, an area unusually rich in plankton and small fish during that period, apparently using the stopover to replenish fat reserves before continuing the remainder of their journey.\n\n(6) The navigational mechanisms underlying this feat remain only partially understood. Evidence from other migratory bird species suggests a combination of methods is likely involved, including sensitivity to the Earth's magnetic field, the use of the sun's position as a directional compass adjusted for time of day, and, particularly near coastlines, visual landmarks and possibly olfactory cues. Disentangling the relative contribution of each mechanism in Arctic terns specifically has proven difficult, since experimentally testing navigation in a bird capable of crossing entire oceans poses obvious logistical constraints.\n\n(7) Beyond navigation, Arctic terns are also notable for a strikingly aggressive nest-defence strategy entirely disproportionate to their small size. Breeding colonies will collectively dive-bomb intruders, including humans, foxes, and even much larger birds of prey, frequently striking the head of an approaching threat with their sharp bills. Researchers studying nearby nesting colonies of other bird species have noted that these species sometimes deliberately nest close to Arctic tern colonies specifically to benefit from this collective defensive aggression against shared predators.\n\n(8) This extraordinary migratory strategy is not without cost. Because Arctic terns depend heavily on predictable wind patterns and food availability at multiple, widely separated stopover points across both hemispheres, researchers have expressed concern that shifts in ocean productivity or wind patterns associated with broader climate variability could disrupt one or more stages of the migration, with consequences that might be difficult to detect from any single monitoring location alone.\n\n(9) Whether Arctic terns will be able to adjust their remarkable migratory strategy quickly enough to accommodate a changing climate, or whether the very precision that makes their journey so extraordinary also makes it unusually vulnerable to disruption, remains a question actively being investigated by ornithologists studying the species across both of its hemispheric ranges.",
+  "tasks": [
+    {
+      "id": "en-t-8-01",
+      "exam_title": "Paragraphs 1–3",
+      "kind": "reading",
+      "statements": [
+        "The Arctic tern is described as experiencing more daylight over the course of a year than any other creature on Earth.",
+        "Conventional tracking equipment was successfully used on Arctic terns for decades before 2010, providing detailed route data.",
+        "The geolocators attached to terns in 2010 weighed less than two grams.",
+        "Tracked terns are described as typically following a single, direct route rather than a distinctive Sshaped path.",
+        "The average recorded round-trip migration distance was approximately 70,900 kilometres, with one bird logging roughly 96,000 kilometres in a single year."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The Arctic tern is described as experiencing more daylight over the course of a year than any other creature on Earth.**\n\nParagraph 1 ties both polar summers’ near-continuous daylight to the tern’s hemispheric chase: it “experiences more daylight over the course of a year than any other creature on Earth.” The statement simply repeats that ranking — no stretch beyond the wording.\n\n**Tip:** Daylight / season claims in ¶1 are usually word-for-word matches; quote before you paraphrase.\n\nThe year-round daylight crown is stated outright in ¶1, so the claim matches the passage.",
+        "**B) Conventional tracking equipment was successfully used on Arctic terns for decades before 2010, providing detailed route data.**\n\nParagraph 2 says the opposite: for decades the route stayed estimated because the birds “are too small and light to carry conventional tracking equipment without impairing their flight.” Success arrives only in 2010 with sub-two-gram geolocators.\n\n**Trap:** “For decades” tempts a success story; the text uses those decades for the estimation problem, not for working conventional tags.\n\nThe line flips ¶2’s size barrier into earlier conventional success, so it fails — “too small and light to carry conventional tracking equipment.”",
+        "**C) The geolocators attached to terns in 2010 weighed less than two grams.**\n\nParagraph 2 names the breakthrough gear exactly: “miniaturised geolocators, weighing less than two grams,” fitted to breeding birds in Greenland and Iceland. The weight claim is a straight lift from that sentence.\n\nThe less-than-two-grams figure is explicit in ¶2, so the statement tracks the text.",
+        "**D) Tracked terns are described as typically following a single, direct route rather than a distinctive Sshaped path.**\n\nParagraph 3 opens by rejecting a single direct line: “Rather than following a single direct route, many tracked individuals travelled in a distinctive S-shaped path.” The statement swaps that contrast and invents “typically… direct.”\n\n**Trap:** Watch statements that keep the vocabulary (route / path) but reverse the “rather than” structure.\n\nIt contradicts ¶3’s S-shaped drift, so it fails — “a distinctive S-shaped path,” not a single direct route.",
+        "**E) The average recorded round-trip migration distance was approximately 70,900 kilometres, with one bird logging roughly 96,000 kilometres in a single year.**\n\nParagraph 3 reports both figures side by side: population average “approximately 70,900 kilometres,” and one long-ranging bird “roughly 96,000 kilometres in a single year.” The statement pairs them without changing either number.\n\nBoth kilometre totals sit in ¶3 as stated, so the claim matches the passage."
+      ],
+      "highlights": [
+        "experiences more daylight over the course of a year than any other creature on Earth",
+        "too small and light to carry conventional tracking equipment without impairing their flight",
+        "miniaturised geolocators, weighing less than two grams",
+        "Rather than following a single direct route, many tracked individuals travelled in a distinctive S-shaped path",
+        "approximately 70,900 kilometres, though several individual birds were recorded travelling considerably further, with one especially long-ranging bird logging a round-trip of roughly 96,000 kilometres"
+      ]
+    },
+    {
+      "id": "en-t-8-02",
+      "exam_title": "Paragraphs 4–6",
+      "kind": "reading",
+      "statements": [
+        "Over a typical thirty-year lifespan, a single tern may accumulate roughly 2.4 million kilometres of migratory flight.",
+        "This lifetime distance is described as roughly equivalent to three round trips to the Moon.",
+        "The seasonal stopover south of Greenland is described as occurring during the northbound, rather than southbound, leg of the journey.",
+        "The stopover area is described as unusually rich in plankton and small fish during that period.",
+        "The navigational mechanisms behind the terns' migration are described as fully understood and no longer subject to scientific investigation."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Over a typical thirty-year lifespan, a single tern may accumulate roughly 2.4 million kilometres of migratory flight.**\n\nParagraph 4 states that figure wholesale: “a typical thirty-year lifespan” plus “roughly 2.4 million kilometres of migratory flight.” Nothing in the statement alters the lifespan frame or the total.\n\n¶4’s lifetime total is copied cleanly, so the claim matches the passage.",
+        "**B) This lifetime distance is described as roughly equivalent to three round trips to the Moon.**\n\nThe same sentence in paragraph 4 equates that mileage with “approximately three round trips to the Moon.” The statement’s “roughly equivalent” is faithful paraphrase of that comparison.\n\nThe Moon comparison is explicit in ¶4, so the wording stands.",
+        "**C) The seasonal stopover south of Greenland is described as occurring during the northbound, rather than southbound, leg of the journey.**\n\nParagraph 5 places the detour on “the southbound leg of the journey,” when birds pause “south of Greenland” before continuing toward Antarctic waters. Calling it northbound reverses that direction cue.\n\n**Trap:** Northbound / southbound swaps are classic when a named geography (Greenland) sits near both seasonal frames.\n\nIt fails because ¶5 anchors the pause on the southbound leg, not northbound.",
+        "**D) The stopover area is described as unusually rich in plankton and small fish during that period.**\n\nParagraph 5 calls the open ocean south of Greenland “an area unusually rich in plankton and small fish during that period,” the apparent reason for replenishing fat. The statement repeats that richness claim.\n\nThe plankton-and-fish richness is stated in ¶5, so the claim matches.",
+        "**E) The navigational mechanisms behind the terns' migration are described as fully understood and no longer subject to scientific investigation.**\n\nParagraph 6 opens with the opposite: mechanisms “remain only partially understood,” and disentangling them in terns has “proven difficult.” Full understanding and closed investigation are invented upgrades.\n\n**Trap:** Listing candidate methods (magnetic field, sun, landmarks) can feel like a finished theory; ¶6 still labels the picture partial.\n\nIt fails against ¶6’s “only partially understood” framing — investigation is unfinished, not closed."
+      ],
+      "highlights": [
+        "a typical thirty-year lifespan, a single Arctic tern may therefore accumulate roughly 2.4 million kilometres of migratory flight",
+        "a distance equivalent to approximately three round trips to the Moon",
+        "an intriguing seasonal detour undertaken by many individuals during the southbound leg of the journey",
+        "an area unusually rich in plankton and small fish during that period",
+        "The navigational mechanisms underlying this feat remain only partially understood"
+      ]
+    },
+    {
+      "id": "en-t-8-03",
+      "exam_title": "Paragraphs 7–9",
+      "kind": "reading",
+      "statements": [
+        "Arctic terns are described as displaying an aggressive nest-defence strategy disproportionate to their small size.",
+        "Other bird species are described as deliberately avoiding nesting near Arctic tern colonies due to the risk of attack.",
+        "Researchers have expressed concern that shifts in wind patterns or ocean productivity could disrupt one or more stages of the migration.",
+        "The passage concludes by presenting the terns' climate resilience as a fully resolved question with a clear, agreed-upon answer.",
+        "The precision of the terns' migratory strategy is presented as potentially linked to a corresponding vulnerability to disruption."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Arctic terns are described as displaying an aggressive nest-defence strategy disproportionate to their small size.**\n\nParagraph 7 calls the strategy “strikingly aggressive” and “entirely disproportionate to their small size,” with dive-bombing of humans, foxes, and larger birds of prey. The statement compresses that portrait without adding claims.\n\n¶7’s disproportionate defence is on the page, so the claim matches.",
+        "**B) Other bird species are described as deliberately avoiding nesting near Arctic tern colonies due to the risk of attack.**\n\nParagraph 7 says neighbouring species “sometimes deliberately nest close to Arctic tern colonies specifically to benefit from this collective defensive aggression.” Avoidance is the reverse of that choice.\n\n**Trap:** Aggression toward intruders does not mean other nesters stay away — some hitchhike on the defence.\n\nIt fails: ¶7 has species nesting close for protection, not avoiding tern colonies.",
+        "**C) Researchers have expressed concern that shifts in wind patterns or ocean productivity could disrupt one or more stages of the migration.**\n\nParagraph 8 records concern that climate-linked “shifts in ocean productivity or wind patterns” could “disrupt one or more stages of the migration.” The statement reorders those two factors but keeps the content.\n\nThat climate-disruption worry is explicit in ¶8, so the claim matches.",
+        "**D) The passage concludes by presenting the terns' climate resilience as a fully resolved question with a clear, agreed-upon answer.**\n\nParagraph 9 frames adjustment versus vulnerability as “a question actively being investigated,” not a settled verdict. “Fully resolved” and “agreed-upon answer” invent closure the ending withholds.\n\n**Trap:** Closing paragraphs can sound conclusive when they only pose the open question more sharply.\n\nIt fails because ¶9 leaves climate resilience under active investigation, not answered.",
+        "**E) The precision of the terns' migratory strategy is presented as potentially linked to a corresponding vulnerability to disruption.**\n\nParagraph 9’s contrast is exact: whether they adjust quickly enough, “or whether the very precision that makes their journey so extraordinary also makes it unusually vulnerable to disruption.” Precision and vulnerability are twinned as one research question.\n\n¶9 itself links precision to possible vulnerability, so the claim matches."
+      ],
+      "highlights": [
+        "a strikingly aggressive nest-defence strategy entirely disproportionate to their small size",
+        "deliberately nest close to Arctic tern colonies specifically to benefit from this collective defensive aggression",
+        "shifts in ocean productivity or wind patterns associated with broader climate variability could disrupt one or more stages of the migration",
+        "remains a question actively being investigated by ornithologists",
+        "the very precision that makes their journey so extraordinary also makes it unusually vulnerable to disruption"
+      ]
+    },
+    {
+      "id": "en-t-8-04",
+      "exam_title": "Disguised Inference Traps (Paragraph Order)",
+      "kind": "reading",
+      "statements": [
+        "Since terns experience near-continuous daylight in both polar summers, it can be inferred that they spend virtually no time in darkness across an entire year, relative to most other migratory species.",
+        "If the average round-trip distance was approximately 70,900 kilometres, and one bird travelled roughly 96,000 kilometres, that bird travelled about 25,100 kilometres further than the population average.",
+        "Because researchers cite magnetic sensitivity, solar positioning, and visual landmarks as possible navigation mechanisms, the passage implies exactly one of these three must be solely responsible, to the exclusion of the other two.",
+        "Because the S-shaped migratory path appears linked to prevailing wind patterns, it can be inferred that the birds' route may be shaped partly by energy-efficiency considerations rather than being a purely direct geographic path.",
+        "Since other species nest near tern colonies to benefit from their aggression, it can be inferred that Arctic terns' defensive behaviour can produce ecological benefits for neighbouring species, not just for the terns themselves."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Since terns experience near-continuous daylight in both polar summers, it can be inferred that they spend virtually no time in darkness across an entire year, relative to most other migratory species.**\n\nParagraph 1 notes near-continuous daylight in each polar summer and concludes the tern gets more daylight yearly than any other creature while “chasing perpetual summer.” Relative scarcity of darkness versus other migrants is a cautious reading of that daylight crown — not a claim of zero night forever, but “virtually no… relative to most.”\n\n**Tip:** Keep the relative hedge; absolute “never dark” would overclaim.\n\n¶1’s daylight ranking supports the relative-darkness inference, so the line holds.",
+        "**B) If the average round-trip distance was approximately 70,900 kilometres, and one bird travelled roughly 96,000 kilometres, that bird travelled about 25,100 kilometres further than the population average.**\n\nParagraph 3 supplies both figures; 96,000 − 70,900 = 25,100. The arithmetic follows the stated totals without inventing a third distance.\n\n**Tip:** When both numbers are explicit, a clean difference is fair game if the statement names both sources.\n\nThe gap is exact arithmetic from ¶3’s pair of figures, so the inference stands.",
+        "**C) Because researchers cite magnetic sensitivity, solar positioning, and visual landmarks as possible navigation mechanisms, the passage implies exactly one of these three must be solely responsible, to the exclusion of the other two.**\n\nParagraph 6 lists those cues under “a combination of methods is likely involved,” then notes how hard it is to separate contributions. Sole responsibility for one cue contradicts the combination claim.\n\n**Trap:** A menu of mechanisms is not a single-winner tournament.\n\nIt fails: ¶6 points to a combination, not one exclusive controller.",
+        "**D) Because the S-shaped migratory path appears linked to prevailing wind patterns, it can be inferred that the birds' route may be shaped partly by energy-efficiency considerations rather than being a purely direct geographic path.**\n\nParagraph 3 ties the S-shaped Atlantic drift to taking “advantage of favourable prevailing wind patterns” instead of a single direct route. Using favourable winds implies an energy-saving geometry without the text needing the word “efficiency.”\n\nFavourable-wind routing in ¶3 supports a partial energy-efficiency reading, so the inference is fair.",
+        "**E) Since other species nest near tern colonies to benefit from their aggression, it can be inferred that Arctic terns' defensive behaviour can produce ecological benefits for neighbouring species, not just for the terns themselves.**\n\nParagraph 7’s neighbouring species nest close “specifically to benefit from this collective defensive aggression against shared predators.” Shared predator pressure is an ecological upside beyond the terns alone.\n\n¶7’s hitchhiking nesters show spillover benefits, so the inference tracks the passage."
+      ],
+      "highlights": [
+        "experiences more daylight over the course of a year than any other creature on Earth, effectively chasing perpetual summer",
+        "approximately 70,900 kilometres, though several individual birds were recorded travelling considerably further, with one especially long-ranging bird logging a round-trip of roughly 96,000 kilometres",
+        "a combination of methods is likely involved",
+        "apparently to take advantage of favourable prevailing wind patterns",
+        "deliberately nest close to Arctic tern colonies specifically to benefit from this collective defensive aggression against shared predators"
+      ]
+    },
+    {
+      "id": "en-t-8-05",
+      "exam_title": "Disguised Cross-Paragraph Synthesis (Paragraph Order)",
+      "kind": "reading",
+      "statements": [
+        "The technological limitation described in Paragraph 2 (too small for conventional trackers) helps explain why the migration's true extent, described in Paragraph 3, remained uncertain for so long.",
+        "Because the 2010 geolocator study revealed distances greater than earlier estimates, and the average round-trip was found to be approximately 70,900 kilometres, the passage implies pre-2010 estimates had significantly overstated the migration's true length.",
+        "The mid-journey stopover described in Paragraph 5 is presented as unrelated to the birds' overall energy needs for completing the remainder of their migration.",
+        "The partial understanding of navigation mechanisms (Paragraph 6) is consistent with the passage's closing framing of the terns' climate-change response as still uncertain (Paragraph 9).",
+        "The birds' dependence on multiple, widely separated stopover points (Paragraph 8) helps explain why disruption to migration might be difficult to detect from a single monitoring location, as stated in the same paragraph."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The technological limitation described in Paragraph 2 (too small for conventional trackers) helps explain why the migration's true extent, described in Paragraph 3, remained uncertain for so long.**\n\nParagraph 2 says decades of route-and-distance work stayed “largely a matter of estimation” because conventional gear was too heavy; paragraph 3 then shows geolocator data “considerably longer than earlier estimates.” The size barrier is the bridge between weak prior numbers and the 2010 revision.\n\n¶2’s tracker limit causally frames ¶3’s surprise distances, so the synthesis holds.",
+        "**B) Because the 2010 geolocator study revealed distances greater than earlier estimates, and the average round-trip was found to be approximately 70,900 kilometres, the passage implies pre-2010 estimates had significantly overstated the migration's true length.**\n\nParagraph 3 says the migration was “considerably longer than earlier estimates had suggested” — earlier figures were too short, not too long. “Overstated” reverses that direction while keeping the average intact.\n\n**Trap:** “Different from earlier estimates” still needs you to check whether estimates were high or low.\n\nIt fails: ¶3 has earlier estimates understating length, so “overstated” is the wrong arrow.",
+        "**C) The mid-journey stopover described in Paragraph 5 is presented as unrelated to the birds' overall energy needs for completing the remainder of their migration.**\n\nParagraph 5 says birds pause apparently “to replenish fat reserves before continuing the remainder of their journey.” Unrelated to energy needs is the opposite of that purpose clause.\n\n**Trap:** “Intriguing detour” can sound optional; the text links it to fat for the remaining legs.\n\nIt fails against ¶5’s fat-reserve stopover purpose — energy is the point, not a side note.",
+        "**D) The partial understanding of navigation mechanisms (Paragraph 6) is consistent with the passage's closing framing of the terns' climate-change response as still uncertain (Paragraph 9).**\n\nParagraph 6 leaves navigation “only partially understood”; paragraph 9 leaves climate adjustment versus vulnerability “actively being investigated.” Both chapters refuse a finished scientific map of the species’ limits.\n\nOpen questions in ¶6 and ¶9 rhyme as unfinished science, so the cross-link stands.",
+        "**E) The birds' dependence on multiple, widely separated stopover points (Paragraph 8) helps explain why disruption to migration might be difficult to detect from a single monitoring location, as stated in the same paragraph.**\n\nParagraph 8 itself chains the two ideas: dependence on “multiple, widely separated stopover points” across hemispheres, then consequences “difficult to detect from any single monitoring location alone.” The statement restates that in-paragraph causal hinge.\n\n¶8 supplies both the multi-stop dependency and the single-site detection problem, so the synthesis matches."
+      ],
+      "highlights": [
+        "the exact route and total distance of this migration remained largely a matter of estimation, since the birds are too small and light to carry conventional tracking equipment",
+        "a migration considerably longer than earlier estimates had suggested",
+        "apparently using the stopover to replenish fat reserves before continuing the remainder of their journey",
+        "remain only partially understood",
+        "consequences that might be difficult to detect from any single monitoring location alone"
+      ]
+    },
+    {
+      "id": "en-t-8-06",
+      "exam_title": "Grammar Rules (New Sentences, Anchored in Text Vocabulary)",
+      "kind": "grammar",
+      "statements": [
+        "\"Had researchers not developed lighter geolocators, the terns' true migratory route might never have been confirmed.\"",
+        "\"The team recommended that future studies tracks a larger sample of birds.\"",
+        "\"The number of tracked individuals continue to grow as technology improves.\"",
+        "\"Neither the wind patterns nor the food availability were fully predictable at every stopover.\"",
+        "\"Having replenished its fat reserves, the bird resumed its journey southward.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Had researchers not developed lighter geolocators, the terns' true migratory route might never have been confirmed.\"**\n\nThis is a clean third-conditional inversion: Had + subject + past participle stands in for If researchers had not…, paired with might never have been confirmed for the unreal past result. Auxiliaries and participle forms line up.\n\nInverted Had…not + might never have been is sound third-conditional patterning, so the sentence stands.",
+        "**B) \"The team recommended that future studies tracks a larger sample of birds.\"**\n\nAfter recommend that, exam English wants the present subjunctive — base form track, not tracks. Future studies is plural, but the real fault is subjunctive, not mere agreement.\n\n**Trap:** Plural subject + -s looks like ordinary present; recommend that drops the -s anyway.\n\nRecommend that needs base-form track, so this fails — \"The team recommended that future studies track a larger sample of birds.\"",
+        "**C) \"The number of tracked individuals continue to grow as technology improves.\"**\n\nThe number of is a singular head; the plural noun after of does not control the verb. Continue should be continues.\n\n**Trap:** Do not let individuals (plural) pull the verb — number is the true subject.\n\nSingular the number of needs continues, so the line fails — \"The number of tracked individuals continues to grow as technology improves.\"",
+        "**D) \"Neither the wind patterns nor the food availability were fully predictable at every stopover.\"**\n\nWith neither…nor, the verb agrees with the nearer subject. Food availability is singular, so were should be was. Treating the pair as a plural set still does not override nearest-noun agreement in exam English.\n\n**Trap:** A plural first noun (wind patterns) often tricks writers into were even when nor lands on a singular.\n\nNearest-subject agreement wants was, so the wording fails — \"Neither the wind patterns nor the food availability was fully predictable at every stopover.\"",
+        "**E) \"Having replenished its fat reserves, the bird resumed its journey southward.\"**\n\nThe perfect participle Having replenished correctly marks fueling before resumption, and its / the bird keeps the same referents — no dangling modifier. Sequence and agreement are clean.\n\nSame-subject participle plus past resumed is well formed, so the sentence stands."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-8-07",
+      "exam_title": "Grammar Rules II (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"No sooner had the birds reached the stopover than they began feeding intensively.\"",
+        "\"The migration route, along with several recorded detours, were mapped in detail.\"",
+        "\"Each of the tracked terns have followed a broadly similar seasonal pattern.\"",
+        "\"By the time the birds reach Antarctica, they will have already flown tens of thousands of kilometres.\"",
+        "\"The data, which were collected using miniaturised geolocators, reveal a far longer migration than expected.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"No sooner had the birds reached the stopover than they began feeding intensively.\"**\n\nNo sooner…than correctly forces inversion (had before the subject) and pairs past perfect with a simple-past follow-on. Than (not when) is the right linker.\n\n**Tip:** Front the auxiliary: No sooner had…, not No sooner the birds had…\n\nInverted No sooner had…than… is textbook form, so the sentence stands.",
+        "**B) \"The migration route, along with several recorded detours, were mapped in detail.\"**\n\nAlong with… is a parenthetical add-on; the grammatical subject remains singular migration route. Were should be was.\n\n**Trap:** Material after along with / as well as / together with does not make a singular head plural.\n\nSingular route controls the verb, so this fails — \"The migration route, along with several recorded detours, was mapped in detail.\"",
+        "**C) \"Each of the tracked terns have followed a broadly similar seasonal pattern.\"**\n\nEach of takes a singular verb even when of is followed by a plural noun. Have followed should be has followed.\n\n**Trap:** Terns (plural) sits next to the verb and tempts have; each still rules.\n\nEach of needs has followed, so the line fails — \"Each of the tracked terns has followed a broadly similar seasonal pattern.\"",
+        "**D) \"By the time the birds reach Antarctica, they will have already flown tens of thousands of kilometres.\"**\n\nBy the time + present reach sets a future boundary; will have already flown is future perfect for miles completed before that arrival. The aspect matches the deadline.\n\nFuture perfect after by the time fits completed flight before arrival, so the wording stands.",
+        "**E) \"The data, which were collected using miniaturised geolocators, reveal a far longer migration than expected.\"**\n\nHere data is treated as plural: were collected in the relative clause and reveal in the main clause agree. Consistent plural handling is acceptable exam English for scientific data.\n\nPlural data with were / reveal stays consistent, so the sentence stands."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-8-08",
+      "exam_title": "Grammar Rules III (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"Despite of the logistical challenges, researchers successfully tracked several breeding pairs.\"",
+        "\"Whoever analyses the tracking data should account for individual variation between birds.\"",
+        "\"The team denied having deliberately overstated the average migration distance.\"",
+        "\"There is several mechanisms that likely contribute to the terns' navigation.\"",
+        "\"The colony, which was studied over several breeding seasons, showed consistent defensive behaviour.\""
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Despite of the logistical challenges, researchers successfully tracked several breeding pairs.\"**\n\nDespite never takes of; the of belongs to the twin phrase in spite of. Either drop of after despite or switch to in spite of.\n\n**Trap:** Despite of is a high-frequency blend of despite + in spite of.\n\nDespite of is ungrammatical, so the line fails — \"Despite the logistical challenges, researchers successfully tracked several breeding pairs.\"",
+        "**B) \"Whoever analyses the tracking data should account for individual variation between birds.\"**\n\nWhoever is a free relative meaning “the person who,” correctly heading the subject clause; analyses (BrE singular) and should account are well formed.\n\nWhoever as clausal subject with a matching singular verb is sound, so the sentence stands.",
+        "**C) \"The team denied having deliberately overstated the average migration distance.\"**\n\nDeny + perfect gerund (having overstated) correctly places the alleged overstatement before the denial. Deliberately is a clean adverb inside the gerund phrase.\n\nDenied having + past participle is the right pattern for a prior act, so the wording stands.",
+        "**D) \"There is several mechanisms that likely contribute to the terns' navigation.\"**\n\nExistential there agrees with the real subject that follows; several mechanisms is plural, so is must become are.\n\n**Trap:** There is feels fixed; always check the noun after it.\n\nPlural mechanisms need There are, so this fails — \"There are several mechanisms that likely contribute to the terns' navigation.\"",
+        "**E) \"The colony, which was studied over several breeding seasons, showed consistent defensive behaviour.\"**\n\nThe non-defining which-clause agrees with singular colony (was studied), and the main verb showed likewise stays singular. Punctuation and agreement are tidy.\n\nSingular colony with was / showed is consistent, so the sentence stands."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-8-09",
+      "exam_title": "Vocabulary & Collocation in New Context",
+      "kind": "vocabulary",
+      "statements": [
+        "\"A geolocator is a small device used to record and transmit an animal's approximate location over time.\"",
+        "\"Prevailing wind patterns refers to the specific winds that occur only once, on a single unrepeated occasion.\"",
+        "\"A stopover, in migratory biology, refers to a site where travelling animals pause to rest and replenish energy reserves.\"",
+        "\"Olfactory cues refers to information gathered through an animal's sense of smell.\"",
+        "\"A breeding colony refers to a group of animals that reproduce and nest together in the same area.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"A geolocator is a small device used to record and transmit an animal's approximate location over time.\"**\n\nThat matches how the passage’s 2010 tags work: tiny devices that let movements be “tracked in detail.” Location-logging over time is the established sense, not a navigational compass itself.\n\nThe definition fits standard scientific use (and ¶2’s trackers), so the wording is sound.",
+        "**B) \"Prevailing wind patterns refers to the specific winds that occur only once, on a single unrepeated occasion.\"**\n\nPrevailing means dominant or usual over a period — the opposite of a one-off gust. Paragraph 3’s “favourable prevailing wind patterns” are habitual routes, not single-event winds.\n\n**Trap:** Sounding like “the winds that prevail today” can be twisted into “once only”; the adjective means typically dominant.\n\nOnce-only winds invert prevailing’s meaning, so this use fails.",
+        "**C) \"A stopover, in migratory biology, refers to a site where travelling animals pause to rest and replenish energy reserves.\"**\n\nThat is the standard migratory sense, and paragraph 5’s Greenland pause to “replenish fat reserves” is exactly that kind of site. Rest-and-refuel, not permanent residence.\n\nStopover as a refueling pause matches established migratory usage, so the definition stands.",
+        "**D) \"Olfactory cues refers to information gathered through an animal's sense of smell.\"**\n\nOlfactory = smell-related; cues are sensory signals. Paragraph 6 lists “possibly olfactory cues” beside visual landmarks as candidate navigation inputs — smell-based information, not taste or sound.\n\nSmell-based information is the right sense of olfactory cues, so the wording stands.",
+        "**E) \"A breeding colony refers to a group of animals that reproduce and nest together in the same area.\"**\n\nThat is the ordinary biology sense; paragraph 7’s “Breeding colonies” that dive-bomb intruders are communal nesting groups, not solitary nests.\n\nCommunal breed-and-nest group matches breeding colony, so the definition is sound."
+      ],
+      "highlights": [
+        "",
+        "favourable prevailing wind patterns",
+        "",
+        "visual landmarks and possibly olfactory cues",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-8-10",
+      "exam_title": "Vocabulary & Collocation II (New Context)",
+      "kind": "vocabulary",
+      "statements": [
+        "\"Dive-bombing, as a defensive behaviour, refers to a bird making a fast, aggressive downward attack toward a threat.\"",
+        "\"A round-trip distance refers to the total distance travelled in only one direction, excluding the return journey.\"",
+        "\"Perpetual summer, as used figuratively here, refers to continuously experiencing summer-like daylight conditions by moving between hemispheres.\"",
+        "\"Logistical constraints refers to practical difficulties that make carrying out a plan or experiment more difficult.\"",
+        "\"A monitoring location refers to a fixed point from which researchers observe and record data over time.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Dive-bombing, as a defensive behaviour, refers to a bird making a fast, aggressive downward attack toward a threat.\"**\n\nThat matches ordinary bird-behaviour use and paragraph 7’s colonies that “collectively dive-bomb intruders,” striking heads with bills. Fast downward aggression toward a threat is exact.\n\nDefensive downward attack is the right sense, so the wording stands.",
+        "**B) \"A round-trip distance refers to the total distance travelled in only one direction, excluding the return journey.\"**\n\nRound-trip means out and back combined. Paragraph 3’s “average round-trip distance” and the 96,000 km “round-trip” are full migrations, not one-way legs. Excluding the return flips the meaning.\n\n**Trap:** Round can tempt “one circuit in one direction”; the compound still includes the return.\n\nOne-way-only denies round-trip’s out-and-back sense, so this use fails.",
+        "**C) \"Perpetual summer, as used figuratively here, refers to continuously experiencing summer-like daylight conditions by moving between hemispheres.\"**\n\nParagraph 1’s “effectively chasing perpetual summer between hemispheres” is figurative daylight strategy, not literal endless calendar summer in one place. The gloss tracks that metaphor.\n\nChasing daylight summers across hemispheres matches ¶1’s figurative perpetual summer, so the wording stands.",
+        "**D) \"Logistical constraints refers to practical difficulties that make carrying out a plan or experiment more difficult.\"**\n\nLogistics = practical organisation of a task; constraints are limiting factors. Paragraph 6 cites “obvious logistical constraints” on ocean-crossing navigation experiments — feasibility barriers, not theoretical ones.\n\nPractical feasibility limits fit logistical constraints, so the definition stands.",
+        "**E) \"A monitoring location refers to a fixed point from which researchers observe and record data over time.\"**\n\nThat is standard field-science sense; paragraph 8’s worry that disruption may be “difficult to detect from any single monitoring location alone” assumes fixed watchpoints gathering observations.\n\nA fixed observational site matches monitoring location, so the wording is sound."
+      ],
+      "highlights": [
+        "collectively dive-bomb intruders",
+        "The average round-trip distance recorded across the tracked population was approximately 70,900 kilometres",
+        "effectively chasing perpetual summer between hemispheres",
+        "poses obvious logistical constraints",
+        "difficult to detect from any single monitoring location alone"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1037 @@
+[
+  {
+    "id": "math-1-1",
+    "case_id": "MATH 1.01",
+    "title": "Basic operations on explicit sets",
+    "subsection": "1.1",
+    "context": "Let A = {1, 2, 3, 4, 5}, B = {3, 4, 5, 6, 7}, and C = {5, 6, 7, 8, 9}.",
+    "statements": [
+      "$A \\cap B$ = ${3, 4, 5}$.",
+      "$A \\cup C$ = ${1, 2, 3, 4, 5, 6, 7, 8}$.",
+      "$(A \\cap B) \\cap C = {5}.$",
+      "A \\ C = {1, 2, 3}.",
+      "B and C are disjoint sets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $A \\cap B$ = ${3, 4, 5}$.**  (true)\n\nThe elements common to both A and B are 3, 4, and 5.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) $A \\cup C$ = ${1, 2, 3, 4, 5, 6, 7, 8}$.**  (false)\n\nTrap: A contributes 1-5, C contributes 5-9, so together they cover every integer from 1 to 9 - the statement's set stops at 8 and wrongly omits 9, which C contributes.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) $(A \\cap B) \\cap C = {5}.$**  (true)\n\n$A \\cap B$ = ${3,4,5}$; intersecting this with C = ${5,6,7,8,9}$ leaves only the common element 5.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) A \\ C = {1, 2, 3}.**  (false)\n\nA \\ C removes from A any elements that are also in C. Only 5 is in both, so A \\ C = {1,2,3,4} - the statement is missing the element 4.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) B and C are disjoint sets.**  (false)\n\n$B and C share the elements 5, 6, and 7, so they are not disjoint (disjoint would require B \\cap C = ). \\emptyset$\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 1,
+    "solution_overview": "Let A = {1, 2, 3, 4, 5}, B = {3, 4, 5, 6, 7}, and C = {5, 6, 7, 8, 9}.\n\n**Part 1: Setup.**\n\nCompute the key sets once: $A \\cap B$ = ${3, 4, 5}$; A C covers 1-5 (from A) and 5-9 (from C)$\\cup with$ no gaps, so A C = ${1,...,9}$; A \\ C removes only the shared element 5, leaving ${1,2,3,4}$; and $B \\cap C$ =$\\cup${5,6,7}$ (nonempty, so B and C are NOT disjoint). Every statement below reduces to comparing against one of these four computed sets.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) $A \\cap B$ = ${3, 4, 5}$.\n\nThe elements common to both A and B are 3, 4, and 5.\n\n**2.** (FALSE) $A \\cup C$ = ${1, 2, 3, 4, 5, 6, 7, 8}$.\n\nTrap: A contributes 1-5, C contributes 5-9, so together they cover every integer from 1 to 9 - the statement's set stops at 8 and wrongly omits 9, which C contributes.\n\n**3.** (TRUE) $(A \\cap B) \\cap C = {5}.$\n\n$A \\cap B$ = ${3,4,5}$; intersecting this with C = ${5,6,7,8,9}$ leaves only the common element 5.\n\n**4.** (FALSE) A \\ C = {1, 2, 3}.\n\nA \\ C removes from A any elements that are also in C. Only 5 is in both, so A \\ C = {1,2,3,4} - the statement is missing the element 4.\n\n**5.** (FALSE) B and C are disjoint sets.\n\n$B and C share the elements 5, 6, and 7, so they are not disjoint (disjoint would require B \\cap C = ). \\emptyset$\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE",
+    "source_pdf_num": 1,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-2",
+    "case_id": "MATH 1.02",
+    "title": "Set-builder notation and equality of sets",
+    "subsection": "1.1",
+    "context": "Let A = {x Z : x^2 = 9} (Z = integers) and B = {3, -3}.",
+    "statements": [
+      "A = B.",
+      "$3 \\in A.$",
+      "A = {3} (only the positive root).",
+      "|A| = 2.",
+      "The set C = ${x N : x^2 = 9}$ (N = natural numbers) is equal to ${3, -3}$.$\\in$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) A = B.**  (true)\n\nBoth 3 and -3 satisfy x^2 = 9, and these are the only integer solutions, so A = {3, -3} = B.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) $3 \\in A.$**  (true)\n\n3^2 = 9, so 3 satisfies the defining condition and belongs to A.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) A = {3} (only the positive root).**  (false)\n\n-3 also satisfies (-3)^2 = 9 and is an integer, so it must be included in A as well; A has two elements, not one.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) |A| = 2.**  (true)\n\nA = {3, -3} has exactly two distinct elements.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) The set C = ${x N : x^2 = 9}$ (N = natural numbers) is equal to ${3, -3}$.$\\in$**  (false)\n\nNatural numbers are non-negative, so -3 N and is excluded from C. Only 3 qualifies, so C = {3}, \\notin not {3, -3}.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 2,
+    "solution_overview": "Let A = {x Z : x^2 = 9} (Z = integers) and B = {3, -3}.\n\n**Part 1: Setup.**\n\nSolve x^2 = 9 over the integers first: the only solutions are x = 3 and x = -3, so A = {3, -3} = B, and |A| = 2. Restricting to natural numbers (non-negative) as in set C eliminates -3, leaving C = {3} - a single element, not two.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) A = B.\n\nBoth 3 and -3 satisfy x^2 = 9, and these are the only integer solutions, so A = {3, -3} = B.\n\n**2.** (TRUE) $3 \\in A.$\n\n3^2 = 9, so 3 satisfies the defining condition and belongs to A.\n\n**3.** (FALSE) A = {3} (only the positive root).\n\n-3 also satisfies (-3)^2 = 9 and is an integer, so it must be included in A as well; A has two elements, not one.\n\n**4.** (TRUE) |A| = 2.\n\nA = {3, -3} has exactly two distinct elements.\n\n**5.** (FALSE) The set C = ${x N : x^2 = 9}$ (N = natural numbers) is equal to ${3, -3}$.$\\in$\n\nNatural numbers are non-negative, so -3 N and is excluded from C. Only 3 qualifies, so C = {3}, \\notin not {3, -3}.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE",
+    "source_pdf_num": 2,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-3",
+    "case_id": "MATH 1.03",
+    "title": "Subsets, elements, and the power set",
+    "subsection": "1.1",
+    "context": "Let A = {a, b, c}.",
+    "statements": [
+      "The power set of A has 8 elements.",
+      "{a, b} is an element of A.",
+      "$\\emptyset is a subset of A.$",
+      "A is a proper subset of A.",
+      "There are exactly 3 subsets of A that contain exactly 2 elements."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) The power set of A has 8 elements.**  (true)\n\nA set with 3 elements has 2^3 = 8 subsets in total, so its power set contains 8 elements.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) {a, b} is an element of A.**  (false)\n\nThe elements of A are a, b, and c individually. {a,b} is a subset of A, not an element of A - confusing “element of” with “subset of” is a common mistake.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) $\\emptyset is a subset of A.$**  (true)\n\nThe empty set is a subset of every set, including A.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) A is a proper subset of A.**  (false)\n\nA proper subset must be strictly smaller than the original set (not equal to it). Since A = A, A is not a proper subset of itself.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) There are exactly 3 subsets of A that contain exactly 2 elements.**  (true)\n\nThe 2-element subsets are {a,b}, {a,c}, and {b,c} - exactly three of them.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 3,
+    "solution_overview": "Let A = {a, b, c}.\n\n**Part 1: Setup.**\n\nA has 3 elements, so |P(A)| = 2^3 = 8, and its subsets are , ${a}$, ${b}$, ${c}$, ${a,b}$, ${a,c}$, ${b,c}$,$\\emptyset${a,b,c}$. Keep the elements of A (a, b, c) separate from the elements of P(A), which are themselves subsets like ${a,b}$ - that distinction, plus the definition of \"proper subset\" (strictly smaller), resolves every statement below.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The power set of A has 8 elements.\n\nA set with 3 elements has 2^3 = 8 subsets in total, so its power set contains 8 elements.\n\n**2.** (FALSE) {a, b} is an element of A.\n\nThe elements of A are a, b, and c individually. {a,b} is a subset of A, not an element of A - confusing “element of” with “subset of” is a common mistake.\n\n**3.** (TRUE) $\\emptyset is a subset of A.$\n\nThe empty set is a subset of every set, including A.\n\n**4.** (FALSE) A is a proper subset of A.\n\nA proper subset must be strictly smaller than the original set (not equal to it). Since A = A, A is not a proper subset of itself.\n\n**5.** (TRUE) There are exactly 3 subsets of A that contain exactly 2 elements.\n\nThe 2-element subsets are {a,b}, {a,c}, and {b,c} - exactly three of them.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE",
+    "source_pdf_num": 3,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-4",
+    "case_id": "MATH 1.04",
+    "title": "Let D = {a, b, c}.",
+    "subsection": "1.1",
+    "context": "Let D = {a, b, c}.",
+    "statements": [
+      "$D \\emptyset \\subseteq$",
+      "$D \\emptyset \\in$",
+      "D has exactly 8 subsets",
+      "Both ${a}$ D and ${a}$ D are $true \\subseteq \\in$",
+      "$D D \\subseteq$"
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) $D \\emptyset \\subseteq$**  (true)\n\nBy definition, the empty set is a subset of every set, since it has no elements that could violate the subset condition.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) $D \\emptyset \\in$**  (false)\n\nTrap: being a subset ( D) is different from being an element ( D). D's elements are a, b, and $c \\emptyset \\subseteq$\\emptyset \\in$ - the empty set is not one of them.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) D has exactly 8 subsets**  (true)\n\nA set with n elements has 2ⁿ subsets. Here n = 3, so D has 2^3 = 8 subsets: , ${a}$, ${b}$, ${c}$, ${a,b}$,$\\emptyset${a,c}$, ${b,c}$, ${a,b,c}$.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) Both ${a}$ D and ${a}$ D are $true \\subseteq \\in$**  (false)\n\nTrap: ${a}$ D is true (a is an element of D, so the set ${a}$ is contained in D), but ${a}$ D is false -$\\subseteq \\in$ D's elements are a, b, c themselves, not the set ${a}$.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) $D D \\subseteq$**  (true)\n\nEvery set is a subset of itself, since every element of D is trivially an element of D.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 4,
+    "solution_overview": "Let D = {a, b, c}.\n\n**Part 1: Setup.**\n\n|D|=3 |P(D)|=2^3=8 subsets: ,${a}$,${b}$,${c}$,${a,b}$,${a,c}$,${b,c}$,${a,b,c}$. Keep straight: $D \\Rightarrow \\emptyset$\\emptyset \\subseteq$ (subset) is always true, but D (element) is generally false; likewise ${a}$ D is true but ${a}$ D is false (D's $elements \\emptyset \\in$\\subseteq \\in$ are a,b,c themselves, not the set ${a}$).\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) $D \\emptyset \\subseteq$\n\nBy definition, the empty set is a subset of every set, since it has no elements that could violate the subset condition.\n\n**2.** (FALSE) $D \\emptyset \\in$\n\nTrap: being a subset ( D) is different from being an element ( D). D's elements are a, b, and $c \\emptyset \\subseteq$\\emptyset \\in$ - the empty set is not one of them.\n\n**3.** (TRUE) D has exactly 8 subsets\n\nA set with n elements has 2ⁿ subsets. Here n = 3, so D has 2^3 = 8 subsets: , ${a}$, ${b}$, ${c}$, ${a,b}$,$\\emptyset${a,c}$, ${b,c}$, ${a,b,c}$.\n\n**4.** (FALSE) Both ${a}$ D and ${a}$ D are $true \\subseteq \\in$\n\nTrap: ${a}$ D is true (a is an element of D, so the set ${a}$ is contained in D), but ${a}$ D is false -$\\subseteq \\in$ D's elements are a, b, c themselves, not the set ${a}$.\n\n**5.** (TRUE) $D D \\subseteq$\n\nEvery set is a subset of itself, since every element of D is trivially an element of D.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE",
+    "source_pdf_num": 4,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-5",
+    "case_id": "MATH 1.05",
+    "title": "Let E = {1, 3, 5, 7} and F = {3, 4, 5, 6}.",
+    "subsection": "1.1",
+    "context": "Let E = {1, 3, 5, 7} and F = {3, 4, 5, 6}.",
+    "statements": [
+      "E \\ F = {1, 7}",
+      "F \\ E = {4, 6}",
+      "E \\ F = F \\ E",
+      "$(E \\ F) (F \\ E) = {1, 4, 6, 7} \\cup$",
+      "$(E \\ F) \\cap (F \\ E) = \\emptyset$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) E \\ F = {1, 7}**  (true)\n\nRemoving from E every element also found in F (3 and 5) leaves {1, 7}.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) F \\ E = {4, 6}**  (true)\n\nRemoving from F every element also found in E (3 and 5) leaves {4, 6}.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) E \\ F = F \\ E**  (false)\n\nTrap: set difference is NOT commutative in general. E \\ F = {1,7} while F \\ E = {4,6} - these are different sets, so the equality fails.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) $(E \\ F) (F \\ E) = {1, 4, 6, 7} \\cup$**  (true)\n\nThe union of the two \"one-sided\" differences, ${1,7} {4,6}$ = ${1,4,6,7}$, is exactly the $symmetric \\cup difference$ E F: the elements belonging to exactly one of the two sets.$\\triangle$\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) $(E \\ F) \\cap (F \\ E) = \\emptyset$**  (true)\n\nBy construction, E \\ F contains only elements outside F, and F \\ E contains only elements outside E, so the two sets can never share an element - their intersection is always empty.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 5,
+    "solution_overview": "Let E = {1, 3, 5, 7} and F = {3, 4, 5, 6}.\n\n**Part 1: Setup.**\n\nCompute both directions separately since \\ is NOT commutative: E\\F=${1,7}$ (removing 3,5 shared with F) and F\\E=${4,6}$ (removing 3,5 shared with E) - different sets. Their union ${1,4,6,7}$ is the symmetric difference E F, and their intersection is always empty by construction.$\\triangle$\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) E \\ F = {1, 7}\n\nRemoving from E every element also found in F (3 and 5) leaves {1, 7}.\n\n**2.** (TRUE) F \\ E = {4, 6}\n\nRemoving from F every element also found in E (3 and 5) leaves {4, 6}.\n\n**3.** (FALSE) E \\ F = F \\ E\n\nTrap: set difference is NOT commutative in general. E \\ F = {1,7} while F \\ E = {4,6} - these are different sets, so the equality fails.\n\n**4.** (TRUE) $(E \\ F) (F \\ E) = {1, 4, 6, 7} \\cup$\n\nThe union of the two \"one-sided\" differences, ${1,7} {4,6}$ = ${1,4,6,7}$, is exactly the $symmetric \\cup difference$ E F: the elements belonging to exactly one of the two sets.$\\triangle$\n\n**5.** (TRUE) $(E \\ F) \\cap (F \\ E) = \\emptyset$\n\nBy construction, E \\ F contains only elements outside F, and F \\ E contains only elements outside E, so the two sets can never share an element - their intersection is always empty.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE",
+    "source_pdf_num": 5,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-6",
+    "case_id": "MATH 1.06",
+    "title": "Let A = {2, 4, 6, 8, 10}, B = {3, 6, 9, 12}, and C = {1, 2,",
+    "subsection": "1.1",
+    "context": "Let A = {2, 4, 6, 8, 10}, B = {3, 6, 9, 12}, and C = {1, 2, 3, 4, 5}.",
+    "statements": [
+      "$A \\cap B$ = ${6}$",
+      "A B has 8 $elements \\cup$",
+      "C \\ A = {1, 3}",
+      "B \\ C = {3, 6, 9, 12}",
+      "$A \\cap C$ = ${2, 4, 6}$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $A \\cap B$ = ${6}$**  (true)\n\nThe only element common to both A and B is 6, so $A \\cap B$ = ${6}$.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) A B has 8 $elements \\cup$**  (true)\n\n$|A B| = |A| + |B| - |A \\cap B| = 5 + 4 - 1 = 8. Listing them out: {2,3,4,6,8,9,10,12} - indeed 8 \\cup elements.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) C \\ A = {1, 3}**  (false)\n\nTrap: C \\ A removes from C every element that is also in A. Since 2 and 4 belong to A, they are removed - but 5 is NOT in A, so it must stay. The correct result is C \\ A = {1, 3, 5}, not {1, 3} as stated; this version wrongly drops the surviving element 5.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) B \\ C = {3, 6, 9, 12}**  (false)\n\nThis is the classic trap: B \\ C must remove every element of B that also lies in C. Since 3 C, $it \\in must$ be dropped. The correct result is B \\ C = ${6, 9, 12}$, not ${3, 6, 9, 12}$.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) $A \\cap C$ = ${2, 4, 6}$**  (false)\n\n$Another trap: 6 belongs to A but NOT to C, so it cannot appear in A \\cap C. The correct intersection is A \\cap C = {2, 4}.$\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 6,
+    "solution_overview": "Let A = {2, 4, 6, 8, 10}, B = {3, 6, 9, 12}, and C = {1, 2, 3, 4, 5}.\n\n**Part 1: Setup.**\n\nCompute once: $A \\cap B$=${6}$; A B=${2,3,4,6,8,9,10,12}$ (8 elements); C\\A=${1,3,5}$ (only $removing \\cup 2$,4, shared with A); B\\C=${6,9,12}$ (removing 3, the only shared element); $A \\cap C$=${2,4}$ (only elements in both). Compare each statement below directly against these five reference values.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) $A \\cap B$ = ${6}$\n\nThe only element common to both A and B is 6, so $A \\cap B$ = ${6}$.\n\n**2.** (TRUE) A B has 8 $elements \\cup$\n\n$|A B| = |A| + |B| - |A \\cap B| = 5 + 4 - 1 = 8. Listing them out: {2,3,4,6,8,9,10,12} - indeed 8 \\cup elements.$\n\n**3.** (FALSE) C \\ A = {1, 3}\n\nTrap: C \\ A removes from C every element that is also in A. Since 2 and 4 belong to A, they are removed - but 5 is NOT in A, so it must stay. The correct result is C \\ A = {1, 3, 5}, not {1, 3} as stated; this version wrongly drops the surviving element 5.\n\n**4.** (FALSE) B \\ C = {3, 6, 9, 12}\n\nThis is the classic trap: B \\ C must remove every element of B that also lies in C. Since 3 C, $it \\in must$ be dropped. The correct result is B \\ C = ${6, 9, 12}$, not ${3, 6, 9, 12}$.\n\n**5.** (FALSE) $A \\cap C$ = ${2, 4, 6}$\n\n$Another trap: 6 belongs to A but NOT to C, so it cannot appear in A \\cap C. The correct intersection is A \\cap C = {2, 4}.$\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=FALSE, E=FALSE",
+    "source_pdf_num": 8,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-7",
+    "case_id": "MATH 1.07",
+    "title": "In a cohort of 50 students, 30 take Mathematics (set M) and",
+    "subsection": "1.1",
+    "context": "$In a cohort of 50 students, 30 take Mathematics (set M) and 25 take Economics (set E). The two courses share 12 common students, so |M \\cap E| = 12.$",
+    "statements": [
+      "$|M E| = 43 \\cup$",
+      "The number of students taking neither Mathematics nor Economics is 7",
+      "M \\ E has 18 students (those taking only Mathematics)",
+      "$E M \\subseteq$",
+      "M and E are disjoint sets"
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $|M E| = 43 \\cup$**  (true)\n\n$|M E| = |M| + |E| - |M \\cap E| = 30 + 25 - 12 = 43. \\cup$\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) The number of students taking neither Mathematics nor Economics is 7**  (true)\n\nOut of 50 students, 43 take at least one of the two courses, so 50 - 43 = 7 take neither.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) M \\ E has 18 students (those taking only Mathematics)**  (true)\n\nM \\ E removes the 12 shared students from M's 30, leaving 30 - 12 = 18 students who take only Mathematics.\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) $E M \\subseteq$**  (false)\n\nTrap: E M would require every Economics student to also take Mathematics, i.e. |$M \\cap E$| = |E| =$\\subseteq 25$. But |$M \\cap E$| = 12 ≠ 25, so 13 Economics students do not take Mathematics - E is not a subset of M.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) M and E are disjoint sets**  (false)\n\n$Trap: disjoint sets must have an empty intersection. Here |M \\cap E| = 12 ≠ 0, so M and E overlap and are therefore not disjoint.$\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 7,
+    "solution_overview": "$In a cohort of 50 students, 30 take Mathematics (set M) and 25 take Economics (set E). The two courses share 12 common students, so |M \\cap E| = 12.$\n\n**Part 1: Setup.**\n\nBy inclusion-exclusion: |M E| = 30+25-12 = 43, so 50-43=7 take neither; |M only| =$\\cup 30$-12=18. Since |$M \\cap E$|=12 is less than |E|=25, E is NOT a subset of M (13 Econ-only students exist), and since 12≠0, M and E are not disjoint.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) $|M E| = 43 \\cup$\n\n$|M E| = |M| + |E| - |M \\cap E| = 30 + 25 - 12 = 43. \\cup$\n\n**2.** (TRUE) The number of students taking neither Mathematics nor Economics is 7\n\nOut of 50 students, 43 take at least one of the two courses, so 50 - 43 = 7 take neither.\n\n**3.** (TRUE) M \\ E has 18 students (those taking only Mathematics)\n\nM \\ E removes the 12 shared students from M's 30, leaving 30 - 12 = 18 students who take only Mathematics.\n\n**4.** (FALSE) $E M \\subseteq$\n\nTrap: E M would require every Economics student to also take Mathematics, i.e. |$M \\cap E$| = |E| =$\\subseteq 25$. But |$M \\cap E$| = 12 ≠ 25, so 13 Economics students do not take Mathematics - E is not a subset of M.\n\n**5.** (FALSE) M and E are disjoint sets\n\n$Trap: disjoint sets must have an empty intersection. Here |M \\cap E| = 12 ≠ 0, so M and E overlap and are therefore not disjoint.$\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE",
+    "source_pdf_num": 9,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-8",
+    "case_id": "MATH 1.08",
+    "title": "Let U = {1, 2, ..., 9}, and let A = {1, 2, 3}, B = {4, 5, 6}",
+    "subsection": "1.1",
+    "context": "Let U = {1, 2, ..., 9}, and let A = {1, 2, 3}, B = {4, 5, 6}, C = {7, 8, 9}.",
+    "statements": [
+      "A, B, and C are pairwise disjoint",
+      "${A, B, C} forms a partition of U, since A B C = U and the sets are pairwise disjoint \\cup \\cup$",
+      "$A \\cap B$\\cap C$ =$\\emptyset$",
+      "A \\ B =$\\emptyset$",
+      "$Since A \\cap B = , it follows that A = or B = \\emptyset \\emptyset \\emptyset$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) A, B, and C are pairwise disjoint**  (true)\n\nNo element is shared between any two of A, B, C, since each contains a distinct block of numbers - so every pair of sets is disjoint.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) ${A, B, C} forms a partition of U, since A B C = U and the sets are pairwise disjoint \\cup \\cup$**  (true)\n\nA B C = ${1,...,9}$ = U, and the sets are pairwise disjoint and nonempty, which is exactly $the \\cup \\cup$ definition of a partition of U.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) $A \\cap B$\\cap C$ =$\\emptyset$**  (true)\n\n$Since even just A \\cap B is already empty, intersecting with C cannot add anything, so A \\cap B \\cap C = . \\emptyset$\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) A \\ B =$\\emptyset$**  (false)\n\nTrap: A \\ B removes from A only the elements A shares with B. Since A and B are disjoint, nothing is removed, so A \\ B = A = {1, 2, 3}, which is NOT the empty set.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) $Since A \\cap B = , it follows that A = or B = \\emptyset \\emptyset \\emptyset$**  (false)\n\nTrap: this is a common misconception. Two nonempty sets can very well be disjoint (share no elements) without either one being empty - A = {1,2,3} and B = {4,5,6} are a direct counterexample. Tier 2 - Core Practice\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 8,
+    "solution_overview": "Let U = {1, 2, ..., 9}, and let A = {1, 2, 3}, B = {4, 5, 6}, C = {7, 8, 9}.\n\n**Part 1: Setup.**\n\nA,B,C share no elements pairwise (pairwise disjoint) and together cover all of U, so {A,B,C} is a genuine partition. Since A,B are already disjoint, A\\B=A (nothing gets removed) - and disjoint sets need NOT be empty themselves, only share no elements with each other.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) A, B, and C are pairwise disjoint\n\nNo element is shared between any two of A, B, C, since each contains a distinct block of numbers - so every pair of sets is disjoint.\n\n**2.** (TRUE) ${A, B, C} forms a partition of U, since A B C = U and the sets are pairwise disjoint \\cup \\cup$\n\nA B C = ${1,...,9}$ = U, and the sets are pairwise disjoint and nonempty, which is exactly $the \\cup \\cup$ definition of a partition of U.\n\n**3.** (TRUE) $A \\cap B$\\cap C$ =$\\emptyset$\n\n$Since even just A \\cap B is already empty, intersecting with C cannot add anything, so A \\cap B \\cap C = . \\emptyset$\n\n**4.** (FALSE) A \\ B =$\\emptyset$\n\nTrap: A \\ B removes from A only the elements A shares with B. Since A and B are disjoint, nothing is removed, so A \\ B = A = {1, 2, 3}, which is NOT the empty set.\n\n**5.** (FALSE) $Since A \\cap B = , it follows that A = or B = \\emptyset \\emptyset \\emptyset$\n\nTrap: this is a common misconception. Two nonempty sets can very well be disjoint (share no elements) without either one being empty - A = {1,2,3} and B = {4,5,6} are a direct counterexample. Tier 2 - Core Practice\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE",
+    "source_pdf_num": 10,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-9",
+    "case_id": "MATH 1.09",
+    "title": "Among U = 12 employees (numbered 1–12), let X = {1,2,3,4,5,6",
+    "subsection": "1.1",
+    "context": "Among U = 12 employees (numbered 1-12), let X = {1,2,3,4,5,6} be those who know Python, and Y = {4,5,6,7,8,9} be those who know SQL. Complements are taken relative to U.",
+    "statements": [
+      "Xᶜ = {7, 8, 9, 10, 11, 12}",
+      "$(X Y)ᶜ = {10, 11, 12} \\cup$",
+      "$Xᶜ \\cap Yᶜ = {10, 11, 12}$",
+      "$(X \\cap Y)ᶜ = Xᶜ Yᶜ \\cup$",
+      "$Xᶜ Yᶜ = {1, 2, 3, 10, 11, 12} \\cup$"
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) Xᶜ = {7, 8, 9, 10, 11, 12}**  (true)\n\nXᶜ is everyone in U not in X, i.e. everyone except employees 1-6: {7,8,9,10,11,12}.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) $(X Y)ᶜ = {10, 11, 12} \\cup$**  (true)\n\n$X Y = {1,2,3,4,5,6,7,8,9}, so its complement in U is {10, 11, 12}. \\cup$\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) $Xᶜ \\cap Yᶜ = {10, 11, 12}$**  (true)\n\n$Xᶜ = {7,...,12} and Yᶜ = {1,2,3,10,11,12}; their intersection is {10, 11, 12}, matching (X Y)ᶜ from \\cup part (b), as De Morgan's law predicts.$\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) $(X \\cap Y)ᶜ = Xᶜ Yᶜ \\cup$**  (true)\n\nThis is De Morgan's law for the complement of an intersection, and it holds generally, independent of this specific example.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) $Xᶜ Yᶜ = {1, 2, 3, 10, 11, 12} \\cup$**  (false)\n\nTrap: Xᶜ Yᶜ = ${7,8,9,10,11,12} {1,2,3,10,11,12}$ = ${1,2,3,7,8,9,10,11,12}$. The statement's $set \\cup \\cup$ is missing 7, 8, and 9 - it has actually been confused with Xᶜ$\\cap Y$ᶜ from part (c), which produces a different, smaller set.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 9,
+    "solution_overview": "Among U = 12 employees (numbered 1-12), let X = {1,2,3,4,5,6} be those who know Python, and Y = {4,5,6,7,8,9} be those who know SQL. Complements are taken relative to U.\n\n**Part 1: Setup.**\n\nCompute once: X Y=${1,...,9}$ so (X Y)ᶜ=${10,11,12}$; Xᶜ=${7,...,12}$, Yᶜ=${1,2,3,10,11,12}$, $so \\cup \\cup$ Xᶜ$\\cap Y$ᶜ=${10,11,12}$ (matches De Morgan) and Xᶜ Yᶜ=${1,2,3,7,8,9,10,11,12}$ - NOT the smaller ${1,2,3,10,11,12}$,$\\cup a$ common trap confusing union with intersection.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) Xᶜ = {7, 8, 9, 10, 11, 12}\n\nXᶜ is everyone in U not in X, i.e. everyone except employees 1-6: {7,8,9,10,11,12}.\n\n**2.** (TRUE) $(X Y)ᶜ = {10, 11, 12} \\cup$\n\n$X Y = {1,2,3,4,5,6,7,8,9}, so its complement in U is {10, 11, 12}. \\cup$\n\n**3.** (TRUE) $Xᶜ \\cap Yᶜ = {10, 11, 12}$\n\n$Xᶜ = {7,...,12} and Yᶜ = {1,2,3,10,11,12}; their intersection is {10, 11, 12}, matching (X Y)ᶜ from \\cup part (b), as De Morgan's law predicts.$\n\n**4.** (TRUE) $(X \\cap Y)ᶜ = Xᶜ Yᶜ \\cup$\n\nThis is De Morgan's law for the complement of an intersection, and it holds generally, independent of this specific example.\n\n**5.** (FALSE) $Xᶜ Yᶜ = {1, 2, 3, 10, 11, 12} \\cup$\n\nTrap: Xᶜ Yᶜ = ${7,8,9,10,11,12} {1,2,3,10,11,12}$ = ${1,2,3,7,8,9,10,11,12}$. The statement's $set \\cup \\cup$ is missing 7, 8, and 9 - it has actually been confused with Xᶜ$\\cap Y$ᶜ from part (c), which produces a different, smaller set.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE",
+    "source_pdf_num": 11,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-10",
+    "case_id": "MATH 1.10",
+    "title": "Let the universal set be U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}",
+    "subsection": "1.1",
+    "context": "Let the universal set be U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. Let A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7, 8}, with complements taken relative to U.",
+    "statements": [
+      "$(A B)ᶜ = {8, 9, 10} \\cup$",
+      "$(A \\cap B)ᶜ = Aᶜ Bᶜ \\cup$",
+      "$Aᶜ \\cap Bᶜ = {6, 7, 8, 9, 10}$",
+      "$(A \\cap B)ᶜ = {1, 2, 3, 6, 7, 8, 9, 10}$",
+      "$Aᶜ Bᶜ = {1, 2, 3, 9, 10} \\cup$"
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $(A B)ᶜ = {8, 9, 10} \\cup$**  (false)\n\nTrap: A B = ${1,2,3,4,5,6,7,8}$, so its complement in U is everything left over: ${9, 10}$ - not ${8,$\\cup 9$, 10}$. Since 8 B A B, it cannot also be in the complement.$\\in \\subseteq$\\cup$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**B) $(A \\cap B)ᶜ = Aᶜ Bᶜ \\cup$**  (true)\n\nThis is exactly De Morgan's law for complements of an intersection, and it holds for any two sets, not just this example.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) $Aᶜ \\cap Bᶜ = {6, 7, 8, 9, 10}$**  (false)\n\nTrap: Aᶜ = {6,7,8,9,10} and Bᶜ = {1,2,3,9,10}. Their intersection is only the elements common to both, {9, 10} - not the full set {6,7,8,9,10}, which is just Aᶜ by itself.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) $(A \\cap B)ᶜ = {1, 2, 3, 6, 7, 8, 9, 10}$**  (true)\n\n$A \\cap B$ = ${4, 5}$, so its complement is U with 4 and 5 removed: ${1, 2, 3, 6, 7, 8, 9, 10}$.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) $Aᶜ Bᶜ = {1, 2, 3, 9, 10} \\cup$**  (false)\n\nTrap: computing Aᶜ Bᶜ = ${6,7,8,9,10} {1,2,3,9,10}$ = ${1,2,3,6,7,8,9,10}$ - the statement $omits \\cup \\cup$ 6, 7, and 8. This value should equal ($A \\cap B$)ᶜ from statement (d), not (A B)ᶜ from statement (a); confusing $the \\cup two$ is the trap.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 10,
+    "solution_overview": "Let the universal set be U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. Let A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7, 8}, with complements taken relative to U.\n\n**Part 1: Setup.**\n\nU=${1..10}$, A=${1..5}$, B=${4..8}$. Compute once: A B=${1,...,8}$ so (A B)ᶜ=${9,10}$; $A \\cap B$=${4,5}$\\cup \\cup$ so ($A \\cap B$)ᶜ=${1,2,3,6,7,8,9,10}$; Aᶜ=${6,...,10}$, Bᶜ=${1,2,3,9,10}$, so Aᶜ$\\cap B$ᶜ=${9,10}$ and Aᶜ Bᶜ=${1,2,3,6,7,8,9,10}$.$\\cup Match$ each statement against these reference values - small variations are common traps.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (FALSE) $(A B)ᶜ = {8, 9, 10} \\cup$\n\nTrap: A B = ${1,2,3,4,5,6,7,8}$, so its complement in U is everything left over: ${9, 10}$ - not ${8,$\\cup 9$, 10}$. Since 8 B A B, it cannot also be in the complement.$\\in \\subseteq$\\cup$\n\n**2.** (TRUE) $(A \\cap B)ᶜ = Aᶜ Bᶜ \\cup$\n\nThis is exactly De Morgan's law for complements of an intersection, and it holds for any two sets, not just this example.\n\n**3.** (FALSE) $Aᶜ \\cap Bᶜ = {6, 7, 8, 9, 10}$\n\nTrap: Aᶜ = {6,7,8,9,10} and Bᶜ = {1,2,3,9,10}. Their intersection is only the elements common to both, {9, 10} - not the full set {6,7,8,9,10}, which is just Aᶜ by itself.\n\n**4.** (TRUE) $(A \\cap B)ᶜ = {1, 2, 3, 6, 7, 8, 9, 10}$\n\n$A \\cap B$ = ${4, 5}$, so its complement is U with 4 and 5 removed: ${1, 2, 3, 6, 7, 8, 9, 10}$.\n\n**5.** (FALSE) $Aᶜ Bᶜ = {1, 2, 3, 9, 10} \\cup$\n\nTrap: computing Aᶜ Bᶜ = ${6,7,8,9,10} {1,2,3,9,10}$ = ${1,2,3,6,7,8,9,10}$ - the statement $omits \\cup \\cup$ 6, 7, and 8. This value should equal ($A \\cap B$)ᶜ from statement (d), not (A B)ᶜ from statement (a); confusing $the \\cup two$ is the trap.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE",
+    "source_pdf_num": 12,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-11",
+    "case_id": "MATH 1.11",
+    "title": "Partitions of a set",
+    "subsection": "1.1",
+    "context": "Let A = {1, 2, 3, 4, 5, 6}. A partition of A is a collection of nonempty, pairwise disjoint subsets whose union is A.",
+    "statements": [
+      "P = { {1,2}, {3,4}, {5,6} } is a partition of A.",
+      "Every partition of a set must have exactly the same number of blocks as the set has elements.",
+      "Q = { {1,2,3}, {3,4,5,6} } is a partition of A.",
+      "R = { {1,2}, {3,4}, {5} } is a partition of A.",
+      "A set with n ≥ 2 elements always has more than one possible partition."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A) P = { {1,2}, {3,4}, {5,6} } is a partition of A.**  (true)\n\nThe three blocks are nonempty, pairwise disjoint, and their union {1,2,3,4,5,6} equals A - all partition requirements are satisfied.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Every partition of a set must have exactly the same number of blocks as the set has elements.**  (false)\n\nA partition can have any number of blocks, from 1 (the whole set as a single block) up to n (all singletons) - there's no requirement that the number of blocks equals |A|, as (a) already shows with 3 blocks for 6 elements.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) Q = { {1,2,3}, {3,4,5,6} } is a partition of A.**  (false)\n\nThe blocks {1,2,3} and {3,4,5,6} both contain the element 3, violating the requirement that blocks be pairwise disjoint.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) R = { {1,2}, {3,4}, {5} } is a partition of A.**  (false)\n\nThe union of R's blocks is {1,2,3,4,5}, which misses the element 6 - the blocks don't cover all of A.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) A set with n ≥ 2 elements always has more than one possible partition.**  (true)\n\nFor any n ≥ 2, at least two distinct partitions always exist - for example, the single block {A} itself, and the partition into all singletons - and these are different whenever n ≥ 2.\n\nThe claim matches the computation above, so it is **true**."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 11,
+    "solution_overview": "Let A = {1, 2, 3, 4, 5, 6}. A partition of A is a collection of nonempty, pairwise disjoint subsets whose union is A.\n\n**Part 1: Setup.**\n\nA valid partition needs blocks that are (1) nonempty, (2) pairwise disjoint, and (3) collectively cover every element of A exactly once. Check each candidate against all three: P={{1,2},{3,4},{5,6}} passes; Q fails disjointness (3 appears twice); R fails coverage (misses 6). There's no rule tying the number of blocks to |A|.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) P = { {1,2}, {3,4}, {5,6} } is a partition of A.\n\nThe three blocks are nonempty, pairwise disjoint, and their union {1,2,3,4,5,6} equals A - all partition requirements are satisfied.\n\n**2.** (FALSE) Every partition of a set must have exactly the same number of blocks as the set has elements.\n\nA partition can have any number of blocks, from 1 (the whole set as a single block) up to n (all singletons) - there's no requirement that the number of blocks equals |A|, as (a) already shows with 3 blocks for 6 elements.\n\n**3.** (FALSE) Q = { {1,2,3}, {3,4,5,6} } is a partition of A.\n\nThe blocks {1,2,3} and {3,4,5,6} both contain the element 3, violating the requirement that blocks be pairwise disjoint.\n\n**4.** (FALSE) R = { {1,2}, {3,4}, {5} } is a partition of A.\n\nThe union of R's blocks is {1,2,3,4,5}, which misses the element 6 - the blocks don't cover all of A.\n\n**5.** (TRUE) A set with n ≥ 2 elements always has more than one possible partition.\n\nFor any n ≥ 2, at least two distinct partitions always exist - for example, the single block {A} itself, and the partition into all singletons - and these are different whenever n ≥ 2.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=FALSE, E=TRUE",
+    "source_pdf_num": 14,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-12",
+    "case_id": "MATH 1.12",
+    "title": "Counting subsets",
+    "subsection": "1.1",
+    "context": "Let A be a set with |A| = 5.",
+    "statements": [
+      "The number of subsets of A is 32.",
+      "The number of proper subsets of A is 31.",
+      "The number of subsets of A containing exactly 4 elements is 10.",
+      "The number of nonempty subsets of A is 31.",
+      "The number of subsets of A containing an even number of elements (0, 2, or 4) is 15."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) The number of subsets of A is 32.**  (true)\n\nA set with n elements has 2ⁿ subsets; here 2⁵ = 32.\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) The number of proper subsets of A is 31.**  (true)\n\nA proper subset excludes only A itself, so 32 - 1 = 31 subsets qualify.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) The number of subsets of A containing exactly 4 elements is 10.**  (false)\n\nThe number of 4-element subsets is C(5,4) = 5, not 10 (10 is actually the count for 3-element or 2- element subsets, C(5,3)=C(5,2)=10 - a mismatch with the wrong size here).\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) The number of nonempty subsets of A is 31.**  (true)\n\nExcluding only the empty set from the 32 total subsets leaves 32 - 1 = 31 nonempty subsets.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) The number of subsets of A containing an even number of elements (0, 2, or 4) is 15.**  (false)\n\nSumming C(5,0)+C(5,2)+C(5,4) = 1+10+5 = 16, not 15 - the actual count of even-sized subsets is 16.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 12,
+    "solution_overview": "Let A be a set with |A| = 5.\n\n**Part 1: Setup.**\n\nWith |A|=5: total subsets = 2⁵=32, proper subsets = 32-1=31, nonempty subsets = 32-1=31. By binomial coefficients: C(5,4)=5 (not 10 - that's C(5,3) or C(5,2)), and the even-sized subsets total C(5,0)+C(5,2)+C(5,4)=1+10+5=16 (not 15).\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) The number of subsets of A is 32.\n\nA set with n elements has 2ⁿ subsets; here 2⁵ = 32.\n\n**2.** (TRUE) The number of proper subsets of A is 31.\n\nA proper subset excludes only A itself, so 32 - 1 = 31 subsets qualify.\n\n**3.** (FALSE) The number of subsets of A containing exactly 4 elements is 10.\n\nThe number of 4-element subsets is C(5,4) = 5, not 10 (10 is actually the count for 3-element or 2- element subsets, C(5,3)=C(5,2)=10 - a mismatch with the wrong size here).\n\n**4.** (TRUE) The number of nonempty subsets of A is 31.\n\nExcluding only the empty set from the 32 total subsets leaves 32 - 1 = 31 nonempty subsets.\n\n**5.** (FALSE) The number of subsets of A containing an even number of elements (0, 2, or 4) is 15.\n\nSumming C(5,0)+C(5,2)+C(5,4) = 1+10+5 = 16, not 15 - the actual count of even-sized subsets is 16.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE",
+    "source_pdf_num": 17,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-13",
+    "case_id": "MATH 1.13",
+    "title": "Let A = (0, 10] and B = [5, 15) be intervals of real numbers",
+    "subsection": "1.1",
+    "context": "Let A = (0, 10] and B = [5, 15) be intervals of real numbers, treated as sets.",
+    "statements": [
+      "$A \\cap B$ = [5, 10]",
+      "$A \\cup B$ = (0, 15]",
+      "$10 A \\cap B \\in$",
+      "$5 A \\ B \\in$",
+      "The statement \"x A x B\" is true for all x.$\\in \\Rightarrow$\\in$"
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $A \\cap B$ = [5, 10]**  (true)\n\nA starts just above 0 and includes up to 10; B starts at 5 and goes up to just below 15. Their overlap is all x with 5 ≤ x ≤ 10, i.e. [5, 10].\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) $A \\cup B$ = (0, 15]**  (false)\n\n$Trap: 15 is not included in B (open at 15) and A doesn't reach 15 at all, so 15 A B. The correct \\notin \\cup union is (0, 15), not (0, 15].$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) $10 A \\cap B \\in$**  (true)\n\n$10 belongs to A (its closed right endpoint) and to B (since 5 ≤ 10 < 15), so 10 A \\cap B. \\in$\n\nThe claim matches the computation above, so it is **true**.",
+      "**D) $5 A \\ B \\in$**  (false)\n\nTrap: A \\ B removes from A everything also in B. Since B includes 5 (closed at 5), the value 5 is removed from A, so 5 A \\ B. The correct set is A \\ B = (0, 5). \\notin\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) The statement \"x A x B\" is true for all x.$\\in \\Rightarrow$\\in$**  (false)\n\nTrap: this implication fails for x = 1, which lies in A = (0,10] but not in B = [5,15) since 1 < 5. One counterexample is enough to make the universal implication false. Tier 3 - Advanced\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 13,
+    "solution_overview": "Let A = (0, 10] and B = [5, 15) be intervals of real numbers, treated as sets.\n\n**Part 1: Setup.**\n\nCompute once: $A \\cap B$=[5,10] (tightest bounds from each side, both inclusive here); A B=(0,15)$\\cup$(no gap, open at both outer ends); A\\B=(0,5) (removing everything B also covers, i.e. everything ≥5). Test each statement - especially boundary points like x=5 and x=10 - directly against these three computed intervals.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) $A \\cap B$ = [5, 10]\n\nA starts just above 0 and includes up to 10; B starts at 5 and goes up to just below 15. Their overlap is all x with 5 ≤ x ≤ 10, i.e. [5, 10].\n\n**2.** (FALSE) $A \\cup B$ = (0, 15]\n\n$Trap: 15 is not included in B (open at 15) and A doesn't reach 15 at all, so 15 A B. The correct \\notin \\cup union is (0, 15), not (0, 15].$\n\n**3.** (TRUE) $10 A \\cap B \\in$\n\n$10 belongs to A (its closed right endpoint) and to B (since 5 ≤ 10 < 15), so 10 A \\cap B. \\in$\n\n**4.** (FALSE) $5 A \\ B \\in$\n\nTrap: A \\ B removes from A everything also in B. Since B includes 5 (closed at 5), the value 5 is removed from A, so 5 A \\ B. The correct set is A \\ B = (0, 5). \\notin\n\n**5.** (FALSE) The statement \"x A x B\" is true for all x.$\\in \\Rightarrow$\\in$\n\nTrap: this implication fails for x = 1, which lies in A = (0,10] but not in B = [5,15) since 1 < 5. One counterexample is enough to make the universal implication false. Tier 3 - Advanced\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=FALSE",
+    "source_pdf_num": 18,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-14",
+    "case_id": "MATH 1.14",
+    "title": "A survey of 150 tourists finds: 80 visited Museum A, 70 visi",
+    "subsection": "1.1",
+    "context": "A survey of 150 tourists finds: 80 visited Museum A, 70 visited Museum B, 60 visited Museum C, 30 visited both A and B, 25 visited both B and C, 20 visited both A and C, and 10 visited all three museums.",
+    "statements": [
+      "$|A B C| = 155 \\cup \\cup$",
+      "The number of tourists who visited none of the three museums is 5",
+      "The number who visited exactly A and B (but not C) is 30",
+      "The number who visited only Museum A (and no other) equals 80 - 30 - 20 = 30",
+      "The number who visited at least two of the three museums is 65"
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) $|A B C| = 155 \\cup \\cup$**  (false)\n\n$Trap: by inclusion-exclusion, |A B C| = 80+70+60 - 30-25-20 + 10 = 210 - 75 + 10 = 145, not \\cup \\cup 155 - a simple arithmetic slip.$\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**B) The number of tourists who visited none of the three museums is 5**  (true)\n\nSince 145 out of 150 tourists visited at least one museum, the remaining 150 - 145 = 5 visited none.\n\nThe claim matches the computation above, so it is **true**.",
+      "**C) The number who visited exactly A and B (but not C) is 30**  (false)\n\nTrap: \"exactly A and B, not C\" must remove the triple-overlap from the raw pairwise count: 30 (A and B) - 10 (all three) = 20, not the raw 30 - forgetting to subtract the triple overlap is the error here.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) The number who visited only Museum A (and no other) equals 80 - 30 - 20 = 30**  (false)\n\nTrap: this formula forgets to add back the triple overlap. The correct count for \"only A\" is |A| - | $A \\cap B$| - |$A \\cap C$| + |$A \\cap B$\\cap C$| = 80 - 30 - 20 + 10 = 40, not 30.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**E) The number who visited at least two of the three museums is 65**  (false)\n\nTrap: \"at least two\" sums each pairwise overlap and subtracts the triple overlap twice: (30 - 10) + (25 - 10) + (20 - 10) + 10 = 20+15+10+10 = 55, not 65 - another arithmetic slip.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 14,
+    "solution_overview": "A survey of 150 tourists finds: 80 visited Museum A, 70 visited Museum B, 60 visited Museum C, 30 visited both A and B, 25 visited both B and C, 20 visited both A and C, and 10 visited all three museums.\n\n**Part 1: Setup.**\n\nWith 80/70/60 single visits, 30/25/20 pairwise, 10 triple: |A B C| = 80+70+60-30-25-20+$10 \\cup \\cup$ = 145 (so 150-145=5 visited none); \"only $A \\cap B$\" = 30-10=20; \"at least two\" = (30-10)+(25-10)+(20-10)+10 = 55. Recompute each statement's number carefully - arithmetic slips are the main trap throughout.\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (FALSE) $|A B C| = 155 \\cup \\cup$\n\n$Trap: by inclusion-exclusion, |A B C| = 80+70+60 - 30-25-20 + 10 = 210 - 75 + 10 = 145, not \\cup \\cup 155 - a simple arithmetic slip.$\n\n**2.** (TRUE) The number of tourists who visited none of the three museums is 5\n\nSince 145 out of 150 tourists visited at least one museum, the remaining 150 - 145 = 5 visited none.\n\n**3.** (FALSE) The number who visited exactly A and B (but not C) is 30\n\nTrap: \"exactly A and B, not C\" must remove the triple-overlap from the raw pairwise count: 30 (A and B) - 10 (all three) = 20, not the raw 30 - forgetting to subtract the triple overlap is the error here.\n\n**4.** (FALSE) The number who visited only Museum A (and no other) equals 80 - 30 - 20 = 30\n\nTrap: this formula forgets to add back the triple overlap. The correct count for \"only A\" is |A| - | $A \\cap B$| - |$A \\cap C$| + |$A \\cap B$\\cap C$| = 80 - 30 - 20 + 10 = 40, not 30.\n\n**5.** (FALSE) The number who visited at least two of the three museums is 65\n\nTrap: \"at least two\" sums each pairwise overlap and subtracts the triple overlap twice: (30 - 10) + (25 - 10) + (20 - 10) + 10 = 20+15+10+10 = 55, not 65 - another arithmetic slip.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=FALSE",
+    "source_pdf_num": 19,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-15",
+    "case_id": "MATH 1.15",
+    "title": "Infinite sets and cardinality",
+    "subsection": "1.1",
+    "context": "Let N = {1, 2, 3, ...} be the natural numbers and E = {2, 4, 6, ...} be the even natural numbers.",
+    "statements": [
+      "E is a proper subset of N.",
+      "Since E is a proper subset of N, E must have strictly fewer elements than N.",
+      "The function f(n) = 2n defines a one-to-one correspondence (bijection) between N and the odd natural numbers.",
+      "The fact that E N yet has the same cardinality as N shows that the finite-set intuition “proper subset ⊊$\\Rightarrow fewer$ elements” does not carry over to infinite sets.",
+      "Every infinite subset of N is equal to N itself (contains all the natural numbers)."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A) E is a proper subset of N.**  (true)\n\nEvery even number is a natural number, so E N; and 1 N but 1 E, so the inclusion is $strict \\subseteq \\in$\\notin$(proper).\n\nThe claim matches the computation above, so it is **true**.",
+      "**B) Since E is a proper subset of N, E must have strictly fewer elements than N.**  (false)\n\nThis finite-set intuition fails for infinite sets: f(n)=2n is a bijection between N and E (part c), so despite being a proper subset, E has exactly the same cardinality as N, not fewer elements.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**C) The function f(n) = 2n defines a one-to-one correspondence (bijection) between N and the odd natural numbers.**  (false)\n\nTrap: f(n) = 2n always produces an EVEN number, so its outputs land in E (the even naturals), never in the odd naturals - it cannot possibly be a bijection onto the odd numbers, since it never even reaches them.\n\nThis is a common trap; the corrected reading shows the claim is **false**.",
+      "**D) The fact that E N yet has the same cardinality as N shows that the finite-set intuition “proper subset ⊊$\\Rightarrow fewer$ elements” does not carry over to infinite sets.**  (true)\n\nThis is precisely the classical insight (going back to Cantor and earlier to Galileo) that infinite sets can be in bijection with a proper subset of themselves, unlike finite sets.\n\nThe claim matches the computation above, so it is **true**.",
+      "**E) Every infinite subset of N is equal to N itself (contains all the natural numbers).**  (false)\n\nTrap: this confuses \"same cardinality\" with \"being the same set.\" E itself is an infinite subset of N with the same cardinality as N, yet E ≠ N - E excludes every odd number, such as 1. Equal cardinality does not mean equal as sets.\n\nThis is a common trap; the corrected reading shows the claim is **false**."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 15,
+    "solution_overview": "Let N = {1, 2, 3, ...} be the natural numbers and E = {2, 4, 6, ...} be the even natural numbers.\n\n**Part 1: Setup.**\n\nf(n)=2n maps N bijectively onto E (every natural number n gives a unique even number 2n, and every even number is hit exactly once), so despite E being a proper subset of N (it excludes all odd numbers), E and N have the SAME cardinality - the classic infinite-set phenomenon where \"proper subset\" no longer implies \"fewer elements.\"\n\n**Part 2: Key facts.**\n\nUse the definitions of membership, subset, union, intersection, difference, complement, and power set as needed. Compute shared objects once.\n\n**Part 3: Solve.**\n\n**1.** (TRUE) E is a proper subset of N.\n\nEvery even number is a natural number, so E N; and 1 N but 1 E, so the inclusion is $strict \\subseteq \\in$\\notin$(proper).\n\n**2.** (FALSE) Since E is a proper subset of N, E must have strictly fewer elements than N.\n\nThis finite-set intuition fails for infinite sets: f(n)=2n is a bijection between N and E (part c), so despite being a proper subset, E has exactly the same cardinality as N, not fewer elements.\n\n**3.** (FALSE) The function f(n) = 2n defines a one-to-one correspondence (bijection) between N and the odd natural numbers.\n\nTrap: f(n) = 2n always produces an EVEN number, so its outputs land in E (the even naturals), never in the odd naturals - it cannot possibly be a bijection onto the odd numbers, since it never even reaches them.\n\n**4.** (TRUE) The fact that E N yet has the same cardinality as N shows that the finite-set intuition “proper subset ⊊$\\Rightarrow fewer$ elements” does not carry over to infinite sets.\n\nThis is precisely the classical insight (going back to Cantor and earlier to Galileo) that infinite sets can be in bijection with a proper subset of themselves, unlike finite sets.\n\n**5.** (FALSE) Every infinite subset of N is equal to N itself (contains all the natural numbers).\n\nTrap: this confuses \"same cardinality\" with \"being the same set.\" E itself is an infinite subset of N with the same cardinality as N, yet E ≠ N - E excludes every odd number, such as 1. Equal cardinality does not mean equal as sets.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=FALSE",
+    "source_pdf_num": 21,
+    "needs_polish": false,
+    "is_filler": false
+  },
+  {
+    "id": "math-1-16",
+    "case_id": "MATH 1.16",
+    "title": "[FILLER] Library tags: membership vs listing",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 16,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Library tags: membership vs listing"
+  },
+  {
+    "id": "math-1-17",
+    "case_id": "MATH 1.17",
+    "title": "[FILLER] Workshop tools: proper subsets",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 17,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Workshop tools: proper subsets"
+  },
+  {
+    "id": "math-1-18",
+    "case_id": "MATH 1.18",
+    "title": "[FILLER] Badge colours: power set size",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 18,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Badge colours: power set size"
+  },
+  {
+    "id": "math-1-19",
+    "case_id": "MATH 1.19",
+    "title": "[FILLER] Integer solutions of x^2=16",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 19,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Integer solutions of x^2=16"
+  },
+  {
+    "id": "math-1-20",
+    "case_id": "MATH 1.20",
+    "title": "[FILLER] Even digits set-builder equality",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 20,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Even digits set-builder equality"
+  },
+  {
+    "id": "math-1-21",
+    "case_id": "MATH 1.21",
+    "title": "[FILLER] Team roster: element vs subset trap",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 21,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Team roster: element vs subset trap"
+  },
+  {
+    "id": "math-1-22",
+    "case_id": "MATH 1.22",
+    "title": "[FILLER] Empty set as subset and as element",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 22,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Empty set as subset and as element"
+  },
+  {
+    "id": "math-1-23",
+    "case_id": "MATH 1.23",
+    "title": "[FILLER] Singleton power set",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 23,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Singleton power set"
+  },
+  {
+    "id": "math-1-24",
+    "case_id": "MATH 1.24",
+    "title": "[FILLER] Partitions of a 4-element set",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 24,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Partitions of a 4-element set"
+  },
+  {
+    "id": "math-1-25",
+    "case_id": "MATH 1.25",
+    "title": "[FILLER] Counting k-subsets of a committee",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 25,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Counting k-subsets of a committee"
+  },
+  {
+    "id": "math-1-26",
+    "case_id": "MATH 1.26",
+    "title": "[FILLER] Set equality after reordering and repeats",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 26,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Set equality after reordering and repeats"
+  },
+  {
+    "id": "math-1-27",
+    "case_id": "MATH 1.27",
+    "title": "[FILLER] Natural vs integer set-builder roots",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 27,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Natural vs integer set-builder roots"
+  },
+  {
+    "id": "math-1-28",
+    "case_id": "MATH 1.28",
+    "title": "[FILLER] Infinite set of even integers cardinality intuition",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 28,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Infinite set of even integers cardinality intuition"
+  },
+  {
+    "id": "math-1-29",
+    "case_id": "MATH 1.29",
+    "title": "[FILLER] Power set of a power set size",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 29,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Power set of a power set size"
+  },
+  {
+    "id": "math-1-30",
+    "case_id": "MATH 1.30",
+    "title": "[FILLER] Nested set membership chain a∈{{a}}",
+    "subsection": "1.1",
+    "context": "",
+    "statements": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 30,
+    "solution_overview": "",
+    "source_pdf_num": null,
+    "needs_polish": true,
+    "is_filler": true,
+    "filler_theme": "Nested set membership chain a∈{{a}}"
+  }
+]

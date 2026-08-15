@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.10",
+  "title": "The Improbable Global Conquest of the Potato",
+  "passage": "(1) Long before it became a staple crop on nearly every continent, the potato was domesticated in the high Andean plateaus of present-day Peru and Bolivia, where indigenous peoples cultivated it from thousands of wild tuber varieties over roughly 8,000 years. Early Andean farmers developed remarkably sophisticated preservation techniques, including a freeze-drying process known as chuño, which allowed potatoes to be stored for years at high altitude without spoiling.\n\n(2) Spanish colonisers carried the potato back to Europe during the mid-1500s, where it was initially met with deep suspicion. Because the plant belonged to the nightshade family, whose relatives include several toxic species, some Europeans blamed it for causing leprosy, and for roughly two centuries it was grown mostly as a curious ornamental rather than widely eaten as food.\n\n(3) Adoption accelerated dramatically during the eighteenth century, often through deliberate government intervention. Frederick the Great of Prussia issued a formal \"Potato Order\" in 1756 mandating cultivation, while in France the pharmacist Antoine-Augustin Parmentier, having subsisted on little else as a prisoner of war, staged elaborate public dinners and reportedly ordered royal potato fields guarded loudly by day while deliberately left unguarded at night, tricking suspicious peasants into believing the crop was valuable enough to steal.\n\n(4) The economic appeal was substantial: potatoes could yield roughly four times as many calories per unit of land as wheat under comparable conditions, allowing considerably more people to be fed from the same amount of farmland. Some historians estimate that in regions where cultivation spread between 1700 and 1900, population growth measurably outpaced that of comparable regions, with one influential study attributing up to 25% of urban population growth in those areas to the crop's adoption.\n\n(5) Ireland's reliance eventually became extreme, with much of the rural population dependent almost exclusively on a single variety, the Irish Lumper, for daily caloric intake. This genetic uniformity left the crop dangerously vulnerable when the fungus-like pathogen Phytophthora infestans triggered repeated harvest failures beginning in 1845. The resulting famine is estimated to have killed roughly 1 million people through starvation and disease, while a further 1 million emigrated, contributing to an overall population decline of roughly 20–25% within just a few years.\n\n(6) Global production today totals approximately 370 million tonnes annually, with China and India now ranking among the largest producing countries, and cultivation spanning more than 100 countries across six continents.\n\n(7) Partly in response to the vulnerability so starkly illustrated by the Irish famine, international efforts now prioritise preserving genetic diversity: the International Potato Center in Lima maintains a gene bank containing more than 4,000 distinct potato varieties, safeguarding traits such as disease resistance for future breeding programmes.\n\n(8) There is also an unexpected nutritional twist. Allowing a cooked potato to cool converts a portion of its digestible starch into so-called resistant starch, which passes through the small intestine largely unbroken down; several laboratory studies suggest this can meaningfully lower the food's glycemic response compared to eating the same potato freshly cooked and still hot, although the magnitude of this effect varies considerably depending on preparation method.\n\n(9) Whether the potato should be regarded as a primary driver of early modern European population growth, or merely one contributing factor among several simultaneous agricultural and economic changes, remains a genuinely debated question among economic historians studying the period.",
+  "tasks": [
+    {
+      "id": "en-t-10-01",
+      "exam_title": "Early Sections",
+      "kind": "reading",
+      "statements": [
+        "The potato was domesticated in the Andean highlands roughly 8,000 years ago from thousands of wild tuber varieties.",
+        "Chuño is described as a freeze-drying preservation technique allowing potatoes to be stored for years.",
+        "European suspicion of the potato was linked partly to its membership in the nightshade family.",
+        "The potato was widely eaten as a staple food throughout Europe almost immediately after its introduction in the 1500s.",
+        "Frederick the Great's \"Potato Order\" was issued in 1756, mandating cultivation in Prussia."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The potato was domesticated in the Andean highlands roughly 8,000 years ago from thousands of wild tuber varieties.**\n\nParagraph 1 places domestication in the high Andean plateaus of present-day Peru and Bolivia and says indigenous peoples cultivated the potato \"from thousands of wild tuber varieties over roughly 8,000 years.\" The statement keeps place, timescale, and wild-source breadth intact.\n\n**Tip:** Dates and quantities that paraphrase the same span still count as true.\n\nThe claim matches the opening origin facts, so it is true.",
+        "**B) Chuño is described as a freeze-drying preservation technique allowing potatoes to be stored for years.**\n\nStill in Paragraph 1, the text names chuño as \"a freeze-drying process\" that \"allowed potatoes to be stored for years at high altitude without spoiling.\" Both the method type and the long storage claim line up.\n\nThe statement restates Paragraph 1's definition of chuño, so it is true.",
+        "**C) European suspicion of the potato was linked partly to its membership in the nightshade family.**\n\nParagraph 2 says the plant \"belonged to the nightshade family, whose relatives include several toxic species,\" and that this background helped fuel deep suspicion (and even leprosy blame). The family link is explicit, not invented.\n\n**Tip:** \"Linked partly\" is weaker than \"only cause,\" so it survives here.\n\nThe nightshade link is stated in Paragraph 2, so the claim is true.",
+        "**D) The potato was widely eaten as a staple food throughout Europe almost immediately after its introduction in the 1500s.**\n\nParagraph 2 records introduction in the mid-1500s, then undercuts any \"immediate staple\" story: \"for roughly two centuries it was grown mostly as a curious ornamental rather than widely eaten as food.\" The statement flips chronology and diet status.\n\n**Trap:** Arrival date ≠ immediate culinary adoption.\n\nThe claim fails: the passage says ornamental use dominated for about two centuries, not immediate staple eating.",
+        "**E) Frederick the Great's \"Potato Order\" was issued in 1756, mandating cultivation in Prussia.**\n\nParagraph 3 states that \"Frederick the Great of Prussia issued a formal \\\"Potato Order\\\" in 1756 mandating cultivation.\" Ruler, year, place, and mandatory cultivation all match.\n\nThe claim tracks Paragraph 3's dated decree, so it is true."
+      ],
+      "highlights": [
+        "cultivated it from thousands of wild tuber varieties over roughly 8,000 years",
+        "a freeze-drying process known as chuño, which allowed potatoes to be stored for years",
+        "Because the plant belonged to the nightshade family, whose relatives include several toxic species",
+        "for roughly two centuries it was grown mostly as a curious ornamental rather than widely eaten as food",
+        "Frederick the Great of Prussia issued a formal \"Potato Order\" in 1756 mandating cultivation"
+      ]
+    },
+    {
+      "id": "en-t-10-02",
+      "exam_title": "Middle Sections",
+      "kind": "reading",
+      "statements": [
+        "Potatoes are described as yielding roughly four times as many calories per unit of land as wheat under comparable conditions.",
+        "One influential study attributed up to 25% of urban population growth in relevant regions to potato adoption.",
+        "The Irish Lumper is described as one of many genetically diverse varieties cultivated in Ireland at the time.",
+        "The Great Famine, triggered by Phytophthora infestans, began in 1845.",
+        "The famine's death toll and emigration together contributed to an overall population decline of roughly 20–25%."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Potatoes are described as yielding roughly four times as many calories per unit of land as wheat under comparable conditions.**\n\nParagraph 4 gives the economic appeal in just those terms: potatoes \"could yield roughly four times as many calories per unit of land as wheat under comparable conditions.\" Ratio, comparator, and caveat all survive the paraphrase.\n\nThe caloric-yield claim matches Paragraph 4, so it is true.",
+        "**B) One influential study attributed up to 25% of urban population growth in relevant regions to potato adoption.**\n\nThe same paragraph credits \"one influential study attributing up to 25% of urban population growth in those areas to the crop's adoption.\" Ceiling percentage, urban growth focus, and attribution to the potato remain intact.\n\nThe 25% urban-growth attribution is explicit, so the statement is true.",
+        "**C) The Irish Lumper is described as one of many genetically diverse varieties cultivated in Ireland at the time.**\n\nParagraph 5 says much of the rural population was \"dependent almost exclusively on a single variety, the Irish Lumper,\" and that this \"genetic uniformity\" left the crop vulnerable. The statement invents diversity where the text stresses dangerous sameness.\n\n**Trap:** Naming a variety is not the same as calling it one among many co-equal staples.\n\nThe claim fails: Ireland relied almost exclusively on one variety, not a diverse mix.",
+        "**D) The Great Famine, triggered by Phytophthora infestans, began in 1845.**\n\nParagraph 5 names Phytophthora infestans and says it \"triggered repeated harvest failures beginning in 1845,\" producing the famine. Pathogen and start year both appear.\n\nThe outbreak-and-date framing matches Paragraph 5, so the statement is true.",
+        "**E) The famine's death toll and emigration together contributed to an overall population decline of roughly 20–25%.**\n\nParagraph 5 pairs roughly 1 million deaths and a further 1 million emigrants, \"contributing to an overall population decline of roughly 20–25% within just a few years.\" The statement keeps the combined demographic result.\n\nThe 20–25% decline figure is stated outright, so the claim is true."
+      ],
+      "highlights": [
+        "potatoes could yield roughly four times as many calories per unit of land as wheat under comparable conditions",
+        "one influential study attributing up to 25% of urban population growth in those areas to the crop's adoption",
+        "dependent almost exclusively on a single variety, the Irish Lumper",
+        "Phytophthora infestans triggered repeated harvest failures beginning in 1845",
+        "contributing to an overall population decline of roughly 20–25% within just a few years"
+      ]
+    },
+    {
+      "id": "en-t-10-03",
+      "exam_title": "Later Sections",
+      "kind": "reading",
+      "statements": [
+        "Global potato production today totals approximately 370 million tonnes annually.",
+        "The International Potato Center's gene bank in Lima is described as containing more than 4,000 distinct potato varieties.",
+        "Cooling a cooked potato is described as converting some of its resistant starch into ordinary digestible starch.",
+        "The size of the glycemic-response effect from cooling potatoes is described as consistent and identical across all preparation methods.",
+        "The passage concludes by presenting the potato's role in population growth as a genuinely debated question among historians."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Global potato production today totals approximately 370 million tonnes annually.**\n\nParagraph 6 opens with that exact scale: \"Global production today totals approximately 370 million tonnes annually.\" Volume, annual framing, and approximating hedge all match.\n\nThe production total matches Paragraph 6, so the statement is true.",
+        "**B) The International Potato Center's gene bank in Lima is described as containing more than 4,000 distinct potato varieties.**\n\nParagraph 7 says \"the International Potato Center in Lima maintains a gene bank containing more than 4,000 distinct potato varieties.\" Institution, city, and count line up.\n\nThe gene-bank figure is stated in Paragraph 7, so the claim is true.",
+        "**C) Cooling a cooked potato is described as converting some of its resistant starch into ordinary digestible starch.**\n\nParagraph 8 runs the chemistry the other way: cooling \"converts a portion of its digestible starch into so-called resistant starch.\" The statement reverses which form becomes which.\n\n**Trap:** Direction flips on technical processes are classic true/false bait.\n\nThe claim fails: cooling turns digestible starch into resistant starch, not the reverse.",
+        "**D) The size of the glycemic-response effect from cooling potatoes is described as consistent and identical across all preparation methods.**\n\nAfter noting a possible glycemic lowering, Paragraph 8 adds that \"the magnitude of this effect varies considerably depending on preparation method.\" \"Consistent and identical across all\" invents uniformity the text denies.\n\nThe claim fails: the passage says the effect size varies considerably by preparation method.",
+        "**E) The passage concludes by presenting the potato's role in population growth as a genuinely debated question among historians.**\n\nParagraph 9 ends on open disagreement: whether the potato was a \"primary driver\" or \"merely one contributing factor… remains a genuinely debated question among economic historians.\" The statement mirrors that unresolved framing.\n\nThe closing debate is explicit in Paragraph 9, so the claim is true."
+      ],
+      "highlights": [
+        "Global production today totals approximately 370 million tonnes annually",
+        "the International Potato Center in Lima maintains a gene bank containing more than 4,000 distinct potato varieties",
+        "converts a portion of its digestible starch into so-called resistant starch",
+        "the magnitude of this effect varies considerably depending on preparation method",
+        "remains a genuinely debated question among economic historians studying the period"
+      ]
+    },
+    {
+      "id": "en-t-10-04",
+      "exam_title": "Disguised Inference Traps",
+      "kind": "reading",
+      "statements": [
+        "Since potatoes yielded roughly four times the calories per unit of land compared to wheat, it can be inferred that a given plot could support meaningfully more people when planted with potatoes rather than wheat.",
+        "If the famine killed roughly 1 million people and a further 1 million emigrated, then approximately 2 million people were removed from Ireland's population through these two combined causes.",
+        "Because Parmentier's guarded fields were deliberately left unattended at night, it can be inferred that this was intended to make the crop seem more, not less, valuable to onlookers.",
+        "Because the potato offered a higher caloric yield, the passage implies this factor alone fully and conclusively explains all population growth observed in adopting regions.",
+        "Since resistant starch passes through the small intestine largely unbroken down, it can be inferred that it behaves differently in digestion than ordinary digestible starch."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Since potatoes yielded roughly four times the calories per unit of land compared to wheat, it can be inferred that a given plot could support meaningfully more people when planted with potatoes rather than wheat.**\n\nParagraph 4 states the fourfold caloric yield and immediately glosses the consequence: \"allowing considerably more people to be fed from the same amount of farmland.\" The inference is the passage's own next step, not a leap.\n\n**Tip:** When the text itself draws the people-fed consequence, the inference is safe.\n\nThe more-people inference follows Paragraph 4's own yield argument, so the statement is true.",
+        "**B) If the famine killed roughly 1 million people and a further 1 million emigrated, then approximately 2 million people were removed from Ireland's population through these two combined causes.**\n\nParagraph 5 gives both figures side by side. Adding them is arithmetic on stated quantities, not a new historical claim. \"Removed from Ireland's population\" fairly covers deaths plus emigration.\n\nThe combined ~2 million figure follows cleanly from the paired Paragraph 5 totals, so the claim is true.",
+        "**C) Because Parmentier's guarded fields were deliberately left unattended at night, it can be inferred that this was intended to make the crop seem more, not less, valuable to onlookers.**\n\nParagraph 3 says fields were \"guarded loudly by day while deliberately left unguarded at night, tricking suspicious peasants into believing the crop was valuable enough to steal.\" Day noise plus night vulnerability is the value signal.\n\nThe intentional \"look valuable\" reading is the text's own motive, so the inference is true.",
+        "**D) Because the potato offered a higher caloric yield, the passage implies this factor alone fully and conclusively explains all population growth observed in adopting regions.**\n\nParagraph 4 attributes only \"up to 25%\" of urban growth in one study, and Paragraph 9 still treats sole-driver status as debated versus \"one contributing factor among several.\" \"Alone… all\" overclaims certainty.\n\n**Trap:** A strong contributing cause is not a complete exclusive explanation.\n\nThe claim fails: the passage never says yield alone fully explains all growth, and later calls that question debated.",
+        "**E) Since resistant starch passes through the small intestine largely unbroken down, it can be inferred that it behaves differently in digestion than ordinary digestible starch.**\n\nParagraph 8 contrasts digestible starch converted into resistant starch that \"passes through the small intestine largely unbroken down,\" with implications for glycemic response versus a hot, freshly cooked potato. Different digestive behaviour is the point of the contrast.\n\nDifferent digestive behaviour follows from Paragraph 8's breakdown contrast, so the statement is true."
+      ],
+      "highlights": [
+        "allowing considerably more people to be fed from the same amount of farmland",
+        "killed roughly 1 million people through starvation and disease, while a further 1 million emigrated",
+        "deliberately left unguarded at night, tricking suspicious peasants into believing the crop was valuable enough to steal",
+        "or merely one contributing factor among several simultaneous agricultural and economic changes, remains a genuinely debated question",
+        "resistant starch, which passes through the small intestine largely unbroken down"
+      ]
+    },
+    {
+      "id": "en-t-10-05",
+      "exam_title": "Disguised Cross-Section Synthesis",
+      "kind": "reading",
+      "statements": [
+        "The genetic uniformity created by reliance on the Irish Lumper helps explain why a single pathogen was able to devastate Ireland's food supply so severely.",
+        "The vulnerability exposed by the Irish famine is presented as a motivating factor behind the later genetic-diversity preservation efforts described toward the end of the passage.",
+        "Because 25% of urban population growth in some regions was attributed to potato adoption, the passage implies the remaining 75% must be entirely unexplained by any other historical factor.",
+        "The caloric-yield advantage described earlier in the passage is consistent with the same crop later becoming central to a catastrophic single-variety dependency in Ireland.",
+        "Because the gene bank preserves more than 4,000 varieties, the passage implies Ireland's nineteenthcentury food supply relied on a similarly large number of varieties."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The genetic uniformity created by reliance on the Irish Lumper helps explain why a single pathogen was able to devastate Ireland's food supply so severely.**\n\nParagraph 5 links \"almost exclusively\" dependence on the Irish Lumper to \"genetic uniformity\" that \"left the crop dangerously vulnerable\" when Phytophthora infestans hit. Uniformity → one pathogen can wreck the food base is the passage's causal chain.\n\nThe vulnerability synthesis matches Paragraph 5's uniformity–pathogen link, so the statement is true.",
+        "**B) The vulnerability exposed by the Irish famine is presented as a motivating factor behind the later genetic-diversity preservation efforts described toward the end of the passage.**\n\nParagraph 7 opens \"Partly in response to the vulnerability so starkly illustrated by the Irish famine,\" then describes gene-bank work to preserve diversity. Cross-section motive is explicit, not guessed.\n\nThe famine-to-gene-bank motivation is stated in Paragraph 7, so the claim is true.",
+        "**C) Because 25% of urban population growth in some regions was attributed to potato adoption, the passage implies the remaining 75% must be entirely unexplained by any other historical factor.**\n\nParagraph 4's study attributes \"up to 25%\" to potato adoption; it never audits the residual share or declares it unexplained. Treating the leftover as \"entirely unexplained\" adds a claim the text never makes.\n\n**Trap:** An attributed share does not invent a theory about whatever is left.\n\nThe claim fails: the passage says nothing that forces the remaining 75% to be unexplained.",
+        "**D) The caloric-yield advantage described earlier in the passage is consistent with the same crop later becoming central to a catastrophic single-variety dependency in Ireland.**\n\nParagraph 4's fourfold yield advantage explains why potatoes could dominate diets; Paragraph 5 then shows Ireland dependent almost exclusively on one variety for daily calories, with disastrous results. High appeal and extreme reliance belong to the same crop story.\n\n**Tip:** Consistency across sections is not the same as claiming yield caused the famine.\n\nThe yield-to-dependency arc fits the passage's middle sections, so the statement is true.",
+        "**E) Because the gene bank preserves more than 4,000 varieties, the passage implies Ireland's nineteenthcentury food supply relied on a similarly large number of varieties.**\n\nParagraph 5 stresses almost exclusive reliance on one variety; Paragraph 7's large modern collection is a corrective response to that vulnerability, not a mirror of nineteenth-century Irish practice. The statement reverses the contrast.\n\nThe claim fails: Ireland's crisis came from near single-variety dependence, while the 4,000+ bank is a later diversity safeguard."
+      ],
+      "highlights": [
+        "This genetic uniformity left the crop dangerously vulnerable when the fungus-like pathogen Phytophthora infestans",
+        "Partly in response to the vulnerability so starkly illustrated by the Irish famine",
+        "one influential study attributing up to 25% of urban population growth in those areas to the crop's adoption",
+        "dependent almost exclusively on a single variety, the Irish Lumper, for daily caloric intake",
+        "dependent almost exclusively on a single variety, the Irish Lumper"
+      ]
+    },
+    {
+      "id": "en-t-10-06",
+      "exam_title": "Grammar Rules (New Sentences, Anchored in Text Vocabulary)",
+      "kind": "grammar",
+      "statements": [
+        "\"Had the pathogen not spread so rapidly, the famine's death toll would likely have been considerably lower.\"",
+        "\"Officials recommended that farmers diversifies their planted varieties to reduce future risk.\"",
+        "\"The number of preserved potato varieties continue to grow as new specimens are catalogued.\"",
+        "\"Neither the soil conditions nor the climate were fully suited to reliable wheat cultivation in that region.\"",
+        "\"Having subsisted largely on potatoes as a prisoner, Parmentier later championed the crop publicly.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Had the pathogen not spread so rapidly, the famine's death toll would likely have been considerably lower.\"**\n\nThis is a clean third conditional with subject–auxiliary inversion: Had + past participle in the if-clause, and would have + past participle in the result. No missing auxiliary, no tense mix-up.\n\n**Tip:** Inverted Had… is just If… had… with the if dropped.\n\nThe conditional pattern is well formed, so the sentence is grammatically correct.",
+        "**B) \"Officials recommended that farmers diversifies their planted varieties to reduce future risk.\"**\n\nAfter recommend that, English needs the mandative subjunctive (base form): farmers diversify, not diversifies. The -s ending wrongly treats the verb as a present-tense finite form agreeing with farmers.\n\n**Trap:** Recommend/insist/require + that → bare infinitive base form.\n\nThe sentence fails: repair to \"recommended that farmers diversify…\".",
+        "**C) \"The number of preserved potato varieties continue to grow as new specimens are catalogued.\"**\n\nThe number of is a singular head: the number… continues. Continue agrees with the plural noun varieties instead of with number, which is the classic agreement trap.\n\nThe sentence fails: repair to \"The number of preserved potato varieties continues to grow…\".",
+        "**D) \"Neither the soil conditions nor the climate were fully suited to reliable wheat cultivation in that region.\"**\n\nNeither… nor joins a plural noun phrase (the soil conditions) and a singular one (the climate). When one conjunct is plural, plural agreement with were is an accepted choice; the coordinated subjects are treated as a joint unsuitable pair.\n\n**Tip:** Mixed-number neither… nor is contested in pedantic rules, but plural were is standard enough here with a plural first conjunct.\n\nThe agreement choice is acceptable, so the sentence is grammatically correct.",
+        "**E) \"Having subsisted largely on potatoes as a prisoner, Parmentier later championed the crop publicly.\"**\n\nThe -ing absolute Having subsisted… correctly attaches to Parmentier, the subject of the main clause. There is no dangling modifier naming the wrong agent.\n\nThe participle and main-clause subject match, so the sentence is grammatically correct."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-10-07",
+      "exam_title": "Grammar Rules II (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"No sooner had the blight appeared than harvests began failing across the region.\"",
+        "\"The gene bank, along with several partner institutions, were responsible for preserving the collection.\"",
+        "\"Each of the surveyed farmers have reported declining yields in recent seasons.\"",
+        "\"By the time the famine ended, emigration will have already reshaped the country's population.\"",
+        "\"The findings, which were compiled across multiple studies, suggest a meaningful glycemic difference.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"No sooner had the blight appeared than harvests began failing across the region.\"**\n\nNo sooner… than correctly triggers inversion (had the blight appeared) and pairs past perfect with a simple-past sequel (began failing). The correlative pair is complete.\n\n**Tip:** No sooner pairs with than, not when.\n\nThe inversion correlative is well formed, so the sentence is grammatically correct.",
+        "**B) \"The gene bank, along with several partner institutions, were responsible for preserving the collection.\"**\n\nAlong with several partner institutions is an aside, not a second subject for plural agreement. The true subject is singular the gene bank, so the verb should be was responsible.\n\n**Trap:** Along with / as well as / together with does not pluralise a singular head.\n\nThe sentence fails: repair to \"The gene bank… was responsible…\".",
+        "**C) \"Each of the surveyed farmers have reported declining yields in recent seasons.\"**\n\nEach of takes a singular verb even when the of-phrase is plural. Have reported wrongly agrees with farmers instead of each.\n\nThe sentence fails: repair to \"Each of the surveyed farmers has reported…\".",
+        "**D) \"By the time the famine ended, emigration will have already reshaped the country's population.\"**\n\nBy the time the famine ended anchors a past reference point, so the result needs past perfect (had already reshaped). Will have… projects a future-perfect result from now, which clashes with a finished past frame.\n\nThe sentence fails: repair to \"…emigration had already reshaped…\".",
+        "**E) \"The findings, which were compiled across multiple studies, suggest a meaningful glycemic difference.\"**\n\nPlural findings correctly takes were compiled in the relative clause and suggest in the main clause. Singular/plural agreement stays consistent throughout.\n\nSubject–verb agreement holds, so the sentence is grammatically correct."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-10-08",
+      "exam_title": "Word Meaning in Context",
+      "kind": "reading",
+      "statements": [
+        "As used in Paragraph 1, \"domesticated\" means bred and cultivated by humans over generations, rather than remaining wild.",
+        "As used in Paragraph 2, \"suspicion\" means confident trust and immediate acceptance, rather than doubt or wariness.",
+        "As used in Paragraph 3, \"accelerated\" means slowed down considerably, rather than sped up.",
+        "As used in Paragraph 5, \"vulnerable\" means resistant to harm or unlikely to be affected by disease.",
+        "As used in Paragraph 7, \"safeguarding\" means deliberately exposing something to greater risk."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) As used in Paragraph 1, \"domesticated\" means bred and cultivated by humans over generations, rather than remaining wild.**\n\nParagraph 1 uses domesticated for the potato's shift from wild Andean tubers to human cultivation over roughly 8,000 years. That is precisely \"bred and cultivated by humans… rather than remaining wild.\"\n\nThe gloss matches Paragraph 1's usage, so the statement is true.",
+        "**B) As used in Paragraph 2, \"suspicion\" means confident trust and immediate acceptance, rather than doubt or wariness.**\n\nParagraph 2 says the potato \"was initially met with deep suspicion\" before Europeans blamed nightshade kinship and delayed eating it. Suspicion here is doubt/wariness — the opposite of confident trust.\n\n**Trap:** Vocabulary items often offer the antonym dressed as a definition.\n\nThe claimed meaning is inverted, so the statement is false.",
+        "**C) As used in Paragraph 3, \"accelerated\" means slowed down considerably, rather than sped up.**\n\nParagraph 3 says \"Adoption accelerated dramatically during the eighteenth century,\" describing a ramp-up via government campaigns. Accelerated means sped up, not slowed down.\n\nThe antonym gloss fails against Paragraph 3, so the statement is false.",
+        "**D) As used in Paragraph 5, \"vulnerable\" means resistant to harm or unlikely to be affected by disease.**\n\nParagraph 5 says genetic uniformity \"left the crop dangerously vulnerable\" to Phytophthora infestans. Vulnerable means exposed to harm, not resistant to it.\n\nThe claimed meaning reverses Paragraph 5, so the statement is false.",
+        "**E) As used in Paragraph 7, \"safeguarding\" means deliberately exposing something to greater risk.**\n\nParagraph 7's gene bank is \"safeguarding traits such as disease resistance for future breeding programmes\" — protecting desirable traits, not exposing them to risk.\n\nThe antonym definition fails, so the statement is false."
+      ],
+      "highlights": [
+        "the potato was domesticated in the high Andean plateaus",
+        "it was initially met with deep suspicion",
+        "Adoption accelerated dramatically during the eighteenth century",
+        "This genetic uniformity left the crop dangerously vulnerable",
+        "safeguarding traits such as disease resistance for future breeding programmes"
+      ]
+    },
+    {
+      "id": "en-t-10-09",
+      "exam_title": "Word Meaning in Context II",
+      "kind": "reading",
+      "statements": [
+        "As used in Paragraph 1, \"staple\" (in \"staple crop\") means a basic, regularly consumed food forming a major part of a diet.",
+        "As used in Paragraph 5, \"reliance\" means active avoidance of something, rather than dependence on it.",
+        "As used in Paragraph 4, \"measurably\" means to a degree too small to detect or confirm.",
+        "As used in Paragraph 8, \"meaningfully\" (in \"meaningfully lower\") means to a degree substantial enough to matter, not negligibly.",
+        "As used in Paragraph 5, \"uniformity\" means a wide, varied range of different forms, rather than sameness."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) As used in Paragraph 1, \"staple\" (in \"staple crop\") means a basic, regularly consumed food forming a major part of a diet.**\n\nParagraph 1 contrasts the potato's later status as \"a staple crop on nearly every continent\" with its Andean origins. Staple crop = basic dietary mainstay, not a rare garnish.\n\nThe diet-core gloss matches Paragraph 1, so the statement is true.",
+        "**B) As used in Paragraph 5, \"reliance\" means active avoidance of something, rather than dependence on it.**\n\nParagraph 5 opens \"Ireland's reliance eventually became extreme,\" then explains almost exclusive dependence on the Irish Lumper. Reliance = dependence; \"active avoidance\" is the opposite.\n\nThe antonym gloss fails, so the statement is false.",
+        "**C) As used in Paragraph 4, \"measurably\" means to a degree too small to detect or confirm.**\n\nParagraph 4 says population growth \"measurably outpaced\" comparable regions — i.e., to a detectable, confirmable degree. \"Too small to detect\" inverts the adverb.\n\nThe claimed meaning contradicts Paragraph 4, so the statement is false.",
+        "**D) As used in Paragraph 8, \"meaningfully\" (in \"meaningfully lower\") means to a degree substantial enough to matter, not negligibly.**\n\nParagraph 8 says cooling can \"meaningfully lower the food's glycemic response,\" contrasting a non-trivial effect with mere noise, while still allowing preparation-dependent magnitude. Substantial-enough-to-matter is the right reading.\n\nThe gloss fits Paragraph 8's glycemic claim, so the statement is true.",
+        "**E) As used in Paragraph 5, \"uniformity\" means a wide, varied range of different forms, rather than sameness.**\n\nParagraph 5's \"genetic uniformity\" follows from relying on a single variety and explains vulnerability to one pathogen. Uniformity = sameness, not diversity.\n\n**Trap:** Gene-bank diversity elsewhere does not redefine uniformity here.\n\nThe antonym gloss fails against Paragraph 5, so the statement is false."
+      ],
+      "highlights": [
+        "Long before it became a staple crop on nearly every continent",
+        "Ireland's reliance eventually became extreme",
+        "population growth measurably outpaced that of comparable regions",
+        "this can meaningfully lower the food's glycemic response",
+        "This genetic uniformity left the crop dangerously vulnerable"
+      ]
+    },
+    {
+      "id": "en-t-10-10",
+      "exam_title": "Sneaky Paraphrase Detection",
+      "kind": "vocabulary",
+      "statements": [
+        "For a long stretch of time, the plant was cultivated more as a decorative curiosity than as a common part of people's diets.",
+        "For roughly two centuries, the plant was widely eaten as food rather than grown as an ornamental.",
+        "The plant was, for a long period, largely dismissed as inedible rather than grown for any purpose at all.",
+        "During this period, the plant's decorative appeal outweighed its role as a food source for most people.",
+        "The plant was grown almost exclusively as food, with any ornamental use being extremely rare."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) For a long stretch of time, the plant was cultivated more as a decorative curiosity than as a common part of people's diets.**\n\nThe original says it was \"grown mostly as a curious ornamental rather than widely eaten as food\" for roughly two centuries. Decorative/curiosity use ahead of dietary use is preserved; only the wording softens.\n\n**Tip:** Faithful paraphrase keeps the same unequal comparison, not just shared keywords.\n\nThe paraphrase keeps the ornamental-over-food imbalance, so it is true.",
+        "**B) For roughly two centuries, the plant was widely eaten as food rather than grown as an ornamental.**\n\nThis swaps both sides of the rather than contrast: food becomes primary, ornamental secondary. That is the reverse of \"mostly as a curious ornamental rather than widely eaten.\"\n\n**Trap:** Keeping the time span while flipping the comparison still fails.\n\nThe paraphrase inverts the original contrast, so it is false.",
+        "**C) The plant was, for a long period, largely dismissed as inedible rather than grown for any purpose at all.**\n\nThe original never claims the potato was thought inedible or unused. It was grown — chiefly as decoration — not abandoned as purposeless. \"Inedible\" and \"for any purpose at all\" are smuggled-in distortions.\n\nThe paraphrase invents motives and nullity the source sentence lacks, so it is false.",
+        "**D) During this period, the plant's decorative appeal outweighed its role as a food source for most people.**\n\n\"Decorative appeal outweighed… food source\" restates the same ranking as \"mostly as a curious ornamental rather than widely eaten as food,\" without adding inedibility or flipping dominance.\n\nThe ranking paraphrase holds, so the statement is true.",
+        "**E) The plant was grown almost exclusively as food, with any ornamental use being extremely rare.**\n\nThis is a near-total inversion: food becomes almost exclusive, ornamental use rare. The original makes ornamental the majority pattern for about two centuries.\n\nThe paraphrase reverses which use dominated, so it is false."
+      ],
+      "highlights": [
+        "for roughly two centuries it was grown mostly as a curious ornamental rather than widely eaten as food",
+        "for roughly two centuries it was grown mostly as a curious ornamental rather than widely eaten as food",
+        "for roughly two centuries it was grown mostly as a curious ornamental rather than widely eaten as food",
+        "for roughly two centuries it was grown mostly as a curious ornamental rather than widely eaten as food",
+        "for roughly two centuries it was grown mostly as a curious ornamental rather than widely eaten as food"
+      ]
+    }
+  ]
+}

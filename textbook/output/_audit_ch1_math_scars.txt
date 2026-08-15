@@ -1,0 +1,100 @@
+issues: 232
+
+=== bare_latex_cmd (221) ===
+math-1-1.stmt[0]: $A \cap B = \{3, 4, 5\}$.
+math-1-1.stmt[1]: $A \cup C = \{1, 2, 3, 4, 5, 6, 7, 8\}$.
+math-1-1.stmt[2]: $(A \cap B) \cap C = \{5\}$.
+math-1-2.context: Let $A = \{x \in Z : x^2 = 9\}$ (Z = integers) and $B = \{3, -3\}$.
+math-1-2.overview: Let $A = \{x \in Z : x^2 = 9\}$ (Z = integers) and $B = \{3, -3\}$. |  | The sha
+math-1-2.stmt[1]: $3 \in A$.
+math-1-2.stmt[4]: The set $C = \{x \in N : x^2 = 9\}$ (N = natural numbers) is equal to $\{3, -3\}
+math-1-4.stmt[0]: $\emptyset \subseteq D$
+math-1-4.stmt[1]: $\emptyset \in D$
+math-1-4.stmt[3]: Both $\{a\} \subseteq D$ and $\{a\} \in D$ are true
+math-1-4.stmt[4]: $D \subseteq D$
+math-1-5.stmt[3]: $(E \setminus F) \cup (F \setminus E) = \{1, 4, 6, 7\}$
+math-1-5.stmt[4]: $(E \setminus F) \cap (F \setminus E) = \emptyset$
+math-1-6.stmt[0]: $A \cap B = \{6\}$
+math-1-6.stmt[1]: $A \cup B$ has 8 elements
+math-1-6.stmt[4]: $A \cap C = \{2, 4, 6\}$
+math-1-7.context:  share 12 common students, so $\lvert M \cap E \rvert = 12$.
+math-1-7.overview:  share 12 common students, so $\lvert M \cap E \rvert = 12$. |  | The shared objects are the sets named abov
+math-1-7.stmt[0]: $\lvert M \cup E \rvert = 43$
+math-1-7.stmt[3]: $E \subseteq M$
+math-1-8.stmt[1]: , C\}$ forms a partition of U, since $A \cup B \cup C = U$ and the sets are pairwise disjoint
+math-1-8.stmt[2]: $A \cap B \cap C = \emptyset$
+math-1-8.stmt[3]: $A \setminus B = \emptyset$
+math-1-8.stmt[4]: Since $A \cap B = \emptyset$, it follows that $A = \emptyset$ or $B = \em
+math-1-9.stmt[1]: $(X \cup Y)^{c} = \{10, 11, 12\}$
+math-1-9.stmt[2]: $X^{c} \cap Y^{c} = \{10, 11, 12\}$
+math-1-9.stmt[3]: $(X \cap Y)^{c} = X^{c} \cup Y^{c}$
+math-1-9.stmt[4]: $X^{c} \cup Y^{c} = \{1, 2, 3, 10, 11, 12\}$
+math-1-10.stmt[0]: $(A \cup B)^{c} = \{8, 9, 10\}$
+math-1-10.stmt[1]: $(A \cap B)^{c} = A^{c} \cup B^{c}$
+math-1-10.stmt[2]: $A^{c} \cap B^{c} = \{6, 7, 8, 9, 10\}$
+math-1-10.stmt[3]: $(A \cap B)^{c} = \{1, 2, 3, 6, 7, 8, 9, 10\}$
+math-1-10.stmt[4]: $A^{c} \cup B^{c} = \{1, 2, 3, 9, 10\}$
+math-1-13.stmt[0]: $A \cap B = [5, 10]$
+math-1-13.stmt[1]: $A \cup B = (0, 15]$
+math-1-13.stmt[2]: $10 \in A \cap B$
+math-1-13.stmt[3]: $5 \in A \setminus B$
+math-1-13.stmt[4]: The statement "$x \in A \Rightarrow x \in B$" is true for all x.
+math-1-14.stmt[0]: $\lvert A \cup B \cup C \rvert = 155$
+math-1-16.stmt[0]: $6 \in A$.
+math-1-16.stmt[1]: $\{6\} \in A$.
+math-1-16.stmt[2]: $\{6, 8\} \subseteq A$.
+math-1-16.stmt[3]: $\emptyset \subseteq A$.
+math-1-17.context: Let $A = \{x \in \mathbb{Z} : x^2 - 5x + 6 = 0\}$ and $B = \{2, 3\}$.
+math-1-17.overview: Let $A = \{x \in \mathbb{Z} : x^2 - 5x + 6 = 0\}$ and $B = \{2, 3\}$. |  | The s
+math-1-17.stmt[1]: $3 \in A$.
+math-1-17.stmt[4]: $C = \{x \in \mathbb{N} : x^2 - 5x + 6 = 0 \land x > 2\}$ satisfies $C =
+math-1-18.stmt[1]: $\{w, x\} \in \mathcal{P}(D)$.
+math-1-18.stmt[3]: $D \in \mathcal{P}(D)$.
+math-1-19.stmt[0]: $E \subseteq F$.
+math-1-19.stmt[2]: $F \subseteq E$.
+math-1-19.stmt[3]: $E \subseteq E$.
+math-1-21.stmt[0]: $H \subseteq \mathbb{N}$.
+math-1-22.stmt[0]: $a \in K$.
+math-1-22.stmt[1]: $\{a\} \in K$.
+math-1-22.stmt[2]: $\{a\} \subseteq K$.
+math-1-22.stmt[3]: $\{\{a\}\} \subseteq K$.
+math-1-23.stmt[0]: $(A \cup B)^{c} = \{9, 10\}$.
+math-1-23.stmt[1]: $(A \cup B)^{c} = A^{c} \cap B^{c}$.
+math-1-23.stmt[2]: $(A \cap B)^{c} = A^{c} \cup B^{c}$.
+math-1-23.stmt[3]: $A \cap B = \{4, 5, 6\}$.
+math-1-23.stmt[4]: $(A \cap B)^{c} = \{1, 2, 3, 4, 5, 9, 10\}$.
+math-1-24.stmt[1]: $(2, x) \in A \times B$.
+math-1-24.stmt[2]: $(x, 2) \in A \times B$.
+math-1-25.context: Let $A = \{x \in R : 1 < x < 5\}$ and $B = \{x \in R : x ≥ 3\}$.
+math-1-25.overview: Let $A = \{x \in R : 1 < x < 5\}$ and $B = \{x \in R : x ≥ 3\}$. |  | Work from 
+math-1-25.stmt[0]: $A \subseteq B$.
+math-1-25.stmt[1]: $A \cap B = \{x \in R : 3 ≤ x < 5\}$, i.e. the interval [3, 5).
+math-1-25.stmt[2]: $B \subseteq A$.
+math-1-25.stmt[3]: $A \cup B = \{x \in R : x > 1\}$, i.e. the interval $(1, \infty)$.
+math-1-26.context: ference $A\triangle B = (A \setminus B) \cup (B \setminus A)$, the elements belonging to exactly one of 
+math-1-26.overview: ference $A\triangle B = (A \setminus B) \cup (B \setminus A)$, the elements belonging to exactly one of 
+math-1-26.stmt[1]: tten as $A\triangle B = (A \setminus B) \cap (B \setminus A)$.
+math-1-26.stmt[2]: $A \cap B \subseteq A\triangle B$.
+math-1-26.stmt[3]:  B are disjoint, then $A\triangle B = A \cup B$.
+math-1-26.stmt[4]: rt A\rvert + \lvert B\rvert - 2\lvert A \cap B\rvert$.
+math-1-27.stmt[3]: ans Maria $\in$ Accounts and Account $3 \in$ Reps.
+math-1-28.context: for its automated systems. Let $A = \{T \in R : T^2 < 16\}$ be the set of temperatures (in °C) for whic
+math-1-28.overview: for its automated systems. Let $A = \{T \in R : T^2 < 16\}$ be the set of temperatures (in °C) for whic
+math-1-28.stmt[0]: $A \cap B =$ [-1, 4).
+
+=== close_mid_english (8) ===
+math-1-3.stmt[2]: $\emptyset$ is a subset of A.
+math-1-20.stmt[0]: The blocks of $\mathcal{S}$ are pairwise disjoint.
+math-1-20.stmt[2]: $\mathcal{S}$ is a partition of G.
+math-1-47.stmt[3]:  \in P) \land (x \neq 2)) \Rightarrow$ ($x$ is odd)" is true for all $x$
+math-1-95.stmt[0]: Since $1234^2$ is even, the rule guarantees that 1234 itself is even - which 
+math-1-95.stmt[2]: Since $4321^2$ is odd, the contrapositive form of the rule guarantees that 43
+math-1-95.stmt[3]: The rule ("if $n^2$ is even, then n is even") and its converse ("if n is even, the
+math-1-95.stmt[4]: tradiction would begin by assuming that $n^2$ is even AND n is odd, then deriving a contradiction from that 
+
+=== lone_conn (2) ===
+math-1-15.stmt[3]: the finite-set intuition “proper subset $\Rightarrow$ fewer elements” does not carry over to infinite sets.
+math-1-27.stmt[3]: ent "(Maria, Account 3) belongs to Reps $\times$ Accounts" means Maria $\in$ Accounts and Account $3 \in$ Re
+
+=== x_dollar_english (1) ===
+math-1-47.stmt[3]:  \in P) \land (x \neq 2)) \Rightarrow$ ($x$ is odd)" is true for all $x$

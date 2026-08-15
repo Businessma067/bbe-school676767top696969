@@ -1,0 +1,439 @@
+CH1 AUDIT 108 tasks
+needs_rewrite=103
+single_para_all_five=0
+low_variety=16
+dollar_odd_hits=10
+scar_hits=386
+pad_hits=0
+============================================================
+math-1-1 [1/5] Basic operations on explicit sets
+  words A-E: [24, 96, 28, 68, 32]  paras: [2, 5, 2, 4, 3]  ratio=4.0
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-2 [1/5] Set-builder notation and equality of sets
+  words A-E: [33, 24, 34, 20, 41]  paras: [3, 3, 3, 2, 4]  ratio=2.0
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-3 [1/5] Subsets, elements, and the power set
+  words A-E: [51, 41, 22, 80, 24]  paras: [3, 3, 2, 6, 2]  ratio=3.6
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-4 [1/5] Let
+  words A-E: [33, 40, 59, 99, 29]  paras: [2, 3, 3, 4, 2]  ratio=3.4
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-5 [1/5] Let  and
+  words A-E: [26, 26, 63, 59, 45]  paras: [2, 2, 4, 3, 3]  ratio=2.4
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-6 [2/5] Let , , and
+  words A-E: [28, 46, 67, 116, 64]  paras: [3, 3, 3, 8, 4]  ratio=4.1
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-7 [2/5] In a cohort of 50 students, 30 take Mathematics (set M) and 25 take Ec
+  words A-E: [38, 67, 33, 59, 36]  paras: [2, 5, 2, 3, 3]  ratio=2.0
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-8 [2/5] Let , and let , ,
+  words A-E: [38, 89, 34, 47, 88]  paras: [2, 5, 3, 3, 6]  ratio=2.6
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-9 [2/5] Among U = 12 employees (numbered 1-12), let  be those who know Python,
+  words A-E: [25, 25, 36, 31, 91]  paras: [2, 3, 2, 2, 5]  ratio=3.6
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-10 [2/5] Let the universal set be . Let  and , with complements taken relative
+  words A-E: [45, 33, 39, 49, 50]  paras: [3, 2, 3, 3, 3]  ratio=1.5
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$; low length variety words=[45, 33, 39, 49, 50] ratio=1.5
+
+math-1-11 [2/5] Partitions of a set
+  words A-E: [62, 129, 102, 104, 119]  paras: [3, 6, 5, 5, 5]  ratio=2.1
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-12 [3/5] Counting subsets
+  words A-E: [44, 26, 93, 29, 53]  paras: [3, 3, 4, 2, 3]  ratio=3.6
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-13 [3/5] Let A = (0, 10] and B = [5, 15) be intervals of real numbers, treated
+  words A-E: [46, 67, 34, 49, 60]  paras: [3, 4, 3, 3, 5]  ratio=2.0
+  issues: B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar possible odd $ run; low length variety words=[46, 67, 34, 49, 60] ratio=2.0
+
+math-1-14 [3/5] A survey of 150 tourists finds: 80 visited Museum A, 70 visited Museum
+  words A-E: [128, 31, 67, 60, 45]  paras: [8, 2, 3, 3, 2]  ratio=4.1
+  issues: A: scar english-inside-$; D: scar possible odd $ run
+
+math-1-15 [3/5] Infinite sets and cardinality
+  words A-E: [36, 105, 48, 58, 53]  paras: [3, 6, 3, 4, 3]  ratio=2.9
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-16 [3/5] Elements vs. Subsets of an Even-Number Set
+  words A-E: [24, 38, 29, 35, 76]  paras: [3, 2, 3, 2, 5]  ratio=3.2
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-17 [3/5] Set-Builder Notation from a Quadratic Condition
+  words A-E: [40, 28, 36, 20, 48]  paras: [3, 3, 2, 2, 3]  ratio=2.4
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-18 [4/5] Counting the Power Set of a Four-Letter Set
+  words A-E: [45, 65, 27, 54, 81]  paras: [3, 3, 2, 3, 4]  ratio=3.0
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-19 [4/5] Subset, Proper Subset, and Self-Containment
+  words A-E: [27, 51, 52, 28, 60]  paras: [3, 4, 3, 2, 3]  ratio=2.2
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-20 [4/5] Testing Whether a Collection Partitions a Set
+  words A-E: [33, 28, 32, 78, 106]  paras: [2, 2, 3, 4, 5]  ratio=3.8
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-21 [4/5] Even Numbers Inside the Naturals: A Cardinality Trap
+  words A-E: [23, 26, 26, 40, 81]  paras: [3, 3, 3, 3, 3]  ratio=3.5
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-22 [5/5] An Object and Its Singleton in the Same Set
+  words A-E: [23, 52, 54, 72, 25]  paras: [2, 3, 3, 4, 3]  ratio=3.1
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-23 [1/5] De Morgan's laws with a universal set
+  words A-E: [25, 34, 36, 39, 81]  paras: [2, 2, 2, 3, 5]  ratio=3.2
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-24 [1/5] Cartesian products
+  words A-E: [33, 37, 34, 52, 49]  paras: [2, 3, 3, 3, 2]  ratio=1.6
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$; low length variety words=[33, 37, 34, 52, 49] ratio=1.6
+
+math-1-25 [1/5] Sets defined by inequalities
+  words A-E: [51, 63, 42, 38, 35]  paras: [3, 4, 3, 2, 2]  ratio=1.8
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$; low length variety words=[51, 63, 42, 38, 35] ratio=1.8
+
+math-1-26 [1/5] Symmetric difference
+  words A-E: [26, 80, 47, 35, 36]  paras: [2, 5, 2, 3, 2]  ratio=3.1
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-27 [1/5] Sales rep to client account coverage
+  words A-E: [47, 48, 52, 57, 44]  paras: [2, 3, 3, 3, 3]  ratio=1.3
+  issues: A: scar english-inside-$; B: scar possible odd $ run; C: scar english-inside-$; D: scar english-inside-$; low length variety words=[47, 48, 52, 57, 44] ratio=1.3
+
+math-1-28 [2/5] Frost protection and irrigation
+  words A-E: [45, 65, 91, 54, 48]  paras: [2, 3, 4, 3, 3]  ratio=2.0
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-29 [2/5] Customer survey overlap
+  words A-E: [72, 67, 41, 47, 122]  paras: [3, 5, 2, 3, 8]  ratio=3.0
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-30 [2/5] Union, Intersection, and Difference of Three Sets
+  words A-E: [55, 23, 24, 63, 26]  paras: [4, 2, 2, 3, 3]  ratio=2.7
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-31 [2/5] Set Operations on Multiples of Ten
+  words A-E: [55, 24, 24, 62, 26]  paras: [4, 2, 2, 3, 3]  ratio=2.6
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-32 [2/5] Set Operations with Letters
+  words A-E: [26, 23, 24, 98, 26]  paras: [2, 2, 2, 6, 3]  ratio=4.3
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-33 [2/5] De Morgan's Laws with a Ten-Element Universe
+  words A-E: [32, 30, 29, 23, 68]  paras: [2, 2, 2, 2, 6]  ratio=3.0
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-34 [3/5] Complements of Disjoint Odd and Even Sets
+  words A-E: [35, 30, 29, 24, 75]  paras: [2, 2, 2, 2, 6]  ratio=3.1
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-35 [3/5] De Morgan's Laws with Letter Sets
+  words A-E: [28, 30, 29, 21, 61]  paras: [2, 2, 2, 2, 6]  ratio=2.9
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-36 [3/5] Cartesian Products and Ordered Pairs
+  words A-E: [29, 30, 40, 39, 42]  paras: [2, 3, 3, 2, 3]  ratio=1.4
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$; low length variety words=[29, 30, 40, 39, 42] ratio=1.4
+
+math-1-37 [3/5] Cartesian Product Size vs. Pair Membership
+  words A-E: [29, 30, 40, 39, 42]  paras: [2, 3, 3, 2, 3]  ratio=1.4
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$; low length variety words=[29, 30, 40, 39, 42] ratio=1.4
+
+math-1-38 [3/5] Symmetric Difference of Two Odd-Number Sets
+  words A-E: [22, 22, 49, 52, 70]  paras: [2, 2, 4, 3, 3]  ratio=3.2
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-39 [4/5] Symmetric Difference of Disjoint Sets
+  words A-E: [23, 23, 53, 64, 35]  paras: [2, 2, 4, 4, 3]  ratio=2.8
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-40 [4/5] Chess and Checkers Club Overlap
+  words A-E: [48, 31, 30, 112, 31]  paras: [3, 2, 2, 7, 2]  ratio=3.7
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-41 [4/5] Two Language Courses in One Cohort
+  words A-E: [48, 31, 30, 112, 31]  paras: [3, 2, 2, 7, 2]  ratio=3.7
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-42 [5/5] Gym Members Using Two Facilities
+  words A-E: [48, 47, 46, 112, 47]  paras: [3, 3, 3, 7, 3]  ratio=2.4
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-43 [5/5] Three Overlapping Hobby Clubs
+  words A-E: [74, 61, 29, 42, 114]  paras: [6, 4, 2, 3, 7]  ratio=3.9
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-44 [1/5] Let P: "7 is a prime number" and Q: "7 is an even number." (P is true,
+  words A-E: [36, 21, 28, 82, 29]  paras: [3, 2, 2, 5, 2]  ratio=3.9
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-45 [1/5] Primes greater than 2
+  words A-E: [34, 34, 42, 35, 32]  paras: [3, 2, 3, 3, 2]  ratio=1.3
+  issues: D: scar english-inside-$; low length variety words=[34, 34, 42, 35, 32] ratio=1.3
+
+math-1-46 [1/5] University prerequisite chain
+  words A-E: [32, 29, 32, 80, 30]  paras: [3, 2, 2, 6, 2]  ratio=2.8
+  issues: D: scar possible odd $ run
+
+math-1-47 [1/5] Let the primes less than 15) and the even numbers less than 15)
+  words A-E: [32, 25, 75, 33, 45]  paras: [3, 2, 6, 2, 3]  ratio=3.0
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-48 [1/5] Let x be a real number, and let P: "x > 10" and Q: "x > 5."
+  words A-E: [34, 91, 39, 76, 36]  paras: [3, 7, 2, 8, 2]  ratio=2.7
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-49 [1/5] Loan approval
+  words A-E: [30, 38, 26, 38, 60]  paras: [3, 2, 3, 3, 4]  ratio=2.3
+  issues: D: scar english-inside-$
+
+math-1-50 [1/5] The universe of discourse is the set of real numbers, ℝ
+  words A-E: [54, 75, 43, 39, 106]  paras: [4, 4, 4, 2, 7]  ratio=2.7
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-51 [1/5] A medical diagnostic criterion
+  words A-E: [55, 27, 80, 32, 101]  paras: [3, 3, 5, 2, 6]  ratio=3.7
+  issues: C: scar english-inside-$
+
+math-1-52 [2/5] The universe is the set of integers from 1 to 20, i.e
+  words A-E: [34, 46, 88, 73, 46]  paras: [3, 3, 5, 4, 3]  ratio=2.6
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-53 [2/5] A club membership rule
+  words A-E: [35, 30, 47, 67, 94]  paras: [3, 3, 2, 4, 6]  ratio=3.1
+  issues: C: scar english-inside-$
+
+math-1-54 [2/5] Consider the universal claim: "All prime numbers are odd," and the irr
+  words A-E: [32, 31, 50, 41, 49]  paras: [2, 3, 2, 3, 3]  ratio=1.6
+  issues: C: scar english-inside-$; low length variety words=[32, 31, 50, 41, 49] ratio=1.6
+
+math-1-55 [2/5] An event organizer's rule is : "If it rains, the picnic is cancelled."
+  words A-E: [27, 144, 134, 81, 120]  paras: [2, 8, 9, 6, 7]  ratio=5.3
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-56 [2/5] A market survey of 100 consumers found that 40 bought product X, 35 bo
+  words A-E: [38, 42, 70, 34, 80]  paras: [2, 2, 3, 2, 6]  ratio=2.4
+  issues: B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-57 [2/5] Passing a course: attendance and the final exam
+  words A-E: [31, 31, 79, 37, 58]  paras: [3, 3, 5, 2, 2]  ratio=2.5
+  issues: C: scar english-inside-$
+
+math-1-58 [2/5] Online store filter (De Morgan)
+  words A-E: [40, 42, 70, 130, 42]  paras: [3, 3, 5, 6, 3]  ratio=3.2
+  issues: D: scar english-inside-$
+
+math-1-59 [2/5] Consider the statement , where P: "a country's inflation rate exceeds
+  words A-E: [93, 168, 28, 76, 91]  paras: [6, 9, 2, 5, 5]  ratio=6.0
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-60 [2/5] A chain of biconditionals
+  words A-E: [24, 26, 30, 37, 108]  paras: [2, 2, 2, 2, 8]  ratio=4.5
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-61 [2/5] Cancelling a concert
+  words A-E: [36, 76, 37, 42, 34]  paras: [2, 4, 2, 2, 2]  ratio=2.2
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; E: scar english-inside-$
+
+math-1-62 [3/5] A senior transit discount rule
+  words A-E: [37, 71, 61, 51, 114]  paras: [3, 5, 4, 3, 7]  ratio=3.1
+  issues: A: odd $ count; A: scar english-inside-$; B: odd $ count; B: scar english-inside-$; C: odd $ count; C: scar english-inside-$; D: odd $ count; D: scar english-inside-$; E: odd $ count; E: scar english-inside-$
+
+math-1-63 [3/5] Consider the claim: "For all positive integers n, 1 + 2 + ... + n = n(
+  words A-E: [37, 39, 46, 41, 28]  paras: [3, 2, 3, 2, 2]  ratio=1.6
+  issues: E: scar english-inside-$; low length variety words=[37, 39, 46, 41, 28] ratio=1.6
+
+math-1-64 [3/5] Consider the (debatable) economic claim : "If inflation increases, the
+  words A-E: [121, 74, 68, 38, 86]  paras: [6, 5, 4, 2, 5]  ratio=3.2
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-65 [3/5] Airline delay chain
+  words A-E: [29, 29, 44, 62, 46]  paras: [3, 2, 3, 3, 3]  ratio=2.1
+  issues: A: scar english-inside-$; B: scar english-inside-$
+
+math-1-66 [3/5] A professor's claim is : "If a student studies at least 10 hours, they
+  words A-E: [25, 151, 91, 171, 114]  paras: [2, 9, 6, 11, 7]  ratio=6.8
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-67 [3/5] A contract penalty clause
+  words A-E: [20, 109, 107, 153, 164]  paras: [2, 7, 8, 10, 8]  ratio=8.2
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-68 [3/5] A scholarship eligibility rule with a waiver
+  words A-E: [37, 39, 28, 88, 122]  paras: [3, 3, 2, 6, 7]  ratio=4.4
+  issues: D: scar english-inside-$; E: scar english-inside-$
+
+math-1-69 [3/5] Travel insurance payout
+  words A-E: [37, 30, 37, 92, 96]  paras: [3, 3, 2, 6, 6]  ratio=3.2
+  issues: D: scar english-inside-$
+
+math-1-70 [3/5] An election law states : "If a person is a citizen, they are eligible
+  words A-E: [31, 104, 78, 79, 166]  paras: [2, 7, 5, 5, 8]  ratio=5.4
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-71 [4/5] A business memo's reasoning
+  words A-E: [66, 90, 53, 168, 36]  paras: [4, 5, 3, 7, 2]  ratio=4.7
+  issues: C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-72 [4/5] Consider the claim: "The sum of two irrational numbers is always irrat
+  words A-E: [56, 32, 46, 81, 51]  paras: [3, 2, 2, 5, 3]  ratio=2.5
+  issues: D: scar english-inside-$; E: scar english-inside-$
+
+math-1-73 [4/5] A biology rule states : "If an animal is a fish, then it lives in wate
+  words A-E: [132, 88, 139, 50, 106]  paras: [8, 6, 10, 3, 5]  ratio=2.8
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-74 [4/5] A store's policy is : "If a customer pays within 30 days, they receive
+  words A-E: [64, 80, 46, 115, 128]  paras: [3, 6, 3, 8, 8]  ratio=2.8
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-75 [4/5] A regulation states : "If a company's annual revenue exceeds $1 millio
+  words A-E: [52, 161, 148, 113, 48]  paras: [2, 9, 10, 7, 3]  ratio=3.4
+  issues: A: odd $ count; A: scar english-inside-$; B: odd $ count; B: scar english-inside-$; C: odd $ count; C: scar english-inside-$; D: odd $ count; D: scar english-inside-$; E: odd $ count; E: scar english-inside-$
+
+math-1-76 [4/5] Commercial pilot license
+  words A-E: [59, 51, 52, 42, 34]  paras: [3, 3, 3, 2, 2]  ratio=1.7
+  issues: low length variety words=[59, 51, 52, 42, 34] ratio=1.7
+
+math-1-77 [5/5] Bank loan approval
+  words A-E: [63, 31, 91, 63, 59]  paras: [4, 3, 6, 4, 3]  ratio=2.9
+  issues: OK-ish
+
+math-1-78 [5/5] A restaurant's policy is : "If a customer orders dessert, they receive
+  words A-E: [128, 54, 109, 78, 104]  paras: [7, 3, 6, 6, 6]  ratio=2.4
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-79 [1/5] Nested quantifiers with a product equation
+  words A-E: [20, 61, 66, 50, 58]  paras: [2, 5, 4, 3, 3]  ratio=3.3
+  issues: D: scar suspicious closing paren inside $
+
+math-1-80 [1/5] A theft investigation
+  words A-E: [18, 25, 57, 32, 45]  paras: [2, 2, 3, 2, 3]  ratio=3.2
+  issues: OK-ish
+
+math-1-81 [1/5] An island of truth-tellers and liars
+  words A-E: [65, 28, 26, 68, 35]  paras: [3, 3, 2, 4, 2]  ratio=2.6
+  issues: OK-ish
+
+math-1-82 [1/5] Quantifier order: exam scores
+  words A-E: [36, 42, 59, 61, 34]  paras: [2, 2, 4, 5, 2]  ratio=1.8
+  issues: D: scar suspicious closing paren inside $; low length variety words=[36, 42, 59, 61, 34] ratio=1.8
+
+math-1-83 [1/5] A hiring committee's voting rule
+  words A-E: [27, 54, 43, 105, 48]  paras: [2, 3, 2, 6, 3]  ratio=3.9
+  issues: D: scar english-inside-$
+
+math-1-84 [1/5] A warranty voiding clause
+  words A-E: [38, 90, 44, 69, 69]  paras: [3, 6, 3, 5, 4]  ratio=2.4
+  issues: B: scar english-inside-$
+
+math-1-85 [1/5] Several independent mini-scenarios testing whether a proof or negation
+  words A-E: [50, 74, 52, 85, 56]  paras: [3, 5, 2, 5, 3]  ratio=1.7
+  issues: C: scar english-inside-$; D: scar english-inside-$; E: scar possible odd $ run; low length variety words=[50, 74, 52, 85, 56] ratio=1.7
+
+math-1-86 [2/5] Validity versus soundness
+  words A-E: [48, 77, 40, 53, 39]  paras: [2, 4, 2, 3, 2]  ratio=2.0
+  issues: low length variety words=[48, 77, 40, 53, 39] ratio=2.0
+
+math-1-87 [2/5] A sports fan claims : "If a player scores over 30 points in a game, th
+  words A-E: [33, 43, 101, 123, 73]  paras: [2, 3, 7, 7, 5]  ratio=3.7
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-88 [2/5] A grading curve rule
+  words A-E: [26, 36, 41, 65, 242]  paras: [2, 3, 2, 3, 16]  ratio=9.3
+  issues: D: scar english-inside-$; E: scar english-inside-$
+
+math-1-89 [2/5] Gear teeth and coprimality
+  words A-E: [62, 62, 60, 44, 77]  paras: [3, 3, 2, 3, 4]  ratio=1.8
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; E: scar english-inside-$; low length variety words=[62, 62, 60, 44, 77] ratio=1.8
+
+math-1-90 [2/5] A subscription renewal and refund policy
+  words A-E: [30, 31, 40, 66, 76]  paras: [2, 3, 3, 3, 4]  ratio=2.5
+  issues: OK-ish
+
+math-1-91 [2/5] A clinical guideline states : "If a patient has a fever above 38°C, th
+  words A-E: [38, 70, 111, 128, 35]  paras: [2, 4, 6, 8, 2]  ratio=3.7
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-92 [2/5] A security policy claims : "If a password is at least 12 characters, i
+  words A-E: [36, 123, 101, 192, 135]  paras: [2, 6, 7, 9, 8]  ratio=5.3
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-93 [2/5] Factory batch inspection
+  words A-E: [37, 61, 46, 102, 37]  paras: [3, 2, 3, 6, 2]  ratio=2.8
+  issues: D: scar english-inside-$
+
+math-1-94 [3/5] In number theory: : "If n is divisible by 6, then n is divisible by 3
+  words A-E: [81, 72, 187, 85, 146]  paras: [4, 5, 8, 6, 8]  ratio=2.6
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-95 [3/5] ID number verification rule
+  words A-E: [34, 63, 53, 139, 51]  paras: [2, 3, 3, 7, 2]  ratio=4.1
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-96 [3/5] Thales' theorem gives the universal statement: "Every triangle inscrib
+  words A-E: [33, 49, 90, 94, 136]  paras: [2, 3, 5, 5, 9]  ratio=4.1
+  issues: A: scar suspicious closing paren inside $; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-97 [3/5] A number-theory theorem states : "If a number is a perfect square, the
+  words A-E: [32, 41, 88, 84, 129]  paras: [2, 3, 5, 5, 6]  ratio=4.0
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-98 [3/5] Four friends and their jobs
+  words A-E: [57, 74, 47, 43, 39]  paras: [3, 4, 3, 2, 2]  ratio=1.9
+  issues: low length variety words=[57, 74, 47, 43, 39] ratio=1.9
+
+math-1-99 [3/5] A real-analysis theorem states : "If a sequence converges, then it is
+  words A-E: [55, 97, 176, 109, 132]  paras: [3, 5, 9, 7, 7]  ratio=3.2
+  issues: A: scar english-inside-$; B: scar english-inside-$; C: scar english-inside-$; D: scar english-inside-$; E: scar english-inside-$
+
+math-1-100 [3/5] Three inhabitants of the island
+  words A-E: [66, 79, 26, 69, 58]  paras: [3, 3, 2, 4, 3]  ratio=3.0
+  issues: OK-ish
+
+math-1-101 [3/5] Conference attendance rules
+  words A-E: [18, 78, 29, 70, 182]  paras: [2, 3, 2, 3, 10]  ratio=10.1
+  issues: E: scar english-inside-$
+
+math-1-102 [4/5] A Study Group's Attendance
+  words A-E: [54, 82, 148, 59, 162]  paras: [3, 3, 7, 3, 8]  ratio=3.0
+  issues: A: scar possible odd $ run; D: scar possible odd $ run
+
+math-1-103 [4/5] Board Game Night
+  words A-E: [51, 70, 141, 52, 153]  paras: [3, 3, 7, 3, 8]  ratio=3.0
+  issues: D: scar possible odd $ run
+
+math-1-104 [4/5] Splitting the Cooking Duty
+  words A-E: [51, 84, 178, 48, 176]  paras: [3, 3, 9, 3, 8]  ratio=3.7
+  issues: A: scar possible odd $ run
+
+math-1-105 [4/5] A Five-Person Day Trip
+  words A-E: [80, 61, 166, 146, 71]  paras: [3, 3, 8, 6, 3]  ratio=2.7
+  issues: B: scar possible odd $ run
+
+math-1-106 [4/5] Six Interns and the Conference Talk
+  words A-E: [159, 181, 48, 188, 148]  paras: [8, 11, 3, 11, 8]  ratio=3.9
+  issues: D: scar possible odd $ run
+
+math-1-107 [5/5] Assigning Paper Reviewers
+  words A-E: [172, 54, 185, 120, 134]  paras: [10, 3, 9, 8, 9]  ratio=3.4
+  issues: A: scar possible odd $ run; B: scar possible odd $ run; E: scar suspicious closing paren inside $
+
+math-1-108 [5/5] Seven Finalists and the Tournament Roster
+  words A-E: [217, 180, 45, 165, 181]  paras: [13, 10, 3, 9, 10]  ratio=4.8
+  issues: C: scar english-inside-$

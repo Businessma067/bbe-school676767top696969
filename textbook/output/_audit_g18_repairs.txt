@@ -1,0 +1,211 @@
+en-g-18-01 A
+  BAD: Success depends of careful practice before the recital.
+  FIX: Success depends on careful practice before the recital.
+
+en-g-18-01 B
+  BAD: She is responsible of watering the neighbour's plants.
+  FIX: She is responsible for watering the neighbour's plants.
+
+en-g-18-01 C
+  BAD: They are interested on learning Portuguese this summer.
+  FIX: They are interested in learning Portuguese this summer.
+
+en-g-18-01 D
+  BAD: Despite of the rain, the picnic went ahead.
+  FIX: Despite the rain, the picnic went ahead.
+
+en-g-18-02 B
+  BAD: Her recipe differs of last year's version.
+  FIX: Her recipe differs from last year's version.
+
+en-g-18-02 C
+  BAD: We apologised about spilling juice on the carpet.
+  FIX: We apologised for spilling juice on the carpet.
+
+en-g-18-02 D
+  BAD: The documentary focuses to ocean plastics.
+  FIX: The documentary focuses on ocean plastics.
+
+en-g-18-03 A
+  BAD: They objected against the new quiet-hours rule.
+  FIX: They objected to the new quiet-hours rule.
+
+en-g-18-03 C
+  BAD: She is good in swimming long distances.
+  FIX: She is good at swimming long distances.
+
+en-g-18-03 E
+  BAD: He succeeded to repair the bicycle chain.
+  FIX: He succeeded in repairing the bicycle chain.
+
+en-g-18-04 A
+  BAD: The salad consists from tomatoes, cucumber, and feta.
+  FIX: The salad consists of tomatoes, cucumber, and feta.
+
+en-g-18-04 C
+  BAD: You can rely of her to bring the tent.
+  FIX: You can rely on her to bring the tent.
+
+en-g-18-04 D
+  BAD: They complained for the noisy neighbours upstairs.
+  FIX: They complained about the noisy neighbours upstairs.
+
+en-g-18-05 B
+  BAD: This trail is similar with the one near the lake.
+  FIX: This trail is similar to the one near the lake.
+
+en-g-18-05 C
+  BAD: My playlist is different than yours in every genre.
+  FIX: My playlist is different from yours in every genre.
+
+en-g-18-05 D
+  BAD: She has been married with her partner for twelve years.
+  FIX: She has been married to her partner for twelve years.
+
+en-g-18-06 A
+  BAD: We arrived to the station just before midnight.
+  FIX: We arrived at the station just before midnight.
+
+en-g-18-06 C
+  BAD: They waited the bus for twenty minutes in the rain.
+  FIX: They waited for the bus for twenty minutes in the rain.
+
+en-g-18-06 E
+  BAD: We talked the film for almost an hour.
+  FIX: We talked about the film for almost an hour.
+
+en-g-18-07 A
+  BAD: She goes to work by foot every morning.
+  FIX: She goes to work on foot every morning.
+
+en-g-18-07 C
+  BAD: The match starts in Monday evening.
+  FIX: The match starts on Monday evening.
+
+en-g-18-07 D
+  BAD: I usually read in night when the house is quiet.
+  FIX: I usually read at night when the house is quiet.
+
+en-g-18-08 A
+  BAD: We congratulated her for winning the baking contest.
+  FIX: We congratulated her on winning the baking contest.
+
+en-g-18-08 B
+  BAD: Don't blame me about the burnt toast.
+  FIX: Don't blame me for the burnt toast.
+
+en-g-18-08 E
+  BAD: Police charged him of vandalising the bus stop.
+  FIX: Police charged him with vandalising the bus stop.
+
+en-g-18-09 B
+  BAD: She is fond from old jazz records.
+  FIX: She is fond of old jazz records.
+
+en-g-18-09 C
+  BAD: They take pride of their community garden.
+  FIX: They take pride in their community garden.
+
+en-g-18-09 E
+  BAD: He gets bored of the same playlist every day.
+  FIX: He gets bored with the same playlist every day.
+
+en-g-18-10 C
+  BAD: She chose tea instead coffee after dinner.
+  FIX: She chose tea instead of coffee after dinner.
+
+en-g-18-10 D
+  BAD: In addition of stretching, he iced his knee.
+  FIX: In addition to stretching, he iced his knee.
+
+en-g-18-11 B
+  BAD: The coach discouraged them to swim after dark.
+  FIX: The coach discouraged them from swimming after dark.
+
+en-g-18-11 D
+  BAD: Nothing will stop her to finish the marathon.
+  FIX: Nothing will stop her from finishing the marathon.
+
+en-g-18-12 B
+  BAD: She used to waking up before sunrise when she worked nights.
+  FIX: She used to wake up before sunrise when she worked nights.
+
+en-g-18-12 C
+  BAD: They are accustomed with long bus rides.
+  FIX: They are accustomed to long bus rides.
+
+en-g-18-12 E
+  BAD: We prefer walking than cycling when it rains.
+  FIX: We prefer walking to cycling when it rains.
+
+en-g-18-13 B
+  BAD: In spite the heat, they finished the hike.
+  FIX: In spite of the heat, they finished the hike.
+
+en-g-18-13 D
+  BAD: She refrained to comment during the argument.
+  FIX: She refrained from commenting during the argument.
+
+en-g-18-14 C
+  BAD: She has no intention for cancelling the trip.
+  FIX: She has no intention of cancelling the trip.
+
+en-g-18-14 D
+  BAD: There is no point of arguing about the score.
+  FIX: There is no point in arguing about the score.
+
+en-g-18-15 C
+  BAD: They were pleased of the surprise birthday brunch.
+  FIX: They were pleased with the surprise birthday brunch.
+
+en-g-18-15 E
+  BAD: We were surprised from the sudden snowfall.
+  FIX: We were surprised by the sudden snowfall.
+
+en-g-18-16 D
+  BAD: Can you remind me of locking the back door?
+  FIX: Can you remind me to lock the back door?
+
+en-g-18-17 B
+  BAD: Owing the high winds, the festival was cancelled.
+  FIX: Owing to the high winds, the festival was cancelled.
+
+en-g-18-17 D
+  BAD: Due the flooding, the hike was postponed.
+  FIX: Due to the flooding, the hike was postponed.
+
+en-g-18-18 A
+  BAD: She accused him for leaving the gate open.
+  FIX: She accused him of leaving the gate open.
+
+en-g-18-18 C
+  BAD: He was convicted for trespassing on farmland.
+  FIX: He was convicted of trespassing on farmland.
+
+en-g-18-18 E
+  BAD: Nothing can compensate the loss of the old oak.
+  FIX: Nothing can compensate for the loss of the old oak.
+
+en-g-18-19 B
+  BAD: Approval is contingent of dry weather this weekend.
+  FIX: Approval is contingent on dry weather this weekend.
+
+en-g-18-19 C
+  BAD: She prides herself in finishing every crossword.
+  FIX: She prides herself on finishing every crossword.
+
+en-g-18-19 E
+  BAD: He is proud for his daughter's science prize.
+  FIX: He is proud of his daughter's science prize.
+
+en-g-18-20 B
+  BAD: The café had run out from cups before noon.
+  FIX: The café had run out of cups before noon.
+
+en-g-18-20 C
+  BAD: I'm looking forward for the weekend hike.
+  FIX: I'm looking forward to the weekend hike.
+
+en-g-18-20 E
+  BAD: He succeeded on repairing the leaky tap.
+  FIX: He succeeded in repairing the leaky tap.

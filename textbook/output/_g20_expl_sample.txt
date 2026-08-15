@@ -1,0 +1,34 @@
+**A) Pass the remote to whoever finds it under the sofa.**
+
+Whoever is the subject of finds inside the relative clause, so the nominative form is required. The preposition to governs the whole clause, not a lone object pronoun right after it. Read the clause on its own: whoever finds it — that is clearly a subject slot.
+
+**Tip:** Ignore the preposition; judge case inside the clause.
+
+So the statement holds: whoever correctly fills the subject slot after to.
+
+====
+**B) The neighbour, who's garden we borrowed tools from, waved hello.**
+
+Who's expands only to who is or who has, and neither fits before garden. Possession before a noun is marked with whose: whose garden. If the expansion test fails, the form cannot be a contraction.
+
+**Trap:** Who's looks like a neat possessive but collapses under expansion — examiners count on that.
+
+So the statement is false: repair to "The neighbour, whose garden we borrowed tools from, waved hello."
+
+====
+**A) Award the points to whomever meets the weekly target.**
+
+The subject of meets requires whoever. Award… to whomever meets… puts object case in a subject slot. Target-meeting clauses are subject cases.
+
+**Trap:** Whomever before meets is the polished-looking subject trap after to.
+
+So the statement is false: repair to "Award the points to whoever meets the weekly target."
+
+====
+**E) We now require less formal approvals than before the overhaul.**
+
+Approvals are countable → fewer formal approvals. If the noun is plural and countable, choose fewer even with adjectives in between. Less formal approvals sneaks less past an adjective before a count plural.
+
+**Trap:** An adjective before a countable plural does not license less.
+
+So the statement is false: repair to "We now require fewer formal approvals than before the overhaul."

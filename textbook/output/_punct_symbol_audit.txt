@@ -1,0 +1,65 @@
+INTO_THE_UNQUOTED	g.1.json#task1/B	period remains open into the present, so present perfect — not past simple — is 
+INTO_THE_UNQUOTED	g.1.json#task10/A	 from a start point into the present stay in present perfect rather than a close
+INTO_THE_UNQUOTED	g.1.json#task14/A	 span from the move into the present. Repair to "Since moving abroad, Lara has b
+INTO_THE_UNQUOTED	g.2.json#task4/C	result, not stacked into the condition. The double will makes the polarity and t
+INTO_THE_UNQUOTED	g.2.json#task13/B	oves flips the will into the wrong clause and drops it from the result. /  / Will in
+INTO_THE_UNQUOTED	g.2.json#task20/D	rongly inserts will into the condition. Same rule as if / as long as: no will in
+PARA_GAP	g.3.json#task10/D	becomes a co-subject.
+INTO_THE_UNQUOTED	g.4.json#task2/B	need to" bring "to" into the chain. /  / Prohibition after "must not" still needs a 
+INTO_THE_UNQUOTED	g.4.json#task11/C	— never insert "to" into the chain. Learners often wedge "to" in by analogy with
+PARA_GAP	g.4.json#task19/D	map should not of omitted the footbridge over the creek.**
+PARA_GAP	g.5.json#task1/E	becomes subject, past simple becomes were + past participle, and the agent stays as by 
+PARA_GAP	g.5.json#task3/A	becomes subject, designed becomes was designed, and the agent is retained. Number agree
+PARA_GAP	g.5.json#task3/E	becomes Practice was cancelled by the coach. Tense matches, the object becomes subject,
+PARA_GAP	g.5.json#task6/B	become the passive subject.
+PARA_GAP	g.5.json#task7/A	becomes The proposal is being considered by the club. Continuous active flips to is/are
+PARA_GAP	g.5.json#task7/D	becomes The picnic was postponed by Mum. Regular participle postponed matches the activ
+PARA_GAP	g.5.json#task8/B	becomes The old tablets were locked by IT. Plural tablets take were, and the agent stay
+PARA_GAP	g.5.json#task8/E	becomes The prize was awarded to a Year 9 pupil by the school. The prize is subject, th
+PARA_GAP	g.5.json#task10/D	becomes We were invited to the barbecue by our cousins. The recipient can be the passiv
+PARA_GAP	g.5.json#task11/B	becomes The route will be presented by the guide on Tuesday. Object becomes subject, wi
+PARA_GAP	g.5.json#task12/B	becomes The gates were locked at midnight by security. Meaning is preserved; the time a
+PARA_GAP	g.5.json#task15/B	becomes A decision is expected by Friday. Here by Friday is a deadline, not a fake huma
+PARA_GAP	g.5.json#task16/C	become These loaves are produced in Poland. Dropping the generic producer is allowed w
+PARA_GAP	g.5.json#task16/E	paraphrase keeps the same duty before the trip. British exam English routinely treats them
+INTO_THE_UNQUOTED	g.5.json#task18/D	ifiers of the agent into the by-phrase when they identify which centre. /  / Are ove
+UNPACK	g.5.json#task19/A	een briefed by the nurse unpacks fairly into The parents were briefed by the nurse and then approved the treatment. The same nurse r
+UNPACK_UNQUOTED	g.5.json#task19/A	een briefed by the nurse unpacks fairly into The parents were briefed by the nurse and then approved the treatment. The same nurse r
+INTO_THE_UNQUOTED	g.5.json#task19/A	urse unpacks fairly into The parents were briefed by the nurse and then approved
+PARA_GAP	g.5.json#task19/A	unpacks fairly into The parents were briefed by the nurse and then approved the treatme
+PARA_GAP	g.5.json#task20/E	paraphrases cleanly as If the rules were not enforced…. Formal inversion still encodes the 
+PARA_GAP	g.6.json#task4/B	map that we borrowed shows every hiking trail.**
+TIP_MAYBE_ARROW	g.6.json#task11/D	Expand "who's" to decide between "who is" and "who has."
+TIP_MAYBE_ARROW	g.7.json#task6/A	Avoid + gerund is fixed; do not borrow to from decide.
+PARA_GAP	g.7.json#task7/D	map because the path forked.**
+TIP_MAYBE_ARROW	g.7.json#task18/E	Refuse + noun and refuse + to + verb are both correct.
+PARA_GAP	g.8.json#task7/E	becomes a to-clause headed by not.
+PARA_GAP	g.8.json#task9/A	becomes did not need to). Leaving it unchanged after said is acceptable exam English fo
+PARA_GAP	g.8.json#task9/D	paraphrase as "in two days' time" or "two days later." Distant relative time phrases are o
+PARA_GAP	g.8.json#task14/E	becomes if + subject + was being.
+PARA_GAP	g.8.json#task16/E	becomes had to. Obligation questions follow the same wh statement-order rules as other 
+PARA_GAP	g.8.json#task17/E	paraphrase here.
+PARA_GAP	g.9.json#task17/B	equal heads. Unique organisational roles usually take the, not a. Repair a to the bef
+INTO_THE_UNQUOTED	g.12.json#task9/E	* /  / Dropping however into the middle without proper clause punctuation makes the 
+PARA_GAP	g.12.json#task11/C	become available. Aching wrist packs the pain idea into a noun object.
+INTO_THE_UNQUOTED	g.13.json#task7/A	bstract nouns mixed into the series. Use attending matches so every duty matches
+PARA_GAP	g.13.json#task7/E	equal weight on every committee action. The mural vote therefore never mixes infiniti
+PARA_GAP	g.13.json#task20/E	become unmanageable.**
+PARA_GAP	g.14.json#task1/B	becomes correct. Essential, crucial, and vital behave like mandative verbs in this fram
+INTO_THE_UNQUOTED	g.15.json#task6/A	rrelative both lock into the classic trio. /  / No sooner + had + subject + than is 
+PARA_GAP	g.15.json#task12/E	equals hardly for inversion purposes.
+INTO_THE_UNQUOTED	g.15.json#task14/A	Did has been jammed into the not-until clause itself: Not until did the plumber…
+PARA_GAP	g.16.json#task2/C	map, the trail suddenly seemed endless.**
+INTO_THE_UNQUOTED	g.16.json#task16/A	
+PARA_GAP	g.16.json#task17/A	becomes impossible. The decision did not taste every sample. Repair: "Having tasted eve
+PARA_GAP	g.16.json#task17/E	map seemed to contradict itself.**
+INTO_THE_UNQUOTED	g.16.json#task20/E	
+INTO_THE_UNQUOTED	g.19.json#task2/B	verts the auxiliary into the embedded clause. Keep if the library has…. Treat an
+INTO_THE_UNQUOTED	g.19.json#task6/C	smuggles do-support into the embed. If the clause would be a perfect stand-alone
+INTO_THE_UNQUOTED	g.19.json#task8/C	Which bus are you…? into the softener, so the line fails; prefer "Let me know wh
+INTO_THE_UNQUOTED	g.19.json#task14/E	 inserts do-support into the embed. If you can ask How did the recipe go? alone,
+INTO_THE_UNQUOTED	g.19.json#task15/D	 Should she…? order into the embed. /  / should before she smuggles Should she…? und
+INTO_THE_UNQUOTED	g.19.json#task17/D	smuggles do-support into the embed. We never learned why… already contains the q
+
+TOTAL 62
+COUNTS {'INTO_THE_UNQUOTED': 22, 'PARA_GAP': 35, 'UNPACK': 1, 'UNPACK_UNQUOTED': 1, 'TIP_MAYBE_ARROW': 3}

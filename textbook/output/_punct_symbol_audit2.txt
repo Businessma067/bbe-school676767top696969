@@ -1,0 +1,4 @@
+BECOMES_UNQUOTED	g.3#t10/ED	e insert never becomes a co-subject.
+
+TOTAL 1
+COUNTS {'BECOMES_UNQUOTED': 1}

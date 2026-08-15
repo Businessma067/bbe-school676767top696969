@@ -1,0 +1,10 @@
+﻿py :   File "<string>", line 8
+At C:\Users\bubli\AppData\Local\Temp\ps-script-f0ad1d40-ff8a-4a28-922e-8eae74d26483.ps1:106 char:1
++ py -3 -c "
++ ~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  File "<string>", line 8:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    print(f'===== {t[" id\]}
+                     ^
+SyntaxError: unterminated string literal (detected at line 8)

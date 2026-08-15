@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.1",
+  "title": "The Rise of the Four-Day Workweek",
+  "passage": "(1) For most of the twentieth century, the five-day, forty-hour workweek stood as an unquestioned pillar of industrial life. It was fought for by labour unions, codified into law across dozens of countries, and eventually became so deeply embedded in economic culture that few people paused to ask whether it was actually the most efficient way to organise work. In the past decade, however, a growing number of companies, researchers, and even national governments have begun to challenge that assumption, experimenting instead with a four-day working week in which employees work fewer hours for the same pay.\n\n(2) The most widely cited evidence comes from a large-scale trial conducted in the United Kingdom between June and December 2022, in which over sixty companies and roughly three thousand employees moved to a four-day schedule while maintaining one hundred percent of their previous salary. At the end of the six-month trial, the vast majority of participating companies chose to continue with the shortened week, and a significant number stated they would make the change permanent. Employees reported reduced burnout, improved sleep quality, and better work-life balance, while several firms noted that revenue had either stayed flat or increased slightly compared with the same period in the previous year.\n\n(3) Proponents of the four-day week argue that the traditional forty-hour structure was never designed around genuine productivity but rather around the rhythms of an industrial economy built on physical labour and shift work. In many modern office environments, they contend, a large share of the working day is consumed by low-value activities such as unnecessary meetings, email correspondence, and general distraction, meaning that a shorter week simply compresses genuine output into less time without any real loss.\n\n(4) Critics, however, caution against drawing overly broad conclusions from the available evidence. They point out that most trials have involved companies that volunteered to participate, meaning the sample is skewed toward organisations that were already inclined to be flexible and well-managed. Industries that depend on continuous physical presence, such as manufacturing, healthcare, and retail, have proven far more difficult to adapt to a shortened schedule, since reducing staff hours in these sectors often requires hiring additional employees to cover the same operating hours, thereby increasing costs rather than reducing them.\n\n(5) Some economists have also raised concerns about wage stagnation. If companies commit to paying full salaries for reduced hours, they argue, the additional cost must eventually be absorbed somewhere in the business, whether through slower wage growth in future years, reduced hiring, or higher prices for consumers. In this view, the apparent \"free lunch\" of working less for the same pay may, over a longer time horizon, simply be redistributed rather than eliminated.\n\n(6) Nevertheless, several national governments have begun exploring the four-day week at a policy level rather than leaving it solely to individual companies. Iceland conducted large-scale public sector trials between 2015 and 2019 covering a substantial share of its working population, and the results were later described as an overwhelming success by researchers who tracked productivity and worker wellbeing throughout the trial period. Belgium, meanwhile, passed legislation in 2022 granting employees the legal right to request a four-day week without a corresponding reduction in pay, although the total number of hours worked in that compressed schedule remains the same as under a standard five-day arrangement.\n\n(7) This distinction is often overlooked in public discussion: not all four-day-week models are identical. Some, like the UK trial, involve a genuine reduction in total hours worked, typically from forty hours to thirty-two, while others, like the Belgian model, simply compress the same total number of hours into four longer days rather than five shorter ones. The two approaches address very different problems and are frequently, and mistakenly, discussed as though they were interchangeable.\n\n(8) Sceptics of the movement also point to a subtler risk: the possibility that a four-day week could quietly evolve into an unpaid extension of the working day itself, with employees checking messages or completing tasks during their supposed day off simply to keep pace with a compressed schedule. Without careful monitoring, they warn, the psychological benefits observed in trials could erode over time as the boundary between formal working hours and personal time becomes increasingly blurred.\n\n(9) Whether the four-day week represents a genuine structural shift in how modern economies organise labour, or merely a temporary trend confined to a narrow set of white-collar industries, remains to be seen. What does appear increasingly clear is that the assumption of a universal, one-size-fits-all working week is being questioned more seriously than at any point in the past several decades, and that businesses across a range of sectors are, at the very least, being forced to reconsider how they measure productivity in the first place.",
+  "tasks": [
+    {
+      "id": "en-t-1-01",
+      "exam_title": "Paragraphs 1–3",
+      "kind": "reading",
+      "statements": [
+        "According to the passage, the five-day workweek was never formally established through legislation, but existed only as an informal social custom.",
+        "The UK trial described in the passage lasted for a full calendar year, from January to December 2022.",
+        "Employees in the UK trial worked a four-day week while continuing to receive their previous full salary.",
+        "The passage states that the majority of participating UK companies chose to abandon the four-day model after the trial concluded.",
+        "Proponents of the four-day week argue that much of a traditional working day is spent on low-value activities such as unnecessary meetings and email."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) According to the passage, the five-day workweek was never formally established through legislation, but existed only as an informal social custom.**\n\nParagraph 1 does not treat the five-day week as a soft custom. It was fought for by unions and then \"codified into law across dozens of countries,\" which is formal legal status.\n\nCalling it \"only\" informal invents a claim the text never makes and erases the legislation line.\n\n**Trap:** \"Never formally established\" often flips a sentence that actually names law or policy.\n\nThe claim fails because the passage explicitly grounds the five-day week in law, not custom alone.",
+        "**B) The UK trial described in the passage lasted for a full calendar year, from January to December 2022.**\n\nParagraph 2 dates the trial \"between June and December 2022\" and later calls it a \"six-month trial.\" That is half a year, not January–December.\n\nThe January start and \"full calendar year\" are both invented dates.\n\n**Trap:** Stretching a named window into a whole year is a common chronology swap.\n\nThe claim fails: the text’s window is June–December 2022, not a full year from January.",
+        "**C) Employees in the UK trial worked a four-day week while continuing to receive their previous full salary.**\n\nParagraph 2 says participants \"moved to a four-day schedule while maintaining one hundred percent of their previous salary.\" Same hours cut, same pay kept.\n\nThe statement simply restates that pairing without adding extras the text does not support.\n\nThe claim matches the passage: reduced schedule with full prior salary is exactly what the UK trial did.",
+        "**D) The passage states that the majority of participating UK companies chose to abandon the four-day model after the trial concluded.**\n\nParagraph 2 reports the opposite outcome: \"the vast majority of participating companies chose to continue with the shortened week,\" and many planned to make it permanent.\n\n\"Abandon\" reverses continue/permanent into exit.\n\n**Trap:** Majority wording is often flipped from \"continue\" to \"stop.\"\n\nThe claim fails because the passage says most firms kept the shortened week, not dropped it.",
+        "**E) Proponents of the four-day week argue that much of a traditional working day is spent on low-value activities such as unnecessary meetings and email.**\n\nParagraph 3 attributes to proponents the view that office days are often consumed by \"low-value activities such as unnecessary meetings, email correspondence, and general distraction.\"\n\nMeetings and email are named examples in that argument, so the paraphrase is faithful.\n\nThe claim matches the proponents’ case in Paragraph 3: much of the day is spent on those low-value tasks."
+      ],
+      "highlights": [
+        "codified into law across dozens of countries",
+        "between June and December 2022",
+        "moved to a four-day schedule while maintaining one hundred percent of their previous salary",
+        "the vast majority of participating companies chose to continue with the shortened week",
+        "low-value activities such as unnecessary meetings, email correspondence, and general distraction"
+      ]
+    },
+    {
+      "id": "en-t-1-02",
+      "exam_title": "Paragraphs 4–6",
+      "kind": "reading",
+      "statements": [
+        "Critics argue that trial participants were representative of companies across all industries, including manufacturing and retail.",
+        "According to the passage, reducing hours in sectors requiring continuous physical presence can increase costs rather than reduce them.",
+        "Some economists suggest that the cost of maintaining full pay for reduced hours might eventually appear as slower wage growth or higher consumer prices.",
+        "Iceland's public sector trials took place after Belgium passed its four-day week legislation.",
+        "According to the passage, Belgium's model reduces the total number of hours employees work compared to a standard five-day week."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Critics argue that trial participants were representative of companies across all industries, including manufacturing and retail.**\n\nParagraph 4 says volunteer trials produce a sample \"skewed toward organisations that were already inclined to be flexible and well-managed,\" not a cross-industry mirror.\n\nManufacturing, healthcare, and retail are named as harder to adapt — the opposite of \"representative… including\" those sectors.\n\n**Trap:** \"Representative\" is often planted where the text says \"skewed\" or self-selected.\n\nThe claim fails: critics stress bias in who volunteered, not broad industry coverage.",
+        "**B) According to the passage, reducing hours in sectors requiring continuous physical presence can increase costs rather than reduce them.**\n\nParagraph 4 explains that sectors needing continuous presence often must hire extra staff to cover the same operating hours, \"thereby increasing costs rather than reducing them.\"\n\nThe statement tracks that cost mechanism without overclaiming universality beyond can/often.\n\nThe claim matches the passage: shorter hours in those sectors can raise staffing costs.",
+        "**C) Some economists suggest that the cost of maintaining full pay for reduced hours might eventually appear as slower wage growth or higher consumer prices.**\n\nParagraph 5 lists where the extra cost may be absorbed: \"slower wage growth in future years, reduced hiring, or higher prices for consumers.\"\n\nSlower wage growth and higher prices are two of those named outlets, so the paraphrase is precise.\n\nThe claim matches the economists’ caution in Paragraph 5 about delayed redistribution of cost.",
+        "**D) Iceland's public sector trials took place after Belgium passed its four-day week legislation.**\n\nParagraph 6 places Iceland’s trials \"between 2015 and 2019\" and Belgium’s legislation \"in 2022.\" Iceland came first; Belgium later.\n\nThe statement reverses that timeline.\n\n**Trap:** Two nearby country examples invite chronology swaps — always pin the years.\n\nThe claim fails: Iceland’s 2015–2019 trials precede Belgium’s 2022 law.",
+        "**E) According to the passage, Belgium's model reduces the total number of hours employees work compared to a standard five-day week.**\n\nParagraph 6 says Belgium grants a four-day request \"without a corresponding reduction in pay, although the total number of hours worked in that compressed schedule remains the same as under a standard five-day arrangement.\"\n\nHours are rearranged into fewer days, not cut in total.\n\n**Trap:** \"Four-day\" is easy to misread as \"fewer hours\" when the model only compresses.\n\nThe claim fails because Belgium’s hours stay the same; only the calendar shape changes."
+      ],
+      "highlights": [
+        "skewed toward organisations that were already inclined to be flexible and well-managed",
+        "thereby increasing costs rather than reducing them",
+        "slower wage growth in future years, reduced hiring, or higher prices for consumers",
+        "Iceland conducted large-scale public sector trials between 2015 and 2019",
+        "the total number of hours worked in that compressed schedule remains the same as under a standard five-day arrangement"
+      ]
+    },
+    {
+      "id": "en-t-1-03",
+      "exam_title": "Paragraphs 7–9",
+      "kind": "reading",
+      "statements": [
+        "The passage states that all four-day-week models involve an identical reduction in total working hours.",
+        "The UK-style model and the Belgian-style model are described as addressing the same underlying problem.",
+        "Sceptics warn that employees might end up completing work tasks during their day off in order to keep up with a compressed schedule.",
+        "The passage concludes with a definitive claim that the four-day week will become a permanent, universal standard within a few years.",
+        "The passage suggests that businesses are being pushed to reconsider how they measure productivity, regardless of whether the four-day week itself becomes permanent."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The passage states that all four-day-week models involve an identical reduction in total working hours.**\n\nParagraph 7 opens by stressing that \"not all four-day-week models are identical\": UK-style cuts hours (often to thirty-two), while Belgian-style keeps the same total hours in four longer days.\n\n\"All… identical reduction\" erases that split.\n\nThe claim fails because the text distinguishes hour-reducing models from hour-compressing ones.",
+        "**B) The UK-style model and the Belgian-style model are described as addressing the same underlying problem.**\n\nParagraph 7 says the two approaches \"address very different problems\" and are only \"mistakenly\" treated as interchangeable.\n\nTreating them as the same problem is the public confusion the passage warns against, not its own claim.\n\nThe claim fails: the text presents the models as different fixes, not the same one.",
+        "**C) Sceptics warn that employees might end up completing work tasks during their day off in order to keep up with a compressed schedule.**\n\nParagraph 8 flags an \"unpaid extension of the working day,\" with staff \"checking messages or completing tasks during their supposed day off simply to keep pace with a compressed schedule.\"\n\nThat is exactly the sceptics’ behavioural risk the statement names.\n\nThe claim matches Paragraph 8’s warning about work leaking into the day off.",
+        "**D) The passage concludes with a definitive claim that the four-day week will become a permanent, universal standard within a few years.**\n\nParagraph 9 leaves the big question open: whether this is a genuine structural shift or a temporary trend \"remains to be seen.\" There is no timeline promising universal permanence.\n\n\"Definitive… within a few years\" invents certainty the ending refuses.\n\n**Trap:** Open endings are often rewritten as confident forecasts.\n\nThe claim fails: the close is open-ended, not a prediction of universal adoption.",
+        "**E) The passage suggests that businesses are being pushed to reconsider how they measure productivity, regardless of whether the four-day week itself becomes permanent.**\n\nParagraph 9 says that, \"at the very least,\" firms across sectors are \"being forced to reconsider how they measure productivity in the first place,\" while the fate of the four-day week itself stays unsettled.\n\nThe productivity rethink is the firmer takeaway, independent of permanence.\n\nThe claim matches that final hedge: measurement of productivity is already under pressure even if the model’s future is unclear."
+      ],
+      "highlights": [
+        "not all four-day-week models are identical",
+        "The two approaches address very different problems",
+        "checking messages or completing tasks during their supposed day off simply to keep pace with a compressed schedule",
+        "remains to be seen",
+        "being forced to reconsider how they measure productivity in the first place"
+      ]
+    },
+    {
+      "id": "en-t-1-04",
+      "exam_title": "Inference & Vocabulary in Context",
+      "kind": "vocabulary",
+      "statements": [
+        "The phrase \"free lunch\" in Paragraph 5 is used to suggest that reduced working hours at full pay may ultimately carry a hidden economic cost elsewhere.",
+        "The passage implies that the psychological benefits observed in four-day-week trials are guaranteed to persist indefinitely, regardless of employer monitoring practices.",
+        "The passage implies that companies who volunteered for the UK trial may not represent how a fourday week would perform across the broader economy.",
+        "According to the passage, the four-day week's suitability depends partly on whether an industry requires continuous physical staffing.",
+        "The passage suggests that the historical justification for the standard workweek was rooted primarily in maximising employee wellbeing rather than industrial circumstance."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The phrase \"free lunch\" in Paragraph 5 is used to suggest that reduced working hours at full pay may ultimately carry a hidden economic cost elsewhere.**\n\nIn Paragraph 5, the apparent \"free lunch\" of working less for the same pay \"may, over a longer time horizon, simply be redistributed rather than eliminated\" via slower wage growth, less hiring, or higher prices.\n\nThe scare-quoted idiom is ironic: the freebie is only postponed, not vanished.\n\n**Tip:** In academic prose, \"free lunch\" usually flags a benefit that must be paid for somewhere else.\n\nThe claim matches how Paragraph 5 uses \"free lunch\" — as a warning about hidden redistribution of cost.",
+        "**B) The passage implies that the psychological benefits observed in four-day-week trials are guaranteed to persist indefinitely, regardless of employer monitoring practices.**\n\nParagraph 8 warns that without careful monitoring those psychological benefits \"could erode over time\" as work–life boundaries blur.\n\n\"Guaranteed… indefinitely, regardless of… monitoring\" is the opposite of that conditional caution.\n\nThe claim fails: the text ties lasting benefits to monitoring, and allows erosion when boundaries slip.",
+        "**C) The passage implies that companies who volunteered for the UK trial may not represent how a fourday week would perform across the broader economy.**\n\nParagraph 4 notes that most trials used volunteer firms, so the sample is \"skewed toward\" already flexible, well-managed organisations — a classic generalisability limit.\n\nThat bias is why critics refuse \"overly broad conclusions\" from the available evidence.\n\nThe claim matches the implication: volunteer UK participants are a shaky stand-in for the whole economy.",
+        "**D) According to the passage, the four-day week's suitability depends partly on whether an industry requires continuous physical staffing.**\n\nParagraph 4 contrasts easier office trials with industries that \"depend on continuous physical presence,\" such as manufacturing, healthcare, and retail, where shortened schedules are harder and costlier.\n\nSuitability therefore partly tracks that staffing constraint.\n\nThe claim matches the passage: continuous physical presence is a named factor that makes adaptation harder.",
+        "**E) The passage suggests that the historical justification for the standard workweek was rooted primarily in maximising employee wellbeing rather than industrial circumstance.**\n\nParagraph 3 says the forty-hour structure was \"never designed around genuine productivity but rather around the rhythms of an industrial economy built on physical labour and shift work\" — industrial circumstance, not wellbeing maximisation.\n\nWellbeing gains appear later as trial outcomes, not as the original design rationale.\n\nThe claim fails: the text roots the old week in industrial rhythms, not employee-wellbeing design."
+      ],
+      "highlights": [
+        "the apparent \"free lunch\" of working less for the same pay may, over a longer time horizon, simply be redistributed rather than eliminated",
+        "the psychological benefits observed in trials could erode over time",
+        "the sample is skewed toward organisations that were already inclined to be flexible and well-managed",
+        "Industries that depend on continuous physical presence, such as manufacturing, healthcare, and retail",
+        "the rhythms of an industrial economy built on physical labour and shift work"
+      ]
+    },
+    {
+      "id": "en-t-1-05",
+      "exam_title": "Cross-Paragraph Synthesis & Argument Structure",
+      "kind": "reading",
+      "statements": [
+        "The passage presents the four-day week as an uncontested success, offering no space for sceptical or critical viewpoints.",
+        "The concern raised in Paragraph 5 about wage stagnation and the concern raised in Paragraph 8 about blurred work-life boundaries represent two distinct types of risk: one economic, one psychological/ behavioural.",
+        "The passage suggests that Belgium's approach directly addresses the same concern about burnout that motivated the UK trial's reduction in total hours.",
+        "The passage's overall structure moves from historical background, through supporting evidence and arguments, to critical counterpoints, and finally to an open-ended conclusion.",
+        "According to the passage, the success of Iceland's trials is presented as proof that reduced hours cause no offsetting costs in any context."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The passage presents the four-day week as an uncontested success, offering no space for sceptical or critical viewpoints.**\n\nAfter supportive evidence, Paragraphs 4–5 give critics and economists room, and Paragraph 8 adds sceptics’ boundary risks. The essay is structured as debate, not cheerleading.\n\n\"Uncontested… no space\" erases whole counterargument sections.\n\nThe claim fails because critical and sceptical viewpoints are built into the argument’s middle and later paragraphs.",
+        "**B) The concern raised in Paragraph 5 about wage stagnation and the concern raised in Paragraph 8 about blurred work-life boundaries represent two distinct types of risk: one economic, one psychological/ behavioural.**\n\nParagraph 5 tracks money-side absorption (wages, hiring, prices). Paragraph 8 tracks unpaid evening work and eroding psychological benefits when personal time blurs.\n\nThose are separate risk families — cost structure versus mindset/boundaries — not two wordings of the same worry.\n\nThe claim matches a fair cross-paragraph synthesis: one economic risk, one psychological/behavioural risk.",
+        "**C) The passage suggests that Belgium's approach directly addresses the same concern about burnout that motivated the UK trial's reduction in total hours.**\n\nThe UK trial cuts total hours; Belgium compresses the same total into four days, and Paragraph 7 stresses the models \"address very different problems.\"\n\nBurnout relief via fewer hours is the UK-style move; Belgium does not deliver that cut.\n\n**Trap:** Shared \"four-day\" branding does not mean shared mechanism or motive.\n\nThe claim fails: Belgium’s same-hours compression is not the UK’s hour-reducing answer to burnout.",
+        "**D) The passage's overall structure moves from historical background, through supporting evidence and arguments, to critical counterpoints, and finally to an open-ended conclusion.**\n\nParagraph 1 gives history; 2–3 supply trial evidence and proponents; 4–5 and 8 develop critics, economists, and sceptics; 9 leaves the structural question open with \"remains to be seen.\"\n\nThat arc is background → support → pushback → open close.\n\nThe claim matches the passage’s macro-structure accurately.",
+        "**E) According to the passage, the success of Iceland's trials is presented as proof that reduced hours cause no offsetting costs in any context.**\n\nParagraph 6 reports researchers later described Iceland’s results as \"an overwhelming success\" on productivity and wellbeing — a localized trial finding, not a global cost theorem.\n\nParagraphs 4–5 still warn about sample bias and redistributed costs elsewhere, so \"proof… in any context\" overreaches.\n\nThe claim fails: Iceland is positive evidence, not a universal \"no offsetting costs\" proof."
+      ],
+      "highlights": [
+        "Critics, however, caution against drawing overly broad conclusions from the available evidence",
+        "Some economists have also raised concerns about wage stagnation",
+        "The two approaches address very different problems",
+        "Whether the four-day week represents a genuine structural shift in how modern economies organise labour, or merely a temporary trend confined to a narrow set of white-collar industries, remains to be seen",
+        "the results were later described as an overwhelming success by researchers who tracked productivity and worker wellbeing"
+      ]
+    },
+    {
+      "id": "en-t-1-06",
+      "exam_title": "Grammar Rules (New Sentences, Anchored in Text Vocabulary)",
+      "kind": "grammar",
+      "statements": [
+        "\"If the company had committed to shorter hours earlier, it would have avoided the backlash it is now facing.\"",
+        "\"The board insisted that the policy is reviewed before the end of the quarter.\"",
+        "\"Neither the employees nor the manager were informed of the schedule change in advance.\"",
+        "\"Having volunteered for the trial, the results were closely monitored by the firm's own staff.\"",
+        "\"The number of firms considering a shorter week continue to rise each year.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"If the company had committed to shorter hours earlier, it would have avoided the backlash it is now facing.\"**\n\nThis is a clean third conditional: past perfect in the if-clause (\"had committed\") pairs with \"would have\" + past participle (\"would have avoided\") for an unreal past result.\n\nBoth halves stay in that past-counterfactual system; nothing slips into present unreal or mixed forms.\n\nThe grammar holds: third-conditional shape is correctly formed from start to finish.",
+        "**B) \"The board insisted that the policy is reviewed before the end of the quarter.\"**\n\nAfter insist + that, formal English wants the present subjunctive: base form \"be reviewed,\" not indicative \"is reviewed.\"\n\nThe board’s demand is a mandate shape, so \"is\" treats a requirement as a plain factual present and breaks the pattern.\n\n**Trap:** Verbs like insist / recommend / require + that take base form (\"be\"), not \"is/are.\"\n\nThe line fails; the sound version is \"The board insisted that the policy be reviewed before the end of the quarter.\"",
+        "**C) \"Neither the employees nor the manager were informed of the schedule change in advance.\"**\n\nWith neither…nor, the verb agrees with the nearer subject. Here that noun is singular \"manager,\" so the verb should be \"was informed,\" not \"were.\"\n\nProximity agreement overrides the plural flavour of \"employees\" earlier in the pair.\n\n**Trap:** Do not let the first noun in a neither…nor pair decide the verb.\n\nThe line fails; repair to \"Neither the employees nor the manager was informed of the schedule change in advance.\"",
+        "**D) \"Having volunteered for the trial, the results were closely monitored by the firm's own staff.\"**\n\nThe opening participle \"Having volunteered\" must modify the subject that follows. Here the subject is \"the results,\" which cannot volunteer — a dangling modifier.\n\nRewrite so a person or firm volunteers, or drop the participle and name the actor plainly.\n\nThe line fails because the modifier attaches to \"the results\"; a clear fix is \"Having volunteered for the trial, the firm closely monitored the results.\"",
+        "**E) \"The number of firms considering a shorter week continue to rise each year.\"**\n\nIn \"the number of + plural noun,\" the head noun is singular \"number,\" so the verb must be singular: \"continues,\" not \"continue.\"\n\n\"A number of firms continue\" would be plural; that pattern is not what this sentence uses.\n\n**Tip:** the number of → singular; a number of → plural.\n\nThe line fails; repair to \"The number of firms considering a shorter week continues to rise each year.\""
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-1-07",
+      "exam_title": "Vocabulary in New Context",
+      "kind": "vocabulary",
+      "statements": [
+        "\"The evidence was so skewed that it perfectly represented every group in equal proportion.\"",
+        "\"Years of underinvestment had begun to erode the company's competitive position.\"",
+        "\"The committee described the outcome as an overwhelming failure, praising it in their final report.\"",
+        "\"Her explanation was substantial, covering the entire issue in exhaustive, well-supported detail.\"",
+        "\"The new rule applies to a narrow range of cases, covering almost every situation imaginable.\""
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) \"The evidence was so skewed that it perfectly represented every group in equal proportion.\"**\n\n\"Skewed\" means distorted or unbalanced, so it cannot describe evidence that \"perfectly represented every group in equal proportion.\"\n\nThe sentence pairs the word with its opposite meaning and collapses.\n\nThe wording fails: skewed evidence is biased, not evenly representative.",
+        "**B) \"Years of underinvestment had begun to erode the company's competitive position.\"**\n\n\"Erode\" naturally names gradual wearing-away; here competitive strength weakens over years of underinvestment.\n\nThe subject, process, and metaphorical object all fit standard usage.\n\nThe wording stands: erode correctly marks slow loss of competitive position.",
+        "**C) \"The committee described the outcome as an overwhelming failure, praising it in their final report.\"**\n\nAn \"overwhelming failure\" is a strongly negative verdict; \"praising it\" requires celebration of success.\n\nThose two speech-act halves cancel each other inside one sentence.\n\nThe wording fails: you do not praise what you have just labelled an overwhelming failure.",
+        "**D) \"Her explanation was substantial, covering the entire issue in exhaustive, well-supported detail.\"**\n\n\"Substantial\" can mean large or weighty in scope; the follow-on \"exhaustive, well-supported detail\" confirms that sense rather than fighting it.\n\nAdjective and paraphrase pull in the same direction.\n\nThe wording stands: substantial fits a thorough, well-supported explanation.",
+        "**E) \"The new rule applies to a narrow range of cases, covering almost every situation imaginable.\"**\n\n\"Narrow\" means limited; \"almost every situation imaginable\" means nearly universal coverage.\n\nThe range claim and the coverage claim contradict each other.\n\nThe wording fails: a narrow range cannot also cover almost every case."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-1-08",
+      "exam_title": "Collocation Check",
+      "kind": "vocabulary",
+      "statements": [
+        "\"Critics caution against the new proposal, citing several risks.\"",
+        "\"The sample was skewed of larger firms in the region.\"",
+        "\"The company committed to reducing its emissions by next year.\"",
+        "\"The policy remains confined in a small number of pilot regions.\"",
+        "\"Analysts warn that the trend could erode over the coming decade.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Critics caution against the new proposal, citing several risks.\"**\n\n\"Caution against\" is the fixed pairing for warning people away from a plan or practice.\n\nThe sentence uses that collocation cleanly before naming risks.\n\nThe pairing stands: caution against + proposal is natural English.",
+        "**B) \"The sample was skewed of larger firms in the region.\"**\n\nEnglish wants \"skewed toward/towards\" (or \"skewed in favour of\"), not \"skewed of.\"\n\n\"Of\" is the wrong preposition after skewed when naming the overrepresented group.\n\n**Trap:** Copy the passage’s \"skewed toward,\" not a guessed \"of.\"\n\nThe collocation fails; repair to \"The sample was skewed toward larger firms in the region.\"",
+        "**C) \"The company committed to reducing its emissions by next year.\"**\n\n\"Commit to\" takes a noun or gerund; \"reducing\" is the right -ing form after the preposition to.\n\nMeaning (promise of action) and form travel together here.\n\nThe pairing stands: committed to + gerund is the expected collocation.",
+        "**D) \"The policy remains confined in a small number of pilot regions.\"**\n\nLimits on scope use \"confined to,\" not \"confined in,\" when naming the set of places or cases.\n\n\"In\" suggests physical enclosure rather than the abstract restriction intended.\n\nThe collocation fails; repair to \"The policy remains confined to a small number of pilot regions.\"",
+        "**E) \"Analysts warn that the trend could erode over the coming decade.\"**\n\n\"Erode over\" + time span is a natural way to say gradual weakening across years.\n\nThe adverbial \"over the coming decade\" supplies exactly that span.\n\nThe pairing stands: erode over a period is idiomatic and clear."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-1-09",
+      "exam_title": "Correct Word Form",
+      "kind": "vocabulary",
+      "statements": [
+        "\"The gradual erosion of trust took years to fully repair.\"",
+        "\"Her argument relied on a highly skew interpretation of the data.\"",
+        "\"The company's growth was substantially larger than analysts had predicted.\"",
+        "\"The narrowly of the criteria excluded many otherwise qualified applicants.\"",
+        "\"Investors reacted with caution to the announcement.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"The gradual erosion of trust took years to fully repair.\"**\n\nAfter the article and adjective \"gradual,\" the slot needs a noun; \"erosion\" is the noun form of erode and fits cleanly.\n\n\"Of trust\" then completes a standard noun phrase as subject.\n\nThe word form stands: noun erosion is the right part of speech here.",
+        "**B) \"Her argument relied on a highly skew interpretation of the data.\"**\n\nBefore \"interpretation,\" the grammar wants an adjective (or past-participle adjective). \"Skew\" as a bare stem is not that form; \"skewed\" is.\n\n\"Highly\" intensifies an adjective, which makes the missing -ed even clearer.\n\nThe form fails; repair to \"a highly skewed interpretation of the data.\"",
+        "**C) \"The company's growth was substantially larger than analysts had predicted.\"**\n\n\"Substantially\" is an adverb modifying the comparative adjective \"larger\" — the normal adverb–adjective pattern.\n\nA noun or adjective \"substantial\" would not sit cleanly in that slot before \"larger.\"\n\nThe word form stands: adverb substantially correctly intensifies larger.",
+        "**D) \"The narrowly of the criteria excluded many otherwise qualified applicants.\"**\n\n\"The ___ of the criteria\" needs a noun head; \"narrowly\" is an adverb and cannot fill that subject slot.\n\nThe noun needed is \"narrowness\" (or a rewrite such as \"The narrow criteria…\").\n\nThe form fails; a sound repair is \"The narrowness of the criteria excluded many otherwise qualified applicants.\"",
+        "**E) \"Investors reacted with caution to the announcement.\"**\n\nAfter the preposition \"with,\" English wants a noun; \"caution\" is that noun and forms the idiom \"with caution.\"\n\nAn adjective or verb form would break the prepositional phrase.\n\nThe word form stands: noun caution is correct after with."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-1-10",
+      "exam_title": "Formal Register Substitution",
+      "kind": "vocabulary",
+      "statements": [
+        "Replacing \"a lot of workers\" with \"a substantial share of the workforce\" preserves the meaning in a more formal register.",
+        "Replacing \"wear away slowly\" with \"erode\" preserves the meaning in a more formal register.",
+        "Replacing \"get worse quietly\" with \"improve dramatically\" preserves the meaning in a more formal register.",
+        "Replacing \"think it's not fair\" with \"caution against the practice\" preserves the meaning in a more formal register.",
+        "Replacing \"leave it uncertain\" with \"leave it to be seen\" preserves the meaning in a more formal register."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Replacing \"a lot of workers\" with \"a substantial share of the workforce\" preserves the meaning in a more formal register.**\n\nBoth phrases mean a large proportion of workers; \"substantial share of the workforce\" simply lifts the register.\n\nNo new quantity claim or restriction is smuggled in.\n\nThe substitution works: same proportional idea, more academic wording.",
+        "**B) Replacing \"wear away slowly\" with \"erode\" preserves the meaning in a more formal register.**\n\n\"Erode\" is the compact formal verb for gradual wearing-away, matching \"wear away slowly\" in sense.\n\nThe swap tightens style without flipping direction of change.\n\nThe substitution works: erode keeps the slow-loss meaning in formal vocabulary.",
+        "**C) Replacing \"get worse quietly\" with \"improve dramatically\" preserves the meaning in a more formal register.**\n\n\"Get worse quietly\" is negative and gradual; \"improve dramatically\" is positive and sharp — opposite valence and intensity.\n\nA register upgrade must keep the same idea; this pair swaps it for another.\n\nThe substitution fails: the proposed phrase reverses both direction and degree of change.",
+        "**D) Replacing \"think it's not fair\" with \"caution against the practice\" preserves the meaning in a more formal register.**\n\nJudging something unfair is a fairness appraisal; \"caution against\" warns about risk or harm. Those are different speech acts.\n\nFormal tone alone does not make an opinion of injustice into a risk warning.\n\nThe substitution fails: the new phrase changes the claim, not just the register.",
+        "**E) Replacing \"leave it uncertain\" with \"leave it to be seen\" preserves the meaning in a more formal register.**\n\nThe established idiom is \"remains to be seen,\" not \"leave it to be seen.\" The proposed string is not a standard formal equivalent.\n\nEven as a paraphrase attempt, it misforms the fixed expression for unresolved outcomes.\n\n**Trap:** Echo the real idiom — \"remains to be seen\" — rather than inventing \"leave it to be seen.\"\n\nThe substitution fails: it is neither idiomatic nor a faithful formal upgrade of \"leave it uncertain.\""
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+}

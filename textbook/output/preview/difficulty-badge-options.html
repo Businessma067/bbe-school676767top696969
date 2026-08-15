@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Difficulty badge options — BBE</title>
+  <style>
+    :root {
+      --bg: #f7f4f0;
+      --card: #fffdfb;
+      --ink: #2c241c;
+      --muted: #8a7a6b;
+      --line: #e6ddd3;
+      --caramel: #8b5e3c;
+      --caramel-soft: #c4a484;
+      --taupe: #b7a898;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      padding: 32px 24px 64px;
+    }
+    h1 { font-size: 22px; margin: 0 0 6px; letter-spacing: -0.02em; }
+    .sub { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+    .grid { display: grid; gap: 18px; max-width: 920px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 20px;
+    }
+    .card h2 { font-size: 14px; margin: 0 0 4px; }
+    .card p { margin: 0 0 14px; color: var(--muted); font-size: 12px; }
+    .row { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+    .sample { display: flex; flex-direction: column; gap: 6px; align-items: center; min-width: 64px; }
+    .sample span.label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+    /* A dots */
+    .dots { display: flex; gap: 4px; }
+    .dots i {
+      width: 7px; height: 7px; border-radius: 50%;
+      border: 1.5px solid var(--taupe); display: block;
+    }
+    .dots i.on { background: var(--caramel); border-color: var(--caramel); }
+
+    /* B bars */
+    .bars { display: flex; align-items: flex-end; gap: 3px; height: 14px; }
+    .bars i {
+      width: 4px; border-radius: 2px; background: #e8dfd6; display: block;
+    }
+    .bars i:nth-child(1) { height: 5px; }
+    .bars i:nth-child(2) { height: 7px; }
+    .bars i:nth-child(3) { height: 9px; }
+    .bars i:nth-child(4) { height: 11px; }
+    .bars i:nth-child(5) { height: 14px; }
+    .bars i.on { background: var(--caramel); }
+
+    /* C ring */
+    .ring {
+      width: 22px; height: 22px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: conic-gradient(var(--caramel) var(--p), #e8dfd6 0);
+      position: relative;
+    }
+    .ring::after {
+      content: "";
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--card);
+      position: absolute;
+    }
+    .ring b { position: relative; z-index: 1; font-size: 9px; font-weight: 700; }
+
+    /* D heat pill */
+    .heat {
+      display: inline-flex; align-items: center; gap: 6px;
+      border: 1px solid var(--line); border-radius: 999px;
+      padding: 3px 8px 3px 9px; font-size: 11px; color: var(--muted);
+      background: #faf7f3;
+    }
+    .heat .pips { display: flex; gap: 3px; }
+    .heat .pips i { width: 5px; height: 5px; border-radius: 50%; background: #e0d6cb; }
+    .heat .pips i.on { background: var(--caramel); }
+    .heat strong { color: var(--ink); font-weight: 600; font-size: 11px; }
+
+    /* E segments */
+    .segs { display: flex; gap: 3px; }
+    .segs i {
+      width: 10px; height: 6px; border-radius: 2px; background: #e8dfd6; display: block;
+    }
+    .segs i.on { background: var(--caramel); }
+
+    /* sidebar mock */
+    .sidebar {
+      margin-top: 10px; border: 1px solid var(--line); border-radius: 12px;
+      overflow: hidden; background: #fff;
+    }
+    .task {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 10px 12px; border-bottom: 1px solid var(--line);
+      font-size: 13px;
+    }
+    .task:last-child { border-bottom: 0; }
+    .task.active { background: #f3ebe3; color: var(--caramel); font-weight: 600; }
+    .pick {
+      margin-top: 28px; padding: 16px 18px; border-radius: 14px;
+      border: 1px dashed var(--caramel-soft); background: #fff9f3;
+      font-size: 13px; color: var(--muted); max-width: 920px;
+    }
+    .pick b { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <h1>Difficulty badge — design options</h1>
+  <p class="sub">Replace plain <code>1/5</code>…<code>5/5</code>. Hover isn’t needed — compare scale density for a sidebar chip.</p>
+
+  <div class="grid">
+    <section class="card">
+      <h2>A · Dots <b style="color:var(--caramel)">(recommended for sidebar)</b></h2>
+      <p>Fast to scan, tiny footprint, reads as “how many of five” without numbers.</p>
+      <div class="row">
+        <div class="sample"><div class="dots"><i class="on"></i><i></i><i></i><i></i><i></i></div><span class="label">1</span></div>
+        <div class="sample"><div class="dots"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div><span class="label">2</span></div>
+        <div class="sample"><div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div><span class="label">3</span></div>
+        <div class="sample"><div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div><span class="label">4</span></div>
+        <div class="sample"><div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><span class="label">5</span></div>
+      </div>
+      <div class="sidebar">
+        <div class="task">Task 12 <div class="dots"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div></div>
+        <div class="task active">Task 24 <div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
+        <div class="task">Task 41 <div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>B · Signal bars</h2>
+      <p>Same idea as dots, slightly more “strength / intensity” metaphor.</p>
+      <div class="row">
+        <div class="sample"><div class="bars"><i class="on"></i><i></i><i></i><i></i><i></i></div><span class="label">1</span></div>
+        <div class="sample"><div class="bars"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div><span class="label">2</span></div>
+        <div class="sample"><div class="bars"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div><span class="label">3</span></div>
+        <div class="sample"><div class="bars"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div><span class="label">4</span></div>
+        <div class="sample"><div class="bars"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><span class="label">5</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>C · Progress ring + number</h2>
+      <p>Good for the task header (more space). Keeps a digit for accessibility.</p>
+      <div class="row">
+        <div class="sample"><div class="ring" style="--p:20%"><b>1</b></div><span class="label">1</span></div>
+        <div class="sample"><div class="ring" style="--p:40%"><b>2</b></div><span class="label">2</span></div>
+        <div class="sample"><div class="ring" style="--p:60%"><b>3</b></div><span class="label">3</span></div>
+        <div class="sample"><div class="ring" style="--p:80%"><b>4</b></div><span class="label">4</span></div>
+        <div class="sample"><div class="ring" style="--p:100%"><b>5</b></div><span class="label">5</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>D · Word + pips</h2>
+      <p>Clearest for new students; a bit wide for the sidebar — nice in the task card header.</p>
+      <div class="row">
+        <div class="heat"><strong>Easy</strong><span class="pips"><i class="on"></i><i></i><i></i><i></i><i></i></span></div>
+        <div class="heat"><strong>Steady</strong><span class="pips"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></div>
+        <div class="heat"><strong>Solid</strong><span class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+        <div class="heat"><strong>Hard</strong><span class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+        <div class="heat"><strong>Expert</strong><span class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>E · Segment ticks</h2>
+      <p>Very compact; slightly more “progress bar” than “difficulty”.</p>
+      <div class="row">
+        <div class="sample"><div class="segs"><i class="on"></i><i></i><i></i><i></i><i></i></div><span class="label">1</span></div>
+        <div class="sample"><div class="segs"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div><span class="label">2</span></div>
+        <div class="sample"><div class="segs"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div><span class="label">3</span></div>
+        <div class="sample"><div class="segs"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div><span class="label">4</span></div>
+        <div class="sample"><div class="segs"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><span class="label">5</span></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="pick">
+    Practical combo: <b>A dots</b> in the sidebar list + <b>C ring</b> (or <b>D word+pips</b>) in the task header.
+    Tell me which pair you want and I’ll wire it into <code>DifficultyPill</code>.
+  </div>
+</body>
+</html>

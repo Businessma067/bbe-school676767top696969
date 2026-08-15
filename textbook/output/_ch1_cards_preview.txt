@@ -1,0 +1,49 @@
+﻿cards 108
+============================================================ math-1-1 1/5
+CTX: Let $A = \{1, 2, 3, 4, 5\}$, $B = \{3, 4, 5, 6, 7\}$, and $C = \{5, 6, 7, 8, 9\}$.
+  A=T: $A \cap B = \{3, 4, 5\}$.
+     core: The elements common to both A and B are 3, 4, and 5.
+  B=F: $A \cup C = \{1, 2, 3, 4, 5, 6, 7, 8\}$.
+     core: **Trap:** A contributes 1-5, C contributes 5-9, so together they cover every integer from 1 to 9 - the statement's set stops at 8 and wrongly omits 9, which C c
+  C=T: $(A \cap B) \cap C = \{5\}$.
+     core: $A \cap B = \{3,4,5\}$; intersecting this with $C = \{5,6,7,8,9\}$ leaves only the common element 5.
+  D=F: $A \setminus C = \{1, 2, 3\}$.
+     core: $A \setminus C$ removes from A any elements that are also in C. Only 5 is in both, so $A \setminus C = \{1,2,3,4\}$ - the statement is missing the element 4. Na
+  E=F: B and C are disjoint sets.
+     core: B and C share the elements 5, 6, and 7, so they are not disjoint (disjoint would require $B \cap C = \emptyset)$.
+============================================================ math-1-46 1/5
+CTX: A university's rules state: /  / (1) A student may enrol in Advanced Macroeconomics only if they have passed Intermediate Macroeconomics. /  / (2) A student may enrol in Intermediate Macroeconomics only if they have passed Principles of Economics. /  / Maria is currently enrolled in Advanced Macroeconomics.
+  A=T: Maria has passed Intermediate Macroeconomics.
+     core: By rule (1), enrolling in Advanced requires having passed Intermediate; Maria is enrolled in Advanced, so she must have passed Intermediate.
+  B=T: Maria has passed Principles of Economics.
+     core: Having passed Intermediate implies she was enrolled in it, and by rule (2), that requires having passed Principles.
+  C=T: Passing Principles of Economics is a necessary condition for enrolling in Advanced Macroeconomics.
+     core: Since passing Principles is necessary for Intermediate, and passing Intermediate is necessary for Advanced, it is necessary (transitively) for Advanced too.
+  D=F: Passing Principles of Economics is a sufficient condition for enrolling in Advanced Macroeconomics.
+     core: The rules only establish necessary conditions along the chain; passing Principles alone does not guarantee meeting the further requirement of Intermediate, so i
+  E=F: We may conclude that Maria passed Principles of Economics with a perfect grade.
+     core: Nothing in the given information mentions grades at all - we can only conclude that Maria passed, not with what grade.
+============================================================ math-1-80 1/5
+CTX: A theft occurred, and exactly one of four suspects - Ann, Ben, Cara, Dan - is guilty. It is known that: /  / (1) If Ann is guilty, then Dan is innocent. /  / (2) If Ben is innocent, then Cara is innocent. /  / (3) Dan is guilty. /  / (4) If Cara is guilty, then Ann is guilty.
+  A=T: Dan is guilty.
+     core: This is stated directly in clue (3).
+  B=F: Ann is guilty.
+     core: Since exactly one suspect is guilty and that is Dan (part a), Ann must be innocent.
+  C=F: Clue (2) is essential to determine that Cara is innocent - without it, Cara's innocence could not be established.
+     core: Once we know exactly one person is guilty and that person is Dan (from clue 3 alone), every other suspect - including Cara - is automatically innocent; clue (2)
+  D=T: Clue (1) provides no additional information here, since its antecedent (Ann is guilty) is false.
+     core: Since Ann is innocent, the antecedent of clue (1) is **false**, making the implication vacuously true and uninformative for this scenario.
+  E=T: Even without knowing that exactly one suspect is guilty, clue (3) alone already tells us Dan is guilty.
+     core: Clue (3) is a direct factual statement (ôDan is guiltyö) that does not rely on the ôexactly one guiltyö assumption at all. So the claim is true: it lines up wit
+============================================================ math-1-108 5/5
+CTX: Seven finalists - Uma, Victor, Wendy, Xavier, Yara, Zane, and Bianca - are deciding whether to compete in a tournament. Their participation follows these rules: /  / 1. Uma competes if and only if Victor competes. /  / 2. If Victor competes, then Wendy competes. /  / 3. Exactly one of Wendy or Xavier competes (
+  A=T: Victor must compete in every valid roster.
+     core: Suppose Victor stays out. Rule 1 then keeps Uma out, and the contrapositive of rule 7 keeps Bianca out. Under rule 3, either Wendy is in and Xavier is out, or X
+  B=F: It is possible for Xavier to compete in some valid roster.
+     core: From the shared chain, Victor is always in, so rule 2 always puts Wendy in. Rule 3 says exactly one of Wendy or Xavier competes, so Xavier is forced out wheneve
+  C=T: If Bianca competes, then Zane does not compete.
+     core: Rule 6 says Zane competes only if Bianca does not: Zane $\Rightarrow$ not Bianca. The contrapositive is immediate: Bianca $\Rightarrow$ not Zane. So whenever Bi
+  D=F: There is exactly one valid way to build the roster, consistent with all eight rules.
+     core: Uma, Victor, and Wendy are fixed in, and Xavier is fixed out, but Yara, Zane, and Bianca still have room under rules 5û7. For example, Yara in with Zane and Bia
+  E=F: It is possible for exactly six of the seven finalists to compete.
+     core: Exactly six competitors would mean everyone except Xavier is in, so Yara, Zane, and Bianca would all have to compete together. Rule 6 forbids Zane and Bianca at

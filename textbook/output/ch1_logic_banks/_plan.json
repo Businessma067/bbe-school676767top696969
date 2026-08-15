@@ -1,0 +1,40 @@
+{
+  "subsections": [
+    {
+      "id": "1.1",
+      "title": "Sets: Elements, Subsets & Power Sets",
+      "pdf_count": 15,
+      "filler_count": 15,
+      "file": "1.1_INPUT.json"
+    },
+    {
+      "id": "1.2",
+      "title": "Set Operations, Complements & Counting",
+      "pdf_count": 7,
+      "filler_count": 23,
+      "file": "1.2_INPUT.json"
+    },
+    {
+      "id": "1.3",
+      "title": "Propositional Logic & Implications",
+      "pdf_count": 30,
+      "filler_count": 0,
+      "file": "1.3_INPUT.json"
+    },
+    {
+      "id": "1.4",
+      "title": "Quantifiers, Validity & Deduction",
+      "pdf_count": 30,
+      "filler_count": 0,
+      "file": "1.4_INPUT.json"
+    }
+  ],
+  "leftover_pdf_for_inspiration_only": [
+    53,
+    54,
+    55,
+    56,
+    57
+  ],
+  "note": "Fillers must be unique scenarios (not 1:1 copies of leftover PDF tasks)."
+}

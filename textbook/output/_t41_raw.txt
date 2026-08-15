@@ -1,0 +1,36 @@
+Task 41. A senior transit discount rule
+(source: 26-35logic.docx, original Task 32 — difficulty score 4/8)
+A transit discount applies to riders who are at least 65 years old AND (have a qualifying disability OR have an 
+annual income below $20,000). Rider P is 70, has no disability, and earns $18,000. Rider Q is 67, has a qualifying 
+disability, and earns $50,000.
+General Solution: Discount requires age≥65 AND (disability OR income<$20,000) — both the age gate and at 
+least one OR-branch. P: age 70 , income $18,000<$20,000 ⇒ qualifies. Q: age 67 , disability (OR satisfied via
+✓
+✓⇒
+✓
+✓
+ 
+disability, income irrelevant)  qualifies despite $50,000 income.
+
+
+===== PAGE 24 =====
+a) Rider P qualifies for the discount.
+b) Rider Q, who is 67, has a qualifying disability, but earns $50,000, does NOT qualify for the discount because 
+the income exceeds $20,000.
+c) Having an income above $20,000 automatically disqualifies a senior rider from the discount, even if they 
+have a qualifying disability.
+d) There exists a scenario where a 70-year-old rider with no disability and an income of $25,000 would NOT 
+qualify for the discount.
+e) Age alone (being at least 65) is a sufficient condition for receiving the discount, regardless of disability or 
+income status.
+Explanations:
+a) True. P is 70 (≥65) and earns $18,000 (< $20,000), satisfying the income part of the OR-condition, so both 
+the age requirement and the OR-condition are met.
+b) False. Trap: Q is 67 (≥65) and has a qualifying disability, which alone satisfies the OR-condition regardless 
+of income. Q's high income is irrelevant here — the disability is enough, so Q DOES qualify.
+c) False. Q's case directly disproves this — Q has a high income ($50,000) but still qualifies because the 
+disability alone satisfies the OR-condition.
+d) True. Such a rider meets the age requirement but satisfies neither part of the OR-condition (no disability, and 
+$25,000 is not below $20,000), so the overall AND-condition fails and they would not qualify.
+e) False. As shown in (d), meeting the age requirement alone is not enough — the OR-condition (disability or 
+low income) must also be satisfied.

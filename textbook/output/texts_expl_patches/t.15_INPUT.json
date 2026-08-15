@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.15",
+  "title": "The Shifting Anatomy of Economic Sectors",
+  "passage": "(1) The three-sector model, credited to economists Allan Fisher, Colin Clark, and Jean Fourastié working independently between the 1930s and 1940s, describes economies as typically progressing from primarysector dominance, through secondary-sector expansion, toward eventual tertiary-sector dominance as development proceeds, a trajectory the model's originators framed as a near-universal consequence of rising income and shifting consumer demand rather than a mere historical coincidence. South Korea illustrates this trajectory sharply: primary-sector employment fell from around 50% of the workforce in 1970 to under 5% by 2020, while tertiary-sector employment rose from roughly 30% to over 70% across the same period, a compression of structural transformation that took many earlier-industrialising European economies well over a century to accomplish.\n\n(2) A related but conceptually distinct phenomenon, deindustrialization, has drawn particular scrutiny among economists studying already-developed economies, precisely because it appears to unfold even where manufacturing itself remains robust rather than genuinely contracting. In the United States, manufacturing's share of total employment fell from around 24% in 1970 to under 9% by 2020, even as manufacturing output, adjusted for inflation, roughly tripled over the same period — a divergence economists attribute mainly to rising labour productivity through automation, rather than to any straightforward decline in the underlying scale of production itself, a distinction frequently lost in popular commentary that conflates falling factory employment with a supposedly hollowed-out industrial base.\n\n(3) Dissatisfied with grouping all services together under a single undifferentiated tertiary label, some economists propose a separate \"quaternary sector\" covering information-intensive activities such as software development, financial analysis, and scientific research, arguing these differ fundamentally from routine tertiary services like retail or hospitality in their heavy reliance on specialised, codified knowledge rather than repeated, standardised service delivery requiring comparatively little formal expertise, a distinction proponents consider analytically indispensable for understanding where genuine value creation increasingly concentrates within modern economies.\n\n(4) A further proposed category, the \"quinary sector,\" would encompass top-level decision-making roles and human-development services such as healthcare, education, and cultural production. Its boundaries remain genuinely contested and are applied inconsistently across national statistical agencies, some of which fold quinary activities directly back into broader tertiary or quaternary categories rather than tracking them separately, meaning cross-country comparisons built uncritically on this particular framework should be treated with considerable methodological caution.\n\n(5) The employment-output divergence observed in the United States is by no means unique to it, nor is it merely an artefact of one country's particular statistical conventions. A 2018 study spanning 42 economies found manufacturing employment share declining in 38 of them, while manufacturing value added, calculated in real terms adjusted for inflation, nonetheless grew in 33 of those same 38 economies — a pattern the study's authors interpreted as further corroborating evidence favouring automation-driven productivity gains over any simplistic narrative of uniformly contracting industrial production.\n\n(6) Developing economies frequently display a markedly different structural imbalance, one that inverts rather than mirrors the pattern observed in wealthier nations. In several Sub-Saharan African countries, agriculture accounts for over 50% of total employment while contributing under 20% of GDP, a substantial gap economists attribute to considerably lower output per worker in primary-sector activities relative to other parts of these same economies, reflecting persistent underinvestment in agricultural technology, infrastructure, and access to capital rather than any inherent limitation of the sector itself.\n\n(7) Economist Dani Rodrik has termed a related pattern \"premature deindustrialization\": manufacturing employment shares in many developing countries now appear to peak and subsequently decline at considerably lower levels of per-capita income than occurred historically in earlier-industrialising nations, raising genuine concern among development economists that some countries may transition toward services before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised, potentially foreclosing a developmental pathway that proved historically decisive elsewhere.\n\n(8) Compounding this classificatory difficulty still further, many manufacturing firms increasingly derive substantial revenue from bundled services — maintenance contracts, embedded software subscriptions, predictive data analytics — sold alongside their physical products rather than as an afterthought, a practice researchers term \"servitization.\" This practice progressively blurs the boundary the three-sector model treats as clean and self-evident, since a single firm's revenue may now straddle categories the framework implicitly assumes remain analytically distinct.\n\n(9) Whether the traditional sector framework, in its three-, four-, or five-category forms, still usefully captures structural economic change in an era of blurred manufacturing-service boundaries and rapidly automating production, or whether it requires fundamental conceptual revision to remain analytically meaningful at all, remains an actively debated question among economists studying long-run structural transformation.",
+  "tasks": [
+    {
+      "id": "en-t-15-01",
+      "exam_title": "Paragraphs 1–3",
+      "kind": "reading",
+      "statements": [
+        "The three-sector model's originators framed structural transformation as a near-universal consequence of rising income, not mere coincidence.",
+        "South Korea's structural transformation is described as having taken considerably longer than comparable European transitions.",
+        "Deindustrialization is described as occurring exclusively where manufacturing output genuinely contracts.",
+        "US manufacturing's employment share fell below 9% even as real output roughly tripled.",
+        "The quaternary sector proposal treats codified, specialised knowledge as analytically indispensable to its distinction from tertiary services."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The three-sector model's originators framed structural transformation as a near-universal consequence of rising income, not mere coincidence.**\n\nParagraph 1 says the originators framed the trajectory as \"a near-universal consequence of rising income and shifting consumer demand rather than a mere historical coincidence.\" The statement restates that causal framing faithfully — rising income drives the shift; coincidence is rejected.\n\n**Tip:** Match the exact framing words (near-universal, rising income, coincidence) before you decide.\n\nThe claim tracks Paragraph 1's wording, so it is true.",
+        "**B) South Korea's structural transformation is described as having taken considerably longer than comparable European transitions.**\n\nParagraph 1 calls Korea's change \"a compression of structural transformation that took many earlier-industrialising European economies well over a century to accomplish.\" Compressed means shorter, not longer — the trap flips the comparison.\n\n**Trap:** Chronology flip — \"longer\" reverses what \"compression\" means.\n\nThe statement reverses the passage's time comparison, so it fails.",
+        "**C) Deindustrialization is described as occurring exclusively where manufacturing output genuinely contracts.**\n\nParagraph 2 says deindustrialization draws scrutiny \"precisely because it appears to unfold even where manufacturing itself remains robust rather than genuinely contracting.\" \"Exclusively where…contracts\" is the opposite of that point.\n\n**Trap:** Absolute \"exclusively\" ignores the robust-output case the text stresses.\n\nThe claim invents a contraction-only rule the passage rejects, so it is false.",
+        "**D) US manufacturing's employment share fell below 9% even as real output roughly tripled.**\n\nParagraph 2 gives both figures together: employment share fell \"to under 9% by 2020, even as manufacturing output, adjusted for inflation, roughly tripled.\" The statement pairs those facts without twisting either one.\n\nThe numeric pairing matches Paragraph 2 exactly, so the claim holds.",
+        "**E) The quaternary sector proposal treats codified, specialised knowledge as analytically indispensable to its distinction from tertiary services.**\n\nParagraph 3 contrasts information-intensive work with routine tertiary services by \"heavy reliance on specialised, codified knowledge,\" and calls that distinction \"analytically indispensable.\" The statement captures both the knowledge criterion and its analytical weight.\n\nThe proposal's own rationale supports the claim, so it is true."
+      ],
+      "highlights": [
+        "framed as a near-universal consequence of rising income and shifting consumer demand rather than a mere historical coincidence",
+        "a compression of structural transformation that took many earlier-industrialising European economies well over a century to accomplish",
+        "even where manufacturing itself remains robust rather than genuinely contracting",
+        "fell from around 24% in 1970 to under 9% by 2020, even as manufacturing output, adjusted for inflation, roughly tripled",
+        "a distinction proponents consider analytically indispensable"
+      ]
+    },
+    {
+      "id": "en-t-15-02",
+      "exam_title": "Paragraphs 4–6",
+      "kind": "reading",
+      "statements": [
+        "Quinary sector boundaries are described as consistently tracked as a separate category by all national statistical agencies.",
+        "The 2018 study's divergence pattern is described as a mere artefact of US-specific statistical conventions.",
+        "Manufacturing value added grew in 33 of the 38 economies where employment share had declined.",
+        "The Sub-Saharan African employment-GDP gap is attributed mainly to inherent, unchangeable limitations of agriculture itself.",
+        "Underinvestment in technology and infrastructure is cited as a contributing factor to low agricultural output per worker."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Quinary sector boundaries are described as consistently tracked as a separate category by all national statistical agencies.**\n\nParagraph 4 says boundaries \"remain genuinely contested and are applied inconsistently,\" with some agencies folding quinary activities \"directly back into broader tertiary or quaternary categories.\" \"Consistently…by all\" invents uniformity the text denies.\n\n**Trap:** \"All…consistently\" overstates what contested, inconsistent practice allows.\n\nThe claim fails because agencies do not track quinary as one neat separate category.",
+        "**B) The 2018 study's divergence pattern is described as a mere artefact of US-specific statistical conventions.**\n\nParagraph 5 opens by saying the US employment–output divergence \"is by no means unique to it, nor is it merely an artefact of one country's particular statistical conventions,\" then cites the 42-economy study. Calling the pattern a US-only artefact reverses that framing.\n\nThe passage explicitly rejects the artefact reading, so the statement is false.",
+        "**C) Manufacturing value added grew in 33 of the 38 economies where employment share had declined.**\n\nParagraph 5 reports employment share declining in 38 economies, while \"manufacturing value added…nonetheless grew in 33 of those same 38 economies.\" The statement repeats that nested count accurately.\n\nThe 33-of-38 figure matches the study summary, so the claim is true.",
+        "**D) The Sub-Saharan African employment-GDP gap is attributed mainly to inherent, unchangeable limitations of agriculture itself.**\n\nParagraph 6 attributes the gap to lower output per worker from \"persistent underinvestment in agricultural technology, infrastructure, and access to capital rather than any inherent limitation of the sector itself.\" \"Inherent, unchangeable\" is exactly what the text rules out.\n\n**Trap:** The word \"inherent\" appears — but only inside a rejection.\n\nThe statement flips the attribution, so it fails.",
+        "**E) Underinvestment in technology and infrastructure is cited as a contributing factor to low agricultural output per worker.**\n\nSame paragraph links low primary-sector output per worker to \"persistent underinvestment in agricultural technology, infrastructure, and access to capital.\" Technology and infrastructure underinvestment are named contributing causes.\n\nThat causal detail matches Paragraph 6, so the claim holds."
+      ],
+      "highlights": [
+        "fold quinary activities directly back into broader tertiary or quaternary categories",
+        "by no means unique to it, nor is it merely an artefact of one country's particular statistical conventions",
+        "manufacturing value added, calculated in real terms adjusted for inflation, nonetheless grew in 33 of those same 38 economies",
+        "rather than any inherent limitation of the sector itself",
+        "persistent underinvestment in agricultural technology, infrastructure, and access to capital"
+      ]
+    },
+    {
+      "id": "en-t-15-03",
+      "exam_title": "Paragraphs 7–9",
+      "kind": "reading",
+      "statements": [
+        "\"Premature deindustrialization\" describes manufacturing employment peaking at higher per-capita income levels than historical precedent.",
+        "Rodrik's concern involves countries potentially foreclosing a historically decisive developmental pathway.",
+        "Servitization is described as clarifying, rather than blurring, the three-sector model's category boundaries.",
+        "The passage's closing question presents the sector framework's continued analytical usefulness as fully resolved.",
+        "A single firm's revenue can now straddle categories the model assumes remain distinct."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Premature deindustrialization\" describes manufacturing employment peaking at higher per-capita income levels than historical precedent.**\n\nParagraph 7 defines the pattern as peaks that occur \"at considerably lower levels of per-capita income than occurred historically.\" \"Higher\" reverses the income comparison that gives the concept its name.\n\n**Trap:** One flipped comparative (higher/lower) flips the whole label.\n\nThe statement fails because the passage says lower, not higher, income levels.",
+        "**B) Rodrik's concern involves countries potentially foreclosing a historically decisive developmental pathway.**\n\nParagraph 7 ends with worry that some countries may move to services before manufacturing gains are realised, \"potentially foreclosing a developmental pathway that proved historically decisive elsewhere.\" The statement mirrors that pathway-foreclosure concern.\n\nRodrik's stated worry matches the claim, so it is true.",
+        "**C) Servitization is described as clarifying, rather than blurring, the three-sector model's category boundaries.**\n\nParagraph 8 says bundled services \"progressively blurs the boundary the three-sector model treats as clean and self-evident.\" Clarifying is the opposite verb; the text is about muddying categories.\n\n**Trap:** Synonym swap — \"clarifying\" vs \"blurs.\"\n\nBecause the passage stresses blurring, the clarifying claim is false.",
+        "**D) The passage's closing question presents the sector framework's continued analytical usefulness as fully resolved.**\n\nParagraph 9 leaves open whether the framework still usefully captures change or needs revision — \"remains an actively debated question.\" \"Fully resolved\" invents closure the closing paragraph refuses.\n\nAn actively debated question is not settled, so the statement fails.",
+        "**E) A single firm's revenue can now straddle categories the model assumes remain distinct.**\n\nParagraph 8 notes that \"a single firm's revenue may now straddle categories the framework implicitly assumes remain analytically distinct.\" The statement is a near-verbatim restatement of that classificatory problem.\n\nThe servitization span confirms the claim, so it holds."
+      ],
+      "highlights": [
+        "decline at considerably lower levels of per-capita income than occurred historically in earlier-industrialising nations",
+        "potentially foreclosing a developmental pathway that proved historically decisive elsewhere",
+        "This practice progressively blurs the boundary the three-sector model treats as clean and self-evident",
+        "remains an actively debated question among economists studying long-run structural transformation",
+        "a single firm's revenue may now straddle categories the framework implicitly assumes remain analytically distinct"
+      ]
+    },
+    {
+      "id": "en-t-15-04",
+      "exam_title": "Disguised Inference Traps",
+      "kind": "reading",
+      "statements": [
+        "It would be inaccurate to conclude that South Korea's rapid transformation implies every developing economy transforms at an identical pace.",
+        "Since output tripled while employment fell, it would be a mistake to assume automation played no meaningful role in that divergence.",
+        "Given the Sub-Saharan employment-GDP gap, it does not follow that agricultural workers are inherently, permanently less capable than workers elsewhere.",
+        "Because premature deindustrialization occurs at lower income levels, it cannot be concluded that affected countries have already captured manufacturing's full developmental benefits.",
+        "Since servitization complicates classification for some firms, it must be concluded the three-sector model has become entirely obsolete for every economy."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) It would be inaccurate to conclude that South Korea's rapid transformation implies every developing economy transforms at an identical pace.**\n\nParagraph 1 presents Korea as a sharp illustration of compressed change — one telling example, not a universal timetable. Inferring identical pace for every developing economy overreaches what an illustration can prove, so calling that inference inaccurate is fair.\n\n**Tip:** \"One country illustrated X\" never licenses \"every country does X identically.\"\n\nThe cautious double-negative tracks the passage's limited claim, so the statement is true.",
+        "**B) Since output tripled while employment fell, it would be a mistake to assume automation played no meaningful role in that divergence.**\n\nParagraph 2 attributes the US employment–output split \"mainly to rising labour productivity through automation.\" Denying any automation role would contradict that main cause, so it is indeed a mistake to assume automation played none.\n\nRejecting a zero-automation reading fits the text, so the claim holds.",
+        "**C) Given the Sub-Saharan employment-GDP gap, it does not follow that agricultural workers are inherently, permanently less capable than workers elsewhere.**\n\nParagraph 6 ties the gap to underinvestment and lower output per worker, \"rather than any inherent limitation of the sector itself\" — capability of workers is never blamed. The cautious \"does not follow\" correctly blocks that unsupported leap.\n\nThe inference restraint matches the passage's attribution, so the statement is true.",
+        "**D) Because premature deindustrialization occurs at lower income levels, it cannot be concluded that affected countries have already captured manufacturing's full developmental benefits.**\n\nParagraph 7 worries countries may shift to services before productivity, wage, and employment gains \"have been fully realised.\" If benefits may still be unrealised, you cannot conclude they are already fully captured.\n\nRodrik's unrealised-benefits concern supports this cautious reading, so the claim is true.",
+        "**E) Since servitization complicates classification for some firms, it must be concluded the three-sector model has become entirely obsolete for every economy.**\n\nParagraph 8 shows servitization blurs boundaries for firms that bundle services; Paragraph 9 still treats the framework's usefulness as an open debate. Jumping from \"complicates some classifications\" to \"entirely obsolete for every economy\" is an unsupported, absolute leap.\n\n**Trap:** Local classificatory blur ≠ global obsolescence mandate.\n\nThe forced \"must…entirely…every\" overgeneralises, so the statement fails."
+      ],
+      "highlights": [
+        "South Korea illustrates this trajectory sharply",
+        "a divergence economists attribute mainly to rising labour productivity through automation",
+        "rather than any inherent limitation of the sector itself",
+        "before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised",
+        "This practice progressively blurs the boundary the three-sector model treats as clean and self-evident"
+      ]
+    },
+    {
+      "id": "en-t-15-05",
+      "exam_title": "Disguised Cross-Section Synthesis",
+      "kind": "reading",
+      "statements": [
+        "The productivity-based explanations for US manufacturing decline and Sub-Saharan agriculture's employment-GDP gap both invoke differences in output per worker, despite describing opposite directions of sectoral imbalance.",
+        "Because quaternary and quinary proposals both subdivide the tertiary category, it would be inconsistent to simultaneously claim their boundaries are internationally standardised.",
+        "Premature deindustrialization and servitization together are presented as implying manufacturing's developmental relevance is now considered obsolete.",
+        "The 2018 study's automation-driven explanation reinforces, rather than contradicts, the earlier USspecific pattern described.",
+        "Servitization's classificatory difficulty is presented as having directly resolved the ongoing debate over adopting quaternary and quinary categories."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The productivity-based explanations for US manufacturing decline and Sub-Saharan agriculture's employment-GDP gap both invoke differences in output per worker, despite describing opposite directions of sectoral imbalance.**\n\nParagraph 2 links falling factory jobs to rising labour productivity; Paragraph 6 links the employment–GDP gap to \"considerably lower output per worker\" in agriculture. Both explanations turn on per-worker output differences, even though one imbalance is manufacturing shed and the other is oversized primary employment with thin GDP share.\n\nCross-section productivity logic supports the synthesis, so the claim is true.",
+        "**B) Because quaternary and quinary proposals both subdivide the tertiary category, it would be inconsistent to simultaneously claim their boundaries are internationally standardised.**\n\nParagraph 3 proposes quaternary as a finer cut of services; Paragraph 4 adds quinary but stresses boundaries that are \"genuinely contested\" and \"applied inconsistently\" across agencies. Claiming international standardisation would clash with that contested practice, so calling the joint claim inconsistent is fair.\n\nContest and inconsistency undercut standardisation, so the statement holds.",
+        "**C) Premature deindustrialization and servitization together are presented as implying manufacturing's developmental relevance is now considered obsolete.**\n\nParagraph 7 treats manufacturing-driven gains as a pathway worth worrying about losing; Paragraph 8 only blurs classificatory boundaries via servitization. Neither strand says manufacturing's developmental relevance is obsolete — Rodrik's worry assumes the opposite.\n\n**Trap:** Blurred labels and early peaks ≠ declared obsolescence of manufacturing's role.\n\nThe obsolescence synthesis is invented, so the claim fails.",
+        "**D) The 2018 study's automation-driven explanation reinforces, rather than contradicts, the earlier USspecific pattern described.**\n\nParagraph 2 attributes the US divergence mainly to automation-driven productivity; Paragraph 5's 42-economy study is read as \"further corroborating evidence favouring automation-driven productivity gains.\" Same mechanism, broader sample — reinforcement, not contradiction.\n\nThe study is framed as corroboration of the US-type pattern, so the claim is true.",
+        "**E) Servitization's classificatory difficulty is presented as having directly resolved the ongoing debate over adopting quaternary and quinary categories.**\n\nServitization (Paragraph 8) complicates three-sector lines; quaternary/quinary debates (Paragraphs 3–4) and the open framework question (Paragraph 9) stay unsettled. The text never says servitization resolved those category debates.\n\nNo resolving link appears in the passage, so the statement is false."
+      ],
+      "highlights": [
+        "rising labour productivity through automation",
+        "Its boundaries remain genuinely contested and are applied inconsistently across national statistical agencies",
+        "potentially foreclosing a developmental pathway that proved historically decisive elsewhere",
+        "further corroborating evidence favouring automation-driven productivity gains",
+        "remains an actively debated question among economists studying long-run structural transformation"
+      ]
+    },
+    {
+      "id": "en-t-15-06",
+      "exam_title": "Grammar Rules I",
+      "kind": "grammar",
+      "statements": [
+        "\"Had automation not advanced so rapidly, manufacturing employment might have declined considerably less sharply.\"",
+        "\"The committee recommended that the agency reassesses its sector classifications annually.\"",
+        "\"The number of countries adopting quaternary categories continue to expand steadily.\"",
+        "\"Neither the methodology nor the underlying boundaries were fully standardised across agencies.\"",
+        "\"Having reclassified several firms, the statistical agency subsequently revised its historical data.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Had automation not advanced so rapidly, manufacturing employment might have declined considerably less sharply.\"**\n\nThis is inverted third-conditional form: Had + past participle in the if-clause, with a modal perfect/conditional result. \"Might have declined\" correctly marks the unreal past consequence of a different automation path.\n\n**Tip:** Fronted Had + past participle = if + past perfect without writing \"if.\"\n\nThe conditional pattern is well formed, so the sentence stands.",
+        "**B) \"The committee recommended that the agency reassesses its sector classifications annually.\"**\n\nAfter recommend + that, English wants the mandative subjunctive: base form reassess, not present indicative reassesses. The third-person -s breaks the pattern.\n\n**Trap:** Everyday present tense sneaks in after recommend/insist/require + that.\n\nThe wording fails; the sound line is \"The committee recommended that the agency reassess its sector classifications annually.\"",
+        "**C) \"The number of countries adopting quaternary categories continue to expand steadily.\"**\n\nThe head noun is number (singular), so the verb must be continues, not plural continue. \"Of countries…\" is a prepositional phrase and does not control agreement.\n\n**Trap:** The plural noun nearest the verb is a classic distractor after \"the number of.\"\n\nAgreement breaks, so this doesn't hold — \"The number of countries adopting quaternary categories continues to expand steadily.\"",
+        "**D) \"Neither the methodology nor the underlying boundaries were fully standardised across agencies.\"**\n\nWith neither…nor, the verb agrees with the nearer subject. Here that subject is plural boundaries, so were is correct.\n\nProximity agreement with boundaries makes the line sound, so the sentence stands.",
+        "**E) \"Having reclassified several firms, the statistical agency subsequently revised its historical data.\"**\n\nThe participle Having reclassified attaches to the statistical agency — the same actor that then revised the data — so there is no dangling modifier.\n\nThe agent of both actions is clear, so the wording holds."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-15-07",
+      "exam_title": "Grammar Rules II",
+      "kind": "grammar",
+      "statements": [
+        "\"No sooner had the classification changed than analysts began revising their entire models.\"",
+        "\"The framework, along with several proposed subcategories, were debated extensively.\"",
+        "\"Each of the surveyed economies have shown a broadly similar structural pattern.\"",
+        "\"By the time the dataset is finalised, several classifications will have already changed.\"",
+        "\"The figures, which were compiled across several decades, indicate a remarkably consistent shift.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"No sooner had the classification changed than analysts began revising their entire models.\"**\n\nNo sooner…than takes inversion in the first clause (had + subject + past participle) and than — not when — for the follow-up. Both pieces are in place here.\n\n**Tip:** Remember the paired frame: No sooner had… than…\n\nThe inversion correlative is correctly built, so the sentence stands.",
+        "**B) \"The framework, along with several proposed subcategories, were debated extensively.\"**\n\nAlong with… is parenthetical; the true subject is singular framework, which needs was debated, not were. The plural noun inside the aside should not steal agreement.\n\n**Trap:** Material after along with / as well as / together with is not a compound subject.\n\nThe line fails — \"The framework, along with several proposed subcategories, was debated extensively.\"",
+        "**C) \"Each of the surveyed economies have shown a broadly similar structural pattern.\"**\n\nEach of takes a singular verb: has shown, not have. Economies is the object of of and does not license a plural verb.\n\n**Trap:** The plural after of is the usual agreement bait after each / every / either.\n\nNumber agreement breaks, so this doesn't hold — \"Each of the surveyed economies has shown a broadly similar structural pattern.\"",
+        "**D) \"By the time the dataset is finalised, several classifications will have already changed.\"**\n\nBy the time + present marks a future reference point; will have changed (future perfect) correctly places the classifications' change as complete before that point.\n\nThe future-perfect timing fits the by-phrase, so the sentence is sound.",
+        "**E) \"The figures, which were compiled across several decades, indicate a remarkably consistent shift.\"**\n\nPlural figures correctly takes were in the relative clause and indicate in the main clause; the non-restrictive which-clause sits cleanly between commas.\n\nSubject–verb number and relative-clause form both work, so the wording stands."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-15-08",
+      "exam_title": "Vocabulary Precision",
+      "kind": "vocabulary",
+      "statements": [
+        "In Paragraph 6, \"inverts\" means mirrors or replicates exactly, without reversing direction.",
+        "In Paragraph 8, \"foreclosing\" means opening up or actively creating a new opportunity.",
+        "In Paragraph 3, \"codified\" means formally organised and systematically documented.",
+        "In Paragraph 2, \"conflates\" means carefully distinguishes between two separate things.",
+        "In Paragraph 5, \"corroborating\" means providing supporting confirmation for a claim."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) In Paragraph 6, \"inverts\" means mirrors or replicates exactly, without reversing direction.**\n\nParagraph 6 says developing economies show an imbalance \"that inverts rather than mirrors the pattern observed in wealthier nations.\" Inverts is set against mirrors — it means reverses direction, not copies exactly.\n\n**Trap:** Treating invert as a fancy synonym of mirror ignores the \"rather than.\"\n\nThe claimed meaning is the opposite of the passage contrast, so the statement fails.",
+        "**B) In Paragraph 8, \"foreclosing\" means opening up or actively creating a new opportunity.**\n\nIn Paragraph 7 the text warns of \"potentially foreclosing a developmental pathway\" — shutting off or blocking that route, not opening a new one. \"Opening up\" reverses the verb's force (and the word is not even in Paragraph 8).\n\nForeclosing is blocking, not creating opportunity, so the meaning claim is false.",
+        "**C) In Paragraph 3, \"codified\" means formally organised and systematically documented.**\n\nParagraph 3 contrasts quaternary work's \"specialised, codified knowledge\" with routine service delivery needing little formal expertise. Codified here means knowledge organised into systematic, documentable form — matching the given gloss.\n\nThe passage sense fits the stated meaning, so the claim holds.",
+        "**D) In Paragraph 2, \"conflates\" means carefully distinguishes between two separate things.**\n\nParagraph 2 criticises commentary that \"conflates falling factory employment with a supposedly hollowed-out industrial base\" — merging two different ideas into one muddle. That is the opposite of carefully distinguishing them.\n\n**Trap:** Conflate ≈ confuse/merge; distinguish ≈ keep apart.\n\nThe gloss flips the verb, so the statement fails.",
+        "**E) In Paragraph 5, \"corroborating\" means providing supporting confirmation for a claim.**\n\nParagraph 5 calls the multi-country pattern \"further corroborating evidence favouring automation-driven productivity gains\" — evidence that backs the automation reading. Supporting confirmation is exactly that role.\n\nThe passage use matches the gloss, so the claim is true."
+      ],
+      "highlights": [
+        "inverts rather than mirrors the pattern observed in wealthier nations",
+        "potentially foreclosing a developmental pathway",
+        "specialised, codified knowledge rather than repeated, standardised service delivery",
+        "conflates falling factory employment with a supposedly hollowed-out industrial base",
+        "further corroborating evidence favouring automation-driven productivity gains"
+      ]
+    },
+    {
+      "id": "en-t-15-09",
+      "exam_title": "Vocabulary Precision II",
+      "kind": "vocabulary",
+      "statements": [
+        "In Paragraph 1, \"compression\" (of structural transformation) means the process took noticeably longer than usual.",
+        "In Paragraph 4, \"contested\" means widely agreed upon without any dispute.",
+        "In Paragraph 7, \"foreclosing\" (a pathway) means permanently ruling out or preventing it.",
+        "In Paragraph 9, \"conceptual\" means relating to abstract ideas or frameworks, not physical objects.",
+        "In Paragraph 2, \"hollowed-out\" implies a robust, thriving industrial base still fully intact."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) In Paragraph 1, \"compression\" (of structural transformation) means the process took noticeably longer than usual.**\n\nParagraph 1 praises Korea's \"compression of structural transformation\" versus European paths that took \"well over a century.\" Compression shortens the timeline; \"noticeably longer\" reverses that sense.\n\n**Trap:** Compression ≠ elongation — the European comparison already signals speed-up.\n\nThe claimed meaning contradicts the compression contrast, so it fails.",
+        "**B) In Paragraph 4, \"contested\" means widely agreed upon without any dispute.**\n\nParagraph 4 says quinary boundaries \"remain genuinely contested\" and are applied inconsistently. Contested means disputed, not \"widely agreed upon without any dispute.\"\n\nThe gloss is the opposite of the paragraph, so the statement is false.",
+        "**C) In Paragraph 7, \"foreclosing\" (a pathway) means permanently ruling out or preventing it.**\n\nRodrik's worry about \"potentially foreclosing a developmental pathway\" is about shutting that route off before manufacturing benefits arrive. Ruling out / preventing matches that use.\n\nThe passage sense fits the gloss, so the claim holds.",
+        "**D) In Paragraph 9, \"conceptual\" means relating to abstract ideas or frameworks, not physical objects.**\n\nParagraph 9 asks whether the sector model needs \"fundamental conceptual revision\" to stay analytically meaningful — revision of ideas and frameworks, not of physical machinery. The abstract-framework gloss is right.\n\nThe word's passage use supports the stated meaning, so the claim is true.",
+        "**E) In Paragraph 2, \"hollowed-out\" implies a robust, thriving industrial base still fully intact.**\n\nParagraph 2 mentions popular commentary that links job loss with \"a supposedly hollowed-out industrial base\" — a depleted, emptied-out image, not a robust base still intact. The gloss flips the implication.\n\nHollowed-out signals weakness, not thriving intactness, so the statement fails."
+      ],
+      "highlights": [
+        "a compression of structural transformation that took many earlier-industrialising European economies well over a century to accomplish",
+        "Its boundaries remain genuinely contested and are applied inconsistently",
+        "potentially foreclosing a developmental pathway that proved historically decisive elsewhere",
+        "fundamental conceptual revision to remain analytically meaningful",
+        "conflates falling factory employment with a supposedly hollowed-out industrial base"
+      ]
+    },
+    {
+      "id": "en-t-15-10",
+      "exam_title": "Sneaky Paraphrase Detection",
+      "kind": "vocabulary",
+      "statements": [
+        "This raises real worry that some countries could shift to services before manufacturing has generated its full range of economic benefits.",
+        "This confirms that all developing countries deliberately bypass manufacturing entirely before building any service sector.",
+        "This raises concern that manufacturing's productivity, wage, and employment gains might arrive only after a premature shift toward services.",
+        "This shows manufacturing-driven benefits are always fully achieved before any service-sector growth ever begins.",
+        "This raises concern that some countries transition toward services only once manufacturing's benefits are already fully secured."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) This raises real worry that some countries could shift to services before manufacturing has generated its full range of economic benefits.**\n\nThe original warns of concern that countries \"may transition toward services before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised.\" \"Real worry,\" \"could shift,\" and \"full range of economic benefits\" keep the caution and the before-gains sequence.\n\nThe paraphrase preserves meaning and tone, so it holds.",
+        "**B) This confirms that all developing countries deliberately bypass manufacturing entirely before building any service sector.**\n\nThe original uses may / some / concern — not confirms, all, deliberately, or entirely. Those absolute and intentional words invent certainty and strategy the passage never asserts.\n\n**Trap:** Soft modality (may, some) must not harden into confirms / all / deliberately.\n\nThe paraphrase overstates and invents intent, so it fails.",
+        "**C) This raises concern that manufacturing's productivity, wage, and employment gains might arrive only after a premature shift toward services.**\n\n\"Might arrive only after\" restates the same before/after risk: services first, manufacturing-driven gains still unrealised. Productivity, wage, and employment map onto the original triad.\n\nThe sequencing and content stay faithful, so the claim is true.",
+        "**D) This shows manufacturing-driven benefits are always fully achieved before any service-sector growth ever begins.**\n\nThe original fears the opposite order — services before benefits are realised — and never guarantees benefits are \"always fully achieved\" first. \"Shows…always…ever\" reverses and absolutises the concern.\n\nThe paraphrase flips the timeline into a false guarantee, so it fails.",
+        "**E) This raises concern that some countries transition toward services only once manufacturing's benefits are already fully secured.**\n\n\"Only once…already fully secured\" places services after benefits are locked in; the original places the transition before those benefits are fully realised. The sequence is reversed.\n\n**Trap:** \"Before\" vs \"only once…secured\" is a clean chronology flip.\n\nBecause the paraphrase inverts the timing, the statement is false."
+      ],
+      "highlights": [
+        "before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised",
+        "before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised",
+        "before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised",
+        "before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised",
+        "before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised"
+      ]
+    }
+  ]
+}

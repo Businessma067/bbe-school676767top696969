@@ -1,0 +1,337 @@
+{
+  "subsection_id": "t.4",
+  "title": "Reshoring, Nearshoring, and the Post-Pandemic Reordering of Global Supply Chains",
+  "passage": "(1) The COVID-19 pandemic, which disrupted global commerce beginning in early 2020, exposed a structural vulnerability that had been building quietly for decades: many multinational manufacturers had organised their supply chains around globally dispersed, single-source suppliers operating under justin-time inventory models that minimised stockpiles in favour of efficiency. When factory closures, port congestion, and shipping bottlenecks struck simultaneously across multiple regions, this efficiency-first approach produced severe shortages of goods ranging from semiconductors to basic medical equipment, prompting a widespread reassessment of how, and where, production should take place.\n\n(2) A 2023 survey of manufacturing executives found that 62% reported having reshored or nearshored at least part of their production within the previous three years, a sharp rise from just 24% who reported the same in a comparable survey conducted in 2019. This shift has been widely interpreted as evidence of a broader retreat from the hyper-globalised production networks that characterised the preceding several decades.\n\n(3) Nearshoring, in particular, has disproportionately benefited Mexico as a destination for US manufacturers seeking geographic proximity without the full cost of domestic production. Foreign direct investment from US manufacturing firms into Mexico rose by roughly $35 billion between 2020 and 2023, an increase of approximately 45% over that period, driven partly by lower transportation costs and reduced exposure to transpacific shipping disruptions.\n\n(4) Economically, this shift has been made more feasible by a narrowing cost differential: the labour cost ratio between US and Chinese manufacturing fell from roughly 8:1 in 2010 to about 4:1 by 2023, driven by rising wages in China and by increased automation, which has steadily reduced the share of total production costs attributable to labour in domestic US facilities.\n\n(5) However, critics caution against taking announced reshoring intentions at face value. A separate survey tracking companies that publicly announced reshoring plans between 2020 and 2022 found that only 15% had actually completed the announced shift within their originally stated timeframe, with the remainder experiencing average delays of roughly 18 months beyond their initial targets, often due to permitting delays, skilled-labour shortages, and unexpected construction costs.\n\n(6) A further complication is that much of what is publicly labelled \"reshoring\" more accurately reflects diversification toward allied or trusted third countries, a practice sometimes termed \"friend-shoring,\" rather than a genuine return of production to the home country. Vietnam's share of US apparel imports, for instance, rose from roughly 13% in 2015 to nearly 20% by 2023, reflecting a rerouting of supply chains away from China rather than a repatriation of manufacturing to the United States itself.\n\n(7) Government policy has actively accelerated these shifts. The United States' CHIPS Act, passed in 2022, allocated $52 billion in subsidies to expand domestic semiconductor manufacturing capacity, while the European Union's own Chips Act set a target of doubling the EU's share of global semiconductor production from approximately 10% to 20% by 2030.\n\n(8) These shifts are not without cost. Reshored production has been estimated, on average, to cost between 20% and 25% more per unit than the offshored equivalent it replaces, reflecting higher domestic labour and compliance costs. Analysts estimate that only a modest fraction of this gap, roughly 3% to 5%, is ultimately passed on to consumers through higher retail prices for affected product categories, with the remainder typically absorbed through reduced profit margins or offset by automation-driven productivity gains.\n\n(9) Whether this reordering represents a durable, structural reversal of decades-long globalisation trends, or merely a temporary reaction to a specific and unusually severe shock, remains a matter of active debate among economists. The continued rise of manufacturing hubs such as Vietnam and India suggests that global production networks may be being rerouted and diversified rather than straightforwardly reversed.",
+  "tasks": [
+    {
+      "id": "en-t-4-01",
+      "exam_title": "Paragraphs 1–3",
+      "kind": "reading",
+      "statements": [
+        "The just-in-time inventory model is described as having been newly invented in response to the pandemic's disruptions.",
+        "The pandemic is described as having exposed, rather than created, a vulnerability that had already been building for decades.",
+        "The 2023 survey found that 62% of executives reported reshoring/nearshoring activity, up from a 24% baseline reported in a comparable 2019 survey.",
+        "Mexico's appeal as a nearshoring destination is attributed in the passage to matching US wage levels rather than to geographic proximity and cost savings.",
+        "The passage attributes the entire FDI increase into Mexico solely to reduced exposure to transpacific shipping disruptions, excluding any other named cause."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The just-in-time inventory model is described as having been newly invented in response to the pandemic's disruptions.**\n\nParagraph 1 places just-in-time models in the past tense of long-standing practice: firms \"had organised\" supply chains around single-source suppliers using those models \"for decades.\" The pandemic is the shock that made the existing model fail, not the moment inventing it.\n\n**Trap:** A crisis that reveals a practice can feel like it created the practice — chronology here runs the other way.\n\nThe claim invents a post-pandemic origin the text never gives, so it fails against the decades-old framing.",
+        "**B) The pandemic is described as having exposed, rather than created, a vulnerability that had already been building for decades.**\n\nThe opening sentence of Paragraph 1 says the pandemic \"exposed a structural vulnerability that had been building quietly for decades.\" \"Exposed\" is the key verb: the weakness pre-existed; COVID made it visible.\n\nThat wording matches the claim exactly, so the statement tracks the passage.",
+        "**C) The 2023 survey found that 62% of executives reported reshoring/nearshoring activity, up from a 24% baseline reported in a comparable 2019 survey.**\n\nParagraph 2 pairs the figures and years without mixing them: 62% in the 2023 survey versus 24% in a comparable 2019 survey, for reshoring or nearshoring at least part of production.\n\n**Tip:** Keep the year stuck to its percentage — swapping 62% onto 2019 is a common trap.\n\nBoth percentages and both years line up with the text, so the claim holds.",
+        "**D) Mexico's appeal as a nearshoring destination is attributed in the passage to matching US wage levels rather than to geographic proximity and cost savings.**\n\nParagraph 3 credits Mexico with \"geographic proximity without the full cost of domestic production,\" and ties FDI growth to lower transport costs and less transpacific disruption exposure. Wage parity with the US is never offered as the reason.\n\nThe statement swaps in an invented wage-match motive, so it fails.",
+        "**E) The passage attributes the entire FDI increase into Mexico solely to reduced exposure to transpacific shipping disruptions, excluding any other named cause.**\n\nParagraph 3 says the rise was \"driven partly by lower transportation costs and reduced exposure to transpacific shipping disruptions.\" Two causes are named, and \"partly\" already blocks an exclusive single-cause reading.\n\n**Trap:** \"Solely\" / \"entirely\" items collapse a two-factor list into one.\n\nThe exclusivity claim contradicts the dual driver in the text, so the statement is false."
+      ],
+      "highlights": [
+        "had organised their supply chains around globally dispersed, single-source suppliers operating under justin-time inventory models",
+        "exposed a structural vulnerability that had been building quietly for decades",
+        "62% reported having reshored or nearshored at least part of their production within the previous three years, a sharp rise from just 24%",
+        "seeking geographic proximity without the full cost of domestic production",
+        "driven partly by lower transportation costs and reduced exposure to transpacific shipping disruptions"
+      ]
+    },
+    {
+      "id": "en-t-4-02",
+      "exam_title": "Paragraphs 4–6",
+      "kind": "reading",
+      "statements": [
+        "The narrowing US-China labour cost ratio is attributed to a combination of rising Chinese wages and increased automation, not to automation alone.",
+        "The labour cost ratio narrowed from roughly 8:1 in 2010 to about 4:1 by 2023, a reduction of half the original gap.",
+        "A firm publicly announcing reshoring plans is treated in the passage as functionally equivalent to a firm that has already completed that shift.",
+        "The typical delay firms experienced beyond their original reshoring timeline is attributed mainly to falling demand for their products.",
+        "The passage treats \"friend-shoring\" as a more precise label for what is often loosely called \"reshoring,\" rather than as an identical process."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The narrowing US-China labour cost ratio is attributed to a combination of rising Chinese wages and increased automation, not to automation alone.**\n\nParagraph 4 names both drivers in one phrase: the ratio fell \"driven by rising wages in China and by increased automation.\" Automation is necessary but not sole.\n\nThe joint attribution matches the claim, so the statement is true.",
+        "**B) The labour cost ratio narrowed from roughly 8:1 in 2010 to about 4:1 by 2023, a reduction of half the original gap.**\n\nThe same paragraph gives \"roughly 8:1 in 2010\" and \"about 4:1 by 2023.\" Halving an 8:1 gap yields 4:1, so the arithmetic paraphrase is faithful.\n\nThe figures and the half-gap reading both fit the passage, so the claim stands.",
+        "**C) A firm publicly announcing reshoring plans is treated in the passage as functionally equivalent to a firm that has already completed that shift.**\n\nParagraph 5 separates announcement from completion: of companies that \"publicly announced reshoring plans,\" \"only 15% had actually completed the announced shift\" on the original timeline. Announcement and completion are precisely not treated as the same.\n\n**Trap:** Public intent language often masquerades as done facts in exam items.\n\nThe equivalence claim erases that gap, so it fails.",
+        "**D) The typical delay firms experienced beyond their original reshoring timeline is attributed mainly to falling demand for their products.**\n\nDelays are pinned to \"permitting delays, skilled-labour shortages, and unexpected construction costs.\" Falling demand never appears.\n\nThe statement invents a demand cause the text does not name, so it is false.",
+        "**E) The passage treats \"friend-shoring\" as a more precise label for what is often loosely called \"reshoring,\" rather than as an identical process.**\n\nParagraph 6 says much of what is \"publicly labelled 'reshoring'\" \"more accurately reflects\" moves to allied or trusted third countries, \"sometimes termed 'friend-shoring.'\" The passage corrects the label; it does not collapse the two into one process.\n\nThat precision frame matches the claim, so the statement holds."
+      ],
+      "highlights": [
+        "driven by rising wages in China and by increased automation",
+        "fell from roughly 8:1 in 2010 to about 4:1 by 2023",
+        "only 15% had actually completed the announced shift within their originally stated timeframe",
+        "often due to permitting delays, skilled-labour shortages, and unexpected construction costs",
+        "publicly labelled \"reshoring\" more accurately reflects diversification toward allied or trusted third countries, a practice sometimes termed \"friend-shoring,\""
+      ]
+    },
+    {
+      "id": "en-t-4-03",
+      "exam_title": "Paragraphs 7–9",
+      "kind": "reading",
+      "statements": [
+        "The EU's Chips Act is described as targeting a doubling of the EU's own global semiconductor production share, not an absolute doubling of total global output.",
+        "The EU's Chips Act aims to raise the EU's share of global semiconductor production from approximately 20% to 40% by 2030.",
+        "Higher domestic labour and compliance costs are cited as the reason reshored production costs more per unit than its offshored equivalent.",
+        "The gap between reshored and offshored production costs is described as being absorbed primarily through higher consumer prices.",
+        "The continued growth of manufacturing hubs like Vietnam and India is presented as evidence against a simple, one-directional reversal of globalisation."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The EU's Chips Act is described as targeting a doubling of the EU's own global semiconductor production share, not an absolute doubling of total global output.**\n\nParagraph 7 aims at \"doubling the EU's share of global semiconductor production\" — a relative slice of the world total, not a doubling of all chips made worldwide.\n\nShare versus absolute output is the distinction the claim gets right, so it matches the text.",
+        "**B) The EU's Chips Act aims to raise the EU's share of global semiconductor production from approximately 20% to 40% by 2030.**\n\nThe passage doubles \"from approximately 10% to 20% by 2030.\" The statement doubles the wrong baseline (20%→40%).\n\n**Trap:** Same \"doubling\" story, swapped percentages.\n\nThe wrong start and end percentages overturn the claim.",
+        "**C) Higher domestic labour and compliance costs are cited as the reason reshored production costs more per unit than its offshored equivalent.**\n\nParagraph 8 estimates reshored units cost 20–25% more, \"reflecting higher domestic labour and compliance costs.\" That is exactly the reason named.\n\nThe cost drivers line up with the statement, so it is true.",
+        "**D) The gap between reshored and offshored production costs is described as being absorbed primarily through higher consumer prices.**\n\nOnly \"roughly 3% to 5%\" of the gap is passed to consumers; \"the remainder\" is absorbed via thinner margins or automation gains — so consumers are explicitly not the main sponge.\n\nThe \"primarily through higher consumer prices\" reading reverses the text, so the claim fails.",
+        "**E) The continued growth of manufacturing hubs like Vietnam and India is presented as evidence against a simple, one-directional reversal of globalisation.**\n\nParagraph 9 says those hubs' rise suggests networks \"may be being rerouted and diversified rather than straightforwardly reversed.\" Growth elsewhere is offered as a counter to a clean reverse-globalisation story.\n\nThat use of the hubs matches the claim, so the statement stands."
+      ],
+      "highlights": [
+        "doubling the EU's share of global semiconductor production from approximately 10% to 20% by 2030",
+        "from approximately 10% to 20% by 2030",
+        "reflecting higher domestic labour and compliance costs",
+        "only a modest fraction of this gap, roughly 3% to 5%, is ultimately passed on to consumers",
+        "may be being rerouted and diversified rather than straightforwardly reversed"
+      ]
+    },
+    {
+      "id": "en-t-4-04",
+      "exam_title": "Disguised Inference Traps (Paragraph Order)",
+      "kind": "reading",
+      "statements": [
+        "Since automation is named as one factor narrowing the labour cost ratio, it can be concluded that automation alone fully explains the shift.",
+        "The labour cost ratio's narrowing from 8:1 to 4:1 is, by simple arithmetic, a reduction of exactly half the original gap.",
+        "A firm reporting it has \"reshored part of its production\" is not automatically the same, by the passage's own logic, as a firm that has completed a full transition.",
+        "Because nearshoring benefited Mexico, the passage implies Mexican labour costs converged with those in the United States.",
+        "Since reshored production costs more per unit, the passage implies that reduced profit margins are the only way firms can absorb that extra cost."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Since automation is named as one factor narrowing the labour cost ratio, it can be concluded that automation alone fully explains the shift.**\n\nParagraph 4 lists automation beside rising Chinese wages. Naming \"one factor\" never licences wiping out the other.\n\n**Trap:** \"Since X is mentioned…\" leaps to \"X is the whole cause.\"\n\nThe sole-cause leap overreaches the joint drivers, so the inference fails.",
+        "**B) The labour cost ratio's narrowing from 8:1 to 4:1 is, by simple arithmetic, a reduction of exactly half the original gap.**\n\nThe stated path from \"roughly 8:1\" to \"about 4:1\" is arithmetically a halving of the original gap; the claim stays inside that inference.\n\nThe arithmetic follows the passage figures, so the statement is true.",
+        "**C) A firm reporting it has \"reshored part of its production\" is not automatically the same, by the passage's own logic, as a firm that has completed a full transition.**\n\nSurvey language of reshoring \"at least part\" of production (Paragraph 2) and the sharp drop from announced plans to completed shifts (Paragraph 5) both warn against equating partial or announced moves with a finished full transition.\n\nThe caution matches the claim, so it holds.",
+        "**D) Because nearshoring benefited Mexico, the passage implies Mexican labour costs converged with those in the United States.**\n\nMexico's benefit is tied to proximity and cost savings versus full US domestic production — not to Mexican wages meeting US wages. Wage-ratio language elsewhere concerns US–China, not Mexico–US.\n\nThe wage-convergence implication is unsupported, so the statement fails.",
+        "**E) Since reshored production costs more per unit, the passage implies that reduced profit margins are the only way firms can absorb that extra cost.**\n\nParagraph 8 lists remaining absorption via \"reduced profit margins or offset by automation-driven productivity gains\" — two paths, not one exclusive door.\n\n**Trap:** \"Only way\" collapses an or-list.\n\nThe exclusivity twist contradicts the dual offset, so the inference is false."
+      ],
+      "highlights": [
+        "driven by rising wages in China and by increased automation",
+        "fell from roughly 8:1 in 2010 to about 4:1 by 2023",
+        "only 15% had actually completed the announced shift within their originally stated timeframe",
+        "seeking geographic proximity without the full cost of domestic production",
+        "absorbed through reduced profit margins or offset by automation-driven productivity gains"
+      ]
+    },
+    {
+      "id": "en-t-4-05",
+      "exam_title": "Disguised Cross-Paragraph Synthesis (Paragraph Order)",
+      "kind": "reading",
+      "statements": [
+        "The gap between high reported reshoring intentions and low actual completion rates suggests some firms discuss reshoring more readily than they execute it.",
+        "The average delay of roughly 18 months beyond original targets is consistent with the passage's broader caution against taking announced reshoring intentions at face value.",
+        "Because friend-shoring is distinguished from genuine reshoring, and because Vietnam's import share grew, it follows that Vietnam itself has become a genuine reshoring destination for US manufacturers.",
+        "The narrowing labour cost ratio helps explain why reshoring has become more feasible, even though the passage still treats reshored production as costlier overall.",
+        "Because the passage raises genuine uncertainty about whether this shift is durable, it can be concluded that the statistical trends presented earlier must therefore be considered unreliable."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) The gap between high reported reshoring intentions and low actual completion rates suggests some firms discuss reshoring more readily than they execute it.**\n\nParagraph 5 cautions against taking announced intentions \"at face value\" and shows only 15% finishing on the stated timeline. That gap between talk and finished relocation supports reading announcements as easier than execution.\n\nThe synthesis stays inside the passage's own caution, so the claim is true.",
+        "**B) The average delay of roughly 18 months beyond original targets is consistent with the passage's broader caution against taking announced reshoring intentions at face value.**\n\nThe same paragraph pairs the face-value warning with \"average delays of roughly 18 months beyond their initial targets.\" The delay is concrete evidence for that caution, not a rival story.\n\nThe numeric detail reinforces the warning, so the statement holds.",
+        "**C) Because friend-shoring is distinguished from genuine reshoring, and because Vietnam's import share grew, it follows that Vietnam itself has become a genuine reshoring destination for US manufacturers.**\n\nVietnam's rising share illustrates \"a rerouting… away from China rather than a repatriation of manufacturing to the United States itself.\" Friend-shoring is third-country diversification; calling Vietnam \"genuine reshoring\" flips that distinction.\n\n**Trap:** Rising third-country hubs ≠ home-country return.\n\nThe conclusion mislabels Vietnam as reshoring, so it fails.",
+        "**D) The narrowing labour cost ratio helps explain why reshoring has become more feasible, even though the passage still treats reshored production as costlier overall.**\n\nParagraph 4 presents the narrowed ratio as making the shift \"more feasible,\" while Paragraph 8 still prices reshored units 20–25% above the offshored equivalent. Feasible-er and still costlier can both be true.\n\nThe two claims coexist in the text, so the synthesis stands.",
+        "**E) Because the passage raises genuine uncertainty about whether this shift is durable, it can be concluded that the statistical trends presented earlier must therefore be considered unreliable.**\n\nParagraph 9 debates durability — structural reversal versus temporary shock — without questioning whether the earlier survey percentages or FDI figures are accurate. Uncertain future is not the same as unreliable past data.\n\nThe leap from debate-about-future to \"statistics are unreliable\" invents a charge the text never makes, so the claim fails."
+      ],
+      "highlights": [
+        "critics caution against taking announced reshoring intentions at face value",
+        "average delays of roughly 18 months beyond their initial targets",
+        "rather than a repatriation of manufacturing to the United States itself",
+        "cost between 20% and 25% more per unit than the offshored equivalent",
+        "remains a matter of active debate among economists"
+      ]
+    },
+    {
+      "id": "en-t-4-06",
+      "exam_title": "Grammar Rules (New Sentences, Anchored in Text Vocabulary)",
+      "kind": "grammar",
+      "statements": [
+        "\"Had firms not diversified their supplier base earlier, the disruption would have proven even more severe.\"",
+        "\"The board recommended that the company reassesses its exposure to single-source suppliers.\"",
+        "\"The number of manufacturers reconsidering their sourcing strategy continue to grow.\"",
+        "\"Neither the subsidy nor the tax credits were enough to fully offset the higher labour costs.\"",
+        "\"Having relocated part of its production, the firm reduced its exposure to shipping disruptions.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Had firms not diversified their supplier base earlier, the disruption would have proven even more severe.\"**\n\nThis is a well-formed third conditional with inverted protasis: \"Had firms not diversified…\" stands for \"If firms had not diversified…,\" and the main clause correctly uses \"would have proven.\" No auxiliary is missing, and the time sequence (earlier diversification → past disruption counterfactual) is coherent.\n\nThe inverted conditional is formed correctly, so the sentence is sound.",
+        "**B) \"The board recommended that the company reassesses its exposure to single-source suppliers.\"**\n\nAfter \"recommended that,\" English prefers the subjunctive (or mandative) base form: \"reassess,\" not indicative \"reassesses.\" The plural-looking third-person -s marks the wrong mood.\n\n**Trap:** Normal present-tense agreement after recommend/suggest + that.\n\nRepair to \"…that the company reassess…,\" so the line as written fails.",
+        "**C) \"The number of manufacturers reconsidering their sourcing strategy continue to grow.\"**\n\nThe grammatical subject is singular \"The number,\" so the verb must be \"continues,\" not plural \"continue.\" What follows \"of\" does not control agreement.\n\nSubject–verb agreement collapses here; the sound version is \"…continues to grow,\" so the sentence fails.",
+        "**D) \"Neither the subsidy nor the tax credits were enough to fully offset the higher labour costs.\"**\n\nWith \"neither…nor,\" the verb commonly agrees with the nearer noun. Here \"tax credits\" is plural, so \"were\" is the expected choice.\n\nProximity agreement is applied correctly, so the wording stands.",
+        "**E) \"Having relocated part of its production, the firm reduced its exposure to shipping disruptions.\"**\n\nThe participial opener \"Having relocated…\" attaches to \"the firm,\" which is logically the relocator — no dangling modifier. Perfect participle plus past main clause is a clean sequence.\n\nThe participle and subject line up, so the sentence is true."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-4-07",
+      "exam_title": "Grammar Rules II (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"No sooner had the factory reopened than orders began to resume.\"",
+        "\"The subsidy, along with several tax incentives, were introduced to accelerate the transition.\"",
+        "\"Each of the surveyed manufacturers have reported some disruption to their supply chain.\"",
+        "\"By the time the program concludes, several new facilities will have already opened.\"",
+        "\"The data, which were gathered across multiple sectors, point to a broadly consistent pattern.\""
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"No sooner had the factory reopened than orders began to resume.\"**\n\n\"No sooner…than\" correctly triggers inversion (\"had the factory reopened\") and pairs past perfect with a following simple past (\"began\"). The correlative \"than\" (not \"when\") is the right partner.\n\nThe correlative inversion pattern is intact, so the sentence holds.",
+        "**B) \"The subsidy, along with several tax incentives, were introduced to accelerate the transition.\"**\n\n\"Along with several tax incentives\" is a parenthetical add-on; the head subject remains singular \"The subsidy,\" which needs \"was introduced,\" not \"were.\"\n\n**Trap:** The nearest plural noun after the comma steals agreement.\n\nRepair to \"…was introduced…,\" so the written verb fails.",
+        "**C) \"Each of the surveyed manufacturers have reported some disruption to their supply chain.\"**\n\n\"Each of\" takes a singular verb even when a plural noun follows: \"has reported,\" not \"have reported.\"\n\nAgreement is wrong for \"each\"; the sentence does not stand.",
+        "**D) \"By the time the program concludes, several new facilities will have already opened.\"**\n\n\"By the time\" plus a future reference point calls for future perfect to mark completion before that point: \"will have…opened\" is the right shape, with \"already\" naturally sitting inside it.\n\nThe future-perfect framing fits the deadline, so the wording is true.",
+        "**E) \"The data, which were gathered across multiple sectors, point to a broadly consistent pattern.\"**\n\nHere \"data\" is treated as plural throughout: \"were gathered\" and plural \"point\" agree with that choice. The relative clause and main verb stay consistent.\n\nPlural treatment of \"data\" is applied cleanly, so the sentence stands."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-4-08",
+      "exam_title": "Grammar Rules III (New Sentences)",
+      "kind": "grammar",
+      "statements": [
+        "\"Despite of the higher costs involved, several firms proceeded with relocation plans.\"",
+        "\"Whoever oversees the transition should account for delays typically involved in construction.\"",
+        "\"The firm denied having deliberately overstated its reshoring progress.\"",
+        "\"There is several reasons why completion rates remained so low.\"",
+        "\"The initiative, which was funded over several years, aims to expand domestic capacity.\""
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Despite of the higher costs involved, several firms proceeded with relocation plans.\"**\n\n\"Despite\" never takes \"of\"; the paired idiom is \"in spite of.\" Written \"Despite of\" is a fusion error.\n\n**Trap:** Cross-contamination from \"in spite of.\"\n\nRepair to \"Despite the higher costs…\" or \"In spite of the higher costs…,\" so the line fails.",
+        "**B) \"Whoever oversees the transition should account for delays typically involved in construction.\"**\n\n\"Whoever\" correctly heads the subject clause; \"oversees\" agrees with that indefinite singular subject, and \"should account\" is a natural predicate for the whole clause.\n\nThe free-relative subject is formed properly, so the sentence is sound.",
+        "**C) \"The firm denied having deliberately overstated its reshoring progress.\"**\n\nAfter \"denied,\" the perfect gerund \"having…overstated\" correctly marks a prior alleged act. Adverb placement (\"deliberately\") inside the gerund is natural.\n\nThe verb pattern matches the meaning, so the wording holds.",
+        "**D) \"There is several reasons why completion rates remained so low.\"**\n\nExistential \"there\" agreement tracks the notional noun: plural \"reasons\" needs \"There are,\" not \"There is.\"\n\n**Trap:** Habitual \"there's\" in speech before plural nouns.\n\nRepair to \"There are several reasons…,\" so the sentence fails.",
+        "**E) \"The initiative, which was funded over several years, aims to expand domestic capacity.\"**\n\nSingular \"initiative\" takes singular verbs in both the relative clause (\"was funded\") and the main clause (\"aims\"). The non-restrictive clause is well attached.\n\nAgreement stays consistent, so the sentence is true."
+      ],
+      "highlights": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "en-t-4-09",
+      "exam_title": "Vocabulary & Collocation in New Context",
+      "kind": "vocabulary",
+      "statements": [
+        "\"The strategy aimed to strengthen resilience by concentrating production in a single overseas facility.\"",
+        "\"The narrowing cost gap made relocation more economically viable for several manufacturers.\"",
+        "\"Government funding was allocated to expand domestic production capacity in strategic sectors.\"",
+        "\"The firm's diversification strategy left it wholly dependent on a single foreign supplier.\"",
+        "\"Automation helped offset rising domestic costs by improving overall productivity.\""
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"The strategy aimed to strengthen resilience by concentrating production in a single overseas facility.\"**\n\nIn this bank's supply-chain sense, resilience is built by reducing single-source exposure, not by concentrating everything in one overseas plant. The sentence uses \"resilience\" with the opposite strategy.\n\n**Trap:** Putting all eggs in one \"efficient\" basket looks decisive but is the vulnerability the passage describes.\n\nThe collocation reverses the established meaning, so the wording fails.",
+        "**B) \"The narrowing cost gap made relocation more economically viable for several manufacturers.\"**\n\n\"Narrowing cost gap\" plus \"more economically viable\" tracks the passage logic that a smaller labour-cost differential makes relocation more feasible. The adjectives and nouns match ordinary usage.\n\nThe meaning lines up with the established sense, so the sentence stands.",
+        "**C) \"Government funding was allocated to expand domestic production capacity in strategic sectors.\"**\n\n\"Allocated…to expand…capacity\" is the same natural funding collocation used for the CHIPS / Chips Acts. Nothing is twisted.\n\nThe wording matches standard use, so it is true.",
+        "**D) \"The firm's diversification strategy left it wholly dependent on a single foreign supplier.\"**\n\nDiversification means spreading exposure across sources; \"wholly dependent on a single foreign supplier\" is concentration, the opposite outcome. The sentence forces contradictory poles into one strategy label.\n\nThat clash of meanings overturns the claim.",
+        "**E) \"Automation helped offset rising domestic costs by improving overall productivity.\"**\n\n\"Offset…by improving…productivity\" is a standard collocation and matches how the passage describes automation absorbing part of the reshoring cost gap.\n\nThe usage is natural and text-aligned, so the sentence holds."
+      ],
+      "highlights": [
+        "single-source suppliers operating under justin-time inventory models that minimised stockpiles in favour of efficiency",
+        "this shift has been made more feasible by a narrowing cost differential",
+        "allocated $52 billion in subsidies to expand domestic semiconductor manufacturing capacity",
+        "diversification toward allied or trusted third countries",
+        "offset by automation-driven productivity gains"
+      ]
+    },
+    {
+      "id": "en-t-4-10",
+      "exam_title": "Vocabulary & Collocation II (New Context)",
+      "kind": "vocabulary",
+      "statements": [
+        "\"Friend-shoring refers to relocating production entirely back to one's own home country.\"",
+        "\"The company's exposure to single-source risk was reduced after diversifying its supplier base.\"",
+        "\"The subsidy was described as sufficient to fully eliminate the cost gap between relocated and offshored production.\"",
+        "\"Reshored production is generally described in the passage as costlier per unit than its offshored equivalent.\"",
+        "\"The trend's long-term durability is treated in the passage as a matter of active, unresolved debate.\""
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Friend-shoring refers to relocating production entirely back to one's own home country.\"**\n\nIn the passage, friend-shoring is diversification toward allied or trusted third countries, expressly contrasted with a \"genuine return of production to the home country.\" Home-country return is reshoring proper, not friend-shoring.\n\n**Trap:** Any \"-shoring\" word can be misread as \"bring it all home.\"\n\nThe definition swaps friend-shoring for genuine reshoring, so the claim fails.",
+        "**B) \"The company's exposure to single-source risk was reduced after diversifying its supplier base.\"**\n\nDiversifying the supplier base and reducing single-source exposure are the paired meaning the passage builds from Paragraph 1's vulnerability. The causal link is ordinary and correct.\n\nThe wording matches established usage, so the sentence is true.",
+        "**C) \"The subsidy was described as sufficient to fully eliminate the cost gap between relocated and offshored production.\"**\n\nThe text never says subsidies wipe out the gap; reshored production still costs \"20% and 25% more per unit,\" with only a modest consumer share and margins/automation covering the rest. \"Fully eliminate\" invents a claim.\n\nThat absolute wipeout overstates what subsidies do in the passage, so the statement fails.",
+        "**D) \"Reshored production is generally described in the passage as costlier per unit than its offshored equivalent.\"**\n\nParagraph 8 states reshored production costs \"between 20% and 25% more per unit than the offshored equivalent.\" \"Costlier per unit\" is a faithful paraphrase.\n\nThe cost comparison matches the text, so the claim holds.",
+        "**E) \"The trend's long-term durability is treated in the passage as a matter of active, unresolved debate.\"**\n\nThe close of Paragraph 9 says whether the reordering is durable or temporary \"remains a matter of active debate among economists.\" \"Unresolved debate\" tracks that framing.\n\nThe sentence mirrors the passage conclusion, so it stands."
+      ],
+      "highlights": [
+        "diversification toward allied or trusted third countries, a practice sometimes termed \"friend-shoring,\"",
+        "globally dispersed, single-source suppliers",
+        "cost between 20% and 25% more per unit than the offshored equivalent",
+        "cost between 20% and 25% more per unit than the offshored equivalent",
+        "remains a matter of active debate among economists"
+      ]
+    }
+  ]
+}

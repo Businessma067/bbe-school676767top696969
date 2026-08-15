@@ -1,0 +1,151 @@
+[ENGLISH_IN_$] 11.1/t4/steps: $2,420.00). | Gap = 23.14% - 21.00% = 2.14 percentage points, which is indeed more than 2.00 percentage points. | At a 1.50% monthly rate: R = $
+[ENGLISH_IN_$] 11.1/t6/steps: $ = 2: t = ln 2 / ln 1.006 ≈ 0.693147/0.0059821 ≈ 115.85 months ≈ 9.65 years (not 108 months). | 115.85 months is the correct doubling time, not 58 months (which is not even close to
+[ENGLISH_IN_$] 11.1/t8/given: $ (monthly) | • Time $
+[ENGLISH_IN_$] 11.1/t18/steps: $45,000, not more. | A higher rate (5.0%) grows money faster, so a SMALLER amount invested 9 years ago would reach \$
+[ENGLISH_IN_$] 11.1/t19/given: $ (monthly) | • CD2: $
+[ENGLISH_IN_$] 11.1/t19/steps: $ - 1 ≈ 1.065540 - 1 = 0.065540 ≈ 6.55%, essentially tied with CD2 (difference under 0.01 points). | CD1 has the lowest nominal rate (6.30%) and the lowest EAR (6.49%) of the three. | 
+[ENGLISH_IN_$] 11.1/t20/context: $15,000 today and wants to know which of two accounts reaches \$
+[ENGLISH_IN_$] 11.1/t20/given: $ (monthly) | • Account Q: $
+[ENGLISH_IN_$] 11.2/t1/explanations/0: $, r = 0.05, and t = 1 into $
+[ENGLISH_IN_$] 11.2/t1/explanations/2: $10.00, and in any case it would still fall short of the continuous-compounding balance of \$
+[ENGLISH_IN_$] 11.2/t2/explanations/4: $8,357.43, and comparing this to double the 6-year balance (\$
+[ENGLISH_IN_$] 11.2/t4/context: $1 grows over one year, under yearly, semi-annual, and continuous compounding, applied to a \$
+[ENGLISH_IN_$] 11.2/t6/context: $60,000 and depreciates continuously at an annual rate of 10% with δ = 0.10, so that its value after t years follows $
+[ENGLISH_IN_$] 11.2/t7/given: $ |  | • Nominal annual rate r = 5.5% = 0.055 (and 11% for part c) |  | • Compounding: continuous |  | • Target: $
+[ENGLISH_IN_$] 11.2/t8/given: $ |  | • Annual depreciation rate δ = 18% = 0.18 (and 9% for part d) |  | • Compounding: continuous |  | • Target: v(t) = 0.40 $
+[ENGLISH_IN_$] 11.2/t8/given: $ (and 0.20 $
+[ENGLISH_IN_$] 11.2/t10/steps: $. Fund B (monthly): periodic rate = 0.095/12 = 0.0079167. $
+[UNPAIRED] 11.2/t11/explanations/0: Dividing both sides of $S(3) = S_0 e^{3r}$ by $S_0$ and taking natural logs gives \$3r = \ln(34{,}200/28{,}000)$, so $r = \ln(1.221429)/3 \approx 6.67\%$, matching the statement exactly.
+[ENGLISH_IN_$] 11.2/t11/explanations/0: $ and taking natural logs gives \$
+[ENGLISH_IN_$] 11.2/t14/context: $50,000 and growing continuously at a nominal annual rate of 4%; and Asset B, aging factory equipment currently worth \$
+[ENGLISH_IN_$] 11.2/t14/statements/0: $ and solving for t gives $
+[ENGLISH_IN_$] 11.2/t14/explanations/0: $ and taking natural logs of the resulting equation B0/A0 = $
+[ENGLISH_IN_$] 11.2/t14/explanations/1: $ and taking natural logs of the resulting equation $
+[ENGLISH_IN_$] 11.2/t15/statements/1: $42,874.36, and the monthly-compounding value is approximately \$
+[ENGLISH_IN_$] 11.2/t15/explanations/1: $42,874.36 and monthly gives \$
+[ENGLISH_IN_$] 11.2/t15/explanations/1: $42,800.00 and the continuous value of \$
+[ENGLISH_IN_$] 11.2/t15/explanations/4: $ as n → ∞, and the sequence is strictly increasing in n, the continuous-compounding value $
+[ENGLISH_IN_$] 11.2/t17/explanations/4: $, and ordinary multiplication is commutative, the combined exponent $
+[ENGLISH_IN_$] 11.2/t18/explanations/0: $ and taking natural logs of $
+[UNPAIRED] 11.2/t19/explanations/2: t = ln(4)/0.065 ≈ 21.33 years, and because \$4 = 2^{2}$ means $\ln(4) = 2\ln(2)$, the quadrupling time is exactly twice the doubling time - reaching four times the principal is mathematically the same as doubling the investment twice in a r
+[ENGLISH_IN_$] 11.2/t20/explanations/2: $ and then C(5) = C(3) × $
+[ENGLISH_IN_$] 11.3/t1/statements/3: $8{,}000 future bonus and its present value is approximately \$
+[ENGLISH_IN_$] 11.3/t1/explanations/3: $8{,}000 owed in the future and its value today is simply the future amount minus the present value: 8,000 - 7,619.05 = \$
+[ENGLISH_IN_$] 11.3/t1/explanations/3: $423.81 in the statement does not match this difference and overstates the true discount by roughly \$
+[ENGLISH_IN_$] 11.3/t2/context: $12{,}000 milestone payment from a client in 3 years upon final project sign-off. The client's finance department discounts all deferred payables continuously, at a rate of 6% per 
+[ENGLISH_IN_$] 11.3/t3/context: $45{,}000 in escrowed proceeds from a property sale in 8 years, once a title dispute is resolved. The applicable interest rate is 7% per year. The landlord's accountant computes th
+[ENGLISH_IN_$] 11.3/t3/explanations/0: $ ≈ 1.718186, and taking the reciprocal of that (since the exponent is negative) yields a discount factor of approximately 0.5820, matching the definition of $
+[ENGLISH_IN_$] 11.3/t3/explanations/2: $ ≈ 0.5712, and multiplying by the \$
+[ENGLISH_IN_$] 11.3/t3/explanations/4: $ and the continuous formula $
+[ENGLISH_IN_$] 11.3/t3/explanations/4: $ reduce to simply K, so both compounding methods agree and give a present value equal to the full \$
+[ENGLISH_IN_$] 11.3/t4/context: $150{,}000 available in 5 years to purchase new imaging equipment. Its bank offers a continuous annual interest rate of 4.5% on a dedicated savings account, and the practice wants 
+[ENGLISH_IN_$] 11.3/t5/context: $25{,}000 at maturity, and the market interest rate for notes of this kind is 6% per year, compounded annually. The investor wants to work backward from the price to find the impli
+[ENGLISH_IN_$] 11.3/t7/context: $40{,}000 in 2 years and \$
+[ENGLISH_IN_$] 11.3/t7/context: $ and $
+[UNPAIRED] 11.3/t7/explanations/0: Discounting the \$40{,}000 payment back 2 years at 5% annual compounding, \$40{,}000/(1.05)^{2}$, gives approximately \$36{,}281.18 as today's equivalent value.
+[UNPAIRED] 11.3/t7/explanations/1: Discounting the \$65{,}000 payment back 5 years at the same 5% rate, \$65{,}000/(1.05)^{5}$, gives approximately \$50{,}930.87.
+[UNPAIRED] 11.3/t8/explanations/0: Discounting the \$25{,}500 payment back 3 years at a 6% annual rate, \$25{,}500/(1.06)^{3}$, gives approximately \$21{,}410.30 as its present value.
+[ENGLISH_IN_$] 11.3/t10/context: $18{,}000 due in 4 years and \$
+[ENGLISH_IN_$] 11.3/t10/context: $ and $
+[ENGLISH_IN_$] 11.3/t11/context: $50{,}000 payment due to a beneficiary in 7 years using a continuous discount rate of 5% per year. The manager wants to quote an equivalent nominal annual rate, compounded annually
+[ENGLISH_IN_$] 11.3/t11/formulas: $ and cancelling K and t shows $
+[ENGLISH_IN_$] 11.3/t12/context: $42{,}000 due in 3 years. It is negotiating a second receivable due in 6 years and must determine the face amount that receivable needs to carry. The discount rate is 6% per year, 
+[ENGLISH_IN_$] 11.3/t12/context: $ is known and $
+[UNPAIRED] 11.3/t12/explanations/0: Discounting the existing \$42{,}000 receivable back 3 years at 6% annual compounding, \$42{,}000/(1.06)^{3}$, gives approximately \$35{,}264.01 as its present value today.
+[ENGLISH_IN_$] 11.3/t12/explanations/1: $100{,}000 and the first receivable already supplies about \$
+[ENGLISH_IN_$] 11.3/t13/explanations/3: $50{,}166.53, clearly different from (and larger than) the 6.5% figure of \$
+[UNPAIRED] 11.3/t14/explanations/1: Evaluating P(t) at t = 0 gives $P(0) = \$40${,}000e^{0} = \$40{,}000$ exactly, which is simply the wine's value today before any further aging or discounting is applied.
+[ENGLISH_IN_$] 11.3/t15/context: $, and $
+[ENGLISH_IN_$] 11.3/t16/context: $ dollars. The continuous interest rate is 9% per year. Management wants the optimal harvest time, confirmation that it is indeed a present-value maximum, and the sensitivity of th
+[ENGLISH_IN_$] 11.3/t17/context: $40{,}000 in 7 months from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $
+[ENGLISH_IN_$] 11.3/t17/context: $ and $
+[ENGLISH_IN_$] 11.3/t17/explanations/0: $ gives approximately 0.759572, and applying that discount factor to \$
+[ENGLISH_IN_$] 11.3/t18/context: $3{,}200{,}000 payout in 4.5 years if a specific FDA milestone is met, with value discounted continuously. The investors' analyst wants to determine the implied continuous discount
+[ENGLISH_IN_$] 11.3/t18/explanations/2: $2{,}000{,}000 price implies the investors are accepting less discounting relative to the payout, which corresponds to a lower discount factor and therefore a higher implied rate. 
+[ENGLISH_IN_$] 11.3/t19/context: $ for positive constants A and k, discounted continuously at rate r. For one particular stand, $
+[ENGLISH_IN_$] 11.3/t20/context: $30{,}000 in exactly 5 years and \$
+[ENGLISH_IN_$] 11.4/t1/context: $50 million in revenue this year and expects revenue to grow by 10% annually for each of the next four years, forming a finite geometric series with first term a = \$
+[ENGLISH_IN_$] 11.4/t1/explanations/2: $. Plugging in a=50 and k=1.10 gives $
+[ENGLISH_IN_$] 11.4/t1/explanations/3: $250.00 million - that part checks out. But the true gap between that flat total and the actual growth total of \$
+[ENGLISH_IN_$] 11.4/t2/explanations/1: $ + ···, works out to a/(1-k). Substituting a=2,000 and k=0.5 gives 2,000/0.5 = \$
+[ENGLISH_IN_$] 11.4/t3/context: $800, and each following year's deposit is 90% of the previous year's deposit, continuing indefinitely. This is an infinite geometric series with a = \$
+[ENGLISH_IN_$] 11.4/t3/explanations/1: $800 and k=0.90, that gives 800/(1-0.90) = 800/0.10 = \$
+[ENGLISH_IN_$] 11.4/t6/context: $4,000, and each subsequent adjustment reverses sign and is half the size of the previous one, continuing indefinitely. This is an infinite geometric series with a = \$
+[ENGLISH_IN_$] 11.4/t6/statements/4: $4,000 and \$
+[ENGLISH_IN_$] 11.4/t7/steps: $65.00 million. The general formula's denominator is (k - 1); at k = 1 this denominator is 0, so the formula is undefined and the k = 1 case must instead use $
+[ENGLISH_IN_$] 11.4/t7/explanations/3: $240.28 million) and the flat total (\$
+[ENGLISH_IN_$] 11.4/t12/explanations/4: $12,500,000.00, and \$
+[ENGLISH_IN_$] 11.4/t13/context: $200,000 this year and grows 12% every year with a = \$
+[ENGLISH_IN_$] 11.4/t13/steps: $3{,}000{,}000 and $
+[ENGLISH_IN_$] 11.4/t14/steps: $625,000.00, and \$
+[ENGLISH_IN_$] 11.4/t14/explanations/4: $625,000.00, and \$
+[ENGLISH_IN_$] 11.4/t16/context: $80,000 and k = 1.06. Territory B starts higher, at \$
+[ENGLISH_IN_$] 11.4/t17/context: $ dollars, and wants to know, for different values of the exponent p, whether the infinite total marginal benefit $
+[ENGLISH_IN_$] 11.4/t17/statements/3: $, and this alone is enough to guarantee that the series $
+[ENGLISH_IN_$] 11.4/t18/context: $150,000 and grows 1% per year with a = \$
+[ENGLISH_IN_$] 11.4/t18/explanations/4: $3,302,850.60 and a cumulative cost of about \$
+[ENGLISH_IN_$] 11.4/t19/context: $2,400,000 and k = 0.94. Under a “recovery” scenario, cash flow instead grows 6% per year for the next 7 years before the fund exits with a = \$
+[ENGLISH_IN_$] 11.4/t20/context: $18,000 and k = 1.07. Tranche 3 is a perpetual royalty starting at \$
+[ENGLISH_IN_$] 11.4/t20/context: $30,000 and k = 0.92. Separately, an analyst proposes valuing a symbolic annual fee stream $
+[ENGLISH_IN_$] 11.4/t20/explanations/2: $215,603.80, and \$
+[ENGLISH_IN_$] 11.4/t20/explanations/3: $375,000.00 of value that is just as real and just as calculable as the other two tranches; the correct combined total, including all three, is \$
+[ENGLISH_IN_$] 11.4/t20/explanations/4: $ is calculated correctly, and it is true that these terms keep shrinking toward zero as n grows. But shrinking toward zero is only a necessary condition for convergence, never a s
+[ENGLISH_IN_$] 11.5/t1/steps: $. At the lower rate of 5%, $
+[ENGLISH_IN_$] 11.5/t1/explanations/3: $ is directly proportional to A for fixed r and n, doubling the target amount exactly doubles the required deposit, from \$
+[ENGLISH_IN_$] 11.5/t2/steps: $2,198.47. At the lower rate of 3%, $
+[ENGLISH_IN_$] 11.5/t4/steps: $35,000.00, so it does not exceed it. At the higher rate of 10%, $
+[ENGLISH_IN_$] 11.5/t5/steps: $51,550.30. The gap between nominal withdrawals and the present value is 36,000.00 - 25,775.15 = \$
+[ENGLISH_IN_$] 11.5/t5/steps: $11,224.85 as stated. At the higher rate of 6%, $
+[ENGLISH_IN_$] 11.5/t6/steps: $ and $
+[ENGLISH_IN_$] 11.5/t7/steps: $1,811.82. At the lower rate of 4%, $
+[ENGLISH_IN_$] 11.5/t9/steps: $42,852.10, not exactly double. For any n and r, this identity $
+[ENGLISH_IN_$] 11.5/t12/given: $4.25 per share (and \$
+[ENGLISH_IN_$] 11.5/t13/steps: $191,666.67, and since \$
+[ENGLISH_IN_$] 11.5/t13/explanations/2: $250,000.00, and adding the \$
+[ENGLISH_IN_$] 11.5/t15/steps: $2.50. At the higher growth rate of 5%, $
+[ENGLISH_IN_$] 11.5/t16/context: $170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level non-growing perpetuity of \$
+[ENGLISH_IN_$] 11.5/t16/given: $14,000, growth g = 4% (and 1% for part d) | • Required return r = 10% = 0.10 | • Asking price (both deals) = \$
+[ENGLISH_IN_$] 11.5/t16/steps: $10,000.00, so Deal 2 offers the bigger cushion, not Deal 1. At the lower growth rate of 1%, $
+[ENGLISH_IN_$] 11.5/t17/steps: $129,213.75, not lower, since continuous compounding is the most efficient schedule and needs less deposited today. The correctly computed gap is 131,495.10 - 129,213.75 = \$
+[ENGLISH_IN_$] 11.5/t19/explanations/0: $16,769.39) and then multiplying by (1.08) to shift each payment one period earlier gives \$
+[ENGLISH_IN_$] 11.5/t19/explanations/1: $24,639.72) and then multiplying by (1.08) gives \$
+[ENGLISH_IN_$] 11.5/t20/statements/3: $5,000 next year and growing at 2% forever at a 7% required return, is exactly \$
+[ENGLISH_IN_$] 11.6/t1/steps: $7,296.77, and \$
+[UNPAIRED] 11.6/t4/steps: Combined factor = \$1 + (1/0.11)[1-(1.11)^{-9}]$ = 1 + 9.090909×(1-0.391110) = 1 + 5.537048 ≈ 6.537048. a = 150,000/6.537048 ≈ \$22,946.14. Ordinary-annuity payment: $a_{\mathrm{ordinary}} = 0.11\times150{,}000/[1-(1.11)^{-10}]$ = 16,500/0.
+[ENGLISH_IN_$] 11.6/t5/context: $35,000 at 13% annual interest and commits to repaying exactly \$
+[ENGLISH_IN_$] 11.6/t7/explanations/1: $1,030.00 as an equivalent single annual deposit and compounding it as an ordinary annuity for 4 years gives approximately \$
+[ENGLISH_IN_$] 11.6/t7/explanations/4: $4,641.30) and the simplified, interest-ignoring balance (≈ \$
+[ENGLISH_IN_$] 11.6/t9/context: $120,000 at 14% annual interest and chooses to repay a fixed \$
+[ENGLISH_IN_$] 11.6/t9/explanations/2: $25,000 by 9 and subtracting \$
+[ENGLISH_IN_$] 11.6/t10/context: $90,000 to buy new equipment, to be repaid in 8 equal annual instalments with the first payment due immediately and the rest due at the beginning of each following year, at an annu
+[ENGLISH_IN_$] 11.6/t10/statements/3: $1,240.50, and the reserve fund's balance after 3 years is approximately \$
+[UNPAIRED] 11.6/t10/steps: Combined factor = \$1 + (1/0.12)[1-(1.12)^{-7}]$ ≈ 1 + 4.563757 = 5.563757; a = 90,000/5.563757 ≈ \$16,176.12. Balance immediately after the first (immediate) payment = \$90,000 - \$16,176.12 = \$73,823.88. Second payment (1 year later): in
+[ENGLISH_IN_$] 11.6/t10/explanations/3: $1,240.50, and compounding that equivalent amount annually as an ordinary annuity for 3 years gives a reserve balance of approximately \$
+[ENGLISH_IN_$] 11.7/t1/formulas: $ and return $
+[ENGLISH_IN_$] 11.7/t1/steps: $ (amount invested) and $
+[ENGLISH_IN_$] 11.7/t1/explanations/4: $ and all subsequent returns are positive, a unique internal rate of return $
+[ENGLISH_IN_$] 11.7/t1/explanations/4: $ and $
+[ENGLISH_IN_$] 11.7/t2/context: $7,000 at the end of Year 1 and \$
+[ENGLISH_IN_$] 11.7/t2/statements/4: $14,000 in Year 1 and \$
+[ENGLISH_IN_$] 11.7/t2/explanations/4: $ and $
+[ENGLISH_IN_$] 11.7/t3/context: $20,000 in inventory and point-of-sale equipment. It expects net returns of \$
+[ENGLISH_IN_$] 11.7/t3/explanations/4: $4,000), and this matches the chapter's stated result that the internal rate of return is positive whenever this sum is positive — consistent with the computed $
+[ENGLISH_IN_$] 11.7/t5/context: $28,000 at the end of Year 2 and \$
+[ENGLISH_IN_$] 11.7/t5/statements/4: $, and $
+[ENGLISH_IN_$] 11.7/t5/explanations/2: $444.83) and r = 15% (-\$
+[ENGLISH_IN_$] 11.7/t5/explanations/4: $ and all of $
+[ENGLISH_IN_$] 11.7/t6/context: $16,000 at the end of Year 1 and \$
+[ENGLISH_IN_$] 11.7/t6/statements/4: $16,000 and \$
+[ENGLISH_IN_$] 11.7/t7/context: $22,000 at the end of Year 1 and \$
+[ENGLISH_IN_$] 11.7/t8/context: $34,000 at the end of Year 1 and \$
+[ENGLISH_IN_$] 11.7/t8/statements/3: $68,000 in Year 1 and \$
+[ENGLISH_IN_$] 11.7/t8/explanations/3: $ and $
+[ENGLISH_IN_$] 11.7/t9/context: $50,000 building a product and is comparing two versions. Option 1, the full version: a steady net return of \$
+[ENGLISH_IN_$] 11.7/t9/context: $6,000 at the end of Year 1 and \$
+[ENGLISH_IN_$] 11.7/t9/statements/4: $ and $
+[ENGLISH_IN_$] 11.7/t9/steps: $ and $
+[ENGLISH_IN_$] 11.7/t9/steps: $, outside the valid range), and the second gives $
+[ENGLISH_IN_$] 11.7/t9/steps: $, valid). So the unique valid internal rate of return for Option 2 is $
+[ENGLISH_IN_$] 11.7/t9/explanations/2: $ and all subsequent $
+[ENGLISH_IN_$] 11.7/t9/explanations/4: $ and $
+[ENGLISH_IN_$] 11.7/t10/context: $ and $
