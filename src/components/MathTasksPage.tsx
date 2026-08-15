@@ -867,7 +867,7 @@ function ChapterProgressRing({
 
 /** Screenshot-style section titles: "Part 1: …" */
 function isSectionHeading(label: string): boolean {
-  return /^(What's going on|Part\s*\d+.*|Model|Solve|Answer|Building the system)(\.|:)?$/i.test(
+  return /^(What's going on|Part\s*\d+.*|Model|Solve|Answer|Building the system|Given|Rule|Work|Results)(\.|:)?$/i.test(
     label.trim(),
   );
 }
@@ -875,7 +875,11 @@ function isSectionHeading(label: string): boolean {
 /** Numbered step titles: "1. Translate…" or bare "1." */
 function isStepLabel(label: string): boolean {
   const t = label.trim();
-  return /^\d+\.\s+\S/.test(t) || /^\d+\.\s*$/.test(t);
+  return (
+    /^\d+\.\s+\S/.test(t) ||
+    /^\d+\.\s*$/.test(t) ||
+    /^Step\s+\d+\./i.test(t)
+  );
 }
 
 function isNoteLabel(label: string): boolean {
@@ -895,7 +899,7 @@ function isDisplayMathPara(trimmed: string): boolean {
 }
 
 function isStepStartPara(trimmed: string): boolean {
-  return /^\*\*\d+\./.test(trimmed);
+  return /^\*\*(?:Step\s+)?\d+\./i.test(trimmed);
 }
 
 function isPartStartPara(trimmed: string): boolean {
@@ -914,7 +918,10 @@ function MathProse({ text, className }: { text: string; className?: string }) {
   // Group: each numbered step keeps its following prose/math until the next step/part/claim.
   type Chunk =
     | { kind: "part"; title: string }
+    | { kind: "sectionLead"; title: string; body: string }
     | { kind: "step"; paras: string[] }
+    | { kind: "reason"; number: string; body: string }
+    | { kind: "conclusion"; body: string }
     | { kind: "note"; body: string }
     | { kind: "claim"; text: string }
     | { kind: "math"; text: string }
@@ -945,6 +952,17 @@ function MathProse({ text, className }: { text: string; className?: string }) {
       continue;
     }
 
+    const sectionLead = p.match(/^\*\*(Given|Rule|Results):\*\*\s*([\s\S]*)$/i);
+    if (sectionLead) {
+      chunks.push({
+        kind: "sectionLead",
+        title: sectionLead[1],
+        body: sectionLead[2],
+      });
+      i += 1;
+      continue;
+    }
+
     const noteLead = p.match(/^\*\*(Note\.?)\*\*\s*([\s\S]*)$/i);
     if (noteLead) {
       chunks.push({ kind: "note", body: noteLead[2] });
@@ -954,6 +972,20 @@ function MathProse({ text, className }: { text: string; className?: string }) {
 
     if (/^\*\*[A-F][.)]/.test(p)) {
       chunks.push({ kind: "claim", text: p });
+      i += 1;
+      continue;
+    }
+
+    const reason = p.match(/^(\d+)\)\s*([\s\S]*)$/);
+    if (reason) {
+      chunks.push({ kind: "reason", number: reason[1], body: reason[2] });
+      i += 1;
+      continue;
+    }
+
+    const conclusion = p.match(/^\*\*Conclusion:\*\*\s*([\s\S]*)$/i);
+    if (conclusion) {
+      chunks.push({ kind: "conclusion", body: conclusion[1] });
       i += 1;
       continue;
     }
@@ -1002,6 +1034,28 @@ function MathProse({ text, className }: { text: string; className?: string }) {
           );
         }
 
+        if (chunk.kind === "sectionLead") {
+          const tone =
+            chunk.title.toLowerCase() === "rule"
+              ? "border-blue-200 bg-blue-50/70"
+              : chunk.title.toLowerCase() === "results"
+                ? "border-emerald-200 bg-emerald-50/70"
+                : "border-stone-200 bg-stone-50";
+          return (
+            <section
+              key={idx}
+              className={cn("mb-5 rounded-xl border px-4 py-3.5", tone)}
+            >
+              <h4 className="mb-1.5 text-[11px] font-extrabold uppercase tracking-[0.16em] text-[#555]">
+                {chunk.title}
+              </h4>
+              <p className="m-0 leading-[1.65]">
+                <RichMathLine text={chunk.body} />
+              </p>
+            </section>
+          );
+        }
+
         if (chunk.kind === "note") {
           return (
             <aside
@@ -1025,6 +1079,47 @@ function MathProse({ text, className }: { text: string; className?: string }) {
           );
         }
 
+        if (chunk.kind === "reason") {
+          const reasonTitle =
+            chunk.number === "1"
+              ? "Read the statement"
+              : chunk.number === "2"
+                ? "Work it out"
+                : "Compare and decide";
+          return (
+            <div
+              key={idx}
+              className="mb-3 grid grid-cols-[1.75rem_minmax(0,1fr)] gap-3 rounded-lg border border-stone-200 bg-white px-3.5 py-3"
+            >
+              <span className="grid h-7 w-7 place-items-center rounded-full bg-[#1f1f1f] text-[12px] font-extrabold text-white">
+                {chunk.number}
+              </span>
+              <div className="min-w-0">
+                <p className="mb-1 text-[12px] font-extrabold uppercase tracking-[0.08em] text-[#555]">
+                  {reasonTitle}
+                </p>
+                <p className="m-0 leading-[1.65]">
+                  <RichMathLine text={chunk.body} />
+                </p>
+              </div>
+            </div>
+          );
+        }
+
+        if (chunk.kind === "conclusion") {
+          return (
+            <div
+              key={idx}
+              className="mb-7 mt-3 border-l-4 border-foreground bg-stone-100 px-4 py-3 font-bold leading-[1.55] text-[#111]"
+            >
+              <span className="mr-1.5 text-[11px] font-extrabold uppercase tracking-[0.12em] text-[#666]">
+                Conclusion
+              </span>
+              <RichMathLine text={chunk.body} />
+            </div>
+          );
+        }
+
         if (chunk.kind === "math") {
           return (
             <div key={idx} className="my-5">
@@ -1044,7 +1139,10 @@ function MathProse({ text, className }: { text: string; className?: string }) {
 
         if (chunk.kind === "step") {
           return (
-            <div key={idx} className="mb-7 mt-6 first:mt-3">
+            <div
+              key={idx}
+              className="mb-4 mt-4 rounded-xl border border-stone-200 bg-white px-4 py-3.5 shadow-sm first:mt-3"
+            >
               {chunk.paras.map((para, j) => {
                 if (isDisplayMathPara(para)) {
                   return (
