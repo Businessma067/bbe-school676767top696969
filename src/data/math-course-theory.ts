@@ -1,6 +1,7 @@
 /**
  * Mathematics Full Course theory for TheoryReader.
  * Chapter 13 (Binomial distribution) is populated; other chapters can be added later.
+ * (sync marker for Lovable GitHub pull)
  */
 
 import ch13 from "./math-theory/ch13.md?raw";
