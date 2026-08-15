@@ -100,8 +100,20 @@ def audit_bank(name: str, path: Path, expected_subs: int, tasks_per_sub: int) ->
             errors.append(
                 f"{name}:{tid}: difficulty {t.get('difficulty_level')} != expected {expected_diff}"
             )
-        if name == "grammar" and not (t.get("solution_overview") or "").strip():
+        if name in {"grammar", "vocabulary"} and not (t.get("solution_overview") or "").strip():
             errors.append(f"{name}:{tid}: missing solution_overview")
+        if name == "vocabulary":
+            for i, (statement, highlight, explanation) in enumerate(
+                zip(
+                    t.get("statements") or [],
+                    t.get("highlights") or [],
+                    t.get("tactical_explanations") or [],
+                )
+            ):
+                if not highlight or highlight not in statement:
+                    errors.append(f"{name}:{tid}:{i + 1}: highlight not in statement")
+                if len(str(explanation)) < 300:
+                    errors.append(f"{name}:{tid}:{i + 1}: explanation shorter than 300 chars")
         if name == "texts":
             passage = (t.get("passage") or "").strip() or passage_by_sub.get(sid or "", "")
             if not passage:
@@ -120,7 +132,7 @@ def audit_bank(name: str, path: Path, expected_subs: int, tasks_per_sub: int) ->
         f"true-dist={dict(sorted(true_counts.items()))} "
         f"stmts unique/total={uniq}/{len(all_stmts)}"
     )
-    if name == "grammar" and all_stmts and uniq < len(all_stmts):
+    if name in {"grammar", "vocabulary"} and all_stmts and uniq < len(all_stmts):
         errors.append(f"{name}: duplicate statements: {len(all_stmts) - uniq}")
     return errors
 

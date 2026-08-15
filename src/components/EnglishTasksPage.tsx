@@ -324,7 +324,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
                                           )}
                                         />
                                         <span className="min-w-0 flex-1 truncate text-[11px] font-bold text-foreground">
-                                          {sub.id} {sub.title}
+                                          {sub.title}
                                         </span>
                                         <ChapterProgressRing
                                           pct={subPct}
@@ -1031,7 +1031,7 @@ function CaseCard({
                 )}
               </div>
 
-              {checked && (
+              {checked && isTexts && (
                 <div className="mt-3 space-y-2">
                   {(data.tactical_explanations[i] ?? "").trim() && (
                     <div className="rounded-md border border-border bg-secondary/40 p-3 text-xs leading-relaxed text-foreground">
@@ -1161,6 +1161,14 @@ function AllExplanationsPanel({
         </button>
       </div>
       <div className="min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
+        {task.solution_overview?.trim() && (
+          <section className="mb-8 border-b border-border/60 pb-7">
+            <p className="mb-3 text-[12px] font-bold uppercase tracking-widest text-foreground">
+              Strategy overview
+            </p>
+            <ExplanationProse text={task.solution_overview} />
+          </section>
+        )}
         <AnswerKeyTable answerKey={task.answer_key} />
         <div className="space-y-8">
           {task.statements.map((stmt, i) => {

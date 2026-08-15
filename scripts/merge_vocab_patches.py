@@ -88,7 +88,10 @@ def main() -> None:
                 elif highlight not in statement:
                     bad_hl += 1
                     print(f"WARN {tid}: highlight not in statement: {highlight!r}")
-                if len(explanation) < 220:
+                expected_header = f"**{'ABCDE'[index]}) {statement}"
+                if not explanation.startswith(expected_header):
+                    raise SystemExit(f"{tid}.{index + 1}: explanation header mismatch")
+                if len(explanation) < 300:
                     short_expl += 1
                     print(f"WARN {tid}.{index}: short explanation ({len(explanation)})")
                 all_statements.append(statement)

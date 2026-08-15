@@ -278,7 +278,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                         )}
                                       />
                                       <span className="min-w-0 flex-1 truncate text-[11px] font-bold text-foreground">
-                                        {sub.id} {sub.title}
+                                        {sub.title}
                                       </span>
                                       <ChapterProgressRing
                                         pct={subPct}

@@ -4,6 +4,21 @@ Vocabulary is a topic bank, not a reading chapter. Statements may draw their
 meaning and examples from `texts.json`, but they must stand on their own without
 opening a passage.
 
+## Level and domain balance
+
+- Target **C1–C2** vocabulary throughout. Do not spend task slots on elementary
+  contrasts such as `lend/borrow`, `accept/except`, `advice/advise`,
+  `affect/effect`, or similarly transparent A2–B1 items.
+- Prefer lexically dense near-misses: fine connotation, register, selectional
+  restrictions, specialist collocation, and less transparent morphology.
+- Exactly 20% of the complete bank should use business or economics settings:
+  all 150 statements in `v.3`, plus six statements in each of `v.1`, `v.2`,
+  `v.4`, `v.5`, and `v.6` (180 of 900 total).
+- The remaining 80% should range across science, history, public policy,
+  environment, technology, medicine, culture, law, and general academic life.
+- A business word used in a scientific or civic example does not make the item
+  business-themed; classify by the situation the complete statement describes.
+
 ## Task contract
 
 - Six subsections (`v.1`–`v.6`), 30 tasks per subsection.
