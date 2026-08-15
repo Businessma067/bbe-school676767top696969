@@ -1342,9 +1342,48 @@ function AllExplanationsPanel({
         </button>
       </div>
       <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
+        <MathAnswerKeyTable answerKey={task.answer_key} />
         <MathProse text={body} />
       </div>
     </div>
+  );
+}
+
+function MathAnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
+  const letters = "ABCDEF";
+
+  return (
+    <section className="mb-8 overflow-x-auto border-b border-border/60 pb-7">
+      <p className="mb-2 text-[12px] font-bold uppercase tracking-widest text-foreground">
+        Answer key
+      </p>
+      <table className="w-full min-w-[16rem] border-collapse border border-foreground/20 text-center text-[14px] shadow-sm">
+        <thead>
+          <tr className="bg-foreground text-background">
+            {answerKey.map((_, i) => (
+              <th
+                key={i}
+                className="border-b border-foreground/20 px-3 py-2.5 text-[12px] font-bold uppercase tracking-wide"
+              >
+                {letters[i] ?? i + 1}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="bg-card">
+            {answerKey.map((isTrue, i) => (
+              <td
+                key={i}
+                className="border-border px-3 py-3 text-[13px] font-bold uppercase tracking-widest text-foreground"
+              >
+                {isTrue ? "TRUE" : "FALSE"}
+              </td>
+            ))}
+          </tr>
+        </tbody>
+      </table>
+    </section>
   );
 }
 
