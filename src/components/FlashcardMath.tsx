@@ -183,6 +183,10 @@ function looksLikeMathInner(inner: string): boolean {
 
   // Equations / comparisons / algebra (escaped currency `\$` is fine inside)
   if (/[=<>≠≤≥+×·\-/^\\()_]/.test(t) && /[A-Za-z0-9]/.test(t)) return true;
+  // Number lists / short rosters: $1,2,3,4,5$ or $5,6,7$ (not currency)
+  if (/^[+\-]?\d+(?:\.\d+)?(?:\s*,\s*[+\-]?\d+(?:\.\d+)?)+$/.test(t)) return true;
+  // Plain set braces without LaTeX commands: ${1,2,3}$ or ${a,b}$
+  if (/^\{[^{}]+\}$/.test(t) && /[A-Za-z0-9]/.test(t)) return true;
   // Bare answers like $360$
   if (/^[+\-]?\d+(?:\.\d+)?$/.test(t)) return true;
   // Bare math identifiers: $p$, $n$, $k$, $X$, $p_A$, $\lambda$

@@ -32,7 +32,7 @@ export const MATH_CH1_LOGIC: MathTask[] = [
  ],
  answer_key: [true, false, true, false, false],
  tactical_explanations: [
-"**A.** → True\n\n$A\\cap B$ asks which of $1,2,3,4,5$ also appear in $B$. Only $3$, $4$, and $5$ do, so\n\n$$A\\cap B=\\{3,4,5\\}.$$\n\nThat is exactly the claimed set, so the statement holds.",
+"**A.** → True\n\n$A\\cap B$ asks which of $\\{1,2,3,4,5\\}$ also appear in $B$. Only $3$, $4$, and $5$ do, so\n\n$$A\\cap B=\\{3,4,5\\}.$$\n\nThat is exactly the claimed set, so the statement holds.",
 "**B.** → False\n\nA union must keep **every** member of $C$, including $9$. The correct list is\n\n$$A\\cup C=\\{1,2,3,4,5,6,7,8,9\\}.$$\n\nThe claim stops at $8$ and drops $9$, so it is wrong.",
 "**C.** → True\n\nWe already have $A\\cap B=\\{3,4,5\\}$. Intersecting with $C$ keeps only the numbers that also sit in $C$, and that is just **$5$**. The claim matches.",
 "**D.** → False\n\nFrom $A=\\{1,2,3,4,5\\}$ we delete only what is also in $C$. The only overlap is $5$, so\n\n$$A\\setminus C=\\{1,2,3,4\\}.$$\n\nThe claim also drops $4$, but $4\\in A$ and $4\\notin C$, so $4$ must stay. **False.**",
@@ -40,7 +40,7 @@ export const MATH_CH1_LOGIC: MathTask[] = [
  ],
  difficulty_level: "1/5",
  sort_order: 1,
-solution_overview: "Start with the three lists:\n\n$$A=\\{1,2,3,4,5\\},\\quad B=\\{3,4,5,6,7\\},\\quad C=\\{5,6,7,8,9\\}.$$\n\n**Intersection** keeps numbers that sit in both sets; **union** keeps anything that sits in at least one; **difference** $X\\setminus Y$ keeps members of $X$ that are missing from $Y$; two sets are **disjoint** only when they share nothing.\n\nScanning $A$ against $B$ leaves $\\{3,4,5\\}$. Of those, only $5$ is also in $C$, so $(A\\cap B)\\cap C=\\{5\\}$. Putting $A$ and $C$ together gives $\\{1,2,3,4,5,6,7,8,9\\}$. From $A$, deleting the one shared with $C$ (namely $5$) leaves $\\{1,2,3,4\\}$. Finally $B$ and $C$ share $5,6,7$, so they are not disjoint."
+solution_overview: "Start with the three lists:\n\n$$A=\\{1,2,3,4,5\\},\\quad B=\\{3,4,5,6,7\\},\\quad C=\\{5,6,7,8,9\\}.$$\n\n**Intersection** keeps numbers that sit in both sets; **union** keeps anything that sits in at least one; **difference** $X\\setminus Y$ keeps members of $X$ that are missing from $Y$; two sets are **disjoint** only when they share nothing.\n\nScanning $A$ against $B$ leaves $\\{3,4,5\\}$. Of those, only $5$ is also in $C$, so $(A\\cap B)\\cap C=\\{5\\}$. Putting $A$ and $C$ together gives $\\{1,2,3,4,5,6,7,8,9\\}$. From $A$, deleting the one shared with $C$ (namely $5$) leaves $\\{1,2,3,4\\}$. Finally $B$ and $C$ share $\\{5,6,7\\}$, so they are not disjoint."
  },
  {
  id: "math-1-2",
@@ -90,7 +90,7 @@ solution_overview: "The set-builder $A=\\{x\\in Z:x^2=9\\}$ means: solve the equ
  ],
  difficulty_level: "1/5",
  sort_order: 3,
-solution_overview: "Here $A=\\{a,b,c\\}$ has three objects. Two different relations matter:\n\n- $x\\in A$ means $x$ is one of those three objects.\n- $S\\subseteq A$ means every object inside $S$ is also one of those three.\n\nThe **power set** $\\mathcal P(A)$ is the set of *all* subsets. Each of the three objects can be kept or left out, so there are $2^3=8$ subsets:\n\n$$\\mathcal P(A)=\\{\\emptyset,\\{a\\},\\{b\\},\\{c\\},\\{a,b\\},\\{a,c\\},\\{b,c\\},A\\}.$$\n\nA **proper** subset must also be unequal to $A$, so $A$ itself is never a proper subset of $A$. The two-element subsets are the three pairs $\\{a,b\\}$, $\\{a,c\\}$, $\\{b,c\\}$."
+solution_overview: "Here $A=\\{a,b,c\\}$ has three objects. Two different relations matter:\n\n• $x\\in A$ means $x$ is one of those three objects.\n\n• $S\\subseteq A$ means every object inside $S$ is also one of those three.\n\nThe **power set** $\\mathcal P(A)$ is the set of *all* subsets. Each of the three objects can be kept or left out, so there are $2^3=8$ subsets:\n\n$$\\mathcal P(A)=\\{\\emptyset,\\{a\\},\\{b\\},\\{c\\},\\{a,b\\},\\{a,c\\},\\{b,c\\},A\\}.$$\n\nA **proper** subset must also be unequal to $A$, so $A$ itself is never a proper subset of $A$. The two-element subsets are the three pairs $\\{a,b\\}$, $\\{a,c\\}$, $\\{b,c\\}$."
  },
  {
  id: "math-1-4",
@@ -140,7 +140,7 @@ solution_overview: "Membership table for $D=\\{a,b,c\\}$:\n\n| Object | Element 
  ],
  difficulty_level: "1/5",
  sort_order: 5,
-solution_overview: "Picture the two lists side by side:\n\n| | in $E$ | not in $E$ |\n| --- | --- | --- |\n| **in $F$** | $3,5$ (overlap) | $4,6$ |\n| **not in $F$** | $1,7$ | — |\n\nSo $E\\setminus F=\\{1,7\\}$ (left column, bottom row) and $F\\setminus E=\\{4,6\\}$ (right column, top row). Their **union** is the two leftover piles together, $\\{1,4,6,7\\}$. Their **intersection** is empty: a number cannot be both “outside $F$” and “inside $F$” at once. In particular the two differences are different sets."
+solution_overview: "Picture the two lists side by side:\n\n| | in $E$ | not in $E$ |\n| --- | --- | --- |\n| **in $F$** | $\\{3,5\\}$ (overlap) | $\\{4,6\\}$ |\n| **not in $F$** | $\\{1,7\\}$ | — |\n\nSo $E\\setminus F=\\{1,7\\}$ (left column, bottom row) and $F\\setminus E=\\{4,6\\}$ (right column, top row). Their **union** is the two leftover piles together, $\\{1,4,6,7\\}$. Their **intersection** is empty: a number cannot be both “outside $F$” and “inside $F$” at once. In particular the two differences are different sets."
  },
  {
  id: "math-1-6",
@@ -234,9 +234,9 @@ solution_overview: "The three blocks sit in separate thirds of $U=\\{1,\\ldots,9
  tactical_explanations: [
 "**A.** → True\n\nStrip $1$–$6$ from $U$. What remains is exactly $\\{7,8,9,10,11,12\\}$.",
 "**B.** → True\n\n$X\\cup Y$ covers $1$ through $9$, so its complement inside $U$ is the three outsiders **$\\{10,11,12\\}$**.",
-"**C.** → True\n\nIntersecting the two complement lists keeps only $10,11,12$ — same as $(X\\cup Y)^c$, as De Morgan predicts.",
-"**D.** → True\n\nBoth sides equal everyone except $4,5,6$. Direct computation confirms **$(X\\cap Y)^c=X^c\\cup Y^c$**.",
-"**E.** → False\n\n$X^c\\cup Y^c$ must keep $7,8,9$ (they are in $X^c$). The claimed list $\\{1,2,3,10,11,12\\}$ is only $Y^c$, missing those three. **Too small.**",
+"**C.** → True\n\nIntersecting the two complement lists keeps only $\\{10,11,12\\}$ — same as $(X\\cup Y)^c$, as De Morgan predicts.",
+"**D.** → True\n\nBoth sides equal everyone except $\\{4,5,6\\}$. Direct computation confirms **$(X\\cap Y)^c=X^c\\cup Y^c$**.",
+"**E.** → False\n\n$X^c\\cup Y^c$ must keep $\\{7,8,9\\}$ (they are in $X^c$). The claimed list $\\{1,2,3,10,11,12\\}$ is only $Y^c$, missing those three. **Too small.**",
  ],
  difficulty_level: "2/5",
  sort_order: 9,
@@ -259,9 +259,9 @@ solution_overview: "Employees $1$–$12$; Python knowers $X=\\{1,\\ldots,6\\}$; 
  tactical_explanations: [
 "**A.** → False\n\n$(A\\cup B)^c=\\{9,10\\}$ only. The claim adds $8$, but $8\\in B\\subseteq A\\cup B$, so $8$ cannot be in the complement.",
 "**B.** → True\n\nBoth sides equal $\\{1,2,3,6,7,8,9,10\\}$. This is De Morgan’s second law on the nose.",
-"**C.** → False\n\n$A^c\\cap B^c$ keeps only numbers outside **both** sets, namely $9$ and $10$. The claim’s $6,7,8$ still live in $B$, so they are not in $B^c$.",
+"**C.** → False\n\n$A^c\\cap B^c$ keeps only numbers outside **both** sets, namely $9$ and $10$. The claim’s $\\{6,7,8\\}$ still live in $B$, so they are not in $B^c$.",
 "**D.** → True\n\nRemoving the overlap $\\{4,5\\}$ from $U$ leaves exactly the eight numbers claimed.",
-"**E.** → False\n\n$A^c\\cup B^c$ includes all of $A^c$, so $6,7,8$ must appear. The claimed list is again just $B^c$, missing those three.",
+"**E.** → False\n\n$A^c\\cup B^c$ includes all of $A^c$, so $\\{6,7,8\\}$ must appear. The claimed list is again just $B^c$, missing those three.",
  ],
  difficulty_level: "2/5",
  sort_order: 10,
@@ -315,7 +315,7 @@ solution_overview: "A collection partitions $A=\\{1,2,3,4,5,6\\}$ only when **al
  ],
  difficulty_level: "3/5",
  sort_order: 12,
-solution_overview: "No need to name the five elements. Each subset is an include/exclude choice for every element, so\n\n$$2^5=32$$\n\nsubsets in total.\n\n| Kind of subset | Count |\n| --- | --- |\n| all subsets | $32$ |\n| proper ($\\ne A$) | $32-1=31$ |\n| nonempty | $32-1=31$ |\n| size exactly $4$ | $\\binom{5}{4}=5$ |\n| even size $0,2,4$ | $\\binom{5}{0}+\\binom{5}{2}+\\binom{5}{4}=1+10+5=16$ |\n\nChoosing $4$ out of $5$ is the same as choosing which one element to leave out — five ways, not ten."
+solution_overview: "No need to name the five elements. Each subset is an include/exclude choice for every element, so\n\n$$2^5=32$$\n\nsubsets in total.\n\n| Kind of subset | Count |\n| --- | --- |\n| all subsets | $32$ |\n| proper ($\\ne A$) | $32-1=31$ |\n| nonempty | $32-1=31$ |\n| size exactly $4$ | $\\binom{5}{4}=5$ |\n| even size $\\{0,2,4\\}$ | $\\binom{5}{0}+\\binom{5}{2}+\\binom{5}{4}=1+10+5=16$ |\n\nChoosing $4$ out of $5$ is the same as choosing which one element to leave out — five ways, not ten."
  },
  {
  id: "math-1-13",
@@ -365,7 +365,7 @@ solution_overview: "Translate brackets into inequalities first.\n\n$$A=(0,10]\\i
  ],
  difficulty_level: "3/5",
  sort_order: 14,
-solution_overview: "Three-set survey with $|A|=80$, $|B|=70$, $|C|=60$, pair totals $30,25,20$, and triple overlap $10$, among $150$ tourists.\n\n**Inclusion–exclusion** for the union:\n\n$$|A\\cup B\\cup C|=80+70+60-30-25-20+10=145.$$\n\nThen “none” is $150-145=5$.\n\nPair totals still include the triple visitors, so the **exact-pair** regions are $30-10=20$, $25-10=15$, $20-10=10$.\n\nOnly-$A$ needs care: subtract both pair totals from $80$, then **add the triple back once** (it was removed twice):\n\n$$80-30-20+10=40.$$\n\n“At least two museums” = three exact pairs + the triple $=20+15+10+10=55$."
+solution_overview: "Three-set survey with $|A|=80$, $|B|=70$, $|C|=60$, pair totals $\\{30,25,20\\}$, and triple overlap $10$, among $150$ tourists.\n\n**Inclusion–exclusion** for the union:\n\n$$|A\\cup B\\cup C|=80+70+60-30-25-20+10=145.$$\n\nThen “none” is $150-145=5$.\n\nPair totals still include the triple visitors, so the **exact-pair** regions are $30-10=20$, $25-10=15$, $20-10=10$.\n\nOnly-$A$ needs care: subtract both pair totals from $80$, then **add the triple back once** (it was removed twice):\n\n$$80-30-20+10=40.$$\n\n“At least two museums” = three exact pairs + the triple $=20+15+10+10=55$."
  },
  {
  id: "math-1-15",
@@ -415,7 +415,7 @@ solution_overview: "Let $N=\\{1,2,3,\\ldots\\}$ and $E=\\{2,4,6,\\ldots\\}$.\n\n
  ],
  difficulty_level: "3/5",
  sort_order: 16,
-solution_overview: "$A=\\{2,4,6,8,10,12\\}$ — six even numbers, nothing else.\n\nAsk of each claim: is the thing an **element** (one of those six numbers) or a **subset** (a collection of them)?\n\n- $6$ is on the list → $6\\in A$.\n- The singleton object $\\{6\\}$ is a set, not a number on the list → $\\{6\\}\\notin A$, even though $\\{6\\}\\subseteq A$.\n- $\\{6,8\\}$ has both members in $A$ → subset.\n- $\\emptyset$ always subsets every set.\n- Total subsets: $2^6=64$; drop $A$ itself to get $63$ proper subsets."
+solution_overview: "$A=\\{2,4,6,8,10,12\\}$ — six even numbers, nothing else.\n\nAsk of each claim: is the thing an **element** (one of those six numbers) or a **subset** (a collection of them)?\n\n• $6$ is on the list → $6\\in A$.\n\n• The singleton object $\\{6\\}$ is a set, not a number on the list → $\\{6\\}\\notin A$, even though $\\{6\\}\\subseteq A$.\n\n• $\\{6,8\\}$ has both members in $A$ → subset.\n\n• $\\emptyset$ always subsets every set.\n\n• Total subsets: $2^6=64$; drop $A$ itself to get $63$ proper subsets."
  },
  {
  id: "math-1-17",
@@ -490,7 +490,7 @@ solution_overview: "Four letters $D=\\{w,x,y,z\\}$ mean $2^4=16$ subsets, i.e. $
  ],
  difficulty_level: "4/5",
  sort_order: 19,
-solution_overview: "Compare $E=\\{1,2,3\\}$ with the larger $F=\\{1,2,3,4\\}$ by walking through the members.\n\n**$E$ into $F$:** $1,2,3$ all appear in $F$, so $E\\subseteq F$. The extra element $4\\in F\\setminus E$ proves the sets differ, hence the inclusion is **proper**: $E\\subsetneq F$.\n\n**$F$ into $E$:** that same $4$ is a counterexample, so $F\\nsubseteq E$.\n\n**Self-tests:** $E\\subseteq E$ always (reflexive). Proper self-inclusion would also need $E\\ne E$, which never happens."
+solution_overview: "Compare $E=\\{1,2,3\\}$ with the larger $F=\\{1,2,3,4\\}$ by walking through the members.\n\n**$E$ into $F$:** $\\{1,2,3\\}$ all appear in $F$, so $E\\subseteq F$. The extra element $4\\in F\\setminus E$ proves the sets differ, hence the inclusion is **proper**: $E\\subsetneq F$.\n\n**$F$ into $E$:** that same $4$ is a counterexample, so $F\\nsubseteq E$.\n\n**Self-tests:** $E\\subseteq E$ always (reflexive). Proper self-inclusion would also need $E\\ne E$, which never happens."
  },
  {
  id: "math-1-20",
@@ -565,7 +565,7 @@ solution_overview: "Same infinite-set theme with $\\mathbb N=\\{1,2,3,\\ldots\\}
  ],
  difficulty_level: "5/5",
  sort_order: 22,
-solution_overview: "Read the braces carefully. In $K=\\{a,\\{a\\}\\}$ there are **two** listed objects:\n\n1. the bare object $a$,\n2. the singleton set $\\{a\\}$.\n\nThose are different things, so $|K|=2$.\n\nMembership is immediate from the list: $a\\in K$ and $\\{a\\}\\in K$.\n\nSubset tests ask about *members of the left-hand set*:\n\n- $\\{a\\}\\subseteq K$ asks whether $a\\in K$ — yes.\n- $\\{\\{a\\}\\}\\subseteq K$ asks whether $\\{a\\}\\in K$ — yes."
+solution_overview: "Read the braces carefully. In $K=\\{a,\\{a\\}\\}$ there are **two** listed objects:\n\n1. the bare object $a$,\n2. the singleton set $\\{a\\}$.\n\nThose are different things, so $|K|=2$.\n\nMembership is immediate from the list: $a\\in K$ and $\\{a\\}\\in K$.\n\nSubset tests ask about *members of the left-hand set*:\n\n• $\\{a\\}\\subseteq K$ asks whether $a\\in K$ — yes.\n\n• $\\{\\{a\\}\\}\\subseteq K$ asks whether $\\{a\\}\\in K$ — yes."
  },
  {
  id: "math-1-23",
@@ -586,7 +586,7 @@ solution_overview: "Read the braces carefully. In $K=\\{a,\\{a\\}\\}$ there are 
 "**B.** → True\n\n$A^c\\cap B^c$ is also $\\{9,10\\}$. The two sides match — De Morgan.",
 "**C.** → True\n\nBoth $(A\\cap B)^c$ and $A^c\\cup B^c$ equal $\\{1,2,3,6,7,8,9,10\\}$.",
 "**D.** → False\n\n$6\\in B$ but $6\\notin A$, so $A\\cap B=\\{4,5\\}$ only — no $6$.",
-"**E.** → False\n\nThe true complement of $\\{4,5\\}$ keeps $6,7,8$ and drops $4,5$. The claimed list does the opposite.",
+"**E.** → False\n\nThe true complement of $\\{4,5\\}$ keeps $\\{6,7,8\\}$ and drops $\\{4,5\\}$. The claimed list does the opposite.",
  ],
  difficulty_level: "1/5",
  sort_order: 1,
@@ -665,7 +665,7 @@ solution_overview: "Rewrite in interval notation: $A=(1,5)$ and $B=[3,\\infty)$.
  ],
  difficulty_level: "1/5",
  sort_order: 4,
-solution_overview: "Symmetric difference keeps what is in **exactly one** of the two sets:\n\n$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A).$$\n\nWith $A=\\{1,2,3,4\\}$ and $B=\\{3,4,5,6\\}$:\n\n| Piece | Result |\n| --- | --- |\n| $A\\cap B$ | $\\{3,4\\}$ |\n| $A\\setminus B$ | $\\{1,2\\}$ |\n| $B\\setminus A$ | $\\{5,6\\}$ |\n| $A\\triangle B$ | $\\{1,2,5,6\\}$ |\n\nThe one-sided differences are disjoint, so replacing $\\cup$ by $\\cap$ in the definition collapses to $\\emptyset$ — wrong. Shared elements $3,4$ are *excluded* from the symmetric difference, so $A\\cap B\\nsubseteq A\\triangle B$.\n\nIf the sets were disjoint, each difference would equal the whole set and $A\\triangle B$ would equal $A\\cup B$. Counting-wise, $|A|+|B|$ double-counts the overlap, and the symmetric difference throws both copies away: $|A\\triangle B|=|A|+|B|-2|A\\cap B|=4+4-4=4$."
+solution_overview: "Symmetric difference keeps what is in **exactly one** of the two sets:\n\n$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A).$$\n\nWith $A=\\{1,2,3,4\\}$ and $B=\\{3,4,5,6\\}$:\n\n| Piece | Result |\n| --- | --- |\n| $A\\cap B$ | $\\{3,4\\}$ |\n| $A\\setminus B$ | $\\{1,2\\}$ |\n| $B\\setminus A$ | $\\{5,6\\}$ |\n| $A\\triangle B$ | $\\{1,2,5,6\\}$ |\n\nThe one-sided differences are disjoint, so replacing $\\cup$ by $\\cap$ in the definition collapses to $\\emptyset$ — wrong. Shared elements $\\{3,4\\}$ are *excluded* from the symmetric difference, so $A\\cap B\\nsubseteq A\\triangle B$.\n\nIf the sets were disjoint, each difference would equal the whole set and $A\\triangle B$ would equal $A\\cup B$. Counting-wise, $|A|+|B|$ double-counts the overlap, and the symmetric difference throws both copies away: $|A\\triangle B|=|A|+|B|-2|A\\cap B|=4+4-4=4$."
  },
  {
  id: "math-1-27",
@@ -757,11 +757,11 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  answer_key: [true, true, true, false, true],
  tactical_explanations: [
- "**A.** → True\n\nTake $1,2,3,4$ from A and add only what is new in B, namely $5$ and $6$. **The union is $\\{1,2,3,4,5,6\\}$, the six numbers claimed.**",
+ "**A.** → True\n\nTake $\\{1,2,3,4\\}$ from A and add only what is new in B, namely $5$ and $6$. **The union is $\\{1,2,3,4,5,6\\}$, the six numbers claimed.**",
  "**B.** → True\n\nScanning A against B, only $3$ and $4$ appear twice; $1$ and $2$ live only in A, $5$ and $6$ only in B. **So $A\\cap B=\\{3,4\\}$, exactly the claimed pair.**",
  "**C.** → True\n\n$A\\setminus B$ asks what survives in A once everything it shares with B is deleted. Deleting $3$ and $4$ from $\\{1,2,3,4\\}$ leaves $\\{1,2\\}$ — **the claim is right**.",
  "**D.** → False\n\nSwapping the order changes the answer. $A\\setminus B=\\{1,2\\}$ keeps A's private members, while $B\\setminus A=\\{5,6\\}$ keeps B's. The two results share nothing, so **they are certainly not equal**.",
- "**E.** → True\n\nC holds only $7,8,9$, and not one of them appears in A. An empty intersection is the definition of disjoint, so **A and C are disjoint**.",
+ "**E.** → True\n\nC holds only $\\{7,8,9\\}$, and not one of them appears in A. An empty intersection is the definition of disjoint, so **A and C are disjoint**.",
  ],
  difficulty_level: "2/5",
  sort_order: 8,
@@ -782,7 +782,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  answer_key: [true, true, true, false, true],
  tactical_explanations: [
- "**A.** → True\n\nThe union is simply the list of table rows: $10,20,30,40,50$ come from A, and $60$ is B's only new contribution. **All six numbers, exactly as claimed.**",
+ "**A.** → True\n\nThe union is simply the list of table rows: $\\{10,20,30,40,50\\}$ come from A, and $60$ is B's only new contribution. **All six numbers, exactly as claimed.**",
  "**B.** → True\n\nOnly three rows say yes twice — $30$, $40$ and $50$ — and those three make up the intersection. **The claimed set matches.**",
  "**C.** → True\n\nRemove from A everything that B also owns. Out go $30$, $40$ and $50$; **what remains is $\\{10,20\\}$**.",
  "**D.** → False\n\nOne side has two members, the other has one: $A\\setminus B=\\{10,20\\}$ but $B\\setminus A=\\{60\\}$. Sets of different sizes cannot be equal, so **the order of subtraction genuinely matters here**.",
@@ -835,8 +835,8 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  "**A.** → True\n\nA and B between them reach $1$ through $8$, so the only numbers of the universe they never touch are $9$ and $10$. **The complement of the union is $\\{9,10\\}$.**",
  "**B.** → True\n\nThis is De Morgan's first law, and the numbers bear it out: $A^c=\\{6,7,8,9,10\\}$ and $B^c=\\{1,2,3,9,10\\}$ share exactly $9$ and $10$, the same set found for $(A\\cup B)^c$. In plain words, **the numbers outside a union are precisely those outside A and outside B at the same time**.",
  "**C.** → True\n\nDe Morgan's second law. A number escapes $A\\cap B$ as soon as it is missing from *one* of the sets, so the outsiders combine with \"or\": $A^c\\cup B^c=\\{1,2,3,6,7,8,9,10\\}$, which is $(A\\cap B)^c$. **Both sides match.**",
- "**D.** → True\n\nDelete $1,2,3,4,5$ from the universe and $\\{6,7,8,9,10\\}$ remains. **That is $A^c$, just as claimed.**",
- "**E.** → True\n\nOnly $4$ and $5$ belong to both sets, so only those two get removed from U. Everything else — $1,2,3,6,7,8,9,10$ — stays. **The claimed list is right.**",
+ "**D.** → True\n\nDelete $\\{1,2,3,4,5\\}$ from the universe and $\\{6,7,8,9,10\\}$ remains. **That is $A^c$, just as claimed.**",
+ "**E.** → True\n\nOnly $4$ and $5$ belong to both sets, so only those two get removed from U. Everything else — $\\{1,2,3,6,7,8,9,10\\}$ — stays. **The claimed list is right.**",
  ],
  difficulty_level: "2/5",
  sort_order: 11,
@@ -957,7 +957,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  answer_key: [true, true, true, true, false],
  tactical_explanations: [
- "**A.** → True\n\nStrip the shared $3,5,7$ out of A and the left bucket holds $1$ and $9$. **That is $A\\setminus B$.**",
+ "**A.** → True\n\nStrip the shared $\\{3,5,7\\}$ out of A and the left bucket holds $1$ and $9$. **That is $A\\setminus B$.**",
  "**B.** → True\n\nThe same shared numbers removed from the other side leave B with $11$ and $13$. **The right bucket matches the claim.**",
  "**C.** → True\n\nJoining the two outer buckets gives $\\{1,9,11,13\\}$, and each of those four numbers really does appear in only one of the original sets. **The claimed set is the symmetric difference.**",
  "**D.** → True\n\nNo arithmetic is needed for this one. Anything in $A\\setminus B$ is outside B, anything in $B\\setminus A$ is inside B, and nothing can be both, so the intersection is forced to be empty. The lists confirm it: $\\{1,9\\}$ and $\\{11,13\\}$ share nothing. **Empty, as claimed.**",
@@ -983,7 +983,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  answer_key: [true, true, true, true, true],
  tactical_explanations: [
  "**A.** → True\n\nSubtracting B from A means deleting whatever A shares with B — and it shares nothing. **A comes through untouched: $A\\setminus B=\\{2,4,6\\}$.**",
- "**B.** → True\n\nThe same reasoning in reverse: none of $1,3,5$ is even, so nothing gets deleted from B. **$B\\setminus A=\\{1,3,5\\}$.**",
+ "**B.** → True\n\nThe same reasoning in reverse: none of $\\{1,3,5\\}$ is even, so nothing gets deleted from B. **$B\\setminus A=\\{1,3,5\\}$.**",
  "**C.** → True\n\nEach of the six numbers belongs to exactly one of the two sets, which is the entry condition for the symmetric difference. **All six get in: $\\{1,2,3,4,5,6\\}$.**",
  "**D.** → True\n\nThe two differences are $\\{2,4,6\\}$ and $\\{1,3,5\\}$, and even numbers never coincide with odd ones. **Their intersection is empty.**",
  "**E.** → True\n\nNormally the union is the bigger set, because it also keeps the shared members. Here the shared part is empty, so there is nothing extra for the union to add and both sides come to $\\{1,2,3,4,5,6\\}$. **Disjointness is exactly what makes this equality work.**",
@@ -1183,14 +1183,14 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  answer_key: [true, true, false, true, false],
  tactical_explanations: [
  "**A.** → True\n\nRunning down the prime list against the even list, $2$ is the only number appearing in both; every other prime here is odd. **So $P\\cap E=\\{2\\}$.**",
- "**B.** → True\n\n$P\\setminus E$ throws out of P whatever E also owns, and that is just the number $2$. The five primes $3,5,7,11,13$ remain. **The claimed list is correct.**",
+ "**B.** → True\n\n$P\\setminus E$ throws out of P whatever E also owns, and that is just the number $2$. The five primes $\\{3,5,7,11,13\\}$ remain. **The claimed list is correct.**",
  "**C.** → False\n\nA \"for every\" sentence needs a clean sweep, and this one stumbles on its very first member: $2$ is in P and $2$ is even. **That single counterexample makes the sentence false.**",
- "**D.** → True\n\nAdding the condition $x\\ne2$ removes precisely the troublesome case. What is left to check is $3,5,7,11,13$, and every one of them is odd, so no value of x makes the \"if\" part true while the \"then\" part fails. **The restricted statement holds.**",
- "**E.** → False\n\n$P\\subseteq E$ would require every prime in the list to be an even number below 15, and it is not: $3$ is in P but nowhere in E, and the same goes for $5,7,11,13$. **P is not a subset of E.**",
+ "**D.** → True\n\nAdding the condition $x\\ne2$ removes precisely the troublesome case. What is left to check is $\\{3,5,7,11,13\\}$, and every one of them is odd, so no value of x makes the \"if\" part true while the \"then\" part fails. **The restricted statement holds.**",
+ "**E.** → False\n\n$P\\subseteq E$ would require every prime in the list to be an even number below 15, and it is not: $3$ is in P but nowhere in E, and the same goes for $\\{5,7,11,13\\}$. **P is not a subset of E.**",
  ],
  difficulty_level: "1/5",
  sort_order: 4,
- solution_overview: "$P=\\{2,3,5,7,11,13\\}$ and $E=\\{2,4,6,8,10,12,14\\}$ overlap in a single number, $2$ — the only even prime. The set arithmetic follows immediately:\n\n$$P\\cap E=\\{2\\},\\qquad P\\setminus E=\\{3,5,7,11,13\\}.$$\n\nThe remaining claims are about **quantifiers**. A sentence starting $\\forall x\\in P$ (\"for every x in P\") makes a promise about all six members, so one bad member destroys it. A **subset** claim $P\\subseteq E$ is judged the same way: one member of P found outside E is fatal.\n\nTesting \"every member of P is odd\" therefore stops at once, at $x=2$. Testing the restricted version, which sets $2$ aside, leaves $3,5,7,11,13$ — all odd, so that version survives every case. Testing $P\\subseteq E$ fails at $3$, and in fact at every prime except $2$.",
+ solution_overview: "$P=\\{2,3,5,7,11,13\\}$ and $E=\\{2,4,6,8,10,12,14\\}$ overlap in a single number, $2$ — the only even prime. The set arithmetic follows immediately:\n\n$$P\\cap E=\\{2\\},\\qquad P\\setminus E=\\{3,5,7,11,13\\}.$$\n\nThe remaining claims are about **quantifiers**. A sentence starting $\\forall x\\in P$ (\"for every x in P\") makes a promise about all six members, so one bad member destroys it. A **subset** claim $P\\subseteq E$ is judged the same way: one member of P found outside E is fatal.\n\nTesting \"every member of P is odd\" therefore stops at once, at $x=2$. Testing the restricted version, which sets $2$ aside, leaves $\\{3,5,7,11,13\\}$ — all odd, so that version survives every case. Testing $P\\subseteq E$ fails at $3$, and in fact at every prime except $2$.",
  },
  {
  id: "math-1-48",
@@ -1308,14 +1308,14 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  answer_key: [true, true, false, true, true],
  tactical_explanations: [
  "**A.** → True\n\nDivisible by $3$ and by $5$ means divisible by $15$, and $15$ sits comfortably inside $\\{1,\\ldots,20\\}$. **One witness is all an \"exists\" sentence needs.**",
- "**B.** → True\n\nEvery multiple of four is $4k=2(2k)$, twice a whole number and therefore even, so no exception is possible. Spot-checking the range confirms it: $4,8,12,16,20$ are all even. **The implication holds throughout.**",
+ "**B.** → True\n\nEvery multiple of four is $4k=2(2k)$, twice a whole number and therefore even, so no exception is possible. Spot-checking the range confirms it: $\\{4,8,12,16,20\\}$ are all even. **The implication holds throughout.**",
  "**C.** → False\n\nThe direction has been flipped, and the flipped version breaks at the smallest possible case: $x=2$ is divisible by $2$ but not by $4$. **One counterexample inside the range settles it.**",
  "**D.** → True\n\nAn if-then rule can fail only where the \"if\" holds and the \"then\" does not, so its negation asserts that such a case exists: some x that is prime and not odd. For whole numbers, \"not odd\" means even. **The proposed sentence is the correct negation.**",
  "**E.** → True\n\nThe negation asks for an even prime in the range, and $2$ is one: its only positive divisors are $1$ and $2$, and it is divisible by $2$. **So the negation is true — meaning the original claim that every prime is odd is false in this universe.**",
  ],
  difficulty_level: "2/5",
  sort_order: 9,
- solution_overview: "Everything is checked inside the finite universe $\\{1,2,\\ldots,20\\}$, where two opposite habits apply: an $\\exists$ (\"there exists\") sentence needs one working example, while a $\\forall$ (\"for every\") sentence is destroyed by one counterexample.\n\n**One example is enough.** Being divisible by $3$ and by $5$ is the same as being divisible by $15$, and $15$ sits inside the range. Witness found.\n\n**A rule that never fails.** Every multiple of four can be written $4k=2(2k)$, twice a whole number, hence even. In this range the multiples of four are $4,8,12,16,20$, all even, so \"divisible by 4 $\\Rightarrow$ divisible by 2\" holds everywhere.\n\n**A rule that fails immediately.** Reverse it and try $x=2$: divisible by $2$, not divisible by $4$. One counterexample is all it takes.\n\n**Negating an if-then rule.** An implication breaks only where the \"if\" holds and the \"then\" fails, which gives\n\n$$\\neg\\forall x\\,(P(x)\\Rightarrow Q(x))\\ \\equiv\\ \\exists x\\,(P(x)\\land\\neg Q(x)).$$\n\nWith $P(x)$ meaning \"x is prime\" and $Q(x)$ meaning \"x is odd\", the negation reads \"some x in the range is prime and even\" — and $x=2$ makes it come true, so \"every prime is odd\" is false in this universe.",
+ solution_overview: "Everything is checked inside the finite universe $\\{1,2,\\ldots,20\\}$, where two opposite habits apply: an $\\exists$ (\"there exists\") sentence needs one working example, while a $\\forall$ (\"for every\") sentence is destroyed by one counterexample.\n\n**One example is enough.** Being divisible by $3$ and by $5$ is the same as being divisible by $15$, and $15$ sits inside the range. Witness found.\n\n**A rule that never fails.** Every multiple of four can be written $4k=2(2k)$, twice a whole number, hence even. In this range the multiples of four are $\\{4,8,12,16,20\\}$, all even, so \"divisible by 4 $\\Rightarrow$ divisible by 2\" holds everywhere.\n\n**A rule that fails immediately.** Reverse it and try $x=2$: divisible by $2$, not divisible by $4$. One counterexample is all it takes.\n\n**Negating an if-then rule.** An implication breaks only where the \"if\" holds and the \"then\" fails, which gives\n\n$$\\neg\\forall x\\,(P(x)\\Rightarrow Q(x))\\ \\equiv\\ \\exists x\\,(P(x)\\land\\neg Q(x)).$$\n\nWith $P(x)$ meaning \"x is prime\" and $Q(x)$ meaning \"x is odd\", the negation reads \"some x in the range is prime and even\" — and $x=2$ makes it come true, so \"every prime is odd\" is false in this universe.",
  },
  {
  id: "math-1-53",
@@ -1465,7 +1465,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  difficulty_level: "2/5",
  sort_order: 15,
- solution_overview: "The filter is stated with a negated “or”, which is exactly the shape **De Morgan's law** is built for. Let $S$ mean “the item is on sale” and $O$ mean “the item is out of stock”; the filter displays an item when $\\neg(S \\lor O)$ is true.\n\n**Push the NOT inside.** De Morgan's law turns a negated OR into an AND of the two negations:\n\n$$\\neg(S \\lor O) \\equiv \\neg S \\land \\neg O$$\n\nSo in plain English the filter shows an item **only if it is neither on sale nor out of stock**. The connective flips as the NOT moves in; keeping the OR and writing $\\neg S \\lor \\neg O$ instead would let almost the whole catalogue through, since nearly every item fails at most one of the two tests.\n\n**Running the three items through $\\neg S \\land \\neg O$:**\n\n- **M** is on sale, so $\\neg S$ is false — hidden.\n- **N** is out of stock, so $\\neg O$ is false — hidden.\n- **K** is neither on sale nor out of stock, so both halves hold — **displayed**.",
+ solution_overview: "The filter is stated with a negated “or”, which is exactly the shape **De Morgan's law** is built for. Let $S$ mean “the item is on sale” and $O$ mean “the item is out of stock”; the filter displays an item when $\\neg(S \\lor O)$ is true.\n\n**Push the NOT inside.** De Morgan's law turns a negated OR into an AND of the two negations:\n\n$$\\neg(S \\lor O) \\equiv \\neg S \\land \\neg O$$\n\nSo in plain English the filter shows an item **only if it is neither on sale nor out of stock**. The connective flips as the NOT moves in; keeping the OR and writing $\\neg S \\lor \\neg O$ instead would let almost the whole catalogue through, since nearly every item fails at most one of the two tests.\n\n**Running the three items through $\\neg S \\land \\neg O$:**\n\n• **M** is on sale, so $\\neg S$ is false — hidden.\n\n• **N** is out of stock, so $\\neg O$ is false — hidden.\n\n• **K** is neither on sale nor out of stock, so both halves hold — **displayed**.",
  },
  {
  id: "math-1-59",
@@ -1540,7 +1540,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  difficulty_level: "2/5",
  sort_order: 18,
- solution_overview: "“Cancelled **unless** the rain stops” is a promise with an escape clause. The escape clause is $S$ (“the rain stops before 6 PM”), and if the escape clause does not apply, the cancellation is guaranteed:\n\n$$\\neg S \\Rightarrow C$$\n\nThat single implication can be dressed in three outfits, all saying the same thing:\n\n- $\\neg S \\Rightarrow C$ — the rain does not stop, so the concert is cancelled;\n- $S \\lor C$ — at least one of “the rain stopped” and “the concert was cancelled” is true, using $A \\Rightarrow B \\equiv \\neg A \\lor B$;\n- $\\neg C \\Rightarrow S$ — the contrapositive: a concert that went ahead proves the rain stopped in time.\n\n**What the rule never covers** is the day the rain *does* stop. There the promise falls silent, so the concert may go ahead — or be cancelled for a completely unrelated reason, say a power failure. Any reading that forbids that second possibility, such as $S \\Rightarrow \\neg C$, is claiming more than the organizer ever said.",
+ solution_overview: "“Cancelled **unless** the rain stops” is a promise with an escape clause. The escape clause is $S$ (“the rain stops before 6 PM”), and if the escape clause does not apply, the cancellation is guaranteed:\n\n$$\\neg S \\Rightarrow C$$\n\nThat single implication can be dressed in three outfits, all saying the same thing:\n\n• $\\neg S \\Rightarrow C$ — the rain does not stop, so the concert is cancelled;\n\n• $S \\lor C$ — at least one of “the rain stopped” and “the concert was cancelled” is true, using $A \\Rightarrow B \\equiv \\neg A \\lor B$;\n\n• $\\neg C \\Rightarrow S$ — the contrapositive: a concert that went ahead proves the rain stopped in time.\n\n**What the rule never covers** is the day the rain *does* stop. There the promise falls silent, so the concert may go ahead — or be cancelled for a completely unrelated reason, say a power failure. Any reading that forbids that second possibility, such as $S \\Rightarrow \\neg C$, is claiming more than the organizer ever said.",
  },
  {
  id: "math-1-62",
@@ -2090,7 +2090,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  difficulty_level: "1/5",
  sort_order: 5,
- solution_overview: "The committee rule has two independent gates, and a candidate is approved the moment **one** of them opens. Let $Y$ be the number of yes-votes.\n\n**Gate 1.** $Y \\ge 3$. Only the count matters here; names are ignored.\n\n**Gate 2.** $Y = 2$ **and** R1 is one of the two. Here the name matters.\n\n**Checking this candidate**\n\nR1 yes, R2 yes, R3 no, R4 no, so $Y = 2$.\n\n- Gate 1: is $2 \\ge 3$? No — closed.\n- Gate 2: is $Y = 2$? Yes. Is R1 among the yes-votes? Yes. **Gate 2 opens, so the candidate is approved.**\n\n**Every other shape of vote**\n\n| Yes-votes | Gate 1 | Gate 2 | Outcome |\n| --- | --- | --- | --- |\n| 3 or 4, any names | opens | — | approved |\n| exactly 2, R1 inside | closed | opens | approved |\n| exactly 2, R1 outside | closed | closed | rejected |\n| 1 or 0 | closed | closed | rejected |\n\nThe table shows where R1's special power actually lives: in the two middle rows only. With three yes-votes the count alone decides, so {R2, R3, R4} is approved while R1 votes no; with two yes-votes and R1 outside, such as {R2, R3}, the candidate is turned down.",
+ solution_overview: "The committee rule has two independent gates, and a candidate is approved the moment **one** of them opens. Let $Y$ be the number of yes-votes.\n\n**Gate 1.** $Y \\ge 3$. Only the count matters here; names are ignored.\n\n**Gate 2.** $Y = 2$ **and** R1 is one of the two. Here the name matters.\n\n**Checking this candidate**\n\nR1 yes, R2 yes, R3 no, R4 no, so $Y = 2$.\n\n• Gate 1: is $2 \\ge 3$? No — closed.\n\n• Gate 2: is $Y = 2$? Yes. Is R1 among the yes-votes? Yes. **Gate 2 opens, so the candidate is approved.**\n\n**Every other shape of vote**\n\n| Yes-votes | Gate 1 | Gate 2 | Outcome |\n| --- | --- | --- | --- |\n| 3 or 4, any names | opens | — | approved |\n| exactly 2, R1 inside | closed | opens | approved |\n| exactly 2, R1 outside | closed | closed | rejected |\n| 1 or 0 | closed | closed | rejected |\n\nThe table shows where R1's special power actually lives: in the two middle rows only. With three yes-votes the count alone decides, so {R2, R3, R4} is approved while R1 votes no; with two yes-votes and R1 outside, such as {R2, R3}, the candidate is turned down.",
  },
  {
  id: "math-1-84",
@@ -2215,7 +2215,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  difficulty_level: "2/5",
  sort_order: 10,
- solution_overview: "Everything turns on which cut-off is switched on. Writing $s$ for the score:\n\n$$\\text{no curve: } B \\iff s \\ge 70, \\qquad\\qquad \\text{curve applied: } B \\iff s \\ge 60.$$\n\n\"If and only if\" runs in both directions — clearing the active cut-off earns the grade, missing it denies the grade.\n\n**This exam.** The curve was applied, so the live cut-off is 60. Student W scored 65 and $65 \\ge 60$, so **W earns a B or higher**. Had the curve not been applied, the cut-off would sit at 70 and W's 65 would fall short.\n\n**Three bands of scores**\n\n- $s \\ge 70$: a B either way.\n- $60 \\le s < 70$: a B **only** when the curve is applied. Both 62 and W's 65 live here.\n- $s < 60$: no B in either regime.\n\nSince the curve moves the bar from 70 down to 60, everybody who already had a B keeps it and the middle band gains one, which is precisely what \"lowers the threshold and never raises it\" means.\n\n**A word on the \"if and only if\".** It is written for the baseline regime, and the \"unless\" clause overrides it whenever a curve is used. So \"at least 70\" is necessary and sufficient only in the no-curve case — as W, with 65 and a B, demonstrates.",
+ solution_overview: "Everything turns on which cut-off is switched on. Writing $s$ for the score:\n\n$$\\text{no curve: } B \\iff s \\ge 70, \\qquad\\qquad \\text{curve applied: } B \\iff s \\ge 60.$$\n\n\"If and only if\" runs in both directions — clearing the active cut-off earns the grade, missing it denies the grade.\n\n**This exam.** The curve was applied, so the live cut-off is 60. Student W scored 65 and $65 \\ge 60$, so **W earns a B or higher**. Had the curve not been applied, the cut-off would sit at 70 and W's 65 would fall short.\n\n**Three bands of scores**\n\n• $s \\ge 70$: a B either way.\n\n• $60 \\le s < 70$: a B **only** when the curve is applied. Both 62 and W's 65 live here.\n\n• $s < 60$: no B in either regime.\n\nSince the curve moves the bar from 70 down to 60, everybody who already had a B keeps it and the middle band gains one, which is precisely what \"lowers the threshold and never raises it\" means.\n\n**A word on the \"if and only if\".** It is written for the baseline regime, and the \"unless\" clause overrides it whenever a curve is used. So \"at least 70\" is necessary and sufficient only in the no-curve case — as W, with 65 and a B, demonstrates.",
  },
  {
  id: "math-1-89",
@@ -2290,7 +2290,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  difficulty_level: "2/5",
  sort_order: 13,
- solution_overview: "The guideline is a promise about every patient: fever above 38°C, therefore antibiotics. Call the two halves $P$ (fever above 38°C) and $Q$ (antibiotics prescribed). An implication can be broken in only one way, $P$ true with $Q$ false, so its negation reads: **some patient has a fever above 38°C and is not prescribed antibiotics.** A patient like that would be a genuine violation.\n\n**Patient 1: exactly 38.0°C, no antibiotics.** \"Above 38\" is strict, and 38.0 is not above 38, so $P$ is false here. When the \"if\" part is false the guideline makes no demand at all, so this patient cannot violate it. **Not a counterexample** — simply a case the guideline never spoke about.\n\n**Patient 2: 37.5°C with a bacterial infection, antibiotics given.** Now $P$ is false and $Q$ is true. This patient breaks no rule either, but look what the patient does refute:\n\n- the **inverse**, \"no fever above 38, so no antibiotics\" — false, since this patient has no high fever yet receives the drug;\n- the **converse**, \"antibiotics, so a fever above 38\" — false for the same reason.\n\nNone of that is surprising: antibiotics are prescribed for infections, not for thermometer readings, and the converse and the inverse are independent of the guideline.\n\n**A proof by contradiction.** To argue that \"not every patient prescribed antibiotics has a fever above 38°C\", assume the opposite — every such patient does have one — and then produce Patient 2, whom that assumption forbids. The assumption collapses and the original claim stands.",
+ solution_overview: "The guideline is a promise about every patient: fever above 38°C, therefore antibiotics. Call the two halves $P$ (fever above 38°C) and $Q$ (antibiotics prescribed). An implication can be broken in only one way, $P$ true with $Q$ false, so its negation reads: **some patient has a fever above 38°C and is not prescribed antibiotics.** A patient like that would be a genuine violation.\n\n**Patient 1: exactly 38.0°C, no antibiotics.** \"Above 38\" is strict, and 38.0 is not above 38, so $P$ is false here. When the \"if\" part is false the guideline makes no demand at all, so this patient cannot violate it. **Not a counterexample** — simply a case the guideline never spoke about.\n\n**Patient 2: 37.5°C with a bacterial infection, antibiotics given.** Now $P$ is false and $Q$ is true. This patient breaks no rule either, but look what the patient does refute:\n\n• the **inverse**, \"no fever above 38, so no antibiotics\" — false, since this patient has no high fever yet receives the drug;\n\n• the **converse**, \"antibiotics, so a fever above 38\" — false for the same reason.\n\nNone of that is surprising: antibiotics are prescribed for infections, not for thermometer readings, and the converse and the inverse are independent of the guideline.\n\n**A proof by contradiction.** To argue that \"not every patient prescribed antibiotics has a fever above 38°C\", assume the opposite — every such patient does have one — and then produce Patient 2, whom that assumption forbids. The assumption collapses and the original claim stands.",
  },
  {
  id: "math-1-92",
@@ -2365,7 +2365,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  difficulty_level: "3/5",
  sort_order: 16,
- solution_overview: "The original statement is easy to prove outright. If $6 \\mid n$, write $n = 6k$; then\n\n$$n = 6k = 3(2k),$$\n\nand $2k$ is a whole number, so $3 \\mid n$. This works for every integer with no exceptions, which immediately kills the negation \"$n$ is divisible by 6 but not by 3\": **no** integer fits that description, let alone infinitely many.\n\n**One number handles the other three sentences, and that number is 9.**\n\n- **Converse**, \"$3 \\mid n$ implies $6 \\mid n$\": at $n = 9$ the hypothesis holds ($3 \\mid 9$) and the conclusion fails ($6 \\nmid 9$), so the converse is **false**. The reason is that 6 also demands a factor 2, and 9 is odd.\n- **Inverse**, \"$6 \\nmid n$ implies $3 \\nmid n$\": at $n = 9$ the hypothesis holds ($6 \\nmid 9$) and the conclusion fails ($3 \\mid 9$), so it is **false** as well — as expected, since the inverse and the converse always march together.\n- **Contrapositive**, \"$3 \\nmid n$ implies $6 \\nmid n$\": equivalent to the original, hence **true** for every integer. Directly: a multiple of 6 is always $3(2k)$, so a number untouched by 3 cannot be a multiple of 6.\n\nSo the true pair is the original with its contrapositive, the false pair is the converse with the inverse, and knowing about one pair tells you nothing about the other.",
+ solution_overview: "The original statement is easy to prove outright. If $6 \\mid n$, write $n = 6k$; then\n\n$$n = 6k = 3(2k),$$\n\nand $2k$ is a whole number, so $3 \\mid n$. This works for every integer with no exceptions, which immediately kills the negation \"$n$ is divisible by 6 but not by 3\": **no** integer fits that description, let alone infinitely many.\n\n**One number handles the other three sentences, and that number is 9.**\n\n• **Converse**, \"$3 \\mid n$ implies $6 \\mid n$\": at $n = 9$ the hypothesis holds ($3 \\mid 9$) and the conclusion fails ($6 \\nmid 9$), so the converse is **false**. The reason is that 6 also demands a factor 2, and 9 is odd.\n\n• **Inverse**, \"$6 \\nmid n$ implies $3 \\nmid n$\": at $n = 9$ the hypothesis holds ($6 \\nmid 9$) and the conclusion fails ($3 \\mid 9$), so it is **false** as well — as expected, since the inverse and the converse always march together.\n\n• **Contrapositive**, \"$3 \\nmid n$ implies $6 \\nmid n$\": equivalent to the original, hence **true** for every integer. Directly: a multiple of 6 is always $3(2k)$, so a number untouched by 3 cannot be a multiple of 6.\n\nSo the true pair is the original with its contrapositive, the false pair is the converse with the inverse, and knowing about one pair tells you nothing about the other.",
  },
  {
  id: "math-1-95",
@@ -2440,7 +2440,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  difficulty_level: "3/5",
  sort_order: 19,
- solution_overview: "Divisors come in couples. For any $n$, pair each divisor $d$ with its partner $n/d$, so that the two multiply back to $n$. A divisor is its **own** partner exactly when $d = n/d$, that is when $d^2 = n$ — which can only happen if $n$ is a perfect square.\n\nThat single observation settles almost everything:\n\n- if $n$ is **not** a perfect square, every divisor has a different partner, the divisors split cleanly into couples, and the count is **even**;\n- if $n = m^2$, the divisor $m$ stands alone while all the others couple up, so the count is **odd**.\n\nThe second bullet is the theorem. The first bullet, read backwards, is its converse: an odd divisor count is only possible for a perfect square. And the first bullet stated directly is the inverse, \"not a perfect square, so an even number of divisors\" — true for the same reason.\n\n**Negating the theorem.** Denying \"perfect square, so an odd divisor count\" keeps the hypothesis and rejects the conclusion: \"a number is a perfect square **and** has an even number of divisors\". That is the right *shape* for a negation, even though the bullets show that no number actually fits it.\n\n**The two sample numbers.** $36 = 6^2$: couples $1 \\cdot 36$, $2 \\cdot 18$, $3 \\cdot 12$, $4 \\cdot 9$, with 6 left over on its own — 9 divisors, odd, exactly as promised. And 20 is not a square, since $4^2 = 16$ and $5^2 = 25$; its couples $1 \\cdot 20$, $2 \\cdot 10$, $4 \\cdot 5$ give 6 divisors, an even count, so it never even reaches the theorem's hypothesis.",
+ solution_overview: "Divisors come in couples. For any $n$, pair each divisor $d$ with its partner $n/d$, so that the two multiply back to $n$. A divisor is its **own** partner exactly when $d = n/d$, that is when $d^2 = n$ — which can only happen if $n$ is a perfect square.\n\nThat single observation settles almost everything:\n\n• if $n$ is **not** a perfect square, every divisor has a different partner, the divisors split cleanly into couples, and the count is **even**;\n\n• if $n = m^2$, the divisor $m$ stands alone while all the others couple up, so the count is **odd**.\n\nThe second bullet is the theorem. The first bullet, read backwards, is its converse: an odd divisor count is only possible for a perfect square. And the first bullet stated directly is the inverse, \"not a perfect square, so an even number of divisors\" — true for the same reason.\n\n**Negating the theorem.** Denying \"perfect square, so an odd divisor count\" keeps the hypothesis and rejects the conclusion: \"a number is a perfect square **and** has an even number of divisors\". That is the right *shape* for a negation, even though the bullets show that no number actually fits it.\n\n**The two sample numbers.** $36 = 6^2$: couples $1 \\cdot 36$, $2 \\cdot 18$, $3 \\cdot 12$, $4 \\cdot 9$, with 6 left over on its own — 9 divisors, odd, exactly as promised. And 20 is not a square, since $4^2 = 16$ and $5^2 = 25$; its couples $1 \\cdot 20$, $2 \\cdot 10$, $4 \\cdot 5$ give 6 divisors, an even count, so it never even reaches the theorem's hypothesis.",
  },
  {
  id: "math-1-98",
@@ -2590,7 +2590,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  difficulty_level: "4/5",
  sort_order: 25,
- solution_overview: "Start with the rule that has the longest reach. Ben brings Carla in by rule (1), and Carla pushes Dan out by rule (3):\n\n$$\\text{Ben} \\Rightarrow \\text{Carla} \\Rightarrow \\neg\\,\\text{Dan}.$$\n\nSo a game with Ben in it never has Dan. Read from the other end the same fact says: if Dan plays then Carla stays out, which is rule (3)'s contrapositive, and with no Carla there can be no Ben either.\n\n**With Ben playing:** Carla joins, Dan is out, rule (4) is already satisfied by Ben, so Ella may please herself. Two rosters.\n\n**Without Ben:** rule (4) forces Ella in. Carla and Dan cannot both play, so we may take Carla, or Dan, or neither. Three rosters, and in the Dan one rule (2) is content because Ella is there.\n\nThe complete list:\n\n- {Ben, Carla}\n- {Ben, Carla, Ella}\n- {Carla, Ella}\n- {Dan, Ella}\n- {Ella}\n\nTwo things are worth reading off that list. Ella alone is legal, since with Ben, Carla and Dan away three of the rules ask for nothing and Ella satisfies rule (4) by herself. And Carla is missing from two of the five rosters, so nobody can call her compulsory.",
+ solution_overview: "Start with the rule that has the longest reach. Ben brings Carla in by rule (1), and Carla pushes Dan out by rule (3):\n\n$$\\text{Ben} \\Rightarrow \\text{Carla} \\Rightarrow \\neg\\,\\text{Dan}.$$\n\nSo a game with Ben in it never has Dan. Read from the other end the same fact says: if Dan plays then Carla stays out, which is rule (3)'s contrapositive, and with no Carla there can be no Ben either.\n\n**With Ben playing:** Carla joins, Dan is out, rule (4) is already satisfied by Ben, so Ella may please herself. Two rosters.\n\n**Without Ben:** rule (4) forces Ella in. Carla and Dan cannot both play, so we may take Carla, or Dan, or neither. Three rosters, and in the Dan one rule (2) is content because Ella is there.\n\nThe complete list:\n\n• {Ben, Carla}\n\n• {Ben, Carla, Ella}\n\n• {Carla, Ella}\n\n• {Dan, Ella}\n\n• {Ella}\n\nTwo things are worth reading off that list. Ella alone is legal, since with Ben, Carla and Dan away three of the rules ask for nothing and Ella satisfies rule (4) by herself. And Carla is missing from two of the five rosters, so nobody can call her compulsory.",
  },
  {
  id: "math-1-104",
@@ -2665,7 +2665,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  difficulty_level: "4/5",
  sort_order: 28,
- solution_overview: "Three of the six interns can be eliminated one after another, like dominoes.\n\n**Bella falls first.** Suppose Bella presents. Rule (3) removes Daisy, and rule (6) — \"Ethan presents only if Bella does not\" — removes Ethan. But rule (2) insists on Daisy **or** Ethan, and both are now gone. So **Bella never presents**.\n\n**Aiden falls next.** Rule (1) says Aiden brings both Bella and Caleb with him. Bella is impossible, so **Aiden never presents**.\n\n**Faye falls last.** Rule (5) says Faye can only present if Aiden does. Aiden is impossible, so **Faye never presents**.\n\nThat leaves Caleb, Daisy and Ethan, with just two live rules: at least one of Daisy or Ethan (rule 2), and Caleb needs Ethan (rule 4). Counting the possibilities:\n\n- Caleb out: {Daisy}, {Ethan}, {Daisy, Ethan}\n- Caleb in, so Ethan in too: {Caleb, Ethan}, {Caleb, Daisy, Ethan}\n\n**Five valid rosters** — comfortably more than one — and every roster containing Caleb also contains Ethan, exactly as rule (4) demands.",
+ solution_overview: "Three of the six interns can be eliminated one after another, like dominoes.\n\n**Bella falls first.** Suppose Bella presents. Rule (3) removes Daisy, and rule (6) — \"Ethan presents only if Bella does not\" — removes Ethan. But rule (2) insists on Daisy **or** Ethan, and both are now gone. So **Bella never presents**.\n\n**Aiden falls next.** Rule (1) says Aiden brings both Bella and Caleb with him. Bella is impossible, so **Aiden never presents**.\n\n**Faye falls last.** Rule (5) says Faye can only present if Aiden does. Aiden is impossible, so **Faye never presents**.\n\nThat leaves Caleb, Daisy and Ethan, with just two live rules: at least one of Daisy or Ethan (rule 2), and Caleb needs Ethan (rule 4). Counting the possibilities:\n\n• Caleb out: {Daisy}, {Ethan}, {Daisy, Ethan}\n\n• Caleb in, so Ethan in too: {Caleb, Ethan}, {Caleb, Daisy, Ethan}\n\n**Five valid rosters** — comfortably more than one — and every roster containing Caleb also contains Ethan, exactly as rule (4) demands.",
  },
  {
  id: "math-1-107",
@@ -2690,7 +2690,7 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  difficulty_level: "5/5",
  sort_order: 29,
- solution_overview: "Begin with the question the rules answer most sharply: does Petra review?\n\nSuppose she does not. Rule (6) says Sana reviews only if Petra does, so Sana is out too — and rule (4) demanded at least one of Petra and Sana. Contradiction, so **Petra reviews in every valid assignment**.\n\nFrom there the rules fall like a row of switches:\n\n- **Rule (1):** Petra in, so Quinn out.\n- **Rule (3):** Quinn out, so Theo in.\n- **Rule (5):** Theo in, so Ravi out.\n- **Rule (2):** Ravi is out, so Sana must carry that rule — Sana in.\n- **Rule (6):** Sana needs Petra, who is already in. ✓\n\n**Reviewers: Petra, Sana and Theo. Not reviewing: Quinn and Ravi.**\n\nEvery single status was forced; there was never a moment where two options both survived, so this assignment is the **only** one. In particular Ravi is squeezed out by the chain every time, and Quinn, whom Petra always excludes, never reviews either.",
+ solution_overview: "Begin with the question the rules answer most sharply: does Petra review?\n\nSuppose she does not. Rule (6) says Sana reviews only if Petra does, so Sana is out too — and rule (4) demanded at least one of Petra and Sana. Contradiction, so **Petra reviews in every valid assignment**.\n\nFrom there the rules fall like a row of switches:\n\n• **Rule (1):** Petra in, so Quinn out.\n\n• **Rule (3):** Quinn out, so Theo in.\n\n• **Rule (5):** Theo in, so Ravi out.\n\n• **Rule (2):** Ravi is out, so Sana must carry that rule — Sana in.\n\n• **Rule (6):** Sana needs Petra, who is already in. ✓\n\n**Reviewers: Petra, Sana and Theo. Not reviewing: Quinn and Ravi.**\n\nEvery single status was forced; there was never a moment where two options both survived, so this assignment is the **only** one. In particular Ravi is squeezed out by the chain every time, and Quinn, whom Petra always excludes, never reviews either.",
  },
  {
  id: "math-1-108",
@@ -2715,6 +2715,6 @@ solution_overview: "A coverage assignment is an ordered pair $(\\text{rep},\\tex
  ],
  difficulty_level: "5/5",
  sort_order: 30,
- solution_overview: "Rule (8) — at least four competitors — is the hinge here, so keep an eye on the head count throughout.\n\n**Victor has to compete.** Suppose he does not. Rule (1) then removes Uma, and rule (7) read backwards (\"no Uma, no Bianca\") removes Bianca. Rule (3) allows only one of Wendy and Xavier, so we are choosing from a badly shrunken pool:\n\n- Wendy in, Xavier out: only Wendy, Yara and Zane are available — **at most 3**.\n- Xavier in, Wendy out: rule (4) removes Yara, rule (5) then requires Zane, and only Xavier and Zane are left — **exactly 2**.\n\nBoth branches fall below the floor of four, so **Victor competes**. Rule (1) then brings Uma, rule (2) brings Wendy, and rule (3) therefore locks Xavier **out**.\n\n**The forced core** is Uma, Victor and Wendy — three people, so at least one more is needed, which rule (5) supplies in any case.\n\n**Filling the last places.** Among Yara, Zane and Bianca, rule (5) asks for Yara or Zane and rule (6) forbids Zane and Bianca together. Four combinations survive:\n\n| Extra competitors | Roster size |\n| --- | --- |\n| Yara | 4 |\n| Yara and Bianca | 5 |\n| Zane | 4 |\n| Yara and Zane | 5 |\n\nSo there are four rosters, of size 4 or 5. A six-person roster would have to leave exactly one finalist out, and that finalist would have to be Xavier — but then Yara, Zane and Bianca would all compete, which rule (6) will not allow.",
+ solution_overview: "Rule (8) — at least four competitors — is the hinge here, so keep an eye on the head count throughout.\n\n**Victor has to compete.** Suppose he does not. Rule (1) then removes Uma, and rule (7) read backwards (\"no Uma, no Bianca\") removes Bianca. Rule (3) allows only one of Wendy and Xavier, so we are choosing from a badly shrunken pool:\n\n• Wendy in, Xavier out: only Wendy, Yara and Zane are available — **at most 3**.\n\n• Xavier in, Wendy out: rule (4) removes Yara, rule (5) then requires Zane, and only Xavier and Zane are left — **exactly 2**.\n\nBoth branches fall below the floor of four, so **Victor competes**. Rule (1) then brings Uma, rule (2) brings Wendy, and rule (3) therefore locks Xavier **out**.\n\n**The forced core** is Uma, Victor and Wendy — three people, so at least one more is needed, which rule (5) supplies in any case.\n\n**Filling the last places.** Among Yara, Zane and Bianca, rule (5) asks for Yara or Zane and rule (6) forbids Zane and Bianca together. Four combinations survive:\n\n| Extra competitors | Roster size |\n| --- | --- |\n| Yara | 4 |\n| Yara and Bianca | 5 |\n| Zane | 4 |\n| Yara and Zane | 5 |\n\nSo there are four rosters, of size 4 or 5. A six-person roster would have to leave exactly one finalist out, and that finalist would have to be Xavier — but then Yara, Zane and Bianca would all compete, which rule (6) will not allow.",
  },
 ];

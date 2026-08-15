@@ -913,7 +913,20 @@ function isPartStartPara(trimmed: string): boolean {
  * Spacing mirrors the samples: ~24–32px between steps, generous air around equations.
  */
 function MathProse({ text, className }: { text: string; className?: string }) {
-  const paragraphs = text.split(/\n\n+/).map((p) => p.trim()).filter(Boolean);
+  // Keep blank-line paragraphs, but also split consecutive bullet lines apart.
+  const paragraphs = text
+    .split(/\n\n+/)
+    .flatMap((block) => {
+      const trimmed = block.trim();
+      if (!trimmed) return [];
+      if (/^[•\-]/.test(trimmed) && /\n[•\-]/.test(trimmed)) {
+        return trimmed
+          .split(/\n(?=[•\-]\s+)/)
+          .map((line) => line.trim())
+          .filter(Boolean);
+      }
+      return [trimmed];
+    });
 
   // Group: each numbered step keeps its following prose/math until the next step/part/claim.
   type Chunk =
@@ -923,6 +936,7 @@ function MathProse({ text, className }: { text: string; className?: string }) {
     | { kind: "reason"; number: string; body: string }
     | { kind: "conclusion"; body: string }
     | { kind: "note"; body: string }
+    | { kind: "bullet"; body: string }
     | { kind: "claim"; text: string }
     | { kind: "math"; text: string }
     | { kind: "table"; text: string }
@@ -973,6 +987,13 @@ function MathProse({ text, className }: { text: string; className?: string }) {
     const noteLead = p.match(/^\*\*(Note\.?)\*\*\s*([\s\S]*)$/i);
     if (noteLead) {
       chunks.push({ kind: "note", body: noteLead[2] });
+      i += 1;
+      continue;
+    }
+
+    const bulletLead = p.match(/^[•\-]\s+([\s\S]+)$/);
+    if (bulletLead) {
+      chunks.push({ kind: "bullet", body: bulletLead[1] });
       i += 1;
       continue;
     }
@@ -1056,6 +1077,17 @@ function MathProse({ text, className }: { text: string; className?: string }) {
               <span className="font-bold">Note: </span>
               <RichMathLine text={chunk.body} />
             </aside>
+          );
+        }
+
+        if (chunk.kind === "bullet") {
+          return (
+            <div key={idx} className="mb-1.5 flex gap-2.5 leading-[1.65]">
+              <span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-[#1f1f1f]" />
+              <p className="m-0 min-w-0 flex-1">
+                <RichMathLine text={chunk.body} />
+              </p>
+            </div>
           );
         }
 
