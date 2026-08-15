@@ -496,23 +496,49 @@ def expl_mean(letter, stmt, is_true, params, _old):
         lines.append("$$E[X] = np$$")
         lines.append("")
         mA, mB = n * pA, n * pB
+        s = stmt.lower()
+        only_a = bool(re.search(r"\bA\b|'s", stmt)) and not re.search(r"\bB\b", stmt)
+        only_b = bool(re.search(r"\bB\b", stmt)) and not re.search(r"\bA\b", stmt)
+
+        if "one-fourth" in s or "1/4" in s or "quarter" in s:
+            lines.append(f"For side A, $p_A = {fmt(pA, 4)}$ and $n = {n}$:")
+            lines.append("")
+            lines.append(f"$$E[A] = {n} \\cdot {fmt(pA, 4)} = {fmt(mA, 4)}$$")
+            lines.append("")
+            lines.append(
+                f"One-fourth of the $n = {n}$ trials is ${n}/4 = {fmt(n/4, 4)}$. "
+                f"These match, so the statement is {'True' if is_true else 'False'}."
+            )
+            return "\n\n".join(lines)
+
+        if only_a:
+            lines.append(f"$$E[A] = {n} \\cdot {fmt(pA, 4)} = {fmt(mA, 4)}$$")
+            lines.append("")
+            lines.append(f"Compared with the claim, the statement is {'True' if is_true else 'False'}.")
+            return "\n\n".join(lines)
+        if only_b:
+            lines.append(f"$$E[B] = {n} \\cdot {fmt(pB, 4)} = {fmt(mB, 4)}$$")
+            lines.append("")
+            lines.append(f"Compared with the claim, the statement is {'True' if is_true else 'False'}.")
+            return "\n\n".join(lines)
+
         lines.append(f"$$E[A] = {n} \\cdot {fmt(pA, 4)} = {fmt(mA, 4)}$$")
         lines.append("")
         lines.append(f"$$E[B] = {n} \\cdot {fmt(pB, 4)} = {fmt(mB, 4)}$$")
         lines.append("")
-        if "%" in stmt or "percent" in stmt.lower():
+        if "%" in stmt or "percent" in s:
             inc = 100 * (mB / mA - 1) if mA else float("inf")
             lines.append(
                 f"The percent increase of B over A is "
                 f"$100\\big(E[B]/E[A] - 1\\big) = 100\\big({fmt(mB / mA, 4)} - 1\\big) "
                 f"\\approx {fmt(inc, 2)}\\%$."
             )
-        elif "double" in stmt.lower():
+        elif "double" in s:
             lines.append(f"The ratio $E[B]/E[A] = {fmt(mB / mA, 4)}$ (double would be $2$).")
-        elif "exactly" in stmt.lower() or "more than" in stmt.lower() or "at least" in stmt.lower() or "exceeds" in stmt.lower():
+        else:
             lines.append(
-                f"The difference $E[B] - E[A] = {fmt(mB - mA, 4)}$, "
-                f"and equivalently $n(p_B - p_A) = {n}\\cdot({fmt(pB, 4)} - {fmt(pA, 4)}) = {fmt(n * (pB - pA), 4)}$."
+                f"The difference is $E[B] - E[A] = {fmt(mB - mA, 4)}$, "
+                f"which is the same as $n(p_B - p_A) = {n}\\cdot({fmt(pB, 4)} - {fmt(pA, 4)}) = {fmt(n * (pB - pA), 4)}$."
             )
         lines.append("")
         lines.append(f"Matching these figures to the claim, the statement is {'True' if is_true else 'False'}.")
