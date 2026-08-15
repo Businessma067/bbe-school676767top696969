@@ -24,9 +24,10 @@ After adding a new math chapter file, register it in `MATH_COURSE_THEORY` with `
 ## Scope rule (critical)
 
 1. Write **only topics that exist on the live course / current guide for that chapter**.
-2. Do **not** invent extra theory (e.g. Poisson, calculator manuals, skewness) just because it is “related”.
-3. If expanding for beginners, expand **inside** existing section IDs. Do not invent new numbered sections that are not part of the chapter map.
-4. Keep formulas, numbers, and exam meanings intact. Explain more; do not change math truth.
+2. Do **not** invent extra theory just because it is “related”. Scope follows the **live task bank**, not a conservative guess.
+3. For Math Ch13, the live bank already includes Poisson approximation, skewness/mode, percentage cutoffs, unequal-$p$ sums, and linear scoring. Those belong in theory when present in tasks.
+4. If expanding for beginners, expand **inside** existing section IDs when possible. New numbered sections are allowed only when the live chapter map needs them.
+5. Keep formulas, numbers, and exam meanings intact. Explain more; do not change math truth.
 
 ---
 
