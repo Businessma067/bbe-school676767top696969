@@ -1,18 +1,24 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import "katex/dist/katex.min.css";
 import { BookOpen, Target, AlertTriangle, Download, Maximize2, Minimize2 } from "lucide-react";
 import { getEconomicsCourseTheory } from "@/data/economics-course-theory";
+import { getMathCourseTheory } from "@/data/math-course-theory";
 import { TheoryFigure } from "@/components/theory/TheoryFigure";
 import { cn } from "@/lib/utils";
 
-const MATERIALS_PDF_URL = "/bbe-economics-textbook.pdf";
-const MATERIALS_PDF_NAME = "BBE-Economics-Full-Course-Theory.pdf";
+const ECONOMICS_MATERIALS_PDF_URL = "/bbe-economics-textbook.pdf";
+const ECONOMICS_MATERIALS_PDF_NAME = "BBE-Economics-Full-Course-Theory.pdf";
 
 type Props = {
   chapter: number;
   title: string;
   onGoToPractice: () => void;
+  /** Defaults to economics (existing Full Course behaviour). */
+  subject?: "economics" | "math";
 };
 
 type TocItem = { id: string; label: string; level: 2 | 3 };
@@ -63,10 +69,19 @@ function segmentTheory(markdown: string): Segment[] {
   return segments;
 }
 
-function MdBlock({ text, dense }: { text: string; dense?: boolean }) {
+function MdBlock({
+  text,
+  dense,
+  enableMath = false,
+}: {
+  text: string;
+  dense?: boolean;
+  enableMath?: boolean;
+}) {
   return (
     <ReactMarkdown
-      remarkPlugins={[remarkGfm]}
+      remarkPlugins={enableMath ? [remarkGfm, remarkMath] : [remarkGfm]}
+      rehypePlugins={enableMath ? [rehypeKatex] : undefined}
       components={{
         h1: ({ children }) => (
           <h1
@@ -194,9 +209,20 @@ function MdBlock({ text, dense }: { text: string; dense?: boolean }) {
   );
 }
 
-export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
-  const theory = getEconomicsCourseTheory(chapter);
-  const markdown = theory?.markdown ?? "";
+export function TheoryReader({
+  chapter,
+  title,
+  onGoToPractice,
+  subject = "economics",
+}: Props) {
+  const mathTheory = subject === "math" ? getMathCourseTheory(chapter) : undefined;
+  const economicsTheory = subject === "economics" ? getEconomicsCourseTheory(chapter) : undefined;
+  const markdown = (subject === "math" ? mathTheory?.markdown : economicsTheory?.markdown) ?? "";
+  const materialsPdfUrl =
+    subject === "math" ? mathTheory?.materialsPdfUrl : ECONOMICS_MATERIALS_PDF_URL;
+  const materialsPdfName =
+    subject === "math" ? mathTheory?.materialsPdfName : ECONOMICS_MATERIALS_PDF_NAME;
+  const enableMath = subject === "math";
   const toc = useMemo(() => extractToc(markdown), [markdown]);
   const segments = useMemo(() => segmentTheory(markdown), [markdown]);
   const [progress, setProgress] = useState(0);
@@ -305,7 +331,12 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
       seg.kind === "figure" ? (
         <TheoryFigure key={`f-${seg.id}-${i}`} id={seg.id} caption={seg.caption} />
       ) : (
-        <MdBlock key={`m-${i}`} text={seg.text} dense={readerMode} />
+        <MdBlock
+          key={`m-${i}`}
+          text={seg.text}
+          dense={readerMode}
+          enableMath={enableMath}
+        />
       ),
     );
   }
@@ -340,15 +371,17 @@ export function TheoryReader({ chapter, title, onGoToPractice }: Props) {
                 <Maximize2 className="h-4 w-4" />
                 <span className="hidden xs:inline sm:inline">Reader</span>
               </button>
-              <a
-                href={MATERIALS_PDF_URL}
-                download={MATERIALS_PDF_NAME}
-                title="Download materials"
-                className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:px-3 sm:text-sm"
-              >
-                <Download className="h-4 w-4" />
-                <span className="hidden sm:inline">Download</span>
-              </a>
+              {materialsPdfUrl && materialsPdfName && (
+                <a
+                  href={materialsPdfUrl}
+                  download={materialsPdfName}
+                  title="Download materials"
+                  className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:px-3 sm:text-sm"
+                >
+                  <Download className="h-4 w-4" />
+                  <span className="hidden sm:inline">Download</span>
+                </a>
+              )}
               <button
                 onClick={onGoToPractice}
                 className="inline-flex items-center gap-1.5 rounded-md bg-primary px-2.5 py-2 text-xs font-bold text-primary-foreground hover:bg-primary/90 sm:px-3 sm:text-sm"

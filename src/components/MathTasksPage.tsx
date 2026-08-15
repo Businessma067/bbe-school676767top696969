@@ -4,6 +4,7 @@ import { AuthNav } from "@/components/AuthNav";
 import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMath";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
+import { TheoryReader } from "@/components/TheoryReader";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
 import { Collapse } from "@/components/Collapse";
@@ -13,6 +14,7 @@ import {
   type MathChapter,
   type MathTask,
 } from "@/data/math-chapters";
+import { mathChapterHasTheory } from "@/data/math-course-theory";
 import {
   Check,
   X,
@@ -80,6 +82,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
   const chapters = MATH_CHAPTERS;
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
+  const [theoryChapter, setTheoryChapter] = useState<number | null>(null);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
     () => Object.fromEntries(chapters.map((c) => [c.num, false])),
@@ -177,6 +180,8 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               sidebarCollapsed
                 ? "hidden lg:pointer-events-none lg:block lg:w-0 lg:-translate-x-4 lg:opacity-0"
                 : "lg:w-80 lg:translate-x-0 lg:opacity-100",
+              // On phones, hide the chapter list while reading theory so text has the screen.
+              theoryChapter !== null && "hidden lg:block",
             )}
             aria-hidden={sidebarCollapsed}
           >
@@ -203,6 +208,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                   const pct = total === 0 ? 0 : Math.round((done / total) * 100);
                   const isOpen = !!expanded[ch.num];
                   const isActiveCh = activeChapter === ch.num;
+                  const hasTheory = mathChapterHasTheory(ch.num);
                   return (
                     <li key={ch.num} className="overflow-hidden rounded-xl border border-transparent">
                       <div
@@ -211,27 +217,64 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                           isActiveCh ? "bg-primary/10" : "hover:bg-secondary/70",
                         )}
                       >
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }));
-                            setActiveChapter(ch.num);
-                          }}
-                          className="flex min-w-0 flex-1 items-center gap-2 px-3 py-2.5 text-left"
-                        >
-                          <ChevronDown
-                            className={cn(
-                              "h-4 w-4 shrink-0 text-muted-foreground transition-transform",
-                              !isOpen && "-rotate-90",
-                            )}
-                          />
-                          <div className="flex min-w-0 flex-1 items-center gap-2">
-                            <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">
-                              {ch.num}. {ch.title}
-                            </span>
-                            <ChapterProgressRing pct={pct} done={done} total={total} />
-                          </div>
-                        </button>
+                        {hasTheory ? (
+                          <>
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }))
+                              }
+                              className="grid w-9 shrink-0 place-items-center rounded-l-xl text-muted-foreground hover:bg-secondary/60"
+                              aria-label={isOpen ? "Collapse chapter" : "Expand chapter"}
+                            >
+                              <ChevronDown
+                                className={cn(
+                                  "h-4 w-4 transition-transform",
+                                  !isOpen && "-rotate-90",
+                                )}
+                              />
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setActiveChapter(ch.num);
+                                setTheoryChapter(ch.num);
+                              }}
+                              className="flex min-w-0 flex-1 items-center gap-2 py-2.5 pr-2 text-left hover:bg-secondary/60"
+                              title="Open learning material for this chapter"
+                            >
+                              <div className="flex min-w-0 flex-1 items-center gap-2">
+                                <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">
+                                  {ch.num}. {ch.title}
+                                </span>
+                                <ChapterProgressRing pct={pct} done={done} total={total} />
+                              </div>
+                            </button>
+                          </>
+                        ) : (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setExpanded((e) => ({ ...e, [ch.num]: !e[ch.num] }));
+                              setTheoryChapter(null);
+                              setActiveChapter(ch.num);
+                            }}
+                            className="flex min-w-0 flex-1 items-center gap-2 px-3 py-2.5 text-left"
+                          >
+                            <ChevronDown
+                              className={cn(
+                                "h-4 w-4 shrink-0 text-muted-foreground transition-transform",
+                                !isOpen && "-rotate-90",
+                              )}
+                            />
+                            <div className="flex min-w-0 flex-1 items-center gap-2">
+                              <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">
+                                {ch.num}. {ch.title}
+                              </span>
+                              <ChapterProgressRing pct={pct} done={done} total={total} />
+                            </div>
+                          </button>
+                        )}
                         <button
                           type="button"
                           onClick={(e) => {
@@ -322,6 +365,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                               <button
                                                 type="button"
                                                 onClick={() => {
+                                                  setTheoryChapter(null);
                                                   setActiveChapter(ch.num);
                                                   setTimeout(() => setActiveIdx(i), 0);
                                                 }}
@@ -399,6 +443,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                                     <button
                                       type="button"
                                       onClick={() => {
+                                        setTheoryChapter(null);
                                         setActiveChapter(ch.num);
                                         setTimeout(() => setActiveIdx(i), 0);
                                       }}
@@ -479,7 +524,10 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               <div className="mt-3 shrink-0 border-t border-border pt-3">
                 <button
                   type="button"
-                  onClick={() => setActiveChapter("revision")}
+                  onClick={() => {
+                    setTheoryChapter(null);
+                    setActiveChapter("revision");
+                  }}
                   className={cn(
                     "w-full rounded-xl border p-3 text-left transition-all",
                     activeChapter === "revision"
@@ -526,6 +574,19 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
             </button>
           )}
 
+          {theoryChapter !== null ? (
+            <TheoryReader
+              subject="math"
+              chapter={theoryChapter}
+              title={chapters.find((c) => c.num === theoryChapter)?.title ?? ""}
+              onGoToPractice={() => {
+                setTheoryChapter(null);
+                setActiveChapter(theoryChapter);
+                setActiveIdx(0);
+              }}
+            />
+          ) : (
+            <>
           {activeChapter === null && (
             <div className="rounded-2xl border border-dashed border-border bg-card p-10 text-center">
               <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
@@ -649,8 +710,11 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
               </button>
             </div>
           )}
+            </>
+          )}
         </main>
 
+        {theoryChapter === null && (
         <MathPracticeAside
           showExplanations={
             showExplanations &&
@@ -670,6 +734,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
             />
           ) : null}
         </MathPracticeAside>
+        )}
       </div>
 
       {customResetOpen && (
