@@ -225,19 +225,21 @@ export function TheoryReader({
   const enableMath = subject === "math";
   const toc = useMemo(() => extractToc(markdown), [markdown]);
   const segments = useMemo(() => segmentTheory(markdown), [markdown]);
-  const [progress, setProgress] = useState(0);
   const [activeId, setActiveId] = useState<string>("");
   const [readerMode, setReaderMode] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const tocScrollRef = useRef<HTMLDivElement>(null);
+  const progressBarRef = useRef<HTMLDivElement>(null);
   const chipRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const rafRef = useRef<number | null>(null);
   const activeIdRef = useRef(activeId);
+  const scrollingByUserRef = useRef(false);
+  const scrollIdleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   activeIdRef.current = activeId;
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTo({ top: 0 });
-    setProgress(0);
+    if (progressBarRef.current) progressBarRef.current.style.transform = "scaleX(0)";
     setActiveId(toc[0]?.id ?? "");
     if (tocScrollRef.current) tocScrollRef.current.scrollTo({ left: 0 });
     setReaderMode(false);
@@ -259,6 +261,9 @@ export function TheoryReader({
 
   useEffect(() => {
     if (readerMode) return; // strip hidden in reader mode
+    // While the user is dragging the article scroll, don't animate the TOC strip —
+    // smooth horizontal scroll there fights the main scroll and feels laggy.
+    if (scrollingByUserRef.current) return;
     const container = tocScrollRef.current;
     const chip = chipRefs.current[activeId];
     if (!container || !chip || !activeId) return;
@@ -281,10 +286,16 @@ export function TheoryReader({
       return;
     }
 
-    container.scrollTo({ left: nextLeft, behavior: "smooth" });
+    container.scrollTo({ left: nextLeft, behavior: "auto" });
   }, [activeId, readerMode]);
 
   const onScroll = () => {
+    scrollingByUserRef.current = true;
+    if (scrollIdleTimerRef.current) clearTimeout(scrollIdleTimerRef.current);
+    scrollIdleTimerRef.current = setTimeout(() => {
+      scrollingByUserRef.current = false;
+    }, 120);
+
     if (rafRef.current != null) return;
     rafRef.current = requestAnimationFrame(() => {
       rafRef.current = null;
@@ -292,7 +303,11 @@ export function TheoryReader({
       if (!el) return;
 
       const max = el.scrollHeight - el.clientHeight;
-      setProgress(max > 0 ? Math.min(100, Math.max(0, (el.scrollTop / max) * 100)) : 0);
+      const pct = max > 0 ? Math.min(100, Math.max(0, (el.scrollTop / max) * 100)) : 0;
+      // Update the bar via DOM — avoid React re-renders on every scroll frame.
+      if (progressBarRef.current) {
+        progressBarRef.current.style.transform = `scaleX(${pct / 100})`;
+      }
 
       const rootTop = el.getBoundingClientRect().top;
       let current = toc[0]?.id ?? "";
@@ -308,6 +323,7 @@ export function TheoryReader({
   useEffect(() => {
     return () => {
       if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
+      if (scrollIdleTimerRef.current) clearTimeout(scrollIdleTimerRef.current);
     };
   }, []);
 
@@ -315,6 +331,8 @@ export function TheoryReader({
     const el = scrollRef.current;
     const node = el?.querySelector<HTMLElement>(`#${CSS.escape(id)}`);
     if (!el || !node) return;
+    scrollingByUserRef.current = false;
+    setActiveId(id);
     el.scrollTo({ top: Math.max(0, node.offsetTop - 8), behavior: "smooth" });
   };
 
@@ -393,14 +411,15 @@ export function TheoryReader({
           </div>
           <div className="h-1 w-full overflow-hidden rounded-full bg-secondary">
             <div
+              ref={progressBarRef}
               className="h-full w-full origin-left rounded-full bg-primary will-change-transform"
-              style={{ transform: `scaleX(${progress / 100})` }}
+              style={{ transform: "scaleX(0)" }}
             />
           </div>
           {toc.length > 0 && (
             <div
               ref={tocScrollRef}
-              className="flex gap-1.5 overflow-x-auto scroll-smooth pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+              className="flex gap-1.5 overflow-x-auto pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
             >
               {toc.map((item) => (
                 <button
@@ -446,7 +465,7 @@ export function TheoryReader({
         ref={scrollRef}
         onScroll={onScroll}
         className={cn(
-          "relative flex-1 overflow-y-auto bg-[oklch(0.985_0.005_75)]",
+          "relative flex-1 overflow-y-auto overscroll-y-contain bg-[oklch(0.985_0.005_75)] [-webkit-overflow-scrolling:touch]",
           readerMode ? "min-h-0" : "max-h-[calc(100dvh-10rem)] sm:max-h-[calc(100vh-11rem)]",
         )}
       >
