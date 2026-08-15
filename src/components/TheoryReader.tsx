@@ -100,7 +100,7 @@ function MdBlock({
             <h2
               id={id}
               className={cn(
-                "break-words border-b border-border/70 font-display font-bold text-foreground first:mt-0",
+                "break-words border-b border-border/70 font-display font-bold tracking-tight text-foreground first:mt-0",
                 dense
                   ? "mb-2 mt-6 scroll-mt-3 pb-1.5 text-lg leading-snug"
                   : "mb-3 mt-10 scroll-mt-24 pb-2 text-xl sm:scroll-mt-4",
@@ -117,7 +117,7 @@ function MdBlock({
             <h3
               id={id}
               className={cn(
-                "break-words font-bold text-foreground",
+                "break-words font-display font-semibold tracking-tight text-foreground",
                 dense
                   ? "mb-1.5 mt-5 scroll-mt-3 text-base leading-snug"
                   : "mb-2 mt-8 scroll-mt-24 text-lg sm:scroll-mt-4",
@@ -130,7 +130,7 @@ function MdBlock({
         p: ({ children }) => (
           <p
             className={cn(
-              "break-words text-foreground/95",
+              "break-words font-serif text-foreground/95",
               dense
                 ? "mb-3 text-[14px] leading-6"
                 : "mb-4 text-[15px] leading-7 sm:text-base sm:leading-7",
@@ -144,7 +144,7 @@ function MdBlock({
         ul: ({ children }) => (
           <ul
             className={cn(
-              "mb-4 list-disc space-y-1.5 pl-5",
+              "mb-4 list-disc space-y-1.5 pl-5 font-serif marker:text-primary",
               dense ? "text-[14px] leading-6" : "text-[15px] leading-7 sm:text-base",
             )}
           >
@@ -154,7 +154,7 @@ function MdBlock({
         ol: ({ children }) => (
           <ol
             className={cn(
-              "mb-4 list-decimal space-y-1.5 pl-5",
+              "mb-4 list-decimal space-y-1.5 pl-5 font-serif marker:font-semibold marker:text-primary",
               dense ? "text-[14px] leading-6" : "text-[15px] leading-7 sm:text-base",
             )}
           >
@@ -165,7 +165,7 @@ function MdBlock({
         blockquote: ({ children }) => (
           <blockquote
             className={cn(
-              "mb-5 border-l-4 border-primary/70 bg-primary/5 px-3 text-foreground sm:px-4",
+              "mb-5 rounded-r-xl border-l-4 border-primary/70 bg-primary/5 px-3 font-serif text-foreground shadow-[0_1px_0_rgba(0,0,0,0.03)] sm:px-4 [&_p:last-child]:mb-0",
               dense ? "py-2.5 text-[14px] leading-6" : "py-3 text-[15px] leading-7",
             )}
           >
@@ -173,7 +173,7 @@ function MdBlock({
           </blockquote>
         ),
         table: ({ children }) => (
-          <div className="my-4 w-full overflow-x-auto border border-border bg-white [-webkit-overflow-scrolling:touch]">
+          <div className="my-5 w-full overflow-x-auto rounded-xl border border-border bg-white shadow-sm [-webkit-overflow-scrolling:touch]">
             <table className="w-full min-w-[18rem] border-collapse text-[12px] sm:min-w-[20rem] sm:text-sm">{children}</table>
           </div>
         ),
@@ -199,6 +199,26 @@ function MdBlock({
             >
               {children}
             </td>
+          );
+        },
+        pre: ({ children }) => (
+          <pre className="my-5 overflow-x-auto rounded-xl border border-border bg-white px-4 py-3.5 font-mono text-[13px] leading-6 text-foreground shadow-sm">
+            {children}
+          </pre>
+        ),
+        code: ({ className, children }) => {
+          const isBlock = className?.startsWith("language-");
+          return (
+            <code
+              className={cn(
+                isBlock
+                  ? "font-mono text-[0.95em]"
+                  : "rounded-md border border-border/70 bg-secondary/80 px-1.5 py-0.5 font-mono text-[0.88em]",
+                className,
+              )}
+            >
+              {children}
+            </code>
           );
         },
         hr: () => <hr className={cn("border-border", dense ? "my-5" : "my-8")} />,
@@ -471,7 +491,7 @@ export function TheoryReader({
       >
         <article
           className={cn(
-            "mx-auto max-w-3xl",
+            "mx-auto max-w-3xl [&>h1+p]:text-foreground/75 [&>h1+p]:sm:text-[17px] [&>h1+p]:sm:leading-8 [&_.katex]:text-[1.03em] [&_.katex-display]:my-5 [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-hidden [&_.katex-display]:rounded-xl [&_.katex-display]:border [&_.katex-display]:border-border/70 [&_.katex-display]:bg-white [&_.katex-display]:px-3 [&_.katex-display]:py-3 [&_.katex-display]:shadow-sm",
             readerMode ? "px-3 py-4 pb-20 sm:px-8 sm:py-8 sm:pb-10" : "px-3 py-5 sm:px-8 sm:py-10",
           )}
         >
