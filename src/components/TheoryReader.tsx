@@ -253,8 +253,6 @@ export function TheoryReader({
   const chipRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const rafRef = useRef<number | null>(null);
   const activeIdRef = useRef(activeId);
-  const scrollingByUserRef = useRef(false);
-  const scrollIdleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   activeIdRef.current = activeId;
 
   useEffect(() => {
@@ -279,16 +277,13 @@ export function TheoryReader({
     };
   }, [readerMode]);
 
-  useEffect(() => {
-    if (readerMode) return; // strip hidden in reader mode
-    // While the user is dragging the article scroll, don't animate the TOC strip —
-    // smooth horizontal scroll there fights the main scroll and feels laggy.
-    if (scrollingByUserRef.current) return;
+  const ensureTocChipVisible = (id: string) => {
+    if (readerMode) return;
     const container = tocScrollRef.current;
-    const chip = chipRefs.current[activeId];
-    if (!container || !chip || !activeId) return;
+    const chip = chipRefs.current[id];
+    if (!container || !chip || !id) return;
 
-    const pad = 48;
+    const pad = 40;
     const chipLeft = chip.offsetLeft;
     const chipRight = chipLeft + chip.offsetWidth;
     const viewLeft = container.scrollLeft;
@@ -299,23 +294,23 @@ export function TheoryReader({
       nextLeft = Math.max(0, chipLeft - pad);
     } else if (chipRight > viewRight - pad) {
       nextLeft = Math.min(
-        container.scrollWidth - container.clientWidth,
+        Math.max(0, container.scrollWidth - container.clientWidth),
         chipRight - container.clientWidth + pad,
       );
     } else {
       return;
     }
 
-    container.scrollTo({ left: nextLeft, behavior: "auto" });
+    if (Math.abs(nextLeft - viewLeft) < 1) return;
+    container.scrollLeft = nextLeft;
+  };
+
+  useEffect(() => {
+    ensureTocChipVisible(activeId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- readerMode gates visibility; activeId drives the chip
   }, [activeId, readerMode]);
 
   const onScroll = () => {
-    scrollingByUserRef.current = true;
-    if (scrollIdleTimerRef.current) clearTimeout(scrollIdleTimerRef.current);
-    scrollIdleTimerRef.current = setTimeout(() => {
-      scrollingByUserRef.current = false;
-    }, 120);
-
     if (rafRef.current != null) return;
     rafRef.current = requestAnimationFrame(() => {
       rafRef.current = null;
@@ -336,14 +331,18 @@ export function TheoryReader({
         if (!node) continue;
         if (node.getBoundingClientRect().top - rootTop <= 56) current = item.id;
       }
-      if (current !== activeIdRef.current) setActiveId(current);
+      if (current !== activeIdRef.current) {
+        activeIdRef.current = current;
+        setActiveId(current);
+        // Keep the active subtopic chip on-screen while scrolling the article.
+        ensureTocChipVisible(current);
+      }
     });
   };
 
   useEffect(() => {
     return () => {
       if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
-      if (scrollIdleTimerRef.current) clearTimeout(scrollIdleTimerRef.current);
     };
   }, []);
 
@@ -351,9 +350,11 @@ export function TheoryReader({
     const el = scrollRef.current;
     const node = el?.querySelector<HTMLElement>(`#${CSS.escape(id)}`);
     if (!el || !node) return;
-    scrollingByUserRef.current = false;
+    // Instant jump — smooth scroll feels delayed on long theory pages.
+    activeIdRef.current = id;
     setActiveId(id);
-    el.scrollTo({ top: Math.max(0, node.offsetTop - 8), behavior: "smooth" });
+    ensureTocChipVisible(id);
+    el.scrollTop = Math.max(0, node.offsetTop - 8);
   };
 
   let body: ReactNode = null;
