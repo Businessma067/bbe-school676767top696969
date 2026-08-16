@@ -16,6 +16,7 @@ import { AuthNav } from "@/components/AuthNav";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
+import { useSetPracticeCase } from "@/lib/practice-case-context";
 
 // Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
 const phantomCountFor = (_ch: number): number => 0;
@@ -190,6 +191,41 @@ function EconomicsTasks() {
         ? []
         : byChapter.get(activeChapter) ?? [];
   const activeCase = activeList[activeIdx];
+  const setPracticeCase = useSetPracticeCase();
+
+  useEffect(() => {
+    if (theoryChapter !== null) {
+      const ch = CHAPTERS.find((c) => c.num === theoryChapter);
+      setPracticeCase({
+        subject: "economics",
+        chapterLabel: `Chapter ${theoryChapter}`,
+        taskId: `theory-econ-${theoryChapter}`,
+        title: ch?.title ? `${ch.title} (theory)` : `Theory · Chapter ${theoryChapter}`,
+        context: "",
+        statements: [],
+        theorySnippet: `Economics theory for chapter ${theoryChapter}${ch?.title ? `: ${ch.title}` : ""}.`,
+      });
+      return () => setPracticeCase(null);
+    }
+    if (activeCase && !isLocked(activeChapter, activeIdx)) {
+      const chNum = chapterOf(activeCase);
+      const chTitle = CHAPTERS.find((c) => c.num === chNum)?.title ?? "";
+      setPracticeCase({
+        subject: "economics",
+        chapterLabel:
+          activeChapter === "revision"
+            ? "Revision"
+            : `Chapter ${chNum}${chTitle ? ` · ${chTitle}` : ""}`,
+        taskId: activeCase.id,
+        title: `${activeCase.case_id} · ${activeCase.title}`,
+        context: activeCase.context,
+        statements: activeCase.statements,
+      });
+    } else {
+      setPracticeCase(null);
+    }
+    return () => setPracticeCase(null);
+  }, [theoryChapter, activeCase, activeChapter, activeIdx, setPracticeCase]);
 
   useEffect(() => {
     if (!timed.enabled) return;
@@ -460,7 +496,7 @@ function EconomicsTasks() {
         )}
 
         {/* Main content */}
-        <main className="min-w-0 flex-1">
+        <main className="min-w-0 flex-1" data-practice-surface>
           {sidebarCollapsed && (
             <button
               type="button"
@@ -1128,7 +1164,7 @@ function ExplanationPanels({
   }, [reveal]);
 
   return (
-    <div className="flex h-full flex-col gap-3">
+    <div className="flex h-full flex-col gap-3" data-practice-surface>
       {/* Header */}
       <div className="flex items-center justify-between rounded-2xl border border-primary/40 bg-primary/5 px-4 py-2.5">
         <div className="flex items-center gap-2">

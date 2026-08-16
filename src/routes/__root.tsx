@@ -13,7 +13,9 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Breadcrumbs } from "../components/Breadcrumbs";
 import { FloatingAssistant } from "../components/FloatingAssistant";
+import { ExplainSelectionChip } from "../components/ExplainSelectionChip";
 import { IntroSplash } from "../components/IntroSplash";
+import { PracticeCaseProvider } from "../lib/practice-case-context";
 
 function NotFoundComponent() {
   return (
@@ -131,11 +133,14 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <IntroSplash />
-      <Breadcrumbs />
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
-      <FloatingAssistant />
+      <PracticeCaseProvider>
+        <IntroSplash />
+        <Breadcrumbs />
+        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+        <Outlet />
+        <ExplainSelectionChip />
+        <FloatingAssistant />
+      </PracticeCaseProvider>
     </QueryClientProvider>
   );
 }

@@ -8,6 +8,7 @@ import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContex
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
+import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { Collapse } from "@/components/Collapse";
 import {
   DEMO_ENGLISH_FREE_LIMIT,
@@ -128,6 +129,38 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
       activeCase.kind === "reading" ||
       !!activeCase.passage ||
       !!activePassage);
+  const setPracticeCase = useSetPracticeCase();
+
+  useEffect(() => {
+    if (activeCase && !isLocked(tier, activeIdx)) {
+      const chapterTitle =
+        activeChapter === "revision"
+          ? "Revision"
+          : (chapters.find((c) => c.key === activeChapter)?.title ?? "English");
+      const stem = [activePassage, activeCase.context].filter(Boolean).join("\n\n");
+      setPracticeCase({
+        subject: "english",
+        chapterLabel:
+          activeChapter === "revision" ? "Revision" : `English · ${chapterTitle}`,
+        taskId: activeCase.id,
+        title: `${activeCase.case_id} · ${activeCase.title}`,
+        context: stem || activeCase.context,
+        statements: activeCase.statements,
+        solutionOverview: activeCase.solution_overview,
+      });
+    } else {
+      setPracticeCase(null);
+    }
+    return () => setPracticeCase(null);
+  }, [
+    activeCase,
+    activeChapter,
+    activeIdx,
+    activePassage,
+    chapters,
+    tier,
+    setPracticeCase,
+  ]);
 
   const resetCaseIds = (ids: string[]) => {
     if (ids.length === 0) return;
@@ -541,7 +574,7 @@ export function EnglishTasksPage({ tier, backTo, backLabel = "All subjects" }: P
               </div>
             </aside>
 
-          <main className="min-w-0 flex-1">
+          <main className="min-w-0 flex-1" data-practice-surface>
             {sidebarCollapsed && (
               <button
                 type="button"
@@ -1160,7 +1193,10 @@ function AllExplanationsPanel({
   const letters = "ABCDE";
 
   return (
-    <div className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+    <div
+      className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
+      data-practice-surface
+    >
       <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
         <div className="min-w-0">
           <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">

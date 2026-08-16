@@ -7,6 +7,7 @@ import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calcul
 import { TheoryReader } from "@/components/TheoryReader";
 import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
+import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { Collapse } from "@/components/Collapse";
 import {
   MATH_CHAPTERS,
@@ -91,6 +92,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [customResetOpen, setCustomResetOpen] = useState(false);
   const [showExplanations, setShowExplanations] = useState(false);
+  const setPracticeCase = useSetPracticeCase();
 
   useEffect(() => {
     setActiveIdx(0);
@@ -121,6 +123,56 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
         ? []
         : byChapter.get(activeChapter) ?? [];
   const activeCase = activeList[activeIdx];
+
+  useEffect(() => {
+    if (theoryChapter !== null) {
+      const ch = chapters.find((c) => c.num === theoryChapter);
+      setPracticeCase({
+        subject: "math",
+        chapterLabel: `Chapter ${theoryChapter}`,
+        taskId: `theory-math-${theoryChapter}`,
+        title: ch?.title ? `${ch.title} (theory)` : `Theory · Chapter ${theoryChapter}`,
+        context: "",
+        statements: [],
+        theorySnippet: `Mathematics theory for chapter ${theoryChapter}${ch?.title ? `: ${ch.title}` : ""}. The student is reading the theory reader for this chapter.`,
+      });
+      return () => setPracticeCase(null);
+    }
+
+    if (
+      activeCase &&
+      !activeCase.placeholder &&
+      !isLocked(tier, activeChapter, activeIdx)
+    ) {
+      const chapterTitle =
+        activeChapter === "revision"
+          ? "Revision"
+          : (chapters.find((c) => c.num === activeChapter)?.title ?? "Mathematics");
+      setPracticeCase({
+        subject: "math",
+        chapterLabel:
+          activeChapter === "revision"
+            ? "Revision"
+            : `Chapter ${activeChapter} · ${chapterTitle}`,
+        taskId: activeCase.id,
+        title: `${activeCase.case_id} · ${activeCase.title}`,
+        context: activeCase.context,
+        statements: activeCase.statements,
+        solutionOverview: activeCase.solution_overview,
+      });
+    } else {
+      setPracticeCase(null);
+    }
+    return () => setPracticeCase(null);
+  }, [
+    theoryChapter,
+    activeCase,
+    activeChapter,
+    activeIdx,
+    tier,
+    chapters,
+    setPracticeCase,
+  ]);
 
   const resetCaseIds = (ids: string[]) => {
     if (ids.length === 0) return;
@@ -568,7 +620,7 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
             </div>
           </aside>
 
-        <main className="min-w-0 flex-1">
+        <main className="min-w-0 flex-1" data-practice-surface>
           {sidebarCollapsed && (
             <button
               type="button"
@@ -1427,7 +1479,7 @@ function AllExplanationsPanel({
     .trim();
 
   return (
-    <div className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+    <div className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm" data-practice-surface>
       <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
         <div className="min-w-0">
           <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">

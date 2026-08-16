@@ -58,7 +58,50 @@ Style rules:
 - For navigation questions: 1–3 short sentences.
 - For study/exam/explanation questions: be as detailed as needed — markdown, lists, math notation, step-by-step.
 - Be friendly, direct, confident. No filler.
-- Never invent site features. If unsure, say so and point to FAQ.`;
+- Never invent site features. If unsure, say so and point to FAQ.
+
+=== ACTIVE PRACTICE CASE ===
+When a CASE CONTEXT block is provided for this turn, you are helping with THAT specific practice case:
+- Prefer the case stem, statements, and any provided overview over general knowledge.
+- If the user asks about a selected excerpt, explain (1) what it means, (2) where it comes from in the given data/rules/passage, (3) how it is used in this case.
+- For free follow-up questions, stay grounded in this case; do not invent facts that contradict the stem.
+- Do not reveal a full answer key dump unless the student is clearly checking work; prefer reasoning.`;
+
+type CaseContextPayload = {
+  subject?: string;
+  chapterLabel?: string;
+  taskId?: string;
+  title?: string;
+  context?: string;
+  statements?: string[];
+  solutionOverview?: string;
+  theorySnippet?: string;
+};
+
+function formatCaseContext(c: CaseContextPayload): string {
+  const lines: string[] = [
+    "CASE CONTEXT — the student is currently viewing this practice case. Use it as the primary source for this turn.",
+    `Subject: ${c.subject ?? "unknown"}`,
+    `Chapter: ${c.chapterLabel ?? ""}`,
+    `Task id: ${c.taskId ?? ""}`,
+    `Title: ${c.title ?? ""}`,
+  ];
+  if (c.context?.trim()) lines.push(`\nStem / passage:\n${c.context.trim()}`);
+  if (c.theorySnippet?.trim()) lines.push(`\nTheory snippet:\n${c.theorySnippet.trim()}`);
+  if (Array.isArray(c.statements) && c.statements.length) {
+    lines.push("\nStatements:");
+    c.statements.forEach((s, i) => {
+      lines.push(`${String.fromCharCode(65 + i)}. ${s}`);
+    });
+  }
+  if (c.solutionOverview?.trim()) {
+    lines.push(`\nAuthored solution overview (may help you tutor; do not paste it verbatim unless asked):\n${c.solutionOverview.trim()}`);
+  }
+  lines.push(
+    "\nWhen the user selects an excerpt, cover meaning, origin in the givens, and application in this case.",
+  );
+  return lines.join("\n");
+}
 
 // ---- Book RAG (loaded lazily from Cloud storage, cached in memory) ----
 const EMBED_DIM = 1536;
@@ -114,7 +157,11 @@ export const Route = createFileRoute("/api/chat")({
         const userId = await getAuthenticatedUserId(request);
         if (!userId) return new Response("Unauthorized", { status: 401 });
 
-        const { messages } = (await request.json()) as { messages?: UIMessage[] };
+        const body = (await request.json()) as {
+          messages?: UIMessage[];
+          caseContext?: CaseContextPayload | null;
+        };
+        const { messages, caseContext } = body;
         if (!Array.isArray(messages)) {
           return new Response("Messages are required", { status: 400 });
         }
@@ -146,10 +193,15 @@ export const Route = createFileRoute("/api/chat")({
           }
         }
 
+        const caseBlock =
+          caseContext && (caseContext.taskId || caseContext.context || caseContext.title)
+            ? formatCaseContext(caseContext)
+            : "";
 
-        const system = bookContext
-          ? `${SYSTEM_PROMPT}\n\n---\n\n${bookContext}`
-          : SYSTEM_PROMPT;
+        const systemParts = [SYSTEM_PROMPT];
+        if (bookContext) systemParts.push(bookContext);
+        if (caseBlock) systemParts.push(caseBlock);
+        const system = systemParts.join("\n\n---\n\n");
 
         const gateway = createLovableAiGatewayProvider(key);
         const result = streamText({
