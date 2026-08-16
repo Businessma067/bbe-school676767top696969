@@ -2851,10 +2851,10 @@ $$
     tactical_explanations: [
       `**A) After removing the occupancy tax, Weekend 1's booking revenue was \\$2,240.00.**  (true)
 
-All Lakeview Inn rates are subject to 8% occupancy tax, and the confirmation totals are quoted with that tax already included. A pre-tax amount $P$ becomes $1.08P$ once the tax is applied, so reversing the tax means dividing the printed total by $1.08$:
+All Lakeview Inn rates are subject to 8% occupancy tax, and the confirmation totals are quoted with that tax already included. A pre-tax amount $P$ becomes $1.08P$ once the tax is applied, so reversing the tax means dividing the printed total by $1.08$. Write $C$ for the total charged and $P$ for the pre-tax amount behind it:
 
 $$
-\\text{pre-tax} = \\frac{\\text{total charged}}{1.08}
+P = \\frac{C}{1.08}
 $$
 
 Weekend 1 was charged \\$2,419.20, which gives
@@ -10520,10 +10520,10 @@ $$
 
 So Wheat carries \\$95.00 per tonne and Barley \\$120.00 per tonne.
 
-The season averages need only total profit over total tonnage:
+The season averages need only total profit over total tonnage. Write $\\Pi$ for a season's total profit, $w$ for its Wheat tonnage, $b$ for its Barley tonnage and $\\bar{p}$ for the average profit per tonne of total output:
 
 $$
-\\text{average per tonne} = \\frac{\\text{total profit}}{\\text{Wheat tonnage} + \\text{Barley tonnage}}
+\\bar{p} = \\frac{\\Pi}{w + b}
 $$
 
 Season 1 tonnage and average:
@@ -12005,10 +12005,10 @@ $$
 0.016(750000) + 1200 = 12000 + 1200 = 13200
 $$
 
-An effective fee rate is total fee divided by AUM, so the retainer is still inside it:
+An effective fee rate is total fee divided by AUM, so the retainer is still inside it. Write $F$ for a client's total fee, $A$ for that client's assets under management and $r$ for the effective rate:
 
 $$
-\\text{effective rate} = \\frac{\\text{total fee}}{\\text{AUM}}
+r = \\frac{F}{A}
 $$
 
 Client 1:
@@ -12747,10 +12747,10 @@ $$
 
 So a stud costs \\$4.50 and a drywall sheet costs \\$38.00.
 
-Each job's waste percentage is the waste cost divided by the usable-material cost:
+Each job's waste percentage is the waste cost divided by the usable-material cost. Write $I$ for a job's invoice total, $U$ for the cost of the materials it actually used and $w$ for the waste percentage:
 
 $$
-\\text{waste add-on} = \\frac{\\text{invoice} - \\text{usable cost}}{\\text{usable cost}}
+w = \\frac{I - U}{U}
 $$
 
 Job 1's usable cost:
@@ -12886,10 +12886,10 @@ Relative excess over $3.4$ is $(3.50 - 3.40)/3.40 = 0.10/3.40 \\approx 0.02941$,
 From the calibration points, $x = 3.50$ and $y = 13.50$. Doubling the offset to $27$ gives $3.50(20) + 27 = 70 + 27 = 97$, which exceeds $95$.`,
       `**C) The verification check at a reading of 45.0 shows the calibration curve's predicted value exceeding the recorded reference value by more than 1% of the recorded value.**  (false)
 
-The instrument follows a straight line, so let $x$ be the scale factor and $y$ the offset in
+The instrument follows a straight line, so let $x$ be the scale factor and $y$ the offset. Write $R$ for a reading on the dial and $V$ for the true value that reading converts to:
 
 $$
-\\text{True Value} = x(\\text{Reading}) + y
+V = xR + y
 $$
 
 Point 1 read 12.4 against a certified 56.90:
@@ -12928,7 +12928,11 @@ $$
 y = 13.50
 $$
 
-So the calibration curve is $\\text{True Value} = 3.50(\\text{Reading}) + 13.50$.
+So the calibration curve scales the reading by 3.50 and then adds the offset of 13.50:
+
+$$
+V = 3.50R + 13.50
+$$
 
 At the verification reading of 45.0 the curve predicts
 
@@ -12961,10 +12965,10 @@ $$
 The curve predicts 171.00 while the certified reference is 172.20, so the prediction falls about $0.70\\%$ short instead of running above the reference at all. It cannot exceed the recorded value by more than $1\\%$, and the statement is false.`,
       `**D) The percentage increase in true value between Point 1 and Point 2 is more than 100%.**  (true)
 
-The instrument is linear, so let $x$ be the scale factor and $y$ the offset in
+The instrument is linear, so let $x$ be the scale factor and $y$ the offset. Write $R$ for a reading on the dial and $V$ for the true value that reading converts to:
 
 $$
-\\text{True Value} = x(\\text{Reading}) + y
+V = xR + y
 $$
 
 Point 1 pairs a reading of 12.4 with a certified 56.90:
@@ -12999,12 +13003,16 @@ $$
 y = 13.50
 $$
 
-So the curve is $\\text{True Value} = 3.50(\\text{Reading}) + 13.50$, which reproduces both certified points.
-
-The claim asks about the percentage increase in true value from Point 1 to Point 2, measured against Point 1:
+So the curve scales the reading by 3.50 and adds an offset of 13.50, which reproduces both certified points:
 
 $$
-\\text{percentage increase} = \\frac{\\text{Point 2 value} - \\text{Point 1 value}}{\\text{Point 1 value}}
+V = 3.50R + 13.50
+$$
+
+The claim asks about the percentage increase in true value from Point 1 to Point 2, measured against Point 1. Write $V_1$ and $V_2$ for the two certified true values and $g$ for the relative increase between them:
+
+$$
+g = \\frac{V_2 - V_1}{V_1}
 $$
 
 The change between the certified values:
@@ -13028,10 +13036,10 @@ $$
 A rise of 67.55 on a base of 56.90 is about a $118.7\\%$ increase, more than a doubling, so the statement is true.`,
       `**E) A reading of 8.0 would produce a predicted true value that is less than half of Point 1's true value (56.90).**  (false)
 
-The conversion is linear, so let $x$ be the scale factor and $y$ the offset in
+The conversion is linear, so let $x$ be the scale factor and $y$ the offset. Write $R$ for a reading on the dial and $V$ for the true value that reading converts to:
 
 $$
-\\text{True Value} = x(\\text{Reading}) + y
+V = xR + y
 $$
 
 Point 1 gives
@@ -13070,7 +13078,11 @@ $$
 y = 13.50
 $$
 
-So the curve is $\\text{True Value} = 3.50(\\text{Reading}) + 13.50$.
+So the curve scales the reading by 3.50 and then adds the offset of 13.50:
+
+$$
+V = 3.50R + 13.50
+$$
 
 At a reading of 8.0 the curve predicts
 
@@ -14072,10 +14084,10 @@ $$
 
 So Bonds earn $5.4\\%$ and Equities $6.6\\%$.
 
-A blended rate is the whole return divided by the whole fund:
+A blended rate is the whole return divided by the whole fund, and the fund holds \\$45,000 in either arrangement. Write $T$ for the total return in dollars and $b$ for the blended rate:
 
 $$
-\\text{blended rate} = \\frac{\\text{total return}}{45000}
+b = \\frac{T}{45000}
 $$
 
 For the current allocation:
@@ -14517,10 +14529,10 @@ $$
 
 So the fixed fee is \\$214.70 and the coverage rate is \\$4.68 per \\$1,000.
 
-An effective premium per \\$1,000 divides the whole premium, fee included, by the number of coverage units:
+An effective premium per \\$1,000 divides the whole premium, fee included, by the number of coverage units. Write $P$ for a policy's premium, $u$ for its number of coverage units and $e$ for the effective premium on each unit:
 
 $$
-\\text{effective rate} = \\frac{\\text{premium}}{\\text{coverage units}}
+e = \\frac{P}{u}
 $$
 
 Home:
@@ -15205,17 +15217,19 @@ $$
 
 So Plant A produces 145.0 MWh per hour and Plant B 98.0 MWh per hour.
 
-Across Days 1 and 2 the actual hours were
+Across Days 1 and 2 the hours add up separately for each plant. Plant A actually ran
 
 $$
-14 + 22 = 36 \\text{ for Plant A}
+14 + 22 = 36
 $$
 
+hours, while Plant B actually ran
+
 $$
-20 + 9 = 29 \\text{ for Plant B}
+20 + 9 = 29
 $$
 
-and the actual energy was
+hours, and the actual energy over the two days was
 
 $$
 3990 + 4072 = 8062

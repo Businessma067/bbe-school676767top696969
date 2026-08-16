@@ -734,9 +734,15 @@ $$3^{2} = 9, \\qquad \\left(\\tfrac{1}{2}\\right)^{2} = \\tfrac{1}{4}$$
 
 $$0.2x^{2} = 500 \\;\\Rightarrow\\; x^{2} = 2500 \\;\\Rightarrow\\; x = 50$$
 
-**4.** Place the recorded run against the alarm:
+**4.** Place the recorded run against the alarm. The recorded load is a little over a third of the tripping level:
 
-$$\\frac{180}{500} = 36\\%, \\qquad \\frac{30}{50} = 60\\% \\text{ of the trip job count}$$
+$$\\frac{180}{500} = 36\\%$$
+
+In job counts the same run sits much closer to the limit, at three fifths of the tripping volume:
+
+$$\\frac{30}{50} = 60\\%$$
+
+The gap between those two percentages is the squaring at work: a run already past halfway in job count is still well below halfway in load.
 
 **5.** The elasticity is the exponent, constant at every job count:
 
@@ -1400,7 +1406,13 @@ $$\\frac{C(400)}{C(100)} = 1.6, \\qquad \\frac{C(1600)}{C(400)} = 1.75$$
 
 **4.** Average fee splits into two declining power terms:
 
-$$\\frac{C(n)}{n} = 200n^{-1} + 30n^{-0.5}, \\qquad 5 \\to 2 \\to 1.22 \\text{ across the three engagements}$$
+$$\\frac{C(n)}{n} = 200n^{-1} + 30n^{-0.5}$$
+
+Both exponents are negative, so the fee per account falls as the engagement grows. Read at account counts $100$, $400$ and $1600$, the average fee runs:
+
+$$5 \\to 2 \\to 1.22$$
+
+The drop is steep at first because the fixed charge is spread over more accounts, then it flattens as the square root term comes to dominate.
 
 **5.** Doubling the accounts moves the variable term by $\\sqrt{2}$ only, and the fixed charge damps the total further:
 
@@ -1848,9 +1860,19 @@ $$C_B(u) = 5u \\tag{2}$$
 
 $$6a = 240 \\;\\Rightarrow\\; a = 40$$
 
-**2.** Locate the crossing of the uncapped schedules:
+**2.** Locate the crossing of the uncapped schedules by setting the two bills equal:
 
-$$40\\sqrt{u} = 5u \\;\\Rightarrow\\; \\sqrt{u} = 8 \\;\\Rightarrow\\; u = 64, \\qquad \\text{both bill } 320$$
+$$40\\sqrt{u} = 5u$$
+
+Dividing both sides by $5\\sqrt{u}$ leaves a single square root:
+
+$$\\sqrt{u} = 8$$
+
+Squaring gives the crossing volume:
+
+$$u = 64$$
+
+At that volume both plans bill $320$.
 
 **3.** Order the plans on each side of the crossing:
 
@@ -1862,9 +1884,15 @@ $$40\\sqrt{u} = 400 \\;\\Rightarrow\\; u = 100$$
 
 Beyond $100$ tickets Plan A is flat at $400$ while Plan B keeps climbing, so Plan A's advantage widens without limit.
 
-**5.** Unit costs separate the two shapes:
+**5.** Unit costs separate the two shapes. Plan A's cost per ticket falls as the volume grows:
 
-$$\\frac{C_A(u)}{u} = 40u^{-0.5} \\text{ (falling)}, \\qquad \\frac{C_B(u)}{u} = 5 \\text{ (constant)}$$
+$$\\frac{C_A(u)}{u} = 40u^{-0.5}$$
+
+Plan B's cost per ticket is the same at every volume:
+
+$$\\frac{C_B(u)}{u} = 5$$
+
+That is why the ranking flips once and never flips back.
 
 **Answer.** $a = 40$ | crossing at $u = 64$ costing $320$ | cap binds from $u = 100$`,
   },
@@ -1908,7 +1936,9 @@ An exponent of $-0.8$ would mean a doubling multiplied cost by $2^{-0.8}\\approx
 
 Because $8=2^{3}$, the eighth unit is reached by counting doublings rather than by taking logarithms:
 
-$$1 \\to 2 \\to 4 \\to 8 \\quad \\text{is three doublings}$$
+$$1 \\to 2 \\to 4 \\to 8$$
+
+That chain holds three doublings, so the $0.8$ factor is applied three times:
 
 $$c(8) = 1000 \\times 0.8^{3} = 1000 \\times 0.512 = 512$$
 
@@ -3944,11 +3974,17 @@ $$x < 80 \\;\\Rightarrow\\; B > C, \\qquad x > 80 \\;\\Rightarrow\\; C > B$$
 
 $$N(16) = 128, \\qquad N(27) \\approx 137.7, \\qquad N(40) \\approx 126.5, \\qquad N(80) = 0$$
 
-**4.** Scale factors explain why the surplus must vanish:
+**4.** Scale factors explain why the surplus must vanish. Doubling the scale multiplies the benefit by:
 
-$$2^{0.5} \\approx 1.414 \\text{ for benefit}, \\qquad 2^{1.5} \\approx 2.828 \\text{ for cost}$$
+$$2^{0.5} \\approx 1.414$$
 
-**5.** The best scale sits near $x\\approx27$, far below break-even — the crossing marks the end of the worthwhile range, not its optimum.
+The same doubling multiplies the cost by:
+
+$$2^{1.5} \\approx 2.828$$
+
+Cost grows twice as fast as benefit under every doubling, so any surplus held at a small scale is eaten as the programme expands.
+
+**5.** The best scale sits near $x\\approx27$, far below break-even. The crossing at $x = 80$ marks the end of the worthwhile range, not its optimum.
 
 **Answer.** crossing at $x = 80$ with $B = C \\approx 357.8$ | net benefit peaks near $x \\approx 27$`,
   },
@@ -4070,13 +4106,23 @@ $$\\frac{20}{8^{2/3}} = \\frac{20}{4} = 5 = \\frac{45}{9}, \\qquad T(g) = 5g^{2/
 
 $$g^{2/3} = 16 \\;\\Rightarrow\\; g = 16^{3/2} = 64$$
 
-**4.** Scale factors show the sub-proportional response:
+**4.** Scale factors show the sub-proportional response. Doubling the gas feed multiplies throughput by:
 
-$$2^{2/3} \\approx 1.587 \\;(+59\\%), \\qquad \\text{doubling } T \\text{ needs } 2^{3/2} \\approx 2.83 \\text{ times the gas}$$
+$$2^{2/3} \\approx 1.587$$
 
-**5.** Gas efficiency declines with the feed, so the licensed maximum is also the least efficient operating point:
+That is a gain of about $59\\%$, well short of a doubling. Read the other way, doubling the throughput calls for a gas factor of:
 
-$$\\frac{T(g)}{g} = 5g^{-1/3}: \\quad 2.5,\\; 1.67,\\; 1.25 \\text{ at } g = 8,\\,27,\\,64$$
+$$2^{3/2} \\approx 2.83$$
+
+So extra output has to be bought with almost three times the feed.
+
+**5.** Gas efficiency declines with the feed, so the licensed maximum is also the least efficient operating point. Throughput per unit of gas is:
+
+$$\\frac{T(g)}{g} = 5g^{-1/3}$$
+
+At feeds of $8$, $27$ and $64$ that ratio reads:
+
+$$2.5,\\; 1.67,\\; 1.25$$
 
 **Answer.** $r = 2/3$ | $A = 5$ | $T(g) = 5g^{2/3}$ | ceiling at $g = 64$`,
   },
@@ -4190,9 +4236,11 @@ $$\\frac{V(2d)}{V(d)} = 4, \\qquad \\left(\\tfrac{10}{4}\\right)^{2} = 6.25$$
 
 $$d = \\sqrt{\\frac{V}{3}}, \\qquad V = 675 \\;\\Rightarrow\\; d = 15$$
 
-**5.** Equation (2) has exponent $1$, so each extra metre of depth stores more than the last:
+**5.** Equation (2) has exponent $1$, so each extra metre of depth stores more than the last. Volume per metre of depth reads:
 
-$$12,\\; 30,\\; 45 \\text{ cubic metres per metre at } d = 4,\\,10,\\,15$$
+$$12,\\; 30,\\; 45$$
+
+Those three figures are cubic metres per metre, taken at depths of $4$, $10$ and $15$ metres. They climb in direct proportion to the depth, which is what an exponent of $1$ means.
 
 **Answer.** $A = 3$ | $V(d) = 3d^{2}$ | $675$ m³ at a depth of $15$ m`,
   },
@@ -4858,9 +4906,13 @@ $$L(w) = 4w^{1.5} \\tag{2}$$
 
 $$L(25) = 500 \\;\\; (s = 2.5), \\qquad L(100) = 4000 \\;\\; (s = 5)$$
 
-**2.** The composed scale factor for a doubling:
+**2.** The composed scale factor for a doubling of the wind speed:
 
-$$2^{1.5} \\approx 2.83, \\qquad \\text{via stages: } \\left(2^{0.5}\\right)^{3} \\approx 1.414^{3} \\approx 2.83$$
+$$2^{1.5} \\approx 2.83$$
+
+Working stage by stage gives the same number. Surge rises by the square root factor, and the loss stage cubes it:
+
+$$\\left(2^{0.5}\\right)^{3} \\approx 1.414^{3} \\approx 2.83$$
 
 **3.** Inverting the composed law turns a loss budget into a wind speed:
 

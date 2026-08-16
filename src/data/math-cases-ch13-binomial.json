@@ -956,7 +956,7 @@
         "**A.** → True\n\nThe mean of a binomial count is $E[X] = np$.\n\nFor Test A, $n = 500$ and $p = 0.004$:\n\n$$E[A] = 500 \\cdot 0.004 = 2$$\n\nSo the statement is True.",
         "**B.** → False\n\nGetting zero successes means every trial fails:\n\n$$P(X = 0) = (1-p)^{n} = (0.996)^{500} \\approx 0.1348$$\n\nSince $0.1348 \\le 0.20$, the statement is False.",
         "**C.** → True\n\nIndependence lets the joint probability factor:\n\n$$P(A=0\\text{ and }B=0)=P(A=0)\\,P(B=0)=(0.996)^{500}(0.988)^{500}\\approx 0.000322.$$\n\nSince $0.000322 < 0.001$, the statement is True.",
-        "**D.** → False\n\nThe complementary event is that both tests have zero false positives:\n\n$$P(\\text{at least one test has } \\ge 1\\ \\mathrm{FP}) = 1 - P(A=0)P(B=0)$$\n\n$$= 1 - (0.996)^{500}(0.988)^{500} \\approx 0.9997$$\n\nSince $0.9997 \\ge 0.999$, the statement is False.",
+        "**D.** → False\n\nThe complementary event is that both tests record zero false positives, so subtract the probability of that event from 1 to get the chance that at least one test records a false positive:\n\n$$1 - P(A=0)P(B=0)$$\n\n$$= 1 - (0.996)^{500}(0.988)^{500} \\approx 0.9997$$\n\nSince $0.9997 \\ge 0.999$, the statement is False.",
         "**E.** → True\n\n$$\\mathrm{SD}(A) = \\sqrt{500 \\cdot 0.004 \\cdot 0.996} \\approx 1.411$$\n\n$$\\mathrm{SD}(B) = \\sqrt{500 \\cdot 0.012 \\cdot 0.988} \\approx 2.435$$\n\n$$\\frac{\\mathrm{SD}(B)}{\\mathrm{SD}(A)} \\approx \\frac{2.435}{1.411} \\approx 1.73$$\n\nSince $1.73 > 1.5$, the statement is True."
       ],
       "difficulty_level": "4/5",
