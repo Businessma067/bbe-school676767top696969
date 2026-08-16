@@ -6,6 +6,7 @@
 
 import ch1 from "./math-theory/ch1.md?raw";
 import ch5 from "./math-theory/ch5.md?raw";
+import ch11 from "./math-theory/ch11.md?raw";
 import ch13 from "./math-theory/ch13.md?raw";
 
 export type MathCourseTheoryChapter = {
@@ -27,6 +28,11 @@ export const MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = {
     num: 5,
     title: "Linear equations in two unknowns",
     markdown: ch5,
+  },
+  11: {
+    num: 11,
+    title: "Financial mathematics",
+    markdown: ch11,
   },
   13: {
     num: 13,
