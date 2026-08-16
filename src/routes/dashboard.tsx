@@ -524,11 +524,13 @@ function GamesTab() {
           to="/flashcards"
           className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
-          <img
-            src={flashcardsBanner}
-            alt=""
-            className="h-24 w-full object-cover"
-          />
+          <div className="h-32 w-full overflow-hidden bg-[#f7ebdc]">
+            <img
+              src={flashcardsBanner}
+              alt=""
+              className="h-full w-full object-cover object-top"
+            />
+          </div>
           <div className="p-5">
             <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
               Study game
