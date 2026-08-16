@@ -40,11 +40,12 @@ function slugify(text: string): string {
 function extractToc(markdown: string): TocItem[] {
   const items: TocItem[] = [];
   for (const line of markdown.split("\n")) {
-    const m = /^(#{2,3})\s+(.+)$/.exec(line.trim());
+    // Main numbered sections only (e.g. "13.1 Definition") — skip Learning
+    // objectives / recap and all ### subsections (Mean, Variance, …).
+    const m = /^##\s+((\d+\.\d+)\b.*)$/.exec(line.trim());
     if (!m) continue;
-    const label = m[2]!.trim();
-    const level = m[1]!.length === 3 ? 3 : 2;
-    items.push({ id: slugify(label), label, level });
+    const label = m[1]!.trim();
+    items.push({ id: slugify(label), label, level: 2 });
   }
   return items;
 }
@@ -451,18 +452,13 @@ export function TheoryReader({
                   }}
                   onClick={() => jumpTo(item.id)}
                   className={cn(
-                    "max-w-[11rem] shrink-0 truncate rounded-full px-2.5 py-1 text-[11px] font-semibold transition-colors sm:max-w-none",
-                    item.level === 3 && "opacity-90",
+                    "shrink-0 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-colors",
                     activeId === item.id
                       ? "bg-primary text-primary-foreground"
-                      : item.level === 3
-                        ? "bg-secondary/70 text-muted-foreground hover:text-foreground"
-                        : "bg-secondary text-muted-foreground hover:text-foreground",
+                      : "bg-secondary text-muted-foreground hover:text-foreground",
                   )}
                 >
-                  {item.label
-                    .replace(/^(\d+\.\d+\.\d+)\s+/, "$1 · ")
-                    .replace(/^(\d+\.\d+)\s+/, "$1 · ")}
+                  {/^(\d+\.\d+)/.exec(item.label)?.[1] ?? item.label}
                 </button>
               ))}
             </div>
