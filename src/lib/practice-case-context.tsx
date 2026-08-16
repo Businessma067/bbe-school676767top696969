@@ -22,6 +22,9 @@ export type PracticeCasePayload = {
   statements: string[];
   solutionOverview?: string;
   theorySnippet?: string;
+  /** Authored A–E explanations (case database). */
+  tacticalExplanations?: string[];
+  answerKey?: boolean[];
 };
 
 export type OpenAssistantPrompt = {
@@ -43,9 +46,10 @@ type PracticeCaseContextValue = {
 
 const PracticeCaseContext = createContext<PracticeCaseContextValue | null>(null);
 
-const MAX_STEM = 6000;
-const MAX_STATEMENT = 800;
-const MAX_OVERVIEW = 2500;
+const MAX_STEM = 8000;
+const MAX_STATEMENT = 1200;
+const MAX_OVERVIEW = 5000;
+const MAX_TACTICAL = 4500;
 
 export function truncatePracticeText(text: string, max: number): string {
   const t = text.trim();
@@ -64,6 +68,10 @@ export function compactPracticeCase(payload: PracticeCasePayload): PracticeCaseP
     theorySnippet: payload.theorySnippet
       ? truncatePracticeText(payload.theorySnippet, MAX_STEM)
       : undefined,
+    tacticalExplanations: payload.tacticalExplanations?.map((e) =>
+      truncatePracticeText(e, MAX_TACTICAL),
+    ),
+    answerKey: payload.answerKey,
   };
 }
 

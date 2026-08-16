@@ -209,6 +209,8 @@ function EconomicsTasks() {
         title: `${activeCase.case_id} · ${activeCase.title}`,
         context: activeCase.context,
         statements: activeCase.statements,
+        tacticalExplanations: activeCase.tactical_explanations,
+        answerKey: activeCase.answer_key,
       });
     } else {
       setPracticeCase(null);

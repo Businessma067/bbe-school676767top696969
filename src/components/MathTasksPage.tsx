@@ -159,6 +159,8 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
         context: activeCase.context,
         statements: activeCase.statements,
         solutionOverview: activeCase.solution_overview,
+        tacticalExplanations: activeCase.tactical_explanations,
+        answerKey: activeCase.answer_key,
       });
     } else {
       setPracticeCase(null);
