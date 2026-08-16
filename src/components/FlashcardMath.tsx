@@ -186,12 +186,18 @@ function looksLikeMathInner(inner: string): boolean {
     return false;
   }
 
-  // Equations / comparisons / algebra (escaped currency `\$` is fine inside)
-  if (/[=<>≠≤≥+×·\-/^\\()_]/.test(t) && /[A-Za-z0-9]/.test(t)) return true;
+  // Equations / comparisons / algebra (escaped currency `\$` is fine inside).
+  // Unspaced pipes are cardinality / absolute value (`|A|`); spaced ones were
+  // rejected above as answer lines. A colon between numbers is a ratio (`3:2`).
+  if (/[=<>≠≤≥+×·\-/^\\()_|:]/.test(t) && /[A-Za-z0-9]/.test(t)) return true;
   // Number lists / short rosters: $1,2,3,4,5$ or $5,6,7$ (not currency)
   if (/^[+\-]?\d+(?:\.\d+)?(?:\s*,\s*[+\-]?\d+(?:\.\d+)?)+$/.test(t)) return true;
   // Plain set braces without LaTeX commands: ${1,2,3}$ or ${a,b}$
   if (/^\{[^{}]+\}$/.test(t) && /[A-Za-z0-9]/.test(t)) return true;
+  // Element rosters: $w,x,y,z$ or $m,n$
+  if (/^[A-Za-z](?:\s*,\s*[A-Za-z])+$/.test(t)) return true;
+  // Intervals: $[5,10]$, $(0,1]$
+  if (/^[[(]\s*-?\d+(?:\.\d+)?\s*,\s*-?\d+(?:\.\d+)?\s*[\])]$/.test(t)) return true;
   // Bare answers like $360$
   if (/^[+\-]?\d+(?:\.\d+)?$/.test(t)) return true;
   // Bare math identifiers: $p$, $n$, $k$, $X$, $p_A$, $\lambda$

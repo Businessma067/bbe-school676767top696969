@@ -1076,7 +1076,7 @@ export const MATH_CH1_LOGIC: MathTask[] = [
     title: "Chess and Checkers Club Overlap",
     subsection: "1.2",
     context:
-      "Of $40 students in a games club, $22 play chess (A) and $15 play checkers (B); $6 students play both.",
+      "Of $40$ students in a games club, $22$ play chess (A) and $15$ play checkers (B); $6$ students play both.",
     statements: [
       "$\\lvert A \\cup B\\rvert = 31$.",
       "Exactly $16$ people are in A only (not B).",
@@ -1104,7 +1104,7 @@ export const MATH_CH1_LOGIC: MathTask[] = [
     title: "Two Language Courses in One Cohort",
     subsection: "1.2",
     context:
-      "Of $60 students, $34 are enrolled in Spanish (A) and $28 in French (B); $12 students are enrolled in both.",
+      "Of $60$ students, $34$ are enrolled in Spanish (A) and $28$ in French (B); $12$ students are enrolled in both.",
     statements: [
       "$\\lvert A \\cup B\\rvert = 50$.",
       "Exactly $22$ people are in A only (not B).",
@@ -1132,7 +1132,7 @@ export const MATH_CH1_LOGIC: MathTask[] = [
     title: "Gym Members Using Two Facilities",
     subsection: "1.2",
     context:
-      "Of $50 gym members, $20 use the pool (A) and $18 use the sauna (B); $5 members use both.",
+      "Of $50$ gym members, $20$ use the pool (A) and $18$ use the sauna (B); $5$ members use both.",
     statements: [
       "$\\lvert A \\cup B\\rvert = 33$.",
       "Exactly $15$ people are in A only (not B).",
@@ -1160,7 +1160,7 @@ export const MATH_CH1_LOGIC: MathTask[] = [
     title: "Three Overlapping Hobby Clubs",
     subsection: "1.2",
     context:
-      "In a survey of hobby-club members: $30 do photography (A), $25 do hiking (B), and $20 do cooking (C). $10 do both photography and hiking, $8 do both photography and cooking, $7 do both hiking and cooking, and $3$ do all three.",
+      "In a survey of hobby-club members: $30$ do photography (A), $25$ do hiking (B), and $20$ do cooking (C). $10$ do both photography and hiking, $8$ do both photography and cooking, $7$ do both hiking and cooking, and $3$ do all three.",
     statements: [
       "$\\lvert A \\cup B \\cup C\\rvert = 53$.",
       "Every member who does all three activities is counted in $\\lvert A \\cap B\\rvert$, $\\lvert A \\cap C\\rvert$, and $\\lvert B \\cap C\\rvert$.",
