@@ -2,6 +2,15 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { FLASHCARD_SUBJECTS, countCards } from "@/data/flashcards";
 import { Layers } from "lucide-react";
+import economicsImage from "../../assets/flashcard-previews/flashcards-economics-single.png";
+import mathImage from "../../assets/flashcard-previews/flashcards-math-single.png";
+import englishImage from "../../assets/flashcard-previews/flashcards-english-single.png";
+
+const SUBJECT_IMAGES: Record<string, string> = {
+  economics: economicsImage,
+  math: mathImage,
+  english: englishImage,
+};
 
 export const Route = createFileRoute("/flashcards/")({
   head: () => ({
@@ -60,20 +69,16 @@ function FlashcardsIndexPage() {
               const n = countCards(s.sections);
               const cardInner = (
                 <>
-                  <div
-                    className="relative flex aspect-[4/3] items-end overflow-hidden p-5"
-                    style={{
-                      background: `linear-gradient(145deg, ${s.accent} 0%, ${s.accent}cc 45%, #1a1a1a 120%)`,
-                    }}
-                  >
-                    <div
-                      className="pointer-events-none absolute inset-0 opacity-30"
-                      style={{
-                        backgroundImage:
-                          "radial-gradient(circle at 20% 20%, rgba(255,255,255,0.35), transparent 45%), radial-gradient(circle at 80% 70%, rgba(0,0,0,0.25), transparent 50%)",
-                      }}
+                  <div className="relative aspect-video overflow-hidden">
+                    <img
+                      src={SUBJECT_IMAGES[s.id]}
+                      alt={`${s.title} flashcards`}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                     />
-                    <span className="relative rounded-full bg-white/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white backdrop-blur-sm">
+                    <span
+                      className="absolute bottom-3 left-4 rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest shadow-sm backdrop-blur-sm"
+                      style={{ color: s.accent }}
+                    >
                       {s.tag}
                     </span>
                   </div>
