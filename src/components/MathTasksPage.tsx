@@ -670,7 +670,19 @@ export function MathTasksPage({ tier, backTo, backLabel = "All subjects" }: Prop
                   : chapters.find((c) => c.num === activeChapter)?.title}
               </h1>
               </div>
-              <PracticeCalculatorInline />
+              <div className="flex flex-wrap items-center gap-2">
+                {typeof activeChapter === "number" && mathChapterHasTheory(activeChapter) && (
+                  <button
+                    type="button"
+                    onClick={() => setTheoryChapter(activeChapter)}
+                    className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:px-3 sm:text-sm"
+                  >
+                    <BookOpen className="h-4 w-4 text-primary" />
+                    <span className="hidden sm:inline">Theory</span>
+                  </button>
+                )}
+                <PracticeCalculatorInline />
+              </div>
             </div>
           )}
 

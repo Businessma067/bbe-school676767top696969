@@ -463,21 +463,21 @@
         "The probability that Kit B is certified (at least 13 of 15 correctly detected) equals the sum, from x = 13 to 15, of the binomial probabilities P(X = x), using n = 15 and p = 0.94.",
         "Kit B is more than 15 times as likely as Kit A to be certified.",
         "Kit A's standard deviation in number of correct detections is more than twice Kit B's standard deviation.",
-        "The mode (most likely single number of correct detections) for Kit A is 9."
+        "Kit A's expected number of correct detections is less than 10."
       ],
       "answer_key": [
         false,
         true,
         true,
         true,
-        false
+        true
       ],
       "tactical_explanations": [
         "**A.** → False\n\nGetting zero successes means every trial fails. With independent trials that probability is the failure probability multiplied across all $n$ trials:\n\n$$P(X = 0) = (1-p)^{n}$$\n\nFor side A, $p = 0.65$, so $1-p = 0.35$ and $n = 15$:\n\n$$P(X = 0) = (0.35)^{15}$$\n\n$$\\approx 1.4488 \\times 10^{-7} \\approx 1.4488 \\times 10^{-5}\\%$$\n\nThe claim compares this with $0.0001\\%$. We got about $1.4488 \\times 10^{-5}\\%$, which is below the cutoff, so the statement is False.",
         "**B.** → True\n\n“At least 13 out of 15” is not a single outcome — it covers the distinct counts $X = 13, 14, \\ldots, 15$. Those counts cannot happen at the same time, so by the addition rule for mutually exclusive events we add their individual binomial probabilities:\n\n$$P(X \\ge 13) = \\sum_{x=13}^{15} \\binom{15}{x} p^{x} (1-p)^{15-x}$$\n\n$$= P(X=13) + P(X=14) + P(X=15)$$\n\nA single term such as $P(X = 13)$ would only capture “exactly 13” and would undercount the true chance of clearing the cutoff. The statement writes this sum with $n = 15$ and $p = 0.94$, running from $x = 13$ to $x = 15$. That matches the English claim, so the statement is True.",
         "**C.** → True\n\nClearing the cutoff means at least 13 successes out of 15. That event is the union of the mutually exclusive outcomes $X = 13, 14, \\ldots, 15$, so we add the individual binomial probabilities:\n\n$$P(X \\ge 13) = \\sum_{x=13}^{15} \\binom{15}{x} p^{x} (1-p)^{15-x}$$\n\nA single term $P(X = k)$ would only count “exactly $k$” and would miss the rest of the tail, so it understates the chance of meeting the cutoff. We need the full upper tail for each side, then the ratio of those two probabilities — not the ratio of the two success probabilities $p$.\n\nSide A ($n = 15$, $p = 0.65$):\n\n$$\\binom{15}{13}(0.65)^{13}(0.35)^{2}$$\n\n$$\\approx 0.0476$$\n\n$$\\binom{15}{14}(0.65)^{14}(0.35)^{1}$$\n\n$$\\approx 0.0126$$\n\n$$\\binom{15}{15}(0.65)^{15}(0.35)^{0}$$\n\n$$\\approx 0.0016$$\n\nAdding the mutually exclusive pieces:\n\n$$0.0476 + 0.0126 + 0.0016$$\n\n$$P(X \\ge 13) \\approx 0.0617 \\approx 6.17\\%$$\n\nSide B ($n = 15$, $p = 0.94$):\n\n$$\\binom{15}{13}(0.94)^{13}(0.06)^{2}$$\n\n$$\\approx 0.1691$$\n\n$$\\binom{15}{14}(0.94)^{14}(0.06)^{1}$$\n\n$$\\approx 0.3785$$\n\n$$\\binom{15}{15}(0.94)^{15}(0.06)^{0}$$\n\n$$\\approx 0.3953$$\n\nAdding the mutually exclusive pieces:\n\n$$0.1691 + 0.3785 + 0.3953$$\n\n$$P(X \\ge 13) \\approx 0.9429 \\approx 94.29\\%$$\n\nThe ratio in the claim’s order (B relative to A):\n\n$$\\frac{P_B(X \\ge 13)}{P_A(X \\ge 13)}$$\n\n$$\\approx \\frac{94.29\\%}{6.17\\%} \\approx 15.27$$\n\nSince $15.27 > 15$, the statement is True.",
         "**D.** → True\n\nThe standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\\mathrm{SD}(X) = \\sqrt{np(1-p)}$$\n\nSide A ($n_A = 15$, $p_A = 0.65$):\n\n$$\\mathrm{Var}(A) = 3.4125$$\n\n$$\\mathrm{SD}(A) = \\sqrt{3.4125} \\approx 1.847$$\n\nSide B ($n_B = 15$, $p_B = 0.94$):\n\n$$\\mathrm{Var}(B) = 0.846$$\n\n$$\\mathrm{SD}(B) = \\sqrt{0.846} \\approx 0.92$$\n\nComparing $\\mathrm{SD}(A) \\approx 1.847$ with $\\mathrm{SD}(B) \\approx 0.92$, the statement is True.",
-        "**E.** → False\n\nThe mode is the integer $k$ maximizing $P(X = k)$. For $\\mathrm{Bin}(n,p)$ it is $\\lfloor (n+1)p \\rfloor$ (two modes when $(n+1)p$ is an integer).\n\nFor side A: $(n+1)p = (15+1)\\cdot 0.65 = 10.4$, so $\\mathrm{mode} = \\lfloor 10.4 \\rfloor = 10$.\n\nThe mean is $E[X] = np = 9.75$ (nearest whole number: $10$).\n\nMatching the claim, the statement is False."
+        "**E.** → True\n\nThe mean of a binomial count is the number of trials times the success probability:\n\n$$E[X] = np$$\n\nFor Kit A, $n = 15$ and $p = 0.65$:\n\n$$E[A] = 15 \\cdot 0.65 = 9.75$$\n\nSince $9.75 < 10$, the statement is True."
       ],
       "difficulty_level": "3/5",
       "sort_order": 16,
@@ -643,7 +643,7 @@
         "Check B's expected number of flagged components is exactly 21 more than Check A's.",
         "The probability that Check A flags exactly 0 components is equal to the probability that Check B flags all 30 components.",
         "The probability that Check A flags at least 20 components is greater than the probability that Check B flags at most 10 components.",
-        "Check A's distribution has a larger skewness magnitude (degree of asymmetry) than Check B's."
+        "Check A's expected number of flagged components is more than 5."
       ],
       "answer_key": [
         true,
@@ -657,7 +657,7 @@
         "**B.** → True\n\nThe mean of a binomial count is the number of trials times the success probability, because $X$ is the sum of $n$ independent Bernoulli trials each with mean $p$:\n\n$$E[X] = np$$\n\n$$E[A] = 30 \\cdot 0.15 = 4.5$$\n\n$$E[B] = 30 \\cdot 0.85 = 25.5$$\n\nThe difference is\n\n$$E[B] - E[A] = 25.5 - 4.5 = 21$$\n\nThat equals the claimed gap of $21$.\n\nMatching these figures to the claim, the statement is True.",
         "**C.** → True\n\nThe binomial PMF at a single point is\n\n$$P(X = k) = \\binom{n}{k} p^{k}(1-p)^{n-k}$$\n\nSide A ($n = 30$, $p = 0.15$):\n\n$$P(X_A = 0) = \\binom{30}{0}(0.15)^{0}(0.85)^{30} \\approx 0.007631$$\n\nSide B ($n = 30$, $p = 0.85$):\n\n$$P(X_B = 0) = \\binom{30}{0}(0.85)^{0}(0.15)^{30} \\approx 0$$\n\nMatching these probabilities to the claim, the statement is True.",
         "**D.** → False\n\n“At most 10” means $X \\le 10$:\n\n$$P(X \\le 10) = \\sum_{x=0}^{10} \\binom{30}{x} p^{x}(1-p)^{30-x}$$\n\n$$\\approx 0.9971 \\approx 99.71\\%$$\n\nFor side A this is about 99.71\\%. So the statement is False.",
-        "**E.** → False\n\nBinomial skewness is $\\dfrac{1-2p}{\\sqrt{np(1-p)}}$. The magnitude is $|\\mathrm{skew}|$.\n\nSide A: $\\mathrm{skew} \\approx 0.3579$, magnitude $0.3579$.\n\nSide B: $\\mathrm{skew} \\approx -0.3579$, magnitude $0.3579$.\n\nComparing magnitudes, the statement is False."
+        "**E.** → False\n\nThe mean of a binomial count is $E[X] = np$.\n\nFor Check A, $n = 30$ and $p = 0.15$:\n\n$$E[A] = 30 \\cdot 0.15 = 4.5$$\n\nSince $4.5 \\le 5$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 22,
@@ -727,13 +727,13 @@
       "id": "math-13-25",
       "case_id": "MATH 13.25",
       "title": "Auditor Compliance Threshold",
-      "context": "Auditor A reviews 50 independent transactions, each compliant with probability 0.50, and we consider P(X ≥28). Auditor B reviews 10 independent transactions, each compliant with probability 0.90, and we consider P(X ≥9). Both probabilities can be estimated using the normal approximation to the binomial with a continuity correction, and compared to the exact binomial value. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Auditor A reviews 50 independent transactions, each compliant with probability 0.50, and we consider P(X ≥28). Auditor B reviews 10 independent transactions, each compliant with probability 0.90, and we consider P(X ≥9). Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "For Auditor A, both n·p and n·(1−p) are at least 5, so the usual rule of thumb for a valid normal approximation is satisfied.",
-        "For Auditor B, the rule of thumb (n·p ≥5 and n·(1−p) ≥5) is satisfied, since n·p = 9.",
-        "Using the normal approximation with continuity correction, the estimate of P(X ≥28) for Auditor A differs from the exact binomial probability by less than 0.001.",
-        "Using the normal approximation with continuity correction, the estimate of P(X ≥9) for Auditor B differs from the exact binomial probability by less than 0.01.",
-        "The normal approximation error is larger for Auditor B than for Auditor A, consistent with Auditor B failing the n·p ≥5 / n·(1−p) ≥5 rule of thumb."
+        "Auditor A's expected number of compliant transactions is exactly 25.",
+        "Auditor B's expected number of compliant transactions is less than 8.",
+        "The probability that Auditor A has at least 28 compliant transactions equals 1 − P(X ≤ 27) for X ~ Bin(50, 0.50).",
+        "Auditor B is more than 4 times as likely as Auditor A to meet the stated threshold (at least 28 for A, at least 9 for B).",
+        "Auditor A's standard deviation in number of compliant transactions is more than three times Auditor B's standard deviation."
       ],
       "answer_key": [
         true,
@@ -743,15 +743,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 25$, $n(1-p) = 25$ (rule of thumb OK).\n\nSide B: $np = 9$, $n(1-p) = 1$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
-        "**B.** → False\n\nUsing $n_A = 50$, $p_A = 0.5$, $n_B = 10$, $p_B = 0.9$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 50$, $p_A = 0.5$, $n_B = 10$, $p_B = 0.9$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 50$, $p_A = 0.5$, $n_B = 10$, $p_B = 0.9$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nTherefore the statement is False.",
-        "**C.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 25$, $n(1-p) = 25$ (rule of thumb OK).\n\nSide B: $np = 9$, $n(1-p) = 1$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
-        "**D.** → False\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 25$, $n(1-p) = 25$ (rule of thumb OK).\n\nSide B: $np = 9$, $n(1-p) = 1$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is False.",
-        "**E.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 25$, $n(1-p) = 25$ (rule of thumb OK).\n\nSide B: $np = 9$, $n(1-p) = 1$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True."
+        "**A.** → True\n\nThe mean of a binomial count is $E[X] = np$.\n\nFor Auditor A, $n = 50$ and $p = 0.50$:\n\n$$E[A] = 50 \\cdot 0.50 = 25$$\n\nSo the statement is True.",
+        "**B.** → False\n\nThe mean of a binomial count is $E[X] = np$.\n\nFor Auditor B, $n = 10$ and $p = 0.90$:\n\n$$E[B] = 10 \\cdot 0.90 = 9$$\n\nSince $9 \\ge 8$, the statement is False.",
+        "**C.** → True\n\nThe events $\\{X \\ge 28\\}$ and $\\{X \\le 27\\}$ are complements for an integer-valued count, so\n\n$$P(X \\ge 28) = 1 - P(X \\le 27)$$\n\nwith $X \\sim \\mathrm{Bin}(50, 0.50)$. That matches the claim, so the statement is True.",
+        "**D.** → False\n\nClearing each cutoff means summing the upper-tail binomial probabilities:\n\n$$P_A(X \\ge 28) = \\sum_{x=28}^{50} \\binom{50}{x}(0.50)^{x}(0.50)^{50-x} \\approx 0.2399$$\n\n$$P_B(X \\ge 9) = \\sum_{x=9}^{10} \\binom{10}{x}(0.90)^{x}(0.10)^{10-x} \\approx 0.7361$$\n\nThe ratio is\n\n$$\\frac{P_B(X \\ge 9)}{P_A(X \\ge 28)} \\approx \\frac{0.7361}{0.2399} \\approx 3.07$$\n\nSince $3.07 \\le 4$, the statement is False.",
+        "**E.** → True\n\nThe standard deviation is $\\mathrm{SD}(X) = \\sqrt{np(1-p)}$.\n\nAuditor A: $\\mathrm{SD}(A) = \\sqrt{50 \\cdot 0.50 \\cdot 0.50} = \\sqrt{12.5} \\approx 3.536$\n\nAuditor B: $\\mathrm{SD}(B) = \\sqrt{10 \\cdot 0.90 \\cdot 0.10} = \\sqrt{0.9} \\approx 0.949$\n\nThe ratio is\n\n$$\\frac{\\mathrm{SD}(A)}{\\mathrm{SD}(B)} \\approx \\frac{3.536}{0.949} \\approx 3.73$$\n\nSince $3.73 > 3$, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 25,
-      "solution_overview": "Auditor A reviews 50 independent transactions, each compliant with probability 0.50, and we consider P(X ≥28). Auditor B reviews 10 independent transactions, each compliant with probability 0.90, and we consider P(X ≥9). Both probabilities can be estimated using the normal approximation to the binomial with a continuity correction, and compared to the exact binomial value.\n\nWe model side A as $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ with $n_A = 50$, $p_A = 0.5$, and side B as $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ with $n_B = 10$, $p_B = 0.9$."
+      "solution_overview": "Auditor A reviews 50 independent transactions, each compliant with probability 0.50, and we consider $P(X \\ge 28)$. Auditor B reviews 10 independent transactions, each compliant with probability 0.90, and we consider $P(X \\ge 9)$.\n\nWe model Auditor A as $X_A \\sim \\mathrm{Bin}(50, 0.50)$ and Auditor B as $X_B \\sim \\mathrm{Bin}(10, 0.90)$."
     },
     {
       "id": "math-13-26",
@@ -793,7 +793,7 @@
         "Check B's expected number of flagged components is more than 4 times Check A's expected number.",
         "The probability that Check A flags exactly 0 components is equal to the probability that Check B flags all 35 components.",
         "The probability that Check A flags at least 25 components is greater than the probability that Check B flags at most 10 components.",
-        "Check A's distribution has a larger skewness magnitude (degree of asymmetry) than Check B's."
+        "Check A's expected number of flagged components is more than 8."
       ],
       "answer_key": [
         true,
@@ -807,7 +807,7 @@
         "**B.** → False\n\nThe mean of a binomial count is the number of trials times the success probability, because $X$ is the sum of $n$ independent Bernoulli trials each with mean $p$:\n\n$$E[X] = np$$\n\n$$E[A] = 35 \\cdot 0.22 = 7.7$$\n\n$$E[B] = 35 \\cdot 0.78 = 27.3$$\n\nThe mean ratio (B relative to A) is\n\n$$\\frac{E[B]}{E[A]} = \\frac{27.3}{7.7} \\approx 3.5455$$\n\nCompared with $4$: $3.5455 \\le 4$.\n\nMatching these figures to the claim, the statement is False.",
         "**C.** → True\n\nThe binomial PMF at a single point is\n\n$$P(X = k) = \\binom{n}{k} p^{k}(1-p)^{n-k}$$\n\nSide A ($n = 35$, $p = 0.22$):\n\n$$P(X_A = 0) = \\binom{35}{0}(0.22)^{0}(0.78)^{35} \\approx 0.000167$$\n\nSide B ($n = 35$, $p = 0.78$):\n\n$$P(X_B = 0) = \\binom{35}{0}(0.78)^{0}(0.22)^{35} \\approx 0$$\n\nMatching these probabilities to the claim, the statement is True.",
         "**D.** → False\n\n“At most 10” means $X \\le 10$:\n\n$$P(X \\le 10) = \\sum_{x=0}^{10} \\binom{35}{x} p^{x}(1-p)^{35-x}$$\n\n$$\\approx 0.8718 \\approx 87.18\\%$$\n\nFor side A this is about 87.18\\%. So the statement is False.",
-        "**E.** → False\n\nBinomial skewness is $\\dfrac{1-2p}{\\sqrt{np(1-p)}}$. The magnitude is $|\\mathrm{skew}|$.\n\nSide A: $\\mathrm{skew} \\approx 0.2285$, magnitude $0.2285$.\n\nSide B: $\\mathrm{skew} \\approx -0.2285$, magnitude $0.2285$.\n\nComparing magnitudes, the statement is False."
+        "**E.** → False\n\nThe mean of a binomial count is $E[X] = np$.\n\nFor Check A, $n = 35$ and $p = 0.22$:\n\n$$E[A] = 35 \\cdot 0.22 = 7.7$$\n\nSince $7.7 \\le 8$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 27,
@@ -877,13 +877,13 @@
       "id": "math-13-30",
       "case_id": "MATH 13.30",
       "title": "Large Audit Compliance",
-      "context": "Auditor A reviews 60 independent transactions, each compliant with probability 0.50, and we consider P(X ≥33). Auditor B reviews 20 independent transactions, each compliant with probability 0.95, and we consider P(X ≥19). Both probabilities can be estimated using the normal approximation to the binomial with a continuity correction, and compared to the exact binomial value. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Auditor A reviews 60 independent transactions, each compliant with probability 0.50, and we consider P(X ≥33). Auditor B reviews 20 independent transactions, each compliant with probability 0.95, and we consider P(X ≥19). Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "For Auditor A, both n·p and n·(1−p) are at least 5, so the usual rule of thumb for a valid normal approximation is satisfied.",
-        "For Auditor B, the rule of thumb (n·p ≥5 and n·(1−p) ≥5) is satisfied, since n·p = 19.",
-        "Using the normal approximation with continuity correction, the estimate of P(X ≥33) for Auditor A differs from the exact binomial probability by less than 0.001.",
-        "Using the normal approximation with continuity correction, the estimate of P(X ≥19) for Auditor B differs from the exact binomial probability by less than 0.01.",
-        "The normal approximation error is larger for Auditor B than for Auditor A, consistent with Auditor B failing the n·p ≥5 / n·(1−p) ≥5 rule of thumb."
+        "Auditor A's expected number of compliant transactions is exactly 30.",
+        "Auditor B's expected number of compliant transactions is less than 18.",
+        "The probability that Auditor A has at least 33 compliant transactions equals 1 − P(X ≤ 32) for X ~ Bin(60, 0.50).",
+        "Auditor B is more than 3 times as likely as Auditor A to meet the stated threshold (at least 33 for A, at least 19 for B).",
+        "Auditor A's standard deviation in number of compliant transactions is more than three times Auditor B's standard deviation."
       ],
       "answer_key": [
         true,
@@ -893,15 +893,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 30$, $n(1-p) = 30$ (rule of thumb OK).\n\nSide B: $np = 19$, $n(1-p) = 1$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
-        "**B.** → False\n\nUsing $n_A = 60$, $p_A = 0.5$, $n_B = 20$, $p_B = 0.95$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 60$, $p_A = 0.5$, $n_B = 20$, $p_B = 0.95$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 60$, $p_A = 0.5$, $n_B = 20$, $p_B = 0.95$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nTherefore the statement is False.",
-        "**C.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 30$, $n(1-p) = 30$ (rule of thumb OK).\n\nSide B: $np = 19$, $n(1-p) = 1$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
-        "**D.** → False\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 30$, $n(1-p) = 30$ (rule of thumb OK).\n\nSide B: $np = 19$, $n(1-p) = 1$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is False.",
-        "**E.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 30$, $n(1-p) = 30$ (rule of thumb OK).\n\nSide B: $np = 19$, $n(1-p) = 1$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True."
+        "**A.** → True\n\nThe mean of a binomial count is $E[X] = np$.\n\nFor Auditor A, $n = 60$ and $p = 0.50$:\n\n$$E[A] = 60 \\cdot 0.50 = 30$$\n\nSo the statement is True.",
+        "**B.** → False\n\nThe mean of a binomial count is $E[X] = np$.\n\nFor Auditor B, $n = 20$ and $p = 0.95$:\n\n$$E[B] = 20 \\cdot 0.95 = 19$$\n\nSince $19 \\ge 18$, the statement is False.",
+        "**C.** → True\n\nThe events $\\{X \\ge 33\\}$ and $\\{X \\le 32\\}$ are complements for an integer-valued count, so\n\n$$P(X \\ge 33) = 1 - P(X \\le 32)$$\n\nwith $X \\sim \\mathrm{Bin}(60, 0.50)$. That matches the claim, so the statement is True.",
+        "**D.** → False\n\nClearing each cutoff means summing the upper-tail binomial probabilities:\n\n$$P_A(X \\ge 33) \\approx 0.2595$$\n\n$$P_B(X \\ge 19) \\approx 0.7358$$\n\nThe ratio is\n\n$$\\frac{P_B(X \\ge 19)}{P_A(X \\ge 33)} \\approx \\frac{0.7358}{0.2595} \\approx 2.84$$\n\nSince $2.84 \\le 3$, the statement is False.",
+        "**E.** → True\n\nThe standard deviation is $\\mathrm{SD}(X) = \\sqrt{np(1-p)}$.\n\nAuditor A: $\\mathrm{SD}(A) = \\sqrt{60 \\cdot 0.50 \\cdot 0.50} = \\sqrt{15} \\approx 3.873$\n\nAuditor B: $\\mathrm{SD}(B) = \\sqrt{20 \\cdot 0.95 \\cdot 0.05} = \\sqrt{0.95} \\approx 0.975$\n\nThe ratio is\n\n$$\\frac{\\mathrm{SD}(A)}{\\mathrm{SD}(B)} \\approx \\frac{3.873}{0.975} \\approx 3.97$$\n\nSince $3.97 > 3$, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 30,
-      "solution_overview": "Auditor A reviews 60 independent transactions, each compliant with probability 0.50, and we consider P(X ≥33). Auditor B reviews 20 independent transactions, each compliant with probability 0.95, and we consider P(X ≥19). Both probabilities can be estimated using the normal approximation to the binomial with a continuity correction, and compared to the exact binomial value.\n\nWe model side A as $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ with $n_A = 60$, $p_A = 0.5$, and side B as $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ with $n_B = 20$, $p_B = 0.95$."
+      "solution_overview": "Auditor A reviews 60 independent transactions, each compliant with probability 0.50, and we consider $P(X \\ge 33)$. Auditor B reviews 20 independent transactions, each compliant with probability 0.95, and we consider $P(X \\ge 19)$.\n\nWe model Auditor A as $X_A \\sim \\mathrm{Bin}(60, 0.50)$ and Auditor B as $X_B \\sim \\mathrm{Bin}(20, 0.95)$."
     },
     {
       "id": "math-13-31",
@@ -912,7 +912,7 @@
         "Since 15% of 28 is 4.2, Queue A is on target only if its number of unresolved tickets is at most 4 (not 4.2).",
         "The probability that Queue A is on target equals the sum, from x = 24 to 28, of the binomial probabilities P(X = x) for the number resolved, using n = 28 and p = 0.78.",
         "Queue B is more than 4 times as likely as Queue A to be on target.",
-        "The mode (single most likely value) of the number of tickets resolved by Queue A equals its mean rounded to the nearest whole number.",
+        "Queue A's variance in number of tickets resolved is more than five times Queue B's variance.",
         "Queue B's standard deviation in number of tickets resolved is higher than Queue A's."
       ],
       "answer_key": [
@@ -926,7 +926,7 @@
         "**A.** → True\n\nA percentage threshold must be turned into a whole-number count. $15\\%$ of $n = 28$ is\n\n$$15\\% \\times 28 = 4.2.$$\n\n“At most 15% unresolved” means the unresolved count $U$ satisfies $U \\le 4.2$. Because $U$ is an integer, that is $U \\le \\lfloor 4.2 \\rfloor = 4$.\n\nThe statement’s integer cutoff is 4, which matches $\\lfloor 4.2 \\rfloor = 4$. Therefore the statement is True.",
         "**B.** → True\n\n“At least 24 out of 28” is not a single outcome — it covers the distinct counts $X = 24, 25, \\ldots, 28$. Those counts cannot happen at the same time, so by the addition rule for mutually exclusive events we add their individual binomial probabilities:\n\n$$P(X \\ge 24) = \\sum_{x=24}^{28} \\binom{28}{x} p^{x} (1-p)^{28-x}$$\n\nA single term such as $P(X = 24)$ would only capture “exactly 24” and would undercount the true chance of clearing the cutoff. The statement writes this sum with $n = 28$ and $p = 0.78$, running from $x = 24$ to $x = 28$. This matches the scenario cutoff $k_A = 24$ obtained from the percentage rule. That matches the English claim, so the statement is True.",
         "**C.** → True\n\nEach side has its own $(n,k)$ pair. Side A needs $X_A \\ge 24$ out of $n_A = 28$; side B needs $X_B \\ge 14$ out of $n_B = 16$. (If the scenario gave a percentage, those $k$ values are the integer ceilings/floors — not the percentage number itself.)\n\n$$P(X_A \\ge 24) = \\sum_{x=24}^{28} \\binom{28}{x} p_A^{x} (1-p_A)^{28-x}$$\n\n$$P(X_B \\ge 14) = \\sum_{x=14}^{16} \\binom{16}{x} p_B^{x} (1-p_B)^{16-x}$$\n\nA single term $P(X = k)$ would only count “exactly $k$” and would miss the rest of the tail, so it understates the chance of meeting the cutoff. We need the full upper tail for each side, then the ratio of those two probabilities — not the ratio of the two success probabilities $p$.\n\nSide A ($n = 28$, $p = 0.78$):\n\n$$\\binom{28}{24}(0.78)^{24}(0.22)^{4}$$\n\n$$\\approx 0.1234$$\n\n$$\\binom{28}{25}(0.78)^{25}(0.22)^{3}$$\n\n$$\\approx 0.07$$\n\n$$\\binom{28}{26}(0.78)^{26}(0.22)^{2}$$\n\n$$\\approx 0.0286$$\n\n$$\\binom{28}{27}(0.78)^{27}(0.22)^{1}$$\n\n$$\\approx 0.0075$$\n\n$$\\binom{28}{28}(0.78)^{28}(0.22)^{0}$$\n\n$$\\approx 0.001$$\n\nAdding the mutually exclusive pieces:\n\n$$0.1234 + 0.07 + 0.0286$$\n\n$$+ 0.0075 + 0.001$$\n\n$$P(X \\ge 24) \\approx 0.2304 \\approx 23.04\\%$$\n\nSide B ($n = 16$, $p = 0.94$):\n\n$$\\binom{16}{14}(0.94)^{14}(0.06)^{2}$$\n\n$$\\approx 0.1817$$\n\n$$\\binom{16}{15}(0.94)^{15}(0.06)^{1}$$\n\n$$\\approx 0.3795$$\n\n$$\\binom{16}{16}(0.94)^{16}(0.06)^{0}$$\n\n$$\\approx 0.3716$$\n\nAdding the mutually exclusive pieces:\n\n$$0.1817 + 0.3795 + 0.3716$$\n\n$$P(X \\ge 14) \\approx 0.9327 \\approx 93.27\\%$$\n\nThe ratio in the claim’s order (B relative to A):\n\n$$\\frac{P_B(X \\ge 14)}{P_A(X \\ge 24)}$$\n\n$$\\approx \\frac{93.27\\%}{23.04\\%} \\approx 4.05$$\n\nSince $4.05 > 4$, the statement is True.",
-        "**D.** → True\n\nThe mode is the integer $k$ maximizing $P(X = k)$. For $\\mathrm{Bin}(n,p)$ it is $\\lfloor (n+1)p \\rfloor$ (two modes when $(n+1)p$ is an integer).\n\nFor side A: $(n+1)p = (28+1)\\cdot 0.78 = 22.62$, so $\\mathrm{mode} = \\lfloor 22.62 \\rfloor = 22$.\n\nThe mean is $E[X] = np = 21.84$ (nearest whole number: $22$).\n\nMatching the claim, the statement is True.",
+        "**D.** → True\n\nFor $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\\mathrm{Var}(X) = np(1-p)$$\n\nQueue A ($n_A = 28$, $p_A = 0.78$):\n\n$$\\mathrm{Var}(A) = 28 \\cdot 0.78 \\cdot 0.22 = 4.8048$$\n\nQueue B ($n_B = 16$, $p_B = 0.94$):\n\n$$\\mathrm{Var}(B) = 16 \\cdot 0.94 \\cdot 0.06 = 0.9024$$\n\nThe ratio is\n\n$$\\frac{\\mathrm{Var}(A)}{\\mathrm{Var}(B)} = \\frac{4.8048}{0.9024} \\approx 5.32$$\n\nSince $5.32 > 5$, the statement is True.",
         "**E.** → False\n\nThe standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\\mathrm{SD}(X) = \\sqrt{np(1-p)}$$\n\nSide A ($n_A = 28$, $p_A = 0.78$):\n\n$$\\mathrm{Var}(A) = 4.8048$$\n\n$$\\mathrm{SD}(A) = \\sqrt{4.8048} \\approx 2.192$$\n\nSide B ($n_B = 16$, $p_B = 0.94$):\n\n$$\\mathrm{Var}(B) = 0.9024$$\n\n$$\\mathrm{SD}(B) = \\sqrt{0.9024} \\approx 0.95$$\n\nComparing $\\mathrm{SD}(A) \\approx 2.192$ with $\\mathrm{SD}(B) \\approx 0.95$, the statement is False."
       ],
       "difficulty_level": "5/5",
@@ -939,11 +939,11 @@
       "title": "Screening Test Samples",
       "context": "Screening Test A is run on 500 independent samples and produces a false positive on any given sample with probability 0.004. Screening Test B is run on a different set of 500 independent samples and produces a false positive with probability 0.012. The two tests are independent of each other. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Since n = 500 is large and p = 0.004 is small, the Poisson approximation with λ = n·p = 2.0 is an appropriate way to approximate Test A's false-positive count.",
-        "Using the Poisson approximation, the estimated probability that Test A produces exactly 0 false positives differs from the exact binomial probability by more than 0.001.",
+        "Test A's expected number of false positives is exactly 2.",
+        "Test A's probability of zero false positives, (1 − 0.004)^500, is greater than 0.20.",
         "Because the two tests are independent, the probability that both tests produce zero false positives equals the product of each test's individual P(X = 0).",
         "The probability that at least one of the two tests produces at least one false positive is less than 0.999.",
-        "The Poisson approximation error for P(X ≥5) is larger for Test B (λ = 6.0) than for Test A (λ = 2.0)."
+        "Test B's standard deviation in false-positive count is more than 1.5 times Test A's standard deviation."
       ],
       "answer_key": [
         true,
@@ -953,15 +953,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nWhen $n$ is large and $p$ is small with $\\lambda = np$ moderate, binomial probabilities are close to a Poisson($\\lambda$) law:\n\n$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$\n\nSide A: $\\lambda = 500\\cdot0.004 = 2$.\n\nSide B: $\\lambda = 500\\cdot0.012 = 6$.\n\nUsing this approximation (and comparing errors when the claim asks), the statement is True.",
-        "**B.** → False\n\nWhen $n$ is large and $p$ is small with $\\lambda = np$ moderate, binomial probabilities are close to a Poisson($\\lambda$) law:\n\n$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$\n\nSide A: $\\lambda = 500\\cdot0.004 = 2$.\n\nSide B: $\\lambda = 500\\cdot0.012 = 6$.\n\nUsing this approximation (and comparing errors when the claim asks), the statement is False.",
-        "**C.** → True\n\nIndependence of the two tests means the joint event “both have zero false positives” factors into a product:\n\n$$P(A=0 \\cap B=0) = P(A=0)\\,P(B=0)$$\n\n$$= (1-p_A)^{n_A}(1-p_B)^{n_B}$$\n\n$$P(A=0) = (0.996)^{500} \\approx 0.134794$$\n\n$$P(B=0) = (0.988)^{500} \\approx 0.00239$$\n\nProduct $\\approx 0.000322$.\n\nSo the statement is True.",
-        "**D.** → False\n\n“At least one of the two tests produces at least one false positive” is the complement of “both tests produce zero false positives”. With independence,\n\n$$P(\\text{at least one hit}) = 1 - P(A=0)P(B=0)$$\n\n$$= 1 - (1-p_A)^{n_A}(1-p_B)^{n_B}$$\n\n$$1 - (0.996)^{500}(0.988)^{500}$$\n\n$$\\approx 1 - 0.000322 = 0.999678$$\n\nCompared with $0.999$: $0.999678$ is not below the cutoff, so the statement is False.",
-        "**E.** → True\n\nWhen $n$ is large and $p$ is small with $\\lambda = np$ moderate, binomial probabilities are close to a Poisson($\\lambda$) law:\n\n$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$\n\nSide A: $\\lambda = 500\\cdot0.004 = 2$.\n\nSide B: $\\lambda = 500\\cdot0.012 = 6$.\n\nUsing this approximation (and comparing errors when the claim asks), the statement is True."
+        "**A.** → True\n\nThe mean of a binomial count is $E[X] = np$.\n\nFor Test A, $n = 500$ and $p = 0.004$:\n\n$$E[A] = 500 \\cdot 0.004 = 2$$\n\nSo the statement is True.",
+        "**B.** → False\n\nGetting zero successes means every trial fails:\n\n$$P(X = 0) = (1-p)^{n} = (0.996)^{500} \\approx 0.1348$$\n\nSince $0.1348 \\le 0.20$, the statement is False.",
+        "**C.** → True\n\nIndependence of the two tests means joint probabilities factor:\n\n$$P(A=0 \\text{ and } B=0) = P(A=0)\\,P(B=0)$$\n\nSo the statement is True.",
+        "**D.** → False\n\nThe complementary event is that both tests have zero false positives:\n\n$$P(\\text{at least one test has } \\ge 1\\ \\mathrm{FP}) = 1 - P(A=0)P(B=0)$$\n\n$$= 1 - (0.996)^{500}(0.988)^{500} \\approx 0.9997$$\n\nSince $0.9997 \\ge 0.999$, the statement is False.",
+        "**E.** → True\n\n$$\\mathrm{SD}(A) = \\sqrt{500 \\cdot 0.004 \\cdot 0.996} \\approx 1.411$$\n\n$$\\mathrm{SD}(B) = \\sqrt{500 \\cdot 0.012 \\cdot 0.988} \\approx 2.435$$\n\n$$\\frac{\\mathrm{SD}(B)}{\\mathrm{SD}(A)} \\approx \\frac{2.435}{1.411} \\approx 1.73$$\n\nSince $1.73 > 1.5$, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 32,
-      "solution_overview": "Screening Test A is run on 500 independent samples and produces a false positive on any given sample with probability 0.004. Screening Test B is run on a different set of 500 independent samples and produces a false positive with probability 0.012. The two tests are independent of each other.\n\nWe model each side as a binomial count with $n = 500$ independent trials: side A has success probability $p_A = 0.004$, side B has $p_B = 0.012$."
+      "solution_overview": "Screening Test A is run on 500 independent samples and produces a false positive on any given sample with probability 0.004. Screening Test B is run on a different set of 500 independent samples and produces a false positive with probability 0.012. The two tests are independent of each other.\n\nWe model Test A as $X_A \\sim \\mathrm{Bin}(500, 0.004)$ and Test B as $X_B \\sim \\mathrm{Bin}(500, 0.012)$."
     },
     {
       "id": "math-13-33",
@@ -1013,7 +1013,7 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nA sum of independent binomials is binomial only when every trial shares the same success probability $p$. Here the two lines have different $p$ values, so the shared-bin total is Poisson-binomial (a sum of independent Bernoullis with unequal $p$), not $\\mathrm{Bin}(30,0.74)$.\n\nThe pooled rate $0.74$ matches the mean $E[X_1+X_2] = 12\\cdot0.65 + 18\\cdot0.8 = 22.2$, but equal means do not make the distributions equal.\n\nTrue variance (sum of line variances): $5.61$. Pooled binomial variance: $5.772$. Typically $\\mathrm{Var}_{\\mathrm{true}} < \\mathrm{Var}_{\\mathrm{pooled}}$ when the $p$ values differ.\n\nSo the statement is False.",
+        "**A.** → False\n\nA sum of independent binomials is binomial only when every trial shares the same success probability $p$. Here the two lines have different $p$ values, so the shared-bin total is only a sum of independent Bernoulli trials with unequal $p$, not $\\mathrm{Bin}(30,0.74)$.\n\nThe pooled rate $0.74$ matches the mean $E[X_1+X_2] = 12\\cdot0.65 + 18\\cdot0.8 = 22.2$, but equal means do not make the distributions equal.\n\nTrue variance (sum of line variances): $5.61$. Pooled binomial variance: $5.772$. Typically $\\mathrm{Var}_{\\mathrm{true}} < \\mathrm{Var}_{\\mathrm{pooled}}$ when the $p$ values differ.\n\nSo the statement is False.",
         "**B.** → True\n\nThe mean of a binomial count is the number of trials times the success probability, because $X$ is the sum of $n$ independent Bernoulli trials each with mean $p$:\n\n$$E[X] = np$$\n\n$$E[A] = 12 \\cdot 0.65 = 7.8$$\n\n$$E[B] = 18 \\cdot 0.8 = 14.4$$\n\nEven if the combined count is not binomial, linearity of expectation still gives\n\n$$E[X_1 + X_2] = E[X_1] + E[X_2] = 7.8 + 14.4 = 22.2$$\n\nMatching these figures to the claim, the statement is True.",
         "**C.** → True\n\nFor a binomial count $X \\sim \\mathrm{Bin}(n,p)$, write $X$ as the sum of $n$ independent Bernoulli trials with success probability $p$. Each trial has variance $p(1-p)$, and variances of independent summands add, so\n\n$$\\mathrm{Var}(X) = np(1-p)$$\n\nThis is largest when $p$ is closest to $1/2$, not when $p$ itself is largest.\n\nSide A with $n_A = 12$, $p_A = 0.65$:\n\n$$\\mathrm{Var}(A) = 12 \\cdot 0.65 \\cdot 0.35 = 2.73$$\n\nSide B with $n_B = 18$, $p_B = 0.8$:\n\n$$\\mathrm{Var}(B) = 18 \\cdot 0.8 \\cdot 0.2 = 2.88$$\n\nSo $\\mathrm{Var}(A) = 2.73$ and $\\mathrm{Var}(B) = 2.88$.\n\nThe claim’s comparison is correct, so the statement is True.",
         "**D.** → True\n\nUsing $n_A = 12$, $p_A = 0.65$, $n_B = 18$, $p_B = 0.8$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 12$, $p_A = 0.65$, $n_B = 18$, $p_B = 0.8$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 12$, $p_A = 0.65$, $n_B = 18$, $p_B = 0.8$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nTherefore the statement is True.",
@@ -1027,13 +1027,13 @@
       "id": "math-13-35",
       "case_id": "MATH 13.35",
       "title": "Auditor C Compliance",
-      "context": "Auditor C reviews 45 independent transactions, each compliant with probability 0.60, and we consider P(X ≤30) — \"at most 30 compliant.\" Auditor D reviews 40 independent transactions, each compliant with probability 0.45, and we consider P(X ≥22) — \"at least 22 compliant.\" Both are to be estimated with the normal approximation, using a continuity correction, and compared to the exact binomial value. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Auditor C reviews 45 independent transactions, each compliant with probability 0.60, and we consider P(X ≤30) — \"at most 30 compliant.\" Auditor D reviews 40 independent transactions, each compliant with probability 0.45, and we consider P(X ≥22) — \"at least 22 compliant.\" Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "For Auditor C, both n·p and n·(1−p) are at least 5 (27 and 18), so the usual rule of thumb for a valid normal approximation is satisfied.",
-        "Because Auditor C's event is an \"at most 30\" event, the continuity-corrected normal approximation should use z = (30 + 0.5 −mean) ÷ SD — adding 0.5, not subtracting it.",
-        "If 0.5 were subtracted instead of added (i.e., z = (30 −0.5 −mean) ÷ SD, the correction that is appropriate for \"at least\" events, not \"at most\" events), the resulting approximation would differ from the exact probability by more than 0.05.",
-        "Using the correct continuity correction, the normal-approximation estimate of P(X ≥22) for Auditor D differs from the exact binomial probability by less than 0.001.",
-        "Auditor C's correctly-corrected approximation error is more than 5 times as large as Auditor D's correctly-corrected approximation error."
+        "Auditor C's expected number of compliant transactions is exactly 27.",
+        "The probability that Auditor C has at most 30 compliant transactions equals the sum, from x = 0 to 30, of the binomial probabilities P(X = x), using n = 45 and p = 0.60.",
+        "Auditor C's expected number of compliant transactions is exactly 9 more than Auditor D's.",
+        "The probability that Auditor D has at least 22 compliant transactions equals 1 − P(X ≤ 21) for X ~ Bin(40, 0.45).",
+        "Auditor C's variance in number of compliant transactions is more than 1.2 times Auditor D's variance."
       ],
       "answer_key": [
         true,
@@ -1043,15 +1043,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 27$, $n(1-p) = 18$ (rule of thumb OK).\n\nSide B: $np = 20.25$, $n(1-p) = 24.75$ (rule of thumb OK).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
-        "**B.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 27$, $n(1-p) = 18$ (rule of thumb OK).\n\nSide B: $np = 20.25$, $n(1-p) = 24.75$ (rule of thumb OK).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
-        "**C.** → True\n\nThe mean of a binomial count is the number of trials times the success probability, because $X$ is the sum of $n$ independent Bernoulli trials each with mean $p$:\n\n$$E[X] = np$$\n\n$$E[A] = 45 \\cdot 0.6 = 27$$\n\n$$E[B] = 45 \\cdot 0.45 = 20.25$$\n\nThe difference is\n\n$$E[B] - E[A] = -6.75$$\n\n$$= n(p_B - p_A) = 45\\cdot(0.45 - 0.6) = -6.75$$\n\nMatching these figures to the claim, the statement is True.",
-        "**D.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 27$, $n(1-p) = 18$ (rule of thumb OK).\n\nSide B: $np = 20.25$, $n(1-p) = 24.75$ (rule of thumb OK).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
-        "**E.** → False\n\nUsing $n_A = 45$, $p_A = 0.6$, $n_B = 45$, $p_B = 0.45$, and cutoffs $k_A = 22$, $k_B = 22$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 45$, $p_A = 0.6$, $n_B = 45$, $p_B = 0.45$, and cutoffs $k_A = 22$, $k_B = 22$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 45$, $p_A = 0.6$, $n_B = 45$, $p_B = 0.45$, and cutoffs $k_A = 22$, $k_B = 22$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nTherefore the statement is False."
+        "**A.** → True\n\nThe mean of a binomial count is $E[X] = np$.\n\nFor Auditor C, $n = 45$ and $p = 0.60$:\n\n$$E[C] = 45 \\cdot 0.60 = 27$$\n\nSo the statement is True.",
+        "**B.** → True\n\n“At most 30” means $X \\le 30$, which is the union of the mutually exclusive counts $X = 0, 1, \\ldots, 30$. Add those binomial probabilities:\n\n$$P(X \\le 30) = \\sum_{x=0}^{30} \\binom{45}{x}(0.60)^{x}(0.40)^{45-x}$$\n\nThat matches the claim, so the statement is True.",
+        "**C.** → True\n\n$$E[C] = 45 \\cdot 0.60 = 27$$\n\n$$E[D] = 40 \\cdot 0.45 = 18$$\n\n$$E[C] - E[D] = 27 - 18 = 9$$\n\nSo the statement is True.",
+        "**D.** → True\n\nThe events $\\{X \\ge 22\\}$ and $\\{X \\le 21\\}$ are complements, so\n\n$$P(X \\ge 22) = 1 - P(X \\le 21)$$\n\nwith $X \\sim \\mathrm{Bin}(40, 0.45)$. That matches the claim, so the statement is True.",
+        "**E.** → False\n\n$$\\mathrm{Var}(C) = 45 \\cdot 0.60 \\cdot 0.40 = 10.8$$\n\n$$\\mathrm{Var}(D) = 40 \\cdot 0.45 \\cdot 0.55 = 9.9$$\n\n$$\\frac{\\mathrm{Var}(C)}{\\mathrm{Var}(D)} = \\frac{10.8}{9.9} \\approx 1.09$$\n\nSince $1.09 \\le 1.2$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 35,
-      "solution_overview": "Auditor C reviews 45 independent transactions, each compliant with probability 0.60, and we consider P(X ≤30) — \"at most 30 compliant.\" Auditor D reviews 40 independent transactions, each compliant with probability 0.45, and we consider P(X ≥22) — \"at least 22 compliant.\" Both are to be estimated with the normal approximation, using a continuity correction, and compared to the exact binomial value.\n\nWe model each side as a binomial count with $n = 45$ independent trials: side A has success probability $p_A = 0.6$, side B has $p_B = 0.45$.\n\nThe scenario’s success cutoff is at least $k = 22$ successes out of $n = 45$."
+      "solution_overview": "Auditor C reviews 45 independent transactions, each compliant with probability 0.60, and we consider $P(X \\le 30)$. Auditor D reviews 40 independent transactions, each compliant with probability 0.45, and we consider $P(X \\ge 22)$.\n\nWe model Auditor C as $X_C \\sim \\mathrm{Bin}(45, 0.60)$ and Auditor D as $X_D \\sim \\mathrm{Bin}(40, 0.45)$."
     },
     {
       "id": "math-13-36",
@@ -1093,7 +1093,7 @@
         "Check B's expected number of flagged components is more than double Check A's.",
         "The probability that Check A flags exactly 0 components is equal to the probability that Check B flags all 23 components.",
         "The probability that Check A flags at least 15 components is greater than the probability that Check B flags at most 8 components.",
-        "Check A's distribution has a larger skewness magnitude (degree of asymmetry) than Check B's."
+        "Check A's expected number of flagged components is more than 8."
       ],
       "answer_key": [
         true,
@@ -1107,7 +1107,7 @@
         "**B.** → False\n\nThe mean of a binomial count is the number of trials times the success probability, because $X$ is the sum of $n$ independent Bernoulli trials each with mean $p$:\n\n$$E[X] = np$$\n\n$$E[A] = 23 \\cdot 0.34 = 7.82$$\n\n$$E[B] = 23 \\cdot 0.66 = 15.18$$\n\nThe mean ratio (B relative to A) is\n\n$$\\frac{E[B]}{E[A]} = \\frac{15.18}{7.82} \\approx 1.9412$$\n\n(Double would mean a ratio of $2$.)\n\nMatching these figures to the claim, the statement is False.",
         "**C.** → True\n\nThe binomial PMF at a single point is\n\n$$P(X = k) = \\binom{n}{k} p^{k}(1-p)^{n-k}$$\n\nSide A ($n = 23$, $p = 0.34$):\n\n$$P(X_A = 0) = \\binom{23}{0}(0.34)^{0}(0.66)^{23} \\approx 7.0715 \\times 10^{-5}$$\n\nSide B ($n = 23$, $p = 0.66$):\n\n$$P(X_B = 0) = \\binom{23}{0}(0.66)^{0}(0.34)^{23} \\approx 1.675 \\times 10^{-11}$$\n\nMatching these probabilities to the claim, the statement is True.",
         "**D.** → False\n\n“At most 8” means $X \\le 8$:\n\n$$P(X \\le 8) = \\sum_{x=0}^{8} \\binom{23}{x} p^{x}(1-p)^{23-x}$$\n\n$$\\approx 0.6255 \\approx 62.55\\%$$\n\nFor side A this is about 62.55\\%. So the statement is False.",
-        "**E.** → False\n\nBinomial skewness is $\\dfrac{1-2p}{\\sqrt{np(1-p)}}$. The magnitude is $|\\mathrm{skew}|$.\n\nSide A: $\\mathrm{skew} \\approx 0.1409$, magnitude $0.1409$.\n\nSide B: $\\mathrm{skew} \\approx -0.1409$, magnitude $0.1409$.\n\nComparing magnitudes, the statement is False."
+        "**E.** → False\n\nThe mean of a binomial count is $E[X] = np$.\n\nFor Check A, $n = 23$ and $p = 0.34$:\n\n$$E[A] = 23 \\cdot 0.34 = 7.82$$\n\nSince $7.82 \\le 8$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 37,
@@ -1177,13 +1177,13 @@
       "id": "math-13-40",
       "case_id": "MATH 13.40",
       "title": "Auditor E Threshold",
-      "context": "Auditor E reviews 53 independent transactions, each compliant with probability 0.43, and we consider P(X ≥27). Auditor F reviews 31 independent transactions, each compliant with probability 0.89, and we consider P(X ≥29). Both probabilities can be estimated using the normal approximation to the binomial with a continuity correction, and compared to the exact binomial value. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Auditor E reviews 53 independent transactions, each compliant with probability 0.43, and we consider P(X ≥27). Auditor F reviews 31 independent transactions, each compliant with probability 0.89, and we consider P(X ≥29). Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "For Auditor E, both n·p and n·(1−p) are at least 5, so the usual rule of thumb for a valid normal approximation is satisfied.",
-        "For Auditor F, the rule of thumb (n·p ≥5 and n·(1−p) ≥5) is satisfied, since n·p = 27.59.",
-        "Using the normal approximation with continuity correction, the estimate of P(X ≥27) for Auditor E differs from the exact binomial probability by less than 0.001.",
-        "Using the normal approximation with continuity correction, the estimate of P(X ≥29) for Auditor F differs from the exact binomial probability by less than 0.01.",
-        "The normal approximation error is more than 300 times larger for Auditor F than for Auditor E."
+        "Auditor E's expected number of compliant transactions is less than 23.",
+        "Auditor F's expected number of compliant transactions is less than 27.",
+        "The probability that Auditor E has at least 27 compliant transactions equals 1 − P(X ≤ 26) for X ~ Bin(53, 0.43).",
+        "Auditor F is more than 3 times as likely as Auditor E to meet the stated threshold (at least 27 for E, at least 29 for F).",
+        "Auditor E's variance in number of compliant transactions is more than four times Auditor F's variance."
       ],
       "answer_key": [
         true,
@@ -1193,25 +1193,25 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 22.79$, $n(1-p) = 30.21$ (rule of thumb OK).\n\nSide B: $np = 47.17$, $n(1-p) = 5.83$ (rule of thumb OK).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
-        "**B.** → False\n\nUsing $n_A = 53$, $p_A = 0.43$, $n_B = 53$, $p_B = 0.89$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 53$, $p_A = 0.43$, $n_B = 53$, $p_B = 0.89$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 53$, $p_A = 0.43$, $n_B = 53$, $p_B = 0.89$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nTherefore the statement is False.",
-        "**C.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 22.79$, $n(1-p) = 30.21$ (rule of thumb OK).\n\nSide B: $np = 47.17$, $n(1-p) = 5.83$ (rule of thumb OK).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
-        "**D.** → False\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 22.79$, $n(1-p) = 30.21$ (rule of thumb OK).\n\nSide B: $np = 47.17$, $n(1-p) = 5.83$ (rule of thumb OK).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is False.",
-        "**E.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 22.79$, $n(1-p) = 30.21$ (rule of thumb OK).\n\nSide B: $np = 47.17$, $n(1-p) = 5.83$ (rule of thumb OK).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True."
+        "**A.** → True\n\n$$E[E] = 53 \\cdot 0.43 = 22.79$$\n\nSince $22.79 < 23$, the statement is True.",
+        "**B.** → False\n\n$$E[F] = 31 \\cdot 0.89 = 27.59$$\n\nSince $27.59 \\ge 27$, the statement is False.",
+        "**C.** → True\n\nThe events $\\{X \\ge 27\\}$ and $\\{X \\le 26\\}$ are complements, so\n\n$$P(X \\ge 27) = 1 - P(X \\le 26)$$\n\nwith $X \\sim \\mathrm{Bin}(53, 0.43)$. That matches the claim, so the statement is True.",
+        "**D.** → False\n\n$$P_E(X \\ge 27) \\approx 0.1517$$\n\n$$P_F(X \\ge 29) \\approx 0.3220$$\n\n$$\\frac{P_F(X \\ge 29)}{P_E(X \\ge 27)} \\approx \\frac{0.3220}{0.1517} \\approx 2.12$$\n\nSince $2.12 \\le 3$, the statement is False.",
+        "**E.** → True\n\n$$\\mathrm{Var}(E) = 53 \\cdot 0.43 \\cdot 0.57 = 12.9903$$\n\n$$\\mathrm{Var}(F) = 31 \\cdot 0.89 \\cdot 0.11 = 3.0349$$\n\n$$\\frac{\\mathrm{Var}(E)}{\\mathrm{Var}(F)} = \\frac{12.9903}{3.0349} \\approx 4.28$$\n\nSince $4.28 > 4$, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 40,
-      "solution_overview": "Auditor E reviews 53 independent transactions, each compliant with probability 0.43, and we consider P(X ≥27). Auditor F reviews 31 independent transactions, each compliant with probability 0.89, and we consider P(X ≥29). Both probabilities can be estimated using the normal approximation to the binomial with a continuity correction, and compared to the exact binomial value.\n\nWe model each side as a binomial count with $n = 53$ independent trials: side A has success probability $p_A = 0.43$, side B has $p_B = 0.89$."
+      "solution_overview": "Auditor E reviews 53 independent transactions, each compliant with probability 0.43, and we consider $P(X \\ge 27)$. Auditor F reviews 31 independent transactions, each compliant with probability 0.89, and we consider $P(X \\ge 29)$.\n\nWe model Auditor E as $X_E \\sim \\mathrm{Bin}(53, 0.43)$ and Auditor F as $X_F \\sim \\mathrm{Bin}(31, 0.89)$."
     },
     {
       "id": "math-13-41",
       "case_id": "MATH 13.41",
       "title": "Rare Component Failures",
-      "context": "Component A is tested on 2,500 independent units and fails independently with probability 0.0012 per unit. Component B is tested on 6,000 independent units and fails independently with probability 0.0005 per unit. Both have the same expected number of failures, λ = n·p = 3. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Component A is tested on 2,500 independent units and fails independently with probability 0.0012 per unit. Component B is tested on 6,000 independent units and fails independently with probability 0.0005 per unit. Both have the same expected number of failures, np = 3. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Since Component A and Component B have the same λ = n·p = 3, their exact binomial probability of zero failures, P(X = 0), is exactly equal.",
-        "For Component A, since n·p = 3 is less than 5, the usual rule of thumb for a valid normal approximation is not satisfied — even though n·(1−p) = 2,497 comfortably exceeds 5.",
-        "The Poisson approximation (λ = 3) estimates P(X = 0) to within 0.0001 of the exact binomial value for Component B.",
+        "Since Component A and Component B have the same expected number of failures np = 3, their exact binomial probability of zero failures, P(X = 0), is exactly equal.",
+        "Component A's variance in number of failures is less than Component B's variance.",
+        "The probability that Component B has zero failures equals (1 − 0.0005)^6000.",
         "Component A's standard deviation in number of failures is higher than Component B's.",
         "The probability that Component A has at least 1 failure is higher than the probability that Component B has at least 1 failure."
       ],
@@ -1223,26 +1223,26 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nGetting zero successes means every trial fails. With independent trials that probability is the failure probability multiplied across all $n$ trials:\n\n$$P(X = 0) = (1-p)^{n}$$\n\nFor side A, $p = 0.0012$, so $1-p = 0.9988$ and $n = 2500$:\n\n$$P(X = 0) = (0.9988)^{2500}$$\n\n$$\\approx 0.049697 \\approx 4.969746\\%$$\n\nComparing this value with the claim shows the statement is False.",
-        "**B.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nSide A: $np = 3$, $n(1-p) = 2497$ (rule of thumb not both ≥ 5).\n\nSide B: $np = 3$, $n(1-p) = 5997$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
-        "**C.** → True\n\nWhen $n$ is large and $p$ is small with $\\lambda = np$ moderate, binomial probabilities are close to a Poisson($\\lambda$) law:\n\n$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$\n\nSide A: $\\lambda = 2500\\cdot0.0012 = 3$.\n\nSide B: $\\lambda = 6000\\cdot0.0005 = 3$.\n\nUsing this approximation (and comparing errors when the claim asks), the statement is True.",
-        "**D.** → False\n\nThe standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\\mathrm{SD}(X) = \\sqrt{np(1-p)}$$\n\nSide A ($n_A = 2500$, $p_A = 0.0012$):\n\n$$\\mathrm{Var}(A) = 2.9964$$\n\n$$\\mathrm{SD}(A) = \\sqrt{2.9964} \\approx 1.731$$\n\nSide B ($n_B = 6000$, $p_B = 0.0005$):\n\n$$\\mathrm{Var}(B) = 2.9985$$\n\n$$\\mathrm{SD}(B) = \\sqrt{2.9985} \\approx 1.732$$\n\nComparing $\\mathrm{SD}(A) \\approx 1.731$ with $\\mathrm{SD}(B) \\approx 1.732$, the statement is False.",
-        "**E.** → True\n\nAt least one success (or failure/error, depending on the story) is the complement of zero:\n\n$$P(X \\ge 1) = 1 - P(X = 0) = 1 - (1-p)^{n}$$\n\nFor side A with $n = 2500$ and $p = 0.0012$:\n\n$$P(X \\ge 1) = 1 - (0.9988)^{2500} \\approx 0.950303$$\n\nThe Poisson-style approximation with $\\lambda = np = 3$ is $1 - e^{-\\lambda} \\approx 0.950213$. Absolute difference $\\approx 8.9608 \\times 10^{-5}$.\n\nMatching the claim, the statement is True."
+        "**A.** → False\n\nEqual means $np$ do not force equal zero-failure probabilities, because\n\n$$P(X = 0) = (1-p)^{n}$$\n\nstill depends on $n$ and $p$ separately.\n\n$$P_A(X=0) = (0.9988)^{2500} \\approx 0.04970$$\n\n$$P_B(X=0) = (0.9995)^{6000} \\approx 0.04975$$\n\nThese are close but not exactly equal, so the statement is False.",
+        "**B.** → True\n\n$$\\mathrm{Var}(A) = 2500 \\cdot 0.0012 \\cdot 0.9988 = 2.9964$$\n\n$$\\mathrm{Var}(B) = 6000 \\cdot 0.0005 \\cdot 0.9995 = 2.9985$$\n\nSince $2.9964 < 2.9985$, the statement is True.",
+        "**C.** → True\n\nZero failures means every unit survives:\n\n$$P(X = 0) = (1-p)^{n} = (0.9995)^{6000}$$\n\nSo the statement is True.",
+        "**D.** → False\n\n$$\\mathrm{SD}(A) = \\sqrt{2.9964} \\approx 1.7310$$\n\n$$\\mathrm{SD}(B) = \\sqrt{2.9985} \\approx 1.7316$$\n\nSince $\\mathrm{SD}(A) < \\mathrm{SD}(B)$, the statement is False.",
+        "**E.** → True\n\n$$P(X \\ge 1) = 1 - (1-p)^{n}$$\n\n$$P_A(X \\ge 1) \\approx 1 - 0.04970 = 0.95030$$\n\n$$P_B(X \\ge 1) \\approx 1 - 0.04975 = 0.95025$$\n\nSince $0.95030 > 0.95025$, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 41,
-      "solution_overview": "Component A is tested on 2,500 independent units and fails independently with probability 0.0012 per unit. Component B is tested on 6,000 independent units and fails independently with probability 0.0005 per unit. Both have the same expected number of failures, λ = n·p = 3.\n\nWe model side A as $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ with $n_A = 2500$, $p_A = 0.0012$, and side B as $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ with $n_B = 6000$, $p_B = 0.0005$."
+      "solution_overview": "Component A is tested on 2,500 independent units and fails independently with probability 0.0012 per unit. Component B is tested on 6,000 independent units and fails independently with probability 0.0005 per unit. Both have the same expected number of failures, $np = 3$.\n\nWe model Component A as $X_A \\sim \\mathrm{Bin}(2500, 0.0012)$ and Component B as $X_B \\sim \\mathrm{Bin}(6000, 0.0005)$."
     },
     {
       "id": "math-13-42",
       "case_id": "MATH 13.42",
       "title": "Mutation Type Rates",
-      "context": "Mutation Type 1 occurs independently in each of 5,000 samples with probability 0.0006 per sample. Mutation Type 2 occurs independently in each of 60 samples with probability 0.05 per sample. Both have the same expected count, λ = n·p = 3. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Mutation Type 1 occurs independently in each of 5,000 samples with probability 0.0006 per sample. Mutation Type 2 occurs independently in each of 60 samples with probability 0.05 per sample. Both have the same expected count, np = 3. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Since both mutation types have the same λ = n·p = 3, the Poisson approximation is equally accurate for both.",
-        "For Type 1, the Poisson-approximated P(X = 0) differs from the exact binomial value by less than 0.0001.",
-        "For Type 2, the Poisson-approximated P(X = 0) differs from the exact binomial value by less than 0.0001.",
-        "The Poisson approximation's error in estimating P(X ≥6) is more than 80 times larger for Type 2 than for Type 1.",
+        "Since both mutation types have the same expected count np = 3, their exact probabilities of zero mutations, P(X = 0), are exactly equal.",
+        "For Type 1, P(X = 0) = (1 − 0.0006)^5000 is greater than 0.04.",
+        "For Type 2, P(X = 0) = (1 − 0.05)^60 is greater than 0.05.",
+        "Type 1's variance in mutation count is greater than Type 2's variance.",
         "Type 1's standard deviation in mutation count is smaller than Type 2's."
       ],
       "answer_key": [
@@ -1253,27 +1253,27 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nWhen $n$ is large and $p$ is small with $\\lambda = np$ moderate, binomial probabilities are close to a Poisson($\\lambda$) law:\n\n$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$\n\nSide A: $\\lambda = 5000\\cdot0.0006 = 3$.\n\nSide B: $\\lambda = 60\\cdot0.05 = 3$.\n\nUsing this approximation (and comparing errors when the claim asks), the statement is False.",
-        "**B.** → True\n\nWhen $n$ is large and $p$ is small with $\\lambda = np$ moderate, binomial probabilities are close to a Poisson($\\lambda$) law:\n\n$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$\n\nSide A: $\\lambda = 5000\\cdot0.0006 = 3$.\n\nSide B: $\\lambda = 60\\cdot0.05 = 3$.\n\nUsing this approximation (and comparing errors when the claim asks), the statement is True.",
-        "**C.** → False\n\nWhen $n$ is large and $p$ is small with $\\lambda = np$ moderate, binomial probabilities are close to a Poisson($\\lambda$) law:\n\n$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$\n\nSide A: $\\lambda = 5000\\cdot0.0006 = 3$.\n\nSide B: $\\lambda = 60\\cdot0.05 = 3$.\n\nUsing this approximation (and comparing errors when the claim asks), the statement is False.",
-        "**D.** → True\n\nWhen $n$ is large and $p$ is small with $\\lambda = np$ moderate, binomial probabilities are close to a Poisson($\\lambda$) law:\n\n$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$\n\nSide A: $\\lambda = 5000\\cdot0.0006 = 3$.\n\nSide B: $\\lambda = 60\\cdot0.05 = 3$.\n\nUsing this approximation (and comparing errors when the claim asks), the statement is True.",
-        "**E.** → False\n\nThe standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\\mathrm{SD}(X) = \\sqrt{np(1-p)}$$\n\nSide A ($n_A = 5000$, $p_A = 0.0006$):\n\n$$\\mathrm{Var}(A) = 2.9982$$\n\n$$\\mathrm{SD}(A) = \\sqrt{2.9982} \\approx 1.732$$\n\nSide B ($n_B = 60$, $p_B = 0.05$):\n\n$$\\mathrm{Var}(B) = 2.85$$\n\n$$\\mathrm{SD}(B) = \\sqrt{2.85} \\approx 1.688$$\n\nComparing $\\mathrm{SD}(A) \\approx 1.732$ with $\\mathrm{SD}(B) \\approx 1.688$, the statement is False."
+        "**A.** → False\n\nEqual means do not force equal zero counts:\n\n$$P_1(X=0) = (0.9994)^{5000} \\approx 0.04974$$\n\n$$P_2(X=0) = (0.95)^{60} \\approx 0.04607$$\n\nThese differ, so the statement is False.",
+        "**B.** → True\n\n$$P_1(X=0) = (0.9994)^{5000} \\approx 0.04974 > 0.04$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$P_2(X=0) = (0.95)^{60} \\approx 0.04607 \\le 0.05$$\n\nSo the statement is False.",
+        "**D.** → True\n\n$$\\mathrm{Var}(1) = 5000 \\cdot 0.0006 \\cdot 0.9994 = 2.9982$$\n\n$$\\mathrm{Var}(2) = 60 \\cdot 0.05 \\cdot 0.95 = 2.85$$\n\nSince $2.9982 > 2.85$, the statement is True.",
+        "**E.** → False\n\n$$\\mathrm{SD}(1) = \\sqrt{2.9982} \\approx 1.732$$\n\n$$\\mathrm{SD}(2) = \\sqrt{2.85} \\approx 1.688$$\n\nSince $\\mathrm{SD}(1) > \\mathrm{SD}(2)$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 42,
-      "solution_overview": "Mutation Type 1 occurs independently in each of 5,000 samples with probability 0.0006 per sample. Mutation Type 2 occurs independently in each of 60 samples with probability 0.05 per sample. Both have the same expected count, λ = n·p = 3.\n\nWe model side A as $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ with $n_A = 5000$, $p_A = 0.0006$, and side B as $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ with $n_B = 60$, $p_B = 0.05$."
+      "solution_overview": "Mutation Type 1 occurs independently in each of 5,000 samples with probability 0.0006 per sample. Mutation Type 2 occurs independently in each of 60 samples with probability 0.05 per sample. Both have the same expected count, $np = 3$.\n\nWe model Type 1 as $X_1 \\sim \\mathrm{Bin}(5000, 0.0006)$ and Type 2 as $X_2 \\sim \\mathrm{Bin}(60, 0.05)$."
     },
     {
       "id": "math-13-43",
       "case_id": "MATH 13.43",
       "title": "Server Error Requests",
-      "context": "Service A handles 9,000 requests, each independently returning a server error with probability 0.00007 (λ = 0.63). Service B handles 20,000 requests, each independently returning a server error with probability 0.00004 (λ = 0.80). The two services operate independently of each other. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Service A handles 9,000 requests, each independently returning a server error with probability 0.00007. Service B handles 20,000 requests, each independently returning a server error with probability 0.00004. The two services operate independently of each other. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The exact probability that Service A has at least one error, 1 −(1 −p)ⁿ, differs from the approximation 1 −e^(−λ) by more than 0.0001.",
+        "Service A's probability of at least one error, 1 − (1 − 0.00007)^9000, is less than 0.40.",
         "Service B is more than 1.2 times as likely as Service A to have at least one error.",
         "The expected total number of errors across both services combined is 1.43, regardless of whether the combined count itself follows a nameable distribution.",
         "Service B's standard deviation in number of errors is higher than Service A's.",
-        "Since λ < 1 for both services, the Poisson approximation cannot be used here because the mean is below one."
+        "Service A's expected number of errors is greater than Service B's."
       ],
       "answer_key": [
         false,
@@ -1283,15 +1283,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nAt least one success (or failure/error, depending on the story) is the complement of zero:\n\n$$P(X \\ge 1) = 1 - P(X = 0) = 1 - (1-p)^{n}$$\n\nFor side A with $n = 9000$ and $p = 7 \\times 10^{-5}$:\n\n$$P(X \\ge 1) = 1 - (0.99993)^{9000} \\approx 0.46742$$\n\nThe Poisson-style approximation with $\\lambda = np = 0.63$ is $1 - e^{-\\lambda} \\approx 0.467408$. Absolute difference $\\approx 1.1744 \\times 10^{-5}$.\n\nMatching the claim, the statement is False.",
-        "**B.** → False\n\nFor each side, “at least one” is the complement of zero successes:\n\n$$P(X \\ge 1) = 1 - (1-p)^{n}$$\n\nSide A: $1 - (0.99993)^{9000} \\approx 0.46742$.\n\nSide B: $1 - (0.99996)^{20000} \\approx 0.550678$.\n\nRatio (B relative to A): $0.550678/0.46742 \\approx 1.1781$.\n\nSince $1.1781 \\le 1.2$, the statement is False.",
-        "**C.** → True\n\nThe mean of a binomial count is the number of trials times the success probability, because $X$ is the sum of $n$ independent Bernoulli trials each with mean $p$:\n\n$$E[X] = np$$\n\n$$E[A] = 9000 \\cdot 7 \\times 10^{-5} = 0.63$$\n\n$$E[B] = 20000 \\cdot 4 \\times 10^{-5} = 0.8$$\n\nEven if the combined count is not binomial, linearity of expectation still gives\n\n$$E[X_1 + X_2] = E[X_1] + E[X_2] = 0.63 + 0.8 = 1.43$$\n\nMatching these figures to the claim, the statement is True.",
-        "**D.** → True\n\nThe standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\\mathrm{SD}(X) = \\sqrt{np(1-p)}$$\n\nSide A ($n_A = 9000$, $p_A = 7 \\times 10^{-5}$):\n\n$$\\mathrm{Var}(A) = 0.63$$\n\n$$\\mathrm{SD}(A) = \\sqrt{0.63} \\approx 0.794$$\n\nSide B ($n_B = 20000$, $p_B = 4 \\times 10^{-5}$):\n\n$$\\mathrm{Var}(B) = 0.8$$\n\n$$\\mathrm{SD}(B) = \\sqrt{0.8} \\approx 0.894$$\n\nComparing $\\mathrm{SD}(A) \\approx 0.794$ with $\\mathrm{SD}(B) \\approx 0.894$, the statement is True.",
-        "**E.** → False\n\nWhen $n$ is large and $p$ is small with $\\lambda = np$ moderate, binomial probabilities are close to a Poisson($\\lambda$) law:\n\n$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$\n\nSide A: $\\lambda = 9000\\cdot7 \\times 10^{-5} = 0.63$.\n\nSide B: $\\lambda = 20000\\cdot4 \\times 10^{-5} = 0.8$.\n\nUsing this approximation (and comparing errors when the claim asks), the statement is False."
+        "**A.** → False\n\n$$P(X_A \\ge 1) = 1 - (1-0.00007)^{9000} \\approx 1 - 0.5326 = 0.4674$$\n\nSince $0.4674 \\ge 0.40$, the statement is False.",
+        "**B.** → False\n\n$$P(X_A \\ge 1) \\approx 0.4674$$\n\n$$P(X_B \\ge 1) = 1 - (1-0.00004)^{20000} \\approx 0.5507$$\n\n$$\\frac{P(X_B \\ge 1)}{P(X_A \\ge 1)} \\approx \\frac{0.5507}{0.4674} \\approx 1.18$$\n\nSince $1.18 \\le 1.2$, the statement is False.",
+        "**C.** → True\n\nMeans always add:\n\n$$E[X_A + X_B] = E[X_A] + E[X_B] = 9000\\cdot 0.00007 + 20000\\cdot 0.00004 = 0.63 + 0.80 = 1.43$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$\\mathrm{SD}(A) = \\sqrt{9000 \\cdot 0.00007 \\cdot 0.99993} \\approx 0.794$$\n\n$$\\mathrm{SD}(B) = \\sqrt{20000 \\cdot 0.00004 \\cdot 0.99996} \\approx 0.894$$\n\nSince $\\mathrm{SD}(B) > \\mathrm{SD}(A)$, the statement is True.",
+        "**E.** → False\n\n$$E[A] = 9000 \\cdot 0.00007 = 0.63$$\n\n$$E[B] = 20000 \\cdot 0.00004 = 0.80$$\n\nSince $0.63 < 0.80$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 43,
-      "solution_overview": "Service A handles 9,000 requests, each independently returning a server error with probability 0.00007 (λ = 0.63). Service B handles 20,000 requests, each independently returning a server error with probability 0.00004 (λ = 0.80). The two services operate independently of each other.\n\nWe model side A as $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ with $n_A = 9000$, $p_A = 7 \\times 10^{-5}$, and side B as $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ with $n_B = 20000$, $p_B = 4 \\times 10^{-5}$."
+      "solution_overview": "Service A handles 9,000 requests, each independently returning a server error with probability 0.00007. Service B handles 20,000 requests, each independently returning a server error with probability 0.00004. The two services operate independently of each other.\n\nWe model Service A as $X_A \\sim \\mathrm{Bin}(9000, 0.00007)$ and Service B as $X_B \\sim \\mathrm{Bin}(20000, 0.00004)$."
     },
     {
       "id": "math-13-44",
@@ -1301,7 +1301,7 @@
       "statements": [
         "The probability that the device fails in a single cycle is well approximated (to within 0.000001) by simply summing the three component failure probabilities.",
         "Over 2,500 independent cycles, the expected number of device failures is more than 2.5.",
-        "For this device running over 2,500 cycles, n·p is less than 5, so the usual rule of thumb for a valid normal approximation is not satisfied — even though n·(1−p) is comfortably above 5.",
+        "Over 2,500 cycles, the probability of at least one device failure is greater than 0.90.",
         "The probability that a single cycle has no device failure, if computed by ignoring Components 2 and 3 entirely (using only 1 −p₁), differs from the true value by more than 0.0005.",
         "The standard deviation in number of device failures over 2,500 cycles is greater than 2."
       ],
@@ -1315,7 +1315,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nThe device fails in a cycle if at least one independent component fails, so\n\n$$p = 1 - (1-p_1)(1-p_2)(1-p_3)$$\n\n$$= 1 - (0.99969)(0.99953)(0.99978)$$\n\n$$\\approx 0.00099968$$\n\nThe first-order sum $p_1+p_2+p_3 = 0.001$ differs from the exact union by $3.1727 \\times 10^{-7}$.\n\nSo the statement is True.",
         "**B.** → False\n\nFor $X \\sim \\mathrm{Bin}(n,p)$, the mean is $E[X] = np$.\n\n$$E[X] = 2500 \\cdot 0.001 = 2.4992$$\n\nCompared with the claim, the statement is False.",
-        "**C.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nHere $np = 2.4992$ and $n(1-p) = 2497.5008$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
+        "**C.** → True\n\nLet $p \\approx 0.00099968$ be the per-cycle device-failure probability, and let $X \\sim \\mathrm{Bin}(2500, p)$ be the number of failing cycles.\n\n$$P(X \\ge 1) = 1 - (1-p)^{2500} \\approx 1 - 0.08205 = 0.91795$$\n\nSince $0.91795 > 0.90$, the statement is True.",
         "**D.** → True\n\nThe device fails in a cycle if at least one independent component fails, so\n\n$$p = 1 - (1-p_1)(1-p_2)(1-p_3)$$\n\n$$= 1 - (0.99969)(0.99953)(0.99978)$$\n\n$$\\approx 0.00099968$$\n\nThe first-order sum $p_1+p_2+p_3 = 0.001$ differs from the exact union by $3.1727 \\times 10^{-7}$.\n\nIgnoring components 2 and 3 uses $1-p_1 = 0.99969$, while the true no-failure probability is $(1-p_1)(1-p_2)(1-p_3) \\approx 0.99900032$. Absolute difference $\\approx 0.00068968$.\n\nSo the statement is True.",
         "**E.** → False\n\nThe standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\\mathrm{SD}(X) = \\sqrt{np(1-p)}$$\n\nWith $n = 2500$ and $p \\approx 0.00099968$: $\\mathrm{SD}(X) \\approx 1.5801$.\n\nCompared with the claim, the statement is False."
       ],
@@ -1326,14 +1326,14 @@
     {
       "id": "math-13-45",
       "case_id": "MATH 13.45",
-      "title": "Poisson vs Normal Defectives",
-      "context": "A factory produces 1,800 units; each is defective independently with probability 0.0015. We consider P(X ≤1), the probability of at most one defective unit. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Factory Defectives Count",
+      "context": "A factory produces 1,800 units; each is defective independently with probability 0.0015. Let X be the number of defective units. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "n·p = 2.7 is well below 5, so the usual normal-approximation rule of thumb is not satisfied here.",
-        "Despite n·p being below 5, n is large enough and p is small enough that the Poisson approximation (λ = n·p = 2.7) is still expected to work well.",
-        "Using the Poisson approximation, the estimate of P(X ≤1) differs from the exact binomial value by less than 0.001.",
-        "Using the continuity-corrected normal approximation, the estimate of P(X ≤1) differs from the exact binomial value by less than 0.001.",
-        "The normal-approximation error here is more than 100 times larger than the Poisson-approximation error."
+        "The expected number of defectives is exactly 2.7.",
+        "The probability of zero defectives equals (1 − 0.0015)^1800 and is greater than 0.05.",
+        "The probability of at most one defective equals P(X = 0) + P(X = 1).",
+        "The probability of at most one defective is greater than 0.30.",
+        "The standard deviation in number of defectives is greater than 2."
       ],
       "answer_key": [
         true,
@@ -1343,15 +1343,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nHere $np = 2.7$ and $n(1-p) = 1797.3$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is True.",
-        "**B.** → True\n\nWhen $n$ is large and $p$ is small with $\\lambda = np$ moderate, binomial probabilities are close to a Poisson($\\lambda$) law:\n\n$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$\n\n$\\lambda = 1800\\cdot0.0015 = 2.7$.\n\nUsing this approximation (and comparing errors when the claim asks), the statement is True.",
-        "**C.** → True\n\nWhen $n$ is large and $p$ is small with $\\lambda = np$ moderate, binomial probabilities are close to a Poisson($\\lambda$) law:\n\n$$P(X = k) \\approx e^{-\\lambda}\\frac{\\lambda^{k}}{k!}, \\qquad \\lambda = np$$\n\n$\\lambda = 1800\\cdot0.0015 = 2.7$.\n\nUsing this approximation (and comparing errors when the claim asks), the statement is True.",
-        "**D.** → False\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nHere $np = 2.7$ and $n(1-p) = 1797.3$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is False.",
-        "**E.** → False\n\nFor large $n$ with both $np$ and $n(1-p)$ at least about 5, a binomial count is approximately normal with the same mean and variance. Discrete-to-continuous comparisons usually need a continuity correction: $P(X \\ge k) \\approx P\\big(Y \\ge k - 1/2\\big)$ for $Y \\sim \\mathcal{N}(np, np(1-p))$.\n\n$$X \\approx \\mathcal{N}\\big(np,\\, np(1-p)\\big)$$\n\nHere $np = 2.7$ and $n(1-p) = 1797.3$ (rule of thumb not both ≥ 5).\n\nWorking through the claim with these checks (and continuity-corrected normal estimates when asked), the statement is False."
+        "**A.** → True\n\n$$E[X] = np = 1800 \\cdot 0.0015 = 2.7$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$P(X = 0) = (1-0.0015)^{1800} = (0.9985)^{1800} \\approx 0.06707 > 0.05$$\n\nSo the statement is True.",
+        "**C.** → True\n\n“At most one” means $X \\le 1$, which is the mutually exclusive union of $X = 0$ and $X = 1$:\n\n$$P(X \\le 1) = P(X=0) + P(X=1)$$\n\nSo the statement is True.",
+        "**D.** → False\n\n$$P(X \\le 1) = P(X=0) + P(X=1) \\approx 0.06707 + 0.18136 = 0.2484$$\n\nSince $0.2484 \\le 0.30$, the statement is False.",
+        "**E.** → False\n\n$$\\mathrm{SD}(X) = \\sqrt{np(1-p)} = \\sqrt{1800 \\cdot 0.0015 \\cdot 0.9985} \\approx 1.642$$\n\nSince $1.642 \\le 2$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 45,
-      "solution_overview": "A factory produces 1,800 units; each is defective independently with probability 0.0015. We consider P(X ≤1), the probability of at most one defective unit.\n\nLet $X \\sim \\mathrm{Bin}(n,p)$ with $n = 1800$ and $p = 0.0015$."
+      "solution_overview": "A factory produces 1,800 units; each is defective independently with probability 0.0015. Let $X$ be the number of defective units.\n\nWe model $X \\sim \\mathrm{Bin}(1800, 0.0015)$."
     },
     {
       "id": "math-13-46",
