@@ -163,18 +163,23 @@ function looksLikeMathInner(inner: string): boolean {
     return false;
   }
 
-  // Answer lines: Notebook = $3.50 | Pen = $1.80
-  if (t.includes("|")) return false;
+  // Answer lines: Notebook = $3.50 | Pen = $1.80. Absolute values write `|k|` unspaced.
+  if (/\s\|\s/.test(t)) return false;
 
   // Stem-style words with no equation mark → currency mid-sentence
   if (
     !/[=<>≠≤≥]/.test(t) &&
+    !/\\[a-zA-Z]+/.test(t) &&
     /\b(?:Shipment|Invoice|Account|Week|Batch|Season|Client|Fund|Route|Day|Point|Job|Branch|cost|total|mixed|price|rate|fee|balance|units?|kg|litres?|miles?)\b/i.test(
       t,
     )
   ) {
     return false;
   }
+
+  // Multi-letter symbol tags: $PDV$, $FV$, $np$, $AB$. Currency always carries digits,
+  // so a bare letter token can only come from real math.
+  if (/^[A-Za-z]{2,5}$/.test(t)) return true;
 
   // Any 4+ letter English token without eq/compare (and not a LaTeX command) is prose
   if (/[A-Za-z]{4,}/.test(t) && !/[=<>≠≤≥]/.test(t) && !/\\[a-zA-Z]+/.test(t)) {

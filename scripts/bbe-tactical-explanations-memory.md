@@ -136,8 +136,30 @@ Do:
 - Calm tutor English. Short and medium sentences.
 - English outside math; math inside `$...$` / `$$...$$`.
 - Escape currency as `\$12.00` outside math.
-- Use one backslash in KaTeX commands inside the string content: `\frac`, `\qquad`, `\text`, `\approx`.
+- Use one backslash in KaTeX commands inside the string content: `\frac`, `\qquad`, `\approx`.
 - Keep verdict language plain: “so the statement is true/false.”
+
+**Never put English words inside math.** The practice renderer sends a `$…$` / `$$…$$` span to KaTeX only when it holds pure math; a span with two consecutive English words is printed as raw LaTeX instead. So `$$\text{discount factor} = e^{-rt}$$` reaches the student as literal `\text{discount factor} = e^{-rt}`.
+
+Write it the 13.18 way instead: symbols and numbers inside the display, names and units in the sentence around it.
+
+```markdown
+The one-year discount factor is the reciprocal of the growth factor:
+
+$$\frac{PDV}{K} = (1+r)^{-t}$$
+
+The effective rate sits $0.24$ percentage points above the nominal rate.
+```
+
+Not:
+
+```markdown
+$$\text{discount factor} = (1+r)^{-t}$$
+
+$$\Delta \approx 0.24 \text{ percentage points}$$
+```
+
+`\mathrm{}` / `\text{}` are still fine for short symbol tags with no prose inside them: `R_{\mathrm{ann}}`, `PDV_{\mathrm{cont}}`, `\mathrm{SD}(A)`.
 
 Avoid:
 

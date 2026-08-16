@@ -112,7 +112,9 @@ Place the two effective rates against each other:
 
 $$7.20\\% < 7.44\\%$$
 
-$$R_{\\mathrm{ann}} - R_{\\mathrm{mon}} \\approx -0.24 \\text{ percentage points}$$
+Measured in percentage points, the annual rate minus the monthly rate is
+
+$$R_{\\mathrm{ann}} - R_{\\mathrm{mon}} \\approx -0.24$$
 
 The claim says annual compounding would give the higher effective rate. Annual compounding gives the lower one, so the statement is false.`,
       `**E) The effective annual rate exceeds the nominal rate by more than 1.00 percentage point.**  (false)
@@ -137,7 +139,9 @@ Subtract to get the gap between them:
 
 $$\\Delta = 7.4424\\% - 7.20\\%$$
 
-$$\\Delta \\approx 0.24 \\text{ percentage points}$$
+Expressed in percentage points, the resulting gap is
+
+$$\\Delta \\approx 0.24$$
 
 Compare that gap with the claimed cutoff:
 
@@ -609,7 +613,9 @@ Subtract to measure the gap:
 
 $$\\Delta = 23.1439\\% - 21.00\\%$$
 
-$$\\Delta \\approx 2.14 \\text{ percentage points}$$
+Expressed in percentage points, the gap is
+
+$$\\Delta \\approx 2.14$$
 
 Compare with the cutoff named in the claim:
 
@@ -636,7 +642,9 @@ Compare with the 20% threshold named in the claim:
 
 $$19.56\\% < 20\\%$$
 
-$$20\\% - 19.56\\% \\approx 0.44 \\text{ percentage points}$$
+Measured in percentage points, the shortfall is
+
+$$20\\% - 19.56\\% \\approx 0.44$$
 
 At a 1.50% monthly rate the effective annual rate falls about 0.44 points short of 20%, so the statement is false.`,
     ],
@@ -785,7 +793,9 @@ Subtract the nominal rate from the effective rate:
 
 $$\\Delta \\approx 5.7187\\% - 5.60\\%$$
 
-$$\\Delta \\approx 0.12 \\text{ percentage points}$$
+Expressed in percentage points, the gap is
+
+$$\\Delta \\approx 0.12$$
 
 Compare with the cutoff named in the claim:
 
@@ -943,7 +953,9 @@ Compare the two figures:
 
 $$15.3895\\% \\neq 14.8848\\%$$
 
-$$15.3895\\% - 14.8848\\% \\approx 0.50 \\text{ percentage points}$$
+Measured in percentage points, the excess above an exact doubling is
+
+$$15.3895\\% - 14.8848\\% \\approx 0.50$$
 
 Doubling the nominal rate overshoots double the effective rate by about half a percentage point, so the statement is false.`,
       `**E) Because $(1 + r/n)^{t}$ is an increasing function of t, the same logarithmic method used for doubling can be used to find the time needed for any other target growth multiple.**  (true)
@@ -1115,13 +1127,13 @@ Each month the periodic rate is $0.15/12 = 0.0125$:
 
 $$R_{12} = (1.0125)^{12} - 1 \\approx 0.160755 \\approx 16.0755\\%$$
 
-The first increase is
+Measured in percentage points, the first increase is
 
-$$15.8650\\% - 15.5625\\% = 0.3025 \\text{ percentage points}$$
+$$15.8650\\% - 15.5625\\% = 0.3025$$
 
-The second increase is
+Measured in the same unit, the second increase is
 
-$$16.0755\\% - 15.8650\\% = 0.2105 \\text{ percentage points}$$
+$$16.0755\\% - 15.8650\\% = 0.2105$$
 
 Compare the two gaps:
 
@@ -1612,7 +1624,9 @@ Subtract to find the distance between them:
 
 $$\\Delta = 10.8127\\% - 10.80\\%$$
 
-$$\\Delta \\approx 0.0127 \\text{ percentage points}$$
+Expressed in percentage points, the distance is
+
+$$\\Delta \\approx 0.0127$$
 
 Compare with the cutoff named in the claim:
 
@@ -2077,7 +2091,9 @@ Subtract the nominal rate from the effective rate:
 
 $$\\Delta \\approx 4.3413\\% - 4.25\\%$$
 
-$$\\Delta \\approx 0.09 \\text{ percentage points}$$
+Expressed in percentage points, the gap is
+
+$$\\Delta \\approx 0.09$$
 
 Compare with the cutoff named in the claim:
 
@@ -2186,7 +2202,9 @@ Compare the two figures:
 
 $$25.34\\% \\neq 22.80\\%$$
 
-$$25.34\\% - 22.80\\% = 2.54 \\text{ percentage points}$$
+Measured in percentage points, their difference is
+
+$$25.34\\% - 22.80\\% = 2.54$$
 
 Interest charged on earlier interest lifts the effective rate about 2.54 points above the nominal quote, so the two are not the same and the statement is false.`,
       `**D) A \\$3,000 unpaid balance would grow to \\$3,684.00 after one year.**  (false)
@@ -2228,7 +2246,9 @@ Subtract to measure the gap:
 
 $$\\Delta = 25.3401\\% - 22.80\\%$$
 
-$$\\Delta \\approx 2.54 \\text{ percentage points}$$
+Expressed in percentage points, the gap is
+
+$$\\Delta \\approx 2.54$$
 
 Compare with the cutoff named in the claim:
 
@@ -2382,13 +2402,13 @@ Each month the periodic rate is about $0.0083333$:
 
 $$R_{12} = (1.0083333)^{12} - 1 \\approx 0.104713 \\approx 10.4713\\%$$
 
-The first jump is
+Measured in percentage points, the first jump is
 
-$$10.3813\\% - 10.25\\% = 0.1313 \\text{ percentage points}$$
+$$10.3813\\% - 10.25\\% = 0.1313$$
 
-The second jump is
+Measured in the same unit, the second jump is
 
-$$10.4713\\% - 10.3813\\% = 0.0900 \\text{ percentage points}$$
+$$10.4713\\% - 10.3813\\% = 0.0900$$
 
 Compare the two:
 
@@ -2982,9 +3002,9 @@ CD2 quotes a nominal $0.064$ compounded quarterly, so its quarterly rate is $0.0
 
 $$R_2 = (1.016)^{4} - 1 \\approx 0.065552 \\approx 6.5552\\%$$
 
-Compare the two:
+Compare the two. Their difference, measured in percentage points, is
 
-$$R_2 - R_3 \\approx 0.0012 \\text{ percentage points}$$
+$$R_2 - R_3 \\approx 0.0012$$
 
 CD3's lower compounding frequency is offset almost exactly by its higher nominal quote, so both effective rates round to 6.55% and the statement is true.`,
       `**D) CD1 has both the lowest nominal rate and the lowest effective annual rate of the three CDs.**  (true)
@@ -3668,7 +3688,9 @@ Subtract the nominal rate:
 
 $$\\Delta \\approx 9.4174\\% - 9.00\\%$$
 
-$$\\Delta \\approx 0.4174 \\text{ percentage points}$$
+Expressed in percentage points, the gap is
+
+$$\\Delta \\approx 0.4174$$
 
 Compare with the cutoff named in the claim:
 
@@ -4982,17 +5004,19 @@ $$S(5) \\approx 28,000 \\times 1.395661 = 39,078.52$$
 The claim puts the year-5 value at approximately \\$39,078.52, and the computed projection lands on that same figure to the cent, so the statement is true.`,
       `**C) A naive straight-line projection - extending the average dollar increase observed over the first 3 years for 2 more years - gives the same result as the correct exponential projection.**  (false)
 
-Two different projection rules are on the table here, so both have to be carried out from the same observed data and then compared. A straight-line projection adds a fixed number of dollars each year, and that fixed amount is the average annual gain already observed:
+Two different projection rules are on the table here, so both have to be carried out from the same observed data and then compared. A straight-line projection adds a fixed number of dollars each year. Write $g$ for the average annual dollar gain already observed:
 
-$$\\text{average annual gain} = \\frac{S(3) - S_0}{3}$$
+$$g = \\frac{S(3) - S_0}{3}$$
 
 Substituting the two observed endpoints:
 
-$$= \\frac{34,200 - 28,000}{3}$$
+$$g = \\frac{34,200 - 28,000}{3}$$
 
-$$= \\frac{6,200}{3} \\approx 2,066.67 \\text{ per year}$$
+The numerator is the observed gain of \\$6,200, and dividing it across three years gives
 
-Extending that fixed dollar increment for 2 more years past the observed \\$34,200 balance:
+$$g = \\frac{6,200}{3} \\approx 2,066.67$$
+
+Thus the fixed linear increment is approximately \\$2,066.67 per year. Extending that fixed dollar increment for 2 more years past the observed \\$34,200 balance:
 
 $$34,200 + 2 \\times 2,066.67 = 38,333.33$$
 
@@ -5975,9 +5999,9 @@ The plain unweighted average ignores the durations and simply splits the two rat
 
 $$\\bar{r} = \\frac{r_1 + r_2}{2} = \\frac{0.10 + 0.04}{2} = 0.07 = 7.00\\%$$
 
-Compare the two:
+Compare the two. Measured in percentage points, the difference is
 
-$$7.43\\% - 7.00\\% = 0.43 \\text{ percentage points}$$
+$$7.43\\% - 7.00\\% = 0.43$$
 
 The time-weighted figure sits 0.43 percentage points above the plain average, and it has to, because the faster $10\\%$ phase ran for 4 years against only 3 years at $4\\%$, so the higher rate carries the larger weight. The statement is true.`,
       `**E) If the two phases had instead occurred in the opposite order - 3 years at 4% followed by 4 years at 10% - the year-7 revenue would have come out exactly the same.**  (true)
@@ -6512,15 +6536,15 @@ Portfolio total: $A(5) + B(5) + C(5)$
     tactical_explanations: [
       `**A) The discount factor is approximately 0.9524.**  (true)
 
-The discount factor is the number that converts one dollar received at a future date into dollars today. Under annual compounding it is the reciprocal of the growth factor:
+The discount factor is the number that converts one dollar received at a future date into dollars today. Write $d$ for this factor. Under annual compounding it is the reciprocal of the growth factor:
 
-$$\\text{discount factor} = (1+r)^{-t}$$
+$$d = (1+r)^{-t}$$
 
 The bonus is payable in exactly 1 year and the prevailing rate is $5\\%$ per year, so substitute $r = 0.05$ and $t = 1$:
 
-$$(1.05)^{-1} = \\frac{1}{1.05}$$
+$$d = (1.05)^{-1} = \\frac{1}{1.05}$$
 
-$$\\approx 0.952381$$
+$$d \\approx 0.952381$$
 
 Rounded to four decimal places that is 0.9524, which is what the claim states. Every dollar promised a year from now is worth about 95.24 cents today at this rate, so the statement is true.`,
       `**B) The PDV of the \\$8,000 bonus is approximately \\$7,619.05.**  (true)
@@ -6643,9 +6667,9 @@ $PDV = K(1+r)^{-t}$
     tactical_explanations: [
       `**A) The continuous discount factor is approximately 0.8353.**  (true)
 
-Continuous discounting shrinks a future payment by the factor $e^{-rt}$, where the rate and the horizon multiply inside the exponent:
+Continuous discounting shrinks a future payment by the factor $e^{-rt}$, where the rate and the horizon multiply inside the exponent. Write $d$ for that discount factor:
 
-$$\\text{discount factor} = e^{-rt}$$
+$$d = e^{-rt}$$
 
 The client discounts at $6\\%$ per year and the milestone payment arrives in 3 years, so first form the exponent:
 
@@ -6653,7 +6677,7 @@ $$rt = 0.06 \\times 3 = 0.18$$
 
 Now evaluate the factor at that exponent:
 
-$$e^{-0.18} \\approx 0.835270$$
+$$d = e^{-0.18} \\approx 0.835270$$
 
 Rounded to four decimal places this is 0.8353, exactly the figure in the claim. In words, about $83.53\\%$ of the payment's face value survives three years of continuous discounting at this rate, so the statement is true.`,
       `**B) The PDV of the \\$12,000 payment is approximately \\$10,023.24.**  (true)
@@ -6792,9 +6816,9 @@ $PDV = Ke^{-rt}$
     tactical_explanations: [
       `**A) The annual discount factor is approximately 0.5820.**  (true)
 
-The annual discount factor converts one dollar at the payout date into dollars today, and it is the reciprocal of the compound growth factor:
+The annual discount factor converts one dollar at the payout date into dollars today, and it is the reciprocal of the compound growth factor. Write $d$ for this factor:
 
-$$\\text{discount factor} = (1+r)^{-t}$$
+$$d = (1+r)^{-t}$$
 
 The escrowed proceeds arrive in 8 years at a rate of $7\\%$ per year, so build the growth factor first:
 
@@ -6802,9 +6826,9 @@ $$(1.07)^{8} \\approx 1.718186$$
 
 Now invert it:
 
-$$(1.07)^{-8} = \\frac{1}{1.718186}$$
+$$d = (1.07)^{-8} = \\frac{1}{1.718186}$$
 
-$$\\approx 0.582009$$
+$$d \\approx 0.582009$$
 
 Rounded to four decimal places that is 0.5820, exactly the figure the claim gives. A little over $58\\%$ of each future dollar survives eight years of annual discounting at this rate, so the statement is true.`,
       `**B) The present value under annual compounding is approximately \\$26,190.41.**  (true)
@@ -6935,9 +6959,9 @@ Continuous: $PDV = Ke^{-rt}$
     tactical_explanations: [
       `**A) The continuous discount factor is approximately 0.8125.**  (false)
 
-The continuous discount factor is the exponential of the negative of the rate multiplied by the horizon:
+The continuous discount factor is the exponential of the negative of the rate multiplied by the horizon. Write $d$ for this factor:
 
-$$\\text{discount factor} = e^{-rt}$$
+$$d = e^{-rt}$$
 
 The bank offers $4.5\\%$ continuous interest and the equipment purchase is 5 years away, so form the exponent first:
 
@@ -6945,7 +6969,7 @@ $$rt = 0.045 \\times 5 = 0.225$$
 
 Now evaluate the factor:
 
-$$e^{-0.225} \\approx 0.798516$$
+$$d = e^{-0.225} \\approx 0.798516$$
 
 Compare with the claimed value:
 
@@ -7229,13 +7253,13 @@ Continuous: $PDV = Ke^{-rt}$, so $t = \\ln(K/PDV)/r$
     tactical_explanations: [
       `**A) The implied discount factor is exactly 0.45.**  (true)
 
-The discount factor is the fraction of the future payoff that the buyer is paying today, so it is read straight off the two amounts:
+The discount factor is the fraction of the future payoff that the buyer is paying today, so it is read straight off the two amounts. Write $f$ for that factor, $PDV$ for the amount handed over now and $K$ for the guaranteed future sale price:
 
-$$\\text{discount factor} = \\frac{PDV}{K}$$
+$$f = \\frac{PDV}{K}$$
 
 Substitute the \\$27,000 the collector is willing to pay and the \\$60,000 guaranteed future sale:
 
-$$\\frac{27,000}{60,000}$$
+$$f = \\frac{27,000}{60,000}$$
 
 $$= 0.45$$
 
@@ -7302,9 +7326,9 @@ The original \\$27,000 price implied:
 
 $$r = \\frac{0.798508}{12} \\approx 0.066542 = 6.65\\%$$
 
-Compare the two rates:
+Subtract the hypothetical rate from the original rate to size the move between them, measured in percentage points:
 
-$$6.65\\% - 5.78\\% = 0.87 \\text{ percentage points}$$
+$$6.65\\% - 5.78\\% = 0.87$$
 
 Paying more today for the same future payoff means accepting a lower return, so the implied rate falls by about 0.87 percentage points rather than rising. The claim says it would be higher, so the statement is false.`,
       `**E) Doubling the horizon to 24 years would require the rate to be approximately 3.33%.**  (true)
@@ -7731,19 +7755,19 @@ $$10,000 = 5,000\\, r\\, (t+2)$$
 
 $$t^{\\ast} = \\frac{2}{r} - 2$$
 
-At the original $r = 0.08$:
+At the original $r = 0.08$, the optimal date, counted in years from today, is:
 
-$$t^{\\ast} = \\frac{2}{0.08} - 2 = 25 - 2 = 23 \\text{ years}$$
+$$t^{\\ast} = \\frac{2}{0.08} - 2 = 25 - 2 = 23$$
 
-At a higher rate, say $r = 0.10$:
+At a higher rate, say $r = 0.10$, the same relation gives this date, again in years:
 
-$$t^{\\ast} = \\frac{2}{0.10} - 2 = 20 - 2 = 18 \\text{ years}$$
+$$t^{\\ast} = \\frac{2}{0.10} - 2 = 20 - 2 = 18$$
 
-Compare the two dates:
+Subtract the second date from the first to see how far the harvest moves, with the difference also in years:
 
-$$23 - 18 = 5 \\text{ years earlier}$$
+$$23 - 18 = 5$$
 
-Because $2/r$ shrinks as $r$ grows, a higher interest rate always pulls the harvest forward. Waiting costs more when money earns more elsewhere. The claim says a higher rate would push the cutting time later, so the statement is false.`,
+Because $2/r$ shrinks as $r$ grows, a higher interest rate always pulls the harvest forward, here by five years. Waiting costs more when money earns more elsewhere. The claim says a higher rate would push the cutting time later, so the statement is false.`,
       `**E) Cutting the stand at t = 25 years instead of at the optimal time would produce a higher present value than cutting at the optimal time.**  (false)
 
 Comparing two harvest dates means discounting the stand's value back from each of them:
@@ -8003,9 +8027,9 @@ $$e^{0.05} \\approx 1.051271$$
 
 $$r_a \\approx 0.051271 = 5.13\\%$$
 
-Compare with the claimed rate:
+Compare with the claimed rate by subtracting it from the derived rate, so the gap comes out in percentage points:
 
-$$5.13\\% - 5.00\\% = 0.13 \\text{ percentage points}$$
+$$5.13\\% - 5.00\\% = 0.13$$
 
 The equivalent annual rate has to sit above the continuous rate, not equal it, because continuous compounding credits interest at every instant and annual compounding has to make up that difference with a slightly higher stated rate. The claim gives exactly 5.00%, so the statement is false.`,
       `**C) The equivalent annual rate is approximately 5.87% per year.**  (false)
@@ -8022,9 +8046,9 @@ $$r_a = 1.051271 - 1$$
 
 $$\\approx 0.051271 = 5.13\\%$$
 
-Compare with the claimed rate:
+Compare with the claimed rate by subtracting the derived rate from it, so the gap comes out in percentage points:
 
-$$5.87\\% - 5.13\\% = 0.74 \\text{ percentage points}$$
+$$5.87\\% - 5.13\\% = 0.74$$
 
 A check confirms 5.13% and rules out 5.87%. Over 7 years the continuous present value is $50,000 \\times e^{-0.35} \\approx 35,234.40$, and $50,000 \\times (1.051271)^{-7} \\approx 35,234.40$ reproduces it, while $50,000 \\times (1.0587)^{-7} \\approx 33,528$ falls well short. The statement is false.`,
       `**D) Using the correctly derived equivalent annual rate for a 3-year horizon instead of 7 years, a \\$50,000 payment would have a present value of approximately \\$43,035.40.**  (true)
@@ -8064,17 +8088,17 @@ $$e^{0.05} \\approx 1.051271$$
 
 $$r_a \\approx 0.051271 = 5.1271\\%$$
 
-Now take the difference against the continuous rate:
+Now take the difference against the continuous rate, with the result read in percentage points:
 
 $$5.1271\\% - 5.0000\\%$$
 
-$$\\approx 0.13 \\text{ percentage points}$$
+$$\\approx 0.13$$
 
-Compare that with the threshold in the claim:
+Compare that gap with the threshold in the claim, which is one full percentage point:
 
-$$1.00 - 0.13 = 0.87 \\text{ percentage points of slack}$$
+$$1.00 - 0.13 = 0.87$$
 
-The gap is about one eighth of a percentage point, far below the claimed one full point. The reason is that the series for $e^{r}$ is $1 + r + r^{2}/2 + \\ldots$, so for a small rate like $0.05$ the excess over $1 + r$ is only about $r^{2}/2 = 0.00125$. The statement is false.`,
+So the derived gap falls short of the claimed threshold by 0.87 percentage points of slack. The gap is about one eighth of a percentage point, far below the claimed one full point. The reason is that the series for $e^{r}$ is $1 + r + r^{2}/2 + \\ldots$, so for a small rate like $0.05$ the excess over $1 + r$ is only about $r^{2}/2 = 0.00125$. The statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 51,
@@ -8278,9 +8302,9 @@ $K_2 = (\\mathrm{PDV}_{\\mathrm{target}} - \\mathrm{PV}_1)(1+r)^{t_2}$
     tactical_explanations: [
       `**A) The continuous discount factor is approximately 0.8112.**  (false)
 
-The continuous discount factor is the exponential of the negative product of rate and time:
+The continuous discount factor is the share of a future payment that is worth handing over today. Write $PDV$ for the value now, $K$ for the amount due later, $r$ for the rate and $t$ for the wait; the factor is the exponential of the negative product of rate and time:
 
-$$\\text{discount factor} = e^{-rt}$$
+$$\\frac{PDV}{K} = e^{-rt}$$
 
 The firm's opportunity cost of capital is $6.5\\%$ per year and the deferred option pays in 4 years, so build the exponent first:
 
@@ -9002,9 +9026,9 @@ As a share of face value:
 
 $$\\frac{2,486.05}{40,000} \\approx 0.0622 = 6.22\\%$$
 
-Compare with the threshold in the claim:
+Compare that share with the one-tenth threshold in the claim, taking the difference in percentage points:
 
-$$10\\% - 6.22\\% = 3.78 \\text{ percentage points}$$
+$$10\\% - 6.22\\% = 3.78$$
 
 Seven months is too short a wait for $11\\%$ discounting to remove a tenth of the payment; it removes about $6.2\\%$. The statement is false.`,
       `**E) If the discount rate were 0% instead of 11%, the combined present value of both payments would be exactly \\$290,000.**  (true)
@@ -9079,13 +9103,13 @@ Combined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$
     tactical_explanations: [
       `**A) The implied discount factor is exactly 0.625.**  (true)
 
-The discount factor is the share of the promised payout that the investors actually paid, so it is read off the two amounts:
+The discount factor is the share of the promised payout that the investors actually paid, so it is read off the two amounts. Write $f$ for that factor, $PDV$ for the money paid today and $K$ for the promised payout:
 
-$$\\text{discount factor} = \\frac{PDV}{K}$$
+$$f = \\frac{PDV}{K}$$
 
 Substitute the \\$2,000,000 paid today and the \\$3,200,000 guaranteed milestone payout:
 
-$$\\frac{2,000,000}{3,200,000}$$
+$$f = \\frac{2,000,000}{3,200,000}$$
 
 $$= 0.625$$
 
@@ -9127,9 +9151,9 @@ The original \\$3,200,000 payout implied:
 
 $$r = \\frac{0.470004}{4.5} \\approx 0.104445 = 10.44\\%$$
 
-Compare the two rates:
+Subtract the original rate from the recomputed rate to size the move, measured in percentage points:
 
-$$13.06\\% - 10.44\\% = 2.62 \\text{ percentage points}$$
+$$13.06\\% - 10.44\\% = 2.62$$
 
 Paying the same price for a bigger promised payout means a smaller discount factor, and a smaller factor over the same horizon requires a stronger rate. The implied rate rises by about 2.62 percentage points, so the statement is true.`,
       `**D) If the time to payout were shortened to 3 years instead of 4.5, the implied discount rate would be lower than the rate implied by the original 4.5-year horizon.**  (false)
@@ -9152,9 +9176,9 @@ At the original 4.5-year horizon:
 
 $$r = \\frac{0.470004}{4.5} \\approx 0.104445 = 10.44\\%$$
 
-Compare the two:
+Subtract the original rate from the shortened-horizon rate, with the difference read in percentage points:
 
-$$15.67\\% - 10.44\\% = 5.23 \\text{ percentage points}$$
+$$15.67\\% - 10.44\\% = 5.23$$
 
 Only the product $rt$ is pinned down by the price and the payout, so compressing the same total discount into fewer years demands a higher annual rate, not a lower one. The claim has the direction backwards, so the statement is false.`,
       `**E) Doubling the time horizon to 9 years would require the rate to be approximately 5.22%.**  (true)
@@ -9389,9 +9413,9 @@ Optimality condition: $P'(t^*) = rP(t^*)$
     tactical_explanations: [
       `**A) The discount factor for the 5-year payment is approximately 0.6703.**  (true)
 
-The continuous discount factor is the exponential of the negative product of rate and time:
+The continuous discount factor is the fraction of a future dollar that is worth handing over today. Write $PDV$ for the value now, $K$ for the payment due later, $r$ for the rate and $t$ for the wait; the factor is the exponential of the negative product of rate and time:
 
-$$\\text{discount factor} = e^{-rt}$$
+$$\\frac{PDV}{K} = e^{-rt}$$
 
 The franchise payments are discounted at $8\\%$ per year and the first arrives in 5 years, so form the exponent:
 
@@ -9688,9 +9712,9 @@ $s_n = a(k^{n}-1)/(k-1)$ for $k \\neq 1$; term in year $t$: $a k^{t-1}$.
     tactical_explanations: [
       `**A) The infinite profit series converges to a finite sum.**  (true)
 
-An infinite geometric series converges when the size of its quotient stays below 1, and diverges otherwise:
+An infinite geometric series converges when the size of its quotient stays below 1, and diverges otherwise. Writing $a$ for the first term and $k$ for the fixed quotient, the series $a + ak + ak^{2} + \\cdots$ converges exactly when the quotient satisfies
 
-$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+$$|k| < 1$$
 
 Each month's profit here is exactly half of the previous month's, so the quotient between consecutive terms is constant at
 
@@ -9766,9 +9790,9 @@ $$4{,}000 - 3{,}750 = 250$$
 dollars, so it falls short of the infinite sum rather than exceeding it, and the statement is false.`,
       `**E) If the quotient were instead k = 1.5, the infinite series would still converge, to a sum of \\$-4,000.00.**  (false)
 
-Convergence of a geometric series is decided entirely by the size of its quotient:
+Convergence of a geometric series is decided entirely by the size of its quotient. Writing $a$ for the first term and $k$ for the fixed quotient, the series $a + ak + ak^{2} + \\cdots$ converges exactly when the quotient satisfies
 
-$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+$$|k| < 1$$
 
 Under the hypothetical quotient $k = 1.5$, that size is
 
@@ -9837,9 +9861,9 @@ Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
     tactical_explanations: [
       `**A) The infinite deposit series converges.**  (true)
 
-An infinite geometric series converges exactly when the absolute value of its quotient is below 1:
+An infinite geometric series converges exactly when the absolute value of its quotient is below 1. Writing $a$ for the first term and $k$ for the fixed quotient, the series $a + ak + ak^{2} + \\cdots$ converges exactly when the quotient satisfies
 
-$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+$$|k| < 1$$
 
 Each deposit here is $90\\%$ of the previous year's deposit, so the ratio between consecutive deposits is constant at
 
@@ -9919,9 +9943,9 @@ $$\\frac{5{,}210.57}{8{,}000} = 0.65132$$
 That is $65.13\\%$, which rounds to about $65\\%$. The claim describes the first ten deposits as roughly $65\\%$ of the infinite total, so the statement is true.`,
       `**E) If the quotient were instead k = 1.10, the series would diverge.**  (true)
 
-Whether an infinite geometric series converges or diverges depends only on the size of its quotient:
+Whether an infinite geometric series converges or diverges depends only on the size of its quotient. Writing $a$ for the first term and $k$ for the fixed quotient, the series $a + ak + ak^{2} + \\cdots$ converges exactly when the quotient satisfies
 
-$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+$$|k| < 1$$
 
 Under the hypothetical quotient $k = 1.10$, that size is
 
@@ -9988,9 +10012,9 @@ Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
     tactical_explanations: [
       `**A) At a constant extraction rate of 300,000 tons/year, the reserves will last exactly 60 years.**  (true)
 
-Removing the same tonnage every year means the reserve is drawn down in equal steps, so the number of years until it is gone is the reserve divided by the annual extraction rate:
+Removing the same tonnage every year means the reserve is drawn down in equal steps, so the number of years until it is gone is the reserve divided by the annual extraction rate. Write $R$ for the tonnage in the ground and $E$ for the tonnage removed each year:
 
-$$t = \\frac{\\text{reserves}}{\\text{annual extraction}}$$
+$$t = \\frac{R}{E}$$
 
 The reserve holds $18{,}000{,}000$ tons and the constant rate is $300{,}000$ tons per year:
 
@@ -10005,9 +10029,9 @@ $$300{,}000 \\times 60 = 18{,}000{,}000$$
 The reserve lasts exactly 60 years at this rate, which is the figure in the claim, so the statement is true.`,
       `**B) If extraction were instead held constant at 500,000 tons/year, the reserves would last 36 years.**  (true)
 
-With extraction held constant, the reserve is depleted in equal annual steps, so the life of the reserve is the total tonnage divided by the yearly rate:
+With extraction held constant, the reserve is depleted in equal annual steps, so the life of the reserve is the total tonnage divided by the yearly rate. Write $R$ for the tonnage in the ground and $E$ for the tonnage removed each year:
 
-$$t = \\frac{\\text{reserves}}{\\text{annual extraction}}$$
+$$t = \\frac{R}{E}$$
 
 The reserve is still $18{,}000{,}000$ tons, but the faster rate is $500{,}000$ tons per year:
 
@@ -10196,7 +10220,9 @@ The comparison needs the stranded tonnage under each decline path, and stranded 
 
 $$s_{\\infty} = \\frac{180}{1-0.97} = \\frac{180}{0.03} = 6{,}000$$
 
-$$9{,}000 - 6{,}000 = 3{,}000 \\text{ million tons stranded}$$
+Subtract that extraction total from the $9{,}000$ million tons in the reserve base; the difference is the stranded tonnage, in million tons:
+
+$$9{,}000 - 6{,}000 = 3{,}000$$
 
 A steeper $5\\%$ annual fall keeps only $95\\%$ of the previous year's output, so the quotient becomes $k = 0.95$ while the starting output stays at $180$ million tons:
 
@@ -10204,9 +10230,9 @@ $$s_{\\infty} = \\frac{180}{1-0.95}$$
 
 $$s_{\\infty} = \\frac{180}{0.05} = 3{,}600$$
 
-million tons ever extracted, which leaves
+That is the number of million tons ever extracted on the steeper path, so the same subtraction leaves this stranded tonnage, again in million tons:
 
-$$9{,}000 - 3{,}600 = 5{,}400 \\text{ million tons stranded}$$
+$$9{,}000 - 3{,}600 = 5{,}400$$
 
 Comparing the two stranded figures:
 
@@ -10286,9 +10312,9 @@ Infinite sum ($|k| < 1$): $a/(1-k)$. Finite sum of first $n$ terms: $s_n = a(1-k
     tactical_explanations: [
       `**A) The alternating adjustment series converges to a finite sum.**  (true)
 
-An infinite geometric series converges when the absolute value of its quotient is below 1, and the sign of that quotient plays no part in the test:
+An infinite geometric series converges when the absolute value of its quotient is below 1, and the sign of that quotient plays no part in the test. Writing $a$ for the first term and $k$ for the fixed quotient, the series $a + ak + ak^{2} + \\cdots$ converges exactly when the quotient satisfies
 
-$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+$$|k| < 1$$
 
 Each adjustment here reverses sign and is half the size of the previous one, so the quotient is
 
@@ -10345,9 +10371,9 @@ $$s_4 = 2{,}500$$
 The four adjustments total \\$2,500.00. The claim names \\$3,000.00, which is \\$500.00 too high because it does not account for the sign reversals, so the statement is false.`,
       `**D) The series necessarily diverges regardless of its magnitude.**  (false)
 
-Divergence is not automatic for a series with a negative quotient. The test is the same one used for any geometric series and looks only at the size of the quotient:
+Divergence is not automatic for a series with a negative quotient. The test is the same one used for any geometric series, and it looks only at the size of the quotient, never at its sign. The series $a + ak + ak^{2} + \\cdots$ settles on a finite total exactly when the absolute value of the quotient stays below one:
 
-$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+$$|k| < 1$$
 
 Here the quotient is $k = -0.5$, so the quantity the test measures is
 
@@ -10367,7 +10393,7 @@ $$s_3 = 2{,}000 + 1{,}000 = 3{,}000$$
 
 $$s_4 = 3{,}000 - 500 = 2{,}500$$
 
-The swings shrink toward the limiting value
+The swings shrink toward the limiting value, which the geometric sum formula puts at
 
 $$s_{\\infty} = \\frac{4{,}000}{1-(-0.5)} = \\frac{4{,}000}{1.5} = 2{,}666.67$$
 
@@ -12148,9 +12174,9 @@ $$a_4 = 625.00$$
 The fourth batch is worth \\$625.00. The claim names \\$650.00, which is \\$25.00 too high, so the statement is false.`,
       `**B) With p = 1.5, the infinite series converges to a finite total value.**  (true)
 
-Whether the total marginal benefit is finite is settled by the p-series rule quoted in the setup:
+Whether the total marginal benefit is finite is settled by the p-series rule quoted in the setup. The sum $\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}$ converges exactly when the exponent in the denominator clears one, and it diverges for every exponent at or below one:
 
-$$\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}} \\text{ converges exactly when } p > 1$$
+$$p > 1$$
 
 The constant \\$5,000 in the numerator does not affect convergence, since it factors straight out of the sum:
 
@@ -12160,20 +12186,20 @@ The exponent under consideration is $p = 1.5$, and comparing it with the cutoff:
 
 $$1.5 > 1$$
 
-The condition holds, so the underlying p-series converges and multiplying it by \\$5,000 leaves a finite total. The claim says the series converges to a finite total value, so the statement is true.`,
+The condition holds, so the underlying p-series converges to a finite value, and multiplying that value by \\$5,000 leaves a finite total. The claim says the series converges to a finite total value, so the statement is true.`,
       `**C) If instead p = 1, the series would still converge, just to a larger total than the p = 1.5 case.**  (false)
 
-The same p-series rule decides the case:
+The same p-series rule decides the case. The sum $\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}$ converges exactly when the exponent is strictly greater than one:
 
-$$\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}} \\text{ converges exactly when } p > 1$$
+$$p > 1$$
 
 Setting $p = 1$ turns the model into
 
 $$a_n = \\frac{5{,}000}{n^{1}} = \\frac{5{,}000}{n}$$
 
-which is \\$5,000 times the harmonic series. Testing the exponent against the cutoff:
+which is \\$5,000 times the harmonic series. The rule asks for an exponent strictly above one, while here the exponent sits exactly on the cutoff:
 
-$$1 > 1 \\text{ is false}$$
+$$p = 1$$
 
 Since $p = 1$ does not clear the threshold, the harmonic series diverges and so does \\$5,000 times it. Its partial sums grow without any ceiling, so there is no total at all to compare against the $p = 1.5$ case. The claim asserts convergence to a larger total, but no total exists, so the statement is false.`,
       `**D) $a_{100} = \\$5.00$, and this alone is enough to guarantee that the series $\\sum a_n$ converges.**  (false)
@@ -12193,9 +12219,9 @@ $$\\sum a_n \\text{ converges} \\implies a_n \\to 0$$
 but the reverse implication fails. The harmonic case makes that concrete: at $p = 1$ the terms $5{,}000/n$ also fall toward zero, and $a_{100} = 5{,}000/100 = 50$ is a small figure too, yet the rule $p > 1$ is not met and that series diverges. One small term therefore proves nothing on its own, so the statement is false.`,
       `**E) With p = 0.5, the series diverges, even though the individual terms still tend to 0 as n → ∞.**  (true)
 
-The p-series rule fixes the outcome:
+The p-series rule fixes the outcome. The sum $\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}$ converges exactly when the exponent is strictly greater than one, and it diverges for every exponent at or below one:
 
-$$\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}} \\text{ converges exactly when } p > 1$$
+$$p > 1$$
 
 With $p = 0.5$ the model becomes
 
@@ -14723,17 +14749,17 @@ $$116.25 - 106.25 = 10.00$$
 The stated figure overshoots the correct \\$106.25 by \\$10.00, so the statement is false.`,
       `**D) This drop in the required return, from 7% to 4%, increases the fair value by MORE than 75%.**  (false)
 
-A percentage change compares the size of the move with the starting value:
+A percentage change compares the size of the move with the starting value. Write $P_1$ for the fair value at the original 7% required return and $P_2$ for the fair value at the lower 4% required return, so the relative change is
 
-$$\\text{percent change} = \\frac{P' - P}{P}$$
+$$\\frac{P_2 - P_1}{P_1}$$
 
 At the original 7% required return the fair value is
 
-$$P = \\frac{4.25}{0.07} \\approx 60.714286$$
+$$P_1 = \\frac{4.25}{0.07} \\approx 60.714286$$
 
 and at the lower 4% required return it is
 
-$$P' = \\frac{4.25}{0.04} = 106.25$$
+$$P_2 = \\frac{4.25}{0.04} = 106.25$$
 
 The size of the rise is
 
@@ -14742,6 +14768,8 @@ $$106.25 - 60.714286 = 45.535714$$
 and the relative rise is
 
 $$\\frac{45.535714}{60.714286} = 0.750000$$
+
+Written as a percentage, that share is
 
 $$0.750000 = 75.00\\%$$
 
@@ -14864,17 +14892,17 @@ $$T' = 300,000.00$$
 The claim states the total requirement would be about \\$300,000.00, and the calculation returns \\$300,000.00, so the statement is true.`,
       `**D) This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.**  (false)
 
-A percentage reduction compares the size of the drop with the original requirement:
+A percentage reduction compares the size of the drop with the original requirement. Write $T_1$ for the requirement at the 4.5% rate and $T_2$ for the requirement at the 6% rate, so the relative reduction is
 
-$$\\text{percent drop} = \\frac{T - T'}{T}$$
+$$\\frac{T_1 - T_2}{T_1}$$
 
 At 4.5% the requirement is the renovation plus the perpetuity:
 
-$$T = 50,000 + \\frac{15,000}{0.045} = 383,333.33$$
+$$T_1 = 50,000 + \\frac{15,000}{0.045} = 383,333.33$$
 
 At 6% it is
 
-$$T' = 50,000 + \\frac{15,000}{0.06} = 300,000.00$$
+$$T_2 = 50,000 + \\frac{15,000}{0.06} = 300,000.00$$
 
 The drop is
 
@@ -14883,6 +14911,8 @@ $$383,333.33 - 300,000.00 = 83,333.33$$
 and as a share of the original requirement:
 
 $$\\frac{83,333.33}{383,333.33} \\approx 0.217391$$
+
+Written as a percentage, that share is
 
 $$0.217391 \\approx 21.74\\%$$
 
@@ -16064,24 +16094,26 @@ $$a \\approx 14,593.54$$
 The claim gives about \\$14,593.54 per year, and the calculation returns \\$14,593.54, so the statement is true.`,
       `**C) The interest portion of the first payment is exactly \\$7,200.00.**  (true)
 
-Interest in any year is charged on the balance outstanding at the start of that year:
+Interest in any year is charged on the balance outstanding at the start of that year. Write $B_0$ for the balance the first year opens with, $r$ for the annual rate and $I_1$ for the interest charged in the first year:
 
-$$\\text{interest} = r \\times \\text{opening balance}$$
+$$I_1 = r B_0$$
 
-No payment has been made before the first year ends, so the opening balance is the full amount borrowed:
+No payment has been made before the first year ends, so the opening balance is still the full amount borrowed:
 
-$$\\text{opening balance} = 60,000.00$$
+$$B_0 = 60,000.00$$
 
-$$\\text{interest}_1 = 0.12 \\times 60,000$$
+Substituting the rate and that balance:
 
-$$\\text{interest}_1 = 7,200.00$$
+$$I_1 = 0.12 \\times 60,000$$
+
+$$I_1 = 7,200.00$$
 
 Both figures here are exact, since 12% of \\$60,000 leaves no rounding to do. The claim names exactly \\$7,200.00, so the statement is true.`,
       `**D) The principal-repayment portion of the first payment is more than half of the total payment amount.**  (true)
 
-Each instalment covers the year's interest first, and whatever is left reduces the principal:
+Each instalment covers the year's interest first, and whatever is left reduces the principal. Write $a$ for the instalment, $B_0$ for the balance the first year opens with, $r$ for the annual rate and $P_1$ for the principal part of the first payment:
 
-$$\\text{principal} = a - r \\times \\text{opening balance}$$
+$$P_1 = a - r B_0$$
 
 The instalment comes from the annuity payment formula:
 
@@ -16106,9 +16138,11 @@ $$7,393.54 - 7,296.77 = 96.77$$
 Even in year 1, when interest is at its heaviest, the principal portion clears half the payment by \\$96.77, so the statement is true.`,
       `**E) The outstanding balance immediately after the second payment is approximately \\$45,000.00.**  (false)
 
-Tracking the balance takes one year at a time, recomputing interest on whatever principal is still outstanding:
+Tracking the balance takes one year at a time, recomputing interest on whatever principal is still outstanding. Write $B_{k-1}$ for the balance year $k$ opens with, $I_k$ for the interest charged that year, $a$ for the instalment and $B_k$ for the balance left once the payment is made:
 
-$$\\text{interest} = r \\times \\text{opening balance}, \\qquad \\text{new balance} = \\text{opening balance} - (a - \\text{interest})$$
+$$I_k = r B_{k-1}$$
+
+$$B_k = B_{k-1} - (a - I_k)$$
 
 The instalment is
 
@@ -16209,19 +16243,19 @@ $$a \\approx 597.24$$
 The claim gives about \\$597.24 per month, and the calculation returns \\$597.24, so the statement is true.`,
       `**C) The total amount paid over all 48 monthly payments is approximately \\$29,500.00.**  (false)
 
-The total handed over is simply the instalment repeated for every payment period:
+The total handed over is simply the instalment repeated for every payment period. Write $a$ for the monthly instalment and $n$ for the number of payments, so the total paid is the product
 
-$$\\text{total paid} = a \\times n$$
+$$an$$
 
 The monthly instalment comes from the payment formula with $r = 0.0075$ and $n = 48$:
 
 $$a = \\frac{0.0075 \\times 24,000}{1 - (1.0075)^{-48}} = \\frac{180}{0.301386} \\approx 597.24$$
 
-Over all 48 months:
+Over all 48 months the total paid is
 
-$$\\text{total paid} \\approx 597.24 \\times 48$$
+$$an \\approx 597.24 \\times 48$$
 
-$$\\text{total paid} \\approx 28,667.57$$
+$$an \\approx 28,667.57$$
 
 The claim states about \\$29,500.00:
 
@@ -16230,9 +16264,9 @@ $$29,500.00 - 28,667.57 = 832.43$$
 The stated total runs \\$832.43 above what the customer actually pays, so the statement is false.`,
       `**D) The total interest paid over the life of the loan is approximately \\$4,667.57.**  (true)
 
-Interest over the life of a loan is whatever is paid beyond the amount borrowed:
+Interest over the life of a loan is whatever is paid beyond the amount borrowed. Write $a$ for the monthly instalment, $n$ for the number of payments and $K$ for the amount financed, so the interest charged over the loan is
 
-$$\\text{total interest} = a \\times n - K$$
+$$an - K$$
 
 The monthly instalment is
 
@@ -16360,9 +16394,11 @@ $$5,000.00 - 4,500.00 = 500.00$$
 Charging \\$5,000.00 would mean a rate of $5,000/45,000 \\approx 11.1\\%$, not the 10% agreed. The correct first-year interest is \\$4,500.00, so the statement is false.`,
       `**C) The outstanding balance immediately after the third payment is approximately \\$20,602.37.**  (true)
 
-The balance falls each year by the principal portion of the payment, where the principal portion is the instalment minus that year's interest:
+The balance falls each year by the principal portion of the payment, where the principal portion is the instalment minus that year's interest. Write $B_{k-1}$ for the balance year $k$ opens with, $I_k$ for the interest charged that year, $a$ for the instalment and $B_k$ for the balance carried forward:
 
-$$\\text{interest} = r \\times \\text{opening balance}, \\qquad \\text{new balance} = \\text{opening balance} - (a - \\text{interest})$$
+$$I_k = r B_{k-1}$$
+
+$$B_k = B_{k-1} - (a - I_k)$$
 
 The instalment is
 
@@ -16389,9 +16425,11 @@ $$29,521.13 - (11,870.89 - 2,952.11) = 20,602.35$$
 The claim gives about \\$20,602.37, which the schedule reproduces to within a few cents of rounding, so the statement is true.`,
       `**D) In the fourth year, the interest portion of the payment is larger than the principal portion of the payment.**  (false)
 
-The split of a payment depends on the balance the year opens with, so the schedule has to be carried to year 4:
+The split of a payment depends on the balance the year opens with, so the schedule has to be carried to year 4. Write $B_{k-1}$ for the opening balance of year $k$, $I_k$ for the interest charged that year and $P_k$ for the principal part of that payment:
 
-$$\\text{interest} = r \\times \\text{opening balance}, \\qquad \\text{principal} = a - \\text{interest}$$
+$$I_k = r B_{k-1}$$
+
+$$P_k = a - I_k$$
 
 With $a \\approx 11,870.89$ the balances run
 
@@ -16401,11 +16439,13 @@ $$37,629.11 - (11,870.89 - 3,762.91) = 29,521.13$$
 
 $$29,521.13 - (11,870.89 - 2,952.11) = 20,602.35$$
 
-Year 4 therefore opens at about \\$20,602.35:
+Year 4 therefore opens at about \\$20,602.35, and the interest charged on that balance is
 
-$$\\text{interest}_4 \\approx 0.10 \\times 20,602.35 \\approx 2,060.24$$
+$$I_4 \\approx 0.10 \\times 20,602.35 \\approx 2,060.24$$
 
-$$\\text{principal}_4 \\approx 11,870.89 - 2,060.24 \\approx 9,810.65$$
+which leaves as the principal part
+
+$$P_4 \\approx 11,870.89 - 2,060.24 \\approx 9,810.65$$
 
 Comparing the two parts of the payment:
 
@@ -16414,13 +16454,13 @@ $$9,810.65 - 2,060.24 = 7,750.41$$
 By year 4 the principal portion is larger than the interest portion by \\$7,750.41, so interest is the smaller part and the statement is false.`,
       `**E) Adding up the principal-repayment portions of all 5 payments gives a total of exactly \\$46,200.00.**  (false)
 
-The principal portions are exactly the amounts by which the balance is written down, so together they must remove the whole balance:
+The principal portions are exactly the amounts by which the balance is written down, so together they must remove the whole balance. Write $P_k$ for the principal part of payment $k$, $K$ for the amount borrowed and $B_5$ for the balance left after the last payment:
 
-$$\\sum \\text{principal portions} = K - \\text{final balance}$$
+$$\\sum_{k=1}^{5} P_k = K - B_5$$
 
-The loan is fully repaid at the end of year 5, which means the final balance is zero:
+The loan is fully repaid at the end of year 5, which means that closing balance is zero:
 
-$$\\sum \\text{principal portions} = 45,000.00 - 0 = 45,000.00$$
+$$\\sum_{k=1}^{5} P_k = 45,000.00 - 0 = 45,000.00$$
 
 The year-by-year figures confirm it:
 
@@ -16693,9 +16733,9 @@ $$8,568.61 \\times 1.13 \\approx 9,682.53$$
 The claim gives about \\$9,682.53 for the fifth payment, and the calculation returns \\$9,682.53, so the statement is true.`,
       `**D) The total amount paid over the entire life of the loan is approximately \\$49,682.53.**  (true)
 
-The total handed over is the four full payments plus the reduced final one:
+The total handed over is the four full payments plus the reduced final one. Write $a$ for each full payment and $F$ for the smaller closing payment, so the total is
 
-$$\\text{total} = 4a + \\text{final payment}$$
+$$4a + F$$
 
 The four full payments come to
 
@@ -16711,7 +16751,9 @@ $$\\frac{10,000}{0.13}\\bigl[(1.13)^{4} - 1\\bigr] \\approx 48,497.97$$
 
 $$57,066.58 - 48,497.97 = 8,568.61$$
 
-$$8,568.61 \\times 1.13 \\approx 9,682.53$$
+Carrying that shortfall one further year to the closing payment date:
+
+$$F \\approx 8,568.61 \\times 1.13 \\approx 9,682.53$$
 
 Adding the pieces:
 
@@ -16720,9 +16762,9 @@ $$40,000.00 + 9,682.53 = 49,682.53$$
 The claim gives about \\$49,682.53, and the calculation returns \\$49,682.53, so the statement is true.`,
       `**E) The total interest paid over the life of the loan is less than the original \\$35,000 principal.**  (true)
 
-Interest over the life of the loan is everything paid beyond the amount borrowed:
+Interest over the life of the loan is everything paid beyond the amount borrowed. Write $S$ for the sum of every payment made and $K$ for the amount borrowed, so the interest is
 
-$$\\text{total interest} = \\text{total paid} - K$$
+$$S - K$$
 
 The four full payments total \\$40,000.00, and the final payment settles the year-4 balance:
 
@@ -16736,7 +16778,7 @@ $$8,568.61 \\times 1.13 \\approx 9,682.53$$
 
 So the borrower pays
 
-$$40,000.00 + 9,682.53 = 49,682.53$$
+$$S = 40,000.00 + 9,682.53 = 49,682.53$$
 
 and the interest inside that is
 
@@ -16889,13 +16931,17 @@ At 10%:
 
 $$PV_B = 100,000 + \\frac{100,000}{0.10}\\bigl[1 - (1.10)^{-6}\\bigr] \\approx 100,000 + 435,526.07 \\approx 535,526.07$$
 
-$$535,526.07 - 500,000.00 = 35,526.07 \\text{ more than cash}$$
+Measured against the \\$500,000.00 cash price, Option B costs more at this rate:
+
+$$535,526.07 - 500,000.00 = 35,526.07$$
 
 At 14%:
 
 $$PV_B = 100,000 + \\frac{100,000}{0.14}\\bigl[1 - (1.14)^{-6}\\bigr] \\approx 100,000 + 388,866.75 \\approx 488,866.75$$
 
-$$500,000.00 - 488,866.75 = 11,133.25 \\text{ less than cash}$$
+Measured against the same cash price, Option B now costs less:
+
+$$500,000.00 - 488,866.75 = 11,133.25$$
 
 The claim asserts that Option B is dearer at every rate. One rate makes it \\$35,526.07 dearer and another makes it \\$11,133.25 cheaper, so the ranking depends on the rate and the statement is false.`,
     ],
@@ -16943,13 +16989,13 @@ Annuity-due present value: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$
     tactical_explanations: [
       `**A) The year-end equivalent value of the four quarterly deposits made during a single year is \\$1,100.00.**  (false)
 
-Each quarterly deposit earns simple interest only for the part of the year still left before interest is credited. The deposits land at the end of quarters 1, 2, 3 and 4, so they sit for $3/4$, $1/2$, $1/4$ and $0$ of a year:
+Each quarterly deposit earns simple interest only for the part of the year still left before interest is credited. The deposits land at the end of quarters 1, 2, 3 and 4, so they sit for $3/4$, $1/2$, $1/4$ and $0$ of a year. Write $D$ for each deposit, $r$ for the annual simple rate and $V$ for the year-end equivalent value:
 
-$$\\text{year-end value} = D\\Bigl[\\bigl(1 + \\tfrac{3}{4}r\\bigr) + \\bigl(1 + \\tfrac{1}{2}r\\bigr) + \\bigl(1 + \\tfrac{1}{4}r\\bigr) + 1\\Bigr]$$
+$$V = D\\Bigl[\\bigl(1 + \\tfrac{3}{4}r\\bigr) + \\bigl(1 + \\tfrac{1}{2}r\\bigr) + \\bigl(1 + \\tfrac{1}{4}r\\bigr) + 1\\Bigr]$$
 
 Collecting the four principal amounts and the fractions of a year gives
 
-$$\\text{year-end value} = D(4 + 1.5r)$$
+$$V = D(4 + 1.5r)$$
 
 Substituting $D = 250$ and $r = 8\\% = 0.08$:
 
@@ -17155,9 +17201,9 @@ $$\\frac{30,200.80}{200,000.00} \\approx 0.151004$$
 
 $$0.151004 \\approx 15.10\\%$$
 
-The claim needs more than 25% repaid:
+The claim needs more than 25% repaid. Subtract the repaid share from that 25% cutoff to get the shortfall in percentage points:
 
-$$25\\% - 15.10\\% = 9.90 \\text{ percentage points}$$
+$$25\\% - 15.10\\% = 9.90$$
 
 Early payments go mostly to interest, so only about 15.10% of the principal is gone after five years, nearly ten percentage points short of the claim, and the statement is false.`,
       `**D) The total interest paid during just the first 5 years is approximately \\$55,770.92.**  (true)
@@ -17185,9 +17231,9 @@ $$85,971.73 - 30,200.80 = 55,770.93$$
 The claim gives about \\$55,770.92, which the calculation matches to the cent, so the statement is true.`,
       `**E) The total interest paid over the entire 20-year life of the loan is approximately \\$120,000.00.**  (false)
 
-Lifetime interest is the sum of every payment minus the amount borrowed:
+Lifetime interest is the sum of every payment minus the amount borrowed. Write $a$ for the monthly payment, $n$ for the number of months and $K$ for the amount borrowed, so the interest over the life of the loan is
 
-$$\\text{total interest} = a \\times n - K$$
+$$an - K$$
 
 The monthly payment is
 
@@ -17301,15 +17347,15 @@ $$11,491.37 \\times 1.14 \\approx 13,100.16$$
 The claim gives about \\$13,100.16 for the ninth payment, and the calculation returns \\$13,100.16, so the statement is true.`,
       `**C) The total interest paid over the life of the loan is approximately \\$105,000.00.**  (false)
 
-Interest over the life of the loan is everything paid beyond the amount borrowed:
+Interest over the life of the loan is everything paid beyond the amount borrowed. Write $T$ for the total amount handed over, $K$ for the amount borrowed and $I$ for the interest bill:
 
-$$\\text{total interest} = \\text{total paid} - K$$
+$$I = T - K$$
 
-Eight full payments come to
+Here the amount borrowed is \\$120,000.00, so $K = 120,000$. Eight full payments come to
 
 $$8 \\times 25,000 = 200,000.00$$
 
-The ninth payment clears the year-8 balance:
+The ninth payment clears the year-8 balance, which is the debt grown forward minus the payments grown forward:
 
 $$120,000 \\times (1.14)^{8} \\approx 342,310.37$$
 
@@ -17323,22 +17369,22 @@ So the borrower pays
 
 $$200,000.00 + 13,100.16 = 213,100.16$$
 
-and the interest inside that is
+and the interest inside that total is
 
 $$213,100.16 - 120,000.00 = 93,100.16$$
 
-The claim states about \\$105,000.00:
+The claim states about \\$105,000.00, so compare it with the interest just found:
 
 $$105,000.00 - 93,100.16 = 11,899.84$$
 
 The true interest bill is about \\$93,100.16, nearly \\$12,000 below the stated figure, so the statement is false.`,
       `**D) The total amount actually paid over the life of the loan is approximately \\$210,000.00.**  (false)
 
-The total paid is eight full payments plus a smaller ninth one, so the ninth payment has to be worked out rather than assumed:
+The total paid is eight full payments plus a smaller ninth one, so the ninth payment has to be worked out rather than assumed. Write $a$ for the fixed payment, $F$ for the final payment and $T$ for the total:
 
-$$\\text{total paid} = 8a + \\text{final payment}$$
+$$T = 8a + F$$
 
-The eight full payments give
+With $a = 25,000$ the eight full payments give
 
 $$8 \\times 25,000 = 200,000.00$$
 
@@ -17350,17 +17396,19 @@ $$\\frac{25,000}{0.14}\\bigl[(1.14)^{8} - 1\\bigr] \\approx 330,819.00$$
 
 $$342,310.37 - 330,819.00 = 11,491.37$$
 
+That balance is settled one year later, so it carries one more year of interest:
+
 $$11,491.37 \\times 1.14 \\approx 13,100.16$$
 
 Adding the pieces:
 
 $$200,000.00 + 13,100.16 = 213,100.16$$
 
-The claim states about \\$210,000.00:
+The claim states about \\$210,000.00, so compare it with the total just found:
 
 $$213,100.16 - 210,000.00 = 3,100.16$$
 
-The company actually pays about \\$213,100.16, so the statement is false.`,
+The company actually pays about \\$213,100.16, more than \\$3,000 above the stated figure, so the statement is false.`,
       `**E) Assuming all 9 payments are full \\$25,000 payments overstates the true total amount paid by more than \\$10,000.**  (true)
 
 The comparison needs the true total against the total that nine full payments would give.
@@ -17375,11 +17423,15 @@ $$120,000 \\times (1.14)^{8} - \\frac{25,000}{0.14}\\bigl[(1.14)^{8} - 1\\bigr]$
 
 $$\\approx 342,310.37 - 330,819.00 = 11,491.37$$
 
+That balance is cleared a year later, so it grows once more before it is settled:
+
 $$11,491.37 \\times 1.14 \\approx 13,100.16$$
 
-$$\\text{total paid} \\approx 8 \\times 25,000 + 13,100.16 = 213,100.16$$
+The true total is the eight full payments plus that smaller ninth payment:
 
-The overstatement is
+$$8 \\times 25,000 + 13,100.16 = 213,100.16$$
+
+The overstatement is the difference between the two totals:
 
 $$225,000.00 - 213,100.16 = 11,899.84$$
 
@@ -17496,9 +17548,9 @@ $$8,858.87 - 7,980.80 = 878.07$$
 The third payment carries \\$878.07 less interest than the second, not more, so the statement is false.`,
       `**D) The year-end equivalent value of the reserve fund's quarterly deposits made during a single year is \\$1,240.50, and the reserve fund's balance after 3 years is approximately \\$4,066.48.**  (true)
 
-The reserve deposits land at quarter ends and earn simple interest for the rest of the year, which collapses to a single year-end amount:
+The reserve deposits land at quarter ends and earn simple interest for the rest of the year, which collapses to a single year-end amount. Write $D$ for one quarterly deposit and $V$ for that year-end equivalent:
 
-$$\\text{year-end value} = D(4 + 1.5r)$$
+$$V = D(4 + 1.5r)$$
 
 Substituting $D = 300$ and the reserve rate $r = 9\\% = 0.09$:
 
@@ -17508,7 +17560,7 @@ $$4 + 0.135 = 4.135$$
 
 $$300 \\times 4.135 = 1,240.50$$
 
-That equivalent deposit then compounds annually like an ordinary annuity:
+That equivalent deposit then compounds annually like an ordinary annuity, with $a = 1,240.50$ and $N = 3$:
 
 $$F_N = \\frac{a}{r}\\bigl[(1+r)^{N} - 1\\bigr]$$
 
@@ -18104,9 +18156,9 @@ $$r = 1.25 - 1$$
 
 $$r = 0.25 = 25\\%$$
 
-Comparing with the threshold in the claim:
+Subtracting the threshold named in the claim from this rate gives the gap in percentage points:
 
-$$25\\% - 24\\% = 1 \\text{ percentage point}$$
+$$25\\% - 24\\% = 1$$
 
 The rate clears 24% by a full percentage point, so the statement is true.`,
       `**E) This project has a unique internal rate of return greater than -1.**  (true)
@@ -18267,11 +18319,11 @@ $$s = \\frac{-7 + 20.8087}{16} \\approx 0.86304$$
 
 $$r = \\frac{1}{0.86304} - 1 \\approx 0.15872 = 15.87\\%$$
 
-Comparing with the threshold in the claim:
+Subtracting the threshold named in the claim from this rate gives the gap in percentage points:
 
-$$15.87\\% - 13\\% = 2.87 \\text{ percentage points}$$
+$$15.87\\% - 13\\% = 2.87$$
 
-The stronger second-year return lifts the rate to about 15.87%, clearing 13%, so the statement is true.`,
+The stronger second-year return lifts the rate to about 15.87%, clearing 13% by nearly three percentage points, so the statement is true.`,
       `**E) Doubling both returns to \\$14,000 in Year 1 and \\$14,000 in Year 2, with the outlay unchanged at \\$12,000, would result in an internal rate of return of approximately 21.84%.**  (false)
 
 Doubling both returns changes both coefficients of the quadratic, so the rate must be recomputed rather than scaled:
@@ -18294,9 +18346,9 @@ $$s = \\frac{-7 + 14.7309}{14} \\approx 0.55221$$
 
 $$r = \\frac{1}{0.55221} - 1 \\approx 0.81091 = 81.09\\%$$
 
-The claim names about 21.84%, which is simply twice the original 10.92%:
+The claim names about 21.84%, which is simply twice the original 10.92%. Subtracting that stated figure from the computed rate gives the gap in percentage points:
 
-$$81.09\\% - 21.84\\% = 59.25 \\text{ percentage points}$$
+$$81.09\\% - 21.84\\% = 59.25$$
 
 The true rate is about 81.09%, nearly sixty percentage points above the stated figure, because doubling the returns does not double the rate. The statement is false.`,
     ],
@@ -18446,11 +18498,11 @@ $$s = \\frac{-18 + 39.0384}{30} \\approx 0.70128$$
 
 $$r = \\frac{1}{0.70128} - 1 \\approx 0.42596 = 42.60\\%$$
 
-Comparing with the threshold in the claim:
+Subtracting the threshold named in the claim from this rate gives the gap in percentage points:
 
-$$42.60\\% - 30\\% = 12.60 \\text{ percentage points}$$
+$$42.60\\% - 30\\% = 12.60$$
 
-Pulling money forward into Year 1 lifts the rate to about 42.60%, well past 30%, so the statement is true.`,
+Pulling money forward into Year 1 lifts the rate to about 42.60%, well past the 30% threshold, so the statement is true.`,
       `**E) The sum of all cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$4,000.**  (true)
 
 The cash flows are the outlay today and the two returns, with the outlay counted as negative:
@@ -18574,9 +18626,9 @@ Project Y:
 
 $$r_Y = \\frac{24,750}{22,000} - 1 = 1.125 - 1 = 0.125 = 12.5\\%$$
 
-Comparing the two:
+Subtracting the rate of Project Y from the rate of Project X gives the gap in percentage points:
 
-$$15\\% - 12.5\\% = 2.5 \\text{ percentage points}$$
+$$15\\% - 12.5\\% = 2.5$$
 
 Project X earns 2.5 percentage points more per dollar committed, so the criterion picks X rather than Y. The claim puts Y ahead, so the statement is false.`,
       `**D) At an interest rate of 11%, Project X has positive net present value while Project Y has negative net present value.**  (false)
@@ -18616,9 +18668,9 @@ Project X's rate comes from its own figures:
 
 $$r_X = \\frac{17,250}{15,000} - 1 = 0.15 = 15\\%$$
 
-Comparing the two:
+Subtracting the recomputed rate of Project Y from the rate of Project X gives the gap in percentage points:
 
-$$15\\% - 13.64\\% = 1.36 \\text{ percentage points}$$
+$$15\\% - 13.64\\% = 1.36$$
 
 Even with the bigger payoff, Project Y stays 1.36 percentage points behind Project X, so the statement is false.`,
     ],
@@ -18824,9 +18876,9 @@ $$s = \\frac{-8 + 29.665}{24} \\approx 0.90270$$
 
 $$r = \\frac{1}{0.90270} - 1 \\approx 0.10778 = 10.78\\%$$
 
-The claim states about 14.5%:
+The claim states about 14.5%. Subtracting the computed rate from that stated figure gives the gap in percentage points:
 
-$$14.5\\% - 10.78\\% = 3.72 \\text{ percentage points}$$
+$$14.5\\% - 10.78\\% = 3.72$$
 
 The true rate is about 10.78%, well short of the stated figure, so the statement is false.`,
       `**B) At an interest rate of 9%, the net present value of the project is negative.**  (false)
@@ -18891,9 +18943,9 @@ $$s = \\frac{-8 + 27.276}{20} \\approx 0.96382$$
 
 $$r = \\frac{1}{0.96382} - 1 \\approx 0.03754 = 3.75\\%$$
 
-Comparing the two rates:
+Subtracting the weaker rate from the original rate gives the gap in percentage points:
 
-$$10.78\\% - 3.75\\% = 7.03 \\text{ percentage points}$$
+$$10.78\\% - 3.75\\% = 7.03$$
 
 Cutting \\$4,000 from the second year drags the rate down by about seven percentage points rather than lifting it, so the statement is false.`,
       `**E) Reducing the initial outlay to \\$30,000, with returns unchanged at \\$16,000 and \\$24,000, would lower the internal rate of return.**  (false)
@@ -18918,9 +18970,9 @@ $$s = \\frac{-8 + 28}{24} = \\frac{20}{24} \\approx 0.83333$$
 
 $$r = \\frac{1}{0.83333} - 1 = 0.20 = 20\\%$$
 
-The original project earns about 10.78%, so comparing:
+The original project earns about 10.78%, so subtracting that from the new rate gives the gap in percentage points:
 
-$$20\\% - 10.78\\% = 9.22 \\text{ percentage points}$$
+$$20\\% - 10.78\\% = 9.22$$
 
 Paying less for the same returns raises the rate by more than nine percentage points instead of lowering it, so the statement is false.`,
     ],
@@ -19217,9 +19269,9 @@ Double the original rate of about 10.69% would be
 
 $$2 \\times 10.69\\% = 21.38\\%$$
 
-Comparing:
+Subtracting that doubled benchmark from the new rate gives the gap in percentage points:
 
-$$77.44\\% - 21.38\\% = 56.06 \\text{ percentage points}$$
+$$77.44\\% - 21.38\\% = 56.06$$
 
 The new rate clears twice the original by more than fifty percentage points, so the statement is true.`,
       `**E) If the outlay were reduced to \\$60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project.**  (false)
@@ -19244,9 +19296,9 @@ $$s = \\frac{-34 + 106}{84} = \\frac{72}{84} \\approx 0.857143$$
 
 $$r = \\frac{1}{0.857143} - 1 \\approx 0.16667 = 16.67\\%$$
 
-The original project earns about 10.69%, so comparing:
+The original project earns about 10.69%, so subtracting that from the new rate gives the gap in percentage points:
 
-$$16.67\\% - 10.69\\% = 5.98 \\text{ percentage points}$$
+$$16.67\\% - 10.69\\% = 5.98$$
 
 Paying \\$5,000 less for the same rental income lifts the rate by about six percentage points instead of lowering it, so the statement is false.`,
     ],
@@ -19406,11 +19458,13 @@ $$r = 0.12 - 1$$
 
 $$r = -0.88 = -88\\%$$
 
-Option 2 keeps both returns and earns about $-58.84\\%$. Comparing the two:
+Option 2 keeps both returns and earns about $-58.84\\%$. Comparing the two rates:
 
 $$-88\\% < -58.84\\%$$
 
-$$58.84 - 88 = -29.16 \\text{ percentage points}$$
+Subtracting the rate of Option 2 from the stripped-down rate gives the gap in percentage points:
+
+$$-88 - (-58.84) = -29.16$$
 
 Dropping the second \\$6,000 pushes the rate about 29 percentage points further into negative territory, so the stripped-down version is indeed the lower of the two and the statement is true.`,
     ],
@@ -19514,9 +19568,9 @@ Design B is a one-year project:
 
 $$r_B = \\frac{81,200}{70,000} - 1 = 0.16 = 16\\%$$
 
-Comparing the two:
+Subtracting the rate of Design A from the rate of Design B gives the gap in percentage points:
 
-$$16\\% - 11.04\\% = 4.96 \\text{ percentage points}$$
+$$16\\% - 11.04\\% = 4.96$$
 
 Design B earns nearly five percentage points more per dollar committed, so the criterion prefers Design B and the statement is true.`,
       `**D) At a discount rate of 13%, Design A has negative net present value while Design B still has positive net present value.**  (true)
@@ -19566,9 +19620,9 @@ $$s = \\frac{-11 + 52.545}{44} \\approx 0.94420$$
 
 $$r = \\frac{1}{0.94420} - 1 \\approx 0.05909 = 5.91\\%$$
 
-Comparing with Design B's rate:
+Subtracting the weakened rate of Design A from the rate of Design B gives the gap in percentage points:
 
-$$16\\% - 5.91\\% = 10.09 \\text{ percentage points}$$
+$$16\\% - 5.91\\% = 10.09$$
 
 The weakened version of Design A earns about 5.91%, roughly ten percentage points below Design B's 16%, so it does not exceed it and the statement is false.`,
     ],
