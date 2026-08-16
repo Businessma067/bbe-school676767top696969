@@ -21,6 +21,7 @@ import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
+import flashcardsBanner from "../../assets/flashcard-previews/games-flashcards-banner.png";
 import {
   BookOpen,
   ClipboardCheck,
@@ -33,7 +34,6 @@ import {
   GraduationCap,
   Wand2,
   Gamepad2,
-  Layers,
 } from "lucide-react";
 
 export const Route = createFileRoute("/dashboard")({
@@ -522,19 +522,23 @@ function GamesTab() {
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         <Link
           to="/flashcards"
-          className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+          className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
-          <div className="mb-3 grid h-10 w-10 place-items-center rounded-lg bg-secondary">
-            <Layers className="h-5 w-5 text-caramel-deep" />
+          <img
+            src={flashcardsBanner}
+            alt=""
+            className="h-24 w-full object-cover"
+          />
+          <div className="p-5">
+            <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+              Study game
+            </p>
+            <h3 className="mt-1 font-display text-lg font-bold">Flashcards</h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Drill Economics terms, Math formulas, and English vocabulary with flip cards.
+            </p>
+            <p className="mt-4 text-xs font-semibold text-caramel-deep">Open flashcards →</p>
           </div>
-          <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-            Study game
-          </p>
-          <h3 className="mt-1 font-display text-lg font-bold">Flashcards</h3>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Drill Economics terms, Math formulas, and English vocabulary with flip cards.
-          </p>
-          <p className="mt-4 text-xs font-semibold text-caramel-deep">Open flashcards →</p>
         </Link>
       </div>
     </div>
