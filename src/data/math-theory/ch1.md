@@ -299,56 +299,111 @@ To find how many read $C$ but neither $A$ nor $B$, start from those in $C$ and r
 
 ## 1.3 Propositional Logic & Implications
 
+This section is about reading everyday rules the way an exam reads them: as precise arrows, ands, and ors. Banks, universities, shops and contracts all speak in “if / only if / if and only if”. The mathematics is the same in each case. The hard part is hearing which arrow was actually promised.
+
 ### Why careful logic matters
 
-Routine algebra without logic can produce nonsense. A classic warning is the equation
+Routine algebra without logic can produce nonsense. Consider
 
 $$
 x + 2 = \sqrt{4 - x}.
 $$
 
-Squaring both sides, expanding, and cancelling can lead you to $x = -5$. Substituting back shows that $-5$ fails: the left side is $-3$, while $\sqrt{9} = 3$. The algebraic steps were not all reversible, so a value that appeared at the end need not solve the original equation. Always check candidates in the original statement. The rest of this section explains the logical shape of such mistakes.
+Squaring, expanding and cancelling can spit out $x = -5$. Substituting back fails: the left side is $-3$, while $\sqrt{9} = 3$. Some algebraic steps were one-way only. A value that appears at the end of a chain of implications need not solve the original equation. Always check candidates in the original statement. The rest of this section explains the logical shape of that mistake, and of the worded rules you meet in economics.
 
 ### A reminder about square roots
 
-For $a \ge 0$, the symbol $\sqrt{a}$ means the unique **nonnegative** number $x$ with $x^2 = a$. So $\sqrt{9} = 3$, not $-3$. Older texts sometimes spoke of “two square roots”; modern notation avoids that confusion by writing $\pm\sqrt{a}$ when both signs are wanted. If $a < 0$, there is no real square root.
+For $a \ge 0$, the symbol $\sqrt{a}$ means the unique **nonnegative** number $x$ with $x^2 = a$. So $\sqrt{9} = 3$, not $-3$. If both signs are wanted, write $\pm\sqrt{a}$. If $a < 0$, there is no real square root.
 
-### Propositions
+### Propositions and open propositions
 
-A **proposition** (or statement) is an assertion that is either true or false. “All individuals who breathe are alive” is a true proposition. “All individuals who breathe are healthy” is a false one. If the words are vague, truth may be undefined: “67 is a large number” is neither true nor false until “large” is defined.
+A **proposition** is an assertion that is either true or false.
 
-An assertion that contains a variable, such as $x^2 - 1 = 0$, is an **open proposition**. Substituting different values for $x$ produces different propositions, some true and some false. The open claim $x^2 - 1 = 0$ is true for $x = 1$ and $x = -1$, and false otherwise. Until a value is chosen, the open proposition itself is not simply true or false.
+- True: “All individuals who breathe are alive.”
+- False: “All individuals who breathe are healthy.”
+- Not yet a proposition: “67 is a large number,” until “large” is defined.
 
-### Implications
+An assertion with a free variable, such as $x^2 - 1 = 0$, is an **open proposition**. Plug in different values of $x$ and you get different closed propositions, some true and some false. Until a value is chosen, the open claim itself is not simply true or false. The same idea appears in economics as “profit equals zero when price equals average cost”: it becomes a yes/no statement only after numbers are fixed.
 
-If whenever $P$ is true, $Q$ must also be true, we write
+### The truth table of an implication
+
+If whenever $P$ is true, $Q$ must also be true, write
 
 $$
-P \Rightarrow Q
+P \Rightarrow Q.
 $$
 
-and say “$P$ implies $Q$”, “if $P$, then $Q$”, “$Q$ is a consequence of $P$”, or “$P$ only if $Q$”. The same fact can be written $Q \Leftarrow P$.
+Read it as “$P$ implies $Q$”, “if $P$, then $Q$”, “$Q$ if $P$”, or “$P$ only if $Q$”.
 
-**Example 1.** Correct implications include:
+The crucial exam fact is when $P \Rightarrow Q$ is **false**. It fails in exactly one case: $P$ true and $Q$ false. In every other row it holds.
+
+| $P$ | $Q$ | $P \Rightarrow Q$ |
+| --- | --- | --- |
+| T | T | T |
+| T | F | **F** |
+| F | T | T |
+| F | F | T |
+
+So an implication with a false “if” part is automatically true, whatever the “then” part does. That is why a dry day never breaks the rule “if it rains, the picnic is cancelled,” even if the picnic is cancelled for another reason.
+
+**Example 1.** Correct implications:
 
 - $x > 2 \Rightarrow x^2 > 4$
 - $xy = 0 \Rightarrow (x = 0\ \text{or}\ y = 0)$
 - $S$ is a square $\Rightarrow$ $S$ is a rectangle
 - She lives in Paris $\Rightarrow$ She lives in France
 
-(Here “Paris” means Paris, France.)
+(Here Paris means Paris, France.)
 
-When both $P \Rightarrow Q$ and $Q \Rightarrow P$ hold, we write the **equivalence**
+### Converse, inverse, contrapositive
+
+From one implication $P \Rightarrow Q$ three relatives are named constantly on exams:
+
+| Name | Form | Same truth value as the original? |
+| --- | --- | --- |
+| Original | $P \Rightarrow Q$ | — |
+| **Converse** | $Q \Rightarrow P$ | no |
+| **Inverse** | $\neg P \Rightarrow \neg Q$ | no |
+| **Contrapositive** | $\neg Q \Rightarrow \neg P$ | **yes, always** |
+
+Only the contrapositive is logically equivalent to the original. The converse and the inverse are equivalent to each other, but not to the original.
+
+**Example 2 (picnic).** Organiser’s rule: “If it rains, the picnic is cancelled.” Write $P$ for rain and $Q$ for cancellation, so $P \Rightarrow Q$.
+
+| Relative | In words | Follows from the rule? |
+| --- | --- | --- |
+| Converse | If cancelled, then it rained | no |
+| Inverse | If no rain, then not cancelled | no |
+| Contrapositive | If not cancelled, then no rain | yes |
+
+Test day: no rain, but the picnic is cancelled because of a venue conflict. Then $P$ is false and $Q$ is true.
+
+- Original $P \Rightarrow Q$: true (false antecedent).
+- Converse $Q \Rightarrow P$: false (cancelled without rain).
+- Inverse $\neg P \Rightarrow \neg Q$: false (no rain, yet cancelled).
+- Contrapositive: still true whenever the original is.
+
+So one everyday day separates the original from its converse and inverse.
+
+The **negation** of $P \Rightarrow Q$ is not another implication. It is the single failure row:
+
+$$
+\neg(P \Rightarrow Q) \equiv P \land \neg Q.
+$$
+
+For the picnic: “it rains **and** the picnic is not cancelled.”
+
+### Equivalence
+
+When both $P \Rightarrow Q$ and $Q \Rightarrow P$ hold, write
 
 $$
 P \Leftrightarrow Q
 $$
 
-and say “$P$ is equivalent to $Q$”, or “$P$ if and only if $Q$” (often shortened to “iff”).
+(“$P$ if and only if $Q$”, or “iff”). A biconditional is true precisely when $P$ and $Q$ have the **same** truth value: both true, or both false. One true part is not enough. That is the difference between $\Leftrightarrow$ and $\lor$.
 
-In Example 1, only the product rule is an equivalence in both directions. The others fail on the way back: $x = -3$ has $x^2 > 4$ without $x > 2$; a rectangle need not be a square; millions of people live in France outside Paris.
-
-**Example 2.** Correct equivalences include:
+**Example 3.** Correct equivalences:
 
 $$
 (x < -2\ \text{or}\ x > 2) \Leftrightarrow x^2 > 4,
@@ -362,109 +417,145 @@ $$
 A \subseteq B \Leftrightarrow B^c \subseteq A^c.
 $$
 
-### The contrapositive
-
-If $P \Rightarrow Q$ is valid, then whenever $Q$ is false, $P$ must also be false. That is,
-
-$$
-P \Rightarrow Q \quad\text{is equivalent to}\quad \neg Q \Rightarrow \neg P.
-$$
-
-This is the **contrapositive principle**. It is often the cleanest way to prove an implication: instead of assuming $P$ and deriving $Q$, assume $\neg Q$ and derive $\neg P$.
-
-**Example 3.** A bank approves a loan only if the credit score is at least 700 and the debt-to-income ratio is below 40%. Write $L$ for approval and $R$ for “both requirements hold”. The rule is $L \Rightarrow R$. Its contrapositive is $\neg R \Rightarrow \neg L$: fail either requirement, and approval is impossible. Meeting $R$ does **not** force approval, because the bank never promised the reverse arrow $R \Rightarrow L$.
+In Example 1, only the product rule is a two-way equivalence. $x = -3$ has $x^2 > 4$ without $x > 2$. A rectangle need not be a square. Millions of people live in France outside Paris.
 
 ### Necessary and sufficient conditions
 
-Vocabulary for the same arrows:
+Same arrows, different vocabulary:
 
 | Wording | Meaning |
 | --- | --- |
 | $P$ is **sufficient** for $Q$ | $P \Rightarrow Q$ |
-| $Q$ is **necessary** for $P$ | $P \Rightarrow Q$ (same arrow, read from the other end) |
+| $Q$ is **necessary** for $P$ | $P \Rightarrow Q$ (same arrow, other end) |
 | $P$ is **necessary and sufficient** for $Q$ | $P \Leftrightarrow Q$ |
 
-So “living in France is necessary for living in Paris” is true, while “living in Paris is necessary for living in France” is false. What is true is that living in Paris is **sufficient** for living in France.
+“Living in France is necessary for living in Paris” is true. “Living in Paris is necessary for living in France” is false. Living in Paris **is** sufficient for living in France.
 
-**Example 4.** Compare $x > 10$ and $x > 5$.
+**Example 4 (thresholds).** Compare $x > 10$ and $x > 5$.
 
-- $x > 10$ is sufficient for $x > 5$, because the stronger inequality forces the weaker one.
-- $x > 5$ is necessary for $x > 10$, for the same reason.
+- $x > 10$ is sufficient for $x > 5$: the stronger inequality forces the weaker one.
+- $x > 5$ is necessary for $x > 10$: same arrow, read backwards.
 - $x > 10$ is not necessary for $x > 5$: $x = 7$ is a counterexample.
-- The two conditions are not equivalent.
+- The two conditions are not equivalent: the open interval $(5,10]$ satisfies the weaker one alone.
 
-University prerequisite chains work the same way. “You may enrol in Advanced Macro only if you passed Intermediate” means Advanced $\Rightarrow$ Intermediate: Intermediate is necessary, not sufficient. Chaining “only if” rules gives a longer necessary path, never an automatic enrolment ticket.
+**Example 5 (university chain).** Rules:
+
+1. Enrol in Advanced Macro only if Intermediate Macro is passed.
+2. Enrol in Intermediate Macro only if Principles is passed.
+
+Maria is enrolled in Advanced. “Only if” means Advanced $\Rightarrow$ Intermediate, not the reverse. So Maria has passed Intermediate, and then Principles. Passing Principles is **necessary** for Advanced, but not **sufficient**: a student may pass Principles and never take Intermediate.
+
+**Example 6 (bank loan).** A bank approves a loan **only if** credit score $\ge 700$ **and** debt-to-income ratio $< 40\%$. Write $L$ for approval and $R$ for “both hurdles cleared”. The rule is
+
+$$
+L \Rightarrow R.
+$$
+
+Applicant P has score $750$ and ratio $35\%$: $R$ holds. That does **not** force approval. Meeting a necessary condition keeps the file alive; it does not create a yes.
+
+Applicant Q has score $720$ and ratio $45\%$: $R$ fails. The contrapositive $\neg R \Rightarrow \neg L$ refuses the loan at once.
+
+**Example 7 (doctor).** Diagnosed with $X$ only if symptoms A and B both appear; both symptoms still do not guarantee the diagnosis, because other conditions must be ruled out. So diagnosis $\Rightarrow$ (A and B), while (A and B) $\Rightarrow$ diagnosis is refused. Symptoms are necessary, not sufficient. A patient with A but not B cannot be diagnosed with $X$. A patient with both may still wait while other causes are excluded.
 
 ### And, or, not
 
-Three connectives build compound propositions from simpler ones.
-
 | Connective | Symbol | True when |
 | --- | --- | --- |
-| and (conjunction) | $\land$ | both parts are true |
-| or (disjunction) | $\lor$ | at least one part is true (inclusive) |
-| not (negation) | $\neg$ | the inner claim is false |
+| and | $\land$ | both parts true |
+| or | $\lor$ | at least one part true (**inclusive**) |
+| not | $\neg$ | the inner claim false |
 
-**Example 5.** The number 7 is prime and not even. Write $P$ for “7 is prime” (true) and $Q$ for “7 is even” (false). Then:
+Inclusive “or” always allows both. Exclusive “or” (exactly one) is a different claim and must be stated explicitly.
 
-| Compound | Value | Reason |
-| --- | --- | --- |
-| $P \land Q$ | false | both parts needed |
-| $P \lor Q$ | true | one true part is enough |
-| $\neg(P \land Q)$ | true | the “both” claim fails |
-| $\neg P \land \neg Q$ | false | “neither” fails because 7 is prime |
+**Example 8.** The number 7 is prime and not even. $P$: “7 is prime” (T). $Q$: “7 is even” (F).
 
-Negating a whole bracket is not the same as negating each piece. De Morgan’s rules for propositions match the set laws:
+| Compound | Value |
+| --- | --- |
+| $P \land Q$ | F |
+| $P \lor Q$ | T |
+| $\neg(P \land Q)$ | T |
+| $\neg P \land \neg Q$ | F |
+
+Negating the whole bracket is not the same as negating each piece. De Morgan:
 
 $$
 \neg(P \land Q) \equiv \neg P \lor \neg Q, \qquad \neg(P \lor Q) \equiv \neg P \land \neg Q.
 $$
 
+**Example 9 (course pass).** Pass if and only if attendance $\ge 80\%$ **and** final $\ge 50$:
+
+$$
+\text{Pass} \Leftrightarrow A \land F.
+$$
+
+Student K: $85\%$ attendance, final $48$. Then $A$ true, $F$ false, so no pass. Student L: $75\%$ attendance, final $90$. Then $A$ false, $F$ true, so no pass. A high exam mark never repairs missing attendance, and near-miss scores never count: $49$ fails exactly as $10$ does. The rule checks two separate thresholds, not an average. That is why $(80\%,50)$ can pass while $(79\%,100)$ fails.
+
+**Example 10 (online filter).** A shop shows an item exactly when it is **not** (on sale **or** out of stock). Write $S$ for sale and $O$ for out of stock. Display means
+
+$$
+\neg(S \lor O) \equiv \neg S \land \neg O:
+$$
+
+neither on sale nor out of stock. An item on sale but in stock is hidden. An item not on sale but out of stock is hidden. Only “not on sale and in stock” is shown. The wrong rewrite $\neg S \lor \neg O$ would display the first two items; De Morgan forbids keeping the “or” when the “not” moves inside.
+
+**Example 11 (market survey).** Of 100 consumers, 40 bought X, 35 bought Y, and 15 bought both. Inclusive “X or Y” counts
+
+$$
+40 + 35 - 15 = 60.
+$$
+
+Exclusive “exactly one of X, Y” drops the both-buyers and leaves $25 + 20 = 45$.
+
 ### Why checking solutions is forced by logic
 
-Return to $x + 2 = \sqrt{4 - x}$. A careful chain of implications can show:
+Return to $x + 2 = \sqrt{4 - x}$. Marking implication arrows:
 
 $$
+\begin{align*}
 x + 2 = \sqrt{4 - x}
-\ \Rightarrow\
-(x + 2)^2 = 4 - x
-\ \Rightarrow\
-\cdots
-\ \Rightarrow\
-(x = 0\ \text{or}\ x = -5).
+&\Rightarrow (x + 2)^2 = 4 - x \\
+&\Rightarrow x^2 + 4x + 4 = 4 - x \\
+&\Rightarrow x^2 + 5x = 0 \\
+&\Rightarrow x(x + 5) = 0 \\
+&\Rightarrow (x = 0\ \text{or}\ x = -5).
+\end{align*}
 $$
 
-The first step uses $a = b \Rightarrow a^2 = b^2$, which is true but **not reversible**: $a^2 = b^2$ allows $a = -b$ as well as $a = b$. So the chain only proves that any solution must be $0$ or $-5$. It does not prove that either value works. Substituting shows that only $x = 0$ survives. Cancelling $x$ from $x^2 + 5x = 0$ and losing the root $x = 0$ is a second, separate error.
+The first step uses $a = b \Rightarrow a^2 = b^2$, which is true but **not reversible**: $a^2 = b^2$ also allows $a = -b$. So the chain only proves that any real solution must be $0$ or $-5$. It does not prove that either value works. Substituting shows that only $x = 0$ survives. Separately, jumping from $x^2 + 5x = 0$ to $x + 5 = 0$ wrongly drops the root $x = 0$.
 
-The lesson is general: a one-way implication narrows the candidates; only an equivalence, or an explicit check, confirms them.
+One-way implications narrow the candidates. Only an equivalence, or an explicit check in the original equation, confirms them. The same habit applies to worded rules: after you translate “only if” into an arrow, ask whether the reverse arrow was ever granted.
 
 ---
 
 ## 1.4 Quantifiers, Validity & Deduction
 
+Section 1.3 built single arrows. This section builds longer arguments: how theorems are proved, how “for every” and “there exists” interact, and when a conclusion really follows from given premises.
+
 ### Theorems as implications
 
-A mathematical theorem can be written as one or more implications
+A mathematical theorem can be written
 
 $$
 P \Rightarrow Q,
 $$
 
-where $P$ collects the **premises** (what is assumed) and $Q$ collects the **conclusions** (what is claimed). Proofs come in several standard shapes.
+where $P$ collects the **premises** and $Q$ the **conclusions**. Three standard proof shapes appear again and again.
 
 ### Direct proof
 
-Assume $P$, and derive $Q$ by a sequence of valid steps.
+Assume $P$, and derive $Q$ by valid steps.
 
-**Example 1.** Show that $-x^2 + 5x - 4 > 0 \Rightarrow x > 0$.
+**Example 1.** Show $-x^2 + 5x - 4 > 0 \Rightarrow x > 0$.
 
-Assume the left-hand inequality. Add $x^2 + 4$ to both sides to get $5x > x^2 + 4$. Since $x^2 + 4 \ge 4$ for every real $x$, it follows that $5x > 4$, so $x > 4/5$, and in particular $x > 0$.
+Assume the left-hand inequality. Add $x^2 + 4$ to both sides: $5x > x^2 + 4$. Since $x^2 + 4 \ge 4$ for every real $x$, one gets $5x > 4$, so $x > 4/5$, and in particular $x > 0$.
 
 ### Contrapositive proof
 
-Prove $\neg Q \Rightarrow \neg P$ instead. By the contrapositive principle, that establishes $P \Rightarrow Q$.
+Prove $\neg Q \Rightarrow \neg P$ instead. Equivalence with the original gives $P \Rightarrow Q$ for free.
 
-In the same example, assume $x \le 0$. Then $5x \le 0$, so $-x^2 + 5x - 4$ is a sum of three nonpositive terms and cannot be positive. That is exactly $\neg Q \Rightarrow \neg P$.
+In the same example, assume $x \le 0$. Then $5x \le 0$, so $-x^2 + 5x - 4$ is a sum of three nonpositive terms and cannot be positive.
+
+**Example 2 (integers).** If $x$ and $y$ are integers and $xy$ is odd, then both $x$ and $y$ are odd. Contrapositive: if at least one of $x,y$ is even, then $xy$ is even. That is immediate, because an even factor forces an even product.
 
 ### Proof by contradiction
 
@@ -474,32 +565,32 @@ Assuming $-x^2 + 5x - 4 > 0$ and $x \le 0$ at once forces both $5x > x^2 + 4$ an
 
 ### Deductive versus inductive reasoning
 
-**Deductive** reasoning follows rules of logic from premises to conclusions. Mathematical proofs are deductive.
+**Deductive** reasoning follows logical rules from premises to conclusions. Mathematical proofs are deductive.
 
-**Inductive** reasoning in the everyday scientific sense draws a general claim from many observations: “the price level rose for each of the last $n$ years, so it will rise next year.” That kind of induction can be useful empirically, but it is never a mathematical proof. Measuring the angles of a thousand triangles and always getting $180^\circ$ is strong evidence, not a proof that every triangle has angle sum $180^\circ$.
+**Inductive** reasoning in everyday science draws a general claim from observations: “the price level rose for each of the last $n$ years, so it will rise next year.” Useful empirically, never a mathematical proof. Measuring angles in a thousand triangles and always finding $180^\circ$ is strong evidence, not a proof for every triangle. A firm’s profits rising for twenty years does not prove they rise this year.
 
 ### Mathematical induction
 
-**Mathematical induction** is a different, fully logical method for proving a statement $P(n)$ for every natural number $n$.
+**Mathematical induction** is a fully logical method for proving $P(n)$ for every natural number $n$. It is not the same as everyday inductive reasoning.
 
 **THE PRINCIPLE OF MATHEMATICAL INDUCTION.** Suppose:
 
-1. $P(1)$ is true (the **base case**);
-2. for each natural number $k$, if $P(k)$ is true then $P(k + 1)$ is true (the **induction step**).
+1. $P(1)$ is true (**base case**);
+2. for each natural $k$, if $P(k)$ is true then $P(k + 1)$ is true (**induction step**).
 
-Then $P(n)$ is true for every natural number $n$.
+Then $P(n)$ is true for every natural $n$.
 
-The assumption that $P(k)$ holds, used inside the induction step, is the **induction hypothesis**.
+The assumption $P(k)$ inside the step is the **induction hypothesis**. Think of an infinite ladder: if you can climb the first rung, and from any rung you can always climb the next, you can reach every rung.
 
-**Example 2.** Prove that the sum of the first $n$ odd numbers equals $n^2$:
+**Example 3.** Sum of the first $n$ odd numbers:
 
 $$
 P(n):\quad 1 + 3 + 5 + \cdots + (2n - 1) = n^2.
 $$
 
-Base case: for $n = 1$, both sides equal $1$.
+Base: $n = 1$ gives $1 = 1^2$.
 
-Induction step: assume $P(k)$, so the first $k$ odd numbers sum to $k^2$. Add the next odd number $2k + 1$:
+Step: assume $P(k)$, add the next odd number $2k + 1$:
 
 $$
 1 + 3 + \cdots + (2k - 1) + (2k + 1) = k^2 + (2k + 1) = (k + 1)^2.
@@ -507,28 +598,26 @@ $$
 
 That is $P(k + 1)$. By induction, $P(n)$ holds for all natural $n$.
 
-**Example 3.** Prove
+**Example 4.** For every positive integer $n$,
 
 $$
-3 + 3^2 + \cdots + 3^n = \tfrac12\bigl(3^{n+1} - 3\bigr)
+3 + 3^2 + \cdots + 3^n = \tfrac12\bigl(3^{n+1} - 3\bigr).
 $$
 
-for every positive integer $n$. Both sides equal $3$ when $n = 1$. If the formula holds for $n = k$, add $3^{k+1}$ to both sides and simplify to obtain the formula for $n = k + 1$.
+Both sides equal $3$ when $n = 1$. If the formula holds for $n = k$, add $3^{k+1}$ and simplify to the formula for $n = k + 1$.
 
-Checking a formula for $n = 1,2,3,4,5$ is evidence, not a proof. Without the general step from $k$ to $k + 1$, the sixth case is still open.
+Checking $n = 1,2,3,4,5$ is evidence, not a proof. Without the general step from $k$ to $k + 1$, case $n = 6$ is still open. The principle extends to all $n \ge n_0$: verify $P(n_0)$, then show $P(k) \Rightarrow P(k + 1)$ for $k \ge n_0$.
 
-The principle extends to statements true for all integers $n \ge n_0$: verify $P(n_0)$, then show $P(k) \Rightarrow P(k + 1)$ for every $k \ge n_0$.
+A famous false “induction” claims that in any room of $n$ people, all have the same income. The base $n = 1$ is fine. The broken step pretends that overlapping groups of $n$ force a group of $n + 1$ to match, which fails already when going from $1$ to $2$. The moral: the inductive step must work for **every** $k$, including the awkward ones.
 
 ### Quantifiers
-
-Two symbols bind variables over a universe:
 
 | Symbol | Read as | True when |
 | --- | --- | --- |
 | $\forall x$ | for every $x$ | every object in the universe works |
 | $\exists x$ | there exists an $x$ | at least one object works |
 
-A single counterexample kills a $\forall$ claim. A single witness confirms an $\exists$ claim.
+One counterexample kills $\forall$. One witness confirms $\exists$.
 
 Negation swaps the quantifier and negates the inner claim:
 
@@ -540,37 +629,56 @@ $$
 \neg\exists x\, P(x) \equiv \forall x\, \neg P(x).
 $$
 
-**Example 4.** Over the real numbers, $\forall x\,(x^2 \ge 0)$ is true, so its negation $\exists x\,(x^2 < 0)$ is false. The claim $\exists x\,(x^2 = -1)$ is false in $\mathbb{R}$. The negation of $\exists x\,(x > 100)$ is $\forall x\,(x \le 100)$.
+For an implication inside a universal claim,
 
-**Example 5.** “Every prime $p > 2$ is odd” is true: any even integer greater than 2 has at least three positive divisors, so it cannot be prime. The number 2 is not a counterexample, because it fails the domain condition $p > 2$. The correct negation is “there exists a prime $p > 2$ that is even.” The converse “every odd integer greater than 2 is prime” is false; $9$ is a counterexample.
+$$
+\neg\forall x\,(P(x) \Rightarrow Q(x)) \equiv \exists x\,(P(x) \land \neg Q(x)):
+$$
+
+an exception is a case where the “if” holds and the “then” fails.
+
+**Example 5.** Over the reals: $\forall x\,(x^2 \ge 0)$ is true, so $\exists x\,(x^2 < 0)$ is false. $\exists x\,(x^2 = -1)$ is false in $\mathbb{R}$. The negation of $\exists x\,(x > 100)$ is $\forall x\,(x \le 100)$.
+
+**Example 6 (primes).** “Every prime $p > 2$ is odd” is true: an even integer above $2$ has at least three positive divisors. The number $2$ is not a counterexample, because it fails the domain $p > 2$. Correct negation: “there exists a prime $p > 2$ that is even.” The converse “every odd integer $> 2$ is prime” is false; $9$ is a counterexample.
+
+**Example 7 (restricted domain).** Let $P = \{2,3,5,7,11,13\}$ and $E = \{2,4,6,8,10,12,14\}$. Then $P \cap E = \{2\}$ and $P \setminus E = \{3,5,7,11,13\}$. The claim “$\forall x \in P$, $x$ is odd” fails at $2$. The restricted claim “for every $x \in P$ with $x \ne 2$, $x$ is odd” holds. Subsethood $P \subseteq E$ fails at $3$.
 
 ### Quantifier order
 
-The order of $\forall$ and $\exists$ changes the meaning.
+Who is chosen first changes the meaning.
 
-**Example 6.** Over the positive reals:
+**Example 8.** Over positive reals:
 
 $$
 \forall x > 0\ \exists y\ (y > x)
 $$
 
-is true: given $x$, take $y = x + 1$. The reversed sentence
+is true: given $x$, take $y = x + 1$. Reversed,
 
 $$
 \exists y\ \forall x > 0\ (y > x)
 $$
 
-is false: no single $y$ can exceed every positive number, because $x = y + 1$ defeats it.
+is false: no single $y$ beats every positive number, because $x = y + 1$ defeats it.
 
-The same pattern appears in exam language. “There exists a student who scored above 90 on every exam” is $\exists s\,\forall e\, G(s,e)$. “For every exam there exists a student who scored above 90” is $\forall e\,\exists s\, G(s,e)$. The first implies the second, but not conversely: different students may clear different exams.
+**Example 9 (exams).** Statement 1: “There exists a student who scored above 90 on every exam,” $\exists s\,\forall e\, G(s,e)$. Statement 2: “For every exam there exists a student who scored above 90,” $\forall e\,\exists s\, G(s,e)$.
+
+Statement 1 implies Statement 2: reuse the same strong student on every exam. The converse fails. Picture two exams and two students:
+
+| | Exam 1 | Exam 2 |
+| --- | --- | --- |
+| Student X | above 90 | below 90 |
+| Student Y | below 90 | above 90 |
+
+Every exam has a high scorer, so Statement 2 is true. Nobody clears both, so Statement 1 is false. With only one exam the two statements collapse to the same claim.
+
+**Example 10 (products).** “For every positive integer $m$ there exists a positive integer $n$ with $m \cdot n = 100$” is $\forall m\,\exists n:\ mn = 100$. At $m = 4$, take $n = 25$. At $m = 3$, $n = 100/3$ is not an integer, so the universal claim fails. Correct negation: $\exists m\,\forall n:\ mn \ne 100$, and $m = 3$ is a witness. Reversing to $\exists n\,\forall m:\ mn = 100$ asks for one $n$ serving every $m$, which is also false.
 
 ### Validity of an argument
 
-An argument with premises $P_1,\ldots,P_n$ and conclusion $C$ is **valid** when it is impossible for all the premises to be true while $C$ is false. Validity is about logical shape, not about whether the premises are true in the real world.
+An argument with premises $P_1,\ldots,P_n$ and conclusion $C$ is **valid** when it is impossible for all premises to be true while $C$ is false. Validity is about shape, not about whether the premises are true in the real world. A valid argument with true premises is called **sound**. Validity alone does not make the conclusion true in the world; it only forbids the pattern “premises true, conclusion false.”
 
-**Example 7.** Premises: all economists study human behaviour; some economists specialise in game theory. Conclusion: some game theorists study human behaviour.
-
-Write $E(x)$, $H(x)$, $G(x)$ for the three properties. The argument is
+**Example 11 (economists).** Premises: all economists study human behaviour; some economists specialise in game theory. Conclusion: some game theorists study human behaviour.
 
 $$
 \forall x\,(E(x) \Rightarrow H(x)), \qquad
@@ -579,21 +687,31 @@ $$
 \exists x\,(G(x) \land H(x)).
 $$
 
-From the existential premise pick a witness $a$ with $E(a)$ and $G(a)$. The universal premise then gives $H(a)$. So $G(a) \land H(a)$, and the conclusion follows in every situation where the premises hold. The argument is valid.
+From the existential premise take a witness $a$ with $E(a)$ and $G(a)$. The universal premise gives $H(a)$. So $G(a) \land H(a)$. The conclusion follows in every situation where the premises hold: the argument is valid.
 
-Changing the second premise to “no economists specialise in game theory” destroys validity: you can imagine a world with economists who all study behaviour and with nobody in game theory at all. Premises true, conclusion false.
+Change the second premise to “no economists specialise in game theory.” Now picture a world with economists who all study behaviour and with nobody in game theory. Premises true, conclusion false: the modified argument is invalid.
 
-A valid argument with true premises is sometimes called **sound**. Validity alone does not guarantee that the conclusion is true in the world; it only guarantees that the conclusion cannot fail while the premises succeed.
+**Example 12 (theft clues).** Exactly one of Ann, Ben, Cara, Dan is guilty. Clues:
+
+1. If Ann is guilty, then Dan is innocent.
+2. If Ben is innocent, then Cara is innocent.
+3. Dan is guilty.
+4. If Cara is guilty, then Ann is guilty.
+
+Clue (3) is a flat assertion, not an implication: Dan is guilty. With “exactly one guilty,” Ann, Ben and Cara are cleared at once. The conditional clues are then consistent but redundant for naming the guilty person. A clue with a false “if” part (Ann innocent makes clue (1) vacuous) adds no new information.
+
+**Example 13 (truth-tellers and liars).** On an island, everyone always tells the truth or always lies. X says “Y always lies.” Y says “X and I are both liars.”
+
+Case X liar: then Y would be a truth-teller, so Y’s sentence would be true, forcing Y to be a liar. Contradiction. Case X truth-teller: then Y is a liar, and Y’s conjunction “both liars” is false because X is not a liar. Consistent. So X tells the truth and Y lies. The method is proof by cases plus contradiction on the impossible case.
 
 ### Putting a deduction together
 
-When you analyse a chain of clues or a worded rule:
-
-1. Rewrite each sentence as $\Rightarrow$, $\land$, $\lor$, $\forall$, or $\exists$.
-2. Separate necessary conditions (“only if”) from sufficient ones (“if”, “whenever”).
-3. Use the contrapositive when a failure of the conclusion is easier to handle.
-4. For nested quantifiers, ask who is chosen first, and whether later choices may depend on earlier ones.
+1. Rewrite each sentence as $\Rightarrow$, $\Leftrightarrow$, $\land$, $\lor$, $\forall$, or $\exists$.
+2. Separate “only if” (necessary) from “if / whenever” (sufficient) and from “if and only if” (both ways).
+3. Use the contrapositive when a failure is easier to handle than a success.
+4. For nested quantifiers, ask who moves first, and whether later choices may depend on earlier ones.
 5. To show invalidity, exhibit one concrete situation where the premises hold and the conclusion fails.
+6. After a chain of one-way implications in algebra, check candidates in the original statement.
 
 ---
 
@@ -609,12 +727,14 @@ When you analyse a chain of clues or a worded rule:
 | Take a complement | Relative to a stated universe $U$ |
 | Use De Morgan | Complement turns $\cup$ into $\cap$ and $\cap$ into $\cup$ |
 | Count a union of two finite sets | $n(A \cup B) = n(A) + n(B) - n(A \cap B)$ |
-| Read $P \Rightarrow Q$ | If $P$ then $Q$; $P$ sufficient for $Q$; $Q$ necessary for $P$ |
-| Form the contrapositive | $\neg Q \Rightarrow \neg P$ |
+| Read $P \Rightarrow Q$ | If $P$ then $Q$; fails only when $P$ true and $Q$ false |
+| Form converse / inverse / contrapositive | $Q \Rightarrow P$ / $\neg P \Rightarrow \neg Q$ / $\neg Q \Rightarrow \neg P$; only the last matches the original |
+| Read necessary vs sufficient | “only if” → necessary; “if / whenever” → sufficient; “iff” → both |
+| Negate an implication | $P \land \neg Q$, not another implication |
 | Confirm a candidate solution | Substitute into the original equation or statement |
 | Negate $\forall$ / $\exists$ | Swap the quantifier and negate the inner claim |
 | Compare $\forall\exists$ with $\exists\forall$ | Later variables may / may not depend on earlier ones |
-| Prove $P(n)$ for all $n$ | Base case $P(1)$, then $P(k) \Rightarrow P(k + 1)$ |
+| Prove $P(n)$ for all $n$ | Base case $P(1)$, then $P(k) \Rightarrow P(k + 1)$ for every $k$ |
 | Test validity | Ask whether premises can be true while the conclusion is false |
 
 Key formulas:
