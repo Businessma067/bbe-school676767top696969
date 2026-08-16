@@ -22,60 +22,44 @@ export const MATH_CH8_POWER_FUNCTIONS: MathTask[] = [
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the scale factor of the power law, which the commissioning log never states. It has to be reconstructed from the recorded jump in rate between two staging levels, and that reconstruction gives $A=3$.
-
-A common mistake is to divide $57$ by one of the staged counts, as if the log had reported a rate at a single staging level. What the log reports is a *difference* between two rates, so the coefficient multiplies the difference of the two shape factors, not a single one.
-
-Both staging levels are exact fourth powers, so the shape factors come out whole:
+The coefficient of a power law $P(u)=Au^{0.75}$ is a scale factor that the commissioning log never states directly. What the log gives is the gap between two rates, and both staged counts are exact fourth powers, so their shape factors are whole numbers:
 
 $$16^{0.75} = (2^{4})^{3/4} = 2^{3} = 8$$
 
 $$81^{0.75} = (3^{4})^{3/4} = 3^{3} = 27$$
 
-The recorded lift is the difference of the two rates:
+The recorded lift is a difference between two rates rather than a rate at one staging level, so the coefficient multiplies the difference of the shape factors:
 
 $$A \\cdot 27 - A \\cdot 8 = 57$$
 
 $$19A = 57 \\qquad \\Rightarrow \\qquad A = 3$$
 
-The loading law is therefore $P(u)=3u^{0.75}$, so the statement is True.`,
+Dividing $57$ by a single staged count would answer a different question. The loading law is $P(u)=3u^{0.75}$, so the statement is True.`,
       `**B.** → False
 
-This claim reads a level off the recovered law. With $A=3$ the rate at $u=16$ is $24$ units per minute, three units below the figure claimed.
-
-The number $27$ does appear in the work, but as $81^{0.75}$, the shape factor belonging to the *higher* staging level before the coefficient is applied. Picking up a mid-calculation number and reporting it as a rate is the standard slip here.
-
-Applying the recovered coefficient at $u=16$:
+A level of the recovered law comes from applying the coefficient to the shape factor at that staging level:
 
 $$P(16) = 3 \\times 16^{0.75} = 3 \\times 8 = 24$$
 
-The companion value confirms the model is the right one:
+The figure $27$ does belong to this problem, but as $81^{0.75}$, the shape factor of the higher staging level before the coefficient is applied, not as a rate. The companion value confirms the model:
 
 $$P(81) = 3 \\times 27 = 81, \\qquad 81 - 24 = 57$$
 
-The jump matches the log exactly, so $24$ is the correct rate at $u=16$ and the claimed $27$ is false.`,
+The jump matches the log exactly, and the rate at $u=16$ is $24$ units per minute against the claimed $27$, so the statement is False.`,
       `**C.** → True
 
-This claim is about a scale factor rather than a level, so neither $A$ nor the starting staging level matters. Doubling multiplies the rate by $2^{0.75}\\approx1.682$, a rise of about $68.2\\%$, which stays under $70\\%$.
-
-It is not the case that doubling the input doubles the output belongs to a linear model. Here the exponent $0.75$ is below $1$, so output grows more slowly than the input: every doubling buys less than a doubling in rate, no matter where the doubling starts.
-
-Form the ratio and watch the coefficient and the base cancel:
+A scale factor of a power function depends only on the exponent, since the coefficient and the starting level cancel when two rates are divided:
 
 $$\\frac{P(2u)}{P(u)} = \\frac{A(2u)^{0.75}}{Au^{0.75}} = 2^{0.75}$$
 
-Split the exponent into pieces that are easy to evaluate:
+Splitting the exponent into pieces that are easy to evaluate:
 
 $$2^{0.75} = 2^{1/2} \\times 2^{1/4} \\approx 1.4142 \\times 1.1892 \\approx 1.6818$$
 
-The rise is about $68.18\\%$, which is less than $70\\%$, so the statement is True.`,
+Doubling the input would double the output only for an exponent of $1$; here the exponent $0.75$ sits below $1$, so the rate grows more slowly than the staged count wherever the doubling starts. The rise is about $68.18\\%$, which is under $70\\%$, so the statement is True.`,
       `**D.** → False
 
-This claim tests the recovered law against the $100$ units-per-minute certification. At $u=110$ the model predicts about $101.9$ units per minute, so the drive would be pushed past its ceiling.
-
-The margin is thin, which is exactly why the claim cannot be settled by eye: the highest logged staging level was $81$ units at $81$ units per minute, still comfortably inside the ceiling, and it is tempting to assume $110$ is also safe because the two numbers look close.
-
-Evaluate the rate at the proposed staging level:
+The certification caps the loading rate, not the staged count, so the proposed staging level has to be pushed through the recovered law before any comparison with $100$ units per minute:
 
 $$110^{0.75} = 110^{1/2} \\times 110^{1/4} \\approx 10.4881 \\times 3.2385 \\approx 33.97$$
 
@@ -85,24 +69,20 @@ Inverting the ceiling shows where the true limit sits:
 
 $$3u^{0.75} = 100 \\quad \\Rightarrow \\quad u = \\left(\\tfrac{100}{3}\\right)^{4/3} \\approx 107.3$$
 
-Staging is safe only up to about $107$ units, so $110$ units breaches the certification and the claim is false.`,
+The highest logged run, $81$ units at $81$ units per minute, sat well inside the ceiling, yet that headroom is spent before $110$ units. Staging is certified only to about $107$ units, so the statement is False.`,
       `**E.** → False
 
-This claim runs the law backwards: it fixes the rate at $48$ units per minute and asks for the staging level behind it. That level is about $40.3$ units, just above the threshold in the claim.
-
-The trap is proportional thinking. The rate at $u=16$ is $24$, and $48$ is twice that, so doubling the staging level to $32$ looks like the answer. With exponent $0.75$, doubling the *output* requires multiplying the *input* by $2^{4/3}\\approx2.52$, not by $2$.
-
-Invert the law by raising both sides to the power $4/3$:
+Running the law backwards fixes the rate and solves for the staged count, which means raising both sides to the reciprocal power $4/3$:
 
 $$3u^{0.75} = 48 \\quad \\Rightarrow \\quad u^{0.75} = 16$$
 
 $$u = 16^{4/3} = (2^{4})^{4/3} = 2^{16/3} = 2^{5} \\times 2^{1/3} \\approx 32 \\times 1.2599 \\approx 40.32$$
 
-The check against the doubling rule agrees:
+Because the rate at $u=16$ is $24$, proportional thinking points at $32$ units for a rate of $48$; with exponent $0.75$, doubling the output takes an input multiplied by $2^{4/3}\\approx2.52$:
 
 $$16 \\times 2^{4/3} \\approx 16 \\times 2.5198 \\approx 40.32$$
 
-The staging level is about $40.32$ units, which is not below $40$, so the statement is False.`,
+The staged count is about $40.32$ units, which is not below $40$, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 1,
@@ -166,87 +146,65 @@ $$P = 48 \\;\\Rightarrow\\; u \\approx 40.32, \\qquad P = 100 \\;\\Rightarrow\\;
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the exponent, and the only fact that carries exponent information is the percentage rule, since scale factors are independent of the coefficient $A$. That rule forces $r=2$.
-
-The trap is arithmetic on the percentages. A rise of $125\\%$ means the new value is $225\\%$ of the old one, so the multiplier is $2.25$, not $1.25$. Using $1.25$ would give $r=\\ln 1.25/\\ln 1.5\\approx0.55$ and turn a strongly convex instrument response into a flat one.
-
-Write the rule as a ratio, where $A$ cancels:
+An exponent is carried by scale factors alone: a percentage rule survives the cancellation of the coefficient $A$, while a bench reading fixes only a level.
 
 $$\\frac{R(1.5d)}{R(d)} = \\frac{A(1.5d)^{r}}{Ad^{r}} = 1.5^{r}$$
 
-Set that multiplier equal to the observed one:
+A rise of $125\\%$ leaves the new value at $225\\%$ of the old one, so the observed multiplier is $2.25$ rather than $1.25$:
 
 $$1.5^{r} = 2.25 = 1.5^{2}$$
 
 $$r = 2$$
 
-The exponent is exactly $2$, so the statement is True.`,
+Reading the multiplier as $1.25$ would give $\\ln 1.25/\\ln 1.5\\approx0.55$ and flatten a strongly convex instrument response. The exponent is exactly $2$, so the statement is True.`,
       `**B.** → True
 
-This claim needs a level, so the bench reading has to be brought in on top of the exponent. With $r=2$ the bench point fixes $A=2$, and the $10$ m aperture then delivers exactly $200$.
-
-There is a shortcut worth seeing: because $10$ m is twice the bench aperture, the ratio rule alone answers the question without ever computing $A$. Doubling multiplies resolving power by $2^{2}=4$, and $4\\times50=200$.
-
-Recover the coefficient from the bench test:
+A level needs the coefficient as well as the exponent, and the bench test is the only fact that supplies it:
 
 $$A \\cdot 5^{2} = 50 \\quad \\Rightarrow \\quad 25A = 50 \\quad \\Rightarrow \\quad A = 2$$
 
 $$R(d) = 2d^{2}$$
 
-Evaluate at the larger aperture, and confirm with the ratio route:
+Because the requested aperture is twice the bench aperture, the ratio rule settles the same question without the coefficient, multiplying resolving power by $2^{2}=4$:
 
 $$R(10) = 2(10)^{2} = 200, \\qquad \\frac{R(10)}{R(5)} = 2^{2} = 4$$
 
-Both routes give $200$, so the statement is True.`,
+Both routes put the $10$ m aperture at $200$, so the statement is True.`,
       `**C.** → False
 
-This claim runs the law backwards. Solving $2d^{2}=200$ gives exactly $10$ m, so the target is met two metres *below* the threshold in the claim.
-
-The overshoot comes from treating growth as linear: resolving power has to rise fourfold from the bench reading of $50$, and an aperture "well past" $10$ m feels necessary. With a squared response, a fourfold rise in output needs only a twofold rise in diameter.
-
-Invert the recovered law:
+Inverting the recovered law means solving for the diameter that produces a required resolving power, which for a squared response is a square root:
 
 $$2d^{2} = 200 \\quad \\Rightarrow \\quad d^{2} = 100 \\quad \\Rightarrow \\quad d = 10$$
 
-An aperture of $12$ m would already overshoot the target:
+Output has to rise fourfold from the bench reading of $50$, which makes a much wider mirror feel necessary; with a squared response a fourfold rise in output needs only a doubling of the diameter. An aperture of $12$ m already overshoots:
 
 $$R(12) = 2(144) = 288 > 200$$
 
-The requirement is $10$ m, not something above $12$ m, so the statement is False.`,
+The target is met at $10$ m, two metres below the threshold in the claim, so the statement is False.`,
       `**D.** → True
 
-This claim replaces the observed scaling rule with a weaker one and asks what exponent it implies. The multiplier becomes $1.6$ instead of $2.25$, and solving for the exponent gives about $1.159$, which is below $1.2$.
-
-Because $1.6$ is not a neat power of $1.5$, the exponent cannot be read off by inspection as in part A; logarithms are the only way to isolate it. Note that both logarithms are of numbers above $1$, so the quotient is positive and the response is still increasing, just far less convex.
-
-Take logarithms of the counterfactual scaling rule:
+Under the weaker rule a $50\\%$ widening carries the multiplier $1.6$ instead of $2.25$, and $1.6$ is not a neat power of $1.5$, so the exponent has to be isolated with logarithms:
 
 $$1.5^{r'} = 1.6 \\quad \\Rightarrow \\quad r' \\ln 1.5 = \\ln 1.6$$
 
 $$r' = \\frac{\\ln 1.6}{\\ln 1.5} \\approx \\frac{0.4700}{0.4055} \\approx 1.1592$$
 
-A quick sanity check confirms the size:
+Both logarithms are of numbers above $1$, so the quotient is positive and the response still increases, just far less convexly. A sanity check confirms the size:
 
 $$1.5^{1.2} \\approx 1.6266 > 1.6$$
 
-Since $1.5^{1.2}$ already overshoots the target multiplier, the true exponent is below $1.2$, so the statement is True.`,
+Since $1.5^{1.2}$ already overshoots the target multiplier, the counterfactual exponent lies below $1.2$, so the statement is True.`,
       `**E.** → False
 
-This claim carries the counterfactual exponent through to a level. With $r'\\approx1.1592$ and the bench reading held at $50$, the $10$ m aperture would deliver about $111.6$, short of $120$.
-
-A common mistake is to reuse the doubling factor of $4$ from part B, or to assume that an exponent "a bit above $1$" still produces something close to it. Doubling now multiplies output by $2^{1.1592}\\approx2.23$, barely more than proportional growth, which is precisely what the weaker rule was describing.
-
-Work with the ratio so the coefficient never has to be recomputed:
+With the counterfactual exponent in hand, the ratio route carries the bench reading up to the larger aperture without recomputing the coefficient:
 
 $$\\frac{R(10)}{R(5)} = 2^{r'} = 2^{1.1592}$$
 
 $$2^{1.1592} = e^{1.1592 \\times 0.6931} \\approx e^{0.8034} \\approx 2.2331$$
 
-Apply that factor to the bench reading:
-
 $$R(10) \\approx 50 \\times 2.2331 \\approx 111.7 < 120$$
 
-The weaker rule leaves the $10$ m aperture below $120$, so the statement is False.`,
+The doubling factor of $4$ belongs to the original squared rule; an exponent barely above $1$ delivers barely more than proportional growth, which is what the weaker rule describes. The $10$ m aperture stays under $120$, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 2,
@@ -310,91 +268,71 @@ $$R(10) \\approx 50 \\times 2^{1.1592} \\approx 111.7$$
     tactical_explanations: [
       `**A.** → True
 
-This claim needs both laws in explicit form before anything can be added. Turbine A's doubling rule and its anchor give $P_A(w)=4w^{1.5}$, turbine B's proportionality and its anchor give $P_B(w)=w^{2}$, and at $w=4$ the two deliver $32$ kW and $16$ kW, a total of $48$ kW.
-
-The anchor for turbine B sits at $w=10$, far from the $w=4$ being asked about, so its output has to be transported down to $w=4$ through the model rather than read off the report. The quadratic shape means that moving from $10$ to $4$ divides output by more than six.
-
-Recover turbine A from its doubling rule and anchor:
+Adding two outputs takes both laws in explicit form, so each turbine's exponent and coefficient come first. Turbine A's doubling rule fixes the exponent and its anchor fixes the coefficient:
 
 $$2^{r_A} = 2\\sqrt{2} = 2^{1.5} \\quad \\Rightarrow \\quad r_A = 1.5$$
 
 $$c \\cdot 4^{1.5} = 32 \\quad \\Rightarrow \\quad 8c = 32 \\quad \\Rightarrow \\quad c = 4$$
 
-Recover turbine B from its proportionality and anchor:
+Turbine B's proportionality and anchor do the same:
 
 $$k \\cdot 10^{2} = 100 \\quad \\Rightarrow \\quad k = 1 \\quad \\Rightarrow \\quad P_B(w) = w^{2}$$
 
-Add the two outputs at the requested speed:
+B's anchor sits at $w=10$, far from the speed being asked about, so its output is transported down through the model rather than read off the report:
 
 $$P_A(4) + P_B(4) = 4(8) + 16 = 32 + 16 = 48 > 45$$
 
-The combined output clears $45$ kW, so the statement is True.`,
+The pair delivers $48$ kW at $w=4$, so the statement is True.`,
       `**B.** → False
 
-This claim compares exponents, not outputs. Turbine A carries the exponent $1.5$ and turbine B carries $2$, so A's exponent is the smaller of the two.
-
-The confusion is natural because turbine A looks stronger everywhere in the low-wind data: its coefficient is $4$ against B's $1$, and at $w=4$ it delivers twice B's output. Coefficients set the level, exponents set how fast output responds to wind, and here the machine with the larger level has the flatter response.
-
-Compare the two scaling rules side by side:
+Exponents govern how fast output responds to wind speed while coefficients set the level, and the two comparisons can point opposite ways. Each turbine's doubling factor shows the response:
 
 $$\\frac{P_A(2w)}{P_A(w)} = 2^{1.5} \\approx 2.83, \\qquad \\frac{P_B(2w)}{P_B(w)} = 2^{2} = 4$$
 
-Each doubling of wind speed rewards turbine B more than turbine A:
+Turbine A looks stronger in the low-wind data, with coefficient $4$ against B's $1$ and twice B's output at $w=4$, but that is a level advantage rather than a response advantage:
 
 $$1.5 < 2$$
 
-Turbine A's exponent is smaller, so the statement is False.`,
+Turbine A carries the smaller exponent, so the statement is False.`,
       `**C.** → True
 
-This claim asks for the crossover of the two laws. Setting $4w^{1.5}=w^{2}$ and dividing by $w^{1.5}$ leaves $w^{0.5}=4$, so the outputs coincide at $w=16$, where both deliver $256$ kW.
-
-Only one positive crossover exists. Once the shared factor $w^{1.5}$ is cancelled, the equation becomes a single condition on $w^{0.5}$, so there is nothing else to find; the apparent second solution $w=0$ falls outside the domain $w>0$.
-
-Set the two outputs equal and cancel the common power:
+A crossover is where the two output laws agree, so the shared power $w^{1.5}$ cancels out of the equation:
 
 $$4w^{1.5} = w^{2} \\quad \\Rightarrow \\quad 4 = w^{0.5}$$
 
 $$w = 4^{2} = 16$$
 
-Verify the shared level:
+What remains after the cancellation is a single condition on $w^{0.5}$, so only one positive crossover exists; the apparent solution $w=0$ falls outside the domain $w>0$. Both machines reach the same level there:
 
 $$P_A(16) = 4(16^{1.5}) = 4(64) = 256, \\qquad P_B(16) = 16^{2} = 256$$
 
-Both turbines deliver $256$ kW at $w=16$, so the statement is True.`,
+The outputs coincide at $w=16$ at $256$ kW each, so the statement is True.`,
       `**D.** → True
 
-This claim is about behaviour on a whole interval, not at a point, so a single test value would not settle it. The ratio $P_B/P_A = w^{0.5}/4$ increases with wind speed and equals $1$ at $w=16$, so it exceeds $1$ for every $w>16$.
-
-Checking one convenient speed such as $w=25$ is a useful sanity test but proves nothing about the rest of the interval; what closes the argument is that the ratio is strictly increasing, so once it passes $1$ it can never come back.
-
-Form the ratio of the two laws:
+A statement about a whole interval is settled by the ratio of the two laws rather than by any single wind speed:
 
 $$\\frac{P_B(w)}{P_A(w)} = \\frac{w^{2}}{4w^{1.5}} = \\frac{w^{0.5}}{4}$$
 
-The ratio is increasing in $w$ and crosses $1$ exactly at the crossover:
+The ratio is strictly increasing in $w$ and equals $1$ at the crossover, so once it passes $1$ it can never come back:
 
 $$\\frac{w^{0.5}}{4} > 1 \\quad \\Longleftrightarrow \\quad w^{0.5} > 4 \\quad \\Longleftrightarrow \\quad w > 16$$
 
-Spot-check beyond the crossover:
+A convenient speed such as $w=25$ is a sanity test rather than a proof:
 
 $$P_A(25) = 4(125) = 500, \\qquad P_B(25) = 625$$
 
 Turbine B leads at every speed above $16$ m/s, so the statement is True.`,
       `**E.** → True
 
-This claim asks how sensitive the crossover is to turbine A's coefficient. Replacing $4$ by $2$ moves the crossover from $16$ m/s down to $4$ m/s, which is below the $5$ m/s threshold.
-
-The size of the shift is the surprising part: halving the coefficient does not halve the crossover speed. Because the condition reduces to $w^{0.5}=c$, the crossover is the *square* of the coefficient, so cutting $c$ in half divides the crossover speed by four.
-
-Redo the crossover condition with the reduced coefficient:
+Halving turbine A's coefficient leaves both exponents untouched, so the crossover condition is solved again with the smaller coefficient:
 
 $$2w^{1.5} = w^{2} \\quad \\Rightarrow \\quad w^{0.5} = 2 \\quad \\Rightarrow \\quad w = 4$$
 
-The general pattern behind both crossovers:
+Halving the coefficient does not halve the crossover speed, because the condition reduces to $w^{0.5}=c$ and the crossover is the square of the coefficient:
 
 $$cw^{1.5} = w^{2} \\quad \\Rightarrow \\quad w = c^{2}, \\qquad c = 4 \\;\\Rightarrow\\; 16, \\quad c = 2 \\;\\Rightarrow\\; 4$$
 
-The new crossover of $4$ m/s is below $5$ m/s, so the statement is True.`,
+The crossover moves from $16$ m/s down to $4$ m/s, below the $5$ m/s threshold, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 3,
@@ -462,85 +400,65 @@ Halving $c$ from $4$ to $2$ therefore drops the crossover from $16$ m/s to $4$ m
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the exponent, and the quadrupling rule is the fact that carries it. Since scale factors are free of the coefficient, $4^{r}=16$ settles the exponent on its own, giving $r=2$.
-
-The anchor $T(5)=100$ looks like it should also be involved, but it cannot pin an exponent by itself: a single point is consistent with infinitely many pairs $(A,r)$. Its role comes next, once $r$ is known.
-
-Write the quadrupling rule as a ratio so $A$ drops out:
+The exponent of an assembly-time law is carried by its scale factors, since the coefficient cancels when two times are divided:
 
 $$\\frac{T(4N)}{T(N)} = \\frac{A(4N)^{r}}{AN^{r}} = 4^{r}$$
 
-Match it to the observed factor:
+Matching that against the observed quadrupling factor:
 
 $$4^{r} = 16 = 4^{2} \\quad \\Rightarrow \\quad r = 2$$
 
-Assembly time grows with the square of the batch, so the statement is True.`,
+The anchor $T(5)=100$ cannot pin an exponent by itself, since one point is consistent with infinitely many pairs $(A,r)$; its role comes once the exponent is known. Assembly time grows with the square of the batch, so the statement is True.`,
       `**B.** → True
 
-This claim asks for a derived law rather than a given one: throughput must be re-expressed with elapsed time as the variable. Inverting $T=4N^{2}$ and dividing by $T$ produces exactly $R(T)=0.5T^{-0.5}$.
-
-The step that is easy to botch is the direction of the substitution. Throughput is naturally written as $N/T$, but management wants it as a function of $T$ alone, so $N$ has to be replaced by its expression in $T$ — not the other way round.
-
-Fix the coefficient with the anchor, then invert:
+Average throughput is $N/T$, and management wants it as a function of elapsed time, so the batch size is replaced by its expression in $T$ rather than the other way round. The anchor fixes the coefficient first:
 
 $$A \\cdot 5^{2} = 100 \\quad \\Rightarrow \\quad 25A = 100 \\quad \\Rightarrow \\quad A = 4, \\qquad T = 4N^{2}$$
 
 $$N^{2} = \\frac{T}{4} \\quad \\Rightarrow \\quad N = \\frac{T^{0.5}}{2} = 0.5\\,T^{0.5}$$
 
-Divide by elapsed time to get average throughput:
+Dividing by elapsed time gives the average rate:
 
 $$R(T) = \\frac{N}{T} = \\frac{0.5\\,T^{0.5}}{T} = 0.5\\,T^{-0.5}$$
 
-The derived law matches the claim, so it is true.`,
+The derived law is exactly the one claimed, so the statement is True.`,
       `**C.** → True
 
-This claim locates the elapsed time at which the mechanized average throughput equals the rival's fixed $0.05$ units per minute. Solving $0.5T^{-0.5}=0.05$ gives $T^{0.5}=10$, so the match happens at $T=100$ minutes.
-
-The result lands exactly on the anchor batch, which is a useful cross-check rather than a coincidence: the $5$-unit batch takes $100$ minutes, an average of $5/100 = 0.05$ units per minute, precisely the rival's pace.
-
-Set the derived throughput equal to the rival's rate:
+A match with the rival is an equation between the derived throughput and the rival's fixed $0.05$ units per minute:
 
 $$0.5\\,T^{-0.5} = 0.05 \\quad \\Rightarrow \\quad T^{-0.5} = 0.1$$
 
 $$T^{0.5} = 10 \\quad \\Rightarrow \\quad T = 100$$
 
-Confirm through the anchor batch:
+Landing on the anchor batch is a cross-check rather than a coincidence, since the $5$-unit batch takes $100$ minutes:
 
 $$N = 0.5\\sqrt{100} = 5, \\qquad \\frac{N}{T} = \\frac{5}{100} = 0.05$$
 
-The crossover sits at $100$ minutes, so the statement is True.`,
+The two rates meet at $100$ minutes of elapsed time, so the statement is True.`,
       `**D.** → False
 
-This claim gets the direction of the comparison backwards. The exponent in $R(T)=0.5T^{-0.5}$ is negative, so average throughput *falls* as batches get longer; past $100$ minutes the mechanized line drops below the rival's steady $0.05$ units per minute.
-
-The intuition being appealed to is that bigger batches mean more units and therefore more productivity. That is true of total output but not of the average rate: because time grows with the square of the batch, each extra unit costs more time than the last, and the average per minute decays.
-
-Read the sign of the exponent:
+Which side leads past a crossover is decided by the sign of the exponent in the derived law:
 
 $$R(T) = 0.5\\,T^{-0.5}, \\qquad -0.5 < 0 \\;\\Rightarrow\\; R \\text{ decreasing in } T$$
 
-Test a longer run beyond the crossover:
+Bigger batches do produce more units in total, but not at a higher average rate: time grows with the square of the batch, so each extra unit costs more time than the last. A longer run past the crossover shows it:
 
 $$R(400) = 0.5(400)^{-0.5} = \\frac{0.5}{20} = 0.025 < 0.05$$
 
 At $400$ minutes the mechanized line averages half the rival's pace, so the statement is False.`,
       `**E.** → True
 
-This claim reruns the crossover with a faster rival. A rate of $0.2$ units per minute is met at $T=6.25$ minutes, which is indeed before the $10$-minute mark.
-
-Note how sharply the crossover moves: the rival's rate is multiplied by $4$, and the crossover time is divided by $16$. That is the negative-half exponent at work — inverting $R=0.5T^{-0.5}$ gives $T=(0.5/R)^{2}$, so the crossover responds to the *square* of the rate change.
-
-Set the derived throughput equal to the faster rate:
+A faster rival raises the target rate, and the same crossover equation is solved with $0.2$ in place of $0.05$:
 
 $$0.5\\,T^{-0.5} = 0.2 \\quad \\Rightarrow \\quad T^{0.5} = \\frac{0.5}{0.2} = 2.5$$
 
 $$T = 2.5^{2} = 6.25$$
 
-Compare the two crossovers through the general inverse:
+The rival's rate is multiplied by $4$ while the crossover time is divided by $16$, because the inverse relation squares the rate change:
 
 $$T = \\left(\\frac{0.5}{R}\\right)^{2}, \\qquad R = 0.05 \\;\\Rightarrow\\; 100, \\quad R = 0.2 \\;\\Rightarrow\\; 6.25$$
 
-The faster rival is matched after only $6.25$ minutes, which is before $10$, so the statement is True.`,
+The faster rival is matched after $6.25$ minutes, before the $10$-minute mark, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 4,
@@ -604,89 +522,63 @@ $$R = 0.05 \\;\\Rightarrow\\; T = 100, \\qquad R = 0.2 \\;\\Rightarrow\\; T = 6.
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the coefficient of the first link in the chain. The audit reports a change in output between two purities rather than an output level, and unpacking that change gives $c=8$.
-
-Both purities are perfect squares, so their $1.5$ powers are exact: $9^{1.5}=27$ and $16^{1.5}=64$. The trap is to divide $296$ by $16^{1.5}$ alone, which treats the audit note as if it recorded the output at the higher purity instead of the gain between the two.
-
-Evaluate the two shape factors:
+The audit records a change in metal output between two purities rather than an output level, so the coefficient of the yield law has to be unpacked from a difference. Both purities are perfect squares, so their $1.5$ powers are exact:
 
 $$9^{1.5} = (3^{2})^{3/2} = 3^{3} = 27, \\qquad 16^{1.5} = (4^{2})^{3/2} = 4^{3} = 64$$
 
-The audit's gain is the difference of the two outputs:
+Dividing $296$ by $16^{1.5}$ alone would read the note as an output at the higher purity; the recorded gain is the difference of the two outputs:
 
 $$c(64) - c(27) = 296 \\quad \\Rightarrow \\quad 37c = 296 \\quad \\Rightarrow \\quad c = 8$$
 
-The metal law is $M(u)=8u^{1.5}$, matching the claim.`,
+The metal-yield law is $M(u)=8u^{1.5}$, so the statement is True.`,
       `**B.** → True
 
-This claim is about the composition of the two links. Substituting $M(u)=8u^{1.5}$ into $S(M)=M^{2/3}/2$ multiplies the exponents, $1.5\\times\\tfrac{2}{3}=1$, so strength is proportional to purity: $S(u)=2u$.
-
-Exponent $1$ makes the composed law linear, but that does not make the chain equivalent to the competitor's quote: the competitor's line carries an intercept of $5$, while the chain passes through the origin. It is that structural difference, not the slopes alone, that produces the single crossover in parts D and E.
-
-Compose the two stages:
+Composing two power stages multiplies their exponents, so substituting the metal law into the strength law gives strength directly as a function of purity:
 
 $$S(u) = \\frac{\\left(8u^{1.5}\\right)^{2/3}}{2} = \\frac{8^{2/3}\\,u^{1.5 \\times 2/3}}{2}$$
-
-Simplify the constant and the exponent separately:
 
 $$8^{2/3} = 4, \\qquad 1.5 \\times \\frac{2}{3} = 1$$
 
 $$S(u) = \\frac{4u}{2} = 2u$$
 
-The composed exponent is exactly $1$, so the statement is True.`,
+An exponent of $1$ makes the composed law linear without making it the competitor's quote: that line carries an intercept of $5$ while the chain passes through the origin, and the structural difference is what produces a single crossover later. The composed exponent is exactly $1$, so the statement is True.`,
       `**C.** → False
 
-This claim compares the two offers at a single low purity. The chain gives $S(10)=20$ while the competitor gives $23$, so the chain is behind by three units at that purity.
-
-Low purities are where the competitor's intercept dominates. Its $+5$ head start outweighs the chain's slope advantage, and only after enough purity has accumulated does the steeper slope overturn it — which is why testing one point cannot decide the general comparison in parts D and E.
-
-Evaluate both offers at $u=10$:
+At one purity the comparison is between the composed chain $S(u)=2u$ and the quoted line $S_{\\mathrm{comp}}(u)=1.8u+5$:
 
 $$S(10) = 2(10) = 20$$
 
 $$S_{\\mathrm{comp}}(10) = 1.8(10) + 5 = 18 + 5 = 23$$
 
-Compare:
-
 $$20 < 23$$
 
-The chain trails the competitor at $u=10$, so the statement is False.`,
+Low purities are where the competitor's intercept dominates: the head start of $5$ outweighs the chain's slope advantage until enough purity has accumulated. The chain trails by three units at $u=10$, so the statement is False.`,
       `**D.** → True
 
-This claim asks for the crossover between the composed chain and the linear quote. Setting $2u = 1.8u + 5$ gives $u=25$, which lies inside the meaningful range and below $30$.
-
-Two straight lines with different slopes meet exactly once, so there is a single crossover to find, and the domain cap $u\\le50$ matters only because it decides whether that crossover is reachable. Here $25$ sits comfortably inside the cap.
-
-Set the two strength offers equal:
+Two straight lines with different slopes meet exactly once, so the crossover between the composed chain and the quote is a single linear equation:
 
 $$2u = 1.8u + 5$$
 
 $$0.2u = 5 \\quad \\Rightarrow \\quad u = 25$$
 
-Check the common level and the domain:
+The domain cap $u\\le50$ matters only for whether that crossover is reachable, and this one sits comfortably inside it:
 
 $$S(25) = 50, \\qquad S_{\\mathrm{comp}}(25) = 1.8(25) + 5 = 50, \\qquad 25 \\le 50$$
 
 The offers coincide at purity $25$, which is below $30$, so the statement is True.`,
       `**E.** → True
 
-This claim covers the whole interval from the crossover to the purity cap, so it needs an argument about the gap, not just one test value. The gap $S(u)-S_{\\mathrm{comp}}(u)=0.2u-5$ is increasing and positive for every $u>25$, so the chain leads all the way to $u=50$.
-
-The reason the lead can never be lost is that the composed chain has the steeper slope, $2$ against $1.8$. Once the accumulated slope advantage has paid off the competitor's intercept, the difference keeps widening rather than closing.
-
-Write the gap between the two offers:
+A claim about a whole interval is settled by the gap between the two offers rather than by one test purity:
 
 $$S(u) - S_{\\mathrm{comp}}(u) = 2u - (1.8u + 5) = 0.2u - 5$$
 
-The gap is strictly increasing and changes sign only at the crossover:
+The chain has the steeper slope, $2$ against $1.8$, so once the accumulated advantage has paid off the intercept the gap widens instead of closing:
 
 $$0.2u - 5 > 0 \\quad \\Longleftrightarrow \\quad u > 25$$
 
-Evaluate at the cap to see the size of the final lead:
-
 $$S(50) = 100, \\qquad S_{\\mathrm{comp}}(50) = 95, \\qquad \\text{gap} = 5$$
 
-The chain leads at every purity between $25$ and $50$, so the statement is True.`,
+The chain leads at every purity from $25$ up to the cap at $50$, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 5,
@@ -752,79 +644,59 @@ The gap is negative below $u=25$ and positive above it, reaching $5$ units at th
     tactical_explanations: [
       `**A.** → False
 
-This claim applies a scale factor, so only the exponent matters. The doubling test fixes $r=2$, and tripling then multiplies peak load by $3^{2}=9$, not by $6$.
-
-The figure $6$ comes from treating the scale factor as proportional to the multiplier: doubling gave $4$, so tripling "should" give $1.5$ times as much, or $6$. Scale factors of a power function are powers of the multiplier, not multiples of it.
-
-Recover the exponent from the doubling test, where the coefficient cancels:
+A scale factor of a power law depends only on the exponent, and the doubling test is the fact that carries it, since the coefficient cancels in the ratio:
 
 $$\\frac{L(2x)}{L(x)} = \\frac{A(2x)^{r}}{Ax^{r}} = 2^{r} = 4 \\quad \\Rightarrow \\quad r = 2$$
 
-Apply the same identity to a tripling:
+The same identity applies to a tripling:
 
 $$\\frac{L(3x)}{L(x)} = 3^{2} = 9$$
 
-The true factor is $9$, so the statement is False.`,
+The figure $6$ treats the scale factor as proportional to the multiplier, as though doubling giving $4$ meant tripling gives $1.5$ times as much; scale factors are powers of the multiplier, not multiples of it. Tripling multiplies peak load by $9$, so the statement is False.`,
       `**B.** → False
 
-This claim asks where the model reaches the alarm level of $500$, which needs both constants. With $r=2$ the recorded run gives $A=0.2$, and solving $0.2x^{2}=500$ puts the alarm exactly at $50$ jobs, below the threshold in the claim.
-
-The margin looks generous from the recorded run — $180$ against an alarm at $500$ — and it is tempting to assume the alarm is far away. Because load grows with the square of the job count, the remaining headroom is used up by only $20$ more jobs.
-
-Fix the coefficient from the recorded run:
+The alarm level is a peak load, so locating it in job counts needs both constants of the model. The recorded run fixes the coefficient:
 
 $$A(30)^{2} = 180 \\quad \\Rightarrow \\quad 900A = 180 \\quad \\Rightarrow \\quad A = 0.2$$
 
-Solve the alarm condition:
+Solving the alarm condition then gives the job count:
 
 $$0.2x^{2} = 500 \\quad \\Rightarrow \\quad x^{2} = 2500 \\quad \\Rightarrow \\quad x = 50$$
 
-The alarm trips at $50$ jobs, not above $55$, so the statement is False.`,
+The recorded margin looks generous, $180$ against an alarm at $500$, yet load grows with the square of the job count, so that headroom is spent within $20$ extra jobs. The alarm trips at $50$ jobs rather than above $55$, so the statement is False.`,
       `**C.** → False
 
-The move from 30 to 42 jobs is a finite $40\\%$ increase, and the square law amplifies it. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A move from $30$ to $42$ jobs is a finite $40\\%$ increase in the input, and a squared response amplifies it, so the exact scale factor of the model settles the comparison:
 
 $$\\frac{L(42)}{L(30)}=\\left(\\frac{42}{30}\\right)^2=1.4^2=1.96$$
 
-The relevant comparison can then be written as
+A percentage change is the scale factor minus one:
 
 $$\\frac{L(42)-L(30)}{L(30)}=1.96-1=0.96=96\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Peak load rises by $96\\%$, which is not less than $90\\%$. Therefore the statement is False.`,
+Reading the exponent as though it were an ordinary multiplier, or reaching for an elasticity shortcut, replaces this finite calculation with something looser. Peak load rises by $96\\%$, which is not less than $90\\%$, so the statement is False.`,
       `**D.** → True
 
-The move from 30 to 33 jobs is a finite $10\\%$ increase, so the exact square-law response is required. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A move from $30$ to $33$ jobs is a finite $10\\%$ increase in the input, and the squared response converts it through the exact scale factor:
 
 $$\\frac{L(33)}{L(30)}=\\left(\\frac{33}{30}\\right)^2=1.1^2=1.21$$
 
-The relevant comparison can then be written as
+Subtracting one turns the scale factor into a percentage change:
 
 $$\\frac{L(33)-L(30)}{L(30)}=1.21-1=0.21=21\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The exact increase is $21\\%$. Therefore the statement is True.`,
+A linear reading of the law would put the response at $10\\%$ and doubling the input change would put it at $20\\%$; the exact figure is $21\\%$, so the statement is True.`,
       `**E.** → False
 
-This claim assumes proportional behaviour. With exponent $2$, halving the job count multiplies peak load by $(1/2)^{2}=1/4$, so load falls to a quarter rather than a half.
-
-The mistake matters in the direction that hurts capacity planning: a team expecting a halving would assume that dropping from $50$ jobs to $25$ leaves $250$ of load, when the model puts it at $125$. Overestimating residual load is safe; the same reasoning applied upwards would badly underestimate a spike.
-
-Apply the scale-factor identity with multiplier $1/2$:
+Halving is a multiplier of $1/2$ on the input, and with exponent $2$ the output multiplier is that fraction squared:
 
 $$\\frac{L(x/2)}{L(x)} = \\left(\\frac{1}{2}\\right)^{2} = \\frac{1}{4}$$
 
-Check numerically at the alarm point:
+Proportional behaviour would carry the halving straight through; the numbers at the alarm point show what happens instead:
 
 $$L(50) = 0.2(2500) = 500, \\qquad L(25) = 0.2(625) = 125$$
 
-Load falls to a quarter, not a half, so the statement is False.`,
+A team expecting a halving would plan for $250$ of residual load where the model gives $125$, and the same reasoning applied upwards would badly understate a spike. Load falls to a quarter, not a half, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 6,
@@ -888,59 +760,51 @@ $$\\text{El}_{x}L = 2$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the coefficient, but neither observation gives a response level. The recorded *difference* must be applied to the model at both intensities. Since the square-root factors are $5$ and $10$, their difference isolates five copies of $A$.
-
-A common mistake is to write $A\\sqrt{100}=60$. The $60$ is an increase, not the response at $100$, so both endpoints are required.
+Neither observation reports a response level: the record is a difference between the responses at two intensities, so the coefficient has to be pulled out of that difference. The square-root factors at $25$ and $100$ are $5$ and $10$:
 
 $$Q(100)-Q(25)=A(10-5)=60$$
 
 $$5A=60 \\quad \\Rightarrow \\quad A=12, \\qquad Q(x)=12\\sqrt{x}$$
 
-The recovered law is exactly $Q(x)=12\\sqrt{x}$, so the statement is True.`,
+Writing $A\\sqrt{100}=60$ instead would read the increase as the response at intensity $100$ and lose the lower endpoint. The recovered law is $Q(x)=12\\sqrt{x}$, so the statement is True.`,
       `**B.** → True
 
-This claim asks for a response ceiling under an intensity ceiling. From the difference calibration, $Q(x)=12\\sqrt{x}$. Because the exponent $0.5$ is positive, responses increase with intensity, so the largest feasible response occurs at the cap itself.
-
-A common mistake is to treat $400$ as a response budget or to multiply it by $12$. The power-function input must first pass through the square root.
+The budget caps the input, and the exponent $0.5$ is positive, so responses rise with intensity and the largest feasible response sits at the cap itself:
 
 $$0<x\\le 400, \\qquad Q(x)=12x^{0.5}$$
 
 $$Q(400)=12\\sqrt{400}=12(20)=240$$
 
-No smaller affordable intensity can produce more than the endpoint value. The budget therefore allows at most $240$ usable responses, so the statement is True.`,
+Treating $400$ as a response budget, or multiplying it by $12$, skips the square root the model applies to the input. No affordable intensity beats the endpoint value of $240$ usable responses, so the statement is True.`,
       `**C.** → True
 
-This claim asks to invert the response law and then compare the required intensity with the budget. The calibrated model is $Q(x)=12\\sqrt{x}$, so setting the target to $180$ first determines the square root of intensity and then intensity itself.
-
-A common mistake is to stop at $\\sqrt{x}=15$ and report $15$ as the required intensity. Inverting a square-root law requires a final squaring step.
+A target response inverts the calibrated law: dividing by the coefficient isolates the square root of intensity, and squaring recovers intensity itself:
 
 $$12\\sqrt{x}=180 \\quad \\Rightarrow \\quad \\sqrt{x}=15$$
 
-$$x=15^2=225, qquad 225\\le 400$$
+$$x=15^2=225, \\qquad 225\\le 400$$
 
-The target requires intensity $225$, which lies within the cap. Both parts of the statement match the model, so the statement is True.`,
+Stopping at $\\sqrt{x}=15$ and reporting $15$ as the intensity leaves the inversion half done. The target needs intensity $225$, which lies inside the cap, so the statement is True.`,
       `**D.** → True
 
-This claim asks for a scale effect rather than a level. For a power function with exponent $0.5$, multiplying the input by $k$ multiplies the output by $k^{0.5}$. Here the non-integer factor $2.25$ is $(1.5)^2$.
-
-A common mistake is to multiply responses by $2.25$ as though the law were linear. The coefficient cancels in the ratio, but the exponent does not.
+A scale effect on a power function with exponent $0.5$ takes the square root of the input multiplier, and the coefficient cancels in the ratio:
 
 $$\\frac{Q(2.25x)}{Q(x)} =\\frac{12(2.25x)^{0.5}}{12x^{0.5}} =(2.25)^{0.5}$$
 
+The awkward-looking factor $2.25$ is $(1.5)^{2}$, so the root is exact:
+
 $$(2.25)^{0.5}=\\sqrt{\\frac{9}{4}}=\\frac{3}{2}=1.5$$
 
-Thus a $2.25$-fold intensity change produces a $1.5$-fold response change, so the statement is True.`,
+Multiplying responses by $2.25$ would treat the law as linear, which the exponent forbids. A $2.25$-fold intensity change produces a $1.5$-fold response change, so the statement is True.`,
       `**E.** → True
 
-This claim asks for the finite percentage change between two specific intensities. The calibrated law gives $Q(64)=12(8)$ and $Q(81)=12(9)$. The increase must be divided by the initial response, not by the final response or by the intensity change.
-
-A common mistake is to use the relative intensity increase, $17/64\\approx26.6\\%$, as the response increase. The square root compresses that move.
+A finite percentage change is measured against the initial response, so both endpoints pass through the calibrated law first:
 
 $$Q(64)=96, \\qquad Q(81)=108$$
 
 $$\\frac{Q(81)-Q(64)}{Q(64)} =\\frac{108-96}{96} =\\frac{1}{8}=12.5\\%$$
 
-The finite response increase is exactly $12.5\\%$, so the statement matches the model and is true.`,
+The intensity move is itself an increase of $17/64\\approx26.6\\%$, and the square root compresses it to less than half of that. The response increase is exactly $12.5\\%$, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 7,
@@ -976,85 +840,63 @@ $$Q(400)=240, \\quad Q=180\\Rightarrow x=225, \\quad (2.25)^{0.5}=1.5, \\quad \\
     tactical_explanations: [
       `**A.** → True
 
-This claim covers an interval, so it needs an argument rather than a spot check. Both coefficients follow from the shared $400$ at $n=20$, giving $C(n)=n^{2}$ and $D(n)=20n$, and $n^{2}<20n$ holds for every $n$ between $0$ and $20$.
-
-The comparison reduces to a single inequality once the common factor $n$ is divided out, which is legitimate because $n>0$. What remains, $n<20$, describes exactly the interval in the claim.
-
-Recover both coefficients from the shared cost:
+A claim about every batch below $20$ documents needs an inequality rather than a spot check, and both coefficients follow from the shared cost at $n=20$:
 
 $$a(20)^{2} = 400 \\;\\Rightarrow\\; a = 1, \\qquad b(20) = 400 \\;\\Rightarrow\\; b = 20$$
 
-Compare the two laws:
+Since $n>0$, the common factor $n$ divides out and the comparison reduces to one condition:
 
 $$n^{2} < 20n \\quad \\Longleftrightarrow \\quad n < 20 \\qquad (n>0)$$
 
-Spot-check inside the interval:
+What remains describes exactly the interval in the claim, and a check inside it agrees:
 
 $$C(10) = 100 < 200 = D(10)$$
 
-The automated procedure is cheaper on the whole interval, so the statement is True.`,
+The automated procedure is cheaper across the whole interval, so the statement is True.`,
       `**B.** → False
 
-This claim measures the gap just past the crossing point. At $n=25$ the automated procedure costs $625$ and the manual one $500$, a difference of $125$, which is more than $100$.
-
-Being only five documents past the meeting point makes the gap feel small, but the gap is quadratic in disguise: it equals $n(n-20)$, so it grows with both the distance past $20$ and the batch size itself. Five documents past the crossing already produce a $125$ difference.
-
-Evaluate both costs:
+Past the crossing point the two costs separate, and the gap at a given batch is the difference of the two calibrated totals:
 
 $$C(25) = 25^{2} = 625, \\qquad D(25) = 20(25) = 500$$
 
-Take the difference and compare with the threshold:
-
 $$625 - 500 = 125 > 100$$
 
-The gap exceeds $100$, so the statement is False.`,
+Five documents past the meeting point sounds negligible, but the gap equals $n(n-20)$, so it grows with both the distance past $20$ and the batch size itself. The difference is $125$, above the threshold in the claim, so the statement is False.`,
       `**C.** → True
 
-This claim is about the number of crossings. Setting $n^{2}=20n$ and dividing by $n$ leaves $n=20$ as the only positive solution, so the two procedures agree exactly once.
-
-The algebra hides a second root at $n=0$, which is why dividing by $n$ has to be justified: on the stated domain $n>0$ that root is excluded, and no other crossing exists. A parabola through the origin and a line through the origin can meet at most twice, and one of those meetings is the origin itself.
-
-Set the two costs equal:
+A parabola through the origin and a line through the origin can meet at most twice, so equality of the two costs is a quadratic with at most two roots:
 
 $$n^{2} = 20n \\quad \\Rightarrow \\quad n(n - 20) = 0$$
 
-Discard the root outside the domain:
+One of those meetings is the origin, which the stated domain removes:
 
 $$n = 0 \\text{ (excluded)}, \\qquad n = 20$$
 
-Only $n=20$ survives, so the statement is True.`,
+Dividing through by $n$ reaches the same place, provided the division is justified by $n>0$. Only $n=20$ survives on the domain, so the statement is True.`,
       `**D.** → False
 
-This claim treats the gap as if it were proportional to batch size. The gap is $n^{2}-20n=n(n-20)$; doubling $n$ from $25$ to $50$ takes it from $125$ to $1500$, a twelvefold increase.
-
-Each cost on its own has a clean scale factor — the automated cost quadruples, the manual cost doubles — but the *difference* of two power functions is not itself a power function, so it has no scale factor at all. That is the structural point being tested.
-
-Write the gap:
+The difference of two power functions is not itself a power function, so it carries no scale factor at all:
 
 $$C(n) - D(n) = n^{2} - 20n = n(n-20)$$
 
-Evaluate it at two batches:
+Each cost taken alone does scale cleanly, the automated total quadrupling and the manual total doubling, but the gap between them behaves differently:
 
 $$25(5) = 125, \\qquad 50(30) = 1500$$
 
 $$\\frac{1500}{125} = 12$$
 
-Doubling the batch multiplies the gap by twelve, not two, so the statement is False.`,
+Doubling the batch from $25$ to $50$ multiplies the gap twelvefold rather than twofold, so the statement is False.`,
       `**E.** → False
 
-This claim confuses the two procedures. Per-document cost is $C(n)/n=n$ for the automated route, which rises with every document added; it is the *manual* procedure that charges a constant $20$ per document.
-
-Constant unit cost is the signature of an exponent of $1$. The automated law has exponent $2$, so dividing by $n$ leaves exponent $1$ — a unit cost that grows linearly and overtakes the manual rate at exactly the crossing point.
-
-Divide each total by the batch size:
+Constant unit cost is the signature of an exponent of $1$, so dividing each total by the batch size shows which procedure has it:
 
 $$\\frac{C(n)}{n} = \\frac{n^{2}}{n} = n, \\qquad \\frac{D(n)}{n} = \\frac{20n}{n} = 20$$
 
-Compare at two batches:
+The flat rate of $20$ per document belongs to the manual route; the automated law keeps exponent $1$ after the division, so its unit cost climbs:
 
 $$\\frac{C(10)}{10} = 10, \\qquad \\frac{C(30)}{30} = 30$$
 
-The automated unit cost triples between those batches, so the statement is False.`,
+The automated cost per document triples between those batches, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 8,
@@ -1118,79 +960,55 @@ $$\\frac{C(n)}{n} = n \\text{ (rising)}, \\qquad \\frac{D(n)}{n} = 20 \\text{ (c
     tactical_explanations: [
       `**A.** → False
 
-This claim reports the wrong constant. Because $0.6=3/5$ and $32=2^{5}$, the shape factor at the recorded shift is $32^{0.6}=2^{3}=8$; the coefficient is what remains after dividing the recorded throughput by that shape factor, namely $A=12$.
-
-Mistaking $8$ for the coefficient is the classic half-finished solve: the hard part — evaluating a fractional power — has been done, and the easy division is skipped. A quick check exposes it, since $A=8$ would predict only $64$ pallets per hour on the recorded shift.
-
-Evaluate the shape factor exactly:
+Recovering a coefficient takes two steps: evaluate the shape factor at the recorded shift, then divide the recorded throughput by it. Because $0.6=3/5$ and $32=2^{5}$, the first step is exact:
 
 $$32^{0.6} = \\left(2^{5}\\right)^{3/5} = 2^{3} = 8$$
 
-Divide the recorded throughput by it:
-
 $$8A = 96 \\quad \\Rightarrow \\quad A = 12, \\qquad H(s) = 12 s^{0.6}$$
 
-The coefficient is $12$, not $8$, so the statement is False.`,
+The value $8$ is the shape factor, and reporting it as the coefficient leaves the easy division undone; $A=8$ would predict only $64$ pallets per hour on the recorded shift. The coefficient is $12$, so the statement is False.`,
       `**B.** → True
 
-The observation gives $H(s)=12s^{0.6}$, so reaching a target requires inversion rather than substitution. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+Reaching a target throughput inverts the calibrated law $H(s)=12s^{0.6}$ rather than substituting into it, so the coefficient comes off first:
 
 $$12s^{0.6}=300 \\quad\\Rightarrow\\quad s^{0.6}=25$$
 
-The relevant comparison can then be written as
+Undoing an exponent of $0.6$ means raising both sides to the reciprocal power $5/3$:
 
 $$s=25^{1/0.6}=25^{5/3}\\approx213.75$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The continuous model reaches the target at about $214$ staff. Therefore the statement is True.`,
+Scaling headcount in proportion to throughput would land far lower, since an exponent below $1$ makes staff grow faster than output. The continuous model reaches the ceiling at about $214$ staff, so the statement is True.`,
       `**C.** → False
 
-Doubling staff uses the exact scale factor $2^{0.6}$; the exponent itself is not a percentage gain. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+Doubling headcount multiplies throughput by the exact scale factor $2^{0.6}$, with the coefficient cancelling in the ratio:
 
 $$\\frac{H(2s)}{H(s)}=2^{0.6}\\approx1.5157$$
 
-The relevant comparison can then be written as
+A percentage gain is that factor minus one:
 
 $$(1.5157-1)\\times100\\%\\approx51.6\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The increase is about $51.6\\%$, outside the stated band. Therefore the statement is False.`,
+The exponent $0.6$ is not itself a percentage response, and the band in the claim is roughly what reading it that way would suggest. The increase is about $51.6\\%$, outside that band, so the statement is False.`,
       `**D.** → False
 
-This claim inverts the law at the contractual ceiling of $300$ pallets per hour. The required headcount is about $214$, not $250$, so the ceiling arrives sooner than the claim suggests.
-
-Inverting an exponent of $0.6$ means raising both sides to the power $5/3$, an operation that magnifies the target ratio. Estimating instead by proportion from the recorded shift — throughput needs to roughly triple, so staff must roughly triple to about $100$ — lands far short, which shows why the inverse exponent has to be applied properly.
-
-Set throughput to the ceiling and isolate the shape factor:
+The contract ceiling is a throughput, so the headcount behind it comes from inverting the law at $300$ pallets per hour:
 
 $$12 s^{0.6} = 300 \\quad \\Rightarrow \\quad s^{0.6} = 25$$
 
-Raise both sides to the reciprocal power:
-
 $$s = 25^{5/3} = \\left(5^{2}\\right)^{5/3} = 5^{10/3} = 5^{3} \\times 5^{1/3} \\approx 125 \\times 1.710 \\approx 213.8$$
 
-The ceiling binds at about $214$ staff, well below $250$, so the statement is False.`,
+A proportional estimate from the recorded shift, tripling throughput by tripling staff to about $100$, lands far short, which is what the reciprocal exponent $5/3$ corrects. The ceiling binds at about $214$ staff, well below $250$, so the statement is False.`,
       `**E.** → False
 
-This claim asks about a derived quantity. Dividing the law by $s$ gives $H(s)/s = 12s^{-0.4}$, a power function with a negative exponent, so throughput per staff member falls as the shift grows.
-
-Total throughput and throughput per head move in opposite directions here, and conflating them is the trap. Adding staff always raises the total; it lowers the average because each additional worker contributes less than the one before.
-
-Divide the law by headcount:
+Throughput per staff member is a derived power function, obtained by dividing the law by headcount and lowering the exponent by one:
 
 $$\\frac{H(s)}{s} = \\frac{12 s^{0.6}}{s} = 12 s^{-0.4}$$
 
-The exponent is negative, so the average is decreasing. Check two shifts:
+The exponent is negative, so the average declines even while the total keeps rising:
 
 $$\\frac{H(32)}{32} = \\frac{96}{32} = 3, \\qquad \\frac{H(243)}{243} = \\frac{324}{243} \\approx 1.33$$
 
-Throughput per staff member falls from $3$ to about $1.33$, so the statement is False.`,
+Adding staff always lifts total pallets, but each extra worker contributes less than the one before, which is what the average records. Throughput per head falls from $3$ to about $1.33$, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 9,
@@ -1254,91 +1072,65 @@ $$\\frac{H(s)}{s} = 12 s^{-0.4}, \\qquad 3 \\text{ at } s=32, \\qquad 1.33 \\tex
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for a level, but the log records only a reduction, so the coefficient has to be reconstructed from the difference between two response times. That reconstruction gives $A=216$, and the four-server median is then $27$ ms.
-
-Both server counts are perfect squares, which keeps the negative fractional powers exact: $4^{-1.5}=1/8$ and $9^{-1.5}=1/27$. The trap is sign confusion — with a negative exponent the *smaller* server count produces the *larger* response time, so the recorded cut is the earlier value minus the later one.
-
-Evaluate the two shape factors:
+The upgrade log records a reduction rather than a level, so the coefficient has to be reconstructed from the difference between two response times. Both server counts are perfect squares, which keeps the negative fractional powers exact:
 
 $$4^{-1.5} = \\frac{1}{4^{1.5}} = \\frac{1}{8}, \\qquad 9^{-1.5} = \\frac{1}{27}$$
 
-Translate the recorded cut:
+With a negative exponent the smaller fleet carries the larger response time, so the recorded cut is the four-server value minus the nine-server value:
 
 $$A\\left(\\frac{1}{8} - \\frac{1}{27}\\right) = 19 \\quad \\Rightarrow \\quad A \\cdot \\frac{19}{216} = 19 \\quad \\Rightarrow \\quad A = 216$$
-
-Evaluate at four servers:
 
 $$W(4) = \\frac{216}{8} = 27$$
 
 The four-server median is $27$ ms, so the statement is True.`,
       `**B.** → True
 
-This claim checks the second end of the upgrade. With $A=216$ the nine-server median is $216/27=8$ ms, and the pair $27$ and $8$ reproduces the logged cut exactly.
-
-This is the natural consistency check on part A: any candidate coefficient must reproduce a difference of $19$ ms between the two configurations, and only $A=216$ does. Notice also that the two values are $27=3^{3}$ and $8=2^{3}$, mirroring the server counts $9=3^{2}$ and $4=2^{2}$ through the exponent $-1.5$.
-
-Evaluate at nine servers:
+The other end of the upgrade is a direct evaluation of the calibrated law:
 
 $$W(9) = \\frac{216}{27} = 8$$
 
-Verify the logged reduction:
+Any candidate coefficient has to reproduce the logged cut of $19$ ms between the two configurations, and this one does:
 
 $$27 - 8 = 19$$
 
-The nine-server median is $8$ ms, so the statement is True.`,
+The two medians are $27=3^{3}$ and $8=2^{3}$, mirroring the counts $9=3^{2}$ and $4=2^{2}$ through the exponent $-1.5$. The nine-server median is $8$ ms, so the statement is True.`,
       `**C.** → True
 
-This claim is a scale-factor question and holds at any starting fleet size. Doubling multiplies response time by $2^{-1.5}\\approx0.354$, which is a cut of about $64.6\\%$ — rounded, the $65\\%$ in the claim.
-
-With a negative exponent the scale factor is below $1$, so the multiplier is a survival fraction and the *cut* is one minus that fraction. Reading $0.354$ itself as the reduction would give the wrong answer by inverting the two.
-
-Form the scale factor:
+A scale factor holds at any fleet size, and with a negative exponent it is a surviving fraction rather than a growth factor:
 
 $$\\frac{W(2k)}{W(k)} = 2^{-1.5} = \\frac{1}{2\\sqrt{2}} \\approx 0.3536$$
 
-Convert to a percentage cut:
+The cut is one minus that fraction, not the fraction itself:
 
 $$1 - 0.3536 = 0.6464 \\approx 65\\%$$
 
-Check on concrete fleets:
+Concrete fleets confirm the multiplier:
 
 $$W(4) = 27, \\qquad W(8) = \\frac{216}{8^{1.5}} = \\frac{216}{22.63} \\approx 9.55, \\qquad \\frac{9.55}{27} \\approx 0.354$$
 
-The cut is about $65\\%$, so the statement is True.`,
+Doubling the server count cuts the median by about $65\\%$, so the statement is True.`,
       `**D.** → True
 
-This claim inverts the model at a demanding target. Solving $216k^{-1.5}=1$ gives $k^{1.5}=216$, and raising to the power $2/3$ returns exactly $36$ servers.
-
-The inversion is where negative exponents bite: moving the power to the other side flips its sign, so the target ratio $216$ is raised to $2/3$ rather than $-2/3$. The size of the answer is worth noting too — cutting the median from $8$ ms to $1$ ms takes four times the nine-server fleet.
-
-Set the model equal to the target:
+Inverting a law with a negative exponent moves the power to the other side and flips its sign, which turns the target into a positive root:
 
 $$216 k^{-1.5} = 1 \\quad \\Rightarrow \\quad k^{1.5} = 216$$
 
-Raise both sides to the reciprocal power:
-
 $$k = 216^{2/3} = \\left(6^{3}\\right)^{2/3} = 6^{2} = 36$$
 
-Confirm by substitution:
+Raising to $-2/3$ instead of $2/3$ is the slip that the sign flip prevents. Substitution confirms the fleet size:
 
 $$W(36) = \\frac{216}{36^{1.5}} = \\frac{216}{216} = 1$$
 
-The target needs $36$ servers, so the statement is True.`,
+Cutting the median from $8$ ms to $1$ ms takes four times the nine-server fleet, exactly $36$ servers, so the statement is True.`,
       `**E.** → True
 
-From the logged difference the calibrated law is $W(k)=216k^{-1.5}$, and the target must be inverted. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A target median inverts the calibrated law $W(k)=216k^{-1.5}$: the coefficient comes off first, and the negative power flips to leave a positive root to take.
 
 $$216k^{-1.5}=2 \\quad\\Rightarrow\\quad k^{1.5}=108$$
 
-The relevant comparison can then be written as
-
 $$k=108^{2/3}\\approx22.68$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The continuous model reaches $2$ ms at about $22.7$ servers. Therefore the statement is True.`,
+The reciprocal exponent is $2/3$ rather than $1.5$, so scaling the fleet by the ratio of the two times would overshoot badly. The continuous model reaches $2$ ms at about $22.7$ servers, so the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 10,
@@ -1400,83 +1192,59 @@ $$k = \\left(\\frac{216}{W}\\right)^{2/3}, \\qquad W = 1 \\;\\Rightarrow\\; k = 
     tactical_explanations: [
       `**A.** → True
 
-A finite ten-percent price move must be evaluated by the exact factor $1.1^{-2}$. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+An isoelastic demand curve answers a finite price move through the exact power of the price multiplier, with the coefficient cancelling in the ratio:
 
 $$\\frac{q(1.1p)}{q(p)}=1.1^{-2}=\\frac{1}{1.21}\\approx0.82645$$
 
-The relevant comparison can then be written as
+The exponent is negative, so the factor sits below $1$ and the fall is one minus that factor:
 
 $$(1-0.82645)\\times100\\%\\approx17.36\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Subscriptions fall by about $17.4\\%$. Therefore the statement is True.`,
+Multiplying the $10\\%$ move by the elasticity $-2$ would replace the full power with a shortcut. Subscriptions fall by about $17.4\\%$, so the statement is True.`,
       `**B.** → False
 
-This claim turns the elasticity into an exact prediction for a large price move. The true factor is $1.1^{-2}\\approx0.8264$, a fall of about $17.4\\%$, so the drop is smaller than the claimed $20\\%$.
-
-Elasticity multiplies percentage changes only in the limit of very small moves. For a $1\\%$ rise the approximation is excellent, as part A showed; for a $10\\%$ rise the exact power calculation and the linear shortcut separate visibly, and the word "exactly" is what makes the claim fail.
-
-Apply the exact scale factor:
+Elasticity multiplies percentage changes only in the limit of very small moves, so a $10\\%$ price rise has to pass through the exact scale factor:
 
 $$\\frac{q(1.1p)}{q(p)} = 1.1^{-2} = \\frac{1}{1.21} \\approx 0.8264$$
 
-Convert to a percentage change:
-
 $$1 - 0.8264 = 0.1736 \\approx 17.4\\%$$
 
-Check on the observed price:
+Levels at the observed price tell the same story:
 
 $$q(5) = 400, \\qquad q(5.5) = \\frac{10000}{30.25} \\approx 330.6$$
 
-Quantity falls by about $17.4\\%$, not exactly $20\\%$, so the statement is False.`,
+At a $1\\%$ rise the linear shortcut would be excellent; at $10\\%$ it separates visibly from the power calculation, and the word "exactly" is what the claim cannot support. Quantity falls by about $17.4\\%$ rather than $20\\%$, so the statement is False.`,
       `**C.** → True
 
-Calibration gives $q(p)=10000p^{-2}$, after which quantity and revenue must both be evaluated at the second price. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+Calibration at the observed price gives $q(p)=10000p^{-2}$, and a revenue claim needs the quantity first and the product $pq$ second:
 
 $$q(10)=10000(10)^{-2}=100$$
 
-The relevant comparison can then be written as
-
 $$R(10)=10q(10)=10(100)=1000$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Both the quantity and the resulting revenue match the claim. Therefore the statement is True.`,
+Doubling the price from $5$ divides quantity by $2^{2}$ rather than by $2$, which is what takes $400$ subscriptions down to $100$. Both figures in the claim match the curve, so the statement is True.`,
       `**D.** → False
 
-This claim describes the borderline case of unit elasticity, which is not the curve in front of us. Multiplying price by quantity gives $R(p)=10000\\,p^{-1}$, so revenue falls as price rises.
-
-Revenue is price-independent only when the elasticity is exactly $-1$, since then the exponents $+1$ and $-1$ cancel. With elasticity $-2$ the quantity loss outweighs the price gain, leaving revenue strictly decreasing — the standard elastic-demand conclusion.
-
-Build revenue from the curve:
+Revenue is the product of price and quantity, so its exponent is the sum of $+1$ and the demand exponent:
 
 $$R(p) = p\\,q(p) = p \\times 10000 p^{-2} = 10000 p^{-1}$$
 
-Evaluate at two prices:
+Price-independent revenue is the borderline case of elasticity exactly $-1$, where those two exponents cancel; at elasticity $-2$ the quantity loss outweighs the price gain:
 
 $$R(5) = \\frac{10000}{5} = 2000, \\qquad R(10) = \\frac{10000}{10} = 1000$$
 
-Doubling the price halves revenue, so revenue clearly depends on price and the claim is false.`,
+Doubling the price halves revenue, which is a plain dependence on price, so the statement is False.`,
       `**E.** → False
 
-This claim evaluates the curve at a price four times the observed one. The correct quantity is $25$ subscriptions; the claimed $50$ would follow from an elasticity of $-1$, not $-2$.
-
-The slip is easy to see through the scale factor: quadrupling the price divides quantity by $4^{2}=16$, taking $400$ down to $25$. Dividing by $4$ instead — that is, using the price multiplier itself rather than its square — produces exactly the claimed $50$.
-
-Evaluate the curve directly:
+Evaluating the calibrated curve at a price four times the observed one is a direct substitution:
 
 $$q(20) = \\frac{10000}{20^{2}} = \\frac{10000}{400} = 25$$
 
-Cross-check with the scale factor from the observed price:
+The scale factor from the observed price agrees, since quadrupling the price divides quantity by $4^{2}$:
 
 $$\\frac{q(20)}{q(5)} = 4^{-2} = \\frac{1}{16}, \\qquad \\frac{400}{16} = 25$$
 
-The curve gives $25$ subscriptions, not $50$, so the statement is False.`,
+Dividing by the price multiplier itself instead of its square produces exactly the claimed $50$, the answer for elasticity $-1$. The curve gives $25$ subscriptions, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 11,
@@ -1540,81 +1308,57 @@ $$R(5) = 2000, \\qquad R(10) = 1000$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the constant part of the fee, which no single engagement reveals on its own. Differencing the two engagements removes $F$, gives $a=30$, and substituting back leaves $F=200$.
-
-The point of differencing is that the fixed charge appears in both bills with the same weight, so it cancels. The variable part does not cancel, because the two engagements have different shape factors, $\\sqrt{100}=10$ and $\\sqrt{400}=20$.
-
-Write both engagements:
+A fixed charge enters both bills with the same weight, so differencing the two engagements removes it while the variable parts survive with shape factors $\\sqrt{100}=10$ and $\\sqrt{400}=20$:
 
 $$F + 10a = 500, \\qquad F + 20a = 800$$
 
-Subtract to eliminate the fixed charge:
-
 $$10a = 300 \\quad \\Rightarrow \\quad a = 30$$
 
-Substitute back:
+Substituting back recovers the constant part:
 
 $$F = 500 - 10(30) = 200, \\qquad C(n) = 200 + 30\\sqrt{n}$$
 
-The fixed charge is $200$, so the statement is True.`,
+Neither engagement can separate the two constants on its own, which is why both filed bills are needed. The fixed charge is $200$, so the statement is True.`,
       `**B.** → False
 
-This claim misreads the structure of the fee. A power function has the form $An^{r}$ and nothing else; adding a constant produces $200+30\\sqrt{n}$, which is a sum of a constant and a power function, not a power function itself.
-
-The clean test is the scale factor. A genuine power function multiplies by $k^{r}$ whenever the input is multiplied by $k$, with a factor that does not depend on where you start. Here the factor drifts, which is the fingerprint of the extra constant.
-
-Compare two quadruplings, both multiplying accounts by $4$:
+A power function has the form $An^{r}$ and nothing else, and its scale factor is $k^{r}$ whenever the input is multiplied by $k$, wherever the move starts. Two separate quadruplings test that:
 
 $$\\frac{C(400)}{C(100)} = \\frac{800}{500} = 1.6$$
 
 $$\\frac{C(1600)}{C(400)} = \\frac{200 + 30(40)}{800} = \\frac{1400}{800} = 1.75$$
 
-A power function with exponent $0.5$ would give the same factor $4^{0.5}=2$ both times. The factors differ, so total cost is not a power function and the claim is false.`,
+An exponent of $0.5$ would give the same factor $4^{0.5}=2$ both times, and the drift between $1.6$ and $1.75$ is the fingerprint of the added constant in $200 + 30\\sqrt{n}$. Total cost is a constant plus a power function rather than a power function, so the statement is False.`,
       `**C.** → True
 
-This claim is about the average fee. Dividing the bill by the number of accounts gives $200n^{-1}+30n^{-0.5}$, a sum of two decreasing terms, so the average falls throughout.
-
-Both pieces work in the same direction, which is what makes the conclusion airtight: the fixed charge is spread over more accounts, and the variable part also thins out because its exponent, $0.5$, is below $1$. If the variable exponent had exceeded $1$, the two forces would have pulled against each other and the answer would depend on $n$.
-
-Divide the fee by the number of accounts:
+Cost per account is the fee divided by the number of accounts, which lowers the exponent of each term by one:
 
 $$\\frac{C(n)}{n} = \\frac{200}{n} + \\frac{30\\sqrt{n}}{n} = 200n^{-1} + 30n^{-0.5}$$
 
-Both exponents are negative, so both terms decline. Check the filed engagements:
+Both exponents are negative, so both pieces decline: the fixed charge spreads over more accounts, and the variable part thins out because its exponent sits below $1$.
 
 $$\\frac{500}{100} = 5, \\qquad \\frac{800}{400} = 2, \\qquad \\frac{1100}{900} \\approx 1.22$$
 
-Cost per account falls from $5$ to about $1.22$, so the statement is True.`,
+Had the variable exponent exceeded $1$, the two forces would pull against each other and the answer would depend on $n$. Cost per account falls from $5$ to about $1.22$, so the statement is True.`,
       `**D.** → True
 
-This claim extrapolates the recovered fee schedule to a larger engagement. With $F=200$ and $a=30$, the $900$-account bill is $200+30(30)=1100$.
-
-The arithmetic is easy once both constants are known, but the check that matters is that $900$ is a perfect square, so the shape factor $\\sqrt{900}=30$ is exact and no rounding enters. It is also a useful sanity point: accounts rise ninefold from the first engagement while the bill only slightly more than doubles.
-
-Evaluate the recovered schedule:
+Extrapolating the recovered schedule is a substitution, and $900$ is a perfect square, so its shape factor is exact and no rounding enters:
 
 $$C(900) = 200 + 30\\sqrt{900} = 200 + 30(30) = 200 + 900 = 1100$$
 
-Compare with the filed engagements to see the shape:
+Set beside the filed engagements, the schedule shows its structure:
 
 $$C(100) = 500, \\qquad C(400) = 800, \\qquad C(900) = 1100$$
 
-Each equal step in $\\sqrt{n}$ adds exactly $300$, confirming the schedule, so the statement is True.`,
+Accounts rise ninefold from the first engagement while the bill only slightly more than doubles, because each equal step in $\\sqrt{n}$ adds exactly $300$. The $900$-account bill is $1100$, so the statement is True.`,
       `**E.** → False
 
-This claim overstates how fast the bill grows. Doubling from $100$ to $200$ accounts takes the fee from $500$ to about $624$, a rise of roughly $25\\%$.
-
-Two effects hold the increase down. The variable term rises only by the factor $\\sqrt{2}\\approx1.414$, and the fixed charge of $200$ does not rise at all — it dilutes every percentage change in the total. Even the variable part alone would have gained only $41\\%$, short of the claimed $50\\%$.
-
-Evaluate the fee at the doubled engagement:
+Doubling the accounts moves only the variable term, and by $\\sqrt{2}\\approx1.414$ rather than by $2$:
 
 $$C(200) = 200 + 30\\sqrt{200} \\approx 200 + 30(14.142) \\approx 624.3$$
 
-Express the change as a percentage:
-
 $$\\frac{624.3}{500} \\approx 1.249 \\quad \\Rightarrow \\quad +24.9\\%$$
 
-The bill rises by about a quarter, not by more than half, so the statement is False.`,
+The fixed charge of $200$ does not move at all, so it dilutes every percentage change in the total, and even the variable part alone would have gained only $41\\%$. The bill rises by about a quarter rather than by more than half, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 12,
@@ -1680,83 +1424,57 @@ $$C(200) \\approx 624.3 \\quad (+24.9\\%)$$
     tactical_explanations: [
       `**A.** → False
 
-This claim gets the composition half right. Total emissions are indeed a power function of time, but the exponent is $0.25$, not $0.5$: multiplying fleet size by intensity leaves $120a^{0.5}$, and substituting $a(t)=4t^{0.5}$ halves the exponent again.
-
-The exponent $0.5$ is the one belonging to the *fleet* law, and carrying it through unchanged is the natural slip. Each stage of a chain multiplies exponents, and here two successive square roots compress time into a fourth root.
-
-Multiply fleet size by intensity:
+Total emissions are the product of fleet size and intensity, and multiplying two powers of the same variable adds their exponents:
 
 $$E = a \\times 120a^{-0.5} = 120 a^{0.5}$$
 
-Substitute the fleet law:
+Substituting the fleet law multiplies exponents, because a power of a power compounds:
 
 $$E(t) = 120\\left(4t^{0.5}\\right)^{0.5} = 120 \\times 4^{0.5} \\times t^{0.25} = 240\\,t^{0.25}$$
 
-The exponent is $0.5 \\times 0.5 = 0.25$, not $0.5$, so the statement is False.`,
+The exponent $0.5$ belongs to the fleet law, and carrying it through unchanged ignores the second square root. Emissions are a power function of time, but with exponent $0.5 \\times 0.5 = 0.25$, so the statement is False.`,
       `**B.** → False
 
-This claim evaluates the composed law at $t=16$. The correct figure is $480$; the claimed $960$ is exactly double it.
-
-Where the doubling comes from is instructive: $960$ is what you get by ignoring the intensity stage entirely and reading $E$ off the exponent $0.5$, since $240 \\times 16^{0.5}=960$. The fourth root, $16^{0.25}=2$, is half of the square root, $16^{0.5}=4$.
-
-Evaluate the composed law:
+A level of the composed law is one substitution, and the fourth root of $16$ is exact:
 
 $$E(16) = 240 \\times 16^{0.25} = 240 \\times 2 = 480$$
 
-Check through the two stages separately:
+Running the two stages separately gives the same figure:
 
 $$a(16) = 4\\sqrt{16} = 16, \\qquad e(16) = \\frac{120}{\\sqrt{16}} = 30, \\qquad 16 \\times 30 = 480$$
 
-Both routes give $480$, so the statement is False.`,
+The claimed $960$ is what the fleet exponent alone would give, since $240 \\times 16^{0.5}=960$, and the fourth root $16^{0.25}=2$ is half the square root $16^{0.5}=4$. Both routes give $480$, so the statement is False.`,
       `**C.** → True
 
-This claim asks only for the direction of the composed law. With $E(t)=240t^{0.25}$, the coefficient is positive and the exponent is positive, so emissions increase throughout.
-
-The result is worth pausing on, because the two stages pull in opposite directions: the fleet grows while each vehicle pollutes less. The composed exponent, $+0.25$, records that fleet growth wins — but only barely, which is why the rise is so slow.
-
-Read the sign structure of the composed law:
+Direction is settled by the signs in the composed law, and a positive coefficient with a positive exponent gives an increasing function:
 
 $$E(t) = 240\\,t^{0.25}, \\qquad 240 > 0, \\quad 0.25 > 0$$
 
-Trace the level over time:
-
 $$E(1) = 240, \\qquad E(16) = 480, \\qquad E(81) = 240 \\times 3 = 720$$
 
-Emissions climb steadily, so the statement is True.`,
+The two stages do pull against each other, the fleet growing while each vehicle pollutes less, and the composed exponent records that fleet growth wins, though only narrowly. Emissions climb steadily, so the statement is True.`,
       `**D.** → False
 
-This claim assumes proportional growth. The scale factor is $2^{0.25}\\approx1.189$, so doubling the elapsed time raises emissions by only about $19\\%$.
-
-Slow growth is easy to mistake for proportional growth when the numbers are checked at just one point, and the earlier value $E(16)=480$ against $E(1)=240$ does look like a doubling — but that took sixteen years, not one doubling of time. The correct reading is that emissions double only when time rises sixteenfold.
-
-Form the scale factor:
+Doubling the elapsed time multiplies emissions by the fourth root of two, since the composed exponent is $0.25$:
 
 $$\\frac{E(2t)}{E(t)} = 2^{0.25} \\approx 1.1892$$
 
-Find what time multiple actually doubles emissions:
+Doubling emissions instead takes a sixteenfold stretch of time:
 
 $$k^{0.25} = 2 \\quad \\Rightarrow \\quad k = 2^{4} = 16$$
 
-Check numerically:
-
 $$E(16) = 480, \\qquad E(32) = 240 \\times 32^{0.25} \\approx 240 \\times 2.378 \\approx 570.7$$
 
-Doubling time adds about a fifth, not a whole doubling, so the statement is False.`,
+The pair $E(1)=240$ and $E(16)=480$ does look like a doubling, but sixteen years produced it rather than one doubling of time. Doubling time adds about a fifth, so the statement is False.`,
       `**E.** → False
 
-This claim reverses the second stage of the chain. Intensity is $e(a)=120a^{-0.5}$, a power function with a negative exponent, so it falls as the fleet grows.
-
-Total emissions and emissions per vehicle move in opposite directions in this programme, and that is exactly what the two exponents encode: $-0.5$ for intensity, $+0.25$ for the total. Reading a rising total as evidence of rising intensity confuses the aggregate with the average.
-
-Read the sign of the intensity exponent:
+Emission intensity is the second stage of the chain, a power function whose exponent is negative:
 
 $$e(a) = 120a^{-0.5}, \\qquad -0.5 < 0$$
 
-Evaluate at two fleet sizes reached by the programme:
-
 $$e(4) = \\frac{120}{2} = 60, \\qquad e(16) = \\frac{120}{4} = 30$$
 
-Intensity halves as the fleet quadruples, so the statement is False.`,
+The aggregate and the average move in opposite directions here, $+0.25$ for the total against $-0.5$ for intensity, so a rising total is no evidence of rising intensity. Intensity halves as the fleet quadruples, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 13,
@@ -1820,87 +1538,61 @@ $$e(4) = 60, \\qquad e(16) = 30$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the constant in front. The bench diameter is a power of two, so $4^{2.5}=32$ exactly, and dividing the measured capacity by that shape factor gives $A=2$.
-
-Fractional exponents like $2.5$ are best split into an integer part and a half: $4^{2.5}=4^{2}\\times4^{0.5}$. Attempting the same shortcut on a diameter that is not a perfect square is where the arithmetic usually goes wrong, which is why bench tests are run at convenient diameters.
-
-Evaluate the shape factor:
+A coefficient is the measured capacity divided by the shape factor at the bench diameter, and a fractional exponent like $2.5$ splits into an integer part and a half:
 
 $$4^{2.5} = 4^{2} \\times 4^{0.5} = 16 \\times 2 = 32$$
 
-Divide the measured capacity by it:
-
 $$32A = 64 \\quad \\Rightarrow \\quad A = 2, \\qquad Q(d) = 2d^{2.5}$$
 
-The coefficient is $2$, so the statement is True.`,
+The split is exact only because the bench diameter is a power of two, which is why tests are run at convenient diameters. The coefficient is $2$, so the statement is True.`,
       `**B.** → True
 
-This claim is a scale-factor question, independent of the coefficient and of the starting diameter. Doubling multiplies capacity by $2^{2.5}\\approx5.657$, which rounds to the $5.7$ in the claim.
-
-The size of this factor is the practical message of the model: a modest widening of the pipe buys a large gain in throughput, because the exponent exceeds $2$. Expecting a factor of $4$, as for a plain area-based rule, would understate capacity by about $40\\%$.
-
-Form the scale factor:
+A scale factor is free of both the coefficient and the starting diameter, so doubling the bore multiplies capacity by two raised to the exponent:
 
 $$\\frac{Q(2d)}{Q(d)} = 2^{2.5} = 2^{2} \\times 2^{0.5} = 4\\sqrt{2} \\approx 5.657$$
 
-Check against the bench pipe:
+The bench pipe confirms it:
 
 $$Q(4) = 64, \\qquad Q(8) = 2 \\times 8^{2.5} = 2 \\times 181.02 \\approx 362.0, \\qquad \\frac{362.0}{64} \\approx 5.66$$
 
-The factor is about $5.7$, so the statement is True.`,
+A plain area-based rule would predict a factor of $4$ and understate the gain by about $40\\%$, since the exponent here exceeds $2$. The factor is about $5.7$, so the statement is True.`,
       `**C.** → False
 
-This claim inverts the law and overshoots badly. Solving $2d^{2.5}=250$ gives $d^{2.5}=125$ and therefore $d\\approx6.9$ cm, well under $10$ cm.
-
-The overshoot comes from thinking in proportional terms: capacity has to rise nearly fourfold from the bench test, so the pipe "must" be much wider. With exponent $2.5$ the inverse exponent is only $0.4$, so a fourfold capacity gain needs a diameter increase of just $4^{0.4}\\approx1.74$.
-
-Invert the recovered law:
+Inverting an exponent of $2.5$ raises the target to the reciprocal power $0.4$, which compresses the required change rather than magnifying it:
 
 $$2d^{2.5} = 250 \\quad \\Rightarrow \\quad d^{2.5} = 125 \\quad \\Rightarrow \\quad d = 125^{0.4}$$
 
-Evaluate the root:
-
 $$125^{0.4} = e^{0.4 \\times \\ln 125} = e^{0.4 \\times 4.8283} = e^{1.9313} \\approx 6.90$$
 
-Confirm that $10$ cm would overshoot the target:
+Capacity has to rise nearly fourfold from the bench test, which in proportional terms suggests a much wider pipe; with inverse exponent $0.4$ a fourfold gain needs only $4^{0.4}\\approx1.74$ times the diameter. A $10$ cm pipe overshoots the target outright:
 
 $$Q(10) = 2 \\times 10^{2.5} \\approx 632$$
 
-A $6.9$ cm pipe already meets the target, so the statement is False.`,
+A bore of about $6.9$ cm already meets the target, so the statement is False.`,
       `**D.** → False
 
-This claim ignores how units enter a power law. Switching to millimetres multiplies every diameter figure by $10$, so the coefficient must shrink by $10^{2.5}\\approx316$ to keep the same physical capacity; it becomes about $0.00632$.
-
-The exponent is the part that survives a change of units, which is why exponents — and elasticities — are quoted as unit-free descriptions of a relationship. The coefficient always absorbs the rescaling, and the larger the exponent, the more violently it does so.
-
-Rewrite the law with $d_{\\text{mm}} = 10\\,d_{\\text{cm}}$:
+A change of units rescales the input, and a power law absorbs that rescaling entirely in its coefficient:
 
 $$Q = 2 d_{\\text{cm}}^{2.5} = 2\\left(\\frac{d_{\\text{mm}}}{10}\\right)^{2.5} = \\frac{2}{10^{2.5}}\\,d_{\\text{mm}}^{2.5}$$
 
-Evaluate the new coefficient:
-
 $$10^{2.5} \\approx 316.23, \\qquad \\frac{2}{316.23} \\approx 0.00632$$
 
-Check that capacity is unchanged for the bench pipe:
+Physical capacity is untouched, as the bench pipe shows in the new units:
 
 $$0.00632 \\times 40^{2.5} \\approx 0.00632 \\times 10119 \\approx 64$$
 
-The coefficient changes while the exponent does not, so the statement is False.`,
+The exponent survives the switch, which is why exponents and elasticities are quoted as unit-free descriptions, while the coefficient shrinks by a factor of about $316$. The coefficient does change, so the statement is False.`,
       `**E.** → False
 
-This claim would require an exponent of exactly $1$. Dividing the law by $d$ leaves $2d^{1.5}$, which grows with diameter, so capacity per centimetre is far from constant.
-
-Ratios like this one are only constant when the numerator and the divisor carry the same exponent. Here the numerator carries $2.5$, so the ratio keeps an exponent of $1.5$ — still strongly increasing, which is why wider pipes are so much more efficient per centimetre of bore.
-
-Divide the law by the diameter:
+A ratio of a power function to its own input stays constant only when the two exponents match, which means an exponent of exactly $1$ upstairs:
 
 $$\\frac{Q(d)}{d} = \\frac{2d^{2.5}}{d} = 2d^{1.5}$$
 
-Evaluate at two diameters:
+What is left carries exponent $1.5$ and keeps rising:
 
 $$\\frac{Q(4)}{4} = \\frac{64}{4} = 16, \\qquad \\frac{Q(8)}{8} = \\frac{362.0}{8} \\approx 45.3$$
 
-Capacity per centimetre nearly triples between those pipes, so the statement is False.`,
+That is why wider pipes are so much more efficient per centimetre of bore. Capacity per centimetre nearly triples between those two pipes, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 14,
@@ -1964,81 +1656,55 @@ $$\\frac{Q(d)}{d} = 2d^{1.5}, \\qquad 16 \\text{ at } d=4, \\qquad 45.3 \\text{ 
     tactical_explanations: [
       `**A.** → True
 
-This claim is about the composed law. Substituting the radius law into the disc formula squares a square root, so the exponents multiply to $1$ and area is exactly proportional to time: $S(t)=9\\pi t$.
-
-Proportionality is a strong statement, and it survives here only because the two exponents are exact reciprocals of each other. Had the radius grown as $t^{0.6}$, the area would have carried exponent $1.2$ and the proportionality would fail.
-
-Compose the two relationships:
+Substituting the radius law into the disc formula squares a square root, and a power of a power multiplies the exponents:
 
 $$S(t) = \\pi\\left(3t^{0.5}\\right)^{2} = \\pi \\times 9 \\times t^{0.5 \\times 2}$$
 
 $$S(t) = 9\\pi t$$
 
-Check that equal time steps add equal area:
+Equal time steps then add equal area:
 
 $$S(1) = 9\\pi, \\qquad S(2) = 18\\pi, \\qquad S(3) = 27\\pi$$
 
-Area is proportional to elapsed time, so the statement is True.`,
+Proportionality survives only because the two exponents are exact reciprocals; a radius growing as $t^{0.6}$ would leave area with exponent $1.2$ and break it. Area is proportional to elapsed time, so the statement is True.`,
       `**B.** → True
 
-The radius law has to be composed with the disc-area formula before the four-hour level is evaluated. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+The area covered is the disc of the current radius, so the radius law has to be composed with $\\pi r^{2}$ before any level is read off:
 
 $$S(t)=\\pi\\left(3t^{0.5}\\right)^2=9\\pi t$$
 
-The relevant comparison can then be written as
-
 $$S(4)=9\\pi(4)=36\\pi$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The composed area at four hours is $36\\pi$ square kilometres. Therefore the statement is True.`,
+Squaring the radius law squares its coefficient as well, turning the $3$ into a $9$; leaving that step out would understate the area threefold. The four-hour area is $36\\pi$ square kilometres, so the statement is True.`,
       `**C.** → True
 
-This claim applies a scale factor to the composed law. Since $S(t)=9\\pi t$ has exponent $1$, doubling time multiplies area by $2^{1}=2$.
-
-The result looks obvious once the composition is done, but it is genuinely surprising before it: the radius grows ever more slowly, and yet the area keeps up a constant pace. The two effects — a decelerating radius and an area that grows with the square of the radius — cancel exactly.
-
-Apply the scale factor to the composed law:
+The composed law $S(t)=9\\pi t$ carries exponent $1$, so its scale factor is the input multiplier itself:
 
 $$\\frac{S(2t)}{S(t)} = 2^{1} = 2$$
 
-Verify with levels:
-
 $$S(4) = 36\\pi, \\qquad S(8) = 72\\pi$$
 
-Area doubles when time doubles, so the statement is True.`,
+The radius decelerates while area grows with the square of the radius, and those two effects cancel exactly, which is how a slowing frontier still covers ground at a constant pace. Area doubles when time doubles, so the statement is True.`,
       `**D.** → True
 
-A fifty-percent time increase multiplies time by $1.5$, so radius is multiplied by its square root. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+The radius law carries exponent $0.5$, so multiplying time by $1.5$ multiplies the radius by the square root of that factor:
 
 $$\\frac{r(1.5t)}{r(t)}=1.5^{0.5}\\approx1.224745$$
 
-The relevant comparison can then be written as
+A percentage change is the scale factor minus one:
 
 $$(1.224745-1)\\times100\\%\\approx22.5\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The radius increases by about $22.5\\%$. Therefore the statement is True.`,
+Halving the $50\\%$ time increase to $25\\%$ is the linear guess; the square root delivers slightly less. The radius rises by about $22.5\\%$, so the statement is True.`,
       `**E.** → True
 
-The target is an area, so the composed law $S(t)=9\\pi t$ must be inverted for time. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+An area target inverts the composed law rather than the radius law, and with exponent $1$ that inversion is a single division once $\\pi$ cancels from both sides:
 
 $$9\\pi t=100\\pi$$
 
-The relevant comparison can then be written as
-
 $$t=\\frac{100}{9}\\approx11.11$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The target area is reached after about $11.1$ hours. Therefore the statement is True.`,
+Working through the radius instead adds a step, solving $3t^{0.5}=10$, and lands in the same place. The target area arrives after about $11.1$ hours, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 15,
@@ -2100,83 +1766,59 @@ $$S(1) = 9\\pi, \\quad S(2) = 18\\pi, \\quad S(3) = 27\\pi$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the crossing of a square-root schedule and a linear one. The filed invoice gives $a=40$, and solving $40\\sqrt{u}=5u$ puts the crossing at $64$ tickets, where both plans bill $320$.
-
-Dividing by $\\sqrt{u}$ is the move that makes the equation tractable, and it is legitimate because $u>0$. What remains is a condition on $\\sqrt{u}$ alone, so the crossing has to be squared out of it — the reason the answer is $64$ rather than $8$.
-
-Recover Plan A's coefficient from the invoice:
+A crossing of a square-root schedule and a linear one starts from Plan A's coefficient, which the filed invoice supplies:
 
 $$a\\sqrt{36} = 240 \\quad \\Rightarrow \\quad 6a = 240 \\quad \\Rightarrow \\quad a = 40$$
 
-Set the two schedules equal:
+Dividing by $\\sqrt{u}$ is legitimate on the domain $u>0$ and leaves a condition on $\\sqrt{u}$ alone, which then has to be squared out:
 
 $$40\\sqrt{u} = 5u \\quad \\Rightarrow \\quad 40 = 5\\sqrt{u} \\quad \\Rightarrow \\quad \\sqrt{u} = 8 \\quad \\Rightarrow \\quad u = 64$$
 
-Confirm the shared bill, which also sits under Plan A's cap:
+Stopping at $\\sqrt{u}=8$ would report $8$ tickets instead. The shared bill also sits under Plan A's cap:
 
 $$C_A(64) = 40(8) = 320, \\qquad C_B(64) = 5(64) = 320$$
 
 Both plans bill $320$ at $64$ tickets, so the statement is True.`,
       `**B.** → True
 
-This claim covers an interval below the crossing. For $u<64$ the inequality $5u<40\\sqrt{u}$ holds, so the flat per-ticket contract is cheaper on that whole range.
-
-The direction can feel counter-intuitive because Plan A is the one that flattens out at high volume. At low volume it is the *expensive* option: a square-root schedule starts steeply, charging $40$ for the first ticket where Plan B charges $5$. The cap is what eventually rescues Plan A, but only well past the crossing.
-
-Compare the two schedules and divide by $\\sqrt{u}>0$:
+An interval claim is settled by the inequality between the two schedules, and $\\sqrt{u}>0$ permits the same division as before:
 
 $$5u < 40\\sqrt{u} \\quad \\Longleftrightarrow \\quad 5\\sqrt{u} < 40 \\quad \\Longleftrightarrow \\quad u < 64$$
 
-Spot-check inside the interval:
-
 $$C_A(16) = 40(4) = 160, \\qquad C_B(16) = 80$$
 
-Plan B is cheaper at every volume below the crossing, so the statement is True.`,
+Plan A is the contract that flattens out at high volume, which makes it feel like the cheap one, yet a square-root schedule starts steeply and charges $40$ for the first ticket against Plan B's $5$. Below the crossing the flat contract is cheaper, so the statement is True.`,
       `**C.** → True
 
-This claim converts Plan A's monetary cap into a ticket volume. Solving $40\\sqrt{u}=400$ gives $\\sqrt{u}=10$, so the uncapped schedule reaches $400$ at exactly $100$ tickets and the cap binds from there on.
-
-Because the uncapped schedule is increasing, everything above $100$ tickets would bill more than $400$ and is therefore trimmed to the cap. Below $100$ the cap is irrelevant, which is why the crossing computed in part A — at $64$ tickets and $320$ — is unaffected by it.
-
-Set the uncapped schedule equal to the cap:
+A monetary cap becomes a ticket volume by asking where the uncapped schedule reaches it:
 
 $$40\\sqrt{u} = 400 \\quad \\Rightarrow \\quad \\sqrt{u} = 10 \\quad \\Rightarrow \\quad u = 100$$
 
-Describe the billed amount as a two-piece rule:
+Because the uncapped schedule increases, every volume beyond that point would bill more than the cap and is trimmed to it:
 
 $$C_A(u) = \\begin{cases} 40\\sqrt{u}, & u \\le 100 \\\\ 400, & u > 100 \\end{cases}$$
 
-The cap takes over from $100$ tickets, so the statement is True.`,
+Below $100$ tickets the cap is inert, which is why the crossing at $64$ tickets and $320$ is untouched by it. The cap takes over from $100$ tickets, so the statement is True.`,
       `**D.** → False
 
-This claim applies the uncapped formula beyond the point where it is valid. The raw schedule would give $40\\sqrt{144}=480$, but the cap has bound since $100$ tickets, so the actual bill is $400$.
-
-The arithmetic in the claim is correct; the modelling is not. Reading a formula outside its stated domain is the whole trap here, and it is worth noting how large the error already is at $144$ tickets: the claim overstates the bill by $80$, and the gap widens with every extra ticket.
-
-Evaluate the uncapped schedule:
+The uncapped formula describes the bill only up to the cap, so a volume past $100$ tickets has to run through the two-piece rule:
 
 $$40\\sqrt{144} = 40(12) = 480$$
 
-Compare with the cap, which applies because $144 > 100$:
-
 $$C_A(144) = \\min\\{480,\\,400\\} = 400$$
 
-Plan A bills $400$, not $480$, so the statement is False.`,
+The arithmetic behind $480$ is correct while the modelling is not, and the error of $80$ at $144$ tickets widens with every extra ticket. Plan A bills $400$, so the statement is False.`,
       `**E.** → False
 
-This claim describes Plan B, not Plan A. Dividing Plan A's schedule by the ticket count gives $40u^{-0.5}$, a decreasing function, while Plan B's per-ticket cost is the constant $5$.
-
-A constant unit price is exactly what an exponent of $1$ produces. Plan A's exponent is $0.5$, so its per-ticket cost falls throughout — and once the cap binds it falls even faster, since the numerator stops growing altogether.
-
-Divide each schedule by the ticket count:
+A constant unit price is what an exponent of $1$ produces, so dividing each schedule by the ticket count shows which plan has it:
 
 $$\\frac{C_A(u)}{u} = \\frac{40\\sqrt{u}}{u} = 40u^{-0.5}, \\qquad \\frac{C_B(u)}{u} = 5$$
 
-Evaluate Plan A's unit cost at three volumes:
+Plan A's exponent is $0.5$, which leaves a negative exponent after the division, and once the cap binds the numerator stops growing and the decline steepens:
 
 $$\\frac{240}{36} \\approx 6.67, \\qquad \\frac{320}{64} = 5, \\qquad \\frac{400}{144} \\approx 2.78$$
 
-Plan A's per-ticket cost more than halves across that range, so the statement is False.`,
+The flat $5$ per ticket belongs to Plan B. Plan A's per-ticket cost more than halves across that range, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 16,
@@ -2242,93 +1884,65 @@ $$\\frac{C_A(u)}{u} = 40u^{-0.5} \\text{ (falling)}, \\qquad \\frac{C_B(u)}{u} =
     tactical_explanations: [
       `**A.** → True
 
-Three successive doublings apply the $0.8$ survival factor three times, not once. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+Each doubling of cumulative output applies the survival factor $0.8$ once, so three successive doublings apply it three times over:
 
 $$c(8)=1000(0.8)^3=1000(0.512)=512$$
 
-The relevant comparison can then be written as
+A cumulative cut is measured against the first-unit cost:
 
 $$\\frac{1000-512}{1000}=0.488=48.8\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The modelled cost is $512$, which is a cumulative cut of $48.8\\%$. Therefore the statement is True.`,
+Adding three $20\\%$ cuts into a $60\\%$ reduction would treat the factors as combining additively rather than multiplicatively. The modelled cost is $512$, a cut of $48.8\\%$, so the statement is True.`,
       `**B.** → False
 
-This claim mistakes the learning multiplier for the exponent. Solving $2^{-b}=0.8$ gives $b\\approx0.3219$, so the exponent is about $-0.322$, not $-0.8$.
-
-The two numbers describe different things: $0.8$ is what the cost is multiplied by when output doubles, while the exponent governs every other scale factor. An exponent of $-0.8$ would mean a doubling multiplied cost by $2^{-0.8}\\approx0.574$ — a far steeper curve than the one observed.
-
-Take logarithms of the doubling rule:
+The learning multiplier and the exponent are different objects: $0.8$ is what cost is multiplied by at a doubling, while the exponent governs every other scale factor. Recovering it takes logarithms:
 
 $$2^{-b} = 0.8 \\quad \\Rightarrow \\quad -b\\ln 2 = \\ln 0.8$$
-
-Solve for the exponent:
 
 $$b = \\frac{-\\ln 0.8}{\\ln 2} = \\frac{0.2231}{0.6931} \\approx 0.3219$$
 
 $$c(N) = 1000\\,N^{-0.3219}$$
 
-The exponent is about $-0.322$, so the statement is False.`,
+An exponent of $-0.8$ would mean a doubling multiplied cost by $2^{-0.8}\\approx0.574$, a far steeper curve than the one recorded. The exponent is about $-0.322$, so the statement is False.`,
       `**C.** → False
 
-This claim lands near, but not on, the true value. Eight units is three doublings from the first, so the cost is $1000 \\times 0.8^{3} = 512$, twelve above the claimed figure.
-
-Working through doublings is the reliable route here because $8=2^{3}$, so no logarithms are needed. The claim's $500$ looks like a rounded half of the first-unit cost, and rounding a learning curve to "about half after eight units" is exactly the kind of shortcut that misstates a floor calculation later.
-
-Count the doublings from the first unit:
+Because $8=2^{3}$, the eighth unit is reached by counting doublings rather than by taking logarithms:
 
 $$1 \\to 2 \\to 4 \\to 8 \\quad \\text{is three doublings}$$
 
-Apply the multiplier three times:
-
 $$c(8) = 1000 \\times 0.8^{3} = 1000 \\times 0.512 = 512$$
 
-Confirm with the exponent form:
+The exponent form agrees:
 
 $$1000 \\times 8^{-0.3219} = 1000 \\times e^{-0.3219 \\times 2.0794} \\approx 512$$
 
-The unit cost is $512$, not $500$, so the statement is False.`,
+The claimed $500$ is a rounded half of the first-unit cost, and rounding a learning curve that way distorts the floor calculation later. The unit cost is $512$, so the statement is False.`,
       `**D.** → False
 
-This claim places the floor far too early. Solving $1000N^{-0.3219}=400$ gives about $17.2$ units, so the curve stays above the floor through the seventeenth unit.
-
-The gap between $12$ and $17$ matters because the curve is flattening: between the eighth unit and the sixteenth the cost falls only from $512$ to about $410$, so a rough guess made by extrapolating the early, steep part of the curve arrives at the floor too soon.
-
-Set the curve equal to the floor:
+The materials floor binds where the curve first reaches $400$, which calls for an inversion of the calibrated learning curve:
 
 $$1000\\,N^{-0.3219} = 400 \\quad \\Rightarrow \\quad N^{0.3219} = 2.5$$
 
-Solve with logarithms:
-
 $$N = 2.5^{1/0.3219} = e^{0.9163/0.3219} = e^{2.8465} \\approx 17.2$$
 
-Bracket the answer with two doublings:
+Two doublings bracket that figure:
 
 $$c(16) = 1000 \\times 0.8^{4} = 409.6 > 400, \\qquad c(32) = 327.7 < 400$$
 
-The floor binds from about $17$ units, not $12$, so the statement is False.`,
+The curve is flattening, falling only from $512$ to about $410$ between the eighth and sixteenth units, so extrapolating its early steep part reaches the floor too soon. The floor binds from about $17$ units, so the statement is False.`,
       `**E.** → False
 
-This claim compounds the learning rule incorrectly. Quadrupling is two doublings, so the cost is multiplied by $0.8^{2}=0.64$ — a cut of $36\\%$, not $50\\%$.
-
-Halving would require a learning multiplier of about $0.707$ per doubling, since $0.707^{2}=0.5$. The claim implicitly adds the two $20\\%$ cuts into a $40\\%$ cut and then rounds it up; percentage reductions compound multiplicatively, so two $20\\%$ cuts leave $64\\%$, not $60\\%$.
-
-Express quadrupling as two doublings:
+Quadrupling cumulative output is two doublings, so the survival factor applies twice:
 
 $$\\frac{c(4N)}{c(N)} = \\left(0.8\\right)^{2} = 0.64$$
 
-Convert to a percentage cut:
-
 $$1 - 0.64 = 0.36 = 36\\%$$
 
-Check on concrete volumes:
+Percentage reductions compound multiplicatively, so two $20\\%$ cuts leave $64\\%$ of the cost rather than $60\\%$, and halving would need a multiplier near $0.707$ at each doubling. Concrete volumes confirm the factor:
 
 $$c(2) = 800, \\qquad c(8) = 512, \\qquad \\frac{512}{800} = 0.64$$
 
-Quadrupling removes about a third of the cost, not half, so the statement is False.`,
+Quadrupling removes about a third of the cost rather than half, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 17,
@@ -2390,91 +2004,65 @@ $$N^{0.3219} = 2.5 \\;\\Rightarrow\\; N = 2.5^{1/0.3219} \\approx 17.2$$
     tactical_explanations: [
       `**A.** → True
 
-This claim locates the break-even spend. Setting $90\\sqrt{x}=6x$ and dividing by $\\sqrt{x}$ gives $\\sqrt{x}=15$, so revenue and fee coincide at a spend of $225$, both equal to $1350$.
-
-Dividing by $\\sqrt{x}$ discards the root at $x=0$, which is legitimate on the stated domain and also uninteresting: a campaign with no spend trivially breaks even. The economically meaningful break-even is the second one.
-
-Set revenue equal to the fee:
+Break-even is where revenue and fee coincide, and dividing by $\\sqrt{x}$ turns that equation into a condition on the root:
 
 $$90\\sqrt{x} = 6x \\quad \\Rightarrow \\quad 90 = 6\\sqrt{x} \\quad \\Rightarrow \\quad \\sqrt{x} = 15$$
 
 $$x = 15^{2} = 225$$
 
-Check both sides at that spend:
+The division discards the root at $x=0$, which the domain excludes and which would only say that a campaign with no spend trivially breaks even. Both sides agree at the surviving root:
 
 $$R(225) = 90(15) = 1350, \\qquad F(225) = 6(225) = 1350$$
 
 The net gain is zero at a spend of $225$, so the statement is True.`,
       `**B.** → False
 
-This claim gets the sign backwards on the far side of break-even. Above $225$ the fee, which grows proportionally, outruns revenue, which grows only as a square root, so the net gain is negative there.
-
-The comparison is easiest through the same division used in part A: the net gain is positive exactly when $90>6\\sqrt{x}$, that is when $x<225$. Break-even marks the end of the profitable range, not the beginning of it — the opposite of what the claim assumes.
-
-Write the net gain and factor it:
+The sign of the net gain is read off a factorisation in which one factor is positive throughout:
 
 $$R(x) - F(x) = 90\\sqrt{x} - 6x = 6\\sqrt{x}\\left(15 - \\sqrt{x}\\right)$$
 
-The first factor is positive, so the sign depends on the bracket:
-
 $$15 - \\sqrt{x} > 0 \\quad \\Longleftrightarrow \\quad x < 225$$
 
-Test a spend beyond break-even:
+The fee grows proportionally while revenue grows only as a square root, so break-even closes the profitable range instead of opening it:
 
 $$R(400) - F(400) = 90(20) - 2400 = 1800 - 2400 = -600$$
 
-The net gain is negative above $225$, so the statement is False.`,
+Above a spend of $225$ the net gain is negative, so the statement is False.`,
       `**C.** → False
 
-This claim applies a linear rule to a square-root law. Doubling the spend multiplies revenue by $2^{0.5}\\approx1.414$, so revenue rises by about $41\\%$, while the fee — which really is proportional — doubles exactly.
-
-That mismatch is the entire economics of the case: the fee scales with exponent $1$ and revenue with exponent $0.5$, so any large enough campaign is eventually loss-making regardless of the constants involved.
-
-Form the revenue scale factor:
+Doubling the spend multiplies revenue by two raised to the revenue exponent, which is $0.5$:
 
 $$\\frac{R(2x)}{R(x)} = 2^{0.5} \\approx 1.4142$$
 
-Compare with the fee's scale factor:
+The fee is the schedule that really is proportional:
 
 $$\\frac{F(2x)}{F(x)} = 2$$
 
-Check at a concrete spend:
-
 $$R(100) = 900, \\qquad R(200) \\approx 1272.8$$
 
-Revenue grows by about $41\\%$, not $100\\%$, so the statement is False.`,
+That mismatch, exponent $1$ on fees against $0.5$ on revenue, is the whole economics of the case and makes any large enough campaign loss-making. Revenue grows by about $41\\%$ rather than doubling, so the statement is False.`,
       `**D.** → True
 
-This claim evaluates the net gain inside the profitable range. Revenue is $900$, the fee is $600$, and the difference is exactly $300$.
-
-The spend of $100$ sits well below break-even, so a positive result is expected; what the arithmetic adds is the size. It is worth noting that this is close to the best the campaign can do — at a spend of $225$ the net gain has fallen back to zero, so the profitable window is narrow.
-
-Evaluate both sides at the stated spend:
+Net gain is the difference between the two schedules at the same spend, so both sides are evaluated first:
 
 $$R(100) = 90\\sqrt{100} = 90(10) = 900$$
 
 $$F(100) = 6(100) = 600$$
 
-Take the difference:
-
 $$900 - 600 = 300$$
 
-The net gain is $300$, so the statement is True.`,
+A spend of $100$ sits well inside the profitable range, and by $225$ the net gain has already fallen back to zero, so the window is narrow. The net gain is $300$, so the statement is True.`,
       `**E.** → False
 
-This claim asks about the average return on spend. Dividing revenue by spend gives $90x^{-0.5}$, a power function with a negative exponent, so the return per euro spent falls as the campaign grows.
-
-This is the mirror image of part C. Revenue keeps increasing in absolute terms, but each additional euro of spend brings back less than the one before, and the falling average eventually drops below the constant fee rate of $6$ — precisely at the break-even spend.
-
-Divide revenue by spend:
+Revenue per unit of spend is revenue divided by spend, which lowers the exponent by one:
 
 $$\\frac{R(x)}{x} = \\frac{90x^{0.5}}{x} = 90x^{-0.5}$$
 
-Evaluate at three spends and compare with the fee rate:
+The exponent is negative, so the average return declines even while total revenue keeps rising:
 
 $$\\frac{R(100)}{100} = 9, \\qquad \\frac{R(225)}{225} = 6, \\qquad \\frac{R(400)}{400} = 4.5$$
 
-The average return falls from $9$ to $4.5$, so the statement is False.`,
+The average crosses the constant fee rate of $6$ exactly at the break-even spend, which is what ends the profitable range. The return per euro falls from $9$ to $4.5$, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 18,
@@ -2538,87 +2126,63 @@ $$\\frac{R(x)}{x} = 90x^{-0.5}, \\qquad 9 \\text{ at } x=100, \\quad 6 \\text{ a
     tactical_explanations: [
       `**A.** → True
 
-This claim calibrates the first stage only. The labour record gives $A\\sqrt{100}=40$, so $A=4$ and the material law is $m(L)=4L^{0.5}$.
-
-Keeping the two records apart is the discipline this task rewards: the labour record speaks only about the first stage, and the material record only about the second. Mixing them — for instance dividing $54$ by $100$ — would produce a coefficient that belongs to neither stage.
-
-Use the labour record:
+Each record speaks about one stage only, and the labour record belongs to the material stage:
 
 $$A\\sqrt{100} = 40 \\quad \\Rightarrow \\quad 10A = 40 \\quad \\Rightarrow \\quad A = 4$$
 
 $$m(L) = 4L^{0.5}$$
 
-Sanity-check a second labour level:
+A second labour level checks the shape:
 
 $$m(400) = 4(20) = 80 \\text{ tonnes}$$
 
-The first stage is $4L^{0.5}$, so the statement is True.`,
+Mixing the records, dividing $54$ by $100$ for instance, produces a coefficient belonging to neither stage. The first stage is $4L^{0.5}$, so the statement is True.`,
       `**B.** → True
 
-This claim asks for the composed law. The material record gives $B=2$, and substituting the first stage into the second multiplies the exponents to $0.75$ and the constants to $16$.
-
-The step that carries the risk is raising the whole first stage to the power $1.5$, coefficient included: $\\left(4L^{0.5}\\right)^{1.5}$ contributes $4^{1.5}=8$ as well as $L^{0.75}$. Forgetting to raise the coefficient would leave $2 \\times 4 = 8$ instead of $16$ and halve every prediction.
-
-Calibrate the second stage:
+Composing the two stages substitutes the whole first stage, coefficient included, into the second. The material record calibrates that second stage:
 
 $$B(9)^{1.5} = 54 \\quad \\Rightarrow \\quad 27B = 54 \\quad \\Rightarrow \\quad B = 2$$
-
-Compose the two stages:
 
 $$g(L) = 2\\left(4L^{0.5}\\right)^{1.5} = 2 \\times 4^{1.5} \\times L^{0.5 \\times 1.5}$$
 
 $$g(L) = 2 \\times 8 \\times L^{0.75} = 16L^{0.75}$$
 
-The composed law is $16L^{0.75}$, so the statement is True.`,
+Raising only the variable and leaving the coefficient behind would give $2 \\times 4 = 8$ and halve every prediction, since $4^{1.5}=8$. The composed law is $16L^{0.75}$, so the statement is True.`,
       `**C.** → True
 
-This claim is a scale-factor question on the composed law. Its exponent is $0.75$, so doubling labour multiplies finished output by $2^{0.75}\\approx1.682$, a rise of about $68\\%$.
-
-The composed exponent is what matters, not either stage's exponent on its own: material rises by $41\\%$ and the conversion stage would amplify by $1.5$ in the exponent, and only after multiplying $0.5 \\times 1.5$ does the $0.75$ appear. Checking with the stage-by-stage route is a good habit — $1.414^{1.5}\\approx1.682$ as well.
-
-Form the scale factor for the composed law:
+A scale factor on a composed law uses the composed exponent, here the product $0.5 \\times 1.5 = 0.75$:
 
 $$\\frac{g(2L)}{g(L)} = 2^{0.75} = 2^{1/2} \\times 2^{1/4} \\approx 1.4142 \\times 1.1892 \\approx 1.6818$$
 
-Verify through the stages:
+Neither stage's exponent settles the question alone, and the stage-by-stage route agrees:
 
 $$m \\text{ rises by } 2^{0.5} \\approx 1.414, \\qquad 1.414^{1.5} \\approx 1.682$$
 
 Finished output rises by about $68\\%$, so the statement is True.`,
       `**D.** → True
 
-This claim inverts the composed law. Solving $16L^{0.75}=432$ gives $L^{0.75}=27$, and raising to the power $4/3$ returns exactly $81$ hours.
-
-The numbers are chosen so the inverse is exact: $27=3^{3}$, so $27^{4/3}=3^{4}=81$. Inverting a $0.75$ exponent always means raising to $4/3$, which magnifies the target ratio — a point that matters because the required labour grows much faster than the output target.
-
-Set the composed law equal to the target:
+Inverting a $0.75$ exponent raises the target to the power $4/3$, which magnifies the required input rather than shrinking it:
 
 $$16L^{0.75} = 432 \\quad \\Rightarrow \\quad L^{0.75} = 27$$
 
-Raise both sides to the reciprocal power:
-
 $$L = 27^{4/3} = \\left(3^{3}\\right)^{4/3} = 3^{4} = 81$$
 
-Confirm by substitution:
+The figures are chosen so the root is exact, since $27=3^{3}$, and substitution confirms it:
 
 $$g(81) = 16 \\times 81^{0.75} = 16 \\times 27 = 432$$
 
-The target needs $81$ labour hours, so the statement is True.`,
+Labour has to grow faster than the output target, and the requirement is exactly $81$ hours, so the statement is True.`,
       `**E.** → True
 
-This claim concerns the average product of labour. Dividing the composed law by $L$ gives $16L^{-0.25}$, a power function with a negative exponent, so output per hour declines as the plant runs longer shifts.
-
-The composed exponent $0.75$ is below $1$, which is exactly the condition for a falling average: total output keeps rising, but not fast enough to keep up with the hours being added. Had the composition produced an exponent above $1$, the same division would have left a positive exponent and a rising average.
-
-Divide the composed law by labour:
+The average product of labour is the composed law divided by labour, which lowers the exponent by one:
 
 $$\\frac{g(L)}{L} = \\frac{16L^{0.75}}{L} = 16L^{-0.25}$$
 
-Evaluate at two labour levels:
+A composed exponent below $1$ is the condition for a falling average: total output rises, but not fast enough to keep pace with the hours added.
 
 $$\\frac{g(16)}{16} = \\frac{16 \\times 8}{16} = 8, \\qquad \\frac{g(81)}{81} = \\frac{432}{81} \\approx 5.33$$
 
-Output per hour falls from $8$ to about $5.33$, so the statement is True.`,
+An exponent above $1$ would have left a rising average instead. Output per hour falls from $8$ to about $5.33$, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 19,
@@ -2682,91 +2246,65 @@ $$\\frac{g(L)}{L} = 16L^{-0.25}, \\qquad 8 \\text{ at } L=16, \\qquad 5.33 \\tex
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the direction of revenue. Multiplying price by demand leaves $R(p)=Ap^{-0.5}$, whose exponent is negative, so revenue declines as the price climbs.
-
-The sign of the revenue exponent is decided by whether demand elasticity is below $-1$. Here it is $-1.5$, so the loss of copies outweighs the higher price per copy; if elasticity had been between $-1$ and $0$, revenue would have risen instead.
-
-Recover the demand coefficient:
+Revenue on an isoelastic demand curve is itself a power function, so direction is decided by its exponent. The observation calibrates demand first:
 
 $$A(4)^{-1.5} = 250 \\quad \\Rightarrow \\quad \\frac{A}{8} = 250 \\quad \\Rightarrow \\quad A = 2000$$
 
-Build revenue by adding $1$ to the exponent:
-
 $$R(p) = p \\times 2000p^{-1.5} = 2000p^{-0.5}$$
 
-Compare two prices:
+Whether revenue rises or falls turns on whether elasticity lies below $-1$; at $-1.5$ the loss of copies outweighs the higher price per copy:
 
 $$R(4) = \\frac{2000}{2} = 1000, \\qquad R(9) = \\frac{2000}{3} \\approx 666.7$$
 
-Revenue falls as price rises, so the statement is True.`,
+Revenue falls as the price rises, so the statement is True.`,
       `**B.** → True
 
-This claim describes the structure of revenue. Multiplying a power function by $p$ raises its exponent by exactly $1$, so demand's $-1.5$ becomes revenue's $-0.5$.
-
-This is a general rule worth carrying: revenue built on an isoelastic demand curve is itself isoelastic, with exponent one greater. It explains at a glance why elasticity $-1$ is the knife edge — the revenue exponent is then $0$, a constant.
-
-Multiply demand by price:
+Multiplying a power function by $p$ raises its exponent by exactly $1$, so revenue built on an isoelastic demand curve is isoelastic too:
 
 $$R(p) = p \\cdot 2000p^{-1.5} = 2000\\,p^{-1.5+1} = 2000p^{-0.5}$$
 
-Check that the scale factor behaves like a power function:
+The scale factor behaves as a power function's should:
 
 $$\\frac{R(4p)}{R(p)} = 4^{-0.5} = \\frac{1}{2}$$
 
-Revenue is a power function with exponent $-0.5$, so the statement is True.`,
+The same rule explains why elasticity $-1$ is the knife edge, since the revenue exponent would then be $0$ and revenue constant. Revenue carries exponent $-0.5$, so the statement is True.`,
       `**C.** → True
 
-The observation first calibrates demand, and multiplying by price then produces the revenue law used at the new price. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A revenue level at a new price needs the demand coefficient first, and the observation at a price of $4$ supplies it:
 
 $$250=A(4)^{-1.5}=\\frac{A}{8} \\quad\\Rightarrow\\quad A=2000$$
 
-The relevant comparison can then be written as
+Multiplying by price raises the exponent to $-0.5$, and the new price is a perfect square, so the root is exact:
 
 $$R(25)=2000(25)^{-0.5}=\\frac{2000}{5}=400$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Revenue at the different price is exactly $400$. Therefore the statement is True.`,
+Using the demand exponent $-1.5$ in place of the revenue exponent would give a very different figure. Monthly revenue at that price is $400$, so the statement is True.`,
       `**D.** → False
 
-This claim gets the shape of the answer right and the threshold wrong. Revenue covers the $400$ charge whenever $2000p^{-0.5}\\ge400$, which holds for prices below $25$, not $16$.
-
-The number $16$ is what appears if the inversion is done with the demand exponent instead of the revenue exponent, or if $2000/400=5$ is squared incorrectly. Since inverting a $-0.5$ exponent means squaring the ratio, the correct threshold is $5^{2}=25$.
-
-Set revenue equal to the fixed charge:
+Covering the fixed charge is the condition $2000p^{-0.5}\\ge400$, and inverting a $-0.5$ exponent squares the ratio of the two sides:
 
 $$2000p^{-0.5} = 400 \\quad \\Rightarrow \\quad p^{0.5} = \\frac{2000}{400} = 5$$
 
-Square both sides:
-
 $$p = 25$$
 
-Check either side of the threshold:
+Prices either side of the threshold confirm the direction:
 
 $$R(16) = \\frac{2000}{4} = 500 > 400, \\qquad R(36) = \\frac{2000}{6} \\approx 333 < 400$$
 
-Prices up to $25$ still cover the charge, so the statement is False.`,
+The figure $16$ is what appears when the demand exponent is inverted instead of the revenue exponent. Prices up to $25$ still cover the charge, so the statement is False.`,
       `**E.** → False
 
-This claim overstates the effect of a price rise. Revenue's exponent is $-0.5$, so doubling the price multiplies revenue by $2^{-0.5}\\approx0.707$ — a fall of about $29\\%$, not $50\\%$.
-
-Halving revenue would need the price to *quadruple*, since $4^{-0.5}=0.5$. Confusing the two is the same error as reading demand's exponent, $-1.5$, into the revenue law; each stage has its own exponent and its own scale factor.
-
-Apply the revenue scale factor:
+Revenue carries exponent $-0.5$, so doubling the price multiplies revenue by the reciprocal square root of two:
 
 $$\\frac{R(2p)}{R(p)} = 2^{-0.5} \\approx 0.7071$$
 
-Find what really halves revenue:
+Halving revenue takes a quadrupling of the price:
 
 $$k^{-0.5} = 0.5 \\quad \\Rightarrow \\quad k = 4$$
 
-Check with levels:
-
 $$R(4) = 1000, \\qquad R(8) = \\frac{2000}{2.828} \\approx 707, \\qquad R(16) = 500$$
 
-Doubling the price costs about $29\\%$ of revenue, so the statement is False.`,
+Reading demand's exponent $-1.5$ into the revenue law is the same confusion, since each stage carries its own exponent and its own scale factor. Doubling the price costs about $29\\%$ of revenue, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 20,
@@ -2830,85 +2368,61 @@ $$2^{-0.5} \\approx 0.707 \\;(-29\\%), \\qquad 4^{-0.5} = 0.5$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the scale factor, which the log never states. It has to be rebuilt from the recorded gain of $30$ items between two shift lengths, and that reconstruction returns exactly $30$.
-
-A common mistake is to read $30$ as an output or as an hourly rate and divide it by one of the shift lengths, giving $30/9$ or $30/4$. The log reports a *difference* between two shifts, so the coefficient multiplies the difference of the two shape factors, not a single one.
-
-Both shift lengths are perfect squares, so the shape factors are whole numbers:
+The shift log records a gain in the item count between two shift lengths rather than an output level, so the coefficient has to be rebuilt from a difference. Both shift lengths are perfect squares, so the shape factors are whole numbers:
 
 $$9^{0.5} = 3, \\qquad 4^{0.5} = 2$$
 
-The recorded gain therefore fixes the coefficient:
+The recorded gain multiplies the coefficient by the difference of those factors, which here happens to be $1$:
 
 $$N(9) - N(4) = A(3 - 2) = A = 30$$
 
-The difference of the shape factors happens to be $1$, which is why the recorded gain and the coefficient coincide here. Check the law against the log:
+Reading $30$ as an output or an hourly rate and dividing by a shift length would give $30/9$ or $30/4$ instead. The recovered law reproduces the log:
 
 $$N(h) = 30\\sqrt{h}, \\qquad N(4) = 60, \\qquad N(9) = 90$$
 
 The two shifts differ by $30$ items as recorded, so the statement is True.`,
       `**B.** → False
 
-This claim evaluates the law at the longer logged shift. With $A=30$ the nine-hour shift packs $90$ items, not $135$.
-
-The figure $135$ is what linear scaling produces: the four-hour shift packs $60$ items, and stretching that in the ratio $9/4$ gives $135$. Output is not proportional to shift length here. The correct scale factor is the *square root* of the length ratio, because the exponent is $0.5$.
-
-Apply the scale factor to the four-hour shift:
+Moving between two shift lengths multiplies output by the square root of the length ratio, since the exponent is $0.5$:
 
 $$\\frac{N(9)}{N(4)} = \\left(\\frac{9}{4}\\right)^{0.5} = \\frac{3}{2}$$
 
 $$N(9) = \\frac{3}{2}\\cdot 60 = 90$$
 
-Evaluate the law directly as a check:
+Stretching the four-hour count of $60$ by the ratio $9/4$ itself produces the claimed $135$, which is the linear answer. Evaluating the law directly agrees with the ratio route:
 
 $$N(9) = 30\\sqrt{9} = 30 \\cdot 3 = 90$$
 
 The nine-hour shift packs $90$ items, so the statement is False.`,
       `**C.** → False
 
-This claim applies a scale factor, so only the exponent matters. With exponent $0.5$, doubling the shift length multiplies output by $\\sqrt{2}\\approx 1.41$, not by $2$.
-
-The reasoning behind the claim treats packing as a steady flow, where twice the time gives twice the work. The model says otherwise: the exponent below $1$ encodes fatigue and setup effects, so each extra hour adds less than the one before it.
-
-Take the ratio at a general shift length; the coefficient cancels:
+A scale factor depends only on the exponent, and the coefficient cancels out of the ratio:
 
 $$\\frac{N(2h)}{N(h)} = \\frac{A(2h)^{0.5}}{Ah^{0.5}} = 2^{0.5} \\approx 1.414$$
 
-Check on the logged four-hour shift:
-
 $$N(4) = 60, \\qquad N(8) = 30\\sqrt{8} \\approx 84.9$$
 
-Eight hours pack about $85$ items rather than $120$, so the statement is False.`,
+Twice the time gives twice the work only for a steady flow; an exponent below $1$ encodes fatigue and setup effects, so each extra hour adds less than the one before. Eight hours pack about $85$ items rather than $120$, so the statement is False.`,
       `**D.** → False
 
-This claim tests the order against a shift-length limit, so the law has to be inverted. A $20$-hour shift packs about $134$ items, which leaves the order short; filling $150$ items needs $25$ hours.
-
-A common mistake is to extrapolate from the logged shifts: nine hours gave $90$ items, so twenty hours "should" comfortably clear $150$. Under the square-root law, more than doubling the shift adds only about $50\\%$ more output, and that is not enough.
-
-Evaluate the law at the limit:
+Testing an order against a shift-length limit means evaluating the law at that limit and inverting it at the order size:
 
 $$N(20) = 30\\sqrt{20} \\approx 30 \\cdot 4.472 \\approx 134.2$$
 
-Invert the law at the order size to find what the order actually needs:
-
 $$30\\sqrt{h} = 150 \\quad \\Rightarrow \\quad \\sqrt{h} = 5 \\quad \\Rightarrow \\quad h = 25$$
 
-The order requires a $25$-hour shift, five hours more than the limit allows, so the statement is False.`,
+Extrapolating from the logged shifts, where nine hours gave $90$ items, makes twenty hours look comfortable; under a square-root law more than doubling the shift adds only about $50\\%$ more output. The order needs $25$ hours, five more than the limit allows, so the statement is False.`,
       `**E.** → False
 
-This claim is about the average product $N(h)/h$, not about total output. Dividing the law by $h$ leaves a negative exponent, so the hourly rate falls as the shift lengthens.
-
-The confusion comes from watching the total: output does keep rising with every extra hour, and it is easy to slide from "more items overall" to "more items per hour". Those are different quantities, and with an exponent below $1$ they move in opposite directions.
-
-Form the average product by subtracting exponents:
+Items per hour is the average product, formed by dividing the law by the shift length and subtracting exponents:
 
 $$\\frac{N(h)}{h} = \\frac{30h^{0.5}}{h} = 30h^{-0.5}$$
 
-The exponent $-0.5$ is negative, so the rate decays. Compare the logged shifts and the order-sized one:
+The exponent is negative, so the hourly rate decays even while the total keeps climbing:
 
 $$\\frac{N(4)}{4} = 15, \\qquad \\frac{N(9)}{9} = 10, \\qquad \\frac{N(25)}{25} = 6$$
 
-The hourly rate falls from $15$ to $6$ items, so the statement is False.`,
+More items overall and more items per hour are different claims, and with an exponent below $1$ they point in opposite directions. The hourly rate falls from $15$ to $6$ items, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 21,
@@ -2972,85 +2486,65 @@ $$\\frac{N(h)}{h} = 30h^{-0.5}: \\quad 15 \\text{ at } h=4, \\quad 10 \\text{ at
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for both constants, and two runs are exactly what is needed: their ratio carries the exponent, and either run then carries the level. The two facts give $r=2$ and $A=0.4$.
-
-A common mistake is to work with the *difference* of the runs, $640-160=480$ N over $20$ m/s, and read off a slope of $24$. Differences describe a straight line; a power law is pinned down by ratios, because only in a ratio does the coefficient cancel.
-
-Take the ratio of the two runs and note that the speeds also stand in a fixed ratio:
+Two runs are exactly what a two-constant law needs: their ratio carries the exponent, because only in a ratio does the coefficient cancel.
 
 $$\\frac{F(40)}{F(20)} = \\frac{A(40)^{r}}{A(20)^{r}} = 2^{r} = \\frac{640}{160} = 4 \\quad \\Rightarrow \\quad r = 2$$
 
-Substitute the exponent back into either run to fix the coefficient:
+Either run then fixes the level:
 
 $$A(20)^{2} = 160 \\quad \\Rightarrow \\quad 400A = 160 \\quad \\Rightarrow \\quad A = 0.4$$
 
-Verify against the run not used for the level:
+Working with the difference of the runs, $480$ N over $20$ m/s, would describe a straight line rather than a power law. The run not used for the level verifies the result:
 
 $$F(40) = 0.4(1600) = 640 \\;\\checkmark$$
 
 Both runs sit on $F(v)=0.4v^{2}$, so the statement is True.`,
       `**B.** → False
 
-This claim asks where drag reaches the rating, so the law has to be inverted. Solving $0.4v^{2}=1000$ puts the rating at exactly $50$ m/s, below the speed in the claim.
-
-The figure in the claim is what linear extrapolation from the faster run produces: $640$ N at $40$ m/s suggests $40 \\cdot 1000/640 = 62.5$ m/s, and any speed of that kind clears $55$. Because drag grows with the square of the speed, the remaining $360$ N of headroom is consumed by only $10$ m/s.
-
-Invert the law at the rating:
+The mounting rating is a force, so the speed behind it comes from inverting the drag law:
 
 $$0.4v^{2} = 1000 \\quad \\Rightarrow \\quad v^{2} = 2500 \\quad \\Rightarrow \\quad v = 50$$
 
-Confirm with the scale factor from the logged run:
+The scale factor from the faster logged run agrees:
 
 $$F(50) = F(40)\\left(\\frac{50}{40}\\right)^{2} = 640 \\cdot 1.5625 = 1000 \\;\\checkmark$$
 
-The rating is reached at $50$ m/s, not above $55$, so the statement is False.`,
+Linear extrapolation from that run suggests $40 \\cdot 1000/640 = 62.5$ m/s and clears $55$ comfortably; because drag grows with the square of speed, the remaining $360$ N of headroom is consumed by only $10$ m/s. The rating is reached at $50$ m/s, so the statement is False.`,
       `**C.** → True
 
-This claim is about the product $P=F\\cdot v$. Multiplying a power function by $v$ adds $1$ to its exponent, so absorbed power follows a cubic law in the airspeed.
-
-The instinct is to expect power to inherit the drag exponent, since the two quantities are measured on the same runs and rise together. Multiplying by the speed is itself a power of $v$, and the exponent rules add rather than leave the exponent alone.
-
-Multiply the drag law by the speed and add exponents:
+Absorbed power is drag times speed, and multiplying by $v$ is itself a power of $v$, so the exponents add:
 
 $$P(v) = F(v)\\cdot v = 0.4v^{2}\\cdot v^{1} = 0.4v^{3}$$
 
-Check the shape on the logged runs:
+The logged runs display the resulting shape:
 
 $$P(20) = 0.4(8000) = 3200 \\text{ W}, \\qquad P(40) = 0.4(64000) = 25600 \\text{ W}$$
 
 $$\\frac{P(40)}{P(20)} = 8 = 2^{3}$$
 
-Absorbed power is $0.4v^{3}$, a power function with exponent $3$, so the statement is True.`,
+Power does not inherit the drag exponent, even though both quantities come off the same runs. Absorbed power is $0.4v^{3}$, a power function with exponent $3$, so the statement is True.`,
       `**D.** → False
 
-This claim applies a scale factor to the power law, where the exponent is $3$. Doubling the airspeed multiplies absorbed power by $2^{3}=8$, not by $2$.
-
-Two separate slips lead to the claim: reading power as proportional to speed, and — for anyone who noticed the squared drag — settling for a factor of $4$. Neither exponent applies. Power carries drag's exponent plus one, which is why fan and engine sizing punishes speed so heavily.
-
-Take the ratio of the power law at doubled speed:
+The scale factor of the power law uses its own exponent, which is $3$:
 
 $$\\frac{P(2v)}{P(v)} = \\frac{0.4(2v)^{3}}{0.4v^{3}} = 2^{3} = 8$$
 
-Read the same factor off the logged runs:
+The logged runs give the same factor:
 
 $$\\frac{P(40)}{P(20)} = \\frac{25600}{3200} = 8$$
 
-Absorbed power multiplies by $8$, not by $2$, so the statement is False.`,
+Neither proportionality nor drag's squared exponent applies, since power carries drag's exponent plus one, which is why speed punishes fan and engine sizing so heavily. Absorbed power multiplies by $8$ rather than $2$, so the statement is False.`,
       `**E.** → False
 
-This claim evaluates the power law at the mounting's limiting speed. Drag there is exactly $1000$ N, and multiplying by $50$ m/s gives $50$ kW, twice the figure claimed.
-
-The stated value is what appears if the factor $\\tfrac{1}{2}$ from the kinetic-energy formula is carried into a power calculation where it does not belong. Absorbed power is force times speed, with no halving: the half-factor belongs to the energy stored in moving air, not to the rate at which the rig does work against drag.
-
-Evaluate the power law directly:
+Absorbed power at a given speed is force times speed, with no halving anywhere in the definition:
 
 $$P(50) = 0.4(50)^{3} = 0.4 \\cdot 125000 = 50000 \\text{ W} = 50 \\text{ kW}$$
 
-Cross-check through the drag at that speed:
+Routing through the drag at that speed gives the same figure:
 
 $$P(50) = F(50)\\cdot 50 = 1000 \\cdot 50 = 50000 \\text{ W}$$
 
-The rig absorbs $50$ kW rather than $25$ kW, so the statement is False.`,
+The claimed $25$ kW is what carrying the factor $\\tfrac{1}{2}$ from the kinetic-energy formula would produce, and that half belongs to the energy stored in moving air rather than to the rate of work against drag. The rig absorbs $50$ kW, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 22,
@@ -3120,83 +2614,55 @@ $$P(50) = 0.4(125000) = 50000 \\text{ W} = 50 \\text{ kW}$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the direction of revenue on an inelastic curve. Multiplying demand by price gives $R(p)=1200p^{0.5}$, a positive exponent, so revenue rises with price.
-
-The general rule behind this is that revenue's exponent is demand's exponent plus one. With demand at $-0.5$ the revenue exponent is $+0.5$: quantity falls when price rises, but not fast enough to offset the higher price.
-
-Recover the coefficient from the observation:
+Revenue's exponent is demand's exponent plus one, so direction is settled by that sum. The observation calibrates demand first:
 
 $$A(16)^{-0.5} = 300 \\quad \\Rightarrow \\quad \\frac{A}{4} = 300 \\quad \\Rightarrow \\quad A = 1200$$
 
-Build revenue:
-
 $$R(p) = p \\times 1200p^{-0.5} = 1200p^{0.5}$$
 
-Compare two prices:
+With demand at $-0.5$ the revenue exponent is $+0.5$: quantity does fall when price rises, but not fast enough to offset the higher price.
 
 $$R(16) = 1200(4) = 4800, \\qquad R(25) = 1200(5) = 6000$$
 
 Revenue rises with price, so the statement is True.`,
       `**B.** → False
 
-A forty-four-percent price rise gives a convenient square, but its exact quantity response is not twenty percent. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A finite price rise of $44\\%$ acts through the exact power of the multiplier $1.44$, which is a convenient square:
 
 $$\\frac{q(1.44p)}{q(p)}=1.44^{-0.5}=\\frac{1}{1.2}=\\frac{5}{6}$$
 
-The relevant comparison can then be written as
+The quantity fall is one minus that surviving fraction:
 
 $$1-\\frac{5}{6}=\\frac{1}{6}\\approx16.7\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Quantity falls by about $16.7\\%$, not exactly $20\\%$. Therefore the statement is False.`,
+Multiplying $44\\%$ by the elasticity $-0.5$ gives $22\\%$, and rounding the convenient square towards $20\\%$ is no better; the word "exactly" leaves room for neither. Quantity falls by about $16.7\\%$, so the statement is False.`,
       `**C.** → False
 
-The observed pair gives $q(p)=1200p^{-0.5}$, so the price for a target quantity is found by inversion. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A target quantity inverts the calibrated curve $q(p)=1200p^{-0.5}$, which leaves the square root of price on one side:
 
 $$200=\\frac{1200}{\\sqrt{p}} \\quad\\Rightarrow\\quad \\sqrt{p}=6$$
 
-The relevant comparison can then be written as
-
 $$p=6^2=36$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The target quantity occurs at price $36$, not $40$. Therefore the statement is False.`,
+Quantity has to fall by a third from the observed $300$, and squaring the inversion makes the required price move larger than that proportion suggests, though it still lands short of $40$. The target quantity arrives at a price of $36$, so the statement is False.`,
       `**D.** → False
 
-This claim applies the price multiplier directly to quantity. With exponent $-0.5$, quadrupling the price multiplies quantity by $4^{-0.5}=1/2$, so volume halves rather than falling to a quarter.
-
-Cutting quantity to a quarter would require an elasticity of $-1$, or a sixteenfold price rise on this curve. The mistake amounts to reading the exponent as $-1$ instead of $-0.5$, which is the same slip that would reverse the revenue conclusion in part A.
-
-Apply the scale factor:
+Quadrupling the price multiplies quantity by four raised to the demand exponent, and that exponent is $-0.5$:
 
 $$\\frac{q(4p)}{q(p)} = 4^{-0.5} = \\frac{1}{2}$$
 
-Check from the observed price:
-
 $$q(16) = 300, \\qquad q(64) = \\frac{1200}{8} = 150$$
 
-Quantity halves, so the statement is False.`,
+Falling to a quarter would need an exponent of $-1$, or a sixteenfold price rise on this curve, and reading the exponent as $-1$ is also what would reverse the revenue conclusion. Quantity halves, so the statement is False.`,
       `**E.** → False
 
-This claim describes unit-elastic demand, which this curve is not. Revenue is $1200p^{0.5}$, which grows with price without limit on the stated domain.
-
-Revenue is price-independent only when demand's exponent is exactly $-1$, making revenue's exponent zero. Here the exponent is $+0.5$, so revenue is not merely dependent on price — it moves in the same direction as price, the hallmark of inelastic demand.
-
-Write revenue and inspect its exponent:
+Price-independent revenue is the case of a zero revenue exponent, which arises only when demand's exponent is exactly $-1$:
 
 $$R(p) = 1200p^{0.5}, \\qquad 0.5 \\ne 0$$
 
-Evaluate at widely separated prices:
-
 $$R(4) = 2400, \\qquad R(16) = 4800, \\qquad R(64) = 9600$$
 
-Revenue doubles with each quadrupling of price, so the statement is False.`,
+Here the exponent is $+0.5$, so revenue not only depends on price but moves in the same direction as it, the hallmark of inelastic demand. Revenue doubles with each quadrupling of price, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 23,
@@ -3260,83 +2726,57 @@ $$R(4) = 2400, \\qquad R(16) = 4800, \\qquad R(64) = 9600$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the constant. The test feed is a perfect cube, so $27^{4/3}=3^{4}=81$ exactly, and dividing the recorded output by that shape factor gives $A=4$.
-
-Exponents written as fractions are easiest handled through their denominator first: take the cube root of $27$, then raise to the fourth power. Doing it in the other order works too but produces the awkward intermediate $27^{4}=531441$.
-
-Evaluate the shape factor:
+A fractional exponent is handled through its denominator first, taking the cube root of the test feed and then the fourth power:
 
 $$27^{4/3} = \\left(27^{1/3}\\right)^{4} = 3^{4} = 81$$
 
-Divide the recorded output by it:
+Dividing the recorded output by that shape factor leaves the coefficient:
 
 $$81A = 324 \\quad \\Rightarrow \\quad A = 4, \\qquad y(x) = 4x^{4/3}$$
 
-The coefficient is $4$, so the statement is True.`,
+The other order works as well but passes through the awkward intermediate $27^{4}=531441$. The coefficient is $4$, so the statement is True.`,
       `**B.** → True
 
-This claim inverts the law at the licence limit. Solving $4x^{4/3}=1024$ gives $x^{4/3}=256$, and raising to the power $3/4$ returns exactly $64$.
-
-The inverse exponent is $3/4$, so the target ratio is compressed rather than magnified: output must rise by a factor of $3.16$ from the test firing while fuel rises only by a factor of $2.37$. Any exponent above $1$ produces that pattern.
-
-Set the law equal to the ceiling:
+The licence caps output, so the feed behind it comes from inverting the law with the reciprocal exponent $3/4$:
 
 $$4x^{4/3} = 1024 \\quad \\Rightarrow \\quad x^{4/3} = 256$$
 
-Raise both sides to the reciprocal power:
-
 $$x = 256^{3/4} = \\left(4^{4}\\right)^{3/4} = 4^{3} = 64$$
 
-Confirm by substitution:
+An exponent above $1$ compresses the required input change: output rises by a factor of about $3.16$ from the test firing while fuel rises only by about $2.37$. Substitution confirms the feed:
 
 $$y(64) = 4 \\times 64^{4/3} = 4 \\times 256 = 1024$$
 
 The ceiling binds at a feed of $64$, so the statement is True.`,
       `**C.** → False
 
-Half the licensed output is $512$ tonnes, and the calibrated law $y(x)=4x^{4/3}$ must be inverted. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+Half the licensed ceiling is $512$ tonnes, and the feed that produces it comes from inverting the calibrated law:
 
 $$4x^{4/3}=512 \\quad\\Rightarrow\\quad x^{4/3}=128$$
 
-The relevant comparison can then be written as
-
 $$x=128^{3/4}\\approx38.05$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Half the ceiling requires about $38.1$ units of feed, not $32$. Therefore the statement is False.`,
+Halving the licensed feed of $64$ to $32$ would be the answer for an exponent of $1$; with exponent $4/3$ output falls faster than feed, so more than half the feed is needed for half the output. Half the ceiling takes about $38.1$ of feed, so the statement is False.`,
       `**D.** → False
 
-This claim understates output by half. Since $8^{4/3}=2^{4}=16$, the law gives $4 \\times 16 = 64$ tonnes at that feed.
-
-The claimed $32$ is what appears if the shape factor is computed as $8^{4/3}=8$ — that is, if the exponent is quietly treated as $1$ — or if the coefficient is halved. Perfect cubes make this easy to check: the cube root of $8$ is $2$, and $2^{4}=16$.
-
-Evaluate the shape factor:
+Perfect cubes keep the shape factor exact, since the cube root of the feed is a whole number:
 
 $$8^{4/3} = \\left(8^{1/3}\\right)^{4} = 2^{4} = 16$$
 
-Apply the coefficient:
-
 $$y(8) = 4(16) = 64$$
 
-The kiln produces $64$ tonnes, not $32$, so the statement is False.`,
+The claimed $32$ is what a shape factor of $8$ would give, treating the exponent as $1$, or what halving the coefficient would give. The kiln produces $64$ tonnes, so the statement is False.`,
       `**E.** → False
 
-The move from 27 to 54 doubles feed, so output is multiplied by $2^{4/3}$. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+Doubling the fuel feed multiplies output by two raised to the exponent $4/3$, with the coefficient cancelling in the ratio:
 
 $$\\frac{y(54)}{y(27)}=2^{4/3}\\approx2.5198$$
 
-The relevant comparison can then be written as
+A percentage change is that factor minus one:
 
 $$(2.5198-1)\\times100\\%\\approx152.0\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Output rises by about $152\\%$, not $125\\%$. Therefore the statement is False.`,
+Applying the exponent to the $100\\%$ feed increase as though it were an ordinary multiplier lands near the figure in the claim, while the full power goes further. Output rises by about $152\\%$, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 24,
@@ -3400,85 +2840,59 @@ $$\\frac{y(x)}{x} = 4x^{1/3}, \\qquad 8 \\to 12 \\to 16 \\text{ at feeds } 8, 27
     tactical_explanations: [
       `**A.** → True
 
-This claim says the two stages are inverses. Substituting $f$ into $g$ multiplies the exponents to $1$ and cancels the constants exactly, leaving $g(f(x))=x$.
-
-Both halves have to work for the claim to hold: the exponents $2/3$ and $3/2$ are reciprocals, and the constants $9$ and $1/27$ are matched to each other, since $9^{3/2}=27$. Change either one and the composition would still be a power function but no longer the identity.
-
-Substitute the first stage into the second:
+Two stages are inverses when their exponents are reciprocals and their constants are matched, so the composition has to be carried out in full:
 
 $$g\\big(f(x)\\big) = \\frac{\\left(9x^{2/3}\\right)^{3/2}}{27} = \\frac{9^{3/2}\\,x^{(2/3)(3/2)}}{27}$$
-
-Evaluate the constant and the exponent:
 
 $$9^{3/2} = 27, \\qquad \\frac{2}{3} \\times \\frac{3}{2} = 1$$
 
 $$g\\big(f(x)\\big) = \\frac{27x}{27} = x$$
 
-The composition returns the original reading, so the statement is True.`,
+Reciprocal exponents alone would leave a power function of exponent $1$ carrying a stray constant; here $9^{3/2}=27$ matches the divisor exactly. The composition returns the original reading, so the statement is True.`,
       `**B.** → True
 
-This claim describes the same composition structurally. Since $g(f(x))=x=1 \\cdot x^{1}$, the composed map is a power function with coefficient $1$ and exponent $1$.
-
-The general rule is that composing power functions always gives a power function whose exponent is the product of the two exponents — never the sum. The identity is simply the special case where that product equals $1$ and the constants happen to cancel.
-
-Multiply the exponents:
+Composing power functions always gives a power function whose exponent is the product of the two exponents, never their sum:
 
 $$\\frac{2}{3} \\times \\frac{3}{2} = 1$$
 
-Collect the constants:
+The constants collect separately:
 
 $$\\frac{9^{3/2}}{27} = \\frac{27}{27} = 1$$
 
 $$g\\big(f(x)\\big) = 1 \\cdot x^{1}$$
 
-The composition is a power function with exponent $1$, so the statement is True.`,
+The identity map is the special case where that product equals $1$ and the constants cancel. The composition is a power function with exponent $1$, so the statement is True.`,
       `**C.** → True
 
-This non-unit test checks both constants and both reciprocal exponents in the two-stage composition. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A non-unit input tests both constants and both reciprocal exponents, one stage at a time:
 
 $$f(125)=9(125)^{2/3}=9(25)=225$$
 
-The relevant comparison can then be written as
-
 $$g(225)=\\frac{225^{3/2}}{27}=\\frac{15^3}{27}=125$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The stages pass through $225$ and return the original $125$. Therefore the statement is True.`,
+Each shape factor is exact because $125$ is a cube and $225$ a square, so no rounding hides in the round trip. The stages pass through $225$ and return the original $125$, so the statement is True.`,
       `**D.** → False
 
-The two laws are exact inverses on positive inputs, so a composed output cannot be eight percent above its input. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+The composition is the identity on every positive input, which the algebra settles once and for all:
 
 $$g(f(x))=\\frac{\\left(9x^{2/3}\\right)^{3/2}}{27}=\\frac{27x}{27}=x$$
 
-The relevant comparison can then be written as
+An awkward input changes nothing, since an exact cancellation admits no rounding:
 
 $$g(f(50))=50 \\quad\\text{and}\\quad \\frac{50-50}{50}=0\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The composed value equals $50$ exactly, rather than exceeding it. Therefore the statement is False.`,
+A raw reading that is neither a cube nor a square invites a decimal detour where a small discrepancy can look real. The composed value equals $50$ exactly, so the statement is False.`,
       `**E.** → False
 
-This claim asserts that the pair works in only one direction. Composing the other way also gives the identity: $f(g(y))=y$ for every $y>0$.
-
-Two power functions on the positive domain that invert in one order automatically invert in the other, because reciprocal exponents and matched constants are symmetric conditions. The arithmetic below shows the constants cancelling in the mirror-image way, with $27^{2/3}=9$ instead of $9^{3/2}=27$.
-
-Substitute the reporting stage into the calibration stage:
+Reciprocal exponents and matched constants are symmetric conditions, so a pair that inverts in one order inverts in the other as well:
 
 $$f\\big(g(y)\\big) = 9\\left(\\frac{y^{3/2}}{27}\\right)^{2/3} = \\frac{9\\,y^{(3/2)(2/3)}}{27^{2/3}}$$
-
-Evaluate the constant and the exponent:
 
 $$27^{2/3} = 9, \\qquad \\frac{3}{2} \\times \\frac{2}{3} = 1$$
 
 $$f\\big(g(y)\\big) = \\frac{9y}{9} = y$$
 
-The reverse order also returns the input, so the statement is False.`,
+The constants cancel in the mirror-image way, with $27^{2/3}=9$ where the other order used $9^{3/2}=27$. The reverse order also returns the input, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 25,
@@ -3538,83 +2952,61 @@ $$f(8) = 9 \\times 4 = 36, \\qquad g(36) = \\frac{216}{27} = 8$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the crossing point. The benchmarks give $S(x)=8x^{0.5}$ and $T(x)=x^{1.5}$, and setting them equal leaves $x=8$, where both score about $22.6$.
-
-Cancelling the common factor $x^{0.5}$ is what makes the equation trivial, and it is allowed because the load is strictly positive. What remains is $8=x$, so the crossing sits at exactly the coefficient of algorithm S — a coincidence of these particular exponents, since they differ by exactly $1$.
-
-Calibrate both algorithms from the benchmark:
+A tie between two scoring laws is the load at which $S(x)$ and $T(x)$ take the same value, so both laws must be calibrated from the benchmark at load $4$ before the equation can be posed.
 
 $$a\\sqrt{4} = 16 \\;\\Rightarrow\\; a = 8, \\qquad k(4)^{1.5} = 8 \\;\\Rightarrow\\; 8k = 8 \\;\\Rightarrow\\; k = 1$$
 
-Set the two scores equal and cancel:
+Setting the two calibrated scores equal and cancelling the shared factor $x^{0.5}$, which is legitimate because the load is strictly positive:
 
 $$8x^{0.5} = x^{1.5} \\quad \\Rightarrow \\quad 8 = x^{1} \\quad \\Rightarrow \\quad x = 8$$
 
-Confirm the shared score:
-
 $$S(8) = 8\\sqrt{8} \\approx 22.63, \\qquad T(8) = 8^{1.5} \\approx 22.63$$
 
-The algorithms tie at load $8$, so the statement is True.`,
+The crossing lands on the coefficient of algorithm S only because the two exponents differ by exactly $1$, not by any general rule. Both algorithms score about $22.63$ at load $8$, so the statement is True.`,
       `**B.** → False
 
-This claim expects more than one tie. After cancelling $x^{0.5}$ the equation reduces to $x=8$, a single root, so on the domain $x>0$ there is exactly one crossing.
-
-Two curves like these can look as if they might cross twice, since one starts above and the other ends above, but a single crossing is all that pattern requires. The algebraic reason is decisive: the ratio of the two scores is strictly increasing, so it can pass through $1$ only once.
-
-Reduce the equality condition:
+The number of ties is the number of positive solutions of the equality condition, so the question is about roots rather than about values.
 
 $$8x^{0.5} = x^{1.5} \\quad \\Longleftrightarrow \\quad x^{1.5 - 0.5} = 8 \\quad \\Longleftrightarrow \\quad x = 8$$
 
-Inspect the ratio, which is strictly increasing:
+The ratio of the two scores settles the matter across the whole domain:
 
 $$\\frac{T(x)}{S(x)} = \\frac{x^{1.5}}{8x^{0.5}} = \\frac{x}{8}$$
 
-A strictly increasing ratio equals $1$ only once, so the statement is False.`,
+One curve starting above and ending above suggests two meetings, but a strictly increasing ratio can pass through $1$ only once. There is exactly one crossing on $x>0$, so the statement is False.`,
       `**C.** → False
 
-This claim puts the wrong algorithm ahead beyond the crossing. For $x>8$ the ratio $T/S=x/8$ exceeds $1$, so algorithm T leads on that whole range.
-
-Algorithm S does dominate at light loads, and its larger coefficient — $8$ against $1$ — is what makes that plausible up to the crossing. Beyond it the exponents decide: $1.5$ against $0.5$ means T's score grows three times as fast in proportional terms, and no coefficient advantage can hold that back forever.
-
-Use the ratio to order the two algorithms:
+Which algorithm leads on a range is decided by the ratio $T/S$, which compares the two laws at every load at once.
 
 $$\\frac{T(x)}{S(x)} = \\frac{x}{8} > 1 \\quad \\Longleftrightarrow \\quad x > 8$$
 
-Check a heavier load:
+A heavier load makes the ordering concrete:
 
 $$S(16) = 8(4) = 32, \\qquad T(16) = 16^{1.5} = 64$$
 
-Algorithm T leads above the crossing, so the statement is False.`,
+Algorithm S does lead at light loads on the strength of its coefficient $8$ against $1$, but exponent $1.5$ against $0.5$ takes over once the crossing is passed. Algorithm T leads above the crossing, so the statement is False.`,
       `**D.** → False
 
-This claim mistakes the benchmark load for the crossing. At $x=4$ the benchmarks themselves record $16$ against $8$, so algorithm S is ahead by a factor of two.
-
-The benchmark is where the coefficients were calibrated, not where the curves meet; those are different questions. The ratio at that load is $4/8=0.5$, exactly the twofold gap the benchmark scores show.
-
-Read the benchmark scores:
+Load $4$ is the benchmark at which the two coefficients were calibrated, and the benchmark scores are recorded directly in the brief.
 
 $$S(4) = 16, \\qquad T(4) = 8$$
 
-Confirm with the ratio:
+The ratio confirms the gap:
 
 $$\\frac{T(4)}{S(4)} = \\frac{4}{8} = 0.5$$
 
-The two are not equal at load $4$, so the statement is False.`,
+Calibration load and crossing load are different questions, and here they are different numbers. Algorithm S scores twice algorithm T at load $4$, so the statement is False.`,
       `**E.** → False
 
-This claim would require the two algorithms to share an exponent. They do not — $0.5$ against $1.5$ — so the ratio is $x/8$, which grows without bound.
-
-A constant ratio is exactly the case where two power functions differ only by a coefficient. Here the exponents differ by $1$, so the ratio is itself a power function with exponent $1$: the further the load rises, the more decisively algorithm T wins.
-
-Form the ratio:
+A constant score ratio is exactly what two power functions produce when they share an exponent and differ only by a coefficient.
 
 $$\\frac{T(x)}{S(x)} = \\frac{x^{1.5}}{8x^{0.5}} = \\frac{x}{8}$$
 
-Evaluate at three loads:
+Evaluating that ratio at three loads:
 
 $$\\frac{4}{8} = 0.5, \\qquad \\frac{8}{8} = 1, \\qquad \\frac{16}{8} = 2$$
 
-The ratio quadruples across that range, so the statement is False.`,
+The exponents here differ by $1$, so the ratio is itself a power function rather than a constant. It quadruples across that range, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 26,
@@ -3676,60 +3068,42 @@ $$x < 8 \\;\\Rightarrow\\; S > T, \\qquad x > 8 \\;\\Rightarrow\\; T > S$$
     tactical_explanations: [
       `**A.** → True
 
-The ratio between the two fleet sizes cancels the unknown coefficient and leaves the finite scale factor. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A capacity ratio between two fleet sizes cancels the unknown coefficient, leaving only the exponent acting on the fleet multiplier.
 
 $$\\frac{C(64)}{C(32)}=\\left(\\frac{64}{32}\\right)^{0.8}=2^{0.8}\\approx1.741$$
 
-The relevant comparison can then be written as
+Set that scale factor against the threshold in the claim:
 
 $$1.741<2$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Capacity rises by a factor below two. Therefore the statement is True.`,
+Reading the exponent $0.8$ as an ordinary multiplier answers a different question, since the finite scale factor is a power rather than a proportion. Capacity rises by a factor below two, so the statement is True.`,
       `**B.** → True
 
-This claim quantifies the same diminishing returns. The scale factor is $2^{0.8}\\approx1.7411$, so doubling the fleet buys about $74\\%$ more capacity.
-
-The gap between $74\\%$ and $100\\%$ is what the platform loses to the sub-linear exponent, and it compounds: two doublings give $2^{1.6}\\approx3.03$ rather than $4$. Recovering the missing capacity requires a disproportionately larger fleet.
-
-Form the scale factor:
+The percentage effect of a doubling is the scale factor minus one, so the same power of two governs it as governed the ratio above.
 
 $$\\frac{C(2m)}{C(m)} = 2^{0.8} = e^{0.8 \\times 0.6931} \\approx e^{0.5545} \\approx 1.7411$$
 
-Verify from the recorded fleet, using $A=80/32^{0.8}=80/16=5$:
+Checking against the recorded fleet, with $A=80/32^{0.8}=80/16=5$:
 
 $$C(32) = 80, \\qquad C(64) = 5 \\times 64^{0.8} \\approx 5 \\times 27.86 \\approx 139.3, \\qquad \\frac{139.3}{80} \\approx 1.74$$
 
-Capacity rises by about $74\\%$, so the statement is True.`,
+The shortfall against $100\\%$ compounds rather than cancelling, since two doublings give $2^{1.6}\\approx3.03$ instead of $4$. Capacity rises by about $74\\%$, so the statement is True.`,
       `**C.** → False
 
-This claim inverts the law but lands well short. Solving $5m^{0.8}=500$ gives $m^{0.8}=100$, and raising to the power $1.25$ returns about $316$ machines.
-
-Underestimating here is the natural error, because the recorded fleet suggests a rough proportion — capacity must rise about sixfold, so the fleet "should" rise about sixfold from $32$ to roughly $200$. The sub-linear exponent means the fleet has to rise by $10^{1.25}\\approx17.8$ times instead.
-
-Recover the coefficient and set capacity to the ceiling:
+The fleet at which a capacity ceiling binds is found by inverting the calibrated law, which means raising both sides to the reciprocal exponent $1.25$.
 
 $$32^{0.8} = 2^{4} = 16 \\;\\Rightarrow\\; A = 5, \\qquad 5m^{0.8} = 500 \\;\\Rightarrow\\; m^{0.8} = 100$$
 
-Raise both sides to the reciprocal exponent $1.25$:
-
 $$m = 100^{1.25} = 10^{2.5} \\approx 316.2$$
 
-Check the claimed fleet:
+Test the fleet named in the claim:
 
 $$C(250) = 5 \\times 250^{0.8} \\approx 5 \\times 82.4 \\approx 412 < 500$$
 
-The ceiling binds near $316$ machines, not $250$, so the statement is False.`,
+Rough proportion suggests a sixfold fleet for a sixfold capacity, while the sub-linear exponent demands a factor of $10^{1.25}\\approx17.8$. The ceiling binds near $316$ machines rather than $250$, so the statement is False.`,
       `**D.** → False
 
-This claim overstates capacity at a conveniently chosen fleet size. Since $243=3^{5}$, the shape factor is $3^{4}=81$ exactly, and capacity is $5 \\times 81 = 405$ requests per second.
-
-The claimed $486$ is $6 \\times 81$, which is what the coefficient $6$ would give — the value obtained by dividing $80$ by a mis-evaluated shape factor. Fifth powers make the exponent $0.8=4/5$ exact, so this is a case where the arithmetic can be checked without any rounding at all.
-
-Evaluate the shape factor:
+A fleet of $243$ machines is a fifth power, so the exponent $0.8=4/5$ resolves exactly and no rounding enters the level.
 
 $$243^{0.8} = \\left(3^{5}\\right)^{4/5} = 3^{4} = 81$$
 
@@ -3737,22 +3111,18 @@ Apply the recovered coefficient:
 
 $$C(243) = 5(81) = 405$$
 
-The fleet sustains $405$ requests per second, not $486$, so the statement is False.`,
+The claimed $486$ is $6 \\times 81$, the figure a coefficient of $6$ would give, whereas the recorded fleet fixes the coefficient at $5$. Capacity is $405$ requests per second, so the statement is False.`,
       `**E.** → False
 
-Capacity per machine carries exponent $0.8-1=-0.2$, so its exact change must be calculated over the doubling. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+Capacity per machine is the calibrated law divided by $m$, which lowers the exponent to $0.8-1=-0.2$ and makes the quantity decreasing.
 
 $$\\frac{C(64)/64}{C(32)/32}=2^{-0.2}\\approx0.87055$$
 
-The relevant comparison can then be written as
+Convert the surviving fraction into a percentage cut:
 
 $$(1-0.87055)\\times100\\%\\approx12.9\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Capacity per machine falls by about $12.9\\%$, not by less than $10\\%$. Therefore the statement is False.`,
+A negative exponent reverses the direction of the change, and the size of the drop still comes from the full power rather than from the exponent read as a percentage. Capacity per machine falls by about $12.9\\%$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 27,
@@ -3816,11 +3186,7 @@ $$\\frac{C(m)}{m} = 5m^{-0.2}, \\qquad 2.5 \\text{ at } m=32, \\qquad 1.67 \\tex
     tactical_explanations: [
       `**A.** → True
 
-This claim locates the break-even staffing level. Setting $120\\sqrt{L}=6L$ and dividing by $\\sqrt{L}$ gives $\\sqrt{L}=20$, so revenue and wage bill coincide at $400$ hours, both equal to $2400$.
-
-Dividing by $\\sqrt{L}$ removes the trivial root at $L=0$, where a workshop with no labour also breaks even. The meaningful break-even is the second one, and it is the upper edge of the range worth operating in.
-
-Set revenue equal to the wage bill:
+Break-even is the staffing level at which revenue and the wage bill coincide, so the condition is an equation between a square-root law and a linear one.
 
 $$120\\sqrt{L} = 6L \\quad \\Rightarrow \\quad 120 = 6\\sqrt{L} \\quad \\Rightarrow \\quad \\sqrt{L} = 20$$
 
@@ -3830,44 +3196,28 @@ Check both sides:
 
 $$R(400) = 120(20) = 2400, \\qquad 6(400) = 2400$$
 
-The net gain is zero at $400$ hours, so the statement is True.`,
+Dividing by $\\sqrt{L}$ discards the trivial root at $L=0$, where a workshop with no labour also breaks even, and keeps the meaningful one. The net gain is zero at $400$ hours, so the statement is True.`,
       `**B.** → True
 
-This claim evaluates the net gain inside the profitable range. Revenue is $1200$, wages are $600$, and the difference is exactly $600$.
-
-This point is worth remembering for part D, because it turns out to be the best the workshop can do: the net gain here equals the wage bill itself, and every staffing level on either side of it does worse.
-
-Evaluate revenue and wages at $100$ hours:
+The net gain at a staffing level is revenue there minus the wage bill there, both read straight off the two given laws.
 
 $$R(100) = 120\\sqrt{100} = 120(10) = 1200, \\qquad 6(100) = 600$$
 
-Take the difference:
-
 $$1200 - 600 = 600$$
 
-The net gain is $600$, so the statement is True.`,
+This level is worth holding on to for part D, since it turns out to be the best the workshop can do rather than merely a point inside the profitable range. The net gain is $600$, so the statement is True.`,
       `**C.** → True
 
-This claim tests a staffing level beyond break-even. Revenue is $3600$ while wages are $5400$, so the season loses $1800$.
-
-Once past $400$ hours the wage bill grows in proportion to hours while revenue grows only as a square root, so losses widen with every additional hour. At $900$ hours the workshop is already $75\\%$ over its revenue in wages.
-
-Evaluate both sides at $900$ hours:
+Beyond break-even the wage bill grows in proportion to hours while revenue grows only as a square root, so the two laws have to be evaluated separately at the staffing level in question.
 
 $$R(900) = 120\\sqrt{900} = 120(30) = 3600, \\qquad 6(900) = 5400$$
 
-Take the difference:
-
 $$3600 - 5400 = -1800$$
 
-The net gain is negative, so the statement is True.`,
+The gap widens with every further hour rather than stabilising, because the exponent mismatch never reverses. The net gain at $900$ hours is $-1800$, so the statement is True.`,
       `**D.** → False
 
-This claim assumes the net gain climbs all the way to break-even. It does not: the net gain peaks at $100$ hours with $600$ and then falls back to zero at $400$ hours.
-
-The confusion is between *positive* and *rising*. The net gain stays positive on the whole open range, which is why the claim sounds right, but it turns over well before the end of that range — at the point where the falling revenue per hour drops to the wage of $6$.
-
-Compare the net gain at three staffing levels inside the range:
+Whether the net gain rises across a range is a question about its shape rather than its sign, so it has to be sampled at several staffing levels inside the range.
 
 $$\\Pi(100) = 1200 - 600 = 600$$
 
@@ -3875,14 +3225,10 @@ $$\\Pi(225) = 120(15) - 1350 = 1800 - 1350 = 450$$
 
 $$\\Pi(324) = 120(18) - 1944 = 2160 - 1944 = 216$$
 
-The net gain falls from $600$ to $216$ while still inside the range, so the statement is False.`,
+The net gain does stay positive on the whole range, which is weaker than rising, and it turns over where revenue per hour falls to the wage of $6$. It drops from $600$ to $216$ while still inside the range, so the statement is False.`,
       `**E.** → False
 
-This claim would require revenue to be proportional to hours. Dividing revenue by $L$ gives $120L^{-0.5}$, which declines as staffing rises.
-
-Watching this average fall explains the whole task. It starts far above the wage of $6$, equals $6$ at $400$ hours — precisely the break-even point — and drops below it thereafter, which is why extra hours eventually destroy value.
-
-Divide revenue by hours:
+Revenue per hour of labour is revenue divided by $L$, which lowers the exponent from $0.5$ to $-0.5$.
 
 $$\\frac{R(L)}{L} = \\frac{120L^{0.5}}{L} = 120L^{-0.5}$$
 
@@ -3890,7 +3236,7 @@ Evaluate at three staffing levels:
 
 $$\\frac{R(100)}{100} = 12, \\qquad \\frac{R(400)}{400} = 6, \\qquad \\frac{R(900)}{900} = 4$$
 
-Revenue per hour falls from $12$ to $4$, so the statement is False.`,
+Constancy would require revenue proportional to hours, while this average starts above the wage of $6$, meets it at $400$ hours and drops below it thereafter. Revenue per hour falls from $12$ to $4$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 28,
@@ -3954,75 +3300,51 @@ $$\\frac{R(L)}{L} = 120L^{-0.5}: \\quad 12 \\text{ at } 100, \\quad 6 \\text{ at
     tactical_explanations: [
       `**A.** → True
 
-This claim prices the corner solution. Plant 2 has the smaller coefficient, and loading all $60$ units into it costs $0.25 \\times 3600 = 900$.
-
-"Cheaper" needs care here, because plant 2 is cheaper only in the sense of a smaller coefficient; at any given output it costs half of plant 1. That does not make concentration wise — as the later parts show, splitting beats this corner by a wide margin.
-
-Evaluate plant 2 at the full order:
+Concentrating the order means sending all $60$ units to a single plant, so the cost is that plant's own quadratic law evaluated at the full order.
 
 $$C_2(60) = 0.25(60)^{2} = 0.25(3600) = 900$$
 
-Compare with the same corner at plant 1:
+The same corner at the other plant, for comparison:
 
 $$C_1(60) = 0.5(3600) = 1800$$
 
-Concentrating in plant 2 costs $900$, so the statement is True.`,
+Plant 2 is cheaper only in the sense of a smaller coefficient, which is not the same as being the wise place to put every unit. Concentrating in plant 2 costs $900$, so the statement is True.`,
       `**B.** → False
 
-This claim backs the wrong split. Thirty units each cost $675$, while sending $20$ to plant 1 and $40$ to plant 2 costs $600$ — the cheaper of the two.
-
-Symmetry is a good instinct when plants are identical, but these are not: plant 1's cost coefficient is twice plant 2's, so the cheaper plant should carry more of the load. The right balance loads plant 2 with twice as much as plant 1, which is exactly the $20$–$40$ split.
-
-Price the even split:
+Ranking two splits means pricing each one through both quadratic laws and adding the two plant costs.
 
 $$0.5(30)^{2} + 0.25(30)^{2} = 450 + 225 = 675$$
 
-Price the $20$–$40$ split:
-
 $$0.5(20)^{2} + 0.25(40)^{2} = 200 + 400 = 600$$
 
-The uneven split is cheaper by $75$, so the statement is False.`,
+Symmetry would be right for identical plants, but plant 1's coefficient is twice plant 2's, so the cheaper plant should carry twice the load. The uneven split is cheaper by $75$, so the statement is False.`,
       `**C.** → False
 
-This claim assumes proportional costs. Both plants have exponent $2$, so doubling output multiplies cost by $2^{2}=4$.
-
-The quadratic shape is the reason splitting helps at all. If costs really were proportional to output, total cost would depend only on the coefficients and every unit would go to the cheaper plant; convex costs are what make it worthwhile to run both.
-
-Apply the scale factor at either plant:
+Both cost laws carry exponent $2$, so the effect of doubling a plant's own output is the scale factor $2^{2}$.
 
 $$\\frac{C_2(2q)}{C_2(q)} = 2^{2} = 4$$
 
-Check numerically:
+Concrete outputs at plant 2:
 
 $$C_2(20) = 100, \\qquad C_2(40) = 400$$
 
-Cost quadruples rather than doubling, so the statement is False.`,
+Proportional costs would send every unit to the plant with the smaller coefficient, whereas convexity is what makes running both worthwhile. Cost quadruples rather than doubling, so the statement is False.`,
       `**D.** → False
 
-This claim misprices the split computed in part B. The true cost is $600$: plant 1 contributes $200$ and plant 2 contributes $400$.
-
-The gap of $50$ matters because $600$ is the best achievable total — no other division of the $60$ units does better. Reporting $650$ would make the even split at $675$ look almost as good, when in fact the correct figure creates a clear ranking.
-
-Price each plant separately:
+The split that sends $20$ units to plant 1 and $40$ to plant 2 is priced plant by plant, each through its own quadratic law.
 
 $$C_1(20) = 0.5(400) = 200, \\qquad C_2(40) = 0.25(1600) = 400$$
 
-Add the two:
-
 $$200 + 400 = 600$$
 
-Compare with the alternatives already computed:
+Ranked against the alternatives already priced:
 
 $$600 < 675 < 900$$
 
-The split costs $600$, not $650$, so the statement is False.`,
+An error of $50$ here would blur that ranking, since it would make the even split at $675$ look almost as good as the best division. The split costs $600$, so the statement is False.`,
       `**E.** → False
 
-This claim would require an exponent of $1$. Dividing plant 2's cost by its output gives $0.25q$, which rises with output, so its unit cost is far from constant.
-
-Rising unit cost is precisely the force that makes a split optimal: as plant 2 takes on more, its cost per unit climbs until sending the next unit to plant 1 becomes the cheaper option. Constant unit costs would eliminate that trade-off entirely.
-
-Divide the cost by output:
+Plant 2's cost per unit is its cost law divided by its own output, which lowers the exponent from $2$ to $1$.
 
 $$\\frac{C_2(q)}{q} = \\frac{0.25q^{2}}{q} = 0.25q$$
 
@@ -4030,7 +3352,7 @@ Evaluate at three output levels:
 
 $$\\frac{C_2(20)}{20} = 5, \\qquad \\frac{C_2(40)}{40} = 10, \\qquad \\frac{C_2(60)}{60} = 15$$
 
-Unit cost triples across that range, so the statement is False.`,
+A constant unit cost would require exponent $1$ and would remove the trade-off that makes a split optimal. Unit cost triples across that range, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 29,
@@ -4092,11 +3414,7 @@ $$\\frac{C_1(q)}{q} = 0.5q, \\qquad \\frac{C_2(q)}{q} = 0.25q$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks whether two points determine the exponent claimed. Dividing one measurement by the other cancels the coefficient and leaves $4^{r}=8$, which gives $r=1.5$.
-
-Two points always determine a power law exactly, because the ratio equation carries the exponent and either point then carries the coefficient. The arithmetic is cleanest when the input ratio is a whole number, as here, where $16/4=4$ and $192/24=8$.
-
-Divide the second measurement by the first:
+Two measurements determine a power law because their ratio cancels the coefficient and leaves an equation in the exponent alone.
 
 $$\\frac{A(16)^{r}}{A(4)^{r}} = \\frac{192}{24} \\quad \\Rightarrow \\quad \\left(\\frac{16}{4}\\right)^{r} = 8$$
 
@@ -4104,31 +3422,23 @@ Solve the resulting equation:
 
 $$4^{r} = 8 \\quad \\Rightarrow \\quad 2^{2r} = 2^{3} \\quad \\Rightarrow \\quad r = 1.5$$
 
-The exponent is exactly $1.5$, so the statement is True.`,
+Both ratios here are whole numbers, $16/4=4$ and $192/24=8$, so the exponent resolves without logarithms. The exponent is exactly $1.5$, so the statement is True.`,
       `**B.** → True
 
-This claim completes the fit. With $r=1.5$ the shape factor at $x=4$ is $8$, so the coefficient is $24/8=3$.
-
-Either measurement can be used, and using both is the sensible check: $192/16^{1.5}=192/64=3$ as well. Agreement confirms that the exponent from part A was right, since a wrong exponent would give two different coefficients.
-
-Use the first measurement:
+With the exponent fixed, the coefficient follows from either measurement by dividing the response by its shape factor.
 
 $$A(4)^{1.5} = 24 \\quad \\Rightarrow \\quad 8A = 24 \\quad \\Rightarrow \\quad A = 3$$
 
-Confirm with the second:
+Confirm with the second measurement:
 
 $$\\frac{192}{16^{1.5}} = \\frac{192}{64} = 3$$
 
 $$y = 3x^{1.5}$$
 
-Both measurements give $A=3$, so the statement is True.`,
+A wrong exponent would give two different coefficients, so agreement between the measurements is a genuine check rather than a repetition. Both give $A=3$, so the statement is True.`,
       `**C.** → False
 
-This claim treats the third measurement as an outlier. The fitted law predicts $3 \\times 9^{1.5} = 81$, which is exactly what was recorded, so the point sits on the curve.
-
-This is the one measurement that was *not* used in the fit, which makes it the real test of the model. A power law fitted on two points will always pass through those two; passing through an independent third point is genuine evidence that the form is right.
-
-Evaluate the fitted law at $x=9$:
+The measurement at $x=9$ was held out of the fit, which makes it a test of the model rather than part of its construction.
 
 $$9^{1.5} = \\left(9^{1/2}\\right)^{3} = 3^{3} = 27$$
 
@@ -4138,14 +3448,10 @@ Compare with the recorded value:
 
 $$81 = 81$$
 
-The measurement agrees with the fit, so the statement is False.`,
+A two-point fit always passes through its own two points, so agreement at an independent third point is evidence rather than arithmetic. The measurement sits on the curve, so the statement is False.`,
       `**D.** → False
 
-This claim understates the prediction. At $x=25$ the shape factor is $25^{1.5}=125$, so the fitted law predicts $375$.
-
-The claimed $300$ is what a squared law with the same coefficient would *not* give either; it is closer to what appears if the shape factor is read as $100$, that is, if $25^{1.5}$ is mistaken for $25^{2}/6.25$ or simply rounded down. Since $25$ is a perfect square, the exact route is short: take the square root, then cube.
-
-Evaluate the shape factor:
+A prediction at $x=25$ uses the fitted law, and $25$ is a perfect square, so the shape factor resolves by taking the square root and then cubing.
 
 $$25^{1.5} = \\left(25^{1/2}\\right)^{3} = 5^{3} = 125$$
 
@@ -4153,14 +3459,10 @@ Apply the coefficient:
 
 $$y = 3(125) = 375$$
 
-The prediction is $375$, not $300$, so the statement is False.`,
+Reading the shape factor as $100$ rather than $125$ is what produces the claimed figure, and the exact route leaves no room for that. The prediction is $375$, so the statement is False.`,
       `**E.** → False
 
-This claim suggests the fit is not unique. It is: the ratio equation $4^{r}=8$ has exactly one solution, and $r=2$ would require the response to rise by a factor of $16$ rather than the observed $8$.
-
-Two distinct points pin a power law uniquely, so there is no freedom left once the ratio is fixed. Testing the rejected exponent makes this concrete: with $r=2$ the coefficient from the first point would be $1.5$, and the second point would then be predicted as $384$ instead of the recorded $192$.
-
-Check what exponent $2$ would imply for the ratio:
+Uniqueness of the fit is settled by the ratio equation, since $4^{r}$ is strictly increasing in $r$ and can equal $8$ only once.
 
 $$\\left(\\frac{16}{4}\\right)^{2} = 16 \\ne 8$$
 
@@ -4168,7 +3470,7 @@ Force the coefficient from the first point and test the second:
 
 $$A = \\frac{24}{16} = 1.5, \\qquad 1.5(16)^{2} = 384 \\ne 192$$
 
-An exponent of $2$ misses the second measurement by a factor of two, so the statement is False.`,
+An exponent of $2$ would demand a response ratio of $16$ where $8$ was observed, so no freedom remains once the ratio is fixed. The rejected exponent misses the second measurement by a factor of two, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 30,
@@ -4230,15 +3532,9 @@ $$3 \\times 25^{1.5} = 3 \\times 125 = 375$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the demand curve solved for price. The observation gives $A=2500$, and solving $q=2500p^{-2}$ for $p$ produces $p=50q^{-0.5}$.
-
-Inverting a power function replaces the exponent by its reciprocal, so $-2$ becomes $-1/2$, and the coefficient is raised to that same reciprocal power: $2500^{1/2}=50$. Leaving the coefficient untouched is the usual slip and would give a curve that misses every observed point.
-
-Recover the coefficient:
+Inverse demand is the same curve with price as the subject, and inverting a power function replaces its exponent by the reciprocal and raises its coefficient to that same reciprocal power.
 
 $$A(5)^{-2} = 100 \\quad \\Rightarrow \\quad \\frac{A}{25} = 100 \\quad \\Rightarrow \\quad A = 2500$$
-
-Solve the demand curve for price:
 
 $$q = \\frac{2500}{p^{2}} \\quad \\Rightarrow \\quad p^{2} = \\frac{2500}{q} \\quad \\Rightarrow \\quad p = \\frac{50}{\\sqrt{q}} = 50q^{-0.5}$$
 
@@ -4246,59 +3542,37 @@ Check the observed pair:
 
 $$p(100) = \\frac{50}{10} = 5 \\;\\checkmark$$
 
-The inverse curve is $50q^{-0.5}$, so the statement is True.`,
+Carrying the coefficient through unchanged, rather than as $2500^{1/2}$, would give a curve that misses every observed point. The inverse curve is $50q^{-0.5}$, so the statement is True.`,
       `**B.** → True
 
-Revenue through quantity is obtained by multiplying quantity by inverse demand, so the exponents must be added. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+Revenue expressed through quantity is quantity times inverse demand, so the exponents add rather than being carried over unchanged.
 
 $$p(q)=50q^{-0.5}$$
 
-The relevant comparison can then be written as
-
 $$R(q)=qp(q)=q\\left(50q^{-0.5}\\right)=50q^{0.5}$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The revenue law is $R=50q^{0.5}$. Therefore the statement is True.`,
+Multiplying by $q$ raises the exponent by one, taking $-0.5$ to $0.5$ and turning a falling curve into a rising one. The revenue law is $50q^{0.5}$, so the statement is True.`,
       `**C.** → True
 
-The derived revenue law has exponent one-half, so the exact scale factor for a doubling is required. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+The percentage effect of a doubling comes from the scale factor of the revenue law, whose exponent is one half.
 
 $$\\frac{R(2q)}{R(q)}=2^{0.5}=\\sqrt{2}\\approx1.414$$
 
-The relevant comparison can then be written as
-
 $$(1.414-1)\\times100\\%\\approx41.4\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Revenue rises by about $41.4\\%$. Therefore the statement is True.`,
+The exponent is not itself the percentage response, since a finite change is the full power minus one. Revenue rises by about $41.4\\%$, so the statement is True.`,
       `**D.** → False
 
-Revenue must be evaluated through the inverse-demand representation rather than by reusing the original observed price. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+Revenue at a stated quantity has to be built from the price that clears that quantity, which the inverse curve supplies.
 
 $$p(25)=50(25)^{-0.5}=\\frac{50}{5}=10$$
 
-The relevant comparison can then be written as
-
 $$R(25)=25p(25)=25(10)=250$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Revenue is $250$, not $300$. Therefore the statement is False.`,
+Reusing the observed price of $5$ would price a different point on the curve, not this one. Revenue is $250$, so the statement is False.`,
       `**E.** → False
 
-This claim quotes the exponent of the *inverse* curve. Demand's own exponent is $-2$, and that is the elasticity; $-0.5$ is its reciprocal, belonging to the price-as-a-function-of-quantity relationship.
-
-The reciprocal pairing is exactly why the two numbers are easy to swap: inverting a power function inverts its exponent. Keeping track of which variable is on which side settles it — elasticity measures the percentage response of quantity to price, so it must be read from $q(p)$.
-
-Read the elasticity from the demand curve:
+Price elasticity of demand measures the percentage response of quantity to price, so it is read from $q(p)$ and equals that curve's own exponent.
 
 $$q(p) = 2500p^{-2} \\quad \\Rightarrow \\quad \\text{El}_{p}q = -2$$
 
@@ -4310,7 +3584,7 @@ Test with a one percent price rise:
 
 $$1.01^{-2} \\approx 0.9803 \\quad \\Rightarrow \\quad \\text{about } -2\\%$$
 
-The elasticity is $-2$, so the statement is False.`,
+The two numbers are reciprocals because inverting a power function inverts its exponent, and $-0.5$ belongs to the other direction. The elasticity is $-2$, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 31,
@@ -4372,59 +3646,49 @@ $$\\text{El}_{p}q = -2, \\qquad \\text{El}_{q}p = -0.5$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the technology coefficient from an output jump. The model must be evaluated at both labour levels because $60$ is the change in output, not either output level. The square-root factors differ by $10-5=5$.
-
-A common mistake is to substitute only $L=100$ and conclude $A=6$. That silently converts a difference observation into a level observation.
+The recorded $60$ units is a change in output between two labour levels, so the model has to be evaluated at both and differenced.
 
 $$Y(100)-Y(25)=A\\sqrt{100}-A\\sqrt{25}=60$$
 
-$$A(10-5)=60 \\quad \\Rightarrow \\quad A=12, qquad Y(L)=12\\sqrt{L}$$
+$$A(10-5)=60 \\quad \\Rightarrow \\quad A=12, \\qquad Y(L)=12\\sqrt{L}$$
 
-The recovered technology is $Y(L)=12\\sqrt{L}$, so the statement is True.`,
+Substituting only $L=100$ would convert a difference observation into a level observation and return a coefficient of $6$. The recovered technology is $Y(L)=12\\sqrt{L}$, so the statement is True.`,
       `**B.** → True
 
-This claim compares curved output with a linear benchmark at the same labour input. Using the calibrated model, output at $64$ hours is $96$, while the wage benchmark is $0.75(64)=48$. Their difference is therefore $48$ units.
-
-A common mistake is to compare coefficients, $12$ and $0.75$, without evaluating their different powers of $L$. One law grows with $\\sqrt L$ and the other with $L$.
+The comparison is between a square-root output law and a linear benchmark evaluated at the same labour input.
 
 $$Y(64)=12\\sqrt{64}=12(8)=96$$
 
-$$W(64)=0.75(64)=48, qquad Y(64)-W(64)=96-48=48$$
+$$W(64)=0.75(64)=48, \\qquad Y(64)-W(64)=96-48=48$$
 
-Output exceeds the linear benchmark by exactly $48$ units at $64$ hours, so the statement is True.`,
+Comparing the coefficients $12$ and $0.75$ alone would ignore that one law grows with $\\sqrt{L}$ and the other with $L$. Output exceeds the benchmark by $48$ units at $64$ hours, so the statement is True.`,
       `**C.** → True
 
-This claim asks for average product at a labour level that is not a multiple of either calibration input. Average product is output divided by labour, so its exponent is $0.5-1=-0.5$. At $225$ hours the square root is $15$.
-
-A common mistake is to evaluate total output, $180$, and report that number as the average. The total must still be divided by $225$ hours.
+Average product is output divided by labour, so its exponent is $0.5-1=-0.5$ and the derived law has to be built before any level is read off.
 
 $$\\operatorname{AP}(L)=\\frac{Y(L)}{L} =\\frac{12L^{0.5}}{L}=12L^{-0.5}$$
 
 $$\\operatorname{AP}(225)=\\frac{12}{\\sqrt{225}} =\\frac{12}{15}=0.8$$
 
-Average product is $0.8$ unit per labour hour, so the statement is True.`,
+Total output at that labour level is $180$, a different quantity that still has to be divided by the hours. Average product is $0.8$ unit per labour hour, so the statement is True.`,
       `**D.** → True
 
-This claim asks to run the square-root technology backwards for a non-doubling target. With $Y(L)=12\\sqrt L$, a target of $180$ fixes $\\sqrt L=15$, after which the labour input must be squared.
-
-A common mistake is to scale labour in the same proportion as output. A square-root production law has inverse exponent $2$, so output ratios are squared when converted to labour ratios.
+Running the technology backwards means solving the output law for labour, and a square-root law inverts by squaring.
 
 $$12\\sqrt L=180 \\quad \\Rightarrow \\quad \\sqrt L=15$$
 
-$$L=15^2=225, qquad Y(225)=12(15)=180$$
+$$L=15^2=225, \\qquad Y(225)=12(15)=180$$
 
-The inversion and direct check both give $225$ labour hours, so the statement is True.`,
+Scaling labour in the same proportion as output would ignore that the inverse exponent is $2$ rather than $1$. The inversion and the direct check both give $225$ labour hours, so the statement is True.`,
       `**E.** → True
 
-This claim compares scale factors for a total and its average. Output has exponent $0.5$, while average product has exponent $-0.5$. Therefore the same $2.25$-fold labour change pushes the two quantities in opposite directions.
-
-A common mistake is to assume that because total output rises, average product must rise too. Dividing by labour changes the exponent and reverses the direction.
+Output carries exponent $0.5$ while average product carries $-0.5$, so one labour multiplier acts on the two quantities in opposite directions.
 
 $$\\frac{Y(2.25L)}{Y(L)}=(2.25)^{0.5}=1.5$$
 
 $$\\frac{\\operatorname{AP}(2.25L)}{\\operatorname{AP}(L)} =(2.25)^{-0.5}=\\frac{1}{1.5}=\\frac{2}{3}$$
 
-Both multipliers in the statement are exact, so the statement is True.`,
+Rising total output does not carry average product with it, because dividing by labour flips the sign of the exponent. Both multipliers in the claim are exact, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 32,
@@ -4460,15 +3724,9 @@ $$Y(64)-0.75(64)=48, quad \\operatorname{AP}(225)=0.8, quad Y=180\\Rightarrow L=
     tactical_explanations: [
       `**A.** → True
 
-This claim asks where profit vanishes. Substituting $s=\\sqrt{q}$ turns the profit condition into a quadratic in $s$ with roots $10$ and $20$, so break-even occurs at $q=100$ and $q=400$ units.
-
-The substitution is the key move: with $\\sqrt{q}$ and $q$ both present, the equation is quadratic in disguise. Two roots are what a fixed charge produces — output must be large enough to cover it, but not so large that the linear variable cost overwhelms the square-root revenue.
-
-Set profit to zero and substitute $s=\\sqrt{q}$:
+Profit mixes $\\sqrt{q}$ with $q$ and a constant, so the substitution $s=\\sqrt{q}$ turns the break-even condition into a quadratic.
 
 $$60s - 2s^{2} - 400 = 0 \\quad \\Rightarrow \\quad s^{2} - 30s + 200 = 0$$
-
-Factor the quadratic:
 
 $$(s-10)(s-20) = 0 \\quad \\Rightarrow \\quad s = 10 \\text{ or } s = 20$$
 
@@ -4480,48 +3738,30 @@ Check one of them:
 
 $$\\Pi(400) = 60(20) - 800 - 400 = 0 \\;\\checkmark$$
 
-Both break-even points are as claimed, so the statement is true.`,
+Two roots rather than one is what a fixed charge produces, since output must be large enough to cover it yet small enough that linear variable cost has not overtaken square-root revenue. Both break-even points are as claimed, so the statement is True.`,
       `**B.** → False
 
-This claim tests an output below the lower break-even point. At $q=25$ revenue is $300$ against costs of $450$, so the period loses $150$.
-
-Small outputs cannot carry the fixed charge: revenue grows as a square root, so it is at its weakest exactly where the fixed charge is proportionally heaviest. Profit only turns positive once output passes $100$ units.
-
-Evaluate each component at $q=25$:
+Profit at a stated output is revenue minus variable cost minus the fixed charge, each evaluated at that output.
 
 $$R(25) = 60(5) = 300, \\qquad 2(25) = 50, \\qquad \\text{fixed } 400$$
 
-Combine them:
-
 $$\\Pi(25) = 300 - 50 - 400 = -150$$
 
-Profit is negative, so the statement is False.`,
+Small outputs are where the fixed charge weighs most heavily against square-root revenue, which is why profit turns positive only past $100$ units. Profit is negative at $25$ units, so the statement is False.`,
       `**C.** → False
 
-This claim tests an output beyond the upper break-even point. At $q=500$ revenue is about $1342$ against costs of $1400$, a loss of roughly $58$.
-
-The margin is thin, which is what makes the statement worth checking rather than guessing: $500$ is only a quarter above the upper break-even of $400$, and profit there was exactly zero. Past that point the linear cost outruns the square-root revenue, and losses widen from then on.
-
-Evaluate revenue:
+An output of $500$ units lies beyond the upper break-even point, so revenue and cost have to be compared there rather than assumed.
 
 $$R(500) = 60\\sqrt{500} \\approx 60 \\times 22.3607 \\approx 1341.6$$
 
-Evaluate costs:
-
 $$2(500) + 400 = 1400$$
-
-Combine:
 
 $$\\Pi(500) \\approx 1341.6 - 1400 \\approx -58.4$$
 
-Profit is negative, so the statement is False.`,
+The margin is thin enough to need the arithmetic, since $500$ is only a quarter above the output where profit was exactly zero. Profit is about $-58$, so the statement is False.`,
       `**D.** → False
 
-This claim confuses positive profit with rising profit. Profit is positive between $100$ and $400$ units, but inside that range it climbs to a peak near $225$ units and then falls back to zero.
-
-The shape follows from the quadratic in $s=\\sqrt{q}$: profit is $-2(s-10)(s-20)$, an inverted parabola in $s$, so it must turn over midway between the roots at $s=15$, that is $q=225$. A claim about monotonicity therefore cannot survive on an interval that contains the peak.
-
-Evaluate profit at three outputs inside the profitable range:
+Whether profit rises on the profitable range is a question about shape, and in the variable $s=\\sqrt{q}$ profit is $-2(s-10)(s-20)$, an inverted parabola.
 
 $$\\Pi(144) = 60(12) - 288 - 400 = 32$$
 
@@ -4529,14 +3769,10 @@ $$\\Pi(225) = 60(15) - 450 - 400 = 50$$
 
 $$\\Pi(324) = 60(18) - 648 - 400 = 32$$
 
-Profit rises to $50$ and then falls back, so the statement is False.`,
+Positive throughout an interval is weaker than rising throughout it, and the peak at $s=15$, that is $q=225$, sits inside the interval. Profit climbs to $50$ and falls back, so the statement is False.`,
       `**E.** → False
 
-This claim would require revenue's exponent to be $1$. It is $0.5$, so doubling output multiplies revenue by only about $1.414$, while the variable cost — which really is proportional — doubles exactly.
-
-That mismatch is what creates the upper break-even point in part A. If revenue were proportional, the comparison with a $2q$ cost would be settled once and for all by comparing coefficients, and profit would either grow forever or shrink forever.
-
-Compare the two scale factors:
+Proportionality would require revenue's exponent to be $1$, whereas that exponent is $0.5$ and only the variable cost is genuinely proportional.
 
 $$\\frac{R(2q)}{R(q)} = 2^{0.5} \\approx 1.414, \\qquad \\frac{2(2q)}{2q} = 2$$
 
@@ -4544,7 +3780,7 @@ Check with levels:
 
 $$R(100) = 600, \\qquad R(200) \\approx 848.5, \\qquad R(400) = 1200$$
 
-Quadrupling output only doubles revenue, so the statement is False.`,
+That mismatch is what creates the upper break-even point, since proportional revenue would settle the comparison once and for all by coefficients. Quadrupling output only doubles revenue, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 33,
@@ -4606,11 +3842,7 @@ $$\\Pi(144) = 32, \\qquad \\Pi(324) = 32, \\qquad \\Pi(25) = -150, \\qquad \\Pi(
     tactical_explanations: [
       `**A.** → True
 
-This claim asks where the two curves meet. Setting $40x^{0.5}=0.5x^{1.5}$ and cancelling $x^{0.5}$ leaves $40=0.5x$, so the scales coincide at $x=80$.
-
-Cancelling the common power is legitimate because the scale is strictly positive, and it turns a comparison of two curved functions into a single linear equation. The exponents differ by exactly $1$, which is why the leftover condition is linear in $x$.
-
-Set benefit equal to cost:
+Benefit and cost are equal where the two curves meet, and since both carry a factor $x^{0.5}$ on a strictly positive domain, that shared power can be cancelled.
 
 $$40x^{0.5} = 0.5x^{1.5} \\quad \\Rightarrow \\quad 40 = 0.5x^{1}$$
 
@@ -4620,14 +3852,10 @@ Confirm the shared value:
 
 $$B(80) = 40\\sqrt{80} \\approx 357.8, \\qquad C(80) = 0.5(80)^{1.5} \\approx 357.8$$
 
-Both sides are about $357.8$ million at scale $80$, so the statement is True.`,
+The exponents differ by exactly $1$, which is why what remains is linear in $x$ rather than another power equation. Both sides are about $357.8$ million at scale $80$, so the statement is True.`,
       `**B.** → True
 
-This claim orders the two curves above the crossing. The ratio $C/B = x/80$ rises with scale and equals $1$ at $x=80$, so cost is the larger for every $x>80$.
-
-The ratio argument settles the entire range at once, which a single test value could not do. It also shows the crossing is unique: a strictly increasing ratio passes through $1$ exactly once, so the ordering flips there and never flips back.
-
-Form the ratio of the two curves:
+The ordering of two power functions across a whole range is carried by their ratio, which here is itself a power function.
 
 $$\\frac{C(x)}{B(x)} = \\frac{0.5x^{1.5}}{40x^{0.5}} = \\frac{x}{80}$$
 
@@ -4639,14 +3867,10 @@ Test a larger programme:
 
 $$B(100) = 400, \\qquad C(100) = 0.5(1000) = 500$$
 
-Cost exceeds benefit beyond the crossing, so the statement is True.`,
+A single test value could not settle a whole range, while a strictly increasing ratio passes through $1$ once and never returns. Cost exceeds benefit beyond the crossing, so the statement is True.`,
       `**C.** → False
 
-This claim puts the optimum at the break-even scale. At $x=80$ the net benefit is exactly zero, whereas smaller programmes deliver a clear surplus — around $138$ million near $x\\approx27$.
-
-Break-even and best are different questions, and here they are as far apart as possible: the crossing is where the surplus has been fully eroded. Any scale beyond the peak still adds benefit, but adds cost faster, and by $x=80$ the accumulated extra cost has consumed the entire early gain.
-
-Evaluate the net benefit at several scales:
+The largest net benefit is a question about the difference $B-C$ rather than about where the two curves meet, so that difference has to be sampled across scales.
 
 $$N(16) = 160 - 32 = 128$$
 
@@ -4658,14 +3882,10 @@ Compare with the crossing:
 
 $$N(80) = 0$$
 
-The net benefit peaks near $x=27$ and is zero at $x=80$, so the statement is False.`,
+Break-even is where the surplus has been fully eroded, not where it is largest. The net benefit peaks near $x=27$ and is zero at $x=80$, so the statement is False.`,
       `**D.** → False
 
-This claim assigns proportional growth to both curves, when neither is proportional. Doubling the scale multiplies the benefit by $2^{0.5}\\approx1.414$ and the cost by $2^{1.5}\\approx2.828$.
-
-The difference between those two factors is the whole story of the programme. Cost grows twice as fast as benefit in proportional terms — $2.828$ against $1.414$ — which guarantees that some finite scale exhausts the surplus.
-
-Compute the two scale factors:
+Doubling acts on each curve through its own exponent, so the two scale factors are $2^{0.5}$ and $2^{1.5}$ rather than a common factor of $2$.
 
 $$\\frac{B(2x)}{B(x)} = 2^{0.5} \\approx 1.4142, \\qquad \\frac{C(2x)}{C(x)} = 2^{1.5} \\approx 2.8284$$
 
@@ -4673,14 +3893,10 @@ Check between two scales:
 
 $$B(40) \\approx 253.0, \\quad B(80) \\approx 357.8; \\qquad C(40) \\approx 126.5, \\quad C(80) \\approx 357.8$$
 
-Neither curve doubles, so the statement is False.`,
+Cost grows twice as fast as benefit in proportional terms, which is what guarantees the surplus is exhausted at some finite scale. Neither curve doubles, so the statement is False.`,
       `**E.** → False
 
-This claim reverses the ordering at a small scale. At $x=16$ the benefit is $160$ million and the cost only $32$ million, so the programme is strongly worthwhile there.
-
-Small scales are where the benefit curve dominates, because a square root rises steeply from zero while $x^{1.5}$ starts almost flat. The ratio confirms it directly: $16/80=0.2$, so cost is a fifth of benefit at that scale.
-
-Evaluate both curves at $x=16$:
+At small scales a square root rises steeply from zero while $x^{1.5}$ starts almost flat, so the two curves have to be evaluated rather than ordered by habit.
 
 $$B(16) = 40\\sqrt{16} = 40(4) = 160$$
 
@@ -4690,7 +3906,7 @@ Compare through the ratio:
 
 $$\\frac{C(16)}{B(16)} = \\frac{32}{160} = 0.2 = \\frac{16}{80}$$
 
-Benefit far exceeds cost at that scale, so the statement is False.`,
+The ordering that holds beyond the crossing does not extend backwards through it. Benefit is five times cost at that scale, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 34,
@@ -4752,11 +3968,7 @@ $$2^{0.5} \\approx 1.414 \\text{ for benefit}, \\qquad 2^{1.5} \\approx 2.828 \\
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the exponent, which two runs determine through their ratio. Dividing one run by the other cancels the coefficient and gives $(27/8)^{r}=2.25$, whose solution is $r=2/3$.
-
-The ratio $27/8$ is a perfect cube ratio, $(3/2)^{3}$, and the throughput ratio $2.25$ is $(3/2)^{2}$. Matching the two exponents of $3/2$ gives $3r=2$ directly, so no logarithms are strictly needed — though they confirm the same value.
-
-Divide the second run by the first:
+Two logged runs fix the exponent through their ratio, which cancels the coefficient and leaves a pure power equation.
 
 $$\\left(\\frac{27}{8}\\right)^{r} = \\frac{45}{20} = 2.25$$
 
@@ -4768,14 +3980,10 @@ Check with logarithms:
 
 $$r = \\frac{\\ln 2.25}{\\ln 3.375} = \\frac{0.8109}{1.2164} \\approx 0.6667$$
 
-The exponent is $2/3$, so the statement is True.`,
+Matching exponents is exact where the logarithmic route only approximates, and both feed sizes cooperate because $27/8$ is a perfect cube ratio. The exponent is $2/3$, so the statement is True.`,
       `**B.** → True
 
-This claim completes the calibration. With $r=2/3$ the shape factor at $g=8$ is $4$, so the coefficient is $20/4=5$.
-
-Using the second run as an independent check is what confirms the exponent as well: $27^{2/3}=9$ and $45/9=5$, the same coefficient. Two runs producing the same coefficient means the power form fits both points exactly.
-
-Evaluate the shape factor at the first run:
+With the exponent known, the coefficient is a logged throughput divided by its shape factor, and each cube resolves exactly.
 
 $$8^{2/3} = \\left(8^{1/3}\\right)^{2} = 2^{2} = 4, \\qquad 4A = 20 \\;\\Rightarrow\\; A = 5$$
 
@@ -4785,18 +3993,12 @@ $$27^{2/3} = 3^{2} = 9, \\qquad \\frac{45}{9} = 5$$
 
 $$T(g) = 5g^{2/3}$$
 
-The coefficient is $5$, so the statement is True.`,
+Two runs returning the same coefficient is a check on the exponent as well, since a wrong exponent would split them. The coefficient is $5$, so the statement is True.`,
       `**C.** → True
 
-This claim inverts the calibrated law at the licence limit. Solving $5g^{2/3}=80$ gives $g^{2/3}=16$, and raising to the power $3/2$ returns exactly $64$.
-
-Inverting an exponent of $2/3$ means raising to $3/2$, which magnifies the target ratio: throughput must rise fourfold from the first logged run while the feed rises eightfold, from $8$ to $64$. Estimating the feed by proportion would badly understate the gas required.
-
-Set throughput to the ceiling:
+A licensed ceiling on throughput is inverted into a gas feed by raising both sides to the reciprocal exponent $3/2$.
 
 $$5g^{2/3} = 80 \\quad \\Rightarrow \\quad g^{2/3} = 16$$
-
-Raise both sides to the reciprocal power:
 
 $$g = 16^{3/2} = \\left(16^{1/2}\\right)^{3} = 4^{3} = 64$$
 
@@ -4804,14 +4006,10 @@ Confirm by substitution:
 
 $$T(64) = 5 \\times 64^{2/3} = 5(16) = 80$$
 
-The ceiling binds at a feed of $64$, so the statement is True.`,
+Estimating the feed by proportion would badly understate it, since throughput rises fourfold while the feed rises eightfold. The ceiling binds at a feed of $64$, so the statement is True.`,
       `**D.** → False
 
-This claim assumes proportional response. With exponent $2/3$, doubling the feed multiplies throughput by $2^{2/3}\\approx1.587$, a rise of about $59\\%$.
-
-Below-one exponents always mean the input has to grow faster than the output. Here doubling throughput would take a feed multiple of $2^{3/2}\\approx2.83$ — nearly three times the gas — which is the same arithmetic as the licence calculation in part C.
-
-Form the scale factor:
+Doubling the feed acts through the exponent $2/3$, so the throughput multiplier is a power of two rather than two itself.
 
 $$\\frac{T(2g)}{T(g)} = 2^{2/3} \\approx 1.5874$$
 
@@ -4823,14 +4021,10 @@ Check with logged values:
 
 $$T(8) = 20, \\qquad T(16) = 5 \\times 16^{2/3} \\approx 5 \\times 6.35 \\approx 31.7$$
 
-Throughput rises by about $59\\%$, not $100\\%$, so the statement is False.`,
+An exponent below one always means the input grows faster than the output, here by nearly three times the gas for a doubling. Throughput rises by about $59\\%$, so the statement is False.`,
       `**E.** → False
 
-This claim reverses the behaviour of the average. Dividing throughput by the feed gives $5g^{-1/3}$, whose exponent is negative, so gas efficiency falls as the furnace is pushed harder.
-
-Total throughput and throughput per cubic metre move in opposite directions, and the exponent decides which is which: since $2/3<1$, dividing by $g$ leaves a negative exponent. Running the furnace at the licence limit is therefore the least gas-efficient way to operate it.
-
-Divide throughput by the feed:
+Throughput per cubic metre is the calibrated law divided by the feed, which lowers the exponent to $2/3-1=-1/3$.
 
 $$\\frac{T(g)}{g} = \\frac{5g^{2/3}}{g} = 5g^{-1/3}$$
 
@@ -4838,7 +4032,7 @@ Evaluate at the three feeds in play:
 
 $$\\frac{20}{8} = 2.5, \\qquad \\frac{45}{27} \\approx 1.67, \\qquad \\frac{80}{64} = 1.25$$
 
-Efficiency halves across that range, so the statement is False.`,
+Total throughput and gas efficiency move in opposite directions once the exponent falls below one, so the licensed maximum is the least efficient operating point. Efficiency halves across that range, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 35,
@@ -4902,11 +4096,7 @@ $$\\frac{T(g)}{g} = 5g^{-1/3}: \\quad 2.5,\\; 1.67,\\; 1.25 \\text{ at } g = 8,\
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the constant in the storage law. Dividing the surveyed $48$ cubic metres by the shape factor $4^{2}=16$ gives $A=3$.
-
-The tapered shape is what makes the exponent $2$ plausible: a basin with vertical walls would store volume proportional to depth, while sloping walls widen the surface as the water rises. The coefficient carries the geometry of that taper.
-
-Evaluate the shape factor and divide:
+The tapered geometry fixes the exponent at $2$, so a single survey reading is enough to determine the coefficient.
 
 $$4^{2} = 16, \\qquad 16A = 48 \\quad \\Rightarrow \\quad A = 3$$
 
@@ -4916,14 +4106,10 @@ Check the survey:
 
 $$V(4) = 3(16) = 48 \\;\\checkmark$$
 
-The coefficient is $3$, so the statement is True.`,
+Vertical walls would store volume proportional to depth, while sloping walls widen the surface as the water rises and load that geometry into the coefficient. The coefficient is $3$, so the statement is True.`,
       `**B.** → True
 
-This claim extrapolates the storage law to a deeper fill. With $A=3$ the volume at $10$ metres is $3 \\times 100 = 300$ cubic metres.
-
-The comparison with the survey is worth noting: depth rises by a factor of $2.5$ while stored volume rises by a factor of $6.25$. Squaring the depth ratio is what turns a modest rise in level into a large rise in capacity.
-
-Evaluate the storage law:
+Extrapolating the calibrated law to a deeper fill squares the depth, either directly or through the ratio against the survey.
 
 $$V(10) = 3(10)^{2} = 3(100) = 300$$
 
@@ -4931,29 +4117,19 @@ Confirm with the scale factor from the survey:
 
 $$\\left(\\frac{10}{4}\\right)^{2} = 6.25, \\qquad 48 \\times 6.25 = 300$$
 
-The basin holds $300$ cubic metres, so the statement is True.`,
+Depth rises by a factor of $2.5$ while stored volume rises by $6.25$, since it is the ratio that gets squared rather than the difference. The basin holds $300$ cubic metres, so the statement is True.`,
       `**C.** → True
 
-The calibrated storage law is $V(d)=3d^2$, so equal depth intervals need not add equal volumes. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+Equal depth intervals need not add equal volumes under a squared law, so each increment has to be computed from the calibrated model.
 
 $$V(9)-V(7)=3(9^2-7^2)=3(32)=96$$
 
-The relevant comparison can then be written as
-
 $$\\frac{V(9)-V(7)}{V(7)-V(5)}=\\frac{96}{3(49-25)}=\\frac{96}{72}=\\frac{4}{3}$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The later two-metre rise adds exactly four-thirds as much volume. Therefore the statement is True.`,
+The exponent governs the ratio of increments rather than a constant addition per metre. The later two-metre rise adds exactly four thirds as much volume, so the statement is True.`,
       `**D.** → True
 
-This claim inverts the storage law. Solving $3d^{2}=675$ gives $d^{2}=225$, so the depth is exactly $15$ metres.
-
-Inverting a squared law takes the square root of the volume ratio, which compresses large differences: the target is more than fourteen times the surveyed volume, yet the depth only needs to grow by a factor of $3.75$.
-
-Set the storage law equal to the target:
+Inverting a squared law means taking a square root, so a target volume converts into a depth once the coefficient is divided out.
 
 $$3d^{2} = 675 \\quad \\Rightarrow \\quad d^{2} = 225 \\quad \\Rightarrow \\quad d = 15$$
 
@@ -4961,14 +4137,10 @@ Confirm by substitution:
 
 $$V(15) = 3(225) = 675 \\;\\checkmark$$
 
-The depth is $15$ metres, so the statement is True.`,
+Square roots compress large differences, so a target more than fourteen times the surveyed volume needs a depth only $3.75$ times as great. The depth is $15$ metres, so the statement is True.`,
       `**E.** → True
 
-This claim concerns a derived quantity. Dividing volume by depth gives $3d$, which increases with depth, so each additional metre of depth adds more water than the previous one.
-
-Dividing by the input lowers the exponent by one, and starting from $2$ leaves $1$ — still increasing. This is the arithmetic counterpart of the taper: the deeper the basin is filled, the wider the water surface and the more each extra metre holds.
-
-Divide the storage law by depth:
+Stored volume per metre of depth is the storage law divided by $d$, which lowers the exponent from $2$ to $1$.
 
 $$\\frac{V(d)}{d} = \\frac{3d^{2}}{d} = 3d$$
 
@@ -4976,7 +4148,7 @@ Evaluate at three depths:
 
 $$\\frac{V(4)}{4} = 12, \\qquad \\frac{V(10)}{10} = 30, \\qquad \\frac{V(15)}{15} = 45$$
 
-Volume per metre of depth rises steadily, so the statement is True.`,
+Dividing by the input lowers the exponent without turning the quantity around while it stays positive, which is the arithmetic counterpart of the taper. Volume per metre rises steadily, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 36,
@@ -5040,11 +4212,7 @@ $$12,\\; 30,\\; 45 \\text{ cubic metres per metre at } d = 4,\\,10,\\,15$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the constant, which has to be reconstructed from a *change* in the index rather than a level. The two speeds give shape factors $1600$ and $3600$, and the recorded rise of $100$ points then fixes $A=0.05$.
-
-Dividing $100$ by either speed squared on its own is the standard error, and it produces a coefficient roughly twice or four times too small. What the report records is a difference, so the coefficient multiplies the difference of the two squares.
-
-Evaluate both shape factors:
+The report records a change in the index between two test speeds, so the coefficient multiplies the difference of the two shape factors.
 
 $$40^{2} = 1600, \\qquad 60^{2} = 3600$$
 
@@ -5054,14 +4222,10 @@ $$A(3600 - 1600) = 100 \\quad \\Rightarrow \\quad 2000A = 100 \\quad \\Rightarro
 
 $$E(v) = 0.05v^{2}$$
 
-The coefficient is $0.05$, so the statement is True.`,
+Dividing $100$ by either speed squared alone would treat a difference as a level and return a coefficient several times too small. The coefficient is $0.05$, so the statement is True.`,
       `**B.** → True
 
-This claim asks for a level at the upper test speed. With $A=0.05$ the index reads $0.05 \\times 3600 = 180$.
-
-The pair of levels is the natural check on part A: the lower speed gives $80$, and the difference $180-80=100$ reproduces the report exactly. Any candidate coefficient that fails this test has been recovered incorrectly.
-
-Evaluate the index at the upper speed:
+A level at the upper test speed is the calibrated law evaluated there, with the shape factor already in hand.
 
 $$E(60) = 0.05(3600) = 180$$
 
@@ -5069,29 +4233,19 @@ Evaluate at the lower speed and difference them:
 
 $$E(40) = 0.05(1600) = 80, \\qquad 180 - 80 = 100 \\;\\checkmark$$
 
-The index reads $180$, so the statement is True.`,
+Reproducing the recorded $100$-point rise is the test any candidate coefficient must pass. The index reads $180$ at $60$ km/h, so the statement is True.`,
       `**C.** → True
 
-The speed ratio is $90/72=1.25$, and the square law converts it to an exact index factor. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A percentage change under a square law comes from squaring the speed ratio, here $90/72=1.25$, and subtracting one.
 
 $$\\frac{E(90)}{E(72)}=\\left(\\frac{90}{72}\\right)^2=1.25^2=1.5625$$
 
-The relevant comparison can then be written as
-
 $$(1.5625-1)\\times100\\%=56.25\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The index rises by exactly $56.25\\%$. Therefore the statement is True.`,
+The exponent scales the ratio multiplicatively rather than adding a percentage of its own. The index rises by exactly $56.25\\%$, so the statement is True.`,
       `**D.** → True
 
-This claim evaluates the index at motorway speed. With $A=0.05$, the index at $100$ km/h is $0.05 \\times 10000 = 500$.
-
-Read backwards, the same computation inverts the index: $0.05v^{2}=500$ gives $v^{2}=10000$ and $v=100$. It also puts the safety message in perspective — $2.5$ times the lower test speed produces $6.25$ times the braking energy.
-
-Evaluate the index:
+Motorway speed is another level of the calibrated index, and the same equation read backwards recovers the speed from a reading.
 
 $$E(100) = 0.05(100)^{2} = 0.05(10000) = 500$$
 
@@ -5099,22 +4253,16 @@ Confirm by inversion:
 
 $$0.05v^{2} = 500 \\;\\Rightarrow\\; v^{2} = 10000 \\;\\Rightarrow\\; v = 100$$
 
-The index reaches $500$ at $100$ km/h, so the statement is True.`,
+Speed enters squared, so $2.5$ times the lower test speed produces $6.25$ times the braking energy rather than $2.5$ times. The index reaches $500$ at $100$ km/h, so the statement is True.`,
       `**E.** → True
 
-The recorded change calibrates the index as $E(v)=0.05v^2$, which can be inverted for a specified reading. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
+Converting an index reading back into a speed inverts the calibrated square law, dividing by the coefficient and then taking a square root.
 
-A direct calculation gives
-
-$$0.05v^2=320 \\quad\\Rightarrow\\quad v^2=6400$$
-
-The relevant comparison can then be written as
+$$0.05v^2=320 \\quad \\Rightarrow \\quad v^2=6400$$
 
 $$v=\\sqrt{6400}=80$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The positive speed corresponding to index $320$ is $80$ km/h. Therefore the statement is True.`,
+Only the positive root is admissible, since speed is positive throughout this model. The reading of $320$ corresponds to $80$ km/h, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 37,
@@ -5176,56 +4324,34 @@ $$E(100) = 500, \\qquad E = 500 \\;\\Rightarrow\\; v = 100$$
     tactical_explanations: [
       `**A.** → True
 
-The six-metre observations give $S(h)=3h^2$ and $V(h)=h^3/3$; capacity must first be inverted for height. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
+Steel and capacity are separate laws sharing one variable, so a capacity target has to be inverted into a height before the steel law can be applied.
 
-A direct calculation gives
-
-$$\\frac{h^3}{3}=192 \\quad\\Rightarrow\\quad h=\\sqrt[3]{576}\\approx8.32$$
-
-The relevant comparison can then be written as
+$$\\frac{h^3}{3}=192 \\quad \\Rightarrow \\quad h=\\sqrt[3]{576}\\approx8.32$$
 
 $$S(h)=3h^2\\approx3(8.32)^2\\approx207.7$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The target-capacity silo requires about $208$ square metres of steel. Therefore the statement is True.`,
+Going straight from capacity to steel by proportion would skip the change of exponent from $3$ to $2$. The target silo needs about $208$ square metres of steel, so the statement is True.`,
       `**B.** → True
 
-The steel threshold is found from the calibrated surface law, with the strict inequality preserved. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
+A steel threshold is a condition on the surface law, and the inequality survives the square root because height is positive.
 
-A direct calculation gives
-
-$$3h^2>200 \\quad\\Rightarrow\\quad h^2>\\frac{200}{3}$$
-
-The relevant comparison can then be written as
+$$3h^2>200 \\quad \\Rightarrow \\quad h^2>\\frac{200}{3}$$
 
 $$h>\\sqrt{\\frac{200}{3}}\\approx8.165$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Steel use exceeds $200$ square metres beyond about $8.16$ metres. Therefore the statement is True.`,
+A positive exponent preserves the direction of the inequality rather than reversing it. Steel use exceeds $200$ square metres beyond about $8.16$ metres, so the statement is True.`,
       `**C.** → True
 
-A fifty-percent height increase multiplies height by $1.5$, while steel scales with height squared. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A fifty percent height increase is a multiplier of $1.5$ acting through the surface exponent of $2$.
 
 $$\\frac{S(1.5h)}{S(h)}=1.5^2=2.25$$
 
-The relevant comparison can then be written as
-
 $$(2.25-1)\\times100\\%=125\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Steel use rises by exactly $125\\%$. Therefore the statement is True.`,
+The percentage rise is the squared multiplier minus one, not the height increase carried over unchanged. Steel use rises by exactly $125\\%$, so the statement is True.`,
       `**D.** → True
 
-This claim compares the two laws through their ratio. Dividing steel by capacity gives $9/h$, a power function with exponent $-1$, so taller silos need less steel per cubic metre stored.
-
-This is why large tanks are cheaper per unit of contents: the exponent of the surface law is one less than that of the volume law, so their ratio must fall with size. The result is structural — it depends only on the exponents $2$ and $3$, not on the particular coefficients.
-
-Form the ratio of the two calibrated laws:
+Steel per cubic metre of capacity is the ratio of the two calibrated laws, whose exponents differ by exactly one.
 
 $$\\frac{S(h)}{V(h)} = \\frac{3h^{2}}{h^{3}/3} = \\frac{9h^{2}}{h^{3}} = \\frac{9}{h}$$
 
@@ -5233,14 +4359,10 @@ Evaluate at three heights:
 
 $$\\frac{9}{6} = 1.5, \\qquad \\frac{9}{9} = 1, \\qquad \\frac{9}{12} = 0.75$$
 
-Steel per cubic metre halves between six and twelve metres, so the statement is True.`,
+The result depends only on the exponents $2$ and $3$, not on the particular coefficients, which is why large tanks are always cheaper per unit stored. Steel per cubic metre halves between six and twelve metres, so the statement is True.`,
       `**E.** → False
 
-This claim treats the steel law as proportional. Its exponent is $2$, so doubling the height quadruples the steel: $3h^{2}$ becomes $12h^{2}$.
-
-Doubling would require an exponent of $1$, which no surface law has. The mistake also breaks the square-cube comparison in part D: if steel doubled while capacity multiplied by eight, the steel-per-capacity ratio would fall four times as fast as it really does.
-
-Apply the scale factor:
+The steel law has exponent $2$, so a height multiplier enters squared.
 
 $$\\frac{S(2h)}{S(h)} = 2^{2} = 4$$
 
@@ -5248,7 +4370,7 @@ Check with concrete silos:
 
 $$S(6) = 108, \\qquad S(12) = 3(144) = 432, \\qquad \\frac{432}{108} = 4$$
 
-Steel quadruples, not doubles, so the statement is False.`,
+Doubling would require exponent $1$, which no surface law has, and would also break the square-cube comparison of the previous part. Steel quadruples, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 38,
@@ -5310,59 +4432,49 @@ $$\\frac{S(h)}{V(h)} = \\frac{9}{h}, \\qquad 1.5,\\; 1,\\; 0.75 \\text{ at } h =
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the coefficient from the difference between two consignments. The added $60$ hours equals $T(225)-T(25)$, so both square-root factors are needed. Their values are $15$ and $5$.
-
-A common mistake is to attach $60$ hours to the larger consignment alone. That would ignore the inspection time already required at $25$ shipments.
+The added $60$ hours is the difference between two inspection times, so both square-root factors enter the calibration.
 
 $$T(225)-T(25)=A(\\sqrt{225}-\\sqrt{25})=60$$
 
-$$A(15-5)=60 \\quad \\Rightarrow \\quad A=6, qquad T(n)=6\\sqrt n$$
+$$A(15-5)=60 \\quad \\Rightarrow \\quad A=6, \\qquad T(n)=6\\sqrt n$$
 
-The difference calibration produces exactly the law stated, so the statement is True.`,
+Attaching the $60$ hours to the larger consignment alone would ignore the time already required at $25$ shipments. The difference calibration gives $T(n)=6\\sqrt{n}$, so the statement is True.`,
       `**B.** → True
 
-This claim asks to convert an hours ceiling into a shipment ceiling. Since $T(n)=6\\sqrt n$ is increasing, the largest feasible consignment occurs where the available $90$ hours are fully used. The resulting equation must be inverted.
-
-A common mistake is to compute $90/6=15$ and call that the shipment count. Fifteen is $\\sqrt n$, not $n$.
+An hours ceiling becomes a shipment ceiling by inverting an increasing law, so the boundary is where the available hours are exactly used.
 
 $$6\\sqrt n\\le90 \\quad \\Rightarrow \\quad \\sqrt n\\le15$$
 
-$$n\\le15^2=225, qquad T(225)=6(15)=90$$
+$$n\\le15^2=225, \\qquad T(225)=6(15)=90$$
 
-Thus the staffing ceiling covers no more than $225$ shipments, and the boundary is attainable. The claim is true.`,
+The intermediate $15$ is $\\sqrt{n}$ rather than $n$, so the squaring step cannot be skipped. The ceiling covers at most $225$ shipments and the boundary is attainable, so the statement is True.`,
       `**C.** → True
 
-This claim asks for a non-quadrupling scale factor. For a square-root law, multiplying shipments by $k$ multiplies hours by $\\sqrt k$. The coefficient and starting consignment cancel in the ratio.
-
-A common mistake is to use $2.25$ itself as the time multiplier, which would impose a proportional model rather than the stated exponent $0.5$.
+For a square-root law a consignment multiplier $k$ acts on total time as $\\sqrt{k}$, and both the coefficient and the starting size cancel.
 
 $$\\frac{T(2.25n)}{T(n)} =\\frac{6(2.25n)^{0.5}}{6n^{0.5}} =(2.25)^{0.5}$$
 
 $$(2.25)^{0.5}=\\sqrt{\\frac94}=\\frac32=1.5$$
 
-The inspection-time multiplier is exactly $1.5$, so the statement is True.`,
+Using $2.25$ itself as the time multiplier would impose exponent $1$ in place of the stated $0.5$. The inspection-time multiplier is exactly $1.5$, so the statement is True.`,
       `**D.** → True
 
-This claim asks for a derived average rather than total inspection time. At $144$ shipments, total time is $6\\sqrt{144}=72$ hours. Dividing by the shipment count gives one half hour per shipment.
-
-A common mistake is to confuse the total $72$ with the average, or to divide the coefficient $6$ by $144$ without retaining the square-root factor.
+Time per shipment is total time divided by the shipment count, which lowers the exponent to $-0.5$.
 
 $$\\frac{T(n)}{n}=\\frac{6n^{0.5}}{n}=6n^{-0.5}$$
 
 $$\\frac{T(144)}{144} =\\frac{6}{\\sqrt{144}} =\\frac{6}{12}=0.5$$
 
-Time per shipment is exactly $0.5$ hour at $144$ shipments, so the statement is True.`,
+The total of $72$ hours is a different quantity from the average, and the square-root factor has to be retained when dividing. Time per shipment is exactly $0.5$ hour at $144$ shipments, so the statement is True.`,
       `**E.** → False
 
-This claim asks whether total time is proportional to shipment count. Proportionality requires exponent $1$ and a constant time per shipment. Here the exponent is $0.5$, and time per shipment is $6n^{-0.5}$, which falls as consignments grow.
-
-A common mistake is to infer proportionality merely because both $T$ and $n$ increase. Increasing together is weaker than increasing in a constant ratio.
+Proportionality requires exponent $1$ and therefore a constant time per shipment, which is stronger than the two quantities merely rising together.
 
 $$\\frac{T(kn)}{T(n)}=k^{0.5}\\ne k \\quad \\text{for } k\\ne1$$
 
 $$\\frac{T(225)}{225}=\\frac{90}{225}=0.4, \\qquad \\frac{T(25)}{25}=\\frac{30}{25}=1.2$$
 
-The per-shipment rate is not constant, so total time is not proportional to shipments. The claim is false.`,
+Total time and shipment count do move together, but not in a constant ratio. The per-shipment rate is not constant, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 39,
@@ -5398,11 +4510,7 @@ $$6\\sqrt n\\le90\\Rightarrow n\\le225, quad (2.25)^{0.5}=1.5, quad \\frac{T(144
     tactical_explanations: [
       `**A.** → True
 
-This claim evaluates the law at twice the metered distance. The meter reading gives $A=1200$, and at four metres the illuminance is $1200/16=75$ lux.
-
-Negative exponents invert the shape factor, so a larger distance produces a smaller reading. Multiplying rather than dividing by $d^{2}$ is the common slip and would give an absurd $4800$ lux further from the lamp.
-
-Recover the coefficient:
+The inverse-square form fixes the exponent at $-2$, so the meter reading at two metres is all that is needed to pin the coefficient.
 
 $$A(2)^{-2} = 300 \\quad \\Rightarrow \\quad \\frac{A}{4} = 300 \\quad \\Rightarrow \\quad A = 1200$$
 
@@ -5412,14 +4520,10 @@ Evaluate at four metres:
 
 $$I(4) = \\frac{1200}{16} = 75$$
 
-The illuminance is $75$ lux, so the statement is True.`,
+A negative exponent divides by the shape factor rather than multiplying by it, which is why the reading falls with distance. The illuminance is $75$ lux, so the statement is True.`,
       `**B.** → True
 
-This claim states the inverse-square rule as a scale factor. Doubling the distance multiplies illuminance by $2^{-2}=1/4$, independently of the coefficient and of the starting distance.
-
-Part A is one instance of this rule — $300$ lux at two metres becoming $75$ lux at four — but the factor holds everywhere along the gallery, which is what makes it a rule rather than a coincidence.
-
-Form the scale factor:
+A scale factor depends only on the exponent, so doubling the distance acts through $2^{-2}$ wherever along the gallery it happens.
 
 $$\\frac{I(2d)}{I(d)} = \\frac{A(2d)^{-2}}{Ad^{-2}} = 2^{-2} = \\frac{1}{4}$$
 
@@ -5427,29 +4531,19 @@ Check two separate doublings:
 
 $$I(2) = 300, \\; I(4) = 75; \\qquad I(5) = 48, \\; I(10) = 12$$
 
-Both fall to a quarter, so the statement is True.`,
+The first pair is one instance of the rule and the second shows it is not tied to the metered distance. Both fall to a quarter, so the statement is True.`,
       `**C.** → True
 
-The target is a fraction of the two-metre reading, so the coefficient cancels in a distance ratio. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A reading expressed as a fraction of the two-metre value is a ratio, so the coefficient cancels and only the distance multiplier matters.
 
 $$\\frac{I(d)}{I(2)}=\\left(\\frac{d}{2}\\right)^{-2}=\\frac{1}{9}$$
 
-The relevant comparison can then be written as
+$$\\left(\\frac{d}{2}\\right)^2=9 \\quad \\Rightarrow \\quad d=6$$
 
-$$\\left(\\frac{d}{2}\\right)^2=9 \\quad\\Rightarrow\\quad d=6$$
-
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-At six metres the reading is exactly one ninth of the two-metre value. Therefore the statement is True.`,
+The negative exponent inverts the ratio, so a ninth of the light corresponds to three times the distance rather than a ninth of it. At six metres the reading is exactly one ninth of the two-metre value, so the statement is True.`,
       `**D.** → True
 
-This claim applies the scale factor in the other direction. Halving the distance multiplies illuminance by $(1/2)^{-2}=4$.
-
-Sign handling is the only difficulty: the multiplier $1/2$ raised to the power $-2$ inverts and then squares, giving $4$ rather than $1/4$. The symmetry with part B is exact — moving closer gains as much as moving away loses.
-
-Apply the scale factor:
+Moving closer is the same rule with a multiplier below one, and a negative exponent inverts before squaring.
 
 $$\\frac{I(d/2)}{I(d)} = \\left(\\frac{1}{2}\\right)^{-2} = 4$$
 
@@ -5457,14 +4551,10 @@ Check on the metered distance:
 
 $$I(2) = 300, \\qquad I(1) = \\frac{1200}{1} = 1200$$
 
-Illuminance quadruples, so the statement is True.`,
+Reading the multiplier as $1/4$ would apply the rule in the wrong direction, whereas approaching gains exactly what retreating loses. Illuminance quadruples, so the statement is True.`,
       `**E.** → True
 
-This claim asks for the direction of the law, which the sign of the exponent settles. With $A=1200>0$ and exponent $-2<0$, illuminance decreases on the whole gallery.
-
-The decline is also decelerating: most of the light is lost in the first few metres, and beyond about eight metres the readings change slowly in absolute terms. Both facts come from the same negative exponent.
-
-Read the sign structure:
+The direction of a power law is settled by the sign of its exponent together with the sign of its coefficient.
 
 $$I(d) = 1200\\,d^{-2}, \\qquad A > 0, \\quad r = -2 < 0$$
 
@@ -5472,7 +4562,7 @@ Trace the readings down the gallery:
 
 $$I(1) = 1200, \\quad I(2) = 300, \\quad I(4) = 75, \\quad I(10) = 12$$
 
-Illuminance falls monotonically with distance, so the statement is True.`,
+The decline is also decelerating, so most of the light is lost in the first few metres rather than spread evenly along the gallery. Illuminance falls monotonically with distance, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 40,
@@ -5534,59 +4624,49 @@ $$d = \\sqrt{\\frac{1200}{I}}, \\qquad I = 48 \\;\\Rightarrow\\; d = 5$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the coefficient from a bill difference. Because $0.75=3/4$, the exact shape factors are $16^{3/4}=8$ and $81^{3/4}=27$. Their difference, not either factor alone, multiplies $A$ to produce the $1900$ increase.
-
-A common mistake is to set $A81^{0.75}=1900$. The record describes a jump between two bills.
+Since $0.75=3/4$ and both engagement sizes are fourth powers, the shape factors resolve exactly, and the recorded rise is a difference of two bills.
 
 $$C(81)-C(16)=A(27-8)=1900$$
 
-$$19A=1900 \\quad \\Rightarrow \\quad A=100, qquad C(n)=100n^{0.75}$$
+$$19A=1900 \\quad \\Rightarrow \\quad A=100, \\qquad C(n)=100n^{0.75}$$
 
-The recovered schedule is exactly the one in the statement, so the statement is True.`,
+Setting $A \\cdot 81^{0.75}=1900$ would treat a jump between two bills as a single bill. The recovered schedule is $C(n)=100n^{0.75}$, so the statement is True.`,
       `**B.** → True
 
-This claim converts a spending cap into an account ceiling. The schedule $C(n)=100n^{3/4}$ is increasing, so the largest engagement under the cap is found by solving the boundary equation. Raising both sides to the inverse power $4/3$ completes the inversion.
-
-A common mistake is to divide by $100$ and report $27$ accounts. Twenty-seven is the value of $n^{3/4}$.
+A spending cap becomes an account ceiling because the schedule is increasing, and inverting it means raising both sides to the power $4/3$.
 
 $$100n^{3/4}\\le2700 \\quad \\Rightarrow \\quad n^{3/4}\\le27$$
 
 $$n\\le27^{4/3}=(\\sqrt[3]{27})^4=3^4=81$$
 
-The endpoint costs $C(81)=2700$, so the cap covers at most $81$ accounts. The claim is true.`,
+Stopping at $27$ would report the value of $n^{3/4}$ rather than the account count itself. The endpoint costs exactly $2700$ and the cap therefore covers at most $81$ accounts, so the statement is True.`,
       `**C.** → True
 
-This claim asks for the crossover with a linear rival. A tie requires $100n^{3/4}=50n$. For positive $n$, dividing by $50n^{3/4}$ leaves an equation in $n^{1/4}$. The relative exponent also determines which firm is cheaper after the tie.
-
-A common mistake is to compare $100$ with $50$ and ignore that the rival's exponent is larger.
+A tie with a linear rival is an equation between exponents $3/4$ and $1$, and dividing by $50n^{3/4}$ on the positive domain leaves a power of $n^{1/4}$.
 
 $$100n^{3/4}=50n \\quad \\Rightarrow \\quad 2=n^{1/4} \\quad \\Rightarrow \\quad n=16$$
 
 $$\\frac{C(n)}{R(n)} =\\frac{100n^{3/4}}{50n} =2n^{-1/4}<1 \\quad \\text{when } n>16$$
 
-The firms tie at $16$, and the practice is cheaper beyond that point, so the statement is True.`,
+Comparing the coefficients $100$ and $50$ alone would ignore that the rival carries the larger exponent. The firms tie at $16$ accounts and the practice is cheaper beyond, so the statement is True.`,
       `**D.** → True
 
-This claim asks to invert the calibrated audit schedule for a target bill. Dividing $12500$ by $100$ gives $n^{3/4}=125$. Since $125=5^3$, applying the inverse exponent $4/3$ produces the exact fourth power $5^4$.
-
-A common mistake is to treat the exponent as $3/4$ during inversion instead of using its reciprocal.
+Inverting the schedule for a target bill uses the reciprocal exponent $4/3$, and the intermediate value is a perfect cube.
 
 $$100n^{3/4}=12500 \\quad \\Rightarrow \\quad n^{3/4}=125=5^3$$
 
 $$n=125^{4/3}=(5^3)^{4/3}=5^4=625$$
 
-A direct check gives $100(625^{3/4})=100(125)=12500$. The target bill corresponds to $625$ accounts, so the statement is True.`,
+Applying $3/4$ again in place of its reciprocal would run the schedule forwards rather than backwards. A direct check gives $100(625^{3/4})=100(125)=12500$, so the statement is True.`,
       `**E.** → False
 
-This claim asks for the percentage effect of doubling accounts. The scale multiplier is $2^{0.75}=2^{3/4}$, not $1+0.75$. Numerically it is about $1.682$, so the increase is about $68.2\\%$.
-
-A common mistake is to read the exponent as a percentage response. Exponents govern multiplicative scaling through powers, not direct percentage addition.
+Doubling the accounts acts through the exponent as $2^{3/4}$, a multiplicative scaling rather than an added percentage.
 
 $$\\frac{C(2n)}{C(n)}=2^{3/4}\\approx1.6818$$
 
 $$\\frac{C(2n)-C(n)}{C(n)} =2^{3/4}-1 \\approx0.6818=68.18\\%$$
 
-Doubling raises the bill by about $68\\%$, not exactly $75\\%$, so the statement is False.`,
+Reading the exponent $0.75$ as the percentage response confuses a power with a proportion. Doubling raises the bill by about $68\\%$ rather than exactly $75\\%$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 41,
@@ -5622,59 +4702,49 @@ $$C(n)\\le2700\\Rightarrow n\\le81, qquad C(n)=12500\\Rightarrow n=625$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the coefficient from the difference between two monitor readings. With exponent $-1.5=-3/2$, the shape factors at $4$ and $16$ metres are $1/8$ and $1/64$. Their difference is $7/64$.
-
-A common mistake is to treat $43.75$ as either monitor's reading. It is the near reading minus the far reading.
+The monitors record a gap between two concentrations, so the coefficient multiplies the difference of two shape factors with exponent $-3/2$.
 
 $$c(4)-c(16) =A\\left(4^{-3/2}-16^{-3/2}\\right) =A\\left(\\frac18-\\frac1{64}\\right)$$
 
 $$A\\frac7{64}=43.75=\\frac{175}{4} \\quad \\Rightarrow \\quad A=400$$
 
-Therefore $c(x)=400x^{-1.5}$, exactly as stated, so the statement is True.`,
+Treating $43.75$ as either monitor's own reading would calibrate the law to a level it never recorded. The concentration law is $c(x)=400x^{-1.5}$, so the statement is True.`,
       `**B.** → True
 
-This claim asks for the distance threshold corresponding to a concentration ceiling. Because the exponent is negative and $A>0$, concentration falls as distance grows. Solving the boundary $c(x)=6.25$ therefore separates unsafe smaller distances from qualifying larger distances.
-
-A common mistake is to reverse the inequality when interpreting a decreasing function.
+Because the exponent is negative and the coefficient positive, concentration falls with distance, so a boundary distance separates the two sides of the ceiling.
 
 $$400x^{-3/2}=6.25 \\quad \\Rightarrow \\quad x^{3/2}=\\frac{400}{6.25}=64$$
 
-$$x=64^{2/3}=(\\sqrt[3]{64})^2=4^2=16, qquad c(x)\\le6.25 \\Longleftrightarrow x\\ge16$$
+$$x=64^{2/3}=(\\sqrt[3]{64})^2=4^2=16, \\qquad c(x)\\le6.25 \\Longleftrightarrow x\\ge16$$
 
-The threshold and inequality direction both match the statement, so it is true.`,
+A decreasing function flips the direction of the inequality when it is carried from concentrations over to distances. Both the threshold and the direction match the claim, so the statement is True.`,
       `**C.** → True
 
-This claim asks for the exact effect of halving distance. For exponent $-1.5$, the distance multiplier $1/2$ is itself raised to $-1.5$, which reverses it and produces $2^{1.5}$. This equals $2\\sqrt2$ exactly.
-
-A common mistake is to say concentration merely doubles. That would correspond to exponent $-1$, not $-1.5$.
+Halving the distance is a multiplier of $1/2$ raised to the exponent $-1.5$, which inverts it and then applies the three-halves power.
 
 $$\\frac{c(x/2)}{c(x)} =\\left(\\frac12\\right)^{-1.5} =2^{1.5}$$
 
 $$2^{1.5}=2^{3/2}=\\sqrt{2^3}=2\\sqrt2\\approx2.828$$
 
-Halving distance multiplies concentration by the exact factor stated, so the statement is True.`,
+A mere doubling would correspond to exponent $-1$, one half step away from the law in force here. Halving distance multiplies concentration by exactly $2\\sqrt{2}$, so the statement is True.`,
       `**D.** → True
 
-This claim asks for a concentration level after the coefficient has been recovered. At $100$ metres, the denominator is $100^{1.5}=1000$, because taking the square root first gives $10$ and cubing gives $1000$.
-
-A common mistake is to calculate $100^{1.5}$ as $150$ or to apply the negative exponent without taking the reciprocal.
+A level at $100$ metres needs the shape factor $100^{1.5}$, which resolves by taking the square root first and then cubing.
 
 $$100^{1.5}=100^{3/2}=(\\sqrt{100})^3=10^3=1000$$
 
 $$c(100)=400(100)^{-1.5} =\\frac{400}{1000}=0.4$$
 
-The model gives $0.4$ microgram per cubic metre at $100$ metres, so the statement is True.`,
+The exponent $1.5$ is a power rather than a multiple, so it gives $1000$ and not $150$, and the negative sign puts it in the denominator. Concentration is $0.4$ microgram per cubic metre, so the statement is True.`,
       `**E.** → False
 
-This claim asks for the percentage reduction from doubling distance. The surviving concentration fraction is $2^{-1.5}=1/(2\\sqrt2)\\approx0.3536$. The percentage cut is one minus that fraction, about $64.6\\%$.
-
-A common mistake is to confuse a negative exponent with an inverse-linear law, or to call the surviving $35.4\\%$ the percentage reduction.
+The effect of doubling the distance is the surviving fraction $2^{-1.5}$, and the percentage cut is one minus that fraction.
 
 $$\\frac{c(2x)}{c(x)} =2^{-1.5} =\\frac{1}{2\\sqrt2} \\approx0.3536$$
 
 $$1-0.3536=0.6464\\approx64.6\\%$$
 
-Doubling distance cuts concentration by about $64.6\\%$, not exactly $50\\%$, so the statement is False.`,
+An exact halving would require exponent $-1$, and the surviving $35.4\\%$ is not itself the reduction. Doubling distance cuts concentration by about $64.6\\%$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 42,
@@ -5710,11 +4780,7 @@ $$c(x)\\le6.25\\Longleftrightarrow x\\ge16, quad (1/2)^{-3/2}=2\\sqrt2, quad c(1
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the two stages combined. Substituting the surge law into the loss law multiplies the exponents to $1.5$ and collapses the constants to $4$.
-
-The step that needs care is cubing the whole surge law, coefficient included: $\\left(0.5w^{0.5}\\right)^{3}$ contributes $0.5^{3}=0.125$ as well as $w^{1.5}$. Cubing only the variable part would leave a loss index eight times too large.
-
-Substitute the surge law into the loss law:
+Composing two power laws substitutes the inner law into the outer one, which multiplies the exponents and raises the inner coefficient to the outer power.
 
 $$L(w) = 32\\left(0.5w^{0.5}\\right)^{3} = 32 \\times 0.5^{3} \\times w^{0.5 \\times 3}$$
 
@@ -5724,14 +4790,10 @@ $$32 \\times 0.125 = 4, \\qquad 0.5 \\times 3 = 1.5$$
 
 $$L(w) = 4w^{1.5}$$
 
-The composed law is $4w^{1.5}$, so the statement is True.`,
+Cubing only the variable part and carrying $0.5$ through unchanged would leave the loss index eight times too large. The composed law is $4w^{1.5}$, so the statement is True.`,
       `**B.** → True
 
-This claim applies a scale factor to the composed law. With exponent $1.5$, doubling the wind speed multiplies losses by $2^{1.5}=2\\sqrt{2}\\approx2.828$.
-
-The composed exponent is what governs this, not either stage's exponent alone: surge rises by only $41\\%$ when wind doubles, and cubing that rise produces the $183\\%$ jump in losses. Checking both routes is a good guard against composing incorrectly.
-
-Form the scale factor on the composed law:
+A doubling of wind speed acts through the composed exponent $1.5$, which is the product of the two stage exponents.
 
 $$\\frac{L(2w)}{L(w)} = 2^{1.5} = 2\\sqrt{2} \\approx 2.8284$$
 
@@ -5739,52 +4801,34 @@ Verify through the two stages:
 
 $$s \\text{ rises by } 2^{0.5} \\approx 1.414, \\qquad 1.414^{3} \\approx 2.828$$
 
-Losses multiply by about $2.83$, so the statement is True.`,
+Either stage exponent taken alone would give a different factor, and agreement between the two routes guards against composing incorrectly. Losses multiply by about $2.83$, so the statement is True.`,
       `**C.** → True
 
-Composing the two stages gives $L(w)=4w^{1.5}$, which must be inverted for the specified loss. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
+A stated loss level is inverted through the composed law, so the reciprocal exponent $2/3$ applies once the coefficient is divided out.
 
-A direct calculation gives
-
-$$4w^{1.5}=1000 \\quad\\Rightarrow\\quad w^{1.5}=250$$
-
-The relevant comparison can then be written as
+$$4w^{1.5}=1000 \\quad \\Rightarrow \\quad w^{1.5}=250$$
 
 $$w=250^{2/3}\\approx39.69$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The index reaches $1000$ at wind speed about $39.7$. Therefore the statement is True.`,
+Inverting one stage at a time works too, but only the composed exponent can be reciprocated in a single step. The index reaches $1000$ at a wind speed of about $39.7$, so the statement is True.`,
       `**D.** → True
 
-The composed law must be evaluated with the square-root contribution retained before the cube is applied. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A level under the composed law keeps the square-root contribution before the cube is applied, which is what the exponent $1.5$ encodes.
 
 $$L(64)=4(64)^{1.5}=4(64)(8)$$
 
-The relevant comparison can then be written as
-
 $$L(64)=2048$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The loss index is $2048$. Therefore the statement is True.`,
+Applying the cube to the wind speed itself, rather than to the surge it produces, would overstate the index badly. The loss index at wind speed $64$ is $2048$, so the statement is True.`,
       `**E.** → True
 
-A fifty-percent wind increase uses the composed exponent $1.5$, not either stage in isolation. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A fifty percent increase is a multiplier of $1.5$ acting through the composed exponent, which is also $1.5$.
 
 $$\\frac{L(1.5w)}{L(w)}=1.5^{1.5}\\approx1.8371$$
 
-The relevant comparison can then be written as
-
 $$(1.8371-1)\\times100\\%\\approx83.7\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-The loss index rises by about $83.7\\%$. Therefore the statement is True.`,
+Neither stage exponent in isolation gives this factor, only their product. The loss index rises by about $83.7\\%$, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 43,
@@ -5846,59 +4890,49 @@ $$4^{1.5} = 8 > 4$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the coefficient from an impact difference. The square-root factors at $0.04$ and $0.09$ are $0.2$ and $0.3$, so the observed six-basis-point increase equals $0.1A$.
-
-A common mistake is to use $I(0.09)=6$. Six is the change in impact, not the larger order's total impact.
+The six basis points is a change in impact between two order sizes, so the coefficient multiplies the difference of the two square roots.
 
 $$I(0.09)-I(0.04) =A(\\sqrt{0.09}-\\sqrt{0.04}) =A(0.3-0.2)$$
 
-$$0.1A=6 \\quad \\Rightarrow \\quad A=60, qquad I(v)=60\\sqrt v$$
+$$0.1A=6 \\quad \\Rightarrow \\quad A=60, \\qquad I(v)=60\\sqrt v$$
 
-The difference calibration gives exactly the impact law stated, so the statement is True.`,
+Setting $I(0.09)=6$ would treat the increment as the larger order's total impact. The difference calibration gives $I(v)=60\\sqrt{v}$, so the statement is True.`,
       `**B.** → True
 
-This claim asks for the impact multiplier associated with a non-fourfold size change. The order grows by $0.09/0.04=2.25$, and a square-root impact law converts that into a multiplier of $\\sqrt{2.25}=1.5$.
-
-A common mistake is to say the impact also grows $2.25$ times. That would be linear impact rather than square-root impact.
+A size multiplier acts on impact through the exponent $0.5$, so the impact ratio is the square root of the size ratio.
 
 $$\\frac{0.09}{0.04}=2.25$$
 
 $$\\frac{I(0.09)}{I(0.04)} =\\left(\\frac{0.09}{0.04}\\right)^{0.5} =\\sqrt{2.25}=1.5$$
 
-Indeed, the levels are $18$ and $12$ basis points. Their ratio is $1.5$, so the statement is True.`,
+Carrying the size ratio $2.25$ across unchanged would describe linear impact rather than square-root impact. The levels are $18$ and $12$ basis points and their ratio is $1.5$, so the statement is True.`,
       `**C.** → True
 
-This claim asks for the break-even between a notional fee and the scaled impact charge. Since $vI(v)=60v^{3/2}$, equating it to $30v$ and dividing by positive $v$ leaves an equation in $\\sqrt v$.
-
-A common mistake is to compare $I(v)$ directly with $F(v)$; the context defines the impact charge as $vI(v)$.
+The scaled impact charge is $vI(v)=60v^{3/2}$, so a break-even with a linear fee is an equation between exponents $3/2$ and $1$.
 
 $$60v^{3/2}=30v \\quad \\Rightarrow \\quad 2\\sqrt v=1 \\quad \\Rightarrow \\quad v=0.25$$
 
 $$\\frac{vI(v)}{F(v)} =\\frac{60v^{3/2}}{30v} =2\\sqrt v<1 \\quad \\text{when }0<v<0.25$$
 
-Break-even occurs at $0.25$ ADV and impact charge is lower below it, so the statement is True.`,
+Comparing $I(v)$ with $F(v)$ directly would compare the wrong pair, since the context defines the charge as $vI(v)$. Break-even is at $0.25$ ADV with the charge lower below it, so the statement is True.`,
       `**D.** → True
 
-This claim asks for both impact in basis points and the scaled charge. At $v=0.16$, the square root is $0.4$, giving impact $24$. Multiplying that impact by order size gives $0.16(24)=3.84$.
-
-A common mistake is to treat the impact and impact charge as the same quantity. The latter includes one additional factor of $v$.
+Impact and the scaled charge are two different quantities, the second being the first multiplied by order size.
 
 $$I(0.16)=60\\sqrt{0.16}=60(0.4)=24$$
 
 $$vI(v)=0.16(24)=3.84$$
 
-Both the $24$-basis-point impact and the $3.84$ scaled charge agree with the statement, so the statement is True.`,
+That extra factor of $v$ is what separates a basis-point figure from a charge. Both the $24$ basis points and the $3.84$ charge match the claim, so the statement is True.`,
       `**E.** → False
 
-This claim asks whether the scaled impact charge is linear in order size. Multiplying $I(v)=60v^{1/2}$ by $v$ gives $60v^{3/2}$, whose exponent is $1.5$, not $1$. Its per-unit charge therefore rises with size.
-
-A common mistake is to see the explicit factor $v$ in $vI(v)$ and overlook the additional $v^{1/2}$ inside impact.
+Proportionality would require the charge to carry exponent $1$, while multiplying impact by $v$ gives exponent $3/2$.
 
 $$vI(v)=v(60v^{1/2})=60v^{3/2}$$
 
 $$\\frac{(2v)I(2v)}{vI(v)} =2^{3/2}=2\\sqrt2\\ne2$$
 
-A proportional charge would double when size doubles; this charge grows by about $2.83$. The claim is false.`,
+The explicit factor $v$ is visible, but the $v^{1/2}$ hidden inside impact is what breaks proportionality. The charge grows by about $2.83$ when size doubles, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 44,
@@ -5934,59 +4968,49 @@ $$\\sqrt{2.25}=1.5, quad 60v^{3/2}=30v\\Rightarrow v=0.25, quad I(0.16)=24$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the coefficient from a two-point difference. The exact shape factors are $64^{2/3}=16$ and $27^{2/3}=9$, so the measured $70$-unit gap equals seven copies of $A$.
-
-A common mistake is to attach $70$ to the $64$ kg animal as its total use. It is the larger animal's use minus the smaller animal's use.
+The measured $70$ units is the gap between two animals' daily use, and both masses are exact cubes, so the shape factors resolve without rounding.
 
 $$E(64)-E(27) =A(64^{2/3}-27^{2/3}) =A(16-9)$$
 
-$$7A=70 \\quad \\Rightarrow \\quad A=10, qquad E(m)=10m^{2/3}$$
+$$7A=70 \\quad \\Rightarrow \\quad A=10, \\qquad E(m)=10m^{2/3}$$
 
-The calibrated allometric law is exactly the one in the statement, so the statement is True.`,
+Attaching the $70$ to the heavier animal as its total use would calibrate on a level the data never gave. The allometric law is $E(m)=10m^{2/3}$, so the statement is True.`,
       `**B.** → True
 
-This claim asks for the exact scale factor when mass doubles. The coefficient and starting mass cancel, leaving $2^{2/3}$. Writing the power as a cube root gives the equivalent exact form $\\sqrt[3]{4}$.
-
-A common mistake is to interpret exponent $2/3$ as a $66.7\\%$ increase. The multiplier is a power of $2$, not $1+2/3$.
+Doubling body mass acts through the exponent, so the coefficient and the starting mass cancel and only $2^{2/3}$ survives.
 
 $$\\frac{E(2m)}{E(m)} =\\frac{10(2m)^{2/3}}{10m^{2/3}} =2^{2/3}$$
 
 $$2^{2/3}=(2^2)^{1/3}=\\sqrt[3]{4}\\approx1.587$$
 
-Both exact expressions in the statement describe the same multiplier, so the statement is True.`,
+Reading $2/3$ as a $66.7\\%$ increase would replace a power of two with an added proportion. Both exact forms in the claim describe the same multiplier, so the statement is True.`,
       `**C.** → True
 
-This claim asks for a composed herd total, not merely one animal's use. A $27$ kg animal uses $10(9)=90$ units, so eight use $720$. Since $216=6^3$, one $216$ kg animal uses $10(6^2)=360$ units.
-
-A common mistake is to combine the herd's masses first. Allometric energy is nonlinear, so eight separate animals are not equivalent to one animal with their combined mass.
+A herd total is the sum of individual uses, so the law is applied animal by animal before anything is added.
 
 $$8E(27)=8\\left(10\\cdot27^{2/3}\\right) =8(90)=720$$
 
-$$E(216)=10(216^{1/3})^2 =10(6^2)=360, qquad \\frac{720}{360}=2$$
+$$E(216)=10(216^{1/3})^2 =10(6^2)=360, \\qquad \\frac{720}{360}=2$$
 
-The eight-animal herd uses exactly twice the single animal's energy, so the statement is True.`,
+Combining the masses first would treat a nonlinear law as if it were additive. The eight-animal herd uses exactly twice the single animal's energy, so the statement is True.`,
       `**D.** → False
 
-This claim asks whether merging two equal animals preserves total use. Before combining, the total is $2E(m)$. One animal of mass $2m$ uses $E(2m)=2^{2/3}E(m)$, and $2^{2/3}<2$.
-
-A common mistake is to use only total mass and forget that the model is applied separately to each animal before herd totals are added.
+Merging two animals replaces two applications of the law with one application at twice the mass, and the exponent $2/3$ lies below one.
 
 $$E(m)+E(m)=2E(m)$$
 
 $$E(2m)=2^{2/3}E(m)\\approx1.587E(m)<2E(m)$$
 
-For example, two $27$ kg animals use $180$ units, while one $54$ kg animal uses about $142.9$. Total use falls rather than remaining unchanged, so the statement is False.`,
+Working from total mass alone hides the fact that the model applies to each animal separately. Two $27$ kg animals use $180$ units against about $142.9$ for one $54$ kg animal, so the statement is False.`,
       `**E.** → False
 
-This claim asks whether energy use per kilogram is constant. Dividing the allometric law by mass reduces the exponent by one, giving $10m^{-1/3}$. The negative exponent means the per-kilogram rate falls as body mass rises.
-
-A common mistake is to confuse rising total use with a constant average rate. Total energy rises, but less than proportionally.
+Energy use per kilogram is the allometric law divided by mass, which lowers the exponent to $-1/3$.
 
 $$\\frac{E(m)}{m} =\\frac{10m^{2/3}}{m} =10m^{-1/3}$$
 
-$$\\frac{E(27)}{27}=\\frac{90}{27}=\\frac{10}{3}, qquad \\frac{E(64)}{64}=\\frac{160}{64}=2.5$$
+$$\\frac{E(27)}{27}=\\frac{90}{27}=\\frac{10}{3}, \\qquad \\frac{E(64)}{64}=\\frac{160}{64}=2.5$$
 
-The two per-kilogram values differ and the derived rate declines with mass, so the statement is False.`,
+Total use does rise with mass, but less than proportionally, which is exactly what makes the average fall. The two per-kilogram values differ, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 45,
@@ -6022,11 +5046,7 @@ $$\\frac{E(2m)}{E(m)}=2^{2/3}=\\sqrt[3]{4}, quad 8E(27)=720, quad E(216)=360$$
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the scale factor, which the planning file never states. Rebuilding it from the recorded gap of $350$ visitors between two zones gives $A=3200$.
-
-A common mistake is to treat $350$ as one zone's footfall, or to divide it by a single shape factor such as $4^{-1.5}$. The file records a *difference* between two zones, so the coefficient multiplies the difference of the two shape factors. Both distances are convenient: $4$ and $16$ are perfect squares, so the fractional exponent resolves exactly.
-
-Evaluate the two shape factors:
+The planning file records a gap between two zones rather than either zone's footfall, so the coefficient multiplies the difference of the two shape factors.
 
 $$4^{1.5} = (2^{2})^{3/2} = 2^{3} = 8, \\qquad 16^{1.5} = (4^{2})^{3/2} = 4^{3} = 64$$
 
@@ -6034,18 +5054,12 @@ Write the recorded gap through the law:
 
 $$f(4) - f(16) = A\\left(\\frac{1}{8} - \\frac{1}{64}\\right) = A \\cdot \\frac{7}{64} = 350$$
 
-Solve for the coefficient:
-
 $$A = 350 \\cdot \\frac{64}{7} = 3200$$
 
-The footfall law is $f(d)=3200d^{-1.5}$, so the statement is True.`,
+Dividing $350$ by a single shape factor such as $4^{-1.5}$ would answer a question the file never posed. The footfall law is $f(d)=3200d^{-1.5}$, so the statement is True.`,
       `**B.** → True
 
-This claim asks for the nearer zone's own footfall, which the file gives only indirectly. With $A=3200$ the zone supplies $3200/8=400$ visitors a week.
-
-The recorded $350$ is the natural wrong answer: it is the *gap* between the two zones, not the nearer zone's traffic. The two are close in size here precisely because the distant zone contributes so little — at $16$ kilometres it supplies only $50$ visitors, an eighth of the nearer zone's figure, so the gap sits just under the near zone's total.
-
-Evaluate the law at four kilometres:
+The nearer zone's own footfall is the calibrated law evaluated at four kilometres, which the file gives only indirectly.
 
 $$f(4) = \\frac{3200}{4^{1.5}} = \\frac{3200}{8} = 400$$
 
@@ -6053,14 +5067,10 @@ Check the pair against the recorded gap:
 
 $$f(16) = \\frac{3200}{64} = 50, \\qquad 400 - 50 = 350 \\;\\checkmark$$
 
-The nearer zone supplies $400$ visitors a week, so the statement is True.`,
+The recorded $350$ sits close to this figure only because the distant zone contributes an eighth as much. The nearer zone supplies $400$ visitors a week, so the statement is True.`,
       `**C.** → True
 
-This claim applies a scale factor, so only the exponent matters. With exponent $-1.5$, quadrupling the distance multiplies footfall by $4^{-1.5}=1/8$.
-
-The fractional exponent invites two slips: reading the factor as $1/4$, as if decay were proportional, or as $1/16$, as if the law were inverse-square. The exponent $1.5$ sits between the two, and quadrupling gives $4^{3/2}=8$ — which is exactly the relationship between the two zones in the file, $16$ kilometres being four times $4$.
-
-Take the ratio at quadrupled distance:
+A scale factor depends only on the exponent, so quadrupling the distance acts through $4^{-1.5}$ and the coefficient cancels.
 
 $$\\frac{f(4d)}{f(d)} = \\frac{A(4d)^{-1.5}}{Ad^{-1.5}} = 4^{-1.5} = \\frac{1}{4^{3/2}} = \\frac{1}{8}$$
 
@@ -6068,18 +5078,12 @@ Verify on the two recorded zones:
 
 $$\\frac{f(16)}{f(4)} = \\frac{50}{400} = \\frac{1}{8} \\;\\checkmark$$
 
-Footfall falls to an eighth, so the statement is True.`,
+The exponent $1.5$ sits between proportional decay, which would give a quarter, and inverse-square decay, which would give a sixteenth. Footfall falls to an eighth, so the statement is True.`,
       `**D.** → True
 
-This claim asks where footfall falls to the $100$-visitor threshold, so the law has to be inverted. The boundary sits at about $10.08$ kilometres, just past the round figure.
-
-Inverting a fractional exponent is where this goes wrong: after reaching $d^{1.5}=32$ it is tempting to square the $32$, or to halve it, instead of raising it to the reciprocal power $2/3$. Writing $32$ as a power of two makes the reciprocal exponent easy to apply exactly.
-
-Set the law against the threshold:
+The catchment boundary is where footfall meets the threshold, so the law has to be inverted with the reciprocal exponent $2/3$.
 
 $$\\frac{3200}{d^{1.5}} = 100 \\quad \\Rightarrow \\quad d^{1.5} = 32$$
-
-Raise both sides to the power $2/3$:
 
 $$d = 32^{2/3} = (2^{5})^{2/3} = 2^{10/3} \\approx 10.08$$
 
@@ -6087,14 +5091,10 @@ Check the round distance against the threshold:
 
 $$f(10) = \\frac{3200}{10^{1.5}} \\approx \\frac{3200}{31.62} \\approx 101.2 > 100$$
 
-A zone at $10$ kilometres still clears the threshold, so the boundary lies just beyond it and the claim is true.`,
+Squaring $32$, or halving it, would apply the exponent instead of its reciprocal. A zone at $10$ kilometres still clears the threshold and the boundary lies just beyond it, so the statement is True.`,
       `**E.** → False
 
-This claim tests a specific zone against the $100$-visitor threshold. At nine kilometres the model gives about $118.5$ visitors, so the zone is inside the core catchment.
-
-The reasoning that fails here works from the wrong landmark: the file's distant zone at $16$ kilometres supplies only $50$ visitors, and nine kilometres feels closer to that zone than to the busy four-kilometre one. Distance decay is steepest near the retail park, so most of the drop from $400$ to $50$ has already happened well before nine kilometres. The boundary computed from the threshold sits at about $10.08$ kilometres, and nine is comfortably inside it.
-
-Evaluate the shape factor exactly — nine is a perfect square, so the fractional exponent resolves:
+A specific zone is tested against the threshold by evaluating the law there, and nine is a perfect square, so the fractional exponent resolves exactly.
 
 $$9^{1.5} = (3^{2})^{3/2} = 3^{3} = 27$$
 
@@ -6102,7 +5102,7 @@ Evaluate the law:
 
 $$f(9) = \\frac{3200}{27} \\approx 118.5$$
 
-At about $118$ visitors a week the zone clears the $100$-visitor threshold, so the statement is False.`,
+Nine kilometres looks closer to the quiet zone at sixteen than to the busy one at four, yet distance decay is steepest near the park, so most of the drop has already happened. At about $118$ visitors the zone clears the $100$-visitor threshold, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 46,
@@ -6170,11 +5170,7 @@ $$f(9) = \\frac{3200}{27} \\approx 118.5 > 100, \\qquad f(10) \\approx 101.2 > 1
     tactical_explanations: [
       `**A.** → False
 
-This claim asserts an exponent of $1$, which the two arrays contradict. Area rises by a factor of $2.25$ between them while output rises only by a factor of $1.5$.
-
-Proportionality is the natural first assumption for solar panels, and it is what a sales brochure would imply. The data say otherwise — shading, inverter limits and roof orientation all bite as arrays grow — and the exponent that fits is $0.5$.
-
-Compare the two ratios:
+Proportionality is the claim that the exponent equals $1$, so it is tested by comparing the area ratio with the output ratio between the two arrays.
 
 $$\\frac{225}{100} = 2.25, \\qquad \\frac{360}{240} = 1.5$$
 
@@ -6182,14 +5178,10 @@ Test the proportional prediction against the second array:
 
 $$240 \\times 2.25 = 540 \\ne 360$$
 
-The proportional model overstates the larger array by $180$ kWh, so the statement is False.`,
+Shading, inverter limits and roof orientation all bite as arrays grow, and the exponent that fits this pair is $0.5$. The proportional model overstates the larger array by $180$ kWh, so the statement is False.`,
       `**B.** → True
 
-This claim gives the full calibration. Dividing one array by the other leaves $2.25^{r}=1.5$, so $r=0.5$, and either array then gives $A=24$.
-
-Because $1.5^{2}=2.25$, the exponent falls out without logarithms. Checking the coefficient on both arrays is the confirmation that the power form fits: $240/10=24$ and $360/15=24$ agree exactly, which a wrong exponent would not allow.
-
-Take the ratio of the two arrays:
+Two installed arrays determine both constants: their ratio carries the exponent, and either array then carries the coefficient.
 
 $$\\left(\\frac{225}{100}\\right)^{r} = \\frac{360}{240} \\quad \\Rightarrow \\quad 2.25^{r} = 1.5 = 2.25^{1/2}$$
 
@@ -6199,14 +5191,10 @@ Recover the coefficient from each array:
 
 $$\\frac{240}{\\sqrt{100}} = 24, \\qquad \\frac{360}{\\sqrt{225}} = 24, \\qquad y(a) = 24\\sqrt{a}$$
 
-Both constants are as claimed, so the statement is true.`,
+Because $1.5^{2}=2.25$ the exponent falls out without logarithms, and a wrong exponent would leave the two coefficients disagreeing. Both constants are as claimed, so the statement is True.`,
       `**C.** → False
 
-This claim misreads the scale factor. Doubling the area multiplies output by $2^{0.5}\\approx1.414$, a rise of about $41\\%$, not $50\\%$.
-
-The figure $50\\%$ is what the observed pair of arrays suggests at a glance — output rose by half between them — but that pair differs by a factor of $2.25$ in area, not $2$. Using a scale factor requires matching the multiplier exactly.
-
-Form the scale factor for a doubling:
+A scale factor has to match the multiplier being asked about, and a doubling is a multiplier of $2$ rather than the $2.25$ separating the installed arrays.
 
 $$\\frac{y(2a)}{y(a)} = 2^{0.5} \\approx 1.4142$$
 
@@ -6214,14 +5202,10 @@ Contrast with the observed pair:
 
 $$\\left(\\frac{225}{100}\\right)^{0.5} = 1.5 \\quad \\text{(a } 2.25\\times \\text{ expansion, not } 2\\times)$$
 
-A doubling gives about $41\\%$, so the statement is False.`,
+Output did rise by half between the two arrays, but across a $2.25$-fold expansion rather than a doubling. A doubling gives about $41\\%$, so the statement is False.`,
       `**D.** → False
 
-This claim evaluates the proposal. Doubling that array multiplies its output by $\\sqrt{2}$, giving about $509$ kWh — short of the $520$ threshold.
-
-The margin is narrow, so the question cannot be settled by eye, and it is exactly the sort of check that matters before signing off on an expansion. A proportional forecast would have promised $720$ kWh, more than $200$ kWh above what the calibrated model supports.
-
-Apply the scale factor to the existing array:
+The proposal doubles the second array, so the calibrated law is evaluated at $450$ m² and compared with the stated threshold.
 
 $$y(450) = 360 \\times 2^{0.5} \\approx 360 \\times 1.4142 \\approx 509.1$$
 
@@ -6229,18 +5213,12 @@ Confirm through the calibrated law:
 
 $$y(450) = 24\\sqrt{450} \\approx 24 \\times 21.213 \\approx 509.1$$
 
-Compare with the threshold:
-
 $$509.1 < 520$$
 
-The expansion falls short, so the statement is False.`,
+The margin is narrow enough that a proportional forecast, which would promise $720$ kWh, is more than $200$ kWh out. The expansion falls short of $520$, so the statement is False.`,
       `**E.** → False
 
-This claim reverses the behaviour of the average. Dividing output by area gives $24a^{-0.5}$, whose exponent is negative, so each square metre delivers less as the array expands.
-
-This is the practical meaning of the sub-linear exponent, and it is what makes the proposal in part D disappointing: the extra $225$ m² produce only about $149$ kWh, whereas the first $225$ m² produced $360$.
-
-Divide output by area:
+Output per square metre is the calibrated law divided by area, which lowers the exponent to $-0.5$.
 
 $$\\frac{y(a)}{a} = \\frac{24a^{0.5}}{a} = 24a^{-0.5}$$
 
@@ -6248,7 +5226,7 @@ Evaluate for the three arrays:
 
 $$\\frac{240}{100} = 2.4, \\qquad \\frac{360}{225} = 1.6, \\qquad \\frac{509.1}{450} \\approx 1.13$$
 
-Output per square metre falls throughout, so the statement is False.`,
+Total output still rises, which is the practical meaning of a sub-linear exponent rather than a contradiction of it. Output per square metre falls throughout, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 47,
@@ -6312,11 +5290,7 @@ $$\\frac{y(a)}{a} = 24a^{-0.5}: \\quad 2.4,\\; 1.6,\\; 1.13 \\text{ at } a = 100
     tactical_explanations: [
       `**A.** → True
 
-This claim asks for the exponent, which the two milestones determine through their ratio. Volume quadruples while cost halves, so $4^{b}=0.5$ and $b=-0.5$.
-
-The negative sign is forced by the data — cost falls as volume rises — and the magnitude comes from $4^{-0.5}=1/2$. Dropping the sign would describe a cost that *rises* fourfold-to-double with volume, the opposite of a learning curve.
-
-Divide the second milestone by the first:
+Two milestones fix the exponent through their ratio, which cancels the coefficient and leaves a power equation in the volume multiplier.
 
 $$\\left(\\frac{400}{100}\\right)^{b} = \\frac{40}{80} \\quad \\Rightarrow \\quad 4^{b} = 0.5$$
 
@@ -6328,14 +5302,10 @@ Recover the coefficient for later use:
 
 $$A(100)^{-0.5} = 80 \\;\\Rightarrow\\; \\frac{A}{10} = 80 \\;\\Rightarrow\\; A = 800$$
 
-The exponent is $-0.5$, so the statement is True.`,
+The negative sign is forced by the data, since dropping it would describe cost rising with volume instead of a learning curve. The exponent is $-0.5$, so the statement is True.`,
       `**B.** → True
 
-This claim restates the calibration as a general rule. Since $4^{-0.5}=1/2$, every quadrupling of cumulative volume halves the unit cost, not just the one between the two milestones.
-
-Scale factors do not depend on the starting point, which is what makes them planning tools: from $400$ to $1600$ thousand cells the cost falls from $40$ to $20$, exactly as it fell from $80$ to $40$ over the first quadrupling.
-
-Form the scale factor:
+A scale factor holds at every starting point, so the effect of quadrupling volume is $4^{-0.5}$ wherever it is applied.
 
 $$\\frac{c(4N)}{c(N)} = 4^{-0.5} = \\frac{1}{2}$$
 
@@ -6343,18 +5313,12 @@ Check two successive quadruplings:
 
 $$c(100) = 80, \\qquad c(400) = 40, \\qquad c(1600) = \\frac{800}{40} = 20$$
 
-Each quadrupling halves the cost, so the statement is True.`,
+The halving observed between the milestones is a general rule rather than a feature of that particular pair. Each quadrupling halves the cost, so the statement is True.`,
       `**C.** → True
 
-This claim inverts the curve at a cost target. Solving $800N^{-0.5}=20$ gives $\\sqrt{N}=40$, so the cost reaches $20$ exactly at $1600$ thousand cells and falls below it only afterwards.
-
-Inverting an exponent of $-0.5$ means squaring the ratio $800/20=40$. That squaring is why cost targets get so expensive to reach: halving the cost again, to $10$, would take $6400$ thousand cells.
-
-Set the curve equal to the target:
+A cost target is inverted through the curve, and an exponent of $-0.5$ inverts by squaring the ratio of coefficient to target.
 
 $$800N^{-0.5} = 20 \\quad \\Rightarrow \\quad \\sqrt{N} = \\frac{800}{20} = 40$$
-
-Square both sides:
 
 $$N = 1600$$
 
@@ -6362,14 +5326,10 @@ Check on either side:
 
 $$c(900) = \\frac{800}{30} \\approx 26.7, \\qquad c(2500) = \\frac{800}{50} = 16$$
 
-The threshold is $1600$ thousand cells, so the statement is True.`,
+That squaring is why further targets get expensive, since halving the cost again to $10$ would take $6400$ thousand cells. The threshold is $1600$ thousand cells, so the statement is True.`,
       `**D.** → True
 
-This claim asks about a derived quantity. Multiplying unit cost by volume raises the exponent by one, so spend is $800N^{0.5}$ — proportional to the square root of cumulative volume.
-
-The result is worth reading twice: cost per cell falls, yet total spend keeps rising, just at a decelerating rate. Building the derived law rather than guessing is what settles the direction, since the two effects pull opposite ways.
-
-Multiply unit cost by volume:
+Cumulative spend is unit cost multiplied by volume, and multiplying by $N$ raises the exponent by one.
 
 $$S(N) = N \\cdot 800N^{-0.5} = 800N^{-0.5+1} = 800N^{0.5}$$
 
@@ -6377,14 +5337,10 @@ Evaluate at the milestones:
 
 $$S(100) = 8000, \\qquad S(400) = 16000, \\qquad S(1600) = 32000$$
 
-Spend grows as $\\sqrt{N}$, so the statement is True.`,
+Falling unit cost and rising volume pull in opposite directions, so only the derived law settles which wins. Spend grows as $\\sqrt{N}$, so the statement is True.`,
       `**E.** → False
 
-This claim applies the quadrupling rule to a doubling. Doubling multiplies unit cost by $2^{-0.5}\\approx0.707$, a reduction of about $29\\%$, not $50\\%$.
-
-Two doublings make a quadrupling, and $0.707^{2}=0.5$ recovers the halving from part B. Assuming that each doubling halves the cost would compound to a factor of $1/4$ over a quadrupling, twice as fast as the data support.
-
-Apply the scale factor:
+A doubling is a different multiplier from a quadrupling, so it acts through $2^{-0.5}$ rather than $4^{-0.5}$.
 
 $$\\frac{c(2N)}{c(N)} = 2^{-0.5} \\approx 0.7071$$
 
@@ -6392,7 +5348,7 @@ Check against a milestone:
 
 $$c(100) = 80, \\qquad c(200) = \\frac{800}{\\sqrt{200}} \\approx \\frac{800}{14.142} \\approx 56.6$$
 
-The cost falls by about $29\\%$, so the statement is False.`,
+Two doublings make a quadrupling, and $0.7071^{2}=0.5$ recovers the halving rule exactly. The cost falls by about $29\\%$, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 48,
@@ -6456,11 +5412,7 @@ $$S(100) = 8000, \\qquad S(1600) = 32000$$
     tactical_explanations: [
       `**A.** → True
 
-This claim composes the two stages. The gauged run gives $A=5$, and substituting the velocity law into the cubic transport law leaves $S(q)=0.625q^{1.5}$.
-
-The delicate step is cubing the whole velocity law: $\\left(q^{0.5}/2\\right)^{3}$ contributes $1/8$ as well as $q^{1.5}$. Forgetting to cube the divisor $2$ would leave a transport law eight times too large — and would move the stability limit to a quarter of the true discharge.
-
-Calibrate the transport stage:
+The chain runs from discharge to velocity to transport, so the gauged run calibrates the transport stage before the velocity law is substituted in.
 
 $$A(3)^{3} = 135 \\quad \\Rightarrow \\quad 27A = 135 \\quad \\Rightarrow \\quad A = 5$$
 
@@ -6472,18 +5424,12 @@ Spot-check through both stages at $q=36$:
 
 $$v = \\frac{6}{2} = 3, \\qquad S = 5(27) = 135, \\qquad 0.625(36)^{1.5} = 0.625(216) = 135 \\;\\checkmark$$
 
-The composed law is $0.625q^{1.5}$, so the statement is True.`,
+Cubing the numerator alone and leaving the divisor $2$ untouched would leave the law eight times too large. The composed law is $0.625q^{1.5}$, so the statement is True.`,
       `**B.** → True
 
-This claim inverts the composed law at the stability limit. Solving $0.625q^{1.5}=5000$ gives $q^{1.5}=8000$, and raising to the power $2/3$ returns exactly $400$.
-
-The cube root of $8000$ is $20$, so the inversion is exact: $8000^{2/3}=20^{2}=400$. Doing the inversion on the composed law rather than stage by stage avoids carrying the intermediate velocity, though both routes agree.
-
-Set the composed law equal to the limit:
+The stability limit is inverted through the composed law, whose reciprocal exponent is $2/3$.
 
 $$0.625q^{1.5} = 5000 \\quad \\Rightarrow \\quad q^{1.5} = 8000$$
-
-Raise both sides to the reciprocal power:
 
 $$q = 8000^{2/3} = \\left(8000^{1/3}\\right)^{2} = 20^{2} = 400$$
 
@@ -6491,14 +5437,10 @@ Confirm through the stages:
 
 $$v(400) = \\frac{20}{2} = 10, \\qquad S = 5(1000) = 5000 \\;\\checkmark$$
 
-The limit is reached at a discharge of $400$, so the statement is True.`,
+Inverting the composed law avoids carrying the intermediate velocity, though both routes agree. The limit is reached at a discharge of $400$, so the statement is True.`,
       `**C.** → True
 
-This claim applies a scale factor to the composed law, whose exponent is $1.5$. Doubling the discharge multiplies transport by $2^{1.5}=2\\sqrt{2}\\approx2.828$.
-
-Reading it through the stages gives the same answer and shows where the exponent comes from: velocity rises by only $41\\%$ when discharge doubles, and cubing $1.414$ gives $2.83$. The composed exponent is $0.5 \\times 3 = 1.5$.
-
-Form the scale factor on the composed law:
+A discharge multiplier acts through the composed exponent $0.5 \\times 3 = 1.5$, not through either stage alone.
 
 $$\\frac{S(2q)}{S(q)} = 2^{1.5} \\approx 2.8284$$
 
@@ -6506,14 +5448,10 @@ Verify through the stages:
 
 $$v \\text{ rises by } 2^{0.5} \\approx 1.414, \\qquad 1.414^{3} \\approx 2.83$$
 
-Transport multiplies by about $2.83$, so the statement is True.`,
+Velocity rises by only $41\\%$ when discharge doubles, and cubing that rise reproduces the composed factor. Transport multiplies by about $2.83$, so the statement is True.`,
       `**D.** → False
 
-This claim ignores the cubic transport stage. Doubling velocity multiplies transport by $2^{3}=8$, not by $2$.
-
-The two scale factors in this task must be kept apart: doubling *discharge* multiplies transport by $2.83$, while doubling *velocity* multiplies it by $8$. They differ because discharge has to rise fourfold to double the velocity.
-
-Apply the scale factor at the velocity stage:
+Doubling the velocity acts on the transport stage alone, whose exponent is $3$.
 
 $$\\frac{S(2v)}{S(v)} = 2^{3} = 8$$
 
@@ -6521,14 +5459,10 @@ Check with concrete velocities:
 
 $$S(3) = 135, \\qquad S(6) = 5(216) = 1080, \\qquad \\frac{1080}{135} = 8$$
 
-Transport multiplies by eight, so the statement is False.`,
+The two doublings in this task have to be kept apart, since discharge must rise fourfold to double the velocity. Transport multiplies by eight, so the statement is False.`,
       `**E.** → False
 
-This claim would require the composed exponent to be $1$. It is $1.5$, so dividing by $q$ leaves $0.625q^{0.5}$, which rises with discharge.
-
-Rising transport per unit of discharge is what makes large floods so damaging: not only is there more water, but each unit of it carries more sediment. The stability limit is therefore reached far sooner than a proportional model would predict.
-
-Divide the composed law by discharge:
+Transport per unit of discharge is the composed law divided by $q$, which lowers the exponent from $1.5$ to $0.5$.
 
 $$\\frac{S(q)}{q} = \\frac{0.625q^{1.5}}{q} = 0.625q^{0.5}$$
 
@@ -6536,7 +5470,7 @@ Evaluate at three discharges:
 
 $$\\frac{S(36)}{36} = 3.75, \\qquad \\frac{S(100)}{100} = 6.25, \\qquad \\frac{S(400)}{400} = 12.5$$
 
-Transport per unit of discharge more than triples, so the statement is False.`,
+Constancy would require the composed exponent to be $1$, whereas each unit of a larger flow carries more sediment than before. Transport per unit of discharge more than triples, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 49,
@@ -6600,26 +5534,16 @@ $$\\frac{S(q)}{q} = 0.625q^{0.5}: \\quad 3.75,\\; 6.25,\\; 12.5 \\text{ at } q =
     tactical_explanations: [
       `**A.** → True
 
-A finite twenty-percent price rise must use the exact cubic inverse factor rather than a linear elasticity estimate. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
-
-A direct calculation gives
+A twenty percent price rise is a multiplier of $1.2$ acting through the demand exponent $-3$, so the surviving fraction is a power.
 
 $$\\frac{q(1.2p)}{q(p)}=1.2^{-3}=\\frac{1}{1.728}\\approx0.57870$$
 
-The relevant comparison can then be written as
-
 $$(1-0.57870)\\times100\\%\\approx42.1\\%$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Quantity falls by about $42.1\\%$. Therefore the statement is True.`,
+A linear elasticity estimate would multiply $3$ by $20\\%$ and overstate the loss for a change this large. Quantity falls by about $42.1\\%$, so the statement is True.`,
       `**B.** → True
 
-This claim describes the derived revenue curve. Multiplying demand by price raises the exponent by one, so $-3$ becomes $-2$ and revenue is $4000p^{-2}$.
-
-Revenue built on isoelastic demand is always isoelastic itself, one step less negative. Here the exponent remains negative, which is the formal statement that this trader loses revenue by raising prices.
-
-Multiply demand by price:
+Revenue is price times quantity, and multiplying an isoelastic demand curve by $p$ raises its exponent by one.
 
 $$R(p) = p \\cdot 4000p^{-3} = 4000p^{-3+1} = 4000p^{-2}$$
 
@@ -6627,29 +5551,19 @@ Check the scale-factor behaviour:
 
 $$\\frac{R(2p)}{R(p)} = 2^{-2} = \\frac{1}{4}$$
 
-Revenue is a power function with exponent $-2$, so the statement is True.`,
+The exponent stays negative, which is the formal statement that this trader loses revenue by raising prices. Revenue is a power function with exponent $-2$, so the statement is True.`,
       `**C.** → True
 
-The observed pair gives $A=4000$ and hence revenue $R(p)=4000p^{-2}$, which can be evaluated at the new price. The claim must be tested with the finite scale factor from the model, rather than by reading the exponent as though it were an ordinary multiplier. First identify the calibrated law or cancel its coefficient in a ratio; then keep the full power until the numerical comparison is complete.
+A revenue level needs the coefficient first, which the observed pair supplies, and then the derived revenue law evaluated at the new price.
 
-A direct calculation gives
-
-$$500=A(2)^{-3}=\\frac{A}{8} \\quad\\Rightarrow\\quad A=4000$$
-
-The relevant comparison can then be written as
+$$500=A(2)^{-3}=\\frac{A}{8} \\quad \\Rightarrow \\quad A=4000$$
 
 $$R(2.5)=4000(2.5)^{-2}=\\frac{4000}{6.25}=640$$
 
-This second line is also a useful check on units and direction. A positive exponent preserves the direction of the input change, a negative exponent reverses it, and a percentage change is found from the scale factor minus one. That distinction prevents an elasticity shortcut or a convenient-looking input from replacing the exact finite calculation.
-
-Revenue at price $2.50$ is exactly $640$. Therefore the statement is True.`,
+The negative exponent puts the price in the denominator, so revenue falls as the price rises. Revenue at price $2.50$ is exactly $640$, so the statement is True.`,
       `**D.** → True
 
-This claim prices the indexation on the volume side. The exact factor is $1.1^{-3}\\approx0.7513$, so quantity falls by about $24.9\\%$ — "about $25\\%$" as claimed.
-
-A quick elasticity estimate would say $3 \\times 10\\% = 30\\%$, which overstates the loss by five percentage points. The exact power calculation is the one to trust for a move as large as $10\\%$; elasticity is a small-change approximation.
-
-Apply the exact scale factor:
+The indexation is a multiplier of $1.1$ on price, and its effect on volume is the exact power $1.1^{-3}$.
 
 $$\\frac{q(1.1p)}{q(p)} = 1.1^{-3} = \\frac{1}{1.331} \\approx 0.7513$$
 
@@ -6661,14 +5575,10 @@ Check with levels:
 
 $$q(2) = 500, \\qquad q(2.2) = \\frac{4000}{10.648} \\approx 375.7$$
 
-Quantity falls by about $25\\%$, so the statement is True.`,
+An elasticity estimate of $3 \\times 10\\% = 30\\%$ overstates the loss by five percentage points, since elasticity approximates only small changes. Quantity falls by about $25\\%$, so the statement is True.`,
       `**E.** → True
 
-This claim prices the same indexation on the revenue side. Revenue's exponent is $-2$, so the factor is $1.1^{-2}\\approx0.8264$, a fall of about $17.4\\%$.
-
-Comparing with part D shows how the two effects net out: volume falls by about $25\\%$ while each unit sells for $10\\%$ more, and $0.7513 \\times 1.1 = 0.8264$ recovers the revenue factor exactly. The price gain cannot offset the volume loss, because demand is elastic.
-
-Apply the revenue scale factor:
+The same indexation acts on revenue through the revenue exponent $-2$ rather than the demand exponent $-3$.
 
 $$\\frac{R(1.1p)}{R(p)} = 1.1^{-2} = \\frac{1}{1.21} \\approx 0.8264$$
 
@@ -6680,7 +5590,7 @@ Check with levels:
 
 $$R(2) = 1000, \\qquad R(2.2) = \\frac{4000}{4.84} \\approx 826.4$$
 
-Revenue falls by about $17\\%$, so the statement is True.`,
+Volume falls by about $25\\%$ while each unit sells for $10\\%$ more, and $0.7513 \\times 1.1 = 0.8264$ reconciles the two exactly. Revenue falls by about $17\\%$, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 50,
