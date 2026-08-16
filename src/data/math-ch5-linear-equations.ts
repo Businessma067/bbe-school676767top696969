@@ -22,79 +22,67 @@ export const MATH_CH5_LINEAR_EQUATIONS: MathTask[] = [
     tactical_explanations: [
       `**A) The North depot currently holds 360 crates.**  (true)
 
-This claim gives North's current count. Solving the sum-and-difference system gives $2x=620+100=720$, so $x=360$; moving 50 crates then leaves North with $310$.
-
-The elimination step gives $x = 360$, and this also satisfies the memo's own equalizing check, so it is consistent both algebraically and in context.
-
-Let $x$ be North's crates and $y$ South's. The total and the equalizing transfer give
+The two depots hold 620 crates between them this week, and the scheduling note says that moving 50 crates from North to South would leave the two holdings equal. Let $x$ be North's crates and $y$ be South's, so the two facts become
 
 $$
-x + y = 620, \\qquad x - 50 = y + 50
-$$
-
-The second equation rearranges to $x - y = 100$. Adding the pair:
-
-$$
-(x + y) + (x - y) = 620 + 100
+x + y = 620
 $$
 
 $$
-2x = 720
+x - 50 = y + 50
+$$
+
+The transfer equation rearranges to $x - y = 100$. Adding it to the total equation eliminates $y$:
+
+$$
+2x = 620 + 100 = 720
 $$
 
 $$
 x = 360
 $$
 
-North holds 360 crates, which is the figure in the claim.`,
+North currently holds 360 crates, exactly the figure claimed, so the statement is true.`,
       `**B) The South depot currently holds 240 crates.**  (false)
 
-The South depot holds 260 crates, not 240. A common slip is assuming the difference (100) can simply be split from the total the same way as North's value, instead of substituting back into $x + y = 620$.
-
-From Part A, $x = 360$. Substitute into the total:
+Let $x$ be North's crates and $y$ be South's. The two depots hold 620 crates together, so $x + y = 620$, and a transfer of 50 crates from North to South would equalize them, so $x - 50 = y + 50$, that is $x - y = 100$. Subtracting the second equation from the first eliminates $x$:
 
 $$
-y = 620 - x = 620 - 360 = 260
+2y = 620 - 100 = 520
 $$
 
-South is 260, twenty crates above the claimed 240.`,
+$$
+y = 260
+$$
+
+South holds 260 crates, twenty more than the claimed 240, so the statement is false.`,
       `**C) If 30 crates were moved from South to North instead, North would then hold 390 crates.**  (true)
 
-This claim changes the direction of the move, so North gains crates. Starting from $360$, North would hold $360+30=390$.
-
-North currently holds $x = 360$. After receiving 30 crates:
+North's current count follows from the two given facts, $x + y = 620$ and $x - 50 = y + 50$. The second rearranges to $x - y = 100$, and adding the pair gives $2x = 720$, so $x = 360$. Reversing the direction of the move means North gains crates rather than losing them:
 
 $$
-x + 30 = 360 + 30 = 390
+360 + 30 = 390
 $$
 
-That matches the claimed 390 crates, so the statement is true.`,
+North would hold 390 crates, matching the claim, so the statement is true.`,
       `**D) The difference between the two depots today is 120 crates.**  (false)
 
-The actual difference today is 360 - 260 = 100 crates. This trap comes from misreading the memo's '50 crates transferred' as itself being the current difference, when in fact a 50-crate transfer is what makes the totals equal, not what separates them today.
-
-With $x = 360$ and $y = 260$:
+The current gap follows from the equalizing transfer alone. If moving 50 crates from North to South leaves the two depots equal, then $x - 50 = y + 50$, so
 
 $$
-x - y = 360 - 260 = 100
+x - y = 100
 $$
 
-The claimed difference of 120 does not equal 100, so the statement is false.`,
+The depots differ by 100 crates today, not 120, so the statement is false. A 50-crate transfer closes a 100-crate gap because it takes 50 off one side and adds 50 to the other.`,
       `**E) Moving 50 crates from North to South would leave both depots holding 310 crates each.**  (true)
 
-This claim checks the equalizing transfer. The new counts are $360-50=310$ and $260+50=310$, so they match.
-
-Start from the recovered counts $x = 360$ and $y = 260$, then apply the 50-crate transfer:
+A transfer moves crates between depots without changing the combined holding, which stays at 620. The scheduling note states that this particular transfer leaves the two depots equal, so each would then hold
 
 $$
-x - 50 = 360 - 50 = 310
+\\frac{620}{2} = 310
 $$
 
-$$
-y + 50 = 260 + 50 = 310
-$$
-
-Both depots hold 310 crates, matching the claim.`,
+Both depots would hold 310 crates, matching the claim, so the statement is true.`,
     ],
     difficulty_level: "1/5",
     sort_order: 1,
@@ -184,11 +172,17 @@ The two depots do end up equal, confirming the translation was correct.
     tactical_explanations: [
       `**A) A notebook costs \\$3.50.**  (true)
 
-This claim states the notebook unit price. The solution gives $x=3.50$, and it fits Invoice #101 because $40(3.50)+25(1.80)=185.00$.
+Both invoices bill the same fixed unit prices. Let $x$ be the notebook price and $y$ the pen price:
 
-The unit price recovered for a notebook is \\$3.50, and it satisfies both invoices simultaneously, not just one of them.
+$$
+40x + 25y = 185.00
+$$
 
-Let $x$ be the notebook price and $y$ the pen price. Invoice #102 divided by 15 gives $x + 4y = 10.70$, so $x = 10.70 - 4y$. Substitute into Invoice #101:
+$$
+15x + 60y = 160.50
+$$
+
+Dividing the second equation by 15 gives $x + 4y = 10.70$, so $x = 10.70 - 4y$. Substituting into the first:
 
 $$
 40(10.70 - 4y) + 25y = 185.00
@@ -212,53 +206,39 @@ $$
 x = 10.70 - 4(1.80) = 10.70 - 7.20 = 3.50
 $$
 
-A notebook is \\$3.50, the price the claim stated.`,
+A notebook costs \\$3.50, matching the claim, so the statement is true.`,
       `**B) A pen costs \\$2.10.**  (false)
 
-A pen actually costs \\$1.80, not \\$2.10. Rounding $-135y = -243.00$ carelessly is the most likely source of this kind of error.
+With $x$ the notebook price and $y$ the pen price, the two invoices read $40x + 25y = 185.00$ and $15x + 60y = 160.50$. Dividing the second by 15 gives $x = 10.70 - 4y$, and substituting into the first:
 
-From the same substitution as in A,
+$$
+40(10.70 - 4y) + 25y = 185.00
+$$
+
+$$
+428.00 - 135y = 185.00
+$$
 
 $$
 y = \\frac{243.00}{135} = 1.80
 $$
 
-Pens are $1.80$, not the claimed $2.10$.`,
+A pen costs \\$1.80, thirty cents below the claimed \\$2.10, so the statement is false.`,
       `**C) Invoice #101 (40 notebooks and 25 pens) totals \\$185.00.**  (true)
 
-This claim checks the first invoice with the recovered prices. Its cost is $40(3.50)+25(1.80)=140.00+45.00=185.00$.
-
-Plug $x = 3.50$ and $y = 1.80$ into Invoice #101:
-
-$$
-40(3.50) + 25(1.80) = 140.00 + 45.00 = 185.00
-$$
-
-That matches the printed \\$185.00 total, so the statement is true.`,
+The supplier's record for Invoice #101 lists 40 notebooks, 25 pens, and an invoice total of \\$185.00. The claim repeats that recorded total exactly, so no unit price has to be recovered and the statement is true.`,
       `**D) 10 notebooks and 10 pens purchased together would cost \\$53.00.**  (true)
 
-10(3.50) + 10(1.80) = 35.00 + 18.00 = \\$53.00; note this is NOT the same as averaging either invoice total, since the notebook-to-pen ratio here differs from both invoices.
-
-Using the recovered prices:
+This mix appears on neither invoice, so the unit prices must be recovered first. With $x$ the notebook price and $y$ the pen price, the invoices give $40x + 25y = 185.00$ and $15x + 60y = 160.50$. The second divided by 15 is $x + 4y = 10.70$, so $x = 10.70 - 4y$, and substituting into the first gives $428.00 - 135y = 185.00$, so $y = 1.80$ and $x = 10.70 - 7.20 = 3.50$. Ten of each item then costs
 
 $$
 10(3.50) + 10(1.80) = 35.00 + 18.00 = 53.00
 $$
 
-The mixed order costs \\$53.00, matching the claim.`,
+The order comes to \\$53.00, matching the claim, so the statement is true.`,
       `**E) Invoice #102 (15 notebooks and 60 pens) totals \\$172.50.**  (false)
 
-This claim gives an incorrect total for the second invoice. Using the prices gives $15(3.50)+60(1.80)=52.50+108.00=160.50$.
-
-Invoice #102's printed total is \\$160.50, not \\$172.50. A student who mixes up which invoice number goes with which total would produce this kind of error.
-
-Plug $x = 3.50$ and $y = 1.80$ into Invoice #102:
-
-$$
-15(3.50) + 60(1.80) = 52.50 + 108.00 = 160.50
-$$
-
-The computed total is \\$160.50, not the claimed \\$172.50, so the statement is false.`,
+The supplier's record for Invoice #102, covering 15 notebooks and 60 pens, shows a total of \\$160.50. The claimed \\$172.50 sits \\$12.00 above that recorded figure, so the statement is false.`,
     ],
     difficulty_level: "1/5",
     sort_order: 2,
@@ -330,11 +310,17 @@ $$
     tactical_explanations: [
       `**A) An adult ticket costs \\$12.00.**  (true)
 
-This claim gives the adult price. Solving the system produces $a=12$, and the evening revenue checks as $160(12)+40(7)=2200$.
+Both screenings sold at the same fixed prices. Let $a$ be the adult price and $c$ the child price:
 
-The recovered adult price of \\$12.00 reproduces both session totals correctly.
+$$
+90a + 150c = 2130
+$$
 
-The evening equation divided by 40 is $4a + c = 55$, so $c = 55 - 4a$. Substitute into the matinee equation:
+$$
+160a + 40c = 2200
+$$
+
+Dividing the evening equation by 40 gives $4a + c = 55$, so $c = 55 - 4a$. Substituting into the matinee equation:
 
 $$
 90a + 150(55 - 4a) = 2130
@@ -352,53 +338,31 @@ $$
 a = 12
 $$
 
-Adult tickets are \\$12.00, as claimed.`,
+An adult ticket costs \\$12.00, matching the claim, so the statement is true.`,
       `**B) A child ticket costs \\$7.00.**  (true)
 
-This claim gives the child price. After $a=12$, the simplified evening equation gives $c=55-4(12)=7$.
-
-The recovered child price of \\$7.00 likewise reproduces both totals; swapping which price belongs to 'adult' and which to 'child' is a common mix-up when the two totals are close in size.
-
-From $c = 55 - 4a$ and $a = 12$:
+With $a$ the adult price and $c$ the child price, the matinee gives $90a + 150c = 2130$ and the evening gives $160a + 40c = 2200$. The evening equation divided by 40 is $4a + c = 55$, so $c = 55 - 4a$. Substituting into the matinee equation gives $90a + 8250 - 600a = 2130$, hence $-510a = -6120$ and $a = 12$. Then
 
 $$
 c = 55 - 4(12) = 55 - 48 = 7
 $$
 
-The child price is \\$7.00, matching the claim.`,
+A child ticket costs \\$7.00, matching the claim, so the statement is true.`,
       `**C) The Saturday matinee (90 adult, 150 child) generated \\$2,050.00 in revenue.**  (false)
 
-Using the actual prices, the matinee total is 90(12) + 150(7) = \\$2,130.00, not \\$2,050.00. This simply misquotes the figure already printed in the summary table.
-
-Plug $a = 12$ and $c = 7$ into the matinee mix:
-
-$$
-90(12) + 150(7) = 1080 + 1050 = 2130
-$$
-
-The computed (and printed) total is \\$2,130.00, not the claimed \\$2,050.00, so the statement is false.`,
+The box-office system already logged the matinee, 90 adult and 150 child tickets, at \\$2,130.00 in revenue. The claim understates that recorded figure by \\$80.00, so the statement is false.`,
       `**D) The Saturday evening session (160 adult, 40 child) generated \\$2,300.00 in revenue.**  (false)
 
-The evening total works out to 160(12) + 40(7) = \\$2,200.00, not \\$2,300.00. That is a \\$100 overstatement of the value already given.
-
-Plug $a = 12$ and $c = 7$ into the evening mix:
-
-$$
-160(12) + 40(7) = 1920 + 280 = 2200
-$$
-
-The computed total is \\$2,200.00, not the claimed \\$2,300.00, so the statement is false.`,
+The logged revenue for the evening session, 160 adult and 40 child tickets, is \\$2,200.00. The claim overstates the recorded figure by \\$100.00, so the statement is false.`,
       `**E) 50 adult tickets and 50 child tickets together would generate \\$1,000.00.**  (false)
 
-50(12) + 50(7) = 600 + 350 = \\$950.00, not \\$1,000.00. This combination appears in neither session, so it must be computed fresh rather than estimated from the table.
-
-Using the recovered prices:
+An even 50-and-50 split matches neither session, so the ticket prices have to be recovered first. With $a$ the adult price and $c$ the child price, the sessions give $90a + 150c = 2130$ and $160a + 40c = 2200$. The evening equation divided by 40 is $4a + c = 55$, so $c = 55 - 4a$; substituting into the matinee equation gives $-510a = -6120$, so $a = 12$ and $c = 55 - 48 = 7$. Fifty of each ticket brings in
 
 $$
 50(12) + 50(7) = 600 + 350 = 950
 $$
 
-Fifty of each ticket type costs \\$950, not \\$1,000.`,
+That is \\$950.00, fifty dollars short of the claimed \\$1,000.00, so the statement is false.`,
     ],
     difficulty_level: "1/5",
     sort_order: 3,
@@ -466,83 +430,75 @@ $$
     tactical_explanations: [
       `**A) A sandwich costs \\$7.00.**  (true)
 
-This claim gives the sandwich price after the delivery fee is removed. The system gives $x=7$, and Receipt A's food is $6(7)+4(5)=62$.
-
-Once the \\$8.00 fee is removed from both receipts, the food-only system correctly gives \\$7.00 per sandwich; using the receipt totals (70 and 74) directly would instead produce the wrong prices.
-
-Peel the \\$8.00 fee first: Receipt A food is $70.00 - 8.00 = 62.00$, Receipt B food is $74.00 - 8.00 = 66.00$. Double the second equation and subtract:
+Every order carries a flat \\$8.00 delivery fee that belongs to neither menu item, so peel it off before pricing the food. Receipt A's food comes to $70.00 - 8.00 = 62.00$ and Receipt B's to $74.00 - 8.00 = 66.00$. With $x$ the sandwich price and $y$ the wrap price,
 
 $$
-(6x + 18y) - (6x + 4y) = 132 - 62
+6x + 4y = 62.00
 $$
 
 $$
-14y = 70
+3x + 9y = 66.00
+$$
+
+Doubling the second equation gives $6x + 18y = 132.00$, and subtracting the first:
+
+$$
+14y = 70.00
 $$
 
 $$
-y = 5
+y = 5.00
 $$
 
-Then
+Substituting back into $3x + 9y = 66.00$:
 
 $$
-3x + 9(5) = 66 \\Rightarrow 3x = 21 \\Rightarrow x = 7
+3x = 66.00 - 45.00 = 21.00
 $$
 
-Sandwiches are \\$7.00 on the food-only system.`,
+$$
+x = 7.00
+$$
+
+A sandwich costs \\$7.00, matching the claim, so the statement is true.`,
       `**B) A wrap costs \\$5.00.**  (true)
 
-This claim gives the wrap price. Eliminating sandwiches gives $14y=70$, so $y=5$.
-
-The wrap price of \\$5.00 likewise depends on subtracting the fee first. This is the main interpretive step in the task, not the algebra itself.
-
-From the elimination in A:
+The \\$8.00 delivery fee is charged on top of the food, so remove it from each receipt before writing the equations: Receipt A's food is $70.00 - 8.00 = 62.00$ and Receipt B's is $74.00 - 8.00 = 66.00$. With $x$ for a sandwich and $y$ for a wrap, that gives $6x + 4y = 62.00$ and $3x + 9y = 66.00$. Doubling the second and subtracting the first eliminates $x$:
 
 $$
-14y = 70 \\Rightarrow y = \\frac{70}{14} = 5
+(6x + 18y) - (6x + 4y) = 132.00 - 62.00
 $$
 
-The wrap price is \\$5.00, matching the claim.`,
+$$
+14y = 70.00
+$$
+
+$$
+y = 5.00
+$$
+
+A wrap costs \\$5.00, matching the claim, so the statement is true.`,
       `**C) Receipt A's food subtotal, before the \\$8.00 delivery fee is added, is \\$62.00.**  (true)
 
-This claim separates the food from the delivery charge. Receipt A's subtotal is $70.00-8.00=62.00$.
-
-The printed total includes the fee, so subtract it:
+Receipt A was charged \\$70.00 in total, and that amount includes the flat \\$8.00 delivery fee. Removing the fee leaves the food subtotal:
 
 $$
 70.00 - 8.00 = 62.00
 $$
 
-Receipt A's food is \\$62 once the fee is peeled off.`,
+The subtotal is \\$62.00, matching the claim, so the statement is true.`,
       `**D) Receipt B's total, including the \\$8.00 delivery fee, is \\$74.00.**  (true)
 
-This claim refers to the printed, fee-included receipt. Its food subtotal is $66.00$, and $66.00+8.00=74.00$.
-
-Receipt B's printed total, delivery fee included, is \\$74.00. Note this includes the fee, unlike the \\$66.00 figure used inside the equation itself.
-
-Check by rebuilding from the recovered food prices:
-
-$$
-3(7) + 9(5) = 21 + 45 = 66
-$$
-
-$$
-66 + 8 = 74
-$$
-
-The fee-included total is \\$74.00, matching the claim.`,
+Receipt B covers 3 sandwiches and 9 wraps plus the flat \\$8.00 delivery fee, and the amount charged was \\$74.00. The claim quotes that fee-inclusive total exactly, so the statement is true. The \\$66.00 figure that drives the pricing equations is the food subtotal, a different quantity from the charged total.`,
       `**E) A pickup order of 5 sandwiches and 5 wraps would cost \\$60.00.**  (true)
 
-This claim is about food without delivery. The cost is $5(7)+5(5)=35+25=60$.
-
-Pickup means no delivery fee, so use only the unit prices:
+A pickup order carries no delivery fee, so only the food prices matter, and those come from the two receipts once the flat \\$8.00 fee is removed: $70.00 - 8.00 = 62.00$ and $74.00 - 8.00 = 66.00$, giving $6x + 4y = 62.00$ and $3x + 9y = 66.00$ for the sandwich price $x$ and the wrap price $y$. Doubling the second and subtracting the first gives $14y = 70.00$, so $y = 5.00$, and then $3x + 45.00 = 66.00$ gives $x = 7.00$. The pickup order costs
 
 $$
-5(7) + 5(5) = 35 + 25 = 60
+5(7.00) + 5(5.00) = 35.00 + 25.00 = 60.00
 $$
 
-The pickup order costs \\$60.00, matching the claim.`,
+That is \\$60.00, matching the claim, so the statement is true.`,
     ],
     difficulty_level: "1/5",
     sort_order: 4,
@@ -624,15 +580,38 @@ $$
     tactical_explanations: [
       `**A) \\$6,500 was placed in Account A.**  (false)
 
-This claim gives an amount for the 4% account. The solved amount is $x=6000$, not $6500$.
+The investor split \\$10,000 between Account A at 4% and Account B at 7%, and the two accounts together earned \\$520.00 for the year. With $x$ in Account A and $y$ in Account B,
 
-Account A actually holds \\$6,000, not \\$6,500. Because the two rates (4% and 7%) are close together, it is easy to mis-split the \\$10,000 roughly in half instead of solving the weighted equation properly.
+$$
+x + y = 10000
+$$
 
-The split and interest equations are $x + y = 10000$ and $0.04x + 0.07y = 520$. Substitute $x = 10000 - y$:
+$$
+0.04x + 0.07y = 520
+$$
+
+Substituting $x = 10000 - y$ into the interest equation:
 
 $$
 0.04(10000 - y) + 0.07y = 520
 $$
+
+$$
+400 + 0.03y = 520
+$$
+
+$$
+y = \\frac{120}{0.03} = 4000
+$$
+
+$$
+x = 10000 - 4000 = 6000
+$$
+
+Account A holds \\$6,000, five hundred dollars below the claimed \\$6,500, so the statement is false.`,
+      `**B) \\$4,500 was placed in Account B.**  (false)
+
+Let $x$ be the amount in Account A at 4% and $y$ the amount in Account B at 7%. The split and the year's interest give $x + y = 10000$ and $0.04x + 0.07y = 520$. Substituting $x = 10000 - y$:
 
 $$
 400 - 0.04y + 0.07y = 520
@@ -646,65 +625,34 @@ $$
 y = 4000
 $$
 
-Then
-
-$$
-x = 10000 - 4000 = 6000
-$$
-
-Account A holds \\$6,000, five hundred short of the claimed split.`,
-      `**B) \\$4,500 was placed in Account B.**  (false)
-
-This claim gives an amount for the 7% account. The system gives $y=4000$, not $4500$; moreover, $6500+4500$ would exceed the \\$10,000 total.
-
-Account B holds \\$4,000, not \\$4,500. The same rough 50/50 guess produces this error too, and the two wrong figures would not even add to \\$10,000, a useful way to catch the mistake.
-
-From the substitution in A:
-
-$$
-y = \\frac{120}{0.03} = 4000
-$$
-
-The claimed $4,500$ does not equal $4,000$. Also $6500 + 4500 = 11000 \\ne 10000$, so the statement is false.`,
+Account B holds \\$4,000, not the claimed \\$4,500, so the statement is false.`,
       `**C) Account A earned \\$260.00 in interest over the year.**  (false)
 
-This claim calculates interest for Account A incorrectly. At 4%, its \\$6,000 balance earns \\$240, not \\$260.00. This kind of error often comes from applying a slightly wrong rate or a small arithmetic slip.
-
-Simple interest on Account A:
+Account A's interest depends on how much of the \\$10,000 sits there. With $x$ in Account A at 4% and $y$ in Account B at 7%, the split gives $x + y = 10000$ and the year's earnings give $0.04x + 0.07y = 520$. Substituting $x = 10000 - y$ leads to $400 + 0.03y = 520$, so $y = 4000$ and $x = 6000$. A full year of simple interest on Account A is
 
 $$
 0.04 \\times 6000 = 240
 $$
 
-The earned interest is \\$240.00, not the claimed \\$260.00, so the statement is false.`,
+Account A earned \\$240.00, not the claimed \\$260.00, so the statement is false.`,
       `**D) Account B earned \\$210.00 in interest over the year.**  (false)
 
-Account B's interest is \\$280.00, not \\$210.00. Note \\$240.00 + \\$280.00 = \\$520.00 matches the given total, confirming these (not statements C/D) are correct.
-
-Simple interest on Account B:
+Account B pays 7% on whatever share of the \\$10,000 it holds. From $x + y = 10000$ and $0.04x + 0.07y = 520$, substituting $x = 10000 - y$ gives $0.03y = 120$, so $y = 4000$ and $x = 6000$. Account B's interest is
 
 $$
 0.07 \\times 4000 = 280
 $$
 
-Check against the given total interest:
-
-$$
-240 + 280 = 520
-$$
-
-The earned interest is \\$280.00, not the claimed \\$210.00, so the statement is false.`,
+That is \\$280.00, well above the claimed \\$210.00, so the statement is false. The figure also reconciles with the year's reported earnings, since $240 + 280 = 520$.`,
       `**E) Had the entire \\$10,000 been placed in Account B alone, total interest for the year would have been \\$700.00.**  (true)
 
-Placing the full \\$10,000 at the 7% rate produces more interest than the \\$520.00 actually earned from the mixed allocation.
-
-Put the whole principal at Account B's rate:
+Account B pays 7% simple annual interest, so placing the whole \\$10,000 there for the year would earn
 
 $$
 0.07 \\times 10000 = 700
 $$
 
-The all-B interest is \\$700.00, matching the claim.`,
+That is \\$700.00, matching the claim, so the statement is true. No split has to be recovered here, because the scenario puts the entire principal in one account.`,
     ],
     difficulty_level: "1/5",
     sort_order: 5,
@@ -776,11 +724,7 @@ $$
     tactical_explanations: [
       `**A) A Standard chair is priced at \\$304.00.**  (true)
 
-This claim states the Standard-chair price. Substitution into the shipment equation gives $x=304$.
-
-The Standard chair price of \\$304.00 is what makes the shipment value work out exactly, once the \\$45 price gap is built into the second equation.
-
-Premium is $y = x + 45$. Substitute into the shipment:
+The catalogue prices a Premium chair exactly \\$45 above a Standard chair, and a shipment of 18 Standard and 12 Premium chairs was valued at \\$9,660.00. Writing $x$ for the Standard price, the Premium price is $x + 45$, so
 
 $$
 18x + 12(x + 45) = 9660
@@ -798,63 +742,37 @@ $$
 x = 304
 $$
 
-Standard chairs list at \\$304.00.`,
+A Standard chair is priced at \\$304.00, matching the claim, so the statement is true.`,
       `**B) A Premium chair is priced at \\$354.00.**  (false)
 
-A Premium chair costs \\$349.00, not \\$354.00. A tempting but incorrect shortcut is rounding \\$304 up to \\$310 first and then adding \\$45.
-
-From $y = x + 45$ and $x = 304$:
+With $x$ the Standard price, the catalogue rule makes the Premium price $x + 45$, and the \\$9,660.00 shipment of 18 Standard and 12 Premium chairs gives $18x + 12(x + 45) = 9660$. Expanding leaves $30x + 540 = 9660$, so $x = 304$ and
 
 $$
-y = 304 + 45 = 349
+x + 45 = 304 + 45 = 349
 $$
 
-The Premium price is \\$349.00, not the claimed \\$354.00, so the statement is false.`,
+A Premium chair costs \\$349.00, five dollars below the claimed \\$354.00, so the statement is false.`,
       `**C) The 12 Premium chairs in the shipment are worth \\$4,188.00 in total.**  (true)
 
-This claim uses the Premium-chair value. Their part of the shipment is $12(349)=4188$.
-
-That \\$4,188.00 is part of the shipment total of \\$9,660.00 (the remaining \\$5,472.00 comes from the 18 Standard chairs).
-
-Using $y = 349$:
+The Premium price sits \\$45 above the Standard price, and the shipment of 18 Standard and 12 Premium chairs came to \\$9,660.00. With $x$ the Standard price, $18x + 12(x + 45) = 9660$ gives $30x = 9120$, so $x = 304$ and the Premium price is $349$. The 12 Premium chairs are therefore worth
 
 $$
 12(349) = 4188
 $$
 
-Check the Standard share:
-
-$$
-18(304) = 5472
-$$
-
-$$
-4188 + 5472 = 9660
-$$
-
-The Premium share is \\$4,188.00, matching the claim.`,
+That is \\$4,188.00, matching the claim, so the statement is true. The 18 Standard chairs make up the rest, since $18(304) = 5472$ and $4188 + 5472 = 9660$.`,
       `**D) The price gap between one Premium chair and one Standard chair is \\$45.00.**  (true)
 
-This is simply the relationship stated in the report and used to build the second equation: 349 - 304 = \\$45.00.
-
-From the recovered prices:
-
-$$
-y - x = 349 - 304 = 45
-$$
-
-The gap is \\$45.00, matching the claim.`,
+The catalogue sets Premium chairs exactly \\$45 more per unit than Standard chairs throughout the current period, so the per-unit gap is \\$45.00 by the pricing rule itself. The claim restates that rule, so the statement is true without any chair price having to be computed.`,
       `**E) A smaller order of 5 Standard chairs and 5 Premium chairs would cost more than \\$3,000.00.**  (true)
 
-5(304) + 5(349) = 1,520 + 1,745 = \\$3,265.00, which is indeed more than \\$3,000.00. This smaller order uses a different ratio (5-and-5) than the shipment (18-and-12), so it must be recalculated rather than scaled down.
-
-Using the recovered prices:
+This order mixes the grades 5-and-5 rather than the shipment's 18-and-12, so it has to be priced from the unit costs. With $x$ the Standard price, the \\$45 catalogue gap makes the Premium price $x + 45$, and the \\$9,660.00 shipment gives $18x + 12(x + 45) = 9660$, so $30x = 9120$, $x = 304$, and the Premium price is $349$. Five of each costs
 
 $$
 5(304) + 5(349) = 1520 + 1745 = 3265
 $$
 
-Since $3265 > 3000$, the statement is true.`,
+Since $3265 > 3000$, the order does exceed \\$3,000.00 and the statement is true.`,
     ],
     difficulty_level: "1/5",
     sort_order: 6,
@@ -924,15 +842,17 @@ $$
     tactical_explanations: [
       `**A) ByteMobile's fixed monthly fee is \\$17.00.**  (true)
 
-This claim gives the part of every bill that does not depend on minutes. With $r=0.30$, the 40-minute bill leaves $29.00-40(0.30)=17.00$.
-
-The \\$17.00 fixed fee is what remains once the per-minute charge is subtracted out of either quoted bill.
-
-The two bills are $f + 40r = 29.00$ and $f + 120r = 53.00$. Subtract:
+Each bill is a fixed monthly fee plus a constant charge for every extra minute. Let $f$ be the fee and $r$ the rate per extra minute; the two customers quoted in the ad give
 
 $$
-(f + 120r) - (f + 40r) = 53.00 - 29.00
+f + 40r = 29.00
 $$
+
+$$
+f + 120r = 53.00
+$$
+
+Subtracting the first from the second removes the fee:
 
 $$
 80r = 24.00
@@ -942,67 +862,53 @@ $$
 r = 0.30
 $$
 
-Then
+Substituting back into the 40-minute bill:
 
 $$
 f + 40(0.30) = 29.00
 $$
 
 $$
-f + 12.00 = 29.00
+f = 29.00 - 12.00 = 17.00
 $$
 
-$$
-f = 17.00
-$$
-
-The fixed fee is \\$17.00, matching the claim.`,
+The fixed monthly fee is \\$17.00, matching the claim, so the statement is true.`,
       `**B) The extra-minute rate advertised is \\$0.30 per minute.**  (true)
 
-The \\$0.30 rate is recovered from the DIFFERENCE between the two bills (a \\$24.00 gap over 80 extra minutes), not from either bill in isolation.
-
-The extra minutes between the two quoted bills are $120 - 40 = 80$, and the extra charge is $53.00 - 29.00 = 24.00$:
+The two quoted bills differ only in extra minutes, so the rate comes straight from the gap between them: 40 extra minutes cost \\$29.00 and 120 extra minutes cost \\$53.00, that is \\$24.00 more for 80 more minutes.
 
 $$
 r = \\frac{24.00}{80} = 0.30
 $$
 
-The extra-minute rate is \\$0.30, matching the claim.`,
+The rate is \\$0.30 per extra minute, matching the claim, so the statement is true.`,
       `**C) A customer using 200 extra minutes in a month would pay \\$80.00.**  (false)
 
-This claim evaluates a 200-minute bill. The charge is $17.00+200(0.30)=17.00+60.00=77.00$.
-
-The recovered model is $f + r \\cdot m = 17.00 + 0.30m$. At $m = 200$:
+Both halves of the pricing rule are needed here. With $f$ the fixed fee and $r$ the per-minute rate, the quoted bills give $f + 40r = 29.00$ and $f + 120r = 53.00$; subtracting gives $80r = 24.00$, so $r = 0.30$, and then $f = 29.00 - 12.00 = 17.00$. A month with 200 extra minutes costs
 
 $$
 17.00 + 200(0.30) = 17.00 + 60.00 = 77.00
 $$
 
-The bill is \\$77.00, not the claimed \\$80.00, so the statement is false.`,
+The bill is \\$77.00, three dollars under the claimed \\$80.00, so the statement is false.`,
       `**D) A customer using 0 extra minutes would pay \\$0.00 that month.**  (false)
 
-This claim ignores the plan's base cost. At zero extra minutes, the bill is $17.00+0(0.30)=17.00$.
-
-Even with zero extra minutes, the fixed fee of \\$17.00 still applies, so the bill would be \\$17.00, not \\$0.00. The ad describes extra-minute charges on top of a fee, not instead of one.
-
-At $m = 0$:
+The per-minute charge sits on top of a fixed monthly fee, so a month with no extra minutes still costs the fee. From the quoted bills $f + 40r = 29.00$ and $f + 120r = 53.00$, subtraction gives $80r = 24.00$, so $r = 0.30$ and $f = 29.00 - 40(0.30) = 17.00$. At zero extra minutes the bill is
 
 $$
 17.00 + 0(0.30) = 17.00
 $$
 
-The bill is \\$17.00, not \\$0.00, so the statement is false.`,
+The customer would still owe \\$17.00, not \\$0.00, so the statement is false.`,
       `**E) The advertised rate (\\$0.30 per minute) is more than double a rival plan's rate of \\$0.20 per minute.**  (false)
 
-Double the rival's \\$0.20 rate would be \\$0.40, and ByteMobile's \\$0.30 rate is lower than that, not more than double it.
-
-Double the rival rate:
+The two quoted bills differ by $53.00 - 29.00 = 24.00$ dollars across $120 - 40 = 80$ extra minutes, so ByteMobile charges $24.00 / 80 = 0.30$ per extra minute, the figure named in the claim. Double the rival's rate would be
 
 $$
 2 \\times 0.20 = 0.40
 $$
 
-ByteMobile's recovered rate is $0.30$. Since $0.30 < 0.40$, it is not more than double $0.20$, so the statement is false.`,
+Since $0.30 < 0.40$, ByteMobile's rate is one and a half times the rival's, not more than double it, so the statement is false.`,
     ],
     difficulty_level: "1/5",
     sort_order: 7,
@@ -1086,15 +992,38 @@ $$
     tactical_explanations: [
       `**A) The division built 75 Standard ovens this week.**  (true)
 
-This claim gives the Standard-oven count. The system gives $s=130-55=75$.
+The week produced 130 ovens using 795 assembly hours, with each Standard oven taking 4 hours and each Deluxe oven 9 hours. Let $s$ and $d$ be the two counts:
 
-The unit and hours totals together pin down 75 Standard ovens; the material-cost column plays no role in finding this figure.
+$$
+s + d = 130
+$$
 
-Let $s$ be Standard ovens and $d$ Deluxe ovens. From $s + d = 130$ we have $s = 130 - d$. Substitute into hours:
+$$
+4s + 9d = 795
+$$
+
+Substituting $s = 130 - d$ into the hours equation:
 
 $$
 4(130 - d) + 9d = 795
 $$
+
+$$
+520 + 5d = 795
+$$
+
+$$
+d = 55
+$$
+
+$$
+s = 130 - 55 = 75
+$$
+
+The division built 75 Standard ovens, matching the claim, so the statement is true. The material-cost column plays no part in this calculation.`,
+      `**B) The division built 45 Deluxe ovens this week.**  (false)
+
+With $s$ Standard ovens at 4 assembly hours each and $d$ Deluxe ovens at 9 hours each, the week's totals give $s + d = 130$ and $4s + 9d = 795$. Substituting $s = 130 - d$:
 
 $$
 520 - 4d + 9d = 795
@@ -1108,67 +1037,34 @@ $$
 d = 55
 $$
 
-Then
-
-$$
-s = 130 - 55 = 75
-$$
-
-The Standard count is 75, matching the claim.`,
-      `**B) The division built 45 Deluxe ovens this week.**  (false)
-
-This claim understates the Deluxe count. The hours equation leads to $5d=275$, so $d=55$.
-
-The division built 55 Deluxe ovens, not 45. A common error is subtracting the hours figures instead of properly eliminating a variable, which tends to understate d.
-
-From the substitution in A:
-
-$$
-d = \\frac{275}{5} = 55
-$$
-
-Deluxe output is 55 ovens, ten more than the claim.`,
+The division built 55 Deluxe ovens, ten more than the claimed 45, so the statement is false.`,
       `**C) Standard ovens accounted for 300 assembly hours this week.**  (true)
 
-Standard ovens used 300 hours, part of the 795-hour weekly total (the remaining 495 hours come from the Deluxe ovens).
-
-Each Standard oven takes 4 hours:
+Standard ovens take 4 assembly hours each, so their share of the week depends on how many were built. From $s + d = 130$ and $4s + 9d = 795$, substituting $s = 130 - d$ gives $520 + 5d = 795$, so $d = 55$ and $s = 75$. The Standard hours are
 
 $$
 4 \\times 75 = 300
 $$
 
-Standard ovens used 300 hours, matching the claim.`,
+That is 300 hours, matching the claim, so the statement is true.`,
       `**D) Deluxe ovens accounted for 500 assembly hours this week.**  (false)
 
-Deluxe ovens actually used 495 hours, not 500. Note 300 + 495 = 795 matches the report's total exactly, confirming 495 is correct.
-
-Each Deluxe oven takes 9 hours:
+Each Deluxe oven takes 9 assembly hours. From the week's totals $s + d = 130$ and $4s + 9d = 795$, substitution gives $5d = 275$, so $d = 55$ Deluxe ovens and $s = 75$ Standard ovens were built. The Deluxe hours are
 
 $$
 9 \\times 55 = 495
 $$
 
-Check against the weekly total:
-
-$$
-300 + 495 = 795
-$$
-
-Deluxe ovens used 495 hours, not the claimed 500, so the statement is false.`,
+Deluxe ovens accounted for 495 hours, five short of the claimed 500, so the statement is false. The split reconciles with the report, since the Standard ovens used $4 \\times 75 = 300$ hours and $300 + 495 = 795$.`,
       `**E) The total material cost of all Standard ovens built this week is \\$9,000.00.**  (true)
 
-This claim now uses the material-cost figure for Standard ovens. At \\$120 each, the cost is \\$9,000 (because 75 × 120 = 9000).
-
-This is where the material-cost column finally matters: it could not have been answered from the hours data alone.
-
-Using the recovered count and the table's \\$120 unit cost:
+Standard ovens carry a material cost of \\$120 per unit, so the count has to be recovered first. With 130 ovens and 795 assembly hours in the week, at 4 hours per Standard and 9 per Deluxe, $s + d = 130$ and $4s + 9d = 795$ give $520 + 5d = 795$, so $d = 55$ and $s = 75$. The Standard material cost is
 
 $$
 75 \\times 120 = 9000
 $$
 
-The Standard material cost is \\$9,000.00, matching the claim.`,
+That is \\$9,000.00, matching the claim, so the statement is true.`,
     ],
     difficulty_level: "2/5",
     sort_order: 8,
@@ -1244,11 +1140,17 @@ $$
     tactical_explanations: [
       `**A) A sofa sells for \\$350.00.**  (true)
 
-This claim gives the sofa price. The net-sales system solves to $x=350$.
+Only net sales reflect items actually sold at list price, so each branch's returns come off first. Riverside nets $9760 - 460 = 9300$ on 14 sofas and 22 armchairs, and Hillcrest nets $9300 - 300 = 9000$ on 20 sofas and 10 armchairs. With $x$ the sofa price and $y$ the armchair price,
 
-The \\$350.00 sofa price only emerges correctly once each branch's returns have been subtracted from gross sales; using the gross figures directly would give a different (incorrect) system.
+$$
+14x + 22y = 9300
+$$
 
-Riverside net sales: $9760 - 460 = 9300$. Hillcrest net sales: $9300 - 300 = 9000$. Divide Hillcrest by 10: $2x + y = 900$, so $y = 900 - 2x$. Substitute into Riverside:
+$$
+20x + 10y = 9000
+$$
+
+Dividing the Hillcrest equation by 10 gives $2x + y = 900$, so $y = 900 - 2x$. Substituting into the Riverside equation:
 
 $$
 14x + 22(900 - 2x) = 9300
@@ -1266,59 +1168,37 @@ $$
 x = 350
 $$
 
-Sofas sell at \\$350.00.`,
+A sofa sells for \\$350.00, matching the claim, so the statement is true.`,
       `**B) An armchair sells for \\$200.00.**  (true)
 
-This claim gives the armchair price. From $2x+y=900$, $y=900-2(350)=200$.
-
-The armchair price of \\$200.00 depends on the same return-deduction step as the sofa price.
-
-From $y = 900 - 2x$ and $x = 350$:
+The listed prices follow from net sales, so returns are removed first: Riverside nets $9760 - 460 = 9300$ and Hillcrest nets $9300 - 300 = 9000$. With $x$ for a sofa and $y$ for an armchair, that gives $14x + 22y = 9300$ and $20x + 10y = 9000$. The Hillcrest equation divided by 10 is $2x + y = 900$, so $y = 900 - 2x$; substituting into Riverside's equation gives $-30x = -10500$, so $x = 350$ and
 
 $$
 y = 900 - 2(350) = 900 - 700 = 200
 $$
 
-Armchairs are \\$200.`,
+An armchair sells for \\$200.00, matching the claim, so the statement is true.`,
       `**C) Riverside's net sales (after its \\$460 in returns) were \\$9,300.00.**  (true)
 
-This claim checks Riverside's return adjustment. Its net sales are $9760-460=9300$.
-
-9,760 - 460 = \\$9,300.00, exactly the net-sales figure used to build Riverside's equation.
-
-Gross minus returns:
+Riverside recorded \\$9,760 in gross sales and \\$460 in returns, and net sales are gross sales minus returns:
 
 $$
 9760 - 460 = 9300
 $$
 
-Riverside's net sales are \\$9,300.00, matching the claim.`,
+Riverside's net sales were \\$9,300.00, matching the claim, so the statement is true.`,
       `**D) Hillcrest's gross sales (before its \\$300 in returns) were \\$9,300.00.**  (true)
 
-This claim names Hillcrest's gross-sales figure. The $9300$ gross total becomes $9000$ net after subtracting $300$ in returns.
-
-Hillcrest's gross sales figure, as printed, is \\$9,300.00. Note this coincides numerically with Riverside's net sales, but the two are different figures from different branches.
-
-The table lists Hillcrest gross sales as $9300$. After returns:
-
-$$
-9300 - 300 = 9000
-$$
-
-The printed gross figure is \\$9,300.00, matching the claim.`,
+The branch report lists Hillcrest's gross sales as \\$9,300, which is exactly the pre-returns figure the claim names, so the statement is true.`,
       `**E) Had Riverside recorded zero returns that month, its gross and net sales would both have equalled \\$9,760.00.**  (true)
 
-This claim removes Riverside's returns entirely. With no returns, net sales equal gross sales, which is $9760$.
-
-With no returns, net sales would simply equal gross sales, and Riverside's gross figure is \\$9,760.00.
-
-If returns are $0$:
+Net sales are gross sales minus returns, so with returns of zero the two figures coincide. Riverside's gross sales were \\$9,760, giving
 
 $$
-\\text{net} = \\text{gross} - 0 = 9760
+9760 - 0 = 9760
 $$
 
-Both figures would be \\$9,760.00, matching the claim.`,
+Both figures would be \\$9,760.00, matching the claim, so the statement is true.`,
     ],
     difficulty_level: "2/5",
     sort_order: 9,
@@ -1386,15 +1266,17 @@ $$
     tactical_explanations: [
       `**A) PrintFast's setup fee is \\$12.00.**  (false)
 
-This claim gives the fixed portion of a PrintFast bill. Once the rate is $0.20$, the 120-page order leaves $33.00-24.00=9.00$ for the fee.
-
-PrintFast's setup fee is \\$9.00, not \\$12.00. This kind of error can arise from subtracting the two ORDER totals (69 - 33 = 36) and mistakenly treating part of that gap as the fee instead of as 180 pages' worth of per-page charges.
-
-The bills are $f + 120r = 33.00$ and $f + 300r = 69.00$. Subtract:
+PrintFast bills a fixed setup fee plus a constant charge per page. With $f$ the fee and $r$ the per-page rate, the two orders give
 
 $$
-(f + 300r) - (f + 120r) = 69.00 - 33.00
+f + 120r = 33.00
 $$
+
+$$
+f + 300r = 69.00
+$$
+
+Subtracting eliminates the fee:
 
 $$
 180r = 36.00
@@ -1404,26 +1286,20 @@ $$
 r = 0.20
 $$
 
-Then
+Substituting into the 120-page order:
 
 $$
 f + 120(0.20) = 33.00
 $$
 
 $$
-f + 24.00 = 33.00
+f = 33.00 - 24.00 = 9.00
 $$
 
-$$
-f = 9.00
-$$
-
-PrintFast's fee is \\$9, three dollars below the claimed \\$12.`,
+The setup fee is \\$9.00, three dollars below the claimed \\$12.00, so the statement is false.`,
       `**B) PrintFast's per-page rate is \\$0.25.**  (false)
 
-The per-page rate is \\$0.20, not \\$0.25. The rate comes from dividing the \\$36.00 gap between the two orders by the 180-page gap between them, so using the wrong page difference is a likely source of error.
-
-The extra pages are $300 - 120 = 180$ and the extra charge is $69.00 - 33.00 = 36.00$:
+The two orders differ only in length, so the rate is the price gap divided by the page gap: Order #58 covered 120 pages for \\$33.00 and Order #96 covered 300 pages for \\$69.00, a difference of \\$36.00 across 180 pages.
 
 $$
 r = \\frac{36.00}{180} = 0.20
@@ -1432,45 +1308,37 @@ $$
 The rate is \\$0.20 per page, not the claimed \\$0.25, so the statement is false.`,
       `**C) A 250-page order at PrintFast would cost \\$60.00.**  (false)
 
-A 250-page order costs 9.00 + 250(0.20) = \\$59.00, not \\$60.00. Close enough to QuickCopy's flat fee to invite a careless rounding error, but not actually equal to it.
-
-PrintFast's model is $f + r \\cdot p = 9.00 + 0.20p$. At $p = 250$:
+Both parts of PrintFast's pricing are needed. With $f$ the setup fee and $r$ the per-page rate, the two orders give $f + 120r = 33.00$ and $f + 300r = 69.00$; subtracting gives $180r = 36.00$, so $r = 0.20$, and then $f = 33.00 - 24.00 = 9.00$. A 250-page order costs
 
 $$
 9.00 + 250(0.20) = 9.00 + 50.00 = 59.00
 $$
 
-The order costs \\$59.00, not the claimed \\$60.00, so the statement is false.`,
+The order comes to \\$59.00, a dollar under the claimed \\$60.00, so the statement is false.`,
       `**D) For a 350-page order, PrintFast would be cheaper than QuickCopy Center's flat \\$60.00 fee.**  (false)
 
-At 350 pages, PrintFast costs 9.00 + 350(0.20) = \\$79.00, which is MORE expensive than QuickCopy's flat \\$60.00, not cheaper. For long orders, PrintFast's per-page charge eventually overtakes a flat competitor's fee.
-
-At $p = 350$:
+PrintFast charges a setup fee plus a per-page rate, both recovered from its two orders: $f + 120r = 33.00$ and $f + 300r = 69.00$ give $180r = 36.00$, so $r = 0.20$ and $f = 33.00 - 24.00 = 9.00$. At 350 pages that comes to
 
 $$
 9.00 + 350(0.20) = 9.00 + 70.00 = 79.00
 $$
 
-Compare with QuickCopy's flat $60.00$:
+QuickCopy charges a flat \\$60.00 for any order up to 350 pages, and
 
 $$
 79.00 > 60.00
 $$
 
-PrintFast is more expensive, not cheaper, so the statement is false.`,
+PrintFast is \\$19.00 more expensive at that length, not cheaper, so the statement is false.`,
       `**E) Because Order #58 and Order #96 involve different page counts at different total prices, these two invoices pin down one, and only one, possible combination of setup fee and per-page rate.**  (true)
 
-This claim concerns whether the two bills determine the pricing rule uniquely. Their differing page counts make the rate solvable from the difference, and then either bill fixes the fee.
-
-Because the two invoices describe genuinely different situations (different page counts, different totals), they behave like two non-parallel lines that cross at exactly one point, so exactly one fee-and-rate pair satisfies both at once.
-
-The coefficient matrix of
+Writing $f$ for the setup fee and $r$ for the per-page rate, the two invoices say $f + 120r = 33.00$ and $f + 300r = 69.00$. Subtracting them gives
 
 $$
-f + 120r = 33.00, \\qquad f + 300r = 69.00
+180r = 36.00
 $$
 
-has determinant $300 - 120 = 180 \\ne 0$, so there is a unique solution $(f, r) = (9.00, 0.20)$. The statement is true.`,
+which has a single solution, $r = 0.20$, precisely because the page counts differ and the coefficient $300 - 120 = 180$ is not zero. Either invoice then fixes the fee, $f = 33.00 - 120(0.20) = 9.00$. Neither step leaves any freedom, so exactly one pair, $(f, r) = (9.00, 0.20)$, satisfies both invoices and the statement is true.`,
     ],
     difficulty_level: "2/5",
     sort_order: 10,
@@ -1562,13 +1430,17 @@ $$
     tactical_explanations: [
       `**A) Ben paid more for his 5 burritos alone than Ana paid for her entire order.**  (false)
 
-Ben's 5 burritos alone cost $5 \\times 6.00 = \\$30.00$, less than Ana's full \\$32.00 order, not more. It's tempting to assume the person who 'paid more overall' also wins every partial comparison, but that isn't guaranteed here.
-
-Ana's order is $4x + 3y = 32.00$. Ben paid \\$5.00 more, so $2x + 5y = 32.00 + 5.00 = 37.00$. Double Ben's equation and subtract Ana's:
+Ana bought 4 tacos and 3 burritos for \\$32.00, and Ben bought 2 tacos and 5 burritos for \\$5.00 more, that is \\$37.00. With $x$ the taco price and $y$ the burrito price,
 
 $$
-(4x + 10y) - (4x + 3y) = 74.00 - 32.00
+4x + 3y = 32.00
 $$
+
+$$
+2x + 5y = 37.00
+$$
+
+Doubling the second equation gives $4x + 10y = 74.00$, and subtracting the first:
 
 $$
 7y = 42.00
@@ -1578,43 +1450,25 @@ $$
 y = 6.00
 $$
 
-Then Ben's 5 burritos alone cost
+Ben's five burritos on their own therefore cost
 
 $$
 5(6.00) = 30.00
 $$
 
-Compare with Ana's full order: $30.00 < 32.00$, so the statement is false.`,
+That is \\$30.00 against Ana's \\$32.00 order, so his burritos alone cost less than her whole meal and the statement is false.`,
       `**B) A burrito costs \\$2.50 more than a taco.**  (true)
 
-This claim compares the two recovered item prices. The difference is $6.00-3.50=2.50$.
-
-From $4x + 3(6.00) = 32.00$:
+Ana paid \\$32.00 for 4 tacos and 3 burritos, and Ben paid \\$5.00 more, \\$37.00, for 2 tacos and 5 burritos. With $x$ for a taco and $y$ for a burrito, that gives $4x + 3y = 32.00$ and $2x + 5y = 37.00$. Doubling the second and subtracting the first gives $7y = 42.00$, so $y = 6.00$, and then $4x + 18.00 = 32.00$ gives $x = 3.50$. The gap is
 
 $$
-4x + 18.00 = 32.00
+6.00 - 3.50 = 2.50
 $$
 
-$$
-4x = 14.00
-$$
-
-$$
-x = 3.50
-$$
-
-The price gap is
-
-$$
-y - x = 6.00 - 3.50 = 2.50
-$$
-
-A burrito costs \\$2.50 more than a taco, matching the claim.`,
+A burrito costs \\$2.50 more than a taco, matching the claim, so the statement is true.`,
       `**C) Had Ana ordered one fewer burrito (4 tacos and 2 burritos instead), she would have paid less than \\$28.00.**  (true)
 
-This claim changes Ana's order by removing one burrito. The new total would be $4(3.50)+2(6.00)=14.00+12.00=26.00$, below $28.00$.
-
-Using $x = 3.50$ and $y = 6.00$:
+Ana's actual order of 4 tacos and 3 burritos cost \\$32.00, and Ben's 2 tacos and 5 burritos cost \\$5.00 more, \\$37.00. Solving $4x + 3y = 32.00$ with $2x + 5y = 37.00$: doubling the second gives $4x + 10y = 74.00$, so $7y = 42.00$ and $y = 6.00$, and then $x = 3.50$. Dropping one burrito leaves 4 tacos and 2 burritos:
 
 $$
 4(3.50) + 2(6.00) = 14.00 + 12.00 = 26.00
@@ -1623,32 +1477,22 @@ $$
 Since $26.00 < 28.00$, the statement is true.`,
       `**D) Ben's total order price exceeds \\$40.00.**  (false)
 
-Ben's order was built to total exactly \\$37.00, which does not exceed \\$40.00. Forgetting the \\$5.00 gap was already used to build the model, and adding it again on top of \\$37, is a common slip.
-
-Ben's total is Ana's \\$32.00 plus the \\$5.00 gap:
+Ben's total is fixed by the comparison the two friends made after lunch: Ana paid \\$32.00, and Ben paid exactly \\$5.00 more than she did.
 
 $$
 32.00 + 5.00 = 37.00
 $$
 
-Check with the recovered prices:
-
-$$
-2(3.50) + 5(6.00) = 7.00 + 30.00 = 37.00
-$$
-
-Since $37.00$ does not exceed $40.00$, the statement is false.`,
+Ben paid \\$37.00, which does not exceed \\$40.00, so the statement is false.`,
       `**E) Buying 6 tacos and 6 burritos together would cost \\$57.00.**  (true)
 
-This claim makes an equal-quantity order. Its cost is $6(3.50)+6(6.00)=21.00+36.00=57.00$.
-
-Using $x = 3.50$ and $y = 6.00$:
+An equal 6-and-6 order matches neither friend's receipt, so both unit prices are needed. From Ana's \\$32.00 order of 4 tacos and 3 burritos and Ben's \\$37.00 order of 2 tacos and 5 burritos, $4x + 3y = 32.00$ and $2x + 5y = 37.00$; doubling the second and subtracting the first gives $7y = 42.00$, so $y = 6.00$, and $4x + 18.00 = 32.00$ gives $x = 3.50$. Six of each costs
 
 $$
 6(3.50) + 6(6.00) = 21.00 + 36.00 = 57.00
 $$
 
-The mixed order costs \\$57.00, matching the claim.`,
+That is \\$57.00, matching the claim, so the statement is true.`,
     ],
     difficulty_level: "2/5",
     sort_order: 11,
@@ -1737,75 +1581,57 @@ $$
     tactical_explanations: [
       `**A) A paperback price of \\$12 is consistent with the pricing desk's \\$5 gap rule.**  (true)
 
-This claim checks the paperback price against the pricing rule. If $x=12$, then $y=12+5=17$, so the gap is exactly $5$.
-
-The pricing desk requires $y = x + 5$, and combined revenue is $400x + 220y = 8540$. Substitute:
+The memo fixes hardcovers exactly \\$5 above paperbacks, and the month's 400 paperbacks and 220 hardcovers brought in \\$8,540 between them. With $x$ the paperback price, the hardcover price is $x + 5$, so
 
 $$
 400x + 220(x + 5) = 8540
 $$
 
 $$
-400x + 220x + 1100 = 8540
+620x + 1100 = 8540
 $$
 
 $$
-620x = 7440
+x = \\frac{7440}{620} = 12
 $$
 
-$$
-x = 12
-$$
-
-Then $y = 12 + 5 = 17$, so the \\$5 gap holds. A paperback price of \\$12 is consistent with the rule.`,
+The paperback price is \\$12 and the hardcover price is $12 + 5 = 17$, which honours the \\$5 gap, so a \\$12 paperback is consistent with the rule and the statement is true.`,
       `**B) Hardcover editions are priced above \\$18.**  (false)
 
-This claim describes the hardcover price incorrectly. The solved hardcover price is exactly $17.00$, not above $18$.
-
-The hardcover price settles at exactly \\$17.00, not above \\$18. Assuming a 'clean' \\$20 hardcover price without solving the system is a typical shortcut.
-
-From $y = x + 5$ and $x = 12$:
+Hardcovers sit \\$5 above paperbacks, and the 400 paperbacks and 220 hardcovers sold produced \\$8,540 in combined revenue. Writing $x$ for the paperback price, $400x + 220(x + 5) = 8540$ gives $620x = 7440$, so $x = 12$ and the hardcover price is
 
 $$
-y = 12 + 5 = 17
+12 + 5 = 17
 $$
 
-Since $17$ is not above $18$, the statement is false.`,
+At \\$17 the hardcover price sits below \\$18, not above it, so the statement is false. The staff headcount and loyalty-member share in the report have no bearing on unit prices.`,
       `**C) Had 500 paperbacks been sold instead of 400 (hardcover sales unchanged), revenue would have been \\$1,200 higher.**  (true)
 
-This claim adds 100 paperbacks while leaving hardcovers unchanged. The extra revenue is $100(12)=1200$.
-
-100 extra paperbacks at \\$12 each adds exactly \\$1,200, using only the paperback price and the change in quantity.
-
-The extra paperbacks are $500 - 400 = 100$, each at $x = 12$:
+Only the paperback price matters here, because hardcover sales stay as they were. With $x$ the paperback price and hardcovers \\$5 dearer, the reported month gives $400x + 220(x + 5) = 8540$, so $620x = 7440$ and $x = 12$. Selling $500 - 400 = 100$ more paperbacks adds
 
 $$
 100 \\times 12 = 1200
 $$
 
-Revenue would be \\$1,200 higher, matching the claim.`,
+Revenue would rise by \\$1,200, matching the claim, so the statement is true.`,
       `**D) A customer buying 3 hardcovers and 2 paperbacks would pay less than \\$75.**  (false)
 
-This claim totals a mixed customer purchase. The cost is $3(17)+2(12)=51+24=75$, exactly equal to $75$.
-
-Using $x = 12$ and $y = 17$:
+Both prices are needed. Hardcovers are \\$5 above paperbacks, and 400 paperbacks with 220 hardcovers produced \\$8,540, so $400x + 220(x + 5) = 8540$, giving $620x = 7440$, $x = 12$, and a hardcover price of $17$. The purchase costs
 
 $$
 3(17) + 2(12) = 51 + 24 = 75
 $$
 
-The purchase costs exactly \\$75.00, which is not less than \\$75, so the statement is false.`,
+That is exactly \\$75, which is not less than \\$75, so the statement is false.`,
       `**E) The reported \\$8,540 total could also have come from selling 310 hardcovers alone.**  (false)
 
-This claim treats the report as a hardcover-only sale. But $310(17)=5270$, far below $8540$. The staff and loyalty-share figures are irrelevant distractions.
-
-Using $y = 17$:
+The hardcover price follows from the \\$5 gap rule and the reported month: with $x$ the paperback price, $400x + 220(x + 5) = 8540$ gives $620x = 7440$, so $x = 12$ and hardcovers are $17$. Selling 310 hardcovers and nothing else would bring in
 
 $$
 310 \\times 17 = 5270
 $$
 
-Since $5270 \\ne 8540$, the statement is false.`,
+That is \\$5,270, far short of the \\$8,540 reported, so the statement is false.`,
     ],
     difficulty_level: "2/5",
     sort_order: 12,
@@ -1883,95 +1709,71 @@ $$
     tactical_explanations: [
       `**A) The Standard plan has a lower base fee than the advertised Basic plan.**  (false)
 
-This claim compares Standard's base fee with Basic's advertised $15$. Standard's solved base fee is $38$, which is higher.
-
-Standard's base fee is \\$38.00, well above Basic's \\$15.00. The higher figure buys a lower overage rate instead.
-
-Standard bills: $x + 8y = 62.00$ and $x + 3y = 47.00$. Subtract:
+Standard's base fee is not advertised, so it comes from the billing history: 8 GB of overage billed \\$62.00 in March and 3 GB billed \\$47.00 in April. With $x$ the base fee and $y$ the per-GB overage rate,
 
 $$
-(x + 8y) - (x + 3y) = 62.00 - 47.00
+x + 8y = 62.00
 $$
 
 $$
-5y = 15
+x + 3y = 47.00
 $$
 
-$$
-y = 3
-$$
-
-Then
+Subtracting gives $5y = 15.00$, so $y = 3.00$, and then
 
 $$
-x + 3(3) = 47
+x = 47.00 - 3(3.00) = 38.00
 $$
 
-$$
-x + 9 = 47
-$$
-
-$$
-x = 38
-$$
-
-Basic's advertised base is $15$. Since $38 > 15$, Standard's base is not lower, so the statement is false.`,
+Standard's base fee is \\$38.00 against Basic's advertised \\$15 per month, so it is higher, not lower, and the statement is false.`,
       `**B) The overage rate on the Standard plan is \\$3.00 per GB.**  (true)
 
-This claim gives the variable charge. The two bills differ by $62-47=15$ over $8-3=5$ GB, so $y=15/5=3$.
-
-The elimination step isolates $y = 3$ directly, confirmed by both bills.
-
-The extra usage is $8 - 3 = 5$ GB and the extra charge is $62.00 - 47.00 = 15.00$:
+The two Standard bills differ only in overage used: 8 GB cost \\$62.00 in March and 3 GB cost \\$47.00 in April, that is \\$15.00 more for 5 more GB.
 
 $$
-y = \\frac{15}{5} = 3
+y = \\frac{15.00}{5} = 3.00
 $$
 
-Standard overage is \\$3 per GB.`,
+The overage rate is \\$3.00 per GB, matching the claim, so the statement is true.`,
       `**C) A Standard customer using 10 GB of overage in May would be billed \\$68.00.**  (true)
 
-This claim applies Standard's confirmed pricing to 10 GB. The bill is $38+10(3)=68$.
-
-Standard's model is $x + y \\cdot g = 38 + 3g$. At $g = 10$:
+A Standard bill is a base fee plus an overage charge, both recovered from the billing history. From $x + 8y = 62.00$ and $x + 3y = 47.00$, subtraction gives $5y = 15.00$, so $y = 3.00$ and $x = 47.00 - 9.00 = 38.00$. A month with 10 GB of overage costs
 
 $$
-38 + 10(3) = 38 + 30 = 68
+38.00 + 10(3.00) = 38.00 + 30.00 = 68.00
 $$
 
-Ten GB of Standard overage bills at \\$68.`,
+The bill would be \\$68.00, matching the claim, so the statement is true.`,
       `**D) Switching from Standard to Premium would save money for a customer who typically uses 5 GB of overage per month.**  (true)
 
-This claim compares plans at 5 GB. Standard costs $38+5(3)=53$, while Premium is a flat $40$, saving $13$.
-
-At 5 GB of overage:
+Standard's terms come from its billing history: $x + 8y = 62.00$ and $x + 3y = 47.00$ give $5y = 15.00$, so $y = 3.00$ and $x = 38.00$. At 5 GB of overage the Standard bill is
 
 $$
-\\text{Standard} = 38 + 5(3) = 38 + 15 = 53
+38.00 + 5(3.00) = 38.00 + 15.00 = 53.00
 $$
 
-Premium is a flat $40$ with no overage. The saving is
+Premium is a flat \\$40 per month with no overage at all, so the switch saves
 
 $$
-53 - 40 = 13
+53.00 - 40.00 = 13.00
 $$
 
-Switching saves \\$13.00, so the statement is true.`,
+The customer would be \\$13.00 a month better off on Premium, so the statement is true.`,
       `**E) For a customer using 8 GB of overage, the Basic plan works out cheaper than the Standard plan.**  (true)
 
-At 8 GB, Basic costs 15 + 8(2) = \\$31.00 versus Standard's 38 + 24 = \\$62.00. Basic is substantially cheaper here.
-
-Basic is $15 + 2g$ and Standard is $38 + 3g$. At $g = 8$:
+Basic is advertised at \\$15 per month plus \\$2.00 per GB of overage, so 8 GB on Basic costs
 
 $$
-\\text{Basic} = 15 + 8(2) = 15 + 16 = 31
+15.00 + 8(2.00) = 15.00 + 16.00 = 31.00
 $$
 
+Standard's terms have to be recovered from its billing history: $x + 8y = 62.00$ and $x + 3y = 47.00$ give $5y = 15.00$, so $y = 3.00$ and $x = 38.00$. On Standard, 8 GB of overage costs
+
 $$
-\\text{Standard} = 38 + 8(3) = 38 + 24 = 62
+38.00 + 8(3.00) = 38.00 + 24.00 = 62.00
 $$
 
-Since $31 < 62$, Basic is cheaper, so the statement is true.`,
+which is the March bill in the record. Since $31.00 < 62.00$, Basic is the cheaper plan at that usage and the statement is true.`,
     ],
     difficulty_level: "2/5",
     sort_order: 13,
@@ -2057,55 +1859,45 @@ $$
     tactical_explanations: [
       `**A) After removing the occupancy tax, Weekend 1's booking revenue was \\$2,240.00.**  (true)
 
-This claim reverses the 8% tax on Weekend 1. Dividing the printed total gives $2419.20\\div1.08=2240.00$.
-
-The printed total includes 8% tax, so divide by $1.08$:
+Weekend 1 was charged \\$2,419.20 with the 8% occupancy tax already included, so the pre-tax revenue is that total divided by $1.08$:
 
 $$
 \\frac{2419.20}{1.08} = 2240.00
 $$
 
-Weekend 1's pre-tax revenue is \\$2,240.00, matching the claim.`,
+The pre-tax booking revenue was \\$2,240.00, matching the claim, so the statement is true.`,
       `**B) A Suite costs \\$200 more per night than a Standard room.**  (false)
 
-The actual gap is 210 - 140 = \\$70, not \\$200. Forgetting to strip out the tax before comparing rates tends to inflate this estimate.
-
-Weekend 2 pre-tax: $3099.60 / 1.08 = 2870.00$. From $10x + 4y = 2240$, divide by 2: $5x + 2y = 1120$, so $y = (1120 - 5x)/2$. Substitute into the doubled Weekend 2 equation $14x + 18y = 5740$:
+Both confirmations are quoted with 8% tax included, so convert them to pre-tax revenue first: $2419.20 / 1.08 = 2240.00$ for Weekend 1 and $3099.60 / 1.08 = 2870.00$ for Weekend 2. With $x$ the pre-tax Standard rate and $y$ the pre-tax Suite rate,
 
 $$
-14x + 9(1120 - 5x) = 5740
+10x + 4y = 2240
 $$
 
 $$
-14x + 10080 - 45x = 5740
+7x + 9y = 2870
 $$
 
+Multiplying the first by 9 and the second by 4 gives $90x + 36y = 20160$ and $28x + 36y = 11480$. Subtracting:
+
 $$
--31x = -4340
+62x = 8680
 $$
 
 $$
 x = 140
 $$
 
-Then
+Then $10(140) + 4y = 2240$ gives $4y = 840$, so $y = 210$, and the nightly gap is
 
 $$
-y = \\frac{1120 - 5(140)}{2} = \\frac{1120 - 700}{2} = \\frac{420}{2} = 210
+210 - 140 = 70
 $$
 
-The gap is
-
-$$
-y - x = 210 - 140 = 70
-$$
-
-A Suite costs \\$70 more, not the claimed \\$200, so the statement is false.`,
+A Suite costs \\$70 more per night, well short of the claimed \\$200, so the statement is false.`,
       `**C) Booking 6 Standard rooms for one night (pre-tax) costs less than booking 4 Suites.**  (false)
 
-This claim compares two pre-tax bookings. Six Standard rooms cost $6(140)=840$, and four Suites cost $4(210)=840$.
-
-Using $x = 140$ and $y = 210$:
+The nightly rates come from the two confirmations once the 8% tax is stripped out: $2419.20 / 1.08 = 2240.00$ and $3099.60 / 1.08 = 2870.00$, giving $10x + 4y = 2240$ and $7x + 9y = 2870$. Multiplying the first by 9 and the second by 4 and subtracting gives $62x = 8680$, so $x = 140$, and then $4y = 2240 - 1400 = 840$, so $y = 210$. Comparing the two bookings before tax:
 
 $$
 6(140) = 840
@@ -2115,27 +1907,25 @@ $$
 4(210) = 840
 $$
 
-The two bookings cost the same \\$840, so six Standard rooms do not cost less. The statement is false.`,
+Both come to \\$840, so six Standard rooms do not cost less than four Suites and the statement is false.`,
       `**D) Including the 8% tax, a single Suite night costs \\$226.80.**  (true)
 
-The pre-tax Suite rate is $y = 210$. Apply the 8% occupancy tax:
+The Suite rate has to be recovered from the pre-tax revenues, $2419.20 / 1.08 = 2240.00$ and $3099.60 / 1.08 = 2870.00$, which give $10x + 4y = 2240$ and $7x + 9y = 2870$. Eliminating $y$ (nine times the first equation minus four times the second) leaves $62x = 8680$, so $x = 140$, and then $4y = 2240 - 1400 = 840$, so $y = 210$. Adding the 8% occupancy tax to one Suite night:
 
 $$
 210 \\times 1.08 = 226.80
 $$
 
-A taxed Suite night costs \\$226.80, matching the claim.`,
+A taxed Suite night costs \\$226.80, matching the claim, so the statement is true.`,
       `**E) Had Weekend 2 booked 10 Suites instead of 9 (Standard rooms unchanged), pre-tax revenue would have risen by \\$210.**  (true)
 
-This claim adds exactly one Suite while leaving everything else unchanged. One more Suite contributes its pre-tax rate of $210$.
-
-The extra Suite is $10 - 9 = 1$, at the pre-tax rate $y = 210$:
+Only the pre-tax Suite rate matters, since the Standard bookings are unchanged. Removing the 8% tax gives pre-tax revenues of $2419.20 / 1.08 = 2240.00$ and $3099.60 / 1.08 = 2870.00$, so $10x + 4y = 2240$ and $7x + 9y = 2870$. Eliminating $y$ gives $62x = 8680$, so $x = 140$ and $y = 210$. One additional Suite night adds
 
 $$
 1 \\times 210 = 210
 $$
 
-Pre-tax revenue would rise by \\$210, matching the claim.`,
+Pre-tax revenue would rise by \\$210, matching the claim, so the statement is true.`,
     ],
     difficulty_level: "2/5",
     sort_order: 14,
@@ -2220,11 +2010,17 @@ $$
     tactical_explanations: [
       `**A) Component A's unit cost is \\$12.**  (true)
 
-This claim gives Component A's actual cost. Elimination produces $31x=372$, so $x=12$.
+Only the January and February rows record actual inventory values, so those two build the system. With $x$ the unit cost of Component A and $y$ that of Component B,
 
-The elimination confirms x = \\$12.00 exactly, reconciling with both actual monthly rows.
+$$
+150x + 90y = 3150
+$$
 
-January: $150x + 90y = 3150$. February: $130x + 140y = 3660$. Divide by 30 and 10: $5x + 3y = 105$ and $13x + 14y = 366$. Multiply by 14 and 3:
+$$
+130x + 140y = 3660
+$$
+
+Dividing the first by 30 and the second by 10 gives $5x + 3y = 105$ and $13x + 14y = 366$. Multiplying these by 14 and 3 respectively:
 
 $$
 70x + 42y = 1470
@@ -2234,7 +2030,7 @@ $$
 39x + 42y = 1098
 $$
 
-Subtract:
+Subtracting:
 
 $$
 31x = 372
@@ -2244,21 +2040,13 @@ $$
 x = 12
 $$
 
-Component A costs \\$12 a unit.`,
+Component A costs \\$12 per unit, matching the claim, so the statement is true.`,
       `**B) Component B's unit cost is \\$18.**  (false)
 
-This claim mistakes the forecast implication for the actual price. After $x=12$, $5(12)+3y=105$ gives $y=15$, not $18$.
-
-Component B actually costs \\$15.00, not \\$18.00. Reading the forecast row's higher implied prices back into the actual data is a natural but incorrect shortcut.
-
-From $5x + 3y = 105$ and $x = 12$:
+The actual rows are January, $150x + 90y = 3150$, and February, $130x + 140y = 3660$; the March row is a forecast and cannot be used to price today's stock. Simplifying to $5x + 3y = 105$ and $13x + 14y = 366$ and eliminating $y$ gives $31x = 372$, so $x = 12$. Substituting back:
 
 $$
 5(12) + 3y = 105
-$$
-
-$$
-60 + 3y = 105
 $$
 
 $$
@@ -2269,44 +2057,34 @@ $$
 y = 15
 $$
 
-Component B costs \\$15, not the claimed \\$18, so the statement is false.`,
+Component B costs \\$15 per unit, not the claimed \\$18, so the statement is false.`,
       `**C) The March forecast assumes higher unit prices than what actually applied in January and February.**  (true)
 
-This claim compares March's forecast with the actual prices. At actual costs, the forecast quantities would value at $200(12)+100(15)=3900$, below the forecast total of $4700$.
-
-Value March's 200 A + 100 B at the actual costs $x = 12$, $y = 15$:
+The actual unit costs come from the two recorded rows, $150x + 90y = 3150$ and $130x + 140y = 3660$, which simplify to $5x + 3y = 105$ and $13x + 14y = 366$. Eliminating $y$ gives $31x = 372$, so $x = 12$, and substituting back gives $3y = 45$, so $y = 15$. Valuing March's forecast quantities at those actual costs:
 
 $$
 200(12) + 100(15) = 2400 + 1500 = 3900
 $$
 
-The forecast total is $4700$. Since $3900 < 4700$, the forecast assumes higher unit prices, so the statement is true.`,
+The forecast puts the very same basket, 200 units of A and 100 units of B, at \\$4,700, which is \\$800 above the actual-cost valuation. Since the quantities are identical on both sides of that comparison, the higher forecast total can only come from a higher price level overall, so the statement is true. The arithmetic supports only that aggregate conclusion: it shows the weighted valuation is higher without identifying which component's price rises, or by how much.`,
       `**D) If March's forecast quantities (200 A + 100 B) were valued at the actual January/February unit costs, the result would be \\$4,700.**  (false)
 
-This claim uses the wrong valuation basis. The actual-price value is $200(12)+100(15)=2400+1500=3900$.
-
-Valuing March's quantities at actual costs gives \\$3,900, not \\$4,700. The \\$4,700 figure only appears because the forecast bakes in an assumed price rise.
-
-From C:
+The actual unit costs come from the recorded January and February rows, $150x + 90y = 3150$ and $130x + 140y = 3660$. These simplify to $5x + 3y = 105$ and $13x + 14y = 366$, and eliminating $y$ gives $31x = 372$, so $x = 12$; substituting back gives $3y = 45$, so $y = 15$. Valuing 200 units of A and 100 units of B at those costs:
 
 $$
-200(12) + 100(15) = 3900
+200(12) + 100(15) = 2400 + 1500 = 3900
 $$
 
-The actual-cost valuation is \\$3,900, not the claimed \\$4,700, so the statement is false.`,
+The actual-cost valuation is \\$3,900, not the claimed \\$4,700, so the statement is false. The \\$4,700 belongs to the forecast row, which is built on its own price assumptions rather than the recorded ones.`,
       `**E) The combined actual inventory value recorded for January and February is \\$6,810.**  (true)
 
-This claim combines the two actual monthly values. Adding them gives $3150+3660=6810$.
-
-Simply adding the two actual monthly totals, 3,150 + 3,660 = \\$6,810, without needing the unit costs at all.
-
-The table's actual totals:
+January and February are the two rows marked as actual, at \\$3,150 and \\$3,660 respectively. Adding them:
 
 $$
 3150 + 3660 = 6810
 $$
 
-The combined actual value is \\$6,810, matching the claim.`,
+The combined actual value is \\$6,810, matching the claim, so the statement is true. No unit cost is needed here, since both totals are already recorded, and the March forecast row stays out of the sum.`,
     ],
     difficulty_level: "2/5",
     sort_order: 15,
@@ -2396,87 +2174,55 @@ $$
     tactical_explanations: [
       `**A) The overtime rate actually paid matches the contractual $1.5\\times$ regular-rate rule.**  (false)
 
-The regular rate is $14$, so the contract requires $1.5(14)=21$ per overtime hour. Payroll used $24$, which is $3$ higher per overtime hour.
+Let $x$ be the regular hourly wage and $y$ the overtime rate actually paid. The two payroll rows give
 
-Worker 1: $40x + 6y = 704$. Worker 2: $40x + 2y = 608$. Subtract:
+$$40x + 6y = 704, \\qquad 40x + 2y = 608$$
 
-$$
-(40x + 6y) - (40x + 2y) = 704 - 608
-$$
+Subtract:
 
-$$
-4y = 96
-$$
+$$(40x + 6y) - (40x + 2y) = 704 - 608 \\Rightarrow 4y = 96 \\Rightarrow y = 24$$
 
-$$
-y = 24
-$$
+Then $40x + 2(24) = 608$ gives $40x + 48 = 608$, so $40x = 560$ and $x = 14$. The contract requires
 
-Then $40x + 2(24) = 608$ gives $x = 14$. The contract requires
-
-$$
-1.5 \\times 14 = 21
-$$
+$$1.5 \\times 14 = 21$$
 
 Actual overtime is $24$, not $21$, so the statement is false.`,
       `**B) The regular hourly wage is \\$14.**  (true)
 
-Subtracting the two payroll equations cancels the $40x$ regular-pay term and gives $4y=96$, so $y=24$. Then $40x+2(24)=608$ gives $x=14$.
+Let $x$ be the regular hourly wage and $y$ the overtime rate actually paid. Worker 1 and Worker 2 give
 
-The elimination step isolates $x = 14.00$ directly, and it checks out against both workers' totals.
+$$40x + 6y = 704, \\qquad 40x + 2y = 608$$
 
-From A, $y = 24$. Substitute into Worker 2:
+Subtract to cancel the shared regular-pay term:
 
-$$
-40x + 2(24) = 608
-$$
+$$4y = 96 \\Rightarrow y = 24$$
 
-$$
-40x + 48 = 608
-$$
+Substitute into Worker 2:
 
-$$
-40x = 560
-$$
+$$40x + 2(24) = 608 \\Rightarrow 40x + 48 = 608 \\Rightarrow 40x = 560 \\Rightarrow x = 14$$
 
-$$
-x = 14
-$$
-
-Regular pay is \\$14 an hour.`,
+The regular hourly wage is \\$14, matching the claim.`,
       `**C) Relative to the $1.5\\times$ contract rule, Worker 2 was overpaid by exactly \\$6.00 on their overtime hours.**  (true)
 
-Worker 2 has 2 overtime hours. Contract pay would be $2(21)=42$, but actual overtime pay was $2(24)=48$, a difference of $6$.
+From the payroll system $40x + 6y = 704$ and $40x + 2y = 608$, subtraction yields $4y = 96$, so $y = 24$, and then $40x + 48 = 608$ gives $x = 14$. Contract overtime is $1.5 \\times 14 = 21$. Worker 2 has 2 overtime hours, so
 
-Contract overtime rate is $21$; actual is $24$. Worker 2 has 2 overtime hours:
+$$2(24) - 2(21) = 48 - 42 = 6$$
 
-$$
-2(24) - 2(21) = 48 - 42 = 6
-$$
-
-Worker 2 was overpaid by \\$6.00 on overtime, matching the claim.`,
+Worker 2 was overpaid by exactly \\$6.00 on overtime.`,
       `**D) A third worker completing 40 regular + 4 overtime hours, paid at the rates actually used this week, would earn \\$656.**  (true)
 
-At the actual rates, the worker earns $40(14)+4(24)$. That is $560+96=656$.
+The payroll equations $40x + 6y = 704$ and $40x + 2y = 608$ solve to $x = 14$ and $y = 24$. At those actual rates,
 
-Using $x = 14$ and $y = 24$:
+$$40(14) + 4(24) = 560 + 96 = 656$$
 
-$$
-40(14) + 4(24) = 560 + 96 = 656
-$$
-
-The third worker would earn \\$656, matching the claim.`,
+The third worker would earn \\$656.`,
       `**E) That same third worker, paid strictly under the $1.5\\times$ contract rule instead, would earn \\$644.**  (true)
 
-Using the contractual rate: 40(14) + 4(21) = \\$644, \\$12 less than the company's actual practice.
+The same system yields regular wage $x = 14$. Contract overtime is $1.5 \\times 14 = 21$. For 40 regular + 4 overtime hours under the contract rule,
 
-The contract overtime rate is $1.5 \\times 14 = 21$:
+$$40(14) + 4(21) = 560 + 84 = 644$$
 
-$$
-40(14) + 4(21) = 560 + 84 = 644
-$$
-
-Under the 1.5× rule that third worker earns \\$644.`,
+That third worker would earn \\$644 under the $1.5\\times$ rule.`,
     ],
     difficulty_level: "2/5",
     sort_order: 16,
@@ -2542,61 +2288,51 @@ $$
     tactical_explanations: [
       `**A) The billing office's claim of an \\$18.00 fixed monthly charge is correct.**  (false)
 
-After removing the penalty, May's bill is $51$. With a $2$ rate, its usage costs $18(2)=36$, leaving a fixed charge of $15$, not $18$.
+May's printed \\$56.10 includes a 10% late penalty on the whole bill, so the genuine May charge is
 
-The bills actually support a fixed charge of \\$15.00, not the claimed \\$18.00. The billing office's own figure is wrong.
+$$\\frac{56.10}{1.10} = 51.00$$
 
-May's printed \\$56.10 already includes a 10% late penalty on the whole bill, so the genuine May charge is $56.10 / 1.10$. June needs no correction: $x + 25y = 65$. Subtracting the cleaned pair $x + 18y = 51$ and $x + 25y = 65$ cancels $x$ and leaves $7y = 14$, hence $y = 2$. Back-substitution is then
+June needs no correction. Let $x$ be the fixed monthly charge and $y$ the rate per m³:
 
-$$
-x + 18(2) = 51 \\Rightarrow x + 36 = 51 \\Rightarrow x = 15
-$$
+$$x + 18y = 51, \\qquad x + 25y = 65$$
 
-$15$ is not the office's $18$.`,
+Subtract: $7y = 14$, so $y = 2$. Then
+
+$$x + 18(2) = 51 \\Rightarrow x + 36 = 51 \\Rightarrow x = 15$$
+
+The fixed charge is \\$15.00, not the office's claimed \\$18.00.`,
       `**B) The rate charged is \\$2.00 per cubic metre.**  (true)
 
-The bills differ by $65-51=14$ after May is corrected. Usage differs by $25-18=7$ m³, so the rate is $14\\div7=2$ dollars per m³.
+Undo May's 10% late penalty: $56.10 / 1.10 = 51.00$. With June's clean bill, the system is
 
-The elimination step gives y = \\$2.00 per m³ exactly, contradicting the claimed \\$1.85.
+$$x + 18y = 51, \\qquad x + 25y = 65$$
 
-Once May is divided back to $51$, the two clean bills are $x + 18y = 51$ and $x + 25y = 65$. Their difference is only usage:
+Their difference isolates usage only:
 
-$$
-(25 - 18)y = 65 - 51 \\Rightarrow 7y = 14 \\Rightarrow y = 2
-$$
+$$(25 - 18)y = 65 - 51 \\Rightarrow 7y = 14 \\Rightarrow y = 2$$
 
-That recovered rate, not $1.85$, is what both months actually used.`,
+The rate is \\$2.00 per m³, matching the claim (and contradicting the office's \\$1.85 figure).`,
       `**C) After removing the late penalty, May's actual water charge was \\$51.00.**  (true)
-
-56.10 ÷ 1.10 = \\$51.00, undoing the 10% penalty rather than simply subtracting a flat amount.
 
 A 10% surcharge means the printed figure is $1.10$ times the genuine charge, so invert the multiplier:
 
-$$
-\\frac{56.10}{1.10} = 51.00
-$$
+$$\\frac{56.10}{1.10} = 51.00$$
 
-Subtracting $5.61$ (10% of the printed total) would be the wrong undo and would not land on $51$.`,
+May's actual water charge before the late penalty is \\$51.00.`,
       `**D) A customer using 40 m³ in a month would be billed \\$85.00.**  (false)
 
-The correct formula is $15+2u$. At $u=40$, the bill is $15+2(40)=95$.
+After cleaning May to $51$, the bills give $x + 18y = 51$ and $x + 25y = 65$. Subtracting yields $y = 2$, then $x = 15$. At $u = 40$,
 
-With the recovered fixed charge and rate,
+$$15 + 2 \\cdot 40 = 15 + 80 = 95$$
 
-$$
-15 + 2 \\cdot 40 = 15 + 80 = 95
-$$
-
-$95$ is $10$ above the claimed $85$, so the $85$ figure is not the bill this model produces.`,
+The bill is \\$95.00, not \\$85.00.`,
       `**E) Had the same 10% late penalty been applied to June's \\$65.00 bill, the total would have been \\$71.50.**  (true)
 
-June's printed $65$ is already the genuine charge. A 10% late penalty on that whole amount is
+June's printed \\$65.00 is already the genuine charge. A 10% late penalty on that whole amount is
 
-$$
-65.00 \\times 1.10 = 71.50
-$$
+$$65.00 \\times 1.10 = 71.50$$
 
-which is exactly the figure in the claim.`,
+which matches the claim.`,
     ],
     difficulty_level: "2/5",
     sort_order: 17,
@@ -2664,67 +2400,47 @@ $$
     tactical_explanations: [
       `**A) For a 10 km ride, CityCab works out cheaper than MetroX.**  (true)
 
-CityCab charges $6+10(1)=16$. MetroX charges $6+10(1.5)=21$, so CityCab is $5$ cheaper.
+CityCab's 20 km ride costs $14 + 12 = 26$, so
 
-Recover the two fare rules first. CityCab's 20 km ride is $14 + 12 = 26$, so $x_1 + 8y_1 = 14$ and $x_1 + 20y_1 = 26$. Subtracting: $12y_1 = 12$, hence $y_1 = 1$ and $x_1 = 14 - 8 = 6$. MetroX's 15 km ride is $13.50 + 15 = 28.50$, so $x_2 + 5y_2 = 13.50$ and $x_2 + 15y_2 = 28.50$. Subtracting: $10y_2 = 15$, hence $y_2 = 1.5$ and $x_2 = 13.50 - 7.50 = 6$. At 10 km the two formulas give
+$$x_1 + 8y_1 = 14, \\qquad x_1 + 20y_1 = 26$$
 
-$$
-6 + 10(1) = 16, \\qquad 6 + 10(1.5) = 21
-$$
+Subtract: $12y_1 = 12$, hence $y_1 = 1$ and $x_1 = 14 - 8 = 6$. MetroX's 15 km ride costs $13.50 + 15 = 28.50$, so
 
-CityCab's $16$ undercuts MetroX's $21$.`,
+$$x_2 + 5y_2 = 13.50, \\qquad x_2 + 15y_2 = 28.50$$
+
+Subtract: $10y_2 = 15$, hence $y_2 = 1.5$ and $x_2 = 13.50 - 7.50 = 6$. At 10 km,
+
+$$6 + 10(1) = 16, \\qquad 6 + 10(1.5) = 21$$
+
+CityCab's \\$16 undercuts MetroX's \\$21.`,
       `**B) Both companies charge the same base fare of \\$6.00.**  (true)
 
-CityCab's rate is $1$, so $14-8(1)=6$. MetroX's rate is $1.50$, so $13.50-5(1.50)=6$.
+CityCab solves from $x_1 + 8y_1 = 14$ and $x_1 + 20y_1 = 26$ to $y_1 = 1$, $x_1 = 6$. MetroX solves from $x_2 + 5y_2 = 13.50$ and $x_2 + 15y_2 = 28.50$ to $y_2 = 1.5$, $x_2 = 6$. Peel the per-km charge off each shorter ride:
 
-Both systems independently solve to a \\$6.00 base fare, a coincidence worth double-checking rather than assuming.
+$$14.00 - 8(1) = 6.00, \\qquad 13.50 - 5(1.50) = 6.00$$
 
-Peel the per-km charge off each company's shorter quoted ride:
-
-$$
-14.00 - 8(1) = 6.00
-$$
-
-$$
-13.50 - 5(1.50) = 13.50 - 7.50 = 6.00
-$$
-
-The two bases land on the same $6.00$.`,
+Both bases are \\$6.00.`,
       `**C) For distances under 4 km, MetroX would be cheaper than CityCab.**  (false)
 
-Their fares are $6+d$ and $6+1.5d$. For every positive $d$, $1.5d>d$, so MetroX costs more.
+CityCab is $6 + d$ and MetroX is $6 + 1.5d$. Their difference is
 
-Since both share the same base fare and MetroX's rate is higher, MetroX is never actually cheaper for any positive distance. They only tie at 0 km.
+$$(6 + 1.5d) - (6 + d) = 0.5d$$
 
-The difference of the two fare rules is
-
-$$
-(6 + 1.5d) - (6 + d) = 0.5d
-$$
-
-which is positive whenever $d > 0$. Even at a short hop such as $d = 3$, MetroX is $6 + 4.50 = 10.50$ against CityCab's $6 + 3 = 9$.`,
+which is positive whenever $d > 0$. Even at a short hop such as $d = 3$, MetroX is $6 + 4.50 = 10.50$ against CityCab's $6 + 3 = 9$. MetroX is never cheaper for any positive distance.`,
       `**D) A 30 km CityCab ride costs \\$36.00.**  (true)
 
-CityCab's formula is $6+d$. At 30 km, $6+30=36$.
+CityCab's recovered rule is base \\$6 plus \\$1 per km, so a 30 km ride is
 
-CityCab is base plus $1$ per km, so a 30 km ride is just
+$$6 + 30(1) = 36$$
 
-$$
-6 + 30(1) = 36
-$$
-
-No extra fee sits on top of that linear rule.`,
+matching the claim.`,
       `**E) There is a distance of 5 km at which both companies charge exactly the same fare.**  (false)
 
-Equating $6+d$ and $6+1.5d$ gives $d=1.5d$, so $d=0$. At 5 km, the fares are $11$ and $13.50$.
+Equating the two fare formulas:
 
-Setting the two fare formulas equal gives $d = 0$, not 5 km. The companies only match at zero distance.
+$$6 + d = 6 + 1.5d \\Rightarrow d = 1.5d \\Rightarrow 0 = 0.5d \\Rightarrow d = 0$$
 
-$$
-6 + d = 6 + 1.5d \\Rightarrow d = 1.5d \\Rightarrow 0 = 0.5d \\Rightarrow d = 0
-$$
-
-At the claimed 5 km the two bills are $6 + 5 = 11$ versus $6 + 5(1.5) = 13.50$, which are not equal.`,
+The companies only match at zero distance. At the claimed 5 km the bills are $6 + 5 = 11$ versus $6 + 5(1.5) = 13.50$, which are not equal.`,
     ],
     difficulty_level: "2/5",
     sort_order: 18,
@@ -2808,67 +2524,45 @@ Then $x_2 + 5(1.5) = 13.50$, so $x_2 = 6$.
     tactical_explanations: [
       `**A) Vendor A charges less than Vendor B for Product X.**  (true)
 
-Vendor A charges $9$ per X, while Vendor B charges $11$ per X. Therefore A is $2$ cheaper for each X unit.
+Vendor A's quotes are $20x_A + 15y_A = 450$ and $25x_A + 12y_A = 441$. Divide the first by 5 to get $4x_A + 3y_A = 90$, so $y_A = 30 - \\frac{4}{3}x_A$. Substitute into the second:
 
-Vendor A's \\$9 for Product X undercuts Vendor B's \\$11.
+$$25x_A + 12\\left(30 - \\frac{4}{3}x_A\\right) = 441 \\Rightarrow 25x_A + 360 - 16x_A = 441 \\Rightarrow 9x_A = 81 \\Rightarrow x_A = 9$$
 
-Vendor A's two quotes are $20x_A + 15y_A = 450$ and $25x_A + 12y_A = 441$. Divide the first by 5 to get $4x_A + 3y_A = 90$, so $y_A = 30 - \\frac{4}{3}x_A$. Feed that into the second quote:
-
-$$
-25x_A + 12\\left(30 - \\frac{4}{3}x_A\\right) = 441
-$$
-
-$$
-25x_A + 360 - 16x_A = 441 \\Rightarrow 9x_A = 81 \\Rightarrow x_A = 9
-$$
-
-Vendor B, treated the same way from $20x_B + 15y_B = 460$ and $25x_B + 12y_B = 467$, yields $x_B = 11$. So $9 < 11$.`,
+Vendor B from $20x_B + 15y_B = 460$ and $25x_B + 12y_B = 467$ yields $x_B = 11$ by the same method. Since $9 < 11$, Vendor A charges less for Product X.`,
       `**B) Vendor B charges less than Vendor A for Product Y.**  (true)
 
-Vendor B's Y price is $16$, compared with Vendor A's $18$. B is therefore $2$ cheaper per Y unit.
+Vendor A solves to $x_A = 9$, and from $4x_A + 3y_A = 90$,
 
-Vendor B's \\$16 for Product Y is cheaper than Vendor A's \\$18, the reverse pattern from Product X.
+$$y_A = 30 - \\frac{4}{3}(9) = 30 - 12 = 18$$
 
-From A's reduced first quote, $y_A = 30 - \\frac{4}{3}(9) = 30 - 12 = 18$. From B's reduced first quote $4x_B + 3y_B = 92$ and $x_B = 11$,
+Vendor B solves to $x_B = 11$. From the reduced first quote $4x_B + 3y_B = 92$,
 
-$$
-4(11) + 3y_B = 92 \\Rightarrow 44 + 3y_B = 92 \\Rightarrow y_B = 16
-$$
+$$4(11) + 3y_B = 92 \\Rightarrow 44 + 3y_B = 92 \\Rightarrow y_B = 16$$
 
-$16 < 18$, so B is the cheaper Y supplier.`,
+Since $16 < 18$, Vendor B is cheaper for Product Y.`,
       `**C) For the upcoming order of 40 units X and 30 units Y, Vendor A is the cheaper overall choice.**  (true)
 
-For 40 X + 30 Y, Vendor A totals \\$900, while Vendor B totals \\$920. Vendor A is \\$20 cheaper overall despite losing on Product Y alone.
+Vendor A prices are $x_A = 9$, $y_A = 18$; Vendor B prices are $x_B = 11$, $y_B = 16$. For 40 X + 30 Y,
 
-Plug the recovered prices into the upcoming mix:
+$$40(9) + 30(18) = 360 + 540 = 900$$
 
-$$
-40(9) + 30(18) = 360 + 540 = 900
-$$
+$$40(11) + 30(16) = 440 + 480 = 920$$
 
-$$
-40(11) + 30(16) = 440 + 480 = 920
-$$
-
-A's $900$ beats B's $920$ on the bundle even though B wins on Y.`,
+A's \\$900 beats B's \\$920 on the bundle.`,
       `**D) Switching the entire upcoming order to Vendor B would reduce Bramble's total cost by \\$20.**  (false)
 
-The current Vendor A total is $900$, while Vendor B would cost $920$. Switching raises the cost by $20$.
+Vendor A prices $x_A = 9$, $y_A = 18$ and Vendor B prices $x_B = 11$, $y_B = 16$ make the upcoming mix cost
 
-The two bundle totals from C already settle this: $920 - 900 = 20$ is an increase, not a saving. Switching to B would cost Bramble twenty dollars more, the opposite of the claim.`,
+$$40(9) + 30(18) = 900, \\qquad 40(11) + 30(16) = 920$$
+
+Choosing Vendor B instead raises the cost by $920 - 900 = 20$; it does not reduce it. The statement is false.`,
       `**E) If the upcoming order changed to 60 units of Y only, Vendor B would work out cheaper than Vendor A.**  (true)
 
-For Y only, Vendor A costs $60(18)=1080$ and Vendor B costs $60(16)=960$. Vendor B saves $120$.
+With no X in the order, only the Y prices matter. Vendor A has $y_A = 18$ and Vendor B has $y_B = 16$, so
 
-For 60 units of Y alone, Vendor A costs \\$1,080 while Vendor B costs \\$960. Here Vendor B's advantage on Y is the only thing that matters.
+$$60 \\times 18 = 1080, \\qquad 60 \\times 16 = 960$$
 
-With no X in the order the comparison collapses to the two Y prices:
-
-$$
-60 \\times 18 = 1080, \\qquad 60 \\times 16 = 960
-$$
-
-B is $120$ cheaper on that Y-only run.`,
+Vendor B is \\$120 cheaper on that Y-only run.`,
     ],
     difficulty_level: "2/5",
     sort_order: 19,
@@ -2944,61 +2638,39 @@ $$
     tactical_explanations: [
       `**A) Product P is priced at \\$50 and Service Q at \\$70, identically for both companies.**  (true)
 
-Using Alpha's $13,100$ and Beta's $14,100$ revenue equations gives $x=50$ and $y=70$. Both equations use those same market prices.
+Combined revenue $A + B = 27200$ and gap $B - A = 1000$ split the totals: $2B = 28200$, so $B = 14100$ and $A = 13100$. The sales rows become
 
-The elimination confirms x = \\$50 and y = \\$70, holding for both companies' revenue rows simultaneously.
+$$150x + 80y = 13100, \\qquad 100x + 130y = 14100$$
 
-Combined revenue $A + B = 27200$ and the gap $B - A = 1000$ first split the two company totals: adding them gives $2B = 28200$, so $B = 14100$ and $A = 13100$. Those become the right-hand sides of
-
-$$
-150x + 80y = 13100, \\qquad 100x + 130y = 14100
-$$
-
-Divide by 10 and eliminate. One convenient path is $15x + 8y = 1310$ against $10x + 13y = 1410$; clearing $x$ produces $y = 70$, then $150(50) + 80(70) = 7500 + 5600 = 13100$ confirms $x = 50$.`,
+Divide by 10: $15x + 8y = 1310$ and $10x + 13y = 1410$. Multiply by 2 and 3 to match $x$ terms, then subtract: $23y = 1610$, so $y = 70$. Then $10x + 13(70) = 1410$ gives $x = 50$. Check: $150(50) + 80(70) = 7500 + 5600 = 13100$. Product P is \\$50 and Service Q is \\$70.`,
       `**B) Beta generated more Q1 revenue than Alpha.**  (true)
 
-The sum-and-difference information gives Beta $14,100$ and Alpha $13,100$. Beta is exactly $1,000$ higher.
+From $A + B = 27200$ and $B - A = 1000$,
 
-That $1,000$ gap is given directly, but the two separate totals still need the sum:
+$$B = \\frac{27200 + 1000}{2} = 14100, \\qquad A = 27200 - 14100 = 13100$$
 
-$$
-B = \\frac{27200 + 1000}{2} = 14100, \\qquad A = 27200 - 14100 = 13100
-$$
-
-$14100 > 13100$, so Beta's Q1 revenue is the larger of the two.`,
+Since $14100 > 13100$, Beta's Q1 revenue is larger.`,
       `**C) If Alpha raises Product P's price by 10% next quarter with sales volumes unchanged, its total revenue would increase by exactly 10%.**  (false)
-
-A 10% rise on Product P alone raises Alpha's revenue from \\$13,100 to \\$13,850, an increase of only about 5.7%, not 10%. Product P is only part of Alpha's total revenue.
 
 Alpha currently earns $150(50) + 80(70) = 7500 + 5600 = 13100$. After a 10% lift on P only, the new P price is $55$, so
 
-$$
-150(55) + 80(70) = 8250 + 5600 = 13850
-$$
+$$150(55) + 80(70) = 8250 + 5600 = 13850$$
 
-The relative increase is $750 / 13100 \\approx 0.057$, about 5.7%, nowhere near a full 10% on the whole book.`,
+The relative increase is $750 / 13100 \\approx 0.057$, about 5.7%, not 10% of the whole book.`,
       `**D) Alpha's projected revenue after that 10% Product P price increase would surpass Beta's current Q1 revenue.**  (false)
 
-Alpha's projected revenue is $13,850$. Beta's current revenue is $14,100$, so Alpha remains $250$ lower.
+Alpha's current revenue is $13100$; after raising P by 10% with volumes unchanged it becomes $150(55) + 80(70) = 13850$. Beta's current revenue is $14100$. Since
 
-The $13,850$ figure is the one computed in C. Beta's current total is still $14,100$, and
+$$14100 - 13850 = 250$$
 
-$$
-14100 - 13850 = 250
-$$
-
-so the projected Alpha book still sits $250$ short of Beta's Q1.`,
+the projected Alpha book still sits \\$250 short of Beta's Q1.`,
       `**E) Beta's revenue from Service Q subscriptions alone exceeds Alpha's entire Q1 revenue from Product P.**  (true)
 
-Beta's Q revenue is $130(70)=9100$. Alpha's P revenue is $150(50)=7500$, so $9100>7500$.
+With prices $x = 50$ and $y = 70$,
 
-Beta's Service Q revenue is \\$9,100, while Alpha's entire Product P revenue is \\$7,500. Beta's single revenue line from Q alone beats Alpha's whole P line.
+$$130 \\times 70 = 9100, \\qquad 150 \\times 50 = 7500$$
 
-$$
-130 \\times 70 = 9100, \\qquad 150 \\times 50 = 7500
-$$
-
-$9100$ clears $7500$ by $1,600$.`,
+Beta's Q line of \\$9,100 exceeds Alpha's whole P line of \\$7,500.`,
     ],
     difficulty_level: "2/5",
     sort_order: 20,
@@ -3070,63 +2742,35 @@ Check: $150(50) + 80(70) = 7500 + 5600 = 13100$ and $100(50) + 130(70) = 5000 + 
     tactical_explanations: [
       `**A) The flyer's advertised \\$30 signup fee matches what members are actually being charged.**  (false)
 
-The records give a signup fee of $38$. That is $8$ more than the advertised $30$.
+Maria and Jason give $x + 6y = 284$ and $x + 10y = 448$. Their difference is four months of the monthly rate:
 
-The real signup fee is \\$38, not the advertised \\$30. The flyer understates what members are actually charged up front.
+$$(x + 10y) - (x + 6y) = 448 - 284 \\Rightarrow 4y = 164 \\Rightarrow y = 41$$
 
-Maria and Jason give $x + 6y = 284$ and $x + 10y = 448$. Their difference is four months of the same monthly rate:
-
-$$
-(x + 10y) - (x + 6y) = 448 - 284 \\Rightarrow 4y = 164 \\Rightarrow y = 41
-$$
-
-Then $x + 6(41) = 284$ leaves $x + 246 = 284$, so $x = 38$. The flyer said $30$; payroll used $38$.`,
+Then $x + 6(41) = 284$ leaves $x + 246 = 284$, so $x = 38$. The flyer said \\$30; members are charged \\$38.`,
       `**B) The monthly rate members are actually paying is lower than the advertised \\$45/month.**  (true)
 
-The monthly rate from the two histories is $41$. Since $41<45$, the ongoing charge is lower than advertised.
+From $x + 6y = 284$ and $x + 10y = 448$, subtraction gives $4y = 164$, so $y = 41$. Compared with the advertised \\$45,
 
-The real monthly rate is \\$41, indeed lower than the advertised \\$45. The flyer overstates the ongoing cost while understating the signup fee.
+$$45 - 41 = 4$$
 
-That $41$ is the $y$ recovered in A: $164 / 4 = 41$. Compared with the advertised $45$,
-
-$$
-45 - 41 = 4
-$$
-
-so the actual monthly charge sits $4$ below the flyer.`,
+the actual monthly charge sits \\$4 below the flyer.`,
       `**C) Maria's actual 6-month total exceeds what the flyer's advertised rates would have produced over the same 6 months.**  (false)
 
-The flyer's own rates over 6 months would total 30 + 6(45) = \\$300; Maria's real total of \\$284 is actually less than that, not more.
+The flyer's advertised rule at 6 months is
 
-Run the flyer's advertised rule $30 + 45m$ at $m = 6$:
+$$30 + 6(45) = 30 + 270 = 300$$
 
-$$
-30 + 6(45) = 30 + 270 = 300
-$$
-
-Maria actually paid $284$. $284 < 300$, so her real total does not exceed the flyer total.`,
+Maria actually paid \\$284. Since $284 < 300$, her real total does not exceed the flyer total.`,
       `**D) Jason paid more than \\$400 in total by his 10th payment.**  (true)
 
-Jason's listed total is $448$. Since $448>400$, the claim follows directly.
-
-Jason's real total is \\$448, indeed more than \\$400.
-
-The same recovered rule $x + 10y$ rebuilds that listed total:
-
-$$
-38 + 10(41) = 38 + 410 = 448
-$$
-
-and $448 > 400$.`,
+Jason's listed total is \\$448, and $448 > 400$.`,
       `**E) A member who negotiated away the signup fee entirely and paid only the monthly rate for a full 12 months would pay \\$492.**  (true)
 
-Drop $x$ and keep only the recovered monthly rate for a year:
+From Maria and Jason's histories, $4y = 164$ so the monthly rate is $y = 41$. Dropping the signup fee for 12 months:
 
-$$
-12 \\times 41 = 492
-$$
+$$12 \\times 41 = 492$$
 
-That is the no-signup 12-month bill.`,
+which matches the claim.`,
     ],
     difficulty_level: "3/5",
     sort_order: 21,
@@ -3196,61 +2840,37 @@ $$
     tactical_explanations: [
       `**A) The Basic plan costs \\$19 per month.**  (true)
 
-Elimination gives $22x=418$. Therefore $x=19$ dollars per Basic plan-month.
+The mixed bills are $4x + 3y = 169$ and $2x + 7y = 255$. Multiply the first by 7 and the second by 3 so the Premium terms match, then subtract:
 
-Solving the system gives x = \\$19 exactly, consistent with both households' combined bills.
+$$(28x + 21y) - (6x + 21y) = 1183 - 765 \\Rightarrow 22x = 418 \\Rightarrow x = 19$$
 
-The two mixed bills are $4x + 3y = 169$ and $2x + 7y = 255$. Multiply the first by 7 and the second by 3 so the Premium terms match ($21y$), then subtract:
-
-$$
-(28x + 21y) - (6x + 21y) = 1183 - 765 \\Rightarrow 22x = 418 \\Rightarrow x = 19
-$$
-
-Household 1 then rebuilds as $4(19) + 3y = 169$.`,
+Basic costs \\$19 per month.`,
       `**B) The Premium plan costs \\$35 per month.**  (false)
 
-After finding Basic at $19$, $4(19)+3y=169$ gives $3y=93$ and $y=31$. Premium is not $35$.
+From $4x + 3y = 169$ and $2x + 7y = 255$, elimination gives $x = 19$. Substitute into Household 1:
 
-Premium actually costs \\$31/month, not \\$35; substituting an assumed 'round' value instead of finishing the elimination is a common shortcut.
+$$4(19) + 3y = 169 \\Rightarrow 76 + 3y = 169 \\Rightarrow 3y = 93 \\Rightarrow y = 31$$
 
-Finish that last substitution instead of guessing $35$:
-
-$$
-76 + 3y = 169 \\Rightarrow 3y = 93 \\Rightarrow y = 31
-$$
-
-$31 \\ne 35$.`,
+Premium is \\$31, not \\$35.`,
       `**C) Household 2's combined total is more than double Household 1's combined total.**  (false)
 
-Household 2's total is \\$255, while double Household 1's total is \\$338; \\$255 falls short, so it is not more than double.
+The table prints both combined totals, so compare
 
-The table already prints both combined totals, so the comparison is just
+$$2 \\times 169 = 338$$
 
-$$
-2 \\times 169 = 338
-$$
-
-and $255 < 338$. Household 2 is larger, but not twice as large.`,
+against Household 2's \\$255. Since $255 < 338$, Household 2 is larger but not more than double.`,
       `**D) There exists some positive number of months at which paying only for Basic would cost the same as paying only for Premium for that many months.**  (false)
 
-Since neither plan carries a fixed fee, an n-month Basic bill costs 19n and Premium costs 31n. These are equal only when $n = 0$. There is no positive month count at which they ever match.
+The plans are pure flat rates $19n$ and $31n$ with no fixed fee. Setting them equal:
 
-Set the two pure-plan bills equal:
+$$19n = 31n \\Rightarrow 0 = 12n \\Rightarrow n = 0$$
 
-$$
-19n = 31n \\Rightarrow 0 = 12n \\Rightarrow n = 0
-$$
-
-A positive $n$ would require $19 = 31$.`,
+There is no positive month count at which the pure-plan bills match.`,
       `**E) A household billed for 5 months of Basic and 5 months of Premium would owe a combined \\$250.**  (true)
 
-5(19) + 5(31) = \\$250 exactly, a direct application of both confirmed monthly rates.
+With $x = 19$ and $y = 31$,
 
-Equal months of each plan:
-
-$$
-5(19) + 5(31) = 95 + 155 = 250
-$$
+$$5(19) + 5(31) = 95 + 155 = 250$$
 
 which is the claimed combined bill.`,
     ],
@@ -3332,61 +2952,39 @@ $$
     tactical_explanations: [
       `**A) Organic apples cost \\$4.80 per pound.**  (true)
 
-After known items are removed, elimination gives $19x=91.20$. Hence $x=4.80$ per pound.
+Peel known items first. Receipt 1: $50.00 - 3.60 - 4.40 = 42.00$, leaving $5x + 3y = 42$. Receipt 2: $43.20 - 3.60 = 39.60$, leaving $2x + 5y = 39.60$. Multiply the first leftover by 5 and the second by 3, then subtract:
 
-After removing the known bread and egg prices, solving the resulting system gives exactly \\$4.80/lb.
+$$(25x + 15y) - (6x + 15y) = 210 - 118.80 \\Rightarrow 19x = 91.20 \\Rightarrow x = 4.80$$
 
-Receipt 1 still has bread and eggs on it, so peel those first: $50.00 - 3.60 - 4.40 = 42.00$, leaving $5x + 3y = 42$. Receipt 2 peels only bread: $43.20 - 3.60 = 39.60$, leaving $2x + 5y = 39.60$. Multiply the first leftover by 5 and the second by 3, then subtract the $15y$ terms:
-
-$$
-(25x + 15y) - (6x + 15y) = 210 - 118.80 \\Rightarrow 19x = 91.20 \\Rightarrow x = 4.80
-$$
-
-That is the apple price the two unknown columns share.`,
+Organic apples cost \\$4.80 per pound.`,
       `**B) Almond milk costs less than organic apples, per unit.**  (false)
 
-Almond milk costs $6$ per carton, while apples cost $4.80$ per pound. Numerically, $6>4.80$.
+After peeling known items, $5x + 3y = 42$ and $2x + 5y = 39.60$ solve to $x = 4.80$. Then
 
-Almond milk is actually the more expensive item, \\$6.00/carton versus apples' \\$4.80/lb. The reverse of the claim.
+$$5(4.80) + 3y = 42 \\Rightarrow 24 + 3y = 42 \\Rightarrow 3y = 18 \\Rightarrow y = 6$$
 
-From $5(4.80) + 3y = 42$:
-
-$$
-24 + 3y = 42 \\Rightarrow 3y = 18 \\Rightarrow y = 6
-$$
-
-$6.00 > 4.80$, so milk is the dearer unit, not the cheaper one.`,
+Almond milk is \\$6.00 per carton and apples are \\$4.80 per pound. Since $6.00 > 4.80$, milk is the dearer unit, not the cheaper one.`,
       `**C) Five pounds of apples costs exactly the same as four cartons of almond milk.**  (true)
 
-5(4.80) = \\$24.00 and 4(6.00) = \\$24.00. Exactly equal, not just close.
+The recovered prices are $x = 4.80$ and $y = 6.00$, so
 
-The two recovered prices make that identity immediate:
+$$5(4.80) = 24.00, \\qquad 4(6.00) = 24.00$$
 
-$$
-5(4.80) = 24.00, \\qquad 4(6.00) = 24.00
-$$
-
-Five pounds and four cartons land on the same $24$.`,
+Five pounds and four cartons land on the same \\$24.`,
       `**D) If the store's 5% loyalty discount had applied to Receipt 1's total, the customer would have paid less than \\$47.00.**  (false)
 
-A 5% discount on $50$ is $2.50$. The reduced total would be $50-2.50=47.50$, which is above $47$.
+Receipt 1 printed \\$50.00 with no loyalty card. Five percent off that printed total is
 
-Receipt 1 printed $50.00$ with no loyalty card. Five percent off that printed total is
+$$50.00 \\times 0.05 = 2.50, \\qquad 50.00 - 2.50 = 47.50$$
 
-$$
-50.00 \\times 0.05 = 2.50, \\qquad 50.00 - 2.50 = 47.50
-$$
-
-$47.50$ is still above $47$, so the discounted bill would not have fallen below the claimed cutoff.`,
+\\$47.50 is still above \\$47, so the discounted bill would not fall below the claimed cutoff.`,
       `**E) Buying 10 lb of apples and 2 cartons of milk together costs more than \\$60.**  (false)
 
-The cost is $10(4.80)+2(6)=48+12=60$. It equals $60$; it does not exceed it.
+With $x = 4.80$ and $y = 6$,
 
-$$
-10(4.80) + 2(6) = 48 + 12 = 60
-$$
+$$10(4.80) + 2(6) = 48 + 12 = 60$$
 
-Equal to $60$ is not "more than $60$".`,
+Equal to \\$60 is not "more than \\$60".`,
     ],
     difficulty_level: "3/5",
     sort_order: 23,
@@ -3458,69 +3056,41 @@ $$
     tactical_explanations: [
       `**A) The fixed connection fee is \\$33.**  (true)
 
-At 240 units, usage costs $240(0.21)=50.40$. Subtracting from $83.40$ leaves $33$.
-
-Subtracting the two bills isolates y first, and back-substitution confirms a \\$33.00 fixed fee exactly.
-
 The standard plan is $x + yu$. Bill 1 and Bill 2 give $x + 240y = 83.40$ and $x + 380y = 112.80$. Their difference is 140 units of usage:
 
-$$
-140y = 112.80 - 83.40 = 29.40 \\Rightarrow y = 0.21
-$$
+$$140y = 112.80 - 83.40 = 29.40 \\Rightarrow y = 0.21$$
 
-Then $x + 240(0.21) = 83.40$ is $x + 50.40 = 83.40$, so $x = 33$.`,
+Then $x + 240(0.21) = 83.40$ is $x + 50.40 = 83.40$, so $x = 33$. The fixed connection fee is \\$33.`,
       `**B) Customer service's claimed rate of \\$0.24 per unit is correct.**  (false)
 
-The bill difference is $112.80-83.40=29.40$ for $380-240=140$ extra units. Thus the rate is $29.40\\div140=0.21$.
+From the two bills $x + 240y = 83.40$ and $x + 380y = 112.80$,
 
-The actual rate is \\$0.21/unit, not the claimed \\$0.24. The phone figure was never checked against real bills until now.
+$$(380 - 240)y = 112.80 - 83.40 \\Rightarrow 140y = 29.40 \\Rightarrow y = 0.21$$
 
-That $0.21$ is the $y$ from A. Customer service quoted $0.24$, and $0.21 \\ne 0.24$. Using the claimed rate on Bill 1 would have produced $33 + 240(0.24) = 33 + 57.60 = 90.60$, which is not the printed $83.40$.`,
+The actual rate is \\$0.21 per unit, not the claimed \\$0.24.`,
       `**C) At 280 units of usage, the standard plan costs less than \\$95.**  (true)
 
-The standard bill is $33+280(0.21)=33+58.80=91.80$. Since $91.80<95$, the claim is true.
+The recovered standard model is $33 + 0.21u$. At $u = 280$,
 
-The recovered standard model is $33 + 0.21u$. At $u = 280$:
+$$33 + 0.21 \\cdot 280 = 33 + 58.80 = 91.80$$
 
-$$
-33 + 0.21 \\cdot 280 = 33 + 58.80 = 91.80
-$$
-
-$91.80$ sits $3.20$ under $95$.`,
+Since $91.80 < 95$, the claim is true.`,
       `**D) The Solar Offset Plan is cheaper than the standard plan at every usage level above 0 units.**  (false)
 
-Solar is $0.29u$, while standard is $33+0.21u$. They meet at $412.5$ units; above that, standard's lower rate wins.
+Standard is $33 + 0.21u$ and Solar is $0.29u$. Set them equal:
 
-The two plans cross at 412.5 units: below that, Solar is cheaper, but above it the standard plan's lower rate wins out.
+$$33 + 0.21u = 0.29u \\Rightarrow 33 = 0.08u \\Rightarrow u = \\frac{33}{0.08} = 412.5$$
 
-Set the two formulas equal and solve for the crossover usage $u$:
-
-$$
-33 + 0.21u = 0.29u
-$$
-
-$$
-33 = 0.08u
-$$
-
-$$
-u = \\frac{33}{0.08} = 412.5
-$$
-
-Solar has no connection fee, so it wins for $0 < u < 412.5$. Past $412.5$ units the standard plan's cheaper per-unit rate takes over. The claim that Solar wins at every positive usage is therefore false.`,
+Solar wins for $0 < u < 412.5$, but past $412.5$ units the standard plan's cheaper per-unit rate takes over. The claim that Solar wins at every positive usage is false.`,
       `**E) At 500 units of usage, the Solar Offset Plan would be cheaper than the standard plan.**  (false)
 
-The two models are standard $33 + 0.21u$ and Solar $0.29u$. They meet where $33 + 0.21u = 0.29u$, which rearranges to $33 = 0.08u$ and $u = 412.5$. Five hundred units sits above that crossover, so the lower-rate standard plan should already be cheaper. Check by substituting $u = 500$ into each formula:
+Standard is $33 + 0.21u$ and Solar is $0.29u$. They meet at $u = 412.5$. At $u = 500$,
 
-$$
-33 + 0.21 \\cdot 500 = 33 + 105 = 138
-$$
+$$33 + 0.21 \\cdot 500 = 33 + 105 = 138$$
 
-$$
-0.29 \\cdot 500 = 145
-$$
+$$0.29 \\cdot 500 = 145$$
 
-Standard's $138$ undercuts Solar's $145$, so Solar is not the cheaper plan at 500 units.`,
+Standard's \\$138 undercuts Solar's \\$145, so Solar is not cheaper at 500 units.`,
     ],
     difficulty_level: "3/5",
     sort_order: 24,
@@ -3596,65 +3166,39 @@ $$
     tactical_explanations: [
       `**A) A pasta dish costs \\$19.**  (true)
 
-After Table 8's fee is removed, solving the menu system gives $x=19$. Substitution also gives appetizer price $y=15$.
+Table 5 is a clean food total: $6x + 4y = 174$. Table 8 printed \\$46 more than that, so its fee-included total is $174 + 46 = 220$. Strip the 10% service charge: $220 / 1.10 = 200$. The food system is then $6x + 4y = 174$ and $5x + 7y = 200$. Halve the first, multiply by 7, and subtract twice the second:
 
-Once Table 8's total is reconstructed and the fee removed, elimination gives x = \\$19.00 exactly, confirmed by both tables.
+$$(21x + 14y) - (10x + 14y) = 609 - 400 \\Rightarrow 11x = 209 \\Rightarrow x = 19$$
 
-Table 5 is already a clean food total: $6x + 4y = 174$. Table 8 printed $46$ more than that, so its fee-included total is $174 + 46 = 220$; strip the 10% service charge by dividing: $220 / 1.10 = 200$. The food system is then $6x + 4y = 174$ and $5x + 7y = 200$. Halve the first, multiply by 7, and subtract twice the second:
-
-$$
-(21x + 14y) - (10x + 14y) = 609 - 400 \\Rightarrow 11x = 209 \\Rightarrow x = 19
-$$
-
-Pasta is $19$.`,
+A pasta dish costs \\$19.`,
       `**B) An appetizer costs more than a pasta dish.**  (false)
 
-An appetizer costs $15$, while pasta costs $19$. Since $15<19$, the appetizer is cheaper.
+After removing Table 8's fee, the system $6x + 4y = 174$ and $5x + 7y = 200$ solves to $x = 19$. From the halved Table 5 equation $3x + 2y = 87$,
 
-The appetizer is actually cheaper, at \\$15.00, versus the pasta dish's \\$19.00. The reverse of the claim.
+$$3(19) + 2y = 87 \\Rightarrow 57 + 2y = 87 \\Rightarrow y = 15$$
 
-From the halved Table 5 equation $3x + 2y = 87$ and $x = 19$:
-
-$$
-3(19) + 2y = 87 \\Rightarrow 57 + 2y = 87 \\Rightarrow y = 15
-$$
-
-$15 < 19$, so an appetizer is not the more expensive dish.`,
+Since $15 < 19$, an appetizer is cheaper than a pasta dish, not more expensive.`,
       `**C) Table 8's pre-service-charge subtotal exceeds Table 5's total by exactly \\$26.00.**  (true)
-
-The pre-tax subtotal is \\$200.00 against Table 5's \\$174.00. A gap of exactly \\$26.00, different from the printed \\$46.00 gap, which was measured after Table 8's service charge was added.
 
 Table 8's printed total is $174 + 46 = 220$. Undo the 10% charge:
 
-$$
-\\frac{220}{1.10} = 200
-$$
+$$\\frac{220}{1.10} = 200$$
 
-Then $200 - 174 = 26$. The $46$ printed gap is the post-fee comparison; the food-only gap is $26$.`,
+Then $200 - 174 = 26$. The food-only gap is exactly \\$26.00 (the printed \\$46 gap was measured after the service charge).`,
       `**D) If Table 5 had also been charged the 10% peak-hour service fee, its total would have been \\$191.40.**  (true)
 
-Table 5's food total is already $174$. Attach the peak multiplier:
+Table 5's food total is already \\$174. Attach the peak multiplier:
 
-$$
-174.00 \\times 1.10 = 191.40
-$$
+$$174.00 \\times 1.10 = 191.40$$
 
-That is the billed total Table 5 would have shown as a peak table.`,
+which matches the claim.`,
       `**E) Buying 4 pasta dishes and 4 appetizers, with the 10% service charge applied, would cost less than \\$150.**  (true)
 
-Subtotal = 4(19) + 4(15) = \\$136.00; with the 10% charge, $136 \\times 1.10 = \\$149.60$, just under \\$150. A close call rewarding exact decimals over early rounding.
+With pasta $x = 19$ and appetizer $y = 15$, the food subtotal is
 
-Food first, then the 10% peak charge:
+$$4(19) + 4(15) = 76 + 60 = 136$$
 
-$$
-4(19) + 4(15) = 76 + 60 = 136
-$$
-
-$$
-136 \\times 1.10 = 149.60
-$$
-
-$149.60 < 150$.`,
+Then $136 \\times 1.10 = 149.60$. Since $149.60 < 150$, the claim is true.`,
     ],
     difficulty_level: "3/5",
     sort_order: 25,
@@ -3730,63 +3274,37 @@ $$
     tactical_explanations: [
       `**A) Item M costs \\$21 per unit.**  (true)
 
-Elimination gives $109x=2289$. Therefore $x=21$ dollars per M unit.
-
-The elimination confirms \\$21.00 per unit for Item M, consistent with both shipments.
-
 Cost depends on counts, not the weight columns: $110x + 80y = 4470$ and $70x + 150y = 5520$. Divide by 10, then multiply by 15 and 8 so the $y$ terms match at $120y$:
 
-$$
-(165x + 120y) - (56x + 120y) = 6705 - 4416 \\Rightarrow 109x = 2289 \\Rightarrow x = 21
-$$
+$$(165x + 120y) - (56x + 120y) = 6705 - 4416 \\Rightarrow 109x = 2289 \\Rightarrow x = 21$$
 
-Both shipments rebuild with that $x$.`,
+Item M costs \\$21 per unit.`,
       `**B) Item N costs \\$30 per unit.**  (false)
 
-With $x=21$, the reduced first equation becomes $231+8y=447$. Thus $8y=216$ and $y=27$, not $30$.
+From $110x + 80y = 4470$ and $70x + 150y = 5520$, elimination gives $x = 21$. On the reduced first equation $11x + 8y = 447$,
 
-Item N actually costs \\$27, not \\$30; scanning the weight and volume columns for a price signal is a common but irrelevant distraction.
+$$11(21) + 8y = 447 \\Rightarrow 231 + 8y = 447 \\Rightarrow 8y = 216 \\Rightarrow y = 27$$
 
-Finish the substitution on $11x + 8y = 447$:
-
-$$
-11(21) + 8y = 447 \\Rightarrow 231 + 8y = 447 \\Rightarrow 8y = 216 \\Rightarrow y = 27
-$$
-
-$27$ is the N price; $30$ is not.`,
+Item N costs \\$27, not \\$30.`,
       `**C) Shipment 1's per-unit average cost equals Shipment 2's per-unit average cost.**  (false)
-
-Shipment 1 averages $4470\\div190\\approx23.53$ per item. Shipment 2 averages $5520\\div220\\approx25.09$, so the averages differ.
 
 Each shipment's item count is the sum of its two columns:
 
-$$
-\\frac{4470}{110 + 80} = \\frac{4470}{190} \\approx 23.53
-$$
+$$\\frac{4470}{110 + 80} = \\frac{4470}{190} \\approx 23.53$$
 
-$$
-\\frac{5520}{70 + 150} = \\frac{5520}{220} = 25.09\\overline{09}
-$$
+$$\\frac{5520}{70 + 150} = \\frac{5520}{220} = 25.09\\overline{09}$$
 
-The two averages are not the same number.`,
+The two averages are not the same.`,
       `**D) 150 units of Item N alone would cost \\$4,050.**  (true)
 
-Item N costs $27$ each. Thus $150(27)=4050$.
+From the shipment system, $y = 27$. Then
 
-150(27) = \\$4,050 exactly, scaling the confirmed unit price for Item N.
+$$150 \\times 27 = 4050$$
 
-$$
-150 \\times 27 = 4050
-$$
-
-No Item M is in that order, so the $21$ price never enters.`,
+matching the claim. No Item M enters that order.`,
       `**E) Shipment 1's lower total cost, compared with Shipment 2, is explained by its lower total weight of goods.**  (false)
 
-The cost equations use only item counts and the $21$ and $27$ unit prices. Weight is not a coefficient in either cost model.
-
-Shipment cost is determined entirely by item quantities and unit prices; the weight/volume figures are freight-billing data logged separately and play no causal role in the total, despite sitting right next to it.
-
-The two cost identities are $110(21) + 80(27) = 2310 + 2160 = 4470$ and $70(21) + 150(27) = 1470 + 4050 = 5520$. Weight never appears. Shipment 1 is cheaper because it bought a cheaper mix of units, not because $110(2.4) + 80(1.7) = 400$ kg happens to sit below Shipment 2's $70(2.4) + 150(1.7) = 423$ kg.`,
+The cost identities are $110(21) + 80(27) = 2310 + 2160 = 4470$ and $70(21) + 150(27) = 1470 + 4050 = 5520$. Weight never appears as a coefficient. Shipment 1 is cheaper because it bought a cheaper mix of units, not because its total weight $110(2.4) + 80(1.7) = 400$ kg happens to sit below Shipment 2's $70(2.4) + 150(1.7) = 423$ kg.`,
     ],
     difficulty_level: "3/5",
     sort_order: 26,
@@ -3856,61 +3374,39 @@ $$
     tactical_explanations: [
       `**A) Standard planting costs \\$29 per unit.**  (true)
 
-After expanding Job 1, elimination yields $x=29$. The original Job 1 total checks as $14(29)+35(44)=1946$.
-
-Elimination confirms x = \\$29 exactly, once Job 1's bundles are correctly expanded into individual units.
-
 Each Job 1 bundle is 2 Standard + 5 Premium, so 7 bundles become $14x + 35y = 1946$. Job 2 is already in units: $13x + 21y = 1301$. Divide Job 1 by 7 to get $2x + 5y = 278$, multiply that by 21 and Job 2 by 5, then subtract the $105y$ terms:
 
-$$
-(65x + 105y) - (42x + 105y) = 6505 - 5838 \\Rightarrow 23x = 667 \\Rightarrow x = 29
-$$
+$$(65x + 105y) - (42x + 105y) = 6505 - 5838 \\Rightarrow 23x = 667 \\Rightarrow x = 29$$
 
-Check: $14(29) + 35(44) = 406 + 1540 = 1946$.`,
+Standard planting costs \\$29 per unit.`,
       `**B) Premium planting costs \\$50 per unit.**  (false)
 
-Using $x=29$ in $2x+5y=278$ gives $58+5y=278$. Therefore $y=44$, not $50$.
+After expanding Job 1, the system $14x + 35y = 1946$ and $13x + 21y = 1301$ reduces to $2x + 5y = 278$ with $x = 29$. Then
 
-Premium actually prices at \\$44, not \\$50; a likely slip is treating an intermediate elimination value as the finished answer.
+$$2(29) + 5y = 278 \\Rightarrow 58 + 5y = 278 \\Rightarrow 5y = 220 \\Rightarrow y = 44$$
 
-$$
-2(29) + 5y = 278 \\Rightarrow 58 + 5y = 278 \\Rightarrow 5y = 220 \\Rightarrow y = 44
-$$
-
-$44 \\ne 50$.`,
+Premium is \\$44, not \\$50.`,
       `**C) Job 1 actually consisted of 14 Standard units and 35 Premium units once its bundles are expanded.**  (true)
-
-7 bundles × 2 Standard = 14, and 7 bundles × 5 Premium = 35. The conversion needed before Job 1 can enter the model at all.
 
 One bundle is defined as 2 Standard + 5 Premium, so seven of them unpack as
 
-$$
-7 \\times 2 = 14, \\qquad 7 \\times 5 = 35
-$$
+$$7 \\times 2 = 14, \\qquad 7 \\times 5 = 35$$
 
 Those are the coefficients that belong in Job 1's equation.`,
       `**D) The Premium portion alone of Job 1 cost more than the entirety of Job 2.**  (true)
 
-Job 1's Premium portion alone is 35(44) = \\$1,540, indeed more than Job 2's entire total of \\$1,301. A single line item from one job can outweigh a whole other job.
+Job 1 expands to 35 Premium units. The rates solve to $x = 29$ and $y = 44$, so Job 1's Premium share is
 
-Job 1's Premium share uses the recovered $y = 44$ and the expanded count 35:
+$$35 \\times 44 = 1540$$
 
-$$
-35 \\times 44 = 1540
-$$
-
-Job 2's whole invoice is $1301$, and $1540 > 1301$.`,
+Job 2's whole invoice is \\$1,301, and $1540 > 1301$.`,
       `**E) The new quotation of \\$1,068 is mathematically consistent with the confirmed rates.**  (true)
 
-The quoted 8(29) + 19(44) = \\$1,068 matches the issued quotation exactly, so it is internally consistent with the confirmed rates.
+The confirmed rates are $x = 29$ and $y = 44$. Rebuild the quoted mix:
 
-Rebuild the quoted mix from $x = 29$ and $y = 44$:
+$$8(29) + 19(44) = 232 + 836 = 1068$$
 
-$$
-8(29) + 19(44) = 232 + 836 = 1068
-$$
-
-The issued $1,068$ is exactly that total.`,
+The issued \\$1,068 matches exactly.`,
     ],
     difficulty_level: "3/5",
     sort_order: 27,
@@ -3989,61 +3485,47 @@ $$
     tactical_explanations: [
       `**A) The per diem is \\$55 per day.**  (true)
 
-Using the valid reports gives $y=0.32$ per mile. Report 1 then gives $5x+150(0.32)=323$, so $5x=275$ and $x=55$.
+Three reports and two unknowns leave the model underdetermined until one report is set aside. Treat Reports 1 and 2 as the trusted pair (the working assumption that keeps both rows financially consistent with a shared per diem and mileage rate):
 
-Using Reports 1 and 2 (Report 3 set aside as impossible), elimination gives a per diem of exactly \\$55.00.
+$$5x + 150y = 323, \\qquad 3x + 250y = 245$$
 
-Reports 1 and 2 are $5x + 150y = 323$ and $3x + 250y = 245$. Multiply by 3 and 5 so the $x$ terms match at $15x$, then subtract:
+Multiply by 3 and 5 so the $x$ terms match, then subtract:
 
-$$
-(15x + 1250y) - (15x + 450y) = 1225 - 969 \\Rightarrow 800y = 256 \\Rightarrow y = 0.32
-$$
+$$(15x + 1250y) - (15x + 450y) = 1225 - 969 \\Rightarrow 800y = 256 \\Rightarrow y = 0.32$$
 
-Back into Report 1: $5x + 150(0.32) = 323$ is $5x + 48 = 323$, so $5x = 275$ and $x = 55$.`,
+Back into Report 1: $5x + 150(0.32) = 323$ is $5x + 48 = 323$, so $5x = 275$ and $x = 55$. Against that pair, Report 3 fails immediately: seven meal days alone cost $7 \\times 55 = 385$, already far above its reported \\$120. Under the Reports 1 and 2 assumption, the per diem is \\$55.`,
       `**B) Finance's belief that the mileage rate is \\$0.40/mile is correct.**  (false)
 
-Elimination gives $800y=256$. Thus $y=0.32$, which is $0.08$ below Finance's claimed rate.
+Under the working assumption that Reports 1 and 2 are trusted,
 
-The mileage rate is actually \\$0.32/mile, not the claimed \\$0.40. The belief was never checked against the underlying reports until now.
+$$5x + 150y = 323, \\qquad 3x + 250y = 245$$
 
-$$
-y = \\frac{256}{800} = 0.32
-$$
+elimination yields $800y = 256$, so
 
-Finance quoted $0.40$, and $0.32$ is $0.08$ short of that quoted rate.`,
+$$y = \\frac{256}{800} = 0.32$$
+
+Finance quoted \\$0.40/mile; the recovered rate is \\$0.32, which is \\$0.08 short. (Report 3 is inconsistent with this pair, since $7 \\times 55 = 385 > 120$, so it is not used to recover $y$.)`,
       `**C) Report 3 is impossible, since 7 meal days alone would require at least \\$385 at the confirmed per-diem rate  -  far more than its reported \\$120 total.**  (true)
 
-At \\$55/day, 7 meal days alone would need \\$385, already far above Report 3's \\$120 total before a single mile is counted. That confirms it as the report that had to be excluded.
+Working from Reports 1 and 2 as the trusted pair gives per diem $x = 55$. Seven meal days, ignoring miles entirely, already cost
 
-The per diem recovered from the two consistent reports is $x = 55$. Seven meal days, ignoring miles entirely, already cost
+$$7 \\times 55 = 385$$
 
-$$
-7 \\times 55 = 385
-$$
-
-Report 3 lists only $120$. Even with zero miles, $385 > 120$, so that row cannot be a valid reimbursement.`,
+Report 3 lists only \\$120. Even with zero miles, $385 > 120$, so that row cannot be a valid reimbursement under the rates implied by Reports 1 and 2. The stem alone does not prove which report is the error, but this check shows Report 3 fails against the consistent pair.`,
       `**D) Report 1's total exceeds Report 2's total by more than \\$80.**  (false)
-
-Report 1's total is \\$323 and Report 2's is \\$245, a gap of exactly \\$78. Not more than \\$80, only just short of it.
 
 The two printed totals differ by
 
-$$
-323 - 245 = 78
-$$
+$$323 - 245 = 78$$
 
-$78$ is less than $80$, so the gap does not clear the claimed threshold.`,
+\\$78 is less than \\$80, so the gap does not clear the claimed threshold.`,
       `**E) Reports 1 and 2 combined reimbursed at least \\$550.**  (true)
 
-323 + 245 = \\$568, which does satisfy 'at least \\$550,' unlike statement D's stricter '\\$80' gap, which narrowly fails.
+Add the two printed totals:
 
-Add the two valid reports:
+$$323 + 245 = 568$$
 
-$$
-323 + 245 = 568
-$$
-
-$568 \\ge 550$.`,
+Since $568 \\ge 550$, the claim holds.`,
     ],
     difficulty_level: "3/5",
     sort_order: 28,
@@ -4118,61 +3600,43 @@ $$
     tactical_explanations: [
       `**A) Widget A requires 7 hours of labor to assemble.**  (true)
 
-Using Week 1 and recovered Week 2 counts, elimination gives $x=7$. Week 1 then has $35(7)+20(10)=445$.
+Week 2's counts come from the sticky note: $B = A + 8$ and $A + B = 58$. Substitute: $A + (A + 8) = 58$, so $2A + 8 = 58$, $2A = 50$, $A = 25$, and $B = 33$. Week 1 and Week 2 are then
 
-Solving the recovered two-week system gives exactly 7 hours per Widget A, confirmed against both weeks' totals.
+$$35x + 20y = 445, \\qquad 25x + 33y = 505$$
 
-Week 2's counts come from the sticky note first (see C): 25 A and 33 B. Then Week 1 and Week 2 are $35x + 20y = 445$ and $25x + 33y = 505$. Multiply by 33 and 20 so the $y$ terms match at $660y$, and subtract:
+Multiply by 33 and 20 so the $y$ terms match at $660y$, and subtract:
 
-$$
-(1155x + 660y) - (500x + 660y) = 14685 - 10100 \\Rightarrow 655x = 4585 \\Rightarrow x = 7
-$$
+$$(1155x + 660y) - (500x + 660y) = 14685 - 10100 \\Rightarrow 655x = 4585 \\Rightarrow x = 7$$
 
-Week 1 rebuilds as $35(7) + 20(10) = 245 + 200 = 445$.`,
+Widget A requires 7 hours. Check: with $y = 10$, $35(7) + 20(10) = 245 + 200 = 445$.`,
       `**B) Widget B requires 12 hours of labor to assemble.**  (false)
 
-After $x=7$, Week 1 gives $245+20y=445$. Thus $20y=200$ and $y=10$, not $12$.
+Recover Week 2 as 25 A and 33 B from $B = A + 8$ and $A + B = 58$. The two-week system $35x + 20y = 445$ and $25x + 33y = 505$ solves to $x = 7$. Then Week 1 gives
 
-Widget B actually needs 10 hours, not 12; a common mistake is mixing up which coefficient belongs to A and which to B partway through elimination.
+$$35(7) + 20y = 445 \\Rightarrow 245 + 20y = 445 \\Rightarrow 20y = 200 \\Rightarrow y = 10$$
 
-$$
-35(7) + 20y = 445 \\Rightarrow 245 + 20y = 445 \\Rightarrow 20y = 200 \\Rightarrow y = 10
-$$
-
-Ten hours per B, not twelve.`,
+Widget B needs 10 hours, not 12.`,
       `**C) Week 2 actually produced 25 Widget A units and 33 Widget B units.**  (true)
 
-From B = A + 8 and $A + B = 58$, substitution gives $2A + 8 = 58$, so $A = 25$ and $B = 33$. The counts must be recovered this way before Week 2 can be used at all.
+The sticky note is a small sum-and-difference system:
 
-The sticky note is a small sum-and-difference system of its own:
-
-$$
-B = A + 8, \\qquad A + B = 58
-$$
+$$B = A + 8, \\qquad A + B = 58$$
 
 Substitute: $A + (A + 8) = 58$, so $2A + 8 = 58$, $2A = 50$, $A = 25$, and $B = 33$.`,
       `**D) If Widget A's assembly time increased by 20% (Widget B's unchanged), Week 1's total labor-hours would also increase by 20%.**  (false)
 
-A 20% rise in Widget A's hours (7 \\to 8.4) raises Week 1's total from 445 to 494, an increase of only about 11%, not 20%. Widget A's hours are only part of the week's total time.
+The confirmed times are $x = 7$ and $y = 10$. The new A time is $7 \\times 1.20 = 8.4$. Week 1 would then use
 
-The new A time is $7 \\times 1.20 = 8.4$. Week 1 would then use
+$$35(8.4) + 20(10) = 294 + 200 = 494$$
 
-$$
-35(8.4) + 20(10) = 294 + 200 = 494
-$$
-
-The relative increase is $(494 - 445) / 445 = 49 / 445 \\approx 0.110$, about 11%, not 20%. A 20% lift on only one of the two products cannot scale the whole week by 20%.`,
+The relative increase is $(494 - 445) / 445 = 49 / 445 \\approx 0.110$, about 11%, not 20%.`,
       `**E) The illegible Week 3 entry can be reconstructed as 20 Widget A units.**  (true)
 
-Substituting the surviving Widget B count and total hours into the confirmed model, 7A + 10(15) = 290, gives $A = 20$. A legitimate reconstruction, not a guess.
+With labor times $x = 7$ and $y = 10$, Week 3 still shows 15 Widget B and 290 hours:
 
-Week 3 still shows 15 Widget B and 290 hours. With $x = 7$ and $y = 10$:
+$$7A + 10(15) = 290 \\Rightarrow 7A + 150 = 290 \\Rightarrow 7A = 140 \\Rightarrow A = 20$$
 
-$$
-7A + 10(15) = 290 \\Rightarrow 7A + 150 = 290 \\Rightarrow 7A = 140 \\Rightarrow A = 20
-$$
-
-That is the missing Widget A count.`,
+The missing Widget A count is 20.`,
     ],
     difficulty_level: "3/5",
     sort_order: 29,
@@ -4257,59 +3721,43 @@ $$
     tactical_explanations: [
       `**A) Product X is priced at \\$29.**  (true)
 
-Using the reconciled North and South reports, elimination gives $169x=4901$. Therefore $x=29$.
+Three branches and two unknowns leave the model underdetermined until one branch is treated as the error. Treat North and South as the trusted pair (the working assumption that both reconcile to the same company-wide prices):
 
-Solving the North and South reports together gives x = \\$29 exactly, and this pair is internally consistent with each other.
+$$85x + 70y = 4145, \\qquad 55x + 95y = 3875$$
 
-North and South are $85x + 70y = 4145$ and $55x + 95y = 3875$. Divide by 5, then multiply by 19 and 14 so the $y$ terms match at $266y$:
+Divide by 5 to get $17x + 14y = 829$ and $11x + 19y = 775$. Multiply by 19 and 14 so the $y$ terms match at $266y$:
 
-$$
-(323x + 266y) - (154x + 266y) = 15751 - 10850 \\Rightarrow 169x = 4901 \\Rightarrow x = 29
-$$
+$$(323x + 266y) - (154x + 266y) = 15751 - 10850 \\Rightarrow 169x = 4901 \\Rightarrow x = 29$$
 
-Those two branches rebuild each other with this $x$, so they are the consistent pair.`,
+Then $17(29) + 14y = 829$ gives $493 + 14y = 829$, so $y = 24$. Against that pair, East fails: $65(29) + 50(24) = 3085 \\neq 3200$. Under the North-South assumption, Product X is \\$29.`,
       `**B) Product Y is priced at \\$28.**  (false)
 
-Substituting $x=29$ into $17x+14y=829$ gives $493+14y=829$. Hence $14y=336$ and $y=24$.
+Under the working assumption that North and South are trusted, divide those rows by 5 to get $17x + 14y = 829$ and $11x + 19y = 775$. Elimination yields $x = 29$. Then
 
-Product Y prices out at \\$24, not \\$28; stopping partway through elimination and reading off an intermediate value is the likely source of this error.
+$$17(29) + 14y = 829 \\Rightarrow 493 + 14y = 829 \\Rightarrow 14y = 336 \\Rightarrow y = 24$$
 
-$$
-17(29) + 14y = 829 \\Rightarrow 493 + 14y = 829 \\Rightarrow 14y = 336 \\Rightarrow y = 24
-$$
-
-$24 \\ne 28$.`,
+Product Y is \\$24, not \\$28. (East is inconsistent with this pair, since $65(29) + 50(24) = 3085$ is not the reported \\$3,200, so East is not used to recover $y$.)`,
       `**C) The East branch's reported revenue is fully consistent with the derived prices.**  (false)
 
-65(29) + 50(24) = \\$3,085, not the reported \\$3,200; that \\$115 gap is exactly the data-entry error the dashboard warns about, and East is the branch responsible.
+Working from North and South as the trusted pair gives $x = 29$ and $y = 24$. East's counts at those prices:
 
-East's counts at the North/South prices:
+$$65(29) + 50(24) = 1885 + 1200 = 3085$$
 
-$$
-65(29) + 50(24) = 1885 + 1200 = 3085
-$$
-
-The dashboard printed $3200$. The $115$ discrepancy ($3200 - 3085$) marks East as the broken row.`,
+The dashboard printed \\$3,200. The \\$115 discrepancy marks East as inconsistent with the North and South price pair, so the reported East revenue is not fully consistent.`,
       `**D) If the East branch's reported revenue were corrected to reflect the derived prices, it should read \\$3,085.**  (true)
 
-East sells 65 X units and 50 Y units. Its corrected revenue is $65(29)+50(24)=1885+1200=3085$.
+Using North and South as the trusted pair, the company-wide prices are $x = 29$ and $y = 24$. East sells 65 X and 50 Y, so the corrected revenue is
 
-The corrected East figure, using the derived prices, is \\$3,085, matching the calculation above.
+$$65(29) + 50(24) = 1885 + 1200 = 3085$$
 
-That is the same rebuild as in C. Replace the printed $3,200$ with $3,085$ and East would sit on the same price pair as North and South.`,
+Replacing the printed \\$3,200 with \\$3,085 would put East on the same price pair as North and South.`,
       `**E) North's reported revenue exceeds South's and East's reported revenues combined.**  (false)
 
-North reports $4145$. South and East report $3875+3200=7075$, which is much greater than $4145$.
+Use the printed dashboard totals (the claim compares reported figures):
 
-North's reported revenue is \\$4,145, while South and East together report \\$7,075. North falls well short of that combined figure, despite being the single largest branch on its own.
+$$3875 + 3200 = 7075$$
 
-Use the printed dashboard totals (the claim compares reported figures, not the corrected East):
-
-$$
-3875 + 3200 = 7075
-$$
-
-$4145 < 7075$, so North does not exceed the other two combined.`,
+North reports \\$4,145. Since $4145 < 7075$, North does not exceed the other two combined.`,
     ],
     difficulty_level: "3/5",
     sort_order: 30,
@@ -4393,77 +3841,113 @@ which does not match East's reported \\$3,200. The $115$ discrepancy reveals Eas
     tactical_explanations: [
       `**A) Rounding Type A's case price up to the next whole dollar lands on exactly \\$19.00.**  (true)
 
-Type A costs \\$18.45 per case. Rounding \\$18.45 up to the next whole dollar gives \\$19.
-
-Type A solves to \\$18.45; rounding up (ceiling) to the next whole dollar gives \\$19.00 exactly.
-
-The two invoices are $9x + 13y = 527.45$ and $7x + 19y = 657.35$. Multiply the first by 19 and the second by 13:
+Riverside charges fixed per-case prices, so the two invoices together pin those prices down. Let $x$ be the price per case of Type A Bolts and $y$ the price per case of Type B Hinges. Invoice 1 ships 9 cases of Type A and 13 of Type B for \\$527.45, and Invoice 2 ships 7 and 19 for \\$657.35:
 
 $$
-171x + 247y = 10021.55, \\qquad 91x + 247y = 8545.55
+9x + 13y = 527.45, \\\\qquad 7x + 19y = 657.35
 $$
 
-Subtract to clear $y$:
+Only the Type A price is at issue, so eliminate $y$. Multiplying the first equation by 19 and the second by 13 makes both hinge terms $247y$:
 
 $$
-80x = 10021.55 - 8545.55 = 1476.00, \\qquad x = \\frac{1476.00}{80} = 18.45
+171x + 247y = 10021.55
 $$
 
-Ceiling of $18.45$ is the next integer $19$, so the claim holds.`,
+$$
+91x + 247y = 8545.55
+$$
+
+Subtracting the second from the first removes $y$ entirely:
+
+$$
+80x = 1476.00, \\\\qquad x = \\\\frac{1476.00}{80} = 18.45
+$$
+
+A case of Type A costs \\$18.45. Rounding up to the next whole dollar means taking the smallest whole number at or above 18.45, which is 19, so the rounded price is \\$19.00 exactly and the claim holds.`,
       `**B) A warehouse clerk insists Type B's case price exceeds Type A's by more than nine dollars but less than ten.**  (true)
 
-The price gap is \\$27.80 − \\$18.45 = \\$9.35. That is greater than \\$9 and less than \\$10.
+This comparison turns on both per-case prices, so both must be recovered from the invoices. Let $x$ be the price per case of Type A Bolts and $y$ the price per case of Type B Hinges. Invoice 1's 9 and 13 cases and Invoice 2's 7 and 19 cases give
 
-From Part A, $x = 18.45$. Put that back into Invoice 1:
+$$
+9x + 13y = 527.45, \\\\qquad 7x + 19y = 657.35
+$$
+
+Scaling the first by 19 and the second by 13 so each carries $247y$, then subtracting:
+
+$$
+171x + 247y = 10021.55, \\\\qquad 91x + 247y = 8545.55
+$$
+
+$$
+80x = 1476.00, \\\\qquad x = 18.45
+$$
+
+Putting that price back into Invoice 1 recovers the hinge price:
 
 $$
 9(18.45) + 13y = 527.45
 $$
 
 $$
-166.05 + 13y = 527.45, \\qquad 13y = 361.40, \\qquad y = 27.80
+166.05 + 13y = 527.45, \\\\qquad 13y = 361.40, \\\\qquad y = 27.80
 $$
 
-The difference is then
+The gap between the two prices is
 
 $$
 y - x = 27.80 - 18.45 = 9.35
 $$
 
-and $9 < 9.35 < 10$.`,
+Since $9 < 9.35 < 10$, the gap does exceed nine dollars while staying under ten, so the clerk is right.`,
       `**C) If Invoice 2's total were split evenly across its 26 cases regardless of fastener type, each case's implied share would clear the \\$24 mark.**  (true)
 
-Invoice 2 has 7 + 19 = 26 cases and totals \\$657.35. Its equal per-case share is \\$657.35 ÷ 26 ≈ \\$25.28, which is above \\$24.
-
-The equal-share formula is total divided by case count:
+An even split deliberately ignores which case holds which fastener, so no unit prices are needed and Invoice 2's own printed figures settle it. That invoice ships 7 cases of Type A and 19 of Type B, which is $7 + 19 = 26$ cases, for a total of \\$657.35. Dividing the total by the case count:
 
 $$
-7 + 19 = 26, \\qquad \\frac{657.35}{26} = 25.2827\\ldots
+\\\\frac{657.35}{26} = 25.2827\\\\ldots
 $$
 
-That per-case figure sits above $24$, so the statement is true.`,
+An implied share of about \\$25.28 per case sits above \\$24, so the statement is true.`,
       `**D) Swapping which quantity (13 vs 9) applies to which fastener type in Invoice 1 happens to leave the total unchanged, purely because both fastener prices are so close together.**  (false)
 
-The prices are not close (\\$18.45 vs \\$27.80, a \\$9.35 gap), and the swapped order actually totals 13(18.45) + 9(27.80) = \\$490.05, not \\$527.45.
+Swapping the two quantities leaves a bill unchanged only when the two unit prices are equal, so the prices themselves decide this. Let $x$ be the price per case of Type A Bolts and $y$ the price per case of Type B Hinges:
 
-Swap the Invoice 1 counts while keeping the recovered prices:
+$$
+9x + 13y = 527.45, \\\\qquad 7x + 19y = 657.35
+$$
+
+Multiplying the first by 19 and the second by 13 gives matching $247y$ terms, and subtracting leaves
+
+$$
+171x + 247y = 10021.55, \\\\qquad 91x + 247y = 8545.55
+$$
+
+$$
+80x = 1476.00, \\\\qquad x = 18.45
+$$
+
+Substituting into Invoice 1:
+
+$$
+9(18.45) + 13y = 527.45, \\\\qquad 13y = 361.40, \\\\qquad y = 27.80
+$$
+
+The prices are \\$18.45 and \\$27.80, which differ by \\$9.35 and are therefore not close together at all. Applying the swapped counts, 13 cases of Type A and 9 of Type B:
 
 $$
 13(18.45) + 9(27.80) = 239.85 + 250.20 = 490.05
 $$
 
-Invoice 1's printed total is $527.45$. Because $490.05 \\ne 527.45$, swapping does change the bill. The $9.35$ gap is also far from "close together."`,
+Invoice 1's printed total is \\$527.45, so the swap changes the bill by \\$37.40. Both halves of the claim fail.`,
       `**E) Since 16 and 32 are simply the two invoices' case counts added together, common sense suggests the combined order must cost strictly more than placing both invoices separately, thanks to some kind of bulk-order premium.**  (false)
 
-There is no bulk premium in a fixed-unit-price model: 16 Type A + 32 Type B is exactly the sum of both invoices' quantities, so its cost is necessarily exactly \\$527.45 + \\$657.35 = \\$1,184.80, not more.
-
-Invoice 1 ships $9+7=16$ of Type A and $13+19=32$ of Type B. Under fixed unit prices the combined cost is just the sum of the two bills:
+Riverside charges fixed per-case prices, so a bill is a linear function of the quantities ordered and there is no premium term anywhere in the model. Adding the two invoices' quantities gives $9 + 7 = 16$ cases of Type A and $13 + 19 = 32$ cases of Type B, so with per-case prices $x$ and $y$ the combined order costs
 
 $$
 16x + 32y = (9x + 13y) + (7x + 19y) = 527.45 + 657.35 = 1184.80
 $$
 
-A bulk premium would have to appear as an extra term, and none is in the model.`,
+The combined order comes to exactly \\$1,184.80, precisely the sum of the two separate bills rather than strictly more. A bulk premium would have to appear as an extra term in the pricing rule, and none exists, so the statement is false.`,
     ],
     difficulty_level: "3/5",
     sort_order: 31,
@@ -4551,61 +4035,131 @@ $$
     tactical_explanations: [
       `**A) The dispatch fee sits exactly halfway between \\$145 and \\$146.**  (true)
 
-The dispatch fee is \\$145.50. It is exactly halfway between \\$145.00 and \\$146.00.
-
-Swift's two routes give $x + 170y = 460.00$ and $x + 305y = 709.75$. Subtract the first from the second:
+Swift Cargo's bill is a fixed dispatch fee plus a constant rate per mile, so let $x$ be the dispatch fee and $y$ the rate per mile. Route 1 covers 170 miles for \\$460.00 and Route 2 covers 305 miles for \\$709.75:
 
 $$
-(305 - 170)y = 709.75 - 460.00 \\Rightarrow 135y = 249.75 \\Rightarrow y = \\frac{249.75}{135} = 1.85
+x + 170y = 460.00, \\\\qquad x + 305y = 709.75
 $$
 
-Then $x + 170(1.85) = 460.00$, so $x + 314.50 = 460.00$ and $x = 145.50$. Halfway from $145$ to $146$ is $(145+146)/2 = 145.50$, matching the fee.`,
+Both routes carry the same fee, so subtracting the first from the second cancels $x$ and isolates the mileage rate:
+
+$$
+(305 - 170)y = 709.75 - 460.00
+$$
+
+$$
+135y = 249.75, \\\\qquad y = \\\\frac{249.75}{135} = 1.85
+$$
+
+Putting that rate back into Route 1 recovers the fee:
+
+$$
+x + 170(1.85) = 460.00, \\\\qquad x + 314.50 = 460.00, \\\\qquad x = 145.50
+$$
+
+The midpoint of \\$145 and \\$146 is $(145 + 146)/2 = 145.50$, exactly the dispatch fee, so the claim holds.`,
       `**B) Per mile, Swift Cargo's rate is closer to \\$1.50 than to \\$2.00.**  (false)
 
-Swift's rate is \\$1.85 per mile. It is \\$0.15 from \\$2.00 but \\$0.35 from \\$1.50, so it is closer to \\$2.00.
-
-Rebuild the expression from the solved system rather than treating a coefficient, fee, or converted unit as if it were already the final answer.
-
-The per-mile rate recovered above is $y = 1.85$. Distances to the two reference prices:
+Only the per-mile rate is in question, and it can be isolated without ever finding the dispatch fee. Writing the fee as $x$ and the rate as $y$, the two recorded routes read
 
 $$
-|1.85 - 1.50| = 0.35, \\qquad |1.85 - 2.00| = 0.15
+x + 170y = 460.00, \\\\qquad x + 305y = 709.75
 $$
 
-Because $0.15 < 0.35$, the rate is closer to $2.00$, and the claim is false.`,
+Because the identical fee appears in both, subtracting the first from the second removes it and leaves the rate alone:
+
+$$
+135y = 249.75, \\\\qquad y = \\\\frac{249.75}{135} = 1.85
+$$
+
+The rate is \\$1.85 per mile, and which reference price it is closer to is decided by comparing the two distances:
+
+$$
+|1.85 - 1.50| = 0.35, \\\\qquad |1.85 - 2.00| = 0.15
+$$
+
+A gap of 15 cents to \\$2.00 beats a gap of 35 cents to \\$1.50, so the rate sits nearer to \\$2.00, the opposite of the claim, and the statement is false.`,
       `**C) A 250-mile haul comes in five cents under six hundred and eight dollars.**  (false)
 
-At 250 miles, Swift costs \\$145.50 + 250(\\$1.85) = \\$608.00. That is exactly \\$608, not five cents under.
-
-Plug the recovered fee and rate into Swift's formula at $d = 250$:
+Pricing a 250-mile haul needs both parts of Swift Cargo's formula, so start from the two recorded routes with $x$ as the dispatch fee and $y$ as the rate per mile:
 
 $$
-x + 250y = 145.50 + 250(1.85) = 145.50 + 462.50 = 608.00
+x + 170y = 460.00, \\\\qquad x + 305y = 709.75
 $$
 
-The bill is exactly $608.00$, not $607.95$.`,
+Subtracting cancels the shared fee:
+
+$$
+135y = 249.75, \\\\qquad y = 1.85
+$$
+
+and Route 1 then gives the fee:
+
+$$
+x + 170(1.85) = 460.00, \\\\qquad x = 460.00 - 314.50 = 145.50
+$$
+
+At 250 miles the charge is therefore
+
+$$
+145.50 + 250(1.85) = 145.50 + 462.50 = 608.00
+$$
+
+Five cents under six hundred and eight dollars would be \\$607.95. The haul costs exactly \\$608.00, landing on the round figure rather than just below it, so the statement is false.`,
       `**D) At that same 250-mile mark, choosing the flat-rate competitor over Swift Cargo pockets a savings north of \\$270.**  (true)
 
-The competitor charges 250(\\$1.35) = \\$337.50. Swift costs \\$608.00, so the competitor saves \\$270.50, which is more than \\$270.
+Comparing the carriers at 250 miles means pricing both, so Swift Cargo's formula has to be rebuilt first. With $x$ as its dispatch fee and $y$ as its rate per mile, the two recorded routes are
 
-The competitor's formula is $1.35d$ with no dispatch fee. At 250 miles:
+$$
+x + 170y = 460.00, \\\\qquad x + 305y = 709.75
+$$
+
+Subtracting removes the shared fee and gives the rate, and Route 1 then gives the fee:
+
+$$
+135y = 249.75, \\\\qquad y = 1.85
+$$
+
+$$
+x + 170(1.85) = 460.00, \\\\qquad x = 145.50
+$$
+
+Swift Cargo's 250-mile charge is then
+
+$$
+145.50 + 250(1.85) = 145.50 + 462.50 = 608.00
+$$
+
+The competitor charges a flat \\$1.35 per mile with no dispatch fee at all, so its 250-mile charge is
 
 $$
 1.35(250) = 337.50
 $$
 
-Savings versus Swift's $608.00$ from Part C:
+The saving from switching is
 
 $$
 608.00 - 337.50 = 270.50
 $$
 
-and $270.50 > 270$.`,
+At \\$270.50 the saving does clear \\$270, so the statement is true.`,
       `**E) Because the two pricing formulas have different slopes, they are mathematically guaranteed to intersect somewhere on the number line  -  even though that intersection falls at a negative, and therefore meaningless, mileage.**  (true)
 
-Setting 145.50 + $1.85d = 1$.35d gives $d = -291$  -  an algebraic intersection does exist, just not at any real-world (positive) distance.
+Two straight lines with different slopes cross exactly once, and here the crossover can be located explicitly once Swift Cargo's formula is known. Taking $x$ as its dispatch fee and $y$ as its rate per mile, the two recorded routes give
 
-Equate Swift's charge with the competitor's:
+$$
+x + 170y = 460.00, \\\\qquad x + 305y = 709.75
+$$
+
+$$
+135y = 249.75, \\\\qquad y = 1.85
+$$
+
+$$
+x + 170(1.85) = 460.00, \\\\qquad x = 145.50
+$$
+
+So Swift Cargo charges $145.50 + 1.85d$ for a haul of $d$ miles, while the competitor charges $1.35d$. The slopes, \\$1.85 and \\$1.35 per mile, are different, which guarantees a single crossing. Setting the two charges equal:
 
 $$
 145.50 + 1.85d = 1.35d
@@ -4616,10 +4170,10 @@ $$
 $$
 
 $$
-d = \\frac{145.50}{-0.50} = -291
+d = \\\\frac{145.50}{-0.50} = -291
 $$
 
-The lines meet at $d = -291$ miles, a negative (hence meaningless) distance, but an intersection still exists on the number line.`,
+The two formulas do meet, at $d = -291$ miles. A negative distance has no physical meaning, so the crossover exists algebraically while being commercially irrelevant, and the statement is true.`,
     ],
     difficulty_level: "3/5",
     sort_order: 32,
@@ -4689,71 +4243,109 @@ $$
     tactical_explanations: [
       `**A) A Specialty Drink's price, tripled, would clear twenty dollars.**  (false)
 
-Three Specialty Drinks cost 3(\\$6.35) = \\$19.05. Since \\$19.05 is below \\$20.00, the price does not clear twenty dollars.
-
-The receipts are $7x + 9y = 78.65$ and $11x + 4y = 85.05$. Multiply the first by 4 and the second by 9:
+Only the drink price is at issue, so it can be isolated from the two receipts. Let $x$ be the price of a Specialty Drink and $y$ the price of a Pastry. Receipt 1 lists 7 drinks and 9 pastries for \\$78.65, Receipt 2 lists 11 drinks and 4 pastries for \\$85.05:
 
 $$
-28x + 36y = 314.60, \\qquad 99x + 36y = 765.45
+7x + 9y = 78.65, \\\\qquad 11x + 4y = 85.05
 $$
 
-Subtract:
+Multiplying the first by 4 and the second by 9 makes both pastry terms $36y$, so subtracting eliminates the pastry price:
 
 $$
-71x = 765.45 - 314.60 = 450.85, \\qquad x = \\frac{450.85}{71} = 6.35
+28x + 36y = 314.60, \\\\qquad 99x + 36y = 765.45
 $$
 
-Then $3x = 3(6.35) = 19.05$, and $19.05 < 20$, so tripling does not clear twenty dollars.`,
+$$
+71x = 450.85, \\\\qquad x = \\\\frac{450.85}{71} = 6.35
+$$
+
+Tripling that price gives
+
+$$
+3(6.35) = 19.05
+$$
+
+At \\$19.05 the tripled price falls 95 cents short of \\$20, so it does not clear twenty dollars and the statement is false.`,
       `**B) Buy four Pastries and you'll spend more than a single Specialty Drink and a single Pastry combined  -  quite a bit more, in fact.**  (true)
 
-Four Pastries cost 4(\\$3.80) = \\$15.20. One drink and one pastry cost \\$6.35 + \\$3.80 = \\$10.15, so four pastries cost \\$5.05 more.
-
-From $x = 6.35$ in Part A, Invoice 1 gives the pastry price:
+Weighing four pastries against one of each item needs both prices. With $x$ the price of a Specialty Drink and $y$ the price of a Pastry, the two receipts read
 
 $$
-7(6.35) + 9y = 78.65 \\Rightarrow 44.45 + 9y = 78.65 \\Rightarrow 9y = 34.20 \\Rightarrow y = 3.80
+7x + 9y = 78.65, \\\\qquad 11x + 4y = 85.05
 $$
 
-Compare $4y$ with $x + y$:
+Scaling the first by 4 and the second by 9 gives a shared $36y$, and subtracting isolates the drink price:
 
 $$
-4(3.80) = 15.20, \\qquad 6.35 + 3.80 = 10.15, \\qquad 15.20 - 10.15 = 5.05
+28x + 36y = 314.60, \\\\qquad 99x + 36y = 765.45
 $$
 
-Four pastries cost more, by $5.05$.`,
+$$
+71x = 450.85, \\\\qquad x = 6.35
+$$
+
+Substituting back into Receipt 1 recovers the pastry price:
+
+$$
+7(6.35) + 9y = 78.65, \\\\qquad 44.45 + 9y = 78.65, \\\\qquad 9y = 34.20, \\\\qquad y = 3.80
+$$
+
+Now compare the two baskets:
+
+$$
+4y = 4(3.80) = 15.20, \\\\qquad x + y = 6.35 + 3.80 = 10.15
+$$
+
+$$
+15.20 - 10.15 = 5.05
+$$
+
+Four pastries cost \\$15.20 against \\$10.15 for a drink and a pastry, half again as much, so both the comparison and the "quite a bit more" hold.`,
       `**C) Cross-reference the calorie counts against the dollar totals and you can, in principle, pin down both prices without the item quantities at all.**  (false)
 
-The listed calorie totals are 6,100 and 5,400, but they give no calorie amount per drink or pastry. The quantities and dollar totals are the information that identify the prices.
-
-The calorie figures are unrelated nutritional data; without the item quantities, no price can be derived from them no matter how they're combined with the totals.
-
-Two numbers $6100$ and $5400$ plus two dollar totals still leave four unknowns (price per drink, price per pastry, calories per drink, calories per pastry). A $2 \\times 2$ price system needs the item counts as coefficients. The calorie column cannot replace those counts.`,
+The two calorie figures, 6,100 and 5,400, are whole-receipt totals with no per-item calorie value attached, so bringing them in adds two fresh unknowns, calories per drink and calories per pastry, without saying anything about money. Prices become recoverable only because the item counts, 7 and 9 on Receipt 1 and 11 and 4 on Receipt 2, act as the coefficients tying the unknown prices to the \\$78.65 and \\$85.05 totals. Strip those counts away and the dollar totals are two bare numbers with nothing left to multiply, and the calorie column cannot stand in for them because it carries no price information at all. The prices cannot be pinned down that way, so the statement is false.`,
       `**D) Split Receipt 1's total evenly across its 16 items and the resulting per-item figure just barely creeps past \\$4.90.**  (true)
 
-Receipt 1 has 7 + 9 = 16 items. Its average is \\$78.65 ÷ 16 ≈ \\$4.9156 per item, just above \\$4.90.
+An even split needs only Receipt 1's own printed figures, not the individual prices. That receipt lists 7 Specialty Drinks and 9 Pastries, which is $7 + 9 = 16$ items, for a total of \\$78.65:
 
 $$
-7 + 9 = 16, \\qquad \\frac{78.65}{16} = 4.915625
+\\\\frac{78.65}{16} = 4.915625
 $$
 
-That average is above $4.90$ (by about a cent and a half), so the claim is true.`,
+At about \\$4.92 per item the average sits above \\$4.90 by roughly a cent and a half, exactly the narrow margin the claim describes, so the statement is true.`,
       `**E) A week of daily 2-Drink-2-Pastry orders costs enough that, left over from \\$150, you'd have less than \\$8 in change.**  (true)
 
-A 2-drink, 2-pastry order costs 2(\\$6.35) + 2(\\$3.80) = \\$20.30. For seven days that is \\$142.10, leaving \\$150.00 − \\$142.10 = \\$7.90.
+Costing this standing order requires both prices, so recover them from the two receipts. With $x$ the drink price and $y$ the pastry price:
 
-Daily cost using the recovered prices:
+$$
+7x + 9y = 78.65, \\\\qquad 11x + 4y = 85.05
+$$
+
+Multiplying by 4 and 9 respectively gives matching $36y$ terms, and subtracting leaves
+
+$$
+71x = 765.45 - 314.60 = 450.85, \\\\qquad x = 6.35
+$$
+
+Receipt 1 then gives the pastry price:
+
+$$
+7(6.35) + 9y = 78.65, \\\\qquad 9y = 34.20, \\\\qquad y = 3.80
+$$
+
+A daily order of two drinks and two pastries costs
 
 $$
 2(6.35) + 2(3.80) = 12.70 + 7.60 = 20.30
 $$
 
-Seven days, then change from $150$:
+Over seven days, and measured against \\$150:
 
 $$
-7(20.30) = 142.10, \\qquad 150.00 - 142.10 = 7.90
+7(20.30) = 142.10, \\\\qquad 150.00 - 142.10 = 7.90
 $$
 
-Change of $7.90$ is less than $8$.`,
+The change is \\$7.90, ten cents under \\$8, so the statement is true.`,
     ],
     difficulty_level: "3/5",
     sort_order: 33,
@@ -4837,79 +4429,129 @@ $$
     tactical_explanations: [
       `**A) Reading between the lines of Email 1, croissants are priced at a level where four dozen would already blow past fifty-five dollars.**  (true)
 
-Four dozen croissants cost 4(\\$13.85) = \\$55.40. That is greater than \\$55.00.
-
-Email 1 and Email 2 are $14x + 11y = 297.30$ and $6x + 23y = 299.30$. Multiply the first by 23 and the second by 11:
+Only the croissant price matters, so it can be extracted from the two order confirmations. Let $x$ be the wholesale price per dozen croissants and $y$ the price per dozen baguettes. Email 1 confirms 14 dozen croissants and 11 dozen baguettes for \\$297.30, and Email 2 confirms 6 and 23 dozen for \\$299.30:
 
 $$
-322x + 253y = 6837.90, \\qquad 66x + 253y = 3292.30
+14x + 11y = 297.30, \\\\qquad 6x + 23y = 299.30
 $$
 
-Subtract:
+Multiplying the first by 23 and the second by 11 makes both baguette terms $253y$, so subtracting clears them:
 
 $$
-256x = 6837.90 - 3292.30 = 3545.60, \\qquad x = \\frac{3545.60}{256} = 13.85
+322x + 253y = 6837.90, \\\\qquad 66x + 253y = 3292.30
 $$
 
-Then $4x = 4(13.85) = 55.40$, and $55.40 > 55$.`,
+$$
+256x = 3545.60, \\\\qquad x = \\\\frac{3545.60}{256} = 13.85
+$$
+
+Four dozen at that price cost
+
+$$
+4(13.85) = 55.40
+$$
+
+\\$55.40 is 40 cents past \\$55, so four dozen do blow past fifty-five dollars and the statement is true.`,
       `**B) The per-dozen gap between croissants and baguettes is closer to four dollars than to five.**  (true)
 
-The price gap is \\$13.85 − \\$9.40 = \\$4.45. It is \\$0.45 from \\$4 and \\$0.55 from \\$5, making it closer to \\$4.
-
-With $x = 13.85$, Email 1 recovers $y$:
+A gap between the two prices needs both of them. With $x$ the price per dozen croissants and $y$ the price per dozen baguettes, the two emails give
 
 $$
-14(13.85) + 11y = 297.30 \\Rightarrow 193.90 + 11y = 297.30 \\Rightarrow 11y = 103.40 \\Rightarrow y = 9.40
+14x + 11y = 297.30, \\\\qquad 6x + 23y = 299.30
 $$
 
-Gap and distances:
+Scaling by 23 and 11 makes the baguette terms match at $253y$, and subtracting leaves
 
 $$
-13.85 - 9.40 = 4.45, \\qquad |4.45 - 4| = 0.45, \\qquad |4.45 - 5| = 0.55
+256x = 6837.90 - 3292.30 = 3545.60, \\\\qquad x = 13.85
 $$
 
-Closer to $4$ because $0.45 < 0.55$.`,
+Substituting into Email 1 recovers the baguette price:
+
+$$
+14(13.85) + 11y = 297.30, \\\\qquad 193.90 + 11y = 297.30, \\\\qquad 11y = 103.40, \\\\qquad y = 9.40
+$$
+
+The gap and its distances to the two round figures are
+
+$$
+x - y = 13.85 - 9.40 = 4.45, \\\\qquad |4.45 - 4| = 0.45, \\\\qquad |4.45 - 5| = 0.55
+$$
+
+A 45-cent gap to four dollars beats a 55-cent gap to five, so the \\$4.45 difference sits nearer to four dollars and the statement is true.`,
       `**C) Order ten dozen of each pastry, and croissants alone would already account for more than three-fifths of the combined bill.**  (false)
 
-Ten dozen croissants cost \\$138.50, while ten dozen of each costs \\$138.50 + \\$94.00 = \\$232.50. The croissant share is about 59.6%, which is below three-fifths, or 60%.
-
-Using the recovered prices:
+With equal dozens of each item, the croissant share of the bill is the croissant price over the sum of the two prices, so both are needed. From the two emails, with $x$ per dozen croissants and $y$ per dozen baguettes:
 
 $$
-10(13.85) = 138.50, \\qquad 10(9.40) = 94.00
+14x + 11y = 297.30, \\\\qquad 6x + 23y = 299.30
 $$
 
+Scaling by 23 and 11 and subtracting gives
+
 $$
-138.50 + 94.00 = 232.50, \\qquad \\frac{138.50}{232.50} = \\frac{277}{465} \\approx 0.5957
+256x = 3545.60, \\\\qquad x = 13.85
 $$
 
-Three-fifths is $0.60$, and $0.5957 < 0.60$, so croissants fall short of that share.`,
+and Email 1 then yields
+
+$$
+193.90 + 11y = 297.30, \\\\qquad 11y = 103.40, \\\\qquad y = 9.40
+$$
+
+Ten dozen of each costs
+
+$$
+10(13.85) = 138.50, \\\\qquad 10(9.40) = 94.00, \\\\qquad 138.50 + 94.00 = 232.50
+$$
+
+so the croissant share is
+
+$$
+\\\\frac{138.50}{232.50} \\\\approx 0.5957
+$$
+
+Three-fifths is $0.60$, and $0.5957$ falls just below it, so croissants come up short of that share and the statement is false.`,
       `**D) Per dozen-item ordered, Email 1 runs pricier than Email 2  -  and the gap clears two dollars.**  (false)
 
-Email 1 averages \\$297.30 ÷ 25 ≈ \\$11.89 per dozen-item, while Email 2 averages \\$299.30 ÷ 29 ≈ \\$10.32. The difference is about \\$1.57, not more than \\$2.
-
-Email 1 has $14+11=25$ dozen-items; Email 2 has $6+23=29$:
+Averaging each email's total over the dozens it covers uses only the printed figures, so neither unit price is required. Email 1 covers $14 + 11 = 25$ dozen-items for \\$297.30 and Email 2 covers $6 + 23 = 29$ dozen-items for \\$299.30:
 
 $$
-\\frac{297.30}{25} = 11.892, \\qquad \\frac{299.30}{29} \\approx 10.321
+\\\\frac{297.30}{25} = 11.892, \\\\qquad \\\\frac{299.30}{29} \\\\approx 10.3207
 $$
 
+The gap between the two averages is
+
 $$
-11.892 - 10.321 = 1.571
+11.892 - 10.3207 \\\\approx 1.5713
 $$
 
-The gap is about $1.57$, which does not clear $2$.`,
+Email 1 is indeed the pricier of the two per dozen-item, but the gap is only about \\$1.57. That second half of the claim fails, so the statement is false.`,
       `**E) Tack three extra dollars onto every dozen baguettes in Email 2's order, leave the croissant price untouched, and the new invoice total lands on a figure whose cents digit is exactly thirty.**  (true)
 
-Adding \\$3 makes each baguette dozen \\$12.40. Email 2 would become 6(\\$13.85) + 23(\\$12.40) = \\$368.30.
+Repricing Email 2 needs both original prices, since the croissant line stays exactly as it was. From the two confirmations, with $x$ per dozen croissants and $y$ per dozen baguettes:
 
-New baguette price $y+3 = 9.40+3 = 12.40$. Email 2 with that price:
+$$
+14x + 11y = 297.30, \\\\qquad 6x + 23y = 299.30
+$$
+
+Scaling by 23 and 11 and subtracting gives
+
+$$
+256x = 3545.60, \\\\qquad x = 13.85
+$$
+
+$$
+14(13.85) + 11y = 297.30, \\\\qquad 11y = 103.40, \\\\qquad y = 9.40
+$$
+
+Raising only the baguette price by three dollars makes it $9.40 + 3 = 12.40$ per dozen, so Email 2's 6 dozen croissants and 23 dozen baguettes now cost
 
 $$
 6(13.85) + 23(12.40) = 83.10 + 285.20 = 368.30
 $$
 
-The cents digits of $368.30$ are $30$, as claimed.`,
+The new total is \\$368.30, whose cents are exactly 30, so the statement is true.`,
     ],
     difficulty_level: "3/5",
     sort_order: 34,
@@ -4997,73 +4639,125 @@ $$
     tactical_explanations: [
       `**A) Fabric Roll margins clear the \\$27 line, though not by enough to also clear \\$27.50.**  (true)
 
-A Fabric Roll margin is \\$27.35. It is above \\$27.00 but below \\$27.50.
-
-Q1 and Q2 are $240x + 175y = 10029.00$ and $310x + 90y = 10260.50$. Multiply the first by 90 and the second by 175:
+Meridian's margin per unit is fixed, so the two quarters pin it down. Let $x$ be the profit per Fabric Roll and $y$ the profit per Yarn Spool. Q1 shipped 240 rolls and 175 spools for \\$10,029.00 of profit, and Q2 shipped 310 rolls and 90 spools for \\$10,260.50:
 
 $$
-21600x + 15750y = 902610, \\qquad 54250x + 15750y = 1795587.5
+240x + 175y = 10029.00, \\\\qquad 310x + 90y = 10260.50
 $$
 
-Subtract:
+Only the roll margin is needed, so eliminate $y$. The least common multiple of 175 and 90 is 3,150, so multiply Q1 by 18 and Q2 by 35:
 
 $$
-32650x = 1795587.5 - 902610 = 892977.5, \\qquad x = \\frac{892977.5}{32650} = 27.35
+4320x + 3150y = 180522.00
 $$
 
-Then $27.00 < 27.35 < 27.50$.`,
+$$
+10850x + 3150y = 359117.50
+$$
+
+Subtracting the first from the second:
+
+$$
+6530x = 178595.50, \\\\qquad x = \\\\frac{178595.50}{6530} = 27.35
+$$
+
+The Fabric Roll margin is \\$27.35, which sits 35 cents above \\$27.00 and 15 cents below \\$27.50. It clears the first line and not the second, exactly as claimed.`,
       `**B) Yarn Spool's per-unit margin, doubled, would just clear forty dollars.**  (false)
 
-Twice the Yarn Spool margin is 2(\\$19.80) = \\$39.60. That does not exceed \\$40.00.
-
-From $x = 27.35$ in Q1:
+Only the spool margin is at stake, so it can be isolated directly. With $x$ the profit per Fabric Roll and $y$ the profit per Yarn Spool, the two quarters give
 
 $$
-240(27.35) + 175y = 10029.00 \\Rightarrow 6564.00 + 175y = 10029.00
+240x + 175y = 10029.00, \\\\qquad 310x + 90y = 10260.50
+$$
+
+The least common multiple of 240 and 310 is 7,440, so multiply Q1 by 31 and Q2 by 24 to match the roll terms, then subtract:
+
+$$
+7440x + 5425y = 310899.00
 $$
 
 $$
-175y = 3465.00 \\Rightarrow y = 19.80
+7440x + 2160y = 246252.00
 $$
 
-Double that margin: $2(19.80) = 39.60$, and $39.60 < 40$.`,
+$$
+3265y = 64647.00, \\\\qquad y = \\\\frac{64647.00}{3265} = 19.80
+$$
+
+Doubling the spool margin gives
+
+$$
+2(19.80) = 39.60
+$$
+
+At \\$39.60 the doubled margin falls 40 cents short of forty dollars instead of just clearing it, so the statement is false.`,
       `**C) Shift the product mix to 200 Fabric Rolls and 150 Yarn Spools, and the resulting profit clears \\$8,400  -  but only by a slender margin.**  (true)
 
-The new mix earns 200(\\$27.35) + 150(\\$19.80) = \\$5,470 + \\$2,970 = \\$8,440. That is \\$40 above \\$8,400.
-
-Plug the recovered margins into the hypothetical mix:
+A new mix has to be priced with both per-unit margins, so recover them from the two quarters. With $x$ per Fabric Roll and $y$ per Yarn Spool:
 
 $$
-200(27.35) + 150(19.80) = 5470 + 2970 = 8440
+240x + 175y = 10029.00, \\\\qquad 310x + 90y = 10260.50
+$$
+
+Multiplying Q1 by 18 and Q2 by 35 gives a shared $3150y$, and subtracting leaves
+
+$$
+6530x = 359117.50 - 180522.00 = 178595.50, \\\\qquad x = 27.35
+$$
+
+Substituting that margin into Q1:
+
+$$
+240(27.35) + 175y = 10029.00, \\\\qquad 6564.00 + 175y = 10029.00, \\\\qquad 175y = 3465.00, \\\\qquad y = 19.80
+$$
+
+The proposed mix then earns
+
+$$
+200(27.35) + 150(19.80) = 5470.00 + 2970.00 = 8440.00
 $$
 
 $$
-8440 - 8400 = 40
+8440.00 - 8400.00 = 40.00
 $$
 
-It clears $8,400$ by $40$.`,
+Profit of \\$8,440 clears \\$8,400 by just \\$40, under half a percent above the line, so both the threshold and the slender margin hold.`,
       `**D) The gap between Q2's and Q1's total profit, in dollars, would still be a three-digit number even if you dropped the smallest hundred from it.**  (true)
 
-The difference between the reported totals is \\$10,260.50 − \\$10,029.00 = \\$231.50. Removing the smallest hundred leaves \\$131.50, which still has three digits before the decimal.
-
-The gap is \\$231.50; subtracting \\$100 leaves \\$131.50, still a three-digit figure before the decimal.
+Both quarterly totals are reported outright, so no per-unit margins are needed. The gap between them is
 
 $$
-10260.50 - 10029.00 = 231.50, \\qquad 231.50 - 100 = 131.50
+10260.50 - 10029.00 = 231.50
 $$
 
-$131.50$ still has three digits to the left of the decimal point.`,
+Dropping the smallest hundred means subtracting \\$100:
+
+$$
+231.50 - 100 = 131.50
+$$
+
+\\$131.50 still carries three digits ahead of the decimal point, so the statement is true.`,
       `**E) Five hundred Fabric Rolls, and not a single Yarn Spool, would land the total profit on a suspiciously round \\$13,675  -  no cents required.**  (true)
 
-Five hundred Fabric Rolls produce 500(\\$27.35) = \\$13,675.00. This is exactly the stated round-dollar amount.
-
-With $y = 0$ in the profit formula:
+With no Yarn Spools in the mix, only the Fabric Roll margin matters. Writing $x$ for the roll margin and $y$ for the spool margin, the two quarters read
 
 $$
-500(27.35) + 0(19.80) = 13675.00
+240x + 175y = 10029.00, \\\\qquad 310x + 90y = 10260.50
 $$
 
-That is exactly $13,675$ with no leftover cents.`,
+Multiplying Q1 by 18 and Q2 by 35 lines the spool terms up at $3150y$, and subtracting removes them:
+
+$$
+6530x = 178595.50, \\\\qquad x = 27.35
+$$
+
+Five hundred rolls at that margin, with the absent spools contributing nothing, give
+
+$$
+500(27.35) = 13675.00
+$$
+
+Because \\$27.35 times 500 works out to a whole number of dollars, the profit is exactly \\$13,675.00 with no cents left over, so the statement is true.`,
     ],
     difficulty_level: "4/5",
     sort_order: 35,
@@ -5152,73 +4846,89 @@ $$
     tactical_explanations: [
       `**A) Invoice 2 does nothing more than restate Invoice 1's pricing information at 60% scale, rather than corroborating it with independent evidence.**  (true)
 
-419.40/699.00 = 0.60 exactly, and the quantities scale the same way  -  Invoice 2 duplicates Invoice 1's information rather than adding to it.
-
-Compare Invoice 2 with Invoice 1 coefficient by coefficient:
+Whether an invoice adds new information is settled by comparing it entry by entry against another, with no prices required. Invoice 1 lists 15 Nitrogen units and 20 Oxygen units for \\$699.00; Invoice 2 lists 9 and 12 for \\$419.40. Taking each ratio in turn:
 
 $$
-\\frac{9}{15} = 0.60, \\qquad \\frac{12}{20} = 0.60, \\qquad \\frac{419.40}{699.00} = 0.60
+\\\\frac{9}{15} = 0.60, \\\\qquad \\\\frac{12}{20} = 0.60, \\\\qquad \\\\frac{419.40}{699.00} = 0.60
 $$
 
-Every entry of Invoice 2 is exactly $0.6$ times the matching Invoice 1 entry, so Invoice 2 is a scaled copy, not a second independent observation.`,
+Every entry of Invoice 2 is exactly 0.6 times the matching entry of Invoice 1, which means Invoice 2's equation is simply Invoice 1's equation multiplied through by 0.6. Rescaling an equation cannot narrow down its solutions, so Invoice 2 restates rather than corroborates and the statement is true.`,
       `**B) Nitrogen-type cylinders are priced closer to \\$17.00 than to \\$16.00.**  (false)
 
-Nitrogen-type is \\$16.40  -  \\$0.40 from \\$16.00 but \\$0.60 from \\$17.00  -  closer to \\$16.00, not \\$17.00.
-
-Use Invoice 1 with Invoice 3 (the independent pair). Multiply Invoice 3 by 4:
+The Nitrogen price must come from two genuinely independent invoices. Invoice 2 is 0.6 times Invoice 1 in every entry, since $9/15 = 12/20 = 419.40/699.00 = 0.60$, so it has to be set aside; Invoice 1 and Invoice 3 are the usable pair. With $x$ the price per Nitrogen cylinder and $y$ the price per Oxygen cylinder:
 
 $$
-4(13x + 5y) = 4(326.45) \\Rightarrow 52x + 20y = 1305.80
+15x + 20y = 699.00, \\\\qquad 13x + 5y = 326.45
 $$
 
-Subtract Invoice 1 ($15x + 20y = 699.00$):
+Multiplying Invoice 3 by 4 matches the Oxygen terms:
 
 $$
-(52x + 20y) - (15x + 20y) = 1305.80 - 699.00 \\Rightarrow 37x = 606.80 \\Rightarrow x = 16.40
+52x + 20y = 1305.80
 $$
 
-Distances: $|16.40-16.00|=0.40$ and $|16.40-17.00|=0.60$. Closer to $16.00$.`,
+Subtracting Invoice 1 clears $y$:
+
+$$
+37x = 1305.80 - 699.00 = 606.80, \\\\qquad x = \\\\frac{606.80}{37} = 16.40
+$$
+
+The distances from \\$16.40 to the two reference prices are
+
+$$
+|16.40 - 16.00| = 0.40, \\\\qquad |16.40 - 17.00| = 0.60
+$$
+
+A 40-cent gap to \\$16.00 beats a 60-cent gap to \\$17.00, so the price is closer to \\$16.00 and the statement is false.`,
       `**C) Four Oxygen-type cylinders cost less than six Nitrogen-type cylinders bought in that same bulk.**  (true)
 
-Four Oxygen cylinders cost 4(\\$22.65) = \\$90.60. Six Nitrogen cylinders cost 6(\\$16.40) = \\$98.40, so the Oxygen total is lower.
-
-From $x = 16.40$ in Invoice 1:
+Both cylinder prices are needed. Invoice 2 is only Invoice 1 rescaled, since $9/15 = 12/20 = 419.40/699.00 = 0.60$, so the independent pair is Invoice 1 and Invoice 3. With $x$ per Nitrogen cylinder and $y$ per Oxygen cylinder:
 
 $$
-15(16.40) + 20y = 699.00 \\Rightarrow 246.00 + 20y = 699.00 \\Rightarrow 20y = 453.00 \\Rightarrow y = 22.65
+15x + 20y = 699.00, \\\\qquad 13x + 5y = 326.45
 $$
 
-Then
+Multiplying Invoice 3 by 4 and subtracting Invoice 1:
 
 $$
-4(22.65) = 90.60, \\qquad 6(16.40) = 98.40
+52x + 20y = 1305.80, \\\\qquad 37x = 606.80, \\\\qquad x = 16.40
 $$
 
-and $90.60 < 98.40$.`,
+Substituting back into Invoice 1:
+
+$$
+15(16.40) + 20y = 699.00, \\\\qquad 246.00 + 20y = 699.00, \\\\qquad 20y = 453.00, \\\\qquad y = 22.65
+$$
+
+Comparing the two purchases:
+
+$$
+4(22.65) = 90.60, \\\\qquad 6(16.40) = 98.40
+$$
+
+At \\$90.60 against \\$98.40, four Oxygen cylinders do cost less than six Nitrogen ones, so the statement is true.`,
       `**D) Double Invoice 3's order exactly, and the resulting bill would land above \\$655.**  (false)
 
-Doubling Invoice 3 gives 26 Nitrogen and 10 Oxygen cylinders. The bill is 26(\\$16.40) + 10(\\$22.65) = \\$652.90, below \\$655.
-
-Invoice 3 is 13 Nitrogen and 5 Oxygen, so the doubled mix is 26 and 10:
+Cylinder prices are fixed per unit, so a bill is a linear function of the quantities ordered. Doubling every quantity on Invoice 3 therefore doubles its total exactly, and the individual prices never need unpicking:
 
 $$
-26(16.40) + 10(22.65) = 426.40 + 226.50 = 652.90
+2(326.45) = 652.90
 $$
 
-$652.90 < 655$, so the doubled bill does not land above $655$.`,
+The doubled order, 26 Nitrogen and 10 Oxygen cylinders, would come to \\$652.90, which falls \\$2.10 short of \\$655 instead of landing above it, so the statement is false.`,
       `**E) Blend Invoices 1 and 3 together, cylinders and dollars alike, and the resulting per-cylinder price fails to reach the \\$20 mark.**  (true)
 
-Invoices 1 and 3 together total \\$699.00 + \\$326.45 = \\$1,025.45 for 15 + 20 + 13 + 5 = 53 cylinders. The average is about \\$19.35 per cylinder, below \\$20.
+Pooling two invoices and dividing uses only their printed figures. Invoice 1 covers $15 + 20 = 35$ cylinders for \\$699.00 and Invoice 3 covers $13 + 5 = 18$ cylinders for \\$326.45, so the blend is
 
 $$
-699.00 + 326.45 = 1025.45, \\qquad 15+20+13+5 = 53
+699.00 + 326.45 = 1025.45, \\\\qquad 35 + 18 = 53
 $$
 
 $$
-\\frac{1025.45}{53} = 19.348\\ldots
+\\\\frac{1025.45}{53} \\\\approx 19.35
 $$
 
-That blended per-cylinder figure is below $20$.`,
+At roughly \\$19.35 per cylinder the blended figure stays below \\$20, so the statement is true.`,
     ],
     difficulty_level: "4/5",
     sort_order: 36,
@@ -5306,81 +5016,137 @@ $$
     tactical_explanations: [
       `**A) Working alone, Alvarez's solo completion time, rounded to the nearest whole hour, would round down to 11 hours rather than up to 12.**  (false)
 
-Alvarez's solo time is 1 ÷ 0.085 ≈ 11.76 hours. Rounded to the nearest hour, that is 12 hours.
-
-Monday and Tuesday give $4x + 7y = 0.655$ and $9x + 3y = 0.900$. Multiply the first by 9 and the second by 4:
+Solo time is one whole job divided by Alvarez's hourly rate, so that rate is what must be found. Let $x$ be the fraction of a job Alvarez finishes per hour and $y$ the fraction Bianchi finishes per hour. Monday's 4 and 7 hours left the overhaul 65.5% done, and Tuesday's 9 and 3 hours left an identical job 90.0% done:
 
 $$
-36x + 63y = 5.895, \\qquad 36x + 12y = 3.600
+4x + 7y = 0.655, \\\\qquad 9x + 3y = 0.900
 $$
 
-Subtract:
+Only Alvarez's rate is needed, so eliminate $y$ using the least common multiple of 7 and 3, which is 21. Multiply Monday by 3 and Tuesday by 7:
 
 $$
-51y = 5.895 - 3.600 = 2.295, \\qquad y = \\frac{2.295}{51} = 0.045
+12x + 21y = 1.965
 $$
 
-Then $4x + 7(0.045) = 0.655$, so $4x + 0.315 = 0.655$ and $x = 0.085$. Solo time:
-
 $$
-\\frac{1}{0.085} \\approx 11.7647
+63x + 21y = 6.300
 $$
 
-Nearest whole hour is $12$, not $11$.`,
+Subtracting the first from the second:
+
+$$
+51x = 4.335, \\\\qquad x = \\\\frac{4.335}{51} = 0.085
+$$
+
+Alvarez finishes 8.5% of a job per hour, so one whole job takes
+
+$$
+\\\\frac{1}{0.085} \\\\approx 11.76 \\\\text{ hours}
+$$
+
+Because 11.76 lies past the 11.5 midpoint, it rounds up to 12 hours rather than down to 11, so the statement is false.`,
       `**B) Bianchi, working entirely alone, would take longer to finish one job than it would take Alvarez, working entirely alone, to finish two.**  (false)
 
-Bianchi alone needs 1/0.045 ≈ 22.22 hours for one job; Alvarez alone needs 2/0.085 ≈ 23.53 hours for two jobs  -  Bianchi's single-job time is actually the shorter of the two.
-
-Using the rates from Part A:
+Both hourly rates are needed to compare the two durations. With $x$ as the fraction of a job Alvarez finishes per hour and $y$ as Bianchi's fraction, the two days give
 
 $$
-\\frac{1}{0.045} \\approx 22.222, \\qquad \\frac{2}{0.085} \\approx 23.529
+4x + 7y = 0.655, \\\\qquad 9x + 3y = 0.900
 $$
 
-Bianchi's one-job time ($22.22$ h) is shorter than Alvarez's two-job time ($23.53$ h), so the claim is false.`,
+To isolate Bianchi's rate, match the Alvarez terms at $36x$ by multiplying Monday by 9 and Tuesday by 4, then subtract:
+
+$$
+36x + 63y = 5.895, \\\\qquad 36x + 12y = 3.600
+$$
+
+$$
+51y = 2.295, \\\\qquad y = \\\\frac{2.295}{51} = 0.045
+$$
+
+Substituting back into Monday recovers Alvarez's rate:
+
+$$
+4x + 7(0.045) = 0.655, \\\\qquad 4x + 0.315 = 0.655, \\\\qquad 4x = 0.340, \\\\qquad x = 0.085
+$$
+
+The two durations in question are
+
+$$
+\\\\frac{1}{0.045} \\\\approx 22.22 \\\\text{ hours}, \\\\qquad \\\\frac{2}{0.085} \\\\approx 23.53 \\\\text{ hours}
+$$
+
+Bianchi's single job takes about 22.22 hours, shorter than the roughly 23.53 hours Alvarez needs for two, so the comparison runs the other way and the statement is false.`,
       `**C) Their combined hourly output, expressed as a fraction, reduces to exactly 13/100  -  no more, no less.**  (true)
 
-Together they complete 0.085 + 0.045 = 0.130 job per hour. As a fraction, 0.130 = 13/100.
-
-Add the two recovered rates:
+Combined output is the sum of the two hourly rates, so both are needed. With $x$ for Alvarez and $y$ for Bianchi:
 
 $$
-x + y = 0.085 + 0.045 = 0.130 = \\frac{13}{100}
+4x + 7y = 0.655, \\\\qquad 9x + 3y = 0.900
 $$
 
-The reduced fraction is exactly $13/100$.`,
+Multiplying Monday by 9 and Tuesday by 4 gives matching $36x$ terms, and subtracting leaves
+
+$$
+51y = 5.895 - 3.600 = 2.295, \\\\qquad y = 0.045
+$$
+
+Monday then gives Alvarez's rate:
+
+$$
+4x + 0.315 = 0.655, \\\\qquad 4x = 0.340, \\\\qquad x = 0.085
+$$
+
+Their combined hourly output is
+
+$$
+x + y = 0.085 + 0.045 = 0.130 = \\\\frac{130}{1000} = \\\\frac{13}{100}
+$$
+
+The reduced fraction is exactly $13/100$, so the statement is true.`,
       `**D) Bianchi's slice of Tuesday's finished work, as a fraction, is closer to 1/7 than to 1/8.**  (true)
 
-Bianchi contributed 3(0.045) = 0.135 on Tuesday; 1/7 ≈ 0.1429 is about 0.008 away, while 1/8 = 0.125 is about 0.010 away  -  marginally closer to 1/7.
+Bianchi logged 3 hours on Tuesday, so his slice of that day's work is three times his hourly rate and only that rate is needed. With $x$ for Alvarez and $y$ for Bianchi:
 
-Tuesday, Bianchi's 3 hours at rate $y$:
+$$
+4x + 7y = 0.655, \\\\qquad 9x + 3y = 0.900
+$$
+
+Multiplying Monday by 9 and Tuesday by 4 so both carry $36x$, then subtracting:
+
+$$
+36x + 63y = 5.895, \\\\qquad 36x + 12y = 3.600
+$$
+
+$$
+51y = 2.295, \\\\qquad y = 0.045
+$$
+
+Bianchi's slice of Tuesday's work is therefore
 
 $$
 3(0.045) = 0.135
 $$
 
-Compare with $1/7$ and $1/8$:
+Comparing that with the two candidate fractions:
 
 $$
-\\left|0.135 - \\frac{1}{7}\\right| = \\left|0.135 - 0.142857\\ldots\\right| \\approx 0.00786
+\\\\left|0.135 - \\\\frac{1}{7}\\\\right| \\\\approx |0.135 - 0.142857| \\\\approx 0.00786
 $$
 
 $$
-\\left|0.135 - \\frac{1}{8}\\right| = |0.135 - 0.125| = 0.010
+\\\\left|0.135 - \\\\frac{1}{8}\\\\right| = |0.135 - 0.125| = 0.010
 $$
 
-Closer to $1/7$ because $0.00786 < 0.010$.`,
+The distance to $1/7$ is the smaller of the two, marginally, so the slice is closer to $1/7$ and the statement is true.`,
       `**E) Tally every hour either technician logged across both days  -  23 in all  -  and divide it into the total work finished; the resulting hourly average doesn't quite clear seven percent.**  (true)
 
-The total work completed is 0.655 + 0.900 = 1.555 jobs over 23 logged hours. The average is 1.555 ÷ 23 ≈ 0.0676, or 6.76% per hour.
-
-Hours logged: $4+7+9+3 = 23$. Work finished:
+This average uses only the logged hours and the reported completion figures, so the individual rates are not needed. The hours add to $4 + 7 + 9 + 3 = 23$, matching the figure in the claim, and the work finished is $0.655 + 0.900 = 1.555$ jobs. Dividing:
 
 $$
-0.655 + 0.900 = 1.555, \\qquad \\frac{1.555}{23} \\approx 0.06761
+\\\\frac{1.555}{23} \\\\approx 0.06761
 $$
 
-That is $6.761\\%$ per hour, which does not clear $7\\%$.`,
+An average of about 6.76% of a job per logged hour stays just under 7%, so the statement is true.`,
     ],
     difficulty_level: "4/5",
     sort_order: 37,
@@ -5464,69 +5230,147 @@ $$
     tactical_explanations: [
       `**A) T-Shirt margins, it turns out, sit closer to eleven dollars than to twelve.**  (false)
 
-A T-Shirt margin is \\$11.65. It is \\$0.35 from \\$12 but \\$0.65 from \\$11, so it is closer to \\$12.
-
-Season 1 and Season 2 are $430x + 260y = 9793.50$ and $275x + 410y = 10747.75$. Multiply the first by 410 and the second by 260:
+Vantage earns a fixed profit per unit, so the two intact seasons pin the margins down. Let $x$ be the profit per T-Shirt and $y$ the profit per Hoodie. Season 1 sold 430 T-Shirts and 260 Hoodies for \\$9,793.50, and Season 2 sold 275 and 410 for \\$10,747.75:
 
 $$
-176300x + 106600y = 4015335, \\qquad 71500x + 106600y = 2794415
+430x + 260y = 9793.50, \\\\qquad 275x + 410y = 10747.75
 $$
 
-Subtract:
+Only the T-Shirt margin is needed. Dividing Season 1 by 10 and Season 2 by 5 keeps the arithmetic manageable:
 
 $$
-104800x = 4015335 - 2794415 = 1220920, \\qquad x = \\frac{1220920}{104800} = 11.65
+43x + 26y = 979.35, \\\\qquad 55x + 82y = 2149.55
 $$
 
-Distances: $|11.65-11|=0.65$ and $|11.65-12|=0.35$. Closer to $12$, not $11$.`,
+Multiplying the first by 41 and the second by 13 makes both Hoodie terms $1066y$:
+
+$$
+1763x + 1066y = 40153.35
+$$
+
+$$
+715x + 1066y = 27944.15
+$$
+
+Subtracting the second from the first:
+
+$$
+1048x = 12209.20, \\\\qquad x = \\\\frac{12209.20}{1048} = 11.65
+$$
+
+The distances from \\$11.65 to the two round figures are $|11.65 - 11| = 0.65$ and $|11.65 - 12| = 0.35$, so the margin sits closer to twelve dollars, not eleven, and the statement is false.`,
       `**B) Hoodie margins, by contrast, sit closer to eighteen dollars than to nineteen.**  (true)
 
-A Hoodie margin is \\$18.40. It is \\$0.40 from \\$18 and \\$0.60 from \\$19, so it is closer to \\$18.
-
-From $x = 11.65$ in Season 1:
+Only the Hoodie margin is at stake, so it can be isolated directly. With $x$ the profit per T-Shirt and $y$ the profit per Hoodie, the two intact seasons give
 
 $$
-430(11.65) + 260y = 9793.50 \\Rightarrow 5009.50 + 260y = 9793.50
+430x + 260y = 9793.50, \\\\qquad 275x + 410y = 10747.75
+$$
+
+Dividing both by 5 first:
+
+$$
+86x + 52y = 1958.70, \\\\qquad 55x + 82y = 2149.55
+$$
+
+To clear $x$, multiply the first by 55 and the second by 86:
+
+$$
+4730x + 2860y = 107728.50
 $$
 
 $$
-260y = 4784.00 \\Rightarrow y = 18.40
+4730x + 7052y = 184861.30
 $$
 
-Then $|18.40-18|=0.40$ and $|18.40-19|=0.60$, so closer to $18$.`,
+Subtracting the first from the second:
+
+$$
+4192y = 77132.80, \\\\qquad y = \\\\frac{77132.80}{4192} = 18.40
+$$
+
+The Hoodie margin is \\$18.40, which is 40 cents from eighteen dollars and 60 cents from nineteen. It is the closer of the two to eighteen, so the statement is true.`,
       `**C) Whatever the water damage erased, the missing Season 3 T-Shirt count reconstructs to a number that's a multiple of ten.**  (false)
 
-The missing Season 3 count is 245 T-Shirts. Although 245 is divisible by 5, it is not divisible by 10.
+Reconstructing the lost count needs both per-unit margins first. With $x$ the profit per T-Shirt and $y$ the profit per Hoodie, Seasons 1 and 2 give
 
-The reconstructed count is 245 units  -  a multiple of five, but not of ten.
+$$
+430x + 260y = 9793.50, \\\\qquad 275x + 410y = 10747.75
+$$
 
-Season 3 has 310 Hoodies and profit $8558.25$:
+Dividing by 10 and 5 respectively gives $43x + 26y = 979.35$ and $55x + 82y = 2149.55$; scaling those by 41 and 13 makes both Hoodie terms $1066y$, and subtracting leaves
+
+$$
+1048x = 40153.35 - 27944.15 = 12209.20, \\\\qquad x = 11.65
+$$
+
+Substituting back into Season 1:
+
+$$
+430(11.65) + 260y = 9793.50, \\\\qquad 5009.50 + 260y = 9793.50, \\\\qquad 260y = 4784.00, \\\\qquad y = 18.40
+$$
+
+Season 3's legible figures are 310 Hoodies and \\$8,558.25 of profit, so its T-Shirt count $T$ satisfies
 
 $$
 11.65T + 18.40(310) = 8558.25
 $$
 
 $$
-11.65T + 5704.00 = 8558.25 \\Rightarrow 11.65T = 2854.25 \\Rightarrow T = 245
+11.65T + 5704.00 = 8558.25, \\\\qquad 11.65T = 2854.25, \\\\qquad T = \\\\frac{2854.25}{11.65} = 245
 $$
 
-$245$ ends in $5$, so it is not a multiple of $10$.`,
+Season 3 made 245 T-Shirts. That number ends in 5, so it is a multiple of five but not of ten, and the statement is false.`,
       `**D) Season 2 outearned Season 1 by an amount that would just barely fail to cover exactly 52 Hoodies' worth of margin.**  (true)
 
-Season 2 exceeds Season 1 by \\$10,747.75 − \\$9,793.50 = \\$954.25. Fifty-two Hoodies earn 52(\\$18.40) = \\$956.80, so the gap is \\$2.55 short.
+The season gap comes straight from the reported profits, but comparing it against 52 Hoodies requires the Hoodie margin. With $x$ the profit per T-Shirt and $y$ the profit per Hoodie:
+
+$$
+430x + 260y = 9793.50, \\\\qquad 275x + 410y = 10747.75
+$$
+
+Dividing both by 5 gives $86x + 52y = 1958.70$ and $55x + 82y = 2149.55$; scaling those by 55 and 86 matches the T-Shirt terms at $4730x$, and subtracting leaves
+
+$$
+4192y = 184861.30 - 107728.50 = 77132.80, \\\\qquad y = 18.40
+$$
+
+The gap between the two seasons is
 
 $$
 10747.75 - 9793.50 = 954.25
 $$
 
+while 52 Hoodies are worth
+
 $$
-52(18.40) = 956.80, \\qquad 956.80 - 954.25 = 2.55
+52(18.40) = 956.80
 $$
 
-The season gap is $2.55$ short of 52 Hoodies' margin.`,
+$$
+956.80 - 954.25 = 2.55
+$$
+
+The gap falls \\$2.55 short of covering 52 Hoodies, a shortfall of about a quarter of one percent, so it does just barely fail and the statement is true.`,
       `**E) Rewrite Season 3's history so that it produced 260 T-Shirts instead of the reconstructed count (Hoodies held at 310), and the profit crosses \\$8,700  -  clearing it by less than \\$40.**  (true)
 
-With 260 T-Shirts and 310 Hoodies, profit is 260(\\$11.65) + 310(\\$18.40) = \\$8,733.00. It clears \\$8,700 by \\$33, which is less than \\$40.
+Pricing that rewritten season needs both margins. From Seasons 1 and 2, with $x$ the profit per T-Shirt and $y$ the profit per Hoodie:
+
+$$
+430x + 260y = 9793.50, \\\\qquad 275x + 410y = 10747.75
+$$
+
+Dividing by 10 and 5 gives $43x + 26y = 979.35$ and $55x + 82y = 2149.55$; scaling those by 41 and 13 matches the Hoodie terms, and subtracting leaves
+
+$$
+1048x = 12209.20, \\\\qquad x = 11.65
+$$
+
+$$
+430(11.65) + 260y = 9793.50, \\\\qquad 260y = 4784.00, \\\\qquad y = 18.40
+$$
+
+With 260 T-Shirts and 310 Hoodies the season's profit would be
 
 $$
 260(11.65) + 310(18.40) = 3029.00 + 5704.00 = 8733.00
@@ -5536,7 +5380,7 @@ $$
 8733.00 - 8700.00 = 33.00
 $$
 
-It clears $8,700$ by $33$, which is less than $40$.`,
+The rewritten season crosses \\$8,700 and clears it by \\$33, which is under \\$40, so both halves of the statement hold.`,
     ],
     difficulty_level: "4/5",
     sort_order: 38,
@@ -5635,59 +5479,153 @@ $$
     tactical_explanations: [
       `**A) Knock five dollars and forty cents off the flat handling fee and you'd land on an even \\$89.20  -  implying the real fee currently overshoots \\$89 by roughly six percent.**  (true)
 
-\\$94.60 - 5.40 = \\$89.20; relative to \\$89.00, the real fee overshoots by (94.60-89)/89 ≈ 6.3%, roughly six percent.
-
-Convert Shipment 2 first: $572 \\div 2.2 = 260$ kg. The two metric bills are $x + 185y = 677.35$ and $x + 260y = 913.60$. Subtract:
+The handling fee has to be recovered from two bills expressed in the same unit, so Shipment 2's weight is converted first:
 
 $$
-75y = 913.60 - 677.35 = 236.25, \\qquad y = \\frac{236.25}{75} = 3.15
+\\\\frac{572}{2.2} = 260 \\\\text{ kg}
 $$
 
-Then $x + 185(3.15) = 677.35$, so $x + 582.75 = 677.35$ and $x = 94.60$.
+Let $x$ be the flat handling fee and $y$ the rate per kilogram. The two shipments then read
 
 $$
-94.60 - 5.40 = 89.20, \\qquad \\frac{94.60 - 89}{89} = \\frac{5.60}{89} \\approx 0.0629
+x + 185y = 677.35, \\\\qquad x + 260y = 913.60
 $$
 
-That is about $6.3\\%$, matching "roughly six percent."`,
+Both carry the same fee, so subtracting the first from the second cancels it:
+
+$$
+75y = 236.25, \\\\qquad y = \\\\frac{236.25}{75} = 3.15
+$$
+
+Shipment 1 then gives the fee:
+
+$$
+x + 185(3.15) = 677.35, \\\\qquad x + 582.75 = 677.35, \\\\qquad x = 94.60
+$$
+
+Removing \\$5.40 from that fee gives
+
+$$
+94.60 - 5.40 = 89.20
+$$
+
+and measured against \\$89 the real fee runs
+
+$$
+\\\\frac{94.60 - 89}{89} = \\\\frac{5.60}{89} \\\\approx 0.0629
+$$
+
+An overshoot of about 6.3% is indeed roughly six percent, so both halves of the statement hold.`,
       `**B) The per-kilogram rate, tripled, would land just shy of \\$9.50.**  (true)
 
-Three times the \\$3.15/kg rate is \\$9.45. That is just below \\$9.50.
+Only the per-kilogram rate is needed, and it can be isolated without ever finding the handling fee. The two usable bills must first share one unit, so convert Shipment 2's weight:
 
-From Part A, $y = 3.15$:
+$$
+\\\\frac{572}{2.2} = 260 \\\\text{ kg}
+$$
+
+With $x$ the flat handling fee and $y$ the rate per kilogram:
+
+$$
+x + 185y = 677.35, \\\\qquad x + 260y = 913.60
+$$
+
+The identical fee in both bills disappears on subtraction:
+
+$$
+(260 - 185)y = 913.60 - 677.35, \\\\qquad 75y = 236.25, \\\\qquad y = \\\\frac{236.25}{75} = 3.15
+$$
+
+Tripling the rate gives
 
 $$
 3(3.15) = 9.45
 $$
 
-and $9.45 < 9.50$, just shy of the mark.`,
+\\$9.45 sits five cents below \\$9.50, so the tripled rate does land just shy of it and the statement is true.`,
       `**C) Convert Shipment 3's weight properly, apply the derived model, and the predicted charge comes within four dollars of what was actually billed  -  but doesn't match it exactly.**  (true)
 
-Shipment 3 weighs 99 ÷ 2.2 = 45 kg, so the model predicts \\$94.60 + 45(\\$3.15) = \\$236.35. The actual \\$239.80 bill differs by \\$3.45, which is within \\$4 but not exact.
+Auditing Shipment 3 requires the whole model, fee and rate alike. Converting Shipment 2 to kilograms first:
 
 $$
-\\frac{99}{2.2} = 45, \\qquad 94.60 + 45(3.15) = 94.60 + 141.75 = 236.35
+\\\\frac{572}{2.2} = 260 \\\\text{ kg}
 $$
+
+With $x$ the flat handling fee and $y$ the rate per kilogram, the two reference bills are
+
+$$
+x + 185y = 677.35, \\\\qquad x + 260y = 913.60
+$$
+
+Subtracting removes the shared fee, and Shipment 1 then gives the fee itself:
+
+$$
+75y = 236.25, \\\\qquad y = 3.15
+$$
+
+$$
+x + 185(3.15) = 677.35, \\\\qquad x = 94.60
+$$
+
+Shipment 3's 99 pounds convert to
+
+$$
+\\\\frac{99}{2.2} = 45 \\\\text{ kg}
+$$
+
+so the model predicts
+
+$$
+94.60 + 45(3.15) = 94.60 + 141.75 = 236.35
+$$
+
+Against the \\$239.80 actually billed:
 
 $$
 239.80 - 236.35 = 3.45
 $$
 
-$3.45 < 4$ and $236.35 \\ne 239.80$.`,
+The prediction sits \\$3.45 away, inside four dollars but not an exact match, so the statement is true.`,
       `**D) Ninety-nine pounds, run through the standard 2.2-per-kilogram conversion, comes out to a number divisible by seven.**  (false)
 
-Ninety-nine pounds converts to 99 ÷ 2.2 = 45 kg. Since 45 is not divisible by 7, the claim is false.
-
-Rebuild the expression from the solved system rather than treating a coefficient, fee, or converted unit as if it were already the final answer.
+This is a claim about the converted weight alone, so neither the handling fee nor the per-kilogram rate enters into it:
 
 $$
-\\frac{99}{2.2} = 45, \\qquad 45 \\div 7 = 6 \\text{ remainder } 3
+\\\\frac{99}{2.2} = 45 \\\\text{ kg}
 $$
 
-$45$ is not a multiple of $7$.`,
+Dividing 45 by 7 leaves a remainder:
+
+$$
+45 = 7(6) + 3
+$$
+
+Since 45 is not a multiple of seven, the statement is false.`,
       `**E) Push the shipment weight up to 400 kilograms and the resulting charge just barely creeps past thirteen hundred fifty dollars.**  (true)
 
-At 400 kg, the charge is \\$94.60 + 400(\\$3.15) = \\$1,354.60. This is \\$4.60 above \\$1,350.
+Charging a 400 kg shipment needs both parts of the billing formula. Shipment 2's weight converts to
+
+$$
+\\\\frac{572}{2.2} = 260 \\\\text{ kg}
+$$
+
+so with $x$ the flat handling fee and $y$ the rate per kilogram the two reference bills are
+
+$$
+x + 185y = 677.35, \\\\qquad x + 260y = 913.60
+$$
+
+Subtracting cancels the fee and gives the rate, and Shipment 1 then gives the fee:
+
+$$
+75y = 236.25, \\\\qquad y = 3.15
+$$
+
+$$
+x + 582.75 = 677.35, \\\\qquad x = 94.60
+$$
+
+At 400 kilograms the charge is
 
 $$
 94.60 + 400(3.15) = 94.60 + 1260.00 = 1354.60
@@ -5697,7 +5635,7 @@ $$
 1354.60 - 1350.00 = 4.60
 $$
 
-It creeps past $1,350$ by $4.60$.`,
+The charge passes \\$1,350 by only \\$4.60, so it does just barely creep past and the statement is true.`,
     ],
     difficulty_level: "4/5",
     sort_order: 39,
@@ -5791,63 +5729,83 @@ but Shipment 3 was charged \\$239.80, a \\$3.45 discrepancy.
     tactical_explanations: [
       `**A) Doubling every line of Client A's invoice implies Client B should owe \\$967.40  -  a figure that overshoots what was actually billed by a hair over 1.6% of the real total.**  (true)
 
-Twice Client A's \\$483.70 invoice is \\$967.40. The excess over Client B's \\$952.10 is \\$15.30, and \\$15.30 ÷ \\$952.10 ≈ 1.607%.
+Client B's usage, 22 compute units and 14 storage units, is exactly twice Client A's 11 and 7. Under one fixed-rate structure with $x$ per compute unit and $y$ per storage unit, that forces
 
-Client B's usage is exactly double Client A's, so a consistent scheme would scale Client A's bill by 2:
+$$
+22x + 14y = 2(11x + 7y)
+$$
+
+so doubling Client A's \\$483.70 total gives what Client B ought to owe:
 
 $$
 2(483.70) = 967.40
 $$
 
+Client B was actually billed \\$952.10, so the overshoot and its size relative to the real total are
+
 $$
-967.40 - 952.10 = 15.30, \\qquad \\frac{15.30}{952.10} \\approx 0.01607
+967.40 - 952.10 = 15.30, \\\\qquad \\\\frac{15.30}{952.10} \\\\approx 0.01607
 $$
 
-That overshoot is a hair over $1.6\\%$ of the billed $952.10$.`,
+At about 1.607% the overshoot is a hair over 1.6% of the billed amount, so the statement is true.`,
       `**B) For the two invoices to describe one consistent pricing scheme, Client A alone would have needed to account for exactly half of Client B's \\$952.10 billed amount.**  (true)
 
-If B's doubled usage total is \\$952.10, A would need to be exactly half: \\$952.10 ÷ 2 = \\$476.05. A's reported \\$483.70 is not that value, exposing the inconsistency.
-
-Consistency plus doubled usage means $2(11x+7y) = 22x+14y$, so the totals must satisfy $2A = B$:
+Client B's usage doubles Client A's in both categories, 22 against 11 compute units and 14 against 7 storage units. With one fixed price $x$ per compute unit and $y$ per storage unit, Client B's charge is therefore forced to be twice Client A's:
 
 $$
-\\frac{952.10}{2} = 476.05
+22x + 14y = 2(11x + 7y)
 $$
 
-Client A reported $483.70$, and $483.70 \\ne 476.05$.`,
+If both invoices described that one scheme, Client B's \\$952.10 would have to be twice Client A's total, so Client A's total would have to be
+
+$$
+\\\\frac{952.10}{2} = 476.05
+$$
+
+precisely half of Client B's figure, which is what the statement asserts. Client A actually reported \\$483.70, so the requirement is not met in practice, but the halving condition itself is exactly right and the statement is true.`,
       `**C) The discrepancy uncovered here sits nearer to a 1-in-60 error rate than to a 1-in-50 one.**  (true)
 
-1.61% is closer to 1/60 ≈ 1.67% (about 0.06 points away) than to 1/50 = 2% (0.39 points away).
-
-From Part A the relative error is $15.30/952.10 \\approx 1.607\\%$. Compare with $1/60$ and $1/50$:
+The discrepancy has to be measured before it can be classified. Client B's 22 compute units and 14 storage units are exactly double Client A's 11 and 7, so under one fixed-rate structure Client B's bill is forced to be twice Client A's \\$483.70:
 
 $$
-\\frac{1}{60} \\approx 0.01667, \\qquad \\frac{1}{50} = 0.02000
+2(483.70) = 967.40
+$$
+
+Client B was billed \\$952.10 instead, so the error and its relative size are
+
+$$
+967.40 - 952.10 = 15.30, \\\\qquad \\\\frac{15.30}{952.10} \\\\approx 0.01607
+$$
+
+Comparing that rate with the two candidate benchmarks:
+
+$$
+\\\\frac{1}{60} \\\\approx 0.01667, \\\\qquad \\\\frac{1}{50} = 0.02000
 $$
 
 $$
-|0.01607 - 0.01667| \\approx 0.00060, \\qquad |0.01607 - 0.02000| = 0.00393
+|0.01607 - 0.01667| \\\\approx 0.00060, \\\\qquad |0.01607 - 0.02000| \\\\approx 0.00393
 $$
 
-Nearer to $1/60$.`,
+The 1-in-60 benchmark is several times nearer, so the statement is true.`,
       `**D) Plugging in a purely hypothetical \\$14.20 per compute-unit and \\$31.75 per storage-unit  -  numbers with no basis in the real contract  -  Client A's invoice would compute to a figure just shy of \\$375.**  (false)
 
-The hypothetical prices give 11(\\$14.20) + 7(\\$31.75) = \\$156.20 + \\$222.25 = \\$378.45. That is above \\$375, not just below it.
+Both prices are handed to us, so this is a single evaluation of Client A's 11 compute units and 7 storage units:
 
 $$
 11(14.20) + 7(31.75) = 156.20 + 222.25 = 378.45
 $$
 
-$378.45 > 375$, so the hypothetical total is not just shy of $375$.`,
+At \\$378.45 the hypothetical total sits \\$3.45 above \\$375 rather than just below it, so the statement is false.`,
       `**E) Compare Client B's actual bill to two rival hypotheses  -  one assuming a clean doubling of Client A (\\$967.40), the other assuming a 50%-heavier surcharge instead of a full double (\\$725.55). The doubling hypothesis, despite being wrong, still lands closer to the real figure than the other one does.**  (true)
 
-The clean-doubling hypothesis is \\$15.30 away from \\$952.10. The 50%-heavier hypothesis, \\$725.55, is \\$226.55 away, so doubling is much closer.
+Both rival figures are supplied and both scale Client A's \\$483.70 total, since $2(483.70) = 967.40$ and $1.5(483.70) = 725.55$. Client B's actual bill is \\$952.10, so the two errors are
 
 $$
-|967.40 - 952.10| = 15.30, \\qquad |725.55 - 952.10| = 226.55
+|967.40 - 952.10| = 15.30, \\\\qquad |725.55 - 952.10| = 226.55
 $$
 
-$15.30 < 226.55$, so the doubling guess is closer even though it is still wrong.`,
+The doubling hypothesis misses by \\$15.30 against \\$226.55 for the other, roughly fifteen times closer, so despite being wrong it is much the better guess and the statement is true.`,
     ],
     difficulty_level: "4/5",
     sort_order: 40,
@@ -5917,69 +5875,129 @@ The two equations are inconsistent by $15.30$.
     tactical_explanations: [
       `**A) The dollar interest earned by Fund B is more than triple the dollar interest earned by Fund A.**  (false)
 
-Fund A earns 0.0525(4,800) = \\$252.00; Fund B earns 0.0375(13,600) = \\$510.00. Triple Fund A's interest would be \\$756.00, and \\$510.00 does not reach that.
+Comparing the two interest amounts needs both balances. Let $x$ be Fund A's balance and $y$ Fund B's. The officer's notes say Fund B holds \\$4,000 more than twice Fund A, and the rates of 5.25% and 3.75% together yield \\$762.00:
 
-Fund B's balance is $y = 2x + 4000$, and the combined return is $0.0525x + 0.0375y = 762$. Substitute:
+$$
+y = 2x + 4000, \\\\qquad 0.0525x + 0.0375y = 762
+$$
+
+Substituting the first equation into the second:
 
 $$
 0.0525x + 0.0375(2x + 4000) = 762
 $$
 
 $$
-0.0525x + 0.075x + 150 = 762 \\Rightarrow 0.1275x = 612 \\Rightarrow x = 4800
+0.0525x + 0.075x + 150 = 762, \\\\qquad 0.1275x = 612, \\\\qquad x = \\\\frac{612}{0.1275} = 4800
 $$
 
-Then $y = 2(4800) + 4000 = 13600$. Interest:
-
 $$
-0.0525(4800) = 252, \\qquad 0.0375(13600) = 510, \\qquad 3(252) = 756
+y = 2(4800) + 4000 = 13600
 $$
 
-$510 < 756$, so B's interest is not more than triple A's.`,
+The interest each fund earns is
+
+$$
+0.0525(4800) = 252, \\\\qquad 0.0375(13600) = 510
+$$
+
+Triple Fund A's interest would be $3(252) = 756$, and Fund B's \\$510 falls well short of that. Fund B earns a little over double, not more than triple, so the statement is false.`,
       `**B) If Fund A's rate were raised by 1.5 percentage points (to 6.75%) while Fund B's rate stayed the same, the combined annual return would rise above \\$800.00.**  (true)
 
-At the raised rate, Fund A would earn 0.0675(4,800) = \\$324.00, giving a combined return of \\$324.00 + \\$510.00 = \\$834.00, above \\$800.00.
+Repricing one fund's rate requires both balances. With $x$ for Fund A and $y$ for Fund B, the notes give
 
-Keep the balances $x = 4800$ and $y = 13600$, and replace only A's rate:
+$$
+y = 2x + 4000, \\\\qquad 0.0525x + 0.0375y = 762
+$$
+
+Substituting:
+
+$$
+0.0525x + 0.075x + 150 = 762, \\\\qquad 0.1275x = 612, \\\\qquad x = 4800
+$$
+
+$$
+y = 2(4800) + 4000 = 13600
+$$
+
+Holding the balances fixed and applying 6.75% to Fund A while Fund B stays at 3.75%:
 
 $$
 0.0675(4800) + 0.0375(13600) = 324 + 510 = 834
 $$
 
-$834 > 800$.`,
+The combined return rises to \\$834.00, comfortably above \\$800.00, so the statement is true.`,
       `**C) The combined annual return represents more than 4% of the total trust value (Fund A + Fund B combined).**  (true)
 
-The total trust is \\$4,800 + \\$13,600 = \\$18,400. Its \\$762 return is \\$762 ÷ \\$18,400 ≈ 4.14%, which exceeds 4%.
+The \\$762.00 return is given, but the trust's total value has to be reconstructed. With $x$ for Fund A's balance and $y$ for Fund B's:
 
 $$
-4800 + 13600 = 18400, \\qquad \\frac{762}{18400} = 0.041413\\ldots
+y = 2x + 4000, \\\\qquad 0.0525x + 0.0375y = 762
 $$
 
-That is about $4.14\\%$, which is more than $4\\%$.`,
+Substituting the first into the second:
+
+$$
+0.1275x + 150 = 762, \\\\qquad 0.1275x = 612, \\\\qquad x = 4800
+$$
+
+$$
+y = 2(4800) + 4000 = 13600
+$$
+
+The trust therefore holds
+
+$$
+4800 + 13600 = 18400
+$$
+
+and the return as a share of the whole is
+
+$$
+\\\\frac{762}{18400} \\\\approx 0.04141
+$$
+
+About 4.14% is more than 4%, which fits a blend of a 5.25% fund and a 3.75% fund weighted toward the lower rate, so the statement is true.`,
       `**D) Had the trust instead been split evenly (\\$9,200.00 in each fund) at the original rates, the total return would have come within \\$5.00 of the actual \\$762.00.**  (false)
 
-An even split would earn 9,200(0.0525 + 0.0375) = \\$828.00, which is \\$66.00 away from the actual \\$762.00  -  far more than \\$5.00.
-
-Half the \\$18,400 total is $9,200$ in each fund:
+Both hypothetical balances are supplied, so this is a direct evaluation at the stated rates of 5.25% and 3.75%:
 
 $$
 9200(0.0525) + 9200(0.0375) = 483 + 345 = 828
 $$
 
+Comparing with the actual \\$762.00 return:
+
 $$
 828 - 762 = 66
 $$
 
-$66$ is far more than $5$.`,
+An even split would earn \\$828.00, \\$66.00 away from the real figure rather than within \\$5.00, so the statement is false.`,
       `**E) The percentage difference between the two fund balances, taken relative to the smaller balance, exceeds 180%.**  (true)
 
-The balance difference is \\$13,600 − \\$4,800 = \\$8,800. Relative to the smaller \\$4,800 balance, \\$8,800 ÷ \\$4,800 ≈ 183.3%, above 180%.
+Both balances are needed. With $x$ for Fund A and $y$ for Fund B, the notes give
 
 $$
-13600 - 4800 = 8800, \\qquad \\frac{8800}{4800} = \\frac{11}{6} \\approx 1.8333
+y = 2x + 4000, \\\\qquad 0.0525x + 0.0375y = 762
 $$
 
-That is about $183.3\\%$, which exceeds $180\\%$.`,
+Substituting:
+
+$$
+0.1275x + 150 = 762, \\\\qquad 0.1275x = 612, \\\\qquad x = 4800
+$$
+
+$$
+y = 2(4800) + 4000 = 13600
+$$
+
+Fund A's \\$4,800 is the smaller balance, so the difference measured against it is
+
+$$
+\\\\frac{13600 - 4800}{4800} = \\\\frac{8800}{4800} = \\\\frac{11}{6} \\\\approx 1.8333
+$$
+
+That is about 183.3%, which exceeds 180%, so the statement is true.`,
     ],
     difficulty_level: "4/5",
     sort_order: 41,
@@ -6058,73 +6076,113 @@ $$
     tactical_explanations: [
       `**A) The combined salt content of Batch 1 and Batch 2, if poured together into one container, would exceed 300 g.**  (true)
 
-Batch 1 contains 144 g and Batch 2 contains 184 g. Together they contain 328 g, which exceeds 300 g.
-
-The log already lists those two salt totals, so adding them is direct:
+Salt is conserved when two batches are poured together, so their recorded totals simply add and neither concentration is needed. The log gives 144 g for Batch 1 and 184 g for Batch 2:
 
 $$
 144 + 184 = 328
 $$
 
-and $328 > 300$.`,
+At 328 g the combined container holds 28 g more than 300 g, so the statement is true.`,
       `**B) Solution B's concentration is more than 70% of Solution A's concentration.**  (true)
 
-Solution B's concentration compared with A's is 12 ÷ 16 = 0.75, or 75%. Since 75% is more than 70%, the statement is true.
-
-Batch 1 (10 L at 3:2) is $6$ L of A and $4$ L of B; Batch 2 (12 L at 5:1) is $10$ L of A and $2$ L of B:
+Both concentrations are needed, and the log's ratios must be turned into litres first. Batch 1's 10 L at 3:2 is $\\\\frac{3}{5}(10) = 6$ L of A and $\\\\frac{2}{5}(10) = 4$ L of B; Batch 2's 12 L at 5:1 is $\\\\frac{5}{6}(12) = 10$ L of A and $\\\\frac{1}{6}(12) = 2$ L of B. Writing $x$ for grams of salt per litre in Solution A and $y$ for Solution B:
 
 $$
-6x + 4y = 144, \\qquad 10x + 2y = 184
+6x + 4y = 144, \\\\qquad 10x + 2y = 184
 $$
 
-Divide by 2: $3x + 2y = 72$ and $5x + y = 92$, so $y = 92 - 5x$. Substitute:
+Halving both equations:
 
 $$
-3x + 2(92 - 5x) = 72 \\Rightarrow 3x + 184 - 10x = 72 \\Rightarrow -7x = -112 \\Rightarrow x = 16
+3x + 2y = 72, \\\\qquad 5x + y = 92
 $$
 
-Then $y = 92 - 5(16) = 92 - 80 = 12$. Ratio:
+The second gives $y = 92 - 5x$, and substituting into the first:
 
 $$
-\\frac{y}{x} = \\frac{12}{16} = 0.75
+3x + 2(92 - 5x) = 72, \\\\qquad 3x + 184 - 10x = 72, \\\\qquad -7x = -112, \\\\qquad x = 16
 $$
 
-$75\\% > 70\\%$.`,
+$$
+y = 92 - 5(16) = 12
+$$
+
+Solution A carries 16 g/L and Solution B 12 g/L, so B's concentration relative to A's is
+
+$$
+\\\\frac{12}{16} = 0.75
+$$
+
+At 75% that is more than 70%, so the statement is true.`,
       `**C) If Batch 3's entire 5 g discrepancy were attributed only to an error in the recorded volume of Solution B (with Solution A's 2 L taken as correct), the true volume of Solution B used would be closer to 6.4 L than to 6.0 L.**  (true)
 
-Keeping A at 2 L, the corrected B volume V satisfies 2(16) + 12V = 109. Thus V = 77/12 ≈ 6.4167 L, much closer to 6.4 L than 6.0 L.
-
-Batch 3 is 8 L at 1:3, so the log's split is $2$ L of A and $6$ L of B. Hold A at $2$ L and solve for the B volume $V$ that would produce the recorded $109$ g:
+Reworking Batch 3's volume needs both concentrations. Batch 1's 10 L at 3:2 is 6 L of A and 4 L of B, and Batch 2's 12 L at 5:1 is 10 L of A and 2 L of B, so with $x$ grams per litre in Solution A and $y$ in Solution B:
 
 $$
-2(16) + 12V = 109 \\Rightarrow 32 + 12V = 109 \\Rightarrow 12V = 77 \\Rightarrow V = \\frac{77}{12} \\approx 6.4167
+6x + 4y = 144, \\\\qquad 10x + 2y = 184
 $$
 
-$|6.4167-6.4|=0.0167$ versus $|6.4167-6.0|=0.4167$, so closer to $6.4$ L.`,
+Halving gives $3x + 2y = 72$ and $5x + y = 92$, so $y = 92 - 5x$ and
+
+$$
+3x + 2(92 - 5x) = 72, \\\\qquad -7x = -112, \\\\qquad x = 16, \\\\qquad y = 92 - 80 = 12
+$$
+
+Batch 3's log reads 8 L at 1:3, that is 2 L of A and 6 L of B, which would carry $2(16) + 6(12) = 104$ g against the 109 g recorded, the 5 g discrepancy in question. Holding Solution A at 2 L and letting $V$ be the true volume of Solution B:
+
+$$
+2(16) + 12V = 109, \\\\qquad 32 + 12V = 109, \\\\qquad 12V = 77, \\\\qquad V = \\\\frac{77}{12} \\\\approx 6.4167
+$$
+
+Comparing that with the two candidate volumes:
+
+$$
+|6.4167 - 6.4| \\\\approx 0.0167, \\\\qquad |6.4167 - 6.0| \\\\approx 0.4167
+$$
+
+The corrected volume is far closer to 6.4 L, so the statement is true.`,
       `**D) Using the reconstructed concentrations, a batch mixed in a 3:1 ratio of A:B that must contain exactly 130 g of salt would need a total volume of 7.5 L.**  (false)
 
-In a 3:1 A:B mixture, A is 3/4 of total volume and B is 1/4. Salt is 16(0.75V) + 12(0.25V) = 15V, so 15V = 130 gives V ≈ 8.67 L.
-
-For total volume $V$:
+Sizing this batch needs both concentrations. Batch 1's 10 L at 3:2 is 6 L of A and 4 L of B, and Batch 2's 12 L at 5:1 is 10 L of A and 2 L of B, so with $x$ grams per litre in Solution A and $y$ in Solution B:
 
 $$
-16\\left(\\frac{3}{4}V\\right) + 12\\left(\\frac{1}{4}V\\right) = 12V + 3V = 15V
+6x + 4y = 144, \\\\qquad 10x + 2y = 184
 $$
 
+Halving gives $3x + 2y = 72$ and $5x + y = 92$, hence $y = 92 - 5x$ and
+
 $$
-15V = 130 \\Rightarrow V = \\frac{130}{15} \\approx 8.667
+3x + 2(92 - 5x) = 72, \\\\qquad -7x = -112, \\\\qquad x = 16, \\\\qquad y = 12
 $$
 
-That is not $7.5$ L.`,
+A 3:1 mix of total volume $V$ is $\\\\frac{3}{4}V$ litres of Solution A and $\\\\frac{1}{4}V$ of Solution B, so its salt content is
+
+$$
+16\\\\left(\\\\frac{3}{4}V\\\\right) + 12\\\\left(\\\\frac{1}{4}V\\\\right) = 12V + 3V = 15V
+$$
+
+Requiring exactly 130 g:
+
+$$
+15V = 130, \\\\qquad V = \\\\frac{130}{15} \\\\approx 8.67
+$$
+
+The batch would need about 8.67 L, not 7.5 L, so the statement is false.`,
       `**E) Batch 2 used a higher proportion of Solution A, by volume, than Batch 1 did.**  (true)
 
-Batch 2's 5:1 ratio means A is 5/6 ≈ 83.3% of volume, while Batch 1's 3:2 ratio means A is only 3/5 = 60%  -  Batch 2's proportion is higher.
+A mixing ratio fixes the proportions on its own, so neither concentrations nor absolute volumes are needed. Batch 2 was mixed 5:1, which makes Solution A
 
 $$
-\\frac{5}{5+1} = \\frac{5}{6} \\approx 0.833, \\qquad \\frac{3}{3+2} = \\frac{3}{5} = 0.60
+\\\\frac{5}{5 + 1} = \\\\frac{5}{6} \\\\approx 0.833
 $$
 
-$0.833 > 0.60$.`,
+of the volume, while Batch 1 was mixed 3:2, making Solution A
+
+$$
+\\\\frac{3}{3 + 2} = \\\\frac{3}{5} = 0.60
+$$
+
+of the volume. About 83.3% against 60% makes Batch 2 the richer in Solution A, so the statement is true.`,
     ],
     difficulty_level: "4/5",
     sort_order: 42,
@@ -6208,67 +6266,139 @@ versus 109 g recorded, a 5 g discrepancy.
     tactical_explanations: [
       `**A) If Employee A had instead worked 40 regular hours with no overtime, and then received a one-time bonus equal to 10% of what her actual 2.5 hours of overtime pay was, the bonus would exceed \\$6.00.**  (true)
 
-Employee A's overtime rate is \\$17.50 + \\$8.50 = \\$26.00 per hour. Her 2.5 overtime hours pay \\$65.00, and 10% is \\$6.50, above \\$6.
-
-A's equation is $42.5x + 2.5y = 765$ and B's is $47x + 7y = 882$. Multiply A's by $2.8$ so the $y$ coefficients match:
+Overtime hours are paid at the base wage plus the premium, so both unknowns are needed. Let $x$ be the base hourly wage and $y$ the overtime premium per overtime hour. Employee A worked 40 regular hours plus 2.5 overtime hours for \\$765.00, so her overtime hours cost $2.5(x + y)$ and her gross pay is
 
 $$
-119x + 7y = 2142
+40x + 2.5(x + y) = 42.5x + 2.5y = 765
 $$
 
-Subtract B:
+Employee B's 40 regular plus 7 overtime hours for \\$882.00 give
 
 $$
-(119x + 7y) - (47x + 7y) = 2142 - 882 \\Rightarrow 72x = 1260 \\Rightarrow x = 17.50
+40x + 7(x + y) = 47x + 7y = 882
 $$
 
-Then $42.5(17.50) + 2.5y = 765$, so $743.75 + 2.5y = 765$ and $y = 8.50$. Overtime rate $x+y = 26.00$:
+Multiplying A's equation by 14 and B's by 5 makes both premium terms $35y$:
 
 $$
-2.5(26.00) = 65.00, \\qquad 0.10(65.00) = 6.50
+595x + 35y = 10710
 $$
 
-$6.50 > 6$.`,
+$$
+235x + 35y = 4410
+$$
+
+Subtracting:
+
+$$
+360x = 6300, \\\\qquad x = \\\\frac{6300}{360} = 17.50
+$$
+
+Substituting into A's equation:
+
+$$
+42.5(17.50) + 2.5y = 765, \\\\qquad 743.75 + 2.5y = 765, \\\\qquad 2.5y = 21.25, \\\\qquad y = 8.50
+$$
+
+Overtime therefore pays $x + y = 26.00$ per hour, so her actual overtime pay and the proposed bonus are
+
+$$
+2.5(26.00) = 65.00, \\\\qquad 0.10(65.00) = 6.50
+$$
+
+A \\$6.50 bonus exceeds \\$6.00, so the statement is true.`,
       `**B) Employee B's overtime pay is more than 40% of his total gross pay.**  (false)
 
-Employee B's overtime pay is 7(\\$26.00) = \\$182.00. As a share of \\$882, that is about 20.6%, well below 40%.
+Employee B's overtime pay is 7 hours at the base wage plus the premium, so both must be recovered. With $x$ the base hourly wage and $y$ the overtime premium per overtime hour, the two pay records are
 
 $$
-7(26.00) = 182.00, \\qquad \\frac{182.00}{882.00} \\approx 0.2063
+42.5x + 2.5y = 765, \\\\qquad 47x + 7y = 882
 $$
 
-About $20.6\\%$ is well below $40\\%$.`,
+Multiplying the first by 14 and the second by 5 matches the premium terms at $35y$:
+
+$$
+595x + 35y = 10710, \\\\qquad 235x + 35y = 4410
+$$
+
+$$
+360x = 6300, \\\\qquad x = 17.50
+$$
+
+$$
+42.5(17.50) + 2.5y = 765, \\\\qquad 2.5y = 21.25, \\\\qquad y = 8.50
+$$
+
+Overtime pays $17.50 + 8.50 = 26.00$ per hour, so Employee B's overtime pay and its share of his \\$882.00 gross are
+
+$$
+7(26.00) = 182.00, \\\\qquad \\\\frac{182.00}{882.00} \\\\approx 0.2063
+$$
+
+At about 20.6% the overtime portion is barely half the claimed 40% threshold, so the statement is false.`,
       `**C) The combined gross pay of both employees exceeds what they would have earned had both worked exactly 45 hours at the base rate with no overtime premium at all.**  (true)
 
-At 45 base-rate hours each, each employee would earn 45(\\$17.50) = \\$787.50, or \\$1,575 total. Their actual combined gross pay is \\$765 + \\$882 = \\$1,647, which is higher.
+The actual combined pay is given outright, \\$765.00 plus \\$882.00, but the hypothetical needs the base wage. With $x$ the base hourly wage and $y$ the overtime premium per overtime hour:
 
 $$
-45(17.50) = 787.50, \\qquad 2(787.50) = 1575
+42.5x + 2.5y = 765, \\\\qquad 47x + 7y = 882
 $$
 
+Multiplying the first by 14 and the second by 5 gives matching $35y$ terms, and subtracting leaves
+
 $$
-765 + 882 = 1647
+360x = 10710 - 4410 = 6300, \\\\qquad x = 17.50
 $$
 
-$1647 > 1575$.`,
+At the base rate alone, 45 hours each would pay
+
+$$
+45(17.50) = 787.50, \\\\qquad 2(787.50) = 1575.00
+$$
+
+against actual earnings of
+
+$$
+765.00 + 882.00 = 1647.00
+$$
+
+The real payroll of \\$1,647.00 exceeds \\$1,575.00 by \\$72.00, so the statement is true.`,
       `**D) If the overtime premium were eliminated but the base wage simultaneously rose by 15%, Employee A's gross pay for the same 42.5 hours would decrease compared to her actual earnings.**  (false)
 
-A 15% higher base wage is \\$17.50(1.15) = \\$20.125 per hour. At that flat rate for 42.5 hours, A would earn about \\$855.31, which is greater than \\$765.
+The hypothetical flat wage is built from the base wage, so that has to be recovered. With $x$ the base hourly wage and $y$ the overtime premium per overtime hour:
 
 $$
-17.50(1.15) = 20.125, \\qquad 42.5(20.125) = 855.3125
+42.5x + 2.5y = 765, \\\\qquad 47x + 7y = 882
 $$
 
-$855.31 > 765$, so A's pay would increase, not decrease.`,
+Scaling the first by 14 and the second by 5 lines the premium terms up at $35y$, and subtracting gives
+
+$$
+360x = 6300, \\\\qquad x = 17.50
+$$
+
+A 15% rise makes the flat wage
+
+$$
+17.50(1.15) = 20.125
+$$
+
+and 42.5 hours at that single rate pay
+
+$$
+42.5(20.125) = 855.3125
+$$
+
+About \\$855.31 is roughly \\$90 above her actual \\$765.00, so her pay would rise rather than decrease and the statement is false.`,
       `**E) The ratio of Employee B's overtime hours to Employee A's (7 : 2.5) is greater than the ratio of their gross pay amounts (882 : 765).**  (true)
 
-7 ÷ 2.5 = 2.8, while 882 ÷ 765 ≈ 1.153  -  the hours ratio is indeed greater than the pay ratio, since overtime hours are only a partial driver of total pay.
+Both ratios are built from figures already printed on the pay records, so no wage needs recovering:
 
 $$
-\\frac{7}{2.5} = 2.8, \\qquad \\frac{882}{765} = \\frac{294}{255} = 1.1529\\ldots
+\\\\frac{7}{2.5} = 2.8, \\\\qquad \\\\frac{882}{765} = \\\\frac{98}{85} \\\\approx 1.153
 $$
 
-$2.8 > 1.153$.`,
+The hours ratio of 2.8 is larger than the pay ratio of about 1.153. That fits the pay structure, since the 40 regular hours both employees share dominate their gross pay and dilute the effect of differing overtime, so the statement is true.`,
     ],
     difficulty_level: "4/5",
     sort_order: 43,
@@ -6353,69 +6483,93 @@ $$
     tactical_explanations: [
       `**A) If Project 3 had instead used 20 m of wood (wire unchanged at 40 m), its total cost would have exceeded \\$950.00.**  (true)
 
-The changed Project 3 would cost 20(\\$27) + 40(\\$11) = \\$540 + \\$440 = \\$980. This is greater than \\$950.
-
-Project 2 is a scaled copy of Project 1: $(27, 36) = 1.5(18, 24)$ and $1.5(750) = 1125$, so drop Project 2. Divide Project 1 by 6 and Project 3 by 10:
+Repricing Project 3 needs both per-meter prices, and only two of the three projects carry independent information. Project 2's 27 m and 36 m are exactly 1.5 times Project 1's 18 m and 24 m, and $1.5(750) = 1125$ matches Project 2's printed total, so Project 2 is a scaled repeat and Projects 1 and 3 are the usable pair. With $x$ the price per meter of cedar wood and $y$ the price per meter of galvanized wire:
 
 $$
-3x + 4y = 125, \\qquad x + 4y = 71
+18x + 24y = 750, \\\\qquad 10x + 40y = 710
 $$
 
-Subtract: $2x = 54$, so $x = 27$. Then $27 + 4y = 71$ gives $y = 11$. Hypothetical Project 3:
+Dividing the first by 6 and the second by 10:
+
+$$
+3x + 4y = 125, \\\\qquad x + 4y = 71
+$$
+
+Subtracting removes the wire term:
+
+$$
+2x = 54, \\\\qquad x = 27
+$$
+
+$$
+27 + 4y = 71, \\\\qquad 4y = 44, \\\\qquad y = 11
+$$
+
+With 20 m of wood and 40 m of wire the project would cost
 
 $$
 20(27) + 40(11) = 540 + 440 = 980
 $$
 
-$980 > 950$.`,
+\\$980.00 exceeds \\$950.00 by \\$30.00, so the statement is true.`,
       `**B) The per-meter price gap between wood and wire (x - y) is more than 145% of the wire price per meter.**  (true)
 
-The price gap is \\$27 − \\$11 = \\$16. One hundred forty-five percent of the \\$11 wire price is 1.45(\\$11) = \\$15.95, so \\$16 is greater.
+Both prices are needed, and one project must be discarded first: Project 2's 27 m and 36 m are 1.5 times Project 1's 18 m and 24 m, and $1.5(750) = 1125$ is exactly Project 2's total, so it repeats Project 1 at scale and carries no new information. Using Projects 1 and 3, with $x$ the price per meter of cedar wood and $y$ the price per meter of galvanized wire:
 
 $$
-x - y = 27 - 11 = 16, \\qquad 1.45(11) = 15.95
+18x + 24y = 750, \\\\qquad 10x + 40y = 710
 $$
 
-$16 > 15.95$.`,
+Dividing by 6 and 10 respectively:
+
+$$
+3x + 4y = 125, \\\\qquad x + 4y = 71
+$$
+
+$$
+2x = 54, \\\\qquad x = 27, \\\\qquad 4y = 71 - 27 = 44, \\\\qquad y = 11
+$$
+
+The gap and the threshold it must beat are
+
+$$
+x - y = 27 - 11 = 16, \\\\qquad 1.45(11) = 15.95
+$$
+
+At \\$16.00 against \\$15.95 the gap clears the threshold by five cents, narrowly but genuinely, so the statement is true.`,
       `**C) Combining Project 1 and Project 3's materials into one hypothetical project (28 m wood + 64 m wire) would cost less than the sum of their individual costs (\\$750.00 + \\$710.00).**  (false)
 
-The combined project costs 28(27) + 64(11) = \\$1,460.00, which equals \\$750.00 + \\$710.00 exactly  -  the same, not less, since cost scales linearly with meters.
+Greenfield charges fixed prices per meter, so cost is a linear function of the meters installed and the model contains no volume discount. The proposed project is exactly the two originals added together, since Project 1's 18 m of wood and 24 m of wire plus Project 3's 10 m and 40 m give $18 + 10 = 28$ m of wood and $24 + 40 = 64$ m of wire. With per-meter prices $x$ and $y$:
 
 $$
-28(27) + 64(11) = 756 + 704 = 1460
+28x + 64y = (18x + 24y) + (10x + 40y) = 750 + 710 = 1460
 $$
 
-$$
-750 + 710 = 1460
-$$
-
-The combined cost equals the sum, so it is not less.`,
+The combined project costs exactly \\$1,460.00, the same as the two projects billed separately rather than less, so the statement is false.`,
       `**D) If wire fencing rose by \\$2.00 per meter (wood unchanged), Project 1's total cost would increase by more than 15%.**  (false)
 
-At \\$13.00/m wire, Project 1 would cost 18(27) + 24(13) = \\$798.00, an increase of \\$48.00, only about 6.4%  -  well under 15%.
+Only the wire price moves, so the increase is simply the extra \\$2.00 charged on each of Project 1's 24 m of wire, and neither original price is needed:
 
 $$
-18(27) + 24(13) = 486 + 312 = 798
+24(2.00) = 48.00
 $$
 
+Measured against Project 1's \\$750.00 total:
+
 $$
-798 - 750 = 48, \\qquad \\frac{48}{750} = 0.064
+\\\\frac{48.00}{750.00} = 0.064
 $$
 
-A $6.4\\%$ increase is well under $15\\%$.`,
+A 6.4% increase, taking the project to \\$798.00, is far below the claimed 15%, so the statement is false.`,
       `**E) Project 3's cost per total meter installed is higher than Project 1's cost per total meter installed.**  (false)
 
-Project 3's rate is \\$710.00 ÷ 50 m = \\$14.20/m, while Project 1's rate is \\$750.00 ÷ 42 m ≈ \\$17.86/m  -  Project 3's rate is lower, not higher.
+Each project's cost per meter comes from its own printed figures. Project 3 installed $10 + 40 = 50$ m for \\$710.00 and Project 1 installed $18 + 24 = 42$ m for \\$750.00:
 
 $$
-10 + 40 = 50, \\qquad \\frac{710}{50} = 14.20
+\\\\frac{710}{50} = 14.20, \\\\qquad \\\\frac{750}{42} \\\\approx 17.86
 $$
 
-$$
-18 + 24 = 42, \\qquad \\frac{750}{42} \\approx 17.857
-$$
-
-$14.20 < 17.86$, so Project 3's per-meter cost is lower.`,
+Project 3 averages \\$14.20 per meter against Project 1's roughly \\$17.86, because Project 3 leans mostly on the cheaper wire while Project 1 uses a much larger share of wood. Project 3's rate is the lower of the two, so the statement is false.`,
     ],
     difficulty_level: "4/5",
     sort_order: 44,
@@ -6495,65 +6649,125 @@ $$
     tactical_explanations: [
       `**A) The time it would take Boat A alone to travel the full 356 km stretch is more than 7 hours.**  (true)
 
-Boat A travels at 48 km/h. Its time for 356 km is 356 ÷ 48 ≈ 7.42 hours, which is more than 7.
-
-Opposite docks, 250 km in 2 hours: $2(x+y) = 250$, so $x + y = 125$. With B's 3-hour head start plus A's 1 hour on the 356 km stretch: $x + 4y = 356$. Subtract:
+Boat A's own speed is what this needs. Let $x$ be Boat A's speed and $y$ Boat B's, both in km/h. Starting from opposite docks on the 250 km stretch, the two boats close the whole gap in 2 hours:
 
 $$
-(x + 4y) - (x + y) = 356 - 125 \\Rightarrow 3y = 231 \\Rightarrow y = 77
+2(x + y) = 250, \\\\qquad x + y = 125
 $$
 
-Then $x + 77 = 125$, so $x = 48$. Solo time for 356 km:
+On the 356 km stretch Boat B travels its 3-hour head start plus the hour after Boat A departs, four hours in all, while Boat A travels 1 hour, and between them they cover the full distance:
 
 $$
-\\frac{356}{48} \\approx 7.417
+x + 4y = 356
 $$
 
-which is more than 7 hours.`,
+Subtracting the first equation from the second:
+
+$$
+3y = 356 - 125 = 231, \\\\qquad y = 77
+$$
+
+$$
+x + 77 = 125, \\\\qquad x = 48
+$$
+
+At 48 km/h, Boat A alone would need
+
+$$
+\\\\frac{356}{48} \\\\approx 7.42 \\\\text{ hours}
+$$
+
+That is more than 7 hours, so the statement is true.`,
       `**B) In the 250 km scenario, the difference in distance covered by the two boats when they meet is less than half of the total 250 km gap.**  (true)
 
-In 2 hours, Boat A covers 2(48) = 96 km and Boat B covers 2(77) = 154 km. Their distance difference is 58 km, less than half of 250 km, which is 125 km.
+Each boat's distance depends on its own speed, so both speeds are needed. With $x$ as Boat A's speed and $y$ as Boat B's in km/h, the 250 km stretch closed in 2 hours from opposite docks gives
 
 $$
-2(48) = 96, \\qquad 2(77) = 154, \\qquad 154 - 96 = 58
+2(x + y) = 250, \\\\qquad x + y = 125
 $$
 
+and the 356 km stretch, where Boat B runs its 3-hour head start plus 1 more hour while Boat A runs 1 hour, gives
+
 $$
-\\frac{250}{2} = 125
+x + 4y = 356
 $$
 
-$58 < 125$.`,
+Subtracting the first from the second:
+
+$$
+3y = 231, \\\\qquad y = 77, \\\\qquad x = 125 - 77 = 48
+$$
+
+In the 2 hours before they meet:
+
+$$
+2(48) = 96 \\\\text{ km}, \\\\qquad 2(77) = 154 \\\\text{ km}, \\\\qquad 154 - 96 = 58 \\\\text{ km}
+$$
+
+Half of the 250 km gap is 125 km, and the 58 km difference is comfortably under that, so the statement is true.`,
       `**C) If both boats' speeds were each increased by 20%, the time to close the original 250 km gap would fall below 1.5 hours.**  (false)
 
-A 20% increase gives speeds 57.6 km/h and 92.4 km/h, for a 150 km/h closing speed. Closing 250 km then takes 250 ÷ 150 ≈ 1.667 hours, above 1.5 hours.
+Raising both speeds by the same 20% raises their combined closing speed by 20% as well, so the individual speeds never need separating. The 250 km stretch closed in 2 hours from opposite docks fixes that combined speed:
 
 $$
-1.2(48) = 57.6, \\qquad 1.2(77) = 92.4, \\qquad 57.6 + 92.4 = 150
+2(x + y) = 250, \\\\qquad x + y = 125 \\\\text{ km/h}
 $$
 
+After the increase:
+
 $$
-\\frac{250}{150} \\approx 1.667
+1.2(125) = 150 \\\\text{ km/h}
 $$
 
-$1.667 > 1.5$.`,
+so closing 250 km would take
+
+$$
+\\\\frac{250}{150} \\\\approx 1.67 \\\\text{ hours}
+$$
+
+About 1 hour 40 minutes is still above 1.5 hours, so the statement is false.`,
       `**D) The combined distance both boats would cover in 3 hours at their actual speeds exceeds the 356 km stretch length.**  (true)
 
-Their combined speed is 48 + 77 = 125 km/h. In 3 hours they cover 3(125) = 375 km, which exceeds 356 km.
+Distance covered by the two boats together depends only on their combined speed, which the first scenario supplies directly: from opposite docks they close a 250 km gap in 2 hours, so
 
 $$
-48 + 77 = 125, \\qquad 3(125) = 375
+2(x + y) = 250, \\\\qquad x + y = 125 \\\\text{ km/h}
 $$
 
-$375 > 356$.`,
+In 3 hours they would together cover
+
+$$
+3(125) = 375 \\\\text{ km}
+$$
+
+375 km exceeds the 356 km stretch by 19 km, so the statement is true.`,
       `**E) Boat B's speed is more than 60% higher than Boat A's speed.**  (true)
 
-Boat B is 77 − 48 = 29 km/h faster than Boat A. Relative to A, 29 ÷ 48 ≈ 60.4%, which is more than 60%.
+Both speeds are needed for this comparison. With $x$ as Boat A's speed and $y$ as Boat B's in km/h, the 250 km stretch closed in 2 hours from opposite docks gives
 
 $$
-77 - 48 = 29, \\qquad \\frac{29}{48} \\approx 0.6042
+2(x + y) = 250, \\\\qquad x + y = 125
 $$
 
-About $60.4\\% > 60\\%$.`,
+and the 356 km stretch, where Boat B travels its 3-hour head start plus 1 more hour while Boat A travels 1 hour, gives
+
+$$
+x + 4y = 356
+$$
+
+Subtracting the first from the second:
+
+$$
+3y = 231, \\\\qquad y = 77, \\\\qquad x = 125 - 77 = 48
+$$
+
+Boat B's advantage measured against Boat A's speed is
+
+$$
+\\\\frac{77 - 48}{48} = \\\\frac{29}{48} \\\\approx 0.6042
+$$
+
+At about 60.4% that is more than 60%, though only just, so the statement is true.`,
     ],
     difficulty_level: "4/5",
     sort_order: 45,
@@ -6628,29 +6842,59 @@ $$
     tactical_explanations: [
       `**A) If Season 1's Wheat output had instead been 260 tonnes (Barley unchanged at 160 t), total profit would have exceeded \\$44,000.**  (false)
 
-Wheat earns \\$95/t and Barley earns \\$120/t. For the hypothetical Season 1, profit = 260(95) + 160(120). 24,700 + 19,200 = \\$43,900, and \\$43,900 is not more than \\$44,000.`,
+Let $x$ be Wheat profit per tonne and $y$ Barley profit per tonne. Season 1 and Season 2 give
+
+$$
+240x + 160y = 42000, \\qquad 180x + 260y = 48300
+$$
+
+Divide the first by $80$ and the second by $20$:
+
+$$
+3x + 2y = 525, \\qquad 9x + 13y = 2415
+$$
+
+Multiply the first by $13$ and the second by $2$, then subtract:
+
+$$
+39x + 26y = 6825, \\qquad 18x + 26y = 4830
+$$
+
+$$
+21x = 1995 \\Rightarrow x = 95, \\qquad 3(95) + 2y = 525 \\Rightarrow y = 120
+$$
+
+At the hypothetical Season 1 mix of $260$ t Wheat and $160$ t Barley:
+
+$$
+260(95) + 160(120) = 24700 + 19200 = 43900
+$$
+
+\\$43,900 does not exceed \\$44,000, so the statement is false.`,
       `**B) Barley's profit-per-tonne advantage over Wheat (y - x) represents more than 25% of Wheat's profit per tonne.**  (true)
 
-Compare the per-tonne profit gap with 25% of Wheat's rate. Barley advantage = 120 - 95; benchmark = 0.25(95). The advantage is \\$25/t, while 25% of \\$95 is \\$23.75/t. Since 25 > 23.75, the advantage is more than 25%.`,
+From Season 1 and Season 2, $x = 95$ and $y = 120$ (Wheat and Barley profit per tonne). The advantage is $y - x = 25$, while $25\\%$ of Wheat's rate is $0.25(95) = 23.75$. Since $25 > 23.75$, the advantage is more than $25\\%$ of Wheat's profit per tonne.`,
       `**C) Season 3's total tonnage (Wheat + Barley) is less than Season 2's total tonnage.**  (false)
 
-Season 3's missing Wheat tonnage was reconstructed as 180 t. Season 3 total = 180 + 300; Season 2 total = 180 + 260. Season 3 produced 480 t and Season 2 produced 440 t. Since 480 is greater than 440, it is not less.`,
+With $x = 95$ and $y = 120$ from Seasons 1 and 2, Season 3's Wheat tonnage $T$ satisfies $95T + 120(300) = 53100$, so $95T = 17100$ and $T = 180$. Season 3 total is $180 + 300 = 480$ t and Season 2 total is $180 + 260 = 440$ t. Since $480 > 440$, Season 3 is not less than Season 2.`,
       `**D) Had Season 3 actually produced 220 tonnes of Wheat rather than the reconstructed 180 tonnes, the recorded total profit of \\$53,100 would have been understated by more than \\$3,500.**  (true)
 
-The hypothetical changes only Season 3 Wheat from 180 t to 220 t. Profit = 220(95) + 300(120). The hypothetical profit is \\$20,900 + \\$36,000 = \\$56,900. Its gap above the recorded \\$53,100 is \\$3,800, which is more than \\$3,500.`,
+Using $x = 95$ and $y = 120$, a Season 3 mix of $220$ t Wheat and $300$ t Barley would earn
+
+$$
+220(95) + 300(120) = 20900 + 36000 = 56900
+$$
+
+The gap above the recorded \\$53,100 is $56900 - 53100 = 3800$, and $3800 > 3500$, so the recorded total would have been understated by more than \\$3,500.`,
       `**E) Season 2's profit per tonne of total output exceeds Season 1's profit per tonne of total output.**  (true)
 
-Average profit per tonne is total profit divided by total tonnage. Season 1: 42,000/400. Season 2: 48,300/440. Season 1 is \\$105.00/t; Season 2 is about \\$109.77/t. The Season 2 average is higher.
+Season averages use only the printed totals and tonnages:
 
 $$
-240 + 160 = 400, \\qquad \\frac{42000}{400} = 105
+\\frac{42000}{240 + 160} = \\frac{42000}{400} = 105, \\qquad \\frac{48300}{180 + 260} = \\frac{48300}{440} \\approx 109.773
 $$
 
-$$
-180 + 260 = 440, \\qquad \\frac{48300}{440} \\approx 109.773
-$$
-
-$109.77 > 105$.`,
+Season 2's about \\$109.77/t exceeds Season 1's \\$105/t.`,
     ],
     difficulty_level: "4/5",
     sort_order: 46,
@@ -6740,29 +6984,43 @@ $$
     tactical_explanations: [
       `**A) Fifteen years from now, the elder employee's age will be less than double the younger employee's age at that time.**  (true)
 
-The present ages are elder 47 and younger 19. In 15 years, compare 47 + 15 with 2(19 + 15). The ages will be 62 and 34, and twice 34 is 68. Since 62 < 68, the elder will be less than double the younger.`,
+Let $x$ be the elder's present age and $y$ the younger's. The two age conditions give
+
+$$
+x - 5 = 3(y - 5), \\qquad x + 9 = 2(y + 9)
+$$
+
+Expanding: $x = 3y - 10$ and $x = 2y + 9$. Set equal:
+
+$$
+3y - 10 = 2y + 9 \\Rightarrow y = 19, \\qquad x = 2(19) + 9 = 47
+$$
+
+In $15$ years the ages are $62$ and $34$. Twice $34$ is $68$, and $62 < 68$, so the elder is less than double the younger.`,
       `**B) The current age gap (x - y) is more than 45% of the elder employee's current age.**  (true)
 
-The present age gap is compared with 45% of the elder's present age. Gap = 47 - 19; benchmark = 0.45(47). The gap is 28 years and 45% of 47 is 21.15 years. Since 28 > 21.15, the condition holds.`,
+From the two age conditions, the present ages are $x = 47$ and $y = 19$. The gap is $47 - 19 = 28$, while $45\\%$ of the elder's age is $0.45(47) = 21.15$. Since $28 > 21.15$, the gap is more than $45\\%$ of the elder's current age.`,
       `**C) Exactly 4.5 years from now, the elder employee will be more than 2.5 times the younger employee's age.**  (false)
 
-Halfway to the nine-year mark is 4.5 years from now. Ratio = (47 + 4.5)/(19 + 4.5). The ratio is 51.5/23.5 ≈ 2.19, which is not more than 2.5.`,
+With present ages $47$ and $19$, in $4.5$ years the ages are $51.5$ and $23.5$. The ratio is
+
+$$
+\\frac{51.5}{23.5} \\approx 2.191
+$$
+
+which is not more than $2.5$.`,
       `**D) Ten years ago, the sum of their ages was less than 40.**  (false)
 
-Go back ten years from the present ages. Sum = (47 - 10) + (19 - 10). The sum was 37 + 9 = 46, and 46 is not less than 40.`,
+With present ages $47$ and $19$, ten years ago the ages were $37$ and $9$, summing to $46$. Since $46$ is not less than $40$, the statement is false.`,
       `**E) There was a point in time, more than 4 years ago, when the elder employee was exactly three times the younger employee's age.**  (true)
 
-The original condition says the elder was three times the younger five years ago. Time ago = 5 years; compare 5 with 4. Five years ago is indeed more than four years ago, so that required point in time exists.
-
-The scenario states this was true exactly five years ago, and five years is indeed more than four years ago.
-
-Check the ages five years ago against the triple condition:
+The scenario itself places that exact triple condition five years ago. Checking with present ages $47$ and $19$:
 
 $$
 47 - 5 = 42, \\qquad 19 - 5 = 14, \\qquad 3(14) = 42
 $$
 
-The elder was exactly three times the younger five years ago, and $5 > 4$.`,
+Five years ago is more than four years ago, so such a point exists.`,
     ],
     difficulty_level: "4/5",
     sort_order: 47,
@@ -6843,39 +7101,61 @@ $$
     tactical_explanations: [
       `**A) If the two markup percentages were swapped (Product A marked up 18%, Product B marked up 32%), Order 3's retail total would decrease compared to its actual \\$1,350.60.**  (false)
 
-Swapping the markup multipliers changes Product A to 1.18x and Product B to 1.32y. Swapped Order 3 total = 3(1.18×55) + 12(1.32×80). The total is \\$194.70 + \\$1,267.20 = \\$1,461.90, which is above the actual \\$1,350.60.
+Let $x$ and $y$ be wholesale costs of A and B. With $32\\%$ and $18\\%$ markups, Orders 1 and 3 give
 
 $$
-1.18(55) = 64.90, \\qquad 1.32(80) = 105.60
+8(1.32)x + 5(1.18)y = 1052.80, \\qquad 3(1.32)x + 12(1.18)y = 1350.60
 $$
 
 $$
-3(64.90) + 12(105.60) = 194.70 + 1267.20 = 1461.90
+10.56x + 5.9y = 1052.80, \\qquad 3.96x + 14.16y = 1350.60
 $$
 
-$1461.90 > 1350.60$, so the swapped-markup total increases, not decreases.`,
+Order 2 is exactly double Order 1, so it is redundant. Multiply Order 1 by $0.375$ and subtract from Order 3:
+
+$$
+3.96x + 2.2125y = 394.80
+$$
+
+$$
+11.9475y = 955.80 \\Rightarrow y = 80, \\qquad 10.56x + 5.9(80) = 1052.80 \\Rightarrow x = 55
+$$
+
+With swapped markups on Order 3:
+
+$$
+3(1.18)(55) + 12(1.32)(80) = 194.70 + 1267.20 = 1461.90
+$$
+
+\\$1,461.90 is above the actual \\$1,350.60, so the total increases rather than decreases.`,
       `**B) The dollar markup on Product B is more than 80% of the dollar markup on Product A.**  (true)
 
-Compare each product's dollar markup per unit. A markup = 0.32(55); B markup = 0.18(80). A's markup is \\$17.60 and B's is \\$14.40. Then 14.40/17.60 ≈ 81.8%, which exceeds 80%.`,
+From Orders 1 and 3, wholesale costs are $x = 55$ and $y = 80$. A's dollar markup is $0.32(55) = 17.60$ and B's is $0.18(80) = 14.40$. Then
+
+$$
+\\frac{14.40}{17.60} = 0.8181\\ldots
+$$
+
+about $81.8\\%$, which exceeds $80\\%$.`,
       `**C) Order 1's total retail markup exceeds \\$150.00.**  (true)
 
-Order 1's markup is retail total minus wholesale total. Wholesale = 8(55) + 5(80); markup = 1,052.80 - wholesale. Wholesale is \\$840.00, so the markup is \\$212.80. This exceeds \\$150.00.`,
+With wholesale costs $x = 55$ and $y = 80$, Order 1 wholesale is $8(55) + 5(80) = 840$. Retail markup is $1052.80 - 840 = 212.80$, which exceeds \\$150.00.`,
       `**D) If Order 3's Product B quantity rose from 12 to 15 units (Product A unchanged at 3 units), the retail total would increase by more than \\$280.00.**  (true)
 
-Only Product B's quantity rises, by 3 units. Extra retail value = 3[1.18(80)]. One B sells for \\$94.40, so 3 more add \\$283.20. Since \\$283.20 > \\$280, the claim holds.`,
+With $y = 80$, Product B's retail price is $1.18(80) = 94.40$. Three extra B units add $3(94.40) = 283.20$, and $283.20 > 280$, so the increase exceeds \\$280.00.`,
       `**E) The wholesale cost ratio of Product B to Product A (y : x) is greater than the retail price ratio of Product B to Product A.**  (true)
 
-Wholesale ratio: $80 \\div 55 \\approx 1.4545$. Retail ratio: $(1.18 \\times 80) \\div (1.32 \\times 55) \\approx 1.3003$. The wholesale ratio is larger because Product A carries the bigger markup, compressing its retail-side gap.
+With $x = 55$ and $y = 80$:
 
 $$
-\\frac{80}{55} \\approx 1.4545
+\\frac{y}{x} = \\frac{80}{55} \\approx 1.4545
 $$
 
 $$
-1.18(80) = 94.40, \\qquad 1.32(55) = 72.60, \\qquad \\frac{94.40}{72.60} \\approx 1.3003
+\\frac{1.18(80)}{1.32(55)} = \\frac{94.40}{72.60} \\approx 1.3003
 $$
 
-$1.4545 > 1.3003$.`,
+The wholesale ratio is larger than the retail ratio.`,
     ],
     difficulty_level: "5/5",
     sort_order: 48,
@@ -6961,19 +7241,35 @@ $$
     tactical_explanations: [
       `**A) If a draw were worth exactly half of what a win is worth, the Falcons' total points would increase compared to their actual 75.**  (true)
 
-A win is worth 7 points, so half a win is 3.5 points. Falcons at that draw value = 9(7) + 4(3.5). The score would be 63 + 14 = 77, greater than the actual 75.`,
+Let $x$ be points per win and $y$ points per draw. The Falcons and Ravens give
+
+$$
+9x + 4y = 75, \\qquad 7x + 6y = 67
+$$
+
+Multiply the first by $3$ and the second by $2$, then subtract:
+
+$$
+27x + 12y = 225, \\qquad 14x + 12y = 134
+$$
+
+$$
+13x = 91 \\Rightarrow x = 7, \\qquad 9(7) + 4y = 75 \\Rightarrow y = 3
+$$
+
+If a draw were worth half a win, then $y = 3.5$, and the Falcons would score $9(7) + 4(3.5) = 63 + 14 = 77$, which is above their actual $75$.`,
       `**B) The Ravens earned more than 45% of their total points from draws alone.**  (false)
 
-The Ravens earned 67 points total, including points from six draws. Draw share = 6(3)/67. Draw points are 18, and 18/67 ≈ 26.9%, far below 45%.`,
+From the league system, $x = 7$ and $y = 3$, so the Ravens' $67$ points include $6(3) = 18$ from draws. The draw share is $18/67 \\approx 0.2687$, about $26.9\\%$, far below $45\\%$.`,
       `**C) Under a halved scoring system (2 points per win, 1 point per draw), the Falcons would still have finished with more points than the Ravens.**  (true)
 
-Apply the stated alternate scoring system to both records. Falcons = 9(2)+4(1); Ravens = 7(2)+6(1). The Falcons score 22 and the Ravens score 20, so the Falcons remain ahead.`,
+Apply the stated alternate scoring directly to both records: Falcons $9(2) + 4(1) = 22$ and Ravens $7(2) + 6(1) = 20$. The Falcons remain ahead.`,
       `**D) The Falcons' win-to-draw point contribution ratio exceeds 15.**  (false)
 
-Compare the Falcons' points from wins with their points from draws. Ratio = 9(7)/[4(3)]. The contributions are 63 and 12, giving 63/12 = 5.25. That does not exceed 15.`,
+With $x = 7$ and $y = 3$, Falcons win points are $9(7) = 63$ and draw points are $4(3) = 12$. The ratio is $63/12 = 5.25$, which does not exceed $15$.`,
       `**E) A hypothetical team with the Falcons' record but 3 additional wins converted from draws (12 wins, 1 draw, 2 losses) would score more than 20 points higher than the Falcons' actual total.**  (false)
 
-Three draws become wins, leaving 12 wins and 1 draw. Revised score = 12(7) + 1(3); increase = revised - 75. The revised score is 87, so the increase is 12 points, not more than 20.`,
+With $x = 7$ and $y = 3$, the revised score is $12(7) + 1(3) = 87$. The increase over $75$ is only $12$, not more than $20$.`,
     ],
     difficulty_level: "5/5",
     sort_order: 49,
@@ -7058,29 +7354,49 @@ $$
     tactical_explanations: [
       `**A) If Batch 1's Metal B volume had been 10 L instead of 8 L (Metal A unchanged at 12 L), the total mass would have exceeded 200 kg.**  (true)
 
-Use Metal A's 7.6 kg/L and Metal B's 11.4 kg/L in the altered Batch 1. Mass = 12(7.6) + 10(11.4). The mass is 91.2 + 114 = 205.2 kg, which exceeds 200 kg.`,
+Let $x$ and $y$ be mass per liter of Metals A and B. Batches 1 and 2 give
+
+$$
+12x + 8y = 182.4, \\qquad 5x + 15y = 209.0
+$$
+
+Divide by $4$ and $5$: $3x + 2y = 45.6$ and $x + 3y = 41.8$, so $x = 41.8 - 3y$. Substitute:
+
+$$
+3(41.8 - 3y) + 2y = 45.6 \\Rightarrow 125.4 - 7y = 45.6 \\Rightarrow y = 11.4, \\qquad x = 7.6
+$$
+
+At $12$ L of A and $10$ L of B:
+
+$$
+12(7.6) + 10(11.4) = 91.2 + 114 = 205.2
+$$
+
+$205.2$ kg exceeds $200$ kg.`,
       `**B) Metal B's density is more than 50% greater than Metal A's density.**  (false)
 
-“More than 50% greater” is stricter than being exactly 50% greater. Relative increase = (11.4 - 7.6)/7.6. The increase is 3.8/7.6 = 0.50 = 50% exactly, not more than 50%.`,
+From Batches 1 and 2, $x = 7.6$ kg/L and $y = 11.4$ kg/L. The relative increase is
+
+$$
+\\frac{11.4 - 7.6}{7.6} = \\frac{3.8}{7.6} = 0.50
+$$
+
+exactly $50\\%$, not more than $50\\%$.`,
       `**C) The mass discrepancy found in Batch 3 represents more than 4% of its recorded total mass.**  (true)
 
-Batch 3's predicted mass is 140.6 kg while its recorded mass is 147.0 kg. Discrepancy percentage = 6.4/147.0 × 100%. This is about 4.35%, which is more than 4%.
+With densities $x = 7.6$ and $y = 11.4$, Batch 3 predicts
 
 $$
 9.5(7.6) + 6(11.4) = 72.2 + 68.4 = 140.6
 $$
 
-$$
-147.0 - 140.6 = 6.4, \\qquad \\frac{6.4}{147.0} \\approx 0.04354
-$$
-
-About $4.35\\% > 4\\%$.`,
+versus $147.0$ kg recorded, a $6.4$ kg gap. Then $6.4/147.0 \\approx 0.04354$, about $4.35\\%$, which is more than $4\\%$.`,
       `**D) If Batch 3's actual Metal A volume were 10 L rather than the converted 9.5 L (Metal B unchanged at 6 L), the predicted mass would come within 2 kg of the recorded 147.0 kg.**  (false)
 
-Replace Batch 3's converted 9.5 L of A with 10 L while keeping B at 6 L. Predicted mass = 10(7.6) + 6(11.4). The result is 76 + 68.4 = 144.4 kg. Its distance from 147.0 kg is 2.6 kg, not within 2 kg.`,
+With $x = 7.6$ and $y = 11.4$, the predicted mass at $10$ L of A and $6$ L of B is $10(7.6) + 6(11.4) = 144.4$ kg. The distance from $147.0$ kg is $2.6$ kg, which is not within $2$ kg.`,
       `**E) Combining Batch 1 and Batch 2 into a single hypothetical batch (17 L Metal A + 23 L Metal B) would yield a total mass equal to the sum of their individual masses.**  (true)
 
-Combining batches adds each metal's volumes before applying the same densities. Combined mass = 17(7.6) + 23(11.4). This gives 129.2 + 262.2 = 391.4 kg, exactly equal to 182.4 + 209.0.`,
+With densities $x = 7.6$ and $y = 11.4$, the combined mass is $17(7.6) + 23(11.4) = 129.2 + 262.2 = 391.4$ kg, exactly equal to $182.4 + 209.0 = 391.4$ kg.`,
     ],
     difficulty_level: "5/5",
     sort_order: 50,
@@ -7164,19 +7480,37 @@ versus 147.0 kg recorded, a 6.4 kg discrepancy.
     tactical_explanations: [
       `**A) A client with AUM of \\$850,000 would pay a fee representing less than 1.75% of their AUM.**  (true)
 
-The fee formula is 0.016(AUM) + 1,200. Fee at \\$850,000 = 0.016(850,000) + 1,200; effective rate = fee/850,000. The fee is \\$14,800, and 14,800/850,000 ≈ 1.7412%. That is less than 1.75%.`,
+Let $x$ be the fee rate as a decimal and $y$ the flat retainer. Client 2 and the fee-difference clue give
+
+$$
+600000x + y = 10800, \\qquad 150000x = 2400
+$$
+
+so $x = 2400/150000 = 0.016$. Then $600000(0.016) + y = 10800$ yields $y = 1200$. At AUM \\$850,000:
+
+$$
+0.016(850000) + 1200 = 14800, \\qquad \\frac{14800}{850000} \\approx 0.017412
+$$
+
+about $1.741\\%$, which is less than $1.75\\%$.`,
       `**B) The flat retainer accounts for more than 10% of Client 2's total fee.**  (true)
 
-Compare the \\$1,200 retainer with Client 2's \\$10,800 total fee. Retainer share = 1,200/10,800. The share is about 11.11%, which exceeds 10%.`,
+From the fee system, the retainer is $y = 1200$ and Client 2's total fee is \\$10,800. The share is $1200/10800 \\approx 0.1111$, about $11.11\\%$, which exceeds $10\\%$.`,
       `**C) If the fee rate were reduced by 0.2 percentage points (to 1.4%) while the retainer doubled, Client 1's total fee (AUM \\$750,000) would decrease compared to its actual amount.**  (true)
 
-Client 1 has \\$750,000 AUM; both the rate and retainer are changed in the hypothetical. Actual = 0.016(750,000)+1,200; revised = 0.014(750,000)+2,400. Actual fee = \\$13,200; revised fee = \\$12,900. The revised fee is lower.`,
+With $x = 0.016$ and $y = 1200$, Client 1's AUM is $600000 + 150000 = 750000$, so the actual fee is $0.016(750000) + 1200 = 13200$. Under the revised terms:
+
+$$
+0.014(750000) + 2(1200) = 10500 + 2400 = 12900
+$$
+
+\\$12,900 is lower than \\$13,200.`,
       `**D) The percentage-point difference in effective fee rate between Client 1 and Client 2 is more than 0.05 percentage points.**  (false)
 
-Effective fee rates include the retainer and therefore differ by client. Client 1 = 13,200/750,000; Client 2 = 10,800/600,000. The rates are 1.76% and 1.80%, a difference of 0.04 percentage points. That is not more than 0.05.`,
+With fees \\$13,200 on \\$750,000 and \\$10,800 on \\$600,000, the effective rates are $13200/750000 = 0.0176$ and $10800/600000 = 0.0180$, or $1.76\\%$ and $1.80\\%$. The gap is $0.04$ percentage points, not more than $0.05$.`,
       `**E) A client whose AUM is exactly triple Client 2's AUM would pay a total fee more than triple Client 2's fee.**  (false)
 
-Triple Client 2's AUM is \\$1,800,000, but the \\$1,200 retainer is not tripled. Fee = 0.016(1,800,000)+1,200; compare with 3(10,800). The new fee is \\$30,000, while triple Client 2's fee is \\$32,400. It is not more.`,
+Triple Client 2's AUM is \\$1,800,000. With $x = 0.016$ and $y = 1200$, the fee is $0.016(1800000) + 1200 = 30000$. Triple Client 2's fee is $3(10800) = 32400$. Since \\$30,000 is not more than \\$32,400, the statement is false.`,
     ],
     difficulty_level: "5/5",
     sort_order: 51,
@@ -7249,25 +7583,35 @@ $$
     tactical_explanations: [
       `**A) Suspension B's concentration is more than 85% higher than Suspension A's concentration.**  (true)
 
-The unknowns are concentrations: A = 8.4 mg/mL and B = 15.6 mg/mL. Relative concentration increase = (15.6 - 8.4)/8.4. The increase is 7.2/8.4 ≈ 0.8571 = 85.71%, which is more than 85%.
+Let $x$ and $y$ be mg/mL concentrations of Suspensions A and B. Batches 1 and 2 give
 
 $$
-15.6 - 8.4 = 7.2, \\qquad \\frac{7.2}{8.4} = \\frac{72}{84} = \\frac{6}{7} \\approx 0.8571
+500x + 300y = 8880, \\qquad 200x + 700y = 12600
 $$
 
-About $85.71\\% > 85\\%$.`,
+Divide by $100$: $5x + 3y = 88.8$ and $2x + 7y = 126$. Multiply by $7$ and $3$, then subtract:
+
+$$
+35x + 21y = 621.6, \\qquad 6x + 21y = 378
+$$
+
+$$
+29x = 243.6 \\Rightarrow x = 8.4, \\qquad 2(8.4) + 7y = 126 \\Rightarrow y = 15.6
+$$
+
+The relative increase is $(15.6 - 8.4)/8.4 = 7.2/8.4 = 6/7 \\approx 0.8571$, about $85.71\\%$, which is more than $85\\%$.`,
       `**B) Batch 3's predicted total content, once its volume is correctly converted to milliliters, differs from the recorded value by more than 1% of the recorded value.**  (false)
 
-Batch 3's A volume is 0.32 L = 320 mL, so its predicted content is 320(8.4) + 450(15.6) = 9,708 mg. Percentage difference = |9,708 - 9,700|/9,700 × 100%. The gap is 8 mg, and 8/9,700 ≈ 0.0825%, far below 1%.`,
+With $x = 8.4$ and $y = 15.6$, and $0.32$ L $= 320$ mL of A, Batch 3 predicts $320(8.4) + 450(15.6) = 2688 + 7020 = 9708$ mg. The gap from the recorded $9700$ mg is $8$ mg, and $8/9700 \\approx 0.000825$, about $0.0825\\%$, far below $1\\%$.`,
       `**C) If Batch 1's Suspension B volume were doubled (Suspension A unchanged at 500 mL), the new total content would exceed 13,500 mg.**  (true)
 
-The hypothetical doubles Batch 1's B volume from 300 mL to 600 mL, while A remains 500 mL. Content = 500(8.4) + 600(15.6). The content is 4,200 + 9,360 = 13,560 mg, which exceeds 13,500 mg.`,
+With $x = 8.4$ and $y = 15.6$, doubling Batch 1's B volume to $600$ mL gives $500(8.4) + 600(15.6) = 4200 + 9360 = 13560$ mg, which exceeds $13{,}500$ mg.`,
       `**D) The combined total content of Batch 1 and Batch 2, if pooled, would be less than twice Batch 2's total content alone.**  (true)
 
-Pool the recorded contents of Batches 1 and 2, then compare with twice Batch 2 alone. Pooled = 8,880 + 12,600; benchmark = 2(12,600). Pooled content is 21,480 mg and the benchmark is 25,200 mg. Since 21,480 < 25,200, the claim holds.`,
+Pooled content is $8880 + 12600 = 21480$ mg, while twice Batch 2 alone is $2(12600) = 25200$ mg. Since $21480 < 25200$, the claim holds.`,
       `**E) Batch 2 used a higher proportion of Suspension B, by volume, than Batch 3 did.**  (true)
 
-Compare what fraction of each batch's total volume is Suspension B. Batch 2 B share = 700/900; Batch 3 B share = 450/(320+450). Batch 2 is about 77.78% B; Batch 3 is 450/770 ≈ 58.44% B. Batch 2's share is higher.`,
+Batch 2's B share is $700/(200+700) = 700/900 \\approx 0.7778$. Batch 3's B share is $450/(320+450) = 450/770 \\approx 0.5844$. Batch 2's share is higher.`,
     ],
     difficulty_level: "5/5",
     sort_order: 52,
@@ -7357,51 +7701,41 @@ versus 9,700 mg recorded, an 8 mg discrepancy.
     tactical_explanations: [
       `**A) The total waste-related cost on Invoice 1 exceeds \\$700.00.**  (false)
 
-Job 1 orders 24 waste studs and 12 waste drywall sheets beyond the usable amounts. Waste cost = 24(4.50) + 12(38). Waste studs cost \\$108 and waste sheets cost \\$456, for \\$564 total. That does not exceed \\$700.
-
-Waste quantities are $12\\%$ of 200 studs and $8\\%$ of 150 sheets:
+Let $x$ be the stud price and $y$ the drywall price. With $12\\%$ stud waste and $8\\%$ drywall waste, ordered quantities are $200(1.12) = 224$ studs and $150(1.08) = 162$ sheets on Job 1, and $350(1.12) = 392$ studs and $175(1.08) = 189$ sheets on Job 2:
 
 $$
-200(0.12) = 24, \\qquad 150(0.08) = 12
+224x + 162y = 7164, \\qquad 392x + 189y = 8946
+$$
+
+Multiply Job 1 by $1.75$ and subtract Job 2:
+
+$$
+392x + 283.5y = 12537
 $$
 
 $$
-24(4.50) + 12(38) = 108 + 456 = 564
+94.5y = 3591 \\Rightarrow y = 38, \\qquad 224x + 162(38) = 7164 \\Rightarrow x = 4.50
 $$
 
-$564 < 700$.`,
+Waste quantities on Job 1 are $24$ studs and $12$ sheets, costing $24(4.50) + 12(38) = 108 + 456 = 564$. Since \\$564 does not exceed \\$700, the statement is false.`,
       `**B) If the drywall waste allowance were reduced from 8% to 5% (stud waste unchanged), Invoice 2's total would decrease by more than \\$150.00.**  (true)
 
-Reducing drywall waste to 5% changes Job 2's ordered drywall to 175(1.05) = 183.75 sheets. New invoice = 392(4.50) + 183.75(38). The new total is \\$8,746.50, a decrease of \\$199.50 from \\$8,946.00. This is more than \\$150.`,
+With $x = 4.50$ and $y = 38$, Job 2 still orders $392$ studs, but drywall becomes $175(1.05) = 183.75$ sheets. The new invoice is $392(4.50) + 183.75(38) = 1764 + 6982.50 = 8746.50$. The decrease from \\$8,946.00 is $199.50$, which is more than \\$150.00.`,
       `**C) Job 2's usable-material cost is more than 90% of Invoice 2's actual as-ordered total.**  (true)
 
-The usable-only cost excludes waste but uses Job 2's 350 studs and 175 sheets. Usable cost = 350(4.50)+175(38); benchmark = 0.90(8,946). Usable cost is \\$8,225, while 90% of the invoice is \\$8,051.40. Since \\$8,225 is higher, the claim is true.`,
+With $x = 4.50$ and $y = 38$, usable-only cost on Job 2 is $350(4.50) + 175(38) = 1575 + 6650 = 8225$. Ninety percent of the invoice is $0.90(8946) = 8051.40$. Since $8225 > 8051.40$, usable cost is more than $90\\%$ of the as-ordered total.`,
       `**D) The drywall price (y) is more than 8 times the stud price (x).**  (true)
 
-Compare drywall's unit price with eight times the stud's unit price. Ratio = 38/4.50. 38/4.50 ≈ 8.44, which is more than 8.`,
+From the waste-adjusted invoices, $x = 4.50$ and $y = 38$. The ratio is $38/4.50 \\approx 8.444$, which is more than $8$.`,
       `**E) Job 1's waste allowance added a smaller percentage to its usable-cost total than Job 2's waste allowance added to its usable-cost total.**  (true)
 
-Each job's waste percentage is waste cost divided by usable-material cost. Job 1 increase = (7,164-6,600)/6,600; Job 2 increase = (8,946-8,225)/8,225. Job 1 increases by about 8.545%; Job 2 by about 8.767%. Job 1's increase is smaller.
-
-Usable costs at the recovered prices:
+With $x = 4.50$ and $y = 38$, usable costs are $200(4.50) + 150(38) = 6600$ on Job 1 and $350(4.50) + 175(38) = 8225$ on Job 2. Waste add-ons are
 
 $$
-200(4.50) + 150(38) = 900 + 5700 = 6600
+\\frac{7164 - 6600}{6600} = \\frac{564}{6600} \\approx 0.08545, \\qquad \\frac{8946 - 8225}{8225} = \\frac{721}{8225} \\approx 0.08766
 $$
 
-$$
-350(4.50) + 175(38) = 1575 + 6650 = 8225
-$$
-
-$$
-\\frac{7164 - 6600}{6600} = \\frac{564}{6600} \\approx 0.08545
-$$
-
-$$
-\\frac{8946 - 8225}{8225} = \\frac{721}{8225} \\approx 0.08766
-$$
-
-Job 1's $8.545\\%$ is smaller than Job 2's $8.767\\%$.`,
+Job 1's about $8.545\\%$ is smaller than Job 2's about $8.767\\%$.`,
     ],
     difficulty_level: "5/5",
     sort_order: 53,
@@ -7486,33 +7820,37 @@ $$
     tactical_explanations: [
       `**A) The scale factor exceeds 3.4 by more than 2.5%.**  (true)
 
-The scale factor is 3.5, compared with 3.4. Relative excess = (3.5-3.4)/3.4 × 100%. The excess is about 2.94%, which is more than 2.5%.
-
-From the two calibration points:
+Let $x$ be the scale factor and $y$ the offset. The two calibration points give
 
 $$
-x = \\frac{124.45 - 56.90}{31.7 - 12.4} = \\frac{67.55}{19.3} = 3.50
+12.4x + y = 56.90, \\qquad 31.7x + y = 124.45
 $$
 
+Subtract to cancel $y$:
+
 $$
-\\frac{3.50 - 3.40}{3.40} = \\frac{0.10}{3.40} \\approx 0.02941
+19.3x = 67.55 \\Rightarrow x = 3.50, \\qquad 12.4(3.50) + y = 56.90 \\Rightarrow y = 13.50
 $$
 
-About $2.94\\% > 2.5\\%$.`,
+Relative excess over $3.4$ is $(3.50 - 3.40)/3.40 = 0.10/3.40 \\approx 0.02941$, about $2.94\\%$, which is more than $2.5\\%$.`,
       `**B) If the offset were doubled (scale factor unchanged), the predicted true value at a reading of 20 would exceed 95.**  (true)
 
-Double the offset 13.5 to 27 while keeping scale 3.5. True value at 20 = 3.5(20)+27. The value is 70+27 = 97, which exceeds 95.`,
+From the calibration points, $x = 3.50$ and $y = 13.50$. Doubling the offset to $27$ gives $3.50(20) + 27 = 70 + 27 = 97$, which exceeds $95$.`,
       `**C) The verification check at a reading of 45.0 shows the calibration curve's predicted value exceeding the recorded reference value by more than 1% of the recorded value.**  (false)
 
-At reading 45.0, the curve predicts 171.00 while the reference is 172.20. Difference = 171.00 - 172.20. The difference is -1.20, so the prediction is lower, not higher; it cannot exceed the reference by more than 1%.
-
-The predicted value (171.00) is actually lower than the recorded value (172.20), not higher  -  so it cannot exceed it by any positive percentage.`,
+With $x = 3.50$ and $y = 13.50$, the prediction at reading $45.0$ is $45.0(3.50) + 13.50 = 157.50 + 13.50 = 171.00$. The recorded reference is $172.20$, so the prediction is $1.20$ lower, not higher. It cannot exceed the recorded value by more than $1\\%$.`,
       `**D) The percentage increase in true value between Point 1 and Point 2 is more than 100%.**  (true)
 
-Compare the change from Point 1's 56.90 to Point 2's 124.45 with Point 1. Percentage increase = (124.45-56.90)/56.90 × 100%. The increase is 67.55/56.90 ≈ 118.7%, which exceeds 100%.`,
+Using the printed reference values directly:
+
+$$
+\\frac{124.45 - 56.90}{56.90} = \\frac{67.55}{56.90} \\approx 1.187
+$$
+
+about $118.7\\%$, which exceeds $100\\%$.`,
       `**E) A reading of 8.0 would produce a predicted true value that is less than half of Point 1's true value (56.90).**  (false)
 
-Predict the true value at reading 8.0 and compare it with half of 56.90. Prediction = 3.5(8)+13.5; half benchmark = 56.90/2. The prediction is 41.5; half of Point 1 is 28.45. Since 41.5 is not less than 28.45, the claim fails.`,
+With $x = 3.50$ and $y = 13.50$, the prediction at reading $8.0$ is $3.50(8) + 13.50 = 28 + 13.50 = 41.5$. Half of Point 1's true value is $56.90/2 = 28.45$. Since $41.5$ is not less than $28.45$, the statement is false.`,
     ],
     difficulty_level: "5/5",
     sort_order: 54,
@@ -7588,41 +7926,31 @@ versus recorded 172.20, a $1.20$ discrepancy.
     tactical_explanations: [
       `**A) Coffee costs more than 25% more per kilogram than Cocoa.**  (true)
 
-Coffee costs \\$6.20/kg and Cocoa costs \\$4.85/kg. Relative price premium = (6.20-4.85)/4.85 × 100%. The premium is 1.35/4.85 ≈ 27.84%, which is more than 25%.`,
+Let $x$ and $y$ be Coffee and Cocoa prices per kg. Shipment 1 is $520$ kg at $3:2$, so $312$ kg Coffee and $208$ kg Cocoa; Shipment 2 is $800$ kg at $5:3$, so $500$ kg Coffee and $300$ kg Cocoa:
+
+$$
+312x + 208y = 2943.2, \\qquad 500x + 300y = 4555
+$$
+
+Divide by $8$ and $100$: $39x + 26y = 367.9$ and $5x + 3y = 45.55$, so $x = 9.11 - 0.6y$. Substitute:
+
+$$
+39(9.11 - 0.6y) + 26y = 367.9 \\Rightarrow 355.29 + 2.6y = 367.9 \\Rightarrow y = 4.85, \\qquad x = 6.20
+$$
+
+The premium is $(6.20 - 4.85)/4.85 = 1.35/4.85 \\approx 0.2784$, about $27.84\\%$, which is more than $25\\%$.`,
       `**B) Shipment 1's cost attributable to Coffee represents more than 65% of Shipment 1's total cost.**  (true)
 
-Shipment 1 has 312 kg of Coffee out of its 3:2 split. Coffee cost share = 312(6.20)/2,943.20. Coffee contributes \\$1,934.40, and \\$1,934.40/\\$2,943.20 ≈ 65.72%. This exceeds 65%.
-
-$$
-\\frac{3}{5}(520) = 312, \\qquad 312(6.20) = 1934.40
-$$
-
-$$
-\\frac{1934.40}{2943.20} \\approx 0.6572
-$$
-
-About $65.72\\% > 65\\%$.`,
+With $x = 6.20$ and Shipment 1's $312$ kg of Coffee, Coffee cost is $312(6.20) = 1934.40$. The share of the \\$2,943.20 total is $1934.40/2943.20 \\approx 0.6572$, about $65.72\\%$, which exceeds $65\\%$.`,
       `**C) If Shipment 2's ratio had instead been 1:1 (400 kg of each) rather than 5:3, its total cost would have been lower than the actual \\$4,555.00.**  (true)
 
-A 1:1 split of 800 kg gives 400 kg of each commodity. Cost = 400(6.20)+400(4.85). The hypothetical cost is \\$2,480+\\$1,940 = \\$4,420, less than \\$4,555.`,
+With $x = 6.20$ and $y = 4.85$, a $1:1$ split of $800$ kg costs $400(6.20) + 400(4.85) = 2480 + 1940 = 4420$, which is lower than \\$4,555.00.`,
       `**D) The total Cocoa cost across both shipments combined exceeds the total Coffee cost across both shipments combined.**  (false)
 
-Add the Coffee kilograms and Cocoa kilograms across both shipments, then price each total. Coffee = 812(6.20); Cocoa = 508(4.85). Coffee costs \\$5,034.40 in total; Cocoa costs \\$2,463.80. Cocoa does not exceed Coffee.
-
-Shipment 2 at 5:3 over 800 kg is $500$ kg Coffee and $300$ kg Cocoa. Combined:
-
-$$
-312 + 500 = 812, \\qquad 208 + 300 = 508
-$$
-
-$$
-812(6.20) = 5034.40, \\qquad 508(4.85) = 2463.80
-$$
-
-$2463.80 < 5034.40$.`,
+With $x = 6.20$ and $y = 4.85$, combined Coffee is $312 + 500 = 812$ kg and combined Cocoa is $208 + 300 = 508$ kg. Coffee costs $812(6.20) = 5034.40$ and Cocoa costs $508(4.85) = 2463.80$. Cocoa does not exceed Coffee.`,
       `**E) The price gap between Coffee and Cocoa (x - y) is less than 30% of Coffee's price.**  (true)
 
-Compare the \\$1.35 price gap with 30% of Coffee's \\$6.20 price. Gap = 6.20-4.85; benchmark = 0.30(6.20). The gap is \\$1.35 and the benchmark is \\$1.86. Since 1.35 < 1.86, the claim is true.`,
+With $x = 6.20$ and $y = 4.85$, the gap is $1.35$ while $30\\%$ of Coffee's price is $0.30(6.20) = 1.86$. Since $1.35 < 1.86$, the claim holds.`,
     ],
     difficulty_level: "5/5",
     sort_order: 55,
@@ -7707,29 +8035,35 @@ $$
     tactical_explanations: [
       `**A) Truck fuel consumption is more than 75% higher than Van fuel consumption.**  (true)
 
-Trucks use 32 L/100 km and Vans use 18 L/100 km. Relative excess = (32-18)/18 × 100%. The excess is 14/18 ≈ 77.78%, which is more than 75%.`,
+Let $x$ and $y$ be Truck and Van fuel rates in L per $100$ km. Expressing distances in hundreds of km:
+
+$$
+8.5x + 6.2y = 383.6, \\qquad 5x + 9y = 322
+$$
+
+Multiply the first by $9$ and the second by $6.2$, then subtract:
+
+$$
+76.5x + 55.8y = 3452.4, \\qquad 31x + 55.8y = 1996.4
+$$
+
+$$
+45.5x = 1456 \\Rightarrow x = 32, \\qquad 5(32) + 9y = 322 \\Rightarrow y = 18
+$$
+
+The relative excess is $(32 - 18)/18 = 14/18 \\approx 0.7778$, about $77.78\\%$, which is more than $75\\%$.`,
       `**B) Route 3's predicted fuel use, once its distance is correctly converted to kilometers, is more than 2% below its recorded value.**  (false)
 
-Route 3's predicted fuel is 152 L and its recorded fuel is 155 L. Percent below recorded = (155-152)/155 × 100%. The difference is 3 L, or about 1.94% of 155 L. That is not more than 2%.
-
-$$
-2.5(32) + 4(18) = 80 + 72 = 152
-$$
-
-$$
-155 - 152 = 3, \\qquad \\frac{3}{155} \\approx 0.01935
-$$
-
-About $1.94\\%$, which is not more than $2\\%$.`,
+With $x = 32$ and $y = 18$, and $155.3$ mi $\\approx 250$ km $= 2.5$ hundreds of km, Route 3 predicts $2.5(32) + 4(18) = 80 + 72 = 152$ L. Versus $155$ L recorded, the shortfall is $3/155 \\approx 0.01935$, about $1.94\\%$, which is not more than $2\\%$.`,
       `**C) If Route 1's Van distance had instead been 900 km (Truck unchanged at 850 km), total fuel would have exceeded 430 L.**  (true)
 
-Convert the hypothetical distances to hundreds of km for rates given per 100 km. Fuel = 8.5(32)+9(18). The total is 272+162 = 434 L, which exceeds 430 L.`,
+With $x = 32$ and $y = 18$, the hypothetical uses $8.5(32) + 9(18) = 272 + 162 = 434$ L, which exceeds $430$ L.`,
       `**D) Route 2's fleet-wide average fuel efficiency is closer to the Van's individual rate than to the Truck's individual rate.**  (true)
 
-Route 2's combined fuel rate is found from its total fuel and total distance. Average = 322/(500+900)×100. The rate is 23 L/100 km. It is 5 from the Van rate 18 and 9 from the Truck rate 32, so it is closer to Van.`,
+With $x = 32$ and $y = 18$, Route 2's fleet average is $322/(500+900)\\times 100 = 23$ L/$100$ km. The distance to the Van rate $18$ is $5$, while the distance to the Truck rate $32$ is $9$, so the average is closer to the Van.`,
       `**E) Route 1's total fuel use is less than the sum of what each vehicle type would use if it alone covered the full combined distance (850 + 620 = 1,470 km) at its own rate.**  (true)
 
-Route 1's actual two-vehicle fuel is compared with two separate full-distance runs. Full-distance comparison = 14.7(32)+14.7(18). This hypothetical sum is 470.4+264.6 = 735 L, greater than Route 1's actual 383.6 L.`,
+With $x = 32$ and $y = 18$, two separate full-distance runs over $14.7$ hundreds of km would use $14.7(32) + 14.7(18) = 470.4 + 264.6 = 735$ L, far above Route 1's actual $383.6$ L.`,
     ],
     difficulty_level: "5/5",
     sort_order: 56,
@@ -7817,19 +8151,31 @@ versus 155 L recorded, a 3 L discrepancy.
     tactical_explanations: [
       `**A) The equity rate exceeds the bond rate by more than 20% of the bond rate, in relative terms.**  (true)
 
-Bonds earn 5.4% and Equities earn 6.6%. Relative rate advantage = (6.6-5.4)/5.4 × 100%. The advantage is 1.2/5.4 ≈ 22.22%, which is more than 20%.`,
+Let $x$ and $y$ be the Bond and Equity annual rates in percent. The two allocations give
+
+$$
+27000\\cdot\\frac{x}{100} + 18000\\cdot\\frac{y}{100} = 2646, \\qquad 18000\\cdot\\frac{x}{100} + 27000\\cdot\\frac{y}{100} = 2754
+$$
+
+or equivalently $270x + 180y = 2646$ and $180x + 270y = 2754$. Adding and subtracting:
+
+$$
+x + y = 12, \\qquad y - x = 1.2
+$$
+
+so $x = 5.4$ and $y = 6.6$. The relative excess is $(6.6 - 5.4)/5.4 = 1.2/5.4 \\approx 0.2222$, about $22.22\\%$, which is more than $20\\%$.`,
       `**B) Under the current allocation, the blended rate is less than 6%.**  (true)
 
-The current allocation returns \\$2,646 on a \\$45,000 fund. Blended rate = 2,646/45,000 × 100%. The blended rate is 5.88%, which is less than 6%.`,
+The current return on the \\$45,000 fund is \\$2,646, so the blended rate is $2646/45000 = 0.0588 = 5.88\\%$, which is less than $6\\%$.`,
       `**C) If the entire \\$45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns (\\$2,646.00 + \\$2,754.00 = \\$5,400.00).**  (false)
 
-Put all \\$45,000 in Equities at 6.6% and compare with the sum of both described returns. All-equity return = 45,000(0.066); benchmark = 2,646+2,754. The all-equity return is \\$2,970, while the benchmark is \\$5,400. It does not exceed it.`,
+With equity rate $y = 6.6\\%$, an all-equity fund returns $45000(0.066) = 2970$. That is far below the combined \\$5,400 benchmark, so it does not exceed it.`,
       `**D) A 50/50 split (\\$22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.**  (true)
 
-A 50/50 allocation places \\$22,500 in each portfolio. Return = 22,500(0.054)+22,500(0.066); average = (2,646+2,754)/2. Both calculations give \\$2,700 exactly.`,
+With $x = 5.4\\%$ and $y = 6.6\\%$, a $50/50$ split returns $22500(0.054) + 22500(0.066) = 1215 + 1485 = 2700$. The average of the two described returns is $(2646 + 2754)/2 = 2700$ as well, so they match exactly.`,
       `**E) The bond rate is more than 80% of the equity rate.**  (true)
 
-Test the Bond rate as a percentage of the Equity rate. 5.4/6.6 × 100%. This is about 81.8%, which is more than 80%.`,
+With $x = 5.4$ and $y = 6.6$, the ratio is $5.4/6.6 \\approx 0.8182$, about $81.8\\%$, which is more than $80\\%$.`,
     ],
     difficulty_level: "5/5",
     sort_order: 57,
@@ -7916,25 +8262,31 @@ Then $y = 5.4 + 1.2 = 6.6$.
     tactical_explanations: [
       `**A) The reconstructed Renters coverage amount is less than \\$30,000.**  (true)
 
-The Renters policy's premium reconstructs 25 units of \\$1,000 coverage. Coverage = 25×\\$1,000. The coverage is \\$25,000, which is less than \\$30,000.`,
+Let $x$ be the fixed administrative fee and $y$ the rate per \\$1,000 of coverage. Auto and Home give
+
+$$
+x + 85y = 612.50, \\qquad x + 210y = 1197.50
+$$
+
+Subtract to cancel $x$:
+
+$$
+125y = 585 \\Rightarrow y = 4.68, \\qquad x + 85(4.68) = 612.50 \\Rightarrow x = 214.70
+$$
+
+For Renters, $214.70 + 4.68C = 331.70$ yields $C = 25$ units of \\$1,000, so coverage is \\$25,000, which is less than \\$30,000.`,
       `**B) The fixed administrative fee represents more than 60% of the Auto policy's total premium.**  (false)
 
-The administrative fee is \\$214.70 and the Auto premium is \\$612.50. Fee share = 214.70/612.50 × 100%. The share is about 35.05%, which does not exceed 60%.`,
+From Auto and Home, $x = 214.70$. The fee share of Auto's \\$612.50 premium is $214.70/612.50 \\approx 0.3505$, about $35.05\\%$, which does not exceed $60\\%$.`,
       `**C) If the rate per \\$1,000 of coverage increased by 10% (fixed fee unchanged), the Home policy's premium would increase by more than \\$75.00.**  (true)
 
-Only the per-\\$1,000 rate rises 10%; the fixed \\$214.70 fee stays unchanged. New rate = 1.10(4.68) = 5.148; new Home premium = 214.70+210(5.148). The new premium is \\$1,295.78, an increase of \\$98.28 from \\$1,197.50. This is more than \\$75.`,
+With $x = 214.70$ and $y = 4.68$, the new rate is $1.10(4.68) = 5.148$. The new Home premium is $214.70 + 210(5.148) = 214.70 + 1081.08 = 1295.78$. The increase from \\$1,197.50 is $98.28$, which is more than \\$75.00.`,
       `**D) The Home policy's premium per \\$1,000 of coverage is more than twice the Auto policy's premium per \\$1,000 of coverage.**  (false)
 
-Home's premium per \\$1,000 is 1,197.50/210 ≈ \\$5.70; Auto's is 612.50/85 ≈ \\$7.21. Home's per-unit rate is actually lower than Auto's, not more than double it  -  the fixed fee weighs more heavily on the smaller Auto policy.
-
-$$
-\\frac{1197.50}{210} \\approx 5.702, \\qquad \\frac{612.50}{85} \\approx 7.206
-$$
-
-$5.70$ is less than $7.21$, so Home's effective per-$1,000$ figure is not more than twice Auto's.`,
+Effective premiums per \\$1,000 from the printed figures are $1197.50/210 \\approx 5.702$ for Home and $612.50/85 \\approx 7.206$ for Auto. Home's figure is lower than Auto's, not more than twice as large.`,
       `**E) Combining the Auto and Home coverage into a single hypothetical policy (295 units of \\$1,000 coverage total) would cost less than the sum of their separate premiums (\\$612.50 + \\$1,197.50 = \\$1,810.00).**  (true)
 
-Combine 85 and 210 coverage units, paying the fixed fee once. Combined premium = 214.70+295(4.68). The result is \\$1,595.30, which is less than \\$1,810.00 for two separate policies.`,
+With $x = 214.70$ and $y = 4.68$, one combined policy costs $214.70 + 295(4.68) = 214.70 + 1380.60 = 1595.30$, which is less than \\$1,810.00 because the fixed fee is paid only once.`,
     ],
     difficulty_level: "5/5",
     sort_order: 58,
@@ -8012,35 +8364,31 @@ that is $25,000$ of coverage.
     tactical_explanations: [
       `**A) By Year 6, Species A's population exceeds Species B's population by more than 20 individuals.**  (true)
 
-Species A grows by 72/year and B by 36/year over four years after Year 2. Year 6 values: $A = 610+4$(72); $B = 730+4$(36). $A = 898$ and $B = 874$, making a gap of 24. Since 24 > 20, the claim holds.`,
+Let $x$ and $y$ be Species A's and B's annual net changes. Combined growth from Year 2 to Year 6 is $1772 - 1340 = 432$ over $4$ years, and A grows at twice B's rate:
+
+$$
+4x + 4y = 432 \\Rightarrow x + y = 108, \\qquad x = 2y
+$$
+
+so $3y = 108$, $y = 36$, and $x = 72$. Year 6 populations are $610 + 4(72) = 898$ and $730 + 4(36) = 874$. The gap is $24$, which exceeds $20$.`,
       `**B) If Species B's growth rate were instead equal to Species A's actual rate, the combined population at Year 6 would exceed the actual combined 1,772 by more than 140 individuals.**  (true)
 
-In the hypothetical, B uses A's actual 72/year growth rate. Hypothetical $B = 730+4$(72); total = 898+that value. B would be 1,018 and the combined total 1,916. The increase over 1,772 is 144, more than 140.`,
+With $x = 72$ and $y = 36$, if B also grew at $72$ per year then B at Year 6 would be $730 + 4(72) = 1018$. Combined with A's $898$, the total is $1916$. The excess over $1772$ is $144$, which is more than $140$.`,
       `**C) The ratio of the two species' total population growth from Year 2 to Year 6 (Species A's growth: Species B's growth) is greater than 2.5: 1.**  (false)
 
-Compare total growth over the same four-year interval. A growth:B growth = 4(72):4(36). The growths are 288 and 144, so the ratio is 2:1. It is not greater than 2.5:1.`,
+With $x = 72$ and $y = 36$, four-year growths are $4(72) = 288$ and $4(36) = 144$, so the ratio is $288:144 = 2:1$, not greater than $2.5:1$.`,
       `**D) At some point between Year 2 and Year 6, the two species had equal populations.**  (true)
 
-B leads at Year 2, but A leads at Year 6 under constant linear change. Year 2 difference $A-B = 610-730$; Year 6 difference = 898-874. The difference changes from -120 to +24. A linear difference that changes sign must equal zero between those times.`,
+With linear growth at $72$ and $36$ per year, the Year 2 difference $A - B = 610 - 730 = -120$ becomes $898 - 874 = +24$ by Year 6. A continuous linear difference that changes sign must cross zero between those times.`,
       `**E) Species A overtakes Species B in total population size before Year 5.**  (false)
 
-Solve for when the two population formulas are equal. 610+72(t-2) = 730+36(t-2). 36(t-2)=120, so t≈5.33. The crossover is after Year 5, not before.
-
-Set $A(t) = B(t)$ with $t$ measured in years:
+Set $610 + 72(t - 2) = 730 + 36(t - 2)$:
 
 $$
-610 + 72(t - 2) = 730 + 36(t - 2)
+36(t - 2) = 120 \\Rightarrow t - 2 = \\frac{10}{3} \\Rightarrow t = 2 + \\frac{10}{3} \\approx 5.333
 $$
 
-$$
-72(t-2) - 36(t-2) = 730 - 610 \\Rightarrow 36(t-2) = 120 \\Rightarrow t - 2 = \\frac{120}{36} = \\frac{10}{3}
-$$
-
-$$
-t = 2 + \\frac{10}{3} \\approx 5.333
-$$
-
-The populations meet after Year 5, not before.`,
+The crossover is after Year 5, not before.`,
     ],
     difficulty_level: "5/5",
     sort_order: 59,
@@ -8113,29 +8461,35 @@ Year 6 populations, for later claims: $A = 610 + 4(72) = 898$ and $B = 730 + 4(3
     tactical_explanations: [
       `**A) Plant A's output rate exceeds Plant B's by more than 45%.**  (true)
 
-Plant A produces 145 MWh/hr and Plant B produces 98 MWh/hr. Relative excess = (145-98)/98 × 100%. The excess is 47/98 ≈ 47.96%, which is more than 45%.`,
+Let $x$ and $y$ be Plant A and Plant B output rates in MWh per operating hour. Days 1 and 2 give
+
+$$
+14x + 20y = 3990, \\qquad 22x + 9y = 4072
+$$
+
+Divide Day 1 by $2$ to get $7x + 10y = 1995$. Multiply that by $9$ and Day 2 by $10$, then subtract:
+
+$$
+63x + 90y = 17955, \\qquad 220x + 90y = 40720
+$$
+
+$$
+157x = 22765 \\Rightarrow x = 145, \\qquad 7(145) + 10y = 1995 \\Rightarrow y = 98
+$$
+
+The relative excess is $(145 - 98)/98 = 47/98 \\approx 0.4796$, about $47.96\\%$, which is more than $45\\%$.`,
       `**B) Day 3's predicted total energy, once its operating time is correctly converted to hours, differs from the recorded value by less than 0.3% of the recorded value.**  (true)
 
-Day 3's predicted output is 3,543 MWh and the recorded output is 3,553 MWh. Percentage difference = 10/3,553 × 100%. The discrepancy is about 0.2815%, which is less than 0.3%.
-
-$$
-17(145) + 11(98) = 2465 + 1078 = 3543
-$$
-
-$$
-|3553 - 3543| = 10, \\qquad \\frac{10}{3553} \\approx 0.002815
-$$
-
-About $0.2815\\% < 0.3\\%$.`,
+With $x = 145$ and $y = 98$, and $1020$ min $= 17$ hrs, Day 3 predicts $17(145) + 11(98) = 2465 + 1078 = 3543$ MWh. The gap from the recorded $3553$ MWh is $10/3553 \\approx 0.002815$, about $0.2815\\%$, which is less than $0.3\\%$.`,
       `**C) If Plant A had operated for the combined time Plant B actually operated across Days 1–2 (29 hours), while Plant B operated for the combined time Plant A actually did (36 hours), the grand total would exceed the actual combined Day 1 + Day 2 total (8,062 MWh).**  (false)
 
-The hypothetical gives A 29 hours and B 36 hours, reversing the actual combined hours. Output = 29(145)+36(98). The output is 4,205+3,528 = 7,733 MWh, less than the actual 8,062 MWh.`,
+With $x = 145$ and $y = 98$, the swapped-hours total is $29(145) + 36(98) = 4205 + 3528 = 7733$ MWh, which is less than the actual $8062$ MWh, not greater.`,
       `**D) The combined output rate of both plants together (x + y) is more than 2.4 times Plant B's rate alone.**  (true)
 
-Compare the two-plant combined rate with 2.4 times Plant B's rate. Combined rate = 145+98; benchmark = 2.4(98). The combined rate is 243 MWh/hr, and the benchmark is 235.2 MWh/hr. Since 243 > 235.2, the claim is true.`,
+With $x = 145$ and $y = 98$, the combined rate is $243$ MWh/hr while $2.4(98) = 235.2$. Since $243 > 235.2$, the claim holds.`,
       `**E) Across all three days combined (using the recorded Day 3 value), total energy production exceeds 11,600 MWh.**  (true)
 
-Add the recorded daily outputs across all three days. Total = 3,990+4,072+3,553. The three-day total is 11,615 MWh, which exceeds 11,600 MWh.`,
+Adding the recorded daily totals: $3990 + 4072 + 3553 = 11615$ MWh, which exceeds $11{,}600$ MWh.`,
     ],
     difficulty_level: "5/5",
     sort_order: 60,
