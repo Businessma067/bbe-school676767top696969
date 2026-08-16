@@ -71,7 +71,7 @@ function MathChunk({
               key={j}
               className={
                 displayMode
-                  ? "my-0 block w-full overflow-x-auto py-1 text-center [&_.katex-display]:my-0 [&_.katex-display]:overflow-x-auto"
+                  ? "flashcard-math-display my-0 block h-auto w-full overflow-x-auto overflow-y-hidden py-2 text-center [scrollbar-gutter:auto] [&_.katex-display]:my-0 [&_.katex-display]:h-auto [&_.katex-display]:overflow-visible [&_.katex-display]:py-0.5"
                   : "mx-0.5 inline-block align-baseline"
               }
               dangerouslySetInnerHTML={{ __html: html }}
