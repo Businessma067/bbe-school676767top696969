@@ -452,13 +452,14 @@ export function TheoryReader({
                   }}
                   onClick={() => jumpTo(item.id)}
                   className={cn(
-                    "shrink-0 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-colors",
+                    "max-w-[14rem] shrink-0 truncate rounded-full px-2.5 py-1 text-[11px] font-semibold transition-colors sm:max-w-none",
                     activeId === item.id
                       ? "bg-primary text-primary-foreground"
                       : "bg-secondary text-muted-foreground hover:text-foreground",
                   )}
+                  title={item.label}
                 >
-                  {/^(\d+\.\d+)/.exec(item.label)?.[1] ?? item.label}
+                  {item.label.replace(/^(\d+\.\d+)\s+/, "$1 · ")}
                 </button>
               ))}
             </div>
