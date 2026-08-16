@@ -196,3 +196,5 @@ In Cursor, mention this file when asking to write theory for another chapter, fo
 > Follow `scripts/bbe-theory-writing-memory.md` and write theory for Math Chapter 7 like ch13.
 
 That is enough to keep one format across all 13 math chapters (and aligned economics theory when needed).
+
+For **practice-bank tactical explanations** (A–E solutions), use the sibling file instead: `scripts/bbe-tactical-explanations-memory.md`.

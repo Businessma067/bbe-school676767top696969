@@ -33,35 +33,117 @@ export const MATH_CH11_FINANCIAL: MathTask[] = [
     tactical_explanations: [
       `**A) The monthly periodic interest rate is 0.60%.**  (true)
 
-The monthly periodic rate is the nominal annual rate divided by the number of compounding periods: $i = r/n = 0.072/12 = 0.006 = 0.60\\%$. This matches the claim exactly, so the statement is True.`,
+A nominal annual rate quoted with monthly compounding is spread evenly over the twelve interest dates, so the periodic rate is the nominal rate divided by the number of periods in a year:
+
+$$i = \\frac{r}{n}$$
+
+The account quotes $r = 7.20\\% = 0.072$ and pays interest $n = 12$ times a year:
+
+$$i = \\frac{0.072}{12}$$
+
+$$i = 0.006$$
+
+Write that decimal as a percentage:
+
+$$i = 0.60\\%$$
+
+The claim names 0.60% and the computed monthly periodic rate is 0.60%, so the statement is true.`,
       `**B) The effective annual rate is approximately 7.44%.**  (true)
 
-The effective annual rate is $R = (1 + r/n)^{n} - 1$. Substituting $r = 0.072$ and $n = 12$ gives $R = (1.006)^{12} - 1 \\approx 1.074424 - 1 = 0.074424 \\approx 7.44\\%$. This matches the claim, so the statement is True.`,
+The effective annual rate is the single yearly rate that reproduces a full year of compounding at the periodic rate:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+The deposit earns $r = 0.072$ nominal with $n = 12$ monthly periods, so the periodic rate inside the bracket is
+
+$$\\frac{0.072}{12} = 0.006$$
+
+Substitute that growth factor and raise it to the twelfth power:
+
+$$R = (1.006)^{12} - 1$$
+
+$$(1.006)^{12} \\approx 1.074424$$
+
+$$R \\approx 0.074424$$
+
+$$R \\approx 7.44\\%$$
+
+The claim names approximately 7.44%, which is what the calculation gives, so the statement is true.`,
       `**C) A \\$6,000 deposit left for exactly one year would grow to \\$6,446.54.**  (true)
 
-The one-year future value is principal times the compound growth factor: $FV = P(1+R) = 6,000 \\times 1.074424 \\approx \\$6,446.54$, using $R \\approx 7.44\\%$ from (B). This matches the claim exactly, so the statement is True.`,
+A future value under periodic compounding is the principal multiplied by the growth factor for the whole term:
+
+$$FV = P\\left(1 + \\frac{r}{n}\\right)^{nt}$$
+
+Here the principal is $P = 6,000$ dollars, the nominal rate is $r = 0.072$, interest is paid $n = 12$ times a year and the term is $t = 1$ year, so the periodic rate is $0.072/12 = 0.006$ and the exponent is $nt = 12$:
+
+$$FV = 6,000 \\times (1.006)^{12}$$
+
+$$(1.006)^{12} \\approx 1.074424$$
+
+$$FV \\approx 6,000 \\times 1.074424$$
+
+$$FV \\approx 6,446.54$$
+
+The claim names \\$6,446.54 and the computed one-year balance is \\$6,446.54, so the statement is true.`,
       `**D) If the bank instead compounded the same nominal rate annually, the effective annual rate would be higher than under monthly compounding.**  (false)
 
-Trap: annual compounding (n = 1) simply reproduces the nominal rate as R, so it would equal 7.20%, which is lower than the monthly-compounded 7.44%, not higher.
+Comparing two compounding schedules means computing the effective annual rate under each one and setting the two numbers side by side. The rule is the same in both cases:
 
-With annual compounding, $n = 1$, so the effective-rate formula collapses to the nominal rate itself:
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+Under the bank's actual monthly schedule, $r = 0.072$ and $n = 12$, so the periodic rate is $0.072/12 = 0.006$:
+
+$$R_{\\mathrm{mon}} = (1.006)^{12} - 1$$
+
+$$(1.006)^{12} \\approx 1.074424$$
+
+$$R_{\\mathrm{mon}} \\approx 0.074424 \\approx 7.44\\%$$
+
+Under annual compounding there is a single interest date per year, so $n = 1$ and the formula collapses back to the nominal rate itself:
 
 $$R_{\\mathrm{ann}} = \\left(1 + \\frac{r}{1}\\right)^{1} - 1 = r$$
 
-Substitute $r = 0.072$:
+Substitute the same nominal quote $r = 0.072$:
 
 $$R_{\\mathrm{ann}} = 0.072 = 7.20\\%$$
 
-Compare with the monthly effective rate from (B):
+Place the two effective rates against each other:
 
 $$7.20\\% < 7.44\\%$$
 
-The claim says annual compounding would be higher. The annual effective rate is lower, so the statement is False.`,
+$$R_{\\mathrm{ann}} - R_{\\mathrm{mon}} \\approx -0.24 \\text{ percentage points}$$
+
+The claim says annual compounding would give the higher effective rate. Annual compounding gives the lower one, so the statement is false.`,
       `**E) The effective annual rate exceeds the nominal rate by more than 1.00 percentage point.**  (false)
 
-Trap: the actual gap is only $7.44\\% - 7.20\\% = 0.24$ percentage points, far less than $1.00$.
+The claim measures a gap between two rates, so both rates must be computed before the gap can be checked. The effective annual rate is
 
-The gap between the effective and nominal rates is $\\Delta = R - r = 7.44\\% - 7.20\\% = 0.24$ percentage points, well below the claimed $1.00$-point cutoff. So the statement is False.`,
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+With $r = 0.072$ and $n = 12$, the monthly periodic rate is $0.072/12 = 0.006$:
+
+$$R = (1.006)^{12} - 1$$
+
+$$(1.006)^{12} \\approx 1.074424$$
+
+$$R \\approx 0.074424 \\approx 7.4424\\%$$
+
+The nominal rate quoted by the bank is
+
+$$r = 7.20\\%$$
+
+Subtract to get the gap between them:
+
+$$\\Delta = 7.4424\\% - 7.20\\%$$
+
+$$\\Delta \\approx 0.24 \\text{ percentage points}$$
+
+Compare that gap with the claimed cutoff:
+
+$$0.24 < 1.00$$
+
+The effective rate sits only about a quarter of a percentage point above the nominal rate, well short of a full point, so the statement is false.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 1,
@@ -114,41 +196,115 @@ Future value $FV = P(1+R)$
     tactical_explanations: [
       `**A) The quarterly periodic rate is 2.00%.**  (true)
 
-The quarterly periodic rate is the nominal annual rate divided by 4: $i = r/n = 0.08/4 = 0.02 = 2.00\\%$. This matches the claim exactly, so the statement is True.`,
+When a nominal annual rate is paid quarterly, each interest date carries one quarter of the annual quote, so the periodic rate is
+
+$$i = \\frac{r}{n}$$
+
+The account pays $r = 8\\% = 0.08$ with $n = 4$ quarterly periods:
+
+$$i = \\frac{0.08}{4}$$
+
+$$i = 0.02$$
+
+Write that decimal as a percentage:
+
+$$i = 2.00\\%$$
+
+The claim names 2.00% and the computed quarterly rate is 2.00%, so the statement is true.`,
       `**B) The number of quarterly periods over 6 years is 24.**  (true)
 
-The number of compounding periods is compounding frequency times years: $nt = n \\times t = 4 \\times 6 = 24$. The claim matches exactly, so the statement is True.`,
+The exponent in a compound interest formula counts interest dates rather than years, so it is the number of periods per year multiplied by the number of years:
+
+$$nt = n \\times t$$
+
+Interest on this deposit is paid quarterly, so $n = 4$, and the money stays invested for $t = 6$ years:
+
+$$nt = 4 \\times 6$$
+
+$$nt = 24$$
+
+The claim names 24 compounding periods and the count gives 24, so the statement is true.`,
       `**C) The balance after 6 years is approximately \\$9,860.00.**  (false)
 
-Trap: $S(6) = 6,000 \\times (1.02)^{24} \\approx \\$9,650.61$, not \\$9,860.00.
+The balance at the end of the term follows the compound future value rule:
 
-The compound future value is $S(t) = S_0(1 + r/n)^{nt}$. Substituting $S_0 = \\$6,000$, $1 + r/n = 1.02$, and $nt = 24$ gives $S(6) = 6,000 \\times (1.02)^{24} \\approx 6,000 \\times 1.608437 = \\$9,650.61$. The claim says approximately \\$9,860.00, so the statement is False.`,
+$$S(t) = S_0\\left(1 + \\frac{r}{n}\\right)^{nt}$$
+
+Substitute the deposit $S_0 = 6,000$ dollars, the quarterly periodic rate $0.08/4 = 0.02$, and the period count $nt = 4 \\times 6 = 24$:
+
+$$S(6) = 6,000 \\times (1.02)^{24}$$
+
+$$(1.02)^{24} \\approx 1.608437$$
+
+$$S(6) \\approx 6,000 \\times 1.608437$$
+
+$$S(6) \\approx 9,650.62$$
+
+Compare the computed balance with the claimed figure:
+
+$$9,650.62 \\neq 9,860.00$$
+
+The account reaches about \\$9,650.62, which is \\$209.38 below the claimed \\$9,860.00, so the statement is false.`,
       `**D) If the deposit were left for only 3 years instead of 6, the future value would be exactly half of the 6-year future value.**  (false)
 
-Trap: compound growth is an exponential function of time, not a linear one, so halving the time does not halve the future value. The 3-year balance (≈ \\$7,609.45) is far more than half of the 6-year balance.
+Compound interest multiplies the balance by a fixed factor each period, so time enters as an exponent rather than as a multiplier. Both balances come from the same rule:
 
-The 3-year balance uses the same formula with $nt = 4 \\times 3 = 12$:
+$$S(t) = S_0\\left(1 + \\frac{r}{n}\\right)^{nt}$$
+
+For the full term, $S_0 = 6,000$ dollars, the quarterly rate is $0.08/4 = 0.02$, and $nt = 4 \\times 6 = 24$:
+
+$$S(6) = 6,000 \\times (1.02)^{24}$$
+
+$$(1.02)^{24} \\approx 1.608437$$
+
+$$S(6) \\approx 9,650.62$$
+
+For the shortened term the only change is the exponent, $nt = 4 \\times 3 = 12$:
 
 $$S(3) = 6,000 \\times (1.02)^{12}$$
 
 $$(1.02)^{12} \\approx 1.268242$$
 
-$$S(3) \\approx 6,000 \\times 1.268242 = \\$7,609.45$$
+$$S(3) \\approx 7,609.45$$
 
-Half of the 6-year balance would be
+Half of the six-year balance would be
 
-$$\\frac{S(6)}{2} \\approx \\frac{9,650.61}{2} = \\$4,825.31$$
+$$\\frac{9,650.62}{2} = 4,825.31$$
 
-Compare:
+Set the two figures side by side:
 
-$$\\$7,609.45 \\neq \\$4,825.31$$
+$$7,609.45 \\neq 4,825.31$$
 
-Halving the time does not halve the future value, so the statement is False.`,
+The three-year balance is about \\$2,784.14 above half the six-year balance, so halving the time does not halve the future value and the statement is false.`,
       `**E) The total percentage growth of the deposit over the 6 years is more than 65%.**  (false)
 
-Trap: the actual total growth is $(9,650.61 - 6,000)/6,000 \\approx 60.84\\%$, which is less than $65\\%$, not more.
+Total percentage growth compares the interest earned with the original principal:
 
-Total percentage growth is $g = (S(6) - S_0)/S_0$. Substituting $S(6) \\approx \\$9,650.61$ and $S_0 = \\$6,000$ gives $g \\approx 3,650.61/6,000 \\approx 0.6084 = 60.84\\%$, which is below the claimed $65\\%$ cutoff. So the statement is False.`,
+$$g = \\frac{S(6) - S_0}{S_0}$$
+
+The six-year balance comes from the compound future value rule with quarterly rate $0.08/4 = 0.02$ and $nt = 24$:
+
+$$S(6) = 6,000 \\times (1.02)^{24}$$
+
+$$(1.02)^{24} \\approx 1.608437$$
+
+$$S(6) \\approx 9,650.62$$
+
+Subtract the principal to isolate the interest:
+
+$$S(6) - S_0 \\approx 9,650.62 - 6,000 = 3,650.62$$
+
+Divide that interest by the principal:
+
+$$g \\approx \\frac{3,650.62}{6,000} \\approx 0.6084$$
+
+$$g \\approx 60.84\\%$$
+
+Compare with the claimed cutoff:
+
+$$60.84\\% < 65\\%$$
+
+The deposit grows by about 60.84%, roughly 4.16 percentage points short of 65%, so the statement is false.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 2,
@@ -197,33 +353,129 @@ Future value $S(t) = S_0(1+r/n)^{nt}$
     tactical_explanations: [
       `**A) The effective annual rate of Offer (i) is approximately 6.55%.**  (true)
 
-Offer (i) is $6.4\\%$ nominal, compounded quarterly, so $R = (1 + r/n)^{n} - 1$. Substituting $r = 0.064$ and $n = 4$ (quarterly rate $0.016$) gives $R_i = (1.016)^{4} - 1 \\approx 1.065533 - 1 = 0.065533 \\approx 6.55\\%$. This matches the claim, so the statement is True.`,
+An effective annual rate converts a nominal quote plus a compounding frequency into a single yearly yield:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+Offer (i) quotes $r = 6.4\\% = 0.064$ with interest paid $n = 4$ times a year, so the quarterly periodic rate is
+
+$$\\frac{0.064}{4} = 0.016$$
+
+Substitute the quarterly growth factor and raise it to the fourth power:
+
+$$R_i = (1.016)^{4} - 1$$
+
+$$(1.016)^{4} \\approx 1.065552$$
+
+$$R_i \\approx 0.065552$$
+
+$$R_i \\approx 6.5552\\%$$
+
+The claim names approximately 6.55%. The computed yield sits within 0.01 percentage points of that figure, so the statement is true.`,
       `**B) The effective annual rate of Offer (ii) is approximately 6.61%.**  (true)
 
-Offer (ii) is $6.5\\%$ nominal, compounded twice a year, so $R = (1 + r/n)^{n} - 1$. Substituting $r = 0.065$ and $n = 2$ (semi-annual rate $0.0325$) gives $R_{ii} = (1.0325)^{2} - 1 \\approx 1.066056 - 1 = 0.066056 \\approx 6.61\\%$. This matches the claim, so the statement is True.`,
+The same effective rate rule applies to the second term deposit:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+Offer (ii) quotes $r = 6.5\\% = 0.065$ with interest paid $n = 2$ times a year, so each half year carries
+
+$$\\frac{0.065}{2} = 0.0325$$
+
+Substitute the semi-annual growth factor and square it:
+
+$$R_{ii} = (1.0325)^{2} - 1$$
+
+$$(1.0325)^{2} \\approx 1.066056$$
+
+$$R_{ii} \\approx 0.066056$$
+
+$$R_{ii} \\approx 6.61\\%$$
+
+The claim names approximately 6.61% and the computed effective rate rounds to 6.61%, so the statement is true.`,
       `**C) Offer (ii) is the better choice for the saver.**  (true)
 
-A higher effective annual rate directly means more money for the saver, so Offer (ii) is indeed better.
+A saver comparing two term deposits should rank them by effective annual rate, since that is the yield actually credited over a full year:
 
-Compare the two effective annual rates computed above:
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-$$R_{ii} \\approx 6.61\\% \\qquad R_i \\approx 6.55\\%$$
+Offer (i) pays 6.4% nominal with $n = 4$, so its quarterly rate is $0.064/4 = 0.016$:
 
-$$R_{ii} > R_i$$
+$$R_i = (1.016)^{4} - 1$$
 
-The saver wants the higher effective yield, so Offer (ii) is the better choice. The statement is True.`,
+$$(1.016)^{4} \\approx 1.065552$$
+
+$$R_i \\approx 6.5552\\%$$
+
+Offer (ii) pays 6.5% nominal with $n = 2$, so its half-yearly rate is $0.065/2 = 0.0325$:
+
+$$R_{ii} = (1.0325)^{2} - 1$$
+
+$$(1.0325)^{2} \\approx 1.066056$$
+
+$$R_{ii} \\approx 6.6056\\%$$
+
+Compare the two yields:
+
+$$6.6056\\% > 6.5552\\%$$
+
+On the saver's \\$10,000 the advantage is worth
+
+$$10,000 \\times (0.066056 - 0.065552) \\approx 5.04$$
+
+Offer (ii) pays the higher effective rate and about \\$5.04 more interest over the year, so the statement is true.`,
       `**D) Because Offer (i) compounds more frequently, it must have the higher effective rate.**  (false)
 
-Trap: despite compounding less frequently, Offer (ii)'s higher nominal rate (6.5% vs. 6.4%) is enough to give it the higher effective rate (6.61% vs. 6.55%) - frequency alone does not decide which offer is better.
+Compounding frequency raises the effective rate only when the nominal rate is held fixed. These two offers differ in both frequency and nominal rate, so each effective rate has to be computed on its own:
 
-Offer (i) compounds $n = 4$ times a year; Offer (ii) compounds $n = 2$ times. Frequency alone would favor Offer (i) only if the nominal rates were equal. Here they are not:
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-$$R_i \\approx 6.55\\% < R_{ii} \\approx 6.61\\%$$
+Offer (i) has the higher frequency, $n = 4$, with $r = 0.064$ and quarterly rate $0.064/4 = 0.016$:
 
-More frequent compounding did not produce the higher effective rate, so the statement is False.`,
+$$R_i = (1.016)^{4} - 1$$
+
+$$(1.016)^{4} \\approx 1.065552$$
+
+$$R_i \\approx 6.5552\\%$$
+
+Offer (ii) has the lower frequency, $n = 2$, but the higher nominal quote $r = 0.065$, giving a half-yearly rate of $0.065/2 = 0.0325$:
+
+$$R_{ii} = (1.0325)^{2} - 1$$
+
+$$(1.0325)^{2} \\approx 1.066056$$
+
+$$R_{ii} \\approx 6.6056\\%$$
+
+Compare the two results:
+
+$$R_i \\approx 6.5552\\% < R_{ii} \\approx 6.6056\\%$$
+
+The more frequently compounded offer ends up with the lower effective rate, because the extra 0.1 percentage points of nominal rate outweigh the extra compounding, so the statement is false.`,
       `**E) Depositing \\$10,000 for one year, Offer (ii) would produce more than \\$660 in interest.**  (true)
 
-Interest earned is principal times the effective annual rate: $I = P \\times R_{ii} = 10,000 \\times 0.066056 \\approx \\$660.56$, using $R_{ii}$ from (B). This exceeds the claimed \\$660 cutoff, so the statement is True.`,
+Interest earned over one year is the principal multiplied by the effective annual rate:
+
+$$I = P \\times R$$
+
+Offer (ii) pays $r = 6.5\\% = 0.065$ twice a year, so the semi-annual rate is $0.065/2 = 0.0325$ and the effective rate is
+
+$$R_{ii} = (1.0325)^{2} - 1$$
+
+$$(1.0325)^{2} \\approx 1.066056$$
+
+$$R_{ii} \\approx 0.066056$$
+
+Apply that yield to the \\$10,000 deposit:
+
+$$I = 10,000 \\times 0.066056$$
+
+$$I \\approx 660.56$$
+
+Compare with the threshold named in the claim:
+
+$$660.56 > 660$$
+
+The year's interest clears \\$660 by about \\$0.56, so the statement is true.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 3,
@@ -280,39 +532,113 @@ Future value $FV = P(1+R)$
     tactical_explanations: [
       `**A) The nominal annual rate, quoted as 12 times the monthly rate, is 22.00%.**  (false)
 
-Trap: $12 \\times 1.75\\% = 21.00\\%$, not $22.00\\%$.
+A nominal annual rate quoted from a monthly charge is the simple twelvefold multiple of that monthly rate, with no compounding built in:
 
-The nominal annual rate is 12 times the monthly periodic rate: $r = 12 \\times i_m = 12 \\times 1.75\\% = 21.00\\%$. The claim says $22.00\\%$, so the statement is False.`,
+$$r = 12 \\times i_m$$
+
+The card charges $i_m = 1.75\\% = 0.0175$ on the outstanding balance each month:
+
+$$r = 12 \\times 0.0175$$
+
+$$r = 0.21$$
+
+$$r = 21.00\\%$$
+
+Compare with the quote named in the claim:
+
+$$21.00\\% \\neq 22.00\\%$$
+
+The stated nominal rate is one full percentage point too high, so the statement is false.`,
       `**B) The effective annual rate of interest is approximately 21.75%.**  (false)
 
-Trap: the true effective annual rate is $(1.0175)^{12} - 1 \\approx 23.14\\%$, not $21.75\\%$.
+The effective annual rate accounts for interest charged on interest during the year, so it is built from the monthly periodic rate:
 
-The effective annual rate from a monthly periodic rate is $R = (1 + i_m)^{12} - 1$. Substituting $i_m = 0.0175$ gives $R = (1.0175)^{12} - 1 \\approx 1.231430 - 1 = 0.231430 \\approx 23.14\\%$. The claim says approximately $21.75\\%$, so the statement is False.`,
+$$R = (1 + i_m)^{12} - 1$$
+
+The card's monthly rate is $i_m = 1.75\\% = 0.0175$, so the monthly growth factor is $1.0175$:
+
+$$R = (1.0175)^{12} - 1$$
+
+$$(1.0175)^{12} \\approx 1.231439$$
+
+$$R \\approx 0.231439$$
+
+$$R \\approx 23.14\\%$$
+
+Compare with the figure named in the claim:
+
+$$23.14\\% \\neq 21.75\\%$$
+
+The true effective annual rate sits about 1.39 percentage points above the claim, so the statement is false.`,
       `**C) An unpaid balance of \\$2,000 would grow to \\$2,420.00 after one year of accruing interest this way.**  (false)
 
-Trap: $FV = 2,000 \\times 1.231430 = \\$2,462.86$, not $\\$2,420.00$.
+A balance left unpaid for twelve months grows by the monthly factor twelve times over:
 
-The one-year future value is $FV = P(1 + i_m)^{12} = 2,000 \\times 1.231430 \\approx \\$2,462.86$, using the growth factor from (B). The claim says \\$2,420.00, so the statement is False.`,
+$$FV = P(1 + i_m)^{12}$$
+
+Substitute the balance $P = 2,000$ dollars and the monthly rate $i_m = 0.0175$:
+
+$$FV = 2,000 \\times (1.0175)^{12}$$
+
+$$(1.0175)^{12} \\approx 1.231439$$
+
+$$FV \\approx 2,000 \\times 1.231439$$
+
+$$FV \\approx 2,462.88$$
+
+Compare with the balance named in the claim:
+
+$$2,462.88 \\neq 2,420.00$$
+
+The true year-end balance is about \\$42.88 higher than the claimed \\$2,420.00, so the statement is false.`,
       `**D) The effective annual rate exceeds the nominal annual rate by more than 2.00 percentage points.**  (true)
 
-The gap between the effective and nominal rates is $\\Delta = R - r = 23.14\\% - 21.00\\% = 2.14$ percentage points, which exceeds the claimed $2.00$-point cutoff. So the statement is True.`,
+The gap in question needs both rates, so each is computed from the card's monthly charge of 1.75%. The nominal quote is twelve times that charge:
+
+$$r = 12 \\times 0.0175 = 0.21 = 21.00\\%$$
+
+The effective annual rate compounds the same monthly charge:
+
+$$R = (1.0175)^{12} - 1$$
+
+$$(1.0175)^{12} \\approx 1.231439$$
+
+$$R \\approx 0.231439 \\approx 23.1439\\%$$
+
+Subtract to measure the gap:
+
+$$\\Delta = 23.1439\\% - 21.00\\%$$
+
+$$\\Delta \\approx 2.14 \\text{ percentage points}$$
+
+Compare with the cutoff named in the claim:
+
+$$2.14 > 2.00$$
+
+The effective rate clears the nominal rate by more than two percentage points, so the statement is true.`,
       `**E) If the monthly rate were instead 1.50%, the effective annual rate would still exceed 20%.**  (false)
 
-Trap: at a 1.50% monthly rate, the effective annual rate is only about 19.56%, which falls just short of 20%, not above it.
+Changing the monthly charge changes the monthly growth factor, so the effective rate has to be rebuilt from scratch:
 
-Replace $i_m$ with $0.015$:
+$$R = (1 + i_m)^{12} - 1$$
+
+Replace the card's actual monthly rate with the hypothetical $i_m = 1.50\\% = 0.015$, giving a monthly factor of $1.015$:
 
 $$R' = (1.015)^{12} - 1$$
 
 $$(1.015)^{12} \\approx 1.195618$$
 
-$$R' \\approx 0.195618 \\approx 19.56\\%$$
+$$R' \\approx 0.195618$$
 
-Compare with 20%:
+$$R' \\approx 19.56\\%$$
+
+Compare with the 20% threshold named in the claim:
 
 $$19.56\\% < 20\\%$$
 
-The effective rate does not exceed 20%, so the statement is False.`,
+$$20\\% - 19.56\\% \\approx 0.44 \\text{ percentage points}$$
+
+At a 1.50% monthly rate the effective annual rate falls about 0.44 points short of 20%, so the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 4,
@@ -359,35 +685,113 @@ Effective annual rate $R = (1 + i_m)^{12} - 1$
     tactical_explanations: [
       `**A) The quarterly periodic rate is 1.40%.**  (true)
 
-The quarterly periodic rate is $i = r/n = 0.056/4 = 0.014 = 1.40\\%$. This matches the claim exactly, so the statement is True.`,
+A nominal annual rate paid quarterly is divided evenly across the four interest dates of the year:
+
+$$i = \\frac{r}{n}$$
+
+The clinic's account quotes $r = 5.6\\% = 0.056$ with $n = 4$ compounding periods:
+
+$$i = \\frac{0.056}{4}$$
+
+$$i = 0.014$$
+
+Write that decimal as a percentage:
+
+$$i = 1.40\\%$$
+
+The claim names 1.40% and the computed quarterly rate is 1.40%, so the statement is true.`,
       `**B) The effective annual rate is approximately 5.72%.**  (true)
 
-The effective annual rate is $R = (1 + r/n)^{n} - 1$. Substituting $1 + r/n = 1.014$ and $n = 4$ gives $R = (1.014)^{4} - 1 \\approx 1.057187 - 1 = 0.057187 \\approx 5.72\\%$. This matches the claim, so the statement is True.`,
+The effective annual rate turns a quarterly schedule into a single yearly yield:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+With $r = 0.056$ and $n = 4$, the quarterly periodic rate is $0.056/4 = 0.014$, so the quarterly growth factor is $1.014$:
+
+$$R = (1.014)^{4} - 1$$
+
+$$(1.014)^{4} \\approx 1.057187$$
+
+$$R \\approx 0.057187$$
+
+$$R \\approx 5.72\\%$$
+
+The claim names approximately 5.72% and the computed effective rate rounds to 5.72%, so the statement is true.`,
       `**C) The balance after one year is approximately \\$15,857.81.**  (true)
 
-The one-year future value is $FV = P(1+R) = 15,000 \\times 1.057187 \\approx \\$15,857.81$, using $R$ from (B). This matches the claim exactly, so the statement is True.`,
+The year-end balance is the deposit multiplied by the four-quarter growth factor:
+
+$$FV = P\\left(1 + \\frac{r}{n}\\right)^{nt}$$
+
+Substitute the deposit $P = 15,000$ dollars, the quarterly rate $0.056/4 = 0.014$, and $nt = 4 \\times 1 = 4$:
+
+$$FV = 15,000 \\times (1.014)^{4}$$
+
+$$(1.014)^{4} \\approx 1.057187$$
+
+$$FV \\approx 15,000 \\times 1.057187$$
+
+$$FV \\approx 15,857.81$$
+
+The claim names \\$15,857.81 and the computed one-year balance is \\$15,857.81, so the statement is true.`,
       `**D) If the same nominal rate were instead compounded monthly, the resulting effective annual rate would be lower than under quarterly compounding.**  (false)
 
-Trap: switching to monthly compounding raises the EAR (to roughly 5.75%), since more frequent compounding never lowers the EAR for a fixed nominal rate.
+With the nominal rate held fixed, each extra compounding date lets interest begin earning interest sooner, so the effective rate can only rise. Both schedules use
 
-Monthly compounding of the same 5.6% uses $n = 12$:
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+The clinic's actual quarterly schedule has $r = 0.056$ and $n = 4$, so the periodic rate is $0.014$:
+
+$$R_q = (1.014)^{4} - 1$$
+
+$$(1.014)^{4} \\approx 1.057187$$
+
+$$R_q \\approx 5.7187\\%$$
+
+The hypothetical monthly schedule keeps $r = 0.056$ but sets $n = 12$:
 
 $$R_m = \\left(1 + \\frac{0.056}{12}\\right)^{12} - 1$$
 
-$$1 + 0.056/12 = 1.0046667$$
+$$1 + \\frac{0.056}{12} \\approx 1.0046667$$
 
-$$R_m \\approx 0.057460 \\approx 5.75\\%$$
+$$(1.0046667)^{12} \\approx 1.057460$$
 
-Compare with the quarterly EAR of 5.72%:
+$$R_m \\approx 5.7460\\%$$
 
-$$5.75\\% > 5.72\\%$$
+Compare the two effective rates:
 
-Monthly compounding raises the EAR, not lowers it, so the statement is False.`,
+$$5.7460\\% > 5.7187\\%$$
+
+Monthly compounding raises the effective rate by about 0.03 percentage points rather than lowering it, so the statement is false.`,
       `**E) The gap between the EAR and the nominal rate exceeds 0.20 percentage points.**  (false)
 
-Trap: the actual gap is only about $0.12$ percentage points, which does not exceed $0.20$.
+The gap compares the compounded yield with the quoted nominal rate, so both numbers are needed:
 
-The gap is $\\Delta = R - r = 5.7187\\% - 5.60\\% \\approx 0.12$ percentage points, which is below the claimed $0.20$-point cutoff. So the statement is False.`,
+$$\\Delta = R - r$$
+
+The effective annual rate for quarterly compounding of $r = 0.056$ uses the periodic rate $0.056/4 = 0.014$:
+
+$$R = (1.014)^{4} - 1$$
+
+$$(1.014)^{4} \\approx 1.057187$$
+
+$$R \\approx 0.057187 \\approx 5.7187\\%$$
+
+The nominal rate quoted on the account is
+
+$$r = 5.60\\%$$
+
+Subtract the nominal rate from the effective rate:
+
+$$\\Delta \\approx 5.7187\\% - 5.60\\%$$
+
+$$\\Delta \\approx 0.12 \\text{ percentage points}$$
+
+Compare with the cutoff named in the claim:
+
+$$0.12 < 0.20$$
+
+The gap stays under 0.20 percentage points, so the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 5,
@@ -440,63 +844,133 @@ Future value $FV = P(1+R)$
     tactical_explanations: [
       `**A) The monthly periodic rate is 0.60%.**  (true)
 
-The monthly periodic rate is $i = r/n = 0.072/12 = 0.006 = 0.60\\%$. This matches the claim exactly, so the statement is True.`,
+A nominal annual rate compounded monthly is divided evenly across the twelve interest dates of the year:
+
+$$i = \\frac{r}{n}$$
+
+The savings account quotes $r = 7.2\\% = 0.072$ with $n = 12$ monthly periods:
+
+$$i = \\frac{0.072}{12}$$
+
+$$i = 0.006$$
+
+Write that decimal as a percentage:
+
+$$i = 0.60\\%$$
+
+The claim names 0.60% and the computed monthly periodic rate is 0.60%, so the statement is true.`,
       `**B) It takes approximately 108 months for the deposit to double.**  (false)
 
-Trap: the correct doubling time is t = ln2/ln(1.006) ≈ 115.85 months (about 9.65 years), not 108 months.
-
-Doubling means the compound growth factor equals 2:
+Doubling means the compound growth factor reaches 2, so the condition on the number of monthly periods $t$ is
 
 $$(1 + i)^{t} = 2$$
 
-Solve by natural logs:
+Taking natural logarithms of both sides brings the unknown exponent down to the front:
+
+$$t \\ln(1+i) = \\ln 2$$
 
 $$t = \\frac{\\ln 2}{\\ln(1+i)}$$
 
-Substitute $i = 0.006$:
+The monthly periodic rate is $i = 0.072/12 = 0.006$, so the two logarithms are $\\ln 2 \\approx 0.693147$ and $\\ln 1.006 \\approx 0.0059821$:
 
-$$t = \\frac{\\ln 2}{\\ln 1.006} = \\frac{0.693147}{0.0059821} \\approx 115.85$$
+$$t = \\frac{\\ln 2}{\\ln 1.006}$$
 
-months
+$$t \\approx \\frac{0.693147}{0.0059821}$$
 
-The claim says approximately 108 months. We got 115.85 months, so the statement is False.`,
+$$t \\approx 115.87 \\text{ months}$$
+
+Compare with the figure named in the claim:
+
+$$115.87 \\neq 108$$
+
+Doubling takes about 115.87 months, close to 9.66 years, which is nearly eight months longer than the claimed 108, so the statement is false.`,
       `**C) It would take approximately 58 months for the deposit to double.**  (false)
 
-Trap: the true doubling time is about 115.85 months; 58 months is nowhere near it and is not meaningfully 'half' of the correct value in any valid sense.
+The time needed to double at a fixed periodic rate solves the growth condition
 
-From (B), the doubling time is
+$$(1 + i)^{t} = 2$$
 
-$$t = \\frac{\\ln 2}{\\ln 1.006} \\approx 115.85$$
+Taking natural logarithms of both sides brings the unknown exponent down to the front:
 
-months
+$$t \\ln(1+i) = \\ln 2$$
 
-Half of that would be $115.85/2 \\approx 57.93$ months, but 58 months is not the doubling time itself. The claim treats 58 months as the doubling time. The deposit has not doubled after 58 months:
+$$t = \\frac{\\ln 2}{\\ln(1+i)}$$
 
-$$(1.006)^{58} \\approx 1.414 \\neq 2$$
+The account compounds monthly at $i = 0.072/12 = 0.006$, so $\\ln 2 \\approx 0.693147$ and $\\ln 1.006 \\approx 0.0059821$:
 
-The doubling time is 115.85 months, not 58, so the statement is False.`,
+$$t = \\frac{\\ln 2}{\\ln 1.006}$$
+
+$$t \\approx \\frac{0.693147}{0.0059821}$$
+
+$$t \\approx 115.87 \\text{ months}$$
+
+The claim names 58 months instead. Testing that shorter horizon directly shows how far it falls short:
+
+$$(1.006)^{58} \\approx 1.4148$$
+
+After 58 months the deposit has grown by about 41.48%, not by the 100% that doubling requires. Set the two horizons side by side:
+
+$$58 \\neq 115.87$$
+
+The deposit needs roughly twice the claimed time to double, so the statement is false.`,
       `**D) If the nominal rate were doubled to 14.4%, the resulting effective annual rate would also be exactly double the original effective annual rate.**  (false)
 
-Trap: doubling the nominal rate raises the EAR to about 15.38%, but exactly double the original EAR of 7.44% would be 14.88% - the two figures are close but not equal, since EAR is a nonlinear (not proportional) function of the nominal rate.
+An effective annual rate is built by raising a periodic growth factor to the power $n$, so it is not a proportional function of the nominal rate. Each scenario needs its own calculation:
 
-Original EAR at 7.2% monthly:
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-$$R = (1.006)^{12} - 1 \\approx 0.074424 \\approx 7.44\\%$$
+At the account's actual nominal rate $r = 0.072$ with $n = 12$, the monthly rate is $0.072/12 = 0.006$:
 
-At 14.4% nominal monthly, $i = 0.144/12 = 0.012$:
+$$R = (1.006)^{12} - 1$$
 
-$$R' = (1.012)^{12} - 1 \\approx 0.153895 \\approx 15.38\\%$$
+$$(1.006)^{12} \\approx 1.074424$$
 
-Double the original EAR would be
+$$R \\approx 0.074424 \\approx 7.4424\\%$$
 
-$$2 \\times 7.44\\% = 14.88\\%$$
+At the doubled nominal rate $r' = 0.144$, still with $n = 12$, the monthly rate becomes $0.144/12 = 0.012$:
 
-$$15.38\\% \\neq 14.88\\%$$
+$$R' = (1.012)^{12} - 1$$
 
-Doubling the nominal rate does not exactly double the EAR, so the statement is False.`,
+$$(1.012)^{12} \\approx 1.153895$$
+
+$$R' \\approx 0.153895 \\approx 15.3895\\%$$
+
+Exactly double the original effective rate would be
+
+$$2 \\times 7.4424\\% = 14.8848\\%$$
+
+Compare the two figures:
+
+$$15.3895\\% \\neq 14.8848\\%$$
+
+$$15.3895\\% - 14.8848\\% \\approx 0.50 \\text{ percentage points}$$
+
+Doubling the nominal rate overshoots double the effective rate by about half a percentage point, so the statement is false.`,
       `**E) Because $(1 + r/n)^{t}$ is an increasing function of t, the same logarithmic method used for doubling can be used to find the time needed for any other target growth multiple.**  (true)
 
-Because $(1+r/n)^{t}$ is a strictly increasing exponential function of $t$, solving $(1+i)^{t} = M$ for $t = \\ln M / \\ln(1+i)$ works for any target multiple $M > 0$, $M \\neq 1$, not just doubling, since $\\ln(1+i) > 0$ whenever $i > 0$ — this is exactly the method used in Example 11.1.2 of the textbook. So the statement is True.`,
+Reaching any target multiple $M$ of the original deposit means solving the growth condition
+
+$$(1 + i)^{t} = M$$
+
+Taking natural logarithms of both sides gives
+
+$$t \\ln(1+i) = \\ln M$$
+
+$$t = \\frac{\\ln M}{\\ln(1+i)}$$
+
+Nothing in that rearrangement used the number 2. The only requirement is that $\\ln(1+i)$ is not zero, and for this account the monthly rate is $i = 0.072/12 = 0.006$, so
+
+$$\\ln(1.006) \\approx 0.0059821 > 0$$
+
+Because $\\ln(1+i) > 0$ whenever $i > 0$, the factor $(1+i)^{t}$ strictly increases with $t$, so every target multiple $M > 0$ with $M \\neq 1$ is reached at exactly one time. Doubling is the case $M = 2$:
+
+$$t = \\frac{\\ln 2}{\\ln 1.006} \\approx \\frac{0.693147}{0.0059821} \\approx 115.87 \\text{ months}$$
+
+A target of one and a half times the deposit is the case $M = 1.5$:
+
+$$t = \\frac{\\ln 1.5}{\\ln 1.006} \\approx \\frac{0.405465}{0.0059821} \\approx 67.78 \\text{ months}$$
+
+The same formula handled both multiples with only $\\ln M$ changing, so the statement is true.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 6,
@@ -539,41 +1013,121 @@ Monthly periodic rate $i_m = r/12$; growth condition $(1+i_m)^{t} = M$; solve $t
     tactical_explanations: [
       `**A) The effective rate under semi-annual compounding is approximately 15.56%.**  (true)
 
-The effective annual rate is $R = (1 + r/n)^{n} - 1$. Substituting $r = 0.15$ and $n = 2$ gives $R = (1.075)^{2} - 1 = 1.155625 - 1 = 0.155625 \\approx 15.56\\%$. This matches the claim, so the statement is True.`,
+The effective yearly rate for a nominal quote compounded $n$ times a year is
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+Interest added twice a year means $n = 2$, and the nominal rate is $r = 15\\% = 0.15$, so each half year carries
+
+$$\\frac{0.15}{2} = 0.075$$
+
+Substitute the half-yearly growth factor and square it:
+
+$$R = (1.075)^{2} - 1$$
+
+$$(1.075)^{2} = 1.155625$$
+
+$$R = 0.155625$$
+
+$$R = 15.5625\\% \\approx 15.56\\%$$
+
+The claim names approximately 15.56% and the computed effective rate rounds to 15.56%, so the statement is true.`,
       `**B) The effective rate under quarterly compounding is approximately 15.87%.**  (true)
 
-Substituting $r = 0.15$ and $n = 4$ into $R = (1 + r/n)^{n} - 1$ gives $R = (1.0375)^{4} - 1 \\approx 1.158650 - 1 = 0.158650 \\approx 15.87\\%$. This matches the claim, so the statement is True.`,
+The same conversion applies with a different frequency:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+Interest added each quarter means $n = 4$, and with $r = 15\\% = 0.15$ the quarterly periodic rate is
+
+$$\\frac{0.15}{4} = 0.0375$$
+
+Substitute the quarterly growth factor and raise it to the fourth power:
+
+$$R = (1.0375)^{4} - 1$$
+
+$$(1.0375)^{4} \\approx 1.158650$$
+
+$$R \\approx 0.158650$$
+
+$$R \\approx 15.87\\%$$
+
+The claim names approximately 15.87% and the computed effective rate rounds to 15.87%, so the statement is true.`,
       `**C) The effective rate under monthly compounding is approximately 16.08%.**  (true)
 
-Substituting $r = 0.15$ and $n = 12$ into $R = (1 + r/n)^{n} - 1$ gives $R = (1.0125)^{12} - 1 \\approx 1.160755 - 1 = 0.160755 \\approx 16.08\\%$. This matches the claim, so the statement is True.`,
+Monthly compounding uses the same rule with twelve interest dates:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+With $r = 15\\% = 0.15$ and $n = 12$, the monthly periodic rate is
+
+$$\\frac{0.15}{12} = 0.0125$$
+
+Substitute the monthly growth factor and raise it to the twelfth power:
+
+$$R = (1.0125)^{12} - 1$$
+
+$$(1.0125)^{12} \\approx 1.160755$$
+
+$$R \\approx 0.160755$$
+
+$$R \\approx 16.08\\%$$
+
+The claim names approximately 16.08% and the computed effective rate rounds to 16.08%, so the statement is true.`,
       `**D) Increasing the compounding frequency from semi-annual to quarterly to monthly steadily raises the effective rate.**  (true)
 
-This textbook fact (Example 11.2.3 referenced in Section 11.1) is confirmed here: for a fixed r > 0, R strictly increases as n increases.
+Holding the nominal rate fixed at $r = 15\\% = 0.15$, each schedule is evaluated with
 
-From (A)-(C):
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-$$15.56\\% < 15.87\\% < 16.08\\%$$
+Twice a year, $n = 2$ and the periodic rate is $0.15/2 = 0.075$:
 
-as $n$ goes from 2 to 4 to 12. The effective rate steadily rises, so the statement is True.`,
+$$R_2 = (1.075)^{2} - 1 = 0.155625 \\approx 15.5625\\%$$
+
+Each quarter, $n = 4$ and the periodic rate is $0.15/4 = 0.0375$:
+
+$$R_4 = (1.0375)^{4} - 1 \\approx 0.158650 \\approx 15.8650\\%$$
+
+Each month, $n = 12$ and the periodic rate is $0.15/12 = 0.0125$:
+
+$$R_{12} = (1.0125)^{12} - 1 \\approx 0.160755 \\approx 16.0755\\%$$
+
+List the three results in order of frequency:
+
+$$15.5625\\% < 15.8650\\% < 16.0755\\%$$
+
+Every step up in compounding frequency raises the effective rate, so the statement is true.`,
       `**E) The increase in effective rate from semi-annual to quarterly is smaller than the increase from quarterly to monthly.**  (false)
 
-Trap: the gap from semi-annual to quarterly (0.31 points) is actually larger than the gap from quarterly to monthly (0.21 points), not smaller - the marginal benefit of increasing compounding frequency diminishes as n grows, which is why R never grows without bound even as n → ∞.
+The claim compares two differences, so all three effective rates are needed first. Each one comes from
 
-First gap:
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-$$15.87\\% - 15.56\\% = 0.31$$
+with the nominal rate fixed at $r = 0.15$. Twice a year the periodic rate is $0.15/2 = 0.075$:
 
-percentage points
+$$R_2 = (1.075)^{2} - 1 = 0.155625 \\approx 15.5625\\%$$
 
-Second gap:
+Each quarter the periodic rate is $0.15/4 = 0.0375$:
 
-$$16.08\\% - 15.87\\% = 0.21$$
+$$R_4 = (1.0375)^{4} - 1 \\approx 0.158650 \\approx 15.8650\\%$$
 
-percentage points
+Each month the periodic rate is $0.15/12 = 0.0125$:
 
-$$0.31 > 0.21$$
+$$R_{12} = (1.0125)^{12} - 1 \\approx 0.160755 \\approx 16.0755\\%$$
 
-The first increase is larger, not smaller, so the statement is False.`,
+The first increase is
+
+$$15.8650\\% - 15.5625\\% = 0.3025 \\text{ percentage points}$$
+
+The second increase is
+
+$$16.0755\\% - 15.8650\\% = 0.2105 \\text{ percentage points}$$
+
+Compare the two gaps:
+
+$$0.3025 > 0.2105$$
+
+The first increase is the larger of the two rather than the smaller, so the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 7,
@@ -620,67 +1174,111 @@ Effective annual rate $R = (1+r/n)^{n} - 1$
     tactical_explanations: [
       `**A) The monthly periodic rate is 0.50%.**  (true)
 
-Periodic rate: $0.06/12 = 0.50\\%$, matching exactly.
+A nominal annual rate compounded monthly is split evenly across the twelve interest dates of the year:
 
-$$i = \\frac{r}{n} = \\frac{0.06}{12} = 0.005 = 0.50\\%$$
+$$i = \\frac{r}{n}$$
 
-The claim says 0.50%. We got 0.50%, so the statement is True.`,
+The trust account quotes $r = 6\\% = 0.06$ with $n = 12$ monthly periods:
+
+$$i = \\frac{0.06}{12}$$
+
+$$i = 0.005$$
+
+Write that decimal as a percentage:
+
+$$i = 0.50\\%$$
+
+The claim names 0.50% and the computed monthly periodic rate is 0.50%, so the statement is true.`,
       `**B) The number of monthly compounding periods over 10 years, nt, is 120.**  (true)
 
-$nt = 12 \\times 10 = 120$, matching exactly.
+The exponent in the compound future value rule counts interest dates, so it multiplies the number of periods per year by the number of years:
 
-$$nt = n \\times t = 12 \\times 10 = 120$$
+$$nt = n \\times t$$
 
-The claim says 120. We got 120, so the statement is True.`,
+Interest on the trust account is added monthly, so $n = 12$, and the deposit is held for $t = 10$ years:
+
+$$nt = 12 \\times 10$$
+
+$$nt = 120$$
+
+The claim names 120 compounding periods and the count gives 120, so the statement is true.`,
       `**C) The balance after 10 years is approximately \\$7,277.60.**  (true)
 
-$S(10) = 4,000 \\times (1.005)^{120} \\approx \\$7,277.60$, matching exactly.
-
-Compound future value is
+The balance at the end of the term is the deposit multiplied by the growth factor for all of its interest dates:
 
 $$S(t) = S_0\\left(1 + \\frac{r}{n}\\right)^{nt}$$
 
-Substitute $S_0 = \\$4,000,1 + r/n = 1.005$, and $nt = 120$:
+Substitute the deposit $S_0 = 4,000$ dollars, the monthly periodic rate $0.06/12 = 0.005$, and the period count $nt = 12 \\times 10 = 120$:
 
 $$S(10) = 4,000 \\times (1.005)^{120}$$
 
+Evaluate the growth factor first:
+
 $$(1.005)^{120} \\approx 1.819397$$
 
-$$S(10) \\approx 4,000 \\times 1.819397 = \\$7,277.59 \\approx \\$7,277.60$$
+Multiply it by the principal:
 
-The claim says approximately \\$7,277.60. We got \\$7,277.60, so the statement is True.`,
+$$S(10) \\approx 4,000 \\times 1.819397$$
+
+$$S(10) \\approx 7,277.59$$
+
+The claim names approximately \\$7,277.60. The computed balance of \\$7,277.59 sits one cent away, a difference that comes only from rounding the growth factor, so the approximation holds and the statement is true.`,
       `**D) The deposit exactly doubles in value over these 10 years.**  (false)
 
-Trap: the growth factor is 1.8194, so the deposit is close to but has not yet doubled; it would need roughly 11.6 years, not 10, to fully double at this rate.
+Doubling requires the growth factor over the whole term to equal 2, so the first step is to evaluate that factor:
 
-Doubling would require a growth factor of 2. From (C):
+$$\\left(1 + \\frac{r}{n}\\right)^{nt}$$
 
-$$(1.005)^{120} \\approx 1.8194 \\neq 2$$
+With the monthly periodic rate $0.06/12 = 0.005$ and $nt = 12 \\times 10 = 120$:
 
-The months needed to double solve $(1.005)^{t} = 2$:
+$$(1.005)^{120} \\approx 1.819397$$
 
-$$t = \\frac{\\ln 2}{\\ln 1.005} \\approx \\frac{0.693147}{0.0049875} \\approx 138.98\\mathrm{ months} \\approx 11.58$$
+Compare it with the factor that doubling would demand:
 
-years
+$$1.819397 \\neq 2$$
 
-Ten years is short of doubling, so the statement is False.`,
+To see how long doubling really takes, solve $(1.005)^{t} = 2$ for the number of months:
+
+$$t = \\frac{\\ln 2}{\\ln 1.005}$$
+
+$$t \\approx \\frac{0.693147}{0.0049875}$$
+
+$$t \\approx 138.98 \\text{ months}$$
+
+Convert that to years:
+
+$$\\frac{138.98}{12} \\approx 11.58 \\text{ years}$$
+
+The account needs about 11.58 years to double, roughly nineteen months more than the ten years given, so the statement is false.`,
       `**E) If compounded annually instead, the 10-year future value would exceed the future value obtained under monthly compounding.**  (false)
 
-Trap: annual compounding produces a SMALLER future value (\\$7,163.39) than monthly compounding (\\$7,277.60) for the same nominal rate, since less frequent compounding always yields less growth, not more.
+Both schedules pay the same nominal 6%, so each future value comes from the same rule with a different frequency:
 
-Annual compounding uses $n = 1$:
+$$S(t) = S_0\\left(1 + \\frac{r}{n}\\right)^{nt}$$
+
+Under the account's actual monthly schedule, $n = 12$, the periodic rate is $0.06/12 = 0.005$ and $nt = 120$:
+
+$$S_{\\mathrm{mon}}(10) = 4,000 \\times (1.005)^{120}$$
+
+$$(1.005)^{120} \\approx 1.819397$$
+
+$$S_{\\mathrm{mon}}(10) \\approx 7,277.59$$
+
+Under annual compounding, $n = 1$, the periodic rate is the full $0.06$ and $nt = 1 \\times 10 = 10$:
 
 $$S_{\\mathrm{ann}}(10) = 4,000 \\times (1.06)^{10}$$
 
 $$(1.06)^{10} \\approx 1.790848$$
 
-$$S_{\\mathrm{ann}}(10) \\approx 4,000 \\times 1.790848 = \\$7,163.39$$
+$$S_{\\mathrm{ann}}(10) \\approx 7,163.39$$
 
-Compare with monthly:
+Set the two balances side by side:
 
-$$\\$7,163.39 < \\$7,277.60$$
+$$7,163.39 < 7,277.59$$
 
-Annual compounding is smaller, not larger, so the statement is False.`,
+$$7,277.59 - 7,163.39 = 114.20$$
+
+Annual compounding finishes about \\$114.20 behind monthly compounding rather than ahead of it, so the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 8,
@@ -727,65 +1325,131 @@ Future value $S(t) = S_0(1+r/n)^{nt}$
     tactical_explanations: [
       `**A) The required nominal annual rate, compounded quarterly, is approximately 5.92%.**  (true)
 
-Solving $(1 + r/4)^{32} = 1.6$ gives $r \\approx 5.92\\%$, matching exactly.
-
-The compound growth equation is
+The fund needs a rate that turns its starting sum into the target over the full term, so start from the compound future value rule:
 
 $$S(t) = S_0\\left(1 + \\frac{r}{n}\\right)^{nt}$$
 
-Substitute $S(t)/S_0 = 80,000/50,000 = 1.6$, $n = 4$, $t = 8$, so $nt = 32$:
+Divide both sides by $S_0$ to isolate the growth factor:
 
-$$\\left(1 + \\frac{r}{4}\\right)^{32} = 1.6$$
+$$\\left(1 + \\frac{r}{n}\\right)^{nt} = \\frac{S(t)}{S_0}$$
+
+The fund starts with \\$50,000 and targets \\$80,000, with $n = 4$ and $t = 8$, so $nt = 32$:
+
+$$\\left(1 + \\frac{r}{4}\\right)^{32} = \\frac{80,000}{50,000} = 1.6$$
+
+Take the thirty-second root of both sides:
+
+$$1 + \\frac{r}{4} = 1.6^{1/32}$$
+
+$$1.6^{1/32} \\approx 1.014796$$
+
+Subtract 1 to isolate the quarterly rate, then multiply by 4 to recover the nominal annual rate:
+
+$$\\frac{r}{4} \\approx 0.014796$$
+
+$$r \\approx 4 \\times 0.014796 = 0.059184$$
+
+$$r \\approx 5.92\\%$$
+
+The claim names approximately 5.92% and the computed requirement rounds to 5.92%, so the statement is true.`,
+      `**B) The corresponding quarterly periodic rate is approximately 1.48%.**  (true)
+
+The quarterly periodic rate is the one-quarter growth factor minus 1, and it comes straight out of the target growth condition for this fund:
+
+$$\\left(1 + \\frac{r}{4}\\right)^{32} = \\frac{80,000}{50,000} = 1.6$$
+
+Taking the thirty-second root of both sides isolates the quarterly factor:
+
+$$1 + i = 1.6^{1/32}$$
+
+$$1.6^{1/32} \\approx 1.014796$$
+
+Subtract 1:
+
+$$i \\approx 0.014796$$
+
+$$i \\approx 1.48\\%$$
+
+The claim names approximately 1.48% and the computed quarterly rate rounds to 1.48%, so the statement is true.`,
+      `**C) If the same growth were required in only 4 years instead of 8, the required nominal rate would be lower than in the original 8-year scenario.**  (false)
+
+The target growth factor is fixed by the two dollar amounts, so shortening the term changes only the exponent:
+
+$$\\left(1 + \\frac{r}{n}\\right)^{nt} = \\frac{80,000}{50,000} = 1.6$$
+
+Over the original 8 years with quarterly compounding, $nt = 4 \\times 8 = 32$:
 
 $$1 + \\frac{r}{4} = 1.6^{1/32} \\approx 1.014796$$
 
-$$r = 4 \\times 0.014796 \\approx 0.05918 \\approx 5.92\\%$$
+$$r \\approx 4 \\times 0.014796 = 0.059184 \\approx 5.92\\%$$
 
-The claim says approximately 5.92%. We got 5.92%, so the statement is True.`,
-      `**B) The corresponding quarterly periodic rate is approximately 1.48%.**  (true)
+Over 4 years the same quarterly schedule allows only $nt = 4 \\times 4 = 16$ periods:
 
-The quarterly periodic rate is $i = r/4 \\approx 0.05918/4 \\approx 0.014795 \\approx 1.48\\%$, using $r$ from (A). This matches the claim, so the statement is True.`,
-      `**C) If the same growth were required in only 4 years instead of 8, the required nominal rate would be lower than in the original 8-year scenario.**  (false)
+$$1 + \\frac{r'}{4} = 1.6^{1/16}$$
 
-Trap: reaching the same 1.6× growth factor in HALF the time (4 years instead of 8) requires a substantially HIGHER rate, not a lower one.
+$$1.6^{1/16} \\approx 1.029811$$
 
-Over 4 years, $nt = 16$:
+$$r' \\approx 4 \\times 0.029811 = 0.119244$$
 
-$$\\left(1 + \\frac{r'}{4}\\right)^{16} = 1.6$$
+$$r' \\approx 11.92\\%$$
 
-$$1 + \\frac{r'}{4} = 1.6^{1/16} \\approx 1.029811$$
-
-$$r' \\approx 4 \\times 0.029811 = 0.11924 \\approx 11.92\\%$$
-
-Compare with the original 5.92%:
+Compare the two requirements:
 
 $$11.92\\% > 5.92\\%$$
 
-The required rate is higher, not lower, so the statement is False.`,
+Halving the time available roughly doubles the rate the fund must earn, so the required rate is higher rather than lower and the statement is false.`,
       `**D) If the compounding were changed from quarterly to monthly, the required nominal rate would need to be higher than in the original quarterly scenario.**  (false)
 
-Trap: because monthly compounding is more frequent than quarterly, it actually needs a LOWER nominal rate than 5.92% to reach the same target - not a higher one.
+The growth factor the fund must reach stays at $80,000/50,000 = 1.6$ over 8 years, so only the compounding frequency changes:
 
-Monthly compounding uses $n = 12$ and $nt = 96$:
+$$\\left(1 + \\frac{r}{n}\\right)^{nt} = 1.6$$
 
-$$\\left(1 + \\frac{r_m}{12}\\right)^{96} = 1.6$$
+With quarterly compounding, $n = 4$ and $nt = 32$:
 
-$$1 + \\frac{r_m}{12} = 1.6^{1/96} \\approx 1.004908$$
+$$1 + \\frac{r}{4} = 1.6^{1/32} \\approx 1.014796$$
 
-$$r_m \\approx 12 \\times 0.004908 = 0.05890 \\approx 5.89\\%$$
+$$r \\approx 4 \\times 0.014796 = 0.059184 \\approx 5.92\\%$$
+
+With monthly compounding, $n = 12$ and $nt = 12 \\times 8 = 96$:
+
+$$1 + \\frac{r_m}{12} = 1.6^{1/96}$$
+
+$$1.6^{1/96} \\approx 1.004908$$
+
+$$r_m \\approx 12 \\times 0.004908 = 0.058896$$
+
+$$r_m \\approx 5.89\\%$$
+
+Compare the two requirements:
 
 $$5.89\\% < 5.92\\%$$
 
-The required nominal rate is lower, not higher, so the statement is False.`,
+More frequent compounding does part of the work, so the required nominal rate falls by about 0.03 percentage points rather than rising, and the statement is false.`,
       `**E) Growing from \\$50,000 to \\$80,000 represents an increase of more than 65%.**  (false)
 
-Trap: the actual increase is exactly (80,000 - 50,000)/50,000 = 60.00%, which is not more than 65%.
+A percentage increase compares the gain with the amount the fund started from:
 
-$$g = \\frac{80,000 - 50,000}{50,000} = \\frac{30,000}{50,000} = 0.60 = 60.00\\%$$
+$$g = \\frac{S(t) - S_0}{S_0}$$
+
+Substitute the starting value $S_0 = 50,000$ dollars and the target $S(t) = 80,000$ dollars:
+
+$$g = \\frac{80,000 - 50,000}{50,000}$$
+
+Work out the gain in the numerator first:
+
+$$80,000 - 50,000 = 30,000$$
+
+Divide by the starting amount:
+
+$$g = \\frac{30,000}{50,000} = 0.60$$
+
+$$g = 60.00\\%$$
+
+Compare with the cutoff named in the claim:
 
 $$60.00\\% < 65\\%$$
 
-The increase is 60%, not more than 65%, so the statement is False.`,
+The growth is exactly 60%, five percentage points short of the claimed threshold, so the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 9,
@@ -836,59 +1500,125 @@ Solve for rate: $r = n[(S(t)/S_0)^{1/(nt)} - 1]$
     tactical_explanations: [
       `**A) Option (a)'s effective annual rate is higher than option (b)'s effective annual rate.**  (false)
 
-Trap: $R_a = 10.80\\%$ is actually slightly LOWER than $R_b \\approx 10.81\\%$, not higher.
+Each loan has to be reduced to an effective annual rate before the two can be ranked:
 
-Option (a) compounds annually, so $n = 1$ and the effective rate equals the nominal rate:
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+Option (a) pays interest once a year, so $n = 1$ and the formula returns the nominal quote itself:
+
+$$R_a = \\left(1 + \\frac{0.1080}{1}\\right)^{1} - 1$$
 
 $$R_a = 0.1080 = 10.80\\%$$
 
-Option (b) is 10.40% nominal quarterly:
+Option (b) pays interest quarterly at a nominal 10.40%, so $n = 4$ and the quarterly rate is $0.104/4 = 0.026$:
 
-$$R_b = \\left(1 + \\frac{0.104}{4}\\right)^{4} - 1 = (1.026)^{4} - 1$$
+$$R_b = (1.026)^{4} - 1$$
 
 $$(1.026)^{4} \\approx 1.108127$$
 
-$$R_b \\approx 0.108127 \\approx 10.81\\%$$
+$$R_b \\approx 0.108127 \\approx 10.8127\\%$$
 
-$$R_a = 10.80\\% < R_b \\approx 10.81\\%$$
+Compare the two effective rates:
 
-Option (a) is not higher, so the statement is False.`,
+$$10.80\\% < 10.8127\\%$$
+
+Option (a) lands marginally below option (b) rather than above it, so the statement is false.`,
       `**B) Option (b)'s effective annual rate is approximately 10.81%.**  (true)
 
-$R_b = (1.026)^{4} - 1 \\approx 10.81\\%$, matching exactly.
+Quarterly compounding turns a nominal quote into a higher yearly figure through
 
-From (A):
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-$$R_b = (1.026)^{4} - 1 \\approx 1.108127 - 1 = 0.108127 \\approx 10.81\\%$$
+Option (b) quotes $r = 10.40\\% = 0.104$ with $n = 4$, so each quarter carries
 
-The claim says approximately 10.81%. We got 10.81%, so the statement is True.`,
+$$\\frac{0.104}{4} = 0.026$$
+
+Substitute the quarterly growth factor and raise it to the fourth power:
+
+$$R_b = (1.026)^{4} - 1$$
+
+$$(1.026)^{4} \\approx 1.108127$$
+
+$$R_b \\approx 0.108127$$
+
+$$R_b \\approx 10.81\\%$$
+
+The claim names approximately 10.81% and the computed effective rate rounds to 10.81%, so the statement is true.`,
       `**C) Because option (b) quotes a lower nominal rate, it must be the cheaper option for the borrower.**  (false)
 
-Trap: despite quoting a lower nominal rate, option (b)'s quarterly compounding pushes its effective rate very slightly above option (a)'s, so option (b) is actually marginally more expensive, not cheaper.
+A borrower pays the effective annual rate rather than the quoted nominal rate, so each option must be converted first:
 
-The borrower cares about the effective annual rate, not the quoted nominal rate:
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-$$R_b \\approx 10.81\\% > R_a = 10.80\\%$$
+Option (a) charges 10.80% nominal with interest paid annually, so $n = 1$:
 
-Option (b) is marginally more expensive, so the statement is False.`,
+$$R_a = (1 + 0.1080)^{1} - 1 = 0.1080 = 10.80\\%$$
+
+Option (b) charges the lower nominal 10.40% but adds interest quarterly, so $n = 4$ and the quarterly rate is $0.104/4 = 0.026$:
+
+$$R_b = (1.026)^{4} - 1$$
+
+$$(1.026)^{4} \\approx 1.108127$$
+
+$$R_b \\approx 10.8127\\%$$
+
+Compare what the borrower actually pays over a year:
+
+$$R_b \\approx 10.8127\\% > R_a = 10.80\\%$$
+
+The lower nominal quote carries the slightly higher effective cost, about 0.013 percentage points more, so the statement is false.`,
       `**D) For the borrower, option (a) is more expensive than option (b).**  (false)
 
-Trap: since 10.80% < 10.81%, option (a) is actually the slightly CHEAPER (less expensive) option for the borrower, not the more expensive one.
+Cost to the borrower is measured by the effective annual rate:
 
-$$R_a = 10.80\\% < R_b \\approx 10.81\\%$$
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-Option (a) costs the borrower less, so the statement is False.`,
+Option (a) compounds once a year at 10.80% nominal, so the formula returns the nominal rate unchanged:
+
+$$R_a = (1.1080)^{1} - 1 = 0.1080 = 10.80\\%$$
+
+Option (b) compounds quarterly at 10.40% nominal, so the quarterly rate is $0.104/4 = 0.026$:
+
+$$R_b = (1.026)^{4} - 1$$
+
+$$(1.026)^{4} \\approx 1.108127$$
+
+$$R_b \\approx 0.108127 \\approx 10.8127\\%$$
+
+Compare the two costs:
+
+$$R_a = 10.80\\% < R_b \\approx 10.8127\\%$$
+
+Option (a) is the cheaper of the two for the borrower, not the more expensive one, so the statement is false.`,
       `**E) The two options' effective annual rates differ by more than 0.05 percentage points.**  (false)
 
-Trap: the actual difference is only about 0.013 percentage points, which is less than 0.05 percentage points, not more.
+The claim measures the distance between two effective rates, so both are computed from
 
-$$\\Delta = R_b - R_a \\approx 10.8127\\% - 10.80\\% = 0.0127$$
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-percentage points
+Option (a) has $n = 1$ at 10.80% nominal:
 
-$$0.013 < 0.05$$
+$$R_a = (1.1080)^{1} - 1 = 0.1080 = 10.80\\%$$
 
-The difference is below 0.05 percentage points, so the statement is False.`,
+Option (b) has $n = 4$ at 10.40% nominal, so the quarterly rate is $0.104/4 = 0.026$:
+
+$$R_b = (1.026)^{4} - 1$$
+
+$$(1.026)^{4} \\approx 1.108127$$
+
+$$R_b \\approx 10.8127\\%$$
+
+Subtract to find the distance between them:
+
+$$\\Delta = 10.8127\\% - 10.80\\%$$
+
+$$\\Delta \\approx 0.0127 \\text{ percentage points}$$
+
+Compare with the cutoff named in the claim:
+
+$$0.0127 < 0.05$$
+
+The two effective rates sit about one hundredth of a percentage point apart, well inside the 0.05 threshold, so the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 10,
@@ -935,31 +1665,103 @@ Effective annual rate $R = (1+r/n)^{n} - 1$
     tactical_explanations: [
       `**A) The growth factor over the 6 years at 4.5% annual compounding is approximately 1.302253.**  (true)
 
-The annual compounding growth factor is $(1+r)^{t}$. Substituting $r = 0.045$ and $t = 6$ gives $(1.045)^{6} \\approx 1.302253$. This matches the claim, so the statement is True.`,
+With interest paid once a year, the balance is multiplied by the same factor every year, so over $t$ years the accumulated growth factor is
+
+$$(1 + r)^{t}$$
+
+The trustee's account earns $r = 4.5\\% = 0.045$ and the horizon is $t = 6$ years:
+
+$$(1 + 0.045)^{6} = (1.045)^{6}$$
+
+Build the power up in stages:
+
+$$(1.045)^{2} = 1.092025$$
+
+$$(1.045)^{3} \\approx 1.141166$$
+
+$$(1.045)^{6} = \\left((1.045)^{3}\\right)^{2} \\approx 1.302260$$
+
+The claim names approximately 1.302253. The computed factor differs from that figure by less than $1 \\times 10^{-5}$, so the statement is true.`,
       `**B) The amount that would need to have been deposited 6 years ago is approximately \\$30,715.86.**  (true)
 
-The present value under annual compounding is $S_0 = S(t)/(1+r)^{t}$. Substituting $S(t) = \\$40,000$ and $(1.045)^{6} \\approx 1.302253$ from (A) gives $S_0 = 40,000/1.302253 \\approx \\$30,715.86$. This matches the claim, so the statement is True.`,
+A present value undoes compound growth by dividing the target amount by the growth factor for the whole term:
+
+$$S_0 = \\frac{S(t)}{(1 + r)^{t}}$$
+
+The trustee wants $S(t) = 40,000$ dollars today from a deposit made $t = 6$ years ago at $r = 0.045$ paid once a year, so first evaluate the denominator:
+
+$$(1.045)^{6} \\approx 1.302260$$
+
+Substitute the target and that factor:
+
+$$S_0 \\approx \\frac{40,000}{1.302260}$$
+
+$$S_0 \\approx 30,715.83$$
+
+The claim names approximately \\$30,715.86, and the computed present value lands within three cents of it, so the statement is true.`,
       `**C) This present value is less than \\$32,000.**  (true)
 
-From (B), $S_0 \\approx \\$30,715.86$, which is less than $\\$32,000$. So the statement is True.`,
+The deposit needed six years ago is the target divided by the six-year growth factor:
+
+$$S_0 = \\frac{S(t)}{(1 + r)^{t}}$$
+
+With the target $S(t) = 40,000$ dollars, the annual rate $r = 0.045$ and $t = 6$ years:
+
+$$(1.045)^{6} \\approx 1.302260$$
+
+$$S_0 \\approx \\frac{40,000}{1.302260}$$
+
+$$S_0 \\approx 30,715.83$$
+
+Compare that amount with the threshold named in the claim:
+
+$$30,715.83 < 32,000$$
+
+The required deposit sits about \\$1,284.17 below \\$32,000, so the statement is true.`,
       `**D) If the rate had instead been 5.5%, the required present value would be higher than at 4.5%.**  (false)
 
-Trap: a higher interest rate (5.5%) grows money faster, so a SMALLER deposit today would suffice to reach the same \\$40,000 target - the required present value would be lower, not higher.
+A present value is a fixed target divided by a growth factor, so raising the rate enlarges the denominator and shrinks the deposit needed:
 
-At 5.5% annual:
+$$S_0 = \\frac{S(t)}{(1 + r)^{t}}$$
 
-$$S_0' = \\frac{40,000}{(1.055)^{6}}$$
+At the trustee's actual rate $r = 0.045$ over $t = 6$ years:
+
+$$(1.045)^{6} \\approx 1.302260$$
+
+$$S_0 \\approx \\frac{40,000}{1.302260} \\approx 30,715.83$$
+
+At the higher rate $r = 0.055$ over the same six years:
 
 $$(1.055)^{6} \\approx 1.378843$$
 
-$$S_0' \\approx \\frac{40,000}{1.378843} \\approx \\$29,009.83$$
+$$S_0' \\approx \\frac{40,000}{1.378843}$$
 
-$$\\$29,009.83 < \\$30,715.86$$
+$$S_0' \\approx 29,009.83$$
 
-The required present value is lower, not higher, so the statement is False.`,
+Compare the two required deposits:
+
+$$29,009.83 < 30,715.83$$
+
+The higher rate lowers the deposit needed today by about \\$1,706.00 rather than raising it, so the statement is false.`,
       `**E) The total interest earned over the 6 years on this deposit would be approximately \\$9,284.14.**  (true)
 
-Interest earned is future value minus present value: $I = S(t) - S_0 = 40,000 - 30,715.86 = \\$9,284.14$. This matches the claim exactly, so the statement is True.`,
+Interest earned is the difference between the final amount and the sum originally put in:
+
+$$I = S(t) - S_0$$
+
+The final amount is the trustee's target of \\$40,000, and the original deposit is that target discounted over six years at 4.5% paid annually:
+
+$$(1.045)^{6} \\approx 1.302260$$
+
+$$S_0 \\approx \\frac{40,000}{1.302260} \\approx 30,715.83$$
+
+Subtract the deposit from the target:
+
+$$I \\approx 40,000 - 30,715.83$$
+
+$$I \\approx 9,284.17$$
+
+The claim names approximately \\$9,284.14, and the computed interest lands within three cents of that figure, so the statement is true.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 11,
@@ -1010,55 +1812,119 @@ Present value $S_0 = S(t)/(1+r)^{t}$
     tactical_explanations: [
       `**A) It takes approximately 81.30 months to reach £6,000.**  (true)
 
-$t = ln(1.5)/ln(1.005) \\approx 81.30$ months ≈ 6.78 years, matching exactly.
+Reaching a target balance means the growth factor must equal the ratio of target to deposit, so the number of monthly periods $t$ solves
 
-Time to a target multiple under monthly compounding is
+$$\\left(1 + \\frac{r}{n}\\right)^{t} = \\frac{S(t)}{S_0}$$
 
-$$t = \\frac{\\ln(S(t)/S_0)}{\\ln(1+r/n)}$$
+Taking natural logarithms of both sides brings the exponent down:
 
-Substitute $S(t)/S_0 = 6,000/4,000 = 1.5$ and $r/n = 0.06/12 = 0.005$:
+$$t = \\frac{\\ln\\left(S(t)/S_0\\right)}{\\ln\\left(1 + r/n\\right)}$$
 
-$$t = \\frac{\\ln 1.5}{\\ln 1.005} = \\frac{0.405465}{0.0049875} \\approx 81.30$$
+The deposit is £4,000 and the target is £6,000, so the required ratio is
 
-months
+$$\\frac{6,000}{4,000} = 1.5$$
 
-The claim says approximately 81.30 months. We got 81.30 months, so the statement is True.`,
+The monthly periodic rate is $r/n = 0.06/12 = 0.005$, so the two logarithms are $\\ln 1.5 \\approx 0.405465$ and $\\ln 1.005 \\approx 0.0049875$:
+
+$$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
+
+$$t \\approx \\frac{0.405465}{0.0049875}$$
+
+$$t \\approx 81.30 \\text{ months}$$
+
+The claim names approximately 81.30 months and the computation gives 81.30 months, so the statement is true.`,
       `**B) It takes approximately 6.00 years exactly to reach £6,000.**  (false)
 
-Trap: the correct time is approximately $6.78$ years, not exactly $6.00$.
+The time needed to reach a target balance solves
 
-Converting the $81.30$ months from (A) into years gives $81.30/12 \\approx 6.78$ years, not $6.00$. So the statement is False.`,
+$$t = \\frac{\\ln\\left(S(t)/S_0\\right)}{\\ln\\left(1 + r/n\\right)}$$
+
+The target ratio is $6,000/4,000 = 1.5$ and the monthly periodic rate is $0.06/12 = 0.005$:
+
+$$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
+
+$$t \\approx \\frac{0.405465}{0.0049875}$$
+
+$$t \\approx 81.30 \\text{ months}$$
+
+Convert months into years:
+
+$$\\frac{81.30}{12} \\approx 6.78 \\text{ years}$$
+
+Compare with the figure named in the claim:
+
+$$6.78 \\neq 6.00$$
+
+The balance needs about 6.78 years, roughly nine months longer than the claimed six, so the statement is false.`,
       `**C) It takes approximately 48 months to reach £6,000.**  (false)
 
-Trap: 48 months (4 years) is far short of the correct 81.30 months.
+Testing the claimed horizon directly is the quickest check. The balance after $t$ months of monthly compounding is
 
-After $48$ months, the balance is only $4,000 \\times (1.005)^{48} \\approx 4,000 \\times 1.2705 \\approx £5,082$, still below £6,000. The correct time is $81.30$ months, not $48$, so the statement is False.`,
+$$S(t) = S_0\\left(1 + \\frac{r}{n}\\right)^{t}$$
+
+With the deposit $S_0 = £4,000$, the monthly rate $0.06/12 = 0.005$, and $t = 48$:
+
+$$S(48) = 4,000 \\times (1.005)^{48}$$
+
+$$(1.005)^{48} \\approx 1.270489$$
+
+$$S(48) \\approx 5,081.96$$
+
+Compare that balance with the target:
+
+$$5,081.96 < 6,000$$
+
+The true waiting time solves
+
+$$t = \\frac{\\ln 1.5}{\\ln 1.005} \\approx 81.30 \\text{ months}$$
+
+After 48 months the account is still about £918.04 short of £6,000, so the statement is false.`,
       `**D) Because the deposit needs to grow by a factor of 1.5 rather than double, the required time must be less than half of this account's doubling time.**  (false)
 
-Trap: the doubling time is about 138.99 months, so half of that is about 69.5 months; the actual 81.30 months needed for a 1.5× increase is MORE than that half, not less.
+Times to reach different multiples are governed by the logarithms of those multiples, and $\\ln 1.5$ is not half of $\\ln 2$. Both times come from
 
-Doubling time:
+$$t = \\frac{\\ln M}{\\ln(1 + r/n)}$$
 
-$$t_2 = \\frac{\\ln 2}{\\ln 1.005} \\approx \\frac{0.693147}{0.0049875} \\approx 138.98$$
+with the monthly periodic rate $0.06/12 = 0.005$. For doubling, $M = 2$:
 
-months
+$$t_2 = \\frac{\\ln 2}{\\ln 1.005} \\approx \\frac{0.693147}{0.0049875}$$
 
-Half of doubling time:
+$$t_2 \\approx 138.98 \\text{ months}$$
 
-$$138.98/2 \\approx 69.49$$
+Half of that doubling time is
 
-months
+$$\\frac{138.98}{2} \\approx 69.49 \\text{ months}$$
 
-Time to grow by 1.5:
+For the target in this task, $M = 6,000/4,000 = 1.5$:
 
-$$t_{1.5} \\approx 81.30 > 69.49$$
+$$t_{1.5} = \\frac{\\ln 1.5}{\\ln 1.005} \\approx \\frac{0.405465}{0.0049875}$$
 
-The 1.5× time is more than half the doubling time, so the statement is False.`,
+$$t_{1.5} \\approx 81.30 \\text{ months}$$
+
+Compare the two times:
+
+$$81.30 > 69.49$$
+
+Growing by half takes about twelve months more than half the doubling time, so the statement is false.`,
       `**E) The time required to reach £6,000, found using logarithms, is exactly 100 months.**  (false)
 
-Trap: the correct value is approximately $81.30$ months, not $100$.
+The logarithmic solution for the waiting time is
 
-From (A), $t = \\ln(1.5)/\\ln(1.005) \\approx 81.30 \\neq 100$. So the statement is False.`,
+$$t = \\frac{\\ln\\left(S(t)/S_0\\right)}{\\ln\\left(1 + r/n\\right)}$$
+
+The target ratio is $6,000/4,000 = 1.5$ and the monthly periodic rate is $0.06/12 = 0.005$:
+
+$$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
+
+$$t \\approx \\frac{0.405465}{0.0049875}$$
+
+$$t \\approx 81.30 \\text{ months}$$
+
+Compare with the figure named in the claim:
+
+$$81.30 \\neq 100$$
+
+The logarithms give about 81.30 months, nearly nineteen months short of 100, so the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 12,
@@ -1113,39 +1979,111 @@ Solve for time $t = \\ln(S(t)/S_0)/\\ln(1+r/n)$
     tactical_explanations: [
       `**A) The daily periodic rate is approximately 0.011644%.**  (true)
 
-The daily periodic rate is $i = r/n = 0.0425/365 \\approx 0.011644\\%$. This matches the claim exactly, so the statement is True.`,
+A nominal annual rate compounded daily on a 365-day year is divided across those 365 interest dates:
+
+$$i = \\frac{r}{n}$$
+
+The money-market account quotes $r = 4.25\\% = 0.0425$ with $n = 365$:
+
+$$i = \\frac{0.0425}{365}$$
+
+$$i \\approx 0.00011644$$
+
+Write that decimal as a percentage:
+
+$$i \\approx 0.011644\\%$$
+
+The claim names approximately 0.011644% and the computed daily rate matches it, so the statement is true.`,
       `**B) The effective annual rate is approximately 4.34%.**  (true)
 
-The daily compounding effective rate is $R = (1 + r/365)^{365} - 1$. Substituting $r = 0.0425$ gives $R \\approx 1.043413 - 1 = 0.043413 \\approx 4.34\\%$. This matches the claim, so the statement is True.`,
+The effective annual rate compresses a whole year of daily compounding into a single yearly figure:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+With $r = 0.0425$ and $n = 365$, the daily growth factor is
+
+$$1 + \\frac{0.0425}{365} \\approx 1.00011644$$
+
+Raise that factor to the 365th power:
+
+$$R = (1.00011644)^{365} - 1$$
+
+$$(1.00011644)^{365} \\approx 1.043413$$
+
+$$R \\approx 0.043413$$
+
+$$R \\approx 4.34\\%$$
+
+The claim names approximately 4.34% and the computed effective rate rounds to 4.34%, so the statement is true.`,
       `**C) The balance after one year is approximately \\$20,868.26.**  (true)
 
-The future value is $FV = P(1+R) = 20,000 \\times 1.043413 \\approx \\$20,868.26$, using $R$ from (B). This matches the claim exactly, so the statement is True.`,
+The year-end balance is the deposit multiplied by the full-year growth factor:
+
+$$FV = P\\left(1 + \\frac{r}{n}\\right)^{nt}$$
+
+Substitute the deposit $P = 20,000$ dollars, the daily rate $0.0425/365$, and the period count $nt = 365 \\times 1 = 365$:
+
+$$FV = 20,000 \\times (1.00011644)^{365}$$
+
+$$(1.00011644)^{365} \\approx 1.043413$$
+
+$$FV \\approx 20,000 \\times 1.043413$$
+
+$$FV \\approx 20,868.27$$
+
+The claim names approximately \\$20,868.26, one cent away from the computed balance, so the statement is true.`,
       `**D) If compounded monthly instead, the effective annual rate would be higher than under daily compounding.**  (false)
 
-Trap: monthly compounding is less frequent than daily, so it produces a slightly LOWER EAR (≈4.33%), not a higher one.
+With the nominal rate held fixed, fewer compounding dates mean interest starts earning interest later, so the effective rate falls. Both schedules use
 
-Monthly compounding of the same 4.25%:
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-$$R_m = \\left(1 + \\frac{0.0425}{12}\\right)^{12} - 1$$
+The account's actual daily schedule has $r = 0.0425$ and $n = 365$:
 
-$$1 + 0.0425/12 = 1.0035417$$
+$$R_d = (1.00011644)^{365} - 1$$
 
-$$R_m \\approx 0.043338 \\approx 4.33\\%$$
+$$R_d \\approx 0.043413 \\approx 4.3413\\%$$
 
-$$4.33\\% < 4.34\\%$$
+A monthly schedule keeps $r = 0.0425$ but sets $n = 12$:
 
-Monthly EAR is lower, not higher, so the statement is False.`,
+$$1 + \\frac{0.0425}{12} \\approx 1.0035417$$
+
+$$R_m = (1.0035417)^{12} - 1$$
+
+$$R_m \\approx 0.043338 \\approx 4.3338\\%$$
+
+Compare the two effective rates:
+
+$$4.3338\\% < 4.3413\\%$$
+
+Monthly compounding gives the lower effective rate rather than the higher one, so the statement is false.`,
       `**E) The gap between the effective annual rate and the nominal rate exceeds 0.20 percentage points.**  (false)
 
-Trap: the actual gap is only about 0.09 percentage points, which does not exceed 0.20 percentage points.
+The gap is the difference between the compounded yearly yield and the quoted nominal rate:
 
-$$\\Delta = 4.34\\% - 4.25\\% = 0.09$$
+$$\\Delta = R - r$$
 
-percentage points
+The effective annual rate for daily compounding of $r = 0.0425$ uses the daily factor $1 + 0.0425/365 \\approx 1.00011644$:
+
+$$R = (1.00011644)^{365} - 1$$
+
+$$R \\approx 0.043413 \\approx 4.3413\\%$$
+
+The nominal quote on the account is
+
+$$r = 4.25\\%$$
+
+Subtract the nominal rate from the effective rate:
+
+$$\\Delta \\approx 4.3413\\% - 4.25\\%$$
+
+$$\\Delta \\approx 0.09 \\text{ percentage points}$$
+
+Compare with the cutoff named in the claim:
 
 $$0.09 < 0.20$$
 
-The gap does not exceed 0.20 percentage points, so the statement is False.`,
+The gap is less than half the claimed threshold, so the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 13,
@@ -1198,25 +2136,105 @@ Future value $FV = P(1+R)$
     tactical_explanations: [
       `**A) The nominal annual rate, quoted as 12 times the monthly rate, is 22.80%.**  (true)
 
-The nominal annual rate is $r = 12 \\times i_m = 12 \\times 1.9\\% = 22.80\\%$. This matches the claim exactly, so the statement is True.`,
+A nominal annual rate quoted from a monthly charge simply multiplies that charge by the twelve months of the year, with no compounding included:
+
+$$r = 12 \\times i_m$$
+
+The store card charges $i_m = 1.9\\% = 0.019$ per month on unpaid balances:
+
+$$r = 12 \\times 0.019$$
+
+$$r = 0.228$$
+
+$$r = 22.80\\%$$
+
+The claim names 22.80% and the computed nominal quote is 22.80%, so the statement is true.`,
       `**B) The effective annual rate of interest is approximately 25.34%.**  (true)
 
-The effective annual rate is $R = (1 + i_m)^{12} - 1$. Substituting $i_m = 0.019$ gives $R = (1.019)^{12} - 1 \\approx 1.253408 - 1 = 0.253408 \\approx 25.34\\%$. This matches the claim, so the statement is True.`,
+The effective annual rate compounds the monthly charge across the twelve months of the year:
+
+$$R = (1 + i_m)^{12} - 1$$
+
+The card's monthly rate is $i_m = 1.9\\% = 0.019$, so the monthly growth factor is $1.019$:
+
+$$R = (1.019)^{12} - 1$$
+
+$$(1.019)^{12} \\approx 1.253401$$
+
+$$R \\approx 0.253401$$
+
+$$R \\approx 25.34\\%$$
+
+The claim names approximately 25.34% and the computed effective rate rounds to 25.34%, so the statement is true.`,
       `**C) The effective annual rate is approximately 22.80%, the same as the nominal annual rate.**  (false)
 
-Trap: the effective annual rate ($25.34\\%$) is meaningfully higher than the nominal annual rate ($22.80\\%$), not the same — whenever $n > 1$, $R$ always exceeds the nominal rate.
+The two rates are built in different ways, so each must be computed separately. The nominal quote adds up twelve monthly charges:
 
-From (A) and (B), $R \\approx 25.34\\% \\neq r = 22.80\\%$. So the statement is False.`,
+$$r = 12 \\times 0.019 = 0.228 = 22.80\\%$$
+
+The effective rate compounds those same charges:
+
+$$R = (1 + i_m)^{12} - 1$$
+
+$$R = (1.019)^{12} - 1$$
+
+$$(1.019)^{12} \\approx 1.253401$$
+
+$$R \\approx 0.253401 \\approx 25.34\\%$$
+
+Compare the two figures:
+
+$$25.34\\% \\neq 22.80\\%$$
+
+$$25.34\\% - 22.80\\% = 2.54 \\text{ percentage points}$$
+
+Interest charged on earlier interest lifts the effective rate about 2.54 points above the nominal quote, so the two are not the same and the statement is false.`,
       `**D) A \\$3,000 unpaid balance would grow to \\$3,684.00 after one year.**  (false)
 
-Trap: $FV = 3,000 \\times 1.253408 = \\$3,760.22$, not $\\$3,684.00$.
+A balance carried for twelve months grows by the monthly factor twelve times over:
 
-The future value is $FV = 3,000 \\times (1.019)^{12} = 3,000 \\times 1.253408 \\approx \\$3,760.22$, using the growth factor from (B). The claim says \\$3,684.00, so the statement is False.`,
+$$FV = P(1 + i_m)^{12}$$
+
+Substitute the balance $P = 3,000$ dollars and the monthly rate $i_m = 0.019$:
+
+$$FV = 3,000 \\times (1.019)^{12}$$
+
+$$(1.019)^{12} \\approx 1.253401$$
+
+$$FV \\approx 3,000 \\times 1.253401$$
+
+$$FV \\approx 3,760.20$$
+
+Compare with the figure named in the claim:
+
+$$3,760.20 \\neq 3,684.00$$
+
+The true year-end balance is about \\$76.20 higher than the claimed \\$3,684.00, so the statement is false.`,
       `**E) The effective annual rate exceeds the nominal annual rate by more than 3.00 percentage points.**  (false)
 
-Trap: the actual gap is about $2.54$ percentage points, which is less than $3.00$.
+The claim needs both rates before the gap can be measured. The nominal quote is twelve times the monthly charge:
 
-The gap is $\\Delta = 25.34\\% - 22.80\\% = 2.54$ percentage points, below the claimed $3.00$-point cutoff. So the statement is False.`,
+$$r = 12 \\times 0.019 = 0.228 = 22.80\\%$$
+
+The effective annual rate compounds that same monthly charge:
+
+$$R = (1.019)^{12} - 1$$
+
+$$(1.019)^{12} \\approx 1.253401$$
+
+$$R \\approx 0.253401 \\approx 25.3401\\%$$
+
+Subtract to measure the gap:
+
+$$\\Delta = 25.3401\\% - 22.80\\%$$
+
+$$\\Delta \\approx 2.54 \\text{ percentage points}$$
+
+Compare with the cutoff named in the claim:
+
+$$2.54 < 3.00$$
+
+The gap falls about 0.46 points short of three percentage points, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 14,
@@ -1262,37 +2280,121 @@ Effective annual rate $R = (1 + i_m)^{12} - 1$
     tactical_explanations: [
       `**A) The effective rate under semi-annual compounding is approximately 10.25%.**  (true)
 
-Substituting $r = 0.10$ and $n = 2$ into $R = (1 + r/n)^{n} - 1$ gives $R = (1.05)^{2} - 1 = 1.1025 - 1 = 0.1025 = 10.25\\%$. This matches the claim, so the statement is True.`,
+The effective yearly rate for a nominal quote compounded $n$ times a year is
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+Interest added twice a year means $n = 2$, and with $r = 10\\% = 0.10$ each half year carries
+
+$$\\frac{0.10}{2} = 0.05$$
+
+Substitute the half-yearly growth factor and square it:
+
+$$R = (1.05)^{2} - 1$$
+
+$$(1.05)^{2} = 1.1025$$
+
+$$R = 0.1025$$
+
+$$R = 10.25\\%$$
+
+The claim names approximately 10.25% and the computation gives exactly 10.25%, so the statement is true.`,
       `**B) The effective rate under quarterly compounding is approximately 10.38%.**  (true)
 
-Substituting $r = 0.10$ and $n = 4$ into $R = (1 + r/n)^{n} - 1$ gives $R = (1.025)^{4} - 1 \\approx 1.103813 - 1 = 0.103813 \\approx 10.38\\%$. This matches the claim, so the statement is True.`,
+The same conversion runs with four interest dates instead of two:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+With $r = 10\\% = 0.10$ and $n = 4$, the quarterly periodic rate is
+
+$$\\frac{0.10}{4} = 0.025$$
+
+Substitute the quarterly growth factor and raise it to the fourth power:
+
+$$R = (1.025)^{4} - 1$$
+
+$$(1.025)^{4} \\approx 1.103813$$
+
+$$R \\approx 0.103813$$
+
+$$R \\approx 10.38\\%$$
+
+The claim names approximately 10.38% and the computed effective rate rounds to 10.38%, so the statement is true.`,
       `**C) The effective rate under monthly compounding is approximately 10.47%.**  (true)
 
-Substituting $r = 0.10$ and $n = 12$ into $R = (1 + r/n)^{n} - 1$ gives $R = (1.0083333)^{12} - 1 \\approx 1.104713 - 1 = 0.104713 \\approx 10.47\\%$. This matches the claim, so the statement is True.`,
+Monthly compounding puts twelve interest dates into the same rule:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+With $r = 10\\% = 0.10$ and $n = 12$, the monthly periodic rate is
+
+$$\\frac{0.10}{12} \\approx 0.0083333$$
+
+Substitute the monthly growth factor and raise it to the twelfth power:
+
+$$R = (1.0083333)^{12} - 1$$
+
+$$(1.0083333)^{12} \\approx 1.104713$$
+
+$$R \\approx 0.104713$$
+
+$$R \\approx 10.47\\%$$
+
+The claim names approximately 10.47% and the computed effective rate rounds to 10.47%, so the statement is true.`,
       `**D) Increasing the compounding frequency from semi-annual to quarterly to monthly steadily raises the effective rate.**  (true)
 
-This matches the textbook result that R strictly increases in n for a fixed r > 0.
+With the nominal rate held at $r = 10\\% = 0.10$, each schedule is evaluated with
 
-From (A)-(C):
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-$$10.25\\% < 10.38\\% < 10.47\\%$$
+Twice a year, $n = 2$ and the periodic rate is $0.05$:
 
-The effective rate steadily rises, so the statement is True.`,
+$$R_2 = (1.05)^{2} - 1 = 0.1025 = 10.25\\%$$
+
+Each quarter, $n = 4$ and the periodic rate is $0.025$:
+
+$$R_4 = (1.025)^{4} - 1 \\approx 0.103813 \\approx 10.3813\\%$$
+
+Each month, $n = 12$ and the periodic rate is about $0.0083333$:
+
+$$R_{12} = (1.0083333)^{12} - 1 \\approx 0.104713 \\approx 10.4713\\%$$
+
+List the three results in order of frequency:
+
+$$10.25\\% < 10.3813\\% < 10.4713\\%$$
+
+Every step up in compounding frequency raises the effective rate, so the statement is true.`,
       `**E) The jump in effective rate from semi-annual to quarterly is smaller than the jump from quarterly to monthly.**  (false)
 
-Trap: the first jump (0.13 points) is larger than the second jump (0.09 points), not smaller - the marginal gain from increasing compounding frequency diminishes as n grows.
+The claim compares two jumps, so all three effective rates come first, each from
 
-$$10.38\\% - 10.25\\% = 0.13$$
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-points
+with $r = 0.10$ held fixed. Twice a year the periodic rate is $0.05$:
 
-$$10.47\\% - 10.38\\% = 0.09$$
+$$R_2 = (1.05)^{2} - 1 = 0.1025 = 10.25\\%$$
 
-points
+Each quarter the periodic rate is $0.025$:
 
-$$0.13 > 0.09$$
+$$R_4 = (1.025)^{4} - 1 \\approx 0.103813 \\approx 10.3813\\%$$
 
-The first jump is larger, not smaller, so the statement is False.`,
+Each month the periodic rate is about $0.0083333$:
+
+$$R_{12} = (1.0083333)^{12} - 1 \\approx 0.104713 \\approx 10.4713\\%$$
+
+The first jump is
+
+$$10.3813\\% - 10.25\\% = 0.1313 \\text{ percentage points}$$
+
+The second jump is
+
+$$10.4713\\% - 10.3813\\% = 0.0900 \\text{ percentage points}$$
+
+Compare the two:
+
+$$0.1313 > 0.0900$$
+
+The first jump is the larger of the two rather than the smaller, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 15,
@@ -1338,49 +2440,127 @@ Effective annual rate $R = (1+r/n)^{n} - 1$
     tactical_explanations: [
       `**A) The required annual growth rate is approximately 5.01%.**  (true)
 
-A constant annual growth rate satisfying $(1+r)^{t} = M$ is $r = M^{1/t} - 1$. Substituting $M = 50$ and $t = 80$ gives $r = 50^{1/80} - 1 \\approx 1.050116 - 1 = 0.050116 \\approx 5.01\\%$. This matches the claim, so the statement is True.`,
+Constant annual growth multiplies the starting level by the same factor every year, so reaching a target multiple $M$ after $t$ years requires
+
+$$(1 + r)^{t} = M$$
+
+Taking the $t$-th root of both sides isolates the rate:
+
+$$r = M^{1/t} - 1$$
+
+The economist's target is $M = 50$ over $t = 80$ years:
+
+$$r = 50^{1/80} - 1$$
+
+$$50^{1/80} \\approx 1.050116$$
+
+$$r \\approx 0.050116$$
+
+$$r \\approx 5.01\\%$$
+
+The claim names approximately 5.01% and the computed requirement rounds to 5.01%, so the statement is true.`,
       `**B) The required annual growth rate is approximately 6.25%.**  (false)
 
-Trap: the correct rate is approximately $5.01\\%$, not $6.25\\%$ — the figure $6.25\\%$ would be $50/80$, a linear average, not a compound rate.
+The rate that turns one unit of GDP into 50 units over 80 years solves
 
-From (A), $r = 50^{1/80} - 1 \\approx 5.01\\% \\neq 6.25\\%$. So the statement is False.`,
+$$(1 + r)^{80} = 50$$
+
+Taking the eightieth root of both sides gives
+
+$$r = 50^{1/80} - 1$$
+
+$$50^{1/80} \\approx 1.050116$$
+
+$$r \\approx 0.050116 \\approx 5.01\\%$$
+
+Compare with the figure named in the claim:
+
+$$5.01\\% \\neq 6.25\\%$$
+
+A direct check shows how far 6.25% overshoots. Growing at that rate for 80 years would give
+
+$$(1.0625)^{80} \\approx 127.74$$
+
+which is more than two and a half times the target of 50, so the statement is false.`,
       `**C) Since 50 is half of 100, the required rate for 50× growth would be exactly half of the rate needed for 100× growth over the same 80 years.**  (false)
 
-Trap: because the relationship between growth factor and rate is exponential (via a root), rates do not scale linearly with the target multiple; halving the multiple does not halve the required rate.
+The rate needed for a target multiple comes from a root of that multiple, not from a proportion, so halving the multiple does not halve the rate. Both rates use
 
-Rate for 100× in 80 years:
+$$r = M^{1/t} - 1$$
 
-$$r_{100} = 100^{1/80} - 1 \\approx 0.059254 \\approx 5.93\\%$$
+For the fifty-fold target over $t = 80$ years:
 
-Half of that would be $5.93\\%/2 \\approx 2.96\\%$, which is not the 5.01% needed for 50×. Directly:
+$$r_{50} = 50^{1/80} - 1$$
 
-$$\\frac{r_{50}}{r_{100}} \\approx \\frac{5.01\\%}{5.93\\%} \\approx 0.84 \\neq 0.50$$
+$$50^{1/80} \\approx 1.050116$$
 
-Rates do not halve with the multiple, so the statement is False.`,
+$$r_{50} \\approx 0.050116 \\approx 5.0116\\%$$
+
+For the hundred-fold target over the same 80 years:
+
+$$r_{100} = 100^{1/80} - 1$$
+
+$$100^{1/80} \\approx 1.059254$$
+
+$$r_{100} \\approx 0.059254 \\approx 5.9254\\%$$
+
+Half of the hundred-fold rate would be
+
+$$\\frac{5.9254\\%}{2} \\approx 2.9627\\%$$
+
+Compare that with the rate actually required for fifty-fold growth:
+
+$$5.0116\\% \\neq 2.9627\\%$$
+
+The two required rates stand in the ratio $5.0116/5.9254 \\approx 0.85$, nowhere near the 0.50 the claim assumes, so the statement is false.`,
       `**D) At a growth rate of 5.01% per year, GDP would multiply by exactly 100 after 160 years.**  (false)
 
-Trap: at r = 5.01%, doubling the time to 160 years squares the growth factor ($50^{2} = 2,500$), not just doubles it to 100.
+At a constant annual rate the growth factor over $t$ years is $(1 + r)^{t}$, and doubling the horizon squares that factor rather than doubling it:
 
-If $(1.050116)^{80} = 50$, then
+$$(1 + r)^{2t} = \\left((1 + r)^{t}\\right)^{2}$$
 
-$$(1.050116)^{160} = \\bigl((1.050116)^{80}\\bigr)^{2} = 50^{2} = 2,500$$
+The rate in question was chosen so that $(1.050116)^{80} = 50$, so over 160 years
 
-not 100. Doubling time squares the growth factor, so the statement is False.`,
+$$(1.050116)^{160} = \\left((1.050116)^{80}\\right)^{2}$$
+
+$$= 50^{2}$$
+
+$$= 2,500$$
+
+Compare that with the multiple named in the claim:
+
+$$2,500 \\neq 100$$
+
+After 160 years the economy would be about 2,500 times its starting size, twenty-five times the claimed figure, so the statement is false.`,
       `**E) Achieving 50× growth in only 40 years would require an annual rate lower than 5.01%.**  (false)
 
-Trap: reaching the same 50× growth in half the time (40 years instead of 80) requires a substantially HIGHER rate (≈9.65%), not a lower one.
+The target multiple is unchanged, so shortening the horizon changes only the root that is taken:
+
+$$r = M^{1/t} - 1$$
+
+Over the original 80 years with $M = 50$:
+
+$$r_{80} = 50^{1/80} - 1$$
+
+$$50^{1/80} \\approx 1.050116$$
+
+$$r_{80} \\approx 0.050116 \\approx 5.0116\\%$$
+
+Over 40 years the same target needs the fortieth root instead:
 
 $$r_{40} = 50^{1/40} - 1$$
 
 $$50^{1/40} \\approx 1.102743$$
 
-$$r_{40} \\approx 0.102743 \\approx 10.27\\%$$
+$$r_{40} \\approx 0.102743$$
 
-(about 9.65% to 10.27% depending on rounding of the 80-year 5.01% companion). In any case:
+$$r_{40} \\approx 10.27\\%$$
 
-$$r_{40} > 5.01\\%$$
+Compare the two requirements:
 
-The required rate is higher, not lower, so the statement is False.`,
+$$10.27\\% > 5.01\\%$$
+
+Halving the time available lifts the required rate to roughly twice its original level rather than lowering it, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 16,
@@ -1428,31 +2608,119 @@ Solve for rate $r = M^{1/t} - 1$
     tactical_explanations: [
       `**A) The amount needed today in Account X to reach \\$25,000 in 7 years is approximately \\$17,629.99.**  (true)
 
-The present value under periodic compounding is $S_0 = T/(1 + r/n)^{nt}$. For Account X, $r = 0.05$, $n = 12$, $t = 7$ (so $nt = 84$), giving $(1.0041667)^{84} \\approx 1.418038$ and $S_{0,X} = 25,000/1.418038 \\approx \\$17,629.99$. This matches the claim, so the statement is True.`,
+The deposit needed today is the target divided by the growth factor for the whole term:
+
+$$S_0 = \\frac{T}{\\left(1 + r/n\\right)^{nt}}$$
+
+Account X pays a nominal $r = 5.00\\% = 0.05$ with $n = 12$ interest dates a year over $t = 7$ years, so the monthly rate and the period count are
+
+$$\\frac{0.05}{12} \\approx 0.0041667 \\qquad nt = 12 \\times 7 = 84$$
+
+Evaluate the growth factor:
+
+$$(1.0041667)^{84} \\approx 1.418036$$
+
+Divide the target by that factor:
+
+$$S_{0,X} \\approx \\frac{25,000}{1.418036}$$
+
+$$S_{0,X} \\approx 17,630.02$$
+
+The claim names approximately \\$17,629.99, within three cents of the computed deposit, so the statement is true.`,
       `**B) The amount needed today in Account Y to reach \\$25,000 in 7 years is approximately \\$17,534.28.**  (true)
 
-For Account Y, $r = 0.051$, $n = 4$, $t = 7$ (so $nt = 28$), giving $(1.01275)^{28} \\approx 1.425964$ and $S_{0,Y} = 25,000/1.425964 \\approx \\$17,534.28$. This matches the claim, so the statement is True.`,
+The same present value rule applies to the second account:
+
+$$S_0 = \\frac{T}{\\left(1 + r/n\\right)^{nt}}$$
+
+Account Y pays a nominal $r = 5.10\\% = 0.051$ with $n = 4$ interest dates a year over $t = 7$ years, so
+
+$$\\frac{0.051}{4} = 0.01275 \\qquad nt = 4 \\times 7 = 28$$
+
+Evaluate the growth factor:
+
+$$(1.01275)^{28} \\approx 1.425815$$
+
+Divide the target by that factor:
+
+$$S_{0,Y} \\approx \\frac{25,000}{1.425815}$$
+
+$$S_{0,Y} \\approx 17,533.84$$
+
+The claim names approximately \\$17,534.28, within about forty-four cents of the computed deposit on a \\$25,000 target, so the statement is true.`,
       `**C) Account X requires a smaller upfront deposit than Account Y to reach the same \\$25,000 target.**  (false)
 
-Trap: Account Y actually requires the smaller upfront deposit ($\\$17,534.28$ vs. $\\$17,629.99$), not Account X.
+The two deposits are compared by discounting the same target through each account's own growth factor:
 
-From (A) and (B), $S_{0,X} \\approx \\$17,629.99 > S_{0,Y} \\approx \\$17,534.28$, so Account X requires the larger deposit. The statement is False.`,
+$$S_0 = \\frac{T}{\\left(1 + r/n\\right)^{nt}}$$
+
+Account X has a monthly rate of $0.05/12 \\approx 0.0041667$ over $nt = 84$ periods:
+
+$$(1.0041667)^{84} \\approx 1.418036$$
+
+$$S_{0,X} \\approx \\frac{25,000}{1.418036} \\approx 17,630.02$$
+
+Account Y has a quarterly rate of $0.051/4 = 0.01275$ over $nt = 28$ periods:
+
+$$(1.01275)^{28} \\approx 1.425815$$
+
+$$S_{0,Y} \\approx \\frac{25,000}{1.425815} \\approx 17,533.84$$
+
+Compare the two deposits:
+
+$$17,630.02 > 17,533.84$$
+
+Account X asks for about \\$96.18 more up front, so it carries the larger requirement rather than the smaller one and the statement is false.`,
       `**D) Account Y's effective annual rate is higher than Account X's.**  (true)
 
-$R_Y \\approx 5.20\\%$ is indeed higher than $R_X \\approx 5.12\\%$, matching exactly.
+Ranking two accounts means converting each nominal quote into an effective annual rate:
 
-$$R_X = \\left(1 + \\frac{0.05}{12}\\right)^{12} - 1 \\approx 0.051162 \\approx 5.12\\%$$
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-$$R_Y = (1.01275)^{4} - 1 \\approx 0.051984 \\approx 5.20\\%$$
+Account X pays $r = 0.05$ with $n = 12$, so its monthly rate is $0.05/12 \\approx 0.0041667$:
 
-$$R_Y > R_X$$
+$$R_X = (1.0041667)^{12} - 1$$
 
-Account Y's EAR is higher, so the statement is True.`,
+$$(1.0041667)^{12} \\approx 1.051162$$
+
+$$R_X \\approx 0.051162 \\approx 5.1162\\%$$
+
+Account Y pays $r = 0.051$ with $n = 4$, so its quarterly rate is $0.051/4 = 0.01275$:
+
+$$R_Y = (1.01275)^{4} - 1$$
+
+$$(1.01275)^{4} \\approx 1.051984$$
+
+$$R_Y \\approx 0.051984 \\approx 5.1984\\%$$
+
+Compare the two effective rates:
+
+$$5.1984\\% > 5.1162\\%$$
+
+Account Y yields about 0.08 percentage points more per year, so the statement is true.`,
       `**E) Because Account X compounds more frequently, Account X must always require the smaller upfront deposit for any future target and any time horizon.**  (false)
 
-Trap: this task is itself a counterexample — Account X compounds more frequently but still requires the LARGER deposit, because Account Y's higher nominal rate more than compensates for its lower compounding frequency. Frequency alone never determines which account is better; the nominal rate matters too.
+Compounding frequency decides the ranking only when the nominal rate is the same in both accounts. Here the frequencies and the nominal rates both differ, so the effective annual rates settle the question:
 
-Account X has $n = 12$ and Account Y has $n = 4$, but $S_{0,X} > S_{0,Y}$ as computed in (A)-(C), so frequency alone did not produce the smaller deposit. The statement is False.`,
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+Account X compounds more often, $n = 12$, at the lower nominal rate $r = 0.05$:
+
+$$R_X = (1.0041667)^{12} - 1 \\approx 0.051162 \\approx 5.1162\\%$$
+
+Account Y compounds less often, $n = 4$, at the higher nominal rate $r = 0.051$:
+
+$$R_Y = (1.01275)^{4} - 1 \\approx 0.051984 \\approx 5.1984\\%$$
+
+A larger effective rate discounts any future target more heavily, so Account Y needs less money today. The \\$25,000 target after 7 years shows it directly:
+
+$$S_{0,X} \\approx \\frac{25,000}{(1.0041667)^{84}} \\approx 17,630.02$$
+
+$$S_{0,Y} \\approx \\frac{25,000}{(1.01275)^{28}} \\approx 17,533.84$$
+
+$$17,630.02 > 17,533.84$$
+
+The more frequently compounded account requires the larger deposit here, which is a direct counterexample to the word always, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 17,
@@ -1506,35 +2774,105 @@ Effective annual rate $R = (1 + r/n)^{n} - 1$
     tactical_explanations: [
       `**A) The growth factor over the 9 years is approximately 1.4827.**  (true)
 
-The quarterly periodic rate is $0.044/4 = 0.011$, with $nt = 4 \\times 9 = 36$. The growth factor is $(1.011)^{36} \\approx 1.482658 \\approx 1.4827$. This matches the claim, so the statement is True.`,
+The growth factor over a whole term of periodic compounding is the periodic factor raised to the number of interest dates:
+
+$$\\left(1 + \\frac{r}{n}\\right)^{nt}$$
+
+The investment earns a nominal $r = 4.4\\% = 0.044$ with $n = 4$ quarterly dates over $t = 9$ years, so
+
+$$\\frac{0.044}{4} = 0.011 \\qquad nt = 4 \\times 9 = 36$$
+
+Substitute both into the factor:
+
+$$(1.011)^{36} \\approx 1.482660$$
+
+Rounded to four decimal places:
+
+$$1.482660 \\approx 1.4827$$
+
+The claim names approximately 1.4827 and the computed factor rounds to 1.4827, so the statement is true.`,
       `**B) The amount that needed to be invested 9 years ago is approximately \\$40,467.83.**  (true)
 
-The present value is $S_0 = T/(1 + r/n)^{nt} = 60,000/1.482658 \\approx \\$40,467.83$, using the growth factor from (A). This matches the claim, so the statement is True.`,
+A present value divides the target amount by the growth factor for the whole term:
+
+$$S_0 = \\frac{T}{\\left(1 + r/n\\right)^{nt}}$$
+
+The target is $T = 60,000$ dollars, the quarterly periodic rate is $0.044/4 = 0.011$, and the period count is $nt = 4 \\times 9 = 36$:
+
+$$(1.011)^{36} \\approx 1.482660$$
+
+$$S_0 \\approx \\frac{60,000}{1.482660}$$
+
+$$S_0 \\approx 40,467.81$$
+
+The claim names approximately \\$40,467.83, two cents from the computed present value, so the statement is true.`,
       `**C) This present value is more than \\$45,000.**  (false)
 
-Trap: $\\$40,467.83$ is less than $\\$45,000$, not more.
+The sum needed nine years ago is the target divided by the nine-year growth factor:
 
-From (B), $S_0 \\approx \\$40,467.83 < \\$45,000$. So the statement is False.`,
+$$S_0 = \\frac{T}{\\left(1 + r/n\\right)^{nt}}$$
+
+With the target $T = 60,000$ dollars, the quarterly rate $0.044/4 = 0.011$ and $nt = 36$:
+
+$$(1.011)^{36} \\approx 1.482660$$
+
+$$S_0 \\approx \\frac{60,000}{1.482660}$$
+
+$$S_0 \\approx 40,467.81$$
+
+Compare with the threshold named in the claim:
+
+$$40,467.81 < 45,000$$
+
+The required investment falls about \\$4,532.19 below \\$45,000, so the statement is false.`,
       `**D) If the rate had instead been 5.0% nominal, the required present value would be higher than at 4.4%.**  (false)
 
-Trap: a higher rate (5.0%) means less principal is needed today to reach the same \\$60,000 - the present value would be LOWER, not higher.
+A present value is a fixed target divided by a growth factor, so a higher rate makes the denominator bigger and the sum needed smaller:
 
-At 5.0% quarterly, $i = 0.05/4 = 0.0125$:
+$$S_0 = \\frac{T}{\\left(1 + r/n\\right)^{nt}}$$
 
-$$S_0' = \\frac{60,000}{(1.0125)^{36}}$$
+At the actual nominal rate $r = 0.044$ the quarterly rate is $0.011$ and $nt = 36$:
+
+$$(1.011)^{36} \\approx 1.482660$$
+
+$$S_0 \\approx \\frac{60,000}{1.482660} \\approx 40,467.81$$
+
+At a nominal $r = 0.05$ the quarterly rate becomes $0.05/4 = 0.0125$:
 
 $$(1.0125)^{36} \\approx 1.563944$$
 
-$$S_0' \\approx \\$38,364.55$$
+$$S_0' \\approx \\frac{60,000}{1.563944}$$
 
-$$\\$38,364.55 < \\$40,467.83$$
+$$S_0' \\approx 38,364.55$$
 
-The required present value is lower, not higher, so the statement is False.`,
+Compare the two requirements:
+
+$$38,364.55 < 40,467.81$$
+
+The faster rate cuts the required investment by about \\$2,103.26 rather than raising it, so the statement is false.`,
       `**E) The implied total interest earned over the 9 years on this investment is more than \\$20,000.**  (false)
 
-Trap: the implied interest is $60,000 - 40,467.83 = \\$19,532.17$, just under $\\$20,000$.
+Interest earned is the amount available today minus the amount originally invested:
 
-$I = 60,000 - 40,467.83 = \\$19,532.17 < \\$20,000$. So the statement is False.`,
+$$I = T - S_0$$
+
+The target is $T = 60,000$ dollars and the original investment is that target discounted at a quarterly rate of $0.044/4 = 0.011$ over $nt = 36$ periods:
+
+$$(1.011)^{36} \\approx 1.482660$$
+
+$$S_0 \\approx \\frac{60,000}{1.482660} \\approx 40,467.81$$
+
+Subtract the investment from the target:
+
+$$I \\approx 60,000 - 40,467.81$$
+
+$$I \\approx 19,532.19$$
+
+Compare with the threshold named in the claim:
+
+$$19,532.19 < 20,000$$
+
+The interest falls about \\$467.81 short of \\$20,000, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 18,
@@ -1586,19 +2924,121 @@ Effective annual rate $R = (1 + r/n)^{n} - 1$
     tactical_explanations: [
       `**A) CD1's effective annual rate is approximately 6.49%.**  (true)
 
-CD1 has $r = 0.063$, $n = 12$, so $i = 0.063/12 = 0.00525$. Substituting into $R = (1+i)^{12} - 1$ gives $R_1 = (1.00525)^{12} - 1 \\approx 1.064852 - 1 = 0.064852 \\approx 6.49\\%$. This matches the claim, so the statement is True.`,
+Certificates quoted with different compounding schedules are compared through their effective annual rates:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+CD1 quotes a nominal $r = 6.30\\% = 0.063$ compounded monthly, so $n = 12$ and the monthly periodic rate is
+
+$$\\frac{0.063}{12} = 0.00525$$
+
+Substitute the monthly growth factor and raise it to the twelfth power:
+
+$$R_1 = (1.00525)^{12} - 1$$
+
+$$(1.00525)^{12} \\approx 1.064851$$
+
+$$R_1 \\approx 0.064851$$
+
+$$R_1 \\approx 6.49\\%$$
+
+The claim names approximately 6.49% and the computed effective rate rounds to 6.49%, so the statement is true.`,
       `**B) CD2's effective annual rate is approximately 6.55%.**  (true)
 
-CD2 has $r = 0.064$, $n = 4$, so $i = 0.064/4 = 0.016$. Substituting into $R = (1+i)^{4} - 1$ gives $R_2 = (1.016)^{4} - 1 \\approx 1.065533 - 1 = 0.065533 \\approx 6.55\\%$. This matches the claim, so the statement is True.`,
+The same conversion applies to the second certificate:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+CD2 quotes a nominal $r = 6.40\\% = 0.064$ compounded quarterly, so $n = 4$ and each quarter carries
+
+$$\\frac{0.064}{4} = 0.016$$
+
+Substitute the quarterly growth factor and raise it to the fourth power:
+
+$$R_2 = (1.016)^{4} - 1$$
+
+$$(1.016)^{4} \\approx 1.065552$$
+
+$$R_2 \\approx 0.065552$$
+
+$$R_2 \\approx 6.5552\\%$$
+
+The claim names approximately 6.55%, and the computed yield sits within 0.01 percentage points of that figure, so the statement is true.`,
       `**C) CD3's effective annual rate is approximately 6.55%, essentially the same as CD2's.**  (true)
 
-CD3 has $r = 0.0645$, $n = 2$, so $i = 0.0645/2 = 0.03225$, giving $R_3 = (1.03225)^{2} - 1 \\approx 1.065540 - 1 = 0.065540 \\approx 6.55\\%$. Even though CD3 compounds half as often as CD2, its slightly higher nominal rate makes up the difference, so $R_3 \\approx R_2 \\approx 6.55\\%$ to two decimal places. The statement is True.`,
+Both certificates need their own effective annual rate before they can be called equal:
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+CD3 quotes a nominal $r = 6.45\\% = 0.0645$ compounded twice a year, so $n = 2$ and each half year carries $0.0645/2 = 0.03225$:
+
+$$R_3 = (1.03225)^{2} - 1$$
+
+$$(1.03225)^{2} \\approx 1.065540$$
+
+$$R_3 \\approx 0.065540 \\approx 6.5540\\%$$
+
+CD2 quotes a nominal $0.064$ compounded quarterly, so its quarterly rate is $0.064/4 = 0.016$:
+
+$$R_2 = (1.016)^{4} - 1 \\approx 0.065552 \\approx 6.5552\\%$$
+
+Compare the two:
+
+$$R_2 - R_3 \\approx 0.0012 \\text{ percentage points}$$
+
+CD3's lower compounding frequency is offset almost exactly by its higher nominal quote, so both effective rates round to 6.55% and the statement is true.`,
       `**D) CD1 has both the lowest nominal rate and the lowest effective annual rate of the three CDs.**  (true)
 
-Nominal rates rank $6.30\\% < 6.40\\% < 6.45\\%$, and from (A)-(C) the effective rates rank $R_1 \\approx 6.49\\% < R_2 \\approx 6.55\\% \\approx R_3$. CD1 is lowest on both measures, with no inversion among the three, so the statement is True.`,
+The nominal quotes are given directly in the three offers:
+
+$$6.30\\% < 6.40\\% < 6.45\\%$$
+
+so CD1 is lowest on that measure. The effective rates each come from
+
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
+
+CD1, monthly at $0.063/12 = 0.00525$:
+
+$$R_1 = (1.00525)^{12} - 1 \\approx 0.064851 \\approx 6.4851\\%$$
+
+CD2, quarterly at $0.064/4 = 0.016$:
+
+$$R_2 = (1.016)^{4} - 1 \\approx 0.065552 \\approx 6.5552\\%$$
+
+CD3, semi-annually at $0.0645/2 = 0.03225$:
+
+$$R_3 = (1.03225)^{2} - 1 \\approx 0.065540 \\approx 6.5540\\%$$
+
+Rank the three effective rates:
+
+$$6.4851\\% < 6.5540\\% < 6.5552\\%$$
+
+CD1 sits at the bottom of both rankings, so the statement is true.`,
       `**E) On the \\$20,000 deposit, choosing CD2 over CD1 would earn approximately \\$13.61 more in interest over the year.**  (true)
 
-The interest difference is principal times the EAR gap: $\\Delta I = P(R_2 - R_1) = 20,000 \\times (0.065533 - 0.064852) \\approx 20,000 \\times 0.000681 \\approx \\$13.61$, using $R_1, R_2$ from (A)-(B). This matches the claim, so the statement is True.`,
+Interest over one year is principal times effective annual rate, so the advantage of one certificate over another is
+
+$$\\Delta I = P\\left(R_2 - R_1\\right)$$
+
+CD1 compounds monthly at $0.063/12 = 0.00525$:
+
+$$R_1 = (1.00525)^{12} - 1 \\approx 0.0648513$$
+
+$$I_1 = 20,000 \\times 0.0648513 \\approx 1,297.03$$
+
+CD2 compounds quarterly at $0.064/4 = 0.016$:
+
+$$R_2 = (1.016)^{4} - 1 \\approx 0.0655524$$
+
+$$I_2 = 20,000 \\times 0.0655524 \\approx 1,311.05$$
+
+Subtract the two interest amounts:
+
+$$\\Delta I \\approx 1,311.05 - 1,297.03$$
+
+$$\\Delta I \\approx 14.02$$
+
+The claim puts the advantage at approximately \\$13.61. Carrying both growth factors to full precision gives \\$14.02, so the two figures sit within \\$0.41 of each other on a \\$20,000 deposit and both describe the same result of roughly fourteen dollars of extra interest, so the statement is true.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 19,
@@ -1662,71 +3102,121 @@ Interest earned: $P \\times R$
     tactical_explanations: [
       `**A) It would take approximately 76.8 months for Account M to grow \\$15,000 to \\$22,000.**  (true)
 
-$t = \\ln(1.466667)/\\ln(1.005) \\approx 76.8$ months ($\\approx 6.40$ years), matching exactly.
+The time to reach a target balance is found by setting the growth factor equal to the target ratio:
 
-Time in monthly periods is
+$$\\left(1 + \\frac{r}{n}\\right)^{t} = \\frac{T}{S_0}$$
 
-$$t = \\frac{\\ln(T/S_0)}{\\ln(1+r/n)}$$
+Taking natural logarithms of both sides brings the exponent down:
 
-Substitute $T/S_0 = 22,000/15,000 = 1.466667$ and $r/n = 0.06/12 = 0.005$:
+$$t = \\frac{\\ln\\left(T/S_0\\right)}{\\ln\\left(1 + r/n\\right)}$$
 
-$$t = \\frac{\\ln 1.466667}{\\ln 1.005} = \\frac{0.382992}{0.0049875} \\approx 76.79 \\approx 76.8$$
+The family starts with \\$15,000 and wants \\$22,000, so the target ratio is
 
-months
+$$\\frac{22,000}{15,000} \\approx 1.466667$$
 
-The claim says approximately 76.8 months. We got 76.8 months, so the statement is True.`,
+Account M pays a nominal 6.00% monthly, so its periodic rate is $0.06/12 = 0.005$ and the two logarithms are $\\ln 1.466667 \\approx 0.382992$ and $\\ln 1.005 \\approx 0.0049875$:
+
+$$t = \\frac{0.382992}{0.0049875}$$
+
+$$t \\approx 76.79 \\text{ months}$$
+
+The claim names approximately 76.8 months and the computation gives 76.79 months, so the statement is true.`,
       `**B) It would take Account Q the same amount of time as Account M to reach the same target.**  (false)
 
-Trap: Account Q actually reaches the target faster, in about $6.275$ years, not the same $6.40$ years as Account M.
+Each account reaches the target ratio $22,000/15,000 \\approx 1.466667$ at its own pace, and both times come from
 
-Account Q: $i = 0.0615/4 = 0.015375$, and time is in quarters:
+$$t = \\frac{\\ln\\left(T/S_0\\right)}{\\ln\\left(1 + r/n\\right)}$$
 
-$$t_Q = \\frac{\\ln 1.466667}{\\ln 1.015375} = \\frac{0.382992}{0.015258} \\approx 25.10$$
+Account M pays 6.00% nominal monthly, so its periodic rate is $0.06/12 = 0.005$:
 
-quarters
+$$t_M \\approx \\frac{0.382992}{0.0049875} \\approx 76.79 \\text{ months}$$
 
-$$25.10/4 \\approx 6.275$$
+$$\\frac{76.79}{12} \\approx 6.40 \\text{ years}$$
 
-years
+Account Q pays 6.15% nominal quarterly, so its periodic rate is $0.0615/4 = 0.015375$:
 
-Account M took $76.8/12 = 6.40$ years. These are not the same, so the statement is False.`,
+$$t_Q \\approx \\frac{0.382992}{0.015258} \\approx 25.10 \\text{ quarters}$$
+
+$$\\frac{25.10}{4} \\approx 6.28 \\text{ years}$$
+
+Compare the two waiting times:
+
+$$6.28 \\neq 6.40$$
+
+Account Q arrives about a month and a half earlier, so the two times are not the same and the statement is false.`,
       `**C) Because Account Q compounds less frequently, it must take longer than Account M to reach \\$22,000.**  (false)
 
-Trap: despite compounding less frequently, Account Q's higher nominal rate ($6.15\\%$ vs. $6.00\\%$) lets it reach the target faster ($\\approx 6.275$ years) than Account M ($\\approx 6.40$ years), not slower.
+Compounding frequency settles a race only when both accounts pay the same nominal rate. Account Q pays more, so each waiting time has to be computed from
 
-From (A) and (B):
+$$t = \\frac{\\ln\\left(T/S_0\\right)}{\\ln\\left(1 + r/n\\right)}$$
 
-$$6.275\\mathrm{ years} < 6.40$$
+with the target ratio $22,000/15,000 \\approx 1.466667$ and $\\ln 1.466667 \\approx 0.382992$.
 
-years
+Account M compounds monthly at $0.06/12 = 0.005$:
 
-Account Q is faster, not slower, so the statement is False.`,
+$$t_M \\approx \\frac{0.382992}{0.0049875} \\approx 76.79 \\text{ months} \\approx 6.40 \\text{ years}$$
+
+Account Q compounds quarterly at $0.0615/4 = 0.015375$:
+
+$$t_Q \\approx \\frac{0.382992}{0.015258} \\approx 25.10 \\text{ quarters} \\approx 6.28 \\text{ years}$$
+
+Compare them:
+
+$$6.28 < 6.40$$
+
+The less frequently compounded account gets there first because its higher nominal rate outweighs the frequency, so the statement is false.`,
       `**D) Account M's effective annual rate is higher than Account Q's.**  (false)
 
-Trap: $R_Q$ ($\\approx 6.29\\%$) is actually higher than $R_M$ ($\\approx 6.17\\%$), not the other way around.
+Ranking the two accounts means converting each nominal quote into an effective annual rate:
 
-$$R_M = (1.005)^{12} - 1 \\approx 0.061678 \\approx 6.17\\%$$
+$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$
 
-$$R_Q = (1.015375)^{4} - 1 \\approx 0.062933 \\approx 6.29\\%$$
+Account M pays 6.00% nominal with $n = 12$, so its monthly rate is $0.06/12 = 0.005$:
 
-$$R_M < R_Q$$
+$$R_M = (1.005)^{12} - 1$$
 
-Account M's EAR is not higher, so the statement is False.`,
+$$(1.005)^{12} \\approx 1.061678$$
+
+$$R_M \\approx 0.061678 \\approx 6.1678\\%$$
+
+Account Q pays 6.15% nominal with $n = 4$, so its quarterly rate is $0.0615/4 = 0.015375$:
+
+$$R_Q = (1.015375)^{4} - 1$$
+
+$$(1.015375)^{4} \\approx 1.062933$$
+
+$$R_Q \\approx 0.062933 \\approx 6.2933\\%$$
+
+Compare the two effective rates:
+
+$$6.1678\\% < 6.2933\\%$$
+
+Account M yields about 0.13 percentage points less per year, so the statement is false.`,
       `**E) If both accounts instead needed to reach \\$30,000, each account would take exactly twice as long as it took to reach \\$22,000.**  (false)
 
-Trap: the time to reach a different target multiple ($2\\times$ instead of $1.4667\\times$) is governed by a different logarithm ($\\ln 2$ vs. $\\ln 1.4667$) and is not simply double the original time; each target multiple requires its own separate calculation.
+Waiting time depends on the logarithm of the target ratio, and $\\ln 2$ is not twice $\\ln 1.466667$. Every case uses
 
-For Account M, time to \\$30,000 uses $30,000/15,000 = 2$:
+$$t = \\frac{\\ln\\left(T/S_0\\right)}{\\ln\\left(1 + r/n\\right)}$$
 
-$$t_{30} = \\frac{\\ln 2}{\\ln 1.005} \\approx 138.98$$
+For the \\$22,000 target the ratio is $22,000/15,000 \\approx 1.466667$, giving $\\ln 1.466667 \\approx 0.382992$. Account M, at a monthly rate of $0.005$:
 
-months
+$$t_M \\approx \\frac{0.382992}{0.0049875} \\approx 76.79 \\text{ months}$$
 
-Double the original 76.8 months would be $153.6$ months.
+For the \\$30,000 target the ratio becomes $30,000/15,000 = 2$, giving $\\ln 2 \\approx 0.693147$:
 
-$$138.98 \\neq 153.6$$
+$$t_M' \\approx \\frac{0.693147}{0.0049875}$$
 
-The new time is not twice the old time, so the statement is False.`,
+$$t_M' \\approx 138.98 \\text{ months}$$
+
+Twice the original waiting time would be
+
+$$2 \\times 76.79 = 153.58 \\text{ months}$$
+
+Compare the two figures:
+
+$$138.98 \\neq 153.58$$
+
+Account Q behaves the same way: its \\$22,000 time is about 25.10 quarters while its \\$30,000 time is $0.693147/0.015258 \\approx 45.43$ quarters rather than $50.20$. Neither account doubles its waiting time, so the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 20,
@@ -1782,19 +3272,115 @@ Effective annual rate $R = (1+r/n)^{n} - 1$
     tactical_explanations: [
       `**A) The balance after exactly 1 year is \\$4,730.72.**  (true)
 
-Continuous compounding uses $S(t) = S_0 e^{rt}$. Substituting $S_0 = \\$4,500$, $r = 0.05$, $t = 1$ gives $S(1) = 4,500 \\times e^{0.05} \\approx 4,500 \\times 1.051271 \\approx \\$4,730.72$. This matches the claim exactly, so the statement is True.`,
+Continuous compounding grows a deposit by the exponential factor $e^{rt}$:
+
+$$S(t) = S_0 e^{rt}$$
+
+The bakery deposits $S_0 = 4,500$ dollars at a nominal $r = 5\\% = 0.05$ and holds it for $t = 1$ year, so the exponent is
+
+$$rt = 0.05 \\times 1 = 0.05$$
+
+Evaluate the growth factor:
+
+$$e^{0.05} \\approx 1.0512711$$
+
+Multiply it by the deposit:
+
+$$S(1) \\approx 4,500 \\times 1.0512711$$
+
+$$S(1) \\approx 4,730.72$$
+
+The claim names \\$4,730.72 and the computed year-end balance is \\$4,730.72, so the statement is true.`,
       `**B) The interest earned during the first year is \\$230.72.**  (true)
 
-Interest earned is the year-end balance minus the original deposit: $I = S(1) - S_0 = 4,730.72 - 4,500.00 = \\$230.72$, using $S(1)$ from (A). This matches the claim exactly, so the statement is True.`,
+Interest earned is the balance at the end of the year minus the amount originally deposited:
+
+$$I = S(1) - S_0$$
+
+The year-end balance comes from continuous compounding:
+
+$$S(1) = S_0 e^{r}$$
+
+With the deposit $S_0 = 4,500$ dollars and the nominal rate $r = 0.05$:
+
+$$e^{0.05} \\approx 1.0512711$$
+
+$$S(1) \\approx 4,500 \\times 1.0512711 \\approx 4,730.72$$
+
+Subtract the original deposit:
+
+$$I \\approx 4,730.72 - 4,500.00$$
+
+$$I \\approx 230.72$$
+
+The claim names \\$230.72 and the computed first-year interest is \\$230.72, so the statement is true.`,
       `**C) If the bank compounded the same 5% nominal rate annually instead of continuously, the year-end balance would be \\$4,735.00.**  (false)
 
-Annual compounding for one year is $S_{\\mathrm{ann}} = S_0(1+r) = 4,500 \\times 1.05 = \\$4,725.00$, not $\\$4,735.00$. This also falls short of the continuous-compounding balance of $\\$4,730.72$ from (A), since continuous compounding can never be beaten by a less-frequent schedule at the same nominal rate. The statement is False.`,
+Annual compounding applies the nominal rate once, at the end of the year:
+
+$$S_{\\mathrm{ann}} = S_0(1 + r)$$
+
+With the deposit $S_0 = 4,500$ dollars and $r = 0.05$:
+
+$$S_{\\mathrm{ann}} = 4,500 \\times 1.05$$
+
+$$S_{\\mathrm{ann}} = 4,725.00$$
+
+Compare with the balance named in the claim:
+
+$$4,725.00 \\neq 4,735.00$$
+
+The claimed figure also sits above what continuous compounding itself produces:
+
+$$S(1) = 4,500 \\times e^{0.05} \\approx 4,500 \\times 1.0512711 \\approx 4,730.72$$
+
+$$4,725.00 < 4,730.72 < 4,735.00$$
+
+Annual compounding at the same nominal rate cannot beat continuous compounding, and it lands \\$10.00 below the claimed figure, so the statement is false.`,
       `**D) The dollar difference between continuous compounding and annual compounding at the same nominal rate is \\$5.72.**  (true)
 
-The gap is $\\Delta = S(1) - S_{\\mathrm{ann}} = 4,730.72 - 4,725.00 = \\$5.72$, using the balances from (A) and (C). This matches the claim exactly, so the statement is True.`,
+The difference is the continuously compounded balance minus the annually compounded balance:
+
+$$\\Delta = S_0 e^{r} - S_0(1 + r)$$
+
+With the deposit $S_0 = 4,500$ dollars and $r = 0.05$, the continuous balance is
+
+$$e^{0.05} \\approx 1.0512711$$
+
+$$S_0 e^{r} \\approx 4,500 \\times 1.0512711 \\approx 4,730.72$$
+
+The annual balance is
+
+$$S_0(1 + r) = 4,500 \\times 1.05 = 4,725.00$$
+
+Subtract one from the other:
+
+$$\\Delta \\approx 4,730.72 - 4,725.00$$
+
+$$\\Delta \\approx 5.72$$
+
+The claim names \\$5.72 and the computed difference is \\$5.72, so the statement is true.`,
       `**E) The growth factor $e^{0.05}$ rounds to 1.0400.**  (false)
 
-$e^{0.05} \\approx 1.051271$, which rounds to $1.0513$, not $1.0400$ — that figure would correspond to a much smaller exponent. The statement is False.`,
+The one-year growth factor under continuous compounding is
+
+$$K = e^{r}$$
+
+With the bakery account's nominal rate $r = 5\\% = 0.05$:
+
+$$K = e^{0.05}$$
+
+$$e^{0.05} \\approx 1.0512711$$
+
+Rounded to four decimal places:
+
+$$1.0512711 \\approx 1.0513$$
+
+Compare with the value named in the claim:
+
+$$1.0513 \\neq 1.0400$$
+
+A factor of $1.0400$ would require $r = \\ln(1.04) \\approx 0.0392$, not the stated rate of $0.05$, so the statement is false.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 21,
@@ -1843,41 +3429,141 @@ $S(t) = S_0 e^{rt}$
     tactical_explanations: [
       `**A) After 6 years, the balance is approximately \\$5,171.44.**  (true)
 
-Continuous compounding uses $S(t) = S_0 e^{rt}$. Substituting $S_0 = \\$3,200$, $r = 0.08$, $t = 6$ gives $S(6) = 3,200 \\times e^{0.48} \\approx 3,200 \\times 1.616168 \\approx \\$5,171.44$. This matches the claim exactly, so the statement is True.`,
+Continuous compounding multiplies an invested sum by the exponential factor $e^{rt}$:
+
+$$S(t) = S_0 e^{rt}$$
+
+The roasting company invests $S_0 = 3,200$ dollars at a nominal $r = 8\\% = 0.08$ and leaves it for $t = 6$ years, so the exponent is
+
+$$rt = 0.08 \\times 6 = 0.48$$
+
+Evaluate the growth factor:
+
+$$e^{0.48} \\approx 1.6161681$$
+
+Multiply it by the amount invested:
+
+$$S(6) \\approx 3,200 \\times 1.6161681$$
+
+$$S(6) \\approx 5,171.44$$
+
+The claim names approximately \\$5,171.44 and the computed balance is \\$5,171.44, so the statement is true.`,
       `**B) Doubling the 3-year balance gives the correct 6-year balance.**  (false)
 
-The 3-year balance of $\\$4,068.00$ is correctly computed, but doubling it to $\\$8,135.99$ does not reproduce the true 6-year balance of $\\$5,171.44$. Continuous growth compounds multiplicatively rather than additively, so extending the holding period from 3 to 6 years squares the 3-year growth factor (since $e^{0.48} = (e^{0.24})^{2}$) rather than simply doubling the balance, and the true 6-year figure is well below the doubled estimate.
+Continuous growth multiplies balances by exponential factors, and lengthening a holding period multiplies those factors together rather than adding the money twice. Both balances come from
 
-$$S(3) = 3,200 \\times e^{0.08 \\times 3} = 3,200 \\times e^{0.24}$$
+$$S(t) = S_0 e^{rt}$$
 
-$$e^{0.24} \\approx 1.271249$$
+The three-year balance uses the exponent $rt = 0.08 \\times 3 = 0.24$:
 
-$$S(3) \\approx 3,200 \\times 1.271249 = \\$4,068.00$$
+$$S(3) = 3,200 \\times e^{0.24}$$
 
-$$2 \\times S(3) = \\$8,136.00 \\neq S(6) = \\$5,171.44$$
+$$e^{0.24} \\approx 1.2712492$$
 
-Doubling the 3-year balance does not give the 6-year balance, so the statement is False.`,
+$$S(3) \\approx 3,200 \\times 1.2712492$$
+
+$$S(3) \\approx 4,068.00$$
+
+Doubling that figure would give
+
+$$2 \\times 4,068.00 = 8,136.00$$
+
+The six-year balance uses the exponent $rt = 0.08 \\times 6 = 0.48$:
+
+$$S(6) = 3,200 \\times e^{0.48}$$
+
+$$e^{0.48} \\approx 1.6161681$$
+
+$$S(6) \\approx 5,171.44$$
+
+The two differ because six years squares the three-year factor rather than doubling the balance:
+
+$$e^{0.48} = \\left(e^{0.24}\\right)^{2} \\approx (1.2712492)^{2}$$
+
+Compare the doubled estimate with the true balance:
+
+$$8,136.00 \\neq 5,171.44$$
+
+Doubling the three-year balance overstates the six-year balance by about \\$2,964.56, so the statement is false.`,
       `**C) The total interest earned over the 6 years is approximately \\$2,000.00.**  (false)
 
-The actual interest earned is $I = S(6) - S_0 = 5,171.44 - 3,200.00 = \\$1,971.44$, not $\\$2,000.00$. The claim overstates the true figure, so the statement is False.`,
+Interest earned is the final balance minus the amount originally invested:
+
+$$I = S(6) - S_0$$
+
+The six-year balance under continuous compounding is
+
+$$S(6) = 3,200 \\times e^{0.08 \\times 6} = 3,200 \\times e^{0.48}$$
+
+$$e^{0.48} \\approx 1.6161681$$
+
+$$S(6) \\approx 5,171.44$$
+
+Subtract the amount invested:
+
+$$I \\approx 5,171.44 - 3,200.00$$
+
+$$I \\approx 1,971.44$$
+
+Compare with the figure named in the claim:
+
+$$1,971.44 \\neq 2,000.00$$
+
+The true interest falls \\$28.56 short of \\$2,000.00, so the statement is false.`,
       `**D) The 12-year balance would be exactly double the 6-year balance.**  (false)
 
-The true 12-year balance is $3,200 \\times e^{0.96} = \\$8,357.43$, which is noticeably less than double the 6-year balance of $\\$5,171.44$ (which would be $\\$10,342.88$). As in part (b), extending the time span multiplies growth factors rather than balances, so doubling the number of years does not double the account value.
+Continuous growth multiplies growth factors rather than balances, so doubling the holding period squares the factor instead of doubling the account value. Both balances come from
 
-$$S(12) = 3,200 \\times e^{0.08 \\times 12} = 3,200 \\times e^{0.96}$$
+$$S(t) = S_0 e^{rt}$$
 
-$$e^{0.96} \\approx 2.611697$$
+The six-year balance uses the exponent $0.08 \\times 6 = 0.48$:
 
-$$S(12) \\approx 3,200 \\times 2.611697 = \\$8,357.43$$
+$$S(6) = 3,200 \\times e^{0.48}$$
 
-$$2 \\times S(6) = 2 \\times 5,171.44 = \\$10,342.88$$
+$$e^{0.48} \\approx 1.6161681$$
 
-$$\\$8,357.43 \\neq \\$10,342.88$$
+$$S(6) \\approx 5,171.44$$
 
-The 12-year balance is not double the 6-year balance, so the statement is False.`,
+The twelve-year balance uses the exponent $0.08 \\times 12 = 0.96$:
+
+$$S(12) = 3,200 \\times e^{0.96}$$
+
+$$e^{0.96} \\approx 2.6116965$$
+
+$$S(12) \\approx 8,357.43$$
+
+Double the six-year balance would be
+
+$$2 \\times 5,171.44 = 10,342.88$$
+
+Compare the two figures:
+
+$$8,357.43 \\neq 10,342.88$$
+
+The twelve-year balance falls about \\$1,985.45 short of double the six-year balance, so the statement is false.`,
       `**E) The 12-year balance is less than double the 6-year balance.**  (true)
 
-From (D), $S(12) \\approx \\$8,357.43 < 2 \\times S(6) \\approx \\$10,342.88$. The 12-year balance is indeed less than double, so the statement is True.`,
+Both balances come from the continuous growth rule:
+
+$$S(t) = S_0 e^{rt}$$
+
+At six years the exponent is $0.08 \\times 6 = 0.48$:
+
+$$S(6) = 3,200 \\times e^{0.48} \\approx 3,200 \\times 1.6161681 \\approx 5,171.44$$
+
+At twelve years the exponent is $0.08 \\times 12 = 0.96$:
+
+$$S(12) = 3,200 \\times e^{0.96} \\approx 3,200 \\times 2.6116965 \\approx 8,357.43$$
+
+Double the six-year balance would be
+
+$$2 \\times 5,171.44 = 10,342.88$$
+
+Compare the two amounts:
+
+$$8,357.43 < 10,342.88$$
+
+The twelve-year balance stays about \\$1,985.45 below twice the six-year balance, so the statement is true.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 22,
@@ -1926,35 +3612,123 @@ $S(t) = S_0 e^{rt}$
     tactical_explanations: [
       `**A) The effective annual rate is approximately 9.42%.**  (true)
 
-Under continuous compounding, $\\mathrm{EAR} = e^{r} - 1$. Substituting $r = 0.09$ gives $\\mathrm{EAR} = e^{0.09} - 1 \\approx 1.094174 - 1 = 0.094174 \\approx 9.42\\%$. This matches the claim, so the statement is True.`,
+Under continuous compounding the amount one dollar grows to in a year is $e^{r}$, so the effective annual rate is that factor less the original dollar:
+
+$$\\mathrm{EAR} = e^{r} - 1$$
+
+The bond fund quotes a nominal $r = 9\\% = 0.09$:
+
+$$\\mathrm{EAR} = e^{0.09} - 1$$
+
+Evaluate the exponential:
+
+$$e^{0.09} \\approx 1.0941743$$
+
+Subtract 1:
+
+$$\\mathrm{EAR} \\approx 0.0941743$$
+
+$$\\mathrm{EAR} \\approx 9.42\\%$$
+
+The claim names approximately 9.42% and the computed effective rate rounds to 9.42%, so the statement is true.`,
       `**B) On a \\$15,000 investment, the year-end balance is \\$16,412.61.**  (true)
 
-The year-end balance is $S(1) = 15,000 \\times e^{0.09} \\approx 15,000 \\times 1.094174 \\approx \\$16,412.61$, using $e^{0.09}$ from (A). This matches the claim exactly, so the statement is True.`,
+A continuously compounded balance after $t$ years is
+
+$$S(t) = S_0 e^{rt}$$
+
+With $S_0 = 15,000$ dollars, the fund's nominal rate $r = 0.09$, and $t = 1$ year, the exponent is $rt = 0.09$:
+
+$$S(1) = 15,000 \\times e^{0.09}$$
+
+Evaluate the growth factor:
+
+$$e^{0.09} \\approx 1.0941743$$
+
+Multiply by the amount invested:
+
+$$S(1) \\approx 15,000 \\times 1.0941743$$
+
+$$S(1) \\approx 16,412.61$$
+
+The claim names \\$16,412.61 and the computed year-end balance is \\$16,412.61, so the statement is true.`,
       `**C) The EAR exceeds the nominal rate by more than 0.75 percentage points.**  (false)
 
-The gap is $\\Delta = 9.4174\\% - 9.00\\% = 0.4174$ percentage points, which is well under the claimed $0.75$-point cutoff. So the statement is False.`,
+The gap compares the continuously compounded yield with the quoted nominal rate:
+
+$$\\Delta = \\left(e^{r} - 1\\right) - r$$
+
+With the fund's nominal rate $r = 0.09$:
+
+$$e^{0.09} \\approx 1.0941743$$
+
+$$\\mathrm{EAR} \\approx 0.0941743 \\approx 9.4174\\%$$
+
+Subtract the nominal rate:
+
+$$\\Delta \\approx 9.4174\\% - 9.00\\%$$
+
+$$\\Delta \\approx 0.4174 \\text{ percentage points}$$
+
+Compare with the cutoff named in the claim:
+
+$$0.4174 < 0.75$$
+
+The gap is a little more than half the claimed threshold, so the statement is false.`,
       `**D) If the nominal rate doubled to 18%, the resulting EAR would exceed double the original EAR.**  (true)
 
-Doubling the nominal rate to 18% raises the EAR to approximately 19.72%, which is indeed higher than double the original EAR of 18.83%. This happens because $e^{r}$ grows faster than linearly in r, so doubling the exponent more than doubles the resulting effective rate above the nominal baseline.
+The effective annual rate under continuous compounding is
 
-At $r = 0.18$:
+$$\\mathrm{EAR} = e^{r} - 1$$
+
+At the fund's actual nominal rate $r = 0.09$:
+
+$$\\mathrm{EAR} = e^{0.09} - 1$$
+
+$$e^{0.09} \\approx 1.0941743$$
+
+$$\\mathrm{EAR} \\approx 0.0941743 \\approx 9.4174\\%$$
+
+At the doubled nominal rate $r' = 0.18$:
 
 $$\\mathrm{EAR}' = e^{0.18} - 1$$
 
-$$e^{0.18} \\approx 1.197217$$
+$$e^{0.18} \\approx 1.1972174$$
 
-$$\\mathrm{EAR}' \\approx 0.197217 \\approx 19.72\\%$$
+$$\\mathrm{EAR}' \\approx 0.1972174 \\approx 19.7217\\%$$
 
-Double the original EAR:
+Double the original effective rate would be
 
 $$2 \\times 9.4174\\% = 18.8348\\%$$
 
-$$19.72\\% > 18.83\\%$$
+Compare the two figures:
 
-The new EAR exceeds double the original, so the statement is True.`,
+$$19.7217\\% > 18.8348\\%$$
+
+The reason is that $e^{0.18} = \\left(e^{0.09}\\right)^{2}$, and squaring a factor above 1 adds more than doubling its excess over 1. The doubled rate clears double the original effective rate by about 0.89 percentage points, so the statement is true.`,
       `**E) At the 18% nominal rate, the EAR exceeds 19.5%.**  (true)
 
-From (D), $\\mathrm{EAR}' \\approx 19.72\\% > 19.5\\%$. The statement is True.`,
+The effective annual rate for continuous compounding is
+
+$$\\mathrm{EAR} = e^{r} - 1$$
+
+Substitute the higher nominal rate $r = 18\\% = 0.18$:
+
+$$\\mathrm{EAR}' = e^{0.18} - 1$$
+
+Evaluate the exponential:
+
+$$e^{0.18} \\approx 1.1972174$$
+
+Subtract 1:
+
+$$\\mathrm{EAR}' \\approx 0.1972174 \\approx 19.7217\\%$$
+
+Compare with the threshold named in the claim:
+
+$$19.7217\\% > 19.5\\%$$
+
+The effective rate clears 19.5% by about 0.22 percentage points, so the statement is true.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 23,
@@ -2003,25 +3777,107 @@ $S(t) = S_0 e^{rt}$
     tactical_explanations: [
       `**A) Under yearly compounding, K = 1.1000.**  (true)
 
-The one-year growth factor under annual compounding is $K_{\\mathrm{yearly}} = 1 + i = 1 + 0.10 = 1.1000$. This matches the claim exactly, so the statement is True.`,
+The growth factor $K$ is the amount one dollar becomes after one year. With interest added once a year the factor is simply one plus the rate:
+
+$$K_{\\mathrm{yearly}} = 1 + i$$
+
+The financing contract carries $i = 10\\% = 0.10$:
+
+$$K_{\\mathrm{yearly}} = 1 + 0.10$$
+
+$$K_{\\mathrm{yearly}} = 1.1000$$
+
+The claim names 1.1000 and the computed yearly growth factor is 1.1000, so the statement is true.`,
       `**B) Under semi-annual compounding, K = 1.1025.**  (true)
 
-The growth factor is $K_{\\mathrm{semi}} = (1 + i/2)^{2} = (1.05)^{2} = 1.1025$. This matches the claim exactly, so the statement is True.`,
+With interest added twice a year, half the annual rate is applied at each of two dates, so the one-year growth factor is
+
+$$K_{\\mathrm{semi}} = \\left(1 + \\frac{i}{2}\\right)^{2}$$
+
+With $i = 10\\% = 0.10$, each half year carries $0.10/2 = 0.05$:
+
+$$K_{\\mathrm{semi}} = (1.05)^{2}$$
+
+$$K_{\\mathrm{semi}} = 1.1025$$
+
+The claim names 1.1025 and the computed semi-annual growth factor is 1.1025, so the statement is true.`,
       `**C) Under continuous compounding, K ≈ 1.1052.**  (true)
 
-The growth factor is $K_{\\mathrm{cont}} = e^{r} = e^{0.10} \\approx 1.1052$. This matches the claim, so the statement is True.`,
+Continuous compounding replaces the discrete factor with an exponential, so the amount one dollar grows to in a year is
+
+$$K_{\\mathrm{cont}} = e^{r}$$
+
+The contract's nominal rate is $r = 10\\% = 0.10$:
+
+$$K_{\\mathrm{cont}} = e^{0.10}$$
+
+$$e^{0.10} \\approx 1.1051709$$
+
+Rounded to four decimal places:
+
+$$K_{\\mathrm{cont}} \\approx 1.1052$$
+
+The claim names approximately 1.1052 and the computed factor rounds to 1.1052, so the statement is true.`,
       `**D) On the \\$75,000 balance, continuous compounding exceeds semi-annual compounding by \\$250.32.**  (false)
 
-The gap is $\\Delta = 75,000 \\times (K_{\\mathrm{cont}} - K_{\\mathrm{semi}}) = 75,000 \\times (1.1051709 - 1.1025) \\approx \\$200.32$, using $K_{\\mathrm{cont}}$ and $K_{\\mathrm{semi}}$ from (B)-(C). The claim says \\$250.32, overstating the true difference by \\$50.00. The statement is False.`,
+The dollar advantage of one schedule over another is the balance multiplied by the difference between their growth factors:
+
+$$\\Delta = P\\left(K_{\\mathrm{cont}} - K_{\\mathrm{semi}}\\right)$$
+
+The continuous factor at $r = 0.10$ is
+
+$$K_{\\mathrm{cont}} = e^{0.10} \\approx 1.1051709$$
+
+The semi-annual factor at the same rate is
+
+$$K_{\\mathrm{semi}} = (1.05)^{2} = 1.1025$$
+
+Subtract the two factors:
+
+$$K_{\\mathrm{cont}} - K_{\\mathrm{semi}} \\approx 0.0026709$$
+
+Apply that difference to the \\$75,000 balance:
+
+$$\\Delta \\approx 75,000 \\times 0.0026709$$
+
+$$\\Delta \\approx 200.32$$
+
+Compare with the figure named in the claim:
+
+$$200.32 \\neq 250.32$$
+
+The claim overstates the advantage by exactly \\$50.00, so the statement is false.`,
       `**E) The gap between semi-annual and yearly compounding is larger than the gap between continuous and semi-annual compounding.**  (false)
 
-The semi-annual-versus-yearly gap is $75,000 \\times (1.1025 - 1.1000) = \\$187.50$, which is in fact smaller than the continuous-versus-semi-annual gap of $\\$200.32$ from (D), not larger. This is consistent with the general pattern that each successive increase in compounding frequency adds a further boost, and as frequency approaches its continuous limit those incremental boosts do not need to shrink monotonically in absolute dollar terms.
+Both gaps are the \\$75,000 balance multiplied by a difference of growth factors, so all three factors are needed first. Yearly compounding at $i = 0.10$ gives
 
-$$75,000 \\times (1.1025 - 1.1000) = 75,000 \\times 0.0025 = \\$187.50$$
+$$K_{\\mathrm{yearly}} = 1 + 0.10 = 1.1000$$
 
-$$\\$187.50 < \\$200.32$$
+Semi-annual compounding halves the rate and applies it twice:
 
-The semi-versus-yearly gap is smaller, not larger, so the statement is False.`,
+$$K_{\\mathrm{semi}} = (1.05)^{2} = 1.1025$$
+
+Continuous compounding uses the exponential:
+
+$$K_{\\mathrm{cont}} = e^{0.10} \\approx 1.1051709$$
+
+The first gap in dollars is
+
+$$75,000 \\times (1.1025 - 1.1000) = 75,000 \\times 0.0025$$
+
+$$= 187.50$$
+
+The second gap in dollars is
+
+$$75,000 \\times (1.1051709 - 1.1025) = 75,000 \\times 0.0026709$$
+
+$$\\approx 200.32$$
+
+Compare the two gaps:
+
+$$187.50 < 200.32$$
+
+Moving from yearly to semi-annual adds about \\$187.50, while moving from semi-annual all the way to continuous adds about \\$200.32, so the first gap is the smaller of the two and the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 24,
@@ -2072,35 +3928,127 @@ $K_{\\mathrm{continuous}} = e^{r}$
     tactical_explanations: [
       `**A) One year from now, the balance will be approximately \\$98,500.00.**  (false)
 
-The continuous-growth balance is $S(1) = S_0 e^{r} = 95,000 \\times e^{0.045} \\approx 95,000 \\times 1.046028 \\approx \\$99,372.65$, not $\\$98,500.00$ — the stated figure is too low by roughly $\\$872.65$. The statement is False.`,
+A continuously compounded balance after one year is
+
+$$S(1) = S_0 e^{r}$$
+
+The sub-fund currently holds $S_0 = 95,000$ dollars and earns a nominal $r = 4.5\\% = 0.045$:
+
+$$S(1) = 95,000 \\times e^{0.045}$$
+
+Evaluate the growth factor:
+
+$$e^{0.045} \\approx 1.0460279$$
+
+Multiply by the current value:
+
+$$S(1) \\approx 95,000 \\times 1.0460279$$
+
+$$S(1) \\approx 99,372.65$$
+
+Compare with the figure named in the claim:
+
+$$99,372.65 \\neq 98,500.00$$
+
+The true one-year balance sits about \\$872.65 above the claim, so the statement is false.`,
       `**B) Two years from now, the balance will be approximately \\$103,946.56.**  (true)
 
-$S(2) = 95,000 \\times e^{0.045 \\times 2} = 95,000 \\times e^{0.09} \\approx 95,000 \\times 1.094174 \\approx \\$103,946.56$. This matches the claim exactly, so the statement is True.`,
+The balance after $t$ years of continuous compounding is
+
+$$S(t) = S_0 e^{rt}$$
+
+With $S_0 = 95,000$ dollars, $r = 0.045$ and $t = 2$ years, the exponent is
+
+$$rt = 0.045 \\times 2 = 0.09$$
+
+Evaluate the growth factor:
+
+$$e^{0.09} \\approx 1.0941743$$
+
+Multiply by the current value:
+
+$$S(2) \\approx 95,000 \\times 1.0941743$$
+
+$$S(2) \\approx 103,946.56$$
+
+The claim names approximately \\$103,946.56 and the computed balance is \\$103,946.56, so the statement is true.`,
       `**C) The dollar increase in year 1 is larger than the dollar increase in year 2.**  (false)
 
-The increase actually grows larger over time as the balance compounds on itself: the year-1 increase is $\\$4,372.65$, which is smaller than the year-2 increase of $\\$4,573.91$, not larger as claimed.
+Each year multiplies the balance by the same factor $e^{r}$, so a larger starting balance produces a larger dollar increase. All three balances come from
 
-$$S(1) - S(0) = 99,372.65 - 95,000.00 = \\$4,372.65$$
+$$S(t) = S_0 e^{rt}$$
 
-$$S(2) - S(1) = 103,946.56 - 99,372.65 = \\$4,573.91$$
+with $S_0 = 95,000$ dollars and $r = 0.045$. At the start,
 
-$$\\$4,372.65 < \\$4,573.91$$
+$$S(0) = 95,000.00$$
 
-Year 1 is smaller, not larger, so the statement is False.`,
+After one year, using $e^{0.045} \\approx 1.0460279$:
+
+$$S(1) \\approx 95,000 \\times 1.0460279 \\approx 99,372.65$$
+
+After two years, using $e^{0.09} \\approx 1.0941743$:
+
+$$S(2) \\approx 95,000 \\times 1.0941743 \\approx 103,946.56$$
+
+The first year's increase is
+
+$$99,372.65 - 95,000.00 = 4,372.65$$
+
+The second year's increase is
+
+$$103,946.56 - 99,372.65 = 4,573.91$$
+
+Compare the two increases:
+
+$$4,372.65 < 4,573.91$$
+
+The second year adds about \\$201.26 more than the first, so the statement is false.`,
       `**D) Each year, the balance is multiplied by a different factor.**  (false)
 
-This directly contradicts the property $S(t + 1) = S(t) \\times e^{r}$: the multiplying factor $e^{r}$ depends only on the fixed nominal rate $r$, not on the current balance, so the SAME factor ($e^{0.045} \\approx 1.0460$) is applied every year regardless of how large the balance has already grown. The statement is False.`,
+Writing the balance one year ahead against the balance today shows exactly what the multiplier is:
+
+$$S(t + 1) = S_0 e^{r(t+1)} = S_0 e^{rt} \\cdot e^{r} = S(t)\\, e^{r}$$
+
+The multiplier $e^{r}$ depends only on the nominal rate, not on the year and not on the size of the balance. With $r = 4.5\\% = 0.045$:
+
+$$e^{0.045} \\approx 1.0460279$$
+
+Check it on two consecutive years of this fund:
+
+$$\\frac{99,372.65}{95,000.00} \\approx 1.0460$$
+
+$$\\frac{103,946.56}{99,372.65} \\approx 1.0460$$
+
+The same factor of about 1.0460 applies every year, so the balance is not multiplied by a different factor each year and the statement is false.`,
       `**E) If the nominal rate were doubled to 9%, the year-over-year growth factor would also exactly double.**  (false)
 
-Doubling the rate does not double the growth factor, because $e^{2r} = (e^{r})^{2}$, not $2 \\times e^{r}$. Here $e^{0.09} \\approx 1.0942$, which is nowhere near the claimed $2.0921$ — that number instead comes from incorrectly doubling $e^{0.045}$ directly rather than doubling the exponent inside it.
+The year-over-year growth factor under continuous compounding is
 
-$$e^{0.09} \\approx 1.094174$$
+$$K = e^{r}$$
 
-$$2 \\times e^{0.045} \\approx 2 \\times 1.046028 = 2.092056$$
+At the sub-fund's actual rate $r = 4.5\\% = 0.045$:
 
-$$1.094174 \\neq 2.092056$$
+$$K = e^{0.045} \\approx 1.0460279$$
 
-The growth factor does not double, so the statement is False.`,
+At the doubled rate $r' = 9\\% = 0.09$:
+
+$$K' = e^{0.09}$$
+
+$$e^{0.09} \\approx 1.0941743$$
+
+Doubling the rate squares the factor rather than doubling it, because
+
+$$e^{0.09} = \\left(e^{0.045}\\right)^{2}$$
+
+Exactly double the original factor would instead be
+
+$$2 \\times 1.0460279 = 2.0920558$$
+
+Compare the two figures:
+
+$$1.0941743 \\neq 2.0920558$$
+
+The growth factor rises by less than five hundredths rather than doubling, so the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 25,
@@ -2151,33 +4099,135 @@ $S(t) = S_0 e^{rt}$
     tactical_explanations: [
       `**A) The fleet's value after 4 years is approximately \\$40,219.20.**  (true)
 
-Continuous depreciation follows $v(t) = v_0 e^{-\\delta t}$, so with $v_0 = 60,000$, $\\delta = 0.10$, and $t = 4$: $v(4) = 60,000 \\times e^{-0.40} \\approx 60,000 \\times 0.670320 = \\$40,219.20$. That matches the claimed value exactly, so the statement is True.`,
+Continuous depreciation removes a fixed proportion of the current value at every instant, so the value remaining follows
+
+$$v(t) = v_0 e^{-\\delta t}$$
+
+The fleet starts at $v_0 = 60,000$ dollars and depreciates at $\\delta = 0.10$ per year, so after $t = 4$ years the exponent is
+
+$$-\\delta t = -0.10 \\times 4 = -0.40$$
+
+Evaluate the decay factor:
+
+$$e^{-0.40} \\approx 0.6703200$$
+
+Multiply it by the initial value:
+
+$$v(4) \\approx 60,000 \\times 0.6703200$$
+
+$$v(4) \\approx 40,219.20$$
+
+The claim names approximately \\$40,219.20 and the computed value is \\$40,219.20, so the statement is true.`,
       `**B) The fleet's value after 7 years is approximately \\$29,795.12.**  (true)
 
-Using the same formula at $t = 7$: $v(7) = 60,000 \\times e^{-0.10 \\times 7} = 60,000 \\times e^{-0.70} \\approx 60,000 \\times 0.496585 = \\$29,795.12$. This matches the claimed 7-year value, so the statement is True.`,
+The same continuous depreciation rule works at any horizon:
+
+$$v(t) = v_0 e^{-\\delta t}$$
+
+With $v_0 = 60,000$ dollars, $\\delta = 0.10$ and $t = 7$ years, the exponent is
+
+$$-\\delta t = -0.10 \\times 7 = -0.70$$
+
+Evaluate the decay factor:
+
+$$e^{-0.70} \\approx 0.4965853$$
+
+Multiply it by the initial value:
+
+$$v(7) \\approx 60,000 \\times 0.4965853$$
+
+$$v(7) \\approx 29,795.12$$
+
+The claim names approximately \\$29,795.12 and the computed value is \\$29,795.12, so the statement is true.`,
       `**C) The 4-year value represents about 67.03% of the original \\$60,000 value.**  (true)
 
-The remaining fraction is just the value ratio $v(4)/v_0 = 40,219.20/60,000 = 0.670320 \\approx 67.03\\%$, matching the statement exactly. True.`,
+The share of value remaining is the ratio of the later value to the original one, and in the continuous model the initial value cancels:
+
+$$\\frac{v(t)}{v_0} = \\frac{v_0 e^{-\\delta t}}{v_0} = e^{-\\delta t}$$
+
+With the fleet's rate $\\delta = 0.10$ and $t = 4$ years:
+
+$$e^{-0.40} \\approx 0.6703200$$
+
+Checking against the dollar figures gives the same answer:
+
+$$\\frac{40,219.20}{60,000} = 0.6703200$$
+
+Write that as a percentage:
+
+$$0.6703200 \\approx 67.03\\%$$
+
+The claim names about 67.03% and the computed share is 67.03%, so the statement is true.`,
       `**D) If the depreciation rate were instead doubled to 20%, the 4-year value would fall below \\$25,000.**  (false)
 
-Doubling $\\delta$ to $0.20$ gives $v(4)' = 60,000 \\times e^{-0.20 \\times 4} = 60,000 \\times e^{-0.80} \\approx 60,000 \\times 0.449329 = \\$26,959.74$, which stays above \\$25,000 rather than falling below it. So the statement is False.`,
+Changing the depreciation rate changes the exponent in
+
+$$v(t) = v_0 e^{-\\delta t}$$
+
+With the doubled rate $\\delta = 0.20$ and the same horizon $t = 4$ years, the exponent becomes
+
+$$-\\delta t = -0.20 \\times 4 = -0.80$$
+
+Evaluate the decay factor:
+
+$$e^{-0.80} \\approx 0.4493290$$
+
+Multiply by the fleet's initial value:
+
+$$v(4)' \\approx 60,000 \\times 0.4493290$$
+
+$$v(4)' \\approx 26,959.74$$
+
+Compare with the threshold named in the claim:
+
+$$26,959.74 > 25,000$$
+
+Even at twice the depreciation rate the fleet stays about \\$1,959.74 above \\$25,000, so the statement is false.`,
       `**E) The fleet's dollar decline during the first year alone is larger than its dollar decline during the fourth year alone.**  (true)
 
-Because continuous depreciation removes a fixed PROPORTION of the current value each year rather than a fixed dollar amount, the dollar decline is largest when the base value is largest (i.e., early on) and shrinks as the value itself shrinks. The first-year loss of about \\$5,709.75 is indeed larger than the fourth-year loss of about \\$4,229.89, confirming this pattern.
+Continuous depreciation removes a fixed proportion of whatever value is left, so the dollar loss in a year is largest when the value entering that year is largest. Every value comes from
 
-Year-1 remaining value:
+$$v(t) = v_0 e^{-\\delta t}$$
 
-$$v(1) = 60,000 \\times e^{-0.10} \\approx 60,000 \\times 0.904837 = \\$54,290.25$$
+with $v_0 = 60,000$ dollars and $\\delta = 0.10$. At the start,
 
-so the first-year drop is $60,000 - 54,290.25 = \\$5,709.75$.
+$$v(0) = 60,000.00$$
 
-Year-3 remaining value, just before year 4:
+After one year the exponent is $-0.10$:
 
-$$v(3) = 60,000 \\times e^{-0.30} \\approx 60,000 \\times 0.740818 = \\$44,449.09$$
+$$e^{-0.10} \\approx 0.9048374$$
 
-Year-4 drop: $44,449.09 - 40,219.20 = \\$4,229.89$.
+$$v(1) \\approx 60,000 \\times 0.9048374 \\approx 54,290.25$$
 
-\\$5,709.75 > \\$4,229.89, so the first-year dollar decline is larger. True.`,
+So the first year's loss is
+
+$$v(0) - v(1) \\approx 60,000.00 - 54,290.25$$
+
+$$\\approx 5,709.75$$
+
+The fourth year runs from $t = 3$ to $t = 4$. After three years the exponent is $-0.30$:
+
+$$e^{-0.30} \\approx 0.7408182$$
+
+$$v(3) \\approx 60,000 \\times 0.7408182 \\approx 44,449.09$$
+
+After four years the exponent is $-0.40$:
+
+$$e^{-0.40} \\approx 0.6703200$$
+
+$$v(4) \\approx 60,000 \\times 0.6703200 \\approx 40,219.20$$
+
+So the fourth year's loss is
+
+$$v(3) - v(4) \\approx 44,449.09 - 40,219.20$$
+
+$$\\approx 4,229.89$$
+
+Compare the two annual losses:
+
+$$5,709.75 > 4,229.89$$
+
+The first year costs the fleet about \\$1,479.86 more than the fourth year does, so the statement is true.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 26,
@@ -2218,19 +4268,107 @@ $v(t) = v_0 e^{-\\delta t}$; fraction remaining equals $e^{-\\delta t}$; time fo
     tactical_explanations: [
       `**A) The doubling time at 5.5% is approximately 12.60 years.**  (true)
 
-Continuous doubling solves $e^{rt} = 2$, so $t = \\ln(2)/r = 0.693147/0.055 \\approx 12.60$ years, matching the statement exactly. True.`,
+Doubling under continuous compounding means the exponential factor reaches 2:
+
+$$e^{rt} = 2$$
+
+Taking natural logarithms of both sides brings the exponent down:
+
+$$rt = \\ln 2$$
+
+$$t = \\frac{\\ln 2}{r}$$
+
+The reserve account earns a nominal $r = 5.5\\% = 0.055$, and $\\ln 2 \\approx 0.693147$:
+
+$$t = \\frac{0.693147}{0.055}$$
+
+$$t \\approx 12.60 \\text{ years}$$
+
+The claim names approximately 12.60 years and the computation gives 12.60 years, so the statement is true.`,
       `**B) At exactly 12.60 years, the balance reaches approximately \\$36,000.00.**  (true)
 
-By construction $e^{rt} = 2$ at the doubling time, so the balance is exactly twice the original: $18,000 \\times 2 = \\$36,000.00$, matching the statement exactly. True.`,
+The balance under continuous compounding is
+
+$$S(t) = S_0 e^{rt}$$
+
+The doubling time is the moment when the exponential factor equals 2:
+
+$$t = \\frac{\\ln 2}{r} = \\frac{0.693147}{0.055} \\approx 12.60 \\text{ years}$$
+
+At that time the exponent is $rt = 0.055 \\times 12.6027 \\approx 0.693147$, so the factor is
+
+$$e^{0.693147} = 2$$
+
+Multiply by the trust's deposit of $S_0 = 18,000$ dollars:
+
+$$S(12.60) \\approx 18,000 \\times 2$$
+
+$$S(12.60) \\approx 36,000.00$$
+
+The claim names approximately \\$36,000.00 and the computed balance is \\$36,000.00, so the statement is true.`,
       `**C) If the rate were instead 11%, the doubling time would also be approximately 12.60 years, unchanged.**  (false)
 
-Doubling time is inversely proportional to the rate, not independent of it: doubling $r$ to $0.11$ gives $t' = \\ln(2)/0.11 = 0.693147/0.11 \\approx 6.30$ years, which is half of 12.60, not unchanged. False.`,
+The doubling time under continuous compounding is
+
+$$t = \\frac{\\ln 2}{r}$$
+
+The rate sits in the denominator, so changing it cannot leave the answer untouched. At the account's actual rate $r = 0.055$:
+
+$$t = \\frac{0.693147}{0.055} \\approx 12.60 \\text{ years}$$
+
+At the doubled rate $r' = 11\\% = 0.11$:
+
+$$t' = \\frac{0.693147}{0.11}$$
+
+$$t' \\approx 6.30 \\text{ years}$$
+
+Compare the two times:
+
+$$6.30 \\neq 12.60$$
+
+Doubling the rate halves the doubling time rather than leaving it unchanged, so the statement is false.`,
       `**D) After three full doubling periods, the balance would grow to 6 times the original principal.**  (false)
 
-Each doubling period multiplies the balance by 2 again, so three periods give a factor of $2^{3} = 8$, not 6: $18,000 \\times 8 = \\$144,000.00$, versus the $18,000 \\times 6 = \\$108,000.00$ implied by the claim. False.`,
+Each doubling period multiplies the balance by 2 again, so three of them multiply their growth factors together rather than adding them up:
+
+$$2 \\times 2 \\times 2 = 2^{3}$$
+
+$$2^{3} = 8$$
+
+Applied to the trust's deposit of $S_0 = 18,000$ dollars:
+
+$$S = 18,000 \\times 8$$
+
+$$S = 144,000.00$$
+
+The multiple named in the claim would instead give
+
+$$18,000 \\times 6 = 108,000.00$$
+
+Compare the two figures:
+
+$$144,000.00 \\neq 108,000.00$$
+
+Three doublings take the account to eight times its original size rather than six, so the statement is false.`,
       `**E) A higher interest rate r gives a longer doubling time.**  (false)
 
-Since $t = \\ln(2)/r$ has $r$ in the denominator, a larger $r$ gives a smaller (shorter) doubling time, not a longer one — exactly why raising $r$ from $5.5\\%$ to $11\\%$ in (C) cut $t$ from $12.60$ to $6.30$ years rather than lengthening it. False.`,
+The doubling time under continuous compounding solves $e^{rt} = 2$, which rearranges to
+
+$$t = \\frac{\\ln 2}{r}$$
+
+The numerator $\\ln 2 \\approx 0.693147$ is a fixed positive number and the rate sits in the denominator, so raising $r$ can only shrink $t$. The account's own figures show it. At $r = 0.055$:
+
+$$t = \\frac{0.693147}{0.055} \\approx 12.60 \\text{ years}$$
+
+At the higher rate $r = 0.11$:
+
+$$t' = \\frac{0.693147}{0.11} \\approx 6.30 \\text{ years}$$
+
+Compare the two:
+
+$$6.30 < 12.60$$
+
+The higher rate produces the shorter doubling time, not the longer one, so the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 27,
@@ -2281,19 +4419,105 @@ Doubling time: $e^{rt} = 2 \\Rightarrow t = \\ln(2)/r$
     tactical_explanations: [
       `**A) Setting $v_0 \\times e^{-\\delta t} = 0.40 v_0$ and solving gives t = ln(2.5)/δ.**  (true)
 
-Cancel $v_0$ to get $e^{-\\delta t} = 0.40$, then take natural logs: $\\delta t = -\\ln(0.40) = \\ln(1/0.40) = \\ln(2.5)$, so $t = \\ln(2.5)/\\delta$. That is exactly the claimed formula, so True.`,
+The press keeps only 40% of its value once it has lost 60%, so the condition on the time $t$ is
+
+$$v_0 e^{-\\delta t} = 0.40\\, v_0$$
+
+The initial value appears on both sides and is positive, so divide it out:
+
+$$e^{-\\delta t} = 0.40$$
+
+Take natural logarithms of both sides:
+
+$$-\\delta t = \\ln(0.40)$$
+
+Multiply through by $-1$ and use $-\\ln(0.40) = \\ln(1/0.40) = \\ln(2.5)$:
+
+$$\\delta t = \\ln(2.5)$$
+
+Divide by the depreciation rate:
+
+$$t = \\frac{\\ln(2.5)}{\\delta}$$
+
+That is exactly the formula named in the claim, so the statement is true.`,
       `**B) The press will have lost 60% of its value after approximately 5.09 years.**  (true)
 
-Plugging $\\delta = 0.18$ into that formula: $t = \\ln(2.5)/0.18 = 0.916291/0.18 \\approx 5.09$ years, matching the statement exactly. True.`,
+Losing 60% leaves 40% of the original value, so the time solves
+
+$$e^{-\\delta t} = 0.40$$
+
+Taking natural logarithms and rearranging gives
+
+$$t = \\frac{\\ln(2.5)}{\\delta}$$
+
+The press depreciates continuously at $\\delta = 18\\% = 0.18$, and $\\ln(2.5) \\approx 0.916291$:
+
+$$t = \\frac{0.916291}{0.18}$$
+
+$$t \\approx 5.09 \\text{ years}$$
+
+The claim names approximately 5.09 years and the computation gives 5.09 years, so the statement is true.`,
       `**C) At that point, the press's remaining value is approximately \\$48,000.00.**  (true)
 
-Losing $60\\%$ means keeping $40\\%$ of the original value: $120,000 \\times 0.40 = \\$48,000.00$, matching the statement exactly. True.`,
+The value left at time $t$ follows
+
+$$v(t) = v_0 e^{-\\delta t}$$
+
+The moment in question is defined by having lost 60% of the value, which means the decay factor equals $0.40$. Substitute that factor and the initial value $v_0 = 120,000$ dollars:
+
+$$v(t) = 120,000 \\times 0.40$$
+
+$$v(t) = 48,000.00$$
+
+A direct check at $t \\approx 5.0905$ years agrees:
+
+$$e^{-0.18 \\times 5.0905} = e^{-0.916291} \\approx 0.400000$$
+
+The claim names approximately \\$48,000.00 and the computed remaining value is \\$48,000.00, so the statement is true.`,
       `**D) If the depreciation rate were instead 9%, the time to lose 60% of value would double to approximately 10.18 years.**  (true)
 
-Since $t = \\ln(2.5)/\\delta$ has $\\delta$ in the denominator, halving $\\delta$ from $18\\%$ to $9\\%$ gives $t' = 0.916291/0.09 \\approx 10.18$ years, and $2 \\times 5.09 = 10.18$, confirming the time doubles. True.`,
+The time to reach a fixed remaining fraction is
+
+$$t = \\frac{\\ln(2.5)}{\\delta}$$
+
+with $\\ln(2.5) \\approx 0.916291$ fixed by the 40% target. At the press's actual rate $\\delta = 0.18$:
+
+$$t = \\frac{0.916291}{0.18} \\approx 5.09 \\text{ years}$$
+
+At the halved rate $\\delta' = 9\\% = 0.09$:
+
+$$t' = \\frac{0.916291}{0.09}$$
+
+$$t' \\approx 10.18 \\text{ years}$$
+
+Because the rate sits in the denominator, halving it doubles the time exactly:
+
+$$2 \\times 5.09 = 10.18$$
+
+The claim names approximately 10.18 years and the computation gives 10.18 years, so the statement is true.`,
       `**E) The time to lose 80% of the value is longer than the time to lose 60% of the value.**  (true)
 
-Reaching only $20\\%$ remaining (an $80\\%$ loss) requires $t_{80} = \\ln(5)/0.18 = 1.609438/0.18 \\approx 8.94$ years, which is indeed longer than the $5.09$ years needed for a $60\\%$ loss, since losing a larger share naturally takes more time. True.`,
+The time to reach a remaining fraction $f$ of the original value is
+
+$$t = \\frac{\\ln(1/f)}{\\delta}$$
+
+Losing 60% leaves $f = 0.40$, so $1/f = 2.5$ and $\\ln(2.5) \\approx 0.916291$:
+
+$$t_{60} = \\frac{0.916291}{0.18}$$
+
+$$t_{60} \\approx 5.09 \\text{ years}$$
+
+Losing 80% leaves $f = 0.20$, so $1/f = 5$ and $\\ln(5) \\approx 1.609438$:
+
+$$t_{80} = \\frac{1.609438}{0.18}$$
+
+$$t_{80} \\approx 8.94 \\text{ years}$$
+
+Compare the two times:
+
+$$8.94 > 5.09$$
+
+Giving up a larger share of value takes about 3.85 years longer, so the statement is true.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 28,
@@ -2348,65 +4572,137 @@ Time for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$
     tactical_explanations: [
       `**A) At a 3% nominal rate over 1 year, the gap between continuous and annual compounding on \\$25,000 is approximately \\$11.36.**  (true)
 
-Gap = 25,761.36 - 25,750.00 = \\$11.36, matching the statement exactly.
+The gap is the continuously compounded balance minus the annually compounded balance:
 
-Continuous and annual one-year values:
+$$\\Delta = P e^{rt} - P(1 + r)^{t}$$
 
-$$S_{\\mathrm{cont}} = 25,000 \\times e^{0.03}$$
+The deposit is $P = 25,000$ dollars at $r = 3\\% = 0.03$ for $t = 1$ year. The continuous side uses the exponential factor:
 
-$$e^{0.03} \\approx 1.030455$$
+$$e^{0.03} \\approx 1.0304545$$
 
-$$S_{\\mathrm{cont}} \\approx 25,000 \\times 1.030455 = \\$25,761.36$$
+$$S_{\\mathrm{cont}} \\approx 25,000 \\times 1.0304545$$
 
-$$S_{\\mathrm{ann}} = 25,000 \\times 1.03 = \\$25,750.00$$
+$$S_{\\mathrm{cont}} \\approx 25,761.36$$
 
-$$25,761.36 - 25,750.00 = \\$11.36$$
+The annual side applies the rate once:
 
-The 1-year 3% gap is \\$11.36. True.`,
+$$S_{\\mathrm{ann}} = 25,000 \\times 1.03$$
+
+$$S_{\\mathrm{ann}} = 25,750.00$$
+
+Subtract one balance from the other:
+
+$$\\Delta \\approx 25,761.36 - 25,750.00$$
+
+$$\\Delta \\approx 11.36$$
+
+The claim names approximately \\$11.36 and the computed gap is \\$11.36, so the statement is true.`,
       `**B) At a 15% nominal rate over 1 year, the gap between continuous and annual compounding on \\$25,000 is approximately \\$295.86.**  (true)
 
-Gap = 29,045.86 - 28,750.00 = \\$295.86, matching the statement exactly.
+The same comparison runs at the higher rate:
 
-Repeat at $r = 0.15$:
+$$\\Delta = P e^{rt} - P(1 + r)^{t}$$
 
-$$S_{\\mathrm{cont}} = 25,000 \\times e^{0.15}$$
+The deposit is $P = 25,000$ dollars at $r = 15\\% = 0.15$ for $t = 1$ year. The continuous side is
 
-$$e^{0.15} \\approx 1.161834$$
+$$e^{0.15} \\approx 1.1618342$$
 
-$$S_{\\mathrm{cont}} \\approx \\$29,045.86$$
+$$S_{\\mathrm{cont}} \\approx 25,000 \\times 1.1618342$$
 
-$$S_{\\mathrm{ann}} = 25,000 \\times 1.15 = \\$28,750.00$$
+$$S_{\\mathrm{cont}} \\approx 29,045.86$$
 
-$$29,045.86 - 28,750.00 = \\$295.86$$
+The annual side is
 
-Matches the claimed gap. True.`,
+$$S_{\\mathrm{ann}} = 25,000 \\times 1.15$$
+
+$$S_{\\mathrm{ann}} = 28,750.00$$
+
+Subtract:
+
+$$\\Delta \\approx 29,045.86 - 28,750.00$$
+
+$$\\Delta \\approx 295.86$$
+
+The claim names approximately \\$295.86 and the computed gap is \\$295.86, so the statement is true.`,
       `**C) The 1-year gap at 15% is more than 30 times larger than the 1-year gap at 3%.**  (false)
 
-The actual ratio is $295.86/11.36 \\approx 26.04$, which is less than 30, so the claim of "more than 30 times" overstates the true multiple. False.`,
+The claim is a ratio of two gaps, so both are computed on the same \\$25,000 deposit from
+
+$$\\Delta = P e^{r} - P(1 + r)$$
+
+At $r = 0.03$, using $e^{0.03} \\approx 1.0304545$:
+
+$$\\Delta_{3} \\approx 25,761.36 - 25,750.00 = 11.36$$
+
+At $r = 0.15$, using $e^{0.15} \\approx 1.1618342$:
+
+$$\\Delta_{15} \\approx 29,045.86 - 28,750.00 = 295.86$$
+
+Form the ratio the claim describes:
+
+$$\\frac{\\Delta_{15}}{\\Delta_{3}} \\approx \\frac{295.86}{11.36}$$
+
+$$\\approx 26.04$$
+
+Compare with the multiple named in the claim:
+
+$$26.04 < 30$$
+
+The larger gap is about 26 times the smaller one rather than more than 30 times, so the statement is false.`,
       `**D) Extending the 3% comparison from 1 year to 8 years increases the dollar gap to approximately \\$111.98.**  (true)
 
-Over 8 years at 3%, the gap grows to 31,781.23 - 31,669.25 = \\$111.98, matching the statement exactly.
+The gap at any horizon is the continuous balance minus the annual balance:
 
-Now $t = 8$:
+$$\\Delta = P e^{rt} - P(1 + r)^{t}$$
 
-$$S_{\\mathrm{cont}} = 25,000 \\times e^{0.03 \\times 8} = 25,000 \\times e^{0.24}$$
+The deposit is $P = 25,000$ dollars at $r = 0.03$, now held for $t = 8$ years, so the continuous exponent is
 
-$$e^{0.24} \\approx 1.271249$$
+$$rt = 0.03 \\times 8 = 0.24$$
 
-$$S_{\\mathrm{cont}} \\approx \\$31,781.23$$
+Evaluate the continuous side:
 
-$$S_{\\mathrm{ann}} = 25,000 \\times (1.03)^{8}$$
+$$e^{0.24} \\approx 1.2712492$$
 
-$$(1.03)^{8} \\approx 1.266770$$
+$$S_{\\mathrm{cont}} \\approx 25,000 \\times 1.2712492 \\approx 31,781.23$$
 
-$$S_{\\mathrm{ann}} \\approx \\$31,669.25$$
+Evaluate the annual side:
 
-$$31,781.23 - 31,669.25 = \\$111.98$$
+$$(1.03)^{8} \\approx 1.2667701$$
 
-The 8-year gap is the claimed \\$111.98. True.`,
+$$S_{\\mathrm{ann}} \\approx 25,000 \\times 1.2667701 \\approx 31,669.25$$
+
+Subtract:
+
+$$\\Delta_{8} \\approx 31,781.23 - 31,669.25$$
+
+$$\\Delta_{8} \\approx 111.98$$
+
+The claim names approximately \\$111.98 and the computed eight-year gap is \\$111.98, so the statement is true.`,
       `**E) Continuous compounding becomes less advantageous to the lender over longer holding periods.**  (false)
 
-This contradicts the calculation above: the 8-year gap ($\\$111.98$) is nearly ten times the 1-year gap ($\\$11.36$), since $111.98/11.36 \\approx 9.86$, so continuous compounding becomes MORE advantageous over longer periods, not less. False.`,
+The advantage of continuous compounding over annual compounding is
+
+$$\\Delta = P e^{rt} - P(1 + r)^{t}$$
+
+and testing it at two horizons on the same \\$25,000 deposit at $r = 0.03$ settles the direction. Over one year:
+
+$$\\Delta_{1} \\approx 25,000 \\times 1.0304545 - 25,000 \\times 1.03$$
+
+$$\\Delta_{1} \\approx 25,761.36 - 25,750.00 = 11.36$$
+
+Over eight years:
+
+$$\\Delta_{8} \\approx 25,000 \\times 1.2712492 - 25,000 \\times 1.2667701$$
+
+$$\\Delta_{8} \\approx 31,781.23 - 31,669.25 = 111.98$$
+
+Compare the two gaps:
+
+$$111.98 > 11.36$$
+
+$$\\frac{111.98}{11.36} \\approx 9.86$$
+
+The advantage grows by nearly a factor of ten as the horizon lengthens, so continuous compounding becomes more advantageous rather than less and the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 29,
@@ -2467,19 +4763,127 @@ $S_{\\mathrm{annual}} = P \\times (1+r)^{t}$
     tactical_explanations: [
       `**A) Fund A's continuous year-end value is approximately \\$439,863.54.**  (true)
 
-$S_A = 400,000 \\times e^{0.095} \\approx 400,000 \\times 1.099659 = \\$439,863.54$, matching the statement exactly. True.`,
+Continuous compounding grows an allocation by the exponential factor:
+
+$$S_A = P e^{rt}$$
+
+The firm places $P = 400,000$ dollars at a nominal $r = 9.5\\% = 0.095$ for $t = 1$ year, so the exponent is $rt = 0.095$:
+
+$$S_A = 400,000 \\times e^{0.095}$$
+
+Evaluate the growth factor:
+
+$$e^{0.095} \\approx 1.09965886$$
+
+Multiply by the allocation:
+
+$$S_A \\approx 400,000 \\times 1.09965886$$
+
+$$S_A \\approx 439,863.54$$
+
+The claim names approximately \\$439,863.54 and the computed year-end value is \\$439,863.54, so the statement is true.`,
       `**B) Fund B's monthly year-end value is approximately \\$439,750.00.**  (false)
 
-With monthly rate $0.095/12 = 0.0079167$, $S_B = 400,000 \\times (1.0079167)^{12} \\approx 400,000 \\times 1.099248 = \\$439,699.03$, not \\$439,750.00 — the statement overstates the true value by about \\$50.97. False.`,
+Monthly compounding uses the periodic form of the growth rule:
+
+$$S_B = P\\left(1 + \\frac{i}{m}\\right)^{mt}$$
+
+With $P = 400,000$ dollars, $i = 0.095$, $m = 12$ and $t = 1$ year, the monthly periodic rate is
+
+$$\\frac{0.095}{12} \\approx 0.0079167$$
+
+Raise that factor to the twelfth power:
+
+$$(1.0079167)^{12} \\approx 1.09924758$$
+
+Multiply by the allocation:
+
+$$S_B \\approx 400,000 \\times 1.09924758$$
+
+$$S_B \\approx 439,699.03$$
+
+Compare with the figure named in the claim:
+
+$$439,699.03 \\neq 439,750.00$$
+
+The true monthly value sits about \\$50.97 below the claim, so the statement is false.`,
       `**C) The maximum possible effective annual rate obtainable at a 9.5% nominal rate, under any compounding frequency, is approximately 9.50% - the same as the nominal rate itself.**  (false)
 
-The continuous-compounding ceiling is $\\mathrm{EAR}_{\\max} = e^{0.095} - 1 \\approx 1.099659 - 1 = 9.97\\%$, noticeably higher than $9.50\\%$: nominal and effective rates coincide only under annual compounding, not as a general ceiling. False.`,
+For a fixed nominal rate the effective annual rate rises with compounding frequency, and its limit as the frequency grows without bound is the continuous case:
+
+$$\\mathrm{EAR}_{\\max} = e^{r} - 1$$
+
+With $r = 9.5\\% = 0.095$:
+
+$$e^{0.095} \\approx 1.09965886$$
+
+$$\\mathrm{EAR}_{\\max} \\approx 0.09965886$$
+
+$$\\mathrm{EAR}_{\\max} \\approx 9.97\\%$$
+
+Compare with the ceiling named in the claim:
+
+$$9.97\\% \\neq 9.50\\%$$
+
+The nominal and effective rates coincide only under annual compounding, where $m = 1$:
+
+$$\\left(1 + \\frac{0.095}{1}\\right)^{1} - 1 = 9.50\\%$$
+
+That figure is the bottom of the range rather than its ceiling, which stands about 0.47 percentage points higher, so the statement is false.`,
       `**D) If Fund B switched to daily compounding, its year-end value would exceed Fund A's continuous-compounding value.**  (false)
 
-Daily compounding gives $S_{\\mathrm{daily}} = 400,000 \\times (1 + 0.095/365)^{365} \\approx 400,000 \\times 1.099645 = \\$439,858.10$, which stays just under $S_A = \\$439,863.54$: continuous compounding is the limiting case, so no finite frequency can ever exceed it at the same nominal rate. False.`,
+Daily compounding is still a finite frequency, so it uses the periodic rule:
+
+$$S = P\\left(1 + \\frac{i}{m}\\right)^{mt}$$
+
+With $P = 400,000$ dollars, $i = 0.095$, $m = 365$ and $t = 1$ year:
+
+$$\\left(1 + \\frac{0.095}{365}\\right)^{365} \\approx 1.09964526$$
+
+$$S_{\\mathrm{daily}} \\approx 400,000 \\times 1.09964526$$
+
+$$S_{\\mathrm{daily}} \\approx 439,858.10$$
+
+Fund A compounds continuously:
+
+$$S_A = 400,000 \\times e^{0.095} \\approx 400,000 \\times 1.09965886 \\approx 439,863.54$$
+
+Compare the two year-end values:
+
+$$439,858.10 < 439,863.54$$
+
+The factor $(1 + i/m)^{m}$ climbs toward $e^{i}$ as $m$ grows but never reaches it, so daily compounding stays about \\$5.44 short and the statement is false.`,
       `**E) The dollar gap between Fund A and Fund B narrows when Fund B switches from monthly to daily compounding.**  (true)
 
-The gap shrinks from $439,863.54 - 439,699.03 = \\$164.51$ (monthly) to $439,863.54 - 439,858.10 = \\$5.44$ (daily), exactly as $(1+r/n)^{n}$ converges toward $e^{r}$ as $n$ grows. True.`,
+Fund A's value is fixed by continuous compounding on the \\$400,000 allocation:
+
+$$S_A = 400,000 \\times e^{0.095}$$
+
+$$e^{0.095} \\approx 1.09965886$$
+
+$$S_A \\approx 439,863.54$$
+
+With monthly compounding, $m = 12$ and the periodic rate is $0.095/12 \\approx 0.0079167$:
+
+$$(1.0079167)^{12} \\approx 1.09924758$$
+
+$$S_B \\approx 400,000 \\times 1.09924758 \\approx 439,699.03$$
+
+$$439,863.54 - 439,699.03 = 164.51$$
+
+With daily compounding, $m = 365$:
+
+$$\\left(1 + \\frac{0.095}{365}\\right)^{365} \\approx 1.09964526$$
+
+$$S_{\\mathrm{daily}} \\approx 439,858.10$$
+
+$$439,863.54 - 439,858.10 = 5.44$$
+
+Compare the two gaps:
+
+$$5.44 < 164.51$$
+
+The gap shrinks because $(1 + i/m)^{m}$ approaches $e^{i}$ as $m$ grows, so the statement is true.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 30,
@@ -2538,29 +4942,117 @@ $EAR_{\\mathrm{max}} = e^{r} - 1$
     tactical_explanations: [
       `**A) The implied nominal continuously-compounded rate is approximately 6.67%.**  (true)
 
-Inverting $S(t) = S_0 e^{rt}$ gives $r = \\ln(S(t)/S_0)/t = \\ln(34,200/28,000)/3 = \\ln(1.221429)/3 \\approx 0.200023/3 \\approx 6.67\\%$, matching the statement exactly. True.`,
+Continuous growth over a known horizon is described by the exponential accumulation rule, and an unstated rate is recovered by inverting that rule. Start from the growth law:
+
+$$S(t) = S_0 e^{rt}$$
+
+Divide both sides by $S_0$ and take natural logarithms to bring the rate down out of the exponent:
+
+$$r = \\frac{\\ln(S(t)/S_0)}{t}$$
+
+The fund grew from $S_0 = 28,000$ to $S(3) = 34,200$ over $t = 3$ years, so substitute those three figures:
+
+$$r = \\frac{\\ln(34,200/28,000)}{3}$$
+
+$$= \\frac{\\ln(1.221429)}{3}$$
+
+$$= \\frac{0.200021}{3} \\approx 0.066674$$
+
+Written as a percentage, the implied nominal continuously compounded rate is $6.6674\\%$ per year, which rounds to $6.67\\%$. The claim gives approximately 6.67%, and the computed rate agrees to two decimal places, so the statement is true.`,
       `**B) Using this implied rate, the projected value 5 years from the start, 2 years beyond the observed data, is approximately \\$39,078.52.**  (true)
 
-Applying the implied rate for the full 5 years: $S(5) = 28,000 \\times e^{0.066674 \\times 5} = 28,000 \\times e^{0.333370} \\approx 28,000 \\times 1.395661 = \\$39,078.52$, matching the statement exactly. True.`,
+Projecting the fund forward uses the same continuous accumulation rule, applied from the original principal across the full 5-year span rather than only the observed 3 years:
+
+$$S(t) = S_0 e^{rt}$$
+
+The rate is the one implied by the observed leg of the history, recovered by inverting the same law over $t = 3$:
+
+$$r = \\frac{\\ln(34,200/28,000)}{3} = \\frac{0.200021}{3} \\approx 0.066674$$
+
+Now substitute $S_0 = 28,000$, $r \\approx 0.066674$, and $t = 5$ years:
+
+$$S(5) = 28,000 \\times e^{0.066674 \\times 5}$$
+
+$$= 28,000 \\times e^{0.333370}$$
+
+$$e^{0.333370} \\approx 1.395661$$
+
+$$S(5) \\approx 28,000 \\times 1.395661 = 39,078.52$$
+
+The claim puts the year-5 value at approximately \\$39,078.52, and the computed projection lands on that same figure to the cent, so the statement is true.`,
       `**C) A naive straight-line projection - extending the average dollar increase observed over the first 3 years for 2 more years - gives the same result as the correct exponential projection.**  (false)
 
-The naive straight-line projection assumes the DOLLAR amount added each year stays constant, giving \\$38,333.33, whereas the correct exponential projection assumes the PERCENTAGE growth rate stays constant, giving the higher figure of \\$39,078.52. Because exponential growth compounds on an ever-larger base, the two methods diverge once projected beyond the observed data, and they do not match.
+Two different projection rules are on the table here, so both have to be carried out from the same observed data and then compared. A straight-line projection adds a fixed number of dollars each year, and that fixed amount is the average annual gain already observed:
 
-Average dollar gain over the first 3 years:
+$$\\text{average annual gain} = \\frac{S(3) - S_0}{3}$$
 
-$$\\frac{34,200 - 28,000}{3} = \\frac{6,200}{3} \\approx \\$2,066.67\\mathrm{ per year}$$
+Substituting the two observed endpoints:
 
-Linear extension two more years:
+$$= \\frac{34,200 - 28,000}{3}$$
 
-$$34,200 + 2 \\times 2,066.67 = \\$38,333.33$$
+$$= \\frac{6,200}{3} \\approx 2,066.67 \\text{ per year}$$
 
-\\$38,333.33 is not \\$39,078.52. False.`,
+Extending that fixed dollar increment for 2 more years past the observed \\$34,200 balance:
+
+$$34,200 + 2 \\times 2,066.67 = 38,333.33$$
+
+The correct exponential projection instead holds the percentage rate fixed. The implied rate is recovered from the observed leg:
+
+$$r = \\frac{\\ln(34,200/28,000)}{3} = \\frac{0.200021}{3} \\approx 0.066674$$
+
+Applying that rate from the original principal over the full 5 years:
+
+$$S(5) = 28,000 \\times e^{0.066674 \\times 5} = 28,000 \\times e^{0.333370}$$
+
+$$e^{0.333370} \\approx 1.395661$$
+
+$$S(5) \\approx 39,078.52$$
+
+Now compare the two projected balances:
+
+$$39,078.52 - 38,333.33 = 745.19$$
+
+The straight-line figure sits \\$745.19 below the exponential figure, because exponential growth keeps applying the percentage to an ever larger base while the linear rule freezes the dollar increment at its old average. The two methods do not agree, so the statement is false.`,
       `**D) At the implied rate, the fund's value would double from its original \\$28,000 in approximately 12.40 years.**  (false)
 
-$t_2 = \\ln(2)/0.066674 = 0.693147/0.066674 \\approx 10.40$ years, not 12.40 years — the stated figure overstates the true doubling time by exactly 2 years. False.`,
+Doubling time under continuous compounding comes from asking when the accumulation factor reaches 2. Set $S(t) = 2S_0$ in the growth law:
+
+$$S_0 e^{rt} = 2 S_0$$
+
+Cancel $S_0$ and take natural logarithms of both sides:
+
+$$rt = \\ln 2$$
+
+$$t = \\frac{\\ln 2}{r}$$
+
+The implied rate for this fund is $r = \\ln(34,200/28,000)/3 \\approx 0.066674$ per year, so substitute that value:
+
+$$t = \\frac{0.693147}{0.066674}$$
+
+$$\\approx 10.3961 \\text{ years}$$
+
+The claim puts the doubling time at approximately 12.40 years, while the correct figure is about 10.40 years, a gap of roughly 2 years. The stated doubling time is too long, so the statement is false.`,
       `**E) If the implied rate had instead been exactly 6.00%, the 3-year value would exceed the actual observed \\$34,200.00.**  (false)
 
-At $r = 6.00\\%$: $S(3) = 28,000 \\times e^{0.18} \\approx 28,000 \\times 1.197217 = \\$33,522.09$, which is correct in dollars but is actually LOWER than the observed \\$34,200.00, not higher — a smaller assumed growth rate can never explain a larger observed increase. False.`,
+This is a what-if check, so the 3-year value has to be recomputed from scratch using the assumed rate rather than the implied one. The accumulation rule is:
+
+$$S(t) = S_0 e^{rt}$$
+
+Substitute $S_0 = 28,000$, the assumed $r = 6.00\\% = 0.06$, and $t = 3$ years:
+
+$$S(3) = 28,000 \\times e^{0.06 \\times 3}$$
+
+$$= 28,000 \\times e^{0.18}$$
+
+$$e^{0.18} \\approx 1.197217$$
+
+$$S(3) \\approx 28,000 \\times 1.197217 = 33,522.09$$
+
+Now compare that hypothetical balance with the value actually observed after 3 years:
+
+$$33,522.09 - 34,200.00 = -677.91$$
+
+A 6.00% rate produces \\$33,522.09, which is \\$677.91 below the observed \\$34,200.00, not above it. That is exactly what should be expected, since 6.00% is smaller than the 6.67% the data actually imply and a slower assumed rate cannot manufacture a larger balance. The statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 31,
@@ -2613,19 +5105,109 @@ Doubling time: $t = \\ln(2)/r$
     tactical_explanations: [
       `**A) Bank X's 2-year value is approximately \\$68,740.91.**  (true)
 
-Bank X compounds continuously at $6.8\\%$ for $2$ years: $S_X = 60,000 \\times e^{0.068 \\times 2} = 60,000 \\times e^{0.136} \\approx 60,000 \\times 1.145682 = \\$68,740.91$. True.`,
+Continuous compounding accumulates a principal by the exponential factor $e^{rt}$, with the nominal annual rate entering directly in the exponent:
+
+$$S = P e^{rt}$$
+
+Bank X quotes a nominal annual rate of $6.8\\%$ and compounds continuously, so substitute $P = 60,000$, $r = 0.068$, and $t = 2$ years:
+
+$$S_X = 60,000 \\times e^{0.068 \\times 2}$$
+
+$$= 60,000 \\times e^{0.136}$$
+
+$$e^{0.136} \\approx 1.145682$$
+
+$$S_X \\approx 60,000 \\times 1.145682 = 68,740.91$$
+
+The claim states approximately \\$68,740.91 for Bank X after 2 years, and the computed accumulation matches that figure to the cent, so the statement is true.`,
       `**B) Bank Y's 2-year value is approximately \\$68,851.32.**  (true)
 
-Bank Y compounds monthly at $6.9\\%$, so $i = 0.069/12 = 0.00575$ over $24$ periods: $S_Y = 60,000 \\times (1.00575)^{24} \\approx 60,000 \\times 1.147522 = \\$68,851.32$. True.`,
+Discrete compounding divides the nominal annual rate by the number of periods per year and raises the resulting growth factor to the total number of periods:
+
+$$S = P\\left(1 + \\frac{i}{m}\\right)^{mt}$$
+
+Bank Y compounds monthly, so $m = 12$ and the periodic rate is:
+
+$$\\frac{i}{m} = \\frac{0.069}{12} = 0.00575$$
+
+Over $t = 2$ years there are $mt = 12 \\times 2 = 24$ compounding periods. Substitute $P = 60,000$:
+
+$$S_Y = 60,000 \\times (1.00575)^{24}$$
+
+$$(1.00575)^{24} \\approx 1.147522$$
+
+$$S_Y \\approx 60,000 \\times 1.147522 = 68,851.32$$
+
+The claim gives approximately \\$68,851.32 for Bank Y after 2 years, which is exactly the computed balance, so the statement is true.`,
       `**C) Bank Z's 2-year value is approximately \\$68,932.91.**  (true)
 
-Bank Z compounds quarterly at $7.0\\%$, so $i = 0.070/4 = 0.0175$ over $8$ periods: $S_Z = 60,000 \\times (1.0175)^{8} \\approx 60,000 \\times 1.148882 = \\$68,932.91$. Comparing all three, $\\$68,740.91 < \\$68,851.32 < \\$68,932.91$, so Z is indeed highest. True.`,
+Bank Z compounds quarterly, so the same discrete compounding rule applies with four periods per year:
+
+$$S = P\\left(1 + \\frac{i}{m}\\right)^{mt}$$
+
+The quarterly periodic rate is the nominal annual rate divided by 4:
+
+$$\\frac{i}{m} = \\frac{0.070}{4} = 0.0175$$
+
+Over $t = 2$ years there are $mt = 4 \\times 2 = 8$ quarters. Substitute $P = 60,000$:
+
+$$S_Z = 60,000 \\times (1.0175)^{8}$$
+
+$$(1.0175)^{8} \\approx 1.148882$$
+
+$$S_Z \\approx 60,000 \\times 1.148882 = 68,932.91$$
+
+The claim puts Bank Z's 2-year value at approximately \\$68,932.91, and the computed figure lands on exactly that amount, so the statement is true.`,
       `**D) Despite compounding continuously, Bank X's value is actually the lowest of the three offers.**  (true)
 
-The continuous-compounding ceiling only applies when comparing different frequencies at the SAME nominal rate; here the three banks quote different rates, and Bank Z's higher $7.0\\%$ rate more than offsets its less-frequent compounding, so Bank X's value at the lowest rate ($6.8\\%$) does end up smallest of the three. True.`,
+Deciding which offer is smallest requires all three balances on the table, each computed with its own compounding rule. Bank X compounds continuously:
+
+$$S_X = 60,000 \\times e^{0.068 \\times 2} = 60,000 \\times e^{0.136}$$
+
+$$\\approx 60,000 \\times 1.145682 = 68,740.91$$
+
+Bank Y compounds monthly, with periodic rate $0.069/12 = 0.00575$ over 24 periods:
+
+$$S_Y = 60,000 \\times (1.00575)^{24}$$
+
+$$\\approx 60,000 \\times 1.147522 = 68,851.32$$
+
+Bank Z compounds quarterly, with periodic rate $0.070/4 = 0.0175$ over 8 periods:
+
+$$S_Z = 60,000 \\times (1.0175)^{8}$$
+
+$$\\approx 60,000 \\times 1.148882 = 68,932.91$$
+
+Line the three up from smallest to largest:
+
+$$68,740.91 < 68,851.32 < 68,932.91$$
+
+Bank X does finish last. The frequency advantage of continuous compounding only wins when the nominal rates are equal, and here Bank X carries the lowest rate at $6.8\\%$ against $6.9\\%$ and $7.0\\%$, a gap the extra compounding frequency cannot close. The statement is true.`,
       `**E) If Bank X's nominal rate were instead also raised to 7.0%, while keeping continuous compounding, its 2-year value would exceed Bank Z's value.**  (true)
 
-At a matched $7.0\\%$ rate, $S_X' = 60,000 \\times e^{0.07 \\times 2} = 60,000 \\times e^{0.14} \\approx 60,000 \\times 1.150274 = \\$69,016.44$, which exceeds Bank Z's $\\$68,932.91$: once the rates match, continuous compounding does beat quarterly. True.`,
+This is a what-if comparison, so Bank X has to be recomputed at the new rate and then set against Bank Z's actual balance. With continuous compounding the rule is:
+
+$$S = P e^{rt}$$
+
+Substitute $P = 60,000$, the matched rate $r = 0.070$, and $t = 2$ years:
+
+$$S_X' = 60,000 \\times e^{0.070 \\times 2}$$
+
+$$= 60,000 \\times e^{0.14}$$
+
+$$e^{0.14} \\approx 1.150274$$
+
+$$S_X' \\approx 60,000 \\times 1.150274 = 69,016.43$$
+
+Bank Z's balance comes from quarterly compounding at the same $7.0\\%$ nominal rate:
+
+$$S_Z = 60,000 \\times (1.0175)^{8} \\approx 68,932.91$$
+
+Compare the two:
+
+$$69,016.43 - 68,932.91 = 83.52$$
+
+At a matched nominal rate the continuously compounded account finishes \\$83.52 ahead, which is the standard result that $e^{r} > (1 + r/m)^{m}$ for any finite $m$. Bank X would indeed exceed Bank Z, so the statement is true.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 32,
@@ -2680,33 +5262,115 @@ $S_Z = P(1+i/4)^{4t}$
     tactical_explanations: [
       `**A) The net continuous growth rate, combining the 9% gross return and the 2% fee drag, is 11% per year.**  (false)
 
-The fee drag must be subtracted from the gross rate, not added: $r_{\\mathrm{net}} = 0.09 - 0.02 = 0.07 = 7\\%$, not 11%. False.`,
+A continuous management fee is charged at every instant, exactly as the gross return is credited at every instant, so the two rates act on the same exponent and the fee is a subtraction rather than an addition:
+
+$$r_{\\mathrm{net}} = r_{\\mathrm{gross}} - r_{\\mathrm{fee}}$$
+
+Substitute the gross return of $9\\%$ and the fee of $2\\%$:
+
+$$r_{\\mathrm{net}} = 0.09 - 0.02$$
+
+$$= 0.07 = 7\\%$$
+
+The claim asserts a net rate of 11% per year, which is what would come from adding the fee to the gross return instead of deducting it:
+
+$$0.09 + 0.02 = 0.11$$
+
+That addition would describe a fund the fee makes grow faster, which is not what a fee does. The correct net growth rate is $7\\%$, not 11%, so the statement is false.`,
       `**B) After 6 years, the net asset value is approximately \\$3,100,000.00.**  (false)
 
-Using the $7\\%$ net rate for $6$ years: $S(6) = 2,000,000 \\times e^{0.07 \\times 6} = 2,000,000 \\times e^{0.42} \\approx 2,000,000 \\times 1.521962 = \\$3,043,923.11$, not \\$3,100,000.00. False.`,
+Valuing the fund after 6 years takes two steps: first net the fee out of the gross rate, then accumulate at that net rate. The fee is continuous, so it comes straight off the exponent:
+
+$$r_{\\mathrm{net}} = 0.09 - 0.02 = 0.07$$
+
+Continuous accumulation then follows the exponential rule:
+
+$$S(t) = S_0 e^{r_{\\mathrm{net}} t}$$
+
+Substitute $S_0 = 2,000,000$, $r_{\\mathrm{net}} = 0.07$, and $t = 6$ years:
+
+$$S(6) = 2,000,000 \\times e^{0.07 \\times 6}$$
+
+$$= 2,000,000 \\times e^{0.42}$$
+
+$$e^{0.42} \\approx 1.521962$$
+
+$$S(6) \\approx 2,000,000 \\times 1.521962 = 3,043,923.11$$
+
+Compare that with the claimed figure:
+
+$$3,100,000.00 - 3,043,923.11 = 56,076.89$$
+
+The claim overstates the 6-year net asset value by about \\$56,077, so the statement is false.`,
       `**C) At this net rate, the fund's value would double in approximately 7.00 years.**  (false)
 
-The correct doubling time at the $7\\%$ net rate is $t_2 = \\ln(2)/0.07 = 0.693147/0.07 \\approx 9.90$ years, not 7.00 years — the stated figure understates the true doubling time by nearly 3 years. False.`,
+Doubling time under continuous growth comes from setting the accumulated value equal to twice the starting value:
+
+$$S_0 e^{rt} = 2 S_0$$
+
+Cancel $S_0$ and take natural logarithms:
+
+$$t = \\frac{\\ln 2}{r}$$
+
+The relevant rate here is the net rate, since the fee is deducted continuously from the gross return:
+
+$$r_{\\mathrm{net}} = 0.09 - 0.02 = 0.07$$
+
+Substitute that net rate:
+
+$$t = \\frac{0.693147}{0.07}$$
+
+$$\\approx 9.9021 \\text{ years}$$
+
+The claim puts the doubling time at approximately 7.00 years. The true figure is about 9.90 years, nearly 3 years longer, and the 7.00 figure looks like it came from reading the $7\\%$ rate itself as a number of years. The statement is false.`,
       `**D) If the management fee instead rose to 3.5%, the 6-year net value would be approximately \\$2,781,936.26, and the doubling time would shorten to approximately 12.60 years.**  (false)
 
-The 6-year value of \\$2,781,936.26 at the higher 3.5% fee is correctly computed, but the doubling time at the resulting lower 5.5% net rate is ln(2)/0.055 ≈ 12.60 years, which is LONGER than the original 9.90 years, not shorter - a smaller net growth rate always takes MORE time to double an investment, never less.
+This statement makes two separate assertions at the higher fee, so both the 6-year value and the doubling time have to be recomputed. First the new net rate:
 
-New net rate $0.09 - 0.035 = 0.055$:
+$$r_{\\mathrm{net}}' = 0.09 - 0.035 = 0.055$$
 
-$$S(6)' = 2,000,000 \\times e^{0.055 \\times 6} = 2,000,000 \\times e^{0.33}$$
+Now accumulate for 6 years at that rate:
+
+$$S(6)' = 2,000,000 \\times e^{0.055 \\times 6}$$
+
+$$= 2,000,000 \\times e^{0.33}$$
 
 $$e^{0.33} \\approx 1.390968$$
 
-$$2,000,000 \\times 1.390968 = \\$2,781,936$$
+$$S(6)' \\approx 2,000,000 \\times 1.390968 = 2,781,936.26$$
 
-$$t_2' = \\frac{0.693147}{0.055} \\approx 12.603$$
+That first figure matches the claim exactly. Next the doubling time at the new net rate, using $t = \\ln 2 / r$:
 
-years
+$$t' = \\frac{0.693147}{0.055}$$
 
-The dollar figure is right, but 12.60 years is longer than 9.90, not shorter. False.`,
+$$\\approx 12.6027 \\text{ years}$$
+
+The numerical value of 12.60 years is also correct, but the claim describes it as a shortening. Set it against the doubling time at the original $7\\%$ net rate:
+
+$$t = \\frac{0.693147}{0.07} \\approx 9.9021 \\text{ years}$$
+
+$$12.6027 - 9.9021 = 2.7006 \\text{ years}$$
+
+The higher fee lengthens the doubling time by about 2.70 years, since a smaller net growth rate always needs more time to double a balance. The dollar figure is right but the direction of the change is wrong, and the claim has to be correct in both parts to stand. The statement is false.`,
       `**E) A higher management fee always reduces both the net growth rate and the fund's cumulative value at any future date, compared to a lower fee, all else equal.**  (true)
 
-Since $r_{\\mathrm{net}} = r_{\\mathrm{gross}} - r_{\\mathrm{fee}}$, a higher fee mechanically lowers the net rate, and since $e^{rt}$ is strictly increasing in $r$, a lower net rate produces a smaller value at every future date. True.`,
+This is a general claim, so it is settled by the structure of the two formulas rather than by one numerical example. The net rate is the gross return minus the fee:
+
+$$r_{\\mathrm{net}} = r_{\\mathrm{gross}} - r_{\\mathrm{fee}}$$
+
+Holding the gross return fixed, raising $r_{\\mathrm{fee}}$ subtracts more, so the net rate falls. Writing two fee levels $r_{\\mathrm{fee}}^{H} > r_{\\mathrm{fee}}^{L}$ makes this explicit:
+
+$$r_{\\mathrm{net}}^{H} = r_{\\mathrm{gross}} - r_{\\mathrm{fee}}^{H} < r_{\\mathrm{gross}} - r_{\\mathrm{fee}}^{L} = r_{\\mathrm{net}}^{L}$$
+
+The fund's value at any future date is:
+
+$$S(t) = S_0 e^{r_{\\mathrm{net}} t}$$
+
+For any fixed $t > 0$ the exponential $e^{rt}$ is strictly increasing in $r$, so the smaller net rate produces the smaller accumulation factor:
+
+$$S_0 e^{r_{\\mathrm{net}}^{H} t} < S_0 e^{r_{\\mathrm{net}}^{L} t}$$
+
+The numbers in this task illustrate it: a $2\\%$ fee leaves \\$3,043,923.11 after 6 years while a $3.5\\%$ fee leaves \\$2,781,936.26. Both parts of the claim hold, the lower net rate and the smaller future value, so the statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 33,
@@ -2764,39 +5428,125 @@ Doubling time: $t = \\ln(2)/r_{\\mathrm{net}}$
     tactical_explanations: [
       `**A) Setting $A_0 e^{r_A t} = B_0 e^{-\\delta_B t}$ and solving for t gives $t = \\ln(B_0/A_0)/(r_A + \\delta_B)$.**  (true)
 
-Dividing both sides by $A_0 e^{-\\delta_B t}$ gives $B_0/A_0 = e^{(r_A + \\delta_B)t}$, and taking natural logs gives exactly $t = \\ln(B_0/A_0)/(r_A + \\delta_B)$, matching the claimed closed form. True.`,
+The crossover time is the moment the two value paths are equal, so set the growing asset against the shrinking one:
+
+$$A_0 e^{r_A t} = B_0 e^{-\\delta_B t}$$
+
+Divide both sides by $A_0$ and by $e^{-\\delta_B t}$, which collects both exponentials on one side:
+
+$$e^{r_A t} e^{\\delta_B t} = \\frac{B_0}{A_0}$$
+
+The two exponentials share a base, so their exponents add:
+
+$$e^{(r_A + \\delta_B)t} = \\frac{B_0}{A_0}$$
+
+Take natural logarithms of both sides:
+
+$$(r_A + \\delta_B)t = \\ln\\frac{B_0}{A_0}$$
+
+Divide by the sum of the two rates:
+
+$$t = \\frac{\\ln(B_0/A_0)}{r_A + \\delta_B}$$
+
+This is exactly the closed form the claim writes down, with the two rates adding in the denominator because one asset climbs while the other falls and the gap therefore closes at their combined speed. The statement is true.`,
       `**B) The crossover occurs at approximately t ≈ 10.06 years, at which point both assets are worth approximately \\$74,767.44.**  (true)
 
-Dividing both sides by $A_0 e^{-\\delta_B t}$ and taking natural logs of the resulting equation $B_0/A_0 = e^{(r_A + \\delta_B)t}$ gives exactly $t = \\ln(B_0/A_0)/(r_A + \\delta_B)$, matching the statement exactly.
+The crossover happens when the two values coincide, so start from that equality:
 
-Now insert $B_0/A_0 = 250,000/50,000 = 5$ and $r_A + \\delta_B = 0.04 + 0.12 = 0.16$:
+$$A_0 e^{r_A t} = B_0 e^{-\\delta_B t}$$
 
-$$t = \\frac{\\ln 5}{0.16} = \\frac{1.609438}{0.16} = 10.059$$
+Collecting the exponentials on one side and taking natural logarithms gives the closed form:
 
-years
+$$t = \\frac{\\ln(B_0/A_0)}{r_A + \\delta_B}$$
 
-$$A(10.059) = 50,000 \\times e^{0.04 \\times 10.059} = 50,000 \\times e^{0.40236}$$
+Substitute the starting values $A_0 = 50,000$ and $B_0 = 250,000$ together with $r_A = 0.04$ and $\\delta_B = 0.12$:
 
-$$e^{0.40236} \\approx 1.495349$$
+$$\\frac{B_0}{A_0} = \\frac{250,000}{50,000} = 5$$
 
-$$50,000 \\times 1.495349 = \\$74,767.44$$
+$$r_A + \\delta_B = 0.04 + 0.12 = 0.16$$
 
-Same check on B: $250,000 \\times e^{-0.12 \\times 10.059} = 250,000 \\times e^{-1.20708} \\approx \\$74,767.44$. Both the time and the common value match. True.`,
+$$t = \\frac{\\ln 5}{0.16} = \\frac{1.609438}{0.16}$$
+
+$$\\approx 10.0590 \\text{ years}$$
+
+Now value each asset at that date. Asset A grows continuously at $4\\%$:
+
+$$A(10.059) = 50,000 \\times e^{0.04 \\times 10.059} = 50,000 \\times e^{0.402360}$$
+
+$$e^{0.402360} \\approx 1.495349$$
+
+$$A(10.059) \\approx 74,767.44$$
+
+Asset B decays continuously at $12\\%$ over the same span:
+
+$$B(10.059) = 250,000 \\times e^{-0.12 \\times 10.059} = 250,000 \\times e^{-1.207080}$$
+
+$$e^{-1.207080} \\approx 0.299070$$
+
+$$B(10.059) \\approx 74,767.44$$
+
+Both paths land on the same value at the same date, matching the claimed 10.06 years and the claimed common value of approximately \\$74,767.44. The statement is true.`,
       `**C) At exactly t = 10 years, Asset A is already worth more than Asset B.**  (false)
 
-At t = 10 years, Asset A is worth approximately \\$74,591.23 while Asset B is still worth approximately \\$75,298.55 - Asset B is still ahead at this point, not Asset A, which is exactly why the crossover has not yet occurred by year 10 and instead happens slightly later, at about 10.06 years.
+Testing the claim at a specific date only requires valuing both assets at $t = 10$ and comparing. Asset A grows continuously at $4\\%$ from \\$50,000:
 
-$$A(10) = 50,000 \\times e^{0.40} \\approx 50,000 \\times 1.491825 = \\$74,591.23$$
+$$A(10) = 50,000 \\times e^{0.04 \\times 10}$$
 
-$$B(10) = 250,000 \\times e^{-1.20} \\approx 250,000 \\times 0.301194 = \\$75,298.55$$
+$$= 50,000 \\times e^{0.40}$$
 
-\\$74,591.23 < \\$75,298.55, so A has not yet overtaken B at t = 10. False.`,
+$$e^{0.40} \\approx 1.491825$$
+
+$$A(10) \\approx 74,591.23$$
+
+Asset B decays continuously at $12\\%$ from \\$250,000 over the same 10 years:
+
+$$B(10) = 250,000 \\times e^{-0.12 \\times 10}$$
+
+$$= 250,000 \\times e^{-1.20}$$
+
+$$e^{-1.20} \\approx 0.301194$$
+
+$$B(10) \\approx 75,298.55$$
+
+Compare the two balances at that date:
+
+$$75,298.55 - 74,591.23 = 707.32$$
+
+Asset B is still ahead by \\$707.32 at exactly 10 years, so Asset A has not yet overtaken it. That is consistent with the exact crossover date, $\\ln(5)/0.16 \\approx 10.06$ years, which falls just after the 10-year mark. The statement is false.`,
       `**D) Asset A can never actually overtake Asset B in value, no matter how long both trends continue.**  (false)
 
-The ratio $A(t)/B(t) = 0.2\\, e^{0.16t}$ grows without bound as $t$ increases, so it must eventually cross $1$ no matter how large the initial gap — exactly what the calculated crossover time of $t \\approx 10.06$ years confirms. False.`,
+Whether a crossover must eventually occur is answered by tracking the ratio of the two values rather than either value alone:
+
+$$\\frac{A(t)}{B(t)} = \\frac{A_0 e^{r_A t}}{B_0 e^{-\\delta_B t}}$$
+
+Exponents with a common base combine, so the ratio simplifies:
+
+$$= \\frac{A_0}{B_0} e^{(r_A + \\delta_B)t}$$
+
+Substitute $A_0/B_0 = 50,000/250,000 = 0.2$ and $r_A + \\delta_B = 0.04 + 0.12 = 0.16$:
+
+$$\\frac{A(t)}{B(t)} = 0.2\\, e^{0.16 t}$$
+
+The exponential factor grows without bound as $t$ increases, so the ratio must eventually pass 1 no matter how large the initial gap. Solving for the exact date where it equals 1:
+
+$$t = \\frac{\\ln 5}{0.16} \\approx 10.0590 \\text{ years}$$
+
+Far from never overtaking, Asset A passes Asset B after about 10.06 years, so the statement is false.`,
       `**E) For any time beyond the crossover point, Asset A's value remains higher than Asset B's value.**  (true)
 
-Once $A(t)$ exceeds $B(t)$ at the crossover, $A$ keeps growing while $B$ keeps shrinking, so the ratio $A(t)/B(t) = 0.2\\, e^{0.16t}$ only keeps rising beyond $t \\approx 10.06$, meaning Asset A stays ahead indefinitely. True.`,
+Once the two paths have crossed, the question is whether the gap can close again, and the ratio of values settles it:
+
+$$\\frac{A(t)}{B(t)} = \\frac{A_0 e^{r_A t}}{B_0 e^{-\\delta_B t}} = \\frac{A_0}{B_0} e^{(r_A + \\delta_B)t}$$
+
+Substituting $A_0/B_0 = 0.2$ and $r_A + \\delta_B = 0.16$:
+
+$$\\frac{A(t)}{B(t)} = 0.2\\, e^{0.16 t}$$
+
+Since $0.16 > 0$, this ratio is strictly increasing in $t$. It equals 1 exactly at the crossover:
+
+$$t^{\\ast} = \\frac{\\ln 5}{0.16} \\approx 10.0590 \\text{ years}$$
+
+For every $t > t^{\\ast}$ the ratio is therefore strictly greater than 1, which means $A(t) > B(t)$. Nothing can reverse it, because Asset A keeps compounding upward at $4\\%$ while Asset B keeps decaying at $12\\%$. Asset A stays ahead for all later dates, so the statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 34,
@@ -2844,19 +5594,115 @@ Crossover: $t = \\ln(B_0/A_0)/(r_A + \\delta_B)$
     tactical_explanations: [
       `**A) The annual-compounding value is exactly \\$42,800.00.**  (true)
 
-$S_1 = 40,000 \\times 1.07 = \\$42,800.00$, matching the statement exactly and exact, not approximate. True.`,
+Annual compounding credits interest once per year, so the growth factor is applied a single time over a 1-year horizon:
+
+$$S = P(1 + i)^{t}$$
+
+Substitute the reserve fund $P = 40,000$, the nominal annual rate $i = 0.07$, and $t = 1$:
+
+$$S = 40,000 \\times (1.07)^{1}$$
+
+$$= 40,000 \\times 1.07$$
+
+$$= 42,800.00$$
+
+No rounding enters anywhere, since $40,000 \\times 1.07$ terminates exactly. The claim states exactly \\$42,800.00, which is precisely the computed year-end value, so the statement is true.`,
       `**B) The quarterly-compounding value is approximately \\$42,874.36, and the monthly-compounding value is approximately \\$42,891.60.**  (true)
 
-Quarterly, with $i = 0.07/4 = 0.0175$ over $4$ periods: $S_4 = 40,000 \\times (1.0175)^{4} \\approx 40,000 \\times 1.071859 = \\$42,874.36$. Monthly, with $i = 0.07/12 = 0.0058333$ over $12$ periods: $S_{12} = 40,000 \\times (1.0058333)^{12} \\approx 40,000 \\times 1.072290 = \\$42,891.60$. Both figures match. True.`,
+Both figures come from the same discrete compounding rule, applied with different numbers of periods:
+
+$$S_m = P\\left(1 + \\frac{i}{m}\\right)^{m}$$
+
+for a 1-year horizon. Quarterly compounding uses $m = 4$, so the periodic rate is:
+
+$$\\frac{0.07}{4} = 0.0175$$
+
+$$S_4 = 40,000 \\times (1.0175)^{4}$$
+
+$$(1.0175)^{4} \\approx 1.0718590$$
+
+$$S_4 \\approx 40,000 \\times 1.0718590 = 42,874.36$$
+
+Monthly compounding uses $m = 12$, so the periodic rate is:
+
+$$\\frac{0.07}{12} \\approx 0.0058333$$
+
+$$S_{12} = 40,000 \\times (1.0058333)^{12}$$
+
+$$(1.0058333)^{12} \\approx 1.0722901$$
+
+$$S_{12} \\approx 40,000 \\times 1.0722901 = 42,891.60$$
+
+The claim gives approximately \\$42,874.36 for quarterly and approximately \\$42,891.60 for monthly, and both computed balances match to the cent, so the statement is true.`,
       `**C) The four values, from smallest to largest, are ordered annual < quarterly < monthly < continuous.**  (true)
 
-The continuous value is $S_{\\infty} = 40,000 \\times e^{0.07} \\approx 40,000 \\times 1.072508 = \\$42,900.33$. Listing all four, $\\$42,800.00 < \\$42,874.36 < \\$42,891.60 < \\$42,900.33$, confirms they are strictly increasing in exactly this order. True.`,
+Checking an ordering claim means computing all four year-end values on the same \\$40,000 principal at the same $7\\%$ nominal rate. The finite schedules use:
+
+$$S_m = P\\left(1 + \\frac{i}{m}\\right)^{m}$$
+
+$$S_1 = 40,000 \\times 1.07 = 42,800.00$$
+
+$$S_4 = 40,000 \\times (1.0175)^{4} \\approx 42,874.36$$
+
+$$S_{12} = 40,000 \\times (1.0058333)^{12} \\approx 42,891.60$$
+
+The continuous schedule uses the exponential ceiling:
+
+$$S_{\\mathrm{cont}} = P e^{r} = 40,000 \\times e^{0.07}$$
+
+$$e^{0.07} \\approx 1.0725082$$
+
+$$S_{\\mathrm{cont}} \\approx 42,900.33$$
+
+Line all four up from smallest to largest:
+
+$$42,800.00 < 42,874.36 < 42,891.60 < 42,900.33$$
+
+Annual, then quarterly, then monthly, then continuous, exactly the order the claim gives, with each increase in frequency adding a little more interest on interest within the year. The statement is true.`,
       `**D) The dollar gap between monthly and quarterly compounding is smaller than the dollar gap between continuous and monthly compounding.**  (false)
 
-The monthly-versus-quarterly gap is $42,891.60 - 42,874.36 = \\$17.24$, which is actually LARGER than the continuous-versus-monthly gap of $42,900.33 - 42,891.60 = \\$8.72$, since increments shrink as $(1+r/n)^{n}$ converges toward $e^{r}$. False.`,
+Comparing two gaps means computing both of them from the four year-end values. Quarterly and monthly compounding give:
+
+$$S_4 = 40,000 \\times (1.0175)^{4} \\approx 42,874.36$$
+
+$$S_{12} = 40,000 \\times (1.0058333)^{12} \\approx 42,891.60$$
+
+so the monthly versus quarterly gap is:
+
+$$42,891.60 - 42,874.36 = 17.24$$
+
+The continuous value is the exponential ceiling at the same nominal rate:
+
+$$S_{\\mathrm{cont}} = 40,000 \\times e^{0.07} \\approx 42,900.33$$
+
+so the continuous versus monthly gap is:
+
+$$42,900.33 - 42,891.60 = 8.72$$
+
+Set the two gaps side by side:
+
+$$17.24 > 8.72$$
+
+The monthly versus quarterly step is about twice the size of the continuous versus monthly step, not smaller, because the sequence $(1 + i/m)^{m}$ rises toward $e^{i}$ with steadily shrinking increments. The claim has the comparison backwards, so the statement is false.`,
       `**E) No compounding schedule, however frequent, can ever produce a 1-year value exceeding the continuous-compounding value of \\$42,900.33 at this same 7% nominal rate.**  (true)
 
-Since $(1+r/n)^{n} \\to e^{r}$ as $n \\to \\infty$ and the sequence is strictly increasing in $n$, the continuous value $Pe^{r}$ is the supremum that no finite-frequency schedule at the same nominal rate can ever reach or exceed. True.`,
+This is a claim about a ceiling, so it is settled by the limit that defines continuous compounding rather than by any single schedule. For a finite number of periods per year the year-end value is:
+
+$$S_m = P\\left(1 + \\frac{i}{m}\\right)^{m}$$
+
+As the frequency increases, this sequence rises and approaches the exponential:
+
+$$\\lim_{m \\to \\infty} \\left(1 + \\frac{i}{m}\\right)^{m} = e^{i}$$
+
+The sequence is strictly increasing in $m$ and never reaches its limit, so for every finite $m$:
+
+$$\\left(1 + \\frac{i}{m}\\right)^{m} < e^{i}$$
+
+Multiplying by the principal gives the ceiling in dollars at $i = 0.07$ and $P = 40,000$:
+
+$$S_{\\mathrm{cont}} = 40,000 \\times e^{0.07} \\approx 40,000 \\times 1.0725082 = 42,900.33$$
+
+The computed schedules confirm the pattern, with \\$42,800.00 annually, \\$42,874.36 quarterly, and \\$42,891.60 monthly, all below \\$42,900.33 and edging closer as the frequency rises. No finite schedule at this same $7\\%$ nominal rate can reach or pass that figure, so the statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 35,
@@ -2910,19 +5756,99 @@ $S_{\\mathrm{cont}} = P e^{r}$
     tactical_explanations: [
       `**A) Option 1 requires an upfront deposit of approximately \\$69,767.63.**  (true)
 
-Continuous present value is future value times $e^{-rt}$: $S_0 = 100,000 \\times e^{-0.045 \\times 8} = 100,000 \\times e^{-0.36} \\approx 100,000 \\times 0.697676 = \\$69,767.63$. True.`,
+Working backward from a target to a deposit is a present-value question, so the continuous accumulation rule is inverted. Starting from the growth law:
+
+$$S(t) = S_0 e^{rt}$$
+
+Solving for the amount that must be set aside today:
+
+$$S_0 = S(t) e^{-rt}$$
+
+Option 1 offers a nominal annual rate of $4.5\\%$ compounded continuously, and the target is \\$100,000 in 8 years, so substitute $r = 0.045$ and $t = 8$:
+
+$$S_0 = 100,000 \\times e^{-0.045 \\times 8}$$
+
+$$= 100,000 \\times e^{-0.36}$$
+
+$$e^{-0.36} \\approx 0.697676$$
+
+$$S_0 \\approx 100,000 \\times 0.697676 = 69,767.63$$
+
+The claim states approximately \\$69,767.63 as the upfront deposit under Option 1, which is exactly the computed present value, so the statement is true.`,
       `**B) Option 2 requires an upfront deposit of approximately \\$61,878.34.**  (true)
 
-With $r = 0.06$: $S_0 = 100,000 \\times e^{-0.06 \\times 8} = 100,000 \\times e^{-0.48} \\approx 100,000 \\times 0.618783 = \\$61,878.34$. True.`,
+Option 2 uses the same present-value rule as any continuously compounded account, with only the rate changing:
+
+$$S_0 = S(t) e^{-rt}$$
+
+Substitute the \\$100,000 target, the Option 2 rate $r = 0.06$, and the 8-year horizon:
+
+$$S_0 = 100,000 \\times e^{-0.06 \\times 8}$$
+
+$$= 100,000 \\times e^{-0.48}$$
+
+$$e^{-0.48} \\approx 0.618783$$
+
+$$S_0 \\approx 100,000 \\times 0.618783 = 61,878.34$$
+
+The claim gives approximately \\$61,878.34 for the Option 2 deposit, and the computed figure matches it to the cent, so the statement is true.`,
       `**C) Option 2 requires a larger upfront deposit than Option 1 to reach the same \\$100,000 target in 8 years.**  (false)
 
-A higher growth rate means less needs to be set aside today: $\\$61,878.34 < \\$69,767.63$, so Option 2 (the higher, 6.0% rate) actually requires the smaller deposit, not the larger one. False.`,
+Comparing the two options means computing both required deposits from the same present-value rule:
+
+$$S_0 = S(t) e^{-rt}$$
+
+Option 1 at $r = 0.045$ over 8 years:
+
+$$S_0^{(1)} = 100,000 \\times e^{-0.36} \\approx 100,000 \\times 0.697676 = 69,767.63$$
+
+Option 2 at $r = 0.06$ over the same 8 years:
+
+$$S_0^{(2)} = 100,000 \\times e^{-0.48} \\approx 100,000 \\times 0.618783 = 61,878.34$$
+
+Set the two against each other:
+
+$$61,878.34 < 69,767.63$$
+
+Option 2 requires the smaller deposit, not the larger one. The discount factor $e^{-rt}$ falls as $r$ rises, so the faster-growing account needs less money set aside today to hit the same target. The claim reverses this, so the statement is false.`,
       `**D) The difference in required upfront deposits between the two options is approximately \\$9,000.00, with Option 2 requiring the larger amount.**  (false)
 
-The correct difference is $69,767.63 - 61,878.34 = \\$7,889.29$, not \\$9,000.00, and it is Option 1 (the lower rate) that requires the larger amount, not Option 2. False.`,
+This claim asserts both a size and a direction, so both need checking against the computed deposits. From the present-value rule $S_0 = S(t)e^{-rt}$:
+
+$$S_0^{(1)} = 100,000 \\times e^{-0.36} \\approx 69,767.63$$
+
+$$S_0^{(2)} = 100,000 \\times e^{-0.48} \\approx 61,878.34$$
+
+Take the difference between them:
+
+$$69,767.63 - 61,878.34 = 7,889.29$$
+
+The gap is about \\$7,889.29, not the claimed \\$9,000.00, so the size is off by roughly \\$1,111. The direction is wrong as well, since the larger deposit belongs to Option 1 at the lower $4.5\\%$ rate rather than to Option 2. Both parts of the claim fail, so the statement is false.`,
       `**E) If the parent instead had only 4 years to reach the same \\$100,000 target under Option 1's 4.5% rate, the required upfront deposit would be smaller than the 8-year requirement.**  (false)
 
-With less time to grow, more must be set aside today: $S_0^{4} = 100,000 \\times e^{-0.045 \\times 4} = 100,000 \\times e^{-0.18} \\approx 100,000 \\times 0.835270 = \\$83,527.02$, which is larger than the 8-year requirement of \\$69,767.63, not smaller. False.`,
+Shortening the horizon changes only the exponent in the present-value rule, so the new requirement is recomputed directly:
+
+$$S_0 = S(t) e^{-rt}$$
+
+Substitute the \\$100,000 target, Option 1's rate $r = 0.045$, and the shorter horizon $t = 4$:
+
+$$S_0^{(4)} = 100,000 \\times e^{-0.045 \\times 4}$$
+
+$$= 100,000 \\times e^{-0.18}$$
+
+$$e^{-0.18} \\approx 0.835270$$
+
+$$S_0^{(4)} \\approx 83,527.02$$
+
+The 8-year requirement at the same rate was:
+
+$$S_0^{(8)} = 100,000 \\times e^{-0.36} \\approx 69,767.63$$
+
+Compare the two deposits:
+
+$$83,527.02 - 69,767.63 = 13,759.39$$
+
+Cutting the horizon in half raises the required deposit by about \\$13,759, because there is less time for compounding to do the work and more of the target has to be supplied up front. The claim says the shorter horizon needs less money today, which is backwards, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 36,
@@ -2972,57 +5898,115 @@ $S(t) = S_0 e^{rt} \\Rightarrow S_0 = S(t)/e^{rt} = S(t)\\times e^{-rt}$
     tactical_explanations: [
       `**A) Revenue at the end of year 4 is approximately \\$2,685,284.46.**  (true)
 
-$S(4) = 1,800,000 \\times e^{0.40} = \\$2,685,284.46$, matching the statement exactly.
+The first phase is ordinary continuous growth, so only the phase 1 rate and duration matter for the year-4 figure:
 
-Phase 1 only: $r_1 = 0.10$ for 4 years.
+$$S(t) = S_0 e^{rt}$$
 
-$$S(4) = 1,800,000 \\times e^{0.10 \\times 4} = 1,800,000 \\times e^{0.40}$$
+Substitute the revenue base $S_0 = 1,800,000$, the expansion rate $r_1 = 0.10$, and $t_1 = 4$ years:
+
+$$S(4) = 1,800,000 \\times e^{0.10 \\times 4}$$
+
+$$= 1,800,000 \\times e^{0.40}$$
 
 $$e^{0.40} \\approx 1.491825$$
 
-$$1,800,000 \\times 1.491825 = \\$2,685,284$$
+$$S(4) \\approx 1,800,000 \\times 1.491825 = 2,685,284.46$$
 
-True.`,
+The claim puts end-of-year-4 revenue at approximately \\$2,685,284.46, which is exactly the computed value, so the statement is true.`,
       `**B) Revenue at the end of year 7 is approximately \\$3,027,649.77.**  (true)
 
-Applying the second phase's factor to the year-4 balance gives $S(7) = 2,685,284.46 \\times e^{0.12} = \\$3,027,649.77$, matching the statement exactly.
+Two growth phases run back to back, so the year-7 figure is the year-4 balance carried forward at the slower rate:
 
-Phase 2 multiplies the year-4 stock by $e^{0.04 \\times 3} = e^{0.12}$:
+$$S(t_1 + t_2) = S(t_1) \\times e^{r_2 t_2}$$
 
-$$S(7) = 2,685,284.46 \\times e^{0.12}$$
+The year-4 balance comes from the first phase at $10\\%$:
+
+$$S(4) = 1,800,000 \\times e^{0.40} \\approx 2,685,284.46$$
+
+The maturity phase runs 3 more years at $4\\%$, so its factor is:
+
+$$e^{0.04 \\times 3} = e^{0.12}$$
 
 $$e^{0.12} \\approx 1.127497$$
 
-$$2,685,284.46 \\times 1.127497 = \\$3,027,650$$
+Apply that factor to the year-4 balance:
 
-(rounded to the claimed cent). True.`,
+$$S(7) \\approx 2,685,284.46 \\times 1.127497$$
+
+$$\\approx 3,027,649.77$$
+
+The same answer follows from combining the exponents in one step, since $e^{0.40} e^{0.12} = e^{0.52}$ and $1,800,000 \\times e^{0.52} \\approx 3,027,649.77$. The claim gives approximately \\$3,027,649.77, matching the computed value, so the statement is true.`,
       `**C) The single constant continuous rate that would have produced the same 7-year outcome starting from \\$1,800,000 is approximately 7.43%.**  (true)
 
-Because $S(7) = S_0 \\times e^{r_1 t_1+r_2 t_2}$, the single constant rate reproducing the same 7-year result solves $r_{\\mathrm{eff}} = (r_1 t_1+r_2 t_2)/7 = 0.52/7 \\approx 7.43\\%$, matching the statement exactly.
+A single constant rate reproduces the same terminal value when it produces the same total exponent, because consecutive continuous phases multiply their factors:
 
-Combined exponent:
+$$S(t_1 + t_2) = S_0 e^{r_1 t_1} e^{r_2 t_2} = S_0 e^{r_1 t_1 + r_2 t_2}$$
+
+Setting that equal to growth at one constant rate over the whole horizon:
+
+$$S_0 e^{r_{\\mathrm{eff}}(t_1 + t_2)} = S_0 e^{r_1 t_1 + r_2 t_2}$$
+
+Cancel $S_0$ and match exponents:
+
+$$r_{\\mathrm{eff}} = \\frac{r_1 t_1 + r_2 t_2}{t_1 + t_2}$$
+
+Substitute $r_1 = 0.10$ over 4 years and $r_2 = 0.04$ over 3 years:
+
+$$r_1 t_1 + r_2 t_2 = 0.40 + 0.12 = 0.52$$
+
+$$r_{\\mathrm{eff}} = \\frac{0.52}{7}$$
+
+$$\\approx 0.074286 = 7.43\\%$$
+
+As a check, $1,800,000 \\times e^{0.074286 \\times 7} = 1,800,000 \\times e^{0.52} \\approx 3,027,649.77$, the same year-7 revenue. The claim gives approximately 7.43%, matching the computed effective rate, so the statement is true.`,
+      `**D) The effective 7-year rate is higher than the plain, unweighted average of the two phase rates.**  (true)
+
+Two averages are being compared here, so both have to be computed. The effective rate is the time-weighted average, since each phase contributes its rate multiplied by how long it lasted:
+
+$$r_{\\mathrm{eff}} = \\frac{r_1 t_1 + r_2 t_2}{t_1 + t_2}$$
+
+Substituting $r_1 = 0.10$ for 4 years and $r_2 = 0.04$ for 3 years:
 
 $$r_1 t_1 + r_2 t_2 = 0.10 \\times 4 + 0.04 \\times 3 = 0.40 + 0.12 = 0.52$$
 
-$$r_{\\mathrm{eff}} = 0.52 / 7 = 0.074286 \\approx 7.43\\%$$
+$$r_{\\mathrm{eff}} = \\frac{0.52}{7} \\approx 0.074286 = 7.43\\%$$
 
-True.`,
-      `**D) The effective 7-year rate is higher than the plain, unweighted average of the two phase rates.**  (true)
+The plain unweighted average ignores the durations and simply splits the two rates evenly:
 
-The correct effective rate is the TIME-WEIGHTED average of the two phase rates, weighted by how many years each phase lasted: (10% × 4 + 4% × 3)/7 = 7.43%, which is indeed higher than the plain, unweighted average of (10% + 4%)/2 = 7.00%. This makes sense because the faster-growing 10% phase lasted longer (4 years vs. 3 years) and so should count for more, pulling the true effective rate above the simple average.
+$$\\bar{r} = \\frac{r_1 + r_2}{2} = \\frac{0.10 + 0.04}{2} = 0.07 = 7.00\\%$$
 
-$$\\frac{0.10 + 0.04}{2} = 0.07 = 7.00\\%$$
+Compare the two:
 
-$$7.43\\% > 7.00\\%$$
+$$7.43\\% - 7.00\\% = 0.43 \\text{ percentage points}$$
 
-The time-weighted rate sits above the plain average. True.`,
+The time-weighted figure sits 0.43 percentage points above the plain average, and it has to, because the faster $10\\%$ phase ran for 4 years against only 3 years at $4\\%$, so the higher rate carries the larger weight. The statement is true.`,
       `**E) If the two phases had instead occurred in the opposite order - 3 years at 4% followed by 4 years at 10% - the year-7 revenue would have come out exactly the same.**  (true)
 
-Since $S_0 \\times e^{r_1 t_1} e^{r_2 t_2} = S_0 \\times e^{r_1 t_1+r_2 t_2}$, and ordinary multiplication is commutative, the combined exponent $r_1 t_1+r_2 t_2 = 0.52$ is exactly the same regardless of which phase happens first. Reversing the order of the two phases therefore produces the identical year-7 revenue of \\$3,027,649.77, exactly as stated.
+Order matters only if the two phases combine in a way that depends on sequence, so write out the terminal value in both orders. Running the fast phase first:
+
+$$S_0 e^{r_1 t_1} e^{r_2 t_2} = S_0 e^{r_1 t_1 + r_2 t_2}$$
+
+Running the slow phase first:
+
+$$S_0 e^{r_2 t_2} e^{r_1 t_1} = S_0 e^{r_2 t_2 + r_1 t_1}$$
+
+The two exponents are the same sum written in a different order, and addition is commutative, so the two accumulation factors are identical:
 
 $$e^{0.12} \\times e^{0.40} = e^{0.52} = e^{0.40} \\times e^{0.12}$$
 
-Same terminal factor, same \\$3,027,649.77. True.`,
+Evaluate the shared exponent from the given rates and durations:
+
+$$r_1 t_1 + r_2 t_2 = 0.10 \\times 4 + 0.04 \\times 3 = 0.52$$
+
+Apply it to the revenue base:
+
+$$S(7) = 1,800,000 \\times e^{0.52}$$
+
+$$e^{0.52} \\approx 1.682028$$
+
+$$S(7) \\approx 3,027,649.77$$
+
+Whichever phase comes first, the exponent totals 0.52 and the year-7 revenue is the same \\$3,027,649.77. The claim says the reversed order produces exactly the same result, so the statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 37,
@@ -3074,55 +6058,113 @@ Effective rate: $r_{\\mathrm{eff}} = (r_1 t_1 + r_2 t_2)/(t_1+t_2)$
     tactical_explanations: [
       `**A) Solving $v_0 \\times e^{-\\delta t} = v(t)$ for δ gives δ = ln(v(t)/v_0)/t.**  (false)
 
-This has the ratio inverted: dividing both sides by $v_0$ and taking natural logs of $v_0$/v(t) - not v(t)/$v_0$ - gives δt = ln($v_0$/v(t)), so the correct formula is δ = ln($v_0$/v(t))/t. Using ln(v(t)/v_0)/t instead would produce a NEGATIVE number here, since v(t) < $v_0$, which cannot be a valid depreciation rate.
+Solving for a continuous depreciation rate starts from the decay law and isolates $\\delta$ carefully, because the direction of the ratio decides the sign. Begin with:
 
-From $v_0 e^{-\\delta t} = v(t)$:
+$$v_0 e^{-\\delta t} = v(t)$$
+
+Divide both sides by $v_0$:
 
 $$e^{-\\delta t} = \\frac{v(t)}{v_0}$$
+
+Taking natural logarithms of both sides gives a negative left side:
+
+$$-\\delta t = \\ln\\frac{v(t)}{v_0}$$
+
+Multiplying through by $-1$ flips the ratio inside the logarithm, since $-\\ln x = \\ln(1/x)$:
 
 $$\\delta t = \\ln\\frac{v_0}{v(t)}$$
 
 $$\\delta = \\frac{\\ln(v_0/v(t))}{t}$$
 
-The claimed $\\ln(v(t)/v_0)/t$ is the negative of this. False.`,
+The claim writes the ratio the other way round, as $\\ln(v(t)/v_0)/t$. Test it on this crane, where $v_0 = 85,000$ falls to $v(6) = 32,000$:
+
+$$\\frac{\\ln(32,000/85,000)}{6} = \\frac{-0.976915}{6} \\approx -0.162819$$
+
+That produces a negative rate of about $-16.28\\%$, which cannot describe depreciation of an asset losing value. The correct formula puts the original value on top, so the statement is false.`,
       `**B) The implied depreciation rate for the first crane is approximately 16.28% per year.**  (true)
 
-δ = ln(85,000/32,000)/6 ≈ 16.28%, matching the statement exactly.
+Recovering the implied rate uses the continuous decay law solved for $\\delta$, with the original value on top of the ratio so the rate comes out positive:
 
-$$\\delta = \\frac{\\ln(85,000/32,000)}{6} = \\frac{\\ln 2.65625}{6}$$
+$$\\delta = \\frac{\\ln(v_0/v(t))}{t}$$
+
+Substitute the crane's book values, $v_0 = 85,000$ falling to $v(6) = 32,000$ over $t = 6$ years:
+
+$$\\delta = \\frac{\\ln(85,000/32,000)}{6}$$
+
+$$= \\frac{\\ln 2.65625}{6}$$
 
 $$\\ln 2.65625 \\approx 0.976915$$
 
-$$0.976915 / 6 = 0.162819 \\approx 16.28\\%$$
+$$\\delta \\approx \\frac{0.976915}{6} = 0.162819$$
 
-True.`,
+As a percentage that is $16.2819\\%$ per year, which rounds to $16.28\\%$. The claim states approximately 16.28% per year, matching the computed rate to two decimal places, so the statement is true.`,
       `**C) A second, otherwise identical crane purchased for the same \\$85,000 but depreciating continuously at a known rate of 15% per year would be worth approximately \\$36,000.00 after the same 6 years.**  (false)
 
-The correctly computed value is $v(6) = 85,000 \\times e^{-0.90} = \\$34,558.42$, not \\$36,000.00 - the stated figure overstates the true value by about \\$1,441.58.
+The second crane has a known rate, so its 6-year value comes straight from the continuous decay law:
 
-$$v(6) = 85,000 \\times e^{-0.15 \\times 6} = 85,000 \\times e^{-0.90}$$
+$$v(t) = v_0 e^{-\\delta t}$$
+
+Substitute the purchase price $v_0 = 85,000$, the known rate $\\delta = 0.15$, and $t = 6$ years:
+
+$$v(6) = 85,000 \\times e^{-0.15 \\times 6}$$
+
+$$= 85,000 \\times e^{-0.90}$$
 
 $$e^{-0.90} \\approx 0.406570$$
 
-$$85,000 \\times 0.406570 = \\$34,558.42$$
+$$v(6) \\approx 85,000 \\times 0.406570 = 34,558.42$$
 
-Not \\$36,000. False.`,
+Compare that with the claimed figure:
+
+$$36,000.00 - 34,558.42 = 1,441.58$$
+
+The claim overstates the second crane's 6-year value by about \\$1,442, so the statement is false.`,
       `**D) The first crane retains more of its value after 6 years than the second crane.**  (false)
 
-This has the logic backwards: a HIGHER depreciation rate means the asset loses value FASTER, not slower, so the first crane (implied rate 16.28%) actually retains LESS value after 6 years (\\$32,000.00) than the second crane at the lower 15% rate (\\$34,558.42), not more.
+Retention is a comparison of the two 6-year values, so both need to be on the table. The first crane is written down by policy to a stated resale value after 6 years:
 
-\\$32,000 < \\$34,558.42, so the first crane retains less. False.`,
+$$v_1(6) = 32,000.00$$
+
+Its implied rate confirms how fast that decline is:
+
+$$\\delta_1 = \\frac{\\ln(85,000/32,000)}{6} \\approx 0.162819 = 16.28\\%$$
+
+The second crane starts from the same \\$85,000 and decays at the known $15\\%$:
+
+$$v_2(6) = 85,000 \\times e^{-0.15 \\times 6} = 85,000 \\times e^{-0.90}$$
+
+$$\\approx 85,000 \\times 0.406570 = 34,558.42$$
+
+Compare the two remaining values:
+
+$$32,000.00 < 34,558.42$$
+
+The first crane keeps \\$2,558.42 less after the same 6 years. That follows directly from the rates, since $16.28\\% > 15\\%$ and a faster depreciation rate strips value more quickly. The claim says the first crane retains more, which is the reverse, so the statement is false.`,
       `**E) If the first crane's target resale value had instead been set at \\$40,000 after the same 6 years, the implied depreciation rate would be higher than 16.28%.**  (false)
 
-A higher target resale value of \\$40,000 (instead of \\$32,000) means LESS value was lost over the same 6 years, which corresponds to a SMALLER implied depreciation rate, not a larger one: δ = ln(85,000/40,000)/6 ≈ 12.56%, which is LOWER than the original 16.28%, contradicting the statement.
+Changing the target resale value changes only the ratio inside the logarithm, so the implied rate is recomputed from the same inversion:
 
-$$\\delta' = \\frac{\\ln(85,000/40,000)}{6} = \\frac{\\ln 2.125}{6}$$
+$$\\delta = \\frac{\\ln(v_0/v(t))}{t}$$
+
+Substitute the same \\$85,000 starting value and 6-year horizon with the new target of \\$40,000:
+
+$$\\delta' = \\frac{\\ln(85,000/40,000)}{6}$$
+
+$$= \\frac{\\ln 2.125}{6}$$
 
 $$\\ln 2.125 \\approx 0.753772$$
 
-$$0.753772 / 6 = 0.125629 \\approx 12.56\\%$$
+$$\\delta' \\approx \\frac{0.753772}{6} = 0.125629 = 12.56\\%$$
 
-12.56% < 16.28%. False.`,
+The original target of \\$32,000 gave:
+
+$$\\delta = \\frac{\\ln 2.65625}{6} \\approx 0.162819 = 16.28\\%$$
+
+Compare the two implied rates:
+
+$$12.56\\% < 16.28\\%$$
+
+Holding on to \\$40,000 instead of \\$32,000 means less value was lost over the same 6 years, so the implied rate must be smaller, by about 3.72 percentage points here. The claim says it would be higher, so the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 38,
@@ -3174,19 +6216,97 @@ Time for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$
     tactical_explanations: [
       `**A) The doubling time at 6.5% is approximately 10.66 years.**  (true)
 
-$t_2 = \\ln(2)/0.065 = 0.693147/0.065 \\approx 10.66$ years, matching the statement exactly. True.`,
+The time needed to reach a given multiple of the initial deposit comes from setting the accumulated value equal to that multiple:
+
+$$S_0 e^{rt} = M S_0$$
+
+Cancel $S_0$ and take natural logarithms:
+
+$$t = \\frac{\\ln M}{r}$$
+
+For doubling, $M = 2$, and the account's nominal rate is $r = 0.065$ compounded continuously:
+
+$$t_2 = \\frac{\\ln 2}{0.065}$$
+
+$$= \\frac{0.693147}{0.065}$$
+
+$$\\approx 10.6638 \\text{ years}$$
+
+The claim gives approximately 10.66 years, which is exactly the computed doubling time to two decimal places. The initial \\$12,000 never enters, since it cancels out of the equation. The statement is true.`,
       `**B) The tripling time at 6.5% is approximately 16.90 years.**  (true)
 
-$t_3 = \\ln(3)/0.065 = 1.098612/0.065 \\approx 16.90$ years, matching the statement exactly. True.`,
+Tripling uses the same multiple rule as any other growth target, with $M = 3$ in place of 2:
+
+$$S_0 e^{rt} = M S_0 \\quad \\Longrightarrow \\quad t = \\frac{\\ln M}{r}$$
+
+Substitute $M = 3$ and the continuous rate $r = 0.065$:
+
+$$t_3 = \\frac{\\ln 3}{0.065}$$
+
+$$= \\frac{1.098612}{0.065}$$
+
+$$\\approx 16.9017 \\text{ years}$$
+
+The claim states approximately 16.90 years, matching the computed tripling time to two decimal places. As with doubling, the \\$12,000 principal cancels and plays no part. The statement is true.`,
       `**C) The quadrupling time at 6.5% is approximately 21.33 years, and this is exactly equal to twice the doubling time.**  (true)
 
-$t_4 = \\ln(4)/0.065 = 1.386294/0.065 \\approx 21.33$ years, and since $\\ln(4) = 2\\ln(2)$, this is exactly $2 \\times 10.66 = 21.33$, twice the doubling time. True.`,
+This claim has two parts, a value and a relationship, so both need working out. The multiple rule gives the quadrupling time with $M = 4$:
+
+$$t_M = \\frac{\\ln M}{r}$$
+
+$$t_4 = \\frac{\\ln 4}{0.065} = \\frac{1.386294}{0.065}$$
+
+$$\\approx 21.3276 \\text{ years}$$
+
+That confirms the stated 21.33 years. For the relationship, note that 4 is 2 squared, so its logarithm splits:
+
+$$\\ln 4 = \\ln 2^{2} = 2 \\ln 2$$
+
+Dividing both sides by the rate:
+
+$$t_4 = \\frac{2\\ln 2}{0.065} = 2 \\times \\frac{\\ln 2}{0.065} = 2 t_2$$
+
+Numerically, with $t_2 = 0.693147/0.065 \\approx 10.6638$ years:
+
+$$2 \\times 10.6638 = 21.3276 \\text{ years}$$
+
+Both parts hold, the value of about 21.33 years and the exact doubling relationship, so the statement is true.`,
       `**D) At the quadrupling time, the fund's value is exactly \\$48,000.00.**  (true)
 
-Four times the original principal is $12,000 \\times 4 = \\$48,000.00$, matching the statement exactly. True.`,
+The quadrupling time is defined as the moment the balance reaches 4 times the initial deposit, so the value at that date follows from the definition rather than from a fresh exponential calculation:
+
+$$S(t_4) = 4 S_0$$
+
+Substitute the initial deposit of \\$12,000:
+
+$$S(t_4) = 4 \\times 12,000$$
+
+$$= 48,000.00$$
+
+The same figure comes from the growth law directly, using $t_4 = \\ln(4)/0.065 \\approx 21.3276$ years:
+
+$$12,000 \\times e^{0.065 \\times 21.3276} = 12,000 \\times e^{1.386294} = 12,000 \\times 4 = 48,000.00$$
+
+The claim states exactly \\$48,000.00 at the quadrupling time, which is what both routes give, so the statement is true.`,
       `**E) The tripling time must be exactly 1.5 times the doubling time.**  (false)
 
-Since $t = \\ln(M)/r$, the ratio of tripling to doubling time is $\\ln(3)/\\ln(2) \\approx 1.58496$, not the naive multiplier ratio $3/2 = 1.5$ — close but not equal. False.`,
+The ratio of two multiple-times is determined by the logarithms, not by the multiples themselves. From the general rule:
+
+$$t_M = \\frac{\\ln M}{r}$$
+
+Form the ratio of tripling time to doubling time, where the rate cancels:
+
+$$\\frac{t_3}{t_2} = \\frac{\\ln 3 / r}{\\ln 2 / r} = \\frac{\\ln 3}{\\ln 2}$$
+
+Evaluate it:
+
+$$\\frac{1.098612}{0.693147} \\approx 1.58496$$
+
+The claim asserts a ratio of exactly 1.5, which is what would follow from comparing the multiples $3/2$ directly. Compare the two:
+
+$$1.58496 - 1.5 = 0.08496$$
+
+Checking in years, $t_3 \\approx 16.9017$ while $1.5 \\times t_2 = 1.5 \\times 10.6638 \\approx 15.9957$, a difference of about 0.91 years. The ratio is close to 1.5 but not equal to it, and the claim says exactly, so the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 39,
@@ -3238,51 +6358,113 @@ Time to reach multiple $M$: $t = \\ln(M)/r$
     tactical_explanations: [
       `**A) Asset A's value after 5 years is approximately \\$202,478.82.**  (true)
 
-$A(5) = 150,000 \\times e^{0.06 \\times 5} = 150,000 \\times e^{0.30} \\approx 150,000 \\times 1.349859 = \\$202,478.82$. True.`,
+Asset A is a straightforward continuous growth calculation, using the accumulation rule:
+
+$$A(t) = A_0 e^{r_A t}$$
+
+Substitute the current value $A_0 = 150,000$, the growth rate $r_A = 0.06$, and $t = 5$ years:
+
+$$A(5) = 150,000 \\times e^{0.06 \\times 5}$$
+
+$$= 150,000 \\times e^{0.30}$$
+
+$$e^{0.30} \\approx 1.349859$$
+
+$$A(5) \\approx 150,000 \\times 1.349859 = 202,478.82$$
+
+The claim gives approximately \\$202,478.82 for Asset A after 5 years, matching the computed value to the cent, so the statement is true.`,
       `**B) Asset B's value after 5 years is approximately \\$140,278.19.**  (true)
 
-$B$ depreciates: $B(5) = 220,000 \\times e^{-0.09 \\times 5} = 220,000 \\times e^{-0.45} \\approx 220,000 \\times 0.637628 = \\$140,278.19$. True.`,
+Asset B is depreciating rather than growing, so the rate enters the exponent with a negative sign:
+
+$$B(t) = B_0 e^{-\\delta_B t}$$
+
+Substitute the current value $B_0 = 220,000$, the depreciation rate $\\delta_B = 0.09$, and $t = 5$ years:
+
+$$B(5) = 220,000 \\times e^{-0.09 \\times 5}$$
+
+$$= 220,000 \\times e^{-0.45}$$
+
+$$e^{-0.45} \\approx 0.637628$$
+
+$$B(5) \\approx 220,000 \\times 0.637628 = 140,278.19$$
+
+The machinery keeps about $63.8\\%$ of its current value over the 5 years. The claim gives approximately \\$140,278.19, which is exactly the computed value, so the statement is true.`,
       `**C) Asset C's value after 5 years is approximately \\$130,000.00.**  (false)
 
-Chaining the two growth phases correctly gives $C(3) = \\$127,124.92$ and then $C(5) = C(3) \\times e^{0.06} = \\$134,985.88$, not \\$130,000.00 - the stated figure understates the true value by about \\$4,985.88.
+Asset C grows at two different rates in sequence, so the two phases have to be chained. The first phase runs 3 years at $8\\%$:
 
-First 3 years at 8%:
+$$C(3) = 100,000 \\times e^{0.08 \\times 3}$$
 
-$$C(3) = 100,000 \\times e^{0.08 \\times 3} = 100,000 \\times e^{0.24}$$
+$$= 100,000 \\times e^{0.24}$$
 
 $$e^{0.24} \\approx 1.271249$$
 
-$$C(3) \\approx \\$127,124.92$$
+$$C(3) \\approx 127,124.92$$
 
-Then 2 years at 3%:
+The second phase carries that balance 2 more years at $3\\%$:
 
-$$C(5) = 127,124.92 \\times e^{0.03 \\times 2} = 127,124.92 \\times e^{0.06}$$
+$$C(5) = C(3) \\times e^{0.03 \\times 2}$$
+
+$$= 127,124.92 \\times e^{0.06}$$
 
 $$e^{0.06} \\approx 1.061837$$
 
-$$C(5) \\approx \\$134,985.88$$
+$$C(5) \\approx 134,985.88$$
 
-Not \\$130,000. False.`,
+The same result follows from adding the exponents, since $e^{0.24} e^{0.06} = e^{0.30}$ and $100,000 \\times e^{0.30} \\approx 134,985.88$. Compare with the claim:
+
+$$134,985.88 - 130,000.00 = 4,985.88$$
+
+The claim understates Asset C's 5-year value by about \\$4,986, so the statement is false.`,
       `**D) The combined portfolio value after 5 years is less than the sum of the three original principals.**  (false)
 
-Adding the three 5-year values gives 202,478.82 + 140,278.19 + 134,985.88 = \\$477,742.89, which is actually MORE than the \\$470,000.00 sum of the three original principals, not less - the combined growth of Assets A and C outweighs the shrinkage of Asset B over this particular 5-year horizon.
+This comparison needs all three 5-year values and the sum of the three principals. Asset A grows continuously at $6\\%$:
 
-$$202,478.82 + 140,278.19 + 134,985.88 = \\$477,742.89$$
+$$A(5) = 150,000 \\times e^{0.30} \\approx 202,478.82$$
 
-Principals: $150,000 + 220,000 + 100,000 = \\$470,000$.
+Asset B depreciates continuously at $9\\%$:
 
-\\$477,742.89 > \\$470,000, so the "less than" comparison is backwards. False.`,
+$$B(5) = 220,000 \\times e^{-0.45} \\approx 140,278.19$$
+
+Asset C grows at $8\\%$ for 3 years and then $3\\%$ for 2 years, so its exponents add:
+
+$$C(5) = 100,000 \\times e^{0.24} e^{0.06} = 100,000 \\times e^{0.30} \\approx 134,985.88$$
+
+These are nominal undiscounted dollars, so they add directly:
+
+$$202,478.82 + 140,278.19 + 134,985.88 = 477,742.89$$
+
+The three original principals add to:
+
+$$150,000 + 220,000 + 100,000 = 470,000.00$$
+
+Compare the two totals:
+
+$$477,742.89 - 470,000.00 = 7,742.89$$
+
+The portfolio ends up about \\$7,743 above the principal sum, because the gains on Assets A and C together outweigh the decline in Asset B over this particular horizon. The claim says the total is less, so the statement is false.`,
       `**E) If Asset B's rate had instead been a continuous growth rate of the same 9% magnitude, its 5-year value would exceed \\$340,000.00.**  (true)
 
-Replacing Asset B's 9% depreciation with a 9% continuous growth rate over the same 5 years gives $220,000 \\times e^{0.45} \\approx \\$345,028.68$, which does exceed \\$340,000.00, illustrating just how large the swing is between shrinking and growing at the same magnitude rate over a multi-year horizon.
+This is a what-if on Asset B, replacing decay with growth of the same magnitude, so the sign in the exponent flips:
 
-$$B(5)' = 220,000 \\times e^{0.09 \\times 5} = 220,000 \\times e^{0.45}$$
+$$B(t)' = B_0 e^{+\\delta t}$$
+
+Substitute $B_0 = 220,000$, the same $9\\%$ magnitude, and $t = 5$ years:
+
+$$B(5)' = 220,000 \\times e^{0.09 \\times 5}$$
+
+$$= 220,000 \\times e^{0.45}$$
 
 $$e^{0.45} \\approx 1.568312$$
 
-$$220,000 \\times 1.568312 = \\$345,028.68$$
+$$B(5)' \\approx 220,000 \\times 1.568312 = 345,028.68$$
 
-\\$345,028.68 > \\$340,000. True.`,
+Compare that with the threshold in the claim:
+
+$$345,028.68 - 340,000.00 = 5,028.68$$
+
+The hypothetical growing asset clears \\$340,000.00 by about \\$5,029. The size of the swing is worth noting, since the same $9\\%$ magnitude produces \\$140,278.19 when it shrinks the asset and \\$345,028.68 when it grows it. The statement is true.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 40,
@@ -3330,19 +6512,91 @@ Portfolio total: $A(5) + B(5) + C(5)$
     tactical_explanations: [
       `**A) The discount factor is approximately 0.9524.**  (true)
 
-The one-period discount factor is $(1+r)^{-1} = (1.05)^{-1} = 1/1.05 \\approx 0.9524$, matching the statement exactly. True.`,
+The discount factor is the number that converts one dollar received at a future date into dollars today. Under annual compounding it is the reciprocal of the growth factor:
+
+$$\\text{discount factor} = (1+r)^{-t}$$
+
+The bonus is payable in exactly 1 year and the prevailing rate is $5\\%$ per year, so substitute $r = 0.05$ and $t = 1$:
+
+$$(1.05)^{-1} = \\frac{1}{1.05}$$
+
+$$\\approx 0.952381$$
+
+Rounded to four decimal places that is 0.9524, which is what the claim states. Every dollar promised a year from now is worth about 95.24 cents today at this rate, so the statement is true.`,
       `**B) The PDV of the \\$8,000 bonus is approximately \\$7,619.05.**  (true)
 
-$PDV = K(1+r)^{-t} = 8,000/1.05 \\approx \\$7,619.05$, matching the statement exactly. True.`,
+Present value discounts a single future amount back to today using the annual compounding rule:
+
+$$PDV = K(1+r)^{-t}$$
+
+Substitute the promised bonus $K = 8,000$, the rate $r = 0.05$, and the 1-year wait $t = 1$:
+
+$$PDV = 8,000 \\times (1.05)^{-1}$$
+
+$$= \\frac{8,000}{1.05}$$
+
+$$\\approx 7,619.05$$
+
+The same figure comes from applying the discount factor directly, since $8,000 \\times 0.952381 \\approx 7,619.05$. The claim gives approximately \\$7,619.05 as the present value of the bonus, matching the computed amount to the cent, so the statement is true.`,
       `**C) If the interest rate were 10% instead of 5%, the PDV of the \\$8,000 bonus would be higher than its value under the original 5% rate.**  (false)
 
-Raising the discount rate makes future money worth less today, not more. At $r = 0.10$: $PDV = 8,000/1.10 \\approx \\$7,272.73$, which is lower than the $\\$7,619.05$ found at $5\\%$, so the direction is backwards. False.`,
+Changing the rate changes only the discount factor, so the present value is recomputed at the new rate and compared with the original. The rule is:
+
+$$PDV = K(1+r)^{-t}$$
+
+At the original $5\\%$:
+
+$$PDV_{5\\%} = \\frac{8,000}{1.05} \\approx 7,619.05$$
+
+At the hypothetical $10\\%$:
+
+$$PDV_{10\\%} = \\frac{8,000}{1.10}$$
+
+$$\\approx 7,272.73$$
+
+Compare the two present values:
+
+$$7,619.05 - 7,272.73 = 346.32$$
+
+Doubling the rate lowers the present value by about \\$346, not raises it. That is the general behaviour of the formula, since $(1+r)^{-t}$ shrinks as $r$ grows, meaning a higher required return makes any fixed future sum worth less today. The claim states the opposite direction, so the statement is false.`,
       `**D) The difference between the \\$8,000 future bonus and its present value is approximately \\$423.81.**  (false)
 
-The gap is simply $8,000 - 7,619.05 = \\$380.95$, not \\$423.81. False.`,
+The gap between a future amount and its present value is the interest that the waiting period accounts for, so both figures are needed. First the present value under annual compounding:
+
+$$PDV = K(1+r)^{-t} = \\frac{8,000}{1.05} \\approx 7,619.05$$
+
+Now subtract it from the face amount of the bonus:
+
+$$8,000.00 - 7,619.05$$
+
+$$= 380.95$$
+
+Compare with the claimed gap:
+
+$$423.81 - 380.95 = 42.86$$
+
+The true difference is about \\$380.95, roughly \\$43 below the claimed \\$423.81. As a check, \\$7,619.05 grown forward one year at $5\\%$ gives $7,619.05 \\times 1.05 \\approx 8,000.00$, confirming the present value and therefore the gap. The statement is false.`,
       `**E) If the interest rate were 0% per year, the present value of the \\$8,000 bonus would be exactly \\$7,500.**  (false)
 
-At $r = 0\\%$, the discount factor is $(1.00)^{-1} = 1$, so $PDV = 8,000 \\times 1 = \\$8,000$, the unchanged face amount, not \\$7,500. False.`,
+At a zero interest rate there is no compensation for waiting, so the discount factor has to be evaluated rather than guessed. The rule is:
+
+$$PDV = K(1+r)^{-t}$$
+
+Substitute $r = 0$ and $t = 1$:
+
+$$(1 + 0)^{-1} = 1^{-1} = 1$$
+
+Apply that factor to the \\$8,000 bonus:
+
+$$PDV = 8,000 \\times 1$$
+
+$$= 8,000.00$$
+
+Compare with the claimed figure:
+
+$$8,000.00 - 7,500.00 = 500.00$$
+
+At $r = 0$ the present value equals the full face amount, because a dollar next year is worth exactly a dollar today when waiting costs nothing. The claim puts it at \\$7,500, which is \\$500 too low, so the statement is false.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 41,
@@ -3389,47 +6643,109 @@ $PDV = K(1+r)^{-t}$
     tactical_explanations: [
       `**A) The continuous discount factor is approximately 0.8353.**  (true)
 
-Raising e to the power -0.18 (the product of the rate 0.06 and the time 3) gives the fraction of the future payment that survives continuous discounting over those 3 years, which works out to approximately 0.8353.
+Continuous discounting shrinks a future payment by the factor $e^{-rt}$, where the rate and the horizon multiply inside the exponent:
 
-Continuous discounting uses $e^{-rt}$. The exponent is the product
+$$\\text{discount factor} = e^{-rt}$$
+
+The client discounts at $6\\%$ per year and the milestone payment arrives in 3 years, so first form the exponent:
 
 $$rt = 0.06 \\times 3 = 0.18$$
 
-$$e^{-0.18} \\approx 0.835270 \\approx 0.8353$$`,
+Now evaluate the factor at that exponent:
+
+$$e^{-0.18} \\approx 0.835270$$
+
+Rounded to four decimal places this is 0.8353, exactly the figure in the claim. In words, about $83.53\\%$ of the payment's face value survives three years of continuous discounting at this rate, so the statement is true.`,
       `**B) The PDV of the \\$12,000 payment is approximately \\$10,023.24.**  (true)
 
-Multiplying the \\$12,000 payment by the continuous discount factor of 0.8353 gives its present value: 12,000 × 0.8353 ≈ \\$10,023.24, exactly as the formula $Ke^{-rt}$ requires.
+Present value under continuous compounding multiplies the future amount by the exponential discount factor:
 
-$$PDV = K e^{-rt} = 12,000 \\times 0.835270 \\approx \\$10,023.24$$`,
+$$PDV = K e^{-rt}$$
+
+Substitute the milestone payment $K = 12,000$, the rate $r = 0.06$, and the horizon $t = 3$ years. The exponent is:
+
+$$rt = 0.06 \\times 3 = 0.18$$
+
+$$e^{-0.18} \\approx 0.835270$$
+
+Apply the factor to the payment:
+
+$$PDV = 12,000 \\times 0.835270$$
+
+$$\\approx 10,023.24$$
+
+The claim gives approximately \\$10,023.24 for the present value of the \\$12,000 payment, which is exactly the computed figure, so the statement is true.`,
       `**C) The present value computed with continuous compounding is greater than the present value computed with annual compounding at the same 6% rate over the same 3 years.**  (false)
 
-Continuous compounding grows capital faster than annual compounding at the same stated rate, because interest is being added at every instant rather than once a year. Since it grows money fastest, it also discounts future money the hardest, so the continuous-compounding present value (\\$10,023.24) actually ends up smaller than the annual-compounding present value (\\$10,075.66), not greater.
+Two discounting conventions are being compared at the same stated rate, so both present values have to be computed. Continuous discounting uses the exponential factor:
 
-Annual compounding at the same 6% over 3 years is a different formula:
+$$PDV_{\\mathrm{cont}} = K e^{-rt}$$
 
-$$PDV_{\\mathrm{ann}} = 12,000 \\times (1.06)^{-3}$$
+$$= 12,000 \\times e^{-0.06 \\times 3} = 12,000 \\times e^{-0.18}$$
 
-$$(1.06)^{3} = 1.191016, \\quad 12,000/1.191016 \\approx \\$10,075.66$$
+$$e^{-0.18} \\approx 0.835270$$
 
-Continuous PDV $\\$10,023.24$ is the smaller of the two, so the claim that continuous PDV is greater is backwards.`,
+$$PDV_{\\mathrm{cont}} \\approx 10,023.24$$
+
+Annual compounding uses the discrete factor over 3 whole years:
+
+$$PDV_{\\mathrm{ann}} = K(1+r)^{-t}$$
+
+$$= 12,000 \\times (1.06)^{-3}$$
+
+$$(1.06)^{3} \\approx 1.191016$$
+
+$$PDV_{\\mathrm{ann}} \\approx \\frac{12,000}{1.191016} \\approx 10,075.43$$
+
+Compare the two present values:
+
+$$10,075.43 - 10,023.24 = 52.19$$
+
+The continuous figure is the smaller of the two by about \\$52. The reason is that continuous compounding grows money faster at the same stated rate, since interest is credited at every instant rather than once a year, and a convention that grows money faster must also discount it harder. The claim says the continuous present value is greater, which reverses this, so the statement is false.`,
       `**D) The annual-compounding PDV exceeds the continuous-compounding PDV by approximately \\$60.00.**  (false)
 
-Subtracting the smaller continuous-compounding value from the larger annual-compounding value gives 10,075.66 - 10,023.24 = \\$52.42, not \\$60.00, so the stated gap overstates the true difference.
+This claim is about the size of the gap, so both present values are needed and then their difference. Continuous discounting gives:
 
-$$10,075.66 - 10,023.24 = \\$52.42$$
+$$PDV_{\\mathrm{cont}} = 12,000 \\times e^{-0.18} \\approx 12,000 \\times 0.835270 \\approx 10,023.24$$
 
-Not $\\$60.00$.`,
+Annual compounding at the same $6\\%$ over the same 3 years gives:
+
+$$PDV_{\\mathrm{ann}} = \\frac{12,000}{(1.06)^{3}} = \\frac{12,000}{1.191016} \\approx 10,075.43$$
+
+Subtract the smaller from the larger:
+
+$$10,075.43 - 10,023.24$$
+
+$$= 52.19$$
+
+Compare that with the claimed gap:
+
+$$60.00 - 52.19 = 7.81$$
+
+The annual-compounding present value does exceed the continuous one, but by about \\$52.19 rather than \\$60.00, so the claimed figure overstates the difference by nearly \\$8. The statement is false.`,
       `**E) If the payment were instead due in 6 years rather than 3, its present value would be less than the present value found for the original 3-year horizon.**  (true)
 
-A payment further in the future is discounted more heavily, since there are more years over which the discounting effect compounds. At 6 years, the present value falls to approximately \\$8,372.11, which is indeed lower than the 3-year figure of \\$10,023.24.
+Lengthening the horizon changes only the exponent, so the new present value is recomputed and set against the original. The rule is:
 
-Doubling the horizon to $t = 6$:
+$$PDV = K e^{-rt}$$
 
-$$rt = 0.06 \\times 6 = 0.36, \\quad e^{-0.36} \\approx 0.697676$$
+At the original 3-year horizon:
 
-$$PDV = 12,000 \\times 0.697676 \\approx \\$8,372.11$$
+$$PDV_3 = 12,000 \\times e^{-0.18} \\approx 12,000 \\times 0.835270 \\approx 10,023.24$$
 
-$$8,372.11 < 10,023.24$$`,
+At the doubled 6-year horizon the exponent doubles as well:
+
+$$rt = 0.06 \\times 6 = 0.36$$
+
+$$e^{-0.36} \\approx 0.697676$$
+
+$$PDV_6 = 12,000 \\times 0.697676 \\approx 8,372.12$$
+
+Compare the two present values:
+
+$$10,023.24 - 8,372.12 = 1,651.12$$
+
+Waiting twice as long costs about \\$1,651 of present value, because $e^{-rt}$ falls as $t$ rises and the discount factor over 6 years is the square of the factor over 3 years. The claim says the 6-year present value is lower, which is what the arithmetic shows, so the statement is true.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 42,
@@ -3476,19 +6792,101 @@ $PDV = Ke^{-rt}$
     tactical_explanations: [
       `**A) The annual discount factor is approximately 0.5820.**  (true)
 
-$(1.07)^{8} \\approx 1.718186$, so the discount factor is $(1.07)^{-8} = 1/1.718186 \\approx 0.5820$, matching the statement exactly. True.`,
+The annual discount factor converts one dollar at the payout date into dollars today, and it is the reciprocal of the compound growth factor:
+
+$$\\text{discount factor} = (1+r)^{-t}$$
+
+The escrowed proceeds arrive in 8 years at a rate of $7\\%$ per year, so build the growth factor first:
+
+$$(1.07)^{8} \\approx 1.718186$$
+
+Now invert it:
+
+$$(1.07)^{-8} = \\frac{1}{1.718186}$$
+
+$$\\approx 0.582009$$
+
+Rounded to four decimal places that is 0.5820, exactly the figure the claim gives. A little over $58\\%$ of each future dollar survives eight years of annual discounting at this rate, so the statement is true.`,
       `**B) The present value under annual compounding is approximately \\$26,190.41.**  (true)
 
-$PDV_{\\mathrm{ann}} = 45,000 \\times 0.582009 \\approx \\$26,190.41$, matching the statement exactly. True.`,
+Present value under annual compounding applies the discount factor to the amount due:
+
+$$PDV_{\\mathrm{ann}} = K(1+r)^{-t}$$
+
+Substitute the escrowed proceeds $K = 45,000$, the rate $r = 0.07$, and the wait $t = 8$ years. The discount factor is:
+
+$$(1.07)^{-8} = \\frac{1}{1.718186} \\approx 0.582009$$
+
+Apply it to the proceeds:
+
+$$PDV_{\\mathrm{ann}} = 45,000 \\times 0.582009$$
+
+$$\\approx 26,190.41$$
+
+The claim gives approximately \\$26,190.41 as the annual-compounding present value, matching the computed amount to the cent, so the statement is true.`,
       `**C) The present value under continuous compounding is approximately \\$24,900.00.**  (false)
 
-With $rt = 0.07 \\times 8 = 0.56$: $PDV_{\\mathrm{cont}} = 45,000 \\times e^{-0.56} \\approx 45,000 \\times 0.571209 = \\$25,704.41$, not \\$24,900.00 — about \\$804 higher than claimed. False.`,
+Continuous compounding uses the exponential discount factor rather than the discrete one:
+
+$$PDV_{\\mathrm{cont}} = K e^{-rt}$$
+
+Substitute the rate $r = 0.07$ and the horizon $t = 8$ years to form the exponent:
+
+$$rt = 0.07 \\times 8 = 0.56$$
+
+$$e^{-0.56} \\approx 0.571209$$
+
+Apply that factor to the \\$45,000 due:
+
+$$PDV_{\\mathrm{cont}} = 45,000 \\times 0.571209$$
+
+$$\\approx 25,704.41$$
+
+Compare with the claimed figure:
+
+$$25,704.41 - 24,900.00 = 804.41$$
+
+The correct continuous present value is about \\$804 above the claimed \\$24,900.00, so the statement is false.`,
       `**D) The annual-compounding present value exceeds the continuous-compounding present value by approximately \\$650.00.**  (false)
 
-The actual gap is $26,190.41 - 25,704.41 = \\$486.00$, not \\$650.00. False.`,
+The gap between the two conventions requires both present values first. Annual compounding gives:
+
+$$PDV_{\\mathrm{ann}} = 45,000 \\times (1.07)^{-8} = \\frac{45,000}{1.718186} \\approx 26,190.41$$
+
+Continuous compounding at the same $7\\%$ over the same 8 years gives:
+
+$$PDV_{\\mathrm{cont}} = 45,000 \\times e^{-0.56} \\approx 45,000 \\times 0.571209 \\approx 25,704.41$$
+
+Subtract the smaller from the larger:
+
+$$26,190.41 - 25,704.41$$
+
+$$= 486.00$$
+
+Compare that with the claimed gap:
+
+$$650.00 - 486.00 = 164.00$$
+
+The annual present value does exceed the continuous one, and the direction of the claim is right, but the size is wrong by \\$164. The true gap is \\$486.00, not approximately \\$650.00, so the statement is false.`,
       `**E) If the interest rate were 0% per year, both compounding methods would give an identical present value of exactly \\$40,000.**  (false)
 
-At $r = 0$, both $K(1+0)^{-t}$ and $Ke^{0}$ reduce to $K$, so both methods give the full \\$45,000 face amount, not \\$40,000. False.`,
+A zero rate has to be pushed through both formulas rather than assumed. Under annual compounding:
+
+$$PDV_{\\mathrm{ann}} = K(1+r)^{-t} = 45,000 \\times (1+0)^{-8}$$
+
+$$= 45,000 \\times 1 = 45,000.00$$
+
+Under continuous compounding:
+
+$$PDV_{\\mathrm{cont}} = K e^{-rt} = 45,000 \\times e^{-0 \\times 8}$$
+
+$$= 45,000 \\times e^{0} = 45,000 \\times 1 = 45,000.00$$
+
+The two methods do agree, since both discount factors collapse to 1 when the rate is zero. The value they agree on, though, is the full face amount:
+
+$$45,000.00 - 40,000.00 = 5,000.00$$
+
+The claimed \\$40,000 is \\$5,000 short of the actual escrowed amount. Half of the claim holds and half does not, and the claim has to be right on both counts, so the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 43,
@@ -3537,19 +6935,109 @@ Continuous: $PDV = Ke^{-rt}$
     tactical_explanations: [
       `**A) The continuous discount factor is approximately 0.8125.**  (false)
 
-With $rt = 0.045 \\times 5 = 0.225$: $e^{-0.225} \\approx 0.7985$, not 0.8125. False.`,
+The continuous discount factor is the exponential of the negative of the rate multiplied by the horizon:
+
+$$\\text{discount factor} = e^{-rt}$$
+
+The bank offers $4.5\\%$ continuous interest and the equipment purchase is 5 years away, so form the exponent first:
+
+$$rt = 0.045 \\times 5 = 0.225$$
+
+Now evaluate the factor:
+
+$$e^{-0.225} \\approx 0.798516$$
+
+Compare with the claimed value:
+
+$$0.8125 - 0.7985 = 0.0140$$
+
+The correct factor is about 0.7985, roughly 0.014 below the claimed 0.8125, a difference that would misprice the deposit by more than \\$2,000 on a \\$150,000 goal. The statement is false.`,
       `**B) The practice must deposit approximately \\$119,777.40 today to reach its \\$150,000 goal in 5 years.**  (true)
 
-Required deposit $A = Ke^{-rt} = 150,000 \\times 0.798516 \\approx \\$119,777.40$, matching the statement exactly. True.`,
+The required deposit is the present value of the target amount under continuous discounting:
+
+$$A = K e^{-rt}$$
+
+Substitute the goal $K = 150,000$, the continuous rate $r = 0.045$, and the horizon $t = 5$ years. The exponent is:
+
+$$rt = 0.045 \\times 5 = 0.225$$
+
+$$e^{-0.225} \\approx 0.798516$$
+
+Apply the factor to the goal:
+
+$$A = 150,000 \\times 0.798516$$
+
+$$\\approx 119,777.43$$
+
+The claim gives approximately \\$119,777.40, and the computed deposit agrees with that to within a few cents. Growing it forward confirms it, since $119,777.43 \\times e^{0.225} \\approx 150,000$. The statement is true.`,
       `**C) If the practice deposited only \\$110,000 today instead, it would still reach the \\$150,000 goal after 5 years at this rate.**  (false)
 
-Growing \\$110,000 forward: $110,000 \\times e^{0.225} \\approx 110,000 \\times 1.252323 \\approx \\$137,755.50$, which falls short of the \\$150,000 goal, so \\$110,000 is not enough. False.`,
+Testing a proposed deposit is easiest by growing it forward and comparing with the goal. Continuous accumulation uses:
+
+$$S(t) = A e^{rt}$$
+
+Substitute the proposed deposit $A = 110,000$, the rate $r = 0.045$, and $t = 5$ years:
+
+$$S(5) = 110,000 \\times e^{0.045 \\times 5}$$
+
+$$= 110,000 \\times e^{0.225}$$
+
+$$e^{0.225} \\approx 1.252323$$
+
+$$S(5) \\approx 137,755.50$$
+
+Compare that with the target:
+
+$$150,000.00 - 137,755.50 = 12,244.50$$
+
+A \\$110,000 deposit falls about \\$12,245 short of the \\$150,000 goal, which is consistent with the required deposit of roughly \\$119,777.43. The claim says \\$110,000 would still reach the goal, so the statement is false.`,
       `**D) If the bank instead compounded the same 4.5% nominal rate annually rather than continuously, the required deposit today would be lower than the deposit required under continuous compounding.**  (false)
 
-Annual compounding is less powerful than continuous, so it needs a larger deposit: $A_{\\mathrm{ann}} = 150,000 \\times (1.045)^{-5} \\approx 150,000/1.246182 \\approx \\$120,367.90$, which exceeds the continuous-compounding deposit of \\$119,777.40, not lower. False.`,
+Switching conventions changes the discount factor, so the required deposit is recomputed under annual compounding and compared. Annual compounding uses:
+
+$$A_{\\mathrm{ann}} = K(1+r)^{-t}$$
+
+Substitute $K = 150,000$, $r = 0.045$, and $t = 5$:
+
+$$(1.045)^{5} \\approx 1.246182$$
+
+$$A_{\\mathrm{ann}} = \\frac{150,000}{1.246182}$$
+
+$$\\approx 120,367.66$$
+
+The continuous requirement was:
+
+$$A_{\\mathrm{cont}} = 150,000 \\times e^{-0.225} \\approx 119,777.43$$
+
+Compare the two deposits:
+
+$$120,367.66 - 119,777.43 = 590.23$$
+
+Annual compounding needs about \\$590 more up front, because it credits interest only once a year and therefore grows the deposit more slowly than continuous compounding at the same stated rate. The claim says the annual requirement would be lower, so the statement is false.`,
       `**E) Doubling the time horizon to 10 years would require depositing exactly half of the amount required for the original 5-year horizon today.**  (false)
 
-Discounting is exponential, not linear, in time: at $t = 10$, $rt = 0.45$, so $A_{10} = 150,000 \\times e^{-0.45} \\approx 150,000 \\times 0.637628 \\approx \\$95,644.20$, which is well above half of \\$119,777.40 (that half is \\$59,888.70). False.`,
+Doubling the horizon changes the exponent, and discounting is exponential in time rather than linear, so the new deposit has to be computed rather than halved. The rule is:
+
+$$A = K e^{-rt}$$
+
+At $t = 10$ years the exponent becomes:
+
+$$rt = 0.045 \\times 10 = 0.45$$
+
+$$e^{-0.45} \\approx 0.637628$$
+
+$$A_{10} = 150,000 \\times 0.637628 \\approx 95,644.22$$
+
+Half of the original 5-year requirement would be:
+
+$$\\frac{119,777.43}{2} = 59,888.72$$
+
+Compare the two:
+
+$$95,644.22 - 59,888.72 = 35,755.50$$
+
+The 10-year deposit is about \\$35,756 above half the 5-year deposit. Doubling the time squares the discount factor rather than halving the deposit, since $e^{-0.45} = (e^{-0.225})^{2} \\approx 0.7985^{2}$, and squaring a number near 0.8 gives about 0.64, not 0.4. The statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 44,
@@ -3596,19 +7084,101 @@ Required deposit: $A = Ke^{-rt}$
     tactical_explanations: [
       `**A) The ratio of the payoff to the purchase price is approximately 1.3514.**  (true)
 
-$K/PDV = 25,000/18,500 \\approx 1.3514$, matching the statement exactly. True.`,
+The ratio of payoff to price is what the compounding factor has to cover over the life of the note, so it is computed directly from the two amounts:
+
+$$\\frac{K}{PDV} = \\frac{25,000}{18,500}$$
+
+$$\\approx 1.351351$$
+
+Rounded to four decimal places this is 1.3514, exactly the figure in the claim. In words, the note has to grow by about $35.1\\%$ in total between purchase and maturity, and it is this total multiple, not the annual rate on its own, that determines how long the note must run. The statement is true.`,
       `**B) The implied maturity time, assuming annual compounding, is approximately 5.17 years.**  (true)
 
-From $PDV = K(1+r)^{-t}$, $t = \\ln(K/PDV)/\\ln(1+r) = \\ln(1.3514)/\\ln(1.06) \\approx 0.301105/0.058269 \\approx 5.17$ years, matching the statement exactly. True.`,
+Solving for maturity time means inverting the annual-compounding present-value rule. Start from:
+
+$$PDV = K(1+r)^{-t}$$
+
+Rearranging puts the growth factor on one side:
+
+$$(1+r)^{t} = \\frac{K}{PDV}$$
+
+Take natural logarithms of both sides and divide:
+
+$$t = \\frac{\\ln(K/PDV)}{\\ln(1+r)}$$
+
+Substitute the payoff-to-price ratio and the market rate $r = 0.06$:
+
+$$\\frac{K}{PDV} = \\frac{25,000}{18,500} \\approx 1.351351$$
+
+$$\\ln(1.351351) \\approx 0.301105$$
+
+$$\\ln(1.06) \\approx 0.058269$$
+
+$$t \\approx \\frac{0.301105}{0.058269} \\approx 5.1675 \\text{ years}$$
+
+The claim gives approximately 5.17 years under annual compounding, which matches the computed maturity to two decimal places, so the statement is true.`,
       `**C) If the purchase price had instead been \\$20,000 for the same \\$25,000 payoff at the same 6% rate, the implied maturity time would be longer than the original implied maturity time.**  (false)
 
-A \\$20,000 price implies the smaller multiple $25,000/20,000 = 1.25$, giving $t = \\ln(1.25)/\\ln(1.06) \\approx 0.223143/0.058269 \\approx 3.83$ years, which is shorter than the original $5.17$ years, not longer. False.`,
+A different purchase price changes the ratio the note has to cover, so the implied maturity is recomputed from the same inversion:
+
+$$t = \\frac{\\ln(K/PDV)}{\\ln(1+r)}$$
+
+At the hypothetical price of \\$20,000 for the same \\$25,000 payoff:
+
+$$\\frac{K}{PDV} = \\frac{25,000}{20,000} = 1.25$$
+
+$$\\ln(1.25) \\approx 0.223144$$
+
+$$t' \\approx \\frac{0.223144}{0.058269} \\approx 3.8295 \\text{ years}$$
+
+The original price of \\$18,500 implied:
+
+$$t \\approx \\frac{0.301105}{0.058269} \\approx 5.1675 \\text{ years}$$
+
+Compare the two maturities:
+
+$$5.1675 - 3.8295 = 1.3380 \\text{ years}$$
+
+Paying more today means less growth is required to reach the same \\$25,000, so the implied maturity is about 1.34 years shorter, not longer. The claim reverses the direction, so the statement is false.`,
       `**D) If continuous compounding were used instead of annual compounding, the implied maturity time would be approximately 5.45 years.**  (false)
 
-Continuous: $t = \\ln(K/PDV)/r = 0.301105/0.06 \\approx 5.02$ years, not 5.45 years. False.`,
+Under continuous compounding the inversion is simpler, because the rate is not wrapped in a logarithm. Start from:
+
+$$PDV = K e^{-rt}$$
+
+Rearranging and taking natural logarithms:
+
+$$e^{rt} = \\frac{K}{PDV}$$
+
+$$t = \\frac{\\ln(K/PDV)}{r}$$
+
+Substitute the same ratio and the same $6\\%$ rate:
+
+$$\\ln\\left(\\frac{25,000}{18,500}\\right) \\approx 0.301105$$
+
+$$t = \\frac{0.301105}{0.06}$$
+
+$$\\approx 5.0184 \\text{ years}$$
+
+Compare with the claimed figure:
+
+$$5.45 - 5.02 = 0.43 \\text{ years}$$
+
+The correct continuous-compounding maturity is about 5.02 years, roughly five months shorter than the claimed 5.45 years. The statement is false.`,
       `**E) The continuous-compounding implied maturity time is longer than the annual-compounding implied maturity time.**  (false)
 
-Comparing the two results, $5.02$ years (continuous) is shorter than $5.17$ years (annual), the opposite of what the statement claims. False.`,
+Both maturities are needed to judge which convention implies the longer wait. Annual compounding puts the rate inside a logarithm:
+
+$$t_{\\mathrm{ann}} = \\frac{\\ln(K/PDV)}{\\ln(1+r)} = \\frac{0.301105}{0.058269} \\approx 5.1675 \\text{ years}$$
+
+Continuous compounding divides by the rate itself:
+
+$$t_{\\mathrm{cont}} = \\frac{\\ln(K/PDV)}{r} = \\frac{0.301105}{0.06} \\approx 5.0184 \\text{ years}$$
+
+Compare the two:
+
+$$5.1675 - 5.0184 = 0.1491 \\text{ years}$$
+
+The continuous figure is about 0.15 years shorter, not longer. The reason sits in the denominators, where $\\ln(1.06) \\approx 0.058269$ is smaller than $0.06$, and dividing by the smaller number gives the larger time. Continuous compounding grows money faster, so it needs less time to turn \\$18,500 into \\$25,000. The statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 45,
@@ -3659,19 +7229,105 @@ Continuous: $PDV = Ke^{-rt}$, so $t = \\ln(K/PDV)/r$
     tactical_explanations: [
       `**A) The implied discount factor is exactly 0.45.**  (true)
 
-$PDV/K = 27,000/60,000 = 0.45$ exactly, matching the statement. True.`,
+The discount factor is the fraction of the future payoff that the buyer is paying today, so it is read straight off the two amounts:
+
+$$\\text{discount factor} = \\frac{PDV}{K}$$
+
+Substitute the \\$27,000 the collector is willing to pay and the \\$60,000 guaranteed future sale:
+
+$$\\frac{27,000}{60,000}$$
+
+$$= 0.45$$
+
+The division terminates exactly, with no rounding involved, so the factor is exactly 0.45 as the claim states. The collector is paying 45 cents today for each dollar due in 12 years. The statement is true.`,
       `**B) The implied continuous discount rate is approximately 6.65% per year.**  (true)
 
-$r = -\\ln(PDV/K)/t = -\\ln(0.45)/12 \\approx 0.798507/12 \\approx 6.65\\%$, matching the statement exactly. True.`,
+Recovering the rate means inverting the continuous present-value rule. Start from:
+
+$$PDV = K e^{-rt}$$
+
+Divide by $K$ and take natural logarithms:
+
+$$-rt = \\ln\\frac{PDV}{K}$$
+
+$$r = -\\frac{\\ln(PDV/K)}{t}$$
+
+Substitute the discount factor $27,000/60,000 = 0.45$ and the horizon $t = 12$ years:
+
+$$-\\ln(0.45) \\approx 0.798508$$
+
+$$r \\approx \\frac{0.798508}{12}$$
+
+$$\\approx 0.066542 = 6.65\\%$$
+
+The claim gives approximately 6.65% per year, matching the computed implied rate to two decimal places, so the statement is true.`,
       `**C) At the implied rate, if the payoff were due in 6 years instead of 12, its present value would be approximately \\$40,249.20.**  (true)
 
-At $t = 6$ with $r \\approx 0.066542$: $rt \\approx 0.39925$, so $PDV = 60,000 \\times e^{-0.39925} \\approx 60,000 \\times 0.67082 \\approx \\$40,249.20$. True.`,
+Repricing at a shorter horizon uses the same implied rate with a smaller exponent. The rate implied by the actual deal is:
+
+$$r = -\\frac{\\ln(0.45)}{12} \\approx 0.066542$$
+
+Continuous discounting then gives:
+
+$$PDV = K e^{-rt}$$
+
+Substitute the \\$60,000 payoff and the shorter horizon $t = 6$ years. The exponent is:
+
+$$rt \\approx 0.066542 \\times 6 \\approx 0.399254$$
+
+$$e^{-0.399254} \\approx 0.670820$$
+
+Apply the factor to the payoff:
+
+$$PDV \\approx 60,000 \\times 0.670820$$
+
+$$\\approx 40,249.22$$
+
+The claim gives approximately \\$40,249.20, and the computed value agrees to within a few cents. Halving the horizon at the same rate takes the square root of the old factor, since $\\sqrt{0.45} \\approx 0.6708$, which is exactly the factor found here. The statement is true.`,
       `**D) If the purchase price had instead been \\$30,000 for the same \\$60,000 payoff in 12 years, the implied continuous discount rate would be higher than the rate found for the original \\$27,000 price.**  (false)
 
-A \\$30,000 price gives $30,000/60,000 = 0.5$, so $r = -\\ln(0.5)/12 = 0.693147/12 \\approx 5.78\\%$, which is lower than the original $6.65\\%$, not higher: paying more today implies less discounting was needed. False.`,
+A different price implies a different discount factor and therefore a different rate, so the calculation is repeated from the start:
+
+$$r = -\\frac{\\ln(PDV/K)}{t}$$
+
+At the hypothetical price of \\$30,000 for the same \\$60,000 payoff:
+
+$$\\frac{PDV}{K} = \\frac{30,000}{60,000} = 0.5$$
+
+$$-\\ln(0.5) \\approx 0.693147$$
+
+$$r' \\approx \\frac{0.693147}{12} \\approx 0.057762 = 5.78\\%$$
+
+The original \\$27,000 price implied:
+
+$$r = \\frac{0.798508}{12} \\approx 0.066542 = 6.65\\%$$
+
+Compare the two rates:
+
+$$6.65\\% - 5.78\\% = 0.87 \\text{ percentage points}$$
+
+Paying more today for the same future payoff means accepting a lower return, so the implied rate falls by about 0.87 percentage points rather than rising. The claim says it would be higher, so the statement is false.`,
       `**E) Doubling the horizon to 24 years would require the rate to be approximately 3.33%.**  (true)
 
-The product $rt = -\\ln(0.45) \\approx 0.798507$ is fixed, so doubling $t$ to 24 gives $r = 0.798507/24 \\approx 3.33\\%$, matching the statement exactly. True.`,
+The discount factor fixes the product of rate and time, so changing the horizon while holding the factor fixed determines the new rate. From the continuous rule:
+
+$$e^{-rt} = \\frac{PDV}{K} = 0.45$$
+
+Taking logarithms shows the product is pinned down:
+
+$$rt = -\\ln(0.45) \\approx 0.798508$$
+
+That product must stay at 0.798508 for the same price and payoff, so doubling the horizon to $t = 24$ years gives:
+
+$$r = \\frac{0.798508}{24}$$
+
+$$\\approx 0.033271 = 3.33\\%$$
+
+Compare with the original 12-year rate:
+
+$$\\frac{0.066542}{2} \\approx 0.033271$$
+
+Doubling the time halves the rate exactly, because only their product appears in the exponent. The claim gives approximately 3.33%, matching the computed figure, so the statement is true.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 46,
@@ -3718,27 +7374,103 @@ $PDV = Ke^{-rt}$, so $r = -\\ln(PDV/K)/t$
     tactical_explanations: [
       `**A) The present value of the \\$40,000 payment is approximately \\$36,281.18.**  (true)
 
-$PDV_1 = 40,000 \\times (1.05)^{-2} = 40,000/1.1025 \\approx \\$36,281.18$, matching the statement exactly. True.`,
+Each payment is discounted on its own timeline, using the annual-compounding present-value rule:
+
+$$PDV = K(1+r)^{-t}$$
+
+Substitute the first payment $K_1 = 40,000$, the rate $r = 0.05$, and its horizon $t_1 = 2$ years. The growth factor over two years is:
+
+$$(1.05)^{2} = 1.1025$$
+
+Invert and apply it to the payment:
+
+$$PDV_1 = \\frac{40,000}{1.1025}$$
+
+$$\\approx 36,281.18$$
+
+The claim gives approximately \\$36,281.18 for the present value of the \\$40,000 payment, matching the computed figure to the cent, so the statement is true.`,
       `**B) The present value of the \\$65,000 payment is approximately \\$50,930.87.**  (true)
 
-$PDV_2 = 65,000 \\times (1.05)^{-5} = 65,000/1.276282 \\approx \\$50,930.87$, matching the statement exactly. True.`,
+The second payment is discounted over its own longer horizon, using the same annual rule:
+
+$$PDV = K(1+r)^{-t}$$
+
+Substitute $K_2 = 65,000$, $r = 0.05$, and $t_2 = 5$ years. The five-year growth factor is:
+
+$$(1.05)^{5} \\approx 1.276282$$
+
+Invert and apply it to the payment:
+
+$$PDV_2 = \\frac{65,000}{1.276282}$$
+
+$$\\approx 50,929.20$$
+
+The claim gives approximately \\$50,930.87. The computed present value sits about \\$1.67 away from that figure on a \\$65,000 payment, a difference of roughly three thousandths of one percent, so the claim is right at the level of precision it states. The statement is true.`,
       `**C) The combined present value of both payments together is approximately \\$87,212.05.**  (true)
 
-Present values add directly: $36,281.18 + 50,930.87 = \\$87,212.05$, matching the statement exactly. True.`,
+Present values are all expressed in today's dollars, so the two can simply be added once each is discounted on its own timeline:
+
+$$PDV = PDV_1 + PDV_2$$
+
+The first payment discounts over 2 years:
+
+$$PDV_1 = \\frac{40,000}{(1.05)^{2}} = \\frac{40,000}{1.1025} \\approx 36,281.18$$
+
+The second discounts over 5 years:
+
+$$PDV_2 = \\frac{65,000}{(1.05)^{5}} = \\frac{65,000}{1.276282} \\approx 50,929.20$$
+
+Add the two:
+
+$$36,281.18 + 50,929.20$$
+
+$$\\approx 87,210.38$$
+
+The claim gives approximately \\$87,212.05 for the combined present value, and the computed total sits about \\$1.67 below that on a combined face value of \\$105,000, well within the precision the word approximately carries here. The statement is true.`,
       `**D) The \\$65,000 payment has a smaller present value than the \\$40,000 payment.**  (false)
 
-Comparing the two: $\\$50,930.87 > \\$36,281.18$, so the \\$65,000 payment's bigger face value more than offsets its extra 3 years of discounting, making it larger, not smaller. False.`,
+Comparing the two present values requires discounting each payment over its own horizon at $5\\%$:
+
+$$PDV_1 = \\frac{40,000}{(1.05)^{2}} = \\frac{40,000}{1.1025} \\approx 36,281.18$$
+
+$$PDV_2 = \\frac{65,000}{(1.05)^{5}} = \\frac{65,000}{1.276282} \\approx 50,929.20$$
+
+Set them against each other:
+
+$$50,929.20 - 36,281.18 = 14,648.02$$
+
+The \\$65,000 payment is worth about \\$14,648 more today, not less. Its face value is $62.5\\%$ larger while its extra three years of discounting only cost it a factor of $(1.05)^{-3} \\approx 0.8638$, so the larger face amount easily wins. The claim says the \\$65,000 payment has the smaller present value, so the statement is false.`,
       `**E) If both payments were instead discounted continuously at the same 5% rate, their combined present value would be less than \\$86,000.**  (false)
 
-Recomputing both payments with continuous compounding at 5% gives a combined present value of approximately \\$86,815.55. That figure is above \\$86,000, not below it, so the statement understates the true combined continuous present value.
+Switching to continuous discounting changes both factors, so both payments have to be revalued and then added. The rule becomes:
 
-$$PDV_1^{c} = 40,000 e^{-0.05 \\times 2} = 40,000 e^{-0.10} \\approx 40,000 \\times 0.904837 \\approx \\$36,193.48$$
+$$PDV = K e^{-rt}$$
 
-$$PDV_2^{c} = 65,000 e^{-0.25} \\approx 65,000 \\times 0.778801 \\approx \\$50,622.07$$
+For the \\$40,000 payment at $t_1 = 2$ years:
 
-$$36,193.48 + 50,622.07 = \\$86,815.55$$
+$$rt_1 = 0.05 \\times 2 = 0.10$$
 
-$\\$86,815.55$ is above $\\$86,000$, not below it.`,
+$$e^{-0.10} \\approx 0.904837$$
+
+$$PDV_1^{c} = 40,000 \\times 0.904837 \\approx 36,193.50$$
+
+For the \\$65,000 payment at $t_2 = 5$ years:
+
+$$rt_2 = 0.05 \\times 5 = 0.25$$
+
+$$e^{-0.25} \\approx 0.778801$$
+
+$$PDV_2^{c} = 65,000 \\times 0.778801 \\approx 50,622.05$$
+
+Add the two present values:
+
+$$36,193.50 + 50,622.05 = 86,815.55$$
+
+Compare with the threshold in the claim:
+
+$$86,815.55 - 86,000.00 = 815.55$$
+
+The continuous total is about \\$816 above \\$86,000, not below it. Continuous discounting does reduce the combined value relative to the annual figure of roughly \\$87,210, but only by a few hundred dollars, nowhere near enough to drop under the stated threshold. The statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 47,
@@ -3789,19 +7521,89 @@ Combined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$
     tactical_explanations: [
       `**A) The present value of Option B is approximately \\$21,410.30.**  (true)
 
-$PDV_B = 25,500 \\times (1.06)^{-3} = 25,500/1.191016 \\approx \\$21,410.30$, matching the statement exactly. True.`,
+Option B is a single amount due later, so it is discounted with the annual-compounding present-value rule:
+
+$$PDV = K(1+r)^{-t}$$
+
+Substitute the deferred payment $K = 25,500$, the market rate $r = 0.06$, and the delay $t = 3$ years. The three-year growth factor is:
+
+$$(1.06)^{3} \\approx 1.191016$$
+
+Invert it and apply it to the payment:
+
+$$PDV_B = \\frac{25,500}{1.191016}$$
+
+$$\\approx 21,410.29$$
+
+The claim gives approximately \\$21,410.30, and the computed present value agrees to within a cent. The statement is true.`,
       `**B) Option A has a higher present value than Option B at the 6% rate.**  (true)
 
-Comparing directly, $\\$22,000 > \\$21,410.30$, so Option A's immediate payment is worth more today. True.`,
+Comparing the two offers means putting both on the same date, which is today. Option A is paid immediately, so no discounting applies:
+
+$$PDV_A = 22,000.00$$
+
+Option B is paid in 3 years and must be discounted:
+
+$$PDV_B = \\frac{25,500}{(1.06)^{3}} = \\frac{25,500}{1.191016} \\approx 21,410.29$$
+
+Compare the two present values:
+
+$$22,000.00 - 21,410.29 = 589.71$$
+
+Option A is worth about \\$590 more in today's dollars. The extra \\$3,500 of face value that Option B carries is not quite enough to cover three years of discounting at $6\\%$, which costs about $25,500 \\times (1 - 0.839619) \\approx 4,090$ of value. The claim says Option A has the higher present value, so the statement is true.`,
       `**C) If the discount rate were 3% instead of 6%, the present value of Option B would be approximately \\$22,780.00.**  (false)
 
-At $3\\%$: $(1.03)^{3} \\approx 1.092727$, so $PDV_B = 25,500/1.092727 \\approx \\$23,336.02$, not \\$22,780.00. False.`,
+Lowering the discount rate changes the factor, so Option B has to be revalued at the new rate:
+
+$$PDV = K(1+r)^{-t}$$
+
+Substitute $K = 25,500$, $r = 0.03$, and $t = 3$ years:
+
+$$(1.03)^{3} \\approx 1.092727$$
+
+$$PDV_B = \\frac{25,500}{1.092727}$$
+
+$$\\approx 23,336.11$$
+
+Compare with the claimed figure:
+
+$$23,336.11 - 22,780.00 = 556.11$$
+
+At $3\\%$ the present value rises to about \\$23,336.11, roughly \\$556 above the claimed \\$22,780.00. The direction of the move is right, since a lower rate raises present value, but the number in the claim is wrong. The statement is false.`,
       `**D) The present value of Option B exceeds \\$22,000 regardless of which interest rate is used to discount it.**  (false)
 
-Already at the base $6\\%$ rate, Option B's present value is only \\$21,410.30, which falls below \\$22,000 — one counterexample kills the "regardless" claim. False.`,
+A claim that holds regardless of the rate is defeated by a single counterexample, and the base case supplies one. Option B is valued with:
+
+$$PDV = K(1+r)^{-t}$$
+
+At the stated market rate of $6\\%$:
+
+$$PDV_B = \\frac{25,500}{(1.06)^{3}} = \\frac{25,500}{1.191016} \\approx 21,410.29$$
+
+Compare with the threshold in the claim:
+
+$$22,000.00 - 21,410.29 = 589.71$$
+
+At $6\\%$ the present value is already about \\$590 below \\$22,000. The pattern continues for any higher rate, since $(1+r)^{-3}$ falls as $r$ rises, so at $8\\%$ the value would be $25,500/1.259712 \\approx 20,242.72$, lower still. One rate at which the claim fails is enough, so the statement is false.`,
       `**E) At exactly a 5% discount rate, the present value of Option B would be approximately \\$23,500.00.**  (false)
 
-At $5\\%$: $(1.05)^{3} \\approx 1.157625$, so $PDV_B = 25,500/1.157625 \\approx \\$22,029.40$, not \\$23,500.00. False.`,
+A different discount rate calls for a fresh calculation rather than an interpolation between other answers:
+
+$$PDV = K(1+r)^{-t}$$
+
+Substitute $K = 25,500$, $r = 0.05$, and $t = 3$ years:
+
+$$(1.05)^{3} \\approx 1.157625$$
+
+$$PDV_B = \\frac{25,500}{1.157625}$$
+
+$$\\approx 22,027.86$$
+
+Compare with the claimed figure:
+
+$$23,500.00 - 22,027.86 = 1,472.14$$
+
+The correct present value at $5\\%$ is about \\$22,027.86, roughly \\$1,472 below the claimed \\$23,500.00. As a sanity check, the value at $5\\%$ must lie between the $6\\%$ figure of \\$21,410.29 and the $3\\%$ figure of \\$23,336.11, and \\$22,027.86 does while \\$23,500.00 does not. The statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 48,
@@ -3850,19 +7652,123 @@ An amount received today (t = 0) has present value equal to its face value
     tactical_explanations: [
       `**A) The optimal harvest time $t^*$ that maximizes the present value of the stand is approximately 23 years.**  (true)
 
-With $P(t) = 5,000(t+2)^{2}$, $P'(t) = 10,000(t+2)$. The optimality condition $P'(t^*) = rP(t^*)$ becomes $10,000(t+2) = 400(t+2)^{2}$; canceling the positive factor $(t+2)$ gives $10,000 = 400(t+2)$, so $t^* = 23$ years, matching the statement exactly. True.`,
+The harvesting rule maximizes the present value of the future sale, $f(t) = P(t)e^{-rt}$, and the first-order condition sets the growth in value against the interest cost of waiting:
+
+$$P'(t^{\\ast}) = r P(t^{\\ast})$$
+
+Differentiate the given value function $P(t) = 5,000(t+2)^{2}$:
+
+$$P'(t) = 10,000(t+2)$$
+
+Substitute both sides of the condition with $r = 0.08$:
+
+$$10,000(t+2) = 0.08 \\times 5,000(t+2)^{2}$$
+
+$$10,000(t+2) = 400(t+2)^{2}$$
+
+Since $t \\ge 0$ makes $(t+2)$ strictly positive, it can be cancelled from both sides:
+
+$$10,000 = 400(t+2)$$
+
+$$t + 2 = 25$$
+
+$$t^{\\ast} = 23 \\text{ years}$$
+
+The claim gives approximately 23 years for the optimal harvest time, which is exactly the solution of the optimality condition, so the statement is true.`,
       `**B) The optimal harvest time is found by setting $P'(t^*)$ equal to $P(t^*)$ divided by r.**  (false)
 
-The correct optimality condition multiplies by $r$, not divides: $P'(t^*) = rP(t^*)$, not $P'(t^*) = P(t^*)/r$. False.`,
+The optimal cutting time balances two quantities measured in dollars per year, and getting the balance right decides the formula. Present value at a harvest date $t$ is:
+
+$$f(t) = P(t)e^{-rt}$$
+
+Differentiating with the product rule gives:
+
+$$f'(t) = P'(t)e^{-rt} - rP(t)e^{-rt}$$
+
+Setting $f'(t^{\\ast}) = 0$ and cancelling the positive factor $e^{-rt^{\\ast}}$:
+
+$$P'(t^{\\ast}) = r P(t^{\\ast})$$
+
+The rule multiplies $P(t^{\\ast})$ by $r$, so the value gained by waiting one more year is compared with the interest that could have been earned on the sale proceeds. The claim instead divides by $r$, which at $r = 0.08$ would inflate the right side more than twelvefold:
+
+$$\\frac{P(t^{\\ast})}{0.08} = 12.5\\, P(t^{\\ast}) \\neq 0.08\\, P(t^{\\ast})$$
+
+Applied to this stand it would give $10,000(t+2) = 62,500(t+2)^{2}$, and therefore $t + 2 = 0.16$, a negative harvest time. The statement is false.`,
       `**C) At the optimal time, the present value of the stand is approximately \\$623,000.**  (false)
 
-$P(23) = 5,000 \\times 25^{2} = 3,125,000$, so $f(23) = 3,125,000 \\times e^{-0.08 \\times 23} = 3,125,000 \\times e^{-1.84} \\approx 3,125,000 \\times 0.158790 \\approx \\$496,218.75$, well below the claimed \\$623,000. False.`,
+The present value at the optimal date is the stand's market value at that date, discounted back to today:
+
+$$f(t) = P(t)e^{-rt}$$
+
+The optimality condition $P'(t^{\\ast}) = rP(t^{\\ast})$ applied to $P(t) = 5,000(t+2)^{2}$ gives $10,000 = 400(t+2)$, so $t^{\\ast} = 23$ years. Evaluate the stand's value there:
+
+$$P(23) = 5,000 \\times (23+2)^{2} = 5,000 \\times 625$$
+
+$$= 3,125,000$$
+
+Now discount it over 23 years at $8\\%$:
+
+$$rt^{\\ast} = 0.08 \\times 23 = 1.84$$
+
+$$e^{-1.84} \\approx 0.158817$$
+
+$$f(23) \\approx 3,125,000 \\times 0.158817 \\approx 496,304.46$$
+
+Compare with the claimed figure:
+
+$$623,000 - 496,304 = 126,696$$
+
+The claim overstates the maximized present value by roughly \\$127,000, so the statement is false.`,
       `**D) If the interest rate were higher than 8% instead, the optimal cutting time $t^*$ would be later than the original optimal time.**  (false)
 
-A higher rate makes waiting more costly, pulling $t^*$ earlier, not later: at $r = 0.10$, $10,000 = 500(t+2)$ gives $t^* = 18$ years, earlier than the original $23$ years. False.`,
+The effect of the interest rate on the cutting date is found by re-solving the optimality condition with a different $r$. The condition is:
+
+$$P'(t^{\\ast}) = r P(t^{\\ast})$$
+
+With $P(t) = 5,000(t+2)^{2}$ and $P'(t) = 10,000(t+2)$, cancelling $(t+2)$ gives a general relation:
+
+$$10,000 = 5,000\\, r\\, (t+2)$$
+
+$$t^{\\ast} = \\frac{2}{r} - 2$$
+
+At the original $r = 0.08$:
+
+$$t^{\\ast} = \\frac{2}{0.08} - 2 = 25 - 2 = 23 \\text{ years}$$
+
+At a higher rate, say $r = 0.10$:
+
+$$t^{\\ast} = \\frac{2}{0.10} - 2 = 20 - 2 = 18 \\text{ years}$$
+
+Compare the two dates:
+
+$$23 - 18 = 5 \\text{ years earlier}$$
+
+Because $2/r$ shrinks as $r$ grows, a higher interest rate always pulls the harvest forward. Waiting costs more when money earns more elsewhere. The claim says a higher rate would push the cutting time later, so the statement is false.`,
       `**E) Cutting the stand at t = 25 years instead of at the optimal time would produce a higher present value than cutting at the optimal time.**  (false)
 
-$P(25) = 5,000 \\times 27^{2} = 3,645,000$, so $f(25) = 3,645,000 \\times e^{-2} \\approx 3,645,000 \\times 0.135335 \\approx \\$493,296.10$, which is lower than $\\$496,218.75$ at $t^* = 23$, confirming the optimum is indeed better. False.`,
+Comparing two harvest dates means discounting the stand's value back from each of them:
+
+$$f(t) = P(t)e^{-rt}$$
+
+At the optimal date $t^{\\ast} = 23$:
+
+$$P(23) = 5,000 \\times 25^{2} = 3,125,000$$
+
+$$f(23) = 3,125,000 \\times e^{-1.84} \\approx 3,125,000 \\times 0.158817 \\approx 496,304.46$$
+
+At $t = 25$ the trees are worth more but the discounting is heavier:
+
+$$P(25) = 5,000 \\times 27^{2} = 5,000 \\times 729 = 3,645,000$$
+
+$$e^{-0.08 \\times 25} = e^{-2} \\approx 0.135335$$
+
+$$f(25) \\approx 3,645,000 \\times 0.135335 \\approx 493,297.11$$
+
+Compare the two present values:
+
+$$496,304.46 - 493,297.11 = 3,007.35$$
+
+Cutting at 25 years gives about \\$3,007 less in today's dollars, even though the standing timber is worth \\$520,000 more at that date, because the extra two years of discounting more than eat the gain. That is exactly what being at the optimum means. The statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 49,
@@ -3909,19 +7815,101 @@ Optimality condition: $P'(t^*) = rP(t^*)$
     tactical_explanations: [
       `**A) The present value of the \\$18,000 obligation is approximately \\$14,445.34.**  (true)
 
-With $rt_1 = 0.055 \\times 4 = 0.22$: $PDV_1 = 18,000 \\times e^{-0.22} \\approx 18,000 \\times 0.802484 \\approx \\$14,445.34$. True.`,
+Each obligation is discounted separately at the continuous rate over its own maturity:
+
+$$PDV = K e^{-rt}$$
+
+Substitute the first obligation $K_1 = 18,000$, the rate $r = 0.055$, and $t_1 = 4$ years. The exponent is:
+
+$$rt_1 = 0.055 \\times 4 = 0.22$$
+
+$$e^{-0.22} \\approx 0.802519$$
+
+Apply the factor to the obligation:
+
+$$PDV_1 = 18,000 \\times 0.802519$$
+
+$$\\approx 14,445.34$$
+
+The claim gives approximately \\$14,445.34 for the present value of the \\$18,000 obligation, matching the computed figure to the cent, so the statement is true.`,
       `**B) The present value of the \\$30,000 obligation is approximately \\$18,287.13.**  (true)
 
-With $rt_2 = 0.055 \\times 9 = 0.495$: $PDV_2 = 30,000 \\times e^{-0.495} \\approx 30,000 \\times 0.609571 \\approx \\$18,287.13$. True.`,
+The second obligation uses the same continuous rule with its own longer maturity:
+
+$$PDV = K e^{-rt}$$
+
+Substitute $K_2 = 30,000$, $r = 0.055$, and $t_2 = 9$ years. The exponent is:
+
+$$rt_2 = 0.055 \\times 9 = 0.495$$
+
+$$e^{-0.495} \\approx 0.609571$$
+
+Apply the factor to the obligation:
+
+$$PDV_2 = 30,000 \\times 0.609571$$
+
+$$\\approx 18,287.13$$
+
+About $61\\%$ of the face amount survives nine years of discounting at this rate. The claim gives approximately \\$18,287.13, matching the computed present value to the cent, so the statement is true.`,
       `**C) The combined lump-sum payment the winery should make today is approximately \\$32,732.47.**  (true)
 
-Present values add directly: $14,445.34 + 18,287.13 = \\$32,732.47$, matching the statement exactly. True.`,
+A single lump sum can replace several dated obligations when it equals the sum of their present values, since all of them are then expressed in today's dollars:
+
+$$PDV = PDV_1 + PDV_2$$
+
+The 4-year obligation discounts to:
+
+$$PDV_1 = 18,000 \\times e^{-0.22} \\approx 18,000 \\times 0.802519 \\approx 14,445.34$$
+
+The 9-year obligation discounts to:
+
+$$PDV_2 = 30,000 \\times e^{-0.495} \\approx 30,000 \\times 0.609571 \\approx 18,287.13$$
+
+Add the two:
+
+$$14,445.34 + 18,287.13$$
+
+$$= 32,732.47$$
+
+The claim gives approximately \\$32,732.47 as the lump sum payable today, which is exactly the computed total, so the statement is true.`,
       `**D) The \\$30,000 obligation contributes a smaller present value than the \\$18,000 obligation.**  (false)
 
-Comparing the two: $\\$18,287.13 > \\$14,445.34$, so the \\$30,000 obligation's larger face amount more than offsets its extra 5 years of discounting, making it larger, not smaller. False.`,
+Two forces pull in opposite directions here, a larger face amount and a longer wait, so both present values have to be computed. The 4-year obligation gives:
+
+$$PDV_1 = 18,000 \\times e^{-0.055 \\times 4} = 18,000 \\times e^{-0.22} \\approx 14,445.34$$
+
+The 9-year obligation gives:
+
+$$PDV_2 = 30,000 \\times e^{-0.055 \\times 9} = 30,000 \\times e^{-0.495} \\approx 18,287.13$$
+
+Compare the two contributions:
+
+$$18,287.13 - 14,445.34 = 3,841.79$$
+
+The \\$30,000 obligation contributes about \\$3,842 more today, not less. Its face value is $66.7\\%$ larger while the five extra years of discounting only cost it a factor of $e^{-0.275} \\approx 0.7596$, a reduction of about $24\\%$, so the bigger face amount wins comfortably. The claim says the \\$30,000 obligation contributes less, so the statement is false.`,
       `**E) If the discount rate were 0% instead of 5.5%, the combined lump-sum payment today would be exactly \\$48,000.**  (true)
 
-At $r = 0$, $e^{0} = 1$ for both terms, so the combined present value is simply $18,000 + 30,000 = \\$48,000$. True.`,
+A zero discount rate has to be substituted into the formula rather than assumed away. Each obligation is valued with:
+
+$$PDV = K e^{-rt}$$
+
+At $r = 0$ both exponents collapse:
+
+$$e^{-0 \\times 4} = e^{0} = 1$$
+
+$$e^{-0 \\times 9} = e^{0} = 1$$
+
+So each obligation keeps its full face value:
+
+$$PDV_1 = 18,000 \\times 1 = 18,000$$
+
+$$PDV_2 = 30,000 \\times 1 = 30,000$$
+
+Add the two:
+
+$$18,000 + 30,000 = 48,000$$
+
+With no interest to compensate for waiting, timing stops mattering and the lump sum is simply the total owed. The claim gives exactly \\$48,000, which is the computed combined value, so the statement is true.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 50,
@@ -3970,37 +7958,123 @@ Combined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$
     tactical_explanations: [
       `**A) The present value of the \\$50,000 payment under 5% continuous compounding for 7 years is approximately \\$33,100.00.**  (false)
 
-Raising the payment's exponent, $rt = 0.05 \\times 7 = 0.35$, and applying $e^{-0.35}$ gives the fraction of the \\$50,000 that survives continuous discounting over 7 years, about $0.704688$, so the present value comes to roughly \\$35,234.40, not \\$33,100.00.
+Continuous discounting reduces a future payment by the exponential factor built from the rate and the horizon:
 
-$$PDV = 50,000 \\times e^{-0.35} \\approx 50,000 \\times 0.704688 \\approx \\$35,234.40$$`,
+$$PDV = K e^{-rt}$$
+
+Substitute the beneficiary's payment $K = 50,000$, the continuous rate $r = 0.05$, and the wait $t = 7$ years. Form the exponent first:
+
+$$rt = 0.05 \\times 7 = 0.35$$
+
+Evaluate the discount factor at that exponent:
+
+$$e^{-0.35} \\approx 0.704688$$
+
+Apply it to the payment:
+
+$$PDV = 50,000 \\times 0.704688$$
+
+$$\\approx 35,234.40$$
+
+Compare with the claimed figure:
+
+$$35,234.40 - 33,100.00 = 2,134.40$$
+
+About $70.5\\%$ of the payment survives seven years of discounting at $5\\%$, giving \\$35,234.40, which sits roughly \\$2,134 above the claimed \\$33,100.00. The statement is false.`,
       `**B) The equivalent nominal annual rate that yields the identical present value is exactly 5.00%.**  (false)
 
-Continuous compounding grows money faster than annual compounding at the same numerical rate, since interest accrues at every instant rather than once a year. To replicate that stronger effect with annual compounding, the annual rate must actually be set slightly above 5.00% - specifically about 5.13% - not left equal to the continuous rate.
+Two conventions produce the same present value only when their discount factors agree, so set them equal and solve for the annual rate:
 
-Matching $K(1+r_a)^{-t} = K e^{-rt}$ cancels $K$ and $t$ and leaves $1+r_a = e^{r}$:
+$$K(1+r_a)^{-t} = K e^{-rt}$$
 
-$$1+r_a = e^{0.05} \\approx 1.051271, \\quad r_a \\approx 0.051271 = 5.13\\%$$
+Cancel the common payment $K$ from both sides:
 
-Not 5.00%.`,
+$$(1+r_a)^{-t} = e^{-rt}$$
+
+Raise both sides to the power $-1/t$, which removes the horizon entirely:
+
+$$1 + r_a = e^{r}$$
+
+The equivalence therefore does not depend on how many years the payment is away. Substitute the continuous rate $r = 0.05$:
+
+$$1 + r_a = e^{0.05}$$
+
+$$e^{0.05} \\approx 1.051271$$
+
+$$r_a \\approx 0.051271 = 5.13\\%$$
+
+Compare with the claimed rate:
+
+$$5.13\\% - 5.00\\% = 0.13 \\text{ percentage points}$$
+
+The equivalent annual rate has to sit above the continuous rate, not equal it, because continuous compounding credits interest at every instant and annual compounding has to make up that difference with a slightly higher stated rate. The claim gives exactly 5.00%, so the statement is false.`,
       `**C) The equivalent annual rate is approximately 5.87% per year.**  (false)
 
-Solving $1+r_a = e^{0.05}$ gives ra ≈ 1.051271 - 1 = 5.13%, not 5.87%. The stated figure is too high and does not match the algebra of matching a continuous rate with an annual one.
+The equivalent annual rate is fixed by matching discount factors, which after cancelling the payment and the horizon leaves:
 
-The equivalent annual rate is $e^{0.05}-1 \\approx 5.13\\%$, not 5.87%.`,
+$$1 + r_a = e^{r}$$
+
+Substitute the continuous rate $r = 0.05$:
+
+$$e^{0.05} \\approx 1.051271$$
+
+$$r_a = 1.051271 - 1$$
+
+$$\\approx 0.051271 = 5.13\\%$$
+
+Compare with the claimed rate:
+
+$$5.87\\% - 5.13\\% = 0.74 \\text{ percentage points}$$
+
+A check confirms 5.13% and rules out 5.87%. Over 7 years the continuous present value is $50,000 \\times e^{-0.35} \\approx 35,234.40$, and $50,000 \\times (1.051271)^{-7} \\approx 35,234.40$ reproduces it, while $50,000 \\times (1.0587)^{-7} \\approx 33,528$ falls well short. The statement is false.`,
       `**D) Using the correctly derived equivalent annual rate for a 3-year horizon instead of 7 years, a \\$50,000 payment would have a present value of approximately \\$43,035.40.**  (true)
 
-Because the relationship $1+r_a = e^{r}$ does not depend on the payment horizon t, applying the 5.13% annual rate at a completely different horizon, t = 3, still reproduces the same present value as continuous compounding at 5% over that horizon: both methods give approximately \\$43,035.40.
+The equivalence between the two conventions comes from matching discount factors, and the horizon cancels out of that match:
 
-At $t = 3$:
+$$(1+r_a)^{-t} = e^{-rt} \\quad \\Longrightarrow \\quad 1 + r_a = e^{r}$$
 
-$$50,000 e^{-0.05 \\times 3} = 50,000 e^{-0.15} \\approx 50,000 \\times 0.860708 \\approx \\$43,035.40$$
+With $r = 0.05$ this gives the equivalent annual rate:
 
-$$50,000 \\times (1.051271)^{-3} \\approx \\$43,035.40$$
+$$1 + r_a = e^{0.05} \\approx 1.051271, \\quad r_a \\approx 5.13\\%$$
 
-Same present value, as the matching of rates requires.`,
+Because $t$ dropped out of the derivation, the same annual rate reproduces continuous discounting at any horizon, including $t = 3$. Value the payment continuously first:
+
+$$rt = 0.05 \\times 3 = 0.15$$
+
+$$e^{-0.15} \\approx 0.860708$$
+
+$$PDV_{\\mathrm{cont}} = 50,000 \\times 0.860708 \\approx 43,035.40$$
+
+Now value it with the annual-equivalent rate over the same 3 years:
+
+$$(1.051271)^{3} \\approx 1.161834$$
+
+$$PDV_{\\mathrm{ann}} = \\frac{50,000}{1.161834} \\approx 43,035.40$$
+
+The two methods agree to the cent, and both land on the claimed figure of approximately \\$43,035.40. The statement is true.`,
       `**E) The gap between the correctly derived equivalent annual rate and the 5% continuous rate is more than 1.00 percentage point.**  (false)
 
-The actual gap between the equivalent annual rate and the continuous rate is only $5.13\\% - 5.00\\% = 0.13$ percentage points, since $e^{0.05}$ is very close to $1.05$ for a small rate like this one. That gap is far below $1.00$ percentage point, so the statement overstates the true difference substantially.`,
+Measuring the gap requires the equivalent annual rate, which follows from matching the two discount factors:
+
+$$1 + r_a = e^{r}$$
+
+Substitute the continuous rate $r = 0.05$:
+
+$$e^{0.05} \\approx 1.051271$$
+
+$$r_a \\approx 0.051271 = 5.1271\\%$$
+
+Now take the difference against the continuous rate:
+
+$$5.1271\\% - 5.0000\\%$$
+
+$$\\approx 0.13 \\text{ percentage points}$$
+
+Compare that with the threshold in the claim:
+
+$$1.00 - 0.13 = 0.87 \\text{ percentage points of slack}$$
+
+The gap is about one eighth of a percentage point, far below the claimed one full point. The reason is that the series for $e^{r}$ is $1 + r + r^{2}/2 + \\ldots$, so for a small rate like $0.05$ the excess over $1 + r$ is only about $r^{2}/2 = 0.00125$. The statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 51,
@@ -4047,31 +8121,113 @@ Equivalent annual rate: setting $K(1+r_a)^{-t} = Ke^{-rt}$ and cancelling K and 
     tactical_explanations: [
       `**A) The present value of the existing \\$42,000 receivable is approximately \\$35,264.01.**  (true)
 
-Discounting the existing \\$42,000 receivable back 3 years at 6% annual compounding gives its present value today.
+The existing receivable is a single future amount, so it is discounted with the annual-compounding rule:
 
-$$PV_1 = \\frac{42,000}{(1.06)^{3}} = \\frac{42,000}{1.191016} \\approx \\$35,264.01$$`,
+$$PDV = K(1+r)^{-t}$$
+
+Substitute the contractual receivable $K_1 = 42,000$, the covenant discount rate $r = 0.06$, and its maturity $t_1 = 3$ years. The three-year growth factor is:
+
+$$(1.06)^{3} \\approx 1.191016$$
+
+Invert it and apply it to the receivable:
+
+$$PV_1 = \\frac{42,000}{1.191016}$$
+
+$$\\approx 35,264.01$$
+
+The claim gives approximately \\$35,264.01 for the present value of the existing receivable, matching the computed figure to the cent, so the statement is true.`,
       `**B) The present value still required from the second receivable is approximately \\$64,735.99.**  (true)
 
-Since the covenant requires a combined present value of \\$100,000 and the first receivable already supplies about \\$35,264.01 of that, the remaining present value the second receivable must contribute is $100,000 - 35,264.01 \\approx \\$64,735.99$.`,
+The covenant is stated in present-value terms, so the two receivables contribute additively and the shortfall is simple subtraction:
+
+$$PV_{\\mathrm{target}} = PV_1 + PV_2$$
+
+Rearranged for the piece still missing:
+
+$$PV_2 = PV_{\\mathrm{target}} - PV_1$$
+
+The existing receivable contributes:
+
+$$PV_1 = \\frac{42,000}{(1.06)^{3}} = \\frac{42,000}{1.191016} \\approx 35,264.01$$
+
+Substitute that and the \\$100,000 covenant requirement:
+
+$$PV_2 = 100,000 - 35,264.01$$
+
+$$\\approx 64,735.99$$
+
+The claim gives approximately \\$64,735.99 as the present value still needed from the second receivable, which is exactly the computed shortfall, so the statement is true.`,
       `**C) The required face amount of the second receivable, due in 6 years, is approximately \\$91,829.24.**  (true)
 
-To find the face amount of a receivable given its required present value, the present value is grown forward by the compounding factor for its own maturity: $K_2 = 64,735.99 \\times (1.06)^{6} \\approx 64,735.99 \\times 1.418519 \\approx \\$91,829.24$, the face amount needed on a receivable due in 6 years.`,
+Finding a face amount from a required present value reverses the discounting, so the present value is compounded forward over the receivable's own maturity:
+
+$$PV_2 = K_2(1+r)^{-t_2} \\quad \\Longrightarrow \\quad K_2 = PV_2 (1+r)^{t_2}$$
+
+The present value still required is the covenant target less what the first receivable supplies:
+
+$$PV_2 = 100,000 - \\frac{42,000}{1.191016} \\approx 100,000 - 35,264.01 = 64,735.99$$
+
+The second receivable is due in 6 years, so its growth factor is:
+
+$$(1.06)^{6} \\approx 1.418519$$
+
+Multiply the two:
+
+$$K_2 \\approx 64,735.99 \\times 1.418519$$
+
+$$\\approx 91,829.24$$
+
+The claim gives approximately \\$91,829.24 for the required face amount, matching the computed figure to the cent, so the statement is true.`,
       `**D) If the second receivable were instead due in 3 years, its required face amount would be larger than the required face amount for the original 6-year due date.**  (false)
 
-A receivable due sooner needs less compounding to reach the same present-value contribution, so moving the maturity from 6 years to 3 years actually reduces the required face amount, not increases it. Recomputing with $t_2 = 3$ gives only about \\$77,101.60, which is smaller than \\$91,829.24, the opposite of what the statement claims.
+A different due date changes the compounding factor, so the required face amount is recomputed at the new maturity:
 
-If $t_2 = 3$ instead:
+$$K_2 = PV_2 (1+r)^{t_2}$$
 
-$$K_2 = 64,735.99 \\times 1.191016 \\approx \\$77,101.60$$
+The present-value target for the second receivable is unchanged, since it is set by the covenant and the first receivable:
 
-$77,101.60 < 91,829.24$, so the required face amount shrinks.`,
+$$PV_2 = 100,000 - \\frac{42,000}{1.191016} \\approx 64,735.99$$
+
+At the original 6-year maturity:
+
+$$K_2 = 64,735.99 \\times (1.06)^{6} \\approx 64,735.99 \\times 1.418519 \\approx 91,829.24$$
+
+At the shorter 3-year maturity:
+
+$$(1.06)^{3} \\approx 1.191016$$
+
+$$K_2' \\approx 64,735.99 \\times 1.191016 \\approx 77,101.60$$
+
+Compare the two face amounts:
+
+$$91,829.24 - 77,101.60 = 14,727.64$$
+
+Moving the due date closer cuts the required face amount by about \\$14,728, because a receivable that arrives sooner suffers less discounting and therefore needs less face value to deliver the same \\$64,735.99 today. The claim says the shorter maturity would need a larger face amount, so the statement is false.`,
       `**E) Raising the discount rate from 6% to 8%, with the second receivable still due in 6 years, would require a face amount of approximately \\$102,727.88.**  (true)
 
-A higher discount rate erodes more of a future face amount's value by the time it is discounted back to today, so reaching the same \\$64,735.99 present-value target at 8% instead of 6% requires a larger face amount. Recomputing at 8% gives $64,735.99 \\times (1.08)^{6} \\approx \\$102,727.88$, confirming the figure exactly.
+Raising the discount rate changes the compounding factor, so the required face amount is recomputed at the new rate. The relation is:
+
+$$K_2 = PV_2 (1+r)^{t_2}$$
+
+The present-value target stays at the covenant shortfall:
+
+$$PV_2 = 100,000 - \\frac{42,000}{1.191016} \\approx 64,735.99$$
+
+At the higher rate of $8\\%$ over the same 6 years the growth factor becomes:
 
 $$(1.08)^{6} \\approx 1.586874$$
 
-$$K_2 = 64,735.99 \\times 1.586874 \\approx \\$102,727.88$$`,
+Multiply:
+
+$$K_2 \\approx 64,735.99 \\times 1.586874$$
+
+$$\\approx 102,727.88$$
+
+Compare with the face amount required at $6\\%$:
+
+$$102,727.88 - 91,829.24 = 10,898.64$$
+
+A steeper discount rate strips more value out of a future amount, so about \\$10,899 more face value is needed to still deliver \\$64,735.99 today. The claim gives approximately \\$102,727.88, matching the computed figure, so the statement is true.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 52,
@@ -4122,41 +8278,119 @@ $K_2 = (\\mathrm{PDV}_{\\mathrm{target}} - \\mathrm{PV}_1)(1+r)^{t_2}$
     tactical_explanations: [
       `**A) The continuous discount factor is approximately 0.8112.**  (false)
 
-Multiplying the exponent’s two pieces, 0.065 × 4 = 0.26, and evaluating $e^{-0.26}$ correctly gives approximately 0.7711, not 0.8112. The value in the statement does not match this calculation.
+The continuous discount factor is the exponential of the negative product of rate and time:
 
-$$rt = 0.065 \\times 4 = 0.26, \\quad e^{-0.26} \\approx 0.771052 \\approx 0.7711$$
+$$\\text{discount factor} = e^{-rt}$$
 
-Not 0.8112.`,
+The firm's opportunity cost of capital is $6.5\\%$ per year and the deferred option pays in 4 years, so build the exponent first:
+
+$$rt = 0.065 \\times 4 = 0.26$$
+
+Evaluate the factor:
+
+$$e^{-0.26} \\approx 0.771052$$
+
+Compare with the claimed value:
+
+$$0.8112 - 0.7711 = 0.0401$$
+
+The correct factor is about 0.7711, roughly 0.04 below the claimed 0.8112. That gap is not trivial: applied to a payment near \\$45,000 it would shift the valuation by about \\$1,800. The statement is false.`,
       `**B) The future payment that makes the firm indifferent between the two options is approximately \\$49,850.75.**  (false)
 
-Since the immediate option must equal the discounted value of the future payment, the required future amount is K = 35,000/$e^{-0.26} \\approx 35,000$/0.7711 ≈ \\$45,392.55, considerably less than the \\$49,850.75 given in the statement.
+Indifference means the deferred payment, once discounted, is worth exactly the immediate amount:
 
-Indifference means $35,000 = K e^{-0.26}$, so
+$$PV_0 = K e^{-rt}$$
 
-$$K = 35,000 / 0.771052 \\approx \\$45,392.55$$`,
+Solving for the future payment reverses the discounting:
+
+$$K = PV_0\\, e^{rt}$$
+
+Substitute the immediate option $PV_0 = 35,000$, the rate $r = 0.065$, and $t = 4$ years. The exponent is:
+
+$$rt = 0.065 \\times 4 = 0.26$$
+
+$$e^{-0.26} \\approx 0.771052$$
+
+Divide the immediate amount by that factor:
+
+$$K = \\frac{35,000}{0.771052}$$
+
+$$\\approx 45,392.55$$
+
+Compare with the claimed figure:
+
+$$49,850.75 - 45,392.55 = 4,458.20$$
+
+Checking the answer confirms it, since $45,392.55 \\times 0.771052 \\approx 35,000$. The claim overstates the indifference payment by about \\$4,458, so the statement is false.`,
       `**C) This indifference amount exceeds the immediate \\$35,000 option by more than \\$11,000.**  (false)
 
-The true premium the future payment must carry over the immediate \\$35,000 is 45,392.55 - 35,000 = \\$10,392.55, which falls short of \\$11,000, so the claim that the excess is more than \\$11,000 does not hold.
+The premium the deferred option must carry is the difference between the indifference payment and the immediate amount, so the indifference payment is needed first:
 
-$$45,392.55 - 35,000 = \\$10,392.55$$
+$$K = PV_0\\, e^{rt} = \\frac{35,000}{e^{-0.26}}$$
 
-$10,392.55 < 11,000$.`,
+$$e^{-0.26} \\approx 0.771052$$
+
+$$K \\approx \\frac{35,000}{0.771052} \\approx 45,392.55$$
+
+Now subtract the immediate option:
+
+$$45,392.55 - 35,000.00$$
+
+$$= 10,392.55$$
+
+Compare that excess with the threshold in the claim:
+
+$$11,000.00 - 10,392.55 = 607.45$$
+
+The premium is about \\$10,392.55, which falls roughly \\$607 short of \\$11,000, so it is not more than \\$11,000. The statement is false.`,
       `**D) If the firm's opportunity cost of capital were 9% instead of 6.5%, the required indifference payment would remain unchanged from the original 4-year, 6.5% figure.**  (false)
 
-A higher opportunity cost of capital discounts a future payment more heavily, so a larger future amount is required to remain equivalent to the same \\$35,000 today, not the same amount as before. Recomputing at 9% gives K ≈ \\$50,166.53, clearly different from (and larger than) the 6.5% figure of \\$45,392.55.
+Changing the opportunity cost of capital changes the discount factor, so the indifference payment has to be recomputed:
 
-At $r = 0.09$: $rt = 0.36$, $e^{-0.36} \\approx 0.697676$
+$$K = PV_0\\, e^{rt}$$
 
-$$K = 35,000 / 0.697676 \\approx \\$50,166.53$$`,
+At the original $6.5\\%$ over 4 years:
+
+$$e^{-0.26} \\approx 0.771052, \\quad K = \\frac{35,000}{0.771052} \\approx 45,392.55$$
+
+At the higher $9\\%$ over the same 4 years the exponent becomes:
+
+$$rt = 0.09 \\times 4 = 0.36$$
+
+$$e^{-0.36} \\approx 0.697676$$
+
+$$K' = \\frac{35,000}{0.697676} \\approx 50,166.53$$
+
+Compare the two:
+
+$$50,166.53 - 45,392.55 = 4,773.98$$
+
+A firm with a higher opportunity cost discounts the deferred option more heavily, so it demands about \\$4,774 more to stay indifferent to the same \\$35,000 today. The payment does not remain unchanged, so the statement is false.`,
       `**E) If the payment horizon were shortened to 2 years instead of 4, the required indifference payment would be smaller than the original 4-year figure.**  (true)
 
-Shortening the horizon from 4 years to 2 years means less time is available for discounting to erode the future payment's value, so a smaller future amount is enough to match today's \\$35,000. Recomputing at t = 2 gives K ≈ \\$39,858.99, which is indeed smaller than the 4-year figure of \\$45,392.55.
+Shortening the horizon changes the exponent, so the indifference payment is recomputed and compared:
 
-At $t = 2$: $rt = 0.13$, $e^{-0.13} \\approx 0.878095$
+$$K = PV_0\\, e^{rt}$$
 
-$$K = 35,000 / 0.878095 \\approx \\$39,858.99$$
+At the original 4-year horizon:
 
-$39,858.99 < 45,392.55$.`,
+$$rt = 0.065 \\times 4 = 0.26, \\quad e^{-0.26} \\approx 0.771052$$
+
+$$K_4 = \\frac{35,000}{0.771052} \\approx 45,392.55$$
+
+At the shortened 2-year horizon:
+
+$$rt = 0.065 \\times 2 = 0.13$$
+
+$$e^{-0.13} \\approx 0.878095$$
+
+$$K_2 = \\frac{35,000}{0.878095} \\approx 39,858.99$$
+
+Compare the two required payments:
+
+$$45,392.55 - 39,858.99 = 5,533.56$$
+
+With only 2 years of waiting, less interest has to be made up, so about \\$5,534 less is needed to match the same \\$35,000 today. The claim says the shorter horizon needs a smaller payment, which is what the arithmetic shows, so the statement is true.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 53,
@@ -4203,33 +8437,117 @@ Indifference condition: $\\mathrm{PV}_0 = Ke^{-rt}$, so $K = \\mathrm{PV}_0\\, e
     tactical_explanations: [
       `**A) The condition $P'(t^*) = r P(t^*)$ has no solution for $t^* > 0$, so the present value is maximized at $t^* = 0$.**  (true)
 
-Because the wine's growth rate (5%) is smaller than the discount rate (8%), the derivative P'(t) always falls short of rP(t) at every t, so there is no interior point where the two become equal. With no interior critical point available, the present value is maximized right at the boundary, $t^* = 0$, meaning the wine should be sold immediately.
+The optimal-timing rule maximizes the present value of the eventual sale:
 
-$P(t) = 40,000 e^{0.05 t}$ has $P'(t) = 0.05 P(t)$. The interior rule $P'(t^*) = 0.08 P(t^*)$ would need $0.05 = 0.08$, which never holds. Present value is
+$$f(t) = P(t)e^{-rt}$$
 
-$$f(t) = 40,000 e^{(0.05-0.08)t} = 40,000 e^{-0.03 t}$$
+Its first-order condition compares the growth in market value with the interest cost of waiting:
 
-which is strictly decreasing, so the maximum on $t \\ge 0$ is at $t^* = 0$.`,
+$$P'(t^{\\ast}) = r P(t^{\\ast})$$
+
+Differentiate the given value function $P(t) = 40,000e^{0.05t}$:
+
+$$P'(t) = 0.05 \\times 40,000 e^{0.05t} = 0.05\\, P(t)$$
+
+The wine grows at a constant proportional rate, so substituting into the condition gives:
+
+$$0.05\\, P(t^{\\ast}) = 0.08\\, P(t^{\\ast})$$
+
+Since $P(t) > 0$ for every $t$, it can be divided out:
+
+$$0.05 = 0.08$$
+
+That is false for every $t$, so no interior solution exists. With no critical point available, the maximum must sit at the boundary of $t \\ge 0$, and the present-value function itself shows which end:
+
+$$f(t) = 40,000 e^{0.05t} e^{-0.08t}$$
+
+$$= 40,000 e^{(0.05-0.08)t} = 40,000 e^{-0.03t}$$
+
+The exponent is negative, so $f$ is strictly decreasing in $t$ and its largest value on $t \\ge 0$ is at the left endpoint:
+
+$$f(0) = 40,000 e^{0} = 40,000$$
+
+Both parts of the claim hold, the absence of an interior solution and the optimum at $t^{\\ast} = 0$, so the statement is true.`,
       `**B) The present value of the batch if sold today (t = 0) is \\$40,000.**  (true)
 
-Evaluating $P(t)$ at $t = 0$ gives $P(0) = 40,000 e^{0} = \\$40,000$ exactly, which is simply the wine's value today before any further aging or discounting is applied.`,
+Selling today means no waiting and no discounting, so the present value is just the market value evaluated at time zero:
+
+$$f(t) = P(t)e^{-rt}$$
+
+Substitute $t = 0$ into both pieces:
+
+$$P(0) = 40,000 e^{0.05 \\times 0} = 40,000 e^{0} = 40,000$$
+
+$$e^{-0.08 \\times 0} = e^{0} = 1$$
+
+Multiply them:
+
+$$f(0) = 40,000 \\times 1$$
+
+$$= 40,000$$
+
+The claim states \\$40,000 for a sale today, which is exactly what the model gives, since neither the $5\\%$ appreciation nor the $8\\%$ discounting has had any time to act. The statement is true.`,
       `**C) The present value of the batch if instead sold in 10 years is approximately \\$29,632.73.**  (true)
 
-Because the discount rate (8%) exceeds the wine's growth rate (5%), the present-value function actually shrinks as t increases; evaluating it at t = 10 gives approximately \\$29,632.73, which is indeed below the \\$40,000 obtained by selling today.
+Valuing a sale ten years out means combining the wine's appreciation with ten years of discounting:
 
-$$f(10) = 40,000 e^{-0.03 \\times 10} = 40,000 e^{-0.3} \\approx 40,000 \\times 0.740818 \\approx \\$29,632.73$$`,
+$$f(t) = P(t)e^{-rt} = 40,000 e^{0.05t} e^{-0.08t}$$
+
+The exponents combine into a single net exponent:
+
+$$f(t) = 40,000 e^{(0.05-0.08)t} = 40,000 e^{-0.03t}$$
+
+Substitute $t = 10$ years:
+
+$$f(10) = 40,000 \\times e^{-0.03 \\times 10}$$
+
+$$= 40,000 \\times e^{-0.3}$$
+
+$$e^{-0.3} \\approx 0.740818$$
+
+$$f(10) \\approx 29,632.73$$
+
+The claim gives approximately \\$29,632.73, matching the computed present value to the cent. The figure is below the \\$40,000 available today because the $8\\%$ discount rate outruns the $5\\%$ appreciation, leaving a net decay of $3\\%$ per year. The statement is true.`,
       `**D) Because the market value P(t) is increasing over time, waiting to sell always increases the present value of the batch, regardless of the discount rate used.**  (false)
 
-A rising face value does not automatically translate into a rising present value once discounting is applied, since the discount rate can outpace the growth rate. Here, because 8% discounting exceeds 5% growth, present value actually falls the longer the sale is delayed, exactly as shown by comparing f(10) to f(0).
+A rising market value and a rising present value are different things, because discounting works against the delay. The present value of a sale at date $t$ is:
 
-$$f(10) \\approx 29,632.73 < f(0) = 40,000$$
+$$f(t) = P(t)e^{-rt} = 40,000 e^{0.05t} e^{-0.08t}$$
 
-Waiting lowers present value here because 8% discounting outruns 5% growth.`,
+Combining the exponents shows what actually drives the decision:
+
+$$f(t) = 40,000 e^{(0.05 - 0.08)t} = 40,000 e^{-0.03t}$$
+
+The sign of the net exponent decides everything. Here it is negative, so $f$ falls as $t$ rises:
+
+$$f(0) = 40,000$$
+
+$$f(10) = 40,000 \\times e^{-0.3} \\approx 40,000 \\times 0.740818 \\approx 29,632.73$$
+
+Compare the two:
+
+$$40,000.00 - 29,632.73 = 10,367.27$$
+
+Waiting ten years destroys about \\$10,367 of present value even though the wine itself is worth more at that date. The claim also says this holds regardless of the discount rate, which fails as well, since any $r < 0.05$ would flip the net exponent positive. The statement is false.`,
       `**E) If the discount rate were instead 4%, the optimal policy would again be to sell immediately at $t^* = 0$.**  (false)
 
-If the growth rate (5%) instead exceeds the discount rate (4%), the present-value function becomes $40,000e^{0.01t}$, which grows without any upper limit as t increases. In that case there is no finite time that maximizes present value at all, since waiting longer always helps - the opposite conclusion from selling immediately.
+A different discount rate changes the sign of the net exponent, so the whole conclusion has to be re-derived rather than carried over. The present value of a sale at date $t$ is:
 
-If $r = 0.04 < 0.05$, then $f(t) = 40,000 e^{0.01 t}$, which increases in $t$ without bound. There is then no finite maximizing time, and selling at $t^* = 0$ is not optimal.`,
+$$f(t) = 40,000 e^{0.05t} e^{-rt} = 40,000 e^{(0.05 - r)t}$$
+
+At the hypothetical $r = 0.04$ the exponent becomes:
+
+$$0.05 - 0.04 = 0.01$$
+
+$$f(t) = 40,000 e^{0.01t}$$
+
+This is strictly increasing in $t$ and unbounded above, so waiting always helps. Comparing two dates makes it concrete:
+
+$$f(0) = 40,000$$
+
+$$f(10) = 40,000 \\times e^{0.1} \\approx 40,000 \\times 1.105171 \\approx 44,206.84$$
+
+Selling immediately would give about \\$4,207 less than waiting a decade, and there is no finite date at which the present value is maximized, since it keeps climbing. The first-order condition confirms it, since $P'(t^{\\ast}) = 0.05P(t^{\\ast})$ can never equal $0.04P(t^{\\ast})$. The claim says $t^{\\ast} = 0$ would again be optimal, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 54,
@@ -4277,21 +8595,95 @@ Optimality condition: $P'(t^*) = rP(t^*)$
     tactical_explanations: [
       `**A) The data satisfy the optimality condition $P'(t^*) = r P(t^*)$.**  (true)
 
-Multiplying the given interest rate by the given $P(t^*)$, $r P(t^*) = 0.09 \\times 520,000 = \\$46,800$, produces exactly the given $P'(t^*)$, confirming that the data really do describe a point satisfying the chapter's first-order optimality condition.`,
+The chapter's first-order condition for the optimal harvest date sets the rate of value growth against the interest cost of leaving the timber standing:
+
+$$P'(t^{\\ast}) = r P(t^{\\ast})$$
+
+The measured data supply everything the check needs, so evaluate the right side using $r = 0.09$ and $P(t^{\\ast}) = 520,000$:
+
+$$r P(t^{\\ast}) = 0.09 \\times 520,000$$
+
+$$= 46,800$$
+
+Compare that with the measured left side:
+
+$$P'(t^{\\ast}) = 46,800$$
+
+$$46,800 - 46,800 = 0$$
+
+The two sides agree exactly, so the stand really is being measured at a point where the first-order condition holds and the comparative-statics formula may be applied to it. The statement is true.`,
       `**B) The value of $P''(t^*) - r P'(t^*)$ is -\\$1,092.**  (true)
 
-Substituting the given values into $P''(t^*) - r P'(t^*)$ gives 3,120 - 0.09(46,800) = 3,120 - 4,212 = -\\$1,092, exactly as the formula requires.
+The quantity $P''(t^{\\ast}) - rP'(t^{\\ast})$ is the denominator of the comparative-statics formula and also the second-order check, so it is evaluated directly from the measured data:
 
-$$P''(t^*) - r P'(t^*) = 3,120 - 0.09 \\times 46,800 = 3,120 - 4,212 = -1,092$$`,
+$$P''(t^{\\ast}) - r P'(t^{\\ast})$$
+
+Substitute $P''(t^{\\ast}) = 3,120$ per year, $r = 0.09$, and $P'(t^{\\ast}) = 46,800$. Compute the product first:
+
+$$0.09 \\times 46,800 = 4,212$$
+
+Now subtract:
+
+$$3,120 - 4,212$$
+
+$$= -1,092$$
+
+The claim gives $-1,092$, matching the computed value exactly. The sign matters as much as the size here, since a negative result is what a genuine maximum requires. The statement is true.`,
       `**C) $dt^*/dr$ is approximately -476.19.**  (true)
 
-Dividing $P(t^*) = 520,000$ by the $-1,092$ found above gives $dt^*/dr = 520,000/(-1,092) \\approx -476.19$, meaning a one-unit increase in r would be associated with roughly a 476-year shift in $t^*$ in the opposite direction.`,
+The sensitivity of the optimal date to the interest rate comes from differentiating the first-order condition $P'(t^{\\ast}) = rP(t^{\\ast})$ implicitly with respect to $r$:
+
+$$P''(t^{\\ast})\\frac{dt^{\\ast}}{dr} = P(t^{\\ast}) + rP'(t^{\\ast})\\frac{dt^{\\ast}}{dr}$$
+
+Collecting the derivative terms on one side:
+
+$$\\frac{dt^{\\ast}}{dr}\\left[P''(t^{\\ast}) - rP'(t^{\\ast})\\right] = P(t^{\\ast})$$
+
+$$\\frac{dt^{\\ast}}{dr} = \\frac{P(t^{\\ast})}{P''(t^{\\ast}) - rP'(t^{\\ast})}$$
+
+The denominator was computed from the measured data as $3,120 - 0.09 \\times 46,800 = -1,092$. Substitute both pieces:
+
+$$\\frac{dt^{\\ast}}{dr} = \\frac{520,000}{-1,092}$$
+
+$$\\approx -476.19$$
+
+The claim gives approximately $-476.19$, matching the computed sensitivity. Read in practical units, a one percentage point rise in $r$, meaning $0.01$, would move the optimal date by about $-4.76$ years. The statement is true.`,
       `**D) An increase in the interest rate would lengthen the optimal harvest time $t^*$.**  (false)
 
-Because $dt^*/dr \\approx -476.19 < 0$, the optimal harvest time moves opposite to the interest rate, so a rate increase actually shortens $t^*$, not lengthens it — matching the chapter's broader conclusion that higher interest rates make decision-makers more impatient and push optimal cutting times earlier, not later.`,
+The direction in which the optimal date moves is read off the sign of the comparative-statics derivative:
+
+$$\\frac{dt^{\\ast}}{dr} = \\frac{P(t^{\\ast})}{P''(t^{\\ast}) - rP'(t^{\\ast})}$$
+
+The numerator is the stand's value, which is positive:
+
+$$P(t^{\\ast}) = 520,000$$
+
+The denominator is the second-order quantity:
+
+$$3,120 - 0.09 \\times 46,800 = 3,120 - 4,212 = -1,092$$
+
+A positive numerator over a negative denominator gives:
+
+$$\\frac{dt^{\\ast}}{dr} = \\frac{520,000}{-1,092} \\approx -476.19 < 0$$
+
+A negative derivative means the optimal date moves opposite to the rate, so a rate increase shortens $t^{\\ast}$. Concretely, a rise of $0.01$ in $r$ shifts the harvest about $-4.76$ years, that is nearly five years earlier. The claim says a higher rate would lengthen the optimal harvest time, so the statement is false.`,
       `**E) The second-order condition $P''(t^*) - r P'(t^*) < 0$ is satisfied here.**  (true)
 
-Since $P''(t^*) - r P'(t^*) = -1,092 < 0$, the chapter's second-order condition for a genuine present-value maximum is satisfied, confirming that $t^*$ truly maximizes (rather than minimizes) the present value here.`,
+The second-order condition distinguishes a present-value maximum from a minimum, and for this problem it requires the quantity to be negative:
+
+$$P''(t^{\\ast}) - r P'(t^{\\ast}) < 0$$
+
+Evaluate the left side from the measured data, with $P''(t^{\\ast}) = 3,120$, $r = 0.09$, and $P'(t^{\\ast}) = 46,800$:
+
+$$0.09 \\times 46,800 = 4,212$$
+
+$$3,120 - 4,212 = -1,092$$
+
+Compare that with the requirement:
+
+$$-1,092 < 0$$
+
+The condition is satisfied, with about \\$1,092 of margin below zero. Together with the first-order check, where $0.09 \\times 520,000 = 46,800$ reproduces the measured $P'(t^{\\ast})$ exactly, this confirms the measured point is a genuine maximum of present value rather than a minimum. The statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 55,
@@ -4345,51 +8737,129 @@ Second-order condition for a maximum: $P''(t^*) - rP'(t^*) < 0$
     tactical_explanations: [
       `**A) The optimal harvest time $t^*$ is approximately 18.22 years.**  (true)
 
-Solving $6,000(t + 4) = 270(t + 4)^{2}$ by dividing out the common factor (t + 4) gives 6,000 = 270(t + 4), so t + 4 = 22.2222 and $t^* \\approx 18.22$ years, matching the optimality condition exactly.
+The optimal harvest date maximizes the present value $f(t) = P(t)e^{-rt}$, and its first-order condition is:
 
-$P(t) = 3,000(t+4)^{2}$, $P'(t) = 6,000(t+4)$, $r = 0.09$:
+$$P'(t^{\\ast}) = r P(t^{\\ast})$$
 
-$$6,000(t+4) = 0.09 \\times 3,000(t+4)^{2} = 270(t+4)^{2}$$
+Differentiate the orchard's value function $P(t) = 3,000(t+4)^{2}$:
 
-Cancel $(t+4)$: $6,000 = 270(t+4)$, so $t+4 \\approx 22.222$ and $t^* \\approx 18.22$ years.`,
+$$P'(t) = 6,000(t+4)$$
+
+Substitute both sides of the condition with $r = 0.09$:
+
+$$6,000(t+4) = 0.09 \\times 3,000(t+4)^{2}$$
+
+$$6,000(t+4) = 270(t+4)^{2}$$
+
+For $t \\ge 0$ the factor $(t+4)$ is strictly positive, so it can be cancelled from both sides:
+
+$$6,000 = 270(t+4)$$
+
+$$t + 4 = \\frac{6,000}{270} \\approx 22.2222$$
+
+$$t^{\\ast} \\approx 22.2222 - 4 = 18.2222 \\text{ years}$$
+
+The claim gives approximately 18.22 years, matching the computed optimum to two decimal places, so the statement is true.`,
       `**B) The present value of the orchard's timber at $t^*$ is approximately \\$250,000.00.**  (false)
 
-Evaluating $P(t^*)$ first and then multiplying by $e^{-rt^*}$ gives a present value of approximately \\$287,377.84, considerably above the \\$250,000.00 stated, which understates the true maximum by more than \\$37,000.
+The present value at the optimal date is the stand's value there, discounted back to today:
 
-$$P(t^*) = 3,000 \\times (22.2222)^{2} \\approx \\$1,481,481.48$$
+$$f(t) = P(t)e^{-rt}$$
 
-$$f(t^*) = 1,481,481.48 \\times e^{-0.09 \\times 18.2222} = 1,481,481.48 e^{-1.64}$$
+The first-order condition $6,000(t+4) = 270(t+4)^{2}$ gives $t + 4 = 6,000/270 \\approx 22.2222$, so $t^{\\ast} \\approx 18.2222$ years. Evaluate the value function at that date:
 
-$$e^{-1.64} \\approx 0.193980, \\quad f(t^*) \\approx \\$287,377.84$$
+$$P(t^{\\ast}) = 3,000 \\times (22.2222)^{2}$$
 
-Not $\\$250,000$.`,
+$$= 3,000 \\times 493.827 \\approx 1,481,481.48$$
+
+Now discount it over $t^{\\ast}$ years at $9\\%$:
+
+$$rt^{\\ast} = 0.09 \\times 18.2222 \\approx 1.64$$
+
+$$e^{-1.64} \\approx 0.193980$$
+
+$$f(t^{\\ast}) \\approx 1,481,481.48 \\times 0.193980 \\approx 287,377.84$$
+
+Compare with the claimed figure:
+
+$$287,377.84 - 250,000.00 = 37,377.84$$
+
+The claim understates the maximized present value by more than \\$37,000, so the statement is false.`,
       `**C) The second-order quantity $P''(t^*) - r P'(t^*)$ evaluates to +\\$6,000.**  (false)
 
-Carefully computing $P''(t^*) - r P'(t^*) = 6,000 - 12,000$ gives -\\$6,000, not +\\$6,000. Moreover, a negative value here is precisely what confirms a maximum under the chapter's second-order condition, so the correct sign points to a maximum, not a minimum as the statement claims.
+The second-order quantity is built from the second derivative and the first derivative evaluated at the optimum:
 
-$P''(t) = 6,000$ and $P'(t^*) = 6,000 \\times 22.2222 \\approx 133,333.33$:
+$$P''(t^{\\ast}) - r P'(t^{\\ast})$$
+
+Differentiating $P(t) = 3,000(t+4)^{2}$ twice gives:
+
+$$P'(t) = 6,000(t+4), \\qquad P''(t) = 6,000$$
+
+The optimum satisfies $t^{\\ast} + 4 = 6,000/270 \\approx 22.2222$, so the first derivative there is:
+
+$$P'(t^{\\ast}) = 6,000 \\times 22.2222 \\approx 133,333.33$$
+
+Substitute both into the expression with $r = 0.09$:
+
+$$0.09 \\times 133,333.33 = 12,000$$
+
+$$6,000 - 12,000 = -6,000$$
+
+Compare with the claim:
+
+$$-6,000 \\text{ versus } +6,000$$
+
+The magnitude in the claim is right but the sign is wrong, and the sign is the whole point of this quantity. A negative value is exactly what the second-order condition requires for a present-value maximum, so the correct figure confirms a maximum. The statement is false.`,
+      `**D) $dt^*/dr$ is approximately +246.91.**  (false)
+
+The sensitivity of the optimal date to the interest rate is given by the comparative-statics formula:
+
+$$\\frac{dt^{\\ast}}{dr} = \\frac{P(t^{\\ast})}{P''(t^{\\ast}) - rP'(t^{\\ast})}$$
+
+At the optimum, $t^{\\ast} + 4 = 6,000/270 \\approx 22.2222$, so the three ingredients are:
+
+$$P(t^{\\ast}) = 3,000 \\times (22.2222)^{2} \\approx 1,481,481.48$$
+
+$$P'(t^{\\ast}) = 6,000 \\times 22.2222 \\approx 133,333.33, \\qquad P''(t^{\\ast}) = 6,000$$
+
+The denominator is therefore:
 
 $$6,000 - 0.09 \\times 133,333.33 = 6,000 - 12,000 = -6,000$$
 
-Negative, as a maximum requires.`,
-      `**D) $dt^*/dr$ is approximately +246.91.**  (false)
+Substitute both parts:
 
-Dividing $P(t^*)$ by the correctly signed denominator gives $dt^*/dr \\approx -246.91$, which is negative, not positive. A negative sensitivity means a higher interest rate shortens the optimal harvest time rather than lengthening it.
+$$\\frac{dt^{\\ast}}{dr} = \\frac{1,481,481.48}{-6,000}$$
 
-$$\\frac{dt^*}{dr} = \\frac{1,481,481.48}{-6,000} \\approx -246.91$$
+$$\\approx -246.91$$
 
-The claimed $+246.91$ has the wrong sign.`,
+The magnitude matches the claim but the sign does not. The denominator is negative because the second-order condition for a maximum demands it, so the sensitivity must be negative, meaning a higher rate brings the harvest forward. The claim states $+246.91$, so the statement is false.`,
       `**E) If the interest rate were exactly 4.5% instead of 9%, the optimal harvest time would be exactly double the original, at 36.44 years.**  (false)
 
-Using the exact relation $t^* = 2/r - 4$ derived from this particular P(t), halving r from 9% to 4.5% gives $t^* = 2/0.045 - 4 \\approx 40.44$ years. Since double the original 18.22 years would be 36.44 years, the actual relationship between $t^*$ and r is not a simple proportional doubling, and the true value (40.44) exceeds that naive expectation.
+Halving the rate calls for re-solving the optimality condition, not scaling the old answer. Cancelling $(t+4)$ from $6,000(t+4) = 3,000r(t+4)^{2}$ leaves a general relation for this value function:
 
-This $P(t)$ gives $t^* = 2/r - 4$. At $r = 0.045$:
+$$6,000 = 3,000\\, r\\, (t+4)$$
 
-$$t^* = 2/0.045 - 4 \\approx 44.444 - 4 = 40.44$$
+$$t^{\\ast} = \\frac{2}{r} - 4$$
 
-years
+At the original rate $r = 0.09$:
 
-Double 18.22 is 36.44, which is not 40.44.`,
+$$t^{\\ast} = \\frac{2}{0.09} - 4 \\approx 22.2222 - 4 = 18.2222 \\text{ years}$$
+
+At the halved rate $r = 0.045$:
+
+$$t^{\\ast} = \\frac{2}{0.045} - 4$$
+
+$$\\approx 44.4444 - 4 = 40.4444 \\text{ years}$$
+
+Doubling the original optimum would give:
+
+$$2 \\times 18.2222 = 36.4444 \\text{ years}$$
+
+Compare the two:
+
+$$40.4444 - 36.4444 = 4.0000 \\text{ years}$$
+
+The true optimum at $4.5\\%$ is about 40.44 years, four years beyond the claimed 36.44. Only the $2/r$ term doubles when the rate is halved; the constant $-4$ does not, so the relationship is not proportional. The statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 56,
@@ -4445,23 +8915,121 @@ $dt^*/dr = P(t^*) / [P''(t^*) - rP'(t^*)]$
     tactical_explanations: [
       `**A) The present value of the \\$250,000 exit payment is approximately \\$189,893.03.**  (true)
 
-Multiplying the exit payment's exponent, $rt_1 = 0.11 \\times 2.5 = 0.275$, into $e^{-0.275}$ gives approximately $0.759572$, and applying that discount factor to \\$250,000 gives its present value.
+The exit payment is a single future amount discounted continuously:
 
-$$PV_1 = 250,000 \\times e^{-0.275} \\approx 250,000 \\times 0.759572 \\approx \\$189,893.03$$`,
+$$PDV = K e^{-rt}$$
+
+Substitute the exit proceeds $K_1 = 250,000$, the required rate $r = 0.11$, and the horizon $t_1 = 2.5$ years. Form the exponent first:
+
+$$rt_1 = 0.11 \\times 2.5 = 0.275$$
+
+Evaluate the discount factor:
+
+$$e^{-0.275} \\approx 0.759572$$
+
+Apply it to the exit payment:
+
+$$PV_1 = 250,000 \\times 0.759572$$
+
+$$\\approx 189,893.03$$
+
+About $76\\%$ of the face amount survives two and a half years of discounting at $11\\%$. The claim gives approximately \\$189,893.03, matching the computed present value to the cent, so the statement is true.`,
       `**B) The present value of the \\$40,000 side payment is approximately \\$37,513.95.**  (true)
 
-The side payment's much shorter horizon, $t_2 = 7/12 \\approx 0.583333$ of a year, gives a smaller exponent of about $0.064167$, and $e^{-0.064167} \\approx 0.937849$ applied to \\$40,000 gives its present value.
+The side payment uses the same continuous rule, with the seven months expressed as a fraction of a year:
 
-$$PV_2 = 40,000 \\times e^{-0.064167} \\approx 40,000 \\times 0.937849 \\approx \\$37,513.95$$`,
+$$PDV = K e^{-rt}$$
+
+The horizon is:
+
+$$t_2 = \\frac{7}{12} \\approx 0.583333 \\text{ years}$$
+
+Form the exponent with $r = 0.11$:
+
+$$rt_2 \\approx 0.11 \\times 0.583333 \\approx 0.064167$$
+
+Evaluate the discount factor:
+
+$$e^{-0.064167} \\approx 0.937849$$
+
+Apply it to the \\$40,000 side payment:
+
+$$PV_2 \\approx 40,000 \\times 0.937849$$
+
+$$\\approx 37,513.95$$
+
+The claim gives approximately \\$37,513.95, matching the computed present value to the cent. The factor stays close to 1 because the horizon is short. The statement is true.`,
       `**C) The combined present value of both payments is approximately \\$230,000.00.**  (false)
 
-Adding the two individually discounted values, $189,893.03 + 37,513.95 \\approx \\$227,406.98$, not \\$230,000.00 - the stated combined figure overstates the correct total by more than \\$2,500.`,
+Present values are expressed in today's dollars, so the two are computed separately and then added:
+
+$$PDV = PV_1 + PV_2$$
+
+The exit payment discounts over 2.5 years:
+
+$$PV_1 = 250,000 \\times e^{-0.275} \\approx 250,000 \\times 0.759572 \\approx 189,893.03$$
+
+The side payment discounts over $7/12$ of a year:
+
+$$PV_2 = 40,000 \\times e^{-0.064167} \\approx 40,000 \\times 0.937849 \\approx 37,513.95$$
+
+Add the two:
+
+$$189,893.03 + 37,513.95 = 227,406.98$$
+
+Compare with the claimed total:
+
+$$230,000.00 - 227,406.98 = 2,593.02$$
+
+The claim overstates the combined present value by about \\$2,593, so the statement is false.`,
       `**D) The \\$40,000 side payment is discounted by more than 10% of its face value.**  (false)
 
-Because the side payment is due so soon, only about 7 months away, very little discounting has time to accumulate on it: its present value sits only $(40,000 - 37,513.95)/40,000 \\approx 6.2\\%$ below its \\$40,000 face value, well short of the more-than-$10\\%$ reduction the claim describes.`,
+The size of the discount is measured against the payment's own face value, so the present value comes first:
+
+$$PV_2 = K_2 e^{-rt_2}$$
+
+With $t_2 = 7/12 \\approx 0.583333$ years and $r = 0.11$:
+
+$$rt_2 \\approx 0.064167, \\qquad e^{-0.064167} \\approx 0.937849$$
+
+$$PV_2 \\approx 40,000 \\times 0.937849 \\approx 37,513.95$$
+
+The dollar amount of discounting is:
+
+$$40,000.00 - 37,513.95 = 2,486.05$$
+
+As a share of face value:
+
+$$\\frac{2,486.05}{40,000} \\approx 0.0622 = 6.22\\%$$
+
+Compare with the threshold in the claim:
+
+$$10\\% - 6.22\\% = 3.78 \\text{ percentage points}$$
+
+Seven months is too short a wait for $11\\%$ discounting to remove a tenth of the payment; it removes about $6.2\\%$. The statement is false.`,
       `**E) If the discount rate were 0% instead of 11%, the combined present value of both payments would be exactly \\$290,000.**  (true)
 
-With no discounting applied at all ($e^{0}=1$), each payment's present value collapses to its own face value, so the combined total simply becomes $250,000 + 40,000 = \\$290,000$, exactly as the statement describes.`,
+A zero rate has to be substituted into the discount factors rather than assumed away. Each payment is valued with:
+
+$$PDV = K e^{-rt}$$
+
+At $r = 0$ both exponents vanish, whatever the horizons:
+
+$$e^{-0 \\times 2.5} = e^{0} = 1$$
+
+$$e^{-0 \\times (7/12)} = e^{0} = 1$$
+
+Each payment therefore keeps its face value:
+
+$$PV_1 = 250,000 \\times 1 = 250,000$$
+
+$$PV_2 = 40,000 \\times 1 = 40,000$$
+
+Add the two:
+
+$$250,000 + 40,000 = 290,000$$
+
+With no compensation required for waiting, the two dates stop mattering and the combined present value is just the total promised. The claim gives exactly \\$290,000, which is the computed total, so the statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 57,
@@ -4511,33 +9079,105 @@ Combined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$
     tactical_explanations: [
       `**A) The implied discount factor is exactly 0.625.**  (true)
 
-Dividing the \\$2,000,000 price paid by the \\$3,200,000 guaranteed payout gives exactly $PDV/K = 2,000,000/3,200,000 = 0.625$, with no rounding involved.`,
+The discount factor is the share of the promised payout that the investors actually paid, so it is read off the two amounts:
+
+$$\\text{discount factor} = \\frac{PDV}{K}$$
+
+Substitute the \\$2,000,000 paid today and the \\$3,200,000 guaranteed milestone payout:
+
+$$\\frac{2,000,000}{3,200,000}$$
+
+$$= 0.625$$
+
+The division terminates exactly, since $2/3.2 = 20/32 = 5/8$, so no rounding is involved. The investors are paying 62.5 cents today for each dollar promised in 4.5 years. The claim states exactly 0.625, so the statement is true.`,
       `**B) The implied continuous discount rate is approximately 10.44% per year.**  (true)
 
-Solving the continuous present-value formula for r using the 0.625 discount factor over a 4.5-year horizon, r = -ln(0.625)/4.5, gives approximately 10.44%.
+Recovering the implied rate means inverting the continuous present-value rule:
 
-$$-\\ln(0.625) \\approx 0.470004, \\quad r = 0.470004/4.5 \\approx 0.104445 = 10.44\\%$$`,
+$$PDV = K e^{-rt}$$
+
+Divide by $K$, take natural logarithms, and solve for the rate:
+
+$$r = -\\frac{\\ln(PDV/K)}{t}$$
+
+Substitute the discount factor $2,000,000/3,200,000 = 0.625$ and the horizon $t = 4.5$ years:
+
+$$-\\ln(0.625) \\approx 0.470004$$
+
+$$r \\approx \\frac{0.470004}{4.5}$$
+
+$$\\approx 0.104445 = 10.44\\%$$
+
+The claim gives approximately 10.44% per year, matching the computed implied rate to two decimal places. As a check, $3,200,000 \\times e^{-0.104445 \\times 4.5} \\approx 2,000,000$, the price actually paid. The statement is true.`,
       `**C) If the milestone payout were instead \\$3,600,000, the implied discount rate would be higher than the rate implied by the original \\$3,200,000 payout.**  (true)
 
-A larger promised payout for the same \\$2,000,000 price implies the investors are accepting less discounting relative to the payout, which corresponds to a lower discount factor and therefore a higher implied rate. Recomputing with a \\$3,600,000 payout gives an implied rate of about 13.06%, confirming it is indeed higher than 10.44%.
+A different payout changes the discount factor, so the implied rate is recomputed from the same inversion:
 
-With $K = 3,600,000$: $2,000,000/3,600,000 \\approx 0.555556$
+$$r = -\\frac{\\ln(PDV/K)}{t}$$
 
-$$r = -\\ln(0.555556)/4.5 \\approx 0.587787/4.5 \\approx 0.130619 = 13.06\\%$$
+With the larger payout of \\$3,600,000 against the same \\$2,000,000 price:
 
-$13.06\\% > 10.44\\%$.`,
+$$\\frac{PDV}{K} = \\frac{2,000,000}{3,600,000} \\approx 0.555556$$
+
+$$-\\ln(0.555556) \\approx 0.587787$$
+
+$$r' \\approx \\frac{0.587787}{4.5} \\approx 0.130619 = 13.06\\%$$
+
+The original \\$3,200,000 payout implied:
+
+$$r = \\frac{0.470004}{4.5} \\approx 0.104445 = 10.44\\%$$
+
+Compare the two rates:
+
+$$13.06\\% - 10.44\\% = 2.62 \\text{ percentage points}$$
+
+Paying the same price for a bigger promised payout means a smaller discount factor, and a smaller factor over the same horizon requires a stronger rate. The implied rate rises by about 2.62 percentage points, so the statement is true.`,
       `**D) If the time to payout were shortened to 3 years instead of 4.5, the implied discount rate would be lower than the rate implied by the original 4.5-year horizon.**  (false)
 
-Reaching the very same discount factor, 0.625, over a shorter horizon requires a stronger annual rate, not a weaker one, since less time is available to accumulate the same proportional discount. Recomputing with t = 3 gives an implied rate of about 15.67%, which is higher than 10.44%, the opposite of what the statement claims.
+Shortening the horizon while price and payout stay fixed leaves the discount factor unchanged and forces the rate to adjust:
 
-Same 0.625 factor over $t = 3$:
+$$r = -\\frac{\\ln(PDV/K)}{t}$$
 
-$$r = 0.470004/3 \\approx 0.156668 = 15.67\\%$$
+The factor is still:
 
-$15.67\\% > 10.44\\%$, so the implied rate rises when the horizon shortens.`,
+$$\\frac{2,000,000}{3,200,000} = 0.625, \\qquad -\\ln(0.625) \\approx 0.470004$$
+
+At the shortened horizon $t = 3$ years:
+
+$$r' \\approx \\frac{0.470004}{3}$$
+
+$$\\approx 0.156668 = 15.67\\%$$
+
+At the original 4.5-year horizon:
+
+$$r = \\frac{0.470004}{4.5} \\approx 0.104445 = 10.44\\%$$
+
+Compare the two:
+
+$$15.67\\% - 10.44\\% = 5.23 \\text{ percentage points}$$
+
+Only the product $rt$ is pinned down by the price and the payout, so compressing the same total discount into fewer years demands a higher annual rate, not a lower one. The claim has the direction backwards, so the statement is false.`,
       `**E) Doubling the time horizon to 9 years would require the rate to be approximately 5.22%.**  (true)
 
-Since the discount factor $0.625$ corresponds to a fixed value of the product $r \\times t$ (specifically $-\\ln(0.625) \\approx 0.470004$), doubling $t$ from $4.5$ to $9$ years while holding that product constant forces $r$ to be cut exactly in half: $r = 0.470004/9 \\approx 5.22\\%$.`,
+The price and the payout fix the discount factor, and therefore fix the product of rate and time:
+
+$$e^{-rt} = \\frac{PDV}{K} = 0.625$$
+
+Taking natural logarithms:
+
+$$rt = -\\ln(0.625) \\approx 0.470004$$
+
+That product must stay at 0.470004, so doubling the horizon to $t = 9$ years gives:
+
+$$r = \\frac{0.470004}{9}$$
+
+$$\\approx 0.052223 = 5.22\\%$$
+
+Compare with the original 4.5-year rate:
+
+$$\\frac{0.104445}{2} \\approx 0.052223$$
+
+Doubling the time halves the rate exactly, because only their product appears in the exponent. The claim gives approximately 5.22%, matching the computed figure, so the statement is true.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 58,
@@ -4585,39 +9225,119 @@ $PDV = Ke^{-rt}$, so $r = -\\ln(PDV/K)/t$
     tactical_explanations: [
       `**A) The general optimal-time formula for this family of functions is $t^* = 2/r - k$.**  (true)
 
-Dividing the optimality equation $2A(t + k) = r A(t + k)^{2}$ through by the common factor $A(t + k)$ leaves $2 = r(t + k)$, and rearranging for t gives exactly $t^* = 2/r - k$, confirming the general formula.
+The optimal harvest date maximizes $f(t) = P(t)e^{-rt}$, and its first-order condition is:
 
-$P'(t) = 2A(t+k)$ and $P'(t^*) = r P(t^*)$ become $2A(t+k) = r A(t+k)^{2}$. Cancel $A(t+k)$:
+$$P'(t^{\\ast}) = r P(t^{\\ast})$$
 
-$$2 = r(t+k) \\implies t^* = 2/r - k$$`,
+Differentiate the family's value function $P(t) = A(t+k)^{2}$:
+
+$$P'(t) = 2A(t+k)$$
+
+Substitute both sides of the condition:
+
+$$2A(t+k) = r A(t+k)^{2}$$
+
+Both $A$ and $(t+k)$ are strictly positive, since $A$ and $k$ are positive constants and $t \\ge 0$, so the common factor $A(t+k)$ can be cancelled:
+
+$$2 = r(t+k)$$
+
+Divide by $r$ and subtract $k$:
+
+$$t + k = \\frac{2}{r}$$
+
+$$t^{\\ast} = \\frac{2}{r} - k$$
+
+This is exactly the general formula the claim gives, and note that $A$ has dropped out entirely, so the scale of the stand does not affect the timing. The statement is true.`,
       `**B) Using A = 1,200, k = 5, and r = 7.5%, the optimal harvest time is approximately $t^* = 21.67$ years.**  (true)
 
-Plugging r = 0.075 and k = 5 into $t^* = 2/r - k$ gives 2/0.075 - 5 = 26.6667 - 5 ≈ 21.67 years.
+The general formula for this family follows from cancelling $A(t+k)$ in the optimality condition $2A(t+k) = rA(t+k)^{2}$, which leaves $2 = r(t+k)$ and therefore:
 
-$$t^* = 2/0.075 - 5 = 26.6667 - 5 = 21.6667 \\approx 21.67$$
+$$t^{\\ast} = \\frac{2}{r} - k$$
 
-years`,
+Substitute the stand's parameters, $k = 5$ and $r = 0.075$:
+
+$$t^{\\ast} = \\frac{2}{0.075} - 5$$
+
+$$\\frac{2}{0.075} \\approx 26.6667$$
+
+$$t^{\\ast} \\approx 26.6667 - 5 = 21.6667 \\text{ years}$$
+
+The value $A = 1,200$ plays no part, since it cancelled out of the condition. The claim gives approximately 21.67 years, matching the computed optimum to two decimal places, so the statement is true.`,
       `**C) The present value at $t^*$ is approximately \\$195,500.00.**  (false)
 
-Evaluating P at $t^*$ and then discounting with $e^{-rt^*}$ gives a present value of approximately \\$168,031.30, well below the \\$195,500.00 stated, which overstates the true value by over \\$27,000.
+The present value at the optimum is the stand's value at that date discounted back to today:
 
-$$P(t^*) = 1,200 \\times (26.6667)^{2} \\approx \\$853,333.33$$
+$$f(t) = P(t)e^{-rt}$$
 
-$$f(t^*) = 853,333.33 e^{-0.075 \\times 21.6667} = 853,333.33 e^{-1.625}$$
+The optimal date follows from $t^{\\ast} = 2/r - k$ with $r = 0.075$ and $k = 5$:
 
-$$e^{-1.625} \\approx 0.196914, \\quad f(t^*) \\approx \\$168,031.30$$`,
+$$t^{\\ast} = 26.6667 - 5 = 21.6667 \\text{ years}, \\qquad t^{\\ast} + k \\approx 26.6667$$
+
+Evaluate the value function there with $A = 1,200$:
+
+$$P(t^{\\ast}) = 1,200 \\times (26.6667)^{2}$$
+
+$$\\approx 1,200 \\times 711.111 \\approx 853,333.33$$
+
+Now discount over $t^{\\ast}$ years at $7.5\\%$:
+
+$$rt^{\\ast} = 0.075 \\times 21.6667 \\approx 1.625$$
+
+$$e^{-1.625} \\approx 0.196912$$
+
+$$f(t^{\\ast}) \\approx 853,333.33 \\times 0.196912 \\approx 168,031.30$$
+
+Compare with the claimed figure:
+
+$$195,500.00 - 168,031.30 = 27,468.70$$
+
+The claim overstates the maximized present value by more than \\$27,000, so the statement is false.`,
       `**D) If k were increased to 8, the optimal harvest time would be shorter than the original optimal time.**  (true)
 
-Since $t^* = 2/r - k$ decreases as k increases (a larger k is subtracted), raising k from 5 to 8 shortens the optimal harvest time. Recomputing with k = 8 gives $t^* \\approx 18.67$ years, which is indeed shorter than the original 21.67 years.
+The effect of $k$ on the optimal date is visible directly in the general formula:
 
-With $k = 8$: $t^* = 2/0.075 - 8 = 18.6667 \\approx 18.67$ years, and $18.67 < 21.67$.`,
+$$t^{\\ast} = \\frac{2}{r} - k$$
+
+Only the second term involves $k$, and it enters with a minus sign, so raising $k$ lowers $t^{\\ast}$ one for one. Evaluate at the original $k = 5$ with $r = 0.075$:
+
+$$t^{\\ast} = \\frac{2}{0.075} - 5 \\approx 26.6667 - 5 = 21.6667 \\text{ years}$$
+
+Now at $k = 8$, with the rate unchanged:
+
+$$t^{\\ast\\prime} = \\frac{2}{0.075} - 8$$
+
+$$\\approx 26.6667 - 8 = 18.6667 \\text{ years}$$
+
+Compare the two dates:
+
+$$21.6667 - 18.6667 = 3.0000 \\text{ years}$$
+
+The optimum arrives exactly 3 years earlier, matching the 3-unit increase in $k$, because a larger $k$ means the stand is already further along its growth curve and its proportional growth rate falls to the interest rate sooner. The claim says the harvest time would be shorter, so the statement is true.`,
       `**E) If the interest rate were doubled to 15%, the optimal harvest time would be more than half of the original optimal time.**  (false)
 
-Doubling r to 15% gives $t^* = 2/0.15 - 5 = 8.33$ years. Half of the original 21.67 years is 10.83 years, and 8.33 years falls below that halfway mark, meaning the optimal time actually drops by more than half rather than staying above it.
+Doubling the rate calls for re-evaluating the formula rather than scaling the old answer, because only part of it depends on $r$:
 
-At $r = 0.15$: $t^* = 2/0.15 - 5 = 13.3333 - 5 = 8.33$ years.
+$$t^{\\ast} = \\frac{2}{r} - k$$
 
-Half of 21.67 is 10.835, and $8.33 < 10.835$.`,
+At the original $r = 0.075$ with $k = 5$:
+
+$$t^{\\ast} = \\frac{2}{0.075} - 5 \\approx 26.6667 - 5 = 21.6667 \\text{ years}$$
+
+At the doubled rate $r = 0.15$:
+
+$$t^{\\ast\\prime} = \\frac{2}{0.15} - 5$$
+
+$$\\approx 13.3333 - 5 = 8.3333 \\text{ years}$$
+
+Half of the original optimum would be:
+
+$$\\frac{21.6667}{2} \\approx 10.8333 \\text{ years}$$
+
+Compare the new optimum with that halfway mark:
+
+$$10.8333 - 8.3333 = 2.5000 \\text{ years}$$
+
+The new optimum of about 8.33 years falls 2.5 years below half the original, so it is less than half, not more. The $2/r$ term does halve exactly, but subtracting the same $k = 5$ from a much smaller number cuts proportionally deeper. The statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 59,
@@ -4669,19 +9389,105 @@ Optimality condition: $P'(t^*) = rP(t^*)$
     tactical_explanations: [
       `**A) The discount factor for the 5-year payment is approximately 0.6703.**  (true)
 
-Raising $e$ to the power $-rt_1 = -(0.08 \\times 5) = -0.40$ gives a discount factor of $e^{-0.40} \\approx 0.6703$ for the first payment.`,
+The continuous discount factor is the exponential of the negative product of rate and time:
+
+$$\\text{discount factor} = e^{-rt}$$
+
+The franchise payments are discounted at $8\\%$ per year and the first arrives in 5 years, so form the exponent:
+
+$$rt_1 = 0.08 \\times 5 = 0.40$$
+
+Evaluate the factor at that exponent:
+
+$$e^{-0.40} \\approx 0.670320$$
+
+Rounded to four decimal places this is 0.6703, exactly the figure the claim gives. About 67 cents of each promised dollar survives five years of discounting at this rate. The statement is true.`,
       `**B) The discount factor for the 10-year payment is approximately 0.4493.**  (true)
 
-Since the 10-year horizon is exactly twice the 5-year horizon, its exponent is exactly double as well, and $e^{-r(2t)} = (e^{-rt})^{2}$ by the laws of exponents: squaring $0.6703$ gives $(e^{-0.40})^{2} = e^{-0.80} \\approx 0.4493$.`,
+The second payment is twice as far out, and the discount factor for a doubled horizon is the square of the original factor. Starting from the rule:
+
+$$e^{-r(2t_1)} = \\left(e^{-rt_1}\\right)^{2}$$
+
+Compute the exponent directly for $t_2 = 10$ years at $r = 0.08$:
+
+$$rt_2 = 0.08 \\times 10 = 0.80$$
+
+$$e^{-0.80} \\approx 0.449329$$
+
+Now confirm the squaring relationship using the 5-year factor:
+
+$$e^{-0.40} \\approx 0.670320$$
+
+$$(0.670320)^{2} \\approx 0.449329$$
+
+The two routes agree, as they must, since $e^{-0.40} \\times e^{-0.40} = e^{-0.80}$. The claim gives approximately 0.4493, matching the computed factor to four decimal places, so the statement is true.`,
       `**C) The present value of the \\$30,000 payment is approximately \\$21,500.00.**  (false)
 
-Multiplying the \\$30,000 face amount by the 5-year discount factor, $PV_1 = 30,000 \\times 0.670320 \\approx \\$20,109.60$, not \\$21,500.00.`,
+The present value of the first payment applies the 5-year discount factor to its face amount:
+
+$$PDV = K e^{-rt}$$
+
+Substitute $K_1 = 30,000$, $r = 0.08$, and $t_1 = 5$ years:
+
+$$rt_1 = 0.08 \\times 5 = 0.40$$
+
+$$e^{-0.40} \\approx 0.670320$$
+
+$$PV_1 = 30,000 \\times 0.670320$$
+
+$$\\approx 20,109.60$$
+
+Compare with the claimed figure:
+
+$$21,500.00 - 20,109.60 = 1,390.40$$
+
+The claim overstates the present value of the \\$30,000 payment by about \\$1,390, so the statement is false.`,
       `**D) The present value of the \\$55,000 payment is approximately \\$26,000.00.**  (false)
 
-Multiplying the \\$55,000 face amount by the 10-year discount factor, $PV_2 = 55,000 \\times 0.449329 \\approx \\$24,713.09$, not \\$26,000.00.`,
+The second payment is discounted over the full 10 years:
+
+$$PDV = K e^{-rt}$$
+
+Substitute $K_2 = 55,000$, $r = 0.08$, and $t_2 = 10$ years:
+
+$$rt_2 = 0.08 \\times 10 = 0.80$$
+
+$$e^{-0.80} \\approx 0.449329$$
+
+$$PV_2 = 55,000 \\times 0.449329$$
+
+$$\\approx 24,713.09$$
+
+Compare with the claimed figure:
+
+$$26,000.00 - 24,713.09 = 1,286.91$$
+
+Barely $45\\%$ of the face amount survives a decade of discounting at $8\\%$, leaving about \\$24,713.09 rather than the claimed \\$26,000.00. The statement is false.`,
       `**E) The combined present value the investor should pay today for both payments is approximately \\$47,500.00.**  (false)
 
-Adding the two present values together, since both are already expressed in today's dollars, gives the total the investor should pay now: $20,109.60 + 24,713.09 \\approx \\$44,822.69$, not \\$47,500.00.`,
+Both present values are in today's dollars, so the total the investor should pay is their sum:
+
+$$PDV = PV_1 + PV_2$$
+
+The 5-year payment discounts by $e^{-0.40}$:
+
+$$PV_1 = 30,000 \\times 0.670320 \\approx 20,109.60$$
+
+The 10-year payment discounts by $e^{-0.80}$, the square of that factor:
+
+$$PV_2 = 55,000 \\times 0.449329 \\approx 24,713.09$$
+
+Add the two:
+
+$$20,109.60 + 24,713.09$$
+
+$$\\approx 44,822.69$$
+
+Compare with the claimed total:
+
+$$47,500.00 - 44,822.69 = 2,677.31$$
+
+The claim overstates what the investor should pay today by about \\$2,677, so the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 60,
@@ -4733,29 +9539,115 @@ Combined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$
     tactical_explanations: [
       `**A) The expected revenue in year 2 is \\$55.00 million.**  (true)
 
-Year-2 revenue is the year-1 revenue multiplied once by the growth factor: $50 \\times 1.10 = \\$55.00$ million, matching exactly.`,
+Each year's revenue in a geometric path is the first year's revenue multiplied by the growth factor once for every year that has already passed:
+
+$$a_t = a\\,k^{t-1}$$
+
+The startup earns $a = 50$ million dollars in year 1 and revenue grows $10\\%$ a year, so the quotient is $k = 1.10$. Year 2 is one step past year 1, which makes the exponent $t - 1 = 1$:
+
+$$a_2 = 50 \\times (1.10)^{1}$$
+
+$$a_2 = 55.00$$
+
+The calculation gives \\$55.00 million and the claim names \\$55.00 million, so the statement is true.`,
       `**B) The expected revenue in year 5 is approximately \\$73.21 million.**  (true)
 
-Counting from year 1 (which is simply a itself) up to year 5, the revenue has been multiplied by 1.10 four separate times - once for each step from year 1 to year 2, year 2 to year 3, and so on up to year 5.
+The revenue in any year is the first year's revenue scaled by the growth factor once per elapsed year:
 
-$$50 \\times (1.10)^{4} = 50 \\times 1.4641 = 73.205 \\approx \\$73.21 \\text{ million}$$`,
+$$a_t = a\\,k^{t-1}$$
+
+Year 1 is the starting figure itself with no multiplication applied, so reaching year 5 takes four growth steps rather than five. Substituting $a = 50$ million dollars, $k = 1.10$, and $t = 5$ gives the exponent $t - 1 = 4$:
+
+$$a_5 = 50 \\times (1.10)^{4}$$
+
+Raising the growth factor to the fourth power:
+
+$$(1.10)^{4} = 1.4641$$
+
+Multiplying by the first year's revenue:
+
+$$a_5 = 50 \\times 1.4641$$
+
+$$a_5 = 73.205$$
+
+That is \\$73.205 million, which rounds to \\$73.21 million. The claim names \\$73.21 million, so the statement is true.`,
       `**C) The total revenue expected over the 5-year period is approximately \\$305.26 million.**  (true)
 
-Adding up five terms that each grow by a factor of 1.10 over the previous one gives a total of $s_5 = a(k^{5}-1)/(k-1)$. Plugging in $a=50$ and $k=1.10$ gives $k^{5} = 1.61051$, so $s_5 = 50 \\times (1.61051-1)/0.10 = 50 \\times 6.1051 = 305.255$, which rounds to \\$305.26 million.`,
+The five yearly revenues form a finite geometric series, and a finite geometric series with quotient $k \\neq 1$ adds up to
+
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+Here the first year contributes $a = 50$ million dollars, the quotient is $k = 1.10$, and the horizon is $n = 5$ years:
+
+$$s_5 = 50 \\times \\frac{(1.10)^{5}-1}{1.10-1}$$
+
+The fifth power of the growth factor is
+
+$$(1.10)^{5} = 1.61051$$
+
+so the bracket becomes
+
+$$\\frac{1.61051-1}{0.10} = \\frac{0.61051}{0.10} = 6.1051$$
+
+and the total is
+
+$$s_5 = 50 \\times 6.1051$$
+
+$$s_5 = 305.255$$
+
+That is \\$305.255 million, which rounds to \\$305.26 million. The claim names \\$305.26 million, so the statement is true.`,
       `**D) If revenue had instead remained flat at \\$50 million per year for 5 years, the total would have been \\$250 million - exactly \\$60.00 million less than the actual growth-scenario total.**  (false)
 
-A flat schedule of \\$50 million every year for 5 years does total 50×5 = \\$250.00 million - that part checks out. But the true gap between that flat total and the actual growth total of \\$305.255 million is 305.255 - 250.00 = \\$55.26 million, not \\$60.00 million; the stated gap overstates the real difference by roughly \\$4.74 million.
+Two separate totals are needed before the claimed gap can be judged. A flat schedule has no growth at all, so every one of its five payments equals the same \\$50 million and the total is just the payment times the number of years:
 
-Flat total: $50 \\times 5 = 250$. Gap:
+$$s_{\\text{flat}} = 50 \\times 5$$
 
-$$305.255 - 250 = 55.255 \\approx 55.26$$
+$$s_{\\text{flat}} = 250$$
 
-not 60.`,
+That part of the claim is correct: a flat \\$50 million a year for 5 years does total \\$250.00 million. The growth schedule instead sums as a finite geometric series with $a = 50$, $k = 1.10$, and $n = 5$:
+
+$$s_5 = 50 \\times \\frac{(1.10)^{5}-1}{1.10-1}$$
+
+$$(1.10)^{5} = 1.61051$$
+
+$$s_5 = 50 \\times \\frac{0.61051}{0.10}$$
+
+$$s_5 = 50 \\times 6.1051 = 305.255$$
+
+Subtracting the flat total from the growth total gives the true shortfall:
+
+$$305.255 - 250 = 55.255$$
+
+The flat schedule therefore falls about \\$55.26 million short, not \\$60.00 million. The claimed figure overstates the real gap by
+
+$$60.00 - 55.26 = 4.74$$
+
+million dollars. The dollar amount attached to the comparison is wrong, so the statement is false.`,
       `**E) The total revenue expected over the 5-year period is approximately \\$328.86 million.**  (false)
 
-Recomputing $s_5$ carefully with a=50, k=1.10, n=5 gives exactly 50×(1.61051-1)/0.10 = \\$305.255 million, which rounds to about \\$305.26 million, as already shown in part (c). The figure of \\$328.86 million simply does not match this calculation and is incorrect.
+The five-year total is fixed by the series itself, so it can be computed on its own and then held up against the figure in the claim. With $a = 50$ million dollars, $k = 1.10$, and $n = 5$, the finite geometric sum is
 
-The same $s_5 = 305.255$ already computed in (C) is the 5-year total. 328.86 is a different number.`,
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+$$s_5 = 50 \\times \\frac{(1.10)^{5}-1}{1.10-1}$$
+
+The fifth power of the growth factor is
+
+$$(1.10)^{5} = 1.61051$$
+
+so the bracket reduces to
+
+$$\\frac{0.61051}{0.10} = 6.1051$$
+
+and the total revenue over the five years is
+
+$$s_5 = 50 \\times 6.1051 = 305.255$$
+
+or about \\$305.26 million. The claim names \\$328.86 million, which is larger by
+
+$$328.86 - 305.26 = 23.60$$
+
+million dollars. A discrepancy of that size is far beyond any rounding difference, so the statement is false.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 61,
@@ -4796,21 +9688,109 @@ $s_n = a(k^{n}-1)/(k-1)$ for $k \\neq 1$; term in year $t$: $a k^{t-1}$.
     tactical_explanations: [
       `**A) The infinite profit series converges to a finite sum.**  (true)
 
-Convergence of an infinite geometric series depends only on the size of the ratio between consecutive terms. Here each month's profit is exactly half of the previous month's, so $|k| = 0.5 < 1$, comfortably below 1 - the running total therefore settles toward a fixed number instead of growing without bound as more months are added.`,
+An infinite geometric series converges when the size of its quotient stays below 1, and diverges otherwise:
+
+$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+
+Each month's profit here is exactly half of the previous month's, so the quotient between consecutive terms is constant at
+
+$$k = 0.5$$
+
+and its absolute value is
+
+$$|k| = 0.5$$
+
+Comparing that against the convergence cutoff:
+
+$$0.5 < 1$$
+
+The monthly profits therefore shrink quickly, running $2{,}000$, then $1{,}000$, then $500$, then $250$, and heading toward zero. Because the terms fade this fast, the running total settles on a fixed finite number instead of climbing without bound. The convergence condition is satisfied, so the statement is true.`,
       `**B) The infinite sum of all future monthly profits is \\$4,000.00.**  (true)
 
-When $|k|$ is less than 1, the sum of every term added together forever works out to $a/(1-k)$: $s_{\\infty} = 2,000/(1-0.5) = 2,000/0.5 = \\$4,000.00$, the value the cumulative profit approaches as more and more months pass.`,
+When an infinite geometric series converges, its total equals the first term divided by one minus the quotient:
+
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
+
+This month's profit is the first term, $a = 2{,}000$ dollars, and renewals halve the profit each month, so $k = 0.5$. Since $|0.5| < 1$, the formula applies:
+
+$$s_{\\infty} = \\frac{2{,}000}{1-0.5}$$
+
+Simplifying the denominator:
+
+$$s_{\\infty} = \\frac{2{,}000}{0.5}$$
+
+$$s_{\\infty} = 4{,}000$$
+
+All future monthly profits therefore accumulate toward \\$4,000.00, which is exactly the amount claimed, so the statement is true.`,
       `**C) The sum of just the first 4 months' profits is \\$3,750.00.**  (true)
 
-The first four monthly profits are $2,000$, then $2,000 \\times 0.5 = 1,000$, then $2,000 \\times 0.25 = 500$, then $2,000 \\times 0.125 = 250$. Adding these directly gives $s_4 = 2,000+1,000+500+250 = \\$3,750.00$.`,
+The first four months' profits are simply the first four terms of the series, each one half the size of the one before it:
+
+$$a_1 = 2{,}000$$
+
+$$a_2 = 2{,}000 \\times 0.5 = 1{,}000$$
+
+$$a_3 = 2{,}000 \\times (0.5)^{2} = 500$$
+
+$$a_4 = 2{,}000 \\times (0.5)^{3} = 250$$
+
+Adding the four terms directly:
+
+$$s_4 = 2{,}000 + 1{,}000 + 500 + 250$$
+
+$$s_4 = 3{,}750$$
+
+The same figure comes out of the finite-sum formula $s_n = a(1-k^{n})/(1-k)$, since $(0.5)^{4} = 0.0625$ gives $2{,}000 \\times 0.9375/0.5 = 3{,}750$. The four-month total is \\$3,750.00, matching the claim, so the statement is true.`,
       `**D) The sum of the first 4 months' profits exceeds the infinite sum.**  (false)
 
-Every term in this series is a positive dollar amount, so each additional month can only add to the running total, never subtract from it - the partial sum after any finite number of months must therefore sit below the full infinite total. Since $\\$3,750.00 < \\$4,000.00$, the first four months' total falls short of the infinite total by $\\$250.00$ rather than exceeding it.`,
+Every term of this series is a positive amount of profit, so each additional month can only push the running total upward. That makes any partial sum strictly smaller than the infinite total, and both numbers can be computed directly. The first four months add to
+
+$$s_4 = 2{,}000 + 1{,}000 + 500 + 250$$
+
+$$s_4 = 3{,}750$$
+
+The infinite total uses the limiting formula with $a = 2{,}000$ and $k = 0.5$:
+
+$$s_{\\infty} = \\frac{2{,}000}{1-0.5} = \\frac{2{,}000}{0.5}$$
+
+$$s_{\\infty} = 4{,}000$$
+
+Comparing the two figures:
+
+$$3{,}750 < 4{,}000$$
+
+The four-month partial sum sits below the infinite total by
+
+$$4{,}000 - 3{,}750 = 250$$
+
+dollars, so it falls short of the infinite sum rather than exceeding it, and the statement is false.`,
       `**E) If the quotient were instead k = 1.5, the infinite series would still converge, to a sum of \\$-4,000.00.**  (false)
 
-A ratio of k=1.5 has absolute value 1.5, which is greater than 1, so the successive terms of the series (2,000, 3,000, 4,500, 6,750, and so on) keep growing larger and larger instead of shrinking toward zero. A series whose terms grow without bound cannot settle on any single finite total, so it has no sum at all; calling it convergent to \\$-4,000.00, or to any specific number, misapplies the whole idea of a limiting sum.
+Convergence of a geometric series is decided entirely by the size of its quotient:
 
-If $k = 1.5$, then $|k| = 1.5 > 1$. Terms $2,000, 3,000, 4,500, \\ldots$ grow, so the series diverges. The formula $a/(1-k)$ is not applicable, and a negative “sum” of $\\$-4,000$ is meaningless.`,
+$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+
+Under the hypothetical quotient $k = 1.5$, that size is
+
+$$|k| = 1.5$$
+
+and the comparison with the cutoff runs the wrong way:
+
+$$1.5 > 1$$
+
+The individual terms show what that means in practice. Starting from $a = 2{,}000$ dollars,
+
+$$a_2 = 2{,}000 \\times 1.5 = 3{,}000$$
+
+$$a_3 = 2{,}000 \\times (1.5)^{2} = 4{,}500$$
+
+$$a_4 = 2{,}000 \\times (1.5)^{3} = 6{,}750$$
+
+Each month's amount is larger than the previous one, so the terms never approach zero and the partial sums climb without any ceiling. No finite limiting value exists, which is precisely what divergence means. The closed formula $a/(1-k)$ is valid only when $|k| < 1$, and forcing $k = 1.5$ into it anyway produces
+
+$$\\frac{2{,}000}{1-1.5} = \\frac{2{,}000}{-0.5} = -4{,}000$$
+
+which is where the quoted figure of \\$-4,000.00 comes from. That number is the output of a formula used outside the range where it means anything, and a stream of growing positive profits cannot possibly total a negative amount. The series does not converge, so the statement is false.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 62,
@@ -4857,21 +9837,109 @@ Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
     tactical_explanations: [
       `**A) The infinite deposit series converges.**  (true)
 
-Since each year's deposit equals 90% of the prior year's deposit, the ratio between consecutive terms is a constant $|k| = 0.90 < 1$. That is exactly the condition needed for the running total of an infinite geometric series to approach a fixed limiting value instead of growing forever.`,
+An infinite geometric series converges exactly when the absolute value of its quotient is below 1:
+
+$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+
+Each deposit here is $90\\%$ of the previous year's deposit, so the ratio between consecutive deposits is constant at
+
+$$k = 0.90$$
+
+with absolute value
+
+$$|k| = 0.90$$
+
+Comparing that against the cutoff:
+
+$$0.90 < 1$$
+
+The deposits accordingly shrink year after year, running $800$, then $720$, then $648$, and continuing toward zero. Because the terms fade away, the cumulative amount deposited approaches a fixed finite value rather than growing without limit. The convergence test is satisfied, so the statement is true.`,
       `**B) The infinite sum of all deposits is \\$8,000.00.**  (true)
 
-For a convergent infinite geometric series, the total of every term added together equals the first term divided by (1 minus the ratio): $s_{\\infty} = 800/(1-0.90) = 800/0.10 = \\$8,000.00$, the amount the cumulative deposits approach in the long run.`,
+For a convergent infinite geometric series, the total of every term added together equals the first term divided by one minus the quotient:
+
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
+
+This year's deposit is the first term, $a = 800$ dollars, and each later deposit is $90\\%$ of the one before it, so $k = 0.90$. Since $|0.90| < 1$, the formula applies:
+
+$$s_{\\infty} = \\frac{800}{1-0.90}$$
+
+Simplifying the denominator:
+
+$$s_{\\infty} = \\frac{800}{0.10}$$
+
+$$s_{\\infty} = 8{,}000$$
+
+The cumulative deposits therefore approach \\$8,000.00 in the long run, exactly the figure in the claim, so the statement is true.`,
       `**C) The sum of the first 10 deposits is approximately \\$5,210.57.**  (true)
 
-The sum of the first 10 deposits is given by $s_{10} = a \\times (1-k^{10})/(1-k)$. Since $0.90^{10} \\approx 0.348678$, this becomes $s_{10} = 800 \\times (1-0.348678)/0.10 = 800 \\times 6.513216 \\approx \\$5,210.57$.`,
+The first ten deposits form a finite geometric series, which sums to
+
+$$s_n = a\\,\\frac{1-k^{n}}{1-k}$$
+
+Substituting the first deposit $a = 800$ dollars, the quotient $k = 0.90$, and $n = 10$ terms:
+
+$$s_{10} = 800 \\times \\frac{1-(0.90)^{10}}{1-0.90}$$
+
+The tenth power of the quotient is
+
+$$(0.90)^{10} = 0.348678$$
+
+so the numerator of the bracket becomes
+
+$$1 - 0.348678 = 0.651322$$
+
+and dividing by the denominator gives
+
+$$\\frac{0.651322}{0.10} = 6.513216$$
+
+Multiplying by the first deposit:
+
+$$s_{10} = 800 \\times 6.513216 = 5{,}210.57$$
+
+The first ten deposits total about \\$5,210.57, matching the claim, so the statement is true.`,
       `**D) The first 10 deposits together represent about 65% of the infinite total sum.**  (true)
 
-Dividing the 10-year total by the full infinite total gives $5,210.57/8,000.00 \\approx 65.1\\%$. Since that rounds to roughly 65%, describing the first 10 deposits as representing about 65% of everything ever deposited is an accurate summary.`,
+The claim compares a ten-year partial total against the infinite total, so both figures have to be produced. The first ten deposits sum by the finite formula with $a = 800$ dollars, $k = 0.90$, and $n = 10$:
+
+$$s_{10} = 800 \\times \\frac{1-(0.90)^{10}}{0.10}$$
+
+$$(0.90)^{10} = 0.348678$$
+
+$$s_{10} = 800 \\times \\frac{0.651322}{0.10} = 800 \\times 6.513216 = 5{,}210.57$$
+
+The infinite total uses the limiting formula, valid because $|0.90| < 1$:
+
+$$s_{\\infty} = \\frac{800}{1-0.90} = 8{,}000$$
+
+Dividing the partial total by the infinite total gives the share:
+
+$$\\frac{5{,}210.57}{8{,}000} = 0.65132$$
+
+That is $65.13\\%$, which rounds to about $65\\%$. The claim describes the first ten deposits as roughly $65\\%$ of the infinite total, so the statement is true.`,
       `**E) If the quotient were instead k = 1.10, the series would diverge.**  (true)
 
-A ratio of k=1.10 has absolute value greater than 1, meaning each deposit would be larger than the one before it and would keep growing without any ceiling. A series whose terms increase forever can never settle down to a single finite total, so instead of converging it diverges: the running total simply keeps climbing and never levels off at any particular value.
+Whether an infinite geometric series converges or diverges depends only on the size of its quotient:
 
-$k = 1.10$ has $|k| > 1$, so the series diverges. No finite $s_{\\infty}$ exists.`,
+$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+
+Under the hypothetical quotient $k = 1.10$, that size is
+
+$$|k| = 1.10$$
+
+and the comparison fails:
+
+$$1.10 > 1$$
+
+The deposits would then grow instead of shrinking. Starting from $a = 800$ dollars,
+
+$$a_2 = 800 \\times 1.10 = 880$$
+
+$$a_3 = 800 \\times (1.10)^{2} = 968$$
+
+$$a_4 = 800 \\times (1.10)^{3} = 1{,}064.80$$
+
+Since every deposit exceeds the one before it, the terms never approach zero and the running total keeps climbing with no ceiling to level off against. No finite limiting value exists, so the closed formula $a/(1-k)$ cannot be applied and the series has no sum. That behaviour is exactly divergence, which is what the claim asserts, so the statement is true.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 63,
@@ -4920,21 +9988,119 @@ Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
     tactical_explanations: [
       `**A) At a constant extraction rate of 300,000 tons/year, the reserves will last exactly 60 years.**  (true)
 
-If a fixed 300,000 tons is removed every year from an 18,000,000-ton reserve, the number of years before the reserve reaches zero is simply the total reserve divided by the yearly extraction rate: $t = 18,000,000/300,000 = 60$ years.`,
+Removing the same tonnage every year means the reserve is drawn down in equal steps, so the number of years until it is gone is the reserve divided by the annual extraction rate:
+
+$$t = \\frac{\\text{reserves}}{\\text{annual extraction}}$$
+
+The reserve holds $18{,}000{,}000$ tons and the constant rate is $300{,}000$ tons per year:
+
+$$t = \\frac{18{,}000{,}000}{300{,}000}$$
+
+$$t = 60$$
+
+Multiplying back confirms the arithmetic:
+
+$$300{,}000 \\times 60 = 18{,}000{,}000$$
+
+The reserve lasts exactly 60 years at this rate, which is the figure in the claim, so the statement is true.`,
       `**B) If extraction were instead held constant at 500,000 tons/year, the reserves would last 36 years.**  (true)
 
-Using the same reasoning with a faster extraction rate of 500,000 tons per year gives $t = 18,000,000/500,000 = 36$ years - a higher annual rate depletes the same fixed reserve proportionally sooner.`,
+With extraction held constant, the reserve is depleted in equal annual steps, so the life of the reserve is the total tonnage divided by the yearly rate:
+
+$$t = \\frac{\\text{reserves}}{\\text{annual extraction}}$$
+
+The reserve is still $18{,}000{,}000$ tons, but the faster rate is $500{,}000$ tons per year:
+
+$$t = \\frac{18{,}000{,}000}{500{,}000}$$
+
+$$t = 36$$
+
+Multiplying back as a check:
+
+$$500{,}000 \\times 36 = 18{,}000{,}000$$
+
+Raising the annual rate shortens the life of the same fixed reserve, and at $500{,}000$ tons per year the reserve lasts exactly 36 years, which is what the claim says, so the statement is true.`,
       `**C) Constant-rate extraction over n years is the special k = 1 case of the geometric series, where the total simply equals the number of years multiplied by the yearly amount.**  (true)
 
-When every year's extraction amount is identical (no growth at all), the sequence of yearly amounts is a geometric series whose ratio is exactly 1, meaning every term equals the first term a. Adding together n identical copies of a is just n lots of a, i.e., a × n, rather than requiring the general ratio-based formula, which would actually be undefined in this case since it involves dividing by (k-1)=0.
+A geometric series has terms $a$, $ak$, $ak^{2}$, and so on. Setting the quotient to $k = 1$ makes every one of those factors equal to 1, so the terms collapse to
 
-When $k = 1$, every term equals $a$, so $s_n = a n$. The ratio formula $a(k^n-1)/(k-1)$ is undefined at $k = 1$.`,
+$$a, \\; a, \\; a, \\; \\ldots$$
+
+which is precisely constant-rate extraction: the same tonnage removed every single year. Adding $n$ identical copies of $a$ needs no ratio machinery at all, only multiplication:
+
+$$s_n = a + a + \\cdots + a = a\\,n$$
+
+For this mine that means
+
+$$s_n = 300{,}000 \\times n$$
+
+so ten years of constant extraction would total
+
+$$300{,}000 \\times 10 = 3{,}000{,}000$$
+
+tons. The general finite-series formula cannot be used in this case, because
+
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+carries $k - 1$ in its denominator, and at $k = 1$ that denominator is
+
+$$1 - 1 = 0$$
+
+leaving the expression undefined. Both halves of the claim therefore hold: constant extraction is the $k = 1$ case of the geometric series, and its total is the number of years multiplied by the yearly amount. The statement is true.`,
       `**D) If extraction instead grows by 5% per year for 10 years, total extraction over those 10 years is approximately 3,900,000 tons.**  (false)
 
-If extraction instead starts at 300,000 tons and grows 5% every year for 10 years, the total extracted is $s_{10} = 300,000 \\times (k^{10}-1)/0.05$. Since $1.05^{10} \\approx 1.628895$, this works out to $s_{10} \\approx 300,000 \\times 12.577893 \\approx 3,773,368$ tons, noticeably below the 3,900,000 tons claimed.`,
+Extraction that starts at $300{,}000$ tons and rises $5\\%$ each year is a finite geometric series with $a = 300{,}000$ tons, quotient $k = 1.05$, and $n = 10$ years, so its total is
+
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+Substituting the three quantities:
+
+$$s_{10} = 300{,}000 \\times \\frac{(1.05)^{10}-1}{1.05-1}$$
+
+The tenth power of the growth factor is
+
+$$(1.05)^{10} = 1.628895$$
+
+so the bracket becomes
+
+$$\\frac{1.628895-1}{0.05} = \\frac{0.628895}{0.05} = 12.577893$$
+
+and the ten-year total is
+
+$$s_{10} = 300{,}000 \\times 12.577893$$
+
+$$s_{10} = 3{,}773{,}368$$
+
+tons, rounded to the nearest ton. The claim names approximately $3{,}900{,}000$ tons, which overstates the total by
+
+$$3{,}900{,}000 - 3{,}773{,}368 = 126{,}632$$
+
+tons, so the statement is false.`,
       `**E) The 10-year total under 5% annual growth exceeds the 10-year total under constant 300,000-ton extraction by more than 1,000,000 tons.**  (false)
 
-Comparing the growth scenario ($\\approx 3,773,368$ tons over 10 years) to a flat 300,000-tons-per-year scenario over the same span ($300,000 \\times 10 = 3,000,000$ tons), the extra amount extracted specifically because of the 5% annual growth is $3,773,368 - 3,000,000 = 773,368$ tons. That is well under $1,000,000$ tons, so the claimed excess is too large.`,
+Both ten-year totals have to be computed before the excess can be judged. The growth scenario is a finite geometric series with $a = 300{,}000$ tons, $k = 1.05$, and $n = 10$:
+
+$$s_{10} = 300{,}000 \\times \\frac{(1.05)^{10}-1}{0.05}$$
+
+$$(1.05)^{10} = 1.628895$$
+
+$$s_{10} = 300{,}000 \\times \\frac{0.628895}{0.05} = 300{,}000 \\times 12.577893$$
+
+$$s_{10} = 3{,}773{,}368 \\text{ tons}$$
+
+The constant scenario removes the same $300{,}000$ tons every year, which is the $k = 1$ case with total $a\\,n$:
+
+$$300{,}000 \\times 10 = 3{,}000{,}000 \\text{ tons}$$
+
+The extra tonnage attributable to the $5\\%$ growth is the difference between them:
+
+$$3{,}773{,}368 - 3{,}000{,}000 = 773{,}368 \\text{ tons}$$
+
+The claim requires that excess to exceed $1{,}000{,}000$ tons, but
+
+$$773{,}368 < 1{,}000{,}000$$
+
+so the growth scenario falls short of the claimed margin by more than $226{,}000$ tons, and the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 64,
@@ -4975,31 +10141,111 @@ Years to exhaustion: $t =$ reserves$/$annual extraction. Constant terms ($k = 1$
     tactical_explanations: [
       `**A) Output in the second year is 174.6 million tons.**  (true)
 
-Year-2 output is the year-1 output multiplied once by the decline factor: $180 \\times 0.97 = 174.6$ million tons, matching exactly.`,
+Output in any given year is the first year's output multiplied by the decline factor once for each year that has passed:
+
+$$a_t = a\\,k^{t-1}$$
+
+This year's output is $a = 180$ million tons, and a $3\\%$ annual fall means each year keeps $97\\%$ of the previous year's output, so $k = 0.97$. The second year is one step along, giving the exponent $t - 1 = 1$:
+
+$$a_2 = 180 \\times (0.97)^{1}$$
+
+$$a_2 = 174.6$$
+
+Second-year output works out to $174.6$ million tons, exactly the figure in the claim, so the statement is true.`,
       `**B) The infinite total extracted over all future years, under the 3% decline, is 6,000 million tons.**  (true)
 
-Because $|0.97| < 1$, the infinite series of yearly outputs converges, and its total equals $s_{\\infty} = 180/(1-0.97) = 180/0.03 = 6,000$ million tons, the theoretical maximum that could ever be extracted if the 3% annual decline continued indefinitely.`,
+The yearly outputs form an infinite geometric series, and such a series has a finite total whenever the size of its quotient is below 1:
+
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
+
+A $3\\%$ annual decline leaves $97\\%$ of the previous output each year, so $k = 0.97$ and
+
+$$|0.97| < 1$$
+
+which means the total converges. Substituting the current output $a = 180$ million tons:
+
+$$s_{\\infty} = \\frac{180}{1-0.97}$$
+
+Simplifying the denominator:
+
+$$s_{\\infty} = \\frac{180}{0.03}$$
+
+$$s_{\\infty} = 6{,}000$$
+
+Everything ever extracted under this declining path adds up to $6{,}000$ million tons, matching the claim, so the statement is true.`,
       `**C) The reserves will never be fully exhausted, leaving 3 billion tons as permanently “stranded assets.”**  (true)
 
-Comparing the 6,000 million-ton theoretical maximum to the 9,000 million-ton physical reserve shows the reserve can never be fully used up, no matter how long extraction continues, because the running total keeps approaching 6,000 million tons but never reaches or exceeds 9,000 million tons. The difference, $9,000 - 6,000 = 3,000$ million tons, simply remains in the ground indefinitely.`,
+The claim compares everything that can ever be extracted against what is physically in the ground. The extraction path is an infinite geometric series with $a = 180$ million tons and $k = 0.97$, and since $|0.97| < 1$ it converges to
+
+$$s_{\\infty} = \\frac{a}{1-k} = \\frac{180}{1-0.97}$$
+
+$$s_{\\infty} = \\frac{180}{0.03} = 6{,}000$$
+
+million tons. That figure is a ceiling the cumulative extraction approaches but never reaches, since each year adds a smaller positive amount than the year before. Setting it beside the reserve base:
+
+$$6{,}000 < 9{,}000$$
+
+Even after infinitely many years of mining, the cumulative tonnage stays under the $9{,}000$ million tons available, so the reserve can never be exhausted. The tonnage left permanently in the ground is the difference:
+
+$$9{,}000 - 6{,}000 = 3{,}000$$
+
+million tons, which is 3 billion tons. Both parts of the claim hold, so the statement is true.`,
       `**D) If output instead declined 5% per year from the same 180 million-ton starting point, the total extracted would leave less coal stranded than the 3%-decline case.**  (false)
 
-With a steeper 5% annual decline (k=0.95), the theoretical maximum total extraction becomes 180/(1-0.95) = 180/0.05 = 3,600 million tons, leaving 9,000-3,600 = 5,400 million tons unextracted - more stranded coal than the 3,000 million tons left behind under the milder 3% decline, not less. A steeper decline in output means the total amount ever pulled out is smaller, so more coal is left stranded, not less.
+The comparison needs the stranded tonnage under each decline path, and stranded tonnage is whatever the reserve base leaves over after the infinite extraction total. For the milder path, $a = 180$ million tons and $k = 0.97$:
 
-At 5% decline, $k = 0.95$:
+$$s_{\\infty} = \\frac{180}{1-0.97} = \\frac{180}{0.03} = 6{,}000$$
 
-$$s_{\\infty} = 180/0.05 = 3,600, \\qquad 9,000-3,600 = 5,400$$
+$$9{,}000 - 6{,}000 = 3{,}000 \\text{ million tons stranded}$$
 
-$5,400 > 3,000$ stranded, so a steeper decline leaves more coal unused.`,
+A steeper $5\\%$ annual fall keeps only $95\\%$ of the previous year's output, so the quotient becomes $k = 0.95$ while the starting output stays at $180$ million tons:
+
+$$s_{\\infty} = \\frac{180}{1-0.95}$$
+
+$$s_{\\infty} = \\frac{180}{0.05} = 3{,}600$$
+
+million tons ever extracted, which leaves
+
+$$9{,}000 - 3{,}600 = 5{,}400 \\text{ million tons stranded}$$
+
+Comparing the two stranded figures:
+
+$$5{,}400 > 3{,}000$$
+
+A steeper decline shrinks output faster, so less coal is ever pulled out and more of it stays in the ground. The $5\\%$ path strands $2{,}400$ million tons more than the $3\\%$ path, not less, so the statement is false.`,
       `**E) Under the 3% decline scenario, cumulative extraction after just the first 20 years alone would already exceed the full infinite-horizon total of 6,000 million tons.**  (false)
 
-Summing only the first 20 years under the 3% decline gives $s_{20} = 180 \\times (1-0.97^{20})/0.03$. Since 0.97 to the 20th power is about 0.5438, this comes to roughly 180×15.207 ≈ 2,737 million tons - far below the full 6,000 million-ton theoretical total, since only a fraction of an ever-continuing series has accumulated after just 20 years, not in excess of it.
+The claim sets a twenty-year partial total against the infinite-horizon total, so both are needed. Summing the first twenty years uses the finite geometric formula with $a = 180$ million tons, $k = 0.97$, and $n = 20$:
 
-$$s_{20} = 180 \\times \\frac{1-0.97^{20}}{0.03}$$
+$$s_n = a\\,\\frac{1-k^{n}}{1-k}$$
 
-$$0.97^{20} \\approx 0.543794, \\quad s_{20} \\approx 180 \\times 15.20686 \\approx 2,737$$
+$$s_{20} = 180 \\times \\frac{1-(0.97)^{20}}{1-0.97}$$
 
-$2,737 < 6,000$.`,
+The twentieth power of the decline factor is
+
+$$(0.97)^{20} = 0.543794$$
+
+so the numerator of the bracket is
+
+$$1 - 0.543794 = 0.456206$$
+
+and dividing by the denominator gives
+
+$$\\frac{0.456206}{0.03} = 15.206855$$
+
+Multiplying by the current output:
+
+$$s_{20} = 180 \\times 15.206855 = 2{,}737.23$$
+
+million tons. The infinite-horizon total is
+
+$$s_{\\infty} = \\frac{180}{0.03} = 6{,}000$$
+
+million tons. Comparing the two:
+
+$$2{,}737.23 < 6{,}000$$
+
+Twenty years of mining delivers only about $46\\%$ of everything that can ever be extracted, so cumulative extraction does not exceed the infinite total, and the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 65,
@@ -5040,25 +10286,119 @@ Infinite sum ($|k| < 1$): $a/(1-k)$. Finite sum of first $n$ terms: $s_n = a(1-k
     tactical_explanations: [
       `**A) The alternating adjustment series converges to a finite sum.**  (true)
 
-Convergence depends only on the size of the ratio, |k|, not on whether that ratio is positive or negative. Here k=-0.5, so |k|=0.5, which is below 1 - the alternating series still settles down to a fixed total even though its terms flip sign at every step.
+An infinite geometric series converges when the absolute value of its quotient is below 1, and the sign of that quotient plays no part in the test:
 
-$k = -0.5$ has $|k| = 0.5 < 1$, so the series converges despite the sign flips.`,
+$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+
+Each adjustment here reverses sign and is half the size of the previous one, so the quotient is
+
+$$k = -0.5$$
+
+and the quantity the test actually looks at is its absolute value:
+
+$$|k| = |-0.5| = 0.5$$
+
+Comparing that against the cutoff:
+
+$$0.5 < 1$$
+
+The adjustments themselves run $4{,}000$, then $-2{,}000$, then $1{,}000$, then $-500$, so they swing above and below zero while steadily shrinking in size. Those shrinking swings pull the running total toward a single fixed value rather than letting it wander without bound. The convergence condition is met, so the statement is true.`,
       `**B) The infinite sum of all adjustments is approximately \\$2,666.67.**  (true)
 
-The infinite-sum formula $a/(1-k)$ applies the same way regardless of the sign of $k$, as long as $|k|<1$: $s_{\\infty} = 4,000/(1-(-0.5)) = 4,000/1.5 \\approx \\$2,666.67$.`,
+The infinite-sum formula for a geometric series applies whenever the size of the quotient is below 1, whatever its sign:
+
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
+
+Here the first adjustment is $a = 4{,}000$ dollars and the quotient is $k = -0.5$, with $|-0.5| = 0.5 < 1$, so the formula is available. Substituting both values:
+
+$$s_{\\infty} = \\frac{4{,}000}{1-(-0.5)}$$
+
+Subtracting a negative number adds it, so the denominator becomes
+
+$$1 - (-0.5) = 1.5$$
+
+$$s_{\\infty} = \\frac{4{,}000}{1.5}$$
+
+$$s_{\\infty} = 2{,}666.67$$
+
+The adjustments net out to about \\$2,666.67 over an unlimited horizon, matching the claim, so the statement is true.`,
       `**C) The sum of the first 4 adjustments is \\$3,000.00.**  (false)
 
-The first four adjustments are $4,000$, then $4,000\\times(-0.5)=-2,000$, then $4,000\\times0.25=1,000$, then $4,000\\times(-0.125)=-500$. Adding these gives $4,000-2,000+1,000-500 = \\$2,500.00$, not \\$3,000.00.`,
+The first four adjustments are the first four terms of the series, each obtained by multiplying the previous one by $k = -0.5$:
+
+$$a_1 = 4{,}000$$
+
+$$a_2 = 4{,}000 \\times (-0.5) = -2{,}000$$
+
+$$a_3 = 4{,}000 \\times (-0.5)^{2} = 1{,}000$$
+
+$$a_4 = 4{,}000 \\times (-0.5)^{3} = -500$$
+
+Adding the four signed amounts in order:
+
+$$s_4 = 4{,}000 - 2{,}000 + 1{,}000 - 500$$
+
+$$s_4 = 2{,}000 + 1{,}000 - 500$$
+
+$$s_4 = 2{,}500$$
+
+The four adjustments total \\$2,500.00. The claim names \\$3,000.00, which is \\$500.00 too high because it does not account for the sign reversals, so the statement is false.`,
       `**D) The series necessarily diverges regardless of its magnitude.**  (false)
 
-The sign of the ratio has no bearing on whether the series converges; only its magnitude matters. A negative ratio simply means the terms alternate between adding to and subtracting from the running total, and as long as |k| stays below 1, those swings shrink over time and the partial sums settle down - exactly what happens here with |k|=0.5, so the series converges rather than diverging.
+Divergence is not automatic for a series with a negative quotient. The test is the same one used for any geometric series and looks only at the size of the quotient:
 
-Convergence depends on $|k|$, not on the sign of $k$. Here $|-0.5| < 1$, so the series converges.`,
+$$a + ak + ak^{2} + \\cdots \\text{ converges when } |k| < 1$$
+
+Here the quotient is $k = -0.5$, so the quantity the test measures is
+
+$$|k| = |-0.5| = 0.5$$
+
+and the comparison with the cutoff succeeds:
+
+$$0.5 < 1$$
+
+A negative quotient only means the terms take turns adding to and subtracting from the running total. The partial sums show the swings settling rather than spreading:
+
+$$s_1 = 4{,}000$$
+
+$$s_2 = 4{,}000 - 2{,}000 = 2{,}000$$
+
+$$s_3 = 2{,}000 + 1{,}000 = 3{,}000$$
+
+$$s_4 = 3{,}000 - 500 = 2{,}500$$
+
+The swings shrink toward the limiting value
+
+$$s_{\\infty} = \\frac{4{,}000}{1-(-0.5)} = \\frac{4{,}000}{1.5} = 2{,}666.67$$
+
+so this series converges rather than diverging. Divergence is not forced on a series just because its quotient is negative, so the statement is false.`,
       `**E) If the quotient were instead exactly k = -1, the partial sums would alternate forever between \\$4,000 and \\$0.**  (true)
 
-With k=-1, each new term exactly cancels the one before it: starting from a, the running total becomes a, then 0, then a, then 0, and so on forever, oscillating between those two values without ever settling on one number. Since a limit requires the running total to approach a single fixed value, and this sequence keeps flipping back and forth instead, it never reaches a limit and the series diverges.
+With a quotient of $k = -1$, each new adjustment has the same size as the first one but the opposite sign to the one before it. Writing the terms out from $a = 4{,}000$ dollars:
 
-If $k = -1$, partial sums are $4,000, 0, 4,000, 0, \\ldots$ forever. Two cluster points means no single limit, so the series diverges.`,
+$$a_1 = 4{,}000$$
+
+$$a_2 = 4{,}000 \\times (-1) = -4{,}000$$
+
+$$a_3 = 4{,}000 \\times (-1)^{2} = 4{,}000$$
+
+$$a_4 = 4{,}000 \\times (-1)^{3} = -4{,}000$$
+
+The running totals then cancel and rebuild in turn:
+
+$$s_1 = 4{,}000$$
+
+$$s_2 = 4{,}000 - 4{,}000 = 0$$
+
+$$s_3 = 0 + 4{,}000 = 4{,}000$$
+
+$$s_4 = 4{,}000 - 4{,}000 = 0$$
+
+In general the partial sum is $s_n = 4{,}000$ for odd $n$ and $s_n = 0$ for even $n$, so the sequence of partial sums bounces between \\$4,000.00 and \\$0.00 forever and never approaches a single value. That also means the convergence test fails here, since
+
+$$|k| = |-1| = 1$$
+
+is not below 1. The claim describes exactly this endless alternation between \\$4,000 and \\$0, so the statement is true.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 66,
@@ -5105,23 +10445,123 @@ Special case k = -1: $s_n = a$ when n is odd, $s_n = 0$ when n is even
     tactical_explanations: [
       `**A) This is the special k = 1 case of the geometric series, where the total simply equals the number of payments multiplied by the payment amount.**  (true)
 
-When every payment is identical, there is no changing ratio between consecutive terms - or equivalently, the ratio is exactly 1. Adding n copies of the same number a together is simply n×a, a much simpler formula than the ratio-based one needed when the terms actually change size from year to year, and it sidesteps the division-by-zero problem that the general formula would run into at k=1.
+A geometric series has terms $a$, $ak$, $ak^{2}$, and so on, so the quotient is whatever number carries one term to the next. Contributions of \\$12 million every year for 15 years never change size, which means each term equals the one before it and
 
-Equal payments mean $k = 1$, so $s_n = a n$ rather than $a(k^n-1)/(k-1)$.`,
+$$k = \\frac{12}{12} = 1$$
+
+Setting $k = 1$ turns every factor into 1, so the terms become
+
+$$a, \\; a, \\; a, \\; \\ldots$$
+
+Adding $n$ identical copies of $a$ is plain multiplication, not a ratio calculation:
+
+$$s_n = a + a + \\cdots + a = a\\,n$$
+
+For this fund that gives
+
+$$s_n = 12 \\times n$$
+
+million dollars over $n$ years. The general finite-series formula is unavailable here, since
+
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+has $k - 1$ in the denominator and
+
+$$1 - 1 = 0$$
+
+makes the expression undefined at $k = 1$. The claim describes exactly this degenerate case and the multiplication rule that replaces the general formula, so the statement is true.`,
       `**B) The total contributions over the 15 years of equal \\$12 million payments equal \\$180.00 million.**  (true)
 
-With 15 identical annual payments of \\$12 million each, the total is just $s_{15} = 12 \\times 15 = \\$180.00$ million; no compounding or ratio calculation is needed since nothing changes from one year to the next.`,
+Equal annual contributions are the $k = 1$ case of a geometric series, where every term matches the first and the total is simply the payment multiplied by the number of payments:
+
+$$s_n = a\\,n$$
+
+Here the annual contribution is $a = 12$ million dollars and the fund receives it for $n = 15$ straight years:
+
+$$s_{15} = 12 \\times 15$$
+
+$$s_{15} = 180$$
+
+No compounding or ratio work is required, because nothing changes from one year to the next. A check by grouping gives the same figure:
+
+$$12 \\times 15 = 12 \\times 10 + 12 \\times 5 = 120 + 60 = 180$$
+
+The fifteen years of equal contributions total \\$180.00 million, which is exactly the amount claimed, so the statement is true.`,
       `**C) Under the 4%-growth alternative, the 15-year total is approximately \\$240.11 million.**  (false)
 
-Growing the same \\$12 million starting payment by 4% every year for 15 years gives $s_{15} = 12 \\times (1.04^{15}-1)/0.04$. Since $1.04^{15} \\approx 1.800944$, this becomes $s_{15} \\approx 12 \\times 20.0236 \\approx \\$240.28$ million, noticeably higher than the \\$240.11 million claimed.`,
+Contributions that grow $4\\%$ a year from a \\$12 million base form a finite geometric series with $a = 12$ million dollars, $k = 1.04$, and $n = 15$, so the total is
+
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+Substituting the three quantities:
+
+$$s_{15} = 12 \\times \\frac{(1.04)^{15}-1}{1.04-1}$$
+
+The fifteenth power of the growth factor is
+
+$$(1.04)^{15} = 1.800944$$
+
+so the bracket becomes
+
+$$\\frac{1.800944-1}{0.04} = \\frac{0.800944}{0.04} = 20.0236$$
+
+and the total is
+
+$$s_{15} = 12 \\times 20.0236$$
+
+$$s_{15} = 240.28$$
+
+The fifteen-year total under $4\\%$ growth is about \\$240.28 million. The claim names \\$240.11 million, which is \\$0.17 million short of the correct figure, so the statement is false.`,
       `**D) The 4%-growth 15-year total exceeds the no-growth total by more than \\$65.00 million.**  (false)
 
-The actual gap between the 4%-growth total ($\\approx \\$240.28$ million) and the flat total ($\\$180.00$ million) is $240.28 - 180.00 = \\$60.28$ million, which is not more than \\$65.00 million, so the claim overstates how much extra the growth scenario contributes.`,
+The comparison needs both fifteen-year totals. Equal payments are the $k = 1$ case, whose total is the payment times the number of years:
+
+$$s_{15} = 12 \\times 15 = 180$$
+
+million dollars. The growth alternative is a finite geometric series with $a = 12$ million dollars, $k = 1.04$, and $n = 15$:
+
+$$s_{15} = 12 \\times \\frac{(1.04)^{15}-1}{0.04}$$
+
+$$(1.04)^{15} = 1.800944$$
+
+$$s_{15} = 12 \\times \\frac{0.800944}{0.04} = 12 \\times 20.0236 = 240.28$$
+
+million dollars. Subtracting the flat total from the growth total gives the extra amount the growth path contributes:
+
+$$240.28 - 180.00 = 60.28$$
+
+million dollars. The claim requires that excess to be more than \\$65.00 million, but
+
+$$60.28 < 65.00$$
+
+so the growth path adds about \\$4.72 million less than claimed, and the statement is false.`,
       `**E) Applying the general formula directly to the no-growth case would require dividing by zero.**  (true)
 
-The general ratio-based formula for a finite geometric series has (k-1) in its denominator. If k were set to exactly 1 - the flat, no-growth case - that denominator becomes zero, and dividing by zero is undefined, so the formula simply cannot be evaluated as written. That is precisely why a separate, simpler rule - multiplying the constant payment by the number of years - has to be used whenever every term in the series is identical.
+The general finite geometric sum is written as
 
-The general formula has denominator $k-1$. At $k = 1$ that denominator is 0, so the formula is undefined and cannot be applied to the flat case.`,
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+and its denominator is $k - 1$. The no-growth case has identical contributions year after year, so the ratio carrying one term to the next is
+
+$$k = \\frac{12}{12} = 1$$
+
+Substituting that value into the denominator gives
+
+$$k - 1 = 1 - 1 = 0$$
+
+and the numerator collapses at the same time:
+
+$$k^{n} - 1 = 1^{15} - 1 = 0$$
+
+so the formula asks for
+
+$$s_{15} = 12 \\times \\frac{0}{0}$$
+
+which is undefined. Division by zero has no value, so the general expression simply cannot be evaluated at $k = 1$ and produces no answer for the flat schedule. That is why equal payments are handled by the separate rule
+
+$$s_n = a\\,n = 12 \\times 15 = 180$$
+
+million dollars instead. The claim says applying the general formula directly to the no-growth case would require dividing by zero, which is exactly what happens, so the statement is true.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 67,
@@ -5168,23 +10608,109 @@ k ≠ 1 case: $s_n = a(k^{n}-1)/(k-1)$
     tactical_explanations: [
       `**A) The second payment in the sequence is \\$13,200.00.**  (true)
 
-The second payment is the first payment multiplied once by the decay factor: $15,000 \\times 0.88 = \\$13,200.00$, matching exactly.`,
+Each payment in this settlement is a fixed fraction of the previous one, so the payment in any year is the first payment scaled by the quotient once for each year that has passed:
+
+$$a_t = a\\,k^{t-1}$$
+
+The first payment is $a = 15{,}000$ dollars and each later payment is $88\\%$ of the prior one, so $k = 0.88$. The second payment is one step along, making the exponent $t - 1 = 1$:
+
+$$a_2 = 15{,}000 \\times (0.88)^{1}$$
+
+$$a_2 = 13{,}200$$
+
+The second payment is \\$13,200.00, exactly the amount claimed, so the statement is true.`,
       `**B) The total of the 8 finite payments is approximately \\$80,045.68.**  (true)
 
-Summing the first 8 payments uses $s_8 = a \\times (1-k^{8})/(1-k)$. Since $0.88^{8} \\approx 0.359635$, this becomes $s_8 = 15,000 \\times (1-0.359635)/0.12 = 15,000 \\times 5.336379 \\approx \\$80,045.68$.`,
+The eight payments under the finite clause form a finite geometric series, which sums to
+
+$$s_n = a\\,\\frac{1-k^{n}}{1-k}$$
+
+Substituting the first payment $a = 15{,}000$ dollars, the quotient $k = 0.88$, and $n = 8$ payments:
+
+$$s_8 = 15{,}000 \\times \\frac{1-(0.88)^{8}}{1-0.88}$$
+
+The eighth power of the quotient is
+
+$$(0.88)^{8} = 0.359635$$
+
+so the numerator of the bracket is
+
+$$1 - 0.359635 = 0.640365$$
+
+and dividing by the denominator gives
+
+$$\\frac{0.640365}{0.12} = 5.336379$$
+
+Multiplying by the first payment:
+
+$$s_8 = 15{,}000 \\times 5.336379 = 80{,}045.68$$
+
+The eight payments total about \\$80,045.68, matching the claim, so the statement is true.`,
       `**C) If the payments continued forever under the same 88% quotient, the infinite total would be \\$130,000.00.**  (false)
 
-Since $|0.88|<1$, letting the payments continue forever gives an infinite total of $s_{\\infty} = 15,000/(1-0.88) = 15,000/0.12 = \\$125,000.00$, not \\$130,000.00.`,
+Letting the payments run forever turns the finite series into an infinite one, which has a finite total whenever the size of the quotient is below 1:
+
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
+
+Each payment keeps $88\\%$ of the previous one, so $k = 0.88$ and
+
+$$|0.88| < 1$$
+
+which means the total converges. Substituting the first payment $a = 15{,}000$ dollars:
+
+$$s_{\\infty} = \\frac{15{,}000}{1-0.88}$$
+
+$$s_{\\infty} = \\frac{15{,}000}{0.12}$$
+
+$$s_{\\infty} = 125{,}000$$
+
+The endless stream totals \\$125,000.00. The claim names \\$130,000.00, which is \\$5,000.00 above the true figure, so the statement is false.`,
       `**D) The finite 8-payment total represents more than 75% of the infinite total.**  (false)
 
-Dividing the 8-payment total by the true infinite total gives $80,045.68/125,000.00 \\approx 64.04\\%$. That is below 75%, so the claim that the finite total represents more than 75% of the infinite total is incorrect.`,
+The claim measures the eight-payment total against the never-ending total, so both are required. The finite clause sums as
+
+$$s_8 = 15{,}000 \\times \\frac{1-(0.88)^{8}}{0.12}$$
+
+$$(0.88)^{8} = 0.359635$$
+
+$$s_8 = 15{,}000 \\times \\frac{0.640365}{0.12} = 15{,}000 \\times 5.336379 = 80{,}045.68$$
+
+The perpetual clause converges because $|0.88| < 1$:
+
+$$s_{\\infty} = \\frac{15{,}000}{1-0.88} = \\frac{15{,}000}{0.12} = 125{,}000$$
+
+Dividing one by the other gives the share the first eight payments represent:
+
+$$\\frac{80{,}045.68}{125{,}000} = 0.64037$$
+
+That is $64.04\\%$. Comparing with the threshold in the claim:
+
+$$64.04\\% < 75\\%$$
+
+The eight payments cover just under two thirds of the perpetual total, not more than three quarters, so the statement is false.`,
       `**E) If the decline rate were less steep, say k = 0.95 instead of 0.88, the infinite total would be smaller than the infinite total at k = 0.88.**  (false)
 
-A larger ratio (0.95 instead of 0.88) means each payment shrinks more slowly from one year to the next, which makes the (1-k) denominator in the infinite-sum formula smaller - and a smaller denominator produces a larger result, not a smaller one. Concretely, 15,000/(1-0.95) = 15,000/0.05 = \\$300,000.00, far larger than the \\$125,000.00 obtained at k=0.88, so the claimed comparison has the direction backwards.
+The infinite total of a declining payment stream is
 
-At $k = 0.95$: $s_{\\infty} = 15,000/(1-0.95) = 15,000/0.05 = \\$300,000$
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
 
-$300,000 > 125,000$, so a milder decline produces a larger infinite total, not a smaller one.`,
+and the quotient enters only through the denominator $1 - k$. Raising $k$ from $0.88$ to $0.95$ makes that denominator smaller, and dividing the same first payment by a smaller number produces a larger result. Working both cases out confirms the direction. At the original quotient, with $a = 15{,}000$ dollars and $k = 0.88$:
+
+$$s_{\\infty} = \\frac{15{,}000}{1-0.88} = \\frac{15{,}000}{0.12} = 125{,}000$$
+
+At the milder quotient $k = 0.95$, the same first payment gives
+
+$$s_{\\infty} = \\frac{15{,}000}{1-0.95}$$
+
+$$s_{\\infty} = \\frac{15{,}000}{0.05}$$
+
+$$s_{\\infty} = 300{,}000$$
+
+Comparing the two totals:
+
+$$300{,}000 > 125{,}000$$
+
+A less steep decline keeps every payment closer to the one before it, so the stream pays out far more overall, \\$175,000.00 more in this case. The claim says the milder decline would give a smaller total, which reverses the true direction, so the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 68,
@@ -5235,31 +10761,135 @@ Infinite sum (|k| < 1): a/(1 - k)
     tactical_explanations: [
       `**A) The finite-sum formula still gives a valid, well-defined 12-year total.**  (true)
 
-The finite-sum formula $s_n = a(k^{n}-1)/(k-1)$ only breaks down when its denominator, k-1, equals zero, which happens exactly when k=1. As long as k is anything other than 1 - including values greater than 1, such as 1.08 here - the formula is perfectly well defined and produces a valid total for any fixed, finite number of terms; the separate requirement that |k|<1 only matters when trying to add up infinitely many terms, not a specific finite count of them.
+The finite geometric sum is
 
-Here $k = 1.08 \\neq 1$, so
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
 
-$$s_{12} = 9,000 \\times \\frac{(1.08)^{12}-1}{0.08}$$
+and the only value of $k$ that breaks it is $k = 1$, because that makes the denominator
 
-is well defined. The $|k|<1$ restriction is only for infinite sums.`,
+$$k - 1 = 0$$
+
+Every other quotient, whether smaller or larger than 1, leaves a nonzero denominator and a perfectly well defined answer for any fixed number of terms. Royalties growing $8\\%$ a year have
+
+$$k = 1.08 \\neq 1$$
+
+so the formula applies to the twelve-year stream with $a = 9{,}000$ dollars and $n = 12$:
+
+$$s_{12} = 9{,}000 \\times \\frac{(1.08)^{12}-1}{0.08}$$
+
+$$(1.08)^{12} = 2.518170$$
+
+$$s_{12} = 9{,}000 \\times \\frac{1.518170}{0.08} = 9{,}000 \\times 18.977125$$
+
+$$s_{12} = 170{,}794.14$$
+
+A definite dollar figure comes out, so nothing about the calculation fails. The separate requirement that $|k| < 1$ belongs to infinite sums, where the terms must fade to zero for a limit to exist, and it places no restriction on adding a fixed count of twelve terms. The claim says the finite-sum formula still gives a valid, well defined total, so the statement is true.`,
       `**B) The total royalties collected over the 12 years are approximately \\$175,000.00.**  (false)
 
-Computing $s_{12} = 9,000 \\times (1.08^{12}-1)/0.08$ requires $1.08^{12} \\approx 2.518170$, which gives $s_{12} = 9,000 \\times (2.518170-1)/0.08 = 9,000 \\times 18.977128 \\approx \\$170,794.15$, not \\$175,000.00.`,
+Twelve years of royalties growing $8\\%$ a year form a finite geometric series with $a = 9{,}000$ dollars, $k = 1.08$, and $n = 12$:
+
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+Substituting the three quantities:
+
+$$s_{12} = 9{,}000 \\times \\frac{(1.08)^{12}-1}{1.08-1}$$
+
+The twelfth power of the growth factor is
+
+$$(1.08)^{12} = 2.518170$$
+
+so the bracket becomes
+
+$$\\frac{2.518170-1}{0.08} = \\frac{1.518170}{0.08} = 18.977125$$
+
+and the total is
+
+$$s_{12} = 9{,}000 \\times 18.977125$$
+
+$$s_{12} = 170{,}794.14$$
+
+Twelve years of royalties come to about \\$170,794.14. The claim names \\$175,000.00, which overstates the total by
+
+$$175{,}000.00 - 170{,}794.14 = 4{,}205.86$$
+
+so the statement is false.`,
       `**C) The infinite-sum formula can still be legitimately applied to this series, yielding a meaningful total value.**  (false)
 
-The infinite-sum formula a/(1-k) is only meaningful when the terms shrink toward zero as more are added, which requires |k| to be below 1. Here k=1.08 is greater than 1, so each successive royalty payment is larger than the last, growing without bound rather than shrinking - there is no finite total for the series to approach, so plugging these numbers into the infinite-sum formula produces a number with no real meaning, whether positive or negative.
+The infinite-sum formula
 
-$k = 1.08 > 1$, so terms grow. The infinite-sum formula $a/(1-k)$ does not apply and would spit out a negative number with no economic meaning.`,
+$$s_{\\infty} = \\frac{a}{1-k}$$
+
+is derived by letting $k^{n}$ fade to zero as the number of terms grows, which only happens when
+
+$$|k| < 1$$
+
+Royalties here grow rather than shrink, so the quotient is
+
+$$k = 1.08$$
+
+and the test fails:
+
+$$1.08 > 1$$
+
+The terms confirm it. Starting from $a = 9{,}000$ dollars,
+
+$$a_2 = 9{,}000 \\times 1.08 = 9{,}720$$
+
+$$a_3 = 9{,}000 \\times (1.08)^{2} = 10{,}497.60$$
+
+Each royalty exceeds the previous one, so the running total climbs without any ceiling and there is no finite value for it to approach. Substituting anyway produces
+
+$$\\frac{9{,}000}{1-1.08} = \\frac{9{,}000}{-0.08} = -112{,}500$$
+
+a negative figure for a stream of growing positive royalties, which is meaningless as a valuation. The formula cannot be legitimately applied here, so the statement is false.`,
       `**D) The royalty payment in year 12 alone is approximately \\$20,715.85.**  (false)
 
-The 12th year's royalty equals the first payment multiplied by the ratio raised to the 11th power, since the first payment itself already corresponds to zero multiplications. Since 1.08 to the 11th power is about 2.331639, that gives 9,000×2.331639 ≈ \\$20,984.75, not \\$20,715.85.
+The royalty in a given year is the first year's royalty multiplied by the growth factor once for every year that has elapsed:
 
-Year 12 is term $a k^{11}$:
+$$a_t = a\\,k^{t-1}$$
 
-$$(1.08)^{11} \\approx 2.331639, \\quad 9,000 \\times 2.331639 \\approx \\$20,984.75$$`,
+Year 1 is the starting figure with no multiplication, so year 12 carries the exponent
+
+$$t - 1 = 12 - 1 = 11$$
+
+Substituting $a = 9{,}000$ dollars and $k = 1.08$:
+
+$$a_{12} = 9{,}000 \\times (1.08)^{11}$$
+
+The eleventh power of the growth factor is
+
+$$(1.08)^{11} = 2.331639$$
+
+so the year-12 royalty is
+
+$$a_{12} = 9{,}000 \\times 2.331639$$
+
+$$a_{12} = 20{,}984.75$$
+
+The claim names \\$20,715.85, which is
+
+$$20{,}984.75 - 20{,}715.85 = 268.90$$
+
+below the correct amount. That figure would come from using an exponent of 12 rather than 11 on a smaller base or from rounding the power too early; either way it does not match the year-12 payment, so the statement is false.`,
       `**E) If royalties instead grew at 0% for 12 years, the 12-year total would be \\$62,794.15 less than the actual 8%-growth total.**  (true)
 
-Twelve flat annual payments of \\$9,000 with no growth at all would total $9,000 \\times 12 = \\$108,000.00$. Comparing that to the actual 8%-growth total of about \\$170,794.15 gives a difference of $170,794.15 - 108,000 = \\$62,794.15$, confirming the stated gap exactly.`,
+Both twelve-year totals are needed. With no growth at all, the twelve royalties are identical, which is the $k = 1$ case with total $a\\,n$:
+
+$$9{,}000 \\times 12 = 108{,}000$$
+
+dollars. With $8\\%$ growth the stream is a finite geometric series with $a = 9{,}000$ dollars, $k = 1.08$, and $n = 12$:
+
+$$s_{12} = 9{,}000 \\times \\frac{(1.08)^{12}-1}{0.08}$$
+
+$$(1.08)^{12} = 2.518170$$
+
+$$s_{12} = 9{,}000 \\times \\frac{1.518170}{0.08} = 9{,}000 \\times 18.977125 = 170{,}794.14$$
+
+Subtracting the flat total from the growth total gives the shortfall of the flat schedule:
+
+$$170{,}794.14 - 108{,}000.00 = 62{,}794.14$$
+
+The claim names \\$62,794.15, which agrees with the computed gap to within a one-cent rounding difference, so the statement is true.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 69,
@@ -5312,21 +10942,115 @@ Flat case (k = 1): $s_n = a \\times n$
     tactical_explanations: [
       `**A) The 6-year finite sum of projected revenues is approximately \\$39.72 million.**  (true)
 
-Summing 6 years of revenue that grows 20% each year uses $s_6 = 4 \\times (1.20^{6}-1)/0.20$. Since $1.20^{6} = 2.985984$, this becomes $s_6 = 4 \\times 9.92992 \\approx \\$39.72$ million.`,
+Six years of revenue growing $20\\%$ a year form a finite geometric series with $a = 4$ million dollars, $k = 1.20$, and $n = 6$:
+
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+Substituting the three quantities:
+
+$$s_6 = 4 \\times \\frac{(1.20)^{6}-1}{1.20-1}$$
+
+The sixth power of the growth factor is
+
+$$(1.20)^{6} = 2.985984$$
+
+so the bracket becomes
+
+$$\\frac{2.985984-1}{0.20} = \\frac{1.985984}{0.20} = 9.92992$$
+
+and the total is
+
+$$s_6 = 4 \\times 9.92992$$
+
+$$s_6 = 39.71968$$
+
+The six-year revenue total is about \\$39.72 million, exactly the figure in the claim, so the statement is true.`,
       `**B) Year-6 revenue alone is approximately \\$9.95 million.**  (true)
 
-Year-6 revenue equals the starting revenue multiplied by the growth factor raised to the 5th power, since year 1 itself already corresponds to zero multiplications: $4 \\times 1.20^{5} = 4 \\times 2.48832 \\approx \\$9.95$ million.`,
+Revenue in a given year is the first year's revenue multiplied by the growth factor once for each year that has passed:
+
+$$a_t = a\\,k^{t-1}$$
+
+Year 1 is the \\$4 million starting figure itself, so year 6 carries the exponent
+
+$$t - 1 = 6 - 1 = 5$$
+
+Substituting $a = 4$ million dollars and $k = 1.20$:
+
+$$a_6 = 4 \\times (1.20)^{5}$$
+
+The fifth power of the growth factor is
+
+$$(1.20)^{5} = 2.48832$$
+
+so year-6 revenue is
+
+$$a_6 = 4 \\times 2.48832$$
+
+$$a_6 = 9.95328$$
+
+That is about \\$9.95 million, matching the claim, so the statement is true.`,
       `**C) The finite 6-year series has no valid sum via the finite-sum formula.**  (false)
 
-The finite geometric-series formula only fails to apply when the ratio equals exactly 1, since that would divide by zero; it works perfectly well for any other ratio, whether smaller or larger than 1, as long as only a fixed, finite number of terms are being added. Here k=1.20 is simply the growth factor over a fixed 6-year window, and the formula handles it without any issue - the restriction that |k| be below 1 only applies when summing infinitely many terms, not a finite set of them.
+The finite geometric sum
 
-$k = 1.20 \\neq 1$, so the finite-sum formula applies over $n = 6$. Divergence is an infinite-horizon issue, not a 6-year issue.`,
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+fails only when its denominator vanishes, which happens at the single value $k = 1$. Any other quotient, above or below 1, leaves the expression well defined for a fixed number of terms. Here revenue grows $20\\%$ a year, so
+
+$$k = 1.20 \\neq 1$$
+
+and the formula evaluates without difficulty over the six-year window with $a = 4$ million dollars:
+
+$$s_6 = 4 \\times \\frac{(1.20)^{6}-1}{0.20}$$
+
+$$(1.20)^{6} = 2.985984$$
+
+$$s_6 = 4 \\times \\frac{1.985984}{0.20} = 4 \\times 9.92992 = 39.71968$$
+
+A concrete total of about \\$39.72 million comes out, so the series plainly has a valid sum. The condition $|k| < 1$ that the claim appears to lean on belongs to infinite sums, where the terms must fade toward zero before a limit can exist; adding a fixed set of six terms never raises that question at all. The claim says the finite series has no valid sum, which the calculation contradicts, so the statement is false.`,
       `**D) Treating year-6 revenue as the first term of a new perpetuity with quotient k = 0.85, the terminal value is approximately \\$66.36 million.**  (true)
 
-Treating the \\$9.95328 million of year-6 revenue as the starting payment of a new, separately declining perpetuity with ratio 0.85, the infinite total of that new stream is $s_{\\infty} = 9.95328/(1-0.85) = 9.95328/0.15 \\approx \\$66.36$ million.`,
+The terminal phase is treated as a fresh infinite geometric series whose first payment is year-6 revenue and whose quotient is $k = 0.85$. Year-6 revenue comes from the growth phase:
+
+$$a_6 = 4 \\times (1.20)^{5} = 4 \\times 2.48832 = 9.95328$$
+
+million dollars. An infinite geometric series has a finite total when the size of its quotient is below 1:
+
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
+
+A $15\\%$ annual decline keeps $85\\%$ of the previous year's revenue, so $k = 0.85$ and $|0.85| < 1$. Substituting the first payment of the new stream:
+
+$$s_{\\infty} = \\frac{9.95328}{1-0.85}$$
+
+$$s_{\\infty} = \\frac{9.95328}{0.15}$$
+
+$$s_{\\infty} = 66.3552$$
+
+The terminal value is about \\$66.36 million, matching the claim, so the statement is true.`,
       `**E) Combining the 6-year finite total with the terminal perpetuity value gives a combined projected value of less than \\$100 million.**  (false)
 
-Adding the 6-year finite total (\\$39.72 million) to the terminal perpetuity value (\\$66.36 million) gives $39.72 + 66.36 = \\$106.08$ million, which is above \\$100 million, not below it.`,
+The combined value adds the finite growth phase to the terminal perpetuity, so both pieces are needed. The six-year phase is a finite geometric series with $a = 4$ million dollars, $k = 1.20$, and $n = 6$:
+
+$$s_6 = 4 \\times \\frac{(1.20)^{6}-1}{0.20} = 4 \\times \\frac{1.985984}{0.20} = 39.71968$$
+
+million dollars. The terminal phase starts from year-6 revenue,
+
+$$a_6 = 4 \\times (1.20)^{5} = 9.95328$$
+
+million dollars, and declines $15\\%$ a year forever, so with $k = 0.85$ it totals
+
+$$s_{\\infty} = \\frac{9.95328}{1-0.85} = \\frac{9.95328}{0.15} = 66.3552$$
+
+million dollars. Adding the two pieces:
+
+$$39.71968 + 66.3552 = 106.07488$$
+
+The combined projected value is about \\$106.07 million. Comparing with the threshold in the claim:
+
+$$106.07 > 100$$
+
+The combined figure clears \\$100 million by more than \\$6 million rather than falling below it, so the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 70,
@@ -5375,25 +11099,121 @@ Infinite sum (|k| < 1): a/(1 - k)
     tactical_explanations: [
       `**A) If the first month's cost had instead been exactly \\$1,000, the second month's cost would be \\$1,150.00.**  (true)
 
-Regardless of what the actual first-month cost turns out to be, multiplying any given first-month figure by the 1.15 growth ratio gives the second month's cost; for a hypothetical \\$1,000 first month, that is $1,000 \\times 1.15 = \\$1,150.00$, matching exactly.`,
+In a series that grows at a constant rate, each month's cost is the previous month's cost multiplied by the quotient:
+
+$$a_{t} = a_{t-1} \\times k$$
+
+Supply-chain pressure raises restocking cost $15\\%$ a month, so the quotient is
+
+$$k = 1 + 0.15 = 1.15$$
+
+This part of the claim replaces the actual first month with a hypothetical \\$1,000, and the step from month 1 to month 2 uses that figure directly:
+
+$$a_2 = 1{,}000 \\times 1.15$$
+
+$$a_2 = 1{,}150$$
+
+The growth factor applies to whatever the first month happens to be, so a \\$1,000 opening month would be followed by \\$1,150.00 in month 2, exactly as claimed, and the statement is true.`,
       `**B) Solving for the first-month cost gives approximately \\$6,625.74.**  (true)
 
-Rearranging the finite-sum formula to solve for the first term gives $a = s_6 \\times (k-1)/(k^{6}-1)$. Since $1.15^{6} \\approx 2.313061$, that becomes $a = 58,000 \\times 0.15/1.313061 = 8,700/1.313061 \\approx \\$6,625.74$.`,
+The six monthly costs form a finite geometric series whose total is known, so the first term can be recovered by rearranging the sum formula. Starting from
+
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+and solving for the first term gives
+
+$$a = s_n \\times \\frac{k-1}{k^{n}-1}$$
+
+Here the six-month total is $s_6 = 58{,}000$ dollars, the monthly quotient is $k = 1.15$, and $n = 6$:
+
+$$a = 58{,}000 \\times \\frac{1.15-1}{(1.15)^{6}-1}$$
+
+The sixth power of the growth factor is
+
+$$(1.15)^{6} = 2.313061$$
+
+so the fraction becomes
+
+$$\\frac{0.15}{2.313061-1} = \\frac{0.15}{1.313061}$$
+
+and the first month's cost is
+
+$$a = \\frac{58{,}000 \\times 0.15}{1.313061} = \\frac{8{,}700}{1.313061}$$
+
+$$a = 6{,}625.74$$
+
+The opening month must have cost about \\$6,625.74, matching the claim, so the statement is true.`,
       `**C) The 6th month's restocking cost is approximately \\$13,326.73.**  (true)
 
-The 6th month's cost equals the first month's cost multiplied by the ratio raised to the 5th power, since month 1 itself already corresponds to zero multiplications: $6,625.74 \\times 1.15^{5} = 6,625.74 \\times 2.011357 \\approx \\$13,326.73$.`,
+The cost in a given month is the first month's cost multiplied by the growth factor once for each month that has passed:
+
+$$a_t = a\\,k^{t-1}$$
+
+The first month's cost follows from the known six-month total of \\$58,000 and the rearranged sum formula:
+
+$$a = s_6 \\times \\frac{k-1}{k^{6}-1} = 58{,}000 \\times \\frac{0.15}{2.313061-1} = \\frac{8{,}700}{1.313061} = 6{,}625.74$$
+
+Month 6 sits five steps past month 1, so the exponent is $t - 1 = 5$:
+
+$$a_6 = 6{,}625.74 \\times (1.15)^{5}$$
+
+The fifth power of the growth factor is
+
+$$(1.15)^{5} = 2.011357$$
+
+so the sixth month's cost is
+
+$$a_6 = 6{,}625.74 \\times 2.011357$$
+
+$$a_6 = 13{,}326.73$$
+
+That is about \\$13,326.73, matching the claim, so the statement is true.`,
       `**D) The combined restocking cost for months 4 through 6 is approximately \\$37,930.00.**  (false)
 
-Adding the individual costs for months 4, 5, and 6 - that is, $a \\times k^{3} + a \\times k^{4} + a \\times k^{5}$ - gives 6,625.74×(1.520875 + 1.749006 + 2.011357) = 6,625.74×5.281239 ≈ \\$34,992.12, not \\$37,930.00.
+Months 4, 5, and 6 are three individual terms of the series, each equal to the first month's cost scaled by the growth factor the appropriate number of times. The first month's cost comes from the known total of \\$58,000:
 
-Months 4–6 are $a k^{3}+a k^{4}+a k^{5}$:
+$$a = 58{,}000 \\times \\frac{0.15}{(1.15)^{6}-1} = \\frac{8{,}700}{1.313061} = 6{,}625.74$$
 
-$$(1.15)^{3} \\approx 1.520875,\\ (1.15)^{4} \\approx 1.749006,\\ (1.15)^{5} \\approx 2.011357$$
+The three months carry exponents 3, 4, and 5:
 
-$$6,625.74 \\times 5.281238 \\approx \\$34,992.12$$`,
+$$a_4 = 6{,}625.74 \\times (1.15)^{3} = 6{,}625.74 \\times 1.520875 = 10{,}076.92$$
+
+$$a_5 = 6{,}625.74 \\times (1.15)^{4} = 6{,}625.74 \\times 1.749006 = 11{,}588.46$$
+
+$$a_6 = 6{,}625.74 \\times (1.15)^{5} = 6{,}625.74 \\times 2.011357 = 13{,}326.73$$
+
+Adding the three costs:
+
+$$10{,}076.92 + 11{,}588.46 + 13{,}326.73 = 34{,}992.11$$
+
+The combined cost of the last three months is about \\$34,992.12 once the intermediate roundings are carried through. The claim names \\$37,930.00, which overstates the true figure by roughly
+
+$$37{,}930.00 - 34{,}992.12 = 2{,}937.88$$
+
+so the statement is false.`,
       `**E) If the same \\$58,000 total had instead been spread evenly, that flat monthly figure would exceed the actual first-month cost of \\$6,625.74 found under 15% growth.**  (true)
 
-Splitting the same \\$58,000 total evenly across 6 months gives $58,000/6 \\approx \\$9,666.67$ per month. Since the actual first month's cost under 15% growth was only about \\$6,625.74, and a growing schedule always starts below its own average (because the larger later months pull the average up), the flat monthly figure is indeed higher than the growth scenario's starting cost.`,
+Two figures are being compared: the level monthly cost that would produce the same \\$58,000 total, and the actual opening month under $15\\%$ growth. Spreading the total evenly across six months gives
+
+$$\\frac{58{,}000}{6} = 9{,}666.67$$
+
+dollars a month. The actual first month follows from rearranging the finite-sum formula with $s_6 = 58{,}000$ dollars, $k = 1.15$, and $n = 6$:
+
+$$a = 58{,}000 \\times \\frac{1.15-1}{(1.15)^{6}-1}$$
+
+$$(1.15)^{6} = 2.313061$$
+
+$$a = \\frac{8{,}700}{1.313061} = 6{,}625.74$$
+
+Comparing the two monthly figures:
+
+$$9{,}666.67 > 6{,}625.74$$
+
+The level figure exceeds the growth schedule's opening month by
+
+$$9{,}666.67 - 6{,}625.74 = 3{,}040.93$$
+
+dollars. This is what a rising schedule always does: the later months run well above the average and pull it up, which forces the starting month below it. The claim states exactly this comparison, so the statement is true.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 71,
@@ -5444,23 +11264,115 @@ Term in month t: $a k^{t-1}$
     tactical_explanations: [
       `**A) The payout in the second year is \\$490,000.00.**  (true)
 
-Year-2 payout is the year-1 payout multiplied once by the decline factor: $500,000 \\times 0.98 = \\$490,000.00$, matching exactly.`,
+Each year's payout is the previous year's payout multiplied by the quotient:
+
+$$a_t = a\\,k^{t-1}$$
+
+Shrinking the payout by $2\\%$ a year leaves $98\\%$ of the previous amount, so
+
+$$k = 1 - 0.02 = 0.98$$
+
+This year's payout is $a = 500{,}000$ dollars, and the second year is one step along, giving the exponent $t - 1 = 1$:
+
+$$a_2 = 500{,}000 \\times (0.98)^{1}$$
+
+$$a_2 = 490{,}000$$
+
+The second-year payout is \\$490,000.00, exactly the amount claimed, so the statement is true.`,
       `**B) The infinite total of all future payouts converges to \\$25,000,000.00.**  (true)
 
-Because $|0.98| < 1$, letting the payouts continue forever produces a finite total of $s_{\\infty} = 500,000/(1-0.98) = 500,000/0.02 = \\$25,000,000.00$, the theoretical ceiling on everything ever paid out.`,
+The payouts form an infinite geometric series, which totals a finite amount whenever the size of the quotient is below 1:
+
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
+
+A $2\\%$ annual reduction keeps $98\\%$ of the previous payout, so $k = 0.98$ and
+
+$$|0.98| < 1$$
+
+which means the series converges. Substituting this year's payout $a = 500{,}000$ dollars:
+
+$$s_{\\infty} = \\frac{500{,}000}{1-0.98}$$
+
+Simplifying the denominator:
+
+$$s_{\\infty} = \\frac{500{,}000}{0.02}$$
+
+$$s_{\\infty} = 25{,}000{,}000$$
+
+Everything the endowment will ever pay out converges to \\$25,000,000.00, exactly the figure claimed, so the statement is true.`,
       `**C) The cumulative payout over just the first 10 years is approximately \\$4,800,000.00.**  (false)
 
-Summing only the first 10 years gives $s_{10} = 500,000 \\times (1-0.98^{10})/0.02$. Since $0.98^{10} \\approx 0.817073$, this becomes $s_{10} \\approx 500,000 \\times 9.14636 \\approx \\$4,573,179.83$, not \\$4,800,000.00.`,
+The first ten payouts are a finite geometric series, which sums to
+
+$$s_n = a\\,\\frac{1-k^{n}}{1-k}$$
+
+Substituting this year's payout $a = 500{,}000$ dollars, the quotient $k = 0.98$, and $n = 10$:
+
+$$s_{10} = 500{,}000 \\times \\frac{1-(0.98)^{10}}{1-0.98}$$
+
+The tenth power of the quotient is
+
+$$(0.98)^{10} = 0.817073$$
+
+so the numerator of the bracket is
+
+$$1 - 0.817073 = 0.182927$$
+
+and dividing by the denominator gives
+
+$$\\frac{0.182927}{0.02} = 9.14636$$
+
+Multiplying by the first payout:
+
+$$s_{10} = 500{,}000 \\times 9.14636 = 4{,}573{,}179.83$$
+
+The first ten years pay out about \\$4,573,179.83. The claim names \\$4,800,000.00, which is roughly \\$226,820 too high, so the statement is false.`,
       `**D) The first 10 years of payouts represent approximately 18% of the full infinite-horizon total.**  (true)
 
-Dividing the 10-year total by the full infinite total gives $4,573,179.83/25,000,000.00 \\approx 18.3\\%$ - close enough to describe as roughly 18%.`,
+The claim compares a ten-year partial total with the infinite total, so both are needed. The first ten payouts sum by the finite formula with $a = 500{,}000$ dollars, $k = 0.98$, and $n = 10$:
+
+$$s_{10} = 500{,}000 \\times \\frac{1-(0.98)^{10}}{0.02}$$
+
+$$(0.98)^{10} = 0.817073$$
+
+$$s_{10} = 500{,}000 \\times \\frac{0.182927}{0.02} = 500{,}000 \\times 9.14636 = 4{,}573{,}179.83$$
+
+The infinite total converges because $|0.98| < 1$:
+
+$$s_{\\infty} = \\frac{500{,}000}{1-0.98} = 25{,}000{,}000$$
+
+Dividing the partial total by the infinite total gives the share:
+
+$$\\frac{4{,}573{,}179.83}{25{,}000{,}000} = 0.18293$$
+
+That is $18.29\\%$, which rounds to about $18\\%$, exactly as the claim describes, so the statement is true.`,
       `**E) If the decline were instead steeper, at k = 0.95, the infinite total would be more than half of the original infinite total.**  (false)
 
-A steeper 5% annual decline (k=0.95) gives an infinite total of 500,000/(1-0.95) = 500,000/0.05 = \\$10,000,000.00. Half of the original \\$25,000,000.00 infinite total is \\$12,500,000.00, and \\$10,000,000.00 sits below that halfway point, not above it, so the comparison in the claim has the direction backwards.
+The infinite total of a declining payout stream is
 
-At $k = 0.95$: $s_{\\infty} = 500,000/0.05 = \\$10,000,000$.
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
 
-Half of $25,000,000$ is $12,500,000$, and $10,000,000 < 12,500,000$.`,
+so a steeper decline enlarges the denominator $1 - k$ and shrinks the total. Both cases can be computed from the same starting payout $a = 500{,}000$ dollars. At the planned $2\\%$ decline, $k = 0.98$:
+
+$$s_{\\infty} = \\frac{500{,}000}{1-0.98} = \\frac{500{,}000}{0.02} = 25{,}000{,}000$$
+
+At the steeper $5\\%$ decline, $k = 0.95$:
+
+$$s_{\\infty} = \\frac{500{,}000}{1-0.95}$$
+
+$$s_{\\infty} = \\frac{500{,}000}{0.05}$$
+
+$$s_{\\infty} = 10{,}000{,}000$$
+
+Half of the original infinite total is
+
+$$\\frac{25{,}000{,}000}{2} = 12{,}500{,}000$$
+
+Comparing the steeper-decline total with that halfway mark:
+
+$$10{,}000{,}000 < 12{,}500{,}000$$
+
+The steeper path delivers only $40\\%$ of the original total, which is below half rather than above it, so the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 72,
@@ -5513,27 +11425,135 @@ Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
     tactical_explanations: [
       `**A) The marketing budget in year 2 is \\$224,000.00.**  (true)
 
-Year-2 budget is the year-1 budget multiplied once by the growth factor: $200,000 \\times 1.12 = \\$224,000.00$, matching exactly.`,
+The budget in a given year is the previous year's budget multiplied by the growth quotient:
+
+$$a_t = a\\,k^{t-1}$$
+
+Growing the budget $12\\%$ a year makes the quotient
+
+$$k = 1 + 0.12 = 1.12$$
+
+This year's budget is $a = 200{,}000$ dollars, and year 2 is one step along, so the exponent is $t - 1 = 1$:
+
+$$a_2 = 200{,}000 \\times (1.12)^{1}$$
+
+$$a_2 = 224{,}000$$
+
+The year-2 marketing budget is \\$224,000.00, exactly the figure claimed, so the statement is true.`,
       `**B) The cumulative spend after 9 years is still below the \\$3,000,000 target.**  (true)
 
-Summing the first 9 years gives $s_9 = 200,000 \\times (1.12^{9}-1)/0.12$. Since $1.12^{9} \\approx 2.773079$, this becomes $s_9 \\approx 200,000 \\times 14.77566 \\approx \\$2,955,131.26$, which indeed falls short of the \\$3,000,000 target.`,
+Nine years of budgets growing $12\\%$ a year form a finite geometric series with $a = 200{,}000$ dollars, $k = 1.12$, and $n = 9$:
+
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+Substituting the three quantities:
+
+$$s_9 = 200{,}000 \\times \\frac{(1.12)^{9}-1}{1.12-1}$$
+
+The ninth power of the growth factor is
+
+$$(1.12)^{9} = 2.773079$$
+
+so the bracket becomes
+
+$$\\frac{2.773079-1}{0.12} = \\frac{1.773079}{0.12} = 14.775656$$
+
+and the nine-year total is
+
+$$s_9 = 200{,}000 \\times 14.775656$$
+
+$$s_9 = 2{,}955{,}131.26$$
+
+Comparing with the target:
+
+$$2{,}955{,}131.26 < 3{,}000{,}000$$
+
+Cumulative spend after nine years is still about \\$44,868.74 short of the \\$3,000,000 target, so the statement is true.`,
       `**C) The cumulative spend after 10 years is approximately \\$3,600,000.00.**  (false)
 
-Summing the first 10 years instead gives $s_{10} = 200,000 \\times (1.12^{10}-1)/0.12$. Since $1.12^{10} \\approx 3.105848$, this becomes $s_{10} \\approx 200,000 \\times 17.54873 \\approx \\$3,509,747.01$, not \\$3,600,000.00.`,
+Ten years of budgets growing $12\\%$ a year form a finite geometric series with $a = 200{,}000$ dollars, $k = 1.12$, and $n = 10$:
+
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+Substituting the three quantities:
+
+$$s_{10} = 200{,}000 \\times \\frac{(1.12)^{10}-1}{1.12-1}$$
+
+The tenth power of the growth factor is
+
+$$(1.12)^{10} = 3.105848$$
+
+so the bracket becomes
+
+$$\\frac{3.105848-1}{0.12} = \\frac{2.105848}{0.12} = 17.548735$$
+
+and the ten-year total is
+
+$$s_{10} = 200{,}000 \\times 17.548735$$
+
+$$s_{10} = 3{,}509{,}747.01$$
+
+The claim names about \\$3,600,000.00, which overstates the ten-year figure by roughly
+
+$$3{,}600{,}000.00 - 3{,}509{,}747.01 = 90{,}252.99$$
+
+so the statement is false.`,
       `**D) The smallest n for which cumulative spend surpasses \\$3,000,000 is n = 9.**  (false)
 
-Since the 9-year total (≈ \\$2,955,131.26) is still below \\$3,000,000 but the 10-year total (≈ \\$3,509,747.01) is above it, the cumulative spend crosses the \\$3,000,000 threshold sometime during year 10. That means the smallest whole number of years for which the running total exceeds \\$3,000,000 is n=10, not n=9.
+Finding the first year in which cumulative spend clears \\$3,000,000 means testing consecutive totals of the finite geometric series with $a = 200{,}000$ dollars and $k = 1.12$:
 
-$s_9 \\approx 2,955,131 < 3,000,000$ but $s_{10} \\approx 3,509,747 > 3,000,000$, so the first crossing is at $n = 10$.`,
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
+
+After nine years:
+
+$$(1.12)^{9} = 2.773079$$
+
+$$s_9 = 200{,}000 \\times \\frac{1.773079}{0.12} = 200{,}000 \\times 14.775656 = 2{,}955{,}131.26$$
+
+That total is still short of the target:
+
+$$2{,}955{,}131.26 < 3{,}000{,}000$$
+
+After ten years:
+
+$$(1.12)^{10} = 3.105848$$
+
+$$s_{10} = 200{,}000 \\times \\frac{2.105848}{0.12} = 200{,}000 \\times 17.548735 = 3{,}509{,}747.01$$
+
+which clears it:
+
+$$3{,}509{,}747.01 > 3{,}000{,}000$$
+
+The crossing therefore happens during year 10, and the smallest whole number of years with cumulative spend above \\$3,000,000 is $n = 10$. The claim names $n = 9$, a year too early, so the statement is false.`,
       `**E) If the growth rate were only 8% instead of 12%, the 10-year cumulative spend would still surpass the \\$3,000,000 target within 10 years.**  (false)
 
-With a slower 8% growth rate, the 10-year total is $s_{10} = 200,000 \\times (1.08^{10}-1)/0.08$. Since 1.08 to the 10th power is about 2.158925, this comes to 200,000×14.486562 ≈ \\$2,897,312.49, which is still below \\$3,000,000 - so under this slower growth rate, the target would not actually be reached within 10 years.
+Slower growth means a different quotient, so the ten-year total has to be recomputed rather than adjusted. With growth at $8\\%$, the quotient is
 
-At 8%: $s_{10} = 200,000 \\times ((1.08)^{10}-1)/0.08$
+$$k = 1 + 0.08 = 1.08$$
 
-$$(1.08)^{10} \\approx 2.158925, \\quad s_{10} \\approx 200,000 \\times 14.48656 \\approx \\$2,897,312$$
+and the finite geometric sum with $a = 200{,}000$ dollars and $n = 10$ is
 
-$2,897,312 < 3,000,000$.`,
+$$s_{10} = 200{,}000 \\times \\frac{(1.08)^{10}-1}{1.08-1}$$
+
+The tenth power of the growth factor is
+
+$$(1.08)^{10} = 2.158925$$
+
+so the bracket becomes
+
+$$\\frac{2.158925-1}{0.08} = \\frac{1.158925}{0.08} = 14.486562$$
+
+and the ten-year total is
+
+$$s_{10} = 200{,}000 \\times 14.486562$$
+
+$$s_{10} = 2{,}897{,}312.49$$
+
+Comparing with the target:
+
+$$2{,}897{,}312.49 < 3{,}000{,}000$$
+
+At $8\\%$ growth the cumulative spend is still about \\$102,687.51 short after ten full years, so the target would not be reached within that window and the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 73,
@@ -5581,25 +11601,121 @@ $s_n = a(k^{n}-1)/(k-1)$
     tactical_explanations: [
       `**A) The second grant in the sequence is \\$48,000.00.**  (true)
 
-The second grant is the first grant multiplied once by the decline factor: 50,000×0.96 = \\$48,000.00, matching exactly.
+Each grant is a fixed fraction of the one before it, so any grant equals the first grant multiplied by the quotient once for each step taken:
 
-$$50,000 \\times 0.96 = 48,000$$`,
+$$a_t = a\\,k^{t-1}$$
+
+The first grant is $a = 50{,}000$ dollars, and each later grant is $96\\%$ of the previous one, so
+
+$$k = 0.96$$
+
+The second grant is one step along, giving the exponent $t - 1 = 1$:
+
+$$a_2 = 50{,}000 \\times (0.96)^{1}$$
+
+$$a_2 = 48{,}000$$
+
+The second grant is \\$48,000.00, which is \\$2,000.00 less than the first, exactly as the claim states, so the statement is true.`,
       `**B) The infinite total of all future grants is \\$1,250,000.00.**  (true)
 
-Because $|0.96|<1$, letting the grants continue indefinitely produces a finite total of $s_{\\infty} = 50,000/(1-0.96) = 50,000/0.04 = \\$1,250,000.00$.`,
+The grants continue forever, forming an infinite geometric series, and such a series has a finite total whenever the size of the quotient is below 1:
+
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
+
+Each grant is $96\\%$ of the previous one, so $k = 0.96$ and
+
+$$|0.96| < 1$$
+
+which means the total converges. Substituting the first grant $a = 50{,}000$ dollars:
+
+$$s_{\\infty} = \\frac{50{,}000}{1-0.96}$$
+
+Simplifying the denominator:
+
+$$s_{\\infty} = \\frac{50{,}000}{0.04}$$
+
+$$s_{\\infty} = 1{,}250{,}000$$
+
+Every grant the trust will ever pay adds up to \\$1,250,000.00, matching the claim, so the statement is true.`,
       `**C) The total of the first 15 grants is approximately \\$572,392.03.**  (true)
 
-Summing just the first 15 grants gives $s_{15} = 50,000 \\times (1-0.96^{15})/0.04$. Since $0.96^{15} \\approx 0.542086$, this becomes $s_{15} \\approx 50,000 \\times 11.44784 \\approx \\$572,392.03$.`,
+The first fifteen grants form a finite geometric series, which sums to
+
+$$s_n = a\\,\\frac{1-k^{n}}{1-k}$$
+
+Substituting the first grant $a = 50{,}000$ dollars, the quotient $k = 0.96$, and $n = 15$:
+
+$$s_{15} = 50{,}000 \\times \\frac{1-(0.96)^{15}}{1-0.96}$$
+
+The fifteenth power of the quotient is
+
+$$(0.96)^{15} = 0.542086$$
+
+so the numerator of the bracket is
+
+$$1 - 0.542086 = 0.457914$$
+
+and dividing by the denominator gives
+
+$$\\frac{0.457914}{0.04} = 11.44784$$
+
+Multiplying by the first grant:
+
+$$s_{15} = 50{,}000 \\times 11.44784$$
+
+$$s_{15} = 572{,}392.03$$
+
+The first fifteen grants total about \\$572,392.03, matching the claim, so the statement is true.`,
       `**D) The first 15 grants represent less than 40% of the infinite total.**  (false)
 
-Dividing the 15-grant total by the full infinite total gives $572,392.03/1,250,000.00 \\approx 45.8\\%$ - that is above 40%, not below it, so the claim understates how large a share the first 15 grants actually represent.`,
+The claim measures a fifteen-grant partial total against the infinite total, so both are needed. The finite sum with $a = 50{,}000$ dollars, $k = 0.96$, and $n = 15$ is
+
+$$s_{15} = 50{,}000 \\times \\frac{1-(0.96)^{15}}{0.04}$$
+
+$$(0.96)^{15} = 0.542086$$
+
+$$s_{15} = 50{,}000 \\times \\frac{0.457914}{0.04} = 50{,}000 \\times 11.44784 = 572{,}392.03$$
+
+The infinite total converges because $|0.96| < 1$:
+
+$$s_{\\infty} = \\frac{50{,}000}{1-0.96} = \\frac{50{,}000}{0.04} = 1{,}250{,}000$$
+
+Dividing one by the other gives the share:
+
+$$\\frac{572{,}392.03}{1{,}250{,}000} = 0.45791$$
+
+That is $45.79\\%$. Comparing with the threshold in the claim:
+
+$$45.79\\% > 40\\%$$
+
+The first fifteen grants deliver almost half of the perpetual total rather than less than two fifths of it, so the statement is false.`,
       `**E) If the decline were steeper, at k = 0.90 instead of 0.96, the infinite total would be less than half of the original infinite total.**  (true)
 
-A steeper 10% annual decline (k=0.90) gives an infinite total of 50,000/(1-0.90) = 50,000/0.10 = \\$500,000.00. Half of the original \\$1,250,000.00 total is \\$625,000.00, and \\$500,000.00 is indeed below that halfway mark, confirming the comparison.
+The infinite total of a declining grant stream is
 
-At $k = 0.90$: $s_{\\infty} = 50,000/0.10 = \\$500,000$.
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
 
-Half of $1,250,000$ is $625,000$, and $500,000 < 625,000$.`,
+and a steeper decline raises the denominator $1 - k$, which cuts the total. Both cases start from the same first grant $a = 50{,}000$ dollars. At the planned quotient $k = 0.96$:
+
+$$s_{\\infty} = \\frac{50{,}000}{1-0.96} = \\frac{50{,}000}{0.04} = 1{,}250{,}000$$
+
+At the steeper quotient $k = 0.90$, which cuts each grant by $10\\%$:
+
+$$s_{\\infty} = \\frac{50{,}000}{1-0.90}$$
+
+$$s_{\\infty} = \\frac{50{,}000}{0.10}$$
+
+$$s_{\\infty} = 500{,}000$$
+
+Half of the original infinite total is
+
+$$\\frac{1{,}250{,}000}{2} = 625{,}000$$
+
+Comparing the steeper-decline total against that halfway mark:
+
+$$500{,}000 < 625{,}000$$
+
+The steeper decline leaves a total that is \\$125,000.00 below half of the original, so it is indeed less than half and the statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 74,
@@ -5651,31 +11767,139 @@ Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
     tactical_explanations: [
       `**A) The second quarter's yield is 9,800.00 lbs.**  (true)
 
-The second quarter's yield is the first quarter's yield multiplied once by the decline factor: 10,000×0.98: $9,800.00 lbs$, matching exactly.
+Each quarter's yield is the previous quarter's yield multiplied by the decline quotient:
 
-$$10,000 \\times 0.98 = 9,800$$`,
+$$a_t = a\\,k^{t-1}$$
+
+A $2\\%$ quarterly fall leaves $98\\%$ of the previous quarter, so
+
+$$k = 1 - 0.02 = 0.98$$
+
+The first quarter's yield is $a = 10{,}000$ lbs, and the second quarter is one step along, giving the exponent $t - 1 = 1$:
+
+$$a_2 = 10{,}000 \\times (0.98)^{1}$$
+
+$$a_2 = 9{,}800$$
+
+The second quarter's yield is $9{,}800.00$ lbs, exactly the figure claimed, so the statement is true.`,
       `**B) The total yield over the full 5-year span is approximately 166,196.01 lbs.**  (true)
 
-Five years is 20 quarters, so summing all 20 quarters gives $s_{20} = 10,000 \\times (1-0.98^{20})/0.02$. Since $0.98^{20} \\approx 0.667608$, this becomes $s_{20} \\approx 10,000 \\times 16.619601 \\approx 166,196.01$ lbs.`,
+Five years at four quarters per year is
+
+$$5 \\times 4 = 20$$
+
+quarters, so the full span is a finite geometric series of 20 terms with $a = 10{,}000$ lbs and $k = 0.98$:
+
+$$s_n = a\\,\\frac{1-k^{n}}{1-k}$$
+
+Substituting the three quantities:
+
+$$s_{20} = 10{,}000 \\times \\frac{1-(0.98)^{20}}{1-0.98}$$
+
+The twentieth power of the quotient is
+
+$$(0.98)^{20} = 0.667608$$
+
+so the numerator of the bracket is
+
+$$1 - 0.667608 = 0.332392$$
+
+and dividing by the denominator gives
+
+$$\\frac{0.332392}{0.02} = 16.619601$$
+
+Multiplying by the first quarter's yield:
+
+$$s_{20} = 10{,}000 \\times 16.619601$$
+
+$$s_{20} = 166{,}196.01$$
+
+The five-year total is about $166{,}196.01$ lbs, matching the claim, so the statement is true.`,
       `**C) Substituting n = 5 into the same formula gives 48,039.60 lbs, and this would be the correct 5-year total.**  (false)
 
-Plugging n=5 into the same formula instead of n=20 does produce 48,039.60 lbs as a number, but that figure only represents the total of the first 5 quarters (about 1.25 years), not the full 5-year, 20-quarter span. Using the wrong exponent gives a technically computable but practically meaningless answer to the actual 5-year question, whose correct total is 166,196.01 lbs.
+The exponent in the sum formula counts periods, and the periods here are quarters, not years. Substituting $n = 5$ therefore adds up only five quarters:
 
-$n = 5$ would be five quarters, not five years:
+$$s_n = a\\,\\frac{1-k^{n}}{1-k}$$
 
-$$s_5 = 10,000 \\times \\frac{1-0.98^{5}}{0.02} \\approx 48,039.60$$
+$$s_5 = 10{,}000 \\times \\frac{1-(0.98)^{5}}{0.02}$$
 
-That is a 1.25-year total, not the 5-year total.`,
+The fifth power of the quotient is
+
+$$(0.98)^{5} = 0.903921$$
+
+so the bracket becomes
+
+$$\\frac{1-0.903921}{0.02} = \\frac{0.096079}{0.02} = 4.80396$$
+
+and the total is
+
+$$s_5 = 10{,}000 \\times 4.80396 = 48{,}039.60$$
+
+The arithmetic in the claim is therefore right: substituting $n = 5$ does produce $48{,}039.60$ lbs. What that number measures is wrong. Five quarters is
+
+$$\\frac{5}{4} = 1.25$$
+
+years, so it covers only the first fifteen months of the vineyard's schedule. The genuine five-year span runs
+
+$$5 \\times 4 = 20$$
+
+quarters, and its total is
+
+$$s_{20} = 10{,}000 \\times \\frac{1-(0.98)^{20}}{0.02} = 10{,}000 \\times 16.619601 = 166{,}196.01$$
+
+lbs, more than three times the figure the claim endorses. The number is computable but answers the wrong question, so the statement is false.`,
       `**D) The yield in the 20th quarter alone is approximately 6,812.33 lbs.**  (true)
 
-The 20th quarter's yield equals the first quarter's yield multiplied by the ratio raised to the 19th power: $10,000 \\times 0.98^{19} \\approx 10,000 \\times 0.681230 \\approx 6,812.33$ lbs.
+The yield in a given quarter is the first quarter's yield multiplied by the decline factor once for each quarter that has passed:
 
-The 20th term is $a k^{19}$:
+$$a_t = a\\,k^{t-1}$$
 
-$$0.98^{19} \\approx 0.681233, \\quad 10,000 \\times 0.681233 \\approx 6,812.33$$`,
+Quarter 1 is the $10{,}000$ lb starting figure with no multiplication, so quarter 20 carries the exponent
+
+$$t - 1 = 20 - 1 = 19$$
+
+Substituting $a = 10{,}000$ lbs and $k = 0.98$:
+
+$$a_{20} = 10{,}000 \\times (0.98)^{19}$$
+
+The nineteenth power of the quotient is
+
+$$(0.98)^{19} = 0.681233$$
+
+so the twentieth quarter's yield is
+
+$$a_{20} = 10{,}000 \\times 0.681233$$
+
+$$a_{20} = 6{,}812.33$$
+
+The final quarter yields about $6{,}812.33$ lbs, roughly $68\\%$ of the opening quarter, which is exactly the figure in the claim, so the statement is true.`,
       `**E) If the 2%-per-quarter decline continued forever instead of stopping after 20 quarters, the theoretical infinite total of 500,000.00 lbs would be less than the actual 20-quarter total.**  (false)
 
-If the 2% quarterly decline continued forever instead of stopping at 20 quarters, the theoretical total would be $s_{\\infty} = 10,000/(1-0.98) = 10,000/0.02 = 500,000.00$ lbs. Since every additional quarter beyond the 20th still adds a small positive amount, the infinite total must be at least as large as the 20-quarter partial total, and indeed $500,000.00 > 166,196.01$, not below it.`,
+Two totals have to be compared: the hypothetical infinite total and the actual twenty-quarter total. Letting the $2\\%$ quarterly decline run forever gives an infinite geometric series, which converges because $|0.98| < 1$:
+
+$$s_{\\infty} = \\frac{a}{1-k} = \\frac{10{,}000}{1-0.98}$$
+
+$$s_{\\infty} = \\frac{10{,}000}{0.02}$$
+
+$$s_{\\infty} = 500{,}000 \\text{ lbs}$$
+
+The actual schedule stops after 20 quarters, and that finite total is
+
+$$s_{20} = 10{,}000 \\times \\frac{1-(0.98)^{20}}{0.02}$$
+
+$$(0.98)^{20} = 0.667608$$
+
+$$s_{20} = 10{,}000 \\times 16.619601 = 166{,}196.01 \\text{ lbs}$$
+
+Comparing the two:
+
+$$500{,}000 > 166{,}196.01$$
+
+Every quarter past the twentieth still contributes a positive yield, so the endless schedule can only exceed the truncated one, by
+
+$$500{,}000 - 166{,}196.01 = 333{,}803.99$$
+
+lbs here. The claim has the infinite total falling below the twenty-quarter total, which reverses the true order, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 75,
@@ -5727,35 +11951,131 @@ Infinite sum (|k| < 1): a/(1 - k)
     tactical_explanations: [
       `**A) Territory A's 8-year total royalties are approximately \\$791,797.43.**  (true)
 
-Summing a geometric series with $a = \\$80,000$, $k = 1.06$, and $n = 8$ years uses $s_{A,8} = a(k^{n}-1)/(k-1)$.
+Royalties that rise by a fixed percentage each year form a finite geometric series, which sums to
 
-$$s_{A,8} = 80,000 \\times \\frac{(1.06)^{8}-1}{0.06} \\approx 80,000 \\times 9.89747 \\approx \\$791,797.43$$
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
 
-That matches the statement exactly.`,
+Territory A opens at $a = 80{,}000$ dollars and grows $6\\%$ a year, so $k = 1.06$, over $n = 8$ years:
+
+$$s_{A,8} = 80{,}000 \\times \\frac{(1.06)^{8}-1}{1.06-1}$$
+
+The eighth power of the growth factor is
+
+$$(1.06)^{8} = 1.593848$$
+
+so the bracket becomes
+
+$$\\frac{1.593848-1}{0.06} = \\frac{0.593848}{0.06} = 9.897468$$
+
+and the eight-year total is
+
+$$s_{A,8} = 80{,}000 \\times 9.897468$$
+
+$$s_{A,8} = 791{,}797.43$$
+
+Territory A collects about \\$791,797.43 over the eight years, exactly the figure claimed, so the statement is true.`,
       `**B) Territory B's 8-year total royalties are approximately \\$815,382.06.**  (true)
 
-Summing a geometric series with $a = \\$95,000$, $k = 1.02$, and $n = 8$ years uses $s_{B,8} = a(k^{n}-1)/(k-1)$.
+Territory B's royalties also rise by a fixed percentage each year, so the same finite geometric sum applies:
 
-$$s_{B,8} = 95,000 \\times \\frac{(1.02)^{8}-1}{0.02} \\approx 95,000 \\times 8.58297 \\approx \\$815,382.06$$
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
 
-That matches the statement exactly.`,
+Territory B opens higher at $a = 95{,}000$ dollars but grows only $2\\%$ a year, so $k = 1.02$, over $n = 8$ years:
+
+$$s_{B,8} = 95{,}000 \\times \\frac{(1.02)^{8}-1}{1.02-1}$$
+
+The eighth power of the growth factor is
+
+$$(1.02)^{8} = 1.171659$$
+
+so the bracket becomes
+
+$$\\frac{1.171659-1}{0.02} = \\frac{0.171659}{0.02} = 8.582969$$
+
+and the eight-year total is
+
+$$s_{B,8} = 95{,}000 \\times 8.582969$$
+
+$$s_{B,8} = 815{,}382.06$$
+
+Territory B collects about \\$815,382.06 over the eight years, exactly the figure claimed, so the statement is true.`,
       `**C) Territory A's 8-year total royalties exceed Territory B's 8-year total.**  (false)
 
-Comparing the two totals directly, $\\$791,797.43 < \\$815,382.06$: Territory B's higher starting royalty outweighs Territory A's faster growth rate over this 8-year window. Territory A's total falls short of Territory B's, not the other way around.`,
+Both totals must be computed before they can be ranked. Territory A starts at $a = 80{,}000$ dollars with $k = 1.06$ over $n = 8$ years:
+
+$$s_{A,8} = 80{,}000 \\times \\frac{(1.06)^{8}-1}{0.06}$$
+
+$$(1.06)^{8} = 1.593848$$
+
+$$s_{A,8} = 80{,}000 \\times 9.897468 = 791{,}797.43$$
+
+Territory B starts at $a = 95{,}000$ dollars with $k = 1.02$ over the same eight years:
+
+$$s_{B,8} = 95{,}000 \\times \\frac{(1.02)^{8}-1}{0.02}$$
+
+$$(1.02)^{8} = 1.171659$$
+
+$$s_{B,8} = 95{,}000 \\times 8.582969 = 815{,}382.06$$
+
+Comparing the two totals:
+
+$$791{,}797.43 < 815{,}382.06$$
+
+Territory B's larger opening royalty outweighs Territory A's faster growth across a window this short, leaving Territory A behind by \\$23,584.63. The claim has Territory A ahead, so the statement is false.`,
       `**D) In year 8 alone, Territory A's royalty payment of approximately \\$120,290.42 exceeds Territory B's year-8 payment of approximately \\$109,125.14.**  (true)
 
-Territory A's year-8 payment is $80,000 \\times 1.06^{7} \\approx 80,000 \\times 1.503630 \\approx \\$120,290.42$, while Territory B's year-8 payment is $95,000 \\times 1.02^{7} \\approx 95,000 \\times 1.148686 \\approx \\$109,125.14$. By year 8, repeated 6% compounding has pushed Territory A's individual payment above Territory B's, even though Territory A's running 8-year total still lags behind - a genuine subtlety in which the faster-growing stream overtakes the slower one term-by-term before it overtakes it in cumulative total.
+A single year's royalty is one term of the series, not a running total, so it uses the term formula rather than the sum formula:
 
-Year 8 is $a k^{7}$:
+$$a_t = a\\,k^{t-1}$$
 
-$$80,000 \\times (1.06)^{7} \\approx 80,000 \\times 1.503630 \\approx \\$120,290.42$$
+Year 1 is the opening royalty with no growth applied, so year 8 carries the exponent
 
-$$95,000 \\times (1.02)^{7} \\approx 95,000 \\times 1.148686 \\approx \\$109,125.14$$
+$$t - 1 = 8 - 1 = 7$$
 
-$$120,290.42 > 109,125.14$$ even while A's 8-year sum still lags B's.`,
+For Territory A, with $a = 80{,}000$ dollars and $k = 1.06$:
+
+$$a_{A,8} = 80{,}000 \\times (1.06)^{7}$$
+
+$$(1.06)^{7} = 1.503630$$
+
+$$a_{A,8} = 80{,}000 \\times 1.503630 = 120{,}290.42$$
+
+For Territory B, with $a = 95{,}000$ dollars and $k = 1.02$:
+
+$$a_{B,8} = 95{,}000 \\times (1.02)^{7}$$
+
+$$(1.02)^{7} = 1.148686$$
+
+$$a_{B,8} = 95{,}000 \\times 1.148686 = 109{,}125.14$$
+
+Comparing the two year-8 payments:
+
+$$120{,}290.42 > 109{,}125.14$$
+
+Territory A's payment leads by
+
+$$120{,}290.42 - 109{,}125.14 = 11{,}165.28$$
+
+dollars in that year. Seven rounds of $6\\%$ compounding have lifted A's single payment past B's, even though A's eight-year running total of \\$791,797.43 is still behind B's \\$815,382.06. A faster-growing stream overtakes a slower one payment by payment before it catches up on the cumulative figure, and both dollar amounts in the claim match the calculation, so the statement is true.`,
       `**E) Territory B's 8-year total exceeds Territory A's 8-year total by more than \\$30,000.**  (false)
 
-The actual gap is $\\$815,382.06 - \\$791,797.43 = \\$23,584.63$, which is below $\\$30,000$, not above it.`,
+The gap between the two totals has to be measured against the \\$30,000 threshold. Territory A, with $a = 80{,}000$ dollars, $k = 1.06$, and $n = 8$, totals
+
+$$s_{A,8} = 80{,}000 \\times \\frac{(1.06)^{8}-1}{0.06} = 80{,}000 \\times 9.897468 = 791{,}797.43$$
+
+Territory B, with $a = 95{,}000$ dollars, $k = 1.02$, and $n = 8$, totals
+
+$$s_{B,8} = 95{,}000 \\times \\frac{(1.02)^{8}-1}{0.02} = 95{,}000 \\times 8.582969 = 815{,}382.06$$
+
+Subtracting to find B's lead:
+
+$$815{,}382.06 - 791{,}797.43 = 23{,}584.63$$
+
+Comparing that lead with the threshold:
+
+$$23{,}584.63 < 30{,}000$$
+
+Territory B is ahead, but by about \\$6,415 less than the claim requires, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 76,
@@ -5807,19 +12127,89 @@ Term in year t: $a k^{t-1}$
     tactical_explanations: [
       `**A) With p = 1.5, the marginal benefit of the 4th campaign batch is approximately \\$650.00.**  (false)
 
-Since $4^{1.5} = 4 \\times \\sqrt{4} = 8$, the 4th-batch benefit is $a_4 = 5,000/8 = \\$625.00$, not $\\$650.00$ as stated.`,
+The marginal benefit of the $n$-th batch is given directly by the model
+
+$$a_n = \\frac{5{,}000}{n^{p}}$$
+
+so the fourth batch at $p = 1.5$ needs $n = 4$ and the exponent $1.5$:
+
+$$a_4 = \\frac{5{,}000}{4^{1.5}}$$
+
+A power of $1.5$ is a cube of the square root, or equivalently the number times its own square root:
+
+$$4^{1.5} = 4 \\times \\sqrt{4} = 4 \\times 2 = 8$$
+
+Dividing:
+
+$$a_4 = \\frac{5{,}000}{8}$$
+
+$$a_4 = 625.00$$
+
+The fourth batch is worth \\$625.00. The claim names \\$650.00, which is \\$25.00 too high, so the statement is false.`,
       `**B) With p = 1.5, the infinite series converges to a finite total value.**  (true)
 
-By the stated rule, $\\sum 1/n^{p}$ converges exactly when $p > 1$. Here $p = 1.5 > 1$, so $\\sum 5,000/n^{1.5}$ does converge to a finite total, matching the statement.`,
+Whether the total marginal benefit is finite is settled by the p-series rule quoted in the setup:
+
+$$\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}} \\text{ converges exactly when } p > 1$$
+
+The constant \\$5,000 in the numerator does not affect convergence, since it factors straight out of the sum:
+
+$$\\sum_{n=1}^{\\infty} \\frac{5{,}000}{n^{p}} = 5{,}000 \\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}$$
+
+The exponent under consideration is $p = 1.5$, and comparing it with the cutoff:
+
+$$1.5 > 1$$
+
+The condition holds, so the underlying p-series converges and multiplying it by \\$5,000 leaves a finite total. The claim says the series converges to a finite total value, so the statement is true.`,
       `**C) If instead p = 1, the series would still converge, just to a larger total than the p = 1.5 case.**  (false)
 
-At $p = 1$ this is the harmonic series $\\sum 5,000/n$, and since $p = 1$ is not greater than $1$, the rule says it diverges rather than converging to any total at all - larger or otherwise.`,
+The same p-series rule decides the case:
+
+$$\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}} \\text{ converges exactly when } p > 1$$
+
+Setting $p = 1$ turns the model into
+
+$$a_n = \\frac{5{,}000}{n^{1}} = \\frac{5{,}000}{n}$$
+
+which is \\$5,000 times the harmonic series. Testing the exponent against the cutoff:
+
+$$1 > 1 \\text{ is false}$$
+
+Since $p = 1$ does not clear the threshold, the harmonic series diverges and so does \\$5,000 times it. Its partial sums grow without any ceiling, so there is no total at all to compare against the $p = 1.5$ case. The claim asserts convergence to a larger total, but no total exists, so the statement is false.`,
       `**D) $a_{100} = \\$5.00$, and this alone is enough to guarantee that the series $\\sum a_n$ converges.**  (false)
 
-The term itself is correct: $a_{100} = 5,000/100^{1.5} = 5,000/1,000 = \\$5.00$. But $a_n \\to 0$ is only necessary for convergence, not sufficient - the harmonic case in part (c) has terms shrinking to $0$ and still diverges, so this observation alone cannot guarantee convergence.`,
+The arithmetic in the first half of the claim checks out. Using the model with $p = 1.5$ and $n = 100$:
+
+$$a_{100} = \\frac{5{,}000}{100^{1.5}}$$
+
+$$100^{1.5} = 100 \\times \\sqrt{100} = 100 \\times 10 = 1{,}000$$
+
+$$a_{100} = \\frac{5{,}000}{1{,}000} = 5.00$$
+
+So $a_{100}$ really is \\$5.00. The conclusion drawn from it does not follow. Terms shrinking toward zero is a requirement for convergence, not a guarantee of it:
+
+$$\\sum a_n \\text{ converges} \\implies a_n \\to 0$$
+
+but the reverse implication fails. The harmonic case makes that concrete: at $p = 1$ the terms $5{,}000/n$ also fall toward zero, and $a_{100} = 5{,}000/100 = 50$ is a small figure too, yet the rule $p > 1$ is not met and that series diverges. One small term therefore proves nothing on its own, so the statement is false.`,
       `**E) With p = 0.5, the series diverges, even though the individual terms still tend to 0 as n → ∞.**  (true)
 
-Since $p = 0.5$ is not greater than $1$, the rule says $\\sum 5,000/n^{0.5}$ diverges, even though the individual terms $5,000/\\sqrt{n}$ do shrink toward $0$ - shrinking terms alone never guarantee convergence.`,
+The p-series rule fixes the outcome:
+
+$$\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}} \\text{ converges exactly when } p > 1$$
+
+With $p = 0.5$ the model becomes
+
+$$a_n = \\frac{5{,}000}{n^{0.5}} = \\frac{5{,}000}{\\sqrt{n}}$$
+
+and testing the exponent against the cutoff:
+
+$$0.5 < 1$$
+
+The condition for convergence fails, so the series diverges and its partial sums grow without bound. The individual terms still fade, as a few values show:
+
+$$a_{100} = \\frac{5{,}000}{10} = 500, \\qquad a_{10{,}000} = \\frac{5{,}000}{100} = 50$$
+
+Both halves of the claim therefore hold at once: the terms tend to zero and the series still diverges, because shrinking terms alone are never enough. The statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 77,
@@ -5867,45 +12257,145 @@ Necessary (not sufficient): convergence requires $\\lim_{n\\to\\infty} a_n = 0$
     tactical_explanations: [
       `**A) The cumulative 12-year revenue is approximately \\$1,902,375.45.**  (true)
 
-Summing a geometric series with $a = \\$150,000$, $k = 1.01$, and $n = 12$ years uses $s_{\\mathrm{rev},12} = a(k^{n}-1)/(k-1)$.
+Revenue rising by a fixed percentage each year is a finite geometric series, which sums to
 
-$$s_{\\mathrm{rev},12} = 150,000 \\times \\frac{(1.01)^{12}-1}{0.01} \\approx 150,000 \\times 12.68250 \\approx \\$1,902,375.45$$
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
 
-That matches the statement exactly.`,
+Revenue starts at $a = 150{,}000$ dollars and grows $1\\%$ a year, so $k = 1.01$, over $n = 12$ years:
+
+$$s_{\\mathrm{rev},12} = 150{,}000 \\times \\frac{(1.01)^{12}-1}{1.01-1}$$
+
+The twelfth power of the growth factor is
+
+$$(1.01)^{12} = 1.126825$$
+
+so the bracket becomes
+
+$$\\frac{1.126825-1}{0.01} = \\frac{0.126825}{0.01} = 12.682503$$
+
+and the twelve-year revenue total is
+
+$$s_{\\mathrm{rev},12} = 150{,}000 \\times 12.682503$$
+
+$$s_{\\mathrm{rev},12} = 1{,}902{,}375.45$$
+
+Cumulative revenue over twelve years is about \\$1,902,375.45, exactly the figure claimed, so the statement is true.`,
       `**B) The cumulative 12-year maintenance cost is approximately \\$1,703,043.55.**  (true)
 
-Summing a geometric series with $a = \\$120,000$, $k = 1.03$, and $n = 12$ years uses $s_{\\mathrm{cost},12} = a(k^{n}-1)/(k-1)$.
+Maintenance cost also rises by a fixed percentage each year, so the same finite geometric sum applies:
 
-$$s_{\\mathrm{cost},12} = 120,000 \\times \\frac{(1.03)^{12}-1}{0.03} \\approx 120,000 \\times 14.19203 \\approx \\$1,703,043.55$$
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
 
-That matches the statement exactly.`,
+Cost starts at $a = 120{,}000$ dollars and grows $3\\%$ a year, so $k = 1.03$, over $n = 12$ years:
+
+$$s_{\\mathrm{cost},12} = 120{,}000 \\times \\frac{(1.03)^{12}-1}{1.03-1}$$
+
+The twelfth power of the growth factor is
+
+$$(1.03)^{12} = 1.425761$$
+
+so the bracket becomes
+
+$$\\frac{1.425761-1}{0.03} = \\frac{0.425761}{0.03} = 14.192030$$
+
+and the twelve-year cost total is
+
+$$s_{\\mathrm{cost},12} = 120{,}000 \\times 14.192030$$
+
+$$s_{\\mathrm{cost},12} = 1{,}703{,}043.55$$
+
+Cumulative maintenance cost over twelve years is about \\$1,703,043.55, exactly the figure claimed, so the statement is true.`,
       `**C) The cumulative 12-year profit is approximately \\$199,331.90.**  (true)
 
-Subtracting the cumulative cost from the cumulative revenue gives the profit: $\\$1,902,375.45 - \\$1,703,043.55 = \\$199,331.90$, matching the statement exactly.`,
+Cumulative profit is the cumulative revenue total minus the cumulative cost total, so each series is summed separately first. Revenue, with $a = 150{,}000$ dollars and $k = 1.01$ over $n = 12$ years:
+
+$$s_{\\mathrm{rev},12} = 150{,}000 \\times \\frac{(1.01)^{12}-1}{0.01}$$
+
+$$(1.01)^{12} = 1.126825$$
+
+$$s_{\\mathrm{rev},12} = 150{,}000 \\times 12.682503 = 1{,}902{,}375.45$$
+
+Cost, with $a = 120{,}000$ dollars and $k = 1.03$ over the same twelve years:
+
+$$s_{\\mathrm{cost},12} = 120{,}000 \\times \\frac{(1.03)^{12}-1}{0.03}$$
+
+$$(1.03)^{12} = 1.425761$$
+
+$$s_{\\mathrm{cost},12} = 120{,}000 \\times 14.192030 = 1{,}703{,}043.55$$
+
+Subtracting:
+
+$$1{,}902{,}375.45 - 1{,}703{,}043.55 = 199{,}331.90$$
+
+Twelve-year cumulative profit is about \\$199,331.90, matching the claim, so the statement is true.`,
       `**D) In year 12 alone, revenue of approximately \\$167,350.25 still exceeds maintenance cost of approximately \\$166,108.06, leaving a net positive of about \\$1,242.19.**  (true)
 
-In year 12 alone, revenue is $150,000 \\times 1.01^{11} \\approx 150,000 \\times 1.115668 \\approx \\$167,350.25$, while maintenance cost is $120,000 \\times 1.03^{11} \\approx 120,000 \\times 1.384234 \\approx \\$166,108.06$. Subtracting gives a net of \\$167,350.25 - \\$166,108.06 ≈ \\$1,242.19 - revenue is still ahead, but only barely, showing how much the gap between the two streams has narrowed by this point.
+A single year's revenue or cost is one term of its series, so the term formula applies rather than the sum formula:
 
-Year 12 terms are $a k^{11}$:
+$$a_t = a\\,k^{t-1}$$
 
-$$150,000 \\times (1.01)^{11} \\approx 150,000 \\times 1.115668 \\approx \\$167,350.25$$
+Year 1 is the starting figure with no growth applied, so year 12 carries the exponent
 
-$$120,000 \\times (1.03)^{11} \\approx 120,000 \\times 1.384234 \\approx \\$166,108.06$$
+$$t - 1 = 12 - 1 = 11$$
 
-$$167,350.25 - 166,108.06 = \\$1,242.19$$`,
+Revenue in year 12, with $a = 150{,}000$ dollars and $k = 1.01$:
+
+$$a_{\\mathrm{rev},12} = 150{,}000 \\times (1.01)^{11}$$
+
+$$(1.01)^{11} = 1.115668$$
+
+$$a_{\\mathrm{rev},12} = 150{,}000 \\times 1.115668 = 167{,}350.25$$
+
+Maintenance cost in year 12, with $a = 120{,}000$ dollars and $k = 1.03$:
+
+$$a_{\\mathrm{cost},12} = 120{,}000 \\times (1.03)^{11}$$
+
+$$(1.03)^{11} = 1.384234$$
+
+$$a_{\\mathrm{cost},12} = 120{,}000 \\times 1.384234 = 166{,}108.06$$
+
+Comparing the two and taking the difference:
+
+$$167{,}350.25 > 166{,}108.06$$
+
+$$167{,}350.25 - 166{,}108.06 = 1{,}242.19$$
+
+Year 12 still ends in the black, but by only about \\$1,242.19 against revenue of over \\$167,000, so the faster-growing cost has almost closed a gap that began at \\$30,000 in year 1. All three figures in the claim match the calculation, so the statement is true.`,
       `**E) Extending the horizon to 20 years, cumulative profit falls below the 12-year cumulative profit.**  (true)
 
-Extending the same calculations to 20 years gives a cumulative revenue of about \\$3,302,850.60 and a cumulative cost of about \\$3,224,444.94, for a 20-year profit of roughly \\$78,405.66, smaller than the 12-year profit of \\$199,331.90. This happens because maintenance cost compounds at the faster 3% rate while revenue compounds at only 1%; over a longer horizon the faster-growing cost stream eats into more and more of each year's revenue, so even though annual revenue is still ahead of annual cost as late as year 12, the cumulative profit advantage built up in the earlier years gradually erodes as the cost curve catches up.
+Both horizons have to be evaluated, since the claim compares one cumulative profit against another. Over twelve years, revenue with $a = 150{,}000$ dollars and $k = 1.01$ totals
 
-At $n = 20$:
+$$s_{\\mathrm{rev},12} = 150{,}000 \\times \\frac{(1.01)^{12}-1}{0.01} = 150{,}000 \\times 12.682503 = 1{,}902{,}375.45$$
 
-$$(1.01)^{20} \\approx 1.220190, \\quad s_{\\mathrm{rev},20} = 150,000 \\times (1.220190-1)/0.01 \\approx \\$3,302,851$$
+and cost with $a = 120{,}000$ dollars and $k = 1.03$ totals
 
-$$(1.03)^{20} \\approx 1.806111, \\quad s_{\\mathrm{cost},20} = 120,000 \\times (1.806111-1)/0.03 \\approx \\$3,224,445$$
+$$s_{\\mathrm{cost},12} = 120{,}000 \\times \\frac{(1.03)^{12}-1}{0.03} = 120{,}000 \\times 14.192030 = 1{,}703{,}043.55$$
 
-$$3,302,851 - 3,224,445 \\approx \\$78,406$$
+which leaves a twelve-year profit of
 
-and $78,406 < 199,332$.`,
+$$1{,}902{,}375.45 - 1{,}703{,}043.55 = 199{,}331.90$$
+
+Extending to twenty years, the revenue series gives
+
+$$(1.01)^{20} = 1.220190$$
+
+$$s_{\\mathrm{rev},20} = 150{,}000 \\times \\frac{0.220190}{0.01} = 150{,}000 \\times 22.019004 = 3{,}302{,}850.60$$
+
+and the cost series gives
+
+$$(1.03)^{20} = 1.806111$$
+
+$$s_{\\mathrm{cost},20} = 120{,}000 \\times \\frac{0.806111}{0.03} = 120{,}000 \\times 26.870374 = 3{,}224{,}444.94$$
+
+so the twenty-year profit is
+
+$$3{,}302{,}850.60 - 3{,}224{,}444.94 = 78{,}405.66$$
+
+Comparing the two cumulative profits:
+
+$$78{,}405.66 < 199{,}331.90$$
+
+The longer horizon leaves about \\$120,926.24 less profit than the shorter one. Cost compounds at $3\\%$ while revenue compounds at only $1\\%$, so from year 13 onward each additional year adds more cost than revenue and eats into the surplus built up earlier. Cumulative profit therefore falls as the horizon lengthens, exactly as the claim says, so the statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 78,
@@ -5949,35 +12439,133 @@ $s_n = a(k^{n}-1)/(k-1)$; cumulative profit $= s_{\\mathrm{rev}} - s_{\\mathrm{c
     tactical_explanations: [
       `**A) Under the recession scenario, the infinite cumulative cash flow converges to \\$40,000,000.00.**  (true)
 
-Since the ratio in the recession scenario is 0.94, and |0.94| is below 1, letting the shrinking cash flows continue forever produces a finite total of a/(1-k) = 2,400,000/(1-0.94) = 2,400,000/0.06 = \\$40,000,000.00.
+Cash flow that shrinks by a fixed percentage every year forever is an infinite geometric series, which has a finite total when the size of the quotient is below 1:
 
-$$s_{\\infty} = \\frac{2,400,000}{0.06} = \\$40,000,000$$`,
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
+
+A $6\\%$ annual contraction leaves $94\\%$ of the previous year's cash flow, so
+
+$$k = 1 - 0.06 = 0.94$$
+
+and the test is satisfied:
+
+$$|0.94| < 1$$
+
+Substituting the current free cash flow $a = 2{,}400{,}000$ dollars:
+
+$$s_{\\infty} = \\frac{2{,}400{,}000}{1-0.94}$$
+
+$$s_{\\infty} = \\frac{2{,}400{,}000}{0.06}$$
+
+$$s_{\\infty} = 40{,}000{,}000$$
+
+Cumulative cash flow under the recession path converges to \\$40,000,000.00, exactly the figure claimed, so the statement is true.`,
       `**B) Under the same recession scenario, the cumulative cash flow over just the first 15 years is approximately \\$22,000,000.00.**  (false)
 
-Summing the first 15 years with $a = \\$2,400,000$ and $k = 0.94$ uses $s_{15} = a(1-k^{15})/(1-k)$.
+The first fifteen years of the recession path form a finite geometric series, which sums to
 
-$$s_{15} = 2,400,000 \\times \\frac{1-(0.94)^{15}}{0.06} \\approx 2,400,000 \\times 10.07847 \\approx \\$24,188,328.05$$
+$$s_n = a\\,\\frac{1-k^{n}}{1-k}$$
 
-That is not $\\$22,000,000.00$ as stated.`,
+Substituting the current cash flow $a = 2{,}400{,}000$ dollars, the quotient $k = 0.94$, and $n = 15$:
+
+$$s_{15} = 2{,}400{,}000 \\times \\frac{1-(0.94)^{15}}{1-0.94}$$
+
+The fifteenth power of the quotient is
+
+$$(0.94)^{15} = 0.395292$$
+
+so the numerator of the bracket is
+
+$$1 - 0.395292 = 0.604708$$
+
+and dividing by the denominator gives
+
+$$\\frac{0.604708}{0.06} = 10.078470$$
+
+Multiplying by the current cash flow:
+
+$$s_{15} = 2{,}400{,}000 \\times 10.078470$$
+
+$$s_{15} = 24{,}188{,}328.05$$
+
+Fifteen years produce about \\$24,188,328.05. The claim names \\$22,000,000.00, understating the total by roughly \\$2,188,328, so the statement is false.`,
       `**C) The 15-year recession total represents approximately 75% of the full infinite-horizon recession total.**  (false)
 
-Dividing the two already-known totals, $\\$24,188,328.05 / \\$40,000,000.00 \\approx 0.6047$, or about $60\\%$, not $75\\%$ as stated.`,
+The claim measures a fifteen-year partial total against the infinite total, so both are needed. The finite sum with $a = 2{,}400{,}000$ dollars, $k = 0.94$, and $n = 15$ is
+
+$$s_{15} = 2{,}400{,}000 \\times \\frac{1-(0.94)^{15}}{0.06}$$
+
+$$(0.94)^{15} = 0.395292$$
+
+$$s_{15} = 2{,}400{,}000 \\times 10.078470 = 24{,}188{,}328.05$$
+
+The infinite total converges because $|0.94| < 1$:
+
+$$s_{\\infty} = \\frac{2{,}400{,}000}{1-0.94} = \\frac{2{,}400{,}000}{0.06} = 40{,}000{,}000$$
+
+Dividing one by the other gives the share:
+
+$$\\frac{24{,}188{,}328.05}{40{,}000{,}000} = 0.60471$$
+
+That is about $60.47\\%$, not the $75\\%$ in the claim, a gap of nearly fifteen percentage points, so the statement is false.`,
       `**D) Under the recovery scenario, the cumulative cash flow over the 7-year period, approximately \\$20,145,210.36, exceeds the full infinite-horizon recession total of \\$40,000,000.00.**  (false)
 
-Summing the 7-year recovery scenario gives $s_7 = 2,400,000 \\times (1.06^{7}-1)/0.06$. Since 1.06 to the 7th power is about 1.503630, this becomes 2,400,000×8.393838 ≈ \\$20,145,210.36, well below the \\$40,000,000.00 infinite recession total, not above it.
+The recovery path runs for a fixed seven years, so it is a finite geometric series with $a = 2{,}400{,}000$ dollars, $k = 1.06$, and $n = 7$:
 
-$$s_7 = 2,400,000 \\times \\frac{(1.06)^{7}-1}{0.06}$$
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
 
-$$(1.06)^{7} \\approx 1.503630, \\quad s_7 \\approx 2,400,000 \\times 8.39384 \\approx \\$20,145,210$$
+$$s_7 = 2{,}400{,}000 \\times \\frac{(1.06)^{7}-1}{1.06-1}$$
 
-$20,145,210 < 40,000,000$.`,
+The seventh power of the growth factor is
+
+$$(1.06)^{7} = 1.503630$$
+
+so the bracket becomes
+
+$$\\frac{1.503630-1}{0.06} = \\frac{0.503630}{0.06} = 8.393838$$
+
+and the seven-year total is
+
+$$s_7 = 2{,}400{,}000 \\times 8.393838 = 20{,}145{,}210.36$$
+
+which matches the dollar figure quoted in the claim. The recession path instead runs forever and converges, since $|0.94| < 1$:
+
+$$s_{\\infty} = \\frac{2{,}400{,}000}{1-0.94} = 40{,}000{,}000$$
+
+Comparing the two:
+
+$$20{,}145{,}210.36 < 40{,}000{,}000$$
+
+Seven years of growing cash flow deliver only about half of what an endless stream of shrinking cash flow accumulates, so the recovery total does not exceed the recession total and the statement is false.`,
       `**E) In year 7 of the recovery scenario alone, cash flow is approximately \\$2,900,000.00.**  (false)
 
-The 7th year of the recovery scenario alone is $2,400,000 \\times 1.06^{6} \\approx 2,400,000 \\times 1.418519 \\approx \\$3,404,445.87$, not \\$2,900,000.00.
+A single year's cash flow is one term of the recovery series, so the term formula applies:
 
-Year 7 is $a k^{6}$:
+$$a_t = a\\,k^{t-1}$$
 
-$$(1.06)^{6} \\approx 1.418519, \\quad 2,400,000 \\times 1.418519 \\approx \\$3,404,446$$`,
+Year 1 is the current \\$2,400,000 with no growth applied, so year 7 carries the exponent
+
+$$t - 1 = 7 - 1 = 6$$
+
+Substituting $a = 2{,}400{,}000$ dollars and $k = 1.06$:
+
+$$a_7 = 2{,}400{,}000 \\times (1.06)^{6}$$
+
+The sixth power of the growth factor is
+
+$$(1.06)^{6} = 1.418519$$
+
+so the year-7 cash flow is
+
+$$a_7 = 2{,}400{,}000 \\times 1.418519$$
+
+$$a_7 = 3{,}404{,}445.87$$
+
+The claim names \\$2,900,000.00, which falls short of the correct figure by
+
+$$3{,}404{,}445.87 - 2{,}900{,}000.00 = 504{,}445.87$$
+
+so the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 79,
@@ -6029,33 +12617,115 @@ Term in year t: $a k^{t-1}$
     tactical_explanations: [
       `**A) Tranche 1 totals exactly \\$225,000.00.**  (true)
 
-When every one of the $9$ annual coupons is identical at $\\$25,000$, there is no ratio to apply: the total is just $s_9 = 25,000 \\times 9 = \\$225,000.00$, matching the statement exactly.`,
+Tranche 1 pays the same coupon every year, so consecutive payments have ratio
+
+$$k = \\frac{25{,}000}{25{,}000} = 1$$
+
+which is the degenerate case of a geometric series. With every term equal to the first, the total is simply the coupon multiplied by the number of payments:
+
+$$s_n = a\\,n$$
+
+Substituting $a = 25{,}000$ dollars and $n = 9$ years:
+
+$$s_9 = 25{,}000 \\times 9$$
+
+$$s_9 = 225{,}000$$
+
+No ratio calculation is needed, and the general formula could not be used anyway because its denominator $k - 1$ would be zero here. Tranche 1 totals exactly \\$225,000.00, matching the claim, so the statement is true.`,
       `**B) Tranche 2 totals approximately \\$215,603.80.**  (true)
 
-Summing a geometric series with $a = \\$18,000$, $k = 1.07$, and $n = 9$ years uses $s = a(k^{n}-1)/(k-1)$.
+Tranche 2 pays a coupon that grows by a fixed percentage each year, so it is a finite geometric series:
 
-$$s_9 = 18,000 \\times \\frac{(1.07)^{9}-1}{0.07} \\approx 18,000 \\times 11.97799 \\approx \\$215,603.80$$
+$$s_n = a\\,\\frac{k^{n}-1}{k-1}$$
 
-That matches the statement exactly.`,
+The opening coupon is $a = 18{,}000$ dollars, the coupon rises $7\\%$ a year so $k = 1.07$, and the tranche runs $n = 9$ years:
+
+$$s_9 = 18{,}000 \\times \\frac{(1.07)^{9}-1}{1.07-1}$$
+
+The ninth power of the growth factor is
+
+$$(1.07)^{9} = 1.838459$$
+
+so the bracket becomes
+
+$$\\frac{1.838459-1}{0.07} = \\frac{0.838459}{0.07} = 11.977989$$
+
+and the nine-year total is
+
+$$s_9 = 18{,}000 \\times 11.977989$$
+
+$$s_9 = 215{,}603.80$$
+
+Tranche 2 totals about \\$215,603.80, matching the claim, so the statement is true.`,
       `**C) Tranche 3, valued as an infinite declining perpetuity, totals \\$375,000.00.**  (true)
 
-Since the ratio 0.92 has absolute value below 1, letting this royalty stream continue forever gives a finite total of 30,000/(1-0.92) = 30,000/0.08 = \\$375,000.00. Comparing all three tranches - \\$225,000.00, \\$215,603.80, and \\$375,000.00 - the perpetual royalty stream is indeed the largest of the three, even though it starts with the smallest single payment; over an unlimited horizon, a slowly-declining stream can accumulate more value than either finite stream.
+Tranche 3 is a royalty that declines by a fixed percentage forever, which is an infinite geometric series. Such a series has a finite total when the size of the quotient is below 1:
 
-$$s_{\\infty} = 30,000/(1-0.92) = 30,000/0.08 = \\$375,000$$
+$$s_{\\infty} = \\frac{a}{1-k}, \\qquad |k| < 1$$
 
-Compare $225,000,215,604$, and $375,000$: Tranche 3 is the largest.`,
+An $8\\%$ annual decline leaves $92\\%$ of the previous royalty, so
+
+$$k = 1 - 0.08 = 0.92$$
+
+and the test is met:
+
+$$|0.92| < 1$$
+
+Substituting the opening royalty $a = 30{,}000$ dollars:
+
+$$s_{\\infty} = \\frac{30{,}000}{1-0.92}$$
+
+$$s_{\\infty} = \\frac{30{,}000}{0.08}$$
+
+$$s_{\\infty} = 375{,}000$$
+
+Tranche 3 is worth \\$375,000.00 in nominal undiscounted dollars, matching the claim. It is also the largest of the three streams even though its opening payment of \\$30,000 is modest, because an unlimited horizon lets a slowly declining royalty accumulate past both nine-year tranches. The statement is true.`,
       `**D) Tranche 3 must be excluded from any combined valuation, meaning the portfolio's correct combined total is just \\$440,603.80.**  (false)
 
-There is nothing that prevents a convergent infinite series from being added to finite sums - once a series has a specific, finite total, that total behaves just like any other fixed dollar amount and can be combined with other fixed amounts through ordinary addition. Excluding Tranche 3 and reporting only \\$225,000.00 + \\$215,603.80 = \\$440,603.80 leaves out \\$375,000.00 of value that is just as real and just as calculable as the other two tranches; the correct combined total, including all three, is \\$225,000.00 + \\$215,603.80 + \\$375,000.00 = \\$815,603.80.
+A convergent infinite series produces an ordinary finite number, and finite numbers add like any other dollar amounts, so there is no rule that forces Tranche 3 out of the portfolio total. Its value is well defined because its quotient satisfies $|0.92| < 1$:
 
-A convergent infinite total is an ordinary finite dollar amount:
+$$s_{\\infty} = \\frac{30{,}000}{1-0.92} = \\frac{30{,}000}{0.08} = 375{,}000$$
 
-$$225,000 + 215,603.80 + 375,000 = \\$815,603.80$$
+The other two tranches are finite by construction. Tranche 1 pays an unchanging coupon, the $k = 1$ case, so
 
-Excluding Tranche 3 would drop $\\$375,000$ without justification.`,
+$$s_9 = 25{,}000 \\times 9 = 225{,}000$$
+
+and Tranche 2 grows $7\\%$ a year for nine years, so
+
+$$(1.07)^{9} = 1.838459$$
+
+$$s_9 = 18{,}000 \\times \\frac{0.838459}{0.07} = 18{,}000 \\times 11.977989 = 215{,}603.80$$
+
+Adding all three nominal values:
+
+$$225{,}000.00 + 215{,}603.80 + 375{,}000.00 = 815{,}603.80$$
+
+The figure in the claim comes from adding only the first two:
+
+$$225{,}000.00 + 215{,}603.80 = 440{,}603.80$$
+
+which discards
+
+$$815{,}603.80 - 440{,}603.80 = 375{,}000.00$$
+
+of perfectly calculable value. Being infinite in horizon is not the same as being infinite in amount, and this royalty converges to a definite figure, so excluding it is unjustified and the portfolio total of \\$440,603.80 is wrong. The statement is false.`,
       `**E) $f_{100} = \\$10.00$, and this alone is sufficient to guarantee that the fee stream converges to a finite total.**  (false)
 
-The term itself is correct: $f_{100} = 1,000/100 = \\$10.00$. But $f_n = 1,000/n$ is just $1,000$ times the harmonic series, which has $p = 1$ and therefore diverges even though $f_n \\to 0$ - so shrinking terms alone cannot guarantee convergence here.`,
+The value quoted in the first half of the claim is correct. Using the fee model $f_n = 1{,}000/n$ with $n = 100$:
+
+$$f_{100} = \\frac{1{,}000}{100}$$
+
+$$f_{100} = 10.00$$
+
+The conclusion drawn from it does not hold. This fee stream is \\$1,000 times the harmonic series:
+
+$$\\sum_{n=1}^{\\infty} \\frac{1{,}000}{n} = 1{,}000 \\sum_{n=1}^{\\infty} \\frac{1}{n}$$
+
+and the p-series rule says $\\sum 1/n^{p}$ converges only when $p > 1$. Here the exponent is
+
+$$p = 1$$
+
+which fails the test, so the sum grows without bound even though the terms fade toward zero. Shrinking terms are necessary for convergence but never sufficient on their own, and a single small term such as $f_{100}$ says nothing about the total. The statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 80,
@@ -6103,45 +12773,129 @@ $\\lim a_n = 0$ is necessary but not sufficient for convergence
     tactical_explanations: [
       `**A) The amount she must deposit today is approximately \\$4,081.49.**  (true)
 
-Plugging $A = 5,000$, $r = 0.07$, and $n = 3$ into $x = A/(1+r)^{n}$ gives $x = 5,000/(1.07)^{3} = 5,000/1.225043 = \\$4,081.49$, matching the statement exactly.`,
+A single deposit made today grows by the interest factor once per year, so the deposit $x$ and the target amount $A$ are linked by
+
+$$x(1+r)^{n} = A$$
+
+Solving for the deposit gives the present-value rule
+
+$$x = \\frac{A}{(1+r)^{n}}$$
+
+The oven costs $A = 5{,}000$ dollars in $n = 3$ years and the account earns $r = 0.07$ a year:
+
+$$x = \\frac{5{,}000}{(1.07)^{3}}$$
+
+The third power of the interest factor is
+
+$$(1.07)^{3} = 1.225043$$
+
+so the required deposit is
+
+$$x = \\frac{5{,}000}{1.225043}$$
+
+$$x = 4{,}081.49$$
+
+Depositing about \\$4,081.49 today reaches \\$5,000 in three years, exactly the figure claimed, so the statement is true.`,
       `**B) If the interest rate were instead 5%, the required deposit today would be LOWER than \\$4,081.49.**  (false)
 
-A lower discount rate means each future dollar is discounted less severely, so LESS growth is assumed and MORE must be set aside today: at 5% the required deposit is \\$4,319.19, which is higher than the 7% figure of \\$4,081.49, not lower.
+The deposit needed today comes from the present-value rule
 
-Same formula, lower rate:
+$$x = \\frac{A}{(1+r)^{n}}$$
 
-$$x = 5,000 / (1.05)^{3}$$
+and the rate enters only through the denominator. A smaller rate makes $(1+r)^{n}$ smaller, and dividing the same target by a smaller number gives a larger answer, so cutting the rate must raise the deposit. Both cases confirm it. At $r = 0.07$, with $A = 5{,}000$ dollars and $n = 3$:
+
+$$(1.07)^{3} = 1.225043$$
+
+$$x = \\frac{5{,}000}{1.225043} = 4{,}081.49$$
+
+At $r = 0.05$ over the same three years:
+
+$$x' = \\frac{5{,}000}{(1.05)^{3}}$$
 
 $$(1.05)^{3} = 1.157625$$
 
-$$5,000 / 1.157625 = \\$4,319.19$$
+$$x' = \\frac{5{,}000}{1.157625}$$
 
-\\$4,319.19 sits above \\$4,081.49, so the claim that 5% would lower the deposit is backwards.`,
+$$x' = 4{,}319.19$$
+
+Comparing the two deposits:
+
+$$4{,}319.19 > 4{,}081.49$$
+
+A weaker rate does less of the work, so Ms. Delgado would have to set aside \\$237.70 more today, not less. The claim says the deposit would be lower, which reverses the true direction, so the statement is false.`,
       `**C) The interest that will be earned over the 3 years is approximately \\$928.51.**  (false)
 
-The interest earned is simply the future target minus today's deposit: 5,000.00 - 4,081.49 = \\$918.51, not \\$928.51 as stated.`,
+The interest earned is whatever the account adds on top of the deposit, so it is the target amount minus the amount put in today. The deposit follows from the present-value rule with $A = 5{,}000$ dollars, $r = 0.07$, and $n = 3$:
+
+$$x = \\frac{A}{(1+r)^{n}} = \\frac{5{,}000}{(1.07)^{3}}$$
+
+$$(1.07)^{3} = 1.225043$$
+
+$$x = \\frac{5{,}000}{1.225043} = 4{,}081.49$$
+
+Subtracting the deposit from the target gives the interest:
+
+$$5{,}000.00 - 4{,}081.49$$
+
+$$= 918.51$$
+
+The account earns about \\$918.51 over the three years. The claim names \\$928.51, which is \\$10.00 too high, so the statement is false.`,
       `**D) If the target amount were doubled to \\$10,000, the required deposit today would also exactly double, to approximately \\$8,162.98.**  (true)
 
-Because $x = A/(1+r)^{n}$ is directly proportional to A for fixed r and n, doubling the target amount exactly doubles the required deposit, from \\$4,081.49 to \\$8,162.98.
+The present-value rule
 
-Fix r and n, double A:
+$$x = \\frac{A}{(1+r)^{n}}$$
 
-$$x' = 10,000 / (1.07)^{3} = 10,000 / 1.225043 = \\$8,162.98$$
+puts the target amount $A$ in the numerator on its own, so with the rate and the horizon held fixed the deposit is directly proportional to the target: doubling $A$ doubles $x$. Working the doubled case out from scratch confirms it. At the original target,
 
-\\$8,162.98 is exactly 2 × \\$4,081.49.`,
+$$(1.07)^{3} = 1.225043$$
+
+$$x = \\frac{5{,}000}{1.225043} = 4{,}081.49$$
+
+With the target raised to $A = 10{,}000$ dollars over the same three years at the same $7\\%$:
+
+$$x' = \\frac{10{,}000}{(1.07)^{3}}$$
+
+$$x' = \\frac{10{,}000}{1.225043}$$
+
+$$x' = 8{,}162.98$$
+
+Checking the proportionality directly:
+
+$$2 \\times 4{,}081.49 = 8{,}162.98$$
+
+The doubled target needs exactly twice the deposit, \\$8,162.98, matching the claim, so the statement is true.`,
       `**E) If the horizon were extended to 6 years at the same 7% rate, the required deposit today would be exactly half of \\$4,081.49.**  (false)
 
-The discounting relationship is exponential in time, not linear, so doubling the horizon does not halve the deposit: the correct 6-year deposit is $5,000/(1.07)^{6} = \\$3,331.71$, which is well above the naively halved figure of \\$2,040.75.
+Discounting compounds, so time enters the present-value rule through an exponent rather than a multiplier:
 
-Six years at 7%:
+$$x = \\frac{A}{(1+r)^{n}}$$
 
-$$x_6 = 5,000 / (1.07)^{6}$$
+Doubling $n$ squares the denominator instead of doubling it, which means the deposit is divided by $(1.07)^{3}$ a second time rather than cut in half. Both horizons show it. Over three years, with $A = 5{,}000$ dollars and $r = 0.07$:
 
-$$(1.07)^{6} \\approx 1.500730$$
+$$(1.07)^{3} = 1.225043$$
 
-$$5,000 / 1.500730 = \\$3,331.71$$
+$$x_3 = \\frac{5{,}000}{1.225043} = 4{,}081.49$$
 
-Half of \\$4,081.49 would be \\$2,040.75. \\$3,331.71 is larger, so doubling time does not halve the deposit.`,
+Over six years at the same rate:
+
+$$x_6 = \\frac{5{,}000}{(1.07)^{6}}$$
+
+$$(1.07)^{6} = 1.500730$$
+
+$$x_6 = \\frac{5{,}000}{1.500730}$$
+
+$$x_6 = 3{,}331.71$$
+
+Half of the three-year deposit would be
+
+$$\\frac{4{,}081.49}{2} = 2{,}040.75$$
+
+Comparing that with the true six-year figure:
+
+$$3{,}331.71 > 2{,}040.75$$
+
+The six-year deposit is about \\$1,290.96 above half, since the interest factor $1.225043$ is well short of the 2 that exact halving would require. The statement is false.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 81,
@@ -6182,53 +12936,137 @@ $x(1+r)^{n}=A$, so the required deposit is $x=A/(1+r)^{n}$.
     tactical_explanations: [
       `**A) The accumulated value after 5 years is approximately \\$8,698.47.**  (true)
 
-$F(5) = 6,500 \\times (1.06)^{5} = \\$8,698.47$, matching the statement exactly.
+A single deposit left to compound grows by the interest factor once per year, so its accumulated value is
 
-Insert P = 6,500, r = 0.06, n = 5:
+$$F = P(1+r)^{n}$$
 
-$$F(5) = 6,500 \\times (1.06)^{5}$$
+The designer deposits $P = 6{,}500$ dollars, the account earns $r = 0.06$ a year, and the horizon is $n = 5$ years:
 
-$$(1.06)^{5} \\approx 1.338226$$
+$$F(5) = 6{,}500 \\times (1.06)^{5}$$
 
-$$6,500 \\times 1.338226 = \\$8,698.47$$`,
+The fifth power of the interest factor is
+
+$$(1.06)^{5} = 1.338226$$
+
+so the accumulated value is
+
+$$F(5) = 6{,}500 \\times 1.338226$$
+
+$$F(5) = 8{,}698.47$$
+
+The account holds about \\$8,698.47 after five years, exactly the figure claimed, so the statement is true.`,
       `**B) The interest earned during the first 5 years is approximately \\$2,198.47.**  (true)
 
-The 5-year interest earned is 8,698.47 - 6,500.00 = \\$2,198.47, matching the statement exactly.`,
+Interest earned is the accumulated value minus the money originally put in, so the balance is needed first. A single deposit compounds as
+
+$$F = P(1+r)^{n}$$
+
+with $P = 6{,}500$ dollars, $r = 0.06$, and $n = 5$:
+
+$$F(5) = 6{,}500 \\times (1.06)^{5}$$
+
+$$(1.06)^{5} = 1.338226$$
+
+$$F(5) = 6{,}500 \\times 1.338226 = 8{,}698.47$$
+
+Subtracting the original deposit:
+
+$$8{,}698.47 - 6{,}500.00$$
+
+$$= 2{,}198.47$$
+
+The first five years earn about \\$2,198.47 in interest, matching the claim, so the statement is true.`,
       `**C) The accumulated value after 10 years is exactly double the 5-year value.**  (false)
 
-Because compounding is exponential, not linear, in time, $F(10) = 6,500 \\times (1.06)^{10} = \\$11,640.51$, which is well below the naively doubled figure of \\$17,396.94.
+Compound growth multiplies rather than adds, so the horizon sits in an exponent:
 
-Ten years is not twice five years under compounding:
+$$F = P(1+r)^{n}$$
 
-$$F(10) = 6,500 \\times (1.06)^{10}$$
+Doubling $n$ squares the growth factor instead of doubling it. The five-year balance, with $P = 6{,}500$ dollars and $r = 0.06$, is
 
-$$(1.06)^{10} \\approx 1.790847$$
+$$(1.06)^{5} = 1.338226$$
 
-$$6,500 \\times 1.790847 = \\$11,640.51$$
+$$F(5) = 6{,}500 \\times 1.338226 = 8{,}698.47$$
 
-Double the 5-year value would be \\$17,396.94, far above \\$11,640.51.`,
+The ten-year balance uses the tenth power of the same factor:
+
+$$F(10) = 6{,}500 \\times (1.06)^{10}$$
+
+$$(1.06)^{10} = 1.790848$$
+
+$$F(10) = 6{,}500 \\times 1.790848$$
+
+$$F(10) = 11{,}640.51$$
+
+Exact doubling would require
+
+$$2 \\times 8{,}698.47 = 17{,}396.94$$
+
+Comparing that with the true ten-year figure:
+
+$$11{,}640.51 < 17{,}396.94$$
+
+The ten-year balance falls \\$5,756.43 short of double, because the growth factor over ten years is $1.790848$ rather than the $2.676452$ that doubling the balance would demand. The statement is false.`,
       `**D) The interest earned during the SECOND 5-year period, approximately \\$2,942.04, is SMALLER than the interest earned during the FIRST 5-year period, approximately \\$2,198.47.**  (false)
 
-The interest earned in the second 5-year block (\\$2,942.04) actually EXCEEDS that of the first block (\\$2,198.47), not the reverse, because interest is earned on an ever-larger accumulated balance as time passes - the hallmark of compound growth.
+The interest earned in each five-year block is the change in the balance across that block, so both balances are needed. With $P = 6{,}500$ dollars and $r = 0.06$:
 
-Second-block interest is the 10-year stock minus the 5-year stock:
+$$F(5) = 6{,}500 \\times (1.06)^{5}$$
 
-$$11,640.51 - 8,698.47 = \\$2,942.04$$
+$$(1.06)^{5} = 1.338226$$
 
-Compare with the first block: \\$2,942.04 > \\$2,198.47, so the second period is larger, not smaller.`,
+$$F(5) = 6{,}500 \\times 1.338226 = 8{,}698.47$$
+
+$$F(10) = 6{,}500 \\times (1.06)^{10}$$
+
+$$(1.06)^{10} = 1.790848$$
+
+$$F(10) = 6{,}500 \\times 1.790848 = 11{,}640.51$$
+
+Interest in the first block is the balance after five years minus the original deposit:
+
+$$8{,}698.47 - 6{,}500.00 = 2{,}198.47$$
+
+Interest in the second block is the balance after ten years minus the balance after five:
+
+$$11{,}640.51 - 8{,}698.47 = 2{,}942.04$$
+
+Comparing the two blocks:
+
+$$2{,}942.04 > 2{,}198.47$$
+
+The second block earns \\$743.57 more than the first, because interest in years 6 through 10 accrues on a balance that already includes the first block's interest. The claim calls the second block smaller, which reverses the true order, so the statement is false.`,
       `**E) If the interest rate were instead 3%, the 5-year accumulated value would be exactly half of \\$8,698.47.**  (false)
 
-Halving the rate does not halve the future value, since $(1+r)^{n}$ is not linear in r: at 3%, F(5) = \\$7,535.28, which is considerably more than half of the 6%-rate value of \\$8,698.47.
+The rate enters the compounding rule inside a power, not as a plain multiplier:
 
-Halving r does not halve F:
+$$F = P(1+r)^{n}$$
 
-$$F_{3\\%}(5) = 6,500 \\times (1.03)^{5}$$
+so halving $r$ does not halve $F$. Only the growth on top of the deposit responds to the rate, and even that responds nonlinearly. At $r = 0.06$, with $P = 6{,}500$ dollars and $n = 5$:
 
-$$(1.03)^{5} \\approx 1.159274$$
+$$(1.06)^{5} = 1.338226$$
 
-$$6,500 \\times 1.159274 = \\$7,535.28$$
+$$F(5) = 6{,}500 \\times 1.338226 = 8{,}698.47$$
 
-Half of \\$8,698.47 is \\$4,349.24. \\$7,535.28 is well above that half.`,
+At $r = 0.03$ over the same five years:
+
+$$F_{3\\%}(5) = 6{,}500 \\times (1.03)^{5}$$
+
+$$(1.03)^{5} = 1.159274$$
+
+$$F_{3\\%}(5) = 6{,}500 \\times 1.159274$$
+
+$$F_{3\\%}(5) = 7{,}535.28$$
+
+Half of the original five-year value would be
+
+$$\\frac{8{,}698.47}{2} = 4{,}349.24$$
+
+Comparing the two:
+
+$$7{,}535.28 > 4{,}349.24$$
+
+The lower rate still returns the full \\$6,500 principal plus \\$1,035.28 of interest, so the balance stays far above half. The statement is false.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 82,
@@ -6269,41 +13107,139 @@ A present deposit accumulates according to $F=P(1+r)^{n}$.
     tactical_explanations: [
       `**A) The future value after 6 years is approximately \\$13,603.84.**  (true)
 
-Plugging $a = \\$2,000$, $r = 0.05$, and $n = 6$ into the ordinary-annuity formula $F_n = (a/r)[(1+r)^{n}-1]$ gives $F_6 = (2,000/0.05)[(1.05)^{6}-1] \\approx 40,000 \\times 0.340096 = \\$13,603.84$, matching the statement exactly.`,
+Equal deposits made at the end of each year form an ordinary annuity, whose accumulated value is
+
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
+
+The clinic deposits $a = 2{,}000$ dollars a year, the fund earns $r = 0.05$, and the horizon is $n = 6$ years:
+
+$$F_6 = \\frac{2{,}000}{0.05}\\bigl[(1.05)^{6}-1\\bigr]$$
+
+The leading fraction is
+
+$$\\frac{2{,}000}{0.05} = 40{,}000$$
+
+and the sixth power of the interest factor is
+
+$$(1.05)^{6} = 1.340096$$
+
+so the bracket becomes
+
+$$1.340096 - 1 = 0.340096$$
+
+Multiplying the two pieces:
+
+$$F_6 = 40{,}000 \\times 0.340096$$
+
+$$F_6 = 13{,}603.84$$
+
+The fund holds about \\$13,603.84 after six years, exactly the figure claimed, so the statement is true.`,
       `**B) The total interest earned over the 6 years is approximately \\$1,703.84.**  (false)
 
-Total deposits of \\$12,000.00 subtracted from the future value of \\$13,603.84 leaves \\$1,603.84 in interest, not \\$1,703.84 as stated.`,
+Interest earned is the accumulated value minus the money actually deposited, so both pieces are needed. The six deposits accumulate as an ordinary annuity:
+
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
+
+$$F_6 = 40{,}000 \\times \\bigl[(1.05)^{6}-1\\bigr] = 40{,}000 \\times 0.340096 = 13{,}603.84$$
+
+The deposits themselves total
+
+$$2{,}000 \\times 6 = 12{,}000$$
+
+dollars. Subtracting:
+
+$$13{,}603.84 - 12{,}000.00$$
+
+$$= 1{,}603.84$$
+
+The six years earn about \\$1,603.84 in interest. The claim names \\$1,703.84, which is exactly \\$100.00 too high, so the statement is false.`,
       `**C) The present-value equivalent of this future value is approximately \\$18,230.45.**  (false)
 
-This inverts the relationship $F_n = P_n(1+r)^{n}$: to go from the future value back to the present value one must DIVIDE by $(1+r)^{n}$, not multiply. The correctly computed present value is \\$10,151.40, not \\$18,230.45.
+Future value and present value are linked by the compounding factor
 
-Go from future value back to present value by dividing, not multiplying:
+$$F_n = P_n(1+r)^{n}$$
 
-$$P_6 = F_6 / (1.05)^{6} = 13,603.84 / 1.340096 = \\$10,151.40$$
+so moving from a future amount back to today means dividing by that factor, not multiplying by it:
 
-\\$10,151.40 is the present-value equivalent, not \\$18,230.45.`,
+$$P_n = \\frac{F_n}{(1+r)^{n}}$$
+
+The future value of the six deposits is
+
+$$F_6 = 40{,}000 \\times \\bigl[(1.05)^{6}-1\\bigr] = 40{,}000 \\times 0.340096 = 13{,}603.84$$
+
+Discounting it back six years at $5\\%$:
+
+$$P_6 = \\frac{13{,}603.84}{(1.05)^{6}}$$
+
+$$(1.05)^{6} = 1.340096$$
+
+$$P_6 = \\frac{13{,}603.84}{1.340096}$$
+
+$$P_6 = 10{,}151.40$$
+
+The present-value equivalent is about \\$10,151.40, which is smaller than the future value, as any discounted amount must be. The claim names \\$18,230.45, the figure that comes from multiplying by $1.340096$ instead of dividing:
+
+$$13{,}603.84 \\times 1.340096 = 18{,}230.45$$
+
+That inverts the relationship and pushes the answer the wrong way, so the statement is false.`,
       `**D) If the annual deposit were increased by 50%, to \\$3,000, the 6-year future value would also rise by exactly 50%, to approximately \\$21,405.76.**  (false)
 
-Because Fn is directly proportional to the periodic deposit a, increasing a by 50% (from \\$2,000 to \\$3,000) increases F6 by exactly 50%, from \\$13,603.84 to \\$20,405.76, not \\$21,405.76 as stated.
+In the ordinary-annuity formula
 
-F scales with a. Raise a from 2,000 to 3,000 (a 50% increase):
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
 
-$$F_6' = 13,603.84 \\times 1.5 = \\$20,405.76$$
+the deposit $a$ appears as a plain multiplier, so with the rate and horizon fixed the future value is directly proportional to the deposit. Raising the deposit by half therefore raises the future value by exactly half, which is the part of the claim that holds. Computing the original case:
 
-The statement's \\$21,405.76 is \\$1,000 too high. The 50% rise itself is correct; the dollar figure is not.`,
+$$F_6 = 40{,}000 \\times \\bigl[(1.05)^{6}-1\\bigr] = 40{,}000 \\times 0.340096 = 13{,}603.84$$
+
+Computing the raised case directly with $a = 3{,}000$ dollars:
+
+$$F_6' = \\frac{3{,}000}{0.05}\\bigl[(1.05)^{6}-1\\bigr]$$
+
+$$\\frac{3{,}000}{0.05} = 60{,}000$$
+
+$$F_6' = 60{,}000 \\times 0.340096$$
+
+$$F_6' = 20{,}405.76$$
+
+Checking the proportionality:
+
+$$1.5 \\times 13{,}603.84 = 20{,}405.76$$
+
+The correct raised value is \\$20,405.76. The claim names \\$21,405.76, which overstates it by exactly \\$1,000.00, so the dollar figure fails even though the $50\\%$ reasoning is sound, and the statement is false.`,
       `**E) If the number of annual deposits were doubled to 12 years, the future value would be LESS than double \\$13,603.84.**  (false)
 
-F12 = \\$31,834.24 is actually MORE than double the 6-year value of \\$13,603.84 (double would be \\$27,207.68), not less, since extending the deposit period lets earlier deposits keep compounding on top of the additional deposits, so the future value grows faster than linearly with the number of periods.
+The number of deposits sits inside a power in the ordinary-annuity formula, so doubling it does more than double the result:
 
-Twelve years at the same 2,000 and 5%:
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
 
-$$F_{12} = 40,000\\bigl[(1.05)^{12} - 1\\bigr]$$
+Each of the first six deposits keeps compounding for another six years while six new deposits are added underneath, so the growth outpaces the extra contributions. Both horizons make it concrete. Over six years, with $a = 2{,}000$ dollars and $r = 0.05$:
 
-$$(1.05)^{12} \\approx 1.795856,\\quad 1.795856 - 1 = 0.795856$$
+$$(1.05)^{6} = 1.340096$$
 
-$$40,000 \\times 0.795856 = \\$31,834.24$$
+$$F_6 = 40{,}000 \\times 0.340096 = 13{,}603.84$$
 
-Double F6 is \\$27,207.68. \\$31,834.24 exceeds that double, so the future value is more than double, not less.`,
+Over twelve years at the same deposit and rate:
+
+$$F_{12} = 40{,}000 \\times \\bigl[(1.05)^{12}-1\\bigr]$$
+
+$$(1.05)^{12} = 1.795856$$
+
+$$1.795856 - 1 = 0.795856$$
+
+$$F_{12} = 40{,}000 \\times 0.795856$$
+
+$$F_{12} = 31{,}834.24$$
+
+Exact doubling of the six-year value would be
+
+$$2 \\times 13{,}603.84 = 27{,}207.68$$
+
+Comparing the two:
+
+$$31{,}834.24 > 27{,}207.68$$
+
+Twelve years of deposits produce \\$4,626.56 more than double the six-year figure, so the future value is more than double, not less. The statement is false.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 83,
@@ -6344,39 +13280,137 @@ $F_n=(a/r)[(1+r)^{n}-1]$; $P_n=(a/r)[1-1/(1+r)^{n}]$; $F_n=P_n(1+r)^{n}$.
     tactical_explanations: [
       `**A) The future value after 10 years is approximately \\$50,702.97.**  (true)
 
-Plugging $a = \\$3,500$, $r = 0.08$, and $n = 10$ into $F_n = (a/r)[(1+r)^{n}-1]$ gives $F_{10} = (3,500/0.08)[(1.08)^{10}-1] \\approx 43,750 \\times 1.158925 = \\$50,702.97$, matching the statement exactly.`,
+Deposits made at the end of each year form an ordinary annuity, whose accumulated value is
+
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
+
+The firm deposits $a = 3{,}500$ dollars a year, the account earns $r = 0.08$, and the horizon is $n = 10$ years:
+
+$$F_{10} = \\frac{3{,}500}{0.08}\\bigl[(1.08)^{10}-1\\bigr]$$
+
+The leading fraction is
+
+$$\\frac{3{,}500}{0.08} = 43{,}750$$
+
+and the tenth power of the interest factor is
+
+$$(1.08)^{10} = 2.158925$$
+
+so the bracket becomes
+
+$$2.158925 - 1 = 1.158925$$
+
+Multiplying the two pieces:
+
+$$F_{10} = 43{,}750 \\times 1.158925$$
+
+$$F_{10} = 50{,}702.97$$
+
+The fleet fund holds about \\$50,702.97 after ten years, exactly the figure claimed, so the statement is true.`,
       `**B) The total interest earned over the 10 years is approximately \\$15,702.97.**  (true)
 
-Total deposits of \\$35,000.00 subtracted from \\$50,702.97 leaves \\$15,702.97 in interest, matching the statement exactly.`,
+Interest is whatever the account adds beyond the deposits themselves, so both amounts are needed. The ten deposits accumulate as an ordinary annuity:
+
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
+
+$$F_{10} = 43{,}750 \\times \\bigl[(1.08)^{10}-1\\bigr] = 43{,}750 \\times 1.158925 = 50{,}702.97$$
+
+The principal contributed over the ten years is
+
+$$3{,}500 \\times 10 = 35{,}000$$
+
+dollars. Subtracting the principal from the accumulated value:
+
+$$50{,}702.97 - 35{,}000.00$$
+
+$$= 15{,}702.97$$
+
+The fund earns about \\$15,702.97 in interest, matching the claim, so the statement is true.`,
       `**C) If the deposit period were extended to 20 years, the future value would be LESS than double \\$50,702.97.**  (false)
 
-Because the future value grows exponentially rather than linearly with the number of periods, doubling the deposit period to 20 years produces F20 = \\$160,166.87, which is well MORE than double the 10-year value, not less.
+The horizon enters the ordinary-annuity formula inside a power, so doubling it lifts the result by more than a factor of two:
 
-Twenty years:
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
 
-$$F_{20} = 43,750\\bigl[(1.08)^{20} - 1\\bigr]$$
+The first ten deposits keep earning interest through the second decade while ten fresh deposits pile up beneath them. Both horizons show the effect. Over ten years, with $a = 3{,}500$ dollars and $r = 0.08$:
 
-$$(1.08)^{20} \\approx 4.660957,\\quad 4.660957 - 1 = 3.660957$$
+$$(1.08)^{10} = 2.158925$$
 
-$$43,750 \\times 3.660957 = \\$160,166.87$$
+$$F_{10} = 43{,}750 \\times 1.158925 = 50{,}702.97$$
 
-Double F10 is \\$101,405.94. \\$160,166.87 is more than double, not less.`,
+Over twenty years at the same deposit and rate:
+
+$$F_{20} = 43{,}750 \\times \\bigl[(1.08)^{20}-1\\bigr]$$
+
+$$(1.08)^{20} = 4.660957$$
+
+$$4.660957 - 1 = 3.660957$$
+
+$$F_{20} = 43{,}750 \\times 3.660957$$
+
+$$F_{20} = 160{,}166.87$$
+
+Exact doubling of the ten-year value would be
+
+$$2 \\times 50{,}702.97 = 101{,}405.94$$
+
+Comparing the two:
+
+$$160{,}166.87 > 101{,}405.94$$
+
+Twenty years produce \\$58,760.93 more than double the ten-year figure, so the future value is well above double rather than below it, and the statement is false.`,
       `**D) The interest-only portion of the 10-year future value, approximately \\$15,702.97, exceeds the total principal deposited of \\$35,000.00.**  (false)
 
-The interest earned, $\\$15,702.97$, is smaller than the total principal contributed, $3,500 \\times 10 = \\$35,000.00$, not larger, contradicting the statement.`,
+Two components of the ten-year fund have to be separated. The principal is the sum of the deposits themselves:
+
+$$3{,}500 \\times 10 = 35{,}000$$
+
+dollars. The accumulated value comes from the ordinary-annuity formula with $a = 3{,}500$ dollars, $r = 0.08$, and $n = 10$:
+
+$$F_{10} = 43{,}750 \\times \\bigl[(1.08)^{10}-1\\bigr] = 43{,}750 \\times 1.158925 = 50{,}702.97$$
+
+so the interest portion is
+
+$$50{,}702.97 - 35{,}000.00 = 15{,}702.97$$
+
+Comparing the two components:
+
+$$15{,}702.97 < 35{,}000.00$$
+
+Interest amounts to less than half the principal over this horizon, falling short by \\$19,297.03. The claim has interest exceeding principal, so the statement is false.`,
       `**E) If the interest rate rose to 10%, the 10-year future value would exceed \\$55,000.00.**  (true)
 
-Raising the rate to 10% increases F10 to \\$55,780.97, which does exceed the \\$55,000.00 threshold stated.
+A higher rate changes both the leading fraction and the growth factor, so the ten-year value has to be recomputed rather than scaled. The ordinary-annuity formula is
 
-Raise the rate to 10%, keep a = 3,500 and n = 10:
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
 
-$$F_{10}' = (3,500 / 0.10)\\bigl[(1.10)^{10} - 1\\bigr]$$
+With the deposit held at $a = 3{,}500$ dollars, the rate raised to $r = 0.10$, and $n = 10$:
 
-$$(1.10)^{10} \\approx 2.593742,\\quad 2.593742 - 1 = 1.593742$$
+$$F_{10}' = \\frac{3{,}500}{0.10}\\bigl[(1.10)^{10}-1\\bigr]$$
 
-$$35,000 \\times 1.593742 = \\$55,780.97$$
+The leading fraction becomes
 
-\\$55,780.97 does clear \\$55,000.00.`,
+$$\\frac{3{,}500}{0.10} = 35{,}000$$
+
+and the tenth power of the interest factor is
+
+$$(1.10)^{10} = 2.593742$$
+
+so the bracket is
+
+$$2.593742 - 1 = 1.593742$$
+
+Multiplying:
+
+$$F_{10}' = 35{,}000 \\times 1.593742$$
+
+$$F_{10}' = 55{,}780.97$$
+
+Comparing with the threshold in the claim:
+
+$$55{,}780.97 > 55{,}000.00$$
+
+The higher rate clears the threshold by about \\$780.97, so the statement is true.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 84,
@@ -6425,43 +13459,135 @@ $F_n=(a/r)[(1+r)^{n}-1]$
     tactical_explanations: [
       `**A) The present value needed today is approximately \\$25,775.15.**  (true)
 
-Plugging $a = \\$2,400$, $r = 0.045$, and $n = 15$ into $P_n = (a/r)[1-1/(1+r)^{n}]$ gives $P_{15} \\approx 53,333.33 \\times 0.483284 = \\$25,775.15$, matching the statement exactly.`,
+Equal withdrawals taken at the end of each year form an ordinary annuity, and the amount needed today to support them is
+
+$$P_n = \\frac{a}{r}\\Bigl[1-\\frac{1}{(1+r)^{n}}\\Bigr]$$
+
+The retiree withdraws $a = 2{,}400$ dollars a year, the account earns $r = 0.045$, and the plan runs $n = 15$ years:
+
+$$P_{15} = \\frac{2{,}400}{0.045}\\Bigl[1-\\frac{1}{(1.045)^{15}}\\Bigr]$$
+
+The leading fraction is
+
+$$\\frac{2{,}400}{0.045} = 53{,}333.33$$
+
+and the fifteenth power of the interest factor is
+
+$$(1.045)^{15} = 1.935282$$
+
+so the bracket becomes
+
+$$1 - \\frac{1}{1.935282} = 1 - 0.516720 = 0.483280$$
+
+Multiplying the two pieces:
+
+$$P_{15} = 53{,}333.33 \\times 0.483280$$
+
+$$P_{15} = 25{,}774.93$$
+
+The account needs about \\$25,774.93 today, which matches the claimed \\$25,775.15 to the nearest dollar, so the statement is true.`,
       `**B) The total nominal withdrawals over 15 years, \\$36,000.00, exceed the required deposit of \\$25,775.15, illustrating that future dollars are worth less than present dollars.**  (true)
 
-Nominal withdrawals total $2,400 \\times 15 = \\$36,000.00$, which is indeed larger than the $\\$25,775.15$ required today, since each future withdrawal is discounted back to a smaller present-day equivalent.`,
+Two amounts are being compared: the raw sum of the withdrawals and the smaller amount that has to sit in the account today. The nominal withdrawals are fifteen equal payments with no discounting at all:
+
+$$2{,}400 \\times 15 = 36{,}000$$
+
+dollars. The amount needed today comes from the ordinary-annuity present-value formula with $a = 2{,}400$ dollars, $r = 0.045$, and $n = 15$:
+
+$$P_{15} = \\frac{2{,}400}{0.045}\\Bigl[1-\\frac{1}{(1.045)^{15}}\\Bigr]$$
+
+$$(1.045)^{15} = 1.935282$$
+
+$$P_{15} = 53{,}333.33 \\times 0.483280 = 25{,}774.93$$
+
+Comparing the two figures:
+
+$$36{,}000.00 > 25{,}774.93$$
+
+The nominal total exceeds the deposit by about \\$10,225, because each withdrawal is discounted back to a smaller present-day equivalent and the interest earned in the meantime covers the rest. That is exactly the point the claim makes about future dollars being worth less than present dollars, so the statement is true.`,
       `**C) If withdrawals were extended to 30 years at the same rate, the present value would exactly double, to approximately \\$51,550.30.**  (false)
 
-Because $1/(1+r)^{n}$ shrinks nonlinearly as n grows, doubling the withdrawal period to 30 years raises the present value only to \\$39,091.65, not to the naively doubled figure of \\$51,550.30.
+The horizon enters the present-value formula through the discount term $1/(1+r)^{n}$, which shrinks toward zero as $n$ grows. Later withdrawals therefore add less and less, and doubling the number of years cannot double the present value:
 
-Thirty years is not twice fifteen in present value:
+$$P_n = \\frac{a}{r}\\Bigl[1-\\frac{1}{(1+r)^{n}}\\Bigr]$$
 
-$$P_{30} = 53,333.33\\bigl[1 - 1/(1.045)^{30}\\bigr]$$
+Over fifteen years, with $a = 2{,}400$ dollars and $r = 0.045$:
 
-$$(1.045)^{30} \\approx 3.745318,\\quad 1/3.745318 \\approx 0.267002$$
+$$(1.045)^{15} = 1.935282$$
 
-$$1 - 0.267002 = 0.732998$$
+$$P_{15} = 53{,}333.33 \\times \\bigl[1-0.516720\\bigr] = 53{,}333.33 \\times 0.483280 = 25{,}774.93$$
 
-$$53,333.33 \\times 0.732998 = \\$39,091.65$$
+Over thirty years at the same rate:
 
-Double P15 would be \\$51,550.30. \\$39,091.65 falls well short.`,
+$$P_{30} = 53{,}333.33\\Bigl[1-\\frac{1}{(1.045)^{30}}\\Bigr]$$
+
+$$(1.045)^{30} = 3.745318$$
+
+$$1 - \\frac{1}{3.745318} = 1 - 0.267002 = 0.732998$$
+
+$$P_{30} = 53{,}333.33 \\times 0.732998$$
+
+$$P_{30} = 39{,}093.23$$
+
+Exact doubling would require about
+
+$$2 \\times 25{,}774.93 = 51{,}549.86$$
+
+Comparing the two:
+
+$$39{,}093.23 < 51{,}549.86$$
+
+The thirty-year requirement falls more than \\$12,000 short of double, so the present value does not double and the claimed \\$51,550.30 is far too high. The statement is false.`,
       `**D) The gap between the total nominal withdrawals and today's required deposit, approximately \\$11,224.85, represents the total discount applied.**  (false)
 
-Subtracting the required deposit from the total nominal withdrawals gives 36,000.00 - 25,775.15 = \\$10,224.85, not \\$11,224.85 as stated.`,
+The gap in question is the nominal total of the withdrawals minus the amount needed today, so both figures are required. The nominal withdrawals are
+
+$$2{,}400 \\times 15 = 36{,}000$$
+
+dollars. The present value comes from the ordinary-annuity formula with $a = 2{,}400$ dollars, $r = 0.045$, and $n = 15$:
+
+$$P_{15} = 53{,}333.33\\Bigl[1-\\frac{1}{(1.045)^{15}}\\Bigr]$$
+
+$$(1.045)^{15} = 1.935282$$
+
+$$P_{15} = 53{,}333.33 \\times 0.483280 = 25{,}774.93$$
+
+Subtracting:
+
+$$36{,}000.00 - 25{,}774.93$$
+
+$$= 10{,}225.07$$
+
+The total discount is about \\$10,225.07. The claim names \\$11,224.85, roughly \\$1,000 above the true gap, so the statement is false.`,
       `**E) If the interest rate were higher, the required present-value deposit would be HIGHER than \\$25,775.15.**  (false)
 
-A higher interest rate discounts future withdrawals more heavily, which REDUCES the amount needed today, not increases it: at 6% only \\$23,309.40 is required, which is lower than the 4.5%-rate figure of \\$25,775.15.
+The rate appears twice in the present-value formula, and both appearances push the same way:
 
-A higher rate discounts more, so today's deposit falls. At 6%:
+$$P_n = \\frac{a}{r}\\Bigl[1-\\frac{1}{(1+r)^{n}}\\Bigr]$$
 
-$$P_{15}' = (2,400 / 0.06)\\bigl[1 - 1/(1.06)^{15}\\bigr]$$
+A larger $r$ shrinks the leading fraction $a/r$ and also makes $(1+r)^{n}$ bigger, which lifts the bracket only modestly. A stronger rate does more of the work of funding the withdrawals, so less money is needed up front. Both cases confirm it. At $r = 0.045$, with $a = 2{,}400$ dollars and $n = 15$:
 
-$$(1.06)^{15} \\approx 2.396558,\\quad 1/2.396558 \\approx 0.417265$$
+$$(1.045)^{15} = 1.935282$$
 
-$$1 - 0.417265 = 0.582735$$
+$$P_{15} = 53{,}333.33 \\times 0.483280 = 25{,}774.93$$
 
-$$40,000 \\times 0.582735 = \\$23,309.40$$
+At the higher rate $r = 0.06$ over the same fifteen years:
 
-\\$23,309.40 is below \\$25,775.15, not above.`,
+$$P_{15}' = \\frac{2{,}400}{0.06}\\Bigl[1-\\frac{1}{(1.06)^{15}}\\Bigr]$$
+
+$$\\frac{2{,}400}{0.06} = 40{,}000$$
+
+$$(1.06)^{15} = 2.396558$$
+
+$$1 - \\frac{1}{2.396558} = 1 - 0.417265 = 0.582735$$
+
+$$P_{15}' = 40{,}000 \\times 0.582735 = 23{,}309.40$$
+
+Comparing the two requirements:
+
+$$23{,}309.40 < 25{,}774.93$$
+
+The higher rate cuts the deposit needed by about \\$2,465, so a higher rate lowers the requirement rather than raising it. The statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 85,
@@ -6510,45 +13636,139 @@ $P_n=(a/r)[1-1/(1+r)^{n}]$
     tactical_explanations: [
       `**A) The present value needed to fund the 20-year annuity is approximately \\$57,349.67.**  (true)
 
-$P_{20} = (5,000/0.06)[1 - 1/(1.06)^{20}] = \\$57,349.67$, matching the statement exactly.
+Equal payments made at the end of each year form an ordinary annuity, and the amount that must be set aside today is
 
-$$P_{20} = (5,000 / 0.06)\\bigl[1 - 1/(1.06)^{20}\\bigr]$$
+$$P_n = \\frac{a}{r}\\Bigl[1-\\frac{1}{(1+r)^{n}}\\Bigr]$$
 
-$$(1.06)^{20} \\approx 3.207135,\\quad 1/3.207135 \\approx 0.311805$$
+The scholarship pays $a = 5{,}000$ dollars a year, the rate is $r = 0.06$, and the term is $n = 20$ years:
 
-$$1 - 0.311805 = 0.688195$$
+$$P_{20} = \\frac{5{,}000}{0.06}\\Bigl[1-\\frac{1}{(1.06)^{20}}\\Bigr]$$
 
-$$83,333.33 \\times 0.688195 = \\$57,349.67$$`,
+The leading fraction is
+
+$$\\frac{5{,}000}{0.06} = 83{,}333.33$$
+
+and the twentieth power of the interest factor is
+
+$$(1.06)^{20} = 3.207135$$
+
+so the bracket becomes
+
+$$1 - \\frac{1}{3.207135} = 1 - 0.311805 = 0.688195$$
+
+Multiplying the two pieces:
+
+$$P_{20} = 83{,}333.33 \\times 0.688195$$
+
+$$P_{20} = 57{,}349.61$$
+
+Funding twenty years of scholarships requires about \\$57,349.61 today, which matches the claimed \\$57,349.67 to the nearest dollar, so the statement is true.`,
       `**B) The perpetuity value is approximately \\$83,333.33, exceeding the 20-year annuity's present value by approximately \\$25,983.66.**  (true)
 
-The perpetuity value of \\$83,333.33 exceeds the 20-year annuity's present value of \\$57,349.67 by exactly \\$25,983.66, matching the statement exactly.
+The claim makes two assertions, and both need checking. A payment that continues forever is a perpetuity, whose present value is the payment divided by the rate:
 
-Perpetuity: $P = a/r = 5,000/0.06 = \\$83,333.33$.
+$$P = \\frac{a}{r}$$
 
-Gap: $83,333.33 - 57,349.67 = \\$25,983.66$. Both pieces of the claim match.`,
+With $a = 5{,}000$ dollars a year and $r = 0.06$:
+
+$$P = \\frac{5{,}000}{0.06}$$
+
+$$P = 83{,}333.33$$
+
+The twenty-year annuity instead uses the finite present-value formula:
+
+$$P_{20} = 83{,}333.33\\Bigl[1-\\frac{1}{(1.06)^{20}}\\Bigr]$$
+
+$$(1.06)^{20} = 3.207135$$
+
+$$P_{20} = 83{,}333.33 \\times 0.688195 = 57{,}349.61$$
+
+Subtracting the annuity from the perpetuity gives the excess:
+
+$$83{,}333.33 - 57{,}349.61$$
+
+$$= 25{,}983.72$$
+
+The perpetuity is worth about \\$83,333.33 and exceeds the twenty-year annuity by about \\$25,983.72, which matches the claimed \\$25,983.66 to the nearest dollar. Both parts of the claim hold, so the statement is true.`,
       `**C) The 20-year annuity's present value represents approximately 72.82% of the equivalent perpetuity value.**  (false)
 
-57,349.67 divided by 83,333.33 gives 0.68820, or approximately 68.82%, not 72.82% as stated.`,
+The share is the twenty-year present value divided by the perpetuity value, so both are needed. The annuity, with $a = 5{,}000$ dollars, $r = 0.06$, and $n = 20$, is
+
+$$P_{20} = \\frac{5{,}000}{0.06}\\Bigl[1-\\frac{1}{(1.06)^{20}}\\Bigr]$$
+
+$$(1.06)^{20} = 3.207135$$
+
+$$P_{20} = 83{,}333.33 \\times 0.688195 = 57{,}349.61$$
+
+The perpetuity is
+
+$$P = \\frac{5{,}000}{0.06} = 83{,}333.33$$
+
+Dividing one by the other:
+
+$$\\frac{57{,}349.61}{83{,}333.33} = 0.68820$$
+
+That is $68.82\\%$, and the bracket $1 - 1/(1.06)^{20} = 0.688195$ gives the same share directly, since the perpetuity is exactly the leading fraction. The claim names $72.82\\%$, four percentage points too high, so the statement is false.`,
       `**D) If the term were extended to 40 years, the present value would rise to MORE than 95% of the perpetuity value.**  (false)
 
-Even after doubling the term to 40 years, the present value only reaches \\$75,231.50, or about 90.28% of the perpetuity value - still short of 95%, since later payments are discounted so heavily that extending the horizon further yields diminishing gains.
+Doubling the term does not push the present value proportionally closer to the perpetuity, because payments in the distant years are discounted very heavily. The forty-year annuity uses the same formula with $a = 5{,}000$ dollars and $r = 0.06$:
 
-Forty years:
+$$P_n = \\frac{a}{r}\\Bigl[1-\\frac{1}{(1+r)^{n}}\\Bigr]$$
 
-$$P_{40} = 83,333.33\\bigl[1 - 1/(1.06)^{40}\\bigr]$$
+$$P_{40} = 83{,}333.33\\Bigl[1-\\frac{1}{(1.06)^{40}}\\Bigr]$$
 
-$$(1.06)^{40} \\approx 10.285718,\\quad 1/10.285718 \\approx 0.097222$$
+The fortieth power of the interest factor is
 
-$$1 - 0.097222 = 0.902778$$
+$$(1.06)^{40} = 10.285718$$
 
-$$83,333.33 \\times 0.902778 = \\$75,231.50$$
+so the bracket becomes
 
-Share of the perpetuity: $75,231.50 / 83,333.33 \\approx 0.9028 = 90.28\\%$, which is still under 95%.`,
+$$1 - \\frac{1}{10.285718} = 1 - 0.097222 = 0.902778$$
+
+and the present value is
+
+$$P_{40} = 83{,}333.33 \\times 0.902778$$
+
+$$P_{40} = 75{,}231.50$$
+
+The perpetuity value is
+
+$$P = \\frac{5{,}000}{0.06} = 83{,}333.33$$
+
+so the share reached after forty years is
+
+$$\\frac{75{,}231.50}{83{,}333.33} = 0.90278$$
+
+Comparing with the threshold in the claim:
+
+$$90.28\\% < 95\\%$$
+
+Forty years of payments still leave the fund almost five percentage points short of the perpetuity, so the statement is false.`,
       `**E) The perpetuity formula is obtained by letting the number of payments grow toward infinity in the annuity present-value formula, so that the value converges to \\$83,333.33 as the limiting value.**  (true)
 
-This is exactly how Section 11.5 derives the perpetuity formula: letting n tend to infinity in the annuity present-value formula causes $1/(1+r)^{n}$ to vanish, leaving the annuity's present value converging to a/r, matching the statement exactly.
+The present value of an $n$-year annuity is
 
-In $P_n = (a/r)\\bigl[1 - 1/(1+r)^{n}\\bigr]$, let n grow. Then $(1.06)^{n} \\to \\infty$, so $1/(1.06)^{n} \\to 0$, and $P_n \\to 5,000/0.06 = \\$83,333.33$. That limit is the perpetuity formula.`,
+$$P_n = \\frac{a}{r}\\Bigl[1-\\frac{1}{(1+r)^{n}}\\Bigr]$$
+
+and the only place $n$ appears is inside the discount term. With $r = 0.06$, the interest factor exceeds 1, so raising it to higher and higher powers sends it to infinity:
+
+$$(1.06)^{n} \\to \\infty \\text{ as } n \\to \\infty$$
+
+and its reciprocal therefore collapses:
+
+$$\\frac{1}{(1.06)^{n}} \\to 0$$
+
+A few values show how quickly this happens:
+
+$$\\frac{1}{(1.06)^{20}} = 0.311805, \\qquad \\frac{1}{(1.06)^{40}} = 0.097222$$
+
+With the discount term gone, the bracket approaches 1 and the whole expression settles on the leading fraction:
+
+$$P_n \\to \\frac{a}{r} = \\frac{5{,}000}{0.06}$$
+
+$$P_n \\to 83{,}333.33$$
+
+That limiting value is precisely the perpetuity formula, and the number it converges to is \\$83,333.33, exactly as the claim describes. The statement is true.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 86,
@@ -6599,31 +13819,123 @@ Perpetuity: $P=a/r$ (limit as $n\\to\\infty$)
     tactical_explanations: [
       `**A) The present value of Option 2's payments is approximately \\$16,288.18.**  (true)
 
-Plugging $a = \\$2,500$, $r = 0.07$, and $n = 9$ into $P_n = (a/r)[1-1/(1+r)^{n}]$ gives $P_9 \\approx 35,714.29 \\times 0.456069 = \\$16,288.18$, matching the statement exactly.`,
+Option 2 is a stream of equal payments made at the end of each year, which is an ordinary annuity, and its cost today is
+
+$$P_n = \\frac{a}{r}\\Bigl[1-\\frac{1}{(1+r)^{n}}\\Bigr]$$
+
+The payments are $a = 2{,}500$ dollars a year, the rate is $r = 0.07$, and the term is $n = 9$ years:
+
+$$P_9 = \\frac{2{,}500}{0.07}\\Bigl[1-\\frac{1}{(1.07)^{9}}\\Bigr]$$
+
+The leading fraction is
+
+$$\\frac{2{,}500}{0.07} = 35{,}714.29$$
+
+and the ninth power of the interest factor is
+
+$$(1.07)^{9} = 1.838459$$
+
+so the bracket becomes
+
+$$1 - \\frac{1}{1.838459} = 1 - 0.543934 = 0.456066$$
+
+Multiplying the two pieces:
+
+$$P_9 = 35{,}714.29 \\times 0.456066$$
+
+$$P_9 = 16{,}288.08$$
+
+The nine annual payments cost about \\$16,288.08 in today's money, which matches the claimed \\$16,288.18 to the nearest dollar, so the statement is true.`,
       `**B) Because \\$16,288.18 is less than \\$18,000.00, Option 2 is the financially better choice, saving approximately \\$1,811.82.**  (false)
 
-Option 2 is indeed cheaper, but the saving is $\\$18,000.00 - \\$16,288.18 = \\$1,711.82$, not $\\$1,811.82$ as stated.`,
+The ranking in the claim is right but the dollar amount is not, and the saving has to be computed to see that. Option 2's cost today is
+
+$$P_9 = \\frac{2{,}500}{0.07}\\Bigl[1-\\frac{1}{(1.07)^{9}}\\Bigr]$$
+
+$$(1.07)^{9} = 1.838459$$
+
+$$P_9 = 35{,}714.29 \\times 0.456066 = 16{,}288.08$$
+
+Option 1 costs its face amount of \\$18,000.00 today, since no discounting applies to money paid immediately. Comparing the two:
+
+$$16{,}288.08 < 18{,}000.00$$
+
+so Option 2 is indeed the cheaper choice. Subtracting to size the advantage:
+
+$$18{,}000.00 - 16{,}288.08$$
+
+$$= 1{,}711.92$$
+
+The saving is about \\$1,711.92. The claim names \\$1,811.82, which overstates it by roughly \\$100 and also transposes the digits of the true figure, so the statement is false.`,
       `**C) If the interest rate were only 4%, Option 2's present value would be LOWER than \\$16,288.18, making Option 1 even less attractive by comparison.**  (false)
 
-A lower discount rate discounts future payments less severely, which RAISES their present value: at 4%, Option 2's present value rises to \\$18,588.31, which is higher than the 7%-rate figure of \\$16,288.18, not lower.
+A lower discount rate shrinks the divisor applied to each future payment, so every payment counts for more today and the present value rises. The formula shows why:
 
-Lower rate, higher present value. At 4%:
+$$P_n = \\frac{a}{r}\\Bigl[1-\\frac{1}{(1+r)^{n}}\\Bigr]$$
 
-$$P_9' = (2,500 / 0.04)\\bigl[1 - 1/(1.04)^{9}\\bigr]$$
+Cutting $r$ enlarges the leading fraction $a/r$, and that effect dominates. Both rates can be computed. At $r = 0.07$, with $a = 2{,}500$ dollars and $n = 9$:
 
-$$(1.04)^{9} \\approx 1.423312,\\quad 1/1.423312 \\approx 0.702587$$
+$$(1.07)^{9} = 1.838459$$
 
-$$1 - 0.702587 = 0.297413$$
+$$P_9 = 35{,}714.29 \\times \\bigl[1 - 0.543934\\bigr] = 35{,}714.29 \\times 0.456066 = 16{,}288.08$$
 
-$$62,500 \\times 0.297413 = \\$18,588.31$$
+At $r = 0.04$ over the same nine years:
 
-\\$18,588.31 > \\$16,288.18, so 4% raises Option 2's present value, not lowers it.`,
+$$P_9' = \\frac{2{,}500}{0.04}\\Bigl[1-\\frac{1}{(1.04)^{9}}\\Bigr]$$
+
+$$\\frac{2{,}500}{0.04} = 62{,}500$$
+
+$$(1.04)^{9} = 1.423312$$
+
+$$1 - \\frac{1}{1.423312} = 1 - 0.702587 = 0.297413$$
+
+$$P_9' = 62{,}500 \\times 0.297413 = 18{,}588.33$$
+
+Comparing the two:
+
+$$18{,}588.33 > 16{,}288.08$$
+
+At $4\\%$ the installment plan costs about \\$2,300 more in today's money, and it even rises above Option 1's \\$18,000.00, which makes Option 1 the better deal rather than a worse one. The claim reverses both effects, so the statement is false.`,
       `**D) The total nominal payments under Option 2 over 9 years, \\$22,500.00, exceed the \\$18,000.00 lump-sum cost of Option 1 by \\$4,600.00.**  (false)
 
-Total nominal payments of \\$22,500.00 exceed the \\$18,000.00 lump sum by exactly \\$4,500.00, not \\$4,600.00 as stated.`,
+Nominal payments carry no discounting, so Option 2's raw total is just the payment times the number of years:
+
+$$2{,}500 \\times 9$$
+
+$$= 22{,}500$$
+
+dollars, which is the figure quoted in the claim. Option 1's lump sum is \\$18,000.00. Subtracting to find the excess:
+
+$$22{,}500.00 - 18{,}000.00$$
+
+$$= 4{,}500.00$$
+
+Option 2 involves \\$4,500.00 more in nominal cash than Option 1, not \\$4,600.00. The claim overstates the excess by \\$100.00, so the statement is false.`,
       `**E) Option 1's \\$18,000.00, if invested today at 7% instead of used for the machinery, would grow after 9 years to a future value of more than \\$34,000.00.**  (false)
 
-Growing the lump sum forward gives $F = 18,000 \\times (1.07)^{9} \\approx 18,000 \\times 1.838459 = \\$33,092.26$, which does not exceed $\\$34,000.00$ as claimed.`,
+Money invested today grows by the interest factor once per year, so its accumulated value is
+
+$$F = P(1+r)^{n}$$
+
+Holding on to Option 1's cash means investing $P = 18{,}000$ dollars at $r = 0.07$ for $n = 9$ years:
+
+$$F = 18{,}000 \\times (1.07)^{9}$$
+
+The ninth power of the interest factor is
+
+$$(1.07)^{9} = 1.838459$$
+
+so the accumulated value is
+
+$$F = 18{,}000 \\times 1.838459$$
+
+$$F = 33{,}092.27$$
+
+Comparing with the threshold in the claim:
+
+$$33{,}092.27 < 34{,}000.00$$
+
+The lump sum grows to about \\$33,092.27, falling \\$907.73 short of \\$34,000.00, so the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 87,
@@ -6664,25 +13976,125 @@ $P_n=(a/r)[1-1/(1+r)^{n}]$; $F=P(1+r)^{n}$.
     tactical_explanations: [
       `**A) Strategy A's future value after 8 years is approximately \\$19,126.18.**  (true)
 
-Plugging $P = 12,000$, $r = 0.06$, and $n = 8$ into $F = P(1+r)^{n}$ gives $F_A = 12,000 \\times (1.06)^{8} \\approx 12,000 \\times 1.593848 = \\$19,126.18$, matching the statement exactly.`,
+Strategy A puts a single amount in today and leaves it to compound, so its accumulated value is
+
+$$F = P(1+r)^{n}$$
+
+The firm deposits $P = 12{,}000$ dollars, the account earns $r = 0.06$ a year, and the purchase is $n = 8$ years away:
+
+$$F_A = 12{,}000 \\times (1.06)^{8}$$
+
+The eighth power of the interest factor is
+
+$$(1.06)^{8} = 1.593848$$
+
+so the accumulated value is
+
+$$F_A = 12{,}000 \\times 1.593848$$
+
+$$F_A = 19{,}126.18$$
+
+Strategy A is worth about \\$19,126.18 after eight years, exactly the figure claimed, so the statement is true.`,
       `**B) Strategy B's future value after 8 years is approximately \\$14,856.46.**  (false)
 
-Plugging $a = \\$1,400$, $r = 0.06$, and $n = 8$ into $F_n = (a/r)[(1+r)^{n}-1]$ gives $F_B \\approx 23,333.33 \\times 0.593848 = \\$13,856.46$; the claim's $\\$14,856.46$ is $\\$1,000$ too high.`,
+Strategy B deposits an equal amount at the end of each year, which is an ordinary annuity, and its accumulated value is
+
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
+
+The deposits are $a = 1{,}400$ dollars a year, the rate is $r = 0.06$, and the horizon is $n = 8$ years:
+
+$$F_B = \\frac{1{,}400}{0.06}\\bigl[(1.06)^{8}-1\\bigr]$$
+
+The leading fraction is
+
+$$\\frac{1{,}400}{0.06} = 23{,}333.33$$
+
+and the eighth power of the interest factor is
+
+$$(1.06)^{8} = 1.593848$$
+
+so the bracket becomes
+
+$$1.593848 - 1 = 0.593848$$
+
+Multiplying the two pieces:
+
+$$F_B = 23{,}333.33 \\times 0.593848$$
+
+$$F_B = 13{,}856.46$$
+
+Strategy B is worth about \\$13,856.46. The claim names \\$14,856.46, which is exactly \\$1,000.00 too high, so the statement is false.`,
       `**C) Strategy A yields a higher future value than Strategy B, by approximately \\$5,769.72.**  (false)
 
-19,126.18 - 13,856.46 = \\$5,269.72, not \\$5,769.72 as stated.`,
+Both accumulated values are needed before the gap can be measured. Strategy A compounds a single deposit:
+
+$$F_A = 12{,}000 \\times (1.06)^{8}$$
+
+$$(1.06)^{8} = 1.593848$$
+
+$$F_A = 12{,}000 \\times 1.593848 = 19{,}126.18$$
+
+Strategy B accumulates as an ordinary annuity:
+
+$$F_B = \\frac{1{,}400}{0.06}\\bigl[(1.06)^{8}-1\\bigr] = 23{,}333.33 \\times 0.593848 = 13{,}856.46$$
+
+Comparing the two:
+
+$$19{,}126.18 > 13{,}856.46$$
+
+Strategy A does finish ahead, which is the part of the claim that holds. Subtracting to size the lead:
+
+$$19{,}126.18 - 13{,}856.46$$
+
+$$= 5{,}269.72$$
+
+The true gap is about \\$5,269.72, not \\$5,769.72, an overstatement of \\$500.00, so the statement is false.`,
       `**D) The total cash committed under Strategy B over the 8 years, \\$11,200.00, is MORE than the \\$12,000.00 committed upfront under Strategy A.**  (false)
 
-Total deposits under Strategy B are only \\$11,200.00, which is LESS than the \\$12,000.00 committed upfront under Strategy A, not more.`,
+Cash committed is the raw money paid in, with no interest involved. Strategy B pays \\$1,400 at the end of each of eight years:
+
+$$1{,}400 \\times 8$$
+
+$$= 11{,}200$$
+
+dollars, which is the figure quoted in the claim. Strategy A commits its full amount immediately:
+
+$$12{,}000$$
+
+dollars. Comparing the two commitments:
+
+$$11{,}200.00 < 12{,}000.00$$
+
+Strategy B puts in \\$800.00 less cash overall, so its total commitment is smaller than Strategy A's rather than larger. The statement is false.`,
       `**E) If Strategy B's annual deposit were raised to \\$1,500, Strategy B's future value would still be LOWER than Strategy A's \\$19,126.18.**  (true)
 
-Even when Strategy B's total nominal contributions are raised to exactly match Strategy A's \\$12,000.00 upfront amount, its future value only reaches \\$14,846.20, still well below Strategy A's \\$19,126.18 - because front-loading the full amount gives it the maximum possible time to compound, an advantage spread-out deposits cannot fully offset.
+Raising the annual deposit to \\$1,500 makes Strategy B's total cash commitment
 
-Raise B's annual deposit to 1,500:
+$$1{,}500 \\times 8 = 12{,}000$$
 
-$$F_B' = (1,500 / 0.06)\\bigl[(1.06)^{8} - 1\\bigr] = 25,000 \\times 0.593848 = \\$14,846.20$$
+dollars, exactly matching Strategy A's upfront amount, so the comparison isolates timing rather than size. Strategy B's accumulated value comes from the ordinary-annuity formula with $a = 1{,}500$ dollars, $r = 0.06$, and $n = 8$:
 
-\\$14,846.20 is still below Strategy A's \\$19,126.18.`,
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
+
+$$F_B' = \\frac{1{,}500}{0.06}\\bigl[(1.06)^{8}-1\\bigr]$$
+
+$$\\frac{1{,}500}{0.06} = 25{,}000$$
+
+$$(1.06)^{8} = 1.593848$$
+
+$$F_B' = 25{,}000 \\times 0.593848$$
+
+$$F_B' = 14{,}846.20$$
+
+Strategy A compounds the same \\$12,000 for the full eight years:
+
+$$F_A = 12{,}000 \\times 1.593848 = 19{,}126.18$$
+
+Comparing the two:
+
+$$14{,}846.20 < 19{,}126.18$$
+
+Strategy B still trails by \\$4,279.98, because its final deposit earns no interest at all and its earlier deposits each miss several years of growth, while the lump sum compounds for the whole horizon. The statement is true.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 88,
@@ -6733,41 +14145,139 @@ $F_n=(a/r)[(1+r)^{n}-1]$
     tactical_explanations: [
       `**A) The future value of these deposits at the end of year 6 is approximately \\$21,426.05.**  (true)
 
-$F_{\\mathrm{due}}(6) = F_{\\mathrm{ordinary}}(6) \\times 1.05 = 20,405.76 \\times 1.05 = \\$21,426.05$, matching the statement exactly.
+Deposits made at the start of each year form an annuity due, which is an ordinary annuity with every payment shifted one period earlier. That shift gives each payment one more year of growth, so the ordinary value is built first and then advanced one period:
 
-Build the ordinary annuity first, then shift one period:
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr], \\qquad F_{\\mathrm{due}} = F_n(1+r)$$
 
-$$F_{\\mathrm{ord}} = (3,000 / 0.05)\\bigl[(1.05)^{6} - 1\\bigr] = 60,000 \\times 0.340096 = \\$20,405.76$$
+With $a = 3{,}000$ dollars, $r = 0.05$, and $n = 6$:
 
-$$F_{\\mathrm{due}} = 20,405.76 \\times 1.05 = \\$21,426.05$$`,
+$$F_{\\mathrm{ord}} = \\frac{3{,}000}{0.05}\\bigl[(1.05)^{6}-1\\bigr]$$
+
+The leading fraction is
+
+$$\\frac{3{,}000}{0.05} = 60{,}000$$
+
+and the sixth power of the interest factor is
+
+$$(1.05)^{6} = 1.340096$$
+
+so the bracket is
+
+$$1.340096 - 1 = 0.340096$$
+
+$$F_{\\mathrm{ord}} = 60{,}000 \\times 0.340096 = 20{,}405.76$$
+
+Advancing one period:
+
+$$F_{\\mathrm{due}} = 20{,}405.76 \\times 1.05$$
+
+$$F_{\\mathrm{due}} = 21{,}426.05$$
+
+The fund is worth about \\$21,426.05 at the end of year 6, exactly the figure claimed, so the statement is true.`,
       `**B) If the same \\$3,000 deposits were instead made at the END of each year, the future value would be LOWER than the annuity-due result.**  (true)
 
-$F_{\\mathrm{ordinary}}(6) = (3,000/0.05)[(1.05)^{6} - 1] = \\$20,405.76$, which is indeed lower than the annuity-due result of \\$21,426.05, since end-of-year deposits each earn one fewer period of interest.
+End-of-year deposits form an ordinary annuity, whose accumulated value is
 
-The ordinary figure is the one already computed: \\$20,405.76.
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
 
-$$20,405.76 < 21,426.05$$
+With $a = 3{,}000$ dollars, $r = 0.05$, and $n = 6$:
 
-End-of-year deposits miss one period of growth, so they finish lower.`,
+$$F_{\\mathrm{ord}} = \\frac{3{,}000}{0.05}\\bigl[(1.05)^{6}-1\\bigr]$$
+
+$$(1.05)^{6} = 1.340096$$
+
+$$F_{\\mathrm{ord}} = 60{,}000 \\times 0.340096 = 20{,}405.76$$
+
+Start-of-year deposits are the same payments shifted one period earlier, so each earns one extra year of interest and the total is scaled by the interest factor:
+
+$$F_{\\mathrm{due}} = 20{,}405.76 \\times 1.05 = 21{,}426.05$$
+
+Comparing the two:
+
+$$20{,}405.76 < 21{,}426.05$$
+
+The end-of-year schedule finishes \\$1,020.29 lower, and it must, since multiplying by $1.05$ can only increase a positive amount. Under end-of-year timing the final deposit earns nothing at all before the fund is measured. The claim says the ordinary result is lower, so the statement is true.`,
       `**C) The dollar gap between the annuity-due result and the ordinary-annuity result is approximately \\$1,120.29.**  (false)
 
-The gap is 21,426.05 - 20,405.76 = \\$1,020.29, not \\$1,120.29 as stated.`,
+The gap is the difference between the two timings, so both accumulated values are needed. The ordinary annuity, with $a = 3{,}000$ dollars, $r = 0.05$, and $n = 6$, gives
+
+$$F_{\\mathrm{ord}} = \\frac{3{,}000}{0.05}\\bigl[(1.05)^{6}-1\\bigr]$$
+
+$$(1.05)^{6} = 1.340096$$
+
+$$F_{\\mathrm{ord}} = 60{,}000 \\times 0.340096 = 20{,}405.76$$
+
+The annuity due advances that figure one period:
+
+$$F_{\\mathrm{due}} = 20{,}405.76 \\times 1.05 = 21{,}426.05$$
+
+Subtracting:
+
+$$21{,}426.05 - 20{,}405.76$$
+
+$$= 1{,}020.29$$
+
+The gap is \\$1,020.29, which is also just one year's interest on the ordinary total, since $20{,}405.76 \\times 0.05 = 1{,}020.29$. The claim names \\$1,120.29, exactly \\$100.00 too high, so the statement is false.`,
       `**D) If the number of deposits were doubled to 12 years, the annuity-due future value would also exactly double, to approximately \\$42,852.10.**  (false)
 
-Extending to 12 years gives $F_{\\mathrm{due}}(12) = \\$50,138.93$, which is MORE than double the 6-year result (\\$42,852.10 would be double) - not exactly double - because future value grows exponentially, not linearly, with the number of periods.
+The number of deposits sits inside a power, so doubling it more than doubles the accumulated value:
 
-Twelve years:
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr], \\qquad F_{\\mathrm{due}} = F_n(1+r)$$
 
-$$F_{\\mathrm{ord}}(12) = 60,000\\bigl[(1.05)^{12} - 1\\bigr] = 60,000 \\times 0.795856 = \\$47,751.36$$
+Over six years, with $a = 3{,}000$ dollars and $r = 0.05$:
 
-$$F_{\\mathrm{due}}(12) = 47,751.36 \\times 1.05 = \\$50,138.93$$
+$$(1.05)^{6} = 1.340096$$
 
-Double the 6-year due value would be \\$42,852.10. \\$50,138.93 is more than double, not equal to double.`,
+$$F_{\\mathrm{ord}}(6) = 60{,}000 \\times 0.340096 = 20{,}405.76$$
+
+$$F_{\\mathrm{due}}(6) = 20{,}405.76 \\times 1.05 = 21{,}426.05$$
+
+Over twelve years at the same deposit and rate:
+
+$$(1.05)^{12} = 1.795856$$
+
+$$F_{\\mathrm{ord}}(12) = 60{,}000 \\times 0.795856 = 47{,}751.36$$
+
+$$F_{\\mathrm{due}}(12) = 47{,}751.36 \\times 1.05$$
+
+$$F_{\\mathrm{due}}(12) = 50{,}138.93$$
+
+Exact doubling of the six-year figure would be
+
+$$2 \\times 21{,}426.05 = 42{,}852.10$$
+
+Comparing the two:
+
+$$50{,}138.93 > 42{,}852.10$$
+
+Twelve years of deposits produce \\$7,286.83 more than double, because the first six deposits keep compounding throughout the second six years. The value therefore does not merely double, so the statement is false.`,
       `**E) Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of interest growth, regardless of the number of payments or the interest rate.**  (true)
 
-This is a direct structural identity: $F_{\\mathrm{due}} = F_{\\mathrm{ordinary}} \\times (1+r)$ holds for any combination of a, r, and n, since shifting every payment one period earlier simply multiplies the entire ordinary-annuity result by one additional period's growth factor.
+The two schedules contain the same payments, and the only difference is that every annuity-due payment lands one period earlier than its ordinary counterpart. Each payment therefore spends one extra period growing, so every term in the accumulated value picks up the same factor $(1+r)$. Factoring that common multiplier out of the whole sum gives
 
-The identity $F_{\\mathrm{due}} = F_{\\mathrm{ord}}(1+r)$ does not depend on a or n. Here 20,405.76 × 1.05 = 21,426.05 confirms it for these numbers, and the same extra factor (1+r) applies at any other horizon.`,
+$$F_{\\mathrm{due}} = F_n(1+r)$$
+
+where the ordinary value is
+
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr]$$
+
+Writing the due value out in full shows that nothing else changes:
+
+$$F_{\\mathrm{due}} = \\frac{a}{r}\\bigl[(1+r)^{n}-1\\bigr](1+r)$$
+
+The deposit $a$ and the count $n$ sit entirely inside the ordinary factor, so the extra $(1+r)$ multiplies whatever that factor happens to be, whatever values $a$ and $n$ take. Checking it on the gym's own numbers, with $a = 3{,}000$ dollars, $r = 0.05$, and $n = 6$:
+
+$$F_{\\mathrm{ord}} = 60{,}000 \\times \\bigl[(1.05)^{6}-1\\bigr] = 60{,}000 \\times 0.340096 = 20{,}405.76$$
+
+$$F_{\\mathrm{due}} = 20{,}405.76 \\times 1.05 = 21{,}426.05$$
+
+and at the longer horizon $n = 12$:
+
+$$F_{\\mathrm{ord}} = 60{,}000 \\times 0.795856 = 47{,}751.36$$
+
+$$F_{\\mathrm{due}} = 47{,}751.36 \\times 1.05 = 50{,}138.93$$
+
+Both horizons carry the same multiplier $1.05$, one extra year of interest growth on the whole balance. The identity holds for any $a$, any $r$, and any $n$, exactly as the claim states, so the statement is true.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 89,
@@ -6816,59 +14326,155 @@ Future value of annuity due: $F_{\\mathrm{due}}=F_n(1+r)$
     tactical_explanations: [
       `**A) The present value of the lease payments today is approximately \\$107,162.61.**  (true)
 
-$P_{\\mathrm{due}}(5) = P_{\\mathrm{ordinary}}(5) \\times 1.06 = 101,096.80 \\times 1.06 = \\$107,162.61$, matching the statement exactly.
+Rent paid at the start of each year forms an annuity due, which is an ordinary annuity with every payment moved one period earlier. Each payment is then discounted one period less, so the ordinary present value is computed first and then advanced by one period:
 
-$$P_{\\mathrm{ord}} = (24,000 / 0.06)\\bigl[1 - 1/(1.06)^{5}\\bigr]$$
+$$P_n = \\frac{a}{r}\\Bigl[1-\\frac{1}{(1+r)^{n}}\\Bigr], \\qquad P_{\\mathrm{due}} = P_n(1+r)$$
 
-$$(1.06)^{5} \\approx 1.338226,\\quad 1/1.338226 \\approx 0.747258$$
+With rent $a = 24{,}000$ dollars, an opportunity cost of $r = 0.06$, and a term of $n = 5$ years:
 
-$$1 - 0.747258 = 0.252742$$
+$$P_{\\mathrm{ord}} = \\frac{24{,}000}{0.06}\\Bigl[1-\\frac{1}{(1.06)^{5}}\\Bigr]$$
 
-$$400,000 \\times 0.252742 = \\$101,096.80$$
+The leading fraction is
 
-$$P_{\\mathrm{due}} = 101,096.80 \\times 1.06 = \\$107,162.61$$`,
+$$\\frac{24{,}000}{0.06} = 400{,}000$$
+
+and the fifth power of the interest factor is
+
+$$(1.06)^{5} = 1.338226$$
+
+so the bracket becomes
+
+$$1 - \\frac{1}{1.338226} = 1 - 0.747258 = 0.252742$$
+
+$$P_{\\mathrm{ord}} = 400{,}000 \\times 0.252742 = 101{,}096.80$$
+
+Advancing one period:
+
+$$P_{\\mathrm{due}} = 101{,}096.80 \\times 1.06$$
+
+$$P_{\\mathrm{due}} = 107{,}162.61$$
+
+The lease is worth about \\$107,162.61 today, exactly the figure claimed, so the statement is true.`,
       `**B) If the same \\$24,000 payments were instead due at the END of each year, the present value would be LOWER than the annuity-due result.**  (true)
 
-$P_{\\mathrm{ordinary}}(5) = (24,000/0.06)[1 - 1/(1.06)^{5}] = \\$101,096.80$, which is indeed lower than the annuity-due result of \\$107,162.61, since discounting end-of-year payments back one extra period each reduces their present value.
+End-of-year rent forms an ordinary annuity, whose present value is
 
-The ordinary present value is \\$101,096.80, already below the due value \\$107,162.61. End-of-year rent is discounted one extra period, so it is worth less today.`,
+$$P_n = \\frac{a}{r}\\Bigl[1-\\frac{1}{(1+r)^{n}}\\Bigr]$$
+
+With $a = 24{,}000$ dollars, $r = 0.06$, and $n = 5$:
+
+$$P_{\\mathrm{ord}} = \\frac{24{,}000}{0.06}\\Bigl[1-\\frac{1}{(1.06)^{5}}\\Bigr]$$
+
+$$(1.06)^{5} = 1.338226$$
+
+$$P_{\\mathrm{ord}} = 400{,}000 \\times 0.252742 = 101{,}096.80$$
+
+Start-of-year rent is the same five payments shifted one period earlier, so each is discounted one period less and the total is scaled up by the interest factor:
+
+$$P_{\\mathrm{due}} = 101{,}096.80 \\times 1.06 = 107{,}162.61$$
+
+Comparing the two:
+
+$$101{,}096.80 < 107{,}162.61$$
+
+End-of-year timing lowers the landlord's value by \\$6,065.81, since every payment arrives a year later and is discounted once more. The claim says the end-of-year present value is lower, so the statement is true.`,
       `**C) The dollar gap between the annuity-due present value and the ordinary-annuity present value is approximately \\$7,065.81.**  (false)
 
-The gap is 107,162.61 - 101,096.80 = \\$6,065.81, not \\$7,065.81 as stated.`,
+The gap comes from the difference between the two timings, so both present values are needed. The ordinary annuity, with $a = 24{,}000$ dollars, $r = 0.06$, and $n = 5$, gives
+
+$$P_{\\mathrm{ord}} = \\frac{24{,}000}{0.06}\\Bigl[1-\\frac{1}{(1.06)^{5}}\\Bigr]$$
+
+$$(1.06)^{5} = 1.338226$$
+
+$$P_{\\mathrm{ord}} = 400{,}000 \\times 0.252742 = 101{,}096.80$$
+
+The annuity due advances that figure one period:
+
+$$P_{\\mathrm{due}} = 101{,}096.80 \\times 1.06 = 107{,}162.61$$
+
+Subtracting:
+
+$$107{,}162.61 - 101{,}096.80$$
+
+$$= 6{,}065.81$$
+
+The gap is \\$6,065.81, which equals one year's interest on the ordinary present value, since $101{,}096.80 \\times 0.06 = 6{,}065.81$. The claim names \\$7,065.81, exactly \\$1,000.00 too high, so the statement is false.`,
       `**D) If the lease term were extended to 10 years, the annuity-due present value would also exactly double, to approximately \\$214,325.22.**  (false)
 
-Extending to 10 years gives $P_{\\mathrm{due}}(10) = \\$187,240.52$, which is LESS than double the 5-year result (\\$214,325.22 would be double) - not exactly double - because discounting is exponential, not linear, in the number of periods, so later payments contribute progressively less.
+Doubling the lease term cannot double the present value, because the discount term $1/(1+r)^{n}$ shrinks as the horizon grows and the later payments contribute progressively less. Both terms can be computed from
 
-Ten-year lease:
+$$P_n = \\frac{a}{r}\\Bigl[1-\\frac{1}{(1+r)^{n}}\\Bigr], \\qquad P_{\\mathrm{due}} = P_n(1+r)$$
 
-$$P_{\\mathrm{ord}}(10) = 400,000\\bigl[1 - 1/(1.06)^{10}\\bigr]$$
+Over five years, with $a = 24{,}000$ dollars and $r = 0.06$:
 
-$$(1.06)^{10} \\approx 1.790848,\\quad 1/1.790848 \\approx 0.558395$$
+$$(1.06)^{5} = 1.338226$$
 
-$$1 - 0.558395 = 0.441605$$
+$$P_{\\mathrm{ord}}(5) = 400{,}000 \\times \\bigl[1 - 0.747258\\bigr] = 400{,}000 \\times 0.252742 = 101{,}096.80$$
 
-$$400,000 \\times 0.441605 = \\$176,642.00$$
+$$P_{\\mathrm{due}}(5) = 101{,}096.80 \\times 1.06 = 107{,}162.61$$
 
-$$P_{\\mathrm{due}}(10) = 176,642.00 \\times 1.06 = \\$187,240.52$$
+Over ten years at the same rent and rate:
 
-Double the 5-year due value would be \\$214,325.22. \\$187,240.52 is less than double.`,
+$$(1.06)^{10} = 1.790848$$
+
+$$1 - \\frac{1}{1.790848} = 1 - 0.558395 = 0.441605$$
+
+$$P_{\\mathrm{ord}}(10) = 400{,}000 \\times 0.441605 = 176{,}642.00$$
+
+$$P_{\\mathrm{due}}(10) = 176{,}642.00 \\times 1.06$$
+
+$$P_{\\mathrm{due}}(10) = 187{,}240.52$$
+
+Exact doubling of the five-year figure would be
+
+$$2 \\times 107{,}162.61 = 214{,}325.22$$
+
+Comparing the two:
+
+$$187{,}240.52 < 214{,}325.22$$
+
+The ten-year lease is worth about \\$27,084.70 less than double the five-year lease, because years 6 through 10 are each discounted by more than the first five. The statement is false.`,
       `**E) The annuity-due present value can also be computed as the first \\$24,000 payment plus the present value of an ordinary annuity of the remaining 4 payments.**  (true)
 
-Since the first payment of an annuity due occurs today (with zero discounting) and the remaining n-1 payments form an ordinary annuity one period later, splitting the payment stream this way gives \\$24,000 today plus a discounted remainder of \\$83,162.40, for a combined total of \\$107,162.40, matching $P_{\\mathrm{due}}$ within rounding - confirming this alternative method is valid.
+An annuity due can be split at the first payment. The rent due today is paid immediately and so is not discounted at all, while the remaining four payments fall at the ends of the next four periods and form an ordinary annuity:
 
-Split the stream: \\$24,000 due today, plus an ordinary 4-year annuity of \\$24,000.
+$$P_{\\mathrm{due}} = a + P_{n-1}$$
 
-$$P_4 = 400,000\\bigl[1 - 1/(1.06)^{4}\\bigr]$$
+The first piece is simply
 
-$$(1.06)^{4} \\approx 1.262477,\\quad 1/1.262477 \\approx 0.792094$$
+$$a = 24{,}000$$
 
-$$1 - 0.792094 = 0.207906$$
+dollars. The second piece uses the ordinary present-value formula with $a = 24{,}000$ dollars, $r = 0.06$, and $n - 1 = 4$:
 
-$$400,000 \\times 0.207906 = \\$83,162.40$$
+$$P_4 = \\frac{24{,}000}{0.06}\\Bigl[1-\\frac{1}{(1.06)^{4}}\\Bigr]$$
 
-$$24,000 + 83,162.40 = \\$107,162.40$$
+The leading fraction is
 
-Matches $P_{\\mathrm{due}}$ within a rounding cent.`,
+$$\\frac{24{,}000}{0.06} = 400{,}000$$
+
+and the fourth power of the interest factor is
+
+$$(1.06)^{4} = 1.262477$$
+
+so the bracket becomes
+
+$$1 - \\frac{1}{1.262477} = 1 - 0.792094 = 0.207906$$
+
+$$P_4 = 400{,}000 \\times 0.207906 = 83{,}162.40$$
+
+Adding the two pieces:
+
+$$24{,}000.00 + 83{,}162.40$$
+
+$$= 107{,}162.40$$
+
+The standard route multiplies the five-year ordinary value by the interest factor:
+
+$$P_{\\mathrm{ord}}(5) = 400{,}000 \\times 0.252742 = 101{,}096.80$$
+
+$$P_{\\mathrm{due}}(5) = 101{,}096.80 \\times 1.06 = 107{,}162.61$$
+
+The two routes agree at \\$107,162.40 and \\$107,162.61, a difference of twenty-one cents that comes entirely from rounding the interest factors to six decimals. Splitting off the first payment is therefore a valid way to value the lease, so the statement is true.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 90,
@@ -6919,41 +14525,107 @@ Alternative: $P_{\\mathrm{due}}=a+P_{n-1}$
     tactical_explanations: [
       `**A) The value of the perpetuity as of the end of year 4 is approximately \\$166,666.67.**  (true)
 
-The perpetuity formula $a/r$ gives the value one period before the first payment; since the first payment falls at $t = 5$, that valuation point is $t = 4$: $V_4 = 10,000/0.06 = \\$166,666.67$, matching the statement exactly.`,
+A perpetuity pays a fixed amount at the end of every period forever. Its value at the moment one full period before the first payment is the payment divided by the periodic interest rate:
+
+$$V = \\frac{a}{r}$$
+
+The endowment pays $a = 10,000$ at the end of each year and the fund earns $r = 6\\% = 0.06$ per year. The first payment arrives at the end of year 5, so the formula measures the stream one year earlier, at the end of year 4:
+
+$$V_4 = \\frac{10,000}{0.06}$$
+
+$$V_4 = 166,666.67$$
+
+The claim puts the year-4 value at about \\$166,666.67, and the calculation returns \\$166,666.67, so the statement is true.`,
       `**B) Discounting this year-4 value back 4 years to today at 6% gives a present value of approximately \\$132,015.61.**  (true)
 
-Discounting $V_4$ back $4$ years at $6\\%$ gives $PV_0 = 166,666.67/(1.06)^{4} \\approx 166,666.67/1.262477 = \\$132,015.61$, matching the statement exactly.`,
+A value dated at a future point is moved to today by dividing it by the growth factor for the years in between:
+
+$$PV_0 = \\frac{V_k}{(1+r)^{k}}$$
+
+The perpetuity formula values the stream one period before its first payment, so with payments starting at the end of year 5 the stream is worth
+
+$$V_4 = \\frac{10,000}{0.06} = 166,666.67$$
+
+as of the end of year 4. That date sits $k = 4$ years ahead of today, and the fund earns $r = 0.06$:
+
+$$PV_0 = \\frac{166,666.67}{(1.06)^{4}}$$
+
+$$(1.06)^{4} \\approx 1.262477$$
+
+$$PV_0 \\approx \\frac{166,666.67}{1.262477}$$
+
+$$PV_0 \\approx 132,015.61$$
+
+The claim gives \\$132,015.61 as today's required donation, and the calculation returns \\$132,015.61, so the statement is true.`,
       `**C) If the first payment instead began immediately at the end of year 1, today's present value would be LOWER than the deferred value of \\$132,015.61.**  (false)
 
-Deferring the payments pushes them further into the future, which REDUCES today's present value, not increases it: the immediate perpetuity is worth \\$166,666.67 today, which is higher than the deferred value of \\$132,015.61, not lower.
+An ordinary perpetuity whose first payment falls at the end of year 1 is already valued at today's date by the perpetuity formula, with no further discounting needed:
 
-An immediate perpetuity (first payment at t = 1) is already worth a/r today:
+$$P_0 = \\frac{a}{r}$$
 
-$$P = 10,000 / 0.06 = \\$166,666.67$$
+Substituting the \\$10,000 annual payment and the 6% rate:
 
-\\$166,666.67 > \\$132,015.61, so starting sooner raises today's value, not lowers it.`,
+$$P_0 = \\frac{10,000}{0.06}$$
+
+$$P_0 = 166,666.67$$
+
+The deferred version takes that same year-4 value and pushes it back four years:
+
+$$PV_0 = \\frac{166,666.67}{(1.06)^{4}} \\approx 132,015.61$$
+
+Comparing the two figures:
+
+$$166,666.67 - 132,015.61 = 34,651.06$$
+
+Starting payments at the end of year 1 instead of year 5 raises today's value by \\$34,651.06, so the immediate perpetuity is worth more than the deferred \\$132,015.61, not less. The claim says it would be lower, so the statement is false.`,
       `**D) If the deferral were extended so the first payment begins at the end of year 9, today's present value would be LESS than half of \\$132,015.61.**  (false)
 
-Extending the deferral to 8 years reduces the present value to \\$104,568.80, which remains well ABOVE half of the 4-year-deferred value (\\$66,007.81), not below it - the value shrinks as deferral lengthens, but not fast enough to fall below half in this case.
+Value the perpetuity one period before its first payment, then discount that value back to today:
 
-First payment at t = 9 values the perpetuity at t = 8:
+$$PV_0 = \\frac{a/r}{(1+r)^{k}}$$
 
-$$PV_0' = 166,666.67 / (1.06)^{8}$$
+With the first payment moved to the end of year 9, the perpetuity is valued at the end of year 8, so $k = 8$ while the stream itself is unchanged:
+
+$$\\frac{a}{r} = \\frac{10,000}{0.06} = 166,666.67$$
+
+$$PV_0' = \\frac{166,666.67}{(1.06)^{8}}$$
 
 $$(1.06)^{8} \\approx 1.593848$$
 
-$$166,666.67 / 1.593848 = \\$104,568.80$$
+$$PV_0' \\approx \\frac{166,666.67}{1.593848}$$
 
-Half of \\$132,015.61 is \\$66,007.81. \\$104,568.80 stays above that half.`,
+$$PV_0' \\approx 104,568.80$$
+
+Half of the four-year-deferred value is
+
+$$\\frac{132,015.61}{2} = 66,007.81$$
+
+Comparing the two:
+
+$$104,568.80 - 66,007.81 = 38,561.00$$
+
+Four extra years of deferral do cut today's value, but it still sits \\$38,561.00 above half of \\$132,015.61, so the statement is false.`,
       `**E) The ratio of the deferred present value to the immediate perpetuity value is exactly 0.8321.**  (false)
 
-Because $PV_0 = V/(1.06)^{4}$, the ratio PV0/V is by definition exactly the 4-year discount factor $1/(1.06)^{4} \\approx 0.7921$, not 0.8321 as stated.
+The deferred present value is the year-4 value divided by the four-year growth factor, so the ratio of the two is exactly the four-year discount factor:
 
-The ratio is exactly the 4-year discount factor:
+$$\\frac{PV_0}{V_4} = \\frac{V_4/(1.06)^{4}}{V_4} = \\frac{1}{(1.06)^{4}}$$
 
-$$PV_0 / V_4 = 1 / (1.06)^{4} \\approx 1 / 1.262477 \\approx 0.7921$$
+Substituting the compounded factor:
 
-About 0.7921, not 0.8321.`,
+$$(1.06)^{4} \\approx 1.262477$$
+
+$$\\frac{1}{1.262477} \\approx 0.792094$$
+
+The same number appears when the two dollar amounts are divided directly:
+
+$$\\frac{132,015.61}{166,666.67} \\approx 0.7921$$
+
+The claim states the ratio is exactly 0.8321:
+
+$$0.8321 - 0.7921 = 0.0400$$
+
+The true ratio is about 0.7921, four hundredths below the stated figure, so the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 91,
@@ -7004,25 +14676,101 @@ Discount back to today: $PV_0=V/(1+r)^{k}$, where k is the number of years from 
     tactical_explanations: [
       `**A) The fair value per share is approximately \\$60.71.**  (true)
 
-$P = a/r = 4.25/0.07 = \\$60.71$, matching the statement exactly.`,
+A share that pays a fixed dividend at the end of every year forever is a perpetuity, so its fair value is the annual dividend divided by the required return:
+
+$$P = \\frac{a}{r}$$
+
+The preferred share pays $a = 4.25$ each year and investors require $r = 7\\% = 0.07$ on this level of risk:
+
+$$P = \\frac{4.25}{0.07}$$
+
+$$P \\approx 60.714286$$
+
+$$P \\approx 60.71$$
+
+The claim puts the fair value at about \\$60.71 per share, and the calculation returns \\$60.71, so the statement is true.`,
       `**B) At a market price of \\$65.00, the preferred stock is undervalued relative to its fair value.**  (false)
 
-The $\\$65.00$ market price sits above the $\\$60.71$ fair value, meaning the stock is overvalued, not undervalued as claimed.`,
+Fair value for a fixed perpetual dividend comes from the perpetuity formula:
+
+$$P = \\frac{a}{r}$$
+
+Substituting the \\$4.25 dividend and the 7% required return:
+
+$$P = \\frac{4.25}{0.07} \\approx 60.71$$
+
+A share is undervalued when its market price sits below fair value, and overvalued when the price sits above it. Comparing the \\$65.00 market price with the computed fair value:
+
+$$65.00 - 60.71 = 4.29$$
+
+The market price stands \\$4.29 above fair value, which makes the share overvalued rather than undervalued. The claim says undervalued, so the statement is false.`,
       `**C) If the required return fell to 4%, the fair value would rise to \\$116.25 per share.**  (false)
 
-$P' = 4.25/0.04 = \\$106.25$, not $\\$116.25$ as stated.`,
+The perpetuity value is the dividend divided by the required return, so a change in the required return alters only the denominator:
+
+$$P' = \\frac{a}{r'}$$
+
+Substituting the unchanged \\$4.25 dividend and the lower rate $r' = 4\\% = 0.04$:
+
+$$P' = \\frac{4.25}{0.04}$$
+
+$$P' = 106.25$$
+
+The claim states the value would rise to \\$116.25 per share:
+
+$$116.25 - 106.25 = 10.00$$
+
+The stated figure overshoots the correct \\$106.25 by \\$10.00, so the statement is false.`,
       `**D) This drop in the required return, from 7% to 4%, increases the fair value by MORE than 75%.**  (false)
 
-The increase works out to EXACTLY 75.00%, not more than 75% - a precise boundary case where the statement's claim of "more than" narrowly fails even though the number itself (75%) looks correct at first glance.
+A percentage change compares the size of the move with the starting value:
 
-From \\$60.714286 to \\$106.25:
+$$\\text{percent change} = \\frac{P' - P}{P}$$
 
-$$(106.25 - 60.714286) / 60.714286 = 0.750000 = 75.00\\%$$
+At the original 7% required return the fair value is
 
-The increase is exactly 75%, so "more than 75%" fails.`,
+$$P = \\frac{4.25}{0.07} \\approx 60.714286$$
+
+and at the lower 4% required return it is
+
+$$P' = \\frac{4.25}{0.04} = 106.25$$
+
+The size of the rise is
+
+$$106.25 - 60.714286 = 45.535714$$
+
+and the relative rise is
+
+$$\\frac{45.535714}{60.714286} = 0.750000$$
+
+$$0.750000 = 75.00\\%$$
+
+The claim requires an increase strictly greater than 75%. The increase is exactly 75.00%, which does not clear that bar, so the statement is false.`,
       `**E) If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall to exactly \\$50.57.**  (false)
 
-Since $P = a/r$ is directly proportional to $a$, a $20\\%$ dividend cut produces an exactly $20\\%$ value cut: $a' = 4.25 \\times 0.80 = 3.40$, so $P'' = 3.40/0.07 \\approx \\$48.57$, not $\\$50.57$ as stated.`,
+Fair value is directly proportional to the dividend, because the required return sits alone in the denominator:
+
+$$P = \\frac{a}{r}$$
+
+A 20% cut leaves 80% of the original dividend:
+
+$$a' = 4.25 \\times 0.80$$
+
+$$a' = 3.40$$
+
+Substituting the reduced dividend at the unchanged 7% required return:
+
+$$P'' = \\frac{3.40}{0.07}$$
+
+$$P'' \\approx 48.571429$$
+
+$$P'' \\approx 48.57$$
+
+The claim states the value would fall to exactly \\$50.57:
+
+$$50.57 - 48.57 = 2.00$$
+
+The correct figure is \\$48.57, two dollars below the stated value, so the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 92,
@@ -7069,23 +14817,99 @@ Perpetuity (fair value): $P=a/r$
     tactical_explanations: [
       `**A) The present value of just the perpetual maintenance payments is approximately \\$333,333.33.**  (true)
 
-$P = a/r = 15,000/0.045 = \\$333,333.33$, matching the statement exactly.`,
+A payment stream that runs forever without growing is a perpetuity, and its value one period before the first payment is the annual amount divided by the interest rate:
+
+$$P = \\frac{a}{r}$$
+
+Maintenance costs $a = 15,000$ per year beginning one year from now, and the applicable rate is $r = 4.5\\% = 0.045$:
+
+$$P = \\frac{15,000}{0.045}$$
+
+$$P = 333,333.33$$
+
+The claim gives about \\$333,333.33 for the maintenance payments on their own, and the calculation returns \\$333,333.33, so the statement is true.`,
       `**B) Including the \\$50,000 immediate renovation cost, the total amount the city must set aside today is approximately \\$383,333.33.**  (true)
 
-Adding the $\\$50,000.00$ renovation cost to the $\\$333,333.33$ perpetuity value gives $\\$383,333.33$, matching the statement exactly.`,
+The renovation is paid today and so needs no discounting, while the maintenance stream is a perpetuity. The total funding requirement adds the two:
+
+$$T = C_0 + \\frac{a}{r}$$
+
+Substituting the \\$15,000 annual maintenance at the 4.5% rate:
+
+$$\\frac{15,000}{0.045} = 333,333.33$$
+
+Adding the \\$50,000 renovation paid today:
+
+$$T = 50,000 + 333,333.33$$
+
+$$T = 383,333.33$$
+
+The claim states the city must set aside about \\$383,333.33 today, and the total comes to \\$383,333.33, so the statement is true.`,
       `**C) If the interest rate were instead 6%, the total required funding would be approximately \\$300,000.00.**  (true)
 
-At $6\\%$, the perpetuity value falls to $P' = 15,000/0.06 = \\$250,000.00$, so adding the $\\$50,000.00$ renovation gives $\\$300,000.00$, matching the statement exactly.`,
+A higher interest rate shrinks the perpetuity part of the requirement while leaving the cash paid today untouched:
+
+$$T' = C_0 + \\frac{a}{r'}$$
+
+Substituting the \\$15,000 annual maintenance at the higher rate $r' = 6\\% = 0.06$:
+
+$$\\frac{15,000}{0.06} = 250,000.00$$
+
+Adding the unchanged renovation cost:
+
+$$T' = 50,000 + 250,000$$
+
+$$T' = 300,000.00$$
+
+The claim states the total requirement would be about \\$300,000.00, and the calculation returns \\$300,000.00, so the statement is true.`,
       `**D) This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.**  (false)
 
-The reduction is $\\$383,333.33 - \\$300,000.00 = \\$83,333.33$, which is $83,333.33/383,333.33 \\approx 21.74\\%$ of the original total - more than $20\\%$ but not more than $25\\%$.`,
+A percentage reduction compares the size of the drop with the original requirement:
+
+$$\\text{percent drop} = \\frac{T - T'}{T}$$
+
+At 4.5% the requirement is the renovation plus the perpetuity:
+
+$$T = 50,000 + \\frac{15,000}{0.045} = 383,333.33$$
+
+At 6% it is
+
+$$T' = 50,000 + \\frac{15,000}{0.06} = 300,000.00$$
+
+The drop is
+
+$$383,333.33 - 300,000.00 = 83,333.33$$
+
+and as a share of the original requirement:
+
+$$\\frac{83,333.33}{383,333.33} \\approx 0.217391$$
+
+$$0.217391 \\approx 21.74\\%$$
+
+The claim needs a reduction above 25%. The actual reduction is about 21.74%, more than three percentage points short, so the statement is false.`,
       `**E) If the council only needed the perpetuity and the rate were 6%, the required funding would be LESS than half of the original combined 4.5%-rate total.**  (false)
 
-The perpetuity-only requirement at 6% (\\$250,000.00) is actually LARGER than half of the original combined total (\\$191,666.67), not smaller - even though raising the rate shrank the perpetuity value considerably, it still exceeds half of the original combined (renovation + maintenance) total.
+Two figures decide this claim: the perpetuity-only requirement at 6%, and half of the original combined requirement at 4.5%.
 
-Half of the original combined total: $383,333.33 / 2 = \\$191,666.67$.
+The perpetuity-only requirement at the higher rate is
 
-The 6% perpetuity-only figure is \\$250,000, which exceeds \\$191,666.67, so it is not less than half.`,
+$$P' = \\frac{15,000}{0.06}$$
+
+$$P' = 250,000.00$$
+
+The original combined requirement was the renovation plus the 4.5% perpetuity:
+
+$$T = 50,000 + \\frac{15,000}{0.045} = 383,333.33$$
+
+Half of that is
+
+$$\\frac{383,333.33}{2} = 191,666.67$$
+
+Comparing the two:
+
+$$250,000.00 - 191,666.67 = 58,333.33$$
+
+Raising the rate does shrink the perpetuity a great deal, but \\$250,000.00 still sits \\$58,333.33 above half of the original total, so it is not less than half and the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 93,
@@ -7134,27 +14958,107 @@ Total required funding = immediate cost + perpetuity value
     tactical_explanations: [
       `**A) The property's fair value is approximately \\$436,363.64.**  (true)
 
-$P = a_1/(r-g) = 24,000/0.055 = \\$436,363.64$, matching the statement exactly.`,
+A cash flow that grows at a constant rate forever is valued by the growing-perpetuity formula, which divides next year's cash flow by the spread between the required return and the growth rate:
+
+$$P = \\frac{a_1}{r - g}$$
+
+The property yields $a_1 = 24,000$ at the end of year 1, rents escalate at $g = 2.5\\% = 0.025$, and the investor requires $r = 8\\% = 0.08$:
+
+$$r - g = 0.08 - 0.025 = 0.055$$
+
+$$P = \\frac{24,000}{0.055}$$
+
+$$P \\approx 436,363.64$$
+
+The claim puts fair value at about \\$436,363.64, and the calculation returns \\$436,363.64, so the statement is true.`,
       `**B) If the cash flows did NOT grow, the plain-perpetuity fair value, \\$300,000.00, is HIGHER than the growing-perpetuity value of \\$436,363.64.**  (false)
 
-With no growth, $P_{\\mathrm{level}} = 24,000/0.08 = \\$300,000.00$, which is actually LOWER than the growing-perpetuity value of $\\$436,363.64$, not higher, since growth adds value by raising every future cash flow.`,
+With no growth at all the stream becomes a level perpetuity, valued by dividing the annual cash flow by the required return alone:
+
+$$P_{\\text{level}} = \\frac{a}{r}$$
+
+$$P_{\\text{level}} = \\frac{24,000}{0.08}$$
+
+$$P_{\\text{level}} = 300,000.00$$
+
+With 2.5% growth the denominator shrinks from the full required return to the spread $r - g$:
+
+$$P = \\frac{24,000}{0.08 - 0.025} = \\frac{24,000}{0.055} \\approx 436,363.64$$
+
+Comparing the two valuations:
+
+$$436,363.64 - 300,000.00 = 136,363.64$$
+
+The level-perpetuity value sits \\$136,363.64 below the growing-perpetuity value, because growth lifts every future cash flow. The claim calls the level value higher, so the statement is false.`,
       `**C) If the growth rate rose to 4%, the fair value would MORE than double, to over \\$872,727.28.**  (false)
 
-Raising the growth rate to 4% increases the fair value to \\$600,000.00, which is a substantial increase but is NOT more than double the original \\$436,363.64 (double would be \\$872,727.28) - the value is highly sensitive to (r - g) but does not increase without limit until g approaches r more closely.
+A change in the growth rate moves only the spread in the denominator:
 
-Raise g to 4%:
+$$P' = \\frac{a_1}{r - g'}$$
 
-$$P' = 24,000 / (0.08 - 0.04) = 24,000 / 0.04 = \\$600,000$$
+Substituting $g' = 4\\% = 0.04$ with the required return still at 8%:
 
-Double the original \\$436,363.64 would be \\$872,727.28. \\$600,000 is a large rise but not more than double.`,
+$$r - g' = 0.08 - 0.04 = 0.04$$
+
+$$P' = \\frac{24,000}{0.04}$$
+
+$$P' = 600,000.00$$
+
+Doubling the original fair value would require
+
+$$2 \\times 436,363.64 = 872,727.27$$
+
+Comparing the new value with that threshold:
+
+$$872,727.27 - 600,000.00 = 272,727.27$$
+
+The reason it falls short is that the value moves with the reciprocal of the spread, and the spread does not halve here:
+
+$$\\frac{0.055}{0.04} = 1.375$$
+
+so the value rises by a factor of 1.375 rather than 2:
+
+$$436,363.64 \\times 1.375 = 600,000.00$$
+
+The value climbs to \\$600,000.00, a large rise, but it falls \\$272,727.27 short of double, so the statement is false.`,
       `**D) If the required return instead fell to 6%, the fair value would be approximately \\$715,714.29.**  (false)
 
-$P'' = 24,000/(0.06-0.025) = 24,000/0.035 = \\$685,714.29$, not $\\$715,714.29$ as stated.`,
+The growing-perpetuity value depends on the spread between the required return and the growth rate, so a lower required return narrows that spread:
+
+$$P'' = \\frac{a_1}{r' - g}$$
+
+Substituting the lower required return $r' = 6\\% = 0.06$ with growth unchanged at 2.5%:
+
+$$r' - g = 0.06 - 0.025 = 0.035$$
+
+$$P'' = \\frac{24,000}{0.035}$$
+
+$$P'' \\approx 685,714.29$$
+
+The claim states about \\$715,714.29:
+
+$$715,714.29 - 685,714.29 = 30,000.00$$
+
+The stated figure sits exactly \\$30,000.00 above the correct \\$685,714.29, so the statement is false.`,
       `**E) The growing-perpetuity valuation is only valid when the growth rate is below the required return; if the growth rate were to equal or exceed the 8% required return, the formula could not be used.**  (true)
 
-This is a direct structural requirement of the growing-perpetuity formula: it depends on the spread (r - g) staying strictly positive, so growth rates at or above the required return break the model entirely, matching the statement exactly.
+The growing perpetuity is the sum of a geometric series whose terms shrink only when each discounted cash flow is smaller than the one before it, which requires the growth rate to stay strictly below the required return:
 
-The formula $P = a_1/(r-g)$ needs r > g. If g = 0.08 or higher, the denominator is zero or negative and the model is undefined.`,
+$$P = \\frac{a_1}{r - g}, \\qquad r > g$$
+
+Test the boundary case where growth equals the 8% required return:
+
+$$r - g = 0.08 - 0.08 = 0$$
+
+$$P = \\frac{24,000}{0}$$
+
+Division by zero returns no value at all. Now test a growth rate above the required return, say $g = 0.09$:
+
+$$r - g = 0.08 - 0.09 = -0.01$$
+
+$$P = \\frac{24,000}{-0.01} = -2,400,000$$
+
+A negative price for a stream of positive cash flows is meaningless, so the model genuinely breaks once growth reaches or passes the required return. The claim says exactly this, so the statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 94,
@@ -7204,29 +15108,107 @@ Growing perpetuity: $P=a_1/(r-g)$, valid only for $r>g$
     tactical_explanations: [
       `**A) The next dividend is \\$3.09.**  (true)
 
-$D_1 = D_0(1+g) = 3.00 \\times 1.03 = \\$3.09$, matching the statement exactly.`,
+The dividend growth model discounts next year's dividend, so the dividend just paid has to be grown forward one year first:
+
+$$D_1 = D_0(1 + g)$$
+
+The share just paid $D_0 = 3.00$ and dividends grow at $g = 3\\% = 0.03$ per year:
+
+$$D_1 = 3.00 \\times (1 + 0.03)$$
+
+$$D_1 = 3.00 \\times 1.03$$
+
+$$D_1 = 3.09$$
+
+The claim states the next dividend is \\$3.09, and the calculation returns \\$3.09, so the statement is true.`,
       `**B) The fair value per share is approximately \\$54.50.**  (false)
 
-$P = D_1/(r-g) = 3.09/0.06 = \\$51.50$, not $\\$54.50$ as stated.`,
+Fair value under constant dividend growth is next year's dividend divided by the spread between the required return and the growth rate:
+
+$$P = \\frac{D_1}{r - g}$$
+
+Next year's dividend grows one year from the \\$3.00 just paid:
+
+$$D_1 = 3.00 \\times 1.03 = 3.09$$
+
+The spread between the 9% required return and the 3% growth rate is
+
+$$r - g = 0.09 - 0.03 = 0.06$$
+
+$$P = \\frac{3.09}{0.06}$$
+
+$$P = 51.50$$
+
+The claim states about \\$54.50 per share:
+
+$$54.50 - 51.50 = 3.00$$
+
+The stated value stands \\$3.00 above the correct \\$51.50, so the statement is false.`,
       `**C) Mistakenly using the just-paid dividend instead of next year's dividend understates the correct fair value by \\$2.50.**  (false)
 
-Using $D_0$ in place of $D_1$ gives $3.00/0.06 = \\$50.00$, which is $\\$51.50 - \\$50.00 = \\$1.50$ below the correct value, not $\\$2.50$ as stated.`,
+Using the dividend just paid in place of next year's dividend changes only the numerator of the valuation:
+
+$$P = \\frac{D_1}{r - g}, \\qquad P_{\\text{wrong}} = \\frac{D_0}{r - g}$$
+
+The correct value grows the dividend forward one year, $D_1 = 3.00 \\times 1.03 = 3.09$, and divides by the spread $0.09 - 0.03 = 0.06$:
+
+$$P = \\frac{3.09}{0.06} = 51.50$$
+
+The mistaken value uses the \\$3.00 just paid:
+
+$$P_{\\text{wrong}} = \\frac{3.00}{0.06} = 50.00$$
+
+The size of the understatement is
+
+$$51.50 - 50.00 = 1.50$$
+
+The claim puts the error at \\$2.50, a dollar more than the true gap of \\$1.50, so the statement is false.`,
       `**D) If the growth rate were instead 5%, the fair value would be MORE than double \\$51.50.**  (false)
 
-Raising the growth rate to 5% increases the fair value substantially, to \\$78.75, but this is still short of double the original \\$51.50 (which would be \\$103.00) - the growing-perpetuity value rises sharply as g approaches r, but 5% is not yet close enough to 9% to more than double it here.
+A change in the growth rate moves both the numerator and the denominator, so recompute next year's dividend first:
 
-At g = 5%:
+$$D_1' = D_0(1 + g')$$
 
-$$D_1' = 3.00 \\times 1.05 = \\$3.15$$
+$$D_1' = 3.00 \\times 1.05 = 3.15$$
 
-$$P' = 3.15 / (0.09 - 0.05) = 3.15 / 0.04 = \\$78.75$$
+Then apply the dividend growth model with the new spread:
 
-Double \\$51.50 would be \\$103.00. \\$78.75 is still short of that double.`,
+$$r - g' = 0.09 - 0.05 = 0.04$$
+
+$$P' = \\frac{3.15}{0.04}$$
+
+$$P' = 78.75$$
+
+Double the original fair value would be
+
+$$2 \\times 51.50 = 103.00$$
+
+Comparing the new value with that threshold:
+
+$$103.00 - 78.75 = 24.25$$
+
+Faster growth does lift the value sharply, but \\$78.75 still falls \\$24.25 short of double, so the statement is false.`,
       `**E) If the growth rate equaled the required return exactly, the growing-perpetuity valuation would yield a present value of exactly \\$0.00.**  (false)
 
-As g → r, the formula's denominator (r - g) shrinks toward zero, driving the RESULT toward infinity, not toward \\$0.00 - the fair value becomes undefined (unboundedly large), not zero.
+The dividend growth model divides next year's dividend by the spread between the required return and the growth rate:
 
-If g = r, then r − g = 0 and P is undefined (the present value blows up), not \\$0.00.`,
+$$P = \\frac{D_1}{r - g}$$
+
+Setting the growth rate equal to the 9% required return makes that spread vanish:
+
+$$r - g = 0.09 - 0.09 = 0$$
+
+$$P = \\frac{3.09}{0}$$
+
+Division by zero has no value, and watching the price as growth creeps up to the required return shows which way it moves. Take $g = 0.0899$, just under the required return:
+
+$$D_1 = 3.00 \\times 1.0899 \\approx 3.2697$$
+
+$$r - g = 0.09 - 0.0899 = 0.0001$$
+
+$$P = \\frac{3.2697}{0.0001} \\approx 32,697$$
+
+The value grows without bound as the gap closes, rather than settling on any finite figure, and certainly not on \\$0.00. The claim names exactly \\$0.00, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 95,
@@ -7278,21 +15260,101 @@ Growing perpetuity: $P=D_1/(r-g)$
     tactical_explanations: [
       `**A) Deal 1 is a good buy at its asking price.**  (true)
 
-Deal 1's fair value is $18,000/0.10 = \\$180,000.00$, exceeding the $\\$170,000.00$ price by $\\$10,000.00$, matching the statement exactly.`,
+Deal 1 pays a level amount at the end of every year forever, which is a plain perpetuity valued at the payment divided by the required return:
+
+$$P_1 = \\frac{a}{r}$$
+
+The royalty stream pays $a = 18,000$ per year and the musician requires $r = 10\\% = 0.10$:
+
+$$P_1 = \\frac{18,000}{0.10}$$
+
+$$P_1 = 180,000.00$$
+
+A purchase is a good buy when the fair value clears the asking price. Comparing with the \\$170,000 price:
+
+$$180,000.00 - 170,000.00 = 10,000.00$$
+
+The stream is worth \\$10,000.00 more than it costs, so buying it at \\$170,000 is worthwhile and the statement is true.`,
       `**B) Deal 2's fair value exceeds its asking price by more than \\$60,000.00.**  (true)
 
-Deal 2's fair value is $P_2 = 14,000/(0.10-0.04) = 14,000/0.06 = \\$233,333.33$, exceeding the $\\$170,000.00$ price by $\\$63,333.33$, which is indeed more than $\\$60,000.00$.`,
+Deal 2 pays a growing stream forever, so its fair value is next year's payment divided by the spread between the required return and the growth rate:
+
+$$P_2 = \\frac{a_1}{r - g}$$
+
+The stream starts at $a_1 = 14,000$ next year and grows at $g = 4\\% = 0.04$, with a required return of $r = 10\\% = 0.10$:
+
+$$r - g = 0.10 - 0.04 = 0.06$$
+
+$$P_2 = \\frac{14,000}{0.06}$$
+
+$$P_2 \\approx 233,333.33$$
+
+Subtracting the asking price gives the cushion:
+
+$$233,333.33 - 170,000.00 = 63,333.33$$
+
+The claim requires a cushion above \\$60,000.00, and \\$63,333.33 clears it by \\$3,333.33, so the statement is true.`,
       `**C) Deal 1 offers the larger "margin of safety" of the two deals.**  (false)
 
-Deal 2's margin of safety (\\$63,333.33) is substantially larger than Deal 1's (\\$10,000.00), so it is Deal 2, not Deal 1, that offers more cushion above its asking price.
+The margin of safety on each deal is its fair value minus the \\$170,000 asking price, so both fair values are needed.
 
-Margins: Deal 1 has \\$10,000; Deal 2 has \\$63,333.33. Deal 2's cushion is the larger one, not Deal 1's.`,
+Deal 1 is a level perpetuity:
+
+$$P_1 = \\frac{18,000}{0.10} = 180,000.00$$
+
+$$180,000.00 - 170,000.00 = 10,000.00$$
+
+Deal 2 is a growing perpetuity with spread $0.10 - 0.04 = 0.06$:
+
+$$P_2 = \\frac{14,000}{0.06} \\approx 233,333.33$$
+
+$$233,333.33 - 170,000.00 = 63,333.33$$
+
+Comparing the two cushions:
+
+$$63,333.33 - 10,000.00 = 53,333.33$$
+
+Deal 2 carries the larger margin by \\$53,333.33, so it is Deal 2 rather than Deal 1 that offers more protection, and the statement is false.`,
       `**D) If Deal 2's growth rate were instead only 1%, its fair value would fall below its asking price.**  (true)
 
-At the lower $1\\%$ growth rate, $P_2' = 14,000/(0.10-0.01) = 14,000/0.09 = \\$155,555.56$, which sits below the $\\$170,000.00$ asking price, making it a worse buy at that reduced growth assumption.`,
+Only the spread in the denominator changes when the growth assumption is reduced:
+
+$$P_2' = \\frac{a_1}{r - g'}$$
+
+Substituting the unchanged \\$14,000 first-year royalty with $g' = 1\\% = 0.01$ and the required return still at 10%:
+
+$$r - g' = 0.10 - 0.01 = 0.09$$
+
+$$P_2' = \\frac{14,000}{0.09}$$
+
+$$P_2' \\approx 155,555.56$$
+
+Comparing this fair value with the asking price:
+
+$$170,000.00 - 155,555.56 = 14,444.44$$
+
+At only 1% growth the stream is worth \\$14,444.44 less than the seller is asking, so its fair value does fall below the price and the statement is true.`,
       `**E) Comparing the two original deals, Deal 1's fair value is MORE than Deal 2's fair value.**  (false)
 
-Deal 1's fair value, $\\$180,000.00$, is actually less than Deal 2's, $\\$233,333.33$, not more - the growing payment stream is worth substantially more due to its perpetual growth.`,
+Both deals are perpetuities, but they use different formulas because only one of them grows.
+
+Deal 1 is level:
+
+$$P_1 = \\frac{18,000}{0.10}$$
+
+$$P_1 = 180,000.00$$
+
+Deal 2 grows at 4% per year, so the denominator is the spread:
+
+$$P_2 = \\frac{14,000}{0.10 - 0.04} = \\frac{14,000}{0.06}$$
+
+$$P_2 \\approx 233,333.33$$
+
+Comparing the two fair values:
+
+$$233,333.33 - 180,000.00 = 53,333.33$$
+
+Deal 2 is worth \\$53,333.33 more than Deal 1, even though its first payment is the smaller of the two, because perpetual growth lifts every later payment. The claim puts Deal 1 ahead, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 96,
@@ -7346,47 +15408,117 @@ Growing perpetuity: $P=a_1/(r-g)$
     tactical_explanations: [
       `**A) The present value required today is approximately \\$129,213.75.**  (true)
 
-Plugging $S(t) = \\$250,000$, $r = 0.055$, and $t = 12$ into $S_0 = S(t)e^{-rt}$ gives $S_0 = 250,000 e^{-0.66} \\approx 250,000 \\times 0.516855 = \\$129,213.75$, matching the statement exactly.`,
+Under continuous compounding a future amount is brought back to today by multiplying it by the exponential discount factor:
+
+$$S_0 = S(t)\\,e^{-rt}$$
+
+The company needs $S(t) = 250,000$ in $t = 12$ years at a nominal rate of $r = 5.5\\% = 0.055$:
+
+$$rt = 0.055 \\times 12 = 0.66$$
+
+$$S_0 = 250,000\\,e^{-0.66}$$
+
+$$e^{-0.66} \\approx 0.516851$$
+
+$$S_0 \\approx 250,000 \\times 0.516851$$
+
+$$S_0 \\approx 129,212.83$$
+
+The claim gives about \\$129,213.75, and the computed deposit of \\$129,212.83 agrees with it to within a dollar on a six-figure amount, so the statement is true.`,
       `**B) This continuously compounded present value is HIGHER than the present value using ordinary annual compounding at the same 5.5% nominal rate.**  (false)
 
-Continuous compounding is the most profitable schedule for the lender at any given nominal rate, so reaching the same \\$250,000 target requires depositing LESS today under continuous compounding (\\$129,213.75) than under ordinary annual compounding (approximately \\$131,495.10) - the continuous figure is LOWER, not higher.
+Two present values must be computed and compared. Under continuous compounding the discount factor is exponential:
 
-Annual compounding at the same 5.5%:
+$$S_0 = S(t)\\,e^{-rt}$$
 
-$$S_0^{\\mathrm{ann}} = 250,000 / (1.055)^{12}$$
+$$S_0 = 250,000\\,e^{-0.66} \\approx 250,000 \\times 0.516851 \\approx 129,212.83$$
 
-$$(1.055)^{12} \\approx 1.901209$$
+Under ordinary annual compounding the discount factor is a power of one plus the rate:
 
-$$250,000 / 1.901209 = \\$131,495.10$$
+$$S_0^{\\text{ann}} = \\frac{S(t)}{(1+r)^{t}}$$
 
-\\$129,213.75 < \\$131,495.10, so the continuous present value is lower, not higher.`,
+$$(1.055)^{12} \\approx 1.901207$$
+
+$$S_0^{\\text{ann}} \\approx \\frac{250,000}{1.901207}$$
+
+$$S_0^{\\text{ann}} \\approx 131,495.38$$
+
+Comparing the two deposits:
+
+$$131,495.38 - 129,212.83 = 2,282.55$$
+
+Continuous compounding works the money harder, so it needs \\$2,282.55 less today to reach the same \\$250,000 target. The continuous figure is the lower one, and the claim calls it higher, so the statement is false.`,
       `**C) The difference between the annual-compounding present value and the continuous-compounding present value is approximately \\$4,280.35.**  (false)
 
-The correctly computed gap is $\\$131,495.10 - \\$129,213.75 = \\$2,281.35$, not $\\$4,280.35$ - the stated figure roughly doubles the true difference.`,
+The gap is the annual-compounding deposit minus the continuous-compounding deposit, so compute both.
+
+Annual compounding at 5.5% for 12 years:
+
+$$(1.055)^{12} \\approx 1.901207$$
+
+$$S_0^{\\text{ann}} \\approx \\frac{250,000}{1.901207} \\approx 131,495.38$$
+
+Continuous compounding at the same nominal rate:
+
+$$e^{-0.055 \\times 12} = e^{-0.66} \\approx 0.516851$$
+
+$$S_0 \\approx 250,000 \\times 0.516851 \\approx 129,212.83$$
+
+The difference between them is
+
+$$131,495.38 - 129,212.83 = 2,282.55$$
+
+The claim states about \\$4,280.35:
+
+$$4,280.35 - 2,282.55 = 1,997.80$$
+
+The stated gap is nearly double the true gap of about \\$2,282.55, so the statement is false.`,
       `**D) If the horizon were shortened to 6 years at the same continuous 5.5% rate, the present value required today would be LESS than half of \\$129,213.75.**  (false)
 
-Because discounting is exponential in time, halving the horizon does not halve the required deposit: at 6 years the required amount is \\$179,731.00, which is far MORE than half of the 12-year figure of \\$129,213.75, not less.
+Discounting is exponential in time, so cutting the horizon in half does not cut the required deposit in half. Recompute with the same formula:
 
-Six-year continuous present value:
+$$S_0' = S(t)\\,e^{-rt}$$
 
-$$S_0' = 250,000 \\, e^{-0.055 \\times 6} = 250,000 \\, e^{-0.33}$$
+With $t = 6$ years at $r = 0.055$:
+
+$$rt = 0.055 \\times 6 = 0.33$$
+
+$$S_0' = 250,000\\,e^{-0.33}$$
 
 $$e^{-0.33} \\approx 0.718924$$
 
-$$250,000 \\times 0.718924 = \\$179,731.00$$
+$$S_0' \\approx 250,000 \\times 0.718924$$
 
-Half of \\$129,213.75 is \\$64,606.88. \\$179,731.00 is far above that half.`,
+$$S_0' \\approx 179,730.93$$
+
+Half of the twelve-year deposit is
+
+$$\\frac{129,213.75}{2} = 64,606.88$$
+
+Comparing:
+
+$$179,730.93 - 64,606.88 = 115,124.05$$
+
+With only six years to grow, the money needs a much larger head start, so the deposit lands \\$115,124.05 above half of the twelve-year figure rather than below it, and the statement is false.`,
       `**E) The continuously compounded annual discount factor is approximately 0.9465, meaning about 5.35% of value is "lost" to discounting each year.**  (true)
 
-$e^{-0.055} \\approx 0.9465$ means only about 94.65% of a dollar's value one year from now is captured today, so approximately 5.35% is lost to discounting each year, matching the statement exactly.
+The one-year discount factor under continuous compounding is the exponential factor evaluated at $t = 1$:
 
-Annual continuous discount factor:
+$$\\text{factor} = e^{-r}$$
 
-$$e^{-0.055} \\approx 0.946481 \\approx 0.9465$$
+Substituting the nominal rate $r = 0.055$:
 
-$$1 - 0.9465 = 0.0535 = 5.35\\%$$
+$$e^{-0.055} \\approx 0.946485$$
 
-About 5.35% of next year's dollar is lost to one year of continuous discounting.`,
+$$0.946485 \\approx 0.9465$$
+
+The share of value given up over that year is one minus the factor:
+
+$$1 - 0.9465 = 0.0535$$
+
+$$0.0535 = 5.35\\%$$
+
+So a dollar due one year from now is worth about 94.65 cents today, and roughly 5.35% of it is lost to one year of discounting. Both figures in the claim match the calculation, so the statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 97,
@@ -7438,43 +15570,121 @@ Ordinary annual present value: $S_0=S(t)/(1+r)^{t}$
     tactical_explanations: [
       `**A) The lump sum's future value under continuous compounding is approximately \\$131,629.13.**  (true)
 
-$S_{\\mathrm{cont}} = 75,000 \\times e^{0.5625} = \\$131,629.13$, matching the statement exactly.
+A lump sum growing under continuous compounding is multiplied by the exponential growth factor:
 
-$$S_{\\mathrm{cont}} = 75,000 \\, e^{0.0625 \\times 9} = 75,000 \\, e^{0.5625}$$
+$$S = P\\,e^{rt}$$
+
+The company sets aside $P = 75,000$ at a nominal rate of $r = 6.25\\% = 0.0625$ for $t = 9$ years:
+
+$$rt = 0.0625 \\times 9 = 0.5625$$
+
+$$S = 75,000\\,e^{0.5625}$$
 
 $$e^{0.5625} \\approx 1.755055$$
 
-$$75,000 \\times 1.755055 = \\$131,629.13$$`,
+$$S \\approx 75,000 \\times 1.755055$$
+
+$$S \\approx 131,629.10$$
+
+The claim gives about \\$131,629.13, and the calculation returns \\$131,629.10, a match to within a few cents, so the statement is true.`,
       `**B) The annuity's future value is LOWER than the lump-sum continuous-compounding result, despite both strategies involving the same total \\$75,000 in contributions.**  (true)
 
-F9 = \\$96,757.60, which is indeed lower than the lump-sum continuous-compounding result of \\$131,629.13, illustrating that WHEN money is invested matters as much as HOW MUCH, even when total contributions are equal.
+The annuity strategy pays a fixed amount at the end of each year, so its accumulated value uses the ordinary annuity future-value formula:
 
-Annuity of 8,333.33 per year for 9 years at 6.25%:
+$$F_n = \\frac{a}{r}\\bigl[(1+r)^{n} - 1\\bigr]$$
 
-$$F_9 = (8,333.33 / 0.0625)\\bigl[(1.0625)^{9} - 1\\bigr]$$
+Substituting $a = 8,333.33$, $r = 0.0625$ and $n = 9$:
 
-$$(1.0625)^{9} \\approx 1.725682,\\quad 1.725682 - 1 = 0.725682$$
+$$(1.0625)^{9} \\approx 1.725681$$
 
-$$133,333.33 \\times 0.725682 = \\$96,757.60$$
+$$1.725681 - 1 = 0.725681$$
 
-\\$96,757.60 is below \\$131,629.13 even though both plans contribute \\$75,000 in total.`,
+$$\\frac{8,333.33}{0.0625} = 133,333.28$$
+
+$$F_9 \\approx 133,333.28 \\times 0.725681$$
+
+$$F_9 \\approx 96,757.39$$
+
+The lump sum under continuous compounding grows to
+
+$$75,000\\,e^{0.5625} \\approx 131,629.10$$
+
+Comparing the two:
+
+$$131,629.10 - 96,757.39 = 34,871.71$$
+
+Both plans put in \\$75,000 in total, yet the annuity ends \\$34,871.71 lower, so the statement is true.`,
       `**C) The lump-sum strategy outperforms the annuity strategy by more than \\$30,000.00.**  (true)
 
-The gap is 131,629.13 - 96,757.60 = \\$34,871.53, which exceeds \\$30,000.00, matching the statement exactly.`,
+The gap is the lump-sum result minus the annuity result, so compute each with its own formula.
+
+Continuous growth of the lump sum:
+
+$$S = 75,000\\,e^{0.0625 \\times 9} = 75,000\\,e^{0.5625}$$
+
+$$S \\approx 75,000 \\times 1.755055 \\approx 131,629.10$$
+
+Future value of nine year-end deposits:
+
+$$F_9 = \\frac{8,333.33}{0.0625}\\bigl[(1.0625)^{9} - 1\\bigr]$$
+
+$$F_9 \\approx 133,333.28 \\times 0.725681 \\approx 96,757.39$$
+
+The difference is
+
+$$131,629.10 - 96,757.39 = 34,871.71$$
+
+The claim requires a gap above \\$30,000.00, and \\$34,871.71 clears that threshold by \\$4,871.71, so the statement is true.`,
       `**D) This gap arises largely because the lump sum earns interest on the FULL \\$75,000 from day one, while the annuity's later deposits earn interest for only a very short time before the horizon ends.**  (true)
 
-This is the correct conceptual explanation: front-loading the entire amount lets it compound over the full horizon, while spreading contributions out means later deposits have little to no time to grow before the milestone date.
+The claim is about timing, and the deposit-by-deposit arithmetic shows it directly. Each annuity deposit grows for only the years remaining after it is paid:
 
-The lump sum compounds on the entire \\$75,000 for all 9 years. The last annuity deposit of \\$8,333.33 earns nothing beyond the instant it is paid. Timing, not the total contributed, drives the gap.`,
+$$\\text{value at year } 9 = 8,333.33 \\times (1.0625)^{9-k}$$
+
+The first deposit, paid at the end of year 1, has eight years left to compound:
+
+$$(1.0625)^{8} \\approx 1.624170$$
+
+$$8,333.33 \\times 1.624170 \\approx 13,534.75$$
+
+The last deposit, paid at the end of year 9, has no time left at all:
+
+$$8,333.33 \\times (1.0625)^{0} = 8,333.33$$
+
+The lump sum, by contrast, has the whole \\$75,000 working for all nine years:
+
+$$75,000\\,e^{0.5625} \\approx 131,629.10$$
+
+Adding the nine staggered deposits gives only \\$96,757.39, so the \\$34,871.71 shortfall comes from the later deposits arriving with almost no time to grow. The claim describes exactly this mechanism, so the statement is true.`,
       `**E) If the company had instead invested the full \\$75,000 using discrete ANNUAL compounding at the same 6.25% rate for 9 years, the result would EXCEED the annuity strategy's future value of \\$96,757.60.**  (true)
 
-$S_{\\mathrm{discrete}} = 75,000 \\times (1.0625)^{9} = \\$129,426.15$, which does exceed the annuity strategy's future value of \\$96,757.60, matching the statement exactly (though it still falls short of the continuous-compounding result of \\$131,629.13).
+A lump sum under discrete annual compounding grows by the same factor once per year:
 
-Discrete annual compounding of the same lump sum:
+$$S = P(1+r)^{n}$$
 
-$$S_{\\mathrm{disc}} = 75,000 \\times (1.0625)^{9} = 75,000 \\times 1.725682 = \\$129,426.15$$
+Substituting $P = 75,000$, $r = 0.0625$ and $n = 9$:
 
-\\$129,426.15 does exceed the annuity's \\$96,757.60 (while still sitting below the continuous \\$131,629.13).`,
+$$(1.0625)^{9} \\approx 1.725681$$
+
+$$S \\approx 75,000 \\times 1.725681$$
+
+$$S \\approx 129,426.05$$
+
+The annuity strategy accumulates
+
+$$F_9 = \\frac{8,333.33}{0.0625}\\bigl[(1.0625)^{9} - 1\\bigr] \\approx 96,757.39$$
+
+Comparing the two:
+
+$$129,426.05 - 96,757.39 = 32,668.66$$
+
+The single discrete lump sum finishes \\$32,668.66 above the annuity, so it does exceed the annuity result. It still trails the continuous version of the same lump sum,
+
+$$75,000\\,e^{0.5625} \\approx 131,629.10$$
+
+$$131,629.10 - 129,426.05 = 2,203.05$$
+
+since compounding once a year credits interest less often than compounding continuously, but that gap of \\$2,203.05 is small next to the \\$32,668.66 advantage over the annuity. The statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 98,
@@ -7516,41 +15726,117 @@ $S = Pe^{rt}$; $F_n = (a/r)[(1+r)^{n}-1]$; discrete $S = P(1+r)^{n}$
     tactical_explanations: [
       `**A) The present value of the annuity-due lease payments is approximately \\$18,110.94.**  (true)
 
-Computing the ordinary annuity present value first (\\$16,769.39) and then multiplying by (1.08) to shift each payment one period earlier gives \\$18,110.94, matching the statement exactly.
+Lease payments made at the beginning of each year form an annuity due. Value the ordinary annuity first, then shift every payment one period earlier by multiplying by $(1+r)$:
 
-Ordinary present value, then the due shift:
+$$P_{\\text{ord}} = \\frac{a}{r}\\Bigl[1 - \\frac{1}{(1+r)^{n}}\\Bigr], \\qquad P_{\\text{due}} = P_{\\text{ord}}(1+r)$$
 
-$$P_{\\mathrm{ord}} = (4,200 / 0.08)\\bigl[1 - 1/(1.08)^{5}\\bigr]$$
+Substituting $a = 4,200$, $r = 8\\% = 0.08$ and $n = 5$:
 
-$$(1.08)^{5} \\approx 1.469328,\\quad 1/1.469328 \\approx 0.680583$$
+$$(1.08)^{5} \\approx 1.469328$$
+
+$$\\frac{1}{1.469328} \\approx 0.680583$$
 
 $$1 - 0.680583 = 0.319417$$
 
-$$52,500 \\times 0.319417 = \\$16,769.39$$
+$$\\frac{4,200}{0.08} = 52,500$$
 
-$$P_{\\mathrm{due}} = 16,769.39 \\times 1.08 = \\$18,110.94$$`,
+$$P_{\\text{ord}} \\approx 52,500 \\times 0.319417 \\approx 16,769.38$$
+
+$$P_{\\text{due}} \\approx 16,769.38 \\times 1.08 \\approx 18,110.93$$
+
+The claim gives about \\$18,110.94, and the calculation returns \\$18,110.93, so the statement is true.`,
       `**B) The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately \\$27,610.90.**  (false)
 
-Computing the ordinary annuity future value first (\\$24,639.72) and then multiplying by (1.08) gives \\$26,610.90, not \\$27,610.90 as stated.
+The future value of an ordinary annuity accumulates each payment to the final date, and the annuity due earns one extra period of interest on every payment:
 
-Ordinary future value, then the due shift:
+$$F_{\\text{ord}} = \\frac{a}{r}\\bigl[(1+r)^{n} - 1\\bigr], \\qquad F_{\\text{due}} = F_{\\text{ord}}(1+r)$$
 
-$$F_{\\mathrm{ord}} = (4,200 / 0.08)\\bigl[(1.08)^{5} - 1\\bigr] = 52,500 \\times 0.469328 = \\$24,639.72$$
+Substituting $a = 4,200$, $r = 0.08$ and $n = 5$:
 
-$$F_{\\mathrm{due}} = 24,639.72 \\times 1.08 = \\$26,610.90$$
+$$(1.08)^{5} \\approx 1.469328$$
 
-The claim's \\$27,610.90 is \\$1,000 too high.`,
+$$1.469328 - 1 = 0.469328$$
+
+$$\\frac{4,200}{0.08} = 52,500$$
+
+$$F_{\\text{ord}} \\approx 52,500 \\times 0.469328 \\approx 24,639.72$$
+
+$$F_{\\text{due}} \\approx 24,639.72 \\times 1.08 \\approx 26,610.90$$
+
+The claim states about \\$27,610.90:
+
+$$27,610.90 - 26,610.90 = 1,000.00$$
+
+The stated figure sits exactly \\$1,000.00 above the correct \\$26,610.90, so the statement is false.`,
       `**C) The \\$20,000 investment under continuous compounding at a nominal 6% rate accumulates, after 7 years, to approximately \\$31,439.24.**  (false)
 
-Plugging $P = 20,000$, $r = 0.06$, and $t = 7$ into $S = Pe^{rt}$ gives $S = 20,000 e^{0.42} \\approx 20,000 \\times 1.521961 = \\$30,439.24$, not $\\$31,439.24$ as stated.`,
+Money left to grow under continuous compounding is multiplied by the exponential growth factor:
+
+$$S = P\\,e^{rt}$$
+
+Substituting the separate investment of $P = 20,000$ at a nominal $r = 6\\% = 0.06$ for $t = 7$ years:
+
+$$rt = 0.06 \\times 7 = 0.42$$
+
+$$S = 20,000\\,e^{0.42}$$
+
+$$e^{0.42} \\approx 1.521962$$
+
+$$S \\approx 20,000 \\times 1.521962$$
+
+$$S \\approx 30,439.23$$
+
+The claim states about \\$31,439.24:
+
+$$31,439.24 - 30,439.23 = 1,000.01$$
+
+The stated figure overshoots the correct \\$30,439.23 by about \\$1,000, so the statement is false.`,
       `**D) The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value that is LESS than double the present value of the 5-year annuity-due lease payments.**  (false)
 
-The perpetuity is $3,000/0.08 = \\$37,500.00$, which actually exceeds double the annuity-due lease value, $2 \\times \\$18,110.94 = \\$36,221.88$, so it is more than double, not less as stated.`,
+Two present values are needed: the perpetuity and the five-year annuity due.
+
+The maintenance reserve pays a level amount forever, so it is a plain perpetuity:
+
+$$P_{\\text{perp}} = \\frac{a}{r} = \\frac{3,000}{0.08}$$
+
+$$P_{\\text{perp}} = 37,500.00$$
+
+The lease payments are made at the beginning of each year, so value the ordinary annuity and shift it forward:
+
+$$P_{\\text{ord}} = \\frac{4,200}{0.08}\\Bigl[1 - \\frac{1}{(1.08)^{5}}\\Bigr] \\approx 52,500 \\times 0.319417 \\approx 16,769.38$$
+
+$$P_{\\text{due}} \\approx 16,769.38 \\times 1.08 \\approx 18,110.93$$
+
+Double the lease present value is
+
+$$2 \\times 18,110.93 = 36,221.86$$
+
+Comparing:
+
+$$37,500.00 - 36,221.86 = 1,278.14$$
+
+The perpetuity requires \\$1,278.14 more than double the lease value, so it is not less than double and the statement is false.`,
       `**E) Comparing the accumulated continuous-compounding investment after 7 years to the perpetuity's present value, the continuous-compounding result is LARGER.**  (false)
 
-The continuous-compounding investment grows to \\$30,439.24 after 7 years, which is LESS than the perpetuity's present value of \\$37,500.00, not larger.
+One figure comes from continuous growth and the other from a perpetuity, so compute each on its own terms.
 
-\\$30,439.24 (continuous investment after 7 years) versus \\$37,500 (perpetuity present value): the continuous result is smaller, not larger.`,
+The separate investment grows continuously:
+
+$$S = P\\,e^{rt} = 20,000\\,e^{0.06 \\times 7}$$
+
+$$e^{0.42} \\approx 1.521962$$
+
+$$S \\approx 20,000 \\times 1.521962 \\approx 30,439.23$$
+
+The maintenance perpetuity pays \\$3,000 forever at 8%:
+
+$$P_{\\text{perp}} = \\frac{3,000}{0.08} = 37,500.00$$
+
+Comparing the two:
+
+$$37,500.00 - 30,439.23 = 7,060.77$$
+
+After seven years the continuous investment is still \\$7,060.77 short of the perpetuity's present value, so it is the smaller of the two and the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 99,
@@ -7596,25 +15882,107 @@ $S=Pe^{rt}$; perpetuity $P=a/r$
     tactical_explanations: [
       `**A) Component 1's accumulated value after 10 years under continuous compounding is approximately \\$247,308.20.**  (true)
 
-Plugging $P = 150,000$, $r = 0.05$, and $t = 10$ into $S = Pe^{rt}$ gives $S = 150,000 e^{0.50} \\approx 150,000 \\times 1.648721 = \\$247,308.20$, matching the statement exactly.`,
+Component 1 grows under continuous compounding, so it is multiplied by the exponential growth factor:
+
+$$S = P\\,e^{rt}$$
+
+Substituting $P = 150,000$, $r = 5\\% = 0.05$ and $t = 10$ years:
+
+$$rt = 0.05 \\times 10 = 0.50$$
+
+$$S = 150,000\\,e^{0.50}$$
+
+$$e^{0.50} \\approx 1.648721$$
+
+$$S \\approx 150,000 \\times 1.648721$$
+
+$$S \\approx 247,308.19$$
+
+The claim gives about \\$247,308.20, and the calculation returns \\$247,308.19, so the statement is true.`,
       `**B) Component 2's required deposit today, using discrete annual compounding, is approximately \\$57,396.85.**  (false)
 
-Plugging $A = 80,000$, $r = 0.06$, and $n = 6$ into $x = A/(1+r)^{n}$ gives $x = 80,000/(1.06)^{6} \\approx 80,000/1.418519 = \\$56,396.85$, not $\\$57,396.85$ as stated.`,
+Component 2 asks what single deposit today grows to a target under discrete annual compounding, which reverses the compounding formula:
+
+$$x = \\frac{A}{(1+r)^{n}}$$
+
+Substituting the target $A = 80,000$, the rate $r = 6\\% = 0.06$ and $n = 6$ years:
+
+$$(1.06)^{6} \\approx 1.418519$$
+
+$$x \\approx \\frac{80,000}{1.418519}$$
+
+$$x \\approx 56,396.84$$
+
+The claim states about \\$57,396.85:
+
+$$57,396.85 - 56,396.84 = 1,000.01$$
+
+The stated deposit is about \\$1,000 larger than the deposit actually required, so the statement is false.`,
       `**C) Component 3's present value, the 12-year ordinary annuity of \\$10,000 at 7%, is approximately \\$79,429.40.**  (true)
 
-Plugging $a = 10,000$, $r = 0.07$, and $n = 12$ into $P_n = (a/r)[1-1/(1+r)^{n}]$ gives $P_{12} \\approx 142,857.14 \\times 0.556005 = \\$79,429.40$, matching the statement exactly.`,
+Component 3 is an ordinary annuity of equal year-end receipts, valued with the annuity present-value formula:
+
+$$P_n = \\frac{a}{r}\\Bigl[1 - \\frac{1}{(1+r)^{n}}\\Bigr]$$
+
+Substituting $a = 10,000$, $r = 7\\% = 0.07$ and $n = 12$:
+
+$$(1.07)^{12} \\approx 2.252192$$
+
+$$\\frac{1}{2.252192} \\approx 0.444012$$
+
+$$1 - 0.444012 = 0.555988$$
+
+$$\\frac{10,000}{0.07} \\approx 142,857.14$$
+
+$$P_{12} \\approx 142,857.14 \\times 0.555988$$
+
+$$P_{12} \\approx 79,426.86$$
+
+The claim gives about \\$79,429.40, which differs from the computed \\$79,426.86 by about \\$2.54 on a settlement worth nearly \\$80,000, so the stated figure is correct as an approximation and the statement is true.`,
       `**D) Component 4's present value, the growing perpetuity paying \\$5,000 next year and growing at 2% forever at a 7% required return, is exactly \\$100,000.00.**  (true)
 
-$P = a_1/(r-g) = 5,000/(0.07-0.02) = 5,000/0.05 = \\$100,000.00$, matching the statement exactly.`,
+Component 4 is a growing perpetuity, valued as next year's payment divided by the spread between the required return and the growth rate:
+
+$$P = \\frac{a_1}{r - g}$$
+
+Substituting the scholarship payment $a_1 = 5,000$ next year, growth $g = 2\\% = 0.02$ and required return $r = 7\\% = 0.07$:
+
+$$r - g = 0.07 - 0.02 = 0.05$$
+
+$$P = \\frac{5,000}{0.05}$$
+
+$$P = 100,000.00$$
+
+The claim states exactly \\$100,000.00, and the calculation returns exactly \\$100,000.00 because \\$5,000 divided by 0.05 is a clean figure, so the statement is true.`,
       `**E) Summing the present-day resources committed to all four components - Component 1's initial investment, Component 2's required deposit today, Component 3's present value, and Component 4's present value - the total exceeds \\$500,000.00.**  (false)
 
-Adding all four present-day figures gives \\$385,826.25 (using the correct Component 2 figure of \\$56,396.85), which is LESS than \\$500,000.00, not more - the plan is comfortably within, not in excess of, the available resources implied by this comparison.
+The comparison adds four present-day amounts, each computed with its own formula.
 
-Present-day commitments, using the correct Component 2 deposit:
+Component 1 is the \\$150,000 invested today, so it enters at face value.
 
-$$150,000 + 56,396.85 + 79,429.40 + 100,000 = \\$385,826.25$$
+Component 2 is the deposit needed today to reach \\$80,000 in six years:
 
-\\$385,826.25 is below \\$500,000, not above.`,
+$$x = \\frac{80,000}{(1.06)^{6}} \\approx \\frac{80,000}{1.418519} \\approx 56,396.84$$
+
+Component 3 is the present value of twelve year-end receipts of \\$10,000 at 7%:
+
+$$P_{12} = \\frac{10,000}{0.07}\\Bigl[1 - \\frac{1}{(1.07)^{12}}\\Bigr] \\approx 142,857.14 \\times 0.555988 \\approx 79,426.86$$
+
+Component 4 is the growing perpetuity:
+
+$$P = \\frac{5,000}{0.07 - 0.02} = 100,000.00$$
+
+Adding the four:
+
+$$150,000.00 + 56,396.84 + 79,426.86 + 100,000.00$$
+
+$$= 385,823.70$$
+
+Comparing with the threshold in the claim:
+
+$$500,000.00 - 385,823.70 = 114,176.30$$
+
+The plan commits about \\$385,823.70 today, which is \\$114,176.30 below \\$500,000.00 rather than above it, so the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 100,
@@ -7660,35 +16028,113 @@ $S=Pe^{rt}$; $x=A/(1+r)^{n}$; $P_n=(a/r)[1-1/(1+r)^{n}]$; growing perpetuity $P=
     tactical_explanations: [
       `**A) The periodic interest rate to use in the payment formula is r = 0.12.**  (true)
 
-A 12% annual interest rate charged once per year, compounding annually, is simply used as the decimal r = 0.12 in every calculation for this loan.`,
+The rate used inside an instalment formula is the rate charged over one payment period, found by dividing the nominal annual rate by the number of compounding periods in a year:
+
+$$r_{\\text{period}} = \\frac{r_{\\text{nominal}}}{m}$$
+
+Interest here is charged at 12% per year and compounds once per year, so $m = 1$:
+
+$$r_{\\text{period}} = \\frac{0.12}{1}$$
+
+$$r_{\\text{period}} = 0.12$$
+
+The payments are also annual, so period and payment line up and the decimal 0.12 goes straight into the formula. A check on the first year confirms it, since 12% of the opening \\$60,000 balance is
+
+$$0.12 \\times 60,000 = 7,200.00$$
+
+The claim names $r = 0.12$, which is the rate the formula uses, so the statement is true.`,
       `**B) The required equal annual payment is approximately \\$14,593.54.**  (true)
 
-Solving $a: $rK/[1-(1+r)^{-n}]$ with r=0.12, K=60,000, n=6 gives a \\approx \\$14,593.54$, matching exactly.
+A loan repaid in equal instalments is an ordinary annuity whose present value equals the amount borrowed, which rearranges to the payment formula:
 
-$$a = \\frac{0.12 \\times 60,000}{1 - (1.12)^{-6}} = \\frac{7,200}{1 - 0.506631} = \\frac{7,200}{0.493369} = \\$14,593.54$$`,
+$$a = \\frac{rK}{1 - (1+r)^{-n}}$$
+
+Substituting the loan $K = 60,000$, the annual rate $r = 0.12$ and the $n = 6$ year-end payments:
+
+$$rK = 0.12 \\times 60,000 = 7,200$$
+
+$$(1.12)^{-6} \\approx 0.506631$$
+
+$$1 - 0.506631 = 0.493369$$
+
+$$a \\approx \\frac{7,200}{0.493369}$$
+
+$$a \\approx 14,593.54$$
+
+The claim gives about \\$14,593.54 per year, and the calculation returns \\$14,593.54, so the statement is true.`,
       `**C) The interest portion of the first payment is exactly \\$7,200.00.**  (true)
 
-In year 1 the full \\$60,000 principal is outstanding, so interest is simply $0.12 \\times 60,000 = \\$7,200.00$ exactly, matching the claim with no rounding needed.`,
+Interest in any year is charged on the balance outstanding at the start of that year:
+
+$$\\text{interest} = r \\times \\text{opening balance}$$
+
+No payment has been made before the first year ends, so the opening balance is the full amount borrowed:
+
+$$\\text{opening balance} = 60,000.00$$
+
+$$\\text{interest}_1 = 0.12 \\times 60,000$$
+
+$$\\text{interest}_1 = 7,200.00$$
+
+Both figures here are exact, since 12% of \\$60,000 leaves no rounding to do. The claim names exactly \\$7,200.00, so the statement is true.`,
       `**D) The principal-repayment portion of the first payment is more than half of the total payment amount.**  (true)
 
-Subtracting the \\$7,200.00 interest charge from the \\$14,593.54 payment leaves \\$7,393.54 for principal reduction. Comparing that to half of the payment (\\$7,296.77) shows the principal portion is indeed slightly larger than half, even in the very first year when interest is at its highest relative to later years.
+Each instalment covers the year's interest first, and whatever is left reduces the principal:
 
-Year-1 principal: $14,593.54 - 7,200.00 = \\$7,393.54$.
+$$\\text{principal} = a - r \\times \\text{opening balance}$$
 
-Half the payment: $14,593.54 / 2 = \\$7,296.77$.
+The instalment comes from the annuity payment formula:
 
-\\$7,393.54 > \\$7,296.77, so principal already exceeds half even in year 1.`,
+$$a = \\frac{0.12 \\times 60,000}{1 - (1.12)^{-6}} = \\frac{7,200}{0.493369} \\approx 14,593.54$$
+
+First-year interest on the full \\$60,000 balance is
+
+$$0.12 \\times 60,000 = 7,200.00$$
+
+so the principal portion is
+
+$$14,593.54 - 7,200.00 = 7,393.54$$
+
+Half of the instalment is
+
+$$\\frac{14,593.54}{2} \\approx 7,296.77$$
+
+Comparing:
+
+$$7,393.54 - 7,296.77 = 96.77$$
+
+Even in year 1, when interest is at its heaviest, the principal portion clears half the payment by \\$96.77, so the statement is true.`,
       `**E) The outstanding balance immediately after the second payment is approximately \\$45,000.00.**  (false)
 
-Carrying the amortization forward two full years - recomputing interest on the shrinking balance each time and subtracting the resulting principal portion - gives a balance of approximately \\$44,325.69 after the second payment, not \\$45,000.00.
+Tracking the balance takes one year at a time, recomputing interest on whatever principal is still outstanding:
 
-After payment 1: $60,000 - 7,393.54 = \\$52,606.46$.
+$$\\text{interest} = r \\times \\text{opening balance}, \\qquad \\text{new balance} = \\text{opening balance} - (a - \\text{interest})$$
 
-Year-2 interest: $0.12 \\times 52,606.46 = \\$6,312.77$.
+The instalment is
 
-Year-2 principal: $14,593.54 - 6,312.77 = \\$8,280.77$.
+$$a = \\frac{7,200}{1 - (1.12)^{-6}} \\approx 14,593.54$$
 
-Balance after payment 2: $52,606.46 - 8,280.77 = \\$44,325.69$, not \\$45,000.`,
+Year 1 opens with the full loan:
+
+$$0.12 \\times 60,000 = 7,200.00$$
+
+$$14,593.54 - 7,200.00 = 7,393.54$$
+
+$$60,000.00 - 7,393.54 = 52,606.46$$
+
+Year 2 opens with that reduced balance:
+
+$$0.12 \\times 52,606.46 \\approx 6,312.78$$
+
+$$14,593.54 - 6,312.78 \\approx 8,280.76$$
+
+$$52,606.46 - 8,280.76 \\approx 44,325.70$$
+
+The claim puts the balance at about \\$45,000.00:
+
+$$45,000.00 - 44,325.70 = 674.30$$
+
+The true balance is about \\$44,325.70, some \\$674 below the stated figure, so the statement is false.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 101,
@@ -7727,25 +16173,105 @@ $a = rK/[1-(1+r)^{-n}]$. Interest $= r \\times$ opening balance; principal $=$ p
     tactical_explanations: [
       `**A) The monthly periodic interest rate used in the payment formula is r = 0.75%.**  (true)
 
-Since payments and compounding are both monthly, the periodic rate is the nominal annual rate divided by 12: $r = 0.09 / 12 = 0.0075 = 0.75\\%$, matching the claim exactly.`,
+When payments and compounding share the same schedule, the rate used in the payment formula is the nominal annual rate split evenly across the periods in a year:
+
+$$r = \\frac{r_{\\text{nominal}}}{m}$$
+
+Interest is charged at a nominal 9% per year and compounds monthly, so $m = 12$:
+
+$$r = \\frac{0.09}{12}$$
+
+$$r = 0.0075$$
+
+$$0.0075 = 0.75\\%$$
+
+Payments are also monthly, so this 0.75% per month is the rate the instalment formula uses. The claim names $r = 0.75\\%$, so the statement is true.`,
       `**B) The required monthly payment is approximately \\$597.24.**  (true)
 
-With $n = 4 \\times 12 = 48$ monthly payments and $r = 0.0075$:
+Equal instalments on a loan follow the annuity payment formula, with the periodic rate and the number of periods measured in the same time units:
 
-$$a = \\frac{0.0075 \\times 24,000}{1 - (1.0075)^{-48}} = \\frac{180}{0.301329} = \\$597.24$$`,
+$$a = \\frac{rK}{1 - (1+r)^{-n}}$$
+
+The monthly rate is $r = 0.09/12 = 0.0075$ and the term is four years of monthly payments:
+
+$$n = 4 \\times 12 = 48$$
+
+$$rK = 0.0075 \\times 24,000 = 180$$
+
+$$(1.0075)^{-48} \\approx 0.698614$$
+
+$$1 - 0.698614 = 0.301386$$
+
+$$a \\approx \\frac{180}{0.301386}$$
+
+$$a \\approx 597.24$$
+
+The claim gives about \\$597.24 per month, and the calculation returns \\$597.24, so the statement is true.`,
       `**C) The total amount paid over all 48 monthly payments is approximately \\$29,500.00.**  (false)
 
-Total paid is the payment times the number of months: $597.24 \\times 48 = \\$28,667.52 \\approx \\$28,667.57$, not \\$29,500.00.`,
+The total handed over is simply the instalment repeated for every payment period:
+
+$$\\text{total paid} = a \\times n$$
+
+The monthly instalment comes from the payment formula with $r = 0.0075$ and $n = 48$:
+
+$$a = \\frac{0.0075 \\times 24,000}{1 - (1.0075)^{-48}} = \\frac{180}{0.301386} \\approx 597.24$$
+
+Over all 48 months:
+
+$$\\text{total paid} \\approx 597.24 \\times 48$$
+
+$$\\text{total paid} \\approx 28,667.57$$
+
+The claim states about \\$29,500.00:
+
+$$29,500.00 - 28,667.57 = 832.43$$
+
+The stated total runs \\$832.43 above what the customer actually pays, so the statement is false.`,
       `**D) The total interest paid over the life of the loan is approximately \\$4,667.57.**  (true)
 
-Total interest is total paid minus principal: $28,667.57 - 24,000 = \\$4,667.57$, matching the claim.`,
+Interest over the life of a loan is whatever is paid beyond the amount borrowed:
+
+$$\\text{total interest} = a \\times n - K$$
+
+The monthly instalment is
+
+$$a = \\frac{0.0075 \\times 24,000}{1 - (1.0075)^{-48}} \\approx 597.24$$
+
+so the 48 payments come to
+
+$$597.24 \\times 48 \\approx 28,667.57$$
+
+Subtracting the \\$24,000 financed:
+
+$$28,667.57 - 24,000.00 = 4,667.57$$
+
+The claim gives about \\$4,667.57 of interest, and the calculation returns \\$4,667.57, so the statement is true.`,
       `**E) If the same \\$24,000 were instead repaid in 4 equal annual instalments at the same nominal 9% rate, the required annual payment would be less than \\$2,388.96.**  (false)
 
-Spreading the same \\$24,000 over just 4 annual payments instead of 48 monthly ones requires a much larger payment per period:
+Switching to annual instalments changes both the periodic rate and the number of periods, so the payment formula must be applied again from scratch:
 
-$$a_{\\mathrm{ann}} = \\frac{0.09 \\times 24,000}{1 - (1.09)^{-4}} = \\frac{2,160}{0.291676} = \\$7,408.05$$
+$$a = \\frac{rK}{1 - (1+r)^{-n}}$$
 
-\\$7,408.05 is far above \\$2,388.96, not below it.`,
+With annual payments the rate per period is the full 9% and the term is four periods:
+
+$$r = 0.09, \\qquad n = 4$$
+
+$$rK = 0.09 \\times 24,000 = 2,160$$
+
+$$(1.09)^{-4} \\approx 0.708425$$
+
+$$1 - 0.708425 = 0.291575$$
+
+$$a_{\\text{ann}} \\approx \\frac{2,160}{0.291575}$$
+
+$$a_{\\text{ann}} \\approx 7,408.05$$
+
+The claim says the annual instalment would be under \\$2,388.96:
+
+$$7,408.05 - 2,388.96 = 5,019.09$$
+
+Squeezing the same \\$24,000 into four payments instead of 48 raises each payment far above that threshold, by more than \\$5,000, so the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 102,
@@ -7798,25 +16324,113 @@ Total interest = total paid - K
     tactical_explanations: [
       `**A) The required equal annual payment is approximately \\$11,870.89.**  (true)
 
-Solving $a: $rK/[1-(1+r)^{-n}]$ with r=0.10, K=45,000, n=5 gives a \\approx \\$11,870.89$, matching exactly.
+Equal year-end instalments on a loan follow the annuity payment formula, which sets the present value of the payments equal to the amount borrowed:
 
-$$a = \\frac{0.10 \\times 45,000}{1 - (1.10)^{-5}} = \\frac{4,500}{0.379079} = \\$11,870.89$$`,
+$$a = \\frac{rK}{1 - (1+r)^{-n}}$$
+
+Substituting the loan $K = 45,000$, the annual rate $r = 10\\% = 0.10$ and the $n = 5$ payments:
+
+$$rK = 0.10 \\times 45,000 = 4,500$$
+
+$$(1.10)^{-5} \\approx 0.620921$$
+
+$$1 - 0.620921 = 0.379079$$
+
+$$a \\approx \\frac{4,500}{0.379079}$$
+
+$$a \\approx 11,870.89$$
+
+The claim gives about \\$11,870.89 per year, and the calculation returns \\$11,870.89, so the statement is true.`,
       `**B) The interest portion of the first payment is \\$5,000.00.**  (false)
 
-In year 1 the full \\$45,000 principal is outstanding, so interest is $0.10 \\times 45,000 = \\$4,500$, not \\$5,000.00.`,
+Interest in the first year is charged on the balance outstanding when that year begins, which is the full amount borrowed:
+
+$$\\text{interest}_1 = r \\times K$$
+
+Substituting the 10% rate and the \\$45,000 loan:
+
+$$\\text{interest}_1 = 0.10 \\times 45,000$$
+
+$$\\text{interest}_1 = 4,500.00$$
+
+The claim states \\$5,000.00:
+
+$$5,000.00 - 4,500.00 = 500.00$$
+
+Charging \\$5,000.00 would mean a rate of $5,000/45,000 \\approx 11.1\\%$, not the 10% agreed. The correct first-year interest is \\$4,500.00, so the statement is false.`,
       `**C) The outstanding balance immediately after the third payment is approximately \\$20,602.37.**  (true)
 
-Year 1: interest \\$4,500.00, principal \\$7,370.89, balance \\$37,629.11.
+The balance falls each year by the principal portion of the payment, where the principal portion is the instalment minus that year's interest:
 
-Year 2: interest \\$3,762.91, principal \\$8,107.98, balance \\$29,521.13.
+$$\\text{interest} = r \\times \\text{opening balance}, \\qquad \\text{new balance} = \\text{opening balance} - (a - \\text{interest})$$
 
-Year 3: interest \\$2,952.11, principal \\$8,918.78, balance \\$20,602.35 ≈ \\$20,602.37.`,
+The instalment is
+
+$$a = \\frac{0.10 \\times 45,000}{1 - (1.10)^{-5}} = \\frac{4,500}{0.379079} \\approx 11,870.89$$
+
+Year 1:
+
+$$0.10 \\times 45,000.00 = 4,500.00$$
+
+$$45,000.00 - (11,870.89 - 4,500.00) = 37,629.11$$
+
+Year 2:
+
+$$0.10 \\times 37,629.11 \\approx 3,762.91$$
+
+$$37,629.11 - (11,870.89 - 3,762.91) = 29,521.13$$
+
+Year 3:
+
+$$0.10 \\times 29,521.13 \\approx 2,952.11$$
+
+$$29,521.13 - (11,870.89 - 2,952.11) = 20,602.35$$
+
+The claim gives about \\$20,602.37, which the schedule reproduces to within a few cents of rounding, so the statement is true.`,
       `**D) In the fourth year, the interest portion of the payment is larger than the principal portion of the payment.**  (false)
 
-Using the year-3 balance of \\$20,602.37, year-4 interest is $0.10 \\times 20,602.37 = \\$2,060.24$ and principal is $11,870.89 - 2,060.24 = \\$9,810.65$. Since \\$2,060.24 < \\$9,810.65, interest is smaller than principal, not larger.`,
+The split of a payment depends on the balance the year opens with, so the schedule has to be carried to year 4:
+
+$$\\text{interest} = r \\times \\text{opening balance}, \\qquad \\text{principal} = a - \\text{interest}$$
+
+With $a \\approx 11,870.89$ the balances run
+
+$$45,000.00 - (11,870.89 - 4,500.00) = 37,629.11$$
+
+$$37,629.11 - (11,870.89 - 3,762.91) = 29,521.13$$
+
+$$29,521.13 - (11,870.89 - 2,952.11) = 20,602.35$$
+
+Year 4 therefore opens at about \\$20,602.35:
+
+$$\\text{interest}_4 \\approx 0.10 \\times 20,602.35 \\approx 2,060.24$$
+
+$$\\text{principal}_4 \\approx 11,870.89 - 2,060.24 \\approx 9,810.65$$
+
+Comparing the two parts of the payment:
+
+$$9,810.65 - 2,060.24 = 7,750.41$$
+
+By year 4 the principal portion is larger than the interest portion by \\$7,750.41, so interest is the smaller part and the statement is false.`,
       `**E) Adding up the principal-repayment portions of all 5 payments gives a total of exactly \\$46,200.00.**  (false)
 
-Since the loan is fully paid off after year 5 (balance reaches \\$0.00), the principal portions must sum to exactly the original \\$45,000.00 borrowed, not \\$46,200.00.`,
+The principal portions are exactly the amounts by which the balance is written down, so together they must remove the whole balance:
+
+$$\\sum \\text{principal portions} = K - \\text{final balance}$$
+
+The loan is fully repaid at the end of year 5, which means the final balance is zero:
+
+$$\\sum \\text{principal portions} = 45,000.00 - 0 = 45,000.00$$
+
+The year-by-year figures confirm it:
+
+$$7,370.89 + 8,107.98 + 8,918.78 + 9,810.65 + 10,791.70 = 45,000.00$$
+
+The claim states the principal portions total \\$46,200.00:
+
+$$46,200.00 - 45,000.00 = 1,200.00$$
+
+The extra \\$1,200.00 belongs to interest, not principal, so the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 103,
@@ -7857,33 +16471,107 @@ $a = rK/[1-(1+r)^{-n}]$. Interest $= r \\times$ opening balance; principal $=$ p
     tactical_explanations: [
       `**A) The combined present-value factor multiplying the payment is approximately 6.537048.**  (true)
 
-The first payment happens at time zero and isn't discounted; the remaining 9 payments form an ordinary annuity discounted back from year 1:
+With the first payment due immediately, one payment is not discounted at all and the remaining nine form an ordinary annuity. The combined factor is therefore
 
-$$1 + \\frac{1}{0.11}\\bigl[1 - (1.11)^{-9}\\bigr]$$
+$$1 + \\frac{1}{r}\\bigl[1 - (1+r)^{-(n-1)}\\bigr]$$
 
-$$(1.11)^{-9} \\approx 0.391110$$
+Substituting $r = 11\\% = 0.11$ and $n = 10$ payments, so $n - 1 = 9$ discounted ones:
 
-$$1 - 0.391110 = 0.608890$$
+$$(1.11)^{-9} \\approx 0.390925$$
 
-$$9.090909 \\times 0.608890 = 5.537048$$
+$$1 - 0.390925 = 0.609075$$
 
-$$1 + 5.537048 = 6.537048$$`,
+$$\\frac{1}{0.11} \\approx 9.090909$$
+
+$$9.090909 \\times 0.609075 \\approx 5.537048$$
+
+$$1 + 5.537048 = 6.537048$$
+
+The claim gives about 6.537048, and the calculation returns 6.537048, so the statement is true.`,
       `**B) The required equal payment a is approximately \\$22,946.14.**  (true)
 
-Dividing the \\$150,000 owed by the combined factor: $a = 150,000 / 6.537048 = \\$22,946.14$, matching exactly.`,
+The buy-in price is the payment multiplied by the combined annuity-due factor, so the payment is the price divided by that factor:
+
+$$K = a \\times \\Bigl(1 + \\frac{1}{r}\\bigl[1 - (1+r)^{-(n-1)}\\bigr]\\Bigr), \\qquad a = \\frac{K}{\\text{factor}}$$
+
+Building the factor at $r = 0.11$ with nine discounted payments:
+
+$$(1.11)^{-9} \\approx 0.390925$$
+
+$$9.090909 \\times (1 - 0.390925) \\approx 5.537048$$
+
+$$\\text{factor} = 1 + 5.537048 = 6.537048$$
+
+Dividing the \\$150,000 owed by that factor:
+
+$$a \\approx \\frac{150,000}{6.537048}$$
+
+$$a \\approx 22,946.14$$
+
+The claim gives about \\$22,946.14, and the calculation returns \\$22,946.14, so the statement is true.`,
       `**C) If instead the first payment were due at the end of year 1, the required equal payment would be lower than \\$22,946.14.**  (false)
 
-Delaying the first payment to year-end instead of today requires a larger, not smaller, instalment:
+Moving the first payment from today to the end of year 1 turns the annuity due into an ordinary annuity, which uses the standard payment formula:
 
-$$a_{\\mathrm{ord}} = \\frac{0.11 \\times 150,000}{1 - (1.11)^{-10}} = \\frac{16,500}{0.647848} = \\$25,470.21$$
+$$a_{\\text{ord}} = \\frac{rK}{1 - (1+r)^{-n}}$$
 
-\\$25,470.21 > \\$22,946.14, so delaying the first payment raises the required instalment, not lowers it.`,
+Substituting $K = 150,000$, $r = 0.11$ and $n = 10$:
+
+$$rK = 0.11 \\times 150,000 = 16,500$$
+
+$$(1.11)^{-10} \\approx 0.352184$$
+
+$$1 - 0.352184 = 0.647816$$
+
+$$a_{\\text{ord}} \\approx \\frac{16,500}{0.647816}$$
+
+$$a_{\\text{ord}} \\approx 25,470.21$$
+
+Comparing with the annuity-due payment of \\$22,946.14:
+
+$$25,470.21 - 22,946.14 = 2,524.07$$
+
+Every payment now sits a year later, so each one buys less discounting and the instalment rises by \\$2,524.07 instead of falling. The claim says it would be lower, so the statement is false.`,
       `**D) The difference between the ordinary-annuity payment and the annuity-due payment is approximately \\$2,524.08.**  (true)
 
-$25,470.21 - 22,946.14 = \\$2,524.07 \\approx \\$2,524.08$, matching the claim.`,
+The comparison needs both payments, each from its own formula.
+
+With the first payment due immediately, the combined factor is
+
+$$1 + \\frac{1}{0.11}\\bigl[1 - (1.11)^{-9}\\bigr] \\approx 6.537048$$
+
+$$a_{\\text{due}} \\approx \\frac{150,000}{6.537048} \\approx 22,946.14$$
+
+With the first payment delayed to the end of year 1, the ordinary payment formula applies:
+
+$$a_{\\text{ord}} = \\frac{0.11 \\times 150,000}{1 - (1.11)^{-10}} \\approx \\frac{16,500}{0.647816} \\approx 25,470.21$$
+
+The difference between them is
+
+$$25,470.21 - 22,946.14 = 2,524.07$$
+
+The claim gives about \\$2,524.08, matching the computed \\$2,524.07 to within a cent of rounding, so the statement is true.`,
       `**E) The total of all 10 annuity-due payments combined is approximately \\$220,000.00.**  (false)
 
-Ten payments of \\$22,946.14 each total $22,946.14 \\times 10 = \\$229,461.40$, not \\$220,000.00.`,
+The total handed over is the instalment repeated once for each payment, with no discounting involved:
+
+$$\\text{total} = a \\times n$$
+
+The instalment comes from dividing the price by the annuity-due factor:
+
+$$a \\approx \\frac{150,000}{6.537048} \\approx 22,946.14$$
+
+Over the ten payments:
+
+$$\\text{total} \\approx 22,946.14 \\times 10$$
+
+$$\\text{total} \\approx 229,461.40$$
+
+The claim states about \\$220,000.00:
+
+$$229,461.40 - 220,000.00 = 9,461.40$$
+
+The franchisee actually hands over about \\$229,461.40, nearly \\$9,500 more than the stated figure, so the statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 104,
@@ -7932,29 +16620,133 @@ Ordinary-annuity comparison: $a_{\\mathrm{ordinary}} = rK/[1-(1+r)^{-n}]$
     tactical_explanations: [
       `**A) The smallest whole number of yearly payments needed to pay off the loan is n = 5.**  (true)
 
-Evaluating $[\\ln a - \\ln(a-rK)]/\\ln(1+r)$ with a=10,000, r=0.13, K=35,000 gives approximately 4.9663; since this is not a whole number, the smallest integer at or above it is 5, meaning 5 payments are needed.
+When a borrower repays a fixed amount each year, the number of payments needed is the smallest whole number $n$ satisfying
 
-$$n \\ge \\frac{\\ln 10,000 - \\ln(10,000 - 0.13 \\times 35,000)}{\\ln 1.13} = \\frac{\\ln 10,000 - \\ln 5,450}{\\ln 1.13} \\approx 4.9663$$
+$$n \\ge \\frac{\\ln a - \\ln(a - rK)}{\\ln(1+r)}$$
 
-Smallest integer n is 5.`,
+Substituting the fixed payment $a = 10,000$, the rate $r = 13\\% = 0.13$ and the loan $K = 35,000$:
+
+$$rK = 0.13 \\times 35,000 = 4,550$$
+
+$$a - rK = 10,000 - 4,550 = 5,450$$
+
+$$\\ln 10,000 \\approx 9.210340, \\qquad \\ln 5,450 \\approx 8.603371$$
+
+$$9.210340 - 8.603371 = 0.606969$$
+
+$$\\ln 1.13 \\approx 0.122218$$
+
+$$\\frac{0.606969}{0.122218} \\approx 4.9663$$
+
+Four payments leave part of the debt standing, since the threshold sits above 4, so rounding up gives
+
+$$n = 5$$
+
+The claim names $n = 5$, so the statement is true.`,
       `**B) The first four payments are each exactly \\$10,000.00, totalling \\$40,000.00.**  (true)
 
-Since $n = 5$ payments are needed, the first four are full \\$10,000.00 payments, totalling $4 \\times 10,000 = \\$40,000.00$, matching the claim.`,
+The borrower pays a full \\$10,000 every year until the debt can be cleared, and the threshold calculation shows how many such years there are:
+
+$$n \\ge \\frac{\\ln 10,000 - \\ln(10,000 - 0.13 \\times 35,000)}{\\ln 1.13} \\approx 4.9663$$
+
+Since the threshold exceeds 4, the debt is still alive after four payments, so all four of those are full ones:
+
+$$4 \\times 10,000 = 40,000.00$$
+
+The remaining balance at that point confirms it. The loan grown for four years is
+
+$$35,000 \\times (1.13)^{4} \\approx 57,066.58$$
+
+while the four payments accumulate to
+
+$$\\frac{10,000}{0.13}\\bigl[(1.13)^{4} - 1\\bigr] \\approx 48,497.97$$
+
+$$57,066.58 - 48,497.97 = 8,568.61$$
+
+A positive balance of \\$8,568.61 remains, so the fifth year is the one that closes the loan and the first four payments are indeed full \\$10,000 payments totalling \\$40,000.00. The statement is true.`,
       `**C) The fifth and final payment is approximately \\$9,682.53.**  (true)
 
-Loan after 4 years: $35,000 \\times (1.13)^{4} \\approx \\$57,066.58$.
+The final payment clears whatever the loan still owes after the full payments, so compare the loan grown forward with the payments grown forward.
 
-Four payments accumulated: $(10,000 / 0.13)\\bigl[(1.13)^{4} - 1\\bigr] \\approx \\$48,497.97$.
+The debt after four years of interest is
 
-Remainder at year 4: $57,066.58 - 48,497.97 = \\$8,568.61$.
+$$K(1+r)^{4} = 35,000 \\times (1.13)^{4}$$
 
-Final payment: $8,568.61 \\times 1.13 = \\$9,682.53$.`,
+$$(1.13)^{4} \\approx 1.630474$$
+
+$$35,000 \\times 1.630474 \\approx 57,066.58$$
+
+The four \\$10,000 payments accumulate to
+
+$$\\frac{a}{r}\\bigl[(1+r)^{4} - 1\\bigr] = \\frac{10,000}{0.13}(1.630474 - 1)$$
+
+$$\\approx 76,923.08 \\times 0.630474 \\approx 48,497.97$$
+
+The shortfall at the end of year 4 is
+
+$$57,066.58 - 48,497.97 = 8,568.61$$
+
+Carrying that balance one more year at 13%:
+
+$$8,568.61 \\times 1.13 \\approx 9,682.53$$
+
+The claim gives about \\$9,682.53 for the fifth payment, and the calculation returns \\$9,682.53, so the statement is true.`,
       `**D) The total amount paid over the entire life of the loan is approximately \\$49,682.53.**  (true)
 
-Adding the four \\$10,000.00 payments to the final \\$9,682.53 payment: $40,000 + 9,682.53 = \\$49,682.53$, matching the claim.`,
+The total handed over is the four full payments plus the reduced final one:
+
+$$\\text{total} = 4a + \\text{final payment}$$
+
+The four full payments come to
+
+$$4 \\times 10,000 = 40,000.00$$
+
+The final payment settles the balance left at the end of year 4. The debt grown four years is
+
+$$35,000 \\times (1.13)^{4} \\approx 57,066.58$$
+
+and the payments grown to the same date come to
+
+$$\\frac{10,000}{0.13}\\bigl[(1.13)^{4} - 1\\bigr] \\approx 48,497.97$$
+
+$$57,066.58 - 48,497.97 = 8,568.61$$
+
+$$8,568.61 \\times 1.13 \\approx 9,682.53$$
+
+Adding the pieces:
+
+$$40,000.00 + 9,682.53 = 49,682.53$$
+
+The claim gives about \\$49,682.53, and the calculation returns \\$49,682.53, so the statement is true.`,
       `**E) The total interest paid over the life of the loan is less than the original \\$35,000 principal.**  (true)
 
-Total interest is $49,682.53 - 35,000 = \\$14,682.53$, which is indeed less than the \\$35,000.00 principal.`,
+Interest over the life of the loan is everything paid beyond the amount borrowed:
+
+$$\\text{total interest} = \\text{total paid} - K$$
+
+The four full payments total \\$40,000.00, and the final payment settles the year-4 balance:
+
+$$35,000 \\times (1.13)^{4} \\approx 57,066.58$$
+
+$$\\frac{10,000}{0.13}\\bigl[(1.13)^{4} - 1\\bigr] \\approx 48,497.97$$
+
+$$57,066.58 - 48,497.97 = 8,568.61$$
+
+$$8,568.61 \\times 1.13 \\approx 9,682.53$$
+
+So the borrower pays
+
+$$40,000.00 + 9,682.53 = 49,682.53$$
+
+and the interest inside that is
+
+$$49,682.53 - 35,000.00 = 14,682.53$$
+
+Comparing with the principal:
+
+$$35,000.00 - 14,682.53 = 20,317.47$$
+
+Interest of \\$14,682.53 falls \\$20,317.47 short of the \\$35,000 borrowed, so it is indeed less than the principal and the statement is true.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 105,
@@ -8007,37 +16799,105 @@ Future value of m fixed payments (valued at the time of the m-th payment): $(a/r
     tactical_explanations: [
       `**A) At a 10% annual rate, the present value of Option B is approximately \\$535,526.07.**  (true)
 
-Annuity due of 7 payments of \\$100,000 at 10%:
+Option B pays at the beginning of each year, so the first payment is not discounted and the remaining six form an ordinary annuity:
+
+$$PV = a + \\frac{a}{r}\\bigl[1 - (1+r)^{-(n-1)}\\bigr]$$
+
+Substituting $a = 100,000$, $n = 7$ payments and $r = 10\\% = 0.10$:
+
+$$(1.10)^{-6} \\approx 0.5644739$$
+
+$$1 - 0.5644739 = 0.4355261$$
+
+$$\\frac{100,000}{0.10} = 1,000,000$$
+
+$$1,000,000 \\times 0.4355261 \\approx 435,526.07$$
+
+$$PV_B \\approx 100,000 + 435,526.07$$
+
+$$PV_B \\approx 535,526.07$$
+
+The claim gives about \\$535,526.07, and the calculation returns \\$535,526.07, so the statement is true.`,
+      `**B) At a 10% annual rate, Option A is the cheaper choice.**  (true)
+
+Cheaper means the smaller present value, so Option B's instalments must be valued today and set against the \\$500,000 cash price.
+
+Option B is an annuity due of seven payments:
 
 $$PV_B = 100,000 + \\frac{100,000}{0.10}\\bigl[1 - (1.10)^{-6}\\bigr]$$
 
-$$(1.10)^{-6} \\approx 0.564474,\\quad 1 - 0.564474 = 0.435526$$
+$$1 - 0.5644739 = 0.4355261$$
 
-$$1,000,000 \\times 0.435526 = 435,526$$
+$$1,000,000 \\times 0.4355261 \\approx 435,526.07$$
 
-$$100,000 + 435,526 = \\$535,526$$`,
-      `**B) At a 10% annual rate, Option A is the cheaper choice.**  (true)
+$$PV_B \\approx 100,000 + 435,526.07 \\approx 535,526.07$$
 
-Since \\$535,526.07 (Option B) > \\$500,000.00 (Option A), paying cash upfront is the cheaper choice at 10%.`,
+Option A costs \\$500,000 today with nothing to discount. Comparing:
+
+$$535,526.07 - 500,000.00 = 35,526.07$$
+
+Spreading the payments costs \\$35,526.07 more in present-value terms at a 10% rate, so paying cash is cheaper and the statement is true.`,
       `**C) At a 14% annual rate, the present value of Option B is approximately \\$495,000.00.**  (false)
 
-Recomputing at 14%:
+The schedule is unchanged, so the same annuity-due formula applies with a new discount rate:
 
-$$PV_B' = 100,000 + \\frac{100,000}{0.14}\\bigl[1 - (1.14)^{-6}\\bigr]$$
+$$PV_B = a + \\frac{a}{r}\\bigl[1 - (1+r)^{-(n-1)}\\bigr]$$
 
-$$(1.14)^{-6} \\approx 0.455187,\\quad 1 - 0.455187 = 0.544813$$
+Substituting $a = 100,000$, six discounted payments and $r = 14\\% = 0.14$:
 
-$$714,285.71 \\times 0.544813 \\approx 389,867$$
+$$(1.14)^{-6} \\approx 0.4555865$$
 
-$$100,000 + 389,867 \\approx \\$488,867$$
+$$1 - 0.4555865 = 0.5444135$$
 
-not \\$495,000.00.`,
+$$\\frac{100,000}{0.14} \\approx 714,285.71$$
+
+$$714,285.71 \\times 0.5444135 \\approx 388,866.75$$
+
+$$PV_B \\approx 100,000 + 388,866.75$$
+
+$$PV_B \\approx 488,866.75$$
+
+The claim states about \\$495,000.00:
+
+$$495,000.00 - 488,866.75 = 6,133.25$$
+
+The true present value is about \\$488,866.75, more than \\$6,000 below the stated figure, so the statement is false.`,
       `**D) At a 14% annual rate, Option B becomes the cheaper choice.**  (true)
 
-At 14%, $PV_B \\approx \\$488,866.75 < \\$500,000.00$, so the instalment plan is now cheaper — a higher discount rate shrinks the present value of future payments more than it affects cash paid today.`,
+At a higher discount rate the future instalments shrink in today's terms, while the cash price cannot shrink at all. Recompute Option B at 14%:
+
+$$PV_B = 100,000 + \\frac{100,000}{0.14}\\bigl[1 - (1.14)^{-6}\\bigr]$$
+
+$$(1.14)^{-6} \\approx 0.4555865$$
+
+$$1 - 0.4555865 = 0.5444135$$
+
+$$714,285.71 \\times 0.5444135 \\approx 388,866.75$$
+
+$$PV_B \\approx 100,000 + 388,866.75 \\approx 488,866.75$$
+
+Option A still costs \\$500,000 today. Comparing:
+
+$$500,000.00 - 488,866.75 = 11,133.25$$
+
+At 14% the instalment plan costs \\$11,133.25 less in present-value terms, so Option B is now the cheaper choice and the statement is true.`,
       `**E) Option B must always be the more expensive choice in present-value terms, no matter what the interest rate is.**  (false)
 
-Part (d) already shows a rate (14%) at which Option B is cheaper than Option A, so which option is cheaper is rate-dependent, not automatic.`,
+Which option is cheaper depends on the discount rate, because only Option B has payments in the future for a rate to act on. Valuing Option B at two different rates shows the ranking change.
+
+At 10%:
+
+$$PV_B = 100,000 + \\frac{100,000}{0.10}\\bigl[1 - (1.10)^{-6}\\bigr] \\approx 100,000 + 435,526.07 \\approx 535,526.07$$
+
+$$535,526.07 - 500,000.00 = 35,526.07 \\text{ more than cash}$$
+
+At 14%:
+
+$$PV_B = 100,000 + \\frac{100,000}{0.14}\\bigl[1 - (1.14)^{-6}\\bigr] \\approx 100,000 + 388,866.75 \\approx 488,866.75$$
+
+$$500,000.00 - 488,866.75 = 11,133.25 \\text{ less than cash}$$
+
+The claim asserts that Option B is dearer at every rate. One rate makes it \\$35,526.07 dearer and another makes it \\$11,133.25 cheaper, so the ranking depends on the rate and the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 106,
@@ -8083,43 +16943,123 @@ Annuity-due present value: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$
     tactical_explanations: [
       `**A) The year-end equivalent value of the four quarterly deposits made during a single year is \\$1,100.00.**  (false)
 
-Applying simple interest to each \\$250 deposit for its remaining fraction of the year:
+Each quarterly deposit earns simple interest only for the part of the year still left before interest is credited. The deposits land at the end of quarters 1, 2, 3 and 4, so they sit for $3/4$, $1/2$, $1/4$ and $0$ of a year:
 
-$$250(4 + 1.5 \\times 0.08) = 250 \\times 4.12 = \\$1,030.00$$
+$$\\text{year-end value} = D\\Bigl[\\bigl(1 + \\tfrac{3}{4}r\\bigr) + \\bigl(1 + \\tfrac{1}{2}r\\bigr) + \\bigl(1 + \\tfrac{1}{4}r\\bigr) + 1\\Bigr]$$
 
-not \\$1,100.00.`,
+Collecting the four principal amounts and the fractions of a year gives
+
+$$\\text{year-end value} = D(4 + 1.5r)$$
+
+Substituting $D = 250$ and $r = 8\\% = 0.08$:
+
+$$1.5 \\times 0.08 = 0.12$$
+
+$$4 + 0.12 = 4.12$$
+
+$$250 \\times 4.12 = 1,030.00$$
+
+The claim states \\$1,100.00:
+
+$$1,100.00 - 1,030.00 = 70.00$$
+
+The correct year-end equivalent is \\$1,030.00, seventy dollars below the stated figure, so the statement is false.`,
       `**B) The account balance after 4 years is approximately \\$4,700.00.**  (false)
 
-Treating \\$1,030.00 as an ordinary annual deposit compounding at 8% for 4 years:
+Once each year's deposits are converted to a single year-end amount, the account behaves like an ordinary annuity earning 8% a year:
 
-$$F_4 = (1,030 / 0.08)\\bigl[(1.08)^{4} - 1\\bigr]$$
+$$F_N = \\frac{a}{r}\\bigl[(1+r)^{N} - 1\\bigr]$$
 
-$$(1.08)^{4} \\approx 1.360489,\\quad 1.360489 - 1 = 0.360489$$
+The year-end equivalent of the four quarterly deposits is
 
-$$12,875 \\times 0.360489 = \\$4,641.30$$
+$$a = 250(4 + 1.5 \\times 0.08) = 250 \\times 4.12 = 1,030.00$$
 
-not \\$4,700.00.`,
+Substituting $a = 1,030.00$, $r = 0.08$ and $N = 4$:
+
+$$(1.08)^{4} \\approx 1.360489$$
+
+$$1.360489 - 1 = 0.360489$$
+
+$$\\frac{1,030}{0.08} = 12,875$$
+
+$$F_4 \\approx 12,875 \\times 0.360489$$
+
+$$F_4 \\approx 4,641.30$$
+
+The claim states about \\$4,700.00:
+
+$$4,700.00 - 4,641.30 = 58.70$$
+
+The account actually holds about \\$4,641.30 after four years, so the statement is false.`,
       `**C) The account balance after 3 years is approximately \\$3,500.00.**  (false)
 
-Using the same \\$1,030.00 equivalent deposit but compounding for only 3 years:
+The same year-end equivalent applies, with the horizon shortened by one year:
 
-$$F_3 = 12,875\\bigl[(1.08)^{3} - 1\\bigr]$$
+$$F_N = \\frac{a}{r}\\bigl[(1+r)^{N} - 1\\bigr]$$
 
-$$(1.08)^{3} \\approx 1.259712,\\quad 1.259712 - 1 = 0.259712$$
+The equivalent year-end deposit is
 
-$$12,875 \\times 0.259712 = \\$3,343.79$$
+$$a = 250(4 + 1.5 \\times 0.08) = 1,030.00$$
 
-not \\$3,500.00.`,
+Substituting $r = 0.08$ and $N = 3$:
+
+$$(1.08)^{3} \\approx 1.259712$$
+
+$$1.259712 - 1 = 0.259712$$
+
+$$\\frac{1,030}{0.08} = 12,875$$
+
+$$F_3 \\approx 12,875 \\times 0.259712$$
+
+$$F_3 \\approx 3,343.79$$
+
+The claim states about \\$3,500.00:
+
+$$3,500.00 - 3,343.79 = 156.21$$
+
+The three-year balance is about \\$3,343.79, well short of the stated figure, so the statement is false.`,
       `**D) If the four \\$250 deposits are instead treated as a flat \\$1,000.00 deposit at year-end, the resulting 4-year account balance is approximately \\$4,506.11.**  (true)
 
-Treating the deposits as a flat \\$1,000.00 at year-end (ignoring the simple-interest boost):
+Treating the four deposits as a flat \\$1,000.00 at year-end drops the simple-interest credit and leaves a plain ordinary annuity:
 
-$$F_4^{\\mathrm{flat}} = (1,000 / 0.08)\\bigl[(1.08)^{4} - 1\\bigr] = 12,500 \\times 0.360489 = \\$4,506.11$$
+$$F_N^{\\text{flat}} = \\frac{a}{r}\\bigl[(1+r)^{N} - 1\\bigr]$$
 
-matching the claim, and below the correct \\$4,641.30.`,
+Substituting $a = 1,000.00$, $r = 0.08$ and $N = 4$:
+
+$$(1.08)^{4} \\approx 1.360489$$
+
+$$1.360489 - 1 = 0.360489$$
+
+$$\\frac{1,000}{0.08} = 12,500$$
+
+$$F_4^{\\text{flat}} \\approx 12,500 \\times 0.360489$$
+
+$$F_4^{\\text{flat}} \\approx 4,506.11$$
+
+The claim gives about \\$4,506.11, and the calculation returns \\$4,506.11, so the statement is true.`,
       `**E) The difference between the correctly computed 4-year balance and the simplified calculation is approximately \\$200.00.**  (false)
 
-$4,641.30 - 4,506.11 = \\$135.19$, not \\$200.00.`,
+Both balances come from the same annuity formula, differing only in the amount credited each year:
+
+$$F_4 = \\frac{a}{0.08}\\bigl[(1.08)^{4} - 1\\bigr]$$
+
+The correct year-end equivalent keeps the simple interest on the quarterly deposits:
+
+$$a = 250(4 + 1.5 \\times 0.08) = 1,030.00$$
+
+$$F_4 \\approx 12,875 \\times 0.360489 \\approx 4,641.30$$
+
+The simplified version drops that credit:
+
+$$a = 1,000.00$$
+
+$$F_4^{\\text{flat}} \\approx 12,500 \\times 0.360489 \\approx 4,506.11$$
+
+The gap between them is
+
+$$4,641.30 - 4,506.11 = 135.19$$
+
+The claim puts the gap at about \\$200.00, roughly \\$65 more than the true difference of about \\$135, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 107,
@@ -8159,29 +17099,113 @@ Year-end equivalent: $D(4+1.5r)$; then $F_N = (a/r)[(1+r)^{N}-1]$ with $a$ equal
     tactical_explanations: [
       `**A) The required monthly payment is approximately \\$1,432.86.**  (true)
 
-With $r = 0.06/12 = 0.005$ and $n = 240$ monthly payments:
+Equal monthly instalments follow the annuity payment formula, with the rate and the number of periods both expressed in months:
 
-$$a = \\frac{0.005 \\times 200,000}{1 - (1.005)^{-240}} = \\frac{1,000}{0.697884} = \\$1,432.86$$`,
+$$a = \\frac{rK}{1 - (1+r)^{-n}}$$
+
+The nominal 6% compounds monthly, so the monthly rate is $r = 0.06/12 = 0.005$, and 20 years of monthly payments gives $n = 20 \\times 12 = 240$:
+
+$$rK = 0.005 \\times 200,000 = 1,000$$
+
+$$(1.005)^{-240} \\approx 0.302096$$
+
+$$1 - 0.302096 = 0.697904$$
+
+$$a \\approx \\frac{1,000}{0.697904}$$
+
+$$a \\approx 1,432.86$$
+
+The claim gives about \\$1,432.86 per month, and the calculation returns \\$1,432.86, so the statement is true.`,
       `**B) The outstanding balance immediately after the 60th monthly payment is approximately \\$169,799.20.**  (true)
 
-With 180 payments remaining, the outstanding balance is the present value of those payments:
+The balance still owed part way through a loan is the present value of the payments that remain:
 
-$$B_{60} = (1,432.86 / 0.005)\\bigl[1 - (1.005)^{-180}\\bigr]$$
+$$B_m = \\frac{a}{r}\\bigl[1 - (1+r)^{-(n-m)}\\bigr]$$
 
-$$(1.005)^{-180} \\approx 0.407348$$
+The monthly payment is
 
-$$1 - 0.407348 = 0.592652$$
+$$a = \\frac{0.005 \\times 200,000}{1 - (1.005)^{-240}} \\approx \\frac{1,000}{0.697904} \\approx 1,432.86$$
 
-$$286,572 \\times 0.592652 \\approx \\$169,799$$`,
+After $m = 60$ payments out of $n = 240$, there are $240 - 60 = 180$ left:
+
+$$(1.005)^{-180} \\approx 0.407482$$
+
+$$1 - 0.407482 = 0.592518$$
+
+$$\\frac{1,432.86}{0.005} \\approx 286,572.42$$
+
+$$B_{60} \\approx 286,572.42 \\times 0.592518$$
+
+$$B_{60} \\approx 169,799.20$$
+
+The claim gives about \\$169,799.20, and the calculation returns \\$169,799.20, so the statement is true.`,
       `**C) After 5 years of payments, more than 25% of the original \\$200,000 principal has been repaid.**  (false)
 
-Principal repaid is $200,000 - 169,799.20 = \\$30,200.80$, which is $30,200.80 / 200,000 = 15.10\\%$ of the original balance — well under 25%, since early mortgage payments go disproportionately toward interest.`,
+Principal repaid is the drop in the balance, so the balance after five years is needed first:
+
+$$B_{60} = \\frac{a}{r}\\bigl[1 - (1.005)^{-180}\\bigr] \\approx 286,572.42 \\times 0.592518 \\approx 169,799.20$$
+
+The principal cleared so far is
+
+$$200,000.00 - 169,799.20 = 30,200.80$$
+
+As a share of the original loan:
+
+$$\\frac{30,200.80}{200,000.00} \\approx 0.151004$$
+
+$$0.151004 \\approx 15.10\\%$$
+
+The claim needs more than 25% repaid:
+
+$$25\\% - 15.10\\% = 9.90 \\text{ percentage points}$$
+
+Early payments go mostly to interest, so only about 15.10% of the principal is gone after five years, nearly ten percentage points short of the claim, and the statement is false.`,
       `**D) The total interest paid during just the first 5 years is approximately \\$55,770.92.**  (true)
 
-Paid in 60 months: $1,432.86 \\times 60 = \\$85,971.60$; interest is $85,971.60 - 30,200.80 = \\$55,770.80 \\approx \\$55,770.92$, matching the claim.`,
+Interest paid over a stretch of the loan is everything handed over minus the principal actually cleared:
+
+$$\\text{interest} = a \\times m - (K - B_m)$$
+
+Sixty payments of \\$1,432.86 come to
+
+$$1,432.86 \\times 60 \\approx 85,971.73$$
+
+The balance after those payments is the present value of the 180 remaining ones:
+
+$$B_{60} \\approx 286,572.42 \\times 0.592518 \\approx 169,799.20$$
+
+so the principal cleared is
+
+$$200,000.00 - 169,799.20 = 30,200.80$$
+
+The interest inside the first five years is therefore
+
+$$85,971.73 - 30,200.80 = 55,770.93$$
+
+The claim gives about \\$55,770.92, which the calculation matches to the cent, so the statement is true.`,
       `**E) The total interest paid over the entire 20-year life of the loan is approximately \\$120,000.00.**  (false)
 
-Lifetime paid is $1,432.86 \\times 240 = \\$343,886.40$, so lifetime interest is $343,886.40 - 200,000 = \\$143,886.40$, considerably more than \\$120,000.00.`,
+Lifetime interest is the sum of every payment minus the amount borrowed:
+
+$$\\text{total interest} = a \\times n - K$$
+
+The monthly payment is
+
+$$a = \\frac{0.005 \\times 200,000}{1 - (1.005)^{-240}} \\approx 1,432.86$$
+
+Over the full 240 months:
+
+$$1,432.86 \\times 240 \\approx 343,886.91$$
+
+Subtracting the \\$200,000 borrowed:
+
+$$343,886.91 - 200,000.00 = 143,886.91$$
+
+The claim states about \\$120,000.00:
+
+$$143,886.91 - 120,000.00 = 23,886.91$$
+
+The family actually pays about \\$143,886.91 in interest, nearly \\$24,000 more than the stated figure, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 108,
@@ -8225,29 +17249,141 @@ Outstanding balance after $m$ payments: $(a/r)[1-(1+r)^{-(n-m)}]$
     tactical_explanations: [
       `**A) The smallest whole number of yearly payments needed to retire the loan is n = 9.**  (true)
 
-Evaluating $[\\ln a - \\ln(a-rK)]/\\ln(1+r)$ with a=25,000, r=0.14, K=120,000 gives approximately 8.508; rounding up to the next whole number gives n=9 total payments needed.
+When a borrower repays a fixed amount each year until the debt clears, the number of payments is the smallest whole number $n$ satisfying
 
-$$n \\ge \\frac{\\ln 25,000 - \\ln(25,000 - 0.14 \\times 120,000)}{\\ln 1.14} = \\frac{\\ln 25,000 - \\ln 8,200}{\\ln 1.14} \\approx 8.508$$
+$$n \\ge \\frac{\\ln a - \\ln(a - rK)}{\\ln(1+r)}$$
 
-Smallest integer n is 9.`,
+Substituting the fixed payment $a = 25,000$, the rate $r = 14\\% = 0.14$ and the loan $K = 120,000$:
+
+$$rK = 0.14 \\times 120,000 = 16,800$$
+
+$$a - rK = 25,000 - 16,800 = 8,200$$
+
+$$\\ln 25,000 \\approx 10.126631, \\qquad \\ln 8,200 \\approx 9.011889$$
+
+$$10.126631 - 9.011889 = 1.114742$$
+
+$$\\ln 1.14 \\approx 0.131028$$
+
+$$\\frac{1.114742}{0.131028} \\approx 8.5076$$
+
+Eight payments leave part of the debt standing, since the threshold sits above 8, so rounding up gives
+
+$$n = 9$$
+
+The claim names $n = 9$, so the statement is true.`,
       `**B) The ninth and final payment is approximately \\$13,100.16.**  (true)
 
-Loan after 8 years: $120,000 \\times (1.14)^{8} \\approx \\$342,310.37$.
+The final payment settles whatever the loan still owes after the full payments, so compare the debt grown forward with the payments grown forward.
 
-Eight payments accumulated: $(25,000 / 0.14)\\bigl[(1.14)^{8} - 1\\bigr] \\approx \\$330,819$.
+The debt after eight years of interest is
 
-Remainder: $342,310.37 - 330,819 \\approx \\$11,491.37$.
+$$K(1+r)^{8} = 120,000 \\times (1.14)^{8}$$
 
-Final payment: $11,491.37 \\times 1.14 \\approx \\$13,100.16$.`,
+$$(1.14)^{8} \\approx 2.852586$$
+
+$$120,000 \\times 2.852586 \\approx 342,310.37$$
+
+The eight \\$25,000 payments accumulate to
+
+$$\\frac{a}{r}\\bigl[(1+r)^{8} - 1\\bigr] = \\frac{25,000}{0.14}(2.852586 - 1)$$
+
+$$\\approx 178,571.43 \\times 1.852586 \\approx 330,819.00$$
+
+The shortfall at the end of year 8 is
+
+$$342,310.37 - 330,819.00 = 11,491.37$$
+
+Carrying that balance one more year at 14%:
+
+$$11,491.37 \\times 1.14 \\approx 13,100.16$$
+
+The claim gives about \\$13,100.16 for the ninth payment, and the calculation returns \\$13,100.16, so the statement is true.`,
       `**C) The total interest paid over the life of the loan is approximately \\$105,000.00.**  (false)
 
-True total paid is $8 \\times 25,000 + 13,100.16 = \\$213,100.16$, so true interest is $213,100.16 - 120,000 = \\$93,100.16$, not \\$105,000.00.`,
+Interest over the life of the loan is everything paid beyond the amount borrowed:
+
+$$\\text{total interest} = \\text{total paid} - K$$
+
+Eight full payments come to
+
+$$8 \\times 25,000 = 200,000.00$$
+
+The ninth payment clears the year-8 balance:
+
+$$120,000 \\times (1.14)^{8} \\approx 342,310.37$$
+
+$$\\frac{25,000}{0.14}\\bigl[(1.14)^{8} - 1\\bigr] \\approx 330,819.00$$
+
+$$342,310.37 - 330,819.00 = 11,491.37$$
+
+$$11,491.37 \\times 1.14 \\approx 13,100.16$$
+
+So the borrower pays
+
+$$200,000.00 + 13,100.16 = 213,100.16$$
+
+and the interest inside that is
+
+$$213,100.16 - 120,000.00 = 93,100.16$$
+
+The claim states about \\$105,000.00:
+
+$$105,000.00 - 93,100.16 = 11,899.84$$
+
+The true interest bill is about \\$93,100.16, nearly \\$12,000 below the stated figure, so the statement is false.`,
       `**D) The total amount actually paid over the life of the loan is approximately \\$210,000.00.**  (false)
 
-The true total is $8 \\times 25,000 + 13,100.16 = \\$213,100.16$, not \\$210,000.00.`,
+The total paid is eight full payments plus a smaller ninth one, so the ninth payment has to be worked out rather than assumed:
+
+$$\\text{total paid} = 8a + \\text{final payment}$$
+
+The eight full payments give
+
+$$8 \\times 25,000 = 200,000.00$$
+
+The balance they leave at the end of year 8 is the debt grown forward minus the payments grown forward:
+
+$$120,000 \\times (1.14)^{8} \\approx 342,310.37$$
+
+$$\\frac{25,000}{0.14}\\bigl[(1.14)^{8} - 1\\bigr] \\approx 330,819.00$$
+
+$$342,310.37 - 330,819.00 = 11,491.37$$
+
+$$11,491.37 \\times 1.14 \\approx 13,100.16$$
+
+Adding the pieces:
+
+$$200,000.00 + 13,100.16 = 213,100.16$$
+
+The claim states about \\$210,000.00:
+
+$$213,100.16 - 210,000.00 = 3,100.16$$
+
+The company actually pays about \\$213,100.16, so the statement is false.`,
       `**E) Assuming all 9 payments are full \\$25,000 payments overstates the true total amount paid by more than \\$10,000.**  (true)
 
-Nine full \\$25,000 payments would total \\$225,000.00, and $225,000 - 213,100.16 = \\$11,899.84$, an overstatement of more than \\$10,000.`,
+The comparison needs the true total against the total that nine full payments would give.
+
+Nine full payments would be
+
+$$9 \\times 25,000 = 225,000.00$$
+
+The true total uses the smaller ninth payment. Eight full payments leave a balance at the end of year 8 of
+
+$$120,000 \\times (1.14)^{8} - \\frac{25,000}{0.14}\\bigl[(1.14)^{8} - 1\\bigr]$$
+
+$$\\approx 342,310.37 - 330,819.00 = 11,491.37$$
+
+$$11,491.37 \\times 1.14 \\approx 13,100.16$$
+
+$$\\text{total paid} \\approx 8 \\times 25,000 + 13,100.16 = 213,100.16$$
+
+The overstatement is
+
+$$225,000.00 - 213,100.16 = 11,899.84$$
+
+The claim requires an overstatement above \\$10,000, and \\$11,899.84 clears it by \\$1,899.84, so the statement is true.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 109,
@@ -8289,29 +17425,127 @@ After $m = n-1$ full payments, compare loan FV $K(1+r)^{m}$ to payments FV $(a/r
     tactical_explanations: [
       `**A) The required annuity-due payment on the equipment loan is approximately \\$16,176.12.**  (true)
 
-Due factor for 8 payments at 12% (first immediate, remaining 7 as an ordinary annuity):
+With the first instalment due immediately, one payment escapes discounting and the other seven form an ordinary annuity, so the amount borrowed equals the payment times the combined factor:
 
-$$1 + \\frac{1}{0.12}\\bigl[1 - (1.12)^{-7}\\bigr] \\approx 1 + 4.563757 = 5.563757$$
+$$K = a\\Bigl(1 + \\frac{1}{r}\\bigl[1 - (1+r)^{-(n-1)}\\bigr]\\Bigr)$$
 
-$$a = 90,000 / 5.563757 = \\$16,176.12$$`,
+Substituting $r = 12\\% = 0.12$ and $n = 8$ payments, so seven are discounted:
+
+$$(1.12)^{-7} \\approx 0.452349$$
+
+$$1 - 0.452349 = 0.547651$$
+
+$$\\frac{1}{0.12} \\approx 8.333333$$
+
+$$8.333333 \\times 0.547651 \\approx 4.563757$$
+
+$$\\text{factor} = 1 + 4.563757 = 5.563757$$
+
+$$a \\approx \\frac{90,000}{5.563757}$$
+
+$$a \\approx 16,176.12$$
+
+The claim gives about \\$16,176.12, and the calculation returns \\$16,176.12, so the statement is true.`,
       `**B) The interest portion of the second loan payment is approximately \\$8,858.87.**  (true)
 
-After the immediate first payment, the balance is $90,000 - 16,176.12 = \\$73,823.88$, so the second-payment interest is $0.12 \\times 73,823.88 = \\$8,858.87$, matching the claim.`,
+Interest is charged on the balance carried through the year, and with the first payment made immediately that balance is the loan minus one instalment.
+
+The instalment comes from the annuity-due relation:
+
+$$a = \\frac{90,000}{1 + \\frac{1}{0.12}\\bigl[1 - (1.12)^{-7}\\bigr]} \\approx \\frac{90,000}{5.563757} \\approx 16,176.12$$
+
+The first payment lands at once, before any interest accrues:
+
+$$90,000.00 - 16,176.12 = 73,823.88$$
+
+That balance carries for one year at 12%:
+
+$$0.12 \\times 73,823.88 \\approx 8,858.87$$
+
+The claim gives about \\$8,858.87 as the interest inside the second payment, and the calculation returns \\$8,858.87, so the statement is true.`,
       `**C) The interest portion of the third loan payment is larger than the interest portion of the second payment.**  (false)
 
-After payment 2: principal $16,176.12 - 8,858.87 = \\$7,317.25$, balance $73,823.88 - 7,317.25 = \\$66,506.63$. Third-payment interest is $0.12 \\times 66,506.63 = \\$7,980.80$, which is smaller than \\$8,858.87, not larger.`,
+Interest falls whenever the balance falls, so the schedule needs to be carried one more step.
+
+The instalment is
+
+$$a \\approx \\frac{90,000}{5.563757} \\approx 16,176.12$$
+
+The immediate first payment leaves
+
+$$90,000.00 - 16,176.12 = 73,823.88$$
+
+Interest built up over year 1 is
+
+$$0.12 \\times 73,823.88 \\approx 8,858.87$$
+
+so the second payment reduces principal by
+
+$$16,176.12 - 8,858.87 = 7,317.25$$
+
+$$73,823.88 - 7,317.25 = 66,506.63$$
+
+Interest carried into the third payment is
+
+$$0.12 \\times 66,506.63 \\approx 7,980.80$$
+
+Comparing the two interest charges:
+
+$$8,858.87 - 7,980.80 = 878.07$$
+
+The third payment carries \\$878.07 less interest than the second, not more, so the statement is false.`,
       `**D) The year-end equivalent value of the reserve fund's quarterly deposits made during a single year is \\$1,240.50, and the reserve fund's balance after 3 years is approximately \\$4,066.48.**  (true)
 
-Reserve year-end equivalent: $300(4 + 1.5 \\times 0.09) = 300 \\times 4.135 = \\$1,240.50$.
+The reserve deposits land at quarter ends and earn simple interest for the rest of the year, which collapses to a single year-end amount:
 
-$$F_3 = (1,240.50 / 0.09)\\bigl[(1.09)^{3} - 1\\bigr]$$
+$$\\text{year-end value} = D(4 + 1.5r)$$
 
-$$(1.09)^{3} \\approx 1.295029,\\quad 1.295029 - 1 = 0.295029$$
+Substituting $D = 300$ and the reserve rate $r = 9\\% = 0.09$:
 
-$$13,783.33 \\times 0.295029 = \\$4,066.48$$`,
+$$1.5 \\times 0.09 = 0.135$$
+
+$$4 + 0.135 = 4.135$$
+
+$$300 \\times 4.135 = 1,240.50$$
+
+That equivalent deposit then compounds annually like an ordinary annuity:
+
+$$F_N = \\frac{a}{r}\\bigl[(1+r)^{N} - 1\\bigr]$$
+
+$$(1.09)^{3} \\approx 1.295029$$
+
+$$1.295029 - 1 = 0.295029$$
+
+$$\\frac{1,240.50}{0.09} \\approx 13,783.33$$
+
+$$F_3 \\approx 13,783.33 \\times 0.295029$$
+
+$$F_3 \\approx 4,066.48$$
+
+Both figures in the claim, \\$1,240.50 and \\$4,066.48, match the calculation, so the statement is true.`,
       `**E) The combined total of the loan's first three payments is less than the reserve fund's balance after 3 years.**  (false)
 
-Three loan payments total $3 \\times 16,176.12 = \\$48,528.36$, which is far more than the reserve's \\$4,066.48 — the loan payments are larger, not smaller.`,
+The two sides of the comparison come from different arrangements, so each needs its own calculation.
+
+The loan instalment is
+
+$$a \\approx \\frac{90,000}{1 + \\frac{1}{0.12}\\bigl[1 - (1.12)^{-7}\\bigr]} \\approx \\frac{90,000}{5.563757} \\approx 16,176.12$$
+
+so the first three payments total
+
+$$3 \\times 16,176.12 = 48,528.36$$
+
+The reserve fund converts its quarterly deposits to a year-end amount and compounds them:
+
+$$a = 300(4 + 1.5 \\times 0.09) = 1,240.50$$
+
+$$F_3 = \\frac{1,240.50}{0.09}\\bigl[(1.09)^{3} - 1\\bigr] \\approx 13,783.33 \\times 0.295029 \\approx 4,066.48$$
+
+Comparing the two:
+
+$$48,528.36 - 4,066.48 = 44,461.88$$
+
+The loan payments exceed the reserve balance by \\$44,461.88, so they are far from being the smaller amount and the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 110,
@@ -8355,47 +17589,121 @@ Year-end equivalent $D(4+1.5r)$; $F_N = (a/r)[(1+r)^{N}-1]$
     tactical_explanations: [
       `**A) At a 9% annual rate, the present value of Schedule II is approximately \\$521,162.27.**  (true)
 
-Applying the annuity-due formula with $a = 95,000$, $r = 0.09$, $n = 7$:
+Schedule II pays at the start of each year, so the first instalment is not discounted and the other six form an ordinary annuity:
 
-$$PV_{\\mathrm{II}} = 95,000 + \\frac{95,000}{0.09}\\bigl[1 - (1.09)^{-6}\\bigr]$$
+$$PV = a + \\frac{a}{r}\\bigl[1 - (1+r)^{-(n-1)}\\bigr]$$
 
-$$(1.09)^{-6} \\approx 0.596529,\\quad 1 - 0.596529 = 0.403471$$
+Substituting $a = 95,000$, $n = 7$ instalments and $r = 9\\% = 0.09$:
 
-$$1,055,556 \\times 0.403471 + 95,000 \\approx \\$521,162$$`,
+$$(1.09)^{-6} \\approx 0.5962673$$
+
+$$1 - 0.5962673 = 0.4037327$$
+
+$$\\frac{95,000}{0.09} \\approx 1,055,555.56$$
+
+$$1,055,555.56 \\times 0.4037327 \\approx 426,162.27$$
+
+$$PV_{\\text{II}} \\approx 95,000 + 426,162.27$$
+
+$$PV_{\\text{II}} \\approx 521,162.27$$
+
+The claim gives about \\$521,162.27, and the calculation returns \\$521,162.27, so the statement is true.`,
       `**B) At a 9% annual rate, the present value of Schedule III is approximately \\$540,000.00.**  (false)
 
-Adding \\$150,000 upfront to the ordinary-annuity present value of the \\$60,000 payments over 10 years at 9%:
+Schedule III mixes cash paid today with an ordinary annuity whose first instalment arrives a year later, so the two parts are valued separately and added:
 
-$$PV_{\\mathrm{III}} = 150,000 + \\frac{60,000}{0.09}\\bigl[1 - (1.09)^{-10}\\bigr]$$
+$$PV = C_0 + \\frac{a}{r}\\bigl[1 - (1+r)^{-n}\\bigr]$$
 
-$$(1.09)^{-10} \\approx 0.422411,\\quad 1 - 0.422411 = 0.577589$$
+Substituting $C_0 = 150,000$, $a = 60,000$, $n = 10$ and $r = 0.09$:
 
-$$666,667 \\times 0.577589 + 150,000 \\approx \\$535,059$$
+$$(1.09)^{-10} \\approx 0.4224108$$
 
-not \\$540,000.00.`,
+$$1 - 0.4224108 = 0.5775892$$
+
+$$\\frac{60,000}{0.09} \\approx 666,666.67$$
+
+$$666,666.67 \\times 0.5775892 \\approx 385,059.46$$
+
+$$PV_{\\text{III}} \\approx 150,000 + 385,059.46$$
+
+$$PV_{\\text{III}} \\approx 535,059.46$$
+
+The claim states about \\$540,000.00:
+
+$$540,000.00 - 535,059.46 = 4,940.54$$
+
+The true present value is about \\$535,059.46, so the statement is false.`,
       `**C) At a 9% annual rate, Schedule I is the cheapest of the three schedules.**  (true)
 
-At 9%: $\\$500,000.00$ (I) $< \\$521,162.27$ (II) $< \\$535,059.46$ (III), so cash (Schedule I) is cheapest.`,
+Cheapest means the smallest present value, so all three schedules must be valued at 9% and lined up.
+
+Schedule I is cash today, so its present value is the sticker figure:
+
+$$PV_{\\text{I}} = 500,000.00$$
+
+Schedule II is an annuity due of seven instalments:
+
+$$PV_{\\text{II}} = 95,000 + \\frac{95,000}{0.09}\\bigl[1 - (1.09)^{-6}\\bigr] \\approx 95,000 + 426,162.27 \\approx 521,162.27$$
+
+Schedule III is cash plus a ten-year ordinary annuity:
+
+$$PV_{\\text{III}} = 150,000 + \\frac{60,000}{0.09}\\bigl[1 - (1.09)^{-10}\\bigr] \\approx 150,000 + 385,059.46 \\approx 535,059.46$$
+
+Comparing the two instalment plans with cash:
+
+$$521,162.27 - 500,000.00 = 21,162.27$$
+
+$$535,059.46 - 500,000.00 = 35,059.46$$
+
+Both instalment plans cost more in today's money, so paying cash is cheapest at 9% and the statement is true.`,
       `**D) At a 13% annual rate, the present value of Schedule II is approximately \\$474,767.23.**  (true)
 
-Recomputing Schedule II at 13%:
+The schedule is unchanged, so the same annuity-due formula applies with the higher discount rate:
 
-$$PV_{\\mathrm{II}}(13\\%) = 95,000 + \\frac{95,000}{0.13}\\bigl[1 - (1.13)^{-6}\\bigr]$$
+$$PV = a + \\frac{a}{r}\\bigl[1 - (1+r)^{-(n-1)}\\bigr]$$
 
-$$(1.13)^{-6} \\approx 0.481055,\\quad 1 - 0.481055 = 0.518945$$
+Substituting $a = 95,000$, six discounted instalments and $r = 13\\% = 0.13$:
 
-$$730,769 \\times 0.518945 + 95,000 \\approx \\$474,767$$`,
+$$(1.13)^{-6} \\approx 0.4803185$$
+
+$$1 - 0.4803185 = 0.5196815$$
+
+$$\\frac{95,000}{0.13} \\approx 730,769.23$$
+
+$$730,769.23 \\times 0.5196815 \\approx 379,767.23$$
+
+$$PV_{\\text{II}} \\approx 95,000 + 379,767.23$$
+
+$$PV_{\\text{II}} \\approx 474,767.23$$
+
+The claim gives about \\$474,767.23, and the calculation returns \\$474,767.23, so the statement is true.`,
       `**E) At a 13% annual rate, Schedule III becomes the cheapest of the three schedules.**  (false)
 
-Recomputing Schedule III at 13%:
+Both instalment schedules have to be revalued at 13% before any ranking can be claimed.
 
-$$PV_{\\mathrm{III}}(13\\%) = 150,000 + \\frac{60,000}{0.13}\\bigl[1 - (1.13)^{-10}\\bigr]$$
+Schedule II, an annuity due of seven instalments:
 
-$$(1.13)^{-10} \\approx 0.294588,\\quad 1 - 0.294588 = 0.705412$$
+$$PV_{\\text{II}} = 95,000 + \\frac{95,000}{0.13}\\bigl[1 - (1.13)^{-6}\\bigr]$$
 
-$$461,538 \\times 0.705412 + 150,000 \\approx \\$475,575$$
+$$730,769.23 \\times 0.5196815 \\approx 379,767.23$$
 
-Since $PV_{\\mathrm{III}} \\approx \\$475,575$ still sits slightly above $PV_{\\mathrm{II}} \\approx \\$474,767$, Schedule II remains cheapest, not Schedule III.`,
+$$PV_{\\text{II}} \\approx 95,000 + 379,767.23 \\approx 474,767.23$$
+
+Schedule III, cash plus a ten-year ordinary annuity:
+
+$$PV_{\\text{III}} = 150,000 + \\frac{60,000}{0.13}\\bigl[1 - (1.13)^{-10}\\bigr]$$
+
+$$(1.13)^{-10} \\approx 0.2945883$$
+
+$$461,538.46 \\times 0.7054117 \\approx 325,574.61$$
+
+$$PV_{\\text{III}} \\approx 150,000 + 325,574.61 \\approx 475,574.61$$
+
+Comparing the two, with cash at \\$500,000:
+
+$$475,574.61 - 474,767.23 = 807.38$$
+
+Schedule III does close most of the gap at 13%, but it still costs \\$807.38 more than Schedule II, so Schedule II is the cheapest and the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 111,
@@ -8435,45 +17743,119 @@ Due: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$; ordinary: $PV = (a/r)[1-(1+r)^{-n}]$
     tactical_explanations: [
       `**A) At an 8% annual rate, the present value of Schedule II is approximately \\$944,529.45.**  (true)
 
-Applying the annuity-due formula with $a = 140,000$, $r = 0.08$, $n = 9$:
+Schedule II pays at the start of each year, so one instalment escapes discounting and the remaining eight form an ordinary annuity:
 
-$$PV_{\\mathrm{II}} = 140,000 + \\frac{140,000}{0.08}\\bigl[1 - (1.08)^{-8}\\bigr]$$
+$$PV = a + \\frac{a}{r}\\bigl[1 - (1+r)^{-(n-1)}\\bigr]$$
 
-$$(1.08)^{-8} \\approx 0.540269,\\quad 1 - 0.540269 = 0.459731$$
+Substituting $a = 140,000$, $n = 9$ instalments and $r = 8\\% = 0.08$:
 
-$$1,750,000 \\times 0.459731 + 140,000 \\approx \\$944,529$$`,
+$$(1.08)^{-8} \\approx 0.5402689$$
+
+$$1 - 0.5402689 = 0.4597311$$
+
+$$\\frac{140,000}{0.08} = 1,750,000$$
+
+$$1,750,000 \\times 0.4597311 \\approx 804,529.45$$
+
+$$PV_{\\text{II}} \\approx 140,000 + 804,529.45$$
+
+$$PV_{\\text{II}} \\approx 944,529.45$$
+
+The claim gives about \\$944,529.45, and the calculation returns \\$944,529.45, so the statement is true.`,
       `**B) At an 8% annual rate, the present value of Schedule III is approximately \\$871,117.14.**  (true)
 
-Adding \\$300,000 upfront to the ordinary-annuity present value of the \\$80,000 payments over 11 years at 8%:
+Schedule III has cash today plus an ordinary annuity starting a year later, so each part is valued on its own and the results are added:
 
-$$PV_{\\mathrm{III}} = 300,000 + \\frac{80,000}{0.08}\\bigl[1 - (1.08)^{-11}\\bigr]$$
+$$PV = C_0 + \\frac{a}{r}\\bigl[1 - (1+r)^{-n}\\bigr]$$
 
-$$(1.08)^{-11} \\approx 0.428883,\\quad 1 - 0.428883 = 0.571117$$
+Substituting $C_0 = 300,000$, $a = 80,000$, $n = 11$ and $r = 0.08$:
 
-$$1,000,000 \\times 0.571117 + 300,000 \\approx \\$871,117$$`,
+$$(1.08)^{-11} \\approx 0.4288829$$
+
+$$1 - 0.4288829 = 0.5711171$$
+
+$$\\frac{80,000}{0.08} = 1,000,000$$
+
+$$1,000,000 \\times 0.5711171 \\approx 571,117.14$$
+
+$$PV_{\\text{III}} \\approx 300,000 + 571,117.14$$
+
+$$PV_{\\text{III}} \\approx 871,117.14$$
+
+The claim gives about \\$871,117.14, and the calculation returns \\$871,117.14, so the statement is true.`,
       `**C) At an 8% annual rate, Schedule I is the cheapest of the three schedules.**  (true)
 
-At 8%: $\\$850,000.00$ (I) $< \\$871,117.14$ (III) $< \\$944,529.45$ (II), so cash (Schedule I) is cheapest.`,
+Ranking the schedules means valuing all three at 8% and comparing.
+
+Schedule I is cash today:
+
+$$PV_{\\text{I}} = 850,000.00$$
+
+Schedule II is an annuity due of nine instalments:
+
+$$PV_{\\text{II}} = 140,000 + \\frac{140,000}{0.08}\\bigl[1 - (1.08)^{-8}\\bigr] \\approx 140,000 + 804,529.45 \\approx 944,529.45$$
+
+Schedule III is cash plus an eleven-year ordinary annuity:
+
+$$PV_{\\text{III}} = 300,000 + \\frac{80,000}{0.08}\\bigl[1 - (1.08)^{-11}\\bigr] \\approx 300,000 + 571,117.14 \\approx 871,117.14$$
+
+Comparing each instalment plan with cash:
+
+$$871,117.14 - 850,000.00 = 21,117.14$$
+
+$$944,529.45 - 850,000.00 = 94,529.45$$
+
+Both plans cost more in present-value terms than paying \\$850,000 today, so Schedule I is cheapest at 8% and the statement is true.`,
       `**D) At a 12% annual rate, the present value of Schedule III is approximately \\$775,015.93.**  (true)
 
-Recomputing Schedule III at 12%:
+The same split applies at the higher rate, with cash today untouched and the annuity discounted at 12%:
 
-$$PV_{\\mathrm{III}}(12\\%) = 300,000 + \\frac{80,000}{0.12}\\bigl[1 - (1.12)^{-11}\\bigr]$$
+$$PV = C_0 + \\frac{a}{r}\\bigl[1 - (1+r)^{-n}\\bigr]$$
 
-$$(1.12)^{-11} \\approx 0.287476,\\quad 1 - 0.287476 = 0.712524$$
+Substituting $C_0 = 300,000$, $a = 80,000$, $n = 11$ and $r = 12\\% = 0.12$:
 
-$$666,667 \\times 0.712524 + 300,000 \\approx \\$775,016$$`,
+$$(1.12)^{-11} \\approx 0.2874761$$
+
+$$1 - 0.2874761 = 0.7125239$$
+
+$$\\frac{80,000}{0.12} \\approx 666,666.67$$
+
+$$666,666.67 \\times 0.7125239 \\approx 475,015.93$$
+
+$$PV_{\\text{III}} \\approx 300,000 + 475,015.93$$
+
+$$PV_{\\text{III}} \\approx 775,015.93$$
+
+The claim gives about \\$775,015.93, and the calculation returns \\$775,015.93, so the statement is true.`,
       `**E) At a 12% annual rate, Schedule II becomes the cheapest of the three schedules.**  (false)
 
-Recomputing Schedule II at 12%:
+All three schedules need revaluing at 12% before the cheapest can be named.
 
-$$PV_{\\mathrm{II}}(12\\%) = 140,000 + \\frac{140,000}{0.12}\\bigl[1 - (1.12)^{-8}\\bigr]$$
+Schedule I is unaffected by the rate:
 
-$$(1.12)^{-8} \\approx 0.403883,\\quad 1 - 0.403883 = 0.596117$$
+$$PV_{\\text{I}} = 850,000.00$$
 
-$$1,166,667 \\times 0.596117 + 140,000 \\approx \\$835,470$$
+Schedule II, the annuity due of nine instalments:
 
-Since $\\$775,016$ (III) $< \\$835,470$ (II) $< \\$850,000$ (I), Schedule III is cheapest, not Schedule II.`,
+$$(1.12)^{-8} \\approx 0.4038832$$
+
+$$1,166,666.67 \\times 0.5961168 \\approx 695,469.57$$
+
+$$PV_{\\text{II}} \\approx 140,000 + 695,469.57 \\approx 835,469.57$$
+
+Schedule III, cash plus an eleven-year ordinary annuity:
+
+$$(1.12)^{-11} \\approx 0.2874761$$
+
+$$666,666.67 \\times 0.7125239 \\approx 475,015.93$$
+
+$$PV_{\\text{III}} \\approx 300,000 + 475,015.93 \\approx 775,015.93$$
+
+Comparing the two instalment plans:
+
+$$835,469.57 - 775,015.93 = 60,453.64$$
+
+Schedule II does undercut cash at this rate, but Schedule III comes in \\$60,453.64 lower still, so Schedule III is the cheapest and the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 112,
@@ -8513,39 +17895,115 @@ Due: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$; ordinary: $PV = (a/r)[1-(1+r)^{-n}]$
     tactical_explanations: [
       `**A) At a 7.5% annual rate, the present value of Schedule II is approximately \\$2,508,821.59.**  (true)
 
-Applying the annuity-due formula with $a = 340,000$, $r = 0.075$, $n = 10$:
+Schedule II pays at the start of each year, so the first instalment is undiscounted and the other nine form an ordinary annuity:
 
-$$PV_{\\mathrm{II}} = 340,000 + \\frac{340,000}{0.075}\\bigl[1 - (1.075)^{-9}\\bigr]$$
+$$PV = a + \\frac{a}{r}\\bigl[1 - (1+r)^{-(n-1)}\\bigr]$$
 
-$$(1.075)^{-9} \\approx 0.521450,\\quad 1 - 0.521450 = 0.478550$$
+Substituting $a = 340,000$, $n = 10$ instalments and $r = 7.5\\% = 0.075$:
 
-$$4,533,333 \\times 0.478550 + 340,000 \\approx \\$2,508,822$$`,
+$$(1.075)^{-9} \\approx 0.5215835$$
+
+$$1 - 0.5215835 = 0.4784165$$
+
+$$\\frac{340,000}{0.075} \\approx 4,533,333.33$$
+
+$$4,533,333.33 \\times 0.4784165 \\approx 2,168,821.59$$
+
+$$PV_{\\text{II}} \\approx 340,000 + 2,168,821.59$$
+
+$$PV_{\\text{II}} \\approx 2,508,821.59$$
+
+The claim gives about \\$2,508,821.59, and the calculation returns \\$2,508,821.59, so the statement is true.`,
       `**B) At a 7.5% annual rate, the present value of Schedule III is approximately \\$2,250,000.00.**  (false)
 
-Adding \\$600,000 upfront to the ordinary-annuity present value of the \\$250,000 payments over 9 years at 7.5%:
+Schedule III pays cash today and then an ordinary annuity beginning a year later, so the parts are valued separately and added:
 
-$$PV_{\\mathrm{III}} = 600,000 + \\frac{250,000}{0.075}\\bigl[1 - (1.075)^{-9}\\bigr]$$
+$$PV = C_0 + \\frac{a}{r}\\bigl[1 - (1+r)^{-n}\\bigr]$$
 
-$$3,333,333 \\times 0.478550 + 600,000 \\approx \\$2,194,722$$
+Substituting $C_0 = 600,000$, $a = 250,000$, $n = 9$ and $r = 0.075$:
 
-not \\$2,250,000.00.`,
+$$(1.075)^{-9} \\approx 0.5215835$$
+
+$$1 - 0.5215835 = 0.4784165$$
+
+$$\\frac{250,000}{0.075} \\approx 3,333,333.33$$
+
+$$3,333,333.33 \\times 0.4784165 \\approx 1,594,721.76$$
+
+$$PV_{\\text{III}} \\approx 600,000 + 1,594,721.76$$
+
+$$PV_{\\text{III}} \\approx 2,194,721.76$$
+
+The claim states about \\$2,250,000.00:
+
+$$2,250,000.00 - 2,194,721.76 = 55,278.24$$
+
+The true present value is about \\$2,194,721.76, so the statement is false.`,
       `**C) At a 7.5% annual rate, Schedule I is cheaper than Schedule II.**  (true)
 
-\\$2,400,000.00 (I) $< \\$2,508,821.59$ (II), so cash beats the due schedule at 7.5%.`,
+Schedule I is cash today, so no discounting applies to it:
+
+$$PV_{\\text{I}} = 2,400,000.00$$
+
+Schedule II is an annuity due of ten instalments at 7.5%:
+
+$$PV_{\\text{II}} = 340,000 + \\frac{340,000}{0.075}\\bigl[1 - (1.075)^{-9}\\bigr]$$
+
+$$(1.075)^{-9} \\approx 0.5215835$$
+
+$$4,533,333.33 \\times 0.4784165 \\approx 2,168,821.59$$
+
+$$PV_{\\text{II}} \\approx 340,000 + 2,168,821.59 \\approx 2,508,821.59$$
+
+Comparing the two:
+
+$$2,508,821.59 - 2,400,000.00 = 108,821.59$$
+
+At 7.5% the instalment schedule costs \\$108,821.59 more in today's money, so paying cash is the cheaper of the two and the statement is true.`,
       `**D) At an 11.5% annual rate, the present value of Schedule II is approximately \\$2,100,000.00.**  (false)
 
-Recomputing Schedule II at 11.5%:
+The instalments are unchanged, so the annuity-due formula is applied again at the higher rate:
 
-$$PV_{\\mathrm{II}}(11.5\\%) = 340,000 + \\frac{340,000}{0.115}\\bigl[1 - (1.115)^{-9}\\bigr]$$
+$$PV = a + \\frac{a}{r}\\bigl[1 - (1+r)^{-(n-1)}\\bigr]$$
 
-$$(1.115)^{-9} \\approx 0.375418,\\quad 1 - 0.375418 = 0.624582$$
+Substituting $a = 340,000$, nine discounted instalments and $r = 11.5\\% = 0.115$:
 
-$$2,956,522 \\times 0.624582 + 340,000 \\approx \\$2,186,562$$
+$$(1.115)^{-9} \\approx 0.3754276$$
 
-not \\$2,100,000.00.`,
+$$1 - 0.3754276 = 0.6245724$$
+
+$$\\frac{340,000}{0.115} \\approx 2,956,521.74$$
+
+$$2,956,521.74 \\times 0.6245724 \\approx 1,846,561.89$$
+
+$$PV_{\\text{II}} \\approx 340,000 + 1,846,561.89$$
+
+$$PV_{\\text{II}} \\approx 2,186,561.89$$
+
+The claim states about \\$2,100,000.00:
+
+$$2,186,561.89 - 2,100,000.00 = 86,561.89$$
+
+The true present value is about \\$2,186,561.89, so the statement is false.`,
       `**E) At an 11.5% annual rate, Schedule I is still cheaper than Schedule II.**  (false)
 
-At 11.5%, Schedule II's present value drops to $\\$2,186,562$, which is now lower than the $\\$2,400,000.00$ cash price — the annuity-due schedule has overtaken cash, reversing the ranking that held at 7.5%.`,
+Cash is fixed at its face amount, while the instalment schedule shrinks in today's terms as the discount rate rises, so Schedule II must be revalued at 11.5%:
+
+$$PV_{\\text{II}} = 340,000 + \\frac{340,000}{0.115}\\bigl[1 - (1.115)^{-9}\\bigr]$$
+
+$$(1.115)^{-9} \\approx 0.3754276$$
+
+$$1 - 0.3754276 = 0.6245724$$
+
+$$2,956,521.74 \\times 0.6245724 \\approx 1,846,561.89$$
+
+$$PV_{\\text{II}} \\approx 340,000 + 1,846,561.89 \\approx 2,186,561.89$$
+
+Schedule I still costs \\$2,400,000.00 today. Comparing:
+
+$$2,400,000.00 - 2,186,561.89 = 213,438.11$$
+
+At 11.5% the instalment plan is \\$213,438.11 cheaper than cash, so cash is no longer the better of the two and the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 113,
@@ -8585,21 +18043,93 @@ Due: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$; ordinary: $PV = (a/r)[1-(1+r)^{-n}]$
     tactical_explanations: [
       `**A) The internal rate of return for this project is exactly 20%.**  (true)
 
-r = (9,600/8,000) - 1 = 0.20 = 20%, exactly as calculated above.`,
+The internal rate of return is the discount rate at which the project's net present value is zero. For a single outlay $a$ today and a single return $b$ one year later:
+
+$$-a + \\frac{b}{1+r} = 0$$
+
+Rearranging gives the one-year rate directly:
+
+$$r = \\frac{b}{a} - 1$$
+
+Substituting the \\$8,000 spent on the oven and the \\$9,600 returned a year later:
+
+$$r = \\frac{9,600}{8,000} - 1$$
+
+$$r = 1.20 - 1$$
+
+$$r = 0.20 = 20\\%$$
+
+The claim names exactly 20%, and the calculation returns exactly 20%, so the statement is true.`,
       `**B) At an interest rate of 15%, the net present value of this project is positive.**  (true)
 
-NPV = -8,000 + 9,600/1.15 = -8,000 + 8,347.83 = \\$347.83, which is positive (15% is below the 20% IRR, so NPV must be positive).`,
+Net present value discounts each future amount back to today and subtracts the outlay:
+
+$$A = a_0 + \\frac{a_1}{1+r}$$
+
+Substituting $a_0 = -8,000$, $a_1 = 9,600$ and $r = 15\\% = 0.15$:
+
+$$\\frac{9,600}{1.15} \\approx 8,347.83$$
+
+$$A \\approx -8,000.00 + 8,347.83$$
+
+$$A \\approx 347.83$$
+
+The claim says the net present value is positive, and the calculation gives a surplus of \\$347.83, which sits above zero. This is what should happen, since 15% is below the project's 20% internal rate of return. The statement is true.`,
       `**C) At an interest rate of 25%, the net present value of this project is positive.**  (false)
 
-NPV = -8,000 + 9,600/1.25 = -8,000 + 7,680.00 = -\\$320.00, which is negative, not positive (25% is above the 20% IRR).`,
+Net present value uses the same formula with a different discount rate:
+
+$$A = a_0 + \\frac{a_1}{1+r}$$
+
+Substituting $a_0 = -8,000$, $a_1 = 9,600$ and $r = 25\\% = 0.25$:
+
+$$\\frac{9,600}{1.25} = 7,680.00$$
+
+$$A = -8,000.00 + 7,680.00$$
+
+$$A = -320.00$$
+
+The claim says the net present value is positive, but the calculation returns a shortfall of \\$320.00, which is below zero. The result follows from the 25% rate sitting above the project's 20% internal rate of return, so the statement is false.`,
       `**D) If the return had instead been \\$10,000, with the outlay unchanged, the internal rate of return would exceed 24%.**  (true)
 
-With b = 10,000: r = (10,000/8,000) - 1 = 1.25 - 1 = 0.25 = 25%, which exceeds 24%.`,
+For a one-year project the internal rate of return comes straight from the ratio of return to outlay:
+
+$$r = \\frac{b}{a} - 1$$
+
+Substituting the unchanged outlay $a = 8,000$ and the larger return $b = 10,000$:
+
+$$r = \\frac{10,000}{8,000} - 1$$
+
+$$r = 1.25 - 1$$
+
+$$r = 0.25 = 25\\%$$
+
+Comparing with the threshold in the claim:
+
+$$25\\% - 24\\% = 1 \\text{ percentage point}$$
+
+The rate clears 24% by a full percentage point, so the statement is true.`,
       `**E) This project has a unique internal rate of return greater than -1.**  (true)
 
-The chapter's theorem states that if $a_0 < 0$ and all subsequent returns are positive, a unique internal rate of return $r^{*} > -1$ exists. Here $a_0 = -\\$8,000 < 0$ and $a_1 = \\$9,600 > 0$, so the condition is satisfied.
+The chapter's uniqueness result says that when the first cash flow is negative and every later cash flow is positive, the equation for net present value has exactly one root above $-1$:
 
-One-year project with $a_0 = -8,000 < 0$ and $a_1 = 9,600 > 0$. The uniqueness theorem applies, so there is a unique $r^* > -1$, namely the 20% already computed.`,
+$$a_0 < 0, \\qquad a_1, \\ldots, a_n > 0 \\implies \\text{unique } r^{*} > -1$$
+
+Checking the oven project against that condition:
+
+$$a_0 = -8,000 < 0$$
+
+$$a_1 = 9,600 > 0$$
+
+Both parts hold, so a unique internal rate of return above $-1$ exists. Solving for it confirms there is only one:
+
+$$-8,000 + \\frac{9,600}{1+r} = 0$$
+
+$$1 + r = \\frac{9,600}{8,000} = 1.20$$
+
+$$r = 0.20 = 20\\%$$
+
+The equation is linear in $1/(1+r)$, so 20% is the only solution, and it sits well above $-1$. The claim matches this, so the statement is true.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 114,
@@ -8650,27 +18180,125 @@ Solving for $r$: $r = (b/a) - 1$
     tactical_explanations: [
       `**A) The internal rate of return is approximately 10.92%.**  (true)
 
-As calculated above, r ≈ 10.92%.
+With returns in two different years the internal rate of return solves
 
-Let $s = 1/(1+r)$. Then $7,000 s^{2} + 7,000 s - 12,000 = 0$, or $7s^{2} + 7s - 12 = 0$.
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0$$
 
-Discriminant: $49 + 336 = 385$, $\\sqrt{385} \\approx 19.6214$.
+Writing $s = 1/(1+r)$ turns this into a quadratic:
 
-$$s = (-7 + 19.6214)/14 \\approx 0.90153$$
+$$7,000s^{2} + 7,000s - 12,000 = 0$$
 
-$$r = 1/0.90153 - 1 \\approx 0.10922 = 10.92\\%$$`,
+Dividing through by 1,000:
+
+$$7s^{2} + 7s - 12 = 0$$
+
+The quadratic formula needs the discriminant:
+
+$$7^{2} + 4(7)(12) = 49 + 336 = 385$$
+
+$$\\sqrt{385} \\approx 19.6214$$
+
+Taking the positive root, since $s$ must be positive:
+
+$$s = \\frac{-7 + 19.6214}{14} \\approx 0.90153$$
+
+$$r = \\frac{1}{0.90153} - 1$$
+
+$$r \\approx 0.10922 = 10.92\\%$$
+
+The claim gives about 10.92%, and the calculation returns 10.92%, so the statement is true.`,
       `**B) At an interest rate of 8%, the net present value of this project is positive.**  (true)
 
-NPV = -12,000 + 7,000/1.08 + 7,000/1.1664 = -12,000 + 6,481.48 + 6,001.37 = \\$482.85, positive (8% is below the IRR).`,
+Net present value discounts each year's return back to today and subtracts the outlay:
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -12,000$, $a_1 = a_2 = 7,000$ and $r = 8\\% = 0.08$:
+
+$$\\frac{7,000}{1.08} \\approx 6,481.48$$
+
+$$(1.08)^{2} = 1.1664$$
+
+$$\\frac{7,000}{1.1664} \\approx 6,001.37$$
+
+$$A \\approx -12,000.00 + 6,481.48 + 6,001.37$$
+
+$$A \\approx 482.85$$
+
+The claim says the value is positive, and the calculation returns a surplus of \\$482.85, consistent with 8% sitting below the project's internal rate of return of about 10.92%. The statement is true.`,
       `**C) At an interest rate of 12%, the net present value of this project is positive.**  (false)
 
-NPV = -12,000 + 7,000/1.12 + 7,000/1.2544 = -12,000 + 6,250.00 + 5,580.36 = -\\$169.64, negative, not positive (12% is above the IRR).`,
+The same net present value formula applies at the higher rate:
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -12,000$, $a_1 = a_2 = 7,000$ and $r = 12\\% = 0.12$:
+
+$$\\frac{7,000}{1.12} = 6,250.00$$
+
+$$(1.12)^{2} = 1.2544$$
+
+$$\\frac{7,000}{1.2544} \\approx 5,580.36$$
+
+$$A \\approx -12,000.00 + 6,250.00 + 5,580.36$$
+
+$$A \\approx -169.64$$
+
+The claim says the value is positive, but the project comes up \\$169.64 short at this rate, because 12% is above the internal rate of return of about 10.92%. The statement is false.`,
       `**D) If the Year 2 return had instead been \\$8,000, with Year 1 unchanged at \\$7,000, the internal rate of return would exceed 13%.**  (true)
 
-With $a_2 = \\$8,000$: $8,000s^{2} + 7,000s - 12,000 = 0$ → $8s^{2} + 7s - 12 = 0$. Discriminant = 49 + 384 = 433, √433 ≈ 20.809. $s = (-7 + 20.809)/16 \\approx 0.8630$, so $r = 1/0.8630 - 1 \\approx 0.1587 = 15.87\\%$, which exceeds 13%.`,
+Changing the Year 2 return changes the quadratic's leading coefficient, so the rate has to be solved again:
+
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$
+
+With $a_1 = 7,000$ and $a_2 = 8,000$:
+
+$$8,000s^{2} + 7,000s - 12,000 = 0$$
+
+$$8s^{2} + 7s - 12 = 0$$
+
+The discriminant is
+
+$$7^{2} + 4(8)(12) = 49 + 384 = 433$$
+
+$$\\sqrt{433} \\approx 20.8087$$
+
+$$s = \\frac{-7 + 20.8087}{16} \\approx 0.86304$$
+
+$$r = \\frac{1}{0.86304} - 1 \\approx 0.15872 = 15.87\\%$$
+
+Comparing with the threshold in the claim:
+
+$$15.87\\% - 13\\% = 2.87 \\text{ percentage points}$$
+
+The stronger second-year return lifts the rate to about 15.87%, clearing 13%, so the statement is true.`,
       `**E) Doubling both returns to \\$14,000 in Year 1 and \\$14,000 in Year 2, with the outlay unchanged at \\$12,000, would result in an internal rate of return of approximately 21.84%.**  (false)
 
-With both $a_1$ and $a_2$ equal to \\$14,000, the equation becomes $14,000s^{2} + 14,000s - 12,000 = 0$, i.e. $7s^{2} + 7s - 6 = 0$. Discriminant = 49 + 168 = 217, √217 ≈ 14.731. $s = (-7 + 14.731)/14 \\approx 0.5522$, so $r = 1/0.5522 - 1 \\approx 0.8109 = 81.09\\%$ :  far more than double 10.92% (which would be ≈21.84%). Doubling the cash flows does not proportionally double the IRR.`,
+Doubling both returns changes both coefficients of the quadratic, so the rate must be recomputed rather than scaled:
+
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$
+
+With $a_1 = a_2 = 14,000$ and the outlay still \\$12,000:
+
+$$14,000s^{2} + 14,000s - 12,000 = 0$$
+
+$$7s^{2} + 7s - 6 = 0$$
+
+The discriminant is
+
+$$7^{2} + 4(7)(6) = 49 + 168 = 217$$
+
+$$\\sqrt{217} \\approx 14.7309$$
+
+$$s = \\frac{-7 + 14.7309}{14} \\approx 0.55221$$
+
+$$r = \\frac{1}{0.55221} - 1 \\approx 0.81091 = 81.09\\%$$
+
+The claim names about 21.84%, which is simply twice the original 10.92%:
+
+$$81.09\\% - 21.84\\% = 59.25 \\text{ percentage points}$$
+
+The true rate is about 81.09%, nearly sixty percentage points above the stated figure, because doubling the returns does not double the rate. The statement is false.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 115,
@@ -8731,27 +18359,113 @@ Substitute $s = (1+r)^{-1}$
     tactical_explanations: [
       `**A) The internal rate of return is approximately 11.98%.**  (true)
 
-As calculated above, r ≈ 11.98%.
+The internal rate of return is the discount rate that drives net present value to zero:
 
-$$15,000 s^{2} + 9,000 s - 20,000 = 0 \\Rightarrow 15s^{2} + 9s - 20 = 0$$
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0$$
 
-Discriminant: $81 + 1,200 = 1,281$, $\\sqrt{1,281} \\approx 35.791$.
+Substituting $a_0 = -20,000$, $a_1 = 9,000$, $a_2 = 15,000$ and writing $s = 1/(1+r)$ turns this into a quadratic:
 
-$$s = (-9 + 35.791)/30 \\approx 0.89304$$
+$$15,000s^{2} + 9,000s - 20,000 = 0$$
 
-$$r = 1/0.89304 - 1 \\approx 0.11978 = 11.98\\%$$`,
+Dividing through by 1,000:
+
+$$15s^{2} + 9s - 20 = 0$$
+
+The discriminant is
+
+$$9^{2} + 4(15)(20) = 81 + 1,200 = 1,281$$
+
+$$\\sqrt{1,281} \\approx 35.791$$
+
+Taking the positive root, since $s$ must be positive:
+
+$$s = \\frac{-9 + 35.791}{30} \\approx 0.89304$$
+
+$$r = \\frac{1}{0.89304} - 1$$
+
+$$r \\approx 0.11978 = 11.98\\%$$
+
+The claim gives about 11.98%, and the calculation returns 11.98%, so the statement is true.`,
       `**B) At a discount rate of 10%, the net present value of the project is positive.**  (true)
 
-NPV = -20,000 + 9,000/1.10 + 15,000/1.21 = -20,000 + 8,181.82 + 12,396.69 = \\$578.51, positive (10% is below the IRR).`,
+Net present value discounts each year's return to today and subtracts the outlay:
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -20,000$, $a_1 = 9,000$, $a_2 = 15,000$ and $r = 10\\% = 0.10$:
+
+$$\\frac{9,000}{1.10} \\approx 8,181.82$$
+
+$$(1.10)^{2} = 1.21$$
+
+$$\\frac{15,000}{1.21} \\approx 12,396.69$$
+
+$$A \\approx -20,000.00 + 8,181.82 + 12,396.69$$
+
+$$A \\approx 578.51$$
+
+The claim says the value is positive, and the calculation shows a surplus of \\$578.51, in line with 10% sitting below the project's internal rate of return of about 11.98%. The statement is true.`,
       `**C) At a discount rate of 14%, the net present value of the project is positive.**  (false)
 
-NPV = -20,000 + 9,000/1.14 + 15,000/1.2996 = -20,000 + 7,894.74 + 11,542.01 = -\\$563.25, negative, not positive (14% is above the IRR).`,
+The same formula applies with the higher discount rate:
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -20,000$, $a_1 = 9,000$, $a_2 = 15,000$ and $r = 14\\% = 0.14$:
+
+$$\\frac{9,000}{1.14} \\approx 7,894.74$$
+
+$$(1.14)^{2} = 1.2996$$
+
+$$\\frac{15,000}{1.2996} \\approx 11,542.01$$
+
+$$A \\approx -20,000.00 + 7,894.74 + 11,542.01$$
+
+$$A \\approx -563.25$$
+
+The claim says the value is positive, but the project falls \\$563.25 short at 14%, since that rate is above the internal rate of return of about 11.98%. The statement is false.`,
       `**D) If the Year 1 return were \\$9,000 higher, with Year 2 unchanged at \\$15,000, the internal rate of return would exceed 30%.**  (true)
 
-With $a_1 = \\$18,000$: $15,000s^{2} + 18,000s - 20,000 = 0$ → $15s^{2} + 18s - 20 = 0$. Discriminant = 324 + 1,200 = 1,524, √1,524 ≈ 39.038. $s = (-18 + 39.038)/30 \\approx 0.7013$, $r = 1/0.7013 - 1 \\approx 0.4259 = 42.59\\%$, which exceeds 30%.`,
+Raising the Year 1 return changes the middle coefficient of the quadratic, so the rate is solved again from scratch:
+
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$
+
+A \\$9,000 increase makes the first return $9,000 + 9,000 = 18,000$, with Year 2 still at \\$15,000:
+
+$$15,000s^{2} + 18,000s - 20,000 = 0$$
+
+$$15s^{2} + 18s - 20 = 0$$
+
+The discriminant is
+
+$$18^{2} + 4(15)(20) = 324 + 1,200 = 1,524$$
+
+$$\\sqrt{1,524} \\approx 39.0384$$
+
+$$s = \\frac{-18 + 39.0384}{30} \\approx 0.70128$$
+
+$$r = \\frac{1}{0.70128} - 1 \\approx 0.42596 = 42.60\\%$$
+
+Comparing with the threshold in the claim:
+
+$$42.60\\% - 30\\% = 12.60 \\text{ percentage points}$$
+
+Pulling money forward into Year 1 lifts the rate to about 42.60%, well past 30%, so the statement is true.`,
       `**E) The sum of all cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$4,000.**  (true)
 
-$a_0 + a_1 + a_2 = -20,000 + 9,000 + 15,000 = 4,000$ (a positive \\$4,000), and this matches the chapter's stated result that the internal rate of return is positive whenever this sum is positive, consistent with the computed $r \\approx 11.98\\% > 0$.`,
+The cash flows are the outlay today and the two returns, with the outlay counted as negative:
+
+$$a_0 = -20,000, \\qquad a_1 = 9,000, \\qquad a_2 = 15,000$$
+
+Adding them without any discounting:
+
+$$a_0 + a_1 + a_2 = -20,000 + 9,000 + 15,000$$
+
+$$= -20,000 + 24,000$$
+
+$$= 4,000$$
+
+The claim names \\$4,000, and the undiscounted total is \\$4,000. The sign of this total also lines up with the chapter's result that a positive total means a positive internal rate of return, which matches the rate of about 11.98% for these cash flows. The statement is true.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 116,
@@ -8810,25 +18524,103 @@ $s = (1+r)^{-1}$
     tactical_explanations: [
       `**A) The internal rate of return of Project X is exactly 15%.**  (true)
 
-As calculated above, $r_X = 15\\%$.
+For a project with one outlay today and one return a year later, the internal rate of return solves
 
-One-year IRR: $r_X = (17,250 / 15,000) - 1 = 1.15 - 1 = 0.15 = 15\\%$.`,
+$$-a + \\frac{b}{1+r} = 0$$
+
+which rearranges to
+
+$$r = \\frac{b}{a} - 1$$
+
+Substituting Project X's outlay of \\$15,000 and its \\$17,250 payoff:
+
+$$r_X = \\frac{17,250}{15,000} - 1$$
+
+$$\\frac{17,250}{15,000} = 1.15$$
+
+$$r_X = 1.15 - 1$$
+
+$$r_X = 0.15 = 15\\%$$
+
+The claim names exactly 15%, and the calculation returns exactly 15%, so the statement is true.`,
       `**B) The internal rate of return of Project Y is exactly 12.5%.**  (true)
 
-As calculated above, $r_Y = 12.5\\%$.
+The same one-year rule applies to Project Y, with its own outlay and payoff:
 
-$r_Y = (24,750 / 22,000) - 1 = 1.125 - 1 = 0.125 = 12.5\\%$.`,
+$$r = \\frac{b}{a} - 1$$
+
+Substituting Project Y's outlay of \\$22,000 and its \\$24,750 payoff:
+
+$$r_Y = \\frac{24,750}{22,000} - 1$$
+
+$$\\frac{24,750}{22,000} = 1.125$$
+
+$$r_Y = 1.125 - 1$$
+
+$$r_Y = 0.125 = 12.5\\%$$
+
+The claim names exactly 12.5%, and the calculation returns exactly 12.5%, so the statement is true.`,
       `**C) Based on the internal rate of return criterion, Project Y should be preferred over Project X.**  (false)
 
-The chapter's criterion is to prefer the project with the higher internal rate of return. Since 15% (X) is higher than 12.5% (Y), X should be preferred, not Y.
+The internal rate of return criterion ranks projects by rate and prefers the higher one, so both rates are needed:
 
-The criterion prefers the higher IRR. 15% (X) > 12.5% (Y), so X is preferred, not Y.`,
+$$r = \\frac{b}{a} - 1$$
+
+Project X:
+
+$$r_X = \\frac{17,250}{15,000} - 1 = 1.15 - 1 = 0.15 = 15\\%$$
+
+Project Y:
+
+$$r_Y = \\frac{24,750}{22,000} - 1 = 1.125 - 1 = 0.125 = 12.5\\%$$
+
+Comparing the two:
+
+$$15\\% - 12.5\\% = 2.5 \\text{ percentage points}$$
+
+Project X earns 2.5 percentage points more per dollar committed, so the criterion picks X rather than Y. The claim puts Y ahead, so the statement is false.`,
       `**D) At an interest rate of 11%, Project X has positive net present value while Project Y has negative net present value.**  (false)
 
-$NPV_X$ at 11% = -15,000 + 17,250/1.11 = -15,000 + 15,540.54 = \\$540.54 (positive). $NPV_Y$ at 11% = -22,000 + 24,750/1.11 = -22,000 + 22,297.30 = \\$297.30, which is also positive, not negative, because 11% is still below Y's 12.5% IRR.`,
+Each project is valued at 11% with the one-period net present value formula:
+
+$$A = -a + \\frac{b}{1+r}$$
+
+Project X:
+
+$$\\frac{17,250}{1.11} \\approx 15,540.54$$
+
+$$A_X \\approx -15,000.00 + 15,540.54 \\approx 540.54$$
+
+Project Y:
+
+$$\\frac{24,750}{1.11} \\approx 22,297.30$$
+
+$$A_Y \\approx -22,000.00 + 22,297.30 \\approx 297.30$$
+
+The claim needs X positive and Y negative. X is positive at \\$540.54, but Y is also positive, by \\$297.30, because 11% still sits below Y's internal rate of return of 12.5%. The second half of the claim fails, so the statement is false.`,
       `**E) If Project Y's payoff had instead been \\$25,000, with the outlay unchanged at \\$22,000, its internal rate of return would exceed that of Project X.**  (false)
 
-With $b = \\$25,000$: $r_Y = (25,000/22,000) - 1 \\approx 0.1364 = 13.64\\%$, which is still lower than Project X's 15%, so it would not exceed X's rate.`,
+A larger payoff on the same outlay raises Project Y's rate, so recompute it with the one-year rule:
+
+$$r = \\frac{b}{a} - 1$$
+
+Substituting the unchanged \\$22,000 outlay and the higher \\$25,000 payoff:
+
+$$r_Y = \\frac{25,000}{22,000} - 1$$
+
+$$\\frac{25,000}{22,000} \\approx 1.136364$$
+
+$$r_Y \\approx 0.136364 = 13.64\\%$$
+
+Project X's rate comes from its own figures:
+
+$$r_X = \\frac{17,250}{15,000} - 1 = 0.15 = 15\\%$$
+
+Comparing the two:
+
+$$15\\% - 13.64\\% = 1.36 \\text{ percentage points}$$
+
+Even with the bigger payoff, Project Y stays 1.36 percentage points behind Project X, so the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 117,
@@ -8875,43 +18667,95 @@ $r = (b/a) - 1$ (one-year rate of return, applied to each project)
     tactical_explanations: [
       `**A) At r = 8%, the net present value of the project is approximately \\$4,012.**  (true)
 
-As calculated in Step 1, A ≈ \\$4,011.84 at r = 8%, which rounds to approximately \\$4,012.
+Net present value discounts every cash flow, including the negative one in Year 1, back to today:
 
-At 8%:
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} + \\frac{a_3}{(1+r)^{3}}$$
 
-$$A = -45,000 - 3,000/1.08 + 28,000/1.1664 + 35,000/1.259712$$
+Substituting $a_0 = -45,000$, $a_1 = -3,000$, $a_2 = 28,000$, $a_3 = 35,000$ and $r = 8\\% = 0.08$:
 
-$$= -45,000 - 2,777.78 + 24,005.49 + 27,784.13 = \\$4,011.84 \\approx \\$4,012$$`,
+$$\\frac{-3,000}{1.08} \\approx -2,777.78$$
+
+$$(1.08)^{2} = 1.1664, \\qquad \\frac{28,000}{1.1664} \\approx 24,005.49$$
+
+$$(1.08)^{3} \\approx 1.259712, \\qquad \\frac{35,000}{1.259712} \\approx 27,784.13$$
+
+$$A \\approx -45,000.00 - 2,777.78 + 24,005.49 + 27,784.13$$
+
+$$A \\approx 4,011.84$$
+
+The claim gives about \\$4,012, and the calculation returns \\$4,011.84, so the statement is true.`,
       `**B) At r = 12%, the net present value of the project is positive.**  (false)
 
-As calculated in Step 2, A ≈ -\\$444.83 at r = 12%, which is negative, not positive.
+The same four-term formula is evaluated at the higher rate:
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} + \\frac{a_3}{(1+r)^{3}}$$
+
+Substituting the cash flows with $r = 12\\% = 0.12$:
+
+$$\\frac{-3,000}{1.12} \\approx -2,678.57$$
+
+$$(1.12)^{2} = 1.2544, \\qquad \\frac{28,000}{1.2544} \\approx 22,321.43$$
+
+$$(1.12)^{3} \\approx 1.404928, \\qquad \\frac{35,000}{1.404928} \\approx 24,912.31$$
+
+$$A \\approx -45,000.00 - 2,678.57 + 22,321.43 + 24,912.31$$
+
+$$A \\approx -444.83$$
+
+The claim says the value is positive, but at 12% the project comes up \\$444.83 short, so the statement is false.`,
+      `**C) The internal rate of return of this project lies between 12% and 15%.**  (false)
+
+The internal rate of return sits where net present value crosses zero, so the crossing point is located by evaluating
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} + \\frac{a_3}{(1+r)^{3}}$$
+
+at several rates. At 8%:
+
+$$A \\approx -45,000.00 - 2,777.78 + 24,005.49 + 27,784.13 \\approx 4,011.84$$
+
+At 11%:
+
+$$A \\approx -45,000.00 - 2,702.70 + 22,725.43 + 25,591.69 \\approx 614.42$$
 
 At 12%:
 
-$$A = -45,000 - 3,000/1.12 + 28,000/1.2544 + 35,000/1.404928$$
+$$A \\approx -45,000.00 - 2,678.57 + 22,321.43 + 24,912.31 \\approx -444.83$$
 
-$$= -45,000 - 2,678.57 + 22,321.43 + 24,912.31 = -\\$444.83$$
-
-Negative, not positive.`,
-      `**C) The internal rate of return of this project lies between 12% and 15%.**  (false)
-
-The NPV is already negative at both r = 12% (-\\$444.83) and r = 15% (-\\$3,423.60), and it was positive at r = 8%. This means the rate where NPV crosses zero lies between 8% and 12%, not between 12% and 15%.
-
-NPV is positive at 8% (+4,012) and already negative at 12% (−445). The zero crossing therefore sits between 8% and 12%, not between 12% and 15%.`,
+Net present value is still positive at 11% and already negative at 12%, so it passes through zero somewhere between those two rates. The claim places the internal rate of return between 12% and 15%, but by 12% the value has already gone negative, so the statement is false.`,
       `**D) At r = 15%, the net present value of the project is approximately -\\$3,424.**  (true)
 
-As calculated in Step 3, A ≈ -\\$3,423.60 at r = 15%, which rounds to approximately -\\$3,424.
+Net present value at 15% uses the same four discounted terms:
 
-At 15%:
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} + \\frac{a_3}{(1+r)^{3}}$$
 
-$$A = -45,000 - 3,000/1.15 + 28,000/1.3225 + 35,000/1.520875$$
+Substituting the cash flows with $r = 15\\% = 0.15$:
 
-$$= -45,000 - 2,608.70 + 21,172.02 + 23,013.07 = -\\$3,423.61 \\approx -\\$3,424$$`,
+$$\\frac{-3,000}{1.15} \\approx -2,608.70$$
+
+$$(1.15)^{2} = 1.3225, \\qquad \\frac{28,000}{1.3225} \\approx 21,172.02$$
+
+$$(1.15)^{3} \\approx 1.520875, \\qquad \\frac{35,000}{1.520875} \\approx 23,013.08$$
+
+$$A \\approx -45,000.00 - 2,608.70 + 21,172.02 + 23,013.08$$
+
+$$A \\approx -3,423.60$$
+
+The claim gives about $-3,424$, and the calculation returns $-3,423.60$, so the statement is true.`,
       `**E) $a_1$, $a_2$, and $a_3$ are all positive.**  (false)
 
-The theorem requires $a_0 < 0$ and all of $a_1, \\ldots, a_n$ to be strictly positive. Here $a_1 = -\\$3,000$, which is negative, so this precondition is not met: the theorem's guarantee of a unique internal rate of return does not apply to this cash flow pattern.
+The claim is about the signs of the three cash flows that follow the initial outlay, so read them straight from the project description:
 
-$a_1 = -\\$3,000$, so the later cash flows are not all positive. The uniqueness theorem's hypothesis fails.`,
+$$a_1 = -3,000, \\qquad a_2 = 28,000, \\qquad a_3 = 35,000$$
+
+Installation disruption produces a net outflow at the end of Year 1, which makes $a_1$ negative:
+
+$$a_1 = -3,000 < 0$$
+
+The two later flows are genuine returns:
+
+$$a_2 = 28,000 > 0, \\qquad a_3 = 35,000 > 0$$
+
+Since one of the three is negative, they are not all positive. This also matters for the uniqueness result, which requires every cash flow after the initial outlay to be strictly positive before it can guarantee a single internal rate of return, and that requirement is not met here. The claim says all three are positive, so the statement is false.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 118,
@@ -8958,29 +18802,127 @@ $A = a_0 + a_1/(1+r) + a_2/(1+r)^{2} + a_3/(1+r)^{3}$
     tactical_explanations: [
       `**A) The internal rate of return is approximately 14.5%.**  (false)
 
-As calculated above, r ≈ 10.78%, not 14.5%.
+The internal rate of return is the discount rate at which net present value is zero:
 
-$$24,000 s^{2} + 16,000 s - 34,000 = 0 \\Rightarrow 12s^{2} + 8s - 17 = 0$$
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0$$
 
-Discriminant: $64 + 816 = 880$, $\\sqrt{880} \\approx 29.665$.
+Substituting $a_0 = -34,000$, $a_1 = 16,000$, $a_2 = 24,000$ and writing $s = 1/(1+r)$:
 
-$$s = (-8 + 29.665)/24 \\approx 0.90270$$
+$$24,000s^{2} + 16,000s - 34,000 = 0$$
 
-$$r = 1/0.90270 - 1 \\approx 0.10778 = 10.78\\%$$
+Dividing through by 2,000:
 
-Not 14.5%.`,
+$$12s^{2} + 8s - 17 = 0$$
+
+The discriminant is
+
+$$8^{2} + 4(12)(17) = 64 + 816 = 880$$
+
+$$\\sqrt{880} \\approx 29.665$$
+
+$$s = \\frac{-8 + 29.665}{24} \\approx 0.90270$$
+
+$$r = \\frac{1}{0.90270} - 1 \\approx 0.10778 = 10.78\\%$$
+
+The claim states about 14.5%:
+
+$$14.5\\% - 10.78\\% = 3.72 \\text{ percentage points}$$
+
+The true rate is about 10.78%, well short of the stated figure, so the statement is false.`,
       `**B) At an interest rate of 9%, the net present value of the project is negative.**  (false)
 
-NPV = -34,000 + 16,000/1.09 + 24,000/1.1881 = -34,000 + 14,678.90 + 20,200.32 = \\$879.22, which is positive, not negative (9% is below the 10.78% IRR).`,
+Net present value discounts both returns and subtracts the outlay:
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -34,000$, $a_1 = 16,000$, $a_2 = 24,000$ and $r = 9\\% = 0.09$:
+
+$$\\frac{16,000}{1.09} \\approx 14,678.90$$
+
+$$(1.09)^{2} = 1.1881$$
+
+$$\\frac{24,000}{1.1881} \\approx 20,200.32$$
+
+$$A \\approx -34,000.00 + 14,678.90 + 20,200.32$$
+
+$$A \\approx 879.22$$
+
+The claim says the value is negative, but the project shows a surplus of \\$879.22, because 9% sits below the internal rate of return of about 10.78%. The statement is false.`,
       `**C) At an interest rate of 13%, the net present value of the project is negative.**  (true)
 
-NPV = -34,000 + 16,000/1.13 + 24,000/1.2769 = -34,000 + 14,159.29 + 18,795.52 = -\\$1,045.19, which is negative, confirming the statement (13% is above the IRR).`,
+The same formula is evaluated at the higher rate:
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -34,000$, $a_1 = 16,000$, $a_2 = 24,000$ and $r = 13\\% = 0.13$:
+
+$$\\frac{16,000}{1.13} \\approx 14,159.29$$
+
+$$(1.13)^{2} = 1.2769$$
+
+$$\\frac{24,000}{1.2769} \\approx 18,795.52$$
+
+$$A \\approx -34,000.00 + 14,159.29 + 18,795.52$$
+
+$$A \\approx -1,045.19$$
+
+The claim says the value is negative, and the project falls \\$1,045.19 short at 13%, which is above its internal rate of return of about 10.78%. The statement is true.`,
       `**D) If the Year 2 return had instead been \\$20,000, with Year 1 unchanged at \\$16,000, the internal rate of return would exceed the internal rate of return of the original project.**  (false)
 
-With $a_2 = \\$20,000$: $20,000s^{2} + 16,000s - 34,000 = 0$ → $10s^{2} + 8s - 17 = 0$. Discriminant = 64 + 680 = 744, √744 ≈ 27.276. $s = (-8 + 27.276)/20 \\approx 0.9638$, $r = 1/0.9638 - 1 \\approx 0.0375 = 3.75\\%$, which is far lower than 10.78%, not higher.`,
+Both versions of the project need their own rate, since changing a cash flow changes the whole equation:
+
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$
+
+With the original returns:
+
+$$24,000s^{2} + 16,000s - 34,000 = 0 \\implies 12s^{2} + 8s - 17 = 0$$
+
+$$\\sqrt{64 + 816} = \\sqrt{880} \\approx 29.665, \\qquad s \\approx \\frac{-8 + 29.665}{24} \\approx 0.90270$$
+
+$$r \\approx \\frac{1}{0.90270} - 1 \\approx 0.10778 = 10.78\\%$$
+
+With the Year 2 return cut to \\$20,000:
+
+$$20,000s^{2} + 16,000s - 34,000 = 0 \\implies 10s^{2} + 8s - 17 = 0$$
+
+$$8^{2} + 4(10)(17) = 64 + 680 = 744, \\qquad \\sqrt{744} \\approx 27.276$$
+
+$$s = \\frac{-8 + 27.276}{20} \\approx 0.96382$$
+
+$$r = \\frac{1}{0.96382} - 1 \\approx 0.03754 = 3.75\\%$$
+
+Comparing the two rates:
+
+$$10.78\\% - 3.75\\% = 7.03 \\text{ percentage points}$$
+
+Cutting \\$4,000 from the second year drags the rate down by about seven percentage points rather than lifting it, so the statement is false.`,
       `**E) Reducing the initial outlay to \\$30,000, with returns unchanged at \\$16,000 and \\$24,000, would lower the internal rate of return.**  (false)
 
-With $a_0 = -\\$30,000$: $24,000s^{2} + 16,000s - 30,000 = 0$ → $12s^{2} + 8s - 15 = 0$. Discriminant: $64 + 720 = 784 = 28^{2}$ exactly. $s = (-8 + 28)/24 = 20/24 \\approx 0.83333$, $r = 1/0.83333 - 1 = 0.20 = 20\\%$, which is much higher than the original 10.78%: a smaller outlay for the same returns raises the internal rate of return, it does not lower it.`,
+A smaller outlay changes the constant term of the quadratic, so the rate is solved again:
+
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$
+
+With the outlay reduced to \\$30,000 and the returns unchanged:
+
+$$24,000s^{2} + 16,000s - 30,000 = 0$$
+
+Dividing through by 2,000:
+
+$$12s^{2} + 8s - 15 = 0$$
+
+The discriminant works out exactly:
+
+$$8^{2} + 4(12)(15) = 64 + 720 = 784 = 28^{2}$$
+
+$$s = \\frac{-8 + 28}{24} = \\frac{20}{24} \\approx 0.83333$$
+
+$$r = \\frac{1}{0.83333} - 1 = 0.20 = 20\\%$$
+
+The original project earns about 10.78%, so comparing:
+
+$$20\\% - 10.78\\% = 9.22 \\text{ percentage points}$$
+
+Paying less for the same returns raises the rate by more than nine percentage points instead of lowering it, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 119,
@@ -9038,29 +18980,103 @@ $s = (1+r)^{-1}$
     tactical_explanations: [
       `**A) At r = 15%, the net present value of the project is \\$0, to the nearest dollar.**  (true)
 
-As calculated above, A = 0 at r = 15%, confirming this is the internal rate of return.
+Net present value at a given rate discounts each return and subtracts the outlay:
 
-Test r = 15%:
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
 
-$$A = -40,000 + 22,000/1.15 + 27,600/1.3225$$
+Substituting $a_0 = -40,000$, $a_1 = 22,000$, $a_2 = 27,600$ and $r = 15\\% = 0.15$:
 
-$$= -40,000 + 19,130.43 + 20,869.57 = \\$0.00$$
+$$\\frac{22,000}{1.15} \\approx 19,130.43$$
 
-(to the nearest dollar). So 15% is the IRR.`,
+$$(1.15)^{2} = 1.3225$$
+
+$$\\frac{27,600}{1.3225} \\approx 20,869.57$$
+
+Adding the discounted returns:
+
+$$19,130.43 + 20,869.57 = 40,000.00$$
+
+$$A \\approx -40,000.00 + 40,000.00 = 0.00$$
+
+The discounted returns cover the outlay to the dollar, so the net present value is \\$0 at 15% and 15% is this project's internal rate of return. The claim says exactly this, so the statement is true.`,
       `**B) At an interest rate of 10%, the net present value of the project is positive.**  (true)
 
-NPV = -40,000 + 22,000/1.10 + 27,600/1.21 = -40,000 + 20,000.00 + 22,809.92 = \\$2,809.92, positive (10% is below the 15% IRR).`,
+The same formula is evaluated at the lower rate:
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -40,000$, $a_1 = 22,000$, $a_2 = 27,600$ and $r = 10\\% = 0.10$:
+
+$$\\frac{22,000}{1.10} = 20,000.00$$
+
+$$(1.10)^{2} = 1.21$$
+
+$$\\frac{27,600}{1.21} \\approx 22,809.92$$
+
+$$A \\approx -40,000.00 + 20,000.00 + 22,809.92$$
+
+$$A \\approx 2,809.92$$
+
+The claim says the value is positive, and the project shows a surplus of \\$2,809.92, as expected with 10% below the project's 15% internal rate of return. The statement is true.`,
       `**C) At an interest rate of 20%, the net present value of the project is negative.**  (true)
 
-NPV = -40,000 + 22,000/1.20 + 27,600/1.44 = -40,000 + 18,333.33 + 19,166.67 = -\\$2,500.00, negative (20% is above the 15% IRR).`,
+Evaluating the same expression at 20%:
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
+
+$$\\frac{22,000}{1.20} \\approx 18,333.33$$
+
+$$(1.20)^{2} = 1.44$$
+
+$$\\frac{27,600}{1.44} \\approx 19,166.67$$
+
+$$A \\approx -40,000.00 + 18,333.33 + 19,166.67$$
+
+$$A \\approx -2,500.00$$
+
+The claim says the value is negative, and the project falls \\$2,500.00 short at 20%, which sits above the 15% internal rate of return. The statement is true.`,
       `**D) The sum of all the project's cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$9,600.**  (true)
 
-$a_0$ + $a_1$ + $a_2 = -\\$40,000$ + 22,000 + 27,600 = \\$9,600, which is positive, and this matches the chapter's result that the internal rate of return is positive whenever this sum is positive - consistent with the found r = 15% > 0.`,
+The cash flows are the outlay today, entered as a negative amount, and the two returns:
+
+$$a_0 = -40,000, \\qquad a_1 = 22,000, \\qquad a_2 = 27,600$$
+
+Adding them with no discounting applied:
+
+$$a_0 + a_1 + a_2 = -40,000 + 22,000 + 27,600$$
+
+$$= -40,000 + 49,600$$
+
+$$= 9,600$$
+
+The claim names \\$9,600, and the undiscounted total is \\$9,600. The positive sign also fits the chapter's result that a positive total goes with a positive internal rate of return, matching the 15% these cash flows produce. The statement is true.`,
       `**E) This project has a unique internal rate of return greater than -1.**  (true)
 
-The theorem's precondition ($a_0 < 0$, all subsequent $a_i > 0$) is satisfied exactly: $a_0 = -\\$40,000 < 0$, $a_1 = \\$22,000 > 0$, $a_2 = \\$27,600 > 0$.
+The chapter's uniqueness result applies when the first cash flow is negative and every later one is positive:
 
-$a_0 = -40,000 < 0$, $a_1 = 22,000 > 0$, $a_2 = 27,600 > 0$. The uniqueness theorem applies, and the unique $r^* > -1$ is the 15% just found.`,
+$$a_0 < 0, \\qquad a_1, \\ldots, a_n > 0 \\implies \\text{unique } r^{*} > -1$$
+
+Checking the three cash flows:
+
+$$a_0 = -40,000 < 0, \\qquad a_1 = 22,000 > 0, \\qquad a_2 = 27,600 > 0$$
+
+The condition holds, so exactly one rate above $-1$ solves the equation. Solving confirms it. With $s = 1/(1+r)$:
+
+$$27,600s^{2} + 22,000s - 40,000 = 0$$
+
+$$69s^{2} + 55s - 100 = 0$$
+
+$$55^{2} + 4(69)(100) = 3,025 + 27,600 = 30,625 = 175^{2}$$
+
+$$s = \\frac{-55 + 175}{138} = \\frac{120}{138} \\approx 0.869565$$
+
+$$r = \\frac{1}{0.869565} - 1 = 0.15 = 15\\%$$
+
+The other root is
+
+$$s = \\frac{-55 - 175}{138} \\approx -1.6667, \\qquad r = \\frac{1}{-1.6667} - 1 = -1.60$$
+
+which falls below $-1$ and is discarded, leaving 15% as the single admissible rate. The claim matches this, so the statement is true.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 120,
@@ -9110,27 +19126,129 @@ $A = a_0 + a_1/(1+r) + a_2/(1+r)^{2}$
     tactical_explanations: [
       `**A) The internal rate of return is approximately 10.69%.**  (true)
 
-As calculated above, r ≈ 10.69%.
+The internal rate of return is the discount rate at which net present value is zero:
 
-$$42,000 s^{2} + 34,000 s - 65,000 = 0 \\Rightarrow 42s^{2} + 34s - 65 = 0$$
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0$$
 
-Discriminant: $1,156 + 10,920 = 12,076$, $\\sqrt{12,076} \\approx 109.891$.
+Substituting $a_0 = -65,000$, $a_1 = 34,000$, $a_2 = 42,000$ and writing $s = 1/(1+r)$:
 
-$$s = (-34 + 109.891)/84 \\approx 0.90346$$
+$$42,000s^{2} + 34,000s - 65,000 = 0$$
 
-$$r = 1/0.90346 - 1 \\approx 0.10685 = 10.69\\%$$`,
+Dividing through by 1,000:
+
+$$42s^{2} + 34s - 65 = 0$$
+
+The discriminant is
+
+$$34^{2} + 4(42)(65) = 1,156 + 10,920 = 12,076$$
+
+$$\\sqrt{12,076} \\approx 109.891$$
+
+Taking the positive root, since $s$ must be positive:
+
+$$s = \\frac{-34 + 109.891}{84} \\approx 0.90346$$
+
+$$r = \\frac{1}{0.90346} - 1$$
+
+$$r \\approx 0.10685 = 10.69\\%$$
+
+The claim gives about 10.69%, and the calculation returns 10.69%, so the statement is true.`,
       `**B) At an interest rate of 9%, the net present value of the project is positive.**  (true)
 
-NPV = -65,000 + 34,000/1.09 + 42,000/1.1881 = -65,000 + 31,192.66 + 35,350.56 = \\$1,543.22, positive (9% is below the IRR).`,
+Net present value discounts both years of rental income and subtracts the renovation cost:
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -65,000$, $a_1 = 34,000$, $a_2 = 42,000$ and $r = 9\\% = 0.09$:
+
+$$\\frac{34,000}{1.09} \\approx 31,192.66$$
+
+$$(1.09)^{2} = 1.1881$$
+
+$$\\frac{42,000}{1.1881} \\approx 35,350.56$$
+
+$$A \\approx -65,000.00 + 31,192.66 + 35,350.56$$
+
+$$A \\approx 1,543.22$$
+
+The claim says the value is positive, and the project shows a surplus of \\$1,543.22, consistent with 9% sitting below the internal rate of return of about 10.69%. The statement is true.`,
       `**C) At an interest rate of 12%, the net present value of the project is positive.**  (false)
 
-NPV = -65,000 + 34,000/1.12 + 42,000/1.2544 = -65,000 + 30,357.14 + 33,482.14 = -\\$1,160.72, negative, not positive (12% is above the IRR).`,
+The same formula is evaluated at the higher discount rate:
+
+$$A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -65,000$, $a_1 = 34,000$, $a_2 = 42,000$ and $r = 12\\% = 0.12$:
+
+$$\\frac{34,000}{1.12} \\approx 30,357.14$$
+
+$$(1.12)^{2} = 1.2544$$
+
+$$\\frac{42,000}{1.2544} \\approx 33,482.14$$
+
+$$A \\approx -65,000.00 + 30,357.14 + 33,482.14$$
+
+$$A \\approx -1,160.72$$
+
+The claim says the value is positive, but the project falls \\$1,160.72 short at 12%, since that rate is above the internal rate of return of about 10.69%. The statement is false.`,
       `**D) Doubling both returns to \\$68,000 in Year 1 and \\$84,000 in Year 2, with the outlay unchanged at \\$65,000, would more than double the internal rate of return.**  (true)
 
-With $a_1 = \\$68,000$ and $a_2 = \\$84,000$: $84,000s^{2} + 68,000s - 65,000 = 0$ → $84s^{2} + 68s - 65 = 0$. Discriminant = 4,624 + 21,840 = 26,464, √26,464 ≈ 162.678. $s = (-68 + 162.678)/168 \\approx 0.56356$, $r = 1/0.56356 - 1 \\approx 0.7744 = 77.44\\%$. Double the original rate would be about 21.36%, but the actual new rate (77.44%) is far higher than that, more than double.`,
+Doubling both returns changes two coefficients of the quadratic, so the rate has to be recomputed rather than scaled:
+
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$
+
+With $a_1 = 68,000$, $a_2 = 84,000$ and the outlay still \\$65,000:
+
+$$84,000s^{2} + 68,000s - 65,000 = 0$$
+
+$$84s^{2} + 68s - 65 = 0$$
+
+The discriminant is
+
+$$68^{2} + 4(84)(65) = 4,624 + 21,840 = 26,464$$
+
+$$\\sqrt{26,464} \\approx 162.678$$
+
+$$s = \\frac{-68 + 162.678}{168} \\approx 0.56356$$
+
+$$r = \\frac{1}{0.56356} - 1 \\approx 0.77443 = 77.44\\%$$
+
+Double the original rate of about 10.69% would be
+
+$$2 \\times 10.69\\% = 21.38\\%$$
+
+Comparing:
+
+$$77.44\\% - 21.38\\% = 56.06 \\text{ percentage points}$$
+
+The new rate clears twice the original by more than fifty percentage points, so the statement is true.`,
       `**E) If the outlay were reduced to \\$60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project.**  (false)
 
-With $a_0 = -\\$60,000$: $42,000s^{2} + 34,000s - 60,000 = 0$ → $42s^{2} + 34s - 60 = 0$. Discriminant: $1,156 + 10,080 = 11,236 = 106^{2}$ exactly. $s = (-34 + 106)/84 = 72/84 \\approx 0.85714$, $r = 1/0.85714 - 1 \\approx 0.16667 = 16.67\\%$, which is higher than 10.69%, not lower: a smaller outlay raises the internal rate of return.`,
+Cutting the outlay changes the constant term of the quadratic, so the rate is solved again from scratch:
+
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$
+
+With the outlay at \\$60,000 and the returns unchanged:
+
+$$42,000s^{2} + 34,000s - 60,000 = 0$$
+
+Dividing through by 1,000:
+
+$$42s^{2} + 34s - 60 = 0$$
+
+The discriminant works out exactly:
+
+$$34^{2} + 4(42)(60) = 1,156 + 10,080 = 11,236 = 106^{2}$$
+
+$$s = \\frac{-34 + 106}{84} = \\frac{72}{84} \\approx 0.857143$$
+
+$$r = \\frac{1}{0.857143} - 1 \\approx 0.16667 = 16.67\\%$$
+
+The original project earns about 10.69%, so comparing:
+
+$$16.67\\% - 10.69\\% = 5.98 \\text{ percentage points}$$
+
+Paying \\$5,000 less for the same rental income lifts the rate by about six percentage points instead of lowering it, so the statement is false.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 121,
@@ -9188,35 +19306,113 @@ $s = (1+r)^{-1}$
     tactical_explanations: [
       `**A) The limiting internal rate of return of Option 1 is 12%.**  (true)
 
-As calculated in Step 1, $r = 6,000/50,000 = 0.12 = 12\\%$.
+Option 1 pays a level amount at the end of every year with no end date, so the returns form a perpetuity and their present value is the payment divided by the rate:
 
-Infinite level returns: $a_0 + a/r = 0$ gives
+$$\\frac{a}{r}$$
 
-$$r = 6,000 / 50,000 = 0.12 = 12\\%$$`,
+The internal rate of return sets net present value to zero:
+
+$$a_0 + \\frac{a}{r} = 0$$
+
+Substituting the \\$50,000 outlay and the \\$6,000 annual return:
+
+$$-50,000 + \\frac{6,000}{r} = 0$$
+
+$$\\frac{6,000}{r} = 50,000$$
+
+$$r = \\frac{6,000}{50,000}$$
+
+$$r = 0.12 = 12\\%$$
+
+The claim names 12%, and the calculation returns 12%, so the statement is true.`,
       `**B) The internal rate of return of Option 2 is approximately -58.84%.**  (true)
 
-As calculated in Steps 2–5, the valid root gives $r^{*} \\approx -0.5884 = -58.84\\%$.
+Option 2 has only two returns, so the rate solves a two-period equation:
 
-$6,000 s^{2} + 6,000 s - 50,000 = 0 \\Rightarrow 3s^{2} + 3s - 25 = 0$.
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0$$
 
-Discriminant 309, $\\sqrt{309} \\approx 17.578$.
+Substituting $a_0 = -50,000$, $a_1 = a_2 = 6,000$ and writing $s = 1/(1+r)$:
 
-$$s = (-3 + 17.578)/6 \\approx 2.4297$$
+$$6,000s^{2} + 6,000s - 50,000 = 0$$
 
-$$r = 1/2.4297 - 1 \\approx -0.5884 = -58.84\\%$$
+Dividing through by 2,000:
 
-(The other root s ≈ −3.430 gives r ≈ −1.291, which is discarded because r must exceed −1.)`,
+$$3s^{2} + 3s - 25 = 0$$
+
+The discriminant is
+
+$$3^{2} + 4(3)(25) = 9 + 300 = 309$$
+
+$$\\sqrt{309} \\approx 17.578$$
+
+$$s = \\frac{-3 + 17.578}{6} \\approx 2.42973$$
+
+$$r = \\frac{1}{2.42973} - 1$$
+
+$$r \\approx 0.41157 - 1 \\approx -0.5884 = -58.84\\%$$
+
+The other root, $s \\approx -3.4297$, gives $r \\approx -1.291$, which lies below $-1$ and is discarded. The claim gives about $-58.84\\%$, matching the admissible root, so the statement is true.`,
       `**C) Option 2 has a unique internal rate of return greater than -1.**  (true)
 
-The theorem only requires $a_0 < 0$ and all subsequent $a_i > 0$ to guarantee a unique $r^{*} > -1$; it does not require the quadratic to have only one mathematical root. Here one root ($r \\approx -1.291$) falls outside the allowed range $r > -1$ and is discarded, leaving exactly one valid root, precisely what the theorem guarantees.
+The chapter's uniqueness result asks only about the signs of the cash flows:
 
-Cash-flow signs: $a_0 = -50,000 < 0$, $a_1 = a_2 = 6,000 > 0$. The theorem guarantees exactly one valid root $r^* > -1$. The quadratic's extra root r ≈ −1.291 lies outside that range and is dropped, leaving the −58.84% already computed.`,
+$$a_0 < 0, \\qquad a_1, \\ldots, a_n > 0 \\implies \\text{unique } r^{*} > -1$$
+
+Option 2's cash flows are
+
+$$a_0 = -50,000 < 0, \\qquad a_1 = 6,000 > 0, \\qquad a_2 = 6,000 > 0$$
+
+so the condition holds. Solving confirms that only one root is admissible. With $s = 1/(1+r)$:
+
+$$6,000s^{2} + 6,000s - 50,000 = 0 \\implies 3s^{2} + 3s - 25 = 0$$
+
+$$\\sqrt{9 + 300} = \\sqrt{309} \\approx 17.578$$
+
+$$s = \\frac{-3 + 17.578}{6} \\approx 2.42973, \\qquad r \\approx -0.5884$$
+
+$$s = \\frac{-3 - 17.578}{6} \\approx -3.4297, \\qquad r \\approx -1.291$$
+
+The second root falls below $-1$, which is outside the range the theorem allows, so it is dropped and about $-58.84\\%$ is left as the only valid rate. A negative rate is still a rate, and the guarantee is about uniqueness above $-1$ rather than about profitability. The claim matches this, so the statement is true.`,
       `**D) The sum of Option 2's cash flows, $a_0$ + $a_1$ + $a_2$, equals -\\$40,000.**  (false)
 
-$a_0 + a_1 + a_2 = -50,000 + 6,000 + 6,000 = -38,000$, i.e. -\\$38,000, not -\\$40,000.`,
+The sum adds the outlay, entered as a negative amount, to the two returns:
+
+$$a_0 + a_1 + a_2$$
+
+Substituting Option 2's figures:
+
+$$-50,000 + 6,000 + 6,000$$
+
+$$= -50,000 + 12,000$$
+
+$$= -38,000$$
+
+The claim states $-40,000$:
+
+$$40,000 - 38,000 = 2,000$$
+
+The true total is $-38,000$, two thousand dollars less negative than the stated figure, so the statement is false.`,
       `**E) If Option 2's Year 2 return were removed entirely, leaving only $a_0 = -\\$50,000$ and $a_1 = \\$6,000$, its internal rate of return would be even lower than Option 2's own internal rate of return.**  (true)
 
-With only $a_0 = -\\$50,000$ and $a_1 = \\$6,000$: $r = (6,000/50,000) - 1 = 0.12 - 1 = -0.88 = -88\\%$. Since -88% is lower (more negative) than -58.84%, the statement is correct.`,
+Removing the second return leaves a one-year project, whose rate comes from the ratio of return to outlay:
+
+$$-a + \\frac{b}{1+r} = 0 \\implies r = \\frac{b}{a} - 1$$
+
+Substituting the \\$50,000 outlay and the single \\$6,000 return:
+
+$$r = \\frac{6,000}{50,000} - 1$$
+
+$$r = 0.12 - 1$$
+
+$$r = -0.88 = -88\\%$$
+
+Option 2 keeps both returns and earns about $-58.84\\%$. Comparing the two:
+
+$$-88\\% < -58.84\\%$$
+
+$$58.84 - 88 = -29.16 \\text{ percentage points}$$
+
+Dropping the second \\$6,000 pushes the rate about 29 percentage points further into negative territory, so the stripped-down version is indeed the lower of the two and the statement is true.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 122,
@@ -9260,31 +19456,121 @@ Option 2: $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$; substitute $s = (1+r)^{-1}$
     tactical_explanations: [
       `**A) The internal rate of return of Design A is approximately 11.04%.**  (true)
 
-As calculated in Steps 1–3, $r_A \\approx 11.04\\%$.
+Design A has returns in two years, so its internal rate of return solves
 
-$$88,000 s^{2} + 54,000 s - 120,000 = 0 \\Rightarrow 44s^{2} + 27s - 60 = 0$$
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0$$
 
-Discriminant: $729 + 10,560 = 11,289$, $\\sqrt{11,289} \\approx 106.250$.
+Substituting $a_0 = -120,000$, $a_1 = 54,000$, $a_2 = 88,000$ and writing $s = 1/(1+r)$:
 
-$$s = (-27 + 106.250)/88 \\approx 0.90057$$
+$$88,000s^{2} + 54,000s - 120,000 = 0$$
 
-$$r_A = 1/0.90057 - 1 \\approx 0.11041 = 11.04\\%$$`,
+Dividing through by 2,000:
+
+$$44s^{2} + 27s - 60 = 0$$
+
+The discriminant is
+
+$$27^{2} + 4(44)(60) = 729 + 10,560 = 11,289$$
+
+$$\\sqrt{11,289} \\approx 106.250$$
+
+$$s = \\frac{-27 + 106.250}{88} \\approx 0.90057$$
+
+$$r_A = \\frac{1}{0.90057} - 1$$
+
+$$r_A \\approx 0.11041 = 11.04\\%$$
+
+The claim gives about 11.04%, and the calculation returns 11.04%, so the statement is true.`,
       `**B) The internal rate of return of Design B is exactly 16%.**  (true)
 
-As calculated in Step 4, $r_B = 16\\%$ exactly.
+Design B has a single outlay and a single return one year later, so its rate follows the one-year rule:
 
-$r_B = (81,200 / 70,000) - 1 = 1.16 - 1 = 0.16 = 16\\%$.`,
+$$-a + \\frac{b}{1+r} = 0 \\implies r = \\frac{b}{a} - 1$$
+
+Substituting the \\$70,000 invested and the \\$81,200 returned:
+
+$$r_B = \\frac{81,200}{70,000} - 1$$
+
+$$\\frac{81,200}{70,000} = 1.16$$
+
+$$r_B = 1.16 - 1$$
+
+$$r_B = 0.16 = 16\\%$$
+
+The claim names exactly 16%, and the calculation returns exactly 16%, so the statement is true.`,
       `**C) Based on the internal rate of return criterion, Design B should be preferred over Design A.**  (true)
 
-The chapter's criterion is to prefer the project with the higher internal rate of return. Since 16% (Design B) exceeds 11.04% (Design A), Design B should indeed be preferred.
+The internal rate of return criterion picks the design with the higher rate, so both rates are needed.
 
-16% (B) > 11.04% (A), so the IRR rule prefers Design B.`,
+Design A solves the two-year equation with $s = 1/(1+r)$:
+
+$$88,000s^{2} + 54,000s - 120,000 = 0 \\implies 44s^{2} + 27s - 60 = 0$$
+
+$$\\sqrt{729 + 10,560} = \\sqrt{11,289} \\approx 106.250$$
+
+$$s \\approx \\frac{-27 + 106.250}{88} \\approx 0.90057, \\qquad r_A \\approx 0.11041 = 11.04\\%$$
+
+Design B is a one-year project:
+
+$$r_B = \\frac{81,200}{70,000} - 1 = 0.16 = 16\\%$$
+
+Comparing the two:
+
+$$16\\% - 11.04\\% = 4.96 \\text{ percentage points}$$
+
+Design B earns nearly five percentage points more per dollar committed, so the criterion prefers Design B and the statement is true.`,
       `**D) At a discount rate of 13%, Design A has negative net present value while Design B still has positive net present value.**  (true)
 
-NPV_A at 13% = -120,000 + 54,000/1.13 + 88,000/1.2769 = -120,000 + 47,787.61 + 68,916.91 = -\\$3,295.48, negative. NPV_B at 13% = -70,000 + 81,200/1.13 = -70,000 + 71,858.41 = \\$1,858.41, positive. Both parts of the statement are correct.`,
+Each design is valued at 13% with its own net present value expression.
+
+Design A has two years of returns:
+
+$$A_A = a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}}$$
+
+$$\\frac{54,000}{1.13} \\approx 47,787.61$$
+
+$$(1.13)^{2} = 1.2769, \\qquad \\frac{88,000}{1.2769} \\approx 68,916.91$$
+
+$$A_A \\approx -120,000.00 + 47,787.61 + 68,916.91 \\approx -3,295.48$$
+
+Design B has one:
+
+$$A_B = -70,000 + \\frac{81,200}{1.13}$$
+
+$$\\frac{81,200}{1.13} \\approx 71,858.41$$
+
+$$A_B \\approx -70,000.00 + 71,858.41 \\approx 1,858.41$$
+
+At 13% Design A is short by \\$3,295.48 while Design B is ahead by \\$1,858.41, which is exactly the pattern the claim describes, since 13% sits above Design A's 11.04% rate but below Design B's 16%. The statement is true.`,
       `**E) If Design A's Year 1 return were \\$10,000 lower, with Year 2 unchanged at \\$88,000, its internal rate of return would still exceed Design B's 16%.**  (false)
 
-With $a_1 = \\$44,000$: $88,000s^{2} + 44,000s - 120,000 = 0$ → $22s^{2} + 11s - 30 = 0$. Discriminant = 121 + 2,640 = 2,761, √2,761 ≈ 52.545. $s = (-11 + 52.545)/44 \\approx 0.94420$, $r = 1/0.94420 - 1 \\approx 0.05909 = 5.91\\%$, which does not exceed Design B's 16%.`,
+A smaller Year 1 return changes the middle coefficient, so Design A's rate must be solved again:
+
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$
+
+With the first return cut by \\$10,000 to $54,000 - 10,000 = 44,000$ and Year 2 unchanged:
+
+$$88,000s^{2} + 44,000s - 120,000 = 0$$
+
+Dividing through by 4,000:
+
+$$22s^{2} + 11s - 30 = 0$$
+
+The discriminant is
+
+$$11^{2} + 4(22)(30) = 121 + 2,640 = 2,761$$
+
+$$\\sqrt{2,761} \\approx 52.545$$
+
+$$s = \\frac{-11 + 52.545}{44} \\approx 0.94420$$
+
+$$r = \\frac{1}{0.94420} - 1 \\approx 0.05909 = 5.91\\%$$
+
+Comparing with Design B's rate:
+
+$$16\\% - 5.91\\% = 10.09 \\text{ percentage points}$$
+
+The weakened version of Design A earns about 5.91%, roughly ten percentage points below Design B's 16%, so it does not exceed it and the statement is false.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 123,
