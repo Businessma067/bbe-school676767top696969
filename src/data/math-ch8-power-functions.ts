@@ -24,9 +24,7 @@ export const MATH_CH8_POWER_FUNCTIONS: MathTask[] = [
 
 The coefficient of a power law $P(u)=Au^{0.75}$ is a scale factor that the commissioning log never states directly. What the log gives is the gap between two rates, and both staged counts are exact fourth powers, so their shape factors are whole numbers:
 
-$$16^{0.75} = (2^{4})^{3/4} = 2^{3} = 8$$
-
-$$81^{0.75} = (3^{4})^{3/4} = 3^{3} = 27$$
+$$16^{0.75} = (2^{4})^{3/4} = 2^{3} = 8, \\qquad 81^{0.75} = (3^{4})^{3/4} = 3^{3} = 27$$
 
 The recorded lift is a difference between two rates rather than a rate at one staging level, so the coefficient multiplies the difference of the shape factors:
 
@@ -152,9 +150,7 @@ $$\\frac{R(1.5d)}{R(d)} = \\frac{A(1.5d)^{r}}{Ad^{r}} = 1.5^{r}$$
 
 A rise of $125\\%$ leaves the new value at $225\\%$ of the old one, so the observed multiplier is $2.25$ rather than $1.25$:
 
-$$1.5^{r} = 2.25 = 1.5^{2}$$
-
-$$r = 2$$
+$$1.5^{r} = 2.25 = 1.5^{2}, \\qquad r = 2$$
 
 Reading the multiplier as $1.25$ would give $\\ln 1.25/\\ln 1.5\\approx0.55$ and flatten a strongly convex instrument response. The exponent is exactly $2$, so the statement is True.`,
       `**B.** → True
@@ -1683,9 +1679,7 @@ Proportionality survives only because the two exponents are exact reciprocals; a
 
 The area covered is the disc of the current radius, so the radius law has to be composed with $\\pi r^{2}$ before any level is read off:
 
-$$S(t)=\\pi\\left(3t^{0.5}\\right)^2=9\\pi t$$
-
-$$S(4)=9\\pi(4)=36\\pi$$
+$$S(t)=\\pi\\left(3t^{0.5}\\right)^2=9\\pi t, \\qquad S(4)=9\\pi(4)=36\\pi$$
 
 Squaring the radius law squares its coefficient as well, turning the $3$ into a $9$; leaving that step out would understate the area threefold. The four-hour area is $36\\pi$ square kilometres, so the statement is True.`,
       `**C.** → True
@@ -1712,9 +1706,7 @@ Halving the $50\\%$ time increase to $25\\%$ is the linear guess; the square roo
 
 An area target inverts the composed law rather than the radius law, and with exponent $1$ that inversion is a single division once $\\pi$ cancels from both sides:
 
-$$9\\pi t=100\\pi$$
-
-$$t=\\frac{100}{9}\\approx11.11$$
+$$9\\pi t=100\\pi, \\qquad t=\\frac{100}{9}\\approx11.11$$
 
 Working through the radius instead adds a step, solving $3t^{0.5}=10$, and lands in the same place. The target area arrives after about $11.1$ hours, so the statement is True.`,
     ],
@@ -1964,9 +1956,7 @@ The curve is flattening, falling only from $512$ to about $410$ between the eigh
 
 Quadrupling cumulative output is two doublings, so the survival factor applies twice:
 
-$$\\frac{c(4N)}{c(N)} = \\left(0.8\\right)^{2} = 0.64$$
-
-$$1 - 0.64 = 0.36 = 36\\%$$
+$$\\frac{c(4N)}{c(N)} = \\left(0.8\\right)^{2} = 0.64, \\qquad 1 - 0.64 = 0.36 = 36\\%$$
 
 Percentage reductions compound multiplicatively, so two $20\\%$ cuts leave $64\\%$ of the cost rather than $60\\%$, and halving would need a multiplier near $0.707$ at each doubling. Concrete volumes confirm the factor:
 
@@ -2077,9 +2067,7 @@ Net gain is the difference between the two schedules at the same spend, so both 
 
 $$R(100) = 90\\sqrt{100} = 90(10) = 900$$
 
-$$F(100) = 6(100) = 600$$
-
-$$900 - 600 = 300$$
+$$F(100) = 6(100) = 600, \\qquad 900 - 600 = 300$$
 
 A spend of $100$ sits well inside the profitable range, and by $225$ the net gain has already fallen back to zero, so the window is narrow. The net gain is $300$, so the statement is True.`,
       `**E.** → False
@@ -2415,9 +2403,7 @@ The two shifts differ by $30$ items as recorded, so the statement is True.`,
 
 Moving between two shift lengths multiplies output by the square root of the length ratio, since the exponent is $0.5$:
 
-$$\\frac{N(9)}{N(4)} = \\left(\\frac{9}{4}\\right)^{0.5} = \\frac{3}{2}$$
-
-$$N(9) = \\frac{3}{2}\\cdot 60 = 90$$
+$$\\frac{N(9)}{N(4)} = \\left(\\frac{9}{4}\\right)^{0.5} = \\frac{3}{2}, \\qquad N(9) = \\frac{3}{2}\\cdot 60 = 90$$
 
 Stretching the four-hour count of $60$ by the ratio $9/4$ itself produces the claimed $135$, which is the linear answer. Evaluating the law directly agrees with the ratio route:
 
@@ -2791,9 +2777,7 @@ Halving the licensed feed of $64$ to $32$ would be the answer for an exponent of
 
 Perfect cubes keep the shape factor exact, since the cube root of the feed is a whole number:
 
-$$8^{4/3} = \\left(8^{1/3}\\right)^{4} = 2^{4} = 16$$
-
-$$y(8) = 4(16) = 64$$
+$$8^{4/3} = \\left(8^{1/3}\\right)^{4} = 2^{4} = 16, \\qquad y(8) = 4(16) = 64$$
 
 The claimed $32$ is what a shape factor of $8$ would give, treating the exponent as $1$, or what halving the coefficient would give. The kiln produces $64$ tonnes, so the statement is False.`,
       `**E.** → False
@@ -2887,9 +2871,7 @@ $$\\frac{2}{3} \\times \\frac{3}{2} = 1$$
 
 The constants collect separately:
 
-$$\\frac{9^{3/2}}{27} = \\frac{27}{27} = 1$$
-
-$$g\\big(f(x)\\big) = 1 \\cdot x^{1}$$
+$$\\frac{9^{3/2}}{27} = \\frac{27}{27} = 1, \\qquad g\\big(f(x)\\big) = 1 \\cdot x^{1}$$
 
 The identity map is the special case where that product equals $1$ and the constants cancel. The composition is a power function with exponent $1$, so the statement is True.`,
       `**C.** → True
@@ -3461,18 +3443,14 @@ $$A(4)^{1.5} = 24 \\quad \\Rightarrow \\quad 8A = 24 \\quad \\Rightarrow \\quad 
 
 Confirm with the second measurement:
 
-$$\\frac{192}{16^{1.5}} = \\frac{192}{64} = 3$$
-
-$$y = 3x^{1.5}$$
+$$\\frac{192}{16^{1.5}} = \\frac{192}{64} = 3, \\qquad y = 3x^{1.5}$$
 
 A wrong exponent would give two different coefficients, so agreement between the measurements is a genuine check rather than a repetition. Both give $A=3$, so the statement is True.`,
       `**C.** → False
 
 The measurement at $x=9$ was held out of the fit, which makes it a test of the model rather than part of its construction.
 
-$$9^{1.5} = \\left(9^{1/2}\\right)^{3} = 3^{3} = 27$$
-
-$$y = 3(27) = 81$$
+$$9^{1.5} = \\left(9^{1/2}\\right)^{3} = 3^{3} = 27, \\qquad y = 3(27) = 81$$
 
 Compare with the recorded value:
 
@@ -4392,9 +4370,7 @@ A positive exponent preserves the direction of the inequality rather than revers
 
 A fifty percent height increase is a multiplier of $1.5$ acting through the surface exponent of $2$.
 
-$$\\frac{S(1.5h)}{S(h)}=1.5^2=2.25$$
-
-$$(2.25-1)\\times100\\%=125\\%$$
+$$\\frac{S(1.5h)}{S(h)}=1.5^2=2.25, \\qquad (2.25-1)\\times100\\%=125\\%$$
 
 The percentage rise is the squared multiplier minus one, not the height increase carried over unchanged. Steel use rises by exactly $125\\%$, so the statement is True.`,
       `**D.** → True
@@ -4509,9 +4485,7 @@ Using $2.25$ itself as the time multiplier would impose exponent $1$ in place of
 
 Time per shipment is total time divided by the shipment count, which lowers the exponent to $-0.5$.
 
-$$\\frac{T(n)}{n}=\\frac{6n^{0.5}}{n}=6n^{-0.5}$$
-
-$$\\frac{T(144)}{144} =\\frac{6}{\\sqrt{144}} =\\frac{6}{12}=0.5$$
+$$\\frac{T(n)}{n}=\\frac{6n^{0.5}}{n}=6n^{-0.5}, \\qquad \\frac{T(144)}{144} =\\frac{6}{\\sqrt{144}} =\\frac{6}{12}=0.5$$
 
 The total of $72$ hours is a different quantity from the average, and the square-root factor has to be retained when dividing. Time per shipment is exactly $0.5$ hour at $144$ shipments, so the statement is True.`,
       `**E.** → False
@@ -4863,9 +4837,7 @@ Inverting one stage at a time works too, but only the composed exponent can be r
 
 A level under the composed law keeps the square-root contribution before the cube is applied, which is what the exponent $1.5$ encodes.
 
-$$L(64)=4(64)^{1.5}=4(64)(8)$$
-
-$$L(64)=2048$$
+$$L(64)=4(64)^{1.5}=4(64)(8), \\qquad L(64)=2048$$
 
 Applying the cube to the wind speed itself, rather than to the surge it produces, would overstate the index badly. The loss index at wind speed $64$ is $2048$, so the statement is True.`,
       `**E.** → True

@@ -37,21 +37,13 @@ $$
 Collect the variables on one side of the transfer equation:
 
 $$
-x - y = 50 + 50
-$$
-
-$$
-x - y = 100
+x - y = 50 + 50, \\qquad x - y = 100
 $$
 
 This is now a standard sum-and-difference pair, so adding the two equations eliminates $y$:
 
 $$
-(x + y) + (x - y) = 620 + 100
-$$
-
-$$
-2x = 720
+(x + y) + (x - y) = 620 + 100, \\qquad 2x = 720
 $$
 
 $$
@@ -67,11 +59,7 @@ $$
 The note's own equalizing condition confirms the pair, since after the transfer the two depots hold
 
 $$
-360 - 50 = 310
-$$
-
-$$
-260 + 50 = 310
+360 - 50 = 310, \\qquad 260 + 50 = 310
 $$
 
 Both depots end up with 310 crates, so the translation of the note into equations was correct. The claim names 360 crates for North, and the elimination step gives exactly $x = 360$, so the statement is true.`,
@@ -80,11 +68,7 @@ Both depots end up with 310 crates, so the translation of the note into equation
 Let $x$ be North's crates and $y$ be South's. The two depots hold 620 crates together, so $x + y = 620$, and a transfer of 50 crates from North to South would equalize them, so $x - 50 = y + 50$, that is $x - y = 100$. Subtracting the second equation from the first eliminates $x$:
 
 $$
-2y = 620 - 100 = 520
-$$
-
-$$
-y = 260
+2y = 620 - 100 = 520, \\qquad y = 260
 $$
 
 South holds 260 crates, twenty more than the claimed 240, so the statement is false.`,
@@ -120,15 +104,7 @@ $$
 Adding this difference equation to the total equation gives the individual counts:
 
 $$
-2x = 720
-$$
-
-$$
-x = 360
-$$
-
-$$
-y = 620 - 360 = 260
+2x = 720, \\qquad x = 360, \\qquad y = 620 - 360 = 260
 $$
 
 The difference between the two depots today is therefore
@@ -143,35 +119,19 @@ Compare that with the claim: 120 crates does not equal 100 crates. The error com
 A transfer moves crates between the depots without changing the combined holding, which stays at 620 crates. Let $x$ be the North count and $y$ the South count, so the week's data reads
 
 $$
-x + y = 620
-$$
-
-$$
-x - 50 = y + 50
+x + y = 620, \\qquad x - 50 = y + 50
 $$
 
 The second equation rearranges to $x - y = 100$, and adding the two equations eliminates $y$:
 
 $$
-2x = 720
-$$
-
-$$
-x = 360
-$$
-
-$$
-y = 620 - 360 = 260
+2x = 720, \\qquad x = 360, \\qquad y = 620 - 360 = 260
 $$
 
 Now apply the 50-crate transfer to each depot in turn:
 
 $$
-x - 50 = 360 - 50 = 310
-$$
-
-$$
-y + 50 = 260 + 50 = 310
+x - 50 = 360 - 50 = 310, \\qquad y + 50 = 260 + 50 = 310
 $$
 
 The same figure comes straight from the total, because equal holdings must each be half of the 620 crates on hand:
@@ -219,11 +179,7 @@ $$
 **2.** Adding the two equations eliminates $y$:
 
 $$
-(x + y) + (x - y) = 620 + 100
-$$
-
-$$
-2x = 720
+(x + y) + (x - y) = 620 + 100, \\qquad 2x = 720
 $$
 
 $$
@@ -239,11 +195,7 @@ $$
 **4.** Check the equalizing transfer:
 
 $$
-x - 50 = 360 - 50 = 310
-$$
-
-$$
-y + 50 = 260 + 50 = 310
+x - 50 = 360 - 50 = 310, \\qquad y + 50 = 260 + 50 = 310
 $$
 
 The two depots do end up equal, confirming the translation was correct.
@@ -285,11 +237,7 @@ $$
 Every coefficient in the second equation is divisible by 15, so simplify it first:
 
 $$
-x + 4y = 10.70
-$$
-
-$$
-x = 10.70 - 4y
+x + 4y = 10.70, \\qquad x = 10.70 - 4y
 $$
 
 Substitute that expression for $x$ into Invoice #101:
@@ -299,11 +247,7 @@ $$
 $$
 
 $$
-428.00 - 160y + 25y = 185.00
-$$
-
-$$
--135y = -243.00
+428.00 - 160y + 25y = 185.00, \\qquad -135y = -243.00
 $$
 
 $$
@@ -313,11 +257,7 @@ $$
 The notebook price then follows:
 
 $$
-x = 10.70 - 4(1.80)
-$$
-
-$$
-x = 10.70 - 7.20 = 3.50
+x = 10.70 - 4(1.80), \\qquad x = 10.70 - 7.20 = 3.50
 $$
 
 This pair satisfies both invoices at once, not merely the one used in the substitution:
@@ -340,11 +280,7 @@ $$
 $$
 
 $$
-428.00 - 135y = 185.00
-$$
-
-$$
-y = \\frac{243.00}{135} = 1.80
+428.00 - 135y = 185.00, \\qquad y = \\frac{243.00}{135} = 1.80
 $$
 
 A pen costs \\$1.80, thirty cents below the claimed \\$2.10, so the statement is false.`,
@@ -353,21 +289,13 @@ A pen costs \\$1.80, thirty cents below the claimed \\$2.10, so the statement is
 The supplier's record for Invoice #101 lists 40 notebooks, 25 pens, and an invoice total of \\$185.00, so the claim repeats a figure already printed on the invoice. The unit prices confirm that total independently. Let $x$ be the notebook price and $y$ the pen price, unchanged across both invoices:
 
 $$
-40x + 25y = 185.00
-$$
-
-$$
-15x + 60y = 160.50
+40x + 25y = 185.00, \\qquad 15x + 60y = 160.50
 $$
 
 Dividing the second equation by 15 simplifies it:
 
 $$
-x + 4y = 10.70
-$$
-
-$$
-x = 10.70 - 4y
+x + 4y = 10.70, \\qquad x = 10.70 - 4y
 $$
 
 Substituting into the first equation:
@@ -377,29 +305,17 @@ $$
 $$
 
 $$
-428.00 - 135y = 185.00
+428.00 - 135y = 185.00, \\qquad -135y = -243.00
 $$
 
 $$
--135y = -243.00
-$$
-
-$$
-y = 1.80
-$$
-
-$$
-x = 10.70 - 7.20 = 3.50
+y = 1.80, \\qquad x = 10.70 - 7.20 = 3.50
 $$
 
 Rebuilding Invoice #101 from those recovered prices:
 
 $$
-40(3.50) + 25(1.80)
-$$
-
-$$
-= 140.00 + 45.00 = 185.00
+40(3.50) + 25(1.80) = 140.00 + 45.00 = 185.00
 $$
 
 The computed cost matches the printed \\$185.00 total, so the statement is true.`,
@@ -417,21 +333,13 @@ The order comes to \\$53.00, matching the claim, so the statement is true.`,
 The supplier's record for Invoice #102, covering 15 notebooks and 60 pens, shows a total of \\$160.50, and the recovered unit prices agree with that figure. Let $x$ be the notebook price and $y$ the pen price, the same on both invoices:
 
 $$
-40x + 25y = 185.00
-$$
-
-$$
-15x + 60y = 160.50
+40x + 25y = 185.00, \\qquad 15x + 60y = 160.50
 $$
 
 Divide the second equation by 15:
 
 $$
-x + 4y = 10.70
-$$
-
-$$
-x = 10.70 - 4y
+x + 4y = 10.70, \\qquad x = 10.70 - 4y
 $$
 
 Substitute into the first equation:
@@ -441,29 +349,17 @@ $$
 $$
 
 $$
-428.00 - 160y + 25y = 185.00
+428.00 - 160y + 25y = 185.00, \\qquad -135y = -243.00
 $$
 
 $$
--135y = -243.00
-$$
-
-$$
-y = 1.80
-$$
-
-$$
-x = 10.70 - 4(1.80) = 3.50
+y = 1.80, \\qquad x = 10.70 - 4(1.80) = 3.50
 $$
 
 Now cost Invoice #102 at those prices:
 
 $$
-15(3.50) + 60(1.80)
-$$
-
-$$
-= 52.50 + 108.00 = 160.50
+15(3.50) + 60(1.80) = 52.50 + 108.00 = 160.50
 $$
 
 Compare the two figures: the invoice comes to \\$160.50, while the claim names \\$172.50, which is \\$12.00 too high. Mixing up which invoice number carries which printed total is the usual source of this error. The statement is false.`,
@@ -553,11 +449,7 @@ $$
 Every term in the evening equation is divisible by 40, so simplify it first:
 
 $$
-4a + c = 55
-$$
-
-$$
-c = 55 - 4a
+4a + c = 55, \\qquad c = 55 - 4a
 $$
 
 Substitute that expression for $c$ into the matinee equation:
@@ -567,11 +459,7 @@ $$
 $$
 
 $$
-90a + 8250 - 600a = 2130
-$$
-
-$$
--510a = -6120
+90a + 8250 - 600a = 2130, \\qquad -510a = -6120
 $$
 
 $$
@@ -609,11 +497,7 @@ A child ticket costs \\$7.00, matching the claim, so the statement is true.`,
 The box-office system already logged the matinee, 90 adult and 150 child tickets, at \\$2,130.00, and the ticket prices confirm that figure. Let $a$ be the adult price and $c$ the child price, both fixed throughout the day:
 
 $$
-90a + 150c = 2130
-$$
-
-$$
-160a + 40c = 2200
+90a + 150c = 2130, \\qquad 160a + 40c = 2200
 $$
 
 Dividing the evening equation by 40 gives $4a + c = 55$, so $c = 55 - 4a$. Substituting into the matinee equation:
@@ -623,29 +507,17 @@ $$
 $$
 
 $$
-90a + 8250 - 600a = 2130
+90a + 8250 - 600a = 2130, \\qquad -510a = -6120
 $$
 
 $$
--510a = -6120
-$$
-
-$$
-a = 12
-$$
-
-$$
-c = 55 - 48 = 7
+a = 12, \\qquad c = 55 - 48 = 7
 $$
 
 Costing the matinee mix at those prices:
 
 $$
-90(12) + 150(7)
-$$
-
-$$
-= 1080 + 1050 = 2130
+90(12) + 150(7) = 1080 + 1050 = 2130
 $$
 
 Compare with the claim: the matinee brought in \\$2,130.00, while the claim names \\$2,050.00, an understatement of \\$80.00 against the figure already printed in the summary table. The statement is false.`,
@@ -654,39 +526,23 @@ Compare with the claim: the matinee brought in \\$2,130.00, while the claim name
 The box-office system logged the evening session, 160 adult and 40 child tickets, at \\$2,200.00, and the recovered ticket prices confirm it. Let $a$ be the adult price and $c$ the child price, both fixed throughout the day:
 
 $$
-90a + 150c = 2130
-$$
-
-$$
-160a + 40c = 2200
+90a + 150c = 2130, \\qquad 160a + 40c = 2200
 $$
 
 Dividing the evening equation by 40 gives $4a + c = 55$, so $c = 55 - 4a$. Substituting into the matinee equation:
 
 $$
-90a + 150(55 - 4a) = 2130
+90a + 150(55 - 4a) = 2130, \\qquad -510a = -6120
 $$
 
 $$
--510a = -6120
-$$
-
-$$
-a = 12
-$$
-
-$$
-c = 55 - 48 = 7
+a = 12, \\qquad c = 55 - 48 = 7
 $$
 
 Costing the evening mix at those prices:
 
 $$
-160(12) + 40(7)
-$$
-
-$$
-= 1920 + 280 = 2200
+160(12) + 40(7) = 1920 + 280 = 2200
 $$
 
 Compare with the claim: the evening session brought in \\$2,200.00, while the claim names \\$2,300.00, an overstatement of \\$100.00 against the logged figure. The statement is false.`,
@@ -781,11 +637,7 @@ $$
 Let $x$ be the sandwich price and $y$ the wrap price. The food-only system is
 
 $$
-6x + 4y = 62.00
-$$
-
-$$
-3x + 9y = 66.00
+6x + 4y = 62.00, \\qquad 3x + 9y = 66.00
 $$
 
 Doubling the second equation lines up the sandwich terms:
@@ -801,21 +653,13 @@ $$
 $$
 
 $$
-14y = 70.00
-$$
-
-$$
-y = 5.00
+14y = 70.00, \\qquad y = 5.00
 $$
 
 Substituting the wrap price back into Receipt B's food equation:
 
 $$
-3x + 9(5.00) = 66.00
-$$
-
-$$
-3x = 66.00 - 45.00 = 21.00
+3x + 9(5.00) = 66.00, \\qquad 3x = 66.00 - 45.00 = 21.00
 $$
 
 $$
@@ -832,11 +676,7 @@ $$
 $$
 
 $$
-14y = 70.00
-$$
-
-$$
-y = 5.00
+14y = 70.00, \\qquad y = 5.00
 $$
 
 A wrap costs \\$5.00, matching the claim, so the statement is true.`,
@@ -851,21 +691,13 @@ $$
 The food itself was 6 sandwiches and 4 wraps, and the menu prices reach the same subtotal. Writing $x$ for a sandwich and $y$ for a wrap, and taking Receipt B's food as $74.00 - 8.00 = 66.00$, the fee-free system is
 
 $$
-6x + 4y = 62.00
-$$
-
-$$
-3x + 9y = 66.00
+6x + 4y = 62.00, \\qquad 3x + 9y = 66.00
 $$
 
 Doubling the second equation and subtracting the first gives $14y = 70.00$, so $y = 5.00$, and then $3x = 21.00$, so $x = 7.00$. Costing Receipt A's food at those prices:
 
 $$
-6(7.00) + 4(5.00)
-$$
-
-$$
-= 42.00 + 20.00 = 62.00
+6(7.00) + 4(5.00) = 42.00 + 20.00 = 62.00
 $$
 
 The subtotal is \\$62.00, matching the claim, so the statement is true.`,
@@ -874,29 +706,17 @@ The subtotal is \\$62.00, matching the claim, so the statement is true.`,
 Receipt B covers 3 sandwiches and 9 wraps plus the flat \\$8.00 delivery fee, and the amount charged was \\$74.00, so the claim quotes the printed fee-inclusive total. The menu prices rebuild that total from scratch. Stripping the fee out of each receipt gives the food-only amounts $70.00 - 8.00 = 62.00$ for Receipt A and $74.00 - 8.00 = 66.00$ for Receipt B, so with $x$ the sandwich price and $y$ the wrap price,
 
 $$
-6x + 4y = 62.00
-$$
-
-$$
-3x + 9y = 66.00
+6x + 4y = 62.00, \\qquad 3x + 9y = 66.00
 $$
 
 Doubling the second equation and subtracting the first:
 
 $$
-14y = 70.00
+14y = 70.00, \\qquad y = 5.00
 $$
 
 $$
-y = 5.00
-$$
-
-$$
-3x = 66.00 - 45.00 = 21.00
-$$
-
-$$
-x = 7.00
+3x = 66.00 - 45.00 = 21.00, \\qquad x = 7.00
 $$
 
 Now rebuild Receipt B, food first and then the delivery fee:
@@ -961,25 +781,13 @@ $$
 $$
 
 $$
-14y = 70
-$$
-
-$$
-y = 5
+14y = 70, \\qquad y = 5
 $$
 
 **3.** Substitute back:
 
 $$
-3x + 9(5) = 66
-$$
-
-$$
-3x = 21
-$$
-
-$$
-x = 7
+3x + 9(5) = 66, \\qquad 3x = 21, \\qquad x = 7
 $$
 
 **Answer.** Sandwich = \\$7.00 | Wrap = \\$5.00`,
@@ -1025,11 +833,7 @@ $$
 $$
 
 $$
-400 - 0.04y + 0.07y = 520
-$$
-
-$$
-0.03y = 120
+400 - 0.04y + 0.07y = 520, \\qquad 0.03y = 120
 $$
 
 $$
@@ -1054,11 +858,7 @@ Compare with the claim: Account A holds \\$6,000, five hundred dollars short of 
 The investor divided \\$10,000 between Account A at 4% and Account B at 7%, left both untouched for the year, and collected \\$520.00 in combined interest. Let $x$ be the amount in Account A and $y$ the amount in Account B:
 
 $$
-x + y = 10000
-$$
-
-$$
-0.04x + 0.07y = 520
+x + y = 10000, \\qquad 0.04x + 0.07y = 520
 $$
 
 Substituting $x = 10000 - y$ into the interest equation:
@@ -1068,19 +868,11 @@ $$
 $$
 
 $$
-400 - 0.04y + 0.07y = 520
+400 - 0.04y + 0.07y = 520, \\qquad 0.03y = 120
 $$
 
 $$
-0.03y = 120
-$$
-
-$$
-y = \\frac{120}{0.03} = 4000
-$$
-
-$$
-x = 10000 - 4000 = 6000
+y = \\frac{120}{0.03} = 4000, \\qquad x = 10000 - 4000 = 6000
 $$
 
 The interest checks out at that split:
@@ -1163,11 +955,7 @@ $$
 **3.** This expands to $400 - 0.04y + 0.07y = 520$, so
 
 $$
-0.03y = 120
-$$
-
-$$
-y = \\frac{120}{0.03} = 4000
+0.03y = 120, \\qquad y = \\frac{120}{0.03} = 4000
 $$
 
 **4.** Then
@@ -1209,19 +997,11 @@ $$
 Substituting the price rule into the shipment equation removes $y$ immediately:
 
 $$
-18x + 12(x + 45) = 9660
+18x + 12(x + 45) = 9660, \\qquad 18x + 12x + 540 = 9660
 $$
 
 $$
-18x + 12x + 540 = 9660
-$$
-
-$$
-30x = 9120
-$$
-
-$$
-x = 304
+30x = 9120, \\qquad x = 304
 $$
 
 The Premium price follows from the same rule:
@@ -1305,11 +1085,7 @@ $$
 **2.** This expands to $18x + 12x + 540 = 9660$, so
 
 $$
-30x = 9120
-$$
-
-$$
-x = \\frac{9120}{30} = 304
+30x = 9120, \\qquad x = \\frac{9120}{30} = 304
 $$
 
 **3.** Then
@@ -1355,21 +1131,13 @@ $$
 $$
 
 $$
-80r = 24.00
-$$
-
-$$
-r = 0.30
+80r = 24.00, \\qquad r = 0.30
 $$
 
 Substituting that rate back into the 40-minute bill:
 
 $$
-f + 40(0.30) = 29.00
-$$
-
-$$
-f + 12.00 = 29.00
+f + 40(0.30) = 29.00, \\qquad f + 12.00 = 29.00
 $$
 
 $$
@@ -1388,11 +1156,7 @@ The fixed monthly fee is \\$17.00, which is what remains once the per-minute cha
 The rate has to come from the difference between the two quoted bills rather than from either bill on its own, because each bill also contains the fixed monthly fee. Let $f$ be the fee and $r$ the rate per extra minute:
 
 $$
-f + 40r = 29.00
-$$
-
-$$
-f + 120r = 53.00
+f + 40r = 29.00, \\qquad f + 120r = 53.00
 $$
 
 The extra minutes between the two customers number
@@ -1410,11 +1174,7 @@ $$
 Subtracting the equations shows that the whole \\$24.00 gap is minutes, since the fee cancels:
 
 $$
-80r = 24.00
-$$
-
-$$
-r = \\frac{24.00}{80} = 0.30
+80r = 24.00, \\qquad r = \\frac{24.00}{80} = 0.30
 $$
 
 The extra-minute rate is \\$0.30, matching the claim, so the statement is true.`,
@@ -1432,31 +1192,19 @@ The bill is \\$77.00, three dollars under the claimed \\$80.00, so the statement
 The ad describes a charge for extra minutes on top of a small fixed monthly fee, not instead of one, so a month with no extra minutes still costs the fee. Let $f$ be the fee and $r$ the rate per extra minute. The two quoted bills are
 
 $$
-f + 40r = 29.00
-$$
-
-$$
-f + 120r = 53.00
+f + 40r = 29.00, \\qquad f + 120r = 53.00
 $$
 
 Subtracting the first from the second eliminates the fee:
 
 $$
-80r = 24.00
-$$
-
-$$
-r = 0.30
+80r = 24.00, \\qquad r = 0.30
 $$
 
 Substituting the rate back into the 40-minute bill:
 
 $$
-f = 29.00 - 40(0.30)
-$$
-
-$$
-f = 29.00 - 12.00 = 17.00
+f = 29.00 - 40(0.30), \\qquad f = 29.00 - 12.00 = 17.00
 $$
 
 Now bill a month with $m = 0$ extra minutes:
@@ -1515,21 +1263,13 @@ $$
 $$
 
 $$
-80r = 24.00
-$$
-
-$$
-r = 0.30
+80r = 24.00, \\qquad r = 0.30
 $$
 
 **2.** Substitute back:
 
 $$
-f + 40(0.30) = 29.00
-$$
-
-$$
-f + 12.00 = 29.00
+f + 40(0.30) = 29.00, \\qquad f + 12.00 = 29.00
 $$
 
 $$
@@ -1579,19 +1319,11 @@ $$
 Substitute that into the hours equation:
 
 $$
-4(130 - d) + 9d = 795
+4(130 - d) + 9d = 795, \\qquad 520 - 4d + 9d = 795
 $$
 
 $$
-520 - 4d + 9d = 795
-$$
-
-$$
-5d = 275
-$$
-
-$$
-d = 55
+5d = 275, \\qquad d = 55
 $$
 
 Then the Standard count is
@@ -1612,29 +1344,17 @@ The division built 75 Standard ovens, matching the claim. The unit total and the
 The week's two totals are 130 ovens completed and 795 assembly hours logged, with a Standard oven taking 4 hours and a Deluxe oven 9 hours. Let $s$ be the Standard count and $d$ the Deluxe count:
 
 $$
-s + d = 130
-$$
-
-$$
-4s + 9d = 795
+s + d = 130, \\qquad 4s + 9d = 795
 $$
 
 Substituting $s = 130 - d$ into the hours equation:
 
 $$
-4(130 - d) + 9d = 795
+4(130 - d) + 9d = 795, \\qquad 520 - 4d + 9d = 795
 $$
 
 $$
-520 - 4d + 9d = 795
-$$
-
-$$
-5d = 275
-$$
-
-$$
-d = \\frac{275}{5} = 55
+5d = 275, \\qquad d = \\frac{275}{5} = 55
 $$
 
 The Standard count follows as $s = 130 - 55 = 75$, and the hours check out:
@@ -1679,23 +1399,11 @@ $$
 Substituting $s = 130 - d$ into the hours equation:
 
 $$
-4(130 - d) + 9d = 795
+4(130 - d) + 9d = 795, \\qquad 520 + 5d = 795, \\qquad 5d = 275
 $$
 
 $$
-520 + 5d = 795
-$$
-
-$$
-5d = 275
-$$
-
-$$
-d = 55
-$$
-
-$$
-s = 130 - 55 = 75
+d = 55, \\qquad s = 130 - 55 = 75
 $$
 
 Costing those 75 ovens at the table's \\$120 per unit:
@@ -1745,11 +1453,7 @@ $$
 **3.** This expands to $520 - 4d + 9d = 795$, giving
 
 $$
-5d = 275
-$$
-
-$$
-d = 55
+5d = 275, \\qquad d = 55
 $$
 
 **4.** Then
@@ -1783,11 +1487,7 @@ $$
 Only net sales reflect items actually sold at list price, so each branch's returns come off first. Riverside nets $9760 - 460 = 9300$ on 14 sofas and 22 armchairs, and Hillcrest nets $9300 - 300 = 9000$ on 20 sofas and 10 armchairs. With $x$ the sofa price and $y$ the armchair price,
 
 $$
-14x + 22y = 9300
-$$
-
-$$
-20x + 10y = 9000
+14x + 22y = 9300, \\qquad 20x + 10y = 9000
 $$
 
 Dividing the Hillcrest equation by 10 gives $2x + y = 900$, so $y = 900 - 2x$. Substituting into the Riverside equation:
@@ -1797,11 +1497,7 @@ $$
 $$
 
 $$
-14x + 19800 - 44x = 9300
-$$
-
-$$
--30x = -10500
+14x + 19800 - 44x = 9300, \\qquad -30x = -10500
 $$
 
 $$
@@ -1829,29 +1525,17 @@ $$
 Riverside's net sales were \\$9,300.00, matching the claim. That net figure is also what Riverside's 14 sofas and 22 armchairs must account for at the company-wide prices. Writing $x$ for a sofa and $y$ for an armchair, and taking Hillcrest's net as $9300 - 300 = 9000$,
 
 $$
-14x + 22y = 9300
-$$
-
-$$
-20x + 10y = 9000
+14x + 22y = 9300, \\qquad 20x + 10y = 9000
 $$
 
 Dividing the Hillcrest equation by 10 gives $2x + y = 900$, so $y = 900 - 2x$, and substituting:
 
 $$
-14x + 22(900 - 2x) = 9300
+14x + 22(900 - 2x) = 9300, \\qquad -30x = -10500
 $$
 
 $$
--30x = -10500
-$$
-
-$$
-x = 350
-$$
-
-$$
-y = 900 - 700 = 200
+x = 350, \\qquad y = 900 - 700 = 200
 $$
 
 Riverside's line rebuilds its net total exactly:
@@ -1872,21 +1556,13 @@ $$
 so Hillcrest's \\$9,300 gross becomes \\$9,000 net, and it is the net figure that the branch's 20 sofas and 10 armchairs account for. Writing $x$ for the sofa price and $y$ for the armchair price, and taking Riverside's net as $9760 - 460 = 9300$, the two branches give
 
 $$
-14x + 22y = 9300
-$$
-
-$$
-20x + 10y = 9000
+14x + 22y = 9300, \\qquad 20x + 10y = 9000
 $$
 
 Dividing the Hillcrest equation by 10:
 
 $$
-2x + y = 900
-$$
-
-$$
-y = 900 - 2x
+2x + y = 900, \\qquad y = 900 - 2x
 $$
 
 Substituting into the Riverside equation:
@@ -1896,19 +1572,11 @@ $$
 $$
 
 $$
-14x + 19800 - 44x = 9300
+14x + 19800 - 44x = 9300, \\qquad -30x = -10500
 $$
 
 $$
--30x = -10500
-$$
-
-$$
-x = 350
-$$
-
-$$
-y = 900 - 2(350) = 200
+x = 350, \\qquad y = 900 - 2(350) = 200
 $$
 
 Hillcrest's own line confirms the net figure that sits behind the printed gross:
@@ -1945,29 +1613,17 @@ $$
 and it is that net figure, not the gross one, that its 14 sofas and 22 armchairs account for at the company-wide prices. With $x$ the sofa price, $y$ the armchair price, and Hillcrest's net of $9300 - 300 = 9000$ alongside it,
 
 $$
-14x + 22y = 9300
-$$
-
-$$
-20x + 10y = 9000
+14x + 22y = 9300, \\qquad 20x + 10y = 9000
 $$
 
 Dividing the second equation by 10 gives $2x + y = 900$, so $y = 900 - 2x$, and substituting:
 
 $$
-14x + 22(900 - 2x) = 9300
+14x + 22(900 - 2x) = 9300, \\qquad -30x = -10500
 $$
 
 $$
--30x = -10500
-$$
-
-$$
-x = 350
-$$
-
-$$
-y = 200
+x = 350, \\qquad y = 200
 $$
 
 Removing the returns changes only the deduction, never the listed prices, so gross and net would both read \\$9,760.00 and the statement is true.`,
@@ -2057,21 +1713,13 @@ $$
 $$
 
 $$
-180r = 36.00
-$$
-
-$$
-r = 0.20
+180r = 36.00, \\qquad r = 0.20
 $$
 
 Substituting that rate into Order #58:
 
 $$
-f + 120(0.20) = 33.00
-$$
-
-$$
-f + 24.00 = 33.00
+f + 120(0.20) = 33.00, \\qquad f + 24.00 = 33.00
 $$
 
 $$
@@ -2090,11 +1738,7 @@ Compare with the claim: the setup fee is \\$9.00, three dollars below the claime
 Each PrintFast bill is a fixed setup fee plus a constant charge per page, so the rate is what the difference between two orders reveals. Let $f$ be the setup fee and $r$ the per-page rate:
 
 $$
-f + 120r = 33.00
-$$
-
-$$
-f + 300r = 69.00
+f + 120r = 33.00, \\qquad f + 300r = 69.00
 $$
 
 The page gap between the two orders is
@@ -2112,11 +1756,7 @@ $$
 Since the same setup fee sits inside both bills, the entire price gap is pages:
 
 $$
-180r = 36.00
-$$
-
-$$
-r = \\frac{36.00}{180} = 0.20
+180r = 36.00, \\qquad r = \\frac{36.00}{180} = 0.20
 $$
 
 The fee then follows from Order #58 as $f = 33.00 - 120(0.20) = 9.00$, and Order #96 checks out at $9.00 + 300(0.20) = 69.00$. Compare with the claim: the rate is \\$0.20 per page, not \\$0.25. Dividing the \\$36.00 gap by the wrong page difference is the likely source of the error. The statement is false.`,
@@ -2177,11 +1817,7 @@ $$
 Either invoice then fixes the fee, again with no freedom left:
 
 $$
-f = 33.00 - 120(0.20)
-$$
-
-$$
-f = 33.00 - 24.00 = 9.00
+f = 33.00 - 120(0.20), \\qquad f = 33.00 - 24.00 = 9.00
 $$
 
 The same conclusion reads off the coefficient matrix of the system, whose determinant is
@@ -2231,21 +1867,13 @@ $$
 $$
 
 $$
-180r = 36.00
-$$
-
-$$
-r = 0.20
+180r = 36.00, \\qquad r = 0.20
 $$
 
 **2.** Substitute back:
 
 $$
-f + 120(0.20) = 33.00
-$$
-
-$$
-f + 24.00 = 33.00
+f + 120(0.20) = 33.00, \\qquad f + 24.00 = 33.00
 $$
 
 $$
@@ -2285,11 +1913,7 @@ $$
 Ana ordered 4 tacos and 3 burritos and paid \\$32.00. Ben ordered 2 tacos and 5 burritos and paid exactly \\$5.00 more than Ana, so his total was $32.00 + 5.00 = 37.00$. Let $x$ be the taco price and $y$ the burrito price:
 
 $$
-4x + 3y = 32.00
-$$
-
-$$
-2x + 5y = 37.00
+4x + 3y = 32.00, \\qquad 2x + 5y = 37.00
 $$
 
 Doubling Ben's equation lines up the taco terms:
@@ -2305,21 +1929,13 @@ $$
 $$
 
 $$
-7y = 42.00
-$$
-
-$$
-y = 6.00
+7y = 42.00, \\qquad y = 6.00
 $$
 
 Substituting the burrito price back into Ana's order:
 
 $$
-4x + 3(6.00) = 32.00
-$$
-
-$$
-4x = 32.00 - 18.00 = 14.00
+4x + 3(6.00) = 32.00, \\qquad 4x = 32.00 - 18.00 = 14.00
 $$
 
 $$
@@ -2362,15 +1978,7 @@ $$
 The menu prices confirm the same total. With $x$ the taco price and $y$ the burrito price, the two orders are $4x + 3y = 32.00$ and $2x + 5y = 37.00$. Doubling the second equation and subtracting the first:
 
 $$
-7y = 42.00
-$$
-
-$$
-y = 6.00
-$$
-
-$$
-4x = 32.00 - 18.00 = 14.00
+7y = 42.00, \\qquad y = 6.00, \\qquad 4x = 32.00 - 18.00 = 14.00
 $$
 
 $$
@@ -2380,11 +1988,7 @@ $$
 Costing Ben's order of 2 tacos and 5 burritos at those prices:
 
 $$
-2(3.50) + 5(6.00)
-$$
-
-$$
-= 7.00 + 30.00 = 37.00
+2(3.50) + 5(6.00) = 7.00 + 30.00 = 37.00
 $$
 
 Compare with the claim's threshold: \\$37.00 does not exceed \\$40.00. The \\$5.00 difference between the friends was already used in building Ben's total, and adding it a second time on top of \\$37.00 is the slip that pushes an answer past \\$40.00. The statement is false.`,
@@ -2439,21 +2043,13 @@ $$
 $$
 
 $$
-7y = 42.00
-$$
-
-$$
-y = 6.00
+7y = 42.00, \\qquad y = 6.00
 $$
 
 **3.** Substituting back:
 
 $$
-4x + 3(6.00) = 32.00
-$$
-
-$$
-4x + 18.00 = 32.00
+4x + 3(6.00) = 32.00, \\qquad 4x + 18.00 = 32.00
 $$
 
 $$
@@ -2488,11 +2084,7 @@ $$
 The memo fixes hardcovers exactly \\$5 above paperbacks, and the month's 400 paperbacks and 220 hardcovers brought in \\$8,540 between them. With $x$ the paperback price, the hardcover price is $x + 5$, so
 
 $$
-400x + 220(x + 5) = 8540
-$$
-
-$$
-620x + 1100 = 8540
+400x + 220(x + 5) = 8540, \\qquad 620x + 1100 = 8540
 $$
 
 $$
@@ -2526,19 +2118,11 @@ $$
 Substituting the memo's rule into the revenue equation:
 
 $$
-400x + 220(x + 5) = 8540
+400x + 220(x + 5) = 8540, \\qquad 620x + 1100 = 8540
 $$
 
 $$
-620x + 1100 = 8540
-$$
-
-$$
-620x = 7440
-$$
-
-$$
-x = 12
+620x = 7440, \\qquad x = 12
 $$
 
 The extra paperbacks number
@@ -2610,11 +2194,7 @@ $$
 **2.** Expanding:
 
 $$
-400x + 220x + 1100 = 8540
-$$
-
-$$
-620x = 7440
+400x + 220x + 1100 = 8540, \\qquad 620x = 7440
 $$
 
 $$
@@ -2668,25 +2248,13 @@ $$
 $$
 
 $$
-5y = 15
-$$
-
-$$
-y = 3
+5y = 15, \\qquad y = 3
 $$
 
 Substituting the overage rate back into the April bill:
 
 $$
-x + 3(3) = 47
-$$
-
-$$
-x + 9 = 47
-$$
-
-$$
-x = 38
+x + 3(3) = 47, \\qquad x + 9 = 47, \\qquad x = 38
 $$
 
 March agrees with the same pair of figures:
@@ -2713,11 +2281,7 @@ $$
 The extra usage between the two months is $8 - 3 = 5$ GB and the extra charge is $62.00 - 47.00 = 15.00$. Since both bills carry the same base fee, subtracting isolates the variable part:
 
 $$
-5y = 15
-$$
-
-$$
-y = \\frac{15}{5} = 3
+5y = 15, \\qquad y = \\frac{15}{5} = 3
 $$
 
 The base fee follows as $x = 47 - 3(3) = 38$, and March confirms the pair:
@@ -2808,25 +2372,13 @@ $$
 $$
 
 $$
-5y = 15
-$$
-
-$$
-y = 3
+5y = 15, \\qquad y = 3
 $$
 
 **2.** Substitute back:
 
 $$
-x + 3(3) = 47
-$$
-
-$$
-x + 9 = 47
-$$
-
-$$
-x = 38
+x + 3(3) = 47, \\qquad x + 9 = 47, \\qquad x = 38
 $$
 
 **Answer.** Standard base fee = \\$38.00 | Overage rate = \\$3.00/GB`,
@@ -2887,39 +2439,23 @@ $$
 Let $x$ be the pre-tax Standard rate and $y$ the pre-tax Suite rate. Weekend 1 booked 10 Standard rooms and 4 suites, and Weekend 2 booked 7 Standard rooms and 9 suites, so
 
 $$
-10x + 4y = 2240
-$$
-
-$$
-7x + 9y = 2870
+10x + 4y = 2240, \\qquad 7x + 9y = 2870
 $$
 
 Halving the first equation simplifies it:
 
 $$
-5x + 2y = 1120
-$$
-
-$$
-y = \\frac{1120 - 5x}{2}
+5x + 2y = 1120, \\qquad y = \\frac{1120 - 5x}{2}
 $$
 
 Doubling the second equation and substituting:
 
 $$
-14x + 18y = 5740
+14x + 18y = 5740, \\qquad 14x + 9(1120 - 5x) = 5740
 $$
 
 $$
-14x + 9(1120 - 5x) = 5740
-$$
-
-$$
-14x + 10080 - 45x = 5740
-$$
-
-$$
--31x = -4340
+14x + 10080 - 45x = 5740, \\qquad -31x = -4340
 $$
 
 $$
@@ -2935,31 +2471,15 @@ $$
 Straight elimination gives the same pair. Multiplying the first equation by 9 and the second by 4 matches the suite terms:
 
 $$
-90x + 36y = 20160
+90x + 36y = 20160, \\qquad 28x + 36y = 11480
 $$
 
 $$
-28x + 36y = 11480
+62x = 8680, \\qquad x = 140, \\qquad 10(140) + 4y = 2240
 $$
 
 $$
-62x = 8680
-$$
-
-$$
-x = 140
-$$
-
-$$
-10(140) + 4y = 2240
-$$
-
-$$
-4y = 840
-$$
-
-$$
-y = 210
+4y = 840, \\qquad y = 210
 $$
 
 The nightly gap between the two room types is
@@ -2974,11 +2494,7 @@ Compare with the claim: a suite costs \\$70 more per night, well short of \\$200
 The nightly rates come from the two confirmations once the 8% tax is stripped out: $2419.20 / 1.08 = 2240.00$ and $3099.60 / 1.08 = 2870.00$, giving $10x + 4y = 2240$ and $7x + 9y = 2870$. Multiplying the first by 9 and the second by 4 and subtracting gives $62x = 8680$, so $x = 140$, and then $4y = 2240 - 1400 = 840$, so $y = 210$. Comparing the two bookings before tax:
 
 $$
-6(140) = 840
-$$
-
-$$
-4(210) = 840
+6(140) = 840, \\qquad 4(210) = 840
 $$
 
 Both come to \\$840, so six Standard rooms do not cost less than four Suites and the statement is false.`,
@@ -3044,11 +2560,7 @@ $$
 $$
 
 $$
-14x + 10080 - 45x = 5740
-$$
-
-$$
--31x = -4340
+14x + 10080 - 45x = 5740, \\qquad -31x = -4340
 $$
 
 $$
@@ -3087,31 +2599,19 @@ $$
 Only the January and February rows record actual inventory values, so those two build the system. With $x$ the unit cost of Component A and $y$ that of Component B,
 
 $$
-150x + 90y = 3150
-$$
-
-$$
-130x + 140y = 3660
+150x + 90y = 3150, \\qquad 130x + 140y = 3660
 $$
 
 Dividing the first by 30 and the second by 10 gives $5x + 3y = 105$ and $13x + 14y = 366$. Multiplying these by 14 and 3 respectively:
 
 $$
-70x + 42y = 1470
-$$
-
-$$
-39x + 42y = 1098
+70x + 42y = 1470, \\qquad 39x + 42y = 1098
 $$
 
 Subtracting:
 
 $$
-31x = 372
-$$
-
-$$
-x = 12
+31x = 372, \\qquad x = 12
 $$
 
 Component A costs \\$12 per unit, matching the claim, so the statement is true.`,
@@ -3132,45 +2632,25 @@ $$
 Divide the first equation by 30 and the second by 10:
 
 $$
-5x + 3y = 105
-$$
-
-$$
-13x + 14y = 366
+5x + 3y = 105, \\qquad 13x + 14y = 366
 $$
 
 Multiply the first by 14 and the second by 3 so the $y$ terms match:
 
 $$
-70x + 42y = 1470
-$$
-
-$$
-39x + 42y = 1098
+70x + 42y = 1470, \\qquad 39x + 42y = 1098
 $$
 
 Subtracting the second from the first eliminates $y$:
 
 $$
-31x = 372
-$$
-
-$$
-x = 12
+31x = 372, \\qquad x = 12
 $$
 
 Substituting back into the simplified January equation:
 
 $$
-5(12) + 3y = 105
-$$
-
-$$
-60 + 3y = 105
-$$
-
-$$
-3y = 45
+5(12) + 3y = 105, \\qquad 60 + 3y = 105, \\qquad 3y = 45
 $$
 
 $$
@@ -3251,25 +2731,13 @@ $$
 $$
 
 $$
-31x = 372
-$$
-
-$$
-x = 12
+31x = 372, \\qquad x = 12
 $$
 
 **4.** Then from $5(12) + 3y = 105$:
 
 $$
-60 + 3y = 105
-$$
-
-$$
-3y = 45
-$$
-
-$$
-y = 15
+60 + 3y = 105, \\qquad 3y = 45, \\qquad y = 15
 $$
 
 **Answer.** Component A = \\$12.00/unit | Component B = \\$15.00/unit`,
@@ -3298,23 +2766,13 @@ Let $x$ be the regular hourly wage and $y$ the overtime rate actually paid. Both
 
 State the model, then substitute and eliminate one step at a time:
 
-$$40x + 6y = 704$$
-
-$$40x + 2y = 608$$
+$$40x + 6y = 704, \\qquad 40x + 2y = 608$$
 
 $$(40x + 6y) - (40x + 2y) = 704 - 608$$
 
-$$4y = 96$$
+$$4y = 96, \\qquad y = 24, \\qquad 40x + 2(24) = 608$$
 
-$$y = 24$$
-
-$$40x + 2(24) = 608$$
-
-$$40x + 48 = 608$$
-
-$$40x = 560$$
-
-$$x = 14$$
+$$40x + 48 = 608, \\qquad 40x = 560, \\qquad x = 14$$
 
 $$1.5 \\times 14 = 21$$
 
@@ -3329,23 +2787,13 @@ Let $x$ be the regular hourly wage and $y$ the overtime rate actually paid. Both
 
 State the model, then substitute and eliminate one step at a time:
 
-$$40x + 6y = 704$$
-
-$$40x + 2y = 608$$
+$$40x + 6y = 704, \\qquad 40x + 2y = 608$$
 
 $$(40x + 6y) - (40x + 2y) = 704 - 608$$
 
-$$4y = 96$$
+$$4y = 96, \\qquad y = 24, \\qquad 40x + 2(24) = 608$$
 
-$$y = 24$$
-
-$$40x + 2(24) = 608$$
-
-$$40x + 48 = 608$$
-
-$$40x = 560$$
-
-$$x = 14$$
+$$40x + 48 = 608, \\qquad 40x = 560, \\qquad x = 14$$
 
 $$1.5 \\times 14 = 21$$
 
@@ -3356,23 +2804,13 @@ Let $x$ be the regular hourly wage and $y$ the overtime rate actually paid. Both
 
 State the model, then substitute and eliminate one step at a time:
 
-$$40x + 6y = 704$$
-
-$$40x + 2y = 608$$
+$$40x + 6y = 704, \\qquad 40x + 2y = 608$$
 
 $$(40x + 6y) - (40x + 2y) = 704 - 608$$
 
-$$4y = 96$$
+$$4y = 96, \\qquad y = 24, \\qquad 40x + 2(24) = 608$$
 
-$$y = 24$$
-
-$$40x + 2(24) = 608$$
-
-$$40x + 48 = 608$$
-
-$$40x = 560$$
-
-$$x = 14$$
+$$40x + 48 = 608, \\qquad 40x = 560, \\qquad x = 14$$
 
 $$1.5 \\times 14 = 21$$
 
@@ -3387,23 +2825,13 @@ Let $x$ be the regular hourly wage and $y$ the overtime rate actually paid. Both
 
 State the model, then substitute and eliminate one step at a time:
 
-$$40x + 6y = 704$$
-
-$$40x + 2y = 608$$
+$$40x + 6y = 704, \\qquad 40x + 2y = 608$$
 
 $$(40x + 6y) - (40x + 2y) = 704 - 608$$
 
-$$4y = 96$$
+$$4y = 96, \\qquad y = 24, \\qquad 40x + 2(24) = 608$$
 
-$$y = 24$$
-
-$$40x + 2(24) = 608$$
-
-$$40x + 48 = 608$$
-
-$$40x = 560$$
-
-$$x = 14$$
+$$40x + 48 = 608, \\qquad 40x = 560, \\qquad x = 14$$
 
 $$1.5 \\times 14 = 21$$
 
@@ -3418,23 +2846,13 @@ Let $x$ be the regular hourly wage and $y$ the overtime rate actually paid. Both
 
 State the model, then substitute and eliminate one step at a time:
 
-$$40x + 6y = 704$$
-
-$$40x + 2y = 608$$
+$$40x + 6y = 704, \\qquad 40x + 2y = 608$$
 
 $$(40x + 6y) - (40x + 2y) = 704 - 608$$
 
-$$4y = 96$$
+$$4y = 96, \\qquad y = 24, \\qquad 40x + 2(24) = 608$$
 
-$$y = 24$$
-
-$$40x + 2(24) = 608$$
-
-$$40x + 48 = 608$$
-
-$$40x = 560$$
-
-$$x = 14$$
+$$40x + 48 = 608, \\qquad 40x = 560, \\qquad x = 14$$
 
 $$1.5 \\times 14 = 21$$
 
@@ -3512,27 +2930,15 @@ Let $x$ be the fixed monthly charge and $y$ the rate per cubic metre. May's prin
 
 State the model, then substitute and eliminate one step at a time:
 
-$$1.10 M = 56.10$$
+$$1.10 M = 56.10, \\qquad M = \\frac{56.10}{1.10}, \\qquad M = 51.00$$
 
-$$M = \\frac{56.10}{1.10}$$
-
-$$M = 51.00$$
-
-$$x + 18y = 51$$
-
-$$x + 25y = 65$$
+$$x + 18y = 51, \\qquad x + 25y = 65$$
 
 $$(x + 25y) - (x + 18y) = 65 - 51$$
 
-$$7y = 14$$
+$$7y = 14, \\qquad y = 2, \\qquad x + 18(2) = 51$$
 
-$$y = 2$$
-
-$$x + 18(2) = 51$$
-
-$$x + 36 = 51$$
-
-$$x = 15$$
+$$x + 36 = 51, \\qquad x = 15$$
 
 After removing the penalty, May's bill is $51$. With rate $y = 2$, usage costs $18(2) = 36$, leaving a fixed charge of $15$, not $18$. The bills support a fixed charge of \\$15.00, not the claimed \\$18.00, so the statement is false.
 
@@ -3543,35 +2949,19 @@ Let $x$ be the fixed monthly charge and $y$ the rate per cubic metre. May's prin
 
 State the model, then substitute and eliminate one step at a time:
 
-$$1.10 M = 56.10$$
+$$1.10 M = 56.10, \\qquad M = \\frac{56.10}{1.10}, \\qquad M = 51.00$$
 
-$$M = \\frac{56.10}{1.10}$$
-
-$$M = 51.00$$
-
-$$x + 18y = 51$$
-
-$$x + 25y = 65$$
+$$x + 18y = 51, \\qquad x + 25y = 65$$
 
 $$(x + 25y) - (x + 18y) = 65 - 51$$
 
-$$7y = 14$$
+$$7y = 14, \\qquad y = 2, \\qquad x + 18(2) = 51$$
 
-$$y = 2$$
-
-$$x + 18(2) = 51$$
-
-$$x + 36 = 51$$
-
-$$x = 15$$
+$$x + 36 = 51, \\qquad x = 15$$
 
 The bills differ by $65 - 51 = 14$ after May is corrected, while usage differs by $25 - 18 = 7$ m³, so
 
-$$(25 - 18)y = 65 - 51$$
-
-$$7y = 14$$
-
-$$y = 2$$
+$$(25 - 18)y = 65 - 51, \\qquad 7y = 14, \\qquad y = 2$$
 
 The rate is \\$2.00 per m³, matching the claim and contradicting the office's \\$1.85 figure. So the statement is true.`,
       `**C) After removing the late penalty, May's actual water charge was \\$51.00.**  (true)
@@ -3580,27 +2970,15 @@ Let $x$ be the fixed monthly charge and $y$ the rate per cubic metre. May's prin
 
 State the model, then substitute and eliminate one step at a time:
 
-$$1.10 M = 56.10$$
+$$1.10 M = 56.10, \\qquad M = \\frac{56.10}{1.10}, \\qquad M = 51.00$$
 
-$$M = \\frac{56.10}{1.10}$$
-
-$$M = 51.00$$
-
-$$x + 18y = 51$$
-
-$$x + 25y = 65$$
+$$x + 18y = 51, \\qquad x + 25y = 65$$
 
 $$(x + 25y) - (x + 18y) = 65 - 51$$
 
-$$7y = 14$$
+$$7y = 14, \\qquad y = 2, \\qquad x + 18(2) = 51$$
 
-$$y = 2$$
-
-$$x + 18(2) = 51$$
-
-$$x + 36 = 51$$
-
-$$x = 15$$
+$$x + 36 = 51, \\qquad x = 15$$
 
 A 10% surcharge means the printed figure is $1.10$ times the genuine charge, so invert the multiplier:
 
@@ -3613,27 +2991,15 @@ Let $x$ be the fixed monthly charge and $y$ the rate per cubic metre. May's prin
 
 State the model, then substitute and eliminate one step at a time:
 
-$$1.10 M = 56.10$$
+$$1.10 M = 56.10, \\qquad M = \\frac{56.10}{1.10}, \\qquad M = 51.00$$
 
-$$M = \\frac{56.10}{1.10}$$
-
-$$M = 51.00$$
-
-$$x + 18y = 51$$
-
-$$x + 25y = 65$$
+$$x + 18y = 51, \\qquad x + 25y = 65$$
 
 $$(x + 25y) - (x + 18y) = 65 - 51$$
 
-$$7y = 14$$
+$$7y = 14, \\qquad y = 2, \\qquad x + 18(2) = 51$$
 
-$$y = 2$$
-
-$$x + 18(2) = 51$$
-
-$$x + 36 = 51$$
-
-$$x = 15$$
+$$x + 36 = 51, \\qquad x = 15$$
 
 With the recovered fixed charge and rate, the correct formula is $15 + 2u$. At $u = 40$,
 
@@ -3646,27 +3012,15 @@ Let $x$ be the fixed monthly charge and $y$ the rate per cubic metre. May's prin
 
 State the model, then substitute and eliminate one step at a time:
 
-$$1.10 M = 56.10$$
+$$1.10 M = 56.10, \\qquad M = \\frac{56.10}{1.10}, \\qquad M = 51.00$$
 
-$$M = \\frac{56.10}{1.10}$$
-
-$$M = 51.00$$
-
-$$x + 18y = 51$$
-
-$$x + 25y = 65$$
+$$x + 18y = 51, \\qquad x + 25y = 65$$
 
 $$(x + 25y) - (x + 18y) = 65 - 51$$
 
-$$7y = 14$$
+$$7y = 14, \\qquad y = 2, \\qquad x + 18(2) = 51$$
 
-$$y = 2$$
-
-$$x + 18(2) = 51$$
-
-$$x + 36 = 51$$
-
-$$x = 15$$
+$$x + 36 = 51, \\qquad x = 15$$
 
 June's printed \\$65.00 is already the genuine charge. A 10% late penalty on that whole amount is
 
@@ -3744,43 +3098,25 @@ Let $x_1$ and $y_1$ be CityCab's base fare and per-kilometre rate, and let $x_2$
 
 State the model, then substitute and eliminate one step at a time:
 
-$$14 + 12 = 26$$
-
-$$x_1 + 8y_1 = 14$$
-
-$$x_1 + 20y_1 = 26$$
+$$14 + 12 = 26, \\qquad x_1 + 8y_1 = 14, \\qquad x_1 + 20y_1 = 26$$
 
 $$(x_1 + 20y_1) - (x_1 + 8y_1) = 26 - 14$$
 
-$$12y_1 = 12$$
+$$12y_1 = 12, \\qquad y_1 = 1, \\qquad x_1 = 14 - 8(1)$$
 
-$$y_1 = 1$$
-
-$$x_1 = 14 - 8(1)$$
-
-$$x_1 = 6$$
-
-$$13.50 + 15 = 28.50$$
-
-$$x_2 + 5y_2 = 13.50$$
+$$x_1 = 6, \\qquad 13.50 + 15 = 28.50, \\qquad x_2 + 5y_2 = 13.50$$
 
 $$x_2 + 15y_2 = 28.50$$
 
 $$(x_2 + 15y_2) - (x_2 + 5y_2) = 28.50 - 13.50$$
 
-$$10y_2 = 15$$
-
-$$y_2 = 1.5$$
-
-$$x_2 = 13.50 - 5(1.5)$$
+$$10y_2 = 15, \\qquad y_2 = 1.5, \\qquad x_2 = 13.50 - 5(1.5)$$
 
 $$x_2 = 6$$
 
 At 10 km the two fare formulas give
 
-$$6 + 10(1) = 16$$
-
-$$6 + 10(1.5) = 21$$
+$$6 + 10(1) = 16, \\qquad 6 + 10(1.5) = 21$$
 
 CityCab's \\$16 undercuts MetroX's \\$21 by \\$5, so the statement is true.`,
       `**B) Both companies charge the same base fare of \\$6.00.**  (true)
@@ -3789,35 +3125,19 @@ Let $x_1$ and $y_1$ be CityCab's base fare and per-kilometre rate, and let $x_2$
 
 State the model, then substitute and eliminate one step at a time:
 
-$$14 + 12 = 26$$
-
-$$x_1 + 8y_1 = 14$$
-
-$$x_1 + 20y_1 = 26$$
+$$14 + 12 = 26, \\qquad x_1 + 8y_1 = 14, \\qquad x_1 + 20y_1 = 26$$
 
 $$(x_1 + 20y_1) - (x_1 + 8y_1) = 26 - 14$$
 
-$$12y_1 = 12$$
+$$12y_1 = 12, \\qquad y_1 = 1, \\qquad x_1 = 14 - 8(1)$$
 
-$$y_1 = 1$$
-
-$$x_1 = 14 - 8(1)$$
-
-$$x_1 = 6$$
-
-$$13.50 + 15 = 28.50$$
-
-$$x_2 + 5y_2 = 13.50$$
+$$x_1 = 6, \\qquad 13.50 + 15 = 28.50, \\qquad x_2 + 5y_2 = 13.50$$
 
 $$x_2 + 15y_2 = 28.50$$
 
 $$(x_2 + 15y_2) - (x_2 + 5y_2) = 28.50 - 13.50$$
 
-$$10y_2 = 15$$
-
-$$y_2 = 1.5$$
-
-$$x_2 = 13.50 - 5(1.5)$$
+$$10y_2 = 15, \\qquad y_2 = 1.5, \\qquad x_2 = 13.50 - 5(1.5)$$
 
 $$x_2 = 6$$
 
@@ -3834,35 +3154,19 @@ Let $x_1$ and $y_1$ be CityCab's base fare and per-kilometre rate, and let $x_2$
 
 State the model, then substitute and eliminate one step at a time:
 
-$$14 + 12 = 26$$
-
-$$x_1 + 8y_1 = 14$$
-
-$$x_1 + 20y_1 = 26$$
+$$14 + 12 = 26, \\qquad x_1 + 8y_1 = 14, \\qquad x_1 + 20y_1 = 26$$
 
 $$(x_1 + 20y_1) - (x_1 + 8y_1) = 26 - 14$$
 
-$$12y_1 = 12$$
+$$12y_1 = 12, \\qquad y_1 = 1, \\qquad x_1 = 14 - 8(1)$$
 
-$$y_1 = 1$$
-
-$$x_1 = 14 - 8(1)$$
-
-$$x_1 = 6$$
-
-$$13.50 + 15 = 28.50$$
-
-$$x_2 + 5y_2 = 13.50$$
+$$x_1 = 6, \\qquad 13.50 + 15 = 28.50, \\qquad x_2 + 5y_2 = 13.50$$
 
 $$x_2 + 15y_2 = 28.50$$
 
 $$(x_2 + 15y_2) - (x_2 + 5y_2) = 28.50 - 13.50$$
 
-$$10y_2 = 15$$
-
-$$y_2 = 1.5$$
-
-$$x_2 = 13.50 - 5(1.5)$$
+$$10y_2 = 15, \\qquad y_2 = 1.5, \\qquad x_2 = 13.50 - 5(1.5)$$
 
 $$x_2 = 6$$
 
@@ -3877,35 +3181,19 @@ Let $x_1$ and $y_1$ be CityCab's base fare and per-kilometre rate, and let $x_2$
 
 State the model, then substitute and eliminate one step at a time:
 
-$$14 + 12 = 26$$
-
-$$x_1 + 8y_1 = 14$$
-
-$$x_1 + 20y_1 = 26$$
+$$14 + 12 = 26, \\qquad x_1 + 8y_1 = 14, \\qquad x_1 + 20y_1 = 26$$
 
 $$(x_1 + 20y_1) - (x_1 + 8y_1) = 26 - 14$$
 
-$$12y_1 = 12$$
+$$12y_1 = 12, \\qquad y_1 = 1, \\qquad x_1 = 14 - 8(1)$$
 
-$$y_1 = 1$$
-
-$$x_1 = 14 - 8(1)$$
-
-$$x_1 = 6$$
-
-$$13.50 + 15 = 28.50$$
-
-$$x_2 + 5y_2 = 13.50$$
+$$x_1 = 6, \\qquad 13.50 + 15 = 28.50, \\qquad x_2 + 5y_2 = 13.50$$
 
 $$x_2 + 15y_2 = 28.50$$
 
 $$(x_2 + 15y_2) - (x_2 + 5y_2) = 28.50 - 13.50$$
 
-$$10y_2 = 15$$
-
-$$y_2 = 1.5$$
-
-$$x_2 = 13.50 - 5(1.5)$$
+$$10y_2 = 15, \\qquad y_2 = 1.5, \\qquad x_2 = 13.50 - 5(1.5)$$
 
 $$x_2 = 6$$
 
@@ -3920,45 +3208,25 @@ Let $x_1$ and $y_1$ be CityCab's base fare and per-kilometre rate, and let $x_2$
 
 State the model, then substitute and eliminate one step at a time:
 
-$$14 + 12 = 26$$
-
-$$x_1 + 8y_1 = 14$$
-
-$$x_1 + 20y_1 = 26$$
+$$14 + 12 = 26, \\qquad x_1 + 8y_1 = 14, \\qquad x_1 + 20y_1 = 26$$
 
 $$(x_1 + 20y_1) - (x_1 + 8y_1) = 26 - 14$$
 
-$$12y_1 = 12$$
+$$12y_1 = 12, \\qquad y_1 = 1, \\qquad x_1 = 14 - 8(1)$$
 
-$$y_1 = 1$$
-
-$$x_1 = 14 - 8(1)$$
-
-$$x_1 = 6$$
-
-$$13.50 + 15 = 28.50$$
-
-$$x_2 + 5y_2 = 13.50$$
+$$x_1 = 6, \\qquad 13.50 + 15 = 28.50, \\qquad x_2 + 5y_2 = 13.50$$
 
 $$x_2 + 15y_2 = 28.50$$
 
 $$(x_2 + 15y_2) - (x_2 + 5y_2) = 28.50 - 13.50$$
 
-$$10y_2 = 15$$
-
-$$y_2 = 1.5$$
-
-$$x_2 = 13.50 - 5(1.5)$$
+$$10y_2 = 15, \\qquad y_2 = 1.5, \\qquad x_2 = 13.50 - 5(1.5)$$
 
 $$x_2 = 6$$
 
 Equating the two fare formulas:
 
-$$6 + d = 6 + 1.5d$$
-
-$$d = 1.5d$$
-
-$$0 = 0.5d$$
+$$6 + d = 6 + 1.5d, \\qquad d = 1.5d, \\qquad 0 = 0.5d$$
 
 $$d = 0$$
 
@@ -4050,43 +3318,21 @@ Let $x_A$ and $y_A$ be Vendor A's unit prices for Products X and Y, and let $x_B
 
 State the model, then substitute and eliminate one step at a time:
 
-$$20x_A + 15y_A = 450$$
+$$20x_A + 15y_A = 450, \\qquad 25x_A + 12y_A = 441$$
 
-$$25x_A + 12y_A = 441$$
-
-$$4x_A + 3y_A = 90$$
-
-$$y_A = 30 - \\frac{4}{3}x_A$$
+$$4x_A + 3y_A = 90, \\qquad y_A = 30 - \\frac{4}{3}x_A$$
 
 $$25x_A + 12\\left(30 - \\frac{4}{3}x_A\\right) = 441$$
 
-$$25x_A + 360 - 16x_A = 441$$
+$$25x_A + 360 - 16x_A = 441, \\qquad 9x_A = 81, \\qquad x_A = 9$$
 
-$$9x_A = 81$$
+$$y_A = 30 - \\frac{4}{3}(9), \\qquad y_A = 30 - 12, \\qquad y_A = 18$$
 
-$$x_A = 9$$
+$$20x_B + 15y_B = 460, \\qquad 25x_B + 12y_B = 467$$
 
-$$y_A = 30 - \\frac{4}{3}(9)$$
+$$4x_B + 3y_B = 92, \\qquad x_B = 11, \\qquad 4(11) + 3y_B = 92$$
 
-$$y_A = 30 - 12$$
-
-$$y_A = 18$$
-
-$$20x_B + 15y_B = 460$$
-
-$$25x_B + 12y_B = 467$$
-
-$$4x_B + 3y_B = 92$$
-
-$$x_B = 11$$
-
-$$4(11) + 3y_B = 92$$
-
-$$44 + 3y_B = 92$$
-
-$$3y_B = 48$$
-
-$$y_B = 16$$
+$$44 + 3y_B = 92, \\qquad 3y_B = 48, \\qquad y_B = 16$$
 
 Vendor A charges $x_A = 9$ per X, while Vendor B charges $x_B = 11$ per X. Since
 
@@ -4099,43 +3345,21 @@ Let $x_A$ and $y_A$ be Vendor A's unit prices for Products X and Y, and let $x_B
 
 State the model, then substitute and eliminate one step at a time:
 
-$$20x_A + 15y_A = 450$$
+$$20x_A + 15y_A = 450, \\qquad 25x_A + 12y_A = 441$$
 
-$$25x_A + 12y_A = 441$$
-
-$$4x_A + 3y_A = 90$$
-
-$$y_A = 30 - \\frac{4}{3}x_A$$
+$$4x_A + 3y_A = 90, \\qquad y_A = 30 - \\frac{4}{3}x_A$$
 
 $$25x_A + 12\\left(30 - \\frac{4}{3}x_A\\right) = 441$$
 
-$$25x_A + 360 - 16x_A = 441$$
+$$25x_A + 360 - 16x_A = 441, \\qquad 9x_A = 81, \\qquad x_A = 9$$
 
-$$9x_A = 81$$
+$$y_A = 30 - \\frac{4}{3}(9), \\qquad y_A = 30 - 12, \\qquad y_A = 18$$
 
-$$x_A = 9$$
+$$20x_B + 15y_B = 460, \\qquad 25x_B + 12y_B = 467$$
 
-$$y_A = 30 - \\frac{4}{3}(9)$$
+$$4x_B + 3y_B = 92, \\qquad x_B = 11, \\qquad 4(11) + 3y_B = 92$$
 
-$$y_A = 30 - 12$$
-
-$$y_A = 18$$
-
-$$20x_B + 15y_B = 460$$
-
-$$25x_B + 12y_B = 467$$
-
-$$4x_B + 3y_B = 92$$
-
-$$x_B = 11$$
-
-$$4(11) + 3y_B = 92$$
-
-$$44 + 3y_B = 92$$
-
-$$3y_B = 48$$
-
-$$y_B = 16$$
+$$44 + 3y_B = 92, \\qquad 3y_B = 48, \\qquad y_B = 16$$
 
 Vendor A's Y price is $y_A = 18$ and Vendor B's is $y_B = 16$. Since
 
@@ -4148,43 +3372,21 @@ Let $x_A$ and $y_A$ be Vendor A's unit prices for Products X and Y, and let $x_B
 
 State the model, then substitute and eliminate one step at a time:
 
-$$20x_A + 15y_A = 450$$
+$$20x_A + 15y_A = 450, \\qquad 25x_A + 12y_A = 441$$
 
-$$25x_A + 12y_A = 441$$
-
-$$4x_A + 3y_A = 90$$
-
-$$y_A = 30 - \\frac{4}{3}x_A$$
+$$4x_A + 3y_A = 90, \\qquad y_A = 30 - \\frac{4}{3}x_A$$
 
 $$25x_A + 12\\left(30 - \\frac{4}{3}x_A\\right) = 441$$
 
-$$25x_A + 360 - 16x_A = 441$$
+$$25x_A + 360 - 16x_A = 441, \\qquad 9x_A = 81, \\qquad x_A = 9$$
 
-$$9x_A = 81$$
+$$y_A = 30 - \\frac{4}{3}(9), \\qquad y_A = 30 - 12, \\qquad y_A = 18$$
 
-$$x_A = 9$$
+$$20x_B + 15y_B = 460, \\qquad 25x_B + 12y_B = 467$$
 
-$$y_A = 30 - \\frac{4}{3}(9)$$
+$$4x_B + 3y_B = 92, \\qquad x_B = 11, \\qquad 4(11) + 3y_B = 92$$
 
-$$y_A = 30 - 12$$
-
-$$y_A = 18$$
-
-$$20x_B + 15y_B = 460$$
-
-$$25x_B + 12y_B = 467$$
-
-$$4x_B + 3y_B = 92$$
-
-$$x_B = 11$$
-
-$$4(11) + 3y_B = 92$$
-
-$$44 + 3y_B = 92$$
-
-$$3y_B = 48$$
-
-$$y_B = 16$$
+$$44 + 3y_B = 92, \\qquad 3y_B = 48, \\qquad y_B = 16$$
 
 For the upcoming mix of 40 X and 30 Y,
 
@@ -4199,43 +3401,21 @@ Let $x_A$ and $y_A$ be Vendor A's unit prices for Products X and Y, and let $x_B
 
 State the model, then substitute and eliminate one step at a time:
 
-$$20x_A + 15y_A = 450$$
+$$20x_A + 15y_A = 450, \\qquad 25x_A + 12y_A = 441$$
 
-$$25x_A + 12y_A = 441$$
-
-$$4x_A + 3y_A = 90$$
-
-$$y_A = 30 - \\frac{4}{3}x_A$$
+$$4x_A + 3y_A = 90, \\qquad y_A = 30 - \\frac{4}{3}x_A$$
 
 $$25x_A + 12\\left(30 - \\frac{4}{3}x_A\\right) = 441$$
 
-$$25x_A + 360 - 16x_A = 441$$
+$$25x_A + 360 - 16x_A = 441, \\qquad 9x_A = 81, \\qquad x_A = 9$$
 
-$$9x_A = 81$$
+$$y_A = 30 - \\frac{4}{3}(9), \\qquad y_A = 30 - 12, \\qquad y_A = 18$$
 
-$$x_A = 9$$
+$$20x_B + 15y_B = 460, \\qquad 25x_B + 12y_B = 467$$
 
-$$y_A = 30 - \\frac{4}{3}(9)$$
+$$4x_B + 3y_B = 92, \\qquad x_B = 11, \\qquad 4(11) + 3y_B = 92$$
 
-$$y_A = 30 - 12$$
-
-$$y_A = 18$$
-
-$$20x_B + 15y_B = 460$$
-
-$$25x_B + 12y_B = 467$$
-
-$$4x_B + 3y_B = 92$$
-
-$$x_B = 11$$
-
-$$4(11) + 3y_B = 92$$
-
-$$44 + 3y_B = 92$$
-
-$$3y_B = 48$$
-
-$$y_B = 16$$
+$$44 + 3y_B = 92, \\qquad 3y_B = 48, \\qquad y_B = 16$$
 
 The two bundle totals are $900$ for Vendor A and $920$ for Vendor B, so
 
@@ -4248,49 +3428,25 @@ Let $x_A$ and $y_A$ be Vendor A's unit prices for Products X and Y, and let $x_B
 
 State the model, then substitute and eliminate one step at a time:
 
-$$20x_A + 15y_A = 450$$
+$$20x_A + 15y_A = 450, \\qquad 25x_A + 12y_A = 441$$
 
-$$25x_A + 12y_A = 441$$
-
-$$4x_A + 3y_A = 90$$
-
-$$y_A = 30 - \\frac{4}{3}x_A$$
+$$4x_A + 3y_A = 90, \\qquad y_A = 30 - \\frac{4}{3}x_A$$
 
 $$25x_A + 12\\left(30 - \\frac{4}{3}x_A\\right) = 441$$
 
-$$25x_A + 360 - 16x_A = 441$$
+$$25x_A + 360 - 16x_A = 441, \\qquad 9x_A = 81, \\qquad x_A = 9$$
 
-$$9x_A = 81$$
+$$y_A = 30 - \\frac{4}{3}(9), \\qquad y_A = 30 - 12, \\qquad y_A = 18$$
 
-$$x_A = 9$$
+$$20x_B + 15y_B = 460, \\qquad 25x_B + 12y_B = 467$$
 
-$$y_A = 30 - \\frac{4}{3}(9)$$
+$$4x_B + 3y_B = 92, \\qquad x_B = 11, \\qquad 4(11) + 3y_B = 92$$
 
-$$y_A = 30 - 12$$
-
-$$y_A = 18$$
-
-$$20x_B + 15y_B = 460$$
-
-$$25x_B + 12y_B = 467$$
-
-$$4x_B + 3y_B = 92$$
-
-$$x_B = 11$$
-
-$$4(11) + 3y_B = 92$$
-
-$$44 + 3y_B = 92$$
-
-$$3y_B = 48$$
-
-$$y_B = 16$$
+$$44 + 3y_B = 92, \\qquad 3y_B = 48, \\qquad y_B = 16$$
 
 With no X in the order, only the Y prices matter:
 
-$$60 \\times 18 = 1080$$
-
-$$60 \\times 16 = 960$$
+$$60 \\times 18 = 1080, \\qquad 60 \\times 16 = 960$$
 
 Vendor B is \\$120 cheaper on that Y-only run, so the statement is true.`,
     ],
@@ -4372,41 +3528,21 @@ Let $A$ and $B$ be Alpha's and Beta's Q1 revenue totals. After splitting those t
 
 State the model, then substitute and eliminate one step at a time:
 
-$$A + B = 27200$$
+$$A + B = 27200, \\qquad B - A = 1000, \\qquad 2B = 28200$$
 
-$$B - A = 1000$$
+$$B = 14100, \\qquad A = 13100, \\qquad 150x + 80y = 13100$$
 
-$$2B = 28200$$
+$$100x + 130y = 14100, \\qquad 15x + 8y = 1310$$
 
-$$B = 14100$$
-
-$$A = 13100$$
-
-$$150x + 80y = 13100$$
-
-$$100x + 130y = 14100$$
-
-$$15x + 8y = 1310$$
-
-$$10x + 13y = 1410$$
-
-$$30x + 16y = 2620$$
+$$10x + 13y = 1410, \\qquad 30x + 16y = 2620$$
 
 $$30x + 39y = 4230$$
 
 $$(30x + 39y) - (30x + 16y) = 4230 - 2620$$
 
-$$23y = 1610$$
+$$23y = 1610, \\qquad y = 70, \\qquad 10x + 13(70) = 1410$$
 
-$$y = 70$$
-
-$$10x + 13(70) = 1410$$
-
-$$10x + 910 = 1410$$
-
-$$10x = 500$$
-
-$$x = 50$$
+$$10x + 910 = 1410, \\qquad 10x = 500, \\qquad x = 50$$
 
 $$150(50) + 80(70) = 7500 + 5600 = 13100$$
 
@@ -4417,41 +3553,21 @@ Let $A$ and $B$ be Alpha's and Beta's Q1 revenue totals. After splitting those t
 
 State the model, then substitute and eliminate one step at a time:
 
-$$A + B = 27200$$
+$$A + B = 27200, \\qquad B - A = 1000, \\qquad 2B = 28200$$
 
-$$B - A = 1000$$
+$$B = 14100, \\qquad A = 13100, \\qquad 150x + 80y = 13100$$
 
-$$2B = 28200$$
+$$100x + 130y = 14100, \\qquad 15x + 8y = 1310$$
 
-$$B = 14100$$
-
-$$A = 13100$$
-
-$$150x + 80y = 13100$$
-
-$$100x + 130y = 14100$$
-
-$$15x + 8y = 1310$$
-
-$$10x + 13y = 1410$$
-
-$$30x + 16y = 2620$$
+$$10x + 13y = 1410, \\qquad 30x + 16y = 2620$$
 
 $$30x + 39y = 4230$$
 
 $$(30x + 39y) - (30x + 16y) = 4230 - 2620$$
 
-$$23y = 1610$$
+$$23y = 1610, \\qquad y = 70, \\qquad 10x + 13(70) = 1410$$
 
-$$y = 70$$
-
-$$10x + 13(70) = 1410$$
-
-$$10x + 910 = 1410$$
-
-$$10x = 500$$
-
-$$x = 50$$
+$$10x + 910 = 1410, \\qquad 10x = 500, \\qquad x = 50$$
 
 $$150(50) + 80(70) = 7500 + 5600 = 13100$$
 
@@ -4468,41 +3584,21 @@ Let $A$ and $B$ be Alpha's and Beta's Q1 revenue totals. After splitting those t
 
 State the model, then substitute and eliminate one step at a time:
 
-$$A + B = 27200$$
+$$A + B = 27200, \\qquad B - A = 1000, \\qquad 2B = 28200$$
 
-$$B - A = 1000$$
+$$B = 14100, \\qquad A = 13100, \\qquad 150x + 80y = 13100$$
 
-$$2B = 28200$$
+$$100x + 130y = 14100, \\qquad 15x + 8y = 1310$$
 
-$$B = 14100$$
-
-$$A = 13100$$
-
-$$150x + 80y = 13100$$
-
-$$100x + 130y = 14100$$
-
-$$15x + 8y = 1310$$
-
-$$10x + 13y = 1410$$
-
-$$30x + 16y = 2620$$
+$$10x + 13y = 1410, \\qquad 30x + 16y = 2620$$
 
 $$30x + 39y = 4230$$
 
 $$(30x + 39y) - (30x + 16y) = 4230 - 2620$$
 
-$$23y = 1610$$
+$$23y = 1610, \\qquad y = 70, \\qquad 10x + 13(70) = 1410$$
 
-$$y = 70$$
-
-$$10x + 13(70) = 1410$$
-
-$$10x + 910 = 1410$$
-
-$$10x = 500$$
-
-$$x = 50$$
+$$10x + 910 = 1410, \\qquad 10x = 500, \\qquad x = 50$$
 
 $$150(50) + 80(70) = 7500 + 5600 = 13100$$
 
@@ -4525,41 +3621,21 @@ Let $A$ and $B$ be Alpha's and Beta's Q1 revenue totals. After splitting those t
 
 State the model, then substitute and eliminate one step at a time:
 
-$$A + B = 27200$$
+$$A + B = 27200, \\qquad B - A = 1000, \\qquad 2B = 28200$$
 
-$$B - A = 1000$$
+$$B = 14100, \\qquad A = 13100, \\qquad 150x + 80y = 13100$$
 
-$$2B = 28200$$
+$$100x + 130y = 14100, \\qquad 15x + 8y = 1310$$
 
-$$B = 14100$$
-
-$$A = 13100$$
-
-$$150x + 80y = 13100$$
-
-$$100x + 130y = 14100$$
-
-$$15x + 8y = 1310$$
-
-$$10x + 13y = 1410$$
-
-$$30x + 16y = 2620$$
+$$10x + 13y = 1410, \\qquad 30x + 16y = 2620$$
 
 $$30x + 39y = 4230$$
 
 $$(30x + 39y) - (30x + 16y) = 4230 - 2620$$
 
-$$23y = 1610$$
+$$23y = 1610, \\qquad y = 70, \\qquad 10x + 13(70) = 1410$$
 
-$$y = 70$$
-
-$$10x + 13(70) = 1410$$
-
-$$10x + 910 = 1410$$
-
-$$10x = 500$$
-
-$$x = 50$$
+$$10x + 910 = 1410, \\qquad 10x = 500, \\qquad x = 50$$
 
 $$150(50) + 80(70) = 7500 + 5600 = 13100$$
 
@@ -4574,49 +3650,27 @@ Let $A$ and $B$ be Alpha's and Beta's Q1 revenue totals. After splitting those t
 
 State the model, then substitute and eliminate one step at a time:
 
-$$A + B = 27200$$
+$$A + B = 27200, \\qquad B - A = 1000, \\qquad 2B = 28200$$
 
-$$B - A = 1000$$
+$$B = 14100, \\qquad A = 13100, \\qquad 150x + 80y = 13100$$
 
-$$2B = 28200$$
+$$100x + 130y = 14100, \\qquad 15x + 8y = 1310$$
 
-$$B = 14100$$
-
-$$A = 13100$$
-
-$$150x + 80y = 13100$$
-
-$$100x + 130y = 14100$$
-
-$$15x + 8y = 1310$$
-
-$$10x + 13y = 1410$$
-
-$$30x + 16y = 2620$$
+$$10x + 13y = 1410, \\qquad 30x + 16y = 2620$$
 
 $$30x + 39y = 4230$$
 
 $$(30x + 39y) - (30x + 16y) = 4230 - 2620$$
 
-$$23y = 1610$$
+$$23y = 1610, \\qquad y = 70, \\qquad 10x + 13(70) = 1410$$
 
-$$y = 70$$
-
-$$10x + 13(70) = 1410$$
-
-$$10x + 910 = 1410$$
-
-$$10x = 500$$
-
-$$x = 50$$
+$$10x + 910 = 1410, \\qquad 10x = 500, \\qquad x = 50$$
 
 $$150(50) + 80(70) = 7500 + 5600 = 13100$$
 
 With prices $x = 50$ and $y = 70$,
 
-$$130 \\times 70 = 9100$$
-
-$$150 \\times 50 = 7500$$
+$$130 \\times 70 = 9100, \\qquad 150 \\times 50 = 7500$$
 
 Beta's Q line of \\$9,100 exceeds Alpha's whole P line of \\$7,500 by \\$1,600. So the statement is true.`,
     ],
@@ -4694,21 +3748,13 @@ Let $x$ be the signup fee and $y$ the monthly rate actually charged. Maria and J
 
 State the model, then substitute and eliminate one step at a time:
 
-$$x + 6y = 284$$
-
-$$x + 10y = 448$$
+$$x + 6y = 284, \\qquad x + 10y = 448$$
 
 $$(x + 10y) - (x + 6y) = 448 - 284$$
 
-$$4y = 164$$
+$$4y = 164, \\qquad y = 41, \\qquad x + 6(41) = 284$$
 
-$$y = 41$$
-
-$$x + 6(41) = 284$$
-
-$$x + 246 = 284$$
-
-$$x = 38$$
+$$x + 246 = 284, \\qquad x = 38$$
 
 The records give a signup fee of $x = 38$. That is $8$ more than the advertised \\$30. The flyer understates what members are actually charged up front, so the statement is false.`,
       `**B) The monthly rate members are actually paying is lower than the advertised \\$45/month.**  (true)
@@ -4717,21 +3763,13 @@ Let $x$ be the signup fee and $y$ the monthly rate actually charged. Maria and J
 
 State the model, then substitute and eliminate one step at a time:
 
-$$x + 6y = 284$$
-
-$$x + 10y = 448$$
+$$x + 6y = 284, \\qquad x + 10y = 448$$
 
 $$(x + 10y) - (x + 6y) = 448 - 284$$
 
-$$4y = 164$$
+$$4y = 164, \\qquad y = 41, \\qquad x + 6(41) = 284$$
 
-$$y = 41$$
-
-$$x + 6(41) = 284$$
-
-$$x + 246 = 284$$
-
-$$x = 38$$
+$$x + 246 = 284, \\qquad x = 38$$
 
 The monthly rate from the two histories is $y = 41$. Compared with the advertised \\$45,
 
@@ -4744,21 +3782,13 @@ Let $x$ be the signup fee and $y$ the monthly rate actually charged. Maria and J
 
 State the model, then substitute and eliminate one step at a time:
 
-$$x + 6y = 284$$
-
-$$x + 10y = 448$$
+$$x + 6y = 284, \\qquad x + 10y = 448$$
 
 $$(x + 10y) - (x + 6y) = 448 - 284$$
 
-$$4y = 164$$
+$$4y = 164, \\qquad y = 41, \\qquad x + 6(41) = 284$$
 
-$$y = 41$$
-
-$$x + 6(41) = 284$$
-
-$$x + 246 = 284$$
-
-$$x = 38$$
+$$x + 246 = 284, \\qquad x = 38$$
 
 Run the flyer's advertised rule $30 + 45m$ at $m = 6$:
 
@@ -4771,21 +3801,13 @@ Let $x$ be the signup fee and $y$ the monthly rate actually charged. Maria and J
 
 State the model, then substitute and eliminate one step at a time:
 
-$$x + 6y = 284$$
-
-$$x + 10y = 448$$
+$$x + 6y = 284, \\qquad x + 10y = 448$$
 
 $$(x + 10y) - (x + 6y) = 448 - 284$$
 
-$$4y = 164$$
+$$4y = 164, \\qquad y = 41, \\qquad x + 6(41) = 284$$
 
-$$y = 41$$
-
-$$x + 6(41) = 284$$
-
-$$x + 246 = 284$$
-
-$$x = 38$$
+$$x + 246 = 284, \\qquad x = 38$$
 
 Jason's listed total is \\$448. The recovered rule rebuilds that total:
 
@@ -4872,27 +3894,15 @@ Let $x$ be the Basic monthly price and $y$ the Premium monthly price. With no se
 
 State the model, then substitute and eliminate one step at a time:
 
-$$4x + 3y = 169$$
-
-$$2x + 7y = 255$$
-
-$$28x + 21y = 1183$$
+$$4x + 3y = 169, \\qquad 2x + 7y = 255, \\qquad 28x + 21y = 1183$$
 
 $$6x + 21y = 765$$
 
 $$(28x + 21y) - (6x + 21y) = 1183 - 765$$
 
-$$22x = 418$$
+$$22x = 418, \\qquad x = 19, \\qquad 4(19) + 3y = 169$$
 
-$$x = 19$$
-
-$$4(19) + 3y = 169$$
-
-$$76 + 3y = 169$$
-
-$$3y = 93$$
-
-$$y = 31$$
+$$76 + 3y = 169, \\qquad 3y = 93, \\qquad y = 31$$
 
 Elimination gives $22x = 418$, so $x = 19$ dollars per Basic plan-month, consistent with both households' combined bills. Basic costs \\$19 per month, so the statement is true.`,
       `**B) The Premium plan costs \\$35 per month.**  (false)
@@ -4901,35 +3911,19 @@ Let $x$ be the Basic monthly price and $y$ the Premium monthly price. With no se
 
 State the model, then substitute and eliminate one step at a time:
 
-$$4x + 3y = 169$$
-
-$$2x + 7y = 255$$
-
-$$28x + 21y = 1183$$
+$$4x + 3y = 169, \\qquad 2x + 7y = 255, \\qquad 28x + 21y = 1183$$
 
 $$6x + 21y = 765$$
 
 $$(28x + 21y) - (6x + 21y) = 1183 - 765$$
 
-$$22x = 418$$
+$$22x = 418, \\qquad x = 19, \\qquad 4(19) + 3y = 169$$
 
-$$x = 19$$
-
-$$4(19) + 3y = 169$$
-
-$$76 + 3y = 169$$
-
-$$3y = 93$$
-
-$$y = 31$$
+$$76 + 3y = 169, \\qquad 3y = 93, \\qquad y = 31$$
 
 After finding Basic at $19$, finish the substitution instead of guessing $35$:
 
-$$76 + 3y = 169$$
-
-$$3y = 93$$
-
-$$y = 31$$
+$$76 + 3y = 169, \\qquad 3y = 93, \\qquad y = 31$$
 
 Premium actually costs \\$31/month, not \\$35. So the statement is false.`,
       `**C) Household 2's combined total is more than double Household 1's combined total.**  (false)
@@ -4938,27 +3932,15 @@ Let $x$ be the Basic monthly price and $y$ the Premium monthly price. With no se
 
 State the model, then substitute and eliminate one step at a time:
 
-$$4x + 3y = 169$$
-
-$$2x + 7y = 255$$
-
-$$28x + 21y = 1183$$
+$$4x + 3y = 169, \\qquad 2x + 7y = 255, \\qquad 28x + 21y = 1183$$
 
 $$6x + 21y = 765$$
 
 $$(28x + 21y) - (6x + 21y) = 1183 - 765$$
 
-$$22x = 418$$
+$$22x = 418, \\qquad x = 19, \\qquad 4(19) + 3y = 169$$
 
-$$x = 19$$
-
-$$4(19) + 3y = 169$$
-
-$$76 + 3y = 169$$
-
-$$3y = 93$$
-
-$$y = 31$$
+$$76 + 3y = 169, \\qquad 3y = 93, \\qquad y = 31$$
 
 The table already prints both combined totals, so the comparison is
 
@@ -4971,35 +3953,19 @@ Let $x$ be the Basic monthly price and $y$ the Premium monthly price. With no se
 
 State the model, then substitute and eliminate one step at a time:
 
-$$4x + 3y = 169$$
-
-$$2x + 7y = 255$$
-
-$$28x + 21y = 1183$$
+$$4x + 3y = 169, \\qquad 2x + 7y = 255, \\qquad 28x + 21y = 1183$$
 
 $$6x + 21y = 765$$
 
 $$(28x + 21y) - (6x + 21y) = 1183 - 765$$
 
-$$22x = 418$$
+$$22x = 418, \\qquad x = 19, \\qquad 4(19) + 3y = 169$$
 
-$$x = 19$$
-
-$$4(19) + 3y = 169$$
-
-$$76 + 3y = 169$$
-
-$$3y = 93$$
-
-$$y = 31$$
+$$76 + 3y = 169, \\qquad 3y = 93, \\qquad y = 31$$
 
 Since neither plan carries a fixed fee, an $n$-month Basic bill costs $19n$ and Premium costs $31n$. Setting them equal:
 
-$$19n = 31n$$
-
-$$0 = 12n$$
-
-$$n = 0$$
+$$19n = 31n, \\qquad 0 = 12n, \\qquad n = 0$$
 
 There is no positive month count at which the pure-plan bills match. So the statement is false.`,
       `**E) A household billed for 5 months of Basic and 5 months of Premium would owe a combined \\$250.**  (true)
@@ -5008,27 +3974,15 @@ Let $x$ be the Basic monthly price and $y$ the Premium monthly price. With no se
 
 State the model, then substitute and eliminate one step at a time:
 
-$$4x + 3y = 169$$
-
-$$2x + 7y = 255$$
-
-$$28x + 21y = 1183$$
+$$4x + 3y = 169, \\qquad 2x + 7y = 255, \\qquad 28x + 21y = 1183$$
 
 $$6x + 21y = 765$$
 
 $$(28x + 21y) - (6x + 21y) = 1183 - 765$$
 
-$$22x = 418$$
+$$22x = 418, \\qquad x = 19, \\qquad 4(19) + 3y = 169$$
 
-$$x = 19$$
-
-$$4(19) + 3y = 169$$
-
-$$76 + 3y = 169$$
-
-$$3y = 93$$
-
-$$y = 31$$
+$$76 + 3y = 169, \\qquad 3y = 93, \\qquad y = 31$$
 
 Equal months of each plan at the confirmed rates:
 
@@ -5118,31 +4072,17 @@ Let $x$ be the organic-apple price per pound and $y$ the almond-milk price per c
 
 State the model, then substitute and eliminate one step at a time:
 
-$$50.00 - 3.60 - 4.40 = 42.00$$
+$$50.00 - 3.60 - 4.40 = 42.00, \\qquad 43.20 - 3.60 = 39.60$$
 
-$$43.20 - 3.60 = 39.60$$
-
-$$5x + 3y = 42$$
-
-$$2x + 5y = 39.60$$
-
-$$25x + 15y = 210$$
+$$5x + 3y = 42, \\qquad 2x + 5y = 39.60, \\qquad 25x + 15y = 210$$
 
 $$6x + 15y = 118.80$$
 
 $$(25x + 15y) - (6x + 15y) = 210 - 118.80$$
 
-$$19x = 91.20$$
+$$19x = 91.20, \\qquad x = 4.80, \\qquad 5(4.80) + 3y = 42$$
 
-$$x = 4.80$$
-
-$$5(4.80) + 3y = 42$$
-
-$$24 + 3y = 42$$
-
-$$3y = 18$$
-
-$$y = 6$$
+$$24 + 3y = 42, \\qquad 3y = 18, \\qquad y = 6$$
 
 After removing the known bread and egg prices, elimination gives $19x = 91.20$, hence $x = 4.80$ per pound. Organic apples cost \\$4.80 per pound, so the statement is true.`,
       `**B) Almond milk costs less than organic apples, per unit.**  (false)
@@ -5151,31 +4091,17 @@ Let $x$ be the organic-apple price per pound and $y$ the almond-milk price per c
 
 State the model, then substitute and eliminate one step at a time:
 
-$$50.00 - 3.60 - 4.40 = 42.00$$
+$$50.00 - 3.60 - 4.40 = 42.00, \\qquad 43.20 - 3.60 = 39.60$$
 
-$$43.20 - 3.60 = 39.60$$
-
-$$5x + 3y = 42$$
-
-$$2x + 5y = 39.60$$
-
-$$25x + 15y = 210$$
+$$5x + 3y = 42, \\qquad 2x + 5y = 39.60, \\qquad 25x + 15y = 210$$
 
 $$6x + 15y = 118.80$$
 
 $$(25x + 15y) - (6x + 15y) = 210 - 118.80$$
 
-$$19x = 91.20$$
+$$19x = 91.20, \\qquad x = 4.80, \\qquad 5(4.80) + 3y = 42$$
 
-$$x = 4.80$$
-
-$$5(4.80) + 3y = 42$$
-
-$$24 + 3y = 42$$
-
-$$3y = 18$$
-
-$$y = 6$$
+$$24 + 3y = 42, \\qquad 3y = 18, \\qquad y = 6$$
 
 Almond milk costs $y = 6$ per carton, while apples cost $x = 4.80$ per pound. Numerically,
 
@@ -5188,37 +4114,21 @@ Let $x$ be the organic-apple price per pound and $y$ the almond-milk price per c
 
 State the model, then substitute and eliminate one step at a time:
 
-$$50.00 - 3.60 - 4.40 = 42.00$$
+$$50.00 - 3.60 - 4.40 = 42.00, \\qquad 43.20 - 3.60 = 39.60$$
 
-$$43.20 - 3.60 = 39.60$$
-
-$$5x + 3y = 42$$
-
-$$2x + 5y = 39.60$$
-
-$$25x + 15y = 210$$
+$$5x + 3y = 42, \\qquad 2x + 5y = 39.60, \\qquad 25x + 15y = 210$$
 
 $$6x + 15y = 118.80$$
 
 $$(25x + 15y) - (6x + 15y) = 210 - 118.80$$
 
-$$19x = 91.20$$
+$$19x = 91.20, \\qquad x = 4.80, \\qquad 5(4.80) + 3y = 42$$
 
-$$x = 4.80$$
-
-$$5(4.80) + 3y = 42$$
-
-$$24 + 3y = 42$$
-
-$$3y = 18$$
-
-$$y = 6$$
+$$24 + 3y = 42, \\qquad 3y = 18, \\qquad y = 6$$
 
 The two recovered prices make the identity immediate:
 
-$$5(4.80) = 24.00$$
-
-$$4(6.00) = 24.00$$
+$$5(4.80) = 24.00, \\qquad 4(6.00) = 24.00$$
 
 Five pounds and four cartons land on the same \\$24. So the statement is true.`,
       `**D) If the store's 5% loyalty discount had applied to Receipt 1's total, the customer would have paid less than \\$47.00.**  (false)
@@ -5227,37 +4137,21 @@ Let $x$ be the organic-apple price per pound and $y$ the almond-milk price per c
 
 State the model, then substitute and eliminate one step at a time:
 
-$$50.00 - 3.60 - 4.40 = 42.00$$
+$$50.00 - 3.60 - 4.40 = 42.00, \\qquad 43.20 - 3.60 = 39.60$$
 
-$$43.20 - 3.60 = 39.60$$
-
-$$5x + 3y = 42$$
-
-$$2x + 5y = 39.60$$
-
-$$25x + 15y = 210$$
+$$5x + 3y = 42, \\qquad 2x + 5y = 39.60, \\qquad 25x + 15y = 210$$
 
 $$6x + 15y = 118.80$$
 
 $$(25x + 15y) - (6x + 15y) = 210 - 118.80$$
 
-$$19x = 91.20$$
+$$19x = 91.20, \\qquad x = 4.80, \\qquad 5(4.80) + 3y = 42$$
 
-$$x = 4.80$$
-
-$$5(4.80) + 3y = 42$$
-
-$$24 + 3y = 42$$
-
-$$3y = 18$$
-
-$$y = 6$$
+$$24 + 3y = 42, \\qquad 3y = 18, \\qquad y = 6$$
 
 Receipt 1 printed \\$50.00 with no loyalty card. Five percent off that printed total is
 
-$$50.00 \\times 0.05 = 2.50$$
-
-$$50.00 - 2.50 = 47.50$$
+$$50.00 \\times 0.05 = 2.50, \\qquad 50.00 - 2.50 = 47.50$$
 
 \\$47.50 is still above \\$47, so the discounted bill would not fall below the claimed cutoff. So the statement is false.`,
       `**E) Buying 10 lb of apples and 2 cartons of milk together costs more than \\$60.**  (false)
@@ -5266,31 +4160,17 @@ Let $x$ be the organic-apple price per pound and $y$ the almond-milk price per c
 
 State the model, then substitute and eliminate one step at a time:
 
-$$50.00 - 3.60 - 4.40 = 42.00$$
+$$50.00 - 3.60 - 4.40 = 42.00, \\qquad 43.20 - 3.60 = 39.60$$
 
-$$43.20 - 3.60 = 39.60$$
-
-$$5x + 3y = 42$$
-
-$$2x + 5y = 39.60$$
-
-$$25x + 15y = 210$$
+$$5x + 3y = 42, \\qquad 2x + 5y = 39.60, \\qquad 25x + 15y = 210$$
 
 $$6x + 15y = 118.80$$
 
 $$(25x + 15y) - (6x + 15y) = 210 - 118.80$$
 
-$$19x = 91.20$$
+$$19x = 91.20, \\qquad x = 4.80, \\qquad 5(4.80) + 3y = 42$$
 
-$$x = 4.80$$
-
-$$5(4.80) + 3y = 42$$
-
-$$24 + 3y = 42$$
-
-$$3y = 18$$
-
-$$y = 6$$
+$$24 + 3y = 42, \\qquad 3y = 18, \\qquad y = 6$$
 
 With $x = 4.80$ and $y = 6$,
 
@@ -5372,21 +4252,13 @@ Let $x$ be the fixed connection fee and $y$ the standard-plan rate per unit. The
 
 State the model, then substitute and eliminate one step at a time:
 
-$$x + 240y = 83.40$$
-
-$$x + 380y = 112.80$$
+$$x + 240y = 83.40, \\qquad x + 380y = 112.80$$
 
 $$(x + 380y) - (x + 240y) = 112.80 - 83.40$$
 
-$$140y = 29.40$$
+$$140y = 29.40, \\qquad y = 0.21, \\qquad x + 240(0.21) = 83.40$$
 
-$$y = 0.21$$
-
-$$x + 240(0.21) = 83.40$$
-
-$$x + 50.40 = 83.40$$
-
-$$x = 33$$
+$$x + 50.40 = 83.40, \\qquad x = 33$$
 
 At 240 units, usage costs $240(0.21) = 50.40$. Subtracting from $83.40$ leaves $33$. The fixed connection fee is \\$33.00 exactly, so the statement is true.`,
       `**B) Customer service's claimed rate of \\$0.24 per unit is correct.**  (false)
@@ -5395,27 +4267,17 @@ Let $x$ be the fixed connection fee and $y$ the standard-plan rate per unit. The
 
 State the model, then substitute and eliminate one step at a time:
 
-$$x + 240y = 83.40$$
-
-$$x + 380y = 112.80$$
+$$x + 240y = 83.40, \\qquad x + 380y = 112.80$$
 
 $$(x + 380y) - (x + 240y) = 112.80 - 83.40$$
 
-$$140y = 29.40$$
+$$140y = 29.40, \\qquad y = 0.21, \\qquad x + 240(0.21) = 83.40$$
 
-$$y = 0.21$$
-
-$$x + 240(0.21) = 83.40$$
-
-$$x + 50.40 = 83.40$$
-
-$$x = 33$$
+$$x + 50.40 = 83.40, \\qquad x = 33$$
 
 The bill difference is $112.80 - 83.40 = 29.40$ for $380 - 240 = 140$ extra units, so
 
-$$140y = 29.40$$
-
-$$y = 0.21$$
+$$140y = 29.40, \\qquad y = 0.21$$
 
 The actual rate is \\$0.21 per unit, not the claimed \\$0.24. Using the claimed rate on Bill 1 would have produced $33 + 240(0.24) = 33 + 57.60 = 90.60$, which is not the printed $83.40$. So the statement is false.`,
       `**C) At 280 units of usage, the standard plan costs less than \\$95.**  (true)
@@ -5424,21 +4286,13 @@ Let $x$ be the fixed connection fee and $y$ the standard-plan rate per unit. The
 
 State the model, then substitute and eliminate one step at a time:
 
-$$x + 240y = 83.40$$
-
-$$x + 380y = 112.80$$
+$$x + 240y = 83.40, \\qquad x + 380y = 112.80$$
 
 $$(x + 380y) - (x + 240y) = 112.80 - 83.40$$
 
-$$140y = 29.40$$
+$$140y = 29.40, \\qquad y = 0.21, \\qquad x + 240(0.21) = 83.40$$
 
-$$y = 0.21$$
-
-$$x + 240(0.21) = 83.40$$
-
-$$x + 50.40 = 83.40$$
-
-$$x = 33$$
+$$x + 50.40 = 83.40, \\qquad x = 33$$
 
 The recovered standard model is $33 + 0.21u$. At $u = 280$,
 
@@ -5451,27 +4305,17 @@ Let $x$ be the fixed connection fee and $y$ the standard-plan rate per unit. The
 
 State the model, then substitute and eliminate one step at a time:
 
-$$x + 240y = 83.40$$
-
-$$x + 380y = 112.80$$
+$$x + 240y = 83.40, \\qquad x + 380y = 112.80$$
 
 $$(x + 380y) - (x + 240y) = 112.80 - 83.40$$
 
-$$140y = 29.40$$
+$$140y = 29.40, \\qquad y = 0.21, \\qquad x + 240(0.21) = 83.40$$
 
-$$y = 0.21$$
-
-$$x + 240(0.21) = 83.40$$
-
-$$x + 50.40 = 83.40$$
-
-$$x = 33$$
+$$x + 50.40 = 83.40, \\qquad x = 33$$
 
 Standard is $33 + 0.21u$ and Solar is $0.29u$. Set them equal:
 
-$$33 + 0.21u = 0.29u$$
-
-$$33 = 0.08u$$
+$$33 + 0.21u = 0.29u, \\qquad 33 = 0.08u$$
 
 $$u = \\frac{33}{0.08} = 412.5$$
 
@@ -5482,21 +4326,13 @@ Let $x$ be the fixed connection fee and $y$ the standard-plan rate per unit. The
 
 State the model, then substitute and eliminate one step at a time:
 
-$$x + 240y = 83.40$$
-
-$$x + 380y = 112.80$$
+$$x + 240y = 83.40, \\qquad x + 380y = 112.80$$
 
 $$(x + 380y) - (x + 240y) = 112.80 - 83.40$$
 
-$$140y = 29.40$$
+$$140y = 29.40, \\qquad y = 0.21, \\qquad x + 240(0.21) = 83.40$$
 
-$$y = 0.21$$
-
-$$x + 240(0.21) = 83.40$$
-
-$$x + 50.40 = 83.40$$
-
-$$x = 33$$
+$$x + 50.40 = 83.40, \\qquad x = 33$$
 
 The plans meet at $u = 412.5$. Five hundred units sits above that crossover, so the lower-rate standard plan should already be cheaper. Check by substituting $u = 500$:
 
@@ -5584,33 +4420,17 @@ Let $x$ be the pasta price and $y$ the appetizer price. Table 5 is already a cle
 
 State the model, then substitute and eliminate one step at a time:
 
-$$174 + 46 = 220$$
+$$174 + 46 = 220, \\qquad \\frac{220}{1.10} = 200, \\qquad 6x + 4y = 174$$
 
-$$\\frac{220}{1.10} = 200$$
-
-$$6x + 4y = 174$$
-
-$$5x + 7y = 200$$
-
-$$3x + 2y = 87$$
-
-$$21x + 14y = 609$$
+$$5x + 7y = 200, \\qquad 3x + 2y = 87, \\qquad 21x + 14y = 609$$
 
 $$10x + 14y = 400$$
 
 $$(21x + 14y) - (10x + 14y) = 609 - 400$$
 
-$$11x = 209$$
+$$11x = 209, \\qquad x = 19, \\qquad 3(19) + 2y = 87$$
 
-$$x = 19$$
-
-$$3(19) + 2y = 87$$
-
-$$57 + 2y = 87$$
-
-$$2y = 30$$
-
-$$y = 15$$
+$$57 + 2y = 87, \\qquad 2y = 30, \\qquad y = 15$$
 
 Once Table 8's total is reconstructed and the fee removed, elimination gives $x = 19$ exactly, confirmed by both tables. A pasta dish costs \\$19, so the statement is true.
 
@@ -5621,33 +4441,17 @@ Let $x$ be the pasta price and $y$ the appetizer price. Table 5 is already a cle
 
 State the model, then substitute and eliminate one step at a time:
 
-$$174 + 46 = 220$$
+$$174 + 46 = 220, \\qquad \\frac{220}{1.10} = 200, \\qquad 6x + 4y = 174$$
 
-$$\\frac{220}{1.10} = 200$$
-
-$$6x + 4y = 174$$
-
-$$5x + 7y = 200$$
-
-$$3x + 2y = 87$$
-
-$$21x + 14y = 609$$
+$$5x + 7y = 200, \\qquad 3x + 2y = 87, \\qquad 21x + 14y = 609$$
 
 $$10x + 14y = 400$$
 
 $$(21x + 14y) - (10x + 14y) = 609 - 400$$
 
-$$11x = 209$$
+$$11x = 209, \\qquad x = 19, \\qquad 3(19) + 2y = 87$$
 
-$$x = 19$$
-
-$$3(19) + 2y = 87$$
-
-$$57 + 2y = 87$$
-
-$$2y = 30$$
-
-$$y = 15$$
+$$57 + 2y = 87, \\qquad 2y = 30, \\qquad y = 15$$
 
 An appetizer costs $y = 15$, while pasta costs $x = 19$. Since
 
@@ -5660,33 +4464,17 @@ Let $x$ be the pasta price and $y$ the appetizer price. Table 5 is already a cle
 
 State the model, then substitute and eliminate one step at a time:
 
-$$174 + 46 = 220$$
+$$174 + 46 = 220, \\qquad \\frac{220}{1.10} = 200, \\qquad 6x + 4y = 174$$
 
-$$\\frac{220}{1.10} = 200$$
-
-$$6x + 4y = 174$$
-
-$$5x + 7y = 200$$
-
-$$3x + 2y = 87$$
-
-$$21x + 14y = 609$$
+$$5x + 7y = 200, \\qquad 3x + 2y = 87, \\qquad 21x + 14y = 609$$
 
 $$10x + 14y = 400$$
 
 $$(21x + 14y) - (10x + 14y) = 609 - 400$$
 
-$$11x = 209$$
+$$11x = 209, \\qquad x = 19, \\qquad 3(19) + 2y = 87$$
 
-$$x = 19$$
-
-$$3(19) + 2y = 87$$
-
-$$57 + 2y = 87$$
-
-$$2y = 30$$
-
-$$y = 15$$
+$$57 + 2y = 87, \\qquad 2y = 30, \\qquad y = 15$$
 
 Table 8's printed total is $174 + 46 = 220$. Undo the 10% charge:
 
@@ -5703,33 +4491,17 @@ Let $x$ be the pasta price and $y$ the appetizer price. Table 5 is already a cle
 
 State the model, then substitute and eliminate one step at a time:
 
-$$174 + 46 = 220$$
+$$174 + 46 = 220, \\qquad \\frac{220}{1.10} = 200, \\qquad 6x + 4y = 174$$
 
-$$\\frac{220}{1.10} = 200$$
-
-$$6x + 4y = 174$$
-
-$$5x + 7y = 200$$
-
-$$3x + 2y = 87$$
-
-$$21x + 14y = 609$$
+$$5x + 7y = 200, \\qquad 3x + 2y = 87, \\qquad 21x + 14y = 609$$
 
 $$10x + 14y = 400$$
 
 $$(21x + 14y) - (10x + 14y) = 609 - 400$$
 
-$$11x = 209$$
+$$11x = 209, \\qquad x = 19, \\qquad 3(19) + 2y = 87$$
 
-$$x = 19$$
-
-$$3(19) + 2y = 87$$
-
-$$57 + 2y = 87$$
-
-$$2y = 30$$
-
-$$y = 15$$
+$$57 + 2y = 87, \\qquad 2y = 30, \\qquad y = 15$$
 
 Table 5's food total is already \\$174. Attach the peak multiplier:
 
@@ -5742,39 +4514,21 @@ Let $x$ be the pasta price and $y$ the appetizer price. Table 5 is already a cle
 
 State the model, then substitute and eliminate one step at a time:
 
-$$174 + 46 = 220$$
+$$174 + 46 = 220, \\qquad \\frac{220}{1.10} = 200, \\qquad 6x + 4y = 174$$
 
-$$\\frac{220}{1.10} = 200$$
-
-$$6x + 4y = 174$$
-
-$$5x + 7y = 200$$
-
-$$3x + 2y = 87$$
-
-$$21x + 14y = 609$$
+$$5x + 7y = 200, \\qquad 3x + 2y = 87, \\qquad 21x + 14y = 609$$
 
 $$10x + 14y = 400$$
 
 $$(21x + 14y) - (10x + 14y) = 609 - 400$$
 
-$$11x = 209$$
+$$11x = 209, \\qquad x = 19, \\qquad 3(19) + 2y = 87$$
 
-$$x = 19$$
-
-$$3(19) + 2y = 87$$
-
-$$57 + 2y = 87$$
-
-$$2y = 30$$
-
-$$y = 15$$
+$$57 + 2y = 87, \\qquad 2y = 30, \\qquad y = 15$$
 
 Food first, then the 10% peak charge:
 
-$$4(19) + 4(15) = 76 + 60 = 136$$
-
-$$136 \\times 1.10 = 149.60$$
+$$4(19) + 4(15) = 76 + 60 = 136, \\qquad 136 \\times 1.10 = 149.60$$
 
 Since $149.60 < 150$, the claim is true.`,
     ],
@@ -5856,31 +4610,17 @@ Let $x$ and $y$ be the unit prices of Items M and N. The cost model uses item co
 
 State the model, then substitute and eliminate one step at a time:
 
-$$110x + 80y = 4470$$
+$$110x + 80y = 4470, \\qquad 70x + 150y = 5520$$
 
-$$70x + 150y = 5520$$
+$$11x + 8y = 447, \\qquad 7x + 15y = 552$$
 
-$$11x + 8y = 447$$
-
-$$7x + 15y = 552$$
-
-$$165x + 120y = 6705$$
-
-$$56x + 120y = 4416$$
+$$165x + 120y = 6705, \\qquad 56x + 120y = 4416$$
 
 $$(165x + 120y) - (56x + 120y) = 6705 - 4416$$
 
-$$109x = 2289$$
+$$109x = 2289, \\qquad x = 21, \\qquad 11(21) + 8y = 447$$
 
-$$x = 21$$
-
-$$11(21) + 8y = 447$$
-
-$$231 + 8y = 447$$
-
-$$8y = 216$$
-
-$$y = 27$$
+$$231 + 8y = 447, \\qquad 8y = 216, \\qquad y = 27$$
 
 Elimination gives $109x = 2289$, so $x = 21$ dollars per M unit, consistent with both shipments. Item M costs \\$21 per unit, so the statement is true.`,
       `**B) Item N costs \\$30 per unit.**  (false)
@@ -5889,39 +4629,21 @@ Let $x$ and $y$ be the unit prices of Items M and N. The cost model uses item co
 
 State the model, then substitute and eliminate one step at a time:
 
-$$110x + 80y = 4470$$
+$$110x + 80y = 4470, \\qquad 70x + 150y = 5520$$
 
-$$70x + 150y = 5520$$
+$$11x + 8y = 447, \\qquad 7x + 15y = 552$$
 
-$$11x + 8y = 447$$
-
-$$7x + 15y = 552$$
-
-$$165x + 120y = 6705$$
-
-$$56x + 120y = 4416$$
+$$165x + 120y = 6705, \\qquad 56x + 120y = 4416$$
 
 $$(165x + 120y) - (56x + 120y) = 6705 - 4416$$
 
-$$109x = 2289$$
+$$109x = 2289, \\qquad x = 21, \\qquad 11(21) + 8y = 447$$
 
-$$x = 21$$
-
-$$11(21) + 8y = 447$$
-
-$$231 + 8y = 447$$
-
-$$8y = 216$$
-
-$$y = 27$$
+$$231 + 8y = 447, \\qquad 8y = 216, \\qquad y = 27$$
 
 Finish the substitution on $11x + 8y = 447$:
 
-$$11(21) + 8y = 447$$
-
-$$231 + 8y = 447$$
-
-$$8y = 216$$
+$$11(21) + 8y = 447, \\qquad 231 + 8y = 447, \\qquad 8y = 216$$
 
 $$y = 27$$
 
@@ -5932,31 +4654,17 @@ Let $x$ and $y$ be the unit prices of Items M and N. The cost model uses item co
 
 State the model, then substitute and eliminate one step at a time:
 
-$$110x + 80y = 4470$$
+$$110x + 80y = 4470, \\qquad 70x + 150y = 5520$$
 
-$$70x + 150y = 5520$$
+$$11x + 8y = 447, \\qquad 7x + 15y = 552$$
 
-$$11x + 8y = 447$$
-
-$$7x + 15y = 552$$
-
-$$165x + 120y = 6705$$
-
-$$56x + 120y = 4416$$
+$$165x + 120y = 6705, \\qquad 56x + 120y = 4416$$
 
 $$(165x + 120y) - (56x + 120y) = 6705 - 4416$$
 
-$$109x = 2289$$
+$$109x = 2289, \\qquad x = 21, \\qquad 11(21) + 8y = 447$$
 
-$$x = 21$$
-
-$$11(21) + 8y = 447$$
-
-$$231 + 8y = 447$$
-
-$$8y = 216$$
-
-$$y = 27$$
+$$231 + 8y = 447, \\qquad 8y = 216, \\qquad y = 27$$
 
 Each shipment's item count is the sum of its two columns:
 
@@ -5971,31 +4679,17 @@ Let $x$ and $y$ be the unit prices of Items M and N. The cost model uses item co
 
 State the model, then substitute and eliminate one step at a time:
 
-$$110x + 80y = 4470$$
+$$110x + 80y = 4470, \\qquad 70x + 150y = 5520$$
 
-$$70x + 150y = 5520$$
+$$11x + 8y = 447, \\qquad 7x + 15y = 552$$
 
-$$11x + 8y = 447$$
-
-$$7x + 15y = 552$$
-
-$$165x + 120y = 6705$$
-
-$$56x + 120y = 4416$$
+$$165x + 120y = 6705, \\qquad 56x + 120y = 4416$$
 
 $$(165x + 120y) - (56x + 120y) = 6705 - 4416$$
 
-$$109x = 2289$$
+$$109x = 2289, \\qquad x = 21, \\qquad 11(21) + 8y = 447$$
 
-$$x = 21$$
-
-$$11(21) + 8y = 447$$
-
-$$231 + 8y = 447$$
-
-$$8y = 216$$
-
-$$y = 27$$
+$$231 + 8y = 447, \\qquad 8y = 216, \\qquad y = 27$$
 
 Item N costs $27$ each, and no Item M enters that order, so
 
@@ -6008,31 +4702,17 @@ Let $x$ and $y$ be the unit prices of Items M and N. The cost model uses item co
 
 State the model, then substitute and eliminate one step at a time:
 
-$$110x + 80y = 4470$$
+$$110x + 80y = 4470, \\qquad 70x + 150y = 5520$$
 
-$$70x + 150y = 5520$$
+$$11x + 8y = 447, \\qquad 7x + 15y = 552$$
 
-$$11x + 8y = 447$$
-
-$$7x + 15y = 552$$
-
-$$165x + 120y = 6705$$
-
-$$56x + 120y = 4416$$
+$$165x + 120y = 6705, \\qquad 56x + 120y = 4416$$
 
 $$(165x + 120y) - (56x + 120y) = 6705 - 4416$$
 
-$$109x = 2289$$
+$$109x = 2289, \\qquad x = 21, \\qquad 11(21) + 8y = 447$$
 
-$$x = 21$$
-
-$$11(21) + 8y = 447$$
-
-$$231 + 8y = 447$$
-
-$$8y = 216$$
-
-$$y = 27$$
+$$231 + 8y = 447, \\qquad 8y = 216, \\qquad y = 27$$
 
 The cost identities are
 
@@ -6114,33 +4794,17 @@ Let $x$ and $y$ be the Standard and Premium unit prices. Job 1 is invoiced in bu
 
 State the model, then substitute and eliminate one step at a time:
 
-$$7 \\times 2 = 14$$
+$$7 \\times 2 = 14, \\qquad 7 \\times 5 = 35, \\qquad 14x + 35y = 1946$$
 
-$$7 \\times 5 = 35$$
+$$13x + 21y = 1301, \\qquad 2x + 5y = 278$$
 
-$$14x + 35y = 1946$$
-
-$$13x + 21y = 1301$$
-
-$$2x + 5y = 278$$
-
-$$42x + 105y = 5838$$
-
-$$65x + 105y = 6505$$
+$$42x + 105y = 5838, \\qquad 65x + 105y = 6505$$
 
 $$(65x + 105y) - (42x + 105y) = 6505 - 5838$$
 
-$$23x = 667$$
+$$23x = 667, \\qquad x = 29, \\qquad 2(29) + 5y = 278$$
 
-$$x = 29$$
-
-$$2(29) + 5y = 278$$
-
-$$58 + 5y = 278$$
-
-$$5y = 220$$
-
-$$y = 44$$
+$$58 + 5y = 278, \\qquad 5y = 220, \\qquad y = 44$$
 
 Elimination confirms $x = 29$ once Job 1's bundles are expanded. The original Job 1 total checks as
 
@@ -6153,41 +4817,21 @@ Let $x$ and $y$ be the Standard and Premium unit prices. Job 1 is invoiced in bu
 
 State the model, then substitute and eliminate one step at a time:
 
-$$7 \\times 2 = 14$$
+$$7 \\times 2 = 14, \\qquad 7 \\times 5 = 35, \\qquad 14x + 35y = 1946$$
 
-$$7 \\times 5 = 35$$
+$$13x + 21y = 1301, \\qquad 2x + 5y = 278$$
 
-$$14x + 35y = 1946$$
-
-$$13x + 21y = 1301$$
-
-$$2x + 5y = 278$$
-
-$$42x + 105y = 5838$$
-
-$$65x + 105y = 6505$$
+$$42x + 105y = 5838, \\qquad 65x + 105y = 6505$$
 
 $$(65x + 105y) - (42x + 105y) = 6505 - 5838$$
 
-$$23x = 667$$
+$$23x = 667, \\qquad x = 29, \\qquad 2(29) + 5y = 278$$
 
-$$x = 29$$
-
-$$2(29) + 5y = 278$$
-
-$$58 + 5y = 278$$
-
-$$5y = 220$$
-
-$$y = 44$$
+$$58 + 5y = 278, \\qquad 5y = 220, \\qquad y = 44$$
 
 Using $x = 29$ in $2x + 5y = 278$:
 
-$$2(29) + 5y = 278$$
-
-$$58 + 5y = 278$$
-
-$$5y = 220$$
+$$2(29) + 5y = 278, \\qquad 58 + 5y = 278, \\qquad 5y = 220$$
 
 $$y = 44$$
 
@@ -6198,39 +4842,21 @@ Let $x$ and $y$ be the Standard and Premium unit prices. Job 1 is invoiced in bu
 
 State the model, then substitute and eliminate one step at a time:
 
-$$7 \\times 2 = 14$$
+$$7 \\times 2 = 14, \\qquad 7 \\times 5 = 35, \\qquad 14x + 35y = 1946$$
 
-$$7 \\times 5 = 35$$
+$$13x + 21y = 1301, \\qquad 2x + 5y = 278$$
 
-$$14x + 35y = 1946$$
-
-$$13x + 21y = 1301$$
-
-$$2x + 5y = 278$$
-
-$$42x + 105y = 5838$$
-
-$$65x + 105y = 6505$$
+$$42x + 105y = 5838, \\qquad 65x + 105y = 6505$$
 
 $$(65x + 105y) - (42x + 105y) = 6505 - 5838$$
 
-$$23x = 667$$
+$$23x = 667, \\qquad x = 29, \\qquad 2(29) + 5y = 278$$
 
-$$x = 29$$
-
-$$2(29) + 5y = 278$$
-
-$$58 + 5y = 278$$
-
-$$5y = 220$$
-
-$$y = 44$$
+$$58 + 5y = 278, \\qquad 5y = 220, \\qquad y = 44$$
 
 One bundle is defined as 2 Standard + 5 Premium, so seven of them unpack as
 
-$$7 \\times 2 = 14$$
-
-$$7 \\times 5 = 35$$
+$$7 \\times 2 = 14, \\qquad 7 \\times 5 = 35$$
 
 Those are the coefficients that belong in Job 1's equation. So the statement is true.`,
       `**D) The Premium portion alone of Job 1 cost more than the entirety of Job 2.**  (true)
@@ -6239,33 +4865,17 @@ Let $x$ and $y$ be the Standard and Premium unit prices. Job 1 is invoiced in bu
 
 State the model, then substitute and eliminate one step at a time:
 
-$$7 \\times 2 = 14$$
+$$7 \\times 2 = 14, \\qquad 7 \\times 5 = 35, \\qquad 14x + 35y = 1946$$
 
-$$7 \\times 5 = 35$$
+$$13x + 21y = 1301, \\qquad 2x + 5y = 278$$
 
-$$14x + 35y = 1946$$
-
-$$13x + 21y = 1301$$
-
-$$2x + 5y = 278$$
-
-$$42x + 105y = 5838$$
-
-$$65x + 105y = 6505$$
+$$42x + 105y = 5838, \\qquad 65x + 105y = 6505$$
 
 $$(65x + 105y) - (42x + 105y) = 6505 - 5838$$
 
-$$23x = 667$$
+$$23x = 667, \\qquad x = 29, \\qquad 2(29) + 5y = 278$$
 
-$$x = 29$$
-
-$$2(29) + 5y = 278$$
-
-$$58 + 5y = 278$$
-
-$$5y = 220$$
-
-$$y = 44$$
+$$58 + 5y = 278, \\qquad 5y = 220, \\qquad y = 44$$
 
 Job 1 expands to 35 Premium units at $y = 44$, so Job 1's Premium share is
 
@@ -6278,33 +4888,17 @@ Let $x$ and $y$ be the Standard and Premium unit prices. Job 1 is invoiced in bu
 
 State the model, then substitute and eliminate one step at a time:
 
-$$7 \\times 2 = 14$$
+$$7 \\times 2 = 14, \\qquad 7 \\times 5 = 35, \\qquad 14x + 35y = 1946$$
 
-$$7 \\times 5 = 35$$
+$$13x + 21y = 1301, \\qquad 2x + 5y = 278$$
 
-$$14x + 35y = 1946$$
-
-$$13x + 21y = 1301$$
-
-$$2x + 5y = 278$$
-
-$$42x + 105y = 5838$$
-
-$$65x + 105y = 6505$$
+$$42x + 105y = 5838, \\qquad 65x + 105y = 6505$$
 
 $$(65x + 105y) - (42x + 105y) = 6505 - 5838$$
 
-$$23x = 667$$
+$$23x = 667, \\qquad x = 29, \\qquad 2(29) + 5y = 278$$
 
-$$x = 29$$
-
-$$2(29) + 5y = 278$$
-
-$$58 + 5y = 278$$
-
-$$5y = 220$$
-
-$$y = 44$$
+$$58 + 5y = 278, \\qquad 5y = 220, \\qquad y = 44$$
 
 Rebuild the quoted mix from $x = 29$ and $y = 44$:
 
@@ -6415,27 +5009,15 @@ Working from Reports 1 and 2 as the trusted pair, let $x$ be the meal-day per di
 
 State the model, then substitute and eliminate one step at a time:
 
-$$5x + 150y = 323$$
+$$5x + 150y = 323, \\qquad 3x + 250y = 245$$
 
-$$3x + 250y = 245$$
-
-$$15x + 450y = 969$$
-
-$$15x + 1250y = 1225$$
+$$15x + 450y = 969, \\qquad 15x + 1250y = 1225$$
 
 $$(15x + 1250y) - (15x + 450y) = 1225 - 969$$
 
-$$800y = 256$$
+$$800y = 256, \\qquad y = 0.32, \\qquad 5x + 150(0.32) = 323$$
 
-$$y = 0.32$$
-
-$$5x + 150(0.32) = 323$$
-
-$$5x + 48 = 323$$
-
-$$5x = 275$$
-
-$$x = 55$$
+$$5x + 48 = 323, \\qquad 5x = 275, \\qquad x = 55$$
 
 Working from Reports 1 and 2 as the trusted pair gives per diem $x = 55$. Seven meal days, ignoring miles entirely, already cost
 
@@ -6448,27 +5030,15 @@ Working from Reports 1 and 2 as the trusted pair, let $x$ be the meal-day per di
 
 State the model, then substitute and eliminate one step at a time:
 
-$$5x + 150y = 323$$
+$$5x + 150y = 323, \\qquad 3x + 250y = 245$$
 
-$$3x + 250y = 245$$
-
-$$15x + 450y = 969$$
-
-$$15x + 1250y = 1225$$
+$$15x + 450y = 969, \\qquad 15x + 1250y = 1225$$
 
 $$(15x + 1250y) - (15x + 450y) = 1225 - 969$$
 
-$$800y = 256$$
+$$800y = 256, \\qquad y = 0.32, \\qquad 5x + 150(0.32) = 323$$
 
-$$y = 0.32$$
-
-$$5x + 150(0.32) = 323$$
-
-$$5x + 48 = 323$$
-
-$$5x = 275$$
-
-$$x = 55$$
+$$5x + 48 = 323, \\qquad 5x = 275, \\qquad x = 55$$
 
 The two printed totals differ by
 
@@ -6481,27 +5051,15 @@ Working from Reports 1 and 2 as the trusted pair, let $x$ be the meal-day per di
 
 State the model, then substitute and eliminate one step at a time:
 
-$$5x + 150y = 323$$
+$$5x + 150y = 323, \\qquad 3x + 250y = 245$$
 
-$$3x + 250y = 245$$
-
-$$15x + 450y = 969$$
-
-$$15x + 1250y = 1225$$
+$$15x + 450y = 969, \\qquad 15x + 1250y = 1225$$
 
 $$(15x + 1250y) - (15x + 450y) = 1225 - 969$$
 
-$$800y = 256$$
+$$800y = 256, \\qquad y = 0.32, \\qquad 5x + 150(0.32) = 323$$
 
-$$y = 0.32$$
-
-$$5x + 150(0.32) = 323$$
-
-$$5x + 48 = 323$$
-
-$$5x = 275$$
-
-$$x = 55$$
+$$5x + 48 = 323, \\qquad 5x = 275, \\qquad x = 55$$
 
 Add the two printed totals from Reports 1 and 2:
 
@@ -6586,41 +5144,19 @@ Let $x$ and $y$ be the labor-hours required for Widgets A and B. Recover Week 2'
 
 State the model, then substitute and eliminate one step at a time:
 
-$$B = A + 8$$
+$$B = A + 8, \\qquad A + B = 58, \\qquad A + (A + 8) = 58$$
 
-$$A + B = 58$$
+$$2A + 8 = 58, \\qquad 2A = 50, \\qquad A = 25$$
 
-$$A + (A + 8) = 58$$
+$$B = 33, \\qquad 35x + 20y = 445, \\qquad 25x + 33y = 505$$
 
-$$2A + 8 = 58$$
-
-$$2A = 50$$
-
-$$A = 25$$
-
-$$B = 33$$
-
-$$35x + 20y = 445$$
-
-$$25x + 33y = 505$$
-
-$$1155x + 660y = 14685$$
-
-$$500x + 660y = 10100$$
+$$1155x + 660y = 14685, \\qquad 500x + 660y = 10100$$
 
 $$(1155x + 660y) - (500x + 660y) = 14685 - 10100$$
 
-$$655x = 4585$$
+$$655x = 4585, \\qquad x = 7, \\qquad 35(7) + 20y = 445$$
 
-$$x = 7$$
-
-$$35(7) + 20y = 445$$
-
-$$245 + 20y = 445$$
-
-$$20y = 200$$
-
-$$y = 10$$
+$$245 + 20y = 445, \\qquad 20y = 200, \\qquad y = 10$$
 
 Using Week 1 and the recovered Week 2 counts, elimination gives $x = 7$. Week 1 then rebuilds as
 
@@ -6633,49 +5169,23 @@ Let $x$ and $y$ be the labor-hours required for Widgets A and B. Recover Week 2'
 
 State the model, then substitute and eliminate one step at a time:
 
-$$B = A + 8$$
+$$B = A + 8, \\qquad A + B = 58, \\qquad A + (A + 8) = 58$$
 
-$$A + B = 58$$
+$$2A + 8 = 58, \\qquad 2A = 50, \\qquad A = 25$$
 
-$$A + (A + 8) = 58$$
+$$B = 33, \\qquad 35x + 20y = 445, \\qquad 25x + 33y = 505$$
 
-$$2A + 8 = 58$$
-
-$$2A = 50$$
-
-$$A = 25$$
-
-$$B = 33$$
-
-$$35x + 20y = 445$$
-
-$$25x + 33y = 505$$
-
-$$1155x + 660y = 14685$$
-
-$$500x + 660y = 10100$$
+$$1155x + 660y = 14685, \\qquad 500x + 660y = 10100$$
 
 $$(1155x + 660y) - (500x + 660y) = 14685 - 10100$$
 
-$$655x = 4585$$
+$$655x = 4585, \\qquad x = 7, \\qquad 35(7) + 20y = 445$$
 
-$$x = 7$$
-
-$$35(7) + 20y = 445$$
-
-$$245 + 20y = 445$$
-
-$$20y = 200$$
-
-$$y = 10$$
+$$245 + 20y = 445, \\qquad 20y = 200, \\qquad y = 10$$
 
 After $x = 7$, Week 1 gives
 
-$$35(7) + 20y = 445$$
-
-$$245 + 20y = 445$$
-
-$$20y = 200$$
+$$35(7) + 20y = 445, \\qquad 245 + 20y = 445, \\qquad 20y = 200$$
 
 $$y = 10$$
 
@@ -6686,47 +5196,23 @@ Let $x$ and $y$ be the labor-hours required for Widgets A and B. Recover Week 2'
 
 State the model, then substitute and eliminate one step at a time:
 
-$$B = A + 8$$
+$$B = A + 8, \\qquad A + B = 58, \\qquad A + (A + 8) = 58$$
 
-$$A + B = 58$$
+$$2A + 8 = 58, \\qquad 2A = 50, \\qquad A = 25$$
 
-$$A + (A + 8) = 58$$
+$$B = 33, \\qquad 35x + 20y = 445, \\qquad 25x + 33y = 505$$
 
-$$2A + 8 = 58$$
-
-$$2A = 50$$
-
-$$A = 25$$
-
-$$B = 33$$
-
-$$35x + 20y = 445$$
-
-$$25x + 33y = 505$$
-
-$$1155x + 660y = 14685$$
-
-$$500x + 660y = 10100$$
+$$1155x + 660y = 14685, \\qquad 500x + 660y = 10100$$
 
 $$(1155x + 660y) - (500x + 660y) = 14685 - 10100$$
 
-$$655x = 4585$$
+$$655x = 4585, \\qquad x = 7, \\qquad 35(7) + 20y = 445$$
 
-$$x = 7$$
-
-$$35(7) + 20y = 445$$
-
-$$245 + 20y = 445$$
-
-$$20y = 200$$
-
-$$y = 10$$
+$$245 + 20y = 445, \\qquad 20y = 200, \\qquad y = 10$$
 
 The sticky note is a small sum-and-difference system:
 
-$$B = A + 8$$
-
-$$A + B = 58$$
+$$B = A + 8, \\qquad A + B = 58$$
 
 Substitute: $A + (A + 8) = 58$, so $2A + 8 = 58$, $2A = 50$, $A = 25$, and $B = 33$. Those counts must be recovered before Week 2 can enter the labor model. So the statement is true.`,
       `**D) If Widget A's assembly time increased by 20% (Widget B's unchanged), Week 1's total labor-hours would also increase by 20%.**  (false)
@@ -6735,41 +5221,19 @@ Let $x$ and $y$ be the labor-hours required for Widgets A and B. Recover Week 2'
 
 State the model, then substitute and eliminate one step at a time:
 
-$$B = A + 8$$
+$$B = A + 8, \\qquad A + B = 58, \\qquad A + (A + 8) = 58$$
 
-$$A + B = 58$$
+$$2A + 8 = 58, \\qquad 2A = 50, \\qquad A = 25$$
 
-$$A + (A + 8) = 58$$
+$$B = 33, \\qquad 35x + 20y = 445, \\qquad 25x + 33y = 505$$
 
-$$2A + 8 = 58$$
-
-$$2A = 50$$
-
-$$A = 25$$
-
-$$B = 33$$
-
-$$35x + 20y = 445$$
-
-$$25x + 33y = 505$$
-
-$$1155x + 660y = 14685$$
-
-$$500x + 660y = 10100$$
+$$1155x + 660y = 14685, \\qquad 500x + 660y = 10100$$
 
 $$(1155x + 660y) - (500x + 660y) = 14685 - 10100$$
 
-$$655x = 4585$$
+$$655x = 4585, \\qquad x = 7, \\qquad 35(7) + 20y = 445$$
 
-$$x = 7$$
-
-$$35(7) + 20y = 445$$
-
-$$245 + 20y = 445$$
-
-$$20y = 200$$
-
-$$y = 10$$
+$$245 + 20y = 445, \\qquad 20y = 200, \\qquad y = 10$$
 
 The confirmed times are $x = 7$ and $y = 10$. The new A time is $7 \\times 1.20 = 8.4$. Week 1 would then use
 
@@ -6786,49 +5250,23 @@ Let $x$ and $y$ be the labor-hours required for Widgets A and B. Recover Week 2'
 
 State the model, then substitute and eliminate one step at a time:
 
-$$B = A + 8$$
+$$B = A + 8, \\qquad A + B = 58, \\qquad A + (A + 8) = 58$$
 
-$$A + B = 58$$
+$$2A + 8 = 58, \\qquad 2A = 50, \\qquad A = 25$$
 
-$$A + (A + 8) = 58$$
+$$B = 33, \\qquad 35x + 20y = 445, \\qquad 25x + 33y = 505$$
 
-$$2A + 8 = 58$$
-
-$$2A = 50$$
-
-$$A = 25$$
-
-$$B = 33$$
-
-$$35x + 20y = 445$$
-
-$$25x + 33y = 505$$
-
-$$1155x + 660y = 14685$$
-
-$$500x + 660y = 10100$$
+$$1155x + 660y = 14685, \\qquad 500x + 660y = 10100$$
 
 $$(1155x + 660y) - (500x + 660y) = 14685 - 10100$$
 
-$$655x = 4585$$
+$$655x = 4585, \\qquad x = 7, \\qquad 35(7) + 20y = 445$$
 
-$$x = 7$$
-
-$$35(7) + 20y = 445$$
-
-$$245 + 20y = 445$$
-
-$$20y = 200$$
-
-$$y = 10$$
+$$245 + 20y = 445, \\qquad 20y = 200, \\qquad y = 10$$
 
 Week 3 still shows 15 Widget B and 290 hours. With $x = 7$ and $y = 10$,
 
-$$7A + 10(15) = 290$$
-
-$$7A + 150 = 290$$
-
-$$7A = 140$$
+$$7A + 10(15) = 290, \\qquad 7A + 150 = 290, \\qquad 7A = 140$$
 
 $$A = 20$$
 
@@ -6939,31 +5377,17 @@ Working from North and South as the trusted pair, let $x$ and $y$ be the company
 
 State the model, then substitute and eliminate one step at a time:
 
-$$85x + 70y = 4145$$
+$$85x + 70y = 4145, \\qquad 55x + 95y = 3875$$
 
-$$55x + 95y = 3875$$
+$$17x + 14y = 829, \\qquad 11x + 19y = 775$$
 
-$$17x + 14y = 829$$
-
-$$11x + 19y = 775$$
-
-$$323x + 266y = 15751$$
-
-$$154x + 266y = 10850$$
+$$323x + 266y = 15751, \\qquad 154x + 266y = 10850$$
 
 $$(323x + 266y) - (154x + 266y) = 15751 - 10850$$
 
-$$169x = 4901$$
+$$169x = 4901, \\qquad x = 29, \\qquad 17(29) + 14y = 829$$
 
-$$x = 29$$
-
-$$17(29) + 14y = 829$$
-
-$$493 + 14y = 829$$
-
-$$14y = 336$$
-
-$$y = 24$$
+$$493 + 14y = 829, \\qquad 14y = 336, \\qquad y = 24$$
 
 Working from North and South as the trusted pair gives $x = 29$ and $y = 24$. East's counts at those prices:
 
@@ -6976,31 +5400,17 @@ Working from North and South as the trusted pair, let $x$ and $y$ be the company
 
 State the model, then substitute and eliminate one step at a time:
 
-$$85x + 70y = 4145$$
+$$85x + 70y = 4145, \\qquad 55x + 95y = 3875$$
 
-$$55x + 95y = 3875$$
+$$17x + 14y = 829, \\qquad 11x + 19y = 775$$
 
-$$17x + 14y = 829$$
-
-$$11x + 19y = 775$$
-
-$$323x + 266y = 15751$$
-
-$$154x + 266y = 10850$$
+$$323x + 266y = 15751, \\qquad 154x + 266y = 10850$$
 
 $$(323x + 266y) - (154x + 266y) = 15751 - 10850$$
 
-$$169x = 4901$$
+$$169x = 4901, \\qquad x = 29, \\qquad 17(29) + 14y = 829$$
 
-$$x = 29$$
-
-$$17(29) + 14y = 829$$
-
-$$493 + 14y = 829$$
-
-$$14y = 336$$
-
-$$y = 24$$
+$$493 + 14y = 829, \\qquad 14y = 336, \\qquad y = 24$$
 
 Using North and South as the trusted pair, the company-wide prices are $x = 29$ and $y = 24$. East sells 65 X and 50 Y, so the corrected revenue is
 
@@ -7013,31 +5423,17 @@ Working from North and South as the trusted pair, let $x$ and $y$ be the company
 
 State the model, then substitute and eliminate one step at a time:
 
-$$85x + 70y = 4145$$
+$$85x + 70y = 4145, \\qquad 55x + 95y = 3875$$
 
-$$55x + 95y = 3875$$
+$$17x + 14y = 829, \\qquad 11x + 19y = 775$$
 
-$$17x + 14y = 829$$
-
-$$11x + 19y = 775$$
-
-$$323x + 266y = 15751$$
-
-$$154x + 266y = 10850$$
+$$323x + 266y = 15751, \\qquad 154x + 266y = 10850$$
 
 $$(323x + 266y) - (154x + 266y) = 15751 - 10850$$
 
-$$169x = 4901$$
+$$169x = 4901, \\qquad x = 29, \\qquad 17(29) + 14y = 829$$
 
-$$x = 29$$
-
-$$17(29) + 14y = 829$$
-
-$$493 + 14y = 829$$
-
-$$14y = 336$$
-
-$$y = 24$$
+$$493 + 14y = 829, \\qquad 14y = 336, \\qquad y = 24$$
 
 Use the printed dashboard totals (the claim compares reported figures, not a corrected East):
 
@@ -7136,11 +5532,7 @@ $$
 Only the Type A price is at issue, so eliminate $y$. Multiplying the first equation by 19 and the second by 13 makes both hinge terms $247y$:
 
 $$
-171x + 247y = 10021.55
-$$
-
-$$
-91x + 247y = 8545.55
+171x + 247y = 10021.55, \\qquad 91x + 247y = 8545.55
 $$
 
 Subtracting the second from the first removes $y$ entirely:
@@ -8019,21 +6411,13 @@ $$
 Substituting the two figures Meridian recorded:
 
 $$
-\\text{gap} = 10260.50 - 10029.00
-$$
-
-$$
-\\text{gap} = 231.50
+\\text{gap} = 10260.50 - 10029.00, \\qquad \\text{gap} = 231.50
 $$
 
 The same two rows also pin down the fixed margins behind those totals, and rebuilding them confirms the gap instead of leaving it as a bare subtraction. Let $x$ be the profit per Fabric Roll and $y$ the profit per Yarn Spool. Q1 shipped 240 rolls and 175 spools for \\$10,029.00 of profit, and Q2 shipped 310 rolls and 90 spools for \\$10,260.50:
 
 $$
-240x + 175y = 10029.00
-$$
-
-$$
-310x + 90y = 10260.50
+240x + 175y = 10029.00, \\qquad 310x + 90y = 10260.50
 $$
 
 The least common multiple of 175 and 90 is 3,150, so multiply the first equation by 18 and the second by 35 to give both spool terms the same coefficient:
@@ -8049,11 +6433,7 @@ $$
 Subtracting the first of these from the second removes $y$ entirely:
 
 $$
-6530x = 178595.50
-$$
-
-$$
-x = \\frac{178595.50}{6530} = 27.35
+6530x = 178595.50, \\qquad x = \\frac{178595.50}{6530} = 27.35
 $$
 
 Putting that margin back into the Q1 row:
@@ -8063,11 +6443,7 @@ $$
 $$
 
 $$
-6564.00 + 175y = 10029.00
-$$
-
-$$
-175y = 3465.00
+6564.00 + 175y = 10029.00, \\qquad 175y = 3465.00
 $$
 
 $$
@@ -8385,11 +6761,7 @@ $$
 Only Alvarez's rate is needed, so eliminate $y$ using the least common multiple of 7 and 3, which is 21. Multiply Monday by 3 and Tuesday by 7:
 
 $$
-12x + 21y = 1.965
-$$
-
-$$
-63x + 21y = 6.300
+12x + 21y = 1.965, \\qquad 63x + 21y = 6.300
 $$
 
 Subtracting the first from the second:
@@ -8605,11 +6977,7 @@ $$
 Multiplying the first by 41 and the second by 13 makes both Hoodie terms $1066y$:
 
 $$
-1763x + 1066y = 40153.35
-$$
-
-$$
-715x + 1066y = 27944.15
+1763x + 1066y = 40153.35, \\qquad 715x + 1066y = 27944.15
 $$
 
 Subtracting the second from the first:
@@ -8704,11 +7072,7 @@ $$
 while 52 Hoodies are worth
 
 $$
-52(18.40) = 956.80
-$$
-
-$$
-956.80 - 954.25 = 2.55
+52(18.40) = 956.80, \\qquad 956.80 - 954.25 = 2.55
 $$
 
 The gap falls \\$2.55 short of covering 52 Hoodies, a shortfall of about a quarter of one percent, so it does just barely fail and the statement is true.`,
@@ -8969,31 +7333,19 @@ $$
 Let $x$ be the flat handling fee in dollars and $y$ the rate charged per kilogram. Shipment 1 weighed 185 kg and was billed \\$677.35, while Shipment 2 weighed 260 kg and was billed \\$913.60:
 
 $$
-x + 185y = 677.35
-$$
-
-$$
-x + 260y = 913.60
+x + 185y = 677.35, \\qquad x + 260y = 913.60
 $$
 
 Both bills carry the same flat fee, so subtracting the first from the second removes $x$:
 
 $$
-75y = 236.25
-$$
-
-$$
-y = \\frac{236.25}{75} = 3.15
+75y = 236.25, \\qquad y = \\frac{236.25}{75} = 3.15
 $$
 
 Substituting that rate back into the first bill:
 
 $$
-x + 185(3.15) = 677.35
-$$
-
-$$
-x + 582.75 = 677.35
+x + 185(3.15) = 677.35, \\qquad x + 582.75 = 677.35
 $$
 
 $$
@@ -9003,11 +7355,7 @@ $$
 A fee of \\$94.60 with a rate of \\$3.15 per kilogram reproduces both bills, which confirms the 2.2 figure is the conversion actually in use. The divisibility question then rests on the 45 kg on its own. Dividing it by seven:
 
 $$
-45 = 7(6) + 3
-$$
-
-$$
-\\frac{45}{7} \\approx 6.4286
+45 = 7(6) + 3, \\qquad \\frac{45}{7} \\approx 6.4286
 $$
 
 A remainder of 3 means the division does not come out whole, and the multiples of seven on either side are 42 and 49, with 45 sitting between them. Ninety-nine pounds converts to 45 kg, which is not a multiple of seven, so the statement is false.`,
@@ -9404,39 +7752,23 @@ $$
 $$
 
 $$
-0.0525x + 0.075x + 150 = 762
+0.0525x + 0.075x + 150 = 762, \\qquad 0.1275x + 150 = 762
 $$
 
 $$
-0.1275x + 150 = 762
-$$
-
-$$
-0.1275x = 612
-$$
-
-$$
-x = \\frac{612}{0.1275} = 4800
+0.1275x = 612, \\qquad x = \\frac{612}{0.1275} = 4800
 $$
 
 Carrying that back into the notes' relation:
 
 $$
-y = 2(4800) + 4000
-$$
-
-$$
-y = 13600
+y = 2(4800) + 4000, \\qquad y = 13600
 $$
 
 Checking those two balances against the reported return before using them:
 
 $$
-0.0525(4800) = 252
-$$
-
-$$
-0.0375(13600) = 510
+0.0525(4800) = 252, \\qquad 0.0375(13600) = 510
 $$
 
 $$
@@ -9452,11 +7784,7 @@ $$
 Substituting the recovered balances:
 
 $$
-\\frac{13600 - 4800}{4800} = \\frac{8800}{4800}
-$$
-
-$$
-\\frac{8800}{4800} = \\frac{11}{6} \\approx 1.8333
+\\frac{13600 - 4800}{4800} = \\frac{8800}{4800}, \\qquad \\frac{8800}{4800} = \\frac{11}{6} \\approx 1.8333
 $$
 
 The claim's threshold of 180% is a ratio of 1.80, and the comparison runs
@@ -9749,11 +8077,7 @@ $$
 Multiplying A's equation by 14 and B's by 5 makes both premium terms $35y$:
 
 $$
-595x + 35y = 10710
-$$
-
-$$
-235x + 35y = 4410
+595x + 35y = 10710, \\qquad 235x + 35y = 4410
 $$
 
 Subtracting:
@@ -10178,11 +8502,7 @@ Half of the 250 km gap is 125 km, and the 58 km difference is comfortably under 
 Raising both speeds by the same 20% raises their sum by 20% as well, so the individual speeds never have to be separated for this claim, but the combined speed itself has to come from the scenario. Let $x$ be Boat A's speed and $y$ Boat B's speed, both in km/h. Starting from opposite docks on the 250 km stretch and meeting after 2 hours, the two boats between them cover the whole gap:
 
 $$
-2(x + y) = 250
-$$
-
-$$
-x + y = 125
+2(x + y) = 250, \\qquad x + y = 125
 $$
 
 The second stretch fixes the speeds individually. Boat B runs its 3-hour head start plus the hour after Boat A departs, four hours in all, while Boat A runs 1 hour, and together they cover 356 km:
@@ -10194,15 +8514,7 @@ $$
 Subtracting the combined-speed equation from this one removes $x$:
 
 $$
-3y = 231
-$$
-
-$$
-y = 77
-$$
-
-$$
-x = 125 - 77 = 48
+3y = 231, \\qquad y = 77, \\qquad x = 125 - 77 = 48
 $$
 
 Scaling each speed by the same factor scales their sum by that factor:
@@ -10216,11 +8528,7 @@ $$
 $$
 
 $$
-57.6 + 92.4 = 150
-$$
-
-$$
-1.2(125) = 150 \\text{ km/h}
+57.6 + 92.4 = 150, \\qquad 1.2(125) = 150 \\text{ km/h}
 $$
 
 The time to close a fixed gap is the gap divided by the closing speed:
@@ -10232,11 +8540,7 @@ $$
 Substituting the 250 km gap and the raised closing speed:
 
 $$
-t = \\frac{250}{150}
-$$
-
-$$
-t = \\frac{5}{3} \\approx 1.6667 \\text{ hours}
+t = \\frac{250}{150}, \\qquad t = \\frac{5}{3} \\approx 1.6667 \\text{ hours}
 $$
 
 Against the 1.5 hour threshold in the claim:
@@ -10251,11 +8555,7 @@ About 1 hour and 40 minutes is still longer than 1.5 hours, so the statement is 
 Distance covered by the pair depends only on how fast they travel together, and the first scenario supplies that directly. Let $x$ be Boat A's speed and $y$ Boat B's speed, both in km/h. Setting out from opposite docks on the 250 km stretch, they meet after 2 hours, so their two runs add to the full gap:
 
 $$
-2(x + y) = 250
-$$
-
-$$
-x + y = 125
+2(x + y) = 250, \\qquad x + y = 125
 $$
 
 The 356 km stretch separates the speeds. Boat B travels its 3-hour head start plus the hour after Boat A departs, four hours in all, while Boat A travels 1 hour:
@@ -10267,15 +8567,7 @@ $$
 Subtracting the combined-speed equation from this one removes $x$:
 
 $$
-3y = 231
-$$
-
-$$
-y = \\frac{231}{3} = 77
-$$
-
-$$
-x = 125 - 77 = 48
+3y = 231, \\qquad y = \\frac{231}{3} = 77, \\qquad x = 125 - 77 = 48
 $$
 
 So Boat A runs at 48 km/h and Boat B at 77 km/h, and their speeds do add back to the combined figure:
@@ -10487,35 +8779,19 @@ $$
 Multiplying the first reduced equation by $13$ and the second by $2$ lines up the $y$ terms:
 
 $$
-39x + 26y = 6825
-$$
-
-$$
-18x + 26y = 4830
+39x + 26y = 6825, \\qquad 18x + 26y = 4830
 $$
 
 Subtracting the second from the first:
 
 $$
-21x = 1995
-$$
-
-$$
-x = 95
+21x = 1995, \\qquad x = 95
 $$
 
 Substituting into $3x + 2y = 525$:
 
 $$
-285 + 2y = 525
-$$
-
-$$
-2y = 240
-$$
-
-$$
-y = 120
+285 + 2y = 525, \\qquad 2y = 240, \\qquad y = 120
 $$
 
 So Wheat carries \\$95.00 per tonne and Barley \\$120.00 per tonne.
@@ -10529,21 +8805,13 @@ $$
 Season 1 tonnage and average:
 
 $$
-240 + 160 = 400
-$$
-
-$$
-\\frac{42000}{400} = 105
+240 + 160 = 400, \\qquad \\frac{42000}{400} = 105
 $$
 
 Season 2 tonnage and average:
 
 $$
-180 + 260 = 440
-$$
-
-$$
-\\frac{48300}{440} \\approx 109.773
+180 + 260 = 440, \\qquad \\frac{48300}{440} \\approx 109.773
 $$
 
 Comparing the two averages:
@@ -10683,11 +8951,7 @@ $$
 Expanding the right side:
 
 $$
-x - 5 = 3y - 15
-$$
-
-$$
-x = 3y - 10
+x - 5 = 3y - 15, \\qquad x = 3y - 10
 $$
 
 Nine years from now the elder will be exactly twice the younger:
@@ -10699,31 +8963,19 @@ $$
 Expanding the right side:
 
 $$
-x + 9 = 2y + 18
-$$
-
-$$
-x = 2y + 9
+x + 9 = 2y + 18, \\qquad x = 2y + 9
 $$
 
 Setting the two expressions for $x$ equal to each other:
 
 $$
-3y - 10 = 2y + 9
-$$
-
-$$
-y = 19
+3y - 10 = 2y + 9, \\qquad y = 19
 $$
 
 Substituting that back:
 
 $$
-x = 2(19) + 9
-$$
-
-$$
-x = 47
+x = 2(19) + 9, \\qquad x = 47
 $$
 
 So the elder is $47$ years old today and the younger is $19$.
@@ -10731,15 +8983,7 @@ So the elder is $47$ years old today and the younger is $19$.
 The claim asks whether a moment further back than four years had the elder exactly three times the younger. The first record places that condition five years back, and the present ages confirm it:
 
 $$
-47 - 5 = 42
-$$
-
-$$
-19 - 5 = 14
-$$
-
-$$
-3(14) = 42
+47 - 5 = 42, \\qquad 19 - 5 = 14, \\qquad 3(14) = 42
 $$
 
 Comparing that moment against the four-year threshold in the claim:
@@ -10898,29 +9142,17 @@ $$
 Subtracting that from the Order 3 equation:
 
 $$
-11.9475y = 955.80
-$$
-
-$$
-y = 80
+11.9475y = 955.80, \\qquad y = 80
 $$
 
 Substituting into the Order 1 equation:
 
 $$
-10.56x + 5.9(80) = 1052.80
+10.56x + 5.9(80) = 1052.80, \\qquad 10.56x + 472 = 1052.80
 $$
 
 $$
-10.56x + 472 = 1052.80
-$$
-
-$$
-10.56x = 580.80
-$$
-
-$$
-x = 55
+10.56x = 580.80, \\qquad x = 55
 $$
 
 So Product A costs \\$55.00 wholesale and Product B costs \\$80.00 wholesale.
@@ -10983,25 +9215,13 @@ $$
 Subtracting that from the Order 3 equation:
 
 $$
-11.9475y = 955.80
-$$
-
-$$
-y = 80
+11.9475y = 955.80, \\qquad y = 80
 $$
 
 Substituting into the Order 1 equation:
 
 $$
-10.56x + 472 = 1052.80
-$$
-
-$$
-10.56x = 580.80
-$$
-
-$$
-x = 55
+10.56x + 472 = 1052.80, \\qquad 10.56x = 580.80, \\qquad x = 55
 $$
 
 So Product A costs \\$55.00 wholesale and Product B costs \\$80.00 wholesale.
@@ -11064,25 +9284,13 @@ $$
 Subtracting from the Order 3 equation:
 
 $$
-11.9475y = 955.80
-$$
-
-$$
-y = 80
+11.9475y = 955.80, \\qquad y = 80
 $$
 
 Substituting back:
 
 $$
-10.56x + 472 = 1052.80
-$$
-
-$$
-10.56x = 580.80
-$$
-
-$$
-x = 55
+10.56x + 472 = 1052.80, \\qquad 10.56x = 580.80, \\qquad x = 55
 $$
 
 So Product A costs \\$55.00 wholesale and Product B costs \\$80.00 wholesale.
@@ -11096,11 +9304,7 @@ $$
 The retail ratio uses each product's marked-up price:
 
 $$
-1.18(80) = 94.40
-$$
-
-$$
-1.32(55) = 72.60
+1.18(80) = 94.40, \\qquad 1.32(55) = 72.60
 $$
 
 $$
@@ -11232,45 +9436,25 @@ $$
 The Ravens took 7 wins and 6 draws for 8 points fewer than the Falcons, so their total is
 
 $$
-75 - 8 = 67
-$$
-
-$$
-7x + 6y = 67
+75 - 8 = 67, \\qquad 7x + 6y = 67
 $$
 
 Multiplying the first equation by $3$ and the second by $2$ lines up the $y$ terms:
 
 $$
-27x + 12y = 225
-$$
-
-$$
-14x + 12y = 134
+27x + 12y = 225, \\qquad 14x + 12y = 134
 $$
 
 Subtracting the second from the first:
 
 $$
-13x = 91
-$$
-
-$$
-x = 7
+13x = 91, \\qquad x = 7
 $$
 
 Substituting into $9x + 4y = 75$:
 
 $$
-63 + 4y = 75
-$$
-
-$$
-4y = 12
-$$
-
-$$
-y = 3
+63 + 4y = 75, \\qquad 4y = 12, \\qquad y = 3
 $$
 
 So the league pays 7 points for a win and 3 points for a draw, which reproduces both printed totals.
@@ -11313,45 +9497,25 @@ $$
 The Ravens' record of 7 wins and 6 draws produced 8 points fewer, that is
 
 $$
-75 - 8 = 67
-$$
-
-$$
-7x + 6y = 67
+75 - 8 = 67, \\qquad 7x + 6y = 67
 $$
 
 Multiplying the first by $3$ and the second by $2$:
 
 $$
-27x + 12y = 225
-$$
-
-$$
-14x + 12y = 134
+27x + 12y = 225, \\qquad 14x + 12y = 134
 $$
 
 Subtracting:
 
 $$
-13x = 91
-$$
-
-$$
-x = 7
+13x = 91, \\qquad x = 7
 $$
 
 Substituting into $9x + 4y = 75$:
 
 $$
-63 + 4y = 75
-$$
-
-$$
-4y = 12
-$$
-
-$$
-y = 3
+63 + 4y = 75, \\qquad 4y = 12, \\qquad y = 3
 $$
 
 So a win is worth 7 points and a draw 3 points.
@@ -11400,45 +9564,25 @@ $$
 The Ravens' 7 wins and 6 draws gave 8 points fewer, which is
 
 $$
-75 - 8 = 67
-$$
-
-$$
-7x + 6y = 67
+75 - 8 = 67, \\qquad 7x + 6y = 67
 $$
 
 Multiplying the first equation by $3$ and the second by $2$ to match the $y$ terms:
 
 $$
-27x + 12y = 225
-$$
-
-$$
-14x + 12y = 134
+27x + 12y = 225, \\qquad 14x + 12y = 134
 $$
 
 Subtracting the second from the first:
 
 $$
-13x = 91
-$$
-
-$$
-x = 7
+13x = 91, \\qquad x = 7
 $$
 
 Substituting into $9x + 4y = 75$:
 
 $$
-63 + 4y = 75
-$$
-
-$$
-4y = 12
-$$
-
-$$
-y = 3
+63 + 4y = 75, \\qquad 4y = 12, \\qquad y = 3
 $$
 
 So a win pays 7 points and a draw pays 3 points.
@@ -11605,39 +9749,23 @@ $$
 Dividing by $5$:
 
 $$
-x + 3y = 41.8
-$$
-
-$$
-x = 41.8 - 3y
+x + 3y = 41.8, \\qquad x = 41.8 - 3y
 $$
 
 Substituting that expression into $3x + 2y = 45.6$:
 
 $$
-3(41.8 - 3y) + 2y = 45.6
+3(41.8 - 3y) + 2y = 45.6, \\qquad 125.4 - 9y + 2y = 45.6
 $$
 
 $$
-125.4 - 9y + 2y = 45.6
-$$
-
-$$
--7y = -79.8
-$$
-
-$$
-y = 11.4
+-7y = -79.8, \\qquad y = 11.4
 $$
 
 Substituting back:
 
 $$
-x = 41.8 - 3(11.4)
-$$
-
-$$
-x = 41.8 - 34.2 = 7.6
+x = 41.8 - 3(11.4), \\qquad x = 41.8 - 34.2 = 7.6
 $$
 
 So Metal A is 7.6 kg/L and Metal B is 11.4 kg/L.
@@ -11696,29 +9824,17 @@ $$
 Dividing by $5$:
 
 $$
-x + 3y = 41.8
-$$
-
-$$
-x = 41.8 - 3y
+x + 3y = 41.8, \\qquad x = 41.8 - 3y
 $$
 
 Substituting into $3x + 2y = 45.6$:
 
 $$
-3(41.8 - 3y) + 2y = 45.6
+3(41.8 - 3y) + 2y = 45.6, \\qquad 125.4 - 9y + 2y = 45.6
 $$
 
 $$
-125.4 - 9y + 2y = 45.6
-$$
-
-$$
--7y = -79.8
-$$
-
-$$
-y = 11.4
+-7y = -79.8, \\qquad y = 11.4
 $$
 
 Substituting back:
@@ -11783,29 +9899,17 @@ $$
 Dividing by $5$:
 
 $$
-x + 3y = 41.8
-$$
-
-$$
-x = 41.8 - 3y
+x + 3y = 41.8, \\qquad x = 41.8 - 3y
 $$
 
 Substituting into $3x + 2y = 45.6$:
 
 $$
-3(41.8 - 3y) + 2y = 45.6
+3(41.8 - 3y) + 2y = 45.6, \\qquad 125.4 - 9y + 2y = 45.6
 $$
 
 $$
-125.4 - 9y + 2y = 45.6
-$$
-
-$$
--7y = -79.8
-$$
-
-$$
-y = 11.4
+-7y = -79.8, \\qquad y = 11.4
 $$
 
 Substituting back:
@@ -11825,11 +9929,7 @@ $$
 Substituting the recovered densities:
 
 $$
-17(7.6) = 129.2
-$$
-
-$$
-23(11.4) = 262.2
+17(7.6) = 129.2, \\qquad 23(11.4) = 262.2
 $$
 
 $$
@@ -11970,21 +10070,13 @@ $$
 Client 1 holds \\$150,000 more and pays \\$2,400 more. Since every client pays the same retainer, that identical $y$ cancels out of the difference:
 
 $$
-150000x = 2400
-$$
-
-$$
-x = \\frac{2400}{150000} = 0.016
+150000x = 2400, \\qquad x = \\frac{2400}{150000} = 0.016
 $$
 
 Substituting that rate into Client 2's equation:
 
 $$
-600000(0.016) + y = 10800
-$$
-
-$$
-9600 + y = 10800
+600000(0.016) + y = 10800, \\qquad 9600 + y = 10800
 $$
 
 $$
@@ -12150,45 +10242,25 @@ $$
 Dividing each by $100$:
 
 $$
-5x + 3y = 88.8
-$$
-
-$$
-2x + 7y = 126
+5x + 3y = 88.8, \\qquad 2x + 7y = 126
 $$
 
 Multiplying the first by $7$ and the second by $3$ lines up the $y$ terms:
 
 $$
-35x + 21y = 621.6
-$$
-
-$$
-6x + 21y = 378
+35x + 21y = 621.6, \\qquad 6x + 21y = 378
 $$
 
 Subtracting the second from the first:
 
 $$
-29x = 243.6
-$$
-
-$$
-x = 8.4
+29x = 243.6, \\qquad x = 8.4
 $$
 
 Substituting into $2x + 7y = 126$:
 
 $$
-16.8 + 7y = 126
-$$
-
-$$
-7y = 109.2
-$$
-
-$$
-y = 15.6
+16.8 + 7y = 126, \\qquad 7y = 109.2, \\qquad y = 15.6
 $$
 
 So Suspension A carries 8.4 mg/mL and Suspension B carries 15.6 mg/mL.
@@ -12202,11 +10274,7 @@ $$
 Substituting the recovered concentrations:
 
 $$
-500(8.4) = 4200
-$$
-
-$$
-600(15.6) = 9360
+500(8.4) = 4200, \\qquad 600(15.6) = 9360
 $$
 
 $$
@@ -12239,45 +10307,25 @@ $$
 Dividing both by $100$:
 
 $$
-5x + 3y = 88.8
-$$
-
-$$
-2x + 7y = 126
+5x + 3y = 88.8, \\qquad 2x + 7y = 126
 $$
 
 Multiplying the first by $7$ and the second by $3$:
 
 $$
-35x + 21y = 621.6
-$$
-
-$$
-6x + 21y = 378
+35x + 21y = 621.6, \\qquad 6x + 21y = 378
 $$
 
 Subtracting:
 
 $$
-29x = 243.6
-$$
-
-$$
-x = 8.4
+29x = 243.6, \\qquad x = 8.4
 $$
 
 Substituting into $2x + 7y = 126$:
 
 $$
-16.8 + 7y = 126
-$$
-
-$$
-7y = 109.2
-$$
-
-$$
-y = 15.6
+16.8 + 7y = 126, \\qquad 7y = 109.2, \\qquad y = 15.6
 $$
 
 So Suspension A carries 8.4 mg/mL and Suspension B carries 15.6 mg/mL.
@@ -12324,45 +10372,25 @@ $$
 Dividing both by $100$:
 
 $$
-5x + 3y = 88.8
-$$
-
-$$
-2x + 7y = 126
+5x + 3y = 88.8, \\qquad 2x + 7y = 126
 $$
 
 Multiplying the first by $7$ and the second by $3$:
 
 $$
-35x + 21y = 621.6
-$$
-
-$$
-6x + 21y = 378
+35x + 21y = 621.6, \\qquad 6x + 21y = 378
 $$
 
 Subtracting the second from the first:
 
 $$
-29x = 243.6
-$$
-
-$$
-x = 8.4
+29x = 243.6, \\qquad x = 8.4
 $$
 
 Substituting into $2x + 7y = 126$:
 
 $$
-16.8 + 7y = 126
-$$
-
-$$
-7y = 109.2
-$$
-
-$$
-y = 15.6
+16.8 + 7y = 126, \\qquad 7y = 109.2, \\qquad y = 15.6
 $$
 
 So Suspension A carries 8.4 mg/mL and Suspension B carries 15.6 mg/mL, which is what makes the recorded totals consistent.
@@ -12508,11 +10536,7 @@ Let $x$ be the price of one stud and $y$ the price of one drywall sheet, in doll
 Job 1 needed 200 usable studs and 150 usable sheets:
 
 $$
-200(1.12) = 224
-$$
-
-$$
-150(1.08) = 162
+200(1.12) = 224, \\qquad 150(1.08) = 162
 $$
 
 $$
@@ -12522,11 +10546,7 @@ $$
 Job 2 needed 350 usable studs and 175 usable sheets:
 
 $$
-350(1.12) = 392
-$$
-
-$$
-175(1.08) = 189
+350(1.12) = 392, \\qquad 175(1.08) = 189
 $$
 
 $$
@@ -12542,29 +10562,17 @@ $$
 Subtracting the Job 2 equation:
 
 $$
-94.5y = 3591
-$$
-
-$$
-y = 38
+94.5y = 3591, \\qquad y = 38
 $$
 
 Substituting into the Job 1 equation:
 
 $$
-224x + 162(38) = 7164
+224x + 162(38) = 7164, \\qquad 224x + 6156 = 7164
 $$
 
 $$
-224x + 6156 = 7164
-$$
-
-$$
-224x = 1008
-$$
-
-$$
-x = 4.50
+224x = 1008, \\qquad x = 4.50
 $$
 
 So a stud costs \\$4.50 and a drywall sheet costs \\$38.00.
@@ -12572,11 +10580,7 @@ So a stud costs \\$4.50 and a drywall sheet costs \\$38.00.
 Job 2's usable-material cost prices only the 350 studs and 175 sheets that the job actually consumes:
 
 $$
-350(4.50) = 1575
-$$
-
-$$
-175(38) = 6650
+350(4.50) = 1575, \\qquad 175(38) = 6650
 $$
 
 $$
@@ -12603,11 +10607,7 @@ Let $x$ be the price of one stud and $y$ the price of one drywall sheet, in doll
 Job 1's usable 200 studs and 150 sheets become
 
 $$
-200(1.12) = 224
-$$
-
-$$
-150(1.08) = 162
+200(1.12) = 224, \\qquad 150(1.08) = 162
 $$
 
 $$
@@ -12617,11 +10617,7 @@ $$
 Job 2's usable 350 studs and 175 sheets become
 
 $$
-350(1.12) = 392
-$$
-
-$$
-175(1.08) = 189
+350(1.12) = 392, \\qquad 175(1.08) = 189
 $$
 
 $$
@@ -12637,25 +10633,13 @@ $$
 Subtracting the Job 2 equation:
 
 $$
-94.5y = 3591
-$$
-
-$$
-y = 38
+94.5y = 3591, \\qquad y = 38
 $$
 
 Substituting back:
 
 $$
-224x + 6156 = 7164
-$$
-
-$$
-224x = 1008
-$$
-
-$$
-x = 4.50
+224x + 6156 = 7164, \\qquad 224x = 1008, \\qquad x = 4.50
 $$
 
 So a stud costs \\$4.50 and a sheet costs \\$38.00.
@@ -12686,11 +10670,7 @@ Let $x$ be the price of one stud and $y$ the price of one drywall sheet, in doll
 Job 1's usable 200 studs and 150 sheets are billed as
 
 $$
-200(1.12) = 224
-$$
-
-$$
-150(1.08) = 162
+200(1.12) = 224, \\qquad 150(1.08) = 162
 $$
 
 $$
@@ -12700,11 +10680,7 @@ $$
 Job 2's usable 350 studs and 175 sheets are billed as
 
 $$
-350(1.12) = 392
-$$
-
-$$
-175(1.08) = 189
+350(1.12) = 392, \\qquad 175(1.08) = 189
 $$
 
 $$
@@ -12720,29 +10696,17 @@ $$
 Subtracting the Job 2 equation:
 
 $$
-94.5y = 3591
-$$
-
-$$
-y = 38
+94.5y = 3591, \\qquad y = 38
 $$
 
 Substituting into the Job 1 equation:
 
 $$
-224x + 162(38) = 7164
+224x + 162(38) = 7164, \\qquad 224x + 6156 = 7164
 $$
 
 $$
-224x + 6156 = 7164
-$$
-
-$$
-224x = 1008
-$$
-
-$$
-x = 4.50
+224x = 1008, \\qquad x = 4.50
 $$
 
 So a stud costs \\$4.50 and a drywall sheet costs \\$38.00.
@@ -12907,21 +10871,13 @@ $$
 Both equations carry the same single $y$, so subtracting the first from the second removes the offset:
 
 $$
-19.3x = 67.55
-$$
-
-$$
-x = 3.50
+19.3x = 67.55, \\qquad x = 3.50
 $$
 
 Substituting into the Point 1 equation:
 
 $$
-12.4(3.50) + y = 56.90
-$$
-
-$$
-43.4 + y = 56.90
+12.4(3.50) + y = 56.90, \\qquad 43.4 + y = 56.90
 $$
 
 $$
@@ -12986,21 +10942,13 @@ $$
 Subtracting the first from the second cancels the offset:
 
 $$
-19.3x = 67.55
-$$
-
-$$
-x = 3.50
+19.3x = 67.55, \\qquad x = 3.50
 $$
 
 Substituting back:
 
 $$
-43.4 + y = 56.90
-$$
-
-$$
-y = 13.50
+43.4 + y = 56.90, \\qquad y = 13.50
 $$
 
 So the curve scales the reading by 3.50 and adds an offset of 13.50, which reproduces both certified points:
@@ -13057,21 +11005,13 @@ $$
 Subtracting the first from the second eliminates the offset:
 
 $$
-19.3x = 67.55
-$$
-
-$$
-x = 3.50
+19.3x = 67.55, \\qquad x = 3.50
 $$
 
 Substituting into the Point 1 equation:
 
 $$
-12.4(3.50) + y = 56.90
-$$
-
-$$
-43.4 + y = 56.90
+12.4(3.50) + y = 56.90, \\qquad 43.4 + y = 56.90
 $$
 
 $$
@@ -13202,11 +11142,7 @@ Let $x$ be Coffee's price per kilogram and $y$ be Cocoa's price per kilogram, in
 Shipment 1 carried 520 kg mixed 3:2, so its two quantities are
 
 $$
-\\frac{3}{5}(520) = 312
-$$
-
-$$
-\\frac{2}{5}(520) = 208
+\\frac{3}{5}(520) = 312, \\qquad \\frac{2}{5}(520) = 208
 $$
 
 $$
@@ -13216,11 +11152,7 @@ $$
 Shipment 2 carried 800 kg mixed 5:3, so its two quantities are
 
 $$
-\\frac{5}{8}(800) = 500
-$$
-
-$$
-\\frac{3}{8}(800) = 300
+\\frac{5}{8}(800) = 500, \\qquad \\frac{3}{8}(800) = 300
 $$
 
 $$
@@ -13230,11 +11162,7 @@ $$
 Dividing the first equation by $8$ and the second by $100$:
 
 $$
-39x + 26y = 367.9
-$$
-
-$$
-5x + 3y = 45.55
+39x + 26y = 367.9, \\qquad 5x + 3y = 45.55
 $$
 
 Solving the second for $x$:
@@ -13250,11 +11178,7 @@ $$
 $$
 
 $$
-355.29 - 23.4y + 26y = 367.9
-$$
-
-$$
-2.6y = 12.61
+355.29 - 23.4y + 26y = 367.9, \\qquad 2.6y = 12.61
 $$
 
 $$
@@ -13295,11 +11219,7 @@ Let $x$ be Coffee's price per kilogram and $y$ be Cocoa's price per kilogram, in
 Shipment 1's 520 kg at 3:2 splits into
 
 $$
-\\frac{3}{5}(520) = 312
-$$
-
-$$
-\\frac{2}{5}(520) = 208
+\\frac{3}{5}(520) = 312, \\qquad \\frac{2}{5}(520) = 208
 $$
 
 $$
@@ -13309,11 +11229,7 @@ $$
 Shipment 2's 800 kg at 5:3 splits into
 
 $$
-\\frac{5}{8}(800) = 500
-$$
-
-$$
-\\frac{3}{8}(800) = 300
+\\frac{5}{8}(800) = 500, \\qquad \\frac{3}{8}(800) = 300
 $$
 
 $$
@@ -13323,11 +11239,7 @@ $$
 Dividing the first by $8$ and the second by $100$:
 
 $$
-39x + 26y = 367.9
-$$
-
-$$
-5x + 3y = 45.55
+39x + 26y = 367.9, \\qquad 5x + 3y = 45.55
 $$
 
 From the second equation:
@@ -13343,19 +11255,11 @@ $$
 $$
 
 $$
-355.29 - 23.4y + 26y = 367.9
+355.29 - 23.4y + 26y = 367.9, \\qquad 2.6y = 12.61
 $$
 
 $$
-2.6y = 12.61
-$$
-
-$$
-y = 4.85
-$$
-
-$$
-x = 9.11 - 2.91 = 6.20
+y = 4.85, \\qquad x = 9.11 - 2.91 = 6.20
 $$
 
 So Coffee costs \\$6.20 per kg and Cocoa \\$4.85 per kg.
@@ -13369,11 +11273,7 @@ $$
 Substituting the recovered prices:
 
 $$
-400(6.20) = 2480
-$$
-
-$$
-400(4.85) = 1940
+400(6.20) = 2480, \\qquad 400(4.85) = 1940
 $$
 
 $$
@@ -13394,11 +11294,7 @@ Let $x$ be Coffee's price per kilogram and $y$ be Cocoa's price per kilogram, in
 Shipment 1's 520 kg mixed 3:2 gives
 
 $$
-\\frac{3}{5}(520) = 312
-$$
-
-$$
-\\frac{2}{5}(520) = 208
+\\frac{3}{5}(520) = 312, \\qquad \\frac{2}{5}(520) = 208
 $$
 
 $$
@@ -13408,11 +11304,7 @@ $$
 Shipment 2's 800 kg mixed 5:3 gives
 
 $$
-\\frac{5}{8}(800) = 500
-$$
-
-$$
-\\frac{3}{8}(800) = 300
+\\frac{5}{8}(800) = 500, \\qquad \\frac{3}{8}(800) = 300
 $$
 
 $$
@@ -13422,11 +11314,7 @@ $$
 Dividing the first by $8$ and the second by $100$:
 
 $$
-39x + 26y = 367.9
-$$
-
-$$
-5x + 3y = 45.55
+39x + 26y = 367.9, \\qquad 5x + 3y = 45.55
 $$
 
 Solving the second for $x$:
@@ -13442,19 +11330,11 @@ $$
 $$
 
 $$
-355.29 - 23.4y + 26y = 367.9
+355.29 - 23.4y + 26y = 367.9, \\qquad 2.6y = 12.61
 $$
 
 $$
-2.6y = 12.61
-$$
-
-$$
-y = 4.85
-$$
-
-$$
-x = 9.11 - 2.91 = 6.20
+y = 4.85, \\qquad x = 9.11 - 2.91 = 6.20
 $$
 
 So Coffee costs \\$6.20 per kg and Cocoa \\$4.85 per kg.
@@ -13462,21 +11342,13 @@ So Coffee costs \\$6.20 per kg and Cocoa \\$4.85 per kg.
 Adding the tonnage of each commodity across both shipments:
 
 $$
-312 + 500 = 812
-$$
-
-$$
-208 + 300 = 508
+312 + 500 = 812, \\qquad 208 + 300 = 508
 $$
 
 Pricing each total:
 
 $$
-812(6.20) = 5034.40
-$$
-
-$$
-508(4.85) = 2463.80
+812(6.20) = 5034.40, \\qquad 508(4.85) = 2463.80
 $$
 
 Those two figures add back to the two invoices, which confirms the split:
@@ -13503,11 +11375,7 @@ Let $x$ be Coffee's price per kilogram and $y$ be Cocoa's price per kilogram, in
 Shipment 1's 520 kg at a 3:2 mix means
 
 $$
-\\frac{3}{5}(520) = 312
-$$
-
-$$
-\\frac{2}{5}(520) = 208
+\\frac{3}{5}(520) = 312, \\qquad \\frac{2}{5}(520) = 208
 $$
 
 $$
@@ -13517,11 +11385,7 @@ $$
 Shipment 2's 800 kg at a 5:3 mix means
 
 $$
-\\frac{5}{8}(800) = 500
-$$
-
-$$
-\\frac{3}{8}(800) = 300
+\\frac{5}{8}(800) = 500, \\qquad \\frac{3}{8}(800) = 300
 $$
 
 $$
@@ -13531,11 +11395,7 @@ $$
 Dividing the first by $8$ and the second by $100$:
 
 $$
-39x + 26y = 367.9
-$$
-
-$$
-5x + 3y = 45.55
+39x + 26y = 367.9, \\qquad 5x + 3y = 45.55
 $$
 
 From the second equation:
@@ -13551,19 +11411,11 @@ $$
 $$
 
 $$
-355.29 - 23.4y + 26y = 367.9
+355.29 - 23.4y + 26y = 367.9, \\qquad 2.6y = 12.61
 $$
 
 $$
-2.6y = 12.61
-$$
-
-$$
-y = 4.85
-$$
-
-$$
-x = 9.11 - 2.91 = 6.20
+y = 4.85, \\qquad x = 9.11 - 2.91 = 6.20
 $$
 
 So Coffee costs \\$6.20 per kg and Cocoa \\$4.85 per kg.
@@ -13707,35 +11559,19 @@ $$
 Multiplying the first equation by $9$ and the second by $6.2$ lines up the $y$ terms:
 
 $$
-76.5x + 55.8y = 3452.4
-$$
-
-$$
-31x + 55.8y = 1996.4
+76.5x + 55.8y = 3452.4, \\qquad 31x + 55.8y = 1996.4
 $$
 
 Subtracting the second from the first:
 
 $$
-45.5x = 1456
-$$
-
-$$
-x = 32
+45.5x = 1456, \\qquad x = 32
 $$
 
 Substituting into $5x + 9y = 322$:
 
 $$
-160 + 9y = 322
-$$
-
-$$
-9y = 162
-$$
-
-$$
-y = 18
+160 + 9y = 322, \\qquad 9y = 162, \\qquad y = 18
 $$
 
 So the Truck burns 32.0 L per 100 km and the Van 18.0 L per 100 km.
@@ -13743,15 +11579,7 @@ So the Truck burns 32.0 L per 100 km and the Van 18.0 L per 100 km.
 Route 3's Truck leg of 155.3 miles converts to about 250 km, which is 2.5 hundreds of kilometres, and its Van leg of 400 km is 4 hundreds of kilometres:
 
 $$
-2.5(32) = 80
-$$
-
-$$
-4(18) = 72
-$$
-
-$$
-80 + 72 = 152
+2.5(32) = 80, \\qquad 4(18) = 72, \\qquad 80 + 72 = 152
 $$
 
 Against the recorded 155.0 L the shortfall is
@@ -13792,35 +11620,19 @@ $$
 Multiplying the first by $9$ and the second by $6.2$:
 
 $$
-76.5x + 55.8y = 3452.4
-$$
-
-$$
-31x + 55.8y = 1996.4
+76.5x + 55.8y = 3452.4, \\qquad 31x + 55.8y = 1996.4
 $$
 
 Subtracting:
 
 $$
-45.5x = 1456
-$$
-
-$$
-x = 32
+45.5x = 1456, \\qquad x = 32
 $$
 
 Substituting into $5x + 9y = 322$:
 
 $$
-160 + 9y = 322
-$$
-
-$$
-9y = 162
-$$
-
-$$
-y = 18
+160 + 9y = 322, \\qquad 9y = 162, \\qquad y = 18
 $$
 
 So the Truck burns 32.0 L per 100 km and the Van 18.0 L per 100 km.
@@ -13828,15 +11640,7 @@ So the Truck burns 32.0 L per 100 km and the Van 18.0 L per 100 km.
 In the hypothetical the Truck still covers 850 km, which is 8.5 hundreds of kilometres, while the Van covers 900 km, which is 9 hundreds of kilometres:
 
 $$
-8.5(32) = 272
-$$
-
-$$
-9(18) = 162
-$$
-
-$$
-272 + 162 = 434
+8.5(32) = 272, \\qquad 9(18) = 162, \\qquad 272 + 162 = 434
 $$
 
 Comparing that total with the threshold in the claim:
@@ -13868,35 +11672,19 @@ $$
 Multiplying the first by $9$ and the second by $6.2$ so the $y$ terms match:
 
 $$
-76.5x + 55.8y = 3452.4
-$$
-
-$$
-31x + 55.8y = 1996.4
+76.5x + 55.8y = 3452.4, \\qquad 31x + 55.8y = 1996.4
 $$
 
 Subtracting the second from the first:
 
 $$
-45.5x = 1456
-$$
-
-$$
-x = 32
+45.5x = 1456, \\qquad x = 32
 $$
 
 Substituting into $5x + 9y = 322$:
 
 $$
-160 + 9y = 322
-$$
-
-$$
-9y = 162
-$$
-
-$$
-y = 18
+160 + 9y = 322, \\qquad 9y = 162, \\qquad y = 18
 $$
 
 So the Truck burns 32.0 L per 100 km and the Van 18.0 L per 100 km.
@@ -13910,11 +11698,7 @@ $$
 which is 14.7 hundreds of kilometres. The two separate full-distance runs would use
 
 $$
-14.7(32) = 470.4
-$$
-
-$$
-14.7(18) = 264.6
+14.7(32) = 470.4, \\qquad 14.7(18) = 264.6
 $$
 
 $$
@@ -14047,35 +11831,19 @@ $$
 Adding the two equations:
 
 $$
-450x + 450y = 5400
-$$
-
-$$
-x + y = 12
+450x + 450y = 5400, \\qquad x + y = 12
 $$
 
 Subtracting the first from the second:
 
 $$
--90x + 90y = 108
-$$
-
-$$
-y - x = 1.2
+-90x + 90y = 108, \\qquad y - x = 1.2
 $$
 
 Substituting $y = x + 1.2$ into $x + y = 12$:
 
 $$
-x + (x + 1.2) = 12
-$$
-
-$$
-2x = 10.8
-$$
-
-$$
-x = 5.4
+x + (x + 1.2) = 12, \\qquad 2x = 10.8, \\qquad x = 5.4
 $$
 
 $$
@@ -14128,35 +11896,19 @@ $$
 Adding the equations:
 
 $$
-450x + 450y = 5400
-$$
-
-$$
-x + y = 12
+450x + 450y = 5400, \\qquad x + y = 12
 $$
 
 Subtracting the first from the second:
 
 $$
--90x + 90y = 108
-$$
-
-$$
-y - x = 1.2
+-90x + 90y = 108, \\qquad y - x = 1.2
 $$
 
 Substituting into $x + y = 12$:
 
 $$
-2x + 1.2 = 12
-$$
-
-$$
-x = 5.4
-$$
-
-$$
-y = 6.6
+2x + 1.2 = 12, \\qquad x = 5.4, \\qquad y = 6.6
 $$
 
 So Bonds earn $5.4\\%$ and Equities $6.6\\%$.
@@ -14202,35 +11954,19 @@ $$
 Adding the two equations:
 
 $$
-450x + 450y = 5400
-$$
-
-$$
-x + y = 12
+450x + 450y = 5400, \\qquad x + y = 12
 $$
 
 Subtracting the first from the second:
 
 $$
--90x + 90y = 108
-$$
-
-$$
-y - x = 1.2
+-90x + 90y = 108, \\qquad y - x = 1.2
 $$
 
 Substituting $y = x + 1.2$:
 
 $$
-2x + 1.2 = 12
-$$
-
-$$
-2x = 10.8
-$$
-
-$$
-x = 5.4
+2x + 1.2 = 12, \\qquad 2x = 10.8, \\qquad x = 5.4
 $$
 
 $$
@@ -14376,21 +12112,13 @@ $$
 Both carry the same single fee, so subtracting the first from the second removes it:
 
 $$
-125y = 585
-$$
-
-$$
-y = 4.68
+125y = 585, \\qquad y = 4.68
 $$
 
 Substituting into the Auto equation:
 
 $$
-x + 85(4.68) = 612.50
-$$
-
-$$
-x + 397.80 = 612.50
+x + 85(4.68) = 612.50, \\qquad x + 397.80 = 612.50
 $$
 
 $$
@@ -14437,21 +12165,13 @@ $$
 Subtracting the first from the second cancels the fee:
 
 $$
-125y = 585
-$$
-
-$$
-y = 4.68
+125y = 585, \\qquad y = 4.68
 $$
 
 Substituting back into the Auto equation:
 
 $$
-x + 397.80 = 612.50
-$$
-
-$$
-x = 214.70
+x + 397.80 = 612.50, \\qquad x = 214.70
 $$
 
 So the fixed fee is \\$214.70 and the rate is \\$4.68 per \\$1,000.
@@ -14510,21 +12230,13 @@ $$
 Subtracting the first from the second:
 
 $$
-125y = 585
-$$
-
-$$
-y = 4.68
+125y = 585, \\qquad y = 4.68
 $$
 
 Substituting into the Auto equation:
 
 $$
-x + 397.80 = 612.50
-$$
-
-$$
-x = 214.70
+x + 397.80 = 612.50, \\qquad x = 214.70
 $$
 
 So the fixed fee is \\$214.70 and the coverage rate is \\$4.68 per \\$1,000.
@@ -14579,21 +12291,13 @@ $$
 Subtracting the first from the second eliminates the shared fee:
 
 $$
-125y = 585
-$$
-
-$$
-y = 4.68
+125y = 585, \\qquad y = 4.68
 $$
 
 Substituting into the Auto equation:
 
 $$
-x + 85(4.68) = 612.50
-$$
-
-$$
-x + 397.80 = 612.50
+x + 85(4.68) = 612.50, \\qquad x + 397.80 = 612.50
 $$
 
 $$
@@ -14743,11 +12447,7 @@ $$
 Four years of both species growing gives
 
 $$
-4x + 4y = 432
-$$
-
-$$
-x + y = 108
+4x + 4y = 432, \\qquad x + y = 108
 $$
 
 Species A grows at exactly twice Species B's rate:
@@ -14759,15 +12459,7 @@ $$
 Substituting that into $x + y = 108$:
 
 $$
-2y + y = 108
-$$
-
-$$
-3y = 108
-$$
-
-$$
-y = 36
+2y + y = 108, \\qquad 3y = 108, \\qquad y = 36
 $$
 
 $$
@@ -14779,11 +12471,7 @@ So Species A adds 72 individuals a year and Species B adds 36.
 Total growth over the same four-year window is four times each annual rate:
 
 $$
-4(72) = 288
-$$
-
-$$
-4(36) = 144
+4(72) = 288, \\qquad 4(36) = 144
 $$
 
 The ratio of those growths is
@@ -14818,11 +12506,7 @@ $$
 Spreading that over four years of both species growing:
 
 $$
-4x + 4y = 432
-$$
-
-$$
-x + y = 108
+4x + 4y = 432, \\qquad x + y = 108
 $$
 
 Species A's rate is twice Species B's:
@@ -14834,15 +12518,7 @@ $$
 Substituting:
 
 $$
-2y + y = 108
-$$
-
-$$
-y = 36
-$$
-
-$$
-x = 72
+2y + y = 108, \\qquad y = 36, \\qquad x = 72
 $$
 
 So Species A adds 72 individuals a year and Species B adds 36.
@@ -14895,11 +12571,7 @@ $$
 over four years:
 
 $$
-4x + 4y = 432
-$$
-
-$$
-x + y = 108
+4x + 4y = 432, \\qquad x + y = 108
 $$
 
 Species A grows at twice Species B's rate:
@@ -14911,15 +12583,7 @@ $$
 Substituting:
 
 $$
-2y + y = 108
-$$
-
-$$
-y = 36
-$$
-
-$$
-x = 72
+2y + y = 108, \\qquad y = 36, \\qquad x = 72
 $$
 
 So Species A adds 72 individuals a year and Species B adds 36.
@@ -14927,11 +12591,7 @@ So Species A adds 72 individuals a year and Species B adds 36.
 Writing each population as a function of the year $t$, starting from the Year 2 counts:
 
 $$
-A(t) = 610 + 72(t - 2)
-$$
-
-$$
-B(t) = 730 + 36(t - 2)
+A(t) = 610 + 72(t - 2), \\qquad B(t) = 730 + 36(t - 2)
 $$
 
 The overtake happens where the two are equal:
@@ -14945,11 +12605,7 @@ $$
 $$
 
 $$
-36(t - 2) = 120
-$$
-
-$$
-t - 2 = \\frac{120}{36} = \\frac{10}{3}
+36(t - 2) = 120, \\qquad t - 2 = \\frac{120}{36} = \\frac{10}{3}
 $$
 
 $$
@@ -14959,11 +12615,7 @@ $$
 A check at Year 5 shows Species A still behind:
 
 $$
-A(5) = 610 + 72(3) = 826
-$$
-
-$$
-B(5) = 730 + 36(3) = 838
+A(5) = 610 + 72(3) = 826, \\qquad B(5) = 730 + 36(3) = 838
 $$
 
 Comparing the crossover year with the deadline in the claim:
@@ -15087,35 +12739,19 @@ $$
 Multiplying that by $9$ and the Day 2 equation by $10$ lines up the $y$ terms:
 
 $$
-63x + 90y = 17955
-$$
-
-$$
-220x + 90y = 40720
+63x + 90y = 17955, \\qquad 220x + 90y = 40720
 $$
 
 Subtracting the first of those from the second:
 
 $$
-157x = 22765
-$$
-
-$$
-x = 145
+157x = 22765, \\qquad x = 145
 $$
 
 Substituting into $7x + 10y = 1995$:
 
 $$
-1015 + 10y = 1995
-$$
-
-$$
-10y = 980
-$$
-
-$$
-y = 98
+1015 + 10y = 1995, \\qquad 10y = 980, \\qquad y = 98
 $$
 
 So Plant A produces 145.0 MWh per hour and Plant B 98.0 MWh per hour.
@@ -15129,11 +12765,7 @@ $$
 so the predicted output alongside Plant B's 11 hours is
 
 $$
-17(145) = 2465
-$$
-
-$$
-11(98) = 1078
+17(145) = 2465, \\qquad 11(98) = 1078
 $$
 
 $$
@@ -15184,35 +12816,19 @@ $$
 Multiplying that by $9$ and the Day 2 equation by $10$:
 
 $$
-63x + 90y = 17955
-$$
-
-$$
-220x + 90y = 40720
+63x + 90y = 17955, \\qquad 220x + 90y = 40720
 $$
 
 Subtracting:
 
 $$
-157x = 22765
-$$
-
-$$
-x = 145
+157x = 22765, \\qquad x = 145
 $$
 
 Substituting into $7x + 10y = 1995$:
 
 $$
-1015 + 10y = 1995
-$$
-
-$$
-10y = 980
-$$
-
-$$
-y = 98
+1015 + 10y = 1995, \\qquad 10y = 980, \\qquad y = 98
 $$
 
 So Plant A produces 145.0 MWh per hour and Plant B 98.0 MWh per hour.
@@ -15238,11 +12854,7 @@ $$
 The hypothetical hands Plant A the 29 hours and Plant B the 36 hours:
 
 $$
-29(145) = 4205
-$$
-
-$$
-36(98) = 3528
+29(145) = 4205, \\qquad 36(98) = 3528
 $$
 
 $$
@@ -15281,35 +12893,19 @@ $$
 Multiplying that by $9$ and the Day 2 equation by $10$:
 
 $$
-63x + 90y = 17955
-$$
-
-$$
-220x + 90y = 40720
+63x + 90y = 17955, \\qquad 220x + 90y = 40720
 $$
 
 Subtracting the first of those from the second:
 
 $$
-157x = 22765
-$$
-
-$$
-x = 145
+157x = 22765, \\qquad x = 145
 $$
 
 Substituting back:
 
 $$
-1015 + 10y = 1995
-$$
-
-$$
-10y = 980
-$$
-
-$$
-y = 98
+1015 + 10y = 1995, \\qquad 10y = 980, \\qquad y = 98
 $$
 
 So Plant A produces 145.0 MWh per hour and Plant B 98.0 MWh per hour.
@@ -15364,35 +12960,19 @@ $$
 Multiplying that by $9$ and the Day 2 equation by $10$:
 
 $$
-63x + 90y = 17955
-$$
-
-$$
-220x + 90y = 40720
+63x + 90y = 17955, \\qquad 220x + 90y = 40720
 $$
 
 Subtracting:
 
 $$
-157x = 22765
-$$
-
-$$
-x = 145
+157x = 22765, \\qquad x = 145
 $$
 
 Substituting into $7x + 10y = 1995$:
 
 $$
-1015 + 10y = 1995
-$$
-
-$$
-10y = 980
-$$
-
-$$
-y = 98
+1015 + 10y = 1995, \\qquad 10y = 980, \\qquad y = 98
 $$
 
 So Plant A produces 145.0 MWh per hour and Plant B 98.0 MWh per hour, rates that reproduce both printed daily totals.
@@ -15400,11 +12980,7 @@ So Plant A produces 145.0 MWh per hour and Plant B 98.0 MWh per hour, rates that
 The claim asks for the three-day sum using Day 3 as recorded, so it adds the printed figures:
 
 $$
-3990 + 4072 = 8062
-$$
-
-$$
-8062 + 3553 = 11615
+3990 + 4072 = 8062, \\qquad 8062 + 3553 = 11615
 $$
 
 Comparing that sum with the threshold in the claim:
