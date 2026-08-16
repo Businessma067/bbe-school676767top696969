@@ -432,7 +432,7 @@ Future value $FV = P(1+R)$
     statements: [
       `The monthly periodic rate is 0.60%.`,
       `It takes approximately 108 months for the deposit to double.`,
-      `It would take approximately 58 months for the deposit to double, which would be exactly half of the actual doubling time.`,
+      `It would take approximately 58 months for the deposit to double.`,
       `If the nominal rate were doubled to 14.4%, the resulting effective annual rate would also be exactly double the original effective annual rate.`,
       `Because $(1 + r/n)^{t}$ is an increasing function of t, the same logarithmic method used for doubling can be used to find the time needed for any other target growth multiple.`,
     ],
@@ -460,7 +460,7 @@ $$t = \\frac{\\ln 2}{\\ln 1.006} = \\frac{0.693147}{0.0059821} \\approx 115.85$$
 months
 
 The claim says approximately 108 months. We got 115.85 months, so the statement is False.`,
-      `**C) It would take approximately 58 months for the deposit to double, which would be exactly half of the actual doubling time.**  (false)
+      `**C) It would take approximately 58 months for the deposit to double.**  (false)
 
 Trap: the true doubling time is about 115.85 months; 58 months is nowhere near it and is not meaningfully 'half' of the correct value in any valid sense.
 
@@ -2532,7 +2532,7 @@ $EAR_{\\mathrm{max}} = e^{r} - 1$
       `Using this implied rate, the projected value 5 years from the start, 2 years beyond the observed data, is approximately \\$39,078.52.`,
       `A naive straight-line projection - extending the average dollar increase observed over the first 3 years for 2 more years - gives the same result as the correct exponential projection.`,
       `At the implied rate, the fund's value would double from its original \\$28,000 in approximately 12.40 years.`,
-      `If the implied rate had instead been exactly 6.00%, the 3-year value would have been approximately \\$33,522.09, which is higher than the actual observed \\$34,200.00.`,
+      `If the implied rate had instead been exactly 6.00%, the 3-year value would exceed the actual observed \\$34,200.00.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
@@ -2558,7 +2558,7 @@ $$34,200 + 2 \\times 2,066.67 = \\$38,333.33$$
       `**D) At the implied rate, the fund's value would double from its original \\$28,000 in approximately 12.40 years.**  (false)
 
 $t_2 = \\ln(2)/0.066674 = 0.693147/0.066674 \\approx 10.40$ years, not 12.40 years — the stated figure overstates the true doubling time by exactly 2 years. False.`,
-      `**E) If the implied rate had instead been exactly 6.00%, the 3-year value would have been approximately \\$33,522.09, which is higher than the actual observed \\$34,200.00.**  (false)
+      `**E) If the implied rate had instead been exactly 6.00%, the 3-year value would exceed the actual observed \\$34,200.00.**  (false)
 
 At $r = 6.00\\%$: $S(3) = 28,000 \\times e^{0.18} \\approx 28,000 \\times 1.197217 = \\$33,522.09$, which is correct in dollars but is actually LOWER than the observed \\$34,200.00, not higher — a smaller assumed growth rate can never explain a larger observed increase. False.`,
     ],
@@ -2605,7 +2605,7 @@ Doubling time: $t = \\ln(2)/r$
     statements: [
       `Bank X's 2-year value is approximately \\$68,740.91.`,
       `Bank Y's 2-year value is approximately \\$68,851.32.`,
-      `Bank Z's 2-year value is approximately \\$68,932.91, making it the highest of the three offers.`,
+      `Bank Z's 2-year value is approximately \\$68,932.91.`,
       `Despite compounding continuously, Bank X's value is actually the lowest of the three offers.`,
       `If Bank X's nominal rate were instead also raised to 7.0%, while keeping continuous compounding, its 2-year value would exceed Bank Z's value.`,
     ],
@@ -2617,7 +2617,7 @@ Bank X compounds continuously at $6.8\\%$ for $2$ years: $S_X = 60,000 \\times e
       `**B) Bank Y's 2-year value is approximately \\$68,851.32.**  (true)
 
 Bank Y compounds monthly at $6.9\\%$, so $i = 0.069/12 = 0.00575$ over $24$ periods: $S_Y = 60,000 \\times (1.00575)^{24} \\approx 60,000 \\times 1.147522 = \\$68,851.32$. True.`,
-      `**C) Bank Z's 2-year value is approximately \\$68,932.91, making it the highest of the three offers.**  (true)
+      `**C) Bank Z's 2-year value is approximately \\$68,932.91.**  (true)
 
 Bank Z compounds quarterly at $7.0\\%$, so $i = 0.070/4 = 0.0175$ over $8$ periods: $S_Z = 60,000 \\times (1.0175)^{8} \\approx 60,000 \\times 1.148882 = \\$68,932.91$. Comparing all three, $\\$68,740.91 < \\$68,851.32 < \\$68,932.91$, so Z is indeed highest. True.`,
       `**D) Despite compounding continuously, Bank X's value is actually the lowest of the three offers.**  (true)
@@ -3231,7 +3231,7 @@ Time to reach multiple $M$: $t = \\ln(M)/r$
       `Asset A's value after 5 years is approximately \\$202,478.82.`,
       `Asset B's value after 5 years is approximately \\$140,278.19.`,
       `Asset C's value after 5 years is approximately \\$130,000.00.`,
-      `The combined portfolio value after 5 years, adding all three assets together, is approximately \\$477,742.90, which is less than the sum of the three original principals.`,
+      `The combined portfolio value after 5 years is less than the sum of the three original principals.`,
       `If Asset B's rate had instead been a continuous growth rate of the same 9% magnitude, its 5-year value would exceed \\$340,000.00.`,
     ],
     answer_key: [true, true, false, false, true],
@@ -3263,7 +3263,7 @@ $$e^{0.06} \\approx 1.061837$$
 $$C(5) \\approx \\$134,985.88$$
 
 Not \\$130,000. False.`,
-      `**D) The combined portfolio value after 5 years, adding all three assets together, is approximately \\$477,742.90, which is less than the sum of the three original principals.**  (false)
+      `**D) The combined portfolio value after 5 years is less than the sum of the three original principals.**  (false)
 
 Adding the three 5-year values gives 202,478.82 + 140,278.19 + 134,985.88 = \\$477,742.89, which is actually MORE than the \\$470,000.00 sum of the three original principals, not less - the combined growth of Assets A and C outweighs the shrinkage of Asset B over this particular 5-year horizon.
 
@@ -5229,7 +5229,7 @@ Infinite sum (|k| < 1): a/(1 - k)
       `The total royalties collected over the 12 years are approximately \\$175,000.00.`,
       `The infinite-sum formula can still be legitimately applied to this series, yielding a meaningful total value.`,
       `The royalty payment in year 12 alone is approximately \\$20,715.85.`,
-      `If royalties instead grew at 0% for 12 years, the 12-year total would be \\$108,000.00, which is \\$62,794.15 less than the actual 8%-growth total.`,
+      `If royalties instead grew at 0% for 12 years, the 12-year total would be \\$62,794.15 less than the actual 8%-growth total.`,
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
@@ -5257,7 +5257,7 @@ The 12th year's royalty equals the first payment multiplied by the ratio raised 
 Year 12 is term $a k^{11}$:
 
 $$(1.08)^{11} \\approx 2.331639, \\quad 9,000 \\times 2.331639 \\approx \\$20,984.75$$`,
-      `**E) If royalties instead grew at 0% for 12 years, the 12-year total would be \\$108,000.00, which is \\$62,794.15 less than the actual 8%-growth total.**  (true)
+      `**E) If royalties instead grew at 0% for 12 years, the 12-year total would be \\$62,794.15 less than the actual 8%-growth total.**  (true)
 
 Twelve flat annual payments of \\$9,000 with no growth at all would total $9,000 \\times 12 = \\$108,000.00$. Comparing that to the actual 8%-growth total of about \\$170,794.15 gives a difference of $170,794.15 - 108,000 = \\$62,794.15$, confirming the stated gap exactly.`,
     ],
@@ -5438,7 +5438,7 @@ Term in month t: $a k^{t-1}$
       `The infinite total of all future payouts converges to \\$25,000,000.00.`,
       `The cumulative payout over just the first 10 years is approximately \\$4,800,000.00.`,
       `The first 10 years of payouts represent approximately 18% of the full infinite-horizon total.`,
-      `If the decline were instead steeper, at k = 0.95, the infinite total would be \\$10,000,000.00, which is more than half of the original \\$25,000,000.00 infinite total.`,
+      `If the decline were instead steeper, at k = 0.95, the infinite total would be more than half of the original infinite total.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
@@ -5454,7 +5454,7 @@ Summing only the first 10 years gives $s_{10} = 500,000 \\times (1-0.98^{10})/0.
       `**D) The first 10 years of payouts represent approximately 18% of the full infinite-horizon total.**  (true)
 
 Dividing the 10-year total by the full infinite total gives $4,573,179.83/25,000,000.00 \\approx 18.3\\%$ - close enough to describe as roughly 18%.`,
-      `**E) If the decline were instead steeper, at k = 0.95, the infinite total would be \\$10,000,000.00, which is more than half of the original \\$25,000,000.00 infinite total.**  (false)
+      `**E) If the decline were instead steeper, at k = 0.95, the infinite total would be more than half of the original infinite total.**  (false)
 
 A steeper 5% annual decline (k=0.95) gives an infinite total of 500,000/(1-0.95) = 500,000/0.05 = \\$10,000,000.00. Half of the original \\$25,000,000.00 infinite total is \\$12,500,000.00, and \\$10,000,000.00 sits below that halfway point, not above it, so the comparison in the claim has the direction backwards.
 
@@ -5504,17 +5504,17 @@ Finite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$
     context: `A company's marketing budget starts at \\$200,000 this year and grows 12% every year with a = \\$200,000 and k = 1.12, a finite geometric series. The CFO wants to know the smallest number of years n after which the cumulative total marketing spend first surpasses \\$3,000,000.`,
     statements: [
       `The marketing budget in year 2 is \\$224,000.00.`,
-      `The cumulative spend after 9 years is approximately \\$2,955,131.26, which is still below the \\$3,000,000 target.`,
+      `The cumulative spend after 9 years is still below the \\$3,000,000 target.`,
       `The cumulative spend after 10 years is approximately \\$3,600,000.00.`,
       `The smallest n for which cumulative spend surpasses \\$3,000,000 is n = 9.`,
-      `If the growth rate were only 8% instead of 12%, the 10-year cumulative spend would be approximately \\$2,897,312.49, which would still surpass the \\$3,000,000 target within 10 years.`,
+      `If the growth rate were only 8% instead of 12%, the 10-year cumulative spend would still surpass the \\$3,000,000 target within 10 years.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
       `**A) The marketing budget in year 2 is \\$224,000.00.**  (true)
 
 Year-2 budget is the year-1 budget multiplied once by the growth factor: $200,000 \\times 1.12 = \\$224,000.00$, matching exactly.`,
-      `**B) The cumulative spend after 9 years is approximately \\$2,955,131.26, which is still below the \\$3,000,000 target.**  (true)
+      `**B) The cumulative spend after 9 years is still below the \\$3,000,000 target.**  (true)
 
 Summing the first 9 years gives $s_9 = 200,000 \\times (1.12^{9}-1)/0.12$. Since $1.12^{9} \\approx 2.773079$, this becomes $s_9 \\approx 200,000 \\times 14.77566 \\approx \\$2,955,131.26$, which indeed falls short of the \\$3,000,000 target.`,
       `**C) The cumulative spend after 10 years is approximately \\$3,600,000.00.**  (false)
@@ -5525,7 +5525,7 @@ Summing the first 10 years instead gives $s_{10} = 200,000 \\times (1.12^{10}-1)
 Since the 9-year total (≈ \\$2,955,131.26) is still below \\$3,000,000 but the 10-year total (≈ \\$3,509,747.01) is above it, the cumulative spend crosses the \\$3,000,000 threshold sometime during year 10. That means the smallest whole number of years for which the running total exceeds \\$3,000,000 is n=10, not n=9.
 
 $s_9 \\approx 2,955,131 < 3,000,000$ but $s_{10} \\approx 3,509,747 > 3,000,000$, so the first crossing is at $n = 10$.`,
-      `**E) If the growth rate were only 8% instead of 12%, the 10-year cumulative spend would be approximately \\$2,897,312.49, which would still surpass the \\$3,000,000 target within 10 years.**  (false)
+      `**E) If the growth rate were only 8% instead of 12%, the 10-year cumulative spend would still surpass the \\$3,000,000 target within 10 years.**  (false)
 
 With a slower 8% growth rate, the 10-year total is $s_{10} = 200,000 \\times (1.08^{10}-1)/0.08$. Since 1.08 to the 10th power is about 2.158925, this comes to 200,000×14.486562 ≈ \\$2,897,312.49, which is still below \\$3,000,000 - so under this slower growth rate, the target would not actually be reached within 10 years.
 
@@ -5575,7 +5575,7 @@ $s_n = a(k^{n}-1)/(k-1)$
       `The infinite total of all future grants is \\$1,250,000.00.`,
       `The total of the first 15 grants is approximately \\$572,392.03.`,
       `The first 15 grants represent less than 40% of the infinite total.`,
-      `If the decline were steeper, at k = 0.90 instead of 0.96, the infinite total would be \\$500,000.00, which is less than half of the original \\$1,250,000.00 infinite total.`,
+      `If the decline were steeper, at k = 0.90 instead of 0.96, the infinite total would be less than half of the original infinite total.`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
@@ -5593,7 +5593,7 @@ Summing just the first 15 grants gives $s_{15} = 50,000 \\times (1-0.96^{15})/0.
       `**D) The first 15 grants represent less than 40% of the infinite total.**  (false)
 
 Dividing the 15-grant total by the full infinite total gives $572,392.03/1,250,000.00 \\approx 45.8\\%$ - that is above 40%, not below it, so the claim understates how large a share the first 15 grants actually represent.`,
-      `**E) If the decline were steeper, at k = 0.90 instead of 0.96, the infinite total would be \\$500,000.00, which is less than half of the original \\$1,250,000.00 infinite total.**  (true)
+      `**E) If the decline were steeper, at k = 0.90 instead of 0.96, the infinite total would be less than half of the original infinite total.**  (true)
 
 A steeper 10% annual decline (k=0.90) gives an infinite total of 50,000/(1-0.90) = 50,000/0.10 = \\$500,000.00. Half of the original \\$1,250,000.00 total is \\$625,000.00, and \\$500,000.00 is indeed below that halfway mark, confirming the comparison.
 
@@ -5861,7 +5861,7 @@ Necessary (not sufficient): convergence requires $\\lim_{n\\to\\infty} a_n = 0$
       `The cumulative 12-year maintenance cost is approximately \\$1,703,043.55.`,
       `The cumulative 12-year profit is approximately \\$199,331.90.`,
       `In year 12 alone, revenue of approximately \\$167,350.25 still exceeds maintenance cost of approximately \\$166,108.06, leaving a net positive of about \\$1,242.19.`,
-      `Extending the horizon to 20 years, cumulative profit falls to approximately \\$78,405.66, which is smaller than the 12-year cumulative profit of \\$199,331.90.`,
+      `Extending the horizon to 20 years, cumulative profit falls below the 12-year cumulative profit.`,
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
@@ -5893,7 +5893,7 @@ $$150,000 \\times (1.01)^{11} \\approx 150,000 \\times 1.115668 \\approx \\$167,
 $$120,000 \\times (1.03)^{11} \\approx 120,000 \\times 1.384234 \\approx \\$166,108.06$$
 
 $$167,350.25 - 166,108.06 = \\$1,242.19$$`,
-      `**E) Extending the horizon to 20 years, cumulative profit falls to approximately \\$78,405.66, which is smaller than the 12-year cumulative profit of \\$199,331.90.**  (true)
+      `**E) Extending the horizon to 20 years, cumulative profit falls below the 12-year cumulative profit.**  (true)
 
 Extending the same calculations to 20 years gives a cumulative revenue of about \\$3,302,850.60 and a cumulative cost of about \\$3,224,444.94, for a 20-year profit of roughly \\$78,405.66, smaller than the 12-year profit of \\$199,331.90. This happens because maintenance cost compounds at the faster 3% rate while revenue compounds at only 1%; over a longer horizon the faster-growing cost stream eats into more and more of each year's revenue, so even though annual revenue is still ahead of annual cost as late as year 12, the cumulative profit advantage built up in the earlier years gradually erodes as the cost curve catches up.
 
@@ -6021,7 +6021,7 @@ Term in year t: $a k^{t-1}$
     statements: [
       `Tranche 1 totals exactly \\$225,000.00.`,
       `Tranche 2 totals approximately \\$215,603.80.`,
-      `Tranche 3, valued as an infinite declining perpetuity, totals \\$375,000.00, making it the single largest of the three tranches.`,
+      `Tranche 3, valued as an infinite declining perpetuity, totals \\$375,000.00.`,
       `Tranche 3 must be excluded from any combined valuation, meaning the portfolio's correct combined total is just \\$440,603.80.`,
       `$f_{100} = \\$10.00$, and this alone is sufficient to guarantee that the fee stream converges to a finite total.`,
     ],
@@ -6037,7 +6037,7 @@ Summing a geometric series with $a = \\$18,000$, $k = 1.07$, and $n = 9$ years u
 $$s_9 = 18,000 \\times \\frac{(1.07)^{9}-1}{0.07} \\approx 18,000 \\times 11.97799 \\approx \\$215,603.80$$
 
 That matches the statement exactly.`,
-      `**C) Tranche 3, valued as an infinite declining perpetuity, totals \\$375,000.00, making it the single largest of the three tranches.**  (true)
+      `**C) Tranche 3, valued as an infinite declining perpetuity, totals \\$375,000.00.**  (true)
 
 Since the ratio 0.92 has absolute value below 1, letting this royalty stream continue forever gives a finite total of 30,000/(1-0.92) = 30,000/0.08 = \\$375,000.00. Comparing all three tranches - \\$225,000.00, \\$215,603.80, and \\$375,000.00 - the perpetual royalty stream is indeed the largest of the three, even though it starts with the smallest single payment; over an unlimited horizon, a slowly-declining stream can accumulate more value than either finite stream.
 
@@ -6724,7 +6724,7 @@ $F_n=(a/r)[(1+r)^{n}-1]$
     context: `A gym owner deposits \\$3,000 at the BEGINNING of each year as an annuity due for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.`,
     statements: [
       `The future value of these deposits at the end of year 6 is approximately \\$21,426.05.`,
-      `If the same \\$3,000 deposits were instead made at the END of each year, the future value would be approximately \\$20,405.76, which is LOWER than the annuity-due result.`,
+      `If the same \\$3,000 deposits were instead made at the END of each year, the future value would be LOWER than the annuity-due result.`,
       `The dollar gap between the annuity-due result and the ordinary-annuity result is approximately \\$1,120.29.`,
       `If the number of deposits were doubled to 12 years, the annuity-due future value would also exactly double, to approximately \\$42,852.10.`,
       `Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of interest growth, regardless of the number of payments or the interest rate.`,
@@ -6740,7 +6740,7 @@ Build the ordinary annuity first, then shift one period:
 $$F_{\\mathrm{ord}} = (3,000 / 0.05)\\bigl[(1.05)^{6} - 1\\bigr] = 60,000 \\times 0.340096 = \\$20,405.76$$
 
 $$F_{\\mathrm{due}} = 20,405.76 \\times 1.05 = \\$21,426.05$$`,
-      `**B) If the same \\$3,000 deposits were instead made at the END of each year, the future value would be approximately \\$20,405.76, which is LOWER than the annuity-due result.**  (true)
+      `**B) If the same \\$3,000 deposits were instead made at the END of each year, the future value would be LOWER than the annuity-due result.**  (true)
 
 $F_{\\mathrm{ordinary}}(6) = (3,000/0.05)[(1.05)^{6} - 1] = \\$20,405.76$, which is indeed lower than the annuity-due result of \\$21,426.05, since end-of-year deposits each earn one fewer period of interest.
 
@@ -6807,7 +6807,7 @@ Future value of annuity due: $F_{\\mathrm{due}}=F_n(1+r)$
     context: `A tenant signs a 5-year commercial lease requiring rent payments of \\$24,000 at the BEGINNING of each year as an annuity due. The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.`,
     statements: [
       `The present value of the lease payments today is approximately \\$107,162.61.`,
-      `If the same \\$24,000 payments were instead due at the END of each year, the present value would be approximately \\$101,096.80, which is LOWER than the annuity-due result.`,
+      `If the same \\$24,000 payments were instead due at the END of each year, the present value would be LOWER than the annuity-due result.`,
       `The dollar gap between the annuity-due present value and the ordinary-annuity present value is approximately \\$7,065.81.`,
       `If the lease term were extended to 10 years, the annuity-due present value would also exactly double, to approximately \\$214,325.22.`,
       `The annuity-due present value can also be computed as the first \\$24,000 payment plus the present value of an ordinary annuity of the remaining 4 payments.`,
@@ -6827,7 +6827,7 @@ $$1 - 0.747258 = 0.252742$$
 $$400,000 \\times 0.252742 = \\$101,096.80$$
 
 $$P_{\\mathrm{due}} = 101,096.80 \\times 1.06 = \\$107,162.61$$`,
-      `**B) If the same \\$24,000 payments were instead due at the END of each year, the present value would be approximately \\$101,096.80, which is LOWER than the annuity-due result.**  (true)
+      `**B) If the same \\$24,000 payments were instead due at the END of each year, the present value would be LOWER than the annuity-due result.**  (true)
 
 $P_{\\mathrm{ordinary}}(5) = (24,000/0.06)[1 - 1/(1.06)^{5}] = \\$101,096.80$, which is indeed lower than the annuity-due result of \\$107,162.61, since discounting end-of-year payments back one extra period each reduces their present value.
 
@@ -6992,20 +6992,20 @@ Discount back to today: $PV_0=V/(1+r)^{k}$, where k is the number of years from 
     case_id: `MATH 11.92`,
     title: `Reverse-Engineering a Perpetual Preferred Stock's Fair Value`,
     subsection: `11.5`,
-    context: `A preferred stock pays a fixed dividend of \\$4.25 per share at the end of each year, in perpetuity. Investors currently require a 7% annual return on investments of this risk level, and an analyst wants to test how the fair value responds to changes in the required return and the dividend.`,
+    context: `A preferred stock pays a fixed dividend of \\$4.25 per share at the end of each year, in perpetuity. The stock is currently trading at \\$65.00 per share. Investors currently require a 7% annual return on investments of this risk level, and an analyst wants to test how the fair value responds to changes in the required return and the dividend.`,
     statements: [
       `The fair value per share is approximately \\$60.71.`,
-      `The stock is currently trading at \\$65.00 per share, which is below its fair value of \\$60.71, so the stock is UNDERVALUED.`,
+      `At a market price of \\$65.00, the preferred stock is undervalued relative to its fair value.`,
       `If the required return fell to 4%, the fair value would rise to \\$116.25 per share.`,
       `This drop in the required return, from 7% to 4%, increases the fair value by MORE than 75%.`,
-      `If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall to exactly \\$50.57, a 20% drop from the original \\$60.71.`,
+      `If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall to exactly \\$50.57.`,
     ],
     answer_key: [true, false, false, false, false],
     tactical_explanations: [
       `**A) The fair value per share is approximately \\$60.71.**  (true)
 
 $P = a/r = 4.25/0.07 = \\$60.71$, matching the statement exactly.`,
-      `**B) The stock is currently trading at \\$65.00 per share, which is below its fair value of \\$60.71, so the stock is UNDERVALUED.**  (false)
+      `**B) At a market price of \\$65.00, the preferred stock is undervalued relative to its fair value.**  (false)
 
 The $\\$65.00$ market price sits above the $\\$60.71$ fair value, meaning the stock is overvalued, not undervalued as claimed.`,
       `**C) If the required return fell to 4%, the fair value would rise to \\$116.25 per share.**  (false)
@@ -7020,13 +7020,13 @@ From \\$60.714286 to \\$106.25:
 $$(106.25 - 60.714286) / 60.714286 = 0.750000 = 75.00\\%$$
 
 The increase is exactly 75%, so "more than 75%" fails.`,
-      `**E) If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall to exactly \\$50.57, a 20% drop from the original \\$60.71.**  (false)
+      `**E) If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall to exactly \\$50.57.**  (false)
 
 Since $P = a/r$ is directly proportional to $a$, a $20\\%$ dividend cut produces an exactly $20\\%$ value cut: $a' = 4.25 \\times 0.80 = 3.40$, so $P'' = 3.40/0.07 \\approx \\$48.57$, not $\\$50.57$ as stated.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 92,
-    solution_overview: `A preferred stock pays a fixed dividend of \\$4.25 per share at the end of each year, in perpetuity. Investors currently require a 7% annual return on investments of this risk level, and an analyst wants to test how the fair value responds to changes in the required return and the dividend.
+    solution_overview: `A preferred stock pays a fixed dividend of \\$4.25 per share at the end of each year, in perpetuity. The stock is currently trading at \\$65.00 per share. Investors currently require a 7% annual return on investments of this risk level, and an analyst wants to test how the fair value responds to changes in the required return and the dividend.
 
 **Part 1: Setup.**
 
@@ -7063,7 +7063,7 @@ Perpetuity (fair value): $P=a/r$
       `Including the \\$50,000 immediate renovation cost, the total amount the city must set aside today is approximately \\$383,333.33.`,
       `If the interest rate were instead 6%, the total required funding would be approximately \\$300,000.00.`,
       `This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.`,
-      `If the council only needed the perpetuity and the rate were 6%, the required funding of \\$250,000.00 would be LESS than half of the original combined 4.5%-rate total of \\$383,333.33.`,
+      `If the council only needed the perpetuity and the rate were 6%, the required funding would be LESS than half of the original combined 4.5%-rate total.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
@@ -7079,7 +7079,7 @@ At $6\\%$, the perpetuity value falls to $P' = 15,000/0.06 = \\$250,000.00$, so 
       `**D) This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.**  (false)
 
 The reduction is $\\$383,333.33 - \\$300,000.00 = \\$83,333.33$, which is $83,333.33/383,333.33 \\approx 21.74\\%$ of the original total - more than $20\\%$ but not more than $25\\%$.`,
-      `**E) If the council only needed the perpetuity and the rate were 6%, the required funding of \\$250,000.00 would be LESS than half of the original combined 4.5%-rate total of \\$383,333.33.**  (false)
+      `**E) If the council only needed the perpetuity and the rate were 6%, the required funding would be LESS than half of the original combined 4.5%-rate total.**  (false)
 
 The perpetuity-only requirement at 6% (\\$250,000.00) is actually LARGER than half of the original combined total (\\$191,666.67), not smaller - even though raising the rate shrank the perpetuity value considerably, it still exceeds half of the original combined (renovation + maintenance) total.
 
@@ -7196,7 +7196,7 @@ Growing perpetuity: $P=a_1/(r-g)$, valid only for $r>g$
     statements: [
       `The next dividend is \\$3.09.`,
       `The fair value per share is approximately \\$54.50.`,
-      `Mistakenly using the just-paid dividend instead of next year's dividend would give a value of \\$50.00, which UNDERSTATES the correct fair value of \\$51.50; the shortfall is said to be \\$2.50.`,
+      `Mistakenly using the just-paid dividend instead of next year's dividend understates the correct fair value by \\$2.50.`,
       `If the growth rate were instead 5%, the fair value would be MORE than double \\$51.50.`,
       `If the growth rate equaled the required return exactly, the growing-perpetuity valuation would yield a present value of exactly \\$0.00.`,
     ],
@@ -7208,7 +7208,7 @@ $D_1 = D_0(1+g) = 3.00 \\times 1.03 = \\$3.09$, matching the statement exactly.`
       `**B) The fair value per share is approximately \\$54.50.**  (false)
 
 $P = D_1/(r-g) = 3.09/0.06 = \\$51.50$, not $\\$54.50$ as stated.`,
-      `**C) Mistakenly using the just-paid dividend instead of next year's dividend would give a value of \\$50.00, which UNDERSTATES the correct fair value of \\$51.50; the shortfall is said to be \\$2.50.**  (false)
+      `**C) Mistakenly using the just-paid dividend instead of next year's dividend understates the correct fair value by \\$2.50.**  (false)
 
 Using $D_0$ in place of $D_1$ gives $3.00/0.06 = \\$50.00$, which is $\\$51.50 - \\$50.00 = \\$1.50$ below the correct value, not $\\$2.50$ as stated.`,
       `**D) If the growth rate were instead 5%, the fair value would be MORE than double \\$51.50.**  (false)
@@ -7268,18 +7268,18 @@ Growing perpetuity: $P=D_1/(r-g)$
     subsection: `11.5`,
     context: `A musician is offered two royalty-stream purchase deals for a song catalog, both priced at \\$170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level non-growing perpetuity of \\$18,000 per year. Deal 2 is a growing perpetuity starting at \\$14,000 next year, growing 4% per year forever.`,
     statements: [
-      `Deal 1's fair value is \\$180,000.00, which exceeds the \\$170,000 asking price by \\$10,000.00, making it a good buy.`,
-      `Deal 2's fair value is approximately \\$233,333.33, which exceeds the \\$170,000 asking price by more than \\$60,000.00.`,
+      `Deal 1 is a good buy at its asking price.`,
+      `Deal 2's fair value exceeds its asking price by more than \\$60,000.00.`,
       `Deal 1 offers the larger "margin of safety" of the two deals.`,
-      `If Deal 2's growth rate were instead only 1%, its fair value would fall to approximately \\$155,555.56, making it a worse buy than its \\$170,000 asking price.`,
+      `If Deal 2's growth rate were instead only 1%, its fair value would fall below its asking price.`,
       `Comparing the two original deals, Deal 1's fair value is MORE than Deal 2's fair value.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A) Deal 1's fair value is \\$180,000.00, which exceeds the \\$170,000 asking price by \\$10,000.00, making it a good buy.**  (true)
+      `**A) Deal 1 is a good buy at its asking price.**  (true)
 
 Deal 1's fair value is $18,000/0.10 = \\$180,000.00$, exceeding the $\\$170,000.00$ price by $\\$10,000.00$, matching the statement exactly.`,
-      `**B) Deal 2's fair value is approximately \\$233,333.33, which exceeds the \\$170,000 asking price by more than \\$60,000.00.**  (true)
+      `**B) Deal 2's fair value exceeds its asking price by more than \\$60,000.00.**  (true)
 
 Deal 2's fair value is $P_2 = 14,000/(0.10-0.04) = 14,000/0.06 = \\$233,333.33$, exceeding the $\\$170,000.00$ price by $\\$63,333.33$, which is indeed more than $\\$60,000.00$.`,
       `**C) Deal 1 offers the larger "margin of safety" of the two deals.**  (false)
@@ -7287,7 +7287,7 @@ Deal 2's fair value is $P_2 = 14,000/(0.10-0.04) = 14,000/0.06 = \\$233,333.33$,
 Deal 2's margin of safety (\\$63,333.33) is substantially larger than Deal 1's (\\$10,000.00), so it is Deal 2, not Deal 1, that offers more cushion above its asking price.
 
 Margins: Deal 1 has \\$10,000; Deal 2 has \\$63,333.33. Deal 2's cushion is the larger one, not Deal 1's.`,
-      `**D) If Deal 2's growth rate were instead only 1%, its fair value would fall to approximately \\$155,555.56, making it a worse buy than its \\$170,000 asking price.**  (true)
+      `**D) If Deal 2's growth rate were instead only 1%, its fair value would fall below its asking price.**  (true)
 
 At the lower $1\\%$ growth rate, $P_2' = 14,000/(0.10-0.01) = 14,000/0.09 = \\$155,555.56$, which sits below the $\\$170,000.00$ asking price, making it a worse buy at that reduced growth assumption.`,
       `**E) Comparing the two original deals, Deal 1's fair value is MORE than Deal 2's fair value.**  (false)
@@ -7429,7 +7429,7 @@ Ordinary annual present value: $S_0=S(t)/(1+r)^{t}$
     context: `A biotech company sets aside \\$75,000 today in an account offering continuous compounding at a nominal 6.25% annual rate, aiming to accumulate funds for a 9-year R&D milestone. Management compares this to instead depositing the same \\$75,000 total, spread evenly as \\$8,333.33 at the end of each of the 9 years, into a separate account earning a discrete 6.25% annual rate.`,
     statements: [
       `The lump sum's future value under continuous compounding is approximately \\$131,629.13.`,
-      `The annuity's future value is approximately \\$96,757.60, which is LOWER than the lump-sum continuous-compounding result, despite both strategies involving the same total \\$75,000 in contributions.`,
+      `The annuity's future value is LOWER than the lump-sum continuous-compounding result, despite both strategies involving the same total \\$75,000 in contributions.`,
       `The lump-sum strategy outperforms the annuity strategy by more than \\$30,000.00.`,
       `This gap arises largely because the lump sum earns interest on the FULL \\$75,000 from day one, while the annuity's later deposits earn interest for only a very short time before the horizon ends.`,
       `If the company had instead invested the full \\$75,000 using discrete ANNUAL compounding at the same 6.25% rate for 9 years, the result would EXCEED the annuity strategy's future value of \\$96,757.60.`,
@@ -7445,7 +7445,7 @@ $$S_{\\mathrm{cont}} = 75,000 \\, e^{0.0625 \\times 9} = 75,000 \\, e^{0.5625}$$
 $$e^{0.5625} \\approx 1.755055$$
 
 $$75,000 \\times 1.755055 = \\$131,629.13$$`,
-      `**B) The annuity's future value is approximately \\$96,757.60, which is LOWER than the lump-sum continuous-compounding result, despite both strategies involving the same total \\$75,000 in contributions.**  (true)
+      `**B) The annuity's future value is LOWER than the lump-sum continuous-compounding result, despite both strategies involving the same total \\$75,000 in contributions.**  (true)
 
 F9 = \\$96,757.60, which is indeed lower than the lump-sum continuous-compounding result of \\$131,629.13, illustrating that WHEN money is invested matters as much as HOW MUCH, even when total contributions are equal.
 
@@ -7509,7 +7509,7 @@ $S = Pe^{rt}$; $F_n = (a/r)[(1+r)^{n}-1]$; discrete $S = P(1+r)^{n}$
       `The present value of the annuity-due lease payments is approximately \\$18,110.94.`,
       `The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately \\$27,610.90.`,
       `The \\$20,000 investment under continuous compounding at a nominal 6% rate accumulates, after 7 years, to approximately \\$31,439.24.`,
-      `The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value of \\$37,500.00, which is LESS than double the present value of the 5-year annuity-due lease payments.`,
+      `The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value that is LESS than double the present value of the 5-year annuity-due lease payments.`,
       `Comparing the accumulated continuous-compounding investment after 7 years to the perpetuity's present value, the continuous-compounding result is LARGER.`,
     ],
     answer_key: [true, false, false, false, false],
@@ -7543,7 +7543,7 @@ The claim's \\$27,610.90 is \\$1,000 too high.`,
       `**C) The \\$20,000 investment under continuous compounding at a nominal 6% rate accumulates, after 7 years, to approximately \\$31,439.24.**  (false)
 
 Plugging $P = 20,000$, $r = 0.06$, and $t = 7$ into $S = Pe^{rt}$ gives $S = 20,000 e^{0.42} \\approx 20,000 \\times 1.521961 = \\$30,439.24$, not $\\$31,439.24$ as stated.`,
-      `**D) The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value of \\$37,500.00, which is LESS than double the present value of the 5-year annuity-due lease payments.**  (false)
+      `**D) The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value that is LESS than double the present value of the 5-year annuity-due lease payments.**  (false)
 
 The perpetuity is $3,000/0.08 = \\$37,500.00$, which actually exceeds double the annuity-due lease value, $2 \\times \\$18,110.94 = \\$36,221.88$, so it is more than double, not less as stated.`,
       `**E) Comparing the accumulated continuous-compounding investment after 7 years to the perpetuity's present value, the continuous-compounding result is LARGER.**  (false)
