@@ -670,9 +670,9 @@
       "context": "Two calibration lines each produce batches of 20 units. Line A has an acceptable-unit probability of 0.40 per unit. Line B has an acceptable-unit probability of 0.75 per unit. A batch is \"mid-range\" if the number of acceptable units falls between 8 and 12, inclusive. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Line A's probability of landing in the mid-range is more than 5 times Line B's probability of landing in that same range.",
-        "For Line A, the probability of between 8 and 12 inclusive is greater than the probability of exactly 8.",
-        "The interval 8 to 12 lies entirely within one standard deviation of Line A's mean.",
-        "Line B's mean number of acceptable units falls inside the 8-to-12 mid-range.",
+        "For Line A, the mid-range probability is greater than the probability of exactly 8.",
+        "The mid-range lies entirely within one standard deviation of Line A's mean.",
+        "Line B's mean number of acceptable units falls inside the mid-range.",
         "Line A's mean is more than 3 of Line B's standard deviations below Line B's mean."
       ],
       "answer_key": [
@@ -703,7 +703,7 @@
         "The probability that Team B clears the bar is greater than the probability of exactly 12.",
         "The probability that Team A succeeds on exactly 8 trials is less than the probability that Team B succeeds on exactly 14 trials.",
         "Team A's standard deviation in number of successes is more than 1.4 times Team B's standard deviation.",
-        "The difference in means, Team B minus Team A, is less than the difference in variances, Team A minus Team B."
+        "Team B's mean minus Team A's mean is less than Team A's variance minus Team B's variance."
       ],
       "answer_key": [
         true,
@@ -731,7 +731,7 @@
       "statements": [
         "Auditor A's expected number of compliant transactions is exactly 25.",
         "Auditor B's expected number of compliant transactions is less than 8.",
-        "The probability that Auditor A has at least 28 compliant transactions is smaller than the probability of 27 or fewer compliant transactions.",
+        "Auditor A is less likely to have at least 28 compliant transactions than to have 27 or fewer.",
         "Auditor B is more than 4 times as likely as Auditor A to meet the stated threshold.",
         "Auditor A's standard deviation in number of compliant transactions is more than three times Auditor B's standard deviation."
       ],
@@ -820,9 +820,9 @@
       "context": "Two production lines each produce batches of 25 units. Line A has an acceptable-unit probability of 0.40 per unit. Line B has an acceptable-unit probability of 0.72 per unit. A batch is \"mid-range\" if the number of acceptable units falls between 8 and 12, inclusive. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Line A's probability of landing in the mid-range is more than 70 times Line B's probability of landing in that same range.",
-        "For Line A, the probability of between 8 and 12 inclusive is greater than the probability of exactly 8.",
-        "The interval 8 to 12 lies entirely within one standard deviation of Line A's mean.",
-        "Line B's mean number of acceptable units falls inside the 8-to-12 mid-range.",
+        "For Line A, the mid-range probability is greater than the probability of exactly 8.",
+        "The mid-range lies entirely within one standard deviation of Line A's mean.",
+        "Line B's mean number of acceptable units falls inside the mid-range.",
         "Line A's mean is more than 3 of Line B's standard deviations below Line B's mean."
       ],
       "answer_key": [
@@ -853,7 +853,7 @@
         "The probability that Team B clears the bar is greater than the probability of exactly 15.",
         "The probability that Team A succeeds on exactly 9 trials is less than the probability that Team B succeeds on exactly 17 trials.",
         "Team A's standard deviation in number of successes is more than 1.2 times Team B's standard deviation.",
-        "The difference in means, Team B minus Team A, is less than the difference in variances, Team A minus Team B."
+        "Team B's mean minus Team A's mean is less than Team A's variance minus Team B's variance."
       ],
       "answer_key": [
         true,
@@ -881,7 +881,7 @@
       "statements": [
         "Auditor A's expected number of compliant transactions is exactly 30.",
         "Auditor B's expected number of compliant transactions is less than 18.",
-        "The probability that Auditor A has at least 33 compliant transactions is smaller than the probability of 32 or fewer compliant transactions.",
+        "Auditor A is less likely to have at least 33 compliant transactions than to have 32 or fewer.",
         "Auditor B is more than 3 times as likely as Auditor A to meet the stated threshold.",
         "Auditor A's standard deviation in number of compliant transactions is more than three times Auditor B's standard deviation."
       ],
@@ -969,11 +969,11 @@
       "title": "Thirty Free Throws",
       "context": "Player A attempts 30 free throws, making each shot independently with probability 0.72. Player B also attempts 30 free throws, making each shot independently with probability 0.55. Call a performance \"on pace\" if the player makes between 18 and 22 shots, inclusive. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Player A's probability of an on-pace performance is more than 1.5 times Player B's probability of an on-pace performance.",
-        "For Player A, the probability of between 18 and 22 inclusive is greater than the probability of exactly 18.",
+        "Player A's on-pace probability is more than 1.5 times Player B's on-pace probability.",
+        "For Player A, the on-pace probability is greater than the probability of exactly 18.",
         "The median number of makes for Player B equals its mean rounded to the nearest whole number.",
-        "Player B's mean number of makes falls inside the 18-to-22 on-pace range.",
-        "The gap between Player A's mean and Player B's mean is more than 2 standard deviations of Player A's distribution."
+        "Player B's mean number of makes falls inside the on-pace range.",
+        "The gap between Player A's mean and Player B's mean is more than 2 of Player A's standard deviations."
       ],
       "answer_key": [
         true,
@@ -999,9 +999,9 @@
       "title": "Hourly Production Units",
       "context": "Production Line 1 makes 12 units per hour, each defect-free independently with probability 0.65. Production Line 2 makes 18 units per hour, each defect-free independently with probability 0.80. Every unit from both lines is dropped into one shared collection bin, so the bin's hourly total is the sum of the two lines' independent counts. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The total number of defect-free units in the shared bin follows a single binomial distribution that uses one pooled success probability for all units.",
+        "The total number of defect-free units in the shared bin follows a binomial distribution.",
         "The mean number of defect-free units in the shared bin is exactly 22.2.",
-        "Because the two lines have different defect-free probabilities, the true variance of the combined count is smaller than the variance of a single binomial model that uses the pooled rate and matches the same mean.",
+        "The true variance of the combined count is smaller than the variance of a pooled binomial model with the same mean.",
         "Line 2 is more than 3 times as likely as Line 1 to have every single unit in its hourly batch come out defect-free.",
         "Line 1's standard deviation in number of defect-free units is higher than Line 2's."
       ],
@@ -1013,9 +1013,9 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nA sum of independent binomials is binomial only when every trial shares the same success probability $p$. Here the two lines have different $p$ values, so the shared-bin total is only a sum of independent Bernoulli trials with unequal $p$, not $\\mathrm{Bin}(30,0.74)$.\n\nThe pooled rate $0.74$ matches the mean $E[X_1+X_2] = 12\\cdot0.65 + 18\\cdot0.8 = 22.2$, but equal means do not make the distributions equal.\n\nTrue variance (sum of line variances): $5.61$. Pooled binomial variance: $5.772$. Typically $\\mathrm{Var}_{\\mathrm{true}} < \\mathrm{Var}_{\\mathrm{pooled}}$ when the $p$ values differ.\n\nSo the statement is False.",
+        "**A.** → False\n\nA sum of independent binomials is binomial only when every trial shares the same success probability $p$. Here the two lines have different $p$ values, so the shared-bin total is only a sum of independent Bernoulli trials with unequal $p$, not $\\mathrm{Bin}(30,0.74)$.\n\nThe pooled rate $0.74$ matches the mean $E[X_1+X_2] = 12\\cdot0.65 + 18\\cdot0.8 = 22.2$, but equal means do not make the distributions equal.\n\nSo the statement is False.",
         "**B.** → True\n\nThe mean of a binomial count is the number of trials times the success probability, because $X$ is the sum of $n$ independent Bernoulli trials each with mean $p$:\n\n$$E[X] = np$$\n\n$$E[A] = 12 \\cdot 0.65 = 7.8$$\n\n$$E[B] = 18 \\cdot 0.8 = 14.4$$\n\nEven if the combined count is not binomial, linearity of expectation still gives\n\n$$E[X_1 + X_2] = E[X_1] + E[X_2] = 7.8 + 14.4 = 22.2$$\n\nMatching these figures to the claim, the statement is True.",
-        "**C.** → True\n\nFor a binomial count $X \\sim \\mathrm{Bin}(n,p)$, write $X$ as the sum of $n$ independent Bernoulli trials with success probability $p$. Each trial has variance $p(1-p)$, and variances of independent summands add, so\n\n$$\\mathrm{Var}(X) = np(1-p)$$\n\nThis is largest when $p$ is closest to $1/2$, not when $p$ itself is largest.\n\nSide A with $n_A = 12$, $p_A = 0.65$:\n\n$$\\mathrm{Var}(A) = 12 \\cdot 0.65 \\cdot 0.35 = 2.73$$\n\nSide B with $n_B = 18$, $p_B = 0.8$:\n\n$$\\mathrm{Var}(B) = 18 \\cdot 0.8 \\cdot 0.2 = 2.88$$\n\nSo $\\mathrm{Var}(A) = 2.73$ and $\\mathrm{Var}(B) = 2.88$.\n\nThe claim’s comparison is correct, so the statement is True.",
+        "**C.** → True\n\nTrue variance (sum of line variances): $5.61$. Pooled binomial variance: $5.772$. Typically $\\mathrm{Var}_{\\mathrm{true}} < \\mathrm{Var}_{\\mathrm{pooled}}$ when the $p$ values differ.\n\nSo the statement is True.",
         "**D.** → True\n\nUsing $n_A = 12$, $p_A = 0.65$, $n_B = 18$, $p_B = 0.8$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 12$, $p_A = 0.65$, $n_B = 18$, $p_B = 0.8$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nUsing $n_A = 12$, $p_A = 0.65$, $n_B = 18$, $p_B = 0.8$, apply the binomial mean/variance/PMF/tail formulas as the claim requires.\n\nTherefore the statement is True.",
         "**E.** → False\n\nThe standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\\mathrm{SD}(X) = \\sqrt{np(1-p)}$$\n\nSide A ($n_A = 12$, $p_A = 0.65$):\n\n$$\\mathrm{Var}(A) = 2.73$$\n\n$$\\mathrm{SD}(A) = \\sqrt{2.73} \\approx 1.652$$\n\nSide B ($n_B = 18$, $p_B = 0.8$):\n\n$$\\mathrm{Var}(B) = 2.88$$\n\n$$\\mathrm{SD}(B) = \\sqrt{2.88} \\approx 1.697$$\n\nComparing $\\mathrm{SD}(A) \\approx 1.652$ with $\\mathrm{SD}(B) \\approx 1.697$, the statement is False."
       ],
@@ -1032,7 +1032,7 @@
         "Auditor C's expected number of compliant transactions is exactly 27.",
         "Auditor C is more likely to have at most 30 compliant transactions than to have more than 30.",
         "Auditor C's expected number of compliant transactions is exactly 9 more than Auditor D's.",
-        "The probability that Auditor D has at least 22 compliant transactions is smaller than the probability of 21 or fewer compliant transactions.",
+        "Auditor D is less likely to have at least 22 compliant transactions than to have 21 or fewer.",
         "Auditor C's variance in number of compliant transactions is more than 1.2 times Auditor D's variance."
       ],
       "answer_key": [
@@ -1120,10 +1120,10 @@
       "context": "Production Line A makes batches of 27 units, with an acceptable-unit probability of 0.48 per unit. Production Line B makes batches of 19 units, with an acceptable-unit probability of 0.77 per unit. A batch is \"mid-range\" if the number of acceptable units falls between 9 and 14, inclusive. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Line A's probability of landing in the mid-range is more than 1.5 times Line B's probability of landing in that same range.",
-        "For Line A, the probability of between 9 and 14 inclusive is greater than the probability of exactly 9.",
-        "The interval 9 to 14 lies entirely within one standard deviation of Line A's mean.",
-        "Line B's mean number of acceptable units falls inside the 9-to-14 mid-range.",
-        "The gap between Line B's mean and Line A's mean is more than 0.6 standard deviations of Line A's distribution."
+        "For Line A, the mid-range probability is greater than the probability of exactly 9.",
+        "The mid-range lies entirely within one standard deviation of Line A's mean.",
+        "Line B's mean number of acceptable units falls inside the mid-range.",
+        "The gap between Line B's mean and Line A's mean is more than 0.6 of Line A's standard deviations."
       ],
       "answer_key": [
         true,
@@ -1153,7 +1153,7 @@
         "The probability that Team B clears the bar is greater than the probability of exactly 17.",
         "The probability that Team A succeeds on exactly 8 trials is less than the probability that Team B succeeds on exactly 19 trials.",
         "Team A's standard deviation in number of successes is more than 1.3 times Team B's standard deviation.",
-        "The difference in means, Team B minus Team A, is less than the difference in variances, Team A minus Team B."
+        "Team B's mean minus Team A's mean is less than Team A's variance minus Team B's variance."
       ],
       "answer_key": [
         true,
@@ -1181,7 +1181,7 @@
       "statements": [
         "Auditor E's expected number of compliant transactions is less than 23.",
         "Auditor F's expected number of compliant transactions is less than 27.",
-        "The probability that Auditor E has at least 27 compliant transactions is smaller than the probability of 26 or fewer compliant transactions.",
+        "Auditor E is less likely to have at least 27 compliant transactions than to have 26 or fewer.",
         "Auditor F is more than 3 times as likely as Auditor E to meet the stated threshold.",
         "Auditor E's variance in number of compliant transactions is more than four times Auditor F's variance."
       ],
@@ -1271,7 +1271,7 @@
       "statements": [
         "Service A's probability of at least one error is less than 0.40.",
         "Service B is more than 1.2 times as likely as Service A to have at least one error.",
-        "The expected total number of errors across both services combined is 1.43, regardless of whether the combined count itself follows a nameable distribution.",
+        "The expected total number of errors across both services combined is 1.43.",
         "Service B's standard deviation in number of errors is higher than Service A's.",
         "Service A's expected number of errors is greater than Service B's."
       ],
@@ -1299,10 +1299,10 @@
       "title": "Three-Component Device",
       "context": "A device has three independent components arranged so the device fails in a given cycle if at least one component fails. Component 1 fails with probability 0.00031 per cycle, Component 2 with probability 0.00047 per cycle, and Component 3 with probability 0.00022 per cycle. The device runs for 2,500 independent cycles. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The probability that the device fails in a single cycle is well approximated, to within 0.000001, by simply summing the three component failure probabilities.",
+        "The per-cycle device-failure probability differs from the sum of the three component failure probabilities by less than 0.000001.",
         "Over 2,500 independent cycles, the expected number of device failures is more than 2.5.",
         "Over 2,500 cycles, the probability of at least one device failure is greater than 0.90.",
-        "The probability that a single cycle has no device failure, if computed by ignoring Components 2 and 3 entirely, differs from the true value by more than 0.0005.",
+        "Ignoring Components 2 and 3 changes the single-cycle no-failure probability by more than 0.0005.",
         "The standard deviation in number of device failures over 2,500 cycles is greater than 2."
       ],
       "answer_key": [
@@ -1316,7 +1316,7 @@
         "**A.** → True\n\nThe device fails in a cycle if at least one independent component fails, so\n\n$$p = 1 - (1-p_1)(1-p_2)(1-p_3)$$\n\n$$= 1 - (0.99969)(0.99953)(0.99978)$$\n\n$$\\approx 0.00099968$$\n\nThe first-order sum $p_1+p_2+p_3 = 0.001$ differs from the exact union by $3.1727 \\times 10^{-7}$.\n\nSo the statement is True.",
         "**B.** → False\n\nFor $X \\sim \\mathrm{Bin}(n,p)$, the mean is $E[X] = np$.\n\n$$E[X] = 2500 \\cdot 0.001 = 2.4992$$\n\nCompared with the claim, the statement is False.",
         "**C.** → True\n\nLet $p \\approx 0.00099968$ be the per-cycle device-failure probability, and let $X \\sim \\mathrm{Bin}(2500, p)$ be the number of failing cycles.\n\n$$P(X \\ge 1) = 1 - (1-p)^{2500} \\approx 1 - 0.08205 = 0.91795$$\n\nSince $0.91795 > 0.90$, the statement is True.",
-        "**D.** → True\n\nThe device fails in a cycle if at least one independent component fails, so\n\n$$p = 1 - (1-p_1)(1-p_2)(1-p_3)$$\n\n$$= 1 - (0.99969)(0.99953)(0.99978)$$\n\n$$\\approx 0.00099968$$\n\nIgnoring components 2 and 3 uses $1-p_1 = 0.99969$, while the true no-failure probability is $(1-p_1)(1-p_2)(1-p_3) \\approx 0.99900032$. Absolute difference $\\approx 0.00068968$.\n\nSo the statement is True.",
+        "**D.** → True\n\nIgnoring components 2 and 3 uses $1-p_1 = 0.99969$, while the true no-failure probability is $(1-p_1)(1-p_2)(1-p_3) \\approx 0.99900032$. Absolute difference $\\approx 0.00068968$.\n\nSo the statement is True.",
         "**E.** → False\n\nThe standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\\mathrm{SD}(X) = \\sqrt{np(1-p)}$$\n\nWith $n = 2500$ and $p \\approx 0.00099968$: $\\mathrm{SD}(X) \\approx 1.5801$.\n\nCompared with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
@@ -1510,7 +1510,7 @@
       "context": "An airport screens 28 bags per shift. Screener A is newly certified (p = 0.42 of correctly flagging a prohibited item). Screener B is a veteran (p = 0.91). To pass the shift audit, a screener must correctly flag at least 24 of the 28 bags. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.). Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Screener A's probability of a flawless shift is less than 0.0000000025%.",
-        "The probability that Screener A's correct-flag count falls between 18 and 22 (inclusive) is greater than the probability of exactly 18.",
+        "Screener A's probability of between 18 and 22 correct flags is greater than the probability of exactly 18.",
         "Screener B is more than 400,000 times as likely as Screener A to pass the shift audit.",
         "Screener A is less than half as likely as Screener B to land in the 18–22 range.",
         "Screener A's standard deviation in number of correct flags is more than 1.75 times Screener B's standard deviation."
@@ -1540,7 +1540,7 @@
       "context": "A vaccine trial has lab technicians classify antibody responses across 35 samples. Tech A is a first-year analyst (p = 0.38 of correctly classifying a sample). Tech B is a lead analyst (p = 0.94). To pass certification, a technician must correctly classify at least 30 of the 35 samples. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.). Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Tech A's probability of correctly classifying all 35 samples is less than 0.0000000000002%.",
-        "The probability that Tech A's correct-classification count falls between 22 and 27 (inclusive) is greater than the probability of exactly 22.",
+        "Tech A's probability of between 22 and 27 correct classifications is greater than the probability of exactly 22.",
         "Tech B is more than 150,000,000 times as likely as Tech A to pass certification.",
         "Tech A is more than 3 times as likely as Tech B to land in the 22–27 range.",
         "Tech A's standard deviation in number of correct classifications is more than double Tech B's standard deviation."
@@ -1570,7 +1570,7 @@
       "context": "An assembly line has workers inspect 24 units per shift for hidden defects. Worker A is mid-training (p = 0.47 of correctly catching a defect). Worker B is a certified inspector (p = 0.89). To pass the shift audit, a worker must correctly catch at least 20 of the 24 defects. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.). Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Worker B's probability of a flawless shift is greater than 6%.",
-        "The probability that Worker A's correct-catch count falls between 16 and 19 (inclusive) is greater than the probability of exactly 16.",
+        "Worker A's probability of between 16 and 19 correct catches is greater than the probability of exactly 16.",
         "Worker B is more than 3,200 times as likely as Worker A to pass the shift audit.",
         "Worker A is less than one-third as likely as Worker B to land in the 16–19 range.",
         "Worker A's standard deviation in number of correct catches is more than 1.6 times Worker B's standard deviation."
@@ -1600,7 +1600,7 @@
       "context": "A testing agency has graders score 20 essays against a reference key. Grader A is newly trained (p = 0.52 of matching the reference key on a given essay). Grader B is a veteran grader (p = 0.90). To pass review, a grader must match the reference key on at least 17 of the 20 essays. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.). Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Grader A's probability of matching the reference key on all 20 essays is less than 0.0002%.",
-        "The probability that Grader A's matching-essay count falls between 14 and 16 (inclusive) is greater than the probability of exactly 14.",
+        "Grader A's probability of between 14 and 16 matching essays is greater than the probability of exactly 14.",
         "Grader B is more than 400 times as likely as Grader A to pass review.",
         "Grader A is more than 60% as likely as Grader B to land in the 14–16 range.",
         "Grader A's standard deviation in number of matching essays is more than 1.65 times Grader B's standard deviation."
@@ -1630,7 +1630,7 @@
       "context": "An air traffic control simulator runs 32 scenarios per certification attempt. Controller A is a trainee (p = 0.44 of correctly resolving a scenario). Controller B is a certified controller (p = 0.92). To pass certification, a controller must correctly resolve at least 27 of the 32 scenarios. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.). Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Controller A's probability of correctly resolving all 32 scenarios is less than 0.00000000038%.",
-        "The probability that Controller A's correct-resolution count falls between 20 and 24 (inclusive) is greater than the probability of exactly 20.",
+        "Controller A's probability of between 20 and 24 correct resolutions is greater than the probability of exactly 20.",
         "Controller B is more than 320,000 times as likely as Controller A to pass certification.",
         "Controller A is more than 9 times as likely as Controller B to land in the 20–24 range.",
         "Controller A's standard deviation in number of correct resolutions is more than 1.8 times Controller B's standard deviation."
