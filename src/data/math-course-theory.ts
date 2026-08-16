@@ -4,6 +4,7 @@
  * (sync marker for Lovable GitHub pull)
  */
 
+import ch1 from "./math-theory/ch1.md?raw";
 import ch5 from "./math-theory/ch5.md?raw";
 import ch13 from "./math-theory/ch13.md?raw";
 
@@ -17,6 +18,11 @@ export type MathCourseTheoryChapter = {
 };
 
 export const MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = {
+  1: {
+    num: 1,
+    title: "Logic and set theory",
+    markdown: ch1,
+  },
   5: {
     num: 5,
     title: "Linear equations in two unknowns",

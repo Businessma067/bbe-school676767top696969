@@ -954,6 +954,451 @@ function FinancialStatements() {
   );
 }
 
+/* ── Math Ch1 (Sydsaeter-style set figures) ─────────────────────────── */
+
+const FILL = "rgba(196, 92, 26, 0.28)";
+const FILL_SOFT = "rgba(196, 92, 26, 0.14)";
+const STROKE = INK;
+
+function VennPanel({
+  title,
+  children,
+  w = 220,
+  h = 150,
+}: {
+  title: string;
+  children: ReactNode;
+  w?: number;
+  h?: number;
+}) {
+  return (
+    <div className="min-w-0">
+      <div className="mb-1.5 text-center text-[12px] font-semibold text-primary sm:text-[13px]">{title}</div>
+      <svg viewBox={`0 0 ${w} ${h}`} className="mx-auto h-auto w-full max-w-[240px]" role="img">
+        {children}
+      </svg>
+    </div>
+  );
+}
+
+/** Two overlapping circles inside a universe box (shared geometry). */
+function TwoSetUniverse({
+  shade,
+  showLabels = true,
+}: {
+  shade: "union" | "intersection" | "diff-ab" | "diff-ba" | "complement-a" | "subset" | "none";
+  showLabels?: boolean;
+}) {
+  const uid = `venn2-${shade}`;
+  return (
+    <>
+      <defs>
+        <clipPath id={`${uid}-b`}>
+          <circle cx="122" cy="72" r="48" />
+        </clipPath>
+      </defs>
+      <rect x="8" y="8" width="184" height="128" fill="none" stroke={GRID} strokeWidth="1.5" rx="4" />
+      <text x="18" y="24" fill={MUTED} fontSize="11" fontWeight="600">
+        U
+      </text>
+
+      {shade === "union" && (
+        <>
+          <circle cx="78" cy="72" r="48" fill={FILL} stroke="none" />
+          <circle cx="122" cy="72" r="48" fill={FILL} stroke="none" />
+        </>
+      )}
+      {shade === "intersection" && (
+        <circle cx="78" cy="72" r="48" fill={FILL} stroke="none" clipPath={`url(#${uid}-b)`} />
+      )}
+      {shade === "diff-ab" && (
+        <>
+          <circle cx="78" cy="72" r="48" fill={FILL} stroke="none" />
+          <circle cx="122" cy="72" r="48" fill="#fff" stroke="none" />
+        </>
+      )}
+      {shade === "diff-ba" && (
+        <>
+          <circle cx="122" cy="72" r="48" fill={FILL} stroke="none" />
+          <circle cx="78" cy="72" r="48" fill="#fff" stroke="none" />
+        </>
+      )}
+      {shade === "complement-a" && (
+        <>
+          <rect x="8" y="8" width="184" height="128" fill={FILL} rx="4" />
+          <circle cx="100" cy="72" r="48" fill="#fff" stroke="none" />
+        </>
+      )}
+      {shade === "subset" && (
+        <>
+          <circle cx="118" cy="72" r="52" fill={FILL_SOFT} stroke="none" />
+          <circle cx="100" cy="72" r="28" fill={FILL} stroke="none" />
+        </>
+      )}
+
+      {shade === "complement-a" ? (
+        <>
+          <circle cx="100" cy="72" r="48" fill="none" stroke={STROKE} strokeWidth="1.75" />
+          {showLabels && (
+            <text x="100" y="76" textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+              A
+            </text>
+          )}
+        </>
+      ) : shade === "subset" ? (
+        <>
+          <circle cx="118" cy="72" r="52" fill="none" stroke={STROKE} strokeWidth="1.75" />
+          <circle cx="100" cy="72" r="28" fill="none" stroke={STROKE} strokeWidth="1.75" />
+          {showLabels && (
+            <>
+              <text x="96" y="76" textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+                A
+              </text>
+              <text x="152" y="48" fill={INK} fontSize="13" fontWeight="700">
+                B
+              </text>
+            </>
+          )}
+        </>
+      ) : (
+        <>
+          <circle cx="78" cy="72" r="48" fill="none" stroke={STROKE} strokeWidth="1.75" />
+          <circle cx="122" cy="72" r="48" fill="none" stroke={STROKE} strokeWidth="1.75" />
+          {showLabels && (
+            <>
+              <text x="52" y="76" textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+                A
+              </text>
+              <text x="148" y="76" textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+                B
+              </text>
+            </>
+          )}
+        </>
+      )}
+    </>
+  );
+}
+
+/** Sydsaeter Fig. 1.1.1 — four elementary two-set pictures. */
+function VennTwoSetOps() {
+  return (
+    <div>
+      <div className="grid grid-cols-2 gap-4 sm:gap-5">
+        <VennPanel title={"A ∪ B"}>
+          <TwoSetUniverse shade="union" />
+        </VennPanel>
+        <VennPanel title={"A ∩ B"}>
+          <TwoSetUniverse shade="intersection" />
+        </VennPanel>
+        <VennPanel title={"A \\ B"}>
+          <TwoSetUniverse shade="diff-ab" />
+        </VennPanel>
+        <VennPanel title={"A ⊆ B"}>
+          <TwoSetUniverse shade="subset" />
+        </VennPanel>
+      </div>
+      <Hint>Shaded regions show the set named above each diagram.</Hint>
+    </div>
+  );
+}
+
+function VennComplement() {
+  return (
+    <div>
+      <div className="mx-auto max-w-[260px]">
+        <VennPanel title={"Aᶜ = U \\ A"} w={220} h={150}>
+          <TwoSetUniverse shade="complement-a" showLabels />
+        </VennPanel>
+      </div>
+      <Hint>Shaded = everything in U that is not in A.</Hint>
+    </div>
+  );
+}
+
+/** Three-set Venn shared geometry (book Figs 1.1.2–1.1.3). */
+function ThreeSetBase({
+  shadeKeys,
+  labelMode,
+}: {
+  shadeKeys?: Set<string>;
+  labelMode: "abc" | "regions";
+}) {
+  const A = { cx: 110, cy: 78, r: 58 };
+  const B = { cx: 170, cy: 78, r: 58 };
+  const C = { cx: 140, cy: 128, r: 58 };
+  const uid = labelMode === "regions" ? "venn3r" : "venn3s";
+
+  return (
+    <>
+      <defs>
+        <clipPath id={`${uid}-b`}>
+          <circle cx={B.cx} cy={B.cy} r={B.r} />
+        </clipPath>
+        <clipPath id={`${uid}-c`}>
+          <circle cx={C.cx} cy={C.cy} r={C.r} />
+        </clipPath>
+      </defs>
+      <rect x="12" y="10" width="256" height="200" fill="none" stroke={GRID} strokeWidth="1.5" rx="4" />
+      <text x="22" y="28" fill={MUTED} fontSize="12" fontWeight="600">
+        U
+      </text>
+
+      {shadeKeys?.has("distributive") && (
+        <g>
+          <circle cx={A.cx} cy={A.cy} r={A.r} fill={FILL} stroke="none" clipPath={`url(#${uid}-b)`} />
+          <circle cx={A.cx} cy={A.cy} r={A.r} fill={FILL} stroke="none" clipPath={`url(#${uid}-c)`} />
+        </g>
+      )}
+
+      <circle cx={A.cx} cy={A.cy} r={A.r} fill="none" stroke={STROKE} strokeWidth="1.75" />
+      <circle cx={B.cx} cy={B.cy} r={B.r} fill="none" stroke={STROKE} strokeWidth="1.75" />
+      <circle cx={C.cx} cy={C.cy} r={C.r} fill="none" stroke={STROKE} strokeWidth="1.75" />
+
+      {labelMode === "abc" ? (
+        <>
+          <text x="72" y="70" fill={INK} fontSize="14" fontWeight="700">
+            A
+          </text>
+          <text x="198" y="70" fill={INK} fontSize="14" fontWeight="700">
+            B
+          </text>
+          <text x="132" y="168" fill={INK} fontSize="14" fontWeight="700">
+            C
+          </text>
+        </>
+      ) : (
+        <>
+          <text x="140" y="92" textAnchor="middle" fill={INK} fontSize="12" fontWeight="700">
+            (7)
+          </text>
+          <text x="140" y="58" textAnchor="middle" fill={INK} fontSize="12" fontWeight="700">
+            (1)
+          </text>
+          <text x="168" y="118" textAnchor="middle" fill={INK} fontSize="12" fontWeight="700">
+            (2)
+          </text>
+          <text x="112" y="118" textAnchor="middle" fill={INK} fontSize="12" fontWeight="700">
+            (3)
+          </text>
+          <text x="78" y="72" textAnchor="middle" fill={INK} fontSize="12" fontWeight="700">
+            (4)
+          </text>
+          <text x="202" y="72" textAnchor="middle" fill={INK} fontSize="12" fontWeight="700">
+            (5)
+          </text>
+          <text x="140" y="168" textAnchor="middle" fill={INK} fontSize="12" fontWeight="700">
+            (6)
+          </text>
+          <text x="246" y="28" textAnchor="end" fill={INK} fontSize="12" fontWeight="700">
+            (8)
+          </text>
+          <text x="58" y="48" fill={MUTED} fontSize="11" fontWeight="700">
+            A
+          </text>
+          <text x="212" y="48" fill={MUTED} fontSize="11" fontWeight="700">
+            B
+          </text>
+          <text x="140" y="198" textAnchor="middle" fill={MUTED} fontSize="11" fontWeight="700">
+            C
+          </text>
+        </>
+      )}
+    </>
+  );
+}
+
+/** Sydsaeter Fig. 1.1.2 — A ∩ (B ∪ C). */
+function VennDistributive() {
+  return (
+    <div>
+      <div className="mx-auto max-w-[320px]">
+        <VennPanel title={"A ∩ (B ∪ C)"} w={280} h={220}>
+          <ThreeSetBase shadeKeys={new Set(["distributive"])} labelMode="abc" />
+        </VennPanel>
+      </div>
+      <Hint>
+        The shaded part is also (A ∩ B) ∪ (A ∩ C): the pieces of A that meet B, or meet C, or both.
+      </Hint>
+    </div>
+  );
+}
+
+/** Sydsaeter Fig. 1.1.3 — eight regions for three sets. */
+function VennThreeRegions() {
+  return (
+    <div>
+      <div className="mx-auto max-w-[320px]">
+        <VennPanel title="Three sets: eight regions" w={280} h={220}>
+          <ThreeSetBase labelMode="regions" />
+        </VennPanel>
+      </div>
+      <div className="mt-3 grid gap-1 text-[11px] leading-snug text-muted-foreground sm:grid-cols-2 sm:text-[12px]">
+        <div>(1) (A ∩ B) \ C</div>
+        <div>(2) (B ∩ C) \ A</div>
+        <div>(3) (C ∩ A) \ B</div>
+        <div>(4) A \ (B ∪ C)</div>
+        <div>(5) B \ (C ∪ A)</div>
+        <div>(6) C \ (A ∪ B)</div>
+        <div>(7) A ∩ B ∩ C</div>
+        <div>(8) (A ∪ B ∪ C)ᶜ</div>
+      </div>
+    </div>
+  );
+}
+
+function VennDeMorganUnion() {
+  return (
+    <div>
+      <div className="mx-auto max-w-[300px]">
+        <svg viewBox="0 0 220 150" className="mx-auto h-auto w-full max-w-[260px]" role="img">
+          <rect x="8" y="8" width="184" height="128" fill={FILL} stroke={GRID} strokeWidth="1.5" rx="4" />
+          <text x="18" y="24" fill={MUTED} fontSize="11" fontWeight="600">
+            U
+          </text>
+          <circle cx="78" cy="72" r="48" fill="#fff" stroke={STROKE} strokeWidth="1.75" />
+          <circle cx="122" cy="72" r="48" fill="#fff" stroke={STROKE} strokeWidth="1.75" />
+          <text x="52" y="76" textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+            A
+          </text>
+          <text x="148" y="76" textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+            B
+          </text>
+        </svg>
+      </div>
+      <div className="mt-1 text-center text-[12px] font-semibold text-primary">(A ∪ B)ᶜ = Aᶜ ∩ Bᶜ</div>
+      <Hint>Shaded = outside A ∪ B. That is exactly the points missing from both A and B.</Hint>
+    </div>
+  );
+}
+
+function VennDeMorganInter() {
+  return (
+    <div>
+      <div className="mx-auto max-w-[300px]">
+        <svg viewBox="0 0 220 150" className="mx-auto h-auto w-full max-w-[260px]" role="img">
+          <rect x="8" y="8" width="184" height="128" fill={FILL} stroke={GRID} strokeWidth="1.5" rx="4" />
+          <text x="18" y="24" fill={MUTED} fontSize="11" fontWeight="600">
+            U
+          </text>
+          <defs>
+            <clipPath id="dm-b">
+              <circle cx="122" cy="72" r="48" />
+            </clipPath>
+          </defs>
+          {/* White out only the intersection lens */}
+          <circle cx="78" cy="72" r="48" fill="#fff" stroke="none" clipPath="url(#dm-b)" />
+          <circle cx="78" cy="72" r="48" fill="none" stroke={STROKE} strokeWidth="1.75" />
+          <circle cx="122" cy="72" r="48" fill="none" stroke={STROKE} strokeWidth="1.75" />
+          <text x="52" y="76" textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+            A
+          </text>
+          <text x="148" y="76" textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+            B
+          </text>
+        </svg>
+      </div>
+      <div className="mt-1 text-center text-[12px] font-semibold text-primary">(A ∩ B)ᶜ = Aᶜ ∪ Bᶜ</div>
+      <Hint>Shaded = everything except the lens A ∩ B. That is Aᶜ ∪ Bᶜ.</Hint>
+    </div>
+  );
+}
+
+/** Budget set triangle from Sydsaeter §1.1 (also drawn later as a consumption set). */
+function BudgetSet() {
+  const W = 340;
+  const H = 260;
+  const ox = 48;
+  const oy = 210;
+  const xMax = 280;
+  const yMax = 40;
+  // Triangle: (0,0), (m/p,0), (0,m/q) — illustrative intercepts
+  const xInt = 250;
+  const yInt = 50;
+  const points = `${ox},${oy} ${xInt},${oy} ${ox},${yInt}`;
+  return (
+    <div>
+      <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-[380px]" role="img">
+        <rect x="0" y="0" width={W} height={H} fill="transparent" />
+        {/* axes */}
+        <line x1={ox} y1={oy} x2={xMax} y2={oy} stroke={STROKE} strokeWidth="1.75" />
+        <line x1={ox} y1={oy} x2={ox} y2={yMax} stroke={STROKE} strokeWidth="1.75" />
+        <polygon points={`${xMax},${oy} ${xMax - 8},${oy - 4} ${xMax - 8},${oy + 4}`} fill={STROKE} />
+        <polygon points={`${ox},${yMax} ${ox - 4},${yMax + 8} ${ox + 4},${yMax + 8}`} fill={STROKE} />
+        <text x={xMax + 4} y={oy + 4} fill={INK} fontSize="13" fontWeight="700">
+          x
+        </text>
+        <text x={ox - 4} y={yMax - 4} fill={INK} fontSize="13" fontWeight="700">
+          y
+        </text>
+        {/* shaded budget set */}
+        <polygon points={points} fill={FILL} stroke={ACCENT} strokeWidth="2" />
+        {/* intercept labels */}
+        <text x={xInt} y={oy + 18} textAnchor="middle" fill={MUTED} fontSize="12">
+          m/p
+        </text>
+        <text x={ox - 10} y={yInt + 4} textAnchor="end" fill={MUTED} fontSize="12">
+          m/q
+        </text>
+        <text x={ox + 36} y={oy - 36} fill={INK} fontSize="14" fontWeight="700">
+          B
+        </text>
+        <text x={170} y={120} fill={MUTED} fontSize="11">
+          px + qy ≤ m
+        </text>
+        <text x={170} y={136} fill={MUTED} fontSize="11">
+          x ≥ 0, y ≥ 0
+        </text>
+      </svg>
+      <Hint>The budget set is the filled triangle: every affordable nonnegative bundle (x, y).</Hint>
+    </div>
+  );
+}
+
+function VennSurveyCount() {
+  return (
+    <div>
+      <div className="mx-auto max-w-[280px]">
+        <svg viewBox="0 0 240 170" className="mx-auto h-auto w-full" role="img">
+          <rect x="10" y="10" width="220" height="150" fill="none" stroke={GRID} strokeWidth="1.5" rx="4" />
+          <text x="20" y="28" fill={MUTED} fontSize="11" fontWeight="600">
+            U
+          </text>
+          <circle cx="95" cy="90" r="52" fill={FILL_SOFT} stroke={STROKE} strokeWidth="1.75" />
+          <circle cx="145" cy="90" r="52" fill={FILL_SOFT} stroke={STROKE} strokeWidth="1.75" />
+          <circle cx="95" cy="90" r="52" fill={FILL} stroke="none" clipPath="url(#surv-t)" />
+          <defs>
+            <clipPath id="surv-t">
+              <circle cx="145" cy="90" r="52" />
+            </clipPath>
+          </defs>
+          <text x="62" y="88" textAnchor="middle" fill={INK} fontSize="12" fontWeight="700">
+            Coffee
+          </text>
+          <text x="62" y="104" textAnchor="middle" fill={MUTED} fontSize="11">
+            50
+          </text>
+          <text x="178" y="88" textAnchor="middle" fill={INK} fontSize="12" fontWeight="700">
+            Tea
+          </text>
+          <text x="178" y="104" textAnchor="middle" fill={MUTED} fontSize="11">
+            40
+          </text>
+          <text x="120" y="94" textAnchor="middle" fill={INK} fontSize="13" fontWeight="700">
+            35
+          </text>
+          <text x="210" y="150" textAnchor="end" fill={MUTED} fontSize="11">
+            neither: 10
+          </text>
+        </svg>
+      </div>
+      <Hint>
+        n(C ∪ T) = 50 + 40 − 35 = 55, then add the 10 outside both circles to get |U| = 65.
+      </Hint>
+    </div>
+  );
+}
+
 /** Northline opening BS — distinct from the Fuhrmann 49,000 Tina/Steve set. */
 const FIGURES: Record<string, () => ReactNode> = {
   "circular-flow": CircularFlow,
@@ -982,6 +1427,14 @@ const FIGURES: Record<string, () => ReactNode> = {
   "price-elasticity-elastic": PriceElasticityElastic,
   "price-elasticity-inelastic": PriceElasticityInelastic,
   "financial-statements": FinancialStatements,
+  "budget-set": BudgetSet,
+  "venn-two-set-ops": VennTwoSetOps,
+  "venn-complement": VennComplement,
+  "venn-distributive": VennDistributive,
+  "venn-three-regions": VennThreeRegions,
+  "venn-de-morgan-union": VennDeMorganUnion,
+  "venn-de-morgan-inter": VennDeMorganInter,
+  "venn-survey-count": VennSurveyCount,
 };
 
 export function TheoryFigure({ id, caption, className }: Props) {
