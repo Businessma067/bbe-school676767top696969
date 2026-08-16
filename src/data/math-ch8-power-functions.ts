@@ -8765,7 +8765,7 @@ $$d^{2}=\\frac{720}{5}=144$$
 
 $$d=\\sqrt{144}=12$$
 
-Only the positive root is admissible, since a distance cannot be negative. The answer agrees with the scale factors already in hand, because twelve metres is four times the survey distance and $4^{-2}=1/16$ turns $80$ into exactly $5$. Multiplying the survey distance by the dose ratio $80/5=16$ would put the barrier at $48$ metres. The barrier belongs at twelve metres, so the statement is True.`,
+Only the positive root is admissible, since a distance cannot be negative. The answer agrees with the scale factors already in hand, because twelve metres is four times the survey distance and $4^{-2}=1/16$ turns $80$ into exactly $5$ microsieverts per hour. Multiplying the survey distance by the dose ratio $80/5=16$ would put the barrier at $48$ metres, four times too far. The barrier belongs at twelve metres, so the statement is True.`,
       `**E.** → False
 
 Tripling the distance feeds a factor of three into an exponent of $-2$, so the surviving fraction is the reciprocal of a square.
@@ -8883,7 +8883,7 @@ $$t^{2/3}=16$$
 
 $$t=16^{3/2}=\\left(\\sqrt{16}\\right)^{3}=4^{3}=64$$
 
-Substituting hour $64$ forward returns $15\\cdot 16=240$ metres, so the inversion checks. At the claimed hour the plume falls well short, since $32^{2/3}\\approx 10.079$ puts the radius near $151$ metres. The last stretch of spreading is slow, so the extra thirty-two hours add only about $89$ metres. Inverting by multiplying rather than raising to $3/2$ is what shortens the wait. The radius reaches $240$ metres at hour $64$, so the statement is False.`,
+Substituting hour $64$ forward returns $15\\cdot 16=240$ metres, so it checks. At the claimed hour the plume falls well short, since $32^{2/3}\\approx 10.079$ puts the radius near $151$ metres. The last stretch of spreading is slow, so the extra thirty-two hours add only about $89$ metres. Inverting by multiplying rather than raising to $3/2$ is what shortens the wait. The radius reaches $240$ metres at hour $64$, so the statement is False.`,
       `**E.** → False
 
 Proportional growth requires exponent one, while squaring a two-thirds power leaves an exponent of $4/3$.
@@ -8985,7 +8985,7 @@ $$100^{3/2}=\\left(\\sqrt{100}\\right)^{3}=1000$$
 
 $$Q=0.016\\,h_{\\mathrm{cm}}^{3/2}$$
 
-The gauged point settles it, since $h_{\\mathrm{cm}}=25$ gives $0.016(125)=2$ cubic metres per second, while the quoted coefficient returns $200$. Dividing by $10$ once produces the claimed $1.6$, treating the exponent as though it were $1/2$. The coefficient is $0.016$, so the statement is False.`,
+The gauged point settles it, since $h_{\\mathrm{cm}}=25$ gives $0.016(125)=2$ cubic metres per second, while the quoted value returns $200$. Dividing by $10$ once produces the claimed $1.6$, treating the exponent as though it were $1/2$. The coefficient is $0.016$, so the statement is False.`,
       `**C.** → False
 
 Two conversions act here at once: the head factor divides the coefficient by $100^{3/2}=1000$, while the switch to litres multiplies it by $1000$, and the two happen to cancel exactly.
@@ -9211,7 +9211,7 @@ $$3A=6 \\quad \\Rightarrow \\quad A=2$$
 The calibrated intermediate law is $m(t)=2t^{1/2}$, and it reproduces the record, since $2\\sqrt{9}=2\\cdot 3=6$. Reading the recorded $6$ as the coefficient itself is the tempting slip here: that would ignore the factor $9^{1/2}=3$ sitting between the coefficient and the reading, and it would predict $m(9)=18$ tonnes per hour instead. The recovered law is exactly the one named, so the statement is True.`,
       `**B.** → True
 
-Composition feeds the inner law into the outer rule one stage at a time. Stage one is the mass flow already recovered:
+Composition feeds the calibrated inner law into the outer rule one stage at a time. Stage one is the mass flow already recovered:
 
 $$m(t)=2t^{1/2}$$
 
@@ -9219,11 +9219,11 @@ Stage two raises that expression to the fourth power, multiplying the exponents 
 
 $$\\left(2t^{1/2}\\right)^{4}=2^{4}\\,t^{(1/2)(4)}=16\\,t^{2}$$
 
-Stage three divides by the $16$ in the outer rule, and the two sixteens cancel exactly:
+Stage three divides by the $16$ sitting in the outer rule, and the two sixteens cancel exactly:
 
 $$P(m(t))=\\frac{16\\,t^{2}}{16}=t^{2}$$
 
-Running the chain at the calibration setting agrees, since $m(9)=6$ and $P(6)=1296/16=81=9^{2}$. Stopping once the coefficient is recovered would leave the outer rule unused, the usual way a two-stage chain goes unfinished. The composed map is $t^{2}$, so the statement is True.`,
+Running the chain numerically at the calibration setting agrees, since $m(9)=6$ and $P(6)=1296/16=81=9^{2}$, matching the composed square. Stopping once the coefficient is recovered would leave the outer rule unused, the usual way a two-stage chain goes unfinished. The composed map is $t^{2}$, so the statement is True.`,
       `**C.** → False
 
 A doubling of the throttle is an input multiplier of $k=2$, and it reaches the index through the composed exponent $2$ rather than through the inner exponent $1/2$:
@@ -10064,7 +10064,7 @@ Evaluating the exact expression leaves the finite response:
 
 $$\\frac{1}{1.21}\\approx 0.82645 \\quad \\Rightarrow \\quad 1-0.82645\\approx 17.36\\%$$
 
-The shortcut overstates the decline by more than two and a half percentage points, reading a curved relationship as a straight line. Levels agree, since $q(10)=40$ and $q(11)=4000/121\\approx 33.06$, a loss of about $6.94$ tickets on a base of $40$. The exact cut is about $17.4\\%$, so the statement is False.`,
+The shortcut overstates the decline by more than two and a half points, reading a curved relationship as a straight line. Levels agree, since $q(10)=40$ and $q(11)=4000/121\\approx 33.06$, a loss of about $6.94$ tickets on a base of $40$. The exact cut is about $17.4\\%$, so the statement is False.`,
       `**D.** → False
 
 Revenue is price times quantity, and multiplying by $p$ raises the exponent by one:
@@ -10192,11 +10192,11 @@ $$T(8)=8\\cdot 16\\sqrt{2}=128\\sqrt{2}\\approx 181.02, \\qquad \\frac{181.02}{6
 A doubling would have given $128$ trays per hour, and the model returns about $181$. Exact doubling of output is the signature of exponent $1$, and any exponent above $1$ must overshoot it. Doubling the setting multiplies throughput by $2\\sqrt{2}$, so the statement is False.`,
       `**E.** → False
 
-A counterfactual coefficient enters numerator and denominator of a scale factor in equal measure, so the quotient cannot move. Build both throughputs under it:
+A counterfactual coefficient enters the numerator and the denominator of a scale factor in equal measure, so the quotient cannot register it at all. Build both throughputs under the enlarged coefficient:
 
 $$T_{c}(2e)=1.25A(2e)^{3/2}, \\qquad T_{c}(e)=1.25A\\,e^{3/2}$$
 
-Both $1.25$ and $A$ cancel when the ratio is formed:
+The factor $1.25$ and the coefficient $A$ both cancel when the ratio is formed:
 
 $$\\frac{T_{c}(2e)}{T_{c}(e)}=\\frac{(2e)^{3/2}}{e^{3/2}}=2^{3/2}=2\\sqrt{2}\\approx 2.8284$$
 
