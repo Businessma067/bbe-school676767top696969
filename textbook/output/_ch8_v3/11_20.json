@@ -35,29 +35,29 @@
     "title": "A Helpdesk Wait That Falls With the Team",
     "context": "Callers wait according to $W(n)=A n^{-\\frac{1}{2}}$ minutes when $n>0$ agents are on duty. $4$ agents on the shift produce a $24$ minute wait. Staffing cannot exceed $50$ agents. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "With $9$ agents on duty, callers wait less than $20$ minutes.",
-      "The number of agents needed for a given wait is itself a power of that wait.",
-      "If the team keeps growing, the wait eventually becomes negative.",
+      "The wait cut by going from $4$ agents to $9$ already exceeds the wait cut from $9$ agents to $16$.",
       "A $6$-minute wait would need more than $50$ agents.",
-      "Doubling the recorded team halves the wait."
+      "With $36$ agents, callers wait under $10$ minutes.",
+      "Doubling the recorded team of $4$ cuts the wait in half.",
+      "The team that brings the wait down to $8$ minutes already exceeds the $50$-agent cap."
     ],
     "answer_key": [
       true,
       true,
-      false,
       true,
+      false,
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe $4$-agent record pins the coefficient:\n\n$$\nA\\cdot 4^{-\\frac{1}{2}}=24\n$$\n\n$$\n4^{-\\frac{1}{2}}=\\frac{1}{2}\n$$\n\n$$\n\\frac{A}{2}=24\n$$\n\n$$\nA=48\n$$\n\nWait is then $W(n)=48 n^{-\\frac{1}{2}}$. With $9$ agents the square root is $3$:\n\n$$\nW(9)=48\\cdot 9^{-\\frac{1}{2}}\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\n9^{-\\frac{1}{2}}=\\frac{1}{3}\n$$\n\n$$\nW(9)=48\\cdot\\frac{1}{3}\n$$\n\n$$\nW(9)=16\n$$\n\n$$\n16<20\n$$\n\nCallers wait $16$ minutes, which is less than $20$, so the statement is True.",
-      "**B.** → True\n\nWait is $W=48 n^{-\\frac{1}{2}}$. Solving for the team size:\n\n$$\n\\frac{W}{48}=n^{-\\frac{1}{2}}\n$$\n\n$$\nn=\\left(\\frac{48}{W}\\right)^{2}\n$$\n\nThat is a power of the wait with exponent $2$. A power with a nonzero exponent inverts to another power, so the statement is True.",
-      "**C.** → False\n\nWait is $W(n)=\\frac{48}{\\sqrt{n}}$. For every $n>0$ the square root is positive, so the wait stays positive. A negative exponent sends the wait towards zero from above, never through zero, so the statement is False.",
-      "**D.** → True\n\nA $6$-minute wait means\n\n$$\n48 n^{-\\frac{1}{2}}=6\n$$\n\n$$\n\\frac{48}{\\sqrt{n}}=6\n$$\n\n$$\n\\sqrt{n}=\\frac{48}{6}\n$$\n\n$$\n\\sqrt{n}=8\n$$\n\n$$\nn=64\n$$\n\n$$\n64>50\n$$\n\nThe inversion asks for $64$ agents, which sits past the $50$-agent cap, so the statement is True.",
-      "**E.** → False\n\nDoubling the team would halve the wait only if the exponent were $-1$. With exponent $-\\frac{1}{2}$ the scale factor is\n\n$$\n\\frac{W(2n)}{W(n)}=2^{-\\frac{1}{2}}\n$$\n\nwhich is about $0.71$, not $\\frac{1}{2}$. The wait falls, but not by half, so the statement is False."
+      "**A.** → True\n\nThe $4$-agent record pins the coefficient:\n\n$$\nA\\cdot 4^{-\\frac{1}{2}}=24\n$$\n\n$$\n4^{-\\frac{1}{2}}=\\frac{1}{2}\n$$\n\n$$\n\\frac{A}{2}=24\n$$\n\n$$\nA=48\n$$\n\nWait is then $W(n)=48 n^{-\\frac{1}{2}}$. With $9$ agents:\n\n$$\nW(9)=48\\cdot 9^{-\\frac{1}{2}}\n$$\n\n$$\n9^{-\\frac{1}{2}}=\\frac{1}{3}\n$$\n\n$$\nW(9)=48\\cdot\\frac{1}{3}\n$$\n\n$$\nW(9)=16\n$$\n\nThe wait cut from $4$ agents to $9$ is\n\n$$\n24-16=8\n$$\n\nWith $16$ agents:\n\n$$\nW(16)=48\\cdot 16^{-\\frac{1}{2}}\n$$\n\n$$\n16^{-\\frac{1}{2}}=\\frac{1}{4}\n$$\n\n$$\nW(16)=48\\cdot\\frac{1}{4}\n$$\n\n$$\nW(16)=12\n$$\n\nThe wait cut from $9$ agents to $16$ is\n\n$$\n16-12=4\n$$\n\n$$\n8>4\n$$\n\nThe first stretch cuts $8$ minutes and the second cuts only $4$, so the statement is True.",
+      "**B.** → True\n\nThe recovered law is $W=48 n^{-\\frac{1}{2}}$. A $6$-minute wait means\n\n$$\n48 n^{-\\frac{1}{2}}=6\n$$\n\n$$\n\\frac{48}{\\sqrt{n}}=6\n$$\n\n$$\n\\sqrt{n}=\\frac{48}{6}\n$$\n\n$$\n\\sqrt{n}=8\n$$\n\n$$\nn=64\n$$\n\n$$\n64>50\n$$\n\nThe inversion asks for $64$ agents, which sits past the $50$-agent cap, so the statement is True.",
+      "**C.** → True\n\nThe recovered law is $W=48 n^{-\\frac{1}{2}}$. With $36$ agents the square root is $6$:\n\n$$\nW(36)=48\\cdot 36^{-\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\n36^{-\\frac{1}{2}}=\\frac{1}{6}\n$$\n\n$$\nW(36)=48\\cdot\\frac{1}{6}\n$$\n\n$$\nW(36)=8\n$$\n\n$$\n8<10\n$$\n\nCallers wait $8$ minutes, which is under $10$, so the statement is True.",
+      "**D.** → False\n\nThe recovered law is $W=48 n^{-\\frac{1}{2}}$. Doubling the recorded team of $4$ puts $8$ agents on duty:\n\n$$\nW(8)=48\\cdot 8^{-\\frac{1}{2}}\n$$\n\n$$\n8^{\\frac{1}{2}}=2\\sqrt{2}\n$$\n\n$$\nW(8)=\\frac{48}{2\\sqrt{2}}\n$$\n\n$$\nW(8)=\\frac{24}{\\sqrt{2}}\n$$\n\n$$\nW(8)=12\\sqrt{2}\n$$\n\n$$\n12\\sqrt{2}\\approx 16.97\n$$\n\nHalf of the recorded $24$-minute wait is $12$. The wait falls only to about $16.97$ minutes, not to $12$, so the statement is False.",
+      "**E.** → False\n\nThe recovered law is $W=48 n^{-\\frac{1}{2}}$. An $8$-minute wait means\n\n$$\n48 n^{-\\frac{1}{2}}=8\n$$\n\n$$\n\\frac{48}{\\sqrt{n}}=8\n$$\n\n$$\n\\sqrt{n}=\\frac{48}{8}\n$$\n\n$$\n\\sqrt{n}=6\n$$\n\n$$\nn=36\n$$\n\n$$\n36<50\n$$\n\nThe team that hits $8$ minutes is $36$ agents, which still sits inside the $50$-agent cap, so the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 12,
-    "solution_overview": "Wait follows $W(n)=A n^{-\\frac{1}{2}}$ minutes for $n>0$ agents. Four agents produce a twenty-four minute wait, and staffing cannot exceed fifty.\n\n**Part 1: Building the model.**\n\nLet $n$ = agents and $W$ = wait. The exponent is given, so the four-agent observation fixes $A$. The cap constrains inversions.\n\n**1. Translate: the recorded wait.**\n\n$$A\\cdot 4^{-\\frac{1}{2}}=24$$\n\n**Part 2: The model.**\n\n$$W(n)=48 n^{-\\frac{1}{2}} \\tag{1}$$\n\n$$n\\le 50 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $W(9)=16<20$. Doubling the team multiplies wait by $1/\\sqrt{2}$, not by $1/2$. The inverse $n=(48/W)^{2}$ is a power of $W$.\n\n**2.** A six-minute wait needs $n=64$, which violates (2).\n\n**3.** The wait approaches $0$ but never turns negative.\n\n**Answer.** $A=48$ | $W(9)=16$ | $n=64$ for six minutes"
+    "solution_overview": "Wait follows $W(n)=A n^{-\\frac{1}{2}}$ minutes for $n>0$ agents. Four agents produce a twenty-four minute wait, and staffing cannot exceed fifty.\n\n**Part 1: Building the model.**\n\nLet $n$ = agents and $W$ = wait. The exponent is given, so the four-agent observation fixes $A$. The cap constrains inversions.\n\n**1. Translate: the recorded wait.**\n\n$$A\\cdot 4^{-\\frac{1}{2}}=24$$\n\n**Part 2: The model.**\n\n$$W(n)=48 n^{-\\frac{1}{2}} \\tag{1}$$\n\n$$n\\le 50 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $W(4)=24$, $W(9)=16$, $W(16)=12$. The cut from $4$ to $9$ is $8$, which exceeds the cut of $4$ from $9$ to $16$. $W(36)=8<10$.\n\n**2.** A six-minute wait needs $n=64$, which violates (2). Doubling the team of $4$ gives $W(8)=12\\sqrt{2}\\approx 16.97$, not half of $24$.\n\n**3.** An eight-minute wait needs $n=36$, which still sits inside the cap.\n\n**Answer.** $A=48$ | $W(9)=16$ | $W(16)=12$ | $W(36)=8$ | $n=64$ for six minutes"
   },
   {
     "id": "math-8-13",
@@ -155,29 +155,29 @@
     "title": "Server Peak Load Between a Doubling Rule and an Alarm",
     "context": "A monitoring team models a server's peak load as $L(x)=A x^{r}$, where $x>0$ is the number of simultaneous jobs. Stress tests show that doubling the job count multiplies peak load by $4$, and a run with $8$ simultaneous jobs recorded a peak load of $32$. The hardware alarm trips at a peak load of $200$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Because the exponent exceeds one, peak load grows faster than the job count.",
-      "Halving the job count halves peak load.",
-      "Peak load per job rises as the job count rises.",
+      "Raising the job count from $8$ to $16$ adds more load than the recorded peak of $32$.",
       "The hardware alarm already trips at $16$ simultaneous jobs.",
+      "Load per job at $16$ jobs already exceeds load per job at $8$.",
+      "The job count that trips the alarm is already above $18$.",
       "After $10$ simultaneous jobs, peak load is already above $40$."
     ],
     "answer_key": [
       true,
       false,
       true,
-      false,
+      true,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe doubling test cancels $A$ and isolates the exponent:\n\n$$\n2^{r}=4\n$$\n\n$$\nr=2\n$$\n\nThe $8$-job run then pins $A$:\n\n$$\nA\\cdot 8^{2}=32\n$$\n\n$$\nA\\cdot 64=32\n$$\n\n$$\nA=\\frac{1}{2}\n$$\n\nPeak load is $L(x)=\\frac{1}{2}x^{2}$. An exponent larger than one means load grows faster than the job count: each extra job adds more load than the job before it. Two exceeds one, so the statement is True.",
-      "**B.** → False\n\nThe doubling test gives $r=2$. Halving the job count multiplies peak load by\n\n$$\n\\frac{L(\\frac{x}{2})}{L(x)}=2^{-r}\n$$\n\n$$\n2^{-r}=2^{-2}\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\nThe load falls to a quarter, not to a half, so the statement is False.",
-      "**C.** → True\n\nPeak load is $L(x)=\\frac{1}{2}x^{2}$. Load per job is\n\n$$\n\\frac{L(x)}{x}=\\frac{1}{2}x\n$$\n\nThe leftover exponent is positive, so average load rises with the job count. That is the other face of $r>1$, so the statement is True.",
-      "**D.** → False\n\nAt $16$ jobs:\n\n$$\nL(16)=\\frac{1}{2}\\cdot 16^{2}\n$$\n\n$$\n16^{2}=256\n$$\n\n$$\nL(16)=128\n$$\n\n$$\n128<200\n$$\n\n$128$ is still below the alarm of $200$, so the statement is False.",
-      "**E.** → True\n\nAt $10$ jobs:\n\n$$\nL(10)=\\frac{1}{2}\\cdot 10^{2}\n$$\n\n$$\n10^{2}=100\n$$\n\n$$\nL(10)=50\n$$\n\n$$\n50>40\n$$\n\nThe peak is $50$, already above $40$, so the statement is True."
+      "**A.** → True\n\nThe doubling test cancels $A$ and isolates the exponent:\n\n$$\n2^{r}=4\n$$\n\n$$\nr=2\n$$\n\nThe $8$-job run then pins $A$:\n\n$$\nA\\cdot 8^{2}=32\n$$\n\n$$\nA\\cdot 64=32\n$$\n\n$$\nA=\\frac{1}{2}\n$$\n\nPeak load is $L(x)=\\frac{1}{2}x^{2}$. Raising the job count from $8$ to $16$:\n\n$$\nL(16)=\\frac{1}{2}\\cdot 16^{2}\n$$\n\n$$\n16^{2}=256\n$$\n\n$$\nL(16)=\\frac{1}{2}\\cdot 256\n$$\n\n$$\nL(16)=128\n$$\n\n$$\n128-32=96\n$$\n\n$$\n96>32\n$$\n\nThe added load is $96$, which already exceeds the recorded peak of $32$, so the statement is True.",
+      "**B.** → False\n\nThe recovered law is $L=\\frac{1}{2}x^{2}$. At $16$ jobs:\n\n$$\nL(16)=\\frac{1}{2}\\cdot 16^{2}\n$$\n\n$$\n16^{2}=256\n$$\n\n$$\nL(16)=128\n$$\n\n$$\n128<200\n$$\n\nThe peak is $128$, still below the alarm of $200$, so the statement is False.",
+      "**C.** → True\n\nThe recovered law is $L=\\frac{1}{2}x^{2}$. Load per job is $\\frac{L(x)}{x}=\\frac{1}{2}x$. At $8$ jobs:\n\n$$\n\\frac{L(8)}{8}=\\frac{1}{2}\\cdot 8\n$$\n\n$$\n\\frac{L(8)}{8}=4\n$$\n\nAt $16$ jobs:\n\n$$\n\\frac{L(16)}{16}=\\frac{1}{2}\\cdot 16\n$$\n\n$$\n\\frac{L(16)}{16}=8\n$$\n\n$$\n8>4\n$$\n\nLoad per job rises from $4$ to $8$, so the statement is True.",
+      "**D.** → True\n\nThe recovered law is $L=\\frac{1}{2}x^{2}$. The alarm trips at a peak of $200$:\n\n$$\n\\frac{1}{2}x^{2}=200\n$$\n\n$$\nx^{2}=400\n$$\n\n$$\nx=20\n$$\n\n$$\n20>18\n$$\n\nThe trip sits at $20$ jobs, already above $18$, so the statement is True.",
+      "**E.** → True\n\nThe recovered law is $L=\\frac{1}{2}x^{2}$. After $10$ simultaneous jobs:\n\n$$\nL(10)=\\frac{1}{2}\\cdot 10^{2}\n$$\n\n$$\n10^{2}=100\n$$\n\n$$\nL(10)=\\frac{1}{2}\\cdot 100\n$$\n\n$$\nL(10)=50\n$$\n\n$$\n50>40\n$$\n\nThe peak is $50$, already above $40$, so the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 16,
-    "solution_overview": "Peak load follows $L(x)=A x^{r}$ for $x>0$ jobs. Doubling jobs multiplies load by $4$, eight jobs record a load of $32$, and the alarm trips at $200$.\n\n**Part 1: Building the model.**\n\nLet $x$ = simultaneous jobs and $L$ = peak load. The doubling ratio cancels $A$ and isolates $r$; the eight-job level then pins $A$.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=4$$\n\n**2. Translate: the recorded run.**\n\n$$A\\cdot 8^{r}=32$$\n\n**Part 2: The model.**\n\n$$r=2 \\tag{1}$$\n\n$$L(x)=\\frac{1}{2}x^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $r>1$, load outruns the job count. Halving jobs quarters the load. Load per job rises with $x$.\n\n**2.** $L(16)=128<200$ and $L(10)=50>40$.\n\n**Answer.** $r=2$ | $A=\\frac{1}{2}$ | $L(10)=50$ | $L(16)=128$ | alarm at $x=20$"
+    "solution_overview": "Peak load follows $L(x)=A x^{r}$ for $x>0$ jobs. Doubling jobs multiplies load by $4$, eight jobs record a load of $32$, and the alarm trips at $200$.\n\n**Part 1: Building the model.**\n\nLet $x$ = simultaneous jobs and $L$ = peak load. The doubling ratio cancels $A$ and isolates $r$; the eight-job level then pins $A$.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=4$$\n\n**2. Translate: the recorded run.**\n\n$$A\\cdot 8^{r}=32$$\n\n**Part 2: The model.**\n\n$$r=2 \\tag{1}$$\n\n$$L(x)=\\frac{1}{2}x^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $L(8)=32$ and $L(16)=128$, so the extra load $96$ already exceeds the recorded peak of $32$. The alarm is still untripped at $16$ jobs, and it trips at $x=20>18$.\n\n**2.** Load per job is $\\frac{1}{2}x$, so $\\frac{L(16)}{16}=8$ already exceeds $\\frac{L(8)}{8}=4$. $L(10)=50>40$.\n\n**Answer.** $r=2$ | $A=\\frac{1}{2}$ | $L(10)=50$ | $L(16)=128$ | alarm at $x=20$"
   },
   {
     "id": "math-8-17",
@@ -185,29 +185,29 @@
     "title": "Survey Reach Against a Fieldwork Budget Cap",
     "context": "Usable survey responses follow $Q(x)=A x^{\\frac{1}{2}}$, where $x>0$ measures outreach intensity. When intensity was raised from $25$ to $100$, usable responses increased by exactly $60$. The fieldwork budget caps outreach intensity at $400$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "An extra unit of intensity adds more usable responses at $25$ than at $100$.",
-      "Doubling outreach intensity doubles usable responses.",
-      "Usable responses per unit of intensity fall as outreach rises.",
+      "The extra responses from intensity $25$ to $100$ fall short of the extra from $100$ to $400$.",
+      "Doubling intensity from $25$ to $50$ doubles usable responses.",
+      "At intensity $81$ the survey already yields more than $100$ usable responses.",
       "The budget cap allows at most $200$ usable responses.",
-      "At intensity $81$ the survey already yields more than $100$ usable responses."
+      "Intensity that yields $180$ responses already exceeds the budget cap."
     ],
     "answer_key": [
       true,
       false,
       true,
       false,
-      true
+      false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recorded gain is a difference of two square-root levels:\n\n$$\nA\\bigl(100^{\\frac{1}{2}}-25^{\\frac{1}{2}}\\bigr)=60\n$$\n\n$$\nA(10-5)=60\n$$\n\n$$\n5A=60\n$$\n\n$$\nA=12\n$$\n\nResponses are $Q(x)=12 x^{\\frac{1}{2}}$. An extra unit of intensity is the slope:\n\n$$\nQ'(x)=12\\cdot\\frac{1}{2} x^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(x)=6 x^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(25)=6\\cdot 25^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(25)=\\frac{6}{5}\n$$\n\n$$\nQ'(100)=6\\cdot 100^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(100)=\\frac{6}{10}\n$$\n\n$$\nQ'(100)=\\frac{3}{5}\n$$\n\n$$\n\\frac{6}{5}>\\frac{3}{5}\n$$\n\nThe square-root flattens, so later units buy less. An extra unit adds more at $25$ than at $100$, so the statement is True.",
-      "**B.** → False\n\nDoubling intensity would double responses only if the exponent were $1$. With exponent $\\frac{1}{2}$ the scale factor is\n\n$$\n\\frac{Q(2x)}{Q(x)}=2^{\\frac{1}{2}}\n$$\n\nThe square root of two is about $1.41$, not $2$. Responses rise, but not in lockstep with outreach, so the statement is False.",
-      "**C.** → True\n\nResponses are $Q(x)=12 x^{\\frac{1}{2}}$. Responses per unit of intensity are\n\n$$\n\\frac{Q(x)}{x}=12 x^{-\\frac{1}{2}}\n$$\n\nThe leftover exponent is negative, so the average product falls as outreach rises, so the statement is True.",
-      "**D.** → False\n\nAt the intensity cap of $400$:\n\n$$\nQ(400)=12\\cdot 400^{\\frac{1}{2}}\n$$\n\n$$\n400^{\\frac{1}{2}}=20\n$$\n\n$$\nQ(400)=240\n$$\n\n$$\n240>200\n$$\n\n$240$ exceeds the claimed ceiling of $200$, so the statement is False.",
-      "**E.** → True\n\nAt intensity $81$ the square root is $9$:\n\n$$\nQ(81)=12\\cdot 81^{\\frac{1}{2}}\n$$\n\n$$\n81^{\\frac{1}{2}}=9\n$$\n\n$$\nQ(81)=108\n$$\n\n$$\n108>100\n$$\n\nThe yield is $108$, already above $100$, so the statement is True."
+      "**A.** → True\n\nThe recorded gain is a difference of two square-root levels:\n\n$$\nA\\bigl(100^{\\frac{1}{2}}-25^{\\frac{1}{2}}\\bigr)=60\n$$\n\n$$\nA(10-5)=60\n$$\n\n$$\n5A=60\n$$\n\n$$\nA=12\n$$\n\nResponses are $Q(x)=12 x^{\\frac{1}{2}}$. From intensity $25$ to $100$:\n\n$$\nQ(25)=12\\cdot 25^{\\frac{1}{2}}\n$$\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\nQ(25)=60\n$$\n\n$$\nQ(100)=12\\cdot 100^{\\frac{1}{2}}\n$$\n\n$$\n100^{\\frac{1}{2}}=10\n$$\n\n$$\nQ(100)=120\n$$\n\n$$\n120-60=60\n$$\n\nFrom intensity $100$ to $400$:\n\n$$\nQ(400)=12\\cdot 400^{\\frac{1}{2}}\n$$\n\n$$\n400^{\\frac{1}{2}}=20\n$$\n\n$$\nQ(400)=240\n$$\n\n$$\n240-120=120\n$$\n\n$$\n60<120\n$$\n\nThe first extra is $60$ responses and the second is $120$, so the statement is True.",
+      "**B.** → False\n\nThe recovered law is $Q=12 x^{\\frac{1}{2}}$. Doubling intensity from $25$ to $50$:\n\n$$\nQ(50)=12\\cdot 50^{\\frac{1}{2}}\n$$\n\n$$\n50^{\\frac{1}{2}}=5\\sqrt{2}\n$$\n\n$$\nQ(50)=12\\cdot 5\\sqrt{2}\n$$\n\n$$\nQ(50)=60\\sqrt{2}\n$$\n\n$$\n\\sqrt{2}\\approx 1.414\n$$\n\n$$\nQ(50)\\approx 84.85\n$$\n\nDoubling the recorded $60$ responses would be $120$. The yield only rises to about $84.85$, so the statement is False.",
+      "**C.** → True\n\nThe recovered law is $Q=12 x^{\\frac{1}{2}}$. At intensity $81$ the square root is $9$:\n\n$$\nQ(81)=12\\cdot 81^{\\frac{1}{2}}\n$$\n\n$$\n81^{\\frac{1}{2}}=9\n$$\n\n$$\nQ(81)=12\\cdot 9\n$$\n\n$$\nQ(81)=108\n$$\n\n$$\n108>100\n$$\n\nThe yield is $108$, already above $100$, so the statement is True.",
+      "**D.** → False\n\nThe recovered law is $Q=12 x^{\\frac{1}{2}}$. At the intensity cap of $400$:\n\n$$\nQ(400)=12\\cdot 400^{\\frac{1}{2}}\n$$\n\n$$\n400^{\\frac{1}{2}}=20\n$$\n\n$$\nQ(400)=240\n$$\n\n$$\n240>200\n$$\n\nThe cap allows $240$ usable responses, which is more than $200$, so the statement is False.",
+      "**E.** → False\n\nThe recovered law is $Q=12 x^{\\frac{1}{2}}$. A yield of $180$ means\n\n$$\n12 x^{\\frac{1}{2}}=180\n$$\n\n$$\nx^{\\frac{1}{2}}=\\frac{180}{12}\n$$\n\n$$\nx^{\\frac{1}{2}}=15\n$$\n\n$$\nx=225\n$$\n\n$$\n225<400\n$$\n\nIntensity $225$ still sits inside the budget cap of $400$, so the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 17,
-    "solution_overview": "Responses follow $Q(x)=A x^{\\frac{1}{2}}$ for $x>0$. Raising intensity from $25$ to $100$ added $60$ responses, and intensity cannot exceed $400$.\n\n**Part 1: Building the model.**\n\nLet $x$ = outreach intensity and $Q$ = usable responses. The recorded gain is a difference of two square-root levels, which recovers $A$. The cap constrains the largest $Q$.\n\n**1. Translate: the recorded gain.**\n\n$$A\\bigl(100^{\\frac{1}{2}}-25^{\\frac{1}{2}}\\bigr)=60$$\n\n**Part 2: The model.**\n\n$$Q(x)=12x^{\\frac{1}{2}} \\tag{1}$$\n\n$$x\\le 400 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $Q'(25)>Q'(100)$ and $Q(81)=108>100$. Doubling intensity multiplies $Q$ by $\\sqrt{2}$, not by $2$. Average product $12x^{-\\frac{1}{2}}$ falls.\n\n**2.** $Q(400)=240$, so the cap allows more than $200$.\n\n**Answer.** $A=12$ | $Q(81)=108$ | $Q(400)=240$"
+    "solution_overview": "Responses follow $Q(x)=A x^{\\frac{1}{2}}$ for $x>0$. Raising intensity from $25$ to $100$ added $60$ responses, and intensity cannot exceed $400$.\n\n**Part 1: Building the model.**\n\nLet $x$ = outreach intensity and $Q$ = usable responses. The recorded gain is a difference of two square-root levels, which recovers $A$. The cap constrains the largest $Q$.\n\n**1. Translate: the recorded gain.**\n\n$$A\\bigl(100^{\\frac{1}{2}}-25^{\\frac{1}{2}}\\bigr)=60$$\n\n**Part 2: The model.**\n\n$$Q(x)=12x^{\\frac{1}{2}} \\tag{1}$$\n\n$$x\\le 400 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $Q(25)=60$, $Q(100)=120$, $Q(400)=240$. The extra from $25$ to $100$ is $60$, which falls short of the extra $120$ from $100$ to $400$. Doubling intensity from $25$ to $50$ gives $Q(50)=60\\sqrt{2}\\approx 84.85$, not $120$.\n\n**2.** $Q(81)=108>100$. The cap allows $Q(400)=240$, more than $200$. A yield of $180$ needs $x=225$, inside the cap.\n\n**Answer.** $A=12$ | $Q(81)=108$ | $Q(400)=240$ | $x=225$ for $Q=180$"
   },
   {
     "id": "math-8-18",
@@ -245,29 +245,29 @@
     "title": "Warehouse Throughput With a Contractual Ceiling",
     "context": "Warehouse throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour, where $s>0$ is the number of staff on shift. A shift with $16$ staff moved $32$ pallets per hour. The service contract caps billed throughput at $80$ pallets per hour. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Throughput grows more slowly than headcount.",
-      "Doubling the headcount doubles throughput.",
-      "Once the ceiling binds, billed throughput is no longer a power function of staff.",
+      "Two separate $16$-staff shifts already move as many pallets as one $64$-staff shift.",
       "The contract ceiling is already reached with $64$ staff.",
-      "With $81$ staff, throughput is already above $70$ pallets per hour."
+      "The extra throughput from $16$ to $36$ staff equals the extra from $36$ to $64$.",
+      "With $81$ staff, billed throughput is already above $70$ pallets per hour.",
+      "Staffing that bills $80$ pallets already exceeds $90$ people."
     ],
     "answer_key": [
       true,
       false,
       true,
-      false,
+      true,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe $16$-staff record pins the coefficient:\n\n$$\nA\\cdot 16^{\\frac{1}{2}}=32\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\n4A=32\n$$\n\n$$\nA=8\n$$\n\nThroughput is $H(s)=8s^{\\frac{1}{2}}$. An exponent smaller than one means throughput grows more slowly than headcount: each extra worker adds less than the worker before. One half is below one, so the statement is True.",
-      "**B.** → False\n\nDoubling staff would double throughput only if the exponent were $1$. With exponent $\\frac{1}{2}$ the scale factor is\n\n$$\n\\frac{H(2s)}{H(s)}=2^{\\frac{1}{2}}\n$$\n\nThe square root of two is about $1.41$, not $2$. Throughput rises, but not in lockstep with headcount, so the statement is False.",
-      "**C.** → True\n\nThroughput is $H(s)=8s^{\\frac{1}{2}}$. The ceiling binds when\n\n$$\n8 s^{\\frac{1}{2}}=80\n$$\n\n$$\ns^{\\frac{1}{2}}=10\n$$\n\n$$\ns=100\n$$\n\nBilled throughput is then the power cut off at the cap:\n\n$$\nB(s)=\\min\\bigl(8 s^{\\frac{1}{2}},\\,80\\bigr)\n$$\n\nPast $100$ staff that rule is a constant, not a power of $s$, so the statement is True.",
-      "**D.** → False\n\nAt $64$ staff the square root is $8$:\n\n$$\nH(64)=8\\cdot 64^{\\frac{1}{2}}\n$$\n\n$$\n64^{\\frac{1}{2}}=8\n$$\n\n$$\nH(64)=8\\cdot 8\n$$\n\n$$\nH(64)=64\n$$\n\n$$\n64<80\n$$\n\n$64$ pallets an hour still sit below the contract ceiling of $80$, so the statement is False.",
-      "**E.** → True\n\nAt $81$ staff the square root is $9$:\n\n$$\nH(81)=8\\cdot 81^{\\frac{1}{2}}\n$$\n\n$$\n81^{\\frac{1}{2}}=9\n$$\n\n$$\nH(81)=8\\cdot 9\n$$\n\n$$\nH(81)=72\n$$\n\n$$\n72>70\n$$\n\nThroughput is $72$ pallets per hour, already above $70$, so the statement is True."
+      "**A.** → True\n\nThe $16$-staff record pins the coefficient:\n\n$$\nA\\cdot 16^{\\frac{1}{2}}=32\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\n4A=32\n$$\n\n$$\nA=8\n$$\n\nThroughput is $H(s)=8s^{\\frac{1}{2}}$. Two separate $16$-staff shifts:\n\n$$\nH(16)=8\\cdot 16^{\\frac{1}{2}}\n$$\n\n$$\nH(16)=8\\cdot 4\n$$\n\n$$\nH(16)=32\n$$\n\n$$\n2\\cdot H(16)=64\n$$\n\nOne $64$-staff shift:\n\n$$\nH(64)=8\\cdot 64^{\\frac{1}{2}}\n$$\n\n$$\n64^{\\frac{1}{2}}=8\n$$\n\n$$\nH(64)=8\\cdot 8\n$$\n\n$$\nH(64)=64\n$$\n\nThe pair already matches the single $64$-staff shift, so the statement is True.",
+      "**B.** → False\n\nThe recovered law is $H=8s^{\\frac{1}{2}}$. At $64$ staff:\n\n$$\nH(64)=8\\cdot 64^{\\frac{1}{2}}\n$$\n\n$$\n64^{\\frac{1}{2}}=8\n$$\n\n$$\nH(64)=64\n$$\n\n$$\n64<80\n$$\n\nBilled throughput is still $64$ pallets an hour, below the contract ceiling of $80$, so the statement is False.",
+      "**C.** → True\n\nThe recovered law is $H=8s^{\\frac{1}{2}}$. From $16$ staff to $36$:\n\n$$\nH(36)=8\\cdot 36^{\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nH(36)=48\n$$\n\n$$\n48-32=16\n$$\n\nFrom $36$ staff to $64$:\n\n$$\nH(64)=8\\cdot 64^{\\frac{1}{2}}\n$$\n\n$$\n64^{\\frac{1}{2}}=8\n$$\n\n$$\nH(64)=64\n$$\n\n$$\n64-48=16\n$$\n\nThe two extras are equal, so the statement is True.",
+      "**D.** → True\n\nThe recovered law is $H=8s^{\\frac{1}{2}}$, billed as $\\min(H,80)$. With $81$ staff:\n\n$$\nH(81)=8\\cdot 81^{\\frac{1}{2}}\n$$\n\n$$\n81^{\\frac{1}{2}}=9\n$$\n\n$$\nH(81)=72\n$$\n\n$$\n72<80\n$$\n\nBilled throughput is still the uncapped $72$. Then\n\n$$\n72>70\n$$\n\nBilled throughput is $72$ pallets per hour, already above $70$, so the statement is True.",
+      "**E.** → True\n\nThe recovered law is $H=8s^{\\frac{1}{2}}$. Billing $80$ pallets means the ceiling binds:\n\n$$\n8 s^{\\frac{1}{2}}=80\n$$\n\n$$\ns^{\\frac{1}{2}}=10\n$$\n\n$$\ns=100\n$$\n\n$$\n100>90\n$$\n\nThe staffing that bills $80$ is $100$ people, already above $90$, so the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 19,
-    "solution_overview": "Throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour for $s>0$ staff. Sixteen staff move $32$ pallets per hour, and billed throughput cannot exceed $80$.\n\n**Part 1: Building the model.**\n\nLet $s$ = staff and $H$ = pallets per hour. The exponent is given, so the sixteen-staff observation fixes $A$. The cap cuts the billed series.\n\n**1. Translate: the recorded shift.**\n\n$$A\\cdot 16^{\\frac{1}{2}}=32$$\n\n**Part 2: The model.**\n\n$$H(s)=8s^{\\frac{1}{2}} \\tag{1}$$\n\n$$B(s)=\\min\\bigl(H(s),\\,80\\bigr) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because the exponent is $\\frac{1}{2}<1$, throughput grows more slowly than headcount. Doubling staff multiplies $H$ by $\\sqrt{2}$, not by $2$.\n\n**2.** $H(64)=64<80$ and $H(81)=72>70$. The two-piece billed rule (2) is not a single power of $s$.\n\n**Answer.** $A=8$ | $H(64)=64$ | $H(81)=72$ | cap binds at $s=100$"
+    "solution_overview": "Throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour for $s>0$ staff. Sixteen staff move $32$ pallets per hour, and billed throughput cannot exceed $80$.\n\n**Part 1: Building the model.**\n\nLet $s$ = staff and $H$ = pallets per hour. The exponent is given, so the sixteen-staff observation fixes $A$. The cap cuts the billed series.\n\n**1. Translate: the recorded shift.**\n\n$$A\\cdot 16^{\\frac{1}{2}}=32$$\n\n**Part 2: The model.**\n\n$$H(s)=8s^{\\frac{1}{2}} \\tag{1}$$\n\n$$B(s)=\\min\\bigl(H(s),\\,80\\bigr) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $H(16)=32$ and $H(64)=64$, so two $16$-staff shifts already match one $64$-staff shift. $H(64)=64<80$. The extras $H(36)-H(16)$ and $H(64)-H(36)$ are both $16$.\n\n**2.** $H(81)=72>70$, still below the cap, so billed throughput is $72$. The cap binds at $s=100>90$.\n\n**Answer.** $A=8$ | $H(16)=32$ | $H(36)=48$ | $H(64)=64$ | $H(81)=72$ | cap binds at $s=100$"
   },
   {
     "id": "math-8-20",
@@ -275,28 +275,28 @@
     "title": "Response Time Recovered from a Server Upgrade",
     "context": "A service's median response time follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds, where $k>0$ is the number of servers. The upgrade log does not state $A$: it records only that moving from $4$ servers to $9$ servers cut the median response time by exactly $19$ ms. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "An extra server cuts the median wait by more at $4$ servers than at $9$.",
-      "Measuring wait in seconds instead of milliseconds leaves the exponent unchanged.",
-      "Doubling the server count halves the median wait.",
-      "With $9$ servers the median wait is more than $10$ milliseconds.",
-      "With $4$ servers the median wait is already above $25$ milliseconds."
+      "Moving from $4$ servers to $9$ cuts the median wait by more than $15$ milliseconds.",
+      "With $4$ servers the median wait is already above $25$ milliseconds.",
+      "The wait cut from $4$ to $9$ servers already exceeds the remaining wait at $9$ servers.",
+      "Doubling the server count from $4$ to $8$ halves the median wait.",
+      "With $9$ servers the median wait is more than $10$ milliseconds."
     ],
     "answer_key": [
       true,
       true,
+      true,
       false,
-      false,
-      true
+      false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recorded cut is a difference of two levels:\n\n$$\nA\\bigl(4^{-\\frac{3}{2}}-9^{-\\frac{3}{2}}\\bigr)=19\n$$\n\n$$\n4^{-\\frac{3}{2}}=\\frac{1}{8}\n$$\n\n$$\n9^{-\\frac{3}{2}}=\\frac{1}{27}\n$$\n\n$$\n\\frac{1}{8}-\\frac{1}{27}=\\frac{19}{216}\n$$\n\n$$\nA\\cdot\\frac{19}{216}=19\n$$\n\n$$\nA=216\n$$\n\nWait is $W(k)=216 k^{-\\frac{3}{2}}$. An extra server is the slope:\n\n$$\nW'(k)=216\\cdot\\bigl(-\\frac{3}{2}\\bigr) k^{-\\frac{5}{2}}\n$$\n\n$$\nW'(k)=-324 k^{-\\frac{5}{2}}\n$$\n\n$$\n\\bigl|W'(4)\\bigr|=\\frac{324}{4^{\\frac{5}{2}}}\n$$\n\n$$\n4^{\\frac{5}{2}}=32\n$$\n\n$$\n\\bigl|W'(4)\\bigr|=\\frac{324}{32}\n$$\n\n$$\n\\bigl|W'(4)\\bigr|=\\frac{81}{8}\n$$\n\n$$\n\\bigl|W'(9)\\bigr|=\\frac{324}{9^{\\frac{5}{2}}}\n$$\n\n$$\n9^{\\frac{5}{2}}=243\n$$\n\n$$\n\\bigl|W'(9)\\bigr|=\\frac{324}{243}\n$$\n\n$$\n\\bigl|W'(9)\\bigr|=\\frac{4}{3}\n$$\n\n$$\n\\frac{81}{8}>\\frac{4}{3}\n$$\n\nThe drop is steeper at $4$ servers than at $9$, so the statement is True.",
-      "**B.** → True\n\nWait in milliseconds is $W(k)=216 k^{-\\frac{3}{2}}$. One second is $1000$ milliseconds, so wait in seconds is\n\n$$\n\\frac{W(k)}{1000}=\\frac{216}{1000} k^{-\\frac{3}{2}}\n$$\n\nOnly the coefficient rescales. The exponent is still $-\\frac{3}{2}$, so the statement is True.",
-      "**C.** → False\n\nDoubling the servers would halve the wait only if the exponent were $-1$. With exponent $-\\frac{3}{2}$ the scale factor is\n\n$$\n\\frac{W(2k)}{W(k)}=2^{-\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\sqrt{2}\n$$\n\n$$\n2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\n$$\n\nThat factor is about $0.35$, not $\\frac{1}{2}$. The wait falls faster than a simple half, so the statement is False.",
-      "**D.** → False\n\nAt $9$ servers:\n\n$$\nW(9)=216\\cdot 9^{-\\frac{3}{2}}\n$$\n\n$$\n9^{-\\frac{3}{2}}=\\frac{1}{27}\n$$\n\n$$\nW(9)=8\n$$\n\n$$\n8<10\n$$\n\n$8$ milliseconds is not more than $10$, so the statement is False.",
-      "**E.** → True\n\nAt $4$ servers:\n\n$$\nW(4)=216\\cdot 4^{-\\frac{3}{2}}\n$$\n\n$$\n4^{-\\frac{3}{2}}=\\frac{1}{8}\n$$\n\n$$\nW(4)=27\n$$\n\n$$\n27>25\n$$\n\nThe wait is $27$ ms, already above $25$, so the statement is True."
+      "**A.** → True\n\nThe recorded cut is a difference of two levels:\n\n$$\nA\\bigl(4^{-\\frac{3}{2}}-9^{-\\frac{3}{2}}\\bigr)=19\n$$\n\n$$\n4^{-\\frac{3}{2}}=\\frac{1}{8}\n$$\n\n$$\n9^{-\\frac{3}{2}}=\\frac{1}{27}\n$$\n\n$$\n\\frac{1}{8}-\\frac{1}{27}=\\frac{19}{216}\n$$\n\n$$\nA\\cdot\\frac{19}{216}=19\n$$\n\n$$\nA=216\n$$\n\nWait is $W(k)=216 k^{-\\frac{3}{2}}$. From $4$ servers to $9$:\n\n$$\nW(4)=216\\cdot 4^{-\\frac{3}{2}}\n$$\n\n$$\nW(4)=216\\cdot\\frac{1}{8}\n$$\n\n$$\nW(4)=27\n$$\n\n$$\nW(9)=216\\cdot 9^{-\\frac{3}{2}}\n$$\n\n$$\nW(9)=216\\cdot\\frac{1}{27}\n$$\n\n$$\nW(9)=8\n$$\n\n$$\n27-8=19\n$$\n\n$$\n19>15\n$$\n\nThe cut is $19$ milliseconds, already more than $15$, so the statement is True.",
+      "**B.** → True\n\nThe recovered law is $W=216 k^{-\\frac{3}{2}}$. With $4$ servers:\n\n$$\nW(4)=216\\cdot 4^{-\\frac{3}{2}}\n$$\n\n$$\n4^{-\\frac{3}{2}}=\\frac{1}{8}\n$$\n\n$$\nW(4)=27\n$$\n\n$$\n27>25\n$$\n\nThe median wait is $27$ milliseconds, already above $25$, so the statement is True.",
+      "**C.** → True\n\nThe recovered law is $W=216 k^{-\\frac{3}{2}}$. The wait cut from $4$ to $9$ and the remaining wait at $9$:\n\n$$\nW(4)=27\n$$\n\n$$\nW(9)=8\n$$\n\n$$\n27-8=19\n$$\n\n$$\n19>8\n$$\n\nThe cut of $19$ milliseconds already exceeds the remaining $8$, so the statement is True.",
+      "**D.** → False\n\nThe recovered law is $W=216 k^{-\\frac{3}{2}}$. Doubling the server count from $4$ to $8$:\n\n$$\nW(8)=216\\cdot 8^{-\\frac{3}{2}}\n$$\n\n$$\n8^{\\frac{3}{2}}=8\\cdot 8^{\\frac{1}{2}}\n$$\n\n$$\n8^{\\frac{1}{2}}=2\\sqrt{2}\n$$\n\n$$\n8^{\\frac{3}{2}}=8\\cdot 2\\sqrt{2}\n$$\n\n$$\n8\\cdot 2\\sqrt{2}=16\\sqrt{2}\n$$\n\n$$\nW(8)=\\frac{216}{16\\sqrt{2}}\n$$\n\n$$\nW(8)=\\frac{27}{2\\sqrt{2}}\n$$\n\n$$\n\\frac{27}{2\\sqrt{2}}\\approx 9.55\n$$\n\nHalf of the $4$-server wait of $27$ is $\\frac{27}{2}=13.5$. The wait falls to about $9.55$ milliseconds, not to $13.5$, so the statement is False.",
+      "**E.** → False\n\nThe recovered law is $W=216 k^{-\\frac{3}{2}}$. With $9$ servers:\n\n$$\nW(9)=216\\cdot 9^{-\\frac{3}{2}}\n$$\n\n$$\n9^{-\\frac{3}{2}}=\\frac{1}{27}\n$$\n\n$$\nW(9)=8\n$$\n\n$$\n8<10\n$$\n\nThe median wait is $8$ milliseconds, which is not more than $10$, so the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 20,
-    "solution_overview": "Wait follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds for $k>0$ servers. Moving from $4$ servers to $9$ servers cut the wait by $19$ ms.\n\n**Part 1: Building the model.**\n\nLet $k$ = servers and $W$ = milliseconds. The exponent is given, so the recorded cut, a difference of two levels, recovers $A$.\n\n**1. Translate: the recorded cut.**\n\n$$A\\bigl(4^{-\\frac{3}{2}}-9^{-\\frac{3}{2}}\\bigr)=19$$\n\n**Part 2: The model.**\n\n$$A=216, \\qquad W(k)=216k^{-\\frac{3}{2}} \\tag{1}$$\n\n**Part 3: Solve.**\n\n**1.** $|W'(4)|>|W'(9)|$. Measuring wait in seconds only rescales $A$, leaving the exponent $-\\frac{3}{2}$. Doubling servers multiplies wait by $1/(2\\sqrt{2})$, not by $1/2$.\n\n**2.** $W(9)=8$, which is not more than $10$. $W(4)=27>25$.\n\n**Answer.** $A=216$ | $W(4)=27$ | $W(9)=8$"
+    "solution_overview": "Wait follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds for $k>0$ servers. Moving from $4$ servers to $9$ servers cut the wait by $19$ ms.\n\n**Part 1: Building the model.**\n\nLet $k$ = servers and $W$ = milliseconds. The exponent is given, so the recorded cut, a difference of two levels, recovers $A$.\n\n**1. Translate: the recorded cut.**\n\n$$A\\bigl(4^{-\\frac{3}{2}}-9^{-\\frac{3}{2}}\\bigr)=19$$\n\n**Part 2: The model.**\n\n$$A=216, \\qquad W(k)=216k^{-\\frac{3}{2}} \\tag{1}$$\n\n**Part 3: Solve.**\n\n**1.** $W(4)=27>25$ and $W(9)=8$. The cut $19$ exceeds both $15$ milliseconds and the remaining wait of $8$.\n\n**2.** Doubling from $4$ to $8$ servers gives $W(8)\\approx 9.55$, not half of $27$. $W(9)=8$, which is not more than $10$.\n\n**Answer.** $A=216$ | $W(4)=27$ | $W(9)=8$ | $W(8)\\approx 9.55$"
   }
 ]

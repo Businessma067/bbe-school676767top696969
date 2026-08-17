@@ -5,29 +5,29 @@
     "title": "Weld Strength Recovered From Two Spot Checks",
     "context": "A production weld's tensile strength follows $S(p)=A p^{k}$ newtons, where $p>0$ is the welding current in amperes. Neither constant is on the calibration sheet: the sheet only records that a $4$ A setting produced $40$ N of strength and a $9$ A setting produced $135$ N. The line rejects any weld below $400$ N. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The exponent is larger than one, so strength outruns current.",
       "At $16$ A the weld is already stronger than $300$ N.",
-      "If the current keeps growing, strength grows without bound.",
       "An extra ampere adds more strength at $4$ A than it does at $9$ A.",
-      "The smallest current that clears the $400$ N reject line is below $18$ A."
+      "The extra strength from $4$ A to $9$ A already exceeds the $4$ A reading.",
+      "The smallest current that clears the $400$ N reject line is below $18$ A.",
+      "Doubling current from $4$ A to $8$ A multiplies strength by more than $2.5$."
     ],
     "answer_key": [
       true,
-      true,
+      false,
       true,
       false,
-      false
+      true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe exponent is $k=\\frac{3}{2}$. An exponent larger than one means strength outruns current: each extra ampere adds more than the ampere before it. Three halves is above one, so the statement is True.",
-      "**B.** → True\n\nStrength is $S(p)=5p^{\\frac{3}{2}}$. At sixteen amperes:\n\n$$\n16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}\n$$\n\n$$\n(2^{4})^{\\frac{3}{2}}=2^{6}=64\n$$\n\n$$\nS(16)=5\\cdot 64=320\n$$\n\nThree hundred and twenty sits above $300$ N, so the statement is True.",
-      "**C.** → True\n\nThe law is $5p^{\\frac{3}{2}}$: a positive multiple of a positive power of current. As current grows, that product has no ceiling, so the statement is True.",
-      "**D.** → False\n\nAn extra ampere is the derivative of $S(p)=5p^{\\frac{3}{2}}$:\n\n$$\nS'(p)=5\\cdot\\frac{3}{2}p^{\\frac{1}{2}}\n$$\n\n$$\nS'(p)=\\frac{15}{2}p^{\\frac{1}{2}}\n$$\n\n$$\nS'(4)=\\frac{15}{2}\\cdot 2=15\n$$\n\n$$\nS'(9)=\\frac{15}{2}\\cdot 3=\\frac{45}{2}\n$$\n\nThe leftover exponent $\\frac{1}{2}$ is positive, so the slope itself rises with current. Because $15<\\frac{45}{2}$, an extra ampere adds less at $4$ A than at $9$ A, so the statement is False.",
-      "**E.** → False\n\nThe reject line is $5p^{\\frac{3}{2}}=400$, so $p=80^{\\frac{2}{3}}$. Four cubed is $64$, so the cube root of $80$ is a little over $4.3$ and the threshold is a little over $18$ A. Directly at $18$ A:\n\n$$\nS(18)=5\\cdot 18^{\\frac{3}{2}}\n$$\n\n$$\n18^{\\frac{3}{2}}=18\\cdot\\sqrt{18}=54\\sqrt{2}\n$$\n\n$$\nS(18)=270\\sqrt{2}\\approx 381.8\n$$\n\nwhich is still below $400$ N. The smallest clearing current is about $18.57$ A, not below $18$ A, so the statement is False."
+      "**A.** → True\n\nThe recovered law is $S(p)=5p^{\\frac{3}{2}}$. At sixteen amperes:\n\n$$\n16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}\n$$\n\n$$\n(2^{4})^{\\frac{3}{2}}=2^{6}\n$$\n\n$$\n2^{6}=64\n$$\n\n$$\nS(16)=5\\cdot 64\n$$\n\n$$\n5\\cdot 64=320\n$$\n\nThree hundred and twenty already sits above $300$ N, so the statement is True.",
+      "**B.** → False\n\nStrength is $S(p)=5p^{\\frac{3}{2}}$. An extra ampere is the slope:\n\n$$\nS'(p)=5\\cdot\\frac{3}{2}p^{\\frac{1}{2}}\n$$\n\n$$\nS'(p)=\\frac{15}{2}p^{\\frac{1}{2}}\n$$\n\n$$\nS'(4)=\\frac{15}{2}\\cdot 2\n$$\n\n$$\nS'(4)=15\n$$\n\n$$\nS'(9)=\\frac{15}{2}\\cdot 3\n$$\n\n$$\nS'(9)=\\frac{45}{2}\n$$\n\nBecause $15<\\frac{45}{2}$, an extra ampere adds less at $4$ A than at $9$ A, so the statement is False.",
+      "**C.** → True\n\nStrength is $S(p)=5p^{\\frac{3}{2}}$. The extra from $4$ A to $9$ A is\n\n$$\nS(9)-S(4)=135-40\n$$\n\n$$\n135-40=95\n$$\n\nThe $4$ A reading is $40$ N, and $95>40$, so that extra already exceeds the $4$ A reading, so the statement is True.",
+      "**D.** → False\n\nStrength is $S(p)=5p^{\\frac{3}{2}}$. At eighteen amperes:\n\n$$\nS(18)=5\\cdot 18^{\\frac{3}{2}}\n$$\n\n$$\n18^{\\frac{3}{2}}=18\\cdot\\sqrt{18}\n$$\n\n$$\n\\sqrt{18}=3\\sqrt{2}\n$$\n\n$$\n18^{\\frac{3}{2}}=54\\sqrt{2}\n$$\n\n$$\nS(18)=5\\cdot 54\\sqrt{2}\n$$\n\n$$\nS(18)=270\\sqrt{2}\n$$\n\n$$\n270\\sqrt{2}\\approx 381.8\n$$\n\nAbout $381.8$ N still sits below the $400$ N reject line, so the smallest clearing current is not below $18$ A, so the statement is False.",
+      "**E.** → True\n\nStrength is $S(p)=5p^{\\frac{3}{2}}$. Doubling current from $4$ A to $8$ A multiplies strength by\n\n$$\n\\frac{S(8)}{S(4)}=2^{\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\sqrt{2}\n$$\n\n$$\n2\\sqrt{2}\\approx 2.83\n$$\n\nThat factor already sits above $2.5$, so the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 61,
-    "solution_overview": "Weld strength is $S(p)=Ap^{k}$ newtons, with spot checks $S(4)=40$ and $S(9)=135$, and welds below $400$ N are rejected.\n\n**Part 1: Building the model.**\n\nLet $p$ = welding current in amperes and $S$ = tensile strength in newtons. Two unknowns need both observations. The ratio cancels $A$ and isolates $k$; the $4$ A level then pins $A$.\n\n**1. Translate: the ratio of the spot checks.**\n\n$$\\frac{135}{40}=\\left(\\frac{9}{4}\\right)^{k}$$\n\n**2. Translate: the $4$ A level.**\n\n$$A\\cdot 4^{k}=40$$\n\n**Part 2: The model.**\n\n$$k=\\frac{3}{2} \\tag{1}$$\n\n$$S(p)=5p^{\\frac{3}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $k>1$, strength outruns current, an extra ampere adds more at $9$ A than at $4$ A, and $S(p)\\to\\infty$ as $p$ grows.\n\n**2.** Levels and the reject threshold:\n\n$$S(16)=320 \\qquad 80^{\\frac{2}{3}}\\approx 18.57$$\n\n**Answer.** $A=5$ | $k=\\frac{3}{2}$ | $S(16)=320$ N | reject threshold $\\approx 18.57$ A"
+    "solution_overview": "Weld strength is $S(p)=Ap^{k}$ newtons, with spot checks $S(4)=40$ and $S(9)=135$, and welds below $400$ N are rejected.\n\n**Part 1: Building the model.**\n\nLet $p$ = welding current in amperes and $S$ = tensile strength in newtons. Two unknowns need both observations. The ratio cancels $A$ and isolates $k$; the $4$ A level then pins $A$.\n\n**1. Translate: the ratio of the spot checks.**\n\n$$\\frac{135}{40}=\\left(\\frac{9}{4}\\right)^{k}$$\n\n**2. Translate: the $4$ A level.**\n\n$$A\\cdot 4^{k}=40$$\n\n**Part 2: The model.**\n\n$$k=\\frac{3}{2} \\tag{1}$$\n\n$$S(p)=5p^{\\frac{3}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $S(16)=320>300$. The extra from $4$ A to $9$ A is $95$, which already exceeds $S(4)=40$.\n\n**2.** $S'(4)=15<S'(9)=\\frac{45}{2}$, so an extra ampere adds less at $4$ A. Doubling current multiplies strength by $2\\sqrt{2}\\approx 2.83>2.5$.\n\n**3.** $S(18)=270\\sqrt{2}\\approx 381.8<400$, so the reject line is not yet cleared at $18$ A.\n\n**Answer.** $A=5$ | $k=\\frac{3}{2}$ | $S(16)=320$ N | $S(18)\\approx 381.8$ N"
   },
   {
     "id": "math-8-62",
@@ -35,29 +35,29 @@
     "title": "Mooring Holding Power Across Kilograms and Tonnes",
     "context": "A harbour buoy's holding power follows $H(m)=A m^{\\frac{2}{3}}$ kilonewtons when mass $m>0$ is measured in kilograms. A trial buoy of $8$ kg held exactly $24$ kN. The harbour authority prefers masses in tonnes ($1$ tonne $=1000$ kg) and writes the same physical law as $H(t)=B t^{\\frac{2}{3}}$ with $t$ in tonnes. A storm protocol demands at least $150$ kN of holding power. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Switching the mass unit from kilograms to tonnes leaves the exponent unchanged.",
       "A $125$ kg buoy already holds more than $140$ kN.",
-      "Doubling buoy mass doubles holding power.",
-      "The mass needed for a given holding power is itself a power of that holding power.",
-      "Reaching $150$ kN takes more than $1$ tonne."
+      "Doubling buoy mass from $8$ kg to $16$ kg doubles holding power.",
+      "Reaching $150$ kN takes more than $1$ tonne.",
+      "Switching mass from kilograms to tonnes makes the new coefficient larger than $500$.",
+      "Two $8$ kg buoys together already hold more than one $64$ kg buoy."
     ],
     "answer_key": [
       true,
-      true,
+      false,
       false,
       true,
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nA change of mass unit is the substitution $m=1000t$:\n\n$$\nH=A(1000t)^{\\frac{2}{3}}\n$$\n\n$$\n(1000t)^{\\frac{2}{3}}=1000^{\\frac{2}{3}}t^{\\frac{2}{3}}\n$$\n\n$$\nH=A\\cdot 1000^{\\frac{2}{3}}t^{\\frac{2}{3}}\n$$\n\nThe conversion is absorbed into the new coefficient $B=A\\cdot 1000^{\\frac{2}{3}}$. The power of mass is still $\\frac{2}{3}$, so the statement is True.",
-      "**B.** → True\n\nThe kilogram law is $H(m)=6m^{\\frac{2}{3}}$. At $125$ kg:\n\n$$\n125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}=5^{2}=25\n$$\n\n$$\nH(125)=6\\cdot 25=150\n$$\n\nOne hundred and fifty sits above $140$ kN, so the statement is True.",
-      "**C.** → False\n\nDoubling mass multiplies holding power by $2^{\\frac{2}{3}}$:\n\n$$\n\\frac{H(2m)}{H(m)}=2^{\\frac{2}{3}}\\approx 1.587\n$$\n\nAn exact doubling would need exponent $1$, which would give the factor $2$. Holding power rises, but not in lockstep with mass, so the statement is False.",
-      "**D.** → True\n\nA power with a nonzero exponent inverts to another power. From $H=6m^{\\frac{2}{3}}$ one gets\n\n$$\n\\frac{H}{6}=m^{\\frac{2}{3}}\n$$\n\n$$\nm=\\left(\\frac{H}{6}\\right)^{\\frac{3}{2}}\n$$\n\nMass is a three-halves power of holding power, so the statement is True.",
-      "**E.** → False\n\nThe storm floor in tonnes is $H(t)=600t^{\\frac{2}{3}}$:\n\n$$\n600t^{\\frac{2}{3}}=150\n$$\n\n$$\nt^{\\frac{2}{3}}=\\frac{1}{4}\n$$\n\n$$\nt=\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=\\frac{1}{8}=0.125\n$$\n\nThat is $125$ kg, well under one tonne. The storm mass is $0.125$ tonnes, so the statement is False."
+      "**A.** → True\n\nThe recovered law is $H(m)=6m^{\\frac{2}{3}}$. At $125$ kg:\n\n$$\n125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(5^{3})^{\\frac{2}{3}}=5^{2}\n$$\n\n$$\n5^{2}=25\n$$\n\n$$\nH(125)=6\\cdot 25\n$$\n\n$$\n6\\cdot 25=150\n$$\n\nOne hundred and fifty already sits above $140$ kN, so the statement is True.",
+      "**B.** → False\n\nHolding power is $H(m)=6m^{\\frac{2}{3}}$. Doubling mass from $8$ kg to $16$ kg multiplies holding power by\n\n$$\n\\frac{H(16)}{H(8)}=2^{\\frac{2}{3}}\n$$\n\n$$\n2^{\\frac{2}{3}}\\approx 1.587\n$$\n\nThat factor is not $2$. An exact doubling would need exponent $1$, so the statement is False.",
+      "**C.** → False\n\nHolding power is $H(m)=6m^{\\frac{2}{3}}$. The $150$ kN storm floor is already met at $125$ kg, and\n\n$$\n\\frac{125}{1000}=0.125\n$$\n\nthat mass is $0.125$ tonnes, which is not more than $1$ tonne, so the statement is False.",
+      "**D.** → True\n\nThe kilogram law is $H(m)=6m^{\\frac{2}{3}}$. Switching to tonnes is the substitution $m=1000t$:\n\n$$\nH=6(1000t)^{\\frac{2}{3}}\n$$\n\n$$\n(1000t)^{\\frac{2}{3}}=1000^{\\frac{2}{3}}t^{\\frac{2}{3}}\n$$\n\n$$\n1000^{\\frac{2}{3}}=(10^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(10^{3})^{\\frac{2}{3}}=10^{2}\n$$\n\n$$\n10^{2}=100\n$$\n\n$$\nH=6\\cdot 100\\, t^{\\frac{2}{3}}\n$$\n\n$$\nH=600t^{\\frac{2}{3}}\n$$\n\nThe new coefficient is $600$, which already sits above $500$, so the statement is True.",
+      "**E.** → False\n\nHolding power is $H(m)=6m^{\\frac{2}{3}}$. Two $8$ kg buoys hold\n\n$$\n2H(8)=2\\cdot 24\n$$\n\n$$\n2\\cdot 24=48\n$$\n\nOne $64$ kg buoy holds\n\n$$\n64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(4^{3})^{\\frac{2}{3}}=4^{2}\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\nH(64)=6\\cdot 16\n$$\n\n$$\n6\\cdot 16=96\n$$\n\nForty-eight sits below ninety-six, so two $8$ kg buoys do not hold more than one $64$ kg buoy, so the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "sort_order": 62,
-    "solution_overview": "Holding power is $H(m)=Am^{\\frac{2}{3}}$ kilonewtons in kilograms with $H(8)=24$, the same law in tonnes is $H(t)=Bt^{\\frac{2}{3}}$, and the storm floor is $150$ kN.\n\n**Part 1: Building the model.**\n\nLet $m$ = buoy mass in kilograms, $t$ = the same mass in tonnes, $H$ = holding power in kilonewtons. The exponent is given, so one trial fixes $A$. A change of unit is the substitution $m=1000t$, and the conversion enters under the exponent.\n\n**1. Translate: the trial buoy.**\n\n$$A\\cdot 8^{\\frac{2}{3}}=24 \\qquad 8^{\\frac{2}{3}}=4$$\n\n**2. Translate: the unit change.**\n\n$$B=A\\cdot 1000^{\\frac{2}{3}}$$\n\n**Part 2: The model.**\n\n$$H(m)=6m^{\\frac{2}{3}} \\tag{1}$$\n\n$$H(t)=600t^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The storm mass in kilograms is $125$, which is $0.125$ tonnes, not $125$ tonnes.\n\n**2.** The conversion factor is $1000^{\\frac{2}{3}}=100$, not $1000$, and doubling mass multiplies holding power by $2^{\\frac{2}{3}}\\approx 1.587$.\n\n**Answer.** $A=6$ | $B=600$ | storm mass $125$ kg | doubling factor $2^{\\frac{2}{3}}$"
+    "solution_overview": "Holding power is $H(m)=Am^{\\frac{2}{3}}$ kilonewtons in kilograms with $H(8)=24$, the same law in tonnes is $H(t)=Bt^{\\frac{2}{3}}$, and the storm floor is $150$ kN.\n\n**Part 1: Building the model.**\n\nLet $m$ = buoy mass in kilograms, $t$ = the same mass in tonnes, $H$ = holding power in kilonewtons. The exponent is given, so one trial fixes $A$. A change of unit is the substitution $m=1000t$, and the conversion enters under the exponent.\n\n**1. Translate: the trial buoy.**\n\n$$A\\cdot 8^{\\frac{2}{3}}=24 \\qquad 8^{\\frac{2}{3}}=4$$\n\n**2. Translate: the unit change.**\n\n$$B=A\\cdot 1000^{\\frac{2}{3}}$$\n\n**Part 2: The model.**\n\n$$H(m)=6m^{\\frac{2}{3}} \\tag{1}$$\n\n$$H(t)=600t^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $H(125)=150>140$. Doubling $8$ kg to $16$ kg multiplies holding power by $2^{\\frac{2}{3}}\\approx 1.587$, not by $2$.\n\n**2.** The tonne-scale coefficient is $600>500$. Reaching $150$ kN takes $0.125$ tonnes, not more than $1$ tonne.\n\n**3.** Two $8$ kg buoys hold $48$ kN, while $H(64)=96$.\n\n**Answer.** $A=6$ | $B=600$ | $H(125)=150$ | $H(64)=96$ | two $8$ kg buoys $48$ kN"
   },
   {
     "id": "math-8-63",
@@ -65,29 +65,29 @@
     "title": "Mesh Throughput Against an Inverse-Square Floor",
     "context": "A wireless mesh's sustained throughput follows $T(d)=A d^{-2}$ megabits per second, where $d>0$ is the hop distance in metres. A bench test at $d=4$ m recorded $T=50$ Mbps. The link is rated reliable only while throughput stays at or above $8$ Mbps. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The hop distance needed for a given throughput is itself a power function of that throughput.",
       "The farthest reliable hop distance is already under $12$ m.",
-      "Doubling the hop distance halves the throughput.",
+      "Doubling the hop distance from $4$ m to $8$ m halves the throughput.",
       "A hop of $11$ m still clears the $8$ Mbps reliability floor.",
-      "If the hops keep growing, throughput eventually becomes negative."
+      "The drop from $4$ m to $8$ m already exceeds remaining throughput at $8$ m.",
+      "A hop of $5$ m still delivers more than $30$ Mbps."
     ],
     "answer_key": [
       true,
+      false,
+      false,
       true,
-      false,
-      false,
-      false
+      true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nA power with a nonzero exponent inverts to another power. From $T=\\frac{800}{d^{2}}$ one gets\n\n$$\nd^{2}=\\frac{800}{T}\n$$\n\n$$\nd=\\sqrt{800}\\, T^{-\\frac{1}{2}}\n$$\n\nDistance is a power of throughput with exponent $-\\frac{1}{2}$, so the statement is True.",
-      "**B.** → True\n\nThe $8$ Mbps floor is\n\n$$\n\\frac{800}{d^{2}}=8\n$$\n\n$$\nd^{2}=100\n$$\n\n$$\nd=10\n$$\n\nBecause the exponent is negative, every longer hop falls below $8$ Mbps. Ten metres already sits under $12$ m, so the statement is True.",
-      "**C.** → False\n\nDoubling the hop multiplies throughput by $2^{-2}$:\n\n$$\n\\frac{T(2d)}{T(d)}=2^{-2}=\\frac{1}{4}\n$$\n\nA cut to one half would need exponent $-1$, which would give $2^{-1}=\\frac{1}{2}$. An inverse-square law quarters the reading when distance doubles, so the statement is False.",
-      "**D.** → False\n\nAt $11$ m:\n\n$$\nT(11)=\\frac{800}{121}\\approx 6.61\n$$\n\nwhich is already below $8$ Mbps. The $10$ m floor sits at exactly $8$ Mbps, and a longer hop can only be slower, so the statement is False.",
-      "**E.** → False\n\nThe numerator $800$ is positive, so every hop $d>0$ keeps $T>0$. As hops grow, throughput falls toward $0$ from above and never crosses it, so the statement is False."
+      "**A.** → True\n\nThe recovered law is $T(d)=\\frac{800}{d^{2}}$. The $8$ Mbps floor is\n\n$$\n\\frac{800}{d^{2}}=8\n$$\n\n$$\nd^{2}=\\frac{800}{8}\n$$\n\n$$\nd^{2}=100\n$$\n\n$$\nd=10\n$$\n\nTen metres already sits under $12$ m, so the farthest reliable hop is under $12$ m, so the statement is True.",
+      "**B.** → False\n\nThroughput is $T(d)=\\frac{800}{d^{2}}$. Doubling the hop from $4$ m to $8$ m multiplies throughput by\n\n$$\n\\frac{T(8)}{T(4)}=2^{-2}\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\nThe reading falls from $50$ Mbps to $12.5$ Mbps, a cut to one quarter, not to one half, so the statement is False.",
+      "**C.** → False\n\nThroughput is $T(d)=\\frac{800}{d^{2}}$. At $11$ m:\n\n$$\nT(11)=\\frac{800}{121}\n$$\n\n$$\n\\frac{800}{121}\\approx 6.61\n$$\n\nAbout $6.61$ Mbps already sits below the $8$ Mbps floor, so the statement is False.",
+      "**D.** → True\n\nThroughput is $T(d)=\\frac{800}{d^{2}}$. At the two hops:\n\n$$\nT(4)=\\frac{800}{16}\n$$\n\n$$\nT(4)=50\n$$\n\n$$\nT(8)=\\frac{800}{64}\n$$\n\n$$\nT(8)=12.5\n$$\n\n$$\nT(4)-T(8)=50-12.5\n$$\n\n$$\n50-12.5=37.5\n$$\n\nThe remaining throughput at $8$ m is $12.5$ Mbps, and $37.5>12.5$, so the drop already exceeds that remainder, so the statement is True.",
+      "**E.** → True\n\nThroughput is $T(d)=\\frac{800}{d^{2}}$. At $5$ m:\n\n$$\nT(5)=\\frac{800}{25}\n$$\n\n$$\n\\frac{800}{25}=32\n$$\n\nThirty-two already sits above $30$ Mbps, so the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 63,
-    "solution_overview": "Mesh throughput is $T(d)=Ad^{-2}$ megabits per second, calibrated by $T(4)=50$, and the link is reliable only while $T\\ge 8$.\n\n**Part 1: Building the model.**\n\nLet $d$ = hop distance in metres and $T$ = sustained throughput in megabits per second. The exponent $-2$ is given, so one bench reading fixes $A$. Because the exponent is negative, the reliability floor becomes a maximum distance.\n\n**1. Translate: the bench reading.**\n\n$$\\frac{A}{4^{2}}=50$$\n\n**2. Translate: the reliability floor.**\n\n$$\\frac{A}{d^{2}}\\ge 8 \\quad\\Longleftrightarrow\\quad d\\le \\sqrt{\\frac{A}{8}}$$\n\n**Part 2: The model.**\n\n$$T(d)=\\frac{800}{d^{2}} \\tag{1}$$\n\n$$d=\\sqrt{800}\\, T^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The reliable radius is $10$ m, and $T(11)\\approx 6.61$ already misses the floor.\n\n**2.** Doubling a hop quarters throughput, the inverse $(2)$ is a power, and $T(d)$ stays positive for every $d>0$.\n\n**Answer.** $A=800$ | reliable radius $10$ m | doubling factor $\\frac{1}{4}$ | $T$ never negative"
+    "solution_overview": "Mesh throughput is $T(d)=Ad^{-2}$ megabits per second, calibrated by $T(4)=50$, and the link is reliable only while $T\\ge 8$.\n\n**Part 1: Building the model.**\n\nLet $d$ = hop distance in metres and $T$ = sustained throughput in megabits per second. The exponent $-2$ is given, so one bench reading fixes $A$. Because the exponent is negative, the reliability floor becomes a maximum distance.\n\n**1. Translate: the bench reading.**\n\n$$\\frac{A}{4^{2}}=50$$\n\n**2. Translate: the reliability floor.**\n\n$$\\frac{A}{d^{2}}\\ge 8 \\quad\\Longleftrightarrow\\quad d\\le \\sqrt{\\frac{A}{8}}$$\n\n**Part 2: The model.**\n\n$$T(d)=\\frac{800}{d^{2}} \\tag{1}$$\n\n$$d=\\sqrt{800}\\, T^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The $8$ Mbps floor is met at $d=10$ m, already under $12$ m. $T(11)=\\frac{800}{121}\\approx 6.61$ misses the floor.\n\n**2.** Doubling $4$ m to $8$ m quarters throughput, from $50$ to $12.5$. The drop $37.5$ already exceeds the remaining $12.5$.\n\n**3.** $T(5)=32>30$.\n\n**Answer.** $A=800$ | reliable radius $10$ m | $T(8)=12.5$ | $T(5)=32$"
   },
   {
     "id": "math-8-64",
@@ -95,29 +95,29 @@
     "title": "Allometric Gill Area Across Body Masses",
     "context": "A fish physiologist models gill surface area as $G(m)=A m^{\\frac{3}{4}}$ square centimetres for body mass $m>0$ grams. A $256$ g specimen has gill area $512$ cm$^{2}$. Area per gram is the derived intensity $\\frac{G(m)}{m}$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The exponent is smaller than one, so gill area grows more slowly than body mass.",
       "A $16$ g fish already has more than $50$ cm$^{2}$ of gill.",
-      "Gill area per gram is constant across body masses.",
       "Doubling body mass doubles gill area.",
-      "A $64$ g fish already has more than $200$ cm$^{2}$ of gill."
+      "A $64$ g fish already has more than $200$ cm$^{2}$ of gill.",
+      "Two $16$ g fish together already have more gill area than one $64$ g fish.",
+      "Gill area per gram falls from $16$ g to $256$ g by more than $1$."
     ],
     "answer_key": [
       true,
+      false,
+      false,
       true,
-      false,
-      false,
-      false
+      true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe allometric exponent is already $\\frac{3}{4}$. If mass scales by $c>1$, area scales by $c^{\\frac{3}{4}}$, and $\\frac{3}{4}<1$ forces $c^{\\frac{3}{4}}<c$. Each extra gram of body adds less gill than the gram before it, so the statement is True.",
-      "**B.** → True\n\nGill area is $G(m)=8m^{\\frac{3}{4}}$. At sixteen grams:\n\n$$\n16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}=2^{3}=8\n$$\n\n$$\nG(16)=8\\cdot 8=64\n$$\n\nSixty-four sits above $50$ cm$^{2}$, so the statement is True.",
-      "**C.** → False\n\nArea per gram subtracts $1$ from the exponent:\n\n$$\n\\frac{G(m)}{m}=8m^{\\frac{3}{4}-1}\n$$\n\n$$\n\\frac{G(m)}{m}=8m^{-\\frac{1}{4}}\n$$\n\nThe leftover exponent is negative, so intensity falls as mass grows. A constant intensity would need exponent $0$, so the statement is False.",
-      "**D.** → False\n\nDoubling mass would double gill area only if the exponent were $1$. With exponent $\\frac{3}{4}$ the scale factor is\n\n$$\n\\frac{G(2m)}{G(m)}=2^{\\frac{3}{4}}\\approx 1.682\n$$\n\nnot $2$. Area rises, but not in lockstep with mass, so the statement is False.",
-      "**E.** → False\n\nAt sixty-four grams:\n\n$$\n64^{\\frac{3}{4}}=(2^{6})^{\\frac{3}{4}}=2^{\\frac{9}{2}}=16\\sqrt{2}\n$$\n\n$$\nG(64)=8\\cdot 16\\sqrt{2}=128\\sqrt{2}\\approx 181\n$$\n\nAbout $181$ cm$^{2}$ sits short of $200$, so the statement is False."
+      "**A.** → True\n\nThe recovered law is $G(m)=8m^{\\frac{3}{4}}$. At sixteen grams:\n\n$$\n16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}\n$$\n\n$$\n(2^{4})^{\\frac{3}{4}}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\n$$\nG(16)=8\\cdot 8\n$$\n\n$$\n8\\cdot 8=64\n$$\n\nSixty-four already sits above $50$ cm$^{2}$, so the statement is True.",
+      "**B.** → False\n\nGill area is $G(m)=8m^{\\frac{3}{4}}$. Doubling mass multiplies gill area by\n\n$$\n\\frac{G(2m)}{G(m)}=2^{\\frac{3}{4}}\n$$\n\n$$\n2^{\\frac{3}{4}}\\approx 1.682\n$$\n\nThat factor is not $2$. An exact doubling would need exponent $1$, so the statement is False.",
+      "**C.** → False\n\nGill area is $G(m)=8m^{\\frac{3}{4}}$. At sixty-four grams:\n\n$$\n64^{\\frac{3}{4}}=8\n$$\n\n$$\nG(64)=8\\cdot 8\n$$\n\n$$\n8\\cdot 8=64\n$$\n\nSixty-four sits well short of $200$ cm$^{2}$, so the statement is False.",
+      "**D.** → True\n\nGill area is $G(m)=8m^{\\frac{3}{4}}$. Two $16$ g fish already total\n\n$$\n2G(16)=2\\cdot 64\n$$\n\n$$\n2\\cdot 64=128\n$$\n\nOne $64$ g fish has $G(64)=64$. Because $128>64$, the pair already has more gill area, so the statement is True.",
+      "**E.** → True\n\nGill area is $G(m)=8m^{\\frac{3}{4}}$. Area per gram is\n\n$$\n\\frac{G(m)}{m}=8m^{-\\frac{1}{4}}\n$$\n\nAt $16$ g:\n\n$$\n\\frac{G(16)}{16}=8\\cdot 16^{-\\frac{1}{4}}\n$$\n\n$$\n16^{\\frac{1}{4}}=2\n$$\n\n$$\n\\frac{G(16)}{16}=\\frac{8}{2}\n$$\n\n$$\n\\frac{8}{2}=4\n$$\n\nAt $256$ g:\n\n$$\n256^{\\frac{1}{4}}=4\n$$\n\n$$\n\\frac{G(256)}{256}=\\frac{8}{4}\n$$\n\n$$\n\\frac{8}{4}=2\n$$\n\n$$\n4-2=2\n$$\n\nThe intensity falls by $2$, which is already more than $1$, so the statement is True."
     ],
     "difficulty_level": "5/5",
     "sort_order": 64,
-    "solution_overview": "Gill area is $G(m)=Am^{\\frac{3}{4}}$ square centimetres, calibrated by $G(256)=512$, and intensity is $\\frac{G(m)}{m}$.\n\n**Part 1: Building the model.**\n\nLet $m$ = body mass in grams and $G$ = gill area in square centimetres. The exponent is given, so one specimen fixes $A$. Dividing the law by mass subtracts one from the exponent.\n\n**1. Translate: the specimen.**\n\n$$A\\cdot 256^{\\frac{3}{4}}=512 \\qquad 256^{\\frac{3}{4}}=64$$\n\n**2. Translate: intensity.**\n\n$$\\frac{G(m)}{m}=8m^{-\\frac{1}{4}}$$\n\n**Part 2: The model.**\n\n$$G(m)=8m^{\\frac{3}{4}} \\tag{1}$$\n\n$$\\frac{G(m)}{m}=8m^{-\\frac{1}{4}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $\\frac{3}{4}<1$, intensity falls with mass, and two $16$ g fish beat one $32$ g fish: $2G(16)=128>G(32)\\approx 107.63$.\n\n**2.** Levels: $G(16)=64$, and $216$ cm$^{2}$ occurs at $81$ g rather than at $64$ g.\n\n**Answer.** $A=8$ | $G(16)=64$ | intensity $8m^{-\\frac{1}{4}}$ | $216$ cm$^{2}$ at $81$ g"
+    "solution_overview": "Gill area is $G(m)=Am^{\\frac{3}{4}}$ square centimetres, calibrated by $G(256)=512$, and intensity is $\\frac{G(m)}{m}$.\n\n**Part 1: Building the model.**\n\nLet $m$ = body mass in grams and $G$ = gill area in square centimetres. The exponent is given, so one specimen fixes $A$. Dividing the law by mass subtracts one from the exponent.\n\n**1. Translate: the specimen.**\n\n$$A\\cdot 256^{\\frac{3}{4}}=512 \\qquad 256^{\\frac{3}{4}}=64$$\n\n**2. Translate: intensity.**\n\n$$\\frac{G(m)}{m}=8m^{-\\frac{1}{4}}$$\n\n**Part 2: The model.**\n\n$$G(m)=8m^{\\frac{3}{4}} \\tag{1}$$\n\n$$\\frac{G(m)}{m}=8m^{-\\frac{1}{4}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $G(16)=64>50$. Doubling mass multiplies gill area by $2^{\\frac{3}{4}}\\approx 1.682$, not by $2$.\n\n**2.** $G(64)=64$, which is not more than $200$. Two $16$ g fish already total $128>64$.\n\n**3.** Gill area per gram falls from $4$ at $16$ g to $2$ at $256$ g, a drop of more than $1$.\n\n**Answer.** $A=8$ | $G(16)=64$ | $G(64)=64$ | intensity $4$ to $2$"
   },
   {
     "id": "math-8-65",
@@ -127,27 +127,27 @@
     "statements": [
       "Quadrupling curing time exactly doubles strength.",
       "Strength on day $4$ is already above $8$ MPa.",
-      "An extra day adds more strength after nine days of curing than it does after four.",
+      "The extra strength from day $4$ to day $9$ already falls short of the day-$4$ strength.",
       "Reaching $30$ MPa still takes under $40$ days of curing.",
       "The recorded $5$ MPa is the strength on day $9$."
     ],
     "answer_key": [
       true,
       true,
-      false,
+      true,
       true,
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nQuadrupling time multiplies strength by $\\sqrt{4}$, and the coefficient cancels:\n\n$$\n\\frac{S(4t)}{S(t)}=\\sqrt{4}=2\n$$\n\nThe multiplier is exactly $2$ at every starting day. Quadrupling curing time doubles strength, so the statement is True.",
-      "**B.** → True\n\nThe law is $S(t)=5\\sqrt{t}$. Day $4$ is $5\\cdot 2=10$ MPa. Ten sits above $8$ MPa, and the companion $15-10=5$ recovers the logged gap, so the statement is True.",
-      "**C.** → False\n\nAn extra day is the derivative of $S(t)=5\\sqrt{t}$:\n\n$$\nS'(t)=\\frac{5}{2}t^{-\\frac{1}{2}}\n$$\n\n$$\nS'(4)=\\frac{5}{2}\\cdot\\frac{1}{2}=\\frac{5}{4}\n$$\n\n$$\nS'(9)=\\frac{5}{2}\\cdot\\frac{1}{3}=\\frac{5}{6}\n$$\n\nBecause $\\frac{5}{4}>\\frac{5}{6}$, the extra day adds more after four days than after nine, so the statement is False.",
-      "**D.** → True\n\nReaching $30$ MPa:\n\n$$\n5\\sqrt{t}=30\n$$\n\n$$\n\\sqrt{t}=6\n$$\n\n$$\nt=36\n$$\n\nForward check: $5\\cdot 6=30$. Thirty-six days already sit under $40$, so the statement is True.",
-      "**E.** → False\n\nDay $9$ carries $5\\cdot 3=15$ MPa. The logged figure is the difference $15-10=5$, a gap, not the day-$9$ level, so the statement is False."
+      "**A.** → True\n\nQuadrupling time multiplies strength by $\\sqrt{4}$, and the coefficient cancels:\n\n$$\n\\frac{S(4t)}{S(t)}=\\sqrt{4}\n$$\n\n$$\n\\sqrt{4}=2\n$$\n\nThe multiplier is exactly $2$ at every starting day, so the statement is True.",
+      "**B.** → True\n\nThe recorded gap recovers the law $S(t)=5\\sqrt{t}$, because\n\n$$\nA\\sqrt{9}-A\\sqrt{4}=5\n$$\n\n$$\nA(3-2)=5\n$$\n\n$$\nA=5\n$$\n\nDay $4$ then reads\n\n$$\nS(4)=5\\cdot 2\n$$\n\n$$\n5\\cdot 2=10\n$$\n\nTen already sits above $8$ MPa, so the statement is True.",
+      "**C.** → True\n\nStrength is $S(t)=5\\sqrt{t}$. The two sample days read\n\n$$\nS(4)=5\\cdot\\sqrt{4}\n$$\n\n$$\nS(4)=10\n$$\n\n$$\nS(9)=5\\cdot\\sqrt{9}\n$$\n\n$$\nS(9)=15\n$$\n\n$$\nS(9)-S(4)=15-10\n$$\n\n$$\n15-10=5\n$$\n\nFive already sits short of the day-$4$ strength of $10$ MPa, so the statement is True.",
+      "**D.** → True\n\nStrength is $S(t)=5\\sqrt{t}$. Reaching $30$ MPa:\n\n$$\n5\\sqrt{t}=30\n$$\n\n$$\n\\sqrt{t}=6\n$$\n\n$$\nt=36\n$$\n\nThirty-six days already sit under $40$, so the statement is True.",
+      "**E.** → False\n\nStrength is $S(t)=5\\sqrt{t}$. Day $9$ carries\n\n$$\nS(9)=5\\cdot 3\n$$\n\n$$\n5\\cdot 3=15\n$$\n\nThe logged figure is the difference $15-10=5$, a gap, not the day-$9$ level, so the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "sort_order": 65,
-    "solution_overview": "Curing strength is $S(t)=A\\sqrt{t}$ megapascals, and the only surviving record is the $5$ MPa rise between day $4$ and day $9$.\n\n**Part 1: Building the model.**\n\nLet $t$ = curing time in days and $S$ = strength in megapascals. No single level was logged, so the coefficient comes out of a difference. That works because $A$ is a common factor and the exponent $\\frac{1}{2}$ is given.\n\n**1. Translate: the surviving record.**\n\n$$A\\sqrt{9}-A\\sqrt{4}=5$$\n\n**2. Translate: factor the coefficient out.**\n\n$$A(3-2)=5$$\n\n**Part 2: The model.**\n\n$$S(t)=5\\sqrt{t} \\tag{1}$$\n\n$$\\frac{S(ct)}{S(t)}=\\sqrt{c} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The record gives $A=5$, so $S(4)=10$ and $S(9)=15$. The $5$ MPa is the gap, not a level.\n\n**2.** Quadrupling time doubles strength, $30$ MPa occurs on day $36$, and $S'(t)$ falls, so an extra day adds more at day $4$ than at day $9$.\n\n**Answer.** $A=5$ | $S(4)=10$ | $S(9)=15$ | $30$ MPa on day $36$"
+    "solution_overview": "Curing strength is $S(t)=A\\sqrt{t}$ megapascals, and the only surviving record is the $5$ MPa rise between day $4$ and day $9$.\n\n**Part 1: Building the model.**\n\nLet $t$ = curing time in days and $S$ = strength in megapascals. No single level was logged, so the coefficient comes out of a difference. That works because $A$ is a common factor and the exponent $\\frac{1}{2}$ is given.\n\n**1. Translate: the surviving record.**\n\n$$A\\sqrt{9}-A\\sqrt{4}=5$$\n\n**2. Translate: factor the coefficient out.**\n\n$$A(3-2)=5$$\n\n**Part 2: The model.**\n\n$$S(t)=5\\sqrt{t} \\tag{1}$$\n\n$$\\frac{S(ct)}{S(t)}=\\sqrt{c} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The record gives $A=5$, so $S(4)=10$ and $S(9)=15$. The $5$ MPa is the gap, not a level.\n\n**2.** Quadrupling time doubles strength. The extra from day $4$ to day $9$ is $5$, which falls short of $S(4)=10$.\n\n**3.** $30$ MPa occurs on day $36$, already under $40$ days.\n\n**Answer.** $A=5$ | $S(4)=10$ | $S(9)=15$ | $30$ MPa on day $36$"
   },
   {
     "id": "math-8-66",
@@ -215,29 +215,29 @@
     "title": "Cooling Fan Noise Against a Night-Time Cap",
     "context": "Acoustic intensity from a cooling fan follows $I(d)=A d^{-2}$ watts per square metre, where $d>0$ is distance from the hub in metres. A meter reading at $2$ metres records $0.72$ W/m$^{2}$. Night operations are capped at $0.08$ W/m$^{2}$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Doubling the distance cuts intensity to one quarter.",
+      "Doubling the distance from $2$ m to $4$ m cuts intensity to one quarter.",
       "At $4$ metres the intensity is already under $0.2$ W/m$^{2}$.",
       "An extra metre cuts more intensity at $2$ m than it does at $6$ m.",
       "At $6$ metres the intensity is still above the $0.08$ W/m$^{2}$ night cap.",
-      "The night cap is never met at any finite distance."
+      "The distance that meets the $0.08$ cap is already under $7$ m."
     ],
     "answer_key": [
       true,
       true,
       true,
       false,
-      false
+      true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nDoubling distance multiplies intensity by $2^{-2}$:\n\n$$\n\\frac{I(2d)}{I(d)}=2^{-2}=\\frac{1}{4}\n$$\n\nThe factor is one quarter at every starting distance. Doubling the distance cuts intensity to one quarter, so the statement is True.",
-      "**B.** → True\n\nIntensity is $I(d)=\\frac{2.88}{d^{2}}$. At four metres:\n\n$$\nI(4)=\\frac{2.88}{16}=0.18\n$$\n\nThat already sits under $0.2$ W/m$^{2}$, so the statement is True.",
-      "**C.** → True\n\nAn extra metre is the derivative of $I(d)=\\frac{2.88}{d^{2}}$:\n\n$$\nI'(d)=-5.76\\, d^{-3}\n$$\n\nThe drop per metre is $\\frac{5.76}{d^{3}}$. At $2$ m that is $\\frac{5.76}{8}=0.72$; at $6$ m it is $\\frac{5.76}{216}\\approx 0.0267$. The drop is steeper near the hub, so the statement is True.",
-      "**D.** → False\n\nAt six metres:\n\n$$\nI(6)=\\frac{2.88}{36}=0.08\n$$\n\nSix metres is the night-cap boundary. The word above excludes a boundary value, so the statement is False.",
-      "**E.** → False\n\nSetting $I=0.08$ gives $d^{2}=36$, so $d=6$. Intensity falls from $0.72$ toward $0$ and therefore crosses $0.08$ at a finite distance. The cap is met at $6$ m, so the statement is False."
+      "**A.** → True\n\nThe meter reading recovers $I(d)=\\frac{2.88}{d^{2}}$, because\n\n$$\n\\frac{A}{2^{2}}=0.72\n$$\n\n$$\nA=2.88\n$$\n\nDoubling distance from $2$ m to $4$ m then multiplies intensity by\n\n$$\n\\frac{I(4)}{I(2)}=2^{-2}\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\nThe factor is one quarter at every starting distance, so the statement is True.",
+      "**B.** → True\n\nIntensity is $I(d)=\\frac{2.88}{d^{2}}$. At four metres:\n\n$$\nI(4)=\\frac{2.88}{16}\n$$\n\n$$\n\\frac{2.88}{16}=0.18\n$$\n\nThat already sits under $0.2$ W/m$^{2}$, so the statement is True.",
+      "**C.** → True\n\nIntensity is $I(d)=\\frac{2.88}{d^{2}}$. An extra metre is the slope:\n\n$$\nI'(d)=-5.76\\, d^{-3}\n$$\n\nThe drop per metre is $\\frac{5.76}{d^{3}}$. At $2$ m:\n\n$$\n\\frac{5.76}{2^{3}}=\\frac{5.76}{8}\n$$\n\n$$\n\\frac{5.76}{8}=0.72\n$$\n\nAt $6$ m:\n\n$$\n\\frac{5.76}{6^{3}}=\\frac{5.76}{216}\n$$\n\n$$\n\\frac{5.76}{216}\\approx 0.0267\n$$\n\nThe drop is steeper near the hub, so the statement is True.",
+      "**D.** → False\n\nIntensity is $I(d)=\\frac{2.88}{d^{2}}$. At six metres:\n\n$$\nI(6)=\\frac{2.88}{36}\n$$\n\n$$\n\\frac{2.88}{36}=0.08\n$$\n\nSix metres is the night-cap boundary. The word above excludes a boundary value, so the statement is False.",
+      "**E.** → True\n\nIntensity is $I(d)=\\frac{2.88}{d^{2}}$. The $0.08$ cap is\n\n$$\n\\frac{2.88}{d^{2}}=0.08\n$$\n\n$$\nd^{2}=\\frac{2.88}{0.08}\n$$\n\n$$\nd^{2}=36\n$$\n\n$$\nd=6\n$$\n\nSix metres already sits under $7$ m, so the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "sort_order": 68,
-    "solution_overview": "Fan intensity is $I(d)=Ad^{-2}$ watts per square metre, calibrated by $I(2)=0.72$, and night work is capped at $0.08$.\n\n**Part 1: Building the model.**\n\nLet $d$ = distance from the hub in metres and $I$ = acoustic intensity in watts per square metre. The exponent $-2$ is given, so one meter reading fixes $A$. Because the exponent is negative, the night cap becomes a minimum standing distance.\n\n**1. Translate: the meter reading.**\n\n$$\\frac{A}{2^{2}}=0.72$$\n\n**2. Translate: the night cap.**\n\n$$\\frac{A}{d^{2}}\\le 0.08 \\quad\\Longleftrightarrow\\quad d\\ge \\sqrt{\\frac{A}{0.08}}$$\n\n**Part 2: The model.**\n\n$$I(d)=\\frac{2.88}{d^{2}} \\tag{1}$$\n\n$$I'(d)=-5.76\\, d^{-3} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The recovered coefficient is $2.88$, not $1.44$. Doubling distance quarters intensity.\n\n**2.** The cap is met at $d=6$, where $I=0.08$, and $|I'|$ is larger at $2$ m than at $6$ m.\n\n**Answer.** $I(d)=2.88d^{-2}$ | cap met at $d=6$ m | doubling factor $\\frac{1}{4}$ | $A\\ne 1.44$"
+    "solution_overview": "Fan intensity is $I(d)=Ad^{-2}$ watts per square metre, calibrated by $I(2)=0.72$, and night work is capped at $0.08$.\n\n**Part 1: Building the model.**\n\nLet $d$ = distance from the hub in metres and $I$ = acoustic intensity in watts per square metre. The exponent $-2$ is given, so one meter reading fixes $A$. Because the exponent is negative, the night cap becomes a minimum standing distance.\n\n**1. Translate: the meter reading.**\n\n$$\\frac{A}{2^{2}}=0.72$$\n\n**2. Translate: the night cap.**\n\n$$\\frac{A}{d^{2}}\\le 0.08 \\quad\\Longleftrightarrow\\quad d\\ge \\sqrt{\\frac{A}{0.08}}$$\n\n**Part 2: The model.**\n\n$$I(d)=\\frac{2.88}{d^{2}} \\tag{1}$$\n\n$$I'(d)=-5.76\\, d^{-3} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Doubling $2$ m to $4$ m quarters intensity. $I(4)=0.18<0.2$.\n\n**2.** $\\lvert I'\\rvert$ is larger at $2$ m than at $6$ m. $I(6)=0.08$ exactly, so the reading is not still above the cap.\n\n**3.** The cap is met at $d=6$, already under $7$ m.\n\n**Answer.** $I(d)=\\frac{2.88}{d^{2}}$ | $I(4)=0.18$ | $I(6)=0.08$ | cap at $d=6$ m"
   },
   {
     "id": "math-8-69",
@@ -277,26 +277,26 @@
     "statements": [
       "To double the logged throughput the yard must more than double the crew.",
       "With $36$ drivers the model already predicts more than $110$ pallets per hour.",
-      "Throughput per driver rises as the crew grows.",
+      "Throughput per driver falls from $16$ to $36$ drivers by more than $1$ pallet per driver.",
       "Reaching $150$ pallets per hour stays inside the safety cap.",
-      "Because throughput rises with crew, the safety cap on drivers is also a cap on pallets moved per hour."
+      "Two $16$-driver shifts already match one $64$-driver shift."
     ],
     "answer_key": [
       true,
       true,
-      false,
+      true,
       false,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nDoubling throughput is a crew factor $k$ with $k^{\\frac{1}{2}}=2$:\n\n$$\n\\frac{T(ks)}{T(s)}=k^{\\frac{1}{2}}\n$$\n\n$$\nk^{\\frac{1}{2}}=2\n$$\n\n$$\nk=4\n$$\n\nAn exact doubling of the crew would only multiply throughput by $\\sqrt{2}\\approx 1.41$. The yard needs four times the crew, not twice. That is more than a doubling, so the statement is True.",
-      "**B.** → True\n\nThe law is $T(s)=20\\sqrt{s}$. At the capped crew:\n\n$$\nT(36)=20\\cdot 36^{\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nT(36)=20\\cdot 6=120\n$$\n\nOne hundred and twenty already sits above $110$ pallets per hour, so the statement is True.",
-      "**C.** → False\n\nThroughput per driver subtracts $1$ from the exponent:\n\n$$\n\\frac{T(s)}{s}=20s^{\\frac{1}{2}-1}\n$$\n\n$$\n\\frac{T(s)}{s}=20s^{-\\frac{1}{2}}\n$$\n\nThe leftover exponent is negative, so intensity falls as the crew grows. A rising intensity would need a positive leftover exponent, so the statement is False.",
-      "**D.** → False\n\nA target of $150$ inverts as\n\n$$\n20\\sqrt{s}=150\n$$\n\n$$\n\\sqrt{s}=\\frac{150}{20}=7.5\n$$\n\n$$\ns=7.5^{2}=56.25\n$$\n\nwhich exceeds the cap of $36$. Even the capped shift delivers only $120$ pallets per hour. Reaching $150$ lies outside the safety cap, so the statement is False.",
-      "**E.** → True\n\nThroughput $T=20\\sqrt{s}$ rises with crew, so the largest legal crew of $36$ drivers produces the largest legal output, $120$ pallets per hour. No legal crew can exceed that. The driver cap is therefore also a cap on pallets moved per hour, so the statement is True."
+      "**A.** → True\n\nThe logged shift recovers $T(s)=20\\sqrt{s}$, because\n\n$$\nA\\cdot 16^{\\frac{1}{2}}=80\n$$\n\n$$\nA\\cdot 4=80\n$$\n\n$$\nA=20\n$$\n\nDoubling the logged $80$ pallets is a crew factor $k$ with\n\n$$\nk^{\\frac{1}{2}}=2\n$$\n\n$$\nk=4\n$$\n\nFour times the crew is more than a doubling, so the statement is True.",
+      "**B.** → True\n\nThroughput is $T(s)=20\\sqrt{s}$. At the capped crew:\n\n$$\nT(36)=20\\cdot 36^{\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nT(36)=20\\cdot 6\n$$\n\n$$\n20\\cdot 6=120\n$$\n\nOne hundred and twenty already sits above $110$ pallets per hour, so the statement is True.",
+      "**C.** → True\n\nThroughput is $T(s)=20\\sqrt{s}$. Throughput per driver is\n\n$$\n\\frac{T(s)}{s}=20s^{-\\frac{1}{2}}\n$$\n\nAt $16$ drivers:\n\n$$\n\\frac{T(16)}{16}=\\frac{20}{4}\n$$\n\n$$\n\\frac{20}{4}=5\n$$\n\nAt $36$ drivers:\n\n$$\n\\frac{T(36)}{36}=\\frac{20}{6}\n$$\n\n$$\n\\frac{20}{6}=\\frac{10}{3}\n$$\n\n$$\n5-\\frac{10}{3}=\\frac{5}{3}\n$$\n\nThe fall is $\\frac{5}{3}>1$ pallet per driver, so the statement is True.",
+      "**D.** → False\n\nThroughput is $T(s)=20\\sqrt{s}$. A target of $150$ inverts as\n\n$$\n20\\sqrt{s}=150\n$$\n\n$$\n\\sqrt{s}=\\frac{150}{20}\n$$\n\n$$\n\\sqrt{s}=\\frac{15}{2}\n$$\n\n$$\ns=\\left(\\frac{15}{2}\\right)^{2}\n$$\n\n$$\ns=\\frac{225}{4}\n$$\n\n$$\n\\frac{225}{4}=56.25\n$$\n\nThat crew already exceeds the cap of $36$. Even the capped shift delivers only $120$ pallets per hour, so the statement is False.",
+      "**E.** → True\n\nThroughput is $T(s)=20\\sqrt{s}$. Two $16$-driver shifts move\n\n$$\n2T(16)=2\\cdot 80\n$$\n\n$$\n2\\cdot 80=160\n$$\n\nOne $64$-driver shift moves\n\n$$\nT(64)=20\\cdot 64^{\\frac{1}{2}}\n$$\n\n$$\n64^{\\frac{1}{2}}=8\n$$\n\n$$\nT(64)=20\\cdot 8\n$$\n\n$$\n20\\cdot 8=160\n$$\n\nThe pair already matches the single $64$-driver shift, so the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "sort_order": 70,
-    "solution_overview": "Forklift throughput is $T(s)=As^{0.5}$ pallets per hour, calibrated by $T(16)=80$, and safety rules cap the shift at $36$ drivers.\n\n**Part 1: Building the model.**\n\nLet $s$ = drivers on shift and $T$ = pallets moved per hour. The exponent $0.5$ is given, so one logged shift fixes $A$. The exponent is positive but below $1$, so more drivers always help, yet each extra driver helps less than the one before.\n\n**1. Translate: the logged shift.**\n\n$$A\\cdot 16^{0.5}=80 \\qquad 16^{0.5}=4$$\n\n**2. Translate: a throughput target.**\n\n$$20\\sqrt{s}=T \\quad\\Longleftrightarrow\\quad s=\\left(\\frac{T}{20}\\right)^{2}$$\n\n**Part 2: The model.**\n\n$$T(s)=20\\sqrt{s} \\tag{1}$$\n\n$$\\frac{T(s)}{s}=20s^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Doubling the logged $80$ pallets needs four times the crew. Intensity $(2)$ falls as $s$ grows.\n\n**2.** $T(36)=120$, and $150$ pallets would need $s=56.25>36$. Because $T$ rises with $s$, the driver cap is also an output cap of $120$.\n\n**Answer.** $T(s)=20\\sqrt{s}$ | $T(36)=120$ | fourfold crew to double output | $150$ pallets need $56.25$ drivers"
+    "solution_overview": "Forklift throughput is $T(s)=As^{0.5}$ pallets per hour, calibrated by $T(16)=80$, and safety rules cap the shift at $36$ drivers.\n\n**Part 1: Building the model.**\n\nLet $s$ = drivers on shift and $T$ = pallets moved per hour. The exponent $0.5$ is given, so one logged shift fixes $A$. The exponent is positive but below $1$, so more drivers always help, yet each extra driver helps less than the one before.\n\n**1. Translate: the logged shift.**\n\n$$A\\cdot 16^{0.5}=80 \\qquad 16^{0.5}=4$$\n\n**2. Translate: a throughput target.**\n\n$$20\\sqrt{s}=T \\quad\\Longleftrightarrow\\quad s=\\left(\\frac{T}{20}\\right)^{2}$$\n\n**Part 2: The model.**\n\n$$T(s)=20\\sqrt{s} \\tag{1}$$\n\n$$\\frac{T(s)}{s}=20s^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Doubling the logged $80$ pallets needs four times the crew. $T(36)=120>110$.\n\n**2.** Throughput per driver falls from $5$ at $16$ drivers to $\\frac{10}{3}$ at $36$ drivers, a drop of $\\frac{5}{3}>1$.\n\n**3.** $150$ pallets would need $s=56.25>36$. Two $16$-driver shifts already match $T(64)=160$.\n\n**Answer.** $T(s)=20\\sqrt{s}$ | $T(36)=120$ | fourfold crew to double output | $150$ pallets need $56.25$ drivers"
   }
 ]

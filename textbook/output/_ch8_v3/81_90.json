@@ -37,27 +37,27 @@
     "statements": [
       "The received signal is inversely proportional to burial depth.",
       "Doubling burial depth halves the received signal.",
-      "The burial depth needed for a given reading is itself a power function of that reading.",
       "A conductor buried at $4$ metres already returns under $7$ millivolts.",
-      "A reading of $3.2$ millivolts still corresponds to a burial depth of more than $8$ metres."
+      "A reading of $3.2$ millivolts still corresponds to a burial depth of more than $8$ metres.",
+      "The drop from $2$ m to $4$ m already exceeds the remaining signal at $4$ m."
     ],
     "answer_key": [
       false,
       false,
       true,
-      true,
-      false
+      false,
+      true
     ],
     "tactical_explanations": [
-      "**A.** → False\n\nThe doubling record gives $r=-3$. Inverse proportionality would mean exponent $-1$, which would cut the signal in half when depth doubles:\n\n$$\n2^{-1}=\\frac{1}{2}\n$$\n\nThe recorded factor is one eighth:\n\n$$\n2^{-3}=\\frac{1}{8}\n$$\n\nThe exponent is $-3$, not $-1$, so the statement is False.",
-      "**B.** → False\n\nDoubling depth multiplies the signal by $2^{-3}$:\n\n$$\n\\frac{S(2x)}{S(x)}=2^{-3}\n$$\n\n$$\n2^{-3}=\\frac{1}{8}\n$$\n\nA cut to one half would need exponent $-1$. Doubling leaves one eighth of the signal, not one half, so the statement is False.",
-      "**C.** → True\n\nThe law is $S=\\frac{400}{x^{3}}$. Solving for depth:\n\n$$\nx^{3}=\\frac{400}{S}\n$$\n\n$$\nx=400^{\\frac{1}{3}}S^{-\\frac{1}{3}}\n$$\n\nA power with a nonzero exponent inverts to another power. Depth is a power of the reading, so the statement is True.",
-      "**D.** → True\n\nFour metres is one doubling of the calibration depth of $2$ metres, where the locator read $50$ millivolts. Each doubling multiplies the signal by $\\frac{1}{8}$:\n\n$$\nS(4)=50\\cdot\\frac{1}{8}\n$$\n\n$$\nS(4)=\\frac{50}{8}=6.25\n$$\n\nBecause $6.25<7$, the locator already reads under $7$ millivolts, so the statement is True.",
-      "**E.** → False\n\nAt a reading of $3.2$ millivolts:\n\n$$\n\\frac{400}{x^{3}}=3.2\n$$\n\n$$\nx^{3}=\\frac{400}{3.2}\n$$\n\n$$\n\\frac{400}{3.2}=125\n$$\n\n$$\nx=5\n$$\n\nbecause $5^{3}=125$ and depth is positive. Five metres is not more than $8$ metres, so the statement is False."
+      "**A.** → False\n\nThe doubling record $2^{r}=\\frac{1}{8}$ and the calibration $S(2)=50$ recover\n\n$$\nS(x)=400x^{-3}\n$$\n\nInverse proportionality would mean exponent $-1$, so doubling depth would multiply the signal by\n\n$$\n2^{-1}=\\frac{1}{2}\n$$\n\nThe recovered exponent is $-3$, and\n\n$$\n2^{-3}=\\frac{1}{8}\n$$\n\nThe law is inverse-cube, not inverse-linear, so the statement is False.",
+      "**B.** → False\n\nThe recovered law is $S(x)=400x^{-3}$. Doubling depth multiplies the signal by\n\n$$\n\\frac{S(2x)}{S(x)}=2^{-3}\n$$\n\n$$\n2^{-3}=\\frac{1}{8}\n$$\n\nA cut to one half would need exponent $-1$. Doubling leaves one eighth of the signal, not one half, so the statement is False.",
+      "**C.** → True\n\nThe recovered law is $S(x)=400x^{-3}$. At four metres:\n\n$$\nS(4)=400\\cdot 4^{-3}\n$$\n\n$$\n4^{3}=64\n$$\n\n$$\nS(4)=\\frac{400}{64}\n$$\n\n$$\n\\frac{400}{64}=6.25\n$$\n\n$$\n6.25<7\n$$\n\nThe locator already reads under $7$ millivolts, so the statement is True.",
+      "**D.** → False\n\nThe recovered law is $S(x)=400x^{-3}$. At a reading of $3.2$ millivolts:\n\n$$\n\\frac{400}{x^{3}}=3.2\n$$\n\n$$\nx^{3}=\\frac{400}{3.2}\n$$\n\n$$\n\\frac{400}{3.2}=125\n$$\n\n$$\nx=5\n$$\n\nbecause $5^{3}=125$ and depth is positive. Five metres is not more than $8$ metres, so the statement is False.",
+      "**E.** → True\n\nThe recovered law is $S(x)=400x^{-3}$, with $S(2)=50$ and $S(4)=6.25$. The drop from $2$ m to $4$ m is\n\n$$\n50-6.25=43.75\n$$\n\nThe remaining signal at $4$ m is $6.25$, and\n\n$$\n43.75>6.25\n$$\n\nThe drop already exceeds the remaining signal, so the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 82,
-    "solution_overview": "Attenuation is $S(x)=Ax^{r}$ in millivolts. Doubling depth leaves one eighth of the signal, and the calibration is $S(2)=50$.\n\n**Part 1: Building the model.**\n\nLet $x$ = burial depth in metres and $S$ = received signal in millivolts. The doubling record is a ratio, so the coefficient cancels and the exponent is isolated first. One observed pair then fixes the coefficient; because the exponent is negative, that recovery multiplies by a power of the depth.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=\\frac{1}{8}$$\n\n**2. Translate: the calibration run.**\n\n$$A\\cdot 2^{r}=50$$\n\n**Part 2: The model.**\n\n$$r=-3 \\tag{1}$$\n\n$$S(x)=400x^{-3} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of two gives the exponent, then the calibration multiplies:\n\n$$\\frac{1}{8}=2^{-3} \\quad \\Rightarrow \\quad r=-3, \\qquad A=50\\times 8=400$$\n\n**2.** Doubling depth leaves $\\frac{1}{8}$ of the signal, not $\\frac{1}{2}$, so the law is not inverse proportionality. The inverse $x=400^{\\frac{1}{3}}S^{-\\frac{1}{3}}$ is still a power.\n\n**3.** Levels against the thresholds:\n\n$$S(4)=6.25<7, \\qquad x=5\\ \\text{at}\\ S=3.2$$\n\n**Answer.** $r=-3$, $A=400$ | $S(x)=400x^{-3}$ | $S(4)=6.25$ mV | $3.2$ mV at $x=5$ m"
+    "solution_overview": "Attenuation is $S(x)=Ax^{r}$ in millivolts. Doubling depth leaves one eighth of the signal, and the calibration is $S(2)=50$.\n\n**Part 1: Building the model.**\n\nLet $x$ = burial depth in metres and $S$ = received signal in millivolts. The doubling record is a ratio, so the coefficient cancels and the exponent is isolated first. One observed pair then fixes the coefficient; because the exponent is negative, that recovery multiplies by a power of the depth.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=\\frac{1}{8}$$\n\n**2. Translate: the calibration run.**\n\n$$A\\cdot 2^{r}=50$$\n\n**Part 2: The model.**\n\n$$r=-3 \\tag{1}$$\n\n$$S(x)=400x^{-3} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of two gives the exponent, then the calibration multiplies:\n\n$$\\frac{1}{8}=2^{-3} \\quad \\Rightarrow \\quad r=-3, \\qquad A=50\\times 8=400$$\n\n**2.** Doubling depth leaves $\\frac{1}{8}$ of the signal, not $\\frac{1}{2}$, so the law is not inverse proportionality.\n\n**3.** Levels against the thresholds:\n\n$$S(4)=6.25<7, \\qquad x=5\\ \\text{at}\\ S=3.2, \\qquad S(2)-S(4)=43.75>S(4)=6.25$$\n\n**Answer.** $r=-3$, $A=400$ | $S(x)=400x^{-3}$ | $S(4)=6.25$ mV | $3.2$ mV at $x=5$ m | drop $43.75>6.25$"
   },
   {
     "id": "math-8-83",
@@ -95,29 +95,29 @@
     "title": "Micro-Irrigation Flow Under a Fourth-Power Law",
     "context": "Volumetric flow through a micro-irrigation emitter follows $Q(r)=A r^{k}$ litres per hour, where $r>0$ is the internal tube radius in millimetres. Neither constant is posted. Doubling any tube radius multiplies flow by $16$, and a bench test on a tube of radius $2$ mm delivered $48$ litres per hour. The designers also track the mean velocity index $\\frac{Q}{\\pi r^{2}}$, which spreads the flow across the tube's cross-section. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Flow grows faster than tube radius.",
-      "Doubling the tube radius doubles the flow.",
-      "The mean velocity index is the same in every tube.",
       "A tube of radius $3$ mm already delivers more than $200$ litres per hour.",
-      "A tube of radius $1$ mm still delivers more than $10$ litres per hour."
+      "Doubling the tube radius doubles the flow.",
+      "A tube of radius $1$ mm still delivers more than $10$ litres per hour.",
+      "The mean velocity index is the same in every tube.",
+      "Two $1$ mm tubes together already fall short of one $2$ mm tube."
     ],
     "answer_key": [
       true,
       false,
       false,
-      true,
-      false
+      false,
+      true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe doubling record gives $k=4$. An exponent larger than one means flow outruns radius: each extra millimetre of bore adds more delivery than the millimetre before it.\n\n$$\n4>1\n$$\n\nFour sits above one, so the statement is True.",
-      "**B.** → False\n\nDoubling the radius would double the flow only if the exponent were $1$. With exponent $4$ the scale factor is\n\n$$\n\\frac{Q(2r)}{Q(r)}=2^{4}\n$$\n\n$$\n2^{4}=16\n$$\n\nwhich is the recorded doubling factor itself. Flow rises sixteenfold, not twofold, so the statement is False.",
-      "**C.** → False\n\nThe mean velocity index divides $Q(r)=3r^{4}$ by the tube's cross-section $\\pi r^{2}$, so the exponents subtract rather than cancel:\n\n$$\n\\frac{Q(r)}{\\pi r^{2}}=\\frac{3r^{4}}{\\pi r^{2}}\n$$\n\n$$\n\\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2}\n$$\n\nThe leftover exponent $2$ is not zero, so the index grows with the radius. It is not the same in every tube, so the statement is False.",
-      "**D.** → True\n\nFlow is $Q(r)=3r^{4}$. At radius $3$ mm:\n\n$$\nQ(3)=3\\cdot 3^{4}\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\n3^{4}=81\n$$\n\n$$\nQ(3)=3\\cdot 81=243\n$$\n\nBecause $243>200$, the tube already delivers more than $200$ litres per hour, so the statement is True.",
-      "**E.** → False\n\nAt radius $1$ mm every power of $1$ is $1$, so the delivery equals the coefficient:\n\n$$\nQ(1)=3\\cdot 1^{4}=3\n$$\n\nBecause $3<10$, the tube does not still deliver more than $10$ litres per hour, so the statement is False."
+      "**A.** → True\n\nThe doubling record $2^{k}=16$ and the bench test $Q(2)=48$ recover\n\n$$\nQ(r)=3r^{4}\n$$\n\nAt radius $3$ mm:\n\n$$\n3^{2}=9\n$$\n\n$$\n3^{4}=81\n$$\n\n$$\nQ(3)=3\\cdot 81\n$$\n\n$$\n3\\cdot 81=243\n$$\n\n$$\n243>200\n$$\n\nThe tube already delivers more than $200$ litres per hour, so the statement is True.",
+      "**B.** → False\n\nThe recovered law is $Q(r)=3r^{4}$. Doubling the radius would double the flow only if the exponent were $1$. With exponent $4$ the scale factor is\n\n$$\n\\frac{Q(2r)}{Q(r)}=2^{4}\n$$\n\n$$\n2^{4}=16\n$$\n\nFlow rises sixteenfold, not twofold, so the statement is False.",
+      "**C.** → False\n\nThe recovered law is $Q(r)=3r^{4}$. At radius $1$ mm every power of $1$ is $1$, so the delivery equals the coefficient:\n\n$$\nQ(1)=3\\cdot 1^{4}\n$$\n\n$$\nQ(1)=3\n$$\n\n$$\n3<10\n$$\n\nThe tube does not still deliver more than $10$ litres per hour, so the statement is False.",
+      "**D.** → False\n\nThe recovered law is $Q(r)=3r^{4}$. The mean velocity index divides flow by the tube's cross-section $\\pi r^{2}$, so the exponents subtract rather than cancel:\n\n$$\n\\frac{Q(r)}{\\pi r^{2}}=\\frac{3r^{4}}{\\pi r^{2}}\n$$\n\n$$\n\\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2}\n$$\n\nThe leftover exponent $2$ is not zero, so the index grows with the radius. It is not the same in every tube, so the statement is False.",
+      "**E.** → True\n\nThe recovered law is $Q(r)=3r^{4}$. Two $1$ mm tubes together deliver\n\n$$\n2\\cdot Q(1)=2\\cdot 3\n$$\n\n$$\n2\\cdot 3=6\n$$\n\nOne $2$ mm tube is the bench reading\n\n$$\nQ(2)=48\n$$\n\n$$\n6<48\n$$\n\nTwo $1$ mm tubes fall short of one $2$ mm tube, so the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 84,
-    "solution_overview": "Flow obeys $Q(r)=Ar^{k}$. Doubling the radius multiplies flow by $16$, and the bench test is $Q(2)=48$. The mean velocity index is $\\frac{Q}{\\pi r^{2}}$.\n\n**Part 1: Building the model.**\n\nLet $r$ = internal radius in millimetres and $Q$ = flow in litres per hour. The doubling record isolates the exponent because the coefficient cancels. One bench test then fixes the coefficient. Dividing flow by the cross-section produces a second power whose exponent is the difference of the two.\n\n**1. Translate: the doubling rule.**\n\n$$2^{k}=16$$\n\n**2. Translate: the bench test.**\n\n$$A\\cdot 2^{k}=48$$\n\n**3. Translate: the velocity index.**\n\n$$\\frac{Q(r)}{\\pi r^{2}}=\\frac{A}{\\pi}r^{k-2}$$\n\n**Part 2: The model.**\n\n$$k=4 \\tag{1}$$\n\n$$Q(r)=3r^{4} \\tag{2}$$\n\n$$\\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of two, then dividing the bench reading:\n\n$$16=2^{4} \\quad \\Rightarrow \\quad k=4, \\qquad A=\\frac{48}{16}=3$$\n\n**2.** Because $k>1$, flow outruns radius, doubling multiplies flow by $16$, and the velocity index still carries exponent $2$.\n\n**3.** Levels against the thresholds:\n\n$$Q(3)=243>200, \\qquad Q(1)=3<10$$\n\n**Answer.** $k=4$, $A=3$ | $Q(r)=3r^{4}$ | $Q(3)=243$ L/h | velocity index $=\\frac{3}{\\pi}r^{2}$"
+    "solution_overview": "Flow obeys $Q(r)=Ar^{k}$. Doubling the radius multiplies flow by $16$, and the bench test is $Q(2)=48$. The mean velocity index is $\\frac{Q}{\\pi r^{2}}$.\n\n**Part 1: Building the model.**\n\nLet $r$ = internal radius in millimetres and $Q$ = flow in litres per hour. The doubling record isolates the exponent because the coefficient cancels. One bench test then fixes the coefficient. Dividing flow by the cross-section produces a second power whose exponent is the difference of the two.\n\n**1. Translate: the doubling rule.**\n\n$$2^{k}=16$$\n\n**2. Translate: the bench test.**\n\n$$A\\cdot 2^{k}=48$$\n\n**3. Translate: the velocity index.**\n\n$$\\frac{Q(r)}{\\pi r^{2}}=\\frac{A}{\\pi}r^{k-2}$$\n\n**Part 2: The model.**\n\n$$k=4 \\tag{1}$$\n\n$$Q(r)=3r^{4} \\tag{2}$$\n\n$$\\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of two, then dividing the bench reading:\n\n$$16=2^{4} \\quad \\Rightarrow \\quad k=4, \\qquad A=\\frac{48}{16}=3$$\n\n**2.** Doubling the radius multiplies flow by $16$, not by $2$. The velocity index still carries exponent $2$, so it is not the same in every tube.\n\n**3.** Levels against the thresholds:\n\n$$Q(3)=243>200, \\qquad Q(1)=3<10, \\qquad 2Q(1)=6<48=Q(2)$$\n\n**Answer.** $k=4$, $A=3$ | $Q(r)=3r^{4}$ | $Q(3)=243$ L/h | $2Q(1)=6<Q(2)=48$"
   },
   {
     "id": "math-8-85",
@@ -126,7 +126,7 @@
     "context": "Dose rate near an industrial radiography source follows $H(d)=A d^{r}$ microsieverts per hour, where $d>0$ is the distance from the source in metres. Neither constant is posted. Quadrupling any distance cuts the dose rate to one sixteenth, and a survey meter three metres from the source reads $80$ microsieverts per hour. Site rules put the barrier where the dose rate has fallen to $5$ microsieverts per hour. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Doubling the distance from the source halves the dose rate.",
-      "The dose rate stays positive at every finite distance from the source.",
+      "The drop from $3$ metres to $6$ metres already exceeds the remaining dose at $6$ metres.",
       "The distance needed for a given dose rate is itself a power of that dose rate.",
       "At $6$ metres the dose rate is already under $25$ microsieverts per hour.",
       "The barrier sits farther than $15$ metres from the source."
@@ -140,14 +140,14 @@
     ],
     "tactical_explanations": [
       "**A.** → False\n\nThe quadrupling record gives $r=-2$. Doubling the distance is then the factor $2^{-2}$:\n\n$$\n\\frac{H(2d)}{H(d)}=2^{-2}\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\nA cut to one half would need exponent $-1$. Doubling leaves one quarter of the dose rate, not one half, so the statement is False.",
-      "**B.** → True\n\nDose rate is $H(d)=\\frac{720}{d^{2}}$. The numerator is positive and the denominator is a square, hence positive for every finite $d>0$. A negative-power law never crosses zero. The dose rate stays positive, so the statement is True.",
+      "**B.** → True\n\nThe recovered law is $H(d)=720d^{-2}$. At three metres the survey reads $80$ microsieverts per hour. At six metres, one doubling quarters the dose rate:\n\n$$\nH(6)=80\\cdot\\frac{1}{4}\n$$\n\n$$\nH(6)=20\n$$\n\nThe drop from $3$ metres to $6$ metres is\n\n$$\n80-20=60\n$$\n\nThe remaining dose at $6$ metres is $20$, and\n\n$$\n60>20\n$$\n\nThe drop already exceeds the remaining dose, so the statement is True.",
       "**C.** → True\n\nFrom $H=\\frac{720}{d^{2}}$ one gets\n\n$$\nd^{2}=\\frac{720}{H}\n$$\n\n$$\nd=\\sqrt{720}\\, H^{-\\frac{1}{2}}\n$$\n\nA power with a nonzero exponent inverts to another power. Distance is a power of the dose rate, so the statement is True.",
       "**D.** → True\n\nSix metres is one doubling of the three-metre survey, where the meter read $80$ microsieverts per hour. Doubling quarters the dose rate, so\n\n$$\nH(6)=80\\cdot\\frac{1}{4}=20\n$$\n\nBecause $20<25$, the dose rate is already under $25$ microsieverts per hour, so the statement is True.",
       "**E.** → False\n\nThe barrier is the distance where the dose rate has fallen from $80$ to $5$ microsieverts per hour:\n\n$$\n\\frac{5}{80}=\\frac{1}{16}\n$$\n\nWith exponent $-2$ that dose ratio is a squared distance ratio:\n\n$$\n\\left(\\frac{d}{3}\\right)^{-2}=\\frac{1}{16}\n$$\n\n$$\n\\left(\\frac{3}{d}\\right)^{2}=\\frac{1}{16}\n$$\n\n$$\n\\frac{3}{d}=\\frac{1}{4}\n$$\n\n$$\nd=3\\cdot 4=12\n$$\n\nTwelve metres is not farther than $15$ metres, so the statement is False."
     ],
     "difficulty_level": "2/5",
     "sort_order": 85,
-    "solution_overview": "Dose rate obeys $H(d)=Ad^{r}$. Quadrupling distance leaves one sixteenth of the dose rate, the survey is $H(3)=80$, and the barrier sits where $H=5$.\n\n**Part 1: Building the model.**\n\nLet $d$ = distance from the source in metres and $H$ = dose rate in microsieverts per hour. The quadrupling record isolates the exponent. One survey reading then pins the coefficient; because that exponent is negative the recovery multiplies by a square. The barrier question inverts the same law.\n\n**1. Translate: the quadrupling rule.**\n\n$$4^{r}=\\frac{1}{16}$$\n\n**2. Translate: the survey reading.**\n\n$$A\\cdot 3^{r}=80$$\n\n**3. Translate: the barrier rule.**\n\n$$\\frac{A}{d^{-r}}=5$$\n\n**Part 2: The model.**\n\n$$r=-2 \\tag{1}$$\n\n$$H(d)=720d^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of four, then multiplying by the survey square:\n\n$$\\frac{1}{16}=4^{-2} \\quad \\Rightarrow \\quad r=-2, \\qquad A=80\\times 9=720$$\n\n**2.** Doubling quarters the dose rate, not halves it. The inverse of $(2)$ is a power, and $H(d)$ stays positive for every finite $d>0$.\n\n**3.** Levels against the thresholds:\n\n$$H(6)=20<25, \\qquad d=12<15$$\n\n**Answer.** $r=-2$, $A=720$ | $H(d)=720d^{-2}$ | $H(6)=20$ | barrier at $d=12$ m"
+    "solution_overview": "Dose rate obeys $H(d)=Ad^{r}$. Quadrupling distance leaves one sixteenth of the dose rate, the survey is $H(3)=80$, and the barrier sits where $H=5$.\n\n**Part 1: Building the model.**\n\nLet $d$ = distance from the source in metres and $H$ = dose rate in microsieverts per hour. The quadrupling record isolates the exponent. One survey reading then pins the coefficient; because that exponent is negative the recovery multiplies by a square. The barrier question inverts the same law.\n\n**1. Translate: the quadrupling rule.**\n\n$$4^{r}=\\frac{1}{16}$$\n\n**2. Translate: the survey reading.**\n\n$$A\\cdot 3^{r}=80$$\n\n**3. Translate: the barrier rule.**\n\n$$\\frac{A}{d^{-r}}=5$$\n\n**Part 2: The model.**\n\n$$r=-2 \\tag{1}$$\n\n$$H(d)=720d^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of four, then multiplying by the survey square:\n\n$$\\frac{1}{16}=4^{-2} \\quad \\Rightarrow \\quad r=-2, \\qquad A=80\\times 9=720$$\n\n**2.** Doubling quarters the dose rate, not halves it. The inverse of $(2)$ is a power. The drop $H(3)-H(6)=60$ already exceeds the remaining dose $H(6)=20$.\n\n**3.** Levels against the thresholds:\n\n$$H(6)=20<25, \\qquad d=12<15$$\n\n**Answer.** $r=-2$, $A=720$ | $H(d)=720d^{-2}$ | $H(6)=20$ | barrier at $d=12$ m | drop $60>20$"
   },
   {
     "id": "math-8-86",
@@ -185,29 +185,29 @@
     "title": "A Weir Rating Curve Rewritten in New Units",
     "context": "Discharge over a measuring weir follows $Q(h)=A h^{\\frac{3}{2}}$ cubic metres per second, where $h>0$ is the head in metres. A gauging at a head of $0.25$ metres recorded a discharge of $2$ cubic metres per second. A field team wants the same rating curve rewritten with the head in centimetres, sometimes keeping discharge in cubic metres per second and sometimes reporting it in litres per second. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Switching the head from metres to centimetres leaves the exponent unchanged.",
-      "Discharge grows faster than head.",
-      "Doubling the head doubles the discharge.",
+      "Switching the head to centimetres makes the new coefficient (cubic metres per second) larger than $0.02$.",
       "A head of $1$ metre still discharges under $20$ cubic metres per second.",
-      "A head of $4$ metres still discharges under $100$ cubic metres per second."
+      "Doubling the head doubles the discharge.",
+      "A head of $4$ metres still discharges under $100$ cubic metres per second.",
+      "The extra discharge from $0.25$ m to $1$ m already exceeds the $0.25$ m gauging."
     ],
     "answer_key": [
-      true,
-      true,
       false,
       true,
-      false
+      false,
+      false,
+      true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nSwitching the head from metres to centimetres replaces $h$ by a constant multiple of itself. One metre is $100$ centimetres, so\n\n$$\nh=\\frac{h_{\\mathrm{cm}}}{100}\n$$\n\nA power function pushes that constant through the existing exponent:\n\n$$\nQ=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}\n$$\n\n$$\nQ=\\frac{A}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}\n$$\n\nThe conversion rescales only the coefficient. The new exponent on $h_{\\mathrm{cm}}$ is still $\\frac{3}{2}$, so the statement is True.",
-      "**B.** → True\n\nThe weir exponent is $\\frac{3}{2}$. An exponent larger than one means discharge outruns head: each extra metre of head adds more flow than the metre before it.\n\n$$\n\\frac{3}{2}>1\n$$\n\nThree halves sits above one, and a change of units cannot move it, so the statement is True.",
-      "**C.** → False\n\nDoubling the head would double discharge only if the exponent were $1$. With exponent $\\frac{3}{2}$ the scale factor is\n\n$$\n\\frac{Q(2h)}{Q(h)}=2^{\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\cdot 2^{\\frac{1}{2}}\n$$\n\n$$\n2^{\\frac{1}{2}}\\approx 1.414\n$$\n\n$$\n2\\cdot 1.414\\approx 2.828\n$$\n\nDoubling the head multiplies discharge by about $2.83$, not by $2$, so the statement is False.",
-      "**D.** → True\n\nThe metre-form coefficient is $A=16$. At a head of one metre every power of $1$ is $1$, so the discharge equals the coefficient:\n\n$$\nQ(1)=16\\cdot 1^{\\frac{3}{2}}=16\n$$\n\nBecause $16<20$, the weir still discharges under $20$ cubic metres per second, so the statement is True.",
-      "**E.** → False\n\nAt a head of $4$ metres:\n\n$$\n4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\n$$\nQ(4)=16\\cdot 8=128\n$$\n\nBecause $128>100$, the weir does not still discharge under $100$ cubic metres per second, so the statement is False."
+      "**A.** → False\n\nThe gauging $Q(0.25)=2$ recovers\n\n$$\nQ=16h^{\\frac{3}{2}}\n$$\n\nSwitching the head to centimetres is $h=\\frac{h_{\\mathrm{cm}}}{100}$:\n\n$$\nQ=16\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}\n$$\n\n$$\nQ=\\frac{16}{100^{\\frac{3}{2}}}h_{\\mathrm{cm}}^{\\frac{3}{2}}\n$$\n\n$$\n100^{\\frac{3}{2}}=(10^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(10^{2})^{\\frac{3}{2}}=10^{3}\n$$\n\n$$\n10^{3}=1000\n$$\n\n$$\n\\frac{16}{1000}=0.016\n$$\n\n$$\n0.016<0.02\n$$\n\nThe new coefficient is $0.016$, which is not larger than $0.02$, so the statement is False.",
+      "**B.** → True\n\nThe recovered law is $Q=16h^{\\frac{3}{2}}$. At a head of one metre every power of $1$ is $1$, so the discharge equals the coefficient:\n\n$$\nQ(1)=16\\cdot 1^{\\frac{3}{2}}\n$$\n\n$$\nQ(1)=16\n$$\n\n$$\n16<20\n$$\n\nThe weir still discharges under $20$ cubic metres per second, so the statement is True.",
+      "**C.** → False\n\nThe recovered law is $Q=16h^{\\frac{3}{2}}$. Doubling the head would double discharge only if the exponent were $1$. With exponent $\\frac{3}{2}$ the scale factor is\n\n$$\n\\frac{Q(2h)}{Q(h)}=2^{\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\cdot 2^{\\frac{1}{2}}\n$$\n\n$$\n2^{\\frac{1}{2}}\\approx 1.414\n$$\n\n$$\n2\\cdot 1.414\\approx 2.828\n$$\n\nDoubling the head multiplies discharge by about $2.83$, not by $2$, so the statement is False.",
+      "**D.** → False\n\nThe recovered law is $Q=16h^{\\frac{3}{2}}$. At a head of $4$ metres:\n\n$$\n4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(2^{2})^{\\frac{3}{2}}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\n$$\nQ(4)=16\\cdot 8\n$$\n\n$$\n16\\cdot 8=128\n$$\n\n$$\n128>100\n$$\n\nThe weir does not still discharge under $100$ cubic metres per second, so the statement is False.",
+      "**E.** → True\n\nThe recovered law is $Q=16h^{\\frac{3}{2}}$, with $Q(0.25)=2$ and $Q(1)=16$. The extra discharge from $0.25$ m to $1$ m is\n\n$$\n16-2=14\n$$\n\n$$\n14>2\n$$\n\nThe extra already exceeds the $0.25$ m gauging, so the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 87,
-    "solution_overview": "The rating curve is $Q(h)=Ah^{\\frac{3}{2}}$ in metres and cubic metres per second, pinned by the gauging $Q(0.25)=2$. The team wants the same curve in centimetres, and in litres per second.\n\n**Part 1: Building the model.**\n\nLet $h$ = head in metres, $h_{\\mathrm{cm}}=100h$ = head in centimetres, $Q$ = discharge. The exponent belongs to the weir, so one gauging fixes the coefficient. A change of input unit replaces the input by a constant multiple of itself, and a power function pushes that constant through its exponent, so the exponent never moves and only the coefficient does. A change of output unit scales the coefficient directly.\n\n**1. Translate: the gauging.**\n\n$$A(0.25)^{\\frac{3}{2}}=2$$\n\n**2. Translate: the change of input unit.**\n\n$$Q=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}=\\frac{A}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}$$\n\n**3. Translate: the change of output unit.** One cubic metre per second is $1000$ litres per second.\n\n**Part 2: The model.**\n\n$$Q=16h^{\\frac{3}{2}} \\quad \\text{(m, m}^{3}\\text{/s)} \\tag{1}$$\n\n$$Q=0.016\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, m}^{3}\\text{/s)} \\tag{2}$$\n\n$$Q=16\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, L/s)} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** The shape factor at the gauged head is exact:\n\n$$0.25^{\\frac{3}{2}}=0.5^{3}=0.125 \\;\\Rightarrow\\; A=\\frac{2}{0.125}=16$$\n\n**2.** Switching the head to centimetres leaves the exponent $\\frac{3}{2}$. Because that exponent exceeds $1$, discharge outruns head, and doubling head multiplies discharge by $2^{\\frac{3}{2}}\\approx 2.83$, not by $2$.\n\n**3.** Levels against the thresholds:\n\n$$Q(1)=16<20, \\qquad Q(4)=128>100$$\n\n**Answer.** $A=16$ | $Q=16h^{\\frac{3}{2}}$ (m, m$^{3}$/s) | $Q=0.016h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, m$^{3}$/s) | $Q=16h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, L/s)"
+    "solution_overview": "The rating curve is $Q(h)=Ah^{\\frac{3}{2}}$ in metres and cubic metres per second, pinned by the gauging $Q(0.25)=2$. The team wants the same curve in centimetres, and in litres per second.\n\n**Part 1: Building the model.**\n\nLet $h$ = head in metres, $h_{\\mathrm{cm}}=100h$ = head in centimetres, $Q$ = discharge. The exponent belongs to the weir, so one gauging fixes the coefficient. A change of input unit replaces the input by a constant multiple of itself, and a power function pushes that constant through its exponent, so the exponent never moves and only the coefficient does. A change of output unit scales the coefficient directly.\n\n**1. Translate: the gauging.**\n\n$$A(0.25)^{\\frac{3}{2}}=2$$\n\n**2. Translate: the change of input unit.**\n\n$$Q=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}=\\frac{A}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}$$\n\n**3. Translate: the change of output unit.** One cubic metre per second is $1000$ litres per second.\n\n**Part 2: The model.**\n\n$$Q=16h^{\\frac{3}{2}} \\quad \\text{(m, m}^{3}\\text{/s)} \\tag{1}$$\n\n$$Q=0.016\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, m}^{3}\\text{/s)} \\tag{2}$$\n\n$$Q=16\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, L/s)} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** The shape factor at the gauged head is exact:\n\n$$0.25^{\\frac{3}{2}}=0.5^{3}=0.125 \\;\\Rightarrow\\; A=\\frac{2}{0.125}=16$$\n\n**2.** Switching the head to centimetres rescales the coefficient to $\\frac{16}{100^{\\frac{3}{2}}}=\\frac{16}{1000}=0.016$, which is not larger than $0.02$. Doubling head multiplies discharge by $2^{\\frac{3}{2}}\\approx 2.83$, not by $2$.\n\n**3.** Levels against the thresholds:\n\n$$Q(1)=16<20, \\qquad Q(4)=128>100, \\qquad Q(1)-Q(0.25)=14>2$$\n\n**Answer.** $A=16$ | $Q=16h^{\\frac{3}{2}}$ (m, m$^{3}$/s) | $A'=0.016$ (cm, m$^{3}$/s) | $Q(4)=128$"
   },
   {
     "id": "math-8-88",

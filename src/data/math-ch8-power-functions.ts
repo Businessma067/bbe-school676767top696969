@@ -1176,13 +1176,13 @@ $$Y(h)=2h^{\\frac{1}{3}} \\tag{2}$$
     title: `A Helpdesk Wait That Falls With the Team`,
     context: `Callers wait according to $W(n)=A n^{-\\frac{1}{2}}$ minutes when $n>0$ agents are on duty. $4$ agents on the shift produce a $24$ minute wait. Staffing cannot exceed $50$ agents. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `With $9$ agents on duty, callers wait less than $20$ minutes.`,
-      `The number of agents needed for a given wait is itself a power of that wait.`,
-      `If the team keeps growing, the wait eventually becomes negative.`,
+      `The wait cut by going from $4$ agents to $9$ already exceeds the wait cut from $9$ agents to $16$.`,
       `A $6$-minute wait would need more than $50$ agents.`,
-      `Doubling the recorded team halves the wait.`,
+      `With $36$ agents, callers wait under $10$ minutes.`,
+      `Doubling the recorded team of $4$ cuts the wait in half.`,
+      `The team that brings the wait down to $8$ minutes already exceeds the $50$-agent cap.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -1204,14 +1204,10 @@ $$
 A=48
 $$
 
-Wait is then $W(n)=48 n^{-\\frac{1}{2}}$. With $9$ agents the square root is $3$:
+Wait is then $W(n)=48 n^{-\\frac{1}{2}}$. With $9$ agents:
 
 $$
 W(9)=48\\cdot 9^{-\\frac{1}{2}}
-$$
-
-$$
-9^{\\frac{1}{2}}=3
 $$
 
 $$
@@ -1226,30 +1222,44 @@ $$
 W(9)=16
 $$
 
+The wait cut from $4$ agents to $9$ is
+
 $$
-16<20
+24-16=8
 $$
 
-Callers wait $16$ minutes, which is less than $20$, so the statement is True.`,
+With $16$ agents:
+
+$$
+W(16)=48\\cdot 16^{-\\frac{1}{2}}
+$$
+
+$$
+16^{-\\frac{1}{2}}=\\frac{1}{4}
+$$
+
+$$
+W(16)=48\\cdot\\frac{1}{4}
+$$
+
+$$
+W(16)=12
+$$
+
+The wait cut from $9$ agents to $16$ is
+
+$$
+16-12=4
+$$
+
+$$
+8>4
+$$
+
+The first stretch cuts $8$ minutes and the second cuts only $4$, so the statement is True.`,
       `**B.** → True
 
-Wait is $W=48 n^{-\\frac{1}{2}}$. Solving for the team size:
-
-$$
-\\frac{W}{48}=n^{-\\frac{1}{2}}
-$$
-
-$$
-n=\\left(\\frac{48}{W}\\right)^{2}
-$$
-
-That is a power of the wait with exponent $2$. A power with a nonzero exponent inverts to another power, so the statement is True.`,
-      `**C.** → False
-
-Wait is $W(n)=\\frac{48}{\\sqrt{n}}$. For every $n>0$ the square root is positive, so the wait stays positive. A negative exponent sends the wait towards zero from above, never through zero, so the statement is False.`,
-      `**D.** → True
-
-A $6$-minute wait means
+The recovered law is $W=48 n^{-\\frac{1}{2}}$. A $6$-minute wait means
 
 $$
 48 n^{-\\frac{1}{2}}=6
@@ -1276,17 +1286,95 @@ $$
 $$
 
 The inversion asks for $64$ agents, which sits past the $50$-agent cap, so the statement is True.`,
+      `**C.** → True
+
+The recovered law is $W=48 n^{-\\frac{1}{2}}$. With $36$ agents the square root is $6$:
+
+$$
+W(36)=48\\cdot 36^{-\\frac{1}{2}}
+$$
+
+$$
+36^{\\frac{1}{2}}=6
+$$
+
+$$
+36^{-\\frac{1}{2}}=\\frac{1}{6}
+$$
+
+$$
+W(36)=48\\cdot\\frac{1}{6}
+$$
+
+$$
+W(36)=8
+$$
+
+$$
+8<10
+$$
+
+Callers wait $8$ minutes, which is under $10$, so the statement is True.`,
+      `**D.** → False
+
+The recovered law is $W=48 n^{-\\frac{1}{2}}$. Doubling the recorded team of $4$ puts $8$ agents on duty:
+
+$$
+W(8)=48\\cdot 8^{-\\frac{1}{2}}
+$$
+
+$$
+8^{\\frac{1}{2}}=2\\sqrt{2}
+$$
+
+$$
+W(8)=\\frac{48}{2\\sqrt{2}}
+$$
+
+$$
+W(8)=\\frac{24}{\\sqrt{2}}
+$$
+
+$$
+W(8)=12\\sqrt{2}
+$$
+
+$$
+12\\sqrt{2}\\approx 16.97
+$$
+
+Half of the recorded $24$-minute wait is $12$. The wait falls only to about $16.97$ minutes, not to $12$, so the statement is False.`,
       `**E.** → False
 
-Doubling the team would halve the wait only if the exponent were $-1$. With exponent $-\\frac{1}{2}$ the scale factor is
+The recovered law is $W=48 n^{-\\frac{1}{2}}$. An $8$-minute wait means
 
 $$
-\\frac{W(2n)}{W(n)}=2^{-\\frac{1}{2}}
+48 n^{-\\frac{1}{2}}=8
 $$
 
-which is about $0.71$, not $\\frac{1}{2}$. The wait falls, but not by half, so the statement is False.`,
+$$
+\\frac{48}{\\sqrt{n}}=8
+$$
+
+$$
+\\sqrt{n}=\\frac{48}{8}
+$$
+
+$$
+\\sqrt{n}=6
+$$
+
+$$
+n=36
+$$
+
+$$
+36<50
+$$
+
+The team that hits $8$ minutes is $36$ agents, which still sits inside the $50$-agent cap, so the statement is False.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 12,
     solution_overview: `Wait follows $W(n)=A n^{-\\frac{1}{2}}$ minutes for $n>0$ agents. Four agents produce a twenty-four minute wait, and staffing cannot exceed fifty.
 
@@ -1306,13 +1394,13 @@ $$n\\le 50 \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** $W(9)=16<20$. Doubling the team multiplies wait by $1/\\sqrt{2}$, not by $1/2$. The inverse $n=(48/W)^{2}$ is a power of $W$.
+**1.** $W(4)=24$, $W(9)=16$, $W(16)=12$. The cut from $4$ to $9$ is $8$, which exceeds the cut of $4$ from $9$ to $16$. $W(36)=8<10$.
 
-**2.** A six-minute wait needs $n=64$, which violates (2).
+**2.** A six-minute wait needs $n=64$, which violates (2). Doubling the team of $4$ gives $W(8)=12\\sqrt{2}\\approx 16.97$, not half of $24$.
 
-**3.** The wait approaches $0$ but never turns negative.
+**3.** An eight-minute wait needs $n=36$, which still sits inside the cap.
 
-**Answer.** $A=48$ | $W(9)=16$ | $n=64$ for six minutes`,
+**Answer.** $A=48$ | $W(9)=16$ | $W(16)=12$ | $W(36)=8$ | $n=64$ for six minutes`,
   },
   {
     id: `math-8-13`,
@@ -1762,13 +1850,13 @@ $$2u=1.8u+5 \\tag{2}$$
     title: `Server Peak Load Between a Doubling Rule and an Alarm`,
     context: `A monitoring team models a server's peak load as $L(x)=A x^{r}$, where $x>0$ is the number of simultaneous jobs. Stress tests show that doubling the job count multiplies peak load by $4$, and a run with $8$ simultaneous jobs recorded a peak load of $32$. The hardware alarm trips at a peak load of $200$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Because the exponent exceeds one, peak load grows faster than the job count.`,
-      `Halving the job count halves peak load.`,
-      `Peak load per job rises as the job count rises.`,
+      `Raising the job count from $8$ to $16$ adds more load than the recorded peak of $32$.`,
       `The hardware alarm already trips at $16$ simultaneous jobs.`,
+      `Load per job at $16$ jobs already exceeds load per job at $8$.`,
+      `The job count that trips the alarm is already above $18$.`,
       `After $10$ simultaneous jobs, peak load is already above $40$.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -1796,36 +1884,36 @@ $$
 A=\\frac{1}{2}
 $$
 
-Peak load is $L(x)=\\frac{1}{2}x^{2}$. An exponent larger than one means load grows faster than the job count: each extra job adds more load than the job before it. Two exceeds one, so the statement is True.`,
+Peak load is $L(x)=\\frac{1}{2}x^{2}$. Raising the job count from $8$ to $16$:
+
+$$
+L(16)=\\frac{1}{2}\\cdot 16^{2}
+$$
+
+$$
+16^{2}=256
+$$
+
+$$
+L(16)=\\frac{1}{2}\\cdot 256
+$$
+
+$$
+L(16)=128
+$$
+
+$$
+128-32=96
+$$
+
+$$
+96>32
+$$
+
+The added load is $96$, which already exceeds the recorded peak of $32$, so the statement is True.`,
       `**B.** → False
 
-The doubling test gives $r=2$. Halving the job count multiplies peak load by
-
-$$
-\\frac{L(\\frac{x}{2})}{L(x)}=2^{-r}
-$$
-
-$$
-2^{-r}=2^{-2}
-$$
-
-$$
-2^{-2}=\\frac{1}{4}
-$$
-
-The load falls to a quarter, not to a half, so the statement is False.`,
-      `**C.** → True
-
-Peak load is $L(x)=\\frac{1}{2}x^{2}$. Load per job is
-
-$$
-\\frac{L(x)}{x}=\\frac{1}{2}x
-$$
-
-The leftover exponent is positive, so average load rises with the job count. That is the other face of $r>1$, so the statement is True.`,
-      `**D.** → False
-
-At $16$ jobs:
+The recovered law is $L=\\frac{1}{2}x^{2}$. At $16$ jobs:
 
 $$
 L(16)=\\frac{1}{2}\\cdot 16^{2}
@@ -1843,10 +1931,58 @@ $$
 128<200
 $$
 
-$128$ is still below the alarm of $200$, so the statement is False.`,
+The peak is $128$, still below the alarm of $200$, so the statement is False.`,
+      `**C.** → True
+
+The recovered law is $L=\\frac{1}{2}x^{2}$. Load per job is $\\frac{L(x)}{x}=\\frac{1}{2}x$. At $8$ jobs:
+
+$$
+\\frac{L(8)}{8}=\\frac{1}{2}\\cdot 8
+$$
+
+$$
+\\frac{L(8)}{8}=4
+$$
+
+At $16$ jobs:
+
+$$
+\\frac{L(16)}{16}=\\frac{1}{2}\\cdot 16
+$$
+
+$$
+\\frac{L(16)}{16}=8
+$$
+
+$$
+8>4
+$$
+
+Load per job rises from $4$ to $8$, so the statement is True.`,
+      `**D.** → True
+
+The recovered law is $L=\\frac{1}{2}x^{2}$. The alarm trips at a peak of $200$:
+
+$$
+\\frac{1}{2}x^{2}=200
+$$
+
+$$
+x^{2}=400
+$$
+
+$$
+x=20
+$$
+
+$$
+20>18
+$$
+
+The trip sits at $20$ jobs, already above $18$, so the statement is True.`,
       `**E.** → True
 
-At $10$ jobs:
+The recovered law is $L=\\frac{1}{2}x^{2}$. After $10$ simultaneous jobs:
 
 $$
 L(10)=\\frac{1}{2}\\cdot 10^{2}
@@ -1854,6 +1990,10 @@ $$
 
 $$
 10^{2}=100
+$$
+
+$$
+L(10)=\\frac{1}{2}\\cdot 100
 $$
 
 $$
@@ -1866,7 +2006,7 @@ $$
 
 The peak is $50$, already above $40$, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 16,
     solution_overview: `Peak load follows $L(x)=A x^{r}$ for $x>0$ jobs. Doubling jobs multiplies load by $4$, eight jobs record a load of $32$, and the alarm trips at $200$.
 
@@ -1890,9 +2030,9 @@ $$L(x)=\\frac{1}{2}x^{2} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** Because $r>1$, load outruns the job count. Halving jobs quarters the load. Load per job rises with $x$.
+**1.** $L(8)=32$ and $L(16)=128$, so the extra load $96$ already exceeds the recorded peak of $32$. The alarm is still untripped at $16$ jobs, and it trips at $x=20>18$.
 
-**2.** $L(16)=128<200$ and $L(10)=50>40$.
+**2.** Load per job is $\\frac{1}{2}x$, so $\\frac{L(16)}{16}=8$ already exceeds $\\frac{L(8)}{8}=4$. $L(10)=50>40$.
 
 **Answer.** $r=2$ | $A=\\frac{1}{2}$ | $L(10)=50$ | $L(16)=128$ | alarm at $x=20$`,
   },
@@ -1902,13 +2042,13 @@ $$L(x)=\\frac{1}{2}x^{2} \\tag{2}$$
     title: `Survey Reach Against a Fieldwork Budget Cap`,
     context: `Usable survey responses follow $Q(x)=A x^{\\frac{1}{2}}$, where $x>0$ measures outreach intensity. When intensity was raised from $25$ to $100$, usable responses increased by exactly $60$. The fieldwork budget caps outreach intensity at $400$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `An extra unit of intensity adds more usable responses at $25$ than at $100$.`,
-      `Doubling outreach intensity doubles usable responses.`,
-      `Usable responses per unit of intensity fall as outreach rises.`,
-      `The budget cap allows at most $200$ usable responses.`,
+      `The extra responses from intensity $25$ to $100$ fall short of the extra from $100$ to $400$.`,
+      `Doubling intensity from $25$ to $50$ doubles usable responses.`,
       `At intensity $81$ the survey already yields more than $100$ usable responses.`,
+      `The budget cap allows at most $200$ usable responses.`,
+      `Intensity that yields $180$ responses already exceeds the budget cap.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -1930,62 +2070,116 @@ $$
 A=12
 $$
 
-Responses are $Q(x)=12 x^{\\frac{1}{2}}$. An extra unit of intensity is the slope:
+Responses are $Q(x)=12 x^{\\frac{1}{2}}$. From intensity $25$ to $100$:
 
 $$
-Q'(x)=12\\cdot\\frac{1}{2} x^{-\\frac{1}{2}}
-$$
-
-$$
-Q'(x)=6 x^{-\\frac{1}{2}}
+Q(25)=12\\cdot 25^{\\frac{1}{2}}
 $$
 
 $$
-Q'(25)=6\\cdot 25^{-\\frac{1}{2}}
+25^{\\frac{1}{2}}=5
 $$
 
 $$
-Q'(25)=\\frac{6}{5}
+Q(25)=60
 $$
 
 $$
-Q'(100)=6\\cdot 100^{-\\frac{1}{2}}
+Q(100)=12\\cdot 100^{\\frac{1}{2}}
 $$
 
 $$
-Q'(100)=\\frac{6}{10}
+100^{\\frac{1}{2}}=10
 $$
 
 $$
-Q'(100)=\\frac{3}{5}
+Q(100)=120
 $$
 
 $$
-\\frac{6}{5}>\\frac{3}{5}
+120-60=60
 $$
 
-The square-root flattens, so later units buy less. An extra unit adds more at $25$ than at $100$, so the statement is True.`,
+From intensity $100$ to $400$:
+
+$$
+Q(400)=12\\cdot 400^{\\frac{1}{2}}
+$$
+
+$$
+400^{\\frac{1}{2}}=20
+$$
+
+$$
+Q(400)=240
+$$
+
+$$
+240-120=120
+$$
+
+$$
+60<120
+$$
+
+The first extra is $60$ responses and the second is $120$, so the statement is True.`,
       `**B.** → False
 
-Doubling intensity would double responses only if the exponent were $1$. With exponent $\\frac{1}{2}$ the scale factor is
+The recovered law is $Q=12 x^{\\frac{1}{2}}$. Doubling intensity from $25$ to $50$:
 
 $$
-\\frac{Q(2x)}{Q(x)}=2^{\\frac{1}{2}}
+Q(50)=12\\cdot 50^{\\frac{1}{2}}
 $$
 
-The square root of two is about $1.41$, not $2$. Responses rise, but not in lockstep with outreach, so the statement is False.`,
+$$
+50^{\\frac{1}{2}}=5\\sqrt{2}
+$$
+
+$$
+Q(50)=12\\cdot 5\\sqrt{2}
+$$
+
+$$
+Q(50)=60\\sqrt{2}
+$$
+
+$$
+\\sqrt{2}\\approx 1.414
+$$
+
+$$
+Q(50)\\approx 84.85
+$$
+
+Doubling the recorded $60$ responses would be $120$. The yield only rises to about $84.85$, so the statement is False.`,
       `**C.** → True
 
-Responses are $Q(x)=12 x^{\\frac{1}{2}}$. Responses per unit of intensity are
+The recovered law is $Q=12 x^{\\frac{1}{2}}$. At intensity $81$ the square root is $9$:
 
 $$
-\\frac{Q(x)}{x}=12 x^{-\\frac{1}{2}}
+Q(81)=12\\cdot 81^{\\frac{1}{2}}
 $$
 
-The leftover exponent is negative, so the average product falls as outreach rises, so the statement is True.`,
+$$
+81^{\\frac{1}{2}}=9
+$$
+
+$$
+Q(81)=12\\cdot 9
+$$
+
+$$
+Q(81)=108
+$$
+
+$$
+108>100
+$$
+
+The yield is $108$, already above $100$, so the statement is True.`,
       `**D.** → False
 
-At the intensity cap of $400$:
+The recovered law is $Q=12 x^{\\frac{1}{2}}$. At the intensity cap of $400$:
 
 $$
 Q(400)=12\\cdot 400^{\\frac{1}{2}}
@@ -2003,30 +2197,34 @@ $$
 240>200
 $$
 
-$240$ exceeds the claimed ceiling of $200$, so the statement is False.`,
-      `**E.** → True
+The cap allows $240$ usable responses, which is more than $200$, so the statement is False.`,
+      `**E.** → False
 
-At intensity $81$ the square root is $9$:
-
-$$
-Q(81)=12\\cdot 81^{\\frac{1}{2}}
-$$
+The recovered law is $Q=12 x^{\\frac{1}{2}}$. A yield of $180$ means
 
 $$
-81^{\\frac{1}{2}}=9
+12 x^{\\frac{1}{2}}=180
 $$
 
 $$
-Q(81)=108
+x^{\\frac{1}{2}}=\\frac{180}{12}
 $$
 
 $$
-108>100
+x^{\\frac{1}{2}}=15
 $$
 
-The yield is $108$, already above $100$, so the statement is True.`,
+$$
+x=225
+$$
+
+$$
+225<400
+$$
+
+Intensity $225$ still sits inside the budget cap of $400$, so the statement is False.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 17,
     solution_overview: `Responses follow $Q(x)=A x^{\\frac{1}{2}}$ for $x>0$. Raising intensity from $25$ to $100$ added $60$ responses, and intensity cannot exceed $400$.
 
@@ -2046,11 +2244,11 @@ $$x\\le 400 \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** $Q'(25)>Q'(100)$ and $Q(81)=108>100$. Doubling intensity multiplies $Q$ by $\\sqrt{2}$, not by $2$. Average product $12x^{-\\frac{1}{2}}$ falls.
+**1.** $Q(25)=60$, $Q(100)=120$, $Q(400)=240$. The extra from $25$ to $100$ is $60$, which falls short of the extra $120$ from $100$ to $400$. Doubling intensity from $25$ to $50$ gives $Q(50)=60\\sqrt{2}\\approx 84.85$, not $120$.
 
-**2.** $Q(400)=240$, so the cap allows more than $200$.
+**2.** $Q(81)=108>100$. The cap allows $Q(400)=240$, more than $200$. A yield of $180$ needs $x=225$, inside the cap.
 
-**Answer.** $A=12$ | $Q(81)=108$ | $Q(400)=240$`,
+**Answer.** $A=12$ | $Q(81)=108$ | $Q(400)=240$ | $x=225$ for $Q=180$`,
   },
   {
     id: `math-8-18`,
@@ -2206,13 +2404,13 @@ $$C(n)-D(n)=n(n-16) \\tag{2}$$
     title: `Warehouse Throughput With a Contractual Ceiling`,
     context: `Warehouse throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour, where $s>0$ is the number of staff on shift. A shift with $16$ staff moved $32$ pallets per hour. The service contract caps billed throughput at $80$ pallets per hour. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Throughput grows more slowly than headcount.`,
-      `Doubling the headcount doubles throughput.`,
-      `Once the ceiling binds, billed throughput is no longer a power function of staff.`,
+      `Two separate $16$-staff shifts already move as many pallets as one $64$-staff shift.`,
       `The contract ceiling is already reached with $64$ staff.`,
-      `With $81$ staff, throughput is already above $70$ pallets per hour.`,
+      `The extra throughput from $16$ to $36$ staff equals the extra from $36$ to $64$.`,
+      `With $81$ staff, billed throughput is already above $70$ pallets per hour.`,
+      `Staffing that bills $80$ pallets already exceeds $90$ people.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
@@ -2234,42 +2432,25 @@ $$
 A=8
 $$
 
-Throughput is $H(s)=8s^{\\frac{1}{2}}$. An exponent smaller than one means throughput grows more slowly than headcount: each extra worker adds less than the worker before. One half is below one, so the statement is True.`,
-      `**B.** → False
-
-Doubling staff would double throughput only if the exponent were $1$. With exponent $\\frac{1}{2}$ the scale factor is
+Throughput is $H(s)=8s^{\\frac{1}{2}}$. Two separate $16$-staff shifts:
 
 $$
-\\frac{H(2s)}{H(s)}=2^{\\frac{1}{2}}
-$$
-
-The square root of two is about $1.41$, not $2$. Throughput rises, but not in lockstep with headcount, so the statement is False.`,
-      `**C.** → True
-
-Throughput is $H(s)=8s^{\\frac{1}{2}}$. The ceiling binds when
-
-$$
-8 s^{\\frac{1}{2}}=80
+H(16)=8\\cdot 16^{\\frac{1}{2}}
 $$
 
 $$
-s^{\\frac{1}{2}}=10
+H(16)=8\\cdot 4
 $$
 
 $$
-s=100
+H(16)=32
 $$
 
-Billed throughput is then the power cut off at the cap:
-
 $$
-B(s)=\\min\\bigl(8 s^{\\frac{1}{2}},\\,80\\bigr)
+2\\cdot H(16)=64
 $$
 
-Past $100$ staff that rule is a constant, not a power of $s$, so the statement is True.`,
-      `**D.** → False
-
-At $64$ staff the square root is $8$:
+One $64$-staff shift:
 
 $$
 H(64)=8\\cdot 64^{\\frac{1}{2}}
@@ -2287,14 +2468,70 @@ $$
 H(64)=64
 $$
 
+The pair already matches the single $64$-staff shift, so the statement is True.`,
+      `**B.** → False
+
+The recovered law is $H=8s^{\\frac{1}{2}}$. At $64$ staff:
+
+$$
+H(64)=8\\cdot 64^{\\frac{1}{2}}
+$$
+
+$$
+64^{\\frac{1}{2}}=8
+$$
+
+$$
+H(64)=64
+$$
+
 $$
 64<80
 $$
 
-$64$ pallets an hour still sit below the contract ceiling of $80$, so the statement is False.`,
-      `**E.** → True
+Billed throughput is still $64$ pallets an hour, below the contract ceiling of $80$, so the statement is False.`,
+      `**C.** → True
 
-At $81$ staff the square root is $9$:
+The recovered law is $H=8s^{\\frac{1}{2}}$. From $16$ staff to $36$:
+
+$$
+H(36)=8\\cdot 36^{\\frac{1}{2}}
+$$
+
+$$
+36^{\\frac{1}{2}}=6
+$$
+
+$$
+H(36)=48
+$$
+
+$$
+48-32=16
+$$
+
+From $36$ staff to $64$:
+
+$$
+H(64)=8\\cdot 64^{\\frac{1}{2}}
+$$
+
+$$
+64^{\\frac{1}{2}}=8
+$$
+
+$$
+H(64)=64
+$$
+
+$$
+64-48=16
+$$
+
+The two extras are equal, so the statement is True.`,
+      `**D.** → True
+
+The recovered law is $H=8s^{\\frac{1}{2}}$, billed as $\\min(H,80)$. With $81$ staff:
 
 $$
 H(81)=8\\cdot 81^{\\frac{1}{2}}
@@ -2305,20 +2542,43 @@ $$
 $$
 
 $$
-H(81)=8\\cdot 9
+H(81)=72
 $$
 
 $$
-H(81)=72
+72<80
 $$
+
+Billed throughput is still the uncapped $72$. Then
 
 $$
 72>70
 $$
 
-Throughput is $72$ pallets per hour, already above $70$, so the statement is True.`,
+Billed throughput is $72$ pallets per hour, already above $70$, so the statement is True.`,
+      `**E.** → True
+
+The recovered law is $H=8s^{\\frac{1}{2}}$. Billing $80$ pallets means the ceiling binds:
+
+$$
+8 s^{\\frac{1}{2}}=80
+$$
+
+$$
+s^{\\frac{1}{2}}=10
+$$
+
+$$
+s=100
+$$
+
+$$
+100>90
+$$
+
+The staffing that bills $80$ is $100$ people, already above $90$, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 19,
     solution_overview: `Throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour for $s>0$ staff. Sixteen staff move $32$ pallets per hour, and billed throughput cannot exceed $80$.
 
@@ -2338,11 +2598,11 @@ $$B(s)=\\min\\bigl(H(s),\\,80\\bigr) \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** Because the exponent is $\\frac{1}{2}<1$, throughput grows more slowly than headcount. Doubling staff multiplies $H$ by $\\sqrt{2}$, not by $2$.
+**1.** $H(16)=32$ and $H(64)=64$, so two $16$-staff shifts already match one $64$-staff shift. $H(64)=64<80$. The extras $H(36)-H(16)$ and $H(64)-H(36)$ are both $16$.
 
-**2.** $H(64)=64<80$ and $H(81)=72>70$. The two-piece billed rule (2) is not a single power of $s$.
+**2.** $H(81)=72>70$, still below the cap, so billed throughput is $72$. The cap binds at $s=100>90$.
 
-**Answer.** $A=8$ | $H(64)=64$ | $H(81)=72$ | cap binds at $s=100$`,
+**Answer.** $A=8$ | $H(16)=32$ | $H(36)=48$ | $H(64)=64$ | $H(81)=72$ | cap binds at $s=100$`,
   },
   {
     id: `math-8-20`,
@@ -2350,13 +2610,13 @@ $$B(s)=\\min\\bigl(H(s),\\,80\\bigr) \\tag{2}$$
     title: `Response Time Recovered from a Server Upgrade`,
     context: `A service's median response time follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds, where $k>0$ is the number of servers. The upgrade log does not state $A$: it records only that moving from $4$ servers to $9$ servers cut the median response time by exactly $19$ ms. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `An extra server cuts the median wait by more at $4$ servers than at $9$.`,
-      `Measuring wait in seconds instead of milliseconds leaves the exponent unchanged.`,
-      `Doubling the server count halves the median wait.`,
-      `With $9$ servers the median wait is more than $10$ milliseconds.`,
+      `Moving from $4$ servers to $9$ cuts the median wait by more than $15$ milliseconds.`,
       `With $4$ servers the median wait is already above $25$ milliseconds.`,
+      `The wait cut from $4$ to $9$ servers already exceeds the remaining wait at $9$ servers.`,
+      `Doubling the server count from $4$ to $8$ halves the median wait.`,
+      `With $9$ servers the median wait is more than $10$ milliseconds.`,
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
@@ -2386,89 +2646,26 @@ $$
 A=216
 $$
 
-Wait is $W(k)=216 k^{-\\frac{3}{2}}$. An extra server is the slope:
+Wait is $W(k)=216 k^{-\\frac{3}{2}}$. From $4$ servers to $9$:
 
 $$
-W'(k)=216\\cdot\\bigl(-\\frac{3}{2}\\bigr) k^{-\\frac{5}{2}}
-$$
-
-$$
-W'(k)=-324 k^{-\\frac{5}{2}}
+W(4)=216\\cdot 4^{-\\frac{3}{2}}
 $$
 
 $$
-\\bigl|W'(4)\\bigr|=\\frac{324}{4^{\\frac{5}{2}}}
+W(4)=216\\cdot\\frac{1}{8}
 $$
 
 $$
-4^{\\frac{5}{2}}=32
+W(4)=27
 $$
-
-$$
-\\bigl|W'(4)\\bigr|=\\frac{324}{32}
-$$
-
-$$
-\\bigl|W'(4)\\bigr|=\\frac{81}{8}
-$$
-
-$$
-\\bigl|W'(9)\\bigr|=\\frac{324}{9^{\\frac{5}{2}}}
-$$
-
-$$
-9^{\\frac{5}{2}}=243
-$$
-
-$$
-\\bigl|W'(9)\\bigr|=\\frac{324}{243}
-$$
-
-$$
-\\bigl|W'(9)\\bigr|=\\frac{4}{3}
-$$
-
-$$
-\\frac{81}{8}>\\frac{4}{3}
-$$
-
-The drop is steeper at $4$ servers than at $9$, so the statement is True.`,
-      `**B.** → True
-
-Wait in milliseconds is $W(k)=216 k^{-\\frac{3}{2}}$. One second is $1000$ milliseconds, so wait in seconds is
-
-$$
-\\frac{W(k)}{1000}=\\frac{216}{1000} k^{-\\frac{3}{2}}
-$$
-
-Only the coefficient rescales. The exponent is still $-\\frac{3}{2}$, so the statement is True.`,
-      `**C.** → False
-
-Doubling the servers would halve the wait only if the exponent were $-1$. With exponent $-\\frac{3}{2}$ the scale factor is
-
-$$
-\\frac{W(2k)}{W(k)}=2^{-\\frac{3}{2}}
-$$
-
-$$
-2^{\\frac{3}{2}}=2\\sqrt{2}
-$$
-
-$$
-2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}
-$$
-
-That factor is about $0.35$, not $\\frac{1}{2}$. The wait falls faster than a simple half, so the statement is False.`,
-      `**D.** → False
-
-At $9$ servers:
 
 $$
 W(9)=216\\cdot 9^{-\\frac{3}{2}}
 $$
 
 $$
-9^{-\\frac{3}{2}}=\\frac{1}{27}
+W(9)=216\\cdot\\frac{1}{27}
 $$
 
 $$
@@ -2476,13 +2673,17 @@ W(9)=8
 $$
 
 $$
-8<10
+27-8=19
 $$
 
-$8$ milliseconds is not more than $10$, so the statement is False.`,
-      `**E.** → True
+$$
+19>15
+$$
 
-At $4$ servers:
+The cut is $19$ milliseconds, already more than $15$, so the statement is True.`,
+      `**B.** → True
+
+The recovered law is $W=216 k^{-\\frac{3}{2}}$. With $4$ servers:
 
 $$
 W(4)=216\\cdot 4^{-\\frac{3}{2}}
@@ -2500,9 +2701,88 @@ $$
 27>25
 $$
 
-The wait is $27$ ms, already above $25$, so the statement is True.`,
+The median wait is $27$ milliseconds, already above $25$, so the statement is True.`,
+      `**C.** → True
+
+The recovered law is $W=216 k^{-\\frac{3}{2}}$. The wait cut from $4$ to $9$ and the remaining wait at $9$:
+
+$$
+W(4)=27
+$$
+
+$$
+W(9)=8
+$$
+
+$$
+27-8=19
+$$
+
+$$
+19>8
+$$
+
+The cut of $19$ milliseconds already exceeds the remaining $8$, so the statement is True.`,
+      `**D.** → False
+
+The recovered law is $W=216 k^{-\\frac{3}{2}}$. Doubling the server count from $4$ to $8$:
+
+$$
+W(8)=216\\cdot 8^{-\\frac{3}{2}}
+$$
+
+$$
+8^{\\frac{3}{2}}=8\\cdot 8^{\\frac{1}{2}}
+$$
+
+$$
+8^{\\frac{1}{2}}=2\\sqrt{2}
+$$
+
+$$
+8^{\\frac{3}{2}}=8\\cdot 2\\sqrt{2}
+$$
+
+$$
+8\\cdot 2\\sqrt{2}=16\\sqrt{2}
+$$
+
+$$
+W(8)=\\frac{216}{16\\sqrt{2}}
+$$
+
+$$
+W(8)=\\frac{27}{2\\sqrt{2}}
+$$
+
+$$
+\\frac{27}{2\\sqrt{2}}\\approx 9.55
+$$
+
+Half of the $4$-server wait of $27$ is $\\frac{27}{2}=13.5$. The wait falls to about $9.55$ milliseconds, not to $13.5$, so the statement is False.`,
+      `**E.** → False
+
+The recovered law is $W=216 k^{-\\frac{3}{2}}$. With $9$ servers:
+
+$$
+W(9)=216\\cdot 9^{-\\frac{3}{2}}
+$$
+
+$$
+9^{-\\frac{3}{2}}=\\frac{1}{27}
+$$
+
+$$
+W(9)=8
+$$
+
+$$
+8<10
+$$
+
+The median wait is $8$ milliseconds, which is not more than $10$, so the statement is False.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 20,
     solution_overview: `Wait follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds for $k>0$ servers. Moving from $4$ servers to $9$ servers cut the wait by $19$ ms.
 
@@ -2520,11 +2800,11 @@ $$A=216, \\qquad W(k)=216k^{-\\frac{3}{2}} \\tag{1}$$
 
 **Part 3: Solve.**
 
-**1.** $|W'(4)|>|W'(9)|$. Measuring wait in seconds only rescales $A$, leaving the exponent $-\\frac{3}{2}$. Doubling servers multiplies wait by $1/(2\\sqrt{2})$, not by $1/2$.
+**1.** $W(4)=27>25$ and $W(9)=8$. The cut $19$ exceeds both $15$ milliseconds and the remaining wait of $8$.
 
-**2.** $W(9)=8$, which is not more than $10$. $W(4)=27>25$.
+**2.** Doubling from $4$ to $8$ servers gives $W(8)\\approx 9.55$, not half of $27$. $W(9)=8$, which is not more than $10$.
 
-**Answer.** $A=216$ | $W(4)=27$ | $W(9)=8$`,
+**Answer.** $A=216$ | $W(4)=27$ | $W(9)=8$ | $W(8)\\approx 9.55$`,
   },
   {
     id: `math-8-21`,
@@ -2532,107 +2812,57 @@ $$A=216, \\qquad W(k)=216k^{-\\frac{3}{2}} \\tag{1}$$
     title: `Isoelastic Subscription Demand and Its Revenue`,
     context: `Monthly subscriptions follow $q(p)=A p^{-2}$, where $p>0$ is the price in euros. At $5$ euros the service sells $400$ subscriptions. Revenue is $R=pq$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `An extra euro of price cuts more subscriptions at five euros than at twenty.`,
-      `The price needed for a given number of subscriptions is itself a power function of that number.`,
-      `Doubling the price halves demand.`,
+      `Cutting the price from $20$ euros to $5$ euros raises revenue by more than $1400$.`,
       `At a price of $16$ euros, monthly revenue is already under $700$.`,
+      `Doubling the $5$-euro price halves demand.`,
       `At twenty euros the curve sells fewer than $30$ subscriptions.`,
+      `The price that yields $2500$ of monthly revenue is already under $5$ euros.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Demand is $q(p)=10000 p^{-2}$. An extra euro of price is the slope. Differentiating brings the exponent down by one:
+The recovered law is $q=10000 p^{-2}$, so revenue is $R=\\frac{10000}{p}$. At twenty euros:
 
 $$
-q'(p)=10000\\cdot(-2)p^{-3}
-$$
-
-$$
-q'(p)=-20000 p^{-3}
-$$
-
-The leftover exponent is negative, so later euros cut less. At five euros:
-
-$$
-q'(5)=-20000\\cdot 5^{-3}
+R(20)=\\frac{10000}{20}
 $$
 
 $$
-5^{3}=125
+R(20)=500
+$$
+
+At five euros:
+
+$$
+R(5)=\\frac{10000}{5}
 $$
 
 $$
-q'(5)=-\\frac{20000}{125}
+R(5)=2000
+$$
+
+The revenue gain is the difference:
+
+$$
+2000-500=1500
 $$
 
 $$
-q'(5)=-160
+1500>1400
 $$
 
-At twenty euros:
-
-$$
-q'(20)=-20000\\cdot 20^{-3}
-$$
-
-$$
-20^{3}=8000
-$$
-
-$$
-q'(20)=-\\frac{20000}{8000}
-$$
-
-$$
-q'(20)=-\\frac{5}{2}
-$$
-
-$$
-160>\\frac{5}{2}
-$$
-
-An extra euro cuts $160$ subscriptions at five euros and only $2.5$ at twenty, so the statement is True.`,
+Cutting the price from twenty euros to five euros raises revenue by $1500$, which is more than $1400$, so the statement is True.`,
       `**B.** → True
 
-Demand is $q=10000 p^{-2}$. Solving for price:
-
-$$
-q=\\frac{10000}{p^{2}}
-$$
-
-$$
-p^{2}=\\frac{10000}{q}
-$$
-
-$$
-p=\\left(\\frac{10000}{q}\\right)^{\\frac{1}{2}}
-$$
-
-$$
-p=100 q^{-\\frac{1}{2}}
-$$
-
-That is a power of $q$ with exponent $-\\frac{1}{2}$, the reciprocal of the demand exponent $-2$. Price is a power of quantity, so the statement is True.`,
-      `**C.** → False
-
-Doubling the price multiplies demand by $2$ to the given exponent $-2$:
-
-$$
-\\frac{q(2p)}{q(p)}=2^{-2}
-$$
-
-$$
-2^{-2}=\\frac{1}{4}
-$$
-
-Demand falls to one quarter, not to one half. A halving would need exponent $-1$, because $2^{-1}=\\frac{1}{2}$. The claimed factor is wrong, so the statement is False.`,
-      `**D.** → True
-
-Revenue is $R(p)=10000 p^{-1}$. At sixteen euros:
+The recovered law is $q=10000 p^{-2}$, so revenue is $R=\\frac{10000}{p}$. At sixteen euros the price sits in the denominator:
 
 $$
 R(16)=\\frac{10000}{16}
+$$
+
+$$
+16\\cdot 625=10000
 $$
 
 $$
@@ -2643,13 +2873,68 @@ $$
 625<700
 $$
 
-Monthly revenue is $625$, which is already under $700$, so the statement is True.`,
-      `**E.** → True
+Monthly revenue is $625$ euros. That already sits under the claimed $700$ threshold, so the statement is True.`,
+      `**C.** → False
 
-Demand is $q(p)=10000 p^{-2}$. Twenty euros is four times the recorded price, so demand scales by $4^{-2}=\\frac{1}{16}$:
+The recovered law is $q=10000 p^{-2}$. Doubling the five-euro price takes the price to ten euros:
 
 $$
-q(20)=400\\cdot\\frac{1}{16}
+q(5)=\\frac{10000}{5^{2}}
+$$
+
+$$
+5^{2}=25
+$$
+
+$$
+q(5)=\\frac{10000}{25}
+$$
+
+$$
+q(5)=400
+$$
+
+$$
+q(10)=\\frac{10000}{10^{2}}
+$$
+
+$$
+10^{2}=100
+$$
+
+$$
+q(10)=\\frac{10000}{100}
+$$
+
+$$
+q(10)=100
+$$
+
+The scale factor is $2$ to the demand exponent:
+
+$$
+\\frac{q(10)}{q(5)}=2^{-2}
+$$
+
+$$
+2^{-2}=\\frac{1}{4}
+$$
+
+Demand falls from $400$ to $100$, which is one quarter, not one half. A halving would need exponent $-1$, so the statement is False.`,
+      `**D.** → True
+
+The recovered law is $q=10000 p^{-2}$. Twenty euros is four times the recorded five-euro price, but the direct evaluation is:
+
+$$
+q(20)=\\frac{10000}{20^{2}}
+$$
+
+$$
+20^{2}=400
+$$
+
+$$
+q(20)=\\frac{10000}{400}
 $$
 
 $$
@@ -2660,9 +2945,30 @@ $$
 25<30
 $$
 
-The curve sells $25$ subscriptions, which is fewer than $30$, so the statement is True.`,
+The curve sells $25$ subscriptions at twenty euros, which is fewer than $30$, so the statement is True.`,
+      `**E.** → True
+
+The recovered law is $R=\\frac{10000}{p}$. Setting monthly revenue equal to $2500$:
+
+$$
+\\frac{10000}{p}=2500
+$$
+
+$$
+p=\\frac{10000}{2500}
+$$
+
+$$
+p=4
+$$
+
+$$
+4<5
+$$
+
+The price that yields $2500$ is $4$ euros, which is already under $5$ euros, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 21,
     solution_overview: `Subscriptions follow $q(p)=A p^{-2}$ with $q(5)=400$. Revenue is $R=pq$.
 
@@ -2682,11 +2988,11 @@ $$R(p)=10000 p^{-1} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** $|q'(5)|>|q'(20)|$. Doubling price multiplies demand by $\\frac{1}{4}$, not by $\\frac{1}{2}$.
+**1.** $R(20)=500$ and $R(5)=2000$, so cutting the price from $20$ to $5$ raises revenue by $1500>1400$. $R(16)=625<700$ and $q(20)=25<30$.
 
-**2.** The inverse $p=100 q^{-\\frac{1}{2}}$ is a power of $q$. $R(16)=625<700$ and $q(20)=25<30$.
+**2.** Doubling the $5$-euro price multiplies demand by $\\frac{1}{4}$, not by $\\frac{1}{2}$. $R=2500$ inverts to $p=4<5$.
 
-**Answer.** $A=10000$ | $q(20)=25$ | $R(16)=625$ | $R=\\frac{10000}{p}$`,
+**Answer.** $A=10000$ | $q(20)=25$ | $R(16)=625$ | $R(5)-R(20)=1500$ | $p=4$ for $R=2500$`,
   },
   {
     id: `math-8-22`,
@@ -2966,26 +3272,82 @@ $$k=120, \\qquad E(t)=240 t^{\\frac{1}{4}} \\tag{1}$$
     title: `Pipeline Capacity, Inversion, and a Change of Units`,
     context: `Flow capacity through a pipe follows $Q(d)=A d^{\\frac{5}{2}}$ litres per second, where $d>0$ is the internal diameter in centimetres. A bench test on a $4$ cm pipe measured $64$ litres per second. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Because the exponent exceeds one, capacity grows faster than diameter.`,
-      `Measuring the diameter in millimetres instead of centimetres leaves the coefficient unchanged.`,
-      `The diameter needed for a given capacity is itself a power function of that capacity.`,
-      `A capacity of $250$ litres per second requires a diameter above $10$ cm.`,
-      `Doubling the diameter multiplies capacity by more than $5$.`,
+      `The extra capacity from widening $4$ cm to $9$ cm already exceeds the bench reading of $64$ litres per second.`,
+      `Measuring diameter in millimetres makes the new coefficient larger than $0.01$.`,
+      `A $16$ cm pipe already delivers more than thirty times the bench capacity.`,
+      `Doubling the diameter multiplies capacity by less than $5$.`,
+      `To reach $500$ litres per second the diameter must already exceed $9$ cm.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The bench test gives $Q(d)=2d^{\\frac{5}{2}}$. An exponent larger than one means capacity grows faster than diameter: each extra centimetre adds more flow than the centimetre before it.
+The recovered law is $Q=2d^{\\frac{5}{2}}$. At four centimetres:
 
 $$
-\\frac{5}{2}>1
+4^{\\frac{5}{2}}=4^{2}\\cdot 4^{\\frac{1}{2}}
 $$
 
-Two and a half exceeds one, so the statement is True.`,
+$$
+4^{2}=16
+$$
+
+$$
+4^{\\frac{1}{2}}=2
+$$
+
+$$
+4^{\\frac{5}{2}}=32
+$$
+
+$$
+Q(4)=2\\cdot 32
+$$
+
+$$
+Q(4)=64
+$$
+
+At nine centimetres:
+
+$$
+9^{\\frac{5}{2}}=9^{2}\\cdot 9^{\\frac{1}{2}}
+$$
+
+$$
+9^{2}=81
+$$
+
+$$
+9^{\\frac{1}{2}}=3
+$$
+
+$$
+9^{\\frac{5}{2}}=243
+$$
+
+$$
+Q(9)=2\\cdot 243
+$$
+
+$$
+Q(9)=486
+$$
+
+The extra capacity is the difference:
+
+$$
+486-64=422
+$$
+
+$$
+422>64
+$$
+
+Widening from $4$ cm to $9$ cm adds $422$ litres per second, which already exceeds the bench reading of $64$, so the statement is True.`,
       `**B.** → False
 
-Capacity is $Q=2d^{\\frac{5}{2}}$ with $d$ in centimetres. A millimetre is one tenth of a centimetre, so $d=\\frac{d_{\\mathrm{mm}}}{10}$:
+The recovered law is $Q=2d^{\\frac{5}{2}}$ with $d$ in centimetres. A millimetre is one tenth of a centimetre, so $d=\\frac{d_{\\mathrm{mm}}}{10}$:
 
 $$
 Q=2\\left(\\frac{d_{\\mathrm{mm}}}{10}\\right)^{\\frac{5}{2}}
@@ -2996,74 +3358,91 @@ Q=2\\cdot 10^{-\\frac{5}{2}}d_{\\mathrm{mm}}^{\\frac{5}{2}}
 $$
 
 $$
-10^{\\frac{5}{2}}=10^{2}\\cdot\\sqrt{10}\\approx 316.2
+10^{\\frac{5}{2}}=10^{2}\\cdot\\sqrt{10}
 $$
 
 $$
-2\\cdot 10^{-\\frac{5}{2}}\\approx 0.0063
+10^{2}=100
 $$
 
-The millimetre-unit coefficient is about $0.0063$, not $2$. Changing the unit of $d$ changes the coefficient, so the statement is False.`,
+$$
+A'=\\frac{2}{10^{\\frac{5}{2}}}
+$$
+
+$$
+A'=\\frac{2}{100\\sqrt{10}}
+$$
+
+$$
+\\sqrt{10}\\approx 3.162
+$$
+
+$$
+A'\\approx 0.00632
+$$
+
+$$
+0.00632<0.01
+$$
+
+The millimetre-unit coefficient is about $0.00632$, which is not larger than $0.01$, so the statement is False.`,
       `**C.** → True
 
-Capacity is $Q=2d^{\\frac{5}{2}}$. A power with a nonzero exponent inverts to another power. Solving for diameter:
+The recovered law is $Q=2d^{\\frac{5}{2}}$. At sixteen centimetres:
 
 $$
-\\frac{Q}{2}=d^{\\frac{5}{2}}
+16^{\\frac{5}{2}}=16^{2}\\cdot 16^{\\frac{1}{2}}
 $$
 
 $$
-d=\\left(\\frac{Q}{2}\\right)^{\\frac{2}{5}}
+16^{2}=256
 $$
 
-That is a power of capacity with exponent $\\frac{2}{5}$, the reciprocal of $\\frac{5}{2}$. The diameter needed for a given capacity is a power of that capacity, so the statement is True.`,
+$$
+16^{\\frac{1}{2}}=4
+$$
+
+$$
+16^{\\frac{5}{2}}=1024
+$$
+
+$$
+Q(16)=2\\cdot 1024
+$$
+
+$$
+Q(16)=2048
+$$
+
+The bench reading is $Q(4)=64$, so the ratio is:
+
+$$
+\\frac{Q(16)}{Q(4)}=\\frac{2048}{64}
+$$
+
+$$
+\\frac{2048}{64}=32
+$$
+
+$$
+32>30
+$$
+
+A $16$ cm pipe delivers $32$ times the bench capacity, which is more than thirty times, so the statement is True.`,
       `**D.** → False
 
-Capacity is $Q(d)=2d^{\\frac{5}{2}}$. Setting capacity equal to $250$:
-
-$$
-2d^{\\frac{5}{2}}=250
-$$
-
-$$
-d^{\\frac{5}{2}}=125
-$$
-
-$$
-d=125^{\\frac{2}{5}}
-$$
-
-$$
-125=5^{3}
-$$
-
-$$
-d=\\bigl(5^{3}\\bigr)^{\\frac{2}{5}}
-$$
-
-$$
-d=5^{\\frac{6}{5}}
-$$
-
-$$
-5^{\\frac{6}{5}}=5\\cdot 5^{\\frac{1}{5}}
-$$
-
-$$
-5^{\\frac{1}{5}}\\approx 1.38
-$$
-
-$$
-d\\approx 6.90
-$$
-
-The required diameter is about $6.90$ cm, which is below $10$ cm, so the statement is False.`,
-      `**E.** → True
-
-Doubling the diameter multiplies capacity by $2$ to the given exponent:
+The recovered law is $Q=2d^{\\frac{5}{2}}$. Doubling the diameter multiplies capacity by $2$ to the given exponent:
 
 $$
 \\frac{Q(2d)}{Q(d)}=2^{\\frac{5}{2}}
+$$
+
+$$
+2^{\\frac{5}{2}}=2^{2}\\cdot 2^{\\frac{1}{2}}
+$$
+
+$$
+2^{2}=4
 $$
 
 $$
@@ -3071,12 +3450,53 @@ $$
 $$
 
 $$
+\\sqrt{2}\\approx 1.414
+$$
+
+$$
 4\\sqrt{2}\\approx 5.66
 $$
 
-The factor is about $5.66$, which is more than $5$. The exponent $\\frac{5}{2}$ is well above one, so capacity outruns the diameter, so the statement is True.`,
+$$
+5.66>5
+$$
+
+The factor is about $5.66$, which is not less than $5$, so the statement is False.`,
+      `**E.** → True
+
+The recovered law is $Q=2d^{\\frac{5}{2}}$. At nine centimetres:
+
+$$
+9^{\\frac{5}{2}}=9^{2}\\cdot 9^{\\frac{1}{2}}
+$$
+
+$$
+9^{2}=81
+$$
+
+$$
+9^{\\frac{1}{2}}=3
+$$
+
+$$
+9^{\\frac{5}{2}}=243
+$$
+
+$$
+Q(9)=2\\cdot 243
+$$
+
+$$
+Q(9)=486
+$$
+
+$$
+486<500
+$$
+
+At $9$ cm the pipe still delivers only $486$ litres per second, short of $500$. The diameter that reaches $500$ must therefore exceed $9$ cm, so the statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `5/5`,
     sort_order: 24,
     solution_overview: `Capacity is $Q(d)=A d^{\\frac{5}{2}}$ litres per second with $Q(4)=64$.
 
@@ -3094,11 +3514,11 @@ $$Q(d)=2d^{\\frac{5}{2}} \\tag{1}$$
 
 **Part 3: Solve.**
 
-**1.** Because $\\frac{5}{2}>1$, capacity outruns diameter. Doubling $d$ multiplies $Q$ by $4\\sqrt{2}\\approx 5.66$.
+**1.** $Q(4)=64$ and $Q(9)=486$, so the extra $422$ already exceeds the bench reading. $Q(16)=2048=32\\cdot 64$, more than thirty times the bench.
 
-**2.** $Q=250$ inverts to $d\\approx 6.90$ cm, below $10$. Writing $d$ in millimetres changes the coefficient. The inverse is a power of $Q$.
+**2.** The millimetre-unit coefficient is $\\frac{2}{100\\sqrt{10}}\\approx 0.00632$, not larger than $0.01$. Doubling $d$ multiplies $Q$ by $4\\sqrt{2}\\approx 5.66$, not by less than $5$. $Q(9)=486<500$, so $d$ must exceed $9$ cm to reach $500$.
 
-**Answer.** $A=2$ | doubling factor $4\\sqrt{2}$ | $d\\approx 6.90$ for $Q=250$`,
+**Answer.** $A=2$ | $Q(9)=486$ | $Q(16)=2048$ | $A'\\approx 0.00632$ | doubling factor $4\\sqrt{2}$`,
   },
   {
     id: `math-8-25`,
@@ -3106,48 +3526,50 @@ $$Q(d)=2d^{\\frac{5}{2}} \\tag{1}$$
     title: `From Radius Growth to the Area a Service Covers`,
     context: `A delivery hub's service radius follows $r(t)=A t^{\\frac{1}{2}}$ kilometres after $t>0$ hours. After $4$ hours the radius is $6$ kilometres. The area covered is the disc $S=\\pi r^{2}$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The area covered is proportional to elapsed time.`,
-      `Doubling elapsed time doubles the area covered.`,
-      `The time needed for a given area is itself a power function of that area.`,
+      `The extra area from hour $4$ to hour $9$ already exceeds the area covered at hour $4$.`,
       `After $4$ hours the covered area is already more than $30\\pi$ square kilometres.`,
       `After $9$ hours the covered area has already reached $100\\pi$ square kilometres.`,
+      `Doubling elapsed time from $4$ hours to $8$ hours doubles the area covered.`,
+      `The time needed to cover $90\\pi$ square kilometres is already above $9$ hours.`,
     ],
-    answer_key: [true, true, true, true, false],
+    answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-The four-hour radius pins $A=3$, so the radius is $r(t)=3t^{\\frac{1}{2}}$. Area squares that radius:
+The recovered law is $r=3t^{\\frac{1}{2}}$, so covered area is $S=9\\pi t$. After four hours:
 
 $$
-S(t)=\\pi\\bigl(3t^{\\frac{1}{2}}\\bigr)^{2}
+S(4)=9\\pi\\cdot 4
 $$
 
 $$
-S(t)=9\\pi t
+S(4)=36\\pi
 $$
 
-That is a constant times elapsed time. The square undoes the square root, so area grows in lockstep with the clock. Area is proportional to elapsed time, so the statement is True.`,
+After nine hours:
+
+$$
+S(9)=9\\pi\\cdot 9
+$$
+
+$$
+S(9)=81\\pi
+$$
+
+The extra area is the difference:
+
+$$
+81\\pi-36\\pi=45\\pi
+$$
+
+$$
+45\\pi>36\\pi
+$$
+
+The extra from hour $4$ to hour $9$ is $45\\pi$, which already exceeds the $36\\pi$ covered at hour $4$, so the statement is True.`,
       `**B.** → True
 
-Covered area is $S(t)=9\\pi t$. Doubling elapsed time multiplies area by
-
-$$
-\\frac{S(2t)}{S(t)}=2
-$$
-
-The radius itself only grows by $\\sqrt{2}$, but the disc squares that factor into $2$. Doubling time doubles area, so the statement is True.`,
-      `**C.** → True
-
-Covered area is $S(t)=9\\pi t$. Solving for time:
-
-$$
-t=\\frac{S}{9\\pi}
-$$
-
-That is a constant times $S^{1}$, a power of area with exponent $1$. A linear law inverts to another linear law. Time is a power function of area, so the statement is True.`,
-      `**D.** → True
-
-Covered area is $S(t)=9\\pi t$. After four hours:
+The recovered law is $S=9\\pi t$. After four hours:
 
 $$
 S(4)=9\\pi\\cdot 4
@@ -3162,9 +3584,9 @@ $$
 $$
 
 The covered area is $36\\pi$ square kilometres, which is already more than $30\\pi$, so the statement is True.`,
-      `**E.** → False
+      `**C.** → False
 
-Covered area is $S(t)=9\\pi t$. After nine hours:
+The recovered law is $S=9\\pi t$. After nine hours:
 
 $$
 S(9)=9\\pi\\cdot 9
@@ -3174,9 +3596,67 @@ $$
 S(9)=81\\pi
 $$
 
-The area $100\\pi$ would need $t=\\frac{100}{9}\\approx 11.1$ hours. Nine hours is too soon. The covered area is $81\\pi$, so the statement is False.`,
+$$
+81\\pi<100\\pi
+$$
+
+The area $100\\pi$ would need $t=\\frac{100}{9}$, which is later than nine hours. The covered area is $81\\pi$, not $100\\pi$, so the statement is False.`,
+      `**D.** → True
+
+The recovered law is $S=9\\pi t$. After four hours:
+
+$$
+S(4)=9\\pi\\cdot 4
+$$
+
+$$
+S(4)=36\\pi
+$$
+
+After eight hours:
+
+$$
+S(8)=9\\pi\\cdot 8
+$$
+
+$$
+S(8)=72\\pi
+$$
+
+The scale factor is:
+
+$$
+\\frac{S(8)}{S(4)}=\\frac{72\\pi}{36\\pi}
+$$
+
+$$
+\\frac{72\\pi}{36\\pi}=2
+$$
+
+Covered area is linear in elapsed time, so doubling time from $4$ hours to $8$ hours doubles the area, so the statement is True.`,
+      `**E.** → True
+
+The recovered law is $S=9\\pi t$. Setting the covered area equal to $90\\pi$:
+
+$$
+9\\pi t=90\\pi
+$$
+
+$$
+t=\\frac{90\\pi}{9\\pi}
+$$
+
+$$
+t=10
+$$
+
+$$
+10>9
+$$
+
+The time needed is $10$ hours, which is already above $9$ hours, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 25,
     solution_overview: `Radius is $r(t)=A t^{\\frac{1}{2}}$ kilometres with $r(4)=6$. Area is $S=\\pi r^{2}$.
 
@@ -3196,11 +3676,11 @@ $$S(t)=9\\pi t \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** $S(4)=36\\pi>30\\pi$ and $S(9)=81\\pi$, not $100\\pi$.
+**1.** $S(4)=36\\pi$ and $S(9)=81\\pi$, so the extra $45\\pi$ already exceeds the area at hour $4$. $S(4)=36\\pi>30\\pi$, while $S(9)=81\\pi$ has not reached $100\\pi$.
 
-**2.** $(2)$ is proportional to $t$, so doubling time doubles area. The inverse $t=S/(9\\pi)$ is a power of $S$.
+**2.** $S(8)=72\\pi=2\\cdot S(4)$, so doubling time from $4$ to $8$ doubles area. $S=90\\pi$ inverts to $t=10>9$.
 
-**Answer.** $A=3$ | $S(t)=9\\pi t$ | $S(4)=36\\pi$ | $S(9)=81\\pi$`,
+**Answer.** $A=3$ | $S(t)=9\\pi t$ | $S(4)=36\\pi$ | $S(9)=81\\pi$ | $t=10$ for $S=90\\pi$`,
   },
   {
     id: `math-8-26`,
@@ -3688,53 +4168,28 @@ $$g=16L^{\\frac{3}{4}} \\tag{2}$$
     title: `Calibrated Demand, Derived Revenue, and a Fixed Charge`,
     context: `A niche publisher faces demand $q(p)=A p^{-\\frac{3}{2}}$ copies a month at a price $p>0$. A price of $4$ euros sells $250$ copies. Revenue is $R=pq$, and the operation carries a fixed monthly charge of $400$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The price needed for a given revenue is itself a power of that revenue.`,
-      `Doubling the price halves revenue.`,
-      `Revenue falls as the price rises.`,
       `At a price of $25$, monthly revenue is already under $450$.`,
+      `Doubling the $4$-euro price halves revenue.`,
       `The fixed charge is covered only at prices below $16$.`,
+      `Raising the price from $4$ to $16$ cuts revenue by more than the remaining revenue at $16$.`,
+      `At a price of $4$, net of the $400$ charge, the publisher still clears more than $550$.`,
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, false, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Revenue is $R(p)=2000 p^{-\\frac{1}{2}}$. A power with a nonzero exponent inverts to another power. Solving for price:
+The recovered law is $q=2000 p^{-\\frac{3}{2}}$, so revenue is $R=2000 p^{-\\frac{1}{2}}$. At a price of $25$:
 
 $$
-\\frac{R}{2000}=p^{-\\frac{1}{2}}
-$$
-
-$$
-p=\\left(\\frac{R}{2000}\\right)^{-2}
+25^{\\frac{1}{2}}=5
 $$
 
 $$
-p=\\left(\\frac{2000}{R}\\right)^{2}
-$$
-
-That is a power of revenue with exponent $-2$ on $R$ after rewriting, or equivalently a square of the reciprocal. The price needed for a given revenue is a power of that revenue, so the statement is True.`,
-      `**B.** → False
-
-Revenue is $R(p)=2000 p^{-\\frac{1}{2}}$. Doubling the price multiplies revenue by
-
-$$
-\\frac{R(2p)}{R(p)}=2^{-\\frac{1}{2}}
+R(25)=2000\\cdot 25^{-\\frac{1}{2}}
 $$
 
 $$
-2^{-\\frac{1}{2}}\\approx 0.707
-$$
-
-Revenue falls to about $71\\%$ of its previous value, not to one half. A halving would need exponent $-1$, so the statement is False.`,
-      `**C.** → True
-
-Revenue is $R(p)=2000 p^{-\\frac{1}{2}}$. The exponent $-\\frac{1}{2}$ is negative and the coefficient is positive, so each extra euro of price cuts quantity by more than enough to shrink the product $pq$. Revenue falls as the price rises, so the statement is True.`,
-      `**D.** → True
-
-Revenue is $R(p)=2000 p^{-\\frac{1}{2}}$. At a price of $25$, $25^{\\frac{1}{2}}=5$:
-
-$$
-R(25)=2000\\cdot\\frac{1}{5}
+R(25)=\\frac{2000}{5}
 $$
 
 $$
@@ -3746,23 +4201,84 @@ $$
 $$
 
 Monthly revenue is $400$, which is already under $450$, so the statement is True.`,
-      `**E.** → False
+      `**B.** → False
 
-Revenue is $R(p)=2000 p^{-\\frac{1}{2}}$. The charge is covered while
+The recovered law is $R=2000 p^{-\\frac{1}{2}}$. At four euros:
+
+$$
+4^{\\frac{1}{2}}=2
+$$
+
+$$
+R(4)=\\frac{2000}{2}
+$$
+
+$$
+R(4)=1000
+$$
+
+Doubling that price takes it to eight euros:
+
+$$
+8^{\\frac{1}{2}}=2\\sqrt{2}
+$$
+
+$$
+R(8)=\\frac{2000}{2\\sqrt{2}}
+$$
+
+$$
+R(8)=\\frac{1000}{\\sqrt{2}}
+$$
+
+$$
+\\sqrt{2}\\approx 1.414
+$$
+
+$$
+R(8)\\approx 707
+$$
+
+The scale factor is $2$ to the revenue exponent:
+
+$$
+\\frac{R(8)}{R(4)}=2^{-\\frac{1}{2}}
+$$
+
+$$
+2^{-\\frac{1}{2}}\\approx 0.707
+$$
+
+Revenue falls to about $71\\%$ of $1000$, not to one half. A halving would need exponent $-1$, so the statement is False.`,
+      `**C.** → False
+
+The recovered law is $R=2000 p^{-\\frac{1}{2}}$. The charge is covered while revenue stays at least $400$:
 
 $$
 2000 p^{-\\frac{1}{2}}\\ge 400
 $$
 
 $$
-5\\ge\\sqrt{p}
+p^{-\\frac{1}{2}}\\ge\\frac{400}{2000}
+$$
+
+$$
+p^{-\\frac{1}{2}}\\ge\\frac{1}{5}
+$$
+
+$$
+\\sqrt{p}\\le 5
 $$
 
 $$
 p\\le 25
 $$
 
-The threshold is $25$, not $16$. At the claimed cutoff, $16^{\\frac{1}{2}}=4$:
+The threshold is $25$, not $16$. At the claimed cutoff:
+
+$$
+16^{\\frac{1}{2}}=4
+$$
 
 $$
 R(16)=\\frac{2000}{4}
@@ -3772,7 +4288,75 @@ $$
 R(16)=500
 $$
 
-and $500>400$, so the charge is still covered at $p=16$. The charge is covered at prices up to $25$, so the statement is False.`,
+$$
+500>400
+$$
+
+The charge is still covered at $p=16$, and remains covered up to $p=25$, so the statement is False.`,
+      `**D.** → False
+
+The recovered law is $R=2000 p^{-\\frac{1}{2}}$. At four euros:
+
+$$
+4^{\\frac{1}{2}}=2
+$$
+
+$$
+R(4)=\\frac{2000}{2}
+$$
+
+$$
+R(4)=1000
+$$
+
+At sixteen euros:
+
+$$
+16^{\\frac{1}{2}}=4
+$$
+
+$$
+R(16)=\\frac{2000}{4}
+$$
+
+$$
+R(16)=500
+$$
+
+The cut is the difference:
+
+$$
+1000-500=500
+$$
+
+The remaining revenue at $16$ is $500$, and $500$ is not more than $500$. Raising the price from $4$ to $16$ cuts revenue by exactly the remaining amount, not by more, so the statement is False.`,
+      `**E.** → True
+
+The recovered law is $R=2000 p^{-\\frac{1}{2}}$. At four euros:
+
+$$
+4^{\\frac{1}{2}}=2
+$$
+
+$$
+R(4)=\\frac{2000}{2}
+$$
+
+$$
+R(4)=1000
+$$
+
+Net of the fixed charge:
+
+$$
+1000-400=600
+$$
+
+$$
+600>550
+$$
+
+The publisher still clears $600$, which is more than $550$, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 30,
@@ -3794,11 +4378,11 @@ $$R(p)=2000 p^{-\\frac{1}{2}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** $R(25)=400<450$. Covering the charge requires $p\\le 25$, not $p\\le 16$.
+**1.** $R(25)=400<450$. Doubling the $4$-euro price multiplies revenue by $\\frac{1}{\\sqrt{2}}$, not by $\\frac{1}{2}$. The charge is covered for $p\\le 25$, not only below $16$.
 
-**2.** $(2)$ is a power with exponent $-\\frac{1}{2}$, so revenue falls in price. Doubling $p$ multiplies $R$ by $1/\\sqrt{2}$. The inverse is a power of $R$.
+**2.** $R(4)-R(16)=500$, which equals remaining revenue at $16$, not more. Net at $p=4$ is $1000-400=600>550$.
 
-**Answer.** $A=2000$ | $R(p)=2000 p^{-\\frac{1}{2}}$ | $R(25)=400$ | cover for $p\\le 25$`,
+**Answer.** $A=2000$ | $R(p)=2000 p^{-\\frac{1}{2}}$ | $R(25)=400$ | cover for $p\\le 25$ | $R(4)-400=600$`,
   },
   {
     id: `math-8-31`,
@@ -3806,120 +4390,92 @@ $$R(p)=2000 p^{-\\frac{1}{2}} \\tag{2}$$
     title: `Packing Output Recovered From a Shift Extension`,
     context: `A packing station's output follows $N(h)=A h^{\\frac{2}{3}}$ items after $h>0$ hours of shift, and the coefficient is never logged. Extending a shift from $8$ to $27$ hours added exactly $90$ items. A rush order of $250$ items has to be packed in a single shift. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `An extra hour of packing adds fewer items after twenty-seven hours than after eight.`,
-      `Doubling any shift doubles the number of items packed.`,
-      `Items packed per hour of shift falls as the shift lengthens.`,
+      `The extra items from $8$ to $27$ hours already exceed the $8$-hour output.`,
       `A $27$-hour shift packs more than $150$ items.`,
+      `Doubling an $8$-hour shift doubles the number of items packed.`,
       `The $250$-item order can be packed in under $40$ hours.`,
+      `Average items per hour fall by more than $2$ when the shift goes from $8$ hours to $27$.`,
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The shift extension gives $A=18$, so $N(h)=18h^{\\frac{2}{3}}$. An extra hour is the slope. Differentiating brings the exponent down by one:
+The recorded extension recovers the coefficient, and the extra items are the difference of the two cube-power levels.
 
 $$
-N'(h)=18\\cdot\\frac{2}{3}h^{\\frac{2}{3}-1}
-$$
-
-$$
-N'(h)=12h^{-\\frac{1}{3}}
-$$
-
-The leftover exponent is negative, so the slope falls as the shift lengthens. After $8$ hours:
-
-$$
-N'(8)=12\\cdot 8^{-\\frac{1}{3}}
+A\\cdot 27^{\\frac{2}{3}}-A\\cdot 8^{\\frac{2}{3}}=90
 $$
 
 $$
-8^{-\\frac{1}{3}}=\\frac{1}{2}
+8^{\\frac{1}{3}}=2
 $$
 
 $$
-N'(8)=12\\cdot\\frac{1}{2}
+8^{\\frac{2}{3}}=2^{2}
 $$
 
 $$
-N'(8)=6
-$$
-
-After $27$ hours:
-
-$$
-N'(27)=12\\cdot 27^{-\\frac{1}{3}}
+2^{2}=4
 $$
 
 $$
-27^{-\\frac{1}{3}}=\\frac{1}{3}
+27^{\\frac{1}{3}}=3
 $$
 
 $$
-N'(27)=12\\cdot\\frac{1}{3}
+27^{\\frac{2}{3}}=3^{2}
 $$
 
 $$
-N'(27)=4
-$$
-
-An extra hour adds $6$ items after eight hours and only $4$ after twenty-seven, so the statement is True.`,
-      `**B.** → False
-
-Doubling a shift would double packed items only if the exponent were $1$. With exponent $\\frac{2}{3}$ the scale factor is
-
-$$
-\\frac{N(2h)}{N(h)}=2^{\\frac{2}{3}}
+3^{2}=9
 $$
 
 $$
-2^{\\frac{2}{3}}\\approx 1.587
-$$
-
-Two thirds is below one, so the factor is about $1.59$, not $2$. The count rises, but not in lockstep with the clock, so the statement is False.`,
-      `**C.** → True
-
-The packing law is $N(h)=18h^{\\frac{2}{3}}$. Items packed per hour divide by shift length, which subtracts $1$ from the exponent:
-
-$$
-\\frac{N(h)}{h}=18h^{\\frac{2}{3}-1}
+A(9-4)=90
 $$
 
 $$
-\\frac{N(h)}{h}=18h^{-\\frac{1}{3}}
+5A=90
 $$
 
-The leftover exponent is negative, so the hourly rate falls as $h$ grows. After $8$ hours:
+$$
+A=18
+$$
 
-$
-\\frac{N(8)}{8}=18\\cdot 8^{-\\frac{1}{3}}
-$
+The packing law is then $N(h)=18h^{\\frac{2}{3}}$. The two shift counts are
 
-$
-8^{-\\frac{1}{3}}=\\frac{1}{2}
-$
+$$
+N(8)=18\\cdot 4
+$$
 
-$
-\\frac{N(8)}{8}=9
-$
+$$
+N(8)=72
+$$
 
-After $27$ hours:
+$$
+N(27)=18\\cdot 9
+$$
 
-$
-\\frac{N(27)}{27}=18\\cdot 27^{-\\frac{1}{3}}
-$
+$$
+N(27)=162
+$$
 
-$
-27^{-\\frac{1}{3}}=\\frac{1}{3}
-$
+$$
+N(27)-N(8)=162-72
+$$
 
-$
-\\frac{N(27)}{27}=6
-$
+$$
+162-72=90
+$$
 
-Average product declines with the shift, so the statement is True.`,
-      `**D.** → True
+$$
+90>72
+$$
 
-The packing law is $N(h)=18h^{\\frac{2}{3}}$. A twenty-seven hour count is
+The extra of $90$ already exceeds the $8$-hour output of $72$, so the statement is True.`,
+      `**B.** → True
+
+The recovered law is $N(h)=18h^{\\frac{2}{3}}$. A $27$-hour shift is a perfect cube, so the count is exact:
 
 $$
 N(27)=18\\cdot 27^{\\frac{2}{3}}
@@ -3941,38 +4497,112 @@ $$
 162>150
 $$
 
-The claimed threshold is $150$ items, and $162$ clears it, so the statement is True.`,
-      `**E.** → False
+The shift packs $162$ items, which is more than $150$, so the statement is True.`,
+      `**C.** → False
 
-Twenty-seven hours pack $162$ items, already short of $250$. Inverting the law at the order size names the hours that would suffice:
-
-$$
-18h^{\\frac{2}{3}}=250
-$$
+The recovered law is $N(h)=18h^{\\frac{2}{3}}$. Doubling an $8$-hour shift multiplies packed items by $2$ to the given exponent:
 
 $$
-h^{\\frac{2}{3}}=\\frac{250}{18}
+\\frac{N(16)}{N(8)}=2^{\\frac{2}{3}}
 $$
 
 $$
-\\frac{250}{18}=\\frac{125}{9}
+2^{\\frac{2}{3}}=4^{\\frac{1}{3}}
 $$
 
 $$
-h=\\left(\\frac{125}{9}\\right)^{\\frac{3}{2}}
+4^{\\frac{1}{3}}\\approx 1.587
 $$
 
 $$
-h\\approx 51.8
+1.587\\neq 2
+$$
+
+The $16$-hour count is about $1.59$ times the $8$-hour count, not twice it, so the statement is False.`,
+      `**D.** → False
+
+The recovered law is $N(h)=18h^{\\frac{2}{3}}$. Forty hours against the $250$-item order:
+
+$$
+N(40)=18\\cdot 40^{\\frac{2}{3}}
 $$
 
 $$
-51.8>40
+40^{\\frac{1}{3}}\\approx 3.42
 $$
 
-The order needs about $52$ hours, which is not under $40$, so the statement is False.`,
+$$
+40^{\\frac{2}{3}}=\\bigl(40^{\\frac{1}{3}}\\bigr)^{2}
+$$
+
+$$
+40^{\\frac{2}{3}}\\approx 3.42^{2}
+$$
+
+$$
+3.42^{2}=11.6964
+$$
+
+$$
+N(40)=18\\cdot 11.6964
+$$
+
+$$
+N(40)\\approx 210.5
+$$
+
+$$
+210.5<250
+$$
+
+Forty hours pack about $210.5$ items, which is still short of $250$, so the statement is False.`,
+      `**E.** → True
+
+The recovered law is $N(h)=18h^{\\frac{2}{3}}$. Average items per hour divide by shift length, which subtracts $1$ from the exponent:
+
+$$
+\\frac{N(h)}{h}=18h^{-\\frac{1}{3}}
+$$
+
+After $8$ hours:
+
+$$
+\\frac{N(8)}{8}=18\\cdot 8^{-\\frac{1}{3}}
+$$
+
+$$
+8^{-\\frac{1}{3}}=\\frac{1}{2}
+$$
+
+$$
+\\frac{N(8)}{8}=9
+$$
+
+After $27$ hours:
+
+$$
+\\frac{N(27)}{27}=18\\cdot 27^{-\\frac{1}{3}}
+$$
+
+$$
+27^{-\\frac{1}{3}}=\\frac{1}{3}
+$$
+
+$$
+\\frac{N(27)}{27}=6
+$$
+
+$$
+9-6=3
+$$
+
+$$
+3>2
+$$
+
+The hourly rate falls by $3$, which is more than $2$, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 31,
     solution_overview: `Packing output follows $N(h)=Ah^{\\frac{2}{3}}$ items on a shift of $h>0$ hours. Extending a shift from $8$ to $27$ hours added $90$ items, and a $250$-item order must fit in one shift.
 
@@ -3996,27 +4626,13 @@ $$Ah^{\\frac{2}{3}}=250 \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** Equation (1) gives the coefficient and the law:
+**1.** Equation (1) gives $A=18$, so $N(h)=18h^{\\frac{2}{3}}$. Then $N(8)=72$ and $N(27)=162$. The extra from $8$ to $27$ is $90$, which already exceeds the $8$-hour count of $72$.
 
-$$A=18 \\qquad N(h)=18h^{\\frac{2}{3}}$$
+**2.** Average product falls from $9$ to $6$, a drop of $3$. Doubling an $8$-hour shift multiplies output by $2^{\\frac{2}{3}}\\approx 1.587$, not by $2$.
 
-**2.** Check the logged shifts:
+**3.** At $40$ hours, $40^{\\frac{1}{3}}\\approx 3.42$ and $N(40)=18\\cdot 40^{\\frac{2}{3}}\\approx 210.5$, which is still short of $250$.
 
-$$N(8)=72 \\qquad N(27)=162 \\qquad 162-72=90$$
-
-**3.** Scale factors depend on the exponent alone:
-
-$$\\frac{N(2h)}{N(h)}=2^{\\frac{2}{3}}\\approx 1.587$$
-
-**4.** Equation (2) inverts at the order size:
-
-$$h=\\left(\\frac{125}{9}\\right)^{\\frac{3}{2}}\\approx 51.8$$
-
-**5.** The hourly rate is the law divided by $h$:
-
-$$\\frac{N(h)}{h}=18h^{-\\frac{1}{3}} \\qquad N'(h)=12h^{-\\frac{1}{3}}$$
-
-**Answer.** $A=18$ | $N(h)=18h^{\\frac{2}{3}}$ | $N(27)=162$ | the $250$-item order needs $h\\approx 51.8$ hours`,
+**Answer.** $A=18$ | $N(h)=18h^{\\frac{2}{3}}$ | $N(8)=72$ | $N(27)=162$ | $N(40)\\approx 210.5$`,
   },
   {
     id: `math-8-32`,
@@ -4196,84 +4812,84 @@ $$P(16)=2048\\text{ W}=2.048\\text{ kW}$$
     title: `Inelastic Demand and Where Revenue Goes`,
     context: `A regional utility faces demand $q(p)=A p^{-\\frac{1}{2}}$ units a month at price $p>0$, and a price of $16$ sells $300$ units. The board wants to know how revenue $R=pq$ behaves along this curve. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Revenue rises as the price rises.`,
-      `Because quantity falls when price rises, revenue must fall as well.`,
-      `The price needed for a given monthly quantity is itself a power function of that quantity.`,
+      `Raising the price from $16$ to $25$ raises revenue by more than $1000$.`,
       `At a price of $25$ the utility sells fewer than $250$ units.`,
       `Cutting monthly quantity to $200$ units requires a price above $40$.`,
+      `Because quantity falls when price rises, revenue must fall as well.`,
+      `Doubling the price from $16$ to $32$ multiplies revenue by more than $1.4$.`,
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The recorded pair gives $A=1200$, so demand is $q(p)=1200p^{-\\frac{1}{2}}$. Revenue multiplies by price, which raises the exponent by one:
+The recorded pair recovers the coefficient, and the revenue change is a difference of two square-root levels.
 
 $$
-R(p)=p\\cdot 1200p^{-\\frac{1}{2}}
+A\\cdot 16^{-\\frac{1}{2}}=300
 $$
 
 $$
-R(p)=1200p^{\\frac{1}{2}}
+16^{-\\frac{1}{2}}=\\frac{1}{4}
 $$
 
-The leftover exponent $\\frac{1}{2}$ is positive, so $R$ rises with $p$. Quantity falls when price rises, but not fast enough to offset the higher price. At the recorded price:
+$$
+\\frac{A}{4}=300
+$$
+
+$$
+A=1200
+$$
+
+Demand is then $q(p)=1200p^{-\\frac{1}{2}}$ and revenue is $R(p)=1200p^{\\frac{1}{2}}$. At the two prices:
+
+$$
+R(16)=1200\\cdot 16^{\\frac{1}{2}}
+$$
+
+$$
+16^{\\frac{1}{2}}=4
+$$
 
 $$
 R(16)=1200\\cdot 4
 $$
 
 $$
-1200\\cdot 4=4800
+R(16)=4800
 $$
 
-At a higher price:
+$$
+R(25)=1200\\cdot 25^{\\frac{1}{2}}
+$$
+
+$$
+25^{\\frac{1}{2}}=5
+$$
 
 $$
 R(25)=1200\\cdot 5
 $$
 
 $$
-1200\\cdot 5=6000
+R(25)=6000
 $$
 
 $$
-6000>4800
-$$
-
-Revenue rises as the price rises, so the statement is True.`,
-      `**B.** → False
-
-Quantity does fall when price rises, because the demand exponent $-\\frac{1}{2}$ is negative. Revenue is not that quantity: it multiplies by $p$, which raises the exponent by one:
-
-$$
-R(p)=1200p^{\\frac{1}{2}}
-$$
-
-The leftover exponent is positive, so revenue moves with price, not against it. A falling quantity is not enough to drag revenue down when demand is inelastic. Revenue rises along this curve, so the statement is False.`,
-      `**C.** → True
-
-Demand is $q=1200p^{-\\frac{1}{2}}$. A nonzero exponent inverts to another power. Solving for price:
-
-$$
-q=\\frac{1200}{p^{\\frac{1}{2}}}
+R(25)-R(16)=6000-4800
 $$
 
 $$
-p^{\\frac{1}{2}}=\\frac{1200}{q}
+6000-4800=1200
 $$
 
 $$
-p=\\left(\\frac{1200}{q}\\right)^{2}
+1200>1000
 $$
 
-$$
-p=1440000\\,q^{-2}
-$$
+Revenue rises by $1200$, which is more than $1000$, so the statement is True.`,
+      `**B.** → True
 
-That is $A q^{r}$ with exponent $-2$, the reciprocal of the demand exponent. The price needed for a given quantity is a power of that quantity, so the statement is True.`,
-      `**D.** → True
-
-The calibrated demand is $q(p)=1200p^{-\\frac{1}{2}}$. At price $25$:
+The recovered law is $q(p)=1200p^{-\\frac{1}{2}}$. At a price of $25$:
 
 $$
 q(25)=1200\\cdot 25^{-\\frac{1}{2}}
@@ -4296,24 +4912,20 @@ $$
 $$
 
 The utility sells $240$ units, which is fewer than $250$, so the statement is True.`,
-      `**E.** → False
+      `**C.** → False
 
-The calibrated demand is $q(p)=1200p^{-\\frac{1}{2}}$. A target of $200$ units inverts the curve:
+The recovered law is $q(p)=1200p^{-\\frac{1}{2}}$. A target of $200$ units inverts the curve:
 
 $$
 200=1200\\cdot p^{-\\frac{1}{2}}
 $$
 
 $$
-200=\\frac{1200}{\\sqrt{p}}
+p^{\\frac{1}{2}}=\\frac{1200}{200}
 $$
 
 $$
-\\sqrt{p}=\\frac{1200}{200}
-$$
-
-$$
-\\sqrt{p}=6
+p^{\\frac{1}{2}}=6
 $$
 
 $$
@@ -4325,8 +4937,54 @@ $$
 $$
 
 The target arrives at a price of $36$, which is not above $40$, so the statement is False.`,
+      `**D.** → False
+
+The recovered revenue is $R(p)=1200p^{\\frac{1}{2}}$. Quantity does fall when price rises, because the demand exponent $-\\frac{1}{2}$ is negative. That does not decide revenue: multiplying by $p$ leaves a positive exponent. Check the two prices:
+
+$$
+R(16)=1200\\cdot 4
+$$
+
+$$
+R(16)=4800
+$$
+
+$$
+R(25)=1200\\cdot 5
+$$
+
+$$
+R(25)=6000
+$$
+
+$$
+6000>4800
+$$
+
+Revenue rises along this curve, so the statement is False.`,
+      `**E.** → True
+
+The recovered revenue is $R(p)=1200p^{\\frac{1}{2}}$. Doubling the price from $16$ to $32$ multiplies revenue by $2$ to the leftover exponent:
+
+$$
+\\frac{R(32)}{R(16)}=2^{\\frac{1}{2}}
+$$
+
+$$
+2^{\\frac{1}{2}}=\\sqrt{2}
+$$
+
+$$
+\\sqrt{2}\\approx 1.414
+$$
+
+$$
+1.414>1.4
+$$
+
+The factor is about $1.414$, which is more than $1.4$, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 33,
     solution_overview: `Demand is $q(p)=Ap^{-\\frac{1}{2}}$ with $q(16)=300$, and revenue is $R=pq$.
 
@@ -4350,23 +5008,13 @@ $$R(p)=1200\\,p^{\\frac{1}{2}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** The observation gives the coefficient:
+**1.** $q(16)=300$, $q(25)=240$, and $q(36)=200$. Cutting quantity to $200$ needs $p=36$, not a price above $40$.
 
-$$A=300\\times 4=1200$$
+**2.** $R(16)=4800$ and $R(25)=6000$, so the rise is $1200>1000$. Revenue rises with price because the leftover exponent $\\frac{1}{2}$ is positive.
 
-**2.** The inverse of (1) is a power of quantity:
+**3.** Doubling the price from $16$ to $32$ multiplies revenue by $\\sqrt{2}\\approx 1.414$.
 
-$$p=1440000\\,q^{-2}$$
-
-**3.** Quantities along the curve:
-
-$$q(16)=300 \\qquad q(25)=240 \\qquad q(36)=200 \\qquad q(64)=150$$
-
-**4.** Because $-\\frac{1}{2}+1=\\frac{1}{2}>0$, revenue rises with price; a falling quantity does not drag revenue down:
-
-$$R(16)=4800 \\qquad R(25)=6000 \\qquad R(64)=9600$$
-
-**Answer.** $A=1200$ | $q(p)=1200p^{-\\frac{1}{2}}$ | $R(p)=1200p^{\\frac{1}{2}}$ | $q(36)=200$`,
+**Answer.** $A=1200$ | $q(p)=1200p^{-\\frac{1}{2}}$ | $R(p)=1200p^{\\frac{1}{2}}$ | $R(25)-R(16)=1200$ | $q(36)=200$`,
   },
   {
     id: `math-8-34`,
@@ -4375,16 +5023,26 @@ $$R(16)=4800 \\qquad R(25)=6000 \\qquad R(64)=9600$$
     context: `A kiln's daily output follows $y(x)=A x^{\\frac{4}{3}}$ tonnes for a fuel feed of $x>0$ cubic metres. A test firing at a feed of $27$ produced $324$ tonnes. The site licence forbids shipping more than $1024$ tonnes a day, so any extra firing is wasted. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `To double the test-firing output, the fuel feed must more than double.`,
-      `Output per cubic metre of fuel rises as the feed increases.`,
-      `Once the licence binds, daily shipped output is no longer a power function of the feed.`,
+      `Two firings at a feed of $8$ together already fall short of one firing at a feed of $27$.`,
       `A feed of $8$ produces more than $50$ tonnes.`,
       `The licensed ceiling binds before a feed of $50$.`,
+      `The extra output from feed $8$ to feed $27$ already exceeds $250$ tonnes.`,
     ],
-    answer_key: [false, true, true, true, false],
+    answer_key: [false, true, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-Doubling output is an inverse-scale question: the feed multiplier is $2$ raised to the reciprocal of the given exponent $\\frac{4}{3}$.
+The test firing recovers the coefficient, and doubling output is an inverse-scale question.
+
+$$
+81A=324
+$$
+
+$$
+A=4
+$$
+
+The kiln law is then $y(x)=4x^{\\frac{4}{3}}$. Doubling the test-firing output of $324$ tonnes means a feed multiplier $k$ with $k^{\\frac{4}{3}}=2$:
 
 $$
 \\left(\\frac{x}{27}\\right)^{\\frac{4}{3}}=2
@@ -4398,33 +5056,25 @@ $$
 2^{\\frac{3}{4}}\\approx 1.682
 $$
 
-A doubled feed would be the factor $2$. Because the exponent $\\frac{4}{3}$ exceeds $1$, output grows faster than feed, so doubling output takes less than a doubling of feed. The required factor is about $1.68$, not more than $2$, so the statement is False.`,
+$$
+1.682<2
+$$
+
+A doubled feed would be the factor $2$. The required factor is about $1.68$, which is not more than $2$, so the statement is False.`,
       `**B.** → True
 
-The test firing gives $A=4$, so $y(x)=4x^{\\frac{4}{3}}$. Output per cubic metre divides by the feed, which subtracts $1$ from the exponent:
+The recovered law is $y(x)=4x^{\\frac{4}{3}}$. Two firings at a feed of $8$ versus one firing at $27$:
 
 $$
-\\frac{y(x)}{x}=4x^{\\frac{4}{3}-1}
-$$
-
-$$
-\\frac{y(x)}{x}=4x^{\\frac{1}{3}}
-$$
-
-The leftover exponent is positive, so the average product rises with feed. Fuel efficiency improves with scale, so the statement is True.`,
-      `**C.** → True
-
-The licence binds at feed $64$. Shipped output is $\\min(4x^{\\frac{4}{3}},1024)$. For $x\\le 64$ that coincides with the power $4x^{\\frac{4}{3}}$. For $x>64$ shipped output is the constant $1024$, and a constant on an interval of feeds is not a power of $x$ with a single exponent. Past the licence the graph is a horizontal cap rather than $A x^{r}$, so the statement is True.`,
-      `**D.** → True
-
-The recovered law is $y(x)=4x^{\\frac{4}{3}}$. At a feed of $8$:
-
-$$
-8^{\\frac{4}{3}}=(8^{\\frac{1}{3}})^{4}
+y(8)=4\\cdot 8^{\\frac{4}{3}}
 $$
 
 $$
-(8^{\\frac{1}{3}})^{4}=2^{4}
+8^{\\frac{1}{3}}=2
+$$
+
+$$
+8^{\\frac{4}{3}}=2^{4}
 $$
 
 $$
@@ -4440,13 +5090,66 @@ y(8)=64
 $$
 
 $$
+2\\cdot y(8)=128
+$$
+
+$$
+y(27)=4\\cdot 27^{\\frac{4}{3}}
+$$
+
+$$
+27^{\\frac{1}{3}}=3
+$$
+
+$$
+27^{\\frac{4}{3}}=3^{4}
+$$
+
+$$
+3^{4}=81
+$$
+
+$$
+y(27)=4\\cdot 81
+$$
+
+$$
+y(27)=324
+$$
+
+$$
+128<324
+$$
+
+Two firings at feed $8$ total $128$ tonnes, which already falls short of $324$, so the statement is True.`,
+      `**C.** → True
+
+The recovered law is $y(x)=4x^{\\frac{4}{3}}$. At a feed of $8$:
+
+$$
+y(8)=4\\cdot 8^{\\frac{4}{3}}
+$$
+
+$$
+8^{\\frac{4}{3}}=16
+$$
+
+$$
+y(8)=4\\cdot 16
+$$
+
+$$
+y(8)=64
+$$
+
+$$
 64>50
 $$
 
 The kiln produces $64$ tonnes, which is more than $50$, so the statement is True.`,
-      `**E.** → False
+      `**D.** → False
 
-The recovered law is $y(x)=4x^{\\frac{4}{3}}$. Set output equal to the ceiling:
+The recovered law is $y(x)=4x^{\\frac{4}{3}}$. The licence binds where output hits $1024$:
 
 $$
 4x^{\\frac{4}{3}}=1024
@@ -4476,9 +5179,38 @@ $$
 x=64
 $$
 
-The claimed threshold is a feed before $50$, and $64$ is not before $50$. The licence binds at $64$, so the statement is False.`,
+$$
+64>50
+$$
+
+The ceiling binds at a feed of $64$, which is not before $50$, so the statement is False.`,
+      `**E.** → True
+
+The recovered law is $y(x)=4x^{\\frac{4}{3}}$. The extra output from feed $8$ to feed $27$ is the difference of the two levels:
+
+$$
+y(8)=64
+$$
+
+$$
+y(27)=324
+$$
+
+$$
+y(27)-y(8)=324-64
+$$
+
+$$
+324-64=260
+$$
+
+$$
+260>250
+$$
+
+The extra is $260$ tonnes, which already exceeds $250$, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 34,
     solution_overview: `Kiln output is $y(x)=Ax^{\\frac{4}{3}}$ tonnes for a fuel feed $x>0$, with a test firing $y(27)=324$ and a licensed shipping cap of $1024$ tonnes.
 
@@ -4502,27 +5234,13 @@ $$x^{\\frac{4}{3}}\\le 256 \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** The test firing gives the coefficient:
+**1.** The test firing gives $A=4$. Then $y(8)=64$ and $y(27)=324$. Two firings at feed $8$ total $128$, which falls short of $324$. The extra from $8$ to $27$ is $260$.
 
-$$A=4$$
+**2.** Doubling output scales feed by $2^{\\frac{3}{4}}\\approx 1.682$, which is less than a doubling.
 
-**2.** Levels at perfect cubes:
+**3.** Invert (2): $x=256^{\\frac{3}{4}}=64$. The licence binds at $64$, not before a feed of $50$.
 
-$$y(8)=64 \\qquad y(27)=324 \\qquad y(64)=1024$$
-
-**3.** Doubling output scales feed by $2^{\\frac{3}{4}}\\approx 1.682$, not by $2$.
-
-**4.** Invert (2) with the reciprocal exponent $\\frac{3}{4}$:
-
-$$x=256^{\\frac{3}{4}}=64$$
-
-**5.** Fuel efficiency improves with scale, since dividing by $x$ leaves a positive exponent:
-
-$$\\frac{y(x)}{x}=4x^{\\frac{1}{3}}$$
-
-Past $x=64$, shipped output is the constant $1024$ rather than a power of $x$.
-
-**Answer.** $A=4$ | $y(x)=4x^{\\frac{4}{3}}$ | licence ceiling at feed $x=64$ | $y(8)=64$`,
+**Answer.** $A=4$ | $y(x)=4x^{\\frac{4}{3}}$ | $y(8)=64$ | $y(27)=324$ | licence at $x=64$`,
   },
   {
     id: `math-8-35`,
@@ -4912,20 +5630,56 @@ $$S(8)=T(8)=8^{\\frac{3}{2}} \\qquad S(16)=32 \\qquad T(16)=64$$
     title: `Server Fleet Capacity Beneath a Contracted Ceiling`,
     context: `A hosting platform's sustained capacity follows $C(m)=A m^{\\frac{4}{5}}$ requests per second for $m>0$ machines. A fleet of $32$ machines sustains $80$ requests per second. The support contract will not certify more than $500$ requests per second. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Sustained capacity itself keeps rising as machines are added.`,
-      `Because the exponent is below $1$, the contracted ceiling is never reached.`,
-      `On log-log paper the uncapped capacity law is a straight line.`,
       `A fleet of $243$ machines sustains more than $400$ requests per second.`,
       `The contracted ceiling binds before $250$ machines.`,
+      `Two fleets of $32$ machines together already fall short of one fleet of $243$.`,
+      `Because the exponent is below $1$, the contracted ceiling is never reached.`,
+      `The extra capacity from $32$ to $243$ machines already exceeds the $32$-machine reading.`,
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Whether $C(m)$ rises is the sign of its exponent. The exponent $\\frac{4}{5}$ is positive, so $C$ is strictly increasing on $m>0$ even though it grows more slowly than the fleet. The contract may refuse to certify values above $500$, but the sustained-capacity law itself keeps rising. Sustained capacity increases with the fleet, so the statement is True.`,
+The $32$-machine run recovers the coefficient, and $243$ is a fifth power so the capacity is exact.
+
+$$
+16A=80
+$$
+
+$$
+A=5
+$$
+
+The capacity law is then $C(m)=5m^{\\frac{4}{5}}$. A fleet of $243$ is $3^{5}$:
+
+$$
+243^{\\frac{4}{5}}=(3^{5})^{\\frac{4}{5}}
+$$
+
+$$
+(3^{5})^{\\frac{4}{5}}=3^{4}
+$$
+
+$$
+3^{4}=81
+$$
+
+$$
+C(243)=5\\cdot 81
+$$
+
+$$
+C(243)=405
+$$
+
+$$
+405>400
+$$
+
+Capacity is $405$ requests per second, which is more than $400$, so the statement is True.`,
       `**B.** → False
 
-An exponent below $1$ slows growth, it does not stop it. The $32$-machine run gives $A=5$, so $C(m)=5m^{\\frac{4}{5}}$. The ceiling is already reached at a finite fleet:
+The recovered law is $C(m)=5m^{\\frac{4}{5}}$. The ceiling binds where capacity hits $500$:
 
 $$
 5m^{\\frac{4}{5}}=500
@@ -4940,11 +5694,89 @@ m=100^{\\frac{5}{4}}
 $$
 
 $$
+100^{\\frac{5}{4}}=100\\cdot 100^{\\frac{1}{4}}
+$$
+
+$$
+100^{\\frac{1}{4}}=\\sqrt{10}
+$$
+
+$$
 m=100\\sqrt{10}
 $$
 
 $$
 100\\sqrt{10}\\approx 316.2
+$$
+
+$$
+316.2>250
+$$
+
+The ceiling binds near $316$ machines, which is not before $250$, so the statement is False.`,
+      `**C.** → True
+
+The recovered law is $C(m)=5m^{\\frac{4}{5}}$. Two fleets of $32$ versus one fleet of $243$:
+
+$$
+C(32)=5\\cdot 32^{\\frac{4}{5}}
+$$
+
+$$
+32=2^{5}
+$$
+
+$$
+32^{\\frac{4}{5}}=2^{4}
+$$
+
+$$
+2^{4}=16
+$$
+
+$$
+C(32)=5\\cdot 16
+$$
+
+$$
+C(32)=80
+$$
+
+$$
+2\\cdot C(32)=160
+$$
+
+$$
+C(243)=5\\cdot 81
+$$
+
+$$
+C(243)=405
+$$
+
+$$
+160<405
+$$
+
+Two fleets of $32$ total $160$ requests per second, which already falls short of $405$, so the statement is True.`,
+      `**D.** → False
+
+The recovered law is $C(m)=5m^{\\frac{4}{5}}$. An exponent below $1$ slows growth, it does not stop it. The ceiling is already reached at a finite fleet:
+
+$$
+5m^{\\frac{4}{5}}=500
+$$
+
+$$
+m=100^{\\frac{5}{4}}
+$$
+
+$$
+m=100\\sqrt{10}
+$$
+
+$$
+m\\approx 316.2
 $$
 
 A larger exact fleet sits past that crossing:
@@ -4977,38 +5809,17 @@ $$
 C(1024)=1280
 $$
 
-$1280$ is already over the contract. The ceiling is crossed at a finite fleet, so the statement is False.`,
-      `**C.** → True
-
-A power law is linear after taking logs of both sides. The uncapped law is $C=5m^{\\frac{4}{5}}$:
-
 $$
-\\ln C=\\ln\\bigl(5m^{\\frac{4}{5}}\\bigr)
+1280>500
 $$
 
-$$
-\\ln C=\\ln 5+\\frac{4}{5}\\ln m
-$$
+The ceiling is crossed at a finite fleet of about $316$ machines, so the statement is False.`,
+      `**E.** → True
 
-That is a straight line in $(\\ln m,\\ln C)$ with slope $\\frac{4}{5}$ and intercept $\\ln 5$. The contract's cap would flatten certified capacity, but the statement is about the uncapped law. The log-log plot of $C(m)$ is a straight line, so the statement is True.`,
-      `**D.** → True
-
-The recovered law is $C(m)=5m^{\\frac{4}{5}}$. A fleet of $243$ is $3^{5}$, so the exponent $\\frac{4}{5}$ resolves exactly:
+The recovered law is $C(m)=5m^{\\frac{4}{5}}$. The extra capacity from $32$ to $243$ machines is the difference of the two levels:
 
 $$
-243^{\\frac{4}{5}}=(3^{5})^{\\frac{4}{5}}
-$$
-
-$$
-(3^{5})^{\\frac{4}{5}}=3^{4}
-$$
-
-$$
-3^{4}=81
-$$
-
-$$
-C(243)=5\\cdot 81
+C(32)=80
 $$
 
 $$
@@ -5016,43 +5827,20 @@ C(243)=405
 $$
 
 $$
-405>400
-$$
-
-Capacity is $405$ requests per second, so the statement is True.`,
-      `**E.** → False
-
-The recovered law is $C(m)=5m^{\\frac{4}{5}}$. Set capacity equal to the contract:
-
-$$
-5m^{\\frac{4}{5}}=500
+C(243)-C(32)=405-80
 $$
 
 $$
-m=100^{\\frac{5}{4}}
+405-80=325
 $$
 
 $$
-m=100\\sqrt{10}
+325>80
 $$
 
-$$
-100\\sqrt{10}\\approx 316.2
-$$
-
-At the claimed $250$ machines the law is still below the ceiling:
-
-$$
-C(250)=5\\cdot 250^{\\frac{4}{5}}\\approx 414
-$$
-
-$$
-414<500
-$$
-
-The ceiling binds near $316$ machines, not before $250$, so the statement is False.`,
+The extra of $325$ already exceeds the $32$-machine reading of $80$, so the statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `5/5`,
     sort_order: 37,
     solution_overview: `Sustained capacity is $C(m)=Am^{\\frac{4}{5}}$ requests per second, with $C(32)=80$ and a certification cap of $500$.
 
@@ -5076,23 +5864,11 @@ $$m^{\\frac{4}{5}}=100 \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** Equation (1) is the recovered law, strictly increasing because $\\frac{4}{5}>0$.
+**1.** $C(32)=80$ and $C(243)=5\\cdot 81=405$. Two fleets of $32$ total $160$, which falls short of $405$. The extra from $32$ to $243$ is $325$, which already exceeds the $32$-machine reading of $80$.
 
-**2.** Invert (2):
+**2.** Invert (2): $m=100^{\\frac{5}{4}}=100\\sqrt{10}\\approx 316.2$. The ceiling binds near $316$ machines, not before $250$. An exponent below $1$ slows growth but still reaches $500$ at a finite fleet.
 
-$$m=100^{\\frac{5}{4}}=100\\sqrt{10}\\approx 316.2$$
-
-**3.** Exact cube-power fleets:
-
-$$C(243)=405 \\qquad C(1024)=1280$$
-
-**4.** Doubling the fleet multiplies capacity by $2^{\\frac{4}{5}}\\approx 1.741$.
-
-**5.** The uncapped law is linear in log-log coordinates:
-
-$$\\ln C=\\ln 5+\\frac{4}{5}\\ln m$$
-
-**Answer.** $A=5$ | $C(m)=5m^{\\frac{4}{5}}$ | ceiling at $m\\approx 316$ | $C(243)=405$`,
+**Answer.** $A=5$ | $C(m)=5m^{\\frac{4}{5}}$ | $C(243)=405$ | ceiling at $m\\approx 316.2$`,
   },
   {
     id: `math-8-38`,
@@ -5676,46 +6452,42 @@ not $300$.
     title: `Turning a Negative-Power Demand Curve Around`,
     context: `A component supplier faces demand $q(p)=A p^{-2}$ units at a price $p>0$ euros. A catalogue price of $4$ euros clears $400$ units. Procurement wants the curve written the other way round, with price a function of quantity. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The price that clears a given quantity is itself a power function of that quantity.`,
+      `After $100$ units, revenue is already above $750$ euros.`,
       `After $25$ units the clearing price is already under $20$ euros.`,
       `Raising the catalogue price raises revenue along this curve.`,
-      `After $100$ units, revenue is already above $750$ euros.`,
-      `Because quantity falls when price rises, revenue must fall when quantity rises.`,
+      `Doubling quantity from $25$ to $100$ more than doubles revenue.`,
+      `The quantity that yields $1600$ of revenue already exceeds $400$ units.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, false, false, false],
     tactical_explanations: [
       `**A.** → True
 
-The catalogue pair gives $A=6400$, so demand is $q=6400 p^{-2}$. A nonzero exponent inverts to another power. Solving for price:
+The recovered revenue law is $R=80 q^{\\frac{1}{2}}$. At one hundred units:
 
 $$
-q=\\frac{6400}{p^{2}}
-$$
-
-$$
-p^{2}=\\frac{6400}{q}
+R(100)=80\\cdot 100^{\\frac{1}{2}}
 $$
 
 $$
-p=\\sqrt{\\frac{6400}{q}}
+100^{\\frac{1}{2}}=10
 $$
 
 $$
-\\sqrt{6400}=80
+R(100)=80\\cdot 10
 $$
 
 $$
-p=\\frac{80}{\\sqrt{q}}
+80\\cdot 10=800
 $$
 
 $$
-p=80 q^{-\\frac{1}{2}}
+800>750
 $$
 
-That is a power of quantity with exponent $-\\frac{1}{2}$, so the statement is True.`,
+Revenue is $800$ euros, which is already above $750$, so the statement is True.`,
       `**B.** → True
 
-The inverse is $p=80 q^{-\\frac{1}{2}}$. At twenty-five units:
+The recovered inverse is $p=80 q^{-\\frac{1}{2}}$. At twenty-five units:
 
 $$
 p(25)=80\\cdot 25^{-\\frac{1}{2}}
@@ -5740,14 +6512,10 @@ $$
 The clearing price is $16$ euros, which is already under $20$, so the statement is True.`,
       `**C.** → False
 
-Demand is $q=6400 p^{-2}$. Revenue along the curve is price times quantity:
+The recovered demand is $q=6400 p^{-2}$. Revenue along the curve is price times quantity:
 
 $$
 R(p)=p\\cdot 6400 p^{-2}
-$$
-
-$$
-R(p)=6400 p^{1-2}
 $$
 
 $$
@@ -5758,17 +6526,65 @@ $$
 R(p)=\\frac{6400}{p}
 $$
 
-The leftover exponent is $-1$, so a higher catalogue price cuts revenue rather than raising it. At four euros the take is $1600$ euros; at eight euros it is only $800$. Raising the price does not raise revenue, so the statement is False.`,
-      `**D.** → True
-
-Revenue through quantity is $R(q)=80 q^{\\frac{1}{2}}$. At one hundred units:
+At the catalogue price of four euros:
 
 $$
-R(100)=80\\cdot 100^{\\frac{1}{2}}
+R(4)=\\frac{6400}{4}
 $$
 
 $$
-100^{\\frac{1}{2}}=10
+\\frac{6400}{4}=1600
+$$
+
+At eight euros:
+
+$$
+R(8)=\\frac{6400}{8}
+$$
+
+$$
+\\frac{6400}{8}=800
+$$
+
+$$
+800<1600
+$$
+
+A higher catalogue price cuts revenue rather than raising it, so the statement is False.`,
+      `**D.** → False
+
+The recovered revenue law is $R=80 q^{\\frac{1}{2}}$. Quantity from twenty-five to one hundred is a factor of four:
+
+$$
+\\frac{100}{25}=4
+$$
+
+Revenue then scales by that factor to the leftover exponent:
+
+$$
+\\frac{R(100)}{R(25)}=4^{\\frac{1}{2}}
+$$
+
+$$
+4^{\\frac{1}{2}}=2
+$$
+
+The two levels confirm the factor:
+
+$$
+R(25)=80\\cdot 25^{\\frac{1}{2}}
+$$
+
+$$
+25^{\\frac{1}{2}}=5
+$$
+
+$$
+R(25)=80\\cdot 5
+$$
+
+$$
+80\\cdot 5=400
 $$
 
 $$
@@ -5780,15 +6596,37 @@ $$
 $$
 
 $$
-800>750
+\\frac{800}{400}=2
 $$
 
-Revenue is $800$ euros, which is already above $750$, so the statement is True.`,
+Revenue exactly doubles, which is not more than a doubling, so the statement is False.`,
       `**E.** → False
 
-Revenue through quantity is $R(q)=80 q^{\\frac{1}{2}}$. Quantity does fall when price rises, because the demand exponent $-2$ is negative. That does not decide how revenue moves with quantity: the leftover exponent on $R(q)$ is $\\frac{1}{2}$, which is positive. A larger quantity therefore brings in more revenue, not less, so the statement is False.`,
+The recovered revenue law is $R=80 q^{\\frac{1}{2}}$. The quantity that yields $1600$ of revenue solves
+
+$$
+80 q^{\\frac{1}{2}}=1600
+$$
+
+$$
+q^{\\frac{1}{2}}=\\frac{1600}{80}
+$$
+
+$$
+\\frac{1600}{80}=20
+$$
+
+$$
+q=20^{2}
+$$
+
+$$
+20^{2}=400
+$$
+
+That quantity is exactly $400$ units, which does not exceed $400$, so the statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `5/5`,
     sort_order: 41,
     solution_overview: `Demand is $q(p)=Ap^{-2}$ with $q(4)=400$. Procurement wants price, and revenue, as functions of quantity.
 
@@ -5814,13 +6652,13 @@ $$R(q)=80\\,q^{\\frac{1}{2}}, \\qquad R(p)=6400\\,p^{-1} \\tag{3}$$
 
 **Part 3: Solve.**
 
-**1.** $A=6400$ and $A^{\\frac{1}{2}}=80$.
+**1.** $A=6400$, so $R(q)=80q^{\\frac{1}{2}}$ and $R(p)=\\frac{6400}{p}$.
 
-**2.** $p(25)=16$ and $R(100)=800$.
+**2.** $R(100)=800$, already above $750$. $p(25)=16$, already under $20$.
 
-**3.** $R$ falls in $p$ and rises in $q$.
+**3.** $R$ falls as catalogue price rises. From $25$ to $100$ units, $R$ doubles exactly. $R=1600$ at $q=400$, which does not exceed $400$.
 
-**Answer.** $A=6400$ | $p=80q^{-\\frac{1}{2}}$ | $R=80q^{\\frac{1}{2}}$`,
+**Answer.** $A=6400$ | $R(100)=800$ | $p(25)=16$ | $R=1600$ at $q=400$`,
   },
   {
     id: `math-8-42`,
@@ -5828,34 +6666,70 @@ $$R(q)=80\\,q^{\\frac{1}{2}}, \\qquad R(p)=6400\\,p^{-1} \\tag{3}$$
     title: `Average Product of a Square-Root Technology`,
     context: `A workshop's output follows $Y(L)=A L^{\\frac{1}{2}}$ units for $L>0$ labour hours. Extending a shift from $9$ hours to $36$ hours added exactly $60$ units. Management tracks average product $\\frac{Y}{L}$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Average product falls as the shift lengthens.`,
+      `The extra output from $9$ to $36$ hours already equals the $9$-hour output.`,
       `A $36$-hour shift already produces more than $100$ units.`,
-      `An extra hour adds more output after $36$ hours than it does after $9$.`,
-      `To double the $9$-hour output, labour hours must more than double.`,
       `At $25$ hours, average product is still above $5$ units per hour.`,
+      `To double the $9$-hour output, labour hours must more than double.`,
+      `Average product falls by more than $2$ units per hour when the shift goes from $9$ to $36$ hours.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-The shift extension gives $A=20$, so output is $Y=20 L^{\\frac{1}{2}}$. Average product divides by labour, which lowers the exponent by one:
+The shift extension gives $Y=20 L^{\\frac{1}{2}}$. At nine hours:
 
 $$
-\\frac{Y}{L}=\\frac{20 L^{\\frac{1}{2}}}{L}
-$$
-
-$$
-\\frac{Y}{L}=20 L^{\\frac{1}{2}-1}
+Y(9)=20\\cdot 9^{\\frac{1}{2}}
 $$
 
 $$
-\\frac{Y}{L}=20 L^{-\\frac{1}{2}}
+9^{\\frac{1}{2}}=3
 $$
 
-The leftover exponent is negative, so each extra hour of shift dilutes output per hour. Average product falls as the shift lengthens, so the statement is True.`,
+$$
+Y(9)=20\\cdot 3
+$$
+
+$$
+20\\cdot 3=60
+$$
+
+At thirty-six hours:
+
+$$
+Y(36)=20\\cdot 36^{\\frac{1}{2}}
+$$
+
+$$
+36^{\\frac{1}{2}}=6
+$$
+
+$$
+Y(36)=20\\cdot 6
+$$
+
+$$
+20\\cdot 6=120
+$$
+
+The extra output is the difference:
+
+$$
+Y(36)-Y(9)=120-60
+$$
+
+$$
+120-60=60
+$$
+
+$$
+60=60
+$$
+
+The extra from nine to thirty-six already equals the nine-hour output, so the statement is True.`,
       `**B.** → True
 
-Output is $Y=20 L^{\\frac{1}{2}}$. At thirty-six hours:
+The recovered law is $Y=20 L^{\\frac{1}{2}}$. At thirty-six hours:
 
 $$
 Y(36)=20\\cdot 36^{\\frac{1}{2}}
@@ -5877,78 +6751,10 @@ $$
 120>100
 $$
 
-The logged sixty units are the gain from nine hours, not the thirty-six-hour level. Nine hours already yield $20\\cdot 3=60$, and $60+60=120$. Output is $120$ units, which is already more than $100$, so the statement is True.`,
+Output is $120$ units, which is already more than $100$, so the statement is True.`,
       `**C.** → False
 
-Output is $Y=20 L^{\\frac{1}{2}}$. An extra hour is the derivative, which brings the exponent down by one and multiplies by $\\frac{1}{2}$:
-
-$$
-Y'(L)=20\\cdot\\frac{1}{2} L^{-\\frac{1}{2}}
-$$
-
-$$
-Y'(L)=10 L^{-\\frac{1}{2}}
-$$
-
-After nine hours:
-
-$$
-Y'(9)=10\\cdot 9^{-\\frac{1}{2}}
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-Y'(9)=\\frac{10}{3}
-$$
-
-After thirty-six hours:
-
-$$
-Y'(36)=10\\cdot 36^{-\\frac{1}{2}}
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-Y'(36)=\\frac{10}{6}
-$$
-
-$$
-\\frac{10}{6}=\\frac{5}{3}
-$$
-
-Because $\\frac{10}{3}>\\frac{5}{3}$, an extra hour adds more after nine hours than after thirty-six. The slope is falling, so the statement is False.`,
-      `**D.** → True
-
-The exponent is $\\frac{1}{2}$, so a labour factor $k$ multiplies output by $k^{\\frac{1}{2}}$. Doubling output therefore needs
-
-$$
-k^{\\frac{1}{2}}=2
-$$
-
-$$
-k=2^{2}
-$$
-
-$$
-2^{2}=4
-$$
-
-Four times the hours is more than a doubling. The logged extension itself is that factor: nine hours to thirty-six is a fourfold rise, and
-
-$$
-\\left(\\frac{36}{9}\\right)^{\\frac{1}{2}}=2
-$$
-
-so that extension exactly doubles output. Labour must more than double, so the statement is True.`,
-      `**E.** → False
-
-Average product is $20 L^{-\\frac{1}{2}}$. The trap is to read $25^{\\frac{1}{2}}=5$ as if it were already output per hour, forgetting the coefficient. At twenty-five hours:
+The recovered average product is $20 L^{-\\frac{1}{2}}$. At twenty-five hours:
 
 $$
 \\frac{Y(25)}{25}=20\\cdot 25^{-\\frac{1}{2}}
@@ -5971,8 +6777,92 @@ $$
 $$
 
 Average product is $4$ units per hour, which is not above $5$, so the statement is False.`,
+      `**D.** → True
+
+The recovered law is $Y=20 L^{\\frac{1}{2}}$. Nine hours already yield $60$ units, so doubling that output means $120$. The labour that produces $120$ solves
+
+$$
+20 L^{\\frac{1}{2}}=120
+$$
+
+$$
+L^{\\frac{1}{2}}=\\frac{120}{20}
+$$
+
+$$
+\\frac{120}{20}=6
+$$
+
+$$
+L=6^{2}
+$$
+
+$$
+6^{2}=36
+$$
+
+The labour factor from nine hours is
+
+$$
+\\frac{36}{9}=4
+$$
+
+$$
+4>2
+$$
+
+Four times the hours is more than a doubling, so the statement is True.`,
+      `**E.** → True
+
+The recovered average product is $20 L^{-\\frac{1}{2}}$. At nine hours:
+
+$$
+\\frac{Y(9)}{9}=20\\cdot 9^{-\\frac{1}{2}}
+$$
+
+$$
+9^{\\frac{1}{2}}=3
+$$
+
+$$
+\\frac{Y(9)}{9}=\\frac{20}{3}
+$$
+
+At thirty-six hours:
+
+$$
+\\frac{Y(36)}{36}=20\\cdot 36^{-\\frac{1}{2}}
+$$
+
+$$
+36^{\\frac{1}{2}}=6
+$$
+
+$$
+\\frac{Y(36)}{36}=\\frac{20}{6}
+$$
+
+$$
+\\frac{20}{6}=\\frac{10}{3}
+$$
+
+The fall is the difference:
+
+$$
+\\frac{20}{3}-\\frac{10}{3}=\\frac{10}{3}
+$$
+
+$$
+\\frac{10}{3}\\approx 3.33
+$$
+
+$$
+3.33>2
+$$
+
+Average product falls by more than $2$ units per hour, so the statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `5/5`,
     sort_order: 42,
     solution_overview: `Output is $Y(L)=AL^{\\frac{1}{2}}$. Extending the shift from nine hours to thirty-six added sixty units, and average product is $\\frac{Y}{L}$.
 
@@ -5994,13 +6884,13 @@ $$\\frac{Y}{L}=20L^{-\\frac{1}{2}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** $Y(9)=60$ and $Y(36)=120$. Average product falls in $L$.
+**1.** $Y(9)=60$ and $Y(36)=120$. The extra $60$ equals the nine-hour output.
 
-**2.** $Y'(L)=10L^{-\\frac{1}{2}}$ is larger at nine hours than at thirty-six.
+**2.** $Y(36)=120>100$. Doubling sixty units needs $L=36$, four times nine hours.
 
-**3.** Doubling output from sixty needs the labour factor $4$. At $L=25$, average product is $4$, not $5$.
+**3.** Average product is $4$ at $L=25$, not above $5$. From $9$ to $36$ hours it falls by $\\frac{10}{3}>2$.
 
-**Answer.** $A=20$ | $Y=20\\sqrt{L}$ | $Y(36)=120$`,
+**Answer.** $A=20$ | $Y(36)=120$ | $\\frac{Y(25)}{25}=4$ | AP drop $\\frac{10}{3}$`,
   },
   {
     id: `math-8-43`,
@@ -6356,36 +7246,191 @@ $$\\frac{C(x)}{B(x)}=\\frac{x}{36} \\tag{2}$$
     title: `Furnace Throughput Calibrated From Two Runs`,
     context: `A furnace's throughput follows $T(g)=A g^{r}$ tonnes per hour, where $g>0$ is the gas feed in cubic metres per hour. A feed of $8$ gave $16$ tonnes per hour, and a feed of $27$ gave $36$. The site licence caps throughput at $32$ tonnes per hour. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The exponent is smaller than one, so throughput grows more slowly than the gas feed.`,
-      `The licensed ceiling is reached at a feed below $24$ cubic metres per hour.`,
+      `The extra throughput from feed $8$ to $27$ already exceeds the $8$-feed reading.`,
       `Doubling the gas feed doubles throughput.`,
-      `Throughput per cubic metre of gas rises as the feed rises.`,
-      `A feed of $64$ cubic metres per hour already produces more than $60$ tonnes per hour.`,
+      `A feed of $64$ already produces more than $60$ tonnes per hour.`,
+      `Throughput per cubic metre falls from feed $8$ to $27$ by more than $0.5$.`,
+      `The licensed ceiling is reached at a feed below $24$ cubic metres per hour.`,
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-The two furnace runs give $r=\\frac{2}{3}$. Compare that exponent with one:
+The two furnace runs give $T=4 g^{\\frac{2}{3}}$. At a feed of eight:
 
 $$
-\\frac{2}{3}<1
-$$
-
-The recorded feeds already show the lag. Gas rose by a factor $\\frac{27}{8}$, while throughput only rose by $\\frac{9}{4}$:
-
-$$
-\\frac{36}{16}=\\frac{9}{4}
+T(8)=4\\cdot 8^{\\frac{2}{3}}
 $$
 
 $$
-\\frac{9}{4}<\\frac{27}{8}
+8^{\\frac{1}{3}}=2
 $$
 
-Each extra cubic metre of gas adds less throughput than the cubic metre before it. Throughput grows more slowly than the gas feed, so the statement is True.`,
-      `**B.** → True
+$$
+8^{\\frac{2}{3}}=4
+$$
 
-Throughput is $T=4 g^{\\frac{2}{3}}$. The licensed ceiling of thirty-two tonnes per hour inverts that law:
+$$
+T(8)=4\\cdot 4
+$$
+
+$$
+4\\cdot 4=16
+$$
+
+At a feed of twenty-seven:
+
+$$
+T(27)=4\\cdot 27^{\\frac{2}{3}}
+$$
+
+$$
+27^{\\frac{1}{3}}=3
+$$
+
+$$
+27^{\\frac{2}{3}}=9
+$$
+
+$$
+T(27)=4\\cdot 9
+$$
+
+$$
+4\\cdot 9=36
+$$
+
+The extra throughput is
+
+$$
+T(27)-T(8)=36-16
+$$
+
+$$
+36-16=20
+$$
+
+$$
+20>16
+$$
+
+The extra already exceeds the eight-feed reading, so the statement is True.`,
+      `**B.** → False
+
+The recovered exponent is $\\frac{2}{3}$. Doubling the gas feed would double throughput only if that exponent were $1$. The scale factor is
+
+$$
+\\frac{T(2g)}{T(g)}=2^{\\frac{2}{3}}
+$$
+
+$$
+2^{\\frac{2}{3}}\\approx 1.587
+$$
+
+$$
+1.587\\neq 2
+$$
+
+Throughput rises, but not in lockstep with the feed, so the statement is False.`,
+      `**C.** → True
+
+The recovered law is $T=4 g^{\\frac{2}{3}}$. At a feed of sixty-four:
+
+$$
+T(64)=4\\cdot 64^{\\frac{2}{3}}
+$$
+
+$$
+64^{\\frac{1}{3}}=4
+$$
+
+$$
+64^{\\frac{2}{3}}=16
+$$
+
+$$
+T(64)=4\\cdot 16
+$$
+
+$$
+4\\cdot 16=64
+$$
+
+$$
+64>60
+$$
+
+Throughput is $64$ tonnes per hour, which is already more than $60$, so the statement is True.`,
+      `**D.** → True
+
+The recovered law is $T=4 g^{\\frac{2}{3}}$. Throughput per cubic metre lowers the exponent by one:
+
+$$
+\\frac{T(g)}{g}=4 g^{-\\frac{1}{3}}
+$$
+
+At feed $8$:
+
+$$
+\\frac{T(8)}{8}=4\\cdot 8^{-\\frac{1}{3}}
+$$
+
+$$
+8^{\\frac{1}{3}}=2
+$$
+
+$$
+8^{-\\frac{1}{3}}=\\frac{1}{2}
+$$
+
+$$
+\\frac{T(8)}{8}=4\\cdot\\frac{1}{2}
+$$
+
+$$
+4\\cdot\\frac{1}{2}=2
+$$
+
+At feed $27$:
+
+$$
+\\frac{T(27)}{27}=4\\cdot 27^{-\\frac{1}{3}}
+$$
+
+$$
+27^{\\frac{1}{3}}=3
+$$
+
+$$
+27^{-\\frac{1}{3}}=\\frac{1}{3}
+$$
+
+$$
+\\frac{T(27)}{27}=4\\cdot\\frac{1}{3}
+$$
+
+$$
+4\\cdot\\frac{1}{3}=\\frac{4}{3}
+$$
+
+The fall is
+
+$$
+2-\\frac{4}{3}=\\frac{2}{3}
+$$
+
+$$
+\\frac{2}{3}\\approx 0.667
+$$
+
+$$
+0.667>0.5
+$$
+
+Throughput per cubic metre falls by more than $0.5$, so the statement is True.`,
+      `**E.** → True
+
+The recovered law is $T=4 g^{\\frac{2}{3}}$. The licensed ceiling of thirty-two tonnes per hour inverts that law:
 
 $$
 4 g^{\\frac{2}{3}}=32
@@ -6423,66 +7468,7 @@ $$
 22.63<24
 $$
 
-That feed is below $24$, so the statement is True.`,
-      `**C.** → False
-
-The two runs give $r=\\frac{2}{3}$. Doubling the gas feed would double throughput only if $r=1$. With $r=\\frac{2}{3}$ the scale factor is
-
-$$
-\\frac{T(2g)}{T(g)}=2^{\\frac{2}{3}}
-$$
-
-$$
-2^{\\frac{2}{3}}\\approx 1.587
-$$
-
-$$
-1.587\\neq 2
-$$
-
-Throughput rises, but not in lockstep with the feed, so the statement is False.`,
-      `**D.** → False
-
-Throughput is $T=4 g^{\\frac{2}{3}}$. Throughput per cubic metre of gas lowers the exponent by one:
-
-$$
-\\frac{T(g)}{g}=4 g^{\\frac{2}{3}-1}
-$$
-
-$$
-\\frac{T(g)}{g}=4 g^{-\\frac{1}{3}}
-$$
-
-The leftover exponent is negative, so the intensity falls as the feed rises, not rises. Extra gas still adds tonnes, but each cubic metre buys less throughput than the one before it, so the statement is False.`,
-      `**E.** → True
-
-Throughput is $T=4 g^{\\frac{2}{3}}$. At a feed of sixty-four:
-
-$$
-T(64)=4\\cdot 64^{\\frac{2}{3}}
-$$
-
-$$
-64^{\\frac{1}{3}}=4
-$$
-
-$$
-64^{\\frac{2}{3}}=16
-$$
-
-$$
-T(64)=4\\cdot 16
-$$
-
-$$
-4\\cdot 16=64
-$$
-
-$$
-64>60
-$$
-
-Throughput is $64$ tonnes per hour, which is already more than $60$, so the statement is True.`,
+That feed is below $24$ cubic metres per hour, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 45,
@@ -6506,13 +7492,13 @@ $$T(g)=4g^{\\frac{2}{3}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** Because $r<1$, doubling the feed does not double throughput, and throughput per cubic metre falls.
+**1.** Extra from $8$ to $27$ is $20$, which exceeds $T(8)=16$. $T(64)=64>60$.
 
-**2.** The ceiling $T=32$ is met at $g=16\\sqrt{2}\\approx 22.63$, below $24$.
+**2.** Doubling the feed multiplies $T$ by $2^{\\frac{2}{3}}\\approx 1.587$, not by $2$. Throughput per cubic metre falls from $2$ to $\\frac{4}{3}$, a drop of $\\frac{2}{3}>0.5$.
 
-**3.** $T(64)=64$.
+**3.** The ceiling $T=32$ is met at $g=16\\sqrt{2}\\approx 22.63$, below $24$.
 
-**Answer.** $A=4$ | $r=\\frac{2}{3}$ | ceiling at $g=16\\sqrt{2}$`,
+**Answer.** $A=4$ | $r=\\frac{2}{3}$ | extra $20$ | ceiling at $g=16\\sqrt{2}$`,
   },
   {
     id: `math-8-46`,
@@ -6520,40 +7506,17 @@ $$T(g)=4g^{\\frac{2}{3}} \\tag{2}$$
     title: `Rainwater Basin Storage Under a Square Law`,
     context: `A tapered rainwater basin stores $V(d)=A d^{2}$ cubic metres when filled to a depth of $d>0$ metres. A survey found that raising the water from $3$ metres to $5$ metres added exactly $64$ cubic metres. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The exponent is larger than one, so stored volume grows faster than depth.`,
       `At $6$ metres the basin already holds more than $140$ cubic metres.`,
-      `Measuring depth in centimetres instead of metres leaves the coefficient $A$ unchanged.`,
-      `Because the basin tapers, stored volume approaches a finite cap as depth grows.`,
       `Filling from $4$ metres to $8$ metres adds more than $200$ cubic metres.`,
+      `Measuring depth in centimetres makes the new coefficient larger than $0.001$.`,
+      `The extra volume from $3$ metres to $5$ metres already exceeds the volume stored at $3$ metres.`,
+      `Stored volume at $5$ metres is already more than four times the volume at $3$ metres.`,
     ],
-    answer_key: [true, true, false, false, false],
+    answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The survey gives $A=4$, so storage is already a square of depth and the exponent is $2$. Compare that exponent with one:
-
-$$
-2>1
-$$
-
-Doubling depth therefore multiplies stored volume by four, not by two:
-
-$$
-\\frac{V(2d)}{V(d)}=2^{2}
-$$
-
-$$
-2^{2}=4
-$$
-
-$$
-4>2
-$$
-
-Each extra metre of water adds more storage than the metre before it, because a square steepens as depth grows. Volume grows faster than depth, so the statement is True.`,
-      `**B.** → True
-
-Storage is $V=4d^{2}$. At six metres:
+The survey gives $V=4d^{2}$. At six metres:
 
 $$
 V(6)=4\\cdot 6^{2}
@@ -6576,45 +7539,9 @@ $$
 $$
 
 The basin holds $144$ cubic metres, which is already more than $140$, so the statement is True.`,
-      `**C.** → False
+      `**B.** → False
 
-Storage is $V=4d^{2}$ when depth is in metres. A centimetre reading $d_{\\mathrm{cm}}$ counts one hundred centimetres to the metre:
-
-$$
-d=\\frac{d_{\\mathrm{cm}}}{100}
-$$
-
-$$
-V=4\\left(\\frac{d_{\\mathrm{cm}}}{100}\\right)^{2}
-$$
-
-$$
-V=4\\cdot\\frac{d_{\\mathrm{cm}}^{2}}{100^{2}}
-$$
-
-$$
-100^{2}=10000
-$$
-
-$$
-V=\\frac{4}{10000}\\,d_{\\mathrm{cm}}^{2}
-$$
-
-$$
-\\frac{4}{10000}=\\frac{1}{2500}
-$$
-
-$$
-V=\\frac{1}{2500}\\,d_{\\mathrm{cm}}^{2}
-$$
-
-The centimetre-form coefficient is $\\frac{1}{2500}$, not $4$. Changing the input unit rescales $A$, so the statement is False.`,
-      `**D.** → False
-
-Storage is $V=4d^{2}$. A power with a positive exponent is unbounded on $d>0$: as depth grows, $4d^{2}$ grows without a cap. The taper steepens storage rather than limiting it. A finite cap would need a leftover that goes to zero, not a square that keeps rising, so the statement is False.`,
-      `**E.** → False
-
-Storage is $V=4d^{2}$. The added volume from four metres to eight metres is a difference of two levels:
+The recovered law is $V=4d^{2}$. The added volume from four metres to eight metres is a difference of two levels:
 
 $$
 V(8)=4\\cdot 8^{2}
@@ -6661,8 +7588,143 @@ $$
 $$
 
 The add-on is $192$ cubic metres, which is not more than $200$, so the statement is False.`,
+      `**C.** → False
+
+The recovered law is $V=4d^{2}$ when depth is in metres. A centimetre reading $d_{\\mathrm{cm}}$ counts one hundred centimetres to the metre:
+
+$$
+d=\\frac{d_{\\mathrm{cm}}}{100}
+$$
+
+$$
+V=4\\left(\\frac{d_{\\mathrm{cm}}}{100}\\right)^{2}
+$$
+
+$$
+V=\\frac{4}{100^{2}}d_{\\mathrm{cm}}^{2}
+$$
+
+$$
+100^{2}=10000
+$$
+
+$$
+V=\\frac{4}{10000}d_{\\mathrm{cm}}^{2}
+$$
+
+$$
+\\frac{4}{10000}=0.0004
+$$
+
+$$
+0.0004<0.001
+$$
+
+The new coefficient is $0.0004$, which is not larger than $0.001$, so the statement is False.`,
+      `**D.** → True
+
+The recovered law is $V=4d^{2}$. At three metres:
+
+$$
+V(3)=4\\cdot 3^{2}
+$$
+
+$$
+3^{2}=9
+$$
+
+$$
+V(3)=4\\cdot 9
+$$
+
+$$
+4\\cdot 9=36
+$$
+
+At five metres:
+
+$$
+V(5)=4\\cdot 5^{2}
+$$
+
+$$
+5^{2}=25
+$$
+
+$$
+V(5)=4\\cdot 25
+$$
+
+$$
+4\\cdot 25=100
+$$
+
+The extra volume is
+
+$$
+V(5)-V(3)=100-36
+$$
+
+$$
+100-36=64
+$$
+
+$$
+64>36
+$$
+
+The extra already exceeds the volume stored at three metres, so the statement is True.`,
+      `**E.** → False
+
+The recovered law is $V=4d^{2}$. Stored volume at five metres and at three metres:
+
+$$
+V(5)=4\\cdot 25
+$$
+
+$$
+4\\cdot 25=100
+$$
+
+$$
+V(3)=4\\cdot 9
+$$
+
+$$
+4\\cdot 9=36
+$$
+
+Four times the three-metre volume would be
+
+$$
+4\\cdot 36=144
+$$
+
+$$
+100<144
+$$
+
+The ratio of the two levels is
+
+$$
+\\frac{V(5)}{V(3)}=\\frac{100}{36}
+$$
+
+$$
+\\frac{100}{36}=\\frac{25}{9}
+$$
+
+$$
+\\frac{25}{9}\\approx 2.78
+$$
+
+$$
+2.78<4
+$$
+
+Volume at five metres is not more than four times the volume at three metres, so the statement is False.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 46,
     solution_overview: `Storage is $V(d)=Ad^{2}$. Raising the water from three metres to five metres added sixty-four cubic metres.
 
@@ -6684,13 +7746,13 @@ $$V=\\frac{4}{10000}\\,d_{\\mathrm{cm}}^{2} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** $A=4$. Volume grows faster than depth and without a cap.
+**1.** $V(6)=144>140$. Filling from $4$ m to $8$ m adds $192$, not more than $200$.
 
-**2.** $V(6)=144$. Filling from four metres to eight metres adds $192$, not more than $200$.
+**2.** The centimetre-form coefficient is $0.0004$, not larger than $0.001$.
 
-**3.** Switching depth to centimetres changes the coefficient.
+**3.** Extra from $3$ m to $5$ m is $64>V(3)=36$. $V(5)=100$ is not more than four times $V(3)=36$.
 
-**Answer.** $A=4$ | $V=4d^{2}$ | $V(6)=144$`,
+**Answer.** $A=4$ | $V(6)=144$ | add-on $192$ | $A'=0.0004$`,
   },
   {
     id: `math-8-47`,
@@ -6698,48 +7760,17 @@ $$V=\\frac{4}{10000}\\,d_{\\mathrm{cm}}^{2} \\tag{2}$$
     title: `A Braking-Energy Index Recovered From a Speed Change`,
     context: `A fleet safety report scores braking energy by the index $E(v)=A v^{2}$, where $v>0$ is speed in kilometres per hour. The report does not give $A$: it states only that raising the test speed from $30$ to $50$ kilometres per hour raised the index by exactly $80$ points. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Equal speed increments raise the index by more at higher speeds than at lower ones.`,
       `At $40$ kilometres per hour the index is already above $70$.`,
-      `The index per kilometre per hour of speed is the same at every speed.`,
-      `The speed that produces a given index grows more slowly than the index itself.`,
       `At $80$ kilometres per hour the index is still under $300$.`,
+      `The extra index from $30$ to $50$ already exceeds the index at $30$.`,
+      `Raising speed from $40$ to $80$ multiplies the index by $4$.`,
+      `A $20$ km/h rise from $30$ to $50$ adds more to the index than a $20$ km/h rise from $50$ to $70$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The speed change gives $A=\\frac{1}{20}$, so the index is $E=\\frac{1}{20} v^{2}$. Equal speed increments of a square widen as the band moves up, because
-
-$$
-E(v+h)-E(v)=\\frac{1}{20}\\bigl((v+h)^{2}-v^{2}\\bigr)
-$$
-
-$$
-E(v+h)-E(v)=\\frac{1}{20}(2vh+h^{2})
-$$
-
-which grows with $v$. The logged twenty-kilometre-per-hour rise is $80$ points. The same increment starting at fifty is
-
-$$
-E(70)-E(50)=\\frac{1}{20}(70^{2}-50^{2})
-$$
-
-$$
-70^{2}=4900
-$$
-
-$$
-4900-2500=2400
-$$
-
-$$
-\\frac{2400}{20}=120
-$$
-
-One hundred and twenty is larger than eighty, so equal speed increments raise the index by more at higher speeds, so the statement is True.`,
-      `**B.** → True
-
-The index is $E=\\frac{1}{20} v^{2}$. At forty kilometres per hour:
+The speed change gives $E=\\frac{1}{20} v^{2}$. At forty kilometres per hour:
 
 $$
 E(40)=\\frac{1}{20}\\cdot 40^{2}
@@ -6762,39 +7793,9 @@ $$
 $$
 
 The index reads $80$, which is already above $70$, so the statement is True.`,
-      `**C.** → False
+      `**B.** → False
 
-The index is $E=\\frac{1}{20} v^{2}$. Index per kilometre per hour of speed lowers the exponent by one:
-
-$$
-\\frac{E(v)}{v}=\\frac{\\frac{1}{20} v^{2}}{v}
-$$
-
-$$
-\\frac{E(v)}{v}=\\frac{1}{20} v
-$$
-
-The intensity rises in proportion to speed. At $v=30$ it equals $\\frac{30}{20}=1.5$, and at $v=50$ it equals $\\frac{50}{20}=2.5$. It is not the same at every speed, so the statement is False.`,
-      `**D.** → True
-
-The index is $E=\\frac{1}{20} v^{2}$. The speed that produces a given index is the inverse of that square:
-
-$$
-20E=v^{2}
-$$
-
-$$
-v=(20E)^{\\frac{1}{2}}
-$$
-
-$$
-v=\\sqrt{20}\\, E^{\\frac{1}{2}}
-$$
-
-The inverse exponent $\\frac{1}{2}$ is smaller than one, so speed grows more slowly than the index: doubling the index multiplies the required speed by only $\\sqrt{2}$, about $1.41$, so the statement is True.`,
-      `**E.** → False
-
-The index is $E=\\frac{1}{20} v^{2}$. Eighty kilometres per hour is twice forty, and a square law multiplies the index by four, not by a linear guess. At eighty:
+The recovered law is $E=\\frac{1}{20} v^{2}$. At eighty kilometres per hour:
 
 $$
 E(80)=\\frac{1}{20}\\cdot 80^{2}
@@ -6817,8 +7818,139 @@ $$
 $$
 
 The index is $320$, which is not under $300$, so the statement is False.`,
+      `**C.** → True
+
+The recovered law is $E=\\frac{1}{20} v^{2}$. At thirty kilometres per hour:
+
+$$
+E(30)=\\frac{1}{20}\\cdot 30^{2}
+$$
+
+$$
+30^{2}=900
+$$
+
+$$
+E(30)=\\frac{900}{20}
+$$
+
+$$
+\\frac{900}{20}=45
+$$
+
+At fifty:
+
+$$
+E(50)=\\frac{1}{20}\\cdot 50^{2}
+$$
+
+$$
+50^{2}=2500
+$$
+
+$$
+E(50)=\\frac{2500}{20}
+$$
+
+$$
+\\frac{2500}{20}=125
+$$
+
+The extra index is
+
+$$
+E(50)-E(30)=125-45
+$$
+
+$$
+125-45=80
+$$
+
+$$
+80>45
+$$
+
+The extra already exceeds the index at thirty, so the statement is True.`,
+      `**D.** → True
+
+The recovered law is $E=\\frac{1}{20} v^{2}$. Eighty kilometres per hour is twice forty, and a square law multiplies the index by four:
+
+$$
+\\frac{E(80)}{E(40)}=2^{2}
+$$
+
+$$
+2^{2}=4
+$$
+
+The two levels confirm that factor:
+
+$$
+E(40)=\\frac{1600}{20}
+$$
+
+$$
+\\frac{1600}{20}=80
+$$
+
+$$
+E(80)=\\frac{6400}{20}
+$$
+
+$$
+\\frac{6400}{20}=320
+$$
+
+$$
+\\frac{320}{80}=4
+$$
+
+Raising speed from $40$ to $80$ multiplies the index by $4$, so the statement is True.`,
+      `**E.** → False
+
+The recovered law is $E=\\frac{1}{20} v^{2}$. The twenty-kilometre-per-hour rise from thirty to fifty adds
+
+$$
+50^{2}-30^{2}=2500-900
+$$
+
+$$
+2500-900=1600
+$$
+
+$$
+E(50)-E(30)=\\frac{1600}{20}
+$$
+
+$$
+\\frac{1600}{20}=80
+$$
+
+The same increment starting at fifty:
+
+$$
+70^{2}-50^{2}=4900-2500
+$$
+
+$$
+4900-2500=2400
+$$
+
+$$
+E(70)-E(50)=\\frac{2400}{20}
+$$
+
+$$
+\\frac{2400}{20}=120
+$$
+
+$$
+80<120
+$$
+
+The first rise adds $80$ and the second adds $120$, so the lower-speed rise does not add more, so the statement is False.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 47,
     solution_overview: `The index is $E(v)=Av^{2}$. Raising speed from thirty to fifty kilometres per hour raised the index by eighty points.
 
@@ -6840,13 +7972,13 @@ $$v=(20E)^{\\frac{1}{2}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** $A=\\frac{1}{20}$. Equal speed increments raise $E$ by more at higher speeds, because $E$ is convex.
+**1.** $E(40)=80>70$ and $E(80)=320$, not under $300$. Raising speed from $40$ to $80$ multiplies $E$ by $4$.
 
-**2.** $E(40)=80$ and $E(80)=320$, not $200$. Intensity $\\frac{E}{v}$ is not constant.
+**2.** Extra from $30$ to $50$ is $80>E(30)=45$.
 
-**3.** The inverse exponent $\\frac{1}{2}$ is smaller than one.
+**3.** A $20$ kilometre-per-hour rise from $30$ to $50$ adds $80$; from $50$ to $70$ it adds $120$.
 
-**Answer.** $A=\\frac{1}{20}$ | $E(40)=80$ | $E(80)=320$`,
+**Answer.** $A=\\frac{1}{20}$ | $E(40)=80$ | $E(80)=320$ | second rise $120$`,
   },
   {
     id: `math-8-48`,
@@ -7034,40 +8166,17 @@ $$S=3V^{\\frac{2}{3}} \\tag{2}$$
     title: `Inspection Hours Across Growing Shipment Volumes`,
     context: `Customs inspection time follows $T(n)=A n^{\\frac{1}{2}}$ hours for a consignment of $n>0$ shipments. Moving from a $4$-shipment consignment to a $36$-shipment consignment added exactly $16$ inspection hours. A staffing plan can supply at most $40$ inspection hours. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Total inspection time is proportional to the number of shipments.`,
       `The $40$-hour ceiling is already binding below $110$ shipments.`,
-      `Staffing that just meets the ceiling would still cover a modestly larger consignment, because extra shipments add almost nothing.`,
-      `Quadrupling a consignment multiplies inspection time by two.`,
       `A $49$-shipment consignment takes more than $30$ hours.`,
+      `Quadrupling a $4$-shipment consignment multiplies inspection time by two.`,
+      `The extra hours from $4$ to $36$ shipments already exceed the $4$-shipment time.`,
+      `Staffing that just meets the $40$-hour ceiling still covers a $121$-shipment consignment.`,
     ],
-    answer_key: [false, true, false, true, false],
+    answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → False
+      `**A.** → True
 
-The jump gives $A=4$, so inspection time is already a square root of the consignment and the exponent is $\\frac{1}{2}$. Proportionality would require exponent $1$:
-
-$$
-\\frac{1}{2}\\neq 1
-$$
-
-The recorded move from four shipments to thirty-six multiplies the consignment by nine, but inspection time only by three:
-
-$$
-\\frac{T(36)}{T(4)}=\\left(\\frac{36}{4}\\right)^{\\frac{1}{2}}
-$$
-
-$$
-\\frac{36}{4}=9
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-Nine times the shipments produce only three times the hours. Extra shipments add less time than the ones before them, so the statement is False.`,
-      `**B.** → True
-
-Inspection is $T=4 n^{\\frac{1}{2}}$. The forty-hour ceiling inverts that law:
+The jump gives $T=4 n^{\\frac{1}{2}}$. The forty-hour ceiling inverts that law:
 
 $$
 4 n^{\\frac{1}{2}}=40
@@ -7094,43 +8203,9 @@ $$
 $$
 
 Time still increases with $n$, so every larger consignment overshoots forty hours. The ceiling already binds at $100$ shipments, which is below $110$, so the statement is True.`,
-      `**C.** → False
+      `**B.** → False
 
-Inspection is $T=4 n^{\\frac{1}{2}}$, and the forty-hour ceiling binds at $n=100$. A modestly larger consignment is $n=121$:
-
-$$
-121^{\\frac{1}{2}}=11
-$$
-
-$$
-T(121)=4\\cdot 11
-$$
-
-$$
-4\\cdot 11=44
-$$
-
-$$
-44>40
-$$
-
-The extra twenty-one shipments still add four hours, which the forty-hour plan cannot supply. Extra shipments add less than they used to, but they do not add almost nothing, so the statement is False.`,
-      `**D.** → True
-
-The exponent is $\\frac{1}{2}$, so an input factor of $4$ multiplies inspection time by $4$ to that power:
-
-$$
-\\frac{T(4n)}{T(n)}=4^{\\frac{1}{2}}
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-Quadrupling the consignment doubles inspection time, so the statement is True.`,
-      `**E.** → False
-
-Inspection is $T=4 n^{\\frac{1}{2}}$. At forty-nine shipments:
+The recovered law is $T=4 n^{\\frac{1}{2}}$. At forty-nine shipments:
 
 $$
 T(49)=4\\cdot 49^{\\frac{1}{2}}
@@ -7153,8 +8228,133 @@ $$
 $$
 
 Inspection takes $28$ hours, which is not more than $30$, so the statement is False.`,
+      `**C.** → True
+
+The recovered exponent is $\\frac{1}{2}$, so an input factor of $4$ multiplies inspection time by $4$ to that power:
+
+$$
+\\frac{T(4n)}{T(n)}=4^{\\frac{1}{2}}
+$$
+
+$$
+4^{\\frac{1}{2}}=2
+$$
+
+The logged four-shipment consignment becomes sixteen shipments:
+
+$$
+T(4)=4\\cdot 4^{\\frac{1}{2}}
+$$
+
+$$
+4^{\\frac{1}{2}}=2
+$$
+
+$$
+T(4)=4\\cdot 2
+$$
+
+$$
+4\\cdot 2=8
+$$
+
+$$
+T(16)=4\\cdot 16^{\\frac{1}{2}}
+$$
+
+$$
+16^{\\frac{1}{2}}=4
+$$
+
+$$
+T(16)=4\\cdot 4
+$$
+
+$$
+4\\cdot 4=16
+$$
+
+$$
+\\frac{16}{8}=2
+$$
+
+Quadrupling the consignment doubles inspection time, so the statement is True.`,
+      `**D.** → True
+
+The recovered law is $T=4 n^{\\frac{1}{2}}$. At four shipments:
+
+$$
+T(4)=4\\cdot 4^{\\frac{1}{2}}
+$$
+
+$$
+4^{\\frac{1}{2}}=2
+$$
+
+$$
+T(4)=4\\cdot 2
+$$
+
+$$
+4\\cdot 2=8
+$$
+
+At thirty-six shipments:
+
+$$
+T(36)=4\\cdot 36^{\\frac{1}{2}}
+$$
+
+$$
+36^{\\frac{1}{2}}=6
+$$
+
+$$
+T(36)=4\\cdot 6
+$$
+
+$$
+4\\cdot 6=24
+$$
+
+The extra hours are
+
+$$
+T(36)-T(4)=24-8
+$$
+
+$$
+24-8=16
+$$
+
+$$
+16>8
+$$
+
+The extra hours already exceed the four-shipment time, so the statement is True.`,
+      `**E.** → False
+
+The recovered law is $T=4 n^{\\frac{1}{2}}$, and the forty-hour ceiling binds at $n=100$. A $121$-shipment consignment is larger:
+
+$$
+121^{\\frac{1}{2}}=11
+$$
+
+$$
+T(121)=4\\cdot 11
+$$
+
+$$
+4\\cdot 11=44
+$$
+
+$$
+44>40
+$$
+
+The extra twenty-one shipments still add four hours, which the forty-hour plan cannot supply, so the statement is False.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 49,
     solution_overview: `Inspection time is $T(n)=An^{\\frac{1}{2}}$. Moving from four shipments to thirty-six added sixteen hours, and staffing supplies at most forty hours.
 
@@ -7176,11 +8376,13 @@ $$n\\le 100 \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** $A=4$. Time is not proportional to $n$. Quadrupling $n$ doubles $T$.
+**1.** The ceiling $T=40$ binds at $n=100$, already below $110$. $T(49)=28$, not more than $30$.
 
-**2.** The ceiling is met at $n=100$. Then $T(121)=44$ overshoots, and $T(49)=28$ is not more than $30$.
+**2.** Quadrupling four shipments doubles inspection time. Extra from $4$ to $36$ is $16>T(4)=8$.
 
-**Answer.** $A=4$ | $T=4\\sqrt{n}$ | cap at $n=100$`,
+**3.** $T(121)=44$ overshoots the forty-hour plan.
+
+**Answer.** $A=4$ | cap at $n=100$ | $T(49)=28$ | $T(121)=44$`,
   },
   {
     id: `math-8-50`,
@@ -7188,34 +8390,68 @@ $$n\\le 100 \\tag{2}$$
     title: `Illuminance Down the Length of a Gallery`,
     context: `Illuminance from a gallery spotlight follows $I(d)=A d^{-2}$ lux, where $d>0$ is the distance in metres. A conservation log never states $A$: it records only that moving the meter from $2$ metres to $4$ metres cut the reading by $150$ lux. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Doubling the distance from the lamp cuts illuminance to one quarter.`,
+      `Doubling the distance from $2$ metres to $4$ metres cuts illuminance to one quarter.`,
       `At $5$ metres the illuminance is already under $40$ lux.`,
-      `If the hall is long enough, illuminance eventually becomes negative.`,
-      `Distance as a function of illuminance is not a power function, because illuminance falls.`,
       `At $3$ metres the reading is still above $90$ lux.`,
+      `The illuminance drop from $2$ metres to $4$ metres already exceeds the remaining illuminance at $4$ metres.`,
+      `The distance that yields $8$ lux already exceeds $10$ metres.`,
     ],
-    answer_key: [true, true, false, false, false],
+    answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The logged drop gives $A=800$, but doubling distance is an input factor of $2$ on the inverse-square law, and the coefficient cancels:
+The logged drop gives $I=800 d^{-2}$. Doubling distance from two metres to four metres is an input factor of $2$ on the inverse-square law:
 
 $$
-\\frac{I(2d)}{I(d)}=\\frac{A(2d)^{-2}}{A d^{-2}}
-$$
-
-$$
-\\frac{I(2d)}{I(d)}=2^{-2}
+\\frac{I(4)}{I(2)}=2^{-2}
 $$
 
 $$
 2^{-2}=\\frac{1}{4}
 $$
 
-The logged move from two metres to four metres is that same doubling. Illuminance falls to one quarter, so the statement is True.`,
+The two logged stations confirm that factor:
+
+$$
+I(2)=800\\cdot 2^{-2}
+$$
+
+$$
+2^{2}=4
+$$
+
+$$
+I(2)=\\frac{800}{4}
+$$
+
+$$
+\\frac{800}{4}=200
+$$
+
+$$
+I(4)=800\\cdot 4^{-2}
+$$
+
+$$
+4^{2}=16
+$$
+
+$$
+I(4)=\\frac{800}{16}
+$$
+
+$$
+\\frac{800}{16}=50
+$$
+
+$$
+\\frac{50}{200}=\\frac{1}{4}
+$$
+
+Illuminance falls to one quarter, so the statement is True.`,
       `**B.** → True
 
-Illuminance is $I=800 d^{-2}$. Five metres is not one of the logged stations, so the reading has to be taken from the law rather than from the hundred-and-fifty lux drop:
+The recovered law is $I=800 d^{-2}$. At five metres:
 
 $$
 I(5)=800\\cdot 5^{-2}
@@ -7240,34 +8476,14 @@ $$
 Illuminance is $32$ lux, which is already under $40$, so the statement is True.`,
       `**C.** → False
 
-Illuminance is $I=\\frac{800}{d^{2}}$. For every $d>0$ the square is positive and the coefficient is positive, so $I(d)>0$. A negative exponent sends the reading towards zero from above as the hall lengthens, never through zero. Illuminance stays positive, so the statement is False.`,
-      `**D.** → False
-
-Illuminance is $I=800 d^{-2}$. A power with a nonzero exponent inverts to another power, whether that exponent is negative or not:
-
-$$
-I=\\frac{800}{d^{2}}
-$$
-
-$$
-d^{2}=\\frac{800}{I}
-$$
-
-$$
-d=\\left(\\frac{800}{I}\\right)^{\\frac{1}{2}}
-$$
-
-$$
-d=\\sqrt{800}\\, I^{-\\frac{1}{2}}
-$$
-
-Distance is a power of illuminance with exponent $-\\frac{1}{2}$. Falling along the curve does not stop the inverse from being a power, so the statement is False.`,
-      `**E.** → False
-
-Illuminance is $I=800 d^{-2}$. At three metres:
+The recovered law is $I=800 d^{-2}$. At three metres:
 
 $$
 I(3)=\\frac{800}{3^{2}}
+$$
+
+$$
+3^{2}=9
 $$
 
 $$
@@ -7283,8 +8499,68 @@ $$
 $$
 
 The reading is below $90$ lux, so the statement is False.`,
+      `**D.** → True
+
+The recovered law is $I=800 d^{-2}$. The two logged stations are
+
+$$
+I(2)=\\frac{800}{4}
+$$
+
+$$
+\\frac{800}{4}=200
+$$
+
+$$
+I(4)=\\frac{800}{16}
+$$
+
+$$
+\\frac{800}{16}=50
+$$
+
+The drop from two metres to four metres is
+
+$$
+I(2)-I(4)=200-50
+$$
+
+$$
+200-50=150
+$$
+
+$$
+150>50
+$$
+
+The drop already exceeds the remaining illuminance at four metres, so the statement is True.`,
+      `**E.** → False
+
+The recovered law is $I=800 d^{-2}$. The distance that yields $8$ lux solves
+
+$$
+800 d^{-2}=8
+$$
+
+$$
+d^{2}=\\frac{800}{8}
+$$
+
+$$
+\\frac{800}{8}=100
+$$
+
+$$
+d=\\sqrt{100}
+$$
+
+$$
+\\sqrt{100}=10
+$$
+
+That distance is exactly $10$ metres, which does not exceed $10$, so the statement is False.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 50,
     solution_overview: `Illuminance is $I(d)=Ad^{-2}$. Moving the meter from two metres to four metres cut the reading by one hundred and fifty lux.
 
@@ -7306,13 +8582,13 @@ $$d=\\sqrt{800}\\,I^{-\\frac{1}{2}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** $A=800$. Doubling $d$ quarters $I$. Illuminance stays positive.
+**1.** Doubling $d$ from $2$ to $4$ multiplies $I$ by $\\frac{1}{4}$. The drop $150$ already exceeds the remaining $I(4)=50$.
 
-**2.** $I(5)=32$ and $I(3)=\\frac{800}{9}\\approx 88.89$, not above $90$.
+**2.** $I(5)=32<40$ and $I(3)=\\frac{800}{9}\\approx 88.89$, not above $90$.
 
-**3.** The inverse is still a power function.
+**3.** $I=8$ inverts to $d=10$, which does not exceed $10$.
 
-**Answer.** $A=800$ | $I=800d^{-2}$ | $I(5)=32$`,
+**Answer.** $A=800$ | $I(5)=32$ | $I(3)=\\frac{800}{9}$ | $d=10$ for $8$ lux`,
   },
   {
     id: `math-8-51`,
@@ -7320,47 +8596,85 @@ $$d=\\sqrt{800}\\,I^{-\\frac{1}{2}} \\tag{2}$$
     title: `Audit Cost With Economies of Scale`,
     context: `An audit practice prices engagements by $C(n)=A n^{0.75}$, where $n>0$ is the number of accounts tested. The bill rises by exactly $1900$ when engagement size rises from $16$ to $81$ accounts. A client has a $2700$ cap, while a rival quotes $R(n)=50n$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The exponent is smaller than one, so the bill grows more slowly than the number of accounts.`,
-      `Doubling the number of accounts doubles the practice bill.`,
       `After $81$ accounts the bill is already above $2500$.`,
-      `An extra account adds more to the bill after eighty-one accounts than after sixteen.`,
+      `The extra bill from $16$ to $81$ accounts already exceeds the $16$-account bill.`,
       `A bill of $12500$ already requires more than $600$ accounts.`,
+      `Doubling $16$ accounts doubles the practice bill.`,
+      `At $81$ accounts the power-law bill is already cheaper than the rival's quote.`,
     ],
-    answer_key: [true, false, true, false, true],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The recovered exponent is $\\frac{3}{4}$, which is smaller than $1$. Doubling the accounts therefore multiplies the bill by $2^{\\frac{3}{4}}$, and that factor is less than $2$, so the bill grows more slowly than the account count, so the statement is True.`,
-      `**B.** → False
-
-Doubling accounts would double the bill only if the exponent were $1$. With exponent $\\frac{3}{4}$ the scale factor is
+The recorded rise of $1900$ is a difference of two three-quarter powers:
 
 $$
-\\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}\\approx 1.68
+16^{\\frac{3}{4}}=8
 $$
 
-not $2$. The bill rises, but not in lockstep with the account count, so the statement is False.`,
+$$
+81^{\\frac{3}{4}}=27
+$$
+
+$$
+A(27-8)=1900
+$$
+
+$$
+19A=1900
+$$
+
+$$
+A=100
+$$
+
+The recovered law is $C(n)=100 n^{\\frac{3}{4}}$. At eighty-one accounts:
+
+$$
+C(81)=100\\cdot 27
+$$
+
+$$
+100\\cdot 27=2700
+$$
+
+$$
+2700>2500
+$$
+
+The bill is $2700$, already above $2500$, so the statement is True.`,
+      `**B.** → True
+
+The recovered law is $C(n)=100 n^{\\frac{3}{4}}$. The extra bill from sixteen accounts to eighty-one is a difference of two levels:
+
+$$
+C(81)=2700
+$$
+
+$$
+C(16)=100\\cdot 8
+$$
+
+$$
+100\\cdot 8=800
+$$
+
+$$
+C(81)-C(16)=2700-800
+$$
+
+$$
+2700-800=1900
+$$
+
+$$
+1900>800
+$$
+
+The add-on of $1900$ already exceeds the sixteen-account bill of $800$, so the statement is True.`,
       `**C.** → True
 
-At eighty-one accounts the power is $27$, so the bill is
-
-$$
-C(81)=100\\cdot 27=2700
-$$
-
-That already clears $2500$, so the statement is True.`,
-      `**D.** → False
-
-An extra account is the derivative. The leftover exponent $-\\frac{1}{4}$ is negative, so each extra account adds less than the one before it:
-
-$$
-C'(n)=75 n^{-\\frac{1}{4}}
-$$
-
-After sixteen accounts, $16^{-\\frac{1}{4}}=\\frac{1}{2}$ and $C'(16)=\\frac{75}{2}$. After eighty-one, $81^{-\\frac{1}{4}}=\\frac{1}{3}$ and $C'(81)=25$. Because $25<\\frac{75}{2}$, an extra account adds less after eighty-one than after sixteen, so the statement is False.`,
-      `**E.** → True
-
-A bill of $12500$ on $C(n)=100 n^{\\frac{3}{4}}$ means
+The recovered law is $C(n)=100 n^{\\frac{3}{4}}$. A bill of $12500$ inverts that law:
 
 $$
 100 n^{\\frac{3}{4}}=12500
@@ -7375,12 +8689,62 @@ $$
 $$
 
 $$
-n=(5^{3})^{\\frac{4}{3}}=5^{4}=625
+n=(5^{3})^{\\frac{4}{3}}
 $$
 
-Six hundred and twenty-five accounts is already more than $600$, so the statement is True.`,
+$$
+n=5^{4}
+$$
+
+$$
+5^{4}=625
+$$
+
+$$
+625>600
+$$
+
+Six hundred and twenty-five accounts already exceeds $600$, so the statement is True.`,
+      `**D.** → False
+
+The recovered law is $C(n)=100 n^{\\frac{3}{4}}$. Doubling sixteen accounts is the scale
+
+$$
+\\frac{C(32)}{C(16)}=2^{\\frac{3}{4}}
+$$
+
+$$
+2^{\\frac{3}{4}}\\approx 1.682
+$$
+
+$$
+1.682\\neq 2
+$$
+
+The bill would double only if the exponent were $1$. Three quarters is below one, so the factor falls short of $2$, so the statement is False.`,
+      `**E.** → True
+
+The recovered law is $C(n)=100 n^{\\frac{3}{4}}$, and the rival quotes $R(n)=50n$. At eighty-one accounts:
+
+$$
+C(81)=2700
+$$
+
+$$
+R(81)=50\\cdot 81
+$$
+
+$$
+50\\cdot 81=4050
+$$
+
+$$
+2700<4050
+$$
+
+The power-law bill of $2700$ already undercuts the rival's $4050$, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 51,
     solution_overview: `Audit cost follows $C(n)=A n^{\\frac{3}{4}}$ for $n>0$ accounts. The bill rises by $1900$ from $16$ to $81$ accounts. A client cap is $2700$, and a rival quotes $R(n)=50n$.
 
@@ -7408,23 +8772,19 @@ $$19A=1900 \\tag{2}$$
 
 $$A=100 \\qquad C(n)=100 n^{\\frac{3}{4}}$$
 
-**2.** Logged bills and the cap:
+**2.** Named bills and the extra:
 
-$$C(16)=800 \\qquad C(81)=2700 \\qquad C(n)\\le 2700 \\Rightarrow n\\le 81$$
+$$C(16)=800 \\qquad C(81)=2700 \\qquad C(81)-C(16)=1900>800$$
 
-**3.** Rival crossover:
+**3.** Target bill and doubling:
 
-$$100 n^{\\frac{3}{4}}=50n \\Rightarrow n=16$$
+$$C=12500 \\Rightarrow n=625 \\qquad \\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}\\approx 1.68$$
 
-**4.** Target bill:
+**4.** Rival at $81$:
 
-$$100 n^{\\frac{3}{4}}=12500 \\Rightarrow n=625$$
+$$R(81)=4050 \\qquad 2700<4050$$
 
-**5.** Scale:
-
-$$\\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}\\approx 1.68$$
-
-**Answer.** $A=100$ | $C(n)=100n^{\\frac{3}{4}}$ | cap $n=81$ | rival tie $n=16$ | $C=12500$ at $n=625$`,
+**Answer.** $A=100$ | $C(16)=800$ | $C(81)=2700$ | extra $1900$ | $n=625$ for $C=12500$ | $R(81)=4050$`,
   },
   {
     id: `math-8-52`,
@@ -7432,20 +8792,64 @@ $$\\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}\\approx 1.68$$
     title: `Airborne Particle Concentration Downwind`,
     context: `Downwind particle concentration follows $c(x)=A x^{-1.5}$ micrograms per cubic metre, where $x>0$ is distance from the stack in metres. A monitor at $4$ metres reads exactly $43.75$ more than a monitor at $16$ metres. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Concentration falls faster than inverse-linear decay.`,
-      `Measuring distance in kilometres instead of metres leaves the coefficient unchanged.`,
       `At $100$ metres the concentration is already below $0.5$ microgram per cubic metre.`,
-      `The distance that produces a given concentration is itself a power of that concentration.`,
+      `Measuring distance in kilometres makes the new coefficient larger than $0.01$.`,
       `At $4$ metres the nearer monitor still reads under $45$ micrograms per cubic metre.`,
+      `The drop from $4$ metres to $16$ metres already exceeds the remaining reading at $16$ metres.`,
+      `The distance that yields $0.4$ already exceeds $80$ metres.`,
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Inverse-linear decay would carry exponent $-1$. The given exponent is $-\\frac{3}{2}$, which is strictly less than $-1$, so concentration falls faster than $1/x$: each extra metre of distance removes a larger share than inverse-linear decay would, so the statement is True.`,
-      `**B.** → False
+The recorded gap of $43.75$ is a difference of two negative three-halves powers:
 
-If distance is rewritten in kilometres, $x=1000d$ with $d$ in km, and the recovered law $c=400 x^{-\\frac{3}{2}}$ becomes
+$$
+4^{-\\frac{3}{2}}=\\frac{1}{8}
+$$
+
+$$
+16^{-\\frac{3}{2}}=\\frac{1}{64}
+$$
+
+$$
+A\\left(\\frac{1}{8}-\\frac{1}{64}\\right)=43.75
+$$
+
+$$
+\\frac{7A}{64}=43.75
+$$
+
+$$
+7A=2800
+$$
+
+$$
+A=400
+$$
+
+The recovered law is $c(x)=400 x^{-\\frac{3}{2}}$. At one hundred metres:
+
+$$
+100^{\\frac{3}{2}}=1000
+$$
+
+$$
+c(100)=\\frac{400}{1000}
+$$
+
+$$
+\\frac{400}{1000}=0.4
+$$
+
+$$
+0.4<0.5
+$$
+
+The reading is $0.4$, already below $0.5$, so the statement is True.`,
+      `**B.** → True
+
+The recovered law is $c(x)=400 x^{-\\frac{3}{2}}$. Measuring distance in kilometres means $x=1000d$:
 
 $$
 c=400(1000d)^{-\\frac{3}{2}}
@@ -7455,44 +8859,108 @@ $$
 c=400\\cdot 1000^{-\\frac{3}{2}} d^{-\\frac{3}{2}}
 $$
 
-The new coefficient is $400\\cdot 1000^{-\\frac{3}{2}}$, not $400$. Changing units rescales $A$, so the statement is False.`,
-      `**C.** → True
-
-The recovered law is $c(x)=400 x^{-\\frac{3}{2}}$. At one hundred metres:
-
 $$
-100^{\\frac{3}{2}}=10^{3}=1000
+1000^{\\frac{3}{2}}=10^{4.5}
 $$
 
 $$
-c(100)=\\frac{400}{1000}=0.4
+A'=\\frac{400}{10^{4.5}}
 $$
 
-That reading is already below $0.5$, so the statement is True.`,
+$$
+A'\\approx 0.01265
+$$
+
+$$
+0.01265>0.01
+$$
+
+The new coefficient is about $0.01265$, already larger than $0.01$, so the statement is True.`,
+      `**C.** → False
+
+The recovered law is $c(x)=400 x^{-\\frac{3}{2}}$. At four metres:
+
+$$
+4^{\\frac{3}{2}}=8
+$$
+
+$$
+c(4)=\\frac{400}{8}
+$$
+
+$$
+\\frac{400}{8}=50
+$$
+
+$$
+50>45
+$$
+
+The nearer monitor reads $50$, which is not under $45$, so the statement is False.`,
       `**D.** → True
 
-A power with a nonzero exponent inverts to another power. From $c=400 x^{-\\frac{3}{2}}$ one gets
+The recovered law is $c(x)=400 x^{-\\frac{3}{2}}$. The drop from four metres to sixteen metres is a difference of two levels:
 
 $$
-\\frac{c}{400}=x^{-\\frac{3}{2}}
+c(4)=50
 $$
 
 $$
-x=\\left(\\frac{400}{c}\\right)^{\\frac{2}{3}}
+16^{\\frac{3}{2}}=64
 $$
 
-a two-thirds power of the reciprocal concentration, so the statement is True.`,
-      `**E.** → False
-
-At four metres the power is $\\frac{1}{8}$, so the nearer reading is
-
 $$
-c(4)=400\\cdot\\frac{1}{8}=50
+c(16)=\\frac{400}{64}
 $$
 
-Fifty is not under $45$, so the statement is False.`,
+$$
+\\frac{400}{64}=6.25
+$$
+
+$$
+c(4)-c(16)=50-6.25
+$$
+
+$$
+50-6.25=43.75
+$$
+
+$$
+43.75>6.25
+$$
+
+The drop of $43.75$ already exceeds the remaining reading of $6.25$ at sixteen metres, so the statement is True.`,
+      `**E.** → True
+
+The recovered law is $c(x)=400 x^{-\\frac{3}{2}}$. A reading of $0.4$ inverts that law:
+
+$$
+400 x^{-\\frac{3}{2}}=0.4
+$$
+
+$$
+x^{\\frac{3}{2}}=\\frac{400}{0.4}
+$$
+
+$$
+\\frac{400}{0.4}=1000
+$$
+
+$$
+x=1000^{\\frac{2}{3}}
+$$
+
+$$
+1000^{\\frac{2}{3}}=100
+$$
+
+$$
+100>80
+$$
+
+The distance is $100$ metres, already past $80$, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 52,
     solution_overview: `Concentration follows $c(x)=A x^{-\\frac{3}{2}}$ for distance $x>0$ metres. A monitor at $4$ metres reads $43.75$ more than a monitor at $16$ metres.
 
@@ -7524,11 +8992,15 @@ $$A=400 \\qquad c(x)=400 x^{-\\frac{3}{2}}$$
 
 $$c(4)=50 \\qquad c(16)=6.25 \\qquad c(100)=0.4$$
 
-**3.** Scale factors:
+**3.** Drop versus remaining:
 
-$$\\frac{c\\bigl(\\frac{x}{2}\\bigr)}{c(x)}=2\\sqrt{2} \\qquad \\frac{c(2x)}{c(x)}=\\frac{1}{2\\sqrt{2}}$$
+$$c(4)-c(16)=43.75>6.25$$
 
-**Answer.** $A=400$ | $c(4)=50$ | $c(16)=6.25$ | $c(100)=0.4$ | halving factor $2\\sqrt{2}$`,
+**4.** Kilometre-scale coefficient:
+
+$$A'=400\\cdot 1000^{-\\frac{3}{2}}=\\frac{400}{10^{4.5}}\\approx 0.01265>0.01$$
+
+**Answer.** $A=400$ | $c(4)=50$ | $c(16)=6.25$ | $c(100)=0.4$ | $A'\\approx 0.01265$`,
   },
   {
     id: `math-8-53`,
@@ -7644,42 +9116,77 @@ $$L'(w)=6 w^{0.5}$$
     title: `Market Impact of a Block Trade`,
     context: `A broker models price impact as $I(v)=A v^{0.5}$ basis points, where $v>0$ is order size as a fraction of average daily volume. Increasing an order from $0.04$ ADV to $0.09$ ADV adds exactly $6$ basis points of impact. The scaled impact charge is $vI(v)$, while a notional fee is $F(v)=30v$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Impact grows more slowly than order size.`,
-      `Doubling order size doubles the scaled impact charge.`,
       `At $0.16$ ADV, impact is already above $20$ basis points.`,
-      `Once the scaled charge overtakes the notional fee, it stays larger at every bigger order.`,
       `At $0.25$ ADV the scaled charge is already above $10$.`,
+      `Once the scaled charge overtakes the notional fee, it stays larger at every bigger order.`,
+      `Doubling order size from $0.04$ to $0.08$ ADV doubles impact.`,
+      `Two orders of $0.04$ ADV together already produce more impact than one order of $0.16$ ADV.`,
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-An exponent smaller than one means impact grows more slowly than order size: each extra fraction of ADV adds less impact than the last. One half is below one, so doubling $v$ multiplies impact by $\\sqrt{2}\\approx 1.41$, not by $2$, so the statement is True.`,
-      `**B.** → False
-
-Impact is a square root, so multiplying by $v$ raises the exponent by one: the scaled charge is a three-halves power. Doubling order size then multiplies the charge by
+The recorded increment of $6$ basis points is a difference of two square roots:
 
 $$
-2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.83
+\\sqrt{0.09}=0.3
 $$
 
-which exceeds $2$. The scaled charge more than doubles, so the statement is False.`,
-      `**C.** → True
+$$
+\\sqrt{0.04}=0.2
+$$
 
-The recovered impact is $I(v)=60 v^{\\frac{1}{2}}$. At $0.16$ ADV:
+$$
+A(0.3-0.2)=6
+$$
+
+$$
+0.1A=6
+$$
+
+$$
+A=60
+$$
+
+The recovered law is $I(v)=60\\sqrt{v}$. At $0.16$ ADV:
 
 $$
 \\sqrt{0.16}=0.4
 $$
 
 $$
-I(0.16)=60\\cdot 0.4=24
+I(0.16)=60\\cdot 0.4
 $$
 
-Twenty-four already clears $20$ basis points, so the statement is True.`,
-      `**D.** → True
+$$
+60\\cdot 0.4=24
+$$
 
-The scaled charge is $60 v^{\\frac{3}{2}}$. Equating to the fee $30v$:
+$$
+24>20
+$$
+
+Impact is $24$ basis points, already above $20$, so the statement is True.`,
+      `**B.** → False
+
+The recovered impact is $I(v)=60\\sqrt{v}$, so the scaled charge is $60 v^{\\frac{3}{2}}$. At a quarter of ADV:
+
+$$
+\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=\\frac{1}{8}
+$$
+
+$$
+60\\cdot\\frac{1}{8}=7.5
+$$
+
+$$
+7.5<10
+$$
+
+The scaled charge is $7.5$, which is not above $10$, so the statement is False.`,
+      `**C.** → True
+
+The scaled charge is $60 v^{\\frac{3}{2}}$ and the notional fee is $F(v)=30v$. They meet when
 
 $$
 60 v^{\\frac{3}{2}}=30v
@@ -7690,21 +9197,76 @@ $$
 $$
 
 $$
+\\sqrt{v}=\\frac{1}{2}
+$$
+
+$$
 v=\\frac{1}{4}
 $$
 
-For $v>\\frac{1}{4}$ one has $\\sqrt{v}>\\frac{1}{2}$, so $60 v^{\\frac{3}{2}}>30v$. Once the scaled charge overtakes the fee it stays larger, so the statement is True.`,
+For every $v>\\frac{1}{4}$ one has $\\sqrt{v}>\\frac{1}{2}$, so $60 v^{\\frac{3}{2}}>30v$. Once the scaled charge overtakes the fee it stays larger, so the statement is True.`,
+      `**D.** → False
+
+The recovered law is $I(v)=60\\sqrt{v}$. Doubling $0.04$ ADV lands at $0.08$:
+
+$$
+I(0.04)=60\\sqrt{0.04}
+$$
+
+$$
+\\sqrt{0.04}=0.2
+$$
+
+$$
+I(0.04)=12
+$$
+
+$$
+I(0.08)=60\\sqrt{0.08}
+$$
+
+$$
+60\\sqrt{0.08}=12\\sqrt{2}
+$$
+
+$$
+12\\sqrt{2}\\approx 16.97
+$$
+
+$$
+2\\cdot 12=24
+$$
+
+$$
+16.97\\neq 24
+$$
+
+Impact rises by a factor $\\sqrt{2}$, not by $2$. The new reading is about $16.97$, not $24$, so the statement is False.`,
       `**E.** → False
 
-At a quarter of ADV the scaled charge is
+The recovered law is $I(v)=60\\sqrt{v}$. Two separate orders of $0.04$ ADV add
 
 $$
-60\\cdot\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=60\\cdot\\frac{1}{8}=7.5
+2I(0.04)=2\\cdot 12
 $$
 
-Seven and a half is not above $10$, so the statement is False.`,
+$$
+2\\cdot 12=24
+$$
+
+One order of $0.16$ ADV is
+
+$$
+I(0.16)=24
+$$
+
+$$
+24=24
+$$
+
+The pair matches the single larger order; it does not produce more impact, so the statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `5/5`,
     sort_order: 54,
     solution_overview: `Impact follows $I(v)=A v^{\\frac{1}{2}}$ basis points. Raising order size from $0.04$ to $0.09$ ADV adds $6$ basis points. The scaled charge is $vI(v)$, and a notional fee is $F(v)=30v$.
 
@@ -7728,19 +9290,19 @@ $$vI(v)=60 v^{\\frac{3}{2}} \\qquad F(v)=30v \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** A named size:
+**1.** Named impacts:
 
-$$I(0.16)=24$$
+$$I(0.04)=12 \\qquad I(0.08)=12\\sqrt{2}\\approx 16.97 \\qquad I(0.16)=24$$
 
-**2.** Break-even:
+**2.** Scaled charge versus fee:
 
-$$60 v^{\\frac{3}{2}}=30v \\Rightarrow v=0.25$$
+$$60 v^{\\frac{3}{2}}=30v \\Rightarrow v=0.25 \\qquad 60\\cdot(0.25)^{\\frac{3}{2}}=7.5$$
 
-**3.** Scale of the charge:
+**3.** Two small orders versus one large:
 
-$$\\frac{(2v)I(2v)}{vI(v)}=2^{\\frac{3}{2}}=2\\sqrt{2}$$
+$$2I(0.04)=24=I(0.16)$$
 
-**Answer.** $A=60$ | $I(v)=60\\sqrt{v}$ | $I(0.16)=24$ | break-even $v=0.25$ | charge exponent $\\frac{3}{2}$`,
+**Answer.** $A=60$ | $I(v)=60\\sqrt{v}$ | $I(0.16)=24$ | $I(0.08)\\approx 16.97$ | break-even $v=0.25$ | scaled $(0.25)=7.5$`,
   },
   {
     id: `math-8-55`,
@@ -7854,9 +9416,9 @@ $$E(2m)/E(m)=2^{\\frac{2}{3}}<2$$
     title: `Retail Catchment Under a Distance-Decay Law`,
     context: `Weekly footfall at a retail park from a residential zone follows $f(d)=A d^{-1.5}$ visitors, where $d>0$ is the driving distance in kilometres. The planning file omits the coefficient: it records only that a zone $4$ kilometres away supplies $350$ more visitors a week than a zone $16$ kilometres away. A zone counts as core catchment when it supplies at least $100$ visitors a week. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `A farther zone always supplies fewer visitors than a nearer zone.`,
-      `Footfall follows an inverse-square law of driving distance.`,
       `A zone $9$ kilometres away still supplies more than $100$ visitors a week.`,
+      `Footfall follows an inverse-square law of driving distance.`,
+      `The drop from $4$ km to $16$ km already exceeds the remaining footfall at $16$ km.`,
       `Core catchment already ends before $11$ kilometres.`,
       `An extra kilometre of drive cuts more visitors far from the park than near it.`,
     ],
@@ -7864,26 +9426,102 @@ $$E(2m)/E(m)=2^{\\frac{2}{3}}<2$$
     tactical_explanations: [
       `**A.** → True
 
-A negative exponent means footfall falls as driving distance rises. The given exponent $-\\frac{3}{2}$ is negative, so a farther zone always supplies fewer visitors than a nearer one, so the statement is True.`,
-      `**B.** → False
+The recorded gap of $350$ visitors is a difference of two negative three-halves powers:
 
-An inverse-square law would carry exponent $-2$. The given decay is $d^{-\\frac{3}{2}}$. Quadrupling distance then cuts footfall by $4^{-\\frac{3}{2}}=\\frac{1}{8}$, whereas inverse-square decay would cut it by $\\frac{1}{16}$, so the statement is False.`,
-      `**C.** → True
+$$
+4^{\\frac{3}{2}}=8
+$$
+
+$$
+16^{\\frac{3}{2}}=64
+$$
+
+$$
+\\frac{A}{8}-\\frac{A}{64}=350
+$$
+
+$$
+\\frac{7A}{64}=350
+$$
+
+$$
+7A=22400
+$$
+
+$$
+A=3200
+$$
 
 The recovered law is $f(d)=3200 d^{-\\frac{3}{2}}$. At nine kilometres:
 
 $$
-9^{\\frac{3}{2}}=3^{3}=27
+9^{\\frac{3}{2}}=27
 $$
 
 $$
-f(9)=\\frac{3200}{27}\\approx 118.5
+f(9)=\\frac{3200}{27}
 $$
 
-That reading still clears the $100$-visitor core threshold, so the statement is True.`,
+$$
+\\frac{3200}{27}\\approx 118.5
+$$
+
+$$
+118.5>100
+$$
+
+The zone still supplies about $118.5$ visitors, already above $100$, so the statement is True.`,
+      `**B.** → False
+
+The recovered law is $f(d)=3200 d^{-\\frac{3}{2}}$. An inverse-square law would carry exponent $-2$:
+
+$$
+-\\frac{3}{2}\\neq -2
+$$
+
+Quadrupling distance then cuts footfall by
+
+$$
+4^{-\\frac{3}{2}}=\\frac{1}{8}
+$$
+
+whereas inverse-square decay would cut it by $\\frac{1}{16}$. The given exponent is three halves, not two, so the statement is False.`,
+      `**C.** → True
+
+The recovered law is $f(d)=3200 d^{-\\frac{3}{2}}$. The drop from four kilometres to sixteen kilometres is a difference of two levels:
+
+$$
+f(4)=\\frac{3200}{8}
+$$
+
+$$
+\\frac{3200}{8}=400
+$$
+
+$$
+f(16)=\\frac{3200}{64}
+$$
+
+$$
+\\frac{3200}{64}=50
+$$
+
+$$
+f(4)-f(16)=400-50
+$$
+
+$$
+400-50=350
+$$
+
+$$
+350>50
+$$
+
+The drop of $350$ already exceeds the remaining footfall of $50$ at sixteen kilometres, so the statement is True.`,
       `**D.** → True
 
-Core catchment ends where $f(d)=100$:
+The recovered law is $f(d)=3200 d^{-\\frac{3}{2}}$. Core catchment ends where footfall hits $100$:
 
 $$
 3200 d^{-\\frac{3}{2}}=100
@@ -7893,18 +9531,66 @@ $$
 d^{\\frac{3}{2}}=32
 $$
 
-Now $10^{\\frac{3}{2}}\\approx 31.62<32$, so the boundary lies past $10$ km, while $11^{\\frac{3}{2}}\\approx 36.48>32$, so it lies before $11$ km. Core catchment already ends before eleven kilometres, so the statement is True.`,
+$$
+d=32^{\\frac{2}{3}}
+$$
+
+$$
+32^{\\frac{2}{3}}=8\\cdot 2^{\\frac{1}{3}}
+$$
+
+$$
+2^{\\frac{1}{3}}\\approx 1.260
+$$
+
+$$
+d\\approx 10.08
+$$
+
+$$
+10.08<11
+$$
+
+The boundary sits near $10.08$ kilometres, already before $11$, so the statement is True.`,
       `**E.** → False
 
-The extra-kilometre cut is the magnitude of the derivative of $f(d)=3200 d^{-\\frac{3}{2}}$:
+The recovered law is $f(d)=3200 d^{-\\frac{3}{2}}$. An extra kilometre is the magnitude of the derivative:
 
 $$
 f'(d)=-4800 d^{-\\frac{5}{2}}
 $$
 
-so $\\lvert f'(d)\\rvert$ falls as $d$ rises. At four kilometres, $4^{\\frac{5}{2}}=32$ and $\\lvert f'(4)\\rvert=150$. At sixteen, $16^{\\frac{5}{2}}=1024$ and $\\lvert f'(16)\\rvert\\approx 4.69$. An extra kilometre cuts more visitors near the park than far from it, so the statement is False.`,
+$$
+\\lvert f'(4)\\rvert=\\frac{4800}{4^{\\frac{5}{2}}}
+$$
+
+$$
+4^{\\frac{5}{2}}=32
+$$
+
+$$
+\\lvert f'(4)\\rvert=150
+$$
+
+$$
+\\lvert f'(16)\\rvert=\\frac{4800}{16^{\\frac{5}{2}}}
+$$
+
+$$
+16^{\\frac{5}{2}}=1024
+$$
+
+$$
+\\lvert f'(16)\\rvert\\approx 4.69
+$$
+
+$$
+4.69<150
+$$
+
+An extra kilometre cuts more visitors near the park than far from it, so the statement is False.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 56,
     solution_overview: `Footfall follows $f(d)=A d^{-1.5}$ visitors from a zone $d>0$ kilometres away. A zone at $4$ km supplies $350$ more visitors than one at $16$ km, and core catchment means at least $100$ visitors a week.
 
@@ -7930,19 +9616,19 @@ $$f(d)=3200 d^{-1.5} \\tag{2}$$
 
 **1.** Zone levels:
 
-$$f(4)=400 \\qquad f(16)=50 \\qquad f(9)=\\frac{3200}{27}\\approx 118.5$$
+$$f(4)=400 \\qquad f(9)=\\frac{3200}{27}\\approx 118.5 \\qquad f(16)=50$$
 
-**2.** Core-catchment boundary:
+**2.** Drop versus remaining:
 
-$$3200 d^{-1.5}=100 \\Rightarrow d=32^{\\frac{2}{3}}\\approx 10.08$$
+$$f(4)-f(16)=350>50$$
 
-**3.** Scale and slope:
+**3.** Core-catchment boundary:
 
-$$\\frac{f(4d)}{f(d)}=\\frac{1}{8}$$
+$$3200 d^{-1.5}=100 \\Rightarrow d=32^{\\frac{2}{3}}\\approx 10.08<11$$
 
-The slope magnitude $\\lvert f'(d)\\rvert$ falls as $d$ rises.
+**4.** Slope magnitude falls as $d$ rises. The exponent is $-\\frac{3}{2}$, not $-2$.
 
-**Answer.** $A=3200$ | $f(4)=400$ | $f(9)\\approx 118.5$ | core out to $d\\approx 10.08$ km`,
+**Answer.** $A=3200$ | $f(4)=400$ | $f(9)\\approx 118.5$ | $f(16)=50$ | core out to $d\\approx 10.08$ km`,
   },
   {
     id: `math-8-57`,
@@ -7950,69 +9636,147 @@ The slope magnitude $\\lvert f'(d)\\rvert$ falls as $d$ rises.
     title: `Rooftop Solar Output Across Two Installed Arrays`,
     context: `Daily output from a rooftop solar installation follows $y(a)=A a^{r}$ kilowatt-hours, where $a>0$ is the installed panel area in square metres. Two arrays are in service: a $100$ m² array delivers $240$ kWh a day, and a $225$ m² array delivers $360$ kWh. A proposal would expand the second array to $450$ m². Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Output grows more slowly than the installed area.`,
+      `Output per square metre falls from $100$ m² to $225$ m² by more than $0.5$ kWh.`,
       `Expanding the $225$ m² array to $450$ m² would push output above $520$ kWh.`,
-      `Output per square metre falls as the array grows.`,
-      `To double the $240$ kWh output, the $100$ m² array must more than double in area.`,
       `A $400$ m² array already delivers more than $470$ kWh.`,
+      `To double the $240$ kWh output, the $100$ m² array must more than double in area.`,
+      `Two $100$ m² arrays together already beat one $400$ m² array.`,
     ],
-    answer_key: [true, false, true, true, true],
+    answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The two arrays give $r=\\frac{1}{2}$, which is smaller than $1$. Doubling area therefore multiplies output by $\\sqrt{2}\\approx 1.41$, not by $2$, so output grows more slowly than the installed area, so the statement is True.`,
+The two arrays give the ratio
+
+$$
+\\left(\\frac{225}{100}\\right)^{r}=\\frac{360}{240}
+$$
+
+$$
+2.25^{r}=1.5
+$$
+
+$$
+2.25^{\\frac{1}{2}}=1.5
+$$
+
+so $r=\\frac{1}{2}$. Then $A\\cdot 10=240$ pins $A=24$, and the recovered law is $y(a)=24\\sqrt{a}$. Output per square metre is
+
+$$
+\\frac{y(100)}{100}=\\frac{240}{100}
+$$
+
+$$
+\\frac{240}{100}=2.4
+$$
+
+$$
+\\frac{y(225)}{225}=\\frac{360}{225}
+$$
+
+$$
+\\frac{360}{225}=1.6
+$$
+
+$$
+2.4-1.6=0.8
+$$
+
+$$
+0.8>0.5
+$$
+
+The average falls by $0.8$ kWh per square metre, already more than $0.5$, so the statement is True.`,
       `**B.** → False
 
-Doubling $225$ square metres to $450$ multiplies output by $\\sqrt{2}$:
+The recovered law is $y(a)=24\\sqrt{a}$. Doubling $225$ square metres to $450$ multiplies output by $\\sqrt{2}$:
 
 $$
-y(450)=360\\sqrt{2}
-$$
-
-$$
-\\sqrt{2}\\approx 1.4142
+y(450)=24\\sqrt{450}
 $$
 
 $$
-y(450)\\approx 509.1
+24\\sqrt{450}=360\\sqrt{2}
 $$
 
-That is under $520$ kWh, so the statement is False.`,
+$$
+360\\sqrt{2}\\approx 509.1
+$$
+
+$$
+509.1<520
+$$
+
+The proposal lands near $509.1$ kWh, which is not above $520$, so the statement is False.`,
       `**C.** → True
 
-Output per square metre is the recovered law divided by area:
+The recovered law is $y(a)=24\\sqrt{a}$. At four hundred square metres:
 
 $$
-\\frac{y(a)}{a}=24 a^{-\\frac{1}{2}}
+\\sqrt{400}=20
 $$
 
-The leftover exponent is negative, so the average falls as the array grows, so the statement is True.`,
+$$
+y(400)=24\\cdot 20
+$$
+
+$$
+24\\cdot 20=480
+$$
+
+$$
+480>470
+$$
+
+The array delivers $480$ kWh, already more than $470$, so the statement is True.`,
       `**D.** → True
 
-Doubling the recorded $240$ kWh on $y(a)=24 a^{\\frac{1}{2}}$ means
+The recovered law is $y(a)=24\\sqrt{a}$. Doubling the recorded $240$ kWh means
 
 $$
-24 a^{\\frac{1}{2}}=480
+24\\sqrt{a}=480
 $$
 
 $$
-a^{\\frac{1}{2}}=20
+\\sqrt{a}=20
 $$
 
 $$
 a=400
 $$
 
-The original array is $100$ square metres, so area must quadruple. Because $r=\\frac{1}{2}<1$, any doubling of output requires more than a doubling of area, so the statement is True.`,
-      `**E.** → True
-
-At four hundred square metres the square root is $20$, so output is
-
 $$
-y(400)=24\\cdot 20=480
+\\frac{400}{100}=4
 $$
 
-Four hundred and eighty already clears $470$ kWh, so the statement is True.`,
+$$
+4>2
+$$
+
+Area must quadruple, which is more than a doubling, so the statement is True.`,
+      `**E.** → False
+
+The recovered law is $y(a)=24\\sqrt{a}$. Two separate $100$ m² arrays add
+
+$$
+2y(100)=2\\cdot 240
+$$
+
+$$
+2\\cdot 240=480
+$$
+
+One $400$ m² array delivers
+
+$$
+y(400)=480
+$$
+
+$$
+480=480
+$$
+
+The pair matches the single larger array; it does not beat it, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 57,
@@ -8040,21 +9804,21 @@ $$y(a)=24\\sqrt{a} \\tag{2}$$
 
 **1.** Because $1.5=2.25^{\\frac{1}{2}}$,
 
-$$r=\\frac{1}{2} \\qquad A=24$$
+$$r=\\frac{1}{2} \\qquad A=24 \\qquad y(a)=24\\sqrt{a}$$
 
-**2.** The proposal:
+**2.** Named outputs:
 
-$$y(450)=24\\sqrt{450}\\approx 509.1<520$$
+$$y(400)=480 \\qquad y(450)=360\\sqrt{2}\\approx 509.1<520$$
 
 **3.** Average product:
 
-$$\\frac{y(a)}{a}=24 a^{-\\frac{1}{2}} \\qquad \\frac{y(100)}{100}=2.4$$
+$$\\frac{y(100)}{100}=2.4 \\qquad \\frac{y(225)}{225}=1.6 \\qquad 2.4-1.6=0.8>0.5$$
 
-**4.** Doubling the $240$ kWh output:
+**4.** Doubling $240$ kWh needs $a=400$. Two $100$ m² arrays:
 
-$$a=400$$
+$$2y(100)=480=y(400)$$
 
-**Answer.** $r=\\frac{1}{2}$ | $A=24$ | $y(a)=24\\sqrt{a}$ | $y(450)\\approx 509$ | double output at $a=400$`,
+**Answer.** $r=\\frac{1}{2}$ | $A=24$ | $y(400)=480$ | $y(450)\\approx 509.1$ | AP drop $0.8$`,
   },
   {
     id: `math-8-58`,
@@ -8062,33 +9826,62 @@ $$a=400$$
     title: `Battery Cell Costs Down a Learning Curve`,
     context: `Unit cost for battery cells follows $c(N)=A N^{b}$ euros, where $N>0$ is cumulative output in thousands of cells. Two milestones are recorded: at $100$ thousand cells the unit cost was $80$, and at $400$ thousand it was $40$. Cumulative spend is unit cost multiplied by volume. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Doubling cumulative volume halves the unit cost.`,
-      `Unit cost falls as volume grows, but cumulative spend still rises.`,
+      `Doubling cumulative volume from $100$ to $200$ halves the unit cost.`,
       `At $1600$ thousand cells the unit cost is already below $25$ euros.`,
-      `If production continues, unit cost eventually becomes negative.`,
       `At $25$ thousand cells the unit cost is still above $150$ euros.`,
+      `Cumulative spend at $400$ thousand already exceeds twice the spend at $100$ thousand.`,
+      `Quadrupling from $100$ to $400$ thousand cells cuts unit cost by more than $35$ euros.`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-The milestones give $b=-\\frac{1}{2}$. Doubling volume is then the scale
+The two milestones give the ratio
 
 $$
-2^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{2}}\\approx 0.707
+\\left(\\frac{400}{100}\\right)^{b}=\\frac{40}{80}
 $$
 
-not $\\frac{1}{2}$. Quadrupling would halve the unit cost, but a single doubling does not, so the statement is False.`,
+$$
+4^{b}=\\frac{1}{2}
+$$
+
+$$
+4^{-\\frac{1}{2}}=\\frac{1}{2}
+$$
+
+so $b=-\\frac{1}{2}$. Then $A\\cdot 100^{-\\frac{1}{2}}=80$ pins $A=800$, and the recovered law is $c(N)=800 N^{-\\frac{1}{2}}$. Doubling $100$ thousand cells lands at $200$:
+
+$$
+c(200)=\\frac{800}{\\sqrt{200}}
+$$
+
+$$
+\\sqrt{200}=10\\sqrt{2}
+$$
+
+$$
+c(200)=\\frac{80}{\\sqrt{2}}
+$$
+
+$$
+\\frac{80}{\\sqrt{2}}=40\\sqrt{2}
+$$
+
+$$
+40\\sqrt{2}\\approx 56.57
+$$
+
+$$
+\\frac{80}{2}=40
+$$
+
+$$
+56.57\\neq 40
+$$
+
+A single doubling multiplies cost by $\\frac{1}{\\sqrt{2}}$, not by $\\frac{1}{2}$. The new cost is about $56.57$ euros, not $40$, so the statement is False.`,
       `**B.** → True
-
-Cumulative spend multiplies unit cost by volume:
-
-$$
-S(N)=N\\cdot 800 N^{-\\frac{1}{2}}=800 N^{\\frac{1}{2}}
-$$
-
-The square-root law is strictly increasing for $N>0$, even while unit cost $800 N^{-\\frac{1}{2}}$ falls. Unit cost falls as volume grows, but cumulative spend still rises, so the statement is True.`,
-      `**C.** → True
 
 The recovered law is $c(N)=800 N^{-\\frac{1}{2}}$. At $1600$ thousand cells:
 
@@ -8097,22 +9890,99 @@ $$
 $$
 
 $$
-c(1600)=\\frac{800}{40}=20
+c(1600)=\\frac{800}{40}
 $$
 
-Twenty is already below $25$, so the statement is True.`,
+$$
+\\frac{800}{40}=20
+$$
+
+$$
+20<25
+$$
+
+Unit cost is $20$ euros, already below $25$, so the statement is True.`,
+      `**C.** → True
+
+The recovered law is $c(N)=800 N^{-\\frac{1}{2}}$. At $25$ thousand cells:
+
+$$
+\\sqrt{25}=5
+$$
+
+$$
+c(25)=\\frac{800}{5}
+$$
+
+$$
+\\frac{800}{5}=160
+$$
+
+$$
+160>150
+$$
+
+Unit cost is $160$ euros, still above $150$, so the statement is True.`,
       `**D.** → False
 
-A negative-exponent power stays positive for every $N>0$. With $c(N)=\\frac{800}{\\sqrt{N}}$ the cost approaches $0$ from above but never crosses it. Unit cost does not become negative, so the statement is False.`,
+Cumulative spend is unit cost times volume:
+
+$$
+S(N)=N\\cdot 800 N^{-\\frac{1}{2}}
+$$
+
+$$
+S(N)=800 N^{\\frac{1}{2}}
+$$
+
+At the two logged milestones:
+
+$$
+S(100)=800\\cdot 10
+$$
+
+$$
+800\\cdot 10=8000
+$$
+
+$$
+S(400)=800\\cdot 20
+$$
+
+$$
+800\\cdot 20=16000
+$$
+
+$$
+2\\cdot S(100)=16000
+$$
+
+$$
+16000=16000
+$$
+
+Spend at $400$ thousand equals twice the spend at $100$ thousand; it does not exceed twice, so the statement is False.`,
       `**E.** → True
 
-At $25$ thousand cells the square root is $5$, so unit cost is
+The recovered law is $c(N)=800 N^{-\\frac{1}{2}}$. Quadrupling from $100$ to $400$ thousand cells cuts unit cost by
 
 $$
-c(25)=\\frac{800}{5}=160
+c(100)=80
 $$
 
-One hundred and sixty is still above $150$, so the statement is True.`,
+$$
+c(400)=40
+$$
+
+$$
+80-40=40
+$$
+
+$$
+40>35
+$$
+
+The cut is $40$ euros, already more than $35$, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 58,
@@ -8142,19 +10012,15 @@ $$S(N)=800 N^{\\frac{1}{2}} \\tag{2}$$
 
 $$b=-\\frac{1}{2} \\qquad A=800$$
 
-**2.** Named cost and spend:
+**2.** Named costs:
 
-$$c(1600)=20 \\qquad S(100)=8000$$
+$$c(25)=160 \\qquad c(200)=40\\sqrt{2}\\approx 56.57 \\qquad c(1600)=20$$
 
-**3.** Scale:
+**3.** Quadrupling cut and spend:
 
-$$4^{-\\frac{1}{2}}=\\frac{1}{2} \\qquad 2^{-\\frac{1}{2}}\\approx 0.707$$
+$$c(100)-c(400)=40>35 \\qquad S(100)=8000 \\qquad S(400)=16000=2S(100)$$
 
-**4.** Sign:
-
-$c(N)>0$ for every $N>0$.
-
-**Answer.** $b=-\\frac{1}{2}$ | $A=800$ | $c(1600)=20$ | $S(100)=8000$ | $S(N)=800\\sqrt{N}$`,
+**Answer.** $b=-\\frac{1}{2}$ | $A=800$ | $c(1600)=20$ | $c(25)=160$ | $S(400)=2S(100)$`,
   },
   {
     id: `math-8-59`,
@@ -8360,40 +10226,42 @@ $R'(p)<0$ for every $p>0$.
     title: `Weld Strength Recovered From Two Spot Checks`,
     context: `A production weld's tensile strength follows $S(p)=A p^{k}$ newtons, where $p>0$ is the welding current in amperes. Neither constant is on the calibration sheet: the sheet only records that a $4$ A setting produced $40$ N of strength and a $9$ A setting produced $135$ N. The line rejects any weld below $400$ N. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The exponent is larger than one, so strength outruns current.`,
       `At $16$ A the weld is already stronger than $300$ N.`,
-      `If the current keeps growing, strength grows without bound.`,
       `An extra ampere adds more strength at $4$ A than it does at $9$ A.`,
+      `The extra strength from $4$ A to $9$ A already exceeds the $4$ A reading.`,
       `The smallest current that clears the $400$ N reject line is below $18$ A.`,
+      `Doubling current from $4$ A to $8$ A multiplies strength by more than $2.5$.`,
     ],
-    answer_key: [true, true, true, false, false],
+    answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The exponent is $k=\\frac{3}{2}$. An exponent larger than one means strength outruns current: each extra ampere adds more than the ampere before it. Three halves is above one, so the statement is True.`,
-      `**B.** → True
-
-Strength is $S(p)=5p^{\\frac{3}{2}}$. At sixteen amperes:
+The recovered law is $S(p)=5p^{\\frac{3}{2}}$. At sixteen amperes:
 
 $$
 16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}
 $$
 
 $$
-(2^{4})^{\\frac{3}{2}}=2^{6}=64
+(2^{4})^{\\frac{3}{2}}=2^{6}
 $$
 
 $$
-S(16)=5\\cdot 64=320
+2^{6}=64
 $$
 
-Three hundred and twenty sits above $300$ N, so the statement is True.`,
-      `**C.** → True
+$$
+S(16)=5\\cdot 64
+$$
 
-The law is $5p^{\\frac{3}{2}}$: a positive multiple of a positive power of current. As current grows, that product has no ceiling, so the statement is True.`,
-      `**D.** → False
+$$
+5\\cdot 64=320
+$$
 
-An extra ampere is the derivative of $S(p)=5p^{\\frac{3}{2}}$:
+Three hundred and twenty already sits above $300$ N, so the statement is True.`,
+      `**B.** → False
+
+Strength is $S(p)=5p^{\\frac{3}{2}}$. An extra ampere is the slope:
 
 $$
 S'(p)=5\\cdot\\frac{3}{2}p^{\\frac{1}{2}}
@@ -8404,33 +10272,87 @@ S'(p)=\\frac{15}{2}p^{\\frac{1}{2}}
 $$
 
 $$
-S'(4)=\\frac{15}{2}\\cdot 2=15
+S'(4)=\\frac{15}{2}\\cdot 2
 $$
 
 $$
-S'(9)=\\frac{15}{2}\\cdot 3=\\frac{45}{2}
+S'(4)=15
 $$
 
-The leftover exponent $\\frac{1}{2}$ is positive, so the slope itself rises with current. Because $15<\\frac{45}{2}$, an extra ampere adds less at $4$ A than at $9$ A, so the statement is False.`,
-      `**E.** → False
+$$
+S'(9)=\\frac{15}{2}\\cdot 3
+$$
 
-The reject line is $5p^{\\frac{3}{2}}=400$, so $p=80^{\\frac{2}{3}}$. Four cubed is $64$, so the cube root of $80$ is a little over $4.3$ and the threshold is a little over $18$ A. Directly at $18$ A:
+$$
+S'(9)=\\frac{45}{2}
+$$
+
+Because $15<\\frac{45}{2}$, an extra ampere adds less at $4$ A than at $9$ A, so the statement is False.`,
+      `**C.** → True
+
+Strength is $S(p)=5p^{\\frac{3}{2}}$. The extra from $4$ A to $9$ A is
+
+$$
+S(9)-S(4)=135-40
+$$
+
+$$
+135-40=95
+$$
+
+The $4$ A reading is $40$ N, and $95>40$, so that extra already exceeds the $4$ A reading, so the statement is True.`,
+      `**D.** → False
+
+Strength is $S(p)=5p^{\\frac{3}{2}}$. At eighteen amperes:
 
 $$
 S(18)=5\\cdot 18^{\\frac{3}{2}}
 $$
 
 $$
-18^{\\frac{3}{2}}=18\\cdot\\sqrt{18}=54\\sqrt{2}
+18^{\\frac{3}{2}}=18\\cdot\\sqrt{18}
 $$
 
 $$
-S(18)=270\\sqrt{2}\\approx 381.8
+\\sqrt{18}=3\\sqrt{2}
 $$
 
-which is still below $400$ N. The smallest clearing current is about $18.57$ A, not below $18$ A, so the statement is False.`,
+$$
+18^{\\frac{3}{2}}=54\\sqrt{2}
+$$
+
+$$
+S(18)=5\\cdot 54\\sqrt{2}
+$$
+
+$$
+S(18)=270\\sqrt{2}
+$$
+
+$$
+270\\sqrt{2}\\approx 381.8
+$$
+
+About $381.8$ N still sits below the $400$ N reject line, so the smallest clearing current is not below $18$ A, so the statement is False.`,
+      `**E.** → True
+
+Strength is $S(p)=5p^{\\frac{3}{2}}$. Doubling current from $4$ A to $8$ A multiplies strength by
+
+$$
+\\frac{S(8)}{S(4)}=2^{\\frac{3}{2}}
+$$
+
+$$
+2^{\\frac{3}{2}}=2\\sqrt{2}
+$$
+
+$$
+2\\sqrt{2}\\approx 2.83
+$$
+
+That factor already sits above $2.5$, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 61,
     solution_overview: `Weld strength is $S(p)=Ap^{k}$ newtons, with spot checks $S(4)=40$ and $S(9)=135$, and welds below $400$ N are rejected.
 
@@ -8454,13 +10376,13 @@ $$S(p)=5p^{\\frac{3}{2}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** Because $k>1$, strength outruns current, an extra ampere adds more at $9$ A than at $4$ A, and $S(p)\\to\\infty$ as $p$ grows.
+**1.** $S(16)=320>300$. The extra from $4$ A to $9$ A is $95$, which already exceeds $S(4)=40$.
 
-**2.** Levels and the reject threshold:
+**2.** $S'(4)=15<S'(9)=\\frac{45}{2}$, so an extra ampere adds less at $4$ A. Doubling current multiplies strength by $2\\sqrt{2}\\approx 2.83>2.5$.
 
-$$S(16)=320 \\qquad 80^{\\frac{2}{3}}\\approx 18.57$$
+**3.** $S(18)=270\\sqrt{2}\\approx 381.8<400$, so the reject line is not yet cleared at $18$ A.
 
-**Answer.** $A=5$ | $k=\\frac{3}{2}$ | $S(16)=320$ N | reject threshold $\\approx 18.57$ A`,
+**Answer.** $A=5$ | $k=\\frac{3}{2}$ | $S(16)=320$ N | $S(18)\\approx 381.8$ N`,
   },
   {
     id: `math-8-62`,
@@ -8468,20 +10390,67 @@ $$S(16)=320 \\qquad 80^{\\frac{2}{3}}\\approx 18.57$$
     title: `Mooring Holding Power Across Kilograms and Tonnes`,
     context: `A harbour buoy's holding power follows $H(m)=A m^{\\frac{2}{3}}$ kilonewtons when mass $m>0$ is measured in kilograms. A trial buoy of $8$ kg held exactly $24$ kN. The harbour authority prefers masses in tonnes ($1$ tonne $=1000$ kg) and writes the same physical law as $H(t)=B t^{\\frac{2}{3}}$ with $t$ in tonnes. A storm protocol demands at least $150$ kN of holding power. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Switching the mass unit from kilograms to tonnes leaves the exponent unchanged.`,
       `A $125$ kg buoy already holds more than $140$ kN.`,
-      `Doubling buoy mass doubles holding power.`,
-      `The mass needed for a given holding power is itself a power of that holding power.`,
+      `Doubling buoy mass from $8$ kg to $16$ kg doubles holding power.`,
       `Reaching $150$ kN takes more than $1$ tonne.`,
+      `Switching mass from kilograms to tonnes makes the new coefficient larger than $500$.`,
+      `Two $8$ kg buoys together already hold more than one $64$ kg buoy.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-A change of mass unit is the substitution $m=1000t$:
+The recovered law is $H(m)=6m^{\\frac{2}{3}}$. At $125$ kg:
 
 $$
-H=A(1000t)^{\\frac{2}{3}}
+125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}
+$$
+
+$$
+(5^{3})^{\\frac{2}{3}}=5^{2}
+$$
+
+$$
+5^{2}=25
+$$
+
+$$
+H(125)=6\\cdot 25
+$$
+
+$$
+6\\cdot 25=150
+$$
+
+One hundred and fifty already sits above $140$ kN, so the statement is True.`,
+      `**B.** → False
+
+Holding power is $H(m)=6m^{\\frac{2}{3}}$. Doubling mass from $8$ kg to $16$ kg multiplies holding power by
+
+$$
+\\frac{H(16)}{H(8)}=2^{\\frac{2}{3}}
+$$
+
+$$
+2^{\\frac{2}{3}}\\approx 1.587
+$$
+
+That factor is not $2$. An exact doubling would need exponent $1$, so the statement is False.`,
+      `**C.** → False
+
+Holding power is $H(m)=6m^{\\frac{2}{3}}$. The $150$ kN storm floor is already met at $125$ kg, and
+
+$$
+\\frac{125}{1000}=0.125
+$$
+
+that mass is $0.125$ tonnes, which is not more than $1$ tonne, so the statement is False.`,
+      `**D.** → True
+
+The kilogram law is $H(m)=6m^{\\frac{2}{3}}$. Switching to tonnes is the substitution $m=1000t$:
+
+$$
+H=6(1000t)^{\\frac{2}{3}}
 $$
 
 $$
@@ -8489,64 +10458,63 @@ $$
 $$
 
 $$
-H=A\\cdot 1000^{\\frac{2}{3}}t^{\\frac{2}{3}}
-$$
-
-The conversion is absorbed into the new coefficient $B=A\\cdot 1000^{\\frac{2}{3}}$. The power of mass is still $\\frac{2}{3}$, so the statement is True.`,
-      `**B.** → True
-
-The kilogram law is $H(m)=6m^{\\frac{2}{3}}$. At $125$ kg:
-
-$$
-125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}=5^{2}=25
+1000^{\\frac{2}{3}}=(10^{3})^{\\frac{2}{3}}
 $$
 
 $$
-H(125)=6\\cdot 25=150
-$$
-
-One hundred and fifty sits above $140$ kN, so the statement is True.`,
-      `**C.** → False
-
-Doubling mass multiplies holding power by $2^{\\frac{2}{3}}$:
-
-$$
-\\frac{H(2m)}{H(m)}=2^{\\frac{2}{3}}\\approx 1.587
-$$
-
-An exact doubling would need exponent $1$, which would give the factor $2$. Holding power rises, but not in lockstep with mass, so the statement is False.`,
-      `**D.** → True
-
-A power with a nonzero exponent inverts to another power. From $H=6m^{\\frac{2}{3}}$ one gets
-
-$$
-\\frac{H}{6}=m^{\\frac{2}{3}}
+(10^{3})^{\\frac{2}{3}}=10^{2}
 $$
 
 $$
-m=\\left(\\frac{H}{6}\\right)^{\\frac{3}{2}}
+10^{2}=100
 $$
 
-Mass is a three-halves power of holding power, so the statement is True.`,
+$$
+H=6\\cdot 100\\, t^{\\frac{2}{3}}
+$$
+
+$$
+H=600t^{\\frac{2}{3}}
+$$
+
+The new coefficient is $600$, which already sits above $500$, so the statement is True.`,
       `**E.** → False
 
-The storm floor in tonnes is $H(t)=600t^{\\frac{2}{3}}$:
+Holding power is $H(m)=6m^{\\frac{2}{3}}$. Two $8$ kg buoys hold
 
 $$
-600t^{\\frac{2}{3}}=150
-$$
-
-$$
-t^{\\frac{2}{3}}=\\frac{1}{4}
+2H(8)=2\\cdot 24
 $$
 
 $$
-t=\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=\\frac{1}{8}=0.125
+2\\cdot 24=48
 $$
 
-That is $125$ kg, well under one tonne. The storm mass is $0.125$ tonnes, so the statement is False.`,
+One $64$ kg buoy holds
+
+$$
+64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}
+$$
+
+$$
+(4^{3})^{\\frac{2}{3}}=4^{2}
+$$
+
+$$
+4^{2}=16
+$$
+
+$$
+H(64)=6\\cdot 16
+$$
+
+$$
+6\\cdot 16=96
+$$
+
+Forty-eight sits below ninety-six, so two $8$ kg buoys do not hold more than one $64$ kg buoy, so the statement is False.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `5/5`,
     sort_order: 62,
     solution_overview: `Holding power is $H(m)=Am^{\\frac{2}{3}}$ kilonewtons in kilograms with $H(8)=24$, the same law in tonnes is $H(t)=Bt^{\\frac{2}{3}}$, and the storm floor is $150$ kN.
 
@@ -8570,11 +10538,13 @@ $$H(t)=600t^{\\frac{2}{3}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** The storm mass in kilograms is $125$, which is $0.125$ tonnes, not $125$ tonnes.
+**1.** $H(125)=150>140$. Doubling $8$ kg to $16$ kg multiplies holding power by $2^{\\frac{2}{3}}\\approx 1.587$, not by $2$.
 
-**2.** The conversion factor is $1000^{\\frac{2}{3}}=100$, not $1000$, and doubling mass multiplies holding power by $2^{\\frac{2}{3}}\\approx 1.587$.
+**2.** The tonne-scale coefficient is $600>500$. Reaching $150$ kN takes $0.125$ tonnes, not more than $1$ tonne.
 
-**Answer.** $A=6$ | $B=600$ | storm mass $125$ kg | doubling factor $2^{\\frac{2}{3}}$`,
+**3.** Two $8$ kg buoys hold $48$ kN, while $H(64)=96$.
+
+**Answer.** $A=6$ | $B=600$ | $H(125)=150$ | $H(64)=96$ | two $8$ kg buoys $48$ kN`,
   },
   {
     id: `math-8-63`,
@@ -8582,33 +10552,24 @@ $$H(t)=600t^{\\frac{2}{3}} \\tag{2}$$
     title: `Mesh Throughput Against an Inverse-Square Floor`,
     context: `A wireless mesh's sustained throughput follows $T(d)=A d^{-2}$ megabits per second, where $d>0$ is the hop distance in metres. A bench test at $d=4$ m recorded $T=50$ Mbps. The link is rated reliable only while throughput stays at or above $8$ Mbps. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The hop distance needed for a given throughput is itself a power function of that throughput.`,
       `The farthest reliable hop distance is already under $12$ m.`,
-      `Doubling the hop distance halves the throughput.`,
+      `Doubling the hop distance from $4$ m to $8$ m halves the throughput.`,
       `A hop of $11$ m still clears the $8$ Mbps reliability floor.`,
-      `If the hops keep growing, throughput eventually becomes negative.`,
+      `The drop from $4$ m to $8$ m already exceeds remaining throughput at $8$ m.`,
+      `A hop of $5$ m still delivers more than $30$ Mbps.`,
     ],
-    answer_key: [true, true, false, false, false],
+    answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-A power with a nonzero exponent inverts to another power. From $T=\\frac{800}{d^{2}}$ one gets
-
-$$
-d^{2}=\\frac{800}{T}
-$$
-
-$$
-d=\\sqrt{800}\\, T^{-\\frac{1}{2}}
-$$
-
-Distance is a power of throughput with exponent $-\\frac{1}{2}$, so the statement is True.`,
-      `**B.** → True
-
-The $8$ Mbps floor is
+The recovered law is $T(d)=\\frac{800}{d^{2}}$. The $8$ Mbps floor is
 
 $$
 \\frac{800}{d^{2}}=8
+$$
+
+$$
+d^{2}=\\frac{800}{8}
 $$
 
 $$
@@ -8619,30 +10580,77 @@ $$
 d=10
 $$
 
-Because the exponent is negative, every longer hop falls below $8$ Mbps. Ten metres already sits under $12$ m, so the statement is True.`,
+Ten metres already sits under $12$ m, so the farthest reliable hop is under $12$ m, so the statement is True.`,
+      `**B.** → False
+
+Throughput is $T(d)=\\frac{800}{d^{2}}$. Doubling the hop from $4$ m to $8$ m multiplies throughput by
+
+$$
+\\frac{T(8)}{T(4)}=2^{-2}
+$$
+
+$$
+2^{-2}=\\frac{1}{4}
+$$
+
+The reading falls from $50$ Mbps to $12.5$ Mbps, a cut to one quarter, not to one half, so the statement is False.`,
       `**C.** → False
 
-Doubling the hop multiplies throughput by $2^{-2}$:
+Throughput is $T(d)=\\frac{800}{d^{2}}$. At $11$ m:
 
 $$
-\\frac{T(2d)}{T(d)}=2^{-2}=\\frac{1}{4}
+T(11)=\\frac{800}{121}
 $$
 
-A cut to one half would need exponent $-1$, which would give $2^{-1}=\\frac{1}{2}$. An inverse-square law quarters the reading when distance doubles, so the statement is False.`,
-      `**D.** → False
-
-At $11$ m:
-
 $$
-T(11)=\\frac{800}{121}\\approx 6.61
+\\frac{800}{121}\\approx 6.61
 $$
 
-which is already below $8$ Mbps. The $10$ m floor sits at exactly $8$ Mbps, and a longer hop can only be slower, so the statement is False.`,
-      `**E.** → False
+About $6.61$ Mbps already sits below the $8$ Mbps floor, so the statement is False.`,
+      `**D.** → True
 
-The numerator $800$ is positive, so every hop $d>0$ keeps $T>0$. As hops grow, throughput falls toward $0$ from above and never crosses it, so the statement is False.`,
+Throughput is $T(d)=\\frac{800}{d^{2}}$. At the two hops:
+
+$$
+T(4)=\\frac{800}{16}
+$$
+
+$$
+T(4)=50
+$$
+
+$$
+T(8)=\\frac{800}{64}
+$$
+
+$$
+T(8)=12.5
+$$
+
+$$
+T(4)-T(8)=50-12.5
+$$
+
+$$
+50-12.5=37.5
+$$
+
+The remaining throughput at $8$ m is $12.5$ Mbps, and $37.5>12.5$, so the drop already exceeds that remainder, so the statement is True.`,
+      `**E.** → True
+
+Throughput is $T(d)=\\frac{800}{d^{2}}$. At $5$ m:
+
+$$
+T(5)=\\frac{800}{25}
+$$
+
+$$
+\\frac{800}{25}=32
+$$
+
+Thirty-two already sits above $30$ Mbps, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 63,
     solution_overview: `Mesh throughput is $T(d)=Ad^{-2}$ megabits per second, calibrated by $T(4)=50$, and the link is reliable only while $T\\ge 8$.
 
@@ -8666,11 +10674,13 @@ $$d=\\sqrt{800}\\, T^{-\\frac{1}{2}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** The reliable radius is $10$ m, and $T(11)\\approx 6.61$ already misses the floor.
+**1.** The $8$ Mbps floor is met at $d=10$ m, already under $12$ m. $T(11)=\\frac{800}{121}\\approx 6.61$ misses the floor.
 
-**2.** Doubling a hop quarters throughput, the inverse $(2)$ is a power, and $T(d)$ stays positive for every $d>0$.
+**2.** Doubling $4$ m to $8$ m quarters throughput, from $50$ to $12.5$. The drop $37.5$ already exceeds the remaining $12.5$.
 
-**Answer.** $A=800$ | reliable radius $10$ m | doubling factor $\\frac{1}{4}$ | $T$ never negative`,
+**3.** $T(5)=32>30$.
+
+**Answer.** $A=800$ | reliable radius $10$ m | $T(8)=12.5$ | $T(5)=32$`,
   },
   {
     id: `math-8-64`,
@@ -8678,65 +10688,127 @@ $$d=\\sqrt{800}\\, T^{-\\frac{1}{2}} \\tag{2}$$
     title: `Allometric Gill Area Across Body Masses`,
     context: `A fish physiologist models gill surface area as $G(m)=A m^{\\frac{3}{4}}$ square centimetres for body mass $m>0$ grams. A $256$ g specimen has gill area $512$ cm$^{2}$. Area per gram is the derived intensity $\\frac{G(m)}{m}$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The exponent is smaller than one, so gill area grows more slowly than body mass.`,
       `A $16$ g fish already has more than $50$ cm$^{2}$ of gill.`,
-      `Gill area per gram is constant across body masses.`,
       `Doubling body mass doubles gill area.`,
       `A $64$ g fish already has more than $200$ cm$^{2}$ of gill.`,
+      `Two $16$ g fish together already have more gill area than one $64$ g fish.`,
+      `Gill area per gram falls from $16$ g to $256$ g by more than $1$.`,
     ],
-    answer_key: [true, true, false, false, false],
+    answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-The allometric exponent is already $\\frac{3}{4}$. If mass scales by $c>1$, area scales by $c^{\\frac{3}{4}}$, and $\\frac{3}{4}<1$ forces $c^{\\frac{3}{4}}<c$. Each extra gram of body adds less gill than the gram before it, so the statement is True.`,
-      `**B.** → True
-
-Gill area is $G(m)=8m^{\\frac{3}{4}}$. At sixteen grams:
+The recovered law is $G(m)=8m^{\\frac{3}{4}}$. At sixteen grams:
 
 $$
-16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}=2^{3}=8
+16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}
 $$
 
 $$
-G(16)=8\\cdot 8=64
+(2^{4})^{\\frac{3}{4}}=2^{3}
 $$
 
-Sixty-four sits above $50$ cm$^{2}$, so the statement is True.`,
+$$
+2^{3}=8
+$$
+
+$$
+G(16)=8\\cdot 8
+$$
+
+$$
+8\\cdot 8=64
+$$
+
+Sixty-four already sits above $50$ cm$^{2}$, so the statement is True.`,
+      `**B.** → False
+
+Gill area is $G(m)=8m^{\\frac{3}{4}}$. Doubling mass multiplies gill area by
+
+$$
+\\frac{G(2m)}{G(m)}=2^{\\frac{3}{4}}
+$$
+
+$$
+2^{\\frac{3}{4}}\\approx 1.682
+$$
+
+That factor is not $2$. An exact doubling would need exponent $1$, so the statement is False.`,
       `**C.** → False
 
-Area per gram subtracts $1$ from the exponent:
+Gill area is $G(m)=8m^{\\frac{3}{4}}$. At sixty-four grams:
 
 $$
-\\frac{G(m)}{m}=8m^{\\frac{3}{4}-1}
+64^{\\frac{3}{4}}=8
 $$
+
+$$
+G(64)=8\\cdot 8
+$$
+
+$$
+8\\cdot 8=64
+$$
+
+Sixty-four sits well short of $200$ cm$^{2}$, so the statement is False.`,
+      `**D.** → True
+
+Gill area is $G(m)=8m^{\\frac{3}{4}}$. Two $16$ g fish already total
+
+$$
+2G(16)=2\\cdot 64
+$$
+
+$$
+2\\cdot 64=128
+$$
+
+One $64$ g fish has $G(64)=64$. Because $128>64$, the pair already has more gill area, so the statement is True.`,
+      `**E.** → True
+
+Gill area is $G(m)=8m^{\\frac{3}{4}}$. Area per gram is
 
 $$
 \\frac{G(m)}{m}=8m^{-\\frac{1}{4}}
 $$
 
-The leftover exponent is negative, so intensity falls as mass grows. A constant intensity would need exponent $0$, so the statement is False.`,
-      `**D.** → False
-
-Doubling mass would double gill area only if the exponent were $1$. With exponent $\\frac{3}{4}$ the scale factor is
+At $16$ g:
 
 $$
-\\frac{G(2m)}{G(m)}=2^{\\frac{3}{4}}\\approx 1.682
-$$
-
-not $2$. Area rises, but not in lockstep with mass, so the statement is False.`,
-      `**E.** → False
-
-At sixty-four grams:
-
-$$
-64^{\\frac{3}{4}}=(2^{6})^{\\frac{3}{4}}=2^{\\frac{9}{2}}=16\\sqrt{2}
+\\frac{G(16)}{16}=8\\cdot 16^{-\\frac{1}{4}}
 $$
 
 $$
-G(64)=8\\cdot 16\\sqrt{2}=128\\sqrt{2}\\approx 181
+16^{\\frac{1}{4}}=2
 $$
 
-About $181$ cm$^{2}$ sits short of $200$, so the statement is False.`,
+$$
+\\frac{G(16)}{16}=\\frac{8}{2}
+$$
+
+$$
+\\frac{8}{2}=4
+$$
+
+At $256$ g:
+
+$$
+256^{\\frac{1}{4}}=4
+$$
+
+$$
+\\frac{G(256)}{256}=\\frac{8}{4}
+$$
+
+$$
+\\frac{8}{4}=2
+$$
+
+$$
+4-2=2
+$$
+
+The intensity falls by $2$, which is already more than $1$, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 64,
@@ -8762,11 +10834,13 @@ $$\\frac{G(m)}{m}=8m^{-\\frac{1}{4}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** Because $\\frac{3}{4}<1$, intensity falls with mass, and two $16$ g fish beat one $32$ g fish: $2G(16)=128>G(32)\\approx 107.63$.
+**1.** $G(16)=64>50$. Doubling mass multiplies gill area by $2^{\\frac{3}{4}}\\approx 1.682$, not by $2$.
 
-**2.** Levels: $G(16)=64$, and $216$ cm$^{2}$ occurs at $81$ g rather than at $64$ g.
+**2.** $G(64)=64$, which is not more than $200$. Two $16$ g fish already total $128>64$.
 
-**Answer.** $A=8$ | $G(16)=64$ | intensity $8m^{-\\frac{1}{4}}$ | $216$ cm$^{2}$ at $81$ g`,
+**3.** Gill area per gram falls from $4$ at $16$ g to $2$ at $256$ g, a drop of more than $1$.
+
+**Answer.** $A=8$ | $G(16)=64$ | $G(64)=64$ | intensity $4$ to $2$`,
   },
   {
     id: `math-8-65`,
@@ -8776,44 +10850,84 @@ $$\\frac{G(m)}{m}=8m^{-\\frac{1}{4}} \\tag{2}$$
     statements: [
       `Quadrupling curing time exactly doubles strength.`,
       `Strength on day $4$ is already above $8$ MPa.`,
-      `An extra day adds more strength after nine days of curing than it does after four.`,
+      `The extra strength from day $4$ to day $9$ already falls short of the day-$4$ strength.`,
       `Reaching $30$ MPa still takes under $40$ days of curing.`,
       `The recorded $5$ MPa is the strength on day $9$.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 Quadrupling time multiplies strength by $\\sqrt{4}$, and the coefficient cancels:
 
 $$
-\\frac{S(4t)}{S(t)}=\\sqrt{4}=2
+\\frac{S(4t)}{S(t)}=\\sqrt{4}
 $$
 
-The multiplier is exactly $2$ at every starting day. Quadrupling curing time doubles strength, so the statement is True.`,
+$$
+\\sqrt{4}=2
+$$
+
+The multiplier is exactly $2$ at every starting day, so the statement is True.`,
       `**B.** → True
 
-The law is $S(t)=5\\sqrt{t}$. Day $4$ is $5\\cdot 2=10$ MPa. Ten sits above $8$ MPa, and the companion $15-10=5$ recovers the logged gap, so the statement is True.`,
-      `**C.** → False
-
-An extra day is the derivative of $S(t)=5\\sqrt{t}$:
+The recorded gap recovers the law $S(t)=5\\sqrt{t}$, because
 
 $$
-S'(t)=\\frac{5}{2}t^{-\\frac{1}{2}}
+A\\sqrt{9}-A\\sqrt{4}=5
 $$
 
 $$
-S'(4)=\\frac{5}{2}\\cdot\\frac{1}{2}=\\frac{5}{4}
+A(3-2)=5
 $$
 
 $$
-S'(9)=\\frac{5}{2}\\cdot\\frac{1}{3}=\\frac{5}{6}
+A=5
 $$
 
-Because $\\frac{5}{4}>\\frac{5}{6}$, the extra day adds more after four days than after nine, so the statement is False.`,
+Day $4$ then reads
+
+$$
+S(4)=5\\cdot 2
+$$
+
+$$
+5\\cdot 2=10
+$$
+
+Ten already sits above $8$ MPa, so the statement is True.`,
+      `**C.** → True
+
+Strength is $S(t)=5\\sqrt{t}$. The two sample days read
+
+$$
+S(4)=5\\cdot\\sqrt{4}
+$$
+
+$$
+S(4)=10
+$$
+
+$$
+S(9)=5\\cdot\\sqrt{9}
+$$
+
+$$
+S(9)=15
+$$
+
+$$
+S(9)-S(4)=15-10
+$$
+
+$$
+15-10=5
+$$
+
+Five already sits short of the day-$4$ strength of $10$ MPa, so the statement is True.`,
       `**D.** → True
 
-Reaching $30$ MPa:
+Strength is $S(t)=5\\sqrt{t}$. Reaching $30$ MPa:
 
 $$
 5\\sqrt{t}=30
@@ -8827,12 +10941,22 @@ $$
 t=36
 $$
 
-Forward check: $5\\cdot 6=30$. Thirty-six days already sit under $40$, so the statement is True.`,
+Thirty-six days already sit under $40$, so the statement is True.`,
       `**E.** → False
 
-Day $9$ carries $5\\cdot 3=15$ MPa. The logged figure is the difference $15-10=5$, a gap, not the day-$9$ level, so the statement is False.`,
+Strength is $S(t)=5\\sqrt{t}$. Day $9$ carries
+
+$$
+S(9)=5\\cdot 3
+$$
+
+$$
+5\\cdot 3=15
+$$
+
+The logged figure is the difference $15-10=5$, a gap, not the day-$9$ level, so the statement is False.`,
     ],
-    difficulty_level: `2/5`,
+    difficulty_level: `3/5`,
     sort_order: 65,
     solution_overview: `Curing strength is $S(t)=A\\sqrt{t}$ megapascals, and the only surviving record is the $5$ MPa rise between day $4$ and day $9$.
 
@@ -8858,7 +10982,9 @@ $$\\frac{S(ct)}{S(t)}=\\sqrt{c} \\tag{2}$$
 
 **1.** The record gives $A=5$, so $S(4)=10$ and $S(9)=15$. The $5$ MPa is the gap, not a level.
 
-**2.** Quadrupling time doubles strength, $30$ MPa occurs on day $36$, and $S'(t)$ falls, so an extra day adds more at day $4$ than at day $9$.
+**2.** Quadrupling time doubles strength. The extra from day $4$ to day $9$ is $5$, which falls short of $S(4)=10$.
+
+**3.** $30$ MPa occurs on day $36$, already under $40$ days.
 
 **Answer.** $A=5$ | $S(4)=10$ | $S(9)=15$ | $30$ MPa on day $36$`,
   },
@@ -9076,55 +11202,115 @@ $$M(h)=0.5h^{3} \\tag{2}$$
     title: `Cooling Fan Noise Against a Night-Time Cap`,
     context: `Acoustic intensity from a cooling fan follows $I(d)=A d^{-2}$ watts per square metre, where $d>0$ is distance from the hub in metres. A meter reading at $2$ metres records $0.72$ W/m$^{2}$. Night operations are capped at $0.08$ W/m$^{2}$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Doubling the distance cuts intensity to one quarter.`,
+      `Doubling the distance from $2$ m to $4$ m cuts intensity to one quarter.`,
       `At $4$ metres the intensity is already under $0.2$ W/m$^{2}$.`,
       `An extra metre cuts more intensity at $2$ m than it does at $6$ m.`,
       `At $6$ metres the intensity is still above the $0.08$ W/m$^{2}$ night cap.`,
-      `The night cap is never met at any finite distance.`,
+      `The distance that meets the $0.08$ cap is already under $7$ m.`,
     ],
-    answer_key: [true, true, true, false, false],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Doubling distance multiplies intensity by $2^{-2}$:
+The meter reading recovers $I(d)=\\frac{2.88}{d^{2}}$, because
 
 $$
-\\frac{I(2d)}{I(d)}=2^{-2}=\\frac{1}{4}
+\\frac{A}{2^{2}}=0.72
 $$
 
-The factor is one quarter at every starting distance. Doubling the distance cuts intensity to one quarter, so the statement is True.`,
+$$
+A=2.88
+$$
+
+Doubling distance from $2$ m to $4$ m then multiplies intensity by
+
+$$
+\\frac{I(4)}{I(2)}=2^{-2}
+$$
+
+$$
+2^{-2}=\\frac{1}{4}
+$$
+
+The factor is one quarter at every starting distance, so the statement is True.`,
       `**B.** → True
 
 Intensity is $I(d)=\\frac{2.88}{d^{2}}$. At four metres:
 
 $$
-I(4)=\\frac{2.88}{16}=0.18
+I(4)=\\frac{2.88}{16}
+$$
+
+$$
+\\frac{2.88}{16}=0.18
 $$
 
 That already sits under $0.2$ W/m$^{2}$, so the statement is True.`,
       `**C.** → True
 
-An extra metre is the derivative of $I(d)=\\frac{2.88}{d^{2}}$:
+Intensity is $I(d)=\\frac{2.88}{d^{2}}$. An extra metre is the slope:
 
 $$
 I'(d)=-5.76\\, d^{-3}
 $$
 
-The drop per metre is $\\frac{5.76}{d^{3}}$. At $2$ m that is $\\frac{5.76}{8}=0.72$; at $6$ m it is $\\frac{5.76}{216}\\approx 0.0267$. The drop is steeper near the hub, so the statement is True.`,
-      `**D.** → False
-
-At six metres:
+The drop per metre is $\\frac{5.76}{d^{3}}$. At $2$ m:
 
 $$
-I(6)=\\frac{2.88}{36}=0.08
+\\frac{5.76}{2^{3}}=\\frac{5.76}{8}
+$$
+
+$$
+\\frac{5.76}{8}=0.72
+$$
+
+At $6$ m:
+
+$$
+\\frac{5.76}{6^{3}}=\\frac{5.76}{216}
+$$
+
+$$
+\\frac{5.76}{216}\\approx 0.0267
+$$
+
+The drop is steeper near the hub, so the statement is True.`,
+      `**D.** → False
+
+Intensity is $I(d)=\\frac{2.88}{d^{2}}$. At six metres:
+
+$$
+I(6)=\\frac{2.88}{36}
+$$
+
+$$
+\\frac{2.88}{36}=0.08
 $$
 
 Six metres is the night-cap boundary. The word above excludes a boundary value, so the statement is False.`,
-      `**E.** → False
+      `**E.** → True
 
-Setting $I=0.08$ gives $d^{2}=36$, so $d=6$. Intensity falls from $0.72$ toward $0$ and therefore crosses $0.08$ at a finite distance. The cap is met at $6$ m, so the statement is False.`,
+Intensity is $I(d)=\\frac{2.88}{d^{2}}$. The $0.08$ cap is
+
+$$
+\\frac{2.88}{d^{2}}=0.08
+$$
+
+$$
+d^{2}=\\frac{2.88}{0.08}
+$$
+
+$$
+d^{2}=36
+$$
+
+$$
+d=6
+$$
+
+Six metres already sits under $7$ m, so the statement is True.`,
     ],
-    difficulty_level: `2/5`,
+    difficulty_level: `3/5`,
     sort_order: 68,
     solution_overview: `Fan intensity is $I(d)=Ad^{-2}$ watts per square metre, calibrated by $I(2)=0.72$, and night work is capped at $0.08$.
 
@@ -9148,11 +11334,13 @@ $$I'(d)=-5.76\\, d^{-3} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** The recovered coefficient is $2.88$, not $1.44$. Doubling distance quarters intensity.
+**1.** Doubling $2$ m to $4$ m quarters intensity. $I(4)=0.18<0.2$.
 
-**2.** The cap is met at $d=6$, where $I=0.08$, and $|I'|$ is larger at $2$ m than at $6$ m.
+**2.** $\\lvert I'\\rvert$ is larger at $2$ m than at $6$ m. $I(6)=0.08$ exactly, so the reading is not still above the cap.
 
-**Answer.** $I(d)=2.88d^{-2}$ | cap met at $d=6$ m | doubling factor $\\frac{1}{4}$ | $A\\ne 1.44$`,
+**3.** The cap is met at $d=6$, already under $7$ m.
+
+**Answer.** $I(d)=\\frac{2.88}{d^{2}}$ | $I(4)=0.18$ | $I(6)=0.08$ | cap at $d=6$ m`,
   },
   {
     id: `math-8-69`,
@@ -9272,19 +11460,29 @@ $$v(q)=4\\sqrt{2}\\, q \\tag{2}$$
     statements: [
       `To double the logged throughput the yard must more than double the crew.`,
       `With $36$ drivers the model already predicts more than $110$ pallets per hour.`,
-      `Throughput per driver rises as the crew grows.`,
+      `Throughput per driver falls from $16$ to $36$ drivers by more than $1$ pallet per driver.`,
       `Reaching $150$ pallets per hour stays inside the safety cap.`,
-      `Because throughput rises with crew, the safety cap on drivers is also a cap on pallets moved per hour.`,
+      `Two $16$-driver shifts already match one $64$-driver shift.`,
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Doubling throughput is a crew factor $k$ with $k^{\\frac{1}{2}}=2$:
+The logged shift recovers $T(s)=20\\sqrt{s}$, because
 
 $$
-\\frac{T(ks)}{T(s)}=k^{\\frac{1}{2}}
+A\\cdot 16^{\\frac{1}{2}}=80
 $$
+
+$$
+A\\cdot 4=80
+$$
+
+$$
+A=20
+$$
+
+Doubling the logged $80$ pallets is a crew factor $k$ with
 
 $$
 k^{\\frac{1}{2}}=2
@@ -9294,10 +11492,10 @@ $$
 k=4
 $$
 
-An exact doubling of the crew would only multiply throughput by $\\sqrt{2}\\approx 1.41$. The yard needs four times the crew, not twice. That is more than a doubling, so the statement is True.`,
+Four times the crew is more than a doubling, so the statement is True.`,
       `**B.** → True
 
-The law is $T(s)=20\\sqrt{s}$. At the capped crew:
+Throughput is $T(s)=20\\sqrt{s}$. At the capped crew:
 
 $$
 T(36)=20\\cdot 36^{\\frac{1}{2}}
@@ -9308,45 +11506,109 @@ $$
 $$
 
 $$
-T(36)=20\\cdot 6=120
+T(36)=20\\cdot 6
+$$
+
+$$
+20\\cdot 6=120
 $$
 
 One hundred and twenty already sits above $110$ pallets per hour, so the statement is True.`,
-      `**C.** → False
+      `**C.** → True
 
-Throughput per driver subtracts $1$ from the exponent:
-
-$$
-\\frac{T(s)}{s}=20s^{\\frac{1}{2}-1}
-$$
+Throughput is $T(s)=20\\sqrt{s}$. Throughput per driver is
 
 $$
 \\frac{T(s)}{s}=20s^{-\\frac{1}{2}}
 $$
 
-The leftover exponent is negative, so intensity falls as the crew grows. A rising intensity would need a positive leftover exponent, so the statement is False.`,
+At $16$ drivers:
+
+$$
+\\frac{T(16)}{16}=\\frac{20}{4}
+$$
+
+$$
+\\frac{20}{4}=5
+$$
+
+At $36$ drivers:
+
+$$
+\\frac{T(36)}{36}=\\frac{20}{6}
+$$
+
+$$
+\\frac{20}{6}=\\frac{10}{3}
+$$
+
+$$
+5-\\frac{10}{3}=\\frac{5}{3}
+$$
+
+The fall is $\\frac{5}{3}>1$ pallet per driver, so the statement is True.`,
       `**D.** → False
 
-A target of $150$ inverts as
+Throughput is $T(s)=20\\sqrt{s}$. A target of $150$ inverts as
 
 $$
 20\\sqrt{s}=150
 $$
 
 $$
-\\sqrt{s}=\\frac{150}{20}=7.5
+\\sqrt{s}=\\frac{150}{20}
 $$
 
 $$
-s=7.5^{2}=56.25
+\\sqrt{s}=\\frac{15}{2}
 $$
 
-which exceeds the cap of $36$. Even the capped shift delivers only $120$ pallets per hour. Reaching $150$ lies outside the safety cap, so the statement is False.`,
+$$
+s=\\left(\\frac{15}{2}\\right)^{2}
+$$
+
+$$
+s=\\frac{225}{4}
+$$
+
+$$
+\\frac{225}{4}=56.25
+$$
+
+That crew already exceeds the cap of $36$. Even the capped shift delivers only $120$ pallets per hour, so the statement is False.`,
       `**E.** → True
 
-Throughput $T=20\\sqrt{s}$ rises with crew, so the largest legal crew of $36$ drivers produces the largest legal output, $120$ pallets per hour. No legal crew can exceed that. The driver cap is therefore also a cap on pallets moved per hour, so the statement is True.`,
+Throughput is $T(s)=20\\sqrt{s}$. Two $16$-driver shifts move
+
+$$
+2T(16)=2\\cdot 80
+$$
+
+$$
+2\\cdot 80=160
+$$
+
+One $64$-driver shift moves
+
+$$
+T(64)=20\\cdot 64^{\\frac{1}{2}}
+$$
+
+$$
+64^{\\frac{1}{2}}=8
+$$
+
+$$
+T(64)=20\\cdot 8
+$$
+
+$$
+20\\cdot 8=160
+$$
+
+The pair already matches the single $64$-driver shift, so the statement is True.`,
     ],
-    difficulty_level: `2/5`,
+    difficulty_level: `3/5`,
     sort_order: 70,
     solution_overview: `Forklift throughput is $T(s)=As^{0.5}$ pallets per hour, calibrated by $T(16)=80$, and safety rules cap the shift at $36$ drivers.
 
@@ -9370,9 +11632,11 @@ $$\\frac{T(s)}{s}=20s^{-\\frac{1}{2}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** Doubling the logged $80$ pallets needs four times the crew. Intensity $(2)$ falls as $s$ grows.
+**1.** Doubling the logged $80$ pallets needs four times the crew. $T(36)=120>110$.
 
-**2.** $T(36)=120$, and $150$ pallets would need $s=56.25>36$. Because $T$ rises with $s$, the driver cap is also an output cap of $120$.
+**2.** Throughput per driver falls from $5$ at $16$ drivers to $\\frac{10}{3}$ at $36$ drivers, a drop of $\\frac{5}{3}>1$.
+
+**3.** $150$ pallets would need $s=56.25>36$. Two $16$-driver shifts already match $T(64)=160$.
 
 **Answer.** $T(s)=20\\sqrt{s}$ | $T(36)=120$ | fourfold crew to double output | $150$ pallets need $56.25$ drivers`,
   },
@@ -9720,59 +11984,89 @@ $$T\\!\\left(\\frac{1600}{q}\\right)=T(q) \\tag{2}$$
     title: `Average Product on a Bottling Line`,
     context: `Output on a bottling line follows $Q(L)=A L^{r}$ units a shift, where $L>0$ is labour hours, with both constants unknown. Sixteen hours produce ninety-six units, and eighty-one hours produce three hundred and twenty-four. Average product is output per labour hour, $Q(L)/L$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Average product is a power function of labour hours, but its exponent is not the exponent of output.`,
       `At $16$ hours, average product is under $7$ units an hour.`,
       `To double output she must double the labour hours.`,
-      `Average product falls as labour hours rise.`,
+      `Average product falls by more than $1.5$ units an hour from $16$ to $81$ hours.`,
       `At $81$ hours, average product still exceeds $5$ units an hour.`,
+      `The extra output from $16$ to $81$ hours already exceeds the $16$-hour output.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The two shifts give $r=\\frac{3}{4}$. Dividing output by labour subtracts one:
+The recovered law is $Q(L)=12L^{\\frac{3}{4}}$. Average product at sixteen hours is the recorded output over the hours:
 
 $$
-\\frac{Q(L)}{L}=A L^{-\\frac{1}{4}}
+\\frac{Q(16)}{16}=\\frac{96}{16}
 $$
 
-The exponents $\\frac{3}{4}$ and $-\\frac{1}{4}$ differ, so the statement is True.`,
-      `**B.** → True
-
-Sixteen hours produce $96$ units, so average product is just that quotient:
-
 $$
-\\frac{Q(16)}{16}=\\frac{96}{16}=6
+\\frac{96}{16}=6
 $$
 
-Six is under seven, so the statement is True.`,
-      `**C.** → False
+Six sits under seven, so the statement is True.`,
+      `**B.** → False
 
-The shift ratio already gave $r=\\frac{3}{4}$. Doubling output would need a labour factor $k$ with
+The recovered law is $Q(L)=12L^{\\frac{3}{4}}$. Doubling output is a labour factor $k$ with
 
 $$
 k^{\\frac{3}{4}}=2
 $$
 
 $$
-k=2^{\\frac{4}{3}}\\approx 2.52
+k=2^{\\frac{4}{3}}
 $$
 
-She must more than double the hours. Doubling labour would multiply output only by $2^{\\frac{3}{4}}\\approx 1.68$, short of $2$, so the statement is False.`,
-      `**D.** → True
-
-Average product is $A L^{-\\frac{1}{4}}$. The leftover exponent is negative: each extra hour adds less output than the hour before it, and spreading that output over more hours pulls the average down. At the recorded shifts the averages are $6$ and $4$, so the statement is True.`,
-      `**E.** → False
-
-Eighty-one hours produce $324$ units, so
-
 $$
-\\frac{Q(81)}{81}=\\frac{324}{81}=4
+2^{\\frac{4}{3}}=2\\cdot 2^{\\frac{1}{3}}\\approx 2.52
 $$
 
-Four does not exceed five. The sixteen-hour average is $6$, but by eighty-one hours the average has already fallen to $4$, so the statement is False.`,
+She must multiply hours by about $2.52$, not by $2$. Doubling labour would multiply output only by $2^{\\frac{3}{4}}\\approx 1.68$, short of $2$, so the statement is False.`,
+      `**C.** → True
+
+Average product at sixteen hours is already $6$. At eighty-one hours:
+
+$$
+\\frac{Q(81)}{81}=\\frac{324}{81}
+$$
+
+$$
+\\frac{324}{81}=4
+$$
+
+$$
+6-4=2
+$$
+
+The fall of $2$ exceeds $1.5$ units an hour, so the statement is True.`,
+      `**D.** → False
+
+Average product at eighty-one hours is
+
+$$
+\\frac{Q(81)}{81}=\\frac{324}{81}
+$$
+
+$$
+\\frac{324}{81}=4
+$$
+
+Four does not exceed five, so the statement is False.`,
+      `**E.** → True
+
+The extra output from sixteen hours to eighty-one hours is
+
+$$
+Q(81)-Q(16)=324-96
+$$
+
+$$
+324-96=228
+$$
+
+The sixteen-hour output is $96$. Because $228>96$, the extra already exceeds that reading, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 74,
     solution_overview: `Output follows $Q(L)=AL^{r}$. Sixteen hours give $96$ units and eighty-one hours give $324$. Average product is $Q/L$.
 
@@ -9796,11 +12090,11 @@ $$\\frac{Q(L)}{L}=12L^{-\\frac{1}{4}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** Average product is a power, but with exponent $-\\frac{1}{4}$, not $\\frac{3}{4}$. It falls as $L$ rises: $6$ at $L=16$ and $4$ at $L=81$.
+**1.** Average product is $6$ at $L=16$ and $4$ at $L=81$. The fall of $2$ already exceeds $1.5$. Doubling output needs the hour-factor $2^{\\frac{4}{3}}\\approx 2.52$, not $2$.
 
-**2.** Doubling output needs the hour-factor $2^{\\frac{4}{3}}\\approx 2.52$, not $2$. At $L=81$, average product is $4$, which does not exceed $5$.
+**2.** The extra from $16$ to $81$ hours is $228$, which already exceeds the $16$-hour output of $96$. At $L=81$, average product is $4$, which does not exceed $5$.
 
-**Answer.** $r=\\frac{3}{4}$ | $A=12$ | average $6$ at $L=16$ and $4$ at $L=81$`,
+**Answer.** $r=\\frac{3}{4}$ | $A=12$ | AP $6$ then $4$ | extra $228>96$ | $k=2^{\\frac{4}{3}}$ to double $Q$`,
   },
   {
     id: `math-8-75`,
@@ -10006,7 +12300,7 @@ $$\\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → False
 
-The multiplier of $A x^{\\frac{3}{2}}$ is the input factor to the power $\\frac{3}{2}$, and $A$ cancels:
+The recovered law is $f(x)=6x^{\\frac{3}{2}}$. Multiplying the index by $4$ multiplies cost by
 
 $$
 \\frac{f(4x)}{f(x)}=4^{\\frac{3}{2}}
@@ -10020,49 +12314,109 @@ $$
 4^{\\frac{3}{2}}=8
 $$
 
-Cost is multiplied by eight, not by four. The four-fold factor would belong to exponent $1$, so the statement is False.`,
+Cost is multiplied by eight, not by four, so the statement is False.`,
       `**B.** → True
 
-Handling is $f(x)=6x^{\\frac{3}{2}}$. At index nine:
+The recovered law is $f(x)=6x^{\\frac{3}{2}}$. At index nine:
 
 $$
 9^{\\frac{3}{2}}=27
 $$
 
 $$
-f(9)=6\\cdot 27=162
+f(9)=6\\cdot 27
 $$
 
-One hundred and sixty-two sits above one hundred and fifty, so the statement is True.`,
+$$
+6\\cdot 27=162
+$$
+
+One hundred and sixty-two sits above $150$ euros, so the statement is True.`,
       `**C.** → True
 
-The exponent $\\frac{3}{2}$ is larger than one, so cost outruns the pallet-volume index. A four-fold rise in the index multiplies cost by eight, not by four, so the statement is True.`,
+At index four:
+
+$$
+4^{\\frac{3}{2}}=8
+$$
+
+$$
+f(4)=6\\cdot 8
+$$
+
+$$
+6\\cdot 8=48
+$$
+
+Index $16$ is four times $4$, and
+
+$$
+16^{\\frac{3}{2}}=64
+$$
+
+$$
+f(16)=6\\cdot 64
+$$
+
+$$
+6\\cdot 64=384
+$$
+
+$$
+\\frac{384}{48}=8
+$$
+
+The index rose by a factor of $4$ while cost rose by a factor of $8$. Cost outruns the index, so the statement is True.`,
       `**D.** → False
 
-Handling is $f(x)=6x^{\\frac{3}{2}}$. Equal cost gaps would need a linear rule, exponent $1$. Differentiate:
+Equal cost gaps would need a linear rule. Handling is $f(x)=6x^{\\frac{3}{2}}$, so the slope is
 
 $$
 f'(x)=9x^{\\frac{1}{2}}
 $$
 
-The slope itself rises with $x$, so later index steps add more euros than earlier ones of the same width, so the statement is False.`,
+$$
+f'(4)=9\\cdot 2
+$$
+
+$$
+9\\cdot 2=18
+$$
+
+$$
+f'(9)=9\\cdot 3
+$$
+
+$$
+9\\cdot 3=27
+$$
+
+The same one-unit gap adds $18$ euros at index $4$ and $27$ euros at index $9$. Equal index gaps do not produce equal cost gaps, so the statement is False.`,
       `**E.** → False
 
-Handling is $f(x)=6x^{\\frac{3}{2}}$, and $f(9)=162$. At index twenty-five:
+At index nine the cost is $162$. At index twenty-five:
 
 $$
 25^{\\frac{3}{2}}=125
 $$
 
 $$
-f(25)=6\\cdot 125=750
+f(25)=6\\cdot 125
 $$
 
 $$
-f(25)-f(9)=750-162=588
+6\\cdot 125=750
 $$
 
-Five hundred and eighty-eight is not under five hundred, so the statement is False.`,
+$$
+f(25)-f(9)=750-162
+$$
+
+$$
+750-162=588
+$$
+
+Five hundred and eighty-eight is not under $500$, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 77,
@@ -10084,11 +12438,11 @@ $$\\frac{f(kx)}{f(x)}=k^{\\frac{3}{2}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** A factor of $4$ on the index multiplies cost by $8$, not by $4$. Because $r>1$, cost grows faster than the index, and equal index gaps do not give equal cost gaps.
+**1.** $f(4)=48$ and $f(16)=384$, so a factor of $4$ on the index multiplies cost by $8$, not by $4$. The slope $f'(x)=9x^{\\frac{1}{2}}$ rises, so equal index gaps do not give equal cost gaps.
 
 **2.** $f(9)=162>150$ and $f(25)-f(9)=588$, which is not under $500$.
 
-**Answer.** $A=6$ | $f(9)=162$ | $f(25)=750$ | factor of $4$ on volume multiplies cost by $8$`,
+**Answer.** $A=6$ | $f(4)=48$ | $f(9)=162$ | $f(16)=384$ | $f(25)=750$ | extra $588$`,
   },
   {
     id: `math-8-78`,
@@ -10096,26 +12450,17 @@ $$\\frac{f(kx)}{f(x)}=k^{\\frac{3}{2}} \\tag{2}$$
     title: `Inverting a Wastewater Load Model Against a Permit Ceiling`,
     context: `A dye-house discharges a wastewater load of $W(s)=A s^{\\frac{3}{2}}$ kilograms a day, where $s>0$ is a production scale index. At scale nine the daily load is one hundred and thirty-five kilograms. The site permit caps the daily load at three hundred and twenty kilograms, and the plant wants the largest scale it may run. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `The scale needed for a given load is itself a power function of that load.`,
       `The largest admissible scale is already below $20$.`,
       `Doubling the permit ceiling doubles the admissible scale index.`,
       `If the coefficient doubled, the admissible scale under the same ceiling would be halved.`,
       `At scale index $4$ the daily load is under $50$ kilograms.`,
+      `The extra load from scale $4$ to scale $9$ already exceeds the load at scale $4$.`,
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-A power with a nonzero exponent inverts to another power. Load is $W=A s^{\\frac{3}{2}}$, so
-
-$$
-s=\\left(\\frac{W}{A}\\right)^{\\frac{2}{3}}
-$$
-
-That is a constant times $W^{\\frac{2}{3}}$, a power of load, so the statement is True.`,
-      `**B.** → True
-
-Load is $W(s)=5s^{\\frac{3}{2}}$. At the $320$ kilogram ceiling:
+The recovered law is $W(s)=5s^{\\frac{3}{2}}$. The $320$ kilogram ceiling solves
 
 $$
 5s^{\\frac{3}{2}}=320
@@ -10134,22 +12479,30 @@ $$
 $$
 
 $$
-s=16
+s=4^{2}
 $$
 
-The exponent $\\frac{3}{2}$ is positive, so every larger index breaches the permit. Sixteen sits below twenty, so the statement is True.`,
+$$
+4^{2}=16
+$$
+
+Sixteen sits below twenty. Every larger index breaches the permit, so the statement is True.`,
+      `**B.** → False
+
+The recovered inverse is $s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}$, and the $320$ kg cap already gives $s=16$. Doubling the ceiling to $640$ kg multiplies permitted scale by
+
+$$
+2^{\\frac{2}{3}}\\approx 1.587
+$$
+
+$$
+s=16\\cdot 2^{\\frac{2}{3}}\\approx 25.4
+$$
+
+About $25.4$ is not $32$. Doubling the ceiling does not double the admissible scale, so the statement is False.`,
       `**C.** → False
 
-The inverse is $s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}$. Doubling the ceiling multiplies permitted scale by
-
-$$
-2^{\\frac{2}{3}}\\approx 1.59
-$$
-
-not by $2$. The inverse exponent $\\frac{2}{3}$ is smaller than one, so permitted scale grows more slowly than the permitted load, so the statement is False.`,
-      `**D.** → False
-
-Load is $W=5s^{\\frac{3}{2}}$, and the ceiling gives $s=16$. Doubling the coefficient to $10$ gives
+If the coefficient doubled to $10$, the same ceiling would solve
 
 $$
 10s^{\\frac{3}{2}}=320
@@ -10160,25 +12513,46 @@ s^{\\frac{3}{2}}=32
 $$
 
 $$
-s=32^{\\frac{2}{3}}\\approx 10.08
+s=32^{\\frac{2}{3}}
 $$
 
-Halving would require $s=8$. The scale factor is $2^{-\\frac{2}{3}}\\approx 0.63$, not $\\frac{1}{2}$, so the statement is False.`,
-      `**E.** → True
+$$
+s=16\\cdot 2^{-\\frac{2}{3}}\\approx 10.08
+$$
 
-Load is $W(s)=5s^{\\frac{3}{2}}$. At scale four:
+Halving $16$ would give $8$. The admissible scale falls to about $10.08$, not to $8$, so the statement is False.`,
+      `**D.** → True
+
+The recovered law is $W(s)=5s^{\\frac{3}{2}}$. At scale four:
 
 $$
 4^{\\frac{3}{2}}=8
 $$
 
 $$
-W(4)=5\\cdot 8=40
+W(4)=5\\cdot 8
+$$
+
+$$
+5\\cdot 8=40
 $$
 
 Forty kilograms is under fifty, so the statement is True.`,
+      `**E.** → True
+
+At scale nine the load is the recorded $135$ kilograms. At scale four it is $40$. The extra is
+
+$$
+W(9)-W(4)=135-40
+$$
+
+$$
+135-40=95
+$$
+
+Because $95>40$, the extra already exceeds the load at scale $4$, so the statement is True.`,
     ],
-    difficulty_level: `4/5`,
+    difficulty_level: `5/5`,
     sort_order: 78,
     solution_overview: `Load is $W(s)=As^{\\frac{3}{2}}$ kilograms a day. At $s=9$ the load is $135$, and the permit caps it at $320$.
 
@@ -10202,11 +12576,11 @@ $$s(W)=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}} \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** The inverse (2) is a power of load. The binding permit gives $s=16<20$, and $W(4)=40<50$.
+**1.** The binding permit gives $s=16<20$, and $W(4)=40<50$. The extra from scale $4$ to $9$ is $95$, which already exceeds $W(4)=40$.
 
-**2.** Doubling the cap raises the index by $2^{\\frac{2}{3}}\\approx 1.59$, not by $2$. Doubling $A$ cuts the index by $2^{-\\frac{2}{3}}\\approx 0.63$, not by $\\frac{1}{2}$.
+**2.** Doubling the cap to $640$ raises the index to $16\\cdot 2^{\\frac{2}{3}}\\approx 25.4$, not to $32$. Doubling $A$ cuts the index to $16\\cdot 2^{-\\frac{2}{3}}\\approx 10.08$, not to $8$.
 
-**Answer.** $A=5$ | largest $s=16$ | $W(4)=40$ | cap factor $2$ raises $s$ by $2^{\\frac{2}{3}}$`,
+**Answer.** $A=5$ | largest $s=16$ | $W(4)=40$ | extra $95>40$ | doubled cap $s\\approx 25.4$`,
   },
   {
     id: `math-8-79`,
@@ -10316,17 +12690,48 @@ $$\\frac{q(kp)}{q(p)}=k^{-2} \\tag{2}$$
     title: `Geometrically Similar Bells Cast From One Pattern`,
     context: `A foundry casts geometrically similar bronze bells from a single pattern, so mass follows $M(h)=A h^{3}$ kilograms, where $h>0$ is height in metres. The pattern book omits the coefficient; it records only that a finished bell of height one half metre was weighed at thirty kilograms. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Mass grows faster than height.`,
       `A bell of height $1.5$ m already weighs more than $700$ kg.`,
       `Doubling a bell's height doubles its mass.`,
-      `Mass per metre of height is the same at every height.`,
       `A one-metre bell already weighs more than $200$ kg.`,
+      `Two $1$ m bells together already fall short of one $1.5$ m bell.`,
+      `Raising height from $1$ m to $2$ m adds more than $1600$ kg.`,
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Mass follows $M(h)=240h^{3}$. The exponent $3$ is larger than one, so mass outruns height: each extra metre of height adds more mass than the metre before it. Doubling height multiplies mass by
+The half-metre weighing pins the coefficient:
+
+$$
+A\\left(\\frac{1}{2}\\right)^{3}=30
+$$
+
+$$
+A\\cdot\\frac{1}{8}=30
+$$
+
+$$
+A=240
+$$
+
+so $M(h)=240h^{3}$. At one and a half metres:
+
+$$
+\\left(\\frac{3}{2}\\right)^{3}=\\frac{27}{8}
+$$
+
+$$
+M\\left(\\frac{3}{2}\\right)=240\\cdot\\frac{27}{8}
+$$
+
+$$
+240\\cdot\\frac{27}{8}=810
+$$
+
+Eight hundred and ten exceeds $700$ kg, so the statement is True.`,
+      `**B.** → False
+
+The recovered law is $M(h)=240h^{3}$. Doubling height multiplies mass by
 
 $$
 \\frac{M(2h)}{M(h)}=2^{3}
@@ -10336,43 +12741,60 @@ $$
 2^{3}=8
 $$
 
-not by $2$. Mass grows faster than height, so the statement is True.`,
-      `**B.** → True
+Mass rises eightfold, not twofold. The half-metre bell of $30$ kg would become $240$ kg at one metre, not $60$ kg, so the statement is False.`,
+      `**C.** → True
 
-The weighing pins $A=240$, so $M(h)=240h^{3}$. At one and a half metres, write $1.5=\\frac{3}{2}$:
-
-$$
-\\left(\\frac{3}{2}\\right)^{3}=\\frac{27}{8}
-$$
+At one metre the cube is $1$, so the mass is the coefficient itself:
 
 $$
-M\\left(\\frac{3}{2}\\right)=240\\cdot\\frac{27}{8}=810
+M(1)=240\\cdot 1^{3}
 $$
 
-Eight hundred and ten exceeds seven hundred, so the statement is True.`,
-      `**C.** → False
+$$
+M(1)=240
+$$
 
-Mass is a cube of height, so a factor of $2$ on height multiplies mass by
+Two hundred and forty exceeds $200$ kg, so the statement is True.`,
+      `**D.** → True
+
+Two one-metre bells weigh
+
+$$
+2\\cdot M(1)=2\\cdot 240
+$$
+
+$$
+2\\cdot 240=480
+$$
+
+One $1.5$ m bell weighs $810$ kg, as in A. Because $480<810$, the pair already falls short, so the statement is True.`,
+      `**E.** → True
+
+At two metres:
+
+$$
+M(2)=240\\cdot 2^{3}
+$$
 
 $$
 2^{3}=8
 $$
 
-not by $2$. The half-metre bell at $30$ kg would become $240$ kg at one metre, not $60$ kg, so the statement is False.`,
-      `**D.** → False
-
-Mass is $M(h)=240h^{3}$, so mass per metre of height is
-
 $$
-\\frac{M(h)}{h}=240h^{2}
+M(2)=240\\cdot 8=1920
 $$
 
-which still grows with $h$. At half a metre the quotient is $60$ kg per metre; at one metre it is $240$. The two figures differ, so the statement is False.`,
-      `**E.** → True
+$$
+M(2)-M(1)=1920-240
+$$
 
-Mass is $M(h)=240h^{3}$. At one metre the cube is $1$, so the mass is just the coefficient $240$. Two hundred and forty exceeds two hundred, so the statement is True.`,
+$$
+1920-240=1680
+$$
+
+One thousand six hundred and eighty exceeds $1600$ kg, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 80,
     solution_overview: `Similar bells obey $M(h)=Ah^{3}$, and the single weighing $M(0.5)=30$ fixes the coefficient.
 
@@ -10396,11 +12818,11 @@ $$M(kh)=k^{3}M(h) \\tag{2}$$
 
 **Part 3: Solve.**
 
-**1.** Because the exponent is $3>1$, mass outruns height. Doubling height multiplies mass by $8$, not by $2$. Mass per metre is $240h^{2}$, not constant.
+**1.** $M(1.5)=810>700$ and $M(1)=240>200$. Two $1$ m bells weigh $480$, which already falls short of the $810$ kg bell.
 
-**2.** $M(1.5)=810>700$ and $M(1)=240>200$.
+**2.** Doubling height multiplies mass by $8$, not by $2$. Raising height from $1$ m to $2$ m adds $1680$ kg, which exceeds $1600$.
 
-**Answer.** $A=240$ | $M(1.5)=810$ | doubling $\\times 8$ | $M(1)=240$`,
+**Answer.** $A=240$ | $M(1)=240$ | $M(1.5)=810$ | two $1$ m bells $480<810$ | $M(2)-M(1)=1680$`,
   },
   {
     id: `math-8-81`,
@@ -10564,30 +12986,36 @@ $$P(8)=256<300, \\qquad P(12)=864>800, \\qquad P'(8)=96<P'(12)=216$$
     statements: [
       `The received signal is inversely proportional to burial depth.`,
       `Doubling burial depth halves the received signal.`,
-      `The burial depth needed for a given reading is itself a power function of that reading.`,
       `A conductor buried at $4$ metres already returns under $7$ millivolts.`,
       `A reading of $3.2$ millivolts still corresponds to a burial depth of more than $8$ metres.`,
+      `The drop from $2$ m to $4$ m already exceeds the remaining signal at $4$ m.`,
     ],
-    answer_key: [false, false, true, true, false],
+    answer_key: [false, false, true, false, true],
     tactical_explanations: [
       `**A.** → False
 
-The doubling record gives $r=-3$. Inverse proportionality would mean exponent $-1$, which would cut the signal in half when depth doubles:
+The doubling record $2^{r}=\\frac{1}{8}$ and the calibration $S(2)=50$ recover
+
+$$
+S(x)=400x^{-3}
+$$
+
+Inverse proportionality would mean exponent $-1$, so doubling depth would multiply the signal by
 
 $$
 2^{-1}=\\frac{1}{2}
 $$
 
-The recorded factor is one eighth:
+The recovered exponent is $-3$, and
 
 $$
 2^{-3}=\\frac{1}{8}
 $$
 
-The exponent is $-3$, not $-1$, so the statement is False.`,
+The law is inverse-cube, not inverse-linear, so the statement is False.`,
       `**B.** → False
 
-Doubling depth multiplies the signal by $2^{-3}$:
+The recovered law is $S(x)=400x^{-3}$. Doubling depth multiplies the signal by
 
 $$
 \\frac{S(2x)}{S(x)}=2^{-3}
@@ -10600,33 +13028,32 @@ $$
 A cut to one half would need exponent $-1$. Doubling leaves one eighth of the signal, not one half, so the statement is False.`,
       `**C.** → True
 
-The law is $S=\\frac{400}{x^{3}}$. Solving for depth:
+The recovered law is $S(x)=400x^{-3}$. At four metres:
 
 $$
-x^{3}=\\frac{400}{S}
-$$
-
-$$
-x=400^{\\frac{1}{3}}S^{-\\frac{1}{3}}
-$$
-
-A power with a nonzero exponent inverts to another power. Depth is a power of the reading, so the statement is True.`,
-      `**D.** → True
-
-Four metres is one doubling of the calibration depth of $2$ metres, where the locator read $50$ millivolts. Each doubling multiplies the signal by $\\frac{1}{8}$:
-
-$$
-S(4)=50\\cdot\\frac{1}{8}
+S(4)=400\\cdot 4^{-3}
 $$
 
 $$
-S(4)=\\frac{50}{8}=6.25
+4^{3}=64
 $$
 
-Because $6.25<7$, the locator already reads under $7$ millivolts, so the statement is True.`,
-      `**E.** → False
+$$
+S(4)=\\frac{400}{64}
+$$
 
-At a reading of $3.2$ millivolts:
+$$
+\\frac{400}{64}=6.25
+$$
+
+$$
+6.25<7
+$$
+
+The locator already reads under $7$ millivolts, so the statement is True.`,
+      `**D.** → False
+
+The recovered law is $S(x)=400x^{-3}$. At a reading of $3.2$ millivolts:
 
 $$
 \\frac{400}{x^{3}}=3.2
@@ -10645,8 +13072,23 @@ x=5
 $$
 
 because $5^{3}=125$ and depth is positive. Five metres is not more than $8$ metres, so the statement is False.`,
+      `**E.** → True
+
+The recovered law is $S(x)=400x^{-3}$, with $S(2)=50$ and $S(4)=6.25$. The drop from $2$ m to $4$ m is
+
+$$
+50-6.25=43.75
+$$
+
+The remaining signal at $4$ m is $6.25$, and
+
+$$
+43.75>6.25
+$$
+
+The drop already exceeds the remaining signal, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 82,
     solution_overview: `Attenuation is $S(x)=Ax^{r}$ in millivolts. Doubling depth leaves one eighth of the signal, and the calibration is $S(2)=50$.
 
@@ -10674,13 +13116,13 @@ $$S(x)=400x^{-3} \\tag{2}$$
 
 $$\\frac{1}{8}=2^{-3} \\quad \\Rightarrow \\quad r=-3, \\qquad A=50\\times 8=400$$
 
-**2.** Doubling depth leaves $\\frac{1}{8}$ of the signal, not $\\frac{1}{2}$, so the law is not inverse proportionality. The inverse $x=400^{\\frac{1}{3}}S^{-\\frac{1}{3}}$ is still a power.
+**2.** Doubling depth leaves $\\frac{1}{8}$ of the signal, not $\\frac{1}{2}$, so the law is not inverse proportionality.
 
 **3.** Levels against the thresholds:
 
-$$S(4)=6.25<7, \\qquad x=5\\ \\text{at}\\ S=3.2$$
+$$S(4)=6.25<7, \\qquad x=5\\ \\text{at}\\ S=3.2, \\qquad S(2)-S(4)=43.75>S(4)=6.25$$
 
-**Answer.** $r=-3$, $A=400$ | $S(x)=400x^{-3}$ | $S(4)=6.25$ mV | $3.2$ mV at $x=5$ m`,
+**Answer.** $r=-3$, $A=400$ | $S(x)=400x^{-3}$ | $S(4)=6.25$ mV | $3.2$ mV at $x=5$ m | drop $43.75>6.25$`,
   },
   {
     id: `math-8-83`,
@@ -10840,56 +13282,23 @@ $$D(256)=320>300, \\qquad 16\\,D(16)=640>600$$
     title: `Micro-Irrigation Flow Under a Fourth-Power Law`,
     context: `Volumetric flow through a micro-irrigation emitter follows $Q(r)=A r^{k}$ litres per hour, where $r>0$ is the internal tube radius in millimetres. Neither constant is posted. Doubling any tube radius multiplies flow by $16$, and a bench test on a tube of radius $2$ mm delivered $48$ litres per hour. The designers also track the mean velocity index $\\frac{Q}{\\pi r^{2}}$, which spreads the flow across the tube's cross-section. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Flow grows faster than tube radius.`,
-      `Doubling the tube radius doubles the flow.`,
-      `The mean velocity index is the same in every tube.`,
       `A tube of radius $3$ mm already delivers more than $200$ litres per hour.`,
+      `Doubling the tube radius doubles the flow.`,
       `A tube of radius $1$ mm still delivers more than $10$ litres per hour.`,
+      `The mean velocity index is the same in every tube.`,
+      `Two $1$ mm tubes together already fall short of one $2$ mm tube.`,
     ],
-    answer_key: [true, false, false, true, false],
+    answer_key: [true, false, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The doubling record gives $k=4$. An exponent larger than one means flow outruns radius: each extra millimetre of bore adds more delivery than the millimetre before it.
+The doubling record $2^{k}=16$ and the bench test $Q(2)=48$ recover
 
 $$
-4>1
+Q(r)=3r^{4}
 $$
 
-Four sits above one, so the statement is True.`,
-      `**B.** → False
-
-Doubling the radius would double the flow only if the exponent were $1$. With exponent $4$ the scale factor is
-
-$$
-\\frac{Q(2r)}{Q(r)}=2^{4}
-$$
-
-$$
-2^{4}=16
-$$
-
-which is the recorded doubling factor itself. Flow rises sixteenfold, not twofold, so the statement is False.`,
-      `**C.** → False
-
-The mean velocity index divides $Q(r)=3r^{4}$ by the tube's cross-section $\\pi r^{2}$, so the exponents subtract rather than cancel:
-
-$$
-\\frac{Q(r)}{\\pi r^{2}}=\\frac{3r^{4}}{\\pi r^{2}}
-$$
-
-$$
-\\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2}
-$$
-
-The leftover exponent $2$ is not zero, so the index grows with the radius. It is not the same in every tube, so the statement is False.`,
-      `**D.** → True
-
-Flow is $Q(r)=3r^{4}$. At radius $3$ mm:
-
-$$
-Q(3)=3\\cdot 3^{4}
-$$
+At radius $3$ mm:
 
 $$
 3^{2}=9
@@ -10900,21 +13309,86 @@ $$
 $$
 
 $$
-Q(3)=3\\cdot 81=243
+Q(3)=3\\cdot 81
 $$
 
-Because $243>200$, the tube already delivers more than $200$ litres per hour, so the statement is True.`,
-      `**E.** → False
-
-At radius $1$ mm every power of $1$ is $1$, so the delivery equals the coefficient:
-
 $$
-Q(1)=3\\cdot 1^{4}=3
+3\\cdot 81=243
 $$
 
-Because $3<10$, the tube does not still deliver more than $10$ litres per hour, so the statement is False.`,
+$$
+243>200
+$$
+
+The tube already delivers more than $200$ litres per hour, so the statement is True.`,
+      `**B.** → False
+
+The recovered law is $Q(r)=3r^{4}$. Doubling the radius would double the flow only if the exponent were $1$. With exponent $4$ the scale factor is
+
+$$
+\\frac{Q(2r)}{Q(r)}=2^{4}
+$$
+
+$$
+2^{4}=16
+$$
+
+Flow rises sixteenfold, not twofold, so the statement is False.`,
+      `**C.** → False
+
+The recovered law is $Q(r)=3r^{4}$. At radius $1$ mm every power of $1$ is $1$, so the delivery equals the coefficient:
+
+$$
+Q(1)=3\\cdot 1^{4}
+$$
+
+$$
+Q(1)=3
+$$
+
+$$
+3<10
+$$
+
+The tube does not still deliver more than $10$ litres per hour, so the statement is False.`,
+      `**D.** → False
+
+The recovered law is $Q(r)=3r^{4}$. The mean velocity index divides flow by the tube's cross-section $\\pi r^{2}$, so the exponents subtract rather than cancel:
+
+$$
+\\frac{Q(r)}{\\pi r^{2}}=\\frac{3r^{4}}{\\pi r^{2}}
+$$
+
+$$
+\\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2}
+$$
+
+The leftover exponent $2$ is not zero, so the index grows with the radius. It is not the same in every tube, so the statement is False.`,
+      `**E.** → True
+
+The recovered law is $Q(r)=3r^{4}$. Two $1$ mm tubes together deliver
+
+$$
+2\\cdot Q(1)=2\\cdot 3
+$$
+
+$$
+2\\cdot 3=6
+$$
+
+One $2$ mm tube is the bench reading
+
+$$
+Q(2)=48
+$$
+
+$$
+6<48
+$$
+
+Two $1$ mm tubes fall short of one $2$ mm tube, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 84,
     solution_overview: `Flow obeys $Q(r)=Ar^{k}$. Doubling the radius multiplies flow by $16$, and the bench test is $Q(2)=48$. The mean velocity index is $\\frac{Q}{\\pi r^{2}}$.
 
@@ -10948,13 +13422,13 @@ $$\\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2} \\tag{3}$$
 
 $$16=2^{4} \\quad \\Rightarrow \\quad k=4, \\qquad A=\\frac{48}{16}=3$$
 
-**2.** Because $k>1$, flow outruns radius, doubling multiplies flow by $16$, and the velocity index still carries exponent $2$.
+**2.** Doubling the radius multiplies flow by $16$, not by $2$. The velocity index still carries exponent $2$, so it is not the same in every tube.
 
 **3.** Levels against the thresholds:
 
-$$Q(3)=243>200, \\qquad Q(1)=3<10$$
+$$Q(3)=243>200, \\qquad Q(1)=3<10, \\qquad 2Q(1)=6<48=Q(2)$$
 
-**Answer.** $k=4$, $A=3$ | $Q(r)=3r^{4}$ | $Q(3)=243$ L/h | velocity index $=\\frac{3}{\\pi}r^{2}$`,
+**Answer.** $k=4$, $A=3$ | $Q(r)=3r^{4}$ | $Q(3)=243$ L/h | $2Q(1)=6<Q(2)=48$`,
   },
   {
     id: `math-8-85`,
@@ -10963,7 +13437,7 @@ $$Q(3)=243>200, \\qquad Q(1)=3<10$$
     context: `Dose rate near an industrial radiography source follows $H(d)=A d^{r}$ microsieverts per hour, where $d>0$ is the distance from the source in metres. Neither constant is posted. Quadrupling any distance cuts the dose rate to one sixteenth, and a survey meter three metres from the source reads $80$ microsieverts per hour. Site rules put the barrier where the dose rate has fallen to $5$ microsieverts per hour. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
       `Doubling the distance from the source halves the dose rate.`,
-      `The dose rate stays positive at every finite distance from the source.`,
+      `The drop from $3$ metres to $6$ metres already exceeds the remaining dose at $6$ metres.`,
       `The distance needed for a given dose rate is itself a power of that dose rate.`,
       `At $6$ metres the dose rate is already under $25$ microsieverts per hour.`,
       `The barrier sits farther than $15$ metres from the source.`,
@@ -10985,7 +13459,29 @@ $$
 A cut to one half would need exponent $-1$. Doubling leaves one quarter of the dose rate, not one half, so the statement is False.`,
       `**B.** → True
 
-Dose rate is $H(d)=\\frac{720}{d^{2}}$. The numerator is positive and the denominator is a square, hence positive for every finite $d>0$. A negative-power law never crosses zero. The dose rate stays positive, so the statement is True.`,
+The recovered law is $H(d)=720d^{-2}$. At three metres the survey reads $80$ microsieverts per hour. At six metres, one doubling quarters the dose rate:
+
+$$
+H(6)=80\\cdot\\frac{1}{4}
+$$
+
+$$
+H(6)=20
+$$
+
+The drop from $3$ metres to $6$ metres is
+
+$$
+80-20=60
+$$
+
+The remaining dose at $6$ metres is $20$, and
+
+$$
+60>20
+$$
+
+The drop already exceeds the remaining dose, so the statement is True.`,
       `**C.** → True
 
 From $H=\\frac{720}{d^{2}}$ one gets
@@ -11068,13 +13564,13 @@ $$H(d)=720d^{-2} \\tag{2}$$
 
 $$\\frac{1}{16}=4^{-2} \\quad \\Rightarrow \\quad r=-2, \\qquad A=80\\times 9=720$$
 
-**2.** Doubling quarters the dose rate, not halves it. The inverse of $(2)$ is a power, and $H(d)$ stays positive for every finite $d>0$.
+**2.** Doubling quarters the dose rate, not halves it. The inverse of $(2)$ is a power. The drop $H(3)-H(6)=60$ already exceeds the remaining dose $H(6)=20$.
 
 **3.** Levels against the thresholds:
 
 $$H(6)=20<25, \\qquad d=12<15$$
 
-**Answer.** $r=-2$, $A=720$ | $H(d)=720d^{-2}$ | $H(6)=20$ | barrier at $d=12$ m`,
+**Answer.** $r=-2$, $A=720$ | $H(d)=720d^{-2}$ | $H(6)=20$ | barrier at $d=12$ m | drop $60>20$`,
   },
   {
     id: `math-8-86`,
@@ -11214,45 +13710,73 @@ $$r(8)=60>50, \\qquad t=64\\ \\text{at}\\ r=240$$
     title: `A Weir Rating Curve Rewritten in New Units`,
     context: `Discharge over a measuring weir follows $Q(h)=A h^{\\frac{3}{2}}$ cubic metres per second, where $h>0$ is the head in metres. A gauging at a head of $0.25$ metres recorded a discharge of $2$ cubic metres per second. A field team wants the same rating curve rewritten with the head in centimetres, sometimes keeping discharge in cubic metres per second and sometimes reporting it in litres per second. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
-      `Switching the head from metres to centimetres leaves the exponent unchanged.`,
-      `Discharge grows faster than head.`,
-      `Doubling the head doubles the discharge.`,
+      `Switching the head to centimetres makes the new coefficient (cubic metres per second) larger than $0.02$.`,
       `A head of $1$ metre still discharges under $20$ cubic metres per second.`,
+      `Doubling the head doubles the discharge.`,
       `A head of $4$ metres still discharges under $100$ cubic metres per second.`,
+      `The extra discharge from $0.25$ m to $1$ m already exceeds the $0.25$ m gauging.`,
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [false, true, false, false, true],
     tactical_explanations: [
-      `**A.** → True
+      `**A.** → False
 
-Switching the head from metres to centimetres replaces $h$ by a constant multiple of itself. One metre is $100$ centimetres, so
-
-$$
-h=\\frac{h_{\\mathrm{cm}}}{100}
-$$
-
-A power function pushes that constant through the existing exponent:
+The gauging $Q(0.25)=2$ recovers
 
 $$
-Q=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}
+Q=16h^{\\frac{3}{2}}
+$$
+
+Switching the head to centimetres is $h=\\frac{h_{\\mathrm{cm}}}{100}$:
+
+$$
+Q=16\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}
 $$
 
 $$
-Q=\\frac{A}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}
+Q=\\frac{16}{100^{\\frac{3}{2}}}h_{\\mathrm{cm}}^{\\frac{3}{2}}
 $$
 
-The conversion rescales only the coefficient. The new exponent on $h_{\\mathrm{cm}}$ is still $\\frac{3}{2}$, so the statement is True.`,
+$$
+100^{\\frac{3}{2}}=(10^{2})^{\\frac{3}{2}}
+$$
+
+$$
+(10^{2})^{\\frac{3}{2}}=10^{3}
+$$
+
+$$
+10^{3}=1000
+$$
+
+$$
+\\frac{16}{1000}=0.016
+$$
+
+$$
+0.016<0.02
+$$
+
+The new coefficient is $0.016$, which is not larger than $0.02$, so the statement is False.`,
       `**B.** → True
 
-The weir exponent is $\\frac{3}{2}$. An exponent larger than one means discharge outruns head: each extra metre of head adds more flow than the metre before it.
+The recovered law is $Q=16h^{\\frac{3}{2}}$. At a head of one metre every power of $1$ is $1$, so the discharge equals the coefficient:
 
 $$
-\\frac{3}{2}>1
+Q(1)=16\\cdot 1^{\\frac{3}{2}}
 $$
 
-Three halves sits above one, and a change of units cannot move it, so the statement is True.`,
+$$
+Q(1)=16
+$$
+
+$$
+16<20
+$$
+
+The weir still discharges under $20$ cubic metres per second, so the statement is True.`,
       `**C.** → False
 
-Doubling the head would double discharge only if the exponent were $1$. With exponent $\\frac{3}{2}$ the scale factor is
+The recovered law is $Q=16h^{\\frac{3}{2}}$. Doubling the head would double discharge only if the exponent were $1$. With exponent $\\frac{3}{2}$ the scale factor is
 
 $$
 \\frac{Q(2h)}{Q(h)}=2^{\\frac{3}{2}}
@@ -11271,21 +13795,16 @@ $$
 $$
 
 Doubling the head multiplies discharge by about $2.83$, not by $2$, so the statement is False.`,
-      `**D.** → True
+      `**D.** → False
 
-The metre-form coefficient is $A=16$. At a head of one metre every power of $1$ is $1$, so the discharge equals the coefficient:
-
-$$
-Q(1)=16\\cdot 1^{\\frac{3}{2}}=16
-$$
-
-Because $16<20$, the weir still discharges under $20$ cubic metres per second, so the statement is True.`,
-      `**E.** → False
-
-At a head of $4$ metres:
+The recovered law is $Q=16h^{\\frac{3}{2}}$. At a head of $4$ metres:
 
 $$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}=2^{3}
+4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
+$$
+
+$$
+(2^{2})^{\\frac{3}{2}}=2^{3}
 $$
 
 $$
@@ -11293,12 +13812,33 @@ $$
 $$
 
 $$
-Q(4)=16\\cdot 8=128
+Q(4)=16\\cdot 8
 $$
 
-Because $128>100$, the weir does not still discharge under $100$ cubic metres per second, so the statement is False.`,
+$$
+16\\cdot 8=128
+$$
+
+$$
+128>100
+$$
+
+The weir does not still discharge under $100$ cubic metres per second, so the statement is False.`,
+      `**E.** → True
+
+The recovered law is $Q=16h^{\\frac{3}{2}}$, with $Q(0.25)=2$ and $Q(1)=16$. The extra discharge from $0.25$ m to $1$ m is
+
+$$
+16-2=14
+$$
+
+$$
+14>2
+$$
+
+The extra already exceeds the $0.25$ m gauging, so the statement is True.`,
     ],
-    difficulty_level: `3/5`,
+    difficulty_level: `4/5`,
     sort_order: 87,
     solution_overview: `The rating curve is $Q(h)=Ah^{\\frac{3}{2}}$ in metres and cubic metres per second, pinned by the gauging $Q(0.25)=2$. The team wants the same curve in centimetres, and in litres per second.
 
@@ -11330,13 +13870,13 @@ $$Q=16\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, L/s)} \\tag{3}$$
 
 $$0.25^{\\frac{3}{2}}=0.5^{3}=0.125 \\;\\Rightarrow\\; A=\\frac{2}{0.125}=16$$
 
-**2.** Switching the head to centimetres leaves the exponent $\\frac{3}{2}$. Because that exponent exceeds $1$, discharge outruns head, and doubling head multiplies discharge by $2^{\\frac{3}{2}}\\approx 2.83$, not by $2$.
+**2.** Switching the head to centimetres rescales the coefficient to $\\frac{16}{100^{\\frac{3}{2}}}=\\frac{16}{1000}=0.016$, which is not larger than $0.02$. Doubling head multiplies discharge by $2^{\\frac{3}{2}}\\approx 2.83$, not by $2$.
 
 **3.** Levels against the thresholds:
 
-$$Q(1)=16<20, \\qquad Q(4)=128>100$$
+$$Q(1)=16<20, \\qquad Q(4)=128>100, \\qquad Q(1)-Q(0.25)=14>2$$
 
-**Answer.** $A=16$ | $Q=16h^{\\frac{3}{2}}$ (m, m$^{3}$/s) | $Q=0.016h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, m$^{3}$/s) | $Q=16h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, L/s)`,
+**Answer.** $A=16$ | $Q=16h^{\\frac{3}{2}}$ (m, m$^{3}$/s) | $A'=0.016$ (cm, m$^{3}$/s) | $Q(4)=128$`,
   },
   {
     id: `math-8-88`,

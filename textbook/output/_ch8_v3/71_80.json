@@ -95,29 +95,29 @@
     "title": "Average Product on a Bottling Line",
     "context": "Output on a bottling line follows $Q(L)=A L^{r}$ units a shift, where $L>0$ is labour hours, with both constants unknown. Sixteen hours produce ninety-six units, and eighty-one hours produce three hundred and twenty-four. Average product is output per labour hour, $Q(L)/L$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Average product is a power function of labour hours, but its exponent is not the exponent of output.",
       "At $16$ hours, average product is under $7$ units an hour.",
       "To double output she must double the labour hours.",
-      "Average product falls as labour hours rise.",
-      "At $81$ hours, average product still exceeds $5$ units an hour."
+      "Average product falls by more than $1.5$ units an hour from $16$ to $81$ hours.",
+      "At $81$ hours, average product still exceeds $5$ units an hour.",
+      "The extra output from $16$ to $81$ hours already exceeds the $16$-hour output."
     ],
     "answer_key": [
       true,
-      true,
       false,
       true,
-      false
+      false,
+      true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe two shifts give $r=\\frac{3}{4}$. Dividing output by labour subtracts one:\n\n$$\n\\frac{Q(L)}{L}=A L^{-\\frac{1}{4}}\n$$\n\nThe exponents $\\frac{3}{4}$ and $-\\frac{1}{4}$ differ, so the statement is True.",
-      "**B.** → True\n\nSixteen hours produce $96$ units, so average product is just that quotient:\n\n$$\n\\frac{Q(16)}{16}=\\frac{96}{16}=6\n$$\n\nSix is under seven, so the statement is True.",
-      "**C.** → False\n\nThe shift ratio already gave $r=\\frac{3}{4}$. Doubling output would need a labour factor $k$ with\n\n$$\nk^{\\frac{3}{4}}=2\n$$\n\n$$\nk=2^{\\frac{4}{3}}\\approx 2.52\n$$\n\nShe must more than double the hours. Doubling labour would multiply output only by $2^{\\frac{3}{4}}\\approx 1.68$, short of $2$, so the statement is False.",
-      "**D.** → True\n\nAverage product is $A L^{-\\frac{1}{4}}$. The leftover exponent is negative: each extra hour adds less output than the hour before it, and spreading that output over more hours pulls the average down. At the recorded shifts the averages are $6$ and $4$, so the statement is True.",
-      "**E.** → False\n\nEighty-one hours produce $324$ units, so\n\n$$\n\\frac{Q(81)}{81}=\\frac{324}{81}=4\n$$\n\nFour does not exceed five. The sixteen-hour average is $6$, but by eighty-one hours the average has already fallen to $4$, so the statement is False."
+      "**A.** → True\n\nThe recovered law is $Q(L)=12L^{\\frac{3}{4}}$. Average product at sixteen hours is the recorded output over the hours:\n\n$$\n\\frac{Q(16)}{16}=\\frac{96}{16}\n$$\n\n$$\n\\frac{96}{16}=6\n$$\n\nSix sits under seven, so the statement is True.",
+      "**B.** → False\n\nThe recovered law is $Q(L)=12L^{\\frac{3}{4}}$. Doubling output is a labour factor $k$ with\n\n$$\nk^{\\frac{3}{4}}=2\n$$\n\n$$\nk=2^{\\frac{4}{3}}\n$$\n\n$$\n2^{\\frac{4}{3}}=2\\cdot 2^{\\frac{1}{3}}\\approx 2.52\n$$\n\nShe must multiply hours by about $2.52$, not by $2$. Doubling labour would multiply output only by $2^{\\frac{3}{4}}\\approx 1.68$, short of $2$, so the statement is False.",
+      "**C.** → True\n\nAverage product at sixteen hours is already $6$. At eighty-one hours:\n\n$$\n\\frac{Q(81)}{81}=\\frac{324}{81}\n$$\n\n$$\n\\frac{324}{81}=4\n$$\n\n$$\n6-4=2\n$$\n\nThe fall of $2$ exceeds $1.5$ units an hour, so the statement is True.",
+      "**D.** → False\n\nAverage product at eighty-one hours is\n\n$$\n\\frac{Q(81)}{81}=\\frac{324}{81}\n$$\n\n$$\n\\frac{324}{81}=4\n$$\n\nFour does not exceed five, so the statement is False.",
+      "**E.** → True\n\nThe extra output from sixteen hours to eighty-one hours is\n\n$$\nQ(81)-Q(16)=324-96\n$$\n\n$$\n324-96=228\n$$\n\nThe sixteen-hour output is $96$. Because $228>96$, the extra already exceeds that reading, so the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 74,
-    "solution_overview": "Output follows $Q(L)=AL^{r}$. Sixteen hours give $96$ units and eighty-one hours give $324$. Average product is $Q/L$.\n\n**Part 1: Building the model.**\n\nLet $L$ = labour hours and $Q$ = units. The ratio isolates $r$; the sixteen-hour level then pins $A$. Dividing by $L$ subtracts one from the exponent.\n\n**1. Translate: the ratio.**\n\n$$\\frac{324}{96}=\\left(\\frac{81}{16}\\right)^{r}$$\n\n**2. Translate: the sixteen-hour level.**\n\n$$A\\cdot 16^{r}=96$$\n\n**Part 2: The model.**\n\n$$Q(L)=12L^{\\frac{3}{4}} \\tag{1}$$\n\n$$\\frac{Q(L)}{L}=12L^{-\\frac{1}{4}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Average product is a power, but with exponent $-\\frac{1}{4}$, not $\\frac{3}{4}$. It falls as $L$ rises: $6$ at $L=16$ and $4$ at $L=81$.\n\n**2.** Doubling output needs the hour-factor $2^{\\frac{4}{3}}\\approx 2.52$, not $2$. At $L=81$, average product is $4$, which does not exceed $5$.\n\n**Answer.** $r=\\frac{3}{4}$ | $A=12$ | average $6$ at $L=16$ and $4$ at $L=81$"
+    "solution_overview": "Output follows $Q(L)=AL^{r}$. Sixteen hours give $96$ units and eighty-one hours give $324$. Average product is $Q/L$.\n\n**Part 1: Building the model.**\n\nLet $L$ = labour hours and $Q$ = units. The ratio isolates $r$; the sixteen-hour level then pins $A$. Dividing by $L$ subtracts one from the exponent.\n\n**1. Translate: the ratio.**\n\n$$\\frac{324}{96}=\\left(\\frac{81}{16}\\right)^{r}$$\n\n**2. Translate: the sixteen-hour level.**\n\n$$A\\cdot 16^{r}=96$$\n\n**Part 2: The model.**\n\n$$Q(L)=12L^{\\frac{3}{4}} \\tag{1}$$\n\n$$\\frac{Q(L)}{L}=12L^{-\\frac{1}{4}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Average product is $6$ at $L=16$ and $4$ at $L=81$. The fall of $2$ already exceeds $1.5$. Doubling output needs the hour-factor $2^{\\frac{4}{3}}\\approx 2.52$, not $2$.\n\n**2.** The extra from $16$ to $81$ hours is $228$, which already exceeds the $16$-hour output of $96$. At $L=81$, average product is $4$, which does not exceed $5$.\n\n**Answer.** $r=\\frac{3}{4}$ | $A=12$ | AP $6$ then $4$ | extra $228>96$ | $k=2^{\\frac{4}{3}}$ to double $Q$"
   },
   {
     "id": "math-8-75",
@@ -199,15 +199,15 @@
       false
     ],
     "tactical_explanations": [
-      "**A.** → False\n\nThe multiplier of $A x^{\\frac{3}{2}}$ is the input factor to the power $\\frac{3}{2}$, and $A$ cancels:\n\n$$\n\\frac{f(4x)}{f(x)}=4^{\\frac{3}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\nCost is multiplied by eight, not by four. The four-fold factor would belong to exponent $1$, so the statement is False.",
-      "**B.** → True\n\nHandling is $f(x)=6x^{\\frac{3}{2}}$. At index nine:\n\n$$\n9^{\\frac{3}{2}}=27\n$$\n\n$$\nf(9)=6\\cdot 27=162\n$$\n\nOne hundred and sixty-two sits above one hundred and fifty, so the statement is True.",
-      "**C.** → True\n\nThe exponent $\\frac{3}{2}$ is larger than one, so cost outruns the pallet-volume index. A four-fold rise in the index multiplies cost by eight, not by four, so the statement is True.",
-      "**D.** → False\n\nHandling is $f(x)=6x^{\\frac{3}{2}}$. Equal cost gaps would need a linear rule, exponent $1$. Differentiate:\n\n$$\nf'(x)=9x^{\\frac{1}{2}}\n$$\n\nThe slope itself rises with $x$, so later index steps add more euros than earlier ones of the same width, so the statement is False.",
-      "**E.** → False\n\nHandling is $f(x)=6x^{\\frac{3}{2}}$, and $f(9)=162$. At index twenty-five:\n\n$$\n25^{\\frac{3}{2}}=125\n$$\n\n$$\nf(25)=6\\cdot 125=750\n$$\n\n$$\nf(25)-f(9)=750-162=588\n$$\n\nFive hundred and eighty-eight is not under five hundred, so the statement is False."
+      "**A.** → False\n\nThe recovered law is $f(x)=6x^{\\frac{3}{2}}$. Multiplying the index by $4$ multiplies cost by\n\n$$\n\\frac{f(4x)}{f(x)}=4^{\\frac{3}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\nCost is multiplied by eight, not by four, so the statement is False.",
+      "**B.** → True\n\nThe recovered law is $f(x)=6x^{\\frac{3}{2}}$. At index nine:\n\n$$\n9^{\\frac{3}{2}}=27\n$$\n\n$$\nf(9)=6\\cdot 27\n$$\n\n$$\n6\\cdot 27=162\n$$\n\nOne hundred and sixty-two sits above $150$ euros, so the statement is True.",
+      "**C.** → True\n\nAt index four:\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\nf(4)=6\\cdot 8\n$$\n\n$$\n6\\cdot 8=48\n$$\n\nIndex $16$ is four times $4$, and\n\n$$\n16^{\\frac{3}{2}}=64\n$$\n\n$$\nf(16)=6\\cdot 64\n$$\n\n$$\n6\\cdot 64=384\n$$\n\n$$\n\\frac{384}{48}=8\n$$\n\nThe index rose by a factor of $4$ while cost rose by a factor of $8$. Cost outruns the index, so the statement is True.",
+      "**D.** → False\n\nEqual cost gaps would need a linear rule. Handling is $f(x)=6x^{\\frac{3}{2}}$, so the slope is\n\n$$\nf'(x)=9x^{\\frac{1}{2}}\n$$\n\n$$\nf'(4)=9\\cdot 2\n$$\n\n$$\n9\\cdot 2=18\n$$\n\n$$\nf'(9)=9\\cdot 3\n$$\n\n$$\n9\\cdot 3=27\n$$\n\nThe same one-unit gap adds $18$ euros at index $4$ and $27$ euros at index $9$. Equal index gaps do not produce equal cost gaps, so the statement is False.",
+      "**E.** → False\n\nAt index nine the cost is $162$. At index twenty-five:\n\n$$\n25^{\\frac{3}{2}}=125\n$$\n\n$$\nf(25)=6\\cdot 125\n$$\n\n$$\n6\\cdot 125=750\n$$\n\n$$\nf(25)-f(9)=750-162\n$$\n\n$$\n750-162=588\n$$\n\nFive hundred and eighty-eight is not under $500$, so the statement is False."
     ],
     "difficulty_level": "5/5",
     "sort_order": 77,
-    "solution_overview": "Handling cost is $f(x)=Ax^{\\frac{3}{2}}$, and the only record is $f(16)-f(4)=336$.\n\n**Part 1: Building the model.**\n\nLet $x$ = pallet-volume index and $f$ = daily euros. No single level is known, so $A$ comes out of a difference.\n\n**1. Translate: the surviving record.**\n\n$$A\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336$$\n\n**Part 2: The model.**\n\n$$f(x)=6x^{\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{f(kx)}{f(x)}=k^{\\frac{3}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** A factor of $4$ on the index multiplies cost by $8$, not by $4$. Because $r>1$, cost grows faster than the index, and equal index gaps do not give equal cost gaps.\n\n**2.** $f(9)=162>150$ and $f(25)-f(9)=588$, which is not under $500$.\n\n**Answer.** $A=6$ | $f(9)=162$ | $f(25)=750$ | factor of $4$ on volume multiplies cost by $8$"
+    "solution_overview": "Handling cost is $f(x)=Ax^{\\frac{3}{2}}$, and the only record is $f(16)-f(4)=336$.\n\n**Part 1: Building the model.**\n\nLet $x$ = pallet-volume index and $f$ = daily euros. No single level is known, so $A$ comes out of a difference.\n\n**1. Translate: the surviving record.**\n\n$$A\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336$$\n\n**Part 2: The model.**\n\n$$f(x)=6x^{\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{f(kx)}{f(x)}=k^{\\frac{3}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $f(4)=48$ and $f(16)=384$, so a factor of $4$ on the index multiplies cost by $8$, not by $4$. The slope $f'(x)=9x^{\\frac{1}{2}}$ rises, so equal index gaps do not give equal cost gaps.\n\n**2.** $f(9)=162>150$ and $f(25)-f(9)=588$, which is not under $500$.\n\n**Answer.** $A=6$ | $f(4)=48$ | $f(9)=162$ | $f(16)=384$ | $f(25)=750$ | extra $588$"
   },
   {
     "id": "math-8-78",
@@ -215,29 +215,29 @@
     "title": "Inverting a Wastewater Load Model Against a Permit Ceiling",
     "context": "A dye-house discharges a wastewater load of $W(s)=A s^{\\frac{3}{2}}$ kilograms a day, where $s>0$ is a production scale index. At scale nine the daily load is one hundred and thirty-five kilograms. The site permit caps the daily load at three hundred and twenty kilograms, and the plant wants the largest scale it may run. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The scale needed for a given load is itself a power function of that load.",
       "The largest admissible scale is already below $20$.",
       "Doubling the permit ceiling doubles the admissible scale index.",
       "If the coefficient doubled, the admissible scale under the same ceiling would be halved.",
-      "At scale index $4$ the daily load is under $50$ kilograms."
+      "At scale index $4$ the daily load is under $50$ kilograms.",
+      "The extra load from scale $4$ to scale $9$ already exceeds the load at scale $4$."
     ],
     "answer_key": [
       true,
+      false,
+      false,
       true,
-      false,
-      false,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nA power with a nonzero exponent inverts to another power. Load is $W=A s^{\\frac{3}{2}}$, so\n\n$$\ns=\\left(\\frac{W}{A}\\right)^{\\frac{2}{3}}\n$$\n\nThat is a constant times $W^{\\frac{2}{3}}$, a power of load, so the statement is True.",
-      "**B.** → True\n\nLoad is $W(s)=5s^{\\frac{3}{2}}$. At the $320$ kilogram ceiling:\n\n$$\n5s^{\\frac{3}{2}}=320\n$$\n\n$$\ns^{\\frac{3}{2}}=64\n$$\n\n$$\ns=64^{\\frac{2}{3}}\n$$\n\n$$\n64^{\\frac{1}{3}}=4\n$$\n\n$$\ns=16\n$$\n\nThe exponent $\\frac{3}{2}$ is positive, so every larger index breaches the permit. Sixteen sits below twenty, so the statement is True.",
-      "**C.** → False\n\nThe inverse is $s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}$. Doubling the ceiling multiplies permitted scale by\n\n$$\n2^{\\frac{2}{3}}\\approx 1.59\n$$\n\nnot by $2$. The inverse exponent $\\frac{2}{3}$ is smaller than one, so permitted scale grows more slowly than the permitted load, so the statement is False.",
-      "**D.** → False\n\nLoad is $W=5s^{\\frac{3}{2}}$, and the ceiling gives $s=16$. Doubling the coefficient to $10$ gives\n\n$$\n10s^{\\frac{3}{2}}=320\n$$\n\n$$\ns^{\\frac{3}{2}}=32\n$$\n\n$$\ns=32^{\\frac{2}{3}}\\approx 10.08\n$$\n\nHalving would require $s=8$. The scale factor is $2^{-\\frac{2}{3}}\\approx 0.63$, not $\\frac{1}{2}$, so the statement is False.",
-      "**E.** → True\n\nLoad is $W(s)=5s^{\\frac{3}{2}}$. At scale four:\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\nW(4)=5\\cdot 8=40\n$$\n\nForty kilograms is under fifty, so the statement is True."
+      "**A.** → True\n\nThe recovered law is $W(s)=5s^{\\frac{3}{2}}$. The $320$ kilogram ceiling solves\n\n$$\n5s^{\\frac{3}{2}}=320\n$$\n\n$$\ns^{\\frac{3}{2}}=64\n$$\n\n$$\ns=64^{\\frac{2}{3}}\n$$\n\n$$\n64^{\\frac{1}{3}}=4\n$$\n\n$$\ns=4^{2}\n$$\n\n$$\n4^{2}=16\n$$\n\nSixteen sits below twenty. Every larger index breaches the permit, so the statement is True.",
+      "**B.** → False\n\nThe recovered inverse is $s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}$, and the $320$ kg cap already gives $s=16$. Doubling the ceiling to $640$ kg multiplies permitted scale by\n\n$$\n2^{\\frac{2}{3}}\\approx 1.587\n$$\n\n$$\ns=16\\cdot 2^{\\frac{2}{3}}\\approx 25.4\n$$\n\nAbout $25.4$ is not $32$. Doubling the ceiling does not double the admissible scale, so the statement is False.",
+      "**C.** → False\n\nIf the coefficient doubled to $10$, the same ceiling would solve\n\n$$\n10s^{\\frac{3}{2}}=320\n$$\n\n$$\ns^{\\frac{3}{2}}=32\n$$\n\n$$\ns=32^{\\frac{2}{3}}\n$$\n\n$$\ns=16\\cdot 2^{-\\frac{2}{3}}\\approx 10.08\n$$\n\nHalving $16$ would give $8$. The admissible scale falls to about $10.08$, not to $8$, so the statement is False.",
+      "**D.** → True\n\nThe recovered law is $W(s)=5s^{\\frac{3}{2}}$. At scale four:\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\nW(4)=5\\cdot 8\n$$\n\n$$\n5\\cdot 8=40\n$$\n\nForty kilograms is under fifty, so the statement is True.",
+      "**E.** → True\n\nAt scale nine the load is the recorded $135$ kilograms. At scale four it is $40$. The extra is\n\n$$\nW(9)-W(4)=135-40\n$$\n\n$$\n135-40=95\n$$\n\nBecause $95>40$, the extra already exceeds the load at scale $4$, so the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "sort_order": 78,
-    "solution_overview": "Load is $W(s)=As^{\\frac{3}{2}}$ kilograms a day. At $s=9$ the load is $135$, and the permit caps it at $320$.\n\n**Part 1: Building the model.**\n\nLet $s$ = scale index and $W$ = daily kilograms. The recorded level pins $A$. A cap on load becomes a cap on scale by inversion.\n\n**1. Translate: the recorded load.**\n\n$$A\\cdot 9^{\\frac{3}{2}}=135$$\n\n**2. Translate: the inverse.**\n\n$$s=\\left(\\frac{W}{A}\\right)^{\\frac{2}{3}}$$\n\n**Part 2: The model.**\n\n$$W(s)=5s^{\\frac{3}{2}} \\tag{1}$$\n\n$$s(W)=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The inverse (2) is a power of load. The binding permit gives $s=16<20$, and $W(4)=40<50$.\n\n**2.** Doubling the cap raises the index by $2^{\\frac{2}{3}}\\approx 1.59$, not by $2$. Doubling $A$ cuts the index by $2^{-\\frac{2}{3}}\\approx 0.63$, not by $\\frac{1}{2}$.\n\n**Answer.** $A=5$ | largest $s=16$ | $W(4)=40$ | cap factor $2$ raises $s$ by $2^{\\frac{2}{3}}$"
+    "solution_overview": "Load is $W(s)=As^{\\frac{3}{2}}$ kilograms a day. At $s=9$ the load is $135$, and the permit caps it at $320$.\n\n**Part 1: Building the model.**\n\nLet $s$ = scale index and $W$ = daily kilograms. The recorded level pins $A$. A cap on load becomes a cap on scale by inversion.\n\n**1. Translate: the recorded load.**\n\n$$A\\cdot 9^{\\frac{3}{2}}=135$$\n\n**2. Translate: the inverse.**\n\n$$s=\\left(\\frac{W}{A}\\right)^{\\frac{2}{3}}$$\n\n**Part 2: The model.**\n\n$$W(s)=5s^{\\frac{3}{2}} \\tag{1}$$\n\n$$s(W)=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The binding permit gives $s=16<20$, and $W(4)=40<50$. The extra from scale $4$ to $9$ is $95$, which already exceeds $W(4)=40$.\n\n**2.** Doubling the cap to $640$ raises the index to $16\\cdot 2^{\\frac{2}{3}}\\approx 25.4$, not to $32$. Doubling $A$ cuts the index to $16\\cdot 2^{-\\frac{2}{3}}\\approx 10.08$, not to $8$.\n\n**Answer.** $A=5$ | largest $s=16$ | $W(4)=40$ | extra $95>40$ | doubled cap $s\\approx 25.4$"
   },
   {
     "id": "math-8-79",
@@ -275,28 +275,28 @@
     "title": "Geometrically Similar Bells Cast From One Pattern",
     "context": "A foundry casts geometrically similar bronze bells from a single pattern, so mass follows $M(h)=A h^{3}$ kilograms, where $h>0$ is height in metres. The pattern book omits the coefficient; it records only that a finished bell of height one half metre was weighed at thirty kilograms. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Mass grows faster than height.",
       "A bell of height $1.5$ m already weighs more than $700$ kg.",
       "Doubling a bell's height doubles its mass.",
-      "Mass per metre of height is the same at every height.",
-      "A one-metre bell already weighs more than $200$ kg."
+      "A one-metre bell already weighs more than $200$ kg.",
+      "Two $1$ m bells together already fall short of one $1.5$ m bell.",
+      "Raising height from $1$ m to $2$ m adds more than $1600$ kg."
     ],
     "answer_key": [
       true,
+      false,
       true,
-      false,
-      false,
+      true,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nMass follows $M(h)=240h^{3}$. The exponent $3$ is larger than one, so mass outruns height: each extra metre of height adds more mass than the metre before it. Doubling height multiplies mass by\n\n$$\n\\frac{M(2h)}{M(h)}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\nnot by $2$. Mass grows faster than height, so the statement is True.",
-      "**B.** → True\n\nThe weighing pins $A=240$, so $M(h)=240h^{3}$. At one and a half metres, write $1.5=\\frac{3}{2}$:\n\n$$\n\\left(\\frac{3}{2}\\right)^{3}=\\frac{27}{8}\n$$\n\n$$\nM\\left(\\frac{3}{2}\\right)=240\\cdot\\frac{27}{8}=810\n$$\n\nEight hundred and ten exceeds seven hundred, so the statement is True.",
-      "**C.** → False\n\nMass is a cube of height, so a factor of $2$ on height multiplies mass by\n\n$$\n2^{3}=8\n$$\n\nnot by $2$. The half-metre bell at $30$ kg would become $240$ kg at one metre, not $60$ kg, so the statement is False.",
-      "**D.** → False\n\nMass is $M(h)=240h^{3}$, so mass per metre of height is\n\n$$\n\\frac{M(h)}{h}=240h^{2}\n$$\n\nwhich still grows with $h$. At half a metre the quotient is $60$ kg per metre; at one metre it is $240$. The two figures differ, so the statement is False.",
-      "**E.** → True\n\nMass is $M(h)=240h^{3}$. At one metre the cube is $1$, so the mass is just the coefficient $240$. Two hundred and forty exceeds two hundred, so the statement is True."
+      "**A.** → True\n\nThe half-metre weighing pins the coefficient:\n\n$$\nA\\left(\\frac{1}{2}\\right)^{3}=30\n$$\n\n$$\nA\\cdot\\frac{1}{8}=30\n$$\n\n$$\nA=240\n$$\n\nso $M(h)=240h^{3}$. At one and a half metres:\n\n$$\n\\left(\\frac{3}{2}\\right)^{3}=\\frac{27}{8}\n$$\n\n$$\nM\\left(\\frac{3}{2}\\right)=240\\cdot\\frac{27}{8}\n$$\n\n$$\n240\\cdot\\frac{27}{8}=810\n$$\n\nEight hundred and ten exceeds $700$ kg, so the statement is True.",
+      "**B.** → False\n\nThe recovered law is $M(h)=240h^{3}$. Doubling height multiplies mass by\n\n$$\n\\frac{M(2h)}{M(h)}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\nMass rises eightfold, not twofold. The half-metre bell of $30$ kg would become $240$ kg at one metre, not $60$ kg, so the statement is False.",
+      "**C.** → True\n\nAt one metre the cube is $1$, so the mass is the coefficient itself:\n\n$$\nM(1)=240\\cdot 1^{3}\n$$\n\n$$\nM(1)=240\n$$\n\nTwo hundred and forty exceeds $200$ kg, so the statement is True.",
+      "**D.** → True\n\nTwo one-metre bells weigh\n\n$$\n2\\cdot M(1)=2\\cdot 240\n$$\n\n$$\n2\\cdot 240=480\n$$\n\nOne $1.5$ m bell weighs $810$ kg, as in A. Because $480<810$, the pair already falls short, so the statement is True.",
+      "**E.** → True\n\nAt two metres:\n\n$$\nM(2)=240\\cdot 2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\n$$\nM(2)=240\\cdot 8=1920\n$$\n\n$$\nM(2)-M(1)=1920-240\n$$\n\n$$\n1920-240=1680\n$$\n\nOne thousand six hundred and eighty exceeds $1600$ kg, so the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 80,
-    "solution_overview": "Similar bells obey $M(h)=Ah^{3}$, and the single weighing $M(0.5)=30$ fixes the coefficient.\n\n**Part 1: Building the model.**\n\nLet $h$ = height in metres and $M$ = mass in kilograms. Geometric similarity fixes the exponent at $3$; one observed pair pins $A$.\n\n**1. Translate: the weighed bell.**\n\n$$A(0.5)^{3}=30$$\n\n**2. Translate: the scaling rule.**\n\n$$\\frac{M(kh)}{M(h)}=k^{3}$$\n\n**Part 2: The model.**\n\n$$M(h)=240h^{3} \\tag{1}$$\n\n$$M(kh)=k^{3}M(h) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because the exponent is $3>1$, mass outruns height. Doubling height multiplies mass by $8$, not by $2$. Mass per metre is $240h^{2}$, not constant.\n\n**2.** $M(1.5)=810>700$ and $M(1)=240>200$.\n\n**Answer.** $A=240$ | $M(1.5)=810$ | doubling $\\times 8$ | $M(1)=240$"
+    "solution_overview": "Similar bells obey $M(h)=Ah^{3}$, and the single weighing $M(0.5)=30$ fixes the coefficient.\n\n**Part 1: Building the model.**\n\nLet $h$ = height in metres and $M$ = mass in kilograms. Geometric similarity fixes the exponent at $3$; one observed pair pins $A$.\n\n**1. Translate: the weighed bell.**\n\n$$A(0.5)^{3}=30$$\n\n**2. Translate: the scaling rule.**\n\n$$\\frac{M(kh)}{M(h)}=k^{3}$$\n\n**Part 2: The model.**\n\n$$M(h)=240h^{3} \\tag{1}$$\n\n$$M(kh)=k^{3}M(h) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $M(1.5)=810>700$ and $M(1)=240>200$. Two $1$ m bells weigh $480$, which already falls short of the $810$ kg bell.\n\n**2.** Doubling height multiplies mass by $8$, not by $2$. Raising height from $1$ m to $2$ m adds $1680$ kg, which exceeds $1600$.\n\n**Answer.** $A=240$ | $M(1)=240$ | $M(1.5)=810$ | two $1$ m bells $480<810$ | $M(2)-M(1)=1680$"
   }
 ]
