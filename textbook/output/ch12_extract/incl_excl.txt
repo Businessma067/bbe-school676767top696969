@@ -1,0 +1,2661 @@
+
+
+===== PAGE 1 =====
+
+Inclusion-Exclusion  Probability  —  Practice  Questions  (Part  1)  Questions  1–5  —  the  inclusion-exclusion  principle  for  two  and  three  events  
+Each  question  gives  the  individual  probability  of  two  or  three  events,  along  with  the  probability  of  their  pairwise  
+(and,
+ 
+for
+ 
+three
+ 
+events,
+ 
+triple)
+ 
+overlaps,
+ 
+and
+ 
+asks
+ 
+you
+ 
+to
+ 
+work
+ 
+out
+ 
+quantities
+ 
+like
+ 
+the
+ 
+probability
+ 
+that
+ 
+at
+ 
+least
+ 
+one
+ 
+event
+ 
+occurs,
+ 
+that
+ 
+none
+ 
+occur,
+ 
+that
+ 
+exactly
+ 
+one
+ 
+occurs,
+ 
+or
+ 
+a
+ 
+specific
+ 
+overlap.
+ 
+As
+ 
+in
+ 
+the
+ 
+conditional-probability
+ 
+sets,
+ 
+every
+ 
+statement
+ 
+compares
+ 
+one
+ 
+computed
+ 
+probability
+ 
+to
+ 
+a
+ 
+fixed
+ 
+percentage
+ 
+—
+ 
+never
+ 
+two
+ 
+unknown
+ 
+quantities
+ 
+to
+ 
+each
+ 
+other
+ 
+—
+ 
+and
+ 
+the
+ 
+wording
+ 
+varies
+ 
+("exceeds,"
+ 
+"is
+ 
+at
+ 
+least,"
+ 
+"is
+ 
+under,"
+ 
+"is
+ 
+above,"
+ 
+"is
+ 
+below,"
+ 
+and
+ 
+the
+ 
+plain
+ 
+"is
+ 
+greater
+ 
+than").
+ 
+Three
+ 
+of
+ 
+the
+ 
+five
+ 
+questions
+ 
+involve
+ 
+two
+ 
+events;
+ 
+the
+ 
+other
+ 
+two
+ 
+involve
+ 
+three.
+ 
+The
+ 
+number
+ 
+of
+ 
+TRUE
+ 
+statements
+ 
+is
+ 
+not
+ 
+fixed
+ 
+and
+ 
+ranges
+ 
+across
+ 
+this
+ 
+set
+ 
+from
+ 
+a
+ 
+single
+ 
+TRUE
+ 
+statement
+ 
+up
+ 
+to
+ 
+all
+ 
+five.
+  
+Section  1  —  Questions 
+Question  1  Difficulty:  3/5  —  two  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+At  a  mid-size  company,  65%  of  employees  regularly  use  Software  Tool  A,  and  45%  regularly  use  Software  Tool  B.  
+30%
+ 
+of
+ 
+employees
+ 
+use
+ 
+both
+ 
+tools
+ 
+regularly.
+ 
+One
+ 
+employee
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+  
+A  P(the  employee  uses  at  least  one  of  the  two  tools)  exceeds  78%.  
+B  P(the  employee  uses  neither  tool)  is  at  least  22%.  
+C  P(the  employee  uses  exactly  one  of  the  two  tools)  is  above  50%.  
+D  P(the  employee  uses  Tool  A  only,  not  Tool  B)  is  greater  than  30%.  
+E  P(the  employee  uses  Tool  B  only,  not  Tool  A)  is  under  20%.  
+ Question  2  Difficulty:  3/5  —  two  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+A  market  research  firm  found  that  55%  of  surveyed  households  subscribe  to  Streaming  Service  X,  and  40%  
+subscribe
+ 
+to
+ 
+Streaming
+ 
+Service
+ 
+Y.
+ 
+25%
+ 
+of
+ 
+households
+ 
+subscribe
+ 
+to
+ 
+both.
+ 
+One
+ 
+household
+ 
+is
+ 
+selected
+ 
+at
+ 
+random
+ 
+from
+ 
+the
+ 
+survey.
+  
+A  P(the  household  subscribes  to  at  least  one  service)  is  above  72%.  
+B  P(the  household  subscribes  to  neither  service)  exceeds  32%.  
+C  P(the  household  subscribes  to  exactly  one  service)  is  at  least  47%.  
+D  P(the  household  subscribes  to  Service  X  only)  is  under  28%.  
+E  P(the  household  subscribes  to  Service  Y  only)  is  below  20%.  
+ Question  3  
+
+===== PAGE 2 =====
+
+Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+A  gym  tracks  member  usage  of  three  amenities.  50%  of  members  use  the  Pool,  30%  use  the  Sauna,  and  60%  use  
+the
+ 
+Weight
+ 
+Room.
+ 
+20%
+ 
+use
+ 
+both
+ 
+the
+ 
+Pool
+ 
+and
+ 
+the
+ 
+Sauna,
+ 
+35%
+ 
+use
+ 
+both
+ 
+the
+ 
+Pool
+ 
+and
+ 
+the
+ 
+Weight
+ 
+Room,
+ 
+and
+ 
+15%
+ 
+use
+ 
+both
+ 
+the
+ 
+Sauna
+ 
+and
+ 
+the
+ 
+Weight
+ 
+Room.
+ 
+10%
+ 
+of
+ 
+members
+ 
+use
+ 
+all
+ 
+three
+ 
+amenities.
+ 
+One
+ 
+member
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+  
+A  P(the  member  uses  at  least  one  of  the  three  amenities)  is  above  78%.  
+B  P(the  member  uses  none  of  the  three  amenities)  is  at  least  20%.  
+C  P(the  member  uses  both  the  Pool  and  the  Sauna)  is  under  25%.  
+D  P(the  member  uses  all  three  amenities)  is  under  12%.  
+E  P(the  member  uses  both  the  Pool  and  the  Weight  Room)  is  at  least  30%.  
+ Question  4  Difficulty:  3/5  —  two  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+During  a  store-wide  sale,  42%  of  transactions  redeemed  Coupon  1,  and  38%  redeemed  Coupon  2.  18%  of  
+transactions
+ 
+redeemed
+ 
+both
+ 
+coupons.
+ 
+One
+ 
+transaction
+ 
+is
+ 
+selected
+ 
+at
+ 
+random
+ 
+from
+ 
+the
+ 
+sale.
+  
+A  P(the  transaction  redeemed  at  least  one  coupon)  exceeds  60%.  
+B  P(the  transaction  redeemed  neither  coupon)  is  at  least  38%.  
+C  P(the  transaction  redeemed  exactly  one  coupon)  is  above  44%.  
+D  P(the  transaction  redeemed  Coupon  1  only)  is  greater  than  20%.  
+E  P(the  transaction  redeemed  Coupon  2  only)  is  under  22%.  
+ Question  5  Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+A  university  registrar's  data  shows  that  40%  of  students  take  an  Art  elective,  35%  take  a  Music  elective,  and  25%  
+take
+ 
+a
+ 
+Theater
+ 
+elective
+ 
+in
+ 
+a
+ 
+given
+ 
+year.
+ 
+15%
+ 
+take
+ 
+both
+ 
+Art
+ 
+and
+ 
+Music,
+ 
+10%
+ 
+take
+ 
+both
+ 
+Art
+ 
+and
+ 
+Theater,
+ 
+and
+ 
+8%
+ 
+take
+ 
+both
+ 
+Music
+ 
+and
+ 
+Theater.
+ 
+5%
+ 
+of
+ 
+students
+ 
+take
+ 
+all
+ 
+three
+ 
+electives.
+ 
+One
+ 
+student
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+  
+A  P(the  student  takes  at  least  one  of  the  three  electives)  is  above  74%.  
+B  P(the  student  takes  none  of  the  three  electives)  exceeds  26%.  
+C  P(the  student  takes  both  Art  and  Music)  is  at  least  16%.  
+D  P(the  student  takes  all  three  electives)  is  under  4%.  
+
+===== PAGE 3 =====
+
+  
+E  P(the  student  takes  both  Music  and  Theater)  is  less  than  10%.  
+ 
+
+===== PAGE 4 =====
+
+Section  2  —  Answer  Key  &  Explanations 
+As  before,  Step  1  organizes  the  given  probabilities,  and  every  statement  is  answered  with  a  direct  application  of  the  inclusion-exclusion  formula  (or  a  simple  rearrangement  of  it)  compared  against  the  fixed  number  in  the  statement.   Question  1  (3  True,  2  False)  Step  1  —  Organize  the  given  values.  P(A)  =  65%,  P(B)  =  45%,  P(A ∩ B)  =  30%.  P(A ∪ B)  =  P(A)  +  P(B)  −  P(A ∩ B)  =  65%  +  45%  −  30%  =  80%.  
+A  TRUE  P(at  least  one  tool)  =  P(A ∪ B)  =  80%,  which  exceeds  78%.  Formula:  P(A ∪ B)  =  P(A)  +  P(B)  −  P(A ∩ B)  
+B  FALSE  P(neither)  =  1  −  P(A ∪ B)  =  1  −  80%  =  20%,  which  is  not  at  least  22%.  Formula:  P(neither)  =  1  −  P(A ∪ B)  
+C  FALSE  P(exactly  one)  =  P(A ∪ B)  −  P(A ∩ B)  =  80%  −  30%  =  50%,  which  is  exactly  50%,  not  above  it.  Formula:  P(exactly  one)  =  P(A ∪ B)  −  P(A ∩ B)  
+D  TRUE  P(A  only)  =  P(A)  −  P(A ∩ B)  =  65%  −  30%  =  35%,  which  is  greater  than  30%.  Formula:  P(A  only)  =  P(A)  −  P(A ∩ B)  
+E  TRUE  P(B  only)  =  P(B)  −  P(A ∩ B)  =  45%  −  30%  =  15%,  which  is  under  20%.  Formula:  P(B  only)  =  P(B)  −  P(A ∩ B)   Question  2  (1  True,  4  False)  Step  1  —  Organize  the  given  values.  P(X)  =  55%,  P(Y)  =  40%,  P(X ∩ Y)  =  25%.  P(X ∪ Y)  =  55%  +  40%  −  25%  =  70%.  
+A  FALSE  P(at  least  one  service)  =  P(X ∪ Y)  =  70%,  which  is  not  above  72%.  Formula:  P(X ∪ Y)  =  P(X)  +  P(Y)  −  P(X ∩ Y)  
+B  FALSE  P(neither)  =  1  −  70%  =  30%,  which  does  not  exceed  32%.  Formula:  P(neither)  =  1  −  P(X ∪ Y)  
+C  FALSE  P(exactly  one)  =  P(X ∪ Y)  −  P(X ∩ Y)  =  70%  −  25%  =  45%,  which  is  not  at  least  47%.  
+
+===== PAGE 5 =====
+
+Formula:  P(exactly  one)  =  P(X ∪ Y)  −  P(X ∩ Y)  
+D  FALSE  P(X  only)  =  P(X)  −  P(X ∩ Y)  =  55%  −  25%  =  30%,  which  is  not  under  28%.  Formula:  P(X  only)  =  P(X)  −  P(X ∩ Y)  
+E  TRUE  P(Y  only)  =  P(Y)  −  P(X ∩ Y)  =  40%  −  25%  =  15%,  which  is  below  20%  —  every  other  statement  in  this  question  is  FALSE.  Formula:  P(Y  only)  =  P(Y)  −  P(X ∩ Y)   Question  3  (5  True,  0  False)  Step  1  —  Organize  the  given  values.  P(Pool)  =  50%,  P(Sauna)  =  30%,  P(Weights)  =  60%.  P(Pool ∩ Sauna)  =  20%,  P(Pool ∩ Weights)  =  35%,  P(Sauna ∩ Weights)  =  15%.  P(Pool ∩ Sauna ∩ Weights)  =  10%.  P(Pool ∪ Sauna ∪ Weights)  =  (50%+30%+60%)  −  (20%+35%+15%)  +  10%  =  140%  −  70%  +  10%  =  80%.  
+A  TRUE  P(at  least  one  amenity)  =  80%,  which  is  above  78%.  Formula:  P(A ∪ B ∪ C)  =  P(A)+P(B)+P(C)  −  P(A ∩ B) − P(A ∩ C) − P(B ∩ C)  +  P(A ∩ B ∩ C)  
+B  TRUE  P(none)  =  1  −  80%  =  20%,  which  is  at  least  20%  —  the  boundary  itself  counts,  since  "at  least"  includes  equality.  Formula:  P(none)  =  1  −  P(A ∪ B ∪ C)  
+C  TRUE  P(Pool ∩ Sauna)  =  20%,  which  is  given  directly  and  is  under  25%.  Formula:  Read  P(Pool ∩ Sauna)  directly  from  the  given  pairwise  overlap  
+D  TRUE  P(all  three)  =  10%,  which  is  given  directly  and  is  under  12%.  Formula:  Read  P(Pool ∩ Sauna ∩ Weights)  directly  from  the  given  triple  overlap  
+E  TRUE  P(Pool ∩ Weights)  =  35%,  which  is  given  directly  and  is  at  least  30%  —  every  statement  in  this  question  is  TRUE.  Formula:  Read  P(Pool ∩ Weights)  directly  from  the  given  pairwise  overlap   Question  4  (4  True,  1  False)  Step  1  —  Organize  the  given  values.  P(Coupon  1)  =  42%,  P(Coupon  2)  =  38%,  P(Coupon  1 ∩ Coupon  2)  =  18%.  P(Coupon  1 ∪ Coupon  2)  =  42%  +  38%  −  18%  =  62%.  
+A  TRUE  P(at  least  one  coupon)  =  62%,  which  exceeds  60%.  Formula:  P(C1 ∪ C2)  =  P(C1)  +  P(C2)  −  P(C1 ∩ C2)  
+B  TRUE  P(neither)  =  1  −  62%  =  38%,  which  is  at  least  38%  —  the  boundary  itself  counts.  
+
+===== PAGE 6 =====
+
+Formula:  P(neither)  =  1  −  P(C1 ∪ C2)  
+C  FALSE  P(exactly  one)  =  P(C1 ∪ C2)  −  P(C1 ∩ C2)  =  62%  −  18%  =  44%,  which  is  exactly  44%,  not  above  it.  Formula:  P(exactly  one)  =  P(C1 ∪ C2)  −  P(C1 ∩ C2)  
+D  TRUE  P(Coupon  1  only)  =  P(C1)  −  P(C1 ∩ C2)  =  42%  −  18%  =  24%,  which  is  greater  than  20%.  Formula:  P(C1  only)  =  P(C1)  −  P(C1 ∩ C2)  
+E  TRUE  P(Coupon  2  only)  =  P(C2)  −  P(C1 ∩ C2)  =  38%  −  18%  =  20%,  which  is  under  22%.  Formula:  P(C2  only)  =  P(C2)  −  P(C1 ∩ C2)   Question  5  (2  True,  3  False)  Step  1  —  Organize  the  given  values.  P(Art)  =  40%,  P(Music)  =  35%,  P(Theater)  =  25%.  P(Art ∩ Music)  =  15%,  P(Art ∩ Theater)  =  10%,  P(Music ∩ Theater)  =  8%.  P(Art ∩ Music ∩ Theater)  =  5%.  P(Art ∪ Music ∪ Theater)  =  (40%+35%+25%)  −  (15%+10%+8%)  +  5%  =  100%  −  33%  +  5%  =  72%.  
+A  FALSE  P(at  least  one  elective)  =  72%,  which  is  not  above  74%.  Formula:  P(A ∪ B ∪ C)  =  P(A)+P(B)+P(C)  −  P(A ∩ B) − P(A ∩ C) − P(B ∩ C)  +  P(A ∩ B ∩ C)  
+B  TRUE  P(none)  =  1  −  72%  =  28%,  which  exceeds  26%.  Formula:  P(none)  =  1  −  P(A ∪ B ∪ C)  
+C  FALSE  P(Art ∩ Music)  =  15%,  which  is  given  directly  and  is  not  at  least  16%.  Formula:  Read  P(Art ∩ Music)  directly  from  the  given  pairwise  overlap  
+D  FALSE  P(all  three)  =  5%,  which  is  given  directly  and  is  not  under  4%.  Formula:  Read  P(Art ∩ Music ∩ Theater)  directly  from  the  given  triple  overlap  
+E  TRUE  P(Music ∩ Theater)  =  8%,  which  is  given  directly  and  is  less  than  10%.  Formula:  Read  P(Music ∩ Theater)  directly  from  the  given  pairwise  overlap  
+Tip:  for  two  events,  always  start  from  P(A ∪ B)  =  P(A)  +  P(B)  −  P(A ∩ B)  —  the  subtraction  removes  the  double-counted  overlap.  For  three  events,  the  same  idea  needs  one  more  correction:  subtract  all  three  pairwise  overlaps,  then  add  back  the  triple  overlap,  since  it  was  subtracted  three  times  (once  in  each  pairwise  term)  after  being  added  three  times  (once  in  each  single-event  term).  "P(exactly  one)"  and  "P(A  only)"/"P(B  only)"  are  easy  to  mix  up  —  exactly  one  means  the  union  minus  the  full  overlap,  while  "A  only"  means  just  P(A)  minus  the  overlap  it  shares  with  B.  As  in  the  conditional-probability  sets,  watch  for  "is  at  least"  and  "exceeds"  statements  that  land  exactly  on  the  boundary  —  Questions  3  and  4  both  include  a  statement  where  the  computed  value  equals  the  
+
+===== PAGE 7 =====
+
+stated  number  exactly,  and  "at  least"/"at  most"  count  that  as  TRUE  while  a  strict  "is  above"/"is  greater  than"  does  not.  
+
+===== PAGE 8 =====
+
+Inclusion-Exclusion  Probability  —  Practice  Questions  (Part  2,  Advanced)  Questions  6–10  —  three  events  in  every  question,  with  exactly-one,  exactly-two,  and  at-least-two  statements  
+A  harder  continuation  of  Part  1.  Every  question  here  involves  three  events  (not  a  mix  of  two  and  three),  and  the  statements  go  beyond  the  union  and  the  individual  overlaps  used  in  Part  1  —  several  now  ask  for  P(exactly  one  event  occurs),  P(exactly  two  events  occur),  or  P(at  least  two  events  occur).  These  require  breaking  the  three-set  diagram  into  its  seven  disjoint  regions  rather  than  stopping  at  the  basic  inclusion-exclusion  sum,  so  each  question  needs  more  chained  arithmetic  than  Part  1.  As  before,  every  statement  compares  one  computed  probability  to  a  fixed  percentage,  the  wording  is  varied,  and  the  number  of  TRUE  statements  is  not  fixed  —  it  again  ranges  across  this  set  from  a  single  TRUE  statement  up  to  all  five.  
+Core  formulas  used  throughout  this  set:  
+ 
+ Section  1  —  Questions 
+Question  6  Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+A  security  firm  scanned  a  fleet  of  servers  for  three  vulnerability  types.  35%  of  servers  had  a  SQL  injection  vulnerability,  28%  had  a  cross-site  scripting  (XSS)  vulnerability,  and  40%  had  a  misconfiguration  vulnerability.  12%  had  both  the  SQL  injection  and  XSS  vulnerabilities,  15%  had  both  the  SQL  injection  and  misconfiguration  vulnerabilities,  and  10%  had  both  the  XSS  and  misconfiguration  vulnerabilities.  5%  of  servers  had  all  three  vulnerabilities.  One  server  is  selected  at  random.   
+A  P(the  server  has  at  least  one  vulnerability)  is  above  68%.  
+B  P(the  server  has  exactly  one  vulnerability  type)  exceeds  45%.  
+C  P(the  server  has  exactly  two  vulnerability  types)  is  at  least  20%.  
+D  P(the  server  has  all  three  vulnerability  types)  is  under  6%.  
+E  P(the  server  has  at  least  two  vulnerability  types)  is  above  30%.  
+ Question  7  Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+
+
+===== PAGE 9 =====
+
+A  hospital  reviewed  patient  charts  for  three  risk  factors.  45%  of  patients  had  Hypertension,  25%  had  Diabetes,  and  38%  had  Obesity.  14%  had  both  Hypertension  and  Diabetes,  20%  had  both  Hypertension  and  Obesity,  and  12%  had  both  Diabetes  and  Obesity.  7%  of  patients  had  all  three  risk  factors.  One  patient  chart  is  selected  at  random.   
+A  P(the  patient  has  at  least  one  risk  factor)  is  above  70%.  
+B  P(the  patient  has  exactly  one  risk  factor)  exceeds  38%.  
+C  P(the  patient  has  exactly  two  risk  factors)  is  at  least  26%.  
+D  P(the  patient  has  none  of  the  three  risk  factors)  is  under  30%.  
+E  P(the  patient  has  at  least  two  risk  factors)  is  above  30%.  
+ Question  8  Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+A  retailer  analyzed  loyalty  card  ownership  among  its  customers.  52%  held  Card  X,  34%  held  Card  Y,  and  41%  held  Card  Z.  18%  held  both  Card  X  and  Card  Y,  22%  held  both  Card  X  and  Card  Z,  and  15%  held  both  Card  Y  and  Card  Z.  9%  of  customers  held  all  three  cards.  One  customer  is  selected  at  random.   
+A  P(the  customer  holds  at  least  one  card)  exceeds  79%.  
+B  P(the  customer  holds  exactly  one  card)  is  above  42%.  
+C  P(the  customer  holds  exactly  two  cards)  is  at  least  26%.  
+D  P(the  customer  holds  none  of  the  three  cards)  is  under  21%.  
+E  P(the  customer  holds  at  least  two  cards)  exceeds  35%.  
+ Question  9  Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+A  factory  inspected  finished  units  for  three  defect  types.  18%  of  units  had  a  Crack,  22%  had  Discoloration,  and  15%  had  a  Warp.  6%  had  both  a  Crack  and  Discoloration,  5%  had  both  a  Crack  and  a  Warp,  and  4%  had  both  Discoloration  and  a  Warp.  1.5%  of  units  had  all  three  defects.  One  unit  is  selected  at  random.   
+A  P(the  unit  has  at  least  one  defect)  is  above  43%.  
+B  P(the  unit  has  exactly  one  defect  type)  exceeds  30%.  
+C  P(the  unit  has  exactly  two  defect  types)  is  at  least  10%.  
+D  P(the  unit  has  no  defects)  is  under  58%.  
+E  P(the  unit  has  at  least  two  defect  types)  is  under  13%.  
+ 
+
+===== PAGE 10 =====
+
+Question  10  Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+A  survey  asked  respondents  which  of  three  social  media  platforms  they  use.  60%  use  Platform  P,  48%  use  Platform  Q,  and  36%  use  Platform  R.  28%  use  both  P  and  Q,  20%  use  both  P  and  R,  and  18%  use  both  Q  and  R.  12%  of  respondents  use  all  three  platforms.  One  respondent  is  selected  at  random.   
+A  P(the  respondent  uses  at  least  one  platform)  exceeds  88%.  
+B  P(the  respondent  uses  exactly  one  platform)  is  above  50%.  
+C  P(the  respondent  uses  exactly  two  platforms)  is  at  least  28%.  
+D  P(the  respondent  uses  none  of  the  three  platforms)  is  under  12%.  
+E  P(the  respondent  uses  at  least  two  platforms)  exceeds  40%.  
+ 
+
+===== PAGE 11 =====
+
+Section  2  —  Answer  Key  &  Explanations 
+Each  answer  below  computes  the  union  first,  then  breaks  it  down  further  into  the  exactly-one,  exactly-two,  and  (where  needed)  exactly-three  regions  using  the  formulas  in  the  box  below.  As  a  sanity  check,  exactly-one  +  exactly-two  +  exactly-three  +  none  should  always  total  100%.   
+  Question  6  (3  True,  2  False)  Step  1  —  Organize  the  given  values.  P(SQLi)  =  35%,  P(XSS)  =  28%,  P(Misconfig)  =  40%.  P(SQLi ∩ XSS)  =  12%,  P(SQLi ∩ Misconfig)  =  15%,  P(XSS ∩ Misconfig)  =  10%.  P(all  three)  =  5%.  Union  =  (35+28+40)  −  (12+15+10)  +  5  =  103  −  37  +  5  =  71%.  Sum  of  singles  =  103%.  Sum  of  pairwise  =  37%.  
+A  TRUE  P(at  least  one)  =  71%,  which  is  above  68%.  Formula:  P(A ∪ B ∪ C)  =  Σ P(single)  −  Σ  P(pairwise)  +  P(triple)  
+B  FALSE  P(exactly  one)  =  103%  −  2(37%)  +  3(5%)  =  103  −  74  +  15  =  44%,  which  does  not  exceed  45%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2· Σ P(pairwise)  +  3·P(triple)  
+C  TRUE  P(exactly  two)  =  37%  −  3(5%)  =  37  −  15  =  22%,  which  is  at  least  20%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  TRUE  P(all  three)  =  5%,  which  is  given  directly  and  is  under  6%.  Formula:  Read  P(SQLi ∩ XSS ∩ Misconfig)  directly  from  the  given  triple  overlap  
+E  FALSE  P(at  least  two)  =  P(exactly  two)  +  P(all  three)  =  22%  +  5%  =  27%,  which  is  not  above  30%.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)   Question  7  (1  True,  4  False)  Step  1  —  Organize  the  given  values.  P(Hypertension)  =  45%,  P(Diabetes)  =  25%,  P(Obesity)  =  38%.  P(H ∩ D)  =  14%,  P(H ∩ O)  =  20%,  P(D ∩ O)  =  12%.  P(all  three)  =  7%.  Union  =  (45+25+38)  −  (14+20+12)  +  7  =  108  −  46  +  7  =  69%.  Sum  of  singles  =  108%.  Sum  of  pairwise  =  46%.  
+
+
+===== PAGE 12 =====
+
+A  FALSE  P(at  least  one)  =  69%,  which  is  not  above  70%.  Formula:  P(A ∪ B ∪ C)  =  Σ P(single)  −  Σ  P(pairwise)  +  P(triple)  
+B  FALSE  P(exactly  one)  =  108%  −  2(46%)  +  3(7%)  =  108  −  92  +  21  =  37%,  which  does  not  exceed  38%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2· Σ P(pairwise)  +  3·P(triple)  
+C  FALSE  P(exactly  two)  =  46%  −  3(7%)  =  46  −  21  =  25%,  which  is  not  at  least  26%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  FALSE  P(none)  =  1  −  69%  =  31%,  which  is  not  under  30%.  Formula:  P(none)  =  1  −  P(A ∪ B ∪ C)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(all  three)  =  25%  +  7%  =  32%,  which  is  above  30%  —  every  other  statement  in  this  question  is  FALSE.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)   Question  8  (5  True,  0  False)  Step  1  —  Organize  the  given  values.  P(X)  =  52%,  P(Y)  =  34%,  P(Z)  =  41%.  P(X ∩ Y)  =  18%,  P(X ∩ Z)  =  22%,  P(Y ∩ Z)  =  15%.  P(all  three)  =  9%.  Union  =  (52+34+41)  −  (18+22+15)  +  9  =  127  −  55  +  9  =  81%.  Sum  of  singles  =  127%.  Sum  of  pairwise  =  55%.  
+A  TRUE  P(at  least  one  card)  =  81%,  which  exceeds  79%.  Formula:  P(X ∪ Y ∪ Z)  =  Σ P(single)  −  Σ  P(pairwise)  +  P(triple)  
+B  TRUE  P(exactly  one)  =  127%  −  2(55%)  +  3(9%)  =  127  −  110  +  27  =  44%,  which  is  above  42%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2· Σ P(pairwise)  +  3·P(triple)  
+C  TRUE  P(exactly  two)  =  55%  −  3(9%)  =  55  −  27  =  28%,  which  is  at  least  26%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  TRUE  P(none)  =  1  −  81%  =  19%,  which  is  under  21%.  Formula:  P(none)  =  1  −  P(X ∪ Y ∪ Z)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(all  three)  =  28%  +  9%  =  37%,  which  exceeds  35%  —  every  statement  in  this  question  is  TRUE.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)  
+
+===== PAGE 13 =====
+
+Question  9  (2  True,  3  False)  Step  1  —  Organize  the  given  values.  P(Crack)  =  18%,  P(Discoloration)  =  22%,  P(Warp)  =  15%.  P(Crack ∩ Discoloration)  =  6%,  P(Crack ∩ Warp)  =  5%,  P(Discoloration ∩ Warp)  =  4%.  P(all  three)  =  1.5%.  Union  =  (18+22+15)  −  (6+5+4)  +  1.5  =  55  −  15  +  1.5  =  41.5%.  Sum  of  singles  =  55%.  Sum  of  pairwise  =  15%.  
+A  FALSE  P(at  least  one  defect)  =  41.5%,  which  is  not  above  43%.  Formula:  P(A ∪ B ∪ C)  =  Σ P(single)  −  Σ  P(pairwise)  +  P(triple)  
+B  FALSE  P(exactly  one)  =  55%  −  2(15%)  +  3(1.5%)  =  55  −  30  +  4.5  =  29.5%,  which  does  not  exceed  30%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2· Σ P(pairwise)  +  3·P(triple)  
+C  TRUE  P(exactly  two)  =  15%  −  3(1.5%)  =  15  −  4.5  =  10.5%,  which  is  at  least  10%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  FALSE  P(no  defects)  =  1  −  41.5%  =  58.5%,  which  is  not  under  58%.  Formula:  P(none)  =  1  −  P(A ∪ B ∪ C)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(all  three)  =  10.5%  +  1.5%  =  12%,  which  is  under  13%.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)   Question  10  (4  True,  1  False)  Step  1  —  Organize  the  given  values.  P(P)  =  60%,  P(Q)  =  48%,  P(R)  =  36%.  P(P ∩ Q)  =  28%,  P(P ∩ R)  =  20%,  P(Q ∩ R)  =  18%.  P(all  three)  =  12%.  Union  =  (60+48+36)  −  (28+20+18)  +  12  =  144  −  66  +  12  =  90%.  Sum  of  singles  =  144%.  Sum  of  pairwise  =  66%.  
+A  TRUE  P(at  least  one  platform)  =  90%,  which  exceeds  88%.  Formula:  P(P ∪ Q ∪ R)  =  Σ P(single)  −  Σ  P(pairwise)  +  P(triple)  
+B  FALSE  P(exactly  one)  =  144%  −  2(66%)  +  3(12%)  =  144  −  132  +  36  =  48%,  which  is  not  above  50%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2· Σ P(pairwise)  +  3·P(triple)  
+C  TRUE  P(exactly  two)  =  66%  −  3(12%)  =  66  −  36  =  30%,  which  is  at  least  28%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  TRUE  P(none)  =  1  −  90%  =  10%,  which  is  under  12%.  Formula:  P(none)  =  1  −  P(P ∪ Q ∪ R)  
+
+===== PAGE 14 =====
+
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(all  three)  =  30%  +  12%  =  42%,  which  exceeds  40%  —  every  statement  in  this  question  except  B  is  TRUE.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)  
+Tip:  work  these  in  a  fixed  order  —  sum  the  three  singles,  sum  the  three  pairwise  overlaps,  then  apply  each  formula  in  turn  (union,  exactly-one,  exactly-two,  at-least-two)  rather  than  re-deriving  each  one  from  scratch.  P(exactly  two)  is  the  fastest  of  the  harder  quantities  to  get  wrong:  it's  the  sum  of  the  pairwise  overlaps  minus  three  times  the  triple  overlap,  not  minus  just  one  time  —  each  pairwise-overlap  figure  you're  given  (like  P(A ∩ B))  already  includes  the  triple-overlap  region  once,  and  there  are  three  such  pairwise  figures,  so  the  triple  region  gets  removed  three  times  to  leave  only  the  'exactly  two'  slivers  behind.  As  a  running  check,  P(exactly  one)  +  P(exactly  two)  +  P(exactly  three)  +  P(none)  should  always  sum  to  100%.  
+
+===== PAGE 15 =====
+
+Inclusion-Exclusion  Probability  —  
+Practice
+ 
+Questions
+ 
+(Part
+ 
+3,
+ 
+Advanced)
+ 
+Questions  11–15  —  three  events  in  every  question,  with  exactly-one,  exactly-two,  and  at-least-two  statements  
+A  further  continuation  of  Part  2.  Every  question  here  again  involves  three  events,  with  statements  built  around  P(exactly  
+one),
+ 
+P(exactly
+ 
+two),
+ 
+and
+ 
+P(at
+ 
+least
+ 
+two),
+ 
+which
+ 
+require
+ 
+breaking
+ 
+the
+ 
+three-set
+ 
+diagram
+ 
+into
+ 
+its
+ 
+seven
+ 
+disjoint
+ 
+regions.
+ 
+As
+ 
+before,
+ 
+every
+ 
+statement
+ 
+compares
+ 
+one
+ 
+computed
+ 
+probability
+ 
+to
+ 
+a
+ 
+fixed
+ 
+percentage,
+ 
+the
+ 
+wording
+ 
+is
+ 
+varied,
+ 
+and
+ 
+the
+ 
+number
+ 
+of
+ 
+TRUE
+ 
+statements
+ 
+is
+ 
+not
+ 
+fixed
+ 
+—
+ 
+it
+ 
+ranges
+ 
+across
+ 
+this
+ 
+set
+ 
+from
+ 
+a
+ 
+single
+ 
+TRUE
+ 
+statement
+ 
+up
+ 
+to
+ 
+all
+ 
+five.
+ Core  formulas  used  throughout  this  set:   
+Section  1  —  Questions 
+Question  11 Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  An  insurance  agency  reviewed  its  customers'  policies.  48%  of  customers  hold  an  Auto  policy,  38%  hold  a  Home  policy,  and  
+30%
+ 
+hold
+ 
+a
+ 
+Life
+ 
+policy.
+ 
+16%
+ 
+hold
+ 
+both
+ 
+Auto
+ 
+and
+ 
+Home,
+ 
+12%
+ 
+hold
+ 
+both
+ 
+Auto
+ 
+and
+ 
+Life,
+ 
+and
+ 
+10%
+ 
+hold
+ 
+both
+ 
+Home
+ 
+and
+ 
+Life.
+ 
+4%
+ 
+of
+ 
+customers
+ 
+hold
+ 
+all
+ 
+three
+ 
+policy
+ 
+types.
+ 
+One
+ 
+customer
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+  
+A  P(the  customer  holds  at  least  one  policy)  is  above  85%.  
+B  P(the  customer  holds  exactly  one  policy)  exceeds  55%.  
+C  P(the  customer  holds  exactly  two  policies)  is  at  least  25%.  
+D  P(the  customer  holds  none  of  the  three  policies)  is  under  20%.  
+E  P(the  customer  holds  at  least  two  policies)  exceeds  32%.  
+ 
+Question  12 Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  A  university  tracked  pass  rates  across  three  exams.  70%  of  students  passed  Exam  A,  55%  passed  Exam  B,  and  48%  passed  
+Exam
+ 
+C.
+ 
+38%
+ 
+passed
+ 
+both
+ 
+A
+ 
+and
+ 
+B,
+ 
+32%
+ 
+passed
+ 
+both
+ 
+A
+ 
+and
+ 
+C,
+ 
+and
+ 
+28%
+ 
+passed
+ 
+both
+ 
+B
+ 
+and
+ 
+C.
+ 
+20%
+ 
+of
+ 
+students
+ 
+passed
+ 
+all
+ 
+three
+ 
+exams.
+ 
+One
+ 
+student
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+  
+A  P(the  student  passed  at  least  one  exam)  is  above  90%.  
+
+
+===== PAGE 16 =====
+
+B  P(the  student  passed  exactly  one  exam)  exceeds  35%.  
+  C  P(the  student  passed  exactly  two  exams)  is  at  least  40%.  
+D  P(the  student  passed  none  of  the  three  exams)  is  under  8%.  
+E  P(the  student  passed  at  least  two  exams)  exceeds  55%.  
+ Question  13 Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  A  restaurant  surveyed  diners  about  dietary  restrictions.  25%  are  Vegetarian,  18%  are  Gluten-free,  and  15%  are  Dairy-free.  
+8%
+ 
+are
+ 
+both
+ 
+Vegetarian
+ 
+and
+ 
+Gluten-free,
+ 
+6%
+ 
+are
+ 
+both
+ 
+Vegetarian
+ 
+and
+ 
+Dairy-free,
+ 
+and
+ 
+5%
+ 
+are
+ 
+both
+ 
+Gluten-free
+ 
+and
+ 
+Dairy-free.
+ 
+2%
+ 
+of
+ 
+diners
+ 
+have
+ 
+all
+ 
+three
+ 
+restrictions.
+ 
+One
+ 
+diner
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+  
+A  P(the  diner  has  at  least  one  dietary  restriction)  is  above  45%.  
+B  P(the  diner  has  exactly  one  dietary  restriction)  exceeds  30%.  
+C  P(the  diner  has  exactly  two  dietary  restrictions)  is  at  least  15%.  
+D  P(the  diner  has  none  of  the  three  restrictions)  is  under  55%.  
+E  P(the  diner  has  at  least  two  dietary  restrictions)  is  under  16%.  
+ 
+Question  14 Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  A  car  dealership  reviewed  optional  features  on  its  lot.  42%  of  cars  have  a  Sunroof,  55%  have  Leather  seats,  and  48%  have  
+Navigation.
+ 
+25%
+ 
+have
+ 
+both
+ 
+Sunroof
+ 
+and
+ 
+Leather,
+ 
+22%
+ 
+have
+ 
+both
+ 
+Sunroof
+ 
+and
+ 
+Navigation,
+ 
+and
+ 
+30%
+ 
+have
+ 
+both
+ 
+Leather
+ 
+and
+ 
+Navigation.
+ 
+15%
+ 
+of
+ 
+cars
+ 
+have
+ 
+all
+ 
+three
+ 
+features.
+ 
+One
+ 
+car
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+  
+A  P(the  car  has  at  least  one  of  the  three  features)  exceeds  80%.  
+B  P(the  car  has  exactly  one  feature)  is  above  33%.  
+C  P(the  car  has  exactly  two  features)  is  at  least  30%.  
+D  P(the  car  has  none  of  the  three  features)  is  under  20%.  
+E  P(the  car  has  at  least  two  features)  exceeds  45%.  
+ 
+Question  15 Difficulty:  5/5  —  three  events  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  An  online  retailer  tracked  customer  behavior.  55%  of  customers  used  the  mobile  app,  40%  used  a  coupon,  and  35%  made  a  
+repeat
+ 
+purchase.
+ 
+20%
+ 
+used
+ 
+both
+ 
+the
+ 
+app
+ 
+and
+ 
+a
+ 
+coupon,
+ 
+18%
+ 
+used
+ 
+the
+ 
+app
+ 
+and
+ 
+made
+ 
+a
+ 
+repeat
+ 
+purchase,
+ 
+and
+ 
+14%
+ 
+used
+ 
+a
+ 
+coupon
+ 
+and
+ 
+made
+ 
+a
+ 
+repeat
+ 
+purchase.
+ 
+8%
+ 
+of
+ 
+customers
+ 
+did
+ 
+all
+ 
+three.
+ 
+One
+ 
+customer
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+ 
+
+===== PAGE 17 =====
+
+ 
+A  P(the  customer  engaged  in  at  least  one  of  the  three  behaviors)  exceeds  90%.  
+B  P(the  customer  engaged  in  exactly  one  behavior)  is  above  45%.  
+  C  P(the  customer  engaged  in  exactly  two  behaviors)  is  at  least  25%.  
+D  P(the  customer  engaged  in  none  of  the  three  behaviors)  is  under  12%.  
+E  P(the  customer  engaged  in  at  least  two  behaviors)  exceeds  32%.  
+Section  2  —  Answer  Key  &  Explanations 
+Each  answer  below  computes  the  union  first,  then  breaks  it  down  further  into  the  exactly-one,  exactly-two,  and  (where  
+needed)
+ 
+exactly-three
+ 
+regions
+ 
+using
+ 
+the
+ 
+formulas
+ 
+in
+ 
+the
+ 
+box
+ 
+below.
+ 
+As
+ 
+a
+ 
+sanity
+ 
+check,
+ 
+exactly-one
+ 
++
+ 
+exactly-two
+ 
++
+ 
+exactly-three
+ 
++
+ 
+none
+ 
+should
+ 
+always
+ 
+total
+ 
+100%.
+  
+Question  11  (2  True,  3  False) Step  1  —  Organize  the  given  values.  P(Auto)  =  48%,  P(Home)  =  38%,  P(Life)  =  30%.  P(Auto∩Home)  =  16%,  P(Auto∩Life)  =  12%,  P(Home∩Life)  =  10%.  P(all  three)  =  4%.  Union  =  (48+38+30)  −  (16+12+10)  +  4  =  116  −  38  +  4  =  82%.  Sum  of  singles  =  116%.  Sum  of  pairwise  =  38%.  
+A  FALSE  P(at  least  one  policy)  =  82%,  which  is  not  above  85%.  Formula:  P(Auto ∪ Home ∪ Life)  =  Σ P(single)  −  Σ P(pairwise)  +  P(triple)  
+B  FALSE  P(exactly  one)  =  116%  −  2(38%)  +  3(4%)  =  116  −  76  +  12  =  52%,  which  does  not  exceed  55%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2·Σ P(pairwise)  +  3·P(triple)  
+C  TRUE  P(exactly  two)  =  38%  −  3(4%)  =  38  −  12  =  26%,  which  is  at  least  25%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  TRUE  P(none)  =  1  −  82%  =  18%,  which  is  under  20%.  Formula:  P(none)  =  1  −  P(Auto ∪ Home ∪ Life)  
+E  FALSE  P(at  least  two)  =  P(exactly  two)  +  P(all  three)  =  26%  +  4%  =  30%,  which  does  not  exceed  32%.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)   
+Question  12  (4  True,  1  False) 
+
+
+===== PAGE 18 =====
+
+Step  1  —  Organize  the  given  values.  P(A)  =  70%,  P(B)  =  55%,  P(C)  =  48%.  P(A∩B)  =  38%,  P(A∩C)  =  32%,  P(B∩C)  =  28%.  P(all  three)  =  20%.  Union  =  (70+55+48)  −  (38+32+28)  +  20  =  173  −  98  +  20  =  95%.  Sum  of  singles  =  173%.  Sum  of  pairwise  =  98%.  
+A  TRUE  P(passed  at  least  one  exam)  =  95%,  which  is  above  90%.  
+
+===== PAGE 19 =====
+
+Formula:  P(A ∪ B ∪ C)  =  Σ P(single)  −  Σ P(pairwise)  +  P(triple)  
+B  TRUE  P(exactly  one)  =  173%  −  2(98%)  +  3(20%)  =  173  −  196  +  60  =  37%,  which  exceeds  35%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2·Σ P(pairwise)  +  3·P(triple)  
+C  FALSE  P(exactly  two)  =  98%  −  3(20%)  =  98  −  60  =  38%,  which  is  not  at  least  40%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  TRUE  P(none)  =  1  −  95%  =  5%,  which  is  under  8%.  Formula:  P(none)  =  1  −  P(A ∪ B ∪ C)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(all  three)  =  38%  +  20%  =  58%,  which  exceeds  55%  —  every  statement  in  this  question  except  C  is  TRUE.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)   
+Question  13  (1  True,  4  False) Step  1  —  Organize  the  given  values.  P(Veg)  =  25%,  P(GF)  =  18%,  P(DF)  =  15%.  P(Veg∩GF)  =  8%,  P(Veg∩DF)  =  6%,  P(GF∩DF)  =  5%.  P(all  three)  =  2%.  Union  =  (25+18+15)  −  (8+6+5)  +  2  =  58  −  19  +  2  =  41%.  Sum  of  singles  =  58%.  Sum  of  pairwise  =  19%.  
+A  FALSE  P(at  least  one  restriction)  =  41%,  which  is  not  above  45%.  Formula:  P(Veg ∪ GF ∪ DF)  =  Σ P(single)  −  Σ P(pairwise)  +  P(triple)  
+B  FALSE  P(exactly  one)  =  58%  −  2(19%)  +  3(2%)  =  58  −  38  +  6  =  26%,  which  does  not  exceed  30%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2·Σ P(pairwise)  +  3·P(triple)  
+C  FALSE  P(exactly  two)  =  19%  −  3(2%)  =  19  −  6  =  13%,  which  is  not  at  least  15%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  FALSE  P(none)  =  1  −  41%  =  59%,  which  is  not  under  55%.  Formula:  P(none)  =  1  −  P(Veg ∪ GF ∪ DF)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(all  three)  =  13%  +  2%  =  15%,  which  is  under  16%  —  every  other  statement  in  this  question  is  FALSE.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)   
+Question  14  (5  True,  0  False) Step  1  —  Organize  the  given  values.  P(Sunroof)  =  42%,  P(Leather)  =  55%,  P(Nav)  =  48%.  P(Sunroof∩Leather)  =  25%,  P(Sunroof∩Nav)  =  22%,  P(Leather∩Nav)  =  30%.  P(all  three)  =  15%.  Union  =  (42+55+48)  −  (25+22+30)  +  15  =  145  −  77  +  15  =  83%.  Sum  of  singles  =  145%.  Sum  of  pairwise  =  77%.  
+A  TRUE  P(at  least  one  feature)  =  83%,  which  exceeds  80%.  
+
+===== PAGE 20 =====
+
+Formula:  P(Sunroof ∪ Leather ∪ Nav)  =  Σ P(single)  −  Σ P(pairwise)  +  P(triple)  
+B  TRUE  P(exactly  one)  =  145%  −  2(77%)  +  3(15%)  =  145  −  154  +  45  =  36%,  which  is  above  33%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2·Σ P(pairwise)  +  3·P(triple)  
+C  TRUE  P(exactly  two)  =  77%  −  3(15%)  =  77  −  45  =  32%,  which  is  at  least  30%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  TRUE  P(none)  =  1  −  83%  =  17%,  which  is  under  20%.  Formula:  P(none)  =  1  −  P(Sunroof ∪ Leather ∪ Nav)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(all  three)  =  32%  +  15%  =  47%,  which  exceeds  45%  —  every  statement  in  this  question  is  TRUE.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)   
+Question  15  (3  True,  2  False) Step  1  —  Organize  the  given  values.  P(App)  =  55%,  P(Coupon)  =  40%,  P(Repeat)  =  35%.  P(App∩Coupon)  =  20%,  P(App∩Repeat)  =  18%,  P(Coupon∩Repeat)  =  14%.  P(all  three)  =  8%.  Union  =  (55+40+35)  −  (20+18+14)  +  8  =  130  −  52  +  8  =  86%.  Sum  of  singles  =  130%.  Sum  of  pairwise  =  52%.  
+A  FALSE  P(at  least  one  behavior)  =  86%,  which  does  not  exceed  90%.  Formula:  P(App ∪ Coupon ∪ Repeat)  =  Σ P(single)  −  Σ P(pairwise)  +  P(triple)  
+B  TRUE  P(exactly  one)  =  130%  −  2(52%)  +  3(8%)  =  130  −  104  +  24  =  50%,  which  is  above  45%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2·Σ P(pairwise)  +  3·P(triple)  
+C  TRUE  P(exactly  two)  =  52%  −  3(8%)  =  52  −  24  =  28%,  which  is  at  least  25%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  FALSE  P(none)  =  1  −  86%  =  14%,  which  is  not  under  12%.  Formula:  P(none)  =  1  −  P(App ∪ Coupon ∪ Repeat)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(all  three)  =  28%  +  8%  =  36%,  which  exceeds  32%.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)   Tip:  work  these  in  the  same  fixed  order  every  time  —  sum  the  three  singles,  sum  the  three  pairwise  overlaps,  then  apply  each  formula  in  turn  (union,  exactly-one,  exactly-two,  at-least-two).  Question  13  is  a  good  reminder  that  a  set  of  statements  can  legitimately  have  only  one  TRUE  answer  (or,  as  in  Question  14,  all  five)  —  don't  let  a  run  of  FALSE  verdicts  make  you  suspect  an  arithmetic  error  if  the  running  check  (exactly-one  +  exactly-two  +  exactly-three  +  none  =  100%)  confirms  your  numbers  are  internally  consistent.  
+
+===== PAGE 21 =====
+
+Inclusion-Exclusion  Probability  —  
+Practice
+ 
+Questions
+ 
+(Part
+ 
+4,
+ 
+More
+ 
+Complex)
+ 
+Questions  16–20  —  same  five  formulas,  but  the  numbers  take  more  work  to  extract  or  combine  
+This  set  uses  the  exact  same  five  formulas  as  Parts  2  and  3  —  nothing  new  to  learn.  The  added  difficulty  comes  from  four  
+directions
+ 
+instead:
+ 
+some
+ 
+questions
+ 
+give
+ 
+raw
+ 
+counts
+ 
+out
+ 
+of
+ 
+a
+ 
+total
+ 
+population
+ 
+rather
+ 
+than
+ 
+clean
+ 
+percentages,
+ 
+so
+ 
+you
+ 
+convert
+ 
+first;
+ 
+some
+ 
+give
+ 
+an
+ 
+overlap
+ 
+indirectly
+ 
+as
+ 
+a
+ 
+conditional
+ 
+rate
+ 
+('of
+ 
+those
+ 
+with
+ 
+A,
+ 
+X%
+ 
+also
+ 
+have
+ 
+B')
+ 
+rather
+ 
+than
+ 
+as
+ 
+a
+ 
+joint
+ 
+percentage
+ 
+directly,
+ 
+so
+ 
+you
+ 
+multiply
+ 
+first;
+ 
+one
+ 
+question
+ 
+gives
+ 
+you
+ 
+the
+ 
+union
+ 
+directly
+ 
+but
+ 
+withholds
+ 
+one
+ 
+of
+ 
+the
+ 
+three
+ 
+pairwise
+ 
+overlaps,
+ 
+so
+ 
+you
+ 
+solve
+ 
+for
+ 
+it
+ 
+algebraically
+ 
+using
+ 
+the
+ 
+union
+ 
+formula
+ 
+in
+ 
+reverse;
+ 
+and
+ 
+several
+ 
+statements
+ 
+now
+ 
+compare
+ 
+two
+ 
+computed
+ 
+quantities
+ 
+to
+ 
+each
+ 
+other,
+ 
+or
+ 
+to
+ 
+a
+ 
+fixed
+ 
+number
+ 
+of
+ 
+percentage
+ 
+points
+ 
+apart,
+ 
+rather
+ 
+than
+ 
+comparing
+ 
+one
+ 
+quantity
+ 
+to
+ 
+a
+ 
+flat
+ 
+threshold.
+ 
+As
+ 
+always,
+ 
+the
+ 
+number
+ 
+of
+ 
+TRUE
+ 
+statements
+ 
+is
+ 
+not
+ 
+fixed.
+ Core  formulas  used  throughout  this  set  (unchanged  from  Parts  2  and  3):   
+Section  1  —  Questions 
+Question  16 Difficulty:  5/5  —  three  events,  raw  counts  instead  of  percentages  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  A  factory  inspected  2,000  units  produced  over  a  single  shift  (the  shift's  total  energy  consumption  and  staffing  levels  were  also  
+logged
+ 
+but
+ 
+are
+ 
+not
+ 
+relevant
+ 
+here).
+ 
+Of
+ 
+these,
+ 
+700
+ 
+units
+ 
+had
+ 
+Defect
+ 
+A,
+ 
+440
+ 
+had
+ 
+Defect
+ 
+B,
+ 
+and
+ 
+360
+ 
+had
+ 
+Defect
+ 
+C.
+ 
+160
+ 
+units
+ 
+had
+ 
+both
+ 
+Defect
+ 
+A
+ 
+and
+ 
+Defect
+ 
+B,
+ 
+120
+ 
+had
+ 
+both
+ 
+Defect
+ 
+A
+ 
+and
+ 
+Defect
+ 
+C,
+ 
+and
+ 
+88
+ 
+had
+ 
+both
+ 
+Defect
+ 
+B
+ 
+and
+ 
+Defect
+ 
+C.
+ 
+40
+ 
+units
+ 
+had
+ 
+all
+ 
+three
+ 
+defects.
+ 
+One
+ 
+inspected
+ 
+unit
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+  
+A  P(the  unit  has  at  least  one  defect)  is  above  55%.  
+B  P(the  unit  has  exactly  one  defect  type)  exceeds  45%.  
+C  P(the  unit  has  exactly  one  defect  type)  is  more  than  three  times  P(the  unit  has  exactly  two  defect  types).  
+D  P(the  unit  has  no  defects)  is  under  40%.  
+E  P(the  unit  has  exactly  one  defect  type)  minus  P(the  unit  has  at  least  two  defect  types)  is  greater  than  25  percentage  points.  
+ 
+Question  17 Difficulty:  5/5  —  three  events,  overlaps  given  as  conditional  rates  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+
+
+===== PAGE 22 =====
+
+A  software  company  reviewed  its  bug  tracker.  50%  of  reported  issues  are  tagged  as  UI  bugs,  40%  as  Performance  bugs,  and  30%  as  Security  bugs.  Of  the  issues  tagged  as  UI  bugs,  24%  are  also  tagged  as  Performance  bugs.  Of  the  issues  tagged  as  UI  bugs,  20%  are  also  tagged  as  Security  bugs.  Of  the  issues  tagged  as  Performance  bugs,  20%  are  also  tagged  as  Security  bugs.  Separately,  6%  of  all  issues  carry  all  three  tags.  One  reported  issue  is  selected  at  random.   
+A  P(the  issue  carries  at  least  one  of  the  three  tags)  exceeds  90%.  
+B  P(the  issue  carries  exactly  one  tag)  is  above  75%.  
+C  P(the  issue  carries  exactly  two  tags)  is  at  least  15%.  
+D  P(the  issue  carries  none  of  the  three  tags)  is  under  5%.  
+E  P(the  issue  carries  at  least  two  tags)  is  less  than  20%.  
+ 
+Question  18 Difficulty:  5/5  —  three  events,  one  pairwise  overlap  must  be  found  algebraically  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  A  retailer  surveyed  its  customers  about  purchase  history.  55%  had  purchased  Product  A,  45%  had  purchased  Product  B,  and  35%  had  purchased  Product  C.  18%  had  purchased  both  A  and  C,  and  15%  had  purchased  both  B  and  C.  8%  had  purchased  all  three  products.  Separately,  the  survey  found  that  70%  of  customers  had  purchased  at  least  one  of  the  three  products  —  but  the  percentage  who  purchased  both  A  and  B  was  not  recorded  directly,  and  must  be  worked  out  from  the  other  figures.  One  customer  is  selected  at  random.   
+A  P(the  customer  purchased  both  Product  A  and  Product  B)  equals  40%.  
+B  P(the  customer  purchased  exactly  one  product)  exceeds  20%.  
+C  P(the  customer  purchased  exactly  two  products)  is  at  least  45%.  
+D  P(the  customer  purchased  none  of  the  three  products)  is  under  25%.  
+E  P(the  customer  purchased  at  least  two  products)  is  more  than  half  of  all  customers.  
+ 
+Question  19 Difficulty:  5/5  —  three  events,  raw  counts,  long  narrative  with  irrelevant  details  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  A  data  center  monitored  1,500  servers  over  the  course  of  a  fiscal  quarter,  alongside  routine  metrics  on  power  draw  and  rack  temperature  that  are  not  needed  for  this  question.  Of  the  1,500  servers,  525  experienced  a  Memory  fault  at  some  point,  390  experienced  a  Disk  fault,  and  285  experienced  a  Network  fault.  90  servers  experienced  both  a  Memory  fault  and  a  Disk  fault,  75  experienced  both  a  Memory  fault  and  a  Network  fault,  and  57  experienced  both  a  Disk  fault  and  a  Network  fault.  30  servers  experienced  all  three  fault  types.  One  monitored  server  is  selected  at  random.   
+A  P(the  server  experienced  at  least  one  fault)  exceeds  70%.  
+B  P(the  server  experienced  exactly  one  fault  type)  is  above  58%.  
+C  P(the  server  experienced  exactly  two  fault  types)  is  at  least  10%.  
+D  P(the  server  experienced  no  faults  at  all)  is  under  30%.  
+E  P(the  server  experienced  at  least  two  fault  types)  is  under  12%.  
+ 
+
+===== PAGE 23 =====
+
+Question  20 Difficulty:  5/5  —  three  events,  raw  counts,  a  boundary  case  where  P(none)  =  0%  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  A  health  club  with  3,000  members  tracked  attendance  across  three  class  types  over  a  month.  1,800  members  attended  a  Yoga  
+class,
+ 
+1,500
+ 
+attended
+ 
+a
+ 
+Spin
+ 
+class,
+ 
+and
+ 
+1,200
+ 
+attended
+ 
+a
+ 
+Pilates
+ 
+class.
+ 
+750
+ 
+attended
+ 
+both
+ 
+Yoga
+ 
+and
+ 
+Spin,
+ 
+600
+ 
+attended
+ 
+both
+ 
+Yoga
+ 
+and
+ 
+Pilates,
+ 
+and
+ 
+450
+ 
+attended
+ 
+both
+ 
+Spin
+ 
+and
+ 
+Pilates.
+ 
+300
+ 
+members
+ 
+attended
+ 
+all
+ 
+three
+ 
+class
+ 
+types.
+ 
+One
+ 
+member
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+  
+A  P(the  member  attended  at  least  one  of  the  three  class  types)  is  at  least  95%.  
+B  P(the  member  attended  exactly  one  class  type)  exceeds  55%.  
+C  P(the  member  attended  exactly  two  class  types)  is  at  least  25%.  
+D  P(the  member  attended  none  of  the  three  class  types)  equals  0%.  
+E  P(the  member  attended  at  least  two  class  types)  is  more  than  double  P(the  member  attended  all  three  class  types).  
+ 
+Section  2  —  Answer  Key  &  Explanations 
+Each  answer  below  starts  with  whatever  conversion  or  derivation  the  question  requires  (percentages  from  raw  counts,  joint  
+probabilities
+ 
+from
+ 
+conditional
+ 
+rates,
+ 
+or
+ 
+a
+ 
+missing
+ 
+overlap
+ 
+from
+ 
+the
+ 
+union
+ 
+formula),
+ 
+and
+ 
+only
+ 
+then
+ 
+moves
+ 
+into
+ 
+the
+ 
+same
+ 
+union
+ →  exactly-one  →  exactly-two  →  at-least-two  sequence  used  in  Parts  2  and  3.   
+Question  16  (3  True,  2  False) 
+Step  1  —  Convert  raw  counts  to  percentages  (out  of  2,000  units).  P(A)  =  700/2000  =  35%.  P(B)  =  440/2000  =  22%.  P(C)  =  360/2000  =  18%.  P(A∩B)  =  160/2000  =  8%.  P(A∩C)  =  120/2000  =  6%.  P(B∩C)  =  88/2000  =  4.4%.  P(all  three)  =  40/2000  =  2%.  Union  =  (35+22+18)  −  (8+6+4.4)  +  2  =  75  −  18.4  +  2  =  58.6%.  Sum  of  singles  =  75%.  Sum  of  pairwise  =  18.4%.  
+A  TRUE  P(at  least  one  defect)  =  58.6%,  which  is  above  55%.  Formula:  P(A ∪ B ∪ C)  =  Σ P(single)  −  Σ P(pairwise)  +  P(triple)  
+B  FALSE  P(exactly  one)  =  75%  −  2(18.4%)  +  3(2%)  =  75  −  36.8  +  6  =  44.2%,  which  does  not  exceed  45%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2·Σ P(pairwise)  +  3·P(triple)  
+C  TRUE  P(exactly  two)  =  18.4%  −  3(2%)  =  18.4  −  6  =  12.4%.  Three  times  this  is  37.2%.  Since  44.2%  (from  statement  B)  is  greater  
+than
+ 
+37.2%,
+ 
+the
+ 
+statement
+ 
+is
+ 
+true.
+ Formula:  Compare  P(exactly  one)  to  3×P(exactly  two),  using  both  values  already  computed  above  
+
+
+===== PAGE 24 =====
+
+D  FALSE  P(none)  =  1  −  58.6%  =  41.4%,  which  is  not  under  40%.  Formula:  P(none)  =  1  −  P(A ∪ B ∪ C)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(triple)  =  12.4%  +  2%  =  14.4%.  P(exactly  one)  −  P(at  least  two)  =  44.2%  −  14.4%  =  29.8  percentage  points,  which  is  greater  than  25.  Formula:  [Σ P(single)  −  2Σ P(pairwise)  +  3P(triple)]  −  [Σ P(pairwise)  −  2P(triple)]   
+Question  17  (4  True,  1  False) 
+Step  1  —  Convert  the  conditional  overlap  rates  into  joint  probabilities.  The  24%,  20%,  and  20%  figures  are  conditional  rates,  not  joint  probabilities  —  each  one  tells  you  what  fraction  of  one  category  also  falls  into  another  category,  so  you  must  multiply  by  the  first  category's  own  probability  to  get  the  joint  probability,  the  same  way  you  would  find  P(A∩B)  =  P(A)×P(B|A)  in  a  conditional-probability  problem.  P(UI∩Perf)  =  P(UI)  ×  24%  =  50%  ×  0.24  =  12%.  P(UI∩Sec)  =  P(UI)  ×  20%  =  50%  ×  0.20  =  10%.  P(Perf∩Sec)  =  P(Perf)  ×  20%  =  40%  ×  0.20  =  8%.  P(all  three)  =  6%,  given  directly.  Union  =  (50+40+30)  −  (12+10+8)  +  6  =  120  −  30  +  6  =  96%.  Sum  of  singles  =  120%.  Sum  of  pairwise  =  30%.  
+A  TRUE  P(at  least  one  tag)  =  96%,  which  exceeds  90%.  Formula:  P(UI ∪ Perf ∪ Sec)  =  Σ P(single)  −  Σ P(pairwise)  +  P(triple)  
+B  TRUE  P(exactly  one)  =  120%  −  2(30%)  +  3(6%)  =  120  −  60  +  18  =  78%,  which  is  above  75%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2·Σ P(pairwise)  +  3·P(triple)  
+C  FALSE  P(exactly  two)  =  30%  −  3(6%)  =  30  −  18  =  12%,  which  is  not  at  least  15%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  TRUE  P(none)  =  1  −  96%  =  4%,  which  is  under  5%.  Formula:  P(none)  =  1  −  P(UI ∪ Perf ∪ Sec)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(triple)  =  12%  +  6%  =  18%,  which  is  less  than  20%.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)   
+Question  18  (3  True,  2  False) 
+Step  1  —  Solve  for  the  missing  overlap,  P(A∩B),  using  the  union  formula  in  reverse.  Everything  else  is  known:  P(A)=55%,  P(B)=45%,  P(C)=35%,  P(A∩C)=18%,  P(B∩C)=15%,  P(triple)=8%,  and  the  union  is  given  directly  as  70%.  Call  the  missing  overlap  x  =  P(A∩B),  and  substitute  everything  into  the  union  formula:  70  =  (55+45+35)  −  (x+18+15)  +  8  =  135  −  x  −  33  +  8  =  110  −  x.  Solving:  x  =  110  −  70  =  40.  
+A  TRUE  From  Step  1,  P(A∩B)  =  40%  exactly.  Formula:  Rearrange  P(A ∪ B ∪ C)  =  Σ P(single)  −  Σ P(pairwise)  +  P(triple)  to  solve  for  the  unknown  pairwise  term  
+With  P(A∩B)  =  40%  now  known,  sum  of  pairwise  =  40+18+15  =  73%.  Sum  of  singles  =  135%.  
+B  FALSE  
+
+===== PAGE 25 =====
+
+P(exactly  one)  =  135%  −  2(73%)  +  3(8%)  =  135  −  146  +  24  =  13%,  which  does  not  exceed  20%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2·Σ P(pairwise)  +  3·P(triple)  
+C  TRUE  P(exactly  two)  =  73%  −  3(8%)  =  73  −  24  =  49%,  which  is  at  least  45%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  FALSE  P(none)  =  1  −  70%  =  30%,  which  is  not  under  25%.  Formula:  P(none)  =  1  −  P(A ∪ B ∪ C)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(triple)  =  49%  +  8%  =  57%,  which  is  more  than  half  (50%)  of  all  customers.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)   
+Question  19  (1  True,  4  False) 
+Step  1  —  Convert  raw  counts  to  percentages  (out  of  1,500  servers).  P(Mem)  =  525/1500  =  35%.  P(Disk)  =  390/1500  =  26%.  P(Net)  =  285/1500  =  19%.  P(Mem∩Disk)  =  90/1500  =  6%.  P(Mem∩Net)  =  75/1500  =  5%.  P(Disk∩Net)  =  57/1500  =  3.8%.  P(all  three)  =  30/1500  =  2%.  Union  =  (35+26+19)  −  (6+5+3.8)  +  2  =  80  −  14.8  +  2  =  67.2%.  Sum  of  singles  =  80%.  Sum  of  pairwise  =  14.8%.  
+A  FALSE  P(at  least  one  fault)  =  67.2%,  which  does  not  exceed  70%.  Formula:  P(Mem ∪ Disk ∪ Net)  =  Σ P(single)  −  Σ P(pairwise)  +  P(triple)  
+B  FALSE  P(exactly  one)  =  80%  −  2(14.8%)  +  3(2%)  =  80  −  29.6  +  6  =  56.4%,  which  is  not  above  58%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2·Σ P(pairwise)  +  3·P(triple)  
+C  FALSE  P(exactly  two)  =  14.8%  −  3(2%)  =  14.8  −  6  =  8.8%,  which  is  not  at  least  10%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  FALSE  P(none)  =  1  −  67.2%  =  32.8%,  which  is  not  under  30%.  Formula:  P(none)  =  1  −  P(Mem ∪ Disk ∪ Net)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(triple)  =  8.8%  +  2%  =  10.8%,  which  is  under  12%  —  every  other  statement  in  this  question  is  FALSE.  Formula:  P(at  least  two)  =  P(exactly  two)  +  P(triple)   
+Question  20  (5  True,  0  False)  —  a  boundary  case 
+Step  1  —  Convert  raw  counts  to  percentages  (out  of  3,000  members).  P(Yoga)  =  1800/3000  =  60%.  P(Spin)  =  1500/3000  =  50%.  P(Pilates)  =  1200/3000  =  40%.  P(Yoga∩Spin)  =  750/3000  =  25%.  P(Yoga∩Pilates)  =  600/3000  =  20%.  P(Spin∩Pilates)  =  450/3000  =  15%.  P(all  three)  =  300/3000  =  10%.  Union  =  (60+50+40)  −  (25+20+15)  +  10  =  150  −  60  +  10  =  100%.  Sum  of  singles  =  150%.  Sum  of  pairwise  =  60%.  Notice  the  union  comes  out  to  exactly  100%  here  —  every  single  member  attended  at  least  one  of  the  three  class  types,  with  no  one  left  over.  
+A  TRUE  
+
+===== PAGE 26 =====
+
+P(at  least  one  class  type)  =  100%,  which  is  at  least  95%.  Formula:  P(Yoga ∪ Spin ∪ Pilates)  =  Σ P(single)  −  Σ P(pairwise)  +  P(triple)  
+B  TRUE  P(exactly  one)  =  150%  −  2(60%)  +  3(10%)  =  150  −  120  +  30  =  60%,  which  exceeds  55%.  Formula:  P(exactly  one)  =  Σ P(single)  −  2·Σ P(pairwise)  +  3·P(triple)  
+C  TRUE  P(exactly  two)  =  60%  −  3(10%)  =  60  −  30  =  30%,  which  is  at  least  25%.  Formula:  P(exactly  two)  =  Σ P(pairwise)  −  3·P(triple)  
+D  TRUE  P(none)  =  1  −  100%  =  0%  exactly,  matching  the  statement  precisely.  This  isn't  a  rounding  coincidence  —  it's  a  direct  consequence  of  the  union  working  out  to  exactly  100%  in  Step  1.  Formula:  P(none)  =  1  −  P(Yoga ∪ Spin ∪ Pilates)  
+E  TRUE  P(at  least  two)  =  P(exactly  two)  +  P(triple)  =  30%  +  10%  =  40%.  Twice  P(all  three)  =  2×10%  =  20%.  Since  40%  is  more  than  20%,  the  statement  is  true.  Formula:  Compare  P(exactly  two)+P(triple)  to  2×P(triple)  
+All  five  statements  are  true  in  this  question.  It's  worth  sitting  with  statement  D  for  a  moment:  P(none)  =  0%  doesn't  mean  something  went  wrong  in  the  calculation  —  it's  a  legitimate,  checkable  result  any  time  the  three  singles,  three  pairwise  overlaps,  and  the  triple  overlap  happen  to  combine  to  a  union  of  exactly  100%.   Tip:  none  of  the  five  formulas  changed  in  this  set  —  what  changed  is  the  amount  of  setup  work  before  you  can  use  them.  Before  touching  any  formula,  ask:  are  these  percentages  already,  or  do  I  need  to  divide  raw  counts  by  a  total  first  (Questions  16,  19,  20)?  Are  these  overlaps  given  directly,  or  as  a  conditional  rate  I  need  to  multiply  out  (Question  17)?  Is  every  value  given,  or  do  I  need  to  solve  for  one  algebraically  using  the  union  formula  in  reverse  (Question  18)?  Get  clean  percentages  for  all  seven  pieces  (three  singles,  three  pairwise,  one  triple)  before  applying  any  of  the  four  downstream  formulas.   
+Question  21  Difficulty:  ⅘  Subtopic:  Inclusion-Exclusion  Principle  
+Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  Among  100  students  at  a  school:  40  take  Math,  35  take  Physics,  and  30  take  Chemistry.  15  take  both  Math  and  Physics,  12  take  both  Math  and  Chemistry,  and  10  take  both  Physics  and  Chemistry.  5  students  take  all  three  subjects.  A  student  is  selected  at  random.   
+A  P(the  student  takes  at  least  one  of  the  three  subjects)  is  greater  than  72%.  B  P(the  student  takes  none  of  the  three  subjects)  equals  1  minus  P(the  student  takes  at  least  one  of  the  three  subjects).  C  P(the  student  takes  exactly  one  of  the  three  subjects)  is  less  than  45%.  D  P(the  student  takes  exactly  two  of  the  three  subjects,  but  not  all  three)  is  greater  than  20%.  E  P(the  student  takes  all  three  subjects)  is  less  than  one-quarter  of  P(the  student  takes  exactly  two  subjects,  but  not  all  three).  
+   Question  21 
+A  TRUE  
+
+===== PAGE 27 =====
+
+By  inclusion-exclusion,  |Math  ∪  Physics  ∪  Chemistry|  =  40+35+30−15−12−10+5  =  73,  so  P(at  least  one)  =  73/100  =  73%,  which  is  above  72%.  Easier  strategy:  For  the  union  of  three  overlapping  groups,  add  all  three  singles,  subtract  all  three  pairwise  
+overlaps,
+ 
+then
+ 
+add
+ 
+back
+ 
+the
+ 
+triple
+ 
+overlap
+ 
+—
+ 
+it's
+ 
+a
+ 
+fixed
+ 
+formula,
+ 
+not
+ 
+an
+ 
+estimate.
+ 
+B  TRUE  'Takes  none  of  the  three'  and  'takes  at  least  one'  are  complementary  events  for  any  student,  so  P(none)  =  1  −  P(at  
+least
+ 
+one)
+ 
+by
+ 
+definition.
+ Easier  strategy:  Once  you  have  P(at  least  one)  from  inclusion-exclusion,  P(none)  is  immediate  by  subtracting  from  
+1
+ 
+—
+ 
+no
+ 
+separate
+ 
+calculation
+ 
+needed.
+ 
+C  FALSE  'Exactly  one'  subject  means  subtracting  both  overlaps  but  adding  back  the  triple  overlap  once  per  subject:  Only  Math  =  40−15−12+5  =  18,  Only  Physics  =  35−15−10+5  =  15,  Only  Chemistry  =  30−12−10+5  =  13.  Total  =  18+15+13  =  46,  so  P(exactly  one)  =  46%,  which  is  above  45%,  not  below  it.  Easier  strategy:  For  'exactly  one  of  three  groups',  compute  each  'only'  region  separately  (single  count  minus  both  its  
+pairwise
+ 
+overlaps
+ 
+plus
+ 
+the
+ 
+triple
+ 
+overlap),
+ 
+then
+ 
+add
+ 
+the
+ 
+three
+ 
+regions
+ 
+together.
+ 
+D  TRUE  'Exactly  two,  not  three'  sums  the  three  pairwise-only  regions:  (Math∩Physics  only)  =  15−5  =  10,  (Math∩Chemistry  
+only)
+ 
+=
+ 
+12−5
+ 
+=
+ 
+7,
+ 
+(Physics∩Chemistry
+ 
+only)
+ 
+=
+ 
+10−5
+ 
+=
+ 
+5.
+ 
+Total
+ 
+=
+ 
+10+7+5
+ 
+=
+ 
+22,
+ 
+so
+ 
+P(exactly
+ 
+two)
+ 
+=
+ 
+22%,
+ 
+which
+ 
+is
+ above  20%.  Easier  strategy:  Each  pairwise  overlap  given  in  the  setup  already  includes  the  triple-overlap  students,  so  subtract  
+the
+ 
+triple
+ 
+overlap
+ 
+once
+ 
+from
+ 
+each
+ 
+pairwise
+ 
+count
+ 
+to
+ 
+isolate
+ 
+'exactly
+ 
+two'.
+ 
+E  TRUE  P(all  three)  =  5%.  One-quarter  of  P(exactly  two,  not  three)  =  22%/4  =  5.5%.  Since  5%  <  5.5%,  the  statement  holds.  Easier  strategy:  When  a  statement  compares  a  count  to  a  fraction  of  another  count,  compute  the  fraction  first  (here,  
+divide
+ 
+22
+ 
+by
+ 
+4)
+ 
+and
+ 
+compare
+ 
+directly
+ 
+—
+ 
+don't
+ 
+round
+ 
+the
+ 
+fraction
+ 
+before
+ 
+comparing.
+  
+Question  22 Difficulty:  ⅘  
+Subtopic:
+ 
+Inclusion-Exclusion
+ 
+Principle
+ Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  Among  200  employees  at  a  company:  90  use  App  A,  70  use  App  B,  and  60  use  App  C.  30  use  both  A  and  B,  25  use  
+both
+ 
+A
+ 
+and
+ 
+C,
+ 
+and
+ 
+20
+ 
+use
+ 
+both
+ 
+B
+ 
+and
+ 
+C.
+ 
+10
+ 
+employees
+ 
+use
+ 
+all
+ 
+three
+ 
+apps.
+ 
+An
+ 
+employee
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+ A  P(the  employee  uses  at  least  one  of  the  three  apps)  is  greater  than  75%.  B  P(the  employee  uses  none  of  the  three  apps)  equals  1  minus  P(the  employee  uses  at  least  one  of  the  three  apps).  C  P(the  employee  uses  exactly  one  of  the  three  apps)  is  less  than  50%.    D  P(the  employee  uses  exactly  two  of  the  three  apps,  but  not  all  three)  is  greater  than  15%.  E  P(the  employee  uses  all  three  apps)  is  less  than  one-fifth  of  P(the  employee  uses  exactly  two  apps,  but  not  all  three).  
+Question  22 A  TRUE  By  inclusion-exclusion,  |A  ∪  B  ∪  C|  =  90+70+60−30−25−20+10  =  155,  so  P(at  least  one)  =  155/200  =  77.5%,  
+which
+ 
+is
+ 
+above
+ 
+75%.
+ Formula:  |A ∪ B ∪ C|  =  |A|+|B|+|C|  −  |A∩B|  −  |A∩C|  −  |B∩C|  +  |A∩B∩C|  
+B  TRUE  'Uses  none  of  the  three'  and  'uses  at  least  one'  are  complementary  events  for  any  employee,  so  P(none)  =  1  −  P(at  
+least
+ 
+one)
+ 
+by
+ 
+definition.
+ Formula:  P(none)  =  1  −  P(at  least  one)  
+
+===== PAGE 28 =====
+
+C  FALSE  'Exactly  one'  means  subtracting  both  pairwise  overlaps  but  adding  back  the  triple  overlap  once  per  app:  Only  A  =  90−30−25+10  =  45,  Only  B  =  70−30−20+10  =  30,  Only  C  =  60−25−20+10  =  25.  Total  =  45+30+25  =  100,  so  P(exactly  one)  =  100/200  =  50%,  which  is  not  less  than  50%  (it  is  exactly  equal).  Formula:  Only-X  =  |X|  −  |X∩Y|  −  |X∩Z|  +  |X∩Y∩Z|  
+D  TRUE  'Exactly  two,  not  three'  sums  the  three  pairwise-only  regions:  (A∩B  only)  =  30−10  =  20,  (A∩C  only)  =  25−10  =  15,  (B∩C  only)  =  20−10  =  10.  Total  =  20+15+10  =  45,  so  P(exactly  two)  =  45/200  =  22.5%,  which  is  above  15%.  Formula:  Pairwise-only(X,Y)  =  |X∩Y|  −  |X∩Y∩Z|  
+E  FALSE  P(all  three)  =  10/200  =  5%.  One-fifth  of  P(exactly  two,  not  three)  =  22.5%/5  =  4.5%.  Since  5%  is  not  less  than  4.5%,  the  statement  is  false.  Formula:  Compare  P(all  three)  to  (1/5)  ×  P(exactly  two,  not  three)   Tip:  this  set  leans  on  exact  counting  (coin  sequences,  committees,  dice  pairs)  and  exact  fractions  from  geometric-series  sums.  Compute  every  quantity  to  full  precision  before  judging  TRUE  or  FALSE  —  several  statements  here  are  exactly  equal  to  their  threshold  or  to  each  other,  which  is  a  common  trap  for  'greater  than'  or  'more  than'  claims.  
+Question  23  Difficulty:  ⅘  Subtopic:  Inclusion-Exclusion  Principle  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+
+===== PAGE 29 =====
+
+Among  250  students:  120  take  Math,  100  take  Physics,  and  90  take  Chemistry.  50  take  both  Math  and  Physics,  40  take  both  Math  and  Chemistry,  and  30  take  both  Physics  and  Chemistry.  15  students  take  all  three  courses.  A  student  is  selected  at  random.   
+A  P(the  student  takes  at  least  one  of  the  three  courses)  is  greater  than  80%.  
+B  P(the  student  takes  none  of  the  three  courses)  equals  1  minus  P(the  student  takes  at  least  one  of  the  three  courses).  
+C  P(the  student  takes  exactly  one  of  the  three  courses)  is  less  than  45%.  
+D  P(the  student  takes  exactly  two  of  the  three  courses,  but  not  all  three)  is  greater  than  25%.  
+E  P(the  student  takes  all  three  courses)  is  less  than  one-third  of  P(the  student  takes  exactly  two  courses,  but  not  all  three).  
+Question  23  A  TRUE  
+
+===== PAGE 30 =====
+
+By  inclusion-exclusion,  |M ∪ P ∪ C|  =  120+100+90−50−40−30+15  =  205,  so  P(at  least  one)  =  205/250  =  82%,  which  is  above  80%.  Formula:  |M ∪ P ∪ C|  =  |M|+|P|+|C|  −  |M∩P|  −  |M∩C|  −  |P∩C|  +  |M∩P∩C|  
+B  TRUE  'Takes  none  of  the  three'  and  'takes  at  least  one'  are  complementary  events  for  any  student,  so  P(none)  =  1  −  P(at  least  one)  by  definition.  Formula:  P(none)  =  1  −  P(at  least  one)  
+C  FALSE  'Exactly  one'  subtracts  both  pairwise  overlaps  but  adds  back  the  triple  overlap  once  per  course:  Only  Math  =  120−50−40+15  =  45,  Only  Physics  =  100−50−30+15  =  35,  Only  Chemistry  =  90−40−30+15  =  35.  Total  =  115,  so  P(exactly  one)  =  115/250  =  46%,  which  is  not  less  than  45%.  Formula:  Only-X  =  |X|  −  |X∩Y|  −  |X∩Z|  +  |X∩Y∩Z|  
+D  TRUE  'Exactly  two,  not  three'  sums  the  three  pairwise-only  regions:  (M∩P  only)  =  50−15  =  35,  (M∩C  only)  =  40−15  =  25,  (P∩C  only)  =  30−15  =  15.  Total  =  75,  so  P(exactly  two)  =  75/250  =  30%,  which  is  above  25%.  Formula:  Pairwise-only(X,Y)  =  |X∩Y|  −  |X∩Y∩Z|  
+E  TRUE  P(all  three)  =  15/250  =  6%.  One-third  of  P(exactly  two,  not  three)  =  30%/3  =  10%.  Since  6%  is  less  than  10%,  the  statement  is  true.  Formula:  Compare  P(all  three)  to  (1/3)  ×  P(exactly  two,  not  three)  
+Question  24  Difficulty:  2/5  Subtopic:  Inclusion-Exclusion  Principle  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  
+
+===== PAGE 31 =====
+
+In  a  survey  of  50  people,  event  A  is  'reads  a  newspaper'  and  event  B  is  'watches  TV  news.'  The  Venn  diagram  below  shows  how  many  people  fall  into  each  region.  One  person  from  the  survey  is  selected  at  random.   
+ 
+A  P(A)  is  greater  than  45%.  
+B  P(A  ∪  B)  equals  P(A)  +  P(B)  −  P(A  ∩  B).  
+C  P(B,  given  A)  equals  40%.  
+D  P(neither  A  nor  B)  is  less  than  15%.  
+E  P(A,  given  B)  is  greater  than  P(B,  given  A).   
+Question  24 
+A  TRUE  From  the  diagram,  |A|  =  15  +  10  =  25,  so  P(A)  =  25/50  =  50%,  which  is  above  45%.  Formula:  P(A)  =  |A|  /  |U|,  where  |A|  =  (only  A)  +  (A  ∩  B)  
+B  TRUE  This  is  the  inclusion-exclusion  identity,  which  holds  for  any  two  events  regardless  of  the  specific  numbers  in  the  diagram:  P(A  ∪  B)  =  P(A)  +  P(B)  −  P(A  ∩  B).  Formula:  P(A  ∪  B)  =  P(A)  +  P(B)  −  P(A  ∩  B)  
+C  TRUE  P(B  |  A)  =  |A  ∩  B|  /  |A|  =  10/25  =  40%  exactly,  reading  the  overlap  region  and  the  full  A-circle  directly  from  the  diagram.  Formula:  P(B  |  A)  =  |A  ∩  B|  /  |A|  
+D  TRUE  The  'neither'  region  outside  both  circles  contains  5  people,  so  P(neither)  =  5/50  =  10%,  which  is  below  15%.  Formula:  P(neither  A  nor  B)  =  (people  outside  both  circles)  /  |U|  
+E  FALSE  P(A  |  B)  =  |A  ∩  B|  /  |B|  =  10/30  ≈  33.333%,  while  P(B  |  A)  =  10/25  =  40%  (from  statement  C).  Since  33.333%  is  not  greater  than  40%,  the  statement  is  false.  Formula:  Compare  |A  ∩  B|/|B|  to  |A  ∩  B|/|A|  —  the  smaller  denominator  (here,  |B|  =  30  >  |A|  =  25)  gives  the  smaller  
+
+
+===== PAGE 32 =====
+
+conditional  probability   
+Question  25 Difficulty:  4/5  Subtopic:  Inclusion-Exclusion  Principle  
+Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  A  marketing  team  studies  which  notification  channels  its  customers  are  subscribed  to:  Email  (A),  SMS  (B),  and  Push  notifications  (C).  The  Venn  diagram  below  shows  the  probability  of  a  randomly  selected  customer  falling  into  each  region,  including  customers  subscribed  to  none  of  the  three.  
+
+===== PAGE 33 =====
+
+  
+A  P(a  customer  subscribes  to  at  least  one  channel)  is  greater  than  53%.  B  P(a  customer  subscribes  to  exactly  two  of  the  three  channels)  equals  18%.  C  P(a  customer  subscribes  to  Email,  given  that  they  subscribe  to  SMS  or  Push)  is  greater  than  41%.  D  
+P(a  customer's  Email  and  SMS  subscriptions  differ  —  i.e.,  they  subscribe  to  exactly  one  of  the  two)  is  less  than  32%.  E  
+P(a  customer  subscribes  to  all  three  channels)  is  less  than  one-quarter  of  P(a  customer  subscribes  to  exactly  two  of  the  three  channels).  
+Question  25 
+A  FALSE  P(at  least  one  channel)  =  1  −  P(none)  =  1  −  0.48  =  0.52  =  52%,  reading  the  'None'  region  directly  from  the  diagram.  
+This
+ 
+is
+ 
+below
+ 
+53%,
+ 
+not
+ 
+above
+ 
+it.
+ Formula:  P(at  least  one)  =  1  −  P(none)  
+B  TRUE  P(exactly  two  channels)  sums  the  three  pairwise-only  regions:  0.07+0.05+0.06  =  0.18  =  18%  exactly,  reading  
+directly
+ 
+from
+ 
+the
+ 
+diagram.
+ Formula:  P(exactly  two)  =  P(A∩B  only)  +  P(A∩C  only)  +  P(B∩C  only)  
+C  FALSE  P(B ∪ C)  sums  every  region  inside  B  or  C:  0.08+0.10+0.07+0.05+0.06+0.04  =  0.40.  P(A∩(B ∪ C))  sums  the  regions  
+of
+ 
+A
+ 
+that
+ 
+are
+ 
+also
+ 
+in
+ 
+B
+ 
+or
+ 
+C:
+ 
+0.07+0.05+0.04
+ 
+=
+ 
+0.16.
+ 
+So
+ 
+P(A
+ 
+|
+ 
+B
+∪
+C)
+ 
+=
+ 
+0.16/0.40
+ 
+=
+ 
+0.40
+ 
+=
+ 
+40%,
+ 
+which
+ 
+is
+ 
+below
+ 
+41%,
+ 
+not
+ 
+above
+ 
+it.
+ 
+Formula:  P(A  |  B ∪ C)  =  P(A∩(B ∪ C))  /  P(B ∪ C)  
+D  TRUE  The  symmetric  difference  (in  exactly  one  of  A,  B)  sums  'only  A'  +  'only  B'  +  'A∩C  only'  +  'B∩C  only'  (the  all-three  
+region
+ 
+is
+ 
+excluded
+ 
+since
+ 
+it
+ 
+lies
+ 
+in
+ 
+both
+ 
+A
+ 
+and
+ 
+B):
+ 
+0.12+0.08+0.05+0.06
+ 
+=
+ 
+0.31
+ 
+=
+ 
+31%,
+ 
+which
+ 
+is
+ 
+below
+ 
+32%.
+ Formula:  P(A∆B)  =  P(only  A)  +  P(only  B)  +  P(A∩C  only)  +  P(B∩C  only)  
+E  TRUE  
+
+
+===== PAGE 34 =====
+
+P(all  three)  =  0.04  =  4%.  One-quarter  of  P(exactly  two)  =  18%/4  =  4.5%.  Since  4%  <  4.5%,  the  statement  holds.  Formula:  Compare  P(A∩B∩C)  directly  to  P(exactly  two)/4,  both  read  from  the  diagram   
+Question  26 Difficulty:  4/5  
+Subtopic:
+ 
+Inclusion-Exclusion
+ 
+Principle
+ Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  An  app  studies  which  features  its  customers  use:  Auto-save  (P),  Dark  mode  (Q),  and  Cloud  sync  (R).  The  Venn  
+diagram
+ 
+below
+ 
+shows
+ 
+the
+ 
+probability
+ 
+of
+ 
+a
+ 
+randomly
+ 
+selected
+ 
+customer
+ 
+falling
+ 
+into
+ 
+each
+ 
+region,
+ 
+including
+ 
+customers
+ 
+who
+ 
+use
+ 
+none
+ 
+of
+ 
+the
+ 
+three
+ 
+features.
+                         A  P(the  customer  uses  at  least  one  of  the  three  features)  is  greater  than  52%.  B  P(the  customer  uses  exactly  two  of  the  three  features)  equals  15%.  C  P(the  customer  uses  Auto-save,  given  that  they  use  Dark  mode  or  Cloud  sync)  is  greater  than  37%.  D  P(the  customer  uses  exactly  one  of  Auto-save,  Dark  mode  —  i.e.  the  symmetric  difference  of  P  and  Q)  is  greater  than  32%.  E  P(the  customer  uses  all  three  features)  is  less  than  one-quarter  of  P(the  customer  uses  exactly  two  features).  
+Question  26 A  FALSE  P(at  least  one  feature)  =  1  −  P(none)  =  1  −  0.49  =  0.51  =  51%,  reading  the  'none'  region  directly  from  the  diagram.  
+This
+ 
+is
+ 
+below
+ 
+52%,
+ 
+not
+ 
+above
+ 
+it.
+ 
+
+
+===== PAGE 35 =====
+
+Formula:  P(at  least  one)  =  1  −  P(none)   B  TRUE  P(exactly  two  features)  sums  the  three  pairwise-only  regions:  0.06+0.04+0.05  =  0.15  =  15%  exactly,  reading  directly  from  the  diagram.  Formula:  P(exactly  two)  =  P(P∩Q  only)  +  P(P∩R  only)  +  P(Q∩R  only)   C  FALSE  P(Q ∪ R)  sums  every  region  inside  Q  or  R:  0.10+0.08+0.06+0.04+0.05+0.03  =  0.36.  P(P∩(Q ∪ R))  sums  the  regions  of  P  that  are  also  in  Q  or  R:  0.06+0.04+0.03  =  0.13.  So  P(P  |  Q ∪ R)  =  0.13/0.36  ≈  36.111%,  which  is  below  37%,  not  above  it.  Formula:  P(P  |  Q ∪ R)  =  P(P∩(Q ∪ R))  /  P(Q ∪ R)  
+D  TRUE  The  symmetric  difference  (in  exactly  one  of  P,  Q)  sums  'only  P'  +  'only  Q'  +  'P∩R  only'  +  'Q∩R  only'  (the  all-three  region  is  excluded  since  it  lies  in  both  P  and  Q):  0.15+0.10+0.04+0.05  =  0.34  =  34%,  which  is  above  32%.  Formula:  P(P∆Q)  =  P(only  P)  +  P(only  Q)  +  P(P∩R  only)  +  P(Q∩R  only)   E  TRUE  P(all  three)  =  0.03  =  3%.  One-quarter  of  P(exactly  two)  =  15%/4  =  3.75%.  Since  3%  <  3.75%,  the  statement  holds.  Formula:  Compare  P(P∩Q∩R)  directly  to  P(exactly  two)/4,  both  read  from  the  diagram   
+Question  27 Difficulty:  5/5  (Expert)  Subtopic:  Inclusion-Exclusion  Principle  Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  A  survey  studies  which  genres  a  reader  enjoys:  Sci-Fi  (A),  Fantasy  (B),  and  Mystery  (C).  The  Venn  diagram  below  shows  the  probability  of  a  randomly  selected  reader  falling  into  each  region,  including  readers  who  enjoy  none  of  the  three  genres.  
+ 
+
+
+===== PAGE 36 =====
+
+ A  P(the  reader  enjoys  Sci-Fi,  given  that  they  enjoy  Fantasy)  is  greater  than  P(the  reader  enjoys  Sci-Fi).  B  P(the  reader  enjoys  both  Sci-Fi  and  Fantasy,  but  not  Mystery)  is  more  than  half  of  P(the  reader  enjoys  both  Sci-Fi  and  Fantasy).  C  P(the  reader  enjoys  Mystery,  given  that  they  enjoy  Sci-Fi  or  Fantasy)  is  greater  than  30%.  D  Sci-Fi  (A)  and  Mystery  (C)  are  independent  events,  since  P(A)×P(C)  equals  P(A  ∩  C).  E  P(the  reader  enjoys  exactly  one  of  the  three  genres)  is  greater  than  P(the  reader  enjoys  at  least  two  of  the  three  genres).  
+Question  27  
+A  TRUE  P(A)  =  0.10+0.08+0.05+0.06  =  0.29.  P(B)  =  0.14+0.08+0.07+0.06  =  0.35.  P(A∩B)  =  0.08+0.06  =  0.14.  P(A|B)  =  0.14/0.35  =  0.40,  which  is  above  P(A)  =  0.29  —  enjoying  Fantasy  is  associated  with  a  higher  chance  of  also  enjoying  Sci-Fi.  Formula:  P(A  |  B)  =  P(A  ∩  B)  /  P(B);  compare  directly  to  P(A)  read  from  the  diagram's  four  A-regions  
+B  TRUE  P(A∩B,  not  C)  =  0.08  directly  from  the  diagram.  P(A∩B)  =  0.08+0.06  =  0.14.  Half  of  P(A∩B)  =  0.07.  Since  0.08  >  0.07,  the  statement  holds.  Formula:  Compare  P(A∩B∩C^c)  (read  directly)  to  P(A∩B)/2,  where  P(A∩B)  =  P(A∩B  only)  +  P(A∩B∩C)  
+
+===== PAGE 37 =====
+
+C  TRUE  P(A ∪ B)  =  P(A)+P(B)−P(A∩B)  =  0.29+0.35−0.14  =  0.50.  P(C∩(A ∪ B))  sums  the  regions  of  C  also  in  A  or  B:  0.05+0.07+0.06  =  0.18.  P(C  |  A ∪ B)  =  0.18/0.50  =  0.36  =  36%,  which  is  above  30%.  Formula:  P(C  |  A ∪ B)  =  P(C∩(A ∪ B))  /  P(A ∪ B),  with  P(A ∪ B)  via  inclusion-exclusion  
+D  FALSE  P(A)  =  0.29,  P(C)  =  0.12+0.05+0.07+0.06  =  0.30.  P(A)×P(C)  =  0.29×0.30  =  0.087.  P(A∩C)  =  0.05+0.06  =  0.11  directly  from  the  diagram.  Since  0.087  ≠  0.11,  the  events  are  not  independent  —  the  statement  is  false.  Formula:  Independence  requires  P(A)×P(C)  =  P(A∩C);  here  the  two  sides  disagree,  so  it  fails  
+E  TRUE  P(exactly  one)  =  0.10+0.14+0.12  =  0.36.  P(at  least  two)  =  0.08+0.05+0.07+0.06  =  0.26.  Since  0.36  >  0.26,  the  statement  holds.  Formula:  P(exactly  one)  =  sum  of  the  three  'only'  regions;  P(at  least  two)  =  sum  of  the  three  pairwise-only  regions  plus  the  all-three  region  Question  28  Difficulty:  5/5  (Expert)  A  survey  of  company  employees  records  enrollment  in  three  optional  benefits:  Health  insurance  (H),  Dental  (D),  and  Vision  (V).  The  Venn  diagram  below  shows  the  probability  that  a  randomly  selected  employee  falls  into  each  region,  including  employees  enrolled  in  none  of  the  three.  
+
+===== PAGE 38 =====
+
+ 
+Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.   
+A  
+P(the  employee  is  enrolled  in  Health,  given  that  they  are  enrolled  in  Dental)  is  greater  than  P(the  employee  is  enrolled  in  Health).  
+B  
+P(the  employee  is  enrolled  in  both  Health  and  Dental,  but  not  Vision)  is  less  than  half  of  P(the  employee  is  enrolled  in  both  Health  and  Dental).  
+C  
+P(the  employee  is  enrolled  in  Vision,  given  that  they  are  enrolled  in  Health  or  Dental)  is  greater  than  35%.  
+D  Health  (H)  and  Vision  (V)  are  independent  events,  since  P(H)×P(V)  equals  P(H  ∩  V).  
+E  
+P(the  employee  is  enrolled  in  exactly  one  of  the  three  benefits)  is  more  than  triple  P(the  employee  is  enrolled  in  all  three  benefits).  Question  28  Region  probabilities  read  from  the  diagram:  only-H  =  0.12,  only-D  =  0.09,  only-V  =  0.07,  H ∩ D-only  =  0.06,  
+H
+∩
+V-only
+ 
+=
+ 
+0.05,
+ 
+D
+∩
+V-only
+ 
+=
+ 
+0.04,
+ 
+H
+∩
+D
+∩
+V
+ 
+=
+ 
+0.03,
+ 
+none
+ 
+=
+ 
+0.54.
+ 
+So
+ 
+P(H)
+ 
+=
+ 
+0.12+0.06+0.05+0.03
+ 
+=
+ 
+0.26,
+ 
+P(D)
+ 
+=
+ 
+0.09+0.06+0.04+0.03
+ 
+=
+ 
+0.22,
+ 
+P(V)
+ 
+=
+ 
+0.07+0.05+0.04+0.03
+ 
+=
+ 
+0.19,
+ 
+P(H
+∩
+D)
+ 
+=
+ 
+0.09,
+ 
+P(H
+∩
+V)
+ 
+=
+ 
+0.08.
+ 
+A  TRUE  P(H  |  D)  =  P(H ∩ D)/P(D)  =  0.09/0.22  ≈  0.4091,  which  is  above  P(H)  =  0.26  —  enrolling  in  Dental  is  associated  with  
+a
+ 
+higher
+ 
+chance
+ 
+of
+ 
+also
+ 
+enrolling
+ 
+in
+ 
+Health.
+ Formula:  P(H  |  D)  =  P(H  ∩  D)  /  P(D);  compare  directly  to  P(H)  read  from  the  diagram's  four  H-regions  
+B  FALSE  P(H ∩ D,  not  V)  =  0.06  directly  from  the  diagram.  Half  of  P(H ∩ D)  =  0.09/2  =  0.045.  Since  0.06  >  0.045,  the  region  is  
+more
+ 
+than
+ 
+half
+ 
+of
+ 
+P(H
+∩
+D),
+ 
+not
+ 
+less
+ 
+than
+ 
+half
+ 
+—
+ 
+the
+ 
+statement
+ 
+is
+ 
+false.
+ Formula:  Compare  P(H ∩ D ∩ V ᶜ )  (read  directly)  to  P(H ∩ D)/2,  where  P(H ∩ D)  =  P(H ∩ D  only)  +  P(H ∩ D ∩ V)  
+C  FALSE  P(H ∪ D)  =  P(H)+P(D) − P(H ∩ D)  =  0.26+0.22 − 0.09  =  0.39.  P(V ∩ (H ∪ D))  sums  the  V-regions  overlapping  H  or  D:  
+
+
+===== PAGE 39 =====
+
+0.05+0.04+0.03  =  0.12.  P(V  |  H ∪ D)  =  0.12/0.39  ≈  30.77%,  which  is  below  35%,  not  above  it.  Formula:  P(V  |  H ∪ D)  =  P(V ∩ (H ∪ D))  /  P(H ∪ D),  with  P(H ∪ D)  via  inclusion-exclusion  
+D  FALSE  P(H)×P(V)  =  0.26×0.19  =  0.0494.  P(H ∩ V)  =  0.08  directly  from  the  diagram.  Since  0.0494  ≠  0.08,  the  events  are  not  
+independent
+ 
+—
+ 
+the
+ 
+statement
+ 
+is
+ 
+false.
+ Formula:  Independence  requires  P(H)×P(V)  =  P(H ∩ V);  here  the  two  sides  disagree,  so  it  fails  
+E  TRUE  P(exactly  one)  =  0.12+0.09+0.07  =  0.28.  Triple  P(all  three)  =  3×0.03  =  0.09.  Since  0.28  >  0.09,  the  statement  
+holds.
+ 
+
+===== PAGE 40 =====
+
+Formula:  P(exactly  one)  =  sum  of  the  three  'only'  regions;  compare  to  3×P(H ∩ D ∩  
+Question  29 Difficulty:  ⅘  
+Subtopic:
+ 
+Bayes’
+ 
+Theorem
+ Evaluate  each  statement.  Mark  it  TRUE  or  FALSE.  A  sports  club  has  100  members.  The  Venn  diagram  below  shows  how  many  members  play  each  combination  of  Soccer  (S),  
+Basketball
+ 
+(B),
+ 
+and
+ 
+Tennis
+ 
+(T).
+ 
+One
+ 
+member
+ 
+is
+ 
+selected
+ 
+at
+ 
+random.
+  
+ 
+A  P(the  member  plays  at  least  one  of  the  three  sports)  is  greater  than  90%.  
+B  P(the  member  plays  none  of  the  three  sports)  equals  1  minus  P(the  member  plays  at  least  one).  
+C  P(the  member  plays  exactly  one  of  the  three  sports)  is  greater  than  60%.  
+D  P(the  member  plays  exactly  two  of  the  three  sports,  but  not  all  three)  is  less  than  20%.    E  P(the  member  plays  all  three  sports)  is  less  than  one-fourth  of  P(the  member  plays  exactly  two  sports,  but  not  all  three).  
+Question  29 
+A  TRUE  Summing  every  region  inside  the  three  circles:  28  +  20  +  18  +  10  +  7  +  5  +  5  =  93,  so  P(at  least  one  sport)  =  93/100  =  93%,  
+which
+ 
+is
+ 
+above
+ 
+90%.
+ Formula:  P(at  least  one)  =  (sum  of  all  regions  inside  the  circles)  /  |U|  
+B  TRUE  'Plays  none'  and  'plays  at  least  one'  are  complementary  events  for  any  member,  so  P(none)  =  1  −  P(at  least  one)  by  definition.  
+
+
+===== PAGE 41 =====
+
+Formula:  P(none)  =  1  −  P(at  least  one)  
+C  TRUE  
+
+===== PAGE 42 =====
+
+'Exactly  one'  sums  the  three  single-sport-only  regions:  28  (only  S)  +  20  (only  B)  +  18  (only  T)  =  66,  so  P(exactly  one)  =  66/100  =  66%,  which  is  above  60%.  Formula:  P(exactly  one)  =  (only-S  +  only-B  +  only-T)  /  |U|  
+D  FALSE  'Exactly  two,  not  three'  sums  the  three  pairwise-only  regions:  10  (S∩B  only)  +  7  (S∩T  only)  +  5  (B∩T  only)  =  22,  so  P(exactly  two)  =  22/100  =  22%,  which  is  above  20%,  not  below  it.  Formula:  P(exactly  two,  not  three)  =  (S∩B  only  +  S∩T  only  +  B∩T  only)  /  |U|  
+E  TRUE  P(all  three)  =  5/100  =  5%.  One-fourth  of  P(exactly  two,  not  three)  =  22%/4  =  5.5%.  Since  5%  is  less  than  5.5%,  the  statement  holds.  Formula:  Compare  P(all  three)  to  (1/4)  ×  P(exactly  two,  not  three)  
+ 
