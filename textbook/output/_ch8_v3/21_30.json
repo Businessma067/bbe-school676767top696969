@@ -97,8 +97,8 @@
     "statements": [
       "The extra capacity from widening $4$ cm to $9$ cm already exceeds the bench reading of $64$ litres per second.",
       "Measuring diameter in millimetres makes the new coefficient larger than $0.01$.",
-      "A $16$ cm pipe already delivers more than thirty times the bench capacity.",
-      "Doubling the diameter multiplies capacity by less than $5$.",
+      "A $16$ cm pipe already delivers more than $30$ times the $64$ litre bench capacity.",
+      "Doubling the diameter from $4$ cm to $8$ cm multiplies capacity by less than $5$.",
       "To reach $500$ litres per second the diameter must already exceed $9$ cm."
     ],
     "answer_key": [
@@ -185,10 +185,10 @@
     "title": "An Eighty Percent Learning Curve Meeting a Materials Floor",
     "context": "Unit cost on a new assembly line follows $c(N)=c_1 N^{-b}$ for cumulative output $N>0$. Every doubling of cumulative output multiplies unit cost by $0.8$, and the first unit cost $1000$. Materials alone cost $400$ per unit, so the curve cannot describe costs below that floor. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "After three successive doublings the modelled unit cost is already under $520$.",
-      "After four successive doublings the modelled unit cost is already under $400$.",
-      "Quadrupling cumulative output halves the unit cost.",
-      "After one doubling, unit cost is already under $850$.",
+      "After three successive doublings from $N=1$ to $N=8$ the modelled unit cost is already under $520$.",
+      "After four successive doublings from $N=1$ to $N=16$ the modelled unit cost is already under $400$.",
+      "Quadrupling cumulative output from $N=1$ to $N=4$ halves the unit cost.",
+      "After one doubling from $N=1$ to $N=2$, unit cost is already under $850$.",
       "The cost cut from the first unit to $N=8$ already exceeds $450$."
     ],
     "answer_key": [

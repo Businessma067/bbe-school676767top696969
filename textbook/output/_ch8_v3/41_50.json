@@ -125,11 +125,11 @@
     "title": "Furnace Throughput Calibrated From Two Runs",
     "context": "A furnace's throughput follows $T(g)=A g^{r}$ tonnes per hour, where $g>0$ is the gas feed in cubic metres per hour. A feed of $8$ gave $16$ tonnes per hour, and a feed of $27$ gave $36$. The site licence caps throughput at $32$ tonnes per hour. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The extra throughput from feed $8$ to $27$ already exceeds the $8$-feed reading.",
-      "Doubling the gas feed doubles throughput.",
+      "The extra throughput from feed $8$ to $27$ already exceeds the $8$-feed reading of $16$.",
+      "Doubling the gas feed from $8$ to $16$ doubles throughput.",
       "A feed of $64$ already produces more than $60$ tonnes per hour.",
       "Throughput per cubic metre falls from feed $8$ to $27$ by more than $0.5$.",
-      "The licensed ceiling is reached at a feed below $24$ cubic metres per hour."
+      "The licensed ceiling of $32$ tonnes is reached at a feed below $24$ cubic metres per hour."
     ],
     "answer_key": [
       true,

@@ -3,7 +3,7 @@
     "id": "math-8-71",
     "case_id": "MATH 8.71",
     "title": "Subscriber Demand and Revenue for a Streaming Tier",
-    "context": "A streaming service prices one subscription tier at $p$ euros a month. Paid subscribers, in thousands, follow $q(p)=A p^{r}$ with both constants unknown. Quadrupling any price multiplies the subscriber count by one eighth, and at four euros the tier holds two hundred and fifty thousand subscribers. Monthly revenue is $R=pq$, also in thousands of euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A streaming service prices one subscription tier at $p$ euros a month. Paid subscribers, in thousands, follow $q(p)=A p^{r}$ with both constants unknown. Quadrupling any price multiplies the subscriber count by $\\frac{1}{8}$, and at $4$ euros the tier holds $250$ thousand subscribers. Monthly revenue is $R=pq$, also in thousands of euros. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "At a price of $16$ euros, monthly revenue is already under $600$ thousand euros.",
       "At a price of $9$ euros, monthly revenue is under $600$ thousand euros.",
@@ -33,13 +33,13 @@
     "id": "math-8-72",
     "case_id": "MATH 8.72",
     "title": "Fixed Retainer Plus a Square-Root Monitoring Fee",
-    "context": "A compliance-monitoring platform bills $C(n)=F+A n^{\\frac{1}{2}}$ euros a month for $n\\ge 1$ branches, with both constants unknown. One hundred branches cost seven hundred euros, and four hundred branches cost one thousand euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A compliance-monitoring platform bills $C(n)=F+A n^{\\frac{1}{2}}$ euros a month for $n\\ge 1$ branches, with both constants unknown. $100$ branches cost $700$ euros, and $400$ branches cost $1000$ euros. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Monitoring $900$ branches costs more than $1200$ euros a month.",
-      "At $36$ branches the bill already exceeds the $100$-branch invoice.",
-      "Quadrupling the branch count doubles the whole bill.",
+      "At $36$ branches the bill already exceeds the $100$-branch invoice of $700$ euros.",
+      "Quadrupling the branch count from $100$ to $400$ doubles the whole bill.",
       "A $100$-branch network already costs more than $650$ euros.",
-      "The extra bill from $100$ to $400$ branches already exceeds the $100$-branch bill."
+      "The extra bill from $100$ to $400$ branches already exceeds the $100$-branch bill of $700$ euros."
     ],
     "answer_key": [
       true,
@@ -63,11 +63,11 @@
     "id": "math-8-73",
     "case_id": "MATH 8.73",
     "title": "Ordering Cost Against Holding Cost at a Spare-Parts Depot",
-    "context": "A spare-parts depot reorders one component in batches of $q>0$ units. Annual ordering cost is $O(q)=A q^{-1}$ euros and annual holding cost is $H(q)=B q$ euros, with both coefficients unknown. At a batch of forty units the two components are equal, and each is one hundred and twenty euros. The annual total is $T=O+H$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A spare-parts depot reorders one component in batches of $q>0$ units. Annual ordering cost is $O(q)=A q^{-1}$ euros and annual holding cost is $H(q)=B q$ euros, with both coefficients unknown. At a batch of $40$ units the two components are equal, and each is $120$ euros. The annual total is $T=O+H$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "A batch of $60$ units costs more than $250$ euros a year in total.",
       "At $80$ units, ordering cost is more than $200$ euros.",
-      "Doubling any batch size leaves the annual total unchanged.",
+      "Doubling any batch size from $40$ to $80$ leaves the annual total unchanged.",
       "Cutting the batch from $40$ to $20$ raises the annual total by as much as raising it from $40$ to $80$.",
       "At $40$ units the annual total is already under $250$ euros."
     ],
@@ -93,13 +93,13 @@
     "id": "math-8-74",
     "case_id": "MATH 8.74",
     "title": "Average Product on a Bottling Line",
-    "context": "Output on a bottling line follows $Q(L)=A L^{r}$ units a shift, where $L>0$ is labour hours, with both constants unknown. Sixteen hours produce ninety-six units, and eighty-one hours produce three hundred and twenty-four. Average product is output per labour hour, $Q(L)/L$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "Output on a bottling line follows $Q(L)=A L^{r}$ units a shift, where $L>0$ is labour hours, with both constants unknown. $16$ hours produce $96$ units, and $81$ hours produce $324$. Average product is output per labour hour, $Q(L)/L$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "At $16$ hours, average product is under $7$ units an hour.",
-      "To double output she must double the labour hours.",
+      "To double the $96$-unit output she must double the $16$ labour hours.",
       "Average product falls by more than $1.5$ units an hour from $16$ to $81$ hours.",
       "At $81$ hours, average product still exceeds $5$ units an hour.",
-      "The extra output from $16$ to $81$ hours already exceeds the $16$-hour output."
+      "The extra output from $16$ to $81$ hours already exceeds the $16$-hour output of $96$."
     ],
     "answer_key": [
       true,
@@ -123,11 +123,11 @@
     "id": "math-8-75",
     "case_id": "MATH 8.75",
     "title": "Learning Curve With an Irreducible Assembly Floor",
-    "context": "A drone-assembly cell models the labour time of the unit built after $n$ cumulative units by $t(n)=F+A n^{-\\frac{1}{2}}$ minutes, $n\\ge 1$, with both constants unknown. After twenty-five units the next unit takes eighteen minutes, and after one hundred units it takes thirteen. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A drone-assembly cell models the labour time of the unit built after $n$ cumulative units by $t(n)=F+A n^{-\\frac{1}{2}}$ minutes, $n\\ge 1$, with both constants unknown. After $25$ units the next unit takes $18$ minutes, and after $100$ units it takes $13$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "After $900$ cumulative units, modelled unit time is already under $10$ minutes.",
       "The unit built after $4$ cumulative units takes under $30$ minutes.",
-      "Quadrupling cumulative output halves the modelled unit time.",
+      "Quadrupling cumulative output from $25$ to $100$ halves the modelled unit time.",
       "After $25$ units, modelled unit time is already under $20$ minutes.",
       "The time cut from $n=25$ to $n=100$ already exceeds $4$ minutes."
     ],
@@ -153,7 +153,7 @@
     "id": "math-8-76",
     "case_id": "MATH 8.76",
     "title": "Break-Even for a Fish Farm With Diminishing Harvest Returns",
-    "context": "A fish farm turns feed into harvest revenue $R(x)=A x^{\\frac{2}{3}}$ thousand euros in a season, where $x>0$ is tonnes of feed, while feed and handling cost $C(x)=30x$ thousand euros. At eight tonnes of feed, harvest revenue was three hundred and sixty thousand euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A fish farm turns feed into harvest revenue $R(x)=A x^{\\frac{2}{3}}$ thousand euros in a season, where $x>0$ is tonnes of feed, while feed and handling cost $C(x)=30x$ thousand euros. At $8$ tonnes of feed, harvest revenue was $360$ thousand euros. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "At $64$ tonnes, cost already exceeds harvest revenue.",
       "At $8$ tonnes the season clears more than $100$ thousand euros.",
@@ -183,12 +183,12 @@
     "id": "math-8-77",
     "case_id": "MATH 8.77",
     "title": "Calibrating a Handling-Cost Law From a Cost Difference",
-    "context": "A distribution centre models daily handling cost by $f(x)=A x^{\\frac{3}{2}}$ euros, where $x>0$ is a pallet-volume index. The individual daily figures were lost, and the only surviving record states that the cost at index sixteen exceeds the cost at index four by three hundred and thirty-six euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A distribution centre models daily handling cost by $f(x)=A x^{\\frac{3}{2}}$ euros, where $x>0$ is a pallet-volume index. The individual daily figures were lost, and the only surviving record states that the cost at index $16$ exceeds the cost at index $4$ by $336$ euros. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Multiplying the pallet-volume index by $4$ multiplies handling cost by $4$.",
+      "Multiplying the pallet-volume index by $4$ from $4$ to $16$ multiplies handling cost by $4$.",
       "At index $9$ the modelled handling cost is already above $150$ euros.",
-      "Handling cost grows faster than the pallet-volume index.",
-      "Because the exponent exceeds one, equal gaps in the index produce equal gaps in cost.",
+      "Handling cost grows faster than the pallet-volume index because the exponent $\\frac{3}{2}$ exceeds $1$.",
+      "Equal gaps of $5$ in the index, from $4$ to $9$ and from $9$ to $14$, produce equal gaps in cost.",
       "Raising the index from $9$ to $25$ adds under $500$ euros of handling cost."
     ],
     "answer_key": [
@@ -213,11 +213,11 @@
     "id": "math-8-78",
     "case_id": "MATH 8.78",
     "title": "Inverting a Wastewater Load Model Against a Permit Ceiling",
-    "context": "A dye-house discharges a wastewater load of $W(s)=A s^{\\frac{3}{2}}$ kilograms a day, where $s>0$ is a production scale index. At scale nine the daily load is one hundred and thirty-five kilograms. The site permit caps the daily load at three hundred and twenty kilograms, and the plant wants the largest scale it may run. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A dye-house discharges a wastewater load of $W(s)=A s^{\\frac{3}{2}}$ kilograms a day, where $s>0$ is a production scale index. At scale $9$ the daily load is $135$ kilograms. The site permit caps the daily load at $320$ kilograms, and the plant wants the largest scale it may run. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The largest admissible scale is already below $20$.",
-      "Doubling the permit ceiling doubles the admissible scale index.",
-      "If the coefficient doubled, the admissible scale under the same ceiling would be halved.",
+      "The largest admissible scale under the $320$ kg cap is already below $20$.",
+      "Doubling the permit ceiling from $320$ to $640$ doubles the admissible scale index.",
+      "If the coefficient doubled from $5$ to $10$, the admissible scale under the $320$ kg ceiling would be halved.",
       "At scale index $4$ the daily load is under $50$ kilograms.",
       "The extra load from scale $4$ to scale $9$ already exceeds the load at scale $4$."
     ],
@@ -243,7 +243,7 @@
     "id": "math-8-79",
     "case_id": "MATH 8.79",
     "title": "Elasticity Shortcut Against the Exact Change in Parking Demand",
-    "context": "A city parking authority models hourly demand by $q(p)=A p^{-2}$ occupied spaces, where $p>0$ is the hourly tariff in euros. It records four thousand occupied spaces at a tariff of three euros. Demand of this form has constant elasticity minus two, so the usual shortcut predicts a percentage change in demand equal to minus two times the percentage change in tariff. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A city parking authority models hourly demand by $q(p)=A p^{-2}$ occupied spaces, where $p>0$ is the hourly tariff in euros. It records $4000$ occupied spaces at a tariff of $3$ euros. Demand of this form has constant elasticity $-2$, so the usual shortcut predicts a percentage change in demand equal to $-2$ times the percentage change in tariff. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Raising the tariff by $25\\%$ leaves more than $2500$ occupied spaces.",
       "At a tariff of $2$ euros, hourly demand exceeds $8000$ occupied spaces.",
@@ -273,11 +273,11 @@
     "id": "math-8-80",
     "case_id": "MATH 8.80",
     "title": "Geometrically Similar Bells Cast From One Pattern",
-    "context": "A foundry casts geometrically similar bronze bells from a single pattern, so mass follows $M(h)=A h^{3}$ kilograms, where $h>0$ is height in metres. The pattern book omits the coefficient; it records only that a finished bell of height one half metre was weighed at thirty kilograms. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A foundry casts geometrically similar bronze bells from a single pattern, so mass follows $M(h)=A h^{3}$ kilograms, where $h>0$ is height in metres. The pattern book omits the coefficient; it records only that a finished bell of height $0.5$ metres was weighed at $30$ kilograms. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "A bell of height $1.5$ m already weighs more than $700$ kg.",
-      "Doubling a bell's height doubles its mass.",
-      "A one-metre bell already weighs more than $200$ kg.",
+      "Doubling a bell's height from $0.5$ m to $1$ m doubles its mass.",
+      "A $1$-metre bell already weighs more than $200$ kg.",
       "Two $1$ m bells together already fall short of one $1.5$ m bell.",
       "Raising height from $1$ m to $2$ m adds more than $1600$ kg."
     ],

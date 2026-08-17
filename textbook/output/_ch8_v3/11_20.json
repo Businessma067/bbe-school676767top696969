@@ -6,10 +6,10 @@
     "context": "Marina's harvest in kilograms follows $Y(h)=A h^{r}$ after $h>0$ hours of watering, with both constants unknown. $8$ hours give $4$ kilograms, and $27$ hours give $6$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "After $64$ hours the harvest is already above $7$ kilograms.",
-      "Doubling the watering time doubles the harvest.",
+      "Doubling watering from $8$ hours to $16$ hours doubles the harvest.",
       "A $27$-hour watering still yields under $5$ kilograms.",
       "To reach $8$ kilograms she must already exceed $50$ hours.",
-      "The extra harvest from $8$ hours to $27$ hours already exceeds the $8$-hour record."
+      "The extra harvest from $8$ hours to $27$ hours already exceeds the $8$-hour record of $4$ kilograms."
     ],
     "answer_key": [
       true,
@@ -156,9 +156,9 @@
     "context": "A monitoring team models a server's peak load as $L(x)=A x^{r}$, where $x>0$ is the number of simultaneous jobs. Stress tests show that doubling the job count multiplies peak load by $4$, and a run with $8$ simultaneous jobs recorded a peak load of $32$. The hardware alarm trips at a peak load of $200$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Raising the job count from $8$ to $16$ adds more load than the recorded peak of $32$.",
-      "The hardware alarm already trips at $16$ simultaneous jobs.",
+      "The hardware alarm of $200$ already trips at $16$ simultaneous jobs.",
       "Load per job at $16$ jobs already exceeds load per job at $8$.",
-      "The job count that trips the alarm is already above $18$.",
+      "The job count that trips the alarm of $200$ is already above $18$.",
       "After $10$ simultaneous jobs, peak load is already above $40$."
     ],
     "answer_key": [

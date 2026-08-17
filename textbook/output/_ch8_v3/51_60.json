@@ -156,10 +156,10 @@
     "context": "Weekly footfall at a retail park from a residential zone follows $f(d)=A d^{-1.5}$ visitors, where $d>0$ is the driving distance in kilometres. The planning file omits the coefficient: it records only that a zone $4$ kilometres away supplies $350$ more visitors a week than a zone $16$ kilometres away. A zone counts as core catchment when it supplies at least $100$ visitors a week. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "A zone $9$ kilometres away still supplies more than $100$ visitors a week.",
-      "Footfall follows an inverse-square law of driving distance.",
+      "Footfall follows an inverse-square law $d^{-2}$ of driving distance.",
       "The drop from $4$ km to $16$ km already exceeds the remaining footfall at $16$ km.",
-      "Core catchment already ends before $11$ kilometres.",
-      "An extra kilometre of drive cuts more visitors far from the park than near it."
+      "Core catchment of $100$ visitors already ends before $11$ kilometres.",
+      "An extra kilometre of drive from $4$ km cuts more visitors than an extra kilometre from $16$ km."
     ],
     "answer_key": [
       true,
@@ -247,8 +247,8 @@
     "statements": [
       "A discharge of $400$ already pushes transport above $4500$ tonnes per day.",
       "At discharge $64$, transport is still under $300$ tonnes per day.",
-      "Doubling the discharge more than doubles sediment transport.",
-      "Doubling the flow velocity doubles sediment transport.",
+      "Doubling the discharge from $64$ to $128$ more than doubles sediment transport.",
+      "Doubling the flow velocity from $3$ to $6$ doubles sediment transport.",
       "The extra transport from discharge $64$ to $400$ already exceeds $4500$."
     ],
     "answer_key": [

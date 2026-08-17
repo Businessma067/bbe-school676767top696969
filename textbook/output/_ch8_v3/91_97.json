@@ -3,11 +3,11 @@
     "id": "math-8-91",
     "case_id": "MATH 8.91",
     "title": "Wetland Evaporation Across Three Humidity Readings",
-    "context": "A field team models wetland evaporation in millimetres per day by $E(h)=A h^{r}$ against humidity deficit $h>0$, with both constants unknown. Deficits of one and four recorded twenty and forty millimetres per day, and a third reading at deficit nine recorded sixty. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A field team models wetland evaporation in millimetres per day by $E(h)=A h^{r}$ against humidity deficit $h>0$, with both constants unknown. Deficits of $1$ and $4$ recorded $20$ and $40$ millimetres per day, and a third reading at deficit $9$ recorded $60$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "After a humidity deficit of $25$, evaporation is already more than $90$ millimetres per day.",
-      "Doubling the humidity deficit doubles evaporation.",
-      "To double the forty-millimetre reading she must already exceed $10$ of deficit.",
+      "Doubling the humidity deficit from $1$ to $2$ doubles evaporation.",
+      "To double the $40$-millimetre reading she must already exceed $10$ of deficit.",
       "After a deficit of $4$, evaporation is still under $35$ millimetres per day.",
       "The extra evaporation from deficit $1$ to $4$ already exceeds $15$ millimetres per day."
     ],
@@ -33,10 +33,10 @@
     "id": "math-8-92",
     "case_id": "MATH 8.92",
     "title": "Shade-Tree Cooling Benefit Against Upkeep Cost",
-    "context": "A city parks office models annual cooling benefit by $B(n)=A n^{\\frac{1}{2}}$ thousand euros and annual upkeep by $C(n)=k n$ thousand euros, where $n>0$ is the number of thousand trees planted. Raising the planting from four thousand trees to nine thousand increased cooling benefit by twelve thousand euros. At nine thousand trees, upkeep was eighteen thousand euros. Net benefit is $N(n)=B(n)-C(n)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A city parks office models annual cooling benefit by $B(n)=A n^{\\frac{1}{2}}$ thousand euros and annual upkeep by $C(n)=k n$ thousand euros, where $n>0$ is the number of thousand trees planted. Raising the planting from $4$ thousand trees to $9$ thousand increased cooling benefit by $12$ thousand euros. At $9$ thousand trees, upkeep was $18$ thousand euros. Net benefit is $N(n)=B(n)-C(n)$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "At nine thousand trees, net benefit is already more than $15$ thousand euros.",
-      "At four thousand trees, net benefit is already more than $20$ thousand euros.",
+      "At $9$ thousand trees, net benefit is already more than $15$ thousand euros.",
+      "At $4$ thousand trees, net benefit is already more than $20$ thousand euros.",
       "Doubling the planting from $4$ to $8$ thousand trees doubles net benefit.",
       "Once upkeep overtakes cooling benefit, the net at $36$ thousand trees is already under $5$.",
       "The extra net from $4$ to $9$ thousand trees already falls short of $5$ thousand euros."
@@ -63,11 +63,11 @@
     "id": "math-8-93",
     "case_id": "MATH 8.93",
     "title": "Trail-Map Kiosk Demand Inverted from Price",
-    "context": "Weekly pamphlet demand at a trail-map kiosk follows $q(p)=A p^{-2}$ packs per week, where $p>0$ is the price in euros. At a price of five euros the kiosk sold eighty packs. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "Weekly pamphlet demand at a trail-map kiosk follows $q(p)=A p^{-2}$ packs per week, where $p>0$ is the price in euros. At a price of $5$ euros the kiosk sold $80$ packs. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "At $10$ euros the kiosk already sells under $25$ packs a week.",
       "A target of $125$ packs a week needs a price above $5$ euros.",
-      "Doubling the five-euro price halves weekly demand.",
+      "Doubling the $5$-euro price to $10$ euros halves weekly demand.",
       "At $5$ euros weekly revenue already exceeds $350$.",
       "The demand drop from $5$ to $10$ euros already exceeds $50$ packs."
     ],
@@ -93,12 +93,12 @@
     "id": "math-8-94",
     "case_id": "MATH 8.94",
     "title": "Bike-Share Passes Under a Subsidy Price Index",
-    "context": "Weekly bike-share day-pass sales follow $q(p)=A p^{\\frac{-3}{2}}$ when the pass price is $p>0$ euros. A pilot at sixteen euros sold fifty passes. Policy indexes the pass by $p(s)=B s^{\\frac{2}{3}}$ for a positive subsidy index $s$, and at subsidy index eight the posted price is sixteen euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "Weekly bike-share day-pass sales follow $q(p)=A p^{\\frac{-3}{2}}$ when the pass price is $p>0$ euros. A pilot at $16$ euros sold $50$ passes. Policy indexes the pass by $p(s)=B s^{\\frac{2}{3}}$ for a positive subsidy index $s$, and at subsidy index $8$ the posted price is $16$ euros. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "At subsidy index $8$, composed demand is already more than $40$ passes.",
       "At subsidy index $27$, composed demand stays under $16$ passes.",
-      "Tripling the subsidy index triples composed demand.",
-      "Raising the subsidy index raises composed demand.",
+      "Tripling the subsidy index from $8$ to $24$ triples composed demand.",
+      "Raising the subsidy index from $8$ to $27$ raises composed demand.",
       "The demand drop from subsidy $8$ to $27$ already exceeds $30$ passes."
     ],
     "answer_key": [
@@ -123,12 +123,12 @@
     "id": "math-8-95",
     "case_id": "MATH 8.95",
     "title": "Overnight Loaves Split Across Two Oven Lines",
-    "context": "A regional bakery must bake thirty thousand loaves overnight and can split them between two oven lines. Line 1's energy-cost index follows $C_{1}(q)=a q^{2}$ and line 2's follows $C_{2}(q)=b q^{2}$, where $q$ is that line's own output in thousands of loaves. A ten-thousand-loaf run on line 1 scored one hundred, and an eight-thousand-loaf run on line 2 scored sixteen. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A regional bakery must bake $30$ thousand loaves overnight and can split them between two oven lines. Line 1's energy-cost index follows $C_{1}(q)=a q^{2}$ and line 2's follows $C_{2}(q)=b q^{2}$, where $q$ is that line's own output in thousands of loaves. A $10$-thousand-loaf run on line 1 scored $100$, and an $8$-thousand-loaf run on line 2 scored $16$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Sending all thirty thousand loaves to line 2 scores more than $200$.",
-      "The six-and-twenty-four split scores under $200$.",
-      "Concentrating the whole order on the cheaper line is the cheapest plan.",
-      "Line 1's average cost index falls as its own output rises.",
+      "Sending all $30$ thousand loaves to line 2 scores more than $200$.",
+      "The $6$-and-$24$ split scores under $200$.",
+      "Concentrating the whole $30$ thousand on the cheaper line is the cheapest plan.",
+      "Line 1's average cost index falls as its own output rises from $6$ to $24$.",
       "Two batches of $12$ thousand on line 2 together already fall short of one batch of $24$ thousand on line 2."
     ],
     "answer_key": [
@@ -153,11 +153,11 @@
     "id": "math-8-96",
     "case_id": "MATH 8.96",
     "title": "Museum Tickets: Point Elasticity Versus a Finite Rise",
-    "context": "Evening museum admissions follow $q(p)=A p^{-2}$ tickets when the price is $p>0$ euros. At ten euros the desk sold forty tickets. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "Evening museum admissions follow $q(p)=A p^{-2}$ tickets when the price is $p>0$ euros. At $10$ euros the desk sold $40$ tickets. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Raising the price from $10$ to $12$ euros cuts demand by more than $10$ tickets.",
       "At $5$ euros the desk already sells more than $150$ tickets.",
-      "Weekly revenue is maximized by raising the price without bound.",
+      "Weekly revenue $R=pq$ is maximized by raising the $10$-euro price without bound.",
       "At $10$ euros the desk already sells more than $35$ tickets.",
       "The exact drop from $10$ to $12$ euros already exceeds the $10\\%$ shortcut of $4$ tickets."
     ],
@@ -183,12 +183,12 @@
     "id": "math-8-97",
     "case_id": "MATH 8.97",
     "title": "Annealing Lehr Throughput Under a Mis-Scaled Coefficient",
-    "context": "A glass-annealing lehr's throughput follows $T(e)=A e^{\\frac{3}{2}}$ trays per hour for belt setting $e>0$. A run at belt setting four delivered sixty-four trays an hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A glass-annealing lehr's throughput follows $T(e)=A e^{\\frac{3}{2}}$ trays per hour for belt setting $e>0$. A run at belt setting $4$ delivered $64$ trays an hour. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "At belt setting $9$, throughput is already more than $200$ trays per hour.",
       "If the coefficient were $25\\%$ larger, throughput at setting $9$ would already exceed $250$ trays per hour.",
-      "If the coefficient were $25\\%$ larger, the scale factor T(2e)/T(e) would itself become $25\\%$ larger.",
-      "Doubling the belt setting doubles throughput.",
+      "If the coefficient were $25\\%$ larger, the scale factor $T(2e)/T(e)$ would itself become $25\\%$ larger.",
+      "Doubling the belt setting from $4$ to $8$ doubles throughput.",
       "The extra throughput from setting $4$ to $9$ already exceeds $140$ trays per hour."
     ],
     "answer_key": [

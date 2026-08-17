@@ -155,11 +155,11 @@
     "title": "Cantilever Deflection Checked Against a Third Span",
     "context": "A materials lab models tip deflection of a cantilever as $y(L)=A L^{k}$ millimetres, where $L>0$ is the free span in metres. Two spans are trusted: $y(3)=18$ and $y(6)=72$. A third run recorded $y(9)=150$, and the question is whether that third point still sits on the same power law. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The trusted quadratic already puts nine metres above $155$ mm.",
-      "The recorded third run sits more than $10$ mm below the trusted quadratic.",
-      "Doubling the free span doubles the tip deflection.",
+      "The trusted quadratic already puts $9$ metres above $155$ mm.",
+      "The recorded third run of $150$ mm sits more than $10$ mm below the trusted quadratic.",
+      "Doubling the free span from $3$ m to $6$ m doubles the tip deflection.",
       "At span $6$ m the trusted law already exceeds $70$ mm.",
-      "The extra predicted deflection from $3$ m to $6$ m already exceeds the $3$ m reading."
+      "The extra predicted deflection from $3$ m to $6$ m already exceeds the $3$ m reading of $18$ mm."
     ],
     "answer_key": [
       true,
@@ -275,10 +275,10 @@
     "title": "Warehouse Forklift Throughput Under a Staffing Cap",
     "context": "Forklift throughput follows $T(s)=A s^{0.5}$ pallets per hour, where $s>0$ is the number of drivers on shift. A logged shift with $16$ drivers moved $80$ pallets per hour. Safety rules cap the shift at $36$ drivers. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "To double the logged throughput the yard must more than double the crew.",
+      "To double the logged $80$ pallets, the yard must more than double the crew of $16$.",
       "With $36$ drivers the model already predicts more than $110$ pallets per hour.",
       "Throughput per driver falls from $16$ to $36$ drivers by more than $1$ pallet per driver.",
-      "Reaching $150$ pallets per hour stays inside the safety cap.",
+      "Reaching $150$ pallets per hour stays inside the safety cap of $36$ drivers.",
       "Two $16$-driver shifts already match one $64$-driver shift."
     ],
     "answer_key": [

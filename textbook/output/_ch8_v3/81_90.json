@@ -33,10 +33,10 @@
     "id": "math-8-82",
     "case_id": "MATH 8.82",
     "title": "Signal Attenuation From a Buried Cable Locator",
-    "context": "The signal a locator receives from a buried conductor follows $S(x)=A x^{r}$ millivolts, where $x>0$ is the burial depth in metres. Neither constant is posted. Doubling any burial depth cuts the received signal to one eighth, and a calibration run over a conductor buried at $2$ metres read $50$ millivolts. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "The signal a locator receives from a buried conductor follows $S(x)=A x^{r}$ millivolts, where $x>0$ is the burial depth in metres. Neither constant is posted. Doubling any burial depth cuts the received signal to $\\frac{1}{8}$, and a calibration run over a conductor buried at $2$ metres read $50$ millivolts. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The received signal is inversely proportional to burial depth.",
-      "Doubling burial depth halves the received signal.",
+      "The received signal is inversely proportional to burial depth, so doubling from $2$ m to $4$ m halves it.",
+      "Doubling burial depth from $2$ m to $4$ m halves the received signal.",
       "A conductor buried at $4$ metres already returns under $7$ millivolts.",
       "A reading of $3.2$ millivolts still corresponds to a burial depth of more than $8$ metres.",
       "The drop from $2$ m to $4$ m already exceeds the remaining signal at $4$ m."
@@ -96,9 +96,9 @@
     "context": "Volumetric flow through a micro-irrigation emitter follows $Q(r)=A r^{k}$ litres per hour, where $r>0$ is the internal tube radius in millimetres. Neither constant is posted. Doubling any tube radius multiplies flow by $16$, and a bench test on a tube of radius $2$ mm delivered $48$ litres per hour. The designers also track the mean velocity index $\\frac{Q}{\\pi r^{2}}$, which spreads the flow across the tube's cross-section. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "A tube of radius $3$ mm already delivers more than $200$ litres per hour.",
-      "Doubling the tube radius doubles the flow.",
+      "Doubling the tube radius from $1$ mm to $2$ mm doubles the flow.",
       "A tube of radius $1$ mm still delivers more than $10$ litres per hour.",
-      "The mean velocity index is the same in every tube.",
+      "The mean velocity index $\\frac{Q}{\\pi r^{2}}$ is the same at $1$ mm and at $2$ mm.",
       "Two $1$ mm tubes together already fall short of one $2$ mm tube."
     ],
     "answer_key": [
@@ -123,9 +123,9 @@
     "id": "math-8-85",
     "case_id": "MATH 8.85",
     "title": "Barrier Distance for a Radiography Source",
-    "context": "Dose rate near an industrial radiography source follows $H(d)=A d^{r}$ microsieverts per hour, where $d>0$ is the distance from the source in metres. Neither constant is posted. Quadrupling any distance cuts the dose rate to one sixteenth, and a survey meter three metres from the source reads $80$ microsieverts per hour. Site rules put the barrier where the dose rate has fallen to $5$ microsieverts per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "Dose rate near an industrial radiography source follows $H(d)=A d^{r}$ microsieverts per hour, where $d>0$ is the distance from the source in metres. Neither constant is posted. Quadrupling any distance cuts the dose rate to $\\frac{1}{16}$, and a survey meter $3$ metres from the source reads $80$ microsieverts per hour. Site rules put the barrier where the dose rate has fallen to $5$ microsieverts per hour. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Doubling the distance from the source halves the dose rate.",
+      "Doubling the distance from $3$ m to $6$ m halves the dose rate.",
       "The drop from $3$ metres to $6$ metres already exceeds the remaining dose at $6$ metres.",
       "The $5$ microsievert barrier is already reached before $13$ metres.",
       "At $6$ metres the dose rate is already under $25$ microsieverts per hour.",
@@ -185,11 +185,11 @@
     "title": "A Weir Rating Curve Rewritten in New Units",
     "context": "Discharge over a measuring weir follows $Q(h)=A h^{\\frac{3}{2}}$ cubic metres per second, where $h>0$ is the head in metres. A gauging at a head of $0.25$ metres recorded a discharge of $2$ cubic metres per second. A field team wants the same rating curve rewritten with the head in centimetres, sometimes keeping discharge in cubic metres per second and sometimes reporting it in litres per second. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Switching the head to centimetres makes the new coefficient (cubic metres per second) larger than $0.02$.",
+      "Switching the head from $1$ m to $100$ cm makes the new coefficient (cubic metres per second) larger than $0.02$.",
       "A head of $1$ metre still discharges under $20$ cubic metres per second.",
-      "Doubling the head doubles the discharge.",
+      "Doubling the head from $0.25$ m to $0.5$ m doubles the discharge.",
       "A head of $4$ metres still discharges under $100$ cubic metres per second.",
-      "The extra discharge from $0.25$ m to $1$ m already exceeds the $0.25$ m gauging."
+      "The extra discharge from $0.25$ m to $1$ m already exceeds the $0.25$ m gauging of $2$."
     ],
     "answer_key": [
       false,

@@ -95,10 +95,10 @@
     "title": "Kiln Output Under a Licensed Ceiling",
     "context": "A kiln's daily output follows $y(x)=A x^{\\frac{4}{3}}$ tonnes for a fuel feed of $x>0$ cubic metres. A test firing at a feed of $27$ produced $324$ tonnes. The site licence forbids shipping more than $1024$ tonnes a day, so any extra firing is wasted. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "To double the test-firing output, the fuel feed must more than double.",
+      "To double the test-firing output of $324$ tonnes, the fuel feed must more than double from $27$.",
       "Two firings at a feed of $8$ together already fall short of one firing at a feed of $27$.",
       "A feed of $8$ produces more than $50$ tonnes.",
-      "The licensed ceiling binds before a feed of $50$.",
+      "The licensed ceiling of $1024$ tonnes binds before a feed of $50$.",
       "The extra output from feed $8$ to feed $27$ already exceeds $250$ tonnes."
     ],
     "answer_key": [
