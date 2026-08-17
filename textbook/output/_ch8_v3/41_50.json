@@ -1,0 +1,302 @@
+[
+  {
+    "id": "math-8-41",
+    "case_id": "MATH 8.41",
+    "title": "Turning a Negative-Power Demand Curve Around",
+    "context": "A component supplier faces demand $q(p)=A p^{-2}$ units at a price $p>0$ euros. A catalogue price of four euros clears four hundred units. Procurement wants the curve written the other way round, with price a function of quantity. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The price that clears a given quantity is itself a power function of that quantity.",
+      "Twenty-five units clear at sixteen euros.",
+      "Raising the catalogue price raises revenue along this curve.",
+      "At one hundred units the supplier's revenue is eight hundred euros.",
+      "Because quantity falls when price rises, revenue must fall when quantity rises."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe catalogue pair recovers $A$, and inverting a power with a nonzero exponent produces another power.\n\n$$A\\cdot 4^{-2}=400 \\qquad A=6400 \\qquad p=\\frac{80}{\\sqrt{q}}=80q^{-\\frac{1}{2}}$$\n\nPrice as a function of quantity is a power with exponent $-\\frac{1}{2}$, so the statement is True.",
+      "**B.** → True\n\nTwenty-five units is a level of the inverse curve. From $A\\cdot 4^{-2}=400$ one has $A=6400$, so\n\n$$p(25)=80\\cdot 25^{-\\frac{1}{2}}=\\frac{80}{5}=16$$\n\nThe clearing price is sixteen euros, so the statement is True.",
+      "**C.** → False\n\nRevenue through price is quantity times price, which lowers the exponent by one.\n\n$$R(p)=p\\cdot 6400p^{-2}=6400p^{-1}=\\frac{6400}{p}$$\n\nA higher catalogue price therefore cuts revenue, so the statement is False.",
+      "**D.** → True\n\nRevenue through quantity is $R(q)=qp(q)$. With $p=80q^{-\\frac{1}{2}}$,\n\n$$R(q)=80q^{\\frac{1}{2}} \\qquad R(100)=80\\cdot 10=800$$\n\nRevenue at one hundred units is eight hundred euros, so the statement is True.",
+      "**E.** → False\n\nThe same recovered revenue law rises in quantity, even though quantity falls in price.\n\n$$R(q)=80q^{\\frac{1}{2}}, \\qquad \\frac{1}{2}>0$$\n\nA larger quantity therefore brings in more revenue, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 41,
+    "solution_overview": "Demand is $q(p)=Ap^{-2}$ with $q(4)=400$. Procurement wants price, and revenue, as functions of quantity.\n\n**Part 1: Building the model.**\n\nLet $p$ = price in euros, $q$ = units, $R=pq$ = revenue. The exponent is given, so the catalogue pair fixes $A$. Inverting then takes the reciprocal exponent.\n\n**1. Translate: the catalogue pair.**\n\n$$A\\cdot 4^{-2}=400$$\n\n**2. Translate: the inversion.**\n\n$$q=\\frac{A}{p^{2}} \\quad \\Longleftrightarrow \\quad p=A^{\\frac{1}{2}}q^{-\\frac{1}{2}}$$\n\n**Part 2: The model.**\n\n$$q(p)=6400\\,p^{-2} \\tag{1}$$\n\n$$p(q)=80\\,q^{-\\frac{1}{2}} \\tag{2}$$\n\n$$R(q)=80\\,q^{\\frac{1}{2}}, \\qquad R(p)=6400\\,p^{-1} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** $A=6400$ and $A^{\\frac{1}{2}}=80$.\n\n**2.** $p(25)=16$ and $R(100)=800$.\n\n**3.** $R$ falls in $p$ and rises in $q$.\n\n**Answer.** $A=6400$ | $p=80q^{-\\frac{1}{2}}$ | $R=80q^{\\frac{1}{2}}$"
+  },
+  {
+    "id": "math-8-42",
+    "case_id": "MATH 8.42",
+    "title": "Average Product of a Square-Root Technology",
+    "context": "A workshop's output follows $Y(L)=A L^{\\frac{1}{2}}$ units for $L>0$ labour hours. Extending a shift from nine hours to thirty-six hours added exactly sixty units. Management tracks average product $\\frac{Y}{L}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Average product falls as the shift lengthens.",
+      "A thirty-six hour shift produces one hundred and twenty units.",
+      "An extra hour adds more output after thirty-six hours than it does after nine.",
+      "To double the nine-hour output, labour hours must more than double.",
+      "At twenty-five hours, average product is five units per hour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nAverage product lowers the output exponent by one. The logged jump recovers $A$ first:\n\n$$A\\bigl(36^{\\frac{1}{2}}-9^{\\frac{1}{2}}\\bigr)=60 \\qquad 3A=60 \\qquad A=20$$\n\n$$\\frac{Y}{L}=20L^{-\\frac{1}{2}}$$\n\nThe derived exponent is negative, so average product falls as the shift lengthens. That is the claim, so the statement is True.",
+      "**B.** → True\n\nA thirty-six hour level uses the recovered coefficient, not the sixty-unit jump on its own.\n\n$$A\\bigl(6-3\\bigr)=60 \\qquad A=20 \\qquad Y(36)=20\\cdot 6=120$$\n\nThe companion check $Y(9)=60$ reproduces the logged add-on of sixty. Output is one hundred and twenty units, so the statement is True.",
+      "**C.** → False\n\nAn extra hour is the derivative of the recovered law, and $r=\\frac{1}{2}<1$ makes that derivative fall.\n\n$$Y'(L)=10L^{-\\frac{1}{2}} \\qquad Y'(9)=\\frac{10}{3} \\qquad Y'(36)=\\frac{5}{3}$$\n\nThe extra hour adds more after nine hours than after thirty-six, so the statement is False.",
+      "**D.** → True\n\nDoubling the nine-hour output of sixty units is a scale factor $k$ on labour with $k^{\\frac{1}{2}}=2$.\n\n$$A=20 \\qquad Y(9)=60 \\qquad k^{\\frac{1}{2}}=2 \\qquad k=4$$\n\nLabour must quadruple, from nine hours to thirty-six, which is more than a doubling, so the statement is True.",
+      "**E.** → False\n\nAverage product at twenty-five hours is the recovered derived law, not the shape factor $\\sqrt{25}=5$.\n\n$$\\frac{Y(25)}{25}=\\frac{20}{5}=4$$\n\nAverage product is four units per hour, not five, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 42,
+    "solution_overview": "Output is $Y(L)=AL^{\\frac{1}{2}}$. Extending the shift from nine hours to thirty-six added sixty units, and average product is $\\frac{Y}{L}$.\n\n**Part 1: Building the model.**\n\nLet $L$ = labour hours and $Y$ = output. The exponent is given, so the jump of sixty units is a difference of shape factors and recovers $A$.\n\n**1. Translate: the jump.**\n\n$$A\\bigl(6-3\\bigr)=60$$\n\n**2. Translate: average product.** Dividing by $L$ lowers the exponent by one.\n\n**Part 2: The model.**\n\n$$Y(L)=20L^{\\frac{1}{2}} \\tag{1}$$\n\n$$\\frac{Y}{L}=20L^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $Y(9)=60$ and $Y(36)=120$. Average product falls in $L$.\n\n**2.** $Y'(L)=10L^{-\\frac{1}{2}}$ is larger at nine hours than at thirty-six.\n\n**3.** Doubling output from sixty needs the labour factor $4$. At $L=25$, average product is $4$, not $5$.\n\n**Answer.** $A=20$ | $Y=20\\sqrt{L}$ | $Y(36)=120$"
+  },
+  {
+    "id": "math-8-43",
+    "case_id": "MATH 8.43",
+    "title": "Two Break-Even Points Around a Fixed Charge",
+    "context": "A contract manufacturer earns $R(q)=A q^{\\frac{1}{2}}$ euros from an output of $q>0$ units, pays two euros per unit, and carries a fixed charge of four hundred euros a period. A run of one hundred units brought in six hundred euros of revenue. Profit is revenue minus both charges. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The operation breaks even at two different positive outputs.",
+      "At twenty-five units the firm is more than one hundred euros below break-even.",
+      "Once profit turns positive, it stays positive at every larger output.",
+      "Revenue is a power function of output, but profit is not.",
+      "At two hundred and twenty-five units, profit exceeds eighty euros."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nBreak-even is $\\Pi(q)=0$ after $A$ is recovered from the hundred-unit invoice.\n\n$$A\\cdot 10=600 \\qquad A=60 \\qquad 60q^{\\frac{1}{2}}-2q-400=0$$\n\nPut $t=q^{\\frac{1}{2}}$:\n\n$$2t^{2}-60t+400=0 \\qquad t^{2}-30t+200=0 \\qquad (t-10)(t-20)=0$$\n\nThe positive roots $t=10$ and $t=20$ are $q=100$ and $q=400$, two break-evens, so the statement is True.",
+      "**B.** → True\n\nProfit at twenty-five units is a level of the recovered profit law.\n\n$$A=60 \\qquad \\Pi(25)=60\\cdot 5-50-400=-150$$\n\nThe firm is one hundred and fifty euros below break-even, which is more than one hundred, so the statement is True.",
+      "**C.** → False\n\nThe two recovered roots split the positive axis into three intervals, and the square term $-2q$ dominates for large $q$.\n\n$$\\Pi(q)=60q^{\\frac{1}{2}}-2q-400$$\n\nProfit is positive only on $100<q<400$. Past four hundred units profit is negative again, so the statement is False.",
+      "**D.** → True\n\nRevenue is the recovered power $60q^{\\frac{1}{2}}$. Profit subtracts a linear term and a constant.\n\n$$\\Pi(q)=60q^{\\frac{1}{2}}-2q-400$$\n\nA power function cannot carry an intercept, so profit is not a power of output. That split is the claim, so the statement is True.",
+      "**E.** → False\n\nTwo hundred and twenty-five units is $t=15$, halfway between the break-evens, where the recovered parabola in $t$ peaks.\n\n$$\\Pi(225)=60\\cdot 15-450-400=50$$\n\nProfit is fifty euros, which does not exceed eighty, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 43,
+    "solution_overview": "Revenue is $R(q)=Aq^{\\frac{1}{2}}$ with $R(100)=600$, variable cost $2q$, and a fixed charge of $400$. Profit is $\\Pi=R-2q-400$.\n\n**Part 1: Building the model.**\n\nLet $q$ = output. The hundred-unit invoice fixes $A$. Break-even is then a quadratic in $t=q^{\\frac{1}{2}}$.\n\n**1. Translate: the invoice.**\n\n$$10A=600$$\n\n**2. Translate: break-even.**\n\n$$60t-2t^{2}-400=0$$\n\n**Part 2: The model.**\n\n$$R(q)=60q^{\\frac{1}{2}} \\tag{1}$$\n\n$$\\Pi(q)=60q^{\\frac{1}{2}}-2q-400 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $A=60$. The quadratic $(t-10)(t-20)=0$ gives break-evens $q=100$ and $q=400$.\n\n**2.** $\\Pi(25)=-150$ and $\\Pi(225)=50$. Profit is positive only between the two roots.\n\n**3.** Revenue is a power; profit is not, because of the linear term and the intercept.\n\n**Answer.** $A=60$ | break-evens $q=100,\\,400$ | $\\Pi(225)=50$"
+  },
+  {
+    "id": "math-8-44",
+    "case_id": "MATH 8.44",
+    "title": "A Benefit and a Cost With Different Exponents",
+    "context": "A city values a flood-defence programme of scale $x>0$ by the benefit $B(x)=A x^{\\frac{1}{2}}$ and the cost $C(x)=K x^{\\frac{3}{2}}$, both in millions. A trial at scale sixteen delivered seventy-two million of benefit. A trial at scale four cost four million. Net benefit is $B-C$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Benefit and cost meet at exactly one positive scale.",
+      "At scale sixteen, cost is thirty-two million.",
+      "The cost exponent is smaller than the benefit exponent, so cost can never overtake benefit.",
+      "At scale nine, net benefit exceeds forty-two million.",
+      "Benefit per million of cost is the same at every scale."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nEach trial recovers one coefficient, and the crossing cancels a shared square root.\n\n$$A\\cdot 4=72 \\qquad A=18 \\qquad K\\cdot 8=4 \\qquad K=\\frac{1}{2}$$\n\n$$18x^{\\frac{1}{2}}=\\frac{1}{2}x^{\\frac{3}{2}} \\qquad x=36$$\n\nThe ratio $\\frac{C}{B}=\\frac{x}{36}$ passes through $1$ only once on $x>0$. They meet at exactly one positive scale, so the statement is True.",
+      "**B.** → True\n\nCost at scale sixteen uses the recovered $K$, not the benefit trial.\n\n$$K=\\frac{1}{2} \\qquad C(16)=\\frac{1}{2}\\cdot 16^{\\frac{3}{2}}=\\frac{1}{2}\\cdot 64=32$$\n\nCost is thirty-two million, so the statement is True.",
+      "**C.** → False\n\nThe two recovered exponents are $\\frac{3}{2}$ for cost and $\\frac{1}{2}$ for benefit.\n\n$$\\frac{3}{2}>\\frac{1}{2} \\qquad \\frac{C(x)}{B(x)}=\\frac{x}{36}$$\n\nCost is the steeper curve and overtakes at $x=36$, so the statement is False.",
+      "**D.** → False\n\nNet benefit at scale nine is the difference of the two recovered laws.\n\n$$B(9)=18\\cdot 3=54 \\qquad C(9)=\\frac{1}{2}\\cdot 27=\\frac{27}{2} \\qquad B-C=\\frac{81}{2}=40.5$$\n\nNet benefit is $40.5$ million, which does not exceed forty-two, so the statement is False.",
+      "**E.** → False\n\nBenefit per million of cost is the ratio of two different powers, so the exponents do not cancel to a constant.\n\n$$\\frac{B(x)}{C(x)}=\\frac{18x^{\\frac{1}{2}}}{\\frac{1}{2}x^{\\frac{3}{2}}}=\\frac{36}{x}$$\n\nThe ratio falls as scale grows, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 44,
+    "solution_overview": "Benefit is $B(x)=Ax^{\\frac{1}{2}}$ with $B(16)=72$, and cost is $C(x)=Kx^{\\frac{3}{2}}$ with $C(4)=4$, both in millions. Net benefit is $B-C$.\n\n**Part 1: Building the model.**\n\nLet $x$ = programme scale. Each curve has a known exponent and one trial, so both coefficients recover, and the crossing is a ratio of powers.\n\n**1. Translate: the benefit trial.** $4A=72$.\n\n**2. Translate: the cost trial.** $8K=4$.\n\n**Part 2: The model.**\n\n$$B(x)=18x^{\\frac{1}{2}}, \\qquad C(x)=\\frac{1}{2}x^{\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{C(x)}{B(x)}=\\frac{x}{36} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $A=18$ and $K=\\frac{1}{2}$. The unique positive meeting is $x=36$.\n\n**2.** $C(16)=32$. At $x=9$, net benefit is $40.5$, below $42$.\n\n**3.** Cost has the larger exponent, so it overtakes and stays ahead. The ratio $\\frac{B}{C}=\\frac{36}{x}$ is not constant.\n\n**Answer.** $A=18$ | $K=\\frac{1}{2}$ | meeting $x=36$"
+  },
+  {
+    "id": "math-8-45",
+    "case_id": "MATH 8.45",
+    "title": "Furnace Throughput Calibrated From Two Runs",
+    "context": "A furnace's throughput follows $T(g)=A g^{r}$ tonnes per hour, where $g>0$ is the gas feed in cubic metres per hour. A feed of eight gave sixteen tonnes per hour, and a feed of twenty-seven gave thirty-six. The site licence caps throughput at thirty-two tonnes per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is smaller than one, so throughput grows more slowly than the gas feed.",
+      "The licensed ceiling is reached at a feed below twenty-four cubic metres per hour.",
+      "Doubling the gas feed doubles throughput.",
+      "Throughput per cubic metre of gas rises as the feed rises.",
+      "A feed of sixty-four cubic metres per hour produces sixty-four tonnes per hour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe two runs are a ratio, which cancels $A$ and isolates $r$.\n\n$$\\frac{36}{16}=\\frac{9}{4}=\\left(\\frac{27}{8}\\right)^{r} \\qquad \\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3} \\qquad r=\\frac{2}{3}$$\n\nTwo thirds is smaller than one, so throughput grows more slowly than the feed. That comparison is the claim, so the statement is True.",
+      "**B.** → True\n\nThe ceiling is an inversion of the recovered law. From $A\\cdot 8^{\\frac{2}{3}}=16$ one has $A=4$, so\n\n$$4g^{\\frac{2}{3}}=32 \\qquad g^{\\frac{2}{3}}=8 \\qquad g=8^{\\frac{3}{2}}=16\\sqrt{2}\\approx 22.63$$\n\nThat feed is below twenty-four, so the statement is True.",
+      "**C.** → False\n\nDoubling the feed multiplies throughput by $2^{r}$, and $r$ comes from the logged ratio.\n\n$$r=\\frac{2}{3} \\qquad \\frac{T(2g)}{T(g)}=2^{\\frac{2}{3}}\\approx 1.587$$\n\nThe factor is not two, so the statement is False.",
+      "**D.** → False\n\nThroughput per cubic metre of gas lowers the recovered exponent by one.\n\n$$\\frac{T(g)}{g}=4g^{-\\frac{1}{3}}$$\n\nThe derived exponent is negative, so the intensity falls as the feed rises. The claim says it rises, so the statement is False.",
+      "**E.** → True\n\nSixty-four is a level of the recovered law $T(g)=4g^{\\frac{2}{3}}$.\n\n$$T(64)=4\\cdot 64^{\\frac{2}{3}}=4\\cdot 16=64$$\n\nThroughput is sixty-four tonnes per hour, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 45,
+    "solution_overview": "Throughput is $T(g)=Ag^{r}$ with $T(8)=16$ and $T(27)=36$, and the licence caps throughput at $32$.\n\n**Part 1: Building the model.**\n\nLet $g$ = gas feed. Two unknowns need both runs. The ratio cancels $A$ and isolates $r$; the eight-feed level then pins $A$.\n\n**1. Translate: the ratio.**\n\n$$\\frac{36}{16}=\\left(\\frac{27}{8}\\right)^{r}$$\n\n**2. Translate: the eight-feed level.** $A\\cdot 8^{r}=16$.\n\n**Part 2: The model.**\n\n$$r=\\frac{2}{3} \\tag{1}$$\n\n$$T(g)=4g^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $r<1$, doubling the feed does not double throughput, and throughput per cubic metre falls.\n\n**2.** The ceiling $T=32$ is met at $g=16\\sqrt{2}\\approx 22.63$, below $24$.\n\n**3.** $T(64)=64$.\n\n**Answer.** $A=4$ | $r=\\frac{2}{3}$ | ceiling at $g=16\\sqrt{2}$"
+  },
+  {
+    "id": "math-8-46",
+    "case_id": "MATH 8.46",
+    "title": "Rainwater Basin Storage Under a Square Law",
+    "context": "A tapered rainwater basin stores $V(d)=A d^{2}$ cubic metres when filled to a depth of $d>0$ metres. A survey found that raising the water from three metres to five metres added exactly sixty-four cubic metres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Stored volume grows faster than depth.",
+      "At six metres the basin holds one hundred and forty-four cubic metres.",
+      "Measuring depth in centimetres instead of metres leaves the coefficient $A$ unchanged.",
+      "Because the basin tapers, stored volume approaches a finite cap as depth grows.",
+      "Filling from four metres to eight metres adds more than two hundred cubic metres."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe exponent is supplied as $2$, which is already larger than one, and the survey only recovers $A$.\n\n$$A(25-9)=64 \\qquad 16A=64 \\qquad A=4$$\n\nVolume grows with the square of depth, faster than depth itself, so the statement is True.",
+      "**B.** → True\n\nSix metres is a level of the recovered law, not a second survey.\n\n$$A=4 \\qquad V(6)=4\\cdot 36=144$$\n\nThe basin holds one hundred and forty-four cubic metres, so the statement is True.",
+      "**C.** → False\n\nA change of input unit replaces $d$ by a constant multiple, and a square law pushes that constant through the exponent.\n\n$$d=\\frac{d_{\\mathrm{cm}}}{100} \\qquad V=4\\left(\\frac{d_{\\mathrm{cm}}}{100}\\right)^{2}=\\frac{4}{10000}\\,d_{\\mathrm{cm}}^{2}$$\n\nThe centimetre-form coefficient is $\\frac{1}{2500}$, not $4$, so the statement is False.",
+      "**D.** → False\n\nA power with a positive exponent is unbounded on $d>0$. With $A=4$,\n\n$$V(d)=4d^{2}\\to\\infty \\qquad (d\\to\\infty)$$\n\nThe taper steepens storage rather than capping it, so the statement is False.",
+      "**E.** → False\n\nThe added volume is a difference of two recovered levels.\n\n$$V(8)-V(4)=4\\cdot 64-4\\cdot 16=256-64=192$$\n\nThe add-on is one hundred and ninety-two cubic metres, which is not more than two hundred, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 46,
+    "solution_overview": "Storage is $V(d)=Ad^{2}$. Raising the water from three metres to five metres added sixty-four cubic metres.\n\n**Part 1: Building the model.**\n\nLet $d$ = depth in metres and $V$ = stored volume. The exponent is given, so the survey is a difference of shape factors and recovers $A$.\n\n**1. Translate: the survey.**\n\n$$A(25-9)=64$$\n\n**2. Translate: a change of unit.** $d_{\\mathrm{cm}}=100d$ rescales only the coefficient.\n\n**Part 2: The model.**\n\n$$V(d)=4d^{2} \\tag{1}$$\n\n$$V=\\frac{4}{10000}\\,d_{\\mathrm{cm}}^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $A=4$. Volume grows faster than depth and without a cap.\n\n**2.** $V(6)=144$. Filling from four metres to eight metres adds $192$, not more than $200$.\n\n**3.** Switching depth to centimetres changes the coefficient.\n\n**Answer.** $A=4$ | $V=4d^{2}$ | $V(6)=144$"
+  },
+  {
+    "id": "math-8-47",
+    "case_id": "MATH 8.47",
+    "title": "A Braking-Energy Index Recovered From a Speed Change",
+    "context": "A fleet safety report scores braking energy by the index $E(v)=A v^{2}$, where $v>0$ is speed in kilometres per hour. The report does not give $A$: it states only that raising the test speed from thirty to fifty kilometres per hour raised the index by exactly eighty points. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Equal speed increments raise the index by more at higher speeds than at lower ones.",
+      "At forty kilometres per hour the index reads eighty.",
+      "The index per kilometre per hour of speed is the same at every speed.",
+      "The speed that produces a given index grows more slowly than the index itself.",
+      "The index reaches two hundred at eighty kilometres per hour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nEqual increments of a square law are differences of squares, which widen as the band moves up. The logged gap recovers $A$:\n\n$$A(2500-900)=80 \\qquad 1600A=80 \\qquad A=\\frac{1}{20}$$\n\nThe same twenty-kilometre-per-hour rise starting at fifty is $E(70)-E(50)=\\frac{1}{20}(4900-2500)=120$, larger than eighty, so the statement is True.",
+      "**B.** → True\n\nForty kilometres per hour is a level of the recovered law, not one of the logged speeds.\n\n$$A=\\frac{1}{20} \\qquad E(40)=\\frac{1}{20}\\cdot 1600=80$$\n\nThe index reads eighty, so the statement is True.",
+      "**C.** → False\n\nIndex per kilometre per hour lowers the recovered exponent by one.\n\n$$\\frac{E(v)}{v}=\\frac{1}{20}v$$\n\nThe intensity rises in proportion to speed, so it is not the same at every speed. The claim says it is constant, so the statement is False.",
+      "**D.** → True\n\nInverting the recovered square law produces a square-root speed.\n\n$$v=\\bigl(20E\\bigr)^{\\frac{1}{2}}$$\n\nThe inverse exponent $\\frac{1}{2}$ is smaller than one, so speed grows more slowly than the index. That is the claim, so the statement is True.",
+      "**E.** → False\n\nEighty kilometres per hour is a level of $E(v)=\\frac{1}{20}v^{2}$, not a linear scaling of the logged eighty-point gap.\n\n$$E(80)=\\frac{1}{20}\\cdot 6400=320$$\n\nThe index is three hundred and twenty, not two hundred, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 47,
+    "solution_overview": "The index is $E(v)=Av^{2}$. Raising speed from thirty to fifty kilometres per hour raised the index by eighty points.\n\n**Part 1: Building the model.**\n\nLet $v$ = speed and $E$ = braking-energy index. The exponent is given, so the eighty-point gap is a difference of squares and recovers $A$.\n\n**1. Translate: the logged gap.**\n\n$$A(2500-900)=80$$\n\n**2. Translate: the inverse.** $v=(E/A)^{\\frac{1}{2}}$.\n\n**Part 2: The model.**\n\n$$E(v)=\\frac{1}{20}v^{2} \\tag{1}$$\n\n$$v=(20E)^{\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $A=\\frac{1}{20}$. Equal speed increments raise $E$ by more at higher speeds, because $E$ is convex.\n\n**2.** $E(40)=80$ and $E(80)=320$, not $200$. Intensity $\\frac{E}{v}$ is not constant.\n\n**3.** The inverse exponent $\\frac{1}{2}$ is smaller than one.\n\n**Answer.** $A=\\frac{1}{20}$ | $E(40)=80$ | $E(80)=320$"
+  },
+  {
+    "id": "math-8-48",
+    "case_id": "MATH 8.48",
+    "title": "Geometrically Similar Silos: Steel Against Capacity",
+    "context": "A supplier builds geometrically similar storage silos. The steel skin scales with the square of the height, $S(h)=a h^{2}$ square metres, while capacity scales with the cube, $V(h)=k h^{3}$ cubic metres. A two-metre silo uses twelve square metres of steel and holds eight cubic metres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Steel use grows more slowly than capacity as height rises.",
+      "A four-metre silo holds sixty-four cubic metres.",
+      "Steel as a function of capacity is itself a power function.",
+      "Two separate two-metre silos use the same steel as one four-metre silo.",
+      "An eight-metre silo needs more than two hundred square metres of steel."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nEach recorded pair recovers one coefficient, and the comparison is of the two exponents.\n\n$$a\\cdot 4=12 \\qquad a=3 \\qquad k\\cdot 8=8 \\qquad k=1$$\n\nSteel carries exponent $2$ and capacity exponent $3$, so steel grows more slowly than capacity as height rises. That ordering is the claim, so the statement is True.",
+      "**B.** → True\n\nA four-metre capacity uses the recovered cube law.\n\n$$k=1 \\qquad V(4)=4^{3}=64$$\n\nThe silo holds sixty-four cubic metres, so the statement is True.",
+      "**C.** → True\n\nSteel as a function of capacity is a composition of the two recovered powers. Invert the cube first:\n\n$$V=h^{3} \\qquad h=V^{\\frac{1}{3}} \\qquad S=3\\bigl(V^{\\frac{1}{3}}\\bigr)^{2}=3V^{\\frac{2}{3}}$$\n\nThe composition is a power with exponent $\\frac{2}{3}$, so the statement is True.",
+      "**D.** → False\n\nTwo two-metre silos add steel; one four-metre silo scales it.\n\n$$2\\cdot S(2)=2\\cdot 12=24 \\qquad S(4)=3\\cdot 16=48$$\n\nThe single four-metre silo uses twice as much steel as the pair, so the statement is False.",
+      "**E.** → False\n\nEight metres is a level of the recovered steel law.\n\n$$S(8)=3\\cdot 64=192$$\n\nSteel use is one hundred and ninety-two square metres, which is not more than two hundred, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 48,
+    "solution_overview": "Steel is $S(h)=ah^{2}$ and capacity is $V(h)=kh^{3}$. A two-metre silo uses twelve square metres of steel and holds eight cubic metres.\n\n**Part 1: Building the model.**\n\nLet $h$ = height. Each law has a known exponent and one recorded pair, so both coefficients recover. Steel against capacity is then a composition.\n\n**1. Translate: the steel pair.** $4a=12$.\n\n**2. Translate: the capacity pair.** $8k=8$.\n\n**Part 2: The model.**\n\n$$S(h)=3h^{2}, \\qquad V(h)=h^{3} \\tag{1}$$\n\n$$S=3V^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Exponent $2$ is smaller than $3$, so steel grows more slowly than capacity.\n\n**2.** $V(4)=64$ and $S(8)=192$, not more than $200$.\n\n**3.** Two two-metre silos use $24$ square metres of steel; one four-metre silo uses $48$.\n\n**Answer.** $S=3h^{2}$ | $V=h^{3}$ | $S=3V^{\\frac{2}{3}}$"
+  },
+  {
+    "id": "math-8-49",
+    "case_id": "MATH 8.49",
+    "title": "Inspection Hours Across Growing Shipment Volumes",
+    "context": "Customs inspection time follows $T(n)=A n^{\\frac{1}{2}}$ hours for a consignment of $n>0$ shipments. Moving from a four-shipment consignment to a thirty-six-shipment consignment added exactly sixteen inspection hours. A staffing plan can supply at most forty inspection hours. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Total inspection time is proportional to the number of shipments.",
+      "The forty-hour ceiling can cover at most one hundred shipments.",
+      "Staffing that just meets the ceiling would still cover a modestly larger consignment, because extra shipments add almost nothing.",
+      "Quadrupling a consignment multiplies inspection time by two.",
+      "A forty-nine-shipment consignment takes more than thirty hours."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nProportionality would require exponent $1$. The logged jump recovers $A$ under the given square-root exponent.\n\n$$A\\bigl(6-2\\bigr)=16 \\qquad A=4 \\qquad T(n)=4n^{\\frac{1}{2}}$$\n\nThe exponent $\\frac{1}{2}$ is not $1$, so time is not proportional to the consignment. The claim says it is, so the statement is False.",
+      "**B.** → True\n\nThe ceiling is an inversion of the recovered law.\n\n$$4n^{\\frac{1}{2}}=40 \\qquad n^{\\frac{1}{2}}=10 \\qquad n=100$$\n\nTime increases, so every larger consignment overshoots forty hours. The ceiling covers at most one hundred shipments, so the statement is True.",
+      "**C.** → False\n\nOne extra-large step past the recovered cap is $n=121$, a level of the law rather than a flattening that stays inside forty hours.\n\n$$T(121)=4\\cdot 11=44>40$$\n\nThe extra twenty-one shipments add four hours, which the forty-hour plan cannot supply, so the statement is False.",
+      "**D.** → True\n\nA scale factor of a power depends only on the exponent. With $r=\\frac{1}{2}$,\n\n$$\\frac{T(4n)}{T(n)}=4^{\\frac{1}{2}}=2$$\n\nQuadrupling the consignment doubles inspection time, so the statement is True.",
+      "**E.** → False\n\nForty-nine shipments is a level of $T(n)=4n^{\\frac{1}{2}}$.\n\n$$T(49)=4\\cdot 7=28$$\n\nInspection takes twenty-eight hours, which is not more than thirty, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 49,
+    "solution_overview": "Inspection time is $T(n)=An^{\\frac{1}{2}}$. Moving from four shipments to thirty-six added sixteen hours, and staffing supplies at most forty hours.\n\n**Part 1: Building the model.**\n\nLet $n$ = shipments and $T$ = hours. The exponent is given, so the sixteen-hour jump recovers $A$. The cap constrains inversions.\n\n**1. Translate: the jump.**\n\n$$A(6-2)=16$$\n\n**2. Translate: the cap.** $T(n)\\le 40$.\n\n**Part 2: The model.**\n\n$$T(n)=4n^{\\frac{1}{2}} \\tag{1}$$\n\n$$n\\le 100 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $A=4$. Time is not proportional to $n$. Quadrupling $n$ doubles $T$.\n\n**2.** The ceiling is met at $n=100$. Then $T(121)=44$ overshoots, and $T(49)=28$ is not more than $30$.\n\n**Answer.** $A=4$ | $T=4\\sqrt{n}$ | cap at $n=100$"
+  },
+  {
+    "id": "math-8-50",
+    "case_id": "MATH 8.50",
+    "title": "Illuminance Down the Length of a Gallery",
+    "context": "Illuminance from a gallery spotlight follows $I(d)=A d^{-2}$ lux, where $d>0$ is the distance in metres. A conservation log never states $A$: it records only that moving the meter from two metres to four metres cut the reading by one hundred and fifty lux. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Doubling the distance from the lamp cuts illuminance to one quarter.",
+      "At five metres the illuminance is thirty-two lux.",
+      "If the hall is long enough, illuminance eventually becomes negative.",
+      "Distance as a function of illuminance is not a power function, because illuminance falls.",
+      "At three metres the reading is still above ninety lux."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA scale factor of an inverse-square law is independent of $A$, which the logged drop is not needed to cancel.\n\n$$\\frac{I(2d)}{I(d)}=2^{-2}=\\frac{1}{4}$$\n\nDoubling the distance cuts illuminance to one quarter, so the statement is True.",
+      "**B.** → True\n\nFive metres is a level of the recovered law. The logged drop recovers $A$:\n\n$$A\\bigl(2^{-2}-4^{-2}\\bigr)=150 \\qquad A\\cdot\\frac{3}{16}=150 \\qquad A=800$$\n\n$$I(5)=800\\cdot 5^{-2}=\\frac{800}{25}=32$$\n\nIlluminance is thirty-two lux, so the statement is True.",
+      "**C.** → False\n\nA negative exponent sends illuminance towards zero from above, never through zero. With $A=800$,\n\n$$I(d)=\\frac{800}{d^{2}}>0$$\n\nfor every $d>0$, and $I(d)\\to 0$ as the hall lengthens. Illuminance stays positive, so the statement is False.",
+      "**D.** → False\n\nInverting a power with a nonzero exponent produces another power, whether that exponent is negative or not.\n\n$$I=800d^{-2} \\qquad d=\\bigl(800I^{-1}\\bigr)^{\\frac{1}{2}}=\\sqrt{800}\\,I^{-\\frac{1}{2}}$$\n\nDistance is a power of illuminance with exponent $-\\frac{1}{2}$, so the statement is False.",
+      "**E.** → False\n\nThree metres is a level of $I(d)=800d^{-2}$.\n\n$$I(3)=\\frac{800}{9}\\approx 88.89$$\n\nThe reading is below ninety lux, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 50,
+    "solution_overview": "Illuminance is $I(d)=Ad^{-2}$. Moving the meter from two metres to four metres cut the reading by one hundred and fifty lux.\n\n**Part 1: Building the model.**\n\nLet $d$ = distance in metres and $I$ = illuminance in lux. The exponent is given, so the drop is a difference of shape factors and recovers $A$. Scale factors cancel $A$ on their own.\n\n**1. Translate: the logged drop.**\n\n$$A\\bigl(\\tfrac{1}{4}-\\tfrac{1}{16}\\bigr)=150$$\n\n**2. Translate: the inverse.** $d=(A/I)^{\\frac{1}{2}}$.\n\n**Part 2: The model.**\n\n$$I(d)=800d^{-2} \\tag{1}$$\n\n$$d=\\sqrt{800}\\,I^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $A=800$. Doubling $d$ quarters $I$. Illuminance stays positive.\n\n**2.** $I(5)=32$ and $I(3)=\\frac{800}{9}\\approx 88.89$, not above $90$.\n\n**3.** The inverse is still a power function.\n\n**Answer.** $A=800$ | $I=800d^{-2}$ | $I(5)=32$"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "math-8-31",
+    "case_id": "MATH 8.31",
+    "title": "Packing Output Recovered From a Shift Extension",
+    "context": "A packing station's output follows $N(h)=A h^{\\frac{2}{3}}$ items after $h>0$ hours of shift, and the coefficient is never logged. Extending a shift from $8$ to $27$ hours added exactly $90$ items. A rush order of $250$ items has to be packed in a single shift. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "An extra hour of packing adds fewer items after a long shift than after a short one.",
+      "A $27$-hour shift packs more than $150$ items.",
+      "Doubling any shift doubles the number of items packed.",
+      "The $250$-item order can be filled inside a $27$-hour shift.",
+      "Items packed per hour of shift is itself a power function of the shift length."
+    ],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "**A.** → True\n\nAn extra hour is the derivative of the recovered packing law, so the logged gain has to be turned into a coefficient first.\n\n$$8^{\\frac{2}{3}}=4 \\qquad 27^{\\frac{2}{3}}=9 \\qquad A(9-4)=90 \\qquad A=18 \\qquad N(h)=18h^{\\frac{2}{3}}$$\n\n$$N'(h)=12h^{-\\frac{1}{3}}$$\n\nThe remaining exponent is negative, so the slope falls as $h$ grows: $N'(8)=6$ while $N'(27)=4$. An extra hour adds fewer items after a long shift, so the statement is True.",
+      "**B.** → True\n\nA named shift is a level of the recovered law, not a scale factor, so the coefficient from the logged gain is required.\n\n$$A(27^{\\frac{2}{3}}-8^{\\frac{2}{3}})=90 \\qquad 5A=90 \\qquad A=18$$\n\n$$N(27)=18\\cdot 27^{\\frac{2}{3}}=18\\cdot 9=162$$\n\n$162$ is above $150$, so the statement is True.",
+      "**C.** → False\n\nA doubling ratio cancels the unknown coefficient and leaves only the exponent on $2$.\n\n$$\\frac{N(2h)}{N(h)}=2^{\\frac{2}{3}}$$\n\n$$2^{\\frac{2}{3}}\\approx 1.587 \\ne 2$$\n\nTwice the hours would twice the count only for exponent $1$. Doubling multiplies packed items by about $1.59$, so the statement is False.",
+      "**D.** → False\n\nWhether $250$ items fit in $27$ hours is a level check against the law rebuilt from the logged gain.\n\n$$A=18 \\qquad N(27)=162 \\qquad 162<250$$\n\nInverting at the order size names the hours that would suffice:\n\n$$18h^{\\frac{2}{3}}=250 \\qquad h^{\\frac{2}{3}}=\\frac{125}{9} \\qquad h=\\left(\\frac{125}{9}\\right)^{\\frac{3}{2}}=\\frac{625\\sqrt{5}}{27}\\approx 51.8$$\n\nThe order needs about $52$ hours, so the statement is False.",
+      "**E.** → True\n\nItems per hour is the packing law divided by $h$, which subtracts $1$ from the exponent.\n\n$$\\frac{N(h)}{h}=18h^{\\frac{2}{3}-1}=18h^{-\\frac{1}{3}}$$\n\nThat is $A h^{r}$ with $A=18$ and $r=-\\frac{1}{3}$. The hourly rate is a power function of shift length, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 31,
+    "solution_overview": "Packing output follows $N(h)=Ah^{\\frac{2}{3}}$ items on a shift of $h>0$ hours. Extending a shift from $8$ to $27$ hours added $90$ items, and a $250$-item order must fit in one shift.\n\n**Part 1: Building the model.**\n\nLet $h$ = shift length in hours and $N(h)$ = items packed. The exponent is given, so one fact pins $A$, but that fact is a difference of two outputs rather than a single count.\n\n**1. Translate: the recorded extension.** Both shift lengths are perfect cubes, so the shape factors are whole:\n\n$$A\\cdot 27^{\\frac{2}{3}}-A\\cdot 8^{\\frac{2}{3}}=90$$\n\n**2. Translate: the order.** The order sets a target to invert:\n\n$$N(h)=250$$\n\n**Part 2: The model.**\n\n$$A(9-4)=90 \\tag{1}$$\n\n$$Ah^{\\frac{2}{3}}=250 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) gives the coefficient and the law:\n\n$$A=18 \\qquad N(h)=18h^{\\frac{2}{3}}$$\n\n**2.** Check the logged shifts:\n\n$$N(8)=72 \\qquad N(27)=162 \\qquad 162-72=90$$\n\n**3.** Scale factors depend on the exponent alone:\n\n$$\\frac{N(2h)}{N(h)}=2^{\\frac{2}{3}}\\approx 1.587$$\n\n**4.** Equation (2) inverts at the order size:\n\n$$h=\\left(\\frac{125}{9}\\right)^{\\frac{3}{2}}\\approx 51.8$$\n\n**5.** The hourly rate is the law divided by $h$:\n\n$$\\frac{N(h)}{h}=18h^{-\\frac{1}{3}} \\qquad N'(h)=12h^{-\\frac{1}{3}}$$\n\n**Answer.** $A=18$ | $N(h)=18h^{\\frac{2}{3}}$ | $N(27)=162$ | the $250$-item order needs $h\\approx 51.8$ hours"
+  },
+  {
+    "id": "math-8-32",
+    "case_id": "MATH 8.32",
+    "title": "Drag and Absorbed Power on a Wind-Tunnel Rig",
+    "context": "Aerodynamic drag on a test rig follows $F(v)=A v^{r}$ newtons at airspeed $v>0$ metres per second, and the manufacturer supplies neither constant. Two wind-tunnel runs are on file: $16$ N at $4$ m/s and $128$ N at $16$ m/s. The rig also reports absorbed power $P=F\\cdot v$ watts, and the mounting is rated to $250$ N. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The absorbed power is a power function of airspeed.",
+      "The mounting's $250$ N rating is first reached at a speed above $30$ m/s.",
+      "Doubling the airspeed more than triples the drag.",
+      "At $16$ m/s the rig absorbs more than $2$ kW.",
+      "The airspeed that produces a given drag is itself a power function of that drag."
+    ],
+    "answer_key": [true, false, false, true, true],
+    "tactical_explanations": [
+      "**A.** → True\n\nAbsorbed power is drag times speed, so its exponent is the drag exponent plus one once both constants of $F$ have been read from the two runs.\n\n$$\\frac{F(16)}{F(4)}=4^{r}=8 \\qquad (2^{2})^{r}=2^{3} \\qquad r=\\frac{3}{2} \\qquad A\\cdot 4^{\\frac{3}{2}}=16 \\qquad A=2$$\n\n$$P(v)=F(v)\\cdot v=2v^{\\frac{3}{2}}\\cdot v=2v^{\\frac{5}{2}}$$\n\nThat is $A v^{r}$ with exponent $\\frac{5}{2}$. Absorbed power is a power function of airspeed, so the statement is True.",
+      "**B.** → False\n\nThe rating is a force, so the speed behind it comes from inverting the recovered drag law.\n\n$$4^{r}=8 \\qquad r=\\frac{3}{2} \\qquad F(v)=2v^{\\frac{3}{2}}$$\n\n$$2v^{\\frac{3}{2}}=250 \\qquad v^{\\frac{3}{2}}=125 \\qquad v=125^{\\frac{2}{3}}=25$$\n\n$25$ is not above $30$. The rating is reached at $25$ m/s, so the statement is False.",
+      "**C.** → False\n\nA doubling ratio of drag uses the recovered exponent and cancels the coefficient.\n\n$$\\frac{F(2v)}{F(v)}=2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.828$$\n\n$2.828$ is more than a doubling but less than a tripling. The logged runs agree: $F(16)/F(4)=8$ over a fourfold speed rise, which is $(2^{\\frac{3}{2}})^{2}$ rather than $3^{2}=9$. Doubling airspeed multiplies drag by about $2.83$, so the statement is False.",
+      "**D.** → True\n\nAbsorbed power at a named speed is force times speed after the drag law has been recovered from the two runs.\n\n$$r=\\frac{3}{2} \\qquad A=2 \\qquad P(v)=2v^{\\frac{5}{2}}$$\n\n$$P(16)=2\\cdot 16^{\\frac{5}{2}}=2\\cdot (2^{4})^{\\frac{5}{2}}=2\\cdot 2^{10}=2048\\text{ W}=2.048\\text{ kW}$$\n\nRouting through the logged drag gives the same figure: $P(16)=128\\cdot 16=2048$ W. The rig absorbs more than $2$ kW, so the statement is True.",
+      "**E.** → True\n\nInverting a power law is raising to the reciprocal exponent, which is again a power.\n\n$$F=2v^{\\frac{3}{2}} \\qquad v=\\left(\\frac{F}{2}\\right)^{\\frac{2}{3}}=2^{-\\frac{2}{3}}F^{\\frac{2}{3}}$$\n\nThat is $A F^{r}$ with $r=\\frac{2}{3}$. The airspeed of a given drag is a power function of drag, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 32,
+    "solution_overview": "Drag follows $F(v)=Av^{r}$ newtons at airspeed $v>0$, with runs of $16$ N at $4$ m/s and $128$ N at $16$ m/s. Absorbed power is $P=F\\cdot v$ and the mounting is rated to $250$ N.\n\n**Part 1: Building the model.**\n\nLet $v$ = airspeed in m/s, $F(v)$ = drag in newtons, $P(v)$ = absorbed power in watts. Two unknown constants need two facts: the run ratio isolates the exponent, and either run then fixes the coefficient.\n\n**1. Translate: the two runs.** Ratios cancel $A$:\n\n$$\\frac{F(16)}{F(4)}=4^{r}=8$$\n\n**2. Translate: the level.** One run pins $A$ once $r$ is known:\n\n$$A\\cdot 4^{r}=16$$\n\n**3. Translate: the rating.** The mounting sets a drag target to invert:\n\n$$F(v)=250$$\n\n**Part 2: The model.**\n\n$$4^{r}=8 \\tag{1}$$\n\n$$A\\cdot 4^{r}=16 \\tag{2}$$\n\n$$Av^{r}=250 \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Equations (1) and (2) give the drag law:\n\n$$r=\\frac{3}{2} \\qquad A=2 \\qquad F(v)=2v^{\\frac{3}{2}}$$\n\n**2.** Multiplying by speed adds one to the exponent:\n\n$$P(v)=2v^{\\frac{5}{2}}$$\n\n**3.** Equation (3) inverts at the rating:\n\n$$2v^{\\frac{3}{2}}=250 \\qquad v=25$$\n\n**4.** Scale factors follow from the two exponents:\n\n$$\\frac{F(2v)}{F(v)}=2^{\\frac{3}{2}}\\approx 2.828 \\qquad \\frac{P(2v)}{P(v)}=2^{\\frac{5}{2}}\\approx 5.657$$\n\n**5.** Power at the faster logged run:\n\n$$P(16)=2048\\text{ W}=2.048\\text{ kW}$$\n\n**Answer.** $F(v)=2v^{\\frac{3}{2}}$ | $P(v)=2v^{\\frac{5}{2}}$ | rating at $v=25$ m/s | $P(16)=2.048$ kW"
+  },
+  {
+    "id": "math-8-33",
+    "case_id": "MATH 8.33",
+    "title": "Inelastic Demand and Where Revenue Goes",
+    "context": "A regional utility faces demand $q(p)=A p^{-\\frac{1}{2}}$ units a month at price $p>0$, and a price of $16$ sells $300$ units. The board wants to know how revenue $R=pq$ behaves along this curve. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Revenue rises as the price rises.",
+      "Raising price by $44\\%$ cuts quantity by exactly $20\\%$.",
+      "To reduce monthly quantity to $200$ units, the price must rise to $40$.",
+      "Revenue does not depend on the price.",
+      "At a price of $25$ the utility sells fewer than $250$ units."
+    ],
+    "answer_key": [true, false, false, false, true],
+    "tactical_explanations": [
+      "**A.** → True\n\nRevenue's exponent is demand's exponent plus one, so direction is settled by that sum after the observation has calibrated $A$.\n\n$$A\\cdot 16^{-\\frac{1}{2}}=300 \\qquad \\frac{A}{4}=300 \\qquad A=1200$$\n\n$$R(p)=p\\cdot 1200p^{-\\frac{1}{2}}=1200p^{\\frac{1}{2}}$$\n\nThe revenue exponent $\\frac{1}{2}$ is positive: quantity falls when price rises, but not fast enough to offset the higher price. $R(16)=4800$ and $R(25)=6000$. Revenue rises with price, so the statement is True.",
+      "**B.** → False\n\nA finite rise of $44\\%$ acts through the exact power of the multiplier $1.44$, which is a convenient square.\n\n$$\\frac{q(1.44p)}{q(p)}=1.44^{-\\frac{1}{2}}=\\frac{1}{1.2}=\\frac{5}{6}$$\n\n$$1-\\frac{5}{6}=\\frac{1}{6}\\approx 16.7\\%$$\n\nMultiplying $44\\%$ by the elasticity $-\\frac{1}{2}$ would give $22\\%$, and rounding toward $20\\%$ is no better. Quantity falls by about $16.7\\%$, so the statement is False.",
+      "**C.** → False\n\nA target quantity inverts the calibrated curve $q(p)=1200p^{-\\frac{1}{2}}$.\n\n$$200=\\frac{1200}{\\sqrt{p}} \\qquad \\sqrt{p}=6 \\qquad p=36$$\n\nQuantity has to fall by a third from the observed $300$, and squaring the inversion makes the required price move larger than that proportion, though it still lands short of $40$. The target arrives at a price of $36$, so the statement is False.",
+      "**D.** → False\n\nPrice-independent revenue is the case of a zero revenue exponent, which arises only when demand's exponent is exactly $-1$.\n\n$$R(p)=1200p^{\\frac{1}{2}} \\qquad \\frac{1}{2}\\ne 0$$\n\n$$R(16)=4800 \\qquad R(64)=9600$$\n\nHere the exponent is $+\\frac{1}{2}$, so revenue not only depends on price but moves in the same direction as it. Revenue doubles with each quadrupling of price, so the statement is False.",
+      "**E.** → True\n\nA named price is a level of the calibrated demand curve.\n\n$$A=1200 \\qquad q(25)=1200\\cdot 25^{-\\frac{1}{2}}=\\frac{1200}{5}=240$$\n\n$240$ is below $250$. The same point sits on revenue $R(25)=1200\\cdot 5=6000$, which is not needed for the quantity claim. The utility sells $240$ units, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 33,
+    "solution_overview": "Demand is $q(p)=Ap^{-\\frac{1}{2}}$ with $q(16)=300$, and revenue is $R=pq$.\n\n**Part 1: Building the model.**\n\nLet $p$ = price, $q$ = units sold, $R$ = revenue. The exponent is given, one observation pins the coefficient, and revenue is derived by multiplying by $p$, which raises the exponent by one.\n\n**1. Translate: the observed pair.**\n\n$$A\\cdot 16^{-\\frac{1}{2}}=300 \\qquad 16^{-\\frac{1}{2}}=\\frac{1}{4}$$\n\n**2. Translate: revenue.**\n\n$$R(p)=p\\cdot Ap^{-\\frac{1}{2}}=Ap^{\\frac{1}{2}}$$\n\n**Part 2: The model.**\n\n$$q(p)=1200\\,p^{-\\frac{1}{2}} \\tag{1}$$\n\n$$R(p)=1200\\,p^{\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The observation gives the coefficient:\n\n$$A=300\\times 4=1200$$\n\n**2.** The elasticity is the exponent of (1):\n\n$$\\text{El}_{p}q=-\\frac{1}{2}$$\n\n**3.** Quantities along the curve:\n\n$$q(16)=300 \\qquad q(25)=240 \\qquad q(36)=200 \\qquad q(64)=150$$\n\n**4.** A $44\\%$ price rise uses the exact multiplier $1.44$:\n\n$$1.44^{-\\frac{1}{2}}=\\frac{5}{6} \\qquad \\text{quantity falls by }\\frac{1}{6}$$\n\n**5.** Because $-\\frac{1}{2}+1=\\frac{1}{2}>0$, revenue rises with price; it would be flat only at elasticity $-1$:\n\n$$R(16)=4800 \\qquad R(25)=6000 \\qquad R(64)=9600$$\n\n**Answer.** $A=1200$ | $q(p)=1200p^{-\\frac{1}{2}}$ | $R(p)=1200p^{\\frac{1}{2}}$ | $q(36)=200$"
+  },
+  {
+    "id": "math-8-34",
+    "case_id": "MATH 8.34",
+    "title": "Kiln Output Under a Licensed Ceiling",
+    "context": "A kiln's daily output follows $y(x)=A x^{\\frac{4}{3}}$ tonnes for a fuel feed of $x>0$ cubic metres. A test firing at a feed of $27$ produced $324$ tonnes. The site licence forbids shipping more than $1024$ tonnes a day, so any extra firing is wasted. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "To double the test-firing output, the fuel feed must more than double.",
+      "The licensed ceiling of $1024$ tonnes is reached at a feed of $64$.",
+      "Once the licence binds, daily shipped output is no longer a power function of the feed.",
+      "A feed of $8$ produces $32$ tonnes.",
+      "Output per cubic metre of fuel rises as the feed increases."
+    ],
+    "answer_key": [false, true, true, false, true],
+    "tactical_explanations": [
+      "**A.** → False\n\nDoubling output is an inverse-scale question: the feed multiplier is $2$ raised to the reciprocal of the exponent, after $A$ has been read from the test firing.\n\n$$27^{\\frac{4}{3}}=81 \\qquad 81A=324 \\qquad A=4 \\qquad y(x)=4x^{\\frac{4}{3}}$$\n\n$$\\frac{x_{\\text{new}}}{27}=2^{\\frac{3}{4}}\\approx 1.682$$\n\nBecause the exponent $\\frac{4}{3}$ exceeds $1$, output grows faster than feed, so doubling output takes less than a doubling of feed. The required feed is about $45.4$, so the statement is False.",
+      "**B.** → True\n\nThe licence caps output, so the feed behind it comes from inverting the recovered law with reciprocal exponent $\\frac{3}{4}$.\n\n$$4x^{\\frac{4}{3}}=1024 \\qquad x^{\\frac{4}{3}}=256 \\qquad x=256^{\\frac{3}{4}}=(4^{4})^{\\frac{3}{4}}=4^{3}=64$$\n\nSubstitution confirms: $y(64)=4\\cdot 64^{\\frac{4}{3}}=4\\cdot 256=1024$. The ceiling binds at a feed of $64$, so the statement is True.",
+      "**C.** → True\n\nShipped output is the uncapped firing cut off at the licence, $\\min\\bigl(4x^{\\frac{4}{3}},1024\\bigr)$.\n\nFor $x\\le 64$ that coincides with the power $4x^{\\frac{4}{3}}$. For $x>64$ shipped output is the constant $1024$, and a constant on an interval of feeds is not a power of $x$ with a single exponent. Past the licence the graph is a horizontal cap rather than $A x^{r}$, so the statement is True.",
+      "**D.** → False\n\nA perfect cube keeps the shape factor exact: the exponent $\\frac{4}{3}$ takes the cube root of the feed, then the fourth power.\n\n$$8^{\\frac{4}{3}}=(8^{\\frac{1}{3}})^{4}=2^{4}=16 \\qquad y(8)=4\\cdot 16=64$$\n\nScaling from the test firing agrees, since $8$ and $27$ are both cubes: $324\\cdot(2/3)^{4}=324\\cdot 16/81=64$. The claimed $32$ is what reading the exponent as $1$ would give. The kiln produces $64$ tonnes, so the statement is False.",
+      "**E.** → True\n\nOutput per cubic metre is the firing law divided by $x$, which subtracts $1$ from the exponent.\n\n$$\\frac{y(x)}{x}=4x^{\\frac{4}{3}-1}=4x^{\\frac{1}{3}}$$\n\nThe remaining exponent is positive, so the average product rises with feed: $8$ at a feed of $8$, $12$ at $27$, and $16$ at $64$. Fuel efficiency improves with scale, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 34,
+    "solution_overview": "Kiln output is $y(x)=Ax^{\\frac{4}{3}}$ tonnes for a fuel feed $x>0$, with a test firing $y(27)=324$ and a licensed shipping cap of $1024$ tonnes.\n\n**Part 1: Building the model.**\n\nLet $x$ = fuel feed and $y(x)$ = uncapped daily firing. The exponent is given and exceeds $1$, so the kiln shows increasing returns; the test firing pins the coefficient and the licence gives a level to invert. Shipped output is $\\min(y(x),1024)$.\n\n**1. Translate: the test firing.** The feed is a perfect cube, so the shape factor is exact:\n\n$$27^{\\frac{4}{3}}=3^{4}=81 \\qquad 81A=324$$\n\n**2. Translate: the licence.**\n\n$$4x^{\\frac{4}{3}}\\le 1024$$\n\n**Part 2: The model.**\n\n$$y(x)=4x^{\\frac{4}{3}} \\tag{1}$$\n\n$$x^{\\frac{4}{3}}\\le 256 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The test firing gives the coefficient:\n\n$$A=4$$\n\n**2.** Levels at perfect cubes:\n\n$$y(8)=64 \\qquad y(27)=324 \\qquad y(64)=1024$$\n\n**3.** Doubling output scales feed by $2^{\\frac{3}{4}}\\approx 1.682$, not by $2$.\n\n**4.** Invert (2) with the reciprocal exponent $\\frac{3}{4}$:\n\n$$x=256^{\\frac{3}{4}}=64$$\n\n**5.** Fuel efficiency improves with scale, since dividing by $x$ leaves a positive exponent:\n\n$$\\frac{y(x)}{x}=4x^{\\frac{1}{3}}$$\n\nPast $x=64$, shipped output is the constant $1024$ rather than a power of $x$.\n\n**Answer.** $A=4$ | $y(x)=4x^{\\frac{4}{3}}$ | licence ceiling at feed $x=64$ | $y(8)=64$"
+  },
+  {
+    "id": "math-8-35",
+    "case_id": "MATH 8.35",
+    "title": "A Pair of Power Functions That Undo Each Other",
+    "context": "A calibration stage converts a raw reading $x>0$ into an index by $f(x)=A x^{\\frac{2}{3}}$, and a raw reading of $8$ produced index $36$. A reporting stage converts an index $y>0$ back by $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$. The lab wants to know what happens when the two stages are applied one after the other. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Applying the reporting stage after the calibration stage returns the original reading.",
+      "The composition of the two stages is a power function with exponent $1$.",
+      "Starting with a raw reading of $125$, the two stages produce index $225$ and then return raw reading $125$.",
+      "Applying the stages in the other order gives something other than the original input.",
+      "A raw reading of $64$ is sent out with index $108$."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nReporting after calibration is the composition $g(f(x))$, which first needs the missing coefficient from the recorded pair.\n\n$$A\\cdot 8^{\\frac{2}{3}}=36 \\qquad 8^{\\frac{2}{3}}=4 \\qquad A=9 \\qquad f(x)=9x^{\\frac{2}{3}}$$\n\n$$g(f(x))=\\frac{1}{27}\\bigl(9x^{\\frac{2}{3}}\\bigr)^{\\frac{3}{2}}=\\frac{1}{27}\\cdot 9^{\\frac{3}{2}}\\cdot x=\\frac{27}{27}x=x$$\n\nThe two stages cancel. Reporting after calibration returns the original reading, so the statement is True.",
+      "**B.** → True\n\nA composition of two powers is a power whose exponent is the product of the two exponents, after $A$ has been recovered.\n\n$$f(x)=9x^{\\frac{2}{3}} \\qquad g(y)=\\frac{1}{27}y^{\\frac{3}{2}} \\qquad g(f(x))=x=1\\cdot x^{1}$$\n\nThe product of the exponents is $\\frac{2}{3}\\cdot\\frac{3}{2}=1$, and the coefficients $9$ and $\\frac{1}{27}$ multiply to $1$ because $9^{\\frac{3}{2}}=27$. The composition is the power $x^{1}$, so the statement is True.",
+      "**C.** → True\n\nA named raw reading is a level of the recovered calibration, then a level of reporting.\n\n$$A=9 \\qquad f(125)=9\\cdot 125^{\\frac{2}{3}}=9\\cdot 25=225$$\n\n$$g(225)=\\frac{225^{\\frac{3}{2}}}{27}=\\frac{15^{3}}{27}=\\frac{3375}{27}=125$$\n\nThe two stages produce index $225$ and then return $125$, so the statement is True.",
+      "**D.** → False\n\nThe other order is $f(g(y))$, the same two recovered powers composed the opposite way.\n\n$$f(g(y))=9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}}=9\\cdot\\frac{y}{27^{\\frac{2}{3}}}=9\\cdot\\frac{y}{9}=y$$\n\nEach map is the two-sided inverse of the other on $y>0$. Applying reporting first and calibration second returns the original index, so the statement is False.",
+      "**E.** → False\n\nThe index at a named raw reading is a level of the recovered calibration.\n\n$$A=9 \\qquad f(64)=9\\cdot 64^{\\frac{2}{3}}=9\\cdot 16=144$$\n\nThe claimed $108$ is $9\\cdot 12$, as though $64^{\\frac{2}{3}}$ were $12$ rather than $16$. Reporting then sends $144$ back to $64$: $g(144)=12^{3}/27=1728/27=64$. The index is $144$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 35,
+    "solution_overview": "Calibration is $f(x)=Ax^{\\frac{2}{3}}$ with $f(8)=36$, and reporting is $g(y)=y^{\\frac{3}{2}}/27$.\n\n**Part 1: Building the model.**\n\nLet $x$ = raw reading and $y$ = index. The calibration exponent is given, so the recorded pair pins $A$. Reporting is already fully specified. The lab's question is the two compositions $g\\circ f$ and $f\\circ g$.\n\n**1. Translate: the recorded pair.** $8$ is a perfect cube:\n\n$$A\\cdot 8^{\\frac{2}{3}}=36 \\qquad 8^{\\frac{2}{3}}=4$$\n\n**2. Translate: reporting.**\n\n$$g(y)=\\frac{1}{27}y^{\\frac{3}{2}}$$\n\n**Part 2: The model.**\n\n$$f(x)=9x^{\\frac{2}{3}} \\tag{1}$$\n\n$$g(y)=\\frac{1}{27}y^{\\frac{3}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) is the recovered calibration.\n\n**2.** Compose reporting after calibration:\n\n$$g(f(x))=\\frac{1}{27}(9x^{\\frac{2}{3}})^{\\frac{3}{2}}=x$$\n\n**3.** Compose the other way:\n\n$$f(g(y))=9\\bigl(y^{\\frac{3}{2}}/27\\bigr)^{\\frac{2}{3}}=y$$\n\n**4.** Named levels:\n\n$$f(125)=225 \\qquad g(225)=125 \\qquad f(64)=144 \\qquad g(144)=64$$\n\n**5.** The product of the exponents is $1$, and the coefficients cancel, so both compositions are the identity power $u^{1}$.\n\n**Answer.** $A=9$ | $f(x)=9x^{\\frac{2}{3}}$ | $g(f(x))=x$ | $f(g(y))=y$ | $f(64)=144$"
+  },
+  {
+    "id": "math-8-36",
+    "case_id": "MATH 8.36",
+    "title": "Two Ranking Algorithms That Swap Places",
+    "context": "Two ranking algorithms are scored against a query load $x>0$. Algorithm S obeys $S(x)=a x^{\\frac{1}{2}}$, and a benchmark at load $4$ scored $16$. Algorithm T is proportional to $x^{\\frac{3}{2}}$, and the same benchmark scored $8$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two algorithms score equally at a load of $8$.",
+      "The two algorithms score equally at two different positive loads.",
+      "Once algorithm T is ahead, raising the load further cannot put S back in front.",
+      "At a load of $16$, algorithm T is ahead by more than $30$.",
+      "The ratio of the two scores is the same at every load."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nA tie at a named load is a level of both recovered laws, so both coefficients have to be read from the shared benchmark first.\n\n$$a\\cdot 4^{\\frac{1}{2}}=16 \\qquad a=8 \\qquad S(x)=8x^{\\frac{1}{2}}$$\n\n$$k\\cdot 4^{\\frac{3}{2}}=8 \\qquad 4^{\\frac{3}{2}}=8 \\qquad k=1 \\qquad T(x)=x^{\\frac{3}{2}}$$\n\n$$S(8)=8\\cdot\\sqrt{8}=8^{\\frac{3}{2}} \\qquad T(8)=8^{\\frac{3}{2}}$$\n\nThe two scores agree at load $8$, so the statement is True.",
+      "**B.** → False\n\nThe number of ties is the number of positive roots of $S(x)=T(x)$, after both coefficients have been recovered.\n\n$$8x^{\\frac{1}{2}}=x^{\\frac{3}{2}} \\qquad x^{1}=8 \\qquad x=8$$\n\nOn $x>0$ that is a single root (dividing by $x^{\\frac{1}{2}}$ is legal and loses no solution, since $x=0$ is outside the domain). Two different positive loads would require two roots, so the statement is False.",
+      "**C.** → True\n\nWhich algorithm leads past the crossing is the sign of $T-S$, read most cleanly from the ratio of the two recovered laws.\n\n$$\\frac{T(x)}{S(x)}=\\frac{x^{\\frac{3}{2}}}{8x^{\\frac{1}{2}}}=\\frac{x}{8}$$\n\nThat ratio exceeds $1$ precisely when $x>8$, and it keeps growing, so $T$ stays ahead on the whole ray $x>8$. A load just above the crossing confirms: $S(9)=24$ and $T(9)=27$. Once T is ahead, S cannot catch it, so the statement is True.",
+      "**D.** → True\n\nA named lead is the difference of the two recovered scores at that load.\n\n$$S(16)=8\\cdot 16^{\\frac{1}{2}}=32 \\qquad T(16)=16^{\\frac{3}{2}}=64 \\qquad 64-32=32$$\n\n$32$ is more than $30$. The ratio route agrees: $T/S=16/8=2$, so T is double S and the gap is $S$ itself. Algorithm T is ahead by $32$, so the statement is True.",
+      "**E.** → False\n\nA constant score ratio is what two power laws produce only when they share an exponent.\n\n$$\\frac{T(x)}{S(x)}=\\frac{x}{8}$$\n\nThat quantity equals $\\frac{1}{2}$ at load $4$, equals $1$ at load $8$, and equals $2$ at load $16$. The exponents $\\frac{1}{2}$ and $\\frac{3}{2}$ differ, so the ratio grows with load. The ratio is not constant, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 36,
+    "solution_overview": "Algorithm S obeys $S(x)=ax^{\\frac{1}{2}}$ with $S(4)=16$. Algorithm T is $T(x)=kx^{\\frac{3}{2}}$ with $T(4)=8$.\n\n**Part 1: Building the model.**\n\nLet $x>0$ be query load. Each algorithm has one unknown coefficient, and the shared benchmark supplies both. Ties, leads, and ratios are then properties of the two recovered powers.\n\n**1. Translate: algorithm S.**\n\n$$a\\cdot 4^{\\frac{1}{2}}=16$$\n\n**2. Translate: algorithm T.**\n\n$$k\\cdot 4^{\\frac{3}{2}}=8$$\n\n**Part 2: The model.**\n\n$$S(x)=8x^{\\frac{1}{2}} \\tag{1}$$\n\n$$T(x)=x^{\\frac{3}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The benchmark gives $a=8$ and $k=1$.\n\n**2.** Set (1) equal to (2) on $x>0$:\n\n$$8x^{\\frac{1}{2}}=x^{\\frac{3}{2}} \\qquad x=8$$\n\nThere is a single positive crossing.\n\n**3.** The score ratio is\n\n$$\\frac{T(x)}{S(x)}=\\frac{x}{8}$$\n\nso T leads for every $x>8$ and the lead widens.\n\n**4.** Named levels:\n\n$$S(8)=T(8)=8^{\\frac{3}{2}} \\qquad S(16)=32 \\qquad T(16)=64$$\n\n**5.** At load $16$ the lead is $32$.\n\n**Answer.** $S(x)=8x^{\\frac{1}{2}}$ | $T(x)=x^{\\frac{3}{2}}$ | unique crossing at $x=8$ | $T(16)-S(16)=32$"
+  },
+  {
+    "id": "math-8-37",
+    "case_id": "MATH 8.37",
+    "title": "Server Fleet Capacity Beneath a Contracted Ceiling",
+    "context": "A hosting platform's sustained capacity follows $C(m)=A m^{\\frac{4}{5}}$ requests per second for $m>0$ machines. A fleet of $32$ machines sustains $80$ requests per second. The support contract will not certify more than $500$ requests per second. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Sustained capacity itself keeps rising as machines are added.",
+      "The contracted ceiling of $500$ binds from about $250$ machines.",
+      "Because the exponent is below $1$, the contracted ceiling is never reached.",
+      "A fleet of $243$ machines sustains more than $400$ requests per second.",
+      "On log-log paper the uncapped capacity law is a straight line."
+    ],
+    "answer_key": [true, false, false, true, true],
+    "tactical_explanations": [
+      "**A.** → True\n\nWhether $C(m)$ rises is the sign of its exponent, after the $32$-machine reading has pinned the coefficient.\n\n$$32^{\\frac{4}{5}}=(2^{5})^{\\frac{4}{5}}=2^{4}=16 \\qquad A=\\frac{80}{16}=5 \\qquad C(m)=5m^{\\frac{4}{5}}$$\n\nThe exponent $\\frac{4}{5}$ is positive, so $C$ is strictly increasing on $m>0$ even though it grows more slowly than the fleet. The contract may refuse to certify values above $500$, but the sustained-capacity law itself keeps rising. Sustained capacity increases with the fleet, so the statement is True.",
+      "**B.** → False\n\nThe fleet at which the ceiling binds is the inverse of the calibrated law, not a proportional scaling from $80$ up to $500$.\n\n$$5m^{\\frac{4}{5}}=500 \\qquad m^{\\frac{4}{5}}=100 \\qquad m=100^{\\frac{5}{4}}=10^{\\frac{5}{2}}=100\\sqrt{10}\\approx 316.2$$\n\nAt the claimed $250$ machines: $C(250)=5\\cdot 250^{\\frac{4}{5}}\\approx 414$, still below $500$. Linear scaling $32\\cdot 500/80=200$ is worse. The ceiling binds near $316$ machines, so the statement is False.",
+      "**C.** → False\n\nAn exponent below $1$ slows growth, it does not stop it. The ceiling equation $5m^{\\frac{4}{5}}=500$ has the positive solution $m=100\\sqrt{10}\\approx 316$.\n\n$$C(243)=5\\cdot 243^{\\frac{4}{5}}=5\\cdot 81=405 \\qquad C(1024)=5\\cdot 1024^{\\frac{4}{5}}=5\\cdot 256=1280$$\n\n$405$ is still under the contract; $1280$ is already over it. The ceiling is crossed at a finite fleet, so the statement is False.",
+      "**D.** → True\n\nA fleet of $243$ is $3^{5}$, so the exponent $\\frac{4}{5}$ resolves exactly once $A$ has been read from the $32$-machine run.\n\n$$A=5 \\qquad 243^{\\frac{4}{5}}=(3^{5})^{\\frac{4}{5}}=3^{4}=81 \\qquad C(243)=5\\cdot 81=405$$\n\n$405$ is more than $400$. The claimed neighbour $486$ would be a coefficient of $6$ rather than $5$. Capacity is $405$ requests per second, so the statement is True.",
+      "**E.** → True\n\nA power law is linear after taking logs of both sides, and the uncapped law is $C=5m^{\\frac{4}{5}}$.\n\n$$\\ln C=\\ln 5+\\frac{4}{5}\\ln m$$\n\nThat is a straight line in $(\\ln m,\\ln C)$ with slope $\\frac{4}{5}$ and intercept $\\ln 5$. The contract's cap would flatten certified capacity, but the statement is about the uncapped law. The log-log plot of $C(m)$ is a straight line, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 37,
+    "solution_overview": "Sustained capacity is $C(m)=Am^{\\frac{4}{5}}$ requests per second, with $C(32)=80$ and a certification cap of $500$.\n\n**Part 1: Building the model.**\n\nLet $m$ = number of machines and $C(m)$ = sustained requests per second. The exponent is given, so the $32$-machine reading pins $A$. The contract then sets a level to invert. Certified capacity is $\\min(C(m),500)$, but $C$ itself is the uncapped power.\n\n**1. Translate: the recorded fleet.** $32=2^{5}$, so the shape factor is exact:\n\n$$32^{\\frac{4}{5}}=2^{4}=16 \\qquad 16A=80$$\n\n**2. Translate: the ceiling.**\n\n$$5m^{\\frac{4}{5}}=500$$\n\n**Part 2: The model.**\n\n$$C(m)=5m^{\\frac{4}{5}} \\tag{1}$$\n\n$$m^{\\frac{4}{5}}=100 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) is the recovered law, strictly increasing because $\\frac{4}{5}>0$.\n\n**2.** Invert (2):\n\n$$m=100^{\\frac{5}{4}}=100\\sqrt{10}\\approx 316.2$$\n\n**3.** Exact cube-power fleets:\n\n$$C(243)=405 \\qquad C(1024)=1280$$\n\n**4.** Doubling the fleet multiplies capacity by $2^{\\frac{4}{5}}\\approx 1.741$.\n\n**5.** The uncapped law is linear in log-log coordinates:\n\n$$\\ln C=\\ln 5+\\frac{4}{5}\\ln m$$\n\n**Answer.** $A=5$ | $C(m)=5m^{\\frac{4}{5}}$ | ceiling at $m\\approx 316$ | $C(243)=405$"
+  },
+  {
+    "id": "math-8-38",
+    "case_id": "MATH 8.38",
+    "title": "Hiring Against a Square-Root Revenue Curve",
+    "context": "A seasonal workshop's revenue follows $R(L)=A L^{\\frac{1}{2}}$ from $L>0$ hours of hired labour. Extending a season from $100$ to $400$ hours raised recorded revenue by $1200$. Labour is paid a wage of $6$ per hour, and the owner judges the season by the net gain $R(L)-6L$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The net gain $R(L)-6L$ is itself a power function of hours hired.",
+      "Net gain is zero at $400$ hours.",
+      "The hours that maximise net gain are the same hours at which net gain is zero.",
+      "At $900$ hours the net gain is below $-1000$.",
+      "The wage bill is a power function of hours hired."
+    ],
+    "answer_key": [false, true, false, true, true],
+    "tactical_explanations": [
+      "**A.** → False\n\nNet gain is revenue minus a linear wage bill. Recover $A$ from the logged revenue gain first, then inspect the exponents.\n\n$$A(400^{\\frac{1}{2}}-100^{\\frac{1}{2}})=1200 \\qquad A(20-10)=1200 \\qquad A=120$$\n\n$$\\Pi(L)=120L^{\\frac{1}{2}}-6L$$\n\nA power function is a single term $A L^{r}$. This is a difference of two powers with exponents $\\frac{1}{2}$ and $1$, so it is not itself a power of $L$. Net gain is not a power function, so the statement is False.",
+      "**B.** → True\n\nBreak-even is the staffing at which recovered revenue equals the wage bill.\n\n$$A=120 \\qquad 120L^{\\frac{1}{2}}=6L \\qquad 120=6L^{\\frac{1}{2}} \\qquad L^{\\frac{1}{2}}=20 \\qquad L=400$$\n\nChecking both sides: $R(400)=120\\cdot 20=2400$ and $6\\cdot 400=2400$. The two sides agree, so the statement is True.",
+      "**C.** → False\n\nThe maximiser of $\\Pi(L)=120L^{\\frac{1}{2}}-6L$ is where the derivative is zero, which is not the same equation as $\\Pi(L)=0$.\n\n$$\\Pi'(L)=60L^{-\\frac{1}{2}}-6=0 \\qquad L^{\\frac{1}{2}}=10 \\qquad L=100$$\n\n$$\\Pi(100)=1200-600=600 \\qquad \\Pi(400)=0$$\n\nNet gain peaks at $100$ hours and only later crosses zero at $400$ hours. The two staffing levels are not the same, so the statement is False.",
+      "**D.** → True\n\nA named staffing is a level of recovered revenue minus the wage bill there.\n\n$$A=120 \\qquad R(900)=120\\cdot 30=3600 \\qquad 6\\cdot 900=5400 \\qquad \\Pi(900)=3600-5400=-1800$$\n\n$-1800$ is below $-1000$. Square-root revenue cannot keep pace with a linear wage once hours are large. The net gain is $-1800$, so the statement is True.",
+      "**E.** → True\n\nThe wage bill is $6$ times hours hired.\n\n$$W(L)=6L=6L^{1}$$\n\nThat is $A L^{r}$ with $A=6$ and $r=1$. A linear law is the power-function case of exponent $1$. The wage bill is a power function of hours, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 38,
+    "solution_overview": "Revenue follows $R(L)=AL^{\\frac{1}{2}}$ for $L>0$ hours. Extending labour from $100$ to $400$ hours raised revenue by $1200$, the wage is $6$ per hour, and net gain is $\\Pi=R-6L$.\n\n**Part 1: Building the model.**\n\nLet $L$ = hours hired, $R$ = revenue, $\\Pi=R-6L$ = net gain. The exponent is given, so the recorded revenue difference pins $A$. The wage bill is already fully specified.\n\n**1. Translate: the recorded extension.** Both hour counts are perfect squares:\n\n$$A(20-10)=1200$$\n\n**2. Translate: net gain.**\n\n$$\\Pi(L)=AL^{\\frac{1}{2}}-6L$$\n\n**Part 2: The model.**\n\n$$R(L)=120L^{\\frac{1}{2}} \\tag{1}$$\n\n$$\\Pi(L)=120L^{\\frac{1}{2}}-6L \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The revenue gain gives $A=120$.\n\n**2.** Break-even $\\Pi(L)=0$ on $L>0$:\n\n$$120L^{\\frac{1}{2}}=6L \\qquad L=400$$\n\n**3.** The maximiser is $\\Pi'(L)=0$:\n\n$$60L^{-\\frac{1}{2}}=6 \\qquad L=100 \\qquad \\Pi(100)=600$$\n\n**4.** A large staffing:\n\n$$\\Pi(900)=-1800$$\n\n**5.** $\\Pi$ is a difference of two powers, hence not itself a power; the wage bill $6L$ is the power with exponent $1$.\n\n**Answer.** $A=120$ | $R(L)=120L^{\\frac{1}{2}}$ | $\\Pi(400)=0$ | $\\Pi$ peaks at $L=100$ | $\\Pi(900)=-1800$"
+  },
+  {
+    "id": "math-8-39",
+    "case_id": "MATH 8.39",
+    "title": "Splitting an Order Between Two Quadratic-Cost Plants",
+    "context": "A firm must produce $60$ units and can split them between two plants. Plant 1's cost is $C_1(q)=A q^{2}$: a run of $20$ units there cost $200$. Plant 2's cost is $C_2(q)=k q^{2}$: a run of $40$ units there cost $400$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Concentrating all $60$ units in the cheaper plant costs $900$.",
+      "The cheapest way to fill the order is to send every unit to one plant.",
+      "Whatever split is chosen, the two plants together still follow a single power of the $60$-unit order.",
+      "The $20$-$40$ split costs $600$.",
+      "Plant 2's cost per unit does not depend on how much it produces."
+    ],
+    "answer_key": [true, false, false, true, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nConcentrating the order means sending all $60$ units to the plant with the smaller recovered coefficient.\n\n$$A=\\frac{200}{20^{2}}=\\frac{200}{400}=\\frac{1}{2} \\qquad k=\\frac{400}{40^{2}}=\\frac{400}{1600}=\\frac{1}{4}$$\n\nPlant 2 is cheaper for any given output. $C_2(60)=\\frac{1}{4}\\cdot 3600=900$, while $C_1(60)=\\frac{1}{2}\\cdot 3600=1800$. Concentrating in plant 2 costs $900$, so the statement is True.",
+      "**B.** → False\n\nWith two strictly convex costs, a split can undercut either corner. Recover the laws, then price the even split against concentrating in plant 2.\n\n$$C_1(q)=\\frac{1}{2}q^{2} \\qquad C_2(q)=\\frac{1}{4}q^{2}$$\n\n$$C_1(30)+C_2(30)=450+225=675 \\qquad C_2(60)=900$$\n\nThe even split already costs less than the cheaper corner. Equalising marginal costs $q=\\frac{1}{2}q_2$ with $q+q_2=60$ sends $20$ to plant 1 and $40$ to plant 2 and costs $600$, cheaper still. Sending everything to one plant is not cheapest, so the statement is False.",
+      "**C.** → False\n\nA single power of the order size $Q=60$ would be $B\\,60^{r}$ for constants $B,r$ independent of the split. Total cost is $C_1(q)+C_2(60-q)$.\n\n$$\\frac{1}{2}q^{2}+\\frac{1}{4}(60-q)^{2}$$\n\nThat quadratic in the split $q$ takes different values at different splits: $900$ at a corner, $675$ at an even split, $600$ at $20$-$40$. A function of $60$ alone cannot depend on $q$. The two plants together are not a single power of the order, so the statement is False.",
+      "**D.** → True\n\nThe $20$-$40$ split is priced plant by plant from the recovered quadratics.\n\n$$C_1(20)=\\frac{1}{2}\\cdot 400=200 \\qquad C_2(40)=\\frac{1}{4}\\cdot 1600=400 \\qquad 200+400=600$$\n\nThose are exactly the two recorded runs, added. The split costs $600$, so the statement is True.",
+      "**E.** → False\n\nPlant 2's cost per unit is its cost law divided by its own output, which lowers the exponent from $2$ to $1$.\n\n$$\\frac{C_2(q)}{q}=\\frac{\\frac{1}{4}q^{2}}{q}=\\frac{1}{4}q$$\n\nUnit cost at $20$, $40$, and $60$ is $5$, $10$, and $15$. A constant unit cost would be a linear total, exponent $1$. Unit cost triples across that range, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 39,
+    "solution_overview": "Plant 1 costs $C_1(q)=Aq^{2}$ with $C_1(20)=200$. Plant 2 costs $C_2(q)=kq^{2}$ with $C_2(40)=400$. The firm must produce $60$ units in total.\n\n**Part 1: Building the model.**\n\nLet $q$ be plant 1's output and $60-q$ plant 2's. Each plant is a pure square, so one recorded run pins each coefficient. Total cost is the sum, which depends on the split.\n\n**1. Translate: plant 1.**\n\n$$A\\cdot 20^{2}=200$$\n\n**2. Translate: plant 2.**\n\n$$k\\cdot 40^{2}=400$$\n\n**Part 2: The model.**\n\n$$C_1(q)=\\frac{1}{2}q^{2} \\tag{1}$$\n\n$$C_2(q)=\\frac{1}{4}q^{2} \\tag{2}$$\n\n$$C(q)=\\frac{1}{2}q^{2}+\\frac{1}{4}(60-q)^{2} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** The recorded runs give $A=\\frac{1}{2}$ and $k=\\frac{1}{4}$. Plant 2 is the cheaper plant.\n\n**2.** Corners and splits:\n\n$$C_2(60)=900 \\qquad C_1(60)=1800 \\qquad C(30)=675 \\qquad C(20)=600$$\n\n**3.** Equalising marginal costs $C_1'(q)=C_2'(60-q)$ yields the $20$-$40$ split, which is cheapest.\n\n**4.** Total cost depends on the split, so it is not a single power of $60$.\n\n**5.** Plant 2's unit cost is $\\frac{1}{4}q$, which rises with output.\n\n**Answer.** $C_1(q)=\\frac{1}{2}q^{2}$ | $C_2(q)=\\frac{1}{4}q^{2}$ | concentrate in plant 2 costs $900$ | $20$-$40$ split costs $600$"
+  },
+  {
+    "id": "math-8-40",
+    "case_id": "MATH 8.40",
+    "title": "Testing Whether Field Data Fit One Power Law",
+    "context": "A laboratory records four measurements of a response $y$ against an input $x$: $(4,\\,24)$, $(16,\\,192)$, $(9,\\,81)$ and a planned run at $x=25$. An analyst fits a power law $y=A x^{r}$ using the first two measurements only. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The first two measurements are consistent with a single power law.",
+      "The fitted coefficient is $3$.",
+      "The measurement at $x=9$ contradicts the fitted law.",
+      "The fitted law predicts $y=300$ at $x=25$.",
+      "The same two measurements would fit an exponent of $2$ equally well."
+    ],
+    "answer_key": [true, true, false, false, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nTwo positive points determine a unique power-law pair $(A,r)$ because their ratio cancels $A$ and leaves a strictly increasing equation for $r$.\n\n$$\\frac{16^{r}}{4^{r}}=\\frac{192}{24} \\qquad 4^{r}=8 \\qquad (2^{2})^{r}=2^{3} \\qquad r=\\frac{3}{2}$$\n\n$$A\\cdot 4^{\\frac{3}{2}}=24 \\qquad A\\cdot 8=24 \\qquad A=3$$\n\nBoth points then sit on $y=3x^{\\frac{3}{2}}$: $3\\cdot 16^{\\frac{3}{2}}=3\\cdot 64=192$. The first two measurements lie on one power law, so the statement is True.",
+      "**B.** → True\n\nWith two points on a power law, the coefficient is the response divided by the shape factor once the exponent is known.\n\n$$4^{r}=8 \\qquad r=\\frac{3}{2} \\qquad A=\\frac{24}{8}=3$$\n\nThe second point confirms the same coefficient: $192/16^{\\frac{3}{2}}=192/64=3$. Both measurements give $A=3$, so the statement is True.",
+      "**C.** → False\n\nThe measurement at $x=9$ was held out of the fit, so it is a test of the two-point law rather than an input to it.\n\n$$y=3x^{\\frac{3}{2}} \\qquad 9^{\\frac{3}{2}}=27 \\qquad 3\\cdot 27=81$$\n\nThe recorded response at $x=9$ is also $81$. The held-out point sits on the curve, so the statement is False.",
+      "**D.** → False\n\nA prediction at $x=25$ uses the law fitted from the first two measurements only.\n\n$$A=3 \\qquad r=\\frac{3}{2} \\qquad 25^{\\frac{3}{2}}=125 \\qquad y=3\\cdot 125=375$$\n\nThe claimed $300$ is $3\\cdot 100$, as though $25^{\\frac{3}{2}}$ were $100$ rather than $125$. The fitted law predicts $375$, so the statement is False.",
+      "**E.** → False\n\nUniqueness of the exponent is settled by the ratio equation, because $4^{r}$ is strictly increasing in $r$ and can equal $8$ only once.\n\n$$4^{2}=16 \\ne 8$$\n\nForcing $r=2$ from the first point then misses the second: $A=24/16=1.5$ and $1.5\\cdot 16^{2}=384\\ne 192$. The two measurements do not fit exponent $2$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 40,
+    "solution_overview": "An analyst fits $y=Ax^{r}$ to the points $(4,24)$ and $(16,192)$, then tests $(9,81)$ and predicts at $x=25$.\n\n**Part 1: Building the model.**\n\nLet $x>0$ be the input and $y$ the response. Two unknowns need two facts; the first two measurements supply them. The third measurement and the planned run are not used in the fit.\n\n**1. Translate: the ratio.** $A$ cancels:\n\n$$\\left(\\frac{16}{4}\\right)^{r}=\\frac{192}{24}$$\n\n**2. Translate: the level.** Either point then pins $A$:\n\n$$A\\cdot 4^{r}=24$$\n\n**Part 2: The model.**\n\n$$4^{r}=8 \\tag{1}$$\n\n$$A\\cdot 4^{r}=24 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) forces $r=\\frac{3}{2}$. Equation (2) then gives $A=3$, so\n\n$$y=3x^{\\frac{3}{2}}$$\n\n**2.** Both fitted points sit on that law, so they are consistent with a single power.\n\n**3.** The held-out point:\n\n$$3\\cdot 9^{\\frac{3}{2}}=81$$\n\nmatches the recorded $81$, so it does not contradict the fit.\n\n**4.** The planned run:\n\n$$3\\cdot 25^{\\frac{3}{2}}=375$$\n\nnot $300$.\n\n**5.** Exponent $2$ would require $4^{2}=16$, but the observed ratio is $8$, so $r=2$ is uniquely ruled out.\n\n**Answer.** $r=\\frac{3}{2}$ | $A=3$ | $y=3x^{\\frac{3}{2}}$ | $y(9)=81$ | $y(25)=375$"
+  }
+]

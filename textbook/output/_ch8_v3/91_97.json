@@ -1,0 +1,170 @@
+[
+  {
+    "id": "math-8-91",
+    "case_id": "MATH 8.91",
+    "title": "Wetland Evaporation Across Three Humidity Readings",
+    "context": "A field team models wetland evaporation in millimetres per day by $E(h)=A h^{r}$ against humidity deficit $h>0$, with both constants unknown. Deficits of one and four recorded twenty and forty millimetres per day, and a third reading at deficit nine recorded sixty. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is smaller than one, so evaporation grows more slowly than the humidity deficit.",
+      "Doubling the humidity deficit doubles evaporation.",
+      "At a humidity deficit of $16$, evaporation is $80$ millimetres per day.",
+      "A straight line through the first two readings also hits the third.",
+      "With the exponent forced to $1$, the coefficient recovered from the third reading alone is $20$."
+    ],
+    "answer_key": [true, false, true, false, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe two recorded deficits isolate the exponent, because the unknown coefficient cancels.\n\n$$\\frac{E(4)}{E(1)}=\\frac{40}{20}=2=4^{r} \\qquad 4^{\\frac{1}{2}}=2 \\qquad r=\\frac{1}{2}$$\n\nOne half is smaller than one, so evaporation grows more slowly than the humidity deficit, so the statement is True.",
+      "**B.** → False\n\nDoubling the deficit multiplies evaporation by $2^{r}$. The first two readings give that exponent.\n\n$$4^{r}=2 \\qquad r=\\frac{1}{2} \\qquad \\frac{E(2h)}{E(h)}=2^{\\frac{1}{2}}$$\n\nThe square root of two is not two. Evaporation rises by about $41\\%$, not by a factor of two, so the statement is False.",
+      "**C.** → True\n\nThe first two readings recover both constants. The ratio gives $r=\\frac{1}{2}$, and $E(1)=20$ pins $A=20$, so $E(h)=20h^{\\frac{1}{2}}$. At deficit $16$,\n\n$$E(16)=20\\cdot 16^{\\frac{1}{2}}=20\\cdot 4=80$$\n\nEvaporation is $80$ millimetres per day, so the statement is True.",
+      "**D.** → False\n\nA line through the first two readings has slope $\\frac{40-20}{4-1}=\\frac{20}{3}$. Anchored at $(1,20)$, the third deficit gives\n\n$$L(9)=20+\\frac{20}{3}\\cdot 8=20+\\frac{160}{3}=\\frac{220}{3}\\approx 73.33$$\n\nThe recorded third reading is $60$, not $\\frac{220}{3}$. The line misses, so the statement is False.",
+      "**E.** → False\n\nForcing the exponent to $1$ makes $E(h)=Ah$. The third reading alone then gives\n\n$$A\\cdot 9=60 \\qquad A=\\frac{60}{9}=\\frac{20}{3}$$\n\nThe claimed coefficient $20$ belongs to the square-root fit, not to this linear calibration. The recovered coefficient is $\\frac{20}{3}$, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 91,
+    "solution_overview": "Evaporation follows $E(h)=Ah^{r}$ millimetres per day. Deficits of $1$ and $4$ recorded $20$ and $40$, and a third reading at deficit $9$ recorded $60$.\n\n**Part 1: Building the model.**\n\nLet $h$ = humidity deficit and $E$ = evaporation. Two unknowns need the first two readings. Their ratio cancels $A$ and isolates $r$; the unit deficit then pins $A$. The third reading is a test.\n\n**1. Translate: the ratio.**\n\n$$\\frac{40}{20}=4^{r}$$\n\n**2. Translate: the unit deficit.**\n\n$$A\\cdot 1^{r}=20$$\n\n**Part 2: The model.**\n\n$$E(h)=20h^{\\frac{1}{2}} \\tag{1}$$\n\n$$\\frac{E(kh)}{E(h)}=k^{\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $r<1$, doubling the deficit does not double evaporation.\n\n**2.** $(1)$ gives $E(16)=80$. A line through the first two readings yields $L(9)=\\frac{220}{3}$, missing the recorded $60$.\n\n**3.** Forcing $r=1$ at the third reading alone recovers $A=\\frac{20}{3}$, not $20$.\n\n**Answer.** $A=20$ | $r=\\frac{1}{2}$ | $E(16)=80$ | line misses the third reading"
+  },
+  {
+    "id": "math-8-92",
+    "case_id": "MATH 8.92",
+    "title": "Shade-Tree Cooling Benefit Against Upkeep Cost",
+    "context": "A city parks office models annual cooling benefit by $B(n)=A n^{\\frac{1}{2}}$ thousand euros and annual upkeep by $C(n)=k n$ thousand euros, where $n>0$ is the number of thousand trees planted. Raising the planting from four thousand trees to nine thousand increased cooling benefit by twelve thousand euros. At nine thousand trees, upkeep was eighteen thousand euros. Net benefit is $N(n)=B(n)-C(n)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At nine thousand trees, net benefit is $18$ thousand euros.",
+      "Because upkeep is linear, net benefit is not a power function of the planting.",
+      "Once upkeep overtakes cooling benefit, planting still more trees restores a positive net.",
+      "An extra thousand trees add more to the net at four thousand trees than at nine thousand.",
+      "At four thousand trees, net benefit is $24$ thousand euros."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe recorded benefit gap recovers $A$, because the square roots at four and nine thousand trees are $2$ and $3$.\n\n$$A\\bigl(9^{\\frac{1}{2}}-4^{\\frac{1}{2}}\\bigr)=A(3-2)=12 \\qquad A=12$$\n\nUpkeep at nine thousand trees recovers $k$ from $9k=18$, so $k=2$. Netting the two schedules at $n=9$,\n\n$$B(9)=12\\cdot 3=36 \\qquad C(9)=18 \\qquad N(9)=36-18=18$$\n\nNet benefit is $18$ thousand euros, so the statement is True.",
+      "**B.** → True\n\nWith $A=12$ and $k=2$ the net is a square-root term minus a linear term.\n\n$$N(n)=12n^{\\frac{1}{2}}-2n$$\n\nA power function of $n$ has a single exponent. This expression is a sum of two distinct powers, so it is not itself a power of the planting, so the statement is True.",
+      "**C.** → False\n\nThe recovered schedules meet when $12n^{\\frac{1}{2}}=2n$. For $n>0$ that is $n=36$. Past that planting the linear upkeep is the larger term, and the derivative\n\n$$N'(n)=6n^{-\\frac{1}{2}}-2$$\n\nis already negative for every $n>9$. Net benefit stays negative once upkeep is ahead, so the statement is False.",
+      "**D.** → True\n\nAn extra thousand trees adds about $N'(n)$. From $A=12$ and $k=2$,\n\n$$N'(n)=6n^{-\\frac{1}{2}}-2 \\qquad N'(4)=1 \\qquad N'(9)=0$$\n\nThe finite steps agree: $N(5)-N(4)=12\\sqrt{5}-10-16\\approx 0.83$, while $N(10)-N(9)=12\\sqrt{10}-20-18\\approx -0.05$. The extra thousand adds more at four thousand trees, so the statement is True.",
+      "**E.** → False\n\nThe claimed $24$ is the cooling benefit at $n=4$, not the net. With $A=12$ and $k=2$,\n\n$$B(4)=12\\cdot 2=24 \\qquad C(4)=2\\cdot 4=8 \\qquad N(4)=24-8=16$$\n\nNet benefit is $16$ thousand euros, not $24$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 92,
+    "solution_overview": "Cooling benefit is $B(n)=A n^{\\frac{1}{2}}$ thousand euros and upkeep is $C(n)=kn$ thousand euros. The benefit rose by $12$ between $n=4$ and $n=9$, and $C(9)=18$. Net benefit is $N=B-C$.\n\n**Part 1: Building the model.**\n\nLet $n$ = thousands of trees. The benefit difference isolates $A$. The upkeep level isolates $k$.\n\n**1. Translate: the benefit gap.**\n\n$$A(3-2)=12$$\n\n**2. Translate: the upkeep level.**\n\n$$9k=18$$\n\n**Part 2: The model.**\n\n$$N(n)=12n^{\\frac{1}{2}}-2n \\tag{1}$$\n\n$$N'(n)=6n^{-\\frac{1}{2}}-2 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $N(9)=18$ and $N(4)=16$. The figure $24$ is $B(4)$, not the net.\n\n**2.** $(1)$ is not a single power of $n$. The schedules meet at $n=36$, and $(2)$ is negative for $n>9$, so the net cannot turn positive again.\n\n**3.** $N'(4)=1>N'(9)=0$, so an extra thousand trees add more at four thousand than at nine.\n\n**Answer.** $A=12$ | $k=2$ | $N(9)=18$ | $N(4)=16$ | break-even at $n=36$"
+  },
+  {
+    "id": "math-8-93",
+    "case_id": "MATH 8.93",
+    "title": "Trail-Map Kiosk Demand Inverted from Price",
+    "context": "Weekly pamphlet demand at a trail-map kiosk follows $q(p)=A p^{-2}$ packs per week, where $p>0$ is the price in euros. At a price of five euros the kiosk sold eighty packs. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The price needed for a given weekly demand is itself a power function of that demand.",
+      "At ten euros the kiosk sells $20$ packs a week.",
+      "Weekly revenue is the same at every price.",
+      "A target of $125$ packs a week requires a price of $4$ euros.",
+      "Quadrupling the price cuts demand to one quarter."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe exponent $-2$ is given, so the recorded pair $q(5)=80$ pins the coefficient.\n\n$$A\\cdot 5^{-2}=80 \\qquad A=80\\cdot 25=2000 \\qquad q(p)=2000p^{-2}$$\n\nInverting a nonzero power yields another power:\n\n$$p=\\left(\\frac{2000}{q}\\right)^{\\frac{1}{2}}=\\sqrt{2000}\\,q^{-\\frac{1}{2}}$$\n\nPrice is a power function of demand, so the statement is True.",
+      "**B.** → True\n\nTen euros is twice the recorded price, so demand scales by $2^{-2}$.\n\n$$\\frac{q(10)}{q(5)}=2^{-2}=\\frac{1}{4} \\qquad q(10)=80\\cdot\\frac{1}{4}=20$$\n\nDemand is $20$ packs a week, so the statement is True.",
+      "**C.** → False\n\nRevenue multiplies price by quantity, which raises the demand exponent by one. From $A=2000$,\n\n$$R(p)=p\\cdot 2000p^{-2}=2000p^{-1}=\\frac{2000}{p}$$\n\nA schedule that is the same at every price would need exponent $0$. This one still carries $-1$, so revenue falls as the price rises, so the statement is False.",
+      "**D.** → True\n\nA quantity target is inverted after recovering $A=2000$ from $q(5)=80$.\n\n$$\\frac{2000}{p^{2}}=125 \\qquad p^{2}=\\frac{2000}{125}=16 \\qquad p=4$$\n\nOnly the positive root is a price. Forward substitution returns the target, $q(4)=\\frac{2000}{16}=125$. The required price is $4$ euros, so the statement is True.",
+      "**E.** → False\n\nQuadrupling the price is an input factor of $4$, and demand responds through the exponent $-2$.\n\n$$\\frac{q(4p)}{q(p)}=4^{-2}=\\frac{1}{16}$$\n\nDemand falls to one sixteenth, not to one quarter. A cut to one quarter would need exponent $-1$, which is the revenue exponent here rather than the demand exponent, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 93,
+    "solution_overview": "Pamphlet demand is $q(p)=Ap^{-2}$ packs per week, with $q(5)=80$. Weekly revenue is $R=pq$.\n\n**Part 1: Building the model.**\n\nLet $p$ = price in euros and $q$ = packs per week. The exponent is given, so one priced observation fixes $A$. Inversion uses the reciprocal exponent.\n\n**1. Translate: the recorded pair.**\n\n$$A\\cdot 5^{-2}=80$$\n\n**Part 2: The model.**\n\n$$q(p)=2000p^{-2} \\tag{1}$$\n\n$$R(p)=2000p^{-1} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The inverse $p=(2000/q)^{\\frac{1}{2}}$ is a power of $q$.\n\n**2.** $q(10)=20$. A target of $125$ packs requires $p=4$.\n\n**3.** $(2)$ falls with price, so revenue is not flat. Quadrupling price multiplies demand by $4^{-2}=\\frac{1}{16}$, not by $\\frac{1}{4}$.\n\n**Answer.** $A=2000$ | $q(10)=20$ | $p=4$ for $125$ packs | $R(p)=\\frac{2000}{p}$"
+  },
+  {
+    "id": "math-8-94",
+    "case_id": "MATH 8.94",
+    "title": "Bike-Share Passes Under a Subsidy Price Index",
+    "context": "Weekly bike-share day-pass sales follow $q(p)=A p^{\\frac{-3}{2}}$ when the pass price is $p>0$ euros. A pilot at sixteen euros sold fifty passes. Policy indexes the pass by $p(s)=B s^{\\frac{2}{3}}$ for a positive subsidy index $s$, and at subsidy index eight the posted price is sixteen euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Composed demand is inversely proportional to the subsidy index.",
+      "Tripling the subsidy index triples composed demand.",
+      "At subsidy index $8$, composed demand is $50$ passes.",
+      "Raising the subsidy index raises composed demand.",
+      "At subsidy index $27$, composed demand is $15$ passes."
+    ],
+    "answer_key": [true, false, true, false, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe pilot recovers the demand coefficient after evaluating $16^{\\frac{3}{2}}$.\n\n$$16^{\\frac{3}{2}}=\\bigl(\\sqrt{16}\\bigr)^{3}=64 \\qquad A=50\\cdot 64=3200$$\n\nThe policy map at $s=8$ recovers $B$, because $8^{\\frac{2}{3}}=4$ and $p(8)=16$.\n\n$$B\\cdot 4=16 \\qquad B=4 \\qquad p(s)=4s^{\\frac{2}{3}}$$\n\nComposing the two powers multiplies the exponents:\n\n$$q(p(s))=3200\\bigl(4s^{\\frac{2}{3}}\\bigr)^{\\frac{-3}{2}}=3200\\cdot 4^{\\frac{-3}{2}}\\cdot s^{-1}=\\frac{400}{s}$$\n\nComposed demand is inversely proportional to $s$, so the statement is True.",
+      "**B.** → False\n\nComposed demand carries exponent $-1$ in the subsidy index, so an input factor of $3$ produces\n\n$$\\frac{q(p(3s))}{q(p(s))}=3^{-1}=\\frac{1}{3}$$\n\nDemand falls to a third rather than tripling. Tripling would need a composed exponent of $+1$, and the product $\\bigl(\\frac{2}{3}\\bigr)\\bigl(-\\frac{3}{2}\\bigr)$ is $-1$, so the statement is False.",
+      "**C.** → True\n\nThe policy map was calibrated at $s=8$ to the pilot price of $16$ euros, so composed demand at that index is the pilot sale.\n\n$$p(8)=16 \\qquad q(16)=50$$\n\nComposed demand is $50$ passes, so the statement is True.",
+      "**D.** → False\n\nThe composed exponent is the product of the two given exponents.\n\n$$\\biggl(\\frac{2}{3}\\biggr)\\biggl(-\\frac{3}{2}\\biggr)=-1$$\n\nSo $q(p(s))=400s^{-1}$ is strictly decreasing in $s$. Raising the subsidy index lowers composed demand, so the statement is False.",
+      "**E.** → False\n\nThe pilot recovers $A=50\\cdot 16^{\\frac{3}{2}}=50\\cdot 64=3200$, and $p(8)=16$ recovers $B=4$. At $s=27$,\n\n$$p(27)=4\\cdot 27^{\\frac{2}{3}}=4\\cdot 9=36 \\qquad q(36)=3200\\cdot 36^{\\frac{-3}{2}}=\\frac{3200}{216}=\\frac{400}{27}\\approx 14.81$$\n\nThat is not $15$ passes, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 94,
+    "solution_overview": "Day-pass demand is $q(p)=Ap^{\\frac{-3}{2}}$ with $q(16)=50$. Policy indexes the price by $p(s)=B s^{\\frac{2}{3}}$ with $p(8)=16$.\n\n**Part 1: Building the model.**\n\nLet $p$ = pass price, $q$ = weekly passes, and $s$ = subsidy index. The pilot fixes $A$. The indexed price at $s=8$ fixes $B$. Composition multiplies the exponents.\n\n**1. Translate: the pilot.**\n\n$$A\\cdot 16^{\\frac{-3}{2}}=50$$\n\n**2. Translate: the policy map.**\n\n$$B\\cdot 8^{\\frac{2}{3}}=16$$\n\n**Part 2: The model.**\n\n$$q(p)=3200p^{\\frac{-3}{2}} \\tag{1}$$\n\n$$q(p(s))=\\frac{400}{s} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $(2)$ is inversely proportional to $s$, so tripling $s$ divides demand by $3$ and raising $s$ lowers demand.\n\n**2.** $q(p(8))=50$. At $s=27$, composed demand is $\\frac{400}{27}\\approx 14.81$, not $15$.\n\n**Answer.** $A=3200$ | $B=4$ | $q\\circ p=\\frac{400}{s}$ | $q(p(8))=50$"
+  },
+  {
+    "id": "math-8-95",
+    "case_id": "MATH 8.95",
+    "title": "Overnight Loaves Split Across Two Oven Lines",
+    "context": "A regional bakery must bake thirty thousand loaves overnight and can split them between two oven lines. Line 1's energy-cost index follows $C_{1}(q)=a q^{2}$ and line 2's follows $C_{2}(q)=b q^{2}$, where $q$ is that line's own output in thousands of loaves. A ten-thousand-loaf run on line 1 scored one hundred, and an eight-thousand-loaf run on line 2 scored sixteen. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Sending all $30$ thousand loaves to line 2 scores $225$.",
+      "Concentrating the whole order on the cheaper line is the cheapest plan.",
+      "An even split costs more than putting six thousand loaves on line 1 and the rest on line 2.",
+      "The six-and-twenty-four split scores $180$.",
+      "Line 1's average cost index falls as its own output rises."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe logged run on line 2 recovers $b$ from $C_{2}(8)=16$.\n\n$$b\\cdot 8^{2}=16 \\qquad b=\\frac{16}{64}=\\frac{1}{4}$$\n\nSending the whole order of $30$ thousand loaves to that line is then a direct evaluation:\n\n$$C_{2}(30)=\\frac{1}{4}\\cdot 30^{2}=\\frac{900}{4}=225$$\n\nThe corner scores $225$, so the statement is True.",
+      "**B.** → False\n\nThe logged runs recover both coefficients: $C_{1}(10)=100$ gives $a=1$, and $C_{2}(8)=16$ gives $b=\\frac{1}{4}$. Line 2 is cheaper at every common output, but the overnight total is fixed at $30$. Equating the marginal indices $2aq_{1}=2bq_{2}$ gives $q_{2}=4q_{1}$, so the interior split is $q_{1}=6$, $q_{2}=24$.\n\n$$C_{1}(6)+C_{2}(24)=36+144=180 \\qquad C_{2}(30)=225$$\n\nThe split undercuts the cheaper-line corner, so concentrating on line 2 is not the cheapest plan, so the statement is False.",
+      "**C.** → True\n\nPrice each plan after recovering $a=1$ from $C_{1}(10)=100$ and $b=\\frac{1}{4}$ from $C_{2}(8)=16$.\n\n$$C_{1}(15)+C_{2}(15)=225+\\frac{225}{4}=281.25 \\qquad C_{1}(6)+C_{2}(24)=36+144=180$$\n\nThe even split is more than a hundred index points dearer, so the statement is True.",
+      "**D.** → True\n\nThe logged runs recover $a=1$ and $b=\\frac{1}{4}$. Six thousand loaves on line 1 and twenty-four thousand on line 2 then cost\n\n$$C_{1}(6)=6^{2}=36 \\qquad C_{2}(24)=\\frac{24^{2}}{4}=144 \\qquad 36+144=180$$\n\nThe split scores $180$, so the statement is True.",
+      "**E.** → False\n\nAverage cost on line 1 is the quadratic index divided by own output. From $a=1$,\n\n$$\\frac{C_{1}(q)}{q}=q$$\n\nThe remaining exponent is $+1$, so the average rises with output. A falling average would need an original exponent below $1$, and line 1's is $2$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 95,
+    "solution_overview": "Thirty thousand loaves are split between $C_{1}(q)=aq^{2}$ and $C_{2}(q)=bq^{2}$. A run of $10$ on line 1 scored $100$, and a run of $8$ on line 2 scored $16$.\n\n**Part 1: Building the model.**\n\nLet $q_{1}+q_{2}=30$ be the split in thousands of loaves. Each logged run fixes one coefficient.\n\n**1. Translate: line 1.** $100a=100$.\n\n**2. Translate: line 2.** $64b=16$.\n\n**Part 2: The model.**\n\n$$C_{1}(q)=q^{2}, \\qquad C_{2}(q)=\\frac{q^{2}}{4} \\tag{1}$$\n\n$$q_{2}=4q_{1} \\quad \\text{at equal marginals} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** All on line 2 costs $225$. The equal-marginal split is $6$ and $24$, costing $180$.\n\n**2.** The even split costs $281.25$, so it is dearer than $6$ and $24$. The cheaper-line corner is not the cheapest plan.\n\n**3.** Line 1's average cost is $q$, which rises with own output.\n\n**Answer.** $a=1$ | $b=\\frac{1}{4}$ | all on line 2 costs $225$ | $6$ and $24$ costs $180$"
+  },
+  {
+    "id": "math-8-96",
+    "case_id": "MATH 8.96",
+    "title": "Museum Tickets: Point Elasticity Versus a Finite Rise",
+    "context": "Evening museum admissions follow $q(p)=A p^{-2}$ tickets when the price is $p>0$ euros. At ten euros the desk sold forty tickets. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The point price elasticity of demand is constantly $-2$.",
+      "Raising the price from $10$ to $12$ euros cuts demand by exactly $8$ tickets.",
+      "For a $10\\%$ price rise, the constant-elasticity shortcut matches the exact change in demand.",
+      "Weekly revenue is maximized by raising the price without bound.",
+      "At five euros the desk sells $160$ tickets."
+    ],
+    "answer_key": [true, false, false, false, true],
+    "tactical_explanations": [
+      "**A.** → True\n\nFor any isoelastic rule $q=Ap^{r}$ the point elasticity equals the exponent, because the coefficient cancels in $\\frac{p}{q}\\cdot\\frac{dq}{dp}$.\n\n$$\\varepsilon(p)=\\frac{p}{Ap^{r}}\\cdot r Ap^{r-1}=r=-2$$\n\nThe desk record is not needed for this identity. Elasticity is $-2$ at every $p>0$, so the statement is True.",
+      "**B.** → False\n\nThe desk record recovers $A$ from $q(10)=40$.\n\n$$A\\cdot 10^{-2}=40 \\qquad A=4000 \\qquad q(12)=\\frac{4000}{144}=\\frac{250}{9}\\approx 27.78$$\n\nThe cut is $40-\\frac{250}{9}\\approx 12.22$ tickets, not $8$. The figure $8$ is $20\\%$ of the recorded $40$, which copies the price rise instead of raising $1.2$ to the exponent $-2$, so the statement is False.",
+      "**C.** → False\n\nThe shortcut multiplies the elasticity by the percentage price move, while the exact rule raises the price factor to the exponent.\n\n$$-2\\times 10\\%=-20\\% \\qquad 1.1^{-2}-1=\\frac{1}{1.21}-1\\approx -17.36\\%$$\n\nThe two figures disagree. Constant elasticity describes the limiting response, not the arithmetic of a $10\\%$ jump, so the statement is False.",
+      "**D.** → False\n\nRevenue is price times quantity. From $A=4000$,\n\n$$R(p)=p\\cdot 4000p^{-2}=\\frac{4000}{p}$$\n\nThe revenue exponent $-1$ is negative, so $R$ falls at every price and $R(p)\\to 0$ as $p\\to\\infty$. Raising the price without bound drives revenue toward zero, so the statement is False.",
+      "**E.** → True\n\nFive euros is half the recorded price, so demand scales by $\\bigl(\\frac{1}{2}\\bigr)^{-2}$.\n\n$$\\frac{q(5)}{q(10)}=2^{2}=4 \\qquad q(5)=40\\cdot 4=160$$\n\nThe desk sells $160$ tickets, so the statement is True."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 96,
+    "solution_overview": "Evening admissions follow $q(p)=Ap^{-2}$ with $q(10)=40$. Point elasticity is set against exact finite price moves, and revenue is $R=pq$.\n\n**Part 1: Building the model.**\n\nLet $p$ = admission price and $q$ = tickets. The exponent is given, so the desk record fixes $A$. For a price factor $k$, the shortcut and the exact rule return $-2(k-1)$ and $k^{-2}-1$.\n\n**1. Translate: the desk record.**\n\n$$A\\cdot 10^{-2}=40$$\n\n**Part 2: The model.**\n\n$$q(p)=4000p^{-2} \\tag{1}$$\n\n$$R(p)=\\frac{4000}{p} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Point elasticity equals the exponent, $\\varepsilon=-2$ at every price.\n\n**2.** $q(12)=\\frac{250}{9}$, a cut of about $12.22$ tickets, not $8$. A $10\\%$ rise cuts demand by about $17.4\\%$, not by the shortcut's $20\\%$.\n\n**3.** $(2)$ falls with price. Halving the price quadruples demand, so $q(5)=160$.\n\n**Answer.** $\\varepsilon=-2$ | $A=4000$ | exact cut about $12.22$ tickets | $q(5)=160$"
+  },
+  {
+    "id": "math-8-97",
+    "case_id": "MATH 8.97",
+    "title": "Annealing Lehr Throughput Under a Mis-Scaled Coefficient",
+    "context": "A glass-annealing lehr's throughput follows $T(e)=A e^{\\frac{3}{2}}$ trays per hour for belt setting $e>0$. A run at belt setting four delivered sixty-four trays an hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At belt setting $9$, throughput is $216$ trays per hour.",
+      "If the coefficient were $25\\%$ larger, every throughput reading would rise by exactly $25\\%$.",
+      "The scale factor for doubling the belt setting does not depend on $A$.",
+      "If the coefficient were $25\\%$ larger, the scale factor $\\frac{T(2e)}{T(e)}$ would itself become $25\\%$ larger.",
+      "If the coefficient were $25\\%$ larger, throughput at belt setting $9$ would be $250$ trays per hour."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe recorded run fixes the coefficient after evaluating $4^{\\frac{3}{2}}$.\n\n$$4^{\\frac{3}{2}}=\\bigl(\\sqrt{4}\\bigr)^{3}=8 \\qquad 8A=64 \\qquad A=8 \\qquad T(e)=8e^{\\frac{3}{2}}$$\n\nAt belt setting $9$,\n\n$$T(9)=8\\cdot 9^{\\frac{3}{2}}=8\\cdot 27=216$$\n\nThroughput is $216$ trays per hour, so the statement is True.",
+      "**B.** → True\n\nA counterfactual coefficient is a plain multiplier in front of the same shape factor.\n\n$$\\frac{T_{c}(e)}{T(e)}=\\frac{1.25A\\,e^{\\frac{3}{2}}}{A\\,e^{\\frac{3}{2}}}=1.25$$\n\nThe shape factor cancels at every setting, so every reading rises by exactly $25\\%$, so the statement is True.",
+      "**C.** → True\n\nA doubling scale factor is a ratio of two model values, so the coefficient appears in both and cancels.\n\n$$\\frac{T(2e)}{T(e)}=\\frac{A(2e)^{\\frac{3}{2}}}{A e^{\\frac{3}{2}}}=2^{\\frac{3}{2}}$$\n\nThe factor is $2\\sqrt{2}$, pinned by the exponent alone. It does not depend on $A$, so the statement is True.",
+      "**D.** → False\n\nUnder the enlarged coefficient the same cancellation occurs.\n\n$$\\frac{T_{c}(2e)}{T_{c}(e)}=\\frac{1.25A(2e)^{\\frac{3}{2}}}{1.25A e^{\\frac{3}{2}}}=2^{\\frac{3}{2}}$$\n\nThe factor $1.25$ never survives the ratio. Levels move by $25\\%$ and ratios do not, so the statement is False.",
+      "**E.** → False\n\nThe recorded run recovers $A=8$, so $T(9)=8\\cdot 27=216$. A $25\\%$ larger coefficient multiplies that reading by $1.25$.\n\n$$1.25\\cdot 216=270$$\n\nThe claimed $250$ is not that product. Throughput would be $270$ trays per hour, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 97,
+    "solution_overview": "Lehr throughput is $T(e)=Ae^{\\frac{3}{2}}$ trays per hour, with $T(4)=64$.\n\n**Part 1: Building the model.**\n\nLet $e$ = belt setting and $T$ = trays per hour. The exponent is given, so the recorded run fixes $A$. Levels depend on $A$; scale factors cancel it.\n\n**1. Translate: the recorded run.**\n\n$$A\\cdot 4^{\\frac{3}{2}}=64$$\n\n**Part 2: The model.**\n\n$$T(e)=8e^{\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{T(ke)}{T(e)}=k^{\\frac{3}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $T(9)=216$. Replacing $A$ by $1.25A$ multiplies every level by $1.25$, so $T_{c}(9)=270$, not $250$.\n\n**2.** $(2)$ is independent of $A$. A $25\\%$ larger coefficient leaves the doubling factor $2^{\\frac{3}{2}}$ unchanged.\n\n**Answer.** $A=8$ | $T(9)=216$ | levels scale with $A$ | doubling factor $2^{\\frac{3}{2}}$"
+  }
+]

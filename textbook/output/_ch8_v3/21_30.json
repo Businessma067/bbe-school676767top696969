@@ -1,0 +1,242 @@
+[
+  {
+    "id": "math-8-21",
+    "case_id": "MATH 8.21",
+    "title": "Isoelastic Subscription Demand and Its Revenue",
+    "context": "Monthly subscriptions follow $q(p)=A p^{-2}$, where $p>0$ is the price in euros. At five euros the service sells four hundred subscriptions. Revenue is $R=pq$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At ten euros the curve sells $100$ subscriptions.",
+      "Revenue is the same at every price.",
+      "The price needed for a given number of subscriptions is itself a power function of that number.",
+      "Quadrupling the price cuts demand to one quarter.",
+      "At twenty euros the curve sells $50$ subscriptions."
+    ],
+    "answer_key": [true, false, true, false, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe recorded pair recovers $A$, because $5^{-2}=\\frac{1}{25}$.\n\n$$A\\cdot 5^{-2}=400 \\qquad A=10000 \\qquad q(10)=10000\\cdot 10^{-2}=100$$\n\nTen euros is twice five, so the same conclusion is the scale $2^{-2}=\\frac{1}{4}$ applied to $400$. Demand is $100$, so the statement is True.",
+      "**B.** → False\n\nRevenue multiplies price by quantity, which raises the demand exponent by one. From $A=10000$,\n\n$$R(p)=p\\cdot 10000 p^{-2}=10000 p^{-1}=\\frac{10000}{p}$$\n\nA schedule that is the same at every price would need exponent $0$. This one still falls as the price rises, so the statement is False.",
+      "**C.** → True\n\nInverting a nonzero power produces another power. With $A=10000$,\n\n$$p=\\left(\\frac{10000}{q}\\right)^{\\frac{1}{2}}=100\\,q^{-\\frac{1}{2}}$$\n\nPrice is a power of quantity, so the statement is True.",
+      "**D.** → False\n\nQuadrupling the price is an input factor of $4$, and demand responds through the exponent $-2$.\n\n$$\\frac{q(4p)}{q(p)}=4^{-2}=\\frac{1}{16}$$\n\nDemand falls to one sixteenth, not to one quarter. A cut to one quarter would need exponent $-1$, so the statement is False.",
+      "**E.** → False\n\nTwenty euros is four times the recorded price, so demand scales by $4^{-2}$.\n\n$$q(20)=400\\cdot\\frac{1}{16}=25$$\n\nThe claimed $50$ is what exponent $-1$ would give. The curve sells $25$ subscriptions, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 21,
+    "solution_overview": "Subscriptions follow $q(p)=A p^{-2}$ with $q(5)=400$. Revenue is $R=pq$.\n\n**Part 1: Building the model.**\n\nLet $p$ = price in euros and $q$ = subscriptions. The exponent is given, so one priced observation fixes $A$.\n\n**1. Translate: the recorded pair.**\n\n$$A\\cdot 5^{-2}=400$$\n\n**Part 2: The model.**\n\n$$q(p)=10000 p^{-2} \\tag{1}$$\n\n$$R(p)=10000 p^{-1} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $q(10)=100$ and $q(20)=25$, not $50$.\n\n**2.** The inverse $p=100 q^{-\\frac{1}{2}}$ is a power of $q$. Revenue $(2)$ falls with price. Quadrupling price multiplies demand by $\\frac{1}{16}$.\n\n**Answer.** $A=10000$ | $q(10)=100$ | $q(20)=25$ | $R=\\frac{10000}{p}$"
+  },
+  {
+    "id": "math-8-22",
+    "case_id": "MATH 8.22",
+    "title": "Audit Fees With a Fixed Charge on Top of a Power Term",
+    "context": "An audit firm bills $C(n)=F+a n^{\\frac{1}{2}}$ for a client with $n>0$ accounts. One hundred accounts were billed at $500$, and four hundred accounts at $800$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The fixed engagement charge is $200$.",
+      "Total cost is a power function of the number of accounts.",
+      "An engagement covering $900$ accounts is billed at $1100$.",
+      "Cost per account falls as the book of accounts grows.",
+      "Doubling the accounts from $100$ to $200$ raises the bill by more than $50\\%$."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nTwo invoices are two equations in $F$ and $a$. Subtracting cancels the setup.\n\n$$F+10a=500 \\qquad F+20a=800 \\qquad 10a=300 \\qquad a=30 \\qquad F=200$$\n\nThe fixed charge is $200$, so the statement is True.",
+      "**B.** → False\n\nA power function cannot carry a nonzero intercept. From the two invoices, $F=200$ and $a=30$, so\n\n$$C(n)=200+30 n^{\\frac{1}{2}}$$\n\nThe extra $200$ stop this from being a power of $n$, so the statement is False.",
+      "**C.** → True\n\nNine hundred accounts give a whole square root, once both constants are known.\n\n$$C(900)=200+30\\cdot 30=1100$$\n\nThe bill is $1100$, so the statement is True.",
+      "**D.** → True\n\nCost per account is the recovered bill divided by $n$. With $F=200$ and $a=30$,\n\n$$\\frac{C(n)}{n}=\\frac{200}{n}+30 n^{-\\frac{1}{2}}$$\n\nBoth terms fall as $n$ rises, so cost per account falls, so the statement is True.",
+      "**E.** → False\n\nTwo hundred accounts is a level of the recovered rule, not a scale of the two logged runs. With $F=200$ and $a=30$,\n\n$$C(200)=200+30\\sqrt{200}=200+30\\cdot 10\\sqrt{2}\\approx 624 \\qquad 1.5\\cdot 500=750$$\n\nThe rise is about $25\\%$, not more than $50\\%$, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 22,
+    "solution_overview": "The bill is $C(n)=F+a n^{\\frac{1}{2}}$ with $C(100)=500$ and $C(400)=800$.\n\n**Part 1: Building the model.**\n\nLet $n$ = accounts. Two unknowns need both invoices. Subtracting isolates $a$; either invoice then pins $F$.\n\n**1. Translate: the two invoices.**\n\n$$F+10a=500, \\qquad F+20a=800$$\n\n**Part 2: The model.**\n\n$$C(n)=200+30\\sqrt{n} \\tag{1}$$\n\n**Part 3: Solve.**\n\n**1.** $C(900)=1100$. The setup $F=200$ keeps $(1)$ from being a power of $n$. Unit cost falls.\n\n**2.** $C(200)\\approx 624$, a rise of about $25\\%$ from $500$, not more than $50\\%$.\n\n**Answer.** $F=200$ | $a=30$ | $C(900)=1100$ | $C(200)\\approx 624$"
+  },
+  {
+    "id": "math-8-23",
+    "case_id": "MATH 8.23",
+    "title": "Fleet Growth Combined With Falling Emission Intensity",
+    "context": "An electric-vehicle programme is tracked by two linked power laws. The fleet after $t>0$ years is $a(t)=4t^{\\frac{1}{2}}$ thousand vehicles, and average emission intensity follows $e(a)=k a^{-\\frac{1}{2}}$ kilograms per thousand vehicles. When the fleet has sixteen thousand vehicles, intensity is $30$ kilograms. Total fleet emissions are $E=a\\,e(a)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "After sixteen years, total fleet emissions are $480$.",
+      "Total fleet emissions are a power of time with exponent $\\frac{1}{2}$.",
+      "After one year, total fleet emissions are $240$.",
+      "Doubling elapsed time doubles total fleet emissions.",
+      "Emission intensity rises as the fleet grows."
+    ],
+    "answer_key": [true, false, true, false, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe intensity reading recovers $k$ before the two stages can be composed. At sixteen thousand vehicles, $a=16$ and $16^{\\frac{1}{2}}=4$, so\n\n$$k\\cdot 16^{-\\frac{1}{2}}=30 \\qquad \\frac{k}{4}=30 \\qquad k=120$$\n\nThen $e(a)=120 a^{-\\frac{1}{2}}$ and $a(t)=4t^{\\frac{1}{2}}$, so\n\n$$E(t)=4t^{\\frac{1}{2}}\\cdot 120\\bigl(4t^{\\frac{1}{2}}\\bigr)^{-\\frac{1}{2}}=240 t^{\\frac{1}{4}} \\qquad E(16)=240\\cdot 2=480$$\n\nTotal emissions are $480$, so the statement is True.",
+      "**B.** → False\n\nComposing the recovered intensity with the fleet law multiplies the time exponents.\n\n$$E(t)=240 t^{\\frac{1}{4}}$$\n\nThe composed exponent is $\\frac{1}{4}$, not $\\frac{1}{2}$. The $\\frac{1}{2}$ belongs to the fleet stage alone, so the statement is False.",
+      "**C.** → True\n\nOne year is the coefficient of the composed law, because $1^{\\frac{1}{4}}=1$. From $k=120$,\n\n$$E(1)=240$$\n\nTotal emissions are $240$, so the statement is True.",
+      "**D.** → False\n\nDoubling time multiplies total emissions by $2$ to the composed exponent.\n\n$$\\frac{E(2t)}{E(t)}=2^{\\frac{1}{4}}$$\n\nThe fourth root of two is not two. Emissions rise by about $19\\%$, not by $100\\%$, so the statement is False.",
+      "**E.** → False\n\nThe recovered intensity $e(a)=120 a^{-\\frac{1}{2}}$ carries a negative exponent, so intensity falls as the fleet grows. A rising intensity would need a positive exponent, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 23,
+    "solution_overview": "The fleet is $a(t)=4t^{\\frac{1}{2}}$ thousand vehicles and intensity is $e(a)=k a^{-\\frac{1}{2}}$, with $e(16)=30$. Total emissions are $E=ae(a)$.\n\n**Part 1: Building the model.**\n\nLet $t$ = years and $a$ = fleet size. The intensity reading at $a=16$ fixes $k$. Composition then multiplies exponents.\n\n**1. Translate: the intensity reading.**\n\n$$k\\cdot 16^{-\\frac{1}{2}}=30$$\n\n**Part 2: The model.**\n\n$$k=120, \\qquad E(t)=240 t^{\\frac{1}{4}} \\tag{1}$$\n\n**Part 3: Solve.**\n\n**1.** $E(16)=480$ and $E(1)=240$. The composed exponent is $\\frac{1}{4}$, not $\\frac{1}{2}$.\n\n**2.** Doubling time multiplies $E$ by $2^{\\frac{1}{4}}$. Intensity falls as $a$ grows.\n\n**Answer.** $k=120$ | $E(t)=240 t^{\\frac{1}{4}}$ | $E(16)=480$"
+  },
+  {
+    "id": "math-8-24",
+    "case_id": "MATH 8.24",
+    "title": "Pipeline Capacity, Inversion, and a Change of Units",
+    "context": "Flow capacity through a pipe follows $Q(d)=A d^{\\frac{5}{2}}$ litres per second, where $d>0$ is the internal diameter in centimetres. A bench test on a $4$ cm pipe measured $64$ litres per second. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the capacity law is $A=2$.",
+      "A capacity of $250$ litres per second requires a diameter above $10$ cm.",
+      "Doubling the diameter multiplies capacity by more than $5$.",
+      "Measuring the diameter in millimetres instead of centimetres leaves the coefficient unchanged.",
+      "Capacity per centimetre of diameter is the same at every diameter."
+    ],
+    "answer_key": [true, false, true, false, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe bench test is a level of $Q(d)=A d^{\\frac{5}{2}}$. Because $4^{\\frac{5}{2}}=32$,\n\n$$A\\cdot 32=64 \\qquad A=2$$\n\nThe coefficient is $2$, so the statement is True.",
+      "**B.** → False\n\nA capacity of $250$ is an inversion of the recovered law $Q=2d^{\\frac{5}{2}}$.\n\n$$2d^{\\frac{5}{2}}=250 \\qquad d^{\\frac{5}{2}}=125 \\qquad d=125^{\\frac{2}{5}}=\\bigl(5^{3}\\bigr)^{\\frac{2}{5}}=5^{\\frac{6}{5}}\\approx 6.90$$\n\nThat diameter is below $10$ cm, so the statement is False.",
+      "**C.** → True\n\nDoubling the diameter multiplies capacity by $2^{\\frac{5}{2}}$, and the coefficient cancels.\n\n$$2^{\\frac{5}{2}}=4\\sqrt{2}\\approx 5.66$$\n\nThe factor is more than $5$, so the statement is True.",
+      "**D.** → False\n\nA millimetre is one tenth of a centimetre, so $d=\\frac{d_{\\mathrm{mm}}}{10}$. Substituting into $Q=2d^{\\frac{5}{2}}$ gives\n\n$$Q=2\\left(\\frac{d_{\\mathrm{mm}}}{10}\\right)^{\\frac{5}{2}}=\\frac{2}{10^{\\frac{5}{2}}}d_{\\mathrm{mm}}^{\\frac{5}{2}}$$\n\nThe millimetre-unit coefficient is not $2$. Changing the unit changes the coefficient, so the statement is False.",
+      "**E.** → False\n\nCapacity per centimetre lowers the recovered exponent by one.\n\n$$\\frac{Q(d)}{d}=2d^{\\frac{3}{2}}$$\n\nThe remaining exponent is positive, so the intensity rises with diameter. It is not the same at every size, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 24,
+    "solution_overview": "Capacity is $Q(d)=A d^{\\frac{5}{2}}$ litres per second with $Q(4)=64$.\n\n**Part 1: Building the model.**\n\nLet $d$ = diameter in centimetres. The exponent is given, so the bench test fixes $A$.\n\n**1. Translate: the bench test.**\n\n$$A\\cdot 4^{\\frac{5}{2}}=64$$\n\n**Part 2: The model.**\n\n$$Q(d)=2d^{\\frac{5}{2}} \\tag{1}$$\n\n**Part 3: Solve.**\n\n**1.** $A=2$. Doubling $d$ multiplies $Q$ by $4\\sqrt{2}\\approx 5.66$.\n\n**2.** $Q=250$ inverts to $d\\approx 6.90$ cm, below $10$. Writing $d$ in millimetres changes the coefficient. $Q/d=2d^{\\frac{3}{2}}$ is not constant.\n\n**Answer.** $A=2$ | doubling factor $4\\sqrt{2}$ | $d\\approx 6.90$ for $Q=250$"
+  },
+  {
+    "id": "math-8-25",
+    "case_id": "MATH 8.25",
+    "title": "From Radius Growth to the Area a Service Covers",
+    "context": "A delivery hub's service radius follows $r(t)=A t^{\\frac{1}{2}}$ kilometres after $t>0$ hours. After four hours the radius is six kilometres. The area covered is the disc $S=\\pi r^{2}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "After four hours the covered area is $36\\pi$ square kilometres.",
+      "The area covered is proportional to elapsed time.",
+      "Doubling elapsed time doubles the area covered.",
+      "After nine hours the covered area has already reached $100\\pi$ square kilometres.",
+      "The time needed for a given area is itself a power function of that area."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe four-hour radius recovers $A$ before the disc can be evaluated. Because $4^{\\frac{1}{2}}=2$,\n\n$$A\\cdot 2=6 \\qquad A=3 \\qquad r(4)=6 \\qquad S(4)=\\pi\\cdot 6^{2}=36\\pi$$\n\nThe covered area is $36\\pi$ square kilometres, so the statement is True.",
+      "**B.** → True\n\nArea composes the recovered radius with a square. From $A=3$,\n\n$$S(t)=\\pi\\bigl(3t^{\\frac{1}{2}}\\bigr)^{2}=9\\pi t$$\n\nThat is a constant times $t$, so area is proportional to elapsed time, so the statement is True.",
+      "**C.** → True\n\nBecause the composed law is $S(t)=9\\pi t$, doubling time doubles area.\n\n$$\\frac{S(2t)}{S(t)}=2$$\n\nThe radius only grows by $\\sqrt{2}$, but the square turns that into a factor of $2$, so the statement is True.",
+      "**D.** → False\n\nNine hours is a level of the composed law $S=9\\pi t$.\n\n$$S(9)=81\\pi$$\n\nThe area $100\\pi$ would need $t=\\frac{100}{9}\\approx 11.1$ hours, not nine. The covered area is $81\\pi$, so the statement is False.",
+      "**E.** → True\n\nInverting $S=9\\pi t$ produces another power, here with exponent $1$.\n\n$$t=\\frac{S}{9\\pi}$$\n\nTime is a power function of area, so the statement is True."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 25,
+    "solution_overview": "Radius is $r(t)=A t^{\\frac{1}{2}}$ kilometres with $r(4)=6$. Area is $S=\\pi r^{2}$.\n\n**Part 1: Building the model.**\n\nLet $t$ = hours. The four-hour radius fixes $A$. Area then composes a square with that square root.\n\n**1. Translate: the recorded radius.**\n\n$$A\\cdot 2=6$$\n\n**Part 2: The model.**\n\n$$r(t)=3t^{\\frac{1}{2}} \\tag{1}$$\n\n$$S(t)=9\\pi t \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $S(4)=36\\pi$ and $S(9)=81\\pi$, not $100\\pi$.\n\n**2.** $(2)$ is proportional to $t$, so doubling time doubles area. The inverse $t=S/(9\\pi)$ is a power of $S$.\n\n**Answer.** $A=3$ | $S(t)=9\\pi t$ | $S(4)=36\\pi$ | $S(9)=81\\pi$"
+  },
+  {
+    "id": "math-8-26",
+    "case_id": "MATH 8.26",
+    "title": "Two Support Contracts, One Crossing and One Cap",
+    "context": "A helpdesk compares two support contracts for $u>0$ tickets a month. Plan A bills $C_A(u)=a u^{\\frac{1}{2}}$ and never charges more than $400$. A filed invoice shows $36$ tickets billed at $240$. Plan B bills a flat $5$ per ticket with no cap. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two plans bill the same amount at $64$ tickets.",
+      "Below that crossing, Plan B is the cheaper contract.",
+      "At $144$ tickets Plan A bills $480$.",
+      "Plan A's cap eventually binds as ticket volume grows.",
+      "Plan A's cost per ticket is the same at every ticket volume."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe invoice recovers $a$ before the two uncapped schedules can be set equal. Because $\\sqrt{36}=6$,\n\n$$6a=240 \\qquad a=40 \\qquad 40\\sqrt{u}=5u \\qquad \\sqrt{u}=8 \\qquad u=64$$\n\nBoth bills at that volume are $40\\cdot 8=320$, under the cap of $400$. They match at $64$ tickets, so the statement is True.",
+      "**B.** → True\n\nOn $u>0$ the comparison $5u<40\\sqrt{u}$ reduces to $\\sqrt{u}<8$, hence $u<64$. Below the crossing the linear bill is the smaller one, so Plan B is cheaper, so the statement is True.",
+      "**C.** → False\n\nOne hundred and forty-four tickets is a two-piece evaluation. From $a=40$, the uncapped square-root bill is\n\n$$40\\sqrt{144}=40\\cdot 12=480$$\n\nbut $480>400$, so the cap binds:\n\n$$C_A(144)=\\min\\{480,400\\}=400$$\n\nPlan A bills $400$, not $480$, so the statement is False.",
+      "**D.** → True\n\nThe cap binds from the volume where uncapped Plan A first reaches $400$. With $a=40$,\n\n$$40\\sqrt{u}=400 \\qquad \\sqrt{u}=10 \\qquad u=100$$\n\nThe uncapped schedule is increasing, so every larger volume is trimmed to $400$. The cap does bind, so the statement is True.",
+      "**E.** → False\n\nCost per ticket on Plan A, while the cap is slack, is $a u^{-\\frac{1}{2}}$. The remaining exponent is negative, so unit cost falls as $u$ rises. A constant unit cost would need exponent $1$ on the bill, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 26,
+    "solution_overview": "Plan A bills $C_A(u)=a u^{\\frac{1}{2}}$ with a cap of $400$, and $C_A(36)=240$. Plan B bills $5u$.\n\n**Part 1: Building the model.**\n\nLet $u$ = tickets. The invoice fixes $a$. The cap turns Plan A into a two-piece rule.\n\n**1. Translate: the invoice.**\n\n$$6a=240$$\n\n**Part 2: The model.**\n\n$$C_A(u)=\\min\\{40\\sqrt{u},\\,400\\} \\tag{1}$$\n\n$$C_B(u)=5u \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Uncapped crossing at $u=64$ costing $320$. Plan B is cheaper for $u<64$. The cap binds from $u=100$.\n\n**2.** At $u=144$ the uncapped value $480$ is trimmed to $400$. Unit cost on the square-root piece falls.\n\n**Answer.** $a=40$ | crossing $u=64$ | cap from $u=100$ | $C_A(144)=400$"
+  },
+  {
+    "id": "math-8-27",
+    "case_id": "MATH 8.27",
+    "title": "An Eighty Percent Learning Curve Meeting a Materials Floor",
+    "context": "Unit cost on a new assembly line follows $c(N)=c_1 N^{-b}$ for cumulative output $N>0$. Every doubling of cumulative output multiplies unit cost by $0.8$, and the first unit cost $1000$. Materials alone cost $400$ per unit, so the curve cannot describe costs below that floor. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "After three successive doublings the modelled unit cost is $512$.",
+      "The exponent of the learning curve is $-0.8$.",
+      "After $8$ units the modelled unit cost is $500$.",
+      "Quadrupling cumulative output halves the unit cost.",
+      "The materials floor is already binding after $8$ units."
+    ],
+    "answer_key": [true, false, false, false, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThree doublings are three factors of $0.8$ applied to the first-unit cost.\n\n$$c(8)=1000\\cdot 0.8^{3}=1000\\cdot 0.512=512$$\n\nThe modelled cost is $512$, so the statement is True.",
+      "**B.** → False\n\nThe doubling rule is $2^{-b}=0.8$, not $b=0.8$.\n\n$$b=\\frac{\\ln 0.8}{\\ln 2}\\approx 0.3219 \\qquad c(N)=1000 N^{-0.3219}$$\n\nAn exponent of $-0.8$ would be a much steeper curve. The exponent is about $-0.322$, so the statement is False.",
+      "**C.** → False\n\nEight units are exactly three doublings of the first unit, so the model cost is $512$, not $500$. The figure $500$ is a rounded half of the first-unit cost, not a point on the curve, so the statement is False.",
+      "**D.** → False\n\nQuadrupling is two doublings, hence two factors of $0.8$.\n\n$$0.8^{2}=0.64$$\n\nUnit cost falls to $64\\%$ of its previous value, a cut of $36\\%$, not a halving, so the statement is False.",
+      "**E.** → False\n\nThe materials floor is $400$. After eight units the model still reads $512$, which sits above $400$. The floor has not yet bound, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 27,
+    "solution_overview": "Unit cost is $c(N)=c_1 N^{-b}$ with doubling factor $0.8$ and $c(1)=1000$. Materials floor at $400$.\n\n**Part 1: Building the model.**\n\nLet $N$ = cumulative output. The doubling rule isolates $b$. The first-unit cost is $c_1$.\n\n**1. Translate: the doubling rule.**\n\n$$2^{-b}=0.8$$\n\n**Part 2: The model.**\n\n$$c(N)=1000 N^{-0.3219} \\tag{1}$$\n\n**Part 3: Solve.**\n\n**1.** $c(8)=512$, not $500$. The exponent is $-0.322$, not $-0.8$. Two doublings multiply cost by $0.64$, not by $0.5$.\n\n**2.** $512>400$, so the floor is not yet binding at $N=8$. It binds near $N\\approx 17$.\n\n**Answer.** $b\\approx 0.322$ | $c(8)=512$ | floor not binding at $N=8$"
+  },
+  {
+    "id": "math-8-28",
+    "case_id": "MATH 8.28",
+    "title": "Advertising Revenue Against a Proportional Platform Fee",
+    "context": "A merchant's sales revenue from an advertising spend $x>0$ follows $R(x)=A x^{\\frac{1}{2}}$. At a spend of $100$ the campaign brings in $900$. The platform charges a fee $F(x)=6x$ on the same spend. Net gain is $R(x)-F(x)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The net gain is zero at a spend of $225$.",
+      "The net gain is positive at every spend above $225$.",
+      "At a spend of $100$ the net gain is $300$.",
+      "Doubling the spend doubles revenue.",
+      "Revenue per euro of spend rises as the campaign grows."
+    ],
+    "answer_key": [true, false, true, false, false],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe recorded revenue recovers $A$ before the two schedules can be set equal. Because $100^{\\frac{1}{2}}=10$,\n\n$$10A=900 \\qquad A=90 \\qquad 90\\sqrt{x}=6x \\qquad \\sqrt{x}=15 \\qquad x=225$$\n\nNet gain is zero at a spend of $225$, so the statement is True.",
+      "**B.** → False\n\nPast the crossing the linear fee is the steeper schedule. With $A=90$ the gap is\n\n$$N(x)=90\\sqrt{x}-6x$$\n\nwhich is positive on $(0,225)$ and negative for $x>225$. Above $225$ the net is negative, so the statement is False.",
+      "**C.** → True\n\nA spend of $100$ is the recorded revenue point, so the fee is all that remains to subtract. From $A=90$,\n\n$$R(100)=900 \\qquad F(100)=600 \\qquad N(100)=300$$\n\nThe net gain is $300$, so the statement is True.",
+      "**D.** → False\n\nDoubling spend multiplies revenue by $2^{\\frac{1}{2}}$, and $A$ cancels.\n\n$$\\frac{R(2x)}{R(x)}=\\sqrt{2}$$\n\nThe factor is about $1.414$, not $2$, so the statement is False.",
+      "**E.** → False\n\nRevenue per euro is $A x^{-\\frac{1}{2}}$. The remaining exponent is negative, so the return per euro falls as the spend rises, so the statement is False."
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 28,
+    "solution_overview": "Revenue is $R(x)=A x^{\\frac{1}{2}}$ with $R(100)=900$. The fee is $F(x)=6x$. Net gain is $N=R-F$.\n\n**Part 1: Building the model.**\n\nLet $x$ = advertising spend. The recorded revenue fixes $A$.\n\n**1. Translate: the recorded campaign.**\n\n$$10A=900$$\n\n**Part 2: The model.**\n\n$$N(x)=90\\sqrt{x}-6x \\tag{1}$$\n\n**Part 3: Solve.**\n\n**1.** $N(100)=300$. The unique positive root of $(1)$ is $x=225$, and $N<0$ for $x>225$.\n\n**2.** Doubling $x$ multiplies $R$ by $\\sqrt{2}$. Revenue per euro falls.\n\n**Answer.** $A=90$ | $N(100)=300$ | break-even at $x=225$"
+  },
+  {
+    "id": "math-8-29",
+    "case_id": "MATH 8.29",
+    "title": "Calibrating a Two-Stage Production Chain",
+    "context": "A plant runs two stages. Labour $L>0$ hours yields material $m(L)=A L^{\\frac{1}{2}}$ tonnes, and material is converted by $g(m)=B m^{\\frac{3}{2}}$ finished units. One hundred labour hours yielded forty tonnes of material, and a run on nine tonnes of material produced fifty-four finished units. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The material stage is $m(L)=4L^{\\frac{1}{2}}$.",
+      "Finished output as a function of labour is $g=16L^{\\frac{3}{4}}$.",
+      "Doubling labour hours doubles finished output.",
+      "Finished output per labour hour falls as labour rises.",
+      "The labour needed for a given finished count is itself a power of that count."
+    ],
+    "answer_key": [true, true, false, true, true],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe labour record recovers $A$, because $100^{\\frac{1}{2}}=10$.\n\n$$10A=40 \\qquad A=4 \\qquad m(L)=4L^{\\frac{1}{2}}$$\n\nThe material stage is $4L^{\\frac{1}{2}}$, so the statement is True.",
+      "**B.** → True\n\nThe second record recovers $B$, and composition then multiplies the exponents. Because $9^{\\frac{3}{2}}=27$,\n\n$$27B=54 \\qquad B=2 \\qquad g=2\\bigl(4L^{\\frac{1}{2}}\\bigr)^{\\frac{3}{2}}=2\\cdot 8\\,L^{\\frac{3}{4}}=16L^{\\frac{3}{4}}$$\n\nFinished output is $16L^{\\frac{3}{4}}$, so the statement is True.",
+      "**C.** → False\n\nDoubling labour multiplies finished output by $2$ to the composed exponent $\\frac{3}{4}$.\n\n$$\\frac{g(2L)}{g(L)}=2^{\\frac{3}{4}}\\approx 1.682$$\n\nThe factor is about $1.68$, not $2$, so the statement is False.",
+      "**D.** → True\n\nOutput per hour lowers the composed exponent by one.\n\n$$\\frac{g}{L}=16 L^{-\\frac{1}{4}}$$\n\nThe remaining exponent is negative, so output per hour falls as labour rises, so the statement is True.",
+      "**E.** → True\n\nInverting $g=16L^{\\frac{3}{4}}$ produces another power.\n\n$$L=\\left(\\frac{g}{16}\\right)^{\\frac{4}{3}}$$\n\nLabour is a power of the finished count, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 29,
+    "solution_overview": "Material is $m(L)=A L^{\\frac{1}{2}}$ with $m(100)=40$. Finished goods are $g(m)=B m^{\\frac{3}{2}}$ with $g(9)=54$.\n\n**Part 1: Building the model.**\n\nEach stage has a known exponent and one level, so each coefficient is recoverable. Composition multiplies exponents and raises the inner coefficient.\n\n**1. Translate: the labour record.** $10A=40$.\n\n**2. Translate: the material record.** $27B=54$.\n\n**Part 2: The model.**\n\n$$m(L)=4L^{\\frac{1}{2}} \\tag{1}$$\n\n$$g=16L^{\\frac{3}{4}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Doubling $L$ multiplies $g$ by $2^{\\frac{3}{4}}\\approx 1.68$, not by $2$. Output per hour falls. The inverse of $(2)$ is a power of $g$.\n\n**Answer.** $A=4$ | $B=2$ | $g=16L^{\\frac{3}{4}}$"
+  },
+  {
+    "id": "math-8-30",
+    "case_id": "MATH 8.30",
+    "title": "Calibrated Demand, Derived Revenue, and a Fixed Charge",
+    "context": "A niche publisher faces demand $q(p)=A p^{-\\frac{3}{2}}$ copies a month at a price $p>0$. A price of four euros sells two hundred and fifty copies. Revenue is $R=pq$, and the operation carries a fixed monthly charge of $400$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At a price of $25$, monthly revenue is $400$.",
+      "Revenue is a power function of price with exponent $-\\frac{1}{2}$.",
+      "The fixed charge is covered only at prices below $16$.",
+      "Doubling the price halves revenue.",
+      "Revenue falls as the price rises."
+    ],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe recorded pair recovers $A$, because $4^{-\\frac{3}{2}}=\\frac{1}{8}$.\n\n$$A\\cdot\\frac{1}{8}=250 \\qquad A=2000 \\qquad R(p)=2000 p^{-\\frac{1}{2}} \\qquad R(25)=2000\\cdot\\frac{1}{5}=400$$\n\nMonthly revenue is $400$, so the statement is True.",
+      "**B.** → True\n\nRevenue multiplies price by quantity, which raises the demand exponent by one. From $A=2000$,\n\n$$R(p)=p\\cdot 2000 p^{-\\frac{3}{2}}=2000 p^{-\\frac{1}{2}}$$\n\nThat is a power of price with exponent $-\\frac{1}{2}$, so the statement is True.",
+      "**C.** → False\n\nThe charge of $400$ is covered while $R(p)\\ge 400$. With $R=2000 p^{-\\frac{1}{2}}$,\n\n$$\\frac{2000}{\\sqrt{p}}\\ge 400 \\qquad \\sqrt{p}\\le 5 \\qquad p\\le 25$$\n\nThe threshold is $25$, not $16$. The figure $16$ is what appears if the demand exponent is inverted instead of the revenue exponent, so the statement is False.",
+      "**D.** → False\n\nDoubling price multiplies revenue by $2^{-\\frac{1}{2}}$.\n\n$$2^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{2}}\\approx 0.707$$\n\nRevenue falls by about $29\\%$, not by $50\\%$, so the statement is False.",
+      "**E.** → True\n\nThe recovered revenue $R=2000 p^{-\\frac{1}{2}}$ carries a negative exponent, so revenue falls as the price rises, so the statement is True."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 30,
+    "solution_overview": "Demand is $q(p)=A p^{-\\frac{3}{2}}$ with $q(4)=250$. Revenue is $R=pq$, and a fixed charge of $400$ must be covered.\n\n**Part 1: Building the model.**\n\nLet $p$ = price. The exponent is given, so the priced observation fixes $A$. Revenue raises that exponent by one.\n\n**1. Translate: the recorded pair.**\n\n$$A\\cdot 4^{-\\frac{3}{2}}=250$$\n\n**Part 2: The model.**\n\n$$q(p)=2000 p^{-\\frac{3}{2}} \\tag{1}$$\n\n$$R(p)=2000 p^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $R(25)=400$. Covering the charge requires $p\\le 25$, not $p\\le 16$.\n\n**2.** $(2)$ is a power with exponent $-\\frac{1}{2}$, so revenue falls in price. Doubling $p$ multiplies $R$ by $1/\\sqrt{2}$.\n\n**Answer.** $A=2000$ | $R(p)=2000 p^{-\\frac{1}{2}}$ | $R(25)=400$ | cover for $p\\le 25$"
+  }
+]

@@ -1,0 +1,1916 @@
+[
+  {
+    "id": "math-8-11",
+    "case_id": "MATH 8.11",
+    "title": "Marina's Vegetable Plot",
+    "context": "Marina waters a vegetable plot. Harvest in kilograms follows $Y(h)=A h^{r}$ after $h>0$ hours, with both constants unknown. Eight hours give four kilograms, and twenty-seven hours give six. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is smaller than one, so harvest grows more slowly than watering time.",
+      "If she doubles the watering time, she doubles the harvest.",
+      "To double the four-kilogram harvest she must more than double the watering time.",
+      "An extra hour adds more crop after twenty-seven hours of watering than it does after eight.",
+      "The watering time needed for a given harvest is itself a power function of that harvest."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 11
+  },
+  {
+    "id": "math-8-12",
+    "case_id": "MATH 8.12",
+    "title": "A Helpdesk Wait That Falls With the Team",
+    "context": "A helpdesk's average wait in minutes follows $W(n)=A n^{-\\frac{1}{2}}$ when $n>0$ agents are on duty. With four agents on the shift, callers wait twenty-four minutes. The manager will not staff more than fifty agents. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Quadrupling the recorded team halves the wait.",
+      "Even a full shift of fifty cannot get the wait under five minutes.",
+      "Doubling the recorded team halves the wait.",
+      "A six-minute wait would need more agents than the manager allows.",
+      "If the team keeps growing, the wait eventually becomes negative."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 12
+  },
+  {
+    "id": "math-8-13",
+    "case_id": "MATH 8.13",
+    "title": "Leah's Well and Omar's Well",
+    "context": "Leah and Omar pump at the same depth $d>0$ metres. Leah's well follows a square-root law $Q_{L}(d)=a d^{\\frac{1}{2}}$, and at nine metres she gets twelve litres a minute. Omar's well follows $Q_{O}(d)=k d^{\\frac{3}{2}}$, and at four metres he gets four litres a minute. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At Omar's recorded depth, Leah still brings up more water than he does.",
+      "Omar overtakes Leah before they reach ten metres.",
+      "Four times as deep as Omar's record, he already yields more than three times what Leah does.",
+      "Once Omar is ahead, Leah can catch him by going still deeper.",
+      "The two wells together still follow a single power of depth."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 13
+  },
+  {
+    "id": "math-8-14",
+    "case_id": "MATH 8.14",
+    "title": "Nora's Print Shop",
+    "context": "Nora's bill for a run of $n>0$ copies is a fixed setup plus a square-root charge, $C(n)=F+A n^{\\frac{1}{2}}$. Sixteen copies cost two hundred and fifty euros, and sixty-four copies cost four hundred and fifty. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Because of the setup, the bill is not a power function of the run.",
+      "A longer run is cheaper per copy.",
+      "If she prints enough copies, the total bill starts to fall.",
+      "Quadrupling a run of twenty-five copies doubles that bill.",
+      "Thirty-six copies cost less than the sixty-four-copy invoice."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 14
+  },
+  {
+    "id": "math-8-15",
+    "case_id": "MATH 8.15",
+    "title": "A Refinery Against a Linear Quote",
+    "context": "A refinery takes ore of purity $u>0$ and makes metal $M(u)=A u^{\\frac{3}{2}}$ tonnes. An audit records that raising purity from nine to sixteen increased metal output by two hundred and ninety-six tonnes. Metal is then turned into alloy strength $S=\\frac{1}{2}M^{\\frac{2}{3}}$. A rival mill quotes strength directly as $1.8u+5$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "After both stages, the refinery's strength is proportional to purity.",
+      "On fairly lean ore of purity ten, the rival still looks better.",
+      "The two quotes never meet.",
+      "Once the refinery pulls ahead, it stays ahead.",
+      "The rival's quote is a power function of purity."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 15
+  },
+  {
+    "id": "math-8-16",
+    "case_id": "MATH 8.16",
+    "title": "Server Peak Load Between a Doubling Rule and an Alarm",
+    "context": "A monitoring team models a server's peak load as $L(x)=A x^{r}$, where $x>0$ is the number of simultaneous jobs. Stress tests show that doubling the job count multiplies peak load by $4$, and a run with $30$ simultaneous jobs recorded a peak load of $180$. The hardware alarm trips at a peak load of $500$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Tripling the job count multiplies peak load by $6$.",
+      "The alarm trips at a job count above $55$.",
+      "Increasing the job count from $30$ to $42$ raises peak load by less than $90\\%$.",
+      "Increasing the job count from $30$ to $33$ raises peak load by exactly $21\\%$.",
+      "Halving the job count halves peak load."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 16
+  },
+  {
+    "id": "math-8-17",
+    "case_id": "MATH 8.17",
+    "title": "Survey Reach Against a Fieldwork Budget Cap",
+    "context": "Usable survey responses follow $Q(x)=A x^{0.5}$, where $x>0$ measures outreach intensity. When intensity was raised from $25$ to $100$, usable responses increased by exactly $60$. The fieldwork budget caps outreach intensity at $400$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The response law is $Q(x)=12\\sqrt{x}$.",
+      "The budget cap allows at most $240$ usable responses.",
+      "A target of $180$ usable responses requires intensity $225$, so it is affordable.",
+      "Multiplying intensity by $2.25$ multiplies usable responses by $1.5$.",
+      "Raising intensity from $64$ to $81$ raises usable responses by $12.5\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 17
+  },
+  {
+    "id": "math-8-18",
+    "case_id": "MATH 8.18",
+    "title": "Quadratic and Linear Inspection Costs That Meet Once",
+    "context": "Two inspection procedures are costed for a batch of $n>0$ documents. The automated procedure costs $C(n)=a n^{2}$ and the manual procedure costs $D(n)=b n$. Records show that on a batch of $20$ documents the two procedures cost the same, $400$ each. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The automated procedure is cheaper than the manual one at every batch below $20$ documents.",
+      "At $n=25$ the two procedures differ by less than $100$.",
+      "For $n>0$ the two procedures cost the same only at $n=20$.",
+      "Doubling the batch doubles the gap between the two costs.",
+      "The automated procedure's cost per document is constant."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 18
+  },
+  {
+    "id": "math-8-19",
+    "case_id": "MATH 8.19",
+    "title": "Warehouse Throughput With a Contractual Ceiling",
+    "context": "Warehouse throughput follows $H(s)=A s^{0.6}$ pallets per hour, where $s>0$ is the number of staff on shift. A shift with $32$ staff moved $96$ pallets per hour. The service contract caps billed throughput at $300$ pallets per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the throughput law is $A=8$.",
+      "The model reaches $300$ pallets per hour at about $214$ staff.",
+      "Doubling the headcount raises throughput by between $55\\%$ and $60\\%$.",
+      "The contract ceiling is reached at about $250$ staff.",
+      "Throughput per staff member rises as headcount rises."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 19
+  },
+  {
+    "id": "math-8-20",
+    "case_id": "MATH 8.20",
+    "title": "Response Time Recovered from a Server Upgrade",
+    "context": "A service's median response time follows $W(k)=A k^{-1.5}$ milliseconds, where $k>0$ is the number of servers. The upgrade log does not state $A$: it records only that moving from $4$ servers to $9$ servers cut the median response time by exactly $19$ ms. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "With four servers the median response time is $27$ ms.",
+      "With nine servers the median response time is $8$ ms.",
+      "Doubling the server count cuts the median response time by about $65\\%$.",
+      "A median response time of $1$ ms requires $36$ servers.",
+      "The model reaches a median response time of $2$ ms at about $22.7$ servers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 20
+  },
+  {
+    "id": "math-8-21",
+    "case_id": "MATH 8.21",
+    "title": "Isoelastic Subscription Demand and Its Revenue",
+    "context": "Monthly subscriptions follow the isoelastic demand curve $q(p)=A p^{-2}$, where $p>0$ is the price in euros. At a price of $5$ the service sells $400$ subscriptions. Management wants to know what the curve implies for quantity and for revenue $R=pq$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Raising the price by $10\\%$ lowers subscriptions by about $17.4\\%$.",
+      "A price rise of $10\\%$ lowers quantity by exactly $20\\%$.",
+      "At a price of $10$, the curve gives $100$ subscriptions and revenue of $1000$.",
+      "Revenue does not depend on the price.",
+      "At a price of $20$ the curve gives $50$ subscriptions."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 21
+  },
+  {
+    "id": "math-8-22",
+    "case_id": "MATH 8.22",
+    "title": "Audit Fees With a Fixed Charge on Top of a Power Term",
+    "context": "An audit firm bills $C(n)=F + a n^{0.5}$ for a client with $n>0$ accounts, where $F$ is a fixed engagement charge. Two completed engagements are on file: $100$ accounts were billed at $500$, and $400$ accounts at $800$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The fixed engagement charge is $200$.",
+      "Total cost is a power function of the number of accounts.",
+      "Cost per account falls as the number of accounts rises.",
+      "An engagement covering $900$ accounts is billed at $1100$.",
+      "Doubling the accounts from $100$ to $200$ raises the bill by more than $50\\%$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 22
+  },
+  {
+    "id": "math-8-23",
+    "case_id": "MATH 8.23",
+    "title": "Fleet Growth Combined With Falling Emission Intensity",
+    "context": "An electric-vehicle programme is tracked by two linked power laws. The fleet after $t>0$ years is $a(t)=4t^{0.5}$ thousand vehicles, and average emission intensity falls with fleet size according to $e(a)=120a^{-0.5}$ kilograms per thousand vehicles. Total fleet emissions are $E(t)=a(t)\\,e\\big(a(t)\\big)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Total fleet emissions are a power function of time with exponent $0.5$.",
+      "After $16$ years total fleet emissions are $960$.",
+      "Total fleet emissions rise as the programme runs longer.",
+      "Doubling the elapsed time doubles total fleet emissions.",
+      "Emission intensity rises as the fleet grows."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 23
+  },
+  {
+    "id": "math-8-24",
+    "case_id": "MATH 8.24",
+    "title": "Pipeline Capacity, Inversion, and a Change of Units",
+    "context": "Flow capacity through a pipe follows $Q(d)=A d^{2.5}$ litres per second, where $d>0$ is the internal diameter in centimetres. A bench test on a $4$ cm pipe measured a capacity of $64$ litres per second. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the capacity law is $A=2$.",
+      "Doubling the diameter multiplies capacity by about $5.7$.",
+      "A capacity of $250$ litres per second requires a diameter above $10$ cm.",
+      "Measuring the diameter in millimetres instead of centimetres leaves the coefficient unchanged.",
+      "Capacity per centimetre of diameter is the same at every diameter."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 24
+  },
+  {
+    "id": "math-8-25",
+    "case_id": "MATH 8.25",
+    "title": "From Radius Growth to the Area a Service Covers",
+    "context": "A delivery hub's service radius expands with time according to $r(t)=3t^{0.5}$ kilometres, where $t>0$ is hours since opening. The area covered is the disc of that radius, $S=\\pi r^{2}$ square kilometres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The area covered is proportional to elapsed time.",
+      "After $4$ hours the covered area is $36\\pi$ square kilometres.",
+      "Doubling the elapsed time doubles the area covered.",
+      "Increasing elapsed time by $50\\%$ increases the service radius by about $22.5\\%$.",
+      "The covered area reaches $100\\pi$ square kilometres after about $11.1$ hours."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 25
+  },
+  {
+    "id": "math-8-26",
+    "case_id": "MATH 8.26",
+    "title": "Two Support Contracts, One Crossing and One Cap",
+    "context": "A helpdesk compares two support contracts for $u>0$ tickets a month. Plan A bills $C_A(u)=a u^{0.5}$ and a filed invoice shows $36$ tickets billed at $240$; Plan A also carries a monthly cap, so it never charges more than $400$. Plan B bills a flat $5$ per ticket with no cap. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two plans bill the same amount at $64$ tickets.",
+      "Below $64$ tickets Plan B is the cheaper contract.",
+      "Plan A's cap binds from $100$ tickets onwards.",
+      "At $144$ tickets Plan A bills $480$.",
+      "Plan A's cost per ticket is the same at every ticket volume."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 26
+  },
+  {
+    "id": "math-8-27",
+    "case_id": "MATH 8.27",
+    "title": "An Eighty Percent Learning Curve Meeting a Materials Floor",
+    "context": "Unit cost on a new assembly line follows the learning curve $c(N)=c_1 N^{-b}$, where $N>0$ is cumulative output. Every doubling of cumulative output multiplies unit cost by $0.8$, and the first unit cost $1000$. Materials alone cost $400$ per unit, so the curve cannot describe costs below that floor. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "After three successive doublings, the modelled unit cost is $512$, a total cut of $48.8\\%$ from the first unit.",
+      "The exponent of the learning curve is $-0.8$.",
+      "After $8$ units the unit cost is $500$.",
+      "The materials floor binds from about $12$ units onwards.",
+      "Quadrupling cumulative output halves the unit cost."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 27
+  },
+  {
+    "id": "math-8-28",
+    "case_id": "MATH 8.28",
+    "title": "Advertising Revenue Against a Proportional Platform Fee",
+    "context": "A merchant's sales revenue from an advertising spend $x>0$ follows $R(x)=90 x^{0.5}$, while the platform charges a fee of $F(x)=6x$ on the same spend. The merchant judges a campaign by the net gain $R(x)-F(x)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The net gain is zero at a spend of $225$.",
+      "The net gain is positive at every spend above $225$.",
+      "Doubling the spend doubles revenue.",
+      "At a spend of $100$ the net gain is $300$.",
+      "Revenue per unit of spend rises as the spend rises."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 28
+  },
+  {
+    "id": "math-8-29",
+    "case_id": "MATH 8.29",
+    "title": "Calibrating a Two-Stage Production Chain",
+    "context": "A plant runs two stages. Labour $L>0$ hours yields processed material $m(L)=A L^{0.5}$ tonnes, and material is converted into finished goods by $g(m)=B m^{1.5}$ units. Two records are available: $100$ labour hours yielded $40$ tonnes of material, and a run on $9$ tonnes of material produced $54$ finished units. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The material stage is $m(L)=4L^{0.5}$.",
+      "Finished output as a function of labour is $g(L)=16L^{0.75}$.",
+      "Doubling labour hours raises finished output by about $68\\%$.",
+      "Producing $432$ finished units requires $81$ labour hours.",
+      "Finished output per labour hour falls as labour rises."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 29
+  },
+  {
+    "id": "math-8-30",
+    "case_id": "MATH 8.30",
+    "title": "Calibrated Demand, Derived Revenue, and a Fixed Charge",
+    "context": "A niche publisher faces demand $q(p)=A p^{-1.5}$ copies per month at a price $p>0$, and a price of $4$ sells $250$ copies. Revenue is $R=pq$, and the operation carries a fixed monthly charge of $400$ with no other costs. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Revenue falls as the price rises.",
+      "Revenue is a power function of price with exponent $-0.5$.",
+      "At a price of $25$, monthly revenue is $400$.",
+      "The fixed charge is covered only at prices below $16$.",
+      "Doubling the price halves revenue."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 30
+  },
+  {
+    "id": "math-8-31",
+    "case_id": "MATH 8.31",
+    "title": "Packing Output Recovered From a Shift Extension",
+    "context": "A packing station's output follows $N(h)=A h^{0.5}$ items, where $h>0$ is the length of the shift in hours. The shift log never records the coefficient: it notes only that extending a shift from $4$ to $9$ hours added exactly $30$ items to the count. A customer order of $150$ items has to be filled inside a single shift. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the packing law is $30$.",
+      "A nine-hour shift packs $135$ items.",
+      "Doubling the shift length doubles the number of items packed.",
+      "The $150$-item order can be filled inside a $20$-hour shift.",
+      "Items packed per hour rises as the shift lengthens."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 31
+  },
+  {
+    "id": "math-8-32",
+    "case_id": "MATH 8.32",
+    "title": "Drag and Absorbed Power on a Wind-Tunnel Rig",
+    "context": "Aerodynamic drag on a test rig follows $F(v)=A v^{r}$ newtons, where $v>0$ is the airspeed in metres per second; neither constant is supplied by the manufacturer. Two wind-tunnel runs are on file: $160$ N at $20$ m/s and $640$ N at $40$ m/s. The rig also reports the power absorbed, $P=F\\cdot v$ watts, and its mounting is rated to $1000$ N. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The drag law is $F(v)=0.4v^{2}$.",
+      "The mounting's $1000$ N rating is first reached at a speed above $55$ m/s.",
+      "The absorbed power is a power function of speed with exponent $3$.",
+      "Doubling the airspeed doubles the absorbed power.",
+      "At $50$ m/s the rig absorbs $25$ kW."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 32
+  },
+  {
+    "id": "math-8-33",
+    "case_id": "MATH 8.33",
+    "title": "Inelastic Demand and Where Revenue Goes",
+    "context": "A regional utility faces demand $q(p)=A p^{-0.5}$ units per month at a price $p>0$, and a price of $16$ sells $300$ units. The board wants to know how revenue $R=pq$ behaves along this curve. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Revenue rises as the price rises.",
+      "Raising price by $44\\%$ cuts quantity by exactly $20\\%$.",
+      "To reduce monthly quantity to $200$ units, the price must rise to $40$.",
+      "Quadrupling the price cuts quantity to a quarter.",
+      "Revenue does not depend on the price."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 33
+  },
+  {
+    "id": "math-8-34",
+    "case_id": "MATH 8.34",
+    "title": "Kiln Output Under a Licensed Ceiling",
+    "context": "A kiln's daily output follows $y(x)=A x^{\\frac{4}{3}}$ tonnes, where $x>0$ is the fuel feed in cubic metres. A test firing at a feed of $27$ produced $324$ tonnes. The site licence caps daily output at $1024$ tonnes. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the output law is $4$.",
+      "The licensed ceiling of $1024$ tonnes is reached at a feed of $64$.",
+      "A fuel feed of $32$ produces half of the licensed output ceiling.",
+      "A feed of $8$ produces $32$ tonnes.",
+      "Increasing fuel feed from $27$ to $54$ raises output by about $125\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 34
+  },
+  {
+    "id": "math-8-35",
+    "case_id": "MATH 8.35",
+    "title": "A Pair of Power Functions That Undo Each Other",
+    "context": "A calibration stage converts a raw reading $x>0$ into an index by $f(x)=9x^{\\frac{2}{3}}$, and a reporting stage converts an index $y>0$ back into raw units by $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$. The lab wants to know what happens when the two stages are applied one after the other. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Applying the reporting stage to the calibration stage returns the original reading.",
+      "The composition of the two stages is a power function with exponent $1$.",
+      "Starting with a raw reading of $125$, the two stages produce index $225$ and then return raw reading $125$.",
+      "For a raw input of $50$, applying both stages returns a value $8\\%$ above the input.",
+      "Applying the stages in the other order gives something other than the original input."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 35
+  },
+  {
+    "id": "math-8-36",
+    "case_id": "MATH 8.36",
+    "title": "Two Ranking Algorithms That Swap Places",
+    "context": "Two ranking algorithms are scored against a query load $x>0$. Algorithm S obeys $S(x)=a x^{0.5}$, and a benchmark at load $4$ scored $16$. Algorithm T's score is proportional to $x^{1.5}$, and the same benchmark load scored $8$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two algorithms score equally at a load of $8$.",
+      "The two algorithms score equally at two different positive loads.",
+      "Algorithm S scores higher at every load above the crossing point.",
+      "At a load of $4$ the two algorithms score equally.",
+      "The ratio of the two scores is the same at every load."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 36
+  },
+  {
+    "id": "math-8-37",
+    "case_id": "MATH 8.37",
+    "title": "Server Fleet Capacity Beneath a Contracted Ceiling",
+    "context": "A hosting platform's sustained capacity follows $C(m)=A m^{0.8}$ requests per second, where $m>0$ is the number of machines. A fleet of $32$ machines sustains $80$ requests per second. The support contract will not certify more than $500$ requests per second. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The capacity ratio $\\frac{C(64)}{C(32)}$ is less than $2$.",
+      "Doubling the fleet raises capacity by about $74\\%$.",
+      "The contracted ceiling of $500$ binds from about $250$ machines.",
+      "A fleet of $243$ machines sustains $486$ requests per second.",
+      "Doubling the fleet from $32$ to $64$ machines cuts capacity per machine by less than $10\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 37
+  },
+  {
+    "id": "math-8-38",
+    "case_id": "MATH 8.38",
+    "title": "Hiring Against a Square-Root Revenue Curve",
+    "context": "A seasonal workshop earns revenue $R(L)=120 L^{0.5}$ from $L>0$ hours of hired labour and pays a wage of $6$ per hour. The owner judges a season by the net gain $R(L)-6L$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The net gain is zero at $400$ hours.",
+      "At $100$ hours the net gain is $600$.",
+      "At $900$ hours the net gain is negative.",
+      "The net gain rises throughout the range from $0$ to $400$ hours.",
+      "Revenue per hour of labour is the same at every staffing level."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 38
+  },
+  {
+    "id": "math-8-39",
+    "case_id": "MATH 8.39",
+    "title": "Splitting an Order Between Two Quadratic-Cost Plants",
+    "context": "A firm must produce $60$ units in total and can split them between two plants. Plant 1's cost is $C_1(q)=0.5q^{2}$ and plant 2's cost is $C_2(q)=0.25q^{2}$, where $q$ is that plant's own output. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Concentrating all $60$ units in the cheaper plant costs $900$.",
+      "An even split between the plants costs less than a $20$–$40$ split.",
+      "Doubling a plant's output doubles that plant's cost.",
+      "The $20$–$40$ split costs $650$.",
+      "Plant 2's cost per unit does not depend on how much it produces."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 39
+  },
+  {
+    "id": "math-8-40",
+    "case_id": "MATH 8.40",
+    "title": "Testing Whether Field Data Fit One Power Law",
+    "context": "A laboratory records four measurements of a response $y$ against an input $x$: $(4,\\,24)$, $(16,\\,192)$, $(9,\\,81)$ and a planned run at $x=25$. An analyst fits a power law $y=Ax^{r}$ using the first two measurements only. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The first two measurements are consistent with a power law of exponent $1.5$.",
+      "The fitted coefficient is $3$.",
+      "The measurement at $x=9$ contradicts the fitted law.",
+      "The fitted law predicts $y=300$ at $x=25$.",
+      "The same two measurements would fit an exponent of $2$ equally well."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 40
+  },
+  {
+    "id": "math-8-41",
+    "case_id": "MATH 8.41",
+    "title": "Turning a Negative-Power Demand Curve Around",
+    "context": "A component supplier faces demand $q(p)=A p^{-2}$ units, where $p>0$ is the price. At a price of $5$ the supplier sells $100$ units. Procurement wants the relationship written the other way round, with price and revenue expressed as functions of the quantity sold. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The inverse demand curve is $p=50q^{-0.5}$.",
+      "Revenue expressed through quantity is $R=50q^{0.5}$.",
+      "Doubling the quantity sold raises revenue by about $41.4\\%$.",
+      "When the curve sells $25$ units, revenue is $300$.",
+      "The price elasticity of demand is $-0.5$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 41
+  },
+  {
+    "id": "math-8-42",
+    "case_id": "MATH 8.42",
+    "title": "Average Product of a Square-Root Technology",
+    "context": "A workshop's output follows $Y(L)=A L^{0.5}$ units, where $L>0$ is labour hours. Increasing labour from $25$ to $100$ hours increased output by exactly $60$ units. Management tracks average product $\\frac{Y}{L}$ and compares output with a linear wage benchmark $W(L)=0.75L$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The output law is $Y(L)=12\\sqrt{L}$.",
+      "At $64$ hours, output exceeds the linear wage benchmark by $48$ units.",
+      "At $225$ hours, average product is $0.8$ unit per labour hour.",
+      "Producing $180$ units requires $225$ labour hours.",
+      "Multiplying labour hours by $2.25$ multiplies output by $1.5$ and average product by $\\frac{2}{3}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 42
+  },
+  {
+    "id": "math-8-43",
+    "case_id": "MATH 8.43",
+    "title": "Two Break-Even Points Around a Fixed Charge",
+    "context": "A contract manufacturer earns $R(q)=60 q^{0.5}$ from an output of $q>0$ units, pays a variable cost of $2q$, and carries a fixed charge of $400$ per period. Profit is $\\Pi(q)=60q^{0.5}-2q-400$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The operation breaks even at two output levels, $100$ and $400$ units.",
+      "Profit is positive at an output of $25$ units.",
+      "Profit is positive at an output of $500$ units.",
+      "Profit rises throughout the range where it is positive.",
+      "Revenue is proportional to output."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 43
+  },
+  {
+    "id": "math-8-44",
+    "case_id": "MATH 8.44",
+    "title": "A Benefit and a Cost With Different Exponents",
+    "context": "A city values a flood-defence programme of scale $x>0$ by the benefit $B(x)=40 x^{0.5}$ and the cost $C(x)=0.5 x^{1.5}$, both in millions. The net benefit is $B(x)-C(x)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Benefit and cost are equal at scale $x=80$.",
+      "Beyond that scale the cost exceeds the benefit.",
+      "The net benefit is largest at scale $x=80$.",
+      "Doubling the scale doubles both the benefit and the cost.",
+      "At scale $x=16$ the cost already exceeds the benefit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 44
+  },
+  {
+    "id": "math-8-45",
+    "case_id": "MATH 8.45",
+    "title": "Furnace Throughput Calibrated From Two Runs",
+    "context": "A furnace's throughput follows $T(g)=A g^{r}$ tonnes per hour, where $g>0$ is the gas feed in cubic metres per hour. Two logged runs are available: a feed of $8$ gave $20$ tonnes per hour, and a feed of $27$ gave $45$. The site licence caps throughput at $80$ tonnes per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent of the throughput law is $\\frac{2}{3}$.",
+      "The coefficient of the throughput law is $5$.",
+      "The licensed ceiling of $80$ tonnes per hour is reached at a gas feed of $64$.",
+      "Doubling the gas feed doubles throughput.",
+      "Throughput per cubic metre of gas rises as the feed rises."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 45
+  },
+  {
+    "id": "math-8-46",
+    "case_id": "MATH 8.46",
+    "title": "Rainwater Basin Storage Under a Square Law",
+    "context": "A tapered rainwater basin stores $V(d)=A d^{2}$ cubic metres when filled to a depth of $d>0$ metres. A survey at a depth of $4$ metres measured $48$ cubic metres in store. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the storage law is $3$.",
+      "At a depth of $10$ metres the basin holds $300$ cubic metres.",
+      "The volume added from depth $7$ to $9$ metres is exactly $\\frac{4}{3}$ times the volume added from $5$ to $7$ metres.",
+      "A stored volume of $675$ cubic metres corresponds to a depth of $15$ metres.",
+      "Stored volume per metre of depth rises as the basin fills."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 46
+  },
+  {
+    "id": "math-8-47",
+    "case_id": "MATH 8.47",
+    "title": "A Braking-Energy Index Recovered From a Speed Change",
+    "context": "A fleet safety report scores braking energy by the index $E(v)=A v^{2}$, where $v>0$ is speed in kilometres per hour. The report does not give $A$ directly: it states only that raising the test speed from $40$ to $60$ km/h raised the index by exactly $100$ points. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the index is $0.05$.",
+      "At $60$ km/h the index reads $180$.",
+      "Raising speed from $72$ to $90$ km/h raises the index by exactly $56.25\\%$.",
+      "The index reaches $500$ at a speed of $100$ km/h.",
+      "An index reading of $320$ corresponds to a speed of $80$ km/h."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 47
+  },
+  {
+    "id": "math-8-48",
+    "case_id": "MATH 8.48",
+    "title": "Geometrically Similar Silos: Steel Against Capacity",
+    "context": "A supplier builds geometrically similar storage silos. The steel skin scales with the square of the height, $S(h)=a h^{2}$ square metres, while capacity scales with the cube, $V(h)=k h^{3}$ cubic metres. A six-metre silo uses $108$ square metres of steel and holds $72$ cubic metres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "A silo with capacity $192$ cubic metres needs about $208$ square metres of steel.",
+      "Steel use first exceeds $200$ square metres once height exceeds about $8.16$ metres.",
+      "Increasing silo height by $50\\%$ raises steel use by $125\\%$.",
+      "Steel per cubic metre of capacity falls as the silo gets taller.",
+      "Doubling the height doubles the steel requirement."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 48
+  },
+  {
+    "id": "math-8-49",
+    "case_id": "MATH 8.49",
+    "title": "Inspection Hours Across Growing Shipment Volumes",
+    "context": "Customs inspection time follows $T(n)=A n^{0.5}$ hours for a consignment of $n>0$ shipments. Moving from a $25$-shipment consignment to a $225$-shipment consignment added exactly $60$ inspection hours. A staffing plan can supply at most $90$ inspection hours. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The inspection law is $T(n)=6\\sqrt{n}$.",
+      "The $90$-hour staffing ceiling can cover at most $225$ shipments.",
+      "Multiplying a consignment size by $2.25$ multiplies total inspection time by $1.5$.",
+      "At $144$ shipments, time per shipment is $0.5$ hour.",
+      "Total inspection time is proportional to the number of shipments."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 49
+  },
+  {
+    "id": "math-8-50",
+    "case_id": "MATH 8.50",
+    "title": "Illuminance Down the Length of a Gallery",
+    "context": "Illuminance from a gallery spotlight follows the inverse-square law $I(d)=A d^{-2}$ lux, where $d>0$ is the distance in metres. A meter reading two metres from the lamp records $300$ lux. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At four metres the illuminance is $75$ lux.",
+      "Doubling the distance cuts the illuminance to a quarter.",
+      "Illuminance is one ninth of its two-metre reading at a distance of $6$ metres.",
+      "Halving the distance quadruples the illuminance.",
+      "Illuminance falls as the distance from the lamp grows."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 50
+  },
+  {
+    "id": "math-8-51",
+    "case_id": "MATH 8.51",
+    "title": "Audit Cost With Economies of Scale",
+    "context": "An audit practice prices engagements by $C(n)=A n^{0.75}$, where $n>0$ is the number of accounts tested. The bill rises by exactly $1900$ when engagement size rises from $16$ to $81$ accounts. A client has a $2700$ cap, while a rival quotes $R(n)=50n$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The pricing law is $C(n)=100n^{0.75}$.",
+      "The $2700$ cap covers at most $81$ accounts under the practice's schedule.",
+      "The two firms tie at $16$ accounts, and the practice is cheaper than the rival for every $n>16$.",
+      "A bill of $12500$ corresponds to an engagement of $625$ accounts.",
+      "Doubling the number of accounts raises the practice's bill by exactly $75\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 51
+  },
+  {
+    "id": "math-8-52",
+    "case_id": "MATH 8.52",
+    "title": "Airborne Particle Concentration Downwind",
+    "context": "Downwind particle concentration follows $c(x)=A x^{-1.5}$ micrograms per cubic metre, where $x>0$ is distance from the stack in metres. A monitor at $4$ metres reads exactly $43.75$ more than a monitor at $16$ metres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The concentration law is $c(x)=400x^{-1.5}$.",
+      "Concentration is at most $6.25$ precisely when the monitor is at least $16$ metres from the stack.",
+      "Halving the distance multiplies concentration by exactly $2^{1.5}=2\\sqrt{2}$.",
+      "At $100$ metres, concentration is $0.4$ microgram per cubic metre.",
+      "Doubling the distance cuts concentration by exactly $50\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 52
+  },
+  {
+    "id": "math-8-53",
+    "case_id": "MATH 8.53",
+    "title": "Storm Surge Feeding a Cubic Loss Index",
+    "context": "A reinsurer models coastal losses in two stages. Storm surge height is $s(w)=0.5 w^{0.5}$ metres for a wind speed of $w>0$, and the loss index rises with the cube of surge height, $L(s)=32 s^{3}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The composed loss index is $L(w)=4w^{1.5}$.",
+      "Doubling the wind speed multiplies the loss index by about $2.83$.",
+      "The loss index reaches $1000$ at a wind speed of about $39.7$.",
+      "At a wind speed of $64$, the loss index is $2048$.",
+      "Increasing wind speed by $50\\%$ raises the loss index by about $83.7\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 53
+  },
+  {
+    "id": "math-8-54",
+    "case_id": "MATH 8.54",
+    "title": "Market Impact of a Block Trade",
+    "context": "A broker models price impact as $I(v)=A v^{0.5}$ basis points, where $v>0$ is order size as a fraction of average daily volume. Increasing an order from $0.04$ ADV to $0.09$ ADV adds exactly $6$ basis points of impact. The scaled impact charge is $vI(v)$, while a notional fee is $F(v)=30v$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The impact law is $I(v)=60\\sqrt{v}$.",
+      "Increasing order size from $0.04$ to $0.09$ ADV multiplies impact by $1.5$.",
+      "The notional fee and scaled impact charge break even at $v=0.25$ ADV, with impact charge lower below that size.",
+      "At $v=0.16$ ADV, impact is $24$ basis points and the scaled impact charge is $3.84$.",
+      "The scaled impact charge is proportional to order size."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 54
+  },
+  {
+    "id": "math-8-55",
+    "case_id": "MATH 8.55",
+    "title": "Allometric Energy Use Across Livestock Weights",
+    "context": "Daily energy use follows $E(m)=A m^{\\frac{2}{3}}$ units for body mass $m>0$ kilograms. A $64$ kg animal uses exactly $70$ more energy units per day than a $27$ kg animal. A herd's total use is the sum of its animals' individual uses. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The energy law is $E(m)=10m^{\\frac{2}{3}}$.",
+      "Doubling body mass multiplies energy use by exactly $2^{\\frac{2}{3}}=\\sqrt[3]{4}$.",
+      "Eight $27$ kg animals use twice as much total energy as one $216$ kg animal.",
+      "Combining two equal animals into one animal of twice the mass leaves total energy use unchanged.",
+      "Energy use per kilogram is constant across body masses."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 55
+  },
+  {
+    "id": "math-8-56",
+    "case_id": "MATH 8.56",
+    "title": "Retail Catchment Under a Distance-Decay Law",
+    "context": "Weekly footfall at a retail park from a residential zone follows $f(d)=A d^{-1.5}$ visitors, where $d>0$ is the driving distance in kilometres. The planning file omits the coefficient: it records only that a zone $4$ kilometres away supplies $350$ more visitors a week than a zone $16$ kilometres away. A zone counts as core catchment when it supplies at least $100$ visitors a week. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the footfall law is $3200$.",
+      "The zone four kilometres away supplies $400$ visitors a week.",
+      "Quadrupling the driving distance cuts footfall to one eighth.",
+      "The core-catchment boundary lies just beyond $10$ kilometres.",
+      "A zone nine kilometres away falls outside the core catchment."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 56
+  },
+  {
+    "id": "math-8-57",
+    "case_id": "MATH 8.57",
+    "title": "Rooftop Solar Output Across Two Installed Arrays",
+    "context": "Daily output from a rooftop solar installation follows $y(a)=A a^{r}$ kilowatt-hours, where $a>0$ is the installed panel area in square metres. Two arrays are in service: a $100$ m² array delivers $240$ kWh a day, and a $225$ m² array delivers $360$ kWh. A proposal would expand the second array to $450$ m². Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Output is proportional to the installed area.",
+      "The exponent is $0.5$ and the coefficient is $24$.",
+      "Doubling the installed area raises output by about $50\\%$.",
+      "Expanding the $225$ m² array to $450$ m² would push output above $520$ kWh.",
+      "Output per square metre rises as the array grows."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 57
+  },
+  {
+    "id": "math-8-58",
+    "case_id": "MATH 8.58",
+    "title": "Battery Cell Costs Down a Learning Curve",
+    "context": "Unit cost for battery cells follows $c(N)=A N^{b}$ euros, where $N>0$ is cumulative output in thousands of cells. Two milestones are recorded: at $100$ thousand cells the unit cost was $80$, and at $400$ thousand it was $40$. Cumulative spend is unit cost multiplied by volume. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent of the learning curve is $-0.5$.",
+      "Quadrupling cumulative volume halves the unit cost.",
+      "Unit cost falls below $20$ only beyond $1600$ thousand cells.",
+      "Cumulative spend grows with the square root of volume.",
+      "Doubling cumulative volume halves the unit cost."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 58
+  },
+  {
+    "id": "math-8-59",
+    "case_id": "MATH 8.59",
+    "title": "Sediment Transport Driven by Channel Discharge",
+    "context": "Sediment transport in a channel follows $S(v)=A v^{3}$ tonnes per day, where $v>0$ is flow velocity, and a gauged run at $v=3$ carried $135$ tonnes per day. Velocity itself depends on discharge through $v(q)=\\frac{q^{0.5}}{2}$. The channel's stability limit is $5000$ tonnes per day. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Sediment transport as a function of discharge is $0.625q^{1.5}$.",
+      "The stability limit of $5000$ tonnes per day is reached at a discharge of $400$.",
+      "Doubling the discharge multiplies transport by about $2.83$.",
+      "Doubling the flow velocity doubles sediment transport.",
+      "Transport per unit of discharge is the same at every discharge."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 59
+  },
+  {
+    "id": "math-8-60",
+    "case_id": "MATH 8.60",
+    "title": "Highly Elastic Demand Under a Price Indexation",
+    "context": "A commodity trader faces demand $q(p)=A p^{-3}$ units at a price $p>0$, and a price of $2$ clears $500$ units. A proposed indexation would raise the price by $10\\%$ across the board, and the trader wants the effect on both volume and revenue $R=pq$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Raising price by $20\\%$ cuts quantity by about $42.1\\%$.",
+      "Revenue is a power function of price with exponent $-2$.",
+      "At a price of $2.50$, revenue is $640$.",
+      "A price rise of $10\\%$ cuts quantity by about $25\\%$.",
+      "A price rise of $10\\%$ cuts revenue by about $17\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 60
+  },
+  {
+    "id": "math-8-61",
+    "case_id": "MATH 8.61",
+    "title": "Weld Strength Recovered From Two Spot Checks",
+    "context": "A production weld's tensile strength follows $S(p)=A p^{k}$ newtons, where $p>0$ is the welding current in amperes. Neither constant is on the calibration sheet: the sheet only records that a $4$ A setting produced $40$ N of strength and a $9$ A setting produced $135$ N. The line rejects any weld below $400$ N. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The recovered strength law is $S(p)=5p^{\\frac{3}{2}}$.",
+      "At $16$ A the weld strength is $320$ N.",
+      "The smallest current that clears the $400$ N reject line is below $18$ A.",
+      "Doubling any current multiplies strength by less than $2.5$.",
+      "A $100$ A setting yields exactly $4000$ N of strength."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 61
+  },
+  {
+    "id": "math-8-62",
+    "case_id": "MATH 8.62",
+    "title": "Mooring Holding Power Across Kilograms and Tonnes",
+    "context": "A harbour buoy's holding power follows $H(m)=A m^{\\frac{2}{3}}$ kilonewtons when mass $m>0$ is measured in kilograms. A trial buoy of $8$ kg held exactly $24$ kN. The harbour authority prefers masses in tonnes ($1$ tonne $=1000$ kg) and writes the same physical law as $H(t)=B t^{\\frac{2}{3}}$ with $t$ in tonnes. A storm protocol demands at least $150$ kN of holding power. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "In kilogram units the holding-power law is $H(m)=6m^{\\frac{2}{3}}$.",
+      "In tonne units the coefficient is $B=600$, so $H(t)=600t^{\\frac{2}{3}}$.",
+      "Reaching $150$ kN requires a mass of exactly $125$ kg.",
+      "Doubling buoy mass multiplies holding power by $2^{\\frac{2}{3}}\\approx1.587$.",
+      "Writing the tonne-form coefficient as $B=6000$ still reproduces the $8$ kg trial."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 62
+  },
+  {
+    "id": "math-8-63",
+    "case_id": "MATH 8.63",
+    "title": "Mesh Throughput Against an Inverse-Square Floor",
+    "context": "A wireless mesh's sustained throughput follows $T(d)=A d^{-2}$ megabits per second, where $d>0$ is the hop distance in metres. A bench test at $d=4$ m recorded $T=50$ Mbps. The link is rated reliable only while throughput stays at or above $8$ Mbps. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The recovered throughput law is $T(d)=800d^{-2}$.",
+      "The farthest reliable hop distance is exactly $10$ m.",
+      "At $d=25$ m the throughput is $1.28$ Mbps.",
+      "A hop of $11$ m still clears the $8$ Mbps reliability floor.",
+      "Tripling the transmitter coefficient would extend the reliable radius to $30$ m."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 63
+  },
+  {
+    "id": "math-8-64",
+    "case_id": "MATH 8.64",
+    "title": "Allometric Gill Area Across Body Masses",
+    "context": "A fish physiologist models gill surface area as $G(m)=A m^{\\frac{3}{4}}$ square centimetres for body mass $m>0$ grams. A $256$ g specimen has gill area $512$ cm$^{2}$. Area per gram is the derived intensity $\\frac{G(m)}{m}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The recovered gill-area law is $G(m)=8m^{\\frac{3}{4}}$.",
+      "Gill area per gram is constant across body masses.",
+      "Two $16$ g fish together have the same total gill area as one $32$ g fish.",
+      "The mass that produces $216$ cm$^{2}$ of gill area is $64$ g.",
+      "At $m=16$ g the intensity $\\frac{G(m)}{m}$ equals $8$ cm$^{2}$ per gram."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 64
+  },
+  {
+    "id": "math-8-65",
+    "case_id": "MATH 8.65",
+    "title": "Curing Strength From a Timed Gap Between Samples",
+    "context": "A concrete lab models early curing strength as $S(t)=A\\sqrt{t}$ megapascals, where $t>0$ is curing time in days. The log never states $A$: it only notes that strength rose by exactly $5$ MPa between day $4$ and day $9$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The recovered curing law is $S(t)=5\\sqrt{t}$.",
+      "Strength on day $4$ is $10$ MPa and on day $9$ is $15$ MPa.",
+      "Quadrupling curing time exactly doubles strength.",
+      "Reaching $30$ MPa requires exactly $36$ days of curing.",
+      "Moving from day $4$ to day $9$ raises strength by $50\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 65
+  },
+  {
+    "id": "math-8-66",
+    "case_id": "MATH 8.66",
+    "title": "Cantilever Deflection Checked Against a Third Span",
+    "context": "A materials lab models tip deflection of a cantilever as $y(L)=A L^{k}$ millimetres, where $L>0$ is the free span in metres. Two spans are trusted: $y(3)=18$ and $y(6)=72$. A third run recorded $y(9)=150$, and the question is whether that third point still sits on the same power law. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two trusted spans recover the law $y(L)=2L^{2}$.",
+      "The quadratic model predicts $y(9)=162$, so the recorded $150$ undershoots by $12$ mm.",
+      "Rescaling the coefficient to force $y(9)=150$ leaves $y(3)=18$ unchanged.",
+      "The two-point exponent fitted to $(3,18)$ and $(9,150)$ is still exactly $2$.",
+      "Under $y(L)=2L^{2}$, doubling any span multiplies deflection by $3$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 66
+  },
+  {
+    "id": "math-8-67",
+    "case_id": "MATH 8.67",
+    "title": "Mast Steel Mass Under a Finite Percentage Scale-Up",
+    "context": "A self-similar mast's steel mass follows $M(h)=A h^{k}$ kilograms, where $h>0$ is mast height in metres. Design notes state that lengthening any mast by $20\\%$ raises steel mass by $72.8\\%$, and a $10$ m reference mast uses exactly $500$ kg of steel. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The recovered mass law is $M(h)=0.5\\,h^{3}$.",
+      "A $12$ m mast uses $864$ kg of steel.",
+      "Tripling height multiplies steel mass by $27$.",
+      "A $10\\%$ height increase raises mass by exactly $33.1\\%$.",
+      "The percentage rule alone forces the coefficient $A$ without using the $10$ m reference."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 67
+  },
+  {
+    "id": "math-8-68",
+    "case_id": "MATH 8.68",
+    "title": "Cooling Fan Noise Against a Night-Time Cap",
+    "context": "Acoustic intensity from a cooling fan follows $I(d)=A d^{-2}$ watts per square metre, where $d>0$ is distance from the hub in metres. A meter reading at $2$ metres records $0.72$ W/m². Night operations are capped at $0.08$ W/m². Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The intensity law is $I(d)=1.44 d^{-2}$.",
+      "At $6$ metres the intensity is still above the $0.08$ W/m² night cap.",
+      "Doubling the distance cuts intensity to one quarter.",
+      "Moving from $2$ to $3$ metres cuts intensity by exactly $0.50$ W/m².",
+      "Intensity per metre of distance is the same at every distance."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 68
+  },
+  {
+    "id": "math-8-69",
+    "case_id": "MATH 8.69",
+    "title": "Pump Head Composed Through a Square Flow Law",
+    "context": "A booster pump's differential head follows $H(q)=A q^{2}$ metres when the delivered flow is $q>0$ cubic metres per hour. A commissioning run at $q=5$ recorded $H=50$ m. The plant then pipes that flow through a nozzle whose jet speed is $v(H)=4\\sqrt{H}$ metres per second, so jet speed as a function of flow is the composition $v(q)=v(H(q))$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The head law is $H(q)=2q^{2}$, and the composed jet-speed law is $v(q)=4\\sqrt{2}\\,q$.",
+      "At $q=5$ the jet speed is $20\\sqrt{2}$ m/s.",
+      "Doubling the flow doubles the jet speed.",
+      "A jet speed of $40\\sqrt{2}$ m/s requires flow $20$ m³/h.",
+      "Head is proportional to jet speed."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 69
+  },
+  {
+    "id": "math-8-70",
+    "case_id": "MATH 8.70",
+    "title": "Warehouse Forklift Throughput Under a Staffing Cap",
+    "context": "Forklift throughput follows $T(s)=A s^{0.5}$ pallets per hour, where $s>0$ is the number of drivers on shift. A logged shift with $16$ drivers moved $80$ pallets per hour. Safety rules cap the shift at $36$ drivers. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The throughput law is $T(s)=20\\sqrt{s}$.",
+      "With $36$ drivers the model predicts $120$ pallets per hour.",
+      "Quadrupling the crew doubles throughput.",
+      "Reaching $100$ pallets per hour requires $25$ drivers.",
+      "The safety cap therefore allows at most $120$ pallets per hour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 70
+  },
+  {
+    "id": "math-8-71",
+    "case_id": "MATH 8.71",
+    "title": "Subscriber Demand and Revenue for a Streaming Tier",
+    "context": "A streaming service prices one subscription tier at $p$ euros per month and models paid subscribers by $q(p)=Ap^{\\frac{-3}{2}}$, measured in thousands. At the current price of $4$ the tier holds $250$ thousand subscribers. Monthly revenue for the tier is $R=pq$, also measured in thousands of euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient in the demand model is $A=2000$.",
+      "Doubling the subscription price halves the number of subscribers.",
+      "At a price of $16$, monthly revenue for the tier is $500$.",
+      "Revenue is a power function of price with exponent $\\frac{-1}{2}$.",
+      "Raising the price by $21\\%$ reduces revenue by about $21\\%$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 71
+  },
+  {
+    "id": "math-8-72",
+    "case_id": "MATH 8.72",
+    "title": "Fixed Retainer Plus a Square-Root Monitoring Fee",
+    "context": "A compliance-monitoring platform bills a client $C(n)=400+30n^{\\frac{1}{2}}$ euros per month, where $n\\ge1$ is the number of branches under monitoring. The first term is a fixed retainer and the second term is the variable monitoring charge. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Monitoring $100$ branches costs $700$ euros per month.",
+      "At $n=400$ the variable monitoring charge is $600$ euros.",
+      "Raising the branch count from $100$ to $400$ doubles the variable monitoring charge.",
+      "At $n=100$ the average monthly cost per branch is $7$ euros.",
+      "Monitoring $900$ branches costs $1300$ euros per month."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 72
+  },
+  {
+    "id": "math-8-73",
+    "case_id": "MATH 8.73",
+    "title": "Ordering Cost Against Holding Cost at a Spare-Parts Depot",
+    "context": "A spare-parts depot reorders one component in batches of $q>0$ units. Annual ordering cost is $O(q)=4800q^{-1}$ euros and annual holding cost is $H(q)=3q$ euros, so the annual total is $T(q)=4800q^{-1}+3q$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two cost components are equal at $q=40$, where each equals $120$ euros.",
+      "Annual total cost is minimized at $q=60$.",
+      "Doubling the batch size from $40$ to $80$ leaves the annual total unchanged.",
+      "Cutting the batch size from $40$ to $20$ raises the annual total by exactly as much as raising it from $40$ to $80$.",
+      "Ordering cost exceeds holding cost for every batch size above $40$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 73
+  },
+  {
+    "id": "math-8-74",
+    "case_id": "MATH 8.74",
+    "title": "Average Product on a Bottling Line",
+    "context": "Output on a bottling line is modelled by $Q(L)=12L^{\\frac{3}{4}}$ units per shift, where $L>0$ is the number of labour hours booked for that shift. Average product is output per labour hour, $\\frac{Q(L)}{L}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Average product is a power function of $L$ with exponent $\\frac{3}{4}$.",
+      "At $L=16$ output is $96$ units and average product is $8$ units per hour.",
+      "Doubling labour hours doubles average product.",
+      "Average product falls as labour hours rise.",
+      "At $L=81$ average product is $6$ units per hour."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 74
+  },
+  {
+    "id": "math-8-75",
+    "case_id": "MATH 8.75",
+    "title": "Learning Curve With an Irreducible Assembly Floor",
+    "context": "A drone-assembly cell models the labour time of the unit built after $n$ cumulative units by $t(n)=8+50n^{\\frac{-1}{2}}$ minutes, where $n\\ge1$. The constant $8$ is an irreducible handling floor and the second term is the learning component. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At $n=25$ the modelled unit time is $18$ minutes.",
+      "As $n$ grows without bound the modelled unit time approaches $8$ minutes without ever reaching it.",
+      "Raising cumulative output from $25$ to $100$ halves the learning component.",
+      "Raising cumulative output from $25$ to $100$ halves the modelled unit time.",
+      "Modelled unit time first falls below $10$ minutes once cumulative output passes $625$ units."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 75
+  },
+  {
+    "id": "math-8-76",
+    "case_id": "MATH 8.76",
+    "title": "Break-Even for a Fish Farm With Diminishing Harvest Returns",
+    "context": "A fish farm turns feed into harvest revenue $R(x)=90x^{\\frac{2}{3}}$ thousand euros in a season, where $x>0$ is tonnes of feed used, while feed and handling cost $C(x)=30x$ thousand euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Revenue equals cost at $x=27$.",
+      "At $x=8$ the season runs at a loss.",
+      "Revenue is proportional to the tonnes of feed used.",
+      "For every $x>27$ the season's cost exceeds its revenue.",
+      "Raising feed from $8$ to $16$ tonnes doubles revenue."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 76
+  },
+  {
+    "id": "math-8-77",
+    "case_id": "MATH 8.77",
+    "title": "Calibrating a Handling-Cost Law From a Cost Difference",
+    "context": "A distribution centre models daily handling cost by $f(x)=Ax^{\\frac{3}{2}}$ euros, where $x>0$ is a pallet-volume index. The individual daily figures were lost, and the only surviving record states that the cost at index $16$ exceeds the cost at index $4$ by $336$ euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient is $A=6$.",
+      "The recovered levels are $f(4)=48$ and $f(16)=384$.",
+      "At index $9$ the modelled handling cost is $162$ euros.",
+      "Multiplying the pallet-volume index by $4$ multiplies handling cost by $8$.",
+      "The difference $f(25)-f(9)$ equals $588$ euros."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 77
+  },
+  {
+    "id": "math-8-78",
+    "case_id": "MATH 8.78",
+    "title": "Inverting a Wastewater Load Model Against a Permit Ceiling",
+    "context": "A dye-house discharges a wastewater load of $W(s)=5s^{\\frac{3}{2}}$ kilograms per day, where $s>0$ is a production scale index. The site permit caps the daily load at $320$ kilograms, and the plant wants the largest scale index it may run. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The largest admissible scale index is $s=16$.",
+      "The load model inverts to $s=(\\frac{W}{5})^{\\frac{2}{3}}$.",
+      "Doubling the permit ceiling to $640$ doubles the admissible scale index.",
+      "At scale index $9$ the daily load is $135$ kilograms.",
+      "If the coefficient rose from $5$ to $10$, the admissible scale index under the same ceiling would be halved."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 78
+  },
+  {
+    "id": "math-8-79",
+    "case_id": "MATH 8.79",
+    "title": "Elasticity Shortcut Against the Exact Change in Parking Demand",
+    "context": "A city parking authority models hourly demand by $q(p)=Ap^{-2}$ occupied spaces, where $p$ is the hourly tariff in euros, and it records $4000$ occupied spaces at a tariff of $3$. Demand of this form has constant elasticity $-2$, so the usual shortcut predicts a percentage change in demand equal to $-2$ times the percentage change in tariff. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Raising the tariff by $25\\%$ cuts hourly demand by exactly $50\\%$.",
+      "The elasticity shortcut understates the true loss caused by a $25\\%$ tariff rise.",
+      "Raising the tariff by $25\\%$ cuts hourly demand by exactly $36\\%$.",
+      "Raising the tariff by $1\\%$ cuts hourly demand by exactly $2\\%$.",
+      "Cutting the tariff by $25\\%$ raises hourly demand by exactly $50\\%$."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 79
+  },
+  {
+    "id": "math-8-80",
+    "case_id": "MATH 8.80",
+    "title": "Geometrically Similar Bells Cast From One Pattern",
+    "context": "A foundry casts geometrically similar bronze bells from a single pattern, so mass follows $M(h)=A h^{3}$ kilograms, where $h>0$ is the bell height in metres. The pattern book omits the coefficient; it records only that a finished bell of height $0.5$ m was weighed at $30$ kg. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The mass law is $M(h)=240h^{3}$.",
+      "Doubling a bell's height multiplies its mass by $8$.",
+      "A bell of height $1.5$ m has a mass of $810$ kg.",
+      "A bell three times as tall as another has three times its mass.",
+      "Halving a bell's height leaves one eighth of the mass."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 80
+  },
+  {
+    "id": "math-8-81",
+    "case_id": "MATH 8.81",
+    "title": "Drag and Sustained Power on a Velodrome",
+    "context": "Aerodynamic drag on a track cyclist follows $F(v)=A v^{2}$ newtons, where $v>0$ is speed in metres per second. The team log never states $A$: it records only that raising the speed from $8$ to $12$ m/s increased drag by exactly $40$ N. The power needed to overcome that drag is $P=Fv$ watts, and the rider can hold $500$ W for a full pursuit. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The drag law is $F(v)=0.5v^{2}$.",
+      "Absorbed power obeys $P(v)=0.5v^{3}$, and the $500$ W ceiling is reached at exactly $10$ m/s.",
+      "At $12$ m/s the rider absorbs $600$ W.",
+      "Riding $25\\%$ faster raises the absorbed power by $75\\%$.",
+      "Power per metre per second of speed is the same at every speed."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 81
+  },
+  {
+    "id": "math-8-82",
+    "case_id": "MATH 8.82",
+    "title": "Signal Attenuation From a Buried Cable Locator",
+    "context": "The signal a locator receives from a buried conductor follows $S(x)=A x^{-3}$ millivolts, where $x>0$ is the burial depth in metres. A calibration run over a conductor buried at $2$ metres read $50$ millivolts. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The attenuation law is $S(x)=400x^{-3}$.",
+      "A conductor buried at $4$ metres returns $25$ millivolts.",
+      "Doubling the burial depth cuts the received signal to one third.",
+      "A reading of $3.2$ millivolts corresponds to a burial depth of $10$ metres.",
+      "The received signal is inversely proportional to burial depth."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 82
+  },
+  {
+    "id": "math-8-83",
+    "case_id": "MATH 8.83",
+    "title": "Oxygen Demand and Gill Area in a Hatchery",
+    "context": "A hatchery models a fish's oxygen demand as $D(m)=A m^{\\frac{3}{4}}$ millilitres per hour and its gill surface area as $G(m)=B m^{\\frac{2}{3}}$ square centimetres, where $m>0$ is body mass in grams. Neither coefficient is published. The records show that an $81$ g fish demands exactly $95$ millilitres per hour more than a $16$ g fish, and that a $64$ g fish carries $48$ square centimetres of gill. A tank's total demand is the sum of its fish's individual demands. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two laws are $D(m)=5m^{\\frac{3}{4}}$ and $G(m)=3m^{\\frac{2}{3}}$.",
+      "Doubling body mass multiplies oxygen demand by $2^{\\frac{3}{4}}$ and gill area by $2^{\\frac{2}{3}}$, so demand per square centimetre of gill rises by the factor $2^{\\frac{1}{12}}$, about $1.059$.",
+      "A $256$ g fish demands $320$ millilitres per hour.",
+      "Oxygen demand per square centimetre of gill is $\\tfrac{5}{3}m^{\\frac{1}{12}}$, which increases with body mass.",
+      "Sixteen $16$ g fish demand exactly twice as much oxygen per hour as one $256$ g fish of the same total mass."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 83
+  },
+  {
+    "id": "math-8-84",
+    "case_id": "MATH 8.84",
+    "title": "Micro-Irrigation Flow Under a Fourth-Power Law",
+    "context": "Volumetric flow through a micro-irrigation emitter follows $Q(r)=A r^{4}$ litres per hour, where $r>0$ is the internal tube radius in millimetres. A bench test on a tube of radius $2$ mm delivered $48$ litres per hour. The designers also track the mean velocity index $\\frac{Q}{\\pi r^{2}}$, which spreads the flow across the tube's cross-section. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The flow law is $Q(r)=3r^{4}$.",
+      "A tube of radius $3$ mm delivers $243$ litres per hour.",
+      "Widening the tube radius by $50\\%$ raises the flow by $125\\%$.",
+      "Halving the tube radius leaves one sixteenth of the flow.",
+      "Because flow and cross-section both grow with the radius, the mean velocity index is the same in every tube."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 84
+  },
+  {
+    "id": "math-8-85",
+    "case_id": "MATH 8.85",
+    "title": "Barrier Distance for a Radiography Source",
+    "context": "Dose rate near an industrial radiography source follows the inverse-square law $H(d)=A d^{-2}$ microsieverts per hour, where $d>0$ is the distance from the source in metres. A survey meter three metres from the source reads $80$ microsieverts per hour. Site rules put the barrier where the dose rate has fallen to $5$ microsieverts per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The dose-rate law is $H(d)=720d^{-2}$.",
+      "At six metres the dose rate is $20$ microsieverts per hour.",
+      "Doubling the distance from the source quarters the dose rate.",
+      "The barrier belongs twelve metres from the source.",
+      "Moving from three metres to nine metres cuts the dose rate to one third."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 85
+  },
+  {
+    "id": "math-8-86",
+    "case_id": "MATH 8.86",
+    "title": "A Dye Plume Spreading Across a Shallow Lake",
+    "context": "A tracer dye released into a shallow lake spreads as a disc whose radius follows $r(t)=A t^{\\frac{2}{3}}$ metres, with $t>0$ measured in hours since release. The survey note omits the coefficient: it records only that the radius grew by exactly $45$ metres between hour $1$ and hour $8$. The stained area is the disc $S=\\pi r^{2}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The radius law is $r(t)=15t^{\\frac{2}{3}}$ and the stained area is $S(t)=225\\pi t^{\\frac{4}{3}}$.",
+      "Doubling the elapsed time multiplies the stained area by $2^{\\frac{4}{3}}$, about $2.52$.",
+      "The stained area at hour $8$ is eight times its value at hour $1$.",
+      "The radius reaches $240$ metres $32$ hours after release.",
+      "The stained area grows in proportion to the elapsed time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 86
+  },
+  {
+    "id": "math-8-87",
+    "case_id": "MATH 8.87",
+    "title": "A Weir Rating Curve Rewritten in New Units",
+    "context": "Discharge over a measuring weir follows $Q(h)=A h^{\\frac{3}{2}}$ cubic metres per second, where $h>0$ is the head in metres. A gauging at a head of $0.25$ metres recorded a discharge of $2$ cubic metres per second. A field team wants the same rating curve rewritten with the head in centimetres, sometimes keeping discharge in cubic metres per second and sometimes reporting it in litres per second. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "In the original units the rating curve is $Q(h)=16h^{\\frac{3}{2}}$.",
+      "With the head in centimetres and discharge still in cubic metres per second, the curve becomes $Q=1.6\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}$.",
+      "With the head in centimetres and discharge in litres per second, the coefficient is $16000$.",
+      "Switching the head from metres to centimetres leaves the exponent at $\\frac{3}{2}$ but multiplies the coefficient by $100$.",
+      "A head of one metre discharges $32$ cubic metres per second."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 87
+  },
+  {
+    "id": "math-8-88",
+    "case_id": "MATH 8.88",
+    "title": "A Grain Dryer Calibrated From Two Recorded Ratios",
+    "context": "Fuel use in a grain dryer follows $F(x)=A x^{r}$ litres per batch, where $x>0$ is the batch mass in tonnes. Neither constant is published. Two figures are on file: doubling the batch mass raises fuel use by $300\\%$, and moving from a $2$-tonne batch to a $6$-tonne batch adds exactly $96$ litres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent is $r=2$.",
+      "The fuel law is $F(x)=3x^{2}$.",
+      "A $10$-tonne batch uses $300$ litres.",
+      "Tripling the batch mass multiplies fuel use by $9$.",
+      "Fuel use per tonne is $3x$ litres, so it rises in proportion to batch mass."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 88
+  },
+  {
+    "id": "math-8-89",
+    "case_id": "MATH 8.89",
+    "title": "Kiln Flue Mass Flow into a Particulate Index",
+    "context": "A kiln's flue-gas mass flow follows $m(t)=A t^{\\frac{1}{2}}$ tonnes per hour for throttle setting $t>0$, and the particulate load index is then $P(m)=\\frac{m^{4}}{16}$. A calibration at $t=9$ recorded $m=6$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The intermediate law is $m(t)=2t^{\\frac{1}{2}}$.",
+      "The composed map is $P(m(t))=t^{2}$.",
+      "Doubling the throttle setting doubles the composed particulate index.",
+      "At $t=25$ the intermediate mass flow is $50$ tonnes per hour.",
+      "Inverting the composed law, an index of $81$ requires throttle setting $t=27$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 89
+  },
+  {
+    "id": "math-8-90",
+    "case_id": "MATH 8.90",
+    "title": "Two Shuttle Fare Timers Under a Wait Cap",
+    "context": "Two municipal shuttle apps quote wait time for a trip of distance $d>0$ kilometres. App L uses $L(d)=4d^{\\frac{1}{2}}$ minutes and App Q uses $Q(d)=0.2d$ minutes. A service-level agreement caps wait at $20$ minutes. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two apps quote the same wait at $d=400$.",
+      "Under the $20$-minute cap, App L can serve at most $d=25$.",
+      "Under the same cap, App Q can serve at most $d=100$.",
+      "For every $d>400$, App L is strictly faster than App Q.",
+      "Doubling distance doubles App L's quoted wait."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 90
+  },
+  {
+    "id": "math-8-91",
+    "case_id": "MATH 8.91",
+    "title": "Wetland Evaporation Across Three Humidity Readings",
+    "context": "A field team records wetland evaporation $E$ millimetres per day against humidity deficit $h>0$. Three readings are $(h,E)=(1,20)$, $(4,40)$ and $(9,60)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "All three observations fit the single power law $E(h)=20h^{\\frac{1}{2}}$.",
+      "The exponent recovered from the first two readings alone is $1$.",
+      "A linear model through the first two readings also hits the third.",
+      "Doubling the humidity deficit from any of the three readings doubles evaporation.",
+      "With exponent forced to $1$, the coefficient recovered from $(9,60)$ alone is $20$."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 91
+  },
+  {
+    "id": "math-8-92",
+    "case_id": "MATH 8.92",
+    "title": "Shade-Tree Cooling Benefit Against Upkeep Cost",
+    "context": "A city parks office models annual cooling benefit by $B(n)=12n^{\\frac{1}{2}}$ thousand euros and annual upkeep by $C(n)=2n$ thousand euros, where $n>0$ is the number of thousand trees planted. Net benefit is $N(n)=B(n)-C(n)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At $n=9$, net benefit is $18$ thousand euros.",
+      "At $n=4$, net benefit is $16$ thousand euros.",
+      "At $n=1$, net benefit is $10$ thousand euros.",
+      "At $n=36$, net benefit is $0$.",
+      "Net benefit is positive at each of $n=1$, $n=4$ and $n=9$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "sort_order": 92
+  },
+  {
+    "id": "math-8-93",
+    "case_id": "MATH 8.93",
+    "title": "Trail-Map Kiosk Demand Inverted from Price",
+    "context": "Weekly pamphlet demand at a trail-map kiosk follows $q(p)=A p^{-2}$ packs per week, where $p>0$ is price in euros. At $p=5$ euros the kiosk sold $80$ packs. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The demand law is $q(p)=2000p^{-2}$ packs per week.",
+      "At $p=10$ euros, demand is $20$ packs per week.",
+      "A target of $125$ packs per week requires price $p=4$ euros.",
+      "Doubling the price halves demand.",
+      "Weekly revenue $R(p)=p\\,q(p)$ is the same at every price."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 93
+  },
+  {
+    "id": "math-8-94",
+    "case_id": "MATH 8.94",
+    "title": "Bike-Share Passes Under a Subsidy Price Index",
+    "context": "Weekly bike-share day-pass sales follow $q(p)=A p^{\\frac{-3}{2}}$ when the pass price is $p>0$ euros. A pilot at $p=16$ sold $50$ passes. Policy indexes the pass by $p(s)=4s^{\\frac{2}{3}}$ for a positive subsidy index $s$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The demand law is $q(p)=3200p^{\\frac{-3}{2}}$.",
+      "Under the policy map, composed demand simplifies to $\\frac{400}{s}$.",
+      "Tripling the subsidy index triples composed demand.",
+      "At $s=8$, composed demand is $100$ passes.",
+      "Doubling the posted pass price halves demand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 94
+  },
+  {
+    "id": "math-8-95",
+    "case_id": "MATH 8.95",
+    "title": "Overnight Loaves Split Across Two Oven Lines",
+    "context": "A regional bakery must bake $30$ thousand loaves overnight and can split them between two oven lines. Line 1's energy-cost index is $C_1(q)=q^{2}$ and line 2's is $C_2(q)=\\frac{q^{2}}{4}$, where $q$ is that line's own output in thousands of loaves. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Sending all $30$ thousand loaves to line 2 costs $225$.",
+      "Splitting the order as $6$ on line 1 and $24$ on line 2 costs $180$.",
+      "An even split of $15$ and $15$ costs more than the $6$ and $24$ split.",
+      "Doubling line 2's own output multiplies its cost index by $4$.",
+      "Line 1's average cost index falls as its own output rises."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 95
+  },
+  {
+    "id": "math-8-96",
+    "case_id": "MATH 8.96",
+    "title": "Museum Tickets: Point Elasticity Versus a Finite Rise",
+    "context": "Evening museum admissions follow $q(p)=A p^{-2}$ tickets when price is $p>0$ euros. At $p=10$ euros the desk sold $40$ tickets. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The point price elasticity of demand is constantly $-2$.",
+      "Raising price from $10$ to $12$ euros cuts demand by exactly $20\\%$.",
+      "A $10\\%$ price rise cuts demand by exactly $20\\%$.",
+      "Weekly revenue $R(p)=p\\,q(p)$ is maximized by raising price without bound.",
+      "Halving the price doubles demand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "sort_order": 96
+  },
+  {
+    "id": "math-8-97",
+    "case_id": "MATH 8.97",
+    "title": "Annealing Lehr Throughput Under a Mis-Scaled Coefficient",
+    "context": "A glass-annealing lehr's throughput follows $T(e)=A e^{\\frac{3}{2}}$ trays per hour for belt setting $e>0$. A run at $e=4$ delivered $T=64$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Under the calibrated law, $T(9)=216$.",
+      "If the coefficient were $25\\%$ larger, every throughput reading would rise by exactly $25\\%$.",
+      "The scale factor for doubling the belt setting does not depend on $A$.",
+      "Doubling the belt setting doubles throughput.",
+      "If the coefficient were $25\\%$ larger, the scale factor $\\frac{T(2e)}{T(e)}$ would itself become $25\\%$ larger."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 97
+  }
+]

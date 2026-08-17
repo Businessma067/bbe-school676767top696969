@@ -12,7 +12,6 @@ const visit = (n) => {
 };
 visit(sf);
 
-const get = (obj, name) => obj.properties.find((p) => ts.isPropertyAssignment(p) && p.name.getText(sf) === name)?.initializer;
 const problems = [];
 let katexFails = 0;
 let mathSpans = 0;
@@ -27,43 +26,39 @@ function spans(text) {
   return out;
 }
 
-const rows = [];
+const get = (obj, name) =>
+  obj.properties.find((p) => ts.isPropertyAssignment(p) && p.name.getText(sf) === name)?.initializer;
+
 for (const el of arr.elements) {
   const id = get(el, "id").text;
   const keys = get(el, "answer_key").elements.map((e) => e.kind === ts.SyntaxKind.TrueKeyword);
   const expls = get(el, "tactical_explanations").elements.map((e) => e.text);
-  const stmts = get(el, "statements").elements.map((e) => e.text);
-  if (expls.length !== 5) problems.push(`${id}: ${expls.length} expl`);
-  const lens = expls.map((e) => e.length);
   expls.forEach((e, i) => {
     const letter = letters[i];
     const want = keys[i] ? "True" : "False";
     if (!e.startsWith(`**${letter}.** → ${want}`)) problems.push(`${id}${letter}: opener`);
     if (!e.trimEnd().endsWith(`so the statement is ${want}.`)) problems.push(`${id}${letter}: closer`);
-    if (e.includes("Extended context check")) { extended++; problems.push(`${id}${letter}: extended`); }
+    if (e.includes("Extended context check")) {
+      extended += 1;
+      problems.push(`${id}${letter}: extended`);
+    }
     if (e.includes("**Part 1:")) problems.push(`${id}${letter}: overview dump`);
     if (e.includes("${")) problems.push(`${id}${letter}: interpolation`);
-    if (/From Part [A-E]/i.test(e)) problems.push(`${id}${letter}: cross-ref`);
     for (const span of spans(e)) {
-      mathSpans++;
-      try { katex.renderToString(span.body, { throwOnError: true, displayMode: span.display }); }
-      catch (err) { katexFails++; if (katexFails <= 8) problems.push(`${id}${letter}: katex ${span.body.slice(0, 50)}`); }
+      mathSpans += 1;
+      try {
+        katex.renderToString(span.body, { throwOnError: true, displayMode: span.display });
+      } catch (err) {
+        katexFails += 1;
+        if (katexFails <= 12) problems.push(`${id}${letter}: katex ${String(err.message).slice(0, 80)}`);
+      }
     }
   });
-  rows.push({ id, min: Math.min(...lens), max: Math.max(...lens), ratio: +(Math.max(...lens) / Math.min(...lens)).toFixed(2), stmts: stmts.map((s) => s.slice(0, 40)) });
 }
 
-const transpiled = ts.transpileModule(src, { compilerOptions: { target: ts.ScriptTarget.ESNext, module: ts.ModuleKind.ESNext }, reportDiagnostics: true, fileName: MAIN });
-const tsErrs = (transpiled.diagnostics ?? []).filter((d) => d.category === ts.DiagnosticCategory.Error);
+const trans = ts.transpileModule(src, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2020 } });
+if (trans.diagnostics?.length) problems.push(`ts diagnostics ${trans.diagnostics.length}`);
 
 console.log(`tasks ${arr.elements.length}`);
-console.log(`extended leftover ${extended}`);
-console.log(`math ${mathSpans} katexFails ${katexFails}`);
-console.log(`struct problems ${problems.length}`);
-problems.slice(0, 20).forEach((p) => console.log(" ", p));
-console.log(`ts diagnostics on file: ${tsErrs.length}`);
-tsErrs.slice(0, 5).forEach((d) => console.log(" ", ts.flattenDiagnosticMessageText(d.messageText, "\n")));
-const ratios = rows.map((r) => r.ratio).sort((a, b) => a - b);
-console.log(`ratio min=${ratios[0]} med=${ratios[Math.floor(ratios.length/2)]} max=${ratios.at(-1)}`);
-console.log(`shortest ${Math.min(...rows.map(r=>r.min))} longest ${Math.max(...rows.map(r=>r.max))}`);
-console.log("sample lengths", rows.filter((_,i)=>[0,10,50,96].includes(i)).map(r=>`${r.id} ${r.min}..${r.max}`).join(" | "));
+console.log(`extended ${extended}; math ${mathSpans}; katex fails ${katexFails}; problems ${problems.length}`);
+problems.slice(0, 25).forEach((p) => console.log(" ", p));
