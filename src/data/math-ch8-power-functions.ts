@@ -9,6 +9,1078 @@ export const MATH_CH8_POWER_FUNCTIONS: MathTask[] = [
   {
     id: `math-8-1`,
     case_id: `MATH 8.01`,
+    title: `Rebuilding a Resin Block Mass Table from the Cube Rule`,
+    context: `A cube resin block has mass $M(s)=5s^{3}$ grams for side length $s>0$ centimetres. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Side $2$ cm gives mass $40$ grams.`,
+      `Side $3$ cm gives mass $125$ grams.`,
+      `Doubling the side multiplies the mass by $8$.`,
+      `Side $1$ cm gives mass $5$ grams.`,
+      `Side $4$ cm gives mass $240$ grams.`,
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The cube is taken before the coefficient is applied:
+
+$$M(2)=5\\cdot 2^{3}=5\\cdot 8=40$$
+
+Scaling the side by the coefficient first and cubing afterwards would give $10^{3}=1000$ grams, a hundred times too large, and that is the usual slip when a coefficient stands in front of a power. The block weighs $40$ grams, so the statement is True.`,
+      `**B.** → False
+
+Cubing comes first, and the cube of $3$ is not a round hundred:
+
+$$3^{3}=27, \\qquad M(3)=5\\cdot 27=135$$
+
+The claimed $125$ is $5^{3}$, the cube of the coefficient rather than a mass, so it is the fingerprint of cubing the wrong one of the two numbers in the rule.
+
+A second check settles the level without using the coefficient at all. Tripling the side multiplies the mass by the cube of the scale factor, and the one centimetre block weighs $5$ grams:
+
+$$\\frac{M(3s)}{M(s)}=\\frac{5(3s)^{3}}{5s^{3}}=3^{3}=27, \\qquad 5\\times 27=135$$
+
+The coefficient cancels in that ratio because it stands once above and once below the line, so $135$ grams is forced by the exponent alone and no density figure can rescue $125$.
+
+Neighbouring sides agree with the spacing, since $M(2)=40$ and $M(4)=320$ leave $135$ comfortably between them while $125$ sits lower than the gap allows. The rule also speaks only for $s>0$, where masses shrink towards zero for very small blocks without ever reaching it. The mass at side $3$ centimetres is $135$ grams rather than $125$, so the statement is False.`,
+      `**C.** → True
+
+A scale factor of a power function depends only on the exponent, since the coefficient cancels:
+
+$$\\frac{M(2s)}{M(s)}=\\frac{5(2s)^{3}}{5s^{3}}=2^{3}=8$$
+
+Plain numbers agree, because $M(1)=5$ grams and $M(2)=40$ grams. The factor is the same wherever the doubling starts, so the density folded into the coefficient never enters. Doubling the side multiplies the mass by $8$, so the statement is True.`,
+      `**D.** → True
+
+At the smallest side the cube is $1$, which leaves the coefficient standing on its own:
+
+$$M(1)=5\\cdot 1^{3}=5$$
+
+This is the reading that makes the coefficient visible, since the $5$ in the rule is exactly the mass in grams of a one centimetre cube. Every other mass is that anchor multiplied by the cube of the side. The mass is $5$ grams, so the statement is True.`,
+      `**E.** → False
+
+The largest standard side needs the cube taken before the coefficient is applied:
+
+$$4^{3}=64, \\qquad M(4)=5\\cdot 64=320$$
+
+The claimed $240$ is $6$ times the mass of the two centimetre block, so it comes from treating the doubling factor as $6$ instead of $8$. The scaling rule agrees with the direct route:
+
+$$40\\times 2^{3}=40\\times 8=320$$
+
+Both land on $320$ grams against the claimed $240$, so the statement is False.`,
+    ],
+    difficulty_level: `1/5`,
+    sort_order: 1,
+    solution_overview: `Resin blocks obey $M(s)=5s^{3}$ grams for side length $s>0$ centimetres.
+
+**Part 1: Building the model.**
+
+Let $s$ = side length in centimetres, $M$ = mass in grams. The rule $M(s)=5s^{3}$ is a power function with exponent $3$ and coefficient $5$ on the domain $s>0$, and the coefficient already carries the density of the resin. Two kinds of question follow from it: levels, which need the coefficient, and scale factors, in which the coefficient cancels.
+
+**1. Translate: a level.** The power is evaluated first, then multiplied by the coefficient:
+
+$$M(s)=5\\cdot s^{3}$$
+
+**2. Translate: a scale factor.** Multiplying the side by $k$ multiplies the mass by $k^{3}$, whatever the coefficient happens to be:
+
+$$\\frac{M(ks)}{M(s)}=\\frac{5(ks)^{3}}{5s^{3}}=k^{3}$$
+
+**Part 2: The model.**
+
+$$M(s)=5s^{3} \\tag{1}$$
+
+$$\\frac{M(ks)}{M(s)}=k^{3} \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** Cubes of the four standard sides:
+
+$$1^{3}=1, \\qquad 2^{3}=8, \\qquad 3^{3}=27, \\qquad 4^{3}=64$$
+
+**2.** Masses at those sides, each five times the cube above it:
+
+$$M(1)=5, \\qquad M(2)=40, \\qquad M(3)=135, \\qquad M(4)=320$$
+
+**3.** The doubling factor from $(2)$ with $k=2$:
+
+$$2^{3}=8$$
+
+**4.** The two entries the statements misquote, set beside the correct ones:
+
+$$135 \\ne 125, \\qquad 320 \\ne 240$$
+
+**5.** Mass climbs far faster than side length here, because the exponent is $3$: a block four times wider carries sixty four times the mass.
+
+**Answer.** $M(1)=5$ | $M(2)=40$ | $M(3)=135$ | $M(4)=320$ | doubling factor $8$`,
+  },
+  {
+    id: `math-8-2`,
+    case_id: `MATH 8.02`,
+    title: `Two Gauge Formulas and the Readings They Refuse`,
+    context: `A river gauge reports load $D(t)=6t^{\\frac{1}{2}}$ kilograms and turbidity $R(t)=50t^{-2}$ units, $t$ hours since reset. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `$D$ returns a real value at $t=0$.`,
+      `$R$ returns a value at $t=0$.`,
+      `$D$ returns a real value at $t=-4$.`,
+      `$R(4)=3.125$ units.`,
+      `$D(9)=18$ kilograms.`,
+    ],
+    answer_key: [true, false, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+An exponent of $\\frac{1}{2}$ is a square root, and the square root of zero is perfectly well defined:
+
+$$D(0)=6\\cdot 0^{\\frac{1}{2}}=6\\cdot 0=0$$
+
+A positive exponent never places the variable in a denominator, so no division by zero is involved anywhere in this rule, and the first plotted point is a load of zero kilograms at the reset instant. The rule returns a real value at $t=0$, so the statement is True.`,
+      `**B.** → False
+
+A negative exponent moves the variable into a denominator:
+
+$$R(t)=50t^{-2}=\\frac{50}{t^{2}}$$
+
+At the reset instant that denominator is $0^{2}=0$, and division by zero has no value, so this one time is excluded while every later hour is fine. The turbidity rule has no value at $t=0$, so the statement is False.`,
+      `**C.** → False
+
+The exponent $\\frac{1}{2}$ is an even root, and no real number squares to a negative one:
+
+$$D(-4)=6\\cdot (-4)^{\\frac{1}{2}}=6\\sqrt{-4}$$
+
+The domain of the load rule is therefore $t\\ge 0$, which also matches the clock, since no hour before the reset exists in the record. An odd root such as $t^{\\frac{1}{3}}$ would accept a negative input without complaint, but this exponent will not. There is no real value at $t=-4$, so the statement is False.`,
+      `**D.** → True
+
+Rewriting the negative exponent as a denominator turns the request into a single division:
+
+$$R(4)=\\frac{50}{4^{2}}=\\frac{50}{16}=3.125$$
+
+The square has to be taken before the division. Dividing first and squaring afterwards gives
+
+$$\\left(\\frac{50}{4}\\right)^{2}=156.25$$
+
+which is fifty times too large and is the standard wrong path for a negative exponent.
+
+A second reading confirms the level without repeating that arithmetic. Doubling the time from four hours to eight divides the index by four, since the coefficient cancels in the ratio:
+
+$$\\frac{R(2t)}{R(t)}=\\frac{50(2t)^{-2}}{50t^{-2}}=\\frac{1}{4}$$
+
+so the index at eight hours is $\\frac{3.125}{4}\\approx 0.781$, which matches $\\frac{50}{64}$ computed directly from the rule.
+
+The value also sits where the shape demands. On $t>0$ the index falls steadily, stays strictly positive, and grows past every bound as the reset instant is approached from the right, so a reading of $3.125$ units four hours in should be well below the earliest recorded values and well above the later ones. Comparing it with the nine hour figure $\\frac{50}{81}\\approx 0.617$ shows exactly that pattern. The turbidity index at $t=4$ is $3.125$ units, so the statement is True.`,
+      `**E.** → True
+
+The square root is taken first and the coefficient is applied afterwards:
+
+$$9^{\\frac{1}{2}}=3, \\qquad D(9)=6\\cdot 3=18$$
+
+Multiplying before rooting would give $\\sqrt{54}\\approx 7.35$, a different quantity entirely, because the coefficient sits outside the power. The figure matches the flat shape of a square root law, since a ninefold stretch of elapsed time only triples the load, from $6$ to $18$ kilograms. The load at nine hours is $18$ kilograms, so the statement is True.`,
+    ],
+    difficulty_level: `1/5`,
+    sort_order: 2,
+    solution_overview: `The gauge reports $D(t)=6t^{\\frac{1}{2}}$ kilograms and $R(t)=50t^{-2}$ units for $t$ hours since the reset.
+
+**Part 1: Building the model.**
+
+Let $t$ = hours since the reset, $D$ = cumulative dissolved load in kilograms, $R$ = turbidity index in units. The two rules are power functions in the same variable with opposite signs on the exponent, and that sign decides both the domain and the shape of each trace.
+
+**1. Translate: the positive exponent.** A square root accepts zero and every positive time, and it refuses negative inputs:
+
+$$D(t)=6t^{\\frac{1}{2}}, \\qquad t\\ge 0$$
+
+**2. Translate: the negative exponent.** A negative exponent is a reciprocal, so the variable lands in a denominator and zero has to be excluded:
+
+$$R(t)=\\frac{50}{t^{2}}, \\qquad t>0$$
+
+**Part 2: The model.**
+
+$$D(t)=6\\sqrt{t} \\quad \\text{on } t\\ge 0 \\tag{1}$$
+
+$$R(t)=\\frac{50}{t^{2}} \\quad \\text{on } t>0 \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** Values of the dissolved load rule at the times in question:
+
+$$D(0)=0, \\qquad D(4)=12, \\qquad D(9)=18$$
+
+**2.** Values of the turbidity rule at the same positive times:
+
+$$R(4)=\\frac{50}{16}=3.125, \\qquad R(9)=\\frac{50}{81}\\approx 0.617$$
+
+**3.** The two refusals, one from an even root and one from a zero denominator:
+
+$$\\sqrt{-4} \\text{ is not real}, \\qquad \\frac{50}{0^{2}} \\text{ is undefined}$$
+
+**4.** Shapes on the shared domain $t>0$: the dissolved load rises steadily with elapsed time, while the turbidity index falls steadily towards zero, since its exponent is negative.
+
+**5.** Domain questions are settled by the sign of the exponent and the parity of its root, never by whether a number can be written down.
+
+**Answer.** $D(0)=0$ | $R(0)$ undefined | $D(-4)$ not real | $R(4)=3.125$ | $D(9)=18$`,
+  },
+  {
+    id: `math-8-3`,
+    case_id: `MATH 8.03`,
+    title: `A Fading Beacon and a Rising Count at the Two Ends of the Scale`,
+    context: `A beacon gives $S(x)=80x^{-3}$ millivolts at $x>0$ metres; a reader logs $T(x)=2x^{\\frac{1}{2}}$ thousand packets over $x>0$ minutes. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `As $x\\to\\infty$, $S(x)\\to 0$.`,
+      `As $x\\to 0^{+}$, $S(x)$ grows without bound.`,
+      `As $x\\to\\infty$, $T(x)$ approaches the ceiling $2$.`,
+      `$S(2)=10$ millivolts.`,
+      `As $x\\to 0^{+}$, $T(x)\\to 0$.`,
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+A negative exponent puts the variable in a denominator, and the behaviour far from the mast follows from that alone:
+
+$$S(x)=80x^{-3}=\\frac{80}{x^{3}}$$
+
+As the distance grows, the cube in the denominator grows without bound while the numerator stays fixed at $80$, so the quotient is squeezed towards zero. Sample readings show how quickly it collapses:
+
+$$S(2)=10, \\qquad S(10)=0.08, \\qquad S(100)=0.00008$$
+
+A ratio makes the same point without naming any particular distance. Doubling the distance divides the strength by eight, because the coefficient cancels:
+
+$$\\frac{S(2x)}{S(x)}=\\frac{80(2x)^{-3}}{80x^{-3}}=\\frac{1}{8}$$
+
+Each doubling therefore removes seven eighths of whatever is left, and no positive floor can survive that repeated eightfold cut. Zero is approached but never attained, since a positive numerator over a positive denominator stays strictly positive on $x>0$, so the reading is small rather than absent at any workable distance from the mast. That distinction is what a floor would deny: a floor would mean some smallest reading is repeated forever, whereas here every candidate floor is beaten by moving a little further out. Signal strength tends to $0$ as the distance grows without bound, so the statement is True.`,
+      `**B.** → True
+
+Close to the mast the same reciprocal form is read from the other end:
+
+$$S(x)=\\frac{80}{x^{3}}$$
+
+A small positive distance makes $x^{3}$ a very small positive number, and dividing a fixed $80$ by something arbitrarily small produces something arbitrarily large:
+
+$$S(0.1)=\\frac{80}{0.001}=80000$$
+
+No finite value caps the readings, since halving the distance multiplies the strength by $8$. The strength grows without bound as $x$ approaches $0$ from the right, so the statement is True.`,
+      `**C.** → False
+
+The coefficient $2$ in $T(x)=2x^{\\frac{1}{2}}$ multiplies the whole power, it does not cap the output. A positive exponent keeps the variable in the numerator, so the count keeps climbing:
+
+$$T(4)=4, \\qquad T(100)=20, \\qquad T(10000)=200$$
+
+Growth does slow down, because the exponent $\\frac{1}{2}$ sits below $1$, and that slowing is exactly what invites the reading. Slower growth is still unbounded growth: any target is passed after enough minutes. There is no finite ceiling, so the statement is False.`,
+      `**D.** → True
+
+A level needs the power evaluated in the denominator before the division is carried out:
+
+$$S(2)=\\frac{80}{2^{3}}=\\frac{80}{8}=10$$
+
+Cubing the product $80\\cdot 2$ instead would answer a quite different question, so the reciprocal has to be respected. The reading is consistent with the collapse described elsewhere, since doubling the distance to $4$ metres divides the strength by $8$ and leaves $1.25$ millivolts. The strength at two metres is $10$ millivolts, so the statement is True.`,
+      `**E.** → True
+
+The square root of a small positive number is small, and the coefficient cannot rescue the size:
+
+$$T(0.01)=2\\sqrt{0.01}=0.2, \\qquad T(0.0001)=0.02$$
+
+A positive exponent keeps the product heading towards zero as the input shrinks. The count approaches $0$ as $x$ approaches $0$ from the right, so the statement is True.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 3,
+    solution_overview: `The beacon obeys $S(x)=80x^{-3}$ millivolts and the reader obeys $T(x)=2x^{\\frac{1}{2}}$ thousand packets, both on $x>0$.
+
+**Part 1: Building the model.**
+
+Let $x$ = distance in metres for the beacon rule and listening minutes for the reader rule, $S$ = received strength in millivolts, $T$ = cumulative count in thousand packets. Both rules are power functions on $x>0$, one with a negative exponent and one with a positive exponent below $1$, and the extremes are governed by those exponents alone.
+
+**1. Translate: the negative exponent.** A negative exponent is a reciprocal power, so a large input makes a large denominator and a small input makes a small one:
+
+$$S(x)=\\frac{80}{x^{3}}$$
+
+**2. Translate: the positive exponent.** A positive exponent keeps the variable in the numerator, so growth continues without any ceiling, even though it slows:
+
+$$T(x)=2x^{\\frac{1}{2}}$$
+
+**Part 2: The model.**
+
+$$S(x)=\\frac{80}{x^{3}} \\quad \\text{on } x>0 \\tag{1}$$
+
+$$T(x)=2\\sqrt{x} \\quad \\text{on } x>0 \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** Signal strength at three distances, from $(1)$:
+
+$$S(2)=\\frac{80}{8}=10, \\qquad S(4)=\\frac{80}{64}=1.25, \\qquad S(20)=\\frac{80}{8000}=0.01$$
+
+**2.** Signal strength very close to the mast, where the denominator collapses:
+
+$$S(0.1)=\\frac{80}{0.001}=80000$$
+
+**3.** Packet counts after three listening times, from $(2)$:
+
+$$T(4)=4, \\qquad T(100)=20, \\qquad T(10000)=200$$
+
+**4.** Packet counts for very short listening times:
+
+$$T(0.01)=0.2, \\qquad T(0.0001)=0.02$$
+
+**5.** The two extremes therefore behave in opposite ways. The negative exponent sends the signal to zero far from the mast and past every bound near it, while the positive exponent sends the count to zero at the start and past every bound in the long run, with no ceiling anywhere.
+
+**Answer.** $S(x)\\to 0$ as $x$ grows | $S(x)$ unbounded as $x\\to 0^{+}$ | no ceiling for $T$ | $S(2)=10$ | $T(x)\\to 0$ as $x\\to 0^{+}$`,
+  },
+  {
+    id: `math-8-4`,
+    case_id: `MATH 8.04`,
+    title: `Spread Overheads Against Finishing Hours on One Order Book`,
+    context: `A workshop spreads overhead $U(q)=600q^{-1}$ euros per unit and needs $V(q)=3q^{\\frac{2}{3}}$ finishing hours for order size $q>0$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `$U$ is strictly decreasing for $q>0$.`,
+      `$U(q)<0$ for some order size $q>0$.`,
+      `$V$ is strictly increasing for $q>0$.`,
+      `$U(8)=80$ euros per unit.`,
+      `$V(8)=12$ hours.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+An exponent of $-1$ is a reciprocal, so the order size sits in the denominator:
+
+$$U(q)=600q^{-1}=\\frac{600}{q}$$
+
+A larger denominator against a fixed numerator gives a smaller quotient, so every extra unit lowers the spread:
+
+$$U(2)=300, \\qquad U(6)=100, \\qquad U(30)=20$$
+
+The overhead spread is strictly decreasing for $q>0$, so the statement is True.`,
+      `**B.** → False
+
+Both parts of the quotient are positive across the whole domain, so no sign change is available:
+
+$$U(q)=\\frac{600}{q}, \\qquad 600>0, \\qquad q>0$$
+
+A negative exponent makes the rule fall, and falling is easily confused with turning negative, but the two are different properties. Values shrink towards zero without ever reaching it, for instance $U(600)=1$ and $U(6000)=0.1$. The spread stays positive at every order size, so the statement is False.`,
+      `**C.** → True
+
+The exponent here is positive, so the order size stays in the numerator:
+
+$$V(q)=3q^{\\frac{2}{3}}, \\qquad \\frac{2}{3}>0$$
+
+Raising a larger positive number to a positive power gives a larger result, and the positive coefficient preserves that order, so finishing hours climb with every extra unit:
+
+$$V(1)=3, \\qquad V(8)=12, \\qquad V(27)=27$$
+
+Growth slows, because the exponent sits below $1$, yet it never stops or reverses. The finishing labour is strictly increasing, so the statement is True.`,
+      `**D.** → False
+
+The reciprocal has to be evaluated at the stated order size:
+
+$$U(8)=\\frac{600}{8}=75$$
+
+The claimed $80$ would require an order of $7.5$ units, since $\\frac{600}{7.5}=80$, and no such order is on the book. Rounding a spread up to a convenient figure matters here, because the quote is per unit and multiplies back up across the batch. The spread at eight units is $75$ euros per unit rather than $80$, so the statement is False.`,
+      `**E.** → True
+
+A fractional exponent is easiest to take in two steps, root first and power second:
+
+$$8^{\\frac{2}{3}}=\\left(8^{\\frac{1}{3}}\\right)^{2}=2^{2}=4, \\qquad V(8)=3\\cdot 4=12$$
+
+Reversing the two steps costs nothing here, since $8^{2}=64$ and the cube root of $64$ is again $4$, but taking the root first keeps the numbers small enough to do in the head.
+
+A second check uses a scale factor, where the coefficient cancels and only the exponent survives:
+
+$$\\frac{V(8q)}{V(q)}=\\frac{3(8q)^{\\frac{2}{3}}}{3q^{\\frac{2}{3}}}=8^{\\frac{2}{3}}=4$$
+
+An order eight times larger therefore takes four times the hours, and since $V(1)=3$ that route lands on $12$ hours once more.
+
+The wrong path worth naming is treating the exponent as a multiplier and computing $3\\cdot \\frac{2}{3}\\cdot 8=16$ hours, which mistakes a power for a product and quietly assumes labour rises in step with the batch. The exponent below $1$ says the opposite, and the neighbouring order sizes make the pattern plain, since $V(1)=3$ and $V(27)=27$ leave $12$ hours sitting between them at the right spacing. The finishing labour at eight units is $12$ hours, so the statement is True.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 4,
+    solution_overview: `The rules are $U(q)=600q^{-1}$ euros per unit and $V(q)=3q^{\\frac{2}{3}}$ hours on $q>0$, and direction and sign matter as much as levels.
+
+**Part 1: Building the model.**
+
+Let $q$ = order size in finished units, $U$ = overhead spread in euros per unit, $V$ = finishing labour in hours. Both rules are power functions on $q>0$ with positive coefficients, and the sign of the exponent decides the direction of each one while the positivity of the coefficient decides the sign of each output.
+
+**1. Translate: the negative exponent.** A fixed overhead divided across the batch is a reciprocal rule, which falls but never crosses zero:
+
+$$U(q)=\\frac{600}{q}$$
+
+**2. Translate: the positive exponent.** Shared jigs and setup make labour rise more slowly than the batch, an exponent between $0$ and $1$:
+
+$$V(q)=3q^{\\frac{2}{3}}$$
+
+**Part 2: The model.**
+
+$$U(q)=\\frac{600}{q} \\quad \\text{on } q>0 \\tag{1}$$
+
+$$V(q)=3q^{\\frac{2}{3}} \\quad \\text{on } q>0 \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** Overhead spread at three order sizes, from $(1)$:
+
+$$U(2)=300, \\qquad U(8)=75, \\qquad U(30)=20$$
+
+**2.** Fractional powers needed for $(2)$, taken as a cube root followed by a square:
+
+$$8^{\\frac{2}{3}}=4, \\qquad 27^{\\frac{2}{3}}=9, \\qquad 64^{\\frac{2}{3}}=16$$
+
+**3.** Finishing labour at the same order sizes:
+
+$$V(8)=12, \\qquad V(27)=27, \\qquad V(64)=48$$
+
+**4.** Directions and signs, read off the exponents rather than from the table:
+
+$$U \\text{ falls, } U>0; \\qquad V \\text{ rises, } V>0$$
+
+**5.** The two rules therefore move in opposite directions as an order grows, while both stay strictly positive. Overhead spread falls towards zero without reaching it, and finishing labour rises without any ceiling, though each extra unit adds a little less labour than the one before it.
+
+**Answer.** $U$ strictly decreasing and always positive | $V$ strictly increasing | $U(8)=75$ | $V(8)=12$`,
+  },
+  {
+    id: `math-8-5`,
+    case_id: `MATH 8.05`,
+    title: `One Bottling Line Reading and the Coefficient It Fixes`,
+    context: `A bottling line runs at $Q(s)=As^{\\frac{1}{2}}$ crates per hour for $s>0$ staff, and $25$ staff gave $40$ crates per hour. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The coefficient is $A=8$.`,
+      `$Q(100)=80$ crates per hour.`,
+      `Quadrupling the staffing doubles the output.`,
+      `Doubling $A$ would double the ratio $\\frac{Q(4s)}{Q(s)}$.`,
+      `$Q(4)=20$ crates per hour.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The audited shift is one equation in one unknown, and the square root of the staffing is whole:
+
+$$25^{\\frac{1}{2}}=5 \\quad \\Rightarrow \\quad 5A=40 \\quad \\Rightarrow \\quad A=8$$
+
+Dividing output by staffing gives $\\frac{40}{25}=1.6$, which answers a different question, crates per member of staff. The coefficient is $8$, so the statement is True.`,
+      `**B.** → True
+
+With the coefficient recovered the rule is $Q(s)=8s^{\\frac{1}{2}}$, and the proposed shift has a whole square root:
+
+$$100^{\\frac{1}{2}}=10, \\qquad Q(100)=8\\cdot 10=80$$
+
+The scaling route agrees without touching the coefficient again, since the staffing rises by a factor of $4$ from the audited shift and $4^{\\frac{1}{2}}=2$, so the audited $40$ crates per hour doubles to $80$. Quadrupling the staff does not quadruple the output. The proposed shift runs at $80$ crates per hour, so the statement is True.`,
+      `**C.** → True
+
+A scale factor of a power function is fixed by the exponent alone, because the coefficient cancels in the ratio:
+
+$$\\frac{Q(4s)}{Q(s)}=\\frac{A(4s)^{\\frac{1}{2}}}{As^{\\frac{1}{2}}}=4^{\\frac{1}{2}}=2$$
+
+Doubled output for quadrupled staffing is the signature of the exponent $\\frac{1}{2}$, and it holds wherever the quadrupling starts, not only at the audited shift.
+
+Levels say the same thing in plain numbers, since each pair below is a quadrupling of staff against a doubling of crates:
+
+$$Q(4)=16, \\qquad Q(16)=32, \\qquad Q(25)=40, \\qquad Q(100)=80$$
+
+The tempting alternative is to expect four times the output for four times the staff, which would need an exponent of $1$. With an exponent below $1$ each extra member of staff adds a little less than the one before, and the gain from quadrupling settles at $\\sqrt{4}=2$ rather than $4$. A second quadrupling behaves the same way, taking staffing from $25$ to $100$ and output from $40$ to $80$ crates per hour, so the factor never drifts as the line grows. Quadrupling the staffing doubles the hourly output, so the statement is True.`,
+      `**D.** → False
+
+A doubled coefficient enters the numerator and the denominator of the ratio in equal measure, so the quotient cannot register it:
+
+$$\\frac{2A(4s)^{\\frac{1}{2}}}{2As^{\\frac{1}{2}}}=4^{\\frac{1}{2}}=2$$
+
+Levels are a different matter, since a doubled coefficient turns the audited $40$ crates per hour into $80$, which is what makes the reading tempting. A wrong coefficient distorts every output and no percentage gain. The ratio stays at $2$, so the statement is False.`,
+      `**E.** → False
+
+The small shift is evaluated the same way, root first and coefficient second:
+
+$$4^{\\frac{1}{2}}=2, \\qquad Q(4)=8\\cdot 2=16$$
+
+The claimed $20$ is half of the audited $40$ crates per hour, so it comes from treating output as proportional to staffing, which would need an exponent of $1$. With exponent $\\frac{1}{2}$, cutting staffing from $25$ to $4$ multiplies output by $\\left(\\frac{4}{25}\\right)^{\\frac{1}{2}}=\\frac{2}{5}$, giving $16$ crates per hour rather than $20$, so the statement is False.`,
+    ],
+    difficulty_level: `1/5`,
+    sort_order: 5,
+    solution_overview: `The bottling line follows $Q(s)=As^{\\frac{1}{2}}$ crates per hour, and one audited shift, $Q(25)=40$, fixes the coefficient $A$.
+
+**Part 1: Building the model.**
+
+Let $s$ = staff on the line, $Q$ = output in crates per hour. The exponent $\\frac{1}{2}$ is supplied and the audited shift fixes the coefficient. Levels then depend on the coefficient, while scale factors do not, and keeping those two apart is the whole point.
+
+**1. Translate: the audited shift.**
+
+$$A\\cdot 25^{\\frac{1}{2}}=40, \\qquad 25^{\\frac{1}{2}}=5$$
+
+**2. Translate: a staffing multiplier.** Multiplying the staffing by $k$ multiplies the output by $k^{\\frac{1}{2}}$, for any positive coefficient:
+
+$$\\frac{Q(ks)}{Q(s)}=\\frac{A(ks)^{\\frac{1}{2}}}{As^{\\frac{1}{2}}}=k^{\\frac{1}{2}}$$
+
+**Part 2: The model.**
+
+$$Q(s)=8s^{\\frac{1}{2}} \\tag{1}$$
+
+$$\\frac{Q(ks)}{Q(s)}=k^{\\frac{1}{2}} \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** The recovered coefficient:
+
+$$5A=40 \\quad \\Rightarrow \\quad A=8$$
+
+**2.** Outputs at the shift sizes in the plan, from $(1)$:
+
+$$Q(4)=16, \\qquad Q(25)=40, \\qquad Q(100)=80$$
+
+**3.** The quadrupling factor from $(2)$ with $k=4$:
+
+$$4^{\\frac{1}{2}}=2$$
+
+**4.** A counterfactual coefficient of $16$ instead of $8$, which lifts every level and moves no ratio:
+
+$$Q_{c}(4)=32, \\qquad Q_{c}(100)=160, \\qquad \\frac{Q_{c}(4s)}{Q_{c}(s)}=2$$
+
+**5.** Levels and ratios therefore answer a wrong coefficient in opposite ways. Every output would be doubled by a doubled coefficient, while every percentage gain from extra staff would stay exactly where it was, because the coefficient appears once above and once below the line.
+
+**Answer.** $A=8$ | $Q(4)=16$ | $Q(100)=80$ | quadrupling doubles output | the ratio ignores the coefficient`,
+  },
+  {
+    id: `math-8-6`,
+    case_id: `MATH 8.06`,
+    title: `Two Maintenance Indices That Meet at Two Machines`,
+    context: `Two maintenance indices for $n>0$ machines are $F(n)=2n^{2}$ and $G(n)=n^{3}$ index points. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `At $n=2$ the indices read $8$ and $6$.`,
+      `$G(n)>F(n)$ for every $n>2$.`,
+      `$F(n)>G(n)$ for every $n$ with $0<n<2$.`,
+      `$\\frac{G(n)}{F(n)}\\to 1$ as $n$ grows without bound.`,
+      `At $n=3$ the indices read $18$ and $24$.`,
+    ],
+    answer_key: [false, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → False
+
+Both indices must be read at the same line size before they are compared:
+
+$$F(2)=2\\cdot 2^{2}=8, \\qquad G(2)=2^{3}=8$$
+
+The first figure is right and the second is not, because the two indices agree exactly at two machines. That coincidence is the crossing point, so quoting $6$ for the cubic index hides the one line size where the two are level. Both indices read $8$ at $n=2$, so the statement is False.`,
+      `**B.** → True
+
+Comparing two powers is easier as one inequality than as two tables. Subtract and factor, keeping the positive factor visible:
+
+$$G(n)-F(n)=n^{3}-2n^{2}=n^{2}(n-2)$$
+
+Because $n^{2}>0$ for every positive line size, the sign of the difference is the sign of $n-2$ alone, so the cubic index leads exactly when $n>2$:
+
+$$n>2 \\quad \\Longleftrightarrow \\quad G(n)>F(n)$$
+
+A second and independent route divides instead of subtracting. The common square cancels, and the quotient exceeds $1$ on precisely the same set of line sizes:
+
+$$\\frac{G(n)}{F(n)}=\\frac{n^{3}}{2n^{2}}=\\frac{n}{2}$$
+
+Levels just past the crossing agree with both arguments, and the gap between the two columns keeps opening as the line grows:
+
+$$F(3)=18, \\quad G(3)=27, \\qquad F(4)=32, \\quad G(4)=64$$
+
+$$F(10)=200, \\qquad G(10)=1000$$
+
+The coefficient $2$ buys the quadratic index a lead only very close to the origin, which is all a fixed coefficient can ever do. Once the line is longer than two machines the extra factor of $n$ carried by the cubic index outweighs that multiplier, and no later line size reverses the order, because $\\frac{n}{2}$ keeps rising and never falls back through $1$. The cubic index exceeds the quadratic one for every $n>2$, so the statement is True.`,
+      `**C.** → True
+
+The same factored difference settles the small end of the range:
+
+$$G(n)-F(n)=n^{2}(n-2)$$
+
+For $0<n<2$ the bracket is negative while $n^{2}$ stays positive, so the difference is negative and the quadratic index leads. One line size illustrates it, since $F(1)=2$ against $G(1)=1$. The quadratic index leads on $0<n<2$, so the statement is True.`,
+      `**D.** → False
+
+Dividing the two indices cancels the common square and leaves a rule that grows with the line:
+
+$$\\frac{G(n)}{F(n)}=\\frac{n^{3}}{2n^{2}}=\\frac{n}{2}$$
+
+A ratio approaching $1$ would mean the two indices end up level, but this ratio passes every bound:
+
+$$\\frac{G(20)}{F(20)}=10, \\qquad \\frac{G(200)}{F(200)}=100$$
+
+The ratio equals $1$ only at the crossing $n=2$ and never returns to it. The gap widens without limit, so the statement is False.`,
+      `**E.** → False
+
+Just past the crossing the two indices are already apart, and each is a single substitution:
+
+$$F(3)=2\\cdot 9=18, \\qquad G(3)=27$$
+
+The quadratic figure is right, so the row fails only on the cubic one, where $24$ has been written for $27$. The sign test agrees that the cubic index must lead at three machines, since $n^{2}(n-2)=9>0$ there. The cubic index reads $27$ rather than $24$, so the statement is False.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 6,
+    solution_overview: `Two maintenance indices are compared: $F(n)=2n^{2}$ against $G(n)=n^{3}$ index points for a line of $n>0$ machines.
+
+**Part 1: Building the model.**
+
+Let $n$ = number of machines on the line, $F$ and $G$ = the two indices in points. Both are power functions on $n>0$, one with exponent $2$ and coefficient $2$, the other with exponent $3$ and coefficient $1$. A larger coefficient can only lead on small inputs; a larger exponent must lead eventually.
+
+**1. Translate: the comparison.** Subtracting and factoring turns a race between two curves into one sign question:
+
+$$G(n)-F(n)=n^{2}(n-2)$$
+
+**2. Translate: the long run.** Dividing instead of subtracting shows how the gap behaves as the line grows:
+
+$$\\frac{G(n)}{F(n)}=\\frac{n^{3}}{2n^{2}}=\\frac{n}{2}$$
+
+**Part 2: The model.**
+
+$$F(n)=2n^{2}, \\qquad G(n)=n^{3} \\tag{1}$$
+
+$$G(n)>F(n) \\quad \\Longleftrightarrow \\quad n>2 \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** Both indices at small line sizes:
+
+$$F(1)=2, \\quad G(1)=1, \\qquad F(2)=8, \\quad G(2)=8$$
+
+**2.** Both indices just past the crossing:
+
+$$F(3)=18, \\quad G(3)=27, \\qquad F(4)=32, \\quad G(4)=64$$
+
+**3.** The crossing itself, from $(2)$, where the factored difference is zero:
+
+$$n^{2}(n-2)=0 \\quad \\Rightarrow \\quad n=2$$
+
+**4.** The ratio at a few line sizes, which keeps climbing rather than settling:
+
+$$\\frac{G(4)}{F(4)}=2, \\qquad \\frac{G(20)}{F(20)}=10, \\qquad \\frac{G(200)}{F(200)}=100$$
+
+**5.** There is therefore a single crossing at two machines. The quadratic index leads below it, the cubic index leads above it, and the gap widens without limit, because the larger exponent eventually overwhelms any fixed coefficient.
+
+**Answer.** $F(2)=G(2)=8$ | cubic leads for $n>2$ | quadratic leads for $0<n<2$ | ratio $\\frac{n}{2}$ grows without bound | $G(3)=27$`,
+  },
+  {
+    id: `math-8-7`,
+    case_id: `MATH 8.07`,
+    title: `Three Root Transforms on One Calibration Sheet`,
+    context: `A calibration sheet applies $L(x)=x^{\\frac{1}{2}}$, $M(x)=x^{\\frac{1}{3}}$ and $N(x)=x^{-\\frac{1}{2}}$ to a raw sensor reading $x$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `$L(0)=0$.`,
+      `$L(-4)$ has a real value.`,
+      `$M(-8)=-2$.`,
+      `$N(0)$ is defined.`,
+      `$N(4)=2$.`,
+    ],
+    answer_key: [true, false, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The exponent $\\frac{1}{2}$ is a square root, and zero has a square root because zero squared is zero:
+
+$$L(0)=0^{\\frac{1}{2}}=\\sqrt{0}=0$$
+
+A positive exponent keeps the reading in the numerator, so nothing is divided here and the endpoint survives. The transform returns $0$ at a raw reading of zero, so the statement is True.`,
+      `**B.** → False
+
+A square root is an even root, and squaring any real number gives a result that is not negative:
+
+$$L(-4)=(-4)^{\\frac{1}{2}}=\\sqrt{-4}$$
+
+No real number satisfies $y^{2}=-4$, so this transform accepts only $x\\ge 0$ and a negative raw reading has no real value at all. The parity of the root, not the sign of the coefficient, is what closes the domain here. There is no real value at $x=-4$, so the statement is False.`,
+      `**C.** → True
+
+The exponent $\\frac{1}{3}$ is an odd root, and odd roots accept negative inputs, because an odd power of a negative number stays negative:
+
+$$(-2)^{3}=-8 \\quad \\Rightarrow \\quad M(-8)=(-8)^{\\frac{1}{3}}=-2$$
+
+This is the difference between the two roots on the sheet: the cube root returns a value at a reading below zero, while the square root refuses the same reading. The cube root of $-8$ is $-2$, so the statement is True.`,
+      `**D.** → False
+
+A negative exponent is a reciprocal, so the raw reading appears in a denominator, and the square root sits there with it:
+
+$$N(x)=x^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{x}}$$
+
+At $x=0$ the denominator is $\\sqrt{0}=0$, and division by zero has no value, so this transform accepts only strictly positive readings, $x>0$. The negative exponent excludes the endpoint that the square root was happy to accept. The transform has no value at $x=0$, so the statement is False.`,
+      `**E.** → False
+
+The reciprocal has to be respected: the root goes into the denominator, so a raw reading above $1$ returns something below $1$:
+
+$$N(4)=\\frac{1}{\\sqrt{4}}=\\frac{1}{2}$$
+
+The claimed $2$ is $\\sqrt{4}$, the value the first transform returns, so the slip is a dropped minus sign in the exponent. Written side by side the two transforms are reciprocals of one another:
+
+$$L(4)=2, \\qquad N(4)=\\frac{1}{2}, \\qquad L(4)\\cdot N(4)=1$$
+
+Two further readings confirm the pattern rather than one isolated case, since every output here is the reciprocal of a root:
+
+$$N(9)=\\frac{1}{3}, \\qquad N(16)=\\frac{1}{4}$$
+
+The sign of the exponent also fixes the direction of the transform. It falls as the reading grows, so it can return a value above $1$ only when the raw reading is below $1$, as at $N(0.25)=2$. A reading of $4$ sits well above $1$, and the only way to reach $2$ from it is to read the exponent as $\\frac{1}{2}$ instead of $-\\frac{1}{2}$. The domain is untouched by the slip either way, since the denominator would still vanish at zero. The transform returns $\\frac{1}{2}$ at a raw reading of $4$ rather than $2$, so the statement is False.`,
+    ],
+    difficulty_level: `1/5`,
+    sort_order: 7,
+    solution_overview: `Three transforms act on a raw reading: $L(x)=x^{\\frac{1}{2}}$, $M(x)=x^{\\frac{1}{3}}$ and $N(x)=x^{-\\frac{1}{2}}$, and the question is which readings each one accepts.
+
+**Part 1: Building the model.**
+
+Let $x$ = raw sensor reading, and let the three filed values be $L$, $M$ and $N$. All three transforms are power functions with coefficient $1$, so the exponent alone decides both the accepted readings and the size of the output. Two features of the exponent matter: whether the root is even or odd, and whether the sign is positive or negative.
+
+**1. Translate: parity of the root.** An even root demands a reading that is not negative, while an odd root accepts every real reading:
+
+$$L(x)=\\sqrt{x} \\text{ needs } x\\ge 0, \\qquad M(x)=\\sqrt[3]{x} \\text{ accepts all } x$$
+
+**2. Translate: sign of the exponent.** A negative exponent moves the root into a denominator, which excludes zero on top of any parity restriction:
+
+$$N(x)=\\frac{1}{\\sqrt{x}} \\text{ needs } x>0$$
+
+**Part 2: The model.**
+
+$$L(x)=x^{\\frac{1}{2}} \\text{ on } x\\ge 0, \\qquad M(x)=x^{\\frac{1}{3}} \\text{ on all } x \\tag{1}$$
+
+$$N(x)=\\frac{1}{\\sqrt{x}} \\text{ on } x>0 \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** The first transform at three readings:
+
+$$L(0)=0, \\qquad L(4)=2, \\qquad L(9)=3$$
+
+**2.** The second transform, including a negative reading:
+
+$$M(-8)=-2, \\qquad M(8)=2, \\qquad M(27)=3$$
+
+**3.** The third transform from $(2)$, where every output is a reciprocal:
+
+$$N(4)=\\frac{1}{2}, \\qquad N(9)=\\frac{1}{3}, \\qquad N(0.25)=2$$
+
+**4.** The two readings with no value, and the reason in each case:
+
+$$\\sqrt{-4} \\text{ is not real}, \\qquad \\frac{1}{\\sqrt{0}} \\text{ is undefined}$$
+
+**5.** The third transform is also the only one of the three that falls as the reading grows, since its exponent is negative, and it returns a value above $1$ exactly when the raw reading is below $1$.
+
+**Answer.** $L(0)=0$ | $L(-4)$ not real | $M(-8)=-2$ | $N(0)$ undefined | $N(4)=\\frac{1}{2}$`,
+  },
+  {
+    id: `math-8-8`,
+    case_id: `MATH 8.08`,
+    title: `A Filter Bank Pressure Drop That Never Reaches Zero`,
+    context: `A filter bank's pressure drop is $P(x)=12x^{-\\frac{1}{2}}$ kilopascals for $x>0$ cartridges in service. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `At $x=4$ cartridges the drop is $6$ kilopascals.`,
+      `$P$ is strictly decreasing on $x>0$.`,
+      `$P(x)\\to 0$ as $x$ grows without bound, but never reaches $0$.`,
+      `As $x\\to 0^{+}$, $P(x)$ approaches a finite limit.`,
+      `At $x=9$ cartridges the drop is $4$ kilopascals.`,
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The negative fractional exponent is easiest to read as a root in a denominator:
+
+$$P(x)=12x^{-\\frac{1}{2}}=\\frac{12}{\\sqrt{x}}$$
+
+At four cartridges the root is a whole number, so one division finishes the reading:
+
+$$P(4)=\\frac{12}{2}=6$$
+
+Multiplying by the root instead of dividing would give $24$ kilopascals and reverse the whole point of adding cartridges. The drop at four cartridges is $6$ kilopascals, so the statement is True.`,
+      `**B.** → True
+
+The rule has a fixed positive numerator and a root of the cartridge count in the denominator:
+
+$$P(x)=\\frac{12}{\\sqrt{x}}$$
+
+Every extra cartridge enlarges $\\sqrt{x}$, and a larger denominator under a fixed numerator gives a smaller quotient, so the drop falls at every point of the range:
+
+$$P(1)=12, \\qquad P(4)=6, \\qquad P(16)=3$$
+
+The drop is strictly decreasing on $x>0$, so the statement is True.`,
+      `**C.** → True
+
+Two things are being claimed, and the reciprocal form settles both:
+
+$$P(x)=\\frac{12}{\\sqrt{x}}$$
+
+As the bank grows the denominator passes every bound while the numerator stays at $12$, so the quotient is driven towards zero:
+
+$$P(144)=1, \\qquad P(14400)=0.1, \\qquad P(1440000)=0.01$$
+
+Zero itself is never attained, because a quotient with a nonzero numerator cannot equal zero however large the denominator becomes. Setting $\\frac{12}{\\sqrt{x}}=0$ would require $12=0$, so no cartridge count in the domain returns a drop of zero.
+
+The scaling ratio reaches the same verdict without naming any particular level, since quadrupling the bank always multiplies the drop by one fixed factor:
+
+$$\\frac{P(4x)}{P(x)}=4^{-\\frac{1}{2}}=\\frac{1}{2}$$
+
+Repeated quadrupling therefore halves the drop again and again, which brings it below any target that might be named, and yet each halving leaves a positive figure behind. The coefficient $12$ plays no part in either argument, since it cancels in the ratio and only sets the starting level; a bank rated at $120$ or at $1.2$ would behave in exactly the same way.
+
+Both halves of the claim are needed, and they are not in conflict. Getting arbitrarily close to a value is a statement about how far out the bank has to go, while reaching it is a statement about some particular cartridge count, and here the second never happens for any $x$ in the domain. The drop approaches $0$ without reaching it, so the statement is True.`,
+      `**D.** → False
+
+Pulling cartridges runs the same reciprocal in the other direction:
+
+$$P(0.01)=\\frac{12}{\\sqrt{0.01}}=\\frac{12}{0.1}=120$$
+
+$$P(0.0001)=\\frac{12}{0.01}=1200$$
+
+A tiny positive denominator makes the quotient enormous, and no finite figure caps it, so there is no limiting value to quote. The rule does not extend to $x=0$ either, since the denominator would be zero there. The drop grows without bound rather than settling, so the statement is False.`,
+      `**E.** → True
+
+Nine cartridges give another whole root, so the reading is again a single division:
+
+$$P(9)=\\frac{12}{\\sqrt{9}}=\\frac{12}{3}=4$$
+
+The figure sits correctly inside the falling shape, since nine cartridges lie between four and sixteen while $4$ lies between the drops of $6$ and $3$ kilopascals. Adding five cartridges to a bank of four has bought only two kilopascals, because the exponent is $-\\frac{1}{2}$ rather than $-1$. The drop at nine cartridges is $4$ kilopascals, so the statement is True.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 8,
+    solution_overview: `The filter bank obeys $P(x)=12x^{-\\frac{1}{2}}$ kilopascals for $x>0$ cartridges in service, and both shape and levels are needed.
+
+**Part 1: Building the model.**
+
+Let $x$ = cartridges in service, $P$ = pressure drop across the bank in kilopascals. The rule is a power function with coefficient $12$ and exponent $-\\frac{1}{2}$ on the domain $x>0$, where the negative sign makes it fall and the even root closes the domain at zero from below.
+
+**1. Translate: the reciprocal form.** A negative exponent puts the root in a denominator, which is what makes extra cartridges help:
+
+$$P(x)=\\frac{12}{\\sqrt{x}}$$
+
+**2. Translate: a scale factor.** Multiplying the bank by $k$ multiplies the drop by $k^{-\\frac{1}{2}}$, independently of the coefficient:
+
+$$\\frac{P(kx)}{P(x)}=k^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{k}}$$
+
+**Part 2: The model.**
+
+$$P(x)=\\frac{12}{\\sqrt{x}} \\quad \\text{on } x>0 \\tag{1}$$
+
+$$\\frac{P(kx)}{P(x)}=\\frac{1}{\\sqrt{k}} \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** Readings at several bank sizes, from $(1)$:
+
+$$P(1)=12, \\qquad P(4)=6, \\qquad P(9)=4, \\qquad P(16)=3$$
+
+**2.** The quadrupling factor from $(2)$ with $k=4$, which halves the drop:
+
+$$\\frac{1}{\\sqrt{4}}=\\frac{1}{2}$$
+
+**3.** Very large banks, where the drop is small but never zero:
+
+$$P(144)=1, \\qquad P(14400)=0.1$$
+
+**4.** Very small banks, where the denominator collapses and the drop passes every bound:
+
+$$P(0.01)=120, \\qquad P(0.0001)=1200$$
+
+**5.** The two ends therefore behave in opposite ways. There is no ceiling on the drop as cartridges are pulled, and no floor above zero as cartridges are added, with the drop halving for every quadrupling of the bank.
+
+**Answer.** $P(4)=6$ | $P(9)=4$ | strictly decreasing | $P(x)\\to 0$ but never $0$ | unbounded as $x\\to 0^{+}$`,
+  },
+  {
+    id: `math-8-9`,
+    case_id: `MATH 8.09`,
+    title: `Primer for Circular Panels from a Single Recorded Job`,
+    context: `Primer for a circular panel is $y(r)=Ar^{2}$ litres for radius $r>0$ metres, with $y(3)=45$ recorded. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The coefficient is $A=15$.`,
+      `A panel of radius $6$ metres needs $180$ litres.`,
+      `Increasing the radius by $50\\%$ multiplies the primer by $2.25$.`,
+      `A panel of radius $1$ metre needs $5$ litres.`,
+      `Halving the radius halves the primer needed.`,
+    ],
+    answer_key: [false, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → False
+
+The recorded job is one equation, and the square of the radius has to be formed before the division:
+
+$$A\\cdot 3^{2}=45 \\quad \\Rightarrow \\quad 9A=45 \\quad \\Rightarrow \\quad A=5$$
+
+The claimed $15$ is $\\frac{45}{3}$, which divides by the radius instead of by its square, so it is the value the coefficient would take if the exponent were $1$. Area based rules carry exponent $2$. The coefficient is $5$ rather than $15$, so the statement is False.`,
+      `**B.** → True
+
+With the coefficient recovered the rule is $y(r)=5r^{2}$, so the largest panel needs
+
+$$y(6)=5\\cdot 6^{2}=5\\cdot 36=180$$
+
+The scaling route agrees without reusing the coefficient, since doubling the radius from the recorded job multiplies the requirement by $2^{2}=4$, and $45\\times 4=180$. Two independent routes landing on one figure is the check worth making before drums are ordered. The panel needs $180$ litres, so the statement is True.`,
+      `**C.** → True
+
+A scale factor of a power function depends only on the exponent, because the coefficient cancels in the ratio:
+
+$$\\frac{y(1.5r)}{y(r)}=\\frac{A(1.5r)^{2}}{Ar^{2}}=1.5^{2}=2.25$$
+
+A panel half again as wide therefore takes $125\\%$ more primer rather than $50\\%$ more. The requirement is multiplied by $2.25$, so the statement is True.`,
+      `**D.** → True
+
+At a radius of one metre the square of the radius is $1$, so the coefficient is left standing on its own:
+
+$$y(1)=5\\cdot 1^{2}=5$$
+
+This is the reading that gives the coefficient its meaning: five litres is the primer for a panel of radius one metre, and every other entry is that figure multiplied by the square of the radius.
+
+A second route reaches the same litre count without touching the coefficient at all. Scaling down from the recorded job uses the width multiplier $k=\\frac{1}{3}$, and the exponent acts on the whole multiplier:
+
+$$\\frac{y(1)}{y(3)}=\\left(\\frac{1}{3}\\right)^{2}=\\frac{1}{9}, \\qquad \\frac{45}{9}=5$$
+
+The two routes agree, which also confirms that the coefficient recovered from the recorded job was $5$ and not $15$; had it been $15$, this panel would have wanted $15$ litres and the scaling route would have contradicted it. A third pass runs the model back upward and must return the recorded entry:
+
+$$y(3)=5\\cdot 9=45$$
+
+The domain matters here as well, since $r>0$ excludes a panel of zero radius and nothing is being extrapolated below the sizes the rule was built for. A panel of radius one metre needs $5$ litres, so the statement is True.`,
+      `**E.** → False
+
+Halving the radius is a width multiplier of $k=0.5$, and the exponent $2$ acts on the whole multiplier:
+
+$$\\frac{y(0.5r)}{y(r)}=0.5^{2}=0.25$$
+
+Levels around the recorded job make the size of the error plain, since halving the three metre radius gives
+
+$$y(1.5)=5\\cdot 2.25=11.25$$
+
+against the $22.5$ litres a halving rule would predict. A quarter, not a half, is what the narrower panel takes, so the statement is False.`,
+    ],
+    difficulty_level: `1/5`,
+    sort_order: 9,
+    solution_overview: `Primer for one circular panel is $y(r)=Ar^{2}$ litres, and the single recorded entry $y(3)=45$ fixes the coefficient.
+
+**Part 1: Building the model.**
+
+Let $r$ = panel radius in metres, $y$ = primer needed for one panel in litres. The rule $y(r)=Ar^{2}$ is a power function with exponent $2$ on the domain $r>0$, and the coefficient absorbs everything about the primer itself. The recorded entry fixes that coefficient, after which levels and scale factors behave quite differently.
+
+**1. Translate: the recorded job.** The square comes first, then the division that recovers the coefficient:
+
+$$A\\cdot 3^{2}=45, \\qquad 3^{2}=9$$
+
+**2. Translate: a width multiplier.** Multiplying the radius by $k$ multiplies the requirement by $k^{2}$, whatever the coefficient turns out to be:
+
+$$\\frac{y(kr)}{y(r)}=\\frac{A(kr)^{2}}{Ar^{2}}=k^{2}$$
+
+**Part 2: The model.**
+
+$$y(r)=5r^{2} \\tag{1}$$
+
+$$\\frac{y(kr)}{y(r)}=k^{2} \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** The recovered coefficient:
+
+$$9A=45 \\quad \\Rightarrow \\quad A=5$$
+
+**2.** Requirements at several radii, from $(1)$:
+
+$$y(1)=5, \\qquad y(1.5)=11.25, \\qquad y(3)=45, \\qquad y(6)=180$$
+
+**3.** The two width multipliers from $(2)$, one for a wider panel and one for a narrower one:
+
+$$1.5^{2}=2.25, \\qquad 0.5^{2}=0.25$$
+
+**4.** Those multipliers as levels around the recorded entry:
+
+$$45\\times 2.25=101.25, \\qquad 45\\times 0.25=11.25$$
+
+**5.** Of the two width claims, only one survives. A fifty percent wider panel does take a little over twice as much primer, while a panel half as wide takes a quarter rather than a half, because an exponent of $2$ magnifies every change in width.
+
+**Answer.** $A=5$ | $y(1)=5$ | $y(6)=180$ | width factor $1.5$ gives $2.25$ | halving the radius quarters the primer`,
+  },
+  {
+    id: `math-8-10`,
+    case_id: `MATH 8.10`,
+    title: `A Braking Energy Index and the Ten Percent Trap`,
+    context: `A braking energy index is $E(v)=0.5v^{2}$ points for an approach speed $v>0$ in kilometres per hour. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `At $v=10$ the index reads $50$.`,
+      `Raising $v$ from $10$ to $20$ multiplies the index by $4$.`,
+      `At $v=20$ the index reads $200$.`,
+      `The index is never negative for $v>0$.`,
+      `Raising $v$ by $10\\%$ raises the index by $10\\%$.`,
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The square is taken before the coefficient is applied, which is what makes the standard speeds land on whole numbers:
+
+$$E(10)=0.5\\cdot 10^{2}=0.5\\cdot 100=50$$
+
+Halving the speed first and squaring afterwards would give $5^{2}=25$, exactly half of the correct index, and that is the usual slip when the coefficient is a fraction. The notation fixes the order: the exponent binds to $v$ alone, so the coefficient can only be applied to a square that has already been formed.
+
+A second check comes from a neighbouring level rather than from repeating the same arithmetic. The index at the higher standard speed and the doubling factor have to agree with each other:
+
+$$E(20)=0.5\\cdot 400=200, \\qquad \\frac{E(20)}{E(10)}=2^{2}=4$$
+
+Since $50\\times 4=200$, the two entries are consistent, which the mistaken $25$ would not be, because $25\\times 4=100$ is not the index at twenty. Smaller speeds give a third anchor pointing the same way:
+
+$$E(1)=0.5, \\qquad E(2)=2, \\qquad E(4)=8$$
+
+Each of these is the coefficient multiplied by a square, and the quadrupling pattern is visible straight along the row. The index at the lower standard speed reads $50$, so the statement is True.`,
+      `**B.** → True
+
+A ratio of two index values loses the coefficient, so the comparison rests on the exponent alone:
+
+$$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 400}{0.5\\cdot 100}=\\frac{400}{100}=4$$
+
+The same figure comes from the speed multiplier $k=2$ directly, since $2^{2}=4$, without evaluating either level. Doubling the approach speed quadruples the index, so the statement is True.`,
+      `**C.** → True
+
+The higher standard speed is another single substitution, square first:
+
+$$E(20)=0.5\\cdot 20^{2}=0.5\\cdot 400=200$$
+
+The figure is consistent with the doubling factor, since $50\\times 4=200$, so the two entries agree with each other rather than resting on separate arithmetic. Reporting $100$ here would treat the index as proportional to the speed, which the exponent $2$ rules out. The index at the higher standard speed reads $200$, so the statement is True.`,
+      `**D.** → True
+
+Two features of the rule settle the sign with no test data at all. A square is never negative, and the coefficient is positive:
+
+$$v^{2}>0 \\text{ for } v>0, \\qquad 0.5>0$$
+
+The product of two positive quantities is positive, so the index stays above zero across the whole domain. An index of zero would need $v=0$, which the domain excludes. The index is never negative, so the statement is True.`,
+      `**E.** → False
+
+A ten percent overspeed is a speed multiplier of $k=1.1$, and the exponent acts on the whole multiplier rather than on the ten percent:
+
+$$\\frac{E(1.1v)}{E(v)}=1.1^{2}=1.21$$
+
+A level check at the lower standard speed makes the gap concrete:
+
+$$E(11)=0.5\\cdot 121=60.5, \\qquad 60.5-50=10.5$$
+
+The index rises by twenty one percent rather than ten, so the statement is False.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 10,
+    solution_overview: `The braking energy index is $E(v)=0.5v^{2}$ points for an approach speed $v>0$ in kilometres per hour, checked at the standard speeds and under a small overspeed.
+
+**Part 1: Building the model.**
+
+Let $v$ = approach speed in kilometres per hour, $E$ = braking energy index in points. The rule $E(v)=0.5v^{2}$ is a power function with exponent $2$ and coefficient $0.5$ on the domain $v>0$. Levels use the coefficient, while every comparison depends on the exponent alone, since the coefficient cancels in any ratio.
+
+**1. Translate: a level.** Square the speed, then halve it:
+
+$$E(v)=0.5\\cdot v^{2}$$
+
+**2. Translate: a speed multiplier.** Multiplying the approach speed by $k$ multiplies the index by $k^{2}$:
+
+$$\\frac{E(kv)}{E(v)}=\\frac{0.5(kv)^{2}}{0.5v^{2}}=k^{2}$$
+
+**Part 2: The model.**
+
+$$E(v)=0.5v^{2} \\tag{1}$$
+
+$$\\frac{E(kv)}{E(v)}=k^{2} \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** The index at the two standard test speeds, from $(1)$:
+
+$$E(10)=50, \\qquad E(20)=200$$
+
+**2.** The doubling factor from $(2)$ with $k=2$:
+
+$$2^{2}=4$$
+
+**3.** The overspeed factor from $(2)$ with $k=1.1$:
+
+$$1.1^{2}=1.21$$
+
+**4.** That factor as a level, applied to the lower standard speed:
+
+$$E(11)=0.5\\cdot 121=60.5, \\qquad 60.5-50=10.5$$
+
+**5.** Signs need no calculation at all: a square is never negative and the coefficient is positive, so the index stays positive across the whole domain. A ten percent overspeed adds twenty one percent to the index, which is the exponent at work.
+
+**Answer.** $E(10)=50$ | $E(20)=200$ | doubling factor $4$ | index always positive | a $10\\%$ overspeed adds $21\\%$`,
+  },
+  {
+    id: `math-8-11`,
+    case_id: `MATH 8.11`,
     title: `Recovering a Robot's Loading Law from a Recorded Jump`,
     context: `A warehouse robot's loading rate (units per minute) follows the power law $P(u)=A u^{0.75}$, where $u>0$ is the number of units already staged at the pick face. The commissioning log never records $A$ itself: it only notes that raising the staged count from $16$ to $81$ units lifted the loading rate by exactly $57$ units per minute. A separate service note certifies the drive for loading rates up to $100$ units per minute. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -123,7 +1195,7 @@ $$P = 48 \\;\\Rightarrow\\; u \\approx 40.32, \\qquad P = 100 \\;\\Rightarrow\\;
 **5.** The certification therefore caps staging near $107$ units; $110$ units would run the drive at roughly $101.9$ units per minute.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 1,
+    sort_order: 11,
     solution_overview: `A warehouse robot's loading rate follows $P(u)=Au^{0.75}$ for staged units $u>0$. Raising staging from $16$ to $81$ units lifted the rate by $57$ units per minute, and the drive is certified up to $100$ units per minute.
 
 **Part 1: Building the model.**
@@ -169,8 +1241,8 @@ $$P = 48 \\;\\Rightarrow\\; u \\approx 40.32, \\qquad P = 100 \\;\\Rightarrow\\;
 **Answer.** $A = 3$ | $P(u) = 3u^{0.75}$ | certified staging limit $\\approx 107.3$ units`,
   },
   {
-    id: `math-8-2`,
-    case_id: `MATH 8.02`,
+    id: `math-8-12`,
+    case_id: `MATH 8.12`,
     title: `Telescope Resolving Power from a Percentage Rule`,
     context: `A telescope's resolving power follows $R(d)=A d^{r}$, where $d>0$ is the aperture diameter in metres. Neither constant was measured directly. Two facts are on file: widening any aperture by $50\\%$ raises resolving power by $125\\%$, and a bench test on the $5$ m mirror recorded a resolving power of $50$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -285,7 +1357,7 @@ $$R(10) \\approx 50 \\times 2.2331 \\approx 111.7 < 120$$
 The doubling factor of $4$ belongs to the original squared rule; an exponent barely above $1$ delivers barely more than proportional growth, which is what the weaker rule describes. The $10$ m aperture stays under $120$, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 2,
+    sort_order: 12,
     solution_overview: `Resolving power follows $R(d)=Ad^{r}$ for aperture $d>0$. Widening any aperture by $50\\%$ raises resolving power by $125\\%$, and the $5$ m bench test recorded $R=50$.
 
 **Part 1: Building the model.**
@@ -331,8 +1403,8 @@ $$R(10) \\approx 50 \\times 2^{1.1592} \\approx 111.7$$
 **Answer.** $r = 2$ | $A = 2$ | $R(d) = 2d^{2}$ | counterfactual exponent $r' \\approx 1.159$`,
   },
   {
-    id: `math-8-3`,
-    case_id: `MATH 8.03`,
+    id: `math-8-13`,
+    case_id: `MATH 8.13`,
     title: `Two Turbines with Different Wind Exponents`,
     context: `Two turbines report output as power functions of wind speed $w>0$ in metres per second. For turbine A, doubling the wind speed multiplies output by $2\\sqrt{2}$, and at $w=4$ the turbine delivers $32$ kW. Turbine B's output is proportional to the square of wind speed, and at $w=10$ it delivers $100$ kW. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -459,7 +1531,7 @@ $$cw^{1.5} = w^{2} \\quad \\Rightarrow \\quad w = c^{2}, \\qquad c = 4 \\;\\Righ
 The crossover moves from $16$ m/s down to $4$ m/s, below the $5$ m/s threshold, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 3,
+    sort_order: 13,
     solution_overview: `Turbine A doubles-up by a factor $2\\sqrt{2}$ and delivers $32$ kW at $w=4$. Turbine B is proportional to $w^{2}$ and delivers $100$ kW at $w=10$.
 
 **Part 1: Building the model.**
@@ -509,8 +1581,8 @@ Halving $c$ from $4$ to $2$ therefore drops the crossover from $16$ m/s to $4$ m
 **Answer.** $P_A(w) = 4w^{1.5}$ | $P_B(w) = w^{2}$ | crossover $w = 16$ m/s at $256$ kW`,
   },
   {
-    id: `math-8-4`,
-    case_id: `MATH 8.04`,
+    id: `math-8-14`,
+    case_id: `MATH 8.14`,
     title: `Assembly Time, Derived Throughput, and a Manual Rival`,
     context: `Assembling $N$ units on a mechanized line takes $T(N)=A N^{r}$ minutes. Quadrupling the batch multiplies assembly time by $16$, and a batch of $5$ units takes $100$ minutes. Management tracks average throughput $R=\\frac{N}{T}$ in units per minute, expressed as a function of the elapsed time $T$. A manual rival sustains a constant $0.05$ units per minute whatever the batch size. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -627,7 +1699,7 @@ $$T = \\left(\\frac{0.5}{R}\\right)^{2}, \\qquad R = 0.05 \\;\\Rightarrow\\; 100
 The faster rival is matched after $6.25$ minutes, before the $10$-minute mark, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 4,
+    sort_order: 14,
     solution_overview: `Assembly time follows $T(N)=AN^{r}$. Quadrupling the batch multiplies time by $16$, and $T(5)=100$ minutes. Average throughput $R=\\frac{N}{T}$ is tracked against elapsed time, and a manual rival holds $0.05$ units per minute.
 
 **Part 1: Building the model.**
@@ -673,8 +1745,8 @@ $$R = 0.05 \\;\\Rightarrow\\; T = 100, \\qquad R = 0.2 \\;\\Rightarrow\\; T = 6.
 **Answer.** $T(N) = 4N^{2}$ | $R(T) = 0.5\\,T^{-0.5}$ | crossovers at $T = 100$ min and $T = 6.25$ min`,
   },
   {
-    id: `math-8-5`,
-    case_id: `MATH 8.05`,
+    id: `math-8-15`,
+    case_id: `MATH 8.15`,
     title: `Ore-to-Alloy Chain Against a Linear Competitor`,
     context: `Ore of purity $u>0$ yields metal according to $M(u)=c\\,u^{1.5}$. An audit records that lifting purity from $9$ to $16$ raised metal output by $296$ units. Metal is then converted into alloy strength by $S(M)=\\frac{M^{\\frac{2}{3}}}{2}$. A competing supplier quotes strength directly as $S_{\\mathrm{comp}}(u)=1.8u+5$, which is linear rather than a power function. Purity is only meaningful up to $u=50$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -791,7 +1863,7 @@ $$S(50) = 100, \\qquad S_{\\mathrm{comp}}(50) = 95, \\qquad \\text{gap} = 5$$
 The chain leads at every purity from $25$ up to the cap at $50$, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 5,
+    sort_order: 15,
     solution_overview: `Metal yield is $M(u)=cu^{1.5}$, with an audited gain of $296$ units when purity rises from $9$ to $16$. Alloy strength is $S(M)=\\frac{M^{\\frac{2}{3}}}{2}$, the competitor quotes $S_{\\mathrm{comp}}(u)=1.8u+5$, and purity is capped at $u=50$.
 
 **Part 1: Building the model.**
@@ -839,8 +1911,8 @@ The gap is negative below $u=25$ and positive above it, reaching $5$ units at th
 **Answer.** $c = 8$ | $M(u) = 8u^{1.5}$ | $S(u) = 2u$ | crossover at $u = 25$ with strength $50$`,
   },
   {
-    id: `math-8-6`,
-    case_id: `MATH 8.06`,
+    id: `math-8-16`,
+    case_id: `MATH 8.16`,
     title: `Server Peak Load Between a Doubling Rule and an Alarm`,
     context: `A monitoring team models a server's peak load as $L(x)=A x^{r}$, where $x>0$ is the number of simultaneous jobs. Stress tests show that doubling the job count multiplies peak load by $4$, and a run with $30$ simultaneous jobs recorded a peak load of $180$. The hardware alarm trips at a peak load of $500$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -971,7 +2043,7 @@ The gap between those two percentages is the squaring at work: a run already pas
 $$\\text{El}_{x}L = 2$$`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 6,
+    sort_order: 16,
     solution_overview: `Peak load follows $L(x)=Ax^{r}$ for $x$ simultaneous jobs. Doubling the job count multiplies load by $4$, a $30$-job run peaked at $180$, and the alarm trips at $500$.
 
 **Part 1: Building the model.**
@@ -1023,8 +2095,8 @@ $$\\text{El}_{x}L = 2$$
 **Answer.** $r = 2$ | $A = 0.2$ | $L(x) = 0.2x^{2}$ | alarm at $x = 50$ jobs`,
   },
   {
-    id: `math-8-7`,
-    case_id: `MATH 8.07`,
+    id: `math-8-17`,
+    case_id: `MATH 8.17`,
     title: `Survey Reach Against a Fieldwork Budget Cap`,
     context: `Usable survey responses follow $Q(x)=A x^{0.5}$, where $x>0$ measures outreach intensity. When intensity was raised from $25$ to $100$, usable responses increased by exactly $60$. The fieldwork budget caps outreach intensity at $400$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -1121,7 +2193,7 @@ $$Q(64) = 12(8) = 96, \\qquad Q(81) = 12(9) = 108, \\qquad \\frac{108 - 96}{96} 
 Both intensities are perfect squares, so nothing rounds. The intensity itself rose by about $26.6\\%$, and the square root compresses that to under half. The response increase is exactly $12.5\\%$, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 7,
+    sort_order: 17,
     solution_overview: `Responses follow $Q(x)=Ax^{0.5}$, calibrated by a $60$-response increase from intensity $25$ to $100$, with $x\\le400$.
 
 **Part 1:** Translate the difference rather than treating it as a level:
@@ -1139,8 +2211,8 @@ $$Q(400)=240, \\quad Q=180\\Rightarrow x=225, \\quad (2.25)^{0.5}=1.5, \\quad \\
 **Answer.** $A=12$ | ceiling $240$ responses | $180$ responses require intensity $225$`,
   },
   {
-    id: `math-8-8`,
-    case_id: `MATH 8.08`,
+    id: `math-8-18`,
+    case_id: `MATH 8.18`,
     title: `Quadratic and Linear Inspection Costs That Meet Once`,
     context: `Two inspection procedures are costed for a batch of $n>0$ documents. The automated procedure costs $C(n)=a n^{2}$ and the manual procedure costs $D(n)=b n$. Records show that on a batch of $20$ documents the two procedures cost the same, $400$ each. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -1255,7 +2327,7 @@ $$\\frac{C(10)}{10} = 10, \\qquad \\frac{C(30)}{30} = 30$$
 The automated cost per document triples between those batches, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 8,
+    sort_order: 18,
     solution_overview: `Two procedures cost $C(n)=an^{2}$ and $D(n)=bn$ for a batch of $n>0$ documents, and both cost $400$ on a batch of $20$.
 
 **Part 1: Building the model.**
@@ -1301,8 +2373,8 @@ $$\\frac{C(n)}{n} = n \\text{ (rising)}, \\qquad \\frac{D(n)}{n} = 20 \\text{ (c
 **Answer.** $C(n) = n^{2}$ | $D(n) = 20n$ | single crossing at $n = 20$ costing $400$`,
   },
   {
-    id: `math-8-9`,
-    case_id: `MATH 8.09`,
+    id: `math-8-19`,
+    case_id: `MATH 8.19`,
     title: `Warehouse Throughput With a Contractual Ceiling`,
     context: `Warehouse throughput follows $H(s)=A s^{0.6}$ pallets per hour, where $s>0$ is the number of staff on shift. A shift with $32$ staff moved $96$ pallets per hour. The service contract caps billed throughput at $300$ pallets per hour. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -1417,7 +2489,7 @@ $$\\frac{H(32)}{32} = \\frac{96}{32} = 3, \\qquad \\frac{H(243)}{243} = \\frac{3
 Adding staff always lifts total pallets, but each extra worker contributes less than the one before, which is what the average records. Throughput per head falls from $3$ to about $1.33$, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 9,
+    sort_order: 19,
     solution_overview: `Throughput follows $H(s)=As^{0.6}$ pallets per hour for $s$ staff. A $32$-staff shift moved $96$ pallets per hour, and the contract caps billed throughput at $300$.
 
 **Part 1: Building the model.**
@@ -1463,8 +2535,8 @@ $$\\frac{H(s)}{s} = 12 s^{-0.4}, \\qquad 3 \\text{ at } s=32, \\qquad 1.33 \\tex
 **Answer.** $A = 12$ | $H(s) = 12s^{0.6}$ | ceiling binds at $s \\approx 214$ staff`,
   },
   {
-    id: `math-8-10`,
-    case_id: `MATH 8.10`,
+    id: `math-8-20`,
+    case_id: `MATH 8.20`,
     title: `Response Time Recovered from a Server Upgrade`,
     context: `A service's median response time follows $W(k)=A k^{-1.5}$ milliseconds, where $k>0$ is the number of servers. The upgrade log does not state $A$: it records only that moving from $4$ servers to $9$ servers cut the median response time by exactly $19$ ms. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -1579,7 +2651,7 @@ $$k=108^{\\frac{2}{3}}\\approx22.68$$
 The reciprocal exponent is $\\frac{2}{3}$ rather than $1.5$, so scaling the fleet by the ratio of the two times would overshoot badly. The continuous model reaches $2$ ms at about $22.7$ servers, so the statement is True.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 10,
+    sort_order: 20,
     solution_overview: `Median response time follows $W(k)=Ak^{-1.5}$ ms for $k$ servers. Moving from $4$ to $9$ servers cut the median by exactly $19$ ms.
 
 **Part 1: Building the model.**
@@ -1623,8 +2695,8 @@ $$k = \\left(\\frac{216}{W}\\right)^{\\frac{2}{3}}, \\qquad W = 1 \\;\\Rightarro
 **Answer.** $A = 216$ | $W(k) = 216k^{-1.5}$ | $W(4)=27$ ms, $W(9)=8$ ms | $1$ ms needs $36$ servers`,
   },
   {
-    id: `math-8-11`,
-    case_id: `MATH 8.11`,
+    id: `math-8-21`,
+    case_id: `MATH 8.21`,
     title: `Isoelastic Subscription Demand and Its Revenue`,
     context: `Monthly subscriptions follow the isoelastic demand curve $q(p)=A p^{-2}$, where $p>0$ is the price in euros. At a price of $5$ the service sells $400$ subscriptions. Management wants to know what the curve implies for quantity and for revenue $R=pq$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -1741,7 +2813,7 @@ $$q(5) = 400, \\qquad q(2.5) = 1600, \\qquad q(20) = 25$$
 $$R(5) = 2000, \\qquad R(10) = 1000$$`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 11,
+    sort_order: 21,
     solution_overview: `Demand is isoelastic, $q(p)=Ap^{-2}$, with $q(5)=400$. Revenue is $R=pq$.
 
 **Part 1: Building the model.**
@@ -1787,8 +2859,8 @@ $$R(5) = 2000, \\qquad R(10) = 1000$$
 **Answer.** $A = 10000$ | $q(p) = 10000p^{-2}$ | $R(p) = 10000p^{-1}$ | elasticity $-2$`,
   },
   {
-    id: `math-8-12`,
-    case_id: `MATH 8.12`,
+    id: `math-8-22`,
+    case_id: `MATH 8.22`,
     title: `Audit Fees With a Fixed Charge on Top of a Power Term`,
     context: `An audit firm bills $C(n)=F + a n^{0.5}$ for a client with $n>0$ accounts, where $F$ is a fixed engagement charge. Two completed engagements are on file: $100$ accounts were billed at $500$, and $400$ accounts at $800$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -1905,7 +2977,7 @@ $$\\frac{624.3}{500} \\approx 1.249 \\quad \\Rightarrow \\quad +24.9\\%$$
 The fixed charge of $200$ does not move at all, so it dilutes every percentage change in the total, and even the variable part alone would have gained only $41\\%$. The bill rises by about a quarter rather than by more than half, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 12,
+    sort_order: 22,
     solution_overview: `Audit fees are $C(n)=F+an^{0.5}$ for $n>0$ accounts, with $C(100)=500$ and $C(400)=800$.
 
 **Part 1: Building the model.**
@@ -1959,8 +3031,8 @@ $$C(200) \\approx 624.3 \\quad (+24.9\\%)$$
 **Answer.** $F = 200$ | $a = 30$ | $C(n) = 200 + 30\\sqrt{n}$`,
   },
   {
-    id: `math-8-13`,
-    case_id: `MATH 8.13`,
+    id: `math-8-23`,
+    case_id: `MATH 8.23`,
     title: `Fleet Growth Combined With Falling Emission Intensity`,
     context: `An electric-vehicle programme is tracked by two linked power laws. The fleet after $t>0$ years is $a(t)=4t^{0.5}$ thousand vehicles, and average emission intensity falls with fleet size according to $e(a)=120a^{-0.5}$ kilograms per thousand vehicles. Total fleet emissions are $E(t)=a(t)\\,e\\big(a(t)\\big)$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -2069,7 +3141,7 @@ $$e(4) = \\frac{120}{2} = 60, \\qquad e(16) = \\frac{120}{4} = 30$$
 The aggregate and the average move in opposite directions here, $+0.25$ for the total against $-0.5$ for intensity, so a rising total is no evidence of rising intensity. Intensity halves as the fleet quadruples, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 13,
+    sort_order: 23,
     solution_overview: `Fleet size is $a(t)=4t^{0.5}$ thousand vehicles, intensity is $e(a)=120a^{-0.5}$ kg per thousand vehicles, and total emissions are $E(t)=a(t)e(a(t))$.
 
 **Part 1: Building the model.**
@@ -2115,8 +3187,8 @@ $$e(4) = 60, \\qquad e(16) = 30$$
 **Answer.** $E(t) = 240t^{0.25}$ | composed exponent $0.25$ | $E(16) = 480$`,
   },
   {
-    id: `math-8-14`,
-    case_id: `MATH 8.14`,
+    id: `math-8-24`,
+    case_id: `MATH 8.24`,
     title: `Pipeline Capacity, Inversion, and a Change of Units`,
     context: `Flow capacity through a pipe follows $Q(d)=A d^{2.5}$ litres per second, where $d>0$ is the internal diameter in centimetres. A bench test on a $4$ cm pipe measured a capacity of $64$ litres per second. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -2229,7 +3301,7 @@ $$\\frac{Q(4)}{4} = \\frac{64}{4} = 16, \\qquad \\frac{Q(8)}{8} = \\frac{362.0}{
 That is why wider pipes are so much more efficient per centimetre of bore. Capacity per centimetre nearly triples between those two pipes, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 14,
+    sort_order: 24,
     solution_overview: `Flow capacity is $Q(d)=Ad^{2.5}$ litres per second for a diameter $d>0$ in centimetres, with a bench test giving $Q(4)=64$.
 
 **Part 1: Building the model.**
@@ -2275,8 +3347,8 @@ $$\\frac{Q(d)}{d} = 2d^{1.5}, \\qquad 16 \\text{ at } d=4, \\qquad 45.3 \\text{ 
 **Answer.** $A = 2$ | $Q(d) = 2d^{2.5}$ | $250$ l/s needs $d \\approx 6.9$ cm`,
   },
   {
-    id: `math-8-15`,
-    case_id: `MATH 8.15`,
+    id: `math-8-25`,
+    case_id: `MATH 8.25`,
     title: `From Radius Growth to the Area a Service Covers`,
     context: `A delivery hub's service radius expands with time according to $r(t)=3t^{0.5}$ kilometres, where $t>0$ is hours since opening. The area covered is the disc of that radius, $S=\\pi r^{2}$ square kilometres. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -2381,7 +3453,7 @@ $$t = \\frac{100}{9} \\approx 11.11$$
 Routing through the radius adds a step and lands in the same place. The target area arrives after about $11.1$ hours, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 15,
+    sort_order: 25,
     solution_overview: `The service radius is $r(t)=3t^{0.5}$ km after $t>0$ hours, and the area covered is the disc $S=\\pi r^{2}$.
 
 **Part 1: Building the model.**
@@ -2425,8 +3497,8 @@ $$S(1) = 9\\pi, \\quad S(2) = 18\\pi, \\quad S(3) = 27\\pi$$
 **Answer.** $r(t) = 3\\sqrt{t}$ | $S(t) = 9\\pi t$ | $S(9) = 81\\pi$ km²`,
   },
   {
-    id: `math-8-16`,
-    case_id: `MATH 8.16`,
+    id: `math-8-26`,
+    case_id: `MATH 8.26`,
     title: `Two Support Contracts, One Crossing and One Cap`,
     context: `A helpdesk compares two support contracts for $u>0$ tickets a month. Plan A bills $C_A(u)=a u^{0.5}$ and a filed invoice shows $36$ tickets billed at $240$; Plan A also carries a monthly cap, so it never charges more than $400$. Plan B bills a flat $5$ per ticket with no cap. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -2555,7 +3627,7 @@ $$\\frac{C_B(u)}{u} = 5$$
 That is why the ranking flips once and never flips back.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 16,
+    sort_order: 26,
     solution_overview: `Plan A bills $C_A(u)=au^{0.5}$ with an invoice of $240$ at $36$ tickets and a monthly cap of $400$; Plan B bills $5$ per ticket.
 
 **Part 1: Building the model.**
@@ -2619,8 +3691,8 @@ That is why the ranking flips once and never flips back.
 **Answer.** $a = 40$ | crossing at $u = 64$ costing $320$ | cap binds from $u = 100$`,
   },
   {
-    id: `math-8-17`,
-    case_id: `MATH 8.17`,
+    id: `math-8-27`,
+    case_id: `MATH 8.27`,
     title: `An Eighty Percent Learning Curve Meeting a Materials Floor`,
     context: `Unit cost on a new assembly line follows the learning curve $c(N)=c_1 N^{-b}$, where $N>0$ is cumulative output. Every doubling of cumulative output multiplies unit cost by $0.8$, and the first unit cost $1000$. Materials alone cost $400$ per unit, so the curve cannot describe costs below that floor. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -2735,7 +3807,7 @@ $$c(2) = 800, \\qquad c(8) = 512, \\qquad \\frac{512}{800} = 0.64$$
 Quadrupling removes about a third of the cost rather than half, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 17,
+    sort_order: 27,
     solution_overview: `Unit cost follows $c(N)=c_1N^{-b}$ with a doubling multiplier of $0.8$, a first-unit cost of $1000$, and a materials floor at $400$.
 
 **Part 1: Building the model.**
@@ -2779,8 +3851,8 @@ $$N^{0.3219} = 2.5 \\;\\Rightarrow\\; N = 2.5^{\\frac{1}{0.3219}} \\approx 17.2$
 **Answer.** $b \\approx 0.322$ | $c(N) = 1000N^{-0.322}$ | floor reached at $N \\approx 17.2$ units`,
   },
   {
-    id: `math-8-18`,
-    case_id: `MATH 8.18`,
+    id: `math-8-28`,
+    case_id: `MATH 8.28`,
     title: `Advertising Revenue Against a Proportional Platform Fee`,
     context: `A merchant's sales revenue from an advertising spend $x>0$ follows $R(x)=90 x^{0.5}$, while the platform charges a fee of $F(x)=6x$ on the same spend. The merchant judges a campaign by the net gain $R(x)-F(x)$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -2895,7 +3967,7 @@ $$\\frac{R(100)}{100} = 9, \\qquad \\frac{R(225)}{225} = 6, \\qquad \\frac{R(400
 The average crosses the constant fee rate of $6$ exactly at the break-even spend, which is what ends the profitable range. The return per euro falls from $9$ to $4.5$, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 18,
+    sort_order: 28,
     solution_overview: `Revenue is $R(x)=90x^{0.5}$ and the platform fee is $F(x)=6x$ on an advertising spend $x>0$.
 
 **Part 1: Building the model.**
@@ -2941,8 +4013,8 @@ $$\\frac{R(x)}{x} = 90x^{-0.5}, \\qquad 9 \\text{ at } x=100, \\quad 6 \\text{ a
 **Answer.** break-even spend $x = 225$ | $R = F = 1350$ | net gain positive only on $(0,225)$`,
   },
   {
-    id: `math-8-19`,
-    case_id: `MATH 8.19`,
+    id: `math-8-29`,
+    case_id: `MATH 8.29`,
     title: `Calibrating a Two-Stage Production Chain`,
     context: `A plant runs two stages. Labour $L>0$ hours yields processed material $m(L)=A L^{0.5}$ tonnes, and material is converted into finished goods by $g(m)=B m^{1.5}$ units. Two records are available: $100$ labour hours yielded $40$ tonnes of material, and a run on $9$ tonnes of material produced $54$ finished units. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -3057,7 +4129,7 @@ $$\\frac{g(16)}{16} = \\frac{16 \\times 8}{16} = 8, \\qquad \\frac{g(81)}{81} = 
 An exponent above $1$ would have left a rising average instead. Output per hour falls from $8$ to about $5.33$, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 19,
+    sort_order: 29,
     solution_overview: `Stage one gives $m(L)=AL^{0.5}$ tonnes from $L$ labour hours, stage two gives $g(m)=Bm^{1.5}$ finished units. Records: $m(100)=40$ and $g(9)=54$.
 
 **Part 1: Building the model.**
@@ -3103,8 +4175,8 @@ $$\\frac{g(L)}{L} = 16L^{-0.25}, \\qquad 8 \\text{ at } L=16, \\qquad 5.33 \\tex
 **Answer.** $A = 4$ | $B = 2$ | $g(L) = 16L^{0.75}$ | $432$ units need $81$ labour hours`,
   },
   {
-    id: `math-8-20`,
-    case_id: `MATH 8.20`,
+    id: `math-8-30`,
+    case_id: `MATH 8.30`,
     title: `Calibrated Demand, Derived Revenue, and a Fixed Charge`,
     context: `A niche publisher faces demand $q(p)=A p^{-1.5}$ copies per month at a price $p>0$, and a price of $4$ sells $250$ copies. Revenue is $R=pq$, and the operation carries a fixed monthly charge of $400$ with no other costs. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -3221,7 +4293,7 @@ $$R(4) = 1000, \\qquad R(8) = \\frac{2000}{2.828} \\approx 707, \\qquad R(16) = 
 Reading demand's exponent $-1.5$ into the revenue law is the same confusion, since each stage carries its own exponent and its own scale factor. Doubling the price costs about $29\\%$ of revenue, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 20,
+    sort_order: 30,
     solution_overview: `Demand is $q(p)=Ap^{-1.5}$ with $q(4)=250$; revenue is $R=pq$; a fixed charge of $400$ must be covered.
 
 **Part 1: Building the model.**
@@ -3267,8 +4339,8 @@ $$2^{-0.5} \\approx 0.707 \\;(-29\\%), \\qquad 4^{-0.5} = 0.5$$
 **Answer.** $A = 2000$ | $q(p) = 2000p^{-1.5}$ | $R(p) = 2000p^{-0.5}$ | charge covered for $p < 25$`,
   },
   {
-    id: `math-8-21`,
-    case_id: `MATH 8.21`,
+    id: `math-8-31`,
+    case_id: `MATH 8.31`,
     title: `Packing Output Recovered From a Shift Extension`,
     context: `A packing station's output follows $N(h)=A h^{0.5}$ items, where $h>0$ is the length of the shift in hours. The shift log never records the coefficient: it notes only that extending a shift from $4$ to $9$ hours added exactly $30$ items to the count. A customer order of $150$ items has to be filled inside a single shift. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -3381,7 +4453,7 @@ $$\\sqrt{h} = 5 \\;\\Rightarrow\\; h = 25, \\qquad N(20) \\approx 134.2 < 150$$
 $$\\frac{N(h)}{h} = 30h^{-0.5}: \\quad 15 \\text{ at } h=4, \\quad 10 \\text{ at } h=9, \\quad 6 \\text{ at } h=25$$`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 21,
+    sort_order: 31,
     solution_overview: `Packing output follows $N(h)=Ah^{0.5}$ items on a shift of $h>0$ hours. The log records only that extending a shift from $4$ to $9$ hours added $30$ items, and an order of $150$ items must fit in one shift.
 
 **Part 1: Building the model.**
@@ -3427,8 +4499,8 @@ $$\\frac{N(h)}{h} = 30h^{-0.5}: \\quad 15 \\text{ at } h=4, \\quad 10 \\text{ at
 **Answer.** $A = 30$ | $N(h) = 30\\sqrt{h}$ | $N(9) = 90$ | the $150$-item order needs $h = 25$ hours`,
   },
   {
-    id: `math-8-22`,
-    case_id: `MATH 8.22`,
+    id: `math-8-32`,
+    case_id: `MATH 8.32`,
     title: `Drag and Absorbed Power on a Wind-Tunnel Rig`,
     context: `Aerodynamic drag on a test rig follows $F(v)=A v^{r}$ newtons, where $v>0$ is the airspeed in metres per second; neither constant is supplied by the manufacturer. Two wind-tunnel runs are on file: $160$ N at $20$ m/s and $640$ N at $40$ m/s. The rig also reports the power absorbed, $P=F\\cdot v$ watts, and its mounting is rated to $1000$ N. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -3551,7 +4623,7 @@ $$P(50) = F(50)\\cdot 50 = 1000 \\cdot 50 = 50000 \\text{ W}$$
 The claimed $25$ kW is what carrying the factor $\\tfrac{1}{2}$ from the kinetic-energy formula would produce, and that half belongs to the energy stored in moving air rather than to the rate of work against drag. The rig absorbs $50$ kW, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 22,
+    sort_order: 32,
     solution_overview: `Drag follows $F(v)=Av^{r}$ newtons at airspeed $v>0$, with runs of $160$ N at $20$ m/s and $640$ N at $40$ m/s. Absorbed power is $P=F\\cdot v$ and the mounting is rated to $1000$ N.
 
 **Part 1: Building the model.**
@@ -3603,8 +4675,8 @@ $$P(50) = 0.4(125000) = 50000 \\text{ W} = 50 \\text{ kW}$$
 **Answer.** $F(v) = 0.4v^{2}$ | $P(v) = 0.4v^{3}$ | rating reached at $v = 50$ m/s | $P(50) = 50$ kW`,
   },
   {
-    id: `math-8-23`,
-    case_id: `MATH 8.23`,
+    id: `math-8-33`,
+    case_id: `MATH 8.33`,
     title: `Inelastic Demand and Where Revenue Goes`,
     context: `A regional utility faces demand $q(p)=A p^{-0.5}$ units per month at a price $p>0$, and a price of $16$ sells $300$ units. The board wants to know how revenue $R=pq$ behaves along this curve. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -3713,7 +4785,7 @@ $$R(4) = 2400, \\qquad R(16) = 4800, \\qquad R(64) = 9600$$
 Here the exponent is $+0.5$, so revenue not only depends on price but moves in the same direction as it, the hallmark of inelastic demand. Revenue doubles with each quadrupling of price, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 23,
+    sort_order: 33,
     solution_overview: `Demand is $q(p)=Ap^{-0.5}$ with $q(16)=300$, and revenue is $R=pq$.
 
 **Part 1: Building the model.**
@@ -3759,8 +4831,8 @@ $$R(4) = 2400, \\qquad R(16) = 4800, \\qquad R(64) = 9600$$
 **Answer.** $A = 1200$ | $q(p) = 1200p^{-0.5}$ | $R(p) = 1200p^{0.5}$ | elasticity $-0.5$`,
   },
   {
-    id: `math-8-24`,
-    case_id: `MATH 8.24`,
+    id: `math-8-34`,
+    case_id: `MATH 8.34`,
     title: `Kiln Output Under a Licensed Ceiling`,
     context: `A kiln's daily output follows $y(x)=A x^{\\frac{4}{3}}$ tonnes, where $x>0$ is the fuel feed in cubic metres. A test firing at a feed of $27$ produced $324$ tonnes. The site licence caps daily output at $1024$ tonnes. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -3875,7 +4947,7 @@ $$(2.5198-1)\\times100\\%\\approx152.0\\%$$
 Applying the exponent to the $100\\%$ feed increase as though it were an ordinary multiplier lands near the figure in the claim, while the full power goes further. Output rises by about $152\\%$, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 24,
+    sort_order: 34,
     solution_overview: `Kiln output is $y(x)=Ax^{\\frac{4}{3}}$ tonnes for a fuel feed $x>0$, with a test firing $y(27)=324$ and a licensed ceiling of $1024$ tonnes.
 
 **Part 1: Building the model.**
@@ -3921,8 +4993,8 @@ $$\\frac{y(x)}{x} = 4x^{\\frac{1}{3}}, \\qquad 8 \\to 12 \\to 16 \\text{ at feed
 **Answer.** $A = 4$ | $y(x) = 4x^{\\frac{4}{3}}$ | licence ceiling at feed $x = 64$`,
   },
   {
-    id: `math-8-25`,
-    case_id: `MATH 8.25`,
+    id: `math-8-35`,
+    case_id: `MATH 8.35`,
     title: `A Pair of Power Functions That Undo Each Other`,
     context: `A calibration stage converts a raw reading $x>0$ into an index by $f(x)=9x^{\\frac{2}{3}}$, and a reporting stage converts an index $y>0$ back into raw units by $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$. The lab wants to know what happens when the two stages are applied one after the other. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -4031,7 +5103,7 @@ $$f\\big(g(y)\\big) = \\frac{9y}{9} = y$$
 The constants cancel in the mirror-image way, with $27^{\\frac{2}{3}}=9$ where the other order used $9^{\\frac{3}{2}}=27$. The reverse order also returns the input, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 25,
+    sort_order: 35,
     solution_overview: `The calibration stage is $f(x)=9x^{\\frac{2}{3}}$ and the reporting stage is $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$, both on positive inputs.
 
 **Part 1: Building the model.**
@@ -4073,8 +5145,8 @@ $$f(8) = 9 \\times 4 = 36, \\qquad g(36) = \\frac{216}{27} = 8$$
 **Answer.** $g(f(x)) = x$ | $f(g(y)) = y$ | composed exponent $1$ | $f(8)=36$, $g(36)=8$`,
   },
   {
-    id: `math-8-26`,
-    case_id: `MATH 8.26`,
+    id: `math-8-36`,
+    case_id: `MATH 8.36`,
     title: `Two Ranking Algorithms That Swap Places`,
     context: `Two ranking algorithms are scored against a query load $x>0$. Algorithm S obeys $S(x)=a x^{0.5}$, and a benchmark at load $4$ scored $16$. Algorithm T's score is proportional to $x^{1.5}$, and the same benchmark load scored $8$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -4191,7 +5263,7 @@ $$x < 8 \\;\\Rightarrow\\; S > T, \\qquad x > 8 \\;\\Rightarrow\\; T > S$$
 **5.** Because the exponents differ, no coefficient could keep S ahead indefinitely; the coefficient only moves the crossing, which sits at $x=a^{\\frac{1}{(1.5-0.5)}}=8$.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 26,
+    sort_order: 36,
     solution_overview: `Algorithm S obeys $S(x)=ax^{0.5}$ with $S(4)=16$; algorithm T obeys $T(x)=kx^{1.5}$ with $T(4)=8$.
 
 **Part 1: Building the model.**
@@ -4235,8 +5307,8 @@ $$x < 8 \\;\\Rightarrow\\; S > T, \\qquad x > 8 \\;\\Rightarrow\\; T > S$$
 **Answer.** $S(x) = 8x^{0.5}$ | $T(x) = x^{1.5}$ | single crossing at $x = 8$`,
   },
   {
-    id: `math-8-27`,
-    case_id: `MATH 8.27`,
+    id: `math-8-37`,
+    case_id: `MATH 8.37`,
     title: `Server Fleet Capacity Beneath a Contracted Ceiling`,
     context: `A hosting platform's sustained capacity follows $C(m)=A m^{0.8}$ requests per second, where $m>0$ is the number of machines. A fleet of $32$ machines sustains $80$ requests per second. The support contract will not certify more than $500$ requests per second. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -4353,7 +5425,7 @@ $$(1-0.87055)\\times100\\%\\approx12.9\\%$$
 A negative exponent reverses the direction of the change, and the size of the drop still comes from the full power rather than from the exponent read as a percentage. Capacity per machine falls by about $12.9\\%$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 27,
+    sort_order: 37,
     solution_overview: `Capacity follows $C(m)=Am^{0.8}$ requests per second for $m$ machines, with $C(32)=80$ and a contracted ceiling of $500$.
 
 **Part 1: Building the model.**
@@ -4399,8 +5471,8 @@ $$\\frac{C(m)}{m} = 5m^{-0.2}, \\qquad 2.5 \\text{ at } m=32, \\qquad 1.67 \\tex
 **Answer.** $A = 5$ | $C(m) = 5m^{0.8}$ | ceiling binds at $m \\approx 316$ machines`,
   },
   {
-    id: `math-8-28`,
-    case_id: `MATH 8.28`,
+    id: `math-8-38`,
+    case_id: `MATH 8.38`,
     title: `Hiring Against a Square-Root Revenue Curve`,
     context: `A seasonal workshop earns revenue $R(L)=120 L^{0.5}$ from $L>0$ hours of hired labour and pays a wage of $6$ per hour. The owner judges a season by the net gain $R(L)-6L$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -4509,7 +5581,7 @@ $$\\frac{R(100)}{100} = 12, \\qquad \\frac{R(400)}{400} = 6, \\qquad \\frac{R(90
 Constancy would require revenue proportional to hours, while this average starts above the wage of $6$, meets it at $400$ hours and drops below it thereafter. Revenue per hour falls from $12$ to $4$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 28,
+    sort_order: 38,
     solution_overview: `Revenue is $R(L)=120L^{0.5}$ from $L>0$ labour hours, wages cost $6$ per hour, and the net gain is $R(L)-6L$.
 
 **Part 1: Building the model.**
@@ -4555,8 +5627,8 @@ $$\\frac{R(L)}{L} = 120L^{-0.5}: \\quad 12 \\text{ at } 100, \\quad 6 \\text{ at
 **Answer.** break-even at $L = 400$ hours | peak net gain $600$ at $L = 100$ | $\\Pi(900) = -1800$`,
   },
   {
-    id: `math-8-29`,
-    case_id: `MATH 8.29`,
+    id: `math-8-39`,
+    case_id: `MATH 8.39`,
     title: `Splitting an Order Between Two Quadratic-Cost Plants`,
     context: `A firm must produce $60$ units in total and can split them between two plants. Plant 1's cost is $C_1(q)=0.5q^{2}$ and plant 2's cost is $C_2(q)=0.25q^{2}$, where $q$ is that plant's own output. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -4665,7 +5737,7 @@ $$\\frac{C_2(20)}{20} = 5, \\qquad \\frac{C_2(40)}{40} = 10, \\qquad \\frac{C_2(
 A constant unit cost would require exponent $1$ and would remove the trade-off that makes a split optimal. Unit cost triples across that range, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 29,
+    sort_order: 39,
     solution_overview: `Sixty units must be split between plants with costs $C_1(q)=0.5q^{2}$ and $C_2(q)=0.25q^{2}$.
 
 **Part 1: Building the model.**
@@ -4709,8 +5781,8 @@ $$\\frac{C_1(q)}{q} = 0.5q, \\qquad \\frac{C_2(q)}{q} = 0.25q$$
 **Answer.** cheapest split $20$ at plant 1 and $40$ at plant 2, costing $600$ | even split $675$ | all at plant 2 $900$`,
   },
   {
-    id: `math-8-30`,
-    case_id: `MATH 8.30`,
+    id: `math-8-40`,
+    case_id: `MATH 8.40`,
     title: `Testing Whether Field Data Fit One Power Law`,
     context: `A laboratory records four measurements of a response $y$ against an input $x$: $(4,\\,24)$, $(16,\\,192)$, $(9,\\,81)$ and a planned run at $x=25$. An analyst fits a power law $y=Ax^{r}$ using the first two measurements only. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -4819,7 +5891,7 @@ $$A = \\frac{24}{16} = 1.5, \\qquad 1.5(16)^{2} = 384 \\ne 192$$
 An exponent of $2$ would demand a response ratio of $16$ where $8$ was observed, so no freedom remains once the ratio is fixed. The rejected exponent misses the second measurement by a factor of two, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 30,
+    sort_order: 40,
     solution_overview: `Measurements $(4,24)$ and $(16,192)$ are used to fit $y=Ax^{r}$; the point $(9,81)$ and a planned run at $x=25$ test the fit.
 
 **Part 1: Building the model.**
@@ -4863,8 +5935,8 @@ $$3 \\times 25^{1.5} = 3 \\times 125 = 375$$
 **Answer.** $r = 1.5$ | $A = 3$ | $y = 3x^{1.5}$ | predicted $y(25) = 375$`,
   },
   {
-    id: `math-8-31`,
-    case_id: `MATH 8.31`,
+    id: `math-8-41`,
+    case_id: `MATH 8.41`,
     title: `Turning a Negative-Power Demand Curve Around`,
     context: `A component supplier faces demand $q(p)=A p^{-2}$ units, where $p>0$ is the price. At a price of $5$ the supplier sells $100$ units. Procurement wants the relationship written the other way round, with price and revenue expressed as functions of the quantity sold. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -4973,7 +6045,7 @@ $$\\text{El}_{p}q = -2, \\qquad \\text{El}_{q}p = -0.5$$
 **5.** Because demand is elastic, revenue falls in price and rises in quantity — two readings of the same curve.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 31,
+    sort_order: 41,
     solution_overview: `Demand is $q(p)=Ap^{-2}$ with $q(5)=100$; procurement wants price and revenue as functions of quantity.
 
 **Part 1: Building the model.**
@@ -5017,8 +6089,8 @@ $$\\text{El}_{p}q = -2, \\qquad \\text{El}_{q}p = -0.5$$
 **Answer.** $A = 2500$ | $p(q) = 50q^{-0.5}$ | $R(q) = 50q^{0.5}$ | elasticity $-2$`,
   },
   {
-    id: `math-8-32`,
-    case_id: `MATH 8.32`,
+    id: `math-8-42`,
+    case_id: `MATH 8.42`,
     title: `Average Product of a Square-Root Technology`,
     context: `A workshop's output follows $Y(L)=A L^{0.5}$ units, where $L>0$ is labour hours. Increasing labour from $25$ to $100$ hours increased output by exactly $60$ units. Management tracks average product $\\frac{Y}{L}$ and compares output with a linear wage benchmark $W(L)=0.75L$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -5099,7 +6171,7 @@ $$\\frac{\\operatorname{AP}(2.25L)}{\\operatorname{AP}(L)} =(2.25)^{-0.5}=\\frac
 Rising total output does not carry average product with it, because dividing by labour flips the sign of the exponent. Both multipliers in the claim are exact, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 32,
+    sort_order: 42,
     solution_overview: `Output is $Y(L)=AL^{0.5}$, with a $60$-unit output jump from $25$ to $100$ hours; average product is $\\frac{Y}{L}$.
 
 **Part 1:** Translate the jump and the derived average:
@@ -5117,8 +6189,8 @@ $$Y(64)-0.75(64)=48, quad \\operatorname{AP}(225)=0.8, quad Y=180\\Rightarrow L=
 **Answer.** $A=12$ | $Y(L)=12\\sqrt L$ | $\\operatorname{AP}(225)=0.8$ | $180$ units need $225$ hours`,
   },
   {
-    id: `math-8-33`,
-    case_id: `MATH 8.33`,
+    id: `math-8-43`,
+    case_id: `MATH 8.43`,
     title: `Two Break-Even Points Around a Fixed Charge`,
     context: `A contract manufacturer earns $R(q)=60 q^{0.5}$ from an output of $q>0$ units, pays a variable cost of $2q$, and carries a fixed charge of $400$ per period. Profit is $\\Pi(q)=60q^{0.5}-2q-400$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -5231,7 +6303,7 @@ $$R(100) = 600, \\qquad R(200) \\approx 848.5, \\qquad R(400) = 1200$$
 That mismatch is what creates the upper break-even point, since proportional revenue would settle the comparison once and for all by coefficients. Quadrupling output only doubles revenue, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 33,
+    sort_order: 43,
     solution_overview: `Profit is $\\Pi(q)=60q^{0.5}-2q-400$ for output $q>0$.
 
 **Part 1: Building the model.**
@@ -5275,8 +6347,8 @@ $$\\Pi(144) = 32, \\qquad \\Pi(324) = 32, \\qquad \\Pi(25) = -150, \\qquad \\Pi(
 **Answer.** break-even at $q = 100$ and $q = 400$ | peak profit $50$ at $q = 225$`,
   },
   {
-    id: `math-8-34`,
-    case_id: `MATH 8.34`,
+    id: `math-8-44`,
+    case_id: `MATH 8.44`,
     title: `A Benefit and a Cost With Different Exponents`,
     context: `A city values a flood-defence programme of scale $x>0$ by the benefit $B(x)=40 x^{0.5}$ and the cost $C(x)=0.5 x^{1.5}$, both in millions. The net benefit is $B(x)-C(x)$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -5403,7 +6475,7 @@ $$\\frac{C(16)}{B(16)} = \\frac{32}{160} = 0.2 = \\frac{16}{80}$$
 The ordering that holds beyond the crossing does not extend backwards through it. Benefit is five times cost at that scale, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 34,
+    sort_order: 44,
     solution_overview: `Benefit is $B(x)=40x^{0.5}$ and cost is $C(x)=0.5x^{1.5}$ for a programme of scale $x>0$.
 
 **Part 1: Building the model.**
@@ -5453,8 +6525,8 @@ Cost grows twice as fast as benefit under every doubling, so any surplus held at
 **Answer.** crossing at $x = 80$ with $B = C \\approx 357.8$ | net benefit peaks near $x \\approx 27$`,
   },
   {
-    id: `math-8-35`,
-    case_id: `MATH 8.35`,
+    id: `math-8-45`,
+    case_id: `MATH 8.45`,
     title: `Furnace Throughput Calibrated From Two Runs`,
     context: `A furnace's throughput follows $T(g)=A g^{r}$ tonnes per hour, where $g>0$ is the gas feed in cubic metres per hour. Two logged runs are available: a feed of $8$ gave $20$ tonnes per hour, and a feed of $27$ gave $45$. The site licence caps throughput at $80$ tonnes per hour. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -5587,7 +6659,7 @@ $$\\frac{20}{8} = 2.5, \\qquad \\frac{45}{27} \\approx 1.67, \\qquad \\frac{80}{
 Total throughput and gas efficiency move in opposite directions once the exponent falls below one, so the licensed maximum is the least efficient operating point. Efficiency halves across that range, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 35,
+    sort_order: 45,
     solution_overview: `Throughput is $T(g)=Ag^{r}$ tonnes per hour, with logged runs $T(8)=20$ and $T(27)=45$, under a licensed ceiling of $80$.
 
 **Part 1: Building the model.**
@@ -5643,8 +6715,8 @@ $$2.5,\\; 1.67,\\; 1.25$$
 **Answer.** $r = \\frac{2}{3}$ | $A = 5$ | $T(g) = 5g^{\\frac{2}{3}}$ | ceiling at $g = 64$`,
   },
   {
-    id: `math-8-36`,
-    case_id: `MATH 8.36`,
+    id: `math-8-46`,
+    case_id: `MATH 8.46`,
     title: `Rainwater Basin Storage Under a Square Law`,
     context: `A tapered rainwater basin stores $V(d)=A d^{2}$ cubic metres when filled to a depth of $d>0$ metres. A survey at a depth of $4$ metres measured $48$ cubic metres in store. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -5757,7 +6829,7 @@ $$12,\\; 30,\\; 45$$
 Those three figures are cubic metres per metre, taken at depths of $4$, $10$ and $15$ metres. They climb in direct proportion to the depth, which is what an exponent of $1$ means.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 36,
+    sort_order: 46,
     solution_overview: `Basin storage is $V(d)=Ad^{2}$ cubic metres at depth $d>0$, with a survey giving $V(4)=48$.
 
 **Part 1: Building the model.**
@@ -5805,8 +6877,8 @@ Those three figures are cubic metres per metre, taken at depths of $4$, $10$ and
 **Answer.** $A = 3$ | $V(d) = 3d^{2}$ | $675$ m³ at a depth of $15$ m`,
   },
   {
-    id: `math-8-37`,
-    case_id: `MATH 8.37`,
+    id: `math-8-47`,
+    case_id: `MATH 8.47`,
     title: `A Braking-Energy Index Recovered From a Speed Change`,
     context: `A fleet safety report scores braking energy by the index $E(v)=A v^{2}$, where $v>0$ is speed in kilometres per hour. The report does not give $A$ directly: it states only that raising the test speed from $40$ to $60$ km/h raised the index by exactly $100$ points. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -5913,7 +6985,7 @@ $$v=\\sqrt{6400}=80$$
 Only the positive root is admissible, since speed is positive throughout this model. The reading of $320$ corresponds to $80$ km/h, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 37,
+    sort_order: 47,
     solution_overview: `The braking-energy index is $E(v)=Av^{2}$, and raising the test speed from $40$ to $60$ km/h raised the index by $100$ points.
 
 **Part 1: Building the model.**
@@ -5957,8 +7029,8 @@ $$E(100) = 500, \\qquad E = 500 \\;\\Rightarrow\\; v = 100$$
 **Answer.** $A = 0.05$ | $E(v) = 0.05v^{2}$ | $E(100) = 500$`,
   },
   {
-    id: `math-8-38`,
-    case_id: `MATH 8.38`,
+    id: `math-8-48`,
+    case_id: `MATH 8.48`,
     title: `Geometrically Similar Silos: Steel Against Capacity`,
     context: `A supplier builds geometrically similar storage silos. The steel skin scales with the square of the height, $S(h)=a h^{2}$ square metres, while capacity scales with the cube, $V(h)=k h^{3}$ cubic metres. A six-metre silo uses $108$ square metres of steel and holds $72$ cubic metres. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -6059,7 +7131,7 @@ $$S(6) = 108, \\qquad S(12) = 3(144) = 432, \\qquad \\frac{432}{108} = 4$$
 Doubling would require exponent $1$, which no surface law has, and would also break the square-cube comparison of the previous part. Steel quadruples, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 38,
+    sort_order: 48,
     solution_overview: `Similar silos have steel $S(h)=ah^{2}$ and capacity $V(h)=kh^{3}$; a six-metre silo uses $108$ m² of steel and holds $72$ m³.
 
 **Part 1: Building the model.**
@@ -6103,8 +7175,8 @@ $$\\frac{S(h)}{V(h)} = \\frac{9}{h}, \\qquad 1.5,\\; 1,\\; 0.75 \\text{ at } h =
 **Answer.** $S(h) = 3h^{2}$ | $V(h) = \\frac{h^{3}}{3}$ | steel per m³ $= \\frac{9}{h}$`,
   },
   {
-    id: `math-8-39`,
-    case_id: `MATH 8.39`,
+    id: `math-8-49`,
+    case_id: `MATH 8.49`,
     title: `Inspection Hours Across Growing Shipment Volumes`,
     context: `Customs inspection time follows $T(n)=A n^{0.5}$ hours for a consignment of $n>0$ shipments. Moving from a $25$-shipment consignment to a $225$-shipment consignment added exactly $60$ inspection hours. A staffing plan can supply at most $90$ inspection hours. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -6177,7 +7249,7 @@ $$\\frac{T(225)}{225}=\\frac{90}{225}=0.4, \\qquad \\frac{T(25)}{25}=\\frac{30}{
 Total time and shipment count do move together, but not in a constant ratio. The per-shipment rate is not constant, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 39,
+    sort_order: 49,
     solution_overview: `Inspection time is $T(n)=An^{0.5}$, and increasing a consignment from $25$ to $225$ shipments adds $60$ hours.
 
 **Part 1:** Translate the difference and the staffing ceiling:
@@ -6195,8 +7267,8 @@ $$6\\sqrt n\\le90\\Rightarrow n\\le225, quad (2.25)^{0.5}=1.5, quad \\frac{T(144
 **Answer.** $A=6$ | ceiling $225$ shipments | time per shipment falls with consignment size`,
   },
   {
-    id: `math-8-40`,
-    case_id: `MATH 8.40`,
+    id: `math-8-50`,
+    case_id: `MATH 8.50`,
     title: `Illuminance Down the Length of a Gallery`,
     context: `Illuminance from a gallery spotlight follows the inverse-square law $I(d)=A d^{-2}$ lux, where $d>0$ is the distance in metres. A meter reading two metres from the lamp records $300$ lux. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -6305,7 +7377,7 @@ $$I(1) = 1200, \\quad I(2) = 300, \\quad I(4) = 75, \\quad I(10) = 12$$
 The decline is also decelerating, so most of the light is lost in the first few metres rather than spread evenly along the gallery. Illuminance falls monotonically with distance, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 40,
+    sort_order: 50,
     solution_overview: `Illuminance follows $I(d)=Ad^{-2}$ lux at distance $d>0$ metres, with a meter reading of $300$ lux at two metres.
 
 **Part 1: Building the model.**
@@ -6349,8 +7421,8 @@ $$d = \\sqrt{\\frac{1200}{I}}, \\qquad I = 48 \\;\\Rightarrow\\; d = 5$$
 **Answer.** $A = 1200$ | $I(d) = 1200d^{-2}$ | $I(10) = 12$ lux`,
   },
   {
-    id: `math-8-41`,
-    case_id: `MATH 8.41`,
+    id: `math-8-51`,
+    case_id: `MATH 8.51`,
     title: `Audit Cost With Economies of Scale`,
     context: `An audit practice prices engagements by $C(n)=A n^{0.75}$, where $n>0$ is the number of accounts tested. The bill rises by exactly $1900$ when engagement size rises from $16$ to $81$ accounts. A client has a $2700$ cap, while a rival quotes $R(n)=50n$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -6439,7 +7511,7 @@ This full reconstruction also supplies three safeguards: every substituted input
 A final boundary check strengthens the conclusion. Keep the original domain restriction in force, compare the unrounded model value with the exact threshold in the statement, and only then translate the result into words. Changing the order of those operations can hide a domain failure or turn a close inequality into the wrong truth value. Here the exact model, the scale comparison, and the stated units all point in the same direction, so the extended check agrees with the conclusion above.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 41,
+    sort_order: 51,
     solution_overview: `Audit cost follows $C(n)=An^{\\frac{3}{4}}$; the bill rises by $1900$ from $16$ to $81$ accounts. The rival charges $R(n)=50n$.
 
 **Part 1:** Use the two exact fourth-power inputs:
@@ -6457,8 +7529,8 @@ $$C(n)\\le2700\\Rightarrow n\\le81, qquad C(n)=12500\\Rightarrow n=625$$
 **Answer.** $A=100$ | cap $81$ accounts | rival crossover $n=16$ | $12500$ bill at $n=625$`,
   },
   {
-    id: `math-8-42`,
-    case_id: `MATH 8.42`,
+    id: `math-8-52`,
+    case_id: `MATH 8.52`,
     title: `Airborne Particle Concentration Downwind`,
     context: `Downwind particle concentration follows $c(x)=A x^{-1.5}$ micrograms per cubic metre, where $x>0$ is distance from the stack in metres. A monitor at $4$ metres reads exactly $43.75$ more than a monitor at $16$ metres. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -6547,7 +7619,7 @@ $$1-0.3536=0.6464\\approx64.64\\%$$
 For instance, the calibrated readings fall from $c(4)=50$ to $c(8)\\approx17.68$, a drop of about $32.32$ rather than $25$. A $50\\%$ cut would require the surviving fraction $\\frac{1}{2}$, which belongs to exponent $-1$. The actual cut is about $64.6\\%$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 42,
+    sort_order: 52,
     solution_overview: `Concentration is $c(x)=Ax^{\\frac{-3}{2}}$, calibrated by the difference between monitors at $4$ and $16$ metres.
 
 **Part 1:** Translate the monitor difference:
@@ -6565,8 +7637,8 @@ $$c(x)\\le6.25\\Longleftrightarrow x\\ge16, quad (\\frac{1}{2})^{\\frac{-3}{2}}=
 **Answer.** $A=400$ | threshold $x=16$ m | halving factor $2\\sqrt2$ | $c(100)=0.4$`,
   },
   {
-    id: `math-8-43`,
-    case_id: `MATH 8.43`,
+    id: `math-8-53`,
+    case_id: `MATH 8.53`,
     title: `Storm Surge Feeding a Cubic Loss Index`,
     context: `A reinsurer models coastal losses in two stages. Storm surge height is $s(w)=0.5 w^{0.5}$ metres for a wind speed of $w>0$, and the loss index rises with the cube of surge height, $L(s)=32 s^{3}$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -6673,7 +7745,7 @@ $$(1.8371-1)\\times100\\%\\approx83.7\\%$$
 Neither stage exponent in isolation gives this factor, only their product. The loss index rises by about $83.7\\%$, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 43,
+    sort_order: 53,
     solution_overview: `Surge is $s(w)=0.5w^{0.5}$ metres and the loss index is $L(s)=32s^{3}$.
 
 **Part 1: Building the model.**
@@ -6721,8 +7793,8 @@ $$4^{1.5} = 8 > 4$$
 **Answer.** $L(w) = 4w^{1.5}$ | composed exponent $1.5$ | $L(100) = 4000$`,
   },
   {
-    id: `math-8-44`,
-    case_id: `MATH 8.44`,
+    id: `math-8-54`,
+    case_id: `MATH 8.54`,
     title: `Market Impact of a Block Trade`,
     context: `A broker models price impact as $I(v)=A v^{0.5}$ basis points, where $v>0$ is order size as a fraction of average daily volume. Increasing an order from $0.04$ ADV to $0.09$ ADV adds exactly $6$ basis points of impact. The scaled impact charge is $vI(v)$, while a notional fee is $F(v)=30v$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -6811,7 +7883,7 @@ $$\\frac{(2v)I(2v)}{vI(v)}=2^{\\frac{3}{2}}=2\\sqrt2\\approx2.828$$
 At $v=0.04$ the charge is $0.48$, while at $v=0.08$ it is about $1.358$ rather than $0.96$. The visible factor $v$ does not erase the square root already sitting inside impact. The charge is a three-halves power rather than a proportional law, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 44,
+    sort_order: 54,
     solution_overview: `Impact is $I(v)=Av^{\\frac{1}{2}}$, calibrated by the six-basis-point increase from $0.04$ to $0.09$ ADV. The scaled charge is $vI(v)$.
 
 **Part 1:** Use the impact difference:
@@ -6829,8 +7901,8 @@ $$\\sqrt{2.25}=1.5, quad 60v^{\\frac{3}{2}}=30v\\Rightarrow v=0.25, quad I(0.16)
 **Answer.** $A=60$ bp | break-even $v=0.25$ ADV | scaled impact charge has exponent $\\frac{3}{2}$`,
   },
   {
-    id: `math-8-45`,
-    case_id: `MATH 8.45`,
+    id: `math-8-55`,
+    case_id: `MATH 8.55`,
     title: `Allometric Energy Use Across Livestock Weights`,
     context: `Daily energy use follows $E(m)=A m^{\\frac{2}{3}}$ units for body mass $m>0$ kilograms. A $64$ kg animal uses exactly $70$ more energy units per day than a $27$ kg animal. A herd's total use is the sum of its animals' individual uses. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -6919,7 +7991,7 @@ $$\\frac{E(27)}{27}=\\frac{90}{27}=\\frac{10}{3}, \\qquad \\frac{E(64)}{64}=\\fr
 Total use does rise with mass, but less than proportionally, which is exactly what makes the average fall. The two per-kilogram values differ, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 45,
+    sort_order: 55,
     solution_overview: `Energy follows $E(m)=Am^{\\frac{2}{3}}$, calibrated by the $70$-unit difference between $64$ kg and $27$ kg animals.
 
 **Part 1:** Translate the two-point calibration:
@@ -6937,8 +8009,8 @@ $$\\frac{E(2m)}{E(m)}=2^{\\frac{2}{3}}=\\sqrt[3]{4}, quad 8E(27)=720, quad E(216
 **Answer.** $A=10$ | doubling factor $2^{\\frac{2}{3}}$ | eight $27$ kg animals use twice one $216$ kg animal`,
   },
   {
-    id: `math-8-46`,
-    case_id: `MATH 8.46`,
+    id: `math-8-56`,
+    case_id: `MATH 8.56`,
     title: `Retail Catchment Under a Distance-Decay Law`,
     context: `Weekly footfall at a retail park from a residential zone follows $f(d)=A d^{-1.5}$ visitors, where $d>0$ is the driving distance in kilometres. The planning file omits the coefficient: it records only that a zone $4$ kilometres away supplies $350$ more visitors a week than a zone $16$ kilometres away. A zone counts as core catchment when it supplies at least $100$ visitors a week. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -7057,7 +8129,7 @@ $$\\frac{f(4d)}{f(d)} = 4^{-1.5} = \\tfrac{1}{8}$$
 $$f(9) = \\frac{3200}{27} \\approx 118.5 > 100, \\qquad f(10) \\approx 101.2 > 100$$`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 46,
+    sort_order: 56,
     solution_overview: `Footfall follows $f(d)=Ad^{-1.5}$ visitors a week from a zone $d>0$ kilometres away. A zone at $4$ kilometres supplies $350$ more visitors than one at $16$ kilometres, and core catchment means at least $100$ visitors a week.
 
 **Part 1: Building the model.**
@@ -7107,8 +8179,8 @@ $$f(9) = \\frac{3200}{27} \\approx 118.5 > 100, \\qquad f(10) \\approx 101.2 > 1
 **Answer.** $A = 3200$ | $f(d) = 3200d^{-1.5}$ | $f(4) = 400$ | core catchment out to $d \\approx 10.08$ km`,
   },
   {
-    id: `math-8-47`,
-    case_id: `MATH 8.47`,
+    id: `math-8-57`,
+    case_id: `MATH 8.57`,
     title: `Rooftop Solar Output Across Two Installed Arrays`,
     context: `Daily output from a rooftop solar installation follows $y(a)=A a^{r}$ kilowatt-hours, where $a>0$ is the installed panel area in square metres. Two arrays are in service: a $100$ m² array delivers $240$ kWh a day, and a $225$ m² array delivers $360$ kWh. A proposal would expand the second array to $450$ m². Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -7223,7 +8295,7 @@ $$\\frac{240}{100} = 2.4, \\qquad \\frac{360}{225} = 1.6, \\qquad \\frac{509.1}{
 Total output still rises, which is the practical meaning of a sub-linear exponent rather than a contradiction of it. Output per square metre falls throughout, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 47,
+    sort_order: 57,
     solution_overview: `Solar output is $y(a)=Aa^{r}$ kWh for an array of $a>0$ m², with $y(100)=240$ and $y(225)=360$; a proposal doubles the second array to $450$ m².
 
 **Part 1: Building the model.**
@@ -7269,8 +8341,8 @@ $$\\frac{y(a)}{a} = 24a^{-0.5}: \\quad 2.4,\\; 1.6,\\; 1.13 \\text{ at } a = 100
 **Answer.** $r = 0.5$ | $A = 24$ | $y(a) = 24\\sqrt{a}$ | proposal delivers $\\approx 509$ kWh`,
   },
   {
-    id: `math-8-48`,
-    case_id: `MATH 8.48`,
+    id: `math-8-58`,
+    case_id: `MATH 8.58`,
     title: `Battery Cell Costs Down a Learning Curve`,
     context: `Unit cost for battery cells follows $c(N)=A N^{b}$ euros, where $N>0$ is cumulative output in thousands of cells. Two milestones are recorded: at $100$ thousand cells the unit cost was $80$, and at $400$ thousand it was $40$. Cumulative spend is unit cost multiplied by volume. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -7387,7 +8459,7 @@ $$c(100) = 80, \\qquad c(200) = \\frac{800}{\\sqrt{200}} \\approx \\frac{800}{14
 Two doublings make a quadrupling, and $0.7071^{2}=0.5$ recovers the halving rule exactly. The cost falls by about $29\\%$, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 48,
+    sort_order: 58,
     solution_overview: `Unit cost is $c(N)=AN^{b}$ euros at cumulative volume $N>0$ thousand cells, with $c(100)=80$ and $c(400)=40$. Cumulative spend is $S=Nc(N)$.
 
 **Part 1: Building the model.**
@@ -7433,8 +8505,8 @@ $$S(100) = 8000, \\qquad S(1600) = 32000$$
 **Answer.** $b = -0.5$ | $A = 800$ | $c(N) = 800N^{-0.5}$ | $c = 20$ at $N = 1600$`,
   },
   {
-    id: `math-8-49`,
-    case_id: `MATH 8.49`,
+    id: `math-8-59`,
+    case_id: `MATH 8.59`,
     title: `Sediment Transport Driven by Channel Discharge`,
     context: `Sediment transport in a channel follows $S(v)=A v^{3}$ tonnes per day, where $v>0$ is flow velocity, and a gauged run at $v=3$ carried $135$ tonnes per day. Velocity itself depends on discharge through $v(q)=\\frac{q^{0.5}}{2}$. The channel's stability limit is $5000$ tonnes per day. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -7551,7 +8623,7 @@ $$\\frac{S(36)}{36} = 3.75, \\qquad \\frac{S(100)}{100} = 6.25, \\qquad \\frac{S
 Constancy would require the composed exponent to be $1$, whereas each unit of a larger flow carries more sediment than before. Transport per unit of discharge more than triples, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 49,
+    sort_order: 59,
     solution_overview: `Transport is $S(v)=Av^{3}$ with $S(3)=135$, velocity is $v(q)=\\frac{q^{0.5}}{2}$, and the stability limit is $5000$ tonnes per day.
 
 **Part 1: Building the model.**
@@ -7597,8 +8669,8 @@ $$\\frac{S(q)}{q} = 0.625q^{0.5}: \\quad 3.75,\\; 6.25,\\; 12.5 \\text{ at } q =
 **Answer.** $A = 5$ | $S(q) = 0.625q^{1.5}$ | limit at $q = 400$ with $v = 10$`,
   },
   {
-    id: `math-8-50`,
-    case_id: `MATH 8.50`,
+    id: `math-8-60`,
+    case_id: `MATH 8.60`,
     title: `Highly Elastic Demand Under a Price Indexation`,
     context: `A commodity trader faces demand $q(p)=A p^{-3}$ units at a price $p>0$, and a price of $2$ clears $500$ units. A proposed indexation would raise the price by $10\\%$ across the board, and the trader wants the effect on both volume and revenue $R=pq$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -7711,7 +8783,7 @@ $$R(2) = 1000, \\qquad R(2.2) = \\frac{4000}{4.84} \\approx 826.4$$
 Volume falls by about $25\\%$ while each unit sells for $10\\%$ more, and $0.7513 \\times 1.1 = 0.8264$ reconciles the two exactly. Revenue falls by about $17\\%$, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 50,
+    sort_order: 60,
     solution_overview: `Demand is $q(p)=Ap^{-3}$ with $q(2)=500$; revenue is $R=pq$; a proposed indexation raises the price by $10\\%$.
 
 **Part 1: Building the model.**
@@ -7755,8 +8827,8 @@ $$q(2.2) \\approx 375.7, \\qquad R(2.2) \\approx 826.4$$
 **Answer.** $A = 4000$ | $q(p) = 4000p^{-3}$ | $R(p) = 4000p^{-2}$ | indexation: $-25\\%$ volume, $-17\\%$ revenue`,
   },
   {
-    id: `math-8-51`,
-    case_id: `MATH 8.51`,
+    id: `math-8-61`,
+    case_id: `MATH 8.61`,
     title: `Weld Strength Recovered From Two Spot Checks`,
     context: `A production weld's tensile strength follows $S(p)=A p^{k}$ newtons, where $p>0$ is the welding current in amperes. Neither constant is on the calibration sheet: the sheet only records that a $4$ A setting produced $40$ N of strength and a $9$ A setting produced $135$ N. The line rejects any weld below $400$ N. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -7875,7 +8947,7 @@ $$2^{\\frac{3}{2}}=2\\sqrt{2}\\approx2.828$$
 **5.** An exponent above $1$ makes strength outrun current, so a doubled setting gains far more than $2.5$ times the strength, while the reject line is cleared only above about $18.57$ A rather than below $18$ A.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 51,
+    sort_order: 61,
     solution_overview: `Weld strength is $S(p)=Ap^{k}$ newtons, with spot checks $S(4)=40$ and $S(9)=135$, and welds below $400$ N are rejected.
 
 **Part 1: Building the model.**
@@ -7919,8 +8991,8 @@ $$2^{\\frac{3}{2}}=2\\sqrt{2}\\approx2.828$$
 **Answer.** $S(p)=5p^{\\frac{3}{2}}$ | $S(16)=320$ N | reject threshold $\\approx18.57$ A | doubling factor $2^{\\frac{3}{2}}\\approx2.828$`,
   },
   {
-    id: `math-8-52`,
-    case_id: `MATH 8.52`,
+    id: `math-8-62`,
+    case_id: `MATH 8.62`,
     title: `Mooring Holding Power Across Kilograms and Tonnes`,
     context: `A harbour buoy's holding power follows $H(m)=A m^{\\frac{2}{3}}$ kilonewtons when mass $m>0$ is measured in kilograms. A trial buoy of $8$ kg held exactly $24$ kN. The harbour authority prefers masses in tonnes ($1$ tonne $=1000$ kg) and writes the same physical law as $H(t)=B t^{\\frac{2}{3}}$ with $t$ in tonnes. A storm protocol demands at least $150$ kN of holding power. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -8041,7 +9113,7 @@ $$6\\cdot1000^{\\frac{2}{3}}=600, \\qquad 6\\cdot1000^{1}=6000$$
 Only $B=600$ keeps the two unit systems describing the same buoy, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 52,
+    sort_order: 62,
     solution_overview: `Holding power is $H(m)=Am^{\\frac{2}{3}}$ kilonewtons in kilograms with $H(8)=24$, the same law in tonnes is $H(t)=Bt^{\\frac{2}{3}}$, and the storm floor is $150$ kN.
 
 **Part 1: Building the model.**
@@ -8085,8 +9157,8 @@ $$m=25^{\\frac{3}{2}}=125, \\qquad 2^{\\frac{2}{3}}\\approx1.5874$$
 **Answer.** $H(m)=6m^{\\frac{2}{3}}$ | $B=600$ | storm mass $125$ kg | doubling factor $2^{\\frac{2}{3}}\\approx1.587$`,
   },
   {
-    id: `math-8-53`,
-    case_id: `MATH 8.53`,
+    id: `math-8-63`,
+    case_id: `MATH 8.63`,
     title: `Mesh Throughput Against an Inverse-Square Floor`,
     context: `A wireless mesh's sustained throughput follows $T(d)=A d^{-2}$ megabits per second, where $d>0$ is the hop distance in metres. A bench test at $d=4$ m recorded $T=50$ Mbps. The link is rated reliable only while throughput stays at or above $8$ Mbps. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -8197,7 +9269,7 @@ $$\\frac{9\\cdot800}{30^{2}}=\\frac{7200}{900}=8$$
 Checking the tripled transmitter at $30$ m confirms the shortfall, because $\\frac{2400}{900}\\approx2.67$ Mbps sits far below the floor. Tripling stretches the radius only to about $17.32$ m, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 53,
+    sort_order: 63,
     solution_overview: `Mesh throughput is $T(d)=Ad^{-2}$ megabits per second, calibrated by $T(4)=50$, and the link is reliable only while $T\\ge8$.
 
 **Part 1: Building the model.**
@@ -8241,8 +9313,8 @@ $$d=\\sqrt{300}=10\\sqrt{3}\\approx17.32$$
 **Answer.** $T(d)=800d^{-2}$ | reliable radius $10$ m | $T(25)=1.28$ Mbps | tripled coefficient reaches $\\approx17.32$ m`,
   },
   {
-    id: `math-8-54`,
-    case_id: `MATH 8.54`,
+    id: `math-8-64`,
+    case_id: `MATH 8.64`,
     title: `Allometric Gill Area Across Body Masses`,
     context: `A fish physiologist models gill surface area as $G(m)=A m^{\\frac{3}{4}}$ square centimetres for body mass $m>0$ grams. A $256$ g specimen has gill area $512$ cm$^{2}$. Area per gram is the derived intensity $\\frac{G(m)}{m}$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -8357,7 +9429,7 @@ $$8m^{\\frac{-1}{4}}\\Big|_{m=16}=\\frac{8}{2}=4$$
 The figure $8$ does belong to the model, but as the intensity of a one-gram fish, where $G\\frac{(1)}{1}=8$. Intensity has already halved by $16$ g, because a fourth root of $16$ divides it by $2$. At $16$ g the intensity is $4$ cm$^{2}$ per gram against the stated $8$, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 54,
+    sort_order: 64,
     solution_overview: `Gill area is $G(m)=Am^{\\frac{3}{4}}$ square centimetres, calibrated by $G(256)=512$, and intensity is the derived law $\\frac{G(m)}{m}$.
 
 **Part 1: Building the model.**
@@ -8401,8 +9473,8 @@ $$m=27^{\\frac{4}{3}}=81, \\qquad 2G(16)=128>G(32)\\approx107.63$$
 **Answer.** $G(m)=8m^{\\frac{3}{4}}$ | intensity $8m^{\\frac{-1}{4}}$ | $G\\frac{(16)}{16}=4$ | $216$ cm$^{2}$ at $81$ g`,
   },
   {
-    id: `math-8-55`,
-    case_id: `MATH 8.55`,
+    id: `math-8-65`,
+    case_id: `MATH 8.65`,
     title: `Curing Strength From a Timed Gap Between Samples`,
     context: `A concrete lab models early curing strength as $S(t)=A\\sqrt{t}$ megapascals, where $t>0$ is curing time in days. The log never states $A$: it only notes that strength rose by exactly $5$ MPa between day $4$ and day $9$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -8513,7 +9585,7 @@ $$\\frac{S(9)-S(4)}{S(4)}=\\frac{5}{10}=0.5=50\\%$$
 The reconstructed levels agree, since $10$ MPa growing to $15$ MPa is a gain of half the starting value. The percentage is fixed by the day ratio $\\frac{9}{4}$ alone, so it would be the same for any lab whose curve had a different coefficient. The rise from day $4$ to day $9$ is $50\\%$, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 55,
+    sort_order: 65,
     solution_overview: `Curing strength is $S(t)=A\\sqrt{t}$ megapascals, and the only surviving record is the $5$ MPa rise between day $4$ and day $9$.
 
 **Part 1: Building the model.**
@@ -8557,8 +9629,8 @@ $$5\\sqrt{t}=30 \\Rightarrow t=36, \\qquad \\frac{15}{10}=1.5$$
 **Answer.** $S(t)=5\\sqrt{t}$ | $S(4)=10$ and $S(9)=15$ | $30$ MPa on day $36$ | rise of $50\\%$ from day $4$ to day $9$`,
   },
   {
-    id: `math-8-56`,
-    case_id: `MATH 8.56`,
+    id: `math-8-66`,
+    case_id: `MATH 8.66`,
     title: `Cantilever Deflection Checked Against a Third Span`,
     context: `A materials lab models tip deflection of a cantilever as $y(L)=A L^{k}$ millimetres, where $L>0$ is the free span in metres. Two spans are trusted: $y(3)=18$ and $y(6)=72$. A third run recorded $y(9)=150$, and the question is whether that third point still sits on the same power law. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -8667,7 +9739,7 @@ $$k\\approx1.930, \\qquad 2^{2}=4$$
 **5.** The third run is inconsistent with the trusted pair, and no repair is free: rescaling the coefficient breaks both trusted levels, while refitting the exponent drags it below $2$.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 56,
+    sort_order: 66,
     solution_overview: `Tip deflection is modelled as $y(L)=AL^{k}$ millimetres, with trusted runs $y(3)=18$ and $y(6)=72$ and a questionable third run $y(9)=150$.
 
 **Part 1: Building the model.**
@@ -8711,8 +9783,8 @@ $$k\\approx1.930, \\qquad 2^{2}=4$$
 **Answer.** $y(L)=2L^{2}$ | predicted $y(9)=162$ mm | shortfall $12$ mm | refitted exponent $\\approx1.930$ | doubling factor $4$`,
   },
   {
-    id: `math-8-57`,
-    case_id: `MATH 8.57`,
+    id: `math-8-67`,
+    case_id: `MATH 8.67`,
     title: `Mast Steel Mass Under a Finite Percentage Scale-Up`,
     context: `A self-similar mast's steel mass follows $M(h)=A h^{k}$ kilograms, where $h>0$ is mast height in metres. Design notes state that lengthening any mast by $20\\%$ raises steel mass by $72.8\\%$, and a $10$ m reference mast uses exactly $500$ kg of steel. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -8823,7 +9895,7 @@ $$M_{1}(h)=0.5h^{3},\\qquad M_{2}(h)=7h^{3},\\qquad \\frac{M_{2}(1.2h)}{M_{2}(h)
 The second law would put $7000$ kg of steel in the $10$ m reference mast and would reach $500$ kg already at about $4.1$ m, yet it reproduces the $72.8\\%$ rise just as exactly as the first one does. Only a level observation breaks that tie, and the $10$ m mast at $500$ kg is the one on hand. Scale information cannot substitute for level information, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 57,
+    sort_order: 67,
     solution_overview: `Steel mass is $M(h)=Ah^{k}$ kilograms, a $20\\%$ taller mast needs $72.8\\%$ more steel, and the $10$ m reference mast uses $500$ kg.
 
 **Part 1: Building the model.**
@@ -8867,8 +9939,8 @@ $$1.1^{3}=1.331, \\qquad 3^{3}=27$$
 **Answer.** $M(h)=0.5h^{3}$ kg | $M(12)=864$ kg | tripling multiplies mass by $27$ | a $10\\%$ stretch adds $33.1\\%$`,
   },
   {
-    id: `math-8-58`,
-    case_id: `MATH 8.58`,
+    id: `math-8-68`,
+    case_id: `MATH 8.68`,
     title: `Cooling Fan Noise Against a Night-Time Cap`,
     context: `Acoustic intensity from a cooling fan follows $I(d)=A d^{-2}$ watts per square metre, where $d>0$ is distance from the hub in metres. A meter reading at $2$ metres records $0.72$ W/m². Night operations are capped at $0.08$ W/m². Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -8973,7 +10045,7 @@ $$\\frac{I(2)}{2}=0.36, \\qquad \\frac{I(3)}{3}\\approx0.1067$$
 The per-metre figure has lost about $70\\%$ of its value over a single metre, which is what a cubic decay does. Intensity per metre is not constant, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 58,
+    sort_order: 68,
     solution_overview: `Fan intensity is $I(d)=Ad^{-2}$ watts per square metre, calibrated by $I(2)=0.72$, and night work is capped at $0.08$.
 
 **Part 1: Building the model.**
@@ -9017,8 +10089,8 @@ $$\\frac{I(2d)}{I(d)}=\\frac{1}{4}, \\qquad I(2)-I(3)=0.40$$
 **Answer.** $I(d)=2.88d^{-2}$ | cap met at $d=6$ m | doubling factor $\\frac{1}{4}$ | loss from $2$ to $3$ m is $0.40$ W/m²`,
   },
   {
-    id: `math-8-59`,
-    case_id: `MATH 8.59`,
+    id: `math-8-69`,
+    case_id: `MATH 8.69`,
     title: `Pump Head Composed Through a Square Flow Law`,
     context: `A booster pump's differential head follows $H(q)=A q^{2}$ metres when the delivered flow is $q>0$ cubic metres per hour. A commissioning run at $q=5$ recorded $H=50$ m. The plant then pipes that flow through a nozzle whose jet speed is $v(H)=4\\sqrt{H}$ metres per second, so jet speed as a function of flow is the composition $v(q)=v(H(q))$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -9131,7 +10203,7 @@ $$\\frac{H}{v}=\\frac{v}{16}$$
 The commissioning point and its double show the gap plainly: at $v=20\\sqrt{2}$ the head is $50$ m, and at $v=40\\sqrt{2}$ it is $200$ m, four times as much for twice the speed. Head is quadratic in jet speed rather than proportional to it, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 59,
+    sort_order: 69,
     solution_overview: `Head is $H(q)=Aq^{2}$ metres with $H(5)=50$, jet speed is $v(H)=4\\sqrt{H}$ metres per second, and the composition sends flow straight to speed.
 
 **Part 1: Building the model.**
@@ -9175,8 +10247,8 @@ $$4\\sqrt{2}\\,q=40\\sqrt{2} \\quad\\Rightarrow\\quad q=10$$
 **Answer.** $H(q)=2q^{2}$ | $v(q)=4\\sqrt{2}\\,q$ | $v(5)=20\\sqrt{2}$ m/s | $40\\sqrt{2}$ m/s needs $q=10$ | $H=\\frac{v^{2}}{16}$`,
   },
   {
-    id: `math-8-60`,
-    case_id: `MATH 8.60`,
+    id: `math-8-70`,
+    case_id: `MATH 8.70`,
     title: `Warehouse Forklift Throughput Under a Staffing Cap`,
     context: `Forklift throughput follows $T(s)=A s^{0.5}$ pallets per hour, where $s>0$ is the number of drivers on shift. A logged shift with $16$ drivers moved $80$ pallets per hour. Safety rules cap the shift at $36$ drivers. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -9285,7 +10357,7 @@ $$\\max_{0<s\\le36}20\\sqrt s=20\\sqrt{36}=120$$
 Because the maximum is reached, the phrase at most is the right one: $120$ pallets per hour is permitted and nothing higher is. Inverting the claim confirms the direction, since $150$ pallets per hour would require $s=(\\frac{150}{20})^{2}=56.25$ drivers, and even $121$ pallets per hour would require about $36.6$ drivers. Every output above $120$ lies outside the safety rule, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 60,
+    sort_order: 70,
     solution_overview: `Forklift throughput is $T(s)=As^{0.5}$ pallets per hour, calibrated by $T(16)=80$, and safety rules cap the shift at $36$ drivers.
 
 **Part 1: Building the model.**
@@ -9329,8 +10401,8 @@ $$s=\\left(\\frac{100}{20}\\right)^{2}=25, \\qquad \\max_{0<s\\le36}T(s)=120$$
 **Answer.** $T(s)=20\\sqrt{s}$ | $T(36)=120$ | quadrupling doubles throughput | $100$ pallets need $25$ drivers | ceiling $120$ pallets per hour`,
   },
   {
-    id: `math-8-61`,
-    case_id: `MATH 8.61`,
+    id: `math-8-71`,
+    case_id: `MATH 8.71`,
     title: `Subscriber Demand and Revenue for a Streaming Tier`,
     context: `A streaming service prices one subscription tier at $p$ euros per month and models paid subscribers by $q(p)=Ap^{\\frac{-3}{2}}$, measured in thousands. At the current price of $4$ the tier holds $250$ thousand subscribers. Monthly revenue for the tier is $R=pq$, also measured in thousands of euros. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -9455,7 +10527,7 @@ $$2^{\\frac{-3}{2}}\\approx0.35355, \\qquad 1.21^{\\frac{-1}{2}}=\\frac{1}{1.1}\
 **5.** Doubling the price removes about $64.6\\%$ of subscribers, well past a halving, while a rise of $21\\%$ costs only about $9.1\\%$ of revenue. Both effects point the same way, since the revenue exponent $\\frac{-1}{2}$ is negative.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 61,
+    sort_order: 71,
     solution_overview: `Demand is $q(p)=Ap^{\\frac{-3}{2}}$ with $q(4)=250$ thousand subscribers, and revenue is $R=pq$.
 
 **Part 1: Building the model.**
@@ -9499,8 +10571,8 @@ $$2^{\\frac{-3}{2}}\\approx0.35355, \\qquad 1.21^{\\frac{-1}{2}}=\\frac{1}{1.1}\
 **Answer.** $A=2000$ | $R(p)=2000p^{\\frac{-1}{2}}$ | $R(16)=500$`,
   },
   {
-    id: `math-8-62`,
-    case_id: `MATH 8.62`,
+    id: `math-8-72`,
+    case_id: `MATH 8.72`,
     title: `Fixed Retainer Plus a Square-Root Monitoring Fee`,
     context: `A compliance-monitoring platform bills a client $C(n)=400+30n^{\\frac{1}{2}}$ euros per month, where $n\\ge1$ is the number of branches under monitoring. The first term is a fixed retainer and the second term is the variable monitoring charge. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -9619,7 +10691,7 @@ $$C(900)=400+900=1300$$
 The jump from four hundred to nine hundred branches raises the variable charge from $600$ to $900$ euros, a multiplier of $1.5$, which is exactly $(\\frac{900}{400})^{\\frac{1}{2}}=(2.25)^{\\frac{1}{2}}$. The quoted monthly total of $1300$ euros matches the model, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 62,
+    sort_order: 72,
     solution_overview: `The monthly bill is $C(n)=400+30n^{\\frac{1}{2}}$ euros for $n$ monitored branches.
 
 **Part 1: Building the model.**
@@ -9661,8 +10733,8 @@ $$\\frac{700}{100}=7$$
 **Answer.** $C(100)=700$ | $C(400)=1000$ | $C(900)=1300$ | average per branch at $100$ is $7$`,
   },
   {
-    id: `math-8-63`,
-    case_id: `MATH 8.63`,
+    id: `math-8-73`,
+    case_id: `MATH 8.73`,
     title: `Ordering Cost Against Holding Cost at a Spare-Parts Depot`,
     context: `A spare-parts depot reorders one component in batches of $q>0$ units. Annual ordering cost is $O(q)=4800q^{-1}$ euros and annual holding cost is $H(q)=3q$ euros, so the annual total is $T(q)=4800q^{-1}+3q$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -9789,7 +10861,7 @@ $$\\frac{O(q)}{H(q)}=\\frac{4800}{3q^{2}}=\\frac{1600}{q^{2}}<1$$
 so ordering cost is the smaller of the two whenever the batch exceeds $40$. The claim describes what happens below the crossing point, where small batches force frequent reordering. Above it the inequality reverses, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 63,
+    sort_order: 73,
     solution_overview: `Annual cost splits into $O(q)=4800q^{-1}$ for ordering and $H(q)=3q$ for holding, with total $T(q)=4800q^{-1}+3q$.
 
 **Part 1: Building the model.**
@@ -9833,8 +10905,8 @@ $$T(20)=300, \\qquad T(60)=260, \\qquad T(80)=300$$
 **Answer.** components equal at $q=40$ | $T(40)=240$ is the minimum | $T(20)=T(80)=300$`,
   },
   {
-    id: `math-8-64`,
-    case_id: `MATH 8.64`,
+    id: `math-8-74`,
+    case_id: `MATH 8.74`,
     title: `Average Product on a Bottling Line`,
     context: `Output on a bottling line is modelled by $Q(L)=12L^{\\frac{3}{4}}$ units per shift, where $L>0$ is the number of labour hours booked for that shift. Average product is output per labour hour, $\\frac{Q(L)}{L}$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -9945,7 +11017,7 @@ $$Q(81)=12\\cdot27=324, \\qquad \\frac{324}{81}=4$$
 Average product at eighty-one hours is $4$ units per hour, not $6$. The value $6$ belongs to a shift of sixteen hours, and average product has fallen since then because the exponent on labour is below one. The quoted figure is wrong, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 64,
+    sort_order: 74,
     solution_overview: `Output is $Q(L)=12L^{\\frac{3}{4}}$ units per shift and average product is $\\frac{Q(L)}{L}$.
 
 **Part 1: Building the model.**
@@ -9987,8 +11059,8 @@ $$2^{\\frac{-1}{4}}\\approx0.8409$$
 **Answer.** average product $=12L^{\\frac{-1}{4}}$ | $6$ units per hour at $L=16$ | $4$ units per hour at $L=81$`,
   },
   {
-    id: `math-8-65`,
-    case_id: `MATH 8.65`,
+    id: `math-8-75`,
+    case_id: `MATH 8.75`,
     title: `Learning Curve With an Irreducible Assembly Floor`,
     context: `A drone-assembly cell models the labour time of the unit built after $n$ cumulative units by $t(n)=8+50n^{\\frac{-1}{2}}$ minutes, where $n\\ge1$. The constant $8$ is an irreducible handling floor and the second term is the learning component. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -10107,7 +11179,7 @@ $$n>625$$
 The boundary case is exact rather than approximate, since $\\frac{50}{\\sqrt{625}}=\\frac{50}{25}=2$ gives $t(625)=10$ minutes precisely. Unit time is therefore still at $10$ minutes at $625$ cumulative units and drops below only afterwards, for example $t(676)=8+\\frac{50}{26}\\approx9.92$. The threshold and the strict wording both match, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 65,
+    sort_order: 75,
     solution_overview: `Unit labour time is $t(n)=8+50n^{\\frac{-1}{2}}$ minutes, a constant floor plus a decaying learning term.
 
 **Part 1: Building the model.**
@@ -10151,8 +11223,8 @@ $$\\sqrt{n}>25 \\quad \\Rightarrow \\quad n>625$$
 **Answer.** $t(25)=18$ | $t(100)=13$ | floor $8$ approached but never reached | below $10$ minutes once $n>625$`,
   },
   {
-    id: `math-8-66`,
-    case_id: `MATH 8.66`,
+    id: `math-8-76`,
+    case_id: `MATH 8.76`,
     title: `Break-Even for a Fish Farm With Diminishing Harvest Returns`,
     context: `A fish farm turns feed into harvest revenue $R(x)=90x^{\\frac{2}{3}}$ thousand euros in a season, where $x>0$ is tonnes of feed used, while feed and handling cost $C(x)=30x$ thousand euros. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -10283,7 +11355,7 @@ $$R(64)=1440, \\qquad C(64)=1920, \\qquad P(64)=-480$$
 **5.** The scaling test separates the two curves: doubling feed multiplies revenue by $2^{\\frac{2}{3}}\\approx1.5874$ but multiplies cost by $2$. Profit is positive on $0<x<27$, zero at $27$, and negative afterwards, peaking at $x=8$ where $P=120$.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 66,
+    sort_order: 76,
     solution_overview: `Revenue is $R(x)=90x^{\\frac{2}{3}}$ and cost is $C(x)=30x$, both in thousand euros for $x$ tonnes of feed.
 
 **Part 1: Building the model.**
@@ -10327,8 +11399,8 @@ $$R(64)=1440, \\qquad C(64)=1920, \\qquad P(64)=-480$$
 **Answer.** break-even at $x=27$ | $P(8)=120$ | cost leads for every $x>27$`,
   },
   {
-    id: `math-8-67`,
-    case_id: `MATH 8.67`,
+    id: `math-8-77`,
+    case_id: `MATH 8.77`,
     title: `Calibrating a Handling-Cost Law From a Cost Difference`,
     context: `A distribution centre models daily handling cost by $f(x)=Ax^{\\frac{3}{2}}$ euros, where $x>0$ is a pallet-volume index. The individual daily figures were lost, and the only surviving record states that the cost at index $16$ exceeds the cost at index $4$ by $336$ euros. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -10465,7 +11537,7 @@ $$750-162=588$$
 The gap is far wider than the difference between indices $4$ and $9$, which comes to $162-48=114$, because an exponent above $1$ makes each extra unit of volume cost more than the last. The quoted difference matches, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 67,
+    sort_order: 77,
     solution_overview: `Handling cost is $f(x)=Ax^{\\frac{3}{2}}$ euros, and the only record is $f(16)-f(4)=336$.
 
 **Part 1: Building the model.**
@@ -10509,8 +11581,8 @@ $$f(9)=162, \\qquad f(25)=750, \\qquad 750-162=588$$
 **Answer.** $A=6$ | $f(4)=48$, $f(9)=162$, $f(16)=384$, $f(25)=750$ | factor of $4$ on volume multiplies cost by $8$`,
   },
   {
-    id: `math-8-68`,
-    case_id: `MATH 8.68`,
+    id: `math-8-78`,
+    case_id: `MATH 8.78`,
     title: `Inverting a Wastewater Load Model Against a Permit Ceiling`,
     context: `A dye-house discharges a wastewater load of $W(s)=5s^{\\frac{3}{2}}$ kilograms per day, where $s>0$ is a production scale index. The site permit caps the daily load at $320$ kilograms, and the plant wants the largest scale index it may run. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -10635,7 +11707,7 @@ $$\\frac{10.08}{16}\\approx0.63=2^{\\frac{-2}{3}}$$
 Halving would give $8$, and the model permits about $10.1$. Doubling the coefficient costs the plant only about $37\\%$ of its scale, not $50\\%$. The claim uses a proportional rule where a fractional power applies, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 68,
+    sort_order: 78,
     solution_overview: `Load is $W(s)=5s^{\\frac{3}{2}}$ kilograms per day and the permit caps it at $320$.
 
 **Part 1: Building the model.**
@@ -10679,8 +11751,8 @@ $$s=32^{\\frac{2}{3}}\\approx10.08, \\qquad \\frac{10.08}{16}=2^{\\frac{-2}{3}}\
 **Answer.** largest index $s=16$ | inverse $s=(\\frac{W}{5})^{\\frac{2}{3}}$ | $W(9)=135$ | doubling the cap raises the index by $2^{\\frac{2}{3}}\\approx1.59$`,
   },
   {
-    id: `math-8-69`,
-    case_id: `MATH 8.69`,
+    id: `math-8-79`,
+    case_id: `MATH 8.79`,
     title: `Elasticity Shortcut Against the Exact Change in Parking Demand`,
     context: `A city parking authority models hourly demand by $q(p)=Ap^{-2}$ occupied spaces, where $p$ is the hourly tariff in euros, and it records $4000$ occupied spaces at a tariff of $3$. Demand of this form has constant elasticity $-2$, so the usual shortcut predicts a percentage change in demand equal to $-2$ times the percentage change in tariff. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -10793,7 +11865,7 @@ $$q(2.25)=\\frac{36000}{5.0625}\\approx7111.1$$
 A rise of $50\\%$ would give $6000$ spaces. The asymmetry is worth noting: a $25\\%$ rise costs $36\\%$ of demand while a $25\\%$ cut adds about $78\\%$, because the two multipliers $1.25^{-2}$ and $0.75^{-2}$ are not mirror images. so the statement is False.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 69,
+    sort_order: 79,
     solution_overview: `Demand is $q(p)=Ap^{-2}$ with $q(3)=4000$, and the elasticity shortcut is compared with exact finite changes.
 
 **Part 1: Building the model.**
@@ -10837,8 +11909,8 @@ $$q(3)=4000, \\qquad q(3.75)=2560, \\qquad q(2.25)\\approx7111.1$$
 **Answer.** $A=36000$ | exact cut of $36\\%$ for a $25\\%$ rise | exact gain of about $77.8\\%$ for a $25\\%$ cut | shortcut exact only in the limit`,
   },
   {
-    id: `math-8-70`,
-    case_id: `MATH 8.70`,
+    id: `math-8-80`,
+    case_id: `MATH 8.80`,
     title: `Geometrically Similar Bells Cast From One Pattern`,
     context: `A foundry casts geometrically similar bronze bells from a single pattern, so mass follows $M(h)=A h^{3}$ kilograms, where $h>0$ is the bell height in metres. The pattern book omits the coefficient; it records only that a finished bell of height $0.5$ m was weighed at $30$ kg. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -10949,7 +12021,7 @@ $$M(0.25)=240(0.015625)=3.75=\\frac{30}{8}$$
 The reciprocal reading is forced by the ratio rule, since the multiplier $k=\\frac{1}{2}$ enters the same exponent that produced the factor $8$ for $k=2$. Halving the mass alongside the height would answer a question about a law of exponent one. One eighth of the mass survives, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 70,
+    sort_order: 80,
     solution_overview: `Similar bells obey $M(h)=Ah^{3}$, and the single weighing $M(0.5)=30$ fixes the coefficient.
 
 **Part 1: Building the model.**
@@ -10993,8 +12065,8 @@ $$\\frac{M(1.5)}{M(0.5)}=\\frac{810}{30}=27$$
 **Answer.** $A=240$ | $M(h)=240h^{3}$ | $M(1.5)=810$ kg | doubling $\\times 8$, tripling $\\times 27$`,
   },
   {
-    id: `math-8-71`,
-    case_id: `MATH 8.71`,
+    id: `math-8-81`,
+    case_id: `MATH 8.81`,
     title: `Drag and Sustained Power on a Velodrome`,
     context: `Aerodynamic drag on a track cyclist follows $F(v)=A v^{2}$ newtons, where $v>0$ is speed in metres per second. The team log never states $A$: it records only that raising the speed from $8$ to $12$ m/s increased drag by exactly $40$ N. The power needed to overcome that drag is $P=Fv$ watts, and the rider can hold $500$ W for a full pursuit. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -11111,7 +12183,7 @@ $$P(8)=256, \\qquad P(10)=500, \\qquad P(12)=864, \\qquad \\frac{P(v)}{v}=0.5v^{
 **5.** Carrying a speed multiplier straight across understates the cost of going faster: a fifth more speed asks for nearly three quarters more power, and the last $2$ m/s above the ceiling would add $364$ W to a $500$ W budget.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 71,
+    sort_order: 81,
     solution_overview: `Drag is $F(v)=Av^{2}$, calibrated by the $40$ N gap between $8$ and $12$ m/s. Absorbed power is $P=Fv$, and the rider's ceiling is $500$ W.
 
 **Part 1: Building the model.**
@@ -11159,8 +12231,8 @@ $$P(8)=256, \\qquad P(10)=500, \\qquad P(12)=864, \\qquad \\frac{P(v)}{v}=0.5v^{
 **Answer.** $A=0.5$ | $F(v)=0.5v^{2}$, $P(v)=0.5v^{3}$ | ceiling at $v=10$ m/s | $P(12)=864$ W`,
   },
   {
-    id: `math-8-72`,
-    case_id: `MATH 8.72`,
+    id: `math-8-82`,
+    case_id: `MATH 8.82`,
     title: `Signal Attenuation From a Buried Cable Locator`,
     context: `The signal a locator receives from a buried conductor follows $S(x)=A x^{-3}$ millivolts, where $x>0$ is the burial depth in metres. A calibration run over a conductor buried at $2$ metres read $50$ millivolts. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -11265,7 +12337,7 @@ $$2(50)=100, \\qquad 4(6.25)=25, \\qquad 5(3.2)=16$$
 What does stay constant is $x^{3}S(x)=400$, which is the invariant the exponent actually dictates. The signal falls as depth grows, and that shared direction is what makes the wrong exponent easy to accept. Because the product $x\\,S(x)$ keeps falling, the received signal is not inversely proportional to burial depth, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 72,
+    sort_order: 82,
     solution_overview: `Attenuation is $S(x)=Ax^{-3}$ in millivolts, pinned by the calibration reading $S(2)=50$.
 
 **Part 1: Building the model.**
@@ -11309,8 +12381,8 @@ $$2^{-3}=\\frac{1}{8}, \\qquad x\\,S(x)=400x^{-2}$$
 **Answer.** $A=400$ | $S(x)=400x^{-3}$ | $S(4)=6.25$ mV | $3.2$ mV at $x=5$ m`,
   },
   {
-    id: `math-8-73`,
-    case_id: `MATH 8.73`,
+    id: `math-8-83`,
+    case_id: `MATH 8.83`,
     title: `Oxygen Demand and Gill Area in a Hatchery`,
     context: `A hatchery models a fish's oxygen demand as $D(m)=A m^{\\frac{3}{4}}$ millilitres per hour and its gill surface area as $G(m)=B m^{\\frac{2}{3}}$ square centimetres, where $m>0$ is body mass in grams. Neither coefficient is published. The records show that an $81$ g fish demands exactly $95$ millilitres per hour more than a $16$ g fish, and that a $64$ g fish carries $48$ square centimetres of gill. A tank's total demand is the sum of its fish's individual demands. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -11425,7 +12497,7 @@ $$D(256)=5\\left(256^{\\frac{3}{4}}\\right)=5(64)=320, \\qquad \\frac{640}{320}=
 That factor of two is the signature of an exponent below one: splitting a fixed mass into many small bodies always raises the pooled demand. Pooling the masses first and applying the law once would treat a three-quarter power as if it were additive. The small fish demand exactly twice the single fish's oxygen, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 73,
+    sort_order: 83,
     solution_overview: `Oxygen demand is $D(m)=Am^{\\frac{3}{4}}$ and gill area is $G(m)=Bm^{\\frac{2}{3}}$. The demand coefficient comes from the $95$ mL/h gap between an $81$ g and a $16$ g fish; the gill coefficient comes from the $64$ g record.
 
 **Part 1: Building the model.**
@@ -11475,8 +12547,8 @@ $$16\\,D(16)=640=2\\,D(256)$$
 **Answer.** $A=5$, $B=3$ | $D(m)=5m^{\\frac{3}{4}}$, $G(m)=3m^{\\frac{2}{3}}$ | demand per unit gill $=\\frac{5}{3}m^{\\frac{1}{12}}$, rising | $D(256)=320$ mL/h`,
   },
   {
-    id: `math-8-74`,
-    case_id: `MATH 8.74`,
+    id: `math-8-84`,
+    case_id: `MATH 8.84`,
     title: `Micro-Irrigation Flow Under a Fourth-Power Law`,
     context: `Volumetric flow through a micro-irrigation emitter follows $Q(r)=A r^{4}$ litres per hour, where $r>0$ is the internal tube radius in millimetres. A bench test on a tube of radius $2$ mm delivered $48$ litres per hour. The designers also track the mean velocity index $\\frac{Q}{\\pi r^{2}}$, which spreads the flow across the tube's cross-section. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -11597,7 +12669,7 @@ A leftover exponent of $2$ leaves the index climbing with the bore:
 Both quantities grow with the radius, which is what makes a cancellation look plausible, but flow gains two exponents on the cross-section. The index rises ninefold across the tubes, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 74,
+    sort_order: 84,
     solution_overview: `Flow obeys $Q(r)=Ar^{4}$, pinned by the bench test $Q(2)=48$. The mean velocity index is $\\frac{Q}{\\pi r^{2}}$.
 
 **Part 1: Building the model.**
@@ -11645,8 +12717,8 @@ $$\\frac{12}{\\pi}\\approx 3.82, \\qquad \\frac{27}{\\pi}\\approx 8.59$$
 **Answer.** $A=3$ | $Q(r)=3r^{4}$ | $Q(3)=243$ L/h | velocity index $=\\frac{3}{\\pi}r^{2}$`,
   },
   {
-    id: `math-8-75`,
-    case_id: `MATH 8.75`,
+    id: `math-8-85`,
+    case_id: `MATH 8.85`,
     title: `Barrier Distance for a Radiography Source`,
     context: `Dose rate near an industrial radiography source follows the inverse-square law $H(d)=A d^{-2}$ microsieverts per hour, where $d>0$ is the distance from the source in metres. A survey meter three metres from the source reads $80$ microsieverts per hour. Site rules put the barrier where the dose rate has fallen to $5$ microsieverts per hour. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -11755,7 +12827,7 @@ $$H(9)=\\frac{720}{81}\\approx 8.89$$
 One third of the survey reading would be about $26.7$ microsieverts per hour, three times what the meter would actually show at nine metres. Reading the tripling straight through as a division by three is right for an inverse-proportional law rather than an inverse-square one. One ninth of the dose rate survives, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 75,
+    sort_order: 85,
     solution_overview: `Dose rate obeys the inverse-square law $H(d)=Ad^{-2}$, pinned by the survey reading $H(3)=80$. The barrier sits where $H=5$.
 
 **Part 1: Building the model.**
@@ -11803,8 +12875,8 @@ $$d^{2}=\\frac{720}{5}=144 \\quad \\Rightarrow \\quad d=12$$
 **Answer.** $A=720$ | $H(d)=720d^{-2}$ | $H(6)=20$ | barrier at $d=12$ m`,
   },
   {
-    id: `math-8-76`,
-    case_id: `MATH 8.76`,
+    id: `math-8-86`,
+    case_id: `MATH 8.86`,
     title: `A Dye Plume Spreading Across a Shallow Lake`,
     context: `A tracer dye released into a shallow lake spreads as a disc whose radius follows $r(t)=A t^{\\frac{2}{3}}$ metres, with $t>0$ measured in hours since release. The survey note omits the coefficient: it records only that the radius grew by exactly $45$ metres between hour $1$ and hour $8$. The stained area is the disc $S=\\pi r^{2}$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -11917,7 +12989,7 @@ $$t^{\\frac{2}{3}}=16 \\quad \\Rightarrow \\quad t=16^{\\frac{3}{2}}=64$$
 **5.** The two exponents straddle one: area outruns proportional growth, since $\\frac{4}{3}>1$, while the radius lags it, since $\\frac{2}{3}<1$, so a target radius arrives far later than a linear reading would predict.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 76,
+    sort_order: 86,
     solution_overview: `The plume radius is $r(t)=At^{\\frac{2}{3}}$, calibrated by the $45$-metre growth between hour $1$ and hour $8$. The stained area is $S=\\pi r^{2}$.
 
 **Part 1: Building the model.**
@@ -11965,8 +13037,8 @@ $$t^{\\frac{2}{3}}=16 \\quad \\Rightarrow \\quad t=16^{\\frac{3}{2}}=64$$
 **Answer.** $A=15$ | $r(t)=15t^{\\frac{2}{3}}$, $S(t)=225\\pi t^{\\frac{4}{3}}$ | area factor $8^{\\frac{4}{3}}=16$ over the first eight hours | $r=240$ m at $t=64$ h`,
   },
   {
-    id: `math-8-77`,
-    case_id: `MATH 8.77`,
+    id: `math-8-87`,
+    case_id: `MATH 8.87`,
     title: `A Weir Rating Curve Rewritten in New Units`,
     context: `Discharge over a measuring weir follows $Q(h)=A h^{\\frac{3}{2}}$ cubic metres per second, where $h>0$ is the head in metres. A gauging at a head of $0.25$ metres recorded a discharge of $2$ cubic metres per second. A field team wants the same rating curve rewritten with the head in centimetres, sometimes keeping discharge in cubic metres per second and sometimes reporting it in litres per second. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -12083,7 +13155,7 @@ $$\\frac{Q(1)}{Q(0.25)}=4^{\\frac{3}{2}}=\\left(\\sqrt{4}\\right)^{3}=8, \\qquad
 Quadrupling the head therefore raises discharge eightfold rather than sixteenfold, because the exponent is $\\frac{3}{2}$ and not $2$. The claimed $32$ is what a squared law would give from $4^{2}=16$. The discharge is $16$ cubic metres per second, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 77,
+    sort_order: 87,
     solution_overview: `The rating curve is $Q(h)=Ah^{\\frac{3}{2}}$ in metres and cubic metres per second, pinned by the gauging $Q(0.25)=2$. The team wants the same curve in centimetres, and in litres per second.
 
 **Part 1: Building the model.**
@@ -12129,8 +13201,8 @@ $$16(0.25)^{\\frac{3}{2}}=2, \\qquad 0.016(25)^{\\frac{3}{2}}=2, \\qquad 16(25)^
 **Answer.** $A=16$ | $Q=16h^{\\frac{3}{2}}$ (m, cubic m/s) | $Q=0.016h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, cubic m/s) | $Q=16h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, L/s)`,
   },
   {
-    id: `math-8-78`,
-    case_id: `MATH 8.78`,
+    id: `math-8-88`,
+    case_id: `MATH 8.88`,
     title: `A Grain Dryer Calibrated From Two Recorded Ratios`,
     context: `Fuel use in a grain dryer follows $F(x)=A x^{r}$ litres per batch, where $x>0$ is the batch mass in tonnes. Neither constant is published. Two figures are on file: doubling the batch mass raises fuel use by $300\\%$, and moving from a $2$-tonne batch to a $6$-tonne batch adds exactly $96$ litres. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -12243,7 +13315,7 @@ $$\\frac{F(2)}{2}=6, \\qquad \\frac{F(6)}{6}=18=3\\times 6$$
 An exponent of one is precisely what proportionality means, so the tripled mass triples the per-tonne figure as well. A per-unit figure would be constant only if the underlying exponent were one, which is not the case here. The per-tonne figure is $3x$ and rises proportionally, so the statement is True.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 78,
+    sort_order: 88,
     solution_overview: `Fuel use is $F(x)=Ax^{r}$. The doubling rule fixes the exponent, and the $96$-litre gap between $2$ and $6$ tonnes fixes the coefficient.
 
 **Part 1: Building the model.**
@@ -12291,8 +13363,8 @@ $$\\frac{F(3x)}{F(x)}=3^{2}=9, \\qquad \\frac{F(x)}{x}=3x$$
 **Answer.** $r=2$, $A=3$ | $F(x)=3x^{2}$ | $F(10)=300$ litres | fuel per tonne $=3x$`,
   },
   {
-    id: `math-8-79`,
-    case_id: `MATH 8.79`,
+    id: `math-8-89`,
+    case_id: `MATH 8.89`,
     title: `Kiln Flue Mass Flow into a Particulate Index`,
     context: `A kiln's flue-gas mass flow follows $m(t)=A t^{\\frac{1}{2}}$ tonnes per hour for throttle setting $t>0$, and the particulate load index is then $P(m)=\\frac{m^{4}}{16}$. A calibration at $t=9$ recorded $m=6$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -12407,7 +13479,7 @@ $$m(9)=2\\sqrt{9}=6, \\qquad P(6)=\\frac{6^{4}}{16}=\\frac{1296}{16}=81$$
 The quoted setting of $27$ comes from treating an exponent as a number to divide by, or from reading $81$ as $3^{4}$ and keeping three of those factors; either route confuses powers with factors. Because the composed map is strictly increasing, the solution is unique. The required throttle setting is $9$, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 79,
+    sort_order: 89,
     solution_overview: `Flue mass flow is $m(t)=At^{\\frac{1}{2}}$ tonnes per hour with the calibration $m(9)=6$, and the particulate index is $P(m)=\\frac{m^{4}}{16}$.
 
 **Part 1: Building the model.**
@@ -12453,8 +13525,8 @@ The chain compresses a half and a fourth power into a clean square, so the index
 **Answer.** $A=2$ | $m(t)=2\\sqrt{t}$ | $P\\circ m=t^{2}$ | index $81$ at $t=9$`,
   },
   {
-    id: `math-8-80`,
-    case_id: `MATH 8.80`,
+    id: `math-8-90`,
+    case_id: `MATH 8.90`,
     title: `Two Shuttle Fare Timers Under a Wait Cap`,
     context: `Two municipal shuttle apps quote wait time for a trip of distance $d>0$ kilometres. App L uses $L(d)=4d^{\\frac{1}{2}}$ minutes and App Q uses $Q(d)=0.2d$ minutes. A service-level agreement caps wait at $20$ minutes. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -12571,7 +13643,7 @@ $$L(400)=80, \\qquad L(800)=4\\sqrt{800}\\approx 113.14$$
 A doubling would demand $160$ minutes, and the model returns roughly $113$. Exact doubling is the signature of exponent $1$, and in this task that exponent belongs to App Q, whose quote does move from $80$ to $160$ minutes across the same two distances. The claim attaches App Q's scaling rule to App L, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 80,
+    sort_order: 90,
     solution_overview: `App L quotes $L(d)=4d^{\\frac{1}{2}}$ minutes, App Q quotes $Q(d)=0.2d$ minutes, and the agreement caps wait at $20$ minutes.
 
 **Part 1: Building the model.**
@@ -12615,8 +13687,8 @@ $$20\\,d^{\\frac{-1}{2}}<1 \\quad \\Longleftrightarrow \\quad d>400$$
 **Answer.** crossover at $d=400$ | App L cap $d\\le 25$ | App Q cap $d\\le 100$ | App L faster for $d>400$`,
   },
   {
-    id: `math-8-81`,
-    case_id: `MATH 8.81`,
+    id: `math-8-91`,
+    case_id: `MATH 8.91`,
     title: `Wetland Evaporation Across Three Humidity Readings`,
     context: `A field team records wetland evaporation $E$ millimetres per day against humidity deficit $h>0$. Three readings are $(h,E)=(1,20)$, $(4,40)$ and $(9,60)$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -12733,7 +13805,7 @@ $$2^{\\frac{1}{2}}\\approx 1.4142$$
 **5.** Forcing the exponent to $1$ at the last reading alone gives $A=\\frac{60}{9}=\\frac{20}{3}$, a rival law that misses both earlier points. The data themselves show why: the deficit rises ninefold from $1$ to $9$ while evaporation only triples, and a ninefold input against a threefold output is exactly what an exponent of $\\frac{1}{2}$ predicts.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 81,
+    sort_order: 91,
     solution_overview: `Three wetland readings are $(h,E)=(1,20)$, $(4,40)$ and $(9,60)$, and the question is whether one power law $E(h)=Ah^{r}$ carries all three.
 
 **Part 1: Building the model.**
@@ -12777,8 +13849,8 @@ $$2^{\\frac{1}{2}}\\approx 1.4142$$
 **Answer.** $E(h)=20\\sqrt{h}$ fits all three | exponent $\\frac{1}{2}$ with coefficient $20$ | the line gives $\\frac{220}{3}$ at $h=9$`,
   },
   {
-    id: `math-8-82`,
-    case_id: `MATH 8.82`,
+    id: `math-8-92`,
+    case_id: `MATH 8.92`,
     title: `Shade-Tree Cooling Benefit Against Upkeep Cost`,
     context: `A city parks office models annual cooling benefit by $B(n)=12n^{\\frac{1}{2}}$ thousand euros and annual upkeep by $C(n)=2n$ thousand euros, where $n>0$ is the number of thousand trees planted. Net benefit is $N(n)=B(n)-C(n)$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -12887,7 +13959,7 @@ $$10>0, \\qquad 16>0, \\qquad 18>0$$
 The general condition confirms that no intermediate plantings need checking. Net benefit is positive throughout $0<n<36$, because $\\frac{B}{C}=\\frac{6}{\\sqrt{n}}$ exceeds $1$ on that whole range, and all three plantings in the trio sit far below the threshold. Zero first appears at thirty-six thousand trees, which is outside the listed set. Net benefit is positive at each of the three plantings, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
-    sort_order: 82,
+    sort_order: 92,
     solution_overview: `Cooling benefit is $B(n)=12n^{\\frac{1}{2}}$ thousand euros, upkeep is $C(n)=2n$ thousand euros, and net benefit is $N(n)=B(n)-C(n)$.
 
 **Part 1: Building the model.**
@@ -12931,8 +14003,8 @@ $$N(1)=10, \\qquad N(4)=16, \\qquad N(9)=18, \\qquad N(36)=0$$
 **Answer.** $N(1)=10$ | $N(4)=16$ | $N(9)=18$ | break-even at $N(36)=0$`,
   },
   {
-    id: `math-8-83`,
-    case_id: `MATH 8.83`,
+    id: `math-8-93`,
+    case_id: `MATH 8.93`,
     title: `Trail-Map Kiosk Demand Inverted from Price`,
     context: `Weekly pamphlet demand at a trail-map kiosk follows $q(p)=A p^{-2}$ packs per week, where $p>0$ is price in euros. At $p=5$ euros the kiosk sold $80$ packs. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -13043,7 +14115,7 @@ A schedule flat in price would need exponent $0$, and this one is still negative
 Revenue halves whenever the price doubles and tends to zero as price grows without bound. It would be flat only if demand itself carried the exponent $-1$, since $p$ times $p^{-1}$ is a constant; the extra magnitude in $-2$ is what costs the kiosk money on every rise. Revenue varies with price, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 83,
+    sort_order: 93,
     solution_overview: `Pamphlet demand is $q(p)=Ap^{-2}$ packs per week with the recorded pair $q(5)=80$, and weekly revenue is $R=pq$.
 
 **Part 1: Building the model.**
@@ -13087,8 +14159,8 @@ $$\\frac{q(2p)}{q(p)}=2^{-2}=\\frac14$$
 **Answer.** $A=2000$ | $q(10)=20$ | target of $125$ packs at $p=4$ | $R(p)=\\frac{2000}{p}$`,
   },
   {
-    id: `math-8-84`,
-    case_id: `MATH 8.84`,
+    id: `math-8-94`,
+    case_id: `MATH 8.94`,
     title: `Bike-Share Passes Under a Subsidy Price Index`,
     context: `Weekly bike-share day-pass sales follow $q(p)=A p^{\\frac{-3}{2}}$ when the pass price is $p>0$ euros. A pilot at $p=16$ sold $50$ passes. Policy indexes the pass by $p(s)=4s^{\\frac{2}{3}}$ for a positive subsidy index $s$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -13201,7 +14273,7 @@ $$q(16)=50, \\qquad q(32)=\\frac{3200}{181.02}\\approx 17.68$$
 Half of $50$ would be $25$ passes, and the model delivers about $17.7$. An exact halving needs an exponent of $-1$, which in this task is the composed exponent in the subsidy index rather than the exponent on the posted price. The fall is steeper than a halving, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
-    sort_order: 84,
+    sort_order: 94,
     solution_overview: `Day-pass demand is $q(p)=Ap^{\\frac{-3}{2}}$ with the pilot record $q(16)=50$, and policy indexes the price by $p(s)=4s^{\\frac{2}{3}}$.
 
 **Part 1: Building the model.**
@@ -13245,8 +14317,8 @@ $$q(p(8))=\\frac{400}{8}=50$$
 **Answer.** $A=3200$ | $q\\circ p=\\frac{400}{s}$ | $q(p(8))=50$ | doubling $p$ multiplies demand by $2^{\\frac{-3}{2}}$`,
   },
   {
-    id: `math-8-85`,
-    case_id: `MATH 8.85`,
+    id: `math-8-95`,
+    case_id: `MATH 8.95`,
     title: `Overnight Loaves Split Across Two Oven Lines`,
     context: `A regional bakery must bake $30$ thousand loaves overnight and can split them between two oven lines. Line 1's energy-cost index is $C_1(q)=q^{2}$ and line 2's is $C_2(q)=\\frac{q^{2}}{4}$, where $q$ is that line's own output in thousands of loaves. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -13359,7 +14431,7 @@ $$\\frac{C_1(6)}{6}=6, \\qquad \\frac{C_1(15)}{15}=15$$
 A falling average would need the remaining exponent to be negative, which in turn would need an original exponent below $1$, and line 1's is $2$. Rising average cost is exactly why the bakery gains by splitting the order rather than loading one line. Line 1's average cost index rises with output, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
-    sort_order: 85,
+    sort_order: 95,
     solution_overview: `Thirty thousand loaves are split between two oven lines with cost indices $C_1(q)=q^{2}$ and $C_2(q)=\\frac{q^{2}}{4}$.
 
 **Part 1: Building the model.**
@@ -13403,8 +14475,8 @@ $$180<225<281.25$$
 **Answer.** all on line 2 costs $225$ | the $6$ and $24$ split costs $180$ | the even split costs $281.25$`,
   },
   {
-    id: `math-8-86`,
-    case_id: `MATH 8.86`,
+    id: `math-8-96`,
+    case_id: `MATH 8.96`,
     title: `Museum Tickets: Point Elasticity Versus a Finite Rise`,
     context: `Evening museum admissions follow $q(p)=A p^{-2}$ tickets when price is $p>0$ euros. At $p=10$ euros the desk sold $40$ tickets. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -13517,7 +14589,7 @@ $$q(10)=40, \\qquad q(12)=\\frac{4000}{144}\\approx 27.78$$
 **5.** Revenue in $(2)$ carries exponent $-1$, so it falls steadily and tends to zero as price grows without bound, with $R(10)=400$ against $R(20)=200$. Constant elasticity describes the limiting response, never the arithmetic of a finite jump.`,
     ],
     difficulty_level: `4/5`,
-    sort_order: 86,
+    sort_order: 96,
     solution_overview: `Evening admissions follow $q(p)=Ap^{-2}$ with the desk record $q(10)=40$, and point elasticity is set against exact finite price moves.
 
 **Part 1: Building the model.**
@@ -13561,8 +14633,8 @@ $$q(10)=40, \\qquad q(12)=\\frac{4000}{144}\\approx 27.78$$
 **Answer.** $\\varepsilon=-2$ at every price | exact cuts of about $30.6\\%$ and $17.4\\%$ | $R(p)=\\frac{4000}{p}$`,
   },
   {
-    id: `math-8-87`,
-    case_id: `MATH 8.87`,
+    id: `math-8-97`,
+    case_id: `MATH 8.97`,
     title: `Annealing Lehr Throughput Under a Mis-Scaled Coefficient`,
     context: `A glass-annealing lehr's throughput follows $T(e)=A e^{\\frac{3}{2}}$ trays per hour for belt setting $e>0$. A run at $e=4$ delivered $T=64$. Evaluate each statement. Mark it TRUE or FALSE.`,
     statements: [
@@ -13675,7 +14747,7 @@ $$T_{c}(4)=80, \\qquad T_{c}(8)\\approx 226.27$$
 A quarter added to the coefficient changes every level by a quarter and every ratio not at all, the distinction the whole task is built on. The scale factor stays at $2\\sqrt{2}$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
-    sort_order: 87,
+    sort_order: 97,
     solution_overview: `Lehr throughput is $T(e)=Ae^{\\frac{3}{2}}$ trays per hour with the recorded run $T(4)=64$.
 
 **Part 1: Building the model.**
@@ -13717,1413 +14789,5 @@ $$2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.8284$$
 **5.** Levels and ratios therefore answer a mis-scaled coefficient in opposite ways. Every reading moves by exactly the percentage the coefficient moves, while every scale factor stays fixed, because $A$ appears once in the numerator and once in the denominator.
 
 **Answer.** $A=8$ | $T(9)=216$ | a $25\\%$ larger coefficient raises every level by $25\\%$ | doubling factor $2\\sqrt{2}$`,
-  },
-  {
-    id: `math-8-88`,
-    case_id: `MATH 8.88`,
-    title: `Rebuilding a Resin Block Mass Table from the Cube Rule`,
-    context: `A small architecture studio casts solid cube-shaped resin blocks for scale models, and the workshop manual gives the mass of a block as $M(s)=5s^{3}$ grams, where $s>0$ is the side length of the cube in centimetres. The coefficient $5$ already folds in the density of the resin the studio buys, so no separate density figure appears anywhere on the job card. A printed table of masses for the four standard sides of $1$, $2$, $3$ and $4$ centimetres used to hang above the casting bench, but it went missing during a move, and the workshop assistant is rebuilding it from the rule alone. Postage is quoted per block on the declared mass, so every entry has to be right before the batch leaves the studio. Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `A block of side $2$ centimetres has mass $40$ grams.`,
-      `A block of side $3$ centimetres has mass $125$ grams.`,
-      `Doubling the side length multiplies the mass by $8$.`,
-      `A block of side $1$ centimetre has mass $5$ grams.`,
-      `A block of side $4$ centimetres has mass $240$ grams.`,
-    ],
-    answer_key: [true, false, true, true, false],
-    tactical_explanations: [
-      `**A.** → True
-
-The rule arrives already calibrated, so a mass is one substitution away. The power is taken before the coefficient is applied:
-
-$$M(2)=5\\cdot 2^{3}=5\\cdot 8=40$$
-
-Multiplying the side by the coefficient first and cubing afterwards would give $10^{3}=1000$ grams, a figure a hundred times too large, which is the standard slip when a coefficient stands in front of a power. The order in the rule is fixed: cube, then scale. The block weighs $40$ grams, so the statement is True.`,
-      `**B.** → False
-
-Cubing has to happen before the coefficient is applied, and the cube of $3$ is not a round hundred:
-
-$$3^{3}=27, \\qquad M(3)=5\\cdot 27=135$$
-
-The claimed $125$ is $5^{3}$, the cube of the coefficient rather than a mass, so it is the fingerprint of cubing the wrong number. A scaling check confirms the level without using the coefficient at all, since raising the side from $1$ to $3$ centimetres multiplies the mass by $3^{3}=27$:
-
-$$5\\times 27=135$$
-
-**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:
-
-**Part 1: Building the model.**
-
-Let $s$ = side length in centimetres, $M$ = mass in grams. The rule $M(s)=5s^{3}$ is a power function with exponent $3$ and coefficient $5$ on the domain $s>0$, and the coefficient already carries the density of the resin. Two kinds of question follow from it: levels, which need the coefficient, and scale factors, in which the coefficient cancels.
-
-**1. Translate: a level.** The power is evaluated first, then multiplied by the coefficient:
-
-$$M(s)=5\\cdot s^{3}$$
-
-**2. Translate: a scale factor.** Multiplying the side by $k$ multiplies the mass by $k^{3}$, whatever the coefficient happens to be:
-
-$$\\frac{M(ks)}{M(s)}=\\frac{5(ks)^{3}}{5s^{3}}=k^{3}$$
-
-**Part 2: The model.**
-
-$$M(s)=5s^{3} \\tag{1}$$
-
-$$\\frac{M(ks)}{M(s)}=k^{3} \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Cubes of the four standard sides:
-
-$$1^{3}=1, \\qquad 2^{3}=8, \\qquad 3^{3}=27, \\qquad 4^{3}=64$$
-
-**2.** The rebuilt table, each entry five times the cube above it:
-
-$$M(1)=5, \\qquad M(2)=40, \\qquad M(3)=135, \\qquad M(4)=320$$
-
-**3.** The doubling factor from $(2)$ with $k=2$:
-
-$$2^{3}=8$$
-
-**4.** The two entries the statements misquote, set beside the correct ones:
-
-$$135 \\ne 125, \\qquad 320 \\ne 240$$
-
-**5.** Mass climbs far faster than side length here, because the exponent is $3$: a block four times wider carries sixty four times the mass, which is why the largest standard block dominates the postage quote for the batch.
-
-The mass at side $3$ centimetres is $135$ grams rather than $125$, so the statement is False.`,
-      `**C.** → True
-
-A scale factor of a power function depends only on the exponent, because the coefficient cancels when two masses are divided:
-
-$$\\frac{M(2s)}{M(s)}=\\frac{5(2s)^{3}}{5s^{3}}=2^{3}=8$$
-
-The rebuilt table shows the same jump in plain numbers, since the one centimetre block weighs $5$ grams and the two centimetre block weighs $40$ grams. Nothing about the density matters for this ratio, and the factor is the same wherever the doubling starts. Doubling the side multiplies the mass by $8$, so the statement is True.`,
-      `**D.** → True
-
-At the smallest standard side the cube of the side is $1$, so the coefficient is left standing on its own:
-
-$$M(1)=5\\cdot 1^{3}=5\\cdot 1=5$$
-
-This is the reading that makes the coefficient visible, since the number $5$ in the rule is exactly the mass in grams of a one centimetre cube. Every other entry in the table is that base mass multiplied by the cube of the side, which is why the table can be rebuilt from a single anchor and the exponent. The mass is $5$ grams, so the statement is True.`,
-      `**E.** → False
-
-The largest standard side needs the cube taken before the coefficient is applied:
-
-$$4^{3}=64, \\qquad M(4)=5\\cdot 64=320$$
-
-The claimed $240$ is $6$ times the mass of the two centimetre block, so it comes from treating the doubling factor as $6$ instead of $8$. The scaling rule settles it independently of any coefficient:
-
-$$40\\times 2^{3}=40\\times 8=320$$
-
-Both routes land on $320$ grams against the claimed $240$, so the statement is False.`,
-    ],
-    difficulty_level: `1/5`,
-    sort_order: 88,
-    solution_overview: `Resin blocks obey $M(s)=5s^{3}$ grams for side length $s>0$ centimetres, and the missing bench table has to be rebuilt from the rule alone.
-
-**Part 1: Building the model.**
-
-Let $s$ = side length in centimetres, $M$ = mass in grams. The rule $M(s)=5s^{3}$ is a power function with exponent $3$ and coefficient $5$ on the domain $s>0$, and the coefficient already carries the density of the resin. Two kinds of question follow from it: levels, which need the coefficient, and scale factors, in which the coefficient cancels.
-
-**1. Translate: a level.** The power is evaluated first, then multiplied by the coefficient:
-
-$$M(s)=5\\cdot s^{3}$$
-
-**2. Translate: a scale factor.** Multiplying the side by $k$ multiplies the mass by $k^{3}$, whatever the coefficient happens to be:
-
-$$\\frac{M(ks)}{M(s)}=\\frac{5(ks)^{3}}{5s^{3}}=k^{3}$$
-
-**Part 2: The model.**
-
-$$M(s)=5s^{3} \\tag{1}$$
-
-$$\\frac{M(ks)}{M(s)}=k^{3} \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Cubes of the four standard sides:
-
-$$1^{3}=1, \\qquad 2^{3}=8, \\qquad 3^{3}=27, \\qquad 4^{3}=64$$
-
-**2.** The rebuilt table, each entry five times the cube above it:
-
-$$M(1)=5, \\qquad M(2)=40, \\qquad M(3)=135, \\qquad M(4)=320$$
-
-**3.** The doubling factor from $(2)$ with $k=2$:
-
-$$2^{3}=8$$
-
-**4.** The two entries the statements misquote, set beside the correct ones:
-
-$$135 \\ne 125, \\qquad 320 \\ne 240$$
-
-**5.** Mass climbs far faster than side length here, because the exponent is $3$: a block four times wider carries sixty four times the mass, which is why the largest standard block dominates the postage quote for the batch.
-
-**Answer.** $M(1)=5$ | $M(2)=40$ | $M(3)=135$ | $M(4)=320$ | doubling factor $8$`,
-  },
-  {
-    id: `math-8-89`,
-    case_id: `MATH 8.89`,
-    title: `Two Gauge Formulas and the Readings They Refuse`,
-    context: `A river monitoring station derives two figures from the same clock. Cumulative dissolved load is modelled by $D(t)=6t^{\\frac{1}{2}}$ kilograms, and the turbidity index is modelled by $R(t)=50t^{-2}$ units, where in both rules $t$ counts hours since the gauge was last reset. The plotting software refuses to draw a point whenever the formula behind it has no value at the requested time, and last week the printed chart came back with one trace starting cleanly at the origin while the other left a visible gap at the very start of the run. A technician preparing the audit file wants to know exactly which readings the two rules genuinely support, including a stray request for a time before the reset that a colleague typed into the query box by mistake. Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The dissolved load rule returns a real value at $t=0$.`,
-      `The turbidity rule returns a value at $t=0$.`,
-      `The dissolved load rule returns a real value at $t=-4$.`,
-      `At $t=4$ the turbidity index is $3.125$ units.`,
-      `At $t=9$ the dissolved load is $18$ kilograms.`,
-    ],
-    answer_key: [true, false, false, true, true],
-    tactical_explanations: [
-      `**A.** → True
-
-An exponent of $\\frac{1}{2}$ is a square root, and the square root of zero is perfectly well defined:
-
-$$D(0)=6\\cdot 0^{\\frac{1}{2}}=6\\cdot 0=0$$
-
-A positive exponent never places the variable in a denominator, so no division by zero is involved anywhere in this rule. The trace that begins cleanly at the origin is therefore this one, and its first plotted point is a dissolved load of zero kilograms at the reset instant. The rule returns a real value at $t=0$, so the statement is True.`,
-      `**B.** → False
-
-A negative exponent moves the variable into a denominator, and that is where the domain restriction comes from:
-
-$$R(t)=50t^{-2}=\\frac{50}{t^{2}}$$
-
-At the reset instant the denominator is $0^{2}=0$, and division by zero has no value, so that single time is excluded even though every later hour is fine. The gap at the start of the printed chart belongs to this trace, not to the dissolved load trace. The turbidity rule has no value at $t=0$, so the statement is False.`,
-      `**C.** → False
-
-The exponent $\\frac{1}{2}$ is an even root, and no real number squares to a negative one:
-
-$$D(-4)=6\\cdot (-4)^{\\frac{1}{2}}=6\\sqrt{-4}$$
-
-The domain of the dissolved load rule is therefore $t\\ge 0$, which also matches the clock, since no hour before the reset exists in the record. An odd root such as $t^{\\frac{1}{3}}$ would accept a negative input without complaint, but this exponent will not, so the mistyped query has no answer to return. There is no real value at $t=-4$, so the statement is False.`,
-      `**D.** → True
-
-Rewriting the negative exponent as a denominator turns the request into one division:
-
-$$R(4)=\\frac{50}{4^{2}}=\\frac{50}{16}=3.125$$
-
-The square has to be taken before the division, since dividing first would give $\\left(\\frac{50}{4}\\right)^{2}=156.25$ units, fifty times too large.
-
-**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:
-
-**Part 1: Building the model.**
-
-Let $t$ = hours since the reset, $D$ = cumulative dissolved load in kilograms, $R$ = turbidity index in units. The two rules are power functions with the same variable but opposite signs on the exponent, and that sign decides both the domain and the shape.
-
-**1. Translate: the positive exponent.** A square root accepts zero and every positive time, and it refuses negative inputs:
-
-$$D(t)=6t^{\\frac{1}{2}}, \\qquad t\\ge 0$$
-
-**2. Translate: the negative exponent.** A negative exponent is a reciprocal, so the variable lands in a denominator and zero has to be excluded:
-
-$$R(t)=\\frac{50}{t^{2}}, \\qquad t>0$$
-
-**Part 2: The model.**
-
-$$D(t)=6\\sqrt{t} \\quad \\text{on } t\\ge 0 \\tag{1}$$
-
-$$R(t)=\\frac{50}{t^{2}} \\quad \\text{on } t>0 \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Values of the dissolved load rule at the times in the audit file:
-
-$$D(0)=0, \\qquad D(4)=12, \\qquad D(9)=18$$
-
-**2.** Values of the turbidity rule at the same positive times:
-
-$$R(4)=\\frac{50}{16}=3.125, \\qquad R(9)=\\frac{50}{81}\\approx 0.617$$
-
-**3.** The two refusals, one from an even root and one from a zero denominator:
-
-$$\\sqrt{-4} \\text{ is not real}, \\qquad \\frac{50}{0^{2}} \\text{ is undefined}$$
-
-**4.** Shapes on the shared domain $t>0$: the dissolved load rises steadily with elapsed time, while the turbidity index falls steadily towards zero, since its exponent is negative.
-
-**5.** Domain questions are settled by the sign of the exponent and the parity of its root, never by whether a number can be typed into the query box.
-
-The turbidity index at $t=4$ is $3.125$ units, so the statement is True.`,
-      `**E.** → True
-
-The square root is taken first and the coefficient is applied afterwards:
-
-$$9^{\\frac{1}{2}}=3, \\qquad D(9)=6\\cdot 3=18$$
-
-Multiplying before rooting would give $\\sqrt{54}\\approx 7.35$, a different quantity entirely, because the coefficient sits outside the power. The figure also matches the flat shape of a square root law, since a ninefold stretch of elapsed time, from one hour to nine, only triples the load, from $6$ to $18$ kilograms. The dissolved load at nine hours is $18$ kilograms, so the statement is True.`,
-    ],
-    difficulty_level: `1/5`,
-    sort_order: 89,
-    solution_overview: `The station reports $D(t)=6t^{\\frac{1}{2}}$ kilograms and $R(t)=50t^{-2}$ units from the same clock, and the audit needs to know which times each rule accepts.
-
-**Part 1: Building the model.**
-
-Let $t$ = hours since the reset, $D$ = cumulative dissolved load in kilograms, $R$ = turbidity index in units. The two rules are power functions in the same variable with opposite signs on the exponent, and that sign decides both the domain and the shape of each trace.
-
-**1. Translate: the positive exponent.** A square root accepts zero and every positive time, and it refuses negative inputs:
-
-$$D(t)=6t^{\\frac{1}{2}}, \\qquad t\\ge 0$$
-
-**2. Translate: the negative exponent.** A negative exponent is a reciprocal, so the variable lands in a denominator and zero has to be excluded:
-
-$$R(t)=\\frac{50}{t^{2}}, \\qquad t>0$$
-
-**Part 2: The model.**
-
-$$D(t)=6\\sqrt{t} \\quad \\text{on } t\\ge 0 \\tag{1}$$
-
-$$R(t)=\\frac{50}{t^{2}} \\quad \\text{on } t>0 \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Values of the dissolved load rule at the times in the audit file:
-
-$$D(0)=0, \\qquad D(4)=12, \\qquad D(9)=18$$
-
-**2.** Values of the turbidity rule at the same positive times:
-
-$$R(4)=\\frac{50}{16}=3.125, \\qquad R(9)=\\frac{50}{81}\\approx 0.617$$
-
-**3.** The two refusals, one from an even root and one from a zero denominator:
-
-$$\\sqrt{-4} \\text{ is not real}, \\qquad \\frac{50}{0^{2}} \\text{ is undefined}$$
-
-**4.** Shapes on the shared domain $t>0$: the dissolved load rises steadily with elapsed time, while the turbidity index falls steadily towards zero, since its exponent is negative.
-
-**5.** Domain questions are settled by the sign of the exponent and the parity of its root, never by whether a number can be typed into the query box.
-
-**Answer.** $D(0)=0$ | $R(0)$ undefined | $D(-4)$ not real | $R(4)=3.125$ | $D(9)=18$`,
-  },
-  {
-    id: `math-8-90`,
-    case_id: `MATH 8.90`,
-    title: `A Fading Beacon and a Rising Count at the Two Ends of the Scale`,
-    context: `A logistics yard tests a low power beacon. Received signal strength is modelled by $S(x)=80x^{-3}$ millivolts at a distance of $x>0$ metres from the mast, and the cumulative number of packets logged by a handheld reader is modelled by $T(x)=2x^{\\frac{1}{2}}$ thousand packets over $x>0$ minutes of listening. The test report has to describe what each rule does at the extremes rather than at any single convenient reading, because the procurement team keeps asking two questions: whether the signal ever settles at a floor far from the mast, and whether the packet count ever settles at a ceiling if the reader is simply left running. Both rules are power functions, so the exponents carry the whole answer. Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `As $x$ grows without bound, $S(x)$ tends to $0$.`,
-      `As $x$ approaches $0$ from the right, $S(x)$ grows without bound.`,
-      `As $x$ grows without bound, $T(x)$ approaches the finite ceiling $2$.`,
-      `At $x=2$ metres the signal strength is $10$ millivolts.`,
-      `As $x$ approaches $0$ from the right, $T(x)$ approaches $0$.`,
-    ],
-    answer_key: [true, true, false, true, true],
-    tactical_explanations: [
-      `**A.** → True
-
-A negative exponent puts the variable in a denominator, and the behaviour far from the mast follows from that alone:
-
-$$S(x)=80x^{-3}=\\frac{80}{x^{3}}$$
-
-As the distance grows, the cube in the denominator grows without bound while the numerator stays fixed at $80$, so the quotient is squeezed towards zero. Sample readings show how quickly it collapses:
-
-$$S(2)=10, \\qquad S(10)=0.08, \\qquad S(100)=0.00008$$
-
-**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:
-
-**Part 1: Building the model.**
-
-Let $x$ = distance in metres for the beacon rule and listening minutes for the reader rule, $S$ = received strength in millivolts, $T$ = cumulative count in thousand packets. Both rules are power functions on $x>0$, one with a negative exponent and one with a positive exponent below $1$, and the extremes are governed by those exponents alone.
-
-**1. Translate: the negative exponent.** A negative exponent is a reciprocal power, so a large input makes a large denominator and a small input makes a small one:
-
-$$S(x)=\\frac{80}{x^{3}}$$
-
-**2. Translate: the positive exponent.** A positive exponent keeps the variable in the numerator, so growth continues without any ceiling, even though it slows:
-
-$$T(x)=2x^{\\frac{1}{2}}$$
-
-**Part 2: The model.**
-
-$$S(x)=\\frac{80}{x^{3}} \\quad \\text{on } x>0 \\tag{1}$$
-
-$$T(x)=2\\sqrt{x} \\quad \\text{on } x>0 \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Signal strength at three distances, from $(1)$:
-
-$$S(2)=\\frac{80}{8}=10, \\qquad S(4)=\\frac{80}{64}=1.25, \\qquad S(20)=\\frac{80}{8000}=0.01$$
-
-**2.** Signal strength very close to the mast, where the denominator collapses:
-
-$$S(0.1)=\\frac{80}{0.001}=80000$$
-
-**3.** Packet counts after three listening times, from $(2)$:
-
-$$T(4)=4, \\qquad T(100)=20, \\qquad T(10000)=200$$
-
-**4.** Packet counts for very short listening times:
-
-$$T(0.01)=0.2, \\qquad T(0.0001)=0.02$$
-
-**5.** The two extremes therefore behave in opposite ways. The negative exponent sends the signal to zero far from the mast and past every bound near it, while the positive exponent sends the count to zero at the start and past every bound in the long run, with no ceiling anywhere.
-
-Signal strength tends to $0$ as the distance grows without bound, so the statement is True.`,
-      `**B.** → True
-
-Close to the mast the same reciprocal form is read from the other end:
-
-$$S(x)=\\frac{80}{x^{3}}$$
-
-A small positive distance makes $x^{3}$ a very small positive number, and dividing a fixed $80$ by something arbitrarily small produces something arbitrarily large:
-
-$$S(0.1)=\\frac{80}{0.001}=80000$$
-
-No finite value caps the readings, since halving the distance multiplies the strength by $8$. The strength grows without bound as $x$ approaches $0$ from the right, so the statement is True.`,
-      `**C.** → False
-
-The coefficient $2$ in $T(x)=2x^{\\frac{1}{2}}$ is a multiplier on the whole power, not a ceiling on the output. A positive exponent keeps the variable in the numerator, so the count keeps climbing:
-
-$$T(4)=4, \\qquad T(100)=20, \\qquad T(10000)=200$$
-
-Growth does slow down, because the exponent $\\frac{1}{2}$ sits below $1$, and slowing is exactly what invites the reading in the statement. Slower growth is still unbounded growth: for any target the reader passes it after enough minutes. There is no finite ceiling, so the statement is False.`,
-      `**D.** → True
-
-A level needs the power evaluated in the denominator before the division is carried out:
-
-$$S(2)=\\frac{80}{2^{3}}=\\frac{80}{8}=10$$
-
-Multiplying the coefficient by the distance instead, and then cubing, would give a quite different figure, so the reciprocal has to be respected. The reading is consistent with the collapse described elsewhere in the report, since doubling the distance to $4$ metres divides the strength by $8$ and leaves $1.25$ millivolts. The strength at two metres is $10$ millivolts, so the statement is True.`,
-      `**E.** → True
-
-At the start of a listening window the square root is applied to a small positive number, and the coefficient cannot rescue the size:
-
-$$T(0.01)=2\\sqrt{0.01}=2\\cdot 0.1=0.2$$
-
-$$T(0.0001)=2\\cdot 0.01=0.02$$
-
-A positive exponent keeps the whole product heading towards zero as the input shrinks, and $T(x)$ would even be zero at $x=0$ if that endpoint were included in the window. The count approaches $0$ as $x$ approaches $0$ from the right, so the statement is True.`,
-    ],
-    difficulty_level: `2/5`,
-    sort_order: 90,
-    solution_overview: `The beacon obeys $S(x)=80x^{-3}$ millivolts and the reader obeys $T(x)=2x^{\\frac{1}{2}}$ thousand packets, both on $x>0$, and the report asks about the extremes rather than single readings.
-
-**Part 1: Building the model.**
-
-Let $x$ = distance in metres for the beacon rule and listening minutes for the reader rule, $S$ = received strength in millivolts, $T$ = cumulative count in thousand packets. Both rules are power functions on $x>0$, one with a negative exponent and one with a positive exponent below $1$, and the extremes are governed by those exponents alone.
-
-**1. Translate: the negative exponent.** A negative exponent is a reciprocal power, so a large input makes a large denominator and a small input makes a small one:
-
-$$S(x)=\\frac{80}{x^{3}}$$
-
-**2. Translate: the positive exponent.** A positive exponent keeps the variable in the numerator, so growth continues without any ceiling, even though it slows:
-
-$$T(x)=2x^{\\frac{1}{2}}$$
-
-**Part 2: The model.**
-
-$$S(x)=\\frac{80}{x^{3}} \\quad \\text{on } x>0 \\tag{1}$$
-
-$$T(x)=2\\sqrt{x} \\quad \\text{on } x>0 \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Signal strength at three distances, from $(1)$:
-
-$$S(2)=\\frac{80}{8}=10, \\qquad S(4)=\\frac{80}{64}=1.25, \\qquad S(20)=\\frac{80}{8000}=0.01$$
-
-**2.** Signal strength very close to the mast, where the denominator collapses:
-
-$$S(0.1)=\\frac{80}{0.001}=80000$$
-
-**3.** Packet counts after three listening times, from $(2)$:
-
-$$T(4)=4, \\qquad T(100)=20, \\qquad T(10000)=200$$
-
-**4.** Packet counts for very short listening times:
-
-$$T(0.01)=0.2, \\qquad T(0.0001)=0.02$$
-
-**5.** The two extremes therefore behave in opposite ways. The negative exponent sends the signal to zero far from the mast and past every bound near it, while the positive exponent sends the count to zero at the start and past every bound in the long run, with no ceiling anywhere.
-
-**Answer.** $S(x)\\to 0$ as $x$ grows | $S(x)$ unbounded as $x\\to 0^{+}$ | no ceiling for $T$ | $S(2)=10$ | $T(x)\\to 0$ as $x\\to 0^{+}$`,
-  },
-  {
-    id: `math-8-91`,
-    case_id: `MATH 8.91`,
-    title: `Spread Overheads Against Finishing Hours on One Order Book`,
-    context: `A joinery workshop prices each order from two rules that both take the order size $q>0$ in finished units. Overhead spread per unit is $U(q)=600q^{-1}$ euros, since a fixed monthly overhead of six hundred euros is divided across whatever the order contains, and the finishing labour needed for the order is $V(q)=3q^{\\frac{2}{3}}$ hours, because larger batches share jigs and setup. The owner is writing a short note for the quoting spreadsheet describing the shape of each rule, not just a table of values, since the estimator keeps asking whether either figure can turn around or change sign somewhere in the middle of the range. Two readings at an order of eight units also need checking against the spreadsheet's current output. Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The overhead spread $U$ is strictly decreasing for $q>0$.`,
-      `The overhead spread $U(q)$ is negative for some order size $q>0$.`,
-      `The finishing labour $V$ is strictly increasing for $q>0$.`,
-      `At an order of $8$ units the overhead spread is $80$ euros per unit.`,
-      `At an order of $8$ units the finishing labour is $12$ hours.`,
-    ],
-    answer_key: [true, false, true, false, true],
-    tactical_explanations: [
-      `**A.** → True
-
-An exponent of $-1$ is a plain reciprocal, so the order size sits in the denominator:
-
-$$U(q)=600q^{-1}=\\frac{600}{q}$$
-
-A larger denominator against a fixed numerator gives a smaller quotient, so every increase in order size lowers the spread, everywhere on the range and without exception:
-
-$$U(2)=300, \\qquad U(6)=100, \\qquad U(30)=20$$
-
-The overhead spread is strictly decreasing for $q>0$, so the statement is True.`,
-      `**B.** → False
-
-Both parts of the quotient are positive across the whole domain, so no sign change is available:
-
-$$U(q)=\\frac{600}{q}, \\qquad 600>0, \\qquad q>0$$
-
-A negative exponent makes the rule fall, and falling is easily confused with turning negative, but the two are different properties. Values shrink towards zero without ever reaching it, for instance $U(600)=1$ and $U(6000)=0.1$. The spread stays positive at every order size, so the statement is False.`,
-      `**C.** → True
-
-The exponent here is positive, so the order size stays in the numerator:
-
-$$V(q)=3q^{\\frac{2}{3}}, \\qquad \\frac{2}{3}>0$$
-
-Raising a larger positive number to a positive power gives a larger result, and the positive coefficient preserves that order, so finishing hours climb with every extra unit:
-
-$$V(1)=3, \\qquad V(8)=12, \\qquad V(27)=27$$
-
-Growth slows, because the exponent sits below $1$, yet it never stops or reverses. The finishing labour is strictly increasing, so the statement is True.`,
-      `**D.** → False
-
-The reciprocal has to be evaluated at the stated order size:
-
-$$U(8)=\\frac{600}{8}=75$$
-
-The claimed $80$ would require an order of $7.5$ units, since $\\frac{600}{7.5}=80$, and no such order is on the book. Rounding the spread up to a convenient figure is exactly the error the note is meant to prevent, because the quote is per unit and multiplies back up across the batch. The spread at eight units is $75$ euros per unit rather than $80$, so the statement is False.`,
-      `**E.** → True
-
-A fractional exponent is easiest to take in two steps, root first and power second:
-
-$$8^{\\frac{2}{3}}=\\left(8^{\\frac{1}{3}}\\right)^{2}=2^{2}=4$$
-
-Applying the coefficient afterwards gives the finishing labour:
-
-$$V(8)=3\\cdot 4=12$$
-
-**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:
-
-**Part 1: Building the model.**
-
-Let $q$ = order size in finished units, $U$ = overhead spread in euros per unit, $V$ = finishing labour in hours. Both rules are power functions on $q>0$ with positive coefficients, and the sign of the exponent decides the direction of each one while the positivity of the coefficient decides the sign of each output.
-
-**1. Translate: the negative exponent.** A fixed overhead divided across the batch is a reciprocal rule, which falls but never crosses zero:
-
-$$U(q)=\\frac{600}{q}$$
-
-**2. Translate: the positive exponent.** Shared jigs and setup make labour rise more slowly than the batch, an exponent between $0$ and $1$:
-
-$$V(q)=3q^{\\frac{2}{3}}$$
-
-**Part 2: The model.**
-
-$$U(q)=\\frac{600}{q} \\quad \\text{on } q>0 \\tag{1}$$
-
-$$V(q)=3q^{\\frac{2}{3}} \\quad \\text{on } q>0 \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Overhead spread at the order sizes the note uses, from $(1)$:
-
-$$U(2)=300, \\qquad U(8)=75, \\qquad U(30)=20$$
-
-**2.** Fractional powers needed for $(2)$, taken as a cube root followed by a square:
-
-$$8^{\\frac{2}{3}}=4, \\qquad 27^{\\frac{2}{3}}=9, \\qquad 64^{\\frac{2}{3}}=16$$
-
-**3.** Finishing labour at the same order sizes:
-
-$$V(8)=12, \\qquad V(27)=27, \\qquad V(64)=48$$
-
-**4.** Directions and signs, read off the exponents rather than from the table:
-
-$$U \\text{ falls, } U>0; \\qquad V \\text{ rises, } V>0$$
-
-**5.** The two rules therefore move in opposite directions as an order grows, while both stay strictly positive. Overhead spread falls towards zero without reaching it, and finishing labour rises without any ceiling, though each extra unit adds a little less labour than the one before it.
-
-The finishing labour at eight units is $12$ hours, so the statement is True.`,
-    ],
-    difficulty_level: `2/5`,
-    sort_order: 91,
-    solution_overview: `The quoting rules are $U(q)=600q^{-1}$ euros per unit and $V(q)=3q^{\\frac{2}{3}}$ hours on $q>0$, and the note has to describe direction and sign, not only levels.
-
-**Part 1: Building the model.**
-
-Let $q$ = order size in finished units, $U$ = overhead spread in euros per unit, $V$ = finishing labour in hours. Both rules are power functions on $q>0$ with positive coefficients, and the sign of the exponent decides the direction of each one while the positivity of the coefficient decides the sign of each output.
-
-**1. Translate: the negative exponent.** A fixed overhead divided across the batch is a reciprocal rule, which falls but never crosses zero:
-
-$$U(q)=\\frac{600}{q}$$
-
-**2. Translate: the positive exponent.** Shared jigs and setup make labour rise more slowly than the batch, an exponent between $0$ and $1$:
-
-$$V(q)=3q^{\\frac{2}{3}}$$
-
-**Part 2: The model.**
-
-$$U(q)=\\frac{600}{q} \\quad \\text{on } q>0 \\tag{1}$$
-
-$$V(q)=3q^{\\frac{2}{3}} \\quad \\text{on } q>0 \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Overhead spread at the order sizes the note uses, from $(1)$:
-
-$$U(2)=300, \\qquad U(8)=75, \\qquad U(30)=20$$
-
-**2.** Fractional powers needed for $(2)$, taken as a cube root followed by a square:
-
-$$8^{\\frac{2}{3}}=4, \\qquad 27^{\\frac{2}{3}}=9, \\qquad 64^{\\frac{2}{3}}=16$$
-
-**3.** Finishing labour at the same order sizes:
-
-$$V(8)=12, \\qquad V(27)=27, \\qquad V(64)=48$$
-
-**4.** Directions and signs, read off the exponents rather than from the table:
-
-$$U \\text{ falls, } U>0; \\qquad V \\text{ rises, } V>0$$
-
-**5.** The two rules therefore move in opposite directions as an order grows, while both stay strictly positive. Overhead spread falls towards zero without reaching it, and finishing labour rises without any ceiling, though each extra unit adds a little less labour than the one before it.
-
-**Answer.** $U$ strictly decreasing and always positive | $V$ strictly increasing | $U(8)=75$ | $V(8)=12$`,
-  },
-  {
-    id: `math-8-92`,
-    case_id: `MATH 8.92`,
-    title: `One Bottling Line Reading and the Coefficient It Fixes`,
-    context: `A drinks plant models the hourly output of its bottling line as $Q(s)=As^{\\frac{1}{2}}$ crates per hour, where $s>0$ is the number of staff assigned to the line for that shift. The exponent came from the equipment supplier, but the coefficient was never written on the commissioning sheet, and the only surviving record is a single audited shift: twenty five staff produced forty crates per hour. A planner now has to fill in the coefficient, quote outputs for two proposed shift sizes, and settle an argument in the office about whether a mistake in the coefficient would also distort the percentage gain from adding staff. Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The coefficient satisfies $A=8$.`,
-      `A shift of $100$ staff runs at $80$ crates per hour.`,
-      `Quadrupling the staffing doubles the hourly output.`,
-      `If the coefficient were doubled, the ratio $\\frac{Q(4s)}{Q(s)}$ would double as well.`,
-      `A shift of $4$ staff runs at $20$ crates per hour.`,
-    ],
-    answer_key: [true, true, true, false, false],
-    tactical_explanations: [
-      `**A.** → True
-
-The audited shift is a single equation in the single unknown coefficient, and the square root of the staffing is a whole number:
-
-$$25^{\\frac{1}{2}}=5 \\quad \\Rightarrow \\quad 5A=40 \\quad \\Rightarrow \\quad A=8$$
-
-Dividing the recorded output by the staffing itself, which would give $1.6$, answers a different question, namely crates per member of staff at that one shift size, and it is not the coefficient of the rule. The coefficient is $8$, so the statement is True.`,
-      `**B.** → True
-
-With the coefficient recovered the rule is $Q(s)=8s^{\\frac{1}{2}}$, and the proposed shift has a whole square root:
-
-$$100^{\\frac{1}{2}}=10, \\qquad Q(100)=8\\cdot 10=80$$
-
-The scaling route agrees without touching the coefficient again, since the staffing rises by a factor of $4$ from the audited shift and $4^{\\frac{1}{2}}=2$, so the audited $40$ crates per hour doubles to $80$. Quadrupling the staff does not quadruple the output. The proposed shift runs at $80$ crates per hour, so the statement is True.`,
-      `**C.** → True
-
-A scale factor of a power function is fixed by the exponent alone, because the coefficient cancels in the ratio:
-
-$$\\frac{Q(4s)}{Q(s)}=\\frac{A(4s)^{\\frac{1}{2}}}{As^{\\frac{1}{2}}}=4^{\\frac{1}{2}}=2$$
-
-Doubled output for quadrupled staffing is the signature of the exponent $\\frac{1}{2}$, and it holds wherever the quadrupling starts.
-
-**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:
-
-**Part 1: Building the model.**
-
-Let $s$ = staff on the line, $Q$ = output in crates per hour. The exponent $\\frac{1}{2}$ is supplied and the audited shift fixes the coefficient. Levels then depend on the coefficient, while scale factors do not, and keeping those two apart is what the office argument is really about.
-
-**1. Translate: the audited shift.**
-
-$$A\\cdot 25^{\\frac{1}{2}}=40, \\qquad 25^{\\frac{1}{2}}=5$$
-
-**2. Translate: a staffing multiplier.** Multiplying the staffing by $k$ multiplies the output by $k^{\\frac{1}{2}}$, for any positive coefficient:
-
-$$\\frac{Q(ks)}{Q(s)}=\\frac{A(ks)^{\\frac{1}{2}}}{As^{\\frac{1}{2}}}=k^{\\frac{1}{2}}$$
-
-**Part 2: The model.**
-
-$$Q(s)=8s^{\\frac{1}{2}} \\tag{1}$$
-
-$$\\frac{Q(ks)}{Q(s)}=k^{\\frac{1}{2}} \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** The recovered coefficient:
-
-$$5A=40 \\quad \\Rightarrow \\quad A=8$$
-
-**2.** Outputs at the shift sizes in the plan, from $(1)$:
-
-$$Q(4)=16, \\qquad Q(25)=40, \\qquad Q(100)=80$$
-
-**3.** The quadrupling factor from $(2)$ with $k=4$:
-
-$$4^{\\frac{1}{2}}=2$$
-
-**4.** A counterfactual coefficient of $16$ instead of $8$, which lifts every level and moves no ratio:
-
-$$Q_{c}(4)=32, \\qquad Q_{c}(100)=160, \\qquad \\frac{Q_{c}(4s)}{Q_{c}(s)}=2$$
-
-**5.** Levels and ratios therefore answer a wrong coefficient in opposite ways. Every output would be doubled by a doubled coefficient, while every percentage gain from extra staff would stay exactly where it was, because the coefficient appears once above and once below the line.
-
-Quadrupling the staffing doubles the hourly output, so the statement is True.`,
-      `**D.** → False
-
-A doubled coefficient enters the numerator and the denominator of the ratio in equal measure, so the quotient cannot register it:
-
-$$\\frac{2A(4s)^{\\frac{1}{2}}}{2As^{\\frac{1}{2}}}=4^{\\frac{1}{2}}=2$$
-
-Levels are a different matter, since $Q_{c}(25)=80$ against the audited $40$, which is what makes the reading tempting. A wrong coefficient distorts every output and no percentage gain. The ratio stays at $2$, so the statement is False.`,
-      `**E.** → False
-
-The small shift is evaluated the same way, root first and coefficient second:
-
-$$4^{\\frac{1}{2}}=2, \\qquad Q(4)=8\\cdot 2=16$$
-
-The claimed $20$ is half of the audited $40$ crates per hour, so it comes from treating output as proportional to staffing, which would need an exponent of $1$. With exponent $\\frac{1}{2}$, cutting staffing from $25$ to $4$ multiplies output by $\\left(\\frac{4}{25}\\right)^{\\frac{1}{2}}=\\frac{2}{5}$, giving $16$ crates per hour rather than $20$, so the statement is False.`,
-    ],
-    difficulty_level: `1/5`,
-    sort_order: 92,
-    solution_overview: `The bottling line follows $Q(s)=As^{\\frac{1}{2}}$ crates per hour, and one audited shift, $Q(25)=40$, fixes the missing coefficient.
-
-**Part 1: Building the model.**
-
-Let $s$ = staff on the line, $Q$ = output in crates per hour. The exponent $\\frac{1}{2}$ is supplied and the audited shift fixes the coefficient. Levels then depend on the coefficient, while scale factors do not, and keeping those two apart is what the office argument is really about.
-
-**1. Translate: the audited shift.**
-
-$$A\\cdot 25^{\\frac{1}{2}}=40, \\qquad 25^{\\frac{1}{2}}=5$$
-
-**2. Translate: a staffing multiplier.** Multiplying the staffing by $k$ multiplies the output by $k^{\\frac{1}{2}}$, for any positive coefficient:
-
-$$\\frac{Q(ks)}{Q(s)}=\\frac{A(ks)^{\\frac{1}{2}}}{As^{\\frac{1}{2}}}=k^{\\frac{1}{2}}$$
-
-**Part 2: The model.**
-
-$$Q(s)=8s^{\\frac{1}{2}} \\tag{1}$$
-
-$$\\frac{Q(ks)}{Q(s)}=k^{\\frac{1}{2}} \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** The recovered coefficient:
-
-$$5A=40 \\quad \\Rightarrow \\quad A=8$$
-
-**2.** Outputs at the shift sizes in the plan, from $(1)$:
-
-$$Q(4)=16, \\qquad Q(25)=40, \\qquad Q(100)=80$$
-
-**3.** The quadrupling factor from $(2)$ with $k=4$:
-
-$$4^{\\frac{1}{2}}=2$$
-
-**4.** A counterfactual coefficient of $16$ instead of $8$, which lifts every level and moves no ratio:
-
-$$Q_{c}(4)=32, \\qquad Q_{c}(100)=160, \\qquad \\frac{Q_{c}(4s)}{Q_{c}(s)}=2$$
-
-**5.** Levels and ratios therefore answer a wrong coefficient in opposite ways. Every output would be doubled by a doubled coefficient, while every percentage gain from extra staff would stay exactly where it was, because the coefficient appears once above and once below the line.
-
-**Answer.** $A=8$ | $Q(4)=16$ | $Q(100)=80$ | quadrupling doubles output | the ratio ignores the coefficient`,
-  },
-  {
-    id: `math-8-93`,
-    case_id: `MATH 8.93`,
-    title: `Two Maintenance Indices That Meet at Two Machines`,
-    context: `A plant engineer compares two published maintenance indices for a line of $n>0$ machines. The first vendor quotes $F(n)=2n^{2}$ index points, arguing that inspection effort grows with the number of pairs of machines that share a controller, and the second quotes $G(n)=n^{3}$ index points, arguing that each machine also multiplies the diagnostics run on the whole line. Both indices are dimensionless and only their relative size matters to the tender. The engineer wants a short verdict for the tender file: which index is larger on small lines, which is larger on large lines, and whether the gap between them ever settles down as the line grows. Two quoted table rows also need checking. Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `At $n=2$ the two indices read $8$ and $6$ respectively.`,
-      `For every $n>2$ the cubic index exceeds the quadratic one.`,
-      `For every $n$ with $0<n<2$ the quadratic index exceeds the cubic one.`,
-      `As $n$ grows without bound, the ratio $\\frac{G(n)}{F(n)}$ approaches $1$.`,
-      `At $n=3$ the two indices read $18$ and $24$ respectively.`,
-    ],
-    answer_key: [false, true, true, false, false],
-    tactical_explanations: [
-      `**A.** → False
-
-Both indices have to be evaluated at the same line size before they are compared:
-
-$$F(2)=2\\cdot 2^{2}=8, \\qquad G(2)=2^{3}=8$$
-
-The first figure in the claim is right and the second is not, since the two indices happen to agree exactly at two machines. That coincidence is the crossing point the tender file needs, so quoting $6$ for the cubic index hides the one line size where the vendors are level. The indices both read $8$ at $n=2$, so the statement is False.`,
-      `**B.** → True
-
-Comparing two powers is easier as a single inequality than as two tables. Subtract and factor, keeping the positive factor visible:
-
-$$G(n)-F(n)=n^{3}-2n^{2}=n^{2}(n-2)$$
-
-Because $n^{2}>0$ for every positive line size, the sign of the difference is the sign of $n-2$ alone, so the cubic index leads exactly when $n>2$:
-
-$$n>2 \\quad \\Longleftrightarrow \\quad G(n)>F(n)$$
-
-**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:
-
-**Part 1: Building the model.**
-
-Let $n$ = number of machines on the line, $F$ and $G$ = the two quoted indices in points. Both are power functions on $n>0$, one with exponent $2$ and coefficient $2$, the other with exponent $3$ and coefficient $1$. A larger coefficient can only lead on small inputs; a larger exponent must lead eventually.
-
-**1. Translate: the comparison.** Subtracting and factoring turns a race between two curves into one sign question:
-
-$$G(n)-F(n)=n^{2}(n-2)$$
-
-**2. Translate: the long run.** Dividing instead of subtracting shows how the gap behaves as the line grows:
-
-$$\\frac{G(n)}{F(n)}=\\frac{n^{3}}{2n^{2}}=\\frac{n}{2}$$
-
-**Part 2: The model.**
-
-$$F(n)=2n^{2}, \\qquad G(n)=n^{3} \\tag{1}$$
-
-$$G(n)>F(n) \\quad \\Longleftrightarrow \\quad n>2 \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Both indices at the small line sizes in the table:
-
-$$F(1)=2, \\quad G(1)=1, \\qquad F(2)=8, \\quad G(2)=8$$
-
-**2.** Both indices just past the crossing:
-
-$$F(3)=18, \\quad G(3)=27, \\qquad F(4)=32, \\quad G(4)=64$$
-
-**3.** The crossing itself, from $(2)$, where the factored difference is zero:
-
-$$n^{2}(n-2)=0 \\quad \\Rightarrow \\quad n=2$$
-
-**4.** The ratio at a few line sizes, which keeps climbing rather than settling:
-
-$$\\frac{G(4)}{F(4)}=2, \\qquad \\frac{G(20)}{F(20)}=10, \\qquad \\frac{G(200)}{F(200)}=100$$
-
-**5.** The verdict for the file is therefore a single crossing at two machines. The quadratic index leads below it, the cubic index leads above it, and the gap widens without limit, because the larger exponent eventually overwhelms any fixed coefficient.
-
-The cubic index exceeds the quadratic one for every $n>2$, so the statement is True.`,
-      `**C.** → True
-
-The same factored difference answers the small end of the range:
-
-$$G(n)-F(n)=n^{2}(n-2)$$
-
-For $0<n<2$ the bracket is negative while $n^{2}$ stays positive, so the whole difference is negative and the quadratic index leads. A single line size illustrates it, since $F(1)=2$ against $G(1)=1$. The larger coefficient wins while the line is short, which is exactly what a coefficient can do before an exponent takes over. The quadratic index leads on $0<n<2$, so the statement is True.`,
-      `**D.** → False
-
-Dividing the two indices cancels the common square and leaves a rule that grows with the line:
-
-$$\\frac{G(n)}{F(n)}=\\frac{n^{3}}{2n^{2}}=\\frac{n}{2}$$
-
-A ratio approaching $1$ would mean the two indices end up level, but this ratio passes every bound:
-
-$$\\frac{G(20)}{F(20)}=10, \\qquad \\frac{G(200)}{F(200)}=100$$
-
-The ratio equals $1$ only at the crossing $n=2$ and never returns to it. The gap widens without limit, so the statement is False.`,
-      `**E.** → False
-
-Just past the crossing the two indices are already apart, and each is a single substitution:
-
-$$F(3)=2\\cdot 9=18, \\qquad G(3)=27$$
-
-The quadratic figure in the claim is right, so the row fails only on the cubic one, where $24$ has been written for $27$. The sign test agrees that the cubic index must lead at three machines, since $n^{2}(n-2)=9>0$ there, and $24$ would put the two vendors much closer than the model allows. The cubic index reads $27$ rather than $24$, so the statement is False.`,
-    ],
-    difficulty_level: `2/5`,
-    sort_order: 93,
-    solution_overview: `The tender compares $F(n)=2n^{2}$ against $G(n)=n^{3}$ index points for a line of $n>0$ machines.
-
-**Part 1: Building the model.**
-
-Let $n$ = number of machines on the line, $F$ and $G$ = the two quoted indices in points. Both are power functions on $n>0$, one with exponent $2$ and coefficient $2$, the other with exponent $3$ and coefficient $1$. A larger coefficient can only lead on small inputs; a larger exponent must lead eventually.
-
-**1. Translate: the comparison.** Subtracting and factoring turns a race between two curves into one sign question:
-
-$$G(n)-F(n)=n^{2}(n-2)$$
-
-**2. Translate: the long run.** Dividing instead of subtracting shows how the gap behaves as the line grows:
-
-$$\\frac{G(n)}{F(n)}=\\frac{n^{3}}{2n^{2}}=\\frac{n}{2}$$
-
-**Part 2: The model.**
-
-$$F(n)=2n^{2}, \\qquad G(n)=n^{3} \\tag{1}$$
-
-$$G(n)>F(n) \\quad \\Longleftrightarrow \\quad n>2 \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Both indices at the small line sizes in the table:
-
-$$F(1)=2, \\quad G(1)=1, \\qquad F(2)=8, \\quad G(2)=8$$
-
-**2.** Both indices just past the crossing:
-
-$$F(3)=18, \\quad G(3)=27, \\qquad F(4)=32, \\quad G(4)=64$$
-
-**3.** The crossing itself, from $(2)$, where the factored difference is zero:
-
-$$n^{2}(n-2)=0 \\quad \\Rightarrow \\quad n=2$$
-
-**4.** The ratio at a few line sizes, which keeps climbing rather than settling:
-
-$$\\frac{G(4)}{F(4)}=2, \\qquad \\frac{G(20)}{F(20)}=10, \\qquad \\frac{G(200)}{F(200)}=100$$
-
-**5.** The verdict for the file is therefore a single crossing at two machines. The quadratic index leads below it, the cubic index leads above it, and the gap widens without limit, because the larger exponent eventually overwhelms any fixed coefficient.
-
-**Answer.** $F(2)=G(2)=8$ | cubic leads for $n>2$ | quadratic leads for $0<n<2$ | ratio $\\frac{n}{2}$ grows without bound | $G(3)=27$`,
-  },
-  {
-    id: `math-8-94`,
-    case_id: `MATH 8.94`,
-    title: `Three Root Transforms on One Calibration Sheet`,
-    context: `A materials laboratory records three transforms on the same calibration sheet, each applied to a raw sensor reading $x$ before the value is filed. The first is $L(x)=x^{\\frac{1}{2}}$, used for the strain channel, the second is $M(x)=x^{\\frac{1}{3}}$, used for the thermal channel where negative readings are entirely normal, and the third is $N(x)=x^{-\\frac{1}{2}}$, used for the damping channel. A junior technician has been asked to state, for each transform, which raw readings it accepts and what it returns at a handful of specific values, because the filing script silently drops any row it cannot compute and two rows disappeared from last month's file. Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `$L(0)=0$.`,
-      `$L(-4)$ has a real value.`,
-      `$M(-8)=-2$.`,
-      `$N(0)$ is defined.`,
-      `$N(4)=2$.`,
-    ],
-    answer_key: [true, false, true, false, false],
-    tactical_explanations: [
-      `**A.** → True
-
-The exponent $\\frac{1}{2}$ is a square root, and zero has a square root because zero squared is zero:
-
-$$L(0)=0^{\\frac{1}{2}}=\\sqrt{0}=0$$
-
-A positive exponent keeps the reading in the numerator, so nothing is divided here and the endpoint survives. The strain channel therefore files a zero rather than dropping the row, which is worth knowing when a sensor rests exactly at its baseline. The transform returns $0$ at a raw reading of zero, so the statement is True.`,
-      `**B.** → False
-
-A square root is an even root, and squaring any real number gives a result that is not negative:
-
-$$L(-4)=(-4)^{\\frac{1}{2}}=\\sqrt{-4}$$
-
-No real number satisfies $y^{2}=-4$, so the strain transform accepts only $x\\ge 0$ and any negative raw reading is one of the rows the filing script drops. The parity of the root, not the sign of the coefficient, is what closes the domain here. There is no real value at $x=-4$, so the statement is False.`,
-      `**C.** → True
-
-The exponent $\\frac{1}{3}$ is an odd root, and odd roots accept negative inputs, because an odd power of a negative number stays negative:
-
-$$(-2)^{3}=-8 \\quad \\Rightarrow \\quad M(-8)=(-8)^{\\frac{1}{3}}=-2$$
-
-This is the difference the sheet relies on: the thermal channel routinely reads below zero and still files a value, while the strain channel with its even root would refuse the same reading. The cube root of $-8$ is $-2$, so the statement is True.`,
-      `**D.** → False
-
-A negative exponent is a reciprocal, so the raw reading appears in a denominator, and the square root sits there with it:
-
-$$N(x)=x^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{x}}$$
-
-At $x=0$ the denominator is $\\sqrt{0}=0$, and division by zero has no value, so the damping channel accepts only strictly positive readings, $x>0$. The negative exponent excludes the endpoint that the strain transform was happy to accept, which explains the second dropped row. The transform has no value at $x=0$, so the statement is False.`,
-      `**E.** → False
-
-The reciprocal has to be respected: the root goes into the denominator, so a raw reading above $1$ returns something below $1$:
-
-$$N(4)=\\frac{1}{\\sqrt{4}}=\\frac{1}{2}$$
-
-The claimed $2$ is $\\sqrt{4}$, the value the strain transform would return, so the error is a dropped minus sign in the exponent.
-
-**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:
-
-**Part 1: Building the model.**
-
-Let $x$ = raw sensor reading, and let the three filed values be $L$, $M$ and $N$. All three transforms are power functions with coefficient $1$, so the exponent alone decides both the accepted readings and the size of the output. Two features of the exponent matter: whether the root is even or odd, and whether the sign is positive or negative.
-
-**1. Translate: parity of the root.** An even root demands a reading that is not negative, while an odd root accepts every real reading:
-
-$$L(x)=\\sqrt{x} \\text{ needs } x\\ge 0, \\qquad M(x)=\\sqrt[3]{x} \\text{ accepts all } x$$
-
-**2. Translate: sign of the exponent.** A negative exponent moves the root into a denominator, which excludes zero on top of any parity restriction:
-
-$$N(x)=\\frac{1}{\\sqrt{x}} \\text{ needs } x>0$$
-
-**Part 2: The model.**
-
-$$L(x)=x^{\\frac{1}{2}} \\text{ on } x\\ge 0, \\qquad M(x)=x^{\\frac{1}{3}} \\text{ on all } x \\tag{1}$$
-
-$$N(x)=\\frac{1}{\\sqrt{x}} \\text{ on } x>0 \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** The strain transform at the readings on the sheet:
-
-$$L(0)=0, \\qquad L(4)=2, \\qquad L(9)=3$$
-
-**2.** The thermal transform, including the negative reading:
-
-$$M(-8)=-2, \\qquad M(8)=2, \\qquad M(27)=3$$
-
-**3.** The damping transform from $(2)$, where every output is a reciprocal:
-
-$$N(4)=\\frac{1}{2}, \\qquad N(9)=\\frac{1}{3}, \\qquad N(0.25)=2$$
-
-**4.** The two readings that no transform can file, and the reason in each case:
-
-$$\\sqrt{-4} \\text{ is not real}, \\qquad \\frac{1}{\\sqrt{0}} \\text{ is undefined}$$
-
-**5.** The damping transform is also the only one of the three that falls as the reading grows, since its exponent is negative, and it returns a value above $1$ exactly when the raw reading is below $1$.
-
-The damping transform returns $\\frac{1}{2}$ at a raw reading of $4$ rather than $2$, so the statement is False.`,
-    ],
-    difficulty_level: `1/5`,
-    sort_order: 94,
-    solution_overview: `The sheet applies $L(x)=x^{\\frac{1}{2}}$, $M(x)=x^{\\frac{1}{3}}$ and $N(x)=x^{-\\frac{1}{2}}$ to raw readings, and the question is which readings each transform accepts.
-
-**Part 1: Building the model.**
-
-Let $x$ = raw sensor reading, and let the three filed values be $L$, $M$ and $N$. All three transforms are power functions with coefficient $1$, so the exponent alone decides both the accepted readings and the size of the output. Two features of the exponent matter: whether the root is even or odd, and whether the sign is positive or negative.
-
-**1. Translate: parity of the root.** An even root demands a reading that is not negative, while an odd root accepts every real reading:
-
-$$L(x)=\\sqrt{x} \\text{ needs } x\\ge 0, \\qquad M(x)=\\sqrt[3]{x} \\text{ accepts all } x$$
-
-**2. Translate: sign of the exponent.** A negative exponent moves the root into a denominator, which excludes zero on top of any parity restriction:
-
-$$N(x)=\\frac{1}{\\sqrt{x}} \\text{ needs } x>0$$
-
-**Part 2: The model.**
-
-$$L(x)=x^{\\frac{1}{2}} \\text{ on } x\\ge 0, \\qquad M(x)=x^{\\frac{1}{3}} \\text{ on all } x \\tag{1}$$
-
-$$N(x)=\\frac{1}{\\sqrt{x}} \\text{ on } x>0 \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** The strain transform at the readings on the sheet:
-
-$$L(0)=0, \\qquad L(4)=2, \\qquad L(9)=3$$
-
-**2.** The thermal transform, including the negative reading:
-
-$$M(-8)=-2, \\qquad M(8)=2, \\qquad M(27)=3$$
-
-**3.** The damping transform from $(2)$, where every output is a reciprocal:
-
-$$N(4)=\\frac{1}{2}, \\qquad N(9)=\\frac{1}{3}, \\qquad N(0.25)=2$$
-
-**4.** The two readings that no transform can file, and the reason in each case:
-
-$$\\sqrt{-4} \\text{ is not real}, \\qquad \\frac{1}{\\sqrt{0}} \\text{ is undefined}$$
-
-**5.** The damping transform is also the only one of the three that falls as the reading grows, since its exponent is negative, and it returns a value above $1$ exactly when the raw reading is below $1$.
-
-**Answer.** $L(0)=0$ | $L(-4)$ not real | $M(-8)=-2$ | $N(0)$ undefined | $N(4)=\\frac{1}{2}$`,
-  },
-  {
-    id: `math-8-95`,
-    case_id: `MATH 8.95`,
-    title: `A Filter Bank Pressure Drop That Never Reaches Zero`,
-    context: `A water treatment plant runs its intake through a bank of identical cartridges connected in parallel, and the pressure drop across the bank is modelled by $P(x)=12x^{-\\frac{1}{2}}$ kilopascals, where $x>0$ is the number of cartridges in service. Adding cartridges spreads the same flow across more paths, so the drop falls, and the maintenance manual promises that the drop can be brought as close to zero as the budget allows. A shift supervisor is writing the operating note and needs the shape of the rule as well as two readings from it, since the control room has been asking both what happens when nearly every cartridge is pulled for cleaning and whether an enormous bank could ever remove the drop entirely. Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `At $x=4$ cartridges the pressure drop is $6$ kilopascals.`,
-      `The pressure drop is strictly decreasing on $x>0$.`,
-      `As $x$ grows without bound, $P(x)$ approaches $0$ without ever reaching it.`,
-      `As $x$ approaches $0$ from the right, $P(x)$ approaches a finite limit.`,
-      `At $x=9$ cartridges the pressure drop is $4$ kilopascals.`,
-    ],
-    answer_key: [true, true, true, false, true],
-    tactical_explanations: [
-      `**A.** → True
-
-The negative fractional exponent is easiest to read as a root in a denominator:
-
-$$P(x)=12x^{-\\frac{1}{2}}=\\frac{12}{\\sqrt{x}}$$
-
-At four cartridges the root is a whole number, so one division finishes the reading:
-
-$$P(4)=\\frac{12}{2}=6$$
-
-Multiplying by the root instead of dividing would give $24$ kilopascals and reverse the whole point of adding cartridges. The drop at four cartridges is $6$ kilopascals, so the statement is True.`,
-      `**B.** → True
-
-The rule has a positive numerator and a root of the cartridge count in the denominator:
-
-$$P(x)=\\frac{12}{\\sqrt{x}}$$
-
-Every extra cartridge enlarges $\\sqrt{x}$, and a larger denominator under a fixed numerator gives a smaller quotient, so the drop falls at every point of the range without any turning point:
-
-$$P(1)=12, \\qquad P(4)=6, \\qquad P(16)=3$$
-
-The pressure drop is strictly decreasing on $x>0$, so the statement is True.`,
-      `**C.** → True
-
-Two things are being claimed, and the reciprocal form settles both:
-
-$$P(x)=\\frac{12}{\\sqrt{x}}$$
-
-As the bank grows, the denominator passes every bound while the numerator stays at $12$, so the quotient is driven towards zero:
-
-$$P(144)=1, \\qquad P(14400)=0.1, \\qquad P(1440000)=0.01$$
-
-Zero itself is never attained, because a quotient with a nonzero numerator cannot equal zero however large the denominator becomes. The manual's promise is therefore about getting arbitrarily close, not about arriving.
-
-**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:
-
-**Part 1: Building the model.**
-
-Let $x$ = cartridges in service, $P$ = pressure drop across the bank in kilopascals. The rule is a power function with coefficient $12$ and exponent $-\\frac{1}{2}$ on the domain $x>0$, where the negative sign makes it fall and the even root closes the domain at zero from below.
-
-**1. Translate: the reciprocal form.** A negative exponent puts the root in a denominator, which is what makes extra cartridges help:
-
-$$P(x)=\\frac{12}{\\sqrt{x}}$$
-
-**2. Translate: a scale factor.** Multiplying the bank by $k$ multiplies the drop by $k^{-\\frac{1}{2}}$, independently of the coefficient:
-
-$$\\frac{P(kx)}{P(x)}=k^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{k}}$$
-
-**Part 2: The model.**
-
-$$P(x)=\\frac{12}{\\sqrt{x}} \\quad \\text{on } x>0 \\tag{1}$$
-
-$$\\frac{P(kx)}{P(x)}=\\frac{1}{\\sqrt{k}} \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Readings at the bank sizes in the operating note, from $(1)$:
-
-$$P(1)=12, \\qquad P(4)=6, \\qquad P(9)=4, \\qquad P(16)=3$$
-
-**2.** The quadrupling factor from $(2)$ with $k=4$, which halves the drop:
-
-$$\\frac{1}{\\sqrt{4}}=\\frac{1}{2}$$
-
-**3.** Very large banks, where the drop is small but never zero:
-
-$$P(144)=1, \\qquad P(14400)=0.1$$
-
-**4.** Very small banks, where the denominator collapses and the drop passes every bound:
-
-$$P(0.01)=120, \\qquad P(0.0001)=1200$$
-
-**5.** The two ends therefore answer the control room's two questions in opposite ways. There is no ceiling on the drop as cartridges are pulled, and no floor above zero as cartridges are added, with the drop halving for every quadrupling of the bank.
-
-The drop approaches $0$ without reaching it, so the statement is True.`,
-      `**D.** → False
-
-Pulling cartridges runs the same reciprocal in the other direction:
-
-$$P(0.01)=\\frac{12}{\\sqrt{0.01}}=\\frac{12}{0.1}=120$$
-
-$$P(0.0001)=\\frac{12}{0.01}=1200$$
-
-A tiny positive denominator makes the quotient enormous, and no finite figure caps it, so there is no limiting value to quote. The rule does not extend to $x=0$ either, since the denominator would be zero there. The drop grows without bound rather than settling, so the statement is False.`,
-      `**E.** → True
-
-Nine cartridges give another whole root, so the reading is again a single division:
-
-$$P(9)=\\frac{12}{\\sqrt{9}}=\\frac{12}{3}=4$$
-
-The figure is consistent with the falling shape recorded elsewhere in the note, since nine cartridges sit between four and sixteen, and $4$ sits between the corresponding drops of $6$ and $3$ kilopascals. Adding five cartridges to the bank of four has bought only two kilopascals, because the exponent is $-\\frac{1}{2}$ rather than $-1$. The drop at nine cartridges is $4$ kilopascals, so the statement is True.`,
-    ],
-    difficulty_level: `2/5`,
-    sort_order: 95,
-    solution_overview: `The filter bank obeys $P(x)=12x^{-\\frac{1}{2}}$ kilopascals for $x>0$ cartridges in service, and the note needs shape as well as levels.
-
-**Part 1: Building the model.**
-
-Let $x$ = cartridges in service, $P$ = pressure drop across the bank in kilopascals. The rule is a power function with coefficient $12$ and exponent $-\\frac{1}{2}$ on the domain $x>0$, where the negative sign makes it fall and the even root closes the domain at zero from below.
-
-**1. Translate: the reciprocal form.** A negative exponent puts the root in a denominator, which is what makes extra cartridges help:
-
-$$P(x)=\\frac{12}{\\sqrt{x}}$$
-
-**2. Translate: a scale factor.** Multiplying the bank by $k$ multiplies the drop by $k^{-\\frac{1}{2}}$, independently of the coefficient:
-
-$$\\frac{P(kx)}{P(x)}=k^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{k}}$$
-
-**Part 2: The model.**
-
-$$P(x)=\\frac{12}{\\sqrt{x}} \\quad \\text{on } x>0 \\tag{1}$$
-
-$$\\frac{P(kx)}{P(x)}=\\frac{1}{\\sqrt{k}} \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** Readings at the bank sizes in the operating note, from $(1)$:
-
-$$P(1)=12, \\qquad P(4)=6, \\qquad P(9)=4, \\qquad P(16)=3$$
-
-**2.** The quadrupling factor from $(2)$ with $k=4$, which halves the drop:
-
-$$\\frac{1}{\\sqrt{4}}=\\frac{1}{2}$$
-
-**3.** Very large banks, where the drop is small but never zero:
-
-$$P(144)=1, \\qquad P(14400)=0.1$$
-
-**4.** Very small banks, where the denominator collapses and the drop passes every bound:
-
-$$P(0.01)=120, \\qquad P(0.0001)=1200$$
-
-**5.** The two ends therefore answer the control room's two questions in opposite ways. There is no ceiling on the drop as cartridges are pulled, and no floor above zero as cartridges are added, with the drop halving for every quadrupling of the bank.
-
-**Answer.** $P(4)=6$ | $P(9)=4$ | strictly decreasing | $P(x)\\to 0$ but never $0$ | unbounded as $x\\to 0^{+}$`,
-  },
-  {
-    id: `math-8-96`,
-    case_id: `MATH 8.96`,
-    title: `Primer for Circular Panels from a Single Recorded Job`,
-    context: `A signage workshop primes circular aluminium panels and models the primer needed for one panel as $y(r)=Ar^{2}$ litres, where $r>0$ is the radius of the panel in metres. The coefficient depends on the primer and the surface treatment the workshop uses, and it was never recorded, but the job book preserves one complete entry: a panel of radius three metres took forty five litres. Three new sizes are on the order sheet, and the workshop manager also wants the two rules of thumb on the wall checked, since one of them claims that a panel half as wide takes half the primer and the other claims a fifty percent wider panel takes a little over twice as much. Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `The coefficient satisfies $A=15$.`,
-      `A panel of radius $6$ metres needs $180$ litres.`,
-      `Increasing the radius by $50\\%$ multiplies the primer needed by $2.25$.`,
-      `A panel of radius $1$ metre needs $5$ litres.`,
-      `Halving the radius halves the primer needed.`,
-    ],
-    answer_key: [false, true, true, true, false],
-    tactical_explanations: [
-      `**A.** → False
-
-The recorded job is one equation, and the square of the radius has to be formed before the division:
-
-$$A\\cdot 3^{2}=45 \\quad \\Rightarrow \\quad 9A=45 \\quad \\Rightarrow \\quad A=5$$
-
-The claimed $15$ is $\\frac{45}{3}$, which divides by the radius instead of by its square, so it is the value the coefficient would take if the exponent were $1$. Area based rules carry exponent $2$. The coefficient is $5$ rather than $15$, so the statement is False.`,
-      `**B.** → True
-
-With the coefficient recovered the rule is $y(r)=5r^{2}$, so the largest panel on the sheet needs
-
-$$y(6)=5\\cdot 6^{2}=5\\cdot 36=180$$
-
-The scaling route agrees without reusing the coefficient, since doubling the radius from the recorded job multiplies the requirement by $2^{2}=4$, and $45\\times 4=180$. Both routes land on the same figure, which is the check the manager wants before ordering drums. The panel needs $180$ litres, so the statement is True.`,
-      `**C.** → True
-
-A scale factor of a power function depends only on the exponent, because the coefficient cancels in the ratio:
-
-$$\\frac{y(1.5r)}{y(r)}=\\frac{A(1.5r)^{2}}{Ar^{2}}=1.5^{2}=2.25$$
-
-A panel half again as wide therefore takes $125\\%$ more primer, not $50\\%$ more, which makes the second rule of thumb on the wall correct as stated. A level check illustrates it, since $y(2)=20$ against $y(3)=45$, and $20\\times 2.25=45$. The requirement is multiplied by $2.25$, so the statement is True.`,
-      `**D.** → True
-
-At a radius of one metre the square of the radius is $1$, so the coefficient is left on its own:
-
-$$y(1)=5\\cdot 1^{2}=5$$
-
-This is the reading that gives the coefficient its meaning: five litres is the primer needed for a panel of radius one metre, and every other entry on the order sheet is that figure multiplied by the square of the radius.
-
-**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:
-
-**Part 1: Building the model.**
-
-Let $r$ = panel radius in metres, $y$ = primer needed for one panel in litres. The rule $y(r)=Ar^{2}$ is a power function with exponent $2$ on the domain $r>0$, and the coefficient absorbs both the primer and the surface treatment. The recorded job fixes the coefficient, after which levels and scale factors behave quite differently.
-
-**1. Translate: the recorded job.** The square comes first, then the division that recovers the coefficient:
-
-$$A\\cdot 3^{2}=45, \\qquad 3^{2}=9$$
-
-**2. Translate: a width multiplier.** Multiplying the radius by $k$ multiplies the requirement by $k^{2}$, whatever the coefficient turns out to be:
-
-$$\\frac{y(kr)}{y(r)}=\\frac{A(kr)^{2}}{Ar^{2}}=k^{2}$$
-
-**Part 2: The model.**
-
-$$y(r)=5r^{2} \\tag{1}$$
-
-$$\\frac{y(kr)}{y(r)}=k^{2} \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** The recovered coefficient:
-
-$$9A=45 \\quad \\Rightarrow \\quad A=5$$
-
-**2.** Requirements at the sizes on the order sheet, from $(1)$:
-
-$$y(1)=5, \\qquad y(1.5)=11.25, \\qquad y(3)=45, \\qquad y(6)=180$$
-
-**3.** The two width multipliers from $(2)$, one for a wider panel and one for a narrower one:
-
-$$1.5^{2}=2.25, \\qquad 0.5^{2}=0.25$$
-
-**4.** The rules of thumb on the wall, translated into levels around the recorded job:
-
-$$45\\times 2.25=101.25, \\qquad 45\\times 0.25=11.25$$
-
-**5.** Only one of the two rules survives. A fifty percent wider panel does take a little over twice as much primer, while a panel half as wide takes a quarter rather than a half, because an exponent of $2$ magnifies every change in width.
-
-A panel of radius one metre needs $5$ litres, so the statement is True.`,
-      `**E.** → False
-
-Halving the radius is a width multiplier of $k=0.5$, and the exponent $2$ acts on the whole multiplier:
-
-$$\\frac{y(0.5r)}{y(r)}=0.5^{2}=0.25$$
-
-Levels around the recorded job make the size of the error plain, since halving the three metre radius gives
-
-$$y(1.5)=5\\cdot 2.25=11.25$$
-
-against the $22.5$ litres the rule of thumb predicts. A quarter, not a half, is what the narrower panel takes, so the statement is False.`,
-    ],
-    difficulty_level: `1/5`,
-    sort_order: 96,
-    solution_overview: `Primer for one circular panel is $y(r)=Ar^{2}$ litres, and the single job book entry $y(3)=45$ fixes the coefficient.
-
-**Part 1: Building the model.**
-
-Let $r$ = panel radius in metres, $y$ = primer needed for one panel in litres. The rule $y(r)=Ar^{2}$ is a power function with exponent $2$ on the domain $r>0$, and the coefficient absorbs both the primer and the surface treatment. The recorded job fixes the coefficient, after which levels and scale factors behave quite differently.
-
-**1. Translate: the recorded job.** The square comes first, then the division that recovers the coefficient:
-
-$$A\\cdot 3^{2}=45, \\qquad 3^{2}=9$$
-
-**2. Translate: a width multiplier.** Multiplying the radius by $k$ multiplies the requirement by $k^{2}$, whatever the coefficient turns out to be:
-
-$$\\frac{y(kr)}{y(r)}=\\frac{A(kr)^{2}}{Ar^{2}}=k^{2}$$
-
-**Part 2: The model.**
-
-$$y(r)=5r^{2} \\tag{1}$$
-
-$$\\frac{y(kr)}{y(r)}=k^{2} \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** The recovered coefficient:
-
-$$9A=45 \\quad \\Rightarrow \\quad A=5$$
-
-**2.** Requirements at the sizes on the order sheet, from $(1)$:
-
-$$y(1)=5, \\qquad y(1.5)=11.25, \\qquad y(3)=45, \\qquad y(6)=180$$
-
-**3.** The two width multipliers from $(2)$, one for a wider panel and one for a narrower one:
-
-$$1.5^{2}=2.25, \\qquad 0.5^{2}=0.25$$
-
-**4.** The rules of thumb on the wall, translated into levels around the recorded job:
-
-$$45\\times 2.25=101.25, \\qquad 45\\times 0.25=11.25$$
-
-**5.** Only one of the two rules survives. A fifty percent wider panel does take a little over twice as much primer, while a panel half as wide takes a quarter rather than a half, because an exponent of $2$ magnifies every change in width.
-
-**Answer.** $A=5$ | $y(1)=5$ | $y(6)=180$ | width factor $1.5$ gives $2.25$ | halving the radius quarters the primer`,
-  },
-  {
-    id: `math-8-97`,
-    case_id: `MATH 8.97`,
-    title: `A Braking Energy Index and the Ten Percent Trap`,
-    context: `A vehicle test centre reports a braking energy index $E(v)=0.5v^{2}$ points for an approach speed of $v>0$ km/h, the coefficient having been chosen so that the index is a convenient whole number at the standard test speeds. The index is used only for comparison between runs, so its units never appear in the report, and the test sheet lists the two standard approach speeds of $10$ and $20$ along with a note from the engineer that a small overspeed on the approach is not a small matter for the index. A trainee is checking the sheet before it is signed, including two claims about what happens when the approach speed is raised. Evaluate each statement. Mark it TRUE or FALSE.`,
-    statements: [
-      `At $v=10$ the index reads $50$.`,
-      `Raising the approach speed from $10$ to $20$ multiplies the index by $4$.`,
-      `At $v=20$ the index reads $200$.`,
-      `The index is never negative for $v>0$.`,
-      `Raising the approach speed by $10\\%$ raises the index by $10\\%$.`,
-    ],
-    answer_key: [true, true, true, true, false],
-    tactical_explanations: [
-      `**A.** → True
-
-The square is taken before the coefficient is applied, which is what makes the standard speeds land on whole numbers:
-
-$$E(10)=0.5\\cdot 10^{2}=0.5\\cdot 100=50$$
-
-Halving the speed first and squaring afterwards would give $5^{2}=25$, exactly half of the correct index, which is the usual slip when the coefficient is a fraction.
-
-**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:
-
-**Part 1: Building the model.**
-
-Let $v$ = approach speed in km/h, $E$ = braking energy index in points. The rule $E(v)=0.5v^{2}$ is a power function with exponent $2$ and coefficient $0.5$ on the domain $v>0$. Levels use the coefficient, while every comparison between runs depends on the exponent alone, since the coefficient cancels in any ratio.
-
-**1. Translate: a level.** Square the speed, then halve it:
-
-$$E(v)=0.5\\cdot v^{2}$$
-
-**2. Translate: a speed multiplier.** Multiplying the approach speed by $k$ multiplies the index by $k^{2}$:
-
-$$\\frac{E(kv)}{E(v)}=\\frac{0.5(kv)^{2}}{0.5v^{2}}=k^{2}$$
-
-**Part 2: The model.**
-
-$$E(v)=0.5v^{2} \\tag{1}$$
-
-$$\\frac{E(kv)}{E(v)}=k^{2} \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** The index at the two standard test speeds, from $(1)$:
-
-$$E(10)=50, \\qquad E(20)=200$$
-
-**2.** The doubling factor from $(2)$ with $k=2$:
-
-$$2^{2}=4$$
-
-**3.** The overspeed factor from $(2)$ with $k=1.1$:
-
-$$1.1^{2}=1.21$$
-
-**4.** That factor as a level, applied to the lower standard speed:
-
-$$E(11)=0.5\\cdot 121=60.5, \\qquad 60.5-50=10.5$$
-
-**5.** Signs need no calculation at all: a square is never negative and the coefficient is positive, so the index stays positive across the whole domain. The engineer's note is the exponent talking, since a ten percent overspeed adds twenty one percent to the index.
-
-The index at the lower standard speed reads $50$, so the statement is True.`,
-      `**B.** → True
-
-A ratio of two index values loses the coefficient, so the comparison rests on the exponent alone:
-
-$$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 400}{0.5\\cdot 100}=\\frac{400}{100}=4$$
-
-The same figure comes from the speed multiplier $k=2$ directly, since $2^{2}=4$, without evaluating either level at all. Nor is the cancellation special to this pair of speeds: any doubling of the approach speed, from any starting point on the domain, multiplies the index by $2^{2}$, because the coefficient $0.5$ stands once above and once below the line. Doubling the approach speed quadruples the index, so the statement is True.`,
-      `**C.** → True
-
-The higher standard speed is another single substitution, square first:
-
-$$E(20)=0.5\\cdot 20^{2}=0.5\\cdot 400=200$$
-
-The figure is consistent with the doubling factor recorded on the sheet, since $50\\times 4=200$, so the two entries agree with each other rather than resting on separate arithmetic. Reporting $100$ here would mean treating the index as proportional to the speed, which the exponent $2$ rules out. The index at the higher standard speed reads $200$, so the statement is True.`,
-      `**D.** → True
-
-Two features of the rule settle the sign without any test data. A square is never negative, and the coefficient is positive:
-
-$$v^{2}>0 \\text{ for } v>0, \\qquad 0.5>0$$
-
-The product of two positive quantities is positive, so the index stays above zero across the whole domain and there is no approach speed at which the report could show a negative figure. An index of zero would need $v=0$, which the domain excludes. The index is never negative, so the statement is True.`,
-      `**E.** → False
-
-A ten percent overspeed is a speed multiplier of $k=1.1$, and the exponent acts on the whole multiplier rather than on the ten percent:
-
-$$\\frac{E(1.1v)}{E(v)}=1.1^{2}=1.21$$
-
-A level check at the lower standard speed makes the gap concrete:
-
-$$E(11)=0.5\\cdot 121=60.5, \\qquad 60.5-50=10.5$$
-
-The index rises by twenty one percent, which is the engineer's note in numbers, so the statement is False.`,
-    ],
-    difficulty_level: `2/5`,
-    sort_order: 97,
-    solution_overview: `The test centre reports $E(v)=0.5v^{2}$ points for an approach speed of $v>0$ km/h, and the sheet has to be checked at the standard speeds and under a small overspeed.
-
-**Part 1: Building the model.**
-
-Let $v$ = approach speed in km/h, $E$ = braking energy index in points. The rule $E(v)=0.5v^{2}$ is a power function with exponent $2$ and coefficient $0.5$ on the domain $v>0$. Levels use the coefficient, while every comparison between runs depends on the exponent alone, since the coefficient cancels in any ratio.
-
-**1. Translate: a level.** Square the speed, then halve it:
-
-$$E(v)=0.5\\cdot v^{2}$$
-
-**2. Translate: a speed multiplier.** Multiplying the approach speed by $k$ multiplies the index by $k^{2}$:
-
-$$\\frac{E(kv)}{E(v)}=\\frac{0.5(kv)^{2}}{0.5v^{2}}=k^{2}$$
-
-**Part 2: The model.**
-
-$$E(v)=0.5v^{2} \\tag{1}$$
-
-$$\\frac{E(kv)}{E(v)}=k^{2} \\tag{2}$$
-
-**Part 3: Solve.**
-
-**1.** The index at the two standard test speeds, from $(1)$:
-
-$$E(10)=50, \\qquad E(20)=200$$
-
-**2.** The doubling factor from $(2)$ with $k=2$:
-
-$$2^{2}=4$$
-
-**3.** The overspeed factor from $(2)$ with $k=1.1$:
-
-$$1.1^{2}=1.21$$
-
-**4.** That factor as a level, applied to the lower standard speed:
-
-$$E(11)=0.5\\cdot 121=60.5, \\qquad 60.5-50=10.5$$
-
-**5.** Signs need no calculation at all: a square is never negative and the coefficient is positive, so the index stays positive across the whole domain. The engineer's note is the exponent talking, since a ten percent overspeed adds twenty one percent to the index.
-
-**Answer.** $E(10)=50$ | $E(20)=200$ | doubling factor $4$ | index always positive | a $10\\%$ overspeed adds $21\\%$`,
   },
 ];
