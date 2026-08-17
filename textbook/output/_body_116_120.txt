@@ -1,0 +1,496 @@
+@@@116A
+The internal rate of return is the discount rate that drives net present value to zero:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0$$
+
+Substituting $a_0 = -\$20,000$, $a_1 = \$9,000$, $a_2 = \$15,000$ and writing $s = 1/(1+r)$ turns this into a quadratic:
+
+$$15,000s^{2} + 9,000s - 20,000 = 0$$
+
+Dividing through by 1,000:
+
+$$15s^{2} + 9s - 20 = 0$$
+
+The discriminant is
+
+$$9^{2} + 4(15)(20) = 81 + 1,200 = 1,281$$
+
+$$\sqrt{1,281} \approx 35.791$$
+
+Taking the positive root, since $s$ must be positive:
+
+$$s = \frac{-9 + 35.791}{30} \approx 0.89304$$
+
+$$r = \frac{1}{0.89304} - 1$$
+
+$$r \approx 0.11978 = 11.98\%$$
+
+The claim gives about 11.98%, and the calculation returns 11.98%, so the statement is true.
+@@@116B
+Net present value discounts each year's return to today and subtracts the outlay:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -\$20,000$, $a_1 = \$9,000$, $a_2 = \$15,000$ and $r = 10\% = 0.10$:
+
+$$\frac{9,000}{1.10} \approx \$8,181.82$$
+
+$$(1.10)^{2} = 1.21$$
+
+$$\frac{15,000}{1.21} \approx \$12,396.69$$
+
+$$A \approx -20,000.00 + 8,181.82 + 12,396.69$$
+
+$$A \approx \$578.51$$
+
+The claim says the value is positive, and the calculation shows a surplus of \$578.51, in line with 10% sitting below the project's internal rate of return of about 11.98%. The statement is true.
+@@@116C
+The same formula applies with the higher discount rate:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -\$20,000$, $a_1 = \$9,000$, $a_2 = \$15,000$ and $r = 14\% = 0.14$:
+
+$$\frac{9,000}{1.14} \approx \$7,894.74$$
+
+$$(1.14)^{2} = 1.2996$$
+
+$$\frac{15,000}{1.2996} \approx \$11,542.01$$
+
+$$A \approx -20,000.00 + 7,894.74 + 11,542.01$$
+
+$$A \approx -\$563.25$$
+
+The claim says the value is positive, but the project falls \$563.25 short at 14%, since that rate is above the internal rate of return of about 11.98%. The statement is false.
+@@@116D
+Raising the Year 1 return changes the middle coefficient of the quadratic, so the rate is solved again from scratch:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+A \$9,000 increase makes the first return $9,000 + 9,000 = \$18,000$, with Year 2 still at \$15,000:
+
+$$15,000s^{2} + 18,000s - 20,000 = 0$$
+
+$$15s^{2} + 18s - 20 = 0$$
+
+The discriminant is
+
+$$18^{2} + 4(15)(20) = 324 + 1,200 = 1,524$$
+
+$$\sqrt{1,524} \approx 39.0384$$
+
+$$s = \frac{-18 + 39.0384}{30} \approx 0.70128$$
+
+$$r = \frac{1}{0.70128} - 1 \approx 0.42596 = 42.60\%$$
+
+Comparing with the threshold in the claim:
+
+$$42.60\% - 30\% = 12.60 \text{ percentage points}$$
+
+Pulling money forward into Year 1 lifts the rate to about 42.60%, well past 30%, so the statement is true.
+@@@116E
+The cash flows are the outlay today and the two returns, with the outlay counted as negative:
+
+$$a_0 = -\$20,000, \qquad a_1 = \$9,000, \qquad a_2 = \$15,000$$
+
+Adding them without any discounting:
+
+$$a_0 + a_1 + a_2 = -20,000 + 9,000 + 15,000$$
+
+$$= -20,000 + 24,000$$
+
+$$= \$4,000$$
+
+The claim names \$4,000, and the undiscounted total is \$4,000. The sign of this total also lines up with the chapter's result that a positive total means a positive internal rate of return, which matches the rate of about 11.98% for these cash flows. The statement is true.
+@@@117A
+For a project with one outlay today and one return a year later, the internal rate of return solves
+
+$$-a + \frac{b}{1+r} = 0$$
+
+which rearranges to
+
+$$r = \frac{b}{a} - 1$$
+
+Substituting Project X's outlay of \$15,000 and its \$17,250 payoff:
+
+$$r_X = \frac{17,250}{15,000} - 1$$
+
+$$\frac{17,250}{15,000} = 1.15$$
+
+$$r_X = 1.15 - 1$$
+
+$$r_X = 0.15 = 15\%$$
+
+The claim names exactly 15%, and the calculation returns exactly 15%, so the statement is true.
+@@@117B
+The same one-year rule applies to Project Y, with its own outlay and payoff:
+
+$$r = \frac{b}{a} - 1$$
+
+Substituting Project Y's outlay of \$22,000 and its \$24,750 payoff:
+
+$$r_Y = \frac{24,750}{22,000} - 1$$
+
+$$\frac{24,750}{22,000} = 1.125$$
+
+$$r_Y = 1.125 - 1$$
+
+$$r_Y = 0.125 = 12.5\%$$
+
+The claim names exactly 12.5%, and the calculation returns exactly 12.5%, so the statement is true.
+@@@117C
+The internal rate of return criterion ranks projects by rate and prefers the higher one, so both rates are needed:
+
+$$r = \frac{b}{a} - 1$$
+
+Project X:
+
+$$r_X = \frac{17,250}{15,000} - 1 = 1.15 - 1 = 0.15 = 15\%$$
+
+Project Y:
+
+$$r_Y = \frac{24,750}{22,000} - 1 = 1.125 - 1 = 0.125 = 12.5\%$$
+
+Comparing the two:
+
+$$15\% - 12.5\% = 2.5 \text{ percentage points}$$
+
+Project X earns 2.5 percentage points more per dollar committed, so the criterion picks X rather than Y. The claim puts Y ahead, so the statement is false.
+@@@117D
+Each project is valued at 11% with the one-period net present value formula:
+
+$$A = -a + \frac{b}{1+r}$$
+
+Project X:
+
+$$\frac{17,250}{1.11} \approx \$15,540.54$$
+
+$$A_X \approx -15,000.00 + 15,540.54 \approx \$540.54$$
+
+Project Y:
+
+$$\frac{24,750}{1.11} \approx \$22,297.30$$
+
+$$A_Y \approx -22,000.00 + 22,297.30 \approx \$297.30$$
+
+The claim needs X positive and Y negative. X is positive at \$540.54, but Y is also positive, by \$297.30, because 11% still sits below Y's internal rate of return of 12.5%. The second half of the claim fails, so the statement is false.
+@@@117E
+A larger payoff on the same outlay raises Project Y's rate, so recompute it with the one-year rule:
+
+$$r = \frac{b}{a} - 1$$
+
+Substituting the unchanged \$22,000 outlay and the higher \$25,000 payoff:
+
+$$r_Y = \frac{25,000}{22,000} - 1$$
+
+$$\frac{25,000}{22,000} \approx 1.136364$$
+
+$$r_Y \approx 0.136364 = 13.64\%$$
+
+Project X's rate comes from its own figures:
+
+$$r_X = \frac{17,250}{15,000} - 1 = 0.15 = 15\%$$
+
+Comparing the two:
+
+$$15\% - 13.64\% = 1.36 \text{ percentage points}$$
+
+Even with the bigger payoff, Project Y stays 1.36 percentage points behind Project X, so the statement is false.
+@@@118A
+Net present value discounts every cash flow, including the negative one in Year 1, back to today:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} + \frac{a_3}{(1+r)^{3}}$$
+
+Substituting $a_0 = -\$45,000$, $a_1 = -\$3,000$, $a_2 = \$28,000$, $a_3 = \$35,000$ and $r = 8\% = 0.08$:
+
+$$\frac{-3,000}{1.08} \approx -\$2,777.78$$
+
+$$(1.08)^{2} = 1.1664, \qquad \frac{28,000}{1.1664} \approx \$24,005.49$$
+
+$$(1.08)^{3} \approx 1.259712, \qquad \frac{35,000}{1.259712} \approx \$27,784.13$$
+
+$$A \approx -45,000.00 - 2,777.78 + 24,005.49 + 27,784.13$$
+
+$$A \approx \$4,011.84$$
+
+The claim gives about \$4,012, and the calculation returns \$4,011.84, so the statement is true.
+@@@118B
+The same four-term formula is evaluated at the higher rate:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} + \frac{a_3}{(1+r)^{3}}$$
+
+Substituting the cash flows with $r = 12\% = 0.12$:
+
+$$\frac{-3,000}{1.12} \approx -\$2,678.57$$
+
+$$(1.12)^{2} = 1.2544, \qquad \frac{28,000}{1.2544} \approx \$22,321.43$$
+
+$$(1.12)^{3} \approx 1.404928, \qquad \frac{35,000}{1.404928} \approx \$24,912.31$$
+
+$$A \approx -45,000.00 - 2,678.57 + 22,321.43 + 24,912.31$$
+
+$$A \approx -\$444.83$$
+
+The claim says the value is positive, but at 12% the project comes up \$444.83 short, so the statement is false.
+@@@118C
+The internal rate of return sits where net present value crosses zero, so the crossing point is located by evaluating
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} + \frac{a_3}{(1+r)^{3}}$$
+
+at several rates. At 8%:
+
+$$A \approx -45,000.00 - 2,777.78 + 24,005.49 + 27,784.13 \approx \$4,011.84$$
+
+At 11%:
+
+$$A \approx -45,000.00 - 2,702.70 + 22,725.43 + 25,591.69 \approx \$614.42$$
+
+At 12%:
+
+$$A \approx -45,000.00 - 2,678.57 + 22,321.43 + 24,912.31 \approx -\$444.83$$
+
+Net present value is still positive at 11% and already negative at 12%, so it passes through zero somewhere between those two rates. The claim places the internal rate of return between 12% and 15%, but by 12% the value has already gone negative, so the statement is false.
+@@@118D
+Net present value at 15% uses the same four discounted terms:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} + \frac{a_3}{(1+r)^{3}}$$
+
+Substituting the cash flows with $r = 15\% = 0.15$:
+
+$$\frac{-3,000}{1.15} \approx -\$2,608.70$$
+
+$$(1.15)^{2} = 1.3225, \qquad \frac{28,000}{1.3225} \approx \$21,172.02$$
+
+$$(1.15)^{3} \approx 1.520875, \qquad \frac{35,000}{1.520875} \approx \$23,013.08$$
+
+$$A \approx -45,000.00 - 2,608.70 + 21,172.02 + 23,013.08$$
+
+$$A \approx -\$3,423.60$$
+
+The claim gives about $-\$3,424$, and the calculation returns $-\$3,423.60$, so the statement is true.
+@@@118E
+The claim is about the signs of the three cash flows that follow the initial outlay, so read them straight from the project description:
+
+$$a_1 = -\$3,000, \qquad a_2 = \$28,000, \qquad a_3 = \$35,000$$
+
+Installation disruption produces a net outflow at the end of Year 1, which makes $a_1$ negative:
+
+$$a_1 = -3,000 < 0$$
+
+The two later flows are genuine returns:
+
+$$a_2 = 28,000 > 0, \qquad a_3 = 35,000 > 0$$
+
+Since one of the three is negative, they are not all positive. This also matters for the uniqueness result, which requires every cash flow after the initial outlay to be strictly positive before it can guarantee a single internal rate of return, and that requirement is not met here. The claim says all three are positive, so the statement is false.
+@@@119A
+The internal rate of return is the discount rate at which net present value is zero:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0$$
+
+Substituting $a_0 = -\$34,000$, $a_1 = \$16,000$, $a_2 = \$24,000$ and writing $s = 1/(1+r)$:
+
+$$24,000s^{2} + 16,000s - 34,000 = 0$$
+
+Dividing through by 2,000:
+
+$$12s^{2} + 8s - 17 = 0$$
+
+The discriminant is
+
+$$8^{2} + 4(12)(17) = 64 + 816 = 880$$
+
+$$\sqrt{880} \approx 29.665$$
+
+$$s = \frac{-8 + 29.665}{24} \approx 0.90270$$
+
+$$r = \frac{1}{0.90270} - 1 \approx 0.10778 = 10.78\%$$
+
+The claim states about 14.5%:
+
+$$14.5\% - 10.78\% = 3.72 \text{ percentage points}$$
+
+The true rate is about 10.78%, well short of the stated figure, so the statement is false.
+@@@119B
+Net present value discounts both returns and subtracts the outlay:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -\$34,000$, $a_1 = \$16,000$, $a_2 = \$24,000$ and $r = 9\% = 0.09$:
+
+$$\frac{16,000}{1.09} \approx \$14,678.90$$
+
+$$(1.09)^{2} = 1.1881$$
+
+$$\frac{24,000}{1.1881} \approx \$20,200.32$$
+
+$$A \approx -34,000.00 + 14,678.90 + 20,200.32$$
+
+$$A \approx \$879.22$$
+
+The claim says the value is negative, but the project shows a surplus of \$879.22, because 9% sits below the internal rate of return of about 10.78%. The statement is false.
+@@@119C
+The same formula is evaluated at the higher rate:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -\$34,000$, $a_1 = \$16,000$, $a_2 = \$24,000$ and $r = 13\% = 0.13$:
+
+$$\frac{16,000}{1.13} \approx \$14,159.29$$
+
+$$(1.13)^{2} = 1.2769$$
+
+$$\frac{24,000}{1.2769} \approx \$18,795.52$$
+
+$$A \approx -34,000.00 + 14,159.29 + 18,795.52$$
+
+$$A \approx -\$1,045.19$$
+
+The claim says the value is negative, and the project falls \$1,045.19 short at 13%, which is above its internal rate of return of about 10.78%. The statement is true.
+@@@119D
+Both versions of the project need their own rate, since changing a cash flow changes the whole equation:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With the original returns:
+
+$$24,000s^{2} + 16,000s - 34,000 = 0 \implies 12s^{2} + 8s - 17 = 0$$
+
+$$\sqrt{64 + 816} = \sqrt{880} \approx 29.665, \qquad s \approx \frac{-8 + 29.665}{24} \approx 0.90270$$
+
+$$r \approx \frac{1}{0.90270} - 1 \approx 0.10778 = 10.78\%$$
+
+With the Year 2 return cut to \$20,000:
+
+$$20,000s^{2} + 16,000s - 34,000 = 0 \implies 10s^{2} + 8s - 17 = 0$$
+
+$$8^{2} + 4(10)(17) = 64 + 680 = 744, \qquad \sqrt{744} \approx 27.276$$
+
+$$s = \frac{-8 + 27.276}{20} \approx 0.96382$$
+
+$$r = \frac{1}{0.96382} - 1 \approx 0.03754 = 3.75\%$$
+
+Comparing the two rates:
+
+$$10.78\% - 3.75\% = 7.03 \text{ percentage points}$$
+
+Cutting \$4,000 from the second year drags the rate down by about seven percentage points rather than lifting it, so the statement is false.
+@@@119E
+A smaller outlay changes the constant term of the quadratic, so the rate is solved again:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With the outlay reduced to \$30,000 and the returns unchanged:
+
+$$24,000s^{2} + 16,000s - 30,000 = 0$$
+
+Dividing through by 2,000:
+
+$$12s^{2} + 8s - 15 = 0$$
+
+The discriminant works out exactly:
+
+$$8^{2} + 4(12)(15) = 64 + 720 = 784 = 28^{2}$$
+
+$$s = \frac{-8 + 28}{24} = \frac{20}{24} \approx 0.83333$$
+
+$$r = \frac{1}{0.83333} - 1 = 0.20 = 20\%$$
+
+The original project earns about 10.78%, so comparing:
+
+$$20\% - 10.78\% = 9.22 \text{ percentage points}$$
+
+Paying less for the same returns raises the rate by more than nine percentage points instead of lowering it, so the statement is false.
+@@@120A
+Net present value at a given rate discounts each return and subtracts the outlay:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -\$40,000$, $a_1 = \$22,000$, $a_2 = \$27,600$ and $r = 15\% = 0.15$:
+
+$$\frac{22,000}{1.15} \approx \$19,130.43$$
+
+$$(1.15)^{2} = 1.3225$$
+
+$$\frac{27,600}{1.3225} \approx \$20,869.57$$
+
+Adding the discounted returns:
+
+$$19,130.43 + 20,869.57 = \$40,000.00$$
+
+$$A \approx -40,000.00 + 40,000.00 = \$0.00$$
+
+The discounted returns cover the outlay to the dollar, so the net present value is \$0 at 15% and 15% is this project's internal rate of return. The claim says exactly this, so the statement is true.
+@@@120B
+The same formula is evaluated at the lower rate:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -\$40,000$, $a_1 = \$22,000$, $a_2 = \$27,600$ and $r = 10\% = 0.10$:
+
+$$\frac{22,000}{1.10} = \$20,000.00$$
+
+$$(1.10)^{2} = 1.21$$
+
+$$\frac{27,600}{1.21} \approx \$22,809.92$$
+
+$$A \approx -40,000.00 + 20,000.00 + 22,809.92$$
+
+$$A \approx \$2,809.92$$
+
+The claim says the value is positive, and the project shows a surplus of \$2,809.92, as expected with 10% below the project's 15% internal rate of return. The statement is true.
+@@@120C
+Evaluating the same expression at 20%:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}}$$
+
+$$\frac{22,000}{1.20} \approx \$18,333.33$$
+
+$$(1.20)^{2} = 1.44$$
+
+$$\frac{27,600}{1.44} \approx \$19,166.67$$
+
+$$A \approx -40,000.00 + 18,333.33 + 19,166.67$$
+
+$$A \approx -\$2,500.00$$
+
+The claim says the value is negative, and the project falls \$2,500.00 short at 20%, which sits above the 15% internal rate of return. The statement is true.
+@@@120D
+The cash flows are the outlay today, entered as a negative amount, and the two returns:
+
+$$a_0 = -\$40,000, \qquad a_1 = \$22,000, \qquad a_2 = \$27,600$$
+
+Adding them with no discounting applied:
+
+$$a_0 + a_1 + a_2 = -40,000 + 22,000 + 27,600$$
+
+$$= -40,000 + 49,600$$
+
+$$= \$9,600$$
+
+The claim names \$9,600, and the undiscounted total is \$9,600. The positive sign also fits the chapter's result that a positive total goes with a positive internal rate of return, matching the 15% these cash flows produce. The statement is true.
+@@@120E
+The chapter's uniqueness result applies when the first cash flow is negative and every later one is positive:
+
+$$a_0 < 0, \qquad a_1, \ldots, a_n > 0 \implies \text{unique } r^{*} > -1$$
+
+Checking the three cash flows:
+
+$$a_0 = -\$40,000 < 0, \qquad a_1 = \$22,000 > 0, \qquad a_2 = \$27,600 > 0$$
+
+The condition holds, so exactly one rate above $-1$ solves the equation. Solving confirms it. With $s = 1/(1+r)$:
+
+$$27,600s^{2} + 22,000s - 40,000 = 0$$
+
+$$69s^{2} + 55s - 100 = 0$$
+
+$$55^{2} + 4(69)(100) = 3,025 + 27,600 = 30,625 = 175^{2}$$
+
+$$s = \frac{-55 + 175}{138} = \frac{120}{138} \approx 0.869565$$
+
+$$r = \frac{1}{0.869565} - 1 = 0.15 = 15\%$$
+
+The other root is
+
+$$s = \frac{-55 - 175}{138} \approx -1.6667, \qquad r = \frac{1}{-1.6667} - 1 = -1.60$$
+
+which falls below $-1$ and is discarded, leaving 15% as the single admissible rate. The claim matches this, so the statement is true.

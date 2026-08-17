@@ -1,0 +1,250 @@
+TASK_COUNT 87
+EXPL_COUNT 435
+
+=== TACTICAL: display-math blocks per explanation ===
+{"1":6,"2":305,"3":111,"4":9,"5":4}
+
+=== TACTICAL: substantial prose paragraphs (>=20 letters) ===
+{"2":99,"3":295,"4":39,"5":2}
+
+=== TACTICAL: all blank-line chunks ===
+{"2":88,"3":298,"4":46,"5":3}
+
+=== TACTICAL combo dm/prose (sorted by count) ===
+226	2dm/3p	52.0%
+79	2dm/2p	18.2%
+64	3dm/3p	14.7%
+34	3dm/4p	7.8%
+13	3dm/2p	3.0%
+6	1dm/2p	1.4%
+4	4dm/4p	0.9%
+3	4dm/3p	0.7%
+2	5dm/3p	0.5%
+1	4dm/2p	0.2%
+1	5dm/4p	0.2%
+1	5dm/5p	0.2%
+1	4dm/5p	0.2%
+
+=== TACTICAL words ===
+{"min":41,"p10":54,"p25":60,"med":68,"p75":83,"p90":92,"max":108,"mean":71}
+
+=== OVERVIEW: display-math ===
+{"3":7,"7":3,"8":40,"9":30,"10":2,"11":4,"12":1}
+
+=== OVERVIEW: substantial prose paragraphs ===
+{"5":7,"8":1,"9":2,"10":15,"11":48,"12":9,"13":3,"14":1,"17":1}
+
+=== OVERVIEW: all blank-line chunks ===
+{"5":7,"13":63,"14":11,"15":4,"16":1,"19":1}
+
+=== OVERVIEW words ===
+{"min":45,"p10":117,"p25":133,"med":164,"p75":177,"p90":194,"max":215,"mean":154}
+
+=== RANGE SUMMARIES ===
+Range 1-30: n=150 avgDm=2.33 avgProse=2.78 avgW=65
+  top combos: 2/3:66, 3/3:35, 2/2:29, 3/2:9, 3/4:7, 1/2:3
+  share in 2-3dm & 2-3p: 139/150 (92.7%)
+Range 31-60: n=150 avgDm=2.24 avgProse=2.72 avgW=63
+  top combos: 2/3:64, 2/2:46, 3/3:19, 3/4:12, 3/2:4, 1/2:3
+  share in 2-3dm & 2-3p: 133/150 (88.7%)
+Range 61-87: n=135 avgDm=2.36 avgProse=3.14 avgW=86
+  top combos: 2/3:96, 3/4:15, 3/3:10, 2/2:4, 4/4:3, 5/3:2
+  share in 2-3dm & 2-3p: 110/135 (81.5%)
+
+=== OPENER TYPES (tactical) ===
+{"abstract-noun-lede":64,"gerund-lede":18,"is-passive-lede":7,"other":346}
+
+=== STRUCTURAL FEATURE RATES (tactical) ===
+hasList: 435/435 (100.0%)
+hasTable: 0/435 (0.0%)
+hasNumberedSteps: 0/435 (0.0%)
+hasCounter: 83/435 (19.1%)
+hasBoundary: 115/435 (26.4%)
+hasScale: 174/435 (40.0%)
+hasCompare: 20/435 (4.6%)
+
+=== OVERVIEW FEATURE RATES ===
+hasList: 87/87
+hasTable: 85/87
+hasPartHeaders: 87/87
+hasNumberedSteps: 80/87
+hasTag: 80/87
+
+=== MOST UNIFORM TASKS (by expl signature variance) ===
+Tasks with all 5 expl in 2-3dm/2-3p band, sorted by signature poverty:
+  #44 uniq=1 avgW=50 avgDm=2 avgP=2 ovDm=3 ovP=5 | 2/2|2/2|2/2|2/2|2/2 | Market Impact of a Block Trade
+  #41 uniq=1 avgW=52 avgDm=2 avgP=2 ovDm=3 ovP=5 | 2/2|2/2|2/2|2/2|2/2 | Audit Cost With Economies of Scale
+  #45 uniq=1 avgW=53 avgDm=2 avgP=2 ovDm=3 ovP=5 | 2/2|2/2|2/2|2/2|2/2 | Allometric Energy Use Across Livestock Weights
+  #42 uniq=1 avgW=54 avgDm=2 avgP=2 ovDm=3 ovP=5 | 2/2|2/2|2/2|2/2|2/2 | Airborne Particle Concentration Downwind
+  #32 uniq=1 avgW=55 avgDm=2 avgP=2 ovDm=3 ovP=5 | 2/2|2/2|2/2|2/2|2/2 | Average Product of a Square-Root Technology
+  #60 uniq=1 avgW=73 avgDm=2 avgP=3 ovDm=8 ovP=11 | 2/3|2/3|2/3|2/3|2/3 | Warehouse Forklift Throughput Under a Staffing Cap
+  #55 uniq=1 avgW=76 avgDm=2 avgP=3 ovDm=8 ovP=11 | 2/3|2/3|2/3|2/3|2/3 | Curing Strength From a Timed Gap Between Samples
+  #58 uniq=1 avgW=76 avgDm=2 avgP=3 ovDm=8 ovP=11 | 2/3|2/3|2/3|2/3|2/3 | Cooling Fan Noise Against a Night-Time Cap
+  #6 uniq=1 avgW=77 avgDm=2 avgP=3 ovDm=10 ovP=13 | 2/3|2/3|2/3|2/3|2/3 | Server Peak Load Between a Doubling Rule and an Alarm
+  #56 uniq=1 avgW=77 avgDm=2 avgP=3 ovDm=8 ovP=11 | 2/3|2/3|2/3|2/3|2/3 | Cantilever Deflection Checked Against a Third Span
+  #57 uniq=1 avgW=79 avgDm=2 avgP=3 ovDm=8 ovP=11 | 2/3|2/3|2/3|2/3|2/3 | Mast Steel Mass Under a Finite Percentage Scale-Up
+  #64 uniq=1 avgW=83 avgDm=2 avgP=3 ovDm=7 ovP=11 | 2/3|2/3|2/3|2/3|2/3 | Average Product on a Bottling Line
+  #74 uniq=1 avgW=86 avgDm=2 avgP=3 ovDm=9 ovP=12 | 2/3|2/3|2/3|2/3|2/3 | Micro-Irrigation Flow Under a Fourth-Power Law
+  #76 uniq=1 avgW=86 avgDm=2 avgP=3 ovDm=9 ovP=12 | 2/3|2/3|2/3|2/3|2/3 | A Dye Plume Spreading Across a Shallow Lake
+  #77 uniq=1 avgW=86 avgDm=2 avgP=3 ovDm=9 ovP=10 | 2/3|2/3|2/3|2/3|2/3 | A Weir Rating Curve Rewritten in New Units
+  #72 uniq=1 avgW=87 avgDm=2 avgP=3 ovDm=8 ovP=10 | 2/3|2/3|2/3|2/3|2/3 | Signal Attenuation From a Buried Cable Locator
+  #75 uniq=1 avgW=87 avgDm=2 avgP=3 ovDm=9 ovP=12 | 2/3|2/3|2/3|2/3|2/3 | Barrier Distance for a Radiography Source
+  #87 uniq=1 avgW=87 avgDm=2 avgP=3 ovDm=8 ovP=10 | 2/3|2/3|2/3|2/3|2/3 | Annealing Lehr Throughput Under a Mis-Scaled Coefficient
+  #71 uniq=1 avgW=88 avgDm=2 avgP=3 ovDm=9 ovP=12 | 2/3|2/3|2/3|2/3|2/3 | Drag and Sustained Power on a Velodrome
+  #78 uniq=1 avgW=88 avgDm=2 avgP=3 ovDm=9 ovP=11 | 2/3|2/3|2/3|2/3|2/3 | A Grain Dryer Calibrated From Two Recorded Ratios
+  #86 uniq=1 avgW=90 avgDm=2 avgP=3 ovDm=8 ovP=11 | 2/3|2/3|2/3|2/3|2/3 | Museum Tickets: Point Elasticity Versus a Finite Rise
+  #79 uniq=1 avgW=96 avgDm=2 avgP=3 ovDm=8 ovP=12 | 2/3|2/3|2/3|2/3|2/3 | Kiln Flue Mass Flow into a Particulate Index
+  #83 uniq=1 avgW=96 avgDm=2 avgP=3 ovDm=8 ovP=11 | 2/3|2/3|2/3|2/3|2/3 | Trail-Map Kiosk Demand Inverted from Price
+  #7 uniq=2 avgW=60 avgDm=2 avgP=2.2 ovDm=3 ovP=5 | 2/2|2/2|2/2|2/3|2/2 | Survey Reach Against a Fieldwork Budget Cap
+  #30 uniq=2 avgW=61 avgDm=2 avgP=2.8 ovDm=8 ovP=11 | 2/3|2/3|2/3|2/2|2/3 | Testing Whether Field Data Fit One Power Law
+  #27 uniq=2 avgW=65 avgDm=2.2 avgP=3 ovDm=9 ovP=11 | 2/3|2/3|3/3|2/3|2/3 | Server Fleet Capacity Beneath a Contracted Ceiling
+  #26 uniq=2 avgW=70 avgDm=2.2 avgP=3 ovDm=8 ovP=11 | 3/3|2/3|2/3|2/3|2/3 | Two Ranking Algorithms That Swap Places
+  #53 uniq=2 avgW=83 avgDm=2.2 avgP=3 ovDm=8 ovP=11 | 2/3|2/3|2/3|3/3|2/3 | Mesh Throughput Against an Inverse-Square Floor
+  #82 uniq=2 avgW=92 avgDm=2 avgP=2.8 ovDm=8 ovP=10 | 2/3|2/3|2/3|2/2|2/3 | Shade-Tree Cooling Benefit Against Upkeep Cost
+  #70 uniq=2 avgW=97 avgDm=2.2 avgP=3 ovDm=8 ovP=11 | 2/3|2/3|3/3|2/3|2/3 | Geometrically Similar Bells Cast From One Pattern
+  #47 uniq=2 avgW=60 avgDm=2.4 avgP=3 ovDm=9 ovP=11 | 2/3|3/3|2/3|3/3|2/3 | Rooftop Solar Output Across Two Installed Arrays
+  #4 uniq=2 avgW=64 avgDm=2.6 avgP=3 ovDm=9 ovP=11 | 2/3|3/3|3/3|2/3|3/3 | Assembly Time, Derived Throughput, and a Manual Rival
+  #20 uniq=2 avgW=64 avgDm=2.6 avgP=3 ovDm=9 ovP=11 | 3/3|2/3|2/3|3/3|3/3 | Calibrated Demand, Derived Revenue, and a Fixed Charge
+  #9 uniq=2 avgW=67 avgDm=2 avgP=2.6 ovDm=9 ovP=11 | 2/2|2/3|2/3|2/2|2/3 | Warehouse Throughput With a Contractual Ceiling
+  #1 uniq=2 avgW=80 avgDm=2.6 avgP=3 ovDm=9 ovP=11 | 3/3|2/3|2/3|3/3|3/3 | Recovering a Robot's Loading Law from a Recorded Jump
+  #40 uniq=3 avgW=61 avgDm=2.2 avgP=2.8 ovDm=8 ovP=10 | 3/3|2/3|2/2|2/3|2/3 | Illuminance Down the Length of a Gallery
+  #29 uniq=3 avgW=62 avgDm=2.2 avgP=2.8 ovDm=8 ovP=11 | 2/3|2/2|2/3|3/3|2/3 | Splitting an Order Between Two Quadratic-Cost Plants
+  #11 uniq=3 avgW=65 avgDm=2.2 avgP=2.8 ovDm=9 ovP=10 | 2/3|3/3|2/2|2/3|2/3 | Isoelastic Subscription Demand and Its Revenue
+  #73 uniq=3 avgW=85 avgDm=2.2 avgP=2.8 ovDm=11 ovP=11 | 2/2|2/3|3/3|2/3|2/3 | Oxygen Demand and Gill Area in a Hatchery
+  #37 uniq=3 avgW=53 avgDm=2.2 avgP=2.4 ovDm=8 ovP=10 | 3/3|2/3|2/2|2/2|2/2 | A Braking-Energy Index Recovered From a Speed Change
+
+=== SHORTEST EXPLANATIONS (shorten candidates only if padded) ===
+  19C words=41 dm=2 p=3 | A scale factor on a composed law uses the composed exponent, here the product $0
+  43E words=43 dm=2 p=2 | A fifty percent increase is a multiplier of $1.5$ acting through the composed ex
+  48E words=45 dm=2 p=3 | A doubling is a different multiplier from a quadrupling, so it acts through $2^{
+  37C words=46 dm=2 p=2 | A percentage change under a square law comes from squaring the speed ratio, here
+  38C words=46 dm=1 p=2 | A fifty percent height increase is a multiplier of $1.5$ acting through the surf
+  39A words=46 dm=2 p=2 | The added $60$ hours is the difference between two inspection times, so both squ
+  44E words=46 dm=2 p=2 | Proportionality would require the charge to carry exponent $1$, while multiplyin
+  49C words=46 dm=2 p=3 | A discharge multiplier acts through the composed exponent $0.5 \\times 3 = 1.5$,
+  38E words=47 dm=2 p=3 | The steel law has exponent $2$, so a height multiplier enters squared.
+  31D words=48 dm=2 p=2 | Revenue at a stated quantity has to be built from the price that clears that qua
+  39E words=48 dm=2 p=2 | Proportionality requires exponent $1$ and therefore a constant time per shipment
+  41A words=48 dm=2 p=2 | Since $0.75=3/4$ and both engagement sizes are fourth powers, the shape factors 
+  41D words=48 dm=2 p=2 | Inverting the schedule for a target bill uses the reciprocal exponent $4/3$, and
+  41E words=48 dm=2 p=2 | Doubling the accounts acts through the exponent as $2^{3/4}$, a multiplicative s
+  44A words=48 dm=2 p=2 | The six basis points is a change in impact between two order sizes, so the coeff
+  45E words=48 dm=2 p=2 | Energy use per kilogram is the allometric law divided by mass, which lowers the 
+  49B words=48 dm=3 p=3 | The stability limit is inverted through the composed law, whose reciprocal expon
+  44D words=49 dm=2 p=2 | Impact and the scaled charge are two different quantities, the second being the 
+  49D words=49 dm=2 p=3 | Doubling the velocity acts on the transport stage alone, whose exponent is $3$.
+  19A words=50 dm=3 p=3 | Each record speaks about one stage only, and the labour record belongs to the ma
+  31B words=50 dm=2 p=2 | Revenue expressed through quantity is quantity times inverse demand, so the expo
+  37E words=50 dm=2 p=2 | Converting an index reading back into a speed inverts the calibrated square law,
+  38B words=50 dm=2 p=2 | A steel threshold is a condition on the surface law, and the inequality survives
+  42A words=50 dm=2 p=2 | The monitors record a gap between two concentrations, so the coefficient multipl
+  42E words=50 dm=2 p=2 | The effect of doubling the distance is the surviving fraction $2^{-1.5}$, and th
+
+=== LONGEST EXPLANATIONS ===
+  81D words=108 dm=2 p=3 | Under the fitted law the exponent is $1/2$, so an input multiplier of $k=2$ prod
+  85E words=107 dm=2 p=3 | Average cost is a line's cost divided by its own output, and dividing a power by
+  85A words=106 dm=2 p=3 | Concentrating the whole order on one line means evaluating that line's rule at t
+  85C words=105 dm=2 p=3 | Price the even split the same way, with fifteen thousand loaves on each line:
+  64A words=103 dm=2 p=3 | Average product is output divided by labour, and dividing a power by $L$ subtrac
+  70B words=103 dm=2 p=3 | A height multiplier acts on mass through the exponent three, so both the coeffic
+  73E words=103 dm=2 p=3 | Sixteen fish are sixteen separate applications of the demand law, so the total h
+  78A words=103 dm=2 p=3 | A percentage rise has to become a multiplier before an exponent can be read from
+  80B words=103 dm=3 p=4 | App L's quote increases with distance, so a ceiling on wait translates directly 
+  82B words=103 dm=2 p=3 | The same subtraction runs at the smaller planting. The square root of $4$ is $2$
+  79A words=102 dm=2 p=3 | The square-root shape is given by the model, so a single recorded pair is enough
+  80A words=102 dm=3 p=4 | A crossover is the distance at which the two timers quote the same wait, so set 
+  80C words=102 dm=2 p=3 | App Q's quote is a power function with exponent $1$, so inverting the same cap n
+  83C words=102 dm=2 p=3 | Solving for a price means inverting the rule, and the reciprocal of the exponent
+  70A words=101 dm=2 p=3 | Geometric similarity fixes the exponent at three before any measurement is taken
+
+=== COUNT of exact 2dm/2p by range ===
+  1-30: 29/150 (19.3%)
+  31-60: 46/150 (30.7%)
+  61-87: 4/135 (3.0%)
+
+=== COUNT of 2-3dm & 2-3p band by range ===
+  1-30: 139/150 (92.7%)
+  31-60: 133/150 (88.7%)
+  61-87: 110/135 (81.5%)
+
+=== BY LETTER: avg dm / prose / words ===
+  A: avgDm=2.52 avgP=3.00 avgW=74
+  B: avgDm=2.30 avgP=2.89 avgW=71
+  C: avgDm=2.29 avgP=2.80 avgW=70
+  D: avgDm=2.24 avgP=2.82 avgW=70
+  E: avgDm=2.21 avgP=2.85 avgW=70
+
+=== HYPER-UNIFORM: uniqueSigs==1 (all five identical shape) ===
+  #6 2/3|2/3|2/3|2/3|2/3 avgW=77 | Server Peak Load Between a Doubling Rule and an Alarm
+  #32 2/2|2/2|2/2|2/2|2/2 avgW=55 | Average Product of a Square-Root Technology
+  #41 2/2|2/2|2/2|2/2|2/2 avgW=52 | Audit Cost With Economies of Scale
+  #42 2/2|2/2|2/2|2/2|2/2 avgW=54 | Airborne Particle Concentration Downwind
+  #44 2/2|2/2|2/2|2/2|2/2 avgW=50 | Market Impact of a Block Trade
+  #45 2/2|2/2|2/2|2/2|2/2 avgW=53 | Allometric Energy Use Across Livestock Weights
+  #55 2/3|2/3|2/3|2/3|2/3 avgW=76 | Curing Strength From a Timed Gap Between Samples
+  #56 2/3|2/3|2/3|2/3|2/3 avgW=77 | Cantilever Deflection Checked Against a Third Span
+  #57 2/3|2/3|2/3|2/3|2/3 avgW=79 | Mast Steel Mass Under a Finite Percentage Scale-Up
+  #58 2/3|2/3|2/3|2/3|2/3 avgW=76 | Cooling Fan Noise Against a Night-Time Cap
+  #60 2/3|2/3|2/3|2/3|2/3 avgW=73 | Warehouse Forklift Throughput Under a Staffing Cap
+  #64 2/3|2/3|2/3|2/3|2/3 avgW=83 | Average Product on a Bottling Line
+  #71 2/3|2/3|2/3|2/3|2/3 avgW=88 | Drag and Sustained Power on a Velodrome
+  #72 2/3|2/3|2/3|2/3|2/3 avgW=87 | Signal Attenuation From a Buried Cable Locator
+  #74 2/3|2/3|2/3|2/3|2/3 avgW=86 | Micro-Irrigation Flow Under a Fourth-Power Law
+  #75 2/3|2/3|2/3|2/3|2/3 avgW=87 | Barrier Distance for a Radiography Source
+  #76 2/3|2/3|2/3|2/3|2/3 avgW=86 | A Dye Plume Spreading Across a Shallow Lake
+  #77 2/3|2/3|2/3|2/3|2/3 avgW=86 | A Weir Rating Curve Rewritten in New Units
+  #78 2/3|2/3|2/3|2/3|2/3 avgW=88 | A Grain Dryer Calibrated From Two Recorded Ratios
+  #79 2/3|2/3|2/3|2/3|2/3 avgW=96 | Kiln Flue Mass Flow into a Particulate Index
+  #83 2/3|2/3|2/3|2/3|2/3 avgW=96 | Trail-Map Kiosk Demand Inverted from Price
+  #86 2/3|2/3|2/3|2/3|2/3 avgW=90 | Museum Tickets: Point Elasticity Versus a Finite Rise
+  #87 2/3|2/3|2/3|2/3|2/3 avgW=87 | Annealing Lehr Throughput Under a Mis-Scaled Coefficient
+
+=== NEAR-UNIFORM: uniqueSigs==2 and allInBand ===
+  #1 3/3|2/3|2/3|3/3|3/3 avgW=80 | Recovering a Robot's Loading Law from a Recorded Jump
+  #4 2/3|3/3|3/3|2/3|3/3 avgW=64 | Assembly Time, Derived Throughput, and a Manual Rival
+  #7 2/2|2/2|2/2|2/3|2/2 avgW=60 | Survey Reach Against a Fieldwork Budget Cap
+  #9 2/2|2/3|2/3|2/2|2/3 avgW=67 | Warehouse Throughput With a Contractual Ceiling
+  #20 3/3|2/3|2/3|3/3|3/3 avgW=64 | Calibrated Demand, Derived Revenue, and a Fixed Charge
+  #26 3/3|2/3|2/3|2/3|2/3 avgW=70 | Two Ranking Algorithms That Swap Places
+  #27 2/3|2/3|3/3|2/3|2/3 avgW=65 | Server Fleet Capacity Beneath a Contracted Ceiling
+  #30 2/3|2/3|2/3|2/2|2/3 avgW=61 | Testing Whether Field Data Fit One Power Law
+  #47 2/3|3/3|2/3|3/3|2/3 avgW=60 | Rooftop Solar Output Across Two Installed Arrays
+  #53 2/3|2/3|2/3|3/3|2/3 avgW=83 | Mesh Throughput Against an Inverse-Square Floor
+  #70 2/3|2/3|3/3|2/3|2/3 avgW=97 | Geometrically Similar Bells Cast From One Pattern
+  #82 2/3|2/3|2/3|2/2|2/3 avgW=92 | Shade-Tree Cooling Benefit Against Upkeep Cost
+
+=== ALREADY DIVERSE (uniqueSigs>=4 OR outside band) ===
+  #3 uniq=4 band=false 4/4|2/3|3/3|3/4|2/3 avgW=70 | Two Turbines with Different Wind Exponents
+  #8 uniq=4 band=false 3/4|2/2|2/3|3/3|2/3 avgW=67 | Quadratic and Linear Inspection Costs That Meet Once
+  #10 uniq=4 band=false 3/3|2/3|3/4|3/3|2/2 avgW=64 | Response Time Recovered from a Server Upgrade
+  #15 uniq=4 band=false 3/3|1/2|2/2|2/3|1/2 avgW=60 | From Radius Growth to the Area a Service Covers
+  #16 uniq=3 band=false 3/4|2/2|2/3|2/2|2/3 avgW=67 | Two Support Contracts, One Crossing and One Cap
+  #17 uniq=4 band=false 2/3|3/2|3/4|3/3|2/3 avgW=63 | An Eighty Percent Learning Curve Meeting a Materials Floor
+  #21 uniq=3 band=false 3/4|2/3|2/2|2/2|2/3 avgW=72 | Packing Output Recovered From a Shift Extension
+  #22 uniq=3 band=false 3/4|2/3|3/3|2/3|2/3 avgW=67 | Drag and Absorbed Power on a Wind-Tunnel Rig
+  #24 uniq=4 band=false 2/3|3/3|2/2|1/2|2/3 avgW=62 | Kiln Output Under a Licensed Ceiling
+  #31 uniq=3 band=false 3/3|2/2|2/2|2/2|3/4 avgW=56 | Turning a Negative-Power Demand Curve Around
+  #33 uniq=3 band=false 4/2|2/2|3/2|3/2|2/2 avgW=59 | Two Break-Even Points Around a Fixed Charge
+  #34 uniq=4 band=false 3/3|3/4|4/3|2/3|3/3 avgW=63 | A Benefit and a Cost With Different Exponents
+  #35 uniq=3 band=false 3/3|3/3|3/3|3/4|2/3 avgW=62 | Furnace Throughput Calibrated From Two Runs
+  #38 uniq=3 band=false 2/2|2/2|1/2|2/3|2/3 avgW=54 | Geometrically Similar Silos: Steel Against Capacity
+  #39 uniq=2 band=false 2/2|2/2|2/2|1/2|2/2 avgW=51 | Inspection Hours Across Growing Shipment Volumes
+  #43 uniq=4 band=false 3/3|2/3|2/2|1/2|2/2 avgW=56 | Storm Surge Feeding a Cubic Loss Index
+  #48 uniq=3 band=false 3/4|2/3|3/2|2/3|2/3 avgW=54 | Battery Cell Costs Down a Learning Curve
+  #49 uniq=3 band=false 3/4|3/3|2/3|2/3|2/3 avgW=53 | Sediment Transport Driven by Channel Discharge
+  #51 uniq=3 band=false 3/4|2/3|3/4|2/3|3/3 avgW=84 | Weld Strength Recovered From Two Spot Checks
+  #52 uniq=2 band=false 2/3|3/4|3/4|2/3|3/4 avgW=76 | Mooring Holding Power Across Kilograms and Tonnes
+  #54 uniq=3 band=false 2/3|2/3|3/3|3/4|2/3 avgW=80 | Allometric Gill Area Across Body Masses
+  #59 uniq=2 band=false 3/4|2/3|2/3|2/3|2/3 avgW=78 | Pump Head Composed Through a Square Flow Law
+  #61 uniq=4 band=false 4/4|3/3|3/4|2/3|3/4 avgW=83 | Subscriber Demand and Revenue for a Streaming Tier
+  #62 uniq=3 band=false 2/3|3/3|3/4|2/3|3/4 avgW=80 | Fixed Retainer Plus a Square-Root Monitoring Fee
+  #63 uniq=4 band=false 5/4|5/3|3/3|3/3|2/3 avgW=75 | Ordering Cost Against Holding Cost at a Spare-Parts Depot
+  #65 uniq=4 band=false 2/3|2/3|3/4|3/3|4/3 avgW=79 | Learning Curve With an Irreducible Assembly Floor
+  #66 uniq=3 band=false 4/4|4/4|3/3|3/4|3/3 avgW=76 | Break-Even for a Fish Farm With Diminishing Harvest Returns
+  #67 uniq=5 band=false 5/3|5/5|2/2|3/3|4/3 avgW=72 | Calibrating a Handling-Cost Law From a Cost Difference
+  #68 uniq=3 band=false 4/5|3/4|2/3|2/3|3/4 avgW=75 | Inverting a Wastewater Load Model Against a Permit Ceiling
+  #69 uniq=3 band=false 2/3|2/3|3/4|2/2|2/3 avgW=80 | Elasticity Shortcut Against the Exact Change in Parking Demand
+
+=== OVERVIEW STRUCTURE ===
+Part1-2-3 template: 87/87
+Answer line: 87/87

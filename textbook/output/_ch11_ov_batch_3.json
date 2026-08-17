@@ -1,0 +1,170 @@
+[
+  {
+    "id": "math-11-43",
+    "caseId": "MATH 11.43",
+    "title": "Escrowed Sale Proceeds for a Landlord",
+    "subsection": "11.3",
+    "min_chars": 994,
+    "text": "A landlord is due to receive \\$45,000 in escrowed proceeds from a property sale in 8 years, once a title dispute is resolved. The applicable interest rate is 7% per year. The landlord's accountant computes the present value under both annual compounding and continuous compounding, so this task uses $K = \\$45,000$, r = 0.07, and t = 8 under both methods.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K = \\$45,000$ (escrowed proceeds)\r\n\r\nNominal/continuous annual rate p = 7%, so r = 0.07\r\n\r\nt = 8 years\r\n\r\n**Part 2: Formula.**\r\n\r\nAnnual: $PDV = K(1+r)^{-t}$\r\n\r\nContinuous: $PDV = Ke^{-rt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $(1.07)^{8} \\approx 1.718186$, so $(1.07)^{-8} \\approx 0.5820$.\r\n\r\n**2.** Annual $PDV = 45,000 \\times 0.5820 \\approx \\$26,190.41$.\r\n\r\n**3.** $rt = 0.07 \\times 8 = 0.56$, $e^{-0.56} \\approx 0.5712$, so continuous $PDV = 45,000 \\times 0.5712 \\approx \\$25,704.41$.\r\n\r\n**4.** Difference: $26,190.41 - 25,704.41 = \\$486.00$.\r\n\r\n**5.** At $r = 0$: both formulas reduce to $K \\times 1 = \\$45,000$."
+  },
+  {
+    "id": "math-11-44",
+    "caseId": "MATH 11.44",
+    "title": "Funding a Future Equipment Purchase",
+    "subsection": "11.3",
+    "min_chars": 1070,
+    "text": "A dental practice wants to have exactly \\$150,000 available in 5 years to purchase new imaging equipment. Its bank offers a continuous annual interest rate of 4.5% on a dedicated savings account, and the practice wants to know how much it must deposit today, i.e., the present value of the \\$150,000 goal under $K = \\$150,000$, r = 0.045, and t = 5.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K = \\$150,000$ (target future amount)\r\n\r\nContinuous annual rate p = 4.5%, so r = 0.045\r\n\r\nt = 5 years\r\n\r\n**Part 2: Formula.**\r\n\r\nRequired deposit: $A = Ke^{-rt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $rt = 0.045 \\times 5 = 0.225$, so $e^{-0.225} \\approx 0.7985$.\r\n\r\n**2.** $A = 150,000 \\times 0.7985 \\approx \\$119,777.40$.\r\n\r\n**3.** Future value of $\\$110,000$ after $5$ years at $4.5\\%$ continuous: $110,000 \\times e^{0.225} \\approx 110,000 \\times 1.2523 \\approx \\$137,755.50$.\r\n\r\n**4.** Annual compounding: $A = 150,000 \\times (1.045)^{-5} = 150,000/1.246182 \\approx \\$120,367.90$.\r\n\r\n**5.** For $t = 10$: $rt = 0.45$, $e^{-0.45} \\approx 0.6376$, so $A = 150,000 \\times 0.6376 \\approx \\$95,644.20$."
+  },
+  {
+    "id": "math-11-45",
+    "caseId": "MATH 11.45",
+    "title": "Implied Maturity of a Discounted Promissory Note",
+    "subsection": "11.3",
+    "min_chars": 1114,
+    "text": "An investor purchases a promissory note today for \\$18,500. The note promises a payoff of \\$25,000 at maturity, and the market interest rate for notes of this kind is 6% per year, compounded annually. The investor wants to work backward from the price to find the implied maturity time, using $PDV = \\$18,500$, $K = \\$25,000$, and r = 0.06.\r\n\r\n**Part 1: Setup.**\r\n\r\n$PDV = \\$18,500$ (purchase price)\r\n\r\n$K = \\$25,000$ (maturity payoff)\r\n\r\nNominal annual rate p = 6%, so r = 0.06\r\n\r\n**Part 2: Formula.**\r\n\r\nAnnual: $PDV = K(1+r)^{-t}$, so $t = \\ln(K/PDV)/\\ln(1+r)$\r\n\r\nContinuous: $PDV = Ke^{-rt}$, so $t = \\ln(K/PDV)/r$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $K/PDV = 25,000/18,500 \\approx 1.3514$.\r\n\r\n**2.** $\\ln(1.3514) \\approx 0.3011$; $\\ln(1.06) \\approx 0.05827$.\r\n\r\n**3.** $t = 0.3011/0.05827 \\approx 5.17$ years.\r\n\r\n**4.** For a $\\$20,000$ price: ratio $25,000/20,000 = 1.25$, $\\ln(1.25) \\approx 0.2231$, $t = 0.2231/0.05827 \\approx 3.83$ years.\r\n\r\n**5.** Continuous: $t = \\ln(1.3514)/0.06 \\approx 0.3011/0.06 \\approx 5.02$ years.\r\n\r\n**6.** Compare continuous $t \\approx 5.02$ years vs annual $t \\approx 5.17$ years."
+  },
+  {
+    "id": "math-11-46",
+    "caseId": "MATH 11.46",
+    "title": "Implied Continuous Discount Rate on a Collectible Painting",
+    "subsection": "11.3",
+    "min_chars": 1006,
+    "text": "An art gallery has secured a guaranteed future sale of a painting for \\$60,000 in 12 years. A collector is willing to pay \\$27,000 today for the rights to that future payment, with value discounted continuously, so this task solves for r given $PDV = \\$27,000$, $K = \\$60,000$, and t = 12.\r\n\r\n**Part 1: Setup.**\r\n\r\n$PDV = \\$27,000$ (price paid)\r\n\r\n$K = \\$60,000$ (future payoff)\r\n\r\nt = 12 years (continuous compounding)\r\n\r\n**Part 2: Formula.**\r\n\r\n$PDV = Ke^{-rt}$, so $r = -\\ln(PDV/K)/t$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $PDV/K = 27,000/60,000 = 0.45$.\r\n\r\n**2.** $r = -\\ln(0.45)/12 = 0.798508/12 \\approx 0.0665 = 6.65\\%$.\r\n\r\n**3.** For $t = 6$: $rt = 0.0665 \\times 6 \\approx 0.3992$, $e^{-0.3992} \\approx 0.6708$, so $PDV = 60,000 \\times 0.6708 \\approx \\$40,249.20$.\r\n\r\n**4.** For a $\\$30,000$ price: ratio $30,000/60,000 = 0.5$, $r = -\\ln(0.5)/12 = 0.693147/12 \\approx 0.0578 = 5.78\\%$.\r\n\r\n**5.** For $t = 24$ with the same discount factor $0.45$: $r = -\\ln(0.45)/24 = 0.798508/24 \\approx 0.0333 = 3.33\\%$."
+  },
+  {
+    "id": "math-11-47",
+    "caseId": "MATH 11.47",
+    "title": "Combined Present Value of Two Software Milestone Payments",
+    "subsection": "11.3",
+    "min_chars": 1187,
+    "text": "A software company is due to receive two payments from a client under a licensing agreement: \\$40,000 in 2 years and \\$65,000 in 5 years. The applicable interest rate is 5% per year, compounded annually, and the company's controller wants the combined present value of both payments, using $K_1 = \\$40,000$ at $t_1 = 2$ and $K_2 = \\$65,000$ at $t_2 = 5$.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K_1 = \\$40,000$ due in $t_1 = 2$ years\r\n\r\n$K_2 = \\$65,000$ due in $t_2 = 5$ years\r\n\r\nNominal annual rate p = 5%, so r = 0.05\r\n\r\n**Part 2: Formula.**\r\n\r\nAnnual: $PDV = K(1+r)^{-t}$\r\n\r\nContinuous: $PDV = Ke^{-rt}$\r\n\r\nCombined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $PDV_1 = 40,000 \\times (1.05)^{-2} = 40,000/1.1025 \\approx \\$36,281.18$.\r\n\r\n**2.** $PDV_2 = 65,000 \\times (1.05)^{-5} = 65,000/1.276282 \\approx \\$50,930.87$.\r\n\r\n**3.** Combined PDV: $36,281.18 + 50,930.87 \\approx \\$87,212.05$.\r\n\r\n**4.** Compare $\\$50,930.87$ (from the $\\$65,000$ payment) vs $\\$36,281.18$ (from the $\\$40,000$ payment).\r\n\r\n**5.** Continuous: $PDV_1 = 40,000 \\times e^{-0.10} \\approx \\$36,193.48$; $PDV_2 = 65,000 \\times e^{-0.25} \\approx \\$50,622.07$; combined $\\approx \\$86,815.55$."
+  },
+  {
+    "id": "math-11-48",
+    "caseId": "MATH 11.48",
+    "title": "Comparing an Immediate Payment to a Deferred Payment",
+    "subsection": "11.3",
+    "min_chars": 1089,
+    "text": "A freelance architect is offered two payment options for a completed project: Option A is \\$22,000 paid immediately upon delivery. Option B is \\$25,500 paid in 3 years. The relevant market discount rate is 6% per year, compounded annually, so the two options can be compared directly on a present-value basis.\r\n\r\n**Part 1: Setup.**\r\n\r\nOption $A = \\$22,000$ received today (t = 0)\r\n\r\nOption B: $K = \\$25,500$ due in t = 3 years\r\n\r\nBase nominal annual rate p = 6%, so r = 0.06\r\n\r\n**Part 2: Formula.**\r\n\r\n$PDV = K(1+r)^{-t}$\r\n\r\nAn amount received today (t = 0) has present value equal to its face value\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $(1.06)^{3} \\approx 1.191016$, so PDV of Option B: $25,500/1.191016 \\approx \\$21,410.30$.\r\n\r\n**2.** Compare $\\$22,000$ (Option A, today) with $\\$21,410.30$ (Option B, discounted).\r\n\r\n**3.** At $r = 0.03$: $(1.03)^{3} \\approx 1.092727$, so $PDV = 25,500/1.092727 \\approx \\$23,336.02$.\r\n\r\n**4.** At $r = 0.06$: the PDV was found above to be $\\$21,410.30$.\r\n\r\n**5.** At $r = 0.05$: $(1.05)^{3} \\approx 1.157625$, so $PDV = 25,500/1.157625 \\approx \\$22,029.40$."
+  },
+  {
+    "id": "math-11-49",
+    "caseId": "MATH 11.49",
+    "title": "Optimal Harvest Timing for a Timber Stand",
+    "subsection": "11.3",
+    "min_chars": 1081,
+    "text": "A timber company owns a stand of trees whose market value grows according to $P(t) = 5,000(t+2)^{2}$ dollars, where t is measured in years since a recent appraisal, with P(t) differentiable and positive for all t ≥ 0. The prevailing interest rate is 8% per year, compounded continuously. Management wants to apply the chapter's tree-harvesting present-value condition to find the optimal cutting time.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P(t) = 5,000(t+2)^{2}$\r\n\r\nContinuous annual rate p = 8%, so r = 0.08\r\n\r\n**Part 2: Formula.**\r\n\r\nPresent value: $f(t) = P(t)e^{-rt}$\r\n\r\nOptimality condition: $P'(t^*) = rP(t^*)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $P'(t) = 10,000(t + 2)$.\r\n\r\n**2.** Set $10,000(t + 2) = 0.08 \\times 5,000(t+2)^{2} = 400(t+2)^{2}$.\r\n\r\n**3.** Dividing both sides by $(t + 2)$: $10,000 = 400(t + 2)$, so $t + 2 = 25$, giving $t^* = 23$ years.\r\n\r\n**4.** $f(23) = P(23)e^{-0.08 \\times 23} = 5,000(25)^{2}e^{-1.84} = 3,125,000 \\times 0.15879 \\approx \\$496,218.75$.\r\n\r\n**5.** $f(25) = P(25)e^{-0.08 \\times 25} = 5,000(27)^{2}e^{-2} = 3,645,000 \\times 0.135335 \\approx \\$493,296.10$."
+  },
+  {
+    "id": "math-11-50",
+    "caseId": "MATH 11.50",
+    "title": "Settling Two Supplier Obligations with a Single Lump Sum",
+    "subsection": "11.3",
+    "min_chars": 1159,
+    "text": "A boutique winery owes a supplier two separate future payments: \\$18,000 due in 4 years and \\$30,000 due in 9 years. The supplier agrees to accept one lump-sum payment today instead, using a continuous discount rate of 5.5% per year for both obligations, so this task uses $K_1 = \\$18,000$ at $t_1 = 4$ and $K_2 = \\$30,000$ at $t_2 = 9$.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K_1 = \\$18,000$ due in $t_1 = 4$ years\r\n\r\n$K_2 = \\$30,000$ due in $t_2 = 9$ years\r\n\r\nContinuous annual rate p = 5.5%, so r = 0.055\r\n\r\n**Part 2: Formula.**\r\n\r\n$PDV = Ke^{-rt}$\r\n\r\nCombined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $rt_1 = 0.055 \\times 4 = 0.22$, $e^{-0.22} \\approx 0.8025$, so $PDV_1 = 18,000 \\times 0.8025 \\approx \\$14,445.34$.\r\n\r\n**2.** $rt_2 = 0.055 \\times 9 = 0.495$, $e^{-0.495} \\approx 0.6096$, so $PDV_2 = 30,000 \\times 0.6096 \\approx \\$18,287.13$.\r\n\r\n**3.** Combined PDV: $14,445.34 + 18,287.13 \\approx \\$32,732.47$.\r\n\r\n**4.** Compare $\\$18,287.13$ (from the $\\$30,000$ obligation) vs $\\$14,445.34$ (from the $\\$18,000$ obligation).\r\n\r\n**5.** At $r = 0\\%$: $e^{0} = 1$ for both terms, so combined $PDV = 18,000 + 30,000 = \\$48,000$."
+  },
+  {
+    "id": "math-11-51",
+    "caseId": "MATH 11.51",
+    "title": "Finding an Equivalent Annual Rate for a Continuously Discounted Trust Payment",
+    "subsection": "11.3",
+    "min_chars": 1103,
+    "text": "A trust fund manager currently discounts a \\$50,000 payment due to a beneficiary in 7 years using a continuous discount rate of 5% per year. The manager wants to quote an equivalent nominal annual rate, compounded annually, that produces exactly the same present value, so this task uses $K = \\$50,000$, r = 0.05, and t = 7 as the continuous baseline.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K = \\$50,000$\r\n\r\nContinuous annual rate p = 5%, so r = 0.05\r\n\r\nt = 7 years\r\n\r\n**Part 2: Formula.**\r\n\r\nContinuous: $PDV = Ke^{-rt}$\r\n\r\nEquivalent annual rate: setting $K(1+r_a)^{-t} = Ke^{-rt}$ and cancelling K and t shows $1+r_a = e^{r}$ (independent of t)\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $rt = 0.05 \\times 7 = 0.35$, $e^{-0.35} \\approx 0.704688$, so $PDV \\approx 50,000 \\times 0.704688 \\approx \\$35,234.40$.\r\n\r\n**2.** $1+r_a = e^{0.05} \\approx 1.051271$, so $r_a \\approx 0.051271 = 5.13\\%$.\r\n\r\n**3.** Gap: $5.13\\% - 5.00\\% = 0.13$ percentage points.\r\n\r\n**4.** At $t = 3$: continuous $PDV = 50,000 \\times e^{-0.15} \\approx \\$43,035.40$; annual-equivalent $PDV = 50,000 \\times (1.051271)^{-3} \\approx \\$43,035.40$ (identical)."
+  },
+  {
+    "id": "math-11-52",
+    "caseId": "MATH 11.52",
+    "title": "Meeting a Loan Covenant with a Second Receivable",
+    "subsection": "11.3",
+    "min_chars": 1253,
+    "text": "A logistics company must demonstrate a combined present value of exactly \\$100,000 to satisfy a loan covenant. It already holds one contractual receivable of \\$42,000 due in 3 years. It is negotiating a second receivable due in 6 years and must determine the face amount that receivable needs to carry. The discount rate is 6% per year, compounded annually, so $K_1 = \\$42,000$ at $t_1 = 3$ is known and $K_2$ at $t_2 = 6$ must be found.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K_1 = \\$42,000$ due in $t_1 = 3$ years\r\n\r\nTarget combined $PDV = \\$100,000$\r\n\r\nNominal annual rate p = 6%, so r = 0.06\r\n\r\nSecond receivable due in $t_2 = 6$ years, face amount $K_2$ unknown\r\n\r\n**Part 2: Formula.**\r\n\r\n$PDV = K(1+r)^{-t}$\r\n\r\n$K_2 = (\\mathrm{PDV}_{\\mathrm{target}} - \\mathrm{PV}_1)(1+r)^{t_2}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $PV_1 = 42,000 \\times (1.06)^{-3} = 42,000/1.191016 \\approx \\$35,264.01$.\r\n\r\n**2.** Needed: $PV_2 = 100,000 - 35,264.01 = \\$64,735.99$.\r\n\r\n**3.** $K_2 = 64,735.99 \\times (1.06)^{6} = 64,735.99 \\times 1.418519 \\approx \\$91,829.24$.\r\n\r\n**4.** If $t_2 = 3$: $K_2 = 64,735.99 \\times (1.06)^{3} = 64,735.99 \\times 1.191016 \\approx \\$77,101.60$.\r\n\r\n**5.** At $r = 8\\%$: $K_2 = 64,735.99 \\times (1.08)^{6} = 64,735.99 \\times 1.586874 \\approx \\$102,727.88$."
+  },
+  {
+    "id": "math-11-53",
+    "caseId": "MATH 11.53",
+    "title": "Finding the Indifference Payment for a Consulting Firm",
+    "subsection": "11.3",
+    "min_chars": 1030,
+    "text": "A consulting firm can either receive \\$35,000 immediately or a larger payment in 4 years. The firm's opportunity cost of capital is 6.5% per year, compounded continuously. The firm wants to know the future payment amount that would make it exactly indifferent between the two options, using the immediate \\$35,000 as the target present value, r = 0.065, and t = 4.\r\n\r\n**Part 1: Setup.**\r\n\r\nImmediate option = \\$35,000 (today)\r\n\r\nContinuous annual rate p = 6.5%, so r = 0.065\r\n\r\nt = 4 years\r\n\r\n**Part 2: Formula.**\r\n\r\nIndifference condition: $\\mathrm{PV}_0 = Ke^{-rt}$, so $K = \\mathrm{PV}_0\\, e^{rt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $rt = 0.065 \\times 4 = 0.26$, so $e^{-0.26} \\approx 0.7711$.\r\n\r\n**2.** $K = 35,000/0.7711 \\approx \\$45,392.55$.\r\n\r\n**3.** Excess over $\\$35,000$: $45,392.55 - 35,000 = \\$10,392.55$.\r\n\r\n**4.** At $r = 9\\%$: $rt = 0.36$, $e^{-0.36} \\approx 0.6977$, so $K = 35,000/0.6977 \\approx \\$50,166.53$.\r\n\r\n**5.** At $t = 2$: $rt = 0.13$, $e^{-0.13} \\approx 0.8781$, so $K = 35,000/0.8781 \\approx \\$39,858.99$."
+  },
+  {
+    "id": "math-11-54",
+    "caseId": "MATH 11.54",
+    "title": "A Corner Solution in Aging Wine Valuation",
+    "subsection": "11.3",
+    "min_chars": 1262,
+    "text": "A vineyard owner is deciding when to bottle and sell an aging batch of wine whose market value is modeled as $P(t) = 40,000e^{0.05t}$ dollars, where t is the number of years from now. The relevant continuous interest rate for discounting is 8% per year, so this task applies the chapter's optimal-timing condition to $P(t) = 40,000e^{0.05t}$ with r = 0.08.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P(t) = 40,000e^{0.05t}$\r\n\r\nContinuous annual discount rate p = 8%, so r = 0.08\r\n\r\n**Part 2: Formula.**\r\n\r\nPresent value: $f(t) = P(t)e^{-rt} = 40,000e^{(0.05-0.08)t} = 40,000e^{-0.03t}$\r\n\r\nOptimality condition: $P'(t^*) = rP(t^*)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $P'(t) = 0.05 \\times 40,000e^{0.05t} = 0.05P(t)$, so the condition $P'(t^*) = rP(t^*)$ would require $0.05P(t^*) = 0.08P(t^*)$, impossible for $P(t^*) > 0$.\r\n\r\n**2.** Since $f(t) = 40,000e^{-0.03t}$ is strictly decreasing for $t \\ge 0$, $f$ is maximized at $t = 0$, giving $f(0) = P(0) = \\$40,000$.\r\n\r\n**3.** $f(10) = 40,000e^{-0.03 \\times 10} = 40,000e^{-0.3} \\approx 40,000 \\times 0.740818 \\approx \\$29,632.73$.\r\n\r\n**4.** Compare $f(0) = \\$40,000$ with $f(10) \\approx \\$29,632.73$.\r\n\r\n**5.** If $r = 4\\% < 5\\%$ growth rate, $f(t) = 40,000e^{(0.05-0.04)t} = 40,000e^{0.01t}$, which increases without bound in $t$.\r\n"
+  },
+  {
+    "id": "math-11-55",
+    "caseId": "MATH 11.55",
+    "title": "Comparative Statics for a Forestry Cooperative's Harvest Timing",
+    "subsection": "11.3",
+    "min_chars": 1105,
+    "text": "A forestry cooperative's analytics team has measured, at the optimal harvest time $t^*$ for one of its timber stands: $P(t^*) = \\$520,000$, $P'(t^*) = \\$46,800$, and $P''(t^*) = \\$3,120$ per year, with a current continuous interest rate of r = 9% per year. The team wants to apply the chapter's comparative-statics formula to find $dt^*/dr$ and to confirm the second-order condition.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P(t^*) = \\$520,000$\r\n\r\n$P'(t^*) = \\$46,800$\r\n\r\n$P''(t^*) = \\$3,120$ per year\r\n\r\nContinuous annual rate p = 9%, so r = 0.09\r\n\r\n**Part 2: Formula.**\r\n\r\nOptimality check: $P'(t^*) = rP(t^*)$\r\n\r\n$dt^*/dr = P(t^*) / [P''(t^*) - rP'(t^*)]$\r\n\r\nSecond-order condition for a maximum: $P''(t^*) - rP'(t^*) < 0$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $0.09 \\times 520,000 = \\$46,800$, matching the given $P'(t^*)$ exactly.\r\n\r\n**2.** $P''(t^*) - r P'(t^*)$: $3,120 - 0.09(46,800) = 3,120 - 4,212 = -\\$1,092$.\r\n\r\n**3.** $dt^*/dr = 520,000 / (-1,092) \\approx -476.19$.\r\n\r\n**4.** A negative $dt^*/dr$ means $t^*$ moves in the opposite direction from $r$.\r\n\r\n**5.** $-1,092 < 0$, so the second-order condition holds.\r\n"
+  },
+  {
+    "id": "math-11-56",
+    "caseId": "MATH 11.56",
+    "title": "Full Harvest-Timing Analysis for an Orchard's Timber",
+    "subsection": "11.3",
+    "min_chars": 1270,
+    "text": "An orchard's standalone timber value is modeled by $P(t) = 3,000(t+4)^{2}$ dollars. The continuous interest rate is 9% per year. Management wants the optimal harvest time, confirmation that it is indeed a present-value maximum, and the sensitivity of that optimal time to the interest rate, using $P(t) = 3,000(t+4)^{2}$ and r = 0.09.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P(t) = 3,000(t+4)^{2}$\r\n\r\nContinuous annual rate p = 9%, so r = 0.09\r\n\r\n**Part 2: Formula.**\r\n\r\n$P'(t) = 6,000(t + 4)$\r\n\r\nOptimality condition: $P'(t^*) = rP(t^*)$\r\n\r\n$dt^*/dr = P(t^*) / [P''(t^*) - rP'(t^*)]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $6,000(t + 4) = 0.09 \\times 3,000(t+4)^{2} = 270(t+4)^{2}$; dividing by $(t + 4)$ gives $6,000 = 270(t + 4)$, so $t + 4 = 22.2222$, i.e., $t^* \\approx 18.22$ years.\r\n\r\n**2.** $P(t^*) = 3,000(22.2222)^{2} \\approx \\$1,481,481.48$.\r\n\r\n**3.** $f(t^*) = P(t^*)e^{-0.09 \\times 18.2222} = 1,481,481.48 \\times e^{-1.64} \\approx \\$287,377.84$.\r\n\r\n**4.** $P'(t^*) = 6,000(22.2222) \\approx \\$133,333.33$.\r\n\r\n**5.** $P''(t) = 6,000$ (constant).\r\n\r\n**6.** $P''(t^*) - rP'(t^*)$: $6,000 - 0.09(133,333.33) = 6,000 - 12,000 = -\\$6,000$.\r\n\r\n**7.** $dt^*/dr = 1,481,481.48 / (-6,000) \\approx -246.91$.\r\n\r\n**8.** General relation for this $P(t)$: $t^* + 4 = 2/r$, so $t^* = 2/r - 4$.\r\n"
+  },
+  {
+    "id": "math-11-57",
+    "caseId": "MATH 11.57",
+    "title": "Combining a Private-Equity Exit Payment with a Short-Dated Side Payment",
+    "subsection": "11.3",
+    "min_chars": 1244,
+    "text": "A private equity fund expects to receive \\$250,000 from a portfolio-company exit in exactly 2.5 years, plus a smaller side payment of \\$40,000 in 7 months from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $K_1 = \\$250,000$ at $t_1 = 2.5$ and $K_2 = \\$40,000$ at $t_2 = 7/12$, with r = 0.11.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K_1 = \\$250,000$ due in $t_1 = 2.5$ years\r\n\r\n$K_2 = \\$40,000$ due in $t_2 = 7/12$ year\r\n\r\nContinuous annual rate p = 11%, so r = 0.11\r\n\r\n**Part 2: Formula.**\r\n\r\n$PDV = Ke^{-rt}$\r\n\r\nCombined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $rt_1 = 0.11 \\times 2.5 = 0.275$, $e^{-0.275} \\approx 0.759572$, so $PV_1 = 250,000 \\times 0.759572 \\approx \\$189,893.03$.\r\n\r\n**2.** $rt_2 = 0.11 \\times 0.583333 \\approx 0.064167$, $e^{-0.064167} \\approx 0.937849$, so $PV_2 = 40,000 \\times 0.937849 \\approx \\$37,513.95$.\r\n\r\n**3.** Combined PDV: $189,893.03 + 37,513.95 \\approx \\$227,406.98$.\r\n\r\n**4.** $PV_2 \\approx \\$37,513.95$, which is $40,000 - 37,513.95 = \\$2,486.05$ less than face value, only about $6.2\\%$ of the face amount.\r\n\r\n**5.** At $r = 0\\%$: $e^{0} = 1$, so combined $PDV = 250,000 + 40,000 = \\$290,000$.\r\n"
+  },
+  {
+    "id": "math-11-58",
+    "caseId": "MATH 11.58",
+    "title": "Implied Rate on a Biotech Milestone-Contingent Investment",
+    "subsection": "11.3",
+    "min_chars": 1036,
+    "text": "Investors paid \\$2,000,000 today for preferred shares that convert into a guaranteed \\$3,200,000 payout in 4.5 years if a specific FDA milestone is met, with value discounted continuously. The investors' analyst wants to determine the implied continuous discount rate and test its sensitivity, using $PDV = \\$2,000,000$, $K = \\$3,200,000$, and t = 4.5.\r\n\r\n**Part 1: Setup.**\r\n\r\n$PDV = \\$2,000,000$\r\n\r\n$K = \\$3,200,000$\r\n\r\nt = 4.5 years (continuous compounding)\r\n\r\n**Part 2: Formula.**\r\n\r\n$PDV = Ke^{-rt}$, so $r = -\\ln(PDV/K)/t$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $PDV/K = 2,000,000/3,200,000 = 0.625$.\r\n\r\n**2.** $r = -\\ln(0.625)/4.5 = 0.470004/4.5 \\approx 0.104445 = 10.44\\%$.\r\n\r\n**3.** For $K = \\$3,600,000$: ratio $= 2,000,000/3,600,000 \\approx 0.555556$, $r = -\\ln(0.555556)/4.5 \\approx 0.587787/4.5 \\approx 0.130619 = 13.06\\%$.\r\n\r\n**4.** For $t = 3$: $r = -\\ln(0.625)/3 = 0.470004/3 \\approx 0.156668 = 15.67\\%$.\r\n\r\n**5.** For $t = 9$ with the same discount factor $0.625$: $r = -\\ln(0.625)/9 = 0.470004/9 \\approx 0.052223 = 5.22\\%$.\r\n"
+  },
+  {
+    "id": "math-11-59",
+    "caseId": "MATH 11.59",
+    "title": "General Harvest-Timing Formula for a Forestry Consultancy",
+    "subsection": "11.3",
+    "min_chars": 1175,
+    "text": "A forestry consultancy models a class of timber stands with value function $P(t) = A(t + k)^{2}$ for positive constants A and k, discounted continuously at rate r. For one particular stand, $A = \\$1,200$, k = 5, and r = 7.5% per year. The consultancy wants the general optimal-time formula, the specific optimal time, and two comparative-statics checks.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P(t) = A(t + k)^{2}$, with A = 1,200, k = 5\r\n\r\nContinuous annual rate p = 7.5%, so r = 0.075\r\n\r\n**Part 2: Formula.**\r\n\r\n$P'(t) = 2A(t + k)$\r\n\r\nOptimality condition: $P'(t^*) = rP(t^*)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $2A(t + k) = r A(t + k)^{2}$; dividing both sides by $A(t + k)$ (nonzero) gives $2 = r(t + k)$, so $t^* = 2/r - k$.\r\n\r\n**2.** $t^* = 2/0.075 - 5 = 26.6667 - 5 \\approx 21.67$ years.\r\n\r\n**3.** $P(t^*) = 1,200(26.6667)^{2} \\approx \\$853,333.33$.\r\n\r\n**4.** $f(t^*) = 853,333.33 \\times e^{-0.075 \\times 21.6667} = 853,333.33 \\times e^{-1.625} \\approx \\$168,031.30$.\r\n\r\n**5.** With $k = 8$: $t^* = 2/0.075 - 8 \\approx 26.6667 - 8 = 18.67$ years.\r\n\r\n**6.** With $r = 15\\%$: $t^* = 2/0.15 - 5 = 13.3333 - 5 = 8.33$ years.\r\n\r\n**7.** Half of the original $21.67$ years is $10.83$ years.\r\n"
+  },
+  {
+    "id": "math-11-60",
+    "caseId": "MATH 11.60",
+    "title": "Pricing Two Franchise Payments Related by a Common Time Horizon",
+    "subsection": "11.3",
+    "min_chars": 1148,
+    "text": "A franchise agreement promises an investor two payments from a franchisee: \\$30,000 in exactly 5 years and \\$55,000 in exactly 10 years (twice the first horizon). Value is discounted continuously at 8% per year. Because the second payment date is exactly double the first, its discount factor is the square of the first payment's discount factor, so this task uses $K_1 = \\$30,000$ at $t_1 = 5$, $K_2 = \\$55,000$ at $t_2 = 10$, and r = 0.08.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K_1 = \\$30,000$ due in $t_1 = 5$ years\r\n\r\n$K_2 = \\$55,000$ due in $t_2 = 10$ years\r\n\r\nContinuous annual rate p = 8%, so r = 0.08\r\n\r\n**Part 2: Formula.**\r\n\r\n$PDV = Ke^{-rt}$\r\n\r\nSince $t_2 = 2t_1$, the discount factor $e^{-rt_2}=(e^{-rt_1})^{2}$\r\n\r\nCombined: $\\mathrm{PDV} = \\mathrm{PDV}_1 + \\mathrm{PDV}_2$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $e^{-0.4} \\approx 0.670320$.\r\n\r\n**2.** $e^{-0.8} \\approx 0.449329$; note $(0.670320)^{2} \\approx 0.449329$, confirming the squaring relationship.\r\n\r\n**3.** $PV_1 = 30,000 \\times 0.670320 \\approx \\$20,109.60$.\r\n\r\n**4.** $PV_2 = 55,000 \\times 0.449329 \\approx \\$24,713.09$.\r\n\r\n**5.** Combined PDV: $20,109.60 + 24,713.09 \\approx \\$44,822.69$.\r\n"
+  },
+  {
+    "id": "math-11-61",
+    "caseId": "MATH 11.61",
+    "title": "Startup Revenue Growth Over Five Years",
+    "subsection": "11.4",
+    "min_chars": 883,
+    "text": "A newly launched e-commerce startup earns \\$50 million in revenue this year and expects revenue to grow by $10\\%$ annually for each of the next four years, forming a finite geometric series with first term $a = \\$50$ million and quotient $k = 1.10$ over $n = 5$ years.\r\n\r\n**Part 1: Setup.**\r\n\r\n$a$ (year-$1$ revenue) $= \\$50$ million; $k = 1.10$; $n = 5$ years.\r\n\r\n**Part 2: Formula.**\r\n\r\n$s_n = a(k^{n}-1)/(k-1)$ for $k \\neq 1$; term in year $t$: $a k^{t-1}$.\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Year-$2$ revenue: $50\\times1.10 = \\$55.00$ million.\r\n\r\n**2.** Year-$5$ revenue: $50\\times(1.10)^{4} = 50\\times1.4641 = \\$73.205 \\to \\$73.21$ million.\r\n\r\n**3.** $k^{5} = 1.10^{5} = 1.61051$; $s_5 = 50\\times(1.61051-1)/0.10 = 50\\times6.1051 \\to \\$305.26$ million.\r\n\r\n**4.** Flat-revenue total ($k = 1$): $50\\times5 = \\$250.00$ million; difference $305.255-250 = \\$55.26$ million (not $\\$60$)."
+  },
+  {
+    "id": "math-11-62",
+    "caseId": "MATH 11.62",
+    "title": "Perpetual Profit Stream from a Subscription Box Line",
+    "subsection": "11.4",
+    "min_chars": 920,
+    "text": "A subscription box company just earned \\$2,000 in profit from its newest product line this month. Because customer renewals are expected to halve every month indefinitely, monthly profits are modeled as an infinite geometric series with first term a = \\$2,000 and quotient k = 0.5.\r\n\r\n**Part 1: Setup.**\r\n\r\na (month-1 profit) = \\$2,000\r\n\r\nk (monthly decay quotient) = 0.5\r\n\r\n**Part 2: Formula.**\r\n\r\nInfinite sum (|k| < 1): $a + ak + ak^{2} + \\cdots = a/(1 - k)$\r\n\r\nFinite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $|k| = 0.5 < 1$, so the series converges.\r\n\r\n**2.** Infinite sum: $2,000/(1 - 0.5) = 2,000/0.5 = \\$4,000.00$.\r\n\r\n**3.** First $4$ terms: $2,000 + 1,000 + 500 + 250 = \\$3,750.00$.\r\n\r\n**4.** $3,750.00 < 4,000.00$, so the partial sum does not exceed the infinite sum.\r\n\r\n**5.** If $k = 1.5$, then $|k| = 1.5 \\ge 1$, so the series diverges and has no finite sum at all."
+  },
+  {
+    "id": "math-11-63",
+    "caseId": "MATH 11.63",
+    "title": "Declining Annual Deposits into a Sinking Fund",
+    "subsection": "11.4",
+    "min_chars": 923,
+    "text": "An investor commits to an unusual sinking-fund plan: this year's deposit is \\$800, and each following year's deposit is 90% of the previous year's deposit, continuing indefinitely. This is an infinite geometric series with a = \\$800 and k = 0.90.\r\n\r\n**Part 1: Setup.**\r\n\r\na (year-1 deposit) = \\$800\r\n\r\nk (annual decay quotient) = 0.90\r\n\r\n**Part 2: Formula.**\r\n\r\nInfinite sum (|k| < 1): a/(1 - k)\r\n\r\nFinite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $|k| = 0.90 < 1$, so the infinite series converges.\r\n\r\n**2.** Infinite sum: $800/(1 - 0.90) = 800/0.10 = \\$8,000.00$.\r\n\r\n**3.** $0.90^{10} = 0.3486784401$.\r\n\r\n**4.** $s_{10} = 800 \\times (1 - 0.3486784401)/0.10 = 800 \\times 6.513215599 = \\$5,210.57$.\r\n\r\n**5.** Ratio to infinite sum: $5,210.57/8,000.00 = 0.6513 \\approx 65.13\\% \\approx 65\\%$.\r\n\r\n**6.** If $k = 1.10$, $|k| = 1.10 \\ge 1$, so the infinite series diverges by definition."
+  }
+]

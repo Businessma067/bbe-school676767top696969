@@ -1,0 +1,436 @@
+<<<ITEM 0>>>
+**A) The implied discount factor is exactly 0.45.**  (true)
+
+The discount factor is the fraction of the future payoff that the buyer is paying today, so it is read straight off the two amounts. Write $f$ for that factor, $PDV$ for the amount handed over now and $K$ for the guaranteed future sale price:
+
+$$f = \frac{PDV}{K}$$
+
+Substitute the \$27,000 the collector is willing to pay and the \$60,000 guaranteed future sale:
+
+$$f = \frac{27,000}{60,000}$$
+
+$$= 0.45$$
+
+The division terminates exactly, with no rounding involved, so the factor is exactly 0.45 as the claim states. The collector is paying 45 cents today for each dollar due in 12 years. The statement is true.
+<<<ITEM 1>>>
+**D) If the purchase price had instead been \$30,000 for the same \$60,000 payoff in 12 years, the implied continuous discount rate would be higher than the rate found for the original \$27,000 price.**  (false)
+
+A different price implies a different discount factor and therefore a different rate, so the calculation is repeated from the start:
+
+$$r = -\frac{\ln(PDV/K)}{t}$$
+
+At the hypothetical price of \$30,000 for the same \$60,000 payoff:
+
+$$\frac{PDV}{K} = \frac{30,000}{60,000} = 0.5$$
+
+$$-\ln(0.5) \approx 0.693147$$
+
+$$r' \approx \frac{0.693147}{12} \approx 0.057762 = 5.78\%$$
+
+The original \$27,000 price implied:
+
+$$r = \frac{0.798508}{12} \approx 0.066542 = 6.65\%$$
+
+Subtract the hypothetical rate from the original rate to size the move between them, measured in percentage points:
+
+$$6.65\% - 5.78\% = 0.87$$
+
+Paying more today for the same future payoff means accepting a lower return, so the implied rate falls by about 0.87 percentage points rather than rising. The claim says it would be higher, so the statement is false.
+<<<ITEM 2>>>
+**D) If the interest rate were higher than 8% instead, the optimal cutting time $t^*$ would be later than the original optimal time.**  (false)
+
+The effect of the interest rate on the cutting date is found by re-solving the optimality condition with a different $r$. The condition is:
+
+$$P'(t^{\ast}) = r P(t^{\ast})$$
+
+With $P(t) = 5,000(t+2)^{2}$ and $P'(t) = 10,000(t+2)$, cancelling $(t+2)$ gives a general relation:
+
+$$10,000 = 5,000\, r\, (t+2)$$
+
+$$t^{\ast} = \frac{2}{r} - 2$$
+
+At the original $r = 0.08$, the optimal date, counted in years from today, is:
+
+$$t^{\ast} = \frac{2}{0.08} - 2 = 25 - 2 = 23$$
+
+At a higher rate, say $r = 0.10$, the same relation gives this date, again in years:
+
+$$t^{\ast} = \frac{2}{0.10} - 2 = 20 - 2 = 18$$
+
+Subtract the second date from the first to see how far the harvest moves, with the difference also in years:
+
+$$23 - 18 = 5$$
+
+Because $2/r$ shrinks as $r$ grows, a higher interest rate always pulls the harvest forward, here by five years. Waiting costs more when money earns more elsewhere. The claim says a higher rate would push the cutting time later, so the statement is false.
+<<<ITEM 3>>>
+**B) The equivalent nominal annual rate that yields the identical present value is exactly 5.00%.**  (false)
+
+Two conventions produce the same present value only when their discount factors agree, so set them equal and solve for the annual rate:
+
+$$K(1+r_a)^{-t} = K e^{-rt}$$
+
+Cancel the common payment $K$ from both sides:
+
+$$(1+r_a)^{-t} = e^{-rt}$$
+
+Raise both sides to the power $-1/t$, which removes the horizon entirely:
+
+$$1 + r_a = e^{r}$$
+
+The equivalence therefore does not depend on how many years the payment is away. Substitute the continuous rate $r = 0.05$:
+
+$$1 + r_a = e^{0.05}$$
+
+$$e^{0.05} \approx 1.051271$$
+
+$$r_a \approx 0.051271 = 5.13\%$$
+
+Compare with the claimed rate by subtracting it from the derived rate, so the gap comes out in percentage points:
+
+$$5.13\% - 5.00\% = 0.13$$
+
+The equivalent annual rate has to sit above the continuous rate, not equal it, because continuous compounding credits interest at every instant and annual compounding has to make up that difference with a slightly higher stated rate. The claim gives exactly 5.00%, so the statement is false.
+<<<ITEM 4>>>
+**C) The equivalent annual rate is approximately 5.87% per year.**  (false)
+
+The equivalent annual rate is fixed by matching discount factors, which after cancelling the payment and the horizon leaves:
+
+$$1 + r_a = e^{r}$$
+
+Substitute the continuous rate $r = 0.05$:
+
+$$e^{0.05} \approx 1.051271$$
+
+$$r_a = 1.051271 - 1$$
+
+$$\approx 0.051271 = 5.13\%$$
+
+Compare with the claimed rate by subtracting the derived rate from it, so the gap comes out in percentage points:
+
+$$5.87\% - 5.13\% = 0.74$$
+
+A check confirms 5.13% and rules out 5.87%. Over 7 years the continuous present value is $50,000 \times e^{-0.35} \approx 35,234.40$, and $50,000 \times (1.051271)^{-7} \approx 35,234.40$ reproduces it, while $50,000 \times (1.0587)^{-7} \approx 33,528$ falls well short. The statement is false.
+<<<ITEM 5>>>
+**E) The gap between the correctly derived equivalent annual rate and the 5% continuous rate is more than 1.00 percentage point.**  (false)
+
+Measuring the gap requires the equivalent annual rate, which follows from matching the two discount factors:
+
+$$1 + r_a = e^{r}$$
+
+Substitute the continuous rate $r = 0.05$:
+
+$$e^{0.05} \approx 1.051271$$
+
+$$r_a \approx 0.051271 = 5.1271\%$$
+
+Now take the difference against the continuous rate, with the result read in percentage points:
+
+$$5.1271\% - 5.0000\%$$
+
+$$\approx 0.13$$
+
+Compare that gap with the threshold in the claim, which is one full percentage point:
+
+$$1.00 - 0.13 = 0.87$$
+
+So the derived gap falls short of the claimed threshold by 0.87 percentage points of slack. The gap is about one eighth of a percentage point, far below the claimed one full point. The reason is that the series for $e^{r}$ is $1 + r + r^{2}/2 + \ldots$, so for a small rate like $0.05$ the excess over $1 + r$ is only about $r^{2}/2 = 0.00125$. The statement is false.
+<<<ITEM 6>>>
+**A) The continuous discount factor is approximately 0.8112.**  (false)
+
+The continuous discount factor is the share of a future payment that is worth handing over today. Write $PDV$ for the value now, $K$ for the amount due later, $r$ for the rate and $t$ for the wait; the factor is the exponential of the negative product of rate and time:
+
+$$\frac{PDV}{K} = e^{-rt}$$
+
+The firm's opportunity cost of capital is $6.5\%$ per year and the deferred option pays in 4 years, so build the exponent first:
+
+$$rt = 0.065 \times 4 = 0.26$$
+
+Evaluate the factor:
+
+$$e^{-0.26} \approx 0.771052$$
+
+Compare with the claimed value:
+
+$$0.8112 - 0.7711 = 0.0401$$
+
+The correct factor is about 0.7711, roughly 0.04 below the claimed 0.8112. That gap is not trivial: applied to a payment near \$45,000 it would shift the valuation by about \$1,800. The statement is false.
+<<<ITEM 7>>>
+**D) The \$40,000 side payment is discounted by more than 10% of its face value.**  (false)
+
+The size of the discount is measured against the payment's own face value, so the present value comes first:
+
+$$PV_2 = K_2 e^{-rt_2}$$
+
+With $t_2 = 7/12 \approx 0.583333$ years and $r = 0.11$:
+
+$$rt_2 \approx 0.064167, \qquad e^{-0.064167} \approx 0.937849$$
+
+$$PV_2 \approx 40,000 \times 0.937849 \approx 37,513.95$$
+
+The dollar amount of discounting is:
+
+$$40,000.00 - 37,513.95 = 2,486.05$$
+
+As a share of face value:
+
+$$\frac{2,486.05}{40,000} \approx 0.0622 = 6.22\%$$
+
+Compare that share with the one-tenth threshold in the claim, taking the difference in percentage points:
+
+$$10\% - 6.22\% = 3.78$$
+
+Seven months is too short a wait for $11\%$ discounting to remove a tenth of the payment; it removes about $6.2\%$. The statement is false.
+<<<ITEM 8>>>
+**A) The implied discount factor is exactly 0.625.**  (true)
+
+The discount factor is the share of the promised payout that the investors actually paid, so it is read off the two amounts. Write $f$ for that factor, $PDV$ for the money paid today and $K$ for the promised payout:
+
+$$f = \frac{PDV}{K}$$
+
+Substitute the \$2,000,000 paid today and the \$3,200,000 guaranteed milestone payout:
+
+$$f = \frac{2,000,000}{3,200,000}$$
+
+$$= 0.625$$
+
+The division terminates exactly, since $2/3.2 = 20/32 = 5/8$, so no rounding is involved. The investors are paying 62.5 cents today for each dollar promised in 4.5 years. The claim states exactly 0.625, so the statement is true.
+<<<ITEM 9>>>
+**C) If the milestone payout were instead \$3,600,000, the implied discount rate would be higher than the rate implied by the original \$3,200,000 payout.**  (true)
+
+A different payout changes the discount factor, so the implied rate is recomputed from the same inversion:
+
+$$r = -\frac{\ln(PDV/K)}{t}$$
+
+With the larger payout of \$3,600,000 against the same \$2,000,000 price:
+
+$$\frac{PDV}{K} = \frac{2,000,000}{3,600,000} \approx 0.555556$$
+
+$$-\ln(0.555556) \approx 0.587787$$
+
+$$r' \approx \frac{0.587787}{4.5} \approx 0.130619 = 13.06\%$$
+
+The original \$3,200,000 payout implied:
+
+$$r = \frac{0.470004}{4.5} \approx 0.104445 = 10.44\%$$
+
+Subtract the original rate from the recomputed rate to size the move, measured in percentage points:
+
+$$13.06\% - 10.44\% = 2.62$$
+
+Paying the same price for a bigger promised payout means a smaller discount factor, and a smaller factor over the same horizon requires a stronger rate. The implied rate rises by about 2.62 percentage points, so the statement is true.
+<<<ITEM 10>>>
+**D) If the time to payout were shortened to 3 years instead of 4.5, the implied discount rate would be lower than the rate implied by the original 4.5-year horizon.**  (false)
+
+Shortening the horizon while price and payout stay fixed leaves the discount factor unchanged and forces the rate to adjust:
+
+$$r = -\frac{\ln(PDV/K)}{t}$$
+
+The factor is still:
+
+$$\frac{2,000,000}{3,200,000} = 0.625, \qquad -\ln(0.625) \approx 0.470004$$
+
+At the shortened horizon $t = 3$ years:
+
+$$r' \approx \frac{0.470004}{3}$$
+
+$$\approx 0.156668 = 15.67\%$$
+
+At the original 4.5-year horizon:
+
+$$r = \frac{0.470004}{4.5} \approx 0.104445 = 10.44\%$$
+
+Subtract the original rate from the shortened-horizon rate, with the difference read in percentage points:
+
+$$15.67\% - 10.44\% = 5.23$$
+
+Only the product $rt$ is pinned down by the price and the payout, so compressing the same total discount into fewer years demands a higher annual rate, not a lower one. The claim has the direction backwards, so the statement is false.
+<<<ITEM 11>>>
+**A) The discount factor for the 5-year payment is approximately 0.6703.**  (true)
+
+The continuous discount factor is the fraction of a future dollar that is worth handing over today. Write $PDV$ for the value now, $K$ for the payment due later, $r$ for the rate and $t$ for the wait; the factor is the exponential of the negative product of rate and time:
+
+$$\frac{PDV}{K} = e^{-rt}$$
+
+The franchise payments are discounted at $8\%$ per year and the first arrives in 5 years, so form the exponent:
+
+$$rt_1 = 0.08 \times 5 = 0.40$$
+
+Evaluate the factor at that exponent:
+
+$$e^{-0.40} \approx 0.670320$$
+
+Rounded to four decimal places this is 0.6703, exactly the figure the claim gives. About 67 cents of each promised dollar survives five years of discounting at this rate. The statement is true.
+<<<ITEM 12>>>
+**A) The infinite profit series converges to a finite sum.**  (true)
+
+An infinite geometric series converges when the size of its quotient stays below 1, and diverges otherwise. Writing $a$ for the first term and $k$ for the fixed quotient, the series $a + ak + ak^{2} + \cdots$ converges exactly when the quotient satisfies
+
+$$|k| < 1$$
+
+Each month's profit here is exactly half of the previous month's, so the quotient between consecutive terms is constant at
+
+$$k = 0.5$$
+
+and its absolute value is
+
+$$|k| = 0.5$$
+
+Comparing that against the convergence cutoff:
+
+$$0.5 < 1$$
+
+The monthly profits therefore shrink quickly, running $2{,}000$, then $1{,}000$, then $500$, then $250$, and heading toward zero. Because the terms fade this fast, the running total settles on a fixed finite number instead of climbing without bound. The convergence condition is satisfied, so the statement is true.
+<<<ITEM 13>>>
+**E) If the quotient were instead k = 1.5, the infinite series would still converge, to a sum of \$-4,000.00.**  (false)
+
+Convergence of a geometric series is decided entirely by the size of its quotient. Writing $a$ for the first term and $k$ for the fixed quotient, the series $a + ak + ak^{2} + \cdots$ converges exactly when the quotient satisfies
+
+$$|k| < 1$$
+
+Under the hypothetical quotient $k = 1.5$, that size is
+
+$$|k| = 1.5$$
+
+and the comparison with the cutoff runs the wrong way:
+
+$$1.5 > 1$$
+
+The individual terms show what that means in practice. Starting from $a = 2{,}000$ dollars,
+
+$$a_2 = 2{,}000 \times 1.5 = 3{,}000$$
+
+$$a_3 = 2{,}000 \times (1.5)^{2} = 4{,}500$$
+
+$$a_4 = 2{,}000 \times (1.5)^{3} = 6{,}750$$
+
+Each month's amount is larger than the previous one, so the terms never approach zero and the partial sums climb without any ceiling. No finite limiting value exists, which is precisely what divergence means. The closed formula $a/(1-k)$ is valid only when $|k| < 1$, and forcing $k = 1.5$ into it anyway produces
+
+$$\frac{2{,}000}{1-1.5} = \frac{2{,}000}{-0.5} = -4{,}000$$
+
+which is where the quoted figure of \$-4,000.00 comes from. That number is the output of a formula used outside the range where it means anything, and a stream of growing positive profits cannot possibly total a negative amount. The series does not converge, so the statement is false.
+<<<ITEM 14>>>
+**A) The infinite deposit series converges.**  (true)
+
+An infinite geometric series converges exactly when the absolute value of its quotient is below 1. Writing $a$ for the first term and $k$ for the fixed quotient, the series $a + ak + ak^{2} + \cdots$ converges exactly when the quotient satisfies
+
+$$|k| < 1$$
+
+Each deposit here is $90\%$ of the previous year's deposit, so the ratio between consecutive deposits is constant at
+
+$$k = 0.90$$
+
+with absolute value
+
+$$|k| = 0.90$$
+
+Comparing that against the cutoff:
+
+$$0.90 < 1$$
+
+The deposits accordingly shrink year after year, running $800$, then $720$, then $648$, and continuing toward zero. Because the terms fade away, the cumulative amount deposited approaches a fixed finite value rather than growing without limit. The convergence test is satisfied, so the statement is true.
+<<<ITEM 15>>>
+**E) If the quotient were instead k = 1.10, the series would diverge.**  (true)
+
+Whether an infinite geometric series converges or diverges depends only on the size of its quotient. Writing $a$ for the first term and $k$ for the fixed quotient, the series $a + ak + ak^{2} + \cdots$ converges exactly when the quotient satisfies
+
+$$|k| < 1$$
+
+Under the hypothetical quotient $k = 1.10$, that size is
+
+$$|k| = 1.10$$
+
+and the comparison fails:
+
+$$1.10 > 1$$
+
+The deposits would then grow instead of shrinking. Starting from $a = 800$ dollars,
+
+$$a_2 = 800 \times 1.10 = 880$$
+
+$$a_3 = 800 \times (1.10)^{2} = 968$$
+
+$$a_4 = 800 \times (1.10)^{3} = 1{,}064.80$$
+
+Since every deposit exceeds the one before it, the terms never approach zero and the running total keeps climbing with no ceiling to level off against. No finite limiting value exists, so the closed formula $a/(1-k)$ cannot be applied and the series has no sum. That behaviour is exactly divergence, which is what the claim asserts, so the statement is true.
+<<<ITEM 16>>>
+**A) At a constant extraction rate of 300,000 tons/year, the reserves will last exactly 60 years.**  (true)
+
+Removing the same tonnage every year means the reserve is drawn down in equal steps, so the number of years until it is gone is the reserve divided by the annual extraction rate. Write $R$ for the tonnage in the ground and $E$ for the tonnage removed each year:
+
+$$t = \frac{R}{E}$$
+
+The reserve holds $18{,}000{,}000$ tons and the constant rate is $300{,}000$ tons per year:
+
+$$t = \frac{18{,}000{,}000}{300{,}000}$$
+
+$$t = 60$$
+
+Multiplying back confirms the arithmetic:
+
+$$300{,}000 \times 60 = 18{,}000{,}000$$
+
+The reserve lasts exactly 60 years at this rate, which is the figure in the claim, so the statement is true.
+<<<ITEM 17>>>
+**B) If extraction were instead held constant at 500,000 tons/year, the reserves would last 36 years.**  (true)
+
+With extraction held constant, the reserve is depleted in equal annual steps, so the life of the reserve is the total tonnage divided by the yearly rate. Write $R$ for the tonnage in the ground and $E$ for the tonnage removed each year:
+
+$$t = \frac{R}{E}$$
+
+The reserve is still $18{,}000{,}000$ tons, but the faster rate is $500{,}000$ tons per year:
+
+$$t = \frac{18{,}000{,}000}{500{,}000}$$
+
+$$t = 36$$
+
+Multiplying back as a check:
+
+$$500{,}000 \times 36 = 18{,}000{,}000$$
+
+Raising the annual rate shortens the life of the same fixed reserve, and at $500{,}000$ tons per year the reserve lasts exactly 36 years, which is what the claim says, so the statement is true.
+<<<ITEM 18>>>
+**D) If output instead declined 5% per year from the same 180 million-ton starting point, the total extracted would leave less coal stranded than the 3%-decline case.**  (false)
+
+The comparison needs the stranded tonnage under each decline path, and stranded tonnage is whatever the reserve base leaves over after the infinite extraction total. For the milder path, $a = 180$ million tons and $k = 0.97$:
+
+$$s_{\infty} = \frac{180}{1-0.97} = \frac{180}{0.03} = 6{,}000$$
+
+Subtract that extraction total from the $9{,}000$ million tons in the reserve base; the difference is the stranded tonnage, in million tons:
+
+$$9{,}000 - 6{,}000 = 3{,}000$$
+
+A steeper $5\%$ annual fall keeps only $95\%$ of the previous year's output, so the quotient becomes $k = 0.95$ while the starting output stays at $180$ million tons:
+
+$$s_{\infty} = \frac{180}{1-0.95}$$
+
+$$s_{\infty} = \frac{180}{0.05} = 3{,}600$$
+
+That is the number of million tons ever extracted on the steeper path, so the same subtraction leaves this stranded tonnage, again in million tons:
+
+$$9{,}000 - 3{,}600 = 5{,}400$$
+
+Comparing the two stranded figures:
+
+$$5{,}400 > 3{,}000$$
+
+A steeper decline shrinks output faster, so less coal is ever pulled out and more of it stays in the ground. The $5\%$ path strands $2{,}400$ million tons more than the $3\%$ path, not less, so the statement is false.
+<<<ITEM 19>>>
+**A) The alternating adjustment series converges to a finite sum.**  (true)
+
+An infinite geometric series converges when the absolute value of its quotient is below 1, and the sign of that quotient plays no part in the test. Writing $a$ for the first term and $k$ for the fixed quotient, the series $a + ak + ak^{2} + \cdots$ converges exactly when the quotient satisfies
+
+$$|k| < 1$$
+
+Each adjustment here reverses sign and is half the size of the previous one, so the quotient is
+
+$$k = -0.5$$
+
+and the quantity the test actually looks at is its absolute value:
+
+$$|k| = |-0.5| = 0.5$$
+
+Comparing that against the cutoff:
+
+$$0.5 < 1$$
+
+The adjustments themselves run $4{,}000$, then $-2{,}000$, then $1{,}000$, then $-500$, so they swing above and below zero while steadily shrinking in size. Those shrinking swings pull the running total toward a single fixed value rather than letting it wander without bound. The convergence condition is met, so the statement is true.

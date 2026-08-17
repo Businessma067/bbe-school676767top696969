@@ -1,0 +1,192 @@
+[
+  {
+    "id": "math-8-16",
+    "case_id": "MATH 8.16",
+    "title": "Server Peak Load Between a Doubling Rule and an Alarm",
+    "difficulty": "1/5",
+    "sort_order": 16,
+    "context": "A monitoring team models a server's peak load as $L(x)=A x^{r}$, where $x>0$ is the number of simultaneous jobs. Stress tests show that doubling the job count multiplies peak load by $4$, and a run with $30$ simultaneous jobs recorded a peak load of $180$. The hardware alarm trips at a peak load of $500$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Tripling the job count multiplies peak load by $6$.",
+      "The alarm trips at a job count above $55$.",
+      "Increasing the job count from $30$ to $42$ raises peak load by less than $90\\%$.",
+      "Increasing the job count from $30$ to $33$ raises peak load by exactly $21\\%$.",
+      "Halving the job count halves peak load."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nA scale factor of a power law depends on the exponent alone, and the doubling test carries it, since the coefficient cancels in the ratio:\n\n$$\\frac{L(2x)}{L(x)} = \\frac{A(2x)^{r}}{Ax^{r}} = 2^{r} = 4 \\quad \\Rightarrow \\quad r = 2$$\n\nThe same identity handles a multiplier of $3$:\n\n$$\\frac{L(3x)}{L(x)} = 3^{2} = 9$$\n\nThe recorded run turns that into levels, with $A = 0.2$:\n\n$$L(30) = 180, \\qquad L(90) = 0.2(8100) = 1620$$\n\nThe figure $6$ treats the scale factor as proportional to the multiplier, as though doubling giving $4$ left tripling half as much again. Tripling multiplies peak load by $9$, so the statement is False.",
+      "**B.** → False\n\nAn alarm level is a peak load, so locating it in job counts needs both constants of the model rather than the exponent alone. The recorded run supplies the coefficient:\n\n$$A(30)^{2} = 180 \\quad \\Rightarrow \\quad 900A = 180 \\quad \\Rightarrow \\quad A = 0.2$$\n\nSolving the alarm condition converts that load back into a job count:\n\n$$0.2x^{2} = 500 \\quad \\Rightarrow \\quad x^{2} = 2500 \\quad \\Rightarrow \\quad x = 50$$\n\nTesting the boundary named in the claim shows the alarm has already tripped there:\n\n$$L(55) = 0.2(3025) = 605 > 500$$\n\n$$L(49) = 0.2(2401) = 480.2, \\qquad L(50) = 0.2(2500) = 500$$\n\nThe recorded margin looks generous, $180$ against a limit of $500$, but a squared response spends that headroom inside twenty extra jobs. The alarm trips at $50$ jobs, below $55$ rather than above it, so the statement is False.",
+      "**C.** → False\n\nA move from $30$ to $42$ jobs is a finite $40\\%$ increase in the input, and a squared response amplifies it instead of passing it through, so the chain runs multiplier, then scale factor, then percentage:\n\n$$\\frac{42}{30} = 1.4, \\qquad (1.4)^{2} = 1.96$$\n\nA percentage change is that scale factor minus one:\n\n$$\\frac{L(42) - L(30)}{L(30)} = 1.96 - 1 = 0.96 = 96\\%$$\n\nLevels give the same reading, with the coefficient $0.2$ from the recorded run:\n\n$$L(30) = 180, \\qquad L(42) = 0.2(1764) = 352.8, \\qquad 352.8 - 180 = 172.8$$\n\nReading the exponent as an ordinary multiplier puts the answer near $80\\%$ and slips under the threshold, while the exact power clears it. Peak load rises by $96\\%$, which is not less than $90\\%$, so the statement is False.",
+      "**D.** → True\n\nA move from $30$ to $33$ jobs is a finite $10\\%$ increase, and with exponent $2$ the scale factor and the percentage change fit on one line:\n\n$$\\frac{L(33)}{L(30)} = \\left(\\frac{33}{30}\\right)^{2} = 1.1^{2} = 1.21 \\quad \\Rightarrow \\quad 1.21 - 1 = 21\\%$$\n\nA linear reading reports $10\\%$ and doubling the input change reports $20\\%$; the extra point is $0.1^{2} = 0.01$, which small-change shortcuts discard. The rise is exactly $21\\%$, so the statement is True.",
+      "**E.** → False\n\nHalving is a multiplier of $\\frac{1}{2}$ on the input, and with exponent $2$ the output multiplier is that fraction squared rather than the fraction itself:\n\n$$\\frac{L(\\frac{x}{2})}{L(x)} = \\left(\\frac{1}{2}\\right)^{2} = \\frac{1}{4}$$\n\nThe recorded run is the cleanest counterexample, since its level is known exactly:\n\n$$L(30) = 180, \\qquad L(15) = 0.2(225) = 45 = \\frac{180}{4}$$\n\nA halving would have left $90$ there, twice what the model gives, and the same gap opens at the alarm point where the stakes are larger:\n\n$$L(50) = 0.2(2500) = 500, \\qquad L(25) = 0.2(625) = 125$$\n\nA team planning for $250$ of residual load would hold twice the capacity the model needs, and read upwards the same error badly understates a spike. Load falls to a quarter, not a half, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $x$ = simultaneous jobs and $L(x)$ = peak load. Two unknowns need two facts: the stress test carries the exponent because scale factors are free of $A$, and the recorded run carries the level.\n\n**1. Translate: the doubling test.** The observed factor is a power of the multiplier:\n\n$$\\frac{L(2x)}{L(x)} = 2^{r} = 4$$\n\n**2. Translate: the recorded run.** One measured point fixes the coefficient:\n\n$$A(30)^{2} = 180$$\n\n**Part 2: The model.**\n\n$$2^{r} = 4 \\tag{1}$$\n\n$$900A = 180 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equations (1) and (2) give the law:\n\n$$r = 2, \\qquad A = 0.2, \\qquad L(x) = 0.2x^{2}$$\n\n**2.** Scale factors follow from the exponent alone:\n\n$$3^{2} = 9, \\qquad \\left(\\tfrac{1}{2}\\right)^{2} = \\tfrac{1}{4}$$\n\n**3.** Invert the law at the alarm level:\n\n$$0.2x^{2} = 500 \\;\\Rightarrow\\; x^{2} = 2500 \\;\\Rightarrow\\; x = 50$$\n\n**4.** Place the recorded run against the alarm. The recorded load is a little over a third of the tripping level:\n\n$$\\frac{180}{500} = 36\\%$$\n\nIn job counts the same run sits much closer to the limit, at three fifths of the tripping volume:\n\n$$\\frac{30}{50} = 60\\%$$\n\nThe gap between those two percentages is the squaring at work: a run already past halfway in job count is still well below halfway in load.\n\n**5.** The elasticity is the exponent, constant at every job count:\n\n$$\\text{El}_{x}L = 2$$"
+    ],
+    "solution_overview": "Peak load follows $L(x)=Ax^{r}$ for $x$ simultaneous jobs. Doubling the job count multiplies load by $4$, a $30$-job run peaked at $180$, and the alarm trips at $500$.\n\n**Part 1: Building the model.**\n\nLet $x$ = simultaneous jobs and $L(x)$ = peak load. Two unknowns need two facts: the stress test carries the exponent because scale factors are free of $A$, and the recorded run carries the level.\n\n**1. Translate: the doubling test.** The observed factor is a power of the multiplier:\n\n$$\\frac{L(2x)}{L(x)} = 2^{r} = 4$$\n\n**2. Translate: the recorded run.** One measured point fixes the coefficient:\n\n$$A(30)^{2} = 180$$\n\n**Part 2: The model.**\n\n$$2^{r} = 4 \\tag{1}$$\n\n$$900A = 180 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equations (1) and (2) give the law:\n\n$$r = 2, \\qquad A = 0.2, \\qquad L(x) = 0.2x^{2}$$\n\n**2.** Scale factors follow from the exponent alone:\n\n$$3^{2} = 9, \\qquad \\left(\\tfrac{1}{2}\\right)^{2} = \\tfrac{1}{4}$$\n\n**3.** Invert the law at the alarm level:\n\n$$0.2x^{2} = 500 \\;\\Rightarrow\\; x^{2} = 2500 \\;\\Rightarrow\\; x = 50$$\n\n**4.** Place the recorded run against the alarm. The recorded load is a little over a third of the tripping level:\n\n$$\\frac{180}{500} = 36\\%$$\n\nIn job counts the same run sits much closer to the limit, at three fifths of the tripping volume:\n\n$$\\frac{30}{50} = 60\\%$$\n\nThe gap between those two percentages is the squaring at work: a run already past halfway in job count is still well below halfway in load.\n\n**5.** The elasticity is the exponent, constant at every job count:\n\n$$\\text{El}_{x}L = 2$$\n\n**Answer.** $r = 2$ | $A = 0.2$ | $L(x) = 0.2x^{2}$ | alarm at $x = 50$ jobs",
+    "expl_lens": [
+      643,
+      842,
+      766,
+      478,
+      2431
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-17",
+    "case_id": "MATH 8.17",
+    "title": "Survey Reach Against a Fieldwork Budget Cap",
+    "difficulty": "1/5",
+    "sort_order": 17,
+    "context": "Usable survey responses follow $Q(x)=A x^{0.5}$, where $x>0$ measures outreach intensity. When intensity was raised from $25$ to $100$, usable responses increased by exactly $60$. The fieldwork budget caps outreach intensity at $400$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The response law is $Q(x)=12\\sqrt{x}$.",
+      "The budget cap allows at most $240$ usable responses.",
+      "A target of $180$ usable responses requires intensity $225$, so it is affordable.",
+      "Multiplying intensity by $2.25$ multiplies usable responses by $1.5$.",
+      "Raising intensity from $64$ to $81$ raises usable responses by $12.5\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nNeither record reports a response level: the log gives the increase between two intensities, so the coefficient has to come out of a difference. The square-root factors there are exact:\n\n$$25^{0.5} = 5, \\qquad 100^{0.5} = 10$$\n\nThe coefficient is common to both endpoints, so it factors out of that increase:\n\n$$Q(100) - Q(25) = A(10) - A(5) = 5A$$\n\nOne division finishes the recovery:\n\n$$5A = 60 \\quad \\Rightarrow \\quad A = 12, \\qquad Q(x) = 12\\sqrt{x}$$\n\nSubstituting both endpoints checks the calibration:\n\n$$Q(25) = 60, \\qquad Q(100) = 120, \\qquad 120 - 60 = 60$$\n\nWriting $A\\sqrt{100} = 60$ instead reads the increase as a level at intensity $100$, giving $A = 6$. The recovered law is $Q(x) = 12\\sqrt{x}$, so the statement is True.",
+      "**B.** → True\n\nThe budget caps the input, not the output, so a ceiling on responses has to come from the model. The exponent $0.5$ is positive, so $Q$ is strictly increasing and the largest feasible response sits at the right-hand endpoint:\n\n$$0 < x \\le 400, \\qquad Q(x) = 12x^{0.5}$$\n\nEvaluating the calibrated law there:\n\n$$Q(400) = 12\\sqrt{400} = 12(20) = 240$$\n\nNothing inside the cap can beat it, as a point just short of it shows:\n\n$$Q(399) \\approx 12(19.975) \\approx 239.7 < 240$$\n\nTreating $400$ as a budget of responses skips the square root the model applies to intensity. The affordable maximum is $240$ usable responses, so the statement is True.",
+      "**C.** → True\n\nTwo things are asserted, an intensity and a verdict on affordability. Inverting the calibrated law strips the coefficient, then the square root:\n\n$$12\\sqrt{x} = 180 \\quad \\Rightarrow \\quad \\sqrt{x} = 15 \\quad \\Rightarrow \\quad x = 15^{2} = 225$$\n\nThe intensity goes against the budget, the target against the maximum:\n\n$$225 \\le 400, \\qquad 180 \\le 240$$\n\nStopping at $\\sqrt{x} = 15$ leaves the inversion half done. Both parts hold, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1:** Translate the difference rather than treating it as a level:\n\n$$A(\\sqrt{100}-\\sqrt{25})=60$$\n\n**Part 2:** Recover the model and its inverse:\n\n$$A=12, \\qquad Q(x)=12\\sqrt{x}, \\qquad x=\\left(\\frac{Q}{12}\\right)^2$$\n\n**Part 3:** Apply the cap, scale factors, and finite changes:\n\n$$Q(400)=240, \\quad Q=180\\Rightarrow x=225, \\quad (2.25)^{0.5}=1.5, \\quad \\frac{108-96}{96}=12.5\\%$$\n\nThis full reconstruction also supplies three safeguards: every substituted input stays in the stated domain, each numerical comparison uses the model's own units, and every percentage claim is checked through an exact output ratio before rounding. Those checks lead to the same truth value as the direct route above.",
+      "**D.** → True\n\nA scale effect on a power function with exponent $0.5$ is the square root of the input multiplier, and the coefficient cancels out of the ratio:\n\n$$\\frac{Q(2.25x)}{Q(x)} = \\frac{12(2.25x)^{0.5}}{12x^{0.5}} = (2.25)^{0.5}$$\n\nThe awkward-looking multiplier is a perfect square, so the root is exact rather than approximate:\n\n$$(2.25)^{0.5} = \\sqrt{\\frac{9}{4}} = \\frac{3}{2} = 1.5$$\n\nLevels reproduce the factor, starting from the calibration intensity:\n\n$$Q(100) = 120, \\qquad Q(225) = 12(15) = 180, \\qquad \\frac{180}{120} = 1.5$$\n\nMultiplying responses by $2.25$ would treat the law as linear, which the exponent forbids, and would put $270$ where the model puts $180$. A $2.25$-fold intensity change produces a $1.5$-fold response change, so the statement is True.",
+      "**E.** → True\n\nA finite percentage change is measured against the initial response, so both endpoints pass through the calibrated law first:\n\n$$Q(64) = 12(8) = 96, \\qquad Q(81) = 12(9) = 108, \\qquad \\frac{108 - 96}{96} = \\frac{1}{8} = 12.5\\%$$\n\nBoth intensities are perfect squares, so nothing rounds. The intensity itself rose by about $26.6\\%$, and the square root compresses that to under half. The response increase is exactly $12.5\\%$, so the statement is True."
+    ],
+    "solution_overview": "Responses follow $Q(x)=Ax^{0.5}$, calibrated by a $60$-response increase from intensity $25$ to $100$, with $x\\le400$.\n\n**Part 1:** Translate the difference rather than treating it as a level:\n\n$$A(\\sqrt{100}-\\sqrt{25})=60$$\n\n**Part 2:** Recover the model and its inverse:\n\n$$A=12, \\qquad Q(x)=12\\sqrt{x}, \\qquad x=\\left(\\frac{Q}{12}\\right)^2$$\n\n**Part 3:** Apply the cap, scale factors, and finite changes:\n\n$$Q(400)=240, \\quad Q=180\\Rightarrow x=225, \\quad (2.25)^{0.5}=1.5, \\quad \\frac{108-96}{96}=12.5\\%$$\n\n**Answer.** $A=12$ | ceiling $240$ responses | $180$ responses require intensity $225$",
+    "expl_lens": [
+      752,
+      658,
+      1423,
+      780,
+      466
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-18",
+    "case_id": "MATH 8.18",
+    "title": "Quadratic and Linear Inspection Costs That Meet Once",
+    "difficulty": "1/5",
+    "sort_order": 18,
+    "context": "Two inspection procedures are costed for a batch of $n>0$ documents. The automated procedure costs $C(n)=a n^{2}$ and the manual procedure costs $D(n)=b n$. Records show that on a batch of $20$ documents the two procedures cost the same, $400$ each. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The automated procedure is cheaper than the manual one at every batch below $20$ documents.",
+      "At $n=25$ the two procedures differ by less than $100$.",
+      "For $n>0$ the two procedures cost the same only at $n=20$.",
+      "Doubling the batch doubles the gap between the two costs.",
+      "The automated procedure's cost per document is constant."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA claim about every batch below $20$ documents needs an inequality rather than a spot check, and both coefficients follow from the shared cost at $n=20$:\n\n$$a(20)^{2} = 400 \\;\\Rightarrow\\; a = 1, \\qquad b(20) = 400 \\;\\Rightarrow\\; b = 20$$\n\nSince $n>0$, the common factor $n$ divides out and the comparison reduces to one condition:\n\n$$n^{2} < 20n \\quad \\Longleftrightarrow \\quad n < 20 \\qquad (n>0)$$\n\nWhat remains describes exactly the interval in the claim, and a check inside it agrees:\n\n$$C(10) = 100 < 200 = D(10)$$\n\nThe automated procedure is cheaper across the whole interval, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $n$ = documents in the batch, $C$ = automated cost, $D$ = manual cost. The single shared observation gives one equation for each coefficient, because it applies to both procedures at once.\n\n**1. Translate: the automated cost at $n=20$.**\n\n$$a(20)^{2} = 400$$\n\n**2. Translate: the manual cost at $n=20$.**\n\n$$b(20) = 400$$\n\n**Part 2: The model.**\n\n$$C(n) = n^{2} \\tag{1}$$\n\n$$D(n) = 20n \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The coefficients come straight out of the shared observation:\n\n$$a = 1, \\qquad b = 20$$\n\n**2.** Find every crossing on the stated domain:\n\n$$n^{2} = 20n \\;\\Rightarrow\\; n(n-20) = 0 \\;\\Rightarrow\\; n = 20 \\quad (n = 0 \\text{ excluded})$$\n\n**3.** Order the two procedures on each side of that single crossing:\n\n$$n < 20 \\;\\Rightarrow\\; C < D, \\qquad n > 20 \\;\\Rightarrow\\; C > D$$\n\n**4.** The gap is not a power function, and it grows far faster than the batch:\n\n$$C(n) - D(n) = n(n-20), \\qquad 125 \\text{ at } n=25, \\qquad 1500 \\text{ at } n=50$$\n\n**5.** Unit costs separate the two shapes cleanly:\n\n$$\\frac{C(n)}{n} = n \\text{ (rising)}, \\qquad \\frac{D(n)}{n} = 20 \\text{ (constant)}$$",
+      "**B.** → False\n\nPast the crossing point the two costs separate, and the gap at a given batch is the difference of the two calibrated totals:\n\n$$C(25) = 25^{2} = 625, \\qquad D(25) = 20(25) = 500$$\n\n$$625 - 500 = 125 > 100$$\n\nFive documents past the meeting point sounds negligible, but the gap equals $n(n-20)$, so it grows with both the distance past $20$ and the batch size itself. The difference is $125$, above the threshold in the claim, so the statement is False.",
+      "**C.** → True\n\nA parabola through the origin and a line through the origin can meet at most twice, so equality of the two costs is a quadratic with at most two roots:\n\n$$n^{2} = 20n \\quad \\Rightarrow \\quad n(n - 20) = 0$$\n\nOne of those meetings is the origin, which the stated domain removes:\n\n$$n = 0 \\text{ (excluded)}, \\qquad n = 20$$\n\nDividing through by $n$ reaches the same place, provided the division is justified by $n>0$. Only $n=20$ survives on the domain, so the statement is True.",
+      "**D.** → False\n\nThe difference of two power functions is not itself a power function, so it carries no scale factor at all:\n\n$$C(n) - D(n) = n^{2} - 20n = n(n-20)$$\n\nEach cost taken alone does scale cleanly, the automated total quadrupling and the manual total doubling, but the gap between them behaves differently:\n\n$$25(5) = 125, \\qquad 50(30) = 1500$$\n\n$$\\frac{1500}{125} = 12$$\n\nDoubling the batch from $25$ to $50$ multiplies the gap twelvefold rather than twofold, so the statement is False.",
+      "**E.** → False\n\nConstant unit cost is the signature of an exponent of $1$, so dividing each total by the batch size shows which procedure has it:\n\n$$\\frac{C(n)}{n} = \\frac{n^{2}}{n} = n, \\qquad \\frac{D(n)}{n} = \\frac{20n}{n} = 20$$\n\nThe flat rate of $20$ per document belongs to the manual route; the automated law keeps exponent $1$ after the division, so its unit cost climbs:\n\n$$\\frac{C(10)}{10} = 10, \\qquad \\frac{C(30)}{30} = 30$$\n\nThe automated cost per document triples between those batches, so the statement is False."
+    ],
+    "solution_overview": "Two procedures cost $C(n)=an^{2}$ and $D(n)=bn$ for a batch of $n>0$ documents, and both cost $400$ on a batch of $20$.\n\n**Part 1: Building the model.**\n\nLet $n$ = documents in the batch, $C$ = automated cost, $D$ = manual cost. The single shared observation gives one equation for each coefficient, because it applies to both procedures at once.\n\n**1. Translate: the automated cost at $n=20$.**\n\n$$a(20)^{2} = 400$$\n\n**2. Translate: the manual cost at $n=20$.**\n\n$$b(20) = 400$$\n\n**Part 2: The model.**\n\n$$C(n) = n^{2} \\tag{1}$$\n\n$$D(n) = 20n \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The coefficients come straight out of the shared observation:\n\n$$a = 1, \\qquad b = 20$$\n\n**2.** Find every crossing on the stated domain:\n\n$$n^{2} = 20n \\;\\Rightarrow\\; n(n-20) = 0 \\;\\Rightarrow\\; n = 20 \\quad (n = 0 \\text{ excluded})$$\n\n**3.** Order the two procedures on each side of that single crossing:\n\n$$n < 20 \\;\\Rightarrow\\; C < D, \\qquad n > 20 \\;\\Rightarrow\\; C > D$$\n\n**4.** The gap is not a power function, and it grows far faster than the batch:\n\n$$C(n) - D(n) = n(n-20), \\qquad 125 \\text{ at } n=25, \\qquad 1500 \\text{ at } n=50$$\n\n**5.** Unit costs separate the two shapes cleanly:\n\n$$\\frac{C(n)}{n} = n \\text{ (rising)}, \\qquad \\frac{D(n)}{n} = 20 \\text{ (constant)}$$\n\n**Answer.** $C(n) = n^{2}$ | $D(n) = 20n$ | single crossing at $n = 20$ costing $400$",
+    "expl_lens": [
+      2014,
+      468,
+      493,
+      498,
+      526
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-19",
+    "case_id": "MATH 8.19",
+    "title": "Warehouse Throughput With a Contractual Ceiling",
+    "difficulty": "2/5",
+    "sort_order": 19,
+    "context": "Warehouse throughput follows $H(s)=A s^{0.6}$ pallets per hour, where $s>0$ is the number of staff on shift. A shift with $32$ staff moved $96$ pallets per hour. The service contract caps billed throughput at $300$ pallets per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the throughput law is $A=8$.",
+      "The model reaches $300$ pallets per hour at about $214$ staff.",
+      "Doubling the headcount raises throughput by between $55\\%$ and $60\\%$.",
+      "The contract ceiling is reached at about $250$ staff.",
+      "Throughput per staff member rises as headcount rises."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nRecovering a coefficient takes two steps: evaluate the shape factor at the recorded shift, then divide the recorded throughput by it. Because $0.6=\\frac{3}{5}$ and $32=2^{5}$, the first step is exact:\n\n$$32^{0.6} = \\left(2^{5}\\right)^{\\frac{3}{5}} = 2^{3} = 8$$\n\n$$8A = 96 \\quad \\Rightarrow \\quad A = 12, \\qquad H(s) = 12 s^{0.6}$$\n\nThe value $8$ is the shape factor, and reporting it as the coefficient leaves the easy division undone; $A=8$ would predict only $64$ pallets per hour on the recorded shift. The coefficient is $12$, so the statement is False.",
+      "**B.** → True\n\nReaching a target throughput inverts the calibrated law $H(s)=12s^{0.6}$ rather than substituting into it, so the coefficient comes off first:\n\n$$12s^{0.6}=300 \\quad\\Rightarrow\\quad s^{0.6}=25$$\n\nUndoing an exponent of $0.6$ means raising both sides to the reciprocal power $\\frac{5}{3}$:\n\n$$s=25^{\\frac{1}{0.6}}=25^{\\frac{5}{3}}\\approx213.75$$\n\nScaling headcount in proportion to throughput would land far lower, since an exponent below $1$ makes staff grow faster than output. The continuous model reaches the ceiling at about $214$ staff, so the statement is True.",
+      "**C.** → False\n\nDoubling headcount multiplies throughput by the exact scale factor $2^{0.6}$, with the coefficient cancelling in the ratio:\n\n$$\\frac{H(2s)}{H(s)}=2^{0.6}\\approx1.5157$$\n\nA percentage gain is that factor minus one:\n\n$$(1.5157-1)\\times100\\%\\approx51.6\\%$$\n\nThe exponent $0.6$ is not itself a percentage response, and the band in the claim is roughly what reading it that way would suggest. The increase is about $51.6\\%$, outside that band, so the statement is False.",
+      "**D.** → False\n\nThe contract ceiling is a throughput, so the headcount behind it comes from inverting the calibrated law:\n\n$$12s^{0.6} = 300 \\quad \\Rightarrow \\quad s^{0.6} = 25$$\n\nUndoing an exponent of $0.6$ raises both sides to the reciprocal power $\\frac{5}{3}$:\n\n$$s = 25^{\\frac{5}{3}} = 5^{\\frac{10}{3}} = 5^{3} \\times 5^{\\frac{1}{3}} \\approx 125 \\times 1.710 \\approx 213.7$$\n\nThe headcount named in the claim overshoots the ceiling rather than reaching it:\n\n$$H(250) \\approx 12 \\times 27.46 \\approx 329.6 > 300$$\n\n$$H(214) \\approx 12 \\times 25.02 \\approx 300.3$$\n\nA proportional estimate from the recorded shift lands far short, and the reciprocal exponent $\\frac{5}{3}$ is what corrects it. The ceiling binds near $214$ staff, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $s$ = staff on shift and $H(s)$ = pallets per hour. The exponent is given, so one measured shift is enough to pin the coefficient; the contract ceiling then has to be inverted back into a headcount.\n\n**1. Translate: the recorded shift.** Both $32$ and the exponent are powers of small integers, so the shape factor is exact:\n\n$$32^{0.6} = \\left(2^{5}\\right)^{\\frac{3}{5}} = 8, \\qquad 8A = 96$$\n\n**2. Translate: the contract ceiling.** Billed throughput cannot exceed $300$:\n\n$$12 s^{0.6} \\le 300$$\n\n**Part 2: The model.**\n\n$$H(s) = 12 s^{0.6} \\tag{1}$$\n\n$$s^{0.6} \\le 25 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The coefficient follows from the recorded shift:\n\n$$A = 12$$\n\n**2.** Levels at exact fifth powers stay clean:\n\n$$H(243) = 12 \\times 3^{3} = 324$$\n\n**3.** Scale factors show the diminishing returns:\n\n$$2^{0.6} \\approx 1.516 \\quad (+52\\%), \\qquad \\left(\\tfrac{243}{32}\\right)^{0.6} = 3.375$$\n\n**4.** Invert (2) by raising to the power $\\frac{5}{3}$:\n\n$$s = 25^{\\frac{5}{3}} = 5^{\\frac{10}{3}} \\approx 213.8$$\n\n**5.** The derived average turns the exponent negative, so bigger shifts are less productive per head:\n\n$$\\frac{H(s)}{s} = 12 s^{-0.4}, \\qquad 3 \\text{ at } s=32, \\qquad 1.33 \\text{ at } s=243$$",
+      "**E.** → False\n\nThroughput per staff member is a derived power function, obtained by dividing the law by headcount and lowering the exponent by one:\n\n$$\\frac{H(s)}{s} = \\frac{12 s^{0.6}}{s} = 12 s^{-0.4}$$\n\nThe exponent is negative, so the average declines even while the total keeps rising:\n\n$$\\frac{H(32)}{32} = \\frac{96}{32} = 3, \\qquad \\frac{H(243)}{243} = \\frac{324}{243} \\approx 1.33$$\n\nAdding staff always lifts total pallets, but each extra worker contributes less than the one before, which is what the average records. Throughput per head falls from $3$ to about $1.33$, so the statement is False."
+    ],
+    "solution_overview": "Throughput follows $H(s)=As^{0.6}$ pallets per hour for $s$ staff. A $32$-staff shift moved $96$ pallets per hour, and the contract caps billed throughput at $300$.\n\n**Part 1: Building the model.**\n\nLet $s$ = staff on shift and $H(s)$ = pallets per hour. The exponent is given, so one measured shift is enough to pin the coefficient; the contract ceiling then has to be inverted back into a headcount.\n\n**1. Translate: the recorded shift.** Both $32$ and the exponent are powers of small integers, so the shape factor is exact:\n\n$$32^{0.6} = \\left(2^{5}\\right)^{\\frac{3}{5}} = 8, \\qquad 8A = 96$$\n\n**2. Translate: the contract ceiling.** Billed throughput cannot exceed $300$:\n\n$$12 s^{0.6} \\le 300$$\n\n**Part 2: The model.**\n\n$$H(s) = 12 s^{0.6} \\tag{1}$$\n\n$$s^{0.6} \\le 25 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The coefficient follows from the recorded shift:\n\n$$A = 12$$\n\n**2.** Levels at exact fifth powers stay clean:\n\n$$H(243) = 12 \\times 3^{3} = 324$$\n\n**3.** Scale factors show the diminishing returns:\n\n$$2^{0.6} \\approx 1.516 \\quad (+52\\%), \\qquad \\left(\\tfrac{243}{32}\\right)^{0.6} = 3.375$$\n\n**4.** Invert (2) by raising to the power $\\frac{5}{3}$:\n\n$$s = 25^{\\frac{5}{3}} = 5^{\\frac{10}{3}} \\approx 213.8$$\n\n**5.** The derived average turns the exponent negative, so bigger shifts are less productive per head:\n\n$$\\frac{H(s)}{s} = 12 s^{-0.4}, \\qquad 3 \\text{ at } s=32, \\qquad 1.33 \\text{ at } s=243$$\n\n**Answer.** $A = 12$ | $H(s) = 12s^{0.6}$ | ceiling binds at $s \\approx 214$ staff",
+    "expl_lens": [
+      574,
+      582,
+      481,
+      2252,
+      607
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-20",
+    "case_id": "MATH 8.20",
+    "title": "Response Time Recovered from a Server Upgrade",
+    "difficulty": "2/5",
+    "sort_order": 20,
+    "context": "A service's median response time follows $W(k)=A k^{-1.5}$ milliseconds, where $k>0$ is the number of servers. The upgrade log does not state $A$: it records only that moving from $4$ servers to $9$ servers cut the median response time by exactly $19$ ms. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "With four servers the median response time is $27$ ms.",
+      "With nine servers the median response time is $8$ ms.",
+      "Doubling the server count cuts the median response time by about $65\\%$.",
+      "A median response time of $1$ ms requires $36$ servers.",
+      "The model reaches a median response time of $2$ ms at about $22.7$ servers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe upgrade log records a reduction rather than a level, so the coefficient has to be reconstructed from the difference between two response times. Both server counts are perfect squares, which keeps the negative fractional powers exact:\n\n$$4^{-1.5} = \\frac{1}{4^{1.5}} = \\frac{1}{8}, \\qquad 9^{-1.5} = \\frac{1}{27}$$\n\nWith a negative exponent the smaller fleet carries the larger response time, so the recorded cut is the four-server value minus the nine-server value:\n\n$$A\\left(\\frac{1}{8} - \\frac{1}{27}\\right) = 19 \\quad \\Rightarrow \\quad A \\cdot \\frac{19}{216} = 19 \\quad \\Rightarrow \\quad A = 216$$\n\n$$W(4) = \\frac{216}{8} = 27$$\n\nThe four-server median is $27$ ms, so the statement is True.",
+      "**B.** → True\n\nThe other end of the upgrade is a direct evaluation of the calibrated law:\n\n$$W(9) = \\frac{216}{27} = 8$$\n\nAny candidate coefficient has to reproduce the logged cut of $19$ ms between the two configurations, and this one does:\n\n$$27 - 8 = 19$$\n\nThe two medians are $27=3^{3}$ and $8=2^{3}$, mirroring the counts $9=3^{2}$ and $4=2^{2}$ through the exponent $-1.5$. The nine-server median is $8$ ms, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $k$ = servers and $W(k)$ = median response time in milliseconds. The exponent is given and negative, and the only observation is a *difference* between two response times, so the coefficient must be recovered from that difference.\n\n**1. Translate: the two shape factors.** Both server counts are perfect squares, so the powers are exact fractions:\n\n$$4^{-1.5} = \\frac{1}{8}, \\qquad 9^{-1.5} = \\frac{1}{27}$$\n\n**2. Translate: the recorded cut.** The smaller fleet has the larger response time:\n\n$$A\\left(\\frac{1}{8} - \\frac{1}{27}\\right) = 19$$\n\n**Part 2: The model.**\n\n$$W(k) = A k^{-1.5} \\tag{1}$$\n\n$$A \\cdot \\frac{19}{216} = 19 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (2) gives the coefficient in one step:\n\n$$A = 216, \\qquad W(k) = 216 k^{-1.5}$$\n\n**2.** Check both logged configurations:\n\n$$W(4) = 27, \\qquad W(9) = 8, \\qquad 27 - 8 = 19$$\n\n**3.** Scale factors are below $1$ because the exponent is negative:\n\n$$\\frac{W(2k)}{W(k)} = 2^{-1.5} \\approx 0.354 \\quad \\Rightarrow \\quad \\text{a cut of about } 65\\%$$\n\n**4.** Invert the law to turn a latency target into a fleet size:\n\n$$k = \\left(\\frac{216}{W}\\right)^{\\frac{2}{3}}, \\qquad W = 1 \\;\\Rightarrow\\; k = 216^{\\frac{2}{3}} = 36$$\n\n**5.** The negative exponent also fixes the qualitative picture: response time falls throughout, but with ever smaller gains per added server.",
+      "**C.** → True\n\nA scale factor holds at any fleet size, and with a negative exponent it is a surviving fraction rather than a growth factor:\n\n$$\\frac{W(2k)}{W(k)} = 2^{-1.5} = \\frac{1}{2\\sqrt{2}} \\approx 0.3536$$\n\nThe cut is one minus that fraction, not the fraction itself:\n\n$$1 - 0.3536 = 0.6464 \\approx 65\\%$$\n\nConcrete fleets confirm the multiplier:\n\n$$W(4) = 27, \\qquad W(8) = \\frac{216}{8^{1.5}} = \\frac{216}{22.63} \\approx 9.55, \\qquad \\frac{9.55}{27} \\approx 0.354$$\n\nDoubling the server count cuts the median by about $65\\%$, so the statement is True.",
+      "**D.** → True\n\nInverting a law with a negative exponent moves the power to the other side and flips its sign, which turns the target into a positive root:\n\n$$216 k^{-1.5} = 1 \\quad \\Rightarrow \\quad k^{1.5} = 216$$\n\n$$k = 216^{\\frac{2}{3}} = \\left(6^{3}\\right)^{\\frac{2}{3}} = 6^{2} = 36$$\n\nRaising to $\\frac{-2}{3}$ instead of $\\frac{2}{3}$ is the slip that the sign flip prevents. Substitution confirms the fleet size:\n\n$$W(36) = \\frac{216}{36^{1.5}} = \\frac{216}{216} = 1$$\n\nCutting the median from $8$ ms to $1$ ms takes four times the nine-server fleet, exactly $36$ servers, so the statement is True.",
+      "**E.** → True\n\nA target median inverts the calibrated law $W(k)=216k^{-1.5}$: the coefficient comes off first, and the negative power flips to leave a positive root to take.\n\n$$216k^{-1.5}=2 \\quad\\Rightarrow\\quad k^{1.5}=108$$\n\n$$k=108^{\\frac{2}{3}}\\approx22.68$$\n\nThe reciprocal exponent is $\\frac{2}{3}$ rather than $1.5$, so scaling the fleet by the ratio of the two times would overshoot badly. The continuous model reaches $2$ ms at about $22.7$ servers, so the statement is True."
+    ],
+    "solution_overview": "Median response time follows $W(k)=Ak^{-1.5}$ ms for $k$ servers. Moving from $4$ to $9$ servers cut the median by exactly $19$ ms.\n\n**Part 1: Building the model.**\n\nLet $k$ = servers and $W(k)$ = median response time in milliseconds. The exponent is given and negative, and the only observation is a *difference* between two response times, so the coefficient must be recovered from that difference.\n\n**1. Translate: the two shape factors.** Both server counts are perfect squares, so the powers are exact fractions:\n\n$$4^{-1.5} = \\frac{1}{8}, \\qquad 9^{-1.5} = \\frac{1}{27}$$\n\n**2. Translate: the recorded cut.** The smaller fleet has the larger response time:\n\n$$A\\left(\\frac{1}{8} - \\frac{1}{27}\\right) = 19$$\n\n**Part 2: The model.**\n\n$$W(k) = A k^{-1.5} \\tag{1}$$\n\n$$A \\cdot \\frac{19}{216} = 19 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (2) gives the coefficient in one step:\n\n$$A = 216, \\qquad W(k) = 216 k^{-1.5}$$\n\n**2.** Check both logged configurations:\n\n$$W(4) = 27, \\qquad W(9) = 8, \\qquad 27 - 8 = 19$$\n\n**3.** Scale factors are below $1$ because the exponent is negative:\n\n$$\\frac{W(2k)}{W(k)} = 2^{-1.5} \\approx 0.354 \\quad \\Rightarrow \\quad \\text{a cut of about } 65\\%$$\n\n**4.** Invert the law to turn a latency target into a fleet size:\n\n$$k = \\left(\\frac{216}{W}\\right)^{\\frac{2}{3}}, \\qquad W = 1 \\;\\Rightarrow\\; k = 216^{\\frac{2}{3}} = 36$$\n\n**5.** The negative exponent also fixes the qualitative picture: response time falls throughout, but with ever smaller gains per added server.\n\n**Answer.** $A = 216$ | $W(k) = 216k^{-1.5}$ | $W(4)=27$ ms, $W(9)=8$ ms | $1$ ms needs $36$ servers",
+    "expl_lens": [
+      712,
+      2058,
+      559,
+      606,
+      485
+    ],
+    "has_extended": true
+  }
+]

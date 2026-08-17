@@ -1,0 +1,170 @@
+[
+  {
+    "id": "math-11-1",
+    "caseId": "MATH 11.01",
+    "title": "Nominal Rate vs. Effective Rate on a Business Account",
+    "subsection": "11.1",
+    "min_chars": 838,
+    "text": "A print shop owner deposits \\$6,000 into a business savings account offering a nominal annual rate of 7.20%, compounded monthly.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$6,000$\r\n\r\nNominal annual rate $r = 7.20\\% = 0.072$\r\n\r\nCompounding frequency $n = 12$ (monthly)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nMonthly periodic rate $i_m = r/12$\r\n\r\nEffective annual rate $R = (1+i_m)^{12} - 1$\r\n\r\nFuture value $FV = P(1+R)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.072/12 = 0.006 = 0.60\\%$.\r\n\r\n**2.** $R = (1.006)^{12} - 1 \\approx 1.074424 - 1 = 0.074424 \\approx 7.44\\%$.\r\n\r\n**3.** $FV = 6,000 \\times 1.074424 = \\$6,446.54$.\r\n\r\n**4.** Annual compounding ($n = 1$) gives $R = 7.20\\%$ (the nominal rate), which is lower than $7.44\\%$, not higher.\r\n\r\n**5.** Gap: $7.44\\% - 7.20\\% = 0.24$ percentage points, which is far less than $1.00$ point."
+  },
+  {
+    "id": "math-11-2",
+    "caseId": "MATH 11.02",
+    "title": "Multi-Year Growth Under Quarterly Compounding",
+    "subsection": "11.1",
+    "min_chars": 946,
+    "text": "A deposit of \\$6,000 is put into an account earning interest at the annual rate of 8%, with interest paid quarterly. The owner wants to know how much will be in the account after 6 years.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$6,000$\r\n\r\nNominal annual rate $r = 8\\% = 0.08$\r\n\r\nCompounding frequency $n = 4$ (quarterly)\r\n\r\nTime $t = 6$ years\r\n\r\n**Part 2: Formula.**\r\n\r\nPeriodic rate: $r/n$\r\n\r\nFuture value $S(t) = S_0(1+r/n)^{nt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.08/4 = 0.02 = 2.00\\%$; $nt = 4 \\times 6 = 24$.\r\n\r\n**2.** $S(6) = 6,000 \\times (1.02)^{24} \\approx 6,000 \\times 1.608435 = \\$9,650.61$ (not $\\$9,860.00$).\r\n\r\n**3.** Compound growth is exponential, not linear, in time: $(1.02)^{12} \\approx 1.268242$, so the $3$-year value would be about $\\$7,609.45$, which is NOT half of $\\$9,650.61$ (half would be $\\$4,825.31$).\r\n\r\n**4.** Total growth: $(9,650.61 - 6,000)/6,000 \\approx 0.6084 = 60.84\\%$, which is not more than $65\\%$."
+  },
+  {
+    "id": "math-11-3",
+    "caseId": "MATH 11.03",
+    "title": "Which Savings Offer Is Better?",
+    "subsection": "11.1",
+    "min_chars": 1042,
+    "text": "A saver has \\$10,000 and is comparing two one-year term deposits: Offer (i) 6.4% with interest paid quarterly; Offer (ii) 6.5% with interest paid twice a year.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$10,000$\r\n\r\nOffer (i): $r = 6.4\\%$, $n = 4$ (quarterly)\r\n\r\nOffer (ii): $r = 6.5\\%$, $n = 2$ (semi-annual)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\nFuture value $FV = P(1+R)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Offer (i) periodic rate: $0.064/4 = 0.016$.\r\n\r\n**2.** $R_i = (1.016)^{4} - 1 \\approx 1.065533 - 1 = 0.065533 \\approx 6.55\\%$.\r\n\r\n**3.** Offer (ii) periodic rate: $0.065/2 = 0.0325$.\r\n\r\n**4.** $R_{ii} = (1.0325)^{2} - 1 = 1.066056 - 1 = 0.066056 \\approx 6.61\\%$.\r\n\r\n**5.** Since $R_{ii} \\approx 6.61\\% > R_i \\approx 6.55\\%$, Offer (ii) is the better deal for the saver, despite compounding less often.\r\n\r\n**6.** Interest for Offer (i): $10,000 \\times 0.065533 = \\$655.33$.\r\n\r\n**7.** Interest for Offer (ii): $10,000 \\times 0.066056 = \\$660.56$.\r\n\r\n**8.** Difference: $\\approx \\$5.23$ to $\\$5.24$."
+  },
+  {
+    "id": "math-11-4",
+    "caseId": "MATH 11.04",
+    "title": "Credit Card Interest - Monthly Rate to Effective Annual Rate",
+    "subsection": "11.1",
+    "min_chars": 859,
+    "text": "A retail credit card charges interest on any outstanding balance at a rate of 1.75% per month.\r\n\r\n**Part 1: Setup.**\r\n\r\nMonthly periodic rate: $i_m = 1.75\\% = 0.0175$\r\n\r\nMonths per year: $n = 12$\r\n\r\n**Part 2: Formula.**\r\n\r\nNominal annual rate: $12 i_m$\r\n\r\nEffective annual rate $R = (1 + i_m)^{12} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Nominal annual rate: $12 \\times 1.75\\% = 21.00\\%$ (not $22.00\\%$).\r\n\r\n**2.** $R = (1.0175)^{12} - 1 \\approx 1.231430 - 1 = 0.231430 \\approx 23.14\\%$ (not $21.75\\%$).\r\n\r\n**3.** $FV$ of $\\$2,000$ unpaid for $1$ year: $2,000 \\times 1.231430 = \\$2,462.86$ (not $\\$2,420.00$).\r\n\r\n**4.** Gap: $23.14\\% - 21.00\\% = 2.14$ percentage points, which is indeed more than $2.00$ percentage points.\r\n\r\n**5.** At a $1.50\\%$ monthly rate: $R = (1.015)^{12} - 1 \\approx 1.195625 - 1 = 0.195625 \\approx 19.56\\%$, which does NOT exceed $20\\%$."
+  },
+  {
+    "id": "math-11-5",
+    "caseId": "MATH 11.05",
+    "title": "Quarterly Compounding on a Business Deposit",
+    "subsection": "11.1",
+    "min_chars": 892,
+    "text": "A veterinary clinic deposits \\$15,000 into a one-year business account earning a nominal annual rate of 5.6%, compounded quarterly.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$15,000$\r\n\r\nNominal annual rate $r = 5.6\\% = 0.056$\r\n\r\nCompounding frequency $n = 4$ (quarterly)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nPeriodic rate: $r/n$\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\nFuture value $FV = P(1+R)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.056/4 = 0.014 = 1.40\\%$.\r\n\r\n**2.** $R = (1.014)^{4} - 1 \\approx 1.057187 - 1 = 0.057187 \\approx 5.72\\%$.\r\n\r\n**3.** $FV = 15,000 \\times 1.057187 = \\$15,857.81$.\r\n\r\n**4.** Monthly compounding of the same $5.6\\%$ nominal rate gives a slightly higher EAR ($\\approx 5.746\\%$), not lower — more frequent compounding always raises EAR.\r\n\r\n**5.** Gap: $5.7187\\% - 5.60\\% \\approx 0.12$ percentage points, which is less than $0.20$ percentage points."
+  },
+  {
+    "id": "math-11-6",
+    "caseId": "MATH 11.06",
+    "title": "How Long to Double at 7.2% Compounded Monthly?",
+    "subsection": "11.1",
+    "min_chars": 1041,
+    "text": "A savings account earns a nominal annual rate of $7.2\\%$, compounded monthly. An investor wants to know how long it will take for a deposit to double in value.\r\n\r\n**Part 1: Setup.**\r\n\r\nNominal annual rate $r = 7.2\\% = 0.072$; compounding frequency $n = 12$ (monthly); target: double the principal.\r\n\r\n**Part 2: Formula.**\r\n\r\nMonthly periodic rate $i_m = r/12$; growth condition $(1+i_m)^{t} = M$; solve $t = \\ln M / \\ln(1+i_m)$.\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.072/12 = 0.006 = 0.60\\%$.\r\n\r\n**2.** Solve $(1.006)^{t} = 2$: $t = \\ln 2/\\ln 1.006 \\approx 0.693147/0.0059821 \\approx 115.85$ months $\\approx 9.65$ years (not $108$ months).\r\n\r\n**3.** $115.85$ months is not $58$ months; doubling time does not split that way along the exponential curve.\r\n\r\n**4.** At $14.4\\%$ nominal monthly, $R = (1.012)^{12}-1 \\approx 15.38\\%$, but double the original $7.44\\%$ EAR would be $14.88\\%$ — doubling the nominal rate does not exactly double the EAR.\r\n\r\n**5.** The same $t = \\ln(M)/\\ln(1+i)$ method works for any target multiple $M$."
+  },
+  {
+    "id": "math-11-7",
+    "caseId": "MATH 11.07",
+    "title": "Comparing Compounding Frequencies at a Fixed Nominal Rate",
+    "subsection": "11.1",
+    "min_chars": 1022,
+    "text": "A finance student is asked to compute the effective yearly rate corresponding to a nominal annual interest rate of 15%, with interest added twice a year, each quarter, and each month.\r\n\r\n**Part 1: Setup.**\r\n\r\nNominal annual rate $r = 15\\% = 0.15$\r\n\r\n$n = 2$ (semi-annual), $n = 4$ (quarterly), $n = 12$ (monthly)\r\n\r\n**Part 2: Formula.**\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Semi-annual: $R = (1.075)^{2} - 1 = 1.155625 - 1 = 0.155625 \\approx 15.56\\%$.\r\n\r\n**2.** Quarterly: $R = (1.0375)^{4} - 1 \\approx 1.158650 - 1 = 0.158650 \\approx 15.87\\%$.\r\n\r\n**3.** Monthly: $R = (1.0125)^{12} - 1 \\approx 1.160766 - 1 = 0.160766 \\approx 16.08\\%$.\r\n\r\n**4.** Ranking confirms $15.56\\% < 15.87\\% < 16.08\\%$ as compounding frequency increases.\r\n\r\n**5.** First gap: $15.87\\% - 15.56\\% = 0.31$ points; second gap: $16.08\\% - 15.87\\% = 0.21$ points.\r\n\r\n**6.** The first gap is actually LARGER than the second, not smaller — each additional increase in frequency adds progressively less to the EAR."
+  },
+  {
+    "id": "math-11-8",
+    "caseId": "MATH 11.08",
+    "title": "A Ten-Year Deposit Under Monthly Compounding",
+    "subsection": "11.1",
+    "min_chars": 963,
+    "text": "A grandparent deposits \\$4,000 into a trust account for a grandchild, earning a nominal annual rate of 6%, compounded monthly, for 10 years.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$4,000$\r\n\r\nNominal annual rate $r = 6\\% = 0.06$\r\n\r\nCompounding frequency $n = 12$ (monthly)\r\n\r\nTime $t = 10$ years\r\n\r\n**Part 2: Formula.**\r\n\r\nFuture value $S(t) = S_0(1+r/n)^{nt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.06/12 = 0.005 = 0.50\\%$; $nt = 12 \\times 10 = 120$.\r\n\r\n**2.** $S(10) = 4,000 \\times (1.005)^{120} \\approx 4,000 \\times 1.8194 = \\$7,277.60$.\r\n\r\n**3.** Growth factor is $1.8194$, not $2.0$, so the deposit has NOT quite doubled after $10$ years (it would take about $11.6$ years to fully double at this rate).\r\n\r\n**4.** Annual compounding ($n = 1$): $S(10) = 4,000 \\times (1.06)^{10} = 4,000 \\times 1.790847 = \\$7,163.39$, which is LESS than $\\$7,277.60$, not more, since less frequent compounding always yields a smaller future value for the same nominal rate."
+  },
+  {
+    "id": "math-11-9",
+    "caseId": "MATH 11.09",
+    "title": "What Rate Is Needed to Grow \\\\$50,000 to \\\\$80,000 in 8 Years?",
+    "subsection": "11.1",
+    "min_chars": 1124,
+    "text": "An investment fund wants to grow \\$50,000 into \\$80,000 over 8 years, with interest compounded quarterly. The fund manager needs to find the required nominal annual rate.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$50,000$\r\n\r\nTarget $S(t) = \\$80,000$\r\n\r\n$n = 4$ (quarterly)\r\n\r\n$t = 8$ years, so $nt = 32$\r\n\r\n**Part 2: Formula.**\r\n\r\n$S(t) = S_0(1+r/n)^{nt}$\r\n\r\nSolve for rate: $r = n[(S(t)/S_0)^{1/(nt)} - 1]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $(1 + r/4)^{32} = 80,000/50,000 = 1.6$, so $1 + r/4 = (1.6)^{1/32} \\approx 1.014796$, giving $r \\approx 4 \\times 0.014796 \\approx 0.05918 \\approx 5.92\\%$.\r\n\r\n**2.** Quarterly periodic rate: $5.92\\%/4 \\approx 1.48\\%$.\r\n\r\n**3.** A shorter time horizon ($4$ years instead of $8$) to reach the same growth factor of $1.6$ requires a HIGHER rate, not a lower one, since less time demands faster growth.\r\n\r\n**4.** Monthly compounding is more frequent than quarterly, so it needs a LOWER nominal rate, not a higher one, to reach the same $1.6$ growth factor over the same $8$ years.\r\n\r\n**5.** Growth: $(80,000 - 50,000)/50,000 = 30,000/50,000 = 0.60 = 60.00\\%$ exactly, which is not more than $65\\%$."
+  },
+  {
+    "id": "math-11-10",
+    "caseId": "MATH 11.10",
+    "title": "Which Terms Are Better for a Borrower?",
+    "subsection": "11.1",
+    "min_chars": 946,
+    "text": "A borrower is comparing two loan terms: option (a) a nominal annual rate of 10.80%, with interest paid annually; option (b) a nominal annual rate of 10.40%, with interest paid quarterly.\r\n\r\n**Part 1: Setup.**\r\n\r\nOption (a): $r = 10.80\\%$, $n = 1$ (annual)\r\n\r\nOption (b): $r = 10.40\\%$, $n = 4$ (quarterly)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Option (a): with $n = 1$, $R_a = 10.80\\%$ (the nominal rate) exactly.\r\n\r\n**2.** Option (b) periodic rate: $0.104/4 = 0.026$.\r\n\r\n**3.** $R_b = (1.026)^{4} - 1 \\approx 1.108127 - 1 = 0.108127 \\approx 10.81\\%$.\r\n\r\n**4.** Since $R_b \\approx 10.81\\%$ is very slightly higher than $R_a = 10.80\\%$, option (a) is actually marginally cheaper for the borrower, even though its quoted nominal rate is higher.\r\n\r\n**5.** Difference: $10.8127\\% - 10.80\\% \\approx 0.013$ percentage points, which is less than $0.05$ percentage points."
+  },
+  {
+    "id": "math-11-11",
+    "caseId": "MATH 11.11",
+    "title": "How Much Was Deposited 6 Years Ago?",
+    "subsection": "11.1",
+    "min_chars": 849,
+    "text": "A trustee wants to know how much would have needed to be deposited 6 years ago, at a constant annual interest rate of 4.5%, paid once a year, to have exactly \\$40,000 available today.\r\n\r\n**Part 1: Setup.**\r\n\r\nTarget $S(t) = \\$40,000$\r\n\r\nNominal annual rate $r = 4.5\\% = 0.045$\r\n\r\n$n = 1$ (annual)\r\n\r\nTime $t = 6$ years\r\n\r\n**Part 2: Formula.**\r\n\r\nFuture value $S(t) = S_0(1+r)^{t}$\r\n\r\nPresent value $S_0 = S(t)/(1+r)^{t}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $(1.045)^{6} \\approx 1.302253$.\r\n\r\n**2.** $S_0 = 40,000/1.302253 \\approx \\$30,715.86$.\r\n\r\n**3.** $\\$30,715.86$ is indeed less than $\\$32,000$.\r\n\r\n**4.** A higher rate ($5.5\\%$) means the deposit grows faster, so LESS principal is needed today to reach the same $\\$40,000$ in $6$ years — the required present value would be lower, not higher.\r\n\r\n**5.** Interest: $40,000 - 30,715.86 = \\$9,284.14$."
+  },
+  {
+    "id": "math-11-12",
+    "caseId": "MATH 11.12",
+    "title": "How Long to Grow £4,000 to £6,000?",
+    "subsection": "11.1",
+    "min_chars": 1097,
+    "text": "A deposit of £4,000 earns a nominal annual rate of 6%, compounded monthly. An investor wants to know how long it will take for the balance to reach £6,000.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = £4,000$\r\n\r\nTarget $S(t) = £6,000$\r\n\r\nNominal annual rate $r = 6\\% = 0.06$\r\n\r\nCompounding frequency $n = 12$ (monthly)\r\n\r\n**Part 2: Formula.**\r\n\r\nGrowth equation $(1+r/n)^{t} = S(t)/S_0$\r\n\r\nSolve for time $t = \\ln(S(t)/S_0)/\\ln(1+r/n)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.06/12 = 0.005$.\r\n\r\n**2.** Target ratio: $6,000/4,000 = 1.5$.\r\n\r\n**3.** $t = \\ln(1.5)/\\ln(1.005) \\approx 0.405465/0.0049875 \\approx 81.30$ months $\\approx 6.78$ years.\r\n\r\n**4.** This is neither exactly $6.00$ years nor $48$ months ($4$ years) — both are incorrect approximations of the true $81.30$-month figure.\r\n\r\n**5.** Doubling time for this account: $\\ln 2/\\ln(1.005) \\approx 138.99$ months; half of that is $\\approx 69.5$ months.\r\n\r\n**6.** The actual time to grow by $1.5\\times$ is $81.30$ months, which is MORE than half the doubling time, not less.\r\n\r\n**7.** $t = \\ln(1.5)/\\ln(1.005) \\approx 81.30$ months, not $100$."
+  },
+  {
+    "id": "math-11-13",
+    "caseId": "MATH 11.13",
+    "title": "Daily Compounding on a Money-Market Deposit",
+    "subsection": "11.1",
+    "min_chars": 958,
+    "text": "A retiree deposits \\$20,000 into a money-market account earning a nominal annual rate of 4.25%, compounded daily using a 365-day year, for one year.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$20,000$\r\n\r\nNominal annual rate $r = 4.25\\% = 0.0425$\r\n\r\nCompounding frequency $n = 365$ (daily)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nPeriodic rate: $r/n$\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\nFuture value $FV = P(1+R)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.0425/365 \\approx 0.00011644 = 0.011644\\%$.\r\n\r\n**2.** $R = (1 + 0.0425/365)^{365} - 1 \\approx 1.043413 - 1 = 0.043413 \\approx 4.34\\%$.\r\n\r\n**3.** $FV = 20,000 \\times 1.043413 = \\$20,868.26$.\r\n\r\n**4.** Monthly compounding of $4.25\\%$ nominal gives $R \\approx 4.33\\%$, which is slightly LOWER than the daily EAR of $4.34\\%$, not higher — daily compounding is more frequent than monthly.\r\n\r\n**5.** Gap: $4.34\\% - 4.25\\% = 0.09$ percentage points, which does not exceed $0.20$ percentage points."
+  },
+  {
+    "id": "math-11-14",
+    "caseId": "MATH 11.14",
+    "title": "A Store Card's True Annual Cost",
+    "subsection": "11.1",
+    "min_chars": 682,
+    "text": "A retail store credit card charges interest on unpaid balances at a rate of 1.9% per month.\r\n\r\n**Part 1: Setup.**\r\n\r\nMonthly periodic rate $i_m = 1.9\\% = 0.019$\r\n\r\nMonths per year $n = 12$\r\n\r\n**Part 2: Formula.**\r\n\r\nNominal annual rate: $12 i_m$\r\n\r\nEffective annual rate $R = (1 + i_m)^{12} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Nominal annual rate: $12 \\times 1.9\\% = 22.80\\%$.\r\n\r\n**2.** $R = (1.019)^{12} - 1 \\approx 1.253408 - 1 = 0.253408 \\approx 25.34\\%$.\r\n\r\n**3.** $FV$ of $\\$3,000$ unpaid for $1$ year: $3,000 \\times 1.253408 = \\$3,760.22$ (not $\\$3,684.00$).\r\n\r\n**4.** Gap: $25.34\\% - 22.80\\% \\approx 2.54$ percentage points, which does not exceed $3.00$ percentage points.\r\n"
+  },
+  {
+    "id": "math-11-15",
+    "caseId": "MATH 11.15",
+    "title": "Effective Rates for a 10% Nominal Rate Under Three Frequencies",
+    "subsection": "11.1",
+    "min_chars": 901,
+    "text": "A bank wants to publish the effective yearly rate corresponding to a nominal annual rate of 10%, with interest added twice a year, each quarter, and each month.\r\n\r\n**Part 1: Setup.**\r\n\r\nNominal annual rate $r = 10\\% = 0.10$\r\n\r\n$n = 2$ (semi-annual), $n = 4$ (quarterly), $n = 12$ (monthly)\r\n\r\n**Part 2: Formula.**\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Semi-annual: $R = (1.05)^{2} - 1 = 1.1025 - 1 = 0.1025 = 10.25\\%$.\r\n\r\n**2.** Quarterly: $R = (1.025)^{4} - 1 \\approx 1.103813 - 1 = 0.103813 \\approx 10.38\\%$.\r\n\r\n**3.** Monthly: $R = (1.0083333)^{12} - 1 \\approx 1.104713 - 1 = 0.104713 \\approx 10.47\\%$.\r\n\r\n**4.** Confirms increasing $R$ with increasing frequency: $10.25\\% < 10.38\\% < 10.47\\%$.\r\n\r\n**5.** First jump: $10.38\\% - 10.25\\% = 0.13$ points; second jump: $10.47\\% - 10.38\\% = 0.09$ points — the first jump is LARGER than the second, not smaller.\r\n"
+  },
+  {
+    "id": "math-11-16",
+    "caseId": "MATH 11.16",
+    "title": "What Growth Rate Would Multiply GDP by 50 in 80 Years?",
+    "subsection": "11.1",
+    "min_chars": 1069,
+    "text": "An economist asks what constant annual percentage growth rate would be needed for a country's GDP to become 50 times as large after 80 years.\r\n\r\n**Part 1: Setup.**\r\n\r\nTarget growth factor = 50\r\n\r\nTime $t = 80$ years\r\n\r\n**Part 2: Formula.**\r\n\r\nGrowth equation $(1+r)^{t} = M$ (M = target growth factor)\r\n\r\nSolve for rate $r = M^{1/t} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $(1 + r)^{80} = 50$, so $r = 50^{1/80} - 1 \\approx 1.050115 - 1 = 0.050115 \\approx 5.01\\%$.\r\n\r\n**2.** This is not $6.25\\%$.\r\n\r\n**3.** Growth rates are found via a root (an exponential relationship), not a simple linear halving of the target multiple, so a rate for $50\\times$ growth is not simply half the rate for $100\\times$ growth.\r\n\r\n**4.** At $r = 5.01\\%$, after $160$ years the growth factor is $(1.050115)^{160} = (50)^{2} = 2,500$, not $100$.\r\n\r\n**5.** Achieving the same $50\\times$ growth in only $40$ years (half the time) requires solving $r = 50^{1/40} - 1 \\approx 9.65\\%$, which is HIGHER than $5.01\\%$, not lower — less time always demands a faster rate for the same target multiple.\r\n"
+  },
+  {
+    "id": "math-11-17",
+    "caseId": "MATH 11.17",
+    "title": "Saving for a \\\\$25,000 Tuition Bill in 7 Years",
+    "subsection": "11.1",
+    "min_chars": 1250,
+    "text": "A parent needs exactly \\$25,000 in 7 years for a tuition bill and is deciding how much to deposit today into one of two accounts: Account X, nominal 5.00% compounded monthly; Account Y, nominal 5.10% compounded quarterly.\r\n\r\n**Part 1: Setup.**\r\n\r\nTarget amount $T = \\$25,000$ after t = 7 years\r\n\r\nAccount X: r = 5.00%, n = 12 (monthly)\r\n\r\nAccount Y: r = 5.10%, n = 4 (quarterly)\r\n\r\n**Part 2: Formula.**\r\n\r\nPresent value $S_0 = T / (1 + r/n)^{nt}$ (T = target future amount)\r\n\r\nEffective annual rate $R = (1 + r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Account X: $(1 + 0.05/12)^{84} \\approx 1.418038$, so $S_{0,X} = T/1.418038 \\approx \\$17,629.99$.\r\n\r\n**2.** Account Y: $(1 + 0.051/4)^{28} \\approx 1.425964$, so $S_{0,Y} = T/1.425964 \\approx \\$17,534.28$.\r\n\r\n**3.** Since $S_{0,Y} < S_{0,X}$, Account Y actually requires the SMALLER upfront deposit, not Account X.\r\n\r\n**4.** $R_X = (1 + 0.05/12)^{12} - 1 \\approx 5.12\\%$.\r\n\r\n**5.** $R_Y = (1.01275)^{4} - 1 \\approx 5.20\\%$.\r\n\r\n**6.** Indeed $R_Y > R_X$, consistent with Account Y needing less principal.\r\n\r\n**7.** This scenario itself is a counterexample to statement (e): despite compounding more often, Account X needs the LARGER deposit here, because Account Y's higher nominal rate wins out.\r\n"
+  },
+  {
+    "id": "math-11-18",
+    "caseId": "MATH 11.18",
+    "title": "How Much Was Invested 9 Years Ago?",
+    "subsection": "11.1",
+    "min_chars": 986,
+    "text": "A trustee needs to know how much would have had to be invested 9 years ago, compounded quarterly at a nominal annual rate of 4.4%, to have exactly \\$60,000 available today.\r\n\r\n**Part 1: Setup.**\r\n\r\nTarget amount $T = \\$60,000$ today\r\n\r\nNominal annual rate $r = 4.4\\% = 0.044$\r\n\r\nCompounding frequency $n = 4$ (quarterly)\r\n\r\nTime $t = 9$ years, so $nt = 36$\r\n\r\n**Part 2: Formula.**\r\n\r\nPresent value $S_0 = T / (1 + r/n)^{nt}$ (T = target future amount)\r\n\r\nEffective annual rate $R = (1 + r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.044/4 = 0.011$.\r\n\r\n**2.** $(1.011)^{36} \\approx 1.482658$, so $S_0 = T/1.482658 \\approx \\$40,467.83$.\r\n\r\n**3.** $\\$40,467.83$ is less than $\\$45,000$, not more.\r\n\r\n**4.** A higher rate ($5.0\\%$) grows money faster, so a SMALLER amount invested $9$ years ago would reach $\\$60,000$ today — the required present value would be lower, not higher.\r\n\r\n**5.** Interest: $60,000 - 40,467.83 = \\$19,532.17$, which does not exceed $\\$20,000$.\r\n"
+  },
+  {
+    "id": "math-11-19",
+    "caseId": "MATH 11.19",
+    "title": "Three CDs That Are Closer Than They Look",
+    "subsection": "11.1",
+    "min_chars": 1334,
+    "text": "A saver is comparing three one-year certificates of deposit for a \\$20,000 deposit: CD1: nominal 6.30%, compounded monthly. CD2: nominal 6.40%, compounded quarterly. CD3: nominal 6.45%, compounded semi-annually.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$20,000$\r\n\r\nCD1: $r = 6.30\\%$, $n = 12$ (monthly)\r\n\r\nCD2: $r = 6.40\\%$, $n = 4$ (quarterly)\r\n\r\nCD3: $r = 6.45\\%$, $n = 2$ (semi-annual)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\nInterest earned: $P \\times R$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** CD$_1$ periodic rate: $0.063/12 = 0.00525$.\r\n\r\n**2.** $R_1 = (1.00525)^{12} - 1 \\approx 1.064852 - 1 = 0.064852 \\approx 6.49\\%$.\r\n\r\n**3.** CD$_2$ periodic rate: $0.064/4 = 0.016$.\r\n\r\n**4.** $R_2 = (1.016)^{4} - 1 \\approx 1.065533 - 1 = 0.065533 \\approx 6.55\\%$.\r\n\r\n**5.** CD$_3$ periodic rate: $0.0645/2 = 0.03225$.\r\n\r\n**6.** $R_3 = (1.03225)^{2} - 1 \\approx 1.065540 - 1 = 0.065540 \\approx 6.55\\%$, essentially tied with CD$_2$ (difference under $0.01$ points).\r\n\r\n**7.** CD$_1$ has the lowest nominal rate ($6.30\\%$) and the lowest EAR ($6.49\\%$) of the three.\r\n\r\n**8.** Interest for CD$_1$: $20,000 \\times 0.064852 = \\$1,297.04$.\r\n\r\n**9.** Interest for CD$_2$: $20,000 \\times 0.065533 = \\$1,310.66$.\r\n\r\n**10.** Extra interest of CD$_2$ over CD$_1$: $1,310.66 - 1,297.04 = \\$13.62 \\approx \\$13.61$.\r\n"
+  },
+  {
+    "id": "math-11-20",
+    "caseId": "MATH 11.20",
+    "title": "Which Account Reaches \\\\$22,000 First?",
+    "subsection": "11.1",
+    "min_chars": 1151,
+    "text": "A family has \\$15,000 today and wants to know which of two accounts reaches \\$22,000 sooner: Account M, nominal 6.00% compounded monthly; Account Q, nominal 6.15% compounded quarterly.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$15,000$, target = \\$22,000\r\n\r\nAccount M: $r = 6.00\\%$, $n = 12$ (monthly)\r\n\r\nAccount Q: $r = 6.15\\%$, $n = 4$ (quarterly)\r\n\r\n**Part 2: Formula.**\r\n\r\nTime to reach target (in periods): $t = \\ln(T/S_0)/\\ln(1+r/n)$ (T = target amount)\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Target ratio: $22,000/15,000 \\approx 1.466667$.\r\n\r\n**2.** Account M periodic rate: $0.005$.\r\n\r\n**3.** $t = \\ln(1.466667)/\\ln(1.005) \\approx 0.382996/0.0049875 \\approx 76.81$ months $\\approx 6.40$ years.\r\n\r\n**4.** Account Q periodic rate: $0.015375$.\r\n\r\n**5.** $t = \\ln(1.466667)/\\ln(1.015375) \\approx 0.382996/0.0152580 \\approx 25.10$ quarters $\\approx 6.275$ years, which is FASTER than Account M's $6.40$ years, not identical and not slower.\r\n\r\n**6.** $R_M = (1.005)^{12} - 1 \\approx 6.17\\%$.\r\n\r\n**7.** $R_Q = (1.015375)^{4} - 1 \\approx 6.29\\%$.\r\n\r\n**8.** So $R_Q > R_M$, consistent with Q reaching the target faster.\r\n"
+  },
+  {
+    "id": "math-11-21",
+    "caseId": "MATH 11.21",
+    "title": "Continuous Compounding on a Bakery's Business Account",
+    "subsection": "11.2",
+    "min_chars": 699,
+    "text": "Ms. Delgado, the owner of an artisan bakery, deposits \\$4,500 into a business savings account that compounds interest continuously at a nominal annual rate of 5%.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$4,500$\r\n\r\nNominal annual rate r = 5% = 0.05\r\n\r\nCompounding: continuous\r\n\r\nt = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\n$S(t) = S_0 e^{rt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $S(1) = 4,500 \\times e^{0.05} = 4,500 \\times 1.0512711 = \\$4,730.72$.\r\n\r\n**2.** Interest: $4,730.72 - 4,500.00 = \\$230.72$.\r\n\r\n**3.** Annual ($m = 1$) compounding at $5\\%$: $S = 4,500 \\times 1.05 = \\$4,725.00$.\r\n\r\n**4.** Difference: $4,730.72 - 4,725.00 = \\$5.72$.\r\n\r\n**5.** $e^{0.05} = 1.0512711$, which rounds to $1.0513$, not $1.0400$."
+  }
+]

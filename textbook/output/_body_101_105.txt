@@ -1,0 +1,526 @@
+@@@101A
+The rate used inside an instalment formula is the rate charged over one payment period, found by dividing the nominal annual rate by the number of compounding periods in a year:
+
+$$r_{\text{period}} = \frac{r_{\text{nominal}}}{m}$$
+
+Interest here is charged at 12% per year and compounds once per year, so $m = 1$:
+
+$$r_{\text{period}} = \frac{0.12}{1}$$
+
+$$r_{\text{period}} = 0.12$$
+
+The payments are also annual, so period and payment line up and the decimal 0.12 goes straight into the formula. A check on the first year confirms it, since 12% of the opening \$60,000 balance is
+
+$$0.12 \times 60,000 = \$7,200.00$$
+
+The claim names $r = 0.12$, which is the rate the formula uses, so the statement is true.
+@@@101B
+A loan repaid in equal instalments is an ordinary annuity whose present value equals the amount borrowed, which rearranges to the payment formula:
+
+$$a = \frac{rK}{1 - (1+r)^{-n}}$$
+
+Substituting the loan $K = \$60,000$, the annual rate $r = 0.12$ and the $n = 6$ year-end payments:
+
+$$rK = 0.12 \times 60,000 = 7,200$$
+
+$$(1.12)^{-6} \approx 0.506631$$
+
+$$1 - 0.506631 = 0.493369$$
+
+$$a \approx \frac{7,200}{0.493369}$$
+
+$$a \approx \$14,593.54$$
+
+The claim gives about \$14,593.54 per year, and the calculation returns \$14,593.54, so the statement is true.
+@@@101C
+Interest in any year is charged on the balance outstanding at the start of that year:
+
+$$\text{interest} = r \times \text{opening balance}$$
+
+No payment has been made before the first year ends, so the opening balance is the full amount borrowed:
+
+$$\text{opening balance} = \$60,000.00$$
+
+$$\text{interest}_1 = 0.12 \times 60,000$$
+
+$$\text{interest}_1 = \$7,200.00$$
+
+Both figures here are exact, since 12% of \$60,000 leaves no rounding to do. The claim names exactly \$7,200.00, so the statement is true.
+@@@101D
+Each instalment covers the year's interest first, and whatever is left reduces the principal:
+
+$$\text{principal} = a - r \times \text{opening balance}$$
+
+The instalment comes from the annuity payment formula:
+
+$$a = \frac{0.12 \times 60,000}{1 - (1.12)^{-6}} = \frac{7,200}{0.493369} \approx \$14,593.54$$
+
+First-year interest on the full \$60,000 balance is
+
+$$0.12 \times 60,000 = \$7,200.00$$
+
+so the principal portion is
+
+$$14,593.54 - 7,200.00 = \$7,393.54$$
+
+Half of the instalment is
+
+$$\frac{14,593.54}{2} \approx \$7,296.77$$
+
+Comparing:
+
+$$7,393.54 - 7,296.77 = \$96.77$$
+
+Even in year 1, when interest is at its heaviest, the principal portion clears half the payment by \$96.77, so the statement is true.
+@@@101E
+Tracking the balance takes one year at a time, recomputing interest on whatever principal is still outstanding:
+
+$$\text{interest} = r \times \text{opening balance}, \qquad \text{new balance} = \text{opening balance} - (a - \text{interest})$$
+
+The instalment is
+
+$$a = \frac{7,200}{1 - (1.12)^{-6}} \approx \$14,593.54$$
+
+Year 1 opens with the full loan:
+
+$$0.12 \times 60,000 = \$7,200.00$$
+
+$$14,593.54 - 7,200.00 = \$7,393.54$$
+
+$$60,000.00 - 7,393.54 = \$52,606.46$$
+
+Year 2 opens with that reduced balance:
+
+$$0.12 \times 52,606.46 \approx \$6,312.78$$
+
+$$14,593.54 - 6,312.78 \approx \$8,280.76$$
+
+$$52,606.46 - 8,280.76 \approx \$44,325.70$$
+
+The claim puts the balance at about \$45,000.00:
+
+$$45,000.00 - 44,325.70 = \$674.30$$
+
+The true balance is about \$44,325.70, some \$674 below the stated figure, so the statement is false.
+@@@102A
+When payments and compounding share the same schedule, the rate used in the payment formula is the nominal annual rate split evenly across the periods in a year:
+
+$$r = \frac{r_{\text{nominal}}}{m}$$
+
+Interest is charged at a nominal 9% per year and compounds monthly, so $m = 12$:
+
+$$r = \frac{0.09}{12}$$
+
+$$r = 0.0075$$
+
+$$0.0075 = 0.75\%$$
+
+Payments are also monthly, so this 0.75% per month is the rate the instalment formula uses. The claim names $r = 0.75\%$, so the statement is true.
+@@@102B
+Equal instalments on a loan follow the annuity payment formula, with the periodic rate and the number of periods measured in the same time units:
+
+$$a = \frac{rK}{1 - (1+r)^{-n}}$$
+
+The monthly rate is $r = 0.09/12 = 0.0075$ and the term is four years of monthly payments:
+
+$$n = 4 \times 12 = 48$$
+
+$$rK = 0.0075 \times 24,000 = 180$$
+
+$$(1.0075)^{-48} \approx 0.698614$$
+
+$$1 - 0.698614 = 0.301386$$
+
+$$a \approx \frac{180}{0.301386}$$
+
+$$a \approx \$597.24$$
+
+The claim gives about \$597.24 per month, and the calculation returns \$597.24, so the statement is true.
+@@@102C
+The total handed over is simply the instalment repeated for every payment period:
+
+$$\text{total paid} = a \times n$$
+
+The monthly instalment comes from the payment formula with $r = 0.0075$ and $n = 48$:
+
+$$a = \frac{0.0075 \times 24,000}{1 - (1.0075)^{-48}} = \frac{180}{0.301386} \approx \$597.24$$
+
+Over all 48 months:
+
+$$\text{total paid} \approx 597.24 \times 48$$
+
+$$\text{total paid} \approx \$28,667.57$$
+
+The claim states about \$29,500.00:
+
+$$29,500.00 - 28,667.57 = \$832.43$$
+
+The stated total runs \$832.43 above what the customer actually pays, so the statement is false.
+@@@102D
+Interest over the life of a loan is whatever is paid beyond the amount borrowed:
+
+$$\text{total interest} = a \times n - K$$
+
+The monthly instalment is
+
+$$a = \frac{0.0075 \times 24,000}{1 - (1.0075)^{-48}} \approx \$597.24$$
+
+so the 48 payments come to
+
+$$597.24 \times 48 \approx \$28,667.57$$
+
+Subtracting the \$24,000 financed:
+
+$$28,667.57 - 24,000.00 = \$4,667.57$$
+
+The claim gives about \$4,667.57 of interest, and the calculation returns \$4,667.57, so the statement is true.
+@@@102E
+Switching to annual instalments changes both the periodic rate and the number of periods, so the payment formula must be applied again from scratch:
+
+$$a = \frac{rK}{1 - (1+r)^{-n}}$$
+
+With annual payments the rate per period is the full 9% and the term is four periods:
+
+$$r = 0.09, \qquad n = 4$$
+
+$$rK = 0.09 \times 24,000 = 2,160$$
+
+$$(1.09)^{-4} \approx 0.708425$$
+
+$$1 - 0.708425 = 0.291575$$
+
+$$a_{\text{ann}} \approx \frac{2,160}{0.291575}$$
+
+$$a_{\text{ann}} \approx \$7,408.05$$
+
+The claim says the annual instalment would be under \$2,388.96:
+
+$$7,408.05 - 2,388.96 = \$5,019.09$$
+
+Squeezing the same \$24,000 into four payments instead of 48 raises each payment far above that threshold, by more than \$5,000, so the statement is false.
+@@@103A
+Equal year-end instalments on a loan follow the annuity payment formula, which sets the present value of the payments equal to the amount borrowed:
+
+$$a = \frac{rK}{1 - (1+r)^{-n}}$$
+
+Substituting the loan $K = \$45,000$, the annual rate $r = 10\% = 0.10$ and the $n = 5$ payments:
+
+$$rK = 0.10 \times 45,000 = 4,500$$
+
+$$(1.10)^{-5} \approx 0.620921$$
+
+$$1 - 0.620921 = 0.379079$$
+
+$$a \approx \frac{4,500}{0.379079}$$
+
+$$a \approx \$11,870.89$$
+
+The claim gives about \$11,870.89 per year, and the calculation returns \$11,870.89, so the statement is true.
+@@@103B
+Interest in the first year is charged on the balance outstanding when that year begins, which is the full amount borrowed:
+
+$$\text{interest}_1 = r \times K$$
+
+Substituting the 10% rate and the \$45,000 loan:
+
+$$\text{interest}_1 = 0.10 \times 45,000$$
+
+$$\text{interest}_1 = \$4,500.00$$
+
+The claim states \$5,000.00:
+
+$$5,000.00 - 4,500.00 = \$500.00$$
+
+Charging \$5,000.00 would mean a rate of $5,000/45,000 \approx 11.1\%$, not the 10% agreed. The correct first-year interest is \$4,500.00, so the statement is false.
+@@@103C
+The balance falls each year by the principal portion of the payment, where the principal portion is the instalment minus that year's interest:
+
+$$\text{interest} = r \times \text{opening balance}, \qquad \text{new balance} = \text{opening balance} - (a - \text{interest})$$
+
+The instalment is
+
+$$a = \frac{0.10 \times 45,000}{1 - (1.10)^{-5}} = \frac{4,500}{0.379079} \approx \$11,870.89$$
+
+Year 1:
+
+$$0.10 \times 45,000.00 = \$4,500.00$$
+
+$$45,000.00 - (11,870.89 - 4,500.00) = \$37,629.11$$
+
+Year 2:
+
+$$0.10 \times 37,629.11 \approx \$3,762.91$$
+
+$$37,629.11 - (11,870.89 - 3,762.91) = \$29,521.13$$
+
+Year 3:
+
+$$0.10 \times 29,521.13 \approx \$2,952.11$$
+
+$$29,521.13 - (11,870.89 - 2,952.11) = \$20,602.35$$
+
+The claim gives about \$20,602.37, which the schedule reproduces to within a few cents of rounding, so the statement is true.
+@@@103D
+The split of a payment depends on the balance the year opens with, so the schedule has to be carried to year 4:
+
+$$\text{interest} = r \times \text{opening balance}, \qquad \text{principal} = a - \text{interest}$$
+
+With $a \approx \$11,870.89$ the balances run
+
+$$45,000.00 - (11,870.89 - 4,500.00) = \$37,629.11$$
+
+$$37,629.11 - (11,870.89 - 3,762.91) = \$29,521.13$$
+
+$$29,521.13 - (11,870.89 - 2,952.11) = \$20,602.35$$
+
+Year 4 therefore opens at about \$20,602.35:
+
+$$\text{interest}_4 \approx 0.10 \times 20,602.35 \approx \$2,060.24$$
+
+$$\text{principal}_4 \approx 11,870.89 - 2,060.24 \approx \$9,810.65$$
+
+Comparing the two parts of the payment:
+
+$$9,810.65 - 2,060.24 = \$7,750.41$$
+
+By year 4 the principal portion is larger than the interest portion by \$7,750.41, so interest is the smaller part and the statement is false.
+@@@103E
+The principal portions are exactly the amounts by which the balance is written down, so together they must remove the whole balance:
+
+$$\sum \text{principal portions} = K - \text{final balance}$$
+
+The loan is fully repaid at the end of year 5, which means the final balance is zero:
+
+$$\sum \text{principal portions} = 45,000.00 - 0 = \$45,000.00$$
+
+The year-by-year figures confirm it:
+
+$$7,370.89 + 8,107.98 + 8,918.78 + 9,810.65 + 10,791.70 = \$45,000.00$$
+
+The claim states the principal portions total \$46,200.00:
+
+$$46,200.00 - 45,000.00 = \$1,200.00$$
+
+The extra \$1,200.00 belongs to interest, not principal, so the statement is false.
+@@@104A
+With the first payment due immediately, one payment is not discounted at all and the remaining nine form an ordinary annuity. The combined factor is therefore
+
+$$1 + \frac{1}{r}\bigl[1 - (1+r)^{-(n-1)}\bigr]$$
+
+Substituting $r = 11\% = 0.11$ and $n = 10$ payments, so $n - 1 = 9$ discounted ones:
+
+$$(1.11)^{-9} \approx 0.390925$$
+
+$$1 - 0.390925 = 0.609075$$
+
+$$\frac{1}{0.11} \approx 9.090909$$
+
+$$9.090909 \times 0.609075 \approx 5.537048$$
+
+$$1 + 5.537048 = 6.537048$$
+
+The claim gives about 6.537048, and the calculation returns 6.537048, so the statement is true.
+@@@104B
+The buy-in price is the payment multiplied by the combined annuity-due factor, so the payment is the price divided by that factor:
+
+$$K = a \times \Bigl(1 + \frac{1}{r}\bigl[1 - (1+r)^{-(n-1)}\bigr]\Bigr), \qquad a = \frac{K}{\text{factor}}$$
+
+Building the factor at $r = 0.11$ with nine discounted payments:
+
+$$(1.11)^{-9} \approx 0.390925$$
+
+$$9.090909 \times (1 - 0.390925) \approx 5.537048$$
+
+$$\text{factor} = 1 + 5.537048 = 6.537048$$
+
+Dividing the \$150,000 owed by that factor:
+
+$$a \approx \frac{150,000}{6.537048}$$
+
+$$a \approx \$22,946.14$$
+
+The claim gives about \$22,946.14, and the calculation returns \$22,946.14, so the statement is true.
+@@@104C
+Moving the first payment from today to the end of year 1 turns the annuity due into an ordinary annuity, which uses the standard payment formula:
+
+$$a_{\text{ord}} = \frac{rK}{1 - (1+r)^{-n}}$$
+
+Substituting $K = \$150,000$, $r = 0.11$ and $n = 10$:
+
+$$rK = 0.11 \times 150,000 = 16,500$$
+
+$$(1.11)^{-10} \approx 0.352184$$
+
+$$1 - 0.352184 = 0.647816$$
+
+$$a_{\text{ord}} \approx \frac{16,500}{0.647816}$$
+
+$$a_{\text{ord}} \approx \$25,470.21$$
+
+Comparing with the annuity-due payment of \$22,946.14:
+
+$$25,470.21 - 22,946.14 = \$2,524.07$$
+
+Every payment now sits a year later, so each one buys less discounting and the instalment rises by \$2,524.07 instead of falling. The claim says it would be lower, so the statement is false.
+@@@104D
+The comparison needs both payments, each from its own formula.
+
+With the first payment due immediately, the combined factor is
+
+$$1 + \frac{1}{0.11}\bigl[1 - (1.11)^{-9}\bigr] \approx 6.537048$$
+
+$$a_{\text{due}} \approx \frac{150,000}{6.537048} \approx \$22,946.14$$
+
+With the first payment delayed to the end of year 1, the ordinary payment formula applies:
+
+$$a_{\text{ord}} = \frac{0.11 \times 150,000}{1 - (1.11)^{-10}} \approx \frac{16,500}{0.647816} \approx \$25,470.21$$
+
+The difference between them is
+
+$$25,470.21 - 22,946.14 = \$2,524.07$$
+
+The claim gives about \$2,524.08, matching the computed \$2,524.07 to within a cent of rounding, so the statement is true.
+@@@104E
+The total handed over is the instalment repeated once for each payment, with no discounting involved:
+
+$$\text{total} = a \times n$$
+
+The instalment comes from dividing the price by the annuity-due factor:
+
+$$a \approx \frac{150,000}{6.537048} \approx \$22,946.14$$
+
+Over the ten payments:
+
+$$\text{total} \approx 22,946.14 \times 10$$
+
+$$\text{total} \approx \$229,461.40$$
+
+The claim states about \$220,000.00:
+
+$$229,461.40 - 220,000.00 = \$9,461.40$$
+
+The franchisee actually hands over about \$229,461.40, nearly \$9,500 more than the stated figure, so the statement is false.
+@@@105A
+When a borrower repays a fixed amount each year, the number of payments needed is the smallest whole number $n$ satisfying
+
+$$n \ge \frac{\ln a - \ln(a - rK)}{\ln(1+r)}$$
+
+Substituting the fixed payment $a = \$10,000$, the rate $r = 13\% = 0.13$ and the loan $K = \$35,000$:
+
+$$rK = 0.13 \times 35,000 = 4,550$$
+
+$$a - rK = 10,000 - 4,550 = 5,450$$
+
+$$\ln 10,000 \approx 9.210340, \qquad \ln 5,450 \approx 8.603371$$
+
+$$9.210340 - 8.603371 = 0.606969$$
+
+$$\ln 1.13 \approx 0.122218$$
+
+$$\frac{0.606969}{0.122218} \approx 4.9663$$
+
+Four payments leave part of the debt standing, since the threshold sits above 4, so rounding up gives
+
+$$n = 5$$
+
+The claim names $n = 5$, so the statement is true.
+@@@105B
+The borrower pays a full \$10,000 every year until the debt can be cleared, and the threshold calculation shows how many such years there are:
+
+$$n \ge \frac{\ln 10,000 - \ln(10,000 - 0.13 \times 35,000)}{\ln 1.13} \approx 4.9663$$
+
+Since the threshold exceeds 4, the debt is still alive after four payments, so all four of those are full ones:
+
+$$4 \times 10,000 = \$40,000.00$$
+
+The remaining balance at that point confirms it. The loan grown for four years is
+
+$$35,000 \times (1.13)^{4} \approx \$57,066.58$$
+
+while the four payments accumulate to
+
+$$\frac{10,000}{0.13}\bigl[(1.13)^{4} - 1\bigr] \approx \$48,497.97$$
+
+$$57,066.58 - 48,497.97 = \$8,568.61$$
+
+A positive balance of \$8,568.61 remains, so the fifth year is the one that closes the loan and the first four payments are indeed full \$10,000 payments totalling \$40,000.00. The statement is true.
+@@@105C
+The final payment clears whatever the loan still owes after the full payments, so compare the loan grown forward with the payments grown forward.
+
+The debt after four years of interest is
+
+$$K(1+r)^{4} = 35,000 \times (1.13)^{4}$$
+
+$$(1.13)^{4} \approx 1.630474$$
+
+$$35,000 \times 1.630474 \approx \$57,066.58$$
+
+The four \$10,000 payments accumulate to
+
+$$\frac{a}{r}\bigl[(1+r)^{4} - 1\bigr] = \frac{10,000}{0.13}(1.630474 - 1)$$
+
+$$\approx 76,923.08 \times 0.630474 \approx \$48,497.97$$
+
+The shortfall at the end of year 4 is
+
+$$57,066.58 - 48,497.97 = \$8,568.61$$
+
+Carrying that balance one more year at 13%:
+
+$$8,568.61 \times 1.13 \approx \$9,682.53$$
+
+The claim gives about \$9,682.53 for the fifth payment, and the calculation returns \$9,682.53, so the statement is true.
+@@@105D
+The total handed over is the four full payments plus the reduced final one:
+
+$$\text{total} = 4a + \text{final payment}$$
+
+The four full payments come to
+
+$$4 \times 10,000 = \$40,000.00$$
+
+The final payment settles the balance left at the end of year 4. The debt grown four years is
+
+$$35,000 \times (1.13)^{4} \approx \$57,066.58$$
+
+and the payments grown to the same date come to
+
+$$\frac{10,000}{0.13}\bigl[(1.13)^{4} - 1\bigr] \approx \$48,497.97$$
+
+$$57,066.58 - 48,497.97 = \$8,568.61$$
+
+$$8,568.61 \times 1.13 \approx \$9,682.53$$
+
+Adding the pieces:
+
+$$40,000.00 + 9,682.53 = \$49,682.53$$
+
+The claim gives about \$49,682.53, and the calculation returns \$49,682.53, so the statement is true.
+@@@105E
+Interest over the life of the loan is everything paid beyond the amount borrowed:
+
+$$\text{total interest} = \text{total paid} - K$$
+
+The four full payments total \$40,000.00, and the final payment settles the year-4 balance:
+
+$$35,000 \times (1.13)^{4} \approx \$57,066.58$$
+
+$$\frac{10,000}{0.13}\bigl[(1.13)^{4} - 1\bigr] \approx \$48,497.97$$
+
+$$57,066.58 - 48,497.97 = \$8,568.61$$
+
+$$8,568.61 \times 1.13 \approx \$9,682.53$$
+
+So the borrower pays
+
+$$40,000.00 + 9,682.53 = \$49,682.53$$
+
+and the interest inside that is
+
+$$49,682.53 - 35,000.00 = \$14,682.53$$
+
+Comparing with the principal:
+
+$$35,000.00 - 14,682.53 = \$20,317.47$$
+
+Interest of \$14,682.53 falls \$20,317.47 short of the \$35,000 borrowed, so it is indeed less than the principal and the statement is true.

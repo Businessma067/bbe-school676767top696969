@@ -1,0 +1,528 @@
+export const CH8_EASY_A = [
+  {
+    id: `math-8-88`,
+    case_id: `MATH 8.88`,
+    title: `Rebuilding a Resin Block Mass Table from the Cube Rule`,
+    context: `A cube resin block has mass $M(s)=5s^{3}$ grams for side length $s>0$ centimetres. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `Side $2$ cm gives mass $40$ grams.`,
+      `Side $3$ cm gives mass $125$ grams.`,
+      `Doubling the side multiplies the mass by $8$.`,
+      `Side $1$ cm gives mass $5$ grams.`,
+      `Side $4$ cm gives mass $240$ grams.`,
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The cube is taken before the coefficient is applied:
+
+$$M(2)=5\\cdot 2^{3}=5\\cdot 8=40$$
+
+Scaling the side by the coefficient first and cubing afterwards would give $10^{3}=1000$ grams, a hundred times too large, and that is the usual slip when a coefficient stands in front of a power. The block weighs $40$ grams, so the statement is True.`,
+      `**B.** → False
+
+Cubing comes first, and the cube of $3$ is not a round hundred:
+
+$$3^{3}=27, \\qquad M(3)=5\\cdot 27=135$$
+
+The claimed $125$ is $5^{3}$, the cube of the coefficient rather than a mass, so it is the fingerprint of cubing the wrong one of the two numbers in the rule.
+
+A second check settles the level without using the coefficient at all. Tripling the side multiplies the mass by the cube of the scale factor, and the one centimetre block weighs $5$ grams:
+
+$$\\frac{M(3s)}{M(s)}=\\frac{5(3s)^{3}}{5s^{3}}=3^{3}=27, \\qquad 5\\times 27=135$$
+
+The coefficient cancels in that ratio because it stands once above and once below the line, so $135$ grams is forced by the exponent alone and no density figure can rescue $125$.
+
+Neighbouring sides agree with the spacing, since $M(2)=40$ and $M(4)=320$ leave $135$ comfortably between them while $125$ sits lower than the gap allows. The rule also speaks only for $s>0$, where masses shrink towards zero for very small blocks without ever reaching it. The mass at side $3$ centimetres is $135$ grams rather than $125$, so the statement is False.`,
+      `**C.** → True
+
+A scale factor of a power function depends only on the exponent, since the coefficient cancels:
+
+$$\\frac{M(2s)}{M(s)}=\\frac{5(2s)^{3}}{5s^{3}}=2^{3}=8$$
+
+Plain numbers agree, because $M(1)=5$ grams and $M(2)=40$ grams. The factor is the same wherever the doubling starts, so the density folded into the coefficient never enters. Doubling the side multiplies the mass by $8$, so the statement is True.`,
+      `**D.** → True
+
+At the smallest side the cube is $1$, which leaves the coefficient standing on its own:
+
+$$M(1)=5\\cdot 1^{3}=5$$
+
+This is the reading that makes the coefficient visible, since the $5$ in the rule is exactly the mass in grams of a one centimetre cube. Every other mass is that anchor multiplied by the cube of the side. The mass is $5$ grams, so the statement is True.`,
+      `**E.** → False
+
+The largest standard side needs the cube taken before the coefficient is applied:
+
+$$4^{3}=64, \\qquad M(4)=5\\cdot 64=320$$
+
+The claimed $240$ is $6$ times the mass of the two centimetre block, so it comes from treating the doubling factor as $6$ instead of $8$. The scaling rule agrees with the direct route:
+
+$$40\\times 2^{3}=40\\times 8=320$$
+
+Both land on $320$ grams against the claimed $240$, so the statement is False.`,
+    ],
+    difficulty_level: `1/5`,
+    sort_order: 88,
+    solution_overview: `Resin blocks obey $M(s)=5s^{3}$ grams for side length $s>0$ centimetres.
+
+**Part 1: Building the model.**
+
+Let $s$ = side length in centimetres, $M$ = mass in grams. The rule $M(s)=5s^{3}$ is a power function with exponent $3$ and coefficient $5$ on the domain $s>0$, and the coefficient already carries the density of the resin. Two kinds of question follow from it: levels, which need the coefficient, and scale factors, in which the coefficient cancels.
+
+**1. Translate: a level.** The power is evaluated first, then multiplied by the coefficient:
+
+$$M(s)=5\\cdot s^{3}$$
+
+**2. Translate: a scale factor.** Multiplying the side by $k$ multiplies the mass by $k^{3}$, whatever the coefficient happens to be:
+
+$$\\frac{M(ks)}{M(s)}=\\frac{5(ks)^{3}}{5s^{3}}=k^{3}$$
+
+**Part 2: The model.**
+
+$$M(s)=5s^{3} \\tag{1}$$
+
+$$\\frac{M(ks)}{M(s)}=k^{3} \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** Cubes of the four standard sides:
+
+$$1^{3}=1, \\qquad 2^{3}=8, \\qquad 3^{3}=27, \\qquad 4^{3}=64$$
+
+**2.** Masses at those sides, each five times the cube above it:
+
+$$M(1)=5, \\qquad M(2)=40, \\qquad M(3)=135, \\qquad M(4)=320$$
+
+**3.** The doubling factor from $(2)$ with $k=2$:
+
+$$2^{3}=8$$
+
+**4.** The two entries the statements misquote, set beside the correct ones:
+
+$$135 \\ne 125, \\qquad 320 \\ne 240$$
+
+**5.** Mass climbs far faster than side length here, because the exponent is $3$: a block four times wider carries sixty four times the mass.
+
+**Answer.** $M(1)=5$ | $M(2)=40$ | $M(3)=135$ | $M(4)=320$ | doubling factor $8$`,
+  },
+  {
+    id: `math-8-89`,
+    case_id: `MATH 8.89`,
+    title: `Two Gauge Formulas and the Readings They Refuse`,
+    context: `A river gauge reports load $D(t)=6t^{\\frac{1}{2}}$ kilograms and turbidity $R(t)=50t^{-2}$ units, $t$ hours since reset. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `$D$ returns a real value at $t=0$.`,
+      `$R$ returns a value at $t=0$.`,
+      `$D$ returns a real value at $t=-4$.`,
+      `$R(4)=3.125$ units.`,
+      `$D(9)=18$ kilograms.`,
+    ],
+    answer_key: [true, false, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+An exponent of $\\frac{1}{2}$ is a square root, and the square root of zero is perfectly well defined:
+
+$$D(0)=6\\cdot 0^{\\frac{1}{2}}=6\\cdot 0=0$$
+
+A positive exponent never places the variable in a denominator, so no division by zero is involved anywhere in this rule, and the first plotted point is a load of zero kilograms at the reset instant. The rule returns a real value at $t=0$, so the statement is True.`,
+      `**B.** → False
+
+A negative exponent moves the variable into a denominator:
+
+$$R(t)=50t^{-2}=\\frac{50}{t^{2}}$$
+
+At the reset instant that denominator is $0^{2}=0$, and division by zero has no value, so this one time is excluded while every later hour is fine. The turbidity rule has no value at $t=0$, so the statement is False.`,
+      `**C.** → False
+
+The exponent $\\frac{1}{2}$ is an even root, and no real number squares to a negative one:
+
+$$D(-4)=6\\cdot (-4)^{\\frac{1}{2}}=6\\sqrt{-4}$$
+
+The domain of the load rule is therefore $t\\ge 0$, which also matches the clock, since no hour before the reset exists in the record. An odd root such as $t^{\\frac{1}{3}}$ would accept a negative input without complaint, but this exponent will not. There is no real value at $t=-4$, so the statement is False.`,
+      `**D.** → True
+
+Rewriting the negative exponent as a denominator turns the request into a single division:
+
+$$R(4)=\\frac{50}{4^{2}}=\\frac{50}{16}=3.125$$
+
+The square has to be taken before the division. Dividing first and squaring afterwards gives
+
+$$\\left(\\frac{50}{4}\\right)^{2}=156.25$$
+
+which is fifty times too large and is the standard wrong path for a negative exponent.
+
+A second reading confirms the level without repeating that arithmetic. Doubling the time from four hours to eight divides the index by four, since the coefficient cancels in the ratio:
+
+$$\\frac{R(2t)}{R(t)}=\\frac{50(2t)^{-2}}{50t^{-2}}=\\frac{1}{4}$$
+
+so the index at eight hours is $\\frac{3.125}{4}\\approx 0.781$, which matches $\\frac{50}{64}$ computed directly from the rule.
+
+The value also sits where the shape demands. On $t>0$ the index falls steadily, stays strictly positive, and grows past every bound as the reset instant is approached from the right, so a reading of $3.125$ units four hours in should be well below the earliest recorded values and well above the later ones. Comparing it with the nine hour figure $\\frac{50}{81}\\approx 0.617$ shows exactly that pattern. The turbidity index at $t=4$ is $3.125$ units, so the statement is True.`,
+      `**E.** → True
+
+The square root is taken first and the coefficient is applied afterwards:
+
+$$9^{\\frac{1}{2}}=3, \\qquad D(9)=6\\cdot 3=18$$
+
+Multiplying before rooting would give $\\sqrt{54}\\approx 7.35$, a different quantity entirely, because the coefficient sits outside the power. The figure matches the flat shape of a square root law, since a ninefold stretch of elapsed time only triples the load, from $6$ to $18$ kilograms. The load at nine hours is $18$ kilograms, so the statement is True.`,
+    ],
+    difficulty_level: `1/5`,
+    sort_order: 89,
+    solution_overview: `The gauge reports $D(t)=6t^{\\frac{1}{2}}$ kilograms and $R(t)=50t^{-2}$ units for $t$ hours since the reset.
+
+**Part 1: Building the model.**
+
+Let $t$ = hours since the reset, $D$ = cumulative dissolved load in kilograms, $R$ = turbidity index in units. The two rules are power functions in the same variable with opposite signs on the exponent, and that sign decides both the domain and the shape of each trace.
+
+**1. Translate: the positive exponent.** A square root accepts zero and every positive time, and it refuses negative inputs:
+
+$$D(t)=6t^{\\frac{1}{2}}, \\qquad t\\ge 0$$
+
+**2. Translate: the negative exponent.** A negative exponent is a reciprocal, so the variable lands in a denominator and zero has to be excluded:
+
+$$R(t)=\\frac{50}{t^{2}}, \\qquad t>0$$
+
+**Part 2: The model.**
+
+$$D(t)=6\\sqrt{t} \\quad \\text{on } t\\ge 0 \\tag{1}$$
+
+$$R(t)=\\frac{50}{t^{2}} \\quad \\text{on } t>0 \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** Values of the dissolved load rule at the times in question:
+
+$$D(0)=0, \\qquad D(4)=12, \\qquad D(9)=18$$
+
+**2.** Values of the turbidity rule at the same positive times:
+
+$$R(4)=\\frac{50}{16}=3.125, \\qquad R(9)=\\frac{50}{81}\\approx 0.617$$
+
+**3.** The two refusals, one from an even root and one from a zero denominator:
+
+$$\\sqrt{-4} \\text{ is not real}, \\qquad \\frac{50}{0^{2}} \\text{ is undefined}$$
+
+**4.** Shapes on the shared domain $t>0$: the dissolved load rises steadily with elapsed time, while the turbidity index falls steadily towards zero, since its exponent is negative.
+
+**5.** Domain questions are settled by the sign of the exponent and the parity of its root, never by whether a number can be written down.
+
+**Answer.** $D(0)=0$ | $R(0)$ undefined | $D(-4)$ not real | $R(4)=3.125$ | $D(9)=18$`,
+  },
+  {
+    id: `math-8-90`,
+    case_id: `MATH 8.90`,
+    title: `A Fading Beacon and a Rising Count at the Two Ends of the Scale`,
+    context: `A beacon gives $S(x)=80x^{-3}$ millivolts at $x>0$ metres; a reader logs $T(x)=2x^{\\frac{1}{2}}$ thousand packets over $x>0$ minutes. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `As $x\\to\\infty$, $S(x)\\to 0$.`,
+      `As $x\\to 0^{+}$, $S(x)$ grows without bound.`,
+      `As $x\\to\\infty$, $T(x)$ approaches the ceiling $2$.`,
+      `$S(2)=10$ millivolts.`,
+      `As $x\\to 0^{+}$, $T(x)\\to 0$.`,
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+A negative exponent puts the variable in a denominator, and the behaviour far from the mast follows from that alone:
+
+$$S(x)=80x^{-3}=\\frac{80}{x^{3}}$$
+
+As the distance grows, the cube in the denominator grows without bound while the numerator stays fixed at $80$, so the quotient is squeezed towards zero. Sample readings show how quickly it collapses:
+
+$$S(2)=10, \\qquad S(10)=0.08, \\qquad S(100)=0.00008$$
+
+A ratio makes the same point without naming any particular distance. Doubling the distance divides the strength by eight, because the coefficient cancels:
+
+$$\\frac{S(2x)}{S(x)}=\\frac{80(2x)^{-3}}{80x^{-3}}=\\frac{1}{8}$$
+
+Each doubling therefore removes seven eighths of whatever is left, and no positive floor can survive that repeated eightfold cut. Zero is approached but never attained, since a positive numerator over a positive denominator stays strictly positive on $x>0$, so the reading is small rather than absent at any workable distance from the mast. That distinction is what a floor would deny: a floor would mean some smallest reading is repeated forever, whereas here every candidate floor is beaten by moving a little further out. Signal strength tends to $0$ as the distance grows without bound, so the statement is True.`,
+      `**B.** → True
+
+Close to the mast the same reciprocal form is read from the other end:
+
+$$S(x)=\\frac{80}{x^{3}}$$
+
+A small positive distance makes $x^{3}$ a very small positive number, and dividing a fixed $80$ by something arbitrarily small produces something arbitrarily large:
+
+$$S(0.1)=\\frac{80}{0.001}=80000$$
+
+No finite value caps the readings, since halving the distance multiplies the strength by $8$. The strength grows without bound as $x$ approaches $0$ from the right, so the statement is True.`,
+      `**C.** → False
+
+The coefficient $2$ in $T(x)=2x^{\\frac{1}{2}}$ multiplies the whole power, it does not cap the output. A positive exponent keeps the variable in the numerator, so the count keeps climbing:
+
+$$T(4)=4, \\qquad T(100)=20, \\qquad T(10000)=200$$
+
+Growth does slow down, because the exponent $\\frac{1}{2}$ sits below $1$, and that slowing is exactly what invites the reading. Slower growth is still unbounded growth: any target is passed after enough minutes. There is no finite ceiling, so the statement is False.`,
+      `**D.** → True
+
+A level needs the power evaluated in the denominator before the division is carried out:
+
+$$S(2)=\\frac{80}{2^{3}}=\\frac{80}{8}=10$$
+
+Cubing the product $80\\cdot 2$ instead would answer a quite different question, so the reciprocal has to be respected. The reading is consistent with the collapse described elsewhere, since doubling the distance to $4$ metres divides the strength by $8$ and leaves $1.25$ millivolts. The strength at two metres is $10$ millivolts, so the statement is True.`,
+      `**E.** → True
+
+The square root of a small positive number is small, and the coefficient cannot rescue the size:
+
+$$T(0.01)=2\\sqrt{0.01}=0.2, \\qquad T(0.0001)=0.02$$
+
+A positive exponent keeps the product heading towards zero as the input shrinks. The count approaches $0$ as $x$ approaches $0$ from the right, so the statement is True.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 90,
+    solution_overview: `The beacon obeys $S(x)=80x^{-3}$ millivolts and the reader obeys $T(x)=2x^{\\frac{1}{2}}$ thousand packets, both on $x>0$.
+
+**Part 1: Building the model.**
+
+Let $x$ = distance in metres for the beacon rule and listening minutes for the reader rule, $S$ = received strength in millivolts, $T$ = cumulative count in thousand packets. Both rules are power functions on $x>0$, one with a negative exponent and one with a positive exponent below $1$, and the extremes are governed by those exponents alone.
+
+**1. Translate: the negative exponent.** A negative exponent is a reciprocal power, so a large input makes a large denominator and a small input makes a small one:
+
+$$S(x)=\\frac{80}{x^{3}}$$
+
+**2. Translate: the positive exponent.** A positive exponent keeps the variable in the numerator, so growth continues without any ceiling, even though it slows:
+
+$$T(x)=2x^{\\frac{1}{2}}$$
+
+**Part 2: The model.**
+
+$$S(x)=\\frac{80}{x^{3}} \\quad \\text{on } x>0 \\tag{1}$$
+
+$$T(x)=2\\sqrt{x} \\quad \\text{on } x>0 \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** Signal strength at three distances, from $(1)$:
+
+$$S(2)=\\frac{80}{8}=10, \\qquad S(4)=\\frac{80}{64}=1.25, \\qquad S(20)=\\frac{80}{8000}=0.01$$
+
+**2.** Signal strength very close to the mast, where the denominator collapses:
+
+$$S(0.1)=\\frac{80}{0.001}=80000$$
+
+**3.** Packet counts after three listening times, from $(2)$:
+
+$$T(4)=4, \\qquad T(100)=20, \\qquad T(10000)=200$$
+
+**4.** Packet counts for very short listening times:
+
+$$T(0.01)=0.2, \\qquad T(0.0001)=0.02$$
+
+**5.** The two extremes therefore behave in opposite ways. The negative exponent sends the signal to zero far from the mast and past every bound near it, while the positive exponent sends the count to zero at the start and past every bound in the long run, with no ceiling anywhere.
+
+**Answer.** $S(x)\\to 0$ as $x$ grows | $S(x)$ unbounded as $x\\to 0^{+}$ | no ceiling for $T$ | $S(2)=10$ | $T(x)\\to 0$ as $x\\to 0^{+}$`,
+  },
+  {
+    id: `math-8-91`,
+    case_id: `MATH 8.91`,
+    title: `Spread Overheads Against Finishing Hours on One Order Book`,
+    context: `A workshop spreads overhead $U(q)=600q^{-1}$ euros per unit and needs $V(q)=3q^{\\frac{2}{3}}$ finishing hours for order size $q>0$. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `$U$ is strictly decreasing for $q>0$.`,
+      `$U(q)<0$ for some order size $q>0$.`,
+      `$V$ is strictly increasing for $q>0$.`,
+      `$U(8)=80$ euros per unit.`,
+      `$V(8)=12$ hours.`,
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+An exponent of $-1$ is a reciprocal, so the order size sits in the denominator:
+
+$$U(q)=600q^{-1}=\\frac{600}{q}$$
+
+A larger denominator against a fixed numerator gives a smaller quotient, so every extra unit lowers the spread:
+
+$$U(2)=300, \\qquad U(6)=100, \\qquad U(30)=20$$
+
+The overhead spread is strictly decreasing for $q>0$, so the statement is True.`,
+      `**B.** → False
+
+Both parts of the quotient are positive across the whole domain, so no sign change is available:
+
+$$U(q)=\\frac{600}{q}, \\qquad 600>0, \\qquad q>0$$
+
+A negative exponent makes the rule fall, and falling is easily confused with turning negative, but the two are different properties. Values shrink towards zero without ever reaching it, for instance $U(600)=1$ and $U(6000)=0.1$. The spread stays positive at every order size, so the statement is False.`,
+      `**C.** → True
+
+The exponent here is positive, so the order size stays in the numerator:
+
+$$V(q)=3q^{\\frac{2}{3}}, \\qquad \\frac{2}{3}>0$$
+
+Raising a larger positive number to a positive power gives a larger result, and the positive coefficient preserves that order, so finishing hours climb with every extra unit:
+
+$$V(1)=3, \\qquad V(8)=12, \\qquad V(27)=27$$
+
+Growth slows, because the exponent sits below $1$, yet it never stops or reverses. The finishing labour is strictly increasing, so the statement is True.`,
+      `**D.** → False
+
+The reciprocal has to be evaluated at the stated order size:
+
+$$U(8)=\\frac{600}{8}=75$$
+
+The claimed $80$ would require an order of $7.5$ units, since $\\frac{600}{7.5}=80$, and no such order is on the book. Rounding a spread up to a convenient figure matters here, because the quote is per unit and multiplies back up across the batch. The spread at eight units is $75$ euros per unit rather than $80$, so the statement is False.`,
+      `**E.** → True
+
+A fractional exponent is easiest to take in two steps, root first and power second:
+
+$$8^{\\frac{2}{3}}=\\left(8^{\\frac{1}{3}}\\right)^{2}=2^{2}=4, \\qquad V(8)=3\\cdot 4=12$$
+
+Reversing the two steps costs nothing here, since $8^{2}=64$ and the cube root of $64$ is again $4$, but taking the root first keeps the numbers small enough to do in the head.
+
+A second check uses a scale factor, where the coefficient cancels and only the exponent survives:
+
+$$\\frac{V(8q)}{V(q)}=\\frac{3(8q)^{\\frac{2}{3}}}{3q^{\\frac{2}{3}}}=8^{\\frac{2}{3}}=4$$
+
+An order eight times larger therefore takes four times the hours, and since $V(1)=3$ that route lands on $12$ hours once more.
+
+The wrong path worth naming is treating the exponent as a multiplier and computing $3\\cdot \\frac{2}{3}\\cdot 8=16$ hours, which mistakes a power for a product and quietly assumes labour rises in step with the batch. The exponent below $1$ says the opposite, and the neighbouring order sizes make the pattern plain, since $V(1)=3$ and $V(27)=27$ leave $12$ hours sitting between them at the right spacing. The finishing labour at eight units is $12$ hours, so the statement is True.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 91,
+    solution_overview: `The rules are $U(q)=600q^{-1}$ euros per unit and $V(q)=3q^{\\frac{2}{3}}$ hours on $q>0$, and direction and sign matter as much as levels.
+
+**Part 1: Building the model.**
+
+Let $q$ = order size in finished units, $U$ = overhead spread in euros per unit, $V$ = finishing labour in hours. Both rules are power functions on $q>0$ with positive coefficients, and the sign of the exponent decides the direction of each one while the positivity of the coefficient decides the sign of each output.
+
+**1. Translate: the negative exponent.** A fixed overhead divided across the batch is a reciprocal rule, which falls but never crosses zero:
+
+$$U(q)=\\frac{600}{q}$$
+
+**2. Translate: the positive exponent.** Shared jigs and setup make labour rise more slowly than the batch, an exponent between $0$ and $1$:
+
+$$V(q)=3q^{\\frac{2}{3}}$$
+
+**Part 2: The model.**
+
+$$U(q)=\\frac{600}{q} \\quad \\text{on } q>0 \\tag{1}$$
+
+$$V(q)=3q^{\\frac{2}{3}} \\quad \\text{on } q>0 \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** Overhead spread at three order sizes, from $(1)$:
+
+$$U(2)=300, \\qquad U(8)=75, \\qquad U(30)=20$$
+
+**2.** Fractional powers needed for $(2)$, taken as a cube root followed by a square:
+
+$$8^{\\frac{2}{3}}=4, \\qquad 27^{\\frac{2}{3}}=9, \\qquad 64^{\\frac{2}{3}}=16$$
+
+**3.** Finishing labour at the same order sizes:
+
+$$V(8)=12, \\qquad V(27)=27, \\qquad V(64)=48$$
+
+**4.** Directions and signs, read off the exponents rather than from the table:
+
+$$U \\text{ falls, } U>0; \\qquad V \\text{ rises, } V>0$$
+
+**5.** The two rules therefore move in opposite directions as an order grows, while both stay strictly positive. Overhead spread falls towards zero without reaching it, and finishing labour rises without any ceiling, though each extra unit adds a little less labour than the one before it.
+
+**Answer.** $U$ strictly decreasing and always positive | $V$ strictly increasing | $U(8)=75$ | $V(8)=12$`,
+  },
+  {
+    id: `math-8-92`,
+    case_id: `MATH 8.92`,
+    title: `One Bottling Line Reading and the Coefficient It Fixes`,
+    context: `A bottling line runs at $Q(s)=As^{\\frac{1}{2}}$ crates per hour for $s>0$ staff, and $25$ staff gave $40$ crates per hour. Evaluate each statement. Mark it TRUE or FALSE.`,
+    statements: [
+      `The coefficient is $A=8$.`,
+      `$Q(100)=80$ crates per hour.`,
+      `Quadrupling the staffing doubles the output.`,
+      `Doubling $A$ would double the ratio $\\frac{Q(4s)}{Q(s)}$.`,
+      `$Q(4)=20$ crates per hour.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The audited shift is one equation in one unknown, and the square root of the staffing is whole:
+
+$$25^{\\frac{1}{2}}=5 \\quad \\Rightarrow \\quad 5A=40 \\quad \\Rightarrow \\quad A=8$$
+
+Dividing output by staffing gives $\\frac{40}{25}=1.6$, which answers a different question, crates per member of staff. The coefficient is $8$, so the statement is True.`,
+      `**B.** → True
+
+With the coefficient recovered the rule is $Q(s)=8s^{\\frac{1}{2}}$, and the proposed shift has a whole square root:
+
+$$100^{\\frac{1}{2}}=10, \\qquad Q(100)=8\\cdot 10=80$$
+
+The scaling route agrees without touching the coefficient again, since the staffing rises by a factor of $4$ from the audited shift and $4^{\\frac{1}{2}}=2$, so the audited $40$ crates per hour doubles to $80$. Quadrupling the staff does not quadruple the output. The proposed shift runs at $80$ crates per hour, so the statement is True.`,
+      `**C.** → True
+
+A scale factor of a power function is fixed by the exponent alone, because the coefficient cancels in the ratio:
+
+$$\\frac{Q(4s)}{Q(s)}=\\frac{A(4s)^{\\frac{1}{2}}}{As^{\\frac{1}{2}}}=4^{\\frac{1}{2}}=2$$
+
+Doubled output for quadrupled staffing is the signature of the exponent $\\frac{1}{2}$, and it holds wherever the quadrupling starts, not only at the audited shift.
+
+Levels say the same thing in plain numbers, since each pair below is a quadrupling of staff against a doubling of crates:
+
+$$Q(4)=16, \\qquad Q(16)=32, \\qquad Q(25)=40, \\qquad Q(100)=80$$
+
+The tempting alternative is to expect four times the output for four times the staff, which would need an exponent of $1$. With an exponent below $1$ each extra member of staff adds a little less than the one before, and the gain from quadrupling settles at $\\sqrt{4}=2$ rather than $4$. A second quadrupling behaves the same way, taking staffing from $25$ to $100$ and output from $40$ to $80$ crates per hour, so the factor never drifts as the line grows. Quadrupling the staffing doubles the hourly output, so the statement is True.`,
+      `**D.** → False
+
+A doubled coefficient enters the numerator and the denominator of the ratio in equal measure, so the quotient cannot register it:
+
+$$\\frac{2A(4s)^{\\frac{1}{2}}}{2As^{\\frac{1}{2}}}=4^{\\frac{1}{2}}=2$$
+
+Levels are a different matter, since a doubled coefficient turns the audited $40$ crates per hour into $80$, which is what makes the reading tempting. A wrong coefficient distorts every output and no percentage gain. The ratio stays at $2$, so the statement is False.`,
+      `**E.** → False
+
+The small shift is evaluated the same way, root first and coefficient second:
+
+$$4^{\\frac{1}{2}}=2, \\qquad Q(4)=8\\cdot 2=16$$
+
+The claimed $20$ is half of the audited $40$ crates per hour, so it comes from treating output as proportional to staffing, which would need an exponent of $1$. With exponent $\\frac{1}{2}$, cutting staffing from $25$ to $4$ multiplies output by $\\left(\\frac{4}{25}\\right)^{\\frac{1}{2}}=\\frac{2}{5}$, giving $16$ crates per hour rather than $20$, so the statement is False.`,
+    ],
+    difficulty_level: `1/5`,
+    sort_order: 92,
+    solution_overview: `The bottling line follows $Q(s)=As^{\\frac{1}{2}}$ crates per hour, and one audited shift, $Q(25)=40$, fixes the coefficient $A$.
+
+**Part 1: Building the model.**
+
+Let $s$ = staff on the line, $Q$ = output in crates per hour. The exponent $\\frac{1}{2}$ is supplied and the audited shift fixes the coefficient. Levels then depend on the coefficient, while scale factors do not, and keeping those two apart is the whole point.
+
+**1. Translate: the audited shift.**
+
+$$A\\cdot 25^{\\frac{1}{2}}=40, \\qquad 25^{\\frac{1}{2}}=5$$
+
+**2. Translate: a staffing multiplier.** Multiplying the staffing by $k$ multiplies the output by $k^{\\frac{1}{2}}$, for any positive coefficient:
+
+$$\\frac{Q(ks)}{Q(s)}=\\frac{A(ks)^{\\frac{1}{2}}}{As^{\\frac{1}{2}}}=k^{\\frac{1}{2}}$$
+
+**Part 2: The model.**
+
+$$Q(s)=8s^{\\frac{1}{2}} \\tag{1}$$
+
+$$\\frac{Q(ks)}{Q(s)}=k^{\\frac{1}{2}} \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** The recovered coefficient:
+
+$$5A=40 \\quad \\Rightarrow \\quad A=8$$
+
+**2.** Outputs at the shift sizes in the plan, from $(1)$:
+
+$$Q(4)=16, \\qquad Q(25)=40, \\qquad Q(100)=80$$
+
+**3.** The quadrupling factor from $(2)$ with $k=4$:
+
+$$4^{\\frac{1}{2}}=2$$
+
+**4.** A counterfactual coefficient of $16$ instead of $8$, which lifts every level and moves no ratio:
+
+$$Q_{c}(4)=32, \\qquad Q_{c}(100)=160, \\qquad \\frac{Q_{c}(4s)}{Q_{c}(s)}=2$$
+
+**5.** Levels and ratios therefore answer a wrong coefficient in opposite ways. Every output would be doubled by a doubled coefficient, while every percentage gain from extra staff would stay exactly where it was, because the coefficient appears once above and once below the line.
+
+**Answer.** $A=8$ | $Q(4)=16$ | $Q(100)=80$ | quadrupling doubles output | the ratio ignores the coefficient`,
+  },
+];

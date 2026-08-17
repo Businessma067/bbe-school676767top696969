@@ -1,0 +1,122 @@
+[
+  {
+    "id": "math-11-1",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "text": "**D) If the bank instead compounded the same nominal rate annually, the effective annual rate would be higher than under monthly compounding.**  (false)\n\nComparing two compounding schedules means computing the effective annual rate under each one and setting the two numbers side by side. The rule is the same in both cases:\n\n$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$\n\nUnder the bank's actual monthly schedule, $r = 0.072$ and $n = 12$, so the periodic rate is $0.072/12 = 0.006$:\n\n$$R_{\\mathrm{mon}} = (1.006)^{12} - 1$$\n\n$$(1.006)^{12} \\approx 1.074424$$\n\n$$R_{\\mathrm{mon}} \\approx 0.074424 \\approx 7.44\\%$$\n\nUnder annual compounding there is a single interest date per year, so $n = 1$ and the formula collapses back to the nominal rate itself:\n\n$$R_{\\mathrm{ann}} = \\left(1 + \\frac{r}{1}\\right)^{1} - 1 = r$$\n\nSubstitute the same nominal quote $r = 0.072$:\n\n$$R_{\\mathrm{ann}} = 0.072 = 7.20\\%$$\n\nPlace the two effective rates against each other:\n\n$$7.20\\% < 7.44\\%$$\n\nMeasured in percentage points, the annual rate minus the monthly rate is\n\n$$R_{\\mathrm{ann}} - R_{\\mathrm{mon}} \\approx -0.24$$\n\nThe claim says annual compounding would give the higher effective rate. Annual compounding gives the lower one, so the statement is false."
+  },
+  {
+    "id": "math-11-1",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) The effective annual rate exceeds the nominal rate by more than 1.00 percentage point.**  (false)\n\nThe claim measures a gap between two rates, so both rates must be computed before the gap can be checked. The effective annual rate is\n\n$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$\n\nWith $r = 0.072$ and $n = 12$, the monthly periodic rate is $0.072/12 = 0.006$:\n\n$$R = (1.006)^{12} - 1$$\n\n$$(1.006)^{12} \\approx 1.074424$$\n\n$$R \\approx 0.074424 \\approx 7.4424\\%$$\n\nThe nominal rate quoted by the bank is\n\n$$r = 7.20\\%$$\n\nSubtract to get the gap between them:\n\n$$\\Delta = 7.4424\\% - 7.20\\%$$\n\nExpressed in percentage points, the resulting gap is\n\n$$\\Delta \\approx 0.24$$\n\nCompare that gap with the claimed cutoff:\n\n$$0.24 < 1.00$$\n\nThe effective rate sits only about a quarter of a percentage point above the nominal rate, well short of a full point, so the statement is false."
+  },
+  {
+    "id": "math-11-4",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "text": "**D) The effective annual rate exceeds the nominal annual rate by more than 2.00 percentage points.**  (true)\n\nThe gap in question needs both rates, so each is computed from the card's monthly charge of 1.75%. The nominal quote is twelve times that charge:\n\n$$r = 12 \\times 0.0175 = 0.21 = 21.00\\%$$\n\nThe effective annual rate compounds the same monthly charge:\n\n$$R = (1.0175)^{12} - 1$$\n\n$$(1.0175)^{12} \\approx 1.231439$$\n\n$$R \\approx 0.231439 \\approx 23.1439\\%$$\n\nSubtract to measure the gap:\n\n$$\\Delta = 23.1439\\% - 21.00\\%$$\n\nExpressed in percentage points, the gap is\n\n$$\\Delta \\approx 2.14$$\n\nCompare with the cutoff named in the claim:\n\n$$2.14 > 2.00$$\n\nThe effective rate clears the nominal rate by more than two percentage points, so the statement is true."
+  },
+  {
+    "id": "math-11-4",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) If the monthly rate were instead 1.50%, the effective annual rate would still exceed 20%.**  (false)\n\nChanging the monthly charge changes the monthly growth factor, so the effective rate has to be rebuilt from scratch:\n\n$$R = (1 + i_m)^{12} - 1$$\n\nReplace the card's actual monthly rate with the hypothetical $i_m = 1.50\\% = 0.015$, giving a monthly factor of $1.015$:\n\n$$R' = (1.015)^{12} - 1$$\n\n$$(1.015)^{12} \\approx 1.195618$$\n\n$$R' \\approx 0.195618$$\n\n$$R' \\approx 19.56\\%$$\n\nCompare with the 20% threshold named in the claim:\n\n$$19.56\\% < 20\\%$$\n\nMeasured in percentage points, the shortfall is\n\n$$20\\% - 19.56\\% \\approx 0.44$$\n\nAt a 1.50% monthly rate the effective annual rate falls about 0.44 points short of 20%, so the statement is false."
+  },
+  {
+    "id": "math-11-5",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) The gap between the EAR and the nominal rate exceeds 0.20 percentage points.**  (false)\n\nThe gap compares the compounded yield with the quoted nominal rate, so both numbers are needed:\n\n$$\\Delta = R - r$$\n\nThe effective annual rate for quarterly compounding of $r = 0.056$ uses the periodic rate $0.056/4 = 0.014$:\n\n$$R = (1.014)^{4} - 1$$\n\n$$(1.014)^{4} \\approx 1.057187$$\n\n$$R \\approx 0.057187 \\approx 5.7187\\%$$\n\nThe nominal rate quoted on the account is\n\n$$r = 5.60\\%$$\n\nSubtract the nominal rate from the effective rate:\n\n$$\\Delta \\approx 5.7187\\% - 5.60\\%$$\n\nExpressed in percentage points, the gap is\n\n$$\\Delta \\approx 0.12$$\n\nCompare with the cutoff named in the claim:\n\n$$0.12 < 0.20$$\n\nThe gap stays under 0.20 percentage points, so the statement is false."
+  },
+  {
+    "id": "math-11-6",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "text": "**D) If the nominal rate were doubled to 14.4%, the resulting effective annual rate would also be exactly double the original effective annual rate.**  (false)\n\nAn effective annual rate is built by raising a periodic growth factor to the power $n$, so it is not a proportional function of the nominal rate. Each scenario needs its own calculation:\n\n$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$\n\nAt the account's actual nominal rate $r = 0.072$ with $n = 12$, the monthly rate is $0.072/12 = 0.006$:\n\n$$R = (1.006)^{12} - 1$$\n\n$$(1.006)^{12} \\approx 1.074424$$\n\n$$R \\approx 0.074424 \\approx 7.4424\\%$$\n\nAt the doubled nominal rate $r' = 0.144$, still with $n = 12$, the monthly rate becomes $0.144/12 = 0.012$:\n\n$$R' = (1.012)^{12} - 1$$\n\n$$(1.012)^{12} \\approx 1.153895$$\n\n$$R' \\approx 0.153895 \\approx 15.3895\\%$$\n\nExactly double the original effective rate would be\n\n$$2 \\times 7.4424\\% = 14.8848\\%$$\n\nCompare the two figures:\n\n$$15.3895\\% \\neq 14.8848\\%$$\n\nMeasured in percentage points, the excess above an exact doubling is\n\n$$15.3895\\% - 14.8848\\% \\approx 0.50$$\n\nDoubling the nominal rate overshoots double the effective rate by about half a percentage point, so the statement is false."
+  },
+  {
+    "id": "math-11-7",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) The increase in effective rate from semi-annual to quarterly is smaller than the increase from quarterly to monthly.**  (false)\n\nThe claim compares two differences, so all three effective rates are needed first. Each one comes from\n\n$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$\n\nwith the nominal rate fixed at $r = 0.15$. Twice a year the periodic rate is $0.15/2 = 0.075$:\n\n$$R_2 = (1.075)^{2} - 1 = 0.155625 \\approx 15.5625\\%$$\n\nEach quarter the periodic rate is $0.15/4 = 0.0375$:\n\n$$R_4 = (1.0375)^{4} - 1 \\approx 0.158650 \\approx 15.8650\\%$$\n\nEach month the periodic rate is $0.15/12 = 0.0125$:\n\n$$R_{12} = (1.0125)^{12} - 1 \\approx 0.160755 \\approx 16.0755\\%$$\n\nMeasured in percentage points, the first increase is\n\n$$15.8650\\% - 15.5625\\% = 0.3025$$\n\nMeasured in the same unit, the second increase is\n\n$$16.0755\\% - 15.8650\\% = 0.2105$$\n\nCompare the two gaps:\n\n$$0.3025 > 0.2105$$\n\nThe first increase is the larger of the two rather than the smaller, so the statement is false."
+  },
+  {
+    "id": "math-11-10",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) The two options' effective annual rates differ by more than 0.05 percentage points.**  (false)\n\nThe claim measures the distance between two effective rates, so both are computed from\n\n$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$\n\nOption (a) has $n = 1$ at 10.80% nominal:\n\n$$R_a = (1.1080)^{1} - 1 = 0.1080 = 10.80\\%$$\n\nOption (b) has $n = 4$ at 10.40% nominal, so the quarterly rate is $0.104/4 = 0.026$:\n\n$$R_b = (1.026)^{4} - 1$$\n\n$$(1.026)^{4} \\approx 1.108127$$\n\n$$R_b \\approx 10.8127\\%$$\n\nSubtract to find the distance between them:\n\n$$\\Delta = 10.8127\\% - 10.80\\%$$\n\nExpressed in percentage points, the distance is\n\n$$\\Delta \\approx 0.0127$$\n\nCompare with the cutoff named in the claim:\n\n$$0.0127 < 0.05$$\n\nThe two effective rates sit about one hundredth of a percentage point apart, well inside the 0.05 threshold, so the statement is false."
+  },
+  {
+    "id": "math-11-13",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) The gap between the effective annual rate and the nominal rate exceeds 0.20 percentage points.**  (false)\n\nThe gap is the difference between the compounded yearly yield and the quoted nominal rate:\n\n$$\\Delta = R - r$$\n\nThe effective annual rate for daily compounding of $r = 0.0425$ uses the daily factor $1 + 0.0425/365 \\approx 1.00011644$:\n\n$$R = (1.00011644)^{365} - 1$$\n\n$$R \\approx 0.043413 \\approx 4.3413\\%$$\n\nThe nominal quote on the account is\n\n$$r = 4.25\\%$$\n\nSubtract the nominal rate from the effective rate:\n\n$$\\Delta \\approx 4.3413\\% - 4.25\\%$$\n\nExpressed in percentage points, the gap is\n\n$$\\Delta \\approx 0.09$$\n\nCompare with the cutoff named in the claim:\n\n$$0.09 < 0.20$$\n\nThe gap is less than half the claimed threshold, so the statement is false."
+  },
+  {
+    "id": "math-11-14",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "text": "**C) The effective annual rate is approximately 22.80%, the same as the nominal annual rate.**  (false)\n\nThe two rates are built in different ways, so each must be computed separately. The nominal quote adds up twelve monthly charges:\n\n$$r = 12 \\times 0.019 = 0.228 = 22.80\\%$$\n\nThe effective rate compounds those same charges:\n\n$$R = (1 + i_m)^{12} - 1$$\n\n$$R = (1.019)^{12} - 1$$\n\n$$(1.019)^{12} \\approx 1.253401$$\n\n$$R \\approx 0.253401 \\approx 25.34\\%$$\n\nCompare the two figures:\n\n$$25.34\\% \\neq 22.80\\%$$\n\nMeasured in percentage points, their difference is\n\n$$25.34\\% - 22.80\\% = 2.54$$\n\nInterest charged on earlier interest lifts the effective rate about 2.54 points above the nominal quote, so the two are not the same and the statement is false."
+  },
+  {
+    "id": "math-11-14",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) The effective annual rate exceeds the nominal annual rate by more than 3.00 percentage points.**  (false)\n\nThe claim needs both rates before the gap can be measured. The nominal quote is twelve times the monthly charge:\n\n$$r = 12 \\times 0.019 = 0.228 = 22.80\\%$$\n\nThe effective annual rate compounds that same monthly charge:\n\n$$R = (1.019)^{12} - 1$$\n\n$$(1.019)^{12} \\approx 1.253401$$\n\n$$R \\approx 0.253401 \\approx 25.3401\\%$$\n\nSubtract to measure the gap:\n\n$$\\Delta = 25.3401\\% - 22.80\\%$$\n\nExpressed in percentage points, the gap is\n\n$$\\Delta \\approx 2.54$$\n\nCompare with the cutoff named in the claim:\n\n$$2.54 < 3.00$$\n\nThe gap falls about 0.46 points short of three percentage points, so the statement is false."
+  },
+  {
+    "id": "math-11-15",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) The jump in effective rate from semi-annual to quarterly is smaller than the jump from quarterly to monthly.**  (false)\n\nThe claim compares two jumps, so all three effective rates come first, each from\n\n$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$\n\nwith $r = 0.10$ held fixed. Twice a year the periodic rate is $0.05$:\n\n$$R_2 = (1.05)^{2} - 1 = 0.1025 = 10.25\\%$$\n\nEach quarter the periodic rate is $0.025$:\n\n$$R_4 = (1.025)^{4} - 1 \\approx 0.103813 \\approx 10.3813\\%$$\n\nEach month the periodic rate is about $0.0083333$:\n\n$$R_{12} = (1.0083333)^{12} - 1 \\approx 0.104713 \\approx 10.4713\\%$$\n\nMeasured in percentage points, the first jump is\n\n$$10.3813\\% - 10.25\\% = 0.1313$$\n\nMeasured in the same unit, the second jump is\n\n$$10.4713\\% - 10.3813\\% = 0.0900$$\n\nCompare the two:\n\n$$0.1313 > 0.0900$$\n\nThe first jump is the larger of the two rather than the smaller, so the statement is false."
+  },
+  {
+    "id": "math-11-19",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "text": "**C) CD3's effective annual rate is approximately 6.55%, essentially the same as CD2's.**  (true)\n\nBoth certificates need their own effective annual rate before they can be called equal:\n\n$$R = \\left(1 + \\frac{r}{n}\\right)^{n} - 1$$\n\nCD3 quotes a nominal $r = 6.45\\% = 0.0645$ compounded twice a year, so $n = 2$ and each half year carries $0.0645/2 = 0.03225$:\n\n$$R_3 = (1.03225)^{2} - 1$$\n\n$$(1.03225)^{2} \\approx 1.065540$$\n\n$$R_3 \\approx 0.065540 \\approx 6.5540\\%$$\n\nCD2 quotes a nominal $0.064$ compounded quarterly, so its quarterly rate is $0.064/4 = 0.016$:\n\n$$R_2 = (1.016)^{4} - 1 \\approx 0.065552 \\approx 6.5552\\%$$\n\nCompare the two. Their difference, measured in percentage points, is\n\n$$R_2 - R_3 \\approx 0.0012$$\n\nCD3's lower compounding frequency is offset almost exactly by its higher nominal quote, so both effective rates round to 6.55% and the statement is true."
+  },
+  {
+    "id": "math-11-23",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "text": "**C) The EAR exceeds the nominal rate by more than 0.75 percentage points.**  (false)\n\nThe gap compares the continuously compounded yield with the quoted nominal rate:\n\n$$\\Delta = \\left(e^{r} - 1\\right) - r$$\n\nWith the fund's nominal rate $r = 0.09$:\n\n$$e^{0.09} \\approx 1.0941743$$\n\n$$\\mathrm{EAR} \\approx 0.0941743 \\approx 9.4174\\%$$\n\nSubtract the nominal rate:\n\n$$\\Delta \\approx 9.4174\\% - 9.00\\%$$\n\nExpressed in percentage points, the gap is\n\n$$\\Delta \\approx 0.4174$$\n\nCompare with the cutoff named in the claim:\n\n$$0.4174 < 0.75$$\n\nThe gap is a little more than half the claimed threshold, so the statement is false."
+  },
+  {
+    "id": "math-11-31",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "text": "**C) A naive straight-line projection - extending the average dollar increase observed over the first 3 years for 2 more years - gives the same result as the correct exponential projection.**  (false)\n\nTwo different projection rules are on the table here, so both have to be carried out from the same observed data and then compared. A straight-line projection adds a fixed number of dollars each year. Write $g$ for the average annual dollar gain already observed:\n\n$$g = \\frac{S(3) - S_0}{3}$$\n\nSubstituting the two observed endpoints:\n\n$$g = \\frac{34,200 - 28,000}{3}$$\n\nThe numerator is the observed gain of \\$6,200, and dividing it across three years gives\n\n$$g = \\frac{6,200}{3} \\approx 2,066.67$$\n\nThus the fixed linear increment is approximately \\$2,066.67 per year. Extending that fixed dollar increment for 2 more years past the observed \\$34,200 balance:\n\n$$34,200 + 2 \\times 2,066.67 = 38,333.33$$\n\nThe correct exponential projection instead holds the percentage rate fixed. The implied rate is recovered from the observed leg:\n\n$$r = \\frac{\\ln(34,200/28,000)}{3} = \\frac{0.200021}{3} \\approx 0.066674$$\n\nApplying that rate from the original principal over the full 5 years:\n\n$$S(5) = 28,000 \\times e^{0.066674 \\times 5} = 28,000 \\times e^{0.333370}$$\n\n$$e^{0.333370} \\approx 1.395661$$\n\n$$S(5) \\approx 39,078.52$$\n\nNow compare the two projected balances:\n\n$$39,078.52 - 38,333.33 = 745.19$$\n\nThe straight-line figure sits \\$745.19 below the exponential figure, because exponential growth keeps applying the percentage to an ever larger base while the linear rule freezes the dollar increment at its old average. The two methods do not agree, so the statement is false."
+  },
+  {
+    "id": "math-11-37",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "text": "**D) The effective 7-year rate is higher than the plain, unweighted average of the two phase rates.**  (true)\n\nTwo averages are being compared here, so both have to be computed. The effective rate is the time-weighted average, since each phase contributes its rate multiplied by how long it lasted:\n\n$$r_{\\mathrm{eff}} = \\frac{r_1 t_1 + r_2 t_2}{t_1 + t_2}$$\n\nSubstituting $r_1 = 0.10$ for 4 years and $r_2 = 0.04$ for 3 years:\n\n$$r_1 t_1 + r_2 t_2 = 0.10 \\times 4 + 0.04 \\times 3 = 0.40 + 0.12 = 0.52$$\n\n$$r_{\\mathrm{eff}} = \\frac{0.52}{7} \\approx 0.074286 = 7.43\\%$$\n\nThe plain unweighted average ignores the durations and simply splits the two rates evenly:\n\n$$\\bar{r} = \\frac{r_1 + r_2}{2} = \\frac{0.10 + 0.04}{2} = 0.07 = 7.00\\%$$\n\nCompare the two. Measured in percentage points, the difference is\n\n$$7.43\\% - 7.00\\% = 0.43$$\n\nThe time-weighted figure sits 0.43 percentage points above the plain average, and it has to, because the faster $10\\%$ phase ran for 4 years against only 3 years at $4\\%$, so the higher rate carries the larger weight. The statement is true."
+  },
+  {
+    "id": "math-11-41",
+    "kind": "tactical_explanations",
+    "index": 0,
+    "text": "**A) The discount factor is approximately 0.9524.**  (true)\n\nThe discount factor is the number that converts one dollar received at a future date into dollars today. Write $d$ for this factor. Under annual compounding it is the reciprocal of the growth factor:\n\n$$d = (1+r)^{-t}$$\n\nThe bonus is payable in exactly 1 year and the prevailing rate is $5\\%$ per year, so substitute $r = 0.05$ and $t = 1$:\n\n$$d = (1.05)^{-1} = \\frac{1}{1.05}$$\n\n$$d \\approx 0.952381$$\n\nRounded to four decimal places that is 0.9524, which is what the claim states. Every dollar promised a year from now is worth about 95.24 cents today at this rate, so the statement is true."
+  },
+  {
+    "id": "math-11-42",
+    "kind": "tactical_explanations",
+    "index": 0,
+    "text": "**A) The continuous discount factor is approximately 0.8353.**  (true)\n\nContinuous discounting shrinks a future payment by the factor $e^{-rt}$, where the rate and the horizon multiply inside the exponent. Write $d$ for that discount factor:\n\n$$d = e^{-rt}$$\n\nThe client discounts at $6\\%$ per year and the milestone payment arrives in 3 years, so first form the exponent:\n\n$$rt = 0.06 \\times 3 = 0.18$$\n\nNow evaluate the factor at that exponent:\n\n$$d = e^{-0.18} \\approx 0.835270$$\n\nRounded to four decimal places this is 0.8353, exactly the figure in the claim. In words, about $83.53\\%$ of the payment's face value survives three years of continuous discounting at this rate, so the statement is true."
+  },
+  {
+    "id": "math-11-43",
+    "kind": "tactical_explanations",
+    "index": 0,
+    "text": "**A) The annual discount factor is approximately 0.5820.**  (true)\n\nThe annual discount factor converts one dollar at the payout date into dollars today, and it is the reciprocal of the compound growth factor. Write $d$ for this factor:\n\n$$d = (1+r)^{-t}$$\n\nThe escrowed proceeds arrive in 8 years at a rate of $7\\%$ per year, so build the growth factor first:\n\n$$(1.07)^{8} \\approx 1.718186$$\n\nNow invert it:\n\n$$d = (1.07)^{-8} = \\frac{1}{1.718186}$$\n\n$$d \\approx 0.582009$$\n\nRounded to four decimal places that is 0.5820, exactly the figure the claim gives. A little over $58\\%$ of each future dollar survives eight years of annual discounting at this rate, so the statement is true."
+  },
+  {
+    "id": "math-11-44",
+    "kind": "tactical_explanations",
+    "index": 0,
+    "text": "**A) The continuous discount factor is approximately 0.8125.**  (false)\n\nThe continuous discount factor is the exponential of the negative of the rate multiplied by the horizon. Write $d$ for this factor:\n\n$$d = e^{-rt}$$\n\nThe bank offers $4.5\\%$ continuous interest and the equipment purchase is 5 years away, so form the exponent first:\n\n$$rt = 0.045 \\times 5 = 0.225$$\n\nNow evaluate the factor:\n\n$$d = e^{-0.225} \\approx 0.798516$$\n\nCompare with the claimed value:\n\n$$0.8125 - 0.7985 = 0.0140$$\n\nThe correct factor is about 0.7985, roughly 0.014 below the claimed 0.8125, a difference that would misprice the deposit by more than \\$2,000 on a \\$150,000 goal. The statement is false."
+  }
+]

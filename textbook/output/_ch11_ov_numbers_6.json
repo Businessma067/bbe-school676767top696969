@@ -1,0 +1,37 @@
+[
+  {
+    "id": "math-11-106",
+    "caseId": "MATH 11.106",
+    "missing_numbers": [
+      "495000"
+    ],
+    "original_context": [
+      "t $r = 0.14$: $PV_{\\mathrm{B}} = 100,000 + (100,000/0.14)[1-(1.14)^{-6}] = 100,000 + 714,285.71\\times0.544813 \\approx \\$488,866.75$ (not $\\$495,000.00$)."
+    ],
+    "current_text": "A logistics company needs to acquire a fleet of delivery vehicles and is choosing between two payment schedules. Option A: pay \\$500,000 in cash today. Option B: pay \\$100,000 per year for 7 years, with the first payment due immediately and each subsequent payment due at the beginning of the following years. The company wants to know which option is cheaper in present-value terms, first at a 10% annual interest rate and then at a 14% annual interest rate.\r\n\r\n**Part 1: Setup.**\r\n\r\nOption A is a single payment of \\$500,000 today. Option B has seven annual payments of \\$100,000, with the first payment made immediately:\r\n\r\n$$a = 100,000, \\qquad n = 7$$\r\n\r\nThe two annual rates to test are $r = 0.10$ and $r = 0.14$.\r\n\r\n**Part 2: Formula.**\r\n\r\nBecause the first instalment is immediate, Option B is an annuity due. Its present value is the immediate payment plus the present value of the remaining six payments:\r\n\r\n$$PV_{\\mathrm{B}} = a + \\frac{a}{r}\\left[1-(1+r)^{-(n-1)}\\right]$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** At the 10% annual rate, substitute $a = 100,000$, $r = 0.10$, and $n - 1 = 6$:\r\n\r\n$$PV_{\\mathrm{B}} = 100,000 + \\frac{100,000}{0.10}\\left[1-(1.10)^{-6}\\right]$$\r\n\r\n$$= 100,000 + 1,000,000(0.435526)$$\r\n\r\n$$PV_{\\mathrm{B}} \\approx 535,526.07$$\r\n\r\nOption B costs about \\$535,526.07 in present-value terms.\r\n\r\n**2.** Compare that value with Option A's \\$500,000 cash price:\r\n\r\n$$535,526.07 > 500,000.00$$\r\n\r\nAt 10%, paying cash is cheaper.\r\n\r\n**3.** At the 14% annual rate, repeat the annuity-due calculation:\r\n\r\n$$PV_{\\mathrm{B}} = 100,000 + \\frac{100,000}{0.14}\\left[1-(1.14)^{-6}\\right]$$\r\n\r\n$$= 100,000 + 714,285.71(0.544813)$$\r\n\r\n$$PV_{\\mathrm{B}} \\approx 488,866.75$$\r\n\r\nThe result is about \\$488,866.75, not \\$495,000.00.\r\n\r\n**4.** Compare the revised present value with the cash price:\r\n\r\n$$488,866.75 < 500,000.00$$\r\n\r\nAt 14%, the instalment plan becomes cheaper."
+  },
+  {
+    "id": "math-11-107",
+    "caseId": "MATH 11.107",
+    "missing_numbers": [
+      "1100",
+      "200"
+    ],
+    "original_context": [
+      "**1.** Year-end equivalent: $250\\times(4 + 1.5\\times0.08) = 250\\times4.12 = \\$1,030.00$ (not $\\$1,100.00$).",
+      "g mid-year interest ($a = \\$1,000$) gives $4$-year FV $\\approx \\$4,506.11$ — less than the correct $\\$4,641.30$ by about $\\$135.18$ (not $\\$200.00$)."
+    ],
+    "current_text": "At the end of each quarter, a small business owner deposits \\$250 into a savings account that pays interest once per year, at an annual rate of 8%. Because each quarterly deposit sits in the account for only part of the year before the annual interest is credited, the bank applies simple interest to each deposit for the fraction of the year it remains on deposit before the year-end crediting date.\r\n\r\n**Part 1: Setup.**\r\n\r\nEach quarterly deposit is \\$250, and the annual rate is $r = 0.08$. Interest is credited once per year, so the four deposits must first be combined into a year-end equivalent:\r\n\r\n$$D = 250, \\qquad r = 0.08$$\r\n\r\n**Part 2: Formula.**\r\n\r\nThe year-end equivalent of the quarterly deposits is:\r\n\r\n$$a = D(4+1.5r)$$\r\n\r\nOnce that equivalent annual deposit is known, its future value after $N$ years is:\r\n\r\n$$F_N = \\frac{a}{r}\\left[(1+r)^N-1\\right]$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Substitute the quarterly deposit and annual rate into the year-end equivalent:\r\n\r\n$$a = 250(4+1.5\\times0.08)$$\r\n\r\n$$= 250(4.12)$$\r\n\r\n$$a = 1,030.00$$\r\n\r\nThe correct year-end equivalent is \\$1,030.00, not \\$1,100.00.\r\n\r\n**2.** For four years, use $N = 4$ in the future-value formula:\r\n\r\n$$F_4 = \\frac{1,030}{0.08}\\left[(1.08)^4-1\\right]$$\r\n\r\n$$F_4 \\approx 4,641.30$$\r\n\r\nFor three years, use $N = 3$:\r\n\r\n$$F_3 = \\frac{1,030}{0.08}\\left[(1.08)^3-1\\right]$$\r\n\r\n$$F_3 \\approx 3,343.79$$\r\n\r\nThe balances are about \\$4,641.30 after four years and \\$3,343.79 after three years.\r\n\r\n**3.** Ignoring the interest earned within each year would replace the equivalent annual deposit by only \\$1,000:\r\n\r\n$$F_4 = \\frac{1,000}{0.08}\\left[(1.08)^4-1\\right]$$\r\n\r\n$$F_4 \\approx 4,506.11$$\r\n\r\nThe shortfall from that simplification is:\r\n\r\n$$4,641.30-4,506.11 \\approx 135.18$$\r\n\r\nIt understates the correct balance by about \\$135.18, not \\$200.00."
+  },
+  {
+    "id": "math-11-108",
+    "caseId": "MATH 11.108",
+    "missing_numbers": [
+      "120000"
+    ],
+    "original_context": [
+      "$ of original — not more than $25\\%$). Interest in first $5$ years $\\approx \\$55,770.92$; full-term interest $\\approx \\$143,886.91$ (not $\\$120,000.00$)."
+    ],
+    "current_text": "A family takes out a \\$200,000 home mortgage at a nominal annual interest rate of 6%, compounding monthly, to be repaid with equal payments at the end of each month over 20 years. After making exactly 5 years of payments, they want to know how much principal is still outstanding.\r\n\r\n**Part 1: Setup.**\r\n\r\nThe original mortgage principal is \\$200,000. Monthly compounding over 20 years gives 240 payments, and five completed years means 60 payments have already been made:\r\n\r\n$$K = 200,000, \\qquad n = 20\\times12 = 240$$\r\n\r\n$$m = 5\\times12 = 60$$\r\n\r\n**Part 2: Formula.**\r\n\r\nConvert the 6% nominal annual rate to a monthly rate:\r\n\r\n$$r = \\frac{0.06}{12}$$\r\n\r\nThe level monthly payment is:\r\n\r\n$$a = \\frac{rK}{1-(1+r)^{-n}}$$\r\n\r\nAfter $m$ payments, the outstanding balance is the present value of the remaining $n-m$ payments:\r\n\r\n$$B_m = \\frac{a}{r}\\left[1-(1+r)^{-(n-m)}\\right]$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** The monthly rate and payment are:\r\n\r\n$$r = 0.005$$\r\n\r\n$$a = \\frac{0.005(200,000)}{1-(1.005)^{-240}}$$\r\n\r\n$$= \\frac{1,000}{1-(1.005)^{-240}}$$\r\n\r\n$$a \\approx 1,432.86$$\r\n\r\nThe monthly payment is about \\$1,432.86.\r\n\r\n**2.** There are $240-60=180$ payments left after five years:\r\n\r\n$$B_{60} = \\frac{1,432.86}{0.005}\\left[1-(1.005)^{-180}\\right]$$\r\n\r\n$$B_{60} \\approx 169,799.20$$\r\n\r\nThe outstanding principal is about \\$169,799.20.\r\n\r\n**3.** The principal repaid is the original loan less the remaining balance:\r\n\r\n$$200,000-169,799.20 = 30,200.80$$\r\n\r\n$$\\frac{30,200.80}{200,000}\\times100\\% \\approx 15.10\\%$$\r\n\r\nThe family has repaid about \\$30,200.80 of principal, or 15.10%, not more than 25%. The interest paid in the first five years is about \\$55,770.92. Over the full term, total interest is about \\$143,886.91, not \\$120,000.00."
+  }
+]

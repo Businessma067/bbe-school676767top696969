@@ -1,0 +1,1423 @@
+{
+  "61": {
+    "id": "math-11-61",
+    "case_id": "MATH 11.61",
+    "title": "Startup Revenue Growth Over Five Years",
+    "subsection": "11.4",
+    "context": "A newly launched e-commerce startup earns \\$50 million in revenue this year and expects revenue to grow by 10% annually for each of the next four years, forming a finite geometric series with first term a = \\$50 million and quotient k = 1.10 over n = 5 years.",
+    "statements": [
+      "The expected revenue in year 2 is \\$55.00 million.",
+      "The expected revenue in year 5 is approximately \\$73.21 million.",
+      "The total revenue expected over the 5-year period is approximately \\$305.26 million.",
+      "If revenue had instead remained flat at \\$50 million per year for 5 years, the total would have been \\$250 million - exactly \\$60.00 million less than the actual growth-scenario total.",
+      "The total revenue expected over the 5-year period is approximately \\$328.86 million."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "solution_overview": "A newly launched e-commerce startup earns \\$50 million in revenue this year and expects revenue to grow by $10\\%$ annually for each of the next four years, forming a finite geometric series with first term $a = \\$50$ million and quotient $k = 1.10$ over $n = 5$ years.\n\n**Part 1: Setup.**\n\n$a$ (year-$1$ revenue) $= \\$50$ million; $k = 1.10$; $n = 5$ years.\n\n**Part 2: Formula.**\n\n$s_n = a(k^{n}-1)/(k-1)$ for $k \\neq 1$; term in year $t$: $a k^{t-1}$.\n\n**Part 3: Solve.**\n\n**1.** Year-$2$ revenue: $50\\times1.10 = \\$55.00$ million.\n\n**2.** Year-$5$ revenue: $50\\times(1.10)^{4} = 50\\times1.4641 = \\$73.205 \\to \\$73.21$ million.\n\n**3.** $k^{5} = 1.10^{5} = 1.61051$; $s_5 = 50\\times(1.61051-1)/0.10 = 50\\times6.1051 \\to \\$305.26$ million.\n\n**4.** Flat-revenue total ($k = 1$): $50\\times5 = \\$250.00$ million; difference $305.255-250 = \\$55.26$ million (not $\\$60$).",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 195,
+        "text": "**A) The expected revenue in year 2 is \\$55.00 million.**  (true)\n\nYear-2 revenue is the year-1 revenue multiplied once by the growth factor: $50 \\times 1.10 = \\$55.00$ million, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 374,
+        "text": "**B) The expected revenue in year 5 is approximately \\$73.21 million.**  (true)\n\nCounting from year 1 (which is simply a itself) up to year 5, the revenue has been multiplied by 1.10 four separate times - once for each step from year 1 to year 2, year 2 to year 3, and so on up to year 5.\n\n$$50 \\times (1.10)^{4} = 50 \\times 1.4641 = 73.205 \\approx \\$73.21 \\text{ million}$$"
+      },
+      {
+        "letter": "C",
+        "len": 380,
+        "text": "**C) The total revenue expected over the 5-year period is approximately \\$305.26 million.**  (true)\n\nAdding up five terms that each grow by a factor of 1.10 over the previous one gives a total of $s_5 = a(k^{5}-1)/(k-1)$. Plugging in $a=50$ and $k=1.10$ gives $k^{5} = 1.61051$, so $s_5 = 50 \\times (1.61051-1)/0.10 = 50 \\times 6.1051 = 305.255$, which rounds to \\$305.26 million."
+      },
+      {
+        "letter": "D",
+        "len": 628,
+        "text": "**D) If revenue had instead remained flat at \\$50 million per year for 5 years, the total would have been \\$250 million - exactly \\$60.00 million less than the actual growth-scenario total.**  (false)\n\nA flat schedule of \\$50 million every year for 5 years does total 50×5 = \\$250.00 million - that part checks out. But the true gap between that flat total and the actual growth total of \\$305.255 million is 305.255 - 250.00 = \\$55.26 million, not \\$60.00 million; the stated gap overstates the real difference by roughly \\$4.74 million.\n\nFlat total: $50 \\times 5 = 250$. Gap:\n\n$$305.255 - 250 = 55.255 \\approx 55.26$$\n\nnot 60."
+      },
+      {
+        "letter": "E",
+        "len": 466,
+        "text": "**E) The total revenue expected over the 5-year period is approximately \\$328.86 million.**  (false)\n\nRecomputing $s_5$ carefully with a=50, k=1.10, n=5 gives exactly 50×(1.61051-1)/0.10 = \\$305.255 million, which rounds to about \\$305.26 million, as already shown in part (c). The figure of \\$328.86 million simply does not match this calculation and is incorrect.\n\nThe same $s_5 = 305.255$ already computed in (C) is the 5-year total. 328.86 is a different number."
+      }
+    ]
+  },
+  "62": {
+    "id": "math-11-62",
+    "case_id": "MATH 11.62",
+    "title": "Perpetual Profit Stream from a Subscription Box Line",
+    "subsection": "11.4",
+    "context": "A subscription box company just earned \\$2,000 in profit from its newest product line this month. Because customer renewals are expected to halve every month indefinitely, monthly profits are modeled as an infinite geometric series with first term a = \\$2,000 and quotient k = 0.5.",
+    "statements": [
+      "The infinite profit series converges to a finite sum.",
+      "The infinite sum of all future monthly profits is \\$4,000.00.",
+      "The sum of just the first 4 months' profits is \\$3,750.00.",
+      "The sum of the first 4 months' profits exceeds the infinite sum.",
+      "If the quotient were instead k = 1.5, the infinite series would still converge, to a sum of \\$-4,000.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "solution_overview": "A subscription box company just earned \\$2,000 in profit from its newest product line this month. Because customer renewals are expected to halve every month indefinitely, monthly profits are modeled as an infinite geometric series with first term a = \\$2,000 and quotient k = 0.5.\n\n**Part 1: Setup.**\n\na (month-1 profit) = \\$2,000\n\nk (monthly decay quotient) = 0.5\n\n**Part 2: Formula.**\n\nInfinite sum (|k| < 1): $a + ak + ak^{2} + \\cdots = a/(1 - k)$\n\nFinite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$\n\n**Part 3: Solve.**\n\n**1.** $|k| = 0.5 < 1$, so the series converges.\n\n**2.** Infinite sum: $2,000/(1 - 0.5) = 2,000/0.5 = \\$4,000.00$.\n\n**3.** First $4$ terms: $2,000 + 1,000 + 500 + 250 = \\$3,750.00$.\n\n**4.** $3,750.00 < 4,000.00$, so the partial sum does not exceed the infinite sum.\n\n**5.** If $k = 1.5$, then $|k| = 1.5 \\ge 1$, so the series diverges and has no finite sum at all.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 403,
+        "text": "**A) The infinite profit series converges to a finite sum.**  (true)\n\nConvergence of an infinite geometric series depends only on the size of the ratio between consecutive terms. Here each month's profit is exactly half of the previous month's, so $|k| = 0.5 < 1$, comfortably below 1 - the running total therefore settles toward a fixed number instead of growing without bound as more months are added."
+      },
+      {
+        "letter": "B",
+        "len": 301,
+        "text": "**B) The infinite sum of all future monthly profits is \\$4,000.00.**  (true)\n\nWhen $|k|$ is less than 1, the sum of every term added together forever works out to $a/(1-k)$: $s_{\\infty} = 2,000/(1-0.5) = 2,000/0.5 = \\$4,000.00$, the value the cumulative profit approaches as more and more months pass."
+      },
+      {
+        "letter": "C",
+        "len": 286,
+        "text": "**C) The sum of just the first 4 months' profits is \\$3,750.00.**  (true)\n\nThe first four monthly profits are $2,000$, then $2,000 \\times 0.5 = 1,000$, then $2,000 \\times 0.25 = 500$, then $2,000 \\times 0.125 = 250$. Adding these directly gives $s_4 = 2,000+1,000+500+250 = \\$3,750.00$."
+      },
+      {
+        "letter": "D",
+        "len": 457,
+        "text": "**D) The sum of the first 4 months' profits exceeds the infinite sum.**  (false)\n\nEvery term in this series is a positive dollar amount, so each additional month can only add to the running total, never subtract from it - the partial sum after any finite number of months must therefore sit below the full infinite total. Since $\\$3,750.00 < \\$4,000.00$, the first four months' total falls short of the infinite total by $\\$250.00$ rather than exceeding it."
+      },
+      {
+        "letter": "E",
+        "len": 742,
+        "text": "**E) If the quotient were instead k = 1.5, the infinite series would still converge, to a sum of \\$-4,000.00.**  (false)\n\nA ratio of k=1.5 has absolute value 1.5, which is greater than 1, so the successive terms of the series (2,000, 3,000, 4,500, 6,750, and so on) keep growing larger and larger instead of shrinking toward zero. A series whose terms grow without bound cannot settle on any single finite total, so it has no sum at all; calling it convergent to \\$-4,000.00, or to any specific number, misapplies the whole idea of a limiting sum.\n\nIf $k = 1.5$, then $|k| = 1.5 > 1$. Terms $2,000, 3,000, 4,500, \\ldots$ grow, so the series diverges. The formula $a/(1-k)$ is not applicable, and a negative “sum” of $\\$-4,000$ is meaningless."
+      }
+    ]
+  },
+  "63": {
+    "id": "math-11-63",
+    "case_id": "MATH 11.63",
+    "title": "Declining Annual Deposits into a Sinking Fund",
+    "subsection": "11.4",
+    "context": "An investor commits to an unusual sinking-fund plan: this year's deposit is \\$800, and each following year's deposit is 90% of the previous year's deposit, continuing indefinitely. This is an infinite geometric series with a = \\$800 and k = 0.90.",
+    "statements": [
+      "The infinite deposit series converges.",
+      "The infinite sum of all deposits is \\$8,000.00.",
+      "The sum of the first 10 deposits is approximately \\$5,210.57.",
+      "The first 10 deposits together represent about 65% of the infinite total sum.",
+      "If the quotient were instead k = 1.10, the series would diverge."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "solution_overview": "An investor commits to an unusual sinking-fund plan: this year's deposit is \\$800, and each following year's deposit is 90% of the previous year's deposit, continuing indefinitely. This is an infinite geometric series with a = \\$800 and k = 0.90.\n\n**Part 1: Setup.**\n\na (year-1 deposit) = \\$800\n\nk (annual decay quotient) = 0.90\n\n**Part 2: Formula.**\n\nInfinite sum (|k| < 1): a/(1 - k)\n\nFinite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$\n\n**Part 3: Solve.**\n\n**1.** $|k| = 0.90 < 1$, so the infinite series converges.\n\n**2.** Infinite sum: $800/(1 - 0.90) = 800/0.10 = \\$8,000.00$.\n\n**3.** $0.90^{10} = 0.3486784401$.\n\n**4.** $s_{10} = 800 \\times (1 - 0.3486784401)/0.10 = 800 \\times 6.513215599 = \\$5,210.57$.\n\n**5.** Ratio to infinite sum: $5,210.57/8,000.00 = 0.6513 \\approx 65.13\\% \\approx 65\\%$.\n\n**6.** If $k = 1.10$, $|k| = 1.10 \\ge 1$, so the infinite series diverges by definition.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 342,
+        "text": "**A) The infinite deposit series converges.**  (true)\n\nSince each year's deposit equals 90% of the prior year's deposit, the ratio between consecutive terms is a constant $|k| = 0.90 < 1$. That is exactly the condition needed for the running total of an infinite geometric series to approach a fixed limiting value instead of growing forever."
+      },
+      {
+        "letter": "B",
+        "len": 314,
+        "text": "**B) The infinite sum of all deposits is \\$8,000.00.**  (true)\n\nFor a convergent infinite geometric series, the total of every term added together equals the first term divided by (1 minus the ratio): $s_{\\infty} = 800/(1-0.90) = 800/0.10 = \\$8,000.00$, the amount the cumulative deposits approach in the long run."
+      },
+      {
+        "letter": "C",
+        "len": 291,
+        "text": "**C) The sum of the first 10 deposits is approximately \\$5,210.57.**  (true)\n\nThe sum of the first 10 deposits is given by $s_{10} = a \\times (1-k^{10})/(1-k)$. Since $0.90^{10} \\approx 0.348678$, this becomes $s_{10} = 800 \\times (1-0.348678)/0.10 = 800 \\times 6.513216 \\approx \\$5,210.57$."
+      },
+      {
+        "letter": "D",
+        "len": 335,
+        "text": "**D) The first 10 deposits together represent about 65% of the infinite total sum.**  (true)\n\nDividing the 10-year total by the full infinite total gives $5,210.57/8,000.00 \\approx 65.1\\%$. Since that rounds to roughly 65%, describing the first 10 deposits as representing about 65% of everything ever deposited is an accurate summary."
+      },
+      {
+        "letter": "E",
+        "len": 529,
+        "text": "**E) If the quotient were instead k = 1.10, the series would diverge.**  (true)\n\nA ratio of k=1.10 has absolute value greater than 1, meaning each deposit would be larger than the one before it and would keep growing without any ceiling. A series whose terms increase forever can never settle down to a single finite total, so instead of converging it diverges: the running total simply keeps climbing and never levels off at any particular value.\n\n$k = 1.10$ has $|k| > 1$, so the series diverges. No finite $s_{\\infty}$ exists."
+      }
+    ]
+  },
+  "64": {
+    "id": "math-11-64",
+    "case_id": "MATH 11.64",
+    "title": "Lithium Reserve Depletion for a Mining Company",
+    "subsection": "11.4",
+    "context": "A mining company estimates its lithium reserves at 18,000,000 tons. Current annual extraction is a constant 300,000 tons per year. Separately, analysts also model a scenario in which extraction instead starts at 300,000 tons and grows by 5% per year for 10 years, a finite geometric series with a = 300,000 and k = 1.05.",
+    "statements": [
+      "At a constant extraction rate of 300,000 tons/year, the reserves will last exactly 60 years.",
+      "If extraction were instead held constant at 500,000 tons/year, the reserves would last 36 years.",
+      "Constant-rate extraction over n years is the special k = 1 case of the geometric series, where the total simply equals the number of years multiplied by the yearly amount.",
+      "If extraction instead grows by 5% per year for 10 years, total extraction over those 10 years is approximately 3,900,000 tons.",
+      "The 10-year total under 5% annual growth exceeds the 10-year total under constant 300,000-ton extraction by more than 1,000,000 tons."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "solution_overview": "A mining company estimates its lithium reserves at $18,000,000$ tons. Current annual extraction is a constant $300,000$ tons per year. Separately, analysts model extraction starting at $300,000$ tons and growing by $5\\%$ per year for $10$ years — a finite geometric series with $a = 300,000$ and $k = 1.05$.\n\n**Part 1: Setup.**\n\nReserves $= 18,000,000$ tons; constant extraction $a = 300,000$ tons/year (or $500,000$); growth scenario $a = 300,000$, $k = 1.05$, $n = 10$.\n\n**Part 2: Formula.**\n\nYears to exhaustion: $t =$ reserves$/$annual extraction. Constant terms ($k = 1$): $s_n = a\\times n$. Geometric ($k \\neq 1$): $s_n = a(k^{n}-1)/(k-1)$.\n\n**Part 3: Solve.**\n\n**1.** $t = 18,000,000/300,000 = 60$ years; at $500,000$ tons/year, $t = 36$ years.\n\n**2.** Constant extraction of $a$ each year for $n$ years sums to $a\\times n$ — exactly the $k = 1$ case.\n\n**3.** $1.05^{10} = 1.628894627$, so $s_{10} = 300,000\\times(1.628894627-1)/0.05 = 3,773,367.76 \\approx 3,773,368$ tons.\n\n**4.** Constant-rate $10$-year total: $300,000\\times10 = 3,000,000$ tons; difference $773,368 < 1,000,000$.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 342,
+        "text": "**A) At a constant extraction rate of 300,000 tons/year, the reserves will last exactly 60 years.**  (true)\n\nIf a fixed 300,000 tons is removed every year from an 18,000,000-ton reserve, the number of years before the reserve reaches zero is simply the total reserve divided by the yearly extraction rate: $t = 18,000,000/300,000 = 60$ years."
+      },
+      {
+        "letter": "B",
+        "len": 312,
+        "text": "**B) If extraction were instead held constant at 500,000 tons/year, the reserves would last 36 years.**  (true)\n\nUsing the same reasoning with a faster extraction rate of 500,000 tons per year gives $t = 18,000,000/500,000 = 36$ years - a higher annual rate depletes the same fixed reserve proportionally sooner."
+      },
+      {
+        "letter": "C",
+        "len": 708,
+        "text": "**C) Constant-rate extraction over n years is the special k = 1 case of the geometric series, where the total simply equals the number of years multiplied by the yearly amount.**  (true)\n\nWhen every year's extraction amount is identical (no growth at all), the sequence of yearly amounts is a geometric series whose ratio is exactly 1, meaning every term equals the first term a. Adding together n identical copies of a is just n lots of a, i.e., a × n, rather than requiring the general ratio-based formula, which would actually be undefined in this case since it involves dividing by (k-1)=0.\n\nWhen $k = 1$, every term equals $a$, so $s_n = a n$. The ratio formula $a(k^n-1)/(k-1)$ is undefined at $k = 1$."
+      },
+      {
+        "letter": "D",
+        "len": 457,
+        "text": "**D) If extraction instead grows by 5% per year for 10 years, total extraction over those 10 years is approximately 3,900,000 tons.**  (false)\n\nIf extraction instead starts at 300,000 tons and grows 5% every year for 10 years, the total extracted is $s_{10} = 300,000 \\times (k^{10}-1)/0.05$. Since $1.05^{10} \\approx 1.628895$, this works out to $s_{10} \\approx 300,000 \\times 12.577893 \\approx 3,773,368$ tons, noticeably below the 3,900,000 tons claimed."
+      },
+      {
+        "letter": "E",
+        "len": 509,
+        "text": "**E) The 10-year total under 5% annual growth exceeds the 10-year total under constant 300,000-ton extraction by more than 1,000,000 tons.**  (false)\n\nComparing the growth scenario ($\\approx 3,773,368$ tons over 10 years) to a flat 300,000-tons-per-year scenario over the same span ($300,000 \\times 10 = 3,000,000$ tons), the extra amount extracted specifically because of the 5% annual growth is $3,773,368 - 3,000,000 = 773,368$ tons. That is well under $1,000,000$ tons, so the claimed excess is too large."
+      }
+    ]
+  },
+  "65": {
+    "id": "math-11-65",
+    "case_id": "MATH 11.65",
+    "title": "Coal Reserves and Declining Output",
+    "subsection": "11.4",
+    "context": "A coal mining region has 9,000 million tons, or 9 billion tons, of estimated reserves. This year's output is 180 million tons, and analysts project output will fall by 3% every year forever, an infinite geometric series with a = 180 million tons and k = 0.97. A second scenario considers a steeper 5% annual decline with k = 0.95 starting from the same output.",
+    "statements": [
+      "Output in the second year is 174.6 million tons.",
+      "The infinite total extracted over all future years, under the 3% decline, is 6,000 million tons.",
+      "The reserves will never be fully exhausted, leaving 3 billion tons as permanently “stranded assets.”",
+      "If output instead declined 5% per year from the same 180 million-ton starting point, the total extracted would leave less coal stranded than the 3%-decline case.",
+      "Under the 3% decline scenario, cumulative extraction after just the first 20 years alone would already exceed the full infinite-horizon total of 6,000 million tons."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "solution_overview": "A coal mining region has $9,000$ million tons of estimated reserves. This year's output is $180$ million tons, and analysts project output will fall by $3\\%$ every year forever — an infinite geometric series with $a = 180$ million tons and $k = 0.97$. A second scenario uses a steeper $5\\%$ decline ($k = 0.95$) from the same starting output.\n\n**Part 1: Setup.**\n\nReserves $= 9,000$ million tons; $a = 180$ million tons; $k = 0.97$ ($3\\%$ decline) or $k = 0.95$ ($5\\%$ decline).\n\n**Part 2: Formula.**\n\nInfinite sum ($|k| < 1$): $a/(1-k)$. Finite sum of first $n$ terms: $s_n = a(1-k^{n})/(1-k)$.\n\n**Part 3: Solve.**\n\n**1.** Year-$2$ output: $180\\times0.97 = 174.6$ million tons.\n\n**2.** Infinite sum at $3\\%$: $180/(1-0.97) = 180/0.03 = 6,000$ million tons; stranded $= 9,000-6,000 = 3,000$ million tons.\n\n**3.** At $5\\%$: sum $= 180/0.05 = 3,600$; stranded $= 5,400$ million tons — more than under the $3\\%$ case.\n\n**4.** $0.97^{20} \\approx 0.5438$, so $s_{20} = 180\\times(1-0.5438)/0.03 \\approx 2,737.3$ million tons, far below the infinite total of $6,000$.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 196,
+        "text": "**A) Output in the second year is 174.6 million tons.**  (true)\n\nYear-2 output is the year-1 output multiplied once by the decline factor: $180 \\times 0.97 = 174.6$ million tons, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 367,
+        "text": "**B) The infinite total extracted over all future years, under the 3% decline, is 6,000 million tons.**  (true)\n\nBecause $|0.97| < 1$, the infinite series of yearly outputs converges, and its total equals $s_{\\infty} = 180/(1-0.97) = 180/0.03 = 6,000$ million tons, the theoretical maximum that could ever be extracted if the 3% annual decline continued indefinitely."
+      },
+      {
+        "letter": "C",
+        "len": 506,
+        "text": "**C) The reserves will never be fully exhausted, leaving 3 billion tons as permanently “stranded assets.”**  (true)\n\nComparing the 6,000 million-ton theoretical maximum to the 9,000 million-ton physical reserve shows the reserve can never be fully used up, no matter how long extraction continues, because the running total keeps approaching 6,000 million tons but never reaches or exceeds 9,000 million tons. The difference, $9,000 - 6,000 = 3,000$ million tons, simply remains in the ground indefinitely."
+      },
+      {
+        "letter": "D",
+        "len": 753,
+        "text": "**D) If output instead declined 5% per year from the same 180 million-ton starting point, the total extracted would leave less coal stranded than the 3%-decline case.**  (false)\n\nWith a steeper 5% annual decline (k=0.95), the theoretical maximum total extraction becomes 180/(1-0.95) = 180/0.05 = 3,600 million tons, leaving 9,000-3,600 = 5,400 million tons unextracted - more stranded coal than the 3,000 million tons left behind under the milder 3% decline, not less. A steeper decline in output means the total amount ever pulled out is smaller, so more coal is left stranded, not less.\n\nAt 5% decline, $k = 0.95$:\n\n$$s_{\\infty} = 180/0.05 = 3,600, \\qquad 9,000-3,600 = 5,400$$\n\n$5,400 > 3,000$ stranded, so a steeper decline leaves more coal unused."
+      },
+      {
+        "letter": "E",
+        "len": 705,
+        "text": "**E) Under the 3% decline scenario, cumulative extraction after just the first 20 years alone would already exceed the full infinite-horizon total of 6,000 million tons.**  (false)\n\nSumming only the first 20 years under the 3% decline gives $s_{20} = 180 \\times (1-0.97^{20})/0.03$. Since 0.97 to the 20th power is about 0.5438, this comes to roughly 180×15.207 ≈ 2,737 million tons - far below the full 6,000 million-ton theoretical total, since only a fraction of an ever-continuing series has accumulated after just 20 years, not in excess of it.\n\n$$s_{20} = 180 \\times \\frac{1-0.97^{20}}{0.03}$$\n\n$$0.97^{20} \\approx 0.543794, \\quad s_{20} \\approx 180 \\times 15.20686 \\approx 2,737$$\n\n$2,737 < 6,000$."
+      }
+    ]
+  },
+  "66": {
+    "id": "math-11-66",
+    "case_id": "MATH 11.66",
+    "title": "Alternating Correction Payments in a Trading Model",
+    "subsection": "11.4",
+    "context": "A quantitative trading model applies a diminishing corrective adjustment after each rebalancing: the first adjustment is \\$4,000, and each subsequent adjustment reverses sign and is half the size of the previous one, continuing indefinitely. This is an infinite geometric series with a = \\$4,000 and a negative quotient k = -0.5.",
+    "statements": [
+      "The alternating adjustment series converges to a finite sum.",
+      "The infinite sum of all adjustments is approximately \\$2,666.67.",
+      "The sum of the first 4 adjustments is \\$3,000.00.",
+      "The series necessarily diverges regardless of its magnitude.",
+      "If the quotient were instead exactly k = -1, the partial sums would alternate forever between \\$4,000 and \\$0."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "solution_overview": "A quantitative trading model applies a diminishing corrective adjustment after each rebalancing: the first adjustment is \\$4,000, and each subsequent adjustment reverses sign and is half the size of the previous one, continuing indefinitely. This is an infinite geometric series with a = \\$4,000 and a negative quotient k = -0.5.\n\n**Part 1: Setup.**\n\na (first adjustment) = \\$4,000\n\nk (sign-reversing decay quotient) = -0.5\n\n**Part 2: Formula.**\n\nInfinite sum (|k| < 1): a/(1 - k)\n\nSpecial case k = -1: $s_n = a$ when n is odd, $s_n = 0$ when n is even\n\n**Part 3: Solve.**\n\n**1.** $|k| = |-0.5| = 0.5 < 1$, so the series converges.\n\n**2.** Infinite sum: $4,000/(1 - (-0.5)) = 4,000/1.5 = \\$2,666.67$.\n\n**3.** First $4$ terms: $4,000$, then $4,000\\times(-0.5) = -2,000$, then $4,000\\times0.25 = 1,000$, then $4,000\\times(-0.125) = -500$.\n\n**4.** Sum of first $4$ terms: $4,000 - 2,000 + 1,000 - 500 = \\$2,500.00$ (not $\\$3,000.00$).\n\n**5.** For $k = -1$: $s_n = a$ (odd $n$) or $s_n = 0$ (even $n$) — the partial sums oscillate forever and never settle on a limit.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 414,
+        "text": "**A) The alternating adjustment series converges to a finite sum.**  (true)\n\nConvergence depends only on the size of the ratio, |k|, not on whether that ratio is positive or negative. Here k=-0.5, so |k|=0.5, which is below 1 - the alternating series still settles down to a fixed total even though its terms flip sign at every step.\n\n$k = -0.5$ has $|k| = 0.5 < 1$, so the series converges despite the sign flips."
+      },
+      {
+        "letter": "B",
+        "len": 251,
+        "text": "**B) The infinite sum of all adjustments is approximately \\$2,666.67.**  (true)\n\nThe infinite-sum formula $a/(1-k)$ applies the same way regardless of the sign of $k$, as long as $|k|<1$: $s_{\\infty} = 4,000/(1-(-0.5)) = 4,000/1.5 \\approx \\$2,666.67$."
+      },
+      {
+        "letter": "C",
+        "len": 275,
+        "text": "**C) The sum of the first 4 adjustments is \\$3,000.00.**  (false)\n\nThe first four adjustments are $4,000$, then $4,000\\times(-0.5)=-2,000$, then $4,000\\times0.25=1,000$, then $4,000\\times(-0.125)=-500$. Adding these gives $4,000-2,000+1,000-500 = \\$2,500.00$, not \\$3,000.00."
+      },
+      {
+        "letter": "D",
+        "len": 568,
+        "text": "**D) The series necessarily diverges regardless of its magnitude.**  (false)\n\nThe sign of the ratio has no bearing on whether the series converges; only its magnitude matters. A negative ratio simply means the terms alternate between adding to and subtracting from the running total, and as long as |k| stays below 1, those swings shrink over time and the partial sums settle down - exactly what happens here with |k|=0.5, so the series converges rather than diverging.\n\nConvergence depends on $|k|$, not on the sign of $k$. Here $|-0.5| < 1$, so the series converges."
+      },
+      {
+        "letter": "E",
+        "len": 666,
+        "text": "**E) If the quotient were instead exactly k = -1, the partial sums would alternate forever between \\$4,000 and \\$0.**  (true)\n\nWith k=-1, each new term exactly cancels the one before it: starting from a, the running total becomes a, then 0, then a, then 0, and so on forever, oscillating between those two values without ever settling on one number. Since a limit requires the running total to approach a single fixed value, and this sequence keeps flipping back and forth instead, it never reaches a limit and the series diverges.\n\nIf $k = -1$, partial sums are $4,000, 0, 4,000, 0, \\ldots$ forever. Two cluster points means no single limit, so the series diverges."
+      }
+    ]
+  },
+  "67": {
+    "id": "math-11-67",
+    "case_id": "MATH 11.67",
+    "title": "Equal vs. Growing Pension Contributions",
+    "subsection": "11.4",
+    "context": "A city pension fund receives equal annual contributions of \\$12 million for 15 straight years in a degenerate geometric series with k = 1. Fund managers also model an alternative in which contributions instead grow by 4% every year from the same \\$12 million starting point, a finite geometric series with a = \\$12 million, k = 1.04, and n = 15.",
+    "statements": [
+      "This is the special k = 1 case of the geometric series, where the total simply equals the number of payments multiplied by the payment amount.",
+      "The total contributions over the 15 years of equal \\$12 million payments equal \\$180.00 million.",
+      "Under the 4%-growth alternative, the 15-year total is approximately \\$240.11 million.",
+      "The 4%-growth 15-year total exceeds the no-growth total by more than \\$65.00 million.",
+      "Applying the general formula directly to the no-growth case would require dividing by zero."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "solution_overview": "A city pension fund receives equal annual contributions of \\$12 million for 15 straight years in a degenerate geometric series with k = 1. Fund managers also model an alternative in which contributions instead grow by 4% every year from the same \\$12 million starting point, a finite geometric series with a = \\$12 million, k = 1.04, and n = 15.\n\n**Part 1: Setup.**\n\nEqual-payment case: a = \\$12 million/year, n = 15 years, k = 1\n\nGrowth case: a = \\$12 million, k = 1.04, n = 15 years\n\n**Part 2: Formula.**\n\nk = 1 case: $s_n = a \\times n$\n\nk ≠ 1 case: $s_n = a(k^{n}-1)/(k-1)$\n\n**Part 3: Solve.**\n\n**1.** Equal payments: $s_{15} = 12 \\times 15 = \\$180.00$ million.\n\n**2.** $1.04^{15} \\approx 1.800944$.\n\n**3.** $s_{15}$ (growth case): $12 \\times (1.800944 - 1)/0.04 = 12 \\times 20.0236 = \\$240.28$ million.\n\n**4.** Difference: $240.28 - 180.00 = \\$60.28$ million, which is not more than $\\$65.00$ million.\n\n**5.** The general formula's denominator is $(k - 1)$; at $k = 1$ this denominator is $0$, so the formula is undefined and the $k = 1$ case must instead use $s_n = a \\times n$.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 627,
+        "text": "**A) This is the special k = 1 case of the geometric series, where the total simply equals the number of payments multiplied by the payment amount.**  (true)\n\nWhen every payment is identical, there is no changing ratio between consecutive terms - or equivalently, the ratio is exactly 1. Adding n copies of the same number a together is simply n×a, a much simpler formula than the ratio-based one needed when the terms actually change size from year to year, and it sidesteps the division-by-zero problem that the general formula would run into at k=1.\n\nEqual payments mean $k = 1$, so $s_n = a n$ rather than $a(k^n-1)/(k-1)$."
+      },
+      {
+        "letter": "B",
+        "len": 325,
+        "text": "**B) The total contributions over the 15 years of equal \\$12 million payments equal \\$180.00 million.**  (true)\n\nWith 15 identical annual payments of \\$12 million each, the total is just $s_{15} = 12 \\times 15 = \\$180.00$ million; no compounding or ratio calculation is needed since nothing changes from one year to the next."
+      },
+      {
+        "letter": "C",
+        "len": 389,
+        "text": "**C) Under the 4%-growth alternative, the 15-year total is approximately \\$240.11 million.**  (false)\n\nGrowing the same \\$12 million starting payment by 4% every year for 15 years gives $s_{15} = 12 \\times (1.04^{15}-1)/0.04$. Since $1.04^{15} \\approx 1.800944$, this becomes $s_{15} \\approx 12 \\times 20.0236 \\approx \\$240.28$ million, noticeably higher than the \\$240.11 million claimed."
+      },
+      {
+        "letter": "D",
+        "len": 366,
+        "text": "**D) The 4%-growth 15-year total exceeds the no-growth total by more than \\$65.00 million.**  (false)\n\nThe actual gap between the 4%-growth total ($\\approx \\$240.28$ million) and the flat total ($\\$180.00$ million) is $240.28 - 180.00 = \\$60.28$ million, which is not more than \\$65.00 million, so the claim overstates how much extra the growth scenario contributes."
+      },
+      {
+        "letter": "E",
+        "len": 691,
+        "text": "**E) Applying the general formula directly to the no-growth case would require dividing by zero.**  (true)\n\nThe general ratio-based formula for a finite geometric series has (k-1) in its denominator. If k were set to exactly 1 - the flat, no-growth case - that denominator becomes zero, and dividing by zero is undefined, so the formula simply cannot be evaluated as written. That is precisely why a separate, simpler rule - multiplying the constant payment by the number of years - has to be used whenever every term in the series is identical.\n\nThe general formula has denominator $k-1$. At $k = 1$ that denominator is 0, so the formula is undefined and cannot be applied to the flat case."
+      }
+    ]
+  },
+  "68": {
+    "id": "math-11-68",
+    "case_id": "MATH 11.68",
+    "title": "Structured Settlement: Finite Payments vs. Perpetual Value",
+    "subsection": "11.4",
+    "context": "A structured settlement is set up to pay \\$15,000 in its first year, with each subsequent payment 88% of the prior one, where a = \\$15,000 and k = 0.88. One clause pays out for a finite 8 years; a separate hypothetical clause considers what the payments would total if continued forever.",
+    "statements": [
+      "The second payment in the sequence is \\$13,200.00.",
+      "The total of the 8 finite payments is approximately \\$80,045.68.",
+      "If the payments continued forever under the same 88% quotient, the infinite total would be \\$130,000.00.",
+      "The finite 8-payment total represents more than 75% of the infinite total.",
+      "If the decline rate were less steep, say k = 0.95 instead of 0.88, the infinite total would be smaller than the infinite total at k = 0.88."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "solution_overview": "A structured settlement is set up to pay \\$15,000 in its first year, with each subsequent payment 88% of the prior one, where a = \\$15,000 and k = 0.88. One clause pays out for a finite 8 years; a separate hypothetical clause considers what the payments would total if continued forever.\n\n**Part 1: Setup.**\n\na (year-1 payment) = \\$15,000\n\nk (annual decay quotient) = 0.88\n\nn = 8 years (finite clause)\n\n**Part 2: Formula.**\n\nFinite sum: $s_n = a(1 - k^{n})/(1 - k)$\n\nInfinite sum (|k| < 1): a/(1 - k)\n\n**Part 3: Solve.**\n\n**1.** Payment $2$: $a \\times k = 15,000\\times0.88 = \\$13,200.00$.\n\n**2.** $0.88^{8} \\approx 0.359635$.\n\n**3.** $s_8 = 15,000 \\times (1 - 0.359635)/0.12 = 15,000 \\times 5.336379 = \\$80,045.68$.\n\n**4.** Infinite sum: $15,000/(1 - 0.88) = 15,000/0.12 = \\$125,000.00$ (not $\\$130,000.00$).\n\n**5.** Ratio: $80,045.68/125,000.00 = 0.6404 \\approx 64.04\\%$, which is not more than $75\\%$.\n\n**6.** With $k = 0.95$: infinite sum $= 15,000/(1 - 0.95) = 15,000/0.05 = \\$300,000.00$, which is larger, not smaller, than the $\\$125,000.00$ obtained at $k = 0.88$.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 197,
+        "text": "**A) The second payment in the sequence is \\$13,200.00.**  (true)\n\nThe second payment is the first payment multiplied once by the decay factor: $15,000 \\times 0.88 = \\$13,200.00$, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 282,
+        "text": "**B) The total of the 8 finite payments is approximately \\$80,045.68.**  (true)\n\nSumming the first 8 payments uses $s_8 = a \\times (1-k^{8})/(1-k)$. Since $0.88^{8} \\approx 0.359635$, this becomes $s_8 = 15,000 \\times (1-0.359635)/0.12 = 15,000 \\times 5.336379 \\approx \\$80,045.68$."
+      },
+      {
+        "letter": "C",
+        "len": 283,
+        "text": "**C) If the payments continued forever under the same 88% quotient, the infinite total would be \\$130,000.00.**  (false)\n\nSince $|0.88|<1$, letting the payments continue forever gives an infinite total of $s_{\\infty} = 15,000/(1-0.88) = 15,000/0.12 = \\$125,000.00$, not \\$130,000.00."
+      },
+      {
+        "letter": "D",
+        "len": 308,
+        "text": "**D) The finite 8-payment total represents more than 75% of the infinite total.**  (false)\n\nDividing the 8-payment total by the true infinite total gives $80,045.68/125,000.00 \\approx 64.04\\%$. That is below 75%, so the claim that the finite total represents more than 75% of the infinite total is incorrect."
+      },
+      {
+        "letter": "E",
+        "len": 737,
+        "text": "**E) If the decline rate were less steep, say k = 0.95 instead of 0.88, the infinite total would be smaller than the infinite total at k = 0.88.**  (false)\n\nA larger ratio (0.95 instead of 0.88) means each payment shrinks more slowly from one year to the next, which makes the (1-k) denominator in the infinite-sum formula smaller - and a smaller denominator produces a larger result, not a smaller one. Concretely, 15,000/(1-0.95) = 15,000/0.05 = \\$300,000.00, far larger than the \\$125,000.00 obtained at k=0.88, so the claimed comparison has the direction backwards.\n\nAt $k = 0.95$: $s_{\\infty} = 15,000/(1-0.95) = 15,000/0.05 = \\$300,000$\n\n$300,000 > 125,000$, so a milder decline produces a larger infinite total, not a smaller one."
+      }
+    ]
+  },
+  "69": {
+    "id": "math-11-69",
+    "case_id": "MATH 11.69",
+    "title": "Growing Franchise Royalties Over 12 Years",
+    "subsection": "11.4",
+    "context": "A franchisor receives a royalty of \\$9,000 in the first year from a new location, with royalties projected to grow 8% per year for 12 years - a finite geometric series with a = \\$9,000, k = 1.08, and n = 12. Analysts also compare this to a hypothetical flat 0%-growth royalty stream.",
+    "statements": [
+      "The finite-sum formula still gives a valid, well-defined 12-year total.",
+      "The total royalties collected over the 12 years are approximately \\$175,000.00.",
+      "The infinite-sum formula can still be legitimately applied to this series, yielding a meaningful total value.",
+      "The royalty payment in year 12 alone is approximately \\$20,715.85.",
+      "If royalties instead grew at 0% for 12 years, the 12-year total would be \\$62,794.15 less than the actual 8%-growth total."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "solution_overview": "A franchisor receives a royalty of \\$9,000 in the first year from a new location, with royalties projected to grow 8% per year for 12 years - a finite geometric series with a = \\$9,000, k = 1.08, and n = 12. Analysts also compare this to a hypothetical flat 0%-growth royalty stream.\n\n**Part 1: Setup.**\n\na (year-1 royalty) = \\$9,000\n\nk (annual growth quotient) = 1.08\n\nn = 12 years\n\n**Part 2: Formula.**\n\nFinite sum (k ≠ 1): $s_n = a(k^{n}-1)/(k-1)$\n\nTerm in year t: $a k^{t-1}$\n\nFlat case (k = 1): $s_n = a \\times n$\n\n**Part 3: Solve.**\n\n**1.** $1.08^{12} \\approx 2.518170$.\n\n**2.** $s_{12} = 9,000 \\times (2.518170 - 1)/0.08 = 9,000 \\times 18.977128 = \\$170,794.15$.\n\n**3.** $1.08^{11} = 2.518170/1.08 \\approx 2.331639$.\n\n**4.** Year-$12$ payment: $9,000 \\times 2.331639 = \\$20,984.75$.\n\n**5.** Flat total: $9,000 \\times 12 = \\$108,000.00$.\n\n**6.** Difference: $\\$170,794.15 - \\$108,000.00 = \\$62,794.15$.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 703,
+        "text": "**A) The finite-sum formula still gives a valid, well-defined 12-year total.**  (true)\n\nThe finite-sum formula $s_n = a(k^{n}-1)/(k-1)$ only breaks down when its denominator, k-1, equals zero, which happens exactly when k=1. As long as k is anything other than 1 - including values greater than 1, such as 1.08 here - the formula is perfectly well defined and produces a valid total for any fixed, finite number of terms; the separate requirement that |k|<1 only matters when trying to add up infinitely many terms, not a specific finite count of them.\n\nHere $k = 1.08 \\neq 1$, so\n\n$$s_{12} = 9,000 \\times \\frac{(1.08)^{12}-1}{0.08}$$\n\nis well defined. The $|k|<1$ restriction is only for infinite sums."
+      },
+      {
+        "letter": "B",
+        "len": 307,
+        "text": "**B) The total royalties collected over the 12 years are approximately \\$175,000.00.**  (false)\n\nComputing $s_{12} = 9,000 \\times (1.08^{12}-1)/0.08$ requires $1.08^{12} \\approx 2.518170$, which gives $s_{12} = 9,000 \\times (2.518170-1)/0.08 = 9,000 \\times 18.977128 \\approx \\$170,794.15$, not \\$175,000.00."
+      },
+      {
+        "letter": "C",
+        "len": 726,
+        "text": "**C) The infinite-sum formula can still be legitimately applied to this series, yielding a meaningful total value.**  (false)\n\nThe infinite-sum formula a/(1-k) is only meaningful when the terms shrink toward zero as more are added, which requires |k| to be below 1. Here k=1.08 is greater than 1, so each successive royalty payment is larger than the last, growing without bound rather than shrinking - there is no finite total for the series to approach, so plugging these numbers into the infinite-sum formula produces a number with no real meaning, whether positive or negative.\n\n$k = 1.08 > 1$, so terms grow. The infinite-sum formula $a/(1-k)$ does not apply and would spit out a negative number with no economic meaning."
+      },
+      {
+        "letter": "D",
+        "len": 476,
+        "text": "**D) The royalty payment in year 12 alone is approximately \\$20,715.85.**  (false)\n\nThe 12th year's royalty equals the first payment multiplied by the ratio raised to the 11th power, since the first payment itself already corresponds to zero multiplications. Since 1.08 to the 11th power is about 2.331639, that gives 9,000×2.331639 ≈ \\$20,984.75, not \\$20,715.85.\n\nYear 12 is term $a k^{11}$:\n\n$$(1.08)^{11} \\approx 2.331639, \\quad 9,000 \\times 2.331639 \\approx \\$20,984.75$$"
+      },
+      {
+        "letter": "E",
+        "len": 407,
+        "text": "**E) If royalties instead grew at 0% for 12 years, the 12-year total would be \\$62,794.15 less than the actual 8%-growth total.**  (true)\n\nTwelve flat annual payments of \\$9,000 with no growth at all would total $9,000 \\times 12 = \\$108,000.00$. Comparing that to the actual 8%-growth total of about \\$170,794.15 gives a difference of $170,794.15 - 108,000 = \\$62,794.15$, confirming the stated gap exactly."
+      }
+    ]
+  },
+  "70": {
+    "id": "math-11-70",
+    "case_id": "MATH 11.70",
+    "title": "Tech Company Valuation: Finite Growth Plus Terminal Perpetuity",
+    "subsection": "11.4",
+    "context": "A tech company projects revenue of \\$4 million this year, growing 20% per year for 6 years in a finite geometric series with a = \\$4 million, k = 1.20, and n = 6. Investors then treat year-6 revenue as the first payment of a separate terminal perpetuity that declines 15% per year forever with quotient k = 0.85, used to estimate value beyond year 6.",
+    "statements": [
+      "The 6-year finite sum of projected revenues is approximately \\$39.72 million.",
+      "Year-6 revenue alone is approximately \\$9.95 million.",
+      "The finite 6-year series has no valid sum via the finite-sum formula.",
+      "Treating year-6 revenue as the first term of a new perpetuity with quotient k = 0.85, the terminal value is approximately \\$66.36 million.",
+      "Combining the 6-year finite total with the terminal perpetuity value gives a combined projected value of less than \\$100 million."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "solution_overview": "A tech company projects revenue of \\$4 million this year, growing 20% per year for 6 years in a finite geometric series with a = \\$4 million, k = 1.20, and n = 6. Investors then treat year-6 revenue as the first payment of a separate terminal perpetuity that declines 15% per year forever with quotient k = 0.85, used to estimate value beyond year 6.\n\n**Part 1: Setup.**\n\nFinite phase: a = \\$4 million, k = 1.20, n = 6 years\n\nTerminal phase: first term = year-6 revenue, quotient k = 0.85, infinite horizon\n\n**Part 2: Formula.**\n\nFinite sum (k ≠ 1): $s_n = a(k^{n}-1)/(k-1)$\n\nTerm in year t: $a k^{t-1}$\n\nInfinite sum (|k| < 1): a/(1 - k)\n\n**Part 3: Solve.**\n\n**1.** $1.20^{6} = 2.985984$.\n\n**2.** $s_6 = 4 \\times (2.985984 - 1)/0.20 = 4 \\times 9.92992 = \\$39.72$ million.\n\n**3.** $1.20^{5} = 2.48832$; year-$6$ revenue $= 4 \\times 2.48832 = \\$9.95$ million.\n\n**4.** Terminal value: $9.95328/(1 - 0.85) = 9.95328/0.15 = \\$66.36$ million.\n\n**5.** Combined value: $\\$39.72$ million $+ \\$66.36$ million $= \\$106.08$ million, which is not less than $\\$100$ million.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 278,
+        "text": "**A) The 6-year finite sum of projected revenues is approximately \\$39.72 million.**  (true)\n\nSumming 6 years of revenue that grows 20% each year uses $s_6 = 4 \\times (1.20^{6}-1)/0.20$. Since $1.20^{6} = 2.985984$, this becomes $s_6 = 4 \\times 9.92992 \\approx \\$39.72$ million."
+      },
+      {
+        "letter": "B",
+        "len": 297,
+        "text": "**B) Year-6 revenue alone is approximately \\$9.95 million.**  (true)\n\nYear-6 revenue equals the starting revenue multiplied by the growth factor raised to the 5th power, since year 1 itself already corresponds to zero multiplications: $4 \\times 1.20^{5} = 4 \\times 2.48832 \\approx \\$9.95$ million."
+      },
+      {
+        "letter": "C",
+        "len": 707,
+        "text": "**C) The finite 6-year series has no valid sum via the finite-sum formula.**  (false)\n\nThe finite geometric-series formula only fails to apply when the ratio equals exactly 1, since that would divide by zero; it works perfectly well for any other ratio, whether smaller or larger than 1, as long as only a fixed, finite number of terms are being added. Here k=1.20 is simply the growth factor over a fixed 6-year window, and the formula handles it without any issue - the restriction that |k| be below 1 only applies when summing infinitely many terms, not a finite set of them.\n\n$k = 1.20 \\neq 1$, so the finite-sum formula applies over $n = 6$. Divergence is an infinite-horizon issue, not a 6-year issue."
+      },
+      {
+        "letter": "D",
+        "len": 399,
+        "text": "**D) Treating year-6 revenue as the first term of a new perpetuity with quotient k = 0.85, the terminal value is approximately \\$66.36 million.**  (true)\n\nTreating the \\$9.95328 million of year-6 revenue as the starting payment of a new, separately declining perpetuity with ratio 0.85, the infinite total of that new stream is $s_{\\infty} = 9.95328/(1-0.85) = 9.95328/0.15 \\approx \\$66.36$ million."
+      },
+      {
+        "letter": "E",
+        "len": 332,
+        "text": "**E) Combining the 6-year finite total with the terminal perpetuity value gives a combined projected value of less than \\$100 million.**  (false)\n\nAdding the 6-year finite total (\\$39.72 million) to the terminal perpetuity value (\\$66.36 million) gives $39.72 + 66.36 = \\$106.08$ million, which is above \\$100 million, not below it."
+      }
+    ]
+  },
+  "71": {
+    "id": "math-11-71",
+    "case_id": "MATH 11.71",
+    "title": "Reverse-Engineering a Retailer's First-Month Restocking Cost",
+    "subsection": "11.4",
+    "context": "A retailer's monthly restocking cost is expected to grow 15% every month for 6 months due to supply-chain constraints, with quotient k = 1.15. Accounting projects that the total restocking cost over all 6 months will equal exactly \\$58,000. Management wants to know what the first month's cost, a, must have been to produce that total.",
+    "statements": [
+      "If the first month's cost had instead been exactly \\$1,000, the second month's cost would be \\$1,150.00.",
+      "Solving for the first-month cost gives approximately \\$6,625.74.",
+      "The 6th month's restocking cost is approximately \\$13,326.73.",
+      "The combined restocking cost for months 4 through 6 is approximately \\$37,930.00.",
+      "If the same \\$58,000 total had instead been spread evenly, that flat monthly figure would exceed the actual first-month cost of \\$6,625.74 found under 15% growth."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "solution_overview": "A retailer's monthly restocking cost is expected to grow 15% every month for 6 months due to supply-chain constraints, with quotient k = 1.15. Accounting projects that the total restocking cost over all 6 months will equal exactly \\$58,000. Management wants to know what the first month's cost, a, must have been to produce that total.\n\n**Part 1: Setup.**\n\n$s_6$ (total 6-month cost) = \\$58,000\n\nk (monthly growth quotient) = 1.15\n\nn = 6 months\n\n**Part 2: Formula.**\n\n$s_n = a(k^{n}-1)/(k-1)$ ⇒ $a = s_n \\times (k - 1)/(k^{n}-1)$\n\nTerm in month t: $a k^{t-1}$\n\n**Part 3: Solve.**\n\n**1.** Hypothetical: if month-$1$ cost were $\\$1,000$, month-$2$ cost: $1,000\\times1.15 = \\$1,150.00$.\n\n**2.** $k^{6} = 1.15^{6} = 2.313060766$.\n\n**3.** $a = 58,000 \\times 0.15/(2.313060766 - 1) = 8,700/1.313060766 = \\$6,625.74$.\n\n**4.** Month-$6$ cost: $a \\times k^{5} = 6,625.74 \\times 2.011357188 = \\$13,326.73$.\n\n**5.** Months $4$–$6$ cost: $a(k^{3}+k^{4}+k^{5}) = 6,625.74 \\times (1.520875 + 1.749006 + 2.011357) = 6,625.74 \\times 5.281239 = \\$34,992.12$.\n\n**6.** Flat monthly figure: $58,000/6 = \\$9,666.67$, which is indeed greater than $\\$6,625.74$.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 381,
+        "text": "**A) If the first month's cost had instead been exactly \\$1,000, the second month's cost would be \\$1,150.00.**  (true)\n\nRegardless of what the actual first-month cost turns out to be, multiplying any given first-month figure by the 1.15 growth ratio gives the second month's cost; for a hypothetical \\$1,000 first month, that is $1,000 \\times 1.15 = \\$1,150.00$, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 302,
+        "text": "**B) Solving for the first-month cost gives approximately \\$6,625.74.**  (true)\n\nRearranging the finite-sum formula to solve for the first term gives $a = s_6 \\times (k-1)/(k^{6}-1)$. Since $1.15^{6} \\approx 2.313061$, that becomes $a = 58,000 \\times 0.15/1.313061 = 8,700/1.313061 \\approx \\$6,625.74$."
+      },
+      {
+        "letter": "C",
+        "len": 318,
+        "text": "**C) The 6th month's restocking cost is approximately \\$13,326.73.**  (true)\n\nThe 6th month's cost equals the first month's cost multiplied by the ratio raised to the 5th power, since month 1 itself already corresponds to zero multiplications: $6,625.74 \\times 1.15^{5} = 6,625.74 \\times 2.011357 \\approx \\$13,326.73$."
+      },
+      {
+        "letter": "D",
+        "len": 499,
+        "text": "**D) The combined restocking cost for months 4 through 6 is approximately \\$37,930.00.**  (false)\n\nAdding the individual costs for months 4, 5, and 6 - that is, $a \\times k^{3} + a \\times k^{4} + a \\times k^{5}$ - gives 6,625.74×(1.520875 + 1.749006 + 2.011357) = 6,625.74×5.281239 ≈ \\$34,992.12, not \\$37,930.00.\n\nMonths 4–6 are $a k^{3}+a k^{4}+a k^{5}$:\n\n$$(1.15)^{3} \\approx 1.520875,\\ (1.15)^{4} \\approx 1.749006,\\ (1.15)^{5} \\approx 2.011357$$\n\n$$6,625.74 \\times 5.281238 \\approx \\$34,992.12$$"
+      },
+      {
+        "letter": "E",
+        "len": 559,
+        "text": "**E) If the same \\$58,000 total had instead been spread evenly, that flat monthly figure would exceed the actual first-month cost of \\$6,625.74 found under 15% growth.**  (true)\n\nSplitting the same \\$58,000 total evenly across 6 months gives $58,000/6 \\approx \\$9,666.67$ per month. Since the actual first month's cost under 15% growth was only about \\$6,625.74, and a growing schedule always starts below its own average (because the larger later months pull the average up), the flat monthly figure is indeed higher than the growth scenario's starting cost."
+      }
+    ]
+  },
+  "72": {
+    "id": "math-11-72",
+    "case_id": "MATH 11.72",
+    "title": "University Endowment: Sustainable Declining Payout",
+    "subsection": "11.4",
+    "context": "A university endowment pays out \\$500,000 in scholarships this year. To keep the endowment sustainable, the payout is planned to shrink by 2% every year forever with a = \\$500,000 and k = 0.98, an infinite geometric series. The board also wants to know the cumulative payout over just the first 10 years, and how a steeper 2%-per-year-larger decline with k = 0.95 would compare.",
+    "statements": [
+      "The payout in the second year is \\$490,000.00.",
+      "The infinite total of all future payouts converges to \\$25,000,000.00.",
+      "The cumulative payout over just the first 10 years is approximately \\$4,800,000.00.",
+      "The first 10 years of payouts represent approximately 18% of the full infinite-horizon total.",
+      "If the decline were instead steeper, at k = 0.95, the infinite total would be more than half of the original infinite total."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "solution_overview": "A university endowment pays out \\$500,000 in scholarships this year. To keep the endowment sustainable, the payout is planned to shrink by 2% every year forever with a = \\$500,000 and k = 0.98, an infinite geometric series. The board also wants to know the cumulative payout over just the first 10 years, and how a steeper 2%-per-year-larger decline with k = 0.95 would compare.\n\n**Part 1: Setup.**\n\na (year-1 payout) = \\$500,000\n\nk = 0.98 (primary scenario); alternative k = 0.95\n\nn = 10 years (for the finite check)\n\n**Part 2: Formula.**\n\nInfinite sum (|k| < 1): a/(1 - k)\n\nFinite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$\n\n**Part 3: Solve.**\n\n**1.** Year-$2$ payout: $a \\times k = 500,000\\times0.98 = \\$490,000.00$.\n\n**2.** Infinite sum: $500,000/(1 - 0.98) = 500,000/0.02 = \\$25,000,000.00$.\n\n**3.** $0.98^{10} = 0.817072807$.\n\n**4.** $s_{10} = 500,000 \\times (1 - 0.817072807)/0.02 = 500,000 \\times 9.146360 = \\$4,573,179.83$.\n\n**5.** Ratio: $4,573,179.83/25,000,000.00 = 0.18293 \\approx 18.29\\% \\approx 18\\%$.\n\n**6.** Infinite sum at $k = 0.95$: $500,000/(1 - 0.95) = 500,000/0.05 = \\$10,000,000.00$.\n\n**7.** Half of the original infinite sum $= 25,000,000.00/2 = \\$12,500,000.00$; since $10,000,000.00 < 12,500,000.00$, it is NOT more than half.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 192,
+        "text": "**A) The payout in the second year is \\$490,000.00.**  (true)\n\nYear-2 payout is the year-1 payout multiplied once by the decline factor: $500,000 \\times 0.98 = \\$490,000.00$, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 291,
+        "text": "**B) The infinite total of all future payouts converges to \\$25,000,000.00.**  (true)\n\nBecause $|0.98| < 1$, letting the payouts continue forever produces a finite total of $s_{\\infty} = 500,000/(1-0.98) = 500,000/0.02 = \\$25,000,000.00$, the theoretical ceiling on everything ever paid out."
+      },
+      {
+        "letter": "C",
+        "len": 317,
+        "text": "**C) The cumulative payout over just the first 10 years is approximately \\$4,800,000.00.**  (false)\n\nSumming only the first 10 years gives $s_{10} = 500,000 \\times (1-0.98^{10})/0.02$. Since $0.98^{10} \\approx 0.817073$, this becomes $s_{10} \\approx 500,000 \\times 9.14636 \\approx \\$4,573,179.83$, not \\$4,800,000.00."
+      },
+      {
+        "letter": "D",
+        "len": 256,
+        "text": "**D) The first 10 years of payouts represent approximately 18% of the full infinite-horizon total.**  (true)\n\nDividing the 10-year total by the full infinite total gives $4,573,179.83/25,000,000.00 \\approx 18.3\\%$ - close enough to describe as roughly 18%."
+      },
+      {
+        "letter": "E",
+        "len": 583,
+        "text": "**E) If the decline were instead steeper, at k = 0.95, the infinite total would be more than half of the original infinite total.**  (false)\n\nA steeper 5% annual decline (k=0.95) gives an infinite total of 500,000/(1-0.95) = 500,000/0.05 = \\$10,000,000.00. Half of the original \\$25,000,000.00 infinite total is \\$12,500,000.00, and \\$10,000,000.00 sits below that halfway point, not above it, so the comparison in the claim has the direction backwards.\n\nAt $k = 0.95$: $s_{\\infty} = 500,000/0.05 = \\$10,000,000$.\n\nHalf of $25,000,000$ is $12,500,000$, and $10,000,000 < 12,500,000$."
+      }
+    ]
+  },
+  "73": {
+    "id": "math-11-73",
+    "case_id": "MATH 11.73",
+    "title": "Marketing Budget: Solving for the Break-Point Year",
+    "subsection": "11.4",
+    "context": "A company's marketing budget starts at \\$200,000 this year and grows 12% every year with a = \\$200,000 and k = 1.12, a finite geometric series. The CFO wants to know the smallest number of years n after which the cumulative total marketing spend first surpasses \\$3,000,000.",
+    "statements": [
+      "The marketing budget in year 2 is \\$224,000.00.",
+      "The cumulative spend after 9 years is still below the \\$3,000,000 target.",
+      "The cumulative spend after 10 years is approximately \\$3,600,000.00.",
+      "The smallest n for which cumulative spend surpasses \\$3,000,000 is n = 9.",
+      "If the growth rate were only 8% instead of 12%, the 10-year cumulative spend would still surpass the \\$3,000,000 target within 10 years."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "solution_overview": "A company's marketing budget starts at \\$200,000 this year and grows 12% every year with a = \\$200,000 and k = 1.12, a finite geometric series. The CFO wants to know the smallest number of years n after which the cumulative total marketing spend first surpasses \\$3,000,000.\n\n**Part 1: Setup.**\n\na (year-1 spend) = \\$200,000\n\nk = 1.12 (primary); alternative k = 1.08\n\nTarget cumulative spend = \\$3,000,000\n\n**Part 2: Formula.**\n\n$s_n = a(k^{n}-1)/(k-1)$\n\n**Part 3: Solve.**\n\n**1.** Year-$2$ budget: $a \\times k = 200,000\\times1.12 = \\$224,000.00$.\n\n**2.** $1.12^{9} = 2.773078757$; $s_9 = 200,000 \\times (2.773078757-1)/0.12 = 200,000 \\times 14.775656 = \\$2,955,131.26$.\n\n**3.** $1.12^{10} = 3.105848289$; $s_{10} = 200,000 \\times (3.105848289-1)/0.12 = 200,000 \\times 17.548736 = \\$3,509,747.01$.\n\n**4.** Since $s_9 \\approx \\$2,955,131.26 < \\$3,000,000$ and $s_{10} \\approx \\$3,509,747.01 > \\$3,000,000$, the smallest $n$ at which the target is surpassed is $n = 10$, not $n = 9$.\n\n**5.** $1.08^{10} = 2.158924997$; $s_{10}$ (at $k=1.08$) $= 200,000 \\times (2.158924997-1)/0.08 = 200,000 \\times 14.486562 = \\$2,897,312.49$, which is below $\\$3,000,000$.\n",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 192,
+        "text": "**A) The marketing budget in year 2 is \\$224,000.00.**  (true)\n\nYear-2 budget is the year-1 budget multiplied once by the growth factor: $200,000 \\times 1.12 = \\$224,000.00$, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 325,
+        "text": "**B) The cumulative spend after 9 years is still below the \\$3,000,000 target.**  (true)\n\nSumming the first 9 years gives $s_9 = 200,000 \\times (1.12^{9}-1)/0.12$. Since $1.12^{9} \\approx 2.773079$, this becomes $s_9 \\approx 200,000 \\times 14.77566 \\approx \\$2,955,131.26$, which indeed falls short of the \\$3,000,000 target."
+      },
+      {
+        "letter": "C",
+        "len": 306,
+        "text": "**C) The cumulative spend after 10 years is approximately \\$3,600,000.00.**  (false)\n\nSumming the first 10 years instead gives $s_{10} = 200,000 \\times (1.12^{10}-1)/0.12$. Since $1.12^{10} \\approx 3.105848$, this becomes $s_{10} \\approx 200,000 \\times 17.54873 \\approx \\$3,509,747.01$, not \\$3,600,000.00."
+      },
+      {
+        "letter": "D",
+        "len": 524,
+        "text": "**D) The smallest n for which cumulative spend surpasses \\$3,000,000 is n = 9.**  (false)\n\nSince the 9-year total (≈ \\$2,955,131.26) is still below \\$3,000,000 but the 10-year total (≈ \\$3,509,747.01) is above it, the cumulative spend crosses the \\$3,000,000 threshold sometime during year 10. That means the smallest whole number of years for which the running total exceeds \\$3,000,000 is n=10, not n=9.\n\n$s_9 \\approx 2,955,131 < 3,000,000$ but $s_{10} \\approx 3,509,747 > 3,000,000$, so the first crossing is at $n = 10$."
+      },
+      {
+        "letter": "E",
+        "len": 656,
+        "text": "**E) If the growth rate were only 8% instead of 12%, the 10-year cumulative spend would still surpass the \\$3,000,000 target within 10 years.**  (false)\n\nWith a slower 8% growth rate, the 10-year total is $s_{10} = 200,000 \\times (1.08^{10}-1)/0.08$. Since 1.08 to the 10th power is about 2.158925, this comes to 200,000×14.486562 ≈ \\$2,897,312.49, which is still below \\$3,000,000 - so under this slower growth rate, the target would not actually be reached within 10 years.\n\nAt 8%: $s_{10} = 200,000 \\times ((1.08)^{10}-1)/0.08$\n\n$$(1.08)^{10} \\approx 2.158925, \\quad s_{10} \\approx 200,000 \\times 14.48656 \\approx \\$2,897,312$$\n\n$2,897,312 < 3,000,000$."
+      }
+    ]
+  },
+  "74": {
+    "id": "math-11-74",
+    "case_id": "MATH 11.74",
+    "title": "Charitable Trust: A Deferred, Declining Grant Stream",
+    "subsection": "11.4",
+    "context": "A charitable trust will issue its first grant of \\$50,000 starting six years from now, with each subsequent annual grant equal to 96% of the previous grant, continuing forever with a = \\$50,000 and k = 0.96. Analysts also want the total of just the first 15 grants, and how a steeper decline would compare.",
+    "statements": [
+      "The second grant in the sequence is \\$48,000.00.",
+      "The infinite total of all future grants is \\$1,250,000.00.",
+      "The total of the first 15 grants is approximately \\$572,392.03.",
+      "The first 15 grants represent less than 40% of the infinite total.",
+      "If the decline were steeper, at k = 0.90 instead of 0.96, the infinite total would be less than half of the original infinite total."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "solution_overview": "A charitable trust will issue its first grant of \\$50,000 starting six years from now, with each subsequent annual grant equal to 96% of the previous grant, continuing forever with a = \\$50,000 and k = 0.96. Analysts also want the total of just the first 15 grants, and how a steeper decline would compare.\n\n**Part 1: Setup.**\n\na (first grant) = \\$50,000\n\nk = 0.96 (primary); alternative k = 0.90\n\nn = 15 grants (for the finite check)\n\n**Part 2: Formula.**\n\nInfinite sum (|k| < 1): a/(1 - k)\n\nFinite sum of first n terms: $s_n = a(1 - k^{n})/(1 - k)$\n\n**Part 3: Solve.**\n\n**1.** Grant $2$: $a \\times k = 50,000\\times0.96 = \\$48,000.00$.\n\n**2.** Infinite sum: $50,000/(1 - 0.96) = 50,000/0.04 = \\$1,250,000.00$.\n\n**3.** $0.96^{15} = 0.542086380$.\n\n**4.** $s_{15} = 50,000 \\times (1 - 0.542086380)/0.04 = 50,000 \\times 11.447840 = \\$572,392.03$.\n\n**5.** Ratio: $572,392.03/1,250,000.00 = 0.45791 \\approx 45.79\\%$, which is NOT less than $40\\%$.\n\n**6.** Infinite sum at $k = 0.90$: $50,000/(1 - 0.90) = 50,000/0.10 = \\$500,000.00$; half of $\\$1,250,000.00$ is $\\$625,000.00$, and $\\$500,000.00 < \\$625,000.00$.\n",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 217,
+        "text": "**A) The second grant in the sequence is \\$48,000.00.**  (true)\n\nThe second grant is the first grant multiplied once by the decline factor: 50,000×0.96 = \\$48,000.00, matching exactly.\n\n$$50,000 \\times 0.96 = 48,000$$"
+      },
+      {
+        "letter": "B",
+        "len": 225,
+        "text": "**B) The infinite total of all future grants is \\$1,250,000.00.**  (true)\n\nBecause $|0.96|<1$, letting the grants continue indefinitely produces a finite total of $s_{\\infty} = 50,000/(1-0.96) = 50,000/0.04 = \\$1,250,000.00$."
+      },
+      {
+        "letter": "C",
+        "len": 274,
+        "text": "**C) The total of the first 15 grants is approximately \\$572,392.03.**  (true)\n\nSumming just the first 15 grants gives $s_{15} = 50,000 \\times (1-0.96^{15})/0.04$. Since $0.96^{15} \\approx 0.542086$, this becomes $s_{15} \\approx 50,000 \\times 11.44784 \\approx \\$572,392.03$."
+      },
+      {
+        "letter": "D",
+        "len": 303,
+        "text": "**D) The first 15 grants represent less than 40% of the infinite total.**  (false)\n\nDividing the 15-grant total by the full infinite total gives $572,392.03/1,250,000.00 \\approx 45.8\\%$ - that is above 40%, not below it, so the claim understates how large a share the first 15 grants actually represent."
+      },
+      {
+        "letter": "E",
+        "len": 513,
+        "text": "**E) If the decline were steeper, at k = 0.90 instead of 0.96, the infinite total would be less than half of the original infinite total.**  (true)\n\nA steeper 10% annual decline (k=0.90) gives an infinite total of 50,000/(1-0.90) = 50,000/0.10 = \\$500,000.00. Half of the original \\$1,250,000.00 total is \\$625,000.00, and \\$500,000.00 is indeed below that halfway mark, confirming the comparison.\n\nAt $k = 0.90$: $s_{\\infty} = 50,000/0.10 = \\$500,000$.\n\nHalf of $1,250,000$ is $625,000$, and $500,000 < 625,000$."
+      }
+    ]
+  },
+  "75": {
+    "id": "math-11-75",
+    "case_id": "MATH 11.75",
+    "title": "Vineyard Yield: A Quarterly Decline Unit-Conversion Trap",
+    "subsection": "11.4",
+    "context": "A vineyard's grape yield is expected to decline by 2% every quarter, not every year, over a 5-year span of 20 quarters. The first quarter's yield is 10,000 lbs, so this is a finite geometric series with a = 10,000 lbs, k = 0.98, and n = 20 quarters.",
+    "statements": [
+      "The second quarter's yield is 9,800.00 lbs.",
+      "The total yield over the full 5-year span is approximately 166,196.01 lbs.",
+      "Substituting n = 5 into the same formula gives 48,039.60 lbs, and this would be the correct 5-year total.",
+      "The yield in the 20th quarter alone is approximately 6,812.33 lbs.",
+      "If the 2%-per-quarter decline continued forever instead of stopping after 20 quarters, the theoretical infinite total of 500,000.00 lbs would be less than the actual 20-quarter total."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "solution_overview": "A vineyard's grape yield is expected to decline by 2% every quarter, not every year, over a 5-year span of 20 quarters. The first quarter's yield is 10,000 lbs, so this is a finite geometric series with a = 10,000 lbs, k = 0.98, and n = 20 quarters.\n\n**Part 1: Setup.**\n\na (quarter-1 yield) = 10,000 lbs\n\nk (quarterly decline quotient) = 0.98\n\nn = 20 quarters (5 years)\n\n**Part 2: Formula.**\n\nFinite sum: $s_n = a(1 - k^{n})/(1 - k)$\n\nInfinite sum (|k| < 1): a/(1 - k)\n\n**Part 3: Solve.**\n\n**1.** Quarter-$2$ yield: $a \\times k = 10,000\\times0.98 = 9,800.00$ lbs.\n\n**2.** $0.98^{20} = 0.667607972$.\n\n**3.** $s_{20} = 10,000 \\times (1 - 0.667607972)/0.02 = 10,000 \\times 16.619601 = 166,196.01$ lbs.\n\n**4.** Using the wrong exponent, $n = 5$: $0.98^{5} = 0.903920800$; $s_{5,\\mathrm{wrong}} = 10,000 \\times (1-0.903921)/0.02 = 10,000 \\times 4.80396 = 48,039.60$ lbs — this is NOT the correct $20$-quarter total; it only covers the first $5$ quarters (about $1.25$ years), not $5$ years.\n\n**5.** Quarter-$20$ yield: $a \\times k^{19} = 10,000 \\times 0.681230 = 6,812.33$ lbs.\n\n**6.** Infinite (hypothetical) sum: $10,000/(1 - 0.98) = 10,000/0.02 = 500,000.00$ lbs, which is MORE than the $166,196.01$ lbs $20$-quarter total, not less.\n",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 233,
+        "text": "**A) The second quarter's yield is 9,800.00 lbs.**  (true)\n\nThe second quarter's yield is the first quarter's yield multiplied once by the decline factor: 10,000×0.98: $9,800.00 lbs$, matching exactly.\n\n$$10,000 \\times 0.98 = 9,800$$"
+      },
+      {
+        "letter": "B",
+        "len": 309,
+        "text": "**B) The total yield over the full 5-year span is approximately 166,196.01 lbs.**  (true)\n\nFive years is 20 quarters, so summing all 20 quarters gives $s_{20} = 10,000 \\times (1-0.98^{20})/0.02$. Since $0.98^{20} \\approx 0.667608$, this becomes $s_{20} \\approx 10,000 \\times 16.619601 \\approx 166,196.01$ lbs."
+      },
+      {
+        "letter": "C",
+        "len": 664,
+        "text": "**C) Substituting n = 5 into the same formula gives 48,039.60 lbs, and this would be the correct 5-year total.**  (false)\n\nPlugging n=5 into the same formula instead of n=20 does produce 48,039.60 lbs as a number, but that figure only represents the total of the first 5 quarters (about 1.25 years), not the full 5-year, 20-quarter span. Using the wrong exponent gives a technically computable but practically meaningless answer to the actual 5-year question, whose correct total is 166,196.01 lbs.\n\n$n = 5$ would be five quarters, not five years:\n\n$$s_5 = 10,000 \\times \\frac{1-0.98^{5}}{0.02} \\approx 48,039.60$$\n\nThat is a 1.25-year total, not the 5-year total."
+      },
+      {
+        "letter": "D",
+        "len": 378,
+        "text": "**D) The yield in the 20th quarter alone is approximately 6,812.33 lbs.**  (true)\n\nThe 20th quarter's yield equals the first quarter's yield multiplied by the ratio raised to the 19th power: $10,000 \\times 0.98^{19} \\approx 10,000 \\times 0.681230 \\approx 6,812.33$ lbs.\n\nThe 20th term is $a k^{19}$:\n\n$$0.98^{19} \\approx 0.681233, \\quad 10,000 \\times 0.681233 \\approx 6,812.33$$"
+      },
+      {
+        "letter": "E",
+        "len": 589,
+        "text": "**E) If the 2%-per-quarter decline continued forever instead of stopping after 20 quarters, the theoretical infinite total of 500,000.00 lbs would be less than the actual 20-quarter total.**  (false)\n\nIf the 2% quarterly decline continued forever instead of stopping at 20 quarters, the theoretical total would be $s_{\\infty} = 10,000/(1-0.98) = 10,000/0.02 = 500,000.00$ lbs. Since every additional quarter beyond the 20th still adds a small positive amount, the infinite total must be at least as large as the 20-quarter partial total, and indeed $500,000.00 > 166,196.01$, not below it."
+      }
+    ]
+  },
+  "76": {
+    "id": "math-11-76",
+    "case_id": "MATH 11.76",
+    "title": "Comparing Two Franchise Territories Over 8 Years",
+    "subsection": "11.4",
+    "context": "A franchisor compares two territories over 8 years. Territory A starts at a first-year royalty of \\$80,000, growing 6% per year with a = \\$80,000 and k = 1.06. Territory B starts higher, at \\$95,000, but grows more slowly, at only 2% per year with a = \\$95,000 and k = 1.02.",
+    "statements": [
+      "Territory A's 8-year total royalties are approximately \\$791,797.43.",
+      "Territory B's 8-year total royalties are approximately \\$815,382.06.",
+      "Territory A's 8-year total royalties exceed Territory B's 8-year total.",
+      "In year 8 alone, Territory A's royalty payment of approximately \\$120,290.42 exceeds Territory B's year-8 payment of approximately \\$109,125.14.",
+      "Territory B's 8-year total exceeds Territory A's 8-year total by more than \\$30,000."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "solution_overview": "A franchisor compares two territories over 8 years. Territory A starts at a first-year royalty of \\$80,000, growing 6% per year with a = \\$80,000 and k = 1.06. Territory B starts higher, at \\$95,000, but grows more slowly, at only 2% per year with a = \\$95,000 and k = 1.02.\n\n**Part 1: Setup.**\n\nTerritory A: a = \\$80,000, k = 1.06\n\nTerritory B: a = \\$95,000, k = 1.02\n\nn = 8 years for both\n\n**Part 2: Formula.**\n\n$s_n = a(k^{n}-1)/(k-1)$\n\nTerm in year t: $a k^{t-1}$\n\n**Part 3: Solve.**\n\n**1.** $1.06^{8} = 1.593848075$; $s_{A,8} = 80,000 \\times (1.593848075-1)/0.06 = 80,000 \\times 9.897468 = \\$791,797.43$.\n\n**2.** $1.02^{8} = 1.171659381$; $s_{B,8} = 95,000 \\times (1.171659381-1)/0.02 = 95,000 \\times 8.582969 = \\$815,382.06$.\n\n**3.** Comparing totals: $\\$791,797.43$ (A) $< \\$815,382.06$ (B), so Territory A's total does NOT exceed Territory B's.\n\n**4.** Year-$8$ payment A: $80,000 \\times 1.06^{7} = 80,000 \\times 1.503630 = \\$120,290.42$.\n\n**5.** Year-$8$ payment B: $95,000 \\times 1.02^{7} = 95,000 \\times 1.148686 = \\$109,125.14$; indeed $\\$120,290.42 > \\$109,125.14$.\n\n**6.** Difference (B $-$ A): $\\$815,382.06 - \\$791,797.43 = \\$23,584.63$, which is NOT more than $\\$30,000$.\n",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 340,
+        "text": "**A) Territory A's 8-year total royalties are approximately \\$791,797.43.**  (true)\n\nSumming a geometric series with $a = \\$80,000$, $k = 1.06$, and $n = 8$ years uses $s_{A,8} = a(k^{n}-1)/(k-1)$.\n\n$$s_{A,8} = 80,000 \\times \\frac{(1.06)^{8}-1}{0.06} \\approx 80,000 \\times 9.89747 \\approx \\$791,797.43$$\n\nThat matches the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 340,
+        "text": "**B) Territory B's 8-year total royalties are approximately \\$815,382.06.**  (true)\n\nSumming a geometric series with $a = \\$95,000$, $k = 1.02$, and $n = 8$ years uses $s_{B,8} = a(k^{n}-1)/(k-1)$.\n\n$$s_{B,8} = 95,000 \\times \\frac{(1.02)^{8}-1}{0.02} \\approx 95,000 \\times 8.58297 \\approx \\$815,382.06$$\n\nThat matches the statement exactly."
+      },
+      {
+        "letter": "C",
+        "len": 336,
+        "text": "**C) Territory A's 8-year total royalties exceed Territory B's 8-year total.**  (false)\n\nComparing the two totals directly, $\\$791,797.43 < \\$815,382.06$: Territory B's higher starting royalty outweighs Territory A's faster growth rate over this 8-year window. Territory A's total falls short of Territory B's, not the other way around."
+      },
+      {
+        "letter": "D",
+        "len": 946,
+        "text": "**D) In year 8 alone, Territory A's royalty payment of approximately \\$120,290.42 exceeds Territory B's year-8 payment of approximately \\$109,125.14.**  (true)\n\nTerritory A's year-8 payment is $80,000 \\times 1.06^{7} \\approx 80,000 \\times 1.503630 \\approx \\$120,290.42$, while Territory B's year-8 payment is $95,000 \\times 1.02^{7} \\approx 95,000 \\times 1.148686 \\approx \\$109,125.14$. By year 8, repeated 6% compounding has pushed Territory A's individual payment above Territory B's, even though Territory A's running 8-year total still lags behind - a genuine subtlety in which the faster-growing stream overtakes the slower one term-by-term before it overtakes it in cumulative total.\n\nYear 8 is $a k^{7}$:\n\n$$80,000 \\times (1.06)^{7} \\approx 80,000 \\times 1.503630 \\approx \\$120,290.42$$\n\n$$95,000 \\times (1.02)^{7} \\approx 95,000 \\times 1.148686 \\approx \\$109,125.14$$\n\n$$120,290.42 > 109,125.14$$ even while A's 8-year sum still lags B's."
+      },
+      {
+        "letter": "E",
+        "len": 205,
+        "text": "**E) Territory B's 8-year total exceeds Territory A's 8-year total by more than \\$30,000.**  (false)\n\nThe actual gap is $\\$815,382.06 - \\$791,797.43 = \\$23,584.63$, which is below $\\$30,000$, not above it."
+      }
+    ]
+  },
+  "77": {
+    "id": "math-11-77",
+    "case_id": "MATH 11.77",
+    "title": "Diminishing Marginal Returns from Advertising Spend",
+    "subsection": "11.4",
+    "context": "An analyst models the marginal benefit of the n-th batch of advertising spend as $a_n = 5,000/n^{p}$ dollars, and wants to know, for different values of the exponent p, whether the infinite total marginal benefit $\\sum a_n$ converges, using the rule that $\\sum 1/n^{p}$ converges if and only if p > 1.",
+    "statements": [
+      "With p = 1.5, the marginal benefit of the 4th campaign batch is approximately \\$650.00.",
+      "With p = 1.5, the infinite series converges to a finite total value.",
+      "If instead p = 1, the series would still converge, just to a larger total than the p = 1.5 case.",
+      "$a_{100} = \\$5.00$, and this alone is enough to guarantee that the series $\\sum a_n$ converges.",
+      "With p = 0.5, the series diverges, even though the individual terms still tend to 0 as n → ∞."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "solution_overview": "An analyst models the marginal benefit of the n-th batch of advertising spend as $a_n = 5,000/n^{p}$ dollars, and wants to know, for different values of the exponent p, whether the infinite total marginal benefit $\\sum a_n$ converges, using the rule that $\\sum 1/n^{p}$ converges if and only if p > 1.\n\n**Part 1: Setup.**\n\n$a_n = 5,000/n^{p}$\n\np = 1.5 (primary); p = 1 and p = 0.5 (comparison scenarios)\n\n**Part 2: Formula.**\n\np-series rule: $\\sum_{n=1}^{\\infty} 1/n^{p}$ converges ⇔ $p > 1$\n\nNecessary (not sufficient): convergence requires $\\lim_{n\\to\\infty} a_n = 0$\n\n**Part 3: Solve.**\n\n**1.** $a_4 = 5,000/4^{1.5} = 5,000/8 = \\$625.00$ (not $\\$650.00$).\n\n**2.** $p = 1.5 > 1$, so $\\sum 5,000/n^{1.5}$ converges to a finite value.\n\n**3.** At $p = 1$, $\\sum 5,000/n$ is the harmonic series and diverges — it has no finite sum.\n\n**4.** $a_{100} = \\$5.00$ is correct, but $a_n \\to 0$ is necessary, not sufficient (harmonic counterexample).\n\n**5.** $p = 0.5 \\le 1$, so $\\sum 5,000/n^{0.5}$ diverges even though $a_n \\to 0$.\n",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 224,
+        "text": "**A) With p = 1.5, the marginal benefit of the 4th campaign batch is approximately \\$650.00.**  (false)\n\nSince $4^{1.5} = 4 \\times \\sqrt{4} = 8$, the 4th-batch benefit is $a_4 = 5,000/8 = \\$625.00$, not $\\$650.00$ as stated."
+      },
+      {
+        "letter": "B",
+        "len": 252,
+        "text": "**B) With p = 1.5, the infinite series converges to a finite total value.**  (true)\n\nBy the stated rule, $\\sum 1/n^{p}$ converges exactly when $p > 1$. Here $p = 1.5 > 1$, so $\\sum 5,000/n^{1.5}$ does converge to a finite total, matching the statement."
+      },
+      {
+        "letter": "C",
+        "len": 303,
+        "text": "**C) If instead p = 1, the series would still converge, just to a larger total than the p = 1.5 case.**  (false)\n\nAt $p = 1$ this is the harmonic series $\\sum 5,000/n$, and since $p = 1$ is not greater than $1$, the rule says it diverges rather than converging to any total at all - larger or otherwise."
+      },
+      {
+        "letter": "D",
+        "len": 393,
+        "text": "**D) $a_{100} = \\$5.00$, and this alone is enough to guarantee that the series $\\sum a_n$ converges.**  (false)\n\nThe term itself is correct: $a_{100} = 5,000/100^{1.5} = 5,000/1,000 = \\$5.00$. But $a_n \\to 0$ is only necessary for convergence, not sufficient - the harmonic case in part (c) has terms shrinking to $0$ and still diverges, so this observation alone cannot guarantee convergence."
+      },
+      {
+        "letter": "E",
+        "len": 319,
+        "text": "**E) With p = 0.5, the series diverges, even though the individual terms still tend to 0 as n → ∞.**  (true)\n\nSince $p = 0.5$ is not greater than $1$, the rule says $\\sum 5,000/n^{0.5}$ diverges, even though the individual terms $5,000/\\sqrt{n}$ do shrink toward $0$ - shrinking terms alone never guarantee convergence."
+      }
+    ]
+  },
+  "78": {
+    "id": "math-11-78",
+    "case_id": "MATH 11.78",
+    "title": "Solar Farm: Revenue Growth vs. Rising Maintenance Costs",
+    "subsection": "11.4",
+    "context": "A solar farm's annual energy revenue starts at \\$150,000 and grows 1% per year with a = \\$150,000 and k = 1.01, while its annual maintenance cost starts at \\$120,000 but grows faster, at 3% per year with a = \\$120,000 and k = 1.03. Both are finite geometric series. Management compares cumulative profit, revenue total minus cost total, over both a 12-year and a 20-year horizon.",
+    "statements": [
+      "The cumulative 12-year revenue is approximately \\$1,902,375.45.",
+      "The cumulative 12-year maintenance cost is approximately \\$1,703,043.55.",
+      "The cumulative 12-year profit is approximately \\$199,331.90.",
+      "In year 12 alone, revenue of approximately \\$167,350.25 still exceeds maintenance cost of approximately \\$166,108.06, leaving a net positive of about \\$1,242.19.",
+      "Extending the horizon to 20 years, cumulative profit falls below the 12-year cumulative profit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "solution_overview": "A solar farm's annual energy revenue starts at \\$150,000 and grows 1% per year with a = \\$150,000 and k = 1.01, while its annual maintenance cost starts at \\$120,000 but grows faster, at 3% per year with a = \\$120,000 and k = 1.03. Both are finite geometric series. Management compares cumulative profit, revenue total minus cost total, over both a 12-year and a 20-year horizon.\n\n**Part 1: Setup.**\n\nRevenue: $a = \\$150,000$, $k = 1.01$\n\nMaintenance cost: $a = \\$120,000$, $k = 1.03$\n\nHorizons: $n = 12$ and $n = 20$\n\n**Part 2: Formula.**\n\n$s_n = a(k^{n}-1)/(k-1)$; cumulative profit $= s_{\\mathrm{rev}} - s_{\\mathrm{cost}}$; year-$t$ term $= a k^{t-1}$\n\n**Part 3: Solve.**\n\n**1.** $s_{\\mathrm{rev},12} = \\$1,902,375.45$; $s_{\\mathrm{cost},12} = \\$1,703,043.55$; $12$-year profit $= \\$199,331.90$.\n\n**2.** Year-$12$ revenue $\\$167,350.25$ minus cost $\\$166,108.06$ gives net $\\$1,242.19$.\n\n**3.** Over $20$ years: $s_{\\mathrm{rev},20} = \\$3,302,850.60$; $s_{\\mathrm{cost},20} = \\$3,224,444.94$.\n",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 367,
+        "text": "**A) The cumulative 12-year revenue is approximately \\$1,902,375.45.**  (true)\n\nSumming a geometric series with $a = \\$150,000$, $k = 1.01$, and $n = 12$ years uses $s_{\\mathrm{rev},12} = a(k^{n}-1)/(k-1)$.\n\n$$s_{\\mathrm{rev},12} = 150,000 \\times \\frac{(1.01)^{12}-1}{0.01} \\approx 150,000 \\times 12.68250 \\approx \\$1,902,375.45$$\n\nThat matches the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 378,
+        "text": "**B) The cumulative 12-year maintenance cost is approximately \\$1,703,043.55.**  (true)\n\nSumming a geometric series with $a = \\$120,000$, $k = 1.03$, and $n = 12$ years uses $s_{\\mathrm{cost},12} = a(k^{n}-1)/(k-1)$.\n\n$$s_{\\mathrm{cost},12} = 120,000 \\times \\frac{(1.03)^{12}-1}{0.03} \\approx 120,000 \\times 14.19203 \\approx \\$1,703,043.55$$\n\nThat matches the statement exactly."
+      },
+      {
+        "letter": "C",
+        "len": 236,
+        "text": "**C) The cumulative 12-year profit is approximately \\$199,331.90.**  (true)\n\nSubtracting the cumulative cost from the cumulative revenue gives the profit: $\\$1,902,375.45 - \\$1,703,043.55 = \\$199,331.90$, matching the statement exactly."
+      },
+      {
+        "letter": "D",
+        "len": 825,
+        "text": "**D) In year 12 alone, revenue of approximately \\$167,350.25 still exceeds maintenance cost of approximately \\$166,108.06, leaving a net positive of about \\$1,242.19.**  (true)\n\nIn year 12 alone, revenue is $150,000 \\times 1.01^{11} \\approx 150,000 \\times 1.115668 \\approx \\$167,350.25$, while maintenance cost is $120,000 \\times 1.03^{11} \\approx 120,000 \\times 1.384234 \\approx \\$166,108.06$. Subtracting gives a net of \\$167,350.25 - \\$166,108.06 ≈ \\$1,242.19 - revenue is still ahead, but only barely, showing how much the gap between the two streams has narrowed by this point.\n\nYear 12 terms are $a k^{11}$:\n\n$$150,000 \\times (1.01)^{11} \\approx 150,000 \\times 1.115668 \\approx \\$167,350.25$$\n\n$$120,000 \\times (1.03)^{11} \\approx 120,000 \\times 1.384234 \\approx \\$166,108.06$$\n\n$$167,350.25 - 166,108.06 = \\$1,242.19$$"
+      },
+      {
+        "letter": "E",
+        "len": 1059,
+        "text": "**E) Extending the horizon to 20 years, cumulative profit falls below the 12-year cumulative profit.**  (true)\n\nExtending the same calculations to 20 years gives a cumulative revenue of about \\$3,302,850.60 and a cumulative cost of about \\$3,224,444.94, for a 20-year profit of roughly \\$78,405.66, smaller than the 12-year profit of \\$199,331.90. This happens because maintenance cost compounds at the faster 3% rate while revenue compounds at only 1%; over a longer horizon the faster-growing cost stream eats into more and more of each year's revenue, so even though annual revenue is still ahead of annual cost as late as year 12, the cumulative profit advantage built up in the earlier years gradually erodes as the cost curve catches up.\n\nAt $n = 20$:\n\n$$(1.01)^{20} \\approx 1.220190, \\quad s_{\\mathrm{rev},20} = 150,000 \\times (1.220190-1)/0.01 \\approx \\$3,302,851$$\n\n$$(1.03)^{20} \\approx 1.806111, \\quad s_{\\mathrm{cost},20} = 120,000 \\times (1.806111-1)/0.03 \\approx \\$3,224,445$$\n\n$$3,302,851 - 3,224,445 \\approx \\$78,406$$\n\nand $78,406 < 199,332$."
+      }
+    ]
+  },
+  "79": {
+    "id": "math-11-79",
+    "case_id": "MATH 11.79",
+    "title": "Private Equity Fund: Recession vs. Recovery Cash-Flow Scenarios",
+    "subsection": "11.4",
+    "context": "A private equity fund's portfolio company currently generates \\$2,400,000 in annual free cash flow. Under a “recession” scenario, cash flow is expected to shrink 6% every year indefinitely with a = \\$2,400,000 and k = 0.94. Under a “recovery” scenario, cash flow instead grows 6% per year for the next 7 years before the fund exits with a = \\$2,400,000, k = 1.06, and n = 7.",
+    "statements": [
+      "Under the recession scenario, the infinite cumulative cash flow converges to \\$40,000,000.00.",
+      "Under the same recession scenario, the cumulative cash flow over just the first 15 years is approximately \\$22,000,000.00.",
+      "The 15-year recession total represents approximately 75% of the full infinite-horizon recession total.",
+      "Under the recovery scenario, the cumulative cash flow over the 7-year period, approximately \\$20,145,210.36, exceeds the full infinite-horizon recession total of \\$40,000,000.00.",
+      "In year 7 of the recovery scenario alone, cash flow is approximately \\$2,900,000.00."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "solution_overview": "A private equity fund's portfolio company currently generates \\$2,400,000 in annual free cash flow. Under a “recession” scenario, cash flow is expected to shrink 6% every year indefinitely with a = \\$2,400,000 and k = 0.94. Under a “recovery” scenario, cash flow instead grows 6% per year for the next 7 years before the fund exits with a = \\$2,400,000, k = 1.06, and n = 7.\n\n**Part 1: Setup.**\n\na (current annual free cash flow) = \\$2,400,000\n\nRecession: k = 0.94 (infinite horizon)\n\nRecovery: k = 1.06, n = 7 years (finite horizon)\n\n**Part 2: Formula.**\n\nInfinite sum (|k| < 1): a/(1 - k)\n\nFinite sum of first n terms: $s_n = a(1-k^{n})/(1-k)$ or $a(k^{n}-1)/(k-1)$\n\nTerm in year t: $a k^{t-1}$\n\n**Part 3: Solve.**\n\n**1.** Infinite recession sum: $2,400,000/(1 - 0.94) = 2,400,000/0.06 = \\$40,000,000.00$.\n\n**2.** $0.94^{15} = 0.395291799$; $s_{15} = 2,400,000 \\times (1-0.395291799)/0.06 = 2,400,000 \\times 10.078470 = \\$24,188,328.05$ (not $\\$22,000,000.00$).\n\n**3.** Ratio: $24,188,328.05/40,000,000.00 = 0.60471 \\approx 60.47\\%$ (not $75\\%$).\n\n**4.** $1.06^{7} = 1.503630259$; $s_7 = 2,400,000 \\times (1.503630259-1)/0.06 = 2,400,000 \\times 8.393838 = \\$20,145,210.36$; this is LESS than the infinite recession total of $\\$40,000,000.00$, not more.\n\n**5.** Year-$7$ recovery cash flow: $2,400,000 \\times 1.06^{6} = 2,400,000 \\times 1.418519 = \\$3,404,445.87$ (not $\\$2,900,000.00$).\n",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 381,
+        "text": "**A) Under the recession scenario, the infinite cumulative cash flow converges to \\$40,000,000.00.**  (true)\n\nSince the ratio in the recession scenario is 0.94, and |0.94| is below 1, letting the shrinking cash flows continue forever produces a finite total of a/(1-k) = 2,400,000/(1-0.94) = 2,400,000/0.06 = \\$40,000,000.00.\n\n$$s_{\\infty} = \\frac{2,400,000}{0.06} = \\$40,000,000$$"
+      },
+      {
+        "letter": "B",
+        "len": 397,
+        "text": "**B) Under the same recession scenario, the cumulative cash flow over just the first 15 years is approximately \\$22,000,000.00.**  (false)\n\nSumming the first 15 years with $a = \\$2,400,000$ and $k = 0.94$ uses $s_{15} = a(1-k^{15})/(1-k)$.\n\n$$s_{15} = 2,400,000 \\times \\frac{1-(0.94)^{15}}{0.06} \\approx 2,400,000 \\times 10.07847 \\approx \\$24,188,328.05$$\n\nThat is not $\\$22,000,000.00$ as stated."
+      },
+      {
+        "letter": "C",
+        "len": 249,
+        "text": "**C) The 15-year recession total represents approximately 75% of the full infinite-horizon recession total.**  (false)\n\nDividing the two already-known totals, $\\$24,188,328.05 / \\$40,000,000.00 \\approx 0.6047$, or about $60\\%$, not $75\\%$ as stated."
+      },
+      {
+        "letter": "D",
+        "len": 631,
+        "text": "**D) Under the recovery scenario, the cumulative cash flow over the 7-year period, approximately \\$20,145,210.36, exceeds the full infinite-horizon recession total of \\$40,000,000.00.**  (false)\n\nSumming the 7-year recovery scenario gives $s_7 = 2,400,000 \\times (1.06^{7}-1)/0.06$. Since 1.06 to the 7th power is about 1.503630, this becomes 2,400,000×8.393838 ≈ \\$20,145,210.36, well below the \\$40,000,000.00 infinite recession total, not above it.\n\n$$s_7 = 2,400,000 \\times \\frac{(1.06)^{7}-1}{0.06}$$\n\n$$(1.06)^{7} \\approx 1.503630, \\quad s_7 \\approx 2,400,000 \\times 8.39384 \\approx \\$20,145,210$$\n\n$20,145,210 < 40,000,000$."
+      },
+      {
+        "letter": "E",
+        "len": 362,
+        "text": "**E) In year 7 of the recovery scenario alone, cash flow is approximately \\$2,900,000.00.**  (false)\n\nThe 7th year of the recovery scenario alone is $2,400,000 \\times 1.06^{6} \\approx 2,400,000 \\times 1.418519 \\approx \\$3,404,445.87$, not \\$2,900,000.00.\n\nYear 7 is $a k^{6}$:\n\n$$(1.06)^{6} \\approx 1.418519, \\quad 2,400,000 \\times 1.418519 \\approx \\$3,404,446$$"
+      }
+    ]
+  },
+  "80": {
+    "id": "math-11-80",
+    "case_id": "MATH 11.80",
+    "title": "Capstone: A Three-Tranche Loan Portfolio and a Convergence Trap",
+    "subsection": "11.4",
+    "context": "A private lender values a portfolio of three loan tranches, valued in nominal undiscounted dollars, adding declining and growing streams together just as ordinary fixed amounts. Tranche 1 pays equal annual coupons of \\$25,000 for 9 years in the degenerate k = 1 case. Tranche 2 pays a growing coupon starting at \\$18,000, increasing 7% per year for 9 years with a = \\$18,000 and k = 1.07. Tranche 3 is a perpetual royalty starting at \\$30,000 that declines 8% per year forever with a = \\$30,000 and k = 0.92. Separately, an analyst proposes valuing a symbolic annual fee stream $f_n = 1,000/n$ dollars for n = 1, 2, 3, ….",
+    "statements": [
+      "Tranche 1 totals exactly \\$225,000.00.",
+      "Tranche 2 totals approximately \\$215,603.80.",
+      "Tranche 3, valued as an infinite declining perpetuity, totals \\$375,000.00.",
+      "Tranche 3 must be excluded from any combined valuation, meaning the portfolio's correct combined total is just \\$440,603.80.",
+      "$f_{100} = \\$10.00$, and this alone is sufficient to guarantee that the fee stream converges to a finite total."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "solution_overview": "A private lender values a portfolio of three loan tranches, valued in nominal undiscounted dollars, adding declining and growing streams together just as ordinary fixed amounts. Tranche 1 pays equal annual coupons of \\$25,000 for 9 years in the degenerate k = 1 case. Tranche 2 pays a growing coupon starting at \\$18,000, increasing 7% per year for 9 years with a = \\$18,000 and k = 1.07. Tranche 3 is a perpetual royalty starting at \\$30,000 that declines 8% per year forever with a = \\$30,000 and k = 0.92. Separately, an analyst proposes valuing a symbolic annual fee stream $f_n = 1,000/n$ dollars for n = 1, 2, 3, ….\n\n**Part 1: Setup.**\n\nTranche 1: $a = \\$25,000$, $k = 1$, $n = 9$\n\nTranche 2: $a = \\$18,000$, $k = 1.07$, $n = 9$\n\nTranche 3: $a = \\$30,000$, $k = 0.92$, infinite\n\nFee stream: $f_n = 1,000/n$\n\n**Part 2: Formula.**\n\n$k = 1$: $s_n = an$; finite ($k \\neq 1$): $s_n = a(k^{n}-1)/(k-1)$; infinite ($|k|<1$): $a/(1-k)$\n\n$\\lim a_n = 0$ is necessary but not sufficient for convergence\n\n**Part 3: Solve.**\n\n**1.** Tranche $1$: $s = \\$225,000.00$; Tranche $2$: $s = \\$215,603.80$; Tranche $3$: $s = \\$375,000.00$ (largest).\n\n**2.** Combined total: $\\$815,603.80$ — valid because a convergent infinite sum is a finite dollar amount that may be added to finite sums.\n\n**3.** Fee stream: $f_{100} = \\$10.00$ is correct, but $p = 1$ (harmonic) diverges — terms $\\to 0$ is not enough for convergence.\n",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 241,
+        "text": "**A) Tranche 1 totals exactly \\$225,000.00.**  (true)\n\nWhen every one of the $9$ annual coupons is identical at $\\$25,000$, there is no ratio to apply: the total is just $s_9 = 25,000 \\times 9 = \\$225,000.00$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 307,
+        "text": "**B) Tranche 2 totals approximately \\$215,603.80.**  (true)\n\nSumming a geometric series with $a = \\$18,000$, $k = 1.07$, and $n = 9$ years uses $s = a(k^{n}-1)/(k-1)$.\n\n$$s_9 = 18,000 \\times \\frac{(1.07)^{9}-1}{0.07} \\approx 18,000 \\times 11.97799 \\approx \\$215,603.80$$\n\nThat matches the statement exactly."
+      },
+      {
+        "letter": "C",
+        "len": 689,
+        "text": "**C) Tranche 3, valued as an infinite declining perpetuity, totals \\$375,000.00.**  (true)\n\nSince the ratio 0.92 has absolute value below 1, letting this royalty stream continue forever gives a finite total of 30,000/(1-0.92) = 30,000/0.08 = \\$375,000.00. Comparing all three tranches - \\$225,000.00, \\$215,603.80, and \\$375,000.00 - the perpetual royalty stream is indeed the largest of the three, even though it starts with the smallest single payment; over an unlimited horizon, a slowly-declining stream can accumulate more value than either finite stream.\n\n$$s_{\\infty} = 30,000/(1-0.92) = 30,000/0.08 = \\$375,000$$\n\nCompare $225,000,215,604$, and $375,000$: Tranche 3 is the largest."
+      },
+      {
+        "letter": "D",
+        "len": 891,
+        "text": "**D) Tranche 3 must be excluded from any combined valuation, meaning the portfolio's correct combined total is just \\$440,603.80.**  (false)\n\nThere is nothing that prevents a convergent infinite series from being added to finite sums - once a series has a specific, finite total, that total behaves just like any other fixed dollar amount and can be combined with other fixed amounts through ordinary addition. Excluding Tranche 3 and reporting only \\$225,000.00 + \\$215,603.80 = \\$440,603.80 leaves out \\$375,000.00 of value that is just as real and just as calculable as the other two tranches; the correct combined total, including all three, is \\$225,000.00 + \\$215,603.80 + \\$375,000.00 = \\$815,603.80.\n\nA convergent infinite total is an ordinary finite dollar amount:\n\n$$225,000 + 215,603.80 + 375,000 = \\$815,603.80$$\n\nExcluding Tranche 3 would drop $\\$375,000$ without justification."
+      },
+      {
+        "letter": "E",
+        "len": 379,
+        "text": "**E) $f_{100} = \\$10.00$, and this alone is sufficient to guarantee that the fee stream converges to a finite total.**  (false)\n\nThe term itself is correct: $f_{100} = 1,000/100 = \\$10.00$. But $f_n = 1,000/n$ is just $1,000$ times the harmonic series, which has $p = 1$ and therefore diverges even though $f_n \\to 0$ - so shrinking terms alone cannot guarantee convergence here."
+      }
+    ]
+  },
+  "81": {
+    "id": "math-11-81",
+    "case_id": "MATH 11.81",
+    "title": "Present Value of a Single Future Payment for a Bakery Equipment Fund",
+    "subsection": "11.5",
+    "context": "Ms. Delgado, the bakery owner from a previous chapter, now wants to have exactly \\$5,000 available in 3 years to replace a commercial oven, and plans to make a single deposit today into an account earning 7% annual interest.",
+    "statements": [
+      "The amount she must deposit today is approximately \\$4,081.49.",
+      "If the interest rate were instead 5%, the required deposit today would be LOWER than \\$4,081.49.",
+      "The interest that will be earned over the 3 years is approximately \\$928.51.",
+      "If the target amount were doubled to \\$10,000, the required deposit today would also exactly double, to approximately \\$8,162.98.",
+      "If the horizon were extended to 6 years at the same 7% rate, the required deposit today would be exactly half of \\$4,081.49."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "solution_overview": "Ms. Delgado, the bakery owner from a previous chapter, now wants to have exactly \\$5,000 available in $3$ years to replace a commercial oven, and plans to make a single deposit today into an account earning $7\\%$ annual interest.\n\n**Part 1: Setup.**\n\nTarget future amount $A = \\$5,000$; $r = 0.07$ (and $0.05$ for part b); annual compounding, single deposit; $t = 3$ years (and $6$ for part e).\n\n**Part 2: Formula.**\n\n$x(1+r)^{n}=A$, so the required deposit is $x=A/(1+r)^{n}$.\n\n**Part 3: Solve.**\n\n**1.** $x = 5,000/(1.07)^{3} = 5,000/1.225043 = \\$4,081.49$.\n\n**2.** At $5\\%$, $x = 5,000/(1.05)^{3} = 5,000/1.157625 = \\$4,319.19$, higher than $\\$4,081.49$, not lower.\n\n**3.** Interest earned: $5,000.00-4,081.49 = \\$918.51$ (not $\\$928.51$).\n\n**4.** Doubling the target to $\\$10,000$ doubles $x$ to $\\$8,162.98$. Extending to $6$ years: $x = 5,000/(1.07)^{6} = \\$3,331.71$, which is not half of $\\$4,081.49$.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 239,
+        "text": "**A) The amount she must deposit today is approximately \\$4,081.49.**  (true)\n\nPlugging $A = 5,000$, $r = 0.07$, and $n = 3$ into $x = A/(1+r)^{n}$ gives $x = 5,000/(1.07)^{3} = 5,000/1.225043 = \\$4,081.49$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 563,
+        "text": "**B) If the interest rate were instead 5%, the required deposit today would be LOWER than \\$4,081.49.**  (false)\n\nA lower discount rate means each future dollar is discounted less severely, so LESS growth is assumed and MORE must be set aside today: at 5% the required deposit is \\$4,319.19, which is higher than the 7% figure of \\$4,081.49, not lower.\n\nSame formula, lower rate:\n\n$$x = 5,000 / (1.05)^{3}$$\n\n$$(1.05)^{3} = 1.157625$$\n\n$$5,000 / 1.157625 = \\$4,319.19$$\n\n\\$4,319.19 sits above \\$4,081.49, so the claim that 5% would lower the deposit is backwards."
+      },
+      {
+        "letter": "C",
+        "len": 220,
+        "text": "**C) The interest that will be earned over the 3 years is approximately \\$928.51.**  (false)\n\nThe interest earned is simply the future target minus today's deposit: 5,000.00 - 4,081.49 = \\$918.51, not \\$928.51 as stated."
+      },
+      {
+        "letter": "D",
+        "len": 442,
+        "text": "**D) If the target amount were doubled to \\$10,000, the required deposit today would also exactly double, to approximately \\$8,162.98.**  (true)\n\nBecause $x = A/(1+r)^{n}$ is directly proportional to A for fixed r and n, doubling the target amount exactly doubles the required deposit, from \\$4,081.49 to \\$8,162.98.\n\nFix r and n, double A:\n\n$$x' = 10,000 / (1.07)^{3} = 10,000 / 1.225043 = \\$8,162.98$$\n\n\\$8,162.98 is exactly 2 × \\$4,081.49."
+      },
+      {
+        "letter": "E",
+        "len": 606,
+        "text": "**E) If the horizon were extended to 6 years at the same 7% rate, the required deposit today would be exactly half of \\$4,081.49.**  (false)\n\nThe discounting relationship is exponential in time, not linear, so doubling the horizon does not halve the deposit: the correct 6-year deposit is $5,000/(1.07)^{6} = \\$3,331.71$, which is well above the naively halved figure of \\$2,040.75.\n\nSix years at 7%:\n\n$$x_6 = 5,000 / (1.07)^{6}$$\n\n$$(1.07)^{6} \\approx 1.500730$$\n\n$$5,000 / 1.500730 = \\$3,331.71$$\n\nHalf of \\$4,081.49 would be \\$2,040.75. \\$3,331.71 is larger, so doubling time does not halve the deposit."
+      }
+    ]
+  },
+  "83": {
+    "id": "math-11-83",
+    "case_id": "MATH 11.83",
+    "title": "Future Value of an Ordinary Annuity for a Dental Clinic's Equipment Fund",
+    "subsection": "11.5",
+    "context": "A dental clinic owner deposits \\$2,000 at the end of each year into an equipment-replacement fund earning 5% annual interest, for 6 years, and wants to understand how this future value relates to its present-value equivalent.",
+    "statements": [
+      "The future value after 6 years is approximately \\$13,603.84.",
+      "The total interest earned over the 6 years is approximately \\$1,703.84.",
+      "The present-value equivalent of this future value is approximately \\$18,230.45.",
+      "If the annual deposit were increased by 50%, to \\$3,000, the 6-year future value would also rise by exactly 50%, to approximately \\$21,405.76.",
+      "If the number of annual deposits were doubled to 12 years, the future value would be LESS than double \\$13,603.84."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "solution_overview": "A dental clinic owner deposits \\$2,000 at the end of each year into an equipment fund earning $5\\%$ annual interest for $6$ years, and wants the future value and its present-value equivalent.\n\n**Part 1: Setup.**\n\n$a = \\$2,000$; $r = 0.05$; ordinary annuity; $n = 6$ (and $12$ for part e).\n\n**Part 2: Formula.**\n\n$F_n=(a/r)[(1+r)^{n}-1]$; $P_n=(a/r)[1-1/(1+r)^{n}]$; $F_n=P_n(1+r)^{n}$.\n\n**Part 3: Solve.**\n\n**1.** $F_6 = (2,000/0.05)[(1.05)^{6}-1] \\approx \\$13,603.84$; interest $= 13,603.84-12,000 = \\$1,603.84$.\n\n**2.** $P_6 = F_6/(1.05)^{6} \\approx \\$10,151.40$ (not $\\$18,230.45$ from multiplying).\n\n**3.** At $50\\%$ higher deposits, $F_6' = 13,603.84\\times1.5 = \\$20,405.76$.\n\n**4.** For $n = 12$, $F_{12} \\approx \\$31,834.24$, well above double the $6$-year figure.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 304,
+        "text": "**A) The future value after 6 years is approximately \\$13,603.84.**  (true)\n\nPlugging $a = \\$2,000$, $r = 0.05$, and $n = 6$ into the ordinary-annuity formula $F_n = (a/r)[(1+r)^{n}-1]$ gives $F_6 = (2,000/0.05)[(1.05)^{6}-1] \\approx 40,000 \\times 0.340096 = \\$13,603.84$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 223,
+        "text": "**B) The total interest earned over the 6 years is approximately \\$1,703.84.**  (false)\n\nTotal deposits of \\$12,000.00 subtracted from the future value of \\$13,603.84 leaves \\$1,603.84 in interest, not \\$1,703.84 as stated."
+      },
+      {
+        "letter": "C",
+        "len": 520,
+        "text": "**C) The present-value equivalent of this future value is approximately \\$18,230.45.**  (false)\n\nThis inverts the relationship $F_n = P_n(1+r)^{n}$: to go from the future value back to the present value one must DIVIDE by $(1+r)^{n}$, not multiply. The correctly computed present value is \\$10,151.40, not \\$18,230.45.\n\nGo from future value back to present value by dividing, not multiplying:\n\n$$P_6 = F_6 / (1.05)^{6} = 13,603.84 / 1.340096 = \\$10,151.40$$\n\n\\$10,151.40 is the present-value equivalent, not \\$18,230.45."
+      },
+      {
+        "letter": "D",
+        "len": 576,
+        "text": "**D) If the annual deposit were increased by 50%, to \\$3,000, the 6-year future value would also rise by exactly 50%, to approximately \\$21,405.76.**  (false)\n\nBecause Fn is directly proportional to the periodic deposit a, increasing a by 50% (from \\$2,000 to \\$3,000) increases F6 by exactly 50%, from \\$13,603.84 to \\$20,405.76, not \\$21,405.76 as stated.\n\nF scales with a. Raise a from 2,000 to 3,000 (a 50% increase):\n\n$$F_6' = 13,603.84 \\times 1.5 = \\$20,405.76$$\n\nThe statement's \\$21,405.76 is \\$1,000 too high. The 50% rise itself is correct; the dollar figure is not."
+      },
+      {
+        "letter": "E",
+        "len": 740,
+        "text": "**E) If the number of annual deposits were doubled to 12 years, the future value would be LESS than double \\$13,603.84.**  (false)\n\nF12 = \\$31,834.24 is actually MORE than double the 6-year value of \\$13,603.84 (double would be \\$27,207.68), not less, since extending the deposit period lets earlier deposits keep compounding on top of the additional deposits, so the future value grows faster than linearly with the number of periods.\n\nTwelve years at the same 2,000 and 5%:\n\n$$F_{12} = 40,000\\bigl[(1.05)^{12} - 1\\bigr]$$\n\n$$(1.05)^{12} \\approx 1.795856,\\quad 1.795856 - 1 = 0.795856$$\n\n$$40,000 \\times 0.795856 = \\$31,834.24$$\n\nDouble F6 is \\$27,207.68. \\$31,834.24 exceeds that double, so the future value is more than double, not less."
+      }
+    ]
+  },
+  "84": {
+    "id": "math-11-84",
+    "case_id": "MATH 11.84",
+    "title": "Future Value of an Ordinary Annuity for a Logistics Company's Fleet Fund",
+    "subsection": "11.5",
+    "context": "A logistics company deposits \\$3,500 at the end of each year into a fleet-replacement account earning 8% annual interest, for 10 years, and management wants to stress-test the fund under a longer horizon and a higher rate.",
+    "statements": [
+      "The future value after 10 years is approximately \\$50,702.97.",
+      "The total interest earned over the 10 years is approximately \\$15,702.97.",
+      "If the deposit period were extended to 20 years, the future value would be LESS than double \\$50,702.97.",
+      "The interest-only portion of the 10-year future value, approximately \\$15,702.97, exceeds the total principal deposited of \\$35,000.00.",
+      "If the interest rate rose to 10%, the 10-year future value would exceed \\$55,000.00."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "solution_overview": "A logistics company deposits \\$3,500 at the end of each year into a fleet-replacement account earning 8% annual interest, for 10 years, and management wants to stress-test the fund under a longer horizon and a higher rate.\n\n**Part 1: Setup.**\n\nAnnual deposit a = \\$3,500\n\nNominal annual rate r = 8% = 0.08 (and 10% for part e)\n\nCompounding: annual, ordinary annuity\n\nn = 10 years (and 20 years for part c)\n\n**Part 2: Formula.**\n\n$F_n=(a/r)[(1+r)^{n}-1]$\n\n**Part 3: Solve.**\n\n**1.** $F_{10} = (3,500/0.08)[(1.08)^{10}-1] = 43,750 \\times 1.158925 = \\$50,702.97$.\n\n**2.** Total deposits over ten years: $3,500 \\times 10 = \\$35,000.00$, so the interest earned is $50,702.97 - 35,000.00 = \\$15,702.97$.\n\n**3.** Extending to $20$ years, $F_{20} = (3,500/0.08)[(1.08)^{20}-1] = 43,750 \\times 3.660957 = \\$160,166.87$, far MORE than double the $10$-year value of $\\$101,405.94$, not less.\n\n**4.** That interest figure of $\\$15,702.97$ is smaller than the principal of $\\$35,000.00$, so it does not exceed it.\n\n**5.** At the higher rate of $10\\%$, $F_{10} = (3,500/0.10)[(1.10)^{10}-1] = 35,000 \\times 1.593742 = \\$55,780.97$, which does exceed $\\$55,000.00$.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 281,
+        "text": "**A) The future value after 10 years is approximately \\$50,702.97.**  (true)\n\nPlugging $a = \\$3,500$, $r = 0.08$, and $n = 10$ into $F_n = (a/r)[(1+r)^{n}-1]$ gives $F_{10} = (3,500/0.08)[(1.08)^{10}-1] \\approx 43,750 \\times 1.158925 = \\$50,702.97$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 211,
+        "text": "**B) The total interest earned over the 10 years is approximately \\$15,702.97.**  (true)\n\nTotal deposits of \\$35,000.00 subtracted from \\$50,702.97 leaves \\$15,702.97 in interest, matching the statement exactly."
+      },
+      {
+        "letter": "C",
+        "len": 587,
+        "text": "**C) If the deposit period were extended to 20 years, the future value would be LESS than double \\$50,702.97.**  (false)\n\nBecause the future value grows exponentially rather than linearly with the number of periods, doubling the deposit period to 20 years produces F20 = \\$160,166.87, which is well MORE than double the 10-year value, not less.\n\nTwenty years:\n\n$$F_{20} = 43,750\\bigl[(1.08)^{20} - 1\\bigr]$$\n\n$$(1.08)^{20} \\approx 4.660957,\\quad 4.660957 - 1 = 3.660957$$\n\n$$43,750 \\times 3.660957 = \\$160,166.87$$\n\nDouble F10 is \\$101,405.94. \\$160,166.87 is more than double, not less."
+      },
+      {
+        "letter": "D",
+        "len": 311,
+        "text": "**D) The interest-only portion of the 10-year future value, approximately \\$15,702.97, exceeds the total principal deposited of \\$35,000.00.**  (false)\n\nThe interest earned, $\\$15,702.97$, is smaller than the total principal contributed, $3,500 \\times 10 = \\$35,000.00$, not larger, contradicting the statement."
+      },
+      {
+        "letter": "E",
+        "len": 457,
+        "text": "**E) If the interest rate rose to 10%, the 10-year future value would exceed \\$55,000.00.**  (true)\n\nRaising the rate to 10% increases F10 to \\$55,780.97, which does exceed the \\$55,000.00 threshold stated.\n\nRaise the rate to 10%, keep a = 3,500 and n = 10:\n\n$$F_{10}' = (3,500 / 0.10)\\bigl[(1.10)^{10} - 1\\bigr]$$\n\n$$(1.10)^{10} \\approx 2.593742,\\quad 2.593742 - 1 = 1.593742$$\n\n$$35,000 \\times 1.593742 = \\$55,780.97$$\n\n\\$55,780.97 does clear \\$55,000.00."
+      }
+    ]
+  },
+  "85": {
+    "id": "math-11-85",
+    "case_id": "MATH 11.85",
+    "title": "Present Value of an Ordinary Annuity for a Retiree's Withdrawal Plan",
+    "subsection": "11.5",
+    "context": "A retiree wants to withdraw \\$2,400 at the end of each year for the next 15 years from a retirement account earning 4.5% annual interest, and wants to know how much must be in the account today to support these withdrawals.",
+    "statements": [
+      "The present value needed today is approximately \\$25,775.15.",
+      "The total nominal withdrawals over 15 years, \\$36,000.00, exceed the required deposit of \\$25,775.15, illustrating that future dollars are worth less than present dollars.",
+      "If withdrawals were extended to 30 years at the same rate, the present value would exactly double, to approximately \\$51,550.30.",
+      "The gap between the total nominal withdrawals and today's required deposit, approximately \\$11,224.85, represents the total discount applied.",
+      "If the interest rate were higher, the required present-value deposit would be HIGHER than \\$25,775.15."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "solution_overview": "A retiree wants to withdraw \\$2,400 at the end of each year for the next 15 years from a retirement account earning 4.5% annual interest, and wants to know how much must be in the account today to support these withdrawals.\n\n**Part 1: Setup.**\n\nAnnual withdrawal a = \\$2,400\n\nNominal annual rate r = 4.5% = 0.045 (and 6% for part e)\n\nCompounding: annual, ordinary annuity\n\nn = 15 years (and 30 years for part c)\n\n**Part 2: Formula.**\n\n$P_n=(a/r)[1-1/(1+r)^{n}]$\n\n**Part 3: Solve.**\n\n**1.** $P_{15} = (2,400/0.045)[1-1/(1.045)^{15}] = 53,333.33 \\times 0.483284 = \\$25,775.15$.\n\n**2.** Total nominal withdrawals over fifteen years: $2,400 \\times 15 = \\$36,000.00$, well above $\\$25,775.15$.\n\n**3.** Extending to $30$ years, $P_{30} = (2,400/0.045)[1-1/(1.045)^{30}] = 53,333.33 \\times 0.732998 = \\$39,091.65$, nowhere near double the $15$-year figure of $\\$51,550.30$.\n\n**4.** The gap between nominal withdrawals and the present value is $36,000.00 - 25,775.15 = \\$10,224.85$, not $\\$11,224.85$ as stated.\n\n**5.** At the higher rate of $6\\%$, $P_{15} = (2,400/0.06)[1-1/(1.06)^{15}] = 40,000 \\times 0.582735 = \\$23,309.40$, LOWER than $\\$25,775.15$, not higher.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 256,
+        "text": "**A) The present value needed today is approximately \\$25,775.15.**  (true)\n\nPlugging $a = \\$2,400$, $r = 0.045$, and $n = 15$ into $P_n = (a/r)[1-1/(1+r)^{n}]$ gives $P_{15} \\approx 53,333.33 \\times 0.483284 = \\$25,775.15$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 393,
+        "text": "**B) The total nominal withdrawals over 15 years, \\$36,000.00, exceed the required deposit of \\$25,775.15, illustrating that future dollars are worth less than present dollars.**  (true)\n\nNominal withdrawals total $2,400 \\times 15 = \\$36,000.00$, which is indeed larger than the $\\$25,775.15$ required today, since each future withdrawal is discounted back to a smaller present-day equivalent."
+      },
+      {
+        "letter": "C",
+        "len": 652,
+        "text": "**C) If withdrawals were extended to 30 years at the same rate, the present value would exactly double, to approximately \\$51,550.30.**  (false)\n\nBecause $1/(1+r)^{n}$ shrinks nonlinearly as n grows, doubling the withdrawal period to 30 years raises the present value only to \\$39,091.65, not to the naively doubled figure of \\$51,550.30.\n\nThirty years is not twice fifteen in present value:\n\n$$P_{30} = 53,333.33\\bigl[1 - 1/(1.045)^{30}\\bigr]$$\n\n$$(1.045)^{30} \\approx 3.745318,\\quad 1/3.745318 \\approx 0.267002$$\n\n$$1 - 0.267002 = 0.732998$$\n\n$$53,333.33 \\times 0.732998 = \\$39,091.65$$\n\nDouble P15 would be \\$51,550.30. \\$39,091.65 falls well short."
+      },
+      {
+        "letter": "D",
+        "len": 296,
+        "text": "**D) The gap between the total nominal withdrawals and today's required deposit, approximately \\$11,224.85, represents the total discount applied.**  (false)\n\nSubtracting the required deposit from the total nominal withdrawals gives 36,000.00 - 25,775.15 = \\$10,224.85, not \\$11,224.85 as stated."
+      },
+      {
+        "letter": "E",
+        "len": 643,
+        "text": "**E) If the interest rate were higher, the required present-value deposit would be HIGHER than \\$25,775.15.**  (false)\n\nA higher interest rate discounts future withdrawals more heavily, which REDUCES the amount needed today, not increases it: at 6% only \\$23,309.40 is required, which is lower than the 4.5%-rate figure of \\$25,775.15.\n\nA higher rate discounts more, so today's deposit falls. At 6%:\n\n$$P_{15}' = (2,400 / 0.06)\\bigl[1 - 1/(1.06)^{15}\\bigr]$$\n\n$$(1.06)^{15} \\approx 2.396558,\\quad 1/2.396558 \\approx 0.417265$$\n\n$$1 - 0.417265 = 0.582735$$\n\n$$40,000 \\times 0.582735 = \\$23,309.40$$\n\n\\$23,309.40 is below \\$25,775.15, not above."
+      }
+    ]
+  },
+  "86": {
+    "id": "math-11-86",
+    "case_id": "MATH 11.86",
+    "title": "Present Value of an Ordinary Annuity vs. a Perpetuity for a Nonprofit Scholarship",
+    "subsection": "11.5",
+    "context": "A nonprofit organization needs to fund \\$5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same \\$5,000 annual payment in perpetuity at the same rate.",
+    "statements": [
+      "The present value needed to fund the 20-year annuity is approximately \\$57,349.67.",
+      "The perpetuity value is approximately \\$83,333.33, exceeding the 20-year annuity's present value by approximately \\$25,983.66.",
+      "The 20-year annuity's present value represents approximately 72.82% of the equivalent perpetuity value.",
+      "If the term were extended to 40 years, the present value would rise to MORE than 95% of the perpetuity value.",
+      "The perpetuity formula is obtained by letting the number of payments grow toward infinity in the annuity present-value formula, so that the value converges to \\$83,333.33 as the limiting value."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "solution_overview": "A nonprofit organization needs to fund \\$5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same \\$5,000 annual payment in perpetuity at the same rate.\n\n**Part 1: Setup.**\n\nAnnual payment a = \\$5,000\n\nNominal annual rate r = 6% = 0.06\n\nCompounding: annual, ordinary annuity / perpetuity\n\nn = 20 years (and 40 years for part d)\n\n**Part 2: Formula.**\n\n$P_n=(a/r)[1-1/(1+r)^{n}]$\n\nPerpetuity: $P=a/r$ (limit as $n\\to\\infty$)\n\n**Part 3: Solve.**\n\n**1.** $P_{20} = (5,000/0.06)[1-1/(1.06)^{20}] = 83,333.33 \\times 0.688195 = \\$57,349.67$.\n\n**2.** The perpetuity value is $5,000/0.06 = \\$83,333.33$, so the gap is $83,333.33 - 57,349.67 = \\$25,983.66$.\n\n**3.** Dividing, $57,349.67 / 83,333.33 = 0.68820$, about $68.82\\%$, not $72.82\\%$.\n\n**4.** Extending to $40$ years instead, $P_{40} = (5,000/0.06)[1-1/(1.06)^{40}] = 83,333.33 \\times 0.902778 = \\$75,231.50$, which is about $90.28\\%$ of the perpetuity value, not more than $95\\%$.\n\n**5.** As $n$ grows without bound, $(1+r)^{n}\\to\\infty$, so $1/(1+r)^{n}\\to0$ and $P_n\\to a/r = 83,333.33$, confirming the perpetuity limit.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 388,
+        "text": "**A) The present value needed to fund the 20-year annuity is approximately \\$57,349.67.**  (true)\n\n$P_{20} = (5,000/0.06)[1 - 1/(1.06)^{20}] = \\$57,349.67$, matching the statement exactly.\n\n$$P_{20} = (5,000 / 0.06)\\bigl[1 - 1/(1.06)^{20}\\bigr]$$\n\n$$(1.06)^{20} \\approx 3.207135,\\quad 1/3.207135 \\approx 0.311805$$\n\n$$1 - 0.311805 = 0.688195$$\n\n$$83,333.33 \\times 0.688195 = \\$57,349.67$$"
+      },
+      {
+        "letter": "B",
+        "len": 421,
+        "text": "**B) The perpetuity value is approximately \\$83,333.33, exceeding the 20-year annuity's present value by approximately \\$25,983.66.**  (true)\n\nThe perpetuity value of \\$83,333.33 exceeds the 20-year annuity's present value of \\$57,349.67 by exactly \\$25,983.66, matching the statement exactly.\n\nPerpetuity: $P = a/r = 5,000/0.06 = \\$83,333.33$.\n\nGap: $83,333.33 - 57,349.67 = \\$25,983.66$. Both pieces of the claim match."
+      },
+      {
+        "letter": "C",
+        "len": 213,
+        "text": "**C) The 20-year annuity's present value represents approximately 72.82% of the equivalent perpetuity value.**  (false)\n\n57,349.67 divided by 83,333.33 gives 0.68820, or approximately 68.82%, not 72.82% as stated."
+      },
+      {
+        "letter": "D",
+        "len": 695,
+        "text": "**D) If the term were extended to 40 years, the present value would rise to MORE than 95% of the perpetuity value.**  (false)\n\nEven after doubling the term to 40 years, the present value only reaches \\$75,231.50, or about 90.28% of the perpetuity value - still short of 95%, since later payments are discounted so heavily that extending the horizon further yields diminishing gains.\n\nForty years:\n\n$$P_{40} = 83,333.33\\bigl[1 - 1/(1.06)^{40}\\bigr]$$\n\n$$(1.06)^{40} \\approx 10.285718,\\quad 1/10.285718 \\approx 0.097222$$\n\n$$1 - 0.097222 = 0.902778$$\n\n$$83,333.33 \\times 0.902778 = \\$75,231.50$$\n\nShare of the perpetuity: $75,231.50 / 83,333.33 \\approx 0.9028 = 90.28\\%$, which is still under 95%."
+      },
+      {
+        "letter": "E",
+        "len": 648,
+        "text": "**E) The perpetuity formula is obtained by letting the number of payments grow toward infinity in the annuity present-value formula, so that the value converges to \\$83,333.33 as the limiting value.**  (true)\n\nThis is exactly how Section 11.5 derives the perpetuity formula: letting n tend to infinity in the annuity present-value formula causes $1/(1+r)^{n}$ to vanish, leaving the annuity's present value converging to a/r, matching the statement exactly.\n\nIn $P_n = (a/r)\\bigl[1 - 1/(1+r)^{n}\\bigr]$, let n grow. Then $(1.06)^{n} \\to \\infty$, so $1/(1.06)^{n} \\to 0$, and $P_n \\to 5,000/0.06 = \\$83,333.33$. That limit is the perpetuity formula."
+      }
+    ]
+  },
+  "87": {
+    "id": "math-11-87",
+    "case_id": "MATH 11.87",
+    "title": "Comparing Payment Streams via Present Value for a Machinery Purchase",
+    "subsection": "11.5",
+    "context": "A supplier offers a company two payment options for a piece of machinery. Option 1: pay \\$18,000 today. Option 2: pay \\$2,500 at the end of each year for 9 years. Using an interest rate of 7%, the company wants to know which option has the lower present-value cost.",
+    "statements": [
+      "The present value of Option 2's payments is approximately \\$16,288.18.",
+      "Because \\$16,288.18 is less than \\$18,000.00, Option 2 is the financially better choice, saving approximately \\$1,811.82.",
+      "If the interest rate were only 4%, Option 2's present value would be LOWER than \\$16,288.18, making Option 1 even less attractive by comparison.",
+      "The total nominal payments under Option 2 over 9 years, \\$22,500.00, exceed the \\$18,000.00 lump-sum cost of Option 1 by \\$4,600.00.",
+      "Option 1's \\$18,000.00, if invested today at 7% instead of used for the machinery, would grow after 9 years to a future value of more than \\$34,000.00."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "solution_overview": "A supplier offers a company two payment options for a piece of machinery. Option $1$: pay \\$18,000 today. Option $2$: pay \\$2,500 at the end of each year for $9$ years. Using an interest rate of $7\\%$, which option has the lower present-value cost?\n\n**Part 1: Setup.**\n\nOption $1$: lump sum $\\$18,000$ today. Option $2$: $a = \\$2,500$, $n = 9$ years; $r = 0.07$ (and $0.04$ for part c); ordinary annuity.\n\n**Part 2: Formula.**\n\n$P_n=(a/r)[1-1/(1+r)^{n}]$; $F=P(1+r)^{n}$.\n\n**Part 3: Solve.**\n\n**1.** $P_9 = (2,500/0.07)[1-1/(1.07)^{9}] = 35,714.29\\times0.456069 = \\$16,288.18$; savings vs Option $1$: $18,000-16,288.18 = \\$1,711.82$ (not $\\$1,811.82$).\n\n**2.** At $4\\%$, $P_9 = (2,500/0.04)[1-1/(1.04)^{9}] = 62,500\\times0.297413 = \\$18,588.31$, higher than at $7\\%$ because a lower rate discounts future payments less.\n\n**3.** Total Option-$2$ payments: $2,500\\times9 = \\$22,500$, exceeding the lump sum by $\\$4,500$ (not $\\$4,600$).\n\n**4.** Growing the lump sum forward: $F = 18,000(1.07)^{9} = 18,000\\times1.838459 = \\$33,092.26$, which does not exceed $\\$34,000$.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 261,
+        "text": "**A) The present value of Option 2's payments is approximately \\$16,288.18.**  (true)\n\nPlugging $a = \\$2,500$, $r = 0.07$, and $n = 9$ into $P_n = (a/r)[1-1/(1+r)^{n}]$ gives $P_9 \\approx 35,714.29 \\times 0.456069 = \\$16,288.18$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 254,
+        "text": "**B) Because \\$16,288.18 is less than \\$18,000.00, Option 2 is the financially better choice, saving approximately \\$1,811.82.**  (false)\n\nOption 2 is indeed cheaper, but the saving is $\\$18,000.00 - \\$16,288.18 = \\$1,711.82$, not $\\$1,811.82$ as stated."
+      },
+      {
+        "letter": "C",
+        "len": 696,
+        "text": "**C) If the interest rate were only 4%, Option 2's present value would be LOWER than \\$16,288.18, making Option 1 even less attractive by comparison.**  (false)\n\nA lower discount rate discounts future payments less severely, which RAISES their present value: at 4%, Option 2's present value rises to \\$18,588.31, which is higher than the 7%-rate figure of \\$16,288.18, not lower.\n\nLower rate, higher present value. At 4%:\n\n$$P_9' = (2,500 / 0.04)\\bigl[1 - 1/(1.04)^{9}\\bigr]$$\n\n$$(1.04)^{9} \\approx 1.423312,\\quad 1/1.423312 \\approx 0.702587$$\n\n$$1 - 0.702587 = 0.297413$$\n\n$$62,500 \\times 0.297413 = \\$18,588.31$$\n\n\\$18,588.31 > \\$16,288.18, so 4% raises Option 2's present value, not lowers it."
+      },
+      {
+        "letter": "D",
+        "len": 268,
+        "text": "**D) The total nominal payments under Option 2 over 9 years, \\$22,500.00, exceed the \\$18,000.00 lump-sum cost of Option 1 by \\$4,600.00.**  (false)\n\nTotal nominal payments of \\$22,500.00 exceed the \\$18,000.00 lump sum by exactly \\$4,500.00, not \\$4,600.00 as stated."
+      },
+      {
+        "letter": "E",
+        "len": 328,
+        "text": "**E) Option 1's \\$18,000.00, if invested today at 7% instead of used for the machinery, would grow after 9 years to a future value of more than \\$34,000.00.**  (false)\n\nGrowing the lump sum forward gives $F = 18,000 \\times (1.07)^{9} \\approx 18,000 \\times 1.838459 = \\$33,092.26$, which does not exceed $\\$34,000.00$ as claimed."
+      }
+    ]
+  },
+  "88": {
+    "id": "math-11-88",
+    "case_id": "MATH 11.88",
+    "title": "Comparing Savings Strategies via Future Value for a Construction Firm",
+    "subsection": "11.5",
+    "context": "A construction firm is choosing between two savings strategies for a future equipment purchase in 8 years, both earning 6% annual interest. Strategy A: deposit \\$12,000 today, all at once. Strategy B: deposit \\$1,400 at the end of each year for 8 years.",
+    "statements": [
+      "Strategy A's future value after 8 years is approximately \\$19,126.18.",
+      "Strategy B's future value after 8 years is approximately \\$14,856.46.",
+      "Strategy A yields a higher future value than Strategy B, by approximately \\$5,769.72.",
+      "The total cash committed under Strategy B over the 8 years, \\$11,200.00, is MORE than the \\$12,000.00 committed upfront under Strategy A.",
+      "If Strategy B's annual deposit were raised to \\$1,500, Strategy B's future value would still be LOWER than Strategy A's \\$19,126.18."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "solution_overview": "A construction firm is choosing between two savings strategies for a future equipment purchase in 8 years, both earning 6% annual interest. Strategy A: deposit \\$12,000 today, all at once. Strategy B: deposit \\$1,400 at the end of each year for 8 years.\n\n**Part 1: Setup.**\n\nStrategy A: single deposit P = \\$12,000 today\n\nStrategy B: annual deposit a = \\$1,400 per year (raised to \\$1,500 for part e)\n\nNominal annual rate r = 6% = 0.06\n\nn = 8 years\n\n**Part 2: Formula.**\n\n$F=P(1+r)^{n}$\n\n$F_n=(a/r)[(1+r)^{n}-1]$\n\n**Part 3: Solve.**\n\n**1.** $F_A = 12,000(1.06)^{8} = 12,000 \\times 1.593848 = \\$19,126.18$.\n\n**2.** $F_B = (1,400/0.06)[(1.06)^{8}-1] = 23,333.33 \\times 0.593848 = \\$13,856.46$, not $\\$14,856.46$.\n\n**3.** Gap: $19,126.18 - 13,856.46 = \\$5,269.72$, not $\\$5,769.72$.\n\n**4.** Total Strategy-B deposits over the eight years: $1,400 \\times 8 = \\$11,200.00$, LESS than Strategy A's $\\$12,000.00$, not more.\n\n**5.** Raising the deposit amount instead, $F_B' = (1,500/0.06)[(1.06)^{8}-1] = 25,000 \\times 0.593848 = \\$14,846.20$, still well below $\\$19,126.18$.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 271,
+        "text": "**A) Strategy A's future value after 8 years is approximately \\$19,126.18.**  (true)\n\nPlugging $P = 12,000$, $r = 0.06$, and $n = 8$ into $F = P(1+r)^{n}$ gives $F_A = 12,000 \\times (1.06)^{8} \\approx 12,000 \\times 1.593848 = \\$19,126.18$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 276,
+        "text": "**B) Strategy B's future value after 8 years is approximately \\$14,856.46.**  (false)\n\nPlugging $a = \\$1,400$, $r = 0.06$, and $n = 8$ into $F_n = (a/r)[(1+r)^{n}-1]$ gives $F_B \\approx 23,333.33 \\times 0.593848 = \\$13,856.46$; the claim's $\\$14,856.46$ is $\\$1,000$ too high."
+      },
+      {
+        "letter": "C",
+        "len": 164,
+        "text": "**C) Strategy A yields a higher future value than Strategy B, by approximately \\$5,769.72.**  (false)\n\n19,126.18 - 13,856.46 = \\$5,269.72, not \\$5,769.72 as stated."
+      },
+      {
+        "letter": "D",
+        "len": 289,
+        "text": "**D) The total cash committed under Strategy B over the 8 years, \\$11,200.00, is MORE than the \\$12,000.00 committed upfront under Strategy A.**  (false)\n\nTotal deposits under Strategy B are only \\$11,200.00, which is LESS than the \\$12,000.00 committed upfront under Strategy A, not more."
+      },
+      {
+        "letter": "E",
+        "len": 677,
+        "text": "**E) If Strategy B's annual deposit were raised to \\$1,500, Strategy B's future value would still be LOWER than Strategy A's \\$19,126.18.**  (true)\n\nEven when Strategy B's total nominal contributions are raised to exactly match Strategy A's \\$12,000.00 upfront amount, its future value only reaches \\$14,846.20, still well below Strategy A's \\$19,126.18 - because front-loading the full amount gives it the maximum possible time to compound, an advantage spread-out deposits cannot fully offset.\n\nRaise B's annual deposit to 1,500:\n\n$$F_B' = (1,500 / 0.06)\\bigl[(1.06)^{8} - 1\\bigr] = 25,000 \\times 0.593848 = \\$14,846.20$$\n\n\\$14,846.20 is still below Strategy A's \\$19,126.18."
+      }
+    ]
+  },
+  "89": {
+    "id": "math-11-89",
+    "case_id": "MATH 11.89",
+    "title": "Future Value of an Annuity Due for a Gym's Equipment Upgrade Fund",
+    "subsection": "11.5",
+    "context": "A gym owner deposits \\$3,000 at the BEGINNING of each year as an annuity due for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.",
+    "statements": [
+      "The future value of these deposits at the end of year 6 is approximately \\$21,426.05.",
+      "If the same \\$3,000 deposits were instead made at the END of each year, the future value would be LOWER than the annuity-due result.",
+      "The dollar gap between the annuity-due result and the ordinary-annuity result is approximately \\$1,120.29.",
+      "If the number of deposits were doubled to 12 years, the annuity-due future value would also exactly double, to approximately \\$42,852.10.",
+      "Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of interest growth, regardless of the number of payments or the interest rate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "solution_overview": "A gym owner deposits \\$3,000 at the BEGINNING of each year as an annuity due for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.\n\n**Part 1: Setup.**\n\nAnnual deposit a = \\$3,000, made at the START of each year\n\nNominal annual rate r = 5% = 0.05\n\nCompounding: annual, annuity due\n\nn = 6 years (and 12 years for part d)\n\n**Part 2: Formula.**\n\nFuture value of ordinary annuity: $F_n=(a/r)[(1+r)^{n}-1]$\n\nFuture value of annuity due: $F_{\\mathrm{due}}=F_n(1+r)$\n\n**Part 3: Solve.**\n\n**1.** $F_{\\mathrm{ordinary}} = (3,000/0.05)[(1.05)^{6}-1] = 60,000 \\times 0.340096 = \\$20,405.76$, so the annuity-due value is $F_{\\mathrm{due}} = 20,405.76 \\times 1.05 = \\$21,426.05$.\n\n**2.** Gap: $21,426.05 - 20,405.76 = \\$1,020.29$, not $\\$1,120.29$.\n\n**3.** Extending to $12$ years, $F_{\\mathrm{ordinary}} = (3,000/0.05)[(1.05)^{12}-1] = 60,000 \\times 0.795856 = \\$47,751.36$, so $F_{\\mathrm{due}} = 47,751.36 \\times 1.05 = \\$50,138.93$, well more than double the $6$-year figure of $\\$42,852.10$, not exactly double.\n\n**4.** For any $n$ and $r$, this identity $F_{\\mathrm{due}} = F_{\\mathrm{ordinary}}(1+r)$ always holds, since shifting each payment one period earlier simply multiplies by one extra period of growth.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 455,
+        "text": "**A) The future value of these deposits at the end of year 6 is approximately \\$21,426.05.**  (true)\n\n$F_{\\mathrm{due}}(6) = F_{\\mathrm{ordinary}}(6) \\times 1.05 = 20,405.76 \\times 1.05 = \\$21,426.05$, matching the statement exactly.\n\nBuild the ordinary annuity first, then shift one period:\n\n$$F_{\\mathrm{ord}} = (3,000 / 0.05)\\bigl[(1.05)^{6} - 1\\bigr] = 60,000 \\times 0.340096 = \\$20,405.76$$\n\n$$F_{\\mathrm{due}} = 20,405.76 \\times 1.05 = \\$21,426.05$$"
+      },
+      {
+        "letter": "B",
+        "len": 515,
+        "text": "**B) If the same \\$3,000 deposits were instead made at the END of each year, the future value would be LOWER than the annuity-due result.**  (true)\n\n$F_{\\mathrm{ordinary}}(6) = (3,000/0.05)[(1.05)^{6} - 1] = \\$20,405.76$, which is indeed lower than the annuity-due result of \\$21,426.05, since end-of-year deposits each earn one fewer period of interest.\n\nThe ordinary figure is the one already computed: \\$20,405.76.\n\n$$20,405.76 < 21,426.05$$\n\nEnd-of-year deposits miss one period of growth, so they finish lower."
+      },
+      {
+        "letter": "C",
+        "len": 196,
+        "text": "**C) The dollar gap between the annuity-due result and the ordinary-annuity result is approximately \\$1,120.29.**  (false)\n\nThe gap is 21,426.05 - 20,405.76 = \\$1,020.29, not \\$1,120.29 as stated."
+      },
+      {
+        "letter": "D",
+        "len": 686,
+        "text": "**D) If the number of deposits were doubled to 12 years, the annuity-due future value would also exactly double, to approximately \\$42,852.10.**  (false)\n\nExtending to 12 years gives $F_{\\mathrm{due}}(12) = \\$50,138.93$, which is MORE than double the 6-year result (\\$42,852.10 would be double) - not exactly double - because future value grows exponentially, not linearly, with the number of periods.\n\nTwelve years:\n\n$$F_{\\mathrm{ord}}(12) = 60,000\\bigl[(1.05)^{12} - 1\\bigr] = 60,000 \\times 0.795856 = \\$47,751.36$$\n\n$$F_{\\mathrm{due}}(12) = 47,751.36 \\times 1.05 = \\$50,138.93$$\n\nDouble the 6-year due value would be \\$42,852.10. \\$50,138.93 is more than double, not equal to double."
+      },
+      {
+        "letter": "E",
+        "len": 783,
+        "text": "**E) Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of interest growth, regardless of the number of payments or the interest rate.**  (true)\n\nThis is a direct structural identity: $F_{\\mathrm{due}} = F_{\\mathrm{ordinary}} \\times (1+r)$ holds for any combination of a, r, and n, since shifting every payment one period earlier simply multiplies the entire ordinary-annuity result by one additional period's growth factor.\n\nThe identity $F_{\\mathrm{due}} = F_{\\mathrm{ord}}(1+r)$ does not depend on a or n. Here 20,405.76 × 1.05 = 21,426.05 confirms it for these numbers, and the same extra factor (1+r) applies at any other horizon."
+      }
+    ]
+  },
+  "90": {
+    "id": "math-11-90",
+    "case_id": "MATH 11.90",
+    "title": "Present Value of an Annuity Due for a Commercial Lease",
+    "subsection": "11.5",
+    "context": "A tenant signs a 5-year commercial lease requiring rent payments of \\$24,000 at the BEGINNING of each year as an annuity due. The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.",
+    "statements": [
+      "The present value of the lease payments today is approximately \\$107,162.61.",
+      "If the same \\$24,000 payments were instead due at the END of each year, the present value would be LOWER than the annuity-due result.",
+      "The dollar gap between the annuity-due present value and the ordinary-annuity present value is approximately \\$7,065.81.",
+      "If the lease term were extended to 10 years, the annuity-due present value would also exactly double, to approximately \\$214,325.22.",
+      "The annuity-due present value can also be computed as the first \\$24,000 payment plus the present value of an ordinary annuity of the remaining 4 payments."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "solution_overview": "A tenant signs a 5-year commercial lease requiring rent payments of \\$24,000 at the BEGINNING of each year as an annuity due. The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.\n\n**Part 1: Setup.**\n\nAnnual lease payment a = \\$24,000, due at the START of each year\n\nNominal annual rate r = 6% = 0.06\n\nCompounding: annual, annuity due\n\nn = 5 years (and 10 years for part d)\n\n**Part 2: Formula.**\n\nPresent value of ordinary annuity: $P_n=(a/r)[1-1/(1+r)^{n}]$\n\nPresent value of annuity due: $P_{\\mathrm{due}}=P_n(1+r)$\n\nAlternative: $P_{\\mathrm{due}}=a+P_{n-1}$\n\n**Part 3: Solve.**\n\n**1.** $P_{\\mathrm{ordinary}} = (24,000/0.06)[1-1/(1.06)^{5}] = 400,000 \\times 0.252742 = \\$101,096.80$, so the annuity-due value is $P_{\\mathrm{due}} = 101,096.80 \\times 1.06 = \\$107,162.61$.\n\n**2.** Gap: $107,162.61 - 101,096.80 = \\$6,065.81$, not $\\$7,065.81$.\n\n**3.** Extending to $10$ years instead, $P_{\\mathrm{ordinary}} = (24,000/0.06)[1-1/(1.06)^{10}] = 400,000 \\times 0.441605 = \\$176,642.00$, so $P_{\\mathrm{due}} = 176,642.00 \\times 1.06 = \\$187,240.52$, less than double the $5$-year figure of $\\$214,325.22$, not exactly double.\n\n**4.** As a check, $a + P_4 = 24,000+(24,000/0.06)[1-1/(1.06)^{4}] = 24,000 + 400,000 \\times 0.207906 = 24,000 + 83,162.40 = \\$107,162.40$, matching $P_{\\mathrm{due}}$ within rounding.",
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 496,
+        "text": "**A) The present value of the lease payments today is approximately \\$107,162.61.**  (true)\n\n$P_{\\mathrm{due}}(5) = P_{\\mathrm{ordinary}}(5) \\times 1.06 = 101,096.80 \\times 1.06 = \\$107,162.61$, matching the statement exactly.\n\n$$P_{\\mathrm{ord}} = (24,000 / 0.06)\\bigl[1 - 1/(1.06)^{5}\\bigr]$$\n\n$$(1.06)^{5} \\approx 1.338226,\\quad 1/1.338226 \\approx 0.747258$$\n\n$$1 - 0.747258 = 0.252742$$\n\n$$400,000 \\times 0.252742 = \\$101,096.80$$\n\n$$P_{\\mathrm{due}} = 101,096.80 \\times 1.06 = \\$107,162.61$$"
+      },
+      {
+        "letter": "B",
+        "len": 551,
+        "text": "**B) If the same \\$24,000 payments were instead due at the END of each year, the present value would be LOWER than the annuity-due result.**  (true)\n\n$P_{\\mathrm{ordinary}}(5) = (24,000/0.06)[1 - 1/(1.06)^{5}] = \\$101,096.80$, which is indeed lower than the annuity-due result of \\$107,162.61, since discounting end-of-year payments back one extra period each reduces their present value.\n\nThe ordinary present value is \\$101,096.80, already below the due value \\$107,162.61. End-of-year rent is discounted one extra period, so it is worth less today."
+      },
+      {
+        "letter": "C",
+        "len": 212,
+        "text": "**C) The dollar gap between the annuity-due present value and the ordinary-annuity present value is approximately \\$7,065.81.**  (false)\n\nThe gap is 107,162.61 - 101,096.80 = \\$6,065.81, not \\$7,065.81 as stated."
+      },
+      {
+        "letter": "D",
+        "len": 812,
+        "text": "**D) If the lease term were extended to 10 years, the annuity-due present value would also exactly double, to approximately \\$214,325.22.**  (false)\n\nExtending to 10 years gives $P_{\\mathrm{due}}(10) = \\$187,240.52$, which is LESS than double the 5-year result (\\$214,325.22 would be double) - not exactly double - because discounting is exponential, not linear, in the number of periods, so later payments contribute progressively less.\n\nTen-year lease:\n\n$$P_{\\mathrm{ord}}(10) = 400,000\\bigl[1 - 1/(1.06)^{10}\\bigr]$$\n\n$$(1.06)^{10} \\approx 1.790848,\\quad 1/1.790848 \\approx 0.558395$$\n\n$$1 - 0.558395 = 0.441605$$\n\n$$400,000 \\times 0.441605 = \\$176,642.00$$\n\n$$P_{\\mathrm{due}}(10) = 176,642.00 \\times 1.06 = \\$187,240.52$$\n\nDouble the 5-year due value would be \\$214,325.22. \\$187,240.52 is less than double."
+      },
+      {
+        "letter": "E",
+        "len": 917,
+        "text": "**E) The annuity-due present value can also be computed as the first \\$24,000 payment plus the present value of an ordinary annuity of the remaining 4 payments.**  (true)\n\nSince the first payment of an annuity due occurs today (with zero discounting) and the remaining n-1 payments form an ordinary annuity one period later, splitting the payment stream this way gives \\$24,000 today plus a discounted remainder of \\$83,162.40, for a combined total of \\$107,162.40, matching $P_{\\mathrm{due}}$ within rounding - confirming this alternative method is valid.\n\nSplit the stream: \\$24,000 due today, plus an ordinary 4-year annuity of \\$24,000.\n\n$$P_4 = 400,000\\bigl[1 - 1/(1.06)^{4}\\bigr]$$\n\n$$(1.06)^{4} \\approx 1.262477,\\quad 1/1.262477 \\approx 0.792094$$\n\n$$1 - 0.792094 = 0.207906$$\n\n$$400,000 \\times 0.207906 = \\$83,162.40$$\n\n$$24,000 + 83,162.40 = \\$107,162.40$$\n\nMatches $P_{\\mathrm{due}}$ within a rounding cent."
+      }
+    ]
+  }
+}

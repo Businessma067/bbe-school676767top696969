@@ -1,0 +1,1236 @@
+##### TASK 61 [11.4]
+CONTEXT: A newly launched e-commerce startup earns \$50 million in revenue this year and expects revenue to grow by 10% annually for each of the next four years, forming a finite geometric series with first term a = \$50 million and quotient k = 1.10 over n = 5 years.
+--- A (true) min=277 cur=197
+STMT: The expected revenue in year 2 is \$55.00 million.
+CUR: **A) The expected revenue in year 2 is \$55.00 million.**  (true)
+
+Year-2 revenue is the year-1 revenue multiplied once by the growth factor: $50 \times 1.10 = \$55.00$ million, matching exactly.
+--- B (true) min=458 cur=378
+STMT: The expected revenue in year 5 is approximately \$73.21 million.
+CUR: **B) The expected revenue in year 5 is approximately \$73.21 million.**  (true)
+
+Counting from year 1 (which is simply a itself) up to year 5, the revenue has been multiplied by 1.10 four separate times - once for each step from year 1 to year 2, year 2 to year 3, and so on up to year 5.
+
+$$50 \times (1.10)^{4} = 50 \times 1.4641 = 73.205 \approx \$73.21 \text{ million}$$
+--- C (true) min=462 cur=382
+STMT: The total revenue expected over the 5-year period is approximately \$305.26 million.
+CUR: **C) The total revenue expected over the 5-year period is approximately \$305.26 million.**  (true)
+
+Adding up five terms that each grow by a factor of 1.10 over the previous one gives a total of $s_5 = a(k^{5}-1)/(k-1)$. Plugging in $a=50$ and $k=1.10$ gives $k^{5} = 1.61051$, so $s_5 = 50 \times (1.61051-1)/0.10 = 50 \times 6.1051 = 305.255$, which rounds to \$305.26 million.
+--- D (false) min=716 cur=636
+STMT: If revenue had instead remained flat at \$50 million per year for 5 years, the total would have been \$250 million - exactly \$60.00 million less than the actual growth-scenario total.
+CUR: **D) If revenue had instead remained flat at \$50 million per year for 5 years, the total would have been \$250 million - exactly \$60.00 million less than the actual growth-scenario total.**  (false)
+
+A flat schedule of \$50 million every year for 5 years does total 50×5 = \$250.00 million - that part checks out. But the true gap between that flat total and the actual growth total of \$305.255 million is 305.255 - 250.00 = \$55.26 million, not \$60.00 million; the stated gap overstates the real difference by roughly \$4.74 million.
+
+Flat total: $50 \times 5 = 250$. Gap:
+
+$$305.255 - 250 = 55.255 \approx 55.26$$
+
+not 60.
+--- E (false) min=550 cur=470
+STMT: The total revenue expected over the 5-year period is approximately \$328.86 million.
+CUR: **E) The total revenue expected over the 5-year period is approximately \$328.86 million.**  (false)
+
+Recomputing $s_5$ carefully with a=50, k=1.10, n=5 gives exactly 50×(1.61051-1)/0.10 = \$305.255 million, which rounds to about \$305.26 million, as already shown in part (c). The figure of \$328.86 million simply does not match this calculation and is incorrect.
+
+The same $s_5 = 305.255$ already computed in (C) is the 5-year total. 328.86 is a different number.
+
+##### TASK 62 [11.4]
+CONTEXT: A subscription box company just earned \$2,000 in profit from its newest product line this month. Because customer renewals are expected to halve every month indefinitely, monthly profits are modeled as an infinite geometric series with first term a = \$2,000 and quotient k = 0.5.
+--- A (true) min=485 cur=405
+STMT: The infinite profit series converges to a finite sum.
+CUR: **A) The infinite profit series converges to a finite sum.**  (true)
+
+Convergence of an infinite geometric series depends only on the size of the ratio between consecutive terms. Here each month's profit is exactly half of the previous month's, so $|k| = 0.5 < 1$, comfortably below 1 - the running total therefore settles toward a fixed number instead of growing without bound as more months are added.
+--- B (true) min=383 cur=303
+STMT: The infinite sum of all future monthly profits is \$4,000.00.
+CUR: **B) The infinite sum of all future monthly profits is \$4,000.00.**  (true)
+
+When $|k|$ is less than 1, the sum of every term added together forever works out to $a/(1-k)$: $s_{\infty} = 2,000/(1-0.5) = 2,000/0.5 = \$4,000.00$, the value the cumulative profit approaches as more and more months pass.
+--- C (true) min=368 cur=288
+STMT: The sum of just the first 4 months' profits is \$3,750.00.
+CUR: **C) The sum of just the first 4 months' profits is \$3,750.00.**  (true)
+
+The first four monthly profits are $2,000$, then $2,000 \times 0.5 = 1,000$, then $2,000 \times 0.25 = 500$, then $2,000 \times 0.125 = 250$. Adding these directly gives $s_4 = 2,000+1,000+500+250 = \$3,750.00$.
+--- D (false) min=539 cur=459
+STMT: The sum of the first 4 months' profits exceeds the infinite sum.
+CUR: **D) The sum of the first 4 months' profits exceeds the infinite sum.**  (false)
+
+Every term in this series is a positive dollar amount, so each additional month can only add to the running total, never subtract from it - the partial sum after any finite number of months must therefore sit below the full infinite total. Since $\$3,750.00 < \$4,000.00$, the first four months' total falls short of the infinite total by $\$250.00$ rather than exceeding it.
+--- E (false) min=826 cur=746
+STMT: If the quotient were instead k = 1.5, the infinite series would still converge, to a sum of \$-4,000.00.
+CUR: **E) If the quotient were instead k = 1.5, the infinite series would still converge, to a sum of \$-4,000.00.**  (false)
+
+A ratio of k=1.5 has absolute value 1.5, which is greater than 1, so the successive terms of the series (2,000, 3,000, 4,500, 6,750, and so on) keep growing larger and larger instead of shrinking toward zero. A series whose terms grow without bound cannot settle on any single finite total, so it has no sum at all; calling it convergent to \$-4,000.00, or to any specific number, misapplies the whole idea of a limiting sum.
+
+If $k = 1.5$, then $|k| = 1.5 > 1$. Terms $2,000, 3,000, 4,500, \ldots$ grow, so the series diverges. The formula $a/(1-k)$ is not applicable, and a negative “sum” of $\$-4,000$ is meaningless.
+
+##### TASK 63 [11.4]
+CONTEXT: An investor commits to an unusual sinking-fund plan: this year's deposit is \$800, and each following year's deposit is 90% of the previous year's deposit, continuing indefinitely. This is an infinite geometric series with a = \$800 and k = 0.90.
+--- A (true) min=424 cur=344
+STMT: The infinite deposit series converges.
+CUR: **A) The infinite deposit series converges.**  (true)
+
+Since each year's deposit equals 90% of the prior year's deposit, the ratio between consecutive terms is a constant $|k| = 0.90 < 1$. That is exactly the condition needed for the running total of an infinite geometric series to approach a fixed limiting value instead of growing forever.
+--- B (true) min=396 cur=316
+STMT: The infinite sum of all deposits is \$8,000.00.
+CUR: **B) The infinite sum of all deposits is \$8,000.00.**  (true)
+
+For a convergent infinite geometric series, the total of every term added together equals the first term divided by (1 minus the ratio): $s_{\infty} = 800/(1-0.90) = 800/0.10 = \$8,000.00$, the amount the cumulative deposits approach in the long run.
+--- C (true) min=373 cur=293
+STMT: The sum of the first 10 deposits is approximately \$5,210.57.
+CUR: **C) The sum of the first 10 deposits is approximately \$5,210.57.**  (true)
+
+The sum of the first 10 deposits is given by $s_{10} = a \times (1-k^{10})/(1-k)$. Since $0.90^{10} \approx 0.348678$, this becomes $s_{10} = 800 \times (1-0.348678)/0.10 = 800 \times 6.513216 \approx \$5,210.57$.
+--- D (true) min=417 cur=337
+STMT: The first 10 deposits together represent about 65% of the infinite total sum.
+CUR: **D) The first 10 deposits together represent about 65% of the infinite total sum.**  (true)
+
+Dividing the 10-year total by the full infinite total gives $5,210.57/8,000.00 \approx 65.1\%$. Since that rounds to roughly 65%, describing the first 10 deposits as representing about 65% of everything ever deposited is an accurate summary.
+--- E (true) min=613 cur=533
+STMT: If the quotient were instead k = 1.10, the series would diverge.
+CUR: **E) If the quotient were instead k = 1.10, the series would diverge.**  (true)
+
+A ratio of k=1.10 has absolute value greater than 1, meaning each deposit would be larger than the one before it and would keep growing without any ceiling. A series whose terms increase forever can never settle down to a single finite total, so instead of converging it diverges: the running total simply keeps climbing and never levels off at any particular value.
+
+$k = 1.10$ has $|k| > 1$, so the series diverges. No finite $s_{\infty}$ exists.
+
+##### TASK 64 [11.4]
+CONTEXT: A mining company estimates its lithium reserves at 18,000,000 tons. Current annual extraction is a constant 300,000 tons per year. Separately, analysts also model a scenario in which extraction instead starts at 300,000 tons and grows by 5% per year for 10 years, a finite geometric series with a = 300,000 and k = 1.05.
+--- A (true) min=424 cur=344
+STMT: At a constant extraction rate of 300,000 tons/year, the reserves will last exactly 60 years.
+CUR: **A) At a constant extraction rate of 300,000 tons/year, the reserves will last exactly 60 years.**  (true)
+
+If a fixed 300,000 tons is removed every year from an 18,000,000-ton reserve, the number of years before the reserve reaches zero is simply the total reserve divided by the yearly extraction rate: $t = 18,000,000/300,000 = 60$ years.
+--- B (true) min=394 cur=314
+STMT: If extraction were instead held constant at 500,000 tons/year, the reserves would last 36 years.
+CUR: **B) If extraction were instead held constant at 500,000 tons/year, the reserves would last 36 years.**  (true)
+
+Using the same reasoning with a faster extraction rate of 500,000 tons per year gives $t = 18,000,000/500,000 = 36$ years - a higher annual rate depletes the same fixed reserve proportionally sooner.
+--- C (true) min=792 cur=712
+STMT: Constant-rate extraction over n years is the special k = 1 case of the geometric series, where the total simply equals the number of years multiplied by the yearly amount.
+CUR: **C) Constant-rate extraction over n years is the special k = 1 case of the geometric series, where the total simply equals the number of years multiplied by the yearly amount.**  (true)
+
+When every year's extraction amount is identical (no growth at all), the sequence of yearly amounts is a geometric series whose ratio is exactly 1, meaning every term equals the first term a. Adding together n identical copies of a is just n lots of a, i.e., a × n, rather than requiring the general ratio-based formula, which would actually be undefined in this case since it involves dividing by (k-1)=0.
+
+When $k = 1$, every term equals $a$, so $s_n = a n$. The ratio formula $a(k^n-1)/(k-1)$ is undefined at $k = 1$.
+--- D (false) min=539 cur=459
+STMT: If extraction instead grows by 5% per year for 10 years, total extraction over those 10 years is approximately 3,900,000 tons.
+CUR: **D) If extraction instead grows by 5% per year for 10 years, total extraction over those 10 years is approximately 3,900,000 tons.**  (false)
+
+If extraction instead starts at 300,000 tons and grows 5% every year for 10 years, the total extracted is $s_{10} = 300,000 \times (k^{10}-1)/0.05$. Since $1.05^{10} \approx 1.628895$, this works out to $s_{10} \approx 300,000 \times 12.577893 \approx 3,773,368$ tons, noticeably below the 3,900,000 tons claimed.
+--- E (false) min=591 cur=511
+STMT: The 10-year total under 5% annual growth exceeds the 10-year total under constant 300,000-ton extraction by more than 1,000,000 tons.
+CUR: **E) The 10-year total under 5% annual growth exceeds the 10-year total under constant 300,000-ton extraction by more than 1,000,000 tons.**  (false)
+
+Comparing the growth scenario ($\approx 3,773,368$ tons over 10 years) to a flat 300,000-tons-per-year scenario over the same span ($300,000 \times 10 = 3,000,000$ tons), the extra amount extracted specifically because of the 5% annual growth is $3,773,368 - 3,000,000 = 773,368$ tons. That is well under $1,000,000$ tons, so the claimed excess is too large.
+
+##### TASK 65 [11.4]
+CONTEXT: A coal mining region has 9,000 million tons, or 9 billion tons, of estimated reserves. This year's output is 180 million tons, and analysts project output will fall by 3% every year forever, an infinite geometric series with a = 180 million tons and k = 0.97. A second scenario considers a steeper 5% annual decline with k = 0.95 starting from the same output.
+--- A (true) min=278 cur=198
+STMT: Output in the second year is 174.6 million tons.
+CUR: **A) Output in the second year is 174.6 million tons.**  (true)
+
+Year-2 output is the year-1 output multiplied once by the decline factor: $180 \times 0.97 = 174.6$ million tons, matching exactly.
+--- B (true) min=449 cur=369
+STMT: The infinite total extracted over all future years, under the 3% decline, is 6,000 million tons.
+CUR: **B) The infinite total extracted over all future years, under the 3% decline, is 6,000 million tons.**  (true)
+
+Because $|0.97| < 1$, the infinite series of yearly outputs converges, and its total equals $s_{\infty} = 180/(1-0.97) = 180/0.03 = 6,000$ million tons, the theoretical maximum that could ever be extracted if the 3% annual decline continued indefinitely.
+--- C (true) min=588 cur=508
+STMT: The reserves will never be fully exhausted, leaving 3 billion tons as permanently “stranded assets.”
+CUR: **C) The reserves will never be fully exhausted, leaving 3 billion tons as permanently “stranded assets.”**  (true)
+
+Comparing the 6,000 million-ton theoretical maximum to the 9,000 million-ton physical reserve shows the reserve can never be fully used up, no matter how long extraction continues, because the running total keeps approaching 6,000 million tons but never reaches or exceeds 9,000 million tons. The difference, $9,000 - 6,000 = 3,000$ million tons, simply remains in the ground indefinitely.
+--- D (false) min=841 cur=761
+STMT: If output instead declined 5% per year from the same 180 million-ton starting point, the total extracted would leave less coal stranded than the 3%-decline case.
+CUR: **D) If output instead declined 5% per year from the same 180 million-ton starting point, the total extracted would leave less coal stranded than the 3%-decline case.**  (false)
+
+With a steeper 5% annual decline (k=0.95), the theoretical maximum total extraction becomes 180/(1-0.95) = 180/0.05 = 3,600 million tons, leaving 9,000-3,600 = 5,400 million tons unextracted - more stranded coal than the 3,000 million tons left behind under the milder 3% decline, not less. A steeper decline in output means the total amount ever pulled out is smaller, so more coal is left stranded, not less.
+
+At 5% decline, $k = 0.95$:
+
+$$s_{\infty} = 180/0.05 = 3,600, \qquad 9,000-3,600 = 5,400$$
+
+$5,400 > 3,000$ stranded, so a steeper decline leaves more coal unused.
+--- E (false) min=793 cur=713
+STMT: Under the 3% decline scenario, cumulative extraction after just the first 20 years alone would already exceed the full infinite-horizon total of 6,000 million tons.
+CUR: **E) Under the 3% decline scenario, cumulative extraction after just the first 20 years alone would already exceed the full infinite-horizon total of 6,000 million tons.**  (false)
+
+Summing only the first 20 years under the 3% decline gives $s_{20} = 180 \times (1-0.97^{20})/0.03$. Since 0.97 to the 20th power is about 0.5438, this comes to roughly 180×15.207 ≈ 2,737 million tons - far below the full 6,000 million-ton theoretical total, since only a fraction of an ever-continuing series has accumulated after just 20 years, not in excess of it.
+
+$$s_{20} = 180 \times \frac{1-0.97^{20}}{0.03}$$
+
+$$0.97^{20} \approx 0.543794, \quad s_{20} \approx 180 \times 15.20686 \approx 2,737$$
+
+$2,737 < 6,000$.
+
+##### TASK 66 [11.4]
+CONTEXT: A quantitative trading model applies a diminishing corrective adjustment after each rebalancing: the first adjustment is \$4,000, and each subsequent adjustment reverses sign and is half the size of the previous one, continuing indefinitely. This is an infinite geometric series with a = \$4,000 and a negative quotient k = -0.5.
+--- A (true) min=498 cur=418
+STMT: The alternating adjustment series converges to a finite sum.
+CUR: **A) The alternating adjustment series converges to a finite sum.**  (true)
+
+Convergence depends only on the size of the ratio, |k|, not on whether that ratio is positive or negative. Here k=-0.5, so |k|=0.5, which is below 1 - the alternating series still settles down to a fixed total even though its terms flip sign at every step.
+
+$k = -0.5$ has $|k| = 0.5 < 1$, so the series converges despite the sign flips.
+--- B (true) min=333 cur=253
+STMT: The infinite sum of all adjustments is approximately \$2,666.67.
+CUR: **B) The infinite sum of all adjustments is approximately \$2,666.67.**  (true)
+
+The infinite-sum formula $a/(1-k)$ applies the same way regardless of the sign of $k$, as long as $|k|<1$: $s_{\infty} = 4,000/(1-(-0.5)) = 4,000/1.5 \approx \$2,666.67$.
+--- C (false) min=357 cur=277
+STMT: The sum of the first 4 adjustments is \$3,000.00.
+CUR: **C) The sum of the first 4 adjustments is \$3,000.00.**  (false)
+
+The first four adjustments are $4,000$, then $4,000\times(-0.5)=-2,000$, then $4,000\times0.25=1,000$, then $4,000\times(-0.125)=-500$. Adding these gives $4,000-2,000+1,000-500 = \$2,500.00$, not \$3,000.00.
+--- D (false) min=652 cur=572
+STMT: The series necessarily diverges regardless of its magnitude.
+CUR: **D) The series necessarily diverges regardless of its magnitude.**  (false)
+
+The sign of the ratio has no bearing on whether the series converges; only its magnitude matters. A negative ratio simply means the terms alternate between adding to and subtracting from the running total, and as long as |k| stays below 1, those swings shrink over time and the partial sums settle down - exactly what happens here with |k|=0.5, so the series converges rather than diverging.
+
+Convergence depends on $|k|$, not on the sign of $k$. Here $|-0.5| < 1$, so the series converges.
+--- E (true) min=750 cur=670
+STMT: If the quotient were instead exactly k = -1, the partial sums would alternate forever between \$4,000 and \$0.
+CUR: **E) If the quotient were instead exactly k = -1, the partial sums would alternate forever between \$4,000 and \$0.**  (true)
+
+With k=-1, each new term exactly cancels the one before it: starting from a, the running total becomes a, then 0, then a, then 0, and so on forever, oscillating between those two values without ever settling on one number. Since a limit requires the running total to approach a single fixed value, and this sequence keeps flipping back and forth instead, it never reaches a limit and the series diverges.
+
+If $k = -1$, partial sums are $4,000, 0, 4,000, 0, \ldots$ forever. Two cluster points means no single limit, so the series diverges.
+
+##### TASK 67 [11.4]
+CONTEXT: A city pension fund receives equal annual contributions of \$12 million for 15 straight years in a degenerate geometric series with k = 1. Fund managers also model an alternative in which contributions instead grow by 4% every year from the same \$12 million starting point, a finite geometric series with a = \$12 million, k = 1.04, and n = 15.
+--- A (true) min=711 cur=631
+STMT: This is the special k = 1 case of the geometric series, where the total simply equals the number of payments multiplied by the payment amount.
+CUR: **A) This is the special k = 1 case of the geometric series, where the total simply equals the number of payments multiplied by the payment amount.**  (true)
+
+When every payment is identical, there is no changing ratio between consecutive terms - or equivalently, the ratio is exactly 1. Adding n copies of the same number a together is simply n×a, a much simpler formula than the ratio-based one needed when the terms actually change size from year to year, and it sidesteps the division-by-zero problem that the general formula would run into at k=1.
+
+Equal payments mean $k = 1$, so $s_n = a n$ rather than $a(k^n-1)/(k-1)$.
+--- B (true) min=407 cur=327
+STMT: The total contributions over the 15 years of equal \$12 million payments equal \$180.00 million.
+CUR: **B) The total contributions over the 15 years of equal \$12 million payments equal \$180.00 million.**  (true)
+
+With 15 identical annual payments of \$12 million each, the total is just $s_{15} = 12 \times 15 = \$180.00$ million; no compounding or ratio calculation is needed since nothing changes from one year to the next.
+--- C (false) min=471 cur=391
+STMT: Under the 4%-growth alternative, the 15-year total is approximately \$240.11 million.
+CUR: **C) Under the 4%-growth alternative, the 15-year total is approximately \$240.11 million.**  (false)
+
+Growing the same \$12 million starting payment by 4% every year for 15 years gives $s_{15} = 12 \times (1.04^{15}-1)/0.04$. Since $1.04^{15} \approx 1.800944$, this becomes $s_{15} \approx 12 \times 20.0236 \approx \$240.28$ million, noticeably higher than the \$240.11 million claimed.
+--- D (false) min=448 cur=368
+STMT: The 4%-growth 15-year total exceeds the no-growth total by more than \$65.00 million.
+CUR: **D) The 4%-growth 15-year total exceeds the no-growth total by more than \$65.00 million.**  (false)
+
+The actual gap between the 4%-growth total ($\approx \$240.28$ million) and the flat total ($\$180.00$ million) is $240.28 - 180.00 = \$60.28$ million, which is not more than \$65.00 million, so the claim overstates how much extra the growth scenario contributes.
+--- E (true) min=775 cur=695
+STMT: Applying the general formula directly to the no-growth case would require dividing by zero.
+CUR: **E) Applying the general formula directly to the no-growth case would require dividing by zero.**  (true)
+
+The general ratio-based formula for a finite geometric series has (k-1) in its denominator. If k were set to exactly 1 - the flat, no-growth case - that denominator becomes zero, and dividing by zero is undefined, so the formula simply cannot be evaluated as written. That is precisely why a separate, simpler rule - multiplying the constant payment by the number of years - has to be used whenever every term in the series is identical.
+
+The general formula has denominator $k-1$. At $k = 1$ that denominator is 0, so the formula is undefined and cannot be applied to the flat case.
+
+##### TASK 68 [11.4]
+CONTEXT: A structured settlement is set up to pay \$15,000 in its first year, with each subsequent payment 88% of the prior one, where a = \$15,000 and k = 0.88. One clause pays out for a finite 8 years; a separate hypothetical clause considers what the payments would total if continued forever.
+--- A (true) min=279 cur=199
+STMT: The second payment in the sequence is \$13,200.00.
+CUR: **A) The second payment in the sequence is \$13,200.00.**  (true)
+
+The second payment is the first payment multiplied once by the decay factor: $15,000 \times 0.88 = \$13,200.00$, matching exactly.
+--- B (true) min=364 cur=284
+STMT: The total of the 8 finite payments is approximately \$80,045.68.
+CUR: **B) The total of the 8 finite payments is approximately \$80,045.68.**  (true)
+
+Summing the first 8 payments uses $s_8 = a \times (1-k^{8})/(1-k)$. Since $0.88^{8} \approx 0.359635$, this becomes $s_8 = 15,000 \times (1-0.359635)/0.12 = 15,000 \times 5.336379 \approx \$80,045.68$.
+--- C (false) min=365 cur=285
+STMT: If the payments continued forever under the same 88% quotient, the infinite total would be \$130,000.00.
+CUR: **C) If the payments continued forever under the same 88% quotient, the infinite total would be \$130,000.00.**  (false)
+
+Since $|0.88|<1$, letting the payments continue forever gives an infinite total of $s_{\infty} = 15,000/(1-0.88) = 15,000/0.12 = \$125,000.00$, not \$130,000.00.
+--- D (false) min=390 cur=310
+STMT: The finite 8-payment total represents more than 75% of the infinite total.
+CUR: **D) The finite 8-payment total represents more than 75% of the infinite total.**  (false)
+
+Dividing the 8-payment total by the true infinite total gives $80,045.68/125,000.00 \approx 64.04\%$. That is below 75%, so the claim that the finite total represents more than 75% of the infinite total is incorrect.
+--- E (false) min=823 cur=743
+STMT: If the decline rate were less steep, say k = 0.95 instead of 0.88, the infinite total would be smaller than the infinite total at k = 0.88.
+CUR: **E) If the decline rate were less steep, say k = 0.95 instead of 0.88, the infinite total would be smaller than the infinite total at k = 0.88.**  (false)
+
+A larger ratio (0.95 instead of 0.88) means each payment shrinks more slowly from one year to the next, which makes the (1-k) denominator in the infinite-sum formula smaller - and a smaller denominator produces a larger result, not a smaller one. Concretely, 15,000/(1-0.95) = 15,000/0.05 = \$300,000.00, far larger than the \$125,000.00 obtained at k=0.88, so the claimed comparison has the direction backwards.
+
+At $k = 0.95$: $s_{\infty} = 15,000/(1-0.95) = 15,000/0.05 = \$300,000$
+
+$300,000 > 125,000$, so a milder decline produces a larger infinite total, not a smaller one.
+
+##### TASK 69 [11.4]
+CONTEXT: A franchisor receives a royalty of \$9,000 in the first year from a new location, with royalties projected to grow 8% per year for 12 years - a finite geometric series with a = \$9,000, k = 1.08, and n = 12. Analysts also compare this to a hypothetical flat 0%-growth royalty stream.
+--- A (true) min=791 cur=711
+STMT: The finite-sum formula still gives a valid, well-defined 12-year total.
+CUR: **A) The finite-sum formula still gives a valid, well-defined 12-year total.**  (true)
+
+The finite-sum formula $s_n = a(k^{n}-1)/(k-1)$ only breaks down when its denominator, k-1, equals zero, which happens exactly when k=1. As long as k is anything other than 1 - including values greater than 1, such as 1.08 here - the formula is perfectly well defined and produces a valid total for any fixed, finite number of terms; the separate requirement that |k|<1 only matters when trying to add up infinitely many terms, not a specific finite count of them.
+
+Here $k = 1.08 \neq 1$, so
+
+$$s_{12} = 9,000 \times \frac{(1.08)^{12}-1}{0.08}$$
+
+is well defined. The $|k|<1$ restriction is only for infinite sums.
+--- B (false) min=389 cur=309
+STMT: The total royalties collected over the 12 years are approximately \$175,000.00.
+CUR: **B) The total royalties collected over the 12 years are approximately \$175,000.00.**  (false)
+
+Computing $s_{12} = 9,000 \times (1.08^{12}-1)/0.08$ requires $1.08^{12} \approx 2.518170$, which gives $s_{12} = 9,000 \times (2.518170-1)/0.08 = 9,000 \times 18.977128 \approx \$170,794.15$, not \$175,000.00.
+--- C (false) min=810 cur=730
+STMT: The infinite-sum formula can still be legitimately applied to this series, yielding a meaningful total value.
+CUR: **C) The infinite-sum formula can still be legitimately applied to this series, yielding a meaningful total value.**  (false)
+
+The infinite-sum formula a/(1-k) is only meaningful when the terms shrink toward zero as more are added, which requires |k| to be below 1. Here k=1.08 is greater than 1, so each successive royalty payment is larger than the last, growing without bound rather than shrinking - there is no finite total for the series to approach, so plugging these numbers into the infinite-sum formula produces a number with no real meaning, whether positive or negative.
+
+$k = 1.08 > 1$, so terms grow. The infinite-sum formula $a/(1-k)$ does not apply and would spit out a negative number with no economic meaning.
+--- D (false) min=562 cur=482
+STMT: The royalty payment in year 12 alone is approximately \$20,715.85.
+CUR: **D) The royalty payment in year 12 alone is approximately \$20,715.85.**  (false)
+
+The 12th year's royalty equals the first payment multiplied by the ratio raised to the 11th power, since the first payment itself already corresponds to zero multiplications. Since 1.08 to the 11th power is about 2.331639, that gives 9,000×2.331639 ≈ \$20,984.75, not \$20,715.85.
+
+Year 12 is term $a k^{11}$:
+
+$$(1.08)^{11} \approx 2.331639, \quad 9,000 \times 2.331639 \approx \$20,984.75$$
+--- E (true) min=489 cur=409
+STMT: If royalties instead grew at 0% for 12 years, the 12-year total would be \$62,794.15 less than the actual 8%-growth total.
+CUR: **E) If royalties instead grew at 0% for 12 years, the 12-year total would be \$62,794.15 less than the actual 8%-growth total.**  (true)
+
+Twelve flat annual payments of \$9,000 with no growth at all would total $9,000 \times 12 = \$108,000.00$. Comparing that to the actual 8%-growth total of about \$170,794.15 gives a difference of $170,794.15 - 108,000 = \$62,794.15$, confirming the stated gap exactly.
+
+##### TASK 70 [11.4]
+CONTEXT: A tech company projects revenue of \$4 million this year, growing 20% per year for 6 years in a finite geometric series with a = \$4 million, k = 1.20, and n = 6. Investors then treat year-6 revenue as the first payment of a separate terminal perpetuity that declines 15% per year forever with quotient k = 0.85, used to estimate value beyond year 6.
+--- A (true) min=360 cur=280
+STMT: The 6-year finite sum of projected revenues is approximately \$39.72 million.
+CUR: **A) The 6-year finite sum of projected revenues is approximately \$39.72 million.**  (true)
+
+Summing 6 years of revenue that grows 20% each year uses $s_6 = 4 \times (1.20^{6}-1)/0.20$. Since $1.20^{6} = 2.985984$, this becomes $s_6 = 4 \times 9.92992 \approx \$39.72$ million.
+--- B (true) min=379 cur=299
+STMT: Year-6 revenue alone is approximately \$9.95 million.
+CUR: **B) Year-6 revenue alone is approximately \$9.95 million.**  (true)
+
+Year-6 revenue equals the starting revenue multiplied by the growth factor raised to the 5th power, since year 1 itself already corresponds to zero multiplications: $4 \times 1.20^{5} = 4 \times 2.48832 \approx \$9.95$ million.
+--- C (false) min=791 cur=711
+STMT: The finite 6-year series has no valid sum via the finite-sum formula.
+CUR: **C) The finite 6-year series has no valid sum via the finite-sum formula.**  (false)
+
+The finite geometric-series formula only fails to apply when the ratio equals exactly 1, since that would divide by zero; it works perfectly well for any other ratio, whether smaller or larger than 1, as long as only a fixed, finite number of terms are being added. Here k=1.20 is simply the growth factor over a fixed 6-year window, and the formula handles it without any issue - the restriction that |k| be below 1 only applies when summing infinitely many terms, not a finite set of them.
+
+$k = 1.20 \neq 1$, so the finite-sum formula applies over $n = 6$. Divergence is an infinite-horizon issue, not a 6-year issue.
+--- D (true) min=481 cur=401
+STMT: Treating year-6 revenue as the first term of a new perpetuity with quotient k = 0.85, the terminal value is approximately \$66.36 million.
+CUR: **D) Treating year-6 revenue as the first term of a new perpetuity with quotient k = 0.85, the terminal value is approximately \$66.36 million.**  (true)
+
+Treating the \$9.95328 million of year-6 revenue as the starting payment of a new, separately declining perpetuity with ratio 0.85, the infinite total of that new stream is $s_{\infty} = 9.95328/(1-0.85) = 9.95328/0.15 \approx \$66.36$ million.
+--- E (false) min=414 cur=334
+STMT: Combining the 6-year finite total with the terminal perpetuity value gives a combined projected value of less than \$100 million.
+CUR: **E) Combining the 6-year finite total with the terminal perpetuity value gives a combined projected value of less than \$100 million.**  (false)
+
+Adding the 6-year finite total (\$39.72 million) to the terminal perpetuity value (\$66.36 million) gives $39.72 + 66.36 = \$106.08$ million, which is above \$100 million, not below it.
+
+##### TASK 71 [11.4]
+CONTEXT: A retailer's monthly restocking cost is expected to grow 15% every month for 6 months due to supply-chain constraints, with quotient k = 1.15. Accounting projects that the total restocking cost over all 6 months will equal exactly \$58,000. Management wants to know what the first month's cost, a, must have been to produce that total.
+--- A (true) min=463 cur=383
+STMT: If the first month's cost had instead been exactly \$1,000, the second month's cost would be \$1,150.00.
+CUR: **A) If the first month's cost had instead been exactly \$1,000, the second month's cost would be \$1,150.00.**  (true)
+
+Regardless of what the actual first-month cost turns out to be, multiplying any given first-month figure by the 1.15 growth ratio gives the second month's cost; for a hypothetical \$1,000 first month, that is $1,000 \times 1.15 = \$1,150.00$, matching exactly.
+--- B (true) min=384 cur=304
+STMT: Solving for the first-month cost gives approximately \$6,625.74.
+CUR: **B) Solving for the first-month cost gives approximately \$6,625.74.**  (true)
+
+Rearranging the finite-sum formula to solve for the first term gives $a = s_6 \times (k-1)/(k^{6}-1)$. Since $1.15^{6} \approx 2.313061$, that becomes $a = 58,000 \times 0.15/1.313061 = 8,700/1.313061 \approx \$6,625.74$.
+--- C (true) min=400 cur=320
+STMT: The 6th month's restocking cost is approximately \$13,326.73.
+CUR: **C) The 6th month's restocking cost is approximately \$13,326.73.**  (true)
+
+The 6th month's cost equals the first month's cost multiplied by the ratio raised to the 5th power, since month 1 itself already corresponds to zero multiplications: $6,625.74 \times 1.15^{5} = 6,625.74 \times 2.011357 \approx \$13,326.73$.
+--- D (false) min=587 cur=507
+STMT: The combined restocking cost for months 4 through 6 is approximately \$37,930.00.
+CUR: **D) The combined restocking cost for months 4 through 6 is approximately \$37,930.00.**  (false)
+
+Adding the individual costs for months 4, 5, and 6 - that is, $a \times k^{3} + a \times k^{4} + a \times k^{5}$ - gives 6,625.74×(1.520875 + 1.749006 + 2.011357) = 6,625.74×5.281239 ≈ \$34,992.12, not \$37,930.00.
+
+Months 4–6 are $a k^{3}+a k^{4}+a k^{5}$:
+
+$$(1.15)^{3} \approx 1.520875,\ (1.15)^{4} \approx 1.749006,\ (1.15)^{5} \approx 2.011357$$
+
+$$6,625.74 \times 5.281238 \approx \$34,992.12$$
+--- E (true) min=641 cur=561
+STMT: If the same \$58,000 total had instead been spread evenly, that flat monthly figure would exceed the actual first-month cost of \$6,625.74 found under 15% growth.
+CUR: **E) If the same \$58,000 total had instead been spread evenly, that flat monthly figure would exceed the actual first-month cost of \$6,625.74 found under 15% growth.**  (true)
+
+Splitting the same \$58,000 total evenly across 6 months gives $58,000/6 \approx \$9,666.67$ per month. Since the actual first month's cost under 15% growth was only about \$6,625.74, and a growing schedule always starts below its own average (because the larger later months pull the average up), the flat monthly figure is indeed higher than the growth scenario's starting cost.
+
+##### TASK 72 [11.4]
+CONTEXT: A university endowment pays out \$500,000 in scholarships this year. To keep the endowment sustainable, the payout is planned to shrink by 2% every year forever with a = \$500,000 and k = 0.98, an infinite geometric series. The board also wants to know the cumulative payout over just the first 10 years, and how a steeper 2%-per-year-larger decline with k = 0.95 would compare.
+--- A (true) min=274 cur=194
+STMT: The payout in the second year is \$490,000.00.
+CUR: **A) The payout in the second year is \$490,000.00.**  (true)
+
+Year-2 payout is the year-1 payout multiplied once by the decline factor: $500,000 \times 0.98 = \$490,000.00$, matching exactly.
+--- B (true) min=373 cur=293
+STMT: The infinite total of all future payouts converges to \$25,000,000.00.
+CUR: **B) The infinite total of all future payouts converges to \$25,000,000.00.**  (true)
+
+Because $|0.98| < 1$, letting the payouts continue forever produces a finite total of $s_{\infty} = 500,000/(1-0.98) = 500,000/0.02 = \$25,000,000.00$, the theoretical ceiling on everything ever paid out.
+--- C (false) min=399 cur=319
+STMT: The cumulative payout over just the first 10 years is approximately \$4,800,000.00.
+CUR: **C) The cumulative payout over just the first 10 years is approximately \$4,800,000.00.**  (false)
+
+Summing only the first 10 years gives $s_{10} = 500,000 \times (1-0.98^{10})/0.02$. Since $0.98^{10} \approx 0.817073$, this becomes $s_{10} \approx 500,000 \times 9.14636 \approx \$4,573,179.83$, not \$4,800,000.00.
+--- D (true) min=338 cur=258
+STMT: The first 10 years of payouts represent approximately 18% of the full infinite-horizon total.
+CUR: **D) The first 10 years of payouts represent approximately 18% of the full infinite-horizon total.**  (true)
+
+Dividing the 10-year total by the full infinite total gives $4,573,179.83/25,000,000.00 \approx 18.3\%$ - close enough to describe as roughly 18%.
+--- E (false) min=669 cur=589
+STMT: If the decline were instead steeper, at k = 0.95, the infinite total would be more than half of the original infinite total.
+CUR: **E) If the decline were instead steeper, at k = 0.95, the infinite total would be more than half of the original infinite total.**  (false)
+
+A steeper 5% annual decline (k=0.95) gives an infinite total of 500,000/(1-0.95) = 500,000/0.05 = \$10,000,000.00. Half of the original \$25,000,000.00 infinite total is \$12,500,000.00, and \$10,000,000.00 sits below that halfway point, not above it, so the comparison in the claim has the direction backwards.
+
+At $k = 0.95$: $s_{\infty} = 500,000/0.05 = \$10,000,000$.
+
+Half of $25,000,000$ is $12,500,000$, and $10,000,000 < 12,500,000$.
+
+##### TASK 73 [11.4]
+CONTEXT: A company's marketing budget starts at \$200,000 this year and grows 12% every year with a = \$200,000 and k = 1.12, a finite geometric series. The CFO wants to know the smallest number of years n after which the cumulative total marketing spend first surpasses \$3,000,000.
+--- A (true) min=274 cur=194
+STMT: The marketing budget in year 2 is \$224,000.00.
+CUR: **A) The marketing budget in year 2 is \$224,000.00.**  (true)
+
+Year-2 budget is the year-1 budget multiplied once by the growth factor: $200,000 \times 1.12 = \$224,000.00$, matching exactly.
+--- B (true) min=407 cur=327
+STMT: The cumulative spend after 9 years is still below the \$3,000,000 target.
+CUR: **B) The cumulative spend after 9 years is still below the \$3,000,000 target.**  (true)
+
+Summing the first 9 years gives $s_9 = 200,000 \times (1.12^{9}-1)/0.12$. Since $1.12^{9} \approx 2.773079$, this becomes $s_9 \approx 200,000 \times 14.77566 \approx \$2,955,131.26$, which indeed falls short of the \$3,000,000 target.
+--- C (false) min=388 cur=308
+STMT: The cumulative spend after 10 years is approximately \$3,600,000.00.
+CUR: **C) The cumulative spend after 10 years is approximately \$3,600,000.00.**  (false)
+
+Summing the first 10 years instead gives $s_{10} = 200,000 \times (1.12^{10}-1)/0.12$. Since $1.12^{10} \approx 3.105848$, this becomes $s_{10} \approx 200,000 \times 17.54873 \approx \$3,509,747.01$, not \$3,600,000.00.
+--- D (false) min=608 cur=528
+STMT: The smallest n for which cumulative spend surpasses \$3,000,000 is n = 9.
+CUR: **D) The smallest n for which cumulative spend surpasses \$3,000,000 is n = 9.**  (false)
+
+Since the 9-year total (≈ \$2,955,131.26) is still below \$3,000,000 but the 10-year total (≈ \$3,509,747.01) is above it, the cumulative spend crosses the \$3,000,000 threshold sometime during year 10. That means the smallest whole number of years for which the running total exceeds \$3,000,000 is n=10, not n=9.
+
+$s_9 \approx 2,955,131 < 3,000,000$ but $s_{10} \approx 3,509,747 > 3,000,000$, so the first crossing is at $n = 10$.
+--- E (false) min=744 cur=664
+STMT: If the growth rate were only 8% instead of 12%, the 10-year cumulative spend would still surpass the \$3,000,000 target within 10 years.
+CUR: **E) If the growth rate were only 8% instead of 12%, the 10-year cumulative spend would still surpass the \$3,000,000 target within 10 years.**  (false)
+
+With a slower 8% growth rate, the 10-year total is $s_{10} = 200,000 \times (1.08^{10}-1)/0.08$. Since 1.08 to the 10th power is about 2.158925, this comes to 200,000×14.486562 ≈ \$2,897,312.49, which is still below \$3,000,000 - so under this slower growth rate, the target would not actually be reached within 10 years.
+
+At 8%: $s_{10} = 200,000 \times ((1.08)^{10}-1)/0.08$
+
+$$(1.08)^{10} \approx 2.158925, \quad s_{10} \approx 200,000 \times 14.48656 \approx \$2,897,312$$
+
+$2,897,312 < 3,000,000$.
+
+##### TASK 74 [11.4]
+CONTEXT: A charitable trust will issue its first grant of \$50,000 starting six years from now, with each subsequent annual grant equal to 96% of the previous grant, continuing forever with a = \$50,000 and k = 0.96. Analysts also want the total of just the first 15 grants, and how a steeper decline would compare.
+--- A (true) min=301 cur=221
+STMT: The second grant in the sequence is \$48,000.00.
+CUR: **A) The second grant in the sequence is \$48,000.00.**  (true)
+
+The second grant is the first grant multiplied once by the decline factor: 50,000×0.96 = \$48,000.00, matching exactly.
+
+$$50,000 \times 0.96 = 48,000$$
+--- B (true) min=307 cur=227
+STMT: The infinite total of all future grants is \$1,250,000.00.
+CUR: **B) The infinite total of all future grants is \$1,250,000.00.**  (true)
+
+Because $|0.96|<1$, letting the grants continue indefinitely produces a finite total of $s_{\infty} = 50,000/(1-0.96) = 50,000/0.04 = \$1,250,000.00$.
+--- C (true) min=356 cur=276
+STMT: The total of the first 15 grants is approximately \$572,392.03.
+CUR: **C) The total of the first 15 grants is approximately \$572,392.03.**  (true)
+
+Summing just the first 15 grants gives $s_{15} = 50,000 \times (1-0.96^{15})/0.04$. Since $0.96^{15} \approx 0.542086$, this becomes $s_{15} \approx 50,000 \times 11.44784 \approx \$572,392.03$.
+--- D (false) min=385 cur=305
+STMT: The first 15 grants represent less than 40% of the infinite total.
+CUR: **D) The first 15 grants represent less than 40% of the infinite total.**  (false)
+
+Dividing the 15-grant total by the full infinite total gives $572,392.03/1,250,000.00 \approx 45.8\%$ - that is above 40%, not below it, so the claim understates how large a share the first 15 grants actually represent.
+--- E (true) min=599 cur=519
+STMT: If the decline were steeper, at k = 0.90 instead of 0.96, the infinite total would be less than half of the original infinite total.
+CUR: **E) If the decline were steeper, at k = 0.90 instead of 0.96, the infinite total would be less than half of the original infinite total.**  (true)
+
+A steeper 10% annual decline (k=0.90) gives an infinite total of 50,000/(1-0.90) = 50,000/0.10 = \$500,000.00. Half of the original \$1,250,000.00 total is \$625,000.00, and \$500,000.00 is indeed below that halfway mark, confirming the comparison.
+
+At $k = 0.90$: $s_{\infty} = 50,000/0.10 = \$500,000$.
+
+Half of $1,250,000$ is $625,000$, and $500,000 < 625,000$.
+
+##### TASK 75 [11.4]
+CONTEXT: A vineyard's grape yield is expected to decline by 2% every quarter, not every year, over a 5-year span of 20 quarters. The first quarter's yield is 10,000 lbs, so this is a finite geometric series with a = 10,000 lbs, k = 0.98, and n = 20 quarters.
+--- A (true) min=317 cur=237
+STMT: The second quarter's yield is 9,800.00 lbs.
+CUR: **A) The second quarter's yield is 9,800.00 lbs.**  (true)
+
+The second quarter's yield is the first quarter's yield multiplied once by the decline factor: 10,000×0.98: $9,800.00 lbs$, matching exactly.
+
+$$10,000 \times 0.98 = 9,800$$
+--- B (true) min=391 cur=311
+STMT: The total yield over the full 5-year span is approximately 166,196.01 lbs.
+CUR: **B) The total yield over the full 5-year span is approximately 166,196.01 lbs.**  (true)
+
+Five years is 20 quarters, so summing all 20 quarters gives $s_{20} = 10,000 \times (1-0.98^{20})/0.02$. Since $0.98^{20} \approx 0.667608$, this becomes $s_{20} \approx 10,000 \times 16.619601 \approx 166,196.01$ lbs.
+--- C (false) min=752 cur=672
+STMT: Substituting n = 5 into the same formula gives 48,039.60 lbs, and this would be the correct 5-year total.
+CUR: **C) Substituting n = 5 into the same formula gives 48,039.60 lbs, and this would be the correct 5-year total.**  (false)
+
+Plugging n=5 into the same formula instead of n=20 does produce 48,039.60 lbs as a number, but that figure only represents the total of the first 5 quarters (about 1.25 years), not the full 5-year, 20-quarter span. Using the wrong exponent gives a technically computable but practically meaningless answer to the actual 5-year question, whose correct total is 166,196.01 lbs.
+
+$n = 5$ would be five quarters, not five years:
+
+$$s_5 = 10,000 \times \frac{1-0.98^{5}}{0.02} \approx 48,039.60$$
+
+That is a 1.25-year total, not the 5-year total.
+--- D (true) min=464 cur=384
+STMT: The yield in the 20th quarter alone is approximately 6,812.33 lbs.
+CUR: **D) The yield in the 20th quarter alone is approximately 6,812.33 lbs.**  (true)
+
+The 20th quarter's yield equals the first quarter's yield multiplied by the ratio raised to the 19th power: $10,000 \times 0.98^{19} \approx 10,000 \times 0.681230 \approx 6,812.33$ lbs.
+
+The 20th term is $a k^{19}$:
+
+$$0.98^{19} \approx 0.681233, \quad 10,000 \times 0.681233 \approx 6,812.33$$
+--- E (false) min=671 cur=591
+STMT: If the 2%-per-quarter decline continued forever instead of stopping after 20 quarters, the theoretical infinite total of 500,000.00 lbs would be less than the actual 20-quarter total.
+CUR: **E) If the 2%-per-quarter decline continued forever instead of stopping after 20 quarters, the theoretical infinite total of 500,000.00 lbs would be less than the actual 20-quarter total.**  (false)
+
+If the 2% quarterly decline continued forever instead of stopping at 20 quarters, the theoretical total would be $s_{\infty} = 10,000/(1-0.98) = 10,000/0.02 = 500,000.00$ lbs. Since every additional quarter beyond the 20th still adds a small positive amount, the infinite total must be at least as large as the 20-quarter partial total, and indeed $500,000.00 > 166,196.01$, not below it.
+
+##### TASK 76 [11.4]
+CONTEXT: A franchisor compares two territories over 8 years. Territory A starts at a first-year royalty of \$80,000, growing 6% per year with a = \$80,000 and k = 1.06. Territory B starts higher, at \$95,000, but grows more slowly, at only 2% per year with a = \$95,000 and k = 1.02.
+--- A (true) min=426 cur=346
+STMT: Territory A's 8-year total royalties are approximately \$791,797.43.
+CUR: **A) Territory A's 8-year total royalties are approximately \$791,797.43.**  (true)
+
+Summing a geometric series with $a = \$80,000$, $k = 1.06$, and $n = 8$ years uses $s_{A,8} = a(k^{n}-1)/(k-1)$.
+
+$$s_{A,8} = 80,000 \times \frac{(1.06)^{8}-1}{0.06} \approx 80,000 \times 9.89747 \approx \$791,797.43$$
+
+That matches the statement exactly.
+--- B (true) min=426 cur=346
+STMT: Territory B's 8-year total royalties are approximately \$815,382.06.
+CUR: **B) Territory B's 8-year total royalties are approximately \$815,382.06.**  (true)
+
+Summing a geometric series with $a = \$95,000$, $k = 1.02$, and $n = 8$ years uses $s_{B,8} = a(k^{n}-1)/(k-1)$.
+
+$$s_{B,8} = 95,000 \times \frac{(1.02)^{8}-1}{0.02} \approx 95,000 \times 8.58297 \approx \$815,382.06$$
+
+That matches the statement exactly.
+--- C (false) min=418 cur=338
+STMT: Territory A's 8-year total royalties exceed Territory B's 8-year total.
+CUR: **C) Territory A's 8-year total royalties exceed Territory B's 8-year total.**  (false)
+
+Comparing the two totals directly, $\$791,797.43 < \$815,382.06$: Territory B's higher starting royalty outweighs Territory A's faster growth rate over this 8-year window. Territory A's total falls short of Territory B's, not the other way around.
+--- D (true) min=1036 cur=956
+STMT: In year 8 alone, Territory A's royalty payment of approximately \$120,290.42 exceeds Territory B's year-8 payment of approximately \$109,125.14.
+CUR: **D) In year 8 alone, Territory A's royalty payment of approximately \$120,290.42 exceeds Territory B's year-8 payment of approximately \$109,125.14.**  (true)
+
+Territory A's year-8 payment is $80,000 \times 1.06^{7} \approx 80,000 \times 1.503630 \approx \$120,290.42$, while Territory B's year-8 payment is $95,000 \times 1.02^{7} \approx 95,000 \times 1.148686 \approx \$109,125.14$. By year 8, repeated 6% compounding has pushed Territory A's individual payment above Territory B's, even though Territory A's running 8-year total still lags behind - a genuine subtlety in which the faster-growing stream overtakes the slower one term-by-term before it overtakes it in cumulative total.
+
+Year 8 is $a k^{7}$:
+
+$$80,000 \times (1.06)^{7} \approx 80,000 \times 1.503630 \approx \$120,290.42$$
+
+$$95,000 \times (1.02)^{7} \approx 95,000 \times 1.148686 \approx \$109,125.14$$
+
+$$120,290.42 > 109,125.14$$ even while A's 8-year sum still lags B's.
+--- E (false) min=287 cur=207
+STMT: Territory B's 8-year total exceeds Territory A's 8-year total by more than \$30,000.
+CUR: **E) Territory B's 8-year total exceeds Territory A's 8-year total by more than \$30,000.**  (false)
+
+The actual gap is $\$815,382.06 - \$791,797.43 = \$23,584.63$, which is below $\$30,000$, not above it.
+
+##### TASK 77 [11.4]
+CONTEXT: An analyst models the marginal benefit of the n-th batch of advertising spend as $a_n = 5,000/n^{p}$ dollars, and wants to know, for different values of the exponent p, whether the infinite total marginal benefit $\sum a_n$ converges, using the rule that $\sum 1/n^{p}$ converges if and only if p > 1.
+--- A (false) min=306 cur=226
+STMT: With p = 1.5, the marginal benefit of the 4th campaign batch is approximately \$650.00.
+CUR: **A) With p = 1.5, the marginal benefit of the 4th campaign batch is approximately \$650.00.**  (false)
+
+Since $4^{1.5} = 4 \times \sqrt{4} = 8$, the 4th-batch benefit is $a_4 = 5,000/8 = \$625.00$, not $\$650.00$ as stated.
+--- B (true) min=334 cur=254
+STMT: With p = 1.5, the infinite series converges to a finite total value.
+CUR: **B) With p = 1.5, the infinite series converges to a finite total value.**  (true)
+
+By the stated rule, $\sum 1/n^{p}$ converges exactly when $p > 1$. Here $p = 1.5 > 1$, so $\sum 5,000/n^{1.5}$ does converge to a finite total, matching the statement.
+--- C (false) min=385 cur=305
+STMT: If instead p = 1, the series would still converge, just to a larger total than the p = 1.5 case.
+CUR: **C) If instead p = 1, the series would still converge, just to a larger total than the p = 1.5 case.**  (false)
+
+At $p = 1$ this is the harmonic series $\sum 5,000/n$, and since $p = 1$ is not greater than $1$, the rule says it diverges rather than converging to any total at all - larger or otherwise.
+--- D (false) min=475 cur=395
+STMT: $a_{100} = \$5.00$, and this alone is enough to guarantee that the series $\sum a_n$ converges.
+CUR: **D) $a_{100} = \$5.00$, and this alone is enough to guarantee that the series $\sum a_n$ converges.**  (false)
+
+The term itself is correct: $a_{100} = 5,000/100^{1.5} = 5,000/1,000 = \$5.00$. But $a_n \to 0$ is only necessary for convergence, not sufficient - the harmonic case in part (c) has terms shrinking to $0$ and still diverges, so this observation alone cannot guarantee convergence.
+--- E (true) min=401 cur=321
+STMT: With p = 0.5, the series diverges, even though the individual terms still tend to 0 as n → ∞.
+CUR: **E) With p = 0.5, the series diverges, even though the individual terms still tend to 0 as n → ∞.**  (true)
+
+Since $p = 0.5$ is not greater than $1$, the rule says $\sum 5,000/n^{0.5}$ diverges, even though the individual terms $5,000/\sqrt{n}$ do shrink toward $0$ - shrinking terms alone never guarantee convergence.
+
+##### TASK 78 [11.4]
+CONTEXT: A solar farm's annual energy revenue starts at \$150,000 and grows 1% per year with a = \$150,000 and k = 1.01, while its annual maintenance cost starts at \$120,000 but grows faster, at 3% per year with a = \$120,000 and k = 1.03. Both are finite geometric series. Management compares cumulative profit, revenue total minus cost total, over both a 12-year and a 20-year horizon.
+--- A (true) min=453 cur=373
+STMT: The cumulative 12-year revenue is approximately \$1,902,375.45.
+CUR: **A) The cumulative 12-year revenue is approximately \$1,902,375.45.**  (true)
+
+Summing a geometric series with $a = \$150,000$, $k = 1.01$, and $n = 12$ years uses $s_{\mathrm{rev},12} = a(k^{n}-1)/(k-1)$.
+
+$$s_{\mathrm{rev},12} = 150,000 \times \frac{(1.01)^{12}-1}{0.01} \approx 150,000 \times 12.68250 \approx \$1,902,375.45$$
+
+That matches the statement exactly.
+--- B (true) min=464 cur=384
+STMT: The cumulative 12-year maintenance cost is approximately \$1,703,043.55.
+CUR: **B) The cumulative 12-year maintenance cost is approximately \$1,703,043.55.**  (true)
+
+Summing a geometric series with $a = \$120,000$, $k = 1.03$, and $n = 12$ years uses $s_{\mathrm{cost},12} = a(k^{n}-1)/(k-1)$.
+
+$$s_{\mathrm{cost},12} = 120,000 \times \frac{(1.03)^{12}-1}{0.03} \approx 120,000 \times 14.19203 \approx \$1,703,043.55$$
+
+That matches the statement exactly.
+--- C (true) min=318 cur=238
+STMT: The cumulative 12-year profit is approximately \$199,331.90.
+CUR: **C) The cumulative 12-year profit is approximately \$199,331.90.**  (true)
+
+Subtracting the cumulative cost from the cumulative revenue gives the profit: $\$1,902,375.45 - \$1,703,043.55 = \$199,331.90$, matching the statement exactly.
+--- D (true) min=915 cur=835
+STMT: In year 12 alone, revenue of approximately \$167,350.25 still exceeds maintenance cost of approximately \$166,108.06, leaving a net positive of about \$1,242.19.
+CUR: **D) In year 12 alone, revenue of approximately \$167,350.25 still exceeds maintenance cost of approximately \$166,108.06, leaving a net positive of about \$1,242.19.**  (true)
+
+In year 12 alone, revenue is $150,000 \times 1.01^{11} \approx 150,000 \times 1.115668 \approx \$167,350.25$, while maintenance cost is $120,000 \times 1.03^{11} \approx 120,000 \times 1.384234 \approx \$166,108.06$. Subtracting gives a net of \$167,350.25 - \$166,108.06 ≈ \$1,242.19 - revenue is still ahead, but only barely, showing how much the gap between the two streams has narrowed by this point.
+
+Year 12 terms are $a k^{11}$:
+
+$$150,000 \times (1.01)^{11} \approx 150,000 \times 1.115668 \approx \$167,350.25$$
+
+$$120,000 \times (1.03)^{11} \approx 120,000 \times 1.384234 \approx \$166,108.06$$
+
+$$167,350.25 - 166,108.06 = \$1,242.19$$
+--- E (true) min=1151 cur=1071
+STMT: Extending the horizon to 20 years, cumulative profit falls below the 12-year cumulative profit.
+CUR: **E) Extending the horizon to 20 years, cumulative profit falls below the 12-year cumulative profit.**  (true)
+
+Extending the same calculations to 20 years gives a cumulative revenue of about \$3,302,850.60 and a cumulative cost of about \$3,224,444.94, for a 20-year profit of roughly \$78,405.66, smaller than the 12-year profit of \$199,331.90. This happens because maintenance cost compounds at the faster 3% rate while revenue compounds at only 1%; over a longer horizon the faster-growing cost stream eats into more and more of each year's revenue, so even though annual revenue is still ahead of annual cost as late as year 12, the cumulative profit advantage built up in the earlier years gradually erodes as the cost curve catches up.
+
+At $n = 20$:
+
+$$(1.01)^{20} \approx 1.220190, \quad s_{\mathrm{rev},20} = 150,000 \times (1.220190-1)/0.01 \approx \$3,302,851$$
+
+$$(1.03)^{20} \approx 1.806111, \quad s_{\mathrm{cost},20} = 120,000 \times (1.806111-1)/0.03 \approx \$3,224,445$$
+
+$$3,302,851 - 3,224,445 \approx \$78,406$$
+
+and $78,406 < 199,332$.
+
+##### TASK 79 [11.4]
+CONTEXT: A private equity fund's portfolio company currently generates \$2,400,000 in annual free cash flow. Under a “recession” scenario, cash flow is expected to shrink 6% every year indefinitely with a = \$2,400,000 and k = 0.94. Under a “recovery” scenario, cash flow instead grows 6% per year for the next 7 years before the fund exits with a = \$2,400,000, k = 1.06, and n = 7.
+--- A (true) min=465 cur=385
+STMT: Under the recession scenario, the infinite cumulative cash flow converges to \$40,000,000.00.
+CUR: **A) Under the recession scenario, the infinite cumulative cash flow converges to \$40,000,000.00.**  (true)
+
+Since the ratio in the recession scenario is 0.94, and |0.94| is below 1, letting the shrinking cash flows continue forever produces a finite total of a/(1-k) = 2,400,000/(1-0.94) = 2,400,000/0.06 = \$40,000,000.00.
+
+$$s_{\infty} = \frac{2,400,000}{0.06} = \$40,000,000$$
+--- B (false) min=483 cur=403
+STMT: Under the same recession scenario, the cumulative cash flow over just the first 15 years is approximately \$22,000,000.00.
+CUR: **B) Under the same recession scenario, the cumulative cash flow over just the first 15 years is approximately \$22,000,000.00.**  (false)
+
+Summing the first 15 years with $a = \$2,400,000$ and $k = 0.94$ uses $s_{15} = a(1-k^{15})/(1-k)$.
+
+$$s_{15} = 2,400,000 \times \frac{1-(0.94)^{15}}{0.06} \approx 2,400,000 \times 10.07847 \approx \$24,188,328.05$$
+
+That is not $\$22,000,000.00$ as stated.
+--- C (false) min=331 cur=251
+STMT: The 15-year recession total represents approximately 75% of the full infinite-horizon recession total.
+CUR: **C) The 15-year recession total represents approximately 75% of the full infinite-horizon recession total.**  (false)
+
+Dividing the two already-known totals, $\$24,188,328.05 / \$40,000,000.00 \approx 0.6047$, or about $60\%$, not $75\%$ as stated.
+--- D (false) min=719 cur=639
+STMT: Under the recovery scenario, the cumulative cash flow over the 7-year period, approximately \$20,145,210.36, exceeds the full infinite-horizon recession total of \$40,000,000.00.
+CUR: **D) Under the recovery scenario, the cumulative cash flow over the 7-year period, approximately \$20,145,210.36, exceeds the full infinite-horizon recession total of \$40,000,000.00.**  (false)
+
+Summing the 7-year recovery scenario gives $s_7 = 2,400,000 \times (1.06^{7}-1)/0.06$. Since 1.06 to the 7th power is about 1.503630, this becomes 2,400,000×8.393838 ≈ \$20,145,210.36, well below the \$40,000,000.00 infinite recession total, not above it.
+
+$$s_7 = 2,400,000 \times \frac{(1.06)^{7}-1}{0.06}$$
+
+$$(1.06)^{7} \approx 1.503630, \quad s_7 \approx 2,400,000 \times 8.39384 \approx \$20,145,210$$
+
+$20,145,210 < 40,000,000$.
+--- E (false) min=448 cur=368
+STMT: In year 7 of the recovery scenario alone, cash flow is approximately \$2,900,000.00.
+CUR: **E) In year 7 of the recovery scenario alone, cash flow is approximately \$2,900,000.00.**  (false)
+
+The 7th year of the recovery scenario alone is $2,400,000 \times 1.06^{6} \approx 2,400,000 \times 1.418519 \approx \$3,404,445.87$, not \$2,900,000.00.
+
+Year 7 is $a k^{6}$:
+
+$$(1.06)^{6} \approx 1.418519, \quad 2,400,000 \times 1.418519 \approx \$3,404,446$$
+
+##### TASK 80 [11.4]
+CONTEXT: A private lender values a portfolio of three loan tranches, valued in nominal undiscounted dollars, adding declining and growing streams together just as ordinary fixed amounts. Tranche 1 pays equal annual coupons of \$25,000 for 9 years in the degenerate k = 1 case. Tranche 2 pays a growing coupon starting at \$18,000, increasing 7% per year for 9 years with a = \$18,000 and k = 1.07. Tranche 3 is a perpetual royalty starting at \$30,000 that declines 8% per year forever with a = \$30,000 and k = 0.92. Separately, an analyst proposes valuing a symbolic annual fee stream $f_n = 1,000/n$ dollars for n = 1, 2, 3, ….
+--- A (true) min=323 cur=243
+STMT: Tranche 1 totals exactly \$225,000.00.
+CUR: **A) Tranche 1 totals exactly \$225,000.00.**  (true)
+
+When every one of the $9$ annual coupons is identical at $\$25,000$, there is no ratio to apply: the total is just $s_9 = 25,000 \times 9 = \$225,000.00$, matching the statement exactly.
+--- B (true) min=393 cur=313
+STMT: Tranche 2 totals approximately \$215,603.80.
+CUR: **B) Tranche 2 totals approximately \$215,603.80.**  (true)
+
+Summing a geometric series with $a = \$18,000$, $k = 1.07$, and $n = 9$ years uses $s = a(k^{n}-1)/(k-1)$.
+
+$$s_9 = 18,000 \times \frac{(1.07)^{9}-1}{0.07} \approx 18,000 \times 11.97799 \approx \$215,603.80$$
+
+That matches the statement exactly.
+--- C (true) min=775 cur=695
+STMT: Tranche 3, valued as an infinite declining perpetuity, totals \$375,000.00.
+CUR: **C) Tranche 3, valued as an infinite declining perpetuity, totals \$375,000.00.**  (true)
+
+Since the ratio 0.92 has absolute value below 1, letting this royalty stream continue forever gives a finite total of 30,000/(1-0.92) = 30,000/0.08 = \$375,000.00. Comparing all three tranches - \$225,000.00, \$215,603.80, and \$375,000.00 - the perpetual royalty stream is indeed the largest of the three, even though it starts with the smallest single payment; over an unlimited horizon, a slowly-declining stream can accumulate more value than either finite stream.
+
+$$s_{\infty} = 30,000/(1-0.92) = 30,000/0.08 = \$375,000$$
+
+Compare $225,000,215,604$, and $375,000$: Tranche 3 is the largest.
+--- D (false) min=979 cur=899
+STMT: Tranche 3 must be excluded from any combined valuation, meaning the portfolio's correct combined total is just \$440,603.80.
+CUR: **D) Tranche 3 must be excluded from any combined valuation, meaning the portfolio's correct combined total is just \$440,603.80.**  (false)
+
+There is nothing that prevents a convergent infinite series from being added to finite sums - once a series has a specific, finite total, that total behaves just like any other fixed dollar amount and can be combined with other fixed amounts through ordinary addition. Excluding Tranche 3 and reporting only \$225,000.00 + \$215,603.80 = \$440,603.80 leaves out \$375,000.00 of value that is just as real and just as calculable as the other two tranches; the correct combined total, including all three, is \$225,000.00 + \$215,603.80 + \$375,000.00 = \$815,603.80.
+
+A convergent infinite total is an ordinary finite dollar amount:
+
+$$225,000 + 215,603.80 + 375,000 = \$815,603.80$$
+
+Excluding Tranche 3 would drop $\$375,000$ without justification.
+--- E (false) min=461 cur=381
+STMT: $f_{100} = \$10.00$, and this alone is sufficient to guarantee that the fee stream converges to a finite total.
+CUR: **E) $f_{100} = \$10.00$, and this alone is sufficient to guarantee that the fee stream converges to a finite total.**  (false)
+
+The term itself is correct: $f_{100} = 1,000/100 = \$10.00$. But $f_n = 1,000/n$ is just $1,000$ times the harmonic series, which has $p = 1$ and therefore diverges even though $f_n \to 0$ - so shrinking terms alone cannot guarantee convergence here.
+
+##### TASK 81 [11.5]
+CONTEXT: Ms. Delgado, the bakery owner from a previous chapter, now wants to have exactly \$5,000 available in 3 years to replace a commercial oven, and plans to make a single deposit today into an account earning 7% annual interest.
+--- A (true) min=321 cur=241
+STMT: The amount she must deposit today is approximately \$4,081.49.
+CUR: **A) The amount she must deposit today is approximately \$4,081.49.**  (true)
+
+Plugging $A = 5,000$, $r = 0.07$, and $n = 3$ into $x = A/(1+r)^{n}$ gives $x = 5,000/(1.07)^{3} = 5,000/1.225043 = \$4,081.49$, matching the statement exactly.
+--- B (false) min=655 cur=575
+STMT: If the interest rate were instead 5%, the required deposit today would be LOWER than \$4,081.49.
+CUR: **B) If the interest rate were instead 5%, the required deposit today would be LOWER than \$4,081.49.**  (false)
+
+A lower discount rate means each future dollar is discounted less severely, so LESS growth is assumed and MORE must be set aside today: at 5% the required deposit is \$4,319.19, which is higher than the 7% figure of \$4,081.49, not lower.
+
+Same formula, lower rate:
+
+$$x = 5,000 / (1.05)^{3}$$
+
+$$(1.05)^{3} = 1.157625$$
+
+$$5,000 / 1.157625 = \$4,319.19$$
+
+\$4,319.19 sits above \$4,081.49, so the claim that 5% would lower the deposit is backwards.
+--- C (false) min=302 cur=222
+STMT: The interest that will be earned over the 3 years is approximately \$928.51.
+CUR: **C) The interest that will be earned over the 3 years is approximately \$928.51.**  (false)
+
+The interest earned is simply the future target minus today's deposit: 5,000.00 - 4,081.49 = \$918.51, not \$928.51 as stated.
+--- D (true) min=530 cur=450
+STMT: If the target amount were doubled to \$10,000, the required deposit today would also exactly double, to approximately \$8,162.98.
+CUR: **D) If the target amount were doubled to \$10,000, the required deposit today would also exactly double, to approximately \$8,162.98.**  (true)
+
+Because $x = A/(1+r)^{n}$ is directly proportional to A for fixed r and n, doubling the target amount exactly doubles the required deposit, from \$4,081.49 to \$8,162.98.
+
+Fix r and n, double A:
+
+$$x' = 10,000 / (1.07)^{3} = 10,000 / 1.225043 = \$8,162.98$$
+
+\$8,162.98 is exactly 2 × \$4,081.49.
+--- E (false) min=698 cur=618
+STMT: If the horizon were extended to 6 years at the same 7% rate, the required deposit today would be exactly half of \$4,081.49.
+CUR: **E) If the horizon were extended to 6 years at the same 7% rate, the required deposit today would be exactly half of \$4,081.49.**  (false)
+
+The discounting relationship is exponential in time, not linear, so doubling the horizon does not halve the deposit: the correct 6-year deposit is $5,000/(1.07)^{6} = \$3,331.71$, which is well above the naively halved figure of \$2,040.75.
+
+Six years at 7%:
+
+$$x_6 = 5,000 / (1.07)^{6}$$
+
+$$(1.07)^{6} \approx 1.500730$$
+
+$$5,000 / 1.500730 = \$3,331.71$$
+
+Half of \$4,081.49 would be \$2,040.75. \$3,331.71 is larger, so doubling time does not halve the deposit.
+
+##### TASK 82 [11.5]
+CONTEXT: A freelance graphic designer deposits \$6,500 today into a business savings account earning 6% annual interest, and wants to project the accumulated value after 5 years, and again after a longer 10-year horizon.
+--- A (true) min=394 cur=314
+STMT: The accumulated value after 5 years is approximately \$8,698.47.
+CUR: **A) The accumulated value after 5 years is approximately \$8,698.47.**  (true)
+
+$F(5) = 6,500 \times (1.06)^{5} = \$8,698.47$, matching the statement exactly.
+
+Insert P = 6,500, r = 0.06, n = 5:
+
+$$F(5) = 6,500 \times (1.06)^{5}$$
+
+$$(1.06)^{5} \approx 1.338226$$
+
+$$6,500 \times 1.338226 = \$8,698.47$$
+--- B (true) min=267 cur=187
+STMT: The interest earned during the first 5 years is approximately \$2,198.47.
+CUR: **B) The interest earned during the first 5 years is approximately \$2,198.47.**  (true)
+
+The 5-year interest earned is 8,698.47 - 6,500.00 = \$2,198.47, matching the statement exactly.
+--- C (false) min=588 cur=508
+STMT: The accumulated value after 10 years is exactly double the 5-year value.
+CUR: **C) The accumulated value after 10 years is exactly double the 5-year value.**  (false)
+
+Because compounding is exponential, not linear, in time, $F(10) = 6,500 \times (1.06)^{10} = \$11,640.51$, which is well below the naively doubled figure of \$17,396.94.
+
+Ten years is not twice five years under compounding:
+
+$$F(10) = 6,500 \times (1.06)^{10}$$
+
+$$(1.06)^{10} \approx 1.790847$$
+
+$$6,500 \times 1.790847 = \$11,640.51$$
+
+Double the 5-year value would be \$17,396.94, far above \$11,640.51.
+--- D (false) min=732 cur=652
+STMT: The interest earned during the SECOND 5-year period, approximately \$2,942.04, is SMALLER than the interest earned during the FIRST 5-year period, approximately \$2,198.47.
+CUR: **D) The interest earned during the SECOND 5-year period, approximately \$2,942.04, is SMALLER than the interest earned during the FIRST 5-year period, approximately \$2,198.47.**  (false)
+
+The interest earned in the second 5-year block (\$2,942.04) actually EXCEEDS that of the first block (\$2,198.47), not the reverse, because interest is earned on an ever-larger accumulated balance as time passes - the hallmark of compound growth.
+
+Second-block interest is the 10-year stock minus the 5-year stock:
+
+$$11,640.51 - 8,698.47 = \$2,942.04$$
+
+Compare with the first block: \$2,942.04 > \$2,198.47, so the second period is larger, not smaller.
+--- E (false) min=614 cur=534
+STMT: If the interest rate were instead 3%, the 5-year accumulated value would be exactly half of \$8,698.47.
+CUR: **E) If the interest rate were instead 3%, the 5-year accumulated value would be exactly half of \$8,698.47.**  (false)
+
+Halving the rate does not halve the future value, since $(1+r)^{n}$ is not linear in r: at 3%, F(5) = \$7,535.28, which is considerably more than half of the 6%-rate value of \$8,698.47.
+
+Halving r does not halve F:
+
+$$F_{3\%}(5) = 6,500 \times (1.03)^{5}$$
+
+$$(1.03)^{5} \approx 1.159274$$
+
+$$6,500 \times 1.159274 = \$7,535.28$$
+
+Half of \$8,698.47 is \$4,349.24. \$7,535.28 is well above that half.
+
+##### TASK 83 [11.5]
+CONTEXT: A dental clinic owner deposits \$2,000 at the end of each year into an equipment-replacement fund earning 5% annual interest, for 6 years, and wants to understand how this future value relates to its present-value equivalent.
+--- A (true) min=386 cur=306
+STMT: The future value after 6 years is approximately \$13,603.84.
+CUR: **A) The future value after 6 years is approximately \$13,603.84.**  (true)
+
+Plugging $a = \$2,000$, $r = 0.05$, and $n = 6$ into the ordinary-annuity formula $F_n = (a/r)[(1+r)^{n}-1]$ gives $F_6 = (2,000/0.05)[(1.05)^{6}-1] \approx 40,000 \times 0.340096 = \$13,603.84$, matching the statement exactly.
+--- B (false) min=305 cur=225
+STMT: The total interest earned over the 6 years is approximately \$1,703.84.
+CUR: **B) The total interest earned over the 6 years is approximately \$1,703.84.**  (false)
+
+Total deposits of \$12,000.00 subtracted from the future value of \$13,603.84 leaves \$1,603.84 in interest, not \$1,703.84 as stated.
+--- C (false) min=608 cur=528
+STMT: The present-value equivalent of this future value is approximately \$18,230.45.
+CUR: **C) The present-value equivalent of this future value is approximately \$18,230.45.**  (false)
+
+This inverts the relationship $F_n = P_n(1+r)^{n}$: to go from the future value back to the present value one must DIVIDE by $(1+r)^{n}$, not multiply. The correctly computed present value is \$10,151.40, not \$18,230.45.
+
+Go from future value back to present value by dividing, not multiplying:
+
+$$P_6 = F_6 / (1.05)^{6} = 13,603.84 / 1.340096 = \$10,151.40$$
+
+\$10,151.40 is the present-value equivalent, not \$18,230.45.
+--- D (false) min=664 cur=584
+STMT: If the annual deposit were increased by 50%, to \$3,000, the 6-year future value would also rise by exactly 50%, to approximately \$21,405.76.
+CUR: **D) If the annual deposit were increased by 50%, to \$3,000, the 6-year future value would also rise by exactly 50%, to approximately \$21,405.76.**  (false)
+
+Because Fn is directly proportional to the periodic deposit a, increasing a by 50% (from \$2,000 to \$3,000) increases F6 by exactly 50%, from \$13,603.84 to \$20,405.76, not \$21,405.76 as stated.
+
+F scales with a. Raise a from 2,000 to 3,000 (a 50% increase):
+
+$$F_6' = 13,603.84 \times 1.5 = \$20,405.76$$
+
+The statement's \$21,405.76 is \$1,000 too high. The 50% rise itself is correct; the dollar figure is not.
+--- E (false) min=832 cur=752
+STMT: If the number of annual deposits were doubled to 12 years, the future value would be LESS than double \$13,603.84.
+CUR: **E) If the number of annual deposits were doubled to 12 years, the future value would be LESS than double \$13,603.84.**  (false)
+
+F12 = \$31,834.24 is actually MORE than double the 6-year value of \$13,603.84 (double would be \$27,207.68), not less, since extending the deposit period lets earlier deposits keep compounding on top of the additional deposits, so the future value grows faster than linearly with the number of periods.
+
+Twelve years at the same 2,000 and 5%:
+
+$$F_{12} = 40,000\bigl[(1.05)^{12} - 1\bigr]$$
+
+$$(1.05)^{12} \approx 1.795856,\quad 1.795856 - 1 = 0.795856$$
+
+$$40,000 \times 0.795856 = \$31,834.24$$
+
+Double F6 is \$27,207.68. \$31,834.24 exceeds that double, so the future value is more than double, not less.
+
+##### TASK 84 [11.5]
+CONTEXT: A logistics company deposits \$3,500 at the end of each year into a fleet-replacement account earning 8% annual interest, for 10 years, and management wants to stress-test the fund under a longer horizon and a higher rate.
+--- A (true) min=363 cur=283
+STMT: The future value after 10 years is approximately \$50,702.97.
+CUR: **A) The future value after 10 years is approximately \$50,702.97.**  (true)
+
+Plugging $a = \$3,500$, $r = 0.08$, and $n = 10$ into $F_n = (a/r)[(1+r)^{n}-1]$ gives $F_{10} = (3,500/0.08)[(1.08)^{10}-1] \approx 43,750 \times 1.158925 = \$50,702.97$, matching the statement exactly.
+--- B (true) min=293 cur=213
+STMT: The total interest earned over the 10 years is approximately \$15,702.97.
+CUR: **B) The total interest earned over the 10 years is approximately \$15,702.97.**  (true)
+
+Total deposits of \$35,000.00 subtracted from \$50,702.97 leaves \$15,702.97 in interest, matching the statement exactly.
+--- C (false) min=679 cur=599
+STMT: If the deposit period were extended to 20 years, the future value would be LESS than double \$50,702.97.
+CUR: **C) If the deposit period were extended to 20 years, the future value would be LESS than double \$50,702.97.**  (false)
+
+Because the future value grows exponentially rather than linearly with the number of periods, doubling the deposit period to 20 years produces F20 = \$160,166.87, which is well MORE than double the 10-year value, not less.
+
+Twenty years:
+
+$$F_{20} = 43,750\bigl[(1.08)^{20} - 1\bigr]$$
+
+$$(1.08)^{20} \approx 4.660957,\quad 4.660957 - 1 = 3.660957$$
+
+$$43,750 \times 3.660957 = \$160,166.87$$
+
+Double F10 is \$101,405.94. \$160,166.87 is more than double, not less.
+--- D (false) min=393 cur=313
+STMT: The interest-only portion of the 10-year future value, approximately \$15,702.97, exceeds the total principal deposited of \$35,000.00.
+CUR: **D) The interest-only portion of the 10-year future value, approximately \$15,702.97, exceeds the total principal deposited of \$35,000.00.**  (false)
+
+The interest earned, $\$15,702.97$, is smaller than the total principal contributed, $3,500 \times 10 = \$35,000.00$, not larger, contradicting the statement.
+--- E (true) min=549 cur=469
+STMT: If the interest rate rose to 10%, the 10-year future value would exceed \$55,000.00.
+CUR: **E) If the interest rate rose to 10%, the 10-year future value would exceed \$55,000.00.**  (true)
+
+Raising the rate to 10% increases F10 to \$55,780.97, which does exceed the \$55,000.00 threshold stated.
+
+Raise the rate to 10%, keep a = 3,500 and n = 10:
+
+$$F_{10}' = (3,500 / 0.10)\bigl[(1.10)^{10} - 1\bigr]$$
+
+$$(1.10)^{10} \approx 2.593742,\quad 2.593742 - 1 = 1.593742$$
+
+$$35,000 \times 1.593742 = \$55,780.97$$
+
+\$55,780.97 does clear \$55,000.00.
+
+##### TASK 85 [11.5]
+CONTEXT: A retiree wants to withdraw \$2,400 at the end of each year for the next 15 years from a retirement account earning 4.5% annual interest, and wants to know how much must be in the account today to support these withdrawals.
+--- A (true) min=338 cur=258
+STMT: The present value needed today is approximately \$25,775.15.
+CUR: **A) The present value needed today is approximately \$25,775.15.**  (true)
+
+Plugging $a = \$2,400$, $r = 0.045$, and $n = 15$ into $P_n = (a/r)[1-1/(1+r)^{n}]$ gives $P_{15} \approx 53,333.33 \times 0.483284 = \$25,775.15$, matching the statement exactly.
+--- B (true) min=475 cur=395
+STMT: The total nominal withdrawals over 15 years, \$36,000.00, exceed the required deposit of \$25,775.15, illustrating that future dollars are worth less than present dollars.
+CUR: **B) The total nominal withdrawals over 15 years, \$36,000.00, exceed the required deposit of \$25,775.15, illustrating that future dollars are worth less than present dollars.**  (true)
+
+Nominal withdrawals total $2,400 \times 15 = \$36,000.00$, which is indeed larger than the $\$25,775.15$ required today, since each future withdrawal is discounted back to a smaller present-day equivalent.
+--- C (false) min=746 cur=666
+STMT: If withdrawals were extended to 30 years at the same rate, the present value would exactly double, to approximately \$51,550.30.
+CUR: **C) If withdrawals were extended to 30 years at the same rate, the present value would exactly double, to approximately \$51,550.30.**  (false)
+
+Because $1/(1+r)^{n}$ shrinks nonlinearly as n grows, doubling the withdrawal period to 30 years raises the present value only to \$39,091.65, not to the naively doubled figure of \$51,550.30.
+
+Thirty years is not twice fifteen in present value:
+
+$$P_{30} = 53,333.33\bigl[1 - 1/(1.045)^{30}\bigr]$$
+
+$$(1.045)^{30} \approx 3.745318,\quad 1/3.745318 \approx 0.267002$$
+
+$$1 - 0.267002 = 0.732998$$
+
+$$53,333.33 \times 0.732998 = \$39,091.65$$
+
+Double P15 would be \$51,550.30. \$39,091.65 falls well short.
+--- D (false) min=378 cur=298
+STMT: The gap between the total nominal withdrawals and today's required deposit, approximately \$11,224.85, represents the total discount applied.
+CUR: **D) The gap between the total nominal withdrawals and today's required deposit, approximately \$11,224.85, represents the total discount applied.**  (false)
+
+Subtracting the required deposit from the total nominal withdrawals gives 36,000.00 - 25,775.15 = \$10,224.85, not \$11,224.85 as stated.
+--- E (false) min=737 cur=657
+STMT: If the interest rate were higher, the required present-value deposit would be HIGHER than \$25,775.15.
+CUR: **E) If the interest rate were higher, the required present-value deposit would be HIGHER than \$25,775.15.**  (false)
+
+A higher interest rate discounts future withdrawals more heavily, which REDUCES the amount needed today, not increases it: at 6% only \$23,309.40 is required, which is lower than the 4.5%-rate figure of \$25,775.15.
+
+A higher rate discounts more, so today's deposit falls. At 6%:
+
+$$P_{15}' = (2,400 / 0.06)\bigl[1 - 1/(1.06)^{15}\bigr]$$
+
+$$(1.06)^{15} \approx 2.396558,\quad 1/2.396558 \approx 0.417265$$
+
+$$1 - 0.417265 = 0.582735$$
+
+$$40,000 \times 0.582735 = \$23,309.40$$
+
+\$23,309.40 is below \$25,775.15, not above.
+
+##### TASK 86 [11.5]
+CONTEXT: A nonprofit organization needs to fund \$5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same \$5,000 annual payment in perpetuity at the same rate.
+--- A (true) min=478 cur=398
+STMT: The present value needed to fund the 20-year annuity is approximately \$57,349.67.
+CUR: **A) The present value needed to fund the 20-year annuity is approximately \$57,349.67.**  (true)
+
+$P_{20} = (5,000/0.06)[1 - 1/(1.06)^{20}] = \$57,349.67$, matching the statement exactly.
+
+$$P_{20} = (5,000 / 0.06)\bigl[1 - 1/(1.06)^{20}\bigr]$$
+
+$$(1.06)^{20} \approx 3.207135,\quad 1/3.207135 \approx 0.311805$$
+
+$$1 - 0.311805 = 0.688195$$
+
+$$83,333.33 \times 0.688195 = \$57,349.67$$
+--- B (true) min=507 cur=427
+STMT: The perpetuity value is approximately \$83,333.33, exceeding the 20-year annuity's present value by approximately \$25,983.66.
+CUR: **B) The perpetuity value is approximately \$83,333.33, exceeding the 20-year annuity's present value by approximately \$25,983.66.**  (true)
+
+The perpetuity value of \$83,333.33 exceeds the 20-year annuity's present value of \$57,349.67 by exactly \$25,983.66, matching the statement exactly.
+
+Perpetuity: $P = a/r = 5,000/0.06 = \$83,333.33$.
+
+Gap: $83,333.33 - 57,349.67 = \$25,983.66$. Both pieces of the claim match.
+--- C (false) min=295 cur=215
+STMT: The 20-year annuity's present value represents approximately 72.82% of the equivalent perpetuity value.
+CUR: **C) The 20-year annuity's present value represents approximately 72.82% of the equivalent perpetuity value.**  (false)
+
+57,349.67 divided by 83,333.33 gives 0.68820, or approximately 68.82%, not 72.82% as stated.
+--- D (false) min=789 cur=709
+STMT: If the term were extended to 40 years, the present value would rise to MORE than 95% of the perpetuity value.
+CUR: **D) If the term were extended to 40 years, the present value would rise to MORE than 95% of the perpetuity value.**  (false)
+
+Even after doubling the term to 40 years, the present value only reaches \$75,231.50, or about 90.28% of the perpetuity value - still short of 95%, since later payments are discounted so heavily that extending the horizon further yields diminishing gains.
+
+Forty years:
+
+$$P_{40} = 83,333.33\bigl[1 - 1/(1.06)^{40}\bigr]$$
+
+$$(1.06)^{40} \approx 10.285718,\quad 1/10.285718 \approx 0.097222$$
+
+$$1 - 0.097222 = 0.902778$$
+
+$$83,333.33 \times 0.902778 = \$75,231.50$$
+
+Share of the perpetuity: $75,231.50 / 83,333.33 \approx 0.9028 = 90.28\%$, which is still under 95%.
+--- E (true) min=732 cur=652
+STMT: The perpetuity formula is obtained by letting the number of payments grow toward infinity in the annuity present-value formula, so that the value converges to \$83,333.33 as the limiting value.
+CUR: **E) The perpetuity formula is obtained by letting the number of payments grow toward infinity in the annuity present-value formula, so that the value converges to \$83,333.33 as the limiting value.**  (true)
+
+This is exactly how Section 11.5 derives the perpetuity formula: letting n tend to infinity in the annuity present-value formula causes $1/(1+r)^{n}$ to vanish, leaving the annuity's present value converging to a/r, matching the statement exactly.
+
+In $P_n = (a/r)\bigl[1 - 1/(1+r)^{n}\bigr]$, let n grow. Then $(1.06)^{n} \to \infty$, so $1/(1.06)^{n} \to 0$, and $P_n \to 5,000/0.06 = \$83,333.33$. That limit is the perpetuity formula.
+
+##### TASK 87 [11.5]
+CONTEXT: A supplier offers a company two payment options for a piece of machinery. Option 1: pay \$18,000 today. Option 2: pay \$2,500 at the end of each year for 9 years. Using an interest rate of 7%, the company wants to know which option has the lower present-value cost.
+--- A (true) min=343 cur=263
+STMT: The present value of Option 2's payments is approximately \$16,288.18.
+CUR: **A) The present value of Option 2's payments is approximately \$16,288.18.**  (true)
+
+Plugging $a = \$2,500$, $r = 0.07$, and $n = 9$ into $P_n = (a/r)[1-1/(1+r)^{n}]$ gives $P_9 \approx 35,714.29 \times 0.456069 = \$16,288.18$, matching the statement exactly.
+--- B (false) min=336 cur=256
+STMT: Because \$16,288.18 is less than \$18,000.00, Option 2 is the financially better choice, saving approximately \$1,811.82.
+CUR: **B) Because \$16,288.18 is less than \$18,000.00, Option 2 is the financially better choice, saving approximately \$1,811.82.**  (false)
+
+Option 2 is indeed cheaper, but the saving is $\$18,000.00 - \$16,288.18 = \$1,711.82$, not $\$1,811.82$ as stated.
+--- C (false) min=790 cur=710
+STMT: If the interest rate were only 4%, Option 2's present value would be LOWER than \$16,288.18, making Option 1 even less attractive by comparison.
+CUR: **C) If the interest rate were only 4%, Option 2's present value would be LOWER than \$16,288.18, making Option 1 even less attractive by comparison.**  (false)
+
+A lower discount rate discounts future payments less severely, which RAISES their present value: at 4%, Option 2's present value rises to \$18,588.31, which is higher than the 7%-rate figure of \$16,288.18, not lower.
+
+Lower rate, higher present value. At 4%:
+
+$$P_9' = (2,500 / 0.04)\bigl[1 - 1/(1.04)^{9}\bigr]$$
+
+$$(1.04)^{9} \approx 1.423312,\quad 1/1.423312 \approx 0.702587$$
+
+$$1 - 0.702587 = 0.297413$$
+
+$$62,500 \times 0.297413 = \$18,588.31$$
+
+\$18,588.31 > \$16,288.18, so 4% raises Option 2's present value, not lowers it.
+--- D (false) min=350 cur=270
+STMT: The total nominal payments under Option 2 over 9 years, \$22,500.00, exceed the \$18,000.00 lump-sum cost of Option 1 by \$4,600.00.
+CUR: **D) The total nominal payments under Option 2 over 9 years, \$22,500.00, exceed the \$18,000.00 lump-sum cost of Option 1 by \$4,600.00.**  (false)
+
+Total nominal payments of \$22,500.00 exceed the \$18,000.00 lump sum by exactly \$4,500.00, not \$4,600.00 as stated.
+--- E (false) min=410 cur=330
+STMT: Option 1's \$18,000.00, if invested today at 7% instead of used for the machinery, would grow after 9 years to a future value of more than \$34,000.00.
+CUR: **E) Option 1's \$18,000.00, if invested today at 7% instead of used for the machinery, would grow after 9 years to a future value of more than \$34,000.00.**  (false)
+
+Growing the lump sum forward gives $F = 18,000 \times (1.07)^{9} \approx 18,000 \times 1.838459 = \$33,092.26$, which does not exceed $\$34,000.00$ as claimed.
+
+##### TASK 88 [11.5]
+CONTEXT: A construction firm is choosing between two savings strategies for a future equipment purchase in 8 years, both earning 6% annual interest. Strategy A: deposit \$12,000 today, all at once. Strategy B: deposit \$1,400 at the end of each year for 8 years.
+--- A (true) min=353 cur=273
+STMT: Strategy A's future value after 8 years is approximately \$19,126.18.
+CUR: **A) Strategy A's future value after 8 years is approximately \$19,126.18.**  (true)
+
+Plugging $P = 12,000$, $r = 0.06$, and $n = 8$ into $F = P(1+r)^{n}$ gives $F_A = 12,000 \times (1.06)^{8} \approx 12,000 \times 1.593848 = \$19,126.18$, matching the statement exactly.
+--- B (false) min=358 cur=278
+STMT: Strategy B's future value after 8 years is approximately \$14,856.46.
+CUR: **B) Strategy B's future value after 8 years is approximately \$14,856.46.**  (false)
+
+Plugging $a = \$1,400$, $r = 0.06$, and $n = 8$ into $F_n = (a/r)[(1+r)^{n}-1]$ gives $F_B \approx 23,333.33 \times 0.593848 = \$13,856.46$; the claim's $\$14,856.46$ is $\$1,000$ too high.
+--- C (false) min=246 cur=166
+STMT: Strategy A yields a higher future value than Strategy B, by approximately \$5,769.72.
+CUR: **C) Strategy A yields a higher future value than Strategy B, by approximately \$5,769.72.**  (false)
+
+19,126.18 - 13,856.46 = \$5,269.72, not \$5,769.72 as stated.
+--- D (false) min=371 cur=291
+STMT: The total cash committed under Strategy B over the 8 years, \$11,200.00, is MORE than the \$12,000.00 committed upfront under Strategy A.
+CUR: **D) The total cash committed under Strategy B over the 8 years, \$11,200.00, is MORE than the \$12,000.00 committed upfront under Strategy A.**  (false)
+
+Total deposits under Strategy B are only \$11,200.00, which is LESS than the \$12,000.00 committed upfront under Strategy A, not more.
+--- E (true) min=765 cur=685
+STMT: If Strategy B's annual deposit were raised to \$1,500, Strategy B's future value would still be LOWER than Strategy A's \$19,126.18.
+CUR: **E) If Strategy B's annual deposit were raised to \$1,500, Strategy B's future value would still be LOWER than Strategy A's \$19,126.18.**  (true)
+
+Even when Strategy B's total nominal contributions are raised to exactly match Strategy A's \$12,000.00 upfront amount, its future value only reaches \$14,846.20, still well below Strategy A's \$19,126.18 - because front-loading the full amount gives it the maximum possible time to compound, an advantage spread-out deposits cannot fully offset.
+
+Raise B's annual deposit to 1,500:
+
+$$F_B' = (1,500 / 0.06)\bigl[(1.06)^{8} - 1\bigr] = 25,000 \times 0.593848 = \$14,846.20$$
+
+\$14,846.20 is still below Strategy A's \$19,126.18.
+
+##### TASK 89 [11.5]
+CONTEXT: A gym owner deposits \$3,000 at the BEGINNING of each year as an annuity due for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.
+--- A (true) min=543 cur=463
+STMT: The future value of these deposits at the end of year 6 is approximately \$21,426.05.
+CUR: **A) The future value of these deposits at the end of year 6 is approximately \$21,426.05.**  (true)
+
+$F_{\mathrm{due}}(6) = F_{\mathrm{ordinary}}(6) \times 1.05 = 20,405.76 \times 1.05 = \$21,426.05$, matching the statement exactly.
+
+Build the ordinary annuity first, then shift one period:
+
+$$F_{\mathrm{ord}} = (3,000 / 0.05)\bigl[(1.05)^{6} - 1\bigr] = 60,000 \times 0.340096 = \$20,405.76$$
+
+$$F_{\mathrm{due}} = 20,405.76 \times 1.05 = \$21,426.05$$
+--- B (true) min=603 cur=523
+STMT: If the same \$3,000 deposits were instead made at the END of each year, the future value would be LOWER than the annuity-due result.
+CUR: **B) If the same \$3,000 deposits were instead made at the END of each year, the future value would be LOWER than the annuity-due result.**  (true)
+
+$F_{\mathrm{ordinary}}(6) = (3,000/0.05)[(1.05)^{6} - 1] = \$20,405.76$, which is indeed lower than the annuity-due result of \$21,426.05, since end-of-year deposits each earn one fewer period of interest.
+
+The ordinary figure is the one already computed: \$20,405.76.
+
+$$20,405.76 < 21,426.05$$
+
+End-of-year deposits miss one period of growth, so they finish lower.
+--- C (false) min=278 cur=198
+STMT: The dollar gap between the annuity-due result and the ordinary-annuity result is approximately \$1,120.29.
+CUR: **C) The dollar gap between the annuity-due result and the ordinary-annuity result is approximately \$1,120.29.**  (false)
+
+The gap is 21,426.05 - 20,405.76 = \$1,020.29, not \$1,120.29 as stated.
+--- D (false) min=776 cur=696
+STMT: If the number of deposits were doubled to 12 years, the annuity-due future value would also exactly double, to approximately \$42,852.10.
+CUR: **D) If the number of deposits were doubled to 12 years, the annuity-due future value would also exactly double, to approximately \$42,852.10.**  (false)
+
+Extending to 12 years gives $F_{\mathrm{due}}(12) = \$50,138.93$, which is MORE than double the 6-year result (\$42,852.10 would be double) - not exactly double - because future value grows exponentially, not linearly, with the number of periods.
+
+Twelve years:
+
+$$F_{\mathrm{ord}}(12) = 60,000\bigl[(1.05)^{12} - 1\bigr] = 60,000 \times 0.795856 = \$47,751.36$$
+
+$$F_{\mathrm{due}}(12) = 47,751.36 \times 1.05 = \$50,138.93$$
+
+Double the 6-year due value would be \$42,852.10. \$50,138.93 is more than double, not equal to double.
+--- E (true) min=867 cur=787
+STMT: Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of interest growth, regardless of the number of payments or the interest rate.
+CUR: **E) Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of interest growth, regardless of the number of payments or the interest rate.**  (true)
+
+This is a direct structural identity: $F_{\mathrm{due}} = F_{\mathrm{ordinary}} \times (1+r)$ holds for any combination of a, r, and n, since shifting every payment one period earlier simply multiplies the entire ordinary-annuity result by one additional period's growth factor.
+
+The identity $F_{\mathrm{due}} = F_{\mathrm{ord}}(1+r)$ does not depend on a or n. Here 20,405.76 × 1.05 = 21,426.05 confirms it for these numbers, and the same extra factor (1+r) applies at any other horizon.
+
+##### TASK 90 [11.5]
+CONTEXT: A tenant signs a 5-year commercial lease requiring rent payments of \$24,000 at the BEGINNING of each year as an annuity due. The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.
+--- A (true) min=588 cur=508
+STMT: The present value of the lease payments today is approximately \$107,162.61.
+CUR: **A) The present value of the lease payments today is approximately \$107,162.61.**  (true)
+
+$P_{\mathrm{due}}(5) = P_{\mathrm{ordinary}}(5) \times 1.06 = 101,096.80 \times 1.06 = \$107,162.61$, matching the statement exactly.
+
+$$P_{\mathrm{ord}} = (24,000 / 0.06)\bigl[1 - 1/(1.06)^{5}\bigr]$$
+
+$$(1.06)^{5} \approx 1.338226,\quad 1/1.338226 \approx 0.747258$$
+
+$$1 - 0.747258 = 0.252742$$
+
+$$400,000 \times 0.252742 = \$101,096.80$$
+
+$$P_{\mathrm{due}} = 101,096.80 \times 1.06 = \$107,162.61$$
+--- B (true) min=635 cur=555
+STMT: If the same \$24,000 payments were instead due at the END of each year, the present value would be LOWER than the annuity-due result.
+CUR: **B) If the same \$24,000 payments were instead due at the END of each year, the present value would be LOWER than the annuity-due result.**  (true)
+
+$P_{\mathrm{ordinary}}(5) = (24,000/0.06)[1 - 1/(1.06)^{5}] = \$101,096.80$, which is indeed lower than the annuity-due result of \$107,162.61, since discounting end-of-year payments back one extra period each reduces their present value.
+
+The ordinary present value is \$101,096.80, already below the due value \$107,162.61. End-of-year rent is discounted one extra period, so it is worth less today.
+--- C (false) min=294 cur=214
+STMT: The dollar gap between the annuity-due present value and the ordinary-annuity present value is approximately \$7,065.81.
+CUR: **C) The dollar gap between the annuity-due present value and the ordinary-annuity present value is approximately \$7,065.81.**  (false)
+
+The gap is 107,162.61 - 101,096.80 = \$6,065.81, not \$7,065.81 as stated.
+--- D (false) min=908 cur=828
+STMT: If the lease term were extended to 10 years, the annuity-due present value would also exactly double, to approximately \$214,325.22.
+CUR: **D) If the lease term were extended to 10 years, the annuity-due present value would also exactly double, to approximately \$214,325.22.**  (false)
+
+Extending to 10 years gives $P_{\mathrm{due}}(10) = \$187,240.52$, which is LESS than double the 5-year result (\$214,325.22 would be double) - not exactly double - because discounting is exponential, not linear, in the number of periods, so later payments contribute progressively less.
+
+Ten-year lease:
+
+$$P_{\mathrm{ord}}(10) = 400,000\bigl[1 - 1/(1.06)^{10}\bigr]$$
+
+$$(1.06)^{10} \approx 1.790848,\quad 1/1.790848 \approx 0.558395$$
+
+$$1 - 0.558395 = 0.441605$$
+
+$$400,000 \times 0.441605 = \$176,642.00$$
+
+$$P_{\mathrm{due}}(10) = 176,642.00 \times 1.06 = \$187,240.52$$
+
+Double the 5-year due value would be \$214,325.22. \$187,240.52 is less than double.
+--- E (true) min=1013 cur=933
+STMT: The annuity-due present value can also be computed as the first \$24,000 payment plus the present value of an ordinary annuity of the remaining 4 payments.
+CUR: **E) The annuity-due present value can also be computed as the first \$24,000 payment plus the present value of an ordinary annuity of the remaining 4 payments.**  (true)
+
+Since the first payment of an annuity due occurs today (with zero discounting) and the remaining n-1 payments form an ordinary annuity one period later, splitting the payment stream this way gives \$24,000 today plus a discounted remainder of \$83,162.40, for a combined total of \$107,162.40, matching $P_{\mathrm{due}}$ within rounding - confirming this alternative method is valid.
+
+Split the stream: \$24,000 due today, plus an ordinary 4-year annuity of \$24,000.
+
+$$P_4 = 400,000\bigl[1 - 1/(1.06)^{4}\bigr]$$
+
+$$(1.06)^{4} \approx 1.262477,\quad 1/1.262477 \approx 0.792094$$
+
+$$1 - 0.792094 = 0.207906$$
+
+$$400,000 \times 0.207906 = \$83,162.40$$
+
+$$24,000 + 83,162.40 = \$107,162.40$$
+
+Matches $P_{\mathrm{due}}$ within a rounding cent.
+

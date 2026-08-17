@@ -1,0 +1,425 @@
+===== TASK 31 (4/5) Turning a Negative-Power Demand Curve Around =====
+CONTEXT: A component supplier faces demand $q(p)=A p^{-2}$ units, where $p>0$ is the price. At a price of $5$ the supplier sells $100$ units. Procurement wants the relationship written the other way round, with price and revenue expressed as functions of the quantity sold. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The inverse demand curve is $p=50q^{-0.5}$.
+STMT 1 [true]: Revenue expressed through quantity is $R=50q^{0.5}$.
+STMT 2 [true]: Doubling the quantity sold raises revenue by about $41.4\%$.
+STMT 3 [false]: When the curve sells $25$ units, revenue is $300$.
+STMT 4 [false]: The price elasticity of demand is $-0.5$.
+--- EXPL idx=0 len=695 displays=3 ---
+**A.** → True
+
+Inverse demand is the same curve with price as the subject, and inverting a power function replaces its exponent by the reciprocal and raises its coefficient to that same reciprocal power.
+
+$$A(5)^{-2} = 100 \quad \Rightarrow \quad \frac{A}{25} = 100 \quad \Rightarrow \quad A = 2500$$
+
+$$q = \frac{2500}{p^{2}} \quad \Rightarrow \quad p^{2} = \frac{2500}{q} \quad \Rightarrow \quad p = \frac{50}{\sqrt{q}} = 50q^{-0.5}$$
+
+Check the observed pair:
+
+$$p(100) = \frac{50}{10} = 5 \;\checkmark$$
+
+Carrying the coefficient through unchanged, rather than as $2500^{1/2}$, would give a curve that misses every observed point. The inverse curve is $50q^{-0.5}$, so the statement is True.
+--- EXPL idx=1 len=394 displays=2 ---
+**B.** → True
+
+Revenue expressed through quantity is quantity times inverse demand, so the exponents add rather than being carried over unchanged.
+
+$$p(q)=50q^{-0.5}$$
+
+$$R(q)=qp(q)=q\left(50q^{-0.5}\right)=50q^{0.5}$$
+
+Multiplying by $q$ raises the exponent by one, taking $-0.5$ to $0.5$ and turning a falling curve into a rising one. The revenue law is $50q^{0.5}$, so the statement is True.
+--- EXPL idx=2 len=381 displays=2 ---
+**C.** → True
+
+The percentage effect of a doubling comes from the scale factor of the revenue law, whose exponent is one half.
+
+$$\frac{R(2q)}{R(q)}=2^{0.5}=\sqrt{2}\approx1.414$$
+
+$$(1.414-1)\times100\%\approx41.4\%$$
+
+The exponent is not itself the percentage response, since a finite change is the full power minus one. Revenue rises by about $41.4\%$, so the statement is True.
+--- EXPL idx=3 len=345 displays=2 ---
+**D.** → False
+
+Revenue at a stated quantity has to be built from the price that clears that quantity, which the inverse curve supplies.
+
+$$p(25)=50(25)^{-0.5}=\frac{50}{5}=10$$
+
+$$R(25)=25p(25)=25(10)=250$$
+
+Reusing the observed price of $5$ would price a different point on the curve, not this one. Revenue is $250$, so the statement is False.
+--- EXPL idx=4 len=640 displays=3 ---
+**E.** → False
+
+Price elasticity of demand measures the percentage response of quantity to price, so it is read from $q(p)$ and equals that curve's own exponent.
+
+$$q(p) = 2500p^{-2} \quad \Rightarrow \quad \text{El}_{p}q = -2$$
+
+Contrast with the inverse curve:
+
+$$p(q) = 50q^{-0.5} \quad \Rightarrow \quad \text{El}_{q}p = -0.5 = \frac{1}{-2}$$
+
+Test with a one percent price rise:
+
+$$1.01^{-2} \approx 0.9803 \quad \Rightarrow \quad \text{about } -2\%$$
+
+The two numbers are reciprocals because inverting a power function inverts its exponent, and $-0.5$ belongs to the other direction. The elasticity is $-2$, so the statement is False.
+
+===== TASK 32 (4/5) Average Product of a Square-Root Technology =====
+CONTEXT: A workshop's output follows $Y(L)=A L^{0.5}$ units, where $L>0$ is labour hours. Increasing labour from $25$ to $100$ hours increased output by exactly $60$ units. Management tracks average product $Y/L$ and compares output with a linear wage benchmark $W(L)=0.75L$. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The output law is $Y(L)=12\sqrt{L}$.
+STMT 1 [true]: At $64$ hours, output exceeds the linear wage benchmark by $48$ units.
+STMT 2 [true]: At $225$ hours, average product is $0.8$ unit per labour hour.
+STMT 3 [true]: Producing $180$ units requires $225$ labour hours.
+STMT 4 [true]: Multiplying labour hours by $2.25$ multiplies output by $1.5$ and average product by $\frac{2}{3}$.
+--- EXPL idx=0 len=455 displays=2 ---
+**A.** → True
+
+The recorded $60$ units is a change in output between two labour levels, so the model has to be evaluated at both and differenced.
+
+$$Y(100)-Y(25)=A\sqrt{100}-A\sqrt{25}=60$$
+
+$$A(10-5)=60 \quad \Rightarrow \quad A=12, \qquad Y(L)=12\sqrt{L}$$
+
+Substituting only $L=100$ would convert a difference observation into a level observation and return a coefficient of $6$. The recovered technology is $Y(L)=12\sqrt{L}$, so the statement is True.
+--- EXPL idx=1 len=414 displays=2 ---
+**B.** → True
+
+The comparison is between a square-root output law and a linear benchmark evaluated at the same labour input.
+
+$$Y(64)=12\sqrt{64}=12(8)=96$$
+
+$$W(64)=0.75(64)=48, \qquad Y(64)-W(64)=96-48=48$$
+
+Comparing the coefficients $12$ and $0.75$ alone would ignore that one law grows with $\sqrt{L}$ and the other with $L$. Output exceeds the benchmark by $48$ units at $64$ hours, so the statement is True.
+--- EXPL idx=2 len=481 displays=2 ---
+**C.** → True
+
+Average product is output divided by labour, so its exponent is $0.5-1=-0.5$ and the derived law has to be built before any level is read off.
+
+$$\operatorname{AP}(L)=\frac{Y(L)}{L} =\frac{12L^{0.5}}{L}=12L^{-0.5}$$
+
+$$\operatorname{AP}(225)=\frac{12}{\sqrt{225}} =\frac{12}{15}=0.8$$
+
+Total output at that labour level is $180$, a different quantity that still has to be divided by the hours. Average product is $0.8$ unit per labour hour, so the statement is True.
+--- EXPL idx=3 len=430 displays=2 ---
+**D.** → True
+
+Running the technology backwards means solving the output law for labour, and a square-root law inverts by squaring.
+
+$$12\sqrt L=180 \quad \Rightarrow \quad \sqrt L=15$$
+
+$$L=15^2=225, \qquad Y(225)=12(15)=180$$
+
+Scaling labour in the same proportion as output would ignore that the inverse exponent is $2$ rather than $1$. The inversion and the direct check both give $225$ labour hours, so the statement is True.
+--- EXPL idx=4 len=489 displays=2 ---
+**E.** → True
+
+Output carries exponent $0.5$ while average product carries $-0.5$, so one labour multiplier acts on the two quantities in opposite directions.
+
+$$\frac{Y(2.25L)}{Y(L)}=(2.25)^{0.5}=1.5$$
+
+$$\frac{\operatorname{AP}(2.25L)}{\operatorname{AP}(L)} =(2.25)^{-0.5}=\frac{1}{1.5}=\frac{2}{3}$$
+
+Rising total output does not carry average product with it, because dividing by labour flips the sign of the exponent. Both multipliers in the claim are exact, so the statement is True.
+
+===== TASK 33 (5/5) Two Break-Even Points Around a Fixed Charge =====
+CONTEXT: A contract manufacturer earns $R(q)=60 q^{0.5}$ from an output of $q>0$ units, pays a variable cost of $2q$, and carries a fixed charge of $400$ per period. Profit is $\Pi(q)=60q^{0.5}-2q-400$. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The operation breaks even at two output levels, $100$ and $400$ units.
+STMT 1 [false]: Profit is positive at an output of $25$ units.
+STMT 2 [false]: Profit is positive at an output of $500$ units.
+STMT 3 [false]: Profit rises throughout the range where it is positive.
+STMT 4 [false]: Revenue is proportional to output.
+--- EXPL idx=0 len=683 displays=4 ---
+**A.** → True
+
+Profit mixes $\sqrt{q}$ with $q$ and a constant, so the substitution $s=\sqrt{q}$ turns the break-even condition into a quadratic.
+
+$$60s - 2s^{2} - 400 = 0 \quad \Rightarrow \quad s^{2} - 30s + 200 = 0$$
+
+$$(s-10)(s-20) = 0 \quad \Rightarrow \quad s = 10 \text{ or } s = 20$$
+
+Square back to output:
+
+$$q = 100 \quad \text{or} \quad q = 400$$
+
+Check one of them:
+
+$$\Pi(400) = 60(20) - 800 - 400 = 0 \;\checkmark$$
+
+Two roots rather than one is what a fixed charge produces, since output must be large enough to cover it yet small enough that linear variable cost has not overtaken square-root revenue. Both break-even points are as claimed, so the statement is True.
+--- EXPL idx=1 len=444 displays=2 ---
+**B.** → False
+
+Profit at a stated output is revenue minus variable cost minus the fixed charge, each evaluated at that output.
+
+$$R(25) = 60(5) = 300, \qquad 2(25) = 50, \qquad \text{fixed } 400$$
+
+$$\Pi(25) = 300 - 50 - 400 = -150$$
+
+Small outputs are where the fixed charge weighs most heavily against square-root revenue, which is why profit turns positive only past $100$ units. Profit is negative at $25$ units, so the statement is False.
+--- EXPL idx=2 len=469 displays=3 ---
+**C.** → False
+
+An output of $500$ units lies beyond the upper break-even point, so revenue and cost have to be compared there rather than assumed.
+
+$$R(500) = 60\sqrt{500} \approx 60 \times 22.3607 \approx 1341.6$$
+
+$$2(500) + 400 = 1400$$
+
+$$\Pi(500) \approx 1341.6 - 1400 \approx -58.4$$
+
+The margin is thin enough to need the arithmetic, since $500$ is only a quarter above the output where profit was exactly zero. Profit is about $-58$, so the statement is False.
+--- EXPL idx=3 len=492 displays=3 ---
+**D.** → False
+
+Whether profit rises on the profitable range is a question about shape, and in the variable $s=\sqrt{q}$ profit is $-2(s-10)(s-20)$, an inverted parabola.
+
+$$\Pi(144) = 60(12) - 288 - 400 = 32$$
+
+$$\Pi(225) = 60(15) - 450 - 400 = 50$$
+
+$$\Pi(324) = 60(18) - 648 - 400 = 32$$
+
+Positive throughout an interval is weaker than rising throughout it, and the peak at $s=15$, that is $q=225$, sits inside the interval. Profit climbs to $50$ and falls back, so the statement is False.
+--- EXPL idx=4 len=542 displays=2 ---
+**E.** → False
+
+Proportionality would require revenue's exponent to be $1$, whereas that exponent is $0.5$ and only the variable cost is genuinely proportional.
+
+$$\frac{R(2q)}{R(q)} = 2^{0.5} \approx 1.414, \qquad \frac{2(2q)}{2q} = 2$$
+
+Check with levels:
+
+$$R(100) = 600, \qquad R(200) \approx 848.5, \qquad R(400) = 1200$$
+
+That mismatch is what creates the upper break-even point, since proportional revenue would settle the comparison once and for all by coefficients. Quadrupling output only doubles revenue, so the statement is False.
+
+===== TASK 34 (5/5) A Benefit and a Cost With Different Exponents =====
+CONTEXT: A city values a flood-defence programme of scale $x>0$ by the benefit $B(x)=40 x^{0.5}$ and the cost $C(x)=0.5 x^{1.5}$, both in millions. The net benefit is $B(x)-C(x)$. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: Benefit and cost are equal at scale $x=80$.
+STMT 1 [true]: Beyond that scale the cost exceeds the benefit.
+STMT 2 [false]: The net benefit is largest at scale $x=80$.
+STMT 3 [false]: Doubling the scale doubles both the benefit and the cost.
+STMT 4 [false]: At scale $x=16$ the cost already exceeds the benefit.
+--- EXPL idx=0 len=558 displays=3 ---
+**A.** → True
+
+Benefit and cost are equal where the two curves meet, and since both carry a factor $x^{0.5}$ on a strictly positive domain, that shared power can be cancelled.
+
+$$40x^{0.5} = 0.5x^{1.5} \quad \Rightarrow \quad 40 = 0.5x^{1}$$
+
+$$x = 80$$
+
+Confirm the shared value:
+
+$$B(80) = 40\sqrt{80} \approx 357.8, \qquad C(80) = 0.5(80)^{1.5} \approx 357.8$$
+
+The exponents differ by exactly $1$, which is why what remains is linear in $x$ rather than another power equation. Both sides are about $357.8$ million at scale $80$, so the statement is True.
+--- EXPL idx=1 len=568 displays=3 ---
+**B.** → True
+
+The ordering of two power functions across a whole range is carried by their ratio, which here is itself a power function.
+
+$$\frac{C(x)}{B(x)} = \frac{0.5x^{1.5}}{40x^{0.5}} = \frac{x}{80}$$
+
+Read off the comparison:
+
+$$\frac{x}{80} > 1 \quad \Longleftrightarrow \quad x > 80$$
+
+Test a larger programme:
+
+$$B(100) = 400, \qquad C(100) = 0.5(1000) = 500$$
+
+A single test value could not settle a whole range, while a strictly increasing ratio passes through $1$ once and never returns. Cost exceeds benefit beyond the crossing, so the statement is True.
+--- EXPL idx=2 len=533 displays=4 ---
+**C.** → False
+
+The largest net benefit is a question about the difference $B-C$ rather than about where the two curves meet, so that difference has to be sampled across scales.
+
+$$N(16) = 160 - 32 = 128$$
+
+$$N(27) = 40(5.196) - 0.5(140.3) \approx 207.8 - 70.1 \approx 137.7$$
+
+$$N(40) \approx 252.98 - 126.49 \approx 126.5$$
+
+Compare with the crossing:
+
+$$N(80) = 0$$
+
+Break-even is where the surplus has been fully eroded, not where it is largest. The net benefit peaks near $x=27$ and is zero at $x=80$, so the statement is False.
+--- EXPL idx=3 len=575 displays=2 ---
+**D.** → False
+
+Doubling acts on each curve through its own exponent, so the two scale factors are $2^{0.5}$ and $2^{1.5}$ rather than a common factor of $2$.
+
+$$\frac{B(2x)}{B(x)} = 2^{0.5} \approx 1.4142, \qquad \frac{C(2x)}{C(x)} = 2^{1.5} \approx 2.8284$$
+
+Check between two scales:
+
+$$B(40) \approx 253.0, \quad B(80) \approx 357.8; \qquad C(40) \approx 126.5, \quad C(80) \approx 357.8$$
+
+Cost grows twice as fast as benefit in proportional terms, which is what guarantees the surplus is exhausted at some finite scale. Neither curve doubles, so the statement is False.
+--- EXPL idx=4 len=499 displays=3 ---
+**E.** → False
+
+At small scales a square root rises steeply from zero while $x^{1.5}$ starts almost flat, so the two curves have to be evaluated rather than ordered by habit.
+
+$$B(16) = 40\sqrt{16} = 40(4) = 160$$
+
+$$C(16) = 0.5(16)^{1.5} = 0.5(64) = 32$$
+
+Compare through the ratio:
+
+$$\frac{C(16)}{B(16)} = \frac{32}{160} = 0.2 = \frac{16}{80}$$
+
+The ordering that holds beyond the crossing does not extend backwards through it. Benefit is five times cost at that scale, so the statement is False.
+
+===== TASK 35 (5/5) Furnace Throughput Calibrated From Two Runs =====
+CONTEXT: A furnace's throughput follows $T(g)=A g^{r}$ tonnes per hour, where $g>0$ is the gas feed in cubic metres per hour. Two logged runs are available: a feed of $8$ gave $20$ tonnes per hour, and a feed of $27$ gave $45$. The site licence caps throughput at $80$ tonnes per hour. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The exponent of the throughput law is $2/3$.
+STMT 1 [true]: The coefficient of the throughput law is $5$.
+STMT 2 [true]: The licensed ceiling of $80$ tonnes per hour is reached at a gas feed of $64$.
+STMT 3 [false]: Doubling the gas feed doubles throughput.
+STMT 4 [false]: Throughput per cubic metre of gas rises as the feed rises.
+--- EXPL idx=0 len=677 displays=3 ---
+**A.** → True
+
+Two logged runs fix the exponent through their ratio, which cancels the coefficient and leaves a pure power equation.
+
+$$\left(\frac{27}{8}\right)^{r} = \frac{45}{20} = 2.25$$
+
+Write both sides as powers of $3/2$:
+
+$$\left(\left(\tfrac{3}{2}\right)^{3}\right)^{r} = \left(\tfrac{3}{2}\right)^{2} \quad \Rightarrow \quad 3r = 2 \quad \Rightarrow \quad r = \frac{2}{3}$$
+
+Check with logarithms:
+
+$$r = \frac{\ln 2.25}{\ln 3.375} = \frac{0.8109}{1.2164} \approx 0.6667$$
+
+Matching exponents is exact where the logarithmic route only approximates, and both feed sizes cooperate because $27/8$ is a perfect cube ratio. The exponent is $2/3$, so the statement is True.
+--- EXPL idx=1 len=499 displays=3 ---
+**B.** → True
+
+With the exponent known, the coefficient is a logged throughput divided by its shape factor, and each cube resolves exactly.
+
+$$8^{2/3} = \left(8^{1/3}\right)^{2} = 2^{2} = 4, \qquad 4A = 20 \;\Rightarrow\; A = 5$$
+
+Confirm with the second run:
+
+$$27^{2/3} = 3^{2} = 9, \qquad \frac{45}{9} = 5$$
+
+$$T(g) = 5g^{2/3}$$
+
+Two runs returning the same coefficient is a check on the exponent as well, since a wrong exponent would split them. The coefficient is $5$, so the statement is True.
+--- EXPL idx=2 len=505 displays=3 ---
+**C.** → True
+
+A licensed ceiling on throughput is inverted into a gas feed by raising both sides to the reciprocal exponent $3/2$.
+
+$$5g^{2/3} = 80 \quad \Rightarrow \quad g^{2/3} = 16$$
+
+$$g = 16^{3/2} = \left(16^{1/2}\right)^{3} = 4^{3} = 64$$
+
+Confirm by substitution:
+
+$$T(64) = 5 \times 64^{2/3} = 5(16) = 80$$
+
+Estimating the feed by proportion would badly understate it, since throughput rises fourfold while the feed rises eightfold. The ceiling binds at a feed of $64$, so the statement is True.
+--- EXPL idx=3 len=607 displays=3 ---
+**D.** → False
+
+Doubling the feed acts through the exponent $2/3$, so the throughput multiplier is a power of two rather than two itself.
+
+$$\frac{T(2g)}{T(g)} = 2^{2/3} \approx 1.5874$$
+
+Find the feed multiple that really doubles throughput:
+
+$$k^{2/3} = 2 \quad \Rightarrow \quad k = 2^{3/2} \approx 2.83$$
+
+Check with logged values:
+
+$$T(8) = 20, \qquad T(16) = 5 \times 16^{2/3} \approx 5 \times 6.35 \approx 31.7$$
+
+An exponent below one always means the input grows faster than the output, here by nearly three times the gas for a doubling. Throughput rises by about $59\%$, so the statement is False.
+--- EXPL idx=4 len=535 displays=2 ---
+**E.** → False
+
+Throughput per cubic metre is the calibrated law divided by the feed, which lowers the exponent to $2/3-1=-1/3$.
+
+$$\frac{T(g)}{g} = \frac{5g^{2/3}}{g} = 5g^{-1/3}$$
+
+Evaluate at the three feeds in play:
+
+$$\frac{20}{8} = 2.5, \qquad \frac{45}{27} \approx 1.67, \qquad \frac{80}{64} = 1.25$$
+
+Total throughput and gas efficiency move in opposite directions once the exponent falls below one, so the licensed maximum is the least efficient operating point. Efficiency halves across that range, so the statement is False.
+
+===== TASK 36 (1/5) Rainwater Basin Storage Under a Square Law =====
+CONTEXT: A tapered rainwater basin stores $V(d)=A d^{2}$ cubic metres when filled to a depth of $d>0$ metres. A survey at a depth of $4$ metres measured $48$ cubic metres in store. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The coefficient of the storage law is $3$.
+STMT 1 [true]: At a depth of $10$ metres the basin holds $300$ cubic metres.
+STMT 2 [true]: The volume added from depth $7$ to $9$ metres is exactly $\frac{4}{3}$ times the volume added from $5$ to $7$ metres.
+STMT 3 [true]: A stored volume of $675$ cubic metres corresponds to a depth of $15$ metres.
+STMT 4 [true]: Stored volume per metre of depth rises as the basin fills.
+--- EXPL idx=0 len=476 displays=3 ---
+**A.** → True
+
+The tapered geometry fixes the exponent at $2$, so a single survey reading is enough to determine the coefficient.
+
+$$4^{2} = 16, \qquad 16A = 48 \quad \Rightarrow \quad A = 3$$
+
+$$V(d) = 3d^{2}$$
+
+Check the survey:
+
+$$V(4) = 3(16) = 48 \;\checkmark$$
+
+Vertical walls would store volume proportional to depth, while sloping walls widen the surface as the water rises and load that geometry into the coefficient. The coefficient is $3$, so the statement is True.
+--- EXPL idx=1 len=498 displays=2 ---
+**B.** → True
+
+Extrapolating the calibrated law to a deeper fill squares the depth, either directly or through the ratio against the survey.
+
+$$V(10) = 3(10)^{2} = 3(100) = 300$$
+
+Confirm with the scale factor from the survey:
+
+$$\left(\frac{10}{4}\right)^{2} = 6.25, \qquad 48 \times 6.25 = 300$$
+
+Depth rises by a factor of $2.5$ while stored volume rises by $6.25$, since it is the ratio that gets squared rather than the difference. The basin holds $300$ cubic metres, so the statement is True.
+--- EXPL idx=2 len=443 displays=2 ---
+**C.** → True
+
+Equal depth intervals need not add equal volumes under a squared law, so each increment has to be computed from the calibrated model.
+
+$$V(9)-V(7)=3(9^2-7^2)=3(32)=96$$
+
+$$\frac{V(9)-V(7)}{V(7)-V(5)}=\frac{96}{3(49-25)}=\frac{96}{72}=\frac{4}{3}$$
+
+The exponent governs the ratio of increments rather than a constant addition per metre. The later two-metre rise adds exactly four thirds as much volume, so the statement is True.
+--- EXPL idx=3 len=487 displays=2 ---
+**D.** → True
+
+Inverting a squared law means taking a square root, so a target volume converts into a depth once the coefficient is divided out.
+
+$$3d^{2} = 675 \quad \Rightarrow \quad d^{2} = 225 \quad \Rightarrow \quad d = 15$$
+
+Confirm by substitution:
+
+$$V(15) = 3(225) = 675 \;\checkmark$$
+
+Square roots compress large differences, so a target more than fourteen times the surveyed volume needs a depth only $3.75$ times as great. The depth is $15$ metres, so the statement is True.
+--- EXPL idx=4 len=494 displays=2 ---
+**E.** → True
+
+Stored volume per metre of depth is the storage law divided by $d$, which lowers the exponent from $2$ to $1$.
+
+$$\frac{V(d)}{d} = \frac{3d^{2}}{d} = 3d$$
+
+Evaluate at three depths:
+
+$$\frac{V(4)}{4} = 12, \qquad \frac{V(10)}{10} = 30, \qquad \frac{V(15)}{15} = 45$$
+
+Dividing by the input lowers the exponent without turning the quantity around while it stays positive, which is the arithmetic counterpart of the taper. Volume per metre rises steadily, so the statement is True.

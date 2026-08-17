@@ -1,0 +1,87 @@
+[
+  {
+    "file": "src/data/math-ch1-logic.ts",
+    "style": "double",
+    "chapter": 1,
+    "caseId": "MATH 1.28",
+    "letter": null,
+    "rawChunks": [
+      "A=(-4,4)\\quad\\text{(both ends open)}."
+    ],
+    "min_chars": 1278,
+    "text": "The two rules are already intervals, so every question here is really a question about **endpoints**: which boundary temperature is inside, and which one is just outside.\n\n**Turn each rule into an interval**\n\nThe frost condition $T^2<16$ holds exactly when $-4<T<4$. Both boundaries fail, because $(-4)^2=4^2=16$ and $16$ is not *less* than $16$:\n\n$$A=(-4,4)\\quad\\text{(both ends open)}.$$\n\nThe irrigation condition $T\\ge-1$ allows $-1$ itself, so $B=[-1,\\infty)$ with a closed left end.\n\n**Where both rules hold at once**\n\nA temperature must satisfy $-4<T<4$ *and* $T\\ge-1$. Keep the tighter limit at each end: the lower limit becomes $-1$ (included), the upper limit stays $4$ (excluded).\n\n$$A\\cap B=[-1,4).$$\n\n**Where at least one rule holds**\n\n$A$ covers $(-4,4)$ and $B$ carries on upward from $-1$; the two pieces overlap, so together they reach every temperature above $-4$, giving $A\\cup B=(-4,\\infty)$. Nothing at $-4$ or colder is covered.\n\n**Outside A**\n\nThe **complement** $A^c$ collects every real number that A missed: $A^c=(-\\infty,-4]\\cup[4,\\infty)$. Since $-4$ and $4$ were never in A, they land here.\n\n**Frost-safe but dry**\n\nSubtracting one set from the other gives $A\\setminus B=(-4,-1)$, cold yet safe temperatures, such as $-2$, where irrigation stays off."
+  },
+  {
+    "file": "src/data/math-ch1-logic.ts",
+    "style": "double",
+    "chapter": 1,
+    "caseId": "MATH 1.67",
+    "letter": null,
+    "rawChunks": [
+      "F \\Rightarrow P \\;\\equiv\\; \\neg P \\Rightarrow \\neg F \\qquad \\text{(original and contrapositive)}",
+      "P \\Rightarrow F \\;\\equiv\\; \\neg F \\Rightarrow \\neg P \\qquad \\text{(converse and inverse)}"
+    ],
+    "min_chars": 1043,
+    "text": "With $F$ = “the contractor misses the deadline” and $P$ = “a penalty fee applies”, the clause is the conditional $F \\Rightarrow P$: condition first, promised consequence second.\n\nFrom any conditional you can build three relatives, and they fall into **two equivalence pairs**:\n\n$$F \\Rightarrow P \\;\\equiv\\; \\neg P \\Rightarrow \\neg F \\qquad \\text{(original and contrapositive)}$$\n\n$$P \\Rightarrow F \\;\\equiv\\; \\neg F \\Rightarrow \\neg P \\qquad \\text{(converse and inverse)}$$\n\nThe second pairing is easy to verify: swap and negate the two halves of the converse $P \\Rightarrow F$ and the inverse falls out. So converse and inverse always share a truth value, but that shared value has nothing to do with the truth of the clause itself.\n\n**Why the second pair can fail here.** Contracts punish other breaches too. A contractor who finishes on time but delivers faulty work can still be fined: $F$ false, $P$ true. That one situation makes the converse and the inverse false together, while the clause the parties actually signed stands untouched."
+  },
+  {
+    "file": "src/data/math-ch1-logic.ts",
+    "style": "single",
+    "chapter": 1,
+    "caseId": "MATH 1.46",
+    "letter": null,
+    "rawChunks": [
+      "\\text{enrolled in Advanced}\\ \\Rightarrow\\ \\text{passed Intermediate}\\ \\Rightarrow\\ \\text{passed Principles}."
+    ],
+    "min_chars": 976,
+    "text": "The phrase \"only if\" is the one to get right. \"You may enrol in X only if you have passed Y\" does **not** promise that passing Y gets you into X; it says X cannot happen without Y. In symbols that is $X\\Rightarrow Y$, and Y is called a **necessary** condition for X.\n\nThe two rules therefore form a chain:\n\n$$\\text{enrolled in Advanced}\\ \\Rightarrow\\ \\text{passed Intermediate}\\ \\Rightarrow\\ \\text{passed Principles}.$$\n\nMaria is enrolled in Advanced, so following the arrows from left to right settles both questions about her record: she passed Intermediate, and before that she passed Principles.\n\nThe arrows do not run backwards. A **sufficient** condition would be an arrow of the form \"passed Principles $\\Rightarrow$ enrolled in Advanced\", and nothing in the rules supplies it, a student may pass Principles and stop there.\n\nOne last caution: the rules speak only of passing and enrolling. They record no marks, so nothing whatsoever follows about *how well* Maria did."
+  },
+  {
+    "file": "src/data/math-ch1-logic.ts",
+    "style": "single",
+    "chapter": 1,
+    "caseId": "MATH 1.84",
+    "letter": null,
+    "rawChunks": [
+      "\\text{warranty survives commercial use}\\iff W \\text{ and } S."
+    ],
+    "min_chars": 1123,
+    "text": "Read the clause as a short decision path. Let $C$ = the product is used commercially, $W$ = the manufacturer approved commercial use in writing, $S$ = the product is serviced every year.\n\nIf $C$ is false the clause never fires, it has nothing to say about that owner. If $C$ is true the warranty is void **unless** the rescue clause applies, and the rescue clause needs $W$ and $S$ together:\n\n$$\\text{warranty survives commercial use}\\iff W \\text{ and } S.$$\n\nThe word \"and\" is unforgiving: one missing half sinks the whole rescue.\n\n**Company Z on this path**\n\nZ uses the product commercially, so the path enters the voiding clause. Z has written approval but has never serviced the product, so \"$W$ and $S$\" is false and the rescue does not apply. **Z's warranty is void.**\n\n**All four commercially used cases**\n\n| Written approval | Serviced annually | Warranty |\n| --- | --- | --- |\n| yes | yes | valid |\n| yes | no | void, this is Company Z |\n| no | yes | void |\n| no | no | void |\n\nOnly the first row survives, which is another way of saying that approval alone and servicing alone are each worth nothing on their own."
+  },
+  {
+    "file": "src/data/math-ch1-logic.ts",
+    "style": "single",
+    "chapter": 1,
+    "caseId": "MATH 1.88",
+    "letter": null,
+    "rawChunks": [
+      "\\text{no curve: } B \\iff s \\ge 70, \\qquad\\qquad \\text{curve applied: } B \\iff s \\ge 60."
+    ],
+    "min_chars": 1135,
+    "text": "Everything turns on which cut-off is switched on. Writing $s$ for the score:\n\n$$\\text{no curve: } B \\iff s \\ge 70, \\qquad\\qquad \\text{curve applied: } B \\iff s \\ge 60.$$\n\n\"If and only if\" runs in both directions, clearing the active cut-off earns the grade, missing it denies the grade.\n\n**This exam.** The curve was applied, so the live cut-off is 60. Student W scored 65 and $65 \\ge 60$, so **W earns a B or higher**. Had the curve not been applied, the cut-off would sit at 70 and W's 65 would fall short.\n\n**Three bands of scores**\n\n• $s \\ge 70$: a B either way.\n\n• $60 \\le s < 70$: a B **only** when the curve is applied. Both 62 and W's 65 live here.\n\n• $s < 60$: no B in either regime.\n\nSince the curve moves the bar from 70 down to 60, everybody who already had a B keeps it and the middle band gains one, which is precisely what \"lowers the threshold and never raises it\" means.\n\n**A word on the \"if and only if\".** It is written for the baseline regime, and the \"unless\" clause overrides it whenever a curve is used. So \"at least 70\" is necessary and sufficient only in the no-curve case, as W, with 65 and a B, demonstrates."
+  },
+  {
+    "file": "src/data/math-ch1-logic.ts",
+    "style": "single",
+    "chapter": 1,
+    "caseId": "MATH 1.90",
+    "letter": null,
+    "rawChunks": [
+      "\\text{partial refund} \\iff u < 10\\%."
+    ],
+    "min_chars": 1241,
+    "text": "The policy splits into two branches, and which branch you land in depends only on the timing. Let $d$ be the number of days between cancelling and the renewal date, and $u$ the share of the service used.\n\n**Branch 1, cancelled early, $d \\ge 3$.** No renewal and no charge. Usage is never mentioned in this branch, so it plays no part whatsoever.\n\n**Branch 2, cancelled late, $d < 3$.** The subscription renews and the subscriber is charged. Afterwards:\n\n$$\\text{partial refund} \\iff u < 10\\%.$$\n\nBecause this is an \"if and only if\", low usage both triggers the refund and is required for it.\n\n**Subscriber K.** $d = 2$, which is under 3, so K is in branch 2: **the subscription renews and K is charged**. Then the refund test: $u = 15\\%$, and $15\\% < 10\\%$ is false, so **no refund**.\n\n**Two what-ifs.** Change only the usage to 5%: K stays in branch 2, the test now passes, and the refund is issued. Change only the timing to 4 days: $4 \\ge 3$ moves K into branch 1, where the subscription never renews, no charge is made, and the refund clause is never reached, so the 15% figure becomes irrelevant.\n\nNotice where the usage condition lives: inside branch 2 only. Subscribers who cancel three or more days ahead are settled by timing alone."
+  },
+  {
+    "file": "src/data/math-cases-ch13-binomial.json",
+    "style": "double",
+    "chapter": 13,
+    "caseId": "MATH 13.32",
+    "letter": "D",
+    "rawChunks": [
+      "P(\\text{at least one test has } \\ge 1\\ \\mathrm{FP}) = 1 - P(A=0)P(B=0)"
+    ],
+    "min_chars": 265,
+    "text": "**D.** → False\n\nThe complementary event is that both tests have zero false positives:\n\n$$P(\\text{at least one test has } \\ge 1\\ \\mathrm{FP}) = 1 - P(A=0)P(B=0)$$\n\n$$= 1 - (0.996)^{500}(0.988)^{500} \\approx 0.9997$$\n\nSince $0.9997 \\ge 0.999$, the statement is False."
+  }
+]

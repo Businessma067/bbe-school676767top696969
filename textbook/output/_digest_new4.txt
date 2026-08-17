@@ -1,0 +1,94 @@
+
+########## TASK 106  (11.6) ##########
+CONTEXT: A logistics company needs to acquire a fleet of delivery vehicles and is choosing between two payment schedules. Option A: pay \$500,000 in cash today. Option B: pay \$100,000 per year for 7 years, with the first payment due immediately and each subsequent payment due at the beginning of the following years. The company wants to know which option is cheaper in present-value terms, first at a 10% annual interest rate and then at a 14% annual interest rate.
+OVERVIEW:
+A logistics company needs to acquire a fleet of delivery vehicles and is choosing between two payment schedules. Option A: pay \$500,000 in cash today. Option B: pay \$100,000 per year for 7 years, with the first payment due immediately and each subsequent payment due at the beginning of the following years. The company wants to know which option is cheaper in present-value terms, first at a 10% annual interest rate and then at a 14% annual interest rate.
+
+**Part 1: Setup.**
+
+Option A: \$500,000 paid today
+
+Option B: a = \$100,000/year, n = 7 payments, first one immediate
+
+Interest rates considered: 10% and 14% per year
+
+**Part 2: Formula.**
+
+Annuity-due present value: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$
+
+**Part 3: Solve.**
+
+**1.** At $r = 0.10$: $PV_{\mathrm{B}} = 100,000 + (100,000/0.10)[1-(1.10)^{-6}] = 100,000 + 1,000,000\times0.435526 \approx \$535,526.07$.
+
+**2.** Comparing: $\$535,526.07$ (Option B) $> \$500,000.00$ (Option A), so at $10\%$ cash is cheaper.
+
+**3.** At $r = 0.14$: $PV_{\mathrm{B}} = 100,000 + (100,000/0.14)[1-(1.14)^{-6}] = 100,000 + 714,285.71\times0.544813 \approx \$488,866.75$ (not $\$495,000.00$).
+
+**4.** Comparing: $\$488,866.75$ (Option B) $< \$500,000.00$ (Option A), so at $14\%$ the instalment plan becomes cheaper.
+
+
+########## TASK 111  (11.6) ##########
+CONTEXT: A construction firm wants to buy a building site and is choosing among three payment schedules. Schedule I: pay \$500,000 in cash immediately. Schedule II: pay \$95,000 per year for 7 years, with the first instalment paid immediately. Schedule III: pay \$150,000 in cash immediately, plus \$60,000 per year for 10 years, with the first of these instalments paid one year later. The firm wants to know which schedule is cheapest in present-value terms first at a 9% annual interest rate, and then at a 13% annual interest rate.
+OVERVIEW:
+A construction firm wants to buy a building site and is choosing among three payment schedules. Schedule I: pay \$500,000 in cash immediately. Schedule II: pay \$95,000 per year for 7 years, with the first instalment paid immediately. Schedule III: pay \$150,000 in cash immediately, plus \$60,000 per year for 10 years, with the first of these instalments paid one year later. The firm wants to know which schedule is cheapest in present-value terms first at a 9% annual interest rate, and then at a 13% annual interest rate.
+
+**Part 1: Setup.**
+
+I: $\$500,000$ cash; II: $a = \$95,000$, $n = 7$, due; III: $\$150,000$ + $a = \$60,000$, $n = 10$ ordinary
+
+Rates: $9\%$ and $13\%$
+
+**Part 2: Formula.**
+
+Due: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$; ordinary: $PV = (a/r)[1-(1+r)^{-n}]$
+
+**Part 3: Solve.**
+
+**1.** At $9\%$: $PV_{\mathrm{II}} \approx \$521,162$; $PV_{\mathrm{III}} \approx \$535,059$; Schedule I ($\$500,000$) is cheapest.
+
+**2.** At $13\%$: $PV_{\mathrm{II}} \approx \$474,767$; $PV_{\mathrm{III}} \approx \$475,575$; Schedule II is cheapest (III is close, not cheapest).
+
+
+########## TASK 112  (11.6) ##########
+CONTEXT: A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules. Schedule I: pay \$850,000 in cash immediately. Schedule II: pay \$140,000 per year for 9 years, with the first instalment paid immediately. Schedule III: pay \$300,000 in cash immediately, plus \$80,000 per year for 11 years, with the first of these instalments paid one year later. The hospital wants to know which schedule is cheapest in present-value terms first at an 8% annual interest rate, and then at a 12% annual interest rate.
+OVERVIEW:
+A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules. Schedule I: pay \$850,000 in cash immediately. Schedule II: pay \$140,000 per year for 9 years, with the first instalment paid immediately. Schedule III: pay \$300,000 in cash immediately, plus \$80,000 per year for 11 years, with the first of these instalments paid one year later. The hospital wants to know which schedule is cheapest in present-value terms first at an 8% annual interest rate, and then at a 12% annual interest rate.
+
+**Part 1: Setup.**
+
+I: $\$850,000$ cash; II: $a = \$140,000$, $n = 9$, due; III: $\$300,000$ + $a = \$80,000$, $n = 11$ ordinary
+
+Rates: $8\%$ and $12\%$
+
+**Part 2: Formula.**
+
+Due: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$; ordinary: $PV = (a/r)[1-(1+r)^{-n}]$
+
+**Part 3: Solve.**
+
+**1.** At $8\%$: $PV_{\mathrm{II}} \approx \$944,529$; $PV_{\mathrm{III}} \approx \$871,117$; Schedule I ($\$850,000$) is cheapest.
+
+**2.** At $12\%$: $PV_{\mathrm{III}} \approx \$775,016$; $PV_{\mathrm{II}} \approx \$835,470$; Schedule III becomes cheapest (not II).
+
+
+########## TASK 113  (11.6) ##########
+CONTEXT: A shipping company is negotiating the purchase of a cargo vessel and is choosing among three payment schedules. Schedule I: pay \$2,400,000 in cash immediately. Schedule II: pay \$340,000 per year for 10 years, with the first instalment paid immediately. Schedule III: pay \$600,000 in cash immediately, plus \$250,000 per year for 9 years, with the first of these instalments paid one year later. The company wants to know how the ranking of Schedule I versus Schedule II changes between a 7.5% annual interest rate and a 11.5% annual interest rate.
+OVERVIEW:
+A shipping company is negotiating the purchase of a cargo vessel and is choosing among three payment schedules. Schedule I: pay \$2,400,000 in cash immediately. Schedule II: pay \$340,000 per year for 10 years, with the first instalment paid immediately. Schedule III: pay \$600,000 in cash immediately, plus \$250,000 per year for 9 years, with the first of these instalments paid one year later. The company wants to know how the ranking of Schedule I versus Schedule II changes between a 7.5% annual interest rate and a 11.5% annual interest rate.
+
+**Part 1: Setup.**
+
+I: $\$2,400,000$ cash; II: $a = \$340,000$, $n = 10$, due; III: $\$600,000$ + $a = \$250,000$, $n = 9$ ordinary
+
+Rates: $7.5\%$ and $11.5\%$
+
+**Part 2: Formula.**
+
+Due: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$; ordinary: $PV = (a/r)[1-(1+r)^{-n}]$
+
+**Part 3: Solve.**
+
+**1.** At $7.5\%$: $PV_{\mathrm{II}} \approx \$2,508,822$; $PV_{\mathrm{III}} \approx \$2,194,722$; cash (I) beats II.
+
+**2.** At $11.5\%$: $PV_{\mathrm{II}} \approx \$2,186,562$; $PV_{\mathrm{III}} \approx \$1,957,766$; II now beats cash — the I vs II ranking flips (III stays cheapest overall).
+

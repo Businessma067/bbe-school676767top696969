@@ -1,0 +1,37 @@
+{
+  "math-8-1": [
+    "**A.** → True\n\nThe mass at side $2$ is five times the cube of that side:\n\n$$\nM(2)=5\\cdot 2^{3}=5\\cdot 8=40\n$$\n\nThe claimed mass is $40$ grams, so the statement is True.",
+    "**B.** → False\n\nCube the side first, then apply the coefficient:\n\n$$\n3^{3}=27\n$$\n\n$$\nM(3)=5\\cdot 27=135\n$$\n\nThe claimed $125$ is $5^{3}$, cubing the coefficient instead of the side. The two figures disagree, so the statement is False.",
+    "**C.** → True\n\nThe scale factor of a power function depends only on the exponent, because the coefficient cancels:\n\n$$\n\\frac{M(2s)}{M(s)}=\\frac{5(2s)^{3}}{5s^{3}}\n$$\n\n$$\n=2^{3}=8\n$$\n\nDoubling the side multiplies the mass by $8$, so the statement is True.",
+    "**D.** → True\n\nAt side $1$ the cube is $1$, so the coefficient is the mass itself:\n\n$$\nM(1)=5\\cdot 1^{3}=5\n$$\n\nThe mass is $5$ grams, so the statement is True.",
+    "**E.** → False\n\nThe rule at $s=4$ is a single evaluation:\n\n$$\nM(4)=5\\cdot 4^{3}=5\\cdot 64=320\n$$\n\nThe claimed $240$ does not equal $320$, so the statement is False."
+  ],
+  "math-8-2": [
+    "**A.** → True\n\nAn exponent of $\\frac{1}{2}$ is a square root, and the square root of zero is $0$:\n\n$$\nD(0)=6\\cdot 0^{\\frac{1}{2}}=6\\cdot 0=0\n$$\n\nThe load rule returns a real value at $t=0$, so the statement is True.",
+    "**B.** → False\n\nA negative exponent places time in a denominator:\n\n$$\nR(t)=\\frac{50}{t^{2}}\n$$\n\nAt $t=0$ that denominator is zero, and division by zero is undefined. The turbidity rule has no value at the reset, so the statement is False.",
+    "**C.** → False\n\nThe exponent $\\frac{1}{2}$ is an even root, and no real number squares to a negative:\n\n$$\nD(-4)=6\\sqrt{-4}\n$$\n\nThere is no real load at $t=-4$, so the statement is False.",
+    "**D.** → True\n\nSquare the time in the denominator, then divide:\n\n$$\nR(4)=\\frac{50}{4^{2}}=\\frac{50}{16}=3.125\n$$\n\nThe reading is $3.125$ units, so the statement is True.",
+    "**E.** → True\n\nThe square root is taken before the coefficient:\n\n$$\nD(9)=6\\cdot 9^{\\frac{1}{2}}=6\\cdot 3=18\n$$\n\nThe load is $18$ kilograms, so the statement is True."
+  ],
+  "math-8-3": [
+    "**A.** → True\n\nA negative exponent puts distance in a denominator, $S(x)=\\frac{80}{x^{3}}$. As $x\\to\\infty$ that denominator grows without bound while the numerator stays $80$, so the quotient tends to $0$.\n\nSignal strength tends to $0$, so the statement is True.",
+    "**B.** → True\n\nNear the mast a small positive $x$ makes the denominator $x^{3}$ arbitrarily small, so $\\frac{80}{x^{3}}$ becomes arbitrarily large.\n\nStrength grows without bound as $x\\to 0^{+}$, so the statement is True.",
+    "**C.** → False\n\nThe $2$ in $T(x)=2x^{\\frac{1}{2}}$ multiplies the power; it does not cap the output. After four minutes:\n\n$$\nT(4)=2\\cdot 4^{\\frac{1}{2}}=2\\cdot 2=4\n$$\n\nAlready $4>2$, and a positive exponent keeps climbing. There is no finite ceiling, so the statement is False.",
+    "**D.** → True\n\nCube the distance in the denominator, then divide:\n\n$$\nS(2)=\\frac{80}{2^{3}}=\\frac{80}{8}=10\n$$\n\nThe strength is $10$ millivolts, so the statement is True.",
+    "**E.** → True\n\nA positive exponent keeps $T(x)=2x^{\\frac{1}{2}}$ in the numerator. The square root of a shrinking positive input shrinks as well, so $T(x)\\to 0$ as $x\\to 0^{+}$.\n\nThe count approaches $0$, so the statement is True."
+  ],
+  "math-8-4": [
+    "**A.** → True\n\nAn exponent of $-1$ writes order size in the denominator:\n\n$$\nU(q)=\\frac{600}{q}\n$$\n\nA larger positive $q$ makes a strictly smaller quotient. Overhead spread is strictly decreasing for $q>0$, so the statement is True.",
+    "**B.** → False\n\nThe numerator $600$ and the order size $q$ are both positive for every $q>0$, so $U(q)=\\frac{600}{q}$ stays positive. Falling towards zero is not the same as becoming negative.\n\nThe spread is never negative, so the statement is False.",
+    "**C.** → True\n\nThe exponent $\\frac{2}{3}$ is positive, so a larger order size raises a larger power, and the coefficient $3$ preserves that order.\n\nFinishing hours are strictly increasing for $q>0$, so the statement is True.",
+    "**D.** → False\n\nDivide the fixed overhead by eight units:\n\n$$\nU(8)=\\frac{600}{8}=75\n$$\n\nThe claimed $80$ is not this value, so the statement is False.",
+    "**E.** → True\n\nTake the cube root of $8$, then square:\n\n$$\n8^{\\frac{2}{3}}=\\left(8^{\\frac{1}{3}}\\right)^{2}=2^{2}=4\n$$\n\n$$\nV(8)=3\\cdot 4=12\n$$\n\nThe finishing labour is $12$ hours, so the statement is True."
+  ],
+  "math-8-5": [
+    "**A.** → True\n\nThe audited shift is one equation for the unknown coefficient. Staffing $25$ has square root $5$:\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\n5A=40\n$$\n\n$$\nA=8\n$$\n\nThe coefficient is $8$, so the statement is True.",
+    "**B.** → True\n\nDivide the audited output by the square root of the audited staffing to recover the coefficient:\n\n$$\nA=\\frac{40}{25^{\\frac{1}{2}}}=\\frac{40}{5}=8\n$$\n\nThen at $100$ staff:\n\n$$\nQ(100)=8\\cdot 100^{\\frac{1}{2}}=8\\cdot 10=80\n$$\n\nThe output is $80$ crates per hour, so the statement is True.",
+    "**C.** → True\n\nA staffing scale factor is fixed by the exponent alone, because $A$ cancels:\n\n$$\n\\frac{Q(4s)}{Q(s)}=\\frac{A(4s)^{\\frac{1}{2}}}{As^{\\frac{1}{2}}}\n$$\n\n$$\n=4^{\\frac{1}{2}}=2\n$$\n\nQuadrupling the staffing doubles the output, so the statement is True.",
+    "**D.** → False\n\nA doubled coefficient appears once above and once below in the ratio, so it cancels:\n\n$$\n\\frac{(2A)(4s)^{\\frac{1}{2}}}{(2A)s^{\\frac{1}{2}}}\n$$\n\n$$\n=4^{\\frac{1}{2}}=2\n$$\n\nThe ratio stays $2$. Doubling $A$ would double every output, not this scale factor, so the statement is False.",
+    "**E.** → False\n\nStaffing $25$ contributes a square root of $5$, so $A=\\frac{40}{5}=8$. At four staff the square root is $2$:\n\n$$\nQ(4)=8\\cdot 2=16\n$$\n\nThe claimed $20$ is half the audited output, a linear scaling the exponent $\\frac{1}{2}$ does not allow. The output is $16$ crates per hour, so the statement is False."
+  ]
+}

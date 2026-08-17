@@ -1,0 +1,146 @@
+[
+  {
+    "id": "math-11-106",
+    "caseId": "MATH 11.106",
+    "title": "Comparing Cash vs. Instalment Purchase of a Delivery Fleet",
+    "subsection": "11.6",
+    "min_chars": 1288,
+    "text": "A logistics company needs to acquire a fleet of delivery vehicles and is choosing between two payment schedules. Option A: pay \\$500,000 in cash today. Option B: pay \\$100,000 per year for 7 years, with the first payment due immediately and each subsequent payment due at the beginning of the following years. The company wants to know which option is cheaper in present-value terms, first at a 10% annual interest rate and then at a 14% annual interest rate.\r\n\r\n**Part 1: Setup.**\r\n\r\nOption A: \\$500,000 paid today\r\n\r\nOption B: a = \\$100,000/year, n = 7 payments, first one immediate\r\n\r\nInterest rates considered: 10% and 14% per year\r\n\r\n**Part 2: Formula.**\r\n\r\nAnnuity-due present value: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** At $r = 0.10$: $PV_{\\mathrm{B}} = 100,000 + (100,000/0.10)[1-(1.10)^{-6}] = 100,000 + 1,000,000\\times0.435526 \\approx \\$535,526.07$.\r\n\r\n**2.** Comparing: $\\$535,526.07$ (Option B) $> \\$500,000.00$ (Option A), so at $10\\%$ cash is cheaper.\r\n\r\n**3.** At $r = 0.14$: $PV_{\\mathrm{B}} = 100,000 + (100,000/0.14)[1-(1.14)^{-6}] = 100,000 + 714,285.71\\times0.544813 \\approx \\$488,866.75$ (not $\\$495,000.00$).\r\n\r\n**4.** Comparing: $\\$488,866.75$ (Option B) $< \\$500,000.00$ (Option A), so at $14\\%$ the instalment plan becomes cheaper.\r\n"
+  },
+  {
+    "id": "math-11-107",
+    "caseId": "MATH 11.107",
+    "title": "Quarterly Savings Deposits with Annual Compounding",
+    "subsection": "11.6",
+    "min_chars": 1010,
+    "text": "At the end of each quarter, a small business owner deposits \\$250 into a savings account that pays interest once per year, at an annual rate of 8%. Because each quarterly deposit sits in the account for only part of the year before the annual interest is credited, the bank applies simple interest to each deposit for the fraction of the year it remains on deposit before the year-end crediting date.\r\n\r\n**Part 1: Setup.**\r\n\r\n$D = \\$250$ quarterly; $r = 0.08$; interest credited once per year\r\n\r\n**Part 2: Formula.**\r\n\r\nYear-end equivalent: $D(4+1.5r)$; then $F_N = (a/r)[(1+r)^{N}-1]$ with $a$ equal to that equivalent\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Year-end equivalent: $250\\times(4 + 1.5\\times0.08) = 250\\times4.12 = \\$1,030.00$ (not $\\$1,100.00$).\r\n\r\n**2.** FV after $4$ years $\\approx \\$4,641.30$; after $3$ years $\\approx \\$3,343.79$.\r\n\r\n**3.** Ignoring mid-year interest ($a = \\$1,000$) gives $4$-year FV $\\approx \\$4,506.11$ — less than the correct $\\$4,641.30$ by about $\\$135.18$ (not $\\$200.00$).\r\n"
+  },
+  {
+    "id": "math-11-108",
+    "caseId": "MATH 11.108",
+    "title": "Home Mortgage: Outstanding Balance Partway Through the Term",
+    "subsection": "11.6",
+    "min_chars": 1026,
+    "text": "A family takes out a \\$200,000 home mortgage at a nominal annual interest rate of 6%, compounding monthly, to be repaid with equal payments at the end of each month over 20 years. After making exactly 5 years of payments, they want to know how much principal is still outstanding.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K = \\$200,000$; nominal annual rate $6\\%$, compounding monthly\r\n\r\nTerm = $20$ years ($n = 240$ monthly payments); $m = 60$ payments already made\r\n\r\n**Part 2: Formula.**\r\n\r\nMonthly rate $r = 0.06/12$; payment $a = rK/[1-(1+r)^{-n}]$\r\n\r\nOutstanding balance after $m$ payments: $(a/r)[1-(1+r)^{-(n-m)}]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $r = 0.005$; $a = 1,000/[1-(1.005)^{-240}] \\approx \\$1,432.86$.\r\n\r\n**2.** Remaining balance after $60$ payments: $(1,432.86/0.005)[1-(1.005)^{-180}] \\approx \\$169,799.20$.\r\n\r\n**3.** Principal repaid: $\\$30,200.80$ ($\\approx 15.10\\%$ of original — not more than $25\\%$). Interest in first $5$ years $\\approx \\$55,770.92$; full-term interest $\\approx \\$143,886.91$ (not $\\$120,000.00$).\r\n"
+  },
+  {
+    "id": "math-11-109",
+    "caseId": "MATH 11.109",
+    "title": "Fixed Repayment Schedule on a Large Equipment Loan",
+    "subsection": "11.6",
+    "min_chars": 1050,
+    "text": "A manufacturing company borrows \\$120,000 at 14% annual interest and chooses to repay a fixed \\$25,000 at the end of each year, continuing until the loan is retired, with a final smaller payment to clear whatever balance remains.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K = \\$120,000$; $r = 0.14$; fixed annual payment $a = \\$25,000$\r\n\r\n**Part 2: Formula.**\r\n\r\nSmallest integer $n \\ge [\\ln a - \\ln(a-rK)]/\\ln(1+r)$\r\n\r\nAfter $m = n-1$ full payments, compare loan FV $K(1+r)^{m}$ to payments FV $(a/r)[(1+r)^{m}-1]$ and roll the residual forward one year for the final payment\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Threshold $\\approx 8.508$, so $n = 9$ ($8$ full payments plus a smaller $9$th).\r\n\r\n**2.** After $8$ years: loan FV $\\approx \\$342,310.37$; payments FV $\\approx \\$330,819.00$; remaining $\\approx \\$11,491.37$; final payment $\\approx \\$13,100.16$.\r\n\r\n**3.** Total paid $\\approx \\$213,100.16$; true interest $\\approx \\$93,100.16$ (not $\\$105,000$). Treating all nine as full $\\$25,000$ payments overstates the total by about $\\$11,900$ (more than $\\$10,000$).\r\n"
+  },
+  {
+    "id": "math-11-110",
+    "caseId": "MATH 11.110",
+    "title": "Capstone: Equipment Loan Paid as an Annuity Due, Plus a Separate Reserve Fund",
+    "subsection": "11.6",
+    "min_chars": 1207,
+    "text": "A manufacturing company borrows \\$90,000 to buy new equipment, to be repaid in 8 equal annual instalments with the first payment due immediately and the rest due at the beginning of each following year, at an annual interest rate of 12%. Independently, to prepare for future maintenance costs, the company also deposits \\$300 at the end of each quarter into a separate reserve account that pays 9% annual interest, credited once per year.\r\n\r\n**Part 1: Setup.**\r\n\r\nEquipment loan: $K = \\$90,000$, $r = 0.12$, $n = 8$, first payment immediate\r\n\r\nReserve: $D = \\$300$ quarterly, annual rate $0.09$, $N = 3$ years\r\n\r\n**Part 2: Formula.**\r\n\r\nAnnuity-due: $K = a + (a/r)[1-(1+r)^{-(n-1)}]$; interest $= r \\times$ start-of-period balance\r\n\r\nYear-end equivalent $D(4+1.5r)$; $F_N = (a/r)[(1+r)^{N}-1]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $a \\approx \\$16,176.12$; balance after the immediate first payment $\\approx \\$73,823.88$.\r\n\r\n**2.** Second-payment interest $\\approx \\$8,858.87$; third-payment interest $\\approx \\$7,980.79$ (smaller than the second, not larger).\r\n\r\n**3.** Reserve year-end equivalent $\\$1,240.50$; $3$-year FV $\\approx \\$4,066.48$ — far below the loan's first three payments ($\\approx \\$48,528$).\r\n"
+  },
+  {
+    "id": "math-11-111",
+    "caseId": "MATH 11.111",
+    "title": "Capstone: Comparing Three Payment Schedules for a Building Site",
+    "subsection": "11.6",
+    "min_chars": 1102,
+    "text": "A construction firm wants to buy a building site and is choosing among three payment schedules. Schedule I: pay \\$500,000 in cash immediately. Schedule II: pay \\$95,000 per year for 7 years, with the first instalment paid immediately. Schedule III: pay \\$150,000 in cash immediately, plus \\$60,000 per year for 10 years, with the first of these instalments paid one year later. The firm wants to know which schedule is cheapest in present-value terms first at a 9% annual interest rate, and then at a 13% annual interest rate.\r\n\r\n**Part 1: Setup.**\r\n\r\nI: $\\$500,000$ cash; II: $a = \\$95,000$, $n = 7$, due; III: $\\$150,000$ + $a = \\$60,000$, $n = 10$ ordinary\r\n\r\nRates: $9\\%$ and $13\\%$\r\n\r\n**Part 2: Formula.**\r\n\r\nDue: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$; ordinary: $PV = (a/r)[1-(1+r)^{-n}]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** At $9\\%$: $PV_{\\mathrm{II}} \\approx \\$521,162$; $PV_{\\mathrm{III}} \\approx \\$535,059$; Schedule I ($\\$500,000$) is cheapest.\r\n\r\n**2.** At $13\\%$: $PV_{\\mathrm{II}} \\approx \\$474,767$; $PV_{\\mathrm{III}} \\approx \\$475,575$; Schedule II is cheapest (III is close, not cheapest).\r\n"
+  },
+  {
+    "id": "math-11-112",
+    "caseId": "MATH 11.112",
+    "title": "Capstone: Comparing Three Payment Schedules for a Hospital Imaging Center",
+    "subsection": "11.6",
+    "min_chars": 1139,
+    "text": "A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules. Schedule I: pay \\$850,000 in cash immediately. Schedule II: pay \\$140,000 per year for 9 years, with the first instalment paid immediately. Schedule III: pay \\$300,000 in cash immediately, plus \\$80,000 per year for 11 years, with the first of these instalments paid one year later. The hospital wants to know which schedule is cheapest in present-value terms first at an 8% annual interest rate, and then at a 12% annual interest rate.\r\n\r\n**Part 1: Setup.**\r\n\r\nI: $\\$850,000$ cash; II: $a = \\$140,000$, $n = 9$, due; III: $\\$300,000$ + $a = \\$80,000$, $n = 11$ ordinary\r\n\r\nRates: $8\\%$ and $12\\%$\r\n\r\n**Part 2: Formula.**\r\n\r\nDue: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$; ordinary: $PV = (a/r)[1-(1+r)^{-n}]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** At $8\\%$: $PV_{\\mathrm{II}} \\approx \\$944,529$; $PV_{\\mathrm{III}} \\approx \\$871,117$; Schedule I ($\\$850,000$) is cheapest.\r\n\r\n**2.** At $12\\%$: $PV_{\\mathrm{III}} \\approx \\$775,016$; $PV_{\\mathrm{II}} \\approx \\$835,470$; Schedule III becomes cheapest (not II).\r\n"
+  },
+  {
+    "id": "math-11-113",
+    "caseId": "MATH 11.113",
+    "title": "Capstone: Comparing Three Payment Schedules for a Cargo Vessel",
+    "subsection": "11.6",
+    "min_chars": 1149,
+    "text": "A shipping company is negotiating the purchase of a cargo vessel and is choosing among three payment schedules. Schedule I: pay \\$2,400,000 in cash immediately. Schedule II: pay \\$340,000 per year for 10 years, with the first instalment paid immediately. Schedule III: pay \\$600,000 in cash immediately, plus \\$250,000 per year for 9 years, with the first of these instalments paid one year later. The company wants to know how the ranking of Schedule I versus Schedule II changes between a 7.5% annual interest rate and a 11.5% annual interest rate.\r\n\r\n**Part 1: Setup.**\r\n\r\nI: $\\$2,400,000$ cash; II: $a = \\$340,000$, $n = 10$, due; III: $\\$600,000$ + $a = \\$250,000$, $n = 9$ ordinary\r\n\r\nRates: $7.5\\%$ and $11.5\\%$\r\n\r\n**Part 2: Formula.**\r\n\r\nDue: $PV = a + (a/r)[1-(1+r)^{-(n-1)}]$; ordinary: $PV = (a/r)[1-(1+r)^{-n}]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** At $7.5\\%$: $PV_{\\mathrm{II}} \\approx \\$2,508,822$; $PV_{\\mathrm{III}} \\approx \\$2,194,722$; cash (I) beats II.\r\n\r\n**2.** At $11.5\\%$: $PV_{\\mathrm{II}} \\approx \\$2,186,562$; $PV_{\\mathrm{III}} \\approx \\$1,957,766$; II now beats cash — the I vs II ranking flips (III stays cheapest overall).\r\n"
+  },
+  {
+    "id": "math-11-114",
+    "caseId": "MATH 11.114",
+    "title": "A small bakery invests \\\\$8,000 in a new commercial oven",
+    "subsection": "11.7",
+    "min_chars": 959,
+    "text": "A small bakery invests \\$8,000 in a new commercial oven. The oven is expected to generate a single net return of \\$9,600, paid in full at the end of one year.\r\n\r\n**Part 1: Setup.**\r\n\r\n$a_0 = -\\$8,000$ (initial outlay)\r\n\r\n$a_1 = \\$9,600$ (return at end of Year 1)\r\n\r\n$n = 1$ year\r\n\r\n**Part 2: Formula.**\r\n\r\nFor a one-year project with outlay $a$ and return $b$: $-a + b(1+r)^{-1} = 0$\r\n\r\nSolving for $r$: $r = (b/a) - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Step $1$: Identify $a = \\$8,000$ (amount invested) and $b = \\$9,600$ (amount returned).\r\n\r\n**2.** Step $2$: $r = (b/a) - 1 = (9,600/8,000) - 1 = 1.20 - 1 = 0.20 = 20\\%$.\r\n\r\n**3.** Step $3$ (for later statements): NPV at rate $r$ is $A = a_0 + a_1/(1+r)$.\r\n\r\n**4.** At $15\\%$: $A = -8,000 + 9,600/1.15 = -8,000 + 8,347.83 = \\$347.83 > 0$.\r\n\r\n**5.** At $25\\%$: $A = -8,000 + 9,600/1.25 = -8,000 + 7,680 = -\\$320.00 < 0$.\r\n\r\n**6.** If $b = 10,000$: $r = (10,000/8,000) - 1 = 0.25 = 25\\%$, which exceeds $24\\%$."
+  },
+  {
+    "id": "math-11-115",
+    "caseId": "MATH 11.115",
+    "title": "A logistics company spends \\\\$12,000 upgrading a delivery vehicle",
+    "subsection": "11.7",
+    "min_chars": 1101,
+    "text": "A logistics company spends \\$12,000 upgrading a delivery vehicle. The upgrade is expected to generate net returns of \\$7,000 at the end of Year 1 and \\$7,000 at the end of Year 2.\r\n\r\n**Part 1: Setup.**\r\n\r\n$a_0 = -\\$12,000$\r\n\r\n$a_1 = \\$7,000$\r\n\r\n$a_2 = \\$7,000$\r\n\r\n$n = 2$ years\r\n\r\n**Part 2: Formula.**\r\n\r\n$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\r\n\r\nSubstitute $s = (1+r)^{-1}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Step $1$: $-12,000 + 7,000/(1+r) + 7,000/(1+r)^{2} = 0$.\r\n\r\n**2.** Step $2$: Let $s = (1+r)^{-1}$.\r\n\r\n**3.** Then $7,000s^{2} + 7,000s - 12,000 = 0$.\r\n\r\n**4.** Dividing by $1,000$: $7s^{2} + 7s - 12 = 0$.\r\n\r\n**5.** Step $3$: Discriminant: $7^{2} + 4(7)(12) = 49 + 336 = 385$.\r\n\r\n**6.** $\\sqrt{385} \\approx 19.6214$.\r\n\r\n**7.** Step $4$: $s = (-7 + 19.6214)/14 = 12.6214/14 \\approx 0.90153$.\r\n\r\n**8.** Step $5$: $r = 1/s - 1 = 1/0.90153 - 1 \\approx 0.10922 \\approx 10.92\\%$.\r\n\r\n**9.** NPV at $8\\%$: $-12,000 + 7,000/1.08 + 7,000/1.1664 = -12,000 + 6,481.48 + 6,001.37 = \\$482.85 > 0$.\r\n\r\n**10.** NPV at $12\\%$: $-12,000 + 7,000/1.12 + 7,000/1.2544 = -12,000 + 6,250.00 + 5,580.36 = -\\$169.64 < 0$."
+  },
+  {
+    "id": "math-11-116",
+    "caseId": "MATH 11.116",
+    "title": "A boutique invests \\\\$20,000 in inventory and point-of-sale equipment",
+    "subsection": "11.7",
+    "min_chars": 1016,
+    "text": "A boutique invests \\$20,000 in inventory and point-of-sale equipment. It expects net returns of \\$9,000 at the end of Year 1 and \\$15,000 at the end of Year 2.\r\n\r\n**Part 1: Setup.**\r\n\r\n$a_0 = -\\$20,000$\r\n\r\n$a_1 = \\$9,000$\r\n\r\n$a_2 = \\$15,000$\r\n\r\n$n = 2$ years\r\n\r\n**Part 2: Formula.**\r\n\r\n$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\r\n\r\n$s = (1+r)^{-1}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Step $1$: $15,000s^{2} + 9,000s - 20,000 = 0$.\r\n\r\n**2.** Dividing by $1,000$: $15s^{2} + 9s - 20 = 0$.\r\n\r\n**3.** Step $2$: Discriminant: $9^{2} + 4(15)(20) = 81 + 1,200 = 1,281$.\r\n\r\n**4.** $\\sqrt{1,281} \\approx 35.791$.\r\n\r\n**5.** Step $3$: $s = (-9 + 35.791)/30 \\approx 0.89304$.\r\n\r\n**6.** Step $4$: $r = 1/0.89304 - 1 \\approx 0.11978 \\approx 11.98\\%$.\r\n\r\n**7.** NPV at $10\\%$: $-20,000 + 9,000/1.10 + 15,000/1.21 = -20,000 + 8,181.82 + 12,396.69 = \\$578.51 > 0$.\r\n\r\n**8.** NPV at $14\\%$: $-20,000 + 9,000/1.14 + 15,000/1.2996 = -20,000 + 7,894.74 + 11,542.01 = -\\$563.25 < 0$.\r\n\r\n**9.** Cash-flow sum: $-20,000 + 9,000 + 15,000 = \\$4,000$."
+  },
+  {
+    "id": "math-11-117",
+    "caseId": "MATH 11.117",
+    "title": "A retailer is choosing between two one-year uses of surplus cash",
+    "subsection": "11.7",
+    "min_chars": 959,
+    "text": "A retailer is choosing between two one-year uses of surplus cash. Project X: invest \\$15,000 now, receive \\$17,250 in one year. Project Y: invest \\$22,000 now, receive \\$24,750 in one year.\r\n\r\n**Part 1: Setup.**\r\n\r\nProject X: $a = \\$15,000$, $b = \\$17,250$\r\n\r\nProject Y: $a = \\$22,000$, $b = \\$24,750$\r\n\r\n$n = 1$ year for each project\r\n\r\n**Part 2: Formula.**\r\n\r\n$r = (b/a) - 1$ (one-year rate of return, applied to each project)\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Step $1$: $r_X = (17,250/15,000) - 1 = 1.15 - 1 = 0.15 = 15\\%$.\r\n\r\n**2.** Step $2$: $r_Y = (24,750/22,000) - 1 = 1.125 - 1 = 0.125 = 12.5\\%$.\r\n\r\n**3.** IRR ranking: $15\\% > 12.5\\%$, so Project X is preferred.\r\n\r\n**4.** NPV at $11\\%$: $NPV_X = -15,000 + 17,250/1.11 = -15,000 + 15,540.54 = \\$540.54 > 0$; $NPV_Y = -22,000 + 24,750/1.11 = -22,000 + 22,297.30 = \\$297.30 > 0$ as well.\r\n\r\n**5.** If Y's payoff is $\\$25,000$: $r_Y = (25,000/22,000) - 1 \\approx 0.1364 = 13.64\\%$, still below X's $15\\%$."
+  },
+  {
+    "id": "math-11-118",
+    "caseId": "MATH 11.118",
+    "title": "A manufacturing upgrade has an initial outlay of \\\\$45,000",
+    "subsection": "11.7",
+    "min_chars": 914,
+    "text": "A manufacturing upgrade has an initial outlay of \\$45,000. Installation disruption causes a net cash outflow of \\$3,000 at the end of Year 1, followed by net returns of \\$28,000 at the end of Year 2 and \\$35,000 at the end of Year 3.\r\n\r\n**Part 1: Setup.**\r\n\r\n$a_0 = -\\$45,000$\r\n\r\n$a_1 = -\\$3,000$\r\n\r\n$a_2 = \\$28,000$\r\n\r\n$a_3 = \\$35,000$\r\n\r\n$n = 3$ years\r\n\r\n**Part 2: Formula.**\r\n\r\n$A = a_0 + a_1/(1+r) + a_2/(1+r)^{2} + a_3/(1+r)^{3}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Step $1$ ($r = 8\\%$): $A = -45,000 - 3,000/1.08 + 28,000/1.1664 + 35,000/1.259712 = -45,000 - 2,777.78 + 24,005.49 + 27,784.13 = \\$4,011.84$.\r\n\r\n**2.** Step $2$ ($r = 12\\%$): $A = -45,000 - 3,000/1.12 + 28,000/1.2544 + 35,000/1.404928 = -45,000 - 2,678.57 + 22,321.43 + 24,912.31 = -\\$444.83$.\r\n\r\n**3.** Step $3$ ($r = 15\\%$): $A = -45,000 - 3,000/1.15 + 28,000/1.3225 + 35,000/1.520875 = -45,000 - 2,608.70 + 21,172.02 + 23,013.07 = -\\$3,423.60$."
+  },
+  {
+    "id": "math-11-119",
+    "caseId": "MATH 11.119",
+    "title": "A cafe chain invests \\\\$34,000 in a new espresso machine line",
+    "subsection": "11.7",
+    "min_chars": 950,
+    "text": "A cafe chain invests \\$34,000 in a new espresso machine line. Expected net returns are \\$16,000 at the end of Year 1 and \\$24,000 at the end of Year 2.\r\n\r\n**Part 1: Setup.**\r\n\r\n$a_0 = -\\$34,000$\r\n\r\n$a_1 = \\$16,000$\r\n\r\n$a_2 = \\$24,000$\r\n\r\n$n = 2$ years\r\n\r\n**Part 2: Formula.**\r\n\r\n$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\r\n\r\n$s = (1+r)^{-1}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Step $1$: $24,000s^{2} + 16,000s - 34,000 = 0$.\r\n\r\n**2.** Dividing by $2,000$: $12s^{2} + 8s - 17 = 0$.\r\n\r\n**3.** Step $2$: Discriminant: $8^{2} + 4(12)(17) = 64 + 816 = 880$.\r\n\r\n**4.** $\\sqrt{880} \\approx 29.665$.\r\n\r\n**5.** Step $3$: $s = (-8 + 29.665)/24 \\approx 0.90270$.\r\n\r\n**6.** Step $4$: $r = 1/0.90270 - 1 \\approx 0.10778 \\approx 10.78\\%$.\r\n\r\n**7.** NPV at $9\\%$: $-34,000 + 16,000/1.09 + 24,000/1.1881 = -34,000 + 14,678.90 + 20,200.32 = \\$879.22 > 0$.\r\n\r\n**8.** NPV at $13\\%$: $-34,000 + 16,000/1.13 + 24,000/1.2769 = -34,000 + 14,159.29 + 18,795.52 = -\\$1,045.19 < 0$.\r\n"
+  },
+  {
+    "id": "math-11-120",
+    "caseId": "MATH 11.120",
+    "title": "A logistics firm spends \\\\$40,000 automating a warehouse process",
+    "subsection": "11.7",
+    "min_chars": 909,
+    "text": "A logistics firm spends \\$40,000 automating a warehouse process. It expects net returns of \\$22,000 at the end of Year 1 and \\$27,600 at the end of Year 2.\r\n\r\n**Part 1: Setup.**\r\n\r\n$a_0 = -\\$40,000$\r\n\r\n$a_1 = \\$22,000$\r\n\r\n$a_2 = \\$27,600$\r\n\r\n$n = 2$ years\r\n\r\n**Part 2: Formula.**\r\n\r\n$A = a_0 + a_1/(1+r) + a_2/(1+r)^{2}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Step $1$: Test $r = 15\\%$: $A = -40,000 + 22,000/1.15 + 27,600/1.3225 = -40,000 + 19,130.43 + 20,869.57 = \\$0.00$ (to the nearest cent).\r\n\r\n**2.** Step $2$: Since $A = 0$ at $r = 15\\%$, this confirms $r = 15\\%$ is the internal rate of return for this project.\r\n\r\n**3.** NPV at $10\\%$: $-40,000 + 22,000/1.10 + 27,600/1.21 = -40,000 + 20,000.00 + 22,809.92 = \\$2,809.92 > 0$.\r\n\r\n**4.** NPV at $20\\%$: $-40,000 + 22,000/1.20 + 27,600/1.44 = -40,000 + 18,333.33 + 19,166.67 = -\\$2,500.00 < 0$.\r\n\r\n**5.** Cash-flow sum: $-40,000 + 22,000 + 27,600 = \\$9,600$.\r\n"
+  },
+  {
+    "id": "math-11-121",
+    "caseId": "MATH 11.121",
+    "title": "A property developer invests \\\\$65,000 renovating a rental unit",
+    "subsection": "11.7",
+    "min_chars": 991,
+    "text": "A property developer invests \\$65,000 renovating a rental unit. Expected net rental income after expenses is \\$34,000 at the end of Year 1 and \\$42,000 at the end of Year 2.\r\n\r\n**Part 1: Setup.**\r\n\r\n$a_0 = -\\$65,000$\r\n\r\n$a_1 = \\$34,000$\r\n\r\n$a_2 = \\$42,000$\r\n\r\n$n = 2$ years\r\n\r\n**Part 2: Formula.**\r\n\r\n$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\r\n\r\n$s = (1+r)^{-1}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Step $1$: $42,000s^{2} + 34,000s - 65,000 = 0$.\r\n\r\n**2.** Dividing by $1,000$: $42s^{2} + 34s - 65 = 0$.\r\n\r\n**3.** Step $2$: Discriminant: $34^{2} + 4(42)(65) = 1,156 + 10,920 = 12,076$.\r\n\r\n**4.** $\\sqrt{12,076} \\approx 109.891$.\r\n\r\n**5.** Step $3$: $s = (-34 + 109.891)/84 \\approx 0.90346$.\r\n\r\n**6.** Step $4$: $r = 1/0.90346 - 1 \\approx 0.10685 \\approx 10.69\\%$.\r\n\r\n**7.** NPV at $9\\%$: $-65,000 + 34,000/1.09 + 42,000/1.1881 = -65,000 + 31,192.66 + 35,350.56 = \\$1,543.22 > 0$.\r\n\r\n**8.** NPV at $12\\%$: $-65,000 + 34,000/1.12 + 42,000/1.2544 = -65,000 + 30,357.14 + 33,482.14 = -\\$1,160.72 < 0$.\r\n"
+  },
+  {
+    "id": "math-11-122",
+    "caseId": "MATH 11.122",
+    "title": "A subscription software company spends \\\\$50,000 building a product and is compari",
+    "subsection": "11.7",
+    "min_chars": 1096,
+    "text": "A subscription software company spends \\$50,000 building a product and is comparing two versions. Option 1, the full version: a steady net return of \\$6,000 at the end of every year, indefinitely into the future. Option 2, the scaled-back version: the same \\$50,000 outlay, but returns of only \\$6,000 at the end of Year 1 and \\$6,000 at the end of Year 2, with nothing paid afterward.\r\n\r\n**Part 1: Setup.**\r\n\r\n$a_0 = -\\$50,000$ (both options)\r\n\r\nOption 1: $a_i = \\$6,000$ each year forever; Option 2: $a_1 = a_2 = \\$6,000$ ($n = 2$)\r\n\r\n**Part 2: Formula.**\r\n\r\nOption 1: $a_0 + a/r = 0 \\Rightarrow r = a/(-a_0)$\r\n\r\nOption 2: $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$; substitute $s = (1+r)^{-1}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Option $1$: $r = 6,000/50,000 = 12\\%$.\r\n\r\n**2.** Option $2$: $6,000s^{2} + 6,000s - 50,000 = 0$ reduces to $3s^{2} + 3s - 25 = 0$; $\\sqrt{309} \\approx 17.578$; valid root $s \\approx 2.430$ gives $r \\approx -58.84\\%$ (discard $r < -1$).\r\n\r\n**3.** Option $2$ cash-flow sum $= -\\$38,000$ (not $-\\$40,000$); one-year truncation gives $-88\\%$, which is lower than $-58.84\\%$.\r\n"
+  },
+  {
+    "id": "math-11-123",
+    "caseId": "MATH 11.123",
+    "title": "A renewable energy cooperative is comparing two designs for a community solar pr",
+    "subsection": "11.7",
+    "min_chars": 1349,
+    "text": "A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest \\$120,000, with net returns of \\$54,000 at the end of Year 1 and \\$88,000 at the end of Year 2. Design B, a simpler one-year project: invest \\$70,000, with a single net return of \\$81,200 at the end of Year 1.\r\n\r\n**Part 1: Setup.**\r\n\r\nDesign A: $a_0 = -\\$120,000$, $a_1 = \\$54,000$, $a_2 = \\$88,000$\r\n\r\nDesign B: $a = \\$70,000$, $b = \\$81,200$\r\n\r\n$n = 2$ years (Design A) / 1 year (Design B)\r\n\r\n**Part 2: Formula.**\r\n\r\nDesign A ($n = 2$): $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$\r\n\r\nSubstitute $s = (1+r)^{-1}$\r\n\r\nDesign B ($n = 1$): $r = (b/a) - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Step $1$ (Design A): $88,000s^{2} + 54,000s - 120,000 = 0$.\r\n\r\n**2.** Dividing by $2,000$: $44s^{2} + 27s - 60 = 0$.\r\n\r\n**3.** Step $2$: Discriminant: $27^{2} + 4(44)(60) = 729 + 10,560 = 11,289$.\r\n\r\n**4.** $\\sqrt{11,289} \\approx 106.250$.\r\n\r\n**5.** Step $3$: $s = (-27 + 106.250)/88 \\approx 0.90057$, so $r_A = 1/0.90057 - 1 \\approx 0.11041 \\approx 11.04\\%$.\r\n\r\n**6.** Step $4$ (Design B): $r_B = (81,200/70,000) - 1 = 1.16 - 1 = 0.16 = 16\\%$.\r\n\r\n**7.** NPV at $13\\%$: $NPV_A = -120,000 + 54,000/1.13 + 88,000/1.2769 = -120,000 + 47,787.61 + 68,916.91 = -\\$3,295.48 < 0$; $NPV_B = -70,000 + 81,200/1.13 = -70,000 + 71,858.41 = \\$1,858.41 > 0$.\r\n"
+  }
+]

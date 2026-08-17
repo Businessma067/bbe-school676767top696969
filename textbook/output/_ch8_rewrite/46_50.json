@@ -1,0 +1,192 @@
+[
+  {
+    "id": "math-8-46",
+    "case_id": "MATH 8.46",
+    "title": "Rainwater Basin Storage Under a Square Law",
+    "difficulty": "1/5",
+    "sort_order": 46,
+    "context": "A tapered rainwater basin stores $V(d)=A d^{2}$ cubic metres when filled to a depth of $d>0$ metres. A survey at a depth of $4$ metres measured $48$ cubic metres in store. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the storage law is $3$.",
+      "At a depth of $10$ metres the basin holds $300$ cubic metres.",
+      "The volume added from depth $7$ to $9$ metres is exactly $\\frac{4}{3}$ times the volume added from $5$ to $7$ metres.",
+      "A stored volume of $675$ cubic metres corresponds to a depth of $15$ metres.",
+      "Stored volume per metre of depth rises as the basin fills."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe tapered geometry fixes the exponent at $2$, so a single survey reading is enough to determine the coefficient.\n\n$$4^{2} = 16, \\qquad 16A = 48 \\quad \\Rightarrow \\quad A = 3$$\n\n$$V(d) = 3d^{2}$$\n\nCheck the survey:\n\n$$V(4) = 3(16) = 48 \\;\\checkmark$$\n\nVertical walls would store volume proportional to depth, while sloping walls widen the surface as the water rises and load that geometry into the coefficient. The coefficient is $3$, so the statement is True.",
+      "**B.** → True\n\nExtrapolating the calibrated law to a deeper fill squares the depth, either directly or through the ratio against the survey.\n\n$$V(10) = 3(10)^{2} = 3(100) = 300$$\n\nConfirm with the scale factor from the survey:\n\n$$\\left(\\frac{10}{4}\\right)^{2} = 6.25, \\qquad 48 \\times 6.25 = 300$$\n\nDepth rises by a factor of $2.5$ while stored volume rises by $6.25$, since it is the ratio that gets squared rather than the difference. The basin holds $300$ cubic metres, so the statement is True.",
+      "**C.** → True\n\nEqual depth intervals need not add equal volumes under a squared law, so each increment has to be computed from the calibrated model.\n\n$$V(9)-V(7)=3(9^2-7^2)=3(32)=96$$\n\n$$\\frac{V(9)-V(7)}{V(7)-V(5)}=\\frac{96}{3(49-25)}=\\frac{96}{72}=\\frac{4}{3}$$\n\nThe exponent governs the ratio of increments rather than a constant addition per metre. The later two-metre rise adds exactly four thirds as much volume, so the statement is True.",
+      "**D.** → True\n\nInverting a squared law means taking a square root, so a target volume converts into a depth once the coefficient is divided out.\n\n$$3d^{2} = 675 \\quad \\Rightarrow \\quad d^{2} = 225 \\quad \\Rightarrow \\quad d = 15$$\n\nConfirm by substitution:\n\n$$V(15) = 3(225) = 675 \\;\\checkmark$$\n\nSquare roots compress large differences, so a target more than fourteen times the surveyed volume needs a depth only $3.75$ times as great. The depth is $15$ metres, so the statement is True.",
+      "**E.** → True\n\nStored volume per metre of depth is the storage law divided by $d$, which lowers the exponent from $2$ to $1$.\n\n$$\\frac{V(d)}{d} = \\frac{3d^{2}}{d} = 3d$$\n\nEvaluate at three depths:\n\n$$\\frac{V(4)}{4} = 12, \\qquad \\frac{V(10)}{10} = 30, \\qquad \\frac{V(15)}{15} = 45$$\n\nDividing by the input lowers the exponent without turning the quantity around while it stays positive, which is the arithmetic counterpart of the taper. Volume per metre rises steadily, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $d$ = fill depth in metres and $V(d)$ = stored volume. The exponent is given by the tapered geometry, so the single survey reading pins the coefficient.\n\n**1. Translate: the survey.**\n\n$$A(4)^{2} = 48$$\n\n**2. Translate: volume per metre of depth.** Dividing by $d$ lowers the exponent by one:\n\n$$\\frac{V(d)}{d} = A d$$\n\n**Part 2: The model.**\n\n$$V(d) = 3d^{2} \\tag{1}$$\n\n$$\\frac{V(d)}{d} = 3d \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The survey gives the coefficient:\n\n$$A = \\frac{48}{16} = 3$$\n\n**2.** Levels at deeper fills:\n\n$$V(10) = 300, \\qquad V(15) = 675$$\n\n**3.** The scale factor squares the depth multiplier:\n\n$$\\frac{V(2d)}{V(d)} = 4, \\qquad \\left(\\tfrac{10}{4}\\right)^{2} = 6.25$$\n\n**4.** Inversion takes the square root of the volume ratio:\n\n$$d = \\sqrt{\\frac{V}{3}}, \\qquad V = 675 \\;\\Rightarrow\\; d = 15$$\n\n**5.** Equation (2) has exponent $1$, so each extra metre of depth stores more than the last. Volume per metre of depth reads:\n\n$$12,\\; 30,\\; 45$$\n\nThose three figures are cubic metres per metre, taken at depths of $4$, $10$ and $15$ metres. They climb in direct proportion to the depth, which is what an exponent of $1$ means."
+    ],
+    "solution_overview": "Basin storage is $V(d)=Ad^{2}$ cubic metres at depth $d>0$, with a survey giving $V(4)=48$.\n\n**Part 1: Building the model.**\n\nLet $d$ = fill depth in metres and $V(d)$ = stored volume. The exponent is given by the tapered geometry, so the single survey reading pins the coefficient.\n\n**1. Translate: the survey.**\n\n$$A(4)^{2} = 48$$\n\n**2. Translate: volume per metre of depth.** Dividing by $d$ lowers the exponent by one:\n\n$$\\frac{V(d)}{d} = A d$$\n\n**Part 2: The model.**\n\n$$V(d) = 3d^{2} \\tag{1}$$\n\n$$\\frac{V(d)}{d} = 3d \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The survey gives the coefficient:\n\n$$A = \\frac{48}{16} = 3$$\n\n**2.** Levels at deeper fills:\n\n$$V(10) = 300, \\qquad V(15) = 675$$\n\n**3.** The scale factor squares the depth multiplier:\n\n$$\\frac{V(2d)}{V(d)} = 4, \\qquad \\left(\\tfrac{10}{4}\\right)^{2} = 6.25$$\n\n**4.** Inversion takes the square root of the volume ratio:\n\n$$d = \\sqrt{\\frac{V}{3}}, \\qquad V = 675 \\;\\Rightarrow\\; d = 15$$\n\n**5.** Equation (2) has exponent $1$, so each extra metre of depth stores more than the last. Volume per metre of depth reads:\n\n$$12,\\; 30,\\; 45$$\n\nThose three figures are cubic metres per metre, taken at depths of $4$, $10$ and $15$ metres. They climb in direct proportion to the depth, which is what an exponent of $1$ means.\n\n**Answer.** $A = 3$ | $V(d) = 3d^{2}$ | $675$ m³ at a depth of $15$ m",
+    "expl_lens": [
+      476,
+      498,
+      443,
+      487,
+      1920
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-47",
+    "case_id": "MATH 8.47",
+    "title": "A Braking-Energy Index Recovered From a Speed Change",
+    "difficulty": "1/5",
+    "sort_order": 47,
+    "context": "A fleet safety report scores braking energy by the index $E(v)=A v^{2}$, where $v>0$ is speed in kilometres per hour. The report does not give $A$ directly: it states only that raising the test speed from $40$ to $60$ km/h raised the index by exactly $100$ points. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the index is $0.05$.",
+      "At $60$ km/h the index reads $180$.",
+      "Raising speed from $72$ to $90$ km/h raises the index by exactly $56.25\\%$.",
+      "The index reaches $500$ at a speed of $100$ km/h.",
+      "An index reading of $320$ corresponds to a speed of $80$ km/h."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe report records a change in the index between two test speeds, so the coefficient multiplies the difference of the two shape factors.\n\n$$40^{2} = 1600, \\qquad 60^{2} = 3600$$\n\nTranslate the recorded rise:\n\n$$A(3600 - 1600) = 100 \\quad \\Rightarrow \\quad 2000A = 100 \\quad \\Rightarrow \\quad A = 0.05$$\n\n$$E(v) = 0.05v^{2}$$\n\nDividing $100$ by either speed squared alone would treat a difference as a level and return a coefficient several times too small. The coefficient is $0.05$, so the statement is True.",
+      "**B.** → True\n\nA level at the upper test speed is the calibrated law evaluated there, with the shape factor already in hand.\n\n$$E(60) = 0.05(3600) = 180$$\n\nEvaluate at the lower speed and difference them:\n\n$$E(40) = 0.05(1600) = 80, \\qquad 180 - 80 = 100 \\;\\checkmark$$\n\nReproducing the recorded $100$-point rise is the test any candidate coefficient must pass. The index reads $180$ at $60$ km/h, so the statement is True.",
+      "**C.** → True\n\nA percentage change under a square law comes from squaring the speed ratio, here $\\frac{90}{72}=1.25$, and subtracting one.\n\n$$\\frac{E(90)}{E(72)}=\\left(\\frac{90}{72}\\right)^2=1.25^2=1.5625$$\n\n$$(1.5625-1)\\times100\\%=56.25\\%$$\n\nThe exponent scales the ratio multiplicatively rather than adding a percentage of its own. The index rises by exactly $56.25\\%$, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $v$ = speed in km/h and $E(v)$ = index. The exponent is given; the only observation is a difference of two index readings, so the coefficient must be recovered from that difference.\n\n**1. Translate: the two shape factors.**\n\n$$40^{2} = 1600, \\qquad 60^{2} = 3600$$\n\n**2. Translate: the recorded rise.**\n\n$$A(3600 - 1600) = 100$$\n\n**Part 2: The model.**\n\n$$2000A = 100 \\tag{1}$$\n\n$$E(v) = A v^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) gives the coefficient:\n\n$$A = 0.05, \\qquad E(v) = 0.05v^{2}$$\n\n**2.** Check both test speeds against the report:\n\n$$E(40) = 80, \\qquad E(60) = 180, \\qquad 180 - 80 = 100 \\;\\checkmark$$\n\n**3.** Scale factors square the speed multiplier:\n\n$$1.5^{2} = 2.25 \\;(+125\\%), \\qquad \\left(\\tfrac{1}{2}\\right)^{2} = \\tfrac{1}{4}$$\n\n**4.** Levels at higher speeds, and the inverse reading:\n\n$$E(100) = 500, \\qquad E = 500 \\;\\Rightarrow\\; v = 100$$\n\n**5.** The safety point is the squaring itself: $2.5$ times the speed of the lower test gives $6.25$ times its braking energy.",
+      "**D.** → True\n\nMotorway speed is another level of the calibrated index, and the same equation read backwards recovers the speed from a reading.\n\n$$E(100) = 0.05(100)^{2} = 0.05(10000) = 500$$\n\nConfirm by inversion:\n\n$$0.05v^{2} = 500 \\;\\Rightarrow\\; v^{2} = 10000 \\;\\Rightarrow\\; v = 100$$\n\nSpeed enters squared, so $2.5$ times the lower test speed produces $6.25$ times the braking energy rather than $2.5$ times. The index reaches $500$ at $100$ km/h, so the statement is True.",
+      "**E.** → True\n\nConverting an index reading back into a speed inverts the calibrated square law, dividing by the coefficient and then taking a square root.\n\n$$0.05v^2=320 \\quad \\Rightarrow \\quad v^2=6400$$\n\n$$v=\\sqrt{6400}=80$$\n\nOnly the positive root is admissible, since speed is positive throughout this model. The reading of $320$ corresponds to $80$ km/h, so the statement is True."
+    ],
+    "solution_overview": "The braking-energy index is $E(v)=Av^{2}$, and raising the test speed from $40$ to $60$ km/h raised the index by $100$ points.\n\n**Part 1: Building the model.**\n\nLet $v$ = speed in km/h and $E(v)$ = index. The exponent is given; the only observation is a difference of two index readings, so the coefficient must be recovered from that difference.\n\n**1. Translate: the two shape factors.**\n\n$$40^{2} = 1600, \\qquad 60^{2} = 3600$$\n\n**2. Translate: the recorded rise.**\n\n$$A(3600 - 1600) = 100$$\n\n**Part 2: The model.**\n\n$$2000A = 100 \\tag{1}$$\n\n$$E(v) = A v^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) gives the coefficient:\n\n$$A = 0.05, \\qquad E(v) = 0.05v^{2}$$\n\n**2.** Check both test speeds against the report:\n\n$$E(40) = 80, \\qquad E(60) = 180, \\qquad 180 - 80 = 100 \\;\\checkmark$$\n\n**3.** Scale factors square the speed multiplier:\n\n$$1.5^{2} = 2.25 \\;(+125\\%), \\qquad \\left(\\tfrac{1}{2}\\right)^{2} = \\tfrac{1}{4}$$\n\n**4.** Levels at higher speeds, and the inverse reading:\n\n$$E(100) = 500, \\qquad E = 500 \\;\\Rightarrow\\; v = 100$$\n\n**5.** The safety point is the squaring itself: $2.5$ times the speed of the lower test gives $6.25$ times its braking energy.\n\n**Answer.** $A = 0.05$ | $E(v) = 0.05v^{2}$ | $E(100) = 500$",
+    "expl_lens": [
+      524,
+      423,
+      1687,
+      479,
+      385
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-48",
+    "case_id": "MATH 8.48",
+    "title": "Geometrically Similar Silos: Steel Against Capacity",
+    "difficulty": "2/5",
+    "sort_order": 48,
+    "context": "A supplier builds geometrically similar storage silos. The steel skin scales with the square of the height, $S(h)=a h^{2}$ square metres, while capacity scales with the cube, $V(h)=k h^{3}$ cubic metres. A six-metre silo uses $108$ square metres of steel and holds $72$ cubic metres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "A silo with capacity $192$ cubic metres needs about $208$ square metres of steel.",
+      "Steel use first exceeds $200$ square metres once height exceeds about $8.16$ metres.",
+      "Increasing silo height by $50\\%$ raises steel use by $125\\%$.",
+      "Steel per cubic metre of capacity falls as the silo gets taller.",
+      "Doubling the height doubles the steel requirement."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nSteel and capacity are separate laws sharing one variable, so a capacity target has to be inverted into a height before the steel law can be applied.\n\n$$\\frac{h^3}{3}=192 \\quad \\Rightarrow \\quad h=\\sqrt[3]{576}\\approx8.32$$\n\n$$S(h)=3h^2\\approx3(8.32)^2\\approx207.7$$\n\nGoing straight from capacity to steel by proportion would skip the change of exponent from $3$ to $2$. The target silo needs about $208$ square metres of steel, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $h$ = height in metres, $S$ = steel area, $V$ = capacity. Geometric similarity fixes both exponents, so each of the two observations calibrates one coefficient.\n\n**1. Translate: the steel observation.**\n\n$$a(6)^{2} = 108$$\n\n**2. Translate: the capacity observation.**\n\n$$k(6)^{3} = 72$$\n\n**Part 2: The model.**\n\n$$S(h) = 3h^{2} \\tag{1}$$\n\n$$V(h) = \\frac{h^{3}}{3} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The two observations give the two coefficients:\n\n$$a = 3, \\qquad k = \\tfrac{1}{3}$$\n\n**2.** Levels for a taller silo:\n\n$$S(9) = 243, \\qquad V(9) = 243$$\n\n**3.** The square-cube pair of scale factors for one doubling:\n\n$$\\frac{S(2h)}{S(h)} = 4, \\qquad \\frac{V(2h)}{V(h)} = 8$$\n\n**4.** Their ratio is the economically interesting quantity:\n\n$$\\frac{S(h)}{V(h)} = \\frac{9}{h}, \\qquad 1.5,\\; 1,\\; 0.75 \\text{ at } h = 6,\\,9,\\,12$$\n\n**5.** Because the exponents differ by exactly one, steel per cubic metre is inversely proportional to height — the general reason big tanks are cheap per unit stored.",
+      "**B.** → True\n\nA steel threshold is a condition on the surface law, and the inequality survives the square root because height is positive.\n\n$$3h^2>200 \\quad \\Rightarrow \\quad h^2>\\frac{200}{3}$$\n\n$$h>\\sqrt{\\frac{200}{3}}\\approx8.165$$\n\nA positive exponent preserves the direction of the inequality rather than reversing it. Steel use exceeds $200$ square metres beyond about $8.16$ metres, so the statement is True.",
+      "**C.** → True\n\nA fifty percent height increase is a multiplier of $1.5$ acting through the surface exponent of $2$.\n\n$$\\frac{S(1.5h)}{S(h)}=1.5^2=2.25, \\qquad (2.25-1)\\times100\\%=125\\%$$\n\nThe percentage rise is the squared multiplier minus one, not the height increase carried over unchanged. Steel use rises by exactly $125\\%$, so the statement is True.",
+      "**D.** → True\n\nSteel per cubic metre of capacity is the ratio of the two calibrated laws, whose exponents differ by exactly one.\n\n$$\\frac{S(h)}{V(h)} = \\frac{3h^{2}}{\\frac{h^{3}}{3}} = \\frac{9h^{2}}{h^{3}} = \\frac{9}{h}$$\n\nEvaluate at three heights:\n\n$$\\frac{9}{6} = 1.5, \\qquad \\frac{9}{9} = 1, \\qquad \\frac{9}{12} = 0.75$$\n\nThe result depends only on the exponents $2$ and $3$, not on the particular coefficients, which is why large tanks are always cheaper per unit stored. Steel per cubic metre halves between six and twelve metres, so the statement is True.",
+      "**E.** → False\n\nThe steel law has exponent $2$, so a height multiplier enters squared.\n\n$$\\frac{S(2h)}{S(h)} = 2^{2} = 4$$\n\nCheck with concrete silos:\n\n$$S(6) = 108, \\qquad S(12) = 3(144) = 432, \\qquad \\frac{432}{108} = 4$$\n\nDoubling would require exponent $1$, which no surface law has, and would also break the square-cube comparison of the previous part. Steel quadruples, so the statement is False."
+    ],
+    "solution_overview": "Similar silos have steel $S(h)=ah^{2}$ and capacity $V(h)=kh^{3}$; a six-metre silo uses $108$ m² of steel and holds $72$ m³.\n\n**Part 1: Building the model.**\n\nLet $h$ = height in metres, $S$ = steel area, $V$ = capacity. Geometric similarity fixes both exponents, so each of the two observations calibrates one coefficient.\n\n**1. Translate: the steel observation.**\n\n$$a(6)^{2} = 108$$\n\n**2. Translate: the capacity observation.**\n\n$$k(6)^{3} = 72$$\n\n**Part 2: The model.**\n\n$$S(h) = 3h^{2} \\tag{1}$$\n\n$$V(h) = \\frac{h^{3}}{3} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The two observations give the two coefficients:\n\n$$a = 3, \\qquad k = \\tfrac{1}{3}$$\n\n**2.** Levels for a taller silo:\n\n$$S(9) = 243, \\qquad V(9) = 243$$\n\n**3.** The square-cube pair of scale factors for one doubling:\n\n$$\\frac{S(2h)}{S(h)} = 4, \\qquad \\frac{V(2h)}{V(h)} = 8$$\n\n**4.** Their ratio is the economically interesting quantity:\n\n$$\\frac{S(h)}{V(h)} = \\frac{9}{h}, \\qquad 1.5,\\; 1,\\; 0.75 \\text{ at } h = 6,\\,9,\\,12$$\n\n**5.** Because the exponents differ by exactly one, steel per cubic metre is inversely proportional to height — the general reason big tanks are cheap per unit stored.\n\n**Answer.** $S(h) = 3h^{2}$ | $V(h) = \\frac{h^{3}}{3}$ | steel per m³ $= \\frac{9}{h}$",
+    "expl_lens": [
+      1746,
+      416,
+      354,
+      562,
+      402
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-49",
+    "case_id": "MATH 8.49",
+    "title": "Inspection Hours Across Growing Shipment Volumes",
+    "difficulty": "2/5",
+    "sort_order": 49,
+    "context": "Customs inspection time follows $T(n)=A n^{0.5}$ hours for a consignment of $n>0$ shipments. Moving from a $25$-shipment consignment to a $225$-shipment consignment added exactly $60$ inspection hours. A staffing plan can supply at most $90$ inspection hours. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The inspection law is $T(n)=6\\sqrt{n}$.",
+      "The $90$-hour staffing ceiling can cover at most $225$ shipments.",
+      "Multiplying a consignment size by $2.25$ multiplies total inspection time by $1.5$.",
+      "At $144$ shipments, time per shipment is $0.5$ hour.",
+      "Total inspection time is proportional to the number of shipments."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe added $60$ hours is the difference between two inspection times, so both square-root factors enter the calibration.\n\n$$T(225)-T(25)=A(\\sqrt{225}-\\sqrt{25})=60$$\n\n$$A(15-5)=60 \\quad \\Rightarrow \\quad A=6, \\qquad T(n)=6\\sqrt n$$\n\nAttaching the $60$ hours to the larger consignment alone would ignore the time already required at $25$ shipments. The difference calibration gives $T(n)=6\\sqrt{n}$, so the statement is True.",
+      "**B.** → True\n\nAn hours ceiling becomes a shipment ceiling by inverting an increasing law, so the boundary is where the available hours are exactly used.\n\n$$6\\sqrt n\\le90 \\quad \\Rightarrow \\quad \\sqrt n\\le15$$\n\n$$n\\le15^2=225, \\qquad T(225)=6(15)=90$$\n\nThe intermediate $15$ is $\\sqrt{n}$ rather than $n$, so the squaring step cannot be skipped. The ceiling covers at most $225$ shipments and the boundary is attainable, so the statement is True.",
+      "**C.** → True\n\nFor a square-root law a consignment multiplier $k$ acts on total time as $\\sqrt{k}$, and both the coefficient and the starting size cancel.\n\n$$\\frac{T(2.25n)}{T(n)} =\\frac{6(2.25n)^{0.5}}{6n^{0.5}} =(2.25)^{0.5}$$\n\n$$(2.25)^{0.5}=\\sqrt{\\frac94}=\\frac32=1.5$$\n\nUsing $2.25$ itself as the time multiplier would impose exponent $1$ in place of the stated $0.5$. The inspection-time multiplier is exactly $1.5$, so the statement is True.",
+      "**D.** → True\n\nTime per shipment is total time divided by the shipment count, which lowers the exponent to $-0.5$.\n\n$$\\frac{T(n)}{n}=\\frac{6n^{0.5}}{n}=6n^{-0.5}, \\qquad \\frac{T(144)}{144} =\\frac{6}{\\sqrt{144}} =\\frac{6}{12}=0.5$$\n\nThe total of $72$ hours is a different quantity from the average, and the square-root factor has to be retained when dividing. Time per shipment is exactly $0.5$ hour at $144$ shipments, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1:** Translate the difference and the staffing ceiling:\n\n$$A(15-5)=60, qquad T(n)\\le90$$\n\n**Part 2:** Recover the total and average laws:\n\n$$T(n)=6\\sqrt n, qquad \\frac{T(n)}n=6n^{-0.5}$$\n\n**Part 3:** Invert the ceiling and evaluate the scale questions:\n\n$$6\\sqrt n\\le90\\Rightarrow n\\le225, quad (2.25)^{0.5}=1.5, quad \\frac{T(144)}{144}=0.5$$\n\nThis full reconstruction also supplies three safeguards: every substituted input stays in the stated domain, each numerical comparison uses the model's own units, and every percentage claim is checked through an exact output ratio before rounding. Those checks lead to the same truth value as the direct route above.",
+      "**E.** → False\n\nProportionality requires exponent $1$ and therefore a constant time per shipment, which is stronger than the two quantities merely rising together.\n\n$$\\frac{T(kn)}{T(n)}=k^{0.5}\\ne k \\quad \\text{for } k\\ne1$$\n\n$$\\frac{T(225)}{225}=\\frac{90}{225}=0.4, \\qquad \\frac{T(25)}{25}=\\frac{30}{25}=1.2$$\n\nTotal time and shipment count do move together, but not in a constant ratio. The per-shipment rate is not constant, so the statement is False."
+    ],
+    "solution_overview": "Inspection time is $T(n)=An^{0.5}$, and increasing a consignment from $25$ to $225$ shipments adds $60$ hours.\n\n**Part 1:** Translate the difference and the staffing ceiling:\n\n$$A(15-5)=60, qquad T(n)\\le90$$\n\n**Part 2:** Recover the total and average laws:\n\n$$T(n)=6\\sqrt n, qquad \\frac{T(n)}n=6n^{-0.5}$$\n\n**Part 3:** Invert the ceiling and evaluate the scale questions:\n\n$$6\\sqrt n\\le90\\Rightarrow n\\le225, quad (2.25)^{0.5}=1.5, quad \\frac{T(144)}{144}=0.5$$\n\n**Answer.** $A=6$ | ceiling $225$ shipments | time per shipment falls with consignment size",
+    "expl_lens": [
+      438,
+      446,
+      448,
+      1354,
+      454
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-50",
+    "case_id": "MATH 8.50",
+    "title": "Illuminance Down the Length of a Gallery",
+    "difficulty": "1/5",
+    "sort_order": 50,
+    "context": "Illuminance from a gallery spotlight follows the inverse-square law $I(d)=A d^{-2}$ lux, where $d>0$ is the distance in metres. A meter reading two metres from the lamp records $300$ lux. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "At four metres the illuminance is $75$ lux.",
+      "Doubling the distance cuts the illuminance to a quarter.",
+      "Illuminance is one ninth of its two-metre reading at a distance of $6$ metres.",
+      "Halving the distance quadruples the illuminance.",
+      "Illuminance falls as the distance from the lamp grows."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe inverse-square form fixes the exponent at $-2$, so the meter reading at two metres is all that is needed to pin the coefficient.\n\n$$A(2)^{-2} = 300 \\quad \\Rightarrow \\quad \\frac{A}{4} = 300 \\quad \\Rightarrow \\quad A = 1200$$\n\n$$I(d) = \\frac{1200}{d^{2}}$$\n\nEvaluate at four metres:\n\n$$I(4) = \\frac{1200}{16} = 75$$\n\nA negative exponent divides by the shape factor rather than multiplying by it, which is why the reading falls with distance. The illuminance is $75$ lux, so the statement is True.",
+      "**B.** → True\n\nA scale factor depends only on the exponent, so doubling the distance acts through $2^{-2}$ wherever along the gallery it happens.\n\n$$\\frac{I(2d)}{I(d)} = \\frac{A(2d)^{-2}}{Ad^{-2}} = 2^{-2} = \\frac{1}{4}$$\n\nCheck two separate doublings:\n\n$$I(2) = 300, \\; I(4) = 75; \\qquad I(5) = 48, \\; I(10) = 12$$\n\nThe first pair is one instance of the rule and the second shows it is not tied to the metered distance. Both fall to a quarter, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $d$ = distance in metres and $I(d)$ = illuminance in lux. The inverse-square form fixes the exponent at $-2$, so the meter reading is the only fact needed to pin the coefficient.\n\n**1. Translate: the meter reading.**\n\n$$A(2)^{-2} = 300, \\qquad 2^{-2} = \\tfrac{1}{4}$$\n\n**2. Translate: the scale rule.** Coefficients cancel in ratios:\n\n$$\\frac{I(kd)}{I(d)} = k^{-2}$$\n\n**Part 2: The model.**\n\n$$I(d) = \\frac{1200}{d^{2}} \\tag{1}$$\n\n$$\\frac{I(kd)}{I(d)} = k^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The meter reading gives the coefficient:\n\n$$A = 300 \\times 4 = 1200$$\n\n**2.** Readings down the gallery:\n\n$$I(1) = 1200, \\quad I(2) = 300, \\quad I(4) = 75, \\quad I(5) = 48, \\quad I(10) = 12$$\n\n**3.** Scale factors from (2), in both directions:\n\n$$2^{-2} = \\tfrac{1}{4}, \\qquad \\left(\\tfrac{1}{2}\\right)^{-2} = 4, \\qquad 5^{-2} = \\tfrac{1}{25}$$\n\n**4.** Inverting (1) turns a lighting target into a distance:\n\n$$d = \\sqrt{\\frac{1200}{I}}, \\qquad I = 48 \\;\\Rightarrow\\; d = 5$$\n\n**5.** The negative exponent makes the law decreasing everywhere, with most of the light lost in the first few metres.",
+      "**C.** → True\n\nA reading expressed as a fraction of the two-metre value is a ratio, so the coefficient cancels and only the distance multiplier matters.\n\n$$\\frac{I(d)}{I(2)}=\\left(\\frac{d}{2}\\right)^{-2}=\\frac{1}{9}$$\n\n$$\\left(\\frac{d}{2}\\right)^2=9 \\quad \\Rightarrow \\quad d=6$$\n\nThe negative exponent inverts the ratio, so a ninth of the light corresponds to three times the distance rather than a ninth of it. At six metres the reading is exactly one ninth of the two-metre value, so the statement is True.",
+      "**D.** → True\n\nMoving closer is the same rule with a multiplier below one, and a negative exponent inverts before squaring.\n\n$$\\frac{I(\\frac{d}{2})}{I(d)} = \\left(\\frac{1}{2}\\right)^{-2} = 4$$\n\nCheck on the metered distance:\n\n$$I(2) = 300, \\qquad I(1) = \\frac{1200}{1} = 1200$$\n\nReading the multiplier as $\\frac{1}{4}$ would apply the rule in the wrong direction, whereas approaching gains exactly what retreating loses. Illuminance quadruples, so the statement is True.",
+      "**E.** → True\n\nThe direction of a power law is settled by the sign of its exponent together with the sign of its coefficient.\n\n$$I(d) = 1200\\,d^{-2}, \\qquad A > 0, \\quad r = -2 < 0$$\n\nTrace the readings down the gallery:\n\n$$I(1) = 1200, \\quad I(2) = 300, \\quad I(4) = 75, \\quad I(10) = 12$$\n\nThe decline is also decelerating, so most of the light is lost in the first few metres rather than spread evenly along the gallery. Illuminance falls monotonically with distance, so the statement is True."
+    ],
+    "solution_overview": "Illuminance follows $I(d)=Ad^{-2}$ lux at distance $d>0$ metres, with a meter reading of $300$ lux at two metres.\n\n**Part 1: Building the model.**\n\nLet $d$ = distance in metres and $I(d)$ = illuminance in lux. The inverse-square form fixes the exponent at $-2$, so the meter reading is the only fact needed to pin the coefficient.\n\n**1. Translate: the meter reading.**\n\n$$A(2)^{-2} = 300, \\qquad 2^{-2} = \\tfrac{1}{4}$$\n\n**2. Translate: the scale rule.** Coefficients cancel in ratios:\n\n$$\\frac{I(kd)}{I(d)} = k^{-2}$$\n\n**Part 2: The model.**\n\n$$I(d) = \\frac{1200}{d^{2}} \\tag{1}$$\n\n$$\\frac{I(kd)}{I(d)} = k^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The meter reading gives the coefficient:\n\n$$A = 300 \\times 4 = 1200$$\n\n**2.** Readings down the gallery:\n\n$$I(1) = 1200, \\quad I(2) = 300, \\quad I(4) = 75, \\quad I(5) = 48, \\quad I(10) = 12$$\n\n**3.** Scale factors from (2), in both directions:\n\n$$2^{-2} = \\tfrac{1}{4}, \\qquad \\left(\\tfrac{1}{2}\\right)^{-2} = 4, \\qquad 5^{-2} = \\tfrac{1}{25}$$\n\n**4.** Inverting (1) turns a lighting target into a distance:\n\n$$d = \\sqrt{\\frac{1200}{I}}, \\qquad I = 48 \\;\\Rightarrow\\; d = 5$$\n\n**5.** The negative exponent makes the law decreasing everywhere, with most of the light lost in the first few metres.\n\n**Answer.** $A = 1200$ | $I(d) = 1200d^{-2}$ | $I(10) = 12$ lux",
+    "expl_lens": [
+      514,
+      1844,
+      509,
+      470,
+      496
+    ],
+    "has_extended": true
+  }
+]

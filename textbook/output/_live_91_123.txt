@@ -1,0 +1,2117 @@
+===== TASK 91 =====
+    id: `math-11-91`,
+    case_id: `MATH 11.91`,
+    title: `A Deferred Perpetuity for a Philanthropist's Endowed Fund`,
+    subsection: `11.5`,
+    context: `A philanthropist wants to establish an endowed fund that will pay \\$10,000 at the end of each year, forever, but the FIRST payment will not occur until the end of year 5, with payments running at t = 5, 6, 7, …. The fund earns 6% annual interest, and the philanthropist wants to know how much must be donated today.`,
+    statements: [
+      `The value of the perpetuity as of the end of year 4 is approximately \\$166,666.67.`,
+      `Discounting this year-4 value back 4 years to today at 6% gives a present value of approximately \\$132,015.61.`,
+      `If the first payment instead began immediately at the end of year 1, today's present value would be LOWER than the deferred value of \\$132,015.61.`,
+      `If the deferral were extended so the first payment begins at the end of year 9, today's present value would be LESS than half of \\$132,015.61.`,
+      `The ratio of the deferred present value to the immediate perpetuity value is exactly 0.8321.`,
+    ],
+    answer_key: [true, true, false, false, false],
+    tactical_explanations: [
+      `**A) The value of the perpetuity as of the end of year 4 is approximately \\$166,666.67.**  (true)
+
+The perpetuity formula $a/r$ gives the value one period before the first payment; since the first payment falls at $t = 5$, that valuation point is $t = 4$: $V_4 = 10,000/0.06 = \\$166,666.67$, matching the statement exactly.`,
+      `**B) Discounting this year-4 value back 4 years to today at 6% gives a present value of approximately \\$132,015.61.**  (true)
+
+Discounting $V_4$ back $4$ years at $6\\%$ gives $PV_0 = 166,666.67/(1.06)^{4} \\approx 166,666.67/1.262477 = \\$132,015.61$, matching the statement exactly.`,
+      `**C) If the first payment instead began immediately at the end of year 1, today's present value would be LOWER than the deferred value of \\$132,015.61.**  (false)
+
+Deferring the payments pushes them further into the future, which REDUCES today's present value, not increases it: the immediate perpetuity is worth \\$166,666.67 today, which is higher than the deferred value of \\$132,015.61, not lower.
+
+An immediate perpetuity (first payment at t = 1) is already worth a/r today:
+
+$$P = 10,000 / 0.06 = \\$166,666.67$$
+
+\\$166,666.67 > \\$132,015.61, so starting sooner raises today's value, not lowers it.`,
+      `**D) If the deferral were extended so the first payment begins at the end of year 9, today's present value would be LESS than half of \\$132,015.61.**  (false)
+
+Extending the deferral to 8 years reduces the present value to \\$104,568.80, which remains well ABOVE half of the 4-year-deferred value (\\$66,007.81), not below it - the value shrinks as deferral lengthens, but not fast enough to fall below half in this case.
+
+First payment at t = 9 values the perpetuity at t = 8:
+
+$$PV_0' = 166,666.67 / (1.06)^{8}$$
+
+$$(1.06)^{8} \\approx 1.593848$$
+
+$$166,666.67 / 1.593848 = \\$104,568.80$$
+
+Half of \\$132,015.61 is \\$66,007.81. \\$104,568.80 stays above that half.`,
+      `**E) The ratio of the deferred present value to the immediate perpetuity value is exactly 0.8321.**  (false)
+
+Because $PV_0 = V/(1.06)^{4}$, the ratio PV0/V is by definition exactly the 4-year discount factor $1/(1.06)^{4} \\approx 0.7921$, not 0.8321 as stated.
+
+The ratio is exactly the 4-year discount factor:
+
+$$PV_0 / V_4 = 1 / (1.06)^{4} \\approx 1 / 1.262477 \\approx 0.7921$$
+
+About 0.7921, not 0.8321.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 91,
+    solution_overview: `A philanthropist wants to establish an endowed fund that will pay \\$10,000 at the end of each year, forever, but the FIRST payment will not occur until the end of year 5, with payments running at t = 5, 6, 7, …. The fund earns 6% annual interest, and the philanthropist wants to know how much must be donated today.
+
+**Part 1: Setup.**
+
+Annual payment a = \\$10,000, first payment at end of year 5
+
+Nominal annual rate r = 6% = 0.06
+
+Compounding: annual, deferred ordinary perpetuity
+
+Deferral: value one period before first payment falls at t = 4 (and t = 8 for part d)
+
+**Part 2: Formula.**
+
+Perpetuity value (as of one period before first payment): $V=a/r$
+
+Discount back to today: $PV_0=V/(1+r)^{k}$, where k is the number of years from today to the valuation point
+
+**Part 3: Solve.**
+
+**1.** $V = 10,000/0.06 = 166,666.67$ as of the end of year $4$.
+
+**2.** Discounting back, $PV_0 = 166,666.67/(1.06)^{4} = 166,666.67/1.262477 = \\$132,015.61$.
+
+**3.** The immediate, non-deferred perpetuity is worth $10,000/0.06 = \\$166,666.67$ today, HIGHER than $\\$132,015.61$, not lower.
+
+**4.** With the first payment deferred to year $9$ instead, $V$ at year $8$ is still $\\$166,666.67$, so $PV_0' = 166,666.67/(1.06)^{8} = 166,666.67/1.593848 = \\$104,568.80$, well above half of $\\$132,015.61$ (which would be $\\$66,007.81$).
+
+**5.** Since $PV_0/V = 1/(1.06)^{4} = 0.792094$, the ratio is about $79.21\\%$, not $83.21\\%$ as stated.`,
+  },
+===== TASK 92 =====
+    id: `math-11-92`,
+    case_id: `MATH 11.92`,
+    title: `Reverse-Engineering a Perpetual Preferred Stock's Fair Value`,
+    subsection: `11.5`,
+    context: `A preferred stock pays a fixed dividend of \\$4.25 per share at the end of each year, in perpetuity. The stock is currently trading at \\$65.00 per share. Investors currently require a 7% annual return on investments of this risk level, and an analyst wants to test how the fair value responds to changes in the required return and the dividend.`,
+    statements: [
+      `The fair value per share is approximately \\$60.71.`,
+      `At a market price of \\$65.00, the preferred stock is undervalued relative to its fair value.`,
+      `If the required return fell to 4%, the fair value would rise to \\$116.25 per share.`,
+      `This drop in the required return, from 7% to 4%, increases the fair value by MORE than 75%.`,
+      `If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall to exactly \\$50.57.`,
+    ],
+    answer_key: [true, false, false, false, false],
+    tactical_explanations: [
+      `**A) The fair value per share is approximately \\$60.71.**  (true)
+
+$P = a/r = 4.25/0.07 = \\$60.71$, matching the statement exactly.`,
+      `**B) At a market price of \\$65.00, the preferred stock is undervalued relative to its fair value.**  (false)
+
+The $\\$65.00$ market price sits above the $\\$60.71$ fair value, meaning the stock is overvalued, not undervalued as claimed.`,
+      `**C) If the required return fell to 4%, the fair value would rise to \\$116.25 per share.**  (false)
+
+$P' = 4.25/0.04 = \\$106.25$, not $\\$116.25$ as stated.`,
+      `**D) This drop in the required return, from 7% to 4%, increases the fair value by MORE than 75%.**  (false)
+
+The increase works out to EXACTLY 75.00%, not more than 75% - a precise boundary case where the statement's claim of "more than" narrowly fails even though the number itself (75%) looks correct at first glance.
+
+From \\$60.714286 to \\$106.25:
+
+$$(106.25 - 60.714286) / 60.714286 = 0.750000 = 75.00\\%$$
+
+The increase is exactly 75%, so "more than 75%" fails.`,
+      `**E) If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall to exactly \\$50.57.**  (false)
+
+Since $P = a/r$ is directly proportional to $a$, a $20\\%$ dividend cut produces an exactly $20\\%$ value cut: $a' = 4.25 \\times 0.80 = 3.40$, so $P'' = 3.40/0.07 \\approx \\$48.57$, not $\\$50.57$ as stated.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 92,
+    solution_overview: `A preferred stock pays a fixed dividend of \\$4.25 per share at the end of each year, in perpetuity. The stock is currently trading at \\$65.00 per share. Investors currently require a 7% annual return on investments of this risk level, and an analyst wants to test how the fair value responds to changes in the required return and the dividend.
+
+**Part 1: Setup.**
+
+Annual dividend a = \\$4.25 per share (and \\$3.40 for part e)
+
+Required return r = 7% = 0.07 (and 4% for parts c, d)
+
+Compounding: annual, perpetuity
+
+**Part 2: Formula.**
+
+Perpetuity (fair value): $P=a/r$
+
+**Part 3: Solve.**
+
+**1.** $P = 4.25/0.07 = 60.71$ (precisely $\\$60.714286$).
+
+**2.** The stock trades at $\\$65.00$, above the $\\$60.71$ fair value.
+
+**3.** At the lower required return of $4\\%$, $P' = 4.25/0.04 = 106.25$, not $\\$116.25$.
+
+**4.** The percentage increase is $(106.25 - 60.714286)/60.714286 = 0.750000$, exactly $75.00\\%$, not more than $75\\%$.
+
+**5.** If instead the dividend were cut by $20\\%$, $P'' = 3.40/0.07 = 48.571429$, about $\\$48.57$, since $48.571429/60.714286 = 0.80$, an exact $20\\%$ drop because fair value is directly proportional to the dividend.`,
+  },
+===== TASK 93 =====
+    id: `math-11-93`,
+    case_id: `MATH 11.93`,
+    title: `Combined Renovation Cost and Perpetual Maintenance Fund for a City Park`,
+    subsection: `11.5`,
+    context: `A city council wants to fund a park's perpetual maintenance, needing \\$15,000 per year forever, starting one year from now, PLUS an immediate one-time renovation cost of \\$50,000 paid today. The applicable interest rate is 4.5%, and the council also wants to see how a higher rate would change the total funding requirement.`,
+    statements: [
+      `The present value of just the perpetual maintenance payments is approximately \\$333,333.33.`,
+      `Including the \\$50,000 immediate renovation cost, the total amount the city must set aside today is approximately \\$383,333.33.`,
+      `If the interest rate were instead 6%, the total required funding would be approximately \\$300,000.00.`,
+      `This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.`,
+      `If the council only needed the perpetuity and the rate were 6%, the required funding would be LESS than half of the original combined 4.5%-rate total.`,
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A) The present value of just the perpetual maintenance payments is approximately \\$333,333.33.**  (true)
+
+$P = a/r = 15,000/0.045 = \\$333,333.33$, matching the statement exactly.`,
+      `**B) Including the \\$50,000 immediate renovation cost, the total amount the city must set aside today is approximately \\$383,333.33.**  (true)
+
+Adding the $\\$50,000.00$ renovation cost to the $\\$333,333.33$ perpetuity value gives $\\$383,333.33$, matching the statement exactly.`,
+      `**C) If the interest rate were instead 6%, the total required funding would be approximately \\$300,000.00.**  (true)
+
+At $6\\%$, the perpetuity value falls to $P' = 15,000/0.06 = \\$250,000.00$, so adding the $\\$50,000.00$ renovation gives $\\$300,000.00$, matching the statement exactly.`,
+      `**D) This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.**  (false)
+
+The reduction is $\\$383,333.33 - \\$300,000.00 = \\$83,333.33$, which is $83,333.33/383,333.33 \\approx 21.74\\%$ of the original total - more than $20\\%$ but not more than $25\\%$.`,
+      `**E) If the council only needed the perpetuity and the rate were 6%, the required funding would be LESS than half of the original combined 4.5%-rate total.**  (false)
+
+The perpetuity-only requirement at 6% (\\$250,000.00) is actually LARGER than half of the original combined total (\\$191,666.67), not smaller - even though raising the rate shrank the perpetuity value considerably, it still exceeds half of the original combined (renovation + maintenance) total.
+
+Half of the original combined total: $383,333.33 / 2 = \\$191,666.67$.
+
+The 6% perpetuity-only figure is \\$250,000, which exceeds \\$191,666.67, so it is not less than half.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 93,
+    solution_overview: `A city council wants to fund a park's perpetual maintenance, needing \\$15,000 per year forever, starting one year from now, PLUS an immediate one-time renovation cost of \\$50,000 paid today. The applicable interest rate is 4.5%, and the council also wants to see how a higher rate would change the total funding requirement.
+
+**Part 1: Setup.**
+
+Annual maintenance payment a = \\$15,000
+
+Immediate renovation cost = \\$50,000
+
+Nominal annual rate r = 4.5% = 0.045 (and 6% = 0.06 for parts c, d, e)
+
+Compounding: annual, perpetuity + lump sum
+
+**Part 2: Formula.**
+
+Perpetuity: $P=a/r$
+
+Total required funding = immediate cost + perpetuity value
+
+**Part 3: Solve.**
+
+**1.** The perpetuity value is $15,000/0.045 = \\$333,333.33$, so the total required today is $50,000.00 + 333,333.33 = \\$383,333.33$.
+
+**2.** At the higher rate of $6\\%$, the perpetuity value falls to $15,000/0.06 = \\$250,000.00$, so the total becomes $50,000.00 + 250,000.00 = \\$300,000.00$.
+
+**3.** The reduction is $383,333.33 - 300,000.00 = \\$83,333.33$, which is $83,333.33/383,333.33 = 0.21739$, about $21.74\\%$ of the original total, more than $20\\%$ but not more than $25\\%$.
+
+**4.** Half of the original combined total is $\\$191,666.67$, and since $\\$250,000.00$ exceeds that, the perpetuity-only requirement at $6\\%$ is LARGER than half of the original total, not smaller.`,
+  },
+===== TASK 94 =====
+    id: `math-11-94`,
+    case_id: `MATH 11.94`,
+    title: `Growing Perpetuity Valuation of a Rental Property's Escalating Cash Flows`,
+    subsection: `11.5`,
+    context: `A real estate investor is evaluating a rental property expected to generate a net cash flow of \\$24,000 at the end of year 1, growing at a constant 2.5% per year forever due to rent escalation clauses. The investor requires an 8% annual return on investments of this type.`,
+    statements: [
+      `The property's fair value is approximately \\$436,363.64.`,
+      `If the cash flows did NOT grow, the plain-perpetuity fair value, \\$300,000.00, is HIGHER than the growing-perpetuity value of \\$436,363.64.`,
+      `If the growth rate rose to 4%, the fair value would MORE than double, to over \\$872,727.28.`,
+      `If the required return instead fell to 6%, the fair value would be approximately \\$715,714.29.`,
+      `The growing-perpetuity valuation is only valid when the growth rate is below the required return; if the growth rate were to equal or exceed the 8% required return, the formula could not be used.`,
+    ],
+    answer_key: [true, false, false, false, true],
+    tactical_explanations: [
+      `**A) The property's fair value is approximately \\$436,363.64.**  (true)
+
+$P = a_1/(r-g) = 24,000/0.055 = \\$436,363.64$, matching the statement exactly.`,
+      `**B) If the cash flows did NOT grow, the plain-perpetuity fair value, \\$300,000.00, is HIGHER than the growing-perpetuity value of \\$436,363.64.**  (false)
+
+With no growth, $P_{\\mathrm{level}} = 24,000/0.08 = \\$300,000.00$, which is actually LOWER than the growing-perpetuity value of $\\$436,363.64$, not higher, since growth adds value by raising every future cash flow.`,
+      `**C) If the growth rate rose to 4%, the fair value would MORE than double, to over \\$872,727.28.**  (false)
+
+Raising the growth rate to 4% increases the fair value to \\$600,000.00, which is a substantial increase but is NOT more than double the original \\$436,363.64 (double would be \\$872,727.28) - the value is highly sensitive to (r - g) but does not increase without limit until g approaches r more closely.
+
+Raise g to 4%:
+
+$$P' = 24,000 / (0.08 - 0.04) = 24,000 / 0.04 = \\$600,000$$
+
+Double the original \\$436,363.64 would be \\$872,727.28. \\$600,000 is a large rise but not more than double.`,
+      `**D) If the required return instead fell to 6%, the fair value would be approximately \\$715,714.29.**  (false)
+
+$P'' = 24,000/(0.06-0.025) = 24,000/0.035 = \\$685,714.29$, not $\\$715,714.29$ as stated.`,
+      `**E) The growing-perpetuity valuation is only valid when the growth rate is below the required return; if the growth rate were to equal or exceed the 8% required return, the formula could not be used.**  (true)
+
+This is a direct structural requirement of the growing-perpetuity formula: it depends on the spread (r - g) staying strictly positive, so growth rates at or above the required return break the model entirely, matching the statement exactly.
+
+The formula $P = a_1/(r-g)$ needs r > g. If g = 0.08 or higher, the denominator is zero or negative and the model is undefined.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 94,
+    solution_overview: `A real estate investor is evaluating a rental property expected to generate a net cash flow of \\$24,000 at the end of year 1, growing at a constant 2.5% per year forever due to rent escalation clauses. The investor requires an 8% annual return on investments of this type.
+
+**Part 1: Setup.**
+
+Next-year cash flow a1 = \\$24,000
+
+Growth rate g = 2.5% = 0.025 (and 0%, 4% for parts b, c)
+
+Required return r = 8% = 0.08 (and 6% for part d)
+
+Compounding: annual, growing perpetuity
+
+**Part 2: Formula.**
+
+Growing perpetuity: $P=a_1/(r-g)$, valid only for $r>g$
+
+**Part 3: Solve.**
+
+**1.** $P = 24,000/(0.08-0.025) = 24,000/0.055 = \\$436,363.64$.
+
+**2.** Without any growth at all, $P = 24,000/0.08 = 300,000.00$, LOWER than the growing-perpetuity value of $\\$436,363.64$, not higher.
+
+**3.** If growth instead rose to $4\\%$, $P' = 24,000/(0.08-0.04) = 600,000.00$, a large increase but NOT more than double the original $\\$436,363.64$ (double would be $\\$872,727.28$).
+
+**4.** At the lower required return of $6\\%$, $P'' = 24,000/(0.06-0.025) = 24,000/0.035 = \\$685,714.29$, not $\\$715,714.29$.
+
+**5.** As growth approaches the required return, the denominator $(r-g)$ shrinks toward zero and the formula becomes undefined, so growth rates at or above the required return break the model entirely.
+`,
+  },
+===== TASK 95 =====
+    id: `math-11-95`,
+    case_id: `MATH 11.95`,
+    title: `The Gordon Growth Model for a Pension Fund's Stock Valuation`,
+    subsection: `11.5`,
+    context: `A pension fund is valuing a stock that just paid a dividend of \\$3.00 per share, denoted D0, expected to grow at a constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use the NEXT dividend, not the one just paid, in the valuation formula.`,
+    statements: [
+      `The next dividend is \\$3.09.`,
+      `The fair value per share is approximately \\$54.50.`,
+      `Mistakenly using the just-paid dividend instead of next year's dividend understates the correct fair value by \\$2.50.`,
+      `If the growth rate were instead 5%, the fair value would be MORE than double \\$51.50.`,
+      `If the growth rate equaled the required return exactly, the growing-perpetuity valuation would yield a present value of exactly \\$0.00.`,
+    ],
+    answer_key: [true, false, false, false, false],
+    tactical_explanations: [
+      `**A) The next dividend is \\$3.09.**  (true)
+
+$D_1 = D_0(1+g) = 3.00 \\times 1.03 = \\$3.09$, matching the statement exactly.`,
+      `**B) The fair value per share is approximately \\$54.50.**  (false)
+
+$P = D_1/(r-g) = 3.09/0.06 = \\$51.50$, not $\\$54.50$ as stated.`,
+      `**C) Mistakenly using the just-paid dividend instead of next year's dividend understates the correct fair value by \\$2.50.**  (false)
+
+Using $D_0$ in place of $D_1$ gives $3.00/0.06 = \\$50.00$, which is $\\$51.50 - \\$50.00 = \\$1.50$ below the correct value, not $\\$2.50$ as stated.`,
+      `**D) If the growth rate were instead 5%, the fair value would be MORE than double \\$51.50.**  (false)
+
+Raising the growth rate to 5% increases the fair value substantially, to \\$78.75, but this is still short of double the original \\$51.50 (which would be \\$103.00) - the growing-perpetuity value rises sharply as g approaches r, but 5% is not yet close enough to 9% to more than double it here.
+
+At g = 5%:
+
+$$D_1' = 3.00 \\times 1.05 = \\$3.15$$
+
+$$P' = 3.15 / (0.09 - 0.05) = 3.15 / 0.04 = \\$78.75$$
+
+Double \\$51.50 would be \\$103.00. \\$78.75 is still short of that double.`,
+      `**E) If the growth rate equaled the required return exactly, the growing-perpetuity valuation would yield a present value of exactly \\$0.00.**  (false)
+
+As g → r, the formula's denominator (r - g) shrinks toward zero, driving the RESULT toward infinity, not toward \\$0.00 - the fair value becomes undefined (unboundedly large), not zero.
+
+If g = r, then r − g = 0 and P is undefined (the present value blows up), not \\$0.00.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 95,
+    solution_overview: `A pension fund is valuing a stock that just paid a dividend of \\$3.00 per share, denoted D0, expected to grow at a constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use the NEXT dividend, not the one just paid, in the valuation formula.
+
+**Part 1: Setup.**
+
+Just-paid dividend D0 = \\$3.00
+
+Growth rate g = 3% = 0.03 (and 5% for part d)
+
+Required return r = 9% = 0.09
+
+Compounding: annual, growing perpetuity
+
+**Part 2: Formula.**
+
+$D_1=D_0(1+g)$
+
+Growing perpetuity: $P=D_1/(r-g)$
+
+**Part 3: Solve.**
+
+**1.** $D_1 = 3.00\\times1.03 = 3.09$.
+
+**2.** $P = 3.09/(0.09-0.03) = 3.09/0.06 = \\$51.50$.
+
+**3.** Using the just-paid dividend by mistake instead gives $3.00/0.06 = \\$50.00$, so the correct value understates the wrong one by $51.50 - 50.00 = \\$1.50$, not $\\$2.50$.
+
+**4.** At the higher growth rate of $5\\%$, $D_1' = 3.00\\times1.05 = 3.15$, so $P' = 3.15/(0.09-0.05) = 3.15/0.04 = \\$78.75$, well short of double the original $\\$51.50$ (double would be $\\$103.00$).
+
+**5.** As growth approaches the required return of $9\\%$, the denominator $(r-g)$ shrinks toward zero, driving the result toward infinity, not toward $\\$0.00$.
+`,
+  },
+===== TASK 96 =====
+    id: `math-11-96`,
+    case_id: `MATH 11.96`,
+    title: `Comparing Level vs. Growing Royalty-Stream Purchase Deals for a Musician`,
+    subsection: `11.5`,
+    context: `A musician is offered two royalty-stream purchase deals for a song catalog, both priced at \\$170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level non-growing perpetuity of \\$18,000 per year. Deal 2 is a growing perpetuity starting at \\$14,000 next year, growing 4% per year forever.`,
+    statements: [
+      `Deal 1 is a good buy at its asking price.`,
+      `Deal 2's fair value exceeds its asking price by more than \\$60,000.00.`,
+      `Deal 1 offers the larger "margin of safety" of the two deals.`,
+      `If Deal 2's growth rate were instead only 1%, its fair value would fall below its asking price.`,
+      `Comparing the two original deals, Deal 1's fair value is MORE than Deal 2's fair value.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A) Deal 1 is a good buy at its asking price.**  (true)
+
+Deal 1's fair value is $18,000/0.10 = \\$180,000.00$, exceeding the $\\$170,000.00$ price by $\\$10,000.00$, matching the statement exactly.`,
+      `**B) Deal 2's fair value exceeds its asking price by more than \\$60,000.00.**  (true)
+
+Deal 2's fair value is $P_2 = 14,000/(0.10-0.04) = 14,000/0.06 = \\$233,333.33$, exceeding the $\\$170,000.00$ price by $\\$63,333.33$, which is indeed more than $\\$60,000.00$.`,
+      `**C) Deal 1 offers the larger "margin of safety" of the two deals.**  (false)
+
+Deal 2's margin of safety (\\$63,333.33) is substantially larger than Deal 1's (\\$10,000.00), so it is Deal 2, not Deal 1, that offers more cushion above its asking price.
+
+Margins: Deal 1 has \\$10,000; Deal 2 has \\$63,333.33. Deal 2's cushion is the larger one, not Deal 1's.`,
+      `**D) If Deal 2's growth rate were instead only 1%, its fair value would fall below its asking price.**  (true)
+
+At the lower $1\\%$ growth rate, $P_2' = 14,000/(0.10-0.01) = 14,000/0.09 = \\$155,555.56$, which sits below the $\\$170,000.00$ asking price, making it a worse buy at that reduced growth assumption.`,
+      `**E) Comparing the two original deals, Deal 1's fair value is MORE than Deal 2's fair value.**  (false)
+
+Deal 1's fair value, $\\$180,000.00$, is actually less than Deal 2's, $\\$233,333.33$, not more - the growing payment stream is worth substantially more due to its perpetual growth.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 96,
+    solution_overview: `A musician is offered two royalty-stream purchase deals for a song catalog, both priced at \\$170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level non-growing perpetuity of \\$18,000 per year. Deal 2 is a growing perpetuity starting at \\$14,000 next year, growing 4% per year forever.
+
+**Part 1: Setup.**
+
+Deal 1: level annual payment a = \\$18,000 (perpetuity)
+
+Deal 2: next-year payment a1 = \\$14,000, growth g = 4% (and 1% for part d)
+
+Required return r = 10% = 0.10
+
+Asking price (both deals) = \\$170,000
+
+**Part 2: Formula.**
+
+Level perpetuity: $P=a/r$
+
+Growing perpetuity: $P=a_1/(r-g)$
+
+**Part 3: Solve.**
+
+**1.** Deal $1$: $P = 18,000/0.10 = 180,000.00$, a margin of $180,000.00 - 170,000.00 = \\$10,000.00$ over the asking price.
+
+**2.** Deal $2$: $P = 14,000/(0.10-0.04) = 14,000/0.06 = \\$233,333.33$.
+
+**3.** This exceeds the asking price by a wide margin: $233,333.33 - 170,000.00 = \\$63,333.33$.
+
+**4.** Deal $2$'s margin of $\\$63,333.33$ is far larger than Deal $1$'s $\\$10,000.00$, so Deal $2$ offers the bigger cushion, not Deal $1$.
+
+**5.** At the lower growth rate of $1\\%$, $P' = 14,000/(0.10-0.01) = 14,000/0.09 = \\$155,555.56$, below the $\\$170,000.00$ asking price.
+
+**6.** Comparing the two original deals, Deal $1$'s fair value of $\\$180,000.00$ is LESS than Deal $2$'s $\\$233,333.33$, not more.
+`,
+  },
+===== TASK 97 =====
+    id: `math-11-97`,
+    case_id: `MATH 11.97`,
+    title: `Present Value Under Continuous Compounding for a Bond Retirement Fund`,
+    subsection: `11.5`,
+    context: `A company needs to have \\$250,000 available in 12 years to retire a bond issue, and can invest in an account offering continuous compounding at a nominal annual rate of 5.5%. The CFO wants to know how much must be invested today, and how this compares to ordinary annual compounding at the same nominal rate.`,
+    statements: [
+      `The present value required today is approximately \\$129,213.75.`,
+      `This continuously compounded present value is HIGHER than the present value using ordinary annual compounding at the same 5.5% nominal rate.`,
+      `The difference between the annual-compounding present value and the continuous-compounding present value is approximately \\$4,280.35.`,
+      `If the horizon were shortened to 6 years at the same continuous 5.5% rate, the present value required today would be LESS than half of \\$129,213.75.`,
+      `The continuously compounded annual discount factor is approximately 0.9465, meaning about 5.35% of value is "lost" to discounting each year.`,
+    ],
+    answer_key: [true, false, false, false, true],
+    tactical_explanations: [
+      `**A) The present value required today is approximately \\$129,213.75.**  (true)
+
+Plugging $S(t) = \\$250,000$, $r = 0.055$, and $t = 12$ into $S_0 = S(t)e^{-rt}$ gives $S_0 = 250,000 e^{-0.66} \\approx 250,000 \\times 0.516855 = \\$129,213.75$, matching the statement exactly.`,
+      `**B) This continuously compounded present value is HIGHER than the present value using ordinary annual compounding at the same 5.5% nominal rate.**  (false)
+
+Continuous compounding is the most profitable schedule for the lender at any given nominal rate, so reaching the same \\$250,000 target requires depositing LESS today under continuous compounding (\\$129,213.75) than under ordinary annual compounding (approximately \\$131,495.10) - the continuous figure is LOWER, not higher.
+
+Annual compounding at the same 5.5%:
+
+$$S_0^{\\mathrm{ann}} = 250,000 / (1.055)^{12}$$
+
+$$(1.055)^{12} \\approx 1.901209$$
+
+$$250,000 / 1.901209 = \\$131,495.10$$
+
+\\$129,213.75 < \\$131,495.10, so the continuous present value is lower, not higher.`,
+      `**C) The difference between the annual-compounding present value and the continuous-compounding present value is approximately \\$4,280.35.**  (false)
+
+The correctly computed gap is $\\$131,495.10 - \\$129,213.75 = \\$2,281.35$, not $\\$4,280.35$ - the stated figure roughly doubles the true difference.`,
+      `**D) If the horizon were shortened to 6 years at the same continuous 5.5% rate, the present value required today would be LESS than half of \\$129,213.75.**  (false)
+
+Because discounting is exponential in time, halving the horizon does not halve the required deposit: at 6 years the required amount is \\$179,731.00, which is far MORE than half of the 12-year figure of \\$129,213.75, not less.
+
+Six-year continuous present value:
+
+$$S_0' = 250,000 \\, e^{-0.055 \\times 6} = 250,000 \\, e^{-0.33}$$
+
+$$e^{-0.33} \\approx 0.718924$$
+
+$$250,000 \\times 0.718924 = \\$179,731.00$$
+
+Half of \\$129,213.75 is \\$64,606.88. \\$179,731.00 is far above that half.`,
+      `**E) The continuously compounded annual discount factor is approximately 0.9465, meaning about 5.35% of value is "lost" to discounting each year.**  (true)
+
+$e^{-0.055} \\approx 0.9465$ means only about 94.65% of a dollar's value one year from now is captured today, so approximately 5.35% is lost to discounting each year, matching the statement exactly.
+
+Annual continuous discount factor:
+
+$$e^{-0.055} \\approx 0.946481 \\approx 0.9465$$
+
+$$1 - 0.9465 = 0.0535 = 5.35\\%$$
+
+About 5.35% of next year's dollar is lost to one year of continuous discounting.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 97,
+    solution_overview: `A company needs to have \\$250,000 available in 12 years to retire a bond issue, and can invest in an account offering continuous compounding at a nominal annual rate of 5.5%. The CFO wants to know how much must be invested today, and how this compares to ordinary annual compounding at the same nominal rate.
+
+**Part 1: Setup.**
+
+Target future amount = \\$250,000
+
+Nominal annual rate r = 5.5% = 0.055
+
+Compounding: continuous (and ordinary annual, for comparison)
+
+t = 12 years (and 6 years for part d)
+
+**Part 2: Formula.**
+
+Continuous-compounding present value: $S_0=S(t)e^{-rt}$
+
+Ordinary annual present value: $S_0=S(t)/(1+r)^{t}$
+
+**Part 3: Solve.**
+
+**1.** $S_0 = 250,000e^{-0.66} = 250,000 \\times 0.516855 = \\$129,213.75$.
+
+**2.** Under ordinary annual compounding instead, $S_0 = 250,000/(1.055)^{12} = 250,000/1.901209 = \\$131,495.10$, HIGHER than the continuous figure of $\\$129,213.75$, not lower, since continuous compounding is the most efficient schedule and needs less deposited today.
+
+**3.** The correctly computed gap is $131,495.10 - 129,213.75 = \\$2,281.35$, not $\\$4,280.35$.
+
+**4.** Shortening the horizon to $6$ years, $S_0' = 250,000e^{-0.33} = 250,000 \\times 0.718924 = \\$179,731.00$, far MORE than half of the $12$-year figure of $\\$129,213.75$, not less.
+
+**5.** Since $e^{-0.055}\\approx0.9465$, about $5.35\\%$ of value is lost to discounting each year.
+`,
+  },
+===== TASK 98 =====
+    id: `math-11-98`,
+    case_id: `MATH 11.98`,
+    title: `Continuous-Compounding Lump Sum vs. Discrete Annuity for a Biotech Milestone`,
+    subsection: `11.5`,
+    context: `A biotech company sets aside \\$75,000 today in an account offering continuous compounding at a nominal 6.25% annual rate, aiming to accumulate funds for a 9-year R&D milestone. Management compares this to instead depositing the same \\$75,000 total, spread evenly as \\$8,333.33 at the end of each of the 9 years, into a separate account earning a discrete 6.25% annual rate.`,
+    statements: [
+      `The lump sum's future value under continuous compounding is approximately \\$131,629.13.`,
+      `The annuity's future value is LOWER than the lump-sum continuous-compounding result, despite both strategies involving the same total \\$75,000 in contributions.`,
+      `The lump-sum strategy outperforms the annuity strategy by more than \\$30,000.00.`,
+      `This gap arises largely because the lump sum earns interest on the FULL \\$75,000 from day one, while the annuity's later deposits earn interest for only a very short time before the horizon ends.`,
+      `If the company had instead invested the full \\$75,000 using discrete ANNUAL compounding at the same 6.25% rate for 9 years, the result would EXCEED the annuity strategy's future value of \\$96,757.60.`,
+    ],
+    answer_key: [true, true, true, true, true],
+    tactical_explanations: [
+      `**A) The lump sum's future value under continuous compounding is approximately \\$131,629.13.**  (true)
+
+$S_{\\mathrm{cont}} = 75,000 \\times e^{0.5625} = \\$131,629.13$, matching the statement exactly.
+
+$$S_{\\mathrm{cont}} = 75,000 \\, e^{0.0625 \\times 9} = 75,000 \\, e^{0.5625}$$
+
+$$e^{0.5625} \\approx 1.755055$$
+
+$$75,000 \\times 1.755055 = \\$131,629.13$$`,
+      `**B) The annuity's future value is LOWER than the lump-sum continuous-compounding result, despite both strategies involving the same total \\$75,000 in contributions.**  (true)
+
+F9 = \\$96,757.60, which is indeed lower than the lump-sum continuous-compounding result of \\$131,629.13, illustrating that WHEN money is invested matters as much as HOW MUCH, even when total contributions are equal.
+
+Annuity of 8,333.33 per year for 9 years at 6.25%:
+
+$$F_9 = (8,333.33 / 0.0625)\\bigl[(1.0625)^{9} - 1\\bigr]$$
+
+$$(1.0625)^{9} \\approx 1.725682,\\quad 1.725682 - 1 = 0.725682$$
+
+$$133,333.33 \\times 0.725682 = \\$96,757.60$$
+
+\\$96,757.60 is below \\$131,629.13 even though both plans contribute \\$75,000 in total.`,
+      `**C) The lump-sum strategy outperforms the annuity strategy by more than \\$30,000.00.**  (true)
+
+The gap is 131,629.13 - 96,757.60 = \\$34,871.53, which exceeds \\$30,000.00, matching the statement exactly.`,
+      `**D) This gap arises largely because the lump sum earns interest on the FULL \\$75,000 from day one, while the annuity's later deposits earn interest for only a very short time before the horizon ends.**  (true)
+
+This is the correct conceptual explanation: front-loading the entire amount lets it compound over the full horizon, while spreading contributions out means later deposits have little to no time to grow before the milestone date.
+
+The lump sum compounds on the entire \\$75,000 for all 9 years. The last annuity deposit of \\$8,333.33 earns nothing beyond the instant it is paid. Timing, not the total contributed, drives the gap.`,
+      `**E) If the company had instead invested the full \\$75,000 using discrete ANNUAL compounding at the same 6.25% rate for 9 years, the result would EXCEED the annuity strategy's future value of \\$96,757.60.**  (true)
+
+$S_{\\mathrm{discrete}} = 75,000 \\times (1.0625)^{9} = \\$129,426.15$, which does exceed the annuity strategy's future value of \\$96,757.60, matching the statement exactly (though it still falls short of the continuous-compounding result of \\$131,629.13).
+
+Discrete annual compounding of the same lump sum:
+
+$$S_{\\mathrm{disc}} = 75,000 \\times (1.0625)^{9} = 75,000 \\times 1.725682 = \\$129,426.15$$
+
+\\$129,426.15 does exceed the annuity's \\$96,757.60 (while still sitting below the continuous \\$131,629.13).`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 98,
+    solution_overview: `A biotech company sets aside \\$75,000 today in an account offering continuous compounding at a nominal 6.25% annual rate, aiming to accumulate funds for a 9-year R&D milestone. Management compares this to instead depositing the same \\$75,000 total, spread evenly as \\$8,333.33 at the end of each of the 9 years, into a separate account earning a discrete 6.25% annual rate.
+
+**Part 1: Setup.**
+
+Lump sum $P = \\$75,000$ today; annuity $a = \\$8,333.33$ for $n = 9$; $r = 0.0625$
+
+Compounding: continuous (lump sum) vs. discrete annual (annuity)
+
+**Part 2: Formula.**
+
+$S = Pe^{rt}$; $F_n = (a/r)[(1+r)^{n}-1]$; discrete $S = P(1+r)^{n}$
+
+**Part 3: Solve.**
+
+**1.** $S_{\\mathrm{cont}} = 75,000 e^{0.5625} = \\$131,629.13$.
+
+**2.** $F_9 = \\$96,757.60$; gap $= \\$34,871.53$ (exceeds $\\$30,000$), because later annuity deposits compound for less time than the lump sum.
+
+**3.** Full lump sum with discrete compounding: $S_{\\mathrm{discrete}} = \\$129,426.15$ — above the annuity but still below continuous.
+`,
+  },
+===== TASK 99 =====
+    id: `math-11-99`,
+    case_id: `MATH 11.99`,
+    title: `Mixed Financial Planning: Annuity Due, Continuous Compounding & Perpetuity`,
+    subsection: `11.5`,
+    context: `A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of \\$4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests \\$20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying \\$3,000 per year forever, at 8%, for a maintenance reserve fund.`,
+    statements: [
+      `The present value of the annuity-due lease payments is approximately \\$18,110.94.`,
+      `The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately \\$27,610.90.`,
+      `The \\$20,000 investment under continuous compounding at a nominal 6% rate accumulates, after 7 years, to approximately \\$31,439.24.`,
+      `The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value that is LESS than double the present value of the 5-year annuity-due lease payments.`,
+      `Comparing the accumulated continuous-compounding investment after 7 years to the perpetuity's present value, the continuous-compounding result is LARGER.`,
+    ],
+    answer_key: [true, false, false, false, false],
+    tactical_explanations: [
+      `**A) The present value of the annuity-due lease payments is approximately \\$18,110.94.**  (true)
+
+Computing the ordinary annuity present value first (\\$16,769.39) and then multiplying by (1.08) to shift each payment one period earlier gives \\$18,110.94, matching the statement exactly.
+
+Ordinary present value, then the due shift:
+
+$$P_{\\mathrm{ord}} = (4,200 / 0.08)\\bigl[1 - 1/(1.08)^{5}\\bigr]$$
+
+$$(1.08)^{5} \\approx 1.469328,\\quad 1/1.469328 \\approx 0.680583$$
+
+$$1 - 0.680583 = 0.319417$$
+
+$$52,500 \\times 0.319417 = \\$16,769.39$$
+
+$$P_{\\mathrm{due}} = 16,769.39 \\times 1.08 = \\$18,110.94$$`,
+      `**B) The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately \\$27,610.90.**  (false)
+
+Computing the ordinary annuity future value first (\\$24,639.72) and then multiplying by (1.08) gives \\$26,610.90, not \\$27,610.90 as stated.
+
+Ordinary future value, then the due shift:
+
+$$F_{\\mathrm{ord}} = (4,200 / 0.08)\\bigl[(1.08)^{5} - 1\\bigr] = 52,500 \\times 0.469328 = \\$24,639.72$$
+
+$$F_{\\mathrm{due}} = 24,639.72 \\times 1.08 = \\$26,610.90$$
+
+The claim's \\$27,610.90 is \\$1,000 too high.`,
+      `**C) The \\$20,000 investment under continuous compounding at a nominal 6% rate accumulates, after 7 years, to approximately \\$31,439.24.**  (false)
+
+Plugging $P = 20,000$, $r = 0.06$, and $t = 7$ into $S = Pe^{rt}$ gives $S = 20,000 e^{0.42} \\approx 20,000 \\times 1.521961 = \\$30,439.24$, not $\\$31,439.24$ as stated.`,
+      `**D) The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value that is LESS than double the present value of the 5-year annuity-due lease payments.**  (false)
+
+The perpetuity is $3,000/0.08 = \\$37,500.00$, which actually exceeds double the annuity-due lease value, $2 \\times \\$18,110.94 = \\$36,221.88$, so it is more than double, not less as stated.`,
+      `**E) Comparing the accumulated continuous-compounding investment after 7 years to the perpetuity's present value, the continuous-compounding result is LARGER.**  (false)
+
+The continuous-compounding investment grows to \\$30,439.24 after 7 years, which is LESS than the perpetuity's present value of \\$37,500.00, not larger.
+
+\\$30,439.24 (continuous investment after 7 years) versus \\$37,500 (perpetuity present value): the continuous result is smaller, not larger.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 99,
+    solution_overview: `A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of \\$4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests \\$20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying \\$3,000 per year forever, at 8%, for a maintenance reserve fund.
+
+**Part 1: Setup.**
+
+Annuity due: $a = \\$4,200$, $n = 5$, $r = 0.08$
+
+Continuous investment: $P = \\$20,000$, $r = 0.06$, $t = 7$
+
+Perpetuity: $a = \\$3,000$, $r = 0.08$
+
+**Part 2: Formula.**
+
+$P_{\\mathrm{due}}=(a/r)[1-1/(1+r)^{n}](1+r)$; $F_{\\mathrm{due}}=(a/r)[(1+r)^{n}-1](1+r)$
+
+$S=Pe^{rt}$; perpetuity $P=a/r$
+
+**Part 3: Solve.**
+
+**1.** Ordinary PV $\\$16,769.39$ lifts to $P_{\\mathrm{due}} = \\$18,110.94$; $F_{\\mathrm{due}} = \\$26,610.90$ (not $\\$27,610.90$).
+
+**2.** Continuous investment: $S = 20,000 e^{0.42} = \\$30,439.24$ (not $\\$31,439.24$).
+
+**3.** Perpetuity $P = 3,000/0.08 = \\$37,500.00$ — more than double the lease PV, and larger than the continuous result (not smaller).
+`,
+  },
+===== TASK 100 =====
+    id: `math-11-100`,
+    case_id: `MATH 11.100`,
+    title: `Capstone: A Family Office's Four-Component Windfall Allocation`,
+    subsection: `11.5`,
+    context: `A family office is structuring a client's financial plan using four separate tools. Component 1: \\$150,000 is invested today in a continuous-compounding account at a nominal 5% rate for 10 years, to fund a future purchase. Component 2: the client needs \\$80,000 available in 6 years for a home renovation, funded today by a single deposit at a discrete 6% annual rate. Component 3: the client will receive an ordinary annuity of \\$10,000 at the end of each year for 12 years from a structured settlement, discounted at 7%. Component 4: the remainder will endow a scholarship as a growing perpetuity paying \\$5,000 next year, growing 2% annually forever, at a required return of 7%.`,
+    statements: [
+      `Component 1's accumulated value after 10 years under continuous compounding is approximately \\$247,308.20.`,
+      `Component 2's required deposit today, using discrete annual compounding, is approximately \\$57,396.85.`,
+      `Component 3's present value, the 12-year ordinary annuity of \\$10,000 at 7%, is approximately \\$79,429.40.`,
+      `Component 4's present value, the growing perpetuity paying \\$5,000 next year and growing at 2% forever at a 7% required return, is exactly \\$100,000.00.`,
+      `Summing the present-day resources committed to all four components - Component 1's initial investment, Component 2's required deposit today, Component 3's present value, and Component 4's present value - the total exceeds \\$500,000.00.`,
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A) Component 1's accumulated value after 10 years under continuous compounding is approximately \\$247,308.20.**  (true)
+
+Plugging $P = 150,000$, $r = 0.05$, and $t = 10$ into $S = Pe^{rt}$ gives $S = 150,000 e^{0.50} \\approx 150,000 \\times 1.648721 = \\$247,308.20$, matching the statement exactly.`,
+      `**B) Component 2's required deposit today, using discrete annual compounding, is approximately \\$57,396.85.**  (false)
+
+Plugging $A = 80,000$, $r = 0.06$, and $n = 6$ into $x = A/(1+r)^{n}$ gives $x = 80,000/(1.06)^{6} \\approx 80,000/1.418519 = \\$56,396.85$, not $\\$57,396.85$ as stated.`,
+      `**C) Component 3's present value, the 12-year ordinary annuity of \\$10,000 at 7%, is approximately \\$79,429.40.**  (true)
+
+Plugging $a = 10,000$, $r = 0.07$, and $n = 12$ into $P_n = (a/r)[1-1/(1+r)^{n}]$ gives $P_{12} \\approx 142,857.14 \\times 0.556005 = \\$79,429.40$, matching the statement exactly.`,
+      `**D) Component 4's present value, the growing perpetuity paying \\$5,000 next year and growing at 2% forever at a 7% required return, is exactly \\$100,000.00.**  (true)
+
+$P = a_1/(r-g) = 5,000/(0.07-0.02) = 5,000/0.05 = \\$100,000.00$, matching the statement exactly.`,
+      `**E) Summing the present-day resources committed to all four components - Component 1's initial investment, Component 2's required deposit today, Component 3's present value, and Component 4's present value - the total exceeds \\$500,000.00.**  (false)
+
+Adding all four present-day figures gives \\$385,826.25 (using the correct Component 2 figure of \\$56,396.85), which is LESS than \\$500,000.00, not more - the plan is comfortably within, not in excess of, the available resources implied by this comparison.
+
+Present-day commitments, using the correct Component 2 deposit:
+
+$$150,000 + 56,396.85 + 79,429.40 + 100,000 = \\$385,826.25$$
+
+\\$385,826.25 is below \\$500,000, not above.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 100,
+    solution_overview: `A family office is structuring a client's financial plan using four separate tools. Component 1: \\$150,000 is invested today in a continuous-compounding account at a nominal 5% rate for 10 years, to fund a future purchase. Component 2: the client needs \\$80,000 available in 6 years for a home renovation, funded today by a single deposit at a discrete 6% annual rate. Component 3: the client will receive an ordinary annuity of \\$10,000 at the end of each year for 12 years from a structured settlement, discounted at 7%. Component 4: the remainder will endow a scholarship as a growing perpetuity paying \\$5,000 next year, growing 2% annually forever, at a required return of 7%.
+
+**Part 1: Setup.**
+
+Comp 1: $P = \\$150,000$, $r = 0.05$, $t = 10$, continuous
+
+Comp 2: target $\\$80,000$, $r = 0.06$, $n = 6$, discrete
+
+Comp 3: $a = \\$10,000$, $n = 12$, $r = 0.07$
+
+Comp 4: $a_1 = \\$5,000$, $g = 0.02$, $r = 0.07$
+
+**Part 2: Formula.**
+
+$S=Pe^{rt}$; $x=A/(1+r)^{n}$; $P_n=(a/r)[1-1/(1+r)^{n}]$; growing perpetuity $P=a_1/(r-g)$
+
+**Part 3: Solve.**
+
+**1.** Comp $1$: $S = \\$247,308.20$; Comp $2$: $x = \\$56,396.85$ (not $\\$57,396.85$).
+
+**2.** Comp $3$: $P_{12} = \\$79,429.40$; Comp $4$: $P = \\$100,000.00$.
+
+**3.** Summing all four figures: $\\$385,826.25$, which is less than $\\$500,000.00$ (not more).
+`,
+  },
+===== TASK 101 =====
+    id: `math-11-101`,
+    case_id: `MATH 11.101`,
+    title: `Equipment Loan: Finding the Equal Annual Payment`,
+    subsection: `11.6`,
+    context: `A small bakery-supply distributor borrows \\$60,000 at the beginning of the year to buy a delivery van and a walk-in cooler. The loan is to be repaid in 6 equal instalments at the end of each year, with interest charged at 12% per year, compounding annually.`,
+    statements: [
+      `The periodic interest rate to use in the payment formula is r = 0.12.`,
+      `The required equal annual payment is approximately \\$14,593.54.`,
+      `The interest portion of the first payment is exactly \\$7,200.00.`,
+      `The principal-repayment portion of the first payment is more than half of the total payment amount.`,
+      `The outstanding balance immediately after the second payment is approximately \\$45,000.00.`,
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A) The periodic interest rate to use in the payment formula is r = 0.12.**  (true)
+
+A 12% annual interest rate charged once per year, compounding annually, is simply used as the decimal r = 0.12 in every calculation for this loan.`,
+      `**B) The required equal annual payment is approximately \\$14,593.54.**  (true)
+
+Solving $a: $rK/[1-(1+r)^{-n}]$ with r=0.12, K=60,000, n=6 gives a \\approx \\$14,593.54$, matching exactly.
+
+$$a = \\frac{0.12 \\times 60,000}{1 - (1.12)^{-6}} = \\frac{7,200}{1 - 0.506631} = \\frac{7,200}{0.493369} = \\$14,593.54$$`,
+      `**C) The interest portion of the first payment is exactly \\$7,200.00.**  (true)
+
+In year 1 the full \\$60,000 principal is outstanding, so interest is simply $0.12 \\times 60,000 = \\$7,200.00$ exactly, matching the claim with no rounding needed.`,
+      `**D) The principal-repayment portion of the first payment is more than half of the total payment amount.**  (true)
+
+Subtracting the \\$7,200.00 interest charge from the \\$14,593.54 payment leaves \\$7,393.54 for principal reduction. Comparing that to half of the payment (\\$7,296.77) shows the principal portion is indeed slightly larger than half, even in the very first year when interest is at its highest relative to later years.
+
+Year-1 principal: $14,593.54 - 7,200.00 = \\$7,393.54$.
+
+Half the payment: $14,593.54 / 2 = \\$7,296.77$.
+
+\\$7,393.54 > \\$7,296.77, so principal already exceeds half even in year 1.`,
+      `**E) The outstanding balance immediately after the second payment is approximately \\$45,000.00.**  (false)
+
+Carrying the amortization forward two full years - recomputing interest on the shrinking balance each time and subtracting the resulting principal portion - gives a balance of approximately \\$44,325.69 after the second payment, not \\$45,000.00.
+
+After payment 1: $60,000 - 7,393.54 = \\$52,606.46$.
+
+Year-2 interest: $0.12 \\times 52,606.46 = \\$6,312.77$.
+
+Year-2 principal: $14,593.54 - 6,312.77 = \\$8,280.77$.
+
+Balance after payment 2: $52,606.46 - 8,280.77 = \\$44,325.69$, not \\$45,000.`,
+    ],
+    difficulty_level: `1/5`,
+    sort_order: 101,
+    solution_overview: `A small bakery-supply distributor borrows \\$60,000 at the beginning of the year to buy a delivery van and a walk-in cooler. The loan is repaid in $6$ equal year-end instalments at $12\\%$ per year, compounding annually.
+
+**Part 1: Setup.**
+
+$K = \\$60,000$, $r = 0.12$, $n = 6$ equal annual payments.
+
+**Part 2: Formula.**
+
+$a = rK/[1-(1+r)^{-n}]$. Interest $= r \\times$ opening balance; principal $=$ payment $-$ interest; new balance $=$ old $-$ principal.
+
+**Part 3: Solve.**
+
+**1.** $a = 0.12\\times60,000/[1-(1.12)^{-6}] = 7,200/0.493369 \\approx \\$14,593.54$.
+
+**2.** Year-$1$ interest $\\$7,200.00$; principal $\\$7,393.54$ (more than half of the payment $\\$7,296.77$); balance $\\$52,606.46$.
+
+**3.** Year-$2$ interest $\\$6,312.77$; principal $\\$8,280.77$; balance $\\$44,325.69$.`,
+  },
+===== TASK 102 =====
+    id: `math-11-102`,
+    case_id: `MATH 11.102`,
+    title: `Auto Dealership Financing with Monthly Compounding`,
+    subsection: `11.6`,
+    context: `A used-car dealership finances a customer's \\$24,000 vehicle purchase over 4 years, with equal payments due at the end of each month and interest charged at a nominal annual rate of 9%, compounding monthly.`,
+    statements: [
+      `The monthly periodic interest rate used in the payment formula is r = 0.75%.`,
+      `The required monthly payment is approximately \\$597.24.`,
+      `The total amount paid over all 48 monthly payments is approximately \\$29,500.00.`,
+      `The total interest paid over the life of the loan is approximately \\$4,667.57.`,
+      `If the same \\$24,000 were instead repaid in 4 equal annual instalments at the same nominal 9% rate, the required annual payment would be less than \\$2,388.96.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A) The monthly periodic interest rate used in the payment formula is r = 0.75%.**  (true)
+
+Since payments and compounding are both monthly, the periodic rate is the nominal annual rate divided by 12: $r = 0.09 / 12 = 0.0075 = 0.75\\%$, matching the claim exactly.`,
+      `**B) The required monthly payment is approximately \\$597.24.**  (true)
+
+With $n = 4 \\times 12 = 48$ monthly payments and $r = 0.0075$:
+
+$$a = \\frac{0.0075 \\times 24,000}{1 - (1.0075)^{-48}} = \\frac{180}{0.301329} = \\$597.24$$`,
+      `**C) The total amount paid over all 48 monthly payments is approximately \\$29,500.00.**  (false)
+
+Total paid is the payment times the number of months: $597.24 \\times 48 = \\$28,667.52 \\approx \\$28,667.57$, not \\$29,500.00.`,
+      `**D) The total interest paid over the life of the loan is approximately \\$4,667.57.**  (true)
+
+Total interest is total paid minus principal: $28,667.57 - 24,000 = \\$4,667.57$, matching the claim.`,
+      `**E) If the same \\$24,000 were instead repaid in 4 equal annual instalments at the same nominal 9% rate, the required annual payment would be less than \\$2,388.96.**  (false)
+
+Spreading the same \\$24,000 over just 4 annual payments instead of 48 monthly ones requires a much larger payment per period:
+
+$$a_{\\mathrm{ann}} = \\frac{0.09 \\times 24,000}{1 - (1.09)^{-4}} = \\frac{2,160}{0.291676} = \\$7,408.05$$
+
+\\$7,408.05 is far above \\$2,388.96, not below it.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 102,
+    solution_overview: `A used-car dealership finances a customer's \\$24,000 vehicle purchase over 4 years, with equal payments due at the end of each month and interest charged at a nominal annual rate of 9%, compounding monthly.
+
+**Part 1: Setup.**
+
+K (amount financed) = \\$24,000
+
+$Nominal annual rate = 9%, compounding monthly
+
+Term = 4 years (48 monthly payments)
+
+**Part 2: Formula.**
+
+Monthly periodic rate: r = nominal annual rate / 12
+
+Equal-payment formula: $a = rK/[1-(1+r)^{-n}]$
+
+Total paid = a × n
+
+Total interest = total paid - K
+
+**Part 3: Solve.**
+
+**1.** $r = 0.09/12 = 0.0075$; $n = 4 \\times 12 = 48$ months.
+
+**2.** $a = 0.0075\\times24,000/[1-(1.0075)^{-48}] = 180/0.301329 \\approx \\$597.24$.
+
+**3.** Total paid: $\\$597.24 \\times 48 \\approx \\$28,667.57$ (not $\\$29,500.00$).
+
+**4.** Total interest: $\\$28,667.57 - \\$24,000.00 \\approx \\$4,667.57$.
+
+**5.** For $4$ equal annual instalments at $r = 0.09$, $n = 4$: $a = 0.09\\times24,000/[1-(1.09)^{-4}] = 2,160/0.291676 \\approx \\$7,408.05$, which is far more than $\\$2,388.96$, not less.`,
+  },
+===== TASK 103 =====
+    id: `math-11-103`,
+    case_id: `MATH 11.103`,
+    title: `Restaurant Renovation Loan: Tracking the Amortization Schedule`,
+    subsection: `11.6`,
+    context: `A restaurant owner borrows \\$45,000 to renovate the dining room, agreeing to repay the loan in 5 equal annual instalments at the end of each year, with interest at 10% per year compounding annually.`,
+    statements: [
+      `The required equal annual payment is approximately \\$11,870.89.`,
+      `The interest portion of the first payment is \\$5,000.00.`,
+      `The outstanding balance immediately after the third payment is approximately \\$20,602.37.`,
+      `In the fourth year, the interest portion of the payment is larger than the principal portion of the payment.`,
+      `Adding up the principal-repayment portions of all 5 payments gives a total of exactly \\$46,200.00.`,
+    ],
+    answer_key: [true, false, true, false, false],
+    tactical_explanations: [
+      `**A) The required equal annual payment is approximately \\$11,870.89.**  (true)
+
+Solving $a: $rK/[1-(1+r)^{-n}]$ with r=0.10, K=45,000, n=5 gives a \\approx \\$11,870.89$, matching exactly.
+
+$$a = \\frac{0.10 \\times 45,000}{1 - (1.10)^{-5}} = \\frac{4,500}{0.379079} = \\$11,870.89$$`,
+      `**B) The interest portion of the first payment is \\$5,000.00.**  (false)
+
+In year 1 the full \\$45,000 principal is outstanding, so interest is $0.10 \\times 45,000 = \\$4,500$, not \\$5,000.00.`,
+      `**C) The outstanding balance immediately after the third payment is approximately \\$20,602.37.**  (true)
+
+Year 1: interest \\$4,500.00, principal \\$7,370.89, balance \\$37,629.11.
+
+Year 2: interest \\$3,762.91, principal \\$8,107.98, balance \\$29,521.13.
+
+Year 3: interest \\$2,952.11, principal \\$8,918.78, balance \\$20,602.35 ≈ \\$20,602.37.`,
+      `**D) In the fourth year, the interest portion of the payment is larger than the principal portion of the payment.**  (false)
+
+Using the year-3 balance of \\$20,602.37, year-4 interest is $0.10 \\times 20,602.37 = \\$2,060.24$ and principal is $11,870.89 - 2,060.24 = \\$9,810.65$. Since \\$2,060.24 < \\$9,810.65, interest is smaller than principal, not larger.`,
+      `**E) Adding up the principal-repayment portions of all 5 payments gives a total of exactly \\$46,200.00.**  (false)
+
+Since the loan is fully paid off after year 5 (balance reaches \\$0.00), the principal portions must sum to exactly the original \\$45,000.00 borrowed, not \\$46,200.00.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 103,
+    solution_overview: `A restaurant owner borrows \\$45,000 to renovate the dining room, agreeing to repay the loan in $5$ equal annual instalments at the end of each year, with interest at $10\\%$ per year compounding annually.
+
+**Part 1: Setup.**
+
+$K = \\$45,000$, $r = 0.10$, $n = 5$ equal annual payments.
+
+**Part 2: Formula.**
+
+$a = rK/[1-(1+r)^{-n}]$. Interest $= r \\times$ opening balance; principal $=$ payment $-$ interest; new balance $=$ old $-$ principal.
+
+**Part 3: Solve.**
+
+**1.** $a = 0.10\\times45,000/[1-(1.10)^{-5}] = 4,500/0.379079 \\approx \\$11,870.89$.
+
+**2.** Year $1$: interest $\\$4,500.00$; principal $\\$7,370.89$; balance $\\$37,629.11$. Year $2$: interest $\\$3,762.91$; principal $\\$8,107.98$; balance $\\$29,521.14$.
+
+**3.** Year $3$: interest $\\$2,952.11$; principal $\\$8,918.77$; balance $\\$20,602.37$. Year $4$: interest $\\$2,060.24$ is much smaller than principal $\\$9,810.65$.
+
+**4.** Year $5$: interest $\\$1,079.17$; principal $\\$10,791.72$; balance $\\$0$. Sum of principals $= \\$45,000$ exactly.`,
+  },
+===== TASK 104 =====
+    id: `math-11-104`,
+    case_id: `MATH 11.104`,
+    title: `Franchise Buy-In Paid as an Annuity Due`,
+    subsection: `11.6`,
+    context: `A new franchisee agrees to pay \\$150,000 for the rights to open a location, structured as 10 equal annual payments, with the first payment due immediately and each following payment due at the beginning of each subsequent year. The agreed annual interest rate is 11%.`,
+    statements: [
+      `The combined present-value factor multiplying the payment is approximately 6.537048.`,
+      `The required equal payment a is approximately \\$22,946.14.`,
+      `If instead the first payment were due at the end of year 1, the required equal payment would be lower than \\$22,946.14.`,
+      `The difference between the ordinary-annuity payment and the annuity-due payment is approximately \\$2,524.08.`,
+      `The total of all 10 annuity-due payments combined is approximately \\$220,000.00.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A) The combined present-value factor multiplying the payment is approximately 6.537048.**  (true)
+
+The first payment happens at time zero and isn't discounted; the remaining 9 payments form an ordinary annuity discounted back from year 1:
+
+$$1 + \\frac{1}{0.11}\\bigl[1 - (1.11)^{-9}\\bigr]$$
+
+$$(1.11)^{-9} \\approx 0.391110$$
+
+$$1 - 0.391110 = 0.608890$$
+
+$$9.090909 \\times 0.608890 = 5.537048$$
+
+$$1 + 5.537048 = 6.537048$$`,
+      `**B) The required equal payment a is approximately \\$22,946.14.**  (true)
+
+Dividing the \\$150,000 owed by the combined factor: $a = 150,000 / 6.537048 = \\$22,946.14$, matching exactly.`,
+      `**C) If instead the first payment were due at the end of year 1, the required equal payment would be lower than \\$22,946.14.**  (false)
+
+Delaying the first payment to year-end instead of today requires a larger, not smaller, instalment:
+
+$$a_{\\mathrm{ord}} = \\frac{0.11 \\times 150,000}{1 - (1.11)^{-10}} = \\frac{16,500}{0.647848} = \\$25,470.21$$
+
+\\$25,470.21 > \\$22,946.14, so delaying the first payment raises the required instalment, not lowers it.`,
+      `**D) The difference between the ordinary-annuity payment and the annuity-due payment is approximately \\$2,524.08.**  (true)
+
+$25,470.21 - 22,946.14 = \\$2,524.07 \\approx \\$2,524.08$, matching the claim.`,
+      `**E) The total of all 10 annuity-due payments combined is approximately \\$220,000.00.**  (false)
+
+Ten payments of \\$22,946.14 each total $22,946.14 \\times 10 = \\$229,461.40$, not \\$220,000.00.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 104,
+    solution_overview: `A new franchisee agrees to pay \\$150,000 for the rights to open a location, structured as 10 equal annual payments, with the first payment due immediately and each following payment due at the beginning of each subsequent year. The agreed annual interest rate is 11%.
+
+**Part 1: Setup.**
+
+K (present value owed) = \\$150,000
+
+r (annual interest rate) = 0.11
+
+n = 10 total payments, first one immediate
+
+**Part 2: Formula.**
+
+Annuity-due present value: $K = a + (a/r)[1-(1+r)^{-(n-1)}]$
+
+Ordinary-annuity comparison: $a_{\\mathrm{ordinary}} = rK/[1-(1+r)^{-n}]$
+
+**Part 3: Solve.**
+
+**1.** Combined factor: $1 + (1/0.11)[1-(1.11)^{-9}] = 1 + 9.090909\\times (1-0.391110) = 1 + 5.537048 \\approx 6.537048$.
+
+**2.** $a = 150,000/6.537048 \\approx \\$22,946.14$.
+
+**3.** Ordinary-annuity payment: $a_{\\mathrm{ordinary}} = 0.11\\times150,000/[1-(1.11)^{-10}] = 16,500/0.647848 \\approx \\$25,470.21$, which is higher than $\\$22,946.14$, not lower.
+
+**4.** Difference: $\\$25,470.21 - \\$22,946.14 \\approx \\$2,524.08$.
+
+**5.** Total of all $10$ due payments: $\\$22,946.14 \\times 10 \\approx \\$229,461.39$, not $\\$220,000.00$.`,
+  },
+===== TASK 105 =====
+    id: `math-11-105`,
+    case_id: `MATH 11.105`,
+    title: `Fixed Annual Payment on a Working-Capital Loan`,
+    subsection: `11.6`,
+    context: `A landscaping company borrows \\$35,000 at 13% annual interest and commits to repaying exactly \\$10,000 at the end of each year, continuing until the debt is fully retired, with a smaller final payment to settle whatever remains.`,
+    statements: [
+      `The smallest whole number of yearly payments needed to pay off the loan is n = 5.`,
+      `The first four payments are each exactly \\$10,000.00, totalling \\$40,000.00.`,
+      `The fifth and final payment is approximately \\$9,682.53.`,
+      `The total amount paid over the entire life of the loan is approximately \\$49,682.53.`,
+      `The total interest paid over the life of the loan is less than the original \\$35,000 principal.`,
+    ],
+    answer_key: [true, true, true, true, true],
+    tactical_explanations: [
+      `**A) The smallest whole number of yearly payments needed to pay off the loan is n = 5.**  (true)
+
+Evaluating $[\\ln a - \\ln(a-rK)]/\\ln(1+r)$ with a=10,000, r=0.13, K=35,000 gives approximately 4.9663; since this is not a whole number, the smallest integer at or above it is 5, meaning 5 payments are needed.
+
+$$n \\ge \\frac{\\ln 10,000 - \\ln(10,000 - 0.13 \\times 35,000)}{\\ln 1.13} = \\frac{\\ln 10,000 - \\ln 5,450}{\\ln 1.13} \\approx 4.9663$$
+
+Smallest integer n is 5.`,
+      `**B) The first four payments are each exactly \\$10,000.00, totalling \\$40,000.00.**  (true)
+
+Since $n = 5$ payments are needed, the first four are full \\$10,000.00 payments, totalling $4 \\times 10,000 = \\$40,000.00$, matching the claim.`,
+      `**C) The fifth and final payment is approximately \\$9,682.53.**  (true)
+
+Loan after 4 years: $35,000 \\times (1.13)^{4} \\approx \\$57,066.58$.
+
+Four payments accumulated: $(10,000 / 0.13)\\bigl[(1.13)^{4} - 1\\bigr] \\approx \\$48,497.97$.
+
+Remainder at year 4: $57,066.58 - 48,497.97 = \\$8,568.61$.
+
+Final payment: $8,568.61 \\times 1.13 = \\$9,682.53$.`,
+      `**D) The total amount paid over the entire life of the loan is approximately \\$49,682.53.**  (true)
+
+Adding the four \\$10,000.00 payments to the final \\$9,682.53 payment: $40,000 + 9,682.53 = \\$49,682.53$, matching the claim.`,
+      `**E) The total interest paid over the life of the loan is less than the original \\$35,000 principal.**  (true)
+
+Total interest is $49,682.53 - 35,000 = \\$14,682.53$, which is indeed less than the \\$35,000.00 principal.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 105,
+    solution_overview: `A landscaping company borrows \\$35,000 at 13% annual interest and commits to repaying exactly \\$10,000 at the end of each year, continuing until the debt is fully retired, with a smaller final payment to settle whatever remains.
+
+**Part 1: Setup.**
+
+K (loan amount) = \\$35,000
+
+r (annual interest rate) = 0.13
+
+a (fixed annual payment) = \\$10,000
+
+**Part 2: Formula.**
+
+Number of periods needed: smallest integer n with $n \\ge [\\ln a - \\ln(a-rK)]/\\ln(1+r)$; the final payment is smaller than a unless this holds exactly
+
+Future value of loan after m years: $K(1+r)^{m}$
+
+Future value of m fixed payments (valued at the time of the m-th payment): $(a/r)[(1+r)^{m} - 1]$
+
+**Part 3: Solve.**
+
+**1.** $[\\ln(10,000) - \\ln(10,000 - 0.13\\times35,000)]/\\ln(1.13) = [\\ln(10,000) - \\ln(5,450)]/\\ln(1.13) \\approx 4.9663$, so the smallest integer $n$ satisfying the condition is $n = 5$.
+
+**2.** Four full payments of $\\$10,000$ total $4\\times10,000 = \\$40,000.00$.
+
+**3.** Future value of the loan after $4$ years: $35,000\\times(1.13)^{4}\\approx\\$57,066.58$.
+
+**4.** Future value of the $4$ payments of $\\$10,000$, valued at year $4$: $(10,000/0.13)\\times[(1.13)^{4} - 1]\\approx\\$48,497.97$.
+
+**5.** Remaining debt at year $4$: $\\$57,066.58 - \\$48,497.97 \\approx \\$8,568.61$; carrying this forward one more year with interest gives the final payment: $\\$8,568.61\\times1.13 \\approx \\$9,682.53$.
+
+**6.** Total paid: $\\$40,000.00 + \\$9,682.53 \\approx \\$49,682.53$; total interest $= \\$49,682.53 - \\$35,000.00 \\approx \\$14,682.53$, which is indeed less than $\\$35,000.00$.`,
+  },
+===== TASK 107 =====
+    id: `math-11-107`,
+    case_id: `MATH 11.107`,
+    title: `Quarterly Savings Deposits with Annual Compounding`,
+    subsection: `11.6`,
+    context: `At the end of each quarter, a small business owner deposits \\$250 into a savings account that pays interest once per year, at an annual rate of 8%. Because each quarterly deposit sits in the account for only part of the year before the annual interest is credited, the bank applies simple interest to each deposit for the fraction of the year it remains on deposit before the year-end crediting date.`,
+    statements: [
+      `The year-end equivalent value of the four quarterly deposits made during a single year is \\$1,100.00.`,
+      `The account balance after 4 years is approximately \\$4,700.00.`,
+      `The account balance after 3 years is approximately \\$3,500.00.`,
+      `If the four \\$250 deposits are instead treated as a flat \\$1,000.00 deposit at year-end, the resulting 4-year account balance is approximately \\$4,506.11.`,
+      `The difference between the correctly computed 4-year balance and the simplified calculation is approximately \\$200.00.`,
+    ],
+    answer_key: [false, false, false, true, false],
+    tactical_explanations: [
+      `**A) The year-end equivalent value of the four quarterly deposits made during a single year is \\$1,100.00.**  (false)
+
+Applying simple interest to each \\$250 deposit for its remaining fraction of the year:
+
+$$250(4 + 1.5 \\times 0.08) = 250 \\times 4.12 = \\$1,030.00$$
+
+not \\$1,100.00.`,
+      `**B) The account balance after 4 years is approximately \\$4,700.00.**  (false)
+
+Treating \\$1,030.00 as an ordinary annual deposit compounding at 8% for 4 years:
+
+$$F_4 = (1,030 / 0.08)\\bigl[(1.08)^{4} - 1\\bigr]$$
+
+$$(1.08)^{4} \\approx 1.360489,\\quad 1.360489 - 1 = 0.360489$$
+
+$$12,875 \\times 0.360489 = \\$4,641.30$$
+
+not \\$4,700.00.`,
+      `**C) The account balance after 3 years is approximately \\$3,500.00.**  (false)
+
+Using the same \\$1,030.00 equivalent deposit but compounding for only 3 years:
+
+$$F_3 = 12,875\\bigl[(1.08)^{3} - 1\\bigr]$$
+
+$$(1.08)^{3} \\approx 1.259712,\\quad 1.259712 - 1 = 0.259712$$
+
+$$12,875 \\times 0.259712 = \\$3,343.79$$
+
+not \\$3,500.00.`,
+      `**D) If the four \\$250 deposits are instead treated as a flat \\$1,000.00 deposit at year-end, the resulting 4-year account balance is approximately \\$4,506.11.**  (true)
+
+Treating the deposits as a flat \\$1,000.00 at year-end (ignoring the simple-interest boost):
+
+$$F_4^{\\mathrm{flat}} = (1,000 / 0.08)\\bigl[(1.08)^{4} - 1\\bigr] = 12,500 \\times 0.360489 = \\$4,506.11$$
+
+matching the claim, and below the correct \\$4,641.30.`,
+      `**E) The difference between the correctly computed 4-year balance and the simplified calculation is approximately \\$200.00.**  (false)
+
+$4,641.30 - 4,506.11 = \\$135.19$, not \\$200.00.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 107,
+    solution_overview: `At the end of each quarter, a small business owner deposits \\$250 into a savings account that pays interest once per year, at an annual rate of 8%. Because each quarterly deposit sits in the account for only part of the year before the annual interest is credited, the bank applies simple interest to each deposit for the fraction of the year it remains on deposit before the year-end crediting date.
+
+**Part 1: Setup.**
+
+$D = \\$250$ quarterly; $r = 0.08$; interest credited once per year
+
+**Part 2: Formula.**
+
+Year-end equivalent: $D(4+1.5r)$; then $F_N = (a/r)[(1+r)^{N}-1]$ with $a$ equal to that equivalent
+
+**Part 3: Solve.**
+
+**1.** Year-end equivalent: $250\\times(4 + 1.5\\times0.08) = 250\\times4.12 = \\$1,030.00$ (not $\\$1,100.00$).
+
+**2.** FV after $4$ years $\\approx \\$4,641.30$; after $3$ years $\\approx \\$3,343.79$.
+
+**3.** Ignoring mid-year interest ($a = \\$1,000$) gives $4$-year FV $\\approx \\$4,506.11$ — less than the correct $\\$4,641.30$ by about $\\$135.18$ (not $\\$200.00$).
+`,
+  },
+===== TASK 108 =====
+    id: `math-11-108`,
+    case_id: `MATH 11.108`,
+    title: `Home Mortgage: Outstanding Balance Partway Through the Term`,
+    subsection: `11.6`,
+    context: `A family takes out a \\$200,000 home mortgage at a nominal annual interest rate of 6%, compounding monthly, to be repaid with equal payments at the end of each month over 20 years. After making exactly 5 years of payments, they want to know how much principal is still outstanding.`,
+    statements: [
+      `The required monthly payment is approximately \\$1,432.86.`,
+      `The outstanding balance immediately after the 60th monthly payment is approximately \\$169,799.20.`,
+      `After 5 years of payments, more than 25% of the original \\$200,000 principal has been repaid.`,
+      `The total interest paid during just the first 5 years is approximately \\$55,770.92.`,
+      `The total interest paid over the entire 20-year life of the loan is approximately \\$120,000.00.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A) The required monthly payment is approximately \\$1,432.86.**  (true)
+
+With $r = 0.06/12 = 0.005$ and $n = 240$ monthly payments:
+
+$$a = \\frac{0.005 \\times 200,000}{1 - (1.005)^{-240}} = \\frac{1,000}{0.697884} = \\$1,432.86$$`,
+      `**B) The outstanding balance immediately after the 60th monthly payment is approximately \\$169,799.20.**  (true)
+
+With 180 payments remaining, the outstanding balance is the present value of those payments:
+
+$$B_{60} = (1,432.86 / 0.005)\\bigl[1 - (1.005)^{-180}\\bigr]$$
+
+$$(1.005)^{-180} \\approx 0.407348$$
+
+$$1 - 0.407348 = 0.592652$$
+
+$$286,572 \\times 0.592652 \\approx \\$169,799$$`,
+      `**C) After 5 years of payments, more than 25% of the original \\$200,000 principal has been repaid.**  (false)
+
+Principal repaid is $200,000 - 169,799.20 = \\$30,200.80$, which is $30,200.80 / 200,000 = 15.10\\%$ of the original balance — well under 25%, since early mortgage payments go disproportionately toward interest.`,
+      `**D) The total interest paid during just the first 5 years is approximately \\$55,770.92.**  (true)
+
+Paid in 60 months: $1,432.86 \\times 60 = \\$85,971.60$; interest is $85,971.60 - 30,200.80 = \\$55,770.80 \\approx \\$55,770.92$, matching the claim.`,
+      `**E) The total interest paid over the entire 20-year life of the loan is approximately \\$120,000.00.**  (false)
+
+Lifetime paid is $1,432.86 \\times 240 = \\$343,886.40$, so lifetime interest is $343,886.40 - 200,000 = \\$143,886.40$, considerably more than \\$120,000.00.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 108,
+    solution_overview: `A family takes out a \\$200,000 home mortgage at a nominal annual interest rate of 6%, compounding monthly, to be repaid with equal payments at the end of each month over 20 years. After making exactly 5 years of payments, they want to know how much principal is still outstanding.
+
+**Part 1: Setup.**
+
+$K = \\$200,000$; nominal annual rate $6\\%$, compounding monthly
+
+Term = $20$ years ($n = 240$ monthly payments); $m = 60$ payments already made
+
+**Part 2: Formula.**
+
+Monthly rate $r = 0.06/12$; payment $a = rK/[1-(1+r)^{-n}]$
+
+Outstanding balance after $m$ payments: $(a/r)[1-(1+r)^{-(n-m)}]$
+
+**Part 3: Solve.**
+
+**1.** $r = 0.005$; $a = 1,000/[1-(1.005)^{-240}] \\approx \\$1,432.86$.
+
+**2.** Remaining balance after $60$ payments: $(1,432.86/0.005)[1-(1.005)^{-180}] \\approx \\$169,799.20$.
+
+**3.** Principal repaid: $\\$30,200.80$ ($\\approx 15.10\\%$ of original — not more than $25\\%$). Interest in first $5$ years $\\approx \\$55,770.92$; full-term interest $\\approx \\$143,886.91$ (not $\\$120,000.00$).
+`,
+  },
+===== TASK 109 =====
+    id: `math-11-109`,
+    case_id: `MATH 11.109`,
+    title: `Fixed Repayment Schedule on a Large Equipment Loan`,
+    subsection: `11.6`,
+    context: `A manufacturing company borrows \\$120,000 at 14% annual interest and chooses to repay a fixed \\$25,000 at the end of each year, continuing until the loan is retired, with a final smaller payment to clear whatever balance remains.`,
+    statements: [
+      `The smallest whole number of yearly payments needed to retire the loan is n = 9.`,
+      `The ninth and final payment is approximately \\$13,100.16.`,
+      `The total interest paid over the life of the loan is approximately \\$105,000.00.`,
+      `The total amount actually paid over the life of the loan is approximately \\$210,000.00.`,
+      `Assuming all 9 payments are full \\$25,000 payments overstates the true total amount paid by more than \\$10,000.`,
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A) The smallest whole number of yearly payments needed to retire the loan is n = 9.**  (true)
+
+Evaluating $[\\ln a - \\ln(a-rK)]/\\ln(1+r)$ with a=25,000, r=0.14, K=120,000 gives approximately 8.508; rounding up to the next whole number gives n=9 total payments needed.
+
+$$n \\ge \\frac{\\ln 25,000 - \\ln(25,000 - 0.14 \\times 120,000)}{\\ln 1.14} = \\frac{\\ln 25,000 - \\ln 8,200}{\\ln 1.14} \\approx 8.508$$
+
+Smallest integer n is 9.`,
+      `**B) The ninth and final payment is approximately \\$13,100.16.**  (true)
+
+Loan after 8 years: $120,000 \\times (1.14)^{8} \\approx \\$342,310.37$.
+
+Eight payments accumulated: $(25,000 / 0.14)\\bigl[(1.14)^{8} - 1\\bigr] \\approx \\$330,819$.
+
+Remainder: $342,310.37 - 330,819 \\approx \\$11,491.37$.
+
+Final payment: $11,491.37 \\times 1.14 \\approx \\$13,100.16$.`,
+      `**C) The total interest paid over the life of the loan is approximately \\$105,000.00.**  (false)
+
+True total paid is $8 \\times 25,000 + 13,100.16 = \\$213,100.16$, so true interest is $213,100.16 - 120,000 = \\$93,100.16$, not \\$105,000.00.`,
+      `**D) The total amount actually paid over the life of the loan is approximately \\$210,000.00.**  (false)
+
+The true total is $8 \\times 25,000 + 13,100.16 = \\$213,100.16$, not \\$210,000.00.`,
+      `**E) Assuming all 9 payments are full \\$25,000 payments overstates the true total amount paid by more than \\$10,000.**  (true)
+
+Nine full \\$25,000 payments would total \\$225,000.00, and $225,000 - 213,100.16 = \\$11,899.84$, an overstatement of more than \\$10,000.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 109,
+    solution_overview: `A manufacturing company borrows \\$120,000 at 14% annual interest and chooses to repay a fixed \\$25,000 at the end of each year, continuing until the loan is retired, with a final smaller payment to clear whatever balance remains.
+
+**Part 1: Setup.**
+
+$K = \\$120,000$; $r = 0.14$; fixed annual payment $a = \\$25,000$
+
+**Part 2: Formula.**
+
+Smallest integer $n \\ge [\\ln a - \\ln(a-rK)]/\\ln(1+r)$
+
+After $m = n-1$ full payments, compare loan FV $K(1+r)^{m}$ to payments FV $(a/r)[(1+r)^{m}-1]$ and roll the residual forward one year for the final payment
+
+**Part 3: Solve.**
+
+**1.** Threshold $\\approx 8.508$, so $n = 9$ ($8$ full payments plus a smaller $9$th).
+
+**2.** After $8$ years: loan FV $\\approx \\$342,310.37$; payments FV $\\approx \\$330,819.00$; remaining $\\approx \\$11,491.37$; final payment $\\approx \\$13,100.16$.
+
+**3.** Total paid $\\approx \\$213,100.16$; true interest $\\approx \\$93,100.16$ (not $\\$105,000$). Treating all nine as full $\\$25,000$ payments overstates the total by about $\\$11,900$ (more than $\\$10,000$).
+`,
+  },
+===== TASK 110 =====
+    id: `math-11-110`,
+    case_id: `MATH 11.110`,
+    title: `Capstone: Equipment Loan Paid as an Annuity Due, Plus a Separate Reserve Fund`,
+    subsection: `11.6`,
+    context: `A manufacturing company borrows \\$90,000 to buy new equipment, to be repaid in 8 equal annual instalments with the first payment due immediately and the rest due at the beginning of each following year, at an annual interest rate of 12%. Independently, to prepare for future maintenance costs, the company also deposits \\$300 at the end of each quarter into a separate reserve account that pays 9% annual interest, credited once per year.`,
+    statements: [
+      `The required annuity-due payment on the equipment loan is approximately \\$16,176.12.`,
+      `The interest portion of the second loan payment is approximately \\$8,858.87.`,
+      `The interest portion of the third loan payment is larger than the interest portion of the second payment.`,
+      `The year-end equivalent value of the reserve fund's quarterly deposits made during a single year is \\$1,240.50, and the reserve fund's balance after 3 years is approximately \\$4,066.48.`,
+      `The combined total of the loan's first three payments is less than the reserve fund's balance after 3 years.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A) The required annuity-due payment on the equipment loan is approximately \\$16,176.12.**  (true)
+
+Due factor for 8 payments at 12% (first immediate, remaining 7 as an ordinary annuity):
+
+$$1 + \\frac{1}{0.12}\\bigl[1 - (1.12)^{-7}\\bigr] \\approx 1 + 4.563757 = 5.563757$$
+
+$$a = 90,000 / 5.563757 = \\$16,176.12$$`,
+      `**B) The interest portion of the second loan payment is approximately \\$8,858.87.**  (true)
+
+After the immediate first payment, the balance is $90,000 - 16,176.12 = \\$73,823.88$, so the second-payment interest is $0.12 \\times 73,823.88 = \\$8,858.87$, matching the claim.`,
+      `**C) The interest portion of the third loan payment is larger than the interest portion of the second payment.**  (false)
+
+After payment 2: principal $16,176.12 - 8,858.87 = \\$7,317.25$, balance $73,823.88 - 7,317.25 = \\$66,506.63$. Third-payment interest is $0.12 \\times 66,506.63 = \\$7,980.80$, which is smaller than \\$8,858.87, not larger.`,
+      `**D) The year-end equivalent value of the reserve fund's quarterly deposits made during a single year is \\$1,240.50, and the reserve fund's balance after 3 years is approximately \\$4,066.48.**  (true)
+
+Reserve year-end equivalent: $300(4 + 1.5 \\times 0.09) = 300 \\times 4.135 = \\$1,240.50$.
+
+$$F_3 = (1,240.50 / 0.09)\\bigl[(1.09)^{3} - 1\\bigr]$$
+
+$$(1.09)^{3} \\approx 1.295029,\\quad 1.295029 - 1 = 0.295029$$
+
+$$13,783.33 \\times 0.295029 = \\$4,066.48$$`,
+      `**E) The combined total of the loan's first three payments is less than the reserve fund's balance after 3 years.**  (false)
+
+Three loan payments total $3 \\times 16,176.12 = \\$48,528.36$, which is far more than the reserve's \\$4,066.48 — the loan payments are larger, not smaller.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 110,
+    solution_overview: `A manufacturing company borrows \\$90,000 to buy new equipment, to be repaid in 8 equal annual instalments with the first payment due immediately and the rest due at the beginning of each following year, at an annual interest rate of 12%. Independently, to prepare for future maintenance costs, the company also deposits \\$300 at the end of each quarter into a separate reserve account that pays 9% annual interest, credited once per year.
+
+**Part 1: Setup.**
+
+Equipment loan: $K = \\$90,000$, $r = 0.12$, $n = 8$, first payment immediate
+
+Reserve: $D = \\$300$ quarterly, annual rate $0.09$, $N = 3$ years
+
+**Part 2: Formula.**
+
+Annuity-due: $K = a + (a/r)[1-(1+r)^{-(n-1)}]$; interest $= r \\times$ start-of-period balance
+
+Year-end equivalent $D(4+1.5r)$; $F_N = (a/r)[(1+r)^{N}-1]$
+
+**Part 3: Solve.**
+
+**1.** $a \\approx \\$16,176.12$; balance after the immediate first payment $\\approx \\$73,823.88$.
+
+**2.** Second-payment interest $\\approx \\$8,858.87$; third-payment interest $\\approx \\$7,980.79$ (smaller than the second, not larger).
+
+**3.** Reserve year-end equivalent $\\$1,240.50$; $3$-year FV $\\approx \\$4,066.48$ — far below the loan's first three payments ($\\approx \\$48,528$).
+`,
+  },
+===== TASK 114 =====
+    id: `math-11-114`,
+    case_id: `MATH 11.114`,
+    title: `A small bakery invests \\$8,000 in a new commercial oven`,
+    subsection: `11.7`,
+    context: `A small bakery invests \\$8,000 in a new commercial oven. The oven is expected to generate a single net return of \\$9,600, paid in full at the end of one year.`,
+    statements: [
+      `The internal rate of return for this project is exactly 20%.`,
+      `At an interest rate of 15%, the net present value of this project is positive.`,
+      `At an interest rate of 25%, the net present value of this project is positive.`,
+      `If the return had instead been \\$10,000, with the outlay unchanged, the internal rate of return would exceed 24%.`,
+      `This project has a unique internal rate of return greater than -1.`,
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A) The internal rate of return for this project is exactly 20%.**  (true)
+
+r = (9,600/8,000) - 1 = 0.20 = 20%, exactly as calculated above.`,
+      `**B) At an interest rate of 15%, the net present value of this project is positive.**  (true)
+
+NPV = -8,000 + 9,600/1.15 = -8,000 + 8,347.83 = \\$347.83, which is positive (15% is below the 20% IRR, so NPV must be positive).`,
+      `**C) At an interest rate of 25%, the net present value of this project is positive.**  (false)
+
+NPV = -8,000 + 9,600/1.25 = -8,000 + 7,680.00 = -\\$320.00, which is negative, not positive (25% is above the 20% IRR).`,
+      `**D) If the return had instead been \\$10,000, with the outlay unchanged, the internal rate of return would exceed 24%.**  (true)
+
+With b = 10,000: r = (10,000/8,000) - 1 = 1.25 - 1 = 0.25 = 25%, which exceeds 24%.`,
+      `**E) This project has a unique internal rate of return greater than -1.**  (true)
+
+The chapter's theorem states that if $a_0 < 0$ and all subsequent returns are positive, a unique internal rate of return $r^{*} > -1$ exists. Here $a_0 = -\\$8,000 < 0$ and $a_1 = \\$9,600 > 0$, so the condition is satisfied.
+
+One-year project with $a_0 = -8,000 < 0$ and $a_1 = 9,600 > 0$. The uniqueness theorem applies, so there is a unique $r^* > -1$, namely the 20% already computed.`,
+    ],
+    difficulty_level: `1/5`,
+    sort_order: 114,
+    solution_overview: `A small bakery invests \\$8,000 in a new commercial oven. The oven is expected to generate a single net return of \\$9,600, paid in full at the end of one year.
+
+**Part 1: Setup.**
+
+$a_0 = -\\$8,000$ (initial outlay)
+
+$a_1 = \\$9,600$ (return at end of Year 1)
+
+$n = 1$ year
+
+**Part 2: Formula.**
+
+For a one-year project with outlay $a$ and return $b$: $-a + b(1+r)^{-1} = 0$
+
+Solving for $r$: $r = (b/a) - 1$
+
+**Part 3: Solve.**
+
+**1.** Step $1$: Identify $a = \\$8,000$ (amount invested) and $b = \\$9,600$ (amount returned).
+
+**2.** Step $2$: $r = (b/a) - 1 = (9,600/8,000) - 1 = 1.20 - 1 = 0.20 = 20\\%$.
+
+**3.** Step $3$ (for later statements): NPV at rate $r$ is $A = a_0 + a_1/(1+r)$.
+
+**4.** At $15\\%$: $A = -8,000 + 9,600/1.15 = -8,000 + 8,347.83 = \\$347.83 > 0$.
+
+**5.** At $25\\%$: $A = -8,000 + 9,600/1.25 = -8,000 + 7,680 = -\\$320.00 < 0$.
+
+**6.** If $b = 10,000$: $r = (10,000/8,000) - 1 = 0.25 = 25\\%$, which exceeds $24\\%$.`,
+  },
+===== TASK 115 =====
+    id: `math-11-115`,
+    case_id: `MATH 11.115`,
+    title: `A logistics company spends \\$12,000 upgrading a delivery vehicle`,
+    subsection: `11.7`,
+    context: `A logistics company spends \\$12,000 upgrading a delivery vehicle. The upgrade is expected to generate net returns of \\$7,000 at the end of Year 1 and \\$7,000 at the end of Year 2.`,
+    statements: [
+      `The internal rate of return is approximately 10.92%.`,
+      `At an interest rate of 8%, the net present value of this project is positive.`,
+      `At an interest rate of 12%, the net present value of this project is positive.`,
+      `If the Year 2 return had instead been \\$8,000, with Year 1 unchanged at \\$7,000, the internal rate of return would exceed 13%.`,
+      `Doubling both returns to \\$14,000 in Year 1 and \\$14,000 in Year 2, with the outlay unchanged at \\$12,000, would result in an internal rate of return of approximately 21.84%.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A) The internal rate of return is approximately 10.92%.**  (true)
+
+As calculated above, r ≈ 10.92%.
+
+Let $s = 1/(1+r)$. Then $7,000 s^{2} + 7,000 s - 12,000 = 0$, or $7s^{2} + 7s - 12 = 0$.
+
+Discriminant: $49 + 336 = 385$, $\\sqrt{385} \\approx 19.6214$.
+
+$$s = (-7 + 19.6214)/14 \\approx 0.90153$$
+
+$$r = 1/0.90153 - 1 \\approx 0.10922 = 10.92\\%$$`,
+      `**B) At an interest rate of 8%, the net present value of this project is positive.**  (true)
+
+NPV = -12,000 + 7,000/1.08 + 7,000/1.1664 = -12,000 + 6,481.48 + 6,001.37 = \\$482.85, positive (8% is below the IRR).`,
+      `**C) At an interest rate of 12%, the net present value of this project is positive.**  (false)
+
+NPV = -12,000 + 7,000/1.12 + 7,000/1.2544 = -12,000 + 6,250.00 + 5,580.36 = -\\$169.64, negative, not positive (12% is above the IRR).`,
+      `**D) If the Year 2 return had instead been \\$8,000, with Year 1 unchanged at \\$7,000, the internal rate of return would exceed 13%.**  (true)
+
+With $a_2 = \\$8,000$: $8,000s^{2} + 7,000s - 12,000 = 0$ → $8s^{2} + 7s - 12 = 0$. Discriminant = 49 + 384 = 433, √433 ≈ 20.809. $s = (-7 + 20.809)/16 \\approx 0.8630$, so $r = 1/0.8630 - 1 \\approx 0.1587 = 15.87\\%$, which exceeds 13%.`,
+      `**E) Doubling both returns to \\$14,000 in Year 1 and \\$14,000 in Year 2, with the outlay unchanged at \\$12,000, would result in an internal rate of return of approximately 21.84%.**  (false)
+
+With both $a_1$ and $a_2$ equal to \\$14,000, the equation becomes $14,000s^{2} + 14,000s - 12,000 = 0$, i.e. $7s^{2} + 7s - 6 = 0$. Discriminant = 49 + 168 = 217, √217 ≈ 14.731. $s = (-7 + 14.731)/14 \\approx 0.5522$, so $r = 1/0.5522 - 1 \\approx 0.8109 = 81.09\\%$ :  far more than double 10.92% (which would be ≈21.84%). Doubling the cash flows does not proportionally double the IRR.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 115,
+    solution_overview: `A logistics company spends \\$12,000 upgrading a delivery vehicle. The upgrade is expected to generate net returns of \\$7,000 at the end of Year 1 and \\$7,000 at the end of Year 2.
+
+**Part 1: Setup.**
+
+$a_0 = -\\$12,000$
+
+$a_1 = \\$7,000$
+
+$a_2 = \\$7,000$
+
+$n = 2$ years
+
+**Part 2: Formula.**
+
+$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$
+
+Substitute $s = (1+r)^{-1}$
+
+**Part 3: Solve.**
+
+**1.** Step $1$: $-12,000 + 7,000/(1+r) + 7,000/(1+r)^{2} = 0$.
+
+**2.** Step $2$: Let $s = (1+r)^{-1}$.
+
+**3.** Then $7,000s^{2} + 7,000s - 12,000 = 0$.
+
+**4.** Dividing by $1,000$: $7s^{2} + 7s - 12 = 0$.
+
+**5.** Step $3$: Discriminant: $7^{2} + 4(7)(12) = 49 + 336 = 385$.
+
+**6.** $\\sqrt{385} \\approx 19.6214$.
+
+**7.** Step $4$: $s = (-7 + 19.6214)/14 = 12.6214/14 \\approx 0.90153$.
+
+**8.** Step $5$: $r = 1/s - 1 = 1/0.90153 - 1 \\approx 0.10922 \\approx 10.92\\%$.
+
+**9.** NPV at $8\\%$: $-12,000 + 7,000/1.08 + 7,000/1.1664 = -12,000 + 6,481.48 + 6,001.37 = \\$482.85 > 0$.
+
+**10.** NPV at $12\\%$: $-12,000 + 7,000/1.12 + 7,000/1.2544 = -12,000 + 6,250.00 + 5,580.36 = -\\$169.64 < 0$.`,
+  },
+===== TASK 116 =====
+    id: `math-11-116`,
+    case_id: `MATH 11.116`,
+    title: `A boutique invests \\$20,000 in inventory and point-of-sale equipment`,
+    subsection: `11.7`,
+    context: `A boutique invests \\$20,000 in inventory and point-of-sale equipment. It expects net returns of \\$9,000 at the end of Year 1 and \\$15,000 at the end of Year 2.`,
+    statements: [
+      `The internal rate of return is approximately 11.98%.`,
+      `At a discount rate of 10%, the net present value of the project is positive.`,
+      `At a discount rate of 14%, the net present value of the project is positive.`,
+      `If the Year 1 return were \\$9,000 higher, with Year 2 unchanged at \\$15,000, the internal rate of return would exceed 30%.`,
+      `The sum of all cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$4,000.`,
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A) The internal rate of return is approximately 11.98%.**  (true)
+
+As calculated above, r ≈ 11.98%.
+
+$$15,000 s^{2} + 9,000 s - 20,000 = 0 \\Rightarrow 15s^{2} + 9s - 20 = 0$$
+
+Discriminant: $81 + 1,200 = 1,281$, $\\sqrt{1,281} \\approx 35.791$.
+
+$$s = (-9 + 35.791)/30 \\approx 0.89304$$
+
+$$r = 1/0.89304 - 1 \\approx 0.11978 = 11.98\\%$$`,
+      `**B) At a discount rate of 10%, the net present value of the project is positive.**  (true)
+
+NPV = -20,000 + 9,000/1.10 + 15,000/1.21 = -20,000 + 8,181.82 + 12,396.69 = \\$578.51, positive (10% is below the IRR).`,
+      `**C) At a discount rate of 14%, the net present value of the project is positive.**  (false)
+
+NPV = -20,000 + 9,000/1.14 + 15,000/1.2996 = -20,000 + 7,894.74 + 11,542.01 = -\\$563.25, negative, not positive (14% is above the IRR).`,
+      `**D) If the Year 1 return were \\$9,000 higher, with Year 2 unchanged at \\$15,000, the internal rate of return would exceed 30%.**  (true)
+
+With $a_1 = \\$18,000$: $15,000s^{2} + 18,000s - 20,000 = 0$ → $15s^{2} + 18s - 20 = 0$. Discriminant = 324 + 1,200 = 1,524, √1,524 ≈ 39.038. $s = (-18 + 39.038)/30 \\approx 0.7013$, $r = 1/0.7013 - 1 \\approx 0.4259 = 42.59\\%$, which exceeds 30%.`,
+      `**E) The sum of all cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$4,000.**  (true)
+
+$a_0 + a_1 + a_2 = -20,000 + 9,000 + 15,000 = 4,000$ (a positive \\$4,000), and this matches the chapter's stated result that the internal rate of return is positive whenever this sum is positive, consistent with the computed $r \\approx 11.98\\% > 0$.`,
+    ],
+    difficulty_level: `2/5`,
+    sort_order: 116,
+    solution_overview: `A boutique invests \\$20,000 in inventory and point-of-sale equipment. It expects net returns of \\$9,000 at the end of Year 1 and \\$15,000 at the end of Year 2.
+
+**Part 1: Setup.**
+
+$a_0 = -\\$20,000$
+
+$a_1 = \\$9,000$
+
+$a_2 = \\$15,000$
+
+$n = 2$ years
+
+**Part 2: Formula.**
+
+$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$
+
+$s = (1+r)^{-1}$
+
+**Part 3: Solve.**
+
+**1.** Step $1$: $15,000s^{2} + 9,000s - 20,000 = 0$.
+
+**2.** Dividing by $1,000$: $15s^{2} + 9s - 20 = 0$.
+
+**3.** Step $2$: Discriminant: $9^{2} + 4(15)(20) = 81 + 1,200 = 1,281$.
+
+**4.** $\\sqrt{1,281} \\approx 35.791$.
+
+**5.** Step $3$: $s = (-9 + 35.791)/30 \\approx 0.89304$.
+
+**6.** Step $4$: $r = 1/0.89304 - 1 \\approx 0.11978 \\approx 11.98\\%$.
+
+**7.** NPV at $10\\%$: $-20,000 + 9,000/1.10 + 15,000/1.21 = -20,000 + 8,181.82 + 12,396.69 = \\$578.51 > 0$.
+
+**8.** NPV at $14\\%$: $-20,000 + 9,000/1.14 + 15,000/1.2996 = -20,000 + 7,894.74 + 11,542.01 = -\\$563.25 < 0$.
+
+**9.** Cash-flow sum: $-20,000 + 9,000 + 15,000 = \\$4,000$.`,
+  },
+===== TASK 117 =====
+    id: `math-11-117`,
+    case_id: `MATH 11.117`,
+    title: `A retailer is choosing between two one-year uses of surplus cash`,
+    subsection: `11.7`,
+    context: `A retailer is choosing between two one-year uses of surplus cash. Project X: invest \\$15,000 now, receive \\$17,250 in one year. Project Y: invest \\$22,000 now, receive \\$24,750 in one year.`,
+    statements: [
+      `The internal rate of return of Project X is exactly 15%.`,
+      `The internal rate of return of Project Y is exactly 12.5%.`,
+      `Based on the internal rate of return criterion, Project Y should be preferred over Project X.`,
+      `At an interest rate of 11%, Project X has positive net present value while Project Y has negative net present value.`,
+      `If Project Y's payoff had instead been \\$25,000, with the outlay unchanged at \\$22,000, its internal rate of return would exceed that of Project X.`,
+    ],
+    answer_key: [true, true, false, false, false],
+    tactical_explanations: [
+      `**A) The internal rate of return of Project X is exactly 15%.**  (true)
+
+As calculated above, $r_X = 15\\%$.
+
+One-year IRR: $r_X = (17,250 / 15,000) - 1 = 1.15 - 1 = 0.15 = 15\\%$.`,
+      `**B) The internal rate of return of Project Y is exactly 12.5%.**  (true)
+
+As calculated above, $r_Y = 12.5\\%$.
+
+$r_Y = (24,750 / 22,000) - 1 = 1.125 - 1 = 0.125 = 12.5\\%$.`,
+      `**C) Based on the internal rate of return criterion, Project Y should be preferred over Project X.**  (false)
+
+The chapter's criterion is to prefer the project with the higher internal rate of return. Since 15% (X) is higher than 12.5% (Y), X should be preferred, not Y.
+
+The criterion prefers the higher IRR. 15% (X) > 12.5% (Y), so X is preferred, not Y.`,
+      `**D) At an interest rate of 11%, Project X has positive net present value while Project Y has negative net present value.**  (false)
+
+$NPV_X$ at 11% = -15,000 + 17,250/1.11 = -15,000 + 15,540.54 = \\$540.54 (positive). $NPV_Y$ at 11% = -22,000 + 24,750/1.11 = -22,000 + 22,297.30 = \\$297.30, which is also positive, not negative, because 11% is still below Y's 12.5% IRR.`,
+      `**E) If Project Y's payoff had instead been \\$25,000, with the outlay unchanged at \\$22,000, its internal rate of return would exceed that of Project X.**  (false)
+
+With $b = \\$25,000$: $r_Y = (25,000/22,000) - 1 \\approx 0.1364 = 13.64\\%$, which is still lower than Project X's 15%, so it would not exceed X's rate.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 117,
+    solution_overview: `A retailer is choosing between two one-year uses of surplus cash. Project X: invest \\$15,000 now, receive \\$17,250 in one year. Project Y: invest \\$22,000 now, receive \\$24,750 in one year.
+
+**Part 1: Setup.**
+
+Project X: $a = \\$15,000$, $b = \\$17,250$
+
+Project Y: $a = \\$22,000$, $b = \\$24,750$
+
+$n = 1$ year for each project
+
+**Part 2: Formula.**
+
+$r = (b/a) - 1$ (one-year rate of return, applied to each project)
+
+**Part 3: Solve.**
+
+**1.** Step $1$: $r_X = (17,250/15,000) - 1 = 1.15 - 1 = 0.15 = 15\\%$.
+
+**2.** Step $2$: $r_Y = (24,750/22,000) - 1 = 1.125 - 1 = 0.125 = 12.5\\%$.
+
+**3.** IRR ranking: $15\\% > 12.5\\%$, so Project X is preferred.
+
+**4.** NPV at $11\\%$: $NPV_X = -15,000 + 17,250/1.11 = -15,000 + 15,540.54 = \\$540.54 > 0$; $NPV_Y = -22,000 + 24,750/1.11 = -22,000 + 22,297.30 = \\$297.30 > 0$ as well.
+
+**5.** If Y's payoff is $\\$25,000$: $r_Y = (25,000/22,000) - 1 \\approx 0.1364 = 13.64\\%$, still below X's $15\\%$.`,
+  },
+===== TASK 118 =====
+    id: `math-11-118`,
+    case_id: `MATH 11.118`,
+    title: `A manufacturing upgrade has an initial outlay of \\$45,000`,
+    subsection: `11.7`,
+    context: `A manufacturing upgrade has an initial outlay of \\$45,000. Installation disruption causes a net cash outflow of \\$3,000 at the end of Year 1, followed by net returns of \\$28,000 at the end of Year 2 and \\$35,000 at the end of Year 3.`,
+    statements: [
+      `At r = 8%, the net present value of the project is approximately \\$4,012.`,
+      `At r = 12%, the net present value of the project is positive.`,
+      `The internal rate of return of this project lies between 12% and 15%.`,
+      `At r = 15%, the net present value of the project is approximately -\\$3,424.`,
+      `$a_1$, $a_2$, and $a_3$ are all positive.`,
+    ],
+    answer_key: [true, false, false, true, false],
+    tactical_explanations: [
+      `**A) At r = 8%, the net present value of the project is approximately \\$4,012.**  (true)
+
+As calculated in Step 1, A ≈ \\$4,011.84 at r = 8%, which rounds to approximately \\$4,012.
+
+At 8%:
+
+$$A = -45,000 - 3,000/1.08 + 28,000/1.1664 + 35,000/1.259712$$
+
+$$= -45,000 - 2,777.78 + 24,005.49 + 27,784.13 = \\$4,011.84 \\approx \\$4,012$$`,
+      `**B) At r = 12%, the net present value of the project is positive.**  (false)
+
+As calculated in Step 2, A ≈ -\\$444.83 at r = 12%, which is negative, not positive.
+
+At 12%:
+
+$$A = -45,000 - 3,000/1.12 + 28,000/1.2544 + 35,000/1.404928$$
+
+$$= -45,000 - 2,678.57 + 22,321.43 + 24,912.31 = -\\$444.83$$
+
+Negative, not positive.`,
+      `**C) The internal rate of return of this project lies between 12% and 15%.**  (false)
+
+The NPV is already negative at both r = 12% (-\\$444.83) and r = 15% (-\\$3,423.60), and it was positive at r = 8%. This means the rate where NPV crosses zero lies between 8% and 12%, not between 12% and 15%.
+
+NPV is positive at 8% (+4,012) and already negative at 12% (−445). The zero crossing therefore sits between 8% and 12%, not between 12% and 15%.`,
+      `**D) At r = 15%, the net present value of the project is approximately -\\$3,424.**  (true)
+
+As calculated in Step 3, A ≈ -\\$3,423.60 at r = 15%, which rounds to approximately -\\$3,424.
+
+At 15%:
+
+$$A = -45,000 - 3,000/1.15 + 28,000/1.3225 + 35,000/1.520875$$
+
+$$= -45,000 - 2,608.70 + 21,172.02 + 23,013.07 = -\\$3,423.61 \\approx -\\$3,424$$`,
+      `**E) $a_1$, $a_2$, and $a_3$ are all positive.**  (false)
+
+The theorem requires $a_0 < 0$ and all of $a_1, \\ldots, a_n$ to be strictly positive. Here $a_1 = -\\$3,000$, which is negative, so this precondition is not met: the theorem's guarantee of a unique internal rate of return does not apply to this cash flow pattern.
+
+$a_1 = -\\$3,000$, so the later cash flows are not all positive. The uniqueness theorem's hypothesis fails.`,
+    ],
+    difficulty_level: `3/5`,
+    sort_order: 118,
+    solution_overview: `A manufacturing upgrade has an initial outlay of \\$45,000. Installation disruption causes a net cash outflow of \\$3,000 at the end of Year 1, followed by net returns of \\$28,000 at the end of Year 2 and \\$35,000 at the end of Year 3.
+
+**Part 1: Setup.**
+
+$a_0 = -\\$45,000$
+
+$a_1 = -\\$3,000$
+
+$a_2 = \\$28,000$
+
+$a_3 = \\$35,000$
+
+$n = 3$ years
+
+**Part 2: Formula.**
+
+$A = a_0 + a_1/(1+r) + a_2/(1+r)^{2} + a_3/(1+r)^{3}$
+
+**Part 3: Solve.**
+
+**1.** Step $1$ ($r = 8\\%$): $A = -45,000 - 3,000/1.08 + 28,000/1.1664 + 35,000/1.259712 = -45,000 - 2,777.78 + 24,005.49 + 27,784.13 = \\$4,011.84$.
+
+**2.** Step $2$ ($r = 12\\%$): $A = -45,000 - 3,000/1.12 + 28,000/1.2544 + 35,000/1.404928 = -45,000 - 2,678.57 + 22,321.43 + 24,912.31 = -\\$444.83$.
+
+**3.** Step $3$ ($r = 15\\%$): $A = -45,000 - 3,000/1.15 + 28,000/1.3225 + 35,000/1.520875 = -45,000 - 2,608.70 + 21,172.02 + 23,013.07 = -\\$3,423.60$.`,
+  },
+===== TASK 119 =====
+    id: `math-11-119`,
+    case_id: `MATH 11.119`,
+    title: `A cafe chain invests \\$34,000 in a new espresso machine line`,
+    subsection: `11.7`,
+    context: `A cafe chain invests \\$34,000 in a new espresso machine line. Expected net returns are \\$16,000 at the end of Year 1 and \\$24,000 at the end of Year 2.`,
+    statements: [
+      `The internal rate of return is approximately 14.5%.`,
+      `At an interest rate of 9%, the net present value of the project is negative.`,
+      `At an interest rate of 13%, the net present value of the project is negative.`,
+      `If the Year 2 return had instead been \\$20,000, with Year 1 unchanged at \\$16,000, the internal rate of return would exceed the internal rate of return of the original project.`,
+      `Reducing the initial outlay to \\$30,000, with returns unchanged at \\$16,000 and \\$24,000, would lower the internal rate of return.`,
+    ],
+    answer_key: [false, false, true, false, false],
+    tactical_explanations: [
+      `**A) The internal rate of return is approximately 14.5%.**  (false)
+
+As calculated above, r ≈ 10.78%, not 14.5%.
+
+$$24,000 s^{2} + 16,000 s - 34,000 = 0 \\Rightarrow 12s^{2} + 8s - 17 = 0$$
+
+Discriminant: $64 + 816 = 880$, $\\sqrt{880} \\approx 29.665$.
+
+$$s = (-8 + 29.665)/24 \\approx 0.90270$$
+
+$$r = 1/0.90270 - 1 \\approx 0.10778 = 10.78\\%$$
+
+Not 14.5%.`,
+      `**B) At an interest rate of 9%, the net present value of the project is negative.**  (false)
+
+NPV = -34,000 + 16,000/1.09 + 24,000/1.1881 = -34,000 + 14,678.90 + 20,200.32 = \\$879.22, which is positive, not negative (9% is below the 10.78% IRR).`,
+      `**C) At an interest rate of 13%, the net present value of the project is negative.**  (true)
+
+NPV = -34,000 + 16,000/1.13 + 24,000/1.2769 = -34,000 + 14,159.29 + 18,795.52 = -\\$1,045.19, which is negative, confirming the statement (13% is above the IRR).`,
+      `**D) If the Year 2 return had instead been \\$20,000, with Year 1 unchanged at \\$16,000, the internal rate of return would exceed the internal rate of return of the original project.**  (false)
+
+With $a_2 = \\$20,000$: $20,000s^{2} + 16,000s - 34,000 = 0$ → $10s^{2} + 8s - 17 = 0$. Discriminant = 64 + 680 = 744, √744 ≈ 27.276. $s = (-8 + 27.276)/20 \\approx 0.9638$, $r = 1/0.9638 - 1 \\approx 0.0375 = 3.75\\%$, which is far lower than 10.78%, not higher.`,
+      `**E) Reducing the initial outlay to \\$30,000, with returns unchanged at \\$16,000 and \\$24,000, would lower the internal rate of return.**  (false)
+
+With $a_0 = -\\$30,000$: $24,000s^{2} + 16,000s - 30,000 = 0$ → $12s^{2} + 8s - 15 = 0$. Discriminant: $64 + 720 = 784 = 28^{2}$ exactly. $s = (-8 + 28)/24 = 20/24 \\approx 0.83333$, $r = 1/0.83333 - 1 = 0.20 = 20\\%$, which is much higher than the original 10.78%: a smaller outlay for the same returns raises the internal rate of return, it does not lower it.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 119,
+    solution_overview: `A cafe chain invests \\$34,000 in a new espresso machine line. Expected net returns are \\$16,000 at the end of Year 1 and \\$24,000 at the end of Year 2.
+
+**Part 1: Setup.**
+
+$a_0 = -\\$34,000$
+
+$a_1 = \\$16,000$
+
+$a_2 = \\$24,000$
+
+$n = 2$ years
+
+**Part 2: Formula.**
+
+$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$
+
+$s = (1+r)^{-1}$
+
+**Part 3: Solve.**
+
+**1.** Step $1$: $24,000s^{2} + 16,000s - 34,000 = 0$.
+
+**2.** Dividing by $2,000$: $12s^{2} + 8s - 17 = 0$.
+
+**3.** Step $2$: Discriminant: $8^{2} + 4(12)(17) = 64 + 816 = 880$.
+
+**4.** $\\sqrt{880} \\approx 29.665$.
+
+**5.** Step $3$: $s = (-8 + 29.665)/24 \\approx 0.90270$.
+
+**6.** Step $4$: $r = 1/0.90270 - 1 \\approx 0.10778 \\approx 10.78\\%$.
+
+**7.** NPV at $9\\%$: $-34,000 + 16,000/1.09 + 24,000/1.1881 = -34,000 + 14,678.90 + 20,200.32 = \\$879.22 > 0$.
+
+**8.** NPV at $13\\%$: $-34,000 + 16,000/1.13 + 24,000/1.2769 = -34,000 + 14,159.29 + 18,795.52 = -\\$1,045.19 < 0$.
+`,
+  },
+===== TASK 120 =====
+    id: `math-11-120`,
+    case_id: `MATH 11.120`,
+    title: `A logistics firm spends \\$40,000 automating a warehouse process`,
+    subsection: `11.7`,
+    context: `A logistics firm spends \\$40,000 automating a warehouse process. It expects net returns of \\$22,000 at the end of Year 1 and \\$27,600 at the end of Year 2.`,
+    statements: [
+      `At r = 15%, the net present value of the project is \\$0, to the nearest dollar.`,
+      `At an interest rate of 10%, the net present value of the project is positive.`,
+      `At an interest rate of 20%, the net present value of the project is negative.`,
+      `The sum of all the project's cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$9,600.`,
+      `This project has a unique internal rate of return greater than -1.`,
+    ],
+    answer_key: [true, true, true, true, true],
+    tactical_explanations: [
+      `**A) At r = 15%, the net present value of the project is \\$0, to the nearest dollar.**  (true)
+
+As calculated above, A = 0 at r = 15%, confirming this is the internal rate of return.
+
+Test r = 15%:
+
+$$A = -40,000 + 22,000/1.15 + 27,600/1.3225$$
+
+$$= -40,000 + 19,130.43 + 20,869.57 = \\$0.00$$
+
+(to the nearest dollar). So 15% is the IRR.`,
+      `**B) At an interest rate of 10%, the net present value of the project is positive.**  (true)
+
+NPV = -40,000 + 22,000/1.10 + 27,600/1.21 = -40,000 + 20,000.00 + 22,809.92 = \\$2,809.92, positive (10% is below the 15% IRR).`,
+      `**C) At an interest rate of 20%, the net present value of the project is negative.**  (true)
+
+NPV = -40,000 + 22,000/1.20 + 27,600/1.44 = -40,000 + 18,333.33 + 19,166.67 = -\\$2,500.00, negative (20% is above the 15% IRR).`,
+      `**D) The sum of all the project's cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$9,600.**  (true)
+
+$a_0$ + $a_1$ + $a_2 = -\\$40,000$ + 22,000 + 27,600 = \\$9,600, which is positive, and this matches the chapter's result that the internal rate of return is positive whenever this sum is positive - consistent with the found r = 15% > 0.`,
+      `**E) This project has a unique internal rate of return greater than -1.**  (true)
+
+The theorem's precondition ($a_0 < 0$, all subsequent $a_i > 0$) is satisfied exactly: $a_0 = -\\$40,000 < 0$, $a_1 = \\$22,000 > 0$, $a_2 = \\$27,600 > 0$.
+
+$a_0 = -40,000 < 0$, $a_1 = 22,000 > 0$, $a_2 = 27,600 > 0$. The uniqueness theorem applies, and the unique $r^* > -1$ is the 15% just found.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 120,
+    solution_overview: `A logistics firm spends \\$40,000 automating a warehouse process. It expects net returns of \\$22,000 at the end of Year 1 and \\$27,600 at the end of Year 2.
+
+**Part 1: Setup.**
+
+$a_0 = -\\$40,000$
+
+$a_1 = \\$22,000$
+
+$a_2 = \\$27,600$
+
+$n = 2$ years
+
+**Part 2: Formula.**
+
+$A = a_0 + a_1/(1+r) + a_2/(1+r)^{2}$
+
+**Part 3: Solve.**
+
+**1.** Step $1$: Test $r = 15\\%$: $A = -40,000 + 22,000/1.15 + 27,600/1.3225 = -40,000 + 19,130.43 + 20,869.57 = \\$0.00$ (to the nearest cent).
+
+**2.** Step $2$: Since $A = 0$ at $r = 15\\%$, this confirms $r = 15\\%$ is the internal rate of return for this project.
+
+**3.** NPV at $10\\%$: $-40,000 + 22,000/1.10 + 27,600/1.21 = -40,000 + 20,000.00 + 22,809.92 = \\$2,809.92 > 0$.
+
+**4.** NPV at $20\\%$: $-40,000 + 22,000/1.20 + 27,600/1.44 = -40,000 + 18,333.33 + 19,166.67 = -\\$2,500.00 < 0$.
+
+**5.** Cash-flow sum: $-40,000 + 22,000 + 27,600 = \\$9,600$.
+`,
+  },
+===== TASK 121 =====
+    id: `math-11-121`,
+    case_id: `MATH 11.121`,
+    title: `A property developer invests \\$65,000 renovating a rental unit`,
+    subsection: `11.7`,
+    context: `A property developer invests \\$65,000 renovating a rental unit. Expected net rental income after expenses is \\$34,000 at the end of Year 1 and \\$42,000 at the end of Year 2.`,
+    statements: [
+      `The internal rate of return is approximately 10.69%.`,
+      `At an interest rate of 9%, the net present value of the project is positive.`,
+      `At an interest rate of 12%, the net present value of the project is positive.`,
+      `Doubling both returns to \\$68,000 in Year 1 and \\$84,000 in Year 2, with the outlay unchanged at \\$65,000, would more than double the internal rate of return.`,
+      `If the outlay were reduced to \\$60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project.`,
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A) The internal rate of return is approximately 10.69%.**  (true)
+
+As calculated above, r ≈ 10.69%.
+
+$$42,000 s^{2} + 34,000 s - 65,000 = 0 \\Rightarrow 42s^{2} + 34s - 65 = 0$$
+
+Discriminant: $1,156 + 10,920 = 12,076$, $\\sqrt{12,076} \\approx 109.891$.
+
+$$s = (-34 + 109.891)/84 \\approx 0.90346$$
+
+$$r = 1/0.90346 - 1 \\approx 0.10685 = 10.69\\%$$`,
+      `**B) At an interest rate of 9%, the net present value of the project is positive.**  (true)
+
+NPV = -65,000 + 34,000/1.09 + 42,000/1.1881 = -65,000 + 31,192.66 + 35,350.56 = \\$1,543.22, positive (9% is below the IRR).`,
+      `**C) At an interest rate of 12%, the net present value of the project is positive.**  (false)
+
+NPV = -65,000 + 34,000/1.12 + 42,000/1.2544 = -65,000 + 30,357.14 + 33,482.14 = -\\$1,160.72, negative, not positive (12% is above the IRR).`,
+      `**D) Doubling both returns to \\$68,000 in Year 1 and \\$84,000 in Year 2, with the outlay unchanged at \\$65,000, would more than double the internal rate of return.**  (true)
+
+With $a_1 = \\$68,000$ and $a_2 = \\$84,000$: $84,000s^{2} + 68,000s - 65,000 = 0$ → $84s^{2} + 68s - 65 = 0$. Discriminant = 4,624 + 21,840 = 26,464, √26,464 ≈ 162.678. $s = (-68 + 162.678)/168 \\approx 0.56356$, $r = 1/0.56356 - 1 \\approx 0.7744 = 77.44\\%$. Double the original rate would be about 21.36%, but the actual new rate (77.44%) is far higher than that, more than double.`,
+      `**E) If the outlay were reduced to \\$60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project.**  (false)
+
+With $a_0 = -\\$60,000$: $42,000s^{2} + 34,000s - 60,000 = 0$ → $42s^{2} + 34s - 60 = 0$. Discriminant: $1,156 + 10,080 = 11,236 = 106^{2}$ exactly. $s = (-34 + 106)/84 = 72/84 \\approx 0.85714$, $r = 1/0.85714 - 1 \\approx 0.16667 = 16.67\\%$, which is higher than 10.69%, not lower: a smaller outlay raises the internal rate of return.`,
+    ],
+    difficulty_level: `4/5`,
+    sort_order: 121,
+    solution_overview: `A property developer invests \\$65,000 renovating a rental unit. Expected net rental income after expenses is \\$34,000 at the end of Year 1 and \\$42,000 at the end of Year 2.
+
+**Part 1: Setup.**
+
+$a_0 = -\\$65,000$
+
+$a_1 = \\$34,000$
+
+$a_2 = \\$42,000$
+
+$n = 2$ years
+
+**Part 2: Formula.**
+
+$a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$
+
+$s = (1+r)^{-1}$
+
+**Part 3: Solve.**
+
+**1.** Step $1$: $42,000s^{2} + 34,000s - 65,000 = 0$.
+
+**2.** Dividing by $1,000$: $42s^{2} + 34s - 65 = 0$.
+
+**3.** Step $2$: Discriminant: $34^{2} + 4(42)(65) = 1,156 + 10,920 = 12,076$.
+
+**4.** $\\sqrt{12,076} \\approx 109.891$.
+
+**5.** Step $3$: $s = (-34 + 109.891)/84 \\approx 0.90346$.
+
+**6.** Step $4$: $r = 1/0.90346 - 1 \\approx 0.10685 \\approx 10.69\\%$.
+
+**7.** NPV at $9\\%$: $-65,000 + 34,000/1.09 + 42,000/1.1881 = -65,000 + 31,192.66 + 35,350.56 = \\$1,543.22 > 0$.
+
+**8.** NPV at $12\\%$: $-65,000 + 34,000/1.12 + 42,000/1.2544 = -65,000 + 30,357.14 + 33,482.14 = -\\$1,160.72 < 0$.
+`,
+  },
+===== TASK 122 =====
+    id: `math-11-122`,
+    case_id: `MATH 11.122`,
+    title: `A subscription software company spends \\$50,000 building a product and is compari`,
+    subsection: `11.7`,
+    context: `A subscription software company spends \\$50,000 building a product and is comparing two versions. Option 1, the full version: a steady net return of \\$6,000 at the end of every year, indefinitely into the future. Option 2, the scaled-back version: the same \\$50,000 outlay, but returns of only \\$6,000 at the end of Year 1 and \\$6,000 at the end of Year 2, with nothing paid afterward.`,
+    statements: [
+      `The limiting internal rate of return of Option 1 is 12%.`,
+      `The internal rate of return of Option 2 is approximately -58.84%.`,
+      `Option 2 has a unique internal rate of return greater than -1.`,
+      `The sum of Option 2's cash flows, $a_0$ + $a_1$ + $a_2$, equals -\\$40,000.`,
+      `If Option 2's Year 2 return were removed entirely, leaving only $a_0 = -\\$50,000$ and $a_1 = \\$6,000$, its internal rate of return would be even lower than Option 2's own internal rate of return.`,
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A) The limiting internal rate of return of Option 1 is 12%.**  (true)
+
+As calculated in Step 1, $r = 6,000/50,000 = 0.12 = 12\\%$.
+
+Infinite level returns: $a_0 + a/r = 0$ gives
+
+$$r = 6,000 / 50,000 = 0.12 = 12\\%$$`,
+      `**B) The internal rate of return of Option 2 is approximately -58.84%.**  (true)
+
+As calculated in Steps 2–5, the valid root gives $r^{*} \\approx -0.5884 = -58.84\\%$.
+
+$6,000 s^{2} + 6,000 s - 50,000 = 0 \\Rightarrow 3s^{2} + 3s - 25 = 0$.
+
+Discriminant 309, $\\sqrt{309} \\approx 17.578$.
+
+$$s = (-3 + 17.578)/6 \\approx 2.4297$$
+
+$$r = 1/2.4297 - 1 \\approx -0.5884 = -58.84\\%$$
+
+(The other root s ≈ −3.430 gives r ≈ −1.291, which is discarded because r must exceed −1.)`,
+      `**C) Option 2 has a unique internal rate of return greater than -1.**  (true)
+
+The theorem only requires $a_0 < 0$ and all subsequent $a_i > 0$ to guarantee a unique $r^{*} > -1$; it does not require the quadratic to have only one mathematical root. Here one root ($r \\approx -1.291$) falls outside the allowed range $r > -1$ and is discarded, leaving exactly one valid root, precisely what the theorem guarantees.
+
+Cash-flow signs: $a_0 = -50,000 < 0$, $a_1 = a_2 = 6,000 > 0$. The theorem guarantees exactly one valid root $r^* > -1$. The quadratic's extra root r ≈ −1.291 lies outside that range and is dropped, leaving the −58.84% already computed.`,
+      `**D) The sum of Option 2's cash flows, $a_0$ + $a_1$ + $a_2$, equals -\\$40,000.**  (false)
+
+$a_0 + a_1 + a_2 = -50,000 + 6,000 + 6,000 = -38,000$, i.e. -\\$38,000, not -\\$40,000.`,
+      `**E) If Option 2's Year 2 return were removed entirely, leaving only $a_0 = -\\$50,000$ and $a_1 = \\$6,000$, its internal rate of return would be even lower than Option 2's own internal rate of return.**  (true)
+
+With only $a_0 = -\\$50,000$ and $a_1 = \\$6,000$: $r = (6,000/50,000) - 1 = 0.12 - 1 = -0.88 = -88\\%$. Since -88% is lower (more negative) than -58.84%, the statement is correct.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 122,
+    solution_overview: `A subscription software company spends \\$50,000 building a product and is comparing two versions. Option 1, the full version: a steady net return of \\$6,000 at the end of every year, indefinitely into the future. Option 2, the scaled-back version: the same \\$50,000 outlay, but returns of only \\$6,000 at the end of Year 1 and \\$6,000 at the end of Year 2, with nothing paid afterward.
+
+**Part 1: Setup.**
+
+$a_0 = -\\$50,000$ (both options)
+
+Option 1: $a_i = \\$6,000$ each year forever; Option 2: $a_1 = a_2 = \\$6,000$ ($n = 2$)
+
+**Part 2: Formula.**
+
+Option 1: $a_0 + a/r = 0 \\Rightarrow r = a/(-a_0)$
+
+Option 2: $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$; substitute $s = (1+r)^{-1}$
+
+**Part 3: Solve.**
+
+**1.** Option $1$: $r = 6,000/50,000 = 12\\%$.
+
+**2.** Option $2$: $6,000s^{2} + 6,000s - 50,000 = 0$ reduces to $3s^{2} + 3s - 25 = 0$; $\\sqrt{309} \\approx 17.578$; valid root $s \\approx 2.430$ gives $r \\approx -58.84\\%$ (discard $r < -1$).
+
+**3.** Option $2$ cash-flow sum $= -\\$38,000$ (not $-\\$40,000$); one-year truncation gives $-88\\%$, which is lower than $-58.84\\%$.
+`,
+  },
+===== TASK 123 =====
+    id: `math-11-123`,
+    case_id: `MATH 11.123`,
+    title: `A renewable energy cooperative is comparing two designs for a community solar pr`,
+    subsection: `11.7`,
+    context: `A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest \\$120,000, with net returns of \\$54,000 at the end of Year 1 and \\$88,000 at the end of Year 2. Design B, a simpler one-year project: invest \\$70,000, with a single net return of \\$81,200 at the end of Year 1.`,
+    statements: [
+      `The internal rate of return of Design A is approximately 11.04%.`,
+      `The internal rate of return of Design B is exactly 16%.`,
+      `Based on the internal rate of return criterion, Design B should be preferred over Design A.`,
+      `At a discount rate of 13%, Design A has negative net present value while Design B still has positive net present value.`,
+      `If Design A's Year 1 return were \\$10,000 lower, with Year 2 unchanged at \\$88,000, its internal rate of return would still exceed Design B's 16%.`,
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A) The internal rate of return of Design A is approximately 11.04%.**  (true)
+
+As calculated in Steps 1–3, $r_A \\approx 11.04\\%$.
+
+$$88,000 s^{2} + 54,000 s - 120,000 = 0 \\Rightarrow 44s^{2} + 27s - 60 = 0$$
+
+Discriminant: $729 + 10,560 = 11,289$, $\\sqrt{11,289} \\approx 106.250$.
+
+$$s = (-27 + 106.250)/88 \\approx 0.90057$$
+
+$$r_A = 1/0.90057 - 1 \\approx 0.11041 = 11.04\\%$$`,
+      `**B) The internal rate of return of Design B is exactly 16%.**  (true)
+
+As calculated in Step 4, $r_B = 16\\%$ exactly.
+
+$r_B = (81,200 / 70,000) - 1 = 1.16 - 1 = 0.16 = 16\\%$.`,
+      `**C) Based on the internal rate of return criterion, Design B should be preferred over Design A.**  (true)
+
+The chapter's criterion is to prefer the project with the higher internal rate of return. Since 16% (Design B) exceeds 11.04% (Design A), Design B should indeed be preferred.
+
+16% (B) > 11.04% (A), so the IRR rule prefers Design B.`,
+      `**D) At a discount rate of 13%, Design A has negative net present value while Design B still has positive net present value.**  (true)
+
+NPV_A at 13% = -120,000 + 54,000/1.13 + 88,000/1.2769 = -120,000 + 47,787.61 + 68,916.91 = -\\$3,295.48, negative. NPV_B at 13% = -70,000 + 81,200/1.13 = -70,000 + 71,858.41 = \\$1,858.41, positive. Both parts of the statement are correct.`,
+      `**E) If Design A's Year 1 return were \\$10,000 lower, with Year 2 unchanged at \\$88,000, its internal rate of return would still exceed Design B's 16%.**  (false)
+
+With $a_1 = \\$44,000$: $88,000s^{2} + 44,000s - 120,000 = 0$ → $22s^{2} + 11s - 30 = 0$. Discriminant = 121 + 2,640 = 2,761, √2,761 ≈ 52.545. $s = (-11 + 52.545)/44 \\approx 0.94420$, $r = 1/0.94420 - 1 \\approx 0.05909 = 5.91\\%$, which does not exceed Design B's 16%.`,
+    ],
+    difficulty_level: `5/5`,
+    sort_order: 123,
+    solution_overview: `A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest \\$120,000, with net returns of \\$54,000 at the end of Year 1 and \\$88,000 at the end of Year 2. Design B, a simpler one-year project: invest \\$70,000, with a single net return of \\$81,200 at the end of Year 1.
+
+**Part 1: Setup.**
+
+Design A: $a_0 = -\\$120,000$, $a_1 = \\$54,000$, $a_2 = \\$88,000$
+
+Design B: $a = \\$70,000$, $b = \\$81,200$
+
+$n = 2$ years (Design A) / 1 year (Design B)
+
+**Part 2: Formula.**
+
+Design A ($n = 2$): $a_0 + a_1/(1+r) + a_2/(1+r)^{2} = 0$
+
+Substitute $s = (1+r)^{-1}$
+
+Design B ($n = 1$): $r = (b/a) - 1$
+
+**Part 3: Solve.**
+
+**1.** Step $1$ (Design A): $88,000s^{2} + 54,000s - 120,000 = 0$.
+
+**2.** Dividing by $2,000$: $44s^{2} + 27s - 60 = 0$.
+
+**3.** Step $2$: Discriminant: $27^{2} + 4(44)(60) = 729 + 10,560 = 11,289$.
+
+**4.** $\\sqrt{11,289} \\approx 106.250$.
+
+**5.** Step $3$: $s = (-27 + 106.250)/88 \\approx 0.90057$, so $r_A = 1/0.90057 - 1 \\approx 0.11041 \\approx 11.04\\%$.
+
+**6.** Step $4$ (Design B): $r_B = (81,200/70,000) - 1 = 1.16 - 1 = 0.16 = 16\\%$.
+
+**7.** NPV at $13\\%$: $NPV_A = -120,000 + 54,000/1.13 + 88,000/1.2769 = -120,000 + 47,787.61 + 68,916.91 = -\\$3,295.48 < 0$; $NPV_B = -70,000 + 81,200/1.13 = -70,000 + 71,858.41 = \\$1,858.41 > 0$.
+`,
+  },
+];
+

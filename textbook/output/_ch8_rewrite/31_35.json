@@ -1,0 +1,192 @@
+[
+  {
+    "id": "math-8-31",
+    "case_id": "MATH 8.31",
+    "title": "Packing Output Recovered From a Shift Extension",
+    "difficulty": "1/5",
+    "sort_order": 31,
+    "context": "A packing station's output follows $N(h)=A h^{0.5}$ items, where $h>0$ is the length of the shift in hours. The shift log never records the coefficient: it notes only that extending a shift from $4$ to $9$ hours added exactly $30$ items to the count. A customer order of $150$ items has to be filled inside a single shift. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the packing law is $30$.",
+      "A nine-hour shift packs $135$ items.",
+      "Doubling the shift length doubles the number of items packed.",
+      "The $150$-item order can be filled inside a $20$-hour shift.",
+      "Items packed per hour rises as the shift lengthens."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe shift log records a gain in the item count between two shift lengths rather than an output level, so the coefficient has to be rebuilt from a difference. Both shift lengths are perfect squares, so the shape factors are whole numbers:\n\n$$9^{0.5} = 3, \\qquad 4^{0.5} = 2$$\n\nThe recorded gain multiplies the coefficient by the difference of those factors, which here happens to be $1$:\n\n$$N(9) - N(4) = A(3 - 2) = A = 30$$\n\nReading $30$ as an output or an hourly rate and dividing by a shift length would give $\\frac{30}{9}$ or $\\frac{30}{4}$ instead. The recovered law reproduces the log:\n\n$$N(h) = 30\\sqrt{h}, \\qquad N(4) = 60, \\qquad N(9) = 90$$\n\nThe two shifts differ by $30$ items as recorded, so the statement is True.",
+      "**B.** → False\n\nMoving between two shift lengths multiplies output by the square root of the length ratio, since the exponent is $0.5$:\n\n$$\\frac{N(9)}{N(4)} = \\left(\\frac{9}{4}\\right)^{0.5} = \\frac{3}{2}, \\qquad N(9) = \\frac{3}{2}\\cdot 60 = 90$$\n\nStretching the four-hour count of $60$ by the ratio $\\frac{9}{4}$ itself produces the claimed $135$, which is the linear answer. Evaluating the law directly agrees with the ratio route:\n\n$$N(9) = 30\\sqrt{9} = 30 \\cdot 3 = 90$$\n\nThe nine-hour shift packs $90$ items, so the statement is False.",
+      "**C.** → False\n\nA scale factor depends only on the exponent, and the coefficient cancels out of the ratio:\n\n$$\\frac{N(2h)}{N(h)} = \\frac{A(2h)^{0.5}}{Ah^{0.5}} = 2^{0.5} \\approx 1.414$$\n\n$$N(4) = 60, \\qquad N(8) = 30\\sqrt{8} \\approx 84.9$$\n\nTwice the time gives twice the work only for a steady flow; an exponent below $1$ encodes fatigue and setup effects, so each extra hour adds less than the one before. Eight hours pack about $85$ items rather than $120$, so the statement is False.",
+      "**D.** → False\n\nTwo readings settle an order-against-a-limit claim, and here they agree: evaluate the law at the shift limit, then invert it at the order size.\n\n$$N(20) = 30\\sqrt{20} \\approx 30(4.472) \\approx 134.2 < 150$$\n\n$$30\\sqrt{h} = 150 \\quad \\Rightarrow \\quad \\sqrt{h} = 5 \\quad \\Rightarrow \\quad h = 25$$\n\n$$25 - 20 = 5$$\n\nExtrapolating from the logged shifts, where nine hours packed $90$ items, makes twenty hours look comfortable, but a square-root law turns a shift more than doubled into about $50\\%$ more output. The order needs $25$ hours, five beyond the limit, so the statement is False.",
+      "**E.** → False\n\nItems per hour is the average product, formed by dividing the law by the shift length and subtracting exponents:\n\n$$\\frac{N(h)}{h} = \\frac{30h^{0.5}}{h} = 30h^{-0.5}$$\n\nThe exponent is negative, so the hourly rate decays even while the total keeps climbing:\n\n$$\\frac{N(4)}{4} = 15, \\qquad \\frac{N(9)}{9} = 10, \\qquad \\frac{N(25)}{25} = 6$$\n\nMore items overall and more items per hour are different claims, and with an exponent below $1$ they point in opposite directions. The hourly rate falls from $15$ to $6$ items, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $h$ = shift length in hours and $N(h)$ = items packed. The exponent is given, so one fact is enough to fix the coefficient — but that fact is a difference of two outputs, not a single output.\n\n**1. Translate: the recorded extension.** Write both shifts through the law and subtract:\n\n$$A(9)^{0.5} - A(4)^{0.5} = 30$$\n\n**2. Translate: the order.** The order sets a target output to invert:\n\n$$N(h) = 150$$\n\n**Part 2: The model.**\n\n$$A(3 - 2) = 30 \\tag{1}$$\n\n$$Ah^{0.5} = 150 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) gives the coefficient and the law:\n\n$$A = 30, \\qquad N(h) = 30\\sqrt{h}$$\n\n**2.** Check the law against the logged shifts:\n\n$$N(4) = 60, \\qquad N(9) = 90, \\qquad 90 - 60 = 30 \\;\\checkmark$$\n\n**3.** Scale factors depend on the exponent alone:\n\n$$\\frac{N(2h)}{N(h)} = 2^{0.5} \\approx 1.414, \\qquad \\frac{N(9)}{N(4)} = \\left(\\tfrac{9}{4}\\right)^{0.5} = 1.5$$\n\n**4.** Equation (2) inverts at the order size, and the $20$-hour limit falls short:\n\n$$\\sqrt{h} = 5 \\;\\Rightarrow\\; h = 25, \\qquad N(20) \\approx 134.2 < 150$$\n\n**5.** The hourly rate is the law divided by $h$, so it decays:\n\n$$\\frac{N(h)}{h} = 30h^{-0.5}: \\quad 15 \\text{ at } h=4, \\quad 10 \\text{ at } h=9, \\quad 6 \\text{ at } h=25$$"
+    ],
+    "solution_overview": "Packing output follows $N(h)=Ah^{0.5}$ items on a shift of $h>0$ hours. The log records only that extending a shift from $4$ to $9$ hours added $30$ items, and an order of $150$ items must fit in one shift.\n\n**Part 1: Building the model.**\n\nLet $h$ = shift length in hours and $N(h)$ = items packed. The exponent is given, so one fact is enough to fix the coefficient — but that fact is a difference of two outputs, not a single output.\n\n**1. Translate: the recorded extension.** Write both shifts through the law and subtract:\n\n$$A(9)^{0.5} - A(4)^{0.5} = 30$$\n\n**2. Translate: the order.** The order sets a target output to invert:\n\n$$N(h) = 150$$\n\n**Part 2: The model.**\n\n$$A(3 - 2) = 30 \\tag{1}$$\n\n$$Ah^{0.5} = 150 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) gives the coefficient and the law:\n\n$$A = 30, \\qquad N(h) = 30\\sqrt{h}$$\n\n**2.** Check the law against the logged shifts:\n\n$$N(4) = 60, \\qquad N(9) = 90, \\qquad 90 - 60 = 30 \\;\\checkmark$$\n\n**3.** Scale factors depend on the exponent alone:\n\n$$\\frac{N(2h)}{N(h)} = 2^{0.5} \\approx 1.414, \\qquad \\frac{N(9)}{N(4)} = \\left(\\tfrac{9}{4}\\right)^{0.5} = 1.5$$\n\n**4.** Equation (2) inverts at the order size, and the $20$-hour limit falls short:\n\n$$\\sqrt{h} = 5 \\;\\Rightarrow\\; h = 25, \\qquad N(20) \\approx 134.2 < 150$$\n\n**5.** The hourly rate is the law divided by $h$, so it decays:\n\n$$\\frac{N(h)}{h} = 30h^{-0.5}: \\quad 15 \\text{ at } h=4, \\quad 10 \\text{ at } h=9, \\quad 6 \\text{ at } h=25$$\n\n**Answer.** $A = 30$ | $N(h) = 30\\sqrt{h}$ | $N(9) = 90$ | the $150$-item order needs $h = 25$ hours",
+    "expl_lens": [
+      740,
+      539,
+      487,
+      604,
+      2055
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-32",
+    "case_id": "MATH 8.32",
+    "title": "Drag and Absorbed Power on a Wind-Tunnel Rig",
+    "difficulty": "1/5",
+    "sort_order": 32,
+    "context": "Aerodynamic drag on a test rig follows $F(v)=A v^{r}$ newtons, where $v>0$ is the airspeed in metres per second; neither constant is supplied by the manufacturer. Two wind-tunnel runs are on file: $160$ N at $20$ m/s and $640$ N at $40$ m/s. The rig also reports the power absorbed, $P=F\\cdot v$ watts, and its mounting is rated to $1000$ N. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The drag law is $F(v)=0.4v^{2}$.",
+      "The mounting's $1000$ N rating is first reached at a speed above $55$ m/s.",
+      "The absorbed power is a power function of speed with exponent $3$.",
+      "Doubling the airspeed doubles the absorbed power.",
+      "At $50$ m/s the rig absorbs $25$ kW."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nTwo runs are exactly what a two-constant law needs: their ratio carries the exponent, because only in a ratio does the coefficient cancel.\n\n$$\\frac{F(40)}{F(20)} = \\frac{A(40)^{r}}{A(20)^{r}} = 2^{r} = \\frac{640}{160} = 4 \\quad \\Rightarrow \\quad r = 2$$\n\nEither run then fixes the level:\n\n$$A(20)^{2} = 160 \\quad \\Rightarrow \\quad 400A = 160 \\quad \\Rightarrow \\quad A = 0.4$$\n\nWorking with the difference of the runs, $480$ N over $20$ m/s, would describe a straight line rather than a power law. The run not used for the level verifies the result:\n\n$$F(40) = 0.4(1600) = 640 \\;\\checkmark$$\n\nBoth runs sit on $F(v)=0.4v^{2}$, so the statement is True.",
+      "**B.** → False\n\nThe mounting rating is a force, so the speed behind it comes from inverting the drag law:\n\n$$0.4v^{2} = 1000 \\quad \\Rightarrow \\quad v^{2} = 2500 \\quad \\Rightarrow \\quad v = 50$$\n\nThe scale factor from the faster logged run agrees:\n\n$$F(50) = F(40)\\left(\\frac{50}{40}\\right)^{2} = 640 \\cdot 1.5625 = 1000 \\;\\checkmark$$\n\nLinear extrapolation from that run suggests $40 \\cdot \\frac{1000}{640} = 62.5$ m/s and clears $55$ comfortably; because drag grows with the square of speed, the remaining $360$ N of headroom is consumed by only $10$ m/s. The rating is reached at $50$ m/s, so the statement is False.",
+      "**C.** → True\n\nAbsorbed power is drag times speed, and multiplying by $v$ is itself a power of $v$, so the exponents add:\n\n$$P(v) = F(v)\\cdot v = 0.4v^{2}\\cdot v^{1} = 0.4v^{3}$$\n\nThe logged runs display the resulting shape:\n\n$$P(20) = 0.4(8000) = 3200 \\text{ W}, \\qquad P(40) = 0.4(64000) = 25600 \\text{ W}$$\n\n$$\\frac{P(40)}{P(20)} = 8 = 2^{3}$$\n\nPower does not inherit the drag exponent, even though both quantities come off the same runs. Absorbed power is $0.4v^{3}$, a power function with exponent $3$, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $v$ = airspeed in m/s, $F(v)$ = drag in newtons, $P(v)$ = absorbed power in watts. Two unknown constants need two facts, and the two runs supply them: their ratio isolates the exponent, either run then fixes the coefficient.\n\n**1. Translate: the two runs.** Ratios kill the coefficient, so read the exponent first:\n\n$$\\frac{F(40)}{F(20)} = 2^{r} = 4$$\n\n**2. Translate: the level.** One run fixes the scale:\n\n$$A(20)^{2} = 160$$\n\n**3. Translate: the rating.** The mounting sets a drag target to invert:\n\n$$F(v) = 1000$$\n\n**Part 2: The model.**\n\n$$2^{r} = 4 \\tag{1}$$\n\n$$400A = 160 \\tag{2}$$\n\n$$Av^{r} = 1000 \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Equations (1) and (2) give the drag law:\n\n$$r = 2, \\qquad A = 0.4, \\qquad F(v) = 0.4v^{2}$$\n\n**2.** Multiplying by the speed adds one to the exponent:\n\n$$P(v) = 0.4v^{2}\\cdot v = 0.4v^{3}$$\n\n**3.** Equation (3) inverts at the rating:\n\n$$0.4v^{2} = 1000 \\;\\Rightarrow\\; v^{2} = 2500 \\;\\Rightarrow\\; v = 50$$\n\n**4.** Scale factors follow from the two exponents:\n\n$$\\frac{F(2v)}{F(v)} = 4, \\qquad \\frac{P(2v)}{P(v)} = 8$$\n\n**5.** Evaluate the power at the limiting speed:\n\n$$P(50) = 0.4(125000) = 50000 \\text{ W} = 50 \\text{ kW}$$",
+      "**D.** → False\n\nThe scale factor of the power law uses its own exponent, which is $3$:\n\n$$\\frac{P(2v)}{P(v)} = \\frac{0.4(2v)^{3}}{0.4v^{3}} = 2^{3} = 8$$\n\nThe logged runs give the same factor:\n\n$$\\frac{P(40)}{P(20)} = \\frac{25600}{3200} = 8$$\n\nNeither proportionality nor drag's squared exponent applies, since power carries drag's exponent plus one, which is why speed punishes fan and engine sizing so heavily. Absorbed power multiplies by $8$ rather than $2$, so the statement is False.",
+      "**E.** → False\n\nAbsorbed power at a given speed is force times speed, with no halving anywhere in the definition:\n\n$$P(50) = 0.4(50)^{3} = 0.4 \\cdot 125000 = 50000 \\text{ W} = 50 \\text{ kW}$$\n\nRouting through the drag at that speed gives the same figure:\n\n$$P(50) = F(50)\\cdot 50 = 1000 \\cdot 50 = 50000 \\text{ W}$$\n\nThe claimed $25$ kW is what carrying the factor $\\tfrac{1}{2}$ from the kinetic-energy formula would produce, and that half belongs to the energy stored in moving air rather than to the rate of work against drag. The rig absorbs $50$ kW, so the statement is False."
+    ],
+    "solution_overview": "Drag follows $F(v)=Av^{r}$ newtons at airspeed $v>0$, with runs of $160$ N at $20$ m/s and $640$ N at $40$ m/s. Absorbed power is $P=F\\cdot v$ and the mounting is rated to $1000$ N.\n\n**Part 1: Building the model.**\n\nLet $v$ = airspeed in m/s, $F(v)$ = drag in newtons, $P(v)$ = absorbed power in watts. Two unknown constants need two facts, and the two runs supply them: their ratio isolates the exponent, either run then fixes the coefficient.\n\n**1. Translate: the two runs.** Ratios kill the coefficient, so read the exponent first:\n\n$$\\frac{F(40)}{F(20)} = 2^{r} = 4$$\n\n**2. Translate: the level.** One run fixes the scale:\n\n$$A(20)^{2} = 160$$\n\n**3. Translate: the rating.** The mounting sets a drag target to invert:\n\n$$F(v) = 1000$$\n\n**Part 2: The model.**\n\n$$2^{r} = 4 \\tag{1}$$\n\n$$400A = 160 \\tag{2}$$\n\n$$Av^{r} = 1000 \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Equations (1) and (2) give the drag law:\n\n$$r = 2, \\qquad A = 0.4, \\qquad F(v) = 0.4v^{2}$$\n\n**2.** Multiplying by the speed adds one to the exponent:\n\n$$P(v) = 0.4v^{2}\\cdot v = 0.4v^{3}$$\n\n**3.** Equation (3) inverts at the rating:\n\n$$0.4v^{2} = 1000 \\;\\Rightarrow\\; v^{2} = 2500 \\;\\Rightarrow\\; v = 50$$\n\n**4.** Scale factors follow from the two exponents:\n\n$$\\frac{F(2v)}{F(v)} = 4, \\qquad \\frac{P(2v)}{P(v)} = 8$$\n\n**5.** Evaluate the power at the limiting speed:\n\n$$P(50) = 0.4(125000) = 50000 \\text{ W} = 50 \\text{ kW}$$\n\n**Answer.** $F(v) = 0.4v^{2}$ | $P(v) = 0.4v^{3}$ | rating reached at $v = 50$ m/s | $P(50) = 50$ kW",
+    "expl_lens": [
+      666,
+      619,
+      1985,
+      489,
+      581
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-33",
+    "case_id": "MATH 8.33",
+    "title": "Inelastic Demand and Where Revenue Goes",
+    "difficulty": "2/5",
+    "sort_order": 33,
+    "context": "A regional utility faces demand $q(p)=A p^{-0.5}$ units per month at a price $p>0$, and a price of $16$ sells $300$ units. The board wants to know how revenue $R=pq$ behaves along this curve. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Revenue rises as the price rises.",
+      "Raising price by $44\\%$ cuts quantity by exactly $20\\%$.",
+      "To reduce monthly quantity to $200$ units, the price must rise to $40$.",
+      "Quadrupling the price cuts quantity to a quarter.",
+      "Revenue does not depend on the price."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nRevenue's exponent is demand's exponent plus one, so direction is settled by that sum. The observation calibrates demand first:\n\n$$A(16)^{-0.5} = 300 \\quad \\Rightarrow \\quad \\frac{A}{4} = 300 \\quad \\Rightarrow \\quad A = 1200$$\n\n$$R(p) = p \\times 1200p^{-0.5} = 1200p^{0.5}$$\n\nWith demand at $-0.5$ the revenue exponent is $+0.5$: quantity does fall when price rises, but not fast enough to offset the higher price.\n\n$$R(16) = 1200(4) = 4800, \\qquad R(25) = 1200(5) = 6000$$\n\nRevenue rises with price, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $p$ = price, $q$ = units sold, $R$ = revenue. The exponent is given, one observation pins the coefficient, and revenue is derived by multiplying by $p$, which raises the exponent by one.\n\n**1. Translate: the observed pair.**\n\n$$A(16)^{-0.5} = 300, \\qquad 16^{-0.5} = \\tfrac{1}{4}$$\n\n**2. Translate: revenue.**\n\n$$R(p) = p \\cdot Ap^{-0.5} = Ap^{0.5}$$\n\n**Part 2: The model.**\n\n$$q(p) = 1200\\,p^{-0.5} \\tag{1}$$\n\n$$R(p) = 1200\\,p^{0.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The observation gives the coefficient:\n\n$$A = 300 \\times 4 = 1200$$\n\n**2.** The elasticity is the exponent of (1):\n\n$$\\text{El}_{p}q = -0.5 \\quad \\text{(inelastic)}$$\n\n**3.** Quantities along the curve:\n\n$$q(16) = 300, \\qquad q(25) = 240, \\qquad q(64) = 150$$\n\n**4.** Scale factors use the exponent, not the price multiplier:\n\n$$4^{-0.5} = \\tfrac{1}{2}, \\qquad \\left(\\tfrac{25}{16}\\right)^{-0.5} = 0.8$$\n\n**5.** Because $-0.5 + 1 = 0.5 > 0$, revenue rises with price; it would be flat only at elasticity $-1$:\n\n$$R(4) = 2400, \\qquad R(16) = 4800, \\qquad R(64) = 9600$$",
+      "**B.** → False\n\nA finite price rise of $44\\%$ acts through the exact power of the multiplier $1.44$, which is a convenient square:\n\n$$\\frac{q(1.44p)}{q(p)}=1.44^{-0.5}=\\frac{1}{1.2}=\\frac{5}{6}$$\n\nThe quantity fall is one minus that surviving fraction:\n\n$$1-\\frac{5}{6}=\\frac{1}{6}\\approx16.7\\%$$\n\nMultiplying $44\\%$ by the elasticity $-0.5$ gives $22\\%$, and rounding the convenient square towards $20\\%$ is no better; the word \"exactly\" leaves room for neither. Quantity falls by about $16.7\\%$, so the statement is False.",
+      "**C.** → False\n\nA target quantity inverts the calibrated curve $q(p)=1200p^{-0.5}$, which leaves the square root of price on one side:\n\n$$200=\\frac{1200}{\\sqrt{p}} \\quad\\Rightarrow\\quad \\sqrt{p}=6$$\n\n$$p=6^2=36$$\n\nQuantity has to fall by a third from the observed $300$, and squaring the inversion makes the required price move larger than that proportion suggests, though it still lands short of $40$. The target quantity arrives at a price of $36$, so the statement is False.",
+      "**D.** → False\n\nQuadrupling the price multiplies quantity by four raised to the demand exponent $-0.5$, so the fall is a square root rather than a proportion:\n\n$$\\frac{q(4p)}{q(p)} = 4^{-0.5} = \\frac{1}{2}, \\qquad q(16) = 300, \\qquad q(64) = \\frac{1200}{8} = 150$$\n\nCutting quantity to a quarter would need an exponent of $-1$, or a sixteenfold price rise on this curve:\n\n$$q(256) = \\frac{1200}{16} = 75$$\n\nQuantity halves, so the statement is False.",
+      "**E.** → False\n\nPrice-independent revenue is the case of a zero revenue exponent, which arises only when demand's exponent is exactly $-1$:\n\n$$R(p) = 1200p^{0.5}, \\qquad 0.5 \\ne 0$$\n\n$$R(4) = 2400, \\qquad R(16) = 4800, \\qquad R(64) = 9600$$\n\nHere the exponent is $+0.5$, so revenue not only depends on price but moves in the same direction as it, the hallmark of inelastic demand. Revenue doubles with each quadrupling of price, so the statement is False."
+    ],
+    "solution_overview": "Demand is $q(p)=Ap^{-0.5}$ with $q(16)=300$, and revenue is $R=pq$.\n\n**Part 1: Building the model.**\n\nLet $p$ = price, $q$ = units sold, $R$ = revenue. The exponent is given, one observation pins the coefficient, and revenue is derived by multiplying by $p$, which raises the exponent by one.\n\n**1. Translate: the observed pair.**\n\n$$A(16)^{-0.5} = 300, \\qquad 16^{-0.5} = \\tfrac{1}{4}$$\n\n**2. Translate: revenue.**\n\n$$R(p) = p \\cdot Ap^{-0.5} = Ap^{0.5}$$\n\n**Part 2: The model.**\n\n$$q(p) = 1200\\,p^{-0.5} \\tag{1}$$\n\n$$R(p) = 1200\\,p^{0.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The observation gives the coefficient:\n\n$$A = 300 \\times 4 = 1200$$\n\n**2.** The elasticity is the exponent of (1):\n\n$$\\text{El}_{p}q = -0.5 \\quad \\text{(inelastic)}$$\n\n**3.** Quantities along the curve:\n\n$$q(16) = 300, \\qquad q(25) = 240, \\qquad q(64) = 150$$\n\n**4.** Scale factors use the exponent, not the price multiplier:\n\n$$4^{-0.5} = \\tfrac{1}{2}, \\qquad \\left(\\tfrac{25}{16}\\right)^{-0.5} = 0.8$$\n\n**5.** Because $-0.5 + 1 = 0.5 > 0$, revenue rises with price; it would be flat only at elasticity $-1$:\n\n$$R(4) = 2400, \\qquad R(16) = 4800, \\qquad R(64) = 9600$$\n\n**Answer.** $A = 1200$ | $q(p) = 1200p^{-0.5}$ | $R(p) = 1200p^{0.5}$ | elasticity $-0.5$",
+    "expl_lens": [
+      1861,
+      524,
+      477,
+      450,
+      455
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-34",
+    "case_id": "MATH 8.34",
+    "title": "Kiln Output Under a Licensed Ceiling",
+    "difficulty": "2/5",
+    "sort_order": 34,
+    "context": "A kiln's daily output follows $y(x)=A x^{\\frac{4}{3}}$ tonnes, where $x>0$ is the fuel feed in cubic metres. A test firing at a feed of $27$ produced $324$ tonnes. The site licence caps daily output at $1024$ tonnes. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The coefficient of the output law is $4$.",
+      "The licensed ceiling of $1024$ tonnes is reached at a feed of $64$.",
+      "A fuel feed of $32$ produces half of the licensed output ceiling.",
+      "A feed of $8$ produces $32$ tonnes.",
+      "Increasing fuel feed from $27$ to $54$ raises output by about $125\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA fractional exponent is handled through its denominator first, taking the cube root of the test feed and then the fourth power:\n\n$$27^{\\frac{4}{3}} = \\left(27^{\\frac{1}{3}}\\right)^{4} = 3^{4} = 81$$\n\nDividing the recorded output by that shape factor leaves the coefficient:\n\n$$81A = 324 \\quad \\Rightarrow \\quad A = 4, \\qquad y(x) = 4x^{\\frac{4}{3}}$$\n\nThe other order works as well but passes through the awkward intermediate $27^{4}=531441$. The coefficient is $4$, so the statement is True.",
+      "**B.** → True\n\nThe licence caps output, so the feed behind it comes from inverting the law with the reciprocal exponent $\\frac{3}{4}$:\n\n$$4x^{\\frac{4}{3}} = 1024 \\quad \\Rightarrow \\quad x^{\\frac{4}{3}} = 256$$\n\n$$x = 256^{\\frac{3}{4}} = \\left(4^{4}\\right)^{\\frac{3}{4}} = 4^{3} = 64$$\n\nAn exponent above $1$ compresses the required input change: output rises by a factor of about $3.16$ from the test firing while fuel rises only by about $2.37$. Substitution confirms the feed:\n\n$$y(64) = 4 \\times 64^{\\frac{4}{3}} = 4 \\times 256 = 1024$$\n\nThe ceiling binds at a feed of $64$, so the statement is True.",
+      "**C.** → False\n\nHalf the licensed ceiling is $512$ tonnes, and the claim can be tested from either end. Pushing the named feed through the calibrated law is the shorter route:\n\n$$32^{\\frac{4}{3}} = 2^{\\frac{20}{3}} \\approx 101.59, \\qquad y(32) \\approx 406.4$$\n\nThat falls short of $512$ by a wide margin. Inverting at half the ceiling names the feed that does reach it:\n\n$$4x^{\\frac{4}{3}} = 512 \\quad \\Rightarrow \\quad x^{\\frac{4}{3}} = 128$$\n\n$$x = 128^{\\frac{3}{4}} = \\left(2^{7}\\right)^{\\frac{3}{4}} = 2^{\\frac{21}{4}} \\approx 38.05$$\n\nHalving the licensed feed of $64$ would be right for an exponent of $1$; with exponent $\\frac{4}{3}$ output falls faster than feed. Half the ceiling takes a feed of about $38.1$, so the statement is False.",
+      "**D.** → False\n\nA perfect cube keeps the shape factor exact: the exponent $\\frac{4}{3}$ takes the cube root of the feed, then the fourth power.\n\n$$8^{\\frac{4}{3}} = \\left(8^{\\frac{1}{3}}\\right)^{4} = 2^{4} = 16, \\qquad y(8) = 4(16) = 64$$\n\nThe test firing reaches the same level through a scale factor, since $8$ and $27$ are both cubes:\n\n$$\\frac{y(8)}{y(27)} = \\left(\\frac{2}{3}\\right)^{4} = \\frac{16}{81}, \\qquad 324 \\times \\frac{16}{81} = 64$$\n\nThe claimed $32$ is what reading the exponent as $1$ would give. The kiln produces $64$ tonnes, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $x$ = fuel feed and $y(x)$ = daily output. The exponent is given and exceeds $1$, so the kiln shows increasing returns; the test firing pins the coefficient and the licence gives a level to invert.\n\n**1. Translate: the test firing.** The feed is a perfect cube, so the shape factor is exact:\n\n$$27^{\\frac{4}{3}} = 3^{4} = 81, \\qquad 81A = 324$$\n\n**2. Translate: the licence.**\n\n$$4x^{\\frac{4}{3}} \\le 1024$$\n\n**Part 2: The model.**\n\n$$y(x) = 4x^{\\frac{4}{3}} \\tag{1}$$\n\n$$x^{\\frac{4}{3}} \\le 256 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The test firing gives the coefficient:\n\n$$A = 4$$\n\n**2.** Levels at perfect cubes:\n\n$$y(8) = 64, \\qquad y(27) = 324, \\qquad y(64) = 1024$$\n\n**3.** The scale factor exceeds the multiplier because the exponent exceeds $1$:\n\n$$2^{\\frac{4}{3}} \\approx 2.52 \\quad (+152\\%)$$\n\n**4.** Invert (2) with the reciprocal exponent $\\frac{3}{4}$:\n\n$$x = 256^{\\frac{3}{4}} = 64$$\n\n**5.** Fuel efficiency improves with scale, since dividing by $x$ leaves a positive exponent:\n\n$$\\frac{y(x)}{x} = 4x^{\\frac{1}{3}}, \\qquad 8 \\to 12 \\to 16 \\text{ at feeds } 8, 27, 64$$",
+      "**E.** → False\n\nDoubling the fuel feed multiplies output by two raised to the exponent $\\frac{4}{3}$, with the coefficient cancelling in the ratio:\n\n$$\\frac{y(54)}{y(27)}=2^{\\frac{4}{3}}\\approx2.5198$$\n\nA percentage change is that factor minus one:\n\n$$(2.5198-1)\\times100\\%\\approx152.0\\%$$\n\nApplying the exponent to the $100\\%$ feed increase as though it were an ordinary multiplier lands near the figure in the claim, while the full power goes further. Output rises by about $152\\%$, so the statement is False."
+    ],
+    "solution_overview": "Kiln output is $y(x)=Ax^{\\frac{4}{3}}$ tonnes for a fuel feed $x>0$, with a test firing $y(27)=324$ and a licensed ceiling of $1024$ tonnes.\n\n**Part 1: Building the model.**\n\nLet $x$ = fuel feed and $y(x)$ = daily output. The exponent is given and exceeds $1$, so the kiln shows increasing returns; the test firing pins the coefficient and the licence gives a level to invert.\n\n**1. Translate: the test firing.** The feed is a perfect cube, so the shape factor is exact:\n\n$$27^{\\frac{4}{3}} = 3^{4} = 81, \\qquad 81A = 324$$\n\n**2. Translate: the licence.**\n\n$$4x^{\\frac{4}{3}} \\le 1024$$\n\n**Part 2: The model.**\n\n$$y(x) = 4x^{\\frac{4}{3}} \\tag{1}$$\n\n$$x^{\\frac{4}{3}} \\le 256 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The test firing gives the coefficient:\n\n$$A = 4$$\n\n**2.** Levels at perfect cubes:\n\n$$y(8) = 64, \\qquad y(27) = 324, \\qquad y(64) = 1024$$\n\n**3.** The scale factor exceeds the multiplier because the exponent exceeds $1$:\n\n$$2^{\\frac{4}{3}} \\approx 2.52 \\quad (+152\\%)$$\n\n**4.** Invert (2) with the reciprocal exponent $\\frac{3}{4}$:\n\n$$x = 256^{\\frac{3}{4}} = 64$$\n\n**5.** Fuel efficiency improves with scale, since dividing by $x$ leaves a positive exponent:\n\n$$\\frac{y(x)}{x} = 4x^{\\frac{1}{3}}, \\qquad 8 \\to 12 \\to 16 \\text{ at feeds } 8, 27, 64$$\n\n**Answer.** $A = 4$ | $y(x) = 4x^{\\frac{4}{3}}$ | licence ceiling at feed $x = 64$",
+    "expl_lens": [
+      508,
+      603,
+      745,
+      1934,
+      511
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-35",
+    "case_id": "MATH 8.35",
+    "title": "A Pair of Power Functions That Undo Each Other",
+    "difficulty": "2/5",
+    "sort_order": 35,
+    "context": "A calibration stage converts a raw reading $x>0$ into an index by $f(x)=9x^{\\frac{2}{3}}$, and a reporting stage converts an index $y>0$ back into raw units by $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$. The lab wants to know what happens when the two stages are applied one after the other. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Applying the reporting stage to the calibration stage returns the original reading.",
+      "The composition of the two stages is a power function with exponent $1$.",
+      "Starting with a raw reading of $125$, the two stages produce index $225$ and then return raw reading $125$.",
+      "For a raw input of $50$, applying both stages returns a value $8\\%$ above the input.",
+      "Applying the stages in the other order gives something other than the original input."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nTwo stages are inverses when their exponents are reciprocals and their constants are matched, so the composition has to be carried out in full:\n\n$$g\\big(f(x)\\big) = \\frac{\\left(9x^{\\frac{2}{3}}\\right)^{\\frac{3}{2}}}{27} = \\frac{9^{\\frac{3}{2}}\\,x^{(\\frac{2}{3})(\\frac{3}{2})}}{27}$$\n\n$$9^{\\frac{3}{2}} = 27, \\qquad \\frac{2}{3} \\times \\frac{3}{2} = 1$$\n\n$$g\\big(f(x)\\big) = \\frac{27x}{27} = x$$\n\nReciprocal exponents alone would leave a power function of exponent $1$ carrying a stray constant; here $9^{\\frac{3}{2}}=27$ matches the divisor exactly. The composition returns the original reading, so the statement is True.",
+      "**B.** → True\n\nComposing power functions always gives a power function whose exponent is the product of the two exponents, never their sum:\n\n$$\\frac{2}{3} \\times \\frac{3}{2} = 1$$\n\nThe constants collect separately:\n\n$$\\frac{9^{\\frac{3}{2}}}{27} = \\frac{27}{27} = 1, \\qquad g\\big(f(x)\\big) = 1 \\cdot x^{1}$$\n\nThe identity map is the special case where that product equals $1$ and the constants cancel. The composition is a power function with exponent $1$, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $x$ = raw reading and $y$ = index. Composing power functions multiplies their exponents and raises the inner coefficient to the outer exponent, so both the exponents and the constants must be tracked separately.\n\n**1. Translate: the exponents.** They are reciprocals:\n\n$$\\frac{2}{3} \\times \\frac{3}{2} = 1$$\n\n**2. Translate: the constants.** They are matched:\n\n$$9^{\\frac{3}{2}} = 27, \\qquad 27^{\\frac{2}{3}} = 9$$\n\n**Part 2: The model.**\n\n$$g\\big(f(x)\\big) = \\frac{\\left(9x^{\\frac{2}{3}}\\right)^{\\frac{3}{2}}}{27} \\tag{1}$$\n\n$$f\\big(g(y)\\big) = 9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Simplify (1):\n\n$$\\frac{27x}{27} = x$$\n\n**2.** Simplify (2):\n\n$$\\frac{9y}{9} = y$$\n\n**3.** Both orders give the identity, so the two stages are inverse power functions on $x>0$.\n\n**4.** Spot values confirm the pairing:\n\n$$f(8) = 9 \\times 4 = 36, \\qquad g(36) = \\frac{216}{27} = 8$$\n\n**5.** The general lesson: composing multiplies exponents, so an inverse requires reciprocal exponents *and* constants satisfying $A^{s}B=1$, which is exactly what $9$ and $\\frac{1}{27}$ do here.",
+      "**C.** → True\n\nA non-unit input tests both constants and both reciprocal exponents, so the round trip is worth taking one stage at a time:\n\n$$f(125) = 9(125)^{\\frac{2}{3}} = 9(25) = 225$$\n\n$$g(225) = \\frac{225^{\\frac{3}{2}}}{27} = \\frac{15^{3}}{27} = 125$$\n\nBoth shape factors are exact, since $125$ is a cube and $225$ a square, so no rounding hides in the trip, which is what the general identity predicts:\n\n$$g\\big(f(x)\\big) = \\frac{9^{\\frac{3}{2}}x}{27} = x$$\n\nThe stages pass through index $225$ and return the original $125$, so the statement is True.",
+      "**D.** → False\n\nThe composition is the identity on every positive input, which the algebra settles once and for all:\n\n$$g(f(x))=\\frac{\\left(9x^{\\frac{2}{3}}\\right)^{\\frac{3}{2}}}{27}=\\frac{27x}{27}=x$$\n\nAn awkward input changes nothing, since an exact cancellation admits no rounding:\n\n$$g(f(50))=50 \\quad\\text{and}\\quad \\frac{50-50}{50}=0\\%$$\n\nA raw reading that is neither a cube nor a square invites a decimal detour where a small discrepancy can look real. The composed value equals $50$ exactly, so the statement is False.",
+      "**E.** → False\n\nReciprocal exponents and matched constants are symmetric conditions, so a pair that inverts in one order inverts in the other as well:\n\n$$f\\big(g(y)\\big) = 9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}} = \\frac{9\\,y^{(\\frac{3}{2})(\\frac{2}{3})}}{27^{\\frac{2}{3}}}$$\n\n$$27^{\\frac{2}{3}} = 9, \\qquad \\frac{3}{2} \\times \\frac{2}{3} = 1$$\n\n$$f\\big(g(y)\\big) = \\frac{9y}{9} = y$$\n\nThe constants cancel in the mirror-image way, with $27^{\\frac{2}{3}}=9$ where the other order used $9^{\\frac{3}{2}}=27$. The reverse order also returns the input, so the statement is False."
+    ],
+    "solution_overview": "The calibration stage is $f(x)=9x^{\\frac{2}{3}}$ and the reporting stage is $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$, both on positive inputs.\n\n**Part 1: Building the model.**\n\nLet $x$ = raw reading and $y$ = index. Composing power functions multiplies their exponents and raises the inner coefficient to the outer exponent, so both the exponents and the constants must be tracked separately.\n\n**1. Translate: the exponents.** They are reciprocals:\n\n$$\\frac{2}{3} \\times \\frac{3}{2} = 1$$\n\n**2. Translate: the constants.** They are matched:\n\n$$9^{\\frac{3}{2}} = 27, \\qquad 27^{\\frac{2}{3}} = 9$$\n\n**Part 2: The model.**\n\n$$g\\big(f(x)\\big) = \\frac{\\left(9x^{\\frac{2}{3}}\\right)^{\\frac{3}{2}}}{27} \\tag{1}$$\n\n$$f\\big(g(y)\\big) = 9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Simplify (1):\n\n$$\\frac{27x}{27} = x$$\n\n**2.** Simplify (2):\n\n$$\\frac{9y}{9} = y$$\n\n**3.** Both orders give the identity, so the two stages are inverse power functions on $x>0$.\n\n**4.** Spot values confirm the pairing:\n\n$$f(8) = 9 \\times 4 = 36, \\qquad g(36) = \\frac{216}{27} = 8$$\n\n**5.** The general lesson: composing multiplies exponents, so an inverse requires reciprocal exponents *and* constants satisfying $A^{s}B=1$, which is exactly what $9$ and $\\frac{1}{27}$ do here.\n\n**Answer.** $g(f(x)) = x$ | $f(g(y)) = y$ | composed exponent $1$ | $f(8)=36$, $g(36)=8$",
+    "expl_lens": [
+      635,
+      1877,
+      557,
+      527,
+      589
+    ],
+    "has_extended": true
+  }
+]

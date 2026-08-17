@@ -1,0 +1,170 @@
+[
+  {
+    "id": "math-11-85",
+    "caseId": "MATH 11.85",
+    "title": "Present Value of an Ordinary Annuity for a Retiree's Withdrawal Plan",
+    "subsection": "11.5",
+    "min_chars": 1185,
+    "text": "A retiree wants to withdraw \\$2,400 at the end of each year for the next 15 years from a retirement account earning 4.5% annual interest, and wants to know how much must be in the account today to support these withdrawals.\r\n\r\n**Part 1: Setup.**\r\n\r\nAnnual withdrawal a = \\$2,400\r\n\r\nNominal annual rate r = 4.5% = 0.045 (and 6% for part e)\r\n\r\nCompounding: annual, ordinary annuity\r\n\r\nn = 15 years (and 30 years for part c)\r\n\r\n**Part 2: Formula.**\r\n\r\n$P_n=(a/r)[1-1/(1+r)^{n}]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $P_{15} = (2,400/0.045)[1-1/(1.045)^{15}] = 53,333.33 \\times 0.483284 = \\$25,775.15$.\r\n\r\n**2.** Total nominal withdrawals over fifteen years: $2,400 \\times 15 = \\$36,000.00$, well above $\\$25,775.15$.\r\n\r\n**3.** Extending to $30$ years, $P_{30} = (2,400/0.045)[1-1/(1.045)^{30}] = 53,333.33 \\times 0.732998 = \\$39,091.65$, nowhere near double the $15$-year figure of $\\$51,550.30$.\r\n\r\n**4.** The gap between nominal withdrawals and the present value is $36,000.00 - 25,775.15 = \\$10,224.85$, not $\\$11,224.85$ as stated.\r\n\r\n**5.** At the higher rate of $6\\%$, $P_{15} = (2,400/0.06)[1-1/(1.06)^{15}] = 40,000 \\times 0.582735 = \\$23,309.40$, LOWER than $\\$25,775.15$, not higher."
+  },
+  {
+    "id": "math-11-86",
+    "caseId": "MATH 11.86",
+    "title": "Present Value of an Ordinary Annuity vs. a Perpetuity for a Nonprofit Scholarship",
+    "subsection": "11.5",
+    "min_chars": 1198,
+    "text": "A nonprofit organization needs to fund \\$5,000 scholarship payments at the end of each year for 20 years, with an interest rate of 6%. The board also wants to compare this cost to funding the same \\$5,000 annual payment in perpetuity at the same rate.\r\n\r\n**Part 1: Setup.**\r\n\r\nAnnual payment a = \\$5,000\r\n\r\nNominal annual rate r = 6% = 0.06\r\n\r\nCompounding: annual, ordinary annuity / perpetuity\r\n\r\nn = 20 years (and 40 years for part d)\r\n\r\n**Part 2: Formula.**\r\n\r\n$P_n=(a/r)[1-1/(1+r)^{n}]$\r\n\r\nPerpetuity: $P=a/r$ (limit as $n\\to\\infty$)\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $P_{20} = (5,000/0.06)[1-1/(1.06)^{20}] = 83,333.33 \\times 0.688195 = \\$57,349.67$.\r\n\r\n**2.** The perpetuity value is $5,000/0.06 = \\$83,333.33$, so the gap is $83,333.33 - 57,349.67 = \\$25,983.66$.\r\n\r\n**3.** Dividing, $57,349.67 / 83,333.33 = 0.68820$, about $68.82\\%$, not $72.82\\%$.\r\n\r\n**4.** Extending to $40$ years instead, $P_{40} = (5,000/0.06)[1-1/(1.06)^{40}] = 83,333.33 \\times 0.902778 = \\$75,231.50$, which is about $90.28\\%$ of the perpetuity value, not more than $95\\%$.\r\n\r\n**5.** As $n$ grows without bound, $(1+r)^{n}\\to\\infty$, so $1/(1+r)^{n}\\to0$ and $P_n\\to a/r = 83,333.33$, confirming the perpetuity limit."
+  },
+  {
+    "id": "math-11-87",
+    "caseId": "MATH 11.87",
+    "title": "Comparing Payment Streams via Present Value for a Machinery Purchase",
+    "subsection": "11.5",
+    "min_chars": 1085,
+    "text": "A supplier offers a company two payment options for a piece of machinery. Option $1$: pay \\$18,000 today. Option $2$: pay \\$2,500 at the end of each year for $9$ years. Using an interest rate of $7\\%$, which option has the lower present-value cost?\r\n\r\n**Part 1: Setup.**\r\n\r\nOption $1$: lump sum $\\$18,000$ today. Option $2$: $a = \\$2,500$, $n = 9$ years; $r = 0.07$ (and $0.04$ for part c); ordinary annuity.\r\n\r\n**Part 2: Formula.**\r\n\r\n$P_n=(a/r)[1-1/(1+r)^{n}]$; $F=P(1+r)^{n}$.\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $P_9 = (2,500/0.07)[1-1/(1.07)^{9}] = 35,714.29\\times0.456069 = \\$16,288.18$; savings vs Option $1$: $18,000-16,288.18 = \\$1,711.82$ (not $\\$1,811.82$).\r\n\r\n**2.** At $4\\%$, $P_9 = (2,500/0.04)[1-1/(1.04)^{9}] = 62,500\\times0.297413 = \\$18,588.31$, higher than at $7\\%$ because a lower rate discounts future payments less.\r\n\r\n**3.** Total Option-$2$ payments: $2,500\\times9 = \\$22,500$, exceeding the lump sum by $\\$4,500$ (not $\\$4,600$).\r\n\r\n**4.** Growing the lump sum forward: $F = 18,000(1.07)^{9} = 18,000\\times1.838459 = \\$33,092.26$, which does not exceed $\\$34,000$."
+  },
+  {
+    "id": "math-11-88",
+    "caseId": "MATH 11.88",
+    "title": "Comparing Savings Strategies via Future Value for a Construction Firm",
+    "subsection": "11.5",
+    "min_chars": 1095,
+    "text": "A construction firm is choosing between two savings strategies for a future equipment purchase in 8 years, both earning 6% annual interest. Strategy A: deposit \\$12,000 today, all at once. Strategy B: deposit \\$1,400 at the end of each year for 8 years.\r\n\r\n**Part 1: Setup.**\r\n\r\nStrategy A: single deposit P = \\$12,000 today\r\n\r\nStrategy B: annual deposit a = \\$1,400 per year (raised to \\$1,500 for part e)\r\n\r\nNominal annual rate r = 6% = 0.06\r\n\r\nn = 8 years\r\n\r\n**Part 2: Formula.**\r\n\r\n$F=P(1+r)^{n}$\r\n\r\n$F_n=(a/r)[(1+r)^{n}-1]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $F_A = 12,000(1.06)^{8} = 12,000 \\times 1.593848 = \\$19,126.18$.\r\n\r\n**2.** $F_B = (1,400/0.06)[(1.06)^{8}-1] = 23,333.33 \\times 0.593848 = \\$13,856.46$, not $\\$14,856.46$.\r\n\r\n**3.** Gap: $19,126.18 - 13,856.46 = \\$5,269.72$, not $\\$5,769.72$.\r\n\r\n**4.** Total Strategy-B deposits over the eight years: $1,400 \\times 8 = \\$11,200.00$, LESS than Strategy A's $\\$12,000.00$, not more.\r\n\r\n**5.** Raising the deposit amount instead, $F_B' = (1,500/0.06)[(1.06)^{8}-1] = 25,000 \\times 0.593848 = \\$14,846.20$, still well below $\\$19,126.18$."
+  },
+  {
+    "id": "math-11-89",
+    "caseId": "MATH 11.89",
+    "title": "Future Value of an Annuity Due for a Gym's Equipment Upgrade Fund",
+    "subsection": "11.5",
+    "min_chars": 1404,
+    "text": "A gym owner deposits \\$3,000 at the BEGINNING of each year as an annuity due for 6 years into an equipment-upgrade fund earning 5% annual interest. The owner wants to know how much this will be worth at the end of year 6, and how it compares to depositing the same amounts at the end of each year instead.\r\n\r\n**Part 1: Setup.**\r\n\r\nAnnual deposit a = \\$3,000, made at the START of each year\r\n\r\nNominal annual rate r = 5% = 0.05\r\n\r\nCompounding: annual, annuity due\r\n\r\nn = 6 years (and 12 years for part d)\r\n\r\n**Part 2: Formula.**\r\n\r\nFuture value of ordinary annuity: $F_n=(a/r)[(1+r)^{n}-1]$\r\n\r\nFuture value of annuity due: $F_{\\mathrm{due}}=F_n(1+r)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $F_{\\mathrm{ordinary}} = (3,000/0.05)[(1.05)^{6}-1] = 60,000 \\times 0.340096 = \\$20,405.76$, so the annuity-due value is $F_{\\mathrm{due}} = 20,405.76 \\times 1.05 = \\$21,426.05$.\r\n\r\n**2.** Gap: $21,426.05 - 20,405.76 = \\$1,020.29$, not $\\$1,120.29$.\r\n\r\n**3.** Extending to $12$ years, $F_{\\mathrm{ordinary}} = (3,000/0.05)[(1.05)^{12}-1] = 60,000 \\times 0.795856 = \\$47,751.36$, so $F_{\\mathrm{due}} = 47,751.36 \\times 1.05 = \\$50,138.93$, well more than double the $6$-year figure of $\\$42,852.10$, not exactly double.\r\n\r\n**4.** For any $n$ and $r$, this identity $F_{\\mathrm{due}} = F_{\\mathrm{ordinary}}(1+r)$ always holds, since shifting each payment one period earlier simply multiplies by one extra period of growth."
+  },
+  {
+    "id": "math-11-90",
+    "caseId": "MATH 11.90",
+    "title": "Present Value of an Annuity Due for a Commercial Lease",
+    "subsection": "11.5",
+    "min_chars": 1477,
+    "text": "A tenant signs a 5-year commercial lease requiring rent payments of \\$24,000 at the BEGINNING of each year as an annuity due. The landlord's opportunity cost of capital is 6%, and the landlord wants to know the present value of this lease, and how it compares to an otherwise identical lease with end-of-year payments.\r\n\r\n**Part 1: Setup.**\r\n\r\nAnnual lease payment a = \\$24,000, due at the START of each year\r\n\r\nNominal annual rate r = 6% = 0.06\r\n\r\nCompounding: annual, annuity due\r\n\r\nn = 5 years (and 10 years for part d)\r\n\r\n**Part 2: Formula.**\r\n\r\nPresent value of ordinary annuity: $P_n=(a/r)[1-1/(1+r)^{n}]$\r\n\r\nPresent value of annuity due: $P_{\\mathrm{due}}=P_n(1+r)$\r\n\r\nAlternative: $P_{\\mathrm{due}}=a+P_{n-1}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $P_{\\mathrm{ordinary}} = (24,000/0.06)[1-1/(1.06)^{5}] = 400,000 \\times 0.252742 = \\$101,096.80$, so the annuity-due value is $P_{\\mathrm{due}} = 101,096.80 \\times 1.06 = \\$107,162.61$.\r\n\r\n**2.** Gap: $107,162.61 - 101,096.80 = \\$6,065.81$, not $\\$7,065.81$.\r\n\r\n**3.** Extending to $10$ years instead, $P_{\\mathrm{ordinary}} = (24,000/0.06)[1-1/(1.06)^{10}] = 400,000 \\times 0.441605 = \\$176,642.00$, so $P_{\\mathrm{due}} = 176,642.00 \\times 1.06 = \\$187,240.52$, less than double the $5$-year figure of $\\$214,325.22$, not exactly double.\r\n\r\n**4.** As a check, $a + P_4 = 24,000+(24,000/0.06)[1-1/(1.06)^{4}] = 24,000 + 400,000 \\times 0.207906 = 24,000 + 83,162.40 = \\$107,162.40$, matching $P_{\\mathrm{due}}$ within rounding."
+  },
+  {
+    "id": "math-11-91",
+    "caseId": "MATH 11.91",
+    "title": "A Deferred Perpetuity for a Philanthropist's Endowed Fund",
+    "subsection": "11.5",
+    "min_chars": 1454,
+    "text": "A philanthropist wants to establish an endowed fund that will pay \\$10,000 at the end of each year, forever, but the FIRST payment will not occur until the end of year 5, with payments running at t = 5, 6, 7, …. The fund earns 6% annual interest, and the philanthropist wants to know how much must be donated today.\r\n\r\n**Part 1: Setup.**\r\n\r\nAnnual payment a = \\$10,000, first payment at end of year 5\r\n\r\nNominal annual rate r = 6% = 0.06\r\n\r\nCompounding: annual, deferred ordinary perpetuity\r\n\r\nDeferral: value one period before first payment falls at t = 4 (and t = 8 for part d)\r\n\r\n**Part 2: Formula.**\r\n\r\nPerpetuity value (as of one period before first payment): $V=a/r$\r\n\r\nDiscount back to today: $PV_0=V/(1+r)^{k}$, where k is the number of years from today to the valuation point\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $V = 10,000/0.06 = 166,666.67$ as of the end of year $4$.\r\n\r\n**2.** Discounting back, $PV_0 = 166,666.67/(1.06)^{4} = 166,666.67/1.262477 = \\$132,015.61$.\r\n\r\n**3.** The immediate, non-deferred perpetuity is worth $10,000/0.06 = \\$166,666.67$ today, HIGHER than $\\$132,015.61$, not lower.\r\n\r\n**4.** With the first payment deferred to year $9$ instead, $V$ at year $8$ is still $\\$166,666.67$, so $PV_0' = 166,666.67/(1.06)^{8} = 166,666.67/1.593848 = \\$104,568.80$, well above half of $\\$132,015.61$ (which would be $\\$66,007.81$).\r\n\r\n**5.** Since $PV_0/V = 1/(1.06)^{4} = 0.792094$, the ratio is about $79.21\\%$, not $83.21\\%$ as stated."
+  },
+  {
+    "id": "math-11-92",
+    "caseId": "MATH 11.92",
+    "title": "Reverse-Engineering a Perpetual Preferred Stock's Fair Value",
+    "subsection": "11.5",
+    "min_chars": 1172,
+    "text": "A preferred stock pays a fixed dividend of \\$4.25 per share at the end of each year, in perpetuity. The stock is currently trading at \\$65.00 per share. Investors currently require a 7% annual return on investments of this risk level, and an analyst wants to test how the fair value responds to changes in the required return and the dividend.\r\n\r\n**Part 1: Setup.**\r\n\r\nAnnual dividend a = \\$4.25 per share (and \\$3.40 for part e)\r\n\r\nRequired return r = 7% = 0.07 (and 4% for parts c, d)\r\n\r\nCompounding: annual, perpetuity\r\n\r\n**Part 2: Formula.**\r\n\r\nPerpetuity (fair value): $P=a/r$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $P = 4.25/0.07 = 60.71$ (precisely $\\$60.714286$).\r\n\r\n**2.** The stock trades at $\\$65.00$, above the $\\$60.71$ fair value.\r\n\r\n**3.** At the lower required return of $4\\%$, $P' = 4.25/0.04 = 106.25$, not $\\$116.25$.\r\n\r\n**4.** The percentage increase is $(106.25 - 60.714286)/60.714286 = 0.750000$, exactly $75.00\\%$, not more than $75\\%$.\r\n\r\n**5.** If instead the dividend were cut by $20\\%$, $P'' = 3.40/0.07 = 48.571429$, about $\\$48.57$, since $48.571429/60.714286 = 0.80$, an exact $20\\%$ drop because fair value is directly proportional to the dividend."
+  },
+  {
+    "id": "math-11-93",
+    "caseId": "MATH 11.93",
+    "title": "Combined Renovation Cost and Perpetual Maintenance Fund for a City Park",
+    "subsection": "11.5",
+    "min_chars": 1372,
+    "text": "A city council wants to fund a park's perpetual maintenance, needing \\$15,000 per year forever, starting one year from now, PLUS an immediate one-time renovation cost of \\$50,000 paid today. The applicable interest rate is 4.5%, and the council also wants to see how a higher rate would change the total funding requirement.\r\n\r\n**Part 1: Setup.**\r\n\r\nAnnual maintenance payment a = \\$15,000\r\n\r\nImmediate renovation cost = \\$50,000\r\n\r\nNominal annual rate r = 4.5% = 0.045 (and 6% = 0.06 for parts c, d, e)\r\n\r\nCompounding: annual, perpetuity + lump sum\r\n\r\n**Part 2: Formula.**\r\n\r\nPerpetuity: $P=a/r$\r\n\r\nTotal required funding = immediate cost + perpetuity value\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** The perpetuity value is $15,000/0.045 = \\$333,333.33$, so the total required today is $50,000.00 + 333,333.33 = \\$383,333.33$.\r\n\r\n**2.** At the higher rate of $6\\%$, the perpetuity value falls to $15,000/0.06 = \\$250,000.00$, so the total becomes $50,000.00 + 250,000.00 = \\$300,000.00$.\r\n\r\n**3.** The reduction is $383,333.33 - 300,000.00 = \\$83,333.33$, which is $83,333.33/383,333.33 = 0.21739$, about $21.74\\%$ of the original total, more than $20\\%$ but not more than $25\\%$.\r\n\r\n**4.** Half of the original combined total is $\\$191,666.67$, and since $\\$250,000.00$ exceeds that, the perpetuity-only requirement at $6\\%$ is LARGER than half of the original total, not smaller."
+  },
+  {
+    "id": "math-11-94",
+    "caseId": "MATH 11.94",
+    "title": "Growing Perpetuity Valuation of a Rental Property's Escalating Cash Flows",
+    "subsection": "11.5",
+    "min_chars": 1321,
+    "text": "A real estate investor is evaluating a rental property expected to generate a net cash flow of \\$24,000 at the end of year 1, growing at a constant 2.5% per year forever due to rent escalation clauses. The investor requires an 8% annual return on investments of this type.\r\n\r\n**Part 1: Setup.**\r\n\r\nNext-year cash flow a1 = \\$24,000\r\n\r\nGrowth rate g = 2.5% = 0.025 (and 0%, 4% for parts b, c)\r\n\r\nRequired return r = 8% = 0.08 (and 6% for part d)\r\n\r\nCompounding: annual, growing perpetuity\r\n\r\n**Part 2: Formula.**\r\n\r\nGrowing perpetuity: $P=a_1/(r-g)$, valid only for $r>g$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $P = 24,000/(0.08-0.025) = 24,000/0.055 = \\$436,363.64$.\r\n\r\n**2.** Without any growth at all, $P = 24,000/0.08 = 300,000.00$, LOWER than the growing-perpetuity value of $\\$436,363.64$, not higher.\r\n\r\n**3.** If growth instead rose to $4\\%$, $P' = 24,000/(0.08-0.04) = 600,000.00$, a large increase but NOT more than double the original $\\$436,363.64$ (double would be $\\$872,727.28$).\r\n\r\n**4.** At the lower required return of $6\\%$, $P'' = 24,000/(0.06-0.025) = 24,000/0.035 = \\$685,714.29$, not $\\$715,714.29$.\r\n\r\n**5.** As growth approaches the required return, the denominator $(r-g)$ shrinks toward zero and the formula becomes undefined, so growth rates at or above the required return break the model entirely.\r\n"
+  },
+  {
+    "id": "math-11-95",
+    "caseId": "MATH 11.95",
+    "title": "The Gordon Growth Model for a Pension Fund's Stock Valuation",
+    "subsection": "11.5",
+    "min_chars": 1212,
+    "text": "A pension fund is valuing a stock that just paid a dividend of \\$3.00 per share, denoted D0, expected to grow at a constant 3% per year forever. The fund requires a 9% annual return, and the analyst must be careful to use the NEXT dividend, not the one just paid, in the valuation formula.\r\n\r\n**Part 1: Setup.**\r\n\r\nJust-paid dividend D0 = \\$3.00\r\n\r\nGrowth rate g = 3% = 0.03 (and 5% for part d)\r\n\r\nRequired return r = 9% = 0.09\r\n\r\nCompounding: annual, growing perpetuity\r\n\r\n**Part 2: Formula.**\r\n\r\n$D_1=D_0(1+g)$\r\n\r\nGrowing perpetuity: $P=D_1/(r-g)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $D_1 = 3.00\\times1.03 = 3.09$.\r\n\r\n**2.** $P = 3.09/(0.09-0.03) = 3.09/0.06 = \\$51.50$.\r\n\r\n**3.** Using the just-paid dividend by mistake instead gives $3.00/0.06 = \\$50.00$, so the correct value understates the wrong one by $51.50 - 50.00 = \\$1.50$, not $\\$2.50$.\r\n\r\n**4.** At the higher growth rate of $5\\%$, $D_1' = 3.00\\times1.05 = 3.15$, so $P' = 3.15/(0.09-0.05) = 3.15/0.04 = \\$78.75$, well short of double the original $\\$51.50$ (double would be $\\$103.00$).\r\n\r\n**5.** As growth approaches the required return of $9\\%$, the denominator $(r-g)$ shrinks toward zero, driving the result toward infinity, not toward $\\$0.00$.\r\n"
+  },
+  {
+    "id": "math-11-96",
+    "caseId": "MATH 11.96",
+    "title": "Comparing Level vs. Growing Royalty-Stream Purchase Deals for a Musician",
+    "subsection": "11.5",
+    "min_chars": 1381,
+    "text": "A musician is offered two royalty-stream purchase deals for a song catalog, both priced at \\$170,000 and both requiring a 10% return to be considered a fair buy. Deal 1 is a level non-growing perpetuity of \\$18,000 per year. Deal 2 is a growing perpetuity starting at \\$14,000 next year, growing 4% per year forever.\r\n\r\n**Part 1: Setup.**\r\n\r\nDeal 1: level annual payment a = \\$18,000 (perpetuity)\r\n\r\nDeal 2: next-year payment a1 = \\$14,000, growth g = 4% (and 1% for part d)\r\n\r\nRequired return r = 10% = 0.10\r\n\r\nAsking price (both deals) = \\$170,000\r\n\r\n**Part 2: Formula.**\r\n\r\nLevel perpetuity: $P=a/r$\r\n\r\nGrowing perpetuity: $P=a_1/(r-g)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Deal $1$: $P = 18,000/0.10 = 180,000.00$, a margin of $180,000.00 - 170,000.00 = \\$10,000.00$ over the asking price.\r\n\r\n**2.** Deal $2$: $P = 14,000/(0.10-0.04) = 14,000/0.06 = \\$233,333.33$.\r\n\r\n**3.** This exceeds the asking price by a wide margin: $233,333.33 - 170,000.00 = \\$63,333.33$.\r\n\r\n**4.** Deal $2$'s margin of $\\$63,333.33$ is far larger than Deal $1$'s $\\$10,000.00$, so Deal $2$ offers the bigger cushion, not Deal $1$.\r\n\r\n**5.** At the lower growth rate of $1\\%$, $P' = 14,000/(0.10-0.01) = 14,000/0.09 = \\$155,555.56$, below the $\\$170,000.00$ asking price.\r\n\r\n**6.** Comparing the two original deals, Deal $1$'s fair value of $\\$180,000.00$ is LESS than Deal $2$'s $\\$233,333.33$, not more.\r\n"
+  },
+  {
+    "id": "math-11-97",
+    "caseId": "MATH 11.97",
+    "title": "Present Value Under Continuous Compounding for a Bond Retirement Fund",
+    "subsection": "11.5",
+    "min_chars": 1410,
+    "text": "A company needs to have \\$250,000 available in 12 years to retire a bond issue, and can invest in an account offering continuous compounding at a nominal annual rate of 5.5%. The CFO wants to know how much must be invested today, and how this compares to ordinary annual compounding at the same nominal rate.\r\n\r\n**Part 1: Setup.**\r\n\r\nTarget future amount = \\$250,000\r\n\r\nNominal annual rate r = 5.5% = 0.055\r\n\r\nCompounding: continuous (and ordinary annual, for comparison)\r\n\r\nt = 12 years (and 6 years for part d)\r\n\r\n**Part 2: Formula.**\r\n\r\nContinuous-compounding present value: $S_0=S(t)e^{-rt}$\r\n\r\nOrdinary annual present value: $S_0=S(t)/(1+r)^{t}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $S_0 = 250,000e^{-0.66} = 250,000 \\times 0.516855 = \\$129,213.75$.\r\n\r\n**2.** Under ordinary annual compounding instead, $S_0 = 250,000/(1.055)^{12} = 250,000/1.901209 = \\$131,495.10$, HIGHER than the continuous figure of $\\$129,213.75$, not lower, since continuous compounding is the most efficient schedule and needs less deposited today.\r\n\r\n**3.** The correctly computed gap is $131,495.10 - 129,213.75 = \\$2,281.35$, not $\\$4,280.35$.\r\n\r\n**4.** Shortening the horizon to $6$ years, $S_0' = 250,000e^{-0.33} = 250,000 \\times 0.718924 = \\$179,731.00$, far MORE than half of the $12$-year figure of $\\$129,213.75$, not less.\r\n\r\n**5.** Since $e^{-0.055}\\approx0.9465$, about $5.35\\%$ of value is lost to discounting each year.\r\n"
+  },
+  {
+    "id": "math-11-98",
+    "caseId": "MATH 11.98",
+    "title": "Continuous-Compounding Lump Sum vs. Discrete Annuity for a Biotech Milestone",
+    "subsection": "11.5",
+    "min_chars": 1018,
+    "text": "A biotech company sets aside \\$75,000 today in an account offering continuous compounding at a nominal 6.25% annual rate, aiming to accumulate funds for a 9-year R&D milestone. Management compares this to instead depositing the same \\$75,000 total, spread evenly as \\$8,333.33 at the end of each of the 9 years, into a separate account earning a discrete 6.25% annual rate.\r\n\r\n**Part 1: Setup.**\r\n\r\nLump sum $P = \\$75,000$ today; annuity $a = \\$8,333.33$ for $n = 9$; $r = 0.0625$\r\n\r\nCompounding: continuous (lump sum) vs. discrete annual (annuity)\r\n\r\n**Part 2: Formula.**\r\n\r\n$S = Pe^{rt}$; $F_n = (a/r)[(1+r)^{n}-1]$; discrete $S = P(1+r)^{n}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $S_{\\mathrm{cont}} = 75,000 e^{0.5625} = \\$131,629.13$.\r\n\r\n**2.** $F_9 = \\$96,757.60$; gap $= \\$34,871.53$ (exceeds $\\$30,000$), because later annuity deposits compound for less time than the lump sum.\r\n\r\n**3.** Full lump sum with discrete compounding: $S_{\\mathrm{discrete}} = \\$129,426.15$ — above the annuity but still below continuous.\r\n"
+  },
+  {
+    "id": "math-11-99",
+    "caseId": "MATH 11.99",
+    "title": "Mixed Financial Planning: Annuity Due, Continuous Compounding & Perpetuity",
+    "subsection": "11.5",
+    "min_chars": 1208,
+    "text": "A small business owner is juggling three separate financial arrangements, all at rates around 6-8%. First, an equipment lessor requires payments of \\$4,200 at the BEGINNING of each year as an annuity due for 5 years at 8% interest. Second, the owner separately invests \\$20,000 today for 7 years under continuous compounding at a nominal 6% rate to fund a future purchase. Third, the owner is considering a perpetuity option paying \\$3,000 per year forever, at 8%, for a maintenance reserve fund.\r\n\r\n**Part 1: Setup.**\r\n\r\nAnnuity due: $a = \\$4,200$, $n = 5$, $r = 0.08$\r\n\r\nContinuous investment: $P = \\$20,000$, $r = 0.06$, $t = 7$\r\n\r\nPerpetuity: $a = \\$3,000$, $r = 0.08$\r\n\r\n**Part 2: Formula.**\r\n\r\n$P_{\\mathrm{due}}=(a/r)[1-1/(1+r)^{n}](1+r)$; $F_{\\mathrm{due}}=(a/r)[(1+r)^{n}-1](1+r)$\r\n\r\n$S=Pe^{rt}$; perpetuity $P=a/r$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Ordinary PV $\\$16,769.39$ lifts to $P_{\\mathrm{due}} = \\$18,110.94$; $F_{\\mathrm{due}} = \\$26,610.90$ (not $\\$27,610.90$).\r\n\r\n**2.** Continuous investment: $S = 20,000 e^{0.42} = \\$30,439.24$ (not $\\$31,439.24$).\r\n\r\n**3.** Perpetuity $P = 3,000/0.08 = \\$37,500.00$ — more than double the lease PV, and larger than the continuous result (not smaller).\r\n"
+  },
+  {
+    "id": "math-11-100",
+    "caseId": "MATH 11.100",
+    "title": "Capstone: A Family Office's Four-Component Windfall Allocation",
+    "subsection": "11.5",
+    "min_chars": 1326,
+    "text": "A family office is structuring a client's financial plan using four separate tools. Component 1: \\$150,000 is invested today in a continuous-compounding account at a nominal 5% rate for 10 years, to fund a future purchase. Component 2: the client needs \\$80,000 available in 6 years for a home renovation, funded today by a single deposit at a discrete 6% annual rate. Component 3: the client will receive an ordinary annuity of \\$10,000 at the end of each year for 12 years from a structured settlement, discounted at 7%. Component 4: the remainder will endow a scholarship as a growing perpetuity paying \\$5,000 next year, growing 2% annually forever, at a required return of 7%.\r\n\r\n**Part 1: Setup.**\r\n\r\nComp 1: $P = \\$150,000$, $r = 0.05$, $t = 10$, continuous\r\n\r\nComp 2: target $\\$80,000$, $r = 0.06$, $n = 6$, discrete\r\n\r\nComp 3: $a = \\$10,000$, $n = 12$, $r = 0.07$\r\n\r\nComp 4: $a_1 = \\$5,000$, $g = 0.02$, $r = 0.07$\r\n\r\n**Part 2: Formula.**\r\n\r\n$S=Pe^{rt}$; $x=A/(1+r)^{n}$; $P_n=(a/r)[1-1/(1+r)^{n}]$; growing perpetuity $P=a_1/(r-g)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Comp $1$: $S = \\$247,308.20$; Comp $2$: $x = \\$56,396.85$ (not $\\$57,396.85$).\r\n\r\n**2.** Comp $3$: $P_{12} = \\$79,429.40$; Comp $4$: $P = \\$100,000.00$.\r\n\r\n**3.** Summing all four figures: $\\$385,826.25$, which is less than $\\$500,000.00$ (not more).\r\n"
+  },
+  {
+    "id": "math-11-101",
+    "caseId": "MATH 11.101",
+    "title": "Equipment Loan: Finding the Equal Annual Payment",
+    "subsection": "11.6",
+    "min_chars": 796,
+    "text": "A small bakery-supply distributor borrows \\$60,000 at the beginning of the year to buy a delivery van and a walk-in cooler. The loan is repaid in $6$ equal year-end instalments at $12\\%$ per year, compounding annually.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K = \\$60,000$, $r = 0.12$, $n = 6$ equal annual payments.\r\n\r\n**Part 2: Formula.**\r\n\r\n$a = rK/[1-(1+r)^{-n}]$. Interest $= r \\times$ opening balance; principal $=$ payment $-$ interest; new balance $=$ old $-$ principal.\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $a = 0.12\\times60,000/[1-(1.12)^{-6}] = 7,200/0.493369 \\approx \\$14,593.54$.\r\n\r\n**2.** Year-$1$ interest $\\$7,200.00$; principal $\\$7,393.54$ (more than half of the payment $\\$7,296.77$); balance $\\$52,606.46$.\r\n\r\n**3.** Year-$2$ interest $\\$6,312.77$; principal $\\$8,280.77$; balance $\\$44,325.69$."
+  },
+  {
+    "id": "math-11-102",
+    "caseId": "MATH 11.102",
+    "title": "Auto Dealership Financing with Monthly Compounding",
+    "subsection": "11.6",
+    "min_chars": 1060,
+    "text": "A used-car dealership finances a customer's \\$24,000 vehicle purchase over 4 years, with equal payments due at the end of each month and interest charged at a nominal annual rate of 9%, compounding monthly.\r\n\r\n**Part 1: Setup.**\r\n\r\nK (amount financed) = \\$24,000\r\n\r\n$Nominal annual rate = 9%, compounding monthly\r\n\r\nTerm = 4 years (48 monthly payments)\r\n\r\n**Part 2: Formula.**\r\n\r\nMonthly periodic rate: r = nominal annual rate / 12\r\n\r\nEqual-payment formula: $a = rK/[1-(1+r)^{-n}]$\r\n\r\nTotal paid = a × n\r\n\r\nTotal interest = total paid - K\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $r = 0.09/12 = 0.0075$; $n = 4 \\times 12 = 48$ months.\r\n\r\n**2.** $a = 0.0075\\times24,000/[1-(1.0075)^{-48}] = 180/0.301329 \\approx \\$597.24$.\r\n\r\n**3.** Total paid: $\\$597.24 \\times 48 \\approx \\$28,667.57$ (not $\\$29,500.00$).\r\n\r\n**4.** Total interest: $\\$28,667.57 - \\$24,000.00 \\approx \\$4,667.57$.\r\n\r\n**5.** For $4$ equal annual instalments at $r = 0.09$, $n = 4$: $a = 0.09\\times24,000/[1-(1.09)^{-4}] = 2,160/0.291676 \\approx \\$7,408.05$, which is far more than $\\$2,388.96$, not less."
+  },
+  {
+    "id": "math-11-103",
+    "caseId": "MATH 11.103",
+    "title": "Restaurant Renovation Loan: Tracking the Amortization Schedule",
+    "subsection": "11.6",
+    "min_chars": 1018,
+    "text": "A restaurant owner borrows \\$45,000 to renovate the dining room, agreeing to repay the loan in $5$ equal annual instalments at the end of each year, with interest at $10\\%$ per year compounding annually.\r\n\r\n**Part 1: Setup.**\r\n\r\n$K = \\$45,000$, $r = 0.10$, $n = 5$ equal annual payments.\r\n\r\n**Part 2: Formula.**\r\n\r\n$a = rK/[1-(1+r)^{-n}]$. Interest $= r \\times$ opening balance; principal $=$ payment $-$ interest; new balance $=$ old $-$ principal.\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $a = 0.10\\times45,000/[1-(1.10)^{-5}] = 4,500/0.379079 \\approx \\$11,870.89$.\r\n\r\n**2.** Year $1$: interest $\\$4,500.00$; principal $\\$7,370.89$; balance $\\$37,629.11$. Year $2$: interest $\\$3,762.91$; principal $\\$8,107.98$; balance $\\$29,521.14$.\r\n\r\n**3.** Year $3$: interest $\\$2,952.11$; principal $\\$8,918.77$; balance $\\$20,602.37$. Year $4$: interest $\\$2,060.24$ is much smaller than principal $\\$9,810.65$.\r\n\r\n**4.** Year $5$: interest $\\$1,079.17$; principal $\\$10,791.72$; balance $\\$0$. Sum of principals $= \\$45,000$ exactly."
+  },
+  {
+    "id": "math-11-104",
+    "caseId": "MATH 11.104",
+    "title": "Franchise Buy-In Paid as an Annuity Due",
+    "subsection": "11.6",
+    "min_chars": 1133,
+    "text": "A new franchisee agrees to pay \\$150,000 for the rights to open a location, structured as 10 equal annual payments, with the first payment due immediately and each following payment due at the beginning of each subsequent year. The agreed annual interest rate is 11%.\r\n\r\n**Part 1: Setup.**\r\n\r\nK (present value owed) = \\$150,000\r\n\r\nr (annual interest rate) = 0.11\r\n\r\nn = 10 total payments, first one immediate\r\n\r\n**Part 2: Formula.**\r\n\r\nAnnuity-due present value: $K = a + (a/r)[1-(1+r)^{-(n-1)}]$\r\n\r\nOrdinary-annuity comparison: $a_{\\mathrm{ordinary}} = rK/[1-(1+r)^{-n}]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Combined factor: $1 + (1/0.11)[1-(1.11)^{-9}] = 1 + 9.090909\\times (1-0.391110) = 1 + 5.537048 \\approx 6.537048$.\r\n\r\n**2.** $a = 150,000/6.537048 \\approx \\$22,946.14$.\r\n\r\n**3.** Ordinary-annuity payment: $a_{\\mathrm{ordinary}} = 0.11\\times150,000/[1-(1.11)^{-10}] = 16,500/0.647848 \\approx \\$25,470.21$, which is higher than $\\$22,946.14$, not lower.\r\n\r\n**4.** Difference: $\\$25,470.21 - \\$22,946.14 \\approx \\$2,524.08$.\r\n\r\n**5.** Total of all $10$ due payments: $\\$22,946.14 \\times 10 \\approx \\$229,461.39$, not $\\$220,000.00$."
+  },
+  {
+    "id": "math-11-105",
+    "caseId": "MATH 11.105",
+    "title": "Fixed Annual Payment on a Working-Capital Loan",
+    "subsection": "11.6",
+    "min_chars": 1587,
+    "text": "A landscaping company borrows \\$35,000 at 13% annual interest and commits to repaying exactly \\$10,000 at the end of each year, continuing until the debt is fully retired, with a smaller final payment to settle whatever remains.\r\n\r\n**Part 1: Setup.**\r\n\r\nK (loan amount) = \\$35,000\r\n\r\nr (annual interest rate) = 0.13\r\n\r\na (fixed annual payment) = \\$10,000\r\n\r\n**Part 2: Formula.**\r\n\r\nNumber of periods needed: smallest integer n with $n \\ge [\\ln a - \\ln(a-rK)]/\\ln(1+r)$; the final payment is smaller than a unless this holds exactly\r\n\r\nFuture value of loan after m years: $K(1+r)^{m}$\r\n\r\nFuture value of m fixed payments (valued at the time of the m-th payment): $(a/r)[(1+r)^{m} - 1]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $[\\ln(10,000) - \\ln(10,000 - 0.13\\times35,000)]/\\ln(1.13) = [\\ln(10,000) - \\ln(5,450)]/\\ln(1.13) \\approx 4.9663$, so the smallest integer $n$ satisfying the condition is $n = 5$.\r\n\r\n**2.** Four full payments of $\\$10,000$ total $4\\times10,000 = \\$40,000.00$.\r\n\r\n**3.** Future value of the loan after $4$ years: $35,000\\times(1.13)^{4}\\approx\\$57,066.58$.\r\n\r\n**4.** Future value of the $4$ payments of $\\$10,000$, valued at year $4$: $(10,000/0.13)\\times[(1.13)^{4} - 1]\\approx\\$48,497.97$.\r\n\r\n**5.** Remaining debt at year $4$: $\\$57,066.58 - \\$48,497.97 \\approx \\$8,568.61$; carrying this forward one more year with interest gives the final payment: $\\$8,568.61\\times1.13 \\approx \\$9,682.53$.\r\n\r\n**6.** Total paid: $\\$40,000.00 + \\$9,682.53 \\approx \\$49,682.53$; total interest $= \\$49,682.53 - \\$35,000.00 \\approx \\$14,682.53$, which is indeed less than $\\$35,000.00$."
+  }
+]

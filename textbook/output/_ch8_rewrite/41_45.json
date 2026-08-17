@@ -1,0 +1,192 @@
+[
+  {
+    "id": "math-8-41",
+    "case_id": "MATH 8.41",
+    "title": "Turning a Negative-Power Demand Curve Around",
+    "difficulty": "4/5",
+    "sort_order": 41,
+    "context": "A component supplier faces demand $q(p)=A p^{-2}$ units, where $p>0$ is the price. At a price of $5$ the supplier sells $100$ units. Procurement wants the relationship written the other way round, with price and revenue expressed as functions of the quantity sold. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The inverse demand curve is $p=50q^{-0.5}$.",
+      "Revenue expressed through quantity is $R=50q^{0.5}$.",
+      "Doubling the quantity sold raises revenue by about $41.4\\%$.",
+      "When the curve sells $25$ units, revenue is $300$.",
+      "The price elasticity of demand is $-0.5$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nInverse demand is the same curve with price as the subject, and inverting a power function replaces its exponent by the reciprocal and raises its coefficient to that same reciprocal power.\n\n$$A(5)^{-2} = 100 \\quad \\Rightarrow \\quad \\frac{A}{25} = 100 \\quad \\Rightarrow \\quad A = 2500$$\n\n$$q = \\frac{2500}{p^{2}} \\quad \\Rightarrow \\quad p^{2} = \\frac{2500}{q} \\quad \\Rightarrow \\quad p = \\frac{50}{\\sqrt{q}} = 50q^{-0.5}$$\n\nCheck the observed pair:\n\n$$p(100) = \\frac{50}{10} = 5 \\;\\checkmark$$\n\nCarrying the coefficient through unchanged, rather than as $2500^{\\frac{1}{2}}$, would give a curve that misses every observed point. The inverse curve is $50q^{-0.5}$, so the statement is True.",
+      "**B.** → True\n\nRevenue expressed through quantity is quantity times inverse demand, so the exponents add rather than being carried over unchanged.\n\n$$p(q)=50q^{-0.5}$$\n\n$$R(q)=qp(q)=q\\left(50q^{-0.5}\\right)=50q^{0.5}$$\n\nMultiplying by $q$ raises the exponent by one, taking $-0.5$ to $0.5$ and turning a falling curve into a rising one. The revenue law is $50q^{0.5}$, so the statement is True.",
+      "**C.** → True\n\nThe percentage effect of a doubling comes from the scale factor of the revenue law, whose exponent is one half.\n\n$$\\frac{R(2q)}{R(q)}=2^{0.5}=\\sqrt{2}\\approx1.414$$\n\n$$(1.414-1)\\times100\\%\\approx41.4\\%$$\n\nThe exponent is not itself the percentage response, since a finite change is the full power minus one. Revenue rises by about $41.4\\%$, so the statement is True.",
+      "**D.** → False\n\nRevenue at a stated quantity has to be built from the price that clears that quantity, which the inverse curve supplies.\n\n$$p(25)=50(25)^{-0.5}=\\frac{50}{5}=10$$\n\n$$R(25)=25p(25)=25(10)=250$$\n\nReusing the observed price of $5$ would price a different point on the curve, not this one. Revenue is $250$, so the statement is False.",
+      "**E.** → False\n\nPrice elasticity of demand measures the percentage response of quantity to price, so it is read from $q(p)$ and equals that curve's own exponent.\n\n$$q(p) = 2500p^{-2} \\quad \\Rightarrow \\quad \\text{El}_{p}q = -2$$\n\nContrast with the inverse curve:\n\n$$p(q) = 50q^{-0.5} \\quad \\Rightarrow \\quad \\text{El}_{q}p = -0.5 = \\frac{1}{-2}$$\n\nTest with a one percent price rise:\n\n$$1.01^{-2} \\approx 0.9803 \\quad \\Rightarrow \\quad \\text{about } -2\\%$$\n\nThe two numbers are reciprocals because inverting a power function inverts its exponent, and $-0.5$ belongs to the other direction. The elasticity is $-2$, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $p$ = price, $q$ = units, $R$ = revenue. One observation pins the coefficient, and the rest is a change of subject: inverting a power function takes the reciprocal of the exponent and the same reciprocal power of the coefficient.\n\n**1. Translate: the observed pair.**\n\n$$A(5)^{-2} = 100$$\n\n**2. Translate: the inversion.**\n\n$$q = \\frac{A}{p^{2}} \\quad \\Rightarrow \\quad p = A^{\\frac{1}{2}}q^{\\frac{-1}{2}}$$\n\n**Part 2: The model.**\n\n$$q(p) = 2500\\,p^{-2} \\tag{1}$$\n\n$$p(q) = 50\\,q^{-0.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The observation gives the coefficient:\n\n$$A = 100 \\times 25 = 2500, \\qquad A^{\\frac{1}{2}} = 50$$\n\n**2.** Revenue from either side, with matching values:\n\n$$R(p) = 2500p^{-1}, \\qquad R(q) = 50q^{0.5}, \\qquad R = 500 \\text{ at } (p,q) = (5,100)$$\n\n**3.** Quantities along the curve:\n\n$$q(5) = 100, \\qquad q(10) = 25, \\qquad q(2.5) = 400$$\n\n**4.** Elasticities are reciprocal, one for each direction:\n\n$$\\text{El}_{p}q = -2, \\qquad \\text{El}_{q}p = -0.5$$\n\n**5.** Because demand is elastic, revenue falls in price and rises in quantity — two readings of the same curve."
+    ],
+    "solution_overview": "Demand is $q(p)=Ap^{-2}$ with $q(5)=100$; procurement wants price and revenue as functions of quantity.\n\n**Part 1: Building the model.**\n\nLet $p$ = price, $q$ = units, $R$ = revenue. One observation pins the coefficient, and the rest is a change of subject: inverting a power function takes the reciprocal of the exponent and the same reciprocal power of the coefficient.\n\n**1. Translate: the observed pair.**\n\n$$A(5)^{-2} = 100$$\n\n**2. Translate: the inversion.**\n\n$$q = \\frac{A}{p^{2}} \\quad \\Rightarrow \\quad p = A^{\\frac{1}{2}}q^{\\frac{-1}{2}}$$\n\n**Part 2: The model.**\n\n$$q(p) = 2500\\,p^{-2} \\tag{1}$$\n\n$$p(q) = 50\\,q^{-0.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The observation gives the coefficient:\n\n$$A = 100 \\times 25 = 2500, \\qquad A^{\\frac{1}{2}} = 50$$\n\n**2.** Revenue from either side, with matching values:\n\n$$R(p) = 2500p^{-1}, \\qquad R(q) = 50q^{0.5}, \\qquad R = 500 \\text{ at } (p,q) = (5,100)$$\n\n**3.** Quantities along the curve:\n\n$$q(5) = 100, \\qquad q(10) = 25, \\qquad q(2.5) = 400$$\n\n**4.** Elasticities are reciprocal, one for each direction:\n\n$$\\text{El}_{p}q = -2, \\qquad \\text{El}_{q}p = -0.5$$\n\n**5.** Because demand is elastic, revenue falls in price and rises in quantity — two readings of the same curve.\n\n**Answer.** $A = 2500$ | $p(q) = 50q^{-0.5}$ | $R(q) = 50q^{0.5}$ | elasticity $-2$",
+    "expl_lens": [
+      703,
+      394,
+      381,
+      345,
+      2013
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-42",
+    "case_id": "MATH 8.42",
+    "title": "Average Product of a Square-Root Technology",
+    "difficulty": "4/5",
+    "sort_order": 42,
+    "context": "A workshop's output follows $Y(L)=A L^{0.5}$ units, where $L>0$ is labour hours. Increasing labour from $25$ to $100$ hours increased output by exactly $60$ units. Management tracks average product $\\frac{Y}{L}$ and compares output with a linear wage benchmark $W(L)=0.75L$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The output law is $Y(L)=12\\sqrt{L}$.",
+      "At $64$ hours, output exceeds the linear wage benchmark by $48$ units.",
+      "At $225$ hours, average product is $0.8$ unit per labour hour.",
+      "Producing $180$ units requires $225$ labour hours.",
+      "Multiplying labour hours by $2.25$ multiplies output by $1.5$ and average product by $\\frac{2}{3}$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe log records an output increase, not an output level, so both labour figures enter the same equation. Take the shape factors first:\n\n$$\\sqrt{25}=5,\\qquad \\sqrt{100}=10$$\n\n$$Y(100)-Y(25)=A(10-5)$$\n\n$$5A=60\\quad\\Rightarrow\\quad A=12$$\n\n$$Y(L)=12L^{\\frac{1}{2}}=12\\sqrt L$$\n\nThe recovered law reproduces the record, since the endpoint outputs are $Y(25)=60$ and $Y(100)=120$, whose difference is the logged $60$ units. Reading the $60$ as $Y(100)$ instead would discard the lower endpoint and halve the coefficient to $6$. Both the coefficient and the square-root form match the data, so the statement is True.",
+      "**B.** → True\n\nTwo laws with different exponents can only be compared at a common labour input, so both are evaluated at $L=64$ before anything is subtracted:\n\n$$Y(64)=12\\sqrt{64}=12(8)=96,\\qquad W(64)=0.75(64)=48,\\qquad Y(64)-W(64)=48$$\n\nThe coefficients $12$ and $0.75$ settle nothing on their own, because one multiplies $\\sqrt L$ and the other multiplies $L$. That gap in exponents is also why the $48$-unit advantage is temporary: at $L=256$ both laws give $192$ units, and past that point the wage benchmark is the larger of the two. At $64$ hours the square-root technology stands exactly $48$ units above the benchmark, so the statement is True.",
+      "**C.** → True\n\nAverage product is output divided by labour, so its exponent is $0.5-1=-0.5$ and the derived law has to be built before any level is read off.\n\n$$\\operatorname{AP}(L)=\\frac{Y(L)}{L} =\\frac{12L^{0.5}}{L}=12L^{-0.5}$$\n\n$$\\operatorname{AP}(225)=\\frac{12}{\\sqrt{225}} =\\frac{12}{15}=0.8$$\n\nTotal output at that labour level is $180$, a different quantity that still has to be divided by the hours. Average product is $0.8$ unit per labour hour, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1:** Translate the jump and the derived average:\n\n$$A(10-5)=60, qquad \\operatorname{AP}(L)=AL^{-0.5}$$\n\n**Part 2:** Recover the total, average, and inverse laws:\n\n$$Y(L)=12\\sqrt L, qquad \\operatorname{AP}(L)=\\frac{12}{\\sqrt L}, qquad L=\\left(\\frac{Y}{12}\\right)^2$$\n\n**Part 3:** Compare with wages and evaluate the planning targets:\n\n$$Y(64)-0.75(64)=48, quad \\operatorname{AP}(225)=0.8, quad Y=180\\Rightarrow L=225$$\n\nThis full reconstruction also supplies three safeguards: every substituted input stays in the stated domain, each numerical comparison uses the model's own units, and every percentage claim is checked through an exact output ratio before rounding. Those checks lead to the same truth value as the direct route above.\n\nA final boundary check strengthens the conclusion. Keep the original domain restriction in force, compare the unrounded model value with the exact threshold in the statement, and only then translate the result into words. Changing the order of those operations can hide a domain failure or turn a close inequality into the wrong truth value. Here the exact model, the scale comparison, and the stated units all point in the same direction, so the extended check agrees with the conclusion above.",
+      "**D.** → True\n\nReversing a square-root technology means dividing by the coefficient first and squaring second, since the inverse exponent is $2$ rather than $1$:\n\n$$12\\sqrt L=180$$\n\n$$\\sqrt L=15\\quad\\Rightarrow\\quad L=15^{2}=225$$\n\n$$Y(225)=12\\sqrt{225}=12(15)=180$$\n\nOnly the positive root is admissible, because labour hours are positive by assumption. A proportional guess is exactly what the exponent rules out: output rises by the factor $\\frac{180}{120}=1.5$ above the logged $100$ hours, so labour has to rise by $1.5^{2}=2.25$, giving $225$ hours rather than $150$. The inversion and the forward check agree on $225$ labour hours, so the statement is True.",
+      "**E.** → True\n\nOutput carries exponent $0.5$ while average product carries $-0.5$, so one labour multiplier acts on the two quantities in opposite directions.\n\n$$\\frac{Y(2.25L)}{Y(L)}=(2.25)^{0.5}=1.5$$\n\n$$\\frac{\\operatorname{AP}(2.25L)}{\\operatorname{AP}(L)} =(2.25)^{-0.5}=\\frac{1}{1.5}=\\frac{2}{3}$$\n\nRising total output does not carry average product with it, because dividing by labour flips the sign of the exponent. Both multipliers in the claim are exact, so the statement is True."
+    ],
+    "solution_overview": "Output is $Y(L)=AL^{0.5}$, with a $60$-unit output jump from $25$ to $100$ hours; average product is $\\frac{Y}{L}$.\n\n**Part 1:** Translate the jump and the derived average:\n\n$$A(10-5)=60, qquad \\operatorname{AP}(L)=AL^{-0.5}$$\n\n**Part 2:** Recover the total, average, and inverse laws:\n\n$$Y(L)=12\\sqrt L, qquad \\operatorname{AP}(L)=\\frac{12}{\\sqrt L}, qquad L=\\left(\\frac{Y}{12}\\right)^2$$\n\n**Part 3:** Compare with wages and evaluate the planning targets:\n\n$$Y(64)-0.75(64)=48, quad \\operatorname{AP}(225)=0.8, quad Y=180\\Rightarrow L=225$$\n\n**Answer.** $A=12$ | $Y(L)=12\\sqrt L$ | $\\operatorname{AP}(225)=0.8$ | $180$ units need $225$ hours",
+    "expl_lens": [
+      625,
+      653,
+      1963,
+      664,
+      489
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-43",
+    "case_id": "MATH 8.43",
+    "title": "Two Break-Even Points Around a Fixed Charge",
+    "difficulty": "5/5",
+    "sort_order": 43,
+    "context": "A contract manufacturer earns $R(q)=60 q^{0.5}$ from an output of $q>0$ units, pays a variable cost of $2q$, and carries a fixed charge of $400$ per period. Profit is $\\Pi(q)=60q^{0.5}-2q-400$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The operation breaks even at two output levels, $100$ and $400$ units.",
+      "Profit is positive at an output of $25$ units.",
+      "Profit is positive at an output of $500$ units.",
+      "Profit rises throughout the range where it is positive.",
+      "Revenue is proportional to output."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nProfit mixes $\\sqrt{q}$ with $q$ and a constant, so the substitution $s=\\sqrt{q}$ turns the break-even condition into a quadratic.\n\n$$60s - 2s^{2} - 400 = 0 \\quad \\Rightarrow \\quad s^{2} - 30s + 200 = 0$$\n\n$$(s-10)(s-20) = 0 \\quad \\Rightarrow \\quad s = 10 \\text{ or } s = 20$$\n\nSquare back to output:\n\n$$q = 100 \\quad \\text{or} \\quad q = 400$$\n\nCheck one of them:\n\n$$\\Pi(400) = 60(20) - 800 - 400 = 0 \\;\\checkmark$$\n\nTwo roots rather than one is what a fixed charge produces, since output must be large enough to cover it yet small enough that linear variable cost has not overtaken square-root revenue. Both break-even points are as claimed, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $q$ = units produced and $s=\\sqrt{q}$. Revenue has exponent $0.5$, variable cost exponent $1$, and the fixed charge is a constant — the substitution $s=\\sqrt{q}$ turns this mixture into a quadratic.\n\n**1. Translate: the profit function.**\n\n$$\\Pi = 60q^{0.5} - 2q - 400$$\n\n**2. Translate: the substitution.** With $q=s^{2}$:\n\n$$\\Pi = -2s^{2} + 60s - 400$$\n\n**Part 2: The model.**\n\n$$\\Pi(s) = -2\\left(s^{2} - 30s + 200\\right) \\tag{1}$$\n\n$$\\Pi(s) = -2(s-10)(s-20) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The roots of (2) give the break-even outputs:\n\n$$s = 10 \\;\\Rightarrow\\; q = 100, \\qquad s = 20 \\;\\Rightarrow\\; q = 400$$\n\n**2.** The sign of (2) fixes the profitable range:\n\n$$100 < q < 400 \\;\\Rightarrow\\; \\Pi > 0, \\qquad \\text{otherwise } \\Pi \\le 0$$\n\n**3.** Being an inverted parabola in $s$, profit peaks midway between the roots:\n\n$$s = 15 \\;\\Rightarrow\\; q = 225, \\qquad \\Pi(225) = 50$$\n\n**4.** Values on either side of the peak confirm the turn:\n\n$$\\Pi(144) = 32, \\qquad \\Pi(324) = 32, \\qquad \\Pi(25) = -150, \\qquad \\Pi(500) \\approx -58.4$$\n\n**5.** The whole shape comes from the exponent mismatch: revenue scales by $2^{0.5}$ per doubling, variable cost by $2$, so revenue leads at first and loses in the end.",
+      "**B.** → False\n\nProfit at a stated output is revenue minus variable cost minus the fixed charge, each evaluated at that output.\n\n$$R(25) = 60(5) = 300, \\qquad 2(25) = 50, \\qquad \\text{fixed } 400$$\n\n$$\\Pi(25) = 300 - 50 - 400 = -150$$\n\nSmall outputs are where the fixed charge weighs most heavily against square-root revenue, which is why profit turns positive only past $100$ units. Profit is negative at $25$ units, so the statement is False.",
+      "**C.** → False\n\nAn output of $500$ units lies beyond the upper break-even point, so revenue and cost have to be compared there rather than assumed.\n\n$$R(500) = 60\\sqrt{500} \\approx 60 \\times 22.3607 \\approx 1341.6$$\n\n$$2(500) + 400 = 1400$$\n\n$$\\Pi(500) \\approx 1341.6 - 1400 \\approx -58.4$$\n\nThe margin is thin enough to need the arithmetic, since $500$ is only a quarter above the output where profit was exactly zero. Profit is about $-58$, so the statement is False.",
+      "**D.** → False\n\nWhether profit rises on the profitable range is a question about shape, and in the variable $s=\\sqrt{q}$ profit is $-2(s-10)(s-20)$, an inverted parabola.\n\n$$\\Pi(144) = 60(12) - 288 - 400 = 32$$\n\n$$\\Pi(225) = 60(15) - 450 - 400 = 50$$\n\n$$\\Pi(324) = 60(18) - 648 - 400 = 32$$\n\nPositive throughout an interval is weaker than rising throughout it, and the peak at $s=15$, that is $q=225$, sits inside the interval. Profit climbs to $50$ and falls back, so the statement is False.",
+      "**E.** → False\n\nProportionality would require revenue's exponent to be $1$, whereas that exponent is $0.5$ and only the variable cost is genuinely proportional.\n\n$$\\frac{R(2q)}{R(q)} = 2^{0.5} \\approx 1.414, \\qquad \\frac{2(2q)}{2q} = 2$$\n\nCheck with levels:\n\n$$R(100) = 600, \\qquad R(200) \\approx 848.5, \\qquad R(400) = 1200$$\n\nThat mismatch is what creates the upper break-even point, since proportional revenue would settle the comparison once and for all by coefficients. Quadrupling output only doubles revenue, so the statement is False."
+    ],
+    "solution_overview": "Profit is $\\Pi(q)=60q^{0.5}-2q-400$ for output $q>0$.\n\n**Part 1: Building the model.**\n\nLet $q$ = units produced and $s=\\sqrt{q}$. Revenue has exponent $0.5$, variable cost exponent $1$, and the fixed charge is a constant — the substitution $s=\\sqrt{q}$ turns this mixture into a quadratic.\n\n**1. Translate: the profit function.**\n\n$$\\Pi = 60q^{0.5} - 2q - 400$$\n\n**2. Translate: the substitution.** With $q=s^{2}$:\n\n$$\\Pi = -2s^{2} + 60s - 400$$\n\n**Part 2: The model.**\n\n$$\\Pi(s) = -2\\left(s^{2} - 30s + 200\\right) \\tag{1}$$\n\n$$\\Pi(s) = -2(s-10)(s-20) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The roots of (2) give the break-even outputs:\n\n$$s = 10 \\;\\Rightarrow\\; q = 100, \\qquad s = 20 \\;\\Rightarrow\\; q = 400$$\n\n**2.** The sign of (2) fixes the profitable range:\n\n$$100 < q < 400 \\;\\Rightarrow\\; \\Pi > 0, \\qquad \\text{otherwise } \\Pi \\le 0$$\n\n**3.** Being an inverted parabola in $s$, profit peaks midway between the roots:\n\n$$s = 15 \\;\\Rightarrow\\; q = 225, \\qquad \\Pi(225) = 50$$\n\n**4.** Values on either side of the peak confirm the turn:\n\n$$\\Pi(144) = 32, \\qquad \\Pi(324) = 32, \\qquad \\Pi(25) = -150, \\qquad \\Pi(500) \\approx -58.4$$\n\n**5.** The whole shape comes from the exponent mismatch: revenue scales by $2^{0.5}$ per doubling, variable cost by $2$, so revenue leads at first and loses in the end.\n\n**Answer.** break-even at $q = 100$ and $q = 400$ | peak profit $50$ at $q = 225$",
+    "expl_lens": [
+      2178,
+      444,
+      469,
+      492,
+      542
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-44",
+    "case_id": "MATH 8.44",
+    "title": "A Benefit and a Cost With Different Exponents",
+    "difficulty": "5/5",
+    "sort_order": 44,
+    "context": "A city values a flood-defence programme of scale $x>0$ by the benefit $B(x)=40 x^{0.5}$ and the cost $C(x)=0.5 x^{1.5}$, both in millions. The net benefit is $B(x)-C(x)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Benefit and cost are equal at scale $x=80$.",
+      "Beyond that scale the cost exceeds the benefit.",
+      "The net benefit is largest at scale $x=80$.",
+      "Doubling the scale doubles both the benefit and the cost.",
+      "At scale $x=16$ the cost already exceeds the benefit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nBenefit and cost are equal where the two curves meet, and since both carry a factor $x^{0.5}$ on a strictly positive domain, that shared power can be cancelled.\n\n$$40x^{0.5} = 0.5x^{1.5} \\quad \\Rightarrow \\quad 40 = 0.5x^{1}$$\n\n$$x = 80$$\n\nConfirm the shared value:\n\n$$B(80) = 40\\sqrt{80} \\approx 357.8, \\qquad C(80) = 0.5(80)^{1.5} \\approx 357.8$$\n\nThe exponents differ by exactly $1$, which is why what remains is linear in $x$ rather than another power equation. Both sides are about $357.8$ million at scale $80$, so the statement is True.",
+      "**B.** → True\n\nThe ordering of two power functions across a whole range is carried by their ratio, which here is itself a power function.\n\n$$\\frac{C(x)}{B(x)} = \\frac{0.5x^{1.5}}{40x^{0.5}} = \\frac{x}{80}$$\n\nRead off the comparison:\n\n$$\\frac{x}{80} > 1 \\quad \\Longleftrightarrow \\quad x > 80$$\n\nTest a larger programme:\n\n$$B(100) = 400, \\qquad C(100) = 0.5(1000) = 500$$\n\nA single test value could not settle a whole range, while a strictly increasing ratio passes through $1$ once and never returns. Cost exceeds benefit beyond the crossing, so the statement is True.",
+      "**C.** → False\n\nThe largest net benefit is a question about the difference $B-C$ rather than about where the two curves meet, so that difference has to be sampled across scales.\n\n$$N(16) = 160 - 32 = 128$$\n\n$$N(27) = 40(5.196) - 0.5(140.3) \\approx 207.8 - 70.1 \\approx 137.7$$\n\n$$N(40) \\approx 252.98 - 126.49 \\approx 126.5$$\n\nCompare with the crossing:\n\n$$N(80) = 0$$\n\nBreak-even is where the surplus has been fully eroded, not where it is largest. The net benefit peaks near $x=27$ and is zero at $x=80$, so the statement is False.",
+      "**D.** → False\n\nDoubling acts on each curve through its own exponent, so the two scale factors are $2^{0.5}$ and $2^{1.5}$ rather than a common factor of $2$.\n\n$$\\frac{B(2x)}{B(x)} = 2^{0.5} \\approx 1.4142, \\qquad \\frac{C(2x)}{C(x)} = 2^{1.5} \\approx 2.8284$$\n\nCheck between two scales:\n\n$$B(40) \\approx 253.0, \\quad B(80) \\approx 357.8; \\qquad C(40) \\approx 126.5, \\quad C(80) \\approx 357.8$$\n\nCost grows twice as fast as benefit in proportional terms, which is what guarantees the surplus is exhausted at some finite scale. Neither curve doubles, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $x$ = programme scale, $B$ = benefit, $C$ = cost, $N=B-C$ = net benefit. Both constants are given; the analysis turns on the exponents $0.5$ and $1.5$, which differ by exactly $1$.\n\n**1. Translate: the crossing condition.**\n\n$$40x^{0.5} = 0.5x^{1.5}$$\n\n**2. Translate: the ordering.** The ratio of the two curves is the cleanest tool:\n\n$$\\frac{C(x)}{B(x)} = \\frac{0.5x^{1.5}}{40x^{0.5}} = \\frac{x}{80}$$\n\n**Part 2: The model.**\n\n$$N(x) = 40x^{0.5} - 0.5x^{1.5} \\tag{1}$$\n\n$$\\frac{C(x)}{B(x)} = \\frac{x}{80} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Cancel the shared power to find the unique crossing:\n\n$$40 = 0.5x \\;\\Rightarrow\\; x = 80, \\qquad B = C \\approx 357.8$$\n\n**2.** Ratio (2) fixes the ordering on both sides:\n\n$$x < 80 \\;\\Rightarrow\\; B > C, \\qquad x > 80 \\;\\Rightarrow\\; C > B$$\n\n**3.** The net benefit is positive but not monotone on $(0,80)$:\n\n$$N(16) = 128, \\qquad N(27) \\approx 137.7, \\qquad N(40) \\approx 126.5, \\qquad N(80) = 0$$\n\n**4.** Scale factors explain why the surplus must vanish. Doubling the scale multiplies the benefit by:\n\n$$2^{0.5} \\approx 1.414$$\n\nThe same doubling multiplies the cost by:\n\n$$2^{1.5} \\approx 2.828$$\n\nCost grows twice as fast as benefit under every doubling, so any surplus held at a small scale is eaten as the programme expands.\n\n**5.** The best scale sits near $x\\approx27$, far below break-even. The crossing at $x = 80$ marks the end of the worthwhile range, not its optimum.",
+      "**E.** → False\n\nAt small scales a square root rises steeply from zero while $x^{1.5}$ starts almost flat, so the two curves have to be evaluated rather than ordered by habit.\n\n$$B(16) = 40\\sqrt{16} = 40(4) = 160$$\n\n$$C(16) = 0.5(16)^{1.5} = 0.5(64) = 32$$\n\nCompare through the ratio:\n\n$$\\frac{C(16)}{B(16)} = \\frac{32}{160} = 0.2 = \\frac{16}{80}$$\n\nThe ordering that holds beyond the crossing does not extend backwards through it. Benefit is five times cost at that scale, so the statement is False."
+    ],
+    "solution_overview": "Benefit is $B(x)=40x^{0.5}$ and cost is $C(x)=0.5x^{1.5}$ for a programme of scale $x>0$.\n\n**Part 1: Building the model.**\n\nLet $x$ = programme scale, $B$ = benefit, $C$ = cost, $N=B-C$ = net benefit. Both constants are given; the analysis turns on the exponents $0.5$ and $1.5$, which differ by exactly $1$.\n\n**1. Translate: the crossing condition.**\n\n$$40x^{0.5} = 0.5x^{1.5}$$\n\n**2. Translate: the ordering.** The ratio of the two curves is the cleanest tool:\n\n$$\\frac{C(x)}{B(x)} = \\frac{0.5x^{1.5}}{40x^{0.5}} = \\frac{x}{80}$$\n\n**Part 2: The model.**\n\n$$N(x) = 40x^{0.5} - 0.5x^{1.5} \\tag{1}$$\n\n$$\\frac{C(x)}{B(x)} = \\frac{x}{80} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Cancel the shared power to find the unique crossing:\n\n$$40 = 0.5x \\;\\Rightarrow\\; x = 80, \\qquad B = C \\approx 357.8$$\n\n**2.** Ratio (2) fixes the ordering on both sides:\n\n$$x < 80 \\;\\Rightarrow\\; B > C, \\qquad x > 80 \\;\\Rightarrow\\; C > B$$\n\n**3.** The net benefit is positive but not monotone on $(0,80)$:\n\n$$N(16) = 128, \\qquad N(27) \\approx 137.7, \\qquad N(40) \\approx 126.5, \\qquad N(80) = 0$$\n\n**4.** Scale factors explain why the surplus must vanish. Doubling the scale multiplies the benefit by:\n\n$$2^{0.5} \\approx 1.414$$\n\nThe same doubling multiplies the cost by:\n\n$$2^{1.5} \\approx 2.828$$\n\nCost grows twice as fast as benefit under every doubling, so any surplus held at a small scale is eaten as the programme expands.\n\n**5.** The best scale sits near $x\\approx27$, far below break-even. The crossing at $x = 80$ marks the end of the worthwhile range, not its optimum.\n\n**Answer.** crossing at $x = 80$ with $B = C \\approx 357.8$ | net benefit peaks near $x \\approx 27$",
+    "expl_lens": [
+      558,
+      568,
+      533,
+      2281,
+      499
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-45",
+    "case_id": "MATH 8.45",
+    "title": "Furnace Throughput Calibrated From Two Runs",
+    "difficulty": "5/5",
+    "sort_order": 45,
+    "context": "A furnace's throughput follows $T(g)=A g^{r}$ tonnes per hour, where $g>0$ is the gas feed in cubic metres per hour. Two logged runs are available: a feed of $8$ gave $20$ tonnes per hour, and a feed of $27$ gave $45$. The site licence caps throughput at $80$ tonnes per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The exponent of the throughput law is $\\frac{2}{3}$.",
+      "The coefficient of the throughput law is $5$.",
+      "The licensed ceiling of $80$ tonnes per hour is reached at a gas feed of $64$.",
+      "Doubling the gas feed doubles throughput.",
+      "Throughput per cubic metre of gas rises as the feed rises."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nTwo logged runs fix the exponent through their ratio, which cancels the coefficient and leaves a pure power equation.\n\n$$\\left(\\frac{27}{8}\\right)^{r} = \\frac{45}{20} = 2.25$$\n\nWrite both sides as powers of $\\frac{3}{2}$:\n\n$$\\left(\\left(\\tfrac{3}{2}\\right)^{3}\\right)^{r} = \\left(\\tfrac{3}{2}\\right)^{2} \\quad \\Rightarrow \\quad 3r = 2 \\quad \\Rightarrow \\quad r = \\frac{2}{3}$$\n\nCheck with logarithms:\n\n$$r = \\frac{\\ln 2.25}{\\ln 3.375} = \\frac{0.8109}{1.2164} \\approx 0.6667$$\n\nMatching exponents is exact where the logarithmic route only approximates, and both feed sizes cooperate because $\\frac{27}{8}$ is a perfect cube ratio. The exponent is $\\frac{2}{3}$, so the statement is True.",
+      "**B.** → True\n\nWith the exponent known, the coefficient is a logged throughput divided by its shape factor, and each cube resolves exactly.\n\n$$8^{\\frac{2}{3}} = \\left(8^{\\frac{1}{3}}\\right)^{2} = 2^{2} = 4, \\qquad 4A = 20 \\;\\Rightarrow\\; A = 5$$\n\nConfirm with the second run:\n\n$$27^{\\frac{2}{3}} = 3^{2} = 9, \\qquad \\frac{45}{9} = 5$$\n\n$$T(g) = 5g^{\\frac{2}{3}}$$\n\nTwo runs returning the same coefficient is a check on the exponent as well, since a wrong exponent would split them. The coefficient is $5$, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $g$ = gas feed and $T(g)$ = throughput. Two unknowns need two runs: their ratio carries the exponent because the coefficient cancels, and either run then carries the coefficient.\n\n**1. Translate: the ratio of the two runs.**\n\n$$\\left(\\frac{27}{8}\\right)^{r} = \\frac{45}{20} = 2.25$$\n\n**2. Translate: the coefficient from the first run.**\n\n$$A \\cdot 8^{r} = 20$$\n\n**Part 2: The model.**\n\n$$\\left(\\tfrac{3}{2}\\right)^{3r} = \\left(\\tfrac{3}{2}\\right)^{2} \\tag{1}$$\n\n$$T(g) = A g^{r} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Matching exponents in (1) avoids logarithms altogether:\n\n$$3r = 2 \\;\\Rightarrow\\; r = \\tfrac{2}{3}$$\n\n**2.** Both runs give the same coefficient, confirming the fit:\n\n$$\\frac{20}{8^{\\frac{2}{3}}} = \\frac{20}{4} = 5 = \\frac{45}{9}, \\qquad T(g) = 5g^{\\frac{2}{3}}$$\n\n**3.** Invert at the licence ceiling using the reciprocal exponent $\\frac{3}{2}$:\n\n$$g^{\\frac{2}{3}} = 16 \\;\\Rightarrow\\; g = 16^{\\frac{3}{2}} = 64$$\n\n**4.** Scale factors show the sub-proportional response. Doubling the gas feed multiplies throughput by:\n\n$$2^{\\frac{2}{3}} \\approx 1.587$$\n\nThat is a gain of about $59\\%$, well short of a doubling. Read the other way, doubling the throughput calls for a gas factor of:\n\n$$2^{\\frac{3}{2}} \\approx 2.83$$\n\nSo extra output has to be bought with almost three times the feed.\n\n**5.** Gas efficiency declines with the feed, so the licensed maximum is also the least efficient operating point. Throughput per unit of gas is:\n\n$$\\frac{T(g)}{g} = 5g^{\\frac{-1}{3}}$$\n\nAt feeds of $8$, $27$ and $64$ that ratio reads:\n\n$$2.5,\\; 1.67,\\; 1.25$$",
+      "**C.** → True\n\nA licensed ceiling on throughput is inverted into a gas feed by raising both sides to the reciprocal exponent $\\frac{3}{2}$.\n\n$$5g^{\\frac{2}{3}} = 80 \\quad \\Rightarrow \\quad g^{\\frac{2}{3}} = 16$$\n\n$$g = 16^{\\frac{3}{2}} = \\left(16^{\\frac{1}{2}}\\right)^{3} = 4^{3} = 64$$\n\nConfirm by substitution:\n\n$$T(64) = 5 \\times 64^{\\frac{2}{3}} = 5(16) = 80$$\n\nEstimating the feed by proportion would badly understate it, since throughput rises fourfold while the feed rises eightfold. The ceiling binds at a feed of $64$, so the statement is True.",
+      "**D.** → False\n\nDoubling the feed acts through the exponent $\\frac{2}{3}$, so the throughput multiplier is a power of two rather than two itself.\n\n$$\\frac{T(2g)}{T(g)} = 2^{\\frac{2}{3}} \\approx 1.5874$$\n\nFind the feed multiple that really doubles throughput:\n\n$$k^{\\frac{2}{3}} = 2 \\quad \\Rightarrow \\quad k = 2^{\\frac{3}{2}} \\approx 2.83$$\n\nCheck with logged values:\n\n$$T(8) = 20, \\qquad T(16) = 5 \\times 16^{\\frac{2}{3}} \\approx 5 \\times 6.35 \\approx 31.7$$\n\nAn exponent below one always means the input grows faster than the output, here by nearly three times the gas for a doubling. Throughput rises by about $59\\%$, so the statement is False.",
+      "**E.** → False\n\nThroughput per cubic metre is the calibrated law divided by the feed, which lowers the exponent to $\\frac{2}{3}-1=\\frac{-1}{3}$.\n\n$$\\frac{T(g)}{g} = \\frac{5g^{\\frac{2}{3}}}{g} = 5g^{\\frac{-1}{3}}$$\n\nEvaluate at the three feeds in play:\n\n$$\\frac{20}{8} = 2.5, \\qquad \\frac{45}{27} \\approx 1.67, \\qquad \\frac{80}{64} = 1.25$$\n\nTotal throughput and gas efficiency move in opposite directions once the exponent falls below one, so the licensed maximum is the least efficient operating point. Efficiency halves across that range, so the statement is False."
+    ],
+    "solution_overview": "Throughput is $T(g)=Ag^{r}$ tonnes per hour, with logged runs $T(8)=20$ and $T(27)=45$, under a licensed ceiling of $80$.\n\n**Part 1: Building the model.**\n\nLet $g$ = gas feed and $T(g)$ = throughput. Two unknowns need two runs: their ratio carries the exponent because the coefficient cancels, and either run then carries the coefficient.\n\n**1. Translate: the ratio of the two runs.**\n\n$$\\left(\\frac{27}{8}\\right)^{r} = \\frac{45}{20} = 2.25$$\n\n**2. Translate: the coefficient from the first run.**\n\n$$A \\cdot 8^{r} = 20$$\n\n**Part 2: The model.**\n\n$$\\left(\\tfrac{3}{2}\\right)^{3r} = \\left(\\tfrac{3}{2}\\right)^{2} \\tag{1}$$\n\n$$T(g) = A g^{r} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Matching exponents in (1) avoids logarithms altogether:\n\n$$3r = 2 \\;\\Rightarrow\\; r = \\tfrac{2}{3}$$\n\n**2.** Both runs give the same coefficient, confirming the fit:\n\n$$\\frac{20}{8^{\\frac{2}{3}}} = \\frac{20}{4} = 5 = \\frac{45}{9}, \\qquad T(g) = 5g^{\\frac{2}{3}}$$\n\n**3.** Invert at the licence ceiling using the reciprocal exponent $\\frac{3}{2}$:\n\n$$g^{\\frac{2}{3}} = 16 \\;\\Rightarrow\\; g = 16^{\\frac{3}{2}} = 64$$\n\n**4.** Scale factors show the sub-proportional response. Doubling the gas feed multiplies throughput by:\n\n$$2^{\\frac{2}{3}} \\approx 1.587$$\n\nThat is a gain of about $59\\%$, well short of a doubling. Read the other way, doubling the throughput calls for a gas factor of:\n\n$$2^{\\frac{3}{2}} \\approx 2.83$$\n\nSo extra output has to be bought with almost three times the feed.\n\n**5.** Gas efficiency declines with the feed, so the licensed maximum is also the least efficient operating point. Throughput per unit of gas is:\n\n$$\\frac{T(g)}{g} = 5g^{\\frac{-1}{3}}$$\n\nAt feeds of $8$, $27$ and $64$ that ratio reads:\n\n$$2.5,\\; 1.67,\\; 1.25$$\n\n**Answer.** $r = \\frac{2}{3}$ | $A = 5$ | $T(g) = 5g^{\\frac{2}{3}}$ | ceiling at $g = 64$",
+    "expl_lens": [
+      701,
+      2378,
+      553,
+      647,
+      567
+    ],
+    "has_extended": true
+  }
+]

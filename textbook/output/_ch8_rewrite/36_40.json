@@ -1,0 +1,192 @@
+[
+  {
+    "id": "math-8-36",
+    "case_id": "MATH 8.36",
+    "title": "Two Ranking Algorithms That Swap Places",
+    "difficulty": "3/5",
+    "sort_order": 36,
+    "context": "Two ranking algorithms are scored against a query load $x>0$. Algorithm S obeys $S(x)=a x^{0.5}$, and a benchmark at load $4$ scored $16$. Algorithm T's score is proportional to $x^{1.5}$, and the same benchmark load scored $8$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two algorithms score equally at a load of $8$.",
+      "The two algorithms score equally at two different positive loads.",
+      "Algorithm S scores higher at every load above the crossing point.",
+      "At a load of $4$ the two algorithms score equally.",
+      "The ratio of the two scores is the same at every load."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA tie between two scoring laws is the load at which $S(x)$ and $T(x)$ take the same value, so both laws must be calibrated from the benchmark at load $4$ before the equation can be posed.\n\n$$a\\sqrt{4} = 16 \\;\\Rightarrow\\; a = 8, \\qquad k(4)^{1.5} = 8 \\;\\Rightarrow\\; 8k = 8 \\;\\Rightarrow\\; k = 1$$\n\nSetting the two calibrated scores equal and cancelling the shared factor $x^{0.5}$, which is legitimate because the load is strictly positive:\n\n$$8x^{0.5} = x^{1.5} \\quad \\Rightarrow \\quad 8 = x^{1} \\quad \\Rightarrow \\quad x = 8$$\n\n$$S(8) = 8\\sqrt{8} \\approx 22.63, \\qquad T(8) = 8^{1.5} \\approx 22.63$$\n\nThe crossing lands on the coefficient of algorithm S only because the two exponents differ by exactly $1$, not by any general rule. Both algorithms score about $22.63$ at load $8$, so the statement is True.",
+      "**B.** → False\n\nThe number of ties is the number of positive solutions of the equality condition, so the question is about roots rather than about values.\n\n$$8x^{0.5} = x^{1.5} \\quad \\Longleftrightarrow \\quad x^{1.5 - 0.5} = 8 \\quad \\Longleftrightarrow \\quad x = 8$$\n\nThe ratio of the two scores settles the matter across the whole domain:\n\n$$\\frac{T(x)}{S(x)} = \\frac{x^{1.5}}{8x^{0.5}} = \\frac{x}{8}$$\n\nOne curve starting above and ending above suggests two meetings, but a strictly increasing ratio can pass through $1$ only once. There is exactly one crossing on $x>0$, so the statement is False.",
+      "**C.** → False\n\nWhich algorithm leads over a range is decided by the ratio of the two calibrated laws, because a ratio compares them at every load at once:\n\n$$\\frac{T(x)}{S(x)} = \\frac{x^{1.5}}{8x^{0.5}} = \\frac{x}{8}$$\n\n$$\\frac{x}{8} > 1 \\quad \\Longleftrightarrow \\quad x > 8$$\n\nJust past the crossing the gap is small, but it already runs against algorithm S:\n\n$$S(9) = 8(3) = 24, \\qquad T(9) = 9^{1.5} = 27$$\n\nA heavier load widens it:\n\n$$S(16) = 8(4) = 32, \\qquad T(16) = 16^{1.5} = 64$$\n\nAlgorithm S does lead at light loads, on the strength of its coefficient $8$ against $1$, but exponent $1.5$ against $0.5$ takes the lead over once the crossing is passed. Algorithm T scores higher above the crossing, so the statement is False.",
+      "**D.** → False\n\nLoad $4$ is where the two coefficients were fitted, not where the scores meet, and the brief records both values:\n\n$$S(4) = 16, \\qquad T(4) = 8, \\qquad \\frac{T(4)}{S(4)} = 0.5$$\n\nCalibration load and crossing load are different questions, and only the second makes the scores agree:\n\n$$S(8) = 8\\sqrt{8} \\approx 22.63, \\qquad T(8) = 8^{1.5} \\approx 22.63$$\n\nAlgorithm S scores twice algorithm T at load $4$, so the statement is False.",
+      "**E.** → False\n\nA constant score ratio is exactly what two power functions produce when they share an exponent and differ only by a coefficient.\n\n$$\\frac{T(x)}{S(x)} = \\frac{x^{1.5}}{8x^{0.5}} = \\frac{x}{8}$$\n\nEvaluating that ratio at three loads:\n\n$$\\frac{4}{8} = 0.5, \\qquad \\frac{8}{8} = 1, \\qquad \\frac{16}{8} = 2$$\n\nThe exponents here differ by $1$, so the ratio is itself a power function rather than a constant. It quadruples across that range, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $x$ = query load, $S$ and $T$ = the two scores. Each algorithm has a given exponent and one benchmark, so both coefficients follow immediately; the interesting work is comparing the two laws.\n\n**1. Translate: algorithm S's benchmark.**\n\n$$a\\sqrt{4} = 16$$\n\n**2. Translate: algorithm T's benchmark.**\n\n$$k(4)^{1.5} = 8$$\n\n**Part 2: The model.**\n\n$$S(x) = 8x^{0.5} \\tag{1}$$\n\n$$T(x) = x^{1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The benchmarks give the coefficients:\n\n$$a = 8, \\qquad k = 1$$\n\n**2.** Locate every crossing by cancelling the shared power:\n\n$$8x^{0.5} = x^{1.5} \\;\\Rightarrow\\; x = 8, \\qquad S(8) = T(8) \\approx 22.63$$\n\n**3.** The ratio settles the ordering everywhere and shows the crossing is unique:\n\n$$\\frac{T(x)}{S(x)} = \\frac{x}{8}$$\n\n**4.** Read the ordering off that ratio:\n\n$$x < 8 \\;\\Rightarrow\\; S > T, \\qquad x > 8 \\;\\Rightarrow\\; T > S$$\n\n**5.** Because the exponents differ, no coefficient could keep S ahead indefinitely; the coefficient only moves the crossing, which sits at $x=a^{\\frac{1}{(1.5-0.5)}}=8$."
+    ],
+    "solution_overview": "Algorithm S obeys $S(x)=ax^{0.5}$ with $S(4)=16$; algorithm T obeys $T(x)=kx^{1.5}$ with $T(4)=8$.\n\n**Part 1: Building the model.**\n\nLet $x$ = query load, $S$ and $T$ = the two scores. Each algorithm has a given exponent and one benchmark, so both coefficients follow immediately; the interesting work is comparing the two laws.\n\n**1. Translate: algorithm S's benchmark.**\n\n$$a\\sqrt{4} = 16$$\n\n**2. Translate: algorithm T's benchmark.**\n\n$$k(4)^{1.5} = 8$$\n\n**Part 2: The model.**\n\n$$S(x) = 8x^{0.5} \\tag{1}$$\n\n$$T(x) = x^{1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The benchmarks give the coefficients:\n\n$$a = 8, \\qquad k = 1$$\n\n**2.** Locate every crossing by cancelling the shared power:\n\n$$8x^{0.5} = x^{1.5} \\;\\Rightarrow\\; x = 8, \\qquad S(8) = T(8) \\approx 22.63$$\n\n**3.** The ratio settles the ordering everywhere and shows the crossing is unique:\n\n$$\\frac{T(x)}{S(x)} = \\frac{x}{8}$$\n\n**4.** Read the ordering off that ratio:\n\n$$x < 8 \\;\\Rightarrow\\; S > T, \\qquad x > 8 \\;\\Rightarrow\\; T > S$$\n\n**5.** Because the exponents differ, no coefficient could keep S ahead indefinitely; the coefficient only moves the crossing, which sits at $x=a^{\\frac{1}{(1.5-0.5)}}=8$.\n\n**Answer.** $S(x) = 8x^{0.5}$ | $T(x) = x^{1.5}$ | single crossing at $x = 8$",
+    "expl_lens": [
+      825,
+      600,
+      737,
+      449,
+      1795
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-37",
+    "case_id": "MATH 8.37",
+    "title": "Server Fleet Capacity Beneath a Contracted Ceiling",
+    "difficulty": "3/5",
+    "sort_order": 37,
+    "context": "A hosting platform's sustained capacity follows $C(m)=A m^{0.8}$ requests per second, where $m>0$ is the number of machines. A fleet of $32$ machines sustains $80$ requests per second. The support contract will not certify more than $500$ requests per second. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The capacity ratio $\\frac{C(64)}{C(32)}$ is less than $2$.",
+      "Doubling the fleet raises capacity by about $74\\%$.",
+      "The contracted ceiling of $500$ binds from about $250$ machines.",
+      "A fleet of $243$ machines sustains $486$ requests per second.",
+      "Doubling the fleet from $32$ to $64$ machines cuts capacity per machine by less than $10\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA ratio of capacities cancels the unknown coefficient, leaving only the exponent on the fleet multiplier:\n\n$$\\frac{C(64)}{C(32)} = \\left(\\frac{64}{32}\\right)^{0.8} = 2^{0.8}$$\n\nAn exponent below $1$ already forces the factor under $2$; splitting the power gives its size:\n\n$$2^{0.8} = 2 \\times 2^{-0.2} \\approx 2 \\times 0.8706 \\approx 1.741 < 2$$\n\nLevels agree, once $32^{0.8} = 2^{4} = 16$ fixes the coefficient:\n\n$$A = \\frac{80}{16} = 5, \\qquad C(64) = 5 \\times 2^{4.8} \\approx 139.3, \\qquad \\frac{139.3}{80} \\approx 1.74$$\n\nReading $0.8$ as an ordinary multiplier answers a different question, since a scale factor is a power rather than a proportion. Capacity rises by a factor below two, so the statement is True.",
+      "**B.** → True\n\nThe percentage effect of a doubling is the scale factor minus one, so the same power of two governs it as governed the ratio above.\n\n$$\\frac{C(2m)}{C(m)} = 2^{0.8} = e^{0.8 \\times 0.6931} \\approx e^{0.5545} \\approx 1.7411$$\n\nChecking against the recorded fleet, with $A=\\frac{80}{32}^{0.8}=\\frac{80}{16}=5$:\n\n$$C(32) = 80, \\qquad C(64) = 5 \\times 64^{0.8} \\approx 5 \\times 27.86 \\approx 139.3, \\qquad \\frac{139.3}{80} \\approx 1.74$$\n\nThe shortfall against $100\\%$ compounds rather than cancelling, since two doublings give $2^{1.6}\\approx3.03$ instead of $4$. Capacity rises by about $74\\%$, so the statement is True.",
+      "**C.** → False\n\nThe fleet at which a capacity ceiling binds is found by inverting the calibrated law, which means raising both sides to the reciprocal exponent $1.25$.\n\n$$32^{0.8} = 2^{4} = 16 \\;\\Rightarrow\\; A = 5, \\qquad 5m^{0.8} = 500 \\;\\Rightarrow\\; m^{0.8} = 100$$\n\n$$m = 100^{1.25} = 10^{2.5} \\approx 316.2$$\n\nTest the fleet named in the claim:\n\n$$C(250) = 5 \\times 250^{0.8} \\approx 5 \\times 82.4 \\approx 412 < 500$$\n\nRough proportion suggests a sixfold fleet for a sixfold capacity, while the sub-linear exponent demands a factor of $10^{1.25}\\approx17.8$. The ceiling binds near $316$ machines rather than $250$, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $m$ = machines and $C(m)$ = sustained capacity. The exponent is given and lies below $1$, so the platform faces diminishing returns; the recorded fleet fixes the coefficient and the ceiling has to be inverted into a fleet size.\n\n**1. Translate: the recorded fleet.** The fleet size is a fifth power, so the shape factor is exact:\n\n$$32^{0.8} = \\left(2^{5}\\right)^{\\frac{4}{5}} = 16, \\qquad 16A = 80$$\n\n**2. Translate: the contracted ceiling.**\n\n$$5m^{0.8} \\le 500$$\n\n**Part 2: The model.**\n\n$$C(m) = 5m^{0.8} \\tag{1}$$\n\n$$m^{0.8} \\le 100 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The recorded fleet gives the coefficient:\n\n$$A = 5$$\n\n**2.** Levels at fifth powers stay exact:\n\n$$C(243) = 5 \\times 3^{4} = 405$$\n\n**3.** Scale factors show the sub-linear growth:\n\n$$2^{0.8} \\approx 1.741 \\;(+74\\%), \\qquad 10^{0.8} \\approx 6.31$$\n\n**4.** Invert (2) with the reciprocal exponent $1.25$:\n\n$$m = 100^{1.25} = 10^{2.5} \\approx 316.2$$\n\n**5.** Capacity per machine carries a negative exponent, so the marginal value of a machine keeps falling:\n\n$$\\frac{C(m)}{m} = 5m^{-0.2}, \\qquad 2.5 \\text{ at } m=32, \\qquad 1.67 \\text{ at } m=243$$",
+      "**D.** → False\n\nA fleet of $243$ machines is a fifth power, so the exponent $0.8=\\frac{4}{5}$ resolves exactly and no rounding enters the level.\n\n$$243^{0.8} = \\left(3^{5}\\right)^{\\frac{4}{5}} = 3^{4} = 81$$\n\nApply the recovered coefficient:\n\n$$C(243) = 5(81) = 405$$\n\nThe claimed $486$ is $6 \\times 81$, the figure a coefficient of $6$ would give, whereas the recorded fleet fixes the coefficient at $5$. Capacity is $405$ requests per second, so the statement is False.",
+      "**E.** → False\n\nCapacity per machine is the calibrated law divided by $m$, which lowers the exponent to $0.8-1=-0.2$ and makes the quantity decreasing.\n\n$$\\frac{\\frac{C(64)}{64}}{\\frac{C(32)}{32}}=2^{-0.2}\\approx0.87055$$\n\nConvert the surviving fraction into a percentage cut:\n\n$$(1-0.87055)\\times100\\%\\approx12.9\\%$$\n\nA negative exponent reverses the direction of the change, and the size of the drop still comes from the full power rather than from the exponent read as a percentage. Capacity per machine falls by about $12.9\\%$, so the statement is False."
+    ],
+    "solution_overview": "Capacity follows $C(m)=Am^{0.8}$ requests per second for $m$ machines, with $C(32)=80$ and a contracted ceiling of $500$.\n\n**Part 1: Building the model.**\n\nLet $m$ = machines and $C(m)$ = sustained capacity. The exponent is given and lies below $1$, so the platform faces diminishing returns; the recorded fleet fixes the coefficient and the ceiling has to be inverted into a fleet size.\n\n**1. Translate: the recorded fleet.** The fleet size is a fifth power, so the shape factor is exact:\n\n$$32^{0.8} = \\left(2^{5}\\right)^{\\frac{4}{5}} = 16, \\qquad 16A = 80$$\n\n**2. Translate: the contracted ceiling.**\n\n$$5m^{0.8} \\le 500$$\n\n**Part 2: The model.**\n\n$$C(m) = 5m^{0.8} \\tag{1}$$\n\n$$m^{0.8} \\le 100 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The recorded fleet gives the coefficient:\n\n$$A = 5$$\n\n**2.** Levels at fifth powers stay exact:\n\n$$C(243) = 5 \\times 3^{4} = 405$$\n\n**3.** Scale factors show the sub-linear growth:\n\n$$2^{0.8} \\approx 1.741 \\;(+74\\%), \\qquad 10^{0.8} \\approx 6.31$$\n\n**4.** Invert (2) with the reciprocal exponent $1.25$:\n\n$$m = 100^{1.25} = 10^{2.5} \\approx 316.2$$\n\n**5.** Capacity per machine carries a negative exponent, so the marginal value of a machine keeps falling:\n\n$$\\frac{C(m)}{m} = 5m^{-0.2}, \\qquad 2.5 \\text{ at } m=32, \\qquad 1.67 \\text{ at } m=243$$\n\n**Answer.** $A = 5$ | $C(m) = 5m^{0.8}$ | ceiling binds at $m \\approx 316$ machines",
+    "expl_lens": [
+      733,
+      632,
+      2052,
+      471,
+      558
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-38",
+    "case_id": "MATH 8.38",
+    "title": "Hiring Against a Square-Root Revenue Curve",
+    "difficulty": "3/5",
+    "sort_order": 38,
+    "context": "A seasonal workshop earns revenue $R(L)=120 L^{0.5}$ from $L>0$ hours of hired labour and pays a wage of $6$ per hour. The owner judges a season by the net gain $R(L)-6L$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The net gain is zero at $400$ hours.",
+      "At $100$ hours the net gain is $600$.",
+      "At $900$ hours the net gain is negative.",
+      "The net gain rises throughout the range from $0$ to $400$ hours.",
+      "Revenue per hour of labour is the same at every staffing level."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nBreak-even is the staffing level at which revenue and the wage bill coincide, so the condition is an equation between a square-root law and a linear one.\n\n$$120\\sqrt{L} = 6L \\quad \\Rightarrow \\quad 120 = 6\\sqrt{L} \\quad \\Rightarrow \\quad \\sqrt{L} = 20$$\n\n$$L = 400$$\n\nCheck both sides:\n\n$$R(400) = 120(20) = 2400, \\qquad 6(400) = 2400$$\n\nDividing by $\\sqrt{L}$ discards the trivial root at $L=0$, where a workshop with no labour also breaks even, and keeps the meaningful one. The net gain is zero at $400$ hours, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $L$ = labour hours, $R$ = revenue, $\\Pi$ = net gain. Both constants are given, so the task is a comparison between an exponent of $0.5$ and an exponent of $1$.\n\n**1. Translate: the net gain.**\n\n$$\\Pi(L) = 120L^{0.5} - 6L$$\n\n**2. Translate: break-even.**\n\n$$120\\sqrt{L} = 6L$$\n\n**Part 2: The model.**\n\n$$\\Pi(L) = 120\\sqrt{L} - 6L \\tag{1}$$\n\n$$\\Pi(L) = 6\\sqrt{L}\\left(20 - \\sqrt{L}\\right) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Solve break-even on $L>0$:\n\n$$\\sqrt{L} = 20 \\;\\Rightarrow\\; L = 400, \\qquad R = \\text{wages} = 2400$$\n\n**2.** The factored form (2) fixes the sign of the net gain:\n\n$$0 < L < 400 \\;\\Rightarrow\\; \\Pi > 0, \\qquad L > 400 \\;\\Rightarrow\\; \\Pi < 0$$\n\n**3.** Positive is not the same as rising — the net gain turns over inside the profitable range:\n\n$$\\Pi(100) = 600, \\qquad \\Pi(225) = 450, \\qquad \\Pi(324) = 216, \\qquad \\Pi(400) = 0$$\n\n**4.** Losses widen beyond break-even:\n\n$$\\Pi(900) = 3600 - 5400 = -1800$$\n\n**5.** The driver is the falling average revenue per hour, which crosses the wage exactly at break-even:\n\n$$\\frac{R(L)}{L} = 120L^{-0.5}: \\quad 12 \\text{ at } 100, \\quad 6 \\text{ at } 400, \\quad 4 \\text{ at } 900$$",
+      "**B.** → True\n\nThe net gain at a staffing level is revenue there minus the wage bill there, both read straight off the two given laws.\n\n$$R(100) = 120\\sqrt{100} = 120(10) = 1200, \\qquad 6(100) = 600$$\n\n$$1200 - 600 = 600$$\n\nThis level is worth holding on to for part D, since it turns out to be the best the workshop can do rather than merely a point inside the profitable range. The net gain is $600$, so the statement is True.",
+      "**C.** → True\n\nBeyond break-even the wage bill grows in proportion to hours while revenue grows only as a square root, so the two laws have to be evaluated separately at the staffing level in question.\n\n$$R(900) = 120\\sqrt{900} = 120(30) = 3600, \\qquad 6(900) = 5400$$\n\n$$3600 - 5400 = -1800$$\n\nThe gap widens with every further hour rather than stabilising, because the exponent mismatch never reverses. The net gain at $900$ hours is $-1800$, so the statement is True.",
+      "**D.** → False\n\nWhether the net gain rises across a range is a question about its shape rather than its sign, so it has to be sampled at several staffing levels inside the range.\n\n$$\\Pi(100) = 1200 - 600 = 600$$\n\n$$\\Pi(225) = 120(15) - 1350 = 1800 - 1350 = 450$$\n\n$$\\Pi(324) = 120(18) - 1944 = 2160 - 1944 = 216$$\n\nThe net gain does stay positive on the whole range, which is weaker than rising, and it turns over where revenue per hour falls to the wage of $6$. It drops from $600$ to $216$ while still inside the range, so the statement is False.",
+      "**E.** → False\n\nRevenue per hour of labour is revenue divided by $L$, which lowers the exponent from $0.5$ to $-0.5$.\n\n$$\\frac{R(L)}{L} = \\frac{120L^{0.5}}{L} = 120L^{-0.5}$$\n\nEvaluate at three staffing levels:\n\n$$\\frac{R(100)}{100} = 12, \\qquad \\frac{R(400)}{400} = 6, \\qquad \\frac{R(900)}{900} = 4$$\n\nConstancy would require revenue proportional to hours, while this average starts above the wage of $6$, meets it at $400$ hours and drops below it thereafter. Revenue per hour falls from $12$ to $4$, so the statement is False."
+    ],
+    "solution_overview": "Revenue is $R(L)=120L^{0.5}$ from $L>0$ labour hours, wages cost $6$ per hour, and the net gain is $R(L)-6L$.\n\n**Part 1: Building the model.**\n\nLet $L$ = labour hours, $R$ = revenue, $\\Pi$ = net gain. Both constants are given, so the task is a comparison between an exponent of $0.5$ and an exponent of $1$.\n\n**1. Translate: the net gain.**\n\n$$\\Pi(L) = 120L^{0.5} - 6L$$\n\n**2. Translate: break-even.**\n\n$$120\\sqrt{L} = 6L$$\n\n**Part 2: The model.**\n\n$$\\Pi(L) = 120\\sqrt{L} - 6L \\tag{1}$$\n\n$$\\Pi(L) = 6\\sqrt{L}\\left(20 - \\sqrt{L}\\right) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Solve break-even on $L>0$:\n\n$$\\sqrt{L} = 20 \\;\\Rightarrow\\; L = 400, \\qquad R = \\text{wages} = 2400$$\n\n**2.** The factored form (2) fixes the sign of the net gain:\n\n$$0 < L < 400 \\;\\Rightarrow\\; \\Pi > 0, \\qquad L > 400 \\;\\Rightarrow\\; \\Pi < 0$$\n\n**3.** Positive is not the same as rising — the net gain turns over inside the profitable range:\n\n$$\\Pi(100) = 600, \\qquad \\Pi(225) = 450, \\qquad \\Pi(324) = 216, \\qquad \\Pi(400) = 0$$\n\n**4.** Losses widen beyond break-even:\n\n$$\\Pi(900) = 3600 - 5400 = -1800$$\n\n**5.** The driver is the falling average revenue per hour, which crosses the wage exactly at break-even:\n\n$$\\frac{R(L)}{L} = 120L^{-0.5}: \\quad 12 \\text{ at } 100, \\quad 6 \\text{ at } 400, \\quad 4 \\text{ at } 900$$\n\n**Answer.** break-even at $L = 400$ hours | peak net gain $600$ at $L = 100$ | $\\Pi(900) = -1800$",
+    "expl_lens": [
+      1980,
+      428,
+      470,
+      548,
+      529
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-39",
+    "case_id": "MATH 8.39",
+    "title": "Splitting an Order Between Two Quadratic-Cost Plants",
+    "difficulty": "4/5",
+    "sort_order": 39,
+    "context": "A firm must produce $60$ units in total and can split them between two plants. Plant 1's cost is $C_1(q)=0.5q^{2}$ and plant 2's cost is $C_2(q)=0.25q^{2}$, where $q$ is that plant's own output. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Concentrating all $60$ units in the cheaper plant costs $900$.",
+      "An even split between the plants costs less than a $20$–$40$ split.",
+      "Doubling a plant's output doubles that plant's cost.",
+      "The $20$–$40$ split costs $650$.",
+      "Plant 2's cost per unit does not depend on how much it produces."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nConcentrating the order means sending all $60$ units to a single plant, so the cost is that plant's own quadratic law evaluated at the full order.\n\n$$C_2(60) = 0.25(60)^{2} = 0.25(3600) = 900$$\n\nThe same corner at the other plant, for comparison:\n\n$$C_1(60) = 0.5(3600) = 1800$$\n\nPlant 2 is cheaper only in the sense of a smaller coefficient, which is not the same as being the wise place to put every unit. Concentrating in plant 2 costs $900$, so the statement is True.",
+      "**B.** → False\n\nRanking two splits means pricing each one through both quadratic laws and adding the plant costs, one line apiece:\n\n$$0.5(30)^{2} + 0.25(30)^{2} = 450 + 225 = 675$$\n\n$$0.5(20)^{2} + 0.25(40)^{2} = 200 + 400 = 600$$\n\nSymmetry is the right instinct for identical plants, but plant 1's coefficient is twice plant 2's, so the cheaper plant should carry the larger share. The uneven split costs $75$ less, so the statement is False.",
+      "**C.** → False\n\nBoth cost laws carry exponent $2$, so the effect of doubling a plant's own output is the scale factor $2^{2}$.\n\n$$\\frac{C_2(2q)}{C_2(q)} = 2^{2} = 4$$\n\nConcrete outputs at plant 2:\n\n$$C_2(20) = 100, \\qquad C_2(40) = 400$$\n\nProportional costs would send every unit to the plant with the smaller coefficient, whereas convexity is what makes running both worthwhile. Cost quadruples rather than doubling, so the statement is False.",
+      "**D.** → False\n\nThe split that sends $20$ units to plant 1 and $40$ to plant 2 is priced plant by plant, each through its own quadratic law.\n\n$$C_1(20) = 0.5(400) = 200, \\qquad C_2(40) = 0.25(1600) = 400$$\n\n$$200 + 400 = 600$$\n\nRanked against the alternatives already priced:\n\n$$600 < 675 < 900$$\n\nAn error of $50$ here would blur that ranking, since it would make the even split at $675$ look almost as good as the best division. The split costs $600$, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $q$ = units at plant 1, so $60-q$ go to plant 2. Both cost laws are power functions with exponent $2$, so costs are convex and the total depends on how the order is divided.\n\n**1. Translate: the total cost of a split.**\n\n$$K(q) = 0.5q^{2} + 0.25(60-q)^{2}$$\n\n**2. Translate: the corner options.**\n\n$$K(0) = 0.25(3600) = 900, \\qquad K(60) = 0.5(3600) = 1800$$\n\n**Part 2: The model.**\n\n$$K(q) = 0.5q^{2} + 0.25(60-q)^{2} \\tag{1}$$\n\n$$\\frac{C_i(2q)}{C_i(q)} = 2^{2} = 4 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Price the candidate splits:\n\n$$K(30) = 450 + 225 = 675, \\qquad K(20) = 200 + 400 = 600$$\n\n**2.** Rank them against the corner:\n\n$$600 < 675 < 900 < 1800$$\n\n**3.** The best division loads the cheaper plant twice as heavily, matching the ratio of the coefficients:\n\n$$q : (60-q) = 20 : 40 = 1 : 2$$\n\n**4.** Convexity is what rewards splitting — each plant's cost quadruples when its own load doubles, by (2).\n\n**5.** Unit costs rise with each plant's own output, which is why neither corner is efficient:\n\n$$\\frac{C_1(q)}{q} = 0.5q, \\qquad \\frac{C_2(q)}{q} = 0.25q$$",
+      "**E.** → False\n\nPlant 2's cost per unit is its cost law divided by its own output, which lowers the exponent from $2$ to $1$.\n\n$$\\frac{C_2(q)}{q} = \\frac{0.25q^{2}}{q} = 0.25q$$\n\nEvaluate at three output levels:\n\n$$\\frac{C_2(20)}{20} = 5, \\qquad \\frac{C_2(40)}{40} = 10, \\qquad \\frac{C_2(60)}{60} = 15$$\n\nA constant unit cost would require exponent $1$ and would remove the trade-off that makes a split optimal. Unit cost triples across that range, so the statement is False."
+    ],
+    "solution_overview": "Sixty units must be split between plants with costs $C_1(q)=0.5q^{2}$ and $C_2(q)=0.25q^{2}$.\n\n**Part 1: Building the model.**\n\nLet $q$ = units at plant 1, so $60-q$ go to plant 2. Both cost laws are power functions with exponent $2$, so costs are convex and the total depends on how the order is divided.\n\n**1. Translate: the total cost of a split.**\n\n$$K(q) = 0.5q^{2} + 0.25(60-q)^{2}$$\n\n**2. Translate: the corner options.**\n\n$$K(0) = 0.25(3600) = 900, \\qquad K(60) = 0.5(3600) = 1800$$\n\n**Part 2: The model.**\n\n$$K(q) = 0.5q^{2} + 0.25(60-q)^{2} \\tag{1}$$\n\n$$\\frac{C_i(2q)}{C_i(q)} = 2^{2} = 4 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Price the candidate splits:\n\n$$K(30) = 450 + 225 = 675, \\qquad K(20) = 200 + 400 = 600$$\n\n**2.** Rank them against the corner:\n\n$$600 < 675 < 900 < 1800$$\n\n**3.** The best division loads the cheaper plant twice as heavily, matching the ratio of the coefficients:\n\n$$q : (60-q) = 20 : 40 = 1 : 2$$\n\n**4.** Convexity is what rewards splitting — each plant's cost quadruples when its own load doubles, by (2).\n\n**5.** Unit costs rise with each plant's own output, which is why neither corner is efficient:\n\n$$\\frac{C_1(q)}{q} = 0.5q, \\qquad \\frac{C_2(q)}{q} = 0.25q$$\n\n**Answer.** cheapest split $20$ at plant 1 and $40$ at plant 2, costing $600$ | even split $675$ | all at plant 2 $900$",
+    "expl_lens": [
+      486,
+      443,
+      444,
+      1829,
+      475
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-40",
+    "case_id": "MATH 8.40",
+    "title": "Testing Whether Field Data Fit One Power Law",
+    "difficulty": "4/5",
+    "sort_order": 40,
+    "context": "A laboratory records four measurements of a response $y$ against an input $x$: $(4,\\,24)$, $(16,\\,192)$, $(9,\\,81)$ and a planned run at $x=25$. An analyst fits a power law $y=Ax^{r}$ using the first two measurements only. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The first two measurements are consistent with a power law of exponent $1.5$.",
+      "The fitted coefficient is $3$.",
+      "The measurement at $x=9$ contradicts the fitted law.",
+      "The fitted law predicts $y=300$ at $x=25$.",
+      "The same two measurements would fit an exponent of $2$ equally well."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nTwo measurements determine a power law because their ratio cancels the coefficient and leaves an equation in the exponent alone.\n\n$$\\frac{A(16)^{r}}{A(4)^{r}} = \\frac{192}{24} \\quad \\Rightarrow \\quad \\left(\\frac{16}{4}\\right)^{r} = 8$$\n\nSolve the resulting equation:\n\n$$4^{r} = 8 \\quad \\Rightarrow \\quad 2^{2r} = 2^{3} \\quad \\Rightarrow \\quad r = 1.5$$\n\nBoth ratios here are whole numbers, $\\frac{16}{4}=4$ and $\\frac{192}{24}=8$, so the exponent resolves without logarithms. The exponent is exactly $1.5$, so the statement is True.",
+      "**B.** → True\n\nWith the exponent fixed, the coefficient follows from either measurement by dividing the response by its shape factor.\n\n$$A(4)^{1.5} = 24 \\quad \\Rightarrow \\quad 8A = 24 \\quad \\Rightarrow \\quad A = 3$$\n\nConfirm with the second measurement:\n\n$$\\frac{192}{16^{1.5}} = \\frac{192}{64} = 3, \\qquad y = 3x^{1.5}$$\n\nA wrong exponent would give two different coefficients, so agreement between the measurements is a genuine check rather than a repetition. Both give $A=3$, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $x$ = input and $y$ = response. Two unknowns need two measurements, and the standard route is to take the ratio first — it eliminates the coefficient and isolates the exponent.\n\n**1. Translate: the ratio of the two measurements.**\n\n$$\\left(\\frac{16}{4}\\right)^{r} = \\frac{192}{24}$$\n\n**2. Translate: the coefficient from either point.**\n\n$$A(4)^{r} = 24$$\n\n**Part 2: The model.**\n\n$$4^{r} = 8 \\tag{1}$$\n\n$$y = A x^{r} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) has a unique solution:\n\n$$2^{2r} = 2^{3} \\;\\Rightarrow\\; r = 1.5$$\n\n**2.** Either measurement then gives the same coefficient:\n\n$$A = \\frac{24}{8} = 3 = \\frac{192}{64}, \\qquad y = 3x^{1.5}$$\n\n**3.** The held-out measurement tests the form:\n\n$$3 \\times 9^{1.5} = 3 \\times 27 = 81 \\;\\checkmark$$\n\n**4.** The planned run is a prediction, not a fit:\n\n$$3 \\times 25^{1.5} = 3 \\times 125 = 375$$\n\n**5.** No other exponent fits: $r=2$ would demand a response ratio of $16$ and would miss the second measurement by a factor of two.",
+      "**C.** → False\n\nThe measurement at $x=9$ was held out of the fit, which makes it a test of the model rather than part of its construction.\n\n$$9^{1.5} = \\left(9^{\\frac{1}{2}}\\right)^{3} = 3^{3} = 27, \\qquad y = 3(27) = 81$$\n\nCompare with the recorded value:\n\n$$81 = 81$$\n\nA two-point fit always passes through its own two points, so agreement at an independent third point is evidence rather than arithmetic. The measurement sits on the curve, so the statement is False.",
+      "**D.** → False\n\nA prediction at $x=25$ uses the fitted law, and $25$ is a perfect square, so the shape factor resolves by taking the square root and then cubing.\n\n$$25^{1.5} = \\left(25^{\\frac{1}{2}}\\right)^{3} = 5^{3} = 125$$\n\nApply the coefficient:\n\n$$y = 3(125) = 375$$\n\nReading the shape factor as $100$ rather than $125$ is what produces the claimed figure, and the exact route leaves no room for that. The prediction is $375$, so the statement is False.",
+      "**E.** → False\n\nUniqueness of the fit is settled by the ratio equation, since $4^{r}$ is strictly increasing in $r$ and can equal $8$ only once.\n\n$$\\left(\\frac{16}{4}\\right)^{2} = 16 \\ne 8$$\n\nForce the coefficient from the first point and test the second:\n\n$$A = \\frac{24}{16} = 1.5, \\qquad 1.5(16)^{2} = 384 \\ne 192$$\n\nAn exponent of $2$ would demand a response ratio of $16$ where $8$ was observed, so no freedom remains once the ratio is fixed. The rejected exponent misses the second measurement by a factor of two, so the statement is False."
+    ],
+    "solution_overview": "Measurements $(4,24)$ and $(16,192)$ are used to fit $y=Ax^{r}$; the point $(9,81)$ and a planned run at $x=25$ test the fit.\n\n**Part 1: Building the model.**\n\nLet $x$ = input and $y$ = response. Two unknowns need two measurements, and the standard route is to take the ratio first — it eliminates the coefficient and isolates the exponent.\n\n**1. Translate: the ratio of the two measurements.**\n\n$$\\left(\\frac{16}{4}\\right)^{r} = \\frac{192}{24}$$\n\n**2. Translate: the coefficient from either point.**\n\n$$A(4)^{r} = 24$$\n\n**Part 2: The model.**\n\n$$4^{r} = 8 \\tag{1}$$\n\n$$y = A x^{r} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) has a unique solution:\n\n$$2^{2r} = 2^{3} \\;\\Rightarrow\\; r = 1.5$$\n\n**2.** Either measurement then gives the same coefficient:\n\n$$A = \\frac{24}{8} = 3 = \\frac{192}{64}, \\qquad y = 3x^{1.5}$$\n\n**3.** The held-out measurement tests the form:\n\n$$3 \\times 9^{1.5} = 3 \\times 27 = 81 \\;\\checkmark$$\n\n**4.** The planned run is a prediction, not a fit:\n\n$$3 \\times 25^{1.5} = 3 \\times 125 = 375$$\n\n**5.** No other exponent fits: $r=2$ would demand a response ratio of $16$ and would miss the second measurement by a factor of two.\n\n**Answer.** $r = 1.5$ | $A = 3$ | $y = 3x^{1.5}$ | predicted $y(25) = 375$",
+    "expl_lens": [
+      547,
+      1777,
+      469,
+      458,
+      546
+    ],
+    "has_extended": true
+  }
+]

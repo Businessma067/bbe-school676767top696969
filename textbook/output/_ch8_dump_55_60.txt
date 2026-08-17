@@ -1,0 +1,411 @@
+===== TASK 55 (1/5) Curing Strength From a Timed Gap Between Samples =====
+CONTEXT: A concrete lab models early curing strength as $S(t)=A\sqrt{t}$ megapascals, where $t>0$ is curing time in days. The log never states $A$: it only notes that strength rose by exactly $5$ MPa between day $4$ and day $9$. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The recovered curing law is $S(t)=5\sqrt{t}$.
+STMT 1 [true]: Strength on day $4$ is $10$ MPa and on day $9$ is $15$ MPa.
+STMT 2 [true]: Quadrupling curing time exactly doubles strength.
+STMT 3 [true]: Reaching $30$ MPa requires exactly $36$ days of curing.
+STMT 4 [true]: Moving from day $4$ to day $9$ raises strength by $50\%$.
+--- EXPL idx=0 len=613 displays=2 ---
+**A.** → True
+
+No single strength was recorded, only a gap between two days, and a gap is still enough because the coefficient is a common factor of both levels. Write the record as one equation:
+
+$$S(9)-S(4)=A\sqrt{9}-A\sqrt{4}=A(3-2)$$
+
+The two square roots differ by exactly $1$, so the coefficient is read off directly:
+
+$$A\cdot1=5 \quad\Rightarrow\quad A=5, \qquad S(t)=5\sqrt{t}$$
+
+Attaching the $5$ MPa to day $9$ as a level would invent an observation the log never made, and it would give the far smaller coefficient $5/3$. The difference calibration recovers $S(t)=5\sqrt{t}$, so the statement is True.
+--- EXPL idx=1 len=519 displays=2 ---
+**B.** → True
+
+With the coefficient recovered from the gap, each logged day is evaluated by multiplying it by the square root of that day:
+
+$$S(4)=5\sqrt{4}=5\cdot2=10, \qquad S(9)=5\sqrt{9}=5\cdot3=15$$
+
+The pair has to reproduce the surviving record, and it does:
+
+$$15-10=5$$
+
+Neither figure appears in the log itself: both are reconstructed from the single difference, which is only possible because the exponent was known in advance. Day $4$ carries $10$ MPa and day $9$ carries $15$ MPa, so the statement is True.
+--- EXPL idx=2 len=566 displays=2 ---
+**C.** → True
+
+A time multiplier reaches strength through the exponent $1/2$, so the coefficient cancels and the starting day is irrelevant:
+
+$$\frac{S(4t)}{S(t)}=\frac{5\sqrt{4t}}{5\sqrt{t}}=\sqrt{4}=2$$
+
+The identity holds anywhere on the curve, not only at the logged days. Two concrete pairs make that plain:
+
+$$S(4)=10, \quad S(16)=5\cdot4=20, \qquad S(9)=15, \quad S(36)=5\cdot6=30$$
+
+Each quadrupling of curing time exactly doubles the strength, which is the practical meaning of a square-root law. Quadrupling time doubles strength, so the statement is True.
+--- EXPL idx=3 len=556 displays=2 ---
+**D.** → True
+
+A target strength is inverted by dividing out the coefficient and then squaring, since squaring undoes the exponent $1/2$:
+
+$$5\sqrt{t}=30 \quad\Rightarrow\quad \sqrt{t}=6 \quad\Rightarrow\quad t=36$$
+
+Scaling from the reconstructed day-$9$ level reaches the same calendar day, because strength has to double and time enters as a square root:
+
+$$\left(\frac{30}{15}\right)^{2}=4, \qquad 9\cdot4=36$$
+
+A forward check closes the loop, since $5\sqrt{36}=5\cdot6=30$ MPa. Waiting to day $36$ delivers exactly $30$ MPa, so the statement is True.
+--- EXPL idx=4 len=613 displays=2 ---
+**E.** → True
+
+A percentage change compares two levels as a ratio, and the coefficient cancels there just as it does in any pure scale calculation:
+
+$$\frac{S(9)}{S(4)}=\frac{\sqrt{9}}{\sqrt{4}}=\frac{3}{2}=1.5$$
+
+Converting the ratio into a relative rise:
+
+$$\frac{S(9)-S(4)}{S(4)}=\frac{5}{10}=0.5=50\%$$
+
+The reconstructed levels agree, since $10$ MPa growing to $15$ MPa is a gain of half the starting value. The percentage is fixed by the day ratio $9/4$ alone, so it would be the same for any lab whose curve had a different coefficient. The rise from day $4$ to day $9$ is $50\%$, so the statement is True.
+
+===== TASK 56 (3/5) Cantilever Deflection Checked Against a Third Span =====
+CONTEXT: A materials lab models tip deflection of a cantilever as $y(L)=A L^{k}$ millimetres, where $L>0$ is the free span in metres. Two spans are trusted: $y(3)=18$ and $y(6)=72$. A third run recorded $y(9)=150$, and the question is whether that third point still sits on the same power law. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The two trusted spans recover the law $y(L)=2L^{2}$.
+STMT 1 [true]: The quadratic model predicts $y(9)=162$, so the recorded $150$ undershoots by $12$ mm.
+STMT 2 [false]: Rescaling the coefficient to force $y(9)=150$ leaves $y(3)=18$ unchanged.
+STMT 3 [false]: The two-point exponent fitted to $(3,18)$ and $(9,150)$ is still exactly $2$.
+STMT 4 [false]: Under $y(L)=2L^{2}$, doubling any span multiplies deflection by $3$.
+--- EXPL idx=0 len=647 displays=2 ---
+**A.** → True
+
+Two trusted levels determine both constants, and the ratio comes first because it removes the coefficient. The span doubles from $3$ m to $6$ m while deflection quadruples:
+
+$$\frac{y(6)}{y(3)}=\frac{72}{18}=4=2^{k} \quad\Rightarrow\quad k=2$$
+
+Back-substituting into the shorter trusted span recovers the coefficient:
+
+$$A\cdot3^{2}=18 \quad\Rightarrow\quad 9A=18 \quad\Rightarrow\quad A=2$$
+
+The longer trusted span is reproduced exactly, since $2\cdot6^{2}=72$. Both trusted runs therefore sit on the same curve, which is what makes them usable as a calibration pair. The recovered law is $y(L)=2L^{2}$, so the statement is True.
+--- EXPL idx=1 len=545 displays=2 ---
+**B.** → True
+
+The third span is a test of the calibrated model, so the prediction has to be generated from the law rather than read from the log:
+
+$$y(9)=2\cdot9^{2}=2\cdot81=162$$
+
+Comparing prediction with measurement gives the absolute discrepancy:
+
+$$162-150=12$$
+
+In relative terms the run falls short by $12/162=2/27\approx7.4\%$, which is large enough to matter for a stiffness check and small enough to look plausible at a glance. The quadratic model predicts $162$ mm and the recorded run is $12$ mm below it, so the statement is True.
+--- EXPL idx=2 len=659 displays=2 ---
+**C.** → False
+
+Forcing the curve through the third run while keeping the exponent at $2$ replaces the coefficient with a smaller one:
+
+$$A'\cdot9^{2}=150 \quad\Rightarrow\quad A'=\frac{150}{81}=\frac{50}{27}\approx1.852$$
+
+Every predicted level moves with the coefficient, because it multiplies the whole curve:
+
+$$y'(3)=\frac{50}{27}\cdot9=\frac{50}{3}\approx16.67, \qquad y'(6)=\frac{50}{27}\cdot36=\frac{200}{3}\approx66.67$$
+
+Both trusted runs are now missed, the first by about $1.33$ mm and the second by about $5.33$ mm. A coefficient change rescales every prediction uniformly by $50/54$, so no level can survive untouched, so the statement is False.
+--- EXPL idx=3 len=614 displays=2 ---
+**D.** → False
+
+Fitting an exponent to the pair $(3,18)$ and $(9,150)$ uses their own ratio, and the third run does not sit where the quadratic law expects it:
+
+$$\frac{150}{18}=\frac{25}{3}\approx8.333=3^{k}$$
+
+An exponent of $2$ would require the ratio $3^{2}=9$, so the fitted value must land below $2$:
+
+$$k=\frac{\ln(25/3)}{\ln3}=\frac{2.1203}{1.0986}\approx1.930$$
+
+The trusted pair still forces exactly $2$, since $72/18=4=2^{2}$, so the two fits disagree precisely because the third run is off the curve. The exponent fitted with the $9$ m point is about $1.930$ rather than $2$, so the statement is False.
+--- EXPL idx=4 len=545 displays=2 ---
+**E.** → False
+
+A doubling of span acts through the exponent, and the exponent recovered from the trusted pair is $2$:
+
+$$\frac{y(2L)}{y(L)}=\frac{2(2L)^{2}}{2L^{2}}=2^{2}=4$$
+
+The trusted runs are themselves an instance of that rule, since the span moves from $3$ m to $6$ m:
+
+$$\frac{y(6)}{y(3)}=\frac{72}{18}=4$$
+
+A multiplier of $3$ would belong to a different exponent, namely $\log_{2}3\approx1.585$, which no pair of trusted runs supports here. Doubling the span multiplies deflection by $4$ rather than by $3$, so the statement is False.
+
+===== TASK 57 (4/5) Mast Steel Mass Under a Finite Percentage Scale-Up =====
+CONTEXT: A self-similar mast's steel mass follows $M(h)=A h^{k}$ kilograms, where $h>0$ is mast height in metres. Design notes state that lengthening any mast by $20\%$ raises steel mass by $72.8\%$, and a $10$ m reference mast uses exactly $500$ kg of steel. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The recovered mass law is $M(h)=0.5\,h^{3}$.
+STMT 1 [true]: A $12$ m mast uses $864$ kg of steel.
+STMT 2 [true]: Tripling height multiplies steel mass by $27$.
+STMT 3 [true]: A $10\%$ height increase raises mass by exactly $33.1\%$.
+STMT 4 [false]: The percentage rule alone forces the coefficient $A$ without using the $10$ m reference.
+--- EXPL idx=0 len=664 displays=2 ---
+**A.** → True
+
+A percentage rule is a statement about a ratio, so it fixes the exponent while saying nothing about the coefficient. A $20\%$ longer mast means a height factor of $1.2$ and a mass factor of $1.728$:
+
+$$1.2^{k}=1.728 \quad\Rightarrow\quad k=3$$
+
+The check is exact rather than numerical, since $1.2^{3}=1.728$. The reference mast then supplies the missing level, using $10^{3}=1000$:
+
+$$1000A=500 \quad\Rightarrow\quad A=0.5, \qquad M(h)=0.5\,h^{3}$$
+
+Both pieces of information are needed and neither is redundant: the ratio gives the shape and the reference gives the scale. The recovered law is $M(h)=0.5h^{3}$ kilograms, so the statement is True.
+--- EXPL idx=1 len=544 displays=2 ---
+**B.** → True
+
+A $12$ m mast is the reference mast lengthened by exactly $20\%$, so the design note itself supplies the multiplier:
+
+$$M(12)=500\cdot1.728=864$$
+
+Substituting into the recovered law gives the same figure, since $12^{3}=1728$:
+
+$$M(12)=0.5\cdot1728=864$$
+
+The two routes must agree, because the multiplier $1.728$ is nothing other than $1.2^{3}$ evaluated on the same cubic curve. The extra $364$ kg for two extra metres is the practical cost of an exponent of $3$. A $12$ m mast uses $864$ kg of steel, so the statement is True.
+--- EXPL idx=2 len=597 displays=2 ---
+**C.** → True
+
+Tripling the height is a pure scale question, so the coefficient cancels and only the exponent survives:
+
+$$\frac{M(3h)}{M(h)}=\frac{0.5(3h)^{3}}{0.5h^{3}}=3^{3}=27$$
+
+Levels confirm the identity from the reference mast:
+
+$$M(30)=0.5\cdot30^{3}=13500=27\cdot500$$
+
+The size of the factor is the whole point of self-similar scaling: every linear dimension grows threefold, and volume, which sets the steel requirement, grows by the cube of that. Replacing $27$ with $3$ would treat mass as if it were a length. Tripling height multiplies steel mass by $27$, so the statement is True.
+--- EXPL idx=3 len=588 displays=2 ---
+**D.** → True
+
+A $10\%$ increase is a height factor of $1.1$, and under a cubic law the mass factor is that number cubed:
+
+$$1.1^{3}=1.331$$
+
+Subtracting one converts the multiplier into a percentage rise:
+
+$$\frac{M(1.1h)-M(h)}{M(h)}=1.331-1=0.331=33.1\%$$
+
+The reference mast makes the figure concrete, since an $11$ m mast needs $M(11)=0.5\cdot1331=665.5$ kg against $500$ kg, a gain of $165.5$ kg on $500$. Tripling the percentage rise from a $10\%$ stretch to roughly $33\%$ is the same effect that turned $20\%$ into $72.8\%$. The rise is exactly $33.1\%$, so the statement is True.
+--- EXPL idx=4 len=594 displays=2 ---
+**E.** → False
+
+The percentage rule is built from a quotient, and a quotient of two values of the same power law loses the coefficient completely:
+
+$$\frac{M(1.2h)}{M(h)}=\frac{A(1.2h)^{k}}{Ah^{k}}=1.2^{k}$$
+
+Every member of the family $M(h)=Ah^{3}$ satisfies the design note equally well, whatever positive value $A$ takes:
+
+$$M_{1}(h)=0.5h^{3}, \qquad M_{2}(h)=7h^{3}, \qquad \frac{M_{2}(1.2h)}{M_{2}(h)}=1.728$$
+
+Only a level observation breaks the tie, and the $10$ m reference mast is the one available. Scale information cannot substitute for level information, so the statement is False.
+
+===== TASK 58 (2/5) Cooling Fan Noise Against a Night-Time Cap =====
+CONTEXT: Acoustic intensity from a cooling fan follows $I(d)=A d^{-2}$ watts per square metre, where $d>0$ is distance from the hub in metres. A meter reading at $2$ metres records $0.72$ W/m². Night operations are capped at $0.08$ W/m². Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [false]: The intensity law is $I(d)=1.44 d^{-2}$.
+STMT 1 [false]: At $6$ metres the intensity is still above the $0.08$ W/m² night cap.
+STMT 2 [true]: Doubling the distance cuts intensity to one quarter.
+STMT 3 [false]: Moving from $2$ to $3$ metres cuts intensity by exactly $0.50$ W/m².
+STMT 4 [false]: Intensity per metre of distance is the same at every distance.
+--- EXPL idx=0 len=622 displays=2 ---
+**A.** → False
+
+The exponent is given as $-2$, so the meter reading recovers the coefficient by multiplying the observed intensity by the square of the distance:
+
+$$\frac{A}{2^{2}}=0.72 \quad\Rightarrow\quad \frac{A}{4}=0.72 \quad\Rightarrow\quad A=2.88$$
+
+The stated coefficient fails that same reading by a factor of two:
+
+$$\frac{1.44}{4}=0.36\ne0.72$$
+
+The number $1.44$ is what appears when the reading is multiplied by the distance rather than by its square, a slip that shows up whenever an inverse-square law is treated as an inverse-first-power law. The recovered coefficient is $2.88$, so the statement is False.
+--- EXPL idx=1 len=614 displays=2 ---
+**B.** → False
+
+A cap on intensity becomes a distance question once the law is inverted, so solve for the distance at which the fan just meets the night limit:
+
+$$\frac{2.88}{d^{2}}=0.08 \quad\Rightarrow\quad d^{2}=\frac{2.88}{0.08}=36 \quad\Rightarrow\quad d=6$$
+
+Evaluating the law at six metres shows equality rather than an excess:
+
+$$I(6)=\frac{2.88}{36}=0.08$$
+
+Since the exponent is negative, intensity keeps falling with distance, so six metres is exactly the boundary and any greater distance sits below the cap. The reading at $6$ metres equals the cap instead of exceeding it, so the statement is False.
+--- EXPL idx=2 len=566 displays=2 ---
+**C.** → True
+
+A pure scale factor for an inverse-square law involves the exponent alone, because the coefficient and the starting distance both cancel:
+
+$$\frac{I(2d)}{I(d)}=\frac{A(2d)^{-2}}{Ad^{-2}}=2^{-2}=\frac{1}{4}$$
+
+Levels taken from the meter reading show the same quartering:
+
+$$I(2)=0.72, \qquad I(4)=\frac{2.88}{16}=0.18=\frac{0.72}{4}$$
+
+The identity holds at any starting point, so moving from $3$ metres to $6$ metres also quarters the reading, from $0.32$ to $0.08$ W/m². Doubling the distance cuts intensity to one quarter, so the statement is True.
+--- EXPL idx=3 len=524 displays=2 ---
+**D.** → False
+
+An absolute drop has to be computed from two levels, because only ratios are shortcut friendly on a power law. Evaluate both distances:
+
+$$I(2)=0.72, \qquad I(3)=\frac{2.88}{9}=0.32$$
+
+Subtract to get the loss over that one metre:
+
+$$0.72-0.32=0.40$$
+
+The stated $0.50$ W/m² would require a constant drop per metre, which an inverse-square law never produces: the next metre out, from $3$ to $4$, costs only $0.32-0.18=0.14$ W/m². The move from $2$ to $3$ metres costs $0.40$ W/m², so the statement is False.
+--- EXPL idx=4 len=567 displays=2 ---
+**E.** → False
+
+Intensity per metre of distance is the derived quantity $I(d)/d$, and dividing a power by $d$ subtracts one more from the exponent:
+
+$$\frac{I(d)}{d}=\frac{2.88d^{-2}}{d}=2.88\,d^{-3}$$
+
+The leftover exponent $-3$ is negative, so the ratio falls steeply rather than holding steady. Two distances make that visible:
+
+$$\frac{I(2)}{2}=0.36, \qquad \frac{I(3)}{3}\approx0.1067$$
+
+The per-metre figure has lost about $70\%$ of its value over a single metre, which is what a cubic decay does. Intensity per metre is not constant, so the statement is False.
+
+===== TASK 59 (5/5) Pump Head Composed Through a Square Flow Law =====
+CONTEXT: A booster pump's differential head follows $H(q)=A q^{2}$ metres when the delivered flow is $q>0$ cubic metres per hour. A commissioning run at $q=5$ recorded $H=50$ m. The plant then pipes that flow through a nozzle whose jet speed is $v(H)=4\sqrt{H}$ metres per second, so jet speed as a function of flow is the composition $v(q)=v(H(q))$. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The head law is $H(q)=2q^{2}$, and the composed jet-speed law is $v(q)=4\sqrt{2}\,q$.
+STMT 1 [true]: At $q=5$ the jet speed is $20\sqrt{2}$ m/s.
+STMT 2 [true]: Doubling the flow doubles the jet speed.
+STMT 3 [false]: A jet speed of $40\sqrt{2}$ m/s requires flow $20$ m³/h.
+STMT 4 [false]: Head is proportional to jet speed.
+--- EXPL idx=0 len=669 displays=3 ---
+**A.** → True
+
+The commissioning run calibrates the first stage on its own, since the exponent $2$ is given:
+
+$$A\cdot5^{2}=50 \quad\Rightarrow\quad 25A=50 \quad\Rightarrow\quad A=2, \qquad H(q)=2q^{2}$$
+
+Composition then substitutes the head law inside the nozzle law, and the square root pulls the flow out of the square:
+
+$$v(q)=4\sqrt{2q^{2}}=4\sqrt{2}\,\sqrt{q^{2}}=4\sqrt{2}\,q$$
+
+The absolute value is unnecessary because flow is positive. The exponents explain the shape of the result, since the inner $2$ and the outer $1/2$ multiply to $1$:
+
+$$2\cdot\frac{1}{2}=1$$
+
+Both the head law and the composed linear law match the statement, so the statement is True.
+--- EXPL idx=1 len=611 displays=2 ---
+**B.** → True
+
+A composition can be evaluated stage by stage or through the simplified law, and the two routes must agree. Passing through the intermediate head first:
+
+$$H(5)=2\cdot25=50, \qquad v=4\sqrt{50}=4\cdot5\sqrt{2}=20\sqrt{2}$$
+
+Using the composed law directly:
+
+$$v(5)=4\sqrt{2}\cdot5=20\sqrt{2}$$
+
+Numerically that is about $28.28$ m/s, since $\sqrt{2}\approx1.4142$. The agreement is a check on the composition itself, because an error in collecting the constants would show up as a mismatch between the two routes. Jet speed at the commissioning flow is $20\sqrt{2}$ m/s, so the statement is True.
+--- EXPL idx=2 len=572 displays=2 ---
+**C.** → True
+
+The composed map has exponent $1$, so a flow multiplier passes straight through to jet speed:
+
+$$\frac{v(2q)}{v(q)}=\frac{4\sqrt{2}\,(2q)}{4\sqrt{2}\,q}=2$$
+
+Tracking the two stages separately shows why the exponents conspire. Head quadruples, and the nozzle then takes a square root of that:
+
+$$\frac{H(2q)}{H(q)}=2^{2}=4, \qquad \sqrt{4}=2$$
+
+Levels confirm it, since raising the flow from $5$ to $10$ lifts head from $50$ m to $200$ m and jet speed from $20\sqrt{2}$ to $40\sqrt{2}$ m/s. Doubling the flow doubles the jet speed, so the statement is True.
+--- EXPL idx=3 len=626 displays=2 ---
+**D.** → False
+
+Inverting a linear composed law is a single division by its slope:
+
+$$4\sqrt{2}\,q=40\sqrt{2} \quad\Rightarrow\quad q=\frac{40\sqrt{2}}{4\sqrt{2}}=10$$
+
+Working back through the stages gives the same flow. The required head follows from the nozzle law, and then the head law is inverted:
+
+$$H=\left(\frac{40\sqrt{2}}{4}\right)^{2}=200, \qquad 2q^{2}=200 \quad\Rightarrow\quad q=10$$
+
+A flow of $20$ m³/h would deliver $v=80\sqrt{2}$ m/s, twice the target, which is what treating speed as proportional to head rather than to its square root produces. The target speed needs $10$ m³/h, so the statement is False.
+--- EXPL idx=4 len=637 displays=2 ---
+**E.** → False
+
+Proportionality between head and jet speed would mean a constant quotient, so eliminate the flow and inspect the relation directly:
+
+$$q=\frac{v}{4\sqrt{2}}, \qquad H=2\left(\frac{v}{4\sqrt{2}}\right)^{2}=\frac{2v^{2}}{32}=\frac{v^{2}}{16}$$
+
+Head therefore rises with the square of jet speed, so the quotient keeps growing:
+
+$$\frac{H}{v}=\frac{v}{16}$$
+
+The commissioning point and its double show the gap plainly: at $v=20\sqrt{2}$ the head is $50$ m, and at $v=40\sqrt{2}$ it is $200$ m, four times as much for twice the speed. Head is quadratic in jet speed rather than proportional to it, so the statement is False.
+
+===== TASK 60 (1/5) Warehouse Forklift Throughput Under a Staffing Cap =====
+CONTEXT: Forklift throughput follows $T(s)=A s^{0.5}$ pallets per hour, where $s>0$ is the number of drivers on shift. A logged shift with $16$ drivers moved $80$ pallets per hour. Safety rules cap the shift at $36$ drivers. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The throughput law is $T(s)=20\sqrt{s}$.
+STMT 1 [true]: With $36$ drivers the model predicts $120$ pallets per hour.
+STMT 2 [true]: Quadrupling the crew doubles throughput.
+STMT 3 [true]: Reaching $100$ pallets per hour requires $25$ drivers.
+STMT 4 [true]: The safety cap therefore allows at most $120$ pallets per hour.
+--- EXPL idx=0 len=582 displays=2 ---
+**A.** → True
+
+The exponent $0.5$ is supplied by the model, so one logged shift fixes the coefficient. Evaluate the shape factor first, since $16^{0.5}=4$:
+
+$$A\cdot4=80 \quad\Rightarrow\quad A=20, \qquad T(s)=20\sqrt{s}$$
+
+Substituting the logged crew back reproduces the record exactly:
+
+$$T(16)=20\cdot4=80$$
+
+Reading the $80$ pallets per hour as the coefficient would ignore the shape factor $4$ and quadruple every prediction, putting a $36$ driver shift at $480$ pallets per hour instead of a realistic figure. The recovered law is $T(s)=20\sqrt{s}$, so the statement is True.
+--- EXPL idx=1 len=579 displays=2 ---
+**B.** → True
+
+The capped crew is evaluated by substitution, taking the square root first because $36=6^{2}$:
+
+$$T(36)=20\sqrt{36}=20\cdot6=120$$
+
+Scaling from the logged shift confirms the figure, since the crew grows by a factor of $36/16=9/4$ and that factor reaches throughput through the exponent $0.5$:
+
+$$80\cdot\sqrt{\frac{9}{4}}=80\cdot\frac{3}{2}=120$$
+
+The comparison is worth reading closely: adding twenty drivers to the logged shift, more than doubling the crew, lifts output by only half. A full crew of $36$ moves $120$ pallets per hour, so the statement is True.
+--- EXPL idx=2 len=519 displays=2 ---
+**C.** → True
+
+A crew multiplier reaches throughput through the exponent $0.5$, so the coefficient cancels and the starting crew is irrelevant:
+
+$$\frac{T(4s)}{T(s)}=\frac{20\sqrt{4s}}{20\sqrt{s}}=\sqrt{4}=2$$
+
+Levels show the same doubling from the logged shift:
+
+$$T(16)=80, \qquad T(64)=20\cdot8=160$$
+
+The identity holds anywhere on the curve, so a crew of $4$ moving $40$ pallets per hour and a crew of $16$ moving $80$ are another instance of it. Quadrupling the crew doubles throughput, so the statement is True.
+--- EXPL idx=3 len=648 displays=2 ---
+**D.** → True
+
+A throughput target is inverted by dividing out the coefficient and then squaring, since squaring undoes the exponent $0.5$:
+
+$$20\sqrt{s}=100 \quad\Rightarrow\quad \sqrt{s}=5 \quad\Rightarrow\quad s=25$$
+
+Ratio reasoning from the logged shift reaches the same crew, because throughput has to rise by a factor of $100/80=5/4$ and crew size enters as a square:
+
+$$16\cdot\left(\frac{5}{4}\right)^{2}=16\cdot\frac{25}{16}=25$$
+
+A forward check closes the loop, since $20\sqrt{25}=20\cdot5=100$ pallets per hour, and $25$ drivers stays inside the safety cap. Reaching $100$ pallets per hour needs $25$ drivers, so the statement is True.
+--- EXPL idx=4 len=599 displays=2 ---
+**E.** → True
+
+The exponent $0.5$ is positive, so throughput increases with crew size and the largest allowed crew produces the largest allowed output:
+
+$$s_{1}<s_{2} \quad\Rightarrow\quad 20\sqrt{s_{1}}<20\sqrt{s_{2}}$$
+
+The safety cap therefore transfers directly onto throughput, and the ceiling is the value at the capped crew:
+
+$$\max_{0<s\le36}T(s)=T(36)=20\cdot6=120$$
+
+Any output above that would need more than $36$ drivers: $150$ pallets per hour would require $s=(150/20)^{2}=56.25$, well outside the rule. The staffing cap allows at most $120$ pallets per hour, so the statement is True.

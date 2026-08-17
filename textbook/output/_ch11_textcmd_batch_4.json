@@ -1,0 +1,236 @@
+[
+  {
+    "id": "math-11-109",
+    "caseId": "MATH 11.109",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "letter": "C",
+    "statement": "The total interest paid over the life of the loan is approximately \\$105,000.00.",
+    "spans": [
+      "\\text{total interest} = \\text{total paid} - K"
+    ],
+    "min_chars": 874,
+    "text": "**C) The total interest paid over the life of the loan is approximately \\$105,000.00.**  (false)\n\nInterest over the life of the loan is everything paid beyond the amount borrowed:\n\n$$\\text{total interest} = \\text{total paid} - K$$\n\nEight full payments come to\n\n$$8 \\times 25,000 = 200,000.00$$\n\nThe ninth payment clears the year-8 balance:\n\n$$120,000 \\times (1.14)^{8} \\approx 342,310.37$$\n\n$$\\frac{25,000}{0.14}\\bigl[(1.14)^{8} - 1\\bigr] \\approx 330,819.00$$\n\n$$342,310.37 - 330,819.00 = 11,491.37$$\n\n$$11,491.37 \\times 1.14 \\approx 13,100.16$$\n\nSo the borrower pays\n\n$$200,000.00 + 13,100.16 = 213,100.16$$\n\nand the interest inside that is\n\n$$213,100.16 - 120,000.00 = 93,100.16$$\n\nThe claim states about \\$105,000.00:\n\n$$105,000.00 - 93,100.16 = 11,899.84$$\n\nThe true interest bill is about \\$93,100.16, nearly \\$12,000 below the stated figure, so the statement is false."
+  },
+  {
+    "id": "math-11-109",
+    "caseId": "MATH 11.109",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "letter": "D",
+    "statement": "The total amount actually paid over the life of the loan is approximately \\$210,000.00.",
+    "spans": [
+      "\\text{total paid} = 8a + \\text{final payment}"
+    ],
+    "min_chars": 870,
+    "text": "**D) The total amount actually paid over the life of the loan is approximately \\$210,000.00.**  (false)\n\nThe total paid is eight full payments plus a smaller ninth one, so the ninth payment has to be worked out rather than assumed:\n\n$$\\text{total paid} = 8a + \\text{final payment}$$\n\nThe eight full payments give\n\n$$8 \\times 25,000 = 200,000.00$$\n\nThe balance they leave at the end of year 8 is the debt grown forward minus the payments grown forward:\n\n$$120,000 \\times (1.14)^{8} \\approx 342,310.37$$\n\n$$\\frac{25,000}{0.14}\\bigl[(1.14)^{8} - 1\\bigr] \\approx 330,819.00$$\n\n$$342,310.37 - 330,819.00 = 11,491.37$$\n\n$$11,491.37 \\times 1.14 \\approx 13,100.16$$\n\nAdding the pieces:\n\n$$200,000.00 + 13,100.16 = 213,100.16$$\n\nThe claim states about \\$210,000.00:\n\n$$213,100.16 - 210,000.00 = 3,100.16$$\n\nThe company actually pays about \\$213,100.16, so the statement is false."
+  },
+  {
+    "id": "math-11-109",
+    "caseId": "MATH 11.109",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "letter": "E",
+    "statement": "Assuming all 9 payments are full \\$25,000 payments overstates the true total amount paid by more than \\$10,000.",
+    "spans": [
+      "\\text{total paid} \\approx 8 \\times 25,000 + 13,100.16 = 213,100.16"
+    ],
+    "min_chars": 816,
+    "text": "**E) Assuming all 9 payments are full \\$25,000 payments overstates the true total amount paid by more than \\$10,000.**  (true)\n\nThe comparison needs the true total against the total that nine full payments would give.\n\nNine full payments would be\n\n$$9 \\times 25,000 = 225,000.00$$\n\nThe true total uses the smaller ninth payment. Eight full payments leave a balance at the end of year 8 of\n\n$$120,000 \\times (1.14)^{8} - \\frac{25,000}{0.14}\\bigl[(1.14)^{8} - 1\\bigr]$$\n\n$$\\approx 342,310.37 - 330,819.00 = 11,491.37$$\n\n$$11,491.37 \\times 1.14 \\approx 13,100.16$$\n\n$$\\text{total paid} \\approx 8 \\times 25,000 + 13,100.16 = 213,100.16$$\n\nThe overstatement is\n\n$$225,000.00 - 213,100.16 = 11,899.84$$\n\nThe claim requires an overstatement above \\$10,000, and \\$11,899.84 clears it by \\$1,899.84, so the statement is true."
+  },
+  {
+    "id": "math-11-110",
+    "caseId": "MATH 11.110",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "letter": "D",
+    "statement": "The year-end equivalent value of the reserve fund's quarterly deposits made during a single year is \\$1,240.50, and the reserve fund's balance after 3 years is approximately \\$4,066.48.",
+    "spans": [
+      "\\text{year-end value} = D(4 + 1.5r)"
+    ],
+    "min_chars": 931,
+    "text": "**D) The year-end equivalent value of the reserve fund's quarterly deposits made during a single year is \\$1,240.50, and the reserve fund's balance after 3 years is approximately \\$4,066.48.**  (true)\n\nThe reserve deposits land at quarter ends and earn simple interest for the rest of the year, which collapses to a single year-end amount:\n\n$$\\text{year-end value} = D(4 + 1.5r)$$\n\nSubstituting $D = 300$ and the reserve rate $r = 9\\% = 0.09$:\n\n$$1.5 \\times 0.09 = 0.135$$\n\n$$4 + 0.135 = 4.135$$\n\n$$300 \\times 4.135 = 1,240.50$$\n\nThat equivalent deposit then compounds annually like an ordinary annuity:\n\n$$F_N = \\frac{a}{r}\\bigl[(1+r)^{N} - 1\\bigr]$$\n\n$$(1.09)^{3} \\approx 1.295029$$\n\n$$1.295029 - 1 = 0.295029$$\n\n$$\\frac{1,240.50}{0.09} \\approx 13,783.33$$\n\n$$F_3 \\approx 13,783.33 \\times 0.295029$$\n\n$$F_3 \\approx 4,066.48$$\n\nBoth figures in the claim, \\$1,240.50 and \\$4,066.48, match the calculation, so the statement is true."
+  },
+  {
+    "id": "math-11-114",
+    "caseId": "MATH 11.114",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "letter": "D",
+    "statement": "If the return had instead been \\$10,000, with the outlay unchanged, the internal rate of return would exceed 24%.",
+    "spans": [
+      "25\\% - 24\\% = 1 \\text{ percentage point}"
+    ],
+    "min_chars": 577,
+    "text": "**D) If the return had instead been \\$10,000, with the outlay unchanged, the internal rate of return would exceed 24%.**  (true)\n\nFor a one-year project the internal rate of return comes straight from the ratio of return to outlay:\n\n$$r = \\frac{b}{a} - 1$$\n\nSubstituting the unchanged outlay $a = 8,000$ and the larger return $b = 10,000$:\n\n$$r = \\frac{10,000}{8,000} - 1$$\n\n$$r = 1.25 - 1$$\n\n$$r = 0.25 = 25\\%$$\n\nComparing with the threshold in the claim:\n\n$$25\\% - 24\\% = 1 \\text{ percentage point}$$\n\nThe rate clears 24% by a full percentage point, so the statement is true."
+  },
+  {
+    "id": "math-11-115",
+    "caseId": "MATH 11.115",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "letter": "D",
+    "statement": "If the Year 2 return had instead been \\$8,000, with Year 1 unchanged at \\$7,000, the internal rate of return would exceed 13%.",
+    "spans": [
+      "15.87\\% - 13\\% = 2.87 \\text{ percentage points}"
+    ],
+    "min_chars": 834,
+    "text": "**D) If the Year 2 return had instead been \\$8,000, with Year 1 unchanged at \\$7,000, the internal rate of return would exceed 13%.**  (true)\n\nChanging the Year 2 return changes the quadratic's leading coefficient, so the rate has to be solved again:\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$\n\nWith $a_1 = 7,000$ and $a_2 = 8,000$:\n\n$$8,000s^{2} + 7,000s - 12,000 = 0$$\n\n$$8s^{2} + 7s - 12 = 0$$\n\nThe discriminant is\n\n$$7^{2} + 4(8)(12) = 49 + 384 = 433$$\n\n$$\\sqrt{433} \\approx 20.8087$$\n\n$$s = \\frac{-7 + 20.8087}{16} \\approx 0.86304$$\n\n$$r = \\frac{1}{0.86304} - 1 \\approx 0.15872 = 15.87\\%$$\n\nComparing with the threshold in the claim:\n\n$$15.87\\% - 13\\% = 2.87 \\text{ percentage points}$$\n\nThe stronger second-year return lifts the rate to about 15.87%, clearing 13%, so the statement is true."
+  },
+  {
+    "id": "math-11-115",
+    "caseId": "MATH 11.115",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "letter": "E",
+    "statement": "Doubling both returns to \\$14,000 in Year 1 and \\$14,000 in Year 2, with the outlay unchanged at \\$12,000, would result in an internal rate of return of approximately 21.84%.",
+    "spans": [
+      "81.09\\% - 21.84\\% = 59.25 \\text{ percentage points}"
+    ],
+    "min_chars": 1007,
+    "text": "**E) Doubling both returns to \\$14,000 in Year 1 and \\$14,000 in Year 2, with the outlay unchanged at \\$12,000, would result in an internal rate of return of approximately 21.84%.**  (false)\n\nDoubling both returns changes both coefficients of the quadratic, so the rate must be recomputed rather than scaled:\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$\n\nWith $a_1 = a_2 = 14,000$ and the outlay still \\$12,000:\n\n$$14,000s^{2} + 14,000s - 12,000 = 0$$\n\n$$7s^{2} + 7s - 6 = 0$$\n\nThe discriminant is\n\n$$7^{2} + 4(7)(6) = 49 + 168 = 217$$\n\n$$\\sqrt{217} \\approx 14.7309$$\n\n$$s = \\frac{-7 + 14.7309}{14} \\approx 0.55221$$\n\n$$r = \\frac{1}{0.55221} - 1 \\approx 0.81091 = 81.09\\%$$\n\nThe claim names about 21.84%, which is simply twice the original 10.92%:\n\n$$81.09\\% - 21.84\\% = 59.25 \\text{ percentage points}$$\n\nThe true rate is about 81.09%, nearly sixty percentage points above the stated figure, because doubling the returns does not double the rate. The statement is false."
+  },
+  {
+    "id": "math-11-116",
+    "caseId": "MATH 11.116",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "letter": "D",
+    "statement": "If the Year 1 return were \\$9,000 higher, with Year 2 unchanged at \\$15,000, the internal rate of return would exceed 30%.",
+    "spans": [
+      "42.60\\% - 30\\% = 12.60 \\text{ percentage points}"
+    ],
+    "min_chars": 918,
+    "text": "**D) If the Year 1 return were \\$9,000 higher, with Year 2 unchanged at \\$15,000, the internal rate of return would exceed 30%.**  (true)\n\nRaising the Year 1 return changes the middle coefficient of the quadratic, so the rate is solved again from scratch:\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$\n\nA \\$9,000 increase makes the first return $9,000 + 9,000 = 18,000$, with Year 2 still at \\$15,000:\n\n$$15,000s^{2} + 18,000s - 20,000 = 0$$\n\n$$15s^{2} + 18s - 20 = 0$$\n\nThe discriminant is\n\n$$18^{2} + 4(15)(20) = 324 + 1,200 = 1,524$$\n\n$$\\sqrt{1,524} \\approx 39.0384$$\n\n$$s = \\frac{-18 + 39.0384}{30} \\approx 0.70128$$\n\n$$r = \\frac{1}{0.70128} - 1 \\approx 0.42596 = 42.60\\%$$\n\nComparing with the threshold in the claim:\n\n$$42.60\\% - 30\\% = 12.60 \\text{ percentage points}$$\n\nPulling money forward into Year 1 lifts the rate to about 42.60%, well past 30%, so the statement is true."
+  },
+  {
+    "id": "math-11-117",
+    "caseId": "MATH 11.117",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "letter": "C",
+    "statement": "Based on the internal rate of return criterion, Project Y should be preferred over Project X.",
+    "spans": [
+      "15\\% - 12.5\\% = 2.5 \\text{ percentage points}"
+    ],
+    "min_chars": 630,
+    "text": "**C) Based on the internal rate of return criterion, Project Y should be preferred over Project X.**  (false)\n\nThe internal rate of return criterion ranks projects by rate and prefers the higher one, so both rates are needed:\n\n$$r = \\frac{b}{a} - 1$$\n\nProject X:\n\n$$r_X = \\frac{17,250}{15,000} - 1 = 1.15 - 1 = 0.15 = 15\\%$$\n\nProject Y:\n\n$$r_Y = \\frac{24,750}{22,000} - 1 = 1.125 - 1 = 0.125 = 12.5\\%$$\n\nComparing the two:\n\n$$15\\% - 12.5\\% = 2.5 \\text{ percentage points}$$\n\nProject X earns 2.5 percentage points more per dollar committed, so the criterion picks X rather than Y. The claim puts Y ahead, so the statement is false."
+  },
+  {
+    "id": "math-11-117",
+    "caseId": "MATH 11.117",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "letter": "E",
+    "statement": "If Project Y's payoff had instead been \\$25,000, with the outlay unchanged at \\$22,000, its internal rate of return would exceed that of Project X.",
+    "spans": [
+      "15\\% - 13.64\\% = 1.36 \\text{ percentage points}"
+    ],
+    "min_chars": 766,
+    "text": "**E) If Project Y's payoff had instead been \\$25,000, with the outlay unchanged at \\$22,000, its internal rate of return would exceed that of Project X.**  (false)\n\nA larger payoff on the same outlay raises Project Y's rate, so recompute it with the one-year rule:\n\n$$r = \\frac{b}{a} - 1$$\n\nSubstituting the unchanged \\$22,000 outlay and the higher \\$25,000 payoff:\n\n$$r_Y = \\frac{25,000}{22,000} - 1$$\n\n$$\\frac{25,000}{22,000} \\approx 1.136364$$\n\n$$r_Y \\approx 0.136364 = 13.64\\%$$\n\nProject X's rate comes from its own figures:\n\n$$r_X = \\frac{17,250}{15,000} - 1 = 0.15 = 15\\%$$\n\nComparing the two:\n\n$$15\\% - 13.64\\% = 1.36 \\text{ percentage points}$$\n\nEven with the bigger payoff, Project Y stays 1.36 percentage points behind Project X, so the statement is false."
+  },
+  {
+    "id": "math-11-119",
+    "caseId": "MATH 11.119",
+    "kind": "tactical_explanations",
+    "index": 0,
+    "letter": "A",
+    "statement": "The internal rate of return is approximately 14.5%.",
+    "spans": [
+      "14.5\\% - 10.78\\% = 3.72 \\text{ percentage points}"
+    ],
+    "min_chars": 767,
+    "text": "**A) The internal rate of return is approximately 14.5%.**  (false)\n\nThe internal rate of return is the discount rate at which net present value is zero:\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0$$\n\nSubstituting $a_0 = -34,000$, $a_1 = 16,000$, $a_2 = 24,000$ and writing $s = 1/(1+r)$:\n\n$$24,000s^{2} + 16,000s - 34,000 = 0$$\n\nDividing through by 2,000:\n\n$$12s^{2} + 8s - 17 = 0$$\n\nThe discriminant is\n\n$$8^{2} + 4(12)(17) = 64 + 816 = 880$$\n\n$$\\sqrt{880} \\approx 29.665$$\n\n$$s = \\frac{-8 + 29.665}{24} \\approx 0.90270$$\n\n$$r = \\frac{1}{0.90270} - 1 \\approx 0.10778 = 10.78\\%$$\n\nThe claim states about 14.5%:\n\n$$14.5\\% - 10.78\\% = 3.72 \\text{ percentage points}$$\n\nThe true rate is about 10.78%, well short of the stated figure, so the statement is false."
+  },
+  {
+    "id": "math-11-119",
+    "caseId": "MATH 11.119",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "letter": "D",
+    "statement": "If the Year 2 return had instead been \\$20,000, with Year 1 unchanged at \\$16,000, the internal rate of return would exceed the internal rate of return of the original project.",
+    "spans": [
+      "10.78\\% - 3.75\\% = 7.03 \\text{ percentage points}"
+    ],
+    "min_chars": 1160,
+    "text": "**D) If the Year 2 return had instead been \\$20,000, with Year 1 unchanged at \\$16,000, the internal rate of return would exceed the internal rate of return of the original project.**  (false)\n\nBoth versions of the project need their own rate, since changing a cash flow changes the whole equation:\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$\n\nWith the original returns:\n\n$$24,000s^{2} + 16,000s - 34,000 = 0 \\implies 12s^{2} + 8s - 17 = 0$$\n\n$$\\sqrt{64 + 816} = \\sqrt{880} \\approx 29.665, \\qquad s \\approx \\frac{-8 + 29.665}{24} \\approx 0.90270$$\n\n$$r \\approx \\frac{1}{0.90270} - 1 \\approx 0.10778 = 10.78\\%$$\n\nWith the Year 2 return cut to \\$20,000:\n\n$$20,000s^{2} + 16,000s - 34,000 = 0 \\implies 10s^{2} + 8s - 17 = 0$$\n\n$$8^{2} + 4(10)(17) = 64 + 680 = 744, \\qquad \\sqrt{744} \\approx 27.276$$\n\n$$s = \\frac{-8 + 27.276}{20} \\approx 0.96382$$\n\n$$r = \\frac{1}{0.96382} - 1 \\approx 0.03754 = 3.75\\%$$\n\nComparing the two rates:\n\n$$10.78\\% - 3.75\\% = 7.03 \\text{ percentage points}$$\n\nCutting \\$4,000 from the second year drags the rate down by about seven percentage points rather than lifting it, so the statement is false."
+  },
+  {
+    "id": "math-11-119",
+    "caseId": "MATH 11.119",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "letter": "E",
+    "statement": "Reducing the initial outlay to \\$30,000, with returns unchanged at \\$16,000 and \\$24,000, would lower the internal rate of return.",
+    "spans": [
+      "20\\% - 10.78\\% = 9.22 \\text{ percentage points}"
+    ],
+    "min_chars": 914,
+    "text": "**E) Reducing the initial outlay to \\$30,000, with returns unchanged at \\$16,000 and \\$24,000, would lower the internal rate of return.**  (false)\n\nA smaller outlay changes the constant term of the quadratic, so the rate is solved again:\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$\n\nWith the outlay reduced to \\$30,000 and the returns unchanged:\n\n$$24,000s^{2} + 16,000s - 30,000 = 0$$\n\nDividing through by 2,000:\n\n$$12s^{2} + 8s - 15 = 0$$\n\nThe discriminant works out exactly:\n\n$$8^{2} + 4(12)(15) = 64 + 720 = 784 = 28^{2}$$\n\n$$s = \\frac{-8 + 28}{24} = \\frac{20}{24} \\approx 0.83333$$\n\n$$r = \\frac{1}{0.83333} - 1 = 0.20 = 20\\%$$\n\nThe original project earns about 10.78%, so comparing:\n\n$$20\\% - 10.78\\% = 9.22 \\text{ percentage points}$$\n\nPaying less for the same returns raises the rate by more than nine percentage points instead of lowering it, so the statement is false."
+  },
+  {
+    "id": "math-11-121",
+    "caseId": "MATH 11.121",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "letter": "D",
+    "statement": "Doubling both returns to \\$68,000 in Year 1 and \\$84,000 in Year 2, with the outlay unchanged at \\$65,000, would more than double the internal rate of return.",
+    "spans": [
+      "77.44\\% - 21.38\\% = 56.06 \\text{ percentage points}"
+    ],
+    "min_chars": 979,
+    "text": "**D) Doubling both returns to \\$68,000 in Year 1 and \\$84,000 in Year 2, with the outlay unchanged at \\$65,000, would more than double the internal rate of return.**  (true)\n\nDoubling both returns changes two coefficients of the quadratic, so the rate has to be recomputed rather than scaled:\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$\n\nWith $a_1 = 68,000$, $a_2 = 84,000$ and the outlay still \\$65,000:\n\n$$84,000s^{2} + 68,000s - 65,000 = 0$$\n\n$$84s^{2} + 68s - 65 = 0$$\n\nThe discriminant is\n\n$$68^{2} + 4(84)(65) = 4,624 + 21,840 = 26,464$$\n\n$$\\sqrt{26,464} \\approx 162.678$$\n\n$$s = \\frac{-68 + 162.678}{168} \\approx 0.56356$$\n\n$$r = \\frac{1}{0.56356} - 1 \\approx 0.77443 = 77.44\\%$$\n\nDouble the original rate of about 10.69% would be\n\n$$2 \\times 10.69\\% = 21.38\\%$$\n\nComparing:\n\n$$77.44\\% - 21.38\\% = 56.06 \\text{ percentage points}$$\n\nThe new rate clears twice the original by more than fifty percentage points, so the statement is true."
+  },
+  {
+    "id": "math-11-121",
+    "caseId": "MATH 11.121",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "letter": "E",
+    "statement": "If the outlay were reduced to \\$60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project.",
+    "spans": [
+      "16.67\\% - 10.69\\% = 5.98 \\text{ percentage points}"
+    ],
+    "min_chars": 994,
+    "text": "**E) If the outlay were reduced to \\$60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project.**  (false)\n\nCutting the outlay changes the constant term of the quadratic, so the rate is solved again from scratch:\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$\n\nWith the outlay at \\$60,000 and the returns unchanged:\n\n$$42,000s^{2} + 34,000s - 60,000 = 0$$\n\nDividing through by 1,000:\n\n$$42s^{2} + 34s - 60 = 0$$\n\nThe discriminant works out exactly:\n\n$$34^{2} + 4(42)(60) = 1,156 + 10,080 = 11,236 = 106^{2}$$\n\n$$s = \\frac{-34 + 106}{84} = \\frac{72}{84} \\approx 0.857143$$\n\n$$r = \\frac{1}{0.857143} - 1 \\approx 0.16667 = 16.67\\%$$\n\nThe original project earns about 10.69%, so comparing:\n\n$$16.67\\% - 10.69\\% = 5.98 \\text{ percentage points}$$\n\nPaying \\$5,000 less for the same rental income lifts the rate by about six percentage points instead of lowering it, so the statement is false."
+  },
+  {
+    "id": "math-11-122",
+    "caseId": "MATH 11.122",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "letter": "E",
+    "statement": "If Option 2's Year 2 return were removed entirely, leaving only $a_0 = -\\$50,000$ and $a_1 = \\$6,000$, its internal rate of return would be even lower than Option 2's own internal rate of return.",
+    "spans": [
+      "58.84 - 88 = -29.16 \\text{ percentage points}"
+    ],
+    "min_chars": 856,
+    "text": "**E) If Option 2's Year 2 return were removed entirely, leaving only $a_0 = -\\$50,000$ and $a_1 = \\$6,000$, its internal rate of return would be even lower than Option 2's own internal rate of return.**  (true)\n\nRemoving the second return leaves a one-year project, whose rate comes from the ratio of return to outlay:\n\n$$-a + \\frac{b}{1+r} = 0 \\implies r = \\frac{b}{a} - 1$$\n\nSubstituting the \\$50,000 outlay and the single \\$6,000 return:\n\n$$r = \\frac{6,000}{50,000} - 1$$\n\n$$r = 0.12 - 1$$\n\n$$r = -0.88 = -88\\%$$\n\nOption 2 keeps both returns and earns about $-58.84\\%$. Comparing the two:\n\n$$-88\\% < -58.84\\%$$\n\n$$58.84 - 88 = -29.16 \\text{ percentage points}$$\n\nDropping the second \\$6,000 pushes the rate about 29 percentage points further into negative territory, so the stripped-down version is indeed the lower of the two and the statement is true."
+  },
+  {
+    "id": "math-11-123",
+    "caseId": "MATH 11.123",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "letter": "C",
+    "statement": "Based on the internal rate of return criterion, Design B should be preferred over Design A.",
+    "spans": [
+      "16\\% - 11.04\\% = 4.96 \\text{ percentage points}"
+    ],
+    "min_chars": 784,
+    "text": "**C) Based on the internal rate of return criterion, Design B should be preferred over Design A.**  (true)\n\nThe internal rate of return criterion picks the design with the higher rate, so both rates are needed.\n\nDesign A solves the two-year equation with $s = 1/(1+r)$:\n\n$$88,000s^{2} + 54,000s - 120,000 = 0 \\implies 44s^{2} + 27s - 60 = 0$$\n\n$$\\sqrt{729 + 10,560} = \\sqrt{11,289} \\approx 106.250$$\n\n$$s \\approx \\frac{-27 + 106.250}{88} \\approx 0.90057, \\qquad r_A \\approx 0.11041 = 11.04\\%$$\n\nDesign B is a one-year project:\n\n$$r_B = \\frac{81,200}{70,000} - 1 = 0.16 = 16\\%$$\n\nComparing the two:\n\n$$16\\% - 11.04\\% = 4.96 \\text{ percentage points}$$\n\nDesign B earns nearly five percentage points more per dollar committed, so the criterion prefers Design B and the statement is true."
+  },
+  {
+    "id": "math-11-123",
+    "caseId": "MATH 11.123",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "letter": "E",
+    "statement": "If Design A's Year 1 return were \\$10,000 lower, with Year 2 unchanged at \\$88,000, its internal rate of return would still exceed Design B's 16%.",
+    "spans": [
+      "16\\% - 5.91\\% = 10.09 \\text{ percentage points}"
+    ],
+    "min_chars": 978,
+    "text": "**E) If Design A's Year 1 return were \\$10,000 lower, with Year 2 unchanged at \\$88,000, its internal rate of return would still exceed Design B's 16%.**  (false)\n\nA smaller Year 1 return changes the middle coefficient, so Design A's rate must be solved again:\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^{2}} = 0, \\qquad s = \\frac{1}{1+r}$$\n\nWith the first return cut by \\$10,000 to $54,000 - 10,000 = 44,000$ and Year 2 unchanged:\n\n$$88,000s^{2} + 44,000s - 120,000 = 0$$\n\nDividing through by 4,000:\n\n$$22s^{2} + 11s - 30 = 0$$\n\nThe discriminant is\n\n$$11^{2} + 4(22)(30) = 121 + 2,640 = 2,761$$\n\n$$\\sqrt{2,761} \\approx 52.545$$\n\n$$s = \\frac{-11 + 52.545}{44} \\approx 0.94420$$\n\n$$r = \\frac{1}{0.94420} - 1 \\approx 0.05909 = 5.91\\%$$\n\nComparing with Design B's rate:\n\n$$16\\% - 5.91\\% = 10.09 \\text{ percentage points}$$\n\nThe weakened version of Design A earns about 5.91%, roughly ten percentage points below Design B's 16%, so it does not exceed it and the statement is false."
+  }
+]

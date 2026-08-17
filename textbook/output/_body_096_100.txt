@@ -1,0 +1,518 @@
+@@@96A
+Deal 1 pays a level amount at the end of every year forever, which is a plain perpetuity valued at the payment divided by the required return:
+
+$$P_1 = \frac{a}{r}$$
+
+The royalty stream pays $a = \$18,000$ per year and the musician requires $r = 10\% = 0.10$:
+
+$$P_1 = \frac{18,000}{0.10}$$
+
+$$P_1 = \$180,000.00$$
+
+A purchase is a good buy when the fair value clears the asking price. Comparing with the \$170,000 price:
+
+$$180,000.00 - 170,000.00 = \$10,000.00$$
+
+The stream is worth \$10,000.00 more than it costs, so buying it at \$170,000 is worthwhile and the statement is true.
+@@@96B
+Deal 2 pays a growing stream forever, so its fair value is next year's payment divided by the spread between the required return and the growth rate:
+
+$$P_2 = \frac{a_1}{r - g}$$
+
+The stream starts at $a_1 = \$14,000$ next year and grows at $g = 4\% = 0.04$, with a required return of $r = 10\% = 0.10$:
+
+$$r - g = 0.10 - 0.04 = 0.06$$
+
+$$P_2 = \frac{14,000}{0.06}$$
+
+$$P_2 \approx \$233,333.33$$
+
+Subtracting the asking price gives the cushion:
+
+$$233,333.33 - 170,000.00 = \$63,333.33$$
+
+The claim requires a cushion above \$60,000.00, and \$63,333.33 clears it by \$3,333.33, so the statement is true.
+@@@96C
+The margin of safety on each deal is its fair value minus the \$170,000 asking price, so both fair values are needed.
+
+Deal 1 is a level perpetuity:
+
+$$P_1 = \frac{18,000}{0.10} = \$180,000.00$$
+
+$$180,000.00 - 170,000.00 = \$10,000.00$$
+
+Deal 2 is a growing perpetuity with spread $0.10 - 0.04 = 0.06$:
+
+$$P_2 = \frac{14,000}{0.06} \approx \$233,333.33$$
+
+$$233,333.33 - 170,000.00 = \$63,333.33$$
+
+Comparing the two cushions:
+
+$$63,333.33 - 10,000.00 = \$53,333.33$$
+
+Deal 2 carries the larger margin by \$53,333.33, so it is Deal 2 rather than Deal 1 that offers more protection, and the statement is false.
+@@@96D
+Only the spread in the denominator changes when the growth assumption is reduced:
+
+$$P_2' = \frac{a_1}{r - g'}$$
+
+Substituting the unchanged \$14,000 first-year royalty with $g' = 1\% = 0.01$ and the required return still at 10%:
+
+$$r - g' = 0.10 - 0.01 = 0.09$$
+
+$$P_2' = \frac{14,000}{0.09}$$
+
+$$P_2' \approx \$155,555.56$$
+
+Comparing this fair value with the asking price:
+
+$$170,000.00 - 155,555.56 = \$14,444.44$$
+
+At only 1% growth the stream is worth \$14,444.44 less than the seller is asking, so its fair value does fall below the price and the statement is true.
+@@@96E
+Both deals are perpetuities, but they use different formulas because only one of them grows.
+
+Deal 1 is level:
+
+$$P_1 = \frac{18,000}{0.10}$$
+
+$$P_1 = \$180,000.00$$
+
+Deal 2 grows at 4% per year, so the denominator is the spread:
+
+$$P_2 = \frac{14,000}{0.10 - 0.04} = \frac{14,000}{0.06}$$
+
+$$P_2 \approx \$233,333.33$$
+
+Comparing the two fair values:
+
+$$233,333.33 - 180,000.00 = \$53,333.33$$
+
+Deal 2 is worth \$53,333.33 more than Deal 1, even though its first payment is the smaller of the two, because perpetual growth lifts every later payment. The claim puts Deal 1 ahead, so the statement is false.
+@@@97A
+Under continuous compounding a future amount is brought back to today by multiplying it by the exponential discount factor:
+
+$$S_0 = S(t)\,e^{-rt}$$
+
+The company needs $S(t) = \$250,000$ in $t = 12$ years at a nominal rate of $r = 5.5\% = 0.055$:
+
+$$rt = 0.055 \times 12 = 0.66$$
+
+$$S_0 = 250,000\,e^{-0.66}$$
+
+$$e^{-0.66} \approx 0.516851$$
+
+$$S_0 \approx 250,000 \times 0.516851$$
+
+$$S_0 \approx \$129,212.83$$
+
+The claim gives about \$129,213.75, and the computed deposit of \$129,212.83 agrees with it to within a dollar on a six-figure amount, so the statement is true.
+@@@97B
+Two present values must be computed and compared. Under continuous compounding the discount factor is exponential:
+
+$$S_0 = S(t)\,e^{-rt}$$
+
+$$S_0 = 250,000\,e^{-0.66} \approx 250,000 \times 0.516851 \approx \$129,212.83$$
+
+Under ordinary annual compounding the discount factor is a power of one plus the rate:
+
+$$S_0^{\text{ann}} = \frac{S(t)}{(1+r)^{t}}$$
+
+$$(1.055)^{12} \approx 1.901207$$
+
+$$S_0^{\text{ann}} \approx \frac{250,000}{1.901207}$$
+
+$$S_0^{\text{ann}} \approx \$131,495.38$$
+
+Comparing the two deposits:
+
+$$131,495.38 - 129,212.83 = \$2,282.55$$
+
+Continuous compounding works the money harder, so it needs \$2,282.55 less today to reach the same \$250,000 target. The continuous figure is the lower one, and the claim calls it higher, so the statement is false.
+@@@97C
+The gap is the annual-compounding deposit minus the continuous-compounding deposit, so compute both.
+
+Annual compounding at 5.5% for 12 years:
+
+$$(1.055)^{12} \approx 1.901207$$
+
+$$S_0^{\text{ann}} \approx \frac{250,000}{1.901207} \approx \$131,495.38$$
+
+Continuous compounding at the same nominal rate:
+
+$$e^{-0.055 \times 12} = e^{-0.66} \approx 0.516851$$
+
+$$S_0 \approx 250,000 \times 0.516851 \approx \$129,212.83$$
+
+The difference between them is
+
+$$131,495.38 - 129,212.83 = \$2,282.55$$
+
+The claim states about \$4,280.35:
+
+$$4,280.35 - 2,282.55 = \$1,997.80$$
+
+The stated gap is nearly double the true gap of about \$2,282.55, so the statement is false.
+@@@97D
+Discounting is exponential in time, so cutting the horizon in half does not cut the required deposit in half. Recompute with the same formula:
+
+$$S_0' = S(t)\,e^{-rt}$$
+
+With $t = 6$ years at $r = 0.055$:
+
+$$rt = 0.055 \times 6 = 0.33$$
+
+$$S_0' = 250,000\,e^{-0.33}$$
+
+$$e^{-0.33} \approx 0.718924$$
+
+$$S_0' \approx 250,000 \times 0.718924$$
+
+$$S_0' \approx \$179,730.93$$
+
+Half of the twelve-year deposit is
+
+$$\frac{129,213.75}{2} = \$64,606.88$$
+
+Comparing:
+
+$$179,730.93 - 64,606.88 = \$115,124.05$$
+
+With only six years to grow, the money needs a much larger head start, so the deposit lands \$115,124.05 above half of the twelve-year figure rather than below it, and the statement is false.
+@@@97E
+The one-year discount factor under continuous compounding is the exponential factor evaluated at $t = 1$:
+
+$$\text{factor} = e^{-r}$$
+
+Substituting the nominal rate $r = 0.055$:
+
+$$e^{-0.055} \approx 0.946485$$
+
+$$0.946485 \approx 0.9465$$
+
+The share of value given up over that year is one minus the factor:
+
+$$1 - 0.9465 = 0.0535$$
+
+$$0.0535 = 5.35\%$$
+
+So a dollar due one year from now is worth about 94.65 cents today, and roughly 5.35% of it is lost to one year of discounting. Both figures in the claim match the calculation, so the statement is true.
+@@@98A
+A lump sum growing under continuous compounding is multiplied by the exponential growth factor:
+
+$$S = P\,e^{rt}$$
+
+The company sets aside $P = \$75,000$ at a nominal rate of $r = 6.25\% = 0.0625$ for $t = 9$ years:
+
+$$rt = 0.0625 \times 9 = 0.5625$$
+
+$$S = 75,000\,e^{0.5625}$$
+
+$$e^{0.5625} \approx 1.755055$$
+
+$$S \approx 75,000 \times 1.755055$$
+
+$$S \approx \$131,629.10$$
+
+The claim gives about \$131,629.13, and the calculation returns \$131,629.10, a match to within a few cents, so the statement is true.
+@@@98B
+The annuity strategy pays a fixed amount at the end of each year, so its accumulated value uses the ordinary annuity future-value formula:
+
+$$F_n = \frac{a}{r}\bigl[(1+r)^{n} - 1\bigr]$$
+
+Substituting $a = \$8,333.33$, $r = 0.0625$ and $n = 9$:
+
+$$(1.0625)^{9} \approx 1.725681$$
+
+$$1.725681 - 1 = 0.725681$$
+
+$$\frac{8,333.33}{0.0625} = 133,333.28$$
+
+$$F_9 \approx 133,333.28 \times 0.725681$$
+
+$$F_9 \approx \$96,757.39$$
+
+The lump sum under continuous compounding grows to
+
+$$75,000\,e^{0.5625} \approx \$131,629.10$$
+
+Comparing the two:
+
+$$131,629.10 - 96,757.39 = \$34,871.71$$
+
+Both plans put in \$75,000 in total, yet the annuity ends \$34,871.71 lower, so the statement is true.
+@@@98C
+The gap is the lump-sum result minus the annuity result, so compute each with its own formula.
+
+Continuous growth of the lump sum:
+
+$$S = 75,000\,e^{0.0625 \times 9} = 75,000\,e^{0.5625}$$
+
+$$S \approx 75,000 \times 1.755055 \approx \$131,629.10$$
+
+Future value of nine year-end deposits:
+
+$$F_9 = \frac{8,333.33}{0.0625}\bigl[(1.0625)^{9} - 1\bigr]$$
+
+$$F_9 \approx 133,333.28 \times 0.725681 \approx \$96,757.39$$
+
+The difference is
+
+$$131,629.10 - 96,757.39 = \$34,871.71$$
+
+The claim requires a gap above \$30,000.00, and \$34,871.71 clears that threshold by \$4,871.71, so the statement is true.
+@@@98D
+The claim is about timing, and the deposit-by-deposit arithmetic shows it directly. Each annuity deposit grows for only the years remaining after it is paid:
+
+$$\text{value at year } 9 = 8,333.33 \times (1.0625)^{9-k}$$
+
+The first deposit, paid at the end of year 1, has eight years left to compound:
+
+$$(1.0625)^{8} \approx 1.624170$$
+
+$$8,333.33 \times 1.624170 \approx \$13,534.75$$
+
+The last deposit, paid at the end of year 9, has no time left at all:
+
+$$8,333.33 \times (1.0625)^{0} = \$8,333.33$$
+
+The lump sum, by contrast, has the whole \$75,000 working for all nine years:
+
+$$75,000\,e^{0.5625} \approx \$131,629.10$$
+
+Adding the nine staggered deposits gives only \$96,757.39, so the \$34,871.71 shortfall comes from the later deposits arriving with almost no time to grow. The claim describes exactly this mechanism, so the statement is true.
+@@@98E
+A lump sum under discrete annual compounding grows by the same factor once per year:
+
+$$S = P(1+r)^{n}$$
+
+Substituting $P = \$75,000$, $r = 0.0625$ and $n = 9$:
+
+$$(1.0625)^{9} \approx 1.725681$$
+
+$$S \approx 75,000 \times 1.725681$$
+
+$$S \approx \$129,426.05$$
+
+The annuity strategy accumulates
+
+$$F_9 = \frac{8,333.33}{0.0625}\bigl[(1.0625)^{9} - 1\bigr] \approx \$96,757.39$$
+
+Comparing the two:
+
+$$129,426.05 - 96,757.39 = \$32,668.66$$
+
+The single discrete lump sum finishes \$32,668.66 above the annuity, so it does exceed the annuity result. It still trails the continuous version of the same lump sum,
+
+$$75,000\,e^{0.5625} \approx \$131,629.10$$
+
+$$131,629.10 - 129,426.05 = \$2,203.05$$
+
+since compounding once a year credits interest less often than compounding continuously, but that gap of \$2,203.05 is small next to the \$32,668.66 advantage over the annuity. The statement is true.
+@@@99A
+Lease payments made at the beginning of each year form an annuity due. Value the ordinary annuity first, then shift every payment one period earlier by multiplying by $(1+r)$:
+
+$$P_{\text{ord}} = \frac{a}{r}\Bigl[1 - \frac{1}{(1+r)^{n}}\Bigr], \qquad P_{\text{due}} = P_{\text{ord}}(1+r)$$
+
+Substituting $a = \$4,200$, $r = 8\% = 0.08$ and $n = 5$:
+
+$$(1.08)^{5} \approx 1.469328$$
+
+$$\frac{1}{1.469328} \approx 0.680583$$
+
+$$1 - 0.680583 = 0.319417$$
+
+$$\frac{4,200}{0.08} = 52,500$$
+
+$$P_{\text{ord}} \approx 52,500 \times 0.319417 \approx \$16,769.38$$
+
+$$P_{\text{due}} \approx 16,769.38 \times 1.08 \approx \$18,110.93$$
+
+The claim gives about \$18,110.94, and the calculation returns \$18,110.93, so the statement is true.
+@@@99B
+The future value of an ordinary annuity accumulates each payment to the final date, and the annuity due earns one extra period of interest on every payment:
+
+$$F_{\text{ord}} = \frac{a}{r}\bigl[(1+r)^{n} - 1\bigr], \qquad F_{\text{due}} = F_{\text{ord}}(1+r)$$
+
+Substituting $a = \$4,200$, $r = 0.08$ and $n = 5$:
+
+$$(1.08)^{5} \approx 1.469328$$
+
+$$1.469328 - 1 = 0.469328$$
+
+$$\frac{4,200}{0.08} = 52,500$$
+
+$$F_{\text{ord}} \approx 52,500 \times 0.469328 \approx \$24,639.72$$
+
+$$F_{\text{due}} \approx 24,639.72 \times 1.08 \approx \$26,610.90$$
+
+The claim states about \$27,610.90:
+
+$$27,610.90 - 26,610.90 = \$1,000.00$$
+
+The stated figure sits exactly \$1,000.00 above the correct \$26,610.90, so the statement is false.
+@@@99C
+Money left to grow under continuous compounding is multiplied by the exponential growth factor:
+
+$$S = P\,e^{rt}$$
+
+Substituting the separate investment of $P = \$20,000$ at a nominal $r = 6\% = 0.06$ for $t = 7$ years:
+
+$$rt = 0.06 \times 7 = 0.42$$
+
+$$S = 20,000\,e^{0.42}$$
+
+$$e^{0.42} \approx 1.521962$$
+
+$$S \approx 20,000 \times 1.521962$$
+
+$$S \approx \$30,439.23$$
+
+The claim states about \$31,439.24:
+
+$$31,439.24 - 30,439.23 = \$1,000.01$$
+
+The stated figure overshoots the correct \$30,439.23 by about \$1,000, so the statement is false.
+@@@99D
+Two present values are needed: the perpetuity and the five-year annuity due.
+
+The maintenance reserve pays a level amount forever, so it is a plain perpetuity:
+
+$$P_{\text{perp}} = \frac{a}{r} = \frac{3,000}{0.08}$$
+
+$$P_{\text{perp}} = \$37,500.00$$
+
+The lease payments are made at the beginning of each year, so value the ordinary annuity and shift it forward:
+
+$$P_{\text{ord}} = \frac{4,200}{0.08}\Bigl[1 - \frac{1}{(1.08)^{5}}\Bigr] \approx 52,500 \times 0.319417 \approx \$16,769.38$$
+
+$$P_{\text{due}} \approx 16,769.38 \times 1.08 \approx \$18,110.93$$
+
+Double the lease present value is
+
+$$2 \times 18,110.93 = \$36,221.86$$
+
+Comparing:
+
+$$37,500.00 - 36,221.86 = \$1,278.14$$
+
+The perpetuity requires \$1,278.14 more than double the lease value, so it is not less than double and the statement is false.
+@@@99E
+One figure comes from continuous growth and the other from a perpetuity, so compute each on its own terms.
+
+The separate investment grows continuously:
+
+$$S = P\,e^{rt} = 20,000\,e^{0.06 \times 7}$$
+
+$$e^{0.42} \approx 1.521962$$
+
+$$S \approx 20,000 \times 1.521962 \approx \$30,439.23$$
+
+The maintenance perpetuity pays \$3,000 forever at 8%:
+
+$$P_{\text{perp}} = \frac{3,000}{0.08} = \$37,500.00$$
+
+Comparing the two:
+
+$$37,500.00 - 30,439.23 = \$7,060.77$$
+
+After seven years the continuous investment is still \$7,060.77 short of the perpetuity's present value, so it is the smaller of the two and the statement is false.
+@@@100A
+Component 1 grows under continuous compounding, so it is multiplied by the exponential growth factor:
+
+$$S = P\,e^{rt}$$
+
+Substituting $P = \$150,000$, $r = 5\% = 0.05$ and $t = 10$ years:
+
+$$rt = 0.05 \times 10 = 0.50$$
+
+$$S = 150,000\,e^{0.50}$$
+
+$$e^{0.50} \approx 1.648721$$
+
+$$S \approx 150,000 \times 1.648721$$
+
+$$S \approx \$247,308.19$$
+
+The claim gives about \$247,308.20, and the calculation returns \$247,308.19, so the statement is true.
+@@@100B
+Component 2 asks what single deposit today grows to a target under discrete annual compounding, which reverses the compounding formula:
+
+$$x = \frac{A}{(1+r)^{n}}$$
+
+Substituting the target $A = \$80,000$, the rate $r = 6\% = 0.06$ and $n = 6$ years:
+
+$$(1.06)^{6} \approx 1.418519$$
+
+$$x \approx \frac{80,000}{1.418519}$$
+
+$$x \approx \$56,396.84$$
+
+The claim states about \$57,396.85:
+
+$$57,396.85 - 56,396.84 = \$1,000.01$$
+
+The stated deposit is about \$1,000 larger than the deposit actually required, so the statement is false.
+@@@100C
+Component 3 is an ordinary annuity of equal year-end receipts, valued with the annuity present-value formula:
+
+$$P_n = \frac{a}{r}\Bigl[1 - \frac{1}{(1+r)^{n}}\Bigr]$$
+
+Substituting $a = \$10,000$, $r = 7\% = 0.07$ and $n = 12$:
+
+$$(1.07)^{12} \approx 2.252192$$
+
+$$\frac{1}{2.252192} \approx 0.444012$$
+
+$$1 - 0.444012 = 0.555988$$
+
+$$\frac{10,000}{0.07} \approx 142,857.14$$
+
+$$P_{12} \approx 142,857.14 \times 0.555988$$
+
+$$P_{12} \approx \$79,426.86$$
+
+The claim gives about \$79,429.40, which differs from the computed \$79,426.86 by about \$2.54 on a settlement worth nearly \$80,000, so the stated figure is correct as an approximation and the statement is true.
+@@@100D
+Component 4 is a growing perpetuity, valued as next year's payment divided by the spread between the required return and the growth rate:
+
+$$P = \frac{a_1}{r - g}$$
+
+Substituting the scholarship payment $a_1 = \$5,000$ next year, growth $g = 2\% = 0.02$ and required return $r = 7\% = 0.07$:
+
+$$r - g = 0.07 - 0.02 = 0.05$$
+
+$$P = \frac{5,000}{0.05}$$
+
+$$P = \$100,000.00$$
+
+The claim states exactly \$100,000.00, and the calculation returns exactly \$100,000.00 because \$5,000 divided by 0.05 is a clean figure, so the statement is true.
+@@@100E
+The comparison adds four present-day amounts, each computed with its own formula.
+
+Component 1 is the \$150,000 invested today, so it enters at face value.
+
+Component 2 is the deposit needed today to reach \$80,000 in six years:
+
+$$x = \frac{80,000}{(1.06)^{6}} \approx \frac{80,000}{1.418519} \approx \$56,396.84$$
+
+Component 3 is the present value of twelve year-end receipts of \$10,000 at 7%:
+
+$$P_{12} = \frac{10,000}{0.07}\Bigl[1 - \frac{1}{(1.07)^{12}}\Bigr] \approx 142,857.14 \times 0.555988 \approx \$79,426.86$$
+
+Component 4 is the growing perpetuity:
+
+$$P = \frac{5,000}{0.07 - 0.02} = \$100,000.00$$
+
+Adding the four:
+
+$$150,000.00 + 56,396.84 + 79,426.86 + 100,000.00$$
+
+$$= \$385,823.70$$
+
+Comparing with the threshold in the claim:
+
+$$500,000.00 - 385,823.70 = \$114,176.30$$
+
+The plan commits about \$385,823.70 today, which is \$114,176.30 below \$500,000.00 rather than above it, so the statement is false.

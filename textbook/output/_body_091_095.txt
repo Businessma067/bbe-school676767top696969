@@ -1,0 +1,476 @@
+@@@91A
+A perpetuity pays a fixed amount at the end of every period forever. Its value at the moment one full period before the first payment is the payment divided by the periodic interest rate:
+
+$$V = \frac{a}{r}$$
+
+The endowment pays $a = \$10,000$ at the end of each year and the fund earns $r = 6\% = 0.06$ per year. The first payment arrives at the end of year 5, so the formula measures the stream one year earlier, at the end of year 4:
+
+$$V_4 = \frac{10,000}{0.06}$$
+
+$$V_4 = \$166,666.67$$
+
+The claim puts the year-4 value at about \$166,666.67, and the calculation returns \$166,666.67, so the statement is true.
+@@@91B
+A value dated at a future point is moved to today by dividing it by the growth factor for the years in between:
+
+$$PV_0 = \frac{V_k}{(1+r)^{k}}$$
+
+The perpetuity formula values the stream one period before its first payment, so with payments starting at the end of year 5 the stream is worth
+
+$$V_4 = \frac{10,000}{0.06} = \$166,666.67$$
+
+as of the end of year 4. That date sits $k = 4$ years ahead of today, and the fund earns $r = 0.06$:
+
+$$PV_0 = \frac{166,666.67}{(1.06)^{4}}$$
+
+$$(1.06)^{4} \approx 1.262477$$
+
+$$PV_0 \approx \frac{166,666.67}{1.262477}$$
+
+$$PV_0 \approx \$132,015.61$$
+
+The claim gives \$132,015.61 as today's required donation, and the calculation returns \$132,015.61, so the statement is true.
+@@@91C
+An ordinary perpetuity whose first payment falls at the end of year 1 is already valued at today's date by the perpetuity formula, with no further discounting needed:
+
+$$P_0 = \frac{a}{r}$$
+
+Substituting the \$10,000 annual payment and the 6% rate:
+
+$$P_0 = \frac{10,000}{0.06}$$
+
+$$P_0 = \$166,666.67$$
+
+The deferred version takes that same year-4 value and pushes it back four years:
+
+$$PV_0 = \frac{166,666.67}{(1.06)^{4}} \approx \$132,015.61$$
+
+Comparing the two figures:
+
+$$166,666.67 - 132,015.61 = \$34,651.06$$
+
+Starting payments at the end of year 1 instead of year 5 raises today's value by \$34,651.06, so the immediate perpetuity is worth more than the deferred \$132,015.61, not less. The claim says it would be lower, so the statement is false.
+@@@91D
+Value the perpetuity one period before its first payment, then discount that value back to today:
+
+$$PV_0 = \frac{a/r}{(1+r)^{k}}$$
+
+With the first payment moved to the end of year 9, the perpetuity is valued at the end of year 8, so $k = 8$ while the stream itself is unchanged:
+
+$$\frac{a}{r} = \frac{10,000}{0.06} = \$166,666.67$$
+
+$$PV_0' = \frac{166,666.67}{(1.06)^{8}}$$
+
+$$(1.06)^{8} \approx 1.593848$$
+
+$$PV_0' \approx \frac{166,666.67}{1.593848}$$
+
+$$PV_0' \approx \$104,568.80$$
+
+Half of the four-year-deferred value is
+
+$$\frac{132,015.61}{2} = \$66,007.81$$
+
+Comparing the two:
+
+$$104,568.80 - 66,007.81 = \$38,561.00$$
+
+Four extra years of deferral do cut today's value, but it still sits \$38,561.00 above half of \$132,015.61, so the statement is false.
+@@@91E
+The deferred present value is the year-4 value divided by the four-year growth factor, so the ratio of the two is exactly the four-year discount factor:
+
+$$\frac{PV_0}{V_4} = \frac{V_4/(1.06)^{4}}{V_4} = \frac{1}{(1.06)^{4}}$$
+
+Substituting the compounded factor:
+
+$$(1.06)^{4} \approx 1.262477$$
+
+$$\frac{1}{1.262477} \approx 0.792094$$
+
+The same number appears when the two dollar amounts are divided directly:
+
+$$\frac{132,015.61}{166,666.67} \approx 0.7921$$
+
+The claim states the ratio is exactly 0.8321:
+
+$$0.8321 - 0.7921 = 0.0400$$
+
+The true ratio is about 0.7921, four hundredths below the stated figure, so the statement is false.
+@@@92A
+A share that pays a fixed dividend at the end of every year forever is a perpetuity, so its fair value is the annual dividend divided by the required return:
+
+$$P = \frac{a}{r}$$
+
+The preferred share pays $a = \$4.25$ each year and investors require $r = 7\% = 0.07$ on this level of risk:
+
+$$P = \frac{4.25}{0.07}$$
+
+$$P \approx 60.714286$$
+
+$$P \approx \$60.71$$
+
+The claim puts the fair value at about \$60.71 per share, and the calculation returns \$60.71, so the statement is true.
+@@@92B
+Fair value for a fixed perpetual dividend comes from the perpetuity formula:
+
+$$P = \frac{a}{r}$$
+
+Substituting the \$4.25 dividend and the 7% required return:
+
+$$P = \frac{4.25}{0.07} \approx \$60.71$$
+
+A share is undervalued when its market price sits below fair value, and overvalued when the price sits above it. Comparing the \$65.00 market price with the computed fair value:
+
+$$65.00 - 60.71 = \$4.29$$
+
+The market price stands \$4.29 above fair value, which makes the share overvalued rather than undervalued. The claim says undervalued, so the statement is false.
+@@@92C
+The perpetuity value is the dividend divided by the required return, so a change in the required return alters only the denominator:
+
+$$P' = \frac{a}{r'}$$
+
+Substituting the unchanged \$4.25 dividend and the lower rate $r' = 4\% = 0.04$:
+
+$$P' = \frac{4.25}{0.04}$$
+
+$$P' = \$106.25$$
+
+The claim states the value would rise to \$116.25 per share:
+
+$$116.25 - 106.25 = \$10.00$$
+
+The stated figure overshoots the correct \$106.25 by \$10.00, so the statement is false.
+@@@92D
+A percentage change compares the size of the move with the starting value:
+
+$$\text{percent change} = \frac{P' - P}{P}$$
+
+At the original 7% required return the fair value is
+
+$$P = \frac{4.25}{0.07} \approx \$60.714286$$
+
+and at the lower 4% required return it is
+
+$$P' = \frac{4.25}{0.04} = \$106.25$$
+
+The size of the rise is
+
+$$106.25 - 60.714286 = 45.535714$$
+
+and the relative rise is
+
+$$\frac{45.535714}{60.714286} = 0.750000$$
+
+$$0.750000 = 75.00\%$$
+
+The claim requires an increase strictly greater than 75%. The increase is exactly 75.00%, which does not clear that bar, so the statement is false.
+@@@92E
+Fair value is directly proportional to the dividend, because the required return sits alone in the denominator:
+
+$$P = \frac{a}{r}$$
+
+A 20% cut leaves 80% of the original dividend:
+
+$$a' = 4.25 \times 0.80$$
+
+$$a' = \$3.40$$
+
+Substituting the reduced dividend at the unchanged 7% required return:
+
+$$P'' = \frac{3.40}{0.07}$$
+
+$$P'' \approx 48.571429$$
+
+$$P'' \approx \$48.57$$
+
+The claim states the value would fall to exactly \$50.57:
+
+$$50.57 - 48.57 = \$2.00$$
+
+The correct figure is \$48.57, two dollars below the stated value, so the statement is false.
+@@@93A
+A payment stream that runs forever without growing is a perpetuity, and its value one period before the first payment is the annual amount divided by the interest rate:
+
+$$P = \frac{a}{r}$$
+
+Maintenance costs $a = \$15,000$ per year beginning one year from now, and the applicable rate is $r = 4.5\% = 0.045$:
+
+$$P = \frac{15,000}{0.045}$$
+
+$$P = \$333,333.33$$
+
+The claim gives about \$333,333.33 for the maintenance payments on their own, and the calculation returns \$333,333.33, so the statement is true.
+@@@93B
+The renovation is paid today and so needs no discounting, while the maintenance stream is a perpetuity. The total funding requirement adds the two:
+
+$$T = C_0 + \frac{a}{r}$$
+
+Substituting the \$15,000 annual maintenance at the 4.5% rate:
+
+$$\frac{15,000}{0.045} = \$333,333.33$$
+
+Adding the \$50,000 renovation paid today:
+
+$$T = 50,000 + 333,333.33$$
+
+$$T = \$383,333.33$$
+
+The claim states the city must set aside about \$383,333.33 today, and the total comes to \$383,333.33, so the statement is true.
+@@@93C
+A higher interest rate shrinks the perpetuity part of the requirement while leaving the cash paid today untouched:
+
+$$T' = C_0 + \frac{a}{r'}$$
+
+Substituting the \$15,000 annual maintenance at the higher rate $r' = 6\% = 0.06$:
+
+$$\frac{15,000}{0.06} = \$250,000.00$$
+
+Adding the unchanged renovation cost:
+
+$$T' = 50,000 + 250,000$$
+
+$$T' = \$300,000.00$$
+
+The claim states the total requirement would be about \$300,000.00, and the calculation returns \$300,000.00, so the statement is true.
+@@@93D
+A percentage reduction compares the size of the drop with the original requirement:
+
+$$\text{percent drop} = \frac{T - T'}{T}$$
+
+At 4.5% the requirement is the renovation plus the perpetuity:
+
+$$T = 50,000 + \frac{15,000}{0.045} = \$383,333.33$$
+
+At 6% it is
+
+$$T' = 50,000 + \frac{15,000}{0.06} = \$300,000.00$$
+
+The drop is
+
+$$383,333.33 - 300,000.00 = \$83,333.33$$
+
+and as a share of the original requirement:
+
+$$\frac{83,333.33}{383,333.33} \approx 0.217391$$
+
+$$0.217391 \approx 21.74\%$$
+
+The claim needs a reduction above 25%. The actual reduction is about 21.74%, more than three percentage points short, so the statement is false.
+@@@93E
+Two figures decide this claim: the perpetuity-only requirement at 6%, and half of the original combined requirement at 4.5%.
+
+The perpetuity-only requirement at the higher rate is
+
+$$P' = \frac{15,000}{0.06}$$
+
+$$P' = \$250,000.00$$
+
+The original combined requirement was the renovation plus the 4.5% perpetuity:
+
+$$T = 50,000 + \frac{15,000}{0.045} = \$383,333.33$$
+
+Half of that is
+
+$$\frac{383,333.33}{2} = \$191,666.67$$
+
+Comparing the two:
+
+$$250,000.00 - 191,666.67 = \$58,333.33$$
+
+Raising the rate does shrink the perpetuity a great deal, but \$250,000.00 still sits \$58,333.33 above half of the original total, so it is not less than half and the statement is false.
+@@@94A
+A cash flow that grows at a constant rate forever is valued by the growing-perpetuity formula, which divides next year's cash flow by the spread between the required return and the growth rate:
+
+$$P = \frac{a_1}{r - g}$$
+
+The property yields $a_1 = \$24,000$ at the end of year 1, rents escalate at $g = 2.5\% = 0.025$, and the investor requires $r = 8\% = 0.08$:
+
+$$r - g = 0.08 - 0.025 = 0.055$$
+
+$$P = \frac{24,000}{0.055}$$
+
+$$P \approx \$436,363.64$$
+
+The claim puts fair value at about \$436,363.64, and the calculation returns \$436,363.64, so the statement is true.
+@@@94B
+With no growth at all the stream becomes a level perpetuity, valued by dividing the annual cash flow by the required return alone:
+
+$$P_{\text{level}} = \frac{a}{r}$$
+
+$$P_{\text{level}} = \frac{24,000}{0.08}$$
+
+$$P_{\text{level}} = \$300,000.00$$
+
+With 2.5% growth the denominator shrinks from the full required return to the spread $r - g$:
+
+$$P = \frac{24,000}{0.08 - 0.025} = \frac{24,000}{0.055} \approx \$436,363.64$$
+
+Comparing the two valuations:
+
+$$436,363.64 - 300,000.00 = \$136,363.64$$
+
+The level-perpetuity value sits \$136,363.64 below the growing-perpetuity value, because growth lifts every future cash flow. The claim calls the level value higher, so the statement is false.
+@@@94C
+A change in the growth rate moves only the spread in the denominator:
+
+$$P' = \frac{a_1}{r - g'}$$
+
+Substituting $g' = 4\% = 0.04$ with the required return still at 8%:
+
+$$r - g' = 0.08 - 0.04 = 0.04$$
+
+$$P' = \frac{24,000}{0.04}$$
+
+$$P' = \$600,000.00$$
+
+Doubling the original fair value would require
+
+$$2 \times 436,363.64 = \$872,727.27$$
+
+Comparing the new value with that threshold:
+
+$$872,727.27 - 600,000.00 = \$272,727.27$$
+
+The reason it falls short is that the value moves with the reciprocal of the spread, and the spread does not halve here:
+
+$$\frac{0.055}{0.04} = 1.375$$
+
+so the value rises by a factor of 1.375 rather than 2:
+
+$$436,363.64 \times 1.375 = \$600,000.00$$
+
+The value climbs to \$600,000.00, a large rise, but it falls \$272,727.27 short of double, so the statement is false.
+@@@94D
+The growing-perpetuity value depends on the spread between the required return and the growth rate, so a lower required return narrows that spread:
+
+$$P'' = \frac{a_1}{r' - g}$$
+
+Substituting the lower required return $r' = 6\% = 0.06$ with growth unchanged at 2.5%:
+
+$$r' - g = 0.06 - 0.025 = 0.035$$
+
+$$P'' = \frac{24,000}{0.035}$$
+
+$$P'' \approx \$685,714.29$$
+
+The claim states about \$715,714.29:
+
+$$715,714.29 - 685,714.29 = \$30,000.00$$
+
+The stated figure sits exactly \$30,000.00 above the correct \$685,714.29, so the statement is false.
+@@@94E
+The growing perpetuity is the sum of a geometric series whose terms shrink only when each discounted cash flow is smaller than the one before it, which requires the growth rate to stay strictly below the required return:
+
+$$P = \frac{a_1}{r - g}, \qquad r > g$$
+
+Test the boundary case where growth equals the 8% required return:
+
+$$r - g = 0.08 - 0.08 = 0$$
+
+$$P = \frac{24,000}{0}$$
+
+Division by zero returns no value at all. Now test a growth rate above the required return, say $g = 0.09$:
+
+$$r - g = 0.08 - 0.09 = -0.01$$
+
+$$P = \frac{24,000}{-0.01} = -\$2,400,000$$
+
+A negative price for a stream of positive cash flows is meaningless, so the model genuinely breaks once growth reaches or passes the required return. The claim says exactly this, so the statement is true.
+@@@95A
+The dividend growth model discounts next year's dividend, so the dividend just paid has to be grown forward one year first:
+
+$$D_1 = D_0(1 + g)$$
+
+The share just paid $D_0 = \$3.00$ and dividends grow at $g = 3\% = 0.03$ per year:
+
+$$D_1 = 3.00 \times (1 + 0.03)$$
+
+$$D_1 = 3.00 \times 1.03$$
+
+$$D_1 = \$3.09$$
+
+The claim states the next dividend is \$3.09, and the calculation returns \$3.09, so the statement is true.
+@@@95B
+Fair value under constant dividend growth is next year's dividend divided by the spread between the required return and the growth rate:
+
+$$P = \frac{D_1}{r - g}$$
+
+Next year's dividend grows one year from the \$3.00 just paid:
+
+$$D_1 = 3.00 \times 1.03 = \$3.09$$
+
+The spread between the 9% required return and the 3% growth rate is
+
+$$r - g = 0.09 - 0.03 = 0.06$$
+
+$$P = \frac{3.09}{0.06}$$
+
+$$P = \$51.50$$
+
+The claim states about \$54.50 per share:
+
+$$54.50 - 51.50 = \$3.00$$
+
+The stated value stands \$3.00 above the correct \$51.50, so the statement is false.
+@@@95C
+Using the dividend just paid in place of next year's dividend changes only the numerator of the valuation:
+
+$$P = \frac{D_1}{r - g}, \qquad P_{\text{wrong}} = \frac{D_0}{r - g}$$
+
+The correct value grows the dividend forward one year, $D_1 = 3.00 \times 1.03 = \$3.09$, and divides by the spread $0.09 - 0.03 = 0.06$:
+
+$$P = \frac{3.09}{0.06} = \$51.50$$
+
+The mistaken value uses the \$3.00 just paid:
+
+$$P_{\text{wrong}} = \frac{3.00}{0.06} = \$50.00$$
+
+The size of the understatement is
+
+$$51.50 - 50.00 = \$1.50$$
+
+The claim puts the error at \$2.50, a dollar more than the true gap of \$1.50, so the statement is false.
+@@@95D
+A change in the growth rate moves both the numerator and the denominator, so recompute next year's dividend first:
+
+$$D_1' = D_0(1 + g')$$
+
+$$D_1' = 3.00 \times 1.05 = \$3.15$$
+
+Then apply the dividend growth model with the new spread:
+
+$$r - g' = 0.09 - 0.05 = 0.04$$
+
+$$P' = \frac{3.15}{0.04}$$
+
+$$P' = \$78.75$$
+
+Double the original fair value would be
+
+$$2 \times 51.50 = \$103.00$$
+
+Comparing the new value with that threshold:
+
+$$103.00 - 78.75 = \$24.25$$
+
+Faster growth does lift the value sharply, but \$78.75 still falls \$24.25 short of double, so the statement is false.
+@@@95E
+The dividend growth model divides next year's dividend by the spread between the required return and the growth rate:
+
+$$P = \frac{D_1}{r - g}$$
+
+Setting the growth rate equal to the 9% required return makes that spread vanish:
+
+$$r - g = 0.09 - 0.09 = 0$$
+
+$$P = \frac{3.09}{0}$$
+
+Division by zero has no value, and watching the price as growth creeps up to the required return shows which way it moves. Take $g = 0.0899$, just under the required return:
+
+$$D_1 = 3.00 \times 1.0899 \approx \$3.2697$$
+
+$$r - g = 0.09 - 0.0899 = 0.0001$$
+
+$$P = \frac{3.2697}{0.0001} \approx \$32,697$$
+
+The value grows without bound as the gap closes, rather than settling on any finite figure, and certainly not on \$0.00. The claim names exactly \$0.00, so the statement is false.

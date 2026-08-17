@@ -1,0 +1,336 @@
+@@@121A
+The internal rate of return is the discount rate at which net present value is zero:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0$$
+
+Substituting $a_0 = -\$65,000$, $a_1 = \$34,000$, $a_2 = \$42,000$ and writing $s = 1/(1+r)$:
+
+$$42,000s^{2} + 34,000s - 65,000 = 0$$
+
+Dividing through by 1,000:
+
+$$42s^{2} + 34s - 65 = 0$$
+
+The discriminant is
+
+$$34^{2} + 4(42)(65) = 1,156 + 10,920 = 12,076$$
+
+$$\sqrt{12,076} \approx 109.891$$
+
+Taking the positive root, since $s$ must be positive:
+
+$$s = \frac{-34 + 109.891}{84} \approx 0.90346$$
+
+$$r = \frac{1}{0.90346} - 1$$
+
+$$r \approx 0.10685 = 10.69\%$$
+
+The claim gives about 10.69%, and the calculation returns 10.69%, so the statement is true.
+@@@121B
+Net present value discounts both years of rental income and subtracts the renovation cost:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -\$65,000$, $a_1 = \$34,000$, $a_2 = \$42,000$ and $r = 9\% = 0.09$:
+
+$$\frac{34,000}{1.09} \approx \$31,192.66$$
+
+$$(1.09)^{2} = 1.1881$$
+
+$$\frac{42,000}{1.1881} \approx \$35,350.56$$
+
+$$A \approx -65,000.00 + 31,192.66 + 35,350.56$$
+
+$$A \approx \$1,543.22$$
+
+The claim says the value is positive, and the project shows a surplus of \$1,543.22, consistent with 9% sitting below the internal rate of return of about 10.69%. The statement is true.
+@@@121C
+The same formula is evaluated at the higher discount rate:
+
+$$A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}}$$
+
+Substituting $a_0 = -\$65,000$, $a_1 = \$34,000$, $a_2 = \$42,000$ and $r = 12\% = 0.12$:
+
+$$\frac{34,000}{1.12} \approx \$30,357.14$$
+
+$$(1.12)^{2} = 1.2544$$
+
+$$\frac{42,000}{1.2544} \approx \$33,482.14$$
+
+$$A \approx -65,000.00 + 30,357.14 + 33,482.14$$
+
+$$A \approx -\$1,160.72$$
+
+The claim says the value is positive, but the project falls \$1,160.72 short at 12%, since that rate is above the internal rate of return of about 10.69%. The statement is false.
+@@@121D
+Doubling both returns changes two coefficients of the quadratic, so the rate has to be recomputed rather than scaled:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With $a_1 = \$68,000$, $a_2 = \$84,000$ and the outlay still \$65,000:
+
+$$84,000s^{2} + 68,000s - 65,000 = 0$$
+
+$$84s^{2} + 68s - 65 = 0$$
+
+The discriminant is
+
+$$68^{2} + 4(84)(65) = 4,624 + 21,840 = 26,464$$
+
+$$\sqrt{26,464} \approx 162.678$$
+
+$$s = \frac{-68 + 162.678}{168} \approx 0.56356$$
+
+$$r = \frac{1}{0.56356} - 1 \approx 0.77443 = 77.44\%$$
+
+Double the original rate of about 10.69% would be
+
+$$2 \times 10.69\% = 21.38\%$$
+
+Comparing:
+
+$$77.44\% - 21.38\% = 56.06 \text{ percentage points}$$
+
+The new rate clears twice the original by more than fifty percentage points, so the statement is true.
+@@@121E
+Cutting the outlay changes the constant term of the quadratic, so the rate is solved again from scratch:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With the outlay at \$60,000 and the returns unchanged:
+
+$$42,000s^{2} + 34,000s - 60,000 = 0$$
+
+Dividing through by 1,000:
+
+$$42s^{2} + 34s - 60 = 0$$
+
+The discriminant works out exactly:
+
+$$34^{2} + 4(42)(60) = 1,156 + 10,080 = 11,236 = 106^{2}$$
+
+$$s = \frac{-34 + 106}{84} = \frac{72}{84} \approx 0.857143$$
+
+$$r = \frac{1}{0.857143} - 1 \approx 0.16667 = 16.67\%$$
+
+The original project earns about 10.69%, so comparing:
+
+$$16.67\% - 10.69\% = 5.98 \text{ percentage points}$$
+
+Paying \$5,000 less for the same rental income lifts the rate by about six percentage points instead of lowering it, so the statement is false.
+@@@122A
+Option 1 pays a level amount at the end of every year with no end date, so the returns form a perpetuity and their present value is the payment divided by the rate:
+
+$$\frac{a}{r}$$
+
+The internal rate of return sets net present value to zero:
+
+$$a_0 + \frac{a}{r} = 0$$
+
+Substituting the \$50,000 outlay and the \$6,000 annual return:
+
+$$-50,000 + \frac{6,000}{r} = 0$$
+
+$$\frac{6,000}{r} = 50,000$$
+
+$$r = \frac{6,000}{50,000}$$
+
+$$r = 0.12 = 12\%$$
+
+The claim names 12%, and the calculation returns 12%, so the statement is true.
+@@@122B
+Option 2 has only two returns, so the rate solves a two-period equation:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0$$
+
+Substituting $a_0 = -\$50,000$, $a_1 = a_2 = \$6,000$ and writing $s = 1/(1+r)$:
+
+$$6,000s^{2} + 6,000s - 50,000 = 0$$
+
+Dividing through by 2,000:
+
+$$3s^{2} + 3s - 25 = 0$$
+
+The discriminant is
+
+$$3^{2} + 4(3)(25) = 9 + 300 = 309$$
+
+$$\sqrt{309} \approx 17.578$$
+
+$$s = \frac{-3 + 17.578}{6} \approx 2.42973$$
+
+$$r = \frac{1}{2.42973} - 1$$
+
+$$r \approx 0.41157 - 1 \approx -0.5884 = -58.84\%$$
+
+The other root, $s \approx -3.4297$, gives $r \approx -1.291$, which lies below $-1$ and is discarded. The claim gives about $-58.84\%$, matching the admissible root, so the statement is true.
+@@@122C
+The chapter's uniqueness result asks only about the signs of the cash flows:
+
+$$a_0 < 0, \qquad a_1, \ldots, a_n > 0 \implies \text{unique } r^{*} > -1$$
+
+Option 2's cash flows are
+
+$$a_0 = -\$50,000 < 0, \qquad a_1 = \$6,000 > 0, \qquad a_2 = \$6,000 > 0$$
+
+so the condition holds. Solving confirms that only one root is admissible. With $s = 1/(1+r)$:
+
+$$6,000s^{2} + 6,000s - 50,000 = 0 \implies 3s^{2} + 3s - 25 = 0$$
+
+$$\sqrt{9 + 300} = \sqrt{309} \approx 17.578$$
+
+$$s = \frac{-3 + 17.578}{6} \approx 2.42973, \qquad r \approx -0.5884$$
+
+$$s = \frac{-3 - 17.578}{6} \approx -3.4297, \qquad r \approx -1.291$$
+
+The second root falls below $-1$, which is outside the range the theorem allows, so it is dropped and about $-58.84\%$ is left as the only valid rate. A negative rate is still a rate, and the guarantee is about uniqueness above $-1$ rather than about profitability. The claim matches this, so the statement is true.
+@@@122D
+The sum adds the outlay, entered as a negative amount, to the two returns:
+
+$$a_0 + a_1 + a_2$$
+
+Substituting Option 2's figures:
+
+$$-50,000 + 6,000 + 6,000$$
+
+$$= -50,000 + 12,000$$
+
+$$= -\$38,000$$
+
+The claim states $-\$40,000$:
+
+$$40,000 - 38,000 = \$2,000$$
+
+The true total is $-\$38,000$, two thousand dollars less negative than the stated figure, so the statement is false.
+@@@122E
+Removing the second return leaves a one-year project, whose rate comes from the ratio of return to outlay:
+
+$$-a + \frac{b}{1+r} = 0 \implies r = \frac{b}{a} - 1$$
+
+Substituting the \$50,000 outlay and the single \$6,000 return:
+
+$$r = \frac{6,000}{50,000} - 1$$
+
+$$r = 0.12 - 1$$
+
+$$r = -0.88 = -88\%$$
+
+Option 2 keeps both returns and earns about $-58.84\%$. Comparing the two:
+
+$$-88\% < -58.84\%$$
+
+$$58.84 - 88 = -29.16 \text{ percentage points}$$
+
+Dropping the second \$6,000 pushes the rate about 29 percentage points further into negative territory, so the stripped-down version is indeed the lower of the two and the statement is true.
+@@@123A
+Design A has returns in two years, so its internal rate of return solves
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0$$
+
+Substituting $a_0 = -\$120,000$, $a_1 = \$54,000$, $a_2 = \$88,000$ and writing $s = 1/(1+r)$:
+
+$$88,000s^{2} + 54,000s - 120,000 = 0$$
+
+Dividing through by 2,000:
+
+$$44s^{2} + 27s - 60 = 0$$
+
+The discriminant is
+
+$$27^{2} + 4(44)(60) = 729 + 10,560 = 11,289$$
+
+$$\sqrt{11,289} \approx 106.250$$
+
+$$s = \frac{-27 + 106.250}{88} \approx 0.90057$$
+
+$$r_A = \frac{1}{0.90057} - 1$$
+
+$$r_A \approx 0.11041 = 11.04\%$$
+
+The claim gives about 11.04%, and the calculation returns 11.04%, so the statement is true.
+@@@123B
+Design B has a single outlay and a single return one year later, so its rate follows the one-year rule:
+
+$$-a + \frac{b}{1+r} = 0 \implies r = \frac{b}{a} - 1$$
+
+Substituting the \$70,000 invested and the \$81,200 returned:
+
+$$r_B = \frac{81,200}{70,000} - 1$$
+
+$$\frac{81,200}{70,000} = 1.16$$
+
+$$r_B = 1.16 - 1$$
+
+$$r_B = 0.16 = 16\%$$
+
+The claim names exactly 16%, and the calculation returns exactly 16%, so the statement is true.
+@@@123C
+The internal rate of return criterion picks the design with the higher rate, so both rates are needed.
+
+Design A solves the two-year equation with $s = 1/(1+r)$:
+
+$$88,000s^{2} + 54,000s - 120,000 = 0 \implies 44s^{2} + 27s - 60 = 0$$
+
+$$\sqrt{729 + 10,560} = \sqrt{11,289} \approx 106.250$$
+
+$$s \approx \frac{-27 + 106.250}{88} \approx 0.90057, \qquad r_A \approx 0.11041 = 11.04\%$$
+
+Design B is a one-year project:
+
+$$r_B = \frac{81,200}{70,000} - 1 = 0.16 = 16\%$$
+
+Comparing the two:
+
+$$16\% - 11.04\% = 4.96 \text{ percentage points}$$
+
+Design B earns nearly five percentage points more per dollar committed, so the criterion prefers Design B and the statement is true.
+@@@123D
+Each design is valued at 13% with its own net present value expression.
+
+Design A has two years of returns:
+
+$$A_A = a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}}$$
+
+$$\frac{54,000}{1.13} \approx \$47,787.61$$
+
+$$(1.13)^{2} = 1.2769, \qquad \frac{88,000}{1.2769} \approx \$68,916.91$$
+
+$$A_A \approx -120,000.00 + 47,787.61 + 68,916.91 \approx -\$3,295.48$$
+
+Design B has one:
+
+$$A_B = -70,000 + \frac{81,200}{1.13}$$
+
+$$\frac{81,200}{1.13} \approx \$71,858.41$$
+
+$$A_B \approx -70,000.00 + 71,858.41 \approx \$1,858.41$$
+
+At 13% Design A is short by \$3,295.48 while Design B is ahead by \$1,858.41, which is exactly the pattern the claim describes, since 13% sits above Design A's 11.04% rate but below Design B's 16%. The statement is true.
+@@@123E
+A smaller Year 1 return changes the middle coefficient, so Design A's rate must be solved again:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With the first return cut by \$10,000 to $54,000 - 10,000 = \$44,000$ and Year 2 unchanged:
+
+$$88,000s^{2} + 44,000s - 120,000 = 0$$
+
+Dividing through by 4,000:
+
+$$22s^{2} + 11s - 30 = 0$$
+
+The discriminant is
+
+$$11^{2} + 4(22)(30) = 121 + 2,640 = 2,761$$
+
+$$\sqrt{2,761} \approx 52.545$$
+
+$$s = \frac{-11 + 52.545}{44} \approx 0.94420$$
+
+$$r = \frac{1}{0.94420} - 1 \approx 0.05909 = 5.91\%$$
+
+Comparing with Design B's rate:
+
+$$16\% - 5.91\% = 10.09 \text{ percentage points}$$
+
+The weakened version of Design A earns about 5.91%, roughly ten percentage points below Design B's 16%, so it does not exceed it and the statement is false.

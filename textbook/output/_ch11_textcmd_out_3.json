@@ -1,0 +1,122 @@
+[
+  {
+    "id": "math-11-66",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "text": "**D) The series necessarily diverges regardless of its magnitude.**  (false)\n\nDivergence is not automatic for a series with a negative quotient. The test is the same one used for any geometric series, and it looks only at the size of the quotient, never at its sign. The series $a + ak + ak^{2} + \\cdots$ settles on a finite total exactly when the absolute value of the quotient stays below one:\n\n$$|k| < 1$$\n\nHere the quotient is $k = -0.5$, so the quantity the test measures is\n\n$$|k| = |-0.5| = 0.5$$\n\nand the comparison with the cutoff succeeds:\n\n$$0.5 < 1$$\n\nA negative quotient only means the terms take turns adding to and subtracting from the running total. The partial sums show the swings settling rather than spreading:\n\n$$s_1 = 4{,}000$$\n\n$$s_2 = 4{,}000 - 2{,}000 = 2{,}000$$\n\n$$s_3 = 2{,}000 + 1{,}000 = 3{,}000$$\n\n$$s_4 = 3{,}000 - 500 = 2{,}500$$\n\nThe swings shrink toward the limiting value, which the geometric sum formula puts at\n\n$$s_{\\infty} = \\frac{4{,}000}{1-(-0.5)} = \\frac{4{,}000}{1.5} = 2{,}666.67$$\n\nso this series converges rather than diverging. Divergence is not forced on a series just because its quotient is negative, so the statement is false."
+  },
+  {
+    "id": "math-11-77",
+    "kind": "tactical_explanations",
+    "index": 1,
+    "text": "**B) With p = 1.5, the infinite series converges to a finite total value.**  (true)\n\nWhether the total marginal benefit is finite is settled by the p-series rule quoted in the setup. The sum $\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}$ converges exactly when the exponent in the denominator clears one, and it diverges for every exponent at or below one:\n\n$$p > 1$$\n\nThe constant \\$5,000 in the numerator does not affect convergence, since it factors straight out of the sum:\n\n$$\\sum_{n=1}^{\\infty} \\frac{5{,}000}{n^{p}} = 5{,}000 \\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}$$\n\nThe exponent under consideration is $p = 1.5$, and comparing it with the cutoff:\n\n$$1.5 > 1$$\n\nThe condition holds, so the underlying p-series converges to a finite value, and multiplying that value by \\$5,000 leaves a finite total. The claim says the series converges to a finite total value, so the statement is true."
+  },
+  {
+    "id": "math-11-77",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "text": "**C) If instead p = 1, the series would still converge, just to a larger total than the p = 1.5 case.**  (false)\n\nThe same p-series rule decides the case. The sum $\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}$ converges exactly when the exponent is strictly greater than one:\n\n$$p > 1$$\n\nSetting $p = 1$ turns the model into\n\n$$a_n = \\frac{5{,}000}{n^{1}} = \\frac{5{,}000}{n}$$\n\nwhich is \\$5,000 times the harmonic series. The rule asks for an exponent strictly above one, while here the exponent sits exactly on the cutoff:\n\n$$p = 1$$\n\nSince $p = 1$ does not clear the threshold, the harmonic series diverges and so does \\$5,000 times it. Its partial sums grow without any ceiling, so there is no total at all to compare against the $p = 1.5$ case. The claim asserts convergence to a larger total, but no total exists, so the statement is false."
+  },
+  {
+    "id": "math-11-77",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) With p = 0.5, the series diverges, even though the individual terms still tend to 0 as n → ∞.**  (true)\n\nThe p-series rule fixes the outcome. The sum $\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}$ converges exactly when the exponent is strictly greater than one, and it diverges for every exponent at or below one:\n\n$$p > 1$$\n\nWith $p = 0.5$ the model becomes\n\n$$a_n = \\frac{5{,}000}{n^{0.5}} = \\frac{5{,}000}{\\sqrt{n}}$$\n\nand testing the exponent against the cutoff:\n\n$$0.5 < 1$$\n\nThe condition for convergence fails, so the series diverges and its partial sums grow without bound. The individual terms still fade, as a few values show:\n\n$$a_{100} = \\frac{5{,}000}{10} = 500, \\qquad a_{10{,}000} = \\frac{5{,}000}{100} = 50$$\n\nBoth halves of the claim therefore hold at once: the terms tend to zero and the series still diverges, because shrinking terms alone are never enough. The statement is true."
+  },
+  {
+    "id": "math-11-92",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "text": "**D) This drop in the required return, from 7% to 4%, increases the fair value by MORE than 75%.**  (false)\n\nA percentage change compares the size of the move with the starting value. Write $P_1$ for the fair value at the original 7% required return and $P_2$ for the fair value at the lower 4% required return, so the relative change is\n\n$$\\frac{P_2 - P_1}{P_1}$$\n\nAt the original 7% required return the fair value is\n\n$$P_1 = \\frac{4.25}{0.07} \\approx 60.714286$$\n\nand at the lower 4% required return it is\n\n$$P_2 = \\frac{4.25}{0.04} = 106.25$$\n\nThe size of the rise is\n\n$$106.25 - 60.714286 = 45.535714$$\n\nand the relative rise is\n\n$$\\frac{45.535714}{60.714286} = 0.750000$$\n\nWritten as a percentage, that share is\n\n$$0.750000 = 75.00\\%$$\n\nThe claim requires an increase strictly greater than 75%. The increase is exactly 75.00%, which does not clear that bar, so the statement is false."
+  },
+  {
+    "id": "math-11-93",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "text": "**D) This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.**  (false)\n\nA percentage reduction compares the size of the drop with the original requirement. Write $T_1$ for the requirement at the 4.5% rate and $T_2$ for the requirement at the 6% rate, so the relative reduction is\n\n$$\\frac{T_1 - T_2}{T_1}$$\n\nAt 4.5% the requirement is the renovation plus the perpetuity:\n\n$$T_1 = 50,000 + \\frac{15,000}{0.045} = 383,333.33$$\n\nAt 6% it is\n\n$$T_2 = 50,000 + \\frac{15,000}{0.06} = 300,000.00$$\n\nThe drop is\n\n$$383,333.33 - 300,000.00 = 83,333.33$$\n\nand as a share of the original requirement:\n\n$$\\frac{83,333.33}{383,333.33} \\approx 0.217391$$\n\nWritten as a percentage, that share is\n\n$$0.217391 \\approx 21.74\\%$$\n\nThe claim needs a reduction above 25%. The actual reduction is about 21.74%, more than three percentage points short, so the statement is false."
+  },
+  {
+    "id": "math-11-101",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "text": "**C) The interest portion of the first payment is exactly \\$7,200.00.**  (true)\n\nInterest in any year is charged on the balance outstanding at the start of that year. Write $B_0$ for the balance the first year opens with, $r$ for the annual rate and $I_1$ for the interest charged in the first year:\n\n$$I_1 = r B_0$$\n\nNo payment has been made before the first year ends, so the opening balance is still the full amount borrowed:\n\n$$B_0 = 60,000.00$$\n\nSubstituting the rate and that balance:\n\n$$I_1 = 0.12 \\times 60,000$$\n\n$$I_1 = 7,200.00$$\n\nBoth figures here are exact, since 12% of \\$60,000 leaves no rounding to do. The claim names exactly \\$7,200.00, so the statement is true."
+  },
+  {
+    "id": "math-11-101",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "text": "**D) The principal-repayment portion of the first payment is more than half of the total payment amount.**  (true)\n\nEach instalment covers the year's interest first, and whatever is left reduces the principal. Write $a$ for the instalment, $B_0$ for the balance the first year opens with, $r$ for the annual rate and $P_1$ for the principal part of the first payment:\n\n$$P_1 = a - r B_0$$\n\nThe instalment comes from the annuity payment formula:\n\n$$a = \\frac{0.12 \\times 60,000}{1 - (1.12)^{-6}} = \\frac{7,200}{0.493369} \\approx 14,593.54$$\n\nFirst-year interest on the full \\$60,000 balance is\n\n$$0.12 \\times 60,000 = 7,200.00$$\n\nso the principal portion is\n\n$$14,593.54 - 7,200.00 = 7,393.54$$\n\nHalf of the instalment is\n\n$$\\frac{14,593.54}{2} \\approx 7,296.77$$\n\nComparing:\n\n$$7,393.54 - 7,296.77 = 96.77$$\n\nEven in year 1, when interest is at its heaviest, the principal portion clears half the payment by \\$96.77, so the statement is true."
+  },
+  {
+    "id": "math-11-101",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) The outstanding balance immediately after the second payment is approximately \\$45,000.00.**  (false)\n\nTracking the balance takes one year at a time, recomputing interest on whatever principal is still outstanding. Write $B_{k-1}$ for the balance year $k$ opens with, $I_k$ for the interest charged that year, $a$ for the instalment and $B_k$ for the balance left once the payment is made:\n\n$$I_k = r B_{k-1}$$\n\n$$B_k = B_{k-1} - (a - I_k)$$\n\nThe instalment is\n\n$$a = \\frac{7,200}{1 - (1.12)^{-6}} \\approx 14,593.54$$\n\nYear 1 opens with the full loan:\n\n$$0.12 \\times 60,000 = 7,200.00$$\n\n$$14,593.54 - 7,200.00 = 7,393.54$$\n\n$$60,000.00 - 7,393.54 = 52,606.46$$\n\nYear 2 opens with that reduced balance:\n\n$$0.12 \\times 52,606.46 \\approx 6,312.78$$\n\n$$14,593.54 - 6,312.78 \\approx 8,280.76$$\n\n$$52,606.46 - 8,280.76 \\approx 44,325.70$$\n\nThe claim puts the balance at about \\$45,000.00:\n\n$$45,000.00 - 44,325.70 = 674.30$$\n\nThe true balance is about \\$44,325.70, some \\$674 below the stated figure, so the statement is false."
+  },
+  {
+    "id": "math-11-102",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "text": "**C) The total amount paid over all 48 monthly payments is approximately \\$29,500.00.**  (false)\n\nThe total handed over is simply the instalment repeated for every payment period. Write $a$ for the monthly instalment and $n$ for the number of payments, so the total paid is the product\n\n$$an$$\n\nThe monthly instalment comes from the payment formula with $r = 0.0075$ and $n = 48$:\n\n$$a = \\frac{0.0075 \\times 24,000}{1 - (1.0075)^{-48}} = \\frac{180}{0.301386} \\approx 597.24$$\n\nOver all 48 months the total paid is\n\n$$an \\approx 597.24 \\times 48$$\n\n$$an \\approx 28,667.57$$\n\nThe claim states about \\$29,500.00:\n\n$$29,500.00 - 28,667.57 = 832.43$$\n\nThe stated total runs \\$832.43 above what the customer actually pays, so the statement is false."
+  },
+  {
+    "id": "math-11-102",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "text": "**D) The total interest paid over the life of the loan is approximately \\$4,667.57.**  (true)\n\nInterest over the life of a loan is whatever is paid beyond the amount borrowed. Write $a$ for the monthly instalment, $n$ for the number of payments and $K$ for the amount financed, so the interest charged over the loan is\n\n$$an - K$$\n\nThe monthly instalment is\n\n$$a = \\frac{0.0075 \\times 24,000}{1 - (1.0075)^{-48}} \\approx 597.24$$\n\nso the 48 payments come to\n\n$$597.24 \\times 48 \\approx 28,667.57$$\n\nSubtracting the \\$24,000 financed:\n\n$$28,667.57 - 24,000.00 = 4,667.57$$\n\nThe claim gives about \\$4,667.57 of interest, and the calculation returns \\$4,667.57, so the statement is true."
+  },
+  {
+    "id": "math-11-103",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "text": "**C) The outstanding balance immediately after the third payment is approximately \\$20,602.37.**  (true)\n\nThe balance falls each year by the principal portion of the payment, where the principal portion is the instalment minus that year's interest. Write $B_{k-1}$ for the balance year $k$ opens with, $I_k$ for the interest charged that year, $a$ for the instalment and $B_k$ for the balance carried forward:\n\n$$I_k = r B_{k-1}$$\n\n$$B_k = B_{k-1} - (a - I_k)$$\n\nThe instalment is\n\n$$a = \\frac{0.10 \\times 45,000}{1 - (1.10)^{-5}} = \\frac{4,500}{0.379079} \\approx 11,870.89$$\n\nYear 1:\n\n$$0.10 \\times 45,000.00 = 4,500.00$$\n\n$$45,000.00 - (11,870.89 - 4,500.00) = 37,629.11$$\n\nYear 2:\n\n$$0.10 \\times 37,629.11 \\approx 3,762.91$$\n\n$$37,629.11 - (11,870.89 - 3,762.91) = 29,521.13$$\n\nYear 3:\n\n$$0.10 \\times 29,521.13 \\approx 2,952.11$$\n\n$$29,521.13 - (11,870.89 - 2,952.11) = 20,602.35$$\n\nThe claim gives about \\$20,602.37, which the schedule reproduces to within a few cents of rounding, so the statement is true."
+  },
+  {
+    "id": "math-11-103",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "text": "**D) In the fourth year, the interest portion of the payment is larger than the principal portion of the payment.**  (false)\n\nThe split of a payment depends on the balance the year opens with, so the schedule has to be carried to year 4. Write $B_{k-1}$ for the opening balance of year $k$, $I_k$ for the interest charged that year and $P_k$ for the principal part of that payment:\n\n$$I_k = r B_{k-1}$$\n\n$$P_k = a - I_k$$\n\nWith $a \\approx 11,870.89$ the balances run\n\n$$45,000.00 - (11,870.89 - 4,500.00) = 37,629.11$$\n\n$$37,629.11 - (11,870.89 - 3,762.91) = 29,521.13$$\n\n$$29,521.13 - (11,870.89 - 2,952.11) = 20,602.35$$\n\nYear 4 therefore opens at about \\$20,602.35, and the interest charged on that balance is\n\n$$I_4 \\approx 0.10 \\times 20,602.35 \\approx 2,060.24$$\n\nwhich leaves as the principal part\n\n$$P_4 \\approx 11,870.89 - 2,060.24 \\approx 9,810.65$$\n\nComparing the two parts of the payment:\n\n$$9,810.65 - 2,060.24 = 7,750.41$$\n\nBy year 4 the principal portion is larger than the interest portion by \\$7,750.41, so interest is the smaller part and the statement is false."
+  },
+  {
+    "id": "math-11-103",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) Adding up the principal-repayment portions of all 5 payments gives a total of exactly \\$46,200.00.**  (false)\n\nThe principal portions are exactly the amounts by which the balance is written down, so together they must remove the whole balance. Write $P_k$ for the principal part of payment $k$, $K$ for the amount borrowed and $B_5$ for the balance left after the last payment:\n\n$$\\sum_{k=1}^{5} P_k = K - B_5$$\n\nThe loan is fully repaid at the end of year 5, which means that closing balance is zero:\n\n$$\\sum_{k=1}^{5} P_k = 45,000.00 - 0 = 45,000.00$$\n\nThe year-by-year figures confirm it:\n\n$$7,370.89 + 8,107.98 + 8,918.78 + 9,810.65 + 10,791.70 = 45,000.00$$\n\nThe claim states the principal portions total \\$46,200.00:\n\n$$46,200.00 - 45,000.00 = 1,200.00$$\n\nThe extra \\$1,200.00 belongs to interest, not principal, so the statement is false."
+  },
+  {
+    "id": "math-11-105",
+    "kind": "tactical_explanations",
+    "index": 3,
+    "text": "**D) The total amount paid over the entire life of the loan is approximately \\$49,682.53.**  (true)\n\nThe total handed over is the four full payments plus the reduced final one. Write $a$ for each full payment and $F$ for the smaller closing payment, so the total is\n\n$$4a + F$$\n\nThe four full payments come to\n\n$$4 \\times 10,000 = 40,000.00$$\n\nThe final payment settles the balance left at the end of year 4. The debt grown four years is\n\n$$35,000 \\times (1.13)^{4} \\approx 57,066.58$$\n\nand the payments grown to the same date come to\n\n$$\\frac{10,000}{0.13}\\bigl[(1.13)^{4} - 1\\bigr] \\approx 48,497.97$$\n\n$$57,066.58 - 48,497.97 = 8,568.61$$\n\nCarrying that shortfall one further year to the closing payment date:\n\n$$F \\approx 8,568.61 \\times 1.13 \\approx 9,682.53$$\n\nAdding the pieces:\n\n$$40,000.00 + 9,682.53 = 49,682.53$$\n\nThe claim gives about \\$49,682.53, and the calculation returns \\$49,682.53, so the statement is true."
+  },
+  {
+    "id": "math-11-105",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) The total interest paid over the life of the loan is less than the original \\$35,000 principal.**  (true)\n\nInterest over the life of the loan is everything paid beyond the amount borrowed. Write $S$ for the sum of every payment made and $K$ for the amount borrowed, so the interest is\n\n$$S - K$$\n\nThe four full payments total \\$40,000.00, and the final payment settles the year-4 balance:\n\n$$35,000 \\times (1.13)^{4} \\approx 57,066.58$$\n\n$$\\frac{10,000}{0.13}\\bigl[(1.13)^{4} - 1\\bigr] \\approx 48,497.97$$\n\n$$57,066.58 - 48,497.97 = 8,568.61$$\n\n$$8,568.61 \\times 1.13 \\approx 9,682.53$$\n\nSo the borrower pays\n\n$$S = 40,000.00 + 9,682.53 = 49,682.53$$\n\nand the interest inside that is\n\n$$49,682.53 - 35,000.00 = 14,682.53$$\n\nComparing with the principal:\n\n$$35,000.00 - 14,682.53 = 20,317.47$$\n\nInterest of \\$14,682.53 falls \\$20,317.47 short of the \\$35,000 borrowed, so it is indeed less than the principal and the statement is true."
+  },
+  {
+    "id": "math-11-106",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) Option B must always be the more expensive choice in present-value terms, no matter what the interest rate is.**  (false)\n\nWhich option is cheaper depends on the discount rate, because only Option B has payments in the future for a rate to act on. Valuing Option B at two different rates shows the ranking change.\n\nAt 10%:\n\n$$PV_B = 100,000 + \\frac{100,000}{0.10}\\bigl[1 - (1.10)^{-6}\\bigr] \\approx 100,000 + 435,526.07 \\approx 535,526.07$$\n\nMeasured against the \\$500,000.00 cash price, Option B costs more at this rate:\n\n$$535,526.07 - 500,000.00 = 35,526.07$$\n\nAt 14%:\n\n$$PV_B = 100,000 + \\frac{100,000}{0.14}\\bigl[1 - (1.14)^{-6}\\bigr] \\approx 100,000 + 388,866.75 \\approx 488,866.75$$\n\nMeasured against the same cash price, Option B now costs less:\n\n$$500,000.00 - 488,866.75 = 11,133.25$$\n\nThe claim asserts that Option B is dearer at every rate. One rate makes it \\$35,526.07 dearer and another makes it \\$11,133.25 cheaper, so the ranking depends on the rate and the statement is false."
+  },
+  {
+    "id": "math-11-107",
+    "kind": "tactical_explanations",
+    "index": 0,
+    "text": "**A) The year-end equivalent value of the four quarterly deposits made during a single year is \\$1,100.00.**  (false)\n\nEach quarterly deposit earns simple interest only for the part of the year still left before interest is credited. The deposits land at the end of quarters 1, 2, 3 and 4, so they sit for $3/4$, $1/2$, $1/4$ and $0$ of a year. Write $D$ for each deposit, $r$ for the annual simple rate and $V$ for the year-end equivalent value:\n\n$$V = D\\Bigl[\\bigl(1 + \\tfrac{3}{4}r\\bigr) + \\bigl(1 + \\tfrac{1}{2}r\\bigr) + \\bigl(1 + \\tfrac{1}{4}r\\bigr) + 1\\Bigr]$$\n\nCollecting the four principal amounts and the fractions of a year gives\n\n$$V = D(4 + 1.5r)$$\n\nSubstituting $D = 250$ and $r = 8\\% = 0.08$:\n\n$$1.5 \\times 0.08 = 0.12$$\n\n$$4 + 0.12 = 4.12$$\n\n$$250 \\times 4.12 = 1,030.00$$\n\nThe claim states \\$1,100.00:\n\n$$1,100.00 - 1,030.00 = 70.00$$\n\nThe correct year-end equivalent is \\$1,030.00, seventy dollars below the stated figure, so the statement is false."
+  },
+  {
+    "id": "math-11-108",
+    "kind": "tactical_explanations",
+    "index": 2,
+    "text": "**C) After 5 years of payments, more than 25% of the original \\$200,000 principal has been repaid.**  (false)\n\nPrincipal repaid is the drop in the balance, so the balance after five years is needed first:\n\n$$B_{60} = \\frac{a}{r}\\bigl[1 - (1.005)^{-180}\\bigr] \\approx 286,572.42 \\times 0.592518 \\approx 169,799.20$$\n\nThe principal cleared so far is\n\n$$200,000.00 - 169,799.20 = 30,200.80$$\n\nAs a share of the original loan:\n\n$$\\frac{30,200.80}{200,000.00} \\approx 0.151004$$\n\n$$0.151004 \\approx 15.10\\%$$\n\nThe claim needs more than 25% repaid. Subtract the repaid share from that 25% cutoff to get the shortfall in percentage points:\n\n$$25\\% - 15.10\\% = 9.90$$\n\nEarly payments go mostly to interest, so only about 15.10% of the principal is gone after five years, nearly ten percentage points short of the claim, and the statement is false."
+  },
+  {
+    "id": "math-11-108",
+    "kind": "tactical_explanations",
+    "index": 4,
+    "text": "**E) The total interest paid over the entire 20-year life of the loan is approximately \\$120,000.00.**  (false)\n\nLifetime interest is the sum of every payment minus the amount borrowed. Write $a$ for the monthly payment, $n$ for the number of months and $K$ for the amount borrowed, so the interest over the life of the loan is\n\n$$an - K$$\n\nThe monthly payment is\n\n$$a = \\frac{0.005 \\times 200,000}{1 - (1.005)^{-240}} \\approx 1,432.86$$\n\nOver the full 240 months:\n\n$$1,432.86 \\times 240 \\approx 343,886.91$$\n\nSubtracting the \\$200,000 borrowed:\n\n$$343,886.91 - 200,000.00 = 143,886.91$$\n\nThe claim states about \\$120,000.00:\n\n$$143,886.91 - 120,000.00 = 23,886.91$$\n\nThe family actually pays about \\$143,886.91 in interest, nearly \\$24,000 more than the stated figure, so the statement is false."
+  }
+]

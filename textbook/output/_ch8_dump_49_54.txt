@@ -1,0 +1,447 @@
+===== TASK 49 (5/5) Sediment Transport Driven by Channel Discharge =====
+CONTEXT: Sediment transport in a channel follows $S(v)=A v^{3}$ tonnes per day, where $v>0$ is flow velocity, and a gauged run at $v=3$ carried $135$ tonnes per day. Velocity itself depends on discharge through $v(q)=q^{0.5}/2$. The channel's stability limit is $5000$ tonnes per day. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: Sediment transport as a function of discharge is $0.625q^{1.5}$.
+STMT 1 [true]: The stability limit of $5000$ tonnes per day is reached at a discharge of $400$.
+STMT 2 [true]: Doubling the discharge multiplies transport by about $2.83$.
+STMT 3 [false]: Doubling the flow velocity doubles sediment transport.
+STMT 4 [false]: Transport per unit of discharge is the same at every discharge.
+--- EXPL idx=0 len=689 displays=3 ---
+**A.** → True
+
+The chain runs from discharge to velocity to transport, so the gauged run calibrates the transport stage before the velocity law is substituted in.
+
+$$A(3)^{3} = 135 \quad \Rightarrow \quad 27A = 135 \quad \Rightarrow \quad A = 5$$
+
+Substitute the velocity law:
+
+$$S(q) = 5\left(\frac{q^{0.5}}{2}\right)^{3} = 5 \times \frac{q^{1.5}}{8} = 0.625\,q^{1.5}$$
+
+Spot-check through both stages at $q=36$:
+
+$$v = \frac{6}{2} = 3, \qquad S = 5(27) = 135, \qquad 0.625(36)^{1.5} = 0.625(216) = 135 \;\checkmark$$
+
+Cubing the numerator alone and leaving the divisor $2$ untouched would leave the law eight times too large. The composed law is $0.625q^{1.5}$, so the statement is True.
+--- EXPL idx=1 len=507 displays=3 ---
+**B.** → True
+
+The stability limit is inverted through the composed law, whose reciprocal exponent is $2/3$.
+
+$$0.625q^{1.5} = 5000 \quad \Rightarrow \quad q^{1.5} = 8000$$
+
+$$q = 8000^{2/3} = \left(8000^{1/3}\right)^{2} = 20^{2} = 400$$
+
+Confirm through the stages:
+
+$$v(400) = \frac{20}{2} = 10, \qquad S = 5(1000) = 5000 \;\checkmark$$
+
+Inverting the composed law avoids carrying the intermediate velocity, though both routes agree. The limit is reached at a discharge of $400$, so the statement is True.
+--- EXPL idx=2 len=453 displays=2 ---
+**C.** → True
+
+A discharge multiplier acts through the composed exponent $0.5 \times 3 = 1.5$, not through either stage alone.
+
+$$\frac{S(2q)}{S(q)} = 2^{1.5} \approx 2.8284$$
+
+Verify through the stages:
+
+$$v \text{ rises by } 2^{0.5} \approx 1.414, \qquad 1.414^{3} \approx 2.83$$
+
+Velocity rises by only $41\%$ when discharge doubles, and cubing that rise reproduces the composed factor. Transport multiplies by about $2.83$, so the statement is True.
+--- EXPL idx=3 len=410 displays=2 ---
+**D.** → False
+
+Doubling the velocity acts on the transport stage alone, whose exponent is $3$.
+
+$$\frac{S(2v)}{S(v)} = 2^{3} = 8$$
+
+Check with concrete velocities:
+
+$$S(3) = 135, \qquad S(6) = 5(216) = 1080, \qquad \frac{1080}{135} = 8$$
+
+The two doublings in this task have to be kept apart, since discharge must rise fourfold to double the velocity. Transport multiplies by eight, so the statement is False.
+--- EXPL idx=4 len=524 displays=2 ---
+**E.** → False
+
+Transport per unit of discharge is the composed law divided by $q$, which lowers the exponent from $1.5$ to $0.5$.
+
+$$\frac{S(q)}{q} = \frac{0.625q^{1.5}}{q} = 0.625q^{0.5}$$
+
+Evaluate at three discharges:
+
+$$\frac{S(36)}{36} = 3.75, \qquad \frac{S(100)}{100} = 6.25, \qquad \frac{S(400)}{400} = 12.5$$
+
+Constancy would require the composed exponent to be $1$, whereas each unit of a larger flow carries more sediment than before. Transport per unit of discharge more than triples, so the statement is False.
+
+===== TASK 50 (5/5) Highly Elastic Demand Under a Price Indexation =====
+CONTEXT: A commodity trader faces demand $q(p)=A p^{-3}$ units at a price $p>0$, and a price of $2$ clears $500$ units. A proposed indexation would raise the price by $10\%$ across the board, and the trader wants the effect on both volume and revenue $R=pq$. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: Raising price by $20\%$ cuts quantity by about $42.1\%$.
+STMT 1 [true]: Revenue is a power function of price with exponent $-2$.
+STMT 2 [true]: At a price of $2.50$, revenue is $640$.
+STMT 3 [true]: A price rise of $10\%$ cuts quantity by about $25\%$.
+STMT 4 [true]: A price rise of $10\%$ cuts revenue by about $17\%$.
+--- EXPL idx=0 len=419 displays=2 ---
+**A.** → True
+
+A twenty percent price rise is a multiplier of $1.2$ acting through the demand exponent $-3$, so the surviving fraction is a power.
+
+$$\frac{q(1.2p)}{q(p)}=1.2^{-3}=\frac{1}{1.728}\approx0.57870$$
+
+$$(1-0.57870)\times100\%\approx42.1\%$$
+
+A linear elasticity estimate would multiply $3$ by $20\%$ and overstate the loss for a change this large. Quantity falls by about $42.1\%$, so the statement is True.
+--- EXPL idx=1 len=450 displays=2 ---
+**B.** → True
+
+Revenue is price times quantity, and multiplying an isoelastic demand curve by $p$ raises its exponent by one.
+
+$$R(p) = p \cdot 4000p^{-3} = 4000p^{-3+1} = 4000p^{-2}$$
+
+Check the scale-factor behaviour:
+
+$$\frac{R(2p)}{R(p)} = 2^{-2} = \frac{1}{4}$$
+
+The exponent stays negative, which is the formal statement that this trader loses revenue by raising prices. Revenue is a power function with exponent $-2$, so the statement is True.
+--- EXPL idx=2 len=428 displays=2 ---
+**C.** → True
+
+A revenue level needs the coefficient first, which the observed pair supplies, and then the derived revenue law evaluated at the new price.
+
+$$500=A(2)^{-3}=\frac{A}{8} \quad \Rightarrow \quad A=4000$$
+
+$$R(2.5)=4000(2.5)^{-2}=\frac{4000}{6.25}=640$$
+
+The negative exponent puts the price in the denominator, so revenue falls as the price rises. Revenue at price $2.50$ is exactly $640$, so the statement is True.
+--- EXPL idx=3 len=551 displays=3 ---
+**D.** → True
+
+The indexation is a multiplier of $1.1$ on price, and its effect on volume is the exact power $1.1^{-3}$.
+
+$$\frac{q(1.1p)}{q(p)} = 1.1^{-3} = \frac{1}{1.331} \approx 0.7513$$
+
+Convert to a percentage cut:
+
+$$1 - 0.7513 \approx 0.249 = 24.9\%$$
+
+Check with levels:
+
+$$q(2) = 500, \qquad q(2.2) = \frac{4000}{10.648} \approx 375.7$$
+
+An elasticity estimate of $3 \times 10\% = 30\%$ overstates the loss by five percentage points, since elasticity approximates only small changes. Quantity falls by about $25\%$, so the statement is True.
+--- EXPL idx=4 len=533 displays=3 ---
+**E.** → True
+
+The same indexation acts on revenue through the revenue exponent $-2$ rather than the demand exponent $-3$.
+
+$$\frac{R(1.1p)}{R(p)} = 1.1^{-2} = \frac{1}{1.21} \approx 0.8264$$
+
+Convert to a percentage cut:
+
+$$1 - 0.8264 \approx 0.174 = 17.4\%$$
+
+Check with levels:
+
+$$R(2) = 1000, \qquad R(2.2) = \frac{4000}{4.84} \approx 826.4$$
+
+Volume falls by about $25\%$ while each unit sells for $10\%$ more, and $0.7513 \times 1.1 = 0.8264$ reconciles the two exactly. Revenue falls by about $17\%$, so the statement is True.
+
+===== TASK 51 (2/5) Weld Strength Recovered From Two Spot Checks =====
+CONTEXT: A production weld's tensile strength follows $S(p)=A p^{k}$ newtons, where $p>0$ is the welding current in amperes. Neither constant is on the calibration sheet: the sheet only records that a $4$ A setting produced $40$ N of strength and a $9$ A setting produced $135$ N. The line rejects any weld below $400$ N. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The recovered strength law is $S(p)=5p^{3/2}$.
+STMT 1 [true]: At $16$ A the weld strength is $320$ N.
+STMT 2 [false]: The smallest current that clears the $400$ N reject line is below $18$ A.
+STMT 3 [false]: Doubling any current multiplies strength by less than $2.5$.
+STMT 4 [false]: A $100$ A setting yields exactly $4000$ N of strength.
+--- EXPL idx=0 len=807 displays=3 ---
+**A.** → True
+
+Two observed levels fix the exponent first and the coefficient second, because dividing one observation by the other cancels the unknown coefficient and leaves a pure ratio of currents:
+
+$$\frac{S(9)}{S(4)}=\frac{135}{40}=\frac{27}{8}=\left(\frac{9}{4}\right)^{k}$$
+
+Both sides are powers of $3/2$, since $27/8=(3/2)^{3}$ and $9/4=(3/2)^{2}$, so the exponent falls out without logarithms:
+
+$$\left(\tfrac{3}{2}\right)^{3}=\left(\tfrac{3}{2}\right)^{2k} \quad\Rightarrow\quad 2k=3 \quad\Rightarrow\quad k=\frac{3}{2}$$
+
+The shorter spot check now carries the coefficient, using $4^{3/2}=(\sqrt{4})^{3}=8$:
+
+$$A\cdot8=40 \quad\Rightarrow\quad A=5$$
+
+The second spot check is reproduced exactly, since $5\cdot9^{3/2}=5\cdot27=135$. The recovered law is $S(p)=5p^{3/2}$, so the statement is True.
+--- EXPL idx=1 len=715 displays=2 ---
+**B.** → True
+
+A calibrated power law is evaluated by substitution, never by interpolating between the two logged currents. Take the square root first and then cube it, since $16^{3/2}=(\sqrt{16})^{3}=4^{3}=64$:
+
+$$S(16)=5\cdot64=320$$
+
+The scaling route agrees, because $16$ A is the $4$ A setting multiplied by $4$, and a factor on the current reaches strength through the exponent $3/2$:
+
+$$\frac{S(16)}{S(4)}=4^{3/2}=8, \qquad 40\cdot8=320$$
+
+Straight-line reasoning between the pairs $(4,40)$ and $(9,135)$ has slope $19$ and would put the $16$ A figure at $268$ N, which the model does not support, because a curved law cannot be read off a chord. The weld at $16$ A carries $320$ N, so the statement is True.
+--- EXPL idx=2 len=728 displays=3 ---
+**C.** → False
+
+A floor on strength becomes a floor on current by inverting the law, which means raising both sides to the reciprocal power $2/3$:
+
+$$5p^{3/2}=400 \quad\Rightarrow\quad p^{3/2}=80 \quad\Rightarrow\quad p=80^{2/3}$$
+
+Evaluate the cube root first and then square it:
+
+$$80^{1/3}\approx4.3089, \qquad 80^{2/3}\approx18.57$$
+
+Scaling from the level $S(16)=320$ confirms the same boundary, since the strength has to rise by a factor of $400/320=5/4$:
+
+$$16\cdot\left(\frac{5}{4}\right)^{2/3}\approx16\cdot1.1604\approx18.57$$
+
+A setting of $18$ A delivers only $5\cdot18^{3/2}\approx381.8$ N and is rejected. The reject line is cleared only above about $18.57$ A, which is not below $18$ A, so the statement is False.
+--- EXPL idx=3 len=660 displays=2 ---
+**D.** → False
+
+A pure scale factor depends on the exponent alone, because the coefficient and the starting current both cancel in the ratio:
+
+$$\frac{S(2p)}{S(p)}=\frac{5(2p)^{3/2}}{5p^{3/2}}=2^{3/2}=2\sqrt{2}\approx2.828$$
+
+An exponent of $1$ would give a multiplier of exactly $2$, and an exponent above $1$ pushes the multiplier past that, which is what happens here with $3/2$. A concrete pair of settings shows the same figure:
+
+$$S(8)=5\cdot8^{3/2}=5\cdot22.6274\approx113.14, \qquad \frac{113.14}{40}\approx2.828$$
+
+The strength multiplier for a doubled current is about $2.828$, comfortably above $2.5$ rather than below it, so the statement is False.
+--- EXPL idx=4 len=624 displays=3 ---
+**E.** → False
+
+The largest setting is handled the same way as every other, by substituting into the recovered law rather than extrapolating a percentage from the logged pairs. Write $100=10^{2}$ so the fractional power is exact:
+
+$$100^{3/2}=(10^{2})^{3/2}=10^{3}=1000$$
+
+$$S(100)=5\cdot1000=5000$$
+
+The quoted figure of $4000$ N corresponds to a coefficient of $4$, which contradicts the calibration:
+
+$$4\cdot4^{3/2}=32\ne40$$
+
+A coefficient of $4$ would have made the $4$ A spot check read $32$ N instead of the recorded $40$ N. The model gives $5000$ N at $100$ A against the stated $4000$ N, so the statement is False.
+
+===== TASK 52 (4/5) Mooring Holding Power Across Kilograms and Tonnes =====
+CONTEXT: A harbour buoy's holding power follows $H(m)=A m^{2/3}$ kilonewtons when mass $m>0$ is measured in kilograms. A trial buoy of $8$ kg held exactly $24$ kN. The harbour authority prefers masses in tonnes ($1$ tonne $=1000$ kg) and writes the same physical law as $H(t)=B t^{2/3}$ with $t$ in tonnes. A storm protocol demands at least $150$ kN of holding power. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: In kilogram units the holding-power law is $H(m)=6m^{2/3}$.
+STMT 1 [true]: In tonne units the coefficient is $B=600$, so $H(t)=600t^{2/3}$.
+STMT 2 [true]: Reaching $150$ kN requires a mass of exactly $125$ kg.
+STMT 3 [true]: Doubling buoy mass multiplies holding power by $2^{2/3}\approx1.587$.
+STMT 4 [false]: Writing the tonne-form coefficient as $B=6000$ still reproduces the $8$ kg trial.
+--- EXPL idx=0 len=622 displays=2 ---
+**A.** → True
+
+The exponent is supplied by the model, so a single trial is enough to pin the coefficient once the shape factor at that mass is evaluated. Write $8=2^{3}$ so the fractional power is exact:
+
+$$8^{2/3}=(2^{3})^{2/3}=2^{2}=4$$
+
+The trial then reads $4A=24$, which gives the coefficient directly:
+
+$$A=\frac{24}{4}=6, \qquad H(m)=6m^{2/3}$$
+
+Substituting the trial mass back returns $6\cdot4=24$ kN, matching the record. Reading the $24$ kN as the coefficient itself would skip the shape factor $4$ and inflate every later prediction fourfold. The kilogram-unit law is $H(m)=6m^{2/3}$, so the statement is True.
+--- EXPL idx=1 len=573 displays=3 ---
+**B.** → True
+
+A change of mass unit is a substitution, not a new experiment. Replacing $m$ by $1000t$ leaves the physics untouched and pushes the conversion into a new coefficient:
+
+$$H=6(1000t)^{2/3}=6\cdot1000^{2/3}\,t^{2/3}$$
+
+The conversion factor is itself a clean power, since $1000=10^{3}$:
+
+$$1000^{2/3}=(10^{3})^{2/3}=10^{2}=100, \qquad B=6\cdot100=600$$
+
+Testing the tonne form on the original trial, where $8$ kg is $0.008$ t and $0.008^{2/3}=(0.2)^{2}=0.04$:
+
+$$600\cdot0.04=24$$
+
+Both forms return the same $24$ kN for the same buoy, so the statement is True.
+--- EXPL idx=2 len=671 displays=3 ---
+**C.** → True
+
+A target holding power is inverted by raising both sides to the reciprocal power $3/2$, which undoes the exponent $2/3$:
+
+$$6m^{2/3}=150 \quad\Rightarrow\quad m^{2/3}=25 \quad\Rightarrow\quad m=25^{3/2}$$
+
+Take the square root first and then cube it:
+
+$$25^{3/2}=(\sqrt{25})^{3}=5^{3}=125$$
+
+Pure ratio reasoning against the trial gives the same mass, because holding power must rise by a factor of $150/24=25/4$:
+
+$$8\cdot\left(\frac{25}{4}\right)^{3/2}=8\cdot\left(\frac{5}{2}\right)^{3}=8\cdot\frac{125}{8}=125$$
+
+A forward check closes the loop, since $6\cdot125^{2/3}=6\cdot25=150$. The storm protocol needs exactly $125$ kg, so the statement is True.
+--- EXPL idx=3 len=671 displays=2 ---
+**D.** → True
+
+Doubling the mass acts through the exponent alone, so the coefficient and the starting mass both cancel and the unit system becomes irrelevant:
+
+$$\frac{H(2m)}{H(m)}=\frac{6(2m)^{2/3}}{6m^{2/3}}=2^{2/3}$$
+
+The exact value is a cube root of $4$:
+
+$$2^{2/3}=(2^{2})^{1/3}=\sqrt[3]{4}\approx1.5874$$
+
+Levels confirm the multiplier, since doubling the trial buoy to $16$ kg gives $6\cdot16^{2/3}\approx6\cdot6.3496\approx38.10$ and $38.10/24\approx1.587$. Reading the exponent $2/3$ as a $66.7\%$ increase would replace a power with an added proportion and overstate the gain. Both forms in the statement describe the same multiplier, so the statement is True.
+--- EXPL idx=4 len=604 displays=3 ---
+**E.** → False
+
+A tonne-form coefficient is admissible only if it reproduces the one measurement on record. Rewrite the trial mass as $0.008$ tonnes and test the proposed figure:
+
+$$6000\cdot(0.008)^{2/3}=6000\cdot0.04=240$$
+
+That is ten times the logged $24$ kN, so the proposal fails the calibration outright:
+
+$$240\ne24$$
+
+The factor of ten is exactly the mishandled conversion, since the mass unit enters under the exponent $2/3$ rather than linearly:
+
+$$6\cdot1000^{2/3}=600, \qquad 6\cdot1000^{1}=6000$$
+
+Only $B=600$ keeps the two unit systems describing the same buoy, so the statement is False.
+
+===== TASK 53 (3/5) Mesh Throughput Against an Inverse-Square Floor =====
+CONTEXT: A wireless mesh's sustained throughput follows $T(d)=A d^{-2}$ megabits per second, where $d>0$ is the hop distance in metres. A bench test at $d=4$ m recorded $T=50$ Mbps. The link is rated reliable only while throughput stays at or above $8$ Mbps. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The recovered throughput law is $T(d)=800d^{-2}$.
+STMT 1 [true]: The farthest reliable hop distance is exactly $10$ m.
+STMT 2 [true]: At $d=25$ m the throughput is $1.28$ Mbps.
+STMT 3 [false]: A hop of $11$ m still clears the $8$ Mbps reliability floor.
+STMT 4 [false]: Tripling the transmitter coefficient would extend the reliable radius to $30$ m.
+--- EXPL idx=0 len=630 displays=2 ---
+**A.** → True
+
+The exponent is fixed at $-2$ by the model, so one bench reading is enough to recover the coefficient. Multiply the observed throughput by the square of the hop distance:
+
+$$T(4)=\frac{A}{4^{2}}=\frac{A}{16}=50 \quad\Rightarrow\quad A=50\cdot16=800$$
+
+The calibrated law is therefore
+
+$$T(d)=800d^{-2}=\frac{800}{d^{2}}$$
+
+Substituting the bench hop back returns $800/16=50$ Mbps, matching the record exactly. Reading the $50$ Mbps as the coefficient itself would ignore the shape factor $1/16$ and understate every prediction by a factor of sixteen. The recovered law is $T(d)=800d^{-2}$, so the statement is True.
+--- EXPL idx=1 len=787 displays=2 ---
+**B.** → True
+
+A reliability floor is a target on the output, so the law has to be inverted for distance. Set throughput to the floor and solve for the positive root:
+
+$$\frac{800}{d^{2}}=8 \quad\Rightarrow\quad d^{2}=\frac{800}{8}=100 \quad\Rightarrow\quad d=10$$
+
+The negative root has no meaning as a hop distance. Ratio reasoning from the bench point reaches the same radius, since throughput must fall by a factor of $50/8=25/4$ and distance enters squared:
+
+$$\left(\frac{d}{4}\right)^{2}=\frac{25}{4} \quad\Rightarrow\quad \frac{d}{4}=\frac{5}{2} \quad\Rightarrow\quad d=10$$
+
+Because the exponent is negative, throughput decreases with distance, so every hop under $10$ m complies and every longer hop fails. The farthest reliable hop is exactly $10$ m, so the statement is True.
+--- EXPL idx=2 len=632 displays=2 ---
+**C.** → True
+
+A far hop is evaluated by dividing the coefficient by the square of the distance:
+
+$$T(25)=\frac{800}{25^{2}}=\frac{800}{625}=1.28$$
+
+Scaling from the reliability boundary gives the same figure without recomputing the coefficient, since $25$ m is $2.5$ times the $10$ m radius and the factor enters squared:
+
+$$8\cdot(2.5)^{-2}=\frac{8}{6.25}=1.28$$
+
+The steepness is worth noting: stretching the hop from $10$ m to $25$ m costs about $84\%$ of the throughput, because an inverse-square law punishes distance far harder than a proportional rule would. The link at $25$ m carries $1.28$ Mbps, so the statement is True.
+--- EXPL idx=3 len=564 displays=3 ---
+**D.** → False
+
+Whether a hop complies is settled by evaluating the model at that hop and comparing with the floor, not by judging the distance as roughly close to the limit:
+
+$$T(11)=\frac{800}{11^{2}}=\frac{800}{121}\approx6.612$$
+
+$$6.612<8$$
+
+The general argument is the same. The exponent $-2$ is negative, so throughput falls monotonically with distance, and the boundary sits at exactly $10$ m:
+
+$$11>10 \quad\Rightarrow\quad T(11)<T(10)=8$$
+
+An $11$ m hop delivers only about $6.61$ Mbps, roughly $17\%$ short of the requirement, so the statement is False.
+--- EXPL idx=4 len=711 displays=2 ---
+**E.** → False
+
+Multiplying the coefficient scales every throughput by the same factor, but the reliable radius responds through the square root, because distance sits under an exponent of $2$:
+
+$$\frac{3\cdot800}{d^{2}}=8 \quad\Rightarrow\quad d^{2}=300 \quad\Rightarrow\quad d=10\sqrt{3}\approx17.32$$
+
+Reaching $30$ m would need a nine-fold coefficient rather than a tripled one, since the radius triples only when the coefficient grows by $3^{2}$:
+
+$$\frac{9\cdot800}{30^{2}}=\frac{7200}{900}=8$$
+
+Checking the tripled transmitter at $30$ m confirms the shortfall, because $2400/900\approx2.67$ Mbps sits far below the floor. Tripling stretches the radius only to about $17.32$ m, so the statement is False.
+
+===== TASK 54 (5/5) Allometric Gill Area Across Body Masses =====
+CONTEXT: A fish physiologist models gill surface area as $G(m)=A m^{3/4}$ square centimetres for body mass $m>0$ grams. A $256$ g specimen has gill area $512$ cm$^{2}$. Area per gram is the derived intensity $G(m)/m$. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The recovered gill-area law is $G(m)=8m^{3/4}$.
+STMT 1 [false]: Gill area per gram is constant across body masses.
+STMT 2 [false]: Two $16$ g fish together have the same total gill area as one $32$ g fish.
+STMT 3 [false]: The mass that produces $216$ cm$^{2}$ of gill area is $64$ g.
+STMT 4 [false]: At $m=16$ g the intensity $G(m)/m$ equals $8$ cm$^{2}$ per gram.
+--- EXPL idx=0 len=639 displays=2 ---
+**A.** → True
+
+The allometric exponent is supplied, so one specimen fixes the coefficient. Write the mass as a power of two so the fractional exponent is exact, since $256=2^{8}$:
+
+$$256^{3/4}=(2^{8})^{3/4}=2^{6}=64$$
+
+Divide the observed area by that shape factor:
+
+$$A=\frac{512}{64}=8, \qquad G(m)=8m^{3/4}$$
+
+Two independent checks agree with the calibration: a one-gram fish would carry $G(1)=8$ cm$^{2}$, and a $16$ g fish carries $G(16)=8\cdot16^{3/4}=8\cdot8=64$ cm$^{2}$. Treating the observed $512$ as the coefficient would inflate every prediction sixty-four fold. The recovered law is $G(m)=8m^{3/4}$, so the statement is True.
+--- EXPL idx=1 len=659 displays=2 ---
+**B.** → False
+
+Area per gram is the law divided by its own input, and dividing a power by $m$ subtracts one from the exponent:
+
+$$\frac{G(m)}{m}=\frac{8m^{3/4}}{m}=8m^{-1/4}$$
+
+The leftover exponent is negative, which is exactly the condition for a falling intensity on a positive domain. Two masses make the decline visible:
+
+$$\frac{G(16)}{16}=\frac{64}{16}=4, \qquad \frac{G(81)}{81}=\frac{216}{81}=\frac{8}{3}\approx2.667$$
+
+Total gill area does rise with body mass, but with exponent $3/4$ it rises less than proportionally, so each extra gram of fish carries less gill area than the gram before it. Intensity is not constant, so the statement is False.
+--- EXPL idx=2 len=641 displays=3 ---
+**C.** → False
+
+Allometric laws apply fish by fish, so a pair contributes two evaluations at $16$ g while a single larger animal is one evaluation at $32$ g:
+
+$$2G(16)=2\cdot8\cdot16^{3/4}=2\cdot8\cdot8=128$$
+
+$$G(32)=8\cdot32^{3/4}=8\cdot2^{15/4}=64\cdot2^{3/4}\approx107.63$$
+
+The gap of about $20.4$ cm$^{2}$ favours the pair:
+
+$$128>107.63$$
+
+The reason is structural rather than numerical. An exponent below $1$ makes the law concave, so splitting a fixed total mass into separate animals always yields more combined surface than merging it into one. Two $16$ g fish carry more gill area than one $32$ g fish, so the statement is False.
+--- EXPL idx=3 len=584 displays=3 ---
+**D.** → False
+
+Inverting a target area means raising both sides to the reciprocal power $4/3$, which undoes the exponent $3/4$:
+
+$$8m^{3/4}=216 \quad\Rightarrow\quad m^{3/4}=27 \quad\Rightarrow\quad m=27^{4/3}$$
+
+Evaluate with $27=3^{3}$, so the cube root is exact:
+
+$$27^{4/3}=(3^{3})^{4/3}=3^{4}=81$$
+
+The stated mass gives a different area, using $64=2^{6}$:
+
+$$G(64)=8\cdot64^{3/4}=8\cdot2^{9/2}=128\sqrt{2}\approx181.02$$
+
+A $64$ g fish falls about $35$ cm$^{2}$ short of the target. The mass that produces $216$ cm$^{2}$ is $81$ g rather than $64$ g, so the statement is False.
+--- EXPL idx=4 len=606 displays=2 ---
+**E.** → False
+
+Intensity at a given mass is the recovered area divided by that mass, which is not the coefficient of the area law:
+
+$$\frac{G(16)}{16}=\frac{8\cdot16^{3/4}}{16}=\frac{64}{16}=4$$
+
+The derived intensity law returns the same value directly, since $16^{1/4}=2$:
+
+$$8m^{-1/4}\Big|_{m=16}=\frac{8}{2}=4$$
+
+The figure $8$ does belong to the model, but as the intensity of a one-gram fish, where $G(1)/1=8$. Intensity has already halved by $16$ g, because a fourth root of $16$ divides it by $2$. At $16$ g the intensity is $4$ cm$^{2}$ per gram against the stated $8$, so the statement is False.

@@ -1,0 +1,496 @@
+=== ITEM 0
+**C) The total interest paid over the life of the loan is approximately \$105,000.00.**  (false)
+
+Interest over the life of the loan is everything paid beyond the amount borrowed. Write $T$ for the total amount handed over, $K$ for the amount borrowed and $I$ for the interest bill:
+
+$$I = T - K$$
+
+Here the amount borrowed is \$120,000.00, so $K = 120,000$. Eight full payments come to
+
+$$8 \times 25,000 = 200,000.00$$
+
+The ninth payment clears the year-8 balance, which is the debt grown forward minus the payments grown forward:
+
+$$120,000 \times (1.14)^{8} \approx 342,310.37$$
+
+$$\frac{25,000}{0.14}\bigl[(1.14)^{8} - 1\bigr] \approx 330,819.00$$
+
+$$342,310.37 - 330,819.00 = 11,491.37$$
+
+$$11,491.37 \times 1.14 \approx 13,100.16$$
+
+So the borrower pays
+
+$$200,000.00 + 13,100.16 = 213,100.16$$
+
+and the interest inside that total is
+
+$$213,100.16 - 120,000.00 = 93,100.16$$
+
+The claim states about \$105,000.00, so compare it with the interest just found:
+
+$$105,000.00 - 93,100.16 = 11,899.84$$
+
+The true interest bill is about \$93,100.16, nearly \$12,000 below the stated figure, so the statement is false.
+=== ITEM 1
+**D) The total amount actually paid over the life of the loan is approximately \$210,000.00.**  (false)
+
+The total paid is eight full payments plus a smaller ninth one, so the ninth payment has to be worked out rather than assumed. Write $a$ for the fixed payment, $F$ for the final payment and $T$ for the total:
+
+$$T = 8a + F$$
+
+With $a = 25,000$ the eight full payments give
+
+$$8 \times 25,000 = 200,000.00$$
+
+The balance they leave at the end of year 8 is the debt grown forward minus the payments grown forward:
+
+$$120,000 \times (1.14)^{8} \approx 342,310.37$$
+
+$$\frac{25,000}{0.14}\bigl[(1.14)^{8} - 1\bigr] \approx 330,819.00$$
+
+$$342,310.37 - 330,819.00 = 11,491.37$$
+
+That balance is settled one year later, so it carries one more year of interest:
+
+$$11,491.37 \times 1.14 \approx 13,100.16$$
+
+Adding the pieces:
+
+$$200,000.00 + 13,100.16 = 213,100.16$$
+
+The claim states about \$210,000.00, so compare it with the total just found:
+
+$$213,100.16 - 210,000.00 = 3,100.16$$
+
+The company actually pays about \$213,100.16, more than \$3,000 above the stated figure, so the statement is false.
+=== ITEM 2
+**E) Assuming all 9 payments are full \$25,000 payments overstates the true total amount paid by more than \$10,000.**  (true)
+
+The comparison needs the true total against the total that nine full payments would give.
+
+Nine full payments would be
+
+$$9 \times 25,000 = 225,000.00$$
+
+The true total uses the smaller ninth payment. Eight full payments leave a balance at the end of year 8 of
+
+$$120,000 \times (1.14)^{8} - \frac{25,000}{0.14}\bigl[(1.14)^{8} - 1\bigr]$$
+
+$$\approx 342,310.37 - 330,819.00 = 11,491.37$$
+
+That balance is cleared a year later, so it grows once more before it is settled:
+
+$$11,491.37 \times 1.14 \approx 13,100.16$$
+
+The true total is the eight full payments plus that smaller ninth payment:
+
+$$8 \times 25,000 + 13,100.16 = 213,100.16$$
+
+The overstatement is the difference between the two totals:
+
+$$225,000.00 - 213,100.16 = 11,899.84$$
+
+The claim requires an overstatement above \$10,000, and \$11,899.84 clears it by \$1,899.84, so the statement is true.
+=== ITEM 3
+**D) The year-end equivalent value of the reserve fund's quarterly deposits made during a single year is \$1,240.50, and the reserve fund's balance after 3 years is approximately \$4,066.48.**  (true)
+
+The reserve deposits land at quarter ends and earn simple interest for the rest of the year, which collapses to a single year-end amount. Write $D$ for one quarterly deposit and $V$ for that year-end equivalent:
+
+$$V = D(4 + 1.5r)$$
+
+Substituting $D = 300$ and the reserve rate $r = 9\% = 0.09$:
+
+$$1.5 \times 0.09 = 0.135$$
+
+$$4 + 0.135 = 4.135$$
+
+$$300 \times 4.135 = 1,240.50$$
+
+That equivalent deposit then compounds annually like an ordinary annuity, with $a = 1,240.50$ and $N = 3$:
+
+$$F_N = \frac{a}{r}\bigl[(1+r)^{N} - 1\bigr]$$
+
+$$(1.09)^{3} \approx 1.295029$$
+
+$$1.295029 - 1 = 0.295029$$
+
+$$\frac{1,240.50}{0.09} \approx 13,783.33$$
+
+$$F_3 \approx 13,783.33 \times 0.295029$$
+
+$$F_3 \approx 4,066.48$$
+
+Both figures in the claim, \$1,240.50 and \$4,066.48, match the calculation, so the statement is true.
+=== ITEM 4
+**D) If the return had instead been \$10,000, with the outlay unchanged, the internal rate of return would exceed 24%.**  (true)
+
+For a one-year project the internal rate of return comes straight from the ratio of return to outlay:
+
+$$r = \frac{b}{a} - 1$$
+
+Substituting the unchanged outlay $a = 8,000$ and the larger return $b = 10,000$:
+
+$$r = \frac{10,000}{8,000} - 1$$
+
+$$r = 1.25 - 1$$
+
+$$r = 0.25 = 25\%$$
+
+Subtracting the threshold named in the claim from this rate gives the gap in percentage points:
+
+$$25\% - 24\% = 1$$
+
+The rate clears 24% by a full percentage point, so the statement is true.
+=== ITEM 5
+**D) If the Year 2 return had instead been \$8,000, with Year 1 unchanged at \$7,000, the internal rate of return would exceed 13%.**  (true)
+
+Changing the Year 2 return changes the quadratic's leading coefficient, so the rate has to be solved again:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With $a_1 = 7,000$ and $a_2 = 8,000$:
+
+$$8,000s^{2} + 7,000s - 12,000 = 0$$
+
+$$8s^{2} + 7s - 12 = 0$$
+
+The discriminant is
+
+$$7^{2} + 4(8)(12) = 49 + 384 = 433$$
+
+$$\sqrt{433} \approx 20.8087$$
+
+$$s = \frac{-7 + 20.8087}{16} \approx 0.86304$$
+
+$$r = \frac{1}{0.86304} - 1 \approx 0.15872 = 15.87\%$$
+
+Subtracting the threshold named in the claim from this rate gives the gap in percentage points:
+
+$$15.87\% - 13\% = 2.87$$
+
+The stronger second-year return lifts the rate to about 15.87%, clearing 13% by nearly three percentage points, so the statement is true.
+=== ITEM 6
+**E) Doubling both returns to \$14,000 in Year 1 and \$14,000 in Year 2, with the outlay unchanged at \$12,000, would result in an internal rate of return of approximately 21.84%.**  (false)
+
+Doubling both returns changes both coefficients of the quadratic, so the rate must be recomputed rather than scaled:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With $a_1 = a_2 = 14,000$ and the outlay still \$12,000:
+
+$$14,000s^{2} + 14,000s - 12,000 = 0$$
+
+$$7s^{2} + 7s - 6 = 0$$
+
+The discriminant is
+
+$$7^{2} + 4(7)(6) = 49 + 168 = 217$$
+
+$$\sqrt{217} \approx 14.7309$$
+
+$$s = \frac{-7 + 14.7309}{14} \approx 0.55221$$
+
+$$r = \frac{1}{0.55221} - 1 \approx 0.81091 = 81.09\%$$
+
+The claim names about 21.84%, which is simply twice the original 10.92%. Subtracting that stated figure from the computed rate gives the gap in percentage points:
+
+$$81.09\% - 21.84\% = 59.25$$
+
+The true rate is about 81.09%, nearly sixty percentage points above the stated figure, because doubling the returns does not double the rate. The statement is false.
+=== ITEM 7
+**D) If the Year 1 return were \$9,000 higher, with Year 2 unchanged at \$15,000, the internal rate of return would exceed 30%.**  (true)
+
+Raising the Year 1 return changes the middle coefficient of the quadratic, so the rate is solved again from scratch:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+A \$9,000 increase makes the first return $9,000 + 9,000 = 18,000$, with Year 2 still at \$15,000:
+
+$$15,000s^{2} + 18,000s - 20,000 = 0$$
+
+$$15s^{2} + 18s - 20 = 0$$
+
+The discriminant is
+
+$$18^{2} + 4(15)(20) = 324 + 1,200 = 1,524$$
+
+$$\sqrt{1,524} \approx 39.0384$$
+
+$$s = \frac{-18 + 39.0384}{30} \approx 0.70128$$
+
+$$r = \frac{1}{0.70128} - 1 \approx 0.42596 = 42.60\%$$
+
+Subtracting the threshold named in the claim from this rate gives the gap in percentage points:
+
+$$42.60\% - 30\% = 12.60$$
+
+Pulling money forward into Year 1 lifts the rate to about 42.60%, well past the 30% threshold, so the statement is true.
+=== ITEM 8
+**C) Based on the internal rate of return criterion, Project Y should be preferred over Project X.**  (false)
+
+The internal rate of return criterion ranks projects by rate and prefers the higher one, so both rates are needed:
+
+$$r = \frac{b}{a} - 1$$
+
+Project X:
+
+$$r_X = \frac{17,250}{15,000} - 1 = 1.15 - 1 = 0.15 = 15\%$$
+
+Project Y:
+
+$$r_Y = \frac{24,750}{22,000} - 1 = 1.125 - 1 = 0.125 = 12.5\%$$
+
+Subtracting the rate of Project Y from the rate of Project X gives the gap in percentage points:
+
+$$15\% - 12.5\% = 2.5$$
+
+Project X earns 2.5 percentage points more per dollar committed, so the criterion picks X rather than Y. The claim puts Y ahead, so the statement is false.
+=== ITEM 9
+**E) If Project Y's payoff had instead been \$25,000, with the outlay unchanged at \$22,000, its internal rate of return would exceed that of Project X.**  (false)
+
+A larger payoff on the same outlay raises Project Y's rate, so recompute it with the one-year rule:
+
+$$r = \frac{b}{a} - 1$$
+
+Substituting the unchanged \$22,000 outlay and the higher \$25,000 payoff:
+
+$$r_Y = \frac{25,000}{22,000} - 1$$
+
+$$\frac{25,000}{22,000} \approx 1.136364$$
+
+$$r_Y \approx 0.136364 = 13.64\%$$
+
+Project X's rate comes from its own figures:
+
+$$r_X = \frac{17,250}{15,000} - 1 = 0.15 = 15\%$$
+
+Subtracting the recomputed rate of Project Y from the rate of Project X gives the gap in percentage points:
+
+$$15\% - 13.64\% = 1.36$$
+
+Even with the bigger payoff, Project Y stays 1.36 percentage points behind Project X, so the statement is false.
+=== ITEM 10
+**A) The internal rate of return is approximately 14.5%.**  (false)
+
+The internal rate of return is the discount rate at which net present value is zero:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0$$
+
+Substituting $a_0 = -34,000$, $a_1 = 16,000$, $a_2 = 24,000$ and writing $s = 1/(1+r)$:
+
+$$24,000s^{2} + 16,000s - 34,000 = 0$$
+
+Dividing through by 2,000:
+
+$$12s^{2} + 8s - 17 = 0$$
+
+The discriminant is
+
+$$8^{2} + 4(12)(17) = 64 + 816 = 880$$
+
+$$\sqrt{880} \approx 29.665$$
+
+$$s = \frac{-8 + 29.665}{24} \approx 0.90270$$
+
+$$r = \frac{1}{0.90270} - 1 \approx 0.10778 = 10.78\%$$
+
+The claim states about 14.5%. Subtracting the computed rate from that stated figure gives the gap in percentage points:
+
+$$14.5\% - 10.78\% = 3.72$$
+
+The true rate is about 10.78%, well short of the stated figure, so the statement is false.
+=== ITEM 11
+**D) If the Year 2 return had instead been \$20,000, with Year 1 unchanged at \$16,000, the internal rate of return would exceed the internal rate of return of the original project.**  (false)
+
+Both versions of the project need their own rate, since changing a cash flow changes the whole equation:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With the original returns:
+
+$$24,000s^{2} + 16,000s - 34,000 = 0 \implies 12s^{2} + 8s - 17 = 0$$
+
+$$\sqrt{64 + 816} = \sqrt{880} \approx 29.665, \qquad s \approx \frac{-8 + 29.665}{24} \approx 0.90270$$
+
+$$r \approx \frac{1}{0.90270} - 1 \approx 0.10778 = 10.78\%$$
+
+With the Year 2 return cut to \$20,000:
+
+$$20,000s^{2} + 16,000s - 34,000 = 0 \implies 10s^{2} + 8s - 17 = 0$$
+
+$$8^{2} + 4(10)(17) = 64 + 680 = 744, \qquad \sqrt{744} \approx 27.276$$
+
+$$s = \frac{-8 + 27.276}{20} \approx 0.96382$$
+
+$$r = \frac{1}{0.96382} - 1 \approx 0.03754 = 3.75\%$$
+
+Subtracting the weaker rate from the original rate gives the gap in percentage points:
+
+$$10.78\% - 3.75\% = 7.03$$
+
+Cutting \$4,000 from the second year drags the rate down by about seven percentage points rather than lifting it, so the statement is false.
+=== ITEM 12
+**E) Reducing the initial outlay to \$30,000, with returns unchanged at \$16,000 and \$24,000, would lower the internal rate of return.**  (false)
+
+A smaller outlay changes the constant term of the quadratic, so the rate is solved again:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With the outlay reduced to \$30,000 and the returns unchanged:
+
+$$24,000s^{2} + 16,000s - 30,000 = 0$$
+
+Dividing through by 2,000:
+
+$$12s^{2} + 8s - 15 = 0$$
+
+The discriminant works out exactly:
+
+$$8^{2} + 4(12)(15) = 64 + 720 = 784 = 28^{2}$$
+
+$$s = \frac{-8 + 28}{24} = \frac{20}{24} \approx 0.83333$$
+
+$$r = \frac{1}{0.83333} - 1 = 0.20 = 20\%$$
+
+The original project earns about 10.78%, so subtracting that from the new rate gives the gap in percentage points:
+
+$$20\% - 10.78\% = 9.22$$
+
+Paying less for the same returns raises the rate by more than nine percentage points instead of lowering it, so the statement is false.
+=== ITEM 13
+**D) Doubling both returns to \$68,000 in Year 1 and \$84,000 in Year 2, with the outlay unchanged at \$65,000, would more than double the internal rate of return.**  (true)
+
+Doubling both returns changes two coefficients of the quadratic, so the rate has to be recomputed rather than scaled:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With $a_1 = 68,000$, $a_2 = 84,000$ and the outlay still \$65,000:
+
+$$84,000s^{2} + 68,000s - 65,000 = 0$$
+
+$$84s^{2} + 68s - 65 = 0$$
+
+The discriminant is
+
+$$68^{2} + 4(84)(65) = 4,624 + 21,840 = 26,464$$
+
+$$\sqrt{26,464} \approx 162.678$$
+
+$$s = \frac{-68 + 162.678}{168} \approx 0.56356$$
+
+$$r = \frac{1}{0.56356} - 1 \approx 0.77443 = 77.44\%$$
+
+Double the original rate of about 10.69% would be
+
+$$2 \times 10.69\% = 21.38\%$$
+
+Subtracting that doubled benchmark from the new rate gives the gap in percentage points:
+
+$$77.44\% - 21.38\% = 56.06$$
+
+The new rate clears twice the original by more than fifty percentage points, so the statement is true.
+=== ITEM 14
+**E) If the outlay were reduced to \$60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project.**  (false)
+
+Cutting the outlay changes the constant term of the quadratic, so the rate is solved again from scratch:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With the outlay at \$60,000 and the returns unchanged:
+
+$$42,000s^{2} + 34,000s - 60,000 = 0$$
+
+Dividing through by 1,000:
+
+$$42s^{2} + 34s - 60 = 0$$
+
+The discriminant works out exactly:
+
+$$34^{2} + 4(42)(60) = 1,156 + 10,080 = 11,236 = 106^{2}$$
+
+$$s = \frac{-34 + 106}{84} = \frac{72}{84} \approx 0.857143$$
+
+$$r = \frac{1}{0.857143} - 1 \approx 0.16667 = 16.67\%$$
+
+The original project earns about 10.69%, so subtracting that from the new rate gives the gap in percentage points:
+
+$$16.67\% - 10.69\% = 5.98$$
+
+Paying \$5,000 less for the same rental income lifts the rate by about six percentage points instead of lowering it, so the statement is false.
+=== ITEM 15
+**E) If Option 2's Year 2 return were removed entirely, leaving only $a_0 = -\$50,000$ and $a_1 = \$6,000$, its internal rate of return would be even lower than Option 2's own internal rate of return.**  (true)
+
+Removing the second return leaves a one-year project, whose rate comes from the ratio of return to outlay:
+
+$$-a + \frac{b}{1+r} = 0 \implies r = \frac{b}{a} - 1$$
+
+Substituting the \$50,000 outlay and the single \$6,000 return:
+
+$$r = \frac{6,000}{50,000} - 1$$
+
+$$r = 0.12 - 1$$
+
+$$r = -0.88 = -88\%$$
+
+Option 2 keeps both returns and earns about $-58.84\%$. Comparing the two rates:
+
+$$-88\% < -58.84\%$$
+
+Subtracting the rate of Option 2 from the stripped-down rate gives the gap in percentage points:
+
+$$-88 - (-58.84) = -29.16$$
+
+Dropping the second \$6,000 pushes the rate about 29 percentage points further into negative territory, so the stripped-down version is indeed the lower of the two and the statement is true.
+=== ITEM 16
+**C) Based on the internal rate of return criterion, Design B should be preferred over Design A.**  (true)
+
+The internal rate of return criterion picks the design with the higher rate, so both rates are needed.
+
+Design A solves the two-year equation with $s = 1/(1+r)$:
+
+$$88,000s^{2} + 54,000s - 120,000 = 0 \implies 44s^{2} + 27s - 60 = 0$$
+
+$$\sqrt{729 + 10,560} = \sqrt{11,289} \approx 106.250$$
+
+$$s \approx \frac{-27 + 106.250}{88} \approx 0.90057, \qquad r_A \approx 0.11041 = 11.04\%$$
+
+Design B is a one-year project:
+
+$$r_B = \frac{81,200}{70,000} - 1 = 0.16 = 16\%$$
+
+Subtracting the rate of Design A from the rate of Design B gives the gap in percentage points:
+
+$$16\% - 11.04\% = 4.96$$
+
+Design B earns nearly five percentage points more per dollar committed, so the criterion prefers Design B and the statement is true.
+=== ITEM 17
+**E) If Design A's Year 1 return were \$10,000 lower, with Year 2 unchanged at \$88,000, its internal rate of return would still exceed Design B's 16%.**  (false)
+
+A smaller Year 1 return changes the middle coefficient, so Design A's rate must be solved again:
+
+$$a_0 + \frac{a_1}{1+r} + \frac{a_2}{(1+r)^{2}} = 0, \qquad s = \frac{1}{1+r}$$
+
+With the first return cut by \$10,000 to $54,000 - 10,000 = 44,000$ and Year 2 unchanged:
+
+$$88,000s^{2} + 44,000s - 120,000 = 0$$
+
+Dividing through by 4,000:
+
+$$22s^{2} + 11s - 30 = 0$$
+
+The discriminant is
+
+$$11^{2} + 4(22)(30) = 121 + 2,640 = 2,761$$
+
+$$\sqrt{2,761} \approx 52.545$$
+
+$$s = \frac{-11 + 52.545}{44} \approx 0.94420$$
+
+$$r = \frac{1}{0.94420} - 1 \approx 0.05909 = 5.91\%$$
+
+Subtracting the weakened rate of Design A from the rate of Design B gives the gap in percentage points:
+
+$$16\% - 5.91\% = 10.09$$
+
+The weakened version of Design A earns about 5.91%, roughly ten percentage points below Design B's 16%, so it does not exceed it and the statement is false.

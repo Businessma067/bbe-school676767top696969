@@ -1,0 +1,2238 @@
+[
+  {
+    "id": "math-11-81",
+    "title": "Present Value of a Single Future Payment for a Bakery Equipment Fund",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "statements": [
+      "The amount she must deposit today is approximately \\$4,081.49.",
+      "If the interest rate were instead 5%, the required deposit today would be LOWER than \\$4,081.49.",
+      "The interest that will be earned over the 3 years is approximately \\$928.51.",
+      "If the target amount were doubled to \\$10,000, the required deposit today would also exactly double, to approximately \\$8,162.98.",
+      "If the horizon were extended to 6 years at the same 7% rate, the required deposit today would be exactly half of \\$4,081.49."
+    ],
+    "ov_len": 1283,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 208,
+        "dash": false,
+        "text": "**A) The amount she must deposit today is approximately \\$4,081.49.**  (true)\n\nPlugging A = 5,000, r = 0.07, and n = 3 into $x = A/(1+r)^{n}$ gives 5,000/1.225043 = \\$4,081.49, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 352,
+        "dash": false,
+        "text": "**B) If the interest rate were instead 5%, the required deposit today would be LOWER than \\$4,081.49.**  (false)\n\nA lower discount rate means each future dollar is discounted less severely, so LESS growth is assumed and MORE must be set aside today: at 5% the required deposit is \\$4,319.19, which is higher than the 7% figure of \\$4,081.49, not lower."
+      },
+      {
+        "letter": "C",
+        "len": 220,
+        "dash": false,
+        "text": "**C) The interest that will be earned over the 3 years is approximately \\$928.51.**  (false)\n\nThe interest earned is simply the future target minus today's deposit: 5,000.00 - 4,081.49 = \\$918.51, not \\$928.51 as stated."
+      },
+      {
+        "letter": "D",
+        "len": 316,
+        "dash": false,
+        "text": "**D) If the target amount were doubled to \\$10,000, the required deposit today would also exactly double, to approximately \\$8,162.98.**  (true)\n\nBecause $x = A/(1+r)^{n}$ is directly proportional to A for fixed r and n, doubling the target amount exactly doubles the required deposit, from \\$4,081.49 to \\$8,162.98."
+      },
+      {
+        "letter": "E",
+        "len": 386,
+        "dash": false,
+        "text": "**E) If the horizon were extended to 6 years at the same 7% rate, the required deposit today would be exactly half of \\$4,081.49.**  (false)\n\nThe discounting relationship is exponential in time, not linear, so doubling the horizon does not halve the deposit: the correct 6-year deposit is $5{,}000/(1.07)^{6} = \\$3{,}331.71$, which is well above the naively halved figure of \\$2,040.75."
+      }
+    ]
+  },
+  {
+    "id": "math-11-82",
+    "title": "Future Value of a Freelancer's Present Deposit",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "statements": [
+      "The accumulated value after 5 years is approximately \\$8,698.47.",
+      "The interest earned during the first 5 years is approximately \\$2,198.47.",
+      "The accumulated value after 10 years is exactly double the 5-year value.",
+      "The interest earned during the SECOND 5-year period, approximately \\$2,942.04, is SMALLER than the interest earned during the FIRST 5-year period, approximately \\$2,198.47.",
+      "If the interest rate were instead 3%, the 5-year accumulated value would be exactly half of \\$8,698.47."
+    ],
+    "ov_len": 1184,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 163,
+        "dash": false,
+        "text": "**A) The accumulated value after 5 years is approximately \\$8,698.47.**  (true)\n\n$F(5) = 6{,}500 \\times (1.06)^{5} = \\$8{,}698.47$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 185,
+        "dash": false,
+        "text": "**B) The interest earned during the first 5 years is approximately \\$2,198.47.**  (true)\n\nThe 5-year interest earned is 8,698.47 - 6,500.00 = \\$2,198.47, matching the statement exactly."
+      },
+      {
+        "letter": "C",
+        "len": 263,
+        "dash": false,
+        "text": "**C) The accumulated value after 10 years is exactly double the 5-year value.**  (false)\n\nBecause compounding is exponential, not linear, in time, $F(10) = 6{,}500 \\times (1.06)^{10} = \\$11{,}640.51$, which is well below the naively doubled figure of \\$17,396.94."
+      },
+      {
+        "letter": "D",
+        "len": 436,
+        "dash": false,
+        "text": "**D) The interest earned during the SECOND 5-year period, approximately \\$2,942.04, is SMALLER than the interest earned during the FIRST 5-year period, approximately \\$2,198.47.**  (false)\n\nThe interest earned in the second 5-year block (\\$2,942.04) actually EXCEEDS that of the first block (\\$2,198.47), not the reverse, because interest is earned on an ever-larger accumulated balance as time passes - the hallmark of compound growth."
+      },
+      {
+        "letter": "E",
+        "len": 307,
+        "dash": false,
+        "text": "**E) If the interest rate were instead 3%, the 5-year accumulated value would be exactly half of \\$8,698.47.**  (false)\n\nHalving the rate does not halve the future value, since $(1+r)^{n}$ is not linear in r: at 3%, F(5) = \\$7,535.28, which is considerably more than half of the 6%-rate value of \\$8,698.47."
+      }
+    ]
+  },
+  {
+    "id": "math-11-83",
+    "title": "Future Value of an Ordinary Annuity for a Dental Clinic's Equipment Fund",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "statements": [
+      "The future value after 6 years is approximately \\$13,603.84.",
+      "The total interest earned over the 6 years is approximately \\$1,703.84.",
+      "The present-value equivalent of this future value is approximately \\$18,230.45.",
+      "If the annual deposit were increased by 50%, to \\$3,000, the 6-year future value would also rise by exactly 50%, to approximately \\$21,405.76.",
+      "If the number of annual deposits were doubled to 12 years, the future value would be LESS than double \\$13,603.84."
+    ],
+    "ov_len": 1272,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 164,
+        "dash": false,
+        "text": "**A) The future value after 6 years is approximately \\$13,603.84.**  (true)\n\n$F_6 = (2{,}000/0.05)[(1.05)^{6} - 1] = \\$13{,}603.84$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 223,
+        "dash": false,
+        "text": "**B) The total interest earned over the 6 years is approximately \\$1,703.84.**  (false)\n\nTotal deposits of \\$12,000.00 subtracted from the future value of \\$13,603.84 leaves \\$1,603.84 in interest, not \\$1,703.84 as stated."
+      },
+      {
+        "letter": "C",
+        "len": 318,
+        "dash": false,
+        "text": "**C) The present-value equivalent of this future value is approximately \\$18,230.45.**  (false)\n\nThis inverts the relationship $F_n = P_n(1+r)^{n}$: to go from the future value back to the present value one must DIVIDE by $(1+r)^{n}$, not multiply. The correctly computed present value is \\$10,151.40, not \\$18,230.45."
+      },
+      {
+        "letter": "D",
+        "len": 357,
+        "dash": false,
+        "text": "**D) If the annual deposit were increased by 50%, to \\$3,000, the 6-year future value would also rise by exactly 50%, to approximately \\$21,405.76.**  (false)\n\nBecause Fn is directly proportional to the periodic deposit a, increasing a by 50% (from \\$2,000 to \\$3,000) increases F6 by exactly 50%, from \\$13,603.84 to \\$20,405.76, not \\$21,405.76 as stated."
+      },
+      {
+        "letter": "E",
+        "len": 435,
+        "dash": false,
+        "text": "**E) If the number of annual deposits were doubled to 12 years, the future value would be LESS than double \\$13,603.84.**  (false)\n\nF12 = \\$31,834.24 is actually MORE than double the 6-year value of \\$13,603.84 (double would be \\$27,207.68), not less, since extending the deposit period lets earlier deposits keep compounding on top of the additional deposits, so the future value grows faster than linearly with the number of periods."
+      }
+    ]
+  },
+  {
+    "id": "math-11-84",
+    "title": "Future Value of an Ordinary Annuity for a Logistics Company's Fleet Fund",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "statements": [
+      "The future value after 10 years is approximately \\$50,702.97.",
+      "The total interest earned over the 10 years is approximately \\$15,702.97.",
+      "If the deposit period were extended to 20 years, the future value would be LESS than double \\$50,702.97.",
+      "The interest-only portion of the 10-year future value, approximately \\$15,702.97, exceeds the total principal deposited of \\$35,000.00.",
+      "If the interest rate rose to 10%, the 10-year future value would exceed \\$55,000.00."
+    ],
+    "ov_len": 1195,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 169,
+        "dash": false,
+        "text": "**A) The future value after 10 years is approximately \\$50,702.97.**  (true)\n\n$F_{10} = (3{,}500/0.08)[(1.08)^{10} - 1] = \\$50{,}702.97$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 211,
+        "dash": false,
+        "text": "**B) The total interest earned over the 10 years is approximately \\$15,702.97.**  (true)\n\nTotal deposits of \\$35,000.00 subtracted from \\$50,702.97 leaves \\$15,702.97 in interest, matching the statement exactly."
+      },
+      {
+        "letter": "C",
+        "len": 344,
+        "dash": false,
+        "text": "**C) If the deposit period were extended to 20 years, the future value would be LESS than double \\$50,702.97.**  (false)\n\nBecause the future value grows exponentially rather than linearly with the number of periods, doubling the deposit period to 20 years produces F20 = \\$160,166.87, which is well MORE than double the 10-year value, not less."
+      },
+      {
+        "letter": "D",
+        "len": 328,
+        "dash": false,
+        "text": "**D) The interest-only portion of the 10-year future value, approximately \\$15,702.97, exceeds the total principal deposited of \\$35,000.00.**  (false)\n\nThe interest earned (\\$15,702.97) is smaller than the total principal contributed (\\$35,000.00) over this particular 10-year horizon, not larger - contradicting the statement."
+      },
+      {
+        "letter": "E",
+        "len": 206,
+        "dash": false,
+        "text": "**E) If the interest rate rose to 10%, the 10-year future value would exceed \\$55,000.00.**  (true)\n\nRaising the rate to 10% increases F10 to \\$55,780.97, which does exceed the \\$55,000.00 threshold stated."
+      }
+    ]
+  },
+  {
+    "id": "math-11-85",
+    "title": "Present Value of an Ordinary Annuity for a Retiree's Withdrawal Plan",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "statements": [
+      "The present value needed today is approximately \\$25,775.15.",
+      "The total nominal withdrawals over 15 years, \\$36,000.00, exceed the required deposit of \\$25,775.15, illustrating that future dollars are worth less than present dollars.",
+      "If withdrawals were extended to 30 years at the same rate, the present value would exactly double, to approximately \\$51,550.30.",
+      "The gap between the total nominal withdrawals and today's required deposit, approximately \\$11,224.85, represents the total discount applied.",
+      "If the interest rate were higher, the required present-value deposit would be HIGHER than \\$25,775.15."
+    ],
+    "ov_len": 1205,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 172,
+        "dash": false,
+        "text": "**A) The present value needed today is approximately \\$25,775.15.**  (true)\n\n$P_{15} = (2{,}400/0.045)[1 - 1/(1.045)^{15}] = \\$25{,}775.15$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 385,
+        "dash": false,
+        "text": "**B) The total nominal withdrawals over 15 years, \\$36,000.00, exceed the required deposit of \\$25,775.15, illustrating that future dollars are worth less than present dollars.**  (true)\n\nThe \\$36,000.00 in total nominal withdrawals is indeed larger than the \\$25,775.15 that must be deposited today, since each future withdrawal is discounted back to a smaller present-day equivalent."
+      },
+      {
+        "letter": "C",
+        "len": 338,
+        "dash": false,
+        "text": "**C) If withdrawals were extended to 30 years at the same rate, the present value would exactly double, to approximately \\$51,550.30.**  (false)\n\nBecause $1/(1+r)^{n}$ shrinks nonlinearly as n grows, doubling the withdrawal period to 30 years raises the present value only to \\$39,091.65, not to the naively doubled figure of \\$51,550.30."
+      },
+      {
+        "letter": "D",
+        "len": 296,
+        "dash": false,
+        "text": "**D) The gap between the total nominal withdrawals and today's required deposit, approximately \\$11,224.85, represents the total discount applied.**  (false)\n\nSubtracting the required deposit from the total nominal withdrawals gives 36,000.00 - 25,775.15 = \\$10,224.85, not \\$11,224.85 as stated."
+      },
+      {
+        "letter": "E",
+        "len": 335,
+        "dash": false,
+        "text": "**E) If the interest rate were higher, the required present-value deposit would be HIGHER than \\$25,775.15.**  (false)\n\nA higher interest rate discounts future withdrawals more heavily, which REDUCES the amount needed today, not increases it: at 6% only \\$23,309.40 is required, which is lower than the 4.5%-rate figure of \\$25,775.15."
+      }
+    ]
+  },
+  {
+    "id": "math-11-86",
+    "title": "Present Value of an Ordinary Annuity vs. a Perpetuity for a Nonprofit Scholarship",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "statements": [
+      "The present value needed to fund the 20-year annuity is approximately \\$57,349.67.",
+      "The perpetuity value is approximately \\$83,333.33, exceeding the 20-year annuity's present value by approximately \\$25,983.66.",
+      "The 20-year annuity's present value represents approximately 72.82% of the equivalent perpetuity value.",
+      "If the term were extended to 40 years, the present value would rise to MORE than 95% of the perpetuity value.",
+      "The perpetuity formula is obtained by letting the number of payments grow toward infinity in the annuity present-value formula, so that the value converges to \\$83,333.33 as the limiting value."
+    ],
+    "ov_len": 1208,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 192,
+        "dash": false,
+        "text": "**A) The present value needed to fund the 20-year annuity is approximately \\$57,349.67.**  (true)\n\n$P_{20} = (5{,}000/0.06)[1 - 1/(1.06)^{20}] = \\$57{,}349.67$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 293,
+        "dash": false,
+        "text": "**B) The perpetuity value is approximately \\$83,333.33, exceeding the 20-year annuity's present value by approximately \\$25,983.66.**  (true)\n\nThe perpetuity value of \\$83,333.33 exceeds the 20-year annuity's present value of \\$57,349.67 by exactly \\$25,983.66, matching the statement exactly."
+      },
+      {
+        "letter": "C",
+        "len": 213,
+        "dash": false,
+        "text": "**C) The 20-year annuity's present value represents approximately 72.82% of the equivalent perpetuity value.**  (false)\n\n57,349.67 divided by 83,333.33 gives 0.68820, or approximately 68.82%, not 72.82% as stated."
+      },
+      {
+        "letter": "D",
+        "len": 382,
+        "dash": false,
+        "text": "**D) If the term were extended to 40 years, the present value would rise to MORE than 95% of the perpetuity value.**  (false)\n\nEven after doubling the term to 40 years, the present value only reaches \\$75,231.50, or about 90.28% of the perpetuity value - still short of 95%, since later payments are discounted so heavily that extending the horizon further yields diminishing gains."
+      },
+      {
+        "letter": "E",
+        "len": 457,
+        "dash": false,
+        "text": "**E) The perpetuity formula is obtained by letting the number of payments grow toward infinity in the annuity present-value formula, so that the value converges to \\$83,333.33 as the limiting value.**  (true)\n\nThis is exactly how Section 11.5 derives the perpetuity formula: letting n tend to infinity in the annuity present-value formula causes $1/(1+r)^{n}$ to vanish, leaving the annuity's present value converging to a/r, matching the statement exactly."
+      }
+    ]
+  },
+  {
+    "id": "math-11-87",
+    "title": "Comparing Payment Streams via Present Value for a Machinery Purchase",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "statements": [
+      "The present value of Option 2's payments is approximately \\$16,288.18.",
+      "Because \\$16,288.18 is less than \\$18,000.00, Option 2 is the financially better choice, saving approximately \\$1,811.82.",
+      "If the interest rate were only 4%, Option 2's present value would be LOWER than \\$16,288.18, making Option 1 even less attractive by comparison.",
+      "The total nominal payments under Option 2 over 9 years, \\$22,500.00, exceed the \\$18,000.00 lump-sum cost of Option 1 by \\$4,600.00.",
+      "Option 1's \\$18,000.00, if invested today at 7% instead of used for the machinery, would grow after 9 years to a future value of more than \\$34,000.00."
+    ],
+    "ov_len": 1323,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 176,
+        "dash": false,
+        "text": "**A) The present value of Option 2's payments is approximately \\$16,288.18.**  (true)\n\n$P_9 = (2{,}500/0.07)[1 - 1/(1.07)^{9}] = \\$16{,}288.18$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 325,
+        "dash": false,
+        "text": "**B) Because \\$16,288.18 is less than \\$18,000.00, Option 2 is the financially better choice, saving approximately \\$1,811.82.**  (false)\n\nSince Option 2 costs only \\$16,288.18 in present-value terms versus Option 1's \\$18,000.00, Option 2 is genuinely cheaper by 18,000.00 - 16,288.18 = \\$1,711.82, not \\$1,811.82 as stated."
+      },
+      {
+        "letter": "C",
+        "len": 379,
+        "dash": false,
+        "text": "**C) If the interest rate were only 4%, Option 2's present value would be LOWER than \\$16,288.18, making Option 1 even less attractive by comparison.**  (false)\n\nA lower discount rate discounts future payments less severely, which RAISES their present value: at 4%, Option 2's present value rises to \\$18,588.31, which is higher than the 7%-rate figure of \\$16,288.18, not lower."
+      },
+      {
+        "letter": "D",
+        "len": 268,
+        "dash": false,
+        "text": "**D) The total nominal payments under Option 2 over 9 years, \\$22,500.00, exceed the \\$18,000.00 lump-sum cost of Option 1 by \\$4,600.00.**  (false)\n\nTotal nominal payments of \\$22,500.00 exceed the \\$18,000.00 lump sum by exactly \\$4,500.00, not \\$4,600.00 as stated."
+      },
+      {
+        "letter": "E",
+        "len": 325,
+        "dash": false,
+        "text": "**E) Option 1's \\$18,000.00, if invested today at 7% instead of used for the machinery, would grow after 9 years to a future value of more than \\$34,000.00.**  (false)\n\nGrowing the \\$18,000.00 lump sum forward at 7% for 9 years gives $18{,}000 \\times (1.07)^{9} = \\$33{,}092.26$, which does not exceed \\$34,000.00 as claimed."
+      }
+    ]
+  },
+  {
+    "id": "math-11-88",
+    "title": "Comparing Savings Strategies via Future Value for a Construction Firm",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "statements": [
+      "Strategy A's future value after 8 years is approximately \\$19,126.18.",
+      "Strategy B's future value after 8 years is approximately \\$14,856.46.",
+      "Strategy A yields a higher future value than Strategy B, by approximately \\$5,769.72.",
+      "The total cash committed under Strategy B over the 8 years, \\$11,200.00, is MORE than the \\$12,000.00 committed upfront under Strategy A.",
+      "If Strategy B's annual deposit were raised to \\$1,500, Strategy B's future value would still be LOWER than Strategy A's \\$19,126.18."
+    ],
+    "ov_len": 1126,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 169,
+        "dash": false,
+        "text": "**A) Strategy A's future value after 8 years is approximately \\$19,126.18.**  (true)\n\n$F_A = 12{,}000 \\times (1.06)^{8} = \\$19{,}126.18$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 169,
+        "dash": false,
+        "text": "**B) Strategy B's future value after 8 years is approximately \\$14,856.46.**  (false)\n\n$F_B = (1{,}400/0.06)[(1.06)^{8} - 1] = \\$13{,}856.46$, not \\$14,856.46 as stated."
+      },
+      {
+        "letter": "C",
+        "len": 164,
+        "dash": false,
+        "text": "**C) Strategy A yields a higher future value than Strategy B, by approximately \\$5,769.72.**  (false)\n\n19,126.18 - 13,856.46 = \\$5,269.72, not \\$5,769.72 as stated."
+      },
+      {
+        "letter": "D",
+        "len": 289,
+        "dash": false,
+        "text": "**D) The total cash committed under Strategy B over the 8 years, \\$11,200.00, is MORE than the \\$12,000.00 committed upfront under Strategy A.**  (false)\n\nTotal deposits under Strategy B are only \\$11,200.00, which is LESS than the \\$12,000.00 committed upfront under Strategy A, not more."
+      },
+      {
+        "letter": "E",
+        "len": 495,
+        "dash": false,
+        "text": "**E) If Strategy B's annual deposit were raised to \\$1,500, Strategy B's future value would still be LOWER than Strategy A's \\$19,126.18.**  (true)\n\nEven when Strategy B's total nominal contributions are raised to exactly match Strategy A's \\$12,000.00 upfront amount, its future value only reaches \\$14,846.20, still well below Strategy A's \\$19,126.18 - because front-loading the full amount gives it the maximum possible time to compound, an advantage spread-out deposits cannot fully offset."
+      }
+    ]
+  },
+  {
+    "id": "math-11-89",
+    "title": "Future Value of an Annuity Due for a Gym's Equipment Upgrade Fund",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "statements": [
+      "The future value of these deposits at the end of year 6 is approximately \\$21,426.05.",
+      "If the same \\$3,000 deposits were instead made at the END of each year, the future value would be approximately \\$20,405.76, which is LOWER than the annuity-due result.",
+      "The dollar gap between the annuity-due result and the ordinary-annuity result is approximately \\$1,120.29.",
+      "If the number of deposits were doubled to 12 years, the annuity-due future value would also exactly double, to approximately \\$42,852.10.",
+      "Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of interest growth, regardless of the number of payments or the interest rate."
+    ],
+    "ov_len": 1457,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 237,
+        "dash": false,
+        "text": "**A) The future value of these deposits at the end of year 6 is approximately \\$21,426.05.**  (true)\n\n$F_{\\mathrm{due}}(6) = F_{\\mathrm{ordinary}}(6) \\times 1.05 = 20{,}405.76 \\times 1.05 = \\$21{,}426.05$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 394,
+        "dash": false,
+        "text": "**B) If the same \\$3,000 deposits were instead made at the END of each year, the future value would be approximately \\$20,405.76, which is LOWER than the annuity-due result.**  (true)\n\n$F_{\\mathrm{ordinary}}(6) = (3{,}000/0.05)[(1.05)^{6} - 1] = \\$20{,}405.76$, which is indeed lower than the annuity-due result of \\$21,426.05, since end-of-year deposits each earn one fewer period of interest."
+      },
+      {
+        "letter": "C",
+        "len": 196,
+        "dash": false,
+        "text": "**C) The dollar gap between the annuity-due result and the ordinary-annuity result is approximately \\$1,120.29.**  (false)\n\nThe gap is 21,426.05 - 20,405.76 = \\$1,020.29, not \\$1,120.29 as stated."
+      },
+      {
+        "letter": "D",
+        "len": 403,
+        "dash": false,
+        "text": "**D) If the number of deposits were doubled to 12 years, the annuity-due future value would also exactly double, to approximately \\$42,852.10.**  (false)\n\nExtending to 12 years gives $F_{\\mathrm{due}}(12) = \\$50{,}138.93$, which is MORE than double the 6-year result (\\$42,852.10 would be double) - not exactly double - because future value grows exponentially, not linearly, with the number of periods."
+      },
+      {
+        "letter": "E",
+        "len": 572,
+        "dash": false,
+        "text": "**E) Because each payment in an annuity due occurs one period earlier than in an ordinary annuity, the annuity-due future value exceeds the ordinary-annuity future value by exactly one extra year's worth of interest growth, regardless of the number of payments or the interest rate.**  (true)\n\nThis is a direct structural identity: $F_{\\mathrm{due}} = F_{\\mathrm{ordinary}} \\times (1+r)$ holds for any combination of a, r, and n, since shifting every payment one period earlier simply multiplies the entire ordinary-annuity result by one additional period's growth factor."
+      }
+    ]
+  },
+  {
+    "id": "math-11-90",
+    "title": "Present Value of an Annuity Due for a Commercial Lease",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "statements": [
+      "The present value of the lease payments today is approximately \\$107,162.61.",
+      "If the same \\$24,000 payments were instead due at the END of each year, the present value would be approximately \\$101,096.80, which is LOWER than the annuity-due result.",
+      "The dollar gap between the annuity-due present value and the ordinary-annuity present value is approximately \\$7,065.81.",
+      "If the lease term were extended to 10 years, the annuity-due present value would also exactly double, to approximately \\$214,325.22.",
+      "The annuity-due present value can also be computed as the first \\$24,000 payment plus the present value of an ordinary annuity of the remaining 4 payments."
+    ],
+    "ov_len": 1531,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 230,
+        "dash": false,
+        "text": "**A) The present value of the lease payments today is approximately \\$107,162.61.**  (true)\n\n$P_{\\mathrm{due}}(5) = P_{\\mathrm{ordinary}}(5) \\times 1.06 = 101{,}096.80 \\times 1.06 = \\$107{,}162.61$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 429,
+        "dash": false,
+        "text": "**B) If the same \\$24,000 payments were instead due at the END of each year, the present value would be approximately \\$101,096.80, which is LOWER than the annuity-due result.**  (true)\n\n$P_{\\mathrm{ordinary}}(5) = (24{,}000/0.06)[1 - 1/(1.06)^{5}] = \\$101{,}096.80$, which is indeed lower than the annuity-due result of \\$107,162.61, since discounting end-of-year payments back one extra period each reduces their present value."
+      },
+      {
+        "letter": "C",
+        "len": 212,
+        "dash": false,
+        "text": "**C) The dollar gap between the annuity-due present value and the ordinary-annuity present value is approximately \\$7,065.81.**  (false)\n\nThe gap is 107,162.61 - 101,096.80 = \\$6,065.81, not \\$7,065.81 as stated."
+      },
+      {
+        "letter": "D",
+        "len": 439,
+        "dash": false,
+        "text": "**D) If the lease term were extended to 10 years, the annuity-due present value would also exactly double, to approximately \\$214,325.22.**  (false)\n\nExtending to 10 years gives $P_{\\mathrm{due}}(10) = \\$187{,}240.52$, which is LESS than double the 5-year result (\\$214,325.22 would be double) - not exactly double - because discounting is exponential, not linear, in the number of periods, so later payments contribute progressively less."
+      },
+      {
+        "letter": "E",
+        "len": 556,
+        "dash": false,
+        "text": "**E) The annuity-due present value can also be computed as the first \\$24,000 payment plus the present value of an ordinary annuity of the remaining 4 payments.**  (true)\n\nSince the first payment of an annuity due occurs today (with zero discounting) and the remaining n-1 payments form an ordinary annuity one period later, splitting the payment stream this way gives \\$24,000 today plus a discounted remainder of \\$83,162.40, for a combined total of \\$107,162.40, matching $P_{\\mathrm{due}}$ within rounding - confirming this alternative method is valid."
+      }
+    ]
+  },
+  {
+    "id": "math-11-91",
+    "title": "A Deferred Perpetuity for a Philanthropist's Endowed Fund",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "statements": [
+      "The value of the perpetuity as of the end of year 4 is approximately \\$166,666.67.",
+      "Discounting this year-4 value back 4 years to today at 6% gives a present value of approximately \\$132,015.61.",
+      "If the first payment instead began immediately at the end of year 1, today's present value would be LOWER than the deferred value of \\$132,015.61.",
+      "If the deferral were extended so the first payment begins at the end of year 9, today's present value would be LESS than half of \\$132,015.61.",
+      "The ratio of the deferred present value to the immediate perpetuity value is exactly 0.8321."
+    ],
+    "ov_len": 1459,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 316,
+        "dash": false,
+        "text": "**A) The value of the perpetuity as of the end of year 4 is approximately \\$166,666.67.**  (true)\n\nThe perpetuity formula a/r gives the value one period before the first payment; since the first payment falls at t = 5, that valuation point is t = 4, giving 10,000/0.06 = \\$166,666.67, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 252,
+        "dash": false,
+        "text": "**B) Discounting this year-4 value back 4 years to today at 6% gives a present value of approximately \\$132,015.61.**  (true)\n\nDiscounting \\$166,666.67 back 4 years at 6% gives $166{,}666.67/(1.06)^{4} = \\$132{,}015.61$, matching the statement exactly."
+      },
+      {
+        "letter": "C",
+        "len": 400,
+        "dash": false,
+        "text": "**C) If the first payment instead began immediately at the end of year 1, today's present value would be LOWER than the deferred value of \\$132,015.61.**  (false)\n\nDeferring the payments pushes them further into the future, which REDUCES today's present value, not increases it: the immediate perpetuity is worth \\$166,666.67 today, which is higher than the deferred value of \\$132,015.61, not lower."
+      },
+      {
+        "letter": "D",
+        "len": 419,
+        "dash": false,
+        "text": "**D) If the deferral were extended so the first payment begins at the end of year 9, today's present value would be LESS than half of \\$132,015.61.**  (false)\n\nExtending the deferral to 8 years reduces the present value to \\$104,568.80, which remains well ABOVE half of the 4-year-deferred value (\\$66,007.81), not below it - the value shrinks as deferral lengthens, but not fast enough to fall below half in this case."
+      },
+      {
+        "letter": "E",
+        "len": 255,
+        "dash": false,
+        "text": "**E) The ratio of the deferred present value to the immediate perpetuity value is exactly 0.8321.**  (false)\n\nBecause $PV_0 = V/(1.06)^{4}$, the ratio PV0/V is by definition exactly the 4-year discount factor $1/(1.06)^{4}$ ≈ 0.7921, not 0.8321 as stated."
+      }
+    ]
+  },
+  {
+    "id": "math-11-92",
+    "title": "Reverse-Engineering a Perpetual Preferred Stock's Fair Value",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "statements": [
+      "The fair value per share is approximately \\$60.71.",
+      "The stock is currently trading at \\$65.00 per share, which is below its fair value of \\$60.71, so the stock is UNDERVALUED.",
+      "If the required return fell to 4%, the fair value would rise to \\$116.25 per share.",
+      "This drop in the required return, from 7% to 4%, increases the fair value by MORE than 75%.",
+      "If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall to exactly \\$50.57, a 20% drop from the original \\$60.71."
+    ],
+    "ov_len": 1110,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 123,
+        "dash": false,
+        "text": "**A) The fair value per share is approximately \\$60.71.**  (true)\n\nP = 4.25/0.07 = \\$60.71, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 261,
+        "dash": false,
+        "text": "**B) The stock is currently trading at \\$65.00 per share, which is below its fair value of \\$60.71, so the stock is UNDERVALUED.**  (false)\n\nThe \\$65.00 market price sits ABOVE the \\$60.71 fair value, meaning the stock is OVERVALUED, not undervalued as claimed."
+      },
+      {
+        "letter": "C",
+        "len": 151,
+        "dash": false,
+        "text": "**C) If the required return fell to 4%, the fair value would rise to \\$116.25 per share.**  (false)\n\nP' = 4.25/0.04 = \\$106.25, not \\$116.25 as stated."
+      },
+      {
+        "letter": "D",
+        "len": 319,
+        "dash": false,
+        "text": "**D) This drop in the required return, from 7% to 4%, increases the fair value by MORE than 75%.**  (false)\n\nThe increase works out to EXACTLY 75.00%, not more than 75% - a precise boundary case where the statement's claim of \"more than\" narrowly fails even though the number itself (75%) looks correct at first glance."
+      },
+      {
+        "letter": "E",
+        "len": 316,
+        "dash": false,
+        "text": "**E) If instead the dividend were cut by 20% while the required return stayed at 7%, the fair value would fall to exactly \\$50.57, a 20% drop from the original \\$60.71.**  (false)\n\nCutting the dividend by 20% cuts the fair value by exactly 20% as well: from \\$60.71 the value falls to \\$48.57, not \\$50.57 as stated."
+      }
+    ]
+  },
+  {
+    "id": "math-11-93",
+    "title": "Combined Renovation Cost and Perpetual Maintenance Fund for a City Park",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "statements": [
+      "The present value of just the perpetual maintenance payments is approximately \\$333,333.33.",
+      "Including the \\$50,000 immediate renovation cost, the total amount the city must set aside today is approximately \\$383,333.33.",
+      "If the interest rate were instead 6%, the total required funding would be approximately \\$300,000.00.",
+      "This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.",
+      "If the council only needed the perpetuity and the rate were 6%, the required funding of \\$250,000.00 would be LESS than half of the original combined 4.5%-rate total of \\$383,333.33."
+    ],
+    "ov_len": 1369,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 187,
+        "dash": false,
+        "text": "**A) The present value of just the perpetual maintenance payments is approximately \\$333,333.33.**  (true)\n\nPerpetuity value = 15,000/0.045 = \\$333,333.33, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 271,
+        "dash": false,
+        "text": "**B) Including the \\$50,000 immediate renovation cost, the total amount the city must set aside today is approximately \\$383,333.33.**  (true)\n\nAdding the \\$50,000.00 renovation cost to the \\$333,333.33 perpetuity value gives \\$383,333.33, matching the statement exactly."
+      },
+      {
+        "letter": "C",
+        "len": 290,
+        "dash": false,
+        "text": "**C) If the interest rate were instead 6%, the total required funding would be approximately \\$300,000.00.**  (true)\n\nAt the higher 6% rate, the perpetuity value falls to \\$250,000.00, and adding the \\$50,000.00 renovation cost gives a total of \\$300,000.00, matching the statement exactly."
+      },
+      {
+        "letter": "D",
+        "len": 255,
+        "dash": false,
+        "text": "**D) This 1.5-percentage-point rate increase reduces the total funding requirement by MORE than 25%.**  (false)\n\nThe reduction of \\$83,333.33 represents approximately 21.74% of the original \\$383,333.33 total, which is more than 20% but not more than 25%."
+      },
+      {
+        "letter": "E",
+        "len": 494,
+        "dash": false,
+        "text": "**E) If the council only needed the perpetuity and the rate were 6%, the required funding of \\$250,000.00 would be LESS than half of the original combined 4.5%-rate total of \\$383,333.33.**  (false)\n\nThe perpetuity-only requirement at 6% (\\$250,000.00) is actually LARGER than half of the original combined total (\\$191,666.67), not smaller - even though raising the rate shrank the perpetuity value considerably, it still exceeds half of the original combined (renovation + maintenance) total."
+      }
+    ]
+  },
+  {
+    "id": "math-11-94",
+    "title": "Growing Perpetuity Valuation of a Rental Property's Escalating Cash Flows",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "statements": [
+      "The property's fair value is approximately \\$436,363.64.",
+      "If the cash flows did NOT grow, the plain-perpetuity fair value, \\$300,000.00, is HIGHER than the growing-perpetuity value of \\$436,363.64.",
+      "If the growth rate rose to 4%, the fair value would MORE than double, to over \\$872,727.28.",
+      "If the required return instead fell to 6%, the fair value would be approximately \\$715,714.29.",
+      "The growing-perpetuity valuation is only valid when the growth rate is below the required return; if the growth rate were to equal or exceed the 8% required return, the formula could not be used."
+    ],
+    "ov_len": 1334,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 137,
+        "dash": false,
+        "text": "**A) The property's fair value is approximately \\$436,363.64.**  (true)\n\nP = 24,000/0.055 = \\$436,363.64, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 380,
+        "dash": false,
+        "text": "**B) If the cash flows did NOT grow, the plain-perpetuity fair value, \\$300,000.00, is HIGHER than the growing-perpetuity value of \\$436,363.64.**  (false)\n\nA non-growing cash flow of the same starting size is worth only \\$300,000.00, which is actually LOWER than the growing-perpetuity value of \\$436,363.64, not higher, since growth adds value by raising every future cash flow."
+      },
+      {
+        "letter": "C",
+        "len": 411,
+        "dash": false,
+        "text": "**C) If the growth rate rose to 4%, the fair value would MORE than double, to over \\$872,727.28.**  (false)\n\nRaising the growth rate to 4% increases the fair value to \\$600,000.00, which is a substantial increase but is NOT more than double the original \\$436,363.64 (double would be \\$872,727.28) - the value is highly sensitive to (r - g) but does not increase without limit until g approaches r more closely."
+      },
+      {
+        "letter": "D",
+        "len": 174,
+        "dash": false,
+        "text": "**D) If the required return instead fell to 6%, the fair value would be approximately \\$715,714.29.**  (false)\n\nP'' = 24,000/0.035 = \\$685,714.29, not \\$715,714.29 as stated."
+      },
+      {
+        "letter": "E",
+        "len": 452,
+        "dash": false,
+        "text": "**E) The growing-perpetuity valuation is only valid when the growth rate is below the required return; if the growth rate were to equal or exceed the 8% required return, the formula could not be used.**  (true)\n\nThis is a direct structural requirement of the growing-perpetuity formula: it depends on the spread (r - g) staying strictly positive, so growth rates at or above the required return break the model entirely, matching the statement exactly."
+      }
+    ]
+  },
+  {
+    "id": "math-11-95",
+    "title": "The Gordon Growth Model for a Pension Fund's Stock Valuation",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "statements": [
+      "The next dividend is \\$3.09.",
+      "The fair value per share is approximately \\$54.50.",
+      "Mistakenly using the just-paid dividend instead of next year's dividend would give a value of \\$50.00, which UNDERSTATES the correct fair value of \\$51.50; the shortfall is said to be \\$2.50.",
+      "If the growth rate were instead 5%, the fair value would be MORE than double \\$51.50.",
+      "If the growth rate equaled the required return exactly, the growing-perpetuity valuation would yield a present value of exactly \\$0.00."
+    ],
+    "ov_len": 1208,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 103,
+        "dash": false,
+        "text": "**A) The next dividend is \\$3.09.**  (true)\n\nD1 = 3.00 × 1.03 = \\$3.09, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 115,
+        "dash": false,
+        "text": "**B) The fair value per share is approximately \\$54.50.**  (false)\n\nP = 3.09/0.06 = \\$51.50, not \\$54.50 as stated."
+      },
+      {
+        "letter": "C",
+        "len": 349,
+        "dash": false,
+        "text": "**C) Mistakenly using the just-paid dividend instead of next year's dividend would give a value of \\$50.00, which UNDERSTATES the correct fair value of \\$51.50; the shortfall is said to be \\$2.50.**  (false)\n\nUsing the just-paid dividend instead of next year's dividend gives \\$50.00, which is \\$1.50 below the correct \\$51.50, not \\$2.50 as stated."
+      },
+      {
+        "letter": "D",
+        "len": 395,
+        "dash": false,
+        "text": "**D) If the growth rate were instead 5%, the fair value would be MORE than double \\$51.50.**  (false)\n\nRaising the growth rate to 5% increases the fair value substantially, to \\$78.75, but this is still short of double the original \\$51.50 (which would be \\$103.00) - the growing-perpetuity value rises sharply as g approaches r, but 5% is not yet close enough to 9% to more than double it here."
+      },
+      {
+        "letter": "E",
+        "len": 337,
+        "dash": false,
+        "text": "**E) If the growth rate equaled the required return exactly, the growing-perpetuity valuation would yield a present value of exactly \\$0.00.**  (false)\n\nAs g → r, the formula's denominator (r - g) shrinks toward zero, driving the RESULT toward infinity, not toward \\$0.00 - the fair value becomes undefined (unboundedly large), not zero."
+      }
+    ]
+  },
+  {
+    "id": "math-11-96",
+    "title": "Comparing Level vs. Growing Royalty-Stream Purchase Deals for a Musician",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "statements": [
+      "Deal 1's fair value is \\$180,000.00, which exceeds the \\$170,000 asking price by \\$10,000.00, making it a good buy.",
+      "Deal 2's fair value is approximately \\$233,333.33, which exceeds the \\$170,000 asking price by more than \\$60,000.00.",
+      "Deal 1 offers the larger \"margin of safety\" of the two deals.",
+      "If Deal 2's growth rate were instead only 1%, its fair value would fall to approximately \\$155,555.56, making it a worse buy than its \\$170,000 asking price.",
+      "Comparing the two original deals, Deal 1's fair value is MORE than Deal 2's fair value."
+    ],
+    "ov_len": 1374,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 263,
+        "dash": false,
+        "text": "**A) Deal 1's fair value is \\$180,000.00, which exceeds the \\$170,000 asking price by \\$10,000.00, making it a good buy.**  (true)\n\nDeal 1's fair value is 18,000/0.10 = \\$180,000.00, exceeding the \\$170,000.00 price by \\$10,000.00, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 272,
+        "dash": false,
+        "text": "**B) Deal 2's fair value is approximately \\$233,333.33, which exceeds the \\$170,000 asking price by more than \\$60,000.00.**  (true)\n\nDeal 2's fair value is 14,000/0.06 = \\$233,333.33, exceeding the \\$170,000.00 price by \\$63,333.33, which is indeed more than \\$60,000.00."
+      },
+      {
+        "letter": "C",
+        "len": 249,
+        "dash": false,
+        "text": "**C) Deal 1 offers the larger \"margin of safety\" of the two deals.**  (false)\n\nDeal 2's margin of safety (\\$63,333.33) is substantially larger than Deal 1's (\\$10,000.00), so it is Deal 2, not Deal 1, that offers more cushion above its asking price."
+      },
+      {
+        "letter": "D",
+        "len": 350,
+        "dash": false,
+        "text": "**D) If Deal 2's growth rate were instead only 1%, its fair value would fall to approximately \\$155,555.56, making it a worse buy than its \\$170,000 asking price.**  (true)\n\nAt the lower 1% growth rate, Deal 2's fair value falls to \\$155,555.56, which sits below the \\$170,000.00 asking price, making it a worse buy at that reduced growth assumption."
+      },
+      {
+        "letter": "E",
+        "len": 329,
+        "dash": false,
+        "text": "**E) Comparing the two original deals, Deal 1's fair value is MORE than Deal 2's fair value.**  (false)\n\nDeal 1's fair value (\\$180,000.00) is actually LESS than Deal 2's fair value (\\$233,333.33), not more - the growing payment stream, even with a lower starting payment, is worth substantially more due to its perpetual growth."
+      }
+    ]
+  },
+  {
+    "id": "math-11-97",
+    "title": "Present Value Under Continuous Compounding for a Bond Retirement Fund",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "statements": [
+      "The present value required today is approximately \\$129,213.75.",
+      "This continuously compounded present value is HIGHER than the present value using ordinary annual compounding at the same 5.5% nominal rate.",
+      "The difference between the annual-compounding present value and the continuous-compounding present value is approximately \\$4,280.35.",
+      "If the horizon were shortened to 6 years at the same continuous 5.5% rate, the present value required today would be LESS than half of \\$129,213.75.",
+      "The continuously compounded annual discount factor is approximately 0.9465, meaning about 5.35% of value is \"lost\" to discounting each year."
+    ],
+    "ov_len": 1428,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 164,
+        "dash": false,
+        "text": "**A) The present value required today is approximately \\$129,213.75.**  (true)\n\n$S_0 = 250{,}000 \\times e^{-0.66} = \\$129{,}213.75$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 481,
+        "dash": false,
+        "text": "**B) This continuously compounded present value is HIGHER than the present value using ordinary annual compounding at the same 5.5% nominal rate.**  (false)\n\nContinuous compounding is the most profitable schedule for the lender at any given nominal rate, so reaching the same \\$250,000 target requires depositing LESS today under continuous compounding (\\$129,213.75) than under ordinary annual compounding (approximately \\$131,495.10) - the continuous figure is LOWER, not higher."
+      },
+      {
+        "letter": "C",
+        "len": 290,
+        "dash": false,
+        "text": "**C) The difference between the annual-compounding present value and the continuous-compounding present value is approximately \\$4,280.35.**  (false)\n\nThe correctly computed gap is 131,495.10 - 129,213.75 = \\$2,281.35, not \\$4,280.35 - the stated figure roughly doubles the true difference."
+      },
+      {
+        "letter": "D",
+        "len": 391,
+        "dash": false,
+        "text": "**D) If the horizon were shortened to 6 years at the same continuous 5.5% rate, the present value required today would be LESS than half of \\$129,213.75.**  (false)\n\nBecause discounting is exponential in time, halving the horizon does not halve the required deposit: at 6 years the required amount is \\$179,731.00, which is far MORE than half of the 12-year figure of \\$129,213.75, not less."
+      },
+      {
+        "letter": "E",
+        "len": 348,
+        "dash": false,
+        "text": "**E) The continuously compounded annual discount factor is approximately 0.9465, meaning about 5.35% of value is \"lost\" to discounting each year.**  (true)\n\n$e^{-0.055}$ ≈ 0.9465 means only about 94.65% of a dollar's value one year from now is captured today, so approximately 5.35% is lost to discounting each year, matching the statement exactly."
+      }
+    ]
+  },
+  {
+    "id": "math-11-98",
+    "title": "Continuous-Compounding Lump Sum vs. Discrete Annuity for a Biotech Milestone",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "statements": [
+      "The lump sum's future value under continuous compounding is approximately \\$131,629.13.",
+      "The annuity's future value is approximately \\$96,757.60, which is LOWER than the lump-sum continuous-compounding result, despite both strategies involving the same total \\$75,000 in contributions.",
+      "The lump-sum strategy outperforms the annuity strategy by more than \\$30,000.00.",
+      "This gap arises largely because the lump sum earns interest on the FULL \\$75,000 from day one, while the annuity's later deposits earn interest for only a very short time before the horizon ends.",
+      "If the company had instead invested the full \\$75,000 using discrete ANNUAL compounding at the same 6.25% rate for 9 years, the result would EXCEED the annuity strategy's future value of \\$96,757.60."
+    ],
+    "ov_len": 1663,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 202,
+        "dash": false,
+        "text": "**A) The lump sum's future value under continuous compounding is approximately \\$131,629.13.**  (true)\n\n$S_{\\mathrm{cont}} = 75{,}000 \\times e^{0.5625} = \\$131{,}629.13$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 428,
+        "dash": false,
+        "text": "**B) The annuity's future value is approximately \\$96,757.60, which is LOWER than the lump-sum continuous-compounding result, despite both strategies involving the same total \\$75,000 in contributions.**  (true)\n\nF9 = \\$96,757.60, which is indeed lower than the lump-sum continuous-compounding result of \\$131,629.13, illustrating that WHEN money is invested matters as much as HOW MUCH, even when total contributions are equal."
+      },
+      {
+        "letter": "C",
+        "len": 204,
+        "dash": false,
+        "text": "**C) The lump-sum strategy outperforms the annuity strategy by more than \\$30,000.00.**  (true)\n\nThe gap is 131,629.13 - 96,757.60 = \\$34,871.53, which exceeds \\$30,000.00, matching the statement exactly."
+      },
+      {
+        "letter": "D",
+        "len": 440,
+        "dash": false,
+        "text": "**D) This gap arises largely because the lump sum earns interest on the FULL \\$75,000 from day one, while the annuity's later deposits earn interest for only a very short time before the horizon ends.**  (true)\n\nThis is the correct conceptual explanation: front-loading the entire amount lets it compound over the full horizon, while spreading contributions out means later deposits have little to no time to grow before the milestone date."
+      },
+      {
+        "letter": "E",
+        "len": 473,
+        "dash": false,
+        "text": "**E) If the company had instead invested the full \\$75,000 using discrete ANNUAL compounding at the same 6.25% rate for 9 years, the result would EXCEED the annuity strategy's future value of \\$96,757.60.**  (true)\n\n$S_{\\mathrm{discrete}} = 75{,}000 \\times (1.0625)^{9} = \\$129{,}426.15$, which does exceed the annuity strategy's future value of \\$96,757.60, matching the statement exactly (though it still falls short of the continuous-compounding result of \\$131,629.13)."
+      }
+    ]
+  },
+  {
+    "id": "math-11-99",
+    "title": "Mixed Financial Planning: Annuity Due, Continuous Compounding & Perpetuity",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "statements": [
+      "The present value of the annuity-due lease payments is approximately \\$18,110.94.",
+      "The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately \\$27,610.90.",
+      "The \\$20,000 investment under continuous compounding at a nominal 6% rate accumulates, after 7 years, to approximately \\$31,439.24.",
+      "The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value of \\$37,500.00, which is LESS than double the present value of the 5-year annuity-due lease payments.",
+      "Comparing the accumulated continuous-compounding investment after 7 years to the perpetuity's present value, the continuous-compounding result is LARGER."
+    ],
+    "ov_len": 1797,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 285,
+        "dash": false,
+        "text": "**A) The present value of the annuity-due lease payments is approximately \\$18,110.94.**  (true)\n\nComputing the ordinary annuity present value first (\\$16,769.39) and then multiplying by (1.08) to shift each payment one period earlier gives \\$18,110.94, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 269,
+        "dash": false,
+        "text": "**B) The future value of these 5 annuity-due payments, evaluated at the end of year 5, is approximately \\$27,610.90.**  (false)\n\nComputing the ordinary annuity future value first (\\$24,639.72) and then multiplying by (1.08) gives \\$26,610.90, not \\$27,610.90 as stated."
+      },
+      {
+        "letter": "C",
+        "len": 223,
+        "dash": false,
+        "text": "**C) The \\$20,000 investment under continuous compounding at a nominal 6% rate accumulates, after 7 years, to approximately \\$31,439.24.**  (false)\n\n$S = 20{,}000 \\times e^{0.42} = \\$30{,}439.24$, not \\$31,439.24 as stated."
+      },
+      {
+        "letter": "D",
+        "len": 375,
+        "dash": false,
+        "text": "**D) The maintenance-reserve perpetuity, paying \\$3,000 per year forever at 8%, requires a present value of \\$37,500.00, which is LESS than double the present value of the 5-year annuity-due lease payments.**  (false)\n\nThe perpetuity's \\$37,500.00 present value actually exceeds double the annuity-due lease value (\\$36,221.88), so it is MORE than double, not less as stated."
+      },
+      {
+        "letter": "E",
+        "len": 322,
+        "dash": false,
+        "text": "**E) Comparing the accumulated continuous-compounding investment after 7 years to the perpetuity's present value, the continuous-compounding result is LARGER.**  (false)\n\nThe continuous-compounding investment grows to \\$30,439.24 after 7 years, which is LESS than the perpetuity's present value of \\$37,500.00, not larger."
+      }
+    ]
+  },
+  {
+    "id": "math-11-100",
+    "title": "Capstone: A Family Office's Four-Component Windfall Allocation",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "statements": [
+      "Component 1's accumulated value after 10 years under continuous compounding is approximately \\$247,308.20.",
+      "Component 2's required deposit today, using discrete annual compounding, is approximately \\$57,396.85.",
+      "Component 3's present value, the 12-year ordinary annuity of \\$10,000 at 7%, is approximately \\$79,429.40.",
+      "Component 4's present value, the growing perpetuity paying \\$5,000 next year and growing at 2% forever at a 7% required return, is exactly \\$100,000.00.",
+      "Summing the present-day resources committed to all four components - Component 1's initial investment, Component 2's required deposit today, Component 3's present value, and Component 4's present value - the total exceeds \\$500,000.00."
+    ],
+    "ov_len": 1799,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 204,
+        "dash": false,
+        "text": "**A) Component 1's accumulated value after 10 years under continuous compounding is approximately \\$247,308.20.**  (true)\n\n$S = 150{,}000 \\times e^{0.50} = \\$247{,}308.20$, matching the statement exactly."
+      },
+      {
+        "letter": "B",
+        "len": 189,
+        "dash": false,
+        "text": "**B) Component 2's required deposit today, using discrete annual compounding, is approximately \\$57,396.85.**  (false)\n\n$x = 80{,}000/(1.06)^{6} = \\$56{,}396.85$, not \\$57,396.85 as stated."
+      },
+      {
+        "letter": "C",
+        "len": 217,
+        "dash": false,
+        "text": "**C) Component 3's present value, the 12-year ordinary annuity of \\$10,000 at 7%, is approximately \\$79,429.40.**  (true)\n\n$P_{12} = (10{,}000/0.07)[1 - 1/(1.07)^{12}] = \\$79{,}429.40$, matching the statement exactly."
+      },
+      {
+        "letter": "D",
+        "len": 231,
+        "dash": false,
+        "text": "**D) Component 4's present value, the growing perpetuity paying \\$5,000 next year and growing at 2% forever at a 7% required return, is exactly \\$100,000.00.**  (true)\n\nP = 5,000/0.05 = \\$100,000.00, matching the statement exactly."
+      },
+      {
+        "letter": "E",
+        "len": 508,
+        "dash": false,
+        "text": "**E) Summing the present-day resources committed to all four components - Component 1's initial investment, Component 2's required deposit today, Component 3's present value, and Component 4's present value - the total exceeds \\$500,000.00.**  (false)\n\nAdding all four present-day figures gives \\$385,826.25 (using the correct Component 2 figure of \\$56,396.85), which is LESS than \\$500,000.00, not more - the plan is comfortably within, not in excess of, the available resources implied by this comparison."
+      }
+    ]
+  },
+  {
+    "id": "math-11-101",
+    "title": "Equipment Loan: Finding the Equal Annual Payment",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "statements": [
+      "The periodic interest rate to use in the payment formula is r = 0.12.",
+      "The required equal annual payment is approximately \\$14,593.54.",
+      "The interest portion of the first payment is exactly \\$7,200.00.",
+      "The principal-repayment portion of the first payment is more than half of the total payment amount.",
+      "The outstanding balance immediately after the second payment is approximately \\$45,000.00."
+    ],
+    "ov_len": 1325,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 232,
+        "dash": false,
+        "text": "**A) The periodic interest rate to use in the payment formula is r = 0.12.**  (true)\n\nA 12% annual interest rate charged once per year, compounding annually, is simply used as the decimal r = 0.12 in every calculation for this loan."
+      },
+      {
+        "letter": "B",
+        "len": 179,
+        "dash": false,
+        "text": "**B) The required equal annual payment is approximately \\$14,593.54.**  (true)\n\nSolving $a = rK/[1-(1+r)^{-n}]$ with r=0.12, K=60,000, n=6 gives a ≈ \\$14,593.54, matching exactly."
+      },
+      {
+        "letter": "C",
+        "len": 280,
+        "dash": false,
+        "text": "**C) The interest portion of the first payment is exactly \\$7,200.00.**  (true)\n\nIn the very first period, the entire \\$60,000 principal has been outstanding for the full year, so the interest charged is simply 12% of \\$60,000, which is exactly \\$7,200.00 with no rounding needed."
+      },
+      {
+        "letter": "D",
+        "len": 431,
+        "dash": false,
+        "text": "**D) The principal-repayment portion of the first payment is more than half of the total payment amount.**  (true)\n\nSubtracting the \\$7,200.00 interest charge from the \\$14,593.54 payment leaves \\$7,393.54 for principal reduction. Comparing that to half of the payment (\\$7,296.77) shows the principal portion is indeed slightly larger than half, even in the very first year when interest is at its highest relative to later years."
+      },
+      {
+        "letter": "E",
+        "len": 352,
+        "dash": false,
+        "text": "**E) The outstanding balance immediately after the second payment is approximately \\$45,000.00.**  (false)\n\nCarrying the amortization forward two full years - recomputing interest on the shrinking balance each time and subtracting the resulting principal portion - gives a balance of approximately \\$44,325.69 after the second payment, not \\$45,000.00."
+      }
+    ]
+  },
+  {
+    "id": "math-11-102",
+    "title": "Auto Dealership Financing with Monthly Compounding",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "statements": [
+      "The monthly periodic interest rate used in the payment formula is r = 0.75%.",
+      "The required monthly payment is approximately \\$597.24.",
+      "The total amount paid over all 48 monthly payments is approximately \\$29,500.00.",
+      "The total interest paid over the life of the loan is approximately \\$4,667.57.",
+      "If the same \\$24,000 were instead repaid in 4 equal annual instalments at the same nominal 9% rate, the required annual payment would be less than \\$2,388.96."
+    ],
+    "ov_len": 1033,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 276,
+        "dash": false,
+        "text": "**A) The monthly periodic interest rate used in the payment formula is r = 0.75%.**  (true)\n\nDividing the 9% nominal annual rate by 12 monthly periods gives a periodic rate of 0.75%, which is what the payment formula requires when payments and compounding both happen monthly."
+      },
+      {
+        "letter": "B",
+        "len": 168,
+        "dash": false,
+        "text": "**B) The required monthly payment is approximately \\$597.24.**  (true)\n\nPlugging r=0.0075, K=24,000, n=48 into the payment formula gives a ≈ \\$597.24, matching exactly."
+      },
+      {
+        "letter": "C",
+        "len": 282,
+        "dash": false,
+        "text": "**C) The total amount paid over all 48 monthly payments is approximately \\$29,500.00.**  (false)\n\nMultiplying the correct monthly payment by 48 months gives a total of approximately \\$28,667.57, not \\$29,500.00 - the stated figure overstates the true total by a few hundred dollars."
+      },
+      {
+        "letter": "D",
+        "len": 240,
+        "dash": false,
+        "text": "**D) The total interest paid over the life of the loan is approximately \\$4,667.57.**  (true)\n\nSubtracting the \\$24,000 principal from the correctly computed total paid of about \\$28,667.57 leaves approximately \\$4,667.57 in total interest."
+      },
+      {
+        "letter": "E",
+        "len": 501,
+        "dash": false,
+        "text": "**E) If the same \\$24,000 were instead repaid in 4 equal annual instalments at the same nominal 9% rate, the required annual payment would be less than \\$2,388.96.**  (false)\n\nSpreading the same debt over only 4 much larger annual payments, rather than 48 smaller monthly ones, actually requires a much bigger payment per period - about \\$7,408.05 - which is far above \\$2,388.96, not below it; fewer, larger periods mean each payment carries proportionally more principal and interest packed into it."
+      }
+    ]
+  },
+  {
+    "id": "math-11-103",
+    "title": "Restaurant Renovation Loan: Tracking the Amortization Schedule",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "statements": [
+      "The required equal annual payment is approximately \\$11,870.89.",
+      "The interest portion of the first payment is \\$5,000.00.",
+      "The outstanding balance immediately after the third payment is approximately \\$20,602.37.",
+      "In the fourth year, the interest portion of the payment is larger than the principal portion of the payment.",
+      "Adding up the principal-repayment portions of all 5 payments gives a total of exactly \\$46,200.00."
+    ],
+    "ov_len": 1438,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 179,
+        "dash": false,
+        "text": "**A) The required equal annual payment is approximately \\$11,870.89.**  (true)\n\nSolving $a = rK/[1-(1+r)^{-n}]$ with r=0.10, K=45,000, n=5 gives a ≈ \\$11,870.89, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 216,
+        "dash": false,
+        "text": "**B) The interest portion of the first payment is \\$5,000.00.**  (false)\n\nIn the first year the full \\$45,000 principal is outstanding, so the interest charged is 10% of \\$45,000, which is \\$4,500.00, not \\$5,000.00."
+      },
+      {
+        "letter": "C",
+        "len": 316,
+        "dash": false,
+        "text": "**C) The outstanding balance immediately after the third payment is approximately \\$20,602.37.**  (true)\n\nCarrying the amortization schedule forward year by year - recomputing interest on the shrinking balance each time - gives an outstanding balance of approximately \\$20,602.37 immediately after the third payment."
+      },
+      {
+        "letter": "D",
+        "len": 454,
+        "dash": false,
+        "text": "**D) In the fourth year, the interest portion of the payment is larger than the principal portion of the payment.**  (false)\n\nBy the fourth year the balance has already shrunk substantially, so the interest portion of that payment (about \\$2,060.24) is much smaller than the principal portion (about \\$9,810.65) - the opposite of what the statement claims. As a loan amortizes, later payments always shift further toward principal and away from interest."
+      },
+      {
+        "letter": "E",
+        "len": 329,
+        "dash": false,
+        "text": "**E) Adding up the principal-repayment portions of all 5 payments gives a total of exactly \\$46,200.00.**  (false)\n\nSince the loan is fully paid off by the end of year 5 (the balance reaches exactly \\$0.00), the principal portions of all five payments must add up to precisely the original \\$45,000.00 borrowed - not \\$46,200.00."
+      }
+    ]
+  },
+  {
+    "id": "math-11-104",
+    "title": "Franchise Buy-In Paid as an Annuity Due",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "statements": [
+      "The combined present-value factor multiplying the payment is approximately 6.537048.",
+      "The required equal payment a is approximately \\$22,946.14.",
+      "If instead the first payment were due at the end of year 1, the required equal payment would be lower than \\$22,946.14.",
+      "The difference between the ordinary-annuity payment and the annuity-due payment is approximately \\$2,524.08.",
+      "The total of all 10 annuity-due payments combined is approximately \\$220,000.00."
+    ],
+    "ov_len": 1112,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 360,
+        "dash": false,
+        "text": "**A) The combined present-value factor multiplying the payment is approximately 6.537048.**  (true)\n\nBecause the very first payment happens at time zero, it isn't discounted at all and simply counts as a itself; the remaining 9 payments form an ordinary annuity discounted back from year 1, giving the combined multiplier of approximately 6.537048 shown above."
+      },
+      {
+        "letter": "B",
+        "len": 178,
+        "dash": false,
+        "text": "**B) The required equal payment a is approximately \\$22,946.14.**  (true)\n\nDividing the \\$150,000 owed by the combined factor of 6.537048 gives a ≈ \\$22,946.14, matching exactly."
+      },
+      {
+        "letter": "C",
+        "len": 418,
+        "dash": false,
+        "text": "**C) If instead the first payment were due at the end of year 1, the required equal payment would be lower than \\$22,946.14.**  (false)\n\nDelaying the very first payment to the end of year 1 instead of paying it immediately means the lender receives money later and thus needs a larger payment to compensate - the ordinary-annuity payment of about \\$25,470.21 is actually higher than the due-annuity payment, not lower."
+      },
+      {
+        "letter": "D",
+        "len": 254,
+        "dash": false,
+        "text": "**D) The difference between the ordinary-annuity payment and the annuity-due payment is approximately \\$2,524.08.**  (true)\n\nSubtracting the due-annuity payment from the ordinary-annuity payment gives 25,470.21 - 22,946.14 ≈ \\$2,524.08, matching exactly."
+      },
+      {
+        "letter": "E",
+        "len": 241,
+        "dash": false,
+        "text": "**E) The total of all 10 annuity-due payments combined is approximately \\$220,000.00.**  (false)\n\nMultiplying the correct per-payment amount of \\$22,946.14 by the 10 total payments gives approximately \\$229,461.39 in total, not \\$220,000.00."
+      }
+    ]
+  },
+  {
+    "id": "math-11-105",
+    "title": "Fixed Annual Payment on a Working-Capital Loan",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "statements": [
+      "The smallest whole number of yearly payments needed to pay off the loan is n = 5.",
+      "The first four payments are each exactly \\$10,000.00, totalling \\$40,000.00.",
+      "The fifth and final payment is approximately \\$9,682.53.",
+      "The total amount paid over the entire life of the loan is approximately \\$49,682.53.",
+      "The total interest paid over the life of the loan is less than the original \\$35,000 principal."
+    ],
+    "ov_len": 1554,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 306,
+        "dash": false,
+        "text": "**A) The smallest whole number of yearly payments needed to pay off the loan is n = 5.**  (true)\n\nEvaluating $[\\ln a - \\ln(a-rK)]/\\ln(1+r)$ with a=10,000, r=0.13, K=35,000 gives approximately 4.9663; since this is not a whole number, the smallest integer at or above it is 5, meaning 5 payments are needed."
+      },
+      {
+        "letter": "B",
+        "len": 252,
+        "dash": false,
+        "text": "**B) The first four payments are each exactly \\$10,000.00, totalling \\$40,000.00.**  (true)\n\nSince 4 full periods pass before the loan is paid off, the first four payments are each the full fixed amount of \\$10,000.00, adding up to exactly \\$40,000.00."
+      },
+      {
+        "letter": "C",
+        "len": 366,
+        "dash": false,
+        "text": "**C) The fifth and final payment is approximately \\$9,682.53.**  (true)\n\nTracking the loan's growth at 13% for 4 years and comparing it to the accumulated value of the four \\$10,000 payments over the same span shows a small remaining debt at that point; carrying that remainder forward one more year at 13% interest gives a final payment of approximately \\$9,682.53."
+      },
+      {
+        "letter": "D",
+        "len": 264,
+        "dash": false,
+        "text": "**D) The total amount paid over the entire life of the loan is approximately \\$49,682.53.**  (true)\n\nAdding the \\$40,000.00 from the four full payments to the approximately \\$9,682.53 final payment gives a total of about \\$49,682.53 paid over the life of the loan."
+      },
+      {
+        "letter": "E",
+        "len": 308,
+        "dash": false,
+        "text": "**E) The total interest paid over the life of the loan is less than the original \\$35,000 principal.**  (true)\n\nSubtracting the original \\$35,000 principal from the total amount paid (about \\$49,682.53) leaves roughly \\$14,682.53 in total interest, which is indeed smaller than the \\$35,000 principal itself."
+      }
+    ]
+  },
+  {
+    "id": "math-11-106",
+    "title": "Comparing Cash vs. Instalment Purchase of a Delivery Fleet",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "statements": [
+      "At a 10% annual rate, the present value of Option B is approximately \\$535,526.07.",
+      "At a 10% annual rate, Option A is the cheaper choice.",
+      "At a 14% annual rate, the present value of Option B is approximately \\$495,000.00.",
+      "At a 14% annual rate, Option B becomes the cheaper choice.",
+      "Option B must always be the more expensive choice in present-value terms, no matter what the interest rate is."
+    ],
+    "ov_len": 1280,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 239,
+        "dash": false,
+        "text": "**A) At a 10% annual rate, the present value of Option B is approximately \\$535,526.07.**  (true)\n\nApplying the annuity-due present-value formula with a=100,000, r=0.10, n=7 gives $PV_{\\mathrm{B}} \\approx \\$535{,}526.07$, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 239,
+        "dash": false,
+        "text": "**B) At a 10% annual rate, Option A is the cheaper choice.**  (true)\n\nSince the present value of Option B at 10% (about \\$535,526.07) is higher than the \\$500,000 cash price, paying cash upfront is the cheaper option at this interest rate."
+      },
+      {
+        "letter": "C",
+        "len": 233,
+        "dash": false,
+        "text": "**C) At a 14% annual rate, the present value of Option B is approximately \\$495,000.00.**  (false)\n\nRecomputing the annuity-due present value at the higher rate of 14% gives $PV_{\\mathrm{B}} \\approx \\$488{,}866.75$, not \\$495,000.00."
+      },
+      {
+        "letter": "D",
+        "len": 345,
+        "dash": false,
+        "text": "**D) At a 14% annual rate, Option B becomes the cheaper choice.**  (true)\n\nAt 14%, Option B's present value (about \\$488,866.75) drops below the \\$500,000 cash price, meaning the instalment plan is now the cheaper option - a higher discount rate reduces the present value of future payments more than it affects the already-immediate cash price."
+      },
+      {
+        "letter": "E",
+        "len": 521,
+        "dash": false,
+        "text": "**E) Option B must always be the more expensive choice in present-value terms, no matter what the interest rate is.**  (false)\n\nThe comparison in part (d) directly contradicts this claim: at 14% the instalment option, despite its larger total nominal payout, actually costs less in present-value terms than the cash option. Raising the interest rate shrinks the present value of payments spread out over time, so which option is cheaper genuinely depends on the interest rate used, not just on the raw total dollars paid."
+      }
+    ]
+  },
+  {
+    "id": "math-11-107",
+    "title": "Quarterly Savings Deposits with Annual Compounding",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "statements": [
+      "The year-end equivalent value of the four quarterly deposits made during a single year is \\$1,100.00.",
+      "The account balance after 4 years is approximately \\$4,700.00.",
+      "The account balance after 3 years is approximately \\$3,500.00.",
+      "If the four \\$250 deposits are instead treated as a flat \\$1,000.00 deposit at year-end, the resulting 4-year account balance is approximately \\$4,506.11.",
+      "The difference between the correctly computed 4-year balance and the simplified calculation is approximately \\$200.00."
+    ],
+    "ov_len": 1514,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 302,
+        "dash": false,
+        "text": "**A) The year-end equivalent value of the four quarterly deposits made during a single year is \\$1,100.00.**  (false)\n\nApplying simple interest to each of the four quarterly deposits for its own remaining fraction of the year and summing the results gives 250×(4+1.5×0.08) = \\$1,030.00, not \\$1,100.00."
+      },
+      {
+        "letter": "B",
+        "len": 240,
+        "dash": false,
+        "text": "**B) The account balance after 4 years is approximately \\$4,700.00.**  (false)\n\nTreating \\$1,030.00 as an equivalent single annual deposit and compounding it as an ordinary annuity for 4 years gives approximately \\$4,641.30, not \\$4,700.00."
+      },
+      {
+        "letter": "C",
+        "len": 214,
+        "dash": false,
+        "text": "**C) The account balance after 3 years is approximately \\$3,500.00.**  (false)\n\nUsing the same year-end equivalent value but compounding for only 3 years instead of 4 gives approximately \\$3,343.79, not \\$3,500.00."
+      },
+      {
+        "letter": "D",
+        "len": 565,
+        "dash": false,
+        "text": "**D) If the four \\$250 deposits are instead treated as a flat \\$1,000.00 deposit at year-end, the resulting 4-year account balance is approximately \\$4,506.11.**  (true)\n\nIgnoring the small simple-interest boost that each quarterly deposit earns before the year-end crediting date understates the true equivalent annual deposit (using \\$1,000.00 instead of the correct \\$1,030.00), which in turn understates the compounded 4-year balance, giving about \\$4,506.11 instead of the true \\$4,641.30 - confirming the simplified approach falls short of the correct answer."
+      },
+      {
+        "letter": "E",
+        "len": 285,
+        "dash": false,
+        "text": "**E) The difference between the correctly computed 4-year balance and the simplified calculation is approximately \\$200.00.**  (false)\n\nThe gap between the correct balance (≈ \\$4,641.30) and the simplified, interest-ignoring balance (≈ \\$4,506.11) is only about \\$135.18, not \\$200.00."
+      }
+    ]
+  },
+  {
+    "id": "math-11-108",
+    "title": "Home Mortgage: Outstanding Balance Partway Through the Term",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "statements": [
+      "The required monthly payment is approximately \\$1,432.86.",
+      "The outstanding balance immediately after the 60th monthly payment is approximately \\$169,799.20.",
+      "After 5 years of payments, more than 25% of the original \\$200,000 principal has been repaid.",
+      "The total interest paid during just the first 5 years is approximately \\$55,770.92.",
+      "The total interest paid over the entire 20-year life of the loan is approximately \\$120,000.00."
+    ],
+    "ov_len": 1479,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 173,
+        "dash": false,
+        "text": "**A) The required monthly payment is approximately \\$1,432.86.**  (true)\n\nPlugging r=0.005, K=200,000, n=240 into the payment formula gives a ≈ \\$1,432.86, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 320,
+        "dash": false,
+        "text": "**B) The outstanding balance immediately after the 60th monthly payment is approximately \\$169,799.20.**  (true)\n\nThe remaining 180 monthly payments still owed after month 60 form an ordinary annuity of their own; discounting them back at the same monthly rate gives an outstanding balance of approximately \\$169,799.20."
+      },
+      {
+        "letter": "C",
+        "len": 490,
+        "dash": false,
+        "text": "**C) After 5 years of payments, more than 25% of the original \\$200,000 principal has been repaid.**  (false)\n\nSince the balance has only fallen from \\$200,000 to about \\$169,799.20 after 5 years, only about \\$30,200.80, or roughly 15.1%, of the original principal has actually been repaid so far - nowhere near 25%. Early mortgage payments go disproportionately toward interest rather than principal, which is exactly why the repaid fraction is still so small this early in a 20-year loan."
+      },
+      {
+        "letter": "D",
+        "len": 291,
+        "dash": false,
+        "text": "**D) The total interest paid during just the first 5 years is approximately \\$55,770.92.**  (true)\n\nSubtracting the \\$30,200.80 of principal actually repaid from the \\$85,971.73 total paid over the first 60 months leaves approximately \\$55,770.92 in interest paid during those first 5 years."
+      },
+      {
+        "letter": "E",
+        "len": 328,
+        "dash": false,
+        "text": "**E) The total interest paid over the entire 20-year life of the loan is approximately \\$120,000.00.**  (false)\n\nMultiplying the monthly payment by all 240 months and subtracting the original \\$200,000 principal gives a total lifetime interest cost of approximately \\$143,886.91, considerably more than the \\$120,000.00 claimed."
+      }
+    ]
+  },
+  {
+    "id": "math-11-109",
+    "title": "Fixed Repayment Schedule on a Large Equipment Loan",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "statements": [
+      "The smallest whole number of yearly payments needed to retire the loan is n = 9.",
+      "The ninth and final payment is approximately \\$13,100.16.",
+      "The total interest paid over the life of the loan is approximately \\$105,000.00.",
+      "The total amount actually paid over the life of the loan is approximately \\$210,000.00.",
+      "Assuming all 9 payments are full \\$25,000 payments overstates the true total amount paid by more than \\$10,000."
+    ],
+    "ov_len": 1720,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 268,
+        "dash": false,
+        "text": "**A) The smallest whole number of yearly payments needed to retire the loan is n = 9.**  (true)\n\nEvaluating $[\\ln a - \\ln(a-rK)]/\\ln(1+r)$ with a=25,000, r=0.14, K=120,000 gives approximately 8.508; rounding up to the next whole number gives n=9 total payments needed."
+      },
+      {
+        "letter": "B",
+        "len": 305,
+        "dash": false,
+        "text": "**B) The ninth and final payment is approximately \\$13,100.16.**  (true)\n\nComparing the loan's accumulated value after 8 years to the accumulated value of the eight \\$25,000 payments leaves a small remaining balance, which grows one more year of interest into a final payment of approximately \\$13,100.16."
+      },
+      {
+        "letter": "C",
+        "len": 348,
+        "dash": false,
+        "text": "**C) The total interest paid over the life of the loan is approximately \\$105,000.00.**  (false)\n\nSince the final, ninth payment is smaller than \\$25,000 (only about \\$13,100.16), simply multiplying \\$25,000 by 9 and subtracting \\$120,000 overstates the true interest cost; the actual total interest paid is closer to \\$93,100.16, not \\$105,000.00."
+      },
+      {
+        "letter": "D",
+        "len": 276,
+        "dash": false,
+        "text": "**D) The total amount actually paid over the life of the loan is approximately \\$210,000.00.**  (false)\n\nAdding the eight full \\$25,000 payments (\\$200,000.00) to the smaller final payment (about \\$13,100.16) gives a true total of approximately \\$213,100.16, not \\$210,000.00."
+      },
+      {
+        "letter": "E",
+        "len": 369,
+        "dash": false,
+        "text": "**E) Assuming all 9 payments are full \\$25,000 payments overstates the true total amount paid by more than \\$10,000.**  (true)\n\nTreating the final payment as if it were also a full \\$25,000 payment produces a total of \\$225,000.00, which exceeds the true total of about \\$213,100.16 by roughly \\$11,899.84 - an overstatement of more than \\$10,000, confirming the claim."
+      }
+    ]
+  },
+  {
+    "id": "math-11-110",
+    "title": "Capstone: Equipment Loan Paid as an Annuity Due, Plus a Separate Reserve Fund",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "statements": [
+      "The required annuity-due payment on the equipment loan is approximately \\$16,176.12.",
+      "The interest portion of the second loan payment is approximately \\$8,858.87.",
+      "The interest portion of the third loan payment is larger than the interest portion of the second payment.",
+      "The year-end equivalent value of the reserve fund's quarterly deposits made during a single year is \\$1,240.50, and the reserve fund's balance after 3 years is approximately \\$4,066.48.",
+      "The combined total of the loan's first three payments is less than the reserve fund's balance after 3 years."
+    ],
+    "ov_len": 2114,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 350,
+        "dash": false,
+        "text": "**A) The required annuity-due payment on the equipment loan is approximately \\$16,176.12.**  (true)\n\nBecause the first payment is made immediately and only the remaining 7 payments are discounted as an ordinary annuity, the combined present-value factor works out to approximately 5.563757, and dividing \\$90,000 by that factor gives a ≈ \\$16,176.12."
+      },
+      {
+        "letter": "B",
+        "len": 326,
+        "dash": false,
+        "text": "**B) The interest portion of the second loan payment is approximately \\$8,858.87.**  (true)\n\nAfter the immediate first payment reduces the balance to \\$73,823.88, that balance accrues a full year of 12% interest before the second payment is made, giving an interest portion of approximately \\$8,858.87 for that second payment."
+      },
+      {
+        "letter": "C",
+        "len": 445,
+        "dash": false,
+        "text": "**C) The interest portion of the third loan payment is larger than the interest portion of the second payment.**  (false)\n\nBy the time of the third payment, the outstanding balance has already shrunk (to about \\$66,506.62), so the interest charged on it (about \\$7,980.79) is smaller than the interest charged in the previous period (about \\$8,858.87), not larger - interest portions shrink from payment to payment as the balance amortizes down."
+      },
+      {
+        "letter": "D",
+        "len": 480,
+        "dash": false,
+        "text": "**D) The year-end equivalent value of the reserve fund's quarterly deposits made during a single year is \\$1,240.50, and the reserve fund's balance after 3 years is approximately \\$4,066.48.**  (true)\n\nApplying simple interest to each quarterly \\$300 deposit for its own remaining fraction of the year gives a year-end equivalent of \\$1,240.50, and compounding that equivalent amount annually as an ordinary annuity for 3 years gives a reserve balance of approximately \\$4,066.48."
+      },
+      {
+        "letter": "E",
+        "len": 473,
+        "dash": false,
+        "text": "**E) The combined total of the loan's first three payments is less than the reserve fund's balance after 3 years.**  (false)\n\nThree annual loan payments of about \\$16,176.12 each add up to roughly \\$48,528.36, which vastly exceeds the reserve fund's much smaller 3-year balance of about \\$4,066.48 - the loan payments are far larger than the reserve fund total, not smaller, since the loan involves a much larger principal amount than the modest quarterly reserve deposits."
+      }
+    ]
+  },
+  {
+    "id": "math-11-111",
+    "title": "Capstone: Comparing Three Payment Schedules for a Building Site",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "statements": [
+      "At a 9% annual rate, the present value of Schedule II is approximately \\$521,162.27.",
+      "At a 9% annual rate, the present value of Schedule III is approximately \\$540,000.00.",
+      "At a 9% annual rate, Schedule I is the cheapest of the three schedules.",
+      "At a 13% annual rate, the present value of Schedule II is approximately \\$474,767.23.",
+      "At a 13% annual rate, Schedule III becomes the cheapest of the three schedules."
+    ],
+    "ov_len": 2077,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 227,
+        "dash": false,
+        "text": "**A) At a 9% annual rate, the present value of Schedule II is approximately \\$521,162.27.**  (true)\n\nApplying the annuity-due formula with a=95,000, r=0.09, n=7 gives $PV_{\\mathrm{II}} \\approx \\$521{,}162.27$, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 289,
+        "dash": false,
+        "text": "**B) At a 9% annual rate, the present value of Schedule III is approximately \\$540,000.00.**  (false)\n\nAdding the \\$150,000 upfront cash to the ordinary-annuity present value of the later \\$60,000 payments (discounted at 9% for 10 years) gives approximately \\$535,059.46, not \\$540,000.00."
+      },
+      {
+        "letter": "C",
+        "len": 283,
+        "dash": false,
+        "text": "**C) At a 9% annual rate, Schedule I is the cheapest of the three schedules.**  (true)\n\nAt 9%, the three present values rank as \\$500,000.00 (Schedule I) < \\$521,162.27 (Schedule II) < \\$535,059.46 (Schedule III), so paying cash outright is the cheapest option at this interest rate."
+      },
+      {
+        "letter": "D",
+        "len": 234,
+        "dash": false,
+        "text": "**D) At a 13% annual rate, the present value of Schedule II is approximately \\$474,767.23.**  (true)\n\nRecomputing Schedule II's present value at the higher rate of 13% gives $PV_{\\mathrm{II}} \\approx \\$474{,}767.23$, matching exactly."
+      },
+      {
+        "letter": "E",
+        "len": 398,
+        "dash": false,
+        "text": "**E) At a 13% annual rate, Schedule III becomes the cheapest of the three schedules.**  (false)\n\nAt 13%, Schedule III's present value (about \\$475,574.61) is still slightly higher than Schedule II's (about \\$474,767.23) - Schedule II, not Schedule III, is the cheapest schedule at this higher rate, even though Schedule III has narrowed the gap considerably compared to how far behind it was at 9%."
+      }
+    ]
+  },
+  {
+    "id": "math-11-112",
+    "title": "Capstone: Comparing Three Payment Schedules for a Hospital Imaging Center",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "statements": [
+      "At an 8% annual rate, the present value of Schedule II is approximately \\$944,529.45.",
+      "At an 8% annual rate, the present value of Schedule III is approximately \\$871,117.14.",
+      "At an 8% annual rate, Schedule I is the cheapest of the three schedules.",
+      "At a 12% annual rate, the present value of Schedule III is approximately \\$775,015.93.",
+      "At a 12% annual rate, Schedule II becomes the cheapest of the three schedules."
+    ],
+    "ov_len": 2060,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 229,
+        "dash": false,
+        "text": "**A) At an 8% annual rate, the present value of Schedule II is approximately \\$944,529.45.**  (true)\n\nApplying the annuity-due formula with a=140,000, r=0.08, n=9 gives $PV_{\\mathrm{II}} \\approx \\$944{,}529.45$, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 289,
+        "dash": false,
+        "text": "**B) At an 8% annual rate, the present value of Schedule III is approximately \\$871,117.14.**  (true)\n\nAdding the \\$300,000 upfront cash to the ordinary-annuity present value of the later \\$80,000 payments (discounted at 8% for 11 years) gives approximately \\$871,117.14, matching exactly."
+      },
+      {
+        "letter": "C",
+        "len": 284,
+        "dash": false,
+        "text": "**C) At an 8% annual rate, Schedule I is the cheapest of the three schedules.**  (true)\n\nAt 8%, the three present values rank as \\$850,000.00 (Schedule I) < \\$871,117.14 (Schedule III) < \\$944,529.45 (Schedule II), so paying cash outright is the cheapest option at this interest rate."
+      },
+      {
+        "letter": "D",
+        "len": 237,
+        "dash": false,
+        "text": "**D) At a 12% annual rate, the present value of Schedule III is approximately \\$775,015.93.**  (true)\n\nRecomputing Schedule III's present value at the higher rate of 12% gives $PV_{\\mathrm{III}} \\approx \\$775{,}015.93$, matching exactly."
+      },
+      {
+        "letter": "E",
+        "len": 475,
+        "dash": false,
+        "text": "**E) At a 12% annual rate, Schedule II becomes the cheapest of the three schedules.**  (false)\n\nAt 12%, Schedule III's present value (about \\$775,015.93) is actually lower than Schedule II's (about \\$835,469.57) - Schedule III, not Schedule II, becomes the cheapest option at this higher rate, since raising the discount rate shrinks the present value of Schedule III's smaller, longer-running instalments even more than it shrinks Schedule II's larger, shorter-running ones."
+      }
+    ]
+  },
+  {
+    "id": "math-11-113",
+    "title": "Capstone: Comparing Three Payment Schedules for a Cargo Vessel",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "statements": [
+      "At a 7.5% annual rate, the present value of Schedule II is approximately \\$2,508,821.59.",
+      "At a 7.5% annual rate, the present value of Schedule III is approximately \\$2,250,000.00.",
+      "At a 7.5% annual rate, Schedule I is cheaper than Schedule II.",
+      "At an 11.5% annual rate, the present value of Schedule II is approximately \\$2,100,000.00.",
+      "At an 11.5% annual rate, Schedule I is still cheaper than Schedule II."
+    ],
+    "ov_len": 2216,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 238,
+        "dash": false,
+        "text": "**A) At a 7.5% annual rate, the present value of Schedule II is approximately \\$2,508,821.59.**  (true)\n\nApplying the annuity-due formula with a=340,000, r=0.075, n=10 gives $PV_{\\mathrm{II}} \\approx \\$2{,}508{,}821.59$, matching exactly."
+      },
+      {
+        "letter": "B",
+        "len": 299,
+        "dash": false,
+        "text": "**B) At a 7.5% annual rate, the present value of Schedule III is approximately \\$2,250,000.00.**  (false)\n\nAdding the \\$600,000 upfront cash to the ordinary-annuity present value of the later \\$250,000 payments (discounted at 7.5% for 9 years) gives approximately \\$2,194,721.76, not \\$2,250,000.00."
+      },
+      {
+        "letter": "C",
+        "len": 254,
+        "dash": false,
+        "text": "**C) At a 7.5% annual rate, Schedule I is cheaper than Schedule II.**  (true)\n\nAt 7.5%, \\$2,400,000.00 (Schedule I) is indeed less than approximately \\$2,508,821.59 (Schedule II), so paying cash outright beats the annuity-due schedule at this lower rate."
+      },
+      {
+        "letter": "D",
+        "len": 248,
+        "dash": false,
+        "text": "**D) At an 11.5% annual rate, the present value of Schedule II is approximately \\$2,100,000.00.**  (false)\n\nRecomputing Schedule II's present value at the higher rate of 11.5% gives $PV_{\\mathrm{II}} \\approx \\$2{,}186{,}561.89$, not \\$2,100,000.00."
+      },
+      {
+        "letter": "E",
+        "len": 553,
+        "dash": false,
+        "text": "**E) At an 11.5% annual rate, Schedule I is still cheaper than Schedule II.**  (false)\n\nAt the higher rate of 11.5%, Schedule II's present value drops to approximately \\$2,186,561.89, which is now lower than the \\$2,400,000.00 cash price - the annuity-due schedule has overtaken cash as the cheaper option, reversing the ranking that held at 7.5%. Raising the discount rate reduces the present value of a stream of future payments more sharply than it affects an already-immediate cash amount, which is exactly what causes this kind of ranking reversal."
+      }
+    ]
+  },
+  {
+    "id": "math-11-114",
+    "title": "A small bakery invests \\$8,000 in a new commercial oven",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "statements": [
+      "The internal rate of return for this project is exactly 20%.",
+      "At an interest rate of 15%, the net present value of this project is positive.",
+      "At an interest rate of 25%, the net present value of this project is positive.",
+      "If the return had instead been \\$10,000, with the outlay unchanged, the internal rate of return would exceed 24%.",
+      "This project has a unique internal rate of return greater than -1."
+    ],
+    "ov_len": 743,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 141,
+        "dash": false,
+        "text": "**A) The internal rate of return for this project is exactly 20%.**  (true)\n\nr = (9,600/8,000) - 1 = 0.20 = 20%, exactly as calculated above."
+      },
+      {
+        "letter": "B",
+        "len": 223,
+        "dash": false,
+        "text": "**B) At an interest rate of 15%, the net present value of this project is positive.**  (true)\n\nNPV = -8,000 + 9,600/1.15 = -8,000 + 8,347.83 = \\$347.83, which is positive (15% is below the 20% IRR, so NPV must be positive)."
+      },
+      {
+        "letter": "C",
+        "len": 214,
+        "dash": false,
+        "text": "**C) At an interest rate of 25%, the net present value of this project is positive.**  (false)\n\nNPV = -8,000 + 9,600/1.25 = -8,000 + 7,680.00 = -\\$320.00, which is negative, not positive (25% is above the 20% IRR)."
+      },
+      {
+        "letter": "D",
+        "len": 213,
+        "dash": false,
+        "text": "**D) If the return had instead been \\$10,000, with the outlay unchanged, the internal rate of return would exceed 24%.**  (true)\n\nWith b = 10,000: r = (10,000/8,000) - 1 = 1.25 - 1 = 0.25 = 25%, which exceeds 24%."
+      },
+      {
+        "letter": "E",
+        "len": 310,
+        "dash": false,
+        "text": "**E) This project has a unique internal rate of return greater than -1.**  (true)\n\nThe chapter's theorem states that if $a_0 < 0$ and all subsequent returns are positive, a unique internal rate of return $r^{*} > -1$ exists. Here $a_0 = -\\$8{,}000 < 0$ and $a_1 = \\$9{,}600 > 0$, so the condition is satisfied."
+      }
+    ]
+  },
+  {
+    "id": "math-11-115",
+    "title": "A logistics company spends \\$12,000 upgrading a delivery vehicle",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "statements": [
+      "The internal rate of return is approximately 10.92%.",
+      "At an interest rate of 8%, the net present value of this project is positive.",
+      "At an interest rate of 12%, the net present value of this project is positive.",
+      "If the Year 2 return had instead been \\$8,000, with Year 1 unchanged at \\$7,000, the internal rate of return would exceed 13%.",
+      "Doubling both returns to \\$14,000 in Year 1 and \\$14,000 in Year 2, with the outlay unchanged at \\$12,000, would result in an internal rate of return of approximately 21.84%."
+    ],
+    "ov_len": 890,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 101,
+        "dash": false,
+        "text": "**A) The internal rate of return is approximately 10.92%.**  (true)\n\nAs calculated above, r ≈ 10.92%."
+      },
+      {
+        "letter": "B",
+        "len": 211,
+        "dash": false,
+        "text": "**B) At an interest rate of 8%, the net present value of this project is positive.**  (true)\n\nNPV = -12,000 + 7,000/1.08 + 7,000/1.1664 = -12,000 + 6,481.48 + 6,001.37 = \\$482.85, positive (8% is below the IRR)."
+      },
+      {
+        "letter": "C",
+        "len": 229,
+        "dash": false,
+        "text": "**C) At an interest rate of 12%, the net present value of this project is positive.**  (false)\n\nNPV = -12,000 + 7,000/1.12 + 7,000/1.2544 = -12,000 + 6,250.00 + 5,580.36 = -\\$169.64, negative, not positive (12% is above the IRR)."
+      },
+      {
+        "letter": "D",
+        "len": 385,
+        "dash": false,
+        "text": "**D) If the Year 2 return had instead been \\$8,000, with Year 1 unchanged at \\$7,000, the internal rate of return would exceed 13%.**  (true)\n\nWith $a_2 = \\$8{,}000$: $8{,}000s^{2} + 7{,}000s - 12{,}000 = 0$ → $8s^{2} + 7s - 12 = 0$. Discriminant = 49 + 384 = 433, √433 ≈ 20.809. $s = (-7 + 20.809)/16 \\approx 0.8630$, so $r = 1/0.8630 - 1 \\approx 0.1587 = 15.87\\%$, which exceeds 13%."
+      },
+      {
+        "letter": "E",
+        "len": 581,
+        "dash": true,
+        "text": "**E) Doubling both returns to \\$14,000 in Year 1 and \\$14,000 in Year 2, with the outlay unchanged at \\$12,000, would result in an internal rate of return of approximately 21.84%.**  (false)\n\nWith both $a_1$ and $a_2$ equal to \\$14,000, the equation becomes $14{,}000s^{2} + 14{,}000s - 12{,}000 = 0$, i.e. $7s^{2} + 7s - 6 = 0$. Discriminant = 49 + 168 = 217, √217 ≈ 14.731. $s = (-7 + 14.731)/14 \\approx 0.5522$, so $r = 1/0.5522 - 1 \\approx 0.8109 = 81.09\\%$ — far more than double 10.92% (which would be ≈21.84%). Doubling the cash flows does not proportionally double the IRR."
+      }
+    ]
+  },
+  {
+    "id": "math-11-116",
+    "title": "A boutique invests \\$20,000 in inventory and point-of-sale equipment",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "statements": [
+      "The internal rate of return is approximately 11.98%.",
+      "At a discount rate of 10%, the net present value of the project is positive.",
+      "At a discount rate of 14%, the net present value of the project is positive.",
+      "If the Year 1 return were \\$9,000 higher, with Year 2 unchanged at \\$15,000, the internal rate of return would exceed 30%.",
+      "The sum of all cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$4,000."
+    ],
+    "ov_len": 743,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 101,
+        "dash": false,
+        "text": "**A) The internal rate of return is approximately 11.98%.**  (true)\n\nAs calculated above, r ≈ 11.98%."
+      },
+      {
+        "letter": "B",
+        "len": 211,
+        "dash": false,
+        "text": "**B) At a discount rate of 10%, the net present value of the project is positive.**  (true)\n\nNPV = -20,000 + 9,000/1.10 + 15,000/1.21 = -20,000 + 8,181.82 + 12,396.69 = \\$578.51, positive (10% is below the IRR)."
+      },
+      {
+        "letter": "C",
+        "len": 229,
+        "dash": false,
+        "text": "**C) At a discount rate of 14%, the net present value of the project is positive.**  (false)\n\nNPV = -20,000 + 9,000/1.14 + 15,000/1.2996 = -20,000 + 7,894.74 + 11,542.01 = -\\$563.25, negative, not positive (14% is above the IRR)."
+      },
+      {
+        "letter": "D",
+        "len": 391,
+        "dash": false,
+        "text": "**D) If the Year 1 return were \\$9,000 higher, with Year 2 unchanged at \\$15,000, the internal rate of return would exceed 30%.**  (true)\n\nWith $a_1 = \\$18{,}000$: $15{,}000s^{2} + 18{,}000s - 20{,}000 = 0$ → $15s^{2} + 18s - 20 = 0$. Discriminant = 324 + 1,200 = 1,524, √1,524 ≈ 39.038. $s = (-18 + 39.038)/30 \\approx 0.7013$, $r = 1/0.7013 - 1 \\approx 0.4259 = 42.59\\%$, which exceeds 30%."
+      },
+      {
+        "letter": "E",
+        "len": 340,
+        "dash": true,
+        "text": "**E) The sum of all cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$4,000.**  (true)\n\n$a_0 + a_1 + a_2 = -20{,}000 + 9{,}000 + 15{,}000 = 4{,}000$ (a positive \\$4,000), and this matches the chapter's stated result that the internal rate of return is positive whenever this sum is positive — consistent with the computed $r \\approx 11.98\\% > 0$."
+      }
+    ]
+  },
+  {
+    "id": "math-11-117",
+    "title": "A retailer is choosing between two one-year uses of surplus cash",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "statements": [
+      "The internal rate of return of Project X is exactly 15%.",
+      "The internal rate of return of Project Y is exactly 12.5%.",
+      "Based on the internal rate of return criterion, Project Y should be preferred over Project X.",
+      "At an interest rate of 11%, Project X has positive net present value while Project Y has negative net present value.",
+      "If Project Y's payoff had instead been \\$25,000, with the outlay unchanged at \\$22,000, its internal rate of return would exceed that of Project X."
+    ],
+    "ov_len": 651,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 107,
+        "dash": false,
+        "text": "**A) The internal rate of return of Project X is exactly 15%.**  (true)\n\nAs calculated above, $r_X = 15\\%$."
+      },
+      {
+        "letter": "B",
+        "len": 111,
+        "dash": false,
+        "text": "**B) The internal rate of return of Project Y is exactly 12.5%.**  (true)\n\nAs calculated above, $r_Y = 12.5\\%$."
+      },
+      {
+        "letter": "C",
+        "len": 270,
+        "dash": false,
+        "text": "**C) Based on the internal rate of return criterion, Project Y should be preferred over Project X.**  (false)\n\nThe chapter's criterion is to prefer the project with the higher internal rate of return. Since 15% (X) is higher than 12.5% (Y), X should be preferred, not Y."
+      },
+      {
+        "letter": "D",
+        "len": 370,
+        "dash": false,
+        "text": "**D) At an interest rate of 11%, Project X has positive net present value while Project Y has negative net present value.**  (false)\n\n$NPV_X$ at 11% = -15,000 + 17,250/1.11 = -15,000 + 15,540.54 = \\$540.54 (positive). $NPV_Y$ at 11% = -22,000 + 24,750/1.11 = -22,000 + 22,297.30 = \\$297.30, which is also positive, not negative, because 11% is still below Y's 12.5% IRR."
+      },
+      {
+        "letter": "E",
+        "len": 321,
+        "dash": false,
+        "text": "**E) If Project Y's payoff had instead been \\$25,000, with the outlay unchanged at \\$22,000, its internal rate of return would exceed that of Project X.**  (false)\n\nWith $b = \\$25{,}000$: $r_Y = (25{,}000/22{,}000) - 1 \\approx 0.1364 = 13.64\\%$, which is still lower than Project X's 15%, so it would not exceed X's rate."
+      }
+    ]
+  },
+  {
+    "id": "math-11-118",
+    "title": "A manufacturing upgrade has an initial outlay of \\$45,000",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "statements": [
+      "At r = 8%, the net present value of the project is approximately \\$4,012.",
+      "At r = 12%, the net present value of the project is positive.",
+      "The internal rate of return of this project lies between 12% and 15%.",
+      "At r = 15%, the net present value of the project is approximately -\\$3,424.",
+      "$a_1$, $a_2$, and $a_3$ are all positive."
+    ],
+    "ov_len": 932,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 179,
+        "dash": false,
+        "text": "**A) At r = 8%, the net present value of the project is approximately \\$4,012.**  (true)\n\nAs calculated in Step 1, A ≈ \\$4,011.84 at r = 8%, which rounds to approximately \\$4,012."
+      },
+      {
+        "letter": "B",
+        "len": 162,
+        "dash": false,
+        "text": "**B) At r = 12%, the net present value of the project is positive.**  (false)\n\nAs calculated in Step 2, A ≈ -\\$444.83 at r = 12%, which is negative, not positive."
+      },
+      {
+        "letter": "C",
+        "len": 293,
+        "dash": false,
+        "text": "**C) The internal rate of return of this project lies between 12% and 15%.**  (false)\n\nThe NPV is already negative at both r = 12% (-\\$444.83) and r = 15% (-\\$3,423.60), and it was positive at r = 8%. This means the rate where NPV crosses zero lies between 8% and 12%, not between 12% and 15%."
+      },
+      {
+        "letter": "D",
+        "len": 184,
+        "dash": false,
+        "text": "**D) At r = 15%, the net present value of the project is approximately -\\$3,424.**  (true)\n\nAs calculated in Step 3, A ≈ -\\$3,423.60 at r = 15%, which rounds to approximately -\\$3,424."
+      },
+      {
+        "letter": "E",
+        "len": 324,
+        "dash": true,
+        "text": "**E) $a_1$, $a_2$, and $a_3$ are all positive.**  (false)\n\nThe theorem requires $a_0 < 0$ and all of $a_1, \\ldots, a_n$ to be strictly positive. Here $a_1 = -\\$3{,}000$, which is negative, so this precondition is not met — the theorem's guarantee of a unique internal rate of return does not apply to this cash flow pattern."
+      }
+    ]
+  },
+  {
+    "id": "math-11-119",
+    "title": "A cafe chain invests \\$34,000 in a new espresso machine line",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "statements": [
+      "The internal rate of return is approximately 14.5%.",
+      "At an interest rate of 9%, the net present value of the project is negative.",
+      "At an interest rate of 13%, the net present value of the project is negative.",
+      "If the Year 2 return had instead been \\$20,000, with Year 1 unchanged at \\$16,000, the internal rate of return would exceed the internal rate of return of the original project.",
+      "Reducing the initial outlay to \\$30,000, with returns unchanged at \\$16,000 and \\$24,000, would lower the internal rate of return."
+    ],
+    "ov_len": 730,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 112,
+        "dash": false,
+        "text": "**A) The internal rate of return is approximately 14.5%.**  (false)\n\nAs calculated above, r ≈ 10.78%, not 14.5%."
+      },
+      {
+        "letter": "B",
+        "len": 245,
+        "dash": false,
+        "text": "**B) At an interest rate of 9%, the net present value of the project is negative.**  (false)\n\nNPV = -34,000 + 16,000/1.09 + 24,000/1.1881 = -34,000 + 14,678.90 + 20,200.32 = \\$879.22, which is positive, not negative (9% is below the 10.78% IRR)."
+      },
+      {
+        "letter": "C",
+        "len": 254,
+        "dash": false,
+        "text": "**C) At an interest rate of 13%, the net present value of the project is negative.**  (true)\n\nNPV = -34,000 + 16,000/1.13 + 24,000/1.2769 = -34,000 + 14,159.29 + 18,795.52 = -\\$1,045.19, which is negative, confirming the statement (13% is above the IRR)."
+      },
+      {
+        "letter": "D",
+        "len": 461,
+        "dash": false,
+        "text": "**D) If the Year 2 return had instead been \\$20,000, with Year 1 unchanged at \\$16,000, the internal rate of return would exceed the internal rate of return of the original project.**  (false)\n\nWith $a_2 = \\$20{,}000$: $20{,}000s^{2} + 16{,}000s - 34{,}000 = 0$ → $10s^{2} + 8s - 17 = 0$. Discriminant = 64 + 680 = 744, √744 ≈ 27.276. $s = (-8 + 27.276)/20 \\approx 0.9638$, $r = 1/0.9638 - 1 \\approx 0.0375 = 3.75\\%$, which is far lower than 10.78%, not higher."
+      },
+      {
+        "letter": "E",
+        "len": 515,
+        "dash": true,
+        "text": "**E) Reducing the initial outlay to \\$30,000, with returns unchanged at \\$16,000 and \\$24,000, would lower the internal rate of return.**  (false)\n\nWith $a_0 = -\\$30{,}000$: $24{,}000s^{2} + 16{,}000s - 30{,}000 = 0$ → $12s^{2} + 8s - 15 = 0$. Discriminant: $64 + 720 = 784 = 28^{2}$ exactly. $s = (-8 + 28)/24 = 20/24 \\approx 0.83333$, $r = 1/0.83333 - 1 = 0.20 = 20\\%$, which is much higher than the original 10.78% — a smaller outlay for the same returns raises the internal rate of return, it does not lower it."
+      }
+    ]
+  },
+  {
+    "id": "math-11-120",
+    "title": "A logistics firm spends \\$40,000 automating a warehouse process",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "statements": [
+      "At r = 15%, the net present value of the project is \\$0, to the nearest dollar.",
+      "At an interest rate of 10%, the net present value of the project is positive.",
+      "At an interest rate of 20%, the net present value of the project is negative.",
+      "The sum of all the project's cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$9,600.",
+      "This project has a unique internal rate of return greater than -1."
+    ],
+    "ov_len": 644,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 182,
+        "dash": false,
+        "text": "**A) At r = 15%, the net present value of the project is \\$0, to the nearest dollar.**  (true)\n\nAs calculated above, A = 0 at r = 15%, confirming this is the internal rate of return."
+      },
+      {
+        "letter": "B",
+        "len": 220,
+        "dash": false,
+        "text": "**B) At an interest rate of 10%, the net present value of the project is positive.**  (true)\n\nNPV = -40,000 + 22,000/1.10 + 27,600/1.21 = -40,000 + 20,000.00 + 22,809.92 = \\$2,809.92, positive (10% is below the 15% IRR)."
+      },
+      {
+        "letter": "C",
+        "len": 221,
+        "dash": false,
+        "text": "**C) At an interest rate of 20%, the net present value of the project is negative.**  (true)\n\nNPV = -40,000 + 22,000/1.20 + 27,600/1.44 = -40,000 + 18,333.33 + 19,166.67 = -\\$2,500.00, negative (20% is above the 15% IRR)."
+      },
+      {
+        "letter": "D",
+        "len": 333,
+        "dash": false,
+        "text": "**D) The sum of all the project's cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$9,600.**  (true)\n\n$a_0$ + $a_1$ + $a_2 = -\\$40{,}000$ + 22,000 + 27,600 = \\$9,600, which is positive, and this matches the chapter's result that the internal rate of return is positive whenever this sum is positive - consistent with the found r = 15% > 0."
+      },
+      {
+        "letter": "E",
+        "len": 242,
+        "dash": false,
+        "text": "**E) This project has a unique internal rate of return greater than -1.**  (true)\n\nThe theorem's precondition ($a_0 < 0$, all subsequent $a_i > 0$) is satisfied exactly: $a_0 = -\\$40{,}000 < 0$, $a_1 = \\$22{,}000 > 0$, $a_2 = \\$27{,}600 > 0$."
+      }
+    ]
+  },
+  {
+    "id": "math-11-121",
+    "title": "A property developer invests \\$65,000 renovating a rental unit",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "statements": [
+      "The internal rate of return is approximately 10.69%.",
+      "At an interest rate of 9%, the net present value of the project is positive.",
+      "At an interest rate of 12%, the net present value of the project is positive.",
+      "Doubling both returns to \\$68,000 in Year 1 and \\$84,000 in Year 2, with the outlay unchanged at \\$65,000, would more than double the internal rate of return.",
+      "If the outlay were reduced to \\$60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project."
+    ],
+    "ov_len": 773,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 101,
+        "dash": false,
+        "text": "**A) The internal rate of return is approximately 10.69%.**  (true)\n\nAs calculated above, r ≈ 10.69%."
+      },
+      {
+        "letter": "B",
+        "len": 216,
+        "dash": false,
+        "text": "**B) At an interest rate of 9%, the net present value of the project is positive.**  (true)\n\nNPV = -65,000 + 34,000/1.09 + 42,000/1.1881 = -65,000 + 31,192.66 + 35,350.56 = \\$1,543.22, positive (9% is below the IRR)."
+      },
+      {
+        "letter": "C",
+        "len": 234,
+        "dash": false,
+        "text": "**C) At an interest rate of 12%, the net present value of the project is positive.**  (false)\n\nNPV = -65,000 + 34,000/1.12 + 42,000/1.2544 = -65,000 + 30,357.14 + 33,482.14 = -\\$1,160.72, negative, not positive (12% is above the IRR)."
+      },
+      {
+        "letter": "D",
+        "len": 566,
+        "dash": true,
+        "text": "**D) Doubling both returns to \\$68,000 in Year 1 and \\$84,000 in Year 2, with the outlay unchanged at \\$65,000, would more than double the internal rate of return.**  (true)\n\nWith $a_1 = \\$68{,}000$ and $a_2 = \\$84{,}000$: $84{,}000s^{2} + 68{,}000s - 65{,}000 = 0$ → $84s^{2} + 68s - 65 = 0$. Discriminant = 4,624 + 21,840 = 26,464, √26,464 ≈ 162.678. $s = (-68 + 162.678)/168 \\approx 0.56356$, $r = 1/0.56356 - 1 \\approx 0.7744 = 77.44\\%$. Double the original rate would be about 21.36%, but the actual new rate (77.44%) is far higher than that — more than double."
+      },
+      {
+        "letter": "E",
+        "len": 530,
+        "dash": true,
+        "text": "**E) If the outlay were reduced to \\$60,000, with returns unchanged, the internal rate of return would be lower than the internal rate of return of the original project.**  (false)\n\nWith $a_0 = -\\$60{,}000$: $42{,}000s^{2} + 34{,}000s - 60{,}000 = 0$ → $42s^{2} + 34s - 60 = 0$. Discriminant: $1{,}156 + 10{,}080 = 11{,}236 = 106^{2}$ exactly. $s = (-34 + 106)/84 = 72/84 \\approx 0.85714$, $r = 1/0.85714 - 1 \\approx 0.16667 = 16.67\\%$, which is higher than 10.69%, not lower — a smaller outlay raises the internal rate of return."
+      }
+    ]
+  },
+  {
+    "id": "math-11-122",
+    "title": "A subscription software company spends \\$50,000 building a product and is compari",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "statements": [
+      "The limiting internal rate of return of Option 1 is 12%.",
+      "The internal rate of return of Option 2 is approximately -58.84%.",
+      "Option 2 has a unique internal rate of return greater than -1.",
+      "The sum of Option 2's cash flows, $a_0$ + $a_1$ + $a_2$, equals -\\$40,000.",
+      "If Option 2's Year 2 return were removed entirely, leaving only $a_0 = -\\$50{,}000$ and $a_1 = \\$6{,}000$, its internal rate of return would be even lower than Option 2's own internal rate of return."
+    ],
+    "ov_len": 1448,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 135,
+        "dash": false,
+        "text": "**A) The limiting internal rate of return of Option 1 is 12%.**  (true)\n\nAs calculated in Step 1, $r = 6{,}000/50{,}000 = 0.12 = 12\\%$."
+      },
+      {
+        "letter": "B",
+        "len": 166,
+        "dash": false,
+        "text": "**B) The internal rate of return of Option 2 is approximately -58.84%.**  (true)\n\nAs calculated in Steps 2–5, the valid root gives $r^{*} \\approx -0.5884 = -58.84\\%$."
+      },
+      {
+        "letter": "C",
+        "len": 415,
+        "dash": true,
+        "text": "**C) Option 2 has a unique internal rate of return greater than -1.**  (true)\n\nThe theorem only requires $a_0 < 0$ and all subsequent $a_i > 0$ to guarantee a unique $r^{*} > -1$; it does not require the quadratic to have only one mathematical root. Here one root ($r \\approx -1.291$) falls outside the allowed range $r > -1$ and is discarded, leaving exactly one valid root — precisely what the theorem guarantees."
+      },
+      {
+        "letter": "D",
+        "len": 185,
+        "dash": false,
+        "text": "**D) The sum of Option 2's cash flows, $a_0$ + $a_1$ + $a_2$, equals -\\$40,000.**  (false)\n\n$a_0 + a_1 + a_2 = -50{,}000 + 6{,}000 + 6{,}000 = -38{,}000$, i.e. -\\$38,000, not -\\$40,000."
+      },
+      {
+        "letter": "E",
+        "len": 401,
+        "dash": false,
+        "text": "**E) If Option 2's Year 2 return were removed entirely, leaving only $a_0 = -\\$50{,}000$ and $a_1 = \\$6{,}000$, its internal rate of return would be even lower than Option 2's own internal rate of return.**  (true)\n\nWith only $a_0 = -\\$50{,}000$ and $a_1 = \\$6{,}000$: $r = (6{,}000/50{,}000) - 1 = 0.12 - 1 = -0.88 = -88\\%$. Since -88% is lower (more negative) than -58.84%, the statement is correct."
+      }
+    ]
+  },
+  {
+    "id": "math-11-123",
+    "title": "A renewable energy cooperative is comparing two designs for a community solar pr",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "statements": [
+      "The internal rate of return of Design A is approximately 11.04%.",
+      "The internal rate of return of Design B is exactly 16%.",
+      "Based on the internal rate of return criterion, Design B should be preferred over Design A.",
+      "At a discount rate of 13%, Design A has negative net present value while Design B still has positive net present value.",
+      "If Design A's Year 1 return were \\$10,000 lower, with Year 2 unchanged at \\$88,000, its internal rate of return would still exceed Design B's 16%."
+    ],
+    "ov_len": 1170,
+    "ov_dash": false,
+    "tactical": [
+      {
+        "letter": "A",
+        "len": 131,
+        "dash": false,
+        "text": "**A) The internal rate of return of Design A is approximately 11.04%.**  (true)\n\nAs calculated in Steps 1–3, $r_A \\approx 11.04\\%$."
+      },
+      {
+        "letter": "B",
+        "len": 118,
+        "dash": false,
+        "text": "**B) The internal rate of return of Design B is exactly 16%.**  (true)\n\nAs calculated in Step 4, $r_B = 16\\%$ exactly."
+      },
+      {
+        "letter": "C",
+        "len": 282,
+        "dash": false,
+        "text": "**C) Based on the internal rate of return criterion, Design B should be preferred over Design A.**  (true)\n\nThe chapter's criterion is to prefer the project with the higher internal rate of return. Since 16% (Design B) exceeds 11.04% (Design A), Design B should indeed be preferred."
+      },
+      {
+        "letter": "D",
+        "len": 373,
+        "dash": false,
+        "text": "**D) At a discount rate of 13%, Design A has negative net present value while Design B still has positive net present value.**  (true)\n\nNPV_A at 13% = -120,000 + 54,000/1.13 + 88,000/1.2769 = -120,000 + 47,787.61 + 68,916.91 = -\\$3,295.48, negative. NPV_B at 13% = -70,000 + 81,200/1.13 = -70,000 + 71,858.41 = \\$1,858.41, positive. Both parts of the statement are correct."
+      },
+      {
+        "letter": "E",
+        "len": 438,
+        "dash": false,
+        "text": "**E) If Design A's Year 1 return were \\$10,000 lower, with Year 2 unchanged at \\$88,000, its internal rate of return would still exceed Design B's 16%.**  (false)\n\nWith $a_1 = \\$44{,}000$: $88{,}000s^{2} + 44{,}000s - 120{,}000 = 0$ → $22s^{2} + 11s - 30 = 0$. Discriminant = 121 + 2,640 = 2,761, √2,761 ≈ 52.545. $s = (-11 + 52.545)/44 \\approx 0.94420$, $r = 1/0.94420 - 1 \\approx 0.05909 = 5.91\\%$, which does not exceed Design B's 16%."
+      }
+    ]
+  }
+]

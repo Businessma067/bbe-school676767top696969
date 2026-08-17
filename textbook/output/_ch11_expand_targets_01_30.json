@@ -1,0 +1,1112 @@
+{
+  "1": {
+    "subsection": "11.1",
+    "context": "A print shop owner deposits \\$6,000 into a business savings account offering a nominal annual rate of 7.20%, compounded monthly.",
+    "solution_overview": "A print shop owner deposits \\$6,000 into a business savings account offering a nominal annual rate of 7.20%, compounded monthly.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$6,000$\r\n\r\nNominal annual rate $r = 7.20\\% = 0.072$\r\n\r\nCompounding frequency $n = 12$ (monthly)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nMonthly periodic rate $i_m = r/12$\r\n\r\nEffective annual rate $R = (1+i_m)^{12} - 1$\r\n\r\nFuture value $FV = P(1+R)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.072/12 = 0.006 = 0.60\\%$.\r\n\r\n**2.** $R = (1.006)^{12} - 1 \\approx 1.074424 - 1 = 0.074424 \\approx 7.44\\%$.\r\n\r\n**3.** $FV = 6,000 \\times 1.074424 = \\$6,446.54$.\r\n\r\n**4.** Annual compounding ($n = 1$) gives $R = 7.20\\%$ (the nominal rate), which is lower than $7.44\\%$, not higher.\r\n\r\n**5.** Gap: $7.44\\% - 7.20\\% = 0.24$ percentage points, which is far less than $1.00$ point.",
+    "letters": {
+      "A": {
+        "statement": "The monthly periodic interest rate is 0.60%.",
+        "verdict": "true",
+        "min_chars": 338,
+        "current": "**A) The monthly periodic interest rate is 0.60%.**  (true)\r\n\r\nThe monthly periodic rate is the nominal annual rate divided by the number of compounding periods: $i = r/n = 0.072/12 = 0.006 = 0.60\\%$. This matches the claim exactly, so the statement is True."
+      },
+      "B": {
+        "statement": "The effective annual rate is approximately 7.44%.",
+        "verdict": "true",
+        "min_chars": 366,
+        "current": "**B) The effective annual rate is approximately 7.44%.**  (true)\r\n\r\nThe effective annual rate is $R = (1 + r/n)^{n} - 1$. Substituting $r = 0.072$ and $n = 12$ gives $R = (1.006)^{12} - 1 \\approx 1.074424 - 1 = 0.074424 \\approx 7.44\\%$. This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "A \\$6,000 deposit left for exactly one year would grow to \\$6,446.54.",
+        "verdict": "true",
+        "min_chars": 391,
+        "current": "**C) A \\$6,000 deposit left for exactly one year would grow to \\$6,446.54.**  (true)\r\n\r\nThe one-year future value is principal times the compound growth factor: $FV = P(1+R) = 6,000 \\times 1.074424 \\approx \\$6,446.54$, using $R \\approx 7.44\\%$ from (B). This matches the claim exactly, so the statement is True."
+      },
+      "D": {
+        "statement": "If the bank instead compounded the same nominal rate annually, the effective annual rate would be higher than under monthly compounding.",
+        "verdict": "false",
+        "min_chars": 829,
+        "current": "**D) If the bank instead compounded the same nominal rate annually, the effective annual rate would be higher than under monthly compounding.**  (false)\r\n\r\nTrap: annual compounding (n = 1) simply reproduces the nominal rate as R, so it would equal 7.20%, which is lower than the monthly-compounded 7.44%, not higher.\r\n\r\nWith annual compounding, $n = 1$, so the effective-rate formula collapses to the nominal rate itself:\r\n\r\n$$R_{\\mathrm{ann}} = \\left(1 + \\frac{r}{1}\\right)^{1} - 1 = r$$\r\n\r\nSubstitute $r = 0.072$:\r\n\r\n$$R_{\\mathrm{ann}} = 0.072 = 7.20\\%$$\r\n\r\nCompare with the monthly effective rate from (B):\r\n\r\n$$7.20\\% < 7.44\\%$$\r\n\r\nThe claim says annual compounding would be higher. The annual effective rate is lower, so the statement is False."
+      },
+      "E": {
+        "statement": "The effective annual rate exceeds the nominal rate by more than 1.00 percentage point.",
+        "verdict": "false",
+        "min_chars": 466,
+        "current": "**E) The effective annual rate exceeds the nominal rate by more than 1.00 percentage point.**  (false)\r\n\r\nTrap: the actual gap is only $7.44\\% - 7.20\\% = 0.24$ percentage points, far less than $1.00$.\r\n\r\nThe gap between the effective and nominal rates is $\\Delta = R - r = 7.44\\% - 7.20\\% = 0.24$ percentage points, well below the claimed $1.00$-point cutoff. So the statement is False."
+      }
+    }
+  },
+  "2": {
+    "subsection": "11.1",
+    "context": "A deposit of \\$6,000 is put into an account earning interest at the annual rate of 8%, with interest paid quarterly. The owner wants to know how much will be in the account after 6 years.",
+    "solution_overview": "A deposit of \\$6,000 is put into an account earning interest at the annual rate of 8%, with interest paid quarterly. The owner wants to know how much will be in the account after 6 years.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$6,000$\r\n\r\nNominal annual rate $r = 8\\% = 0.08$\r\n\r\nCompounding frequency $n = 4$ (quarterly)\r\n\r\nTime $t = 6$ years\r\n\r\n**Part 2: Formula.**\r\n\r\nPeriodic rate: $r/n$\r\n\r\nFuture value $S(t) = S_0(1+r/n)^{nt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.08/4 = 0.02 = 2.00\\%$; $nt = 4 \\times 6 = 24$.\r\n\r\n**2.** $S(6) = 6,000 \\times (1.02)^{24} \\approx 6,000 \\times 1.608435 = \\$9,650.61$ (not $\\$9,860.00$).\r\n\r\n**3.** Compound growth is exponential, not linear, in time: $(1.02)^{12} \\approx 1.268242$, so the $3$-year value would be about $\\$7,609.45$, which is NOT half of $\\$9,650.61$ (half would be $\\$4,825.31$).\r\n\r\n**4.** Total growth: $(9,650.61 - 6,000)/6,000 \\approx 0.6084 = 60.84\\%$, which is not more than $65\\%$.",
+    "letters": {
+      "A": {
+        "statement": "The quarterly periodic rate is 2.00%.",
+        "verdict": "true",
+        "min_chars": 298,
+        "current": "**A) The quarterly periodic rate is 2.00%.**  (true)\r\n\r\nThe quarterly periodic rate is the nominal annual rate divided by 4: $i = r/n = 0.08/4 = 0.02 = 2.00\\%$. This matches the claim exactly, so the statement is True."
+      },
+      "B": {
+        "statement": "The number of quarterly periods over 6 years is 24.",
+        "verdict": "true",
+        "min_chars": 311,
+        "current": "**B) The number of quarterly periods over 6 years is 24.**  (true)\r\n\r\nThe number of compounding periods is compounding frequency times years: $nt = n \\times t = 4 \\times 6 = 24$. The claim matches exactly, so the statement is True."
+      },
+      "C": {
+        "statement": "The balance after 6 years is approximately \\$9,860.00.",
+        "verdict": "false",
+        "min_chars": 503,
+        "current": "**C) The balance after 6 years is approximately \\$9,860.00.**  (false)\r\n\r\nTrap: $S(6) = 6,000 \\times (1.02)^{24} \\approx \\$9,650.61$, not \\$9,860.00.\r\n\r\nThe compound future value is $S(t) = S_0(1 + r/n)^{nt}$. Substituting $S_0 = \\$6,000$, $1 + r/n = 1.02$, and $nt = 24$ gives $S(6) = 6,000 \\times (1.02)^{24} \\approx 6,000 \\times 1.608437 = \\$9,650.61$. The claim says approximately \\$9,860.00, so the statement is False."
+      },
+      "D": {
+        "statement": "If the deposit were left for only 3 years instead of 6, the future value would be exactly half of the 6-year future value.",
+        "verdict": "false",
+        "min_chars": 859,
+        "current": "**D) If the deposit were left for only 3 years instead of 6, the future value would be exactly half of the 6-year future value.**  (false)\r\n\r\nTrap: compound growth is an exponential function of time, not a linear one, so halving the time does not halve the future value. The 3-year balance (≈ \\$7,609.45) is far more than half of the 6-year balance.\r\n\r\nThe 3-year balance uses the same formula with $nt = 4 \\times 3 = 12$:\r\n\r\n$$S(3) = 6,000 \\times (1.02)^{12}$$\r\n\r\n$$(1.02)^{12} \\approx 1.268242$$\r\n\r\n$$S(3) \\approx 6,000 \\times 1.268242 = \\$7,609.45$$\r\n\r\nHalf of the 6-year balance would be\r\n\r\n$$\\frac{S(6)}{2} \\approx \\frac{9,650.61}{2} = \\$4,825.31$$\r\n\r\nCompare:\r\n\r\n$$\\$7,609.45 \\neq \\$4,825.31$$\r\n\r\nHalving the time does not halve the future value, so the statement is False."
+      },
+      "E": {
+        "statement": "The total percentage growth of the deposit over the 6 years is more than 65%.",
+        "verdict": "false",
+        "min_chars": 531,
+        "current": "**E) The total percentage growth of the deposit over the 6 years is more than 65%.**  (false)\r\n\r\nTrap: the actual total growth is $(9,650.61 - 6,000)/6,000 \\approx 60.84\\%$, which is less than $65\\%$, not more.\r\n\r\nTotal percentage growth is $g = (S(6) - S_0)/S_0$. Substituting $S(6) \\approx \\$9,650.61$ and $S_0 = \\$6,000$ gives $g \\approx 3,650.61/6,000 \\approx 0.6084 = 60.84\\%$, which is below the claimed $65\\%$ cutoff. So the statement is False."
+      }
+    }
+  },
+  "3": {
+    "subsection": "11.1",
+    "context": "A saver has \\$10,000 and is comparing two one-year term deposits: Offer (i) 6.4% with interest paid quarterly; Offer (ii) 6.5% with interest paid twice a year.",
+    "solution_overview": "A saver has \\$10,000 and is comparing two one-year term deposits: Offer (i) 6.4% with interest paid quarterly; Offer (ii) 6.5% with interest paid twice a year.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$10,000$\r\n\r\nOffer (i): $r = 6.4\\%$, $n = 4$ (quarterly)\r\n\r\nOffer (ii): $r = 6.5\\%$, $n = 2$ (semi-annual)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\nFuture value $FV = P(1+R)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Offer (i) periodic rate: $0.064/4 = 0.016$.\r\n\r\n**2.** $R_i = (1.016)^{4} - 1 \\approx 1.065533 - 1 = 0.065533 \\approx 6.55\\%$.\r\n\r\n**3.** Offer (ii) periodic rate: $0.065/2 = 0.0325$.\r\n\r\n**4.** $R_{ii} = (1.0325)^{2} - 1 = 1.066056 - 1 = 0.066056 \\approx 6.61\\%$.\r\n\r\n**5.** Since $R_{ii} \\approx 6.61\\% > R_i \\approx 6.55\\%$, Offer (ii) is the better deal for the saver, despite compounding less often.\r\n\r\n**6.** Interest for Offer (i): $10,000 \\times 0.065533 = \\$655.33$.\r\n\r\n**7.** Interest for Offer (ii): $10,000 \\times 0.066056 = \\$660.56$.\r\n\r\n**8.** Difference: $\\approx \\$5.23$ to $\\$5.24$.",
+    "letters": {
+      "A": {
+        "statement": "The effective annual rate of Offer (i) is approximately 6.55%.",
+        "verdict": "true",
+        "min_chars": 430,
+        "current": "**A) The effective annual rate of Offer (i) is approximately 6.55%.**  (true)\r\n\r\nOffer (i) is $6.4\\%$ nominal, compounded quarterly, so $R = (1 + r/n)^{n} - 1$. Substituting $r = 0.064$ and $n = 4$ (quarterly rate $0.016$) gives $R_i = (1.016)^{4} - 1 \\approx 1.065533 - 1 = 0.065533 \\approx 6.55\\%$. This matches the claim, so the statement is True."
+      },
+      "B": {
+        "statement": "The effective annual rate of Offer (ii) is approximately 6.61%.",
+        "verdict": "true",
+        "min_chars": 442,
+        "current": "**B) The effective annual rate of Offer (ii) is approximately 6.61%.**  (true)\r\n\r\nOffer (ii) is $6.5\\%$ nominal, compounded twice a year, so $R = (1 + r/n)^{n} - 1$. Substituting $r = 0.065$ and $n = 2$ (semi-annual rate $0.0325$) gives $R_{ii} = (1.0325)^{2} - 1 \\approx 1.066056 - 1 = 0.066056 \\approx 6.61\\%$. This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "Offer (ii) is the better choice for the saver.",
+        "verdict": "true",
+        "min_chars": 487,
+        "current": "**C) Offer (ii) is the better choice for the saver.**  (true)\r\n\r\nA higher effective annual rate directly means more money for the saver, so Offer (ii) is indeed better.\r\n\r\nCompare the two effective annual rates computed above:\r\n\r\n$$R_{ii} \\approx 6.61\\% \\qquad R_i \\approx 6.55\\%$$\r\n\r\n$$R_{ii} > R_i$$\r\n\r\nThe saver wants the higher effective yield, so Offer (ii) is the better choice. The statement is True."
+      },
+      "D": {
+        "statement": "Because Offer (i) compounds more frequently, it must have the higher effective rate.",
+        "verdict": "false",
+        "min_chars": 722,
+        "current": "**D) Because Offer (i) compounds more frequently, it must have the higher effective rate.**  (false)\r\n\r\nTrap: despite compounding less frequently, Offer (ii)'s higher nominal rate (6.5% vs. 6.4%) is enough to give it the higher effective rate (6.61% vs. 6.55%) - frequency alone does not decide which offer is better.\r\n\r\nOffer (i) compounds $n = 4$ times a year; Offer (ii) compounds $n = 2$ times. Frequency alone would favor Offer (i) only if the nominal rates were equal. Here they are not:\r\n\r\n$$R_i \\approx 6.55\\% < R_{ii} \\approx 6.61\\%$$\r\n\r\nMore frequent compounding did not produce the higher effective rate, so the statement is False."
+      },
+      "E": {
+        "statement": "Depositing \\$10,000 for one year, Offer (ii) would produce more than \\$660 in interest.",
+        "verdict": "true",
+        "min_chars": 402,
+        "current": "**E) Depositing \\$10,000 for one year, Offer (ii) would produce more than \\$660 in interest.**  (true)\r\n\r\nInterest earned is principal times the effective annual rate: $I = P \\times R_{ii} = 10,000 \\times 0.066056 \\approx \\$660.56$, using $R_{ii}$ from (B). This exceeds the claimed \\$660 cutoff, so the statement is True."
+      }
+    }
+  },
+  "4": {
+    "subsection": "11.1",
+    "context": "A retail credit card charges interest on any outstanding balance at a rate of 1.75% per month.",
+    "solution_overview": "A retail credit card charges interest on any outstanding balance at a rate of 1.75% per month.\r\n\r\n**Part 1: Setup.**\r\n\r\nMonthly periodic rate: $i_m = 1.75\\% = 0.0175$\r\n\r\nMonths per year: $n = 12$\r\n\r\n**Part 2: Formula.**\r\n\r\nNominal annual rate: $12 i_m$\r\n\r\nEffective annual rate $R = (1 + i_m)^{12} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Nominal annual rate: $12 \\times 1.75\\% = 21.00\\%$ (not $22.00\\%$).\r\n\r\n**2.** $R = (1.0175)^{12} - 1 \\approx 1.231430 - 1 = 0.231430 \\approx 23.14\\%$ (not $21.75\\%$).\r\n\r\n**3.** $FV$ of $\\$2,000$ unpaid for $1$ year: $2,000 \\times 1.231430 = \\$2,462.86$ (not $\\$2,420.00$).\r\n\r\n**4.** Gap: $23.14\\% - 21.00\\% = 2.14$ percentage points, which is indeed more than $2.00$ percentage points.\r\n\r\n**5.** At a $1.50\\%$ monthly rate: $R = (1.015)^{12} - 1 \\approx 1.195625 - 1 = 0.195625 \\approx 19.56\\%$, which does NOT exceed $20\\%$.",
+    "letters": {
+      "A": {
+        "statement": "The nominal annual rate, quoted as 12 times the monthly rate, is 22.00%.",
+        "verdict": "false",
+        "min_chars": 391,
+        "current": "**A) The nominal annual rate, quoted as 12 times the monthly rate, is 22.00%.**  (false)\r\n\r\nTrap: $12 \\times 1.75\\% = 21.00\\%$, not $22.00\\%$.\r\n\r\nThe nominal annual rate is 12 times the monthly periodic rate: $r = 12 \\times i_m = 12 \\times 1.75\\% = 21.00\\%$. The claim says $22.00\\%$, so the statement is False."
+      },
+      "B": {
+        "statement": "The effective annual rate of interest is approximately 21.75%.",
+        "verdict": "false",
+        "min_chars": 514,
+        "current": "**B) The effective annual rate of interest is approximately 21.75%.**  (false)\r\n\r\nTrap: the true effective annual rate is $(1.0175)^{12} - 1 \\approx 23.14\\%$, not $21.75\\%$.\r\n\r\nThe effective annual rate from a monthly periodic rate is $R = (1 + i_m)^{12} - 1$. Substituting $i_m = 0.0175$ gives $R = (1.0175)^{12} - 1 \\approx 1.231430 - 1 = 0.231430 \\approx 23.14\\%$. The claim says approximately $21.75\\%$, so the statement is False."
+      },
+      "C": {
+        "statement": "An unpaid balance of \\$2,000 would grow to \\$2,420.00 after one year of accruing interest this way.",
+        "verdict": "false",
+        "min_chars": 452,
+        "current": "**C) An unpaid balance of \\$2,000 would grow to \\$2,420.00 after one year of accruing interest this way.**  (false)\r\n\r\nTrap: $FV = 2,000 \\times 1.231430 = \\$2,462.86$, not $\\$2,420.00$.\r\n\r\nThe one-year future value is $FV = P(1 + i_m)^{12} = 2,000 \\times 1.231430 \\approx \\$2,462.86$, using the growth factor from (B). The claim says \\$2,420.00, so the statement is False."
+      },
+      "D": {
+        "statement": "The effective annual rate exceeds the nominal annual rate by more than 2.00 percentage points.",
+        "verdict": "true",
+        "min_chars": 379,
+        "current": "**D) The effective annual rate exceeds the nominal annual rate by more than 2.00 percentage points.**  (true)\r\n\r\nThe gap between the effective and nominal rates is $\\Delta = R - r = 23.14\\% - 21.00\\% = 2.14$ percentage points, which exceeds the claimed $2.00$-point cutoff. So the statement is True."
+      },
+      "E": {
+        "statement": "If the monthly rate were instead 1.50%, the effective annual rate would still exceed 20%.",
+        "verdict": "false",
+        "min_chars": 565,
+        "current": "**E) If the monthly rate were instead 1.50%, the effective annual rate would still exceed 20%.**  (false)\r\n\r\nTrap: at a 1.50% monthly rate, the effective annual rate is only about 19.56%, which falls just short of 20%, not above it.\r\n\r\nReplace $i_m$ with $0.015$:\r\n\r\n$$R' = (1.015)^{12} - 1$$\r\n\r\n$$(1.015)^{12} \\approx 1.195618$$\r\n\r\n$$R' \\approx 0.195618 \\approx 19.56\\%$$\r\n\r\nCompare with 20%:\r\n\r\n$$19.56\\% < 20\\%$$\r\n\r\nThe effective rate does not exceed 20%, so the statement is False."
+      }
+    }
+  },
+  "5": {
+    "subsection": "11.1",
+    "context": "A veterinary clinic deposits \\$15,000 into a one-year business account earning a nominal annual rate of 5.6%, compounded quarterly.",
+    "solution_overview": "A veterinary clinic deposits \\$15,000 into a one-year business account earning a nominal annual rate of 5.6%, compounded quarterly.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$15,000$\r\n\r\nNominal annual rate $r = 5.6\\% = 0.056$\r\n\r\nCompounding frequency $n = 4$ (quarterly)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nPeriodic rate: $r/n$\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\nFuture value $FV = P(1+R)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.056/4 = 0.014 = 1.40\\%$.\r\n\r\n**2.** $R = (1.014)^{4} - 1 \\approx 1.057187 - 1 = 0.057187 \\approx 5.72\\%$.\r\n\r\n**3.** $FV = 15,000 \\times 1.057187 = \\$15,857.81$.\r\n\r\n**4.** Monthly compounding of the same $5.6\\%$ nominal rate gives a slightly higher EAR ($\\approx 5.746\\%$), not lower — more frequent compounding always raises EAR.\r\n\r\n**5.** Gap: $5.7187\\% - 5.60\\% \\approx 0.12$ percentage points, which is less than $0.20$ percentage points.",
+    "letters": {
+      "A": {
+        "statement": "The quarterly periodic rate is 1.40%.",
+        "verdict": "true",
+        "min_chars": 262,
+        "current": "**A) The quarterly periodic rate is 1.40%.**  (true)\r\n\r\nThe quarterly periodic rate is $i = r/n = 0.056/4 = 0.014 = 1.40\\%$. This matches the claim exactly, so the statement is True."
+      },
+      "B": {
+        "statement": "The effective annual rate is approximately 5.72%.",
+        "verdict": "true",
+        "min_chars": 370,
+        "current": "**B) The effective annual rate is approximately 5.72%.**  (true)\r\n\r\nThe effective annual rate is $R = (1 + r/n)^{n} - 1$. Substituting $1 + r/n = 1.014$ and $n = 4$ gives $R = (1.014)^{4} - 1 \\approx 1.057187 - 1 = 0.057187 \\approx 5.72\\%$. This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "The balance after one year is approximately \\$15,857.81.",
+        "verdict": "true",
+        "min_chars": 321,
+        "current": "**C) The balance after one year is approximately \\$15,857.81.**  (true)\r\n\r\nThe one-year future value is $FV = P(1+R) = 15,000 \\times 1.057187 \\approx \\$15,857.81$, using $R$ from (B). This matches the claim exactly, so the statement is True."
+      },
+      "D": {
+        "statement": "If the same nominal rate were instead compounded monthly, the resulting effective annual rate would be lower than under quarterly compounding.",
+        "verdict": "false",
+        "min_chars": 728,
+        "current": "**D) If the same nominal rate were instead compounded monthly, the resulting effective annual rate would be lower than under quarterly compounding.**  (false)\r\n\r\nTrap: switching to monthly compounding raises the EAR (to roughly 5.75%), since more frequent compounding never lowers the EAR for a fixed nominal rate.\r\n\r\nMonthly compounding of the same 5.6% uses $n = 12$:\r\n\r\n$$R_m = \\left(1 + \\frac{0.056}{12}\\right)^{12} - 1$$\r\n\r\n$$1 + 0.056/12 = 1.0046667$$\r\n\r\n$$R_m \\approx 0.057460 \\approx 5.75\\%$$\r\n\r\nCompare with the quarterly EAR of 5.72%:\r\n\r\n$$5.75\\% > 5.72\\%$$\r\n\r\nMonthly compounding raises the EAR, not lowers it, so the statement is False."
+      },
+      "E": {
+        "statement": "The gap between the EAR and the nominal rate exceeds 0.20 percentage points.",
+        "verdict": "false",
+        "min_chars": 424,
+        "current": "**E) The gap between the EAR and the nominal rate exceeds 0.20 percentage points.**  (false)\r\n\r\nTrap: the actual gap is only about $0.12$ percentage points, which does not exceed $0.20$.\r\n\r\nThe gap is $\\Delta = R - r = 5.7187\\% - 5.60\\% \\approx 0.12$ percentage points, which is below the claimed $0.20$-point cutoff. So the statement is False."
+      }
+    }
+  },
+  "6": {
+    "subsection": "11.1",
+    "context": "A savings account earns a nominal annual rate of 7.2%, compounded monthly. An investor wants to know how long it will take for a deposit to double in value.",
+    "solution_overview": "A savings account earns a nominal annual rate of $7.2\\%$, compounded monthly. An investor wants to know how long it will take for a deposit to double in value.\r\n\r\n**Part 1: Setup.**\r\n\r\nNominal annual rate $r = 7.2\\% = 0.072$; compounding frequency $n = 12$ (monthly); target: double the principal.\r\n\r\n**Part 2: Formula.**\r\n\r\nMonthly periodic rate $i_m = r/12$; growth condition $(1+i_m)^{t} = M$; solve $t = \\ln M / \\ln(1+i_m)$.\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.072/12 = 0.006 = 0.60\\%$.\r\n\r\n**2.** Solve $(1.006)^{t} = 2$: $t = \\ln 2/\\ln 1.006 \\approx 0.693147/0.0059821 \\approx 115.85$ months $\\approx 9.65$ years (not $108$ months).\r\n\r\n**3.** $115.85$ months is not $58$ months; doubling time does not split that way along the exponential curve.\r\n\r\n**4.** At $14.4\\%$ nominal monthly, $R = (1.012)^{12}-1 \\approx 15.38\\%$, but double the original $7.44\\%$ EAR would be $14.88\\%$ — doubling the nominal rate does not exactly double the EAR.\r\n\r\n**5.** The same $t = \\ln(M)/\\ln(1+i)$ method works for any target multiple $M$.",
+    "letters": {
+      "A": {
+        "statement": "The monthly periodic rate is 0.60%.",
+        "verdict": "true",
+        "min_chars": 259,
+        "current": "**A) The monthly periodic rate is 0.60%.**  (true)\r\n\r\nThe monthly periodic rate is $i = r/n = 0.072/12 = 0.006 = 0.60\\%$. This matches the claim exactly, so the statement is True."
+      },
+      "B": {
+        "statement": "It takes approximately 108 months for the deposit to double.",
+        "verdict": "false",
+        "min_chars": 611,
+        "current": "**B) It takes approximately 108 months for the deposit to double.**  (false)\r\n\r\nTrap: the correct doubling time is t = ln2/ln(1.006) ≈ 115.85 months (about 9.65 years), not 108 months.\r\n\r\nDoubling means the compound growth factor equals 2:\r\n\r\n$$(1 + i)^{t} = 2$$\r\n\r\nSolve by natural logs:\r\n\r\n$$t = \\frac{\\ln 2}{\\ln(1+i)}$$\r\n\r\nSubstitute $i = 0.006$:\r\n\r\n$$t = \\frac{\\ln 2}{\\ln 1.006} = \\frac{0.693147}{0.0059821} \\approx 115.85$$\r\n\r\nmonths\r\n\r\nThe claim says approximately 108 months. We got 115.85 months, so the statement is False."
+      },
+      "C": {
+        "statement": "It would take approximately 58 months for the deposit to double.",
+        "verdict": "false",
+        "min_chars": 725,
+        "current": "**C) It would take approximately 58 months for the deposit to double.**  (false)\r\n\r\nTrap: the true doubling time is about 115.85 months; 58 months is nowhere near it and is not meaningfully 'half' of the correct value in any valid sense.\r\n\r\nFrom (B), the doubling time is\r\n\r\n$$t = \\frac{\\ln 2}{\\ln 1.006} \\approx 115.85$$\r\n\r\nmonths\r\n\r\nHalf of that would be $115.85/2 \\approx 57.93$ months, but 58 months is not the doubling time itself. The claim treats 58 months as the doubling time. The deposit has not doubled after 58 months:\r\n\r\n$$(1.006)^{58} \\approx 1.414 \\neq 2$$\r\n\r\nThe doubling time is 115.85 months, not 58, so the statement is False."
+      },
+      "D": {
+        "statement": "If the nominal rate were doubled to 14.4%, the resulting effective annual rate would also be exactly double the original effective annual rate.",
+        "verdict": "false",
+        "min_chars": 878,
+        "current": "**D) If the nominal rate were doubled to 14.4%, the resulting effective annual rate would also be exactly double the original effective annual rate.**  (false)\r\n\r\nTrap: doubling the nominal rate raises the EAR to about 15.38%, but exactly double the original EAR of 7.44% would be 14.88% - the two figures are close but not equal, since EAR is a nonlinear (not proportional) function of the nominal rate.\r\n\r\nOriginal EAR at 7.2% monthly:\r\n\r\n$$R = (1.006)^{12} - 1 \\approx 0.074424 \\approx 7.44\\%$$\r\n\r\nAt 14.4% nominal monthly, $i = 0.144/12 = 0.012$:\r\n\r\n$$R' = (1.012)^{12} - 1 \\approx 0.153895 \\approx 15.38\\%$$\r\n\r\nDouble the original EAR would be\r\n\r\n$$2 \\times 7.44\\% = 14.88\\%$$\r\n\r\n$$15.38\\% \\neq 14.88\\%$$\r\n\r\nDoubling the nominal rate does not exactly double the EAR, so the statement is False."
+      },
+      "E": {
+        "statement": "Because $(1 + r/n)^{t}$ is an increasing function of t, the same logarithmic method used for doubling can be used to find the time needed for any other target growth multiple.",
+        "verdict": "true",
+        "min_chars": 603,
+        "current": "**E) Because $(1 + r/n)^{t}$ is an increasing function of t, the same logarithmic method used for doubling can be used to find the time needed for any other target growth multiple.**  (true)\r\n\r\nBecause $(1+r/n)^{t}$ is a strictly increasing exponential function of $t$, solving $(1+i)^{t} = M$ for $t = \\ln M / \\ln(1+i)$ works for any target multiple $M > 0$, $M \\neq 1$, not just doubling, since $\\ln(1+i) > 0$ whenever $i > 0$ — this is exactly the method used in Example 11.1.2 of the textbook. So the statement is True."
+      }
+    }
+  },
+  "7": {
+    "subsection": "11.1",
+    "context": "A finance student is asked to compute the effective yearly rate corresponding to a nominal annual interest rate of 15%, with interest added twice a year, each quarter, and each month.",
+    "solution_overview": "A finance student is asked to compute the effective yearly rate corresponding to a nominal annual interest rate of 15%, with interest added twice a year, each quarter, and each month.\r\n\r\n**Part 1: Setup.**\r\n\r\nNominal annual rate $r = 15\\% = 0.15$\r\n\r\n$n = 2$ (semi-annual), $n = 4$ (quarterly), $n = 12$ (monthly)\r\n\r\n**Part 2: Formula.**\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Semi-annual: $R = (1.075)^{2} - 1 = 1.155625 - 1 = 0.155625 \\approx 15.56\\%$.\r\n\r\n**2.** Quarterly: $R = (1.0375)^{4} - 1 \\approx 1.158650 - 1 = 0.158650 \\approx 15.87\\%$.\r\n\r\n**3.** Monthly: $R = (1.0125)^{12} - 1 \\approx 1.160766 - 1 = 0.160766 \\approx 16.08\\%$.\r\n\r\n**4.** Ranking confirms $15.56\\% < 15.87\\% < 16.08\\%$ as compounding frequency increases.\r\n\r\n**5.** First gap: $15.87\\% - 15.56\\% = 0.31$ points; second gap: $16.08\\% - 15.87\\% = 0.21$ points.\r\n\r\n**6.** The first gap is actually LARGER than the second, not smaller — each additional increase in frequency adds progressively less to the EAR.",
+    "letters": {
+      "A": {
+        "statement": "The effective rate under semi-annual compounding is approximately 15.56%.",
+        "verdict": "true",
+        "min_chars": 382,
+        "current": "**A) The effective rate under semi-annual compounding is approximately 15.56%.**  (true)\r\n\r\nThe effective annual rate is $R = (1 + r/n)^{n} - 1$. Substituting $r = 0.15$ and $n = 2$ gives $R = (1.075)^{2} - 1 = 1.155625 - 1 = 0.155625 \\approx 15.56\\%$. This matches the claim, so the statement is True."
+      },
+      "B": {
+        "statement": "The effective rate under quarterly compounding is approximately 15.87%.",
+        "verdict": "true",
+        "min_chars": 362,
+        "current": "**B) The effective rate under quarterly compounding is approximately 15.87%.**  (true)\r\n\r\nSubstituting $r = 0.15$ and $n = 4$ into $R = (1 + r/n)^{n} - 1$ gives $R = (1.0375)^{4} - 1 \\approx 1.158650 - 1 = 0.158650 \\approx 15.87\\%$. This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "The effective rate under monthly compounding is approximately 16.08%.",
+        "verdict": "true",
+        "min_chars": 362,
+        "current": "**C) The effective rate under monthly compounding is approximately 16.08%.**  (true)\r\n\r\nSubstituting $r = 0.15$ and $n = 12$ into $R = (1 + r/n)^{n} - 1$ gives $R = (1.0125)^{12} - 1 \\approx 1.160755 - 1 = 0.160755 \\approx 16.08\\%$. This matches the claim, so the statement is True."
+      },
+      "D": {
+        "statement": "Increasing the compounding frequency from semi-annual to quarterly to monthly steadily raises the effective rate.",
+        "verdict": "true",
+        "min_chars": 496,
+        "current": "**D) Increasing the compounding frequency from semi-annual to quarterly to monthly steadily raises the effective rate.**  (true)\r\n\r\nThis textbook fact (Example 11.2.3 referenced in Section 11.1) is confirmed here: for a fixed r > 0, R strictly increases as n increases.\r\n\r\nFrom (A)-(C):\r\n\r\n$$15.56\\% < 15.87\\% < 16.08\\%$$\r\n\r\nas $n$ goes from 2 to 4 to 12. The effective rate steadily rises, so the statement is True."
+      },
+      "E": {
+        "statement": "The increase in effective rate from semi-annual to quarterly is smaller than the increase from quarterly to monthly.",
+        "verdict": "false",
+        "min_chars": 723,
+        "current": "**E) The increase in effective rate from semi-annual to quarterly is smaller than the increase from quarterly to monthly.**  (false)\r\n\r\nTrap: the gap from semi-annual to quarterly (0.31 points) is actually larger than the gap from quarterly to monthly (0.21 points), not smaller - the marginal benefit of increasing compounding frequency diminishes as n grows, which is why R never grows without bound even as n → ∞.\r\n\r\nFirst gap:\r\n\r\n$$15.87\\% - 15.56\\% = 0.31$$\r\n\r\npercentage points\r\n\r\nSecond gap:\r\n\r\n$$16.08\\% - 15.87\\% = 0.21$$\r\n\r\npercentage points\r\n\r\n$$0.31 > 0.21$$\r\n\r\nThe first increase is larger, not smaller, so the statement is False."
+      }
+    }
+  },
+  "8": {
+    "subsection": "11.1",
+    "context": "A grandparent deposits \\$4,000 into a trust account for a grandchild, earning a nominal annual rate of 6%, compounded monthly, for 10 years.",
+    "solution_overview": "A grandparent deposits \\$4,000 into a trust account for a grandchild, earning a nominal annual rate of 6%, compounded monthly, for 10 years.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$4,000$\r\n\r\nNominal annual rate $r = 6\\% = 0.06$\r\n\r\nCompounding frequency $n = 12$ (monthly)\r\n\r\nTime $t = 10$ years\r\n\r\n**Part 2: Formula.**\r\n\r\nFuture value $S(t) = S_0(1+r/n)^{nt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.06/12 = 0.005 = 0.50\\%$; $nt = 12 \\times 10 = 120$.\r\n\r\n**2.** $S(10) = 4,000 \\times (1.005)^{120} \\approx 4,000 \\times 1.8194 = \\$7,277.60$.\r\n\r\n**3.** Growth factor is $1.8194$, not $2.0$, so the deposit has NOT quite doubled after $10$ years (it would take about $11.6$ years to fully double at this rate).\r\n\r\n**4.** Annual compounding ($n = 1$): $S(10) = 4,000 \\times (1.06)^{10} = 4,000 \\times 1.790847 = \\$7,163.39$, which is LESS than $\\$7,277.60$, not more, since less frequent compounding always yields a smaller future value for the same nominal rate.",
+    "letters": {
+      "A": {
+        "statement": "The monthly periodic rate is 0.50%.",
+        "verdict": "true",
+        "min_chars": 309,
+        "current": "**A) The monthly periodic rate is 0.50%.**  (true)\r\n\r\nPeriodic rate: $0.06/12 = 0.50\\%$, matching exactly.\r\n\r\n$$i = \\frac{r}{n} = \\frac{0.06}{12} = 0.005 = 0.50\\%$$\r\n\r\nThe claim says 0.50%. We got 0.50%, so the statement is True."
+      },
+      "B": {
+        "statement": "The number of monthly compounding periods over 10 years, nt, is 120.",
+        "verdict": "true",
+        "min_chars": 316,
+        "current": "**B) The number of monthly compounding periods over 10 years, nt, is 120.**  (true)\r\n\r\n$nt = 12 \\times 10 = 120$, matching exactly.\r\n\r\n$$nt = n \\times t = 12 \\times 10 = 120$$\r\n\r\nThe claim says 120. We got 120, so the statement is True."
+      },
+      "C": {
+        "statement": "The balance after 10 years is approximately \\$7,277.60.",
+        "verdict": "true",
+        "min_chars": 614,
+        "current": "**C) The balance after 10 years is approximately \\$7,277.60.**  (true)\r\n\r\n$S(10) = 4,000 \\times (1.005)^{120} \\approx \\$7,277.60$, matching exactly.\r\n\r\nCompound future value is\r\n\r\n$$S(t) = S_0\\left(1 + \\frac{r}{n}\\right)^{nt}$$\r\n\r\nSubstitute $S_0 = \\$4,000,1 + r/n = 1.005$, and $nt = 120$:\r\n\r\n$$S(10) = 4,000 \\times (1.005)^{120}$$\r\n\r\n$$(1.005)^{120} \\approx 1.819397$$\r\n\r\n$$S(10) \\approx 4,000 \\times 1.819397 = \\$7,277.59 \\approx \\$7,277.60$$\r\n\r\nThe claim says approximately \\$7,277.60. We got \\$7,277.60, so the statement is True."
+      },
+      "D": {
+        "statement": "The deposit exactly doubles in value over these 10 years.",
+        "verdict": "false",
+        "min_chars": 658,
+        "current": "**D) The deposit exactly doubles in value over these 10 years.**  (false)\r\n\r\nTrap: the growth factor is 1.8194, so the deposit is close to but has not yet doubled; it would need roughly 11.6 years, not 10, to fully double at this rate.\r\n\r\nDoubling would require a growth factor of 2. From (C):\r\n\r\n$$(1.005)^{120} \\approx 1.8194 \\neq 2$$\r\n\r\nThe months needed to double solve $(1.005)^{t} = 2$:\r\n\r\n$$t = \\frac{\\ln 2}{\\ln 1.005} \\approx \\frac{0.693147}{0.0049875} \\approx 138.98\\mathrm{ months} \\approx 11.58$$\r\n\r\nyears\r\n\r\nTen years is short of doubling, so the statement is False."
+      },
+      "E": {
+        "statement": "If compounded annually instead, the 10-year future value would exceed the future value obtained under monthly compounding.",
+        "verdict": "false",
+        "min_chars": 752,
+        "current": "**E) If compounded annually instead, the 10-year future value would exceed the future value obtained under monthly compounding.**  (false)\r\n\r\nTrap: annual compounding produces a SMALLER future value (\\$7,163.39) than monthly compounding (\\$7,277.60) for the same nominal rate, since less frequent compounding always yields less growth, not more.\r\n\r\nAnnual compounding uses $n = 1$:\r\n\r\n$$S_{\\mathrm{ann}}(10) = 4,000 \\times (1.06)^{10}$$\r\n\r\n$$(1.06)^{10} \\approx 1.790848$$\r\n\r\n$$S_{\\mathrm{ann}}(10) \\approx 4,000 \\times 1.790848 = \\$7,163.39$$\r\n\r\nCompare with monthly:\r\n\r\n$$\\$7,163.39 < \\$7,277.60$$\r\n\r\nAnnual compounding is smaller, not larger, so the statement is False."
+      }
+    }
+  },
+  "9": {
+    "subsection": "11.1",
+    "context": "An investment fund wants to grow \\$50,000 into \\$80,000 over 8 years, with interest compounded quarterly. The fund manager needs to find the required nominal annual rate.",
+    "solution_overview": "An investment fund wants to grow \\$50,000 into \\$80,000 over 8 years, with interest compounded quarterly. The fund manager needs to find the required nominal annual rate.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$50,000$\r\n\r\nTarget $S(t) = \\$80,000$\r\n\r\n$n = 4$ (quarterly)\r\n\r\n$t = 8$ years, so $nt = 32$\r\n\r\n**Part 2: Formula.**\r\n\r\n$S(t) = S_0(1+r/n)^{nt}$\r\n\r\nSolve for rate: $r = n[(S(t)/S_0)^{1/(nt)} - 1]$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $(1 + r/4)^{32} = 80,000/50,000 = 1.6$, so $1 + r/4 = (1.6)^{1/32} \\approx 1.014796$, giving $r \\approx 4 \\times 0.014796 \\approx 0.05918 \\approx 5.92\\%$.\r\n\r\n**2.** Quarterly periodic rate: $5.92\\%/4 \\approx 1.48\\%$.\r\n\r\n**3.** A shorter time horizon ($4$ years instead of $8$) to reach the same growth factor of $1.6$ requires a HIGHER rate, not a lower one, since less time demands faster growth.\r\n\r\n**4.** Monthly compounding is more frequent than quarterly, so it needs a LOWER nominal rate, not a higher one, to reach the same $1.6$ growth factor over the same $8$ years.\r\n\r\n**5.** Growth: $(80,000 - 50,000)/50,000 = 30,000/50,000 = 0.60 = 60.00\\%$ exactly, which is not more than $65\\%$.",
+    "letters": {
+      "A": {
+        "statement": "The required nominal annual rate, compounded quarterly, is approximately 5.92%.",
+        "verdict": "true",
+        "min_chars": 657,
+        "current": "**A) The required nominal annual rate, compounded quarterly, is approximately 5.92%.**  (true)\r\n\r\nSolving $(1 + r/4)^{32} = 1.6$ gives $r \\approx 5.92\\%$, matching exactly.\r\n\r\nThe compound growth equation is\r\n\r\n$$S(t) = S_0\\left(1 + \\frac{r}{n}\\right)^{nt}$$\r\n\r\nSubstitute $S(t)/S_0 = 80,000/50,000 = 1.6$, $n = 4$, $t = 8$, so $nt = 32$:\r\n\r\n$$\\left(1 + \\frac{r}{4}\\right)^{32} = 1.6$$\r\n\r\n$$1 + \\frac{r}{4} = 1.6^{1/32} \\approx 1.014796$$\r\n\r\n$$r = 4 \\times 0.014796 \\approx 0.05918 \\approx 5.92\\%$$\r\n\r\nThe claim says approximately 5.92%. We got 5.92%, so the statement is True."
+      },
+      "B": {
+        "statement": "The corresponding quarterly periodic rate is approximately 1.48%.",
+        "verdict": "true",
+        "min_chars": 325,
+        "current": "**B) The corresponding quarterly periodic rate is approximately 1.48%.**  (true)\r\n\r\nThe quarterly periodic rate is $i = r/4 \\approx 0.05918/4 \\approx 0.014795 \\approx 1.48\\%$, using $r$ from (A). This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "If the same growth were required in only 4 years instead of 8, the required nominal rate would be lower than in the original 8-year scenario.",
+        "verdict": "false",
+        "min_chars": 700,
+        "current": "**C) If the same growth were required in only 4 years instead of 8, the required nominal rate would be lower than in the original 8-year scenario.**  (false)\r\n\r\nTrap: reaching the same 1.6× growth factor in HALF the time (4 years instead of 8) requires a substantially HIGHER rate, not a lower one.\r\n\r\nOver 4 years, $nt = 16$:\r\n\r\n$$\\left(1 + \\frac{r'}{4}\\right)^{16} = 1.6$$\r\n\r\n$$1 + \\frac{r'}{4} = 1.6^{1/16} \\approx 1.029811$$\r\n\r\n$$r' \\approx 4 \\times 0.029811 = 0.11924 \\approx 11.92\\%$$\r\n\r\nCompare with the original 5.92%:\r\n\r\n$$11.92\\% > 5.92\\%$$\r\n\r\nThe required rate is higher, not lower, so the statement is False."
+      },
+      "D": {
+        "statement": "If the compounding were changed from quarterly to monthly, the required nominal rate would need to be higher than in the original quarterly scenario.",
+        "verdict": "false",
+        "min_chars": 732,
+        "current": "**D) If the compounding were changed from quarterly to monthly, the required nominal rate would need to be higher than in the original quarterly scenario.**  (false)\r\n\r\nTrap: because monthly compounding is more frequent than quarterly, it actually needs a LOWER nominal rate than 5.92% to reach the same target - not a higher one.\r\n\r\nMonthly compounding uses $n = 12$ and $nt = 96$:\r\n\r\n$$\\left(1 + \\frac{r_m}{12}\\right)^{96} = 1.6$$\r\n\r\n$$1 + \\frac{r_m}{12} = 1.6^{1/96} \\approx 1.004908$$\r\n\r\n$$r_m \\approx 12 \\times 0.004908 = 0.05890 \\approx 5.89\\%$$\r\n\r\n$$5.89\\% < 5.92\\%$$\r\n\r\nThe required nominal rate is lower, not higher, so the statement is False."
+      },
+      "E": {
+        "statement": "Growing from \\$50,000 to \\$80,000 represents an increase of more than 65%.",
+        "verdict": "false",
+        "min_chars": 448,
+        "current": "**E) Growing from \\$50,000 to \\$80,000 represents an increase of more than 65%.**  (false)\r\n\r\nTrap: the actual increase is exactly (80,000 - 50,000)/50,000 = 60.00%, which is not more than 65%.\r\n\r\n$$g = \\frac{80,000 - 50,000}{50,000} = \\frac{30,000}{50,000} = 0.60 = 60.00\\%$$\r\n\r\n$$60.00\\% < 65\\%$$\r\n\r\nThe increase is 60%, not more than 65%, so the statement is False."
+      }
+    }
+  },
+  "10": {
+    "subsection": "11.1",
+    "context": "A borrower is comparing two loan terms: option (a) a nominal annual rate of 10.80%, with interest paid annually; option (b) a nominal annual rate of 10.40%, with interest paid quarterly.",
+    "solution_overview": "A borrower is comparing two loan terms: option (a) a nominal annual rate of 10.80%, with interest paid annually; option (b) a nominal annual rate of 10.40%, with interest paid quarterly.\r\n\r\n**Part 1: Setup.**\r\n\r\nOption (a): $r = 10.80\\%$, $n = 1$ (annual)\r\n\r\nOption (b): $r = 10.40\\%$, $n = 4$ (quarterly)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Option (a): with $n = 1$, $R_a = 10.80\\%$ (the nominal rate) exactly.\r\n\r\n**2.** Option (b) periodic rate: $0.104/4 = 0.026$.\r\n\r\n**3.** $R_b = (1.026)^{4} - 1 \\approx 1.108127 - 1 = 0.108127 \\approx 10.81\\%$.\r\n\r\n**4.** Since $R_b \\approx 10.81\\%$ is very slightly higher than $R_a = 10.80\\%$, option (a) is actually marginally cheaper for the borrower, even though its quoted nominal rate is higher.\r\n\r\n**5.** Difference: $10.8127\\% - 10.80\\% \\approx 0.013$ percentage points, which is less than $0.05$ percentage points.",
+    "letters": {
+      "A": {
+        "statement": "Option (a)'s effective annual rate is higher than option (b)'s effective annual rate.",
+        "verdict": "false",
+        "min_chars": 690,
+        "current": "**A) Option (a)'s effective annual rate is higher than option (b)'s effective annual rate.**  (false)\r\n\r\nTrap: $R_a = 10.80\\%$ is actually slightly LOWER than $R_b \\approx 10.81\\%$, not higher.\r\n\r\nOption (a) compounds annually, so $n = 1$ and the effective rate equals the nominal rate:\r\n\r\n$$R_a = 0.1080 = 10.80\\%$$\r\n\r\nOption (b) is 10.40% nominal quarterly:\r\n\r\n$$R_b = \\left(1 + \\frac{0.104}{4}\\right)^{4} - 1 = (1.026)^{4} - 1$$\r\n\r\n$$(1.026)^{4} \\approx 1.108127$$\r\n\r\n$$R_b \\approx 0.108127 \\approx 10.81\\%$$\r\n\r\n$$R_a = 10.80\\% < R_b \\approx 10.81\\%$$\r\n\r\nOption (a) is not higher, so the statement is False."
+      },
+      "B": {
+        "statement": "Option (b)'s effective annual rate is approximately 10.81%.",
+        "verdict": "true",
+        "min_chars": 387,
+        "current": "**B) Option (b)'s effective annual rate is approximately 10.81%.**  (true)\r\n\r\n$R_b = (1.026)^{4} - 1 \\approx 10.81\\%$, matching exactly.\r\n\r\nFrom (A):\r\n\r\n$$R_b = (1.026)^{4} - 1 \\approx 1.108127 - 1 = 0.108127 \\approx 10.81\\%$$\r\n\r\nThe claim says approximately 10.81%. We got 10.81%, so the statement is True."
+      },
+      "C": {
+        "statement": "Because option (b) quotes a lower nominal rate, it must be the cheaper option for the borrower.",
+        "verdict": "false",
+        "min_chars": 597,
+        "current": "**C) Because option (b) quotes a lower nominal rate, it must be the cheaper option for the borrower.**  (false)\r\n\r\nTrap: despite quoting a lower nominal rate, option (b)'s quarterly compounding pushes its effective rate very slightly above option (a)'s, so option (b) is actually marginally more expensive, not cheaper.\r\n\r\nThe borrower cares about the effective annual rate, not the quoted nominal rate:\r\n\r\n$$R_b \\approx 10.81\\% > R_a = 10.80\\%$$\r\n\r\nOption (b) is marginally more expensive, so the statement is False."
+      },
+      "D": {
+        "statement": "For the borrower, option (a) is more expensive than option (b).",
+        "verdict": "false",
+        "min_chars": 414,
+        "current": "**D) For the borrower, option (a) is more expensive than option (b).**  (false)\r\n\r\nTrap: since 10.80% < 10.81%, option (a) is actually the slightly CHEAPER (less expensive) option for the borrower, not the more expensive one.\r\n\r\n$$R_a = 10.80\\% < R_b \\approx 10.81\\%$$\r\n\r\nOption (a) costs the borrower less, so the statement is False."
+      },
+      "E": {
+        "statement": "The two options' effective annual rates differ by more than 0.05 percentage points.",
+        "verdict": "false",
+        "min_chars": 484,
+        "current": "**E) The two options' effective annual rates differ by more than 0.05 percentage points.**  (false)\r\n\r\nTrap: the actual difference is only about 0.013 percentage points, which is less than 0.05 percentage points, not more.\r\n\r\n$$\\Delta = R_b - R_a \\approx 10.8127\\% - 10.80\\% = 0.0127$$\r\n\r\npercentage points\r\n\r\n$$0.013 < 0.05$$\r\n\r\nThe difference is below 0.05 percentage points, so the statement is False."
+      }
+    }
+  },
+  "11": {
+    "subsection": "11.1",
+    "context": "A trustee wants to know how much would have needed to be deposited 6 years ago, at a constant annual interest rate of 4.5%, paid once a year, to have exactly \\$40,000 available today.",
+    "solution_overview": "A trustee wants to know how much would have needed to be deposited 6 years ago, at a constant annual interest rate of 4.5%, paid once a year, to have exactly \\$40,000 available today.\r\n\r\n**Part 1: Setup.**\r\n\r\nTarget $S(t) = \\$40,000$\r\n\r\nNominal annual rate $r = 4.5\\% = 0.045$\r\n\r\n$n = 1$ (annual)\r\n\r\nTime $t = 6$ years\r\n\r\n**Part 2: Formula.**\r\n\r\nFuture value $S(t) = S_0(1+r)^{t}$\r\n\r\nPresent value $S_0 = S(t)/(1+r)^{t}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $(1.045)^{6} \\approx 1.302253$.\r\n\r\n**2.** $S_0 = 40,000/1.302253 \\approx \\$30,715.86$.\r\n\r\n**3.** $\\$30,715.86$ is indeed less than $\\$32,000$.\r\n\r\n**4.** A higher rate ($5.5\\%$) means the deposit grows faster, so LESS principal is needed today to reach the same $\\$40,000$ in $6$ years — the required present value would be lower, not higher.\r\n\r\n**5.** Interest: $40,000 - 30,715.86 = \\$9,284.14$.",
+    "letters": {
+      "A": {
+        "statement": "The growth factor over the 6 years at 4.5% annual compounding is approximately 1.302253.",
+        "verdict": "true",
+        "min_chars": 364,
+        "current": "**A) The growth factor over the 6 years at 4.5% annual compounding is approximately 1.302253.**  (true)\r\n\r\nThe annual compounding growth factor is $(1+r)^{t}$. Substituting $r = 0.045$ and $t = 6$ gives $(1.045)^{6} \\approx 1.302253$. This matches the claim, so the statement is True."
+      },
+      "B": {
+        "statement": "The amount that would need to have been deposited 6 years ago is approximately \\$30,715.86.",
+        "verdict": "true",
+        "min_chars": 435,
+        "current": "**B) The amount that would need to have been deposited 6 years ago is approximately \\$30,715.86.**  (true)\r\n\r\nThe present value under annual compounding is $S_0 = S(t)/(1+r)^{t}$. Substituting $S(t) = \\$40,000$ and $(1.045)^{6} \\approx 1.302253$ from (A) gives $S_0 = 40,000/1.302253 \\approx \\$30,715.86$. This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "This present value is less than \\$32,000.",
+        "verdict": "true",
+        "min_chars": 233,
+        "current": "**C) This present value is less than \\$32,000.**  (true)\r\n\r\nFrom (B), $S_0 \\approx \\$30,715.86$, which is less than $\\$32,000$. So the statement is True."
+      },
+      "D": {
+        "statement": "If the rate had instead been 5.5%, the required present value would be higher than at 4.5%.",
+        "verdict": "false",
+        "min_chars": 650,
+        "current": "**D) If the rate had instead been 5.5%, the required present value would be higher than at 4.5%.**  (false)\r\n\r\nTrap: a higher interest rate (5.5%) grows money faster, so a SMALLER deposit today would suffice to reach the same \\$40,000 target - the required present value would be lower, not higher.\r\n\r\nAt 5.5% annual:\r\n\r\n$$S_0' = \\frac{40,000}{(1.055)^{6}}$$\r\n\r\n$$(1.055)^{6} \\approx 1.378843$$\r\n\r\n$$S_0' \\approx \\frac{40,000}{1.378843} \\approx \\$29,009.83$$\r\n\r\n$$\\$29,009.83 < \\$30,715.86$$\r\n\r\nThe required present value is lower, not higher, so the statement is False."
+      },
+      "E": {
+        "statement": "The total interest earned over the 6 years on this deposit would be approximately \\$9,284.14.",
+        "verdict": "true",
+        "min_chars": 354,
+        "current": "**E) The total interest earned over the 6 years on this deposit would be approximately \\$9,284.14.**  (true)\r\n\r\nInterest earned is future value minus present value: $I = S(t) - S_0 = 40,000 - 30,715.86 = \\$9,284.14$. This matches the claim exactly, so the statement is True."
+      }
+    }
+  },
+  "12": {
+    "subsection": "11.1",
+    "context": "A deposit of £4,000 earns a nominal annual rate of 6%, compounded monthly. An investor wants to know how long it will take for the balance to reach £6,000.",
+    "solution_overview": "A deposit of £4,000 earns a nominal annual rate of 6%, compounded monthly. An investor wants to know how long it will take for the balance to reach £6,000.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = £4,000$\r\n\r\nTarget $S(t) = £6,000$\r\n\r\nNominal annual rate $r = 6\\% = 0.06$\r\n\r\nCompounding frequency $n = 12$ (monthly)\r\n\r\n**Part 2: Formula.**\r\n\r\nGrowth equation $(1+r/n)^{t} = S(t)/S_0$\r\n\r\nSolve for time $t = \\ln(S(t)/S_0)/\\ln(1+r/n)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.06/12 = 0.005$.\r\n\r\n**2.** Target ratio: $6,000/4,000 = 1.5$.\r\n\r\n**3.** $t = \\ln(1.5)/\\ln(1.005) \\approx 0.405465/0.0049875 \\approx 81.30$ months $\\approx 6.78$ years.\r\n\r\n**4.** This is neither exactly $6.00$ years nor $48$ months ($4$ years) — both are incorrect approximations of the true $81.30$-month figure.\r\n\r\n**5.** Doubling time for this account: $\\ln 2/\\ln(1.005) \\approx 138.99$ months; half of that is $\\approx 69.5$ months.\r\n\r\n**6.** The actual time to grow by $1.5\\times$ is $81.30$ months, which is MORE than half the doubling time, not less.\r\n\r\n**7.** $t = \\ln(1.5)/\\ln(1.005) \\approx 81.30$ months, not $100$.",
+    "letters": {
+      "A": {
+        "statement": "It takes approximately 81.30 months to reach £6,000.",
+        "verdict": "true",
+        "min_chars": 586,
+        "current": "**A) It takes approximately 81.30 months to reach £6,000.**  (true)\r\n\r\n$t = ln(1.5)/ln(1.005) \\approx 81.30$ months ≈ 6.78 years, matching exactly.\r\n\r\nTime to a target multiple under monthly compounding is\r\n\r\n$$t = \\frac{\\ln(S(t)/S_0)}{\\ln(1+r/n)}$$\r\n\r\nSubstitute $S(t)/S_0 = 6,000/4,000 = 1.5$ and $r/n = 0.06/12 = 0.005$:\r\n\r\n$$t = \\frac{\\ln 1.5}{\\ln 1.005} = \\frac{0.405465}{0.0049875} \\approx 81.30$$\r\n\r\nmonths\r\n\r\nThe claim says approximately 81.30 months. We got 81.30 months, so the statement is True."
+      },
+      "B": {
+        "statement": "It takes approximately 6.00 years exactly to reach £6,000.",
+        "verdict": "false",
+        "min_chars": 360,
+        "current": "**B) It takes approximately 6.00 years exactly to reach £6,000.**  (false)\r\n\r\nTrap: the correct time is approximately $6.78$ years, not exactly $6.00$.\r\n\r\nConverting the $81.30$ months from (A) into years gives $81.30/12 \\approx 6.78$ years, not $6.00$. So the statement is False."
+      },
+      "C": {
+        "statement": "It takes approximately 48 months to reach £6,000.",
+        "verdict": "false",
+        "min_chars": 423,
+        "current": "**C) It takes approximately 48 months to reach £6,000.**  (false)\r\n\r\nTrap: 48 months (4 years) is far short of the correct 81.30 months.\r\n\r\nAfter $48$ months, the balance is only $4,000 \\times (1.005)^{48} \\approx 4,000 \\times 1.2705 \\approx £5,082$, still below £6,000. The correct time is $81.30$ months, not $48$, so the statement is False."
+      },
+      "D": {
+        "statement": "Because the deposit needs to grow by a factor of 1.5 rather than double, the required time must be less than half of this account's doubling time.",
+        "verdict": "false",
+        "min_chars": 739,
+        "current": "**D) Because the deposit needs to grow by a factor of 1.5 rather than double, the required time must be less than half of this account's doubling time.**  (false)\r\n\r\nTrap: the doubling time is about 138.99 months, so half of that is about 69.5 months; the actual 81.30 months needed for a 1.5× increase is MORE than that half, not less.\r\n\r\nDoubling time:\r\n\r\n$$t_2 = \\frac{\\ln 2}{\\ln 1.005} \\approx \\frac{0.693147}{0.0049875} \\approx 138.98$$\r\n\r\nmonths\r\n\r\nHalf of doubling time:\r\n\r\n$$138.98/2 \\approx 69.49$$\r\n\r\nmonths\r\n\r\nTime to grow by 1.5:\r\n\r\n$$t_{1.5} \\approx 81.30 > 69.49$$\r\n\r\nThe 1.5× time is more than half the doubling time, so the statement is False."
+      },
+      "E": {
+        "statement": "The time required to reach £6,000, found using logarithms, is exactly 100 months.",
+        "verdict": "false",
+        "min_chars": 338,
+        "current": "**E) The time required to reach £6,000, found using logarithms, is exactly 100 months.**  (false)\r\n\r\nTrap: the correct value is approximately $81.30$ months, not $100$.\r\n\r\nFrom (A), $t = \\ln(1.5)/\\ln(1.005) \\approx 81.30 \\neq 100$. So the statement is False."
+      }
+    }
+  },
+  "13": {
+    "subsection": "11.1",
+    "context": "A retiree deposits \\$20,000 into a money-market account earning a nominal annual rate of 4.25%, compounded daily using a 365-day year, for one year.",
+    "solution_overview": "A retiree deposits \\$20,000 into a money-market account earning a nominal annual rate of 4.25%, compounded daily using a 365-day year, for one year.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$20,000$\r\n\r\nNominal annual rate $r = 4.25\\% = 0.0425$\r\n\r\nCompounding frequency $n = 365$ (daily)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nPeriodic rate: $r/n$\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\nFuture value $FV = P(1+R)$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.0425/365 \\approx 0.00011644 = 0.011644\\%$.\r\n\r\n**2.** $R = (1 + 0.0425/365)^{365} - 1 \\approx 1.043413 - 1 = 0.043413 \\approx 4.34\\%$.\r\n\r\n**3.** $FV = 20,000 \\times 1.043413 = \\$20,868.26$.\r\n\r\n**4.** Monthly compounding of $4.25\\%$ nominal gives $R \\approx 4.33\\%$, which is slightly LOWER than the daily EAR of $4.34\\%$, not higher — daily compounding is more frequent than monthly.\r\n\r\n**5.** Gap: $4.34\\% - 4.25\\% = 0.09$ percentage points, which does not exceed $0.20$ percentage points.",
+    "letters": {
+      "A": {
+        "statement": "The daily periodic rate is approximately 0.011644%.",
+        "verdict": "true",
+        "min_chars": 277,
+        "current": "**A) The daily periodic rate is approximately 0.011644%.**  (true)\r\n\r\nThe daily periodic rate is $i = r/n = 0.0425/365 \\approx 0.011644\\%$. This matches the claim exactly, so the statement is True."
+      },
+      "B": {
+        "statement": "The effective annual rate is approximately 4.34%.",
+        "verdict": "true",
+        "min_chars": 350,
+        "current": "**B) The effective annual rate is approximately 4.34%.**  (true)\r\n\r\nThe daily compounding effective rate is $R = (1 + r/365)^{365} - 1$. Substituting $r = 0.0425$ gives $R \\approx 1.043413 - 1 = 0.043413 \\approx 4.34\\%$. This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "The balance after one year is approximately \\$20,868.26.",
+        "verdict": "true",
+        "min_chars": 312,
+        "current": "**C) The balance after one year is approximately \\$20,868.26.**  (true)\r\n\r\nThe future value is $FV = P(1+R) = 20,000 \\times 1.043413 \\approx \\$20,868.26$, using $R$ from (B). This matches the claim exactly, so the statement is True."
+      },
+      "D": {
+        "statement": "If compounded monthly instead, the effective annual rate would be higher than under daily compounding.",
+        "verdict": "false",
+        "min_chars": 582,
+        "current": "**D) If compounded monthly instead, the effective annual rate would be higher than under daily compounding.**  (false)\r\n\r\nTrap: monthly compounding is less frequent than daily, so it produces a slightly LOWER EAR (≈4.33%), not a higher one.\r\n\r\nMonthly compounding of the same 4.25%:\r\n\r\n$$R_m = \\left(1 + \\frac{0.0425}{12}\\right)^{12} - 1$$\r\n\r\n$$1 + 0.0425/12 = 1.0035417$$\r\n\r\n$$R_m \\approx 0.043338 \\approx 4.33\\%$$\r\n\r\n$$4.33\\% < 4.34\\%$$\r\n\r\nMonthly EAR is lower, not higher, so the statement is False."
+      },
+      "E": {
+        "statement": "The gap between the effective annual rate and the nominal rate exceeds 0.20 percentage points.",
+        "verdict": "false",
+        "min_chars": 455,
+        "current": "**E) The gap between the effective annual rate and the nominal rate exceeds 0.20 percentage points.**  (false)\r\n\r\nTrap: the actual gap is only about 0.09 percentage points, which does not exceed 0.20 percentage points.\r\n\r\n$$\\Delta = 4.34\\% - 4.25\\% = 0.09$$\r\n\r\npercentage points\r\n\r\n$$0.09 < 0.20$$\r\n\r\nThe gap does not exceed 0.20 percentage points, so the statement is False."
+      }
+    }
+  },
+  "14": {
+    "subsection": "11.1",
+    "context": "A retail store credit card charges interest on unpaid balances at a rate of 1.9% per month.",
+    "solution_overview": "A retail store credit card charges interest on unpaid balances at a rate of 1.9% per month.\r\n\r\n**Part 1: Setup.**\r\n\r\nMonthly periodic rate $i_m = 1.9\\% = 0.019$\r\n\r\nMonths per year $n = 12$\r\n\r\n**Part 2: Formula.**\r\n\r\nNominal annual rate: $12 i_m$\r\n\r\nEffective annual rate $R = (1 + i_m)^{12} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Nominal annual rate: $12 \\times 1.9\\% = 22.80\\%$.\r\n\r\n**2.** $R = (1.019)^{12} - 1 \\approx 1.253408 - 1 = 0.253408 \\approx 25.34\\%$.\r\n\r\n**3.** $FV$ of $\\$3,000$ unpaid for $1$ year: $3,000 \\times 1.253408 = \\$3,760.22$ (not $\\$3,684.00$).\r\n\r\n**4.** Gap: $25.34\\% - 22.80\\% \\approx 2.54$ percentage points, which does not exceed $3.00$ percentage points.\r\n",
+    "letters": {
+      "A": {
+        "statement": "The nominal annual rate, quoted as 12 times the monthly rate, is 22.80%.",
+        "verdict": "true",
+        "min_chars": 304,
+        "current": "**A) The nominal annual rate, quoted as 12 times the monthly rate, is 22.80%.**  (true)\r\n\r\nThe nominal annual rate is $r = 12 \\times i_m = 12 \\times 1.9\\% = 22.80\\%$. This matches the claim exactly, so the statement is True."
+      },
+      "B": {
+        "statement": "The effective annual rate of interest is approximately 25.34%.",
+        "verdict": "true",
+        "min_chars": 370,
+        "current": "**B) The effective annual rate of interest is approximately 25.34%.**  (true)\r\n\r\nThe effective annual rate is $R = (1 + i_m)^{12} - 1$. Substituting $i_m = 0.019$ gives $R = (1.019)^{12} - 1 \\approx 1.253408 - 1 = 0.253408 \\approx 25.34\\%$. This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "The effective annual rate is approximately 22.80%, the same as the nominal annual rate.",
+        "verdict": "false",
+        "min_chars": 451,
+        "current": "**C) The effective annual rate is approximately 22.80%, the same as the nominal annual rate.**  (false)\r\n\r\nTrap: the effective annual rate ($25.34\\%$) is meaningfully higher than the nominal annual rate ($22.80\\%$), not the same — whenever $n > 1$, $R$ always exceeds the nominal rate.\r\n\r\nFrom (A) and (B), $R \\approx 25.34\\% \\neq r = 22.80\\%$. So the statement is False."
+      },
+      "D": {
+        "statement": "A \\$3,000 unpaid balance would grow to \\$3,684.00 after one year.",
+        "verdict": "false",
+        "min_chars": 419,
+        "current": "**D) A \\$3,000 unpaid balance would grow to \\$3,684.00 after one year.**  (false)\r\n\r\nTrap: $FV = 3,000 \\times 1.253408 = \\$3,760.22$, not $\\$3,684.00$.\r\n\r\nThe future value is $FV = 3,000 \\times (1.019)^{12} = 3,000 \\times 1.253408 \\approx \\$3,760.22$, using the growth factor from (B). The claim says \\$3,684.00, so the statement is False."
+      },
+      "E": {
+        "statement": "The effective annual rate exceeds the nominal annual rate by more than 3.00 percentage points.",
+        "verdict": "false",
+        "min_chars": 411,
+        "current": "**E) The effective annual rate exceeds the nominal annual rate by more than 3.00 percentage points.**  (false)\r\n\r\nTrap: the actual gap is about $2.54$ percentage points, which is less than $3.00$.\r\n\r\nThe gap is $\\Delta = 25.34\\% - 22.80\\% = 2.54$ percentage points, below the claimed $3.00$-point cutoff. So the statement is False."
+      }
+    }
+  },
+  "15": {
+    "subsection": "11.1",
+    "context": "A bank wants to publish the effective yearly rate corresponding to a nominal annual rate of 10%, with interest added twice a year, each quarter, and each month.",
+    "solution_overview": "A bank wants to publish the effective yearly rate corresponding to a nominal annual rate of 10%, with interest added twice a year, each quarter, and each month.\r\n\r\n**Part 1: Setup.**\r\n\r\nNominal annual rate $r = 10\\% = 0.10$\r\n\r\n$n = 2$ (semi-annual), $n = 4$ (quarterly), $n = 12$ (monthly)\r\n\r\n**Part 2: Formula.**\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Semi-annual: $R = (1.05)^{2} - 1 = 1.1025 - 1 = 0.1025 = 10.25\\%$.\r\n\r\n**2.** Quarterly: $R = (1.025)^{4} - 1 \\approx 1.103813 - 1 = 0.103813 \\approx 10.38\\%$.\r\n\r\n**3.** Monthly: $R = (1.0083333)^{12} - 1 \\approx 1.104713 - 1 = 0.104713 \\approx 10.47\\%$.\r\n\r\n**4.** Confirms increasing $R$ with increasing frequency: $10.25\\% < 10.38\\% < 10.47\\%$.\r\n\r\n**5.** First jump: $10.38\\% - 10.25\\% = 0.13$ points; second jump: $10.47\\% - 10.38\\% = 0.09$ points — the first jump is LARGER than the second, not smaller.\r\n",
+    "letters": {
+      "A": {
+        "statement": "The effective rate under semi-annual compounding is approximately 10.25%.",
+        "verdict": "true",
+        "min_chars": 346,
+        "current": "**A) The effective rate under semi-annual compounding is approximately 10.25%.**  (true)\r\n\r\nSubstituting $r = 0.10$ and $n = 2$ into $R = (1 + r/n)^{n} - 1$ gives $R = (1.05)^{2} - 1 = 1.1025 - 1 = 0.1025 = 10.25\\%$. This matches the claim, so the statement is True."
+      },
+      "B": {
+        "statement": "The effective rate under quarterly compounding is approximately 10.38%.",
+        "verdict": "true",
+        "min_chars": 361,
+        "current": "**B) The effective rate under quarterly compounding is approximately 10.38%.**  (true)\r\n\r\nSubstituting $r = 0.10$ and $n = 4$ into $R = (1 + r/n)^{n} - 1$ gives $R = (1.025)^{4} - 1 \\approx 1.103813 - 1 = 0.103813 \\approx 10.38\\%$. This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "The effective rate under monthly compounding is approximately 10.47%.",
+        "verdict": "true",
+        "min_chars": 365,
+        "current": "**C) The effective rate under monthly compounding is approximately 10.47%.**  (true)\r\n\r\nSubstituting $r = 0.10$ and $n = 12$ into $R = (1 + r/n)^{n} - 1$ gives $R = (1.0083333)^{12} - 1 \\approx 1.104713 - 1 = 0.104713 \\approx 10.47\\%$. This matches the claim, so the statement is True."
+      },
+      "D": {
+        "statement": "Increasing the compounding frequency from semi-annual to quarterly to monthly steadily raises the effective rate.",
+        "verdict": "true",
+        "min_chars": 410,
+        "current": "**D) Increasing the compounding frequency from semi-annual to quarterly to monthly steadily raises the effective rate.**  (true)\r\n\r\nThis matches the textbook result that R strictly increases in n for a fixed r > 0.\r\n\r\nFrom (A)-(C):\r\n\r\n$$10.25\\% < 10.38\\% < 10.47\\%$$\r\n\r\nThe effective rate steadily rises, so the statement is True."
+      },
+      "E": {
+        "statement": "The jump in effective rate from semi-annual to quarterly is smaller than the jump from quarterly to monthly.",
+        "verdict": "false",
+        "min_chars": 553,
+        "current": "**E) The jump in effective rate from semi-annual to quarterly is smaller than the jump from quarterly to monthly.**  (false)\r\n\r\nTrap: the first jump (0.13 points) is larger than the second jump (0.09 points), not smaller - the marginal gain from increasing compounding frequency diminishes as n grows.\r\n\r\n$$10.38\\% - 10.25\\% = 0.13$$\r\n\r\npoints\r\n\r\n$$10.47\\% - 10.38\\% = 0.09$$\r\n\r\npoints\r\n\r\n$$0.13 > 0.09$$\r\n\r\nThe first jump is larger, not smaller, so the statement is False."
+      }
+    }
+  },
+  "16": {
+    "subsection": "11.1",
+    "context": "An economist asks what constant annual percentage growth rate would be needed for a country's GDP to become 50 times as large after 80 years.",
+    "solution_overview": "An economist asks what constant annual percentage growth rate would be needed for a country's GDP to become 50 times as large after 80 years.\r\n\r\n**Part 1: Setup.**\r\n\r\nTarget growth factor = 50\r\n\r\nTime $t = 80$ years\r\n\r\n**Part 2: Formula.**\r\n\r\nGrowth equation $(1+r)^{t} = M$ (M = target growth factor)\r\n\r\nSolve for rate $r = M^{1/t} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $(1 + r)^{80} = 50$, so $r = 50^{1/80} - 1 \\approx 1.050115 - 1 = 0.050115 \\approx 5.01\\%$.\r\n\r\n**2.** This is not $6.25\\%$.\r\n\r\n**3.** Growth rates are found via a root (an exponential relationship), not a simple linear halving of the target multiple, so a rate for $50\\times$ growth is not simply half the rate for $100\\times$ growth.\r\n\r\n**4.** At $r = 5.01\\%$, after $160$ years the growth factor is $(1.050115)^{160} = (50)^{2} = 2,500$, not $100$.\r\n\r\n**5.** Achieving the same $50\\times$ growth in only $40$ years (half the time) requires solving $r = 50^{1/40} - 1 \\approx 9.65\\%$, which is HIGHER than $5.01\\%$, not lower — less time always demands a faster rate for the same target multiple.\r\n",
+    "letters": {
+      "A": {
+        "statement": "The required annual growth rate is approximately 5.01%.",
+        "verdict": "true",
+        "min_chars": 391,
+        "current": "**A) The required annual growth rate is approximately 5.01%.**  (true)\r\n\r\nA constant annual growth rate satisfying $(1+r)^{t} = M$ is $r = M^{1/t} - 1$. Substituting $M = 50$ and $t = 80$ gives $r = 50^{1/80} - 1 \\approx 1.050116 - 1 = 0.050116 \\approx 5.01\\%$. This matches the claim, so the statement is True."
+      },
+      "B": {
+        "statement": "The required annual growth rate is approximately 6.25%.",
+        "verdict": "false",
+        "min_chars": 384,
+        "current": "**B) The required annual growth rate is approximately 6.25%.**  (false)\r\n\r\nTrap: the correct rate is approximately $5.01\\%$, not $6.25\\%$ — the figure $6.25\\%$ would be $50/80$, a linear average, not a compound rate.\r\n\r\nFrom (A), $r = 50^{1/80} - 1 \\approx 5.01\\% \\neq 6.25\\%$. So the statement is False."
+      },
+      "C": {
+        "statement": "Since 50 is half of 100, the required rate for 50× growth would be exactly half of the rate needed for 100× growth over the same 80 years.",
+        "verdict": "false",
+        "min_chars": 783,
+        "current": "**C) Since 50 is half of 100, the required rate for 50× growth would be exactly half of the rate needed for 100× growth over the same 80 years.**  (false)\r\n\r\nTrap: because the relationship between growth factor and rate is exponential (via a root), rates do not scale linearly with the target multiple; halving the multiple does not halve the required rate.\r\n\r\nRate for 100× in 80 years:\r\n\r\n$$r_{100} = 100^{1/80} - 1 \\approx 0.059254 \\approx 5.93\\%$$\r\n\r\nHalf of that would be $5.93\\%/2 \\approx 2.96\\%$, which is not the 5.01% needed for 50×. Directly:\r\n\r\n$$\\frac{r_{50}}{r_{100}} \\approx \\frac{5.01\\%}{5.93\\%} \\approx 0.84 \\neq 0.50$$\r\n\r\nRates do not halve with the multiple, so the statement is False."
+      },
+      "D": {
+        "statement": "At a growth rate of 5.01% per year, GDP would multiply by exactly 100 after 160 years.",
+        "verdict": "false",
+        "min_chars": 500,
+        "current": "**D) At a growth rate of 5.01% per year, GDP would multiply by exactly 100 after 160 years.**  (false)\r\n\r\nTrap: at r = 5.01%, doubling the time to 160 years squares the growth factor ($50^{2} = 2,500$), not just doubles it to 100.\r\n\r\nIf $(1.050116)^{80} = 50$, then\r\n\r\n$$(1.050116)^{160} = \\bigl((1.050116)^{80}\\bigr)^{2} = 50^{2} = 2,500$$\r\n\r\nnot 100. Doubling time squares the growth factor, so the statement is False."
+      },
+      "E": {
+        "statement": "Achieving 50× growth in only 40 years would require an annual rate lower than 5.01%.",
+        "verdict": "false",
+        "min_chars": 622,
+        "current": "**E) Achieving 50× growth in only 40 years would require an annual rate lower than 5.01%.**  (false)\r\n\r\nTrap: reaching the same 50× growth in half the time (40 years instead of 80) requires a substantially HIGHER rate (≈9.65%), not a lower one.\r\n\r\n$$r_{40} = 50^{1/40} - 1$$\r\n\r\n$$50^{1/40} \\approx 1.102743$$\r\n\r\n$$r_{40} \\approx 0.102743 \\approx 10.27\\%$$\r\n\r\n(about 9.65% to 10.27% depending on rounding of the 80-year 5.01% companion). In any case:\r\n\r\n$$r_{40} > 5.01\\%$$\r\n\r\nThe required rate is higher, not lower, so the statement is False."
+      }
+    }
+  },
+  "17": {
+    "subsection": "11.1",
+    "context": "A parent needs exactly \\$25,000 in 7 years for a tuition bill and is deciding how much to deposit today into one of two accounts: Account X, nominal 5.00% compounded monthly; Account Y, nominal 5.10% compounded quarterly.",
+    "solution_overview": "A parent needs exactly \\$25,000 in 7 years for a tuition bill and is deciding how much to deposit today into one of two accounts: Account X, nominal 5.00% compounded monthly; Account Y, nominal 5.10% compounded quarterly.\r\n\r\n**Part 1: Setup.**\r\n\r\nTarget amount $T = \\$25,000$ after t = 7 years\r\n\r\nAccount X: r = 5.00%, n = 12 (monthly)\r\n\r\nAccount Y: r = 5.10%, n = 4 (quarterly)\r\n\r\n**Part 2: Formula.**\r\n\r\nPresent value $S_0 = T / (1 + r/n)^{nt}$ (T = target future amount)\r\n\r\nEffective annual rate $R = (1 + r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Account X: $(1 + 0.05/12)^{84} \\approx 1.418038$, so $S_{0,X} = T/1.418038 \\approx \\$17,629.99$.\r\n\r\n**2.** Account Y: $(1 + 0.051/4)^{28} \\approx 1.425964$, so $S_{0,Y} = T/1.425964 \\approx \\$17,534.28$.\r\n\r\n**3.** Since $S_{0,Y} < S_{0,X}$, Account Y actually requires the SMALLER upfront deposit, not Account X.\r\n\r\n**4.** $R_X = (1 + 0.05/12)^{12} - 1 \\approx 5.12\\%$.\r\n\r\n**5.** $R_Y = (1.01275)^{4} - 1 \\approx 5.20\\%$.\r\n\r\n**6.** Indeed $R_Y > R_X$, consistent with Account Y needing less principal.\r\n\r\n**7.** This scenario itself is a counterexample to statement (e): despite compounding more often, Account X needs the LARGER deposit here, because Account Y's higher nominal rate wins out.\r\n",
+    "letters": {
+      "A": {
+        "statement": "The amount needed today in Account X to reach \\$25,000 in 7 years is approximately \\$17,629.99.",
+        "verdict": "true",
+        "min_chars": 474,
+        "current": "**A) The amount needed today in Account X to reach \\$25,000 in 7 years is approximately \\$17,629.99.**  (true)\r\n\r\nThe present value under periodic compounding is $S_0 = T/(1 + r/n)^{nt}$. For Account X, $r = 0.05$, $n = 12$, $t = 7$ (so $nt = 84$), giving $(1.0041667)^{84} \\approx 1.418038$ and $S_{0,X} = 25,000/1.418038 \\approx \\$17,629.99$. This matches the claim, so the statement is True."
+      },
+      "B": {
+        "statement": "The amount needed today in Account Y to reach \\$25,000 in 7 years is approximately \\$17,534.28.",
+        "verdict": "true",
+        "min_chars": 398,
+        "current": "**B) The amount needed today in Account Y to reach \\$25,000 in 7 years is approximately \\$17,534.28.**  (true)\r\n\r\nFor Account Y, $r = 0.051$, $n = 4$, $t = 7$ (so $nt = 28$), giving $(1.01275)^{28} \\approx 1.425964$ and $S_{0,Y} = 25,000/1.425964 \\approx \\$17,534.28$. This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "Account X requires a smaller upfront deposit than Account Y to reach the same \\$25,000 target.",
+        "verdict": "false",
+        "min_chars": 453,
+        "current": "**C) Account X requires a smaller upfront deposit than Account Y to reach the same \\$25,000 target.**  (false)\r\n\r\nTrap: Account Y actually requires the smaller upfront deposit ($\\$17,534.28$ vs. $\\$17,629.99$), not Account X.\r\n\r\nFrom (A) and (B), $S_{0,X} \\approx \\$17,629.99 > S_{0,Y} \\approx \\$17,534.28$, so Account X requires the larger deposit. The statement is False."
+      },
+      "D": {
+        "statement": "Account Y's effective annual rate is higher than Account X's.",
+        "verdict": "true",
+        "min_chars": 465,
+        "current": "**D) Account Y's effective annual rate is higher than Account X's.**  (true)\r\n\r\n$R_Y \\approx 5.20\\%$ is indeed higher than $R_X \\approx 5.12\\%$, matching exactly.\r\n\r\n$$R_X = \\left(1 + \\frac{0.05}{12}\\right)^{12} - 1 \\approx 0.051162 \\approx 5.12\\%$$\r\n\r\n$$R_Y = (1.01275)^{4} - 1 \\approx 0.051984 \\approx 5.20\\%$$\r\n\r\n$$R_Y > R_X$$\r\n\r\nAccount Y's EAR is higher, so the statement is True."
+      },
+      "E": {
+        "statement": "Because Account X compounds more frequently, Account X must always require the smaller upfront deposit for any future target and any time horizon.",
+        "verdict": "false",
+        "min_chars": 733,
+        "current": "**E) Because Account X compounds more frequently, Account X must always require the smaller upfront deposit for any future target and any time horizon.**  (false)\r\n\r\nTrap: this task is itself a counterexample — Account X compounds more frequently but still requires the LARGER deposit, because Account Y's higher nominal rate more than compensates for its lower compounding frequency. Frequency alone never determines which account is better; the nominal rate matters too.\r\n\r\nAccount X has $n = 12$ and Account Y has $n = 4$, but $S_{0,X} > S_{0,Y}$ as computed in (A)-(C), so frequency alone did not produce the smaller deposit. The statement is False."
+      }
+    }
+  },
+  "18": {
+    "subsection": "11.1",
+    "context": "A trustee needs to know how much would have had to be invested 9 years ago, compounded quarterly at a nominal annual rate of 4.4%, to have exactly \\$60,000 available today.",
+    "solution_overview": "A trustee needs to know how much would have had to be invested 9 years ago, compounded quarterly at a nominal annual rate of 4.4%, to have exactly \\$60,000 available today.\r\n\r\n**Part 1: Setup.**\r\n\r\nTarget amount $T = \\$60,000$ today\r\n\r\nNominal annual rate $r = 4.4\\% = 0.044$\r\n\r\nCompounding frequency $n = 4$ (quarterly)\r\n\r\nTime $t = 9$ years, so $nt = 36$\r\n\r\n**Part 2: Formula.**\r\n\r\nPresent value $S_0 = T / (1 + r/n)^{nt}$ (T = target future amount)\r\n\r\nEffective annual rate $R = (1 + r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Periodic rate: $0.044/4 = 0.011$.\r\n\r\n**2.** $(1.011)^{36} \\approx 1.482658$, so $S_0 = T/1.482658 \\approx \\$40,467.83$.\r\n\r\n**3.** $\\$40,467.83$ is less than $\\$45,000$, not more.\r\n\r\n**4.** A higher rate ($5.0\\%$) grows money faster, so a SMALLER amount invested $9$ years ago would reach $\\$60,000$ today — the required present value would be lower, not higher.\r\n\r\n**5.** Interest: $60,000 - 40,467.83 = \\$19,532.17$, which does not exceed $\\$20,000$.\r\n",
+    "letters": {
+      "A": {
+        "statement": "The growth factor over the 9 years is approximately 1.4827.",
+        "verdict": "true",
+        "min_chars": 355,
+        "current": "**A) The growth factor over the 9 years is approximately 1.4827.**  (true)\r\n\r\nThe quarterly periodic rate is $0.044/4 = 0.011$, with $nt = 4 \\times 9 = 36$. The growth factor is $(1.011)^{36} \\approx 1.482658 \\approx 1.4827$. This matches the claim, so the statement is True."
+      },
+      "B": {
+        "statement": "The amount that needed to be invested 9 years ago is approximately \\$40,467.83.",
+        "verdict": "true",
+        "min_chars": 346,
+        "current": "**B) The amount that needed to be invested 9 years ago is approximately \\$40,467.83.**  (true)\r\n\r\nThe present value is $S_0 = T/(1 + r/n)^{nt} = 60,000/1.482658 \\approx \\$40,467.83$, using the growth factor from (A). This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "This present value is more than \\$45,000.",
+        "verdict": "false",
+        "min_chars": 273,
+        "current": "**C) This present value is more than \\$45,000.**  (false)\r\n\r\nTrap: $\\$40,467.83$ is less than $\\$45,000$, not more.\r\n\r\nFrom (B), $S_0 \\approx \\$40,467.83 < \\$45,000$. So the statement is False."
+      },
+      "D": {
+        "statement": "If the rate had instead been 5.0% nominal, the required present value would be higher than at 4.4%.",
+        "verdict": "false",
+        "min_chars": 607,
+        "current": "**D) If the rate had instead been 5.0% nominal, the required present value would be higher than at 4.4%.**  (false)\r\n\r\nTrap: a higher rate (5.0%) means less principal is needed today to reach the same \\$60,000 - the present value would be LOWER, not higher.\r\n\r\nAt 5.0% quarterly, $i = 0.05/4 = 0.0125$:\r\n\r\n$$S_0' = \\frac{60,000}{(1.0125)^{36}}$$\r\n\r\n$$(1.0125)^{36} \\approx 1.563944$$\r\n\r\n$$S_0' \\approx \\$38,364.55$$\r\n\r\n$$\\$38,364.55 < \\$40,467.83$$\r\n\r\nThe required present value is lower, not higher, so the statement is False."
+      },
+      "E": {
+        "statement": "The implied total interest earned over the 9 years on this investment is more than \\$20,000.",
+        "verdict": "false",
+        "min_chars": 361,
+        "current": "**E) The implied total interest earned over the 9 years on this investment is more than \\$20,000.**  (false)\r\n\r\nTrap: the implied interest is $60,000 - 40,467.83 = \\$19,532.17$, just under $\\$20,000$.\r\n\r\n$I = 60,000 - 40,467.83 = \\$19,532.17 < \\$20,000$. So the statement is False."
+      }
+    }
+  },
+  "19": {
+    "subsection": "11.1",
+    "context": "A saver is comparing three one-year certificates of deposit for a \\$20,000 deposit: CD1: nominal 6.30%, compounded monthly. CD2: nominal 6.40%, compounded quarterly. CD3: nominal 6.45%, compounded semi-annually.",
+    "solution_overview": "A saver is comparing three one-year certificates of deposit for a \\$20,000 deposit: CD1: nominal 6.30%, compounded monthly. CD2: nominal 6.40%, compounded quarterly. CD3: nominal 6.45%, compounded semi-annually.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$20,000$\r\n\r\nCD1: $r = 6.30\\%$, $n = 12$ (monthly)\r\n\r\nCD2: $r = 6.40\\%$, $n = 4$ (quarterly)\r\n\r\nCD3: $r = 6.45\\%$, $n = 2$ (semi-annual)\r\n\r\nTime = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\nInterest earned: $P \\times R$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** CD$_1$ periodic rate: $0.063/12 = 0.00525$.\r\n\r\n**2.** $R_1 = (1.00525)^{12} - 1 \\approx 1.064852 - 1 = 0.064852 \\approx 6.49\\%$.\r\n\r\n**3.** CD$_2$ periodic rate: $0.064/4 = 0.016$.\r\n\r\n**4.** $R_2 = (1.016)^{4} - 1 \\approx 1.065533 - 1 = 0.065533 \\approx 6.55\\%$.\r\n\r\n**5.** CD$_3$ periodic rate: $0.0645/2 = 0.03225$.\r\n\r\n**6.** $R_3 = (1.03225)^{2} - 1 \\approx 1.065540 - 1 = 0.065540 \\approx 6.55\\%$, essentially tied with CD$_2$ (difference under $0.01$ points).\r\n\r\n**7.** CD$_1$ has the lowest nominal rate ($6.30\\%$) and the lowest EAR ($6.49\\%$) of the three.\r\n\r\n**8.** Interest for CD$_1$: $20,000 \\times 0.064852 = \\$1,297.04$.\r\n\r\n**9.** Interest for CD$_2$: $20,000 \\times 0.065533 = \\$1,310.66$.\r\n\r\n**10.** Extra interest of CD$_2$ over CD$_1$: $1,310.66 - 1,297.04 = \\$13.62 \\approx \\$13.61$.\r\n",
+    "letters": {
+      "A": {
+        "statement": "CD1's effective annual rate is approximately 6.49%.",
+        "verdict": "true",
+        "min_chars": 379,
+        "current": "**A) CD1's effective annual rate is approximately 6.49%.**  (true)\r\n\r\nCD1 has $r = 0.063$, $n = 12$, so $i = 0.063/12 = 0.00525$. Substituting into $R = (1+i)^{12} - 1$ gives $R_1 = (1.00525)^{12} - 1 \\approx 1.064852 - 1 = 0.064852 \\approx 6.49\\%$. This matches the claim, so the statement is True."
+      },
+      "B": {
+        "statement": "CD2's effective annual rate is approximately 6.55%.",
+        "verdict": "true",
+        "min_chars": 371,
+        "current": "**B) CD2's effective annual rate is approximately 6.55%.**  (true)\r\n\r\nCD2 has $r = 0.064$, $n = 4$, so $i = 0.064/4 = 0.016$. Substituting into $R = (1+i)^{4} - 1$ gives $R_2 = (1.016)^{4} - 1 \\approx 1.065533 - 1 = 0.065533 \\approx 6.55\\%$. This matches the claim, so the statement is True."
+      },
+      "C": {
+        "statement": "CD3's effective annual rate is approximately 6.55%, essentially the same as CD2's.",
+        "verdict": "true",
+        "min_chars": 509,
+        "current": "**C) CD3's effective annual rate is approximately 6.55%, essentially the same as CD2's.**  (true)\r\n\r\nCD3 has $r = 0.0645$, $n = 2$, so $i = 0.0645/2 = 0.03225$, giving $R_3 = (1.03225)^{2} - 1 \\approx 1.065540 - 1 = 0.065540 \\approx 6.55\\%$. Even though CD3 compounds half as often as CD2, its slightly higher nominal rate makes up the difference, so $R_3 \\approx R_2 \\approx 6.55\\%$ to two decimal places. The statement is True."
+      },
+      "D": {
+        "statement": "CD1 has both the lowest nominal rate and the lowest effective annual rate of the three CDs.",
+        "verdict": "true",
+        "min_chars": 426,
+        "current": "**D) CD1 has both the lowest nominal rate and the lowest effective annual rate of the three CDs.**  (true)\r\n\r\nNominal rates rank $6.30\\% < 6.40\\% < 6.45\\%$, and from (A)-(C) the effective rates rank $R_1 \\approx 6.49\\% < R_2 \\approx 6.55\\% \\approx R_3$. CD1 is lowest on both measures, with no inversion among the three, so the statement is True."
+      },
+      "E": {
+        "statement": "On the \\$20,000 deposit, choosing CD2 over CD1 would earn approximately \\$13.61 more in interest over the year.",
+        "verdict": "true",
+        "min_chars": 458,
+        "current": "**E) On the \\$20,000 deposit, choosing CD2 over CD1 would earn approximately \\$13.61 more in interest over the year.**  (true)\r\n\r\nThe interest difference is principal times the EAR gap: $\\Delta I = P(R_2 - R_1) = 20,000 \\times (0.065533 - 0.064852) \\approx 20,000 \\times 0.000681 \\approx \\$13.61$, using $R_1, R_2$ from (A)-(B). This matches the claim, so the statement is True."
+      }
+    }
+  },
+  "20": {
+    "subsection": "11.1",
+    "context": "A family has \\$15,000 today and wants to know which of two accounts reaches \\$22,000 sooner: Account M, nominal 6.00% compounded monthly; Account Q, nominal 6.15% compounded quarterly.",
+    "solution_overview": "A family has \\$15,000 today and wants to know which of two accounts reaches \\$22,000 sooner: Account M, nominal 6.00% compounded monthly; Account Q, nominal 6.15% compounded quarterly.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$15,000$, target = \\$22,000\r\n\r\nAccount M: $r = 6.00\\%$, $n = 12$ (monthly)\r\n\r\nAccount Q: $r = 6.15\\%$, $n = 4$ (quarterly)\r\n\r\n**Part 2: Formula.**\r\n\r\nTime to reach target (in periods): $t = \\ln(T/S_0)/\\ln(1+r/n)$ (T = target amount)\r\n\r\nEffective annual rate $R = (1+r/n)^{n} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Target ratio: $22,000/15,000 \\approx 1.466667$.\r\n\r\n**2.** Account M periodic rate: $0.005$.\r\n\r\n**3.** $t = \\ln(1.466667)/\\ln(1.005) \\approx 0.382996/0.0049875 \\approx 76.81$ months $\\approx 6.40$ years.\r\n\r\n**4.** Account Q periodic rate: $0.015375$.\r\n\r\n**5.** $t = \\ln(1.466667)/\\ln(1.015375) \\approx 0.382996/0.0152580 \\approx 25.10$ quarters $\\approx 6.275$ years, which is FASTER than Account M's $6.40$ years, not identical and not slower.\r\n\r\n**6.** $R_M = (1.005)^{12} - 1 \\approx 6.17\\%$.\r\n\r\n**7.** $R_Q = (1.015375)^{4} - 1 \\approx 6.29\\%$.\r\n\r\n**8.** So $R_Q > R_M$, consistent with Q reaching the target faster.\r\n",
+    "letters": {
+      "A": {
+        "statement": "It would take approximately 76.8 months for Account M to grow \\$15,000 to \\$22,000.",
+        "verdict": "true",
+        "min_chars": 622,
+        "current": "**A) It would take approximately 76.8 months for Account M to grow \\$15,000 to \\$22,000.**  (true)\r\n\r\n$t = \\ln(1.466667)/\\ln(1.005) \\approx 76.8$ months ($\\approx 6.40$ years), matching exactly.\r\n\r\nTime in monthly periods is\r\n\r\n$$t = \\frac{\\ln(T/S_0)}{\\ln(1+r/n)}$$\r\n\r\nSubstitute $T/S_0 = 22,000/15,000 = 1.466667$ and $r/n = 0.06/12 = 0.005$:\r\n\r\n$$t = \\frac{\\ln 1.466667}{\\ln 1.005} = \\frac{0.382992}{0.0049875} \\approx 76.79 \\approx 76.8$$\r\n\r\nmonths\r\n\r\nThe claim says approximately 76.8 months. We got 76.8 months, so the statement is True."
+      },
+      "B": {
+        "statement": "It would take Account Q the same amount of time as Account M to reach the same target.",
+        "verdict": "false",
+        "min_chars": 599,
+        "current": "**B) It would take Account Q the same amount of time as Account M to reach the same target.**  (false)\r\n\r\nTrap: Account Q actually reaches the target faster, in about $6.275$ years, not the same $6.40$ years as Account M.\r\n\r\nAccount Q: $i = 0.0615/4 = 0.015375$, and time is in quarters:\r\n\r\n$$t_Q = \\frac{\\ln 1.466667}{\\ln 1.015375} = \\frac{0.382992}{0.015258} \\approx 25.10$$\r\n\r\nquarters\r\n\r\n$$25.10/4 \\approx 6.275$$\r\n\r\nyears\r\n\r\nAccount M took $76.8/12 = 6.40$ years. These are not the same, so the statement is False."
+      },
+      "C": {
+        "statement": "Because Account Q compounds less frequently, it must take longer than Account M to reach \\$22,000.",
+        "verdict": "false",
+        "min_chars": 531,
+        "current": "**C) Because Account Q compounds less frequently, it must take longer than Account M to reach \\$22,000.**  (false)\r\n\r\nTrap: despite compounding less frequently, Account Q's higher nominal rate ($6.15\\%$ vs. $6.00\\%$) lets it reach the target faster ($\\approx 6.275$ years) than Account M ($\\approx 6.40$ years), not slower.\r\n\r\nFrom (A) and (B):\r\n\r\n$$6.275\\mathrm{ years} < 6.40$$\r\n\r\nyears\r\n\r\nAccount Q is faster, not slower, so the statement is False."
+      },
+      "D": {
+        "statement": "Account M's effective annual rate is higher than Account Q's.",
+        "verdict": "false",
+        "min_chars": 471,
+        "current": "**D) Account M's effective annual rate is higher than Account Q's.**  (false)\r\n\r\nTrap: $R_Q$ ($\\approx 6.29\\%$) is actually higher than $R_M$ ($\\approx 6.17\\%$), not the other way around.\r\n\r\n$$R_M = (1.005)^{12} - 1 \\approx 0.061678 \\approx 6.17\\%$$\r\n\r\n$$R_Q = (1.015375)^{4} - 1 \\approx 0.062933 \\approx 6.29\\%$$\r\n\r\n$$R_M < R_Q$$\r\n\r\nAccount M's EAR is not higher, so the statement is False."
+      },
+      "E": {
+        "statement": "If both accounts instead needed to reach \\$30,000, each account would take exactly twice as long as it took to reach \\$22,000.",
+        "verdict": "false",
+        "min_chars": 764,
+        "current": "**E) If both accounts instead needed to reach \\$30,000, each account would take exactly twice as long as it took to reach \\$22,000.**  (false)\r\n\r\nTrap: the time to reach a different target multiple ($2\\times$ instead of $1.4667\\times$) is governed by a different logarithm ($\\ln 2$ vs. $\\ln 1.4667$) and is not simply double the original time; each target multiple requires its own separate calculation.\r\n\r\nFor Account M, time to \\$30,000 uses $30,000/15,000 = 2$:\r\n\r\n$$t_{30} = \\frac{\\ln 2}{\\ln 1.005} \\approx 138.98$$\r\n\r\nmonths\r\n\r\nDouble the original 76.8 months would be $153.6$ months.\r\n\r\n$$138.98 \\neq 153.6$$\r\n\r\nThe new time is not twice the old time, so the statement is False."
+      }
+    }
+  },
+  "21": {
+    "subsection": "11.2",
+    "context": "Ms. Delgado, the owner of an artisan bakery, deposits \\$4,500 into a business savings account that compounds interest continuously at a nominal annual rate of 5%.",
+    "solution_overview": "Ms. Delgado, the owner of an artisan bakery, deposits \\$4,500 into a business savings account that compounds interest continuously at a nominal annual rate of 5%.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$4,500$\r\n\r\nNominal annual rate r = 5% = 0.05\r\n\r\nCompounding: continuous\r\n\r\nt = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\n$S(t) = S_0 e^{rt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $S(1) = 4,500 \\times e^{0.05} = 4,500 \\times 1.0512711 = \\$4,730.72$.\r\n\r\n**2.** Interest: $4,730.72 - 4,500.00 = \\$230.72$.\r\n\r\n**3.** Annual ($m = 1$) compounding at $5\\%$: $S = 4,500 \\times 1.05 = \\$4,725.00$.\r\n\r\n**4.** Difference: $4,730.72 - 4,725.00 = \\$5.72$.\r\n\r\n**5.** $e^{0.05} = 1.0512711$, which rounds to $1.0513$, not $1.0400$.",
+    "letters": {
+      "A": {
+        "statement": "The balance after exactly 1 year is \\$4,730.72.",
+        "verdict": "true",
+        "min_chars": 389,
+        "current": "**A) The balance after exactly 1 year is \\$4,730.72.**  (true)\r\n\r\nContinuous compounding uses $S(t) = S_0 e^{rt}$. Substituting $S_0 = \\$4,500$, $r = 0.05$, $t = 1$ gives $S(1) = 4,500 \\times e^{0.05} \\approx 4,500 \\times 1.051271 \\approx \\$4,730.72$. This matches the claim exactly, so the statement is True."
+      },
+      "B": {
+        "statement": "The interest earned during the first year is \\$230.72.",
+        "verdict": "true",
+        "min_chars": 352,
+        "current": "**B) The interest earned during the first year is \\$230.72.**  (true)\r\n\r\nInterest earned is the year-end balance minus the original deposit: $I = S(1) - S_0 = 4,730.72 - 4,500.00 = \\$230.72$, using $S(1)$ from (A). This matches the claim exactly, so the statement is True."
+      },
+      "C": {
+        "statement": "If the bank compounded the same 5% nominal rate annually instead of continuously, the year-end balance would be \\$4,735.00.",
+        "verdict": "false",
+        "min_chars": 552,
+        "current": "**C) If the bank compounded the same 5% nominal rate annually instead of continuously, the year-end balance would be \\$4,735.00.**  (false)\r\n\r\nAnnual compounding for one year is $S_{\\mathrm{ann}} = S_0(1+r) = 4,500 \\times 1.05 = \\$4,725.00$, not $\\$4,735.00$. This also falls short of the continuous-compounding balance of $\\$4,730.72$ from (A), since continuous compounding can never be beaten by a less-frequent schedule at the same nominal rate. The statement is False."
+      },
+      "D": {
+        "statement": "The dollar difference between continuous compounding and annual compounding at the same nominal rate is \\$5.72.",
+        "verdict": "true",
+        "min_chars": 382,
+        "current": "**D) The dollar difference between continuous compounding and annual compounding at the same nominal rate is \\$5.72.**  (true)\r\n\r\nThe gap is $\\Delta = S(1) - S_{\\mathrm{ann}} = 4,730.72 - 4,725.00 = \\$5.72$, using the balances from (A) and (C). This matches the claim exactly, so the statement is True."
+      },
+      "E": {
+        "statement": "The growth factor $e^{0.05}$ rounds to 1.0400.",
+        "verdict": "false",
+        "min_chars": 296,
+        "current": "**E) The growth factor $e^{0.05}$ rounds to 1.0400.**  (false)\r\n\r\n$e^{0.05} \\approx 1.051271$, which rounds to $1.0513$, not $1.0400$ — that figure would correspond to a much smaller exponent. The statement is False."
+      }
+    }
+  },
+  "22": {
+    "subsection": "11.2",
+    "context": "A specialty coffee roasting company invests \\$3,200 of retained earnings into a fund that compounds continuously at a nominal annual rate of 8%, and plans to leave the funds untouched for 6 years.",
+    "solution_overview": "A specialty coffee roasting company invests \\$3,200 of retained earnings into a fund that compounds continuously at a nominal annual rate of 8%, and plans to leave the funds untouched for 6 years.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$3,200$\r\n\r\nNominal annual rate r = 8% = 0.08\r\n\r\nCompounding: continuous\r\n\r\nt = 6 years (3 and 12 years for parts b, d, e)\r\n\r\n**Part 2: Formula.**\r\n\r\n$S(t) = S_0 e^{rt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $S(6) = 3,200 \\times e^{0.08 \\times 6} = 3,200 \\times e^{0.48} = 3,200 \\times 1.6161681 = \\$5,171.44$.\r\n\r\n**2.** $S(3) = 3,200 \\times e^{0.08 \\times 3} = 3,200 \\times e^{0.24} = 3,200 \\times 1.2712492 = \\$4,067.998 \\approx \\$4,068.00$; doubling gives $\\$8,135.99$, which does not equal $S(6)$.\r\n\r\n**3.** Interest: $5,171.44 - 3,200.00 = \\$1,971.44$, not $\\$2,000.00$.\r\n\r\n**4.** $S(12) = 3,200 \\times e^{0.08 \\times 12} = 3,200 \\times e^{0.96} = 3,200 \\times 2.6116965 = \\$8,357.43$.\r\n\r\n**5.** Double of $S(6)$: $2 \\times 5,171.44 = \\$10,342.88$; since $\\$8,357.43 < \\$10,342.88$, the $12$-year balance is indeed less than double the $6$-year balance.",
+    "letters": {
+      "A": {
+        "statement": "After 6 years, the balance is approximately \\$5,171.44.",
+        "verdict": "true",
+        "min_chars": 397,
+        "current": "**A) After 6 years, the balance is approximately \\$5,171.44.**  (true)\r\n\r\nContinuous compounding uses $S(t) = S_0 e^{rt}$. Substituting $S_0 = \\$3,200$, $r = 0.08$, $t = 6$ gives $S(6) = 3,200 \\times e^{0.48} \\approx 3,200 \\times 1.616168 \\approx \\$5,171.44$. This matches the claim exactly, so the statement is True."
+      },
+      "B": {
+        "statement": "Doubling the 3-year balance gives the correct 6-year balance.",
+        "verdict": "false",
+        "min_chars": 908,
+        "current": "**B) Doubling the 3-year balance gives the correct 6-year balance.**  (false)\r\n\r\nThe 3-year balance of $\\$4,068.00$ is correctly computed, but doubling it to $\\$8,135.99$ does not reproduce the true 6-year balance of $\\$5,171.44$. Continuous growth compounds multiplicatively rather than additively, so extending the holding period from 3 to 6 years squares the 3-year growth factor (since $e^{0.48} = (e^{0.24})^{2}$) rather than simply doubling the balance, and the true 6-year figure is well below the doubled estimate.\r\n\r\n$$S(3) = 3,200 \\times e^{0.08 \\times 3} = 3,200 \\times e^{0.24}$$\r\n\r\n$$e^{0.24} \\approx 1.271249$$\r\n\r\n$$S(3) \\approx 3,200 \\times 1.271249 = \\$4,068.00$$\r\n\r\n$$2 \\times S(3) = \\$8,136.00 \\neq S(6) = \\$5,171.44$$\r\n\r\nDoubling the 3-year balance does not give the 6-year balance, so the statement is False."
+      },
+      "C": {
+        "statement": "The total interest earned over the 6 years is approximately \\$2,000.00.",
+        "verdict": "false",
+        "min_chars": 336,
+        "current": "**C) The total interest earned over the 6 years is approximately \\$2,000.00.**  (false)\r\n\r\nThe actual interest earned is $I = S(6) - S_0 = 5,171.44 - 3,200.00 = \\$1,971.44$, not $\\$2,000.00$. The claim overstates the true figure, so the statement is False."
+      },
+      "D": {
+        "statement": "The 12-year balance would be exactly double the 6-year balance.",
+        "verdict": "false",
+        "min_chars": 821,
+        "current": "**D) The 12-year balance would be exactly double the 6-year balance.**  (false)\r\n\r\nThe true 12-year balance is $3,200 \\times e^{0.96} = \\$8,357.43$, which is noticeably less than double the 6-year balance of $\\$5,171.44$ (which would be $\\$10,342.88$). As in part (b), extending the time span multiplies growth factors rather than balances, so doubling the number of years does not double the account value.\r\n\r\n$$S(12) = 3,200 \\times e^{0.08 \\times 12} = 3,200 \\times e^{0.96}$$\r\n\r\n$$e^{0.96} \\approx 2.611697$$\r\n\r\n$$S(12) \\approx 3,200 \\times 2.611697 = \\$8,357.43$$\r\n\r\n$$2 \\times S(6) = 2 \\times 5,171.44 = \\$10,342.88$$\r\n\r\n$$\\$8,357.43 \\neq \\$10,342.88$$\r\n\r\nThe 12-year balance is not double the 6-year balance, so the statement is False."
+      },
+      "E": {
+        "statement": "The 12-year balance is less than double the 6-year balance.",
+        "verdict": "true",
+        "min_chars": 305,
+        "current": "**E) The 12-year balance is less than double the 6-year balance.**  (true)\r\n\r\nFrom (D), $S(12) \\approx \\$8,357.43 < 2 \\times S(6) \\approx \\$10,342.88$. The 12-year balance is indeed less than double, so the statement is True."
+      }
+    }
+  },
+  "23": {
+    "subsection": "11.2",
+    "context": "An asset manager quotes a bond fund's nominal annual rate of 9%, compounded continuously, and a client asks how the effective annual yield compares to the nominal rate, and how it would change if the nominal rate doubled to 18%.",
+    "solution_overview": "An asset manager quotes a bond fund's nominal annual rate of 9%, compounded continuously, and a client asks how the effective annual yield compares to the nominal rate, and how it would change if the nominal rate doubled to 18%.\r\n\r\n**Part 1: Setup.**\r\n\r\nNominal annual rate r = 9% = 0.09 (and 18% for parts d, e)\r\n\r\nCompounding: continuous\r\n\r\n$P = \\$15,000$ (part b)\r\n\r\n**Part 2: Formula.**\r\n\r\n$EAR = e^{r} - 1$\r\n\r\n$S(t) = S_0 e^{rt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** EAR: $e^{0.09} - 1 = 1.0941743 - 1 = 0.0941743 \\approx 9.42\\%$.\r\n\r\n**2.** $S(1) = 15,000 \\times e^{0.09} = 15,000 \\times 1.0941743 = \\$16,412.61$.\r\n\r\n**3.** Difference from nominal: $9.4174\\% - 9.00\\% = 0.4174$ percentage points.\r\n\r\n**4.** At $18\\%$: $\\mathrm{EAR} = e^{0.18} - 1 = 1.1972174 - 1 = 0.1972174 \\approx 19.72\\%$.\r\n\r\n**5.** Double of the original EAR: $2 \\times 9.4174\\% = 18.8349\\%$; since $19.72\\% > 18.83\\%$, the new EAR does exceed double the original.",
+    "letters": {
+      "A": {
+        "statement": "The effective annual rate is approximately 9.42%.",
+        "verdict": "true",
+        "min_chars": 363,
+        "current": "**A) The effective annual rate is approximately 9.42%.**  (true)\r\n\r\nUnder continuous compounding, $\\mathrm{EAR} = e^{r} - 1$. Substituting $r = 0.09$ gives $\\mathrm{EAR} = e^{0.09} - 1 \\approx 1.094174 - 1 = 0.094174 \\approx 9.42\\%$. This matches the claim, so the statement is True."
+      },
+      "B": {
+        "statement": "On a \\$15,000 investment, the year-end balance is \\$16,412.61.",
+        "verdict": "true",
+        "min_chars": 353,
+        "current": "**B) On a \\$15,000 investment, the year-end balance is \\$16,412.61.**  (true)\r\n\r\nThe year-end balance is $S(1) = 15,000 \\times e^{0.09} \\approx 15,000 \\times 1.094174 \\approx \\$16,412.61$, using $e^{0.09}$ from (A). This matches the claim exactly, so the statement is True."
+      },
+      "C": {
+        "statement": "The EAR exceeds the nominal rate by more than 0.75 percentage points.",
+        "verdict": "false",
+        "min_chars": 316,
+        "current": "**C) The EAR exceeds the nominal rate by more than 0.75 percentage points.**  (false)\r\n\r\nThe gap is $\\Delta = 9.4174\\% - 9.00\\% = 0.4174$ percentage points, which is well under the claimed $0.75$-point cutoff. So the statement is False."
+      },
+      "D": {
+        "statement": "If the nominal rate doubled to 18%, the resulting EAR would exceed double the original EAR.",
+        "verdict": "true",
+        "min_chars": 788,
+        "current": "**D) If the nominal rate doubled to 18%, the resulting EAR would exceed double the original EAR.**  (true)\r\n\r\nDoubling the nominal rate to 18% raises the EAR to approximately 19.72%, which is indeed higher than double the original EAR of 18.83%. This happens because $e^{r}$ grows faster than linearly in r, so doubling the exponent more than doubles the resulting effective rate above the nominal baseline.\r\n\r\nAt $r = 0.18$:\r\n\r\n$$\\mathrm{EAR}' = e^{0.18} - 1$$\r\n\r\n$$e^{0.18} \\approx 1.197217$$\r\n\r\n$$\\mathrm{EAR}' \\approx 0.197217 \\approx 19.72\\%$$\r\n\r\nDouble the original EAR:\r\n\r\n$$2 \\times 9.4174\\% = 18.8348\\%$$\r\n\r\n$$19.72\\% > 18.83\\%$$\r\n\r\nThe new EAR exceeds double the original, so the statement is True."
+      },
+      "E": {
+        "statement": "At the 18% nominal rate, the EAR exceeds 19.5%.",
+        "verdict": "true",
+        "min_chars": 220,
+        "current": "**E) At the 18% nominal rate, the EAR exceeds 19.5%.**  (true)\r\n\r\nFrom (D), $\\mathrm{EAR}' \\approx 19.72\\% > 19.5\\%$. The statement is True."
+      }
+    }
+  },
+  "24": {
+    "subsection": "11.2",
+    "context": "An equipment leasing firm structures a financing contract at a nominal annual rate of 10%, and wants to compare the growth factor K, the amount to which \\$1 grows over one year, under yearly, semi-annual, and continuous compounding, applied to a \\$75,000 balance.",
+    "solution_overview": "An equipment leasing firm structures a financing contract at a nominal annual rate of 10%, and wants to compare the growth factor K, the amount to which \\$1 grows over one year, under yearly, semi-annual, and continuous compounding, applied to a \\$75,000 balance.\r\n\r\n**Part 1: Setup.**\r\n\r\nNominal annual rate r = i = 10% = 0.10\r\n\r\nCompounding schedules: yearly (m = 1), semi-annual (m = 2), continuous\r\n\r\n$P = \\$75,000$ (parts d, e)\r\n\r\n**Part 2: Formula.**\r\n\r\n$K_{\\mathrm{yearly}} = 1 + i$\r\n\r\n$K_{\\mathrm{semi}} = (1+i/2)^{2}$\r\n\r\n$K_{\\mathrm{continuous}} = e^{r}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $K_{\\mathrm{yearly}} = 1 + 0.10 = 1.1000$.\r\n\r\n**2.** $K_{\\mathrm{semi}} = (1.05)^{2} = 1.1025$.\r\n\r\n**3.** $K_{\\mathrm{cont}} = e^{0.10} = 1.1051709$.\r\n\r\n**4.** $75,000 \\times (K_{\\mathrm{cont}} - K_{\\mathrm{semi}}) = 75,000 \\times (1.1051709 - 1.1025) = 75,000 \\times 0.0026709 = \\$200.32$, not $\\$250.32$.\r\n\r\n**5.** $75,000 \\times (K_{\\mathrm{semi}} - K_{\\mathrm{yearly}}) = 75,000 \\times 0.0025 = \\$187.50$; comparing $187.50$ to $200.32$, the semi-vs-yearly gap is actually the smaller of the two.",
+    "letters": {
+      "A": {
+        "statement": "Under yearly compounding, K = 1.1000.",
+        "verdict": "true",
+        "min_chars": 299,
+        "current": "**A) Under yearly compounding, K = 1.1000.**  (true)\r\n\r\nThe one-year growth factor under annual compounding is $K_{\\mathrm{yearly}} = 1 + i = 1 + 0.10 = 1.1000$. This matches the claim exactly, so the statement is True."
+      },
+      "B": {
+        "statement": "Under semi-annual compounding, K = 1.1025.",
+        "verdict": "true",
+        "min_chars": 278,
+        "current": "**B) Under semi-annual compounding, K = 1.1025.**  (true)\r\n\r\nThe growth factor is $K_{\\mathrm{semi}} = (1 + i/2)^{2} = (1.05)^{2} = 1.1025$. This matches the claim exactly, so the statement is True."
+      },
+      "C": {
+        "statement": "Under continuous compounding, K ≈ 1.1052.",
+        "verdict": "true",
+        "min_chars": 265,
+        "current": "**C) Under continuous compounding, K ≈ 1.1052.**  (true)\r\n\r\nThe growth factor is $K_{\\mathrm{cont}} = e^{r} = e^{0.10} \\approx 1.1052$. This matches the claim, so the statement is True."
+      },
+      "D": {
+        "statement": "On the \\$75,000 balance, continuous compounding exceeds semi-annual compounding by \\$250.32.",
+        "verdict": "false",
+        "min_chars": 479,
+        "current": "**D) On the \\$75,000 balance, continuous compounding exceeds semi-annual compounding by \\$250.32.**  (false)\r\n\r\nThe gap is $\\Delta = 75,000 \\times (K_{\\mathrm{cont}} - K_{\\mathrm{semi}}) = 75,000 \\times (1.1051709 - 1.1025) \\approx \\$200.32$, using $K_{\\mathrm{cont}}$ and $K_{\\mathrm{semi}}$ from (B)-(C). The claim says \\$250.32, overstating the true difference by \\$50.00. The statement is False."
+      },
+      "E": {
+        "statement": "The gap between semi-annual and yearly compounding is larger than the gap between continuous and semi-annual compounding.",
+        "verdict": "false",
+        "min_chars": 845,
+        "current": "**E) The gap between semi-annual and yearly compounding is larger than the gap between continuous and semi-annual compounding.**  (false)\r\n\r\nThe semi-annual-versus-yearly gap is $75,000 \\times (1.1025 - 1.1000) = \\$187.50$, which is in fact smaller than the continuous-versus-semi-annual gap of $\\$200.32$ from (D), not larger. This is consistent with the general pattern that each successive increase in compounding frequency adds a further boost, and as frequency approaches its continuous limit those incremental boosts do not need to shrink monotonically in absolute dollar terms.\r\n\r\n$$75,000 \\times (1.1025 - 1.1000) = 75,000 \\times 0.0025 = \\$187.50$$\r\n\r\n$$\\$187.50 < \\$200.32$$\r\n\r\nThe semi-versus-yearly gap is smaller, not larger, so the statement is False."
+      }
+    }
+  },
+  "25": {
+    "subsection": "11.2",
+    "context": "A college endowment's growth sub-fund is currently valued at \\$95,000 and earns continuous compounding at a nominal annual rate of 4.5%. The board wants to project the balance forward using the property that the principal is multiplied by a fixed factor each year.",
+    "solution_overview": "A college endowment's growth sub-fund is currently valued at \\$95,000 and earns continuous compounding at a nominal annual rate of 4.5%. The board wants to project the balance forward using the property that the principal is multiplied by a fixed factor each year.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S(0) = \\$95,000$\r\n\r\nNominal annual rate r = 4.5% = 0.045 (and 9% for part e)\r\n\r\nCompounding: continuous\r\n\r\n**Part 2: Formula.**\r\n\r\n$S(t+1) = S(t)\\times e^{r}$\r\n\r\n$S(t) = S_0 e^{rt}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $S(1) = 95,000 \\times e^{0.045} = 95,000 \\times 1.0460279 = \\$99,372.65$, not $\\$98,500.00$.\r\n\r\n**2.** $S(2) = 95,000 \\times e^{0.09} = 95,000 \\times 1.0941743 = \\$103,946.56$.\r\n\r\n**3.** Increase ($0 \\to 1$): $99,372.65 - 95,000.00 = \\$4,372.65$.\r\n\r\n**4.** Increase ($1 \\to 2$): $103,946.56 - 99,372.65 = \\$4,573.91$.\r\n\r\n**5.** The textbook property $S(t + 1) = S(t)\\times e^{r}$ establishes that the SAME factor $e^{0.045} \\approx 1.0460$ is applied every year, regardless of the current balance.\r\n\r\n**6.** At $9\\%$: $e^{0.09} = 1.0941743$, which is far less than $2 \\times e^{0.045} = 2.0920557$.",
+    "letters": {
+      "A": {
+        "statement": "One year from now, the balance will be approximately \\$98,500.00.",
+        "verdict": "false",
+        "min_chars": 390,
+        "current": "**A) One year from now, the balance will be approximately \\$98,500.00.**  (false)\r\n\r\nThe continuous-growth balance is $S(1) = S_0 e^{r} = 95,000 \\times e^{0.045} \\approx 95,000 \\times 1.046028 \\approx \\$99,372.65$, not $\\$98,500.00$ — the stated figure is too low by roughly $\\$872.65$. The statement is False."
+      },
+      "B": {
+        "statement": "Two years from now, the balance will be approximately \\$103,946.56.",
+        "verdict": "true",
+        "min_chars": 343,
+        "current": "**B) Two years from now, the balance will be approximately \\$103,946.56.**  (true)\r\n\r\n$S(2) = 95,000 \\times e^{0.045 \\times 2} = 95,000 \\times e^{0.09} \\approx 95,000 \\times 1.094174 \\approx \\$103,946.56$. This matches the claim exactly, so the statement is True."
+      },
+      "C": {
+        "statement": "The dollar increase in year 1 is larger than the dollar increase in year 2.",
+        "verdict": "false",
+        "min_chars": 579,
+        "current": "**C) The dollar increase in year 1 is larger than the dollar increase in year 2.**  (false)\r\n\r\nThe increase actually grows larger over time as the balance compounds on itself: the year-1 increase is $\\$4,372.65$, which is smaller than the year-2 increase of $\\$4,573.91$, not larger as claimed.\r\n\r\n$$S(1) - S(0) = 99,372.65 - 95,000.00 = \\$4,372.65$$\r\n\r\n$$S(2) - S(1) = 103,946.56 - 99,372.65 = \\$4,573.91$$\r\n\r\n$$\\$4,372.65 < \\$4,573.91$$\r\n\r\nYear 1 is smaller, not larger, so the statement is False."
+      },
+      "D": {
+        "statement": "Each year, the balance is multiplied by a different factor.",
+        "verdict": "false",
+        "min_chars": 481,
+        "current": "**D) Each year, the balance is multiplied by a different factor.**  (false)\r\n\r\nThis directly contradicts the property $S(t + 1) = S(t) \\times e^{r}$: the multiplying factor $e^{r}$ depends only on the fixed nominal rate $r$, not on the current balance, so the SAME factor ($e^{0.045} \\approx 1.0460$) is applied every year regardless of how large the balance has already grown. The statement is False."
+      },
+      "E": {
+        "statement": "If the nominal rate were doubled to 9%, the year-over-year growth factor would also exactly double.",
+        "verdict": "false",
+        "min_chars": 691,
+        "current": "**E) If the nominal rate were doubled to 9%, the year-over-year growth factor would also exactly double.**  (false)\r\n\r\nDoubling the rate does not double the growth factor, because $e^{2r} = (e^{r})^{2}$, not $2 \\times e^{r}$. Here $e^{0.09} \\approx 1.0942$, which is nowhere near the claimed $2.0921$ — that number instead comes from incorrectly doubling $e^{0.045}$ directly rather than doubling the exponent inside it.\r\n\r\n$$e^{0.09} \\approx 1.094174$$\r\n\r\n$$2 \\times e^{0.045} \\approx 2 \\times 1.046028 = 2.092056$$\r\n\r\n$$1.094174 \\neq 2.092056$$\r\n\r\nThe growth factor does not double, so the statement is False."
+      }
+    }
+  },
+  "26": {
+    "subsection": "11.2",
+    "context": "A courier company's van fleet has a combined initial value of \\$60,000 and depreciates continuously at an annual rate of 10% with δ = 0.10, so that its value after t years follows $v(t) = v_0 e^{-\\delta t}$.",
+    "solution_overview": "A courier company's van fleet has a combined initial value of \\$60,000 and depreciates continuously at an annual rate of $10\\%$ with $\\delta = 0.10$, so its value after $t$ years follows $v(t) = v_0 e^{-\\delta t}$.\r\n\r\n**Part 1: Setup.**\r\n\r\n$v_0 = \\$60,000$; annual depreciation rate $\\delta = 0.10$ (and $0.20$ for part d); continuous compounding.\r\n\r\n**Part 2: Formula.**\r\n\r\n$v(t) = v_0 e^{-\\delta t}$; fraction remaining equals $e^{-\\delta t}$; time for fraction $f$: $t = \\ln(1/f)/\\delta$.\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $v(4) = 60,000\\times e^{-0.40} = 60,000\\times0.6703200 = \\$40,219.20$ ($\\approx 67.03\\%$ of original).\r\n\r\n**2.** $v(7) = 60,000\\times e^{-0.70} = 60,000\\times0.4965853 = \\$29,795.12$.\r\n\r\n**3.** At $\\delta = 0.20$: $v(4) = 60,000\\times e^{-0.80} = 60,000\\times0.4493290 = \\$26,959.74$, which is above $\\$25,000$, not below.\r\n\r\n**4.** $v(1) = \\$54,290.25$, so year-$1$ loss $= \\$5,709.75$; $v(3) = \\$44,449.09$, so year-$4$ loss $= v(3)-v(4) = \\$4,229.89$.",
+    "letters": {
+      "A": {
+        "statement": "The fleet's value after 4 years is approximately \\$40,219.20.",
+        "verdict": "true",
+        "min_chars": 418,
+        "current": "**A) The fleet's value after 4 years is approximately \\$40,219.20.**  (true)\r\n\r\nContinuous depreciation follows $v(t) = v_0 e^{-\\delta t}$, so with $v_0 = 60,000$, $\\delta = 0.10$, and $t = 4$: $v(4) = 60,000 \\times e^{-0.40} \\approx 60,000 \\times 0.670320 = \\$40,219.20$. That matches the claimed value exactly, so the statement is True."
+      },
+      "B": {
+        "statement": "The fleet's value after 7 years is approximately \\$29,795.12.",
+        "verdict": "true",
+        "min_chars": 373,
+        "current": "**B) The fleet's value after 7 years is approximately \\$29,795.12.**  (true)\r\n\r\nUsing the same formula at $t = 7$: $v(7) = 60,000 \\times e^{-0.10 \\times 7} = 60,000 \\times e^{-0.70} \\approx 60,000 \\times 0.496585 = \\$29,795.12$. This matches the claimed 7-year value, so the statement is True."
+      },
+      "C": {
+        "statement": "The 4-year value represents about 67.03% of the original \\$60,000 value.",
+        "verdict": "true",
+        "min_chars": 313,
+        "current": "**C) The 4-year value represents about 67.03% of the original \\$60,000 value.**  (true)\r\n\r\nThe remaining fraction is just the value ratio $v(4)/v_0 = 40,219.20/60,000 = 0.670320 \\approx 67.03\\%$, matching the statement exactly. True."
+      },
+      "D": {
+        "statement": "If the depreciation rate were instead doubled to 20%, the 4-year value would fall below \\$25,000.",
+        "verdict": "false",
+        "min_chars": 429,
+        "current": "**D) If the depreciation rate were instead doubled to 20%, the 4-year value would fall below \\$25,000.**  (false)\r\n\r\nDoubling $\\delta$ to $0.20$ gives $v(4)' = 60,000 \\times e^{-0.20 \\times 4} = 60,000 \\times e^{-0.80} \\approx 60,000 \\times 0.449329 = \\$26,959.74$, which stays above \\$25,000 rather than falling below it. So the statement is False."
+      },
+      "E": {
+        "statement": "The fleet's dollar decline during the first year alone is larger than its dollar decline during the fourth year alone.",
+        "verdict": "true",
+        "min_chars": 1025,
+        "current": "**E) The fleet's dollar decline during the first year alone is larger than its dollar decline during the fourth year alone.**  (true)\r\n\r\nBecause continuous depreciation removes a fixed PROPORTION of the current value each year rather than a fixed dollar amount, the dollar decline is largest when the base value is largest (i.e., early on) and shrinks as the value itself shrinks. The first-year loss of about \\$5,709.75 is indeed larger than the fourth-year loss of about \\$4,229.89, confirming this pattern.\r\n\r\nYear-1 remaining value:\r\n\r\n$$v(1) = 60,000 \\times e^{-0.10} \\approx 60,000 \\times 0.904837 = \\$54,290.25$$\r\n\r\nso the first-year drop is $60,000 - 54,290.25 = \\$5,709.75$.\r\n\r\nYear-3 remaining value, just before year 4:\r\n\r\n$$v(3) = 60,000 \\times e^{-0.30} \\approx 60,000 \\times 0.740818 = \\$44,449.09$$\r\n\r\nYear-4 drop: $44,449.09 - 40,219.20 = \\$4,229.89$.\r\n\r\n\\$5,709.75 > \\$4,229.89, so the first-year dollar decline is larger. True."
+      }
+    }
+  },
+  "27": {
+    "subsection": "11.2",
+    "context": "A real estate investment trust places \\$18,000 into a reserve account earning continuous compounding at a nominal annual rate of 5.5%, and wants to know how long it will take the balance to double, and what happens after three such doubling periods.",
+    "solution_overview": "A real estate investment trust places \\$18,000 into a reserve account earning continuous compounding at a nominal annual rate of 5.5%, and wants to know how long it will take the balance to double, and what happens after three such doubling periods.\r\n\r\n**Part 1: Setup.**\r\n\r\n$S_0 = \\$18,000$\r\n\r\nNominal annual rate r = 5.5% = 0.055 (and 11% for part c)\r\n\r\nCompounding: continuous\r\n\r\nTarget: $S(t) = 2 S_0$\r\n\r\n**Part 2: Formula.**\r\n\r\n$S(t) = S_0 e^{rt}$\r\n\r\nDoubling time: $e^{rt} = 2 \\Rightarrow t = \\ln(2)/r$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $\\ln(2) = 0.693147$.\r\n\r\n**2.** $t = 0.693147 / 0.055 = 12.6027$ years.\r\n\r\n**3.** At $11\\%$: $t = 0.693147 / 0.11 = 6.3013$ years, which is half of $12.6027$, not unchanged.\r\n\r\n**4.** $S(12.6027) = 18,000 \\times e^{0.055 \\times 12.6027} = 18,000 \\times e^{0.693147} = 18,000 \\times 2 = \\$36,000.00$.\r\n\r\n**5.** After $3$ doubling periods ($37.8080$ years), the growth factor is $2 \\times 2 \\times 2 = 8$, so $S = 18,000 \\times 8 = \\$144,000.00$, not $6 \\times 18,000 = \\$108,000.00$.",
+    "letters": {
+      "A": {
+        "statement": "The doubling time at 5.5% is approximately 12.60 years.",
+        "verdict": "true",
+        "min_chars": 288,
+        "current": "**A) The doubling time at 5.5% is approximately 12.60 years.**  (true)\r\n\r\nContinuous doubling solves $e^{rt} = 2$, so $t = \\ln(2)/r = 0.693147/0.055 \\approx 12.60$ years, matching the statement exactly. True."
+      },
+      "B": {
+        "statement": "At exactly 12.60 years, the balance reaches approximately \\$36,000.00.",
+        "verdict": "true",
+        "min_chars": 336,
+        "current": "**B) At exactly 12.60 years, the balance reaches approximately \\$36,000.00.**  (true)\r\n\r\nBy construction $e^{rt} = 2$ at the doubling time, so the balance is exactly twice the original: $18,000 \\times 2 = \\$36,000.00$, matching the statement exactly. True."
+      },
+      "C": {
+        "statement": "If the rate were instead 11%, the doubling time would also be approximately 12.60 years, unchanged.",
+        "verdict": "false",
+        "min_chars": 404,
+        "current": "**C) If the rate were instead 11%, the doubling time would also be approximately 12.60 years, unchanged.**  (false)\r\n\r\nDoubling time is inversely proportional to the rate, not independent of it: doubling $r$ to $0.11$ gives $t' = \\ln(2)/0.11 = 0.693147/0.11 \\approx 6.30$ years, which is half of 12.60, not unchanged. False."
+      },
+      "D": {
+        "statement": "After three full doubling periods, the balance would grow to 6 times the original principal.",
+        "verdict": "false",
+        "min_chars": 408,
+        "current": "**D) After three full doubling periods, the balance would grow to 6 times the original principal.**  (false)\r\n\r\nEach doubling period multiplies the balance by 2 again, so three periods give a factor of $2^{3} = 8$, not 6: $18,000 \\times 8 = \\$144,000.00$, versus the $18,000 \\times 6 = \\$108,000.00$ implied by the claim. False."
+      },
+      "E": {
+        "statement": "A higher interest rate r gives a longer doubling time.",
+        "verdict": "false",
+        "min_chars": 401,
+        "current": "**E) A higher interest rate r gives a longer doubling time.**  (false)\r\n\r\nSince $t = \\ln(2)/r$ has $r$ in the denominator, a larger $r$ gives a smaller (shorter) doubling time, not a longer one — exactly why raising $r$ from $5.5\\%$ to $11\\%$ in (C) cut $t$ from $12.60$ to $6.30$ years rather than lengthening it. False."
+      }
+    }
+  },
+  "28": {
+    "subsection": "11.2",
+    "context": "A manufacturing plant's stamping press has an initial value of \\$120,000 and depreciates continuously at an annual rate of 18% with δ = 0.18. Management wants to know how long it will take for the press to lose 60% of its original value, retaining only 40%, and how that compares to a slower depreciation scenario and to losing a larger share of value.",
+    "solution_overview": "A manufacturing plant's stamping press has an initial value of \\$120,000 and depreciates continuously at an annual rate of 18% with δ = 0.18. Management wants to know how long it will take for the press to lose 60% of its original value, retaining only 40%, and how that compares to a slower depreciation scenario and to losing a larger share of value.\r\n\r\n**Part 1: Setup.**\r\n\r\n$v_0 = \\$120,000$\r\n\r\nAnnual depreciation rate δ = 18% = 0.18 (and 9% for part d)\r\n\r\nCompounding: continuous\r\n\r\nTarget: v(t) = 0.40 $v_0$ (and 0.20 $v_0$ for part e)\r\n\r\n**Part 2: Formula.**\r\n\r\nValue: $v(t) = v_0 e^{-\\delta t}$\r\n\r\nFraction remaining equals $e^{-\\delta t}$\r\n\r\nTime for a given fraction $f$: $t = -\\ln(f)/\\delta = \\ln(1/f)/\\delta$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** $1/0.40 = 2.5$, and $\\ln(2.5) = 0.916291$.\r\n\r\n**2.** $t = 0.916291 / 0.18 = 5.0905$ years.\r\n\r\n**3.** $v(5.0905) = 120,000 \\times 0.40 = \\$48,000.00$.\r\n\r\n**4.** At $\\delta = 0.09$: $t = 0.916291 / 0.09 = 10.1810$ years, which is indeed double $5.0905$ years, since halving $\\delta$ doubles $t$.\r\n\r\n**5.** For $80\\%$ loss (retain $20\\%$): $1/0.20 = 5$, $\\ln(5) = 1.609438$.\r\n\r\n**6.** $t = 1.609438 / 0.18 = 8.9413$ years, which is longer than $5.0905$ years.",
+    "letters": {
+      "A": {
+        "statement": "Setting $v_0 \\times e^{-\\delta t} = 0.40 v_0$ and solving gives t = ln(2.5)/δ.",
+        "verdict": "true",
+        "min_chars": 366,
+        "current": "**A) Setting $v_0 \\times e^{-\\delta t} = 0.40 v_0$ and solving gives t = ln(2.5)/δ.**  (true)\r\n\r\nCancel $v_0$ to get $e^{-\\delta t} = 0.40$, then take natural logs: $\\delta t = -\\ln(0.40) = \\ln(1/0.40) = \\ln(2.5)$, so $t = \\ln(2.5)/\\delta$. That is exactly the claimed formula, so True."
+      },
+      "B": {
+        "statement": "The press will have lost 60% of its value after approximately 5.09 years.",
+        "verdict": "true",
+        "min_chars": 309,
+        "current": "**B) The press will have lost 60% of its value after approximately 5.09 years.**  (true)\r\n\r\nPlugging $\\delta = 0.18$ into that formula: $t = \\ln(2.5)/0.18 = 0.916291/0.18 \\approx 5.09$ years, matching the statement exactly. True."
+      },
+      "C": {
+        "statement": "At that point, the press's remaining value is approximately \\$48,000.00.",
+        "verdict": "true",
+        "min_chars": 303,
+        "current": "**C) At that point, the press's remaining value is approximately \\$48,000.00.**  (true)\r\n\r\nLosing $60\\%$ means keeping $40\\%$ of the original value: $120,000 \\times 0.40 = \\$48,000.00$, matching the statement exactly. True."
+      },
+      "D": {
+        "statement": "If the depreciation rate were instead 9%, the time to lose 60% of value would double to approximately 10.18 years.",
+        "verdict": "true",
+        "min_chars": 423,
+        "current": "**D) If the depreciation rate were instead 9%, the time to lose 60% of value would double to approximately 10.18 years.**  (true)\r\n\r\nSince $t = \\ln(2.5)/\\delta$ has $\\delta$ in the denominator, halving $\\delta$ from $18\\%$ to $9\\%$ gives $t' = 0.916291/0.09 \\approx 10.18$ years, and $2 \\times 5.09 = 10.18$, confirming the time doubles. True."
+      },
+      "E": {
+        "statement": "The time to lose 80% of the value is longer than the time to lose 60% of the value.",
+        "verdict": "true",
+        "min_chars": 429,
+        "current": "**E) The time to lose 80% of the value is longer than the time to lose 60% of the value.**  (true)\r\n\r\nReaching only $20\\%$ remaining (an $80\\%$ loss) requires $t_{80} = \\ln(5)/0.18 = 1.609438/0.18 \\approx 8.94$ years, which is indeed longer than the $5.09$ years needed for a $60\\%$ loss, since losing a larger share naturally takes more time. True."
+      }
+    }
+  },
+  "29": {
+    "subsection": "11.2",
+    "context": "A regional bank's marketing team wants to demonstrate to clients how the dollar gap between continuous compounding and ordinary annual compounding changes with the interest rate and the holding period. It compares nominal rates of 3% and 15%, each applied for 1 year to a \\$25,000 deposit, and then extends the 3% case to an 8-year horizon.",
+    "solution_overview": "A regional bank's marketing team wants to demonstrate to clients how the dollar gap between continuous compounding and ordinary annual compounding changes with the interest rate and the holding period. It compares nominal rates of 3% and 15%, each applied for 1 year to a \\$25,000 deposit, and then extends the 3% case to an 8-year horizon.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$25,000$\r\n\r\nNominal annual rates r = 3% and r = 15%\r\n\r\nCompounding: continuous vs. annual (m = 1)\r\n\r\nt = 1 year (and 8 years for part d, e)\r\n\r\n**Part 2: Formula.**\r\n\r\n$S_{\\mathrm{cont}} = P \\times e^{rt}$\r\n\r\n$S_{\\mathrm{annual}} = P \\times (1+r)^{t}$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** At $3\\%$, $1$ yr: $S_{\\mathrm{cont}} = 25,000 \\times e^{0.03} = \\$25,761.36$.\r\n\r\n**2.** $S_{\\mathrm{annual}} = 25,000 \\times 1.03 = \\$25,750.00$.\r\n\r\n**3.** Gap: $\\$11.36$.\r\n\r\n**4.** At $15\\%$, $1$ yr: $S_{\\mathrm{cont}} = 25,000 \\times e^{0.15} = \\$29,045.86$.\r\n\r\n**5.** $S_{\\mathrm{annual}} = 25,000 \\times 1.15 = \\$28,750.00$.\r\n\r\n**6.** Gap: $\\$295.86$.\r\n\r\n**7.** Ratio: $295.86 / 11.36 \\approx 26.04$, which is less than $30$.\r\n\r\n**8.** At $3\\%$, $8$ yrs: $S_{\\mathrm{cont}} = 25,000 \\times e^{0.24} = \\$31,781.23$.\r\n\r\n**9.** $S_{\\mathrm{annual}}(8) = 25,000 \\times (1.03)^{8} = 25,000 \\times 1.266770 = \\$31,669.25$.\r\n\r\n**10.** $8$-year gap: $31,781.23 - 31,669.25 = \\$111.98$.",
+    "letters": {
+      "A": {
+        "statement": "At a 3% nominal rate over 1 year, the gap between continuous and annual compounding on \\$25,000 is approximately \\$11.36.",
+        "verdict": "true",
+        "min_chars": 622,
+        "current": "**A) At a 3% nominal rate over 1 year, the gap between continuous and annual compounding on \\$25,000 is approximately \\$11.36.**  (true)\r\n\r\nGap = 25,761.36 - 25,750.00 = \\$11.36, matching the statement exactly.\r\n\r\nContinuous and annual one-year values:\r\n\r\n$$S_{\\mathrm{cont}} = 25,000 \\times e^{0.03}$$\r\n\r\n$$e^{0.03} \\approx 1.030455$$\r\n\r\n$$S_{\\mathrm{cont}} \\approx 25,000 \\times 1.030455 = \\$25,761.36$$\r\n\r\n$$S_{\\mathrm{ann}} = 25,000 \\times 1.03 = \\$25,750.00$$\r\n\r\n$$25,761.36 - 25,750.00 = \\$11.36$$\r\n\r\nThe 1-year 3% gap is \\$11.36. True."
+      },
+      "B": {
+        "statement": "At a 15% nominal rate over 1 year, the gap between continuous and annual compounding on \\$25,000 is approximately \\$295.86.",
+        "verdict": "true",
+        "min_chars": 579,
+        "current": "**B) At a 15% nominal rate over 1 year, the gap between continuous and annual compounding on \\$25,000 is approximately \\$295.86.**  (true)\r\n\r\nGap = 29,045.86 - 28,750.00 = \\$295.86, matching the statement exactly.\r\n\r\nRepeat at $r = 0.15$:\r\n\r\n$$S_{\\mathrm{cont}} = 25,000 \\times e^{0.15}$$\r\n\r\n$$e^{0.15} \\approx 1.161834$$\r\n\r\n$$S_{\\mathrm{cont}} \\approx \\$29,045.86$$\r\n\r\n$$S_{\\mathrm{ann}} = 25,000 \\times 1.15 = \\$28,750.00$$\r\n\r\n$$29,045.86 - 28,750.00 = \\$295.86$$\r\n\r\nMatches the claimed gap. True."
+      },
+      "C": {
+        "statement": "The 1-year gap at 15% is more than 30 times larger than the 1-year gap at 3%.",
+        "verdict": "false",
+        "min_chars": 323,
+        "current": "**C) The 1-year gap at 15% is more than 30 times larger than the 1-year gap at 3%.**  (false)\r\n\r\nThe actual ratio is $295.86/11.36 \\approx 26.04$, which is less than 30, so the claim of \"more than 30 times\" overstates the true multiple. False."
+      },
+      "D": {
+        "statement": "Extending the 3% comparison from 1 year to 8 years increases the dollar gap to approximately \\$111.98.",
+        "verdict": "true",
+        "min_chars": 700,
+        "current": "**D) Extending the 3% comparison from 1 year to 8 years increases the dollar gap to approximately \\$111.98.**  (true)\r\n\r\nOver 8 years at 3%, the gap grows to 31,781.23 - 31,669.25 = \\$111.98, matching the statement exactly.\r\n\r\nNow $t = 8$:\r\n\r\n$$S_{\\mathrm{cont}} = 25,000 \\times e^{0.03 \\times 8} = 25,000 \\times e^{0.24}$$\r\n\r\n$$e^{0.24} \\approx 1.271249$$\r\n\r\n$$S_{\\mathrm{cont}} \\approx \\$31,781.23$$\r\n\r\n$$S_{\\mathrm{ann}} = 25,000 \\times (1.03)^{8}$$\r\n\r\n$$(1.03)^{8} \\approx 1.266770$$\r\n\r\n$$S_{\\mathrm{ann}} \\approx \\$31,669.25$$\r\n\r\n$$31,781.23 - 31,669.25 = \\$111.98$$\r\n\r\nThe 8-year gap is the claimed \\$111.98. True."
+      },
+      "E": {
+        "statement": "Continuous compounding becomes less advantageous to the lender over longer holding periods.",
+        "verdict": "false",
+        "min_chars": 431,
+        "current": "**E) Continuous compounding becomes less advantageous to the lender over longer holding periods.**  (false)\r\n\r\nThis contradicts the calculation above: the 8-year gap ($\\$111.98$) is nearly ten times the 1-year gap ($\\$11.36$), since $111.98/11.36 \\approx 9.86$, so continuous compounding becomes MORE advantageous over longer periods, not less. False."
+      }
+    }
+  },
+  "30": {
+    "subsection": "11.2",
+    "context": "An investment advisory firm is evaluating a \\$400,000 allocation and comparing two funds that both quote a nominal annual rate of 9.5%: Fund A compounds continuously, while Fund B compounds monthly. The firm also wants to check whether switching Fund B to daily compounding could ever let it catch up to or overtake Fund A.",
+    "solution_overview": "An investment advisory firm is evaluating a \\$400,000 allocation and comparing two funds that both quote a nominal annual rate of 9.5%: Fund A compounds continuously, while Fund B compounds monthly. The firm also wants to check whether switching Fund B to daily compounding could ever let it catch up to or overtake Fund A.\r\n\r\n**Part 1: Setup.**\r\n\r\n$P = \\$400,000$\r\n\r\nNominal annual rate r = i = 9.5% = 0.095\r\n\r\nFund A: continuous compounding\r\n\r\nFund B: m = 12 (monthly); part d, e also consider m = 365 (daily)\r\n\r\nt = 1 year\r\n\r\n**Part 2: Formula.**\r\n\r\n$S_A = P \\times e^{rt}$\r\n\r\n$S_B = P \\times (1+i/m)^{mt}$\r\n\r\n$EAR_{\\mathrm{max}} = e^{r} - 1$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Fund A: $S_A = 400,000 \\times e^{0.095} = 400,000 \\times 1.0996589 = \\$439,863.54$.\r\n\r\n**2.** Fund B (monthly) periodic rate: $0.095/12 = 0.0079167$.\r\n\r\n**3.** $S_B = 400,000 \\times (1.0079167)^{12} = 400,000 \\times 1.0992476 = \\$439,699.03$, not $\\$439,750.00$.\r\n\r\n**4.** $EAR_{\\mathrm{max}} = e^{0.095} - 1 \\approx 9.97\\%$, which exceeds the $9.50\\%$ nominal rate; it is not equal to it.\r\n\r\n**5.** Fund B (daily): $S_{\\mathrm{daily}} = 400,000 \\times (1 + 0.095/365)^{365} = 400,000 \\times 1.0996453 = \\$439,858.10$, which is still below $S_A = \\$439,863.54$.\r\n\r\n**6.** Gap (continuous vs monthly): $439,863.54 - 439,699.03 = \\$164.51$.\r\n\r\n**7.** Gap (continuous vs daily): $439,863.54 - 439,858.10 = \\$5.44$, which is narrower than the monthly gap of $\\$164.51$.",
+    "letters": {
+      "A": {
+        "statement": "Fund A's continuous year-end value is approximately \\$439,863.54.",
+        "verdict": "true",
+        "min_chars": 282,
+        "current": "**A) Fund A's continuous year-end value is approximately \\$439,863.54.**  (true)\r\n\r\n$S_A = 400,000 \\times e^{0.095} \\approx 400,000 \\times 1.099659 = \\$439,863.54$, matching the statement exactly. True."
+      },
+      "B": {
+        "statement": "Fund B's monthly year-end value is approximately \\$439,750.00.",
+        "verdict": "false",
+        "min_chars": 375,
+        "current": "**B) Fund B's monthly year-end value is approximately \\$439,750.00.**  (false)\r\n\r\nWith monthly rate $0.095/12 = 0.0079167$, $S_B = 400,000 \\times (1.0079167)^{12} \\approx 400,000 \\times 1.099248 = \\$439,699.03$, not \\$439,750.00 — the statement overstates the true value by about \\$50.97. False."
+      },
+      "C": {
+        "statement": "The maximum possible effective annual rate obtainable at a 9.5% nominal rate, under any compounding frequency, is approximately 9.50% - the same as the nominal rate itself.",
+        "verdict": "false",
+        "min_chars": 512,
+        "current": "**C) The maximum possible effective annual rate obtainable at a 9.5% nominal rate, under any compounding frequency, is approximately 9.50% - the same as the nominal rate itself.**  (false)\r\n\r\nThe continuous-compounding ceiling is $\\mathrm{EAR}_{\\max} = e^{0.095} - 1 \\approx 1.099659 - 1 = 9.97\\%$, noticeably higher than $9.50\\%$: nominal and effective rates coincide only under annual compounding, not as a general ceiling. False."
+      },
+      "D": {
+        "statement": "If Fund B switched to daily compounding, its year-end value would exceed Fund A's continuous-compounding value.",
+        "verdict": "false",
+        "min_chars": 507,
+        "current": "**D) If Fund B switched to daily compounding, its year-end value would exceed Fund A's continuous-compounding value.**  (false)\r\n\r\nDaily compounding gives $S_{\\mathrm{daily}} = 400,000 \\times (1 + 0.095/365)^{365} \\approx 400,000 \\times 1.099645 = \\$439,858.10$, which stays just under $S_A = \\$439,863.54$: continuous compounding is the limiting case, so no finite frequency can ever exceed it at the same nominal rate. False."
+      },
+      "E": {
+        "statement": "The dollar gap between Fund A and Fund B narrows when Fund B switches from monthly to daily compounding.",
+        "verdict": "true",
+        "min_chars": 387,
+        "current": "**E) The dollar gap between Fund A and Fund B narrows when Fund B switches from monthly to daily compounding.**  (true)\r\n\r\nThe gap shrinks from $439,863.54 - 439,699.03 = \\$164.51$ (monthly) to $439,863.54 - 439,858.10 = \\$5.44$ (daily), exactly as $(1+r/n)^{n}$ converges toward $e^{r}$ as $n$ grows. True."
+      }
+    }
+  }
+}

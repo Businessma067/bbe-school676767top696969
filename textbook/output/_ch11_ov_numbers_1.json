@@ -1,0 +1,35 @@
+[
+  {
+    "id": "math-11-2",
+    "caseId": "MATH 11.02",
+    "missing_numbers": [
+      "9860"
+    ],
+    "original_context": [
+      "**2.** $S(6) = 6,000 \\times (1.02)^{24} \\approx 6,000 \\times 1.608435 = \\$9,650.61$ (not $\\$9,860.00$)."
+    ],
+    "current_text": "A deposit of \\$6,000 is put into an account earning interest at the annual rate of 8%, with interest paid quarterly. The owner wants to know how much will be in the account after 6 years.\r\n\r\n**Part 1: Setup.**\r\n\r\nThe deposit is \\$6,000, the nominal annual rate is 8%, and quarterly compounding continues for six years:\r\n\r\n$$S_0 = 6,000$$\r\n\r\n$$r = 8\\% = 0.08$$\r\n\r\n$$n = 4, \\qquad t = 6$$\r\n\r\n**Part 2: Formula.**\r\n\r\nThe periodic rate is\r\n\r\n$$i = \\frac{r}{n}$$\r\n\r\nThe future-value model is\r\n\r\n$$S(t) = S_0\\left(1+\\frac{r}{n}\\right)^{nt}$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** First find the quarterly rate and the number of quarters:\r\n\r\n$$i = \\frac{0.08}{4}$$\r\n\r\n$$i = 0.02 = 2.00\\%$$\r\n\r\n$$nt = 4 \\times 6 = 24$$\r\n\r\n**2.** Substitute the deposit, periodic rate, and number of periods:\r\n\r\n$$S(6) = 6,000 \\times (1.02)^{24}$$\r\n\r\n$$(1.02)^{24} \\approx 1.608435$$\r\n\r\n$$S(6) \\approx 6,000 \\times 1.608435$$\r\n\r\n$$S(6) \\approx 9,650.61$$\r\n\r\nThe balance is about \\$9,650.61, not \\$9,860.00.\r\n\r\n**3.** Compound growth is exponential rather than linear in time. After three years there are twelve quarterly periods:\r\n\r\n$$(1.02)^{12} \\approx 1.268242$$\r\n\r\n$$S(3) \\approx 6,000 \\times 1.268242$$\r\n\r\n$$S(3) \\approx 7,609.45$$\r\n\r\nHalf of the six-year balance would instead be\r\n\r\n$$\\frac{9,650.61}{2} \\approx 4,825.31$$\r\n\r\nThus \\$7,609.45 is not half of \\$9,650.61.\r\n\r\n**4.** Measure total growth against the original deposit:\r\n\r\n$$\\frac{9,650.61-6,000}{6,000}$$\r\n\r\n$$\\approx 0.6084 = 60.84\\%$$\r\n\r\nThe total growth is 60.84%, so it is not more than 65%."
+  },
+  {
+    "id": "math-11-4",
+    "caseId": "MATH 11.04",
+    "missing_numbers": [
+      "2420"
+    ],
+    "original_context": [
+      "**3.** $FV$ of $\\$2,000$ unpaid for $1$ year: $2,000 \\times 1.231430 = \\$2,462.86$ (not $\\$2,420.00$)."
+    ],
+    "current_text": "A retail credit card charges interest on any outstanding balance at a rate of 1.75% per month.\r\n\r\n**Part 1: Setup.**\r\n\r\nThe monthly periodic rate is 1.75%, and there are twelve monthly periods in one year:\r\n\r\n$$i_m = 1.75\\% = 0.0175$$\r\n\r\n$$n = 12$$\r\n\r\n**Part 2: Formula.**\r\n\r\nThe nominal annual rate is twelve times the monthly rate:\r\n\r\n$$r_{\\mathrm{nom}} = 12i_m$$\r\n\r\nThe effective annual rate includes monthly compounding:\r\n\r\n$$R = (1+i_m)^{12} - 1$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Annualize the quoted monthly rate without compounding:\r\n\r\n$$r_{\\mathrm{nom}} = 12 \\times 1.75\\%$$\r\n\r\n$$r_{\\mathrm{nom}} = 21.00\\%$$\r\n\r\nThe nominal annual rate is 21.00%, not 22.00%.\r\n\r\n**2.** Compound the monthly rate for twelve months:\r\n\r\n$$R = (1.0175)^{12} - 1$$\r\n\r\n$$(1.0175)^{12} \\approx 1.231430$$\r\n\r\n$$R \\approx 0.231430 \\approx 23.14\\%$$\r\n\r\nThe effective annual rate is about 23.14%, not 21.75%.\r\n\r\n**3.** A \\$2,000 unpaid balance grows by the same annual factor:\r\n\r\n$$FV = 2,000 \\times 1.231430$$\r\n\r\n$$FV \\approx 2,462.86$$\r\n\r\nThe one-year balance is about \\$2,462.86, not \\$2,420.00.\r\n\r\n**4.** Compare the effective and nominal annual rates:\r\n\r\n$$23.14\\% - 21.00\\% = 2.14$$\r\n\r\nThe gap is 2.14 percentage points, which is more than 2.00 percentage points.\r\n\r\n**5.** At a 1.50% monthly rate, the effective annual rate would be\r\n\r\n$$R = (1.015)^{12} - 1$$\r\n\r\n$$(1.015)^{12} \\approx 1.195625$$\r\n\r\n$$R \\approx 0.195625 \\approx 19.56\\%$$\r\n\r\nThat effective rate does not exceed 20%."
+  },
+  {
+    "id": "math-11-14",
+    "caseId": "MATH 11.14",
+    "missing_numbers": [
+      "3684"
+    ],
+    "original_context": [
+      "**3.** $FV$ of $\\$3,000$ unpaid for $1$ year: $3,000 \\times 1.253408 = \\$3,760.22$ (not $\\$3,684.00$)."
+    ],
+    "current_text": "A retail store credit card charges interest on unpaid balances at a rate of 1.9% per month.\r\n\r\n**Part 1: Setup.**\r\n\r\nThe card charges 1.9% each month, with twelve monthly periods in one year:\r\n\r\n$$i_m = 1.9\\% = 0.019$$\r\n\r\n$$n = 12$$\r\n\r\n**Part 2: Formula.**\r\n\r\nThe nominal annual rate is\r\n\r\n$$r_{\\mathrm{nom}} = 12i_m$$\r\n\r\nThe effective annual rate is\r\n\r\n$$R = (1+i_m)^{12} - 1$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Annualize the monthly rate without compounding:\r\n\r\n$$r_{\\mathrm{nom}} = 12 \\times 1.9\\%$$\r\n\r\n$$r_{\\mathrm{nom}} = 22.80\\%$$\r\n\r\n**2.** Compound the monthly rate for twelve months:\r\n\r\n$$R = (1.019)^{12} - 1$$\r\n\r\n$$(1.019)^{12} \\approx 1.253408$$\r\n\r\n$$R \\approx 0.253408 \\approx 25.34\\%$$\r\n\r\n**3.** Apply the annual factor to an unpaid \\$3,000 balance:\r\n\r\n$$FV = 3,000 \\times 1.253408$$\r\n\r\n$$FV \\approx 3,760.22$$\r\n\r\nThe one-year balance is about \\$3,760.22, not \\$3,684.00.\r\n\r\n**4.** The effective rate exceeds the nominal rate by\r\n\r\n$$25.34\\% - 22.80\\% \\approx 2.54$$\r\n\r\nThe gap is about 2.54 percentage points, so it does not exceed 3.00 percentage points."
+  }
+]

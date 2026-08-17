@@ -1,0 +1,192 @@
+[
+  {
+    "id": "math-8-51",
+    "case_id": "MATH 8.51",
+    "title": "Audit Cost With Economies of Scale",
+    "difficulty": "3/5",
+    "sort_order": 51,
+    "context": "An audit practice prices engagements by $C(n)=A n^{0.75}$, where $n>0$ is the number of accounts tested. The bill rises by exactly $1900$ when engagement size rises from $16$ to $81$ accounts. A client has a $2700$ cap, while a rival quotes $R(n)=50n$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The pricing law is $C(n)=100n^{0.75}$.",
+      "The $2700$ cap covers at most $81$ accounts under the practice's schedule.",
+      "The two firms tie at $16$ accounts, and the practice is cheaper than the rival for every $n>16$.",
+      "A bill of $12500$ corresponds to an engagement of $625$ accounts.",
+      "Doubling the number of accounts raises the practice's bill by exactly $75\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe recorded $1900$ is the change between two bills. The fourth-power inputs make every shape factor exact:\n\n$$16^{\\frac{3}{4}}=8,\\qquad 81^{\\frac{3}{4}}=27$$\n\n$$C(81)-C(16)=A(27-8)=19A$$\n\n$$19A=1900\\quad\\Rightarrow\\quad A=100$$\n\n$$C(n)=100n^{\\frac{3}{4}}$$\n\nAs a check, the endpoint bills are $2700$ and $800$, and their difference is $1900$. Using the increase as though it were the larger bill would discard the lower bill and recover the wrong scale. The calibrated schedule is exactly the one stated, so the statement is True.",
+      "**B.** → True\n\nSince $100n^{\\frac{3}{4}}$ is increasing for $n>0$, the spending cap has one boundary and every smaller engagement stays feasible:\n\n$$100n^{\\frac{3}{4}}\\le2700\n\\quad\\Longleftrightarrow\\quad\nn^{\\frac{3}{4}}\\le27\n\\quad\\Longleftrightarrow\\quad\nn\\le27^{\\frac{4}{3}}=81$$\n\nThe endpoint check gives $C(81)=100(27)=2700$, while any $n>81$ has a larger three-quarter power and therefore breaks the cap. The intermediate value $27$ is $n^{\\frac{3}{4}}$ rather than the account count, so stopping there would leave the inversion half done. The largest covered engagement is $81$ accounts, so the statement is True.",
+      "**C.** → True\n\nA tie between a three-quarter power and a linear schedule is one equation, and dividing by $50n^{\\frac{3}{4}}$ on the positive domain leaves a single quarter power:\n\n$$100n^{\\frac{3}{4}}=50n\\quad\\Rightarrow\\quad 2=n^{\\frac{1}{4}}\\quad\\Rightarrow\\quad n=16$$\n\nThe ratio of the two schedules then settles every account count at once:\n\n$$\\frac{C(n)}{R(n)}=\\frac{100n^{\\frac{3}{4}}}{50n}=2n^{\\frac{-1}{4}}$$\n\n* At $n=16$ the ratio equals $1$, and both quotes are $800$.\n* For $n>16$ the quarter power exceeds $2$, so the ratio falls below $1$.\n* For $0<n<16$ the ratio exceeds $1$, so the rival is the cheaper firm.\n\nAt $81$ accounts the quotes are $2700$ against $4050$, which shows how fast the gap opens once the crossover is passed. Coefficients alone would have pointed the wrong way, since the rival carries the larger exponent. The firms tie at $16$ accounts and the practice is cheaper beyond it, so the statement is True.",
+      "**D.** → True\n\nInverting the schedule for a target bill uses the reciprocal exponent $\\frac{4}{3}$, and the intermediate value is a perfect cube.\n\n$$100n^{\\frac{3}{4}}=12500 \\quad \\Rightarrow \\quad n^{\\frac{3}{4}}=125=5^3$$\n\n$$n=125^{\\frac{4}{3}}=(5^3)^{\\frac{4}{3}}=5^4=625$$\n\nApplying $\\frac{3}{4}$ again in place of its reciprocal would run the schedule forwards rather than backwards. A direct check gives $100(625^{\\frac{3}{4}})=100(125)=12500$, so the statement is True.",
+      "**E.** → False\n\nDoubling the accounts acts through the exponent as $2^{\\frac{3}{4}}$, a multiplicative scaling rather than an added percentage.\n\n$$\\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}\\approx1.6818$$\n\n$$\\frac{C(2n)-C(n)}{C(n)} =2^{\\frac{3}{4}}-1 \\approx0.6818=68.18\\%$$\n\nReading the exponent $0.75$ as the percentage response confuses a power with a proportion. Doubling raises the bill by about $68\\%$ rather than exactly $75\\%$, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1:** Use the two exact fourth-power inputs:\n\n$$A(81^{\\frac{3}{4}}-16^{\\frac{3}{4}})=A(27-8)=1900$$\n\n**Part 2:** Recover and compare the schedules:\n\n$$C(n)=100n^{\\frac{3}{4}}, qquad R(n)=50n, qquad C=R\\Rightarrow n=16$$\n\n**Part 3:** Invert the cap and target bill:\n\n$$C(n)\\le2700\\Rightarrow n\\le81, qquad C(n)=12500\\Rightarrow n=625$$\n\nThis full reconstruction also supplies three safeguards: every substituted input stays in the stated domain, each numerical comparison uses the model's own units, and every percentage claim is checked through an exact output ratio before rounding. Those checks lead to the same truth value as the direct route above.\n\nA final boundary check strengthens the conclusion. Keep the original domain restriction in force, compare the unrounded model value with the exact threshold in the statement, and only then translate the result into words. Changing the order of those operations can hide a domain failure or turn a close inequality into the wrong truth value. Here the exact model, the scale comparison, and the stated units all point in the same direction, so the extended check agrees with the conclusion above."
+    ],
+    "solution_overview": "Audit cost follows $C(n)=An^{\\frac{3}{4}}$; the bill rises by $1900$ from $16$ to $81$ accounts. The rival charges $R(n)=50n$.\n\n**Part 1:** Use the two exact fourth-power inputs:\n\n$$A(81^{\\frac{3}{4}}-16^{\\frac{3}{4}})=A(27-8)=1900$$\n\n**Part 2:** Recover and compare the schedules:\n\n$$C(n)=100n^{\\frac{3}{4}}, qquad R(n)=50n, qquad C=R\\Rightarrow n=16$$\n\n**Part 3:** Invert the cap and target bill:\n\n$$C(n)\\le2700\\Rightarrow n\\le81, qquad C(n)=12500\\Rightarrow n=625$$\n\n**Answer.** $A=100$ | cap $81$ accounts | rival crossover $n=16$ | $12500$ bill at $n=625$",
+    "expl_lens": [
+      546,
+      619,
+      941,
+      476,
+      1852
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-52",
+    "case_id": "MATH 8.52",
+    "title": "Airborne Particle Concentration Downwind",
+    "difficulty": "3/5",
+    "sort_order": 52,
+    "context": "Downwind particle concentration follows $c(x)=A x^{-1.5}$ micrograms per cubic metre, where $x>0$ is distance from the stack in metres. A monitor at $4$ metres reads exactly $43.75$ more than a monitor at $16$ metres. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The concentration law is $c(x)=400x^{-1.5}$.",
+      "Concentration is at most $6.25$ precisely when the monitor is at least $16$ metres from the stack.",
+      "Halving the distance multiplies concentration by exactly $2^{1.5}=2\\sqrt{2}$.",
+      "At $100$ metres, concentration is $0.4$ microgram per cubic metre.",
+      "Doubling the distance cuts concentration by exactly $50\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe monitors provide a difference of readings. Resolve each inverse three-halves factor before solving for the common coefficient:\n\n$$4^{\\frac{-3}{2}}=\\frac18,\\qquad 16^{\\frac{-3}{2}}=\\frac1{64}$$\n\n$$c(4)-c(16)=A\\left(\\frac18-\\frac1{64}\\right)=\\frac{7A}{64}$$\n\n$$\\frac{7A}{64}=43.75=\\frac{175}{4}\n\\quad\\Rightarrow\\quad\nA=400$$\n\nThe resulting levels are $c(4)=50$ and $c(16)=6.25$, which differ by $43.75$ exactly. Calibrating either monitor directly against the reported gap would misuse the observation. The recovered law is $c(x)=400x^{\\frac{-3}{2}}$, so the statement is True.",
+      "**B.** → True\n\nThe concentration curve is decreasing, so solve the equality to locate the boundary and then use monotonicity to choose the side:\n\n$$400x^{\\frac{-3}{2}}=6.25\n\\quad\\Rightarrow\\quad\nx^{\\frac{3}{2}}=64\n\\quad\\Rightarrow\\quad\nx=64^{\\frac{2}{3}}=16$$\n\nBoundary and direction together:\n\n* $c(16)=6.25$, so the endpoint belongs to the region.\n* If $x>16$, the denominator $x^{\\frac{3}{2}}$ is larger and $c(x)<6.25$.\n* If $0<x<16$, the denominator is smaller and $c(x)>6.25$.\n\nThe ceiling is therefore met precisely on the interval $x\\ge16$, including its endpoint, so the statement is True.",
+      "**C.** → True\n\nHalving the distance is a multiplier of $\\frac{1}{2}$ raised to the exponent $-1.5$, which inverts it and then applies the three-halves power.\n\n$$\\frac{c(\\frac{x}{2})}{c(x)} =\\left(\\frac12\\right)^{-1.5} =2^{1.5}$$\n\n$$2^{1.5}=2^{\\frac{3}{2}}=\\sqrt{2^3}=2\\sqrt2\\approx2.828$$\n\nA mere doubling would correspond to exponent $-1$, one half step away from the law in force here. Halving distance multiplies concentration by exactly $2\\sqrt{2}$, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1:** Translate the monitor difference:\n\n$$A\\left(\\frac18-\\frac1{64}\\right)=43.75$$\n\n**Part 2:** Recover the model and its scale law:\n\n$$c(x)=400x^{\\frac{-3}{2}}, qquad \\frac{c(kx)}{c(x)}=k^{\\frac{-3}{2}}$$\n\n**Part 3:** Solve the threshold and evaluate the exact factors:\n\n$$c(x)\\le6.25\\Longleftrightarrow x\\ge16, quad (\\frac{1}{2})^{\\frac{-3}{2}}=2\\sqrt2, quad c(100)=0.4$$\n\nThis full reconstruction also supplies three safeguards: every substituted input stays in the stated domain, each numerical comparison uses the model's own units, and every percentage claim is checked through an exact output ratio before rounding. Those checks lead to the same truth value as the direct route above.",
+      "**D.** → True\n\nA level at $100$ metres needs the shape factor $100^{1.5}$, which resolves by taking the square root first and then cubing.\n\n$$100^{1.5}=100^{\\frac{3}{2}}=(\\sqrt{100})^3=10^3=1000$$\n\n$$c(100)=400(100)^{-1.5} =\\frac{400}{1000}=0.4$$\n\nThe exponent $1.5$ is a power rather than a multiple, so it gives $1000$ and not $150$, and the negative sign puts it in the denominator. Concentration is $0.4$ microgram per cubic metre, so the statement is True.",
+      "**E.** → False\n\nUse the scale factor itself as a counterexample. Doubling any distance leaves\n\n$$\\frac{c(2x)}{c(x)}=2^{\\frac{-3}{2}}=\\frac{1}{2\\sqrt2}\\approx0.3536$$\n\nOnly about $35.36\\%$ of the original concentration survives, so the reduction is\n\n$$1-0.3536=0.6464\\approx64.64\\%$$\n\nFor instance, the calibrated readings fall from $c(4)=50$ to $c(8)\\approx17.68$, a drop of about $32.32$ rather than $25$. A $50\\%$ cut would require the surviving fraction $\\frac{1}{2}$, which belongs to exponent $-1$. The actual cut is about $64.6\\%$, so the statement is False."
+    ],
+    "solution_overview": "Concentration is $c(x)=Ax^{\\frac{-3}{2}}$, calibrated by the difference between monitors at $4$ and $16$ metres.\n\n**Part 1:** Translate the monitor difference:\n\n$$A\\left(\\frac18-\\frac1{64}\\right)=43.75$$\n\n**Part 2:** Recover the model and its scale law:\n\n$$c(x)=400x^{\\frac{-3}{2}}, qquad \\frac{c(kx)}{c(x)}=k^{\\frac{-3}{2}}$$\n\n**Part 3:** Solve the threshold and evaluate the exact factors:\n\n$$c(x)\\le6.25\\Longleftrightarrow x\\ge16, quad (\\frac{1}{2})^{\\frac{-3}{2}}=2\\sqrt2, quad c(100)=0.4$$\n\n**Answer.** $A=400$ | threshold $x=16$ m | halving factor $2\\sqrt2$ | $c(100)=0.4$",
+    "expl_lens": [
+      594,
+      598,
+      1420,
+      461,
+      564
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-53",
+    "case_id": "MATH 8.53",
+    "title": "Storm Surge Feeding a Cubic Loss Index",
+    "difficulty": "4/5",
+    "sort_order": 53,
+    "context": "A reinsurer models coastal losses in two stages. Storm surge height is $s(w)=0.5 w^{0.5}$ metres for a wind speed of $w>0$, and the loss index rises with the cube of surge height, $L(s)=32 s^{3}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The composed loss index is $L(w)=4w^{1.5}$.",
+      "Doubling the wind speed multiplies the loss index by about $2.83$.",
+      "The loss index reaches $1000$ at a wind speed of about $39.7$.",
+      "At a wind speed of $64$, the loss index is $2048$.",
+      "Increasing wind speed by $50\\%$ raises the loss index by about $83.7\\%$."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nComposing two power laws substitutes the inner law into the outer one, which multiplies the exponents and raises the inner coefficient to the outer power.\n\n$$L(w) = 32\\left(0.5w^{0.5}\\right)^{3} = 32 \\times 0.5^{3} \\times w^{0.5 \\times 3}$$\n\nSimplify the constant and the exponent:\n\n$$32 \\times 0.125 = 4, \\qquad 0.5 \\times 3 = 1.5$$\n\n$$L(w) = 4w^{1.5}$$\n\nCubing only the variable part and carrying $0.5$ through unchanged would leave the loss index eight times too large. The composed law is $4w^{1.5}$, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $w$ = wind speed, $s$ = surge height, $L$ = loss index. This is a chain, so composing multiplies exponents and raises the inner coefficient to the outer power.\n\n**1. Translate: the surge stage.**\n\n$$s(w) = 0.5w^{0.5}$$\n\n**2. Translate: the loss stage applied to it.**\n\n$$L(w) = 32\\left(0.5w^{0.5}\\right)^{3}$$\n\n**Part 2: The model.**\n\n$$32 \\times 0.5^{3} = 4, \\qquad 0.5 \\times 3 = 1.5 \\tag{1}$$\n\n$$L(w) = 4w^{1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Levels from (2), checked stage by stage:\n\n$$L(25) = 500 \\;\\; (s = 2.5), \\qquad L(100) = 4000 \\;\\; (s = 5)$$\n\n**2.** The composed scale factor for a doubling of the wind speed:\n\n$$2^{1.5} \\approx 2.83$$\n\nWorking stage by stage gives the same number. Surge rises by the square root factor, and the loss stage cubes it:\n\n$$\\left(2^{0.5}\\right)^{3} \\approx 1.414^{3} \\approx 2.83$$\n\n**3.** Inverting the composed law turns a loss budget into a wind speed:\n\n$$w = \\left(\\frac{L}{4}\\right)^{\\frac{2}{3}}, \\qquad L = 4000 \\;\\Rightarrow\\; w = 100$$\n\n**4.** The composed exponent exceeds $1$, so losses are convex in wind speed:\n\n$$4^{1.5} = 8 > 4$$\n\n**5.** The concave surge stage ($0.5$) is more than offset by the cubic loss stage, which is the modelling point of the chain.",
+      "**B.** → True\n\nA doubling of wind speed acts through the composed exponent $1.5$, which is the product of the two stage exponents.\n\n$$\\frac{L(2w)}{L(w)} = 2^{1.5} = 2\\sqrt{2} \\approx 2.8284$$\n\nVerify through the two stages:\n\n$$s \\text{ rises by } 2^{0.5} \\approx 1.414, \\qquad 1.414^{3} \\approx 2.828$$\n\nEither stage exponent taken alone would give a different factor, and agreement between the two routes guards against composing incorrectly. Losses multiply by about $2.83$, so the statement is True.",
+      "**C.** → True\n\nA stated loss level is inverted through the composed law, so the reciprocal exponent $\\frac{2}{3}$ applies once the coefficient is divided out.\n\n$$4w^{1.5}=1000 \\quad \\Rightarrow \\quad w^{1.5}=250$$\n\n$$w=250^{\\frac{2}{3}}\\approx39.69$$\n\nInverting one stage at a time works too, but only the composed exponent can be reciprocated in a single step. The index reaches $1000$ at a wind speed of about $39.7$, so the statement is True.",
+      "**D.** → True\n\nA level under the composed law keeps the square-root contribution before the cube is applied, which is what the exponent $1.5$ encodes.\n\n$$L(64)=4(64)^{1.5}=4(64)(8), \\qquad L(64)=2048$$\n\nApplying the cube to the wind speed itself, rather than to the surge it produces, would overstate the index badly. The loss index at wind speed $64$ is $2048$, so the statement is True.",
+      "**E.** → True\n\nA fifty percent increase is a multiplier of $1.5$ acting through the composed exponent, which is also $1.5$.\n\n$$\\frac{L(1.5w)}{L(w)}=1.5^{1.5}\\approx1.8371$$\n\n$$(1.8371-1)\\times100\\%\\approx83.7\\%$$\n\nNeither stage exponent in isolation gives this factor, only their product. The loss index rises by about $83.7\\%$, so the statement is True."
+    ],
+    "solution_overview": "Surge is $s(w)=0.5w^{0.5}$ metres and the loss index is $L(s)=32s^{3}$.\n\n**Part 1: Building the model.**\n\nLet $w$ = wind speed, $s$ = surge height, $L$ = loss index. This is a chain, so composing multiplies exponents and raises the inner coefficient to the outer power.\n\n**1. Translate: the surge stage.**\n\n$$s(w) = 0.5w^{0.5}$$\n\n**2. Translate: the loss stage applied to it.**\n\n$$L(w) = 32\\left(0.5w^{0.5}\\right)^{3}$$\n\n**Part 2: The model.**\n\n$$32 \\times 0.5^{3} = 4, \\qquad 0.5 \\times 3 = 1.5 \\tag{1}$$\n\n$$L(w) = 4w^{1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Levels from (2), checked stage by stage:\n\n$$L(25) = 500 \\;\\; (s = 2.5), \\qquad L(100) = 4000 \\;\\; (s = 5)$$\n\n**2.** The composed scale factor for a doubling of the wind speed:\n\n$$2^{1.5} \\approx 2.83$$\n\nWorking stage by stage gives the same number. Surge rises by the square root factor, and the loss stage cubes it:\n\n$$\\left(2^{0.5}\\right)^{3} \\approx 1.414^{3} \\approx 2.83$$\n\n**3.** Inverting the composed law turns a loss budget into a wind speed:\n\n$$w = \\left(\\frac{L}{4}\\right)^{\\frac{2}{3}}, \\qquad L = 4000 \\;\\Rightarrow\\; w = 100$$\n\n**4.** The composed exponent exceeds $1$, so losses are convex in wind speed:\n\n$$4^{1.5} = 8 > 4$$\n\n**5.** The concave surge stage ($0.5$) is more than offset by the cubic loss stage, which is the modelling point of the chain.\n\n**Answer.** $L(w) = 4w^{1.5}$ | composed exponent $1.5$ | $L(100) = 4000$",
+    "expl_lens": [
+      2046,
+      502,
+      445,
+      388,
+      354
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-54",
+    "case_id": "MATH 8.54",
+    "title": "Market Impact of a Block Trade",
+    "difficulty": "4/5",
+    "sort_order": 54,
+    "context": "A broker models price impact as $I(v)=A v^{0.5}$ basis points, where $v>0$ is order size as a fraction of average daily volume. Increasing an order from $0.04$ ADV to $0.09$ ADV adds exactly $6$ basis points of impact. The scaled impact charge is $vI(v)$, while a notional fee is $F(v)=30v$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The impact law is $I(v)=60\\sqrt{v}$.",
+      "Increasing order size from $0.04$ to $0.09$ ADV multiplies impact by $1.5$.",
+      "The notional fee and scaled impact charge break even at $v=0.25$ ADV, with impact charge lower below that size.",
+      "At $v=0.16$ ADV, impact is $24$ basis points and the scaled impact charge is $3.84$.",
+      "The scaled impact charge is proportional to order size."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe six basis points is the increment between the two orders. Recover the scale in three short steps:\n\n$$\\sqrt{0.09}=0.3,\\qquad \\sqrt{0.04}=0.2$$\n\n$$A(0.3-0.2)=6$$\n\n$$0.1A=6\\quad\\Rightarrow\\quad A=60$$\n\n$$I(v)=60\\sqrt v$$\n\nThe endpoint impacts are $18$ and $12$ basis points, whose difference is exactly $6$. Assigning the reported increment to the larger order as a level would produce $A=20$ and fail that endpoint check. The calibrated impact law is $60\\sqrt v$, so the statement is True.",
+      "**B.** → True\n\nA size multiplier acts on impact through the exponent $0.5$, so the impact ratio is the square root of the size ratio.\n\n$$\\frac{0.09}{0.04}=2.25$$\n\n$$\\frac{I(0.09)}{I(0.04)} =\\left(\\frac{0.09}{0.04}\\right)^{0.5} =\\sqrt{2.25}=1.5$$\n\nCarrying the size ratio $2.25$ across unchanged would describe linear impact rather than square-root impact. The levels are $18$ and $12$ basis points and their ratio is $1.5$, so the statement is True.",
+      "**C.** → True\n\nThe context defines the charge as $vI(v)$, so the comparison runs between that product and the fee rather than between impact and the fee:\n\n$$vI(v)=60v^{\\frac{3}{2}},\\qquad F(v)=30v$$\n\nDividing out the common factor $v>0$ reduces the whole comparison to one square root:\n\n$$\\frac{vI(v)}{F(v)}=\\frac{60v^{\\frac{3}{2}}}{30v}=2\\sqrt v$$\n\n* $2\\sqrt v=1$ exactly at $v=0.25$, where both sides equal $7.5$.\n* $2\\sqrt v<1$ for $0<v<0.25$, so the impact charge is the smaller one.\n* $2\\sqrt v>1$ for $v>0.25$, so the notional fee becomes the cheaper one.\n\nAt $v=0.09$ the charge is $1.62$ against a fee of $2.7$, and at $v=0.64$ it is $30.72$ against $19.2$, which is the reversal the ratio predicts. Break-even sits at $0.25$ ADV with the impact charge lower below it, so the statement is True.",
+      "**D.** → True\n\nImpact and the scaled charge are two different quantities, the second being the first multiplied by order size.\n\n$$I(0.16)=60\\sqrt{0.16}=60(0.4)=24$$\n\n$$vI(v)=0.16(24)=3.84$$\n\nThat extra factor of $v$ is what separates a basis-point figure from a charge. Both the $24$ basis points and the $3.84$ charge match the claim, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1:** Use the impact difference:\n\n$$A(0.3-0.2)=6$$\n\n**Part 2:** Recover impact and charge laws:\n\n$$I(v)=60\\sqrt v, qquad vI(v)=60v^{\\frac{3}{2}}, qquad F(v)=30v$$\n\n**Part 3:** Evaluate scaling and break-even:\n\n$$\\sqrt{2.25}=1.5, quad 60v^{\\frac{3}{2}}=30v\\Rightarrow v=0.25, quad I(0.16)=24$$\n\nThis full reconstruction also supplies three safeguards: every substituted input stays in the stated domain, each numerical comparison uses the model's own units, and every percentage claim is checked through an exact output ratio before rounding. Those checks lead to the same truth value as the direct route above.\n\nA final boundary check strengthens the conclusion. Keep the original domain restriction in force, compare the unrounded model value with the exact threshold in the statement, and only then translate the result into words. Changing the order of those operations can hide a domain failure or turn a close inequality into the wrong truth value. Here the exact model, the scale comparison, and the stated units all point in the same direction, so the extended check agrees with the conclusion above.",
+      "**E.** → False\n\nMultiplying impact by order size changes the exponent:\n\n$$vI(v)=v\\left(60v^{\\frac{1}{2}}\\right)=60v^{\\frac{3}{2}}$$\n\nA proportional charge would carry exponent $1$ and would double whenever $v$ doubled. Here a direct counterexample gives\n\n$$\\frac{(2v)I(2v)}{vI(v)}=2^{\\frac{3}{2}}=2\\sqrt2\\approx2.828$$\n\nAt $v=0.04$ the charge is $0.48$, while at $v=0.08$ it is about $1.358$ rather than $0.96$. The visible factor $v$ does not erase the square root already sitting inside impact. The charge is a three-halves power rather than a proportional law, so the statement is False."
+    ],
+    "solution_overview": "Impact is $I(v)=Av^{\\frac{1}{2}}$, calibrated by the six-basis-point increase from $0.04$ to $0.09$ ADV. The scaled charge is $vI(v)$.\n\n**Part 1:** Use the impact difference:\n\n$$A(0.3-0.2)=6$$\n\n**Part 2:** Recover impact and charge laws:\n\n$$I(v)=60\\sqrt v, qquad vI(v)=60v^{\\frac{3}{2}}, qquad F(v)=30v$$\n\n**Part 3:** Evaluate scaling and break-even:\n\n$$\\sqrt{2.25}=1.5, quad 60v^{\\frac{3}{2}}=30v\\Rightarrow v=0.25, quad I(0.16)=24$$\n\n**Answer.** $A=60$ bp | break-even $v=0.25$ ADV | scaled impact charge has exponent $\\frac{3}{2}$",
+    "expl_lens": [
+      506,
+      449,
+      802,
+      1717,
+      590
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-55",
+    "case_id": "MATH 8.55",
+    "title": "Allometric Energy Use Across Livestock Weights",
+    "difficulty": "4/5",
+    "sort_order": 55,
+    "context": "Daily energy use follows $E(m)=A m^{\\frac{2}{3}}$ units for body mass $m>0$ kilograms. A $64$ kg animal uses exactly $70$ more energy units per day than a $27$ kg animal. A herd's total use is the sum of its animals' individual uses. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The energy law is $E(m)=10m^{\\frac{2}{3}}$.",
+      "Doubling body mass multiplies energy use by exactly $2^{\\frac{2}{3}}=\\sqrt[3]{4}$.",
+      "Eight $27$ kg animals use twice as much total energy as one $216$ kg animal.",
+      "Combining two equal animals into one animal of twice the mass leaves total energy use unchanged.",
+      "Energy use per kilogram is constant across body masses."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe $70$ units records a difference between two animals. Both masses are cubes, so the calibration stays exact:\n\n$$27^{\\frac{2}{3}}=9,\\qquad 64^{\\frac{2}{3}}=16$$\n\n$$E(64)-E(27)=A(16-9)=7A$$\n\n$$7A=70\\quad\\Rightarrow\\quad A=10$$\n\n$$E(m)=10m^{\\frac{2}{3}}$$\n\nThe reconstructed levels are $160$ and $90$, and their difference returns the observed $70$. Treating $70$ as the heavier animal's total would ignore the lighter animal's positive use. The recovered allometric law is exactly $10m^{\\frac{2}{3}}$, so the statement is True.",
+      "**B.** → True\n\nDoubling body mass acts through the exponent, so the coefficient and the starting mass cancel and only $2^{\\frac{2}{3}}$ survives.\n\n$$\\frac{E(2m)}{E(m)} =\\frac{10(2m)^{\\frac{2}{3}}}{10m^{\\frac{2}{3}}} =2^{\\frac{2}{3}}$$\n\n$$2^{\\frac{2}{3}}=(2^2)^{\\frac{1}{3}}=\\sqrt[3]{4}\\approx1.587$$\n\nReading $\\frac{2}{3}$ as a $66.7\\%$ increase would replace a power of two with an added proportion. Both exact forms in the claim describe the same multiplier, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1:** Translate the two-point calibration:\n\n$$A(64^{\\frac{2}{3}}-27^{\\frac{2}{3}})=A(16-9)=70$$\n\n**Part 2:** Recover the individual and per-kilogram laws:\n\n$$E(m)=10m^{\\frac{2}{3}}, qquad \\frac{E(m)}m=10m^{\\frac{-1}{3}}$$\n\n**Part 3:** Apply exact scaling and compose herd totals:\n\n$$\\frac{E(2m)}{E(m)}=2^{\\frac{2}{3}}=\\sqrt[3]{4}, quad 8E(27)=720, quad E(216)=360$$\n\nThis full reconstruction also supplies three safeguards: every substituted input stays in the stated domain, each numerical comparison uses the model's own units, and every percentage claim is checked through an exact output ratio before rounding. Those checks lead to the same truth value as the direct route above.",
+      "**C.** → True\n\nA herd total applies the law to each animal and adds only afterwards, so the eight small animals and the single large one have to be built separately:\n\n$$E(27)=10(27^{\\frac{2}{3}})=10(9)=90,\\qquad 8E(27)=720$$\n\n$$E(216)=10(216^{\\frac{2}{3}})=10(36)=360$$\n\n$$\\frac{8E(27)}{E(216)}=\\frac{720}{360}=2$$\n\nBoth arrangements carry the same total mass, since $8(27)=216$ kilograms, which is what makes this a clean test of the exponent:\n\n* eight bodies invoke the concave law eight times, at $90$ units each;\n* one body invokes it once, at the single shape factor $36$;\n* the split herd therefore needs twice the energy.\n\nPooling the mass before applying the law would have predicted equality instead. The herd uses twice the single animal's energy, so the statement is True.",
+      "**D.** → False\n\nTwo equal animals and one animal of doubled mass have uses\n\n$$E(m)+E(m)=2E(m),\\qquad E(2m)=2^{\\frac{2}{3}}E(m)\\approx1.587E(m)$$\n\nThe two totals cannot agree, because $2^{\\frac{2}{3}}<2$. A concrete counterexample at $m=27$ makes the gap visible:\n\n$$2E(27)=180,\\qquad E(54)=10(54^{\\frac{2}{3}})\\approx142.87$$\n\nCombining mass before applying a concave power removes one application of the law and lowers total use by about $37.13$ units in this example. The total therefore changes rather than staying fixed, so the statement is False.",
+      "**E.** → False\n\nEnergy use per kilogram is the allometric law divided by mass, which lowers the exponent to $\\frac{-1}{3}$.\n\n$$\\frac{E(m)}{m} =\\frac{10m^{\\frac{2}{3}}}{m} =10m^{\\frac{-1}{3}}$$\n\n$$\\frac{E(27)}{27}=\\frac{90}{27}=\\frac{10}{3}, \\qquad \\frac{E(64)}{64}=\\frac{160}{64}=2.5$$\n\nTotal use does rise with mass, but less than proportionally, which is exactly what makes the average fall. The two per-kilogram values differ, so the statement is False."
+    ],
+    "solution_overview": "Energy follows $E(m)=Am^{\\frac{2}{3}}$, calibrated by the $70$-unit difference between $64$ kg and $27$ kg animals.\n\n**Part 1:** Translate the two-point calibration:\n\n$$A(64^{\\frac{2}{3}}-27^{\\frac{2}{3}})=A(16-9)=70$$\n\n**Part 2:** Recover the individual and per-kilogram laws:\n\n$$E(m)=10m^{\\frac{2}{3}}, qquad \\frac{E(m)}m=10m^{\\frac{-1}{3}}$$\n\n**Part 3:** Apply exact scaling and compose herd totals:\n\n$$\\frac{E(2m)}{E(m)}=2^{\\frac{2}{3}}=\\sqrt[3]{4}, quad 8E(27)=720, quad E(216)=360$$\n\n**Answer.** $A=10$ | doubling factor $2^{\\frac{2}{3}}$ | eight $27$ kg animals use twice one $216$ kg animal",
+    "expl_lens": [
+      543,
+      1418,
+      783,
+      551,
+      456
+    ],
+    "has_extended": true
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "math-11-102",
+    "caseId": "MATH 11.102",
+    "missing_numbers": [
+      "29500"
+    ],
+    "original_context": [
+      "**3.** Total paid: $\\$597.24 \\times 48 \\approx \\$28,667.57$ (not $\\$29,500.00$)."
+    ],
+    "current_text": "A used-car dealership finances a customer's \\$24,000 vehicle purchase over 4 years, with equal payments due at the end of each month and interest charged at a nominal annual rate of 9%, compounding monthly.\r\n\r\n**Part 1: Setup.**\r\n\r\nThe amount financed is \\$24,000. The nominal annual rate is 9%, compounded monthly for four years:\r\n\r\n$$K = 24,000, \\qquad r_{\\mathrm{ann}} = 0.09$$\r\n\r\n$$m = 12, \\qquad t = 4$$\r\n\r\n**Part 2: Formula.**\r\n\r\nThe monthly rate and number of payments are\r\n\r\n$$r = \\frac{r_{\\mathrm{ann}}}{12}$$\r\n\r\n$$n = 12t$$\r\n\r\nThe equal-payment formula is\r\n\r\n$$a = \\frac{rK}{1-(1+r)^{-n}}$$\r\n\r\nTotal paid is the payment times the number of payments, and total interest is total paid less principal.\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Convert the annual terms to monthly terms:\r\n\r\n$$r = \\frac{0.09}{12}$$\r\n\r\n$$r = 0.0075$$\r\n\r\n$$n = 4 \\times 12$$\r\n\r\n$$n = 48$$\r\n\r\nThere are 48 monthly payments.\r\n\r\n**2.** Substitute the monthly terms:\r\n\r\n$$a = \\frac{0.0075 \\times 24,000}{1-(1.0075)^{-48}}$$\r\n\r\n$$= \\frac{180}{0.301329}$$\r\n\r\n$$a \\approx 597.24$$\r\n\r\nThe monthly payment is about \\$597.24.\r\n\r\n**3.** Across all 48 payments,\r\n\r\n$$597.24 \\times 48 \\approx 28,667.57$$\r\n\r\nThe total paid is about \\$28,667.57, not \\$29,500.00.\r\n\r\n**4.** Total interest is\r\n\r\n$$28,667.57 - 24,000.00 = 4,667.57$$\r\n\r\nThe financing costs about \\$4,667.57 in interest.\r\n\r\n**5.** For four equal annual instalments, use $r = 0.09$ and $n = 4$:\r\n\r\n$$a = \\frac{0.09 \\times 24,000}{1-(1.09)^{-4}}$$\r\n\r\n$$= \\frac{2,160}{0.291676}$$\r\n\r\n$$a \\approx 7,408.05$$\r\n\r\nThe annual payment is \\$7,408.05, far more than \\$2,388.96 rather than less."
+  },
+  {
+    "id": "math-11-104",
+    "caseId": "MATH 11.104",
+    "missing_numbers": [
+      "220000"
+    ],
+    "original_context": [
+      "**5.** Total of all $10$ due payments: $\\$22,946.14 \\times 10 \\approx \\$229,461.39$, not $\\$220,000.00$."
+    ],
+    "current_text": "A new franchisee agrees to pay \\$150,000 for the rights to open a location, structured as 10 equal annual payments, with the first payment due immediately and each following payment due at the beginning of each subsequent year. The agreed annual interest rate is 11%.\r\n\r\n**Part 1: Setup.**\r\n\r\nThe present value owed is \\$150,000. There are ten annual payments at 11%, with the first payment due immediately:\r\n\r\n$$K = 150,000, \\qquad r = 0.11, \\qquad n = 10$$\r\n\r\n**Part 2: Formula.**\r\n\r\nFor the annuity due, one payment is immediate and the remaining nine form an ordinary annuity:\r\n\r\n$$K = a + \\frac{a}{r}\\left[1-(1+r)^{-(n-1)}\\right]$$\r\n\r\nFor an ordinary-annuity comparison,\r\n\r\n$$a_{\\mathrm{ordinary}} = \\frac{rK}{1-(1+r)^{-n}}$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Factor the due-payment amount:\r\n\r\n$$\\frac{K}{a} = 1 + \\frac{1}{0.11}\\left[1-(1.11)^{-9}\\right]$$\r\n\r\n$$= 1 + 9.090909(1-0.391110)$$\r\n\r\n$$= 1 + 5.537048$$\r\n\r\n$$\\frac{K}{a} \\approx 6.537048$$\r\n\r\n**2.** Divide the price by the combined factor:\r\n\r\n$$a = \\frac{150,000}{6.537048}$$\r\n\r\n$$a \\approx 22,946.14$$\r\n\r\nEach due payment is about \\$22,946.14.\r\n\r\n**3.** If all ten payments were at year-end,\r\n\r\n$$a_{\\mathrm{ordinary}} = \\frac{0.11 \\times 150,000}{1-(1.11)^{-10}}$$\r\n\r\n$$= \\frac{16,500}{0.647848}$$\r\n\r\n$$a_{\\mathrm{ordinary}} \\approx 25,470.21$$\r\n\r\nThe ordinary payment is higher than \\$22,946.14, not lower.\r\n\r\n**4.** The payment difference is\r\n\r\n$$25,470.21 - 22,946.14 \\approx 2,524.08$$\r\n\r\nThe difference is about \\$2,524.08.\r\n\r\n**5.** The ten due payments total\r\n\r\n$$22,946.14 \\times 10 \\approx 229,461.39$$\r\n\r\nThe total is about \\$229,461.39, not \\$220,000.00."
+  }
+]

@@ -1,0 +1,101 @@
+tasks=108
+=== leading dashes ===
+count=41
+math-1-3: - $x
+math-1-3: - $S
+math-1-16: - $6$ is on the list → $6
+math-1-16: - The singleton object $
+math-1-16: - $
+math-1-16: - $
+math-1-16: - Total subsets: $2^6=64$; drop $A$ itself to get $63$ proper subsets."
+math-1-22: - $
+math-1-22: - $
+math-1-58: - **M** is on sale, so $
+math-1-58: - **N** is out of stock, so $
+math-1-58: - **K** is neither on sale nor out of stock, so both halves hold — **dis
+math-1-61: - $
+math-1-61: - $S 
+math-1-61: - $
+math-1-83: - Gate 1: is $2 
+math-1-83: - Gate 2: is $Y = 2$? Yes. Is R1 among the yes-votes? Yes. **Gate 2 open
+math-1-88: - $s 
+math-1-88: - $60 
+math-1-88: - $s < 60$: no B in either regime.
+math-1-91: - the **inverse**, 
+math-1-91: - the **converse**, 
+math-1-94: - **Converse**, 
+math-1-94: - **Inverse**, 
+math-1-94: - **Contrapositive**, 
+math-1-97: - if $n$ is **not** a perfect square, every divisor has a different part
+math-1-97: - if $n = m^2$, the divisor $m$ stands alone while all the others couple
+math-1-103: - {Ben, Carla}
+math-1-103: - {Ben, Carla, Ella}
+math-1-103: - {Carla, Ella}
+math-1-103: - {Dan, Ella}
+math-1-103: - {Ella}
+math-1-106: - Caleb out: {Daisy}, {Ethan}, {Daisy, Ethan}
+math-1-106: - Caleb in, so Ethan in too: {Caleb, Ethan}, {Caleb, Daisy, Ethan}
+math-1-107: - **Rule (1):** Petra in, so Quinn out.
+math-1-107: - **Rule (3):** Quinn out, so Theo in.
+math-1-107: - **Rule (5):** Theo in, so Ravi out.
+math-1-107: - **Rule (2):** Ravi is out, so Sana must carry that rule — Sana in.
+math-1-107: - **Rule (6):** Sana needs Petra, who is already in. ✓
+math-1-108: - Wendy in, Xavier out: only Wendy, Yara and Zane are available — **at m
+math-1-108: - Xavier in, Wendy out: rule (4) removes Yara, rule (5) then requires Za
+
+=== symbol issues ===
+count=50
+math-1-17.overview: english_in_display $x^2-5x+6=(x-2)(x-3)=0\implies x=2\text{ or }x=3.$
+math-1-27.overview: name_in_math_set ${\text{Reps}\times\text{Accounts}}
+math-1-27.overview: name_in_math_set ${(r,a)\in\text{Reps}\times\text{Accounts}}
+math-1-27.overview: name_in_math_set ${r\in\text{Reps}}
+math-1-27.overview: name_in_math_set ${a\in\text{Accounts}}
+math-1-27.expl1: name_in_math_set ${(\text{Maria},\text{Account 3})}
+math-1-27.expl1: name_in_math_set ${(\text{Account 3},\text{Maria})}
+math-1-28.overview: english_in_display $A=(-4,4)\quad\text{(both ends open)}.$
+math-1-45.overview: english_in_display $\neg\big(\forall\ \text{prime } p>2,\ p \text{ is $
+math-1-46.overview: name_in_math_set ${\text{enrolled in Advanced}\ \Rightarrow}
+math-1-57.overview: name_in_math_set ${\text{Pass} \Leftrightarrow A \land F}
+math-1-62.overview: name_in_math_set ${\text{Discount} \Leftrightarrow A \land }
+math-1-62.overview: english_in_inline $
+
+The bracket is an **or**, so $
+math-1-62.overview: english_in_inline $ and $
+math-1-62.overview: english_in_inline $ are interchangeable and either one alone fills it$
+math-1-62.overview: broken_inline …'$25,000 | true | false | false | false | **no** |\n'
+math-1-62.expl0: broken_inline …'$18,000 income fills the bracket on its own. **P g'
+math-1-62.expl1: broken_inline …'$50,000 really does fail the income test — but the'
+math-1-62.expl2: broken_inline …'$20,000 disqualifies nobody by itself.**'
+math-1-62.expl3: english_in_inline $25,000 of income both bracket options are false, s$
+math-1-62.expl3: broken_inline …'$ fails. **This rider is refused, so the scenario '
+math-1-62.expl3: bare\lor
+math-1-67.overview: english_in_display $F \Rightarrow P \;\equiv\; \neg P \Rightarrow \neg$
+math-1-67.overview: english_in_display $P \Rightarrow F \;\equiv\; \neg F \Rightarrow \neg$
+math-1-68.overview: name_in_math_set ${\text{Eligible} \Leftrightarrow G \land }
+math-1-69.overview: name_in_math_set ${\text{Payout} \Leftrightarrow (M \lor A)}
+math-1-75.overview: english_in_inline $ = “the company files an annual audit”. The regula$
+math-1-75.overview: english_in_inline $
+
+— *some* company with revenue above \$
+math-1-75.overview: english_in_inline $1 million, then no audit is filed” is a rival regu$
+math-1-75.overview: english_in_inline $2 million with no audit, has $
+math-1-75.overview: english_in_inline $ true and $
+math-1-75.overview: english_in_inline $ false — precisely the shape the negation calls fo$
+math-1-75.overview: broken_inline …'$ is the only rewriting that inherits the regulati'
+math-1-75.overview: bare\neg
+math-1-75.overview: bare\neg
+math-1-75.overview: bare\Rightarrow
+math-1-75.overview: bare\Rightarrow
+math-1-75.expl1: broken_inline …'$300,000 company may audit voluntarily. **Not guar'
+math-1-75.expl3: broken_inline …'$1 million” is the contrapositive, which always tr'
+math-1-76.overview: name_in_math_set ${\text{Licensed} \Leftrightarrow H \land }
+math-1-77.overview: name_in_math_set ${\text{Approved} \Leftrightarrow (S \lor }
+math-1-82.overview: english_in_display $S_1:\ \exists s\,\forall e\; G(s,e) \qquad\text{an$
+math-1-84.overview: english_in_display $\text{warranty survives commercial use}\iff W \tex$
+math-1-86.overview: name_in_math_set ${\text{P1: } \forall x\,(E(x) \Rightarrow}
+math-1-92.overview: name_in_math_set ${\underbrace{P \Rightarrow Q}_{\text{orig}
+math-1-93.overview: name_in_math_set ${\neg\,\forall x\,\mathrm{Pass}(x) \equiv}
+math-1-102.overview: name_in_math_set ${\text{(1) Noah} \Rightarrow \text{Maria}}
+math-1-102.overview: english_in_display $\text{(1) Noah} \Rightarrow \text{Maria}, \quad \t$
+math-1-103.overview: name_in_math_set ${\text{Ben} \Rightarrow \text{Carla} \Rig}
+math-1-105.overview: name_in_math_set ${\{\text{Hugo}\}, \quad \{\text{Hugo}, \t}

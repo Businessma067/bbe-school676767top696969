@@ -1,0 +1,365 @@
+===== TASK 37 (1/5) A Braking-Energy Index Recovered From a Speed Change =====
+CONTEXT: A fleet safety report scores braking energy by the index $E(v)=A v^{2}$, where $v>0$ is speed in kilometres per hour. The report does not give $A$ directly: it states only that raising the test speed from $40$ to $60$ km/h raised the index by exactly $100$ points. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The coefficient of the index is $0.05$.
+STMT 1 [true]: At $60$ km/h the index reads $180$.
+STMT 2 [true]: Raising speed from $72$ to $90$ km/h raises the index by exactly $56.25\%$.
+STMT 3 [true]: The index reaches $500$ at a speed of $100$ km/h.
+STMT 4 [true]: An index reading of $320$ corresponds to a speed of $80$ km/h.
+--- EXPL idx=0 len=524 displays=3 ---
+**A.** → True
+
+The report records a change in the index between two test speeds, so the coefficient multiplies the difference of the two shape factors.
+
+$$40^{2} = 1600, \qquad 60^{2} = 3600$$
+
+Translate the recorded rise:
+
+$$A(3600 - 1600) = 100 \quad \Rightarrow \quad 2000A = 100 \quad \Rightarrow \quad A = 0.05$$
+
+$$E(v) = 0.05v^{2}$$
+
+Dividing $100$ by either speed squared alone would treat a difference as a level and return a coefficient several times too small. The coefficient is $0.05$, so the statement is True.
+--- EXPL idx=1 len=423 displays=2 ---
+**B.** → True
+
+A level at the upper test speed is the calibrated law evaluated there, with the shape factor already in hand.
+
+$$E(60) = 0.05(3600) = 180$$
+
+Evaluate at the lower speed and difference them:
+
+$$E(40) = 0.05(1600) = 80, \qquad 180 - 80 = 100 \;\checkmark$$
+
+Reproducing the recorded $100$-point rise is the test any candidate coefficient must pass. The index reads $180$ at $60$ km/h, so the statement is True.
+--- EXPL idx=2 len=389 displays=2 ---
+**C.** → True
+
+A percentage change under a square law comes from squaring the speed ratio, here $90/72=1.25$, and subtracting one.
+
+$$\frac{E(90)}{E(72)}=\left(\frac{90}{72}\right)^2=1.25^2=1.5625$$
+
+$$(1.5625-1)\times100\%=56.25\%$$
+
+The exponent scales the ratio multiplicatively rather than adding a percentage of its own. The index rises by exactly $56.25\%$, so the statement is True.
+--- EXPL idx=3 len=479 displays=2 ---
+**D.** → True
+
+Motorway speed is another level of the calibrated index, and the same equation read backwards recovers the speed from a reading.
+
+$$E(100) = 0.05(100)^{2} = 0.05(10000) = 500$$
+
+Confirm by inversion:
+
+$$0.05v^{2} = 500 \;\Rightarrow\; v^{2} = 10000 \;\Rightarrow\; v = 100$$
+
+Speed enters squared, so $2.5$ times the lower test speed produces $6.25$ times the braking energy rather than $2.5$ times. The index reaches $500$ at $100$ km/h, so the statement is True.
+--- EXPL idx=4 len=385 displays=2 ---
+**E.** → True
+
+Converting an index reading back into a speed inverts the calibrated square law, dividing by the coefficient and then taking a square root.
+
+$$0.05v^2=320 \quad \Rightarrow \quad v^2=6400$$
+
+$$v=\sqrt{6400}=80$$
+
+Only the positive root is admissible, since speed is positive throughout this model. The reading of $320$ corresponds to $80$ km/h, so the statement is True.
+
+===== TASK 38 (2/5) Geometrically Similar Silos: Steel Against Capacity =====
+CONTEXT: A supplier builds geometrically similar storage silos. The steel skin scales with the square of the height, $S(h)=a h^{2}$ square metres, while capacity scales with the cube, $V(h)=k h^{3}$ cubic metres. A six-metre silo uses $108$ square metres of steel and holds $72$ cubic metres. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: A silo with capacity $192$ cubic metres needs about $208$ square metres of steel.
+STMT 1 [true]: Steel use first exceeds $200$ square metres once height exceeds about $8.16$ metres.
+STMT 2 [true]: Increasing silo height by $50\%$ raises steel use by $125\%$.
+STMT 3 [true]: Steel per cubic metre of capacity falls as the silo gets taller.
+STMT 4 [false]: Doubling the height doubles the steel requirement.
+--- EXPL idx=0 len=469 displays=2 ---
+**A.** → True
+
+Steel and capacity are separate laws sharing one variable, so a capacity target has to be inverted into a height before the steel law can be applied.
+
+$$\frac{h^3}{3}=192 \quad \Rightarrow \quad h=\sqrt[3]{576}\approx8.32$$
+
+$$S(h)=3h^2\approx3(8.32)^2\approx207.7$$
+
+Going straight from capacity to steel by proportion would skip the change of exponent from $3$ to $2$. The target silo needs about $208$ square metres of steel, so the statement is True.
+--- EXPL idx=1 len=416 displays=2 ---
+**B.** → True
+
+A steel threshold is a condition on the surface law, and the inequality survives the square root because height is positive.
+
+$$3h^2>200 \quad \Rightarrow \quad h^2>\frac{200}{3}$$
+
+$$h>\sqrt{\frac{200}{3}}\approx8.165$$
+
+A positive exponent preserves the direction of the inequality rather than reversing it. Steel use exceeds $200$ square metres beyond about $8.16$ metres, so the statement is True.
+--- EXPL idx=2 len=354 displays=1 ---
+**C.** → True
+
+A fifty percent height increase is a multiplier of $1.5$ acting through the surface exponent of $2$.
+
+$$\frac{S(1.5h)}{S(h)}=1.5^2=2.25, \qquad (2.25-1)\times100\%=125\%$$
+
+The percentage rise is the squared multiplier minus one, not the height increase carried over unchanged. Steel use rises by exactly $125\%$, so the statement is True.
+--- EXPL idx=3 len=554 displays=2 ---
+**D.** → True
+
+Steel per cubic metre of capacity is the ratio of the two calibrated laws, whose exponents differ by exactly one.
+
+$$\frac{S(h)}{V(h)} = \frac{3h^{2}}{h^{3}/3} = \frac{9h^{2}}{h^{3}} = \frac{9}{h}$$
+
+Evaluate at three heights:
+
+$$\frac{9}{6} = 1.5, \qquad \frac{9}{9} = 1, \qquad \frac{9}{12} = 0.75$$
+
+The result depends only on the exponents $2$ and $3$, not on the particular coefficients, which is why large tanks are always cheaper per unit stored. Steel per cubic metre halves between six and twelve metres, so the statement is True.
+--- EXPL idx=4 len=402 displays=2 ---
+**E.** → False
+
+The steel law has exponent $2$, so a height multiplier enters squared.
+
+$$\frac{S(2h)}{S(h)} = 2^{2} = 4$$
+
+Check with concrete silos:
+
+$$S(6) = 108, \qquad S(12) = 3(144) = 432, \qquad \frac{432}{108} = 4$$
+
+Doubling would require exponent $1$, which no surface law has, and would also break the square-cube comparison of the previous part. Steel quadruples, so the statement is False.
+
+===== TASK 39 (2/5) Inspection Hours Across Growing Shipment Volumes =====
+CONTEXT: Customs inspection time follows $T(n)=A n^{0.5}$ hours for a consignment of $n>0$ shipments. Moving from a $25$-shipment consignment to a $225$-shipment consignment added exactly $60$ inspection hours. A staffing plan can supply at most $90$ inspection hours. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The inspection law is $T(n)=6\sqrt{n}$.
+STMT 1 [true]: The $90$-hour staffing ceiling can cover at most $225$ shipments.
+STMT 2 [true]: Multiplying a consignment size by $2.25$ multiplies total inspection time by $1.5$.
+STMT 3 [true]: At $144$ shipments, time per shipment is $0.5$ hour.
+STMT 4 [false]: Total inspection time is proportional to the number of shipments.
+--- EXPL idx=0 len=438 displays=2 ---
+**A.** → True
+
+The added $60$ hours is the difference between two inspection times, so both square-root factors enter the calibration.
+
+$$T(225)-T(25)=A(\sqrt{225}-\sqrt{25})=60$$
+
+$$A(15-5)=60 \quad \Rightarrow \quad A=6, \qquad T(n)=6\sqrt n$$
+
+Attaching the $60$ hours to the larger consignment alone would ignore the time already required at $25$ shipments. The difference calibration gives $T(n)=6\sqrt{n}$, so the statement is True.
+--- EXPL idx=1 len=446 displays=2 ---
+**B.** → True
+
+An hours ceiling becomes a shipment ceiling by inverting an increasing law, so the boundary is where the available hours are exactly used.
+
+$$6\sqrt n\le90 \quad \Rightarrow \quad \sqrt n\le15$$
+
+$$n\le15^2=225, \qquad T(225)=6(15)=90$$
+
+The intermediate $15$ is $\sqrt{n}$ rather than $n$, so the squaring step cannot be skipped. The ceiling covers at most $225$ shipments and the boundary is attainable, so the statement is True.
+--- EXPL idx=2 len=448 displays=2 ---
+**C.** → True
+
+For a square-root law a consignment multiplier $k$ acts on total time as $\sqrt{k}$, and both the coefficient and the starting size cancel.
+
+$$\frac{T(2.25n)}{T(n)} =\frac{6(2.25n)^{0.5}}{6n^{0.5}} =(2.25)^{0.5}$$
+
+$$(2.25)^{0.5}=\sqrt{\frac94}=\frac32=1.5$$
+
+Using $2.25$ itself as the time multiplier would impose exponent $1$ in place of the stated $0.5$. The inspection-time multiplier is exactly $1.5$, so the statement is True.
+--- EXPL idx=3 len=444 displays=1 ---
+**D.** → True
+
+Time per shipment is total time divided by the shipment count, which lowers the exponent to $-0.5$.
+
+$$\frac{T(n)}{n}=\frac{6n^{0.5}}{n}=6n^{-0.5}, \qquad \frac{T(144)}{144} =\frac{6}{\sqrt{144}} =\frac{6}{12}=0.5$$
+
+The total of $72$ hours is a different quantity from the average, and the square-root factor has to be retained when dividing. Time per shipment is exactly $0.5$ hour at $144$ shipments, so the statement is True.
+--- EXPL idx=4 len=454 displays=2 ---
+**E.** → False
+
+Proportionality requires exponent $1$ and therefore a constant time per shipment, which is stronger than the two quantities merely rising together.
+
+$$\frac{T(kn)}{T(n)}=k^{0.5}\ne k \quad \text{for } k\ne1$$
+
+$$\frac{T(225)}{225}=\frac{90}{225}=0.4, \qquad \frac{T(25)}{25}=\frac{30}{25}=1.2$$
+
+Total time and shipment count do move together, but not in a constant ratio. The per-shipment rate is not constant, so the statement is False.
+
+===== TASK 40 (1/5) Illuminance Down the Length of a Gallery =====
+CONTEXT: Illuminance from a gallery spotlight follows the inverse-square law $I(d)=A d^{-2}$ lux, where $d>0$ is the distance in metres. A meter reading two metres from the lamp records $300$ lux. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: At four metres the illuminance is $75$ lux.
+STMT 1 [true]: Doubling the distance cuts the illuminance to a quarter.
+STMT 2 [true]: Illuminance is one ninth of its two-metre reading at a distance of $6$ metres.
+STMT 3 [true]: Halving the distance quadruples the illuminance.
+STMT 4 [true]: Illuminance falls as the distance from the lamp grows.
+--- EXPL idx=0 len=514 displays=3 ---
+**A.** → True
+
+The inverse-square form fixes the exponent at $-2$, so the meter reading at two metres is all that is needed to pin the coefficient.
+
+$$A(2)^{-2} = 300 \quad \Rightarrow \quad \frac{A}{4} = 300 \quad \Rightarrow \quad A = 1200$$
+
+$$I(d) = \frac{1200}{d^{2}}$$
+
+Evaluate at four metres:
+
+$$I(4) = \frac{1200}{16} = 75$$
+
+A negative exponent divides by the shape factor rather than multiplying by it, which is why the reading falls with distance. The illuminance is $75$ lux, so the statement is True.
+--- EXPL idx=1 len=470 displays=2 ---
+**B.** → True
+
+A scale factor depends only on the exponent, so doubling the distance acts through $2^{-2}$ wherever along the gallery it happens.
+
+$$\frac{I(2d)}{I(d)} = \frac{A(2d)^{-2}}{Ad^{-2}} = 2^{-2} = \frac{1}{4}$$
+
+Check two separate doublings:
+
+$$I(2) = 300, \; I(4) = 75; \qquad I(5) = 48, \; I(10) = 12$$
+
+The first pair is one instance of the rule and the second shows it is not tied to the metered distance. Both fall to a quarter, so the statement is True.
+--- EXPL idx=2 len=509 displays=2 ---
+**C.** → True
+
+A reading expressed as a fraction of the two-metre value is a ratio, so the coefficient cancels and only the distance multiplier matters.
+
+$$\frac{I(d)}{I(2)}=\left(\frac{d}{2}\right)^{-2}=\frac{1}{9}$$
+
+$$\left(\frac{d}{2}\right)^2=9 \quad \Rightarrow \quad d=6$$
+
+The negative exponent inverts the ratio, so a ninth of the light corresponds to three times the distance rather than a ninth of it. At six metres the reading is exactly one ninth of the two-metre value, so the statement is True.
+--- EXPL idx=3 len=454 displays=2 ---
+**D.** → True
+
+Moving closer is the same rule with a multiplier below one, and a negative exponent inverts before squaring.
+
+$$\frac{I(d/2)}{I(d)} = \left(\frac{1}{2}\right)^{-2} = 4$$
+
+Check on the metered distance:
+
+$$I(2) = 300, \qquad I(1) = \frac{1200}{1} = 1200$$
+
+Reading the multiplier as $1/4$ would apply the rule in the wrong direction, whereas approaching gains exactly what retreating loses. Illuminance quadruples, so the statement is True.
+--- EXPL idx=4 len=496 displays=2 ---
+**E.** → True
+
+The direction of a power law is settled by the sign of its exponent together with the sign of its coefficient.
+
+$$I(d) = 1200\,d^{-2}, \qquad A > 0, \quad r = -2 < 0$$
+
+Trace the readings down the gallery:
+
+$$I(1) = 1200, \quad I(2) = 300, \quad I(4) = 75, \quad I(10) = 12$$
+
+The decline is also decelerating, so most of the light is lost in the first few metres rather than spread evenly along the gallery. Illuminance falls monotonically with distance, so the statement is True.
+
+===== TASK 41 (3/5) Audit Cost With Economies of Scale =====
+CONTEXT: An audit practice prices engagements by $C(n)=A n^{0.75}$, where $n>0$ is the number of accounts tested. The bill rises by exactly $1900$ when engagement size rises from $16$ to $81$ accounts. A client has a $2700$ cap, while a rival quotes $R(n)=50n$. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The pricing law is $C(n)=100n^{0.75}$.
+STMT 1 [true]: The $2700$ cap covers at most $81$ accounts under the practice's schedule.
+STMT 2 [true]: The two firms tie at $16$ accounts, and the practice is cheaper than the rival for every $n>16$.
+STMT 3 [true]: A bill of $12500$ corresponds to an engagement of $625$ accounts.
+STMT 4 [false]: Doubling the number of accounts raises the practice's bill by exactly $75\%$.
+--- EXPL idx=0 len=423 displays=2 ---
+**A.** → True
+
+Since $0.75=3/4$ and both engagement sizes are fourth powers, the shape factors resolve exactly, and the recorded rise is a difference of two bills.
+
+$$C(81)-C(16)=A(27-8)=1900$$
+
+$$19A=1900 \quad \Rightarrow \quad A=100, \qquad C(n)=100n^{0.75}$$
+
+Setting $A \cdot 81^{0.75}=1900$ would treat a jump between two bills as a single bill. The recovered schedule is $C(n)=100n^{0.75}$, so the statement is True.
+--- EXPL idx=1 len=460 displays=2 ---
+**B.** → True
+
+A spending cap becomes an account ceiling because the schedule is increasing, and inverting it means raising both sides to the power $4/3$.
+
+$$100n^{3/4}\le2700 \quad \Rightarrow \quad n^{3/4}\le27$$
+
+$$n\le27^{4/3}=(\sqrt[3]{27})^4=3^4=81$$
+
+Stopping at $27$ would report the value of $n^{3/4}$ rather than the account count itself. The endpoint costs exactly $2700$ and the cap therefore covers at most $81$ accounts, so the statement is True.
+--- EXPL idx=2 len=534 displays=2 ---
+**C.** → True
+
+A tie with a linear rival is an equation between exponents $3/4$ and $1$, and dividing by $50n^{3/4}$ on the positive domain leaves a power of $n^{1/4}$.
+
+$$100n^{3/4}=50n \quad \Rightarrow \quad 2=n^{1/4} \quad \Rightarrow \quad n=16$$
+
+$$\frac{C(n)}{R(n)} =\frac{100n^{3/4}}{50n} =2n^{-1/4}<1 \quad \text{when } n>16$$
+
+Comparing the coefficients $100$ and $50$ alone would ignore that the rival carries the larger exponent. The firms tie at $16$ accounts and the practice is cheaper beyond, so the statement is True.
+--- EXPL idx=3 len=420 displays=2 ---
+**D.** → True
+
+Inverting the schedule for a target bill uses the reciprocal exponent $4/3$, and the intermediate value is a perfect cube.
+
+$$100n^{3/4}=12500 \quad \Rightarrow \quad n^{3/4}=125=5^3$$
+
+$$n=125^{4/3}=(5^3)^{4/3}=5^4=625$$
+
+Applying $3/4$ again in place of its reciprocal would run the schedule forwards rather than backwards. A direct check gives $100(625^{3/4})=100(125)=12500$, so the statement is True.
+--- EXPL idx=4 len=430 displays=2 ---
+**E.** → False
+
+Doubling the accounts acts through the exponent as $2^{3/4}$, a multiplicative scaling rather than an added percentage.
+
+$$\frac{C(2n)}{C(n)}=2^{3/4}\approx1.6818$$
+
+$$\frac{C(2n)-C(n)}{C(n)} =2^{3/4}-1 \approx0.6818=68.18\%$$
+
+Reading the exponent $0.75$ as the percentage response confuses a power with a proportion. Doubling raises the bill by about $68\%$ rather than exactly $75\%$, so the statement is False.
+
+===== TASK 42 (3/5) Airborne Particle Concentration Downwind =====
+CONTEXT: Downwind particle concentration follows $c(x)=A x^{-1.5}$ micrograms per cubic metre, where $x>0$ is distance from the stack in metres. A monitor at $4$ metres reads exactly $43.75$ more than a monitor at $16$ metres. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The concentration law is $c(x)=400x^{-1.5}$.
+STMT 1 [true]: Concentration is at most $6.25$ precisely when the monitor is at least $16$ metres from the stack.
+STMT 2 [true]: Halving the distance multiplies concentration by exactly $2^{1.5}=2\sqrt{2}$.
+STMT 3 [true]: At $100$ metres, concentration is $0.4$ microgram per cubic metre.
+STMT 4 [false]: Doubling the distance cuts concentration by exactly $50\%$.
+--- EXPL idx=0 len=482 displays=2 ---
+**A.** → True
+
+The monitors record a gap between two concentrations, so the coefficient multiplies the difference of two shape factors with exponent $-3/2$.
+
+$$c(4)-c(16) =A\left(4^{-3/2}-16^{-3/2}\right) =A\left(\frac18-\frac1{64}\right)$$
+
+$$A\frac7{64}=43.75=\frac{175}{4} \quad \Rightarrow \quad A=400$$
+
+Treating $43.75$ as either monitor's own reading would calibrate the law to a level it never recorded. The concentration law is $c(x)=400x^{-1.5}$, so the statement is True.
+--- EXPL idx=1 len=535 displays=2 ---
+**B.** → True
+
+Because the exponent is negative and the coefficient positive, concentration falls with distance, so a boundary distance separates the two sides of the ceiling.
+
+$$400x^{-3/2}=6.25 \quad \Rightarrow \quad x^{3/2}=\frac{400}{6.25}=64$$
+
+$$x=64^{2/3}=(\sqrt[3]{64})^2=4^2=16, \qquad c(x)\le6.25 \Longleftrightarrow x\ge16$$
+
+A decreasing function flips the direction of the inequality when it is carried from concentrations over to distances. Both the threshold and the direction match the claim, so the statement is True.
+--- EXPL idx=2 len=455 displays=2 ---
+**C.** → True
+
+Halving the distance is a multiplier of $1/2$ raised to the exponent $-1.5$, which inverts it and then applies the three-halves power.
+
+$$\frac{c(x/2)}{c(x)} =\left(\frac12\right)^{-1.5} =2^{1.5}$$
+
+$$2^{1.5}=2^{3/2}=\sqrt{2^3}=2\sqrt2\approx2.828$$
+
+A mere doubling would correspond to exponent $-1$, one half step away from the law in force here. Halving distance multiplies concentration by exactly $2\sqrt{2}$, so the statement is True.
+--- EXPL idx=3 len=453 displays=2 ---
+**D.** → True
+
+A level at $100$ metres needs the shape factor $100^{1.5}$, which resolves by taking the square root first and then cubing.
+
+$$100^{1.5}=100^{3/2}=(\sqrt{100})^3=10^3=1000$$
+
+$$c(100)=400(100)^{-1.5} =\frac{400}{1000}=0.4$$
+
+The exponent $1.5$ is a power rather than a multiple, so it gives $1000$ and not $150$, and the negative sign puts it in the denominator. Concentration is $0.4$ microgram per cubic metre, so the statement is True.
+--- EXPL idx=4 len=427 displays=2 ---
+**E.** → False
+
+The effect of doubling the distance is the surviving fraction $2^{-1.5}$, and the percentage cut is one minus that fraction.
+
+$$\frac{c(2x)}{c(x)} =2^{-1.5} =\frac{1}{2\sqrt2} \approx0.3536$$
+
+$$1-0.3536=0.6464\approx64.6\%$$
+
+An exact halving would require exponent $-1$, and the surviving $35.4\%$ is not itself the reduction. Doubling distance cuts concentration by about $64.6\%$, so the statement is False.

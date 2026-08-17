@@ -1,0 +1,564 @@
+@@@106A
+Option B pays at the beginning of each year, so the first payment is not discounted and the remaining six form an ordinary annuity:
+
+$$PV = a + \frac{a}{r}\bigl[1 - (1+r)^{-(n-1)}\bigr]$$
+
+Substituting $a = \$100,000$, $n = 7$ payments and $r = 10\% = 0.10$:
+
+$$(1.10)^{-6} \approx 0.5644739$$
+
+$$1 - 0.5644739 = 0.4355261$$
+
+$$\frac{100,000}{0.10} = 1,000,000$$
+
+$$1,000,000 \times 0.4355261 \approx \$435,526.07$$
+
+$$PV_B \approx 100,000 + 435,526.07$$
+
+$$PV_B \approx \$535,526.07$$
+
+The claim gives about \$535,526.07, and the calculation returns \$535,526.07, so the statement is true.
+@@@106B
+Cheaper means the smaller present value, so Option B's instalments must be valued today and set against the \$500,000 cash price.
+
+Option B is an annuity due of seven payments:
+
+$$PV_B = 100,000 + \frac{100,000}{0.10}\bigl[1 - (1.10)^{-6}\bigr]$$
+
+$$1 - 0.5644739 = 0.4355261$$
+
+$$1,000,000 \times 0.4355261 \approx \$435,526.07$$
+
+$$PV_B \approx 100,000 + 435,526.07 \approx \$535,526.07$$
+
+Option A costs \$500,000 today with nothing to discount. Comparing:
+
+$$535,526.07 - 500,000.00 = \$35,526.07$$
+
+Spreading the payments costs \$35,526.07 more in present-value terms at a 10% rate, so paying cash is cheaper and the statement is true.
+@@@106C
+The schedule is unchanged, so the same annuity-due formula applies with a new discount rate:
+
+$$PV_B = a + \frac{a}{r}\bigl[1 - (1+r)^{-(n-1)}\bigr]$$
+
+Substituting $a = \$100,000$, six discounted payments and $r = 14\% = 0.14$:
+
+$$(1.14)^{-6} \approx 0.4555865$$
+
+$$1 - 0.4555865 = 0.5444135$$
+
+$$\frac{100,000}{0.14} \approx 714,285.71$$
+
+$$714,285.71 \times 0.5444135 \approx \$388,866.75$$
+
+$$PV_B \approx 100,000 + 388,866.75$$
+
+$$PV_B \approx \$488,866.75$$
+
+The claim states about \$495,000.00:
+
+$$495,000.00 - 488,866.75 = \$6,133.25$$
+
+The true present value is about \$488,866.75, more than \$6,000 below the stated figure, so the statement is false.
+@@@106D
+At a higher discount rate the future instalments shrink in today's terms, while the cash price cannot shrink at all. Recompute Option B at 14%:
+
+$$PV_B = 100,000 + \frac{100,000}{0.14}\bigl[1 - (1.14)^{-6}\bigr]$$
+
+$$(1.14)^{-6} \approx 0.4555865$$
+
+$$1 - 0.4555865 = 0.5444135$$
+
+$$714,285.71 \times 0.5444135 \approx \$388,866.75$$
+
+$$PV_B \approx 100,000 + 388,866.75 \approx \$488,866.75$$
+
+Option A still costs \$500,000 today. Comparing:
+
+$$500,000.00 - 488,866.75 = \$11,133.25$$
+
+At 14% the instalment plan costs \$11,133.25 less in present-value terms, so Option B is now the cheaper choice and the statement is true.
+@@@106E
+Which option is cheaper depends on the discount rate, because only Option B has payments in the future for a rate to act on. Valuing Option B at two different rates shows the ranking change.
+
+At 10%:
+
+$$PV_B = 100,000 + \frac{100,000}{0.10}\bigl[1 - (1.10)^{-6}\bigr] \approx 100,000 + 435,526.07 \approx \$535,526.07$$
+
+$$535,526.07 - 500,000.00 = \$35,526.07 \text{ more than cash}$$
+
+At 14%:
+
+$$PV_B = 100,000 + \frac{100,000}{0.14}\bigl[1 - (1.14)^{-6}\bigr] \approx 100,000 + 388,866.75 \approx \$488,866.75$$
+
+$$500,000.00 - 488,866.75 = \$11,133.25 \text{ less than cash}$$
+
+The claim asserts that Option B is dearer at every rate. One rate makes it \$35,526.07 dearer and another makes it \$11,133.25 cheaper, so the ranking depends on the rate and the statement is false.
+@@@107A
+Each quarterly deposit earns simple interest only for the part of the year still left before interest is credited. The deposits land at the end of quarters 1, 2, 3 and 4, so they sit for $3/4$, $1/2$, $1/4$ and $0$ of a year:
+
+$$\text{year-end value} = D\Bigl[\bigl(1 + \tfrac{3}{4}r\bigr) + \bigl(1 + \tfrac{1}{2}r\bigr) + \bigl(1 + \tfrac{1}{4}r\bigr) + 1\Bigr]$$
+
+Collecting the four principal amounts and the fractions of a year gives
+
+$$\text{year-end value} = D(4 + 1.5r)$$
+
+Substituting $D = \$250$ and $r = 8\% = 0.08$:
+
+$$1.5 \times 0.08 = 0.12$$
+
+$$4 + 0.12 = 4.12$$
+
+$$250 \times 4.12 = \$1,030.00$$
+
+The claim states \$1,100.00:
+
+$$1,100.00 - 1,030.00 = \$70.00$$
+
+The correct year-end equivalent is \$1,030.00, seventy dollars below the stated figure, so the statement is false.
+@@@107B
+Once each year's deposits are converted to a single year-end amount, the account behaves like an ordinary annuity earning 8% a year:
+
+$$F_N = \frac{a}{r}\bigl[(1+r)^{N} - 1\bigr]$$
+
+The year-end equivalent of the four quarterly deposits is
+
+$$a = 250(4 + 1.5 \times 0.08) = 250 \times 4.12 = \$1,030.00$$
+
+Substituting $a = \$1,030.00$, $r = 0.08$ and $N = 4$:
+
+$$(1.08)^{4} \approx 1.360489$$
+
+$$1.360489 - 1 = 0.360489$$
+
+$$\frac{1,030}{0.08} = 12,875$$
+
+$$F_4 \approx 12,875 \times 0.360489$$
+
+$$F_4 \approx \$4,641.30$$
+
+The claim states about \$4,700.00:
+
+$$4,700.00 - 4,641.30 = \$58.70$$
+
+The account actually holds about \$4,641.30 after four years, so the statement is false.
+@@@107C
+The same year-end equivalent applies, with the horizon shortened by one year:
+
+$$F_N = \frac{a}{r}\bigl[(1+r)^{N} - 1\bigr]$$
+
+The equivalent year-end deposit is
+
+$$a = 250(4 + 1.5 \times 0.08) = \$1,030.00$$
+
+Substituting $r = 0.08$ and $N = 3$:
+
+$$(1.08)^{3} \approx 1.259712$$
+
+$$1.259712 - 1 = 0.259712$$
+
+$$\frac{1,030}{0.08} = 12,875$$
+
+$$F_3 \approx 12,875 \times 0.259712$$
+
+$$F_3 \approx \$3,343.79$$
+
+The claim states about \$3,500.00:
+
+$$3,500.00 - 3,343.79 = \$156.21$$
+
+The three-year balance is about \$3,343.79, well short of the stated figure, so the statement is false.
+@@@107D
+Treating the four deposits as a flat \$1,000.00 at year-end drops the simple-interest credit and leaves a plain ordinary annuity:
+
+$$F_N^{\text{flat}} = \frac{a}{r}\bigl[(1+r)^{N} - 1\bigr]$$
+
+Substituting $a = \$1,000.00$, $r = 0.08$ and $N = 4$:
+
+$$(1.08)^{4} \approx 1.360489$$
+
+$$1.360489 - 1 = 0.360489$$
+
+$$\frac{1,000}{0.08} = 12,500$$
+
+$$F_4^{\text{flat}} \approx 12,500 \times 0.360489$$
+
+$$F_4^{\text{flat}} \approx \$4,506.11$$
+
+The claim gives about \$4,506.11, and the calculation returns \$4,506.11, so the statement is true.
+@@@107E
+Both balances come from the same annuity formula, differing only in the amount credited each year:
+
+$$F_4 = \frac{a}{0.08}\bigl[(1.08)^{4} - 1\bigr]$$
+
+The correct year-end equivalent keeps the simple interest on the quarterly deposits:
+
+$$a = 250(4 + 1.5 \times 0.08) = \$1,030.00$$
+
+$$F_4 \approx 12,875 \times 0.360489 \approx \$4,641.30$$
+
+The simplified version drops that credit:
+
+$$a = \$1,000.00$$
+
+$$F_4^{\text{flat}} \approx 12,500 \times 0.360489 \approx \$4,506.11$$
+
+The gap between them is
+
+$$4,641.30 - 4,506.11 = \$135.19$$
+
+The claim puts the gap at about \$200.00, roughly \$65 more than the true difference of about \$135, so the statement is false.
+@@@108A
+Equal monthly instalments follow the annuity payment formula, with the rate and the number of periods both expressed in months:
+
+$$a = \frac{rK}{1 - (1+r)^{-n}}$$
+
+The nominal 6% compounds monthly, so the monthly rate is $r = 0.06/12 = 0.005$, and 20 years of monthly payments gives $n = 20 \times 12 = 240$:
+
+$$rK = 0.005 \times 200,000 = 1,000$$
+
+$$(1.005)^{-240} \approx 0.302096$$
+
+$$1 - 0.302096 = 0.697904$$
+
+$$a \approx \frac{1,000}{0.697904}$$
+
+$$a \approx \$1,432.86$$
+
+The claim gives about \$1,432.86 per month, and the calculation returns \$1,432.86, so the statement is true.
+@@@108B
+The balance still owed part way through a loan is the present value of the payments that remain:
+
+$$B_m = \frac{a}{r}\bigl[1 - (1+r)^{-(n-m)}\bigr]$$
+
+The monthly payment is
+
+$$a = \frac{0.005 \times 200,000}{1 - (1.005)^{-240}} \approx \frac{1,000}{0.697904} \approx \$1,432.86$$
+
+After $m = 60$ payments out of $n = 240$, there are $240 - 60 = 180$ left:
+
+$$(1.005)^{-180} \approx 0.407482$$
+
+$$1 - 0.407482 = 0.592518$$
+
+$$\frac{1,432.86}{0.005} \approx 286,572.42$$
+
+$$B_{60} \approx 286,572.42 \times 0.592518$$
+
+$$B_{60} \approx \$169,799.20$$
+
+The claim gives about \$169,799.20, and the calculation returns \$169,799.20, so the statement is true.
+@@@108C
+Principal repaid is the drop in the balance, so the balance after five years is needed first:
+
+$$B_{60} = \frac{a}{r}\bigl[1 - (1.005)^{-180}\bigr] \approx 286,572.42 \times 0.592518 \approx \$169,799.20$$
+
+The principal cleared so far is
+
+$$200,000.00 - 169,799.20 = \$30,200.80$$
+
+As a share of the original loan:
+
+$$\frac{30,200.80}{200,000.00} \approx 0.151004$$
+
+$$0.151004 \approx 15.10\%$$
+
+The claim needs more than 25% repaid:
+
+$$25\% - 15.10\% = 9.90 \text{ percentage points}$$
+
+Early payments go mostly to interest, so only about 15.10% of the principal is gone after five years, nearly ten percentage points short of the claim, and the statement is false.
+@@@108D
+Interest paid over a stretch of the loan is everything handed over minus the principal actually cleared:
+
+$$\text{interest} = a \times m - (K - B_m)$$
+
+Sixty payments of \$1,432.86 come to
+
+$$1,432.86 \times 60 \approx \$85,971.73$$
+
+The balance after those payments is the present value of the 180 remaining ones:
+
+$$B_{60} \approx 286,572.42 \times 0.592518 \approx \$169,799.20$$
+
+so the principal cleared is
+
+$$200,000.00 - 169,799.20 = \$30,200.80$$
+
+The interest inside the first five years is therefore
+
+$$85,971.73 - 30,200.80 = \$55,770.93$$
+
+The claim gives about \$55,770.92, which the calculation matches to the cent, so the statement is true.
+@@@108E
+Lifetime interest is the sum of every payment minus the amount borrowed:
+
+$$\text{total interest} = a \times n - K$$
+
+The monthly payment is
+
+$$a = \frac{0.005 \times 200,000}{1 - (1.005)^{-240}} \approx \$1,432.86$$
+
+Over the full 240 months:
+
+$$1,432.86 \times 240 \approx \$343,886.91$$
+
+Subtracting the \$200,000 borrowed:
+
+$$343,886.91 - 200,000.00 = \$143,886.91$$
+
+The claim states about \$120,000.00:
+
+$$143,886.91 - 120,000.00 = \$23,886.91$$
+
+The family actually pays about \$143,886.91 in interest, nearly \$24,000 more than the stated figure, so the statement is false.
+@@@109A
+When a borrower repays a fixed amount each year until the debt clears, the number of payments is the smallest whole number $n$ satisfying
+
+$$n \ge \frac{\ln a - \ln(a - rK)}{\ln(1+r)}$$
+
+Substituting the fixed payment $a = \$25,000$, the rate $r = 14\% = 0.14$ and the loan $K = \$120,000$:
+
+$$rK = 0.14 \times 120,000 = 16,800$$
+
+$$a - rK = 25,000 - 16,800 = 8,200$$
+
+$$\ln 25,000 \approx 10.126631, \qquad \ln 8,200 \approx 9.011889$$
+
+$$10.126631 - 9.011889 = 1.114742$$
+
+$$\ln 1.14 \approx 0.131028$$
+
+$$\frac{1.114742}{0.131028} \approx 8.5076$$
+
+Eight payments leave part of the debt standing, since the threshold sits above 8, so rounding up gives
+
+$$n = 9$$
+
+The claim names $n = 9$, so the statement is true.
+@@@109B
+The final payment settles whatever the loan still owes after the full payments, so compare the debt grown forward with the payments grown forward.
+
+The debt after eight years of interest is
+
+$$K(1+r)^{8} = 120,000 \times (1.14)^{8}$$
+
+$$(1.14)^{8} \approx 2.852586$$
+
+$$120,000 \times 2.852586 \approx \$342,310.37$$
+
+The eight \$25,000 payments accumulate to
+
+$$\frac{a}{r}\bigl[(1+r)^{8} - 1\bigr] = \frac{25,000}{0.14}(2.852586 - 1)$$
+
+$$\approx 178,571.43 \times 1.852586 \approx \$330,819.00$$
+
+The shortfall at the end of year 8 is
+
+$$342,310.37 - 330,819.00 = \$11,491.37$$
+
+Carrying that balance one more year at 14%:
+
+$$11,491.37 \times 1.14 \approx \$13,100.16$$
+
+The claim gives about \$13,100.16 for the ninth payment, and the calculation returns \$13,100.16, so the statement is true.
+@@@109C
+Interest over the life of the loan is everything paid beyond the amount borrowed:
+
+$$\text{total interest} = \text{total paid} - K$$
+
+Eight full payments come to
+
+$$8 \times 25,000 = \$200,000.00$$
+
+The ninth payment clears the year-8 balance:
+
+$$120,000 \times (1.14)^{8} \approx \$342,310.37$$
+
+$$\frac{25,000}{0.14}\bigl[(1.14)^{8} - 1\bigr] \approx \$330,819.00$$
+
+$$342,310.37 - 330,819.00 = \$11,491.37$$
+
+$$11,491.37 \times 1.14 \approx \$13,100.16$$
+
+So the borrower pays
+
+$$200,000.00 + 13,100.16 = \$213,100.16$$
+
+and the interest inside that is
+
+$$213,100.16 - 120,000.00 = \$93,100.16$$
+
+The claim states about \$105,000.00:
+
+$$105,000.00 - 93,100.16 = \$11,899.84$$
+
+The true interest bill is about \$93,100.16, nearly \$12,000 below the stated figure, so the statement is false.
+@@@109D
+The total paid is eight full payments plus a smaller ninth one, so the ninth payment has to be worked out rather than assumed:
+
+$$\text{total paid} = 8a + \text{final payment}$$
+
+The eight full payments give
+
+$$8 \times 25,000 = \$200,000.00$$
+
+The balance they leave at the end of year 8 is the debt grown forward minus the payments grown forward:
+
+$$120,000 \times (1.14)^{8} \approx \$342,310.37$$
+
+$$\frac{25,000}{0.14}\bigl[(1.14)^{8} - 1\bigr] \approx \$330,819.00$$
+
+$$342,310.37 - 330,819.00 = \$11,491.37$$
+
+$$11,491.37 \times 1.14 \approx \$13,100.16$$
+
+Adding the pieces:
+
+$$200,000.00 + 13,100.16 = \$213,100.16$$
+
+The claim states about \$210,000.00:
+
+$$213,100.16 - 210,000.00 = \$3,100.16$$
+
+The company actually pays about \$213,100.16, so the statement is false.
+@@@109E
+The comparison needs the true total against the total that nine full payments would give.
+
+Nine full payments would be
+
+$$9 \times 25,000 = \$225,000.00$$
+
+The true total uses the smaller ninth payment. Eight full payments leave a balance at the end of year 8 of
+
+$$120,000 \times (1.14)^{8} - \frac{25,000}{0.14}\bigl[(1.14)^{8} - 1\bigr]$$
+
+$$\approx 342,310.37 - 330,819.00 = \$11,491.37$$
+
+$$11,491.37 \times 1.14 \approx \$13,100.16$$
+
+$$\text{total paid} \approx 8 \times 25,000 + 13,100.16 = \$213,100.16$$
+
+The overstatement is
+
+$$225,000.00 - 213,100.16 = \$11,899.84$$
+
+The claim requires an overstatement above \$10,000, and \$11,899.84 clears it by \$1,899.84, so the statement is true.
+@@@110A
+With the first instalment due immediately, one payment escapes discounting and the other seven form an ordinary annuity, so the amount borrowed equals the payment times the combined factor:
+
+$$K = a\Bigl(1 + \frac{1}{r}\bigl[1 - (1+r)^{-(n-1)}\bigr]\Bigr)$$
+
+Substituting $r = 12\% = 0.12$ and $n = 8$ payments, so seven are discounted:
+
+$$(1.12)^{-7} \approx 0.452349$$
+
+$$1 - 0.452349 = 0.547651$$
+
+$$\frac{1}{0.12} \approx 8.333333$$
+
+$$8.333333 \times 0.547651 \approx 4.563757$$
+
+$$\text{factor} = 1 + 4.563757 = 5.563757$$
+
+$$a \approx \frac{90,000}{5.563757}$$
+
+$$a \approx \$16,176.12$$
+
+The claim gives about \$16,176.12, and the calculation returns \$16,176.12, so the statement is true.
+@@@110B
+Interest is charged on the balance carried through the year, and with the first payment made immediately that balance is the loan minus one instalment.
+
+The instalment comes from the annuity-due relation:
+
+$$a = \frac{90,000}{1 + \frac{1}{0.12}\bigl[1 - (1.12)^{-7}\bigr]} \approx \frac{90,000}{5.563757} \approx \$16,176.12$$
+
+The first payment lands at once, before any interest accrues:
+
+$$90,000.00 - 16,176.12 = \$73,823.88$$
+
+That balance carries for one year at 12%:
+
+$$0.12 \times 73,823.88 \approx \$8,858.87$$
+
+The claim gives about \$8,858.87 as the interest inside the second payment, and the calculation returns \$8,858.87, so the statement is true.
+@@@110C
+Interest falls whenever the balance falls, so the schedule needs to be carried one more step.
+
+The instalment is
+
+$$a \approx \frac{90,000}{5.563757} \approx \$16,176.12$$
+
+The immediate first payment leaves
+
+$$90,000.00 - 16,176.12 = \$73,823.88$$
+
+Interest built up over year 1 is
+
+$$0.12 \times 73,823.88 \approx \$8,858.87$$
+
+so the second payment reduces principal by
+
+$$16,176.12 - 8,858.87 = \$7,317.25$$
+
+$$73,823.88 - 7,317.25 = \$66,506.63$$
+
+Interest carried into the third payment is
+
+$$0.12 \times 66,506.63 \approx \$7,980.80$$
+
+Comparing the two interest charges:
+
+$$8,858.87 - 7,980.80 = \$878.07$$
+
+The third payment carries \$878.07 less interest than the second, not more, so the statement is false.
+@@@110D
+The reserve deposits land at quarter ends and earn simple interest for the rest of the year, which collapses to a single year-end amount:
+
+$$\text{year-end value} = D(4 + 1.5r)$$
+
+Substituting $D = \$300$ and the reserve rate $r = 9\% = 0.09$:
+
+$$1.5 \times 0.09 = 0.135$$
+
+$$4 + 0.135 = 4.135$$
+
+$$300 \times 4.135 = \$1,240.50$$
+
+That equivalent deposit then compounds annually like an ordinary annuity:
+
+$$F_N = \frac{a}{r}\bigl[(1+r)^{N} - 1\bigr]$$
+
+$$(1.09)^{3} \approx 1.295029$$
+
+$$1.295029 - 1 = 0.295029$$
+
+$$\frac{1,240.50}{0.09} \approx 13,783.33$$
+
+$$F_3 \approx 13,783.33 \times 0.295029$$
+
+$$F_3 \approx \$4,066.48$$
+
+Both figures in the claim, \$1,240.50 and \$4,066.48, match the calculation, so the statement is true.
+@@@110E
+The two sides of the comparison come from different arrangements, so each needs its own calculation.
+
+The loan instalment is
+
+$$a \approx \frac{90,000}{1 + \frac{1}{0.12}\bigl[1 - (1.12)^{-7}\bigr]} \approx \frac{90,000}{5.563757} \approx \$16,176.12$$
+
+so the first three payments total
+
+$$3 \times 16,176.12 = \$48,528.36$$
+
+The reserve fund converts its quarterly deposits to a year-end amount and compounds them:
+
+$$a = 300(4 + 1.5 \times 0.09) = \$1,240.50$$
+
+$$F_3 = \frac{1,240.50}{0.09}\bigl[(1.09)^{3} - 1\bigr] \approx 13,783.33 \times 0.295029 \approx \$4,066.48$$
+
+Comparing the two:
+
+$$48,528.36 - 4,066.48 = \$44,461.88$$
+
+The loan payments exceed the reserve balance by \$44,461.88, so they are far from being the smaller amount and the statement is false.

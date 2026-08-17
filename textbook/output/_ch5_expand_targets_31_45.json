@@ -1,0 +1,32 @@
+{
+  "35": {
+    "context": "Meridian Textiles tracks a fixed profit margin per unit for Fabric Rolls and Yarn Spools.",
+    "tables_markdown": "| Quarter | Fabric Rolls | Yarn Spools | Total Profit |\n| --- | --- | --- | --- |\n| Q1 | 240 | 175 | $10,029.00 |\n| Q2 | 310 | 90 | $10,260.50 |",
+    "model": "240x + 175y = 10029.00\n310x + 90y = 10260.50",
+    "solution": "Multiply by 90 and 175: 21600x + 15750y = 902610; 54250x + 15750y = 1795587.5. Subtracting: 32650x = 892977.5, so x = 27.35.\nSubstituting back: 6564.00 + 175y = 10029.00, so y = 19.80.\nFinal Answer: Fabric Roll = $27.35/unit  |  Yarn Spool = $19.80/unit",
+    "letters": {
+      "D": {
+        "statement": "The gap between Q2's and Q1's total profit, in dollars, would still be a three-digit number even if you dropped the smallest hundred from it.",
+        "verdict": "true",
+        "min_chars": 646,
+        "previous_committed_version": "**D) The gap between Q2's and Q1's total profit, in dollars, would still be a three-digit number even if you dropped the smallest hundred from it.**  (true)\r\n\r\nThe difference between the reported totals is \\$10,260.50 ΓêÆ \\$10,029.00 = \\$231.50. Removing the smallest hundred leaves \\$131.50, which still has three digits before the decimal.\r\n\r\nThe gap is \\$231.50; subtracting \\$100 leaves \\$131.50, still a three-digit figure before the decimal.\r\n\r\n$$\r\n10260.50 - 10029.00 = 231.50, \\qquad 231.50 - 100 = 131.50\r\n$$\r\n\r\n$131.50$ still has three digits to the left of the decimal point.",
+        "current_version_too_short": "**D) The gap between Q2's and Q1's total profit, in dollars, would still be a three-digit number even if you dropped the smallest hundred from it.**  (true)\n\nBoth quarterly totals are reported outright, so no per-unit margins are needed. The gap between them is\n\n$$\n10260.50 - 10029.00 = 231.50\n$$\n\nDropping the smallest hundred means subtracting \\$100:\n\n$$\n231.50 - 100 = 131.50\n$$\n\n\\$131.50 still carries three digits ahead of the decimal point, so the statement is true."
+      }
+    }
+  },
+  "39": {
+    "context": "Continental Freight Co. bills a flat handling fee plus a constant rate per kilogram shipped. One branch records weights in pounds (1 kg ≈ 2.2 lb). A third shipment is under audit.",
+    "tables_markdown": "| Shipment | Weight | Total Charged |\n| --- | --- | --- |\n| Shipment 1 (Metric) | 185 kg | $677.35 |\n| Shipment 2 (Imperial) | 572 lb | $913.60 |\n| Shipment 3 (Imperial, audit) | 99 lb | $239.80 |",
+    "model": "x + 185y = 677.35 (Shipment 1, already in kg)\nx + 260y = 913.60 (Shipment 2: 572 lb ÷ 2.2 = 260 kg)",
+    "solution": "Convert Shipment 2's weight: 572/2.2 = 260 kg. Subtract directly: 75y = 236.25, so y = 3.15. Substituting back: x + 582.75 = 677.35, so x\n= 94.60. Audit Shipment 3: 99/2.2 = 45 kg. Model predicts 94.60 + 45(3.15) = $236.35, but Shipment 3 was charged $239.80 — a $3.45\ndiscrepancy.\nFinal Answer: Handling fee = $94.60  |  Rate = $3.15/kg  |  Shipment 3 predicted = $236.35 (vs. $239.80 charged — a\n$3.45 discrepancy)",
+    "letters": {
+      "D": {
+        "statement": "Ninety-nine pounds, run through the standard 2.2-per-kilogram conversion, comes out to a number divisible by seven.",
+        "verdict": "false",
+        "min_chars": 552,
+        "previous_committed_version": "**D) Ninety-nine pounds, run through the standard 2.2-per-kilogram conversion, comes out to a number divisible by seven.**  (false)\r\n\r\nNinety-nine pounds converts to 99 ├╖ 2.2 = 45 kg. Since 45 is not divisible by 7, the claim is false.\r\n\r\nRebuild the expression from the solved system rather than treating a coefficient, fee, or converted unit as if it were already the final answer.\r\n\r\n$$\r\n\\frac{99}{2.2} = 45, \\qquad 45 \\div 7 = 6 \\text{ remainder } 3\r\n$$\r\n\r\n$45$ is not a multiple of $7$.",
+        "current_version_too_short": "**D) Ninety-nine pounds, run through the standard 2.2-per-kilogram conversion, comes out to a number divisible by seven.**  (false)\n\nThis is a claim about the converted weight alone, so neither the handling fee nor the per-kilogram rate enters into it:\n\n$$\n\\\\frac{99}{2.2} = 45 \\\\text{ kg}\n$$\n\nDividing 45 by 7 leaves a remainder:\n\n$$\n45 = 7(6) + 3\n$$\n\nSince 45 is not a multiple of seven, the statement is false."
+      }
+    }
+  }
+}

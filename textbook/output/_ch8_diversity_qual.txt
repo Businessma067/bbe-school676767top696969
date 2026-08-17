@@ -1,0 +1,647 @@
+
+==== RANGE 1-30 statement types ====
+other:33, scaling:28, evaluate-level:23, compare:18, units:14, recover-exponent:11, recover-coeff:9, boundary:7, invert:3, counterfactual:2, compose:2
+
+==== RANGE 31-60 statement types ====
+scaling:33, units:33, evaluate-level:30, other:27, recover-coeff:9, recover-exponent:7, boundary:6, invert:3, compose:1, compare:1
+
+==== RANGE 61-87 statement types ====
+evaluate-level:33, scaling:29, other:25, units:21, recover-exponent:8, recover-coeff:5, boundary:4, invert:4, compare:4, counterfactual:1, compose:1
+
+==== MOST REPEATED LEDE STEMS (top 30) ====
+2 | A move from MATH to MATH jobs is a finite MATH increase in t... | 6C,6D
+1 | The coefficient of a power law MATH is a scale factor that t... | 1A
+1 | A level of the recovered law comes from applying the coeffic... | 1B
+1 | A scale factor of a power function depends only on the expon... | 1C
+1 | The certification caps the loading rate, not the staged coun... | 1D
+1 | Running the law backwards fixes the rate and solves for the ... | 1E
+1 | An exponent is carried by scale factors alone: a percentage ... | 2A
+1 | A level needs the coefficient as well as the exponent, and t... | 2B
+1 | Inverting the recovered law means solving for the diameter t... | 2C
+1 | Under the weaker rule a MATH widening carries the multiplier... | 2D
+1 | With the counterfactual exponent in hand, the ratio route ca... | 2E
+1 | Adding two outputs takes both laws in explicit form, so each... | 3A
+1 | Exponents govern how fast output responds to wind speed whil... | 3B
+1 | A crossover is where the two output laws agree, so the share... | 3C
+1 | A statement about a whole interval is settled by the ratio o... | 3D
+1 | Halving turbine A's coefficient leaves both exponents untouc... | 3E
+1 | The exponent of an assembly-time law is carried by its scale... | 4A
+1 | Average throughput is MATH, and management wants it as a fun... | 4B
+1 | A match with the rival is an equation between the derived th... | 4C
+1 | Which side leads past a crossover is decided by the sign of ... | 4D
+1 | A faster rival raises the target rate, and the same crossove... | 4E
+1 | The audit records a change in metal output between two purit... | 5A
+1 | Composing two power stages multiplies their exponents, so su... | 5B
+1 | At one purity the comparison is between the composed chain M... | 5C
+1 | Two straight lines with different slopes meet exactly once, ... | 5D
+1 | A claim about a whole interval is settled by the gap between... | 5E
+1 | A scale factor of a power law depends only on the exponent, ... | 6A
+1 | The alarm level is a peak load, so locating it in job counts... | 6B
+1 | Halving is a multiplier of MATH on the input, and with expon... | 6E
+1 | Neither observation reports a response level: the record is ... | 7A
+
+==== OVERVIEW TEMPLATE DEPTH ====
+tags {"0":7,"2":77,"3":3}
+steps {"0":7,"4":2,"5":78}
+top overview combos:
+40	8dm/2tag/5step
+29	9dm/2tag/5step
+7	3dm/0tag/0step
+3	7dm/2tag/5step
+2	10dm/2tag/5step
+2	11dm/2tag/5step
+1	12dm/2tag/5step
+1	11dm/3tag/5step
+1	11dm/3tag/4step
+1	9dm/3tag/4step
+
+==== SHORT OVERVIEWS ====
+#7 ovW=52 ovDm=3 ovP=5 | Survey Reach Against a Fieldwork Budget Cap
+#32 ovW=50 ovDm=3 ovP=5 | Average Product of a Square-Root Technology
+#39 ovW=52 ovDm=3 ovP=5 | Inspection Hours Across Growing Shipment Volumes
+#41 ovW=48 ovDm=3 ovP=5 | Audit Cost With Economies of Scale
+#42 ovW=45 ovDm=3 ovP=5 | Airborne Particle Concentration Downwind
+#44 ovW=46 ovDm=3 ovP=5 | Market Impact of a Block Trade
+#45 ovW=49 ovDm=3 ovP=5 | Allometric Energy Use Across Livestock Weights
+
+==== CLOSING LINE PATTERNS (top 15) ====
+1 | Dividing MATH by a single staged count would answer a different question. The loading law 
+1 | The jump matches the log exactly, and the rate at MATH is MATH units per minute against th
+1 | Doubling the input would double the output only for an exponent of MATH; here the exponent
+1 | The highest logged run, MATH units at MATH units per minute, sat well inside the ceiling, 
+1 | The staged count is about MATH units, which is not below MATH, so the statement is False.
+1 | Reading the multiplier as MATH would give MATH and flatten a strongly convex instrument re
+1 | Both routes put the MATH m aperture at MATH, so the statement is True.
+1 | The target is met at MATH m, two metres below the threshold in the claim, so the statement
+1 | Since MATH already overshoots the target multiplier, the counterfactual exponent lies belo
+1 | The doubling factor of MATH belongs to the original squared rule; an exponent barely above
+1 | The pair delivers MATH kW at MATH, so the statement is True.
+1 | Turbine A carries the smaller exponent, so the statement is False.
+1 | The outputs coincide at MATH at MATH kW each, so the statement is True.
+1 | Turbine B leads at every speed above MATH m/s, so the statement is True.
+1 | The crossover moves from MATH m/s down to MATH m/s, below the MATH m/s threshold, so the s
+
+==== EXPLANATION SKELETONS (P=prose, M=display math) ====
+233	P-M-P-M-P	(53.6%)
+72	P-M-M-P	(16.6%)
+46	P-M-M-P-M-P	(10.6%)
+39	P-M-P-M-P-M-P	(9.0%)
+16	P-M-P-M-M-P	(3.7%)
+10	P-M-M-M-P	(2.3%)
+6	P-M-P	(1.4%)
+3	P-M-M-P-M-P-M-P	(0.7%)
+2	P-M-M-P-M-M-P	(0.5%)
+2	P-M-P-M-P-M-P-M-P	(0.5%)
+1	P-M-M-M-P-M-P	(0.2%)
+1	P-M-P-M-P-M-M-P	(0.2%)
+1	P-M-P-M-M-M-P-M-P	(0.2%)
+1	P-M-M-M-P-M-M-P	(0.2%)
+1	P-M-P-M-M-P-M-M-P	(0.2%)
+1	P-M-P-M-M-P-M-P-M-P	(0.2%)
+
+######## TASK 44 Market Impact of a Block Trade
+STMTS:
+  A. [evaluate-level] The impact law is $I(v)=60\\sqrt{v}$.
+  B. [scaling] Increasing order size from $0.04$ to $0.09$ ADV multiplies impact by $1.5$.
+  C. [evaluate-level] The notional fee and scaled impact charge break even at $v=0.25$ ADV, with impact charge lower below that size.
+  D. [evaluate-level] At $v=0.16$ ADV, impact is $24$ basis points and the scaled impact charge is $3.84$.
+  E. [other] The scaled impact charge is proportional to order size.
+EXPL skeletons: P-M-M-P | P-M-M-P | P-M-M-P | P-M-M-P | P-M-M-P
+EXPL words~: 48,55,54,49,46
+--- A ---
+**A.** → True
+
+The six basis points is a change in impact between two order sizes, so the coefficient multiplies the difference of the two square roots.
+
+$$I(0.09)-I(0.04) =A(\\sqrt{0.09}-\\sqrt{0.04}) =A(0.3-0.2)$$
+
+$$0.1A=6 \\quad \\Rightarrow \\quad A=60, \\qquad I(v)=60\\sqrt v$$
+
+Setting $I(0.09)=6$ would treat the increment as the larger order's total impact. The difference calibration gives $I(v)=60\\sqrt{v}$, so the statement is True.
+--- C ---
+**C.** → True
+
+The scaled impact charge is $vI(v)=60v^{3/2}$, so a break-even with a linear fee is an equation between exponents $3/2$ and $1$.
+
+$$60v^{3/2}=30v \\quad \\Rightarrow \\quad 2\\sqrt v=1 \\quad \\Rightarrow \\quad v=0.25$$
+
+$$\\frac{vI(v)}{F(v)} =\\frac{60v^{3/2}}{30v} =2\\sqrt v<1 \\quad \\text{when }0<v<0.25$$
+
+Comparing $I(v)$ with $F(v)$ directly would compare the wrong pair, since the context defines the charge as $vI(v)$. Break-even is at $0.25$ ADV with the charge lower below it, so the statement is True.
+--- OVERVIEW (first 800) ---
+Impact is $I(v)=Av^{1/2}$, calibrated by the six-basis-point increase from $0.04$ to $0.09$ ADV. The scaled charge is $vI(v)$.
+
+**Part 1:** Use the impact difference:
+
+$$A(0.3-0.2)=6$$
+
+**Part 2:** Recover impact and charge laws:
+
+$$I(v)=60\\sqrt v, qquad vI(v)=60v^{3/2}, qquad F(v)=30v$$
+
+**Part 3:** Evaluate scaling and break-even:
+
+$$\\sqrt{2.25}=1.5, quad 60v^{3/2}=30v\\Rightarrow v=0.25, quad I(0.16)=24$$
+
+**Answer.** $A=60$ bp | break-even $v=0.25$ ADV | scaled impact charge has exponent $3/2$
+
+######## TASK 41 Audit Cost With Economies of Scale
+STMTS:
+  A. [evaluate-level] The pricing law is $C(n)=100n^{0.75}$.
+  B. [boundary] The $2700$ cap covers at most $81$ accounts under the practice's schedule.
+  C. [compare] The two firms tie at $16$ accounts, and the practice is cheaper than the rival for every $n>16$.
+  D. [other] A bill of $12500$ corresponds to an engagement of $625$ accounts.
+  E. [scaling] Doubling the number of accounts raises the practice's bill by exactly $75\\%$.
+EXPL skeletons: P-M-M-P | P-M-M-P | P-M-M-P | P-M-M-P | P-M-M-P
+EXPL words~: 48,56,58,48,48
+--- A ---
+**A.** → True
+
+Since $0.75=3/4$ and both engagement sizes are fourth powers, the shape factors resolve exactly, and the recorded rise is a difference of two bills.
+
+$$C(81)-C(16)=A(27-8)=1900$$
+
+$$19A=1900 \\quad \\Rightarrow \\quad A=100, \\qquad C(n)=100n^{0.75}$$
+
+Setting $A \\cdot 81^{0.75}=1900$ would treat a jump between two bills as a single bill. The recovered schedule is $C(n)=100n^{0.75}$, so the statement is True.
+--- C ---
+**C.** → True
+
+A tie with a linear rival is an equation between exponents $3/4$ and $1$, and dividing by $50n^{3/4}$ on the positive domain leaves a power of $n^{1/4}$.
+
+$$100n^{3/4}=50n \\quad \\Rightarrow \\quad 2=n^{1/4} \\quad \\Rightarrow \\quad n=16$$
+
+$$\\frac{C(n)}{R(n)} =\\frac{100n^{3/4}}{50n} =2n^{-1/4}<1 \\quad \\text{when } n>16$$
+
+Comparing the coefficients $100$ and $50$ alone would ignore that the rival carries the larger exponent. The firms tie at $16$ accounts and the practice is cheaper beyond, so the statement is True.
+--- OVERVIEW (first 800) ---
+Audit cost follows $C(n)=An^{3/4}$; the bill rises by $1900$ from $16$ to $81$ accounts. The rival charges $R(n)=50n$.
+
+**Part 1:** Use the two exact fourth-power inputs:
+
+$$A(81^{3/4}-16^{3/4})=A(27-8)=1900$$
+
+**Part 2:** Recover and compare the schedules:
+
+$$C(n)=100n^{3/4}, qquad R(n)=50n, qquad C=R\\Rightarrow n=16$$
+
+**Part 3:** Invert the cap and target bill:
+
+$$C(n)\\le2700\\Rightarrow n\\le81, qquad C(n)=12500\\Rightarrow n=625$$
+
+**Answer.** $A=100$ | cap $81$ accounts | rival crossover $n=16$ | $12500$ bill at $n=625$
+
+######## TASK 32 Average Product of a Square-Root Technology
+STMTS:
+  A. [evaluate-level] The output law is $Y(L)=12\\sqrt{L}$.
+  B. [units] At $64$ hours, output exceeds the linear wage benchmark by $48$ units.
+  C. [evaluate-level] At $225$ hours, average product is $0.8$ unit per labour hour.
+  D. [units] Producing $180$ units requires $225$ labour hours.
+  E. [scaling] Multiplying labour hours by $2.25$ multiplies output by $1.5$ and average product by $\\frac{2}{3}$.
+EXPL skeletons: P-M-M-P | P-M-M-P | P-M-M-P | P-M-M-P | P-M-M-P
+EXPL words~: 53,51,60,54,55
+--- A ---
+**A.** → True
+
+The recorded $60$ units is a change in output between two labour levels, so the model has to be evaluated at both and differenced.
+
+$$Y(100)-Y(25)=A\\sqrt{100}-A\\sqrt{25}=60$$
+
+$$A(10-5)=60 \\quad \\Rightarrow \\quad A=12, \\qquad Y(L)=12\\sqrt{L}$$
+
+Substituting only $L=100$ would convert a difference observation into a level observation and return a coefficient of $6$. The recovered technology is $Y(L)=12\\sqrt{L}$, so the statement is True.
+--- C ---
+**C.** → True
+
+Average product is output divided by labour, so its exponent is $0.5-1=-0.5$ and the derived law has to be built before any level is read off.
+
+$$\\operatorname{AP}(L)=\\frac{Y(L)}{L} =\\frac{12L^{0.5}}{L}=12L^{-0.5}$$
+
+$$\\operatorname{AP}(225)=\\frac{12}{\\sqrt{225}} =\\frac{12}{15}=0.8$$
+
+Total output at that labour level is $180$, a different quantity that still has to be divided by the hours. Average product is $0.8$ unit per labour hour, so the statement is True.
+--- OVERVIEW (first 800) ---
+Output is $Y(L)=AL^{0.5}$, with a $60$-unit output jump from $25$ to $100$ hours; average product is $Y/L$.
+
+**Part 1:** Translate the jump and the derived average:
+
+$$A(10-5)=60, qquad \\operatorname{AP}(L)=AL^{-0.5}$$
+
+**Part 2:** Recover the total, average, and inverse laws:
+
+$$Y(L)=12\\sqrt L, qquad \\operatorname{AP}(L)=\\frac{12}{\\sqrt L}, qquad L=\\left(\\frac{Y}{12}\\right)^2$$
+
+**Part 3:** Compare with wages and evaluate the planning targets:
+
+$$Y(64)-0.75(64)=48, quad \\operatorname{AP}(225)=0.8, quad Y=180\\Rightarrow L=225$$
+
+**Answer.** $A=12$ | $Y(L)=12\\sqrt L$ | $\\operatorname{AP}(225)=0.8$ | $180$ units need $225$ hours
+
+######## TASK 7 Survey Reach Against a Fieldwork Budget Cap
+STMTS:
+  A. [evaluate-level] The response law is $Q(x)=12\\sqrt{x}$.
+  B. [boundary] The budget cap allows at most $240$ usable responses.
+  C. [invert] A target of $180$ usable responses requires intensity $225$, so it is affordable.
+  D. [scaling] Multiplying intensity by $2.25$ multiplies usable responses by $1.5$.
+  E. [scaling] Raising intensity from $64$ to $81$ raises usable responses by $12.5\\%$.
+EXPL skeletons: P-M-M-P | P-M-M-P | P-M-M-P | P-M-P-M-P | P-M-M-P
+EXPL words~: 65,63,52,64,54
+--- A ---
+**A.** → True
+
+Neither observation reports a response level: the record is a difference between the responses at two intensities, so the coefficient has to be pulled out of that difference. The square-root factors at $25$ and $100$ are $5$ and $10$:
+
+$$Q(100)-Q(25)=A(10-5)=60$$
+
+$$5A=60 \\quad \\Rightarrow \\quad A=12, \\qquad Q(x)=12\\sqrt{x}$$
+
+Writing $A\\sqrt{100}=60$ instead would read the increase as the response at intensity $100$ and lose the lower endpoint. The recovered law is $Q(x)=12\\sqrt{x}$, so the statement is True.
+--- C ---
+**C.** → True
+
+A target response inverts the calibrated law: dividing by the coefficient isolates the square root of intensity, and squaring recovers intensity itself:
+
+$$12\\sqrt{x}=180 \\quad \\Rightarrow \\quad \\sqrt{x}=15$$
+
+$$x=15^2=225, \\qquad 225\\le 400$$
+
+Stopping at $\\sqrt{x}=15$ and reporting $15$ as the intensity leaves the inversion half done. The target needs intensity $225$, which lies inside the cap, so the statement is True.
+--- OVERVIEW (first 800) ---
+Responses follow $Q(x)=Ax^{0.5}$, calibrated by a $60$-response increase from intensity $25$ to $100$, with $x\\le400$.
+
+**Part 1:** Translate the difference rather than treating it as a level:
+
+$$A(\\sqrt{100}-\\sqrt{25})=60$$
+
+**Part 2:** Recover the model and its inverse:
+
+$$A=12, \\qquad Q(x)=12\\sqrt{x}, \\qquad x=\\left(\\frac{Q}{12}\\right)^2$$
+
+**Part 3:** Apply the cap, scale factors, and finite changes:
+
+$$Q(400)=240, \\quad Q=180\\Rightarrow x=225, \\quad (2.25)^{0.5}=1.5, \\quad \\frac{108-96}{96}=12.5\\%$$
+
+**Answer.** $A=12$ | ceiling $240$ responses | $180$ responses require intensity $225$
+
+######## TASK 55 Curing Strength From a Timed Gap Between Samples
+STMTS:
+  A. [evaluate-level] The recovered curing law is $S(t)=5\\sqrt{t}$.
+  B. [evaluate-level] Strength on day $4$ is $10$ MPa and on day $9$ is $15$ MPa.
+  C. [scaling] Quadrupling curing time exactly doubles strength.
+  D. [invert] Reaching $30$ MPa requires exactly $36$ days of curing.
+  E. [scaling] Moving from day $4$ to day $9$ raises strength by $50\\%$.
+EXPL skeletons: P-M-P-M-P | P-M-P-M-P | P-M-P-M-P | P-M-P-M-P | P-M-P-M-P
+EXPL words~: 86,73,68,64,87
+--- A ---
+**A.** → True
+
+No single strength was recorded, only a gap between two days, and a gap is still enough because the coefficient is a common factor of both levels. Write the record as one equation:
+
+$$S(9)-S(4)=A\\sqrt{9}-A\\sqrt{4}=A(3-2)$$
+
+The two square roots differ by exactly $1$, so the coefficient is read off directly:
+
+$$A\\cdot1=5 \\quad\\Rightarrow\\quad A=5, \\qquad S(t)=5\\sqrt{t}$$
+
+Attaching the $5$ MPa to day $9$ as a level would invent an observation the log never made, and it would give the far smaller coefficient $5/3$. The difference calibration recovers $S(t)=5\\sqrt{t}$, so the statement is True.
+--- C ---
+**C.** → True
+
+A time multiplier reaches strength through the exponent $1/2$, so the coefficient cancels and the starting day is irrelevant:
+
+$$\\frac{S(4t)}{S(t)}=\\frac{5\\sqrt{4t}}{5\\sqrt{t}}=\\sqrt{4}=2$$
+
+The identity holds anywhere on the curve, not only at the logged days. Two concrete pairs make that plain:
+
+$$S(4)=10, \\quad S(16)=5\\cdot4=20, \\qquad S(9)=15, \\quad S(36)=5\\cdot6=30$$
+
+Each quadrupling of curing time exactly doubles the strength, which is the practical meaning of a square-root law. Quadrupling time doubles strength, so the statement is True.
+--- OVERVIEW (first 800) ---
+Curing strength is $S(t)=A\\sqrt{t}$ megapascals, and the only surviving record is the $5$ MPa rise between day $4$ and day $9$.
+
+**Part 1: Building the model.**
+
+Let $t$ = curing time in days and $S$ = strength in megapascals. No single level was logged, so the coefficient has to come out of a difference. That works because $A$ is a common factor of every model value and the exponent $1/2$ is given in advance.
+
+**1. Translate: the surviving record.**
+
+$$A\\sqrt{9}-A\\sqrt{4}=5$$
+
+**2. Translate: factor the coefficient out.** The two square roots differ by exactly one:
+
+$$A(3-2)=5$$
+
+**Part 2: The model.**
+
+$$S(t)=5\\,\\sqrt{t} \\tag{1}$$
+
+$$\\frac{S(ct)}{S(t)}=\\sqrt{c} \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** The record gives the coefficient:
+
+$$A=5$$
+
+**2.** Levels at the two logged days,
+
+######## TASK 77 A Weir Rating Curve Rewritten in New Units
+STMTS:
+  A. [units] In the original units the rating curve is $Q(h)=16h^{3/2}$.
+  B. [units] With the head in centimetres and discharge still in cubic metres per second, the curve becomes $Q=1.6\\,h_{\\mathrm{cm}}^{3/2}$.
+  C. [recover-coeff] With the head in centimetres and discharge in litres per second, the coefficient is $16000$.
+  D. [recover-exponent] Switching the head from metres to centimetres leaves the exponent at $3/2$ but multiplies the coefficient by $100$.
+  E. [units] A head of one metre discharges $32$ cubic metres per second.
+EXPL skeletons: P-M-P-M-P | P-M-P-M-P | P-M-P-M-P | P-M-P-M-P | P-M-P-M-P
+EXPL words~: 92,79,95,85,79
+--- A ---
+**A.** → True
+
+The weir formula supplies the exponent, so the single gauging fixes the coefficient once the three-halves power of a head below one metre is taken. Splitting that power into a square root and a cube keeps the arithmetic exact.
+
+$$0.25^{3/2}=\\left(\\sqrt{0.25}\\right)^{3}=0.5^{3}=0.125$$
+
+The gauging then becomes a one-step division:
+
+$$A(0.125)=2 \\quad \\Rightarrow \\quad A=\\frac{2}{0.125}=16, \\qquad Q(h)=16h^{3/2}$$
+
+The calibrated curve reproduces the gauging, because $16(0.125)=2$ cubic metres per second at a head of a quarter metre. Multiplying $0.25$ by $3/2$ instead of raising it to that power would give a coefficient near $5.3$. The rating curve is $Q(h)=16h^{3/2}$, so the statement is True.
+--- C ---
+**C.** → False
+
+Two conversions act here at once: the head factor divides the coefficient by $100^{3/2}=1000$, while the switch to litres multiplies it by $1000$, and the two happen to cancel exactly.
+
+$$Q_{\\mathrm{L}}=1000\\times\\frac{16}{1000}\\,h_{\\mathrm{cm}}^{3/2}=16\\,h_{\\mathrm{cm}}^{3/2}$$
+
+The gauged point confirms the coefficient in the new pair of units:
+
+$$h_{\\mathrm{cm}}=25 \\;\\Rightarrow\\; 16(125)=2000 \\text{ L/s}=2 \\text{ m}^{3}\\text{/s}$$
+
+The repeated $16$ is a coincidence of these particular units rather than a sign that nothing changed. Applying only the litre conversion to the original coefficient gives exactly the claimed $16000$ and leaves the head still measured in metres. The coefficient in the new units is $16$, so the statement is False.
+--- OVERVIEW (first 800) ---
+The rating curve is $Q(h)=Ah^{3/2}$ in metres and cubic metres per second, pinned by the gauging $Q(0.25)=2$. The team wants the same curve in centimetres, and in litres per second.
+
+**Part 1: Building the model.**
+
+Let $h$ = head in metres, $h_{\\mathrm{cm}}=100h$ = head in centimetres, $Q$ = discharge. The exponent belongs to the weir, so one gauging fixes the coefficient. A change of unit replaces the input by a constant multiple of itself, and a power function pushes that constant through its exponent, so the exponent never moves and only the coefficient does. A change of output unit, by contrast, scales the coefficient directly.
+
+**1. Translate: the gauging.**
+
+$$A(0.25)^{3/2}=2$$
+
+**2. Translate: the change of input unit.**
+
+$$Q=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{3/2}=\\f
+
+######## TASK 87 Annealing Lehr Throughput Under a Mis-Scaled Coefficient
+STMTS:
+  A. [boundary] Under the calibrated law, $T(9)=216$.
+  B. [recover-coeff] If the coefficient were $25\\%$ larger, every throughput reading would rise by exactly $25\\%$.
+  C. [scaling] The scale factor for doubling the belt setting does not depend on $A$.
+  D. [scaling] Doubling the belt setting doubles throughput.
+  E. [recover-coeff] If the coefficient were $25\\%$ larger, the scale factor $T(2e)/T(e)$ would itself become $25\\%$ larger.
+EXPL skeletons: P-M-P-M-P | P-M-P-M-P | P-M-P-M-P | P-M-P-M-P | P-M-P-M-P
+EXPL words~: 79,94,87,82,93
+--- A ---
+**A.** → True
+
+The recorded run fixes the coefficient once the exponent is known. Evaluate the power by taking the square root first and then cubing:
+
+$$4^{3/2}=\\left(\\sqrt{4}\\right)^{3}=2^{3}=8 \\quad \\Rightarrow \\quad 8A=64 \\quad \\Rightarrow \\quad A=8$$
+
+The calibrated rule is $T(e)=8e^{3/2}$. Evaluate it at the requested setting, using $9^{3/2}=\\left(\\sqrt{9}\\right)^{3}=27$:
+
+$$T(9)=8\\cdot 27=216$$
+
+The scaling rule agrees without recomputing any coefficient, since the setting rises by a factor of $9/4$ and $(9/4)^{3/2}=(3/2)^{3}=27/8$, so $64\\times 27/8=216$. Both routes land on the same reading. Throughput at belt setting $9$ is $216$ trays per hour, so the statement is True.
+--- C ---
+**C.** → True
+
+A scale factor is a ratio of two model values, and the coefficient appears in both of them:
+
+$$\\frac{T(2e)}{T(e)}=\\frac{A(2e)^{3/2}}{A\\,e^{3/2}}=\\frac{(2e)^{3/2}}{e^{3/2}}=2^{3/2}$$
+
+Whatever $A$ happens to be, it cancels before the exponent is applied, so the factor is pinned by the exponent alone:
+
+$$2^{3/2}=2\\sqrt{2}\\approx 2.8284$$
+
+The calibrated rule illustrates the same figure, since $T(4)=64$ and $T(8)=8\\cdot 16\\sqrt{2}\\approx 181.02$, whose ratio is about $2.828$. The cancellation is not special to $A=8$: it holds for any positive coefficient, including one a quarter larger. The doubling factor does not depend on $A$, so the statement is True.
+--- OVERVIEW (first 800) ---
+Lehr throughput is $T(e)=Ae^{3/2}$ trays per hour with the recorded run $T(4)=64$.
+
+**Part 1: Building the model.**
+
+Let $e$ = belt setting, $T$ = throughput in trays per hour. The exponent is supplied, so the recorded run fixes the coefficient. Two very different questions then follow: levels, which depend on the coefficient, and scale factors, in which the coefficient cancels.
+
+**1. Translate: the recorded run.**
+
+$$A\\cdot 4^{3/2}=64, \\qquad 4^{3/2}=\\left(\\sqrt{4}\\right)^{3}=8$$
+
+**2. Translate: a mis-scaled coefficient.** Replacing $A$ by $cA$ multiplies every level by $c$ and leaves every ratio untouched:
+
+$$\\frac{cA(ke)^{3/2}}{cA\\,e^{3/2}}=k^{3/2}$$
+
+**Part 2: The model.**
+
+$$T(e)=8\\,e^{3/2} \\tag{1}$$
+
+$$\\frac{T(ke)}{T(e)}=k^{3/2} \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** The c
+
+######## TASK 6 Server Peak Load Between a Doubling Rule and an Alarm
+STMTS:
+  A. [scaling] Tripling the job count multiplies peak load by $6$.
+  B. [boundary] The alarm trips at a job count above $55$.
+  C. [scaling] Increasing the job count from $30$ to $42$ raises peak load by less than $90\\%$.
+  D. [scaling] Increasing the job count from $30$ to $33$ raises peak load by exactly $21\\%$.
+  E. [other] Halving the job count halves peak load.
+EXPL skeletons: P-M-P-M-P | P-M-P-M-P | P-M-P-M-P | P-M-P-M-P | P-M-P-M-P
+EXPL words~: 82,79,80,67,79
+--- A ---
+**A.** → False
+
+A scale factor of a power law depends only on the exponent, and the doubling test is the fact that carries it, since the coefficient cancels in the ratio:
+
+$$\\frac{L(2x)}{L(x)} = \\frac{A(2x)^{r}}{Ax^{r}} = 2^{r} = 4 \\quad \\Rightarrow \\quad r = 2$$
+
+The same identity applies to a tripling:
+
+$$\\frac{L(3x)}{L(x)} = 3^{2} = 9$$
+
+The figure $6$ treats the scale factor as proportional to the multiplier, as though doubling giving $4$ meant tripling gives $1.5$ times as much; scale factors are powers of the multiplier, not multiples of it. Tripling multiplies peak load by $9$, so the statement is False.
+--- C ---
+**C.** → False
+
+A move from $30$ to $42$ jobs is a finite $40\\%$ increase in the input, and a squared response amplifies it, so the exact scale factor of the model settles the comparison:
+
+$$\\frac{L(42)}{L(30)}=\\left(\\frac{42}{30}\\right)^2=1.4^2=1.96$$
+
+A percentage change is the scale factor minus one:
+
+$$\\frac{L(42)-L(30)}{L(30)}=1.96-1=0.96=96\\%$$
+
+Reading the exponent as though it were an ordinary multiplier, or reaching for an elasticity shortcut, replaces this finite calculation with something looser. Peak load rises by $96\\%$, which is not less than $90\\%$, so the statement is False.
+--- OVERVIEW (first 800) ---
+Peak load follows $L(x)=Ax^{r}$ for $x$ simultaneous jobs. Doubling the job count multiplies load by $4$, a $30$-job run peaked at $180$, and the alarm trips at $500$.
+
+**Part 1: Building the model.**
+
+Let $x$ = simultaneous jobs and $L(x)$ = peak load. Two unknowns need two facts: the stress test carries the exponent because scale factors are free of $A$, and the recorded run carries the level.
+
+**1. Translate: the doubling test.** The observed factor is a power of the multiplier:
+
+$$\\frac{L(2x)}{L(x)} = 2^{r} = 4$$
+
+**2. Translate: the recorded run.** One measured point fixes the coefficient:
+
+$$A(30)^{2} = 180$$
+
+**Part 2: The model.**
+
+$$2^{r} = 4 \\tag{1}$$
+
+$$900A = 180 \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** Equations (1) and (2) give the law:
+
+$$r = 2, \\qquad A = 0.2, \\qquad L(x)
+
+######## TASK 67 Calibrating a Handling-Cost Law From a Cost Difference
+STMTS:
+  A. [recover-coeff] The coefficient is $A=6$.
+  B. [other] The recovered levels are $f(4)=48$ and $f(16)=384$.
+  C. [evaluate-level] At index $9$ the modelled handling cost is $162$ euros.
+  D. [scaling] Multiplying the pallet-volume index by $4$ multiplies handling cost by $8$.
+  E. [evaluate-level] The difference $f(25)-f(9)$ equals $588$ euros.
+EXPL skeletons: P-M-P-M-M-P-M-M-P | P-M-P-M-M-P-M-P-M-P | P-M-P-M-P | P-M-P-M-P-M-P | P-M-M-P-M-M-P
+EXPL words~: 75,81,68,71,67
+--- A ---
+**A.** → True
+
+A difference of two model values still determines the coefficient, because $A$ factors out of both terms. Write the record as an equation:
+
+$$f(16)-f(4)=A\\cdot16^{3/2}-A\\cdot4^{3/2}=336$$
+
+Evaluate each power by taking the square root first and then cubing:
+
+$$16^{3/2}=(\\sqrt{16})^{3}=4^{3}=64$$
+
+$$4^{3/2}=(\\sqrt{4})^{3}=2^{3}=8$$
+
+Factor and solve:
+
+$$A(64-8)=56A=336$$
+
+$$A=\\frac{336}{56}=6$$
+
+The exponent had to be known in advance for this to work, and it is given in the model. The calibrated rule is $f(x)=6x^{3/2}$, and the coefficient matches the claim, so the statement is True.
+--- C ---
+**C.** → True
+
+With the coefficient recovered from the record as $A=336/56=6$, the model is $f(x)=6x^{3/2}$. Evaluate the power at the requested index, taking the square root first:
+
+$$9^{3/2}=(\\sqrt{9})^{3}=3^{3}=27$$
+
+Apply the coefficient:
+
+$$f(9)=6\\cdot27=162$$
+
+The figure sits between the two recovered levels, above $f(4)=48$ and below $f(16)=384$, which is what an increasing model requires for an index between $4$ and $16$. Handling cost at index $9$ is exactly $162$ euros, so the statement is True.
+--- OVERVIEW (first 800) ---
+Handling cost is $f(x)=Ax^{3/2}$ euros, and the only record is $f(16)-f(4)=336$.
+
+**Part 1: Building the model.**
+
+Let $x$ = pallet-volume index, $f$ = daily handling cost in euros. No single level is known, so the coefficient has to come out of a difference. That works because $A$ is a common factor of every model value, and the exponent is given.
+
+**1. Translate: the surviving record.**
+
+$$A\\cdot16^{3/2}-A\\cdot4^{3/2}=336$$
+
+**2. Translate: factor the coefficient out.**
+
+$$A\\left(16^{3/2}-4^{3/2}\\right)=336$$
+
+**Part 2: The model.**
+
+$$f(x)=6\\,x^{3/2} \\tag{1}$$
+
+$$\\frac{f(kx)}{f(x)}=k^{3/2} \\tag{2}$$
+
+**Part 3: Solve.**
+
+**1.** The two powers in the record:
+
+$$16^{3/2}=64, \\qquad 4^{3/2}=8$$
+
+**2.** The calibration:
+
+$$56A=336 \\quad \\Rightarrow \\quad A=6$$
+
+**3.** Recovered l
+
+==== EXPAND CANDIDATES BY CONTENT FIT ====
+31D units dm=2 w=48 | When the curve sells $25$ units, revenue is $300$. | Turning a Negative-Power Demand Curve Around
+38B units dm=2 w=50 | Steel use first exceeds $200$ square metres once height exceeds about $8.16$ metres. | Geometrically Similar Silos: Steel Against Capacity
+32B units dm=2 w=51 | At $64$ hours, output exceeds the linear wage benchmark by $48$ units. | Average Product of a Square-Root Technology
+24D units dm=1 w=52 | A feed of $8$ produces $32$ tonnes. | Kiln Output Under a Licensed Ceiling
+45C units dm=2 w=53 | Eight $27$ kg animals use twice as much total energy as one $216$ kg animal. | Allometric Energy Use Across Livestock Weights
+32D units dm=2 w=54 | Producing $180$ units requires $225$ labour hours. | Average Product of a Square-Root Technology
+33B units dm=2 w=54 | Profit is positive at an output of $25$ units. | Two Break-Even Points Around a Fixed Charge
+39B boundary dm=2 w=55 | The $90$-hour staffing ceiling can cover at most $225$ shipments. | Inspection Hours Across Growing Shipment Volumes
+47E units dm=2 w=55 | Output per square metre rises as the array grows. | Rooftop Solar Output Across Two Installed Arrays
+16D compare dm=2 w=56 | At $144$ tickets Plan A bills $480$. | Two Support Contracts, One Crossing and One Cap
+36C units dm=2 w=56 | The volume added from depth $7$ to $9$ metres is exactly $\\frac{4}{3}$ times the volume added from  | Rainwater Basin Storage Under a Square Law
+41B boundary dm=2 w=56 | The $2700$ cap covers at most $81$ accounts under the practice's schedule. | Audit Cost With Economies of Scale
+15E units dm=1 w=57 | The covered area reaches $100\\pi$ square kilometres after about $11.1$ hours. | From Radius Growth to the Area a Service Covers
+26D compare dm=2 w=57 | At a load of $4$ the two algorithms score equally. | Two Ranking Algorithms That Swap Places
+41C compare dm=2 w=58 | The two firms tie at $16$ accounts, and the practice is cheaper than the rival for every $n>16$. | Audit Cost With Economies of Scale
+42D units dm=2 w=58 | At $100$ metres, concentration is $0.4$ microgram per cubic metre. | Airborne Particle Concentration Downwind
+46B units dm=2 w=58 | The zone four kilometres away supplies $400$ visitors a week. | Retail Catchment Under a Distance-Decay Law
+42B units dm=2 w=59 | Concentration is at most $6.25$ precisely when the monitor is at least $16$ metres from the stack. | Airborne Particle Concentration Downwind
+36D units dm=2 w=60 | A stored volume of $675$ cubic metres corresponds to a depth of $15$ metres. | Rainwater Basin Storage Under a Square Law
+36E units dm=2 w=61 | Stored volume per metre of depth rises as the basin fills. | Rainwater Basin Storage Under a Square Law
+38A units dm=2 w=61 | A silo with capacity $192$ cubic metres needs about $208$ square metres of steel. | Geometrically Similar Silos: Steel Against Capacity
+9D boundary dm=2 w=62 | The contract ceiling is reached at about $250$ staff. | Warehouse Throughput With a Contractual Ceiling
+15B units dm=1 w=62 | After $4$ hours the covered area is $36\\pi$ square kilometres. | From Radius Growth to the Area a Service Covers
+7B boundary dm=2 w=63 | The budget cap allows at most $240$ usable responses. | Survey Reach Against a Fieldwork Budget Cap
+35E units dm=2 w=63 | Throughput per cubic metre of gas rises as the feed rises. | Furnace Throughput Calibrated From Two Runs
+14E units dm=2 w=64 | Capacity per centimetre of diameter is the same at every diameter. | Pipeline Capacity, Inversion, and a Change of Units
+8E compare dm=2 w=65 | The automated procedure's cost per document is constant. | Quadratic and Linear Inspection Costs That Meet Once
+36B units dm=2 w=65 | At a depth of $10$ metres the basin holds $300$ cubic metres. | Rainwater Basin Storage Under a Square Law
+8B compare dm=2 w=67 | At $n=25$ the two procedures differ by less than $100$. | Quadratic and Linear Inspection Costs That Meet Once
+23C units dm=2 w=67 | To reduce monthly quantity to $200$ units, the price must rise to $40$. | Inelastic Demand and Where Revenue Goes
+24C boundary dm=2 w=67 | A fuel feed of $32$ produces half of the licensed output ceiling. | Kiln Output Under a Licensed Ceiling
+38D units dm=2 w=67 | Steel per cubic metre of capacity falls as the silo gets taller. | Geometrically Similar Silos: Steel Against Capacity
+16C compare dm=2 w=68 | Plan A's cap binds from $100$ tickets onwards. | Two Support Contracts, One Crossing and One Cap
+21D boundary dm=2 w=68 | The $150$-item order can be filled inside a $20$-hour shift. | Packing Output Recovered From a Shift Extension
+26C compare dm=2 w=68 | Algorithm S scores higher at every load above the crossing point. | Two Ranking Algorithms That Swap Places
+27A boundary dm=2 w=68 | The capacity ratio $C(64)/C(32)$ is less than $2$. | Server Fleet Capacity Beneath a Contracted Ceiling
+40C units dm=2 w=68 | Illuminance is one ninth of its two-metre reading at a distance of $6$ metres. | Illuminance Down the Length of a Gallery
+8C compare dm=2 w=69 | For $n>0$ the two procedures cost the same only at $n=20$. | Quadratic and Linear Inspection Costs That Meet Once
+16B compare dm=2 w=70 | Below $64$ tickets Plan B is the cheaper contract. | Two Support Contracts, One Crossing and One Cap
+
+==== SLIGHT SHORTEN CANDIDATES ====
+64A recover-exponent dm=2 w=103 | Average product is a power function of $L$ with exponent $3/4$. | Average Product on a Bottling Line
+78A recover-exponent dm=2 w=103 | The exponent is $r=2$. | A Grain Dryer Calibrated From Two Recorded Ratios
+82B evaluate-level dm=2 w=103 | At $n=4$, net benefit is $16$ thousand euros. | Shade-Tree Cooling Benefit Against Upkeep Cost
+79A evaluate-level dm=2 w=102 | The intermediate law is $m(t)=2t^{1/2}$. | Kiln Flue Mass Flow into a Particulate Index
+80A evaluate-level dm=3 w=102 | The two apps quote the same wait at $d=400$. | Two Shuttle Fare Timers Under a Wait Cap
+70A evaluate-level dm=2 w=101 | The mass law is $M(h)=240h^{3}$. | Geometrically Similar Bells Cast From One Pattern
+21A recover-coeff dm=3 w=100 | The coefficient of the packing law is $30$. | Packing Output Recovered From a Shift Extension
+82A evaluate-level dm=2 w=100 | At $n=9$, net benefit is $18$ thousand euros. | Shade-Tree Cooling Benefit Against Upkeep Cost
+51B evaluate-level dm=2 w=98 | At $16$ A the weld strength is $320$ N. | Weld Strength Recovered From Two Spot Checks
+81B recover-exponent dm=2 w=97 | The exponent recovered from the first two readings alone is $1$. | Wetland Evaporation Across Three Humidity Readings
+79B evaluate-level dm=2 w=96 | The composed map is $P(m(t))=t^{2}$. | Kiln Flue Mass Flow into a Particulate Index
+74A evaluate-level dm=2 w=95 | The flow law is $Q(r)=3r^{4}$. | Micro-Irrigation Flow Under a Fourth-Power Law
+77C recover-coeff dm=2 w=95 | With the head in centimetres and discharge in litres per second, the coefficient is $16000$. | A Weir Rating Curve Rewritten in New Units
+
+==== HYPER-UNIFORM BY RANGE ====
+1-30: #6(2/3,w77)
+31-60: #32(2/2,w55), #41(2/2,w52), #42(2/2,w54), #44(2/2,w50), #45(2/2,w53), #55(2/3,w76), #56(2/3,w77), #57(2/3,w79), #58(2/3,w76), #60(2/3,w73)
+61-87: #64(2/3,w83), #71(2/3,w88), #72(2/3,w87), #74(2/3,w86), #75(2/3,w87), #76(2/3,w86), #77(2/3,w86), #78(2/3,w88), #79(2/3,w96), #83(2/3,w96), #86(2/3,w90), #87(2/3,w87)

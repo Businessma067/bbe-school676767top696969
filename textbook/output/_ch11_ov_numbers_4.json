@@ -1,0 +1,48 @@
+[
+  {
+    "id": "math-11-66",
+    "caseId": "MATH 11.66",
+    "missing_numbers": [
+      "3000"
+    ],
+    "original_context": [
+      "**4.** Sum of first $4$ terms: $4,000 - 2,000 + 1,000 - 500 = \\$2,500.00$ (not $\\$3,000.00$)."
+    ],
+    "current_text": "A quantitative trading model applies a diminishing corrective adjustment after each rebalancing: the first adjustment is \\$4,000, and each subsequent adjustment reverses sign and is half the size of the previous one, continuing indefinitely. This is an infinite geometric series with $a = 4{,}000$ dollars and a negative quotient $k = -0.5$.\r\n\r\n**Part 1: Setup.**\r\n\r\nThe first adjustment is \\$4,000, represented by\r\n\r\n$$a = 4,000$$\r\n\r\nThe sign-reversing decay quotient is\r\n\r\n$$k = -0.5$$\r\n\r\n**Part 2: Formula.**\r\n\r\nFor $|k|<1$, the infinite geometric sum is\r\n\r\n$$s_\\infty = \\frac{a}{1-k}$$\r\n\r\nFor the special quotient $k=-1$, the finite partial sums alternate according to\r\n\r\n$$s_n = a, \\qquad n=2j+1$$\r\n\r\n$$s_n = 0, \\qquad n=2j$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Test the absolute value of the quotient:\r\n\r\n$$|k| = |-0.5|$$\r\n\r\n$$|k| = 0.5 < 1$$\r\n\r\nThe series therefore converges.\r\n\r\n**2.** Substitute the first adjustment and quotient into the infinite-sum formula:\r\n\r\n$$s_\\infty = \\frac{4,000}{1-(-0.5)}$$\r\n\r\n$$s_\\infty = \\frac{4,000}{1.5}$$\r\n\r\n$$s_\\infty \\approx 2,666.67$$\r\n\r\nThe net infinite corrective adjustment is approximately \\$2,666.67.\r\n\r\n**3.** Generate the first four terms one at a time:\r\n\r\n$$a_1 = 4,000$$\r\n\r\n$$a_2 = 4,000(-0.5) = -2,000$$\r\n\r\n$$a_3 = 4,000(0.25) = 1,000$$\r\n\r\n$$a_4 = 4,000(-0.125) = -500$$\r\n\r\nThe signs alternate while each magnitude is half the preceding magnitude.\r\n\r\n**4.** Add those four adjustments:\r\n\r\n$$s_4 = 4,000-2,000+1,000-500$$\r\n\r\n$$s_4 = 2,500$$\r\n\r\nThe first four adjustments sum to \\$2,500.00, not \\$3,000.00.\r\n\r\n**5.** If $k=-1$, the terms alternate between $a$ and $-a$. Consequently,\r\n\r\n$$s_1=a, \\quad s_2=0, \\quad s_3=a, \\quad s_4=0$$\r\n\r\nThe partial sums keep oscillating between $a$ for odd $n$ and $0$ for even $n$, so they never settle on a limit."
+  },
+  {
+    "id": "math-11-68",
+    "caseId": "MATH 11.68",
+    "missing_numbers": [
+      "130000"
+    ],
+    "original_context": [
+      "**4.** Infinite sum: $15,000/(1 - 0.88) = 15,000/0.12 = \\$125,000.00$ (not $\\$130,000.00$)."
+    ],
+    "current_text": "A structured settlement is set up to pay \\$15,000 in its first year, with each subsequent payment $88\\%$ of the prior one, where $a = 15{,}000$ dollars and $k = 0.88$. One clause pays out for a finite $8$ years; a separate hypothetical clause considers what the payments would total if continued forever.\r\n\r\n**Part 1: Setup.**\r\n\r\nThe first-year payment and annual decay quotient are\r\n\r\n$$a = 15,000, \\qquad k = 0.88$$\r\n\r\nThe finite clause covers\r\n\r\n$$n = 8$$\r\n\r\n**Part 2: Formula.**\r\n\r\nThe finite geometric total is\r\n\r\n$$s_n = a\\frac{1-k^n}{1-k}$$\r\n\r\nBecause $|k|<1$, the hypothetical perpetual total is\r\n\r\n$$s_\\infty = \\frac{a}{1-k}$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Apply the quotient once to find payment $2$:\r\n\r\n$$a_2 = 15,000 \\times 0.88$$\r\n\r\n$$a_2 = 13,200$$\r\n\r\nThe second payment is \\$13,200.00.\r\n\r\n**2.** The eighth power of the quotient is\r\n\r\n$$0.88^8 \\approx 0.359635$$\r\n\r\n**3.** Substitute into the finite-sum formula:\r\n\r\n$$s_8 = 15,000\\frac{1-0.359635}{0.12}$$\r\n\r\n$$s_8 = 15,000 \\times 5.336379$$\r\n\r\n$$s_8 \\approx 80,045.68$$\r\n\r\nThe eight payments total approximately \\$80,045.68.\r\n\r\n**4.** The perpetual total is\r\n\r\n$$s_\\infty = \\frac{15,000}{1-0.88}$$\r\n\r\n$$s_\\infty = \\frac{15,000}{0.12}$$\r\n\r\n$$s_\\infty = 125,000$$\r\n\r\nThe infinite stream totals \\$125,000.00, not \\$130,000.00.\r\n\r\n**5.** The finite total as a share of the infinite total is\r\n\r\n$$\\frac{80,045.68}{125,000.00} = 0.6404$$\r\n\r\n$$0.6404 \\approx 64.04\\%$$\r\n\r\nSince $64.04\\%<75\\%$, the eight-year clause does not exceed $75\\%$ of the perpetual total.\r\n\r\n**6.** With the slower decay $k=0.95$, the infinite total becomes\r\n\r\n$$s_\\infty = \\frac{15,000}{1-0.95}$$\r\n\r\n$$s_\\infty = \\frac{15,000}{0.05} = 300,000$$\r\n\r\n$$300,000 > 125,000$$\r\n\r\nThe result is \\$300,000.00, which is larger, not smaller, than \\$125,000.00."
+  },
+  {
+    "id": "math-11-77",
+    "caseId": "MATH 11.77",
+    "missing_numbers": [
+      "650"
+    ],
+    "original_context": [
+      "**1.** $a_4 = 5,000/4^{1.5} = 5,000/8 = \\$625.00$ (not $\\$650.00$)."
+    ],
+    "current_text": "An analyst models the marginal benefit of the n-th batch of advertising spend as $a_n = 5,000/n^{p}$ dollars, and wants to know, for different values of the exponent p, whether the infinite total marginal benefit $\\sum a_n$ converges, using the rule that $\\sum 1/n^{p}$ converges if and only if p > 1.\r\n\r\n**Part 1: Setup.**\r\n\r\nThe marginal benefit sequence is\r\n\r\n$$a_n = \\frac{5,000}{n^p}$$\r\n\r\nThe primary and comparison exponents are\r\n\r\n$$p = 1.5, \\qquad p = 1, \\qquad p = 0.5$$\r\n\r\n**Part 2: Formula.**\r\n\r\nThe $p$-series rule is\r\n\r\n$$\\sum_{n=1}^{\\infty}\\frac{1}{n^p}, \\qquad p>1$$\r\n\r\nA necessary, but not sufficient, condition for convergence is\r\n\r\n$$\\lim_{n\\to\\infty}a_n=0$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** At $p=1.5$, the fourth marginal benefit is\r\n\r\n$$a_4 = \\frac{5,000}{4^{1.5}}$$\r\n\r\n$$4^{1.5}=8$$\r\n\r\n$$a_4 = \\frac{5,000}{8}=625.00$$\r\n\r\nThe fourth benefit is \\$625.00, not \\$650.00.\r\n\r\n**2.** For the primary exponent,\r\n\r\n$$1.5>1$$\r\n\r\nTherefore the series\r\n\r\n$$\\sum_{n=1}^{\\infty}\\frac{5,000}{n^{1.5}}$$\r\n\r\nconverges to a finite value.\r\n\r\n**3.** At $p=1$, the series becomes\r\n\r\n$$\\sum_{n=1}^{\\infty}\\frac{5,000}{n}$$\r\n\r\nThis is a constant multiple of the harmonic series. It diverges and has no finite sum.\r\n\r\n**4.** At $n=100$ and $p=1$, the individual term is\r\n\r\n$$a_{100} = \\frac{5,000}{100}=5.00$$\r\n\r\nThe value \\$5.00 is correct, and the terms approach zero. However, the harmonic series shows that $a_n\\to0$ is necessary rather than sufficient for convergence.\r\n\r\n**5.** For the final comparison,\r\n\r\n$$0.5\\leq1$$\r\n\r\nTherefore\r\n\r\n$$\\sum_{n=1}^{\\infty}\\frac{5,000}{n^{0.5}}$$\r\n\r\ndiverges even though its individual terms approach zero."
+  },
+  {
+    "id": "math-11-79",
+    "caseId": "MATH 11.79",
+    "missing_numbers": [
+      "22000000",
+      "2900000"
+    ],
+    "original_context": [
+      "**2.** $0.94^{15} = 0.395291799$; $s_{15} = 2,400,000 \\times (1-0.395291799)/0.06 = 2,400,000 \\times 10.078470 = \\$24,188,328.05$ (not $\\$22,000,000.00$).",
+      "**5.** Year-$7$ recovery cash flow: $2,400,000 \\times 1.06^{6} = 2,400,000 \\times 1.418519 = \\$3,404,445.87$ (not $\\$2,900,000.00$)."
+    ],
+    "current_text": "A private equity fund's portfolio company currently generates \\$2,400,000 in annual free cash flow. Under a “recession” scenario, cash flow is expected to shrink $6\\%$ every year indefinitely with $a = 2{,}400{,}000$ dollars and $k = 0.94$. Under a “recovery” scenario, cash flow instead grows $6\\%$ per year for the next $7$ years before the fund exits with $a = 2{,}400{,}000$ dollars, $k = 1.06$, and $n = 7$.\r\n\r\n**Part 1: Setup.**\r\n\r\nBoth scenarios begin with annual free cash flow of \\$2,400,000:\r\n\r\n$$a = 2,400,000$$\r\n\r\nThe recession quotient and infinite horizon are paired with\r\n\r\n$$k_R = 0.94$$\r\n\r\nThe recovery quotient and finite horizon are\r\n\r\n$$k_G = 1.06, \\qquad n = 7$$\r\n\r\n**Part 2: Formula.**\r\n\r\nFor an infinite declining stream with $|k|<1$,\r\n\r\n$$s_\\infty = \\frac{a}{1-k}$$\r\n\r\nA finite geometric stream can be written as\r\n\r\n$$s_n = a\\frac{1-k^n}{1-k}$$\r\n\r\nor equivalently as\r\n\r\n$$s_n = a\\frac{k^n-1}{k-1}$$\r\n\r\nThe year-$t$ cash flow is\r\n\r\n$$a_t = ak^{t-1}$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** The infinite recession sum is\r\n\r\n$$s_\\infty = \\frac{2,400,000}{1-0.94}$$\r\n\r\n$$s_\\infty = \\frac{2,400,000}{0.06}$$\r\n\r\n$$s_\\infty = 40,000,000.00$$\r\n\r\nThe recession stream totals \\$40,000,000.00.\r\n\r\n**2.** For the first $15$ recession years, the decay factor is\r\n\r\n$$0.94^{15} = 0.395291799$$\r\n\r\nSubstitution gives\r\n\r\n$$s_{15} = 2,400,000\\frac{1-0.395291799}{0.06}$$\r\n\r\n$$s_{15} = 2,400,000 \\times 10.078470$$\r\n\r\n$$s_{15} \\approx 24,188,328.05$$\r\n\r\nThe $15$-year total is \\$24,188,328.05, not \\$22,000,000.00.\r\n\r\n**3.** Its share of the infinite recession total is\r\n\r\n$$\\frac{24,188,328.05}{40,000,000.00}=0.60471$$\r\n\r\n$$0.60471 \\approx 60.47\\%$$\r\n\r\nThe first $15$ years provide about $60.47\\%$, not $75\\%$, of the infinite recession total.\r\n\r\n**4.** For the seven-year recovery stream, the growth factor is\r\n\r\n$$1.06^7 = 1.503630259$$\r\n\r\nThe finite total is\r\n\r\n$$s_7 = 2,400,000\\frac{1.503630259-1}{0.06}$$\r\n\r\n$$s_7 = 2,400,000 \\times 8.393838$$\r\n\r\n$$s_7 \\approx 20,145,210.36$$\r\n\r\n$$20,145,210.36 < 40,000,000.00$$\r\n\r\nThe seven-year recovery total is less than the infinite recession total, not more.\r\n\r\n**5.** Year $7$ of the recovery uses six growth intervals:\r\n\r\n$$1.06^6 \\approx 1.418519$$\r\n\r\n$$a_7 = 2,400,000 \\times 1.418519$$\r\n\r\n$$a_7 \\approx 3,404,445.87$$\r\n\r\nThe year-$7$ recovery cash flow is approximately \\$3,404,445.87, not \\$2,900,000.00."
+  }
+]

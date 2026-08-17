@@ -1,0 +1,192 @@
+[
+  {
+    "id": "math-8-26",
+    "case_id": "MATH 8.26",
+    "title": "Two Support Contracts, One Crossing and One Cap",
+    "difficulty": "3/5",
+    "sort_order": 26,
+    "context": "A helpdesk compares two support contracts for $u>0$ tickets a month. Plan A bills $C_A(u)=a u^{0.5}$ and a filed invoice shows $36$ tickets billed at $240$; Plan A also carries a monthly cap, so it never charges more than $400$. Plan B bills a flat $5$ per ticket with no cap. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The two plans bill the same amount at $64$ tickets.",
+      "Below $64$ tickets Plan B is the cheaper contract.",
+      "Plan A's cap binds from $100$ tickets onwards.",
+      "At $144$ tickets Plan A bills $480$.",
+      "Plan A's cost per ticket is the same at every ticket volume."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nA crossing of a square-root schedule and a linear one starts from Plan A's coefficient, which the filed invoice supplies:\n\n$$a\\sqrt{36} = 240 \\quad \\Rightarrow \\quad 6a = 240 \\quad \\Rightarrow \\quad a = 40$$\n\nDividing by $\\sqrt{u}$ is legitimate on the domain $u>0$ and leaves a condition on $\\sqrt{u}$ alone, which then has to be squared out:\n\n$$40\\sqrt{u} = 5u \\quad \\Rightarrow \\quad 40 = 5\\sqrt{u} \\quad \\Rightarrow \\quad \\sqrt{u} = 8 \\quad \\Rightarrow \\quad u = 64$$\n\nStopping at $\\sqrt{u}=8$ would report $8$ tickets instead. The shared bill also sits under Plan A's cap:\n\n$$C_A(64) = 40(8) = 320, \\qquad C_B(64) = 5(64) = 320$$\n\nBoth plans bill $320$ at $64$ tickets, so the statement is True.",
+      "**B.** → True\n\nAn interval claim is settled by the inequality between the two schedules, and $\\sqrt{u}>0$ permits the same division as before:\n\n$$5u < 40\\sqrt{u} \\quad \\Longleftrightarrow \\quad 5\\sqrt{u} < 40 \\quad \\Longleftrightarrow \\quad u < 64$$\n\n$$C_A(16) = 40(4) = 160, \\qquad C_B(16) = 80$$\n\nPlan A is the contract that flattens out at high volume, which makes it feel like the cheap one, yet a square-root schedule starts steeply and charges $40$ for the first ticket against Plan B's $5$. Below the crossing the flat contract is cheaper, so the statement is True.",
+      "**C.** → True\n\nA monetary cap becomes a ticket volume by asking where the uncapped schedule reaches it:\n\n$$40\\sqrt{u} = 400 \\quad \\Rightarrow \\quad \\sqrt{u} = 10 \\quad \\Rightarrow \\quad u = 100$$\n\nBecause the uncapped schedule increases, every volume beyond that point would bill more than the cap and is trimmed to it:\n\n$$C_A(u) = \\begin{cases} 40\\sqrt{u}, & u \\le 100 \\\\ 400, & u > 100 \\end{cases}$$\n\nBelow $100$ tickets the cap is inert, which is why the crossing at $64$ tickets and $320$ is untouched by it. The cap takes over from $100$ tickets, so the statement is True.",
+      "**D.** → False\n\nThe uncapped formula describes the bill only up to the cap, so a volume past $100$ tickets has to run through the two-piece rule:\n\n$$40\\sqrt{144} = 40(12) = 480$$\n\n$$C_A(144) = \\min\\{480,\\,400\\} = 400$$\n\nThe arithmetic behind $480$ is correct while the modelling is not, and the error of $80$ at $144$ tickets widens with every extra ticket. Plan A bills $400$, so the statement is False.",
+      "**E.** → False\n\nA constant unit price is what an exponent of $1$ produces, so dividing each schedule by the ticket count shows which plan has it:\n\n$$\\frac{C_A(u)}{u} = \\frac{40\\sqrt{u}}{u} = 40u^{-0.5}, \\qquad \\frac{C_B(u)}{u} = 5$$\n\nPlan A's exponent is $0.5$, which leaves a negative exponent after the division, and once the cap binds the numerator stops growing and the decline steepens:\n\n$$\\frac{240}{36} \\approx 6.67, \\qquad \\frac{320}{64} = 5, \\qquad \\frac{400}{144} \\approx 2.78$$\n\nThe flat $5$ per ticket belongs to Plan B. Plan A's per-ticket cost more than halves across that range, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $u$ = tickets per month, $C_A$ and $C_B$ = monthly bills. Plan A needs its coefficient recovered from the filed invoice, and its cap turns the schedule into a two-piece rule that must be respected when evaluating large volumes.\n\n**1. Translate: Plan A's invoice.**\n\n$$a\\sqrt{36} = 240$$\n\n**2. Translate: Plan A's cap.** The uncapped schedule is trimmed once it reaches $400$:\n\n$$C_A(u) = \\min\\left\\{a\\sqrt{u},\\;400\\right\\}$$\n\n**Part 2: The model.**\n\n$$C_A(u) = \\min\\left\\{40\\sqrt{u},\\;400\\right\\} \\tag{1}$$\n\n$$C_B(u) = 5u \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The invoice fixes Plan A's coefficient:\n\n$$6a = 240 \\;\\Rightarrow\\; a = 40$$\n\n**2.** Locate the crossing of the uncapped schedules by setting the two bills equal:\n\n$$40\\sqrt{u} = 5u$$\n\nDividing both sides by $5\\sqrt{u}$ leaves a single square root:\n\n$$\\sqrt{u} = 8$$\n\nSquaring gives the crossing volume:\n\n$$u = 64$$\n\nAt that volume both plans bill $320$.\n\n**3.** Order the plans on each side of the crossing:\n\n$$u < 64 \\;\\Rightarrow\\; C_B < C_A, \\qquad 64 < u \\;\\Rightarrow\\; C_A < C_B$$\n\n**4.** Convert the cap into a ticket volume:\n\n$$40\\sqrt{u} = 400 \\;\\Rightarrow\\; u = 100$$\n\nBeyond $100$ tickets Plan A is flat at $400$ while Plan B keeps climbing, so Plan A's advantage widens without limit.\n\n**5.** Unit costs separate the two shapes. Plan A's cost per ticket falls as the volume grows:\n\n$$\\frac{C_A(u)}{u} = 40u^{-0.5}$$\n\nPlan B's cost per ticket is the same at every volume:\n\n$$\\frac{C_B(u)}{u} = 5$$\n\nThat is why the ranking flips once and never flips back."
+    ],
+    "solution_overview": "Plan A bills $C_A(u)=au^{0.5}$ with an invoice of $240$ at $36$ tickets and a monthly cap of $400$; Plan B bills $5$ per ticket.\n\n**Part 1: Building the model.**\n\nLet $u$ = tickets per month, $C_A$ and $C_B$ = monthly bills. Plan A needs its coefficient recovered from the filed invoice, and its cap turns the schedule into a two-piece rule that must be respected when evaluating large volumes.\n\n**1. Translate: Plan A's invoice.**\n\n$$a\\sqrt{36} = 240$$\n\n**2. Translate: Plan A's cap.** The uncapped schedule is trimmed once it reaches $400$:\n\n$$C_A(u) = \\min\\left\\{a\\sqrt{u},\\;400\\right\\}$$\n\n**Part 2: The model.**\n\n$$C_A(u) = \\min\\left\\{40\\sqrt{u},\\;400\\right\\} \\tag{1}$$\n\n$$C_B(u) = 5u \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The invoice fixes Plan A's coefficient:\n\n$$6a = 240 \\;\\Rightarrow\\; a = 40$$\n\n**2.** Locate the crossing of the uncapped schedules by setting the two bills equal:\n\n$$40\\sqrt{u} = 5u$$\n\nDividing both sides by $5\\sqrt{u}$ leaves a single square root:\n\n$$\\sqrt{u} = 8$$\n\nSquaring gives the crossing volume:\n\n$$u = 64$$\n\nAt that volume both plans bill $320$.\n\n**3.** Order the plans on each side of the crossing:\n\n$$u < 64 \\;\\Rightarrow\\; C_B < C_A, \\qquad 64 < u \\;\\Rightarrow\\; C_A < C_B$$\n\n**4.** Convert the cap into a ticket volume:\n\n$$40\\sqrt{u} = 400 \\;\\Rightarrow\\; u = 100$$\n\nBeyond $100$ tickets Plan A is flat at $400$ while Plan B keeps climbing, so Plan A's advantage widens without limit.\n\n**5.** Unit costs separate the two shapes. Plan A's cost per ticket falls as the volume grows:\n\n$$\\frac{C_A(u)}{u} = 40u^{-0.5}$$\n\nPlan B's cost per ticket is the same at every volume:\n\n$$\\frac{C_B(u)}{u} = 5$$\n\nThat is why the ranking flips once and never flips back.\n\n**Answer.** $a = 40$ | crossing at $u = 64$ costing $320$ | cap binds from $u = 100$",
+    "expl_lens": [
+      715,
+      572,
+      577,
+      404,
+      2428
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-27",
+    "case_id": "MATH 8.27",
+    "title": "An Eighty Percent Learning Curve Meeting a Materials Floor",
+    "difficulty": "4/5",
+    "sort_order": 27,
+    "context": "Unit cost on a new assembly line follows the learning curve $c(N)=c_1 N^{-b}$, where $N>0$ is cumulative output. Every doubling of cumulative output multiplies unit cost by $0.8$, and the first unit cost $1000$. Materials alone cost $400$ per unit, so the curve cannot describe costs below that floor. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "After three successive doublings, the modelled unit cost is $512$, a total cut of $48.8\\%$ from the first unit.",
+      "The exponent of the learning curve is $-0.8$.",
+      "After $8$ units the unit cost is $500$.",
+      "The materials floor binds from about $12$ units onwards.",
+      "Quadrupling cumulative output halves the unit cost."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nEach doubling of cumulative output applies the survival factor $0.8$ once, so three successive doublings apply it three times over:\n\n$$c(8)=1000(0.8)^3=1000(0.512)=512$$\n\nA cumulative cut is measured against the first-unit cost:\n\n$$\\frac{1000-512}{1000}=0.488=48.8\\%$$\n\nAdding three $20\\%$ cuts into a $60\\%$ reduction would treat the factors as combining additively rather than multiplicatively. The modelled cost is $512$, a cut of $48.8\\%$, so the statement is True.",
+      "**B.** → False\n\nThe learning multiplier and the exponent are different objects: $0.8$ is what cost is multiplied by at a doubling, while the exponent governs every other scale factor. Recovering it takes logarithms:\n\n$$2^{-b} = 0.8 \\quad \\Rightarrow \\quad -b\\ln 2 = \\ln 0.8$$\n\n$$b = \\frac{-\\ln 0.8}{\\ln 2} = \\frac{0.2231}{0.6931} \\approx 0.3219$$\n\n$$c(N) = 1000\\,N^{-0.3219}$$\n\nAn exponent of $-0.8$ would mean a doubling multiplied cost by $2^{-0.8}\\approx0.574$, a far steeper curve than the one recorded. The exponent is about $-0.322$, so the statement is False.",
+      "**C.** → False\n\nBecause $8=2^{3}$, the eighth unit is reached by counting doublings rather than by taking logarithms:\n\n$$1 \\to 2 \\to 4 \\to 8$$\n\nThat chain holds three doublings, so the $0.8$ factor is applied three times:\n\n$$c(8) = 1000 \\times 0.8^{3} = 1000 \\times 0.512 = 512$$\n\nThe exponent form agrees:\n\n$$1000 \\times 8^{-0.3219} = 1000 \\times e^{-0.3219 \\times 2.0794} \\approx 512$$\n\nThe claimed $500$ is a rounded half of the first-unit cost, and rounding a learning curve that way distorts the floor calculation later. The unit cost is $512$, so the statement is False.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $N$ = cumulative output and $c(N)$ = unit cost. The learning rule carries the exponent, the first unit carries the coefficient, and the floor is a level that the curve eventually crosses from above.\n\n**1. Translate: the learning rule.** Scale factors are free of the coefficient:\n\n$$\\frac{c(2N)}{c(N)} = 2^{-b} = 0.8$$\n\n**2. Translate: the first unit.** At $N=1$ the shape factor is $1$:\n\n$$c_1 = 1000$$\n\n**Part 2: The model.**\n\n$$2^{-b} = 0.8 \\tag{1}$$\n\n$$c(N) = 1000\\,N^{-b} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Logarithms turn (1) into the exponent:\n\n$$b = \\frac{-\\ln 0.8}{\\ln 2} \\approx 0.3219, \\qquad c(N) = 1000N^{-0.3219}$$\n\n**2.** At powers of two the curve can be walked doubling by doubling:\n\n$$c(2) = 800, \\quad c(4) = 640, \\quad c(8) = 512, \\quad c(16) = 409.6$$\n\n**3.** Scale factors compound multiplicatively, not additively:\n\n$$0.8^{2} = 0.64 \\;(-36\\%), \\qquad 0.8^{3} = 0.512$$\n\n**4.** Invert the curve at the materials floor:\n\n$$N^{0.3219} = 2.5 \\;\\Rightarrow\\; N = 2.5^{\\frac{1}{0.3219}} \\approx 17.2$$\n\n**5.** Beyond about $17$ units the curve would predict costs below materials, so the model has to be read as flat at $400$ from there on.",
+      "**D.** → False\n\nThe materials floor binds where the curve first reaches $400$, which calls for an inversion of the calibrated learning curve:\n\n$$1000\\,N^{-0.3219} = 400 \\quad \\Rightarrow \\quad N^{0.3219} = 2.5$$\n\n$$N = 2.5^{\\frac{1}{0.3219}} = e^{\\frac{0.9163}{0.3219}} = e^{2.8465} \\approx 17.2$$\n\nTwo doublings bracket that figure:\n\n$$c(16) = 1000 \\times 0.8^{4} = 409.6 > 400, \\qquad c(32) = 327.7 < 400$$\n\nThe curve is flattening, falling only from $512$ to about $410$ between the eighth and sixteenth units, so extrapolating its early steep part reaches the floor too soon. The floor binds from about $17$ units, so the statement is False.",
+      "**E.** → False\n\nQuadrupling cumulative output is two doublings, so the survival factor applies twice:\n\n$$\\frac{c(4N)}{c(N)} = \\left(0.8\\right)^{2} = 0.64, \\qquad 1 - 0.64 = 0.36 = 36\\%$$\n\nPercentage reductions compound multiplicatively, so two $20\\%$ cuts leave $64\\%$ of the cost rather than $60\\%$, and halving would need a multiplier near $0.707$ at each doubling. Concrete volumes confirm the factor:\n\n$$c(2) = 800, \\qquad c(8) = 512, \\qquad \\frac{512}{800} = 0.64$$\n\nQuadrupling removes about a third of the cost rather than half, so the statement is False."
+    ],
+    "solution_overview": "Unit cost follows $c(N)=c_1N^{-b}$ with a doubling multiplier of $0.8$, a first-unit cost of $1000$, and a materials floor at $400$.\n\n**Part 1: Building the model.**\n\nLet $N$ = cumulative output and $c(N)$ = unit cost. The learning rule carries the exponent, the first unit carries the coefficient, and the floor is a level that the curve eventually crosses from above.\n\n**1. Translate: the learning rule.** Scale factors are free of the coefficient:\n\n$$\\frac{c(2N)}{c(N)} = 2^{-b} = 0.8$$\n\n**2. Translate: the first unit.** At $N=1$ the shape factor is $1$:\n\n$$c_1 = 1000$$\n\n**Part 2: The model.**\n\n$$2^{-b} = 0.8 \\tag{1}$$\n\n$$c(N) = 1000\\,N^{-b} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Logarithms turn (1) into the exponent:\n\n$$b = \\frac{-\\ln 0.8}{\\ln 2} \\approx 0.3219, \\qquad c(N) = 1000N^{-0.3219}$$\n\n**2.** At powers of two the curve can be walked doubling by doubling:\n\n$$c(2) = 800, \\quad c(4) = 640, \\quad c(8) = 512, \\quad c(16) = 409.6$$\n\n**3.** Scale factors compound multiplicatively, not additively:\n\n$$0.8^{2} = 0.64 \\;(-36\\%), \\qquad 0.8^{3} = 0.512$$\n\n**4.** Invert the curve at the materials floor:\n\n$$N^{0.3219} = 2.5 \\;\\Rightarrow\\; N = 2.5^{\\frac{1}{0.3219}} \\approx 17.2$$\n\n**5.** Beyond about $17$ units the curve would predict costs below materials, so the model has to be read as flat at $400$ from there on.\n\n**Answer.** $b \\approx 0.322$ | $c(N) = 1000N^{-0.322}$ | floor reached at $N \\approx 17.2$ units",
+    "expl_lens": [
+      484,
+      566,
+      2016,
+      645,
+      562
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-28",
+    "case_id": "MATH 8.28",
+    "title": "Advertising Revenue Against a Proportional Platform Fee",
+    "difficulty": "4/5",
+    "sort_order": 28,
+    "context": "A merchant's sales revenue from an advertising spend $x>0$ follows $R(x)=90 x^{0.5}$, while the platform charges a fee of $F(x)=6x$ on the same spend. The merchant judges a campaign by the net gain $R(x)-F(x)$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The net gain is zero at a spend of $225$.",
+      "The net gain is positive at every spend above $225$.",
+      "Doubling the spend doubles revenue.",
+      "At a spend of $100$ the net gain is $300$.",
+      "Revenue per unit of spend rises as the spend rises."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nBreak-even is where revenue and fee coincide, and dividing by $\\sqrt{x}$ turns that equation into a condition on the root:\n\n$$90\\sqrt{x} = 6x \\quad \\Rightarrow \\quad 90 = 6\\sqrt{x} \\quad \\Rightarrow \\quad \\sqrt{x} = 15$$\n\n$$x = 15^{2} = 225$$\n\nThe division discards the root at $x=0$, which the domain excludes and which would only say that a campaign with no spend trivially breaks even. Both sides agree at the surviving root:\n\n$$R(225) = 90(15) = 1350, \\qquad F(225) = 6(225) = 1350$$\n\nThe net gain is zero at a spend of $225$, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $x$ = advertising spend, $R$ = sales revenue, $F$ = platform fee. Both constants are given, so the work is comparison rather than calibration: one law has exponent $0.5$ and the other exponent $1$, and their difference decides the campaign.\n\n**1. Translate: the net gain.**\n\n$$\\Pi(x) = R(x) - F(x) = 90x^{0.5} - 6x$$\n\n**2. Translate: break-even.** The two curves meet where the net gain vanishes:\n\n$$90\\sqrt{x} = 6x$$\n\n**Part 2: The model.**\n\n$$\\Pi(x) = 90\\sqrt{x} - 6x \\tag{1}$$\n\n$$\\Pi(x) = 6\\sqrt{x}\\left(15 - \\sqrt{x}\\right) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Solve the break-even condition on $x>0$:\n\n$$\\sqrt{x} = 15 \\;\\Rightarrow\\; x = 225, \\qquad R = F = 1350$$\n\n**2.** The factored form (2) settles the sign everywhere:\n\n$$0 < x < 225 \\;\\Rightarrow\\; \\Pi > 0, \\qquad x > 225 \\;\\Rightarrow\\; \\Pi < 0$$\n\n**3.** Levels inside and outside the profitable window:\n\n$$\\Pi(100) = 900 - 600 = 300, \\qquad \\Pi(400) = 1800 - 2400 = -600$$\n\n**4.** The two laws scale differently, which is why the fee eventually wins:\n\n$$\\frac{R(2x)}{R(x)} = 2^{0.5} \\approx 1.414, \\qquad \\frac{F(2x)}{F(x)} = 2$$\n\n**5.** The average return on spend falls to the fee rate exactly at break-even:\n\n$$\\frac{R(x)}{x} = 90x^{-0.5}, \\qquad 9 \\text{ at } x=100, \\quad 6 \\text{ at } x=225, \\quad 4.5 \\text{ at } x=400$$",
+      "**B.** → False\n\nThe sign of the net gain is read off a factorisation in which one factor is positive throughout:\n\n$$R(x) - F(x) = 90\\sqrt{x} - 6x = 6\\sqrt{x}\\left(15 - \\sqrt{x}\\right)$$\n\n$$15 - \\sqrt{x} > 0 \\quad \\Longleftrightarrow \\quad x < 225$$\n\nThe fee grows proportionally while revenue grows only as a square root, so break-even closes the profitable range instead of opening it:\n\n$$R(400) - F(400) = 90(20) - 2400 = 1800 - 2400 = -600$$\n\nAbove a spend of $225$ the net gain is negative, so the statement is False.",
+      "**C.** → False\n\nDoubling the spend multiplies revenue by two raised to the revenue exponent, which is $0.5$:\n\n$$\\frac{R(2x)}{R(x)} = 2^{0.5} \\approx 1.4142$$\n\nThe fee is the schedule that really is proportional:\n\n$$\\frac{F(2x)}{F(x)} = 2$$\n\n$$R(100) = 900, \\qquad R(200) \\approx 1272.8$$\n\nThat mismatch, exponent $1$ on fees against $0.5$ on revenue, is the whole economics of the case and makes any large enough campaign loss-making. Revenue grows by about $41\\%$ rather than doubling, so the statement is False.",
+      "**D.** → True\n\nNet gain is the difference between the two schedules at the same spend, so both sides are evaluated first:\n\n$$R(100) = 90\\sqrt{100} = 90(10) = 900$$\n\n$$F(100) = 6(100) = 600, \\qquad 900 - 600 = 300$$\n\nA spend of $100$ sits well inside the profitable range, and by $225$ the net gain has already fallen back to zero, so the window is narrow. The net gain is $300$, so the statement is True.",
+      "**E.** → False\n\nRevenue per unit of spend is revenue divided by spend, which lowers the exponent by one:\n\n$$\\frac{R(x)}{x} = \\frac{90x^{0.5}}{x} = 90x^{-0.5}$$\n\nThe exponent is negative, so the average return declines even while total revenue keeps rising:\n\n$$\\frac{R(100)}{100} = 9, \\qquad \\frac{R(225)}{225} = 6, \\qquad \\frac{R(400)}{400} = 4.5$$\n\nThe average crosses the constant fee rate of $6$ exactly at the break-even spend, which is what ends the profitable range. The return per euro falls from $9$ to $4.5$, so the statement is False."
+    ],
+    "solution_overview": "Revenue is $R(x)=90x^{0.5}$ and the platform fee is $F(x)=6x$ on an advertising spend $x>0$.\n\n**Part 1: Building the model.**\n\nLet $x$ = advertising spend, $R$ = sales revenue, $F$ = platform fee. Both constants are given, so the work is comparison rather than calibration: one law has exponent $0.5$ and the other exponent $1$, and their difference decides the campaign.\n\n**1. Translate: the net gain.**\n\n$$\\Pi(x) = R(x) - F(x) = 90x^{0.5} - 6x$$\n\n**2. Translate: break-even.** The two curves meet where the net gain vanishes:\n\n$$90\\sqrt{x} = 6x$$\n\n**Part 2: The model.**\n\n$$\\Pi(x) = 90\\sqrt{x} - 6x \\tag{1}$$\n\n$$\\Pi(x) = 6\\sqrt{x}\\left(15 - \\sqrt{x}\\right) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Solve the break-even condition on $x>0$:\n\n$$\\sqrt{x} = 15 \\;\\Rightarrow\\; x = 225, \\qquad R = F = 1350$$\n\n**2.** The factored form (2) settles the sign everywhere:\n\n$$0 < x < 225 \\;\\Rightarrow\\; \\Pi > 0, \\qquad x > 225 \\;\\Rightarrow\\; \\Pi < 0$$\n\n**3.** Levels inside and outside the profitable window:\n\n$$\\Pi(100) = 900 - 600 = 300, \\qquad \\Pi(400) = 1800 - 2400 = -600$$\n\n**4.** The two laws scale differently, which is why the fee eventually wins:\n\n$$\\frac{R(2x)}{R(x)} = 2^{0.5} \\approx 1.414, \\qquad \\frac{F(2x)}{F(x)} = 2$$\n\n**5.** The average return on spend falls to the fee rate exactly at break-even:\n\n$$\\frac{R(x)}{x} = 90x^{-0.5}, \\qquad 9 \\text{ at } x=100, \\quad 6 \\text{ at } x=225, \\quad 4.5 \\text{ at } x=400$$\n\n**Answer.** break-even spend $x = 225$ | $R = F = 1350$ | net gain positive only on $(0,225)$",
+    "expl_lens": [
+      2143,
+      521,
+      513,
+      404,
+      544
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-29",
+    "case_id": "MATH 8.29",
+    "title": "Calibrating a Two-Stage Production Chain",
+    "difficulty": "5/5",
+    "sort_order": 29,
+    "context": "A plant runs two stages. Labour $L>0$ hours yields processed material $m(L)=A L^{0.5}$ tonnes, and material is converted into finished goods by $g(m)=B m^{1.5}$ units. Two records are available: $100$ labour hours yielded $40$ tonnes of material, and a run on $9$ tonnes of material produced $54$ finished units. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The material stage is $m(L)=4L^{0.5}$.",
+      "Finished output as a function of labour is $g(L)=16L^{0.75}$.",
+      "Doubling labour hours raises finished output by about $68\\%$.",
+      "Producing $432$ finished units requires $81$ labour hours.",
+      "Finished output per labour hour falls as labour rises."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nEach record speaks about one stage only, and the labour record belongs to the material stage:\n\n$$A\\sqrt{100} = 40 \\quad \\Rightarrow \\quad 10A = 40 \\quad \\Rightarrow \\quad A = 4$$\n\n$$m(L) = 4L^{0.5}$$\n\nA second labour level checks the shape:\n\n$$m(400) = 4(20) = 80 \\text{ tonnes}$$\n\nMixing the records, dividing $54$ by $100$ for instance, produces a coefficient belonging to neither stage. The first stage is $4L^{0.5}$, so the statement is True.",
+      "**B.** → True\n\nComposing the two stages substitutes the whole first stage, coefficient included, into the second. The material record calibrates that second stage:\n\n$$B(9)^{1.5} = 54 \\quad \\Rightarrow \\quad 27B = 54 \\quad \\Rightarrow \\quad B = 2$$\n\n$$g(L) = 2\\left(4L^{0.5}\\right)^{1.5} = 2 \\times 4^{1.5} \\times L^{0.5 \\times 1.5}$$\n\n$$g(L) = 2 \\times 8 \\times L^{0.75} = 16L^{0.75}$$\n\nRaising only the variable and leaving the coefficient behind would give $2 \\times 4 = 8$ and halve every prediction, since $4^{1.5}=8$. The composed law is $16L^{0.75}$, so the statement is True.",
+      "**C.** → True\n\nA scale factor on a composed law uses the composed exponent, the product of the two stage exponents rather than their sum:\n\n$$0.5 \\times 1.5 = 0.75, \\qquad \\frac{g(2L)}{g(L)} = 2^{0.75} \\approx 1.4142 \\times 1.1892 \\approx 1.6818$$\n\nNeither stage settles it alone: doubling labour lifts material by $2^{0.5} \\approx 1.414$, and the second stage lifts that factor by its own exponent, $1.414^{1.5} \\approx 1.682$. Levels agree where the shape factors are exact:\n\n$$g(16) = 16(8) = 128, \\qquad g(32) = 16 \\times 2^{3.75} \\approx 215.3, \\qquad \\frac{215.3}{128} \\approx 1.682$$\n\nFinished output rises by about $68\\%$, so the statement is True.",
+      "**D.** → True\n\nInverting a $0.75$ exponent raises the target to the power $\\frac{4}{3}$, which magnifies the required input rather than shrinking it:\n\n$$16L^{0.75} = 432 \\quad \\Rightarrow \\quad L^{0.75} = 27$$\n\n$$L = 27^{\\frac{4}{3}} = \\left(3^{3}\\right)^{\\frac{4}{3}} = 3^{4} = 81$$\n\nThe figures are chosen so the root is exact, since $27=3^{3}$, and substitution confirms it:\n\n$$g(81) = 16 \\times 81^{0.75} = 16 \\times 27 = 432$$\n\nLabour has to grow faster than the output target, and the requirement is exactly $81$ hours, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $L$ = labour hours, $m$ = tonnes of material, $g$ = finished units. Each record calibrates one stage, and the two stages then have to be composed — an operation that multiplies exponents and raises the inner coefficient to the outer power.\n\n**1. Translate: the labour record.**\n\n$$A\\sqrt{100} = 40$$\n\n**2. Translate: the material record.**\n\n$$B(9)^{1.5} = 54$$\n\n**Part 2: The model.**\n\n$$m(L) = 4L^{0.5} \\tag{1}$$\n\n$$g(m) = 2m^{1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The two records give the two coefficients:\n\n$$A = 4, \\qquad B = 2$$\n\n**2.** Compose, raising the inner coefficient to the outer power:\n\n$$g(L) = 2\\left(4L^{0.5}\\right)^{1.5} = 2 \\times 8 \\times L^{0.75} = 16L^{0.75}$$\n\n**3.** The composed exponent drives every scale factor:\n\n$$\\frac{g(2L)}{g(L)} = 2^{0.75} \\approx 1.682 \\quad (+68\\%)$$\n\n**4.** Invert with the reciprocal exponent $\\frac{4}{3}$:\n\n$$L = \\left(\\frac{g}{16}\\right)^{\\frac{4}{3}}, \\qquad g = 432 \\;\\Rightarrow\\; L = 27^{\\frac{4}{3}} = 81$$\n\n**5.** Because the composed exponent is below $1$, the average product falls:\n\n$$\\frac{g(L)}{L} = 16L^{-0.25}, \\qquad 8 \\text{ at } L=16, \\qquad 5.33 \\text{ at } L=81$$",
+      "**E.** → True\n\nThe average product of labour is the composed law divided by labour, which lowers the exponent by one:\n\n$$\\frac{g(L)}{L} = \\frac{16L^{0.75}}{L} = 16L^{-0.25}$$\n\nA composed exponent below $1$ is the condition for a falling average: total output rises, but not fast enough to keep pace with the hours added.\n\n$$\\frac{g(16)}{16} = \\frac{16 \\times 8}{16} = 8, \\qquad \\frac{g(81)}{81} = \\frac{432}{81} \\approx 5.33$$\n\nAn exponent above $1$ would have left a rising average instead. Output per hour falls from $8$ to about $5.33$, so the statement is True."
+    ],
+    "solution_overview": "Stage one gives $m(L)=AL^{0.5}$ tonnes from $L$ labour hours, stage two gives $g(m)=Bm^{1.5}$ finished units. Records: $m(100)=40$ and $g(9)=54$.\n\n**Part 1: Building the model.**\n\nLet $L$ = labour hours, $m$ = tonnes of material, $g$ = finished units. Each record calibrates one stage, and the two stages then have to be composed — an operation that multiplies exponents and raises the inner coefficient to the outer power.\n\n**1. Translate: the labour record.**\n\n$$A\\sqrt{100} = 40$$\n\n**2. Translate: the material record.**\n\n$$B(9)^{1.5} = 54$$\n\n**Part 2: The model.**\n\n$$m(L) = 4L^{0.5} \\tag{1}$$\n\n$$g(m) = 2m^{1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The two records give the two coefficients:\n\n$$A = 4, \\qquad B = 2$$\n\n**2.** Compose, raising the inner coefficient to the outer power:\n\n$$g(L) = 2\\left(4L^{0.5}\\right)^{1.5} = 2 \\times 8 \\times L^{0.75} = 16L^{0.75}$$\n\n**3.** The composed exponent drives every scale factor:\n\n$$\\frac{g(2L)}{g(L)} = 2^{0.75} \\approx 1.682 \\quad (+68\\%)$$\n\n**4.** Invert with the reciprocal exponent $\\frac{4}{3}$:\n\n$$L = \\left(\\frac{g}{16}\\right)^{\\frac{4}{3}}, \\qquad g = 432 \\;\\Rightarrow\\; L = 27^{\\frac{4}{3}} = 81$$\n\n**5.** Because the composed exponent is below $1$, the average product falls:\n\n$$\\frac{g(L)}{L} = 16L^{-0.25}, \\qquad 8 \\text{ at } L=16, \\qquad 5.33 \\text{ at } L=81$$\n\n**Answer.** $A = 4$ | $B = 2$ | $g(L) = 16L^{0.75}$ | $432$ units need $81$ labour hours",
+    "expl_lens": [
+      461,
+      582,
+      655,
+      1975,
+      565
+    ],
+    "has_extended": true
+  },
+  {
+    "id": "math-8-30",
+    "case_id": "MATH 8.30",
+    "title": "Calibrated Demand, Derived Revenue, and a Fixed Charge",
+    "difficulty": "5/5",
+    "sort_order": 30,
+    "context": "A niche publisher faces demand $q(p)=A p^{-1.5}$ copies per month at a price $p>0$, and a price of $4$ sells $250$ copies. Revenue is $R=pq$, and the operation carries a fixed monthly charge of $400$ with no other costs. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Revenue falls as the price rises.",
+      "Revenue is a power function of price with exponent $-0.5$.",
+      "At a price of $25$, monthly revenue is $400$.",
+      "The fixed charge is covered only at prices below $16$.",
+      "Doubling the price halves revenue."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nRevenue on an isoelastic demand curve is itself a power function, so direction is decided by its exponent. The observation calibrates demand first:\n\n$$A(4)^{-1.5} = 250 \\quad \\Rightarrow \\quad \\frac{A}{8} = 250 \\quad \\Rightarrow \\quad A = 2000$$\n\n$$R(p) = p \\times 2000p^{-1.5} = 2000p^{-0.5}$$\n\nWhether revenue rises or falls turns on whether elasticity lies below $-1$; at $-1.5$ the loss of copies outweighs the higher price per copy:\n\n$$R(4) = \\frac{2000}{2} = 1000, \\qquad R(9) = \\frac{2000}{3} \\approx 666.7$$\n\nRevenue falls as the price rises, so the statement is True.",
+      "**B.** → True\n\nMultiplying a power function by $p$ raises its exponent by exactly $1$, so revenue built on an isoelastic demand curve is isoelastic too:\n\n$$R(p) = p \\cdot 2000p^{-1.5} = 2000\\,p^{-1.5+1} = 2000p^{-0.5}$$\n\nThe scale factor behaves as a power function's should:\n\n$$\\frac{R(4p)}{R(p)} = 4^{-0.5} = \\frac{1}{2}$$\n\nThe same rule explains why elasticity $-1$ is the knife edge, since the revenue exponent would then be $0$ and revenue constant. Revenue carries exponent $-0.5$, so the statement is True.\n\n**Extended context check.** The same claim can be checked against the complete model, not only against the quickest calculation above. Rebuilding the scenario keeps the coefficient, domain, units, and scaling rule visible at the same time:\n\n**Part 1: Building the model.**\n\nLet $p$ = price, $q$ = copies sold, $R$ = revenue. The exponent is given by the isoelastic form, one observation pins the coefficient, and revenue is a derived power function whose exponent is one higher than demand's.\n\n**1. Translate: the observed price-quantity pair.**\n\n$$A(4)^{-1.5} = 250, \\qquad 4^{-1.5} = \\frac{1}{8}$$\n\n**2. Translate: revenue and the fixed charge.**\n\n$$R(p) = p \\cdot Ap^{-1.5}, \\qquad R(p) \\ge 400$$\n\n**Part 2: The model.**\n\n$$q(p) = 2000\\,p^{-1.5} \\tag{1}$$\n\n$$R(p) = 2000\\,p^{-0.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The observation gives the coefficient:\n\n$$A = 250 \\times 8 = 2000$$\n\n**2.** Multiplying by $p$ raises the exponent by one, so revenue is still isoelastic:\n\n$$-1.5 + 1 = -0.5$$\n\n**3.** Levels along the revenue curve:\n\n$$R(4) = 1000, \\qquad R(16) = 500, \\qquad R(36) \\approx 333$$\n\n**4.** Invert (2) at the fixed charge by squaring the ratio:\n\n$$p^{0.5} = \\frac{2000}{400} = 5 \\;\\Rightarrow\\; p = 25$$\n\n**5.** Scale factors on the revenue curve are gentler than on demand:\n\n$$2^{-0.5} \\approx 0.707 \\;(-29\\%), \\qquad 4^{-0.5} = 0.5$$",
+      "**C.** → True\n\nA revenue level at a new price needs the demand coefficient first, and the observation at a price of $4$ supplies it:\n\n$$250=A(4)^{-1.5}=\\frac{A}{8} \\quad\\Rightarrow\\quad A=2000$$\n\nMultiplying by price raises the exponent to $-0.5$, and the new price is a perfect square, so the root is exact:\n\n$$R(25)=2000(25)^{-0.5}=\\frac{2000}{5}=400$$\n\nUsing the demand exponent $-1.5$ in place of the revenue exponent would give a very different figure. Monthly revenue at that price is $400$, so the statement is True.",
+      "**D.** → False\n\nCovering the fixed charge is the condition $2000p^{-0.5}\\ge400$, and inverting a $-0.5$ exponent squares the ratio of the two sides:\n\n$$2000p^{-0.5} = 400 \\quad \\Rightarrow \\quad p^{0.5} = \\frac{2000}{400} = 5$$\n\n$$p = 25$$\n\nPrices either side of the threshold confirm the direction:\n\n$$R(16) = \\frac{2000}{4} = 500 > 400, \\qquad R(36) = \\frac{2000}{6} \\approx 333 < 400$$\n\nThe figure $16$ is what appears when the demand exponent is inverted instead of the revenue exponent. Prices up to $25$ still cover the charge, so the statement is False.",
+      "**E.** → False\n\nRevenue carries exponent $-0.5$, so doubling the price multiplies revenue by the reciprocal square root of two:\n\n$$\\frac{R(2p)}{R(p)} = 2^{-0.5} \\approx 0.7071$$\n\nHalving revenue takes a quadrupling of the price:\n\n$$k^{-0.5} = 0.5 \\quad \\Rightarrow \\quad k = 4$$\n\n$$R(4) = 1000, \\qquad R(8) = \\frac{2000}{2.828} \\approx 707, \\qquad R(16) = 500$$\n\nReading demand's exponent $-1.5$ into the revenue law is the same confusion, since each stage carries its own exponent and its own scale factor. Doubling the price costs about $29\\%$ of revenue, so the statement is False."
+    ],
+    "solution_overview": "Demand is $q(p)=Ap^{-1.5}$ with $q(4)=250$; revenue is $R=pq$; a fixed charge of $400$ must be covered.\n\n**Part 1: Building the model.**\n\nLet $p$ = price, $q$ = copies sold, $R$ = revenue. The exponent is given by the isoelastic form, one observation pins the coefficient, and revenue is a derived power function whose exponent is one higher than demand's.\n\n**1. Translate: the observed price-quantity pair.**\n\n$$A(4)^{-1.5} = 250, \\qquad 4^{-1.5} = \\frac{1}{8}$$\n\n**2. Translate: revenue and the fixed charge.**\n\n$$R(p) = p \\cdot Ap^{-1.5}, \\qquad R(p) \\ge 400$$\n\n**Part 2: The model.**\n\n$$q(p) = 2000\\,p^{-1.5} \\tag{1}$$\n\n$$R(p) = 2000\\,p^{-0.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The observation gives the coefficient:\n\n$$A = 250 \\times 8 = 2000$$\n\n**2.** Multiplying by $p$ raises the exponent by one, so revenue is still isoelastic:\n\n$$-1.5 + 1 = -0.5$$\n\n**3.** Levels along the revenue curve:\n\n$$R(4) = 1000, \\qquad R(16) = 500, \\qquad R(36) \\approx 333$$\n\n**4.** Invert (2) at the fixed charge by squaring the ratio:\n\n$$p^{0.5} = \\frac{2000}{400} = 5 \\;\\Rightarrow\\; p = 25$$\n\n**5.** Scale factors on the revenue curve are gentler than on demand:\n\n$$2^{-0.5} \\approx 0.707 \\;(-29\\%), \\qquad 4^{-0.5} = 0.5$$\n\n**Answer.** $A = 2000$ | $q(p) = 2000p^{-1.5}$ | $R(p) = 2000p^{-0.5}$ | charge covered for $p < 25$",
+    "expl_lens": [
+      591,
+      1868,
+      523,
+      560,
+      584
+    ],
+    "has_extended": true
+  }
+]

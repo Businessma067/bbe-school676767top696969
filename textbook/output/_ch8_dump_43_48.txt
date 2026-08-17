@@ -1,0 +1,395 @@
+===== TASK 43 (4/5) Storm Surge Feeding a Cubic Loss Index =====
+CONTEXT: A reinsurer models coastal losses in two stages. Storm surge height is $s(w)=0.5 w^{0.5}$ metres for a wind speed of $w>0$, and the loss index rises with the cube of surge height, $L(s)=32 s^{3}$. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The composed loss index is $L(w)=4w^{1.5}$.
+STMT 1 [true]: Doubling the wind speed multiplies the loss index by about $2.83$.
+STMT 2 [true]: The loss index reaches $1000$ at a wind speed of about $39.7$.
+STMT 3 [true]: At a wind speed of $64$, the loss index is $2048$.
+STMT 4 [true]: Increasing wind speed by $50\%$ raises the loss index by about $83.7\%$.
+--- EXPL idx=0 len=545 displays=3 ---
+**A.** → True
+
+Composing two power laws substitutes the inner law into the outer one, which multiplies the exponents and raises the inner coefficient to the outer power.
+
+$$L(w) = 32\left(0.5w^{0.5}\right)^{3} = 32 \times 0.5^{3} \times w^{0.5 \times 3}$$
+
+Simplify the constant and the exponent:
+
+$$32 \times 0.125 = 4, \qquad 0.5 \times 3 = 1.5$$
+
+$$L(w) = 4w^{1.5}$$
+
+Cubing only the variable part and carrying $0.5$ through unchanged would leave the loss index eight times too large. The composed law is $4w^{1.5}$, so the statement is True.
+--- EXPL idx=1 len=502 displays=2 ---
+**B.** → True
+
+A doubling of wind speed acts through the composed exponent $1.5$, which is the product of the two stage exponents.
+
+$$\frac{L(2w)}{L(w)} = 2^{1.5} = 2\sqrt{2} \approx 2.8284$$
+
+Verify through the two stages:
+
+$$s \text{ rises by } 2^{0.5} \approx 1.414, \qquad 1.414^{3} \approx 2.828$$
+
+Either stage exponent taken alone would give a different factor, and agreement between the two routes guards against composing incorrectly. Losses multiply by about $2.83$, so the statement is True.
+--- EXPL idx=2 len=429 displays=2 ---
+**C.** → True
+
+A stated loss level is inverted through the composed law, so the reciprocal exponent $2/3$ applies once the coefficient is divided out.
+
+$$4w^{1.5}=1000 \quad \Rightarrow \quad w^{1.5}=250$$
+
+$$w=250^{2/3}\approx39.69$$
+
+Inverting one stage at a time works too, but only the composed exponent can be reciprocated in a single step. The index reaches $1000$ at a wind speed of about $39.7$, so the statement is True.
+--- EXPL idx=3 len=388 displays=1 ---
+**D.** → True
+
+A level under the composed law keeps the square-root contribution before the cube is applied, which is what the exponent $1.5$ encodes.
+
+$$L(64)=4(64)^{1.5}=4(64)(8), \qquad L(64)=2048$$
+
+Applying the cube to the wind speed itself, rather than to the surge it produces, would overstate the index badly. The loss index at wind speed $64$ is $2048$, so the statement is True.
+--- EXPL idx=4 len=354 displays=2 ---
+**E.** → True
+
+A fifty percent increase is a multiplier of $1.5$ acting through the composed exponent, which is also $1.5$.
+
+$$\frac{L(1.5w)}{L(w)}=1.5^{1.5}\approx1.8371$$
+
+$$(1.8371-1)\times100\%\approx83.7\%$$
+
+Neither stage exponent in isolation gives this factor, only their product. The loss index rises by about $83.7\%$, so the statement is True.
+
+===== TASK 44 (4/5) Market Impact of a Block Trade =====
+CONTEXT: A broker models price impact as $I(v)=A v^{0.5}$ basis points, where $v>0$ is order size as a fraction of average daily volume. Increasing an order from $0.04$ ADV to $0.09$ ADV adds exactly $6$ basis points of impact. The scaled impact charge is $vI(v)$, while a notional fee is $F(v)=30v$. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The impact law is $I(v)=60\sqrt{v}$.
+STMT 1 [true]: Increasing order size from $0.04$ to $0.09$ ADV multiplies impact by $1.5$.
+STMT 2 [true]: The notional fee and scaled impact charge break even at $v=0.25$ ADV, with impact charge lower below that size.
+STMT 3 [true]: At $v=0.16$ ADV, impact is $24$ basis points and the scaled impact charge is $3.84$.
+STMT 4 [false]: The scaled impact charge is proportional to order size.
+--- EXPL idx=0 len=438 displays=2 ---
+**A.** → True
+
+The six basis points is a change in impact between two order sizes, so the coefficient multiplies the difference of the two square roots.
+
+$$I(0.09)-I(0.04) =A(\sqrt{0.09}-\sqrt{0.04}) =A(0.3-0.2)$$
+
+$$0.1A=6 \quad \Rightarrow \quad A=60, \qquad I(v)=60\sqrt v$$
+
+Setting $I(0.09)=6$ would treat the increment as the larger order's total impact. The difference calibration gives $I(v)=60\sqrt{v}$, so the statement is True.
+--- EXPL idx=1 len=449 displays=2 ---
+**B.** → True
+
+A size multiplier acts on impact through the exponent $0.5$, so the impact ratio is the square root of the size ratio.
+
+$$\frac{0.09}{0.04}=2.25$$
+
+$$\frac{I(0.09)}{I(0.04)} =\left(\frac{0.09}{0.04}\right)^{0.5} =\sqrt{2.25}=1.5$$
+
+Carrying the size ratio $2.25$ across unchanged would describe linear impact rather than square-root impact. The levels are $18$ and $12$ basis points and their ratio is $1.5$, so the statement is True.
+--- EXPL idx=2 len=518 displays=2 ---
+**C.** → True
+
+The scaled impact charge is $vI(v)=60v^{3/2}$, so a break-even with a linear fee is an equation between exponents $3/2$ and $1$.
+
+$$60v^{3/2}=30v \quad \Rightarrow \quad 2\sqrt v=1 \quad \Rightarrow \quad v=0.25$$
+
+$$\frac{vI(v)}{F(v)} =\frac{60v^{3/2}}{30v} =2\sqrt v<1 \quad \text{when }0<v<0.25$$
+
+Comparing $I(v)$ with $F(v)$ directly would compare the wrong pair, since the context defines the charge as $vI(v)$. Break-even is at $0.25$ ADV with the charge lower below it, so the statement is True.
+--- EXPL idx=3 len=361 displays=2 ---
+**D.** → True
+
+Impact and the scaled charge are two different quantities, the second being the first multiplied by order size.
+
+$$I(0.16)=60\sqrt{0.16}=60(0.4)=24$$
+
+$$vI(v)=0.16(24)=3.84$$
+
+That extra factor of $v$ is what separates a basis-point figure from a charge. Both the $24$ basis points and the $3.84$ charge match the claim, so the statement is True.
+--- EXPL idx=4 len=404 displays=2 ---
+**E.** → False
+
+Proportionality would require the charge to carry exponent $1$, while multiplying impact by $v$ gives exponent $3/2$.
+
+$$vI(v)=v(60v^{1/2})=60v^{3/2}$$
+
+$$\frac{(2v)I(2v)}{vI(v)} =2^{3/2}=2\sqrt2\ne2$$
+
+The explicit factor $v$ is visible, but the $v^{1/2}$ hidden inside impact is what breaks proportionality. The charge grows by about $2.83$ when size doubles, so the statement is False.
+
+===== TASK 45 (4/5) Allometric Energy Use Across Livestock Weights =====
+CONTEXT: Daily energy use follows $E(m)=A m^{2/3}$ units for body mass $m>0$ kilograms. A $64$ kg animal uses exactly $70$ more energy units per day than a $27$ kg animal. A herd's total use is the sum of its animals' individual uses. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The energy law is $E(m)=10m^{2/3}$.
+STMT 1 [true]: Doubling body mass multiplies energy use by exactly $2^{2/3}=\sqrt[3]{4}$.
+STMT 2 [true]: Eight $27$ kg animals use twice as much total energy as one $216$ kg animal.
+STMT 3 [false]: Combining two equal animals into one animal of twice the mass leaves total energy use unchanged.
+STMT 4 [false]: Energy use per kilogram is constant across body masses.
+--- EXPL idx=0 len=445 displays=2 ---
+**A.** → True
+
+The measured $70$ units is the gap between two animals' daily use, and both masses are exact cubes, so the shape factors resolve without rounding.
+
+$$E(64)-E(27) =A(64^{2/3}-27^{2/3}) =A(16-9)$$
+
+$$7A=70 \quad \Rightarrow \quad A=10, \qquad E(m)=10m^{2/3}$$
+
+Attaching the $70$ to the heavier animal as its total use would calibrate on a level the data never gave. The allometric law is $E(m)=10m^{2/3}$, so the statement is True.
+--- EXPL idx=1 len=430 displays=2 ---
+**B.** → True
+
+Doubling body mass acts through the exponent, so the coefficient and the starting mass cancel and only $2^{2/3}$ survives.
+
+$$\frac{E(2m)}{E(m)} =\frac{10(2m)^{2/3}}{10m^{2/3}} =2^{2/3}$$
+
+$$2^{2/3}=(2^2)^{1/3}=\sqrt[3]{4}\approx1.587$$
+
+Reading $2/3$ as a $66.7\%$ increase would replace a power of two with an added proportion. Both exact forms in the claim describe the same multiplier, so the statement is True.
+--- EXPL idx=2 len=418 displays=2 ---
+**C.** → True
+
+A herd total is the sum of individual uses, so the law is applied animal by animal before anything is added.
+
+$$8E(27)=8\left(10\cdot27^{2/3}\right) =8(90)=720$$
+
+$$E(216)=10(216^{1/3})^2 =10(6^2)=360, \qquad \frac{720}{360}=2$$
+
+Combining the masses first would treat a nonlinear law as if it were additive. The eight-animal herd uses exactly twice the single animal's energy, so the statement is True.
+--- EXPL idx=3 len=422 displays=2 ---
+**D.** → False
+
+Merging two animals replaces two applications of the law with one application at twice the mass, and the exponent $2/3$ lies below one.
+
+$$E(m)+E(m)=2E(m)$$
+
+$$E(2m)=2^{2/3}E(m)\approx1.587E(m)<2E(m)$$
+
+Working from total mass alone hides the fact that the model applies to each animal separately. Two $27$ kg animals use $180$ units against about $142.9$ for one $54$ kg animal, so the statement is False.
+--- EXPL idx=4 len=432 displays=2 ---
+**E.** → False
+
+Energy use per kilogram is the allometric law divided by mass, which lowers the exponent to $-1/3$.
+
+$$\frac{E(m)}{m} =\frac{10m^{2/3}}{m} =10m^{-1/3}$$
+
+$$\frac{E(27)}{27}=\frac{90}{27}=\frac{10}{3}, \qquad \frac{E(64)}{64}=\frac{160}{64}=2.5$$
+
+Total use does rise with mass, but less than proportionally, which is exactly what makes the average fall. The two per-kilogram values differ, so the statement is False.
+
+===== TASK 46 (1/5) Retail Catchment Under a Distance-Decay Law =====
+CONTEXT: Weekly footfall at a retail park from a residential zone follows $f(d)=A d^{-1.5}$ visitors, where $d>0$ is the driving distance in kilometres. The planning file omits the coefficient: it records only that a zone $4$ kilometres away supplies $350$ more visitors a week than a zone $16$ kilometres away. A zone counts as core catchment when it supplies at least $100$ visitors a week. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The coefficient of the footfall law is $3200$.
+STMT 1 [true]: The zone four kilometres away supplies $400$ visitors a week.
+STMT 2 [true]: Quadrupling the driving distance cuts footfall to one eighth.
+STMT 3 [true]: The core-catchment boundary lies just beyond $10$ kilometres.
+STMT 4 [false]: A zone nine kilometres away falls outside the core catchment.
+--- EXPL idx=0 len=601 displays=3 ---
+**A.** → True
+
+The planning file records a gap between two zones rather than either zone's footfall, so the coefficient multiplies the difference of the two shape factors.
+
+$$4^{1.5} = (2^{2})^{3/2} = 2^{3} = 8, \qquad 16^{1.5} = (4^{2})^{3/2} = 4^{3} = 64$$
+
+Write the recorded gap through the law:
+
+$$f(4) - f(16) = A\left(\frac{1}{8} - \frac{1}{64}\right) = A \cdot \frac{7}{64} = 350$$
+
+$$A = 350 \cdot \frac{64}{7} = 3200$$
+
+Dividing $350$ by a single shape factor such as $4^{-1.5}$ would answer a question the file never posed. The footfall law is $f(d)=3200d^{-1.5}$, so the statement is True.
+--- EXPL idx=1 len=484 displays=2 ---
+**B.** → True
+
+The nearer zone's own footfall is the calibrated law evaluated at four kilometres, which the file gives only indirectly.
+
+$$f(4) = \frac{3200}{4^{1.5}} = \frac{3200}{8} = 400$$
+
+Check the pair against the recorded gap:
+
+$$f(16) = \frac{3200}{64} = 50, \qquad 400 - 50 = 350 \;\checkmark$$
+
+The recorded $350$ sits close to this figure only because the distant zone contributes an eighth as much. The nearer zone supplies $400$ visitors a week, so the statement is True.
+--- EXPL idx=2 len=537 displays=2 ---
+**C.** → True
+
+A scale factor depends only on the exponent, so quadrupling the distance acts through $4^{-1.5}$ and the coefficient cancels.
+
+$$\frac{f(4d)}{f(d)} = \frac{A(4d)^{-1.5}}{Ad^{-1.5}} = 4^{-1.5} = \frac{1}{4^{3/2}} = \frac{1}{8}$$
+
+Verify on the two recorded zones:
+
+$$\frac{f(16)}{f(4)} = \frac{50}{400} = \frac{1}{8} \;\checkmark$$
+
+The exponent $1.5$ sits between proportional decay, which would give a quarter, and inverse-square decay, which would give a sixteenth. Footfall falls to an eighth, so the statement is True.
+--- EXPL idx=3 len=601 displays=3 ---
+**D.** → True
+
+The catchment boundary is where footfall meets the threshold, so the law has to be inverted with the reciprocal exponent $2/3$.
+
+$$\frac{3200}{d^{1.5}} = 100 \quad \Rightarrow \quad d^{1.5} = 32$$
+
+$$d = 32^{2/3} = (2^{5})^{2/3} = 2^{10/3} \approx 10.08$$
+
+Check the round distance against the threshold:
+
+$$f(10) = \frac{3200}{10^{1.5}} \approx \frac{3200}{31.62} \approx 101.2 > 100$$
+
+Squaring $32$, or halving it, would apply the exponent instead of its reciprocal. A zone at $10$ kilometres still clears the threshold and the boundary lies just beyond it, so the statement is True.
+--- EXPL idx=4 len=543 displays=2 ---
+**E.** → False
+
+A specific zone is tested against the threshold by evaluating the law there, and nine is a perfect square, so the fractional exponent resolves exactly.
+
+$$9^{1.5} = (3^{2})^{3/2} = 3^{3} = 27$$
+
+Evaluate the law:
+
+$$f(9) = \frac{3200}{27} \approx 118.5$$
+
+Nine kilometres looks closer to the quiet zone at sixteen than to the busy one at four, yet distance decay is steepest near the park, so most of the drop has already happened. At about $118$ visitors the zone clears the $100$-visitor threshold, so the statement is False.
+
+===== TASK 47 (5/5) Rooftop Solar Output Across Two Installed Arrays =====
+CONTEXT: Daily output from a rooftop solar installation follows $y(a)=A a^{r}$ kilowatt-hours, where $a>0$ is the installed panel area in square metres. Two arrays are in service: a $100$ m² array delivers $240$ kWh a day, and a $225$ m² array delivers $360$ kWh. A proposal would expand the second array to $450$ m². Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [false]: Output is proportional to the installed area.
+STMT 1 [true]: The exponent is $0.5$ and the coefficient is $24$.
+STMT 2 [false]: Doubling the installed area raises output by about $50\%$.
+STMT 3 [false]: Expanding the $225$ m² array to $450$ m² would push output above $520$ kWh.
+STMT 4 [false]: Output per square metre rises as the array grows.
+--- EXPL idx=0 len=528 displays=2 ---
+**A.** → False
+
+Proportionality is the claim that the exponent equals $1$, so it is tested by comparing the area ratio with the output ratio between the two arrays.
+
+$$\frac{225}{100} = 2.25, \qquad \frac{360}{240} = 1.5$$
+
+Test the proportional prediction against the second array:
+
+$$240 \times 2.25 = 540 \ne 360$$
+
+Shading, inverter limits and roof orientation all bite as arrays grow, and the exponent that fits this pair is $0.5$. The proportional model overstates the larger array by $180$ kWh, so the statement is False.
+--- EXPL idx=1 len=591 displays=3 ---
+**B.** → True
+
+Two installed arrays determine both constants: their ratio carries the exponent, and either array then carries the coefficient.
+
+$$\left(\frac{225}{100}\right)^{r} = \frac{360}{240} \quad \Rightarrow \quad 2.25^{r} = 1.5 = 2.25^{1/2}$$
+
+$$r = 0.5$$
+
+Recover the coefficient from each array:
+
+$$\frac{240}{\sqrt{100}} = 24, \qquad \frac{360}{\sqrt{225}} = 24, \qquad y(a) = 24\sqrt{a}$$
+
+Because $1.5^{2}=2.25$ the exponent falls out without logarithms, and a wrong exponent would leave the two coefficients disagreeing. Both constants are as claimed, so the statement is True.
+--- EXPL idx=2 len=527 displays=2 ---
+**C.** → False
+
+A scale factor has to match the multiplier being asked about, and a doubling is a multiplier of $2$ rather than the $2.25$ separating the installed arrays.
+
+$$\frac{y(2a)}{y(a)} = 2^{0.5} \approx 1.4142$$
+
+Contrast with the observed pair:
+
+$$\left(\frac{225}{100}\right)^{0.5} = 1.5 \quad \text{(a } 2.25\times \text{ expansion, not } 2\times)$$
+
+Output did rise by half between the two arrays, but across a $2.25$-fold expansion rather than a doubling. A doubling gives about $41\%$, so the statement is False.
+--- EXPL idx=3 len=515 displays=3 ---
+**D.** → False
+
+The proposal doubles the second array, so the calibrated law is evaluated at $450$ m² and compared with the stated threshold.
+
+$$y(450) = 360 \times 2^{0.5} \approx 360 \times 1.4142 \approx 509.1$$
+
+Confirm through the calibrated law:
+
+$$y(450) = 24\sqrt{450} \approx 24 \times 21.213 \approx 509.1$$
+
+$$509.1 < 520$$
+
+The margin is narrow enough that a proportional forecast, which would promise $720$ kWh, is more than $200$ kWh out. The expansion falls short of $520$, so the statement is False.
+--- EXPL idx=4 len=485 displays=2 ---
+**E.** → False
+
+Output per square metre is the calibrated law divided by area, which lowers the exponent to $-0.5$.
+
+$$\frac{y(a)}{a} = \frac{24a^{0.5}}{a} = 24a^{-0.5}$$
+
+Evaluate for the three arrays:
+
+$$\frac{240}{100} = 2.4, \qquad \frac{360}{225} = 1.6, \qquad \frac{509.1}{450} \approx 1.13$$
+
+Total output still rises, which is the practical meaning of a sub-linear exponent rather than a contradiction of it. Output per square metre falls throughout, so the statement is False.
+
+===== TASK 48 (5/5) Battery Cell Costs Down a Learning Curve =====
+CONTEXT: Unit cost for battery cells follows $c(N)=A N^{b}$ euros, where $N>0$ is cumulative output in thousands of cells. Two milestones are recorded: at $100$ thousand cells the unit cost was $80$, and at $400$ thousand it was $40$. Cumulative spend is unit cost multiplied by volume. Evaluate each statement. Mark it TRUE or FALSE.
+STMT 0 [true]: The exponent of the learning curve is $-0.5$.
+STMT 1 [true]: Quadrupling cumulative volume halves the unit cost.
+STMT 2 [true]: Unit cost falls below $20$ only beyond $1600$ thousand cells.
+STMT 3 [true]: Cumulative spend grows with the square root of volume.
+STMT 4 [false]: Doubling cumulative volume halves the unit cost.
+--- EXPL idx=0 len=655 displays=3 ---
+**A.** → True
+
+Two milestones fix the exponent through their ratio, which cancels the coefficient and leaves a power equation in the volume multiplier.
+
+$$\left(\frac{400}{100}\right)^{b} = \frac{40}{80} \quad \Rightarrow \quad 4^{b} = 0.5$$
+
+Solve using powers of two:
+
+$$2^{2b} = 2^{-1} \quad \Rightarrow \quad 2b = -1 \quad \Rightarrow \quad b = -0.5$$
+
+Recover the coefficient for later use:
+
+$$A(100)^{-0.5} = 80 \;\Rightarrow\; \frac{A}{10} = 80 \;\Rightarrow\; A = 800$$
+
+The negative sign is forced by the data, since dropping it would describe cost rising with volume instead of a learning curve. The exponent is $-0.5$, so the statement is True.
+--- EXPL idx=1 len=464 displays=2 ---
+**B.** → True
+
+A scale factor holds at every starting point, so the effect of quadrupling volume is $4^{-0.5}$ wherever it is applied.
+
+$$\frac{c(4N)}{c(N)} = 4^{-0.5} = \frac{1}{2}$$
+
+Check two successive quadruplings:
+
+$$c(100) = 80, \qquad c(400) = 40, \qquad c(1600) = \frac{800}{40} = 20$$
+
+The halving observed between the milestones is a general rule rather than a feature of that particular pair. Each quadrupling halves the cost, so the statement is True.
+--- EXPL idx=2 len=525 displays=3 ---
+**C.** → True
+
+A cost target is inverted through the curve, and an exponent of $-0.5$ inverts by squaring the ratio of coefficient to target.
+
+$$800N^{-0.5} = 20 \quad \Rightarrow \quad \sqrt{N} = \frac{800}{20} = 40$$
+
+$$N = 1600$$
+
+Check on either side:
+
+$$c(900) = \frac{800}{30} \approx 26.7, \qquad c(2500) = \frac{800}{50} = 16$$
+
+That squaring is why further targets get expensive, since halving the cost again to $10$ would take $6400$ thousand cells. The threshold is $1600$ thousand cells, so the statement is True.
+--- EXPL idx=3 len=436 displays=2 ---
+**D.** → True
+
+Cumulative spend is unit cost multiplied by volume, and multiplying by $N$ raises the exponent by one.
+
+$$S(N) = N \cdot 800N^{-0.5} = 800N^{-0.5+1} = 800N^{0.5}$$
+
+Evaluate at the milestones:
+
+$$S(100) = 8000, \qquad S(400) = 16000, \qquad S(1600) = 32000$$
+
+Falling unit cost and rising volume pull in opposite directions, so only the derived law settles which wins. Spend grows as $\sqrt{N}$, so the statement is True.
+--- EXPL idx=4 len=451 displays=2 ---
+**E.** → False
+
+A doubling is a different multiplier from a quadrupling, so it acts through $2^{-0.5}$ rather than $4^{-0.5}$.
+
+$$\frac{c(2N)}{c(N)} = 2^{-0.5} \approx 0.7071$$
+
+Check against a milestone:
+
+$$c(100) = 80, \qquad c(200) = \frac{800}{\sqrt{200}} \approx \frac{800}{14.142} \approx 56.6$$
+
+Two doublings make a quadrupling, and $0.7071^{2}=0.5$ recovers the halving rule exactly. The cost falls by about $29\%$, so the statement is False.

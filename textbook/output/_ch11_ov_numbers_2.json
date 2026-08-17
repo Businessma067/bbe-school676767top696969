@@ -1,0 +1,26 @@
+[
+  {
+    "id": "math-11-30",
+    "caseId": "MATH 11.30",
+    "missing_numbers": [
+      "439750"
+    ],
+    "original_context": [
+      "**3.** $S_B = 400,000 \\times (1.0079167)^{12} = 400,000 \\times 1.0992476 = \\$439,699.03$, not $\\$439,750.00$."
+    ],
+    "current_text": "An investment advisory firm is evaluating a \\$400,000 allocation and comparing two funds that both quote a nominal annual rate of 9.5%: Fund A compounds continuously, while Fund B compounds monthly. The firm also wants to check whether switching Fund B to daily compounding could ever let it catch up to or overtake Fund A.\r\n\r\n**Part 1: Setup.**\r\n\r\nThe allocation is \\$400,000, so both funds start from the same principal:\r\n\r\n$$P = 400{,}000$$\r\n\r\nThe nominal annual rate is quoted as $9.5\\%$, so $r = i = 0.095$.\r\n\r\nFund A compounds continuously.\r\n\r\nFund B compounds monthly, so $m = 12$; the closing comparison switches it to daily compounding with $m = 365$.\r\n\r\nBoth funds are held for $t = 1$ year.\r\n\r\n**Part 2: Formula.**\r\n\r\nFund A accumulates continuously:\r\n\r\n$$S_A = P \\times e^{rt}$$\r\n\r\nFund B accumulates on its discrete schedule:\r\n\r\n$$S_B = P \\times (1+i/m)^{mt}$$\r\n\r\nThe ceiling on the effective annual rate is set by continuous compounding:\r\n\r\n$$EAR_{\\mathrm{max}} = e^{r} - 1$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Fund A over one year:\r\n\r\n$$S_A = 400{,}000 \\times e^{0.095}$$\r\n\r\n$$= 400{,}000 \\times 1.0996589$$\r\n\r\n$$= 439{,}863.54$$\r\n\r\nFund A ends the year at \\$439,863.54.\r\n\r\n**2.** Fund B's monthly periodic rate is:\r\n\r\n$$0.095/12 = 0.0079167$$\r\n\r\n**3.** Fund B over twelve months:\r\n\r\n$$S_B = 400{,}000 \\times (1.0079167)^{12}$$\r\n\r\n$$= 400{,}000 \\times 1.0992476$$\r\n\r\n$$= 439{,}699.03$$\r\n\r\nFund B ends the year at \\$439,699.03, not \\$439,750.00.\r\n\r\n**4.** The ceiling on the effective annual rate is:\r\n\r\n$$EAR_{\\mathrm{max}} = e^{0.095} - 1 \\approx 9.97\\%$$\r\n\r\nThat ceiling sits above the nominal $9.50\\%$; it is not equal to it.\r\n\r\n**5.** Switching Fund B to daily compounding:\r\n\r\n$$S_{\\mathrm{daily}} = 400{,}000 \\times (1 + 0.095/365)^{365}$$\r\n\r\n$$= 400{,}000 \\times 1.0996453$$\r\n\r\n$$= 439{,}858.10$$\r\n\r\nDaily compounding reaches \\$439,858.10, still below Fund A's \\$439,863.54.\r\n\r\n**6.** The gap between continuous and monthly compounding is:\r\n\r\n$$439{,}863.54 - 439{,}699.03 = 164.51$$\r\n\r\nThat gap is \\$164.51.\r\n\r\n**7.** The gap between continuous and daily compounding is:\r\n\r\n$$439{,}863.54 - 439{,}858.10 = 5.44$$\r\n\r\nThat gap of \\$5.44 is narrower than the monthly gap of \\$164.51, so more frequent compounding closes the distance without ever crossing it."
+  },
+  {
+    "id": "math-11-34",
+    "caseId": "MATH 11.34",
+    "missing_numbers": [
+      "0.04",
+      "0.12"
+    ],
+    "original_context": [
+      "$A_0 = \\$50,000$, $r_A = 4\\% = 0.04$",
+      "$B_0 = \\$250,000$, $\\delta_B = 12\\% = 0.12$"
+    ],
+    "current_text": "A boutique investment firm holds two assets: Asset A, a start-up equity stake currently worth \\$50,000 and growing continuously at a nominal annual rate of 4%; and Asset B, aging factory equipment currently worth \\$250,000 and depreciating continuously at an annual rate of 12%. The firm wants to know whether, and when, Asset A's value will overtake Asset B's value.\r\n\r\n**Part 1: Setup.**\r\n\r\nRecord the given quantity:\r\n\r\n$$A_0 = 50,000$$\r\n\r\nThe corresponding monetary figure is \\$50,000.\r\n\r\nRecord the given quantity:\r\n\r\n$$B_0 = 250,000$$\r\n\r\nThe corresponding monetary figure is \\$250,000.\r\n\r\nThe account compounds continuously.\r\n\r\n**Part 2: Formula.**\r\n\r\nUse the following relationship:\r\n\r\n$$A(t) = A_0 e^{r_A t}$$\r\n\r\nUse the following relationship:\r\n\r\n$$B(t) = B_0 e^{-\\delta_B t}$$\r\n\r\nCrossover: the value computed below\r\n\r\n$$t = \\ln(B_0/A_0)/(r_A + \\delta_B)$$\r\n\r\n**Part 3: Solve.**\r\n\r\n**1.** Substitute the stated values:\r\n\r\n$$t = \\ln(5)/0.16$$\r\n\r\n$$= 10.0590$$\r\n\r\n$$74,767.44$$\r\n\r\nThe corresponding monetary figure is \\$74,767.44.\r\n\r\n**2.** At $t = 10$: the value computed below and the value computed below, so A has not yet overtaken B , consistent with crossover at $10.06$ years.\r\n\r\n$$A(10) = 50,000 \\times e^{0.40}$$\r\n\r\n$$= 74,591.23$$\r\n\r\n$$B(10) = 250,000 \\times e^{-1.20}$$\r\n\r\n$$= 75,298.55$$\r\n\r\nThe corresponding monetary figures are \\$74,591.23, and \\$75,298.55.\r\n\r\n**3.** The ratio the value computed below grows without bound, so a crossover is guaranteed; beyond that point A stays ahead.\r\n\r\n$$A(t)/B(t) = (A_0/B_0)\\times e^{(r_A + \\delta_B)t}$$"
+  }
+]
