@@ -5,29 +5,29 @@
     "title": "Drag and Sustained Power on a Velodrome",
     "context": "Aerodynamic drag on a track cyclist follows $F(v)=A v^{r}$ newtons for speed $v>0$ metres per second, with both constants unknown. Doubling any speed multiplies drag by four, and raising speed from $8$ to $12$ m/s increased drag by exactly $40$ N. The power needed to overcome that drag is $P=Fv$ watts, and the rider can hold $500$ W for a full pursuit. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Riding $25\\%$ faster raises the absorbed power by $75\\%$.",
-      "The $500$ W ceiling is reached at exactly $10$ m/s.",
+      "Absorbed power grows faster than speed.",
+      "If the rider doubles speed, absorbed power doubles.",
       "An extra metre per second of speed adds more watts at $12$ m/s than it does at $8$ m/s.",
-      "The rider stays under $500$ W at every speed below $10$ m/s.",
-      "At $12$ m/s the rider absorbs $600$ W."
+      "At $8$ m/s the rider is still under $300$ W.",
+      "At $12$ m/s the rider is still under $800$ W."
     ],
     "answer_key": [
-      false,
       true,
+      false,
       true,
       true,
       false
     ],
     "tactical_explanations": [
-      "**A.** → False\n\nPower is $P(v)=\\frac{1}{2}v^{3}$. Riding $25\\%$ faster is the speed multiplier $1.25$, and the coefficient cancels:\n\n$$\n\\frac{P(1.25v)}{P(v)}=1.25^{3}\n$$\n\nSquare first:\n\n$$\n1.25^{2}=1.5625\n$$\n\nThen one more factor of $1.25$:\n\n$$\n1.25^{3}=1.5625\\cdot 1.25\n$$\n\n$$\n1.25^{3}=1.953125\n$$\n\nAs a fraction that cube is $\\left(\\frac{5}{4}\\right)^{3}=\\frac{125}{64}$. The relative rise is\n\n$$\n1.953125-1=0.953125\n$$\n\nor $95.3125\\%$. The claimed $75\\%$ is three times $25\\%$, as if power scaled linearly with speed. Power rises by $95.3125\\%$, so the statement is False.",
-      "**B.** → True\n\nThe $500$ W ceiling inverts $P(v)=\\frac{1}{2}v^{3}$:\n\n$$\n\\frac{1}{2}v^{3}=500\n$$\n\n$$\nv^{3}=1000\n$$\n\n$$\nv=10\n$$\n\nbecause $10^{3}=1000$ and speed is positive. Forward check:\n\n$$\nP(10)=\\frac{1}{2}\\cdot 1000=500\n$$\n\nThe ceiling sits at exactly $10$ m/s, so the statement is True.",
+      "**A.** → True\n\nPower is $P(v)=\\frac{1}{2}v^{3}$. The exponent $3$ sits above one:\n\n$$\n3>1\n$$\n\nso each extra metre per second costs more watts than the metre before it. Power outruns speed, so the statement is True.",
+      "**B.** → False\n\nDoubling speed would double power only if the exponent were $1$. With exponent $3$ the scale factor is\n\n$$\n\\frac{P(2v)}{P(v)}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\nPower rises eightfold, not twofold, so the statement is False.",
       "**C.** → True\n\nAn extra metre per second is the derivative of $P(v)=\\frac{1}{2}v^{3}$:\n\n$$\nP'(v)=\\frac{3}{2}v^{2}\n$$\n\nThe leftover exponent is still positive, so the extra metre itself costs more as the rider goes faster. At $8$ m/s:\n\n$$\nP'(8)=\\frac{3}{2}\\cdot 8^{2}\n$$\n\n$$\n8^{2}=64\n$$\n\n$$\nP'(8)=\\frac{3}{2}\\cdot 64=96\n$$\n\nAt $12$ m/s:\n\n$$\nP'(12)=\\frac{3}{2}\\cdot 12^{2}\n$$\n\n$$\n12^{2}=144\n$$\n\n$$\nP'(12)=\\frac{3}{2}\\cdot 144=216\n$$\n\nBecause $216>96$, the extra metre costs more watts at $12$ m/s than it does at $8$ m/s, so the statement is True.",
-      "**D.** → True\n\n$P(v)=\\frac{1}{2}v^{3}$ is strictly increasing on $v>0$, and $P(10)=500$, so $P(v)<500$ if and only if $v<10$. At the logged speed $v=8$:\n\n$$\n8^{3}=512\n$$\n\n$$\nP(8)=\\frac{1}{2}\\cdot 512=256\n$$\n\nand $256<500$. The rider stays under $500$ W at every speed below $10$ m/s, so the statement is True.",
-      "**E.** → False\n\nAt $12$ m/s the cubic is\n\n$$\nP(12)=\\frac{1}{2}\\cdot 12^{3}\n$$\n\n$$\n12^{2}=144\n$$\n\n$$\n12^{3}=144\\cdot 12\n$$\n\n$$\n12^{3}=1728\n$$\n\n$$\nP(12)=\\frac{1}{2}\\cdot 1728=864\n$$\n\nThe claimed $600$ W is $500\\times 1.2$, as if a $20\\%$ speed rise above $10$ m/s raised power by $20\\%$. Power is cubic in speed, so that shortcut understates the cost. The rider absorbs $864$ W, so the statement is False."
+      "**D.** → True\n\nAt $8$ m/s the cubic is\n\n$$\nP(8)=\\frac{1}{2}\\cdot 8^{3}\n$$\n\n$$\n8^{3}=512\n$$\n\n$$\nP(8)=\\frac{1}{2}\\cdot 512=256\n$$\n\nBecause $256<300$, the rider is still under $300$ W, so the statement is True.",
+      "**E.** → False\n\nAt $12$ m/s:\n\n$$\nP(12)=\\frac{1}{2}\\cdot 12^{3}\n$$\n\n$$\n12^{2}=144\n$$\n\n$$\n12^{3}=144\\cdot 12=1728\n$$\n\n$$\nP(12)=\\frac{1}{2}\\cdot 1728=864\n$$\n\nBecause $864>800$, the rider is not under $800$ W, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 81,
-    "solution_overview": "Drag is $F(v)=Av^{r}$, recovered from a doubling factor of $4$ and a $40$ N gap between $8$ and $12$ m/s. Absorbed power is $P=Fv$, and the rider's ceiling is $500$ W.\n\n**Part 1: Building the model.**\n\nLet $v$ = speed in metres per second, $F$ = drag in newtons, $P$ = absorbed power in watts. The doubling record is a ratio, so the coefficient cancels and the exponent is isolated first. The logged increase is a difference of two levels, which then pins the coefficient. Multiplying by speed raises the exponent by one.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=4$$\n\n**2. Translate: the logged increase.**\n\n$$A\\left(12^{r}-8^{r}\\right)=40$$\n\n**3. Translate: power.**\n\n$$P(v)=v\\cdot Av^{r}=Av^{r+1}$$\n\n**Part 2: The model.**\n\n$$r=2 \\tag{1}$$\n\n$$F(v)=\\frac{1}{2}v^{2} \\tag{2}$$\n\n$$P(v)=\\frac{1}{2}v^{3} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of two gives the exponent, then the difference of squares gives the coefficient:\n\n$$4=2^{2} \\quad \\Rightarrow \\quad r=2, \\qquad 80A=40 \\quad \\Rightarrow \\quad A=\\frac{1}{2}$$\n\n**2.** Invert (3) at the rider's ceiling:\n\n$$\\frac{1}{2}v^{3}=500 \\quad \\Rightarrow \\quad v=10$$\n\n**3.** Exact scale factors, which the linear shortcut only approximates:\n\n$$1.25^{3}=1.953125\\;(+95.3125\\%), \\qquad 1.2^{3}=1.728$$\n\n**4.** Levels and the marginal:\n\n$$P(8)=256, \\qquad P(10)=500, \\qquad P(12)=864, \\qquad P'(v)=\\frac{3}{2}v^{2}$$\n\n**5.** Carrying a speed multiplier straight across understates the cost of going faster: a quarter more speed asks for almost twice the power, and the last $2$ m/s above the ceiling would add $364$ W to a $500$ W budget.\n\n**Answer.** $r=2$, $A=\\frac{1}{2}$ | $F(v)=\\frac{1}{2}v^{2}$, $P(v)=\\frac{1}{2}v^{3}$ | ceiling at $v=10$ m/s | $P(12)=864$ W"
+    "solution_overview": "Drag is $F(v)=Av^{r}$, recovered from a doubling factor of $4$ and a $40$ N gap between $8$ and $12$ m/s. Absorbed power is $P=Fv$, and the rider's ceiling is $500$ W.\n\n**Part 1: Building the model.**\n\nLet $v$ = speed in metres per second, $F$ = drag in newtons, $P$ = absorbed power in watts. The doubling record is a ratio, so the coefficient cancels and the exponent is isolated first. The logged increase is a difference of two levels, which then pins the coefficient. Multiplying by speed raises the exponent by one.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=4$$\n\n**2. Translate: the logged increase.**\n\n$$A\\left(12^{r}-8^{r}\\right)=40$$\n\n**3. Translate: power.**\n\n$$P(v)=v\\cdot Av^{r}=Av^{r+1}$$\n\n**Part 2: The model.**\n\n$$r=2 \\tag{1}$$\n\n$$F(v)=\\frac{1}{2}v^{2} \\tag{2}$$\n\n$$P(v)=\\frac{1}{2}v^{3} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of two gives the exponent, then the difference of squares gives the coefficient:\n\n$$4=2^{2} \\quad \\Rightarrow \\quad r=2, \\qquad 80A=40 \\quad \\Rightarrow \\quad A=\\frac{1}{2}$$\n\n**2.** Because the power exponent $3>1$, power outruns speed, doubling speed multiplies power by $8$, and $P'(v)=\\frac{3}{2}v^{2}$ rises with $v$.\n\n**3.** Levels against the thresholds:\n\n$$P(8)=256<300, \\qquad P(12)=864>800, \\qquad P'(8)=96<P'(12)=216$$\n\n**Answer.** $r=2$, $A=\\frac{1}{2}$ | $F(v)=\\frac{1}{2}v^{2}$, $P(v)=\\frac{1}{2}v^{3}$ | $P(8)=256$ W | $P(12)=864$ W"
   },
   {
     "id": "math-8-82",
@@ -36,28 +36,28 @@
     "context": "The signal a locator receives from a buried conductor follows $S(x)=A x^{r}$ millivolts, where $x>0$ is the burial depth in metres. Neither constant is posted. Doubling any burial depth cuts the received signal to one eighth, and a calibration run over a conductor buried at $2$ metres read $50$ millivolts. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The received signal is inversely proportional to burial depth.",
-      "A conductor buried at $4$ metres returns $6.25$ millivolts.",
+      "Doubling burial depth halves the received signal.",
       "The burial depth needed for a given reading is itself a power function of that reading.",
-      "The product of the cube of the depth and the received signal is the same at every depth.",
-      "A reading of $3.2$ millivolts corresponds to a burial depth of $10$ metres."
+      "A conductor buried at $4$ metres already returns under $7$ millivolts.",
+      "A reading of $3.2$ millivolts still corresponds to a burial depth of more than $8$ metres."
     ],
     "answer_key": [
       false,
-      true,
+      false,
       true,
       true,
       false
     ],
     "tactical_explanations": [
-      "**A.** → False\n\nThe doubling record gives $r=-3$. Inverse proportionality would mean exponent $-1$, which would cut the signal in half when depth doubles:\n\n$$\n2^{-1}=\\frac{1}{2}\n$$\n\nThe recorded factor is one eighth:\n\n$$\n2^{-3}=\\frac{1}{8}\n$$\n\nThe product $x\\,S(x)=Ax^{-2}$ still falls as depth grows. The exponent is $-3$, not $-1$, so the statement is False.",
-      "**B.** → True\n\nFour metres is one doubling of the calibration depth of $2$ metres, where the locator read $50$ millivolts. Each doubling multiplies the signal by $2^{-3}$:\n\n$$\nS(4)=50\\cdot\\frac{1}{8}\n$$\n\n$$\nS(4)=\\frac{50}{8}=6.25\n$$\n\nThe locator reads $6.25$ millivolts, so the statement is True.",
-      "**C.** → True\n\nThe law is $S=\\frac{400}{x^{3}}$. Solving for depth:\n\n$$\nx^{3}=\\frac{400}{S}\n$$\n\n$$\nx=\\left(\\frac{400}{S}\\right)^{\\frac{1}{3}}\n$$\n\n$$\nx=400^{\\frac{1}{3}}S^{-\\frac{1}{3}}\n$$\n\nA power with a nonzero exponent inverts to another power. Depth is a power of the reading with exponent $-\\frac{1}{3}$, so the statement is True.",
-      "**D.** → True\n\nThe exponent is $-3$, so the invariant of the power law is the product of the cube of the depth and the signal:\n\n$$\nx^{3}S(x)=400\n$$\n\nAt the calibration, $2^{3}\\cdot 50=400$. At four metres, $4^{3}\\cdot 6.25=400$. The product is the same at every depth, so the statement is True.",
-      "**E.** → False\n\nAt a reading of $3.2$ millivolts:\n\n$$\n\\frac{400}{x^{3}}=3.2\n$$\n\n$$\nx^{3}=\\frac{400}{3.2}\n$$\n\n$$\n\\frac{400}{3.2}=125\n$$\n\n$$\nx=5\n$$\n\nbecause $5^{3}=125$ and depth is positive. At the claimed $10$ metres the locator would show\n\n$$\nS(10)=\\frac{400}{10^{3}}=\\frac{400}{1000}=0.4\n$$\n\nThe reading corresponds to $5$ metres, not $10$, so the statement is False."
+      "**A.** → False\n\nThe doubling record gives $r=-3$. Inverse proportionality would mean exponent $-1$, which would cut the signal in half when depth doubles:\n\n$$\n2^{-1}=\\frac{1}{2}\n$$\n\nThe recorded factor is one eighth:\n\n$$\n2^{-3}=\\frac{1}{8}\n$$\n\nThe exponent is $-3$, not $-1$, so the statement is False.",
+      "**B.** → False\n\nDoubling depth multiplies the signal by $2^{-3}$:\n\n$$\n\\frac{S(2x)}{S(x)}=2^{-3}\n$$\n\n$$\n2^{-3}=\\frac{1}{8}\n$$\n\nA cut to one half would need exponent $-1$. Doubling leaves one eighth of the signal, not one half, so the statement is False.",
+      "**C.** → True\n\nThe law is $S=\\frac{400}{x^{3}}$. Solving for depth:\n\n$$\nx^{3}=\\frac{400}{S}\n$$\n\n$$\nx=400^{\\frac{1}{3}}S^{-\\frac{1}{3}}\n$$\n\nA power with a nonzero exponent inverts to another power. Depth is a power of the reading, so the statement is True.",
+      "**D.** → True\n\nFour metres is one doubling of the calibration depth of $2$ metres, where the locator read $50$ millivolts. Each doubling multiplies the signal by $\\frac{1}{8}$:\n\n$$\nS(4)=50\\cdot\\frac{1}{8}\n$$\n\n$$\nS(4)=\\frac{50}{8}=6.25\n$$\n\nBecause $6.25<7$, the locator already reads under $7$ millivolts, so the statement is True.",
+      "**E.** → False\n\nAt a reading of $3.2$ millivolts:\n\n$$\n\\frac{400}{x^{3}}=3.2\n$$\n\n$$\nx^{3}=\\frac{400}{3.2}\n$$\n\n$$\n\\frac{400}{3.2}=125\n$$\n\n$$\nx=5\n$$\n\nbecause $5^{3}=125$ and depth is positive. Five metres is not more than $8$ metres, so the statement is False."
     ],
     "difficulty_level": "3/5",
     "sort_order": 82,
-    "solution_overview": "Attenuation is $S(x)=Ax^{r}$ in millivolts. Doubling depth leaves one eighth of the signal, and the calibration is $S(2)=50$.\n\n**Part 1: Building the model.**\n\nLet $x$ = burial depth in metres and $S$ = received signal in millivolts. The doubling record is a ratio, so the coefficient cancels and the exponent is isolated first. One observed pair then fixes the coefficient; because the exponent is negative, that recovery multiplies by a power of the depth.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=\\frac{1}{8}$$\n\n**2. Translate: the calibration run.**\n\n$$A\\cdot 2^{r}=50$$\n\n**Part 2: The model.**\n\n$$r=-3 \\tag{1}$$\n\n$$S(x)=400x^{-3} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of two gives the exponent, then the calibration multiplies:\n\n$$\\frac{1}{8}=2^{-3} \\quad \\Rightarrow \\quad r=-3, \\qquad A=50\\times 8=400$$\n\n**2.** Levels down the depth range:\n\n$$S(2)=50, \\qquad S(4)=6.25, \\qquad S(5)=3.2, \\qquad S(10)=0.4$$\n\n**3.** Inverting (2) recovers a depth from a reading:\n\n$$x=\\left(\\frac{400}{S}\\right)^{\\frac{1}{3}}$$\n\n**4.** The invariant of the exponent $-3$:\n\n$$x^{3}S(x)=400$$\n\n**5.** The quantity that stays fixed is $x^{3}S(x)$, not $x\\,S(x)$, and that single fact rules out inverse proportionality, places a $3.2$ millivolt trace at five metres rather than ten, and keeps the product of depth cubed and signal constant.\n\n**Answer.** $r=-3$, $A=400$ | $S(x)=400x^{-3}$ | $S(4)=6.25$ mV | $3.2$ mV at $x=5$ m"
+    "solution_overview": "Attenuation is $S(x)=Ax^{r}$ in millivolts. Doubling depth leaves one eighth of the signal, and the calibration is $S(2)=50$.\n\n**Part 1: Building the model.**\n\nLet $x$ = burial depth in metres and $S$ = received signal in millivolts. The doubling record is a ratio, so the coefficient cancels and the exponent is isolated first. One observed pair then fixes the coefficient; because the exponent is negative, that recovery multiplies by a power of the depth.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=\\frac{1}{8}$$\n\n**2. Translate: the calibration run.**\n\n$$A\\cdot 2^{r}=50$$\n\n**Part 2: The model.**\n\n$$r=-3 \\tag{1}$$\n\n$$S(x)=400x^{-3} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of two gives the exponent, then the calibration multiplies:\n\n$$\\frac{1}{8}=2^{-3} \\quad \\Rightarrow \\quad r=-3, \\qquad A=50\\times 8=400$$\n\n**2.** Doubling depth leaves $\\frac{1}{8}$ of the signal, not $\\frac{1}{2}$, so the law is not inverse proportionality. The inverse $x=400^{\\frac{1}{3}}S^{-\\frac{1}{3}}$ is still a power.\n\n**3.** Levels against the thresholds:\n\n$$S(4)=6.25<7, \\qquad x=5\\ \\text{at}\\ S=3.2$$\n\n**Answer.** $r=-3$, $A=400$ | $S(x)=400x^{-3}$ | $S(4)=6.25$ mV | $3.2$ mV at $x=5$ m"
   },
   {
     "id": "math-8-83",
@@ -65,11 +65,101 @@
     "title": "Oxygen Demand and Gill Area in a Hatchery",
     "context": "A hatchery models a fish's oxygen demand as $D(m)=A m^{\\frac{3}{4}}$ millilitres per hour and its gill surface area as $G(m)=B m^{\\frac{2}{3}}$ square centimetres, where $m>0$ is body mass in grams. Neither coefficient is published. An $81$ g fish demands exactly $95$ millilitres per hour more than a $16$ g fish, and a $64$ g fish carries $48$ square centimetres of gill. A tank's total demand is the sum of its fish's individual demands. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "A $256$ g fish demands $320$ millilitres per hour.",
-      "Doubling body mass multiplies oxygen demand by less than two.",
+      "Oxygen demand grows more slowly than body mass.",
       "Oxygen demand per square centimetre of gill falls as the fish grows.",
-      "Sixteen $16$ g fish demand twice as much oxygen as one $256$ g fish of the same total mass.",
-      "Two $16$ g fish together have the same total gill area as one $32$ g fish."
+      "Two $16$ g fish together have the same total gill area as one $32$ g fish.",
+      "A $256$ g fish already demands more than $300$ millilitres per hour.",
+      "$16$ fish of $16$ g together still demand under $600$ millilitres per hour."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe exponent on demand is $\\frac{3}{4}$. An exponent smaller than one means demand grows more slowly than body mass: each extra gram adds less oxygen demand than the gram before it.\n\n$$\n\\frac{3}{4}<1\n$$\n\nThree quarters is below one, so the statement is True.",
+      "**B.** → False\n\nDemand per square centimetre of gill is the quotient of $D(m)=5m^{\\frac{3}{4}}$ and $G(m)=3m^{\\frac{2}{3}}$:\n\n$$\n\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{3}{4}-\\frac{2}{3}}\n$$\n\n$$\n\\frac{3}{4}-\\frac{2}{3}=\\frac{9}{12}-\\frac{8}{12}\n$$\n\n$$\n\\frac{9}{12}-\\frac{8}{12}=\\frac{1}{12}\n$$\n\nso\n\n$$\n\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{1}{12}}\n$$\n\nThe leftover exponent $\\frac{1}{12}$ is positive, so the intensity rises with body mass. It does not fall, so the statement is False.",
+      "**C.** → False\n\nGill area is $G(m)=3m^{\\frac{2}{3}}$. The exponent $\\frac{2}{3}<1$, so two small fish out-area one fish of twice the mass.\n\n$$\nG(16)=12\\cdot 2^{\\frac{2}{3}}\n$$\n\n$$\n2G(16)=24\\cdot 2^{\\frac{2}{3}}\n$$\n\n$$\nG(32)=24\\cdot 2^{\\frac{1}{3}}\n$$\n\nBecause $2^{\\frac{2}{3}}>2^{\\frac{1}{3}}$, the two $16$ g fish carry more gill area than the one $32$ g fish, so the statement is False.",
+      "**D.** → True\n\nDemand is $D(m)=5m^{\\frac{3}{4}}$. At $256$ g the mass is a fourth power:\n\n$$\n256=4^{4}\n$$\n\n$$\n256^{\\frac{3}{4}}=(4^{4})^{\\frac{3}{4}}=4^{3}\n$$\n\n$$\n4^{3}=64\n$$\n\n$$\nD(256)=5\\cdot 64=320\n$$\n\nBecause $320>300$, the $256$ g fish already demands more than $300$ millilitres per hour, so the statement is True.",
+      "**E.** → False\n\nA tank total is a sum of individual demands, never one application of $D$ to the pooled mass. One $16$ g fish demands\n\n$$\nD(16)=5\\cdot 16^{\\frac{3}{4}}\n$$\n\n$$\n16^{\\frac{3}{4}}=8\n$$\n\n$$\nD(16)=5\\cdot 8=40\n$$\n\nSixteen of them:\n\n$$\n16\\cdot 40=640\n$$\n\nBecause $640>600$, they do not still demand under $600$ millilitres per hour, so the statement is False."
+    ],
+    "difficulty_level": "5/5",
+    "sort_order": 83,
+    "solution_overview": "Oxygen demand is $D(m)=Am^{\\frac{3}{4}}$, calibrated by a $95$ millilitre gap between $16$ g and $81$ g. Gill area is $G(m)=Bm^{\\frac{2}{3}}$, pinned by $G(64)=48$. Tank totals add individual demands.\n\n**Part 1: Building the model.**\n\nLet $m$ = body mass in grams, $D$ = oxygen demand in millilitres per hour, $G$ = gill area in square centimetres. Both exponents are supplied, so each law needs exactly one record: a difference for demand and a level for gill area. Intensity subtracts the exponents. A tank total is a sum, never $D$ applied to a pooled mass.\n\n**1. Translate: the demand gap.**\n\n$$A\\left(81^{\\frac{3}{4}}-16^{\\frac{3}{4}}\\right)=95$$\n\n**2. Translate: the gill record.**\n\n$$B\\cdot 64^{\\frac{2}{3}}=48$$\n\n**3. Translate: demand per unit gill area.**\n\n$$\\frac{D(m)}{G(m)}=\\frac{A}{B}m^{\\frac{1}{12}}$$\n\n**Part 2: The model.**\n\n$$D(m)=5m^{\\frac{3}{4}} \\tag{1}$$\n\n$$G(m)=3m^{\\frac{2}{3}} \\tag{2}$$\n\n$$\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{1}{12}} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Exact shape factors make both calibrations one-step solves:\n\n$$81^{\\frac{3}{4}}=27,\\quad 16^{\\frac{3}{4}}=8 \\;\\Rightarrow\\; 19A=95 \\;\\Rightarrow\\; A=5$$\n\n$$64^{\\frac{2}{3}}=16 \\;\\Rightarrow\\; 16B=48 \\;\\Rightarrow\\; B=3$$\n\n**2.** Because $\\frac{3}{4}<1$, demand lags mass. Intensity $(3)$ still rises, since $\\frac{1}{12}>0$, and two $16$ g fish out-area one $32$ g fish.\n\n**3.** Levels against the thresholds:\n\n$$D(256)=320>300, \\qquad 16\\,D(16)=640>600$$\n\n**Answer.** $A=5$, $B=3$ | $D(256)=320$ | $16\\,D(16)=640$ | $\\frac{D}{G}=\\frac{5}{3}m^{\\frac{1}{12}}$"
+  },
+  {
+    "id": "math-8-84",
+    "case_id": "MATH 8.84",
+    "title": "Micro-Irrigation Flow Under a Fourth-Power Law",
+    "context": "Volumetric flow through a micro-irrigation emitter follows $Q(r)=A r^{k}$ litres per hour, where $r>0$ is the internal tube radius in millimetres. Neither constant is posted. Doubling any tube radius multiplies flow by $16$, and a bench test on a tube of radius $2$ mm delivered $48$ litres per hour. The designers also track the mean velocity index $\\frac{Q}{\\pi r^{2}}$, which spreads the flow across the tube's cross-section. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Flow grows faster than tube radius.",
+      "Doubling the tube radius doubles the flow.",
+      "The mean velocity index is the same in every tube.",
+      "A tube of radius $3$ mm already delivers more than $200$ litres per hour.",
+      "A tube of radius $1$ mm still delivers more than $10$ litres per hour."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → True\n\nThe doubling record gives $k=4$. An exponent larger than one means flow outruns radius: each extra millimetre of bore adds more delivery than the millimetre before it.\n\n$$\n4>1\n$$\n\nFour sits above one, so the statement is True.",
+      "**B.** → False\n\nDoubling the radius would double the flow only if the exponent were $1$. With exponent $4$ the scale factor is\n\n$$\n\\frac{Q(2r)}{Q(r)}=2^{4}\n$$\n\n$$\n2^{4}=16\n$$\n\nwhich is the recorded doubling factor itself. Flow rises sixteenfold, not twofold, so the statement is False.",
+      "**C.** → False\n\nThe mean velocity index divides $Q(r)=3r^{4}$ by the tube's cross-section $\\pi r^{2}$, so the exponents subtract rather than cancel:\n\n$$\n\\frac{Q(r)}{\\pi r^{2}}=\\frac{3r^{4}}{\\pi r^{2}}\n$$\n\n$$\n\\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2}\n$$\n\nThe leftover exponent $2$ is not zero, so the index grows with the radius. It is not the same in every tube, so the statement is False.",
+      "**D.** → True\n\nFlow is $Q(r)=3r^{4}$. At radius $3$ mm:\n\n$$\nQ(3)=3\\cdot 3^{4}\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\n3^{4}=81\n$$\n\n$$\nQ(3)=3\\cdot 81=243\n$$\n\nBecause $243>200$, the tube already delivers more than $200$ litres per hour, so the statement is True.",
+      "**E.** → False\n\nAt radius $1$ mm every power of $1$ is $1$, so the delivery equals the coefficient:\n\n$$\nQ(1)=3\\cdot 1^{4}=3\n$$\n\nBecause $3<10$, the tube does not still deliver more than $10$ litres per hour, so the statement is False."
+    ],
+    "difficulty_level": "3/5",
+    "sort_order": 84,
+    "solution_overview": "Flow obeys $Q(r)=Ar^{k}$. Doubling the radius multiplies flow by $16$, and the bench test is $Q(2)=48$. The mean velocity index is $\\frac{Q}{\\pi r^{2}}$.\n\n**Part 1: Building the model.**\n\nLet $r$ = internal radius in millimetres and $Q$ = flow in litres per hour. The doubling record isolates the exponent because the coefficient cancels. One bench test then fixes the coefficient. Dividing flow by the cross-section produces a second power whose exponent is the difference of the two.\n\n**1. Translate: the doubling rule.**\n\n$$2^{k}=16$$\n\n**2. Translate: the bench test.**\n\n$$A\\cdot 2^{k}=48$$\n\n**3. Translate: the velocity index.**\n\n$$\\frac{Q(r)}{\\pi r^{2}}=\\frac{A}{\\pi}r^{k-2}$$\n\n**Part 2: The model.**\n\n$$k=4 \\tag{1}$$\n\n$$Q(r)=3r^{4} \\tag{2}$$\n\n$$\\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of two, then dividing the bench reading:\n\n$$16=2^{4} \\quad \\Rightarrow \\quad k=4, \\qquad A=\\frac{48}{16}=3$$\n\n**2.** Because $k>1$, flow outruns radius, doubling multiplies flow by $16$, and the velocity index still carries exponent $2$.\n\n**3.** Levels against the thresholds:\n\n$$Q(3)=243>200, \\qquad Q(1)=3<10$$\n\n**Answer.** $k=4$, $A=3$ | $Q(r)=3r^{4}$ | $Q(3)=243$ L/h | velocity index $=\\frac{3}{\\pi}r^{2}$"
+  },
+  {
+    "id": "math-8-85",
+    "case_id": "MATH 8.85",
+    "title": "Barrier Distance for a Radiography Source",
+    "context": "Dose rate near an industrial radiography source follows $H(d)=A d^{r}$ microsieverts per hour, where $d>0$ is the distance from the source in metres. Neither constant is posted. Quadrupling any distance cuts the dose rate to one sixteenth, and a survey meter three metres from the source reads $80$ microsieverts per hour. Site rules put the barrier where the dose rate has fallen to $5$ microsieverts per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "Doubling the distance from the source halves the dose rate.",
+      "The dose rate stays positive at every finite distance from the source.",
+      "The distance needed for a given dose rate is itself a power of that dose rate.",
+      "At $6$ metres the dose rate is already under $25$ microsieverts per hour.",
+      "The barrier sits farther than $15$ metres from the source."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → False\n\nThe quadrupling record gives $r=-2$. Doubling the distance is then the factor $2^{-2}$:\n\n$$\n\\frac{H(2d)}{H(d)}=2^{-2}\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\nA cut to one half would need exponent $-1$. Doubling leaves one quarter of the dose rate, not one half, so the statement is False.",
+      "**B.** → True\n\nDose rate is $H(d)=\\frac{720}{d^{2}}$. The numerator is positive and the denominator is a square, hence positive for every finite $d>0$. A negative-power law never crosses zero. The dose rate stays positive, so the statement is True.",
+      "**C.** → True\n\nFrom $H=\\frac{720}{d^{2}}$ one gets\n\n$$\nd^{2}=\\frac{720}{H}\n$$\n\n$$\nd=\\sqrt{720}\\, H^{-\\frac{1}{2}}\n$$\n\nA power with a nonzero exponent inverts to another power. Distance is a power of the dose rate, so the statement is True.",
+      "**D.** → True\n\nSix metres is one doubling of the three-metre survey, where the meter read $80$ microsieverts per hour. Doubling quarters the dose rate, so\n\n$$\nH(6)=80\\cdot\\frac{1}{4}=20\n$$\n\nBecause $20<25$, the dose rate is already under $25$ microsieverts per hour, so the statement is True.",
+      "**E.** → False\n\nThe barrier is the distance where the dose rate has fallen from $80$ to $5$ microsieverts per hour:\n\n$$\n\\frac{5}{80}=\\frac{1}{16}\n$$\n\nWith exponent $-2$ that dose ratio is a squared distance ratio:\n\n$$\n\\left(\\frac{d}{3}\\right)^{-2}=\\frac{1}{16}\n$$\n\n$$\n\\left(\\frac{3}{d}\\right)^{2}=\\frac{1}{16}\n$$\n\n$$\n\\frac{3}{d}=\\frac{1}{4}\n$$\n\n$$\nd=3\\cdot 4=12\n$$\n\nTwelve metres is not farther than $15$ metres, so the statement is False."
+    ],
+    "difficulty_level": "2/5",
+    "sort_order": 85,
+    "solution_overview": "Dose rate obeys $H(d)=Ad^{r}$. Quadrupling distance leaves one sixteenth of the dose rate, the survey is $H(3)=80$, and the barrier sits where $H=5$.\n\n**Part 1: Building the model.**\n\nLet $d$ = distance from the source in metres and $H$ = dose rate in microsieverts per hour. The quadrupling record isolates the exponent. One survey reading then pins the coefficient; because that exponent is negative the recovery multiplies by a square. The barrier question inverts the same law.\n\n**1. Translate: the quadrupling rule.**\n\n$$4^{r}=\\frac{1}{16}$$\n\n**2. Translate: the survey reading.**\n\n$$A\\cdot 3^{r}=80$$\n\n**3. Translate: the barrier rule.**\n\n$$\\frac{A}{d^{-r}}=5$$\n\n**Part 2: The model.**\n\n$$r=-2 \\tag{1}$$\n\n$$H(d)=720d^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of four, then multiplying by the survey square:\n\n$$\\frac{1}{16}=4^{-2} \\quad \\Rightarrow \\quad r=-2, \\qquad A=80\\times 9=720$$\n\n**2.** Doubling quarters the dose rate, not halves it. The inverse of $(2)$ is a power, and $H(d)$ stays positive for every finite $d>0$.\n\n**3.** Levels against the thresholds:\n\n$$H(6)=20<25, \\qquad d=12<15$$\n\n**Answer.** $r=-2$, $A=720$ | $H(d)=720d^{-2}$ | $H(6)=20$ | barrier at $d=12$ m"
+  },
+  {
+    "id": "math-8-86",
+    "case_id": "MATH 8.86",
+    "title": "A Dye Plume Spreading Across a Shallow Lake",
+    "context": "A tracer dye released into a shallow lake spreads as a disc whose radius follows $r(t)=A t^{\\frac{2}{3}}$ metres, with $t>0$ measured in hours since release. The survey note omits the coefficient: it records only that the radius grew by exactly $45$ metres between hour $1$ and hour $8$. The stained area is the disc $S=\\pi r^{2}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements": [
+      "The stained area is itself a power of elapsed time.",
+      "The stained area grows faster than elapsed time.",
+      "Doubling the elapsed time doubles the stained area.",
+      "At hour $8$ the plume radius is already more than $50$ metres.",
+      "The plume radius reaches $240$ metres in under $50$ hours."
     ],
     "answer_key": [
       true,
@@ -79,105 +169,15 @@
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nDemand is $D(m)=5m^{\\frac{3}{4}}$. At $256$ g the mass is a fourth power:\n\n$$\n256=4^{4}\n$$\n\n$$\n256^{\\frac{3}{4}}=(4^{4})^{\\frac{3}{4}}\n$$\n\n$$\n(4^{4})^{\\frac{3}{4}}=4^{3}\n$$\n\n$$\n4^{3}=64\n$$\n\n$$\nD(256)=5\\cdot 64=320\n$$\n\nThe $256$ g fish demands $320$ millilitres per hour, so the statement is True.",
-      "**B.** → True\n\nThe exponent on demand is $\\frac{3}{4}$. Doubling body mass multiplies demand by $2^{\\frac{3}{4}}$, and the coefficient cancels:\n\n$$\n\\frac{D(2m)}{D(m)}=2^{\\frac{3}{4}}\n$$\n\nSplit the exponent as $\\frac{3}{4}=\\frac{1}{2}+\\frac{1}{4}$:\n\n$$\n2^{\\frac{3}{4}}=2^{\\frac{1}{2}}\\cdot 2^{\\frac{1}{4}}\n$$\n\n$$\n2^{\\frac{1}{2}}\\approx 1.414\n$$\n\n$$\n2^{\\frac{1}{4}}\\approx 1.189\n$$\n\n$$\n2^{\\frac{3}{4}}\\approx 1.414\\cdot 1.189\\approx 1.682\n$$\n\nThe factor $1.682$ is less than $2$. Demand grows more slowly than mass because the exponent sits below one, so the statement is True.",
-      "**C.** → False\n\nDemand per square centimetre of gill is the quotient of $D(m)=5m^{\\frac{3}{4}}$ and $G(m)=3m^{\\frac{2}{3}}$:\n\n$$\n\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{3}{4}-\\frac{2}{3}}\n$$\n\n$$\n\\frac{3}{4}-\\frac{2}{3}=\\frac{9}{12}-\\frac{8}{12}\n$$\n\n$$\n\\frac{9}{12}-\\frac{8}{12}=\\frac{1}{12}\n$$\n\nso\n\n$$\n\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{1}{12}}\n$$\n\nThe leftover exponent $\\frac{1}{12}$ is positive, so the intensity rises with body mass. It does not fall, so the statement is False.",
-      "**D.** → True\n\nA tank total is a sum of individual demands, never one application of $D$ to the pooled mass. One $16$ g fish demands\n\n$$\nD(16)=5\\cdot 8=40\n$$\n\nSixteen of them:\n\n$$\n16\\cdot 40=640\n$$\n\nOne $256$ g fish of the same total mass demands $320$. The ratio is\n\n$$\n\\frac{640}{320}=2\n$$\n\nBecause $\\frac{3}{4}<1$, many small fish out-consume one large fish of equal total mass. Sixteen small fish demand twice as much oxygen, so the statement is True.",
-      "**E.** → False\n\nGill area is $G(m)=3m^{\\frac{2}{3}}$. The exponent $\\frac{2}{3}<1$, so two small fish out-area one fish of twice the mass.\n\n$$\nG(16)=12\\cdot 2^{\\frac{2}{3}}\n$$\n\n$$\n2G(16)=24\\cdot 2^{\\frac{2}{3}}\n$$\n\n$$\nG(32)=24\\cdot 2^{\\frac{1}{3}}\n$$\n\nBecause $2^{\\frac{2}{3}}>2^{\\frac{1}{3}}$, the two $16$ g fish carry more gill area than the one $32$ g fish, so the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "sort_order": 83,
-    "solution_overview": "Oxygen demand is $D(m)=Am^{\\frac{3}{4}}$, calibrated by a $95$ millilitre gap between $16$ g and $81$ g. Gill area is $G(m)=Bm^{\\frac{2}{3}}$, pinned by $G(64)=48$. Tank totals add individual demands.\n\n**Part 1: Building the model.**\n\nLet $m$ = body mass in grams, $D$ = oxygen demand in millilitres per hour, $G$ = gill area in square centimetres. Both exponents are supplied, so each law needs exactly one record: a difference for demand and a level for gill area. Intensity subtracts the exponents. A tank total is a sum, never $D$ applied to a pooled mass.\n\n**1. Translate: the demand gap.**\n\n$$A\\left(81^{\\frac{3}{4}}-16^{\\frac{3}{4}}\\right)=95$$\n\n**2. Translate: the gill record.**\n\n$$B\\cdot 64^{\\frac{2}{3}}=48$$\n\n**3. Translate: demand per unit gill area.**\n\n$$\\frac{D(m)}{G(m)}=\\frac{A}{B}m^{\\frac{1}{12}}$$\n\n**Part 2: The model.**\n\n$$D(m)=5m^{\\frac{3}{4}} \\tag{1}$$\n\n$$G(m)=3m^{\\frac{2}{3}} \\tag{2}$$\n\n$$\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{1}{12}} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Exact shape factors make both calibrations one-step solves:\n\n$$81^{\\frac{3}{4}}=27,\\quad 16^{\\frac{3}{4}}=8 \\;\\Rightarrow\\; 19A=95 \\;\\Rightarrow\\; A=5$$\n\n$$64^{\\frac{2}{3}}=16 \\;\\Rightarrow\\; 16B=48 \\;\\Rightarrow\\; B=3$$\n\n**2.** The doubling factor on demand, and levels along the demand curve:\n\n$$2^{\\frac{3}{4}}\\approx 1.682, \\qquad D(16)=40, \\qquad D(256)=320$$\n\n**3.** A tank total is formed one fish at a time:\n\n$$16\\,D(16)=640=2\\,D(256)$$\n\n**4.** Two small fish versus one of twice the mass, on gill area:\n\n$$2\\,G(16)=24\\cdot 2^{\\frac{2}{3}} > G(32)=24\\cdot 2^{\\frac{1}{3}}$$\n\n**5.** Because $\\frac{3}{4}<1$, many small fish consume more oxygen than one large fish of equal total mass, and because $\\frac{2}{3}<1$ they also carry more gill. Intensity still creeps up, since $\\frac{1}{12}>0$.\n\n**Answer.** $A=5$, $B=3$ | $D(256)=320$ | $16\\,D(16)=640$ | $\\frac{D}{G}=\\frac{5}{3}m^{\\frac{1}{12}}$"
-  },
-  {
-    "id": "math-8-84",
-    "case_id": "MATH 8.84",
-    "title": "Micro-Irrigation Flow Under a Fourth-Power Law",
-    "context": "Volumetric flow through a micro-irrigation emitter follows $Q(r)=A r^{k}$ litres per hour, where $r>0$ is the internal tube radius in millimetres. Neither constant is posted. Doubling any tube radius multiplies flow by $16$, and a bench test on a tube of radius $2$ mm delivered $48$ litres per hour. The designers also track the mean velocity index $\\frac{Q}{\\pi r^{2}}$, which spreads the flow across the tube's cross-section. Evaluate each statement. Mark it TRUE or FALSE.",
-    "statements": [
-      "Widening the tube radius by $50\\%$ raises the flow by $125\\%$.",
-      "A tube of radius $3$ mm delivers $243$ litres per hour.",
-      "Halving the tube radius leaves one sixteenth of the flow.",
-      "The mean velocity index is the same in every tube.",
-      "A tube of radius $1$ mm delivers $3$ litres per hour."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "**A.** → False\n\nFlow is a fourth power of radius. Widening the radius by $50\\%$ is the multiplier $1.5=\\frac{3}{2}$:\n\n$$\n\\frac{Q(1.5r)}{Q(r)}=1.5^{4}\n$$\n\n$$\n\\left(\\frac{3}{2}\\right)^{4}=\\frac{81}{16}\n$$\n\nSquare first in decimals:\n\n$$\n1.5^{2}=2.25\n$$\n\nThen square again:\n\n$$\n1.5^{4}=(1.5^{2})^{2}\n$$\n\n$$\n2.25^{2}=5.0625\n$$\n\nThe relative rise is\n\n$$\n5.0625-1=4.0625\n$$\n\nor $406.25\\%$. The claimed $125\\%$ is the rise for exponent $2$, where $1.5^{2}=2.25$ and $2.25-1=1.25$. Flow rises by $406.25\\%$, so the statement is False.",
-      "**B.** → True\n\nFlow is $Q(r)=3r^{4}$. At radius $3$ mm:\n\n$$\nQ(3)=3\\cdot 3^{4}\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\n3^{4}=81\n$$\n\n$$\nQ(3)=3\\cdot 81=243\n$$\n\nThe tube delivers $243$ litres per hour, so the statement is True.",
-      "**C.** → True\n\nHalving is the reciprocal of doubling. A fourth power sends the factor $\\frac{1}{2}$ to\n\n$$\n\\left(\\frac{1}{2}\\right)^{4}=\\frac{1}{16}\n$$\n\nDoubling multiplies flow by $16$, so the inverse move must divide by $16$. One sixteenth of the flow remains, so the statement is True.",
-      "**D.** → False\n\nThe mean velocity index divides $Q(r)=3r^{4}$ by the tube's cross-section $\\pi r^{2}$, so the exponents subtract rather than cancel:\n\n$$\n\\frac{Q(r)}{\\pi r^{2}}=\\frac{3r^{4}}{\\pi r^{2}}\n$$\n\n$$\n\\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2}\n$$\n\nThe leftover exponent $2$ is not zero, so the index grows with the radius. From the bench tube $r=2$ to a $3$ mm tube the index scales by $\\left(\\frac{3}{2}\\right)^{2}=\\frac{9}{4}$. It is not the same in every tube, so the statement is False.",
-      "**E.** → True\n\nAt radius $1$ mm every power of $1$ is $1$, so the delivery equals the coefficient of $Q(r)=3r^{4}$:\n\n$$\nQ(1)=3\\cdot 1^{4}=3\n$$\n\nThe tube delivers $3$ litres per hour, so the statement is True."
-    ],
-    "difficulty_level": "3/5",
-    "sort_order": 84,
-    "solution_overview": "Flow obeys $Q(r)=Ar^{k}$. Doubling the radius multiplies flow by $16$, and the bench test is $Q(2)=48$. The mean velocity index is $\\frac{Q}{\\pi r^{2}}$.\n\n**Part 1: Building the model.**\n\nLet $r$ = internal radius in millimetres and $Q$ = flow in litres per hour. The doubling record isolates the exponent because the coefficient cancels. One bench test then fixes the coefficient. Dividing flow by the cross-section produces a second power whose exponent is the difference of the two.\n\n**1. Translate: the doubling rule.**\n\n$$2^{k}=16$$\n\n**2. Translate: the bench test.**\n\n$$A\\cdot 2^{k}=48$$\n\n**3. Translate: the velocity index.**\n\n$$\\frac{Q(r)}{\\pi r^{2}}=\\frac{A}{\\pi}r^{k-2}$$\n\n**Part 2: The model.**\n\n$$k=4 \\tag{1}$$\n\n$$Q(r)=3r^{4} \\tag{2}$$\n\n$$\\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of two, then dividing the bench reading:\n\n$$16=2^{4} \\quad \\Rightarrow \\quad k=4, \\qquad A=\\frac{48}{16}=3$$\n\n**2.** Levels across the tube sizes:\n\n$$Q(1)=3, \\qquad Q(2)=48, \\qquad Q(3)=243$$\n\n**3.** Exact scale factors, all fourth powers of the radius ratio:\n\n$$1.5^{4}=5.0625\\;(+406.25\\%), \\qquad \\left(\\frac{1}{2}\\right)^{4}=\\frac{1}{16}$$\n\n**4.** The velocity index still carries exponent $2$, so it rises with the radius.\n\n**5.** A fourth power is unforgiving in both directions: half a millimetre of extra bore multiplies delivery by more than five, and a bore halved keeps only a sixteenth of it.\n\n**Answer.** $k=4$, $A=3$ | $Q(r)=3r^{4}$ | $Q(3)=243$ L/h | velocity index $=\\frac{3}{\\pi}r^{2}$"
-  },
-  {
-    "id": "math-8-85",
-    "case_id": "MATH 8.85",
-    "title": "Barrier Distance for a Radiography Source",
-    "context": "Dose rate near an industrial radiography source follows $H(d)=A d^{r}$ microsieverts per hour, where $d>0$ is the distance from the source in metres. Neither constant is posted. Quadrupling any distance cuts the dose rate to one sixteenth, and a survey meter three metres from the source reads $80$ microsieverts per hour. Site rules put the barrier where the dose rate has fallen to $5$ microsieverts per hour. Evaluate each statement. Mark it TRUE or FALSE.",
-    "statements": [
-      "Doubling the distance from the source quarters the dose rate.",
-      "At six metres the dose rate is $40$ microsieverts per hour.",
-      "The dose rate stays positive at every finite distance from the source.",
-      "Moving from three metres to nine metres cuts the dose rate to one third.",
-      "The barrier belongs twelve metres from the source."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "**A.** → True\n\nThe quadrupling record gives $r=-2$. Doubling the distance is then the factor $2^{-2}$:\n\n$$\n\\frac{H(2d)}{H(d)}=2^{-2}\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\nDoubling the distance leaves one quarter of the dose rate, so the statement is True.",
-      "**B.** → False\n\nSix metres is one doubling of the three-metre survey, where the meter read $80$ microsieverts per hour. Doubling quarters the dose rate, so\n\n$$\nH(6)=80\\cdot\\frac{1}{4}=20\n$$\n\nThe claimed $40$ is half the survey reading, the inverse-proportional trap. The meter reads $20$ microsieverts per hour, so the statement is False.",
-      "**C.** → True\n\nDose rate is $H(d)=\\frac{720}{d^{2}}$. The numerator is positive and the denominator is a square, hence positive for every finite $d>0$. A negative-power law never crosses zero. The dose rate stays positive, so the statement is True.",
-      "**D.** → False\n\nThree metres to nine metres is a tripling. With exponent $-2$ the factor is $3^{-2}$, not $\\frac{1}{3}$:\n\n$$\n\\frac{H(9)}{H(3)}=3^{-2}\n$$\n\n$$\n3^{-2}=\\frac{1}{9}\n$$\n\nOne third would match exponent $-1$. One ninth of the dose rate remains, so the statement is False.",
-      "**E.** → True\n\nThe barrier is the distance where the dose rate has fallen from $80$ to $5$ microsieverts per hour:\n\n$$\n\\frac{5}{80}=\\frac{1}{16}\n$$\n\nWith exponent $-2$ that dose ratio is a squared distance ratio:\n\n$$\n\\left(\\frac{d}{3}\\right)^{-2}=\\frac{1}{16}\n$$\n\n$$\n\\left(\\frac{3}{d}\\right)^{2}=\\frac{1}{16}\n$$\n\n$$\n\\frac{3}{d}=\\frac{1}{4}\n$$\n\n$$\nd=3\\cdot 4=12\n$$\n\nThe dose ratio $16$ is a square, and $\\sqrt{16}=4$, so the barrier sits at four times the survey distance. The barrier belongs $12$ metres from the source, so the statement is True."
-    ],
-    "difficulty_level": "2/5",
-    "sort_order": 85,
-    "solution_overview": "Dose rate obeys $H(d)=Ad^{r}$. Quadrupling distance leaves one sixteenth of the dose rate, the survey is $H(3)=80$, and the barrier sits where $H=5$.\n\n**Part 1: Building the model.**\n\nLet $d$ = distance from the source in metres and $H$ = dose rate in microsieverts per hour. The quadrupling record isolates the exponent. One survey reading then pins the coefficient; because that exponent is negative the recovery multiplies by a square. The barrier question inverts the same law.\n\n**1. Translate: the quadrupling rule.**\n\n$$4^{r}=\\frac{1}{16}$$\n\n**2. Translate: the survey reading.**\n\n$$A\\cdot 3^{r}=80$$\n\n**3. Translate: the barrier rule.**\n\n$$\\frac{A}{d^{-r}}=5$$\n\n**Part 2: The model.**\n\n$$r=-2 \\tag{1}$$\n\n$$H(d)=720d^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of four, then multiplying by the survey square:\n\n$$\\frac{1}{16}=4^{-2} \\quad \\Rightarrow \\quad r=-2, \\qquad A=80\\times 9=720$$\n\n**2.** Levels along the walk-back from the source:\n\n$$H(3)=80, \\qquad H(6)=20, \\qquad H(9)=\\frac{720}{81}\\approx 8.89, \\qquad H(12)=5$$\n\n**3.** Scale factors read off the exponent $-2$:\n\n$$2^{-2}=\\frac{1}{4}, \\qquad 3^{-2}=\\frac{1}{9}, \\qquad 4^{-2}=\\frac{1}{16}$$\n\n**4.** Invert (2) at the permitted dose rate:\n\n$$d^{2}=\\frac{720}{5}=144 \\quad \\Rightarrow \\quad d=12$$\n\n**5.** Distance buys safety quickly but not linearly: doubling the standoff removes three quarters of the dose rate, tripling it removes eight ninths, and the barrier sits at four times the survey distance because $\\frac{80}{5}=16$ and $\\sqrt{16}=4$.\n\n**Answer.** $r=-2$, $A=720$ | $H(d)=720d^{-2}$ | $H(6)=20$ | barrier at $d=12$ m"
-  },
-  {
-    "id": "math-8-86",
-    "case_id": "MATH 8.86",
-    "title": "A Dye Plume Spreading Across a Shallow Lake",
-    "context": "A tracer dye released into a shallow lake spreads as a disc whose radius follows $r(t)=A t^{\\frac{2}{3}}$ metres, with $t>0$ measured in hours since release. The survey note omits the coefficient: it records only that the radius grew by exactly $45$ metres between hour $1$ and hour $8$. The stained area is the disc $S=\\pi r^{2}$. Evaluate each statement. Mark it TRUE or FALSE.",
-    "statements": [
-      "The stained area grows faster than proportionally with elapsed time.",
-      "At hour $8$ the plume radius is $60$ metres.",
-      "Doubling the elapsed time doubles the stained area.",
-      "The radius reaches $240$ metres $32$ hours after release.",
-      "Because the stained patch is a disc, the area law carries twice the exponent of the radius law."
-    ],
-    "answer_key": [
-      true,
-      true,
-      false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "**A.** → True\n\nThe stained area is $S(t)=\\pi A^{2} t^{\\frac{4}{3}}$. Proportional growth with elapsed time would mean composed exponent $1$. Because $\\frac{4}{3}>1$, area outruns a proportional clock, so the statement is True.",
-      "**B.** → True\n\nThe radius law is $r(t)=15t^{\\frac{2}{3}}$. At hour $8$:\n\n$$\n8^{\\frac{2}{3}}=4\n$$\n\n$$\nr(8)=15\\cdot 4=60\n$$\n\nForward check: $r(1)=15$, and $60-15=45$, which matches the survey gap. The radius is $60$ metres, so the statement is True.",
+      "**A.** → True\n\nThe radius law is $r(t)=15t^{\\frac{2}{3}}$. Squaring a power multiplies its exponent by $2$:\n\n$$\nS(t)=\\pi\\bigl(15t^{\\frac{2}{3}}\\bigr)^{2}\n$$\n\n$$\nS(t)=225\\pi\\, t^{\\frac{4}{3}}\n$$\n\nThat is a monomial in $t$. The stained area is a power of elapsed time, so the statement is True.",
+      "**B.** → True\n\nThe stained area is $S(t)=225\\pi\\, t^{\\frac{4}{3}}$. Proportional growth with elapsed time would mean composed exponent $1$. Because\n\n$$\n\\frac{4}{3}>1\n$$\n\narea outruns a proportional clock, so the statement is True.",
       "**C.** → False\n\nDoubling elapsed time reaches the stained area through the composed exponent $\\frac{4}{3}$, not through the time multiplier itself:\n\n$$\n\\frac{S(2t)}{S(t)}=2^{\\frac{4}{3}}\n$$\n\n$$\n2^{\\frac{4}{3}}=2\\cdot 2^{\\frac{1}{3}}\n$$\n\n$$\n2^{\\frac{1}{3}}\\approx 1.260\n$$\n\n$$\n2^{\\frac{4}{3}}\\approx 2.52\n$$\n\nA doubling of area would require composed exponent $1$, which would have returned the factor $2$. The factor is about $2.52$, not $2$, so the statement is False.",
-      "**D.** → False\n\nAt radius $240$ metres the law $r(t)=15t^{\\frac{2}{3}}$ inverts as\n\n$$\n15t^{\\frac{2}{3}}=240\n$$\n\n$$\nt^{\\frac{2}{3}}=16\n$$\n\n$$\nt=16^{\\frac{3}{2}}\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\n16^{\\frac{3}{2}}=4^{3}=64\n$$\n\nAt the claimed hour $32$:\n\n$$\nr(32)=15\\cdot 32^{\\frac{2}{3}}\\approx 151\n$$\n\nThe claimed hour $32$ gives about $151$ metres, not $240$. The radius reaches $240$ metres at hour $64$, so the statement is False.",
-      "**E.** → True\n\nSquaring a power multiplies its exponent by $2$. The radius exponent is $\\frac{2}{3}$, so the area exponent is\n\n$$\n2\\cdot\\frac{2}{3}=\\frac{4}{3}\n$$\n\nThe area law carries twice the exponent of the radius law, so the statement is True."
+      "**D.** → True\n\nThe radius law is $r(t)=15t^{\\frac{2}{3}}$. At hour $8$:\n\n$$\n8^{\\frac{2}{3}}=4\n$$\n\n$$\nr(8)=15\\cdot 4=60\n$$\n\nForward check: $r(1)=15$, and $60-15=45$, which matches the survey gap. Because $60>50$, the radius is already more than $50$ metres, so the statement is True.",
+      "**E.** → False\n\nAt radius $240$ metres the law $r(t)=15t^{\\frac{2}{3}}$ inverts as\n\n$$\n15t^{\\frac{2}{3}}=240\n$$\n\n$$\nt^{\\frac{2}{3}}=16\n$$\n\n$$\nt=16^{\\frac{3}{2}}\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\n16^{\\frac{3}{2}}=4^{3}=64\n$$\n\n$64$ hours is not under $50$ hours, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 86,
-    "solution_overview": "The plume radius is $r(t)=At^{\\frac{2}{3}}$, calibrated by a $45$-metre growth between hour $1$ and hour $8$. The stained area is $S=\\pi r^{2}$.\n\n**Part 1: Building the model.**\n\nLet $t$ = hours since release, $r$ = plume radius in metres, $S$ = stained area in square metres. The survey gives a difference rather than a level, so the coefficient comes from subtracting two shape factors. Composing with the disc formula then doubles the exponent and squares the coefficient.\n\n**1. Translate: the recorded growth.**\n\n$$A\\left(8^{\\frac{2}{3}}-1^{\\frac{2}{3}}\\right)=45$$\n\n**2. Translate: the composition.** Squaring the radius law doubles its exponent:\n\n$$S(t)=\\pi\\bigl(At^{\\frac{2}{3}}\\bigr)^{2}=\\pi A^{2}t^{\\frac{4}{3}}$$\n\n**Part 2: The model.**\n\n$$r(t)=15t^{\\frac{2}{3}} \\tag{1}$$\n\n$$S(t)=225\\pi\\, t^{\\frac{4}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Exact shape factors make the calibration a one-step solve:\n\n$$8^{\\frac{2}{3}}=4 \\;\\Rightarrow\\; 3A=45 \\;\\Rightarrow\\; A=15$$\n\n**2.** Scale factors for the area, read off the exponent in (2):\n\n$$2^{\\frac{4}{3}}\\approx 2.52, \\qquad 8^{\\frac{4}{3}}=16$$\n\n**3.** Levels at the two surveyed hours:\n\n$$r(1)=15, \\quad r(8)=60, \\qquad S(1)=225\\pi, \\quad S(8)=3600\\pi$$\n\n**4.** Invert (1) to find when the radius reaches $240$ metres:\n\n$$t^{\\frac{2}{3}}=16 \\quad \\Rightarrow \\quad t=16^{\\frac{3}{2}}=64$$\n\n**5.** The two exponents straddle one: area outruns proportional growth, since $\\frac{4}{3}>1$, while the radius lags it, since $\\frac{2}{3}<1$, so a target radius arrives far later than a linear reading would predict.\n\n**Answer.** $A=15$ | $r(t)=15t^{\\frac{2}{3}}$, $S(t)=225\\pi t^{\\frac{4}{3}}$ | $r(8)=60$ m | $r=240$ m at $t=64$ h"
+    "solution_overview": "The plume radius is $r(t)=At^{\\frac{2}{3}}$, calibrated by a $45$-metre growth between hour $1$ and hour $8$. The stained area is $S=\\pi r^{2}$.\n\n**Part 1: Building the model.**\n\nLet $t$ = hours since release, $r$ = plume radius in metres, $S$ = stained area in square metres. The survey gives a difference rather than a level, so the coefficient comes from subtracting two shape factors. Composing with the disc formula then doubles the exponent and squares the coefficient.\n\n**1. Translate: the recorded growth.**\n\n$$A\\left(8^{\\frac{2}{3}}-1^{\\frac{2}{3}}\\right)=45$$\n\n**2. Translate: the composition.** Squaring the radius law doubles its exponent:\n\n$$S(t)=\\pi\\bigl(At^{\\frac{2}{3}}\\bigr)^{2}=\\pi A^{2}t^{\\frac{4}{3}}$$\n\n**Part 2: The model.**\n\n$$r(t)=15t^{\\frac{2}{3}} \\tag{1}$$\n\n$$S(t)=225\\pi\\, t^{\\frac{4}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Exact shape factors make the calibration a one-step solve:\n\n$$8^{\\frac{2}{3}}=4 \\;\\Rightarrow\\; 3A=45 \\;\\Rightarrow\\; A=15$$\n\n**2.** $(2)$ is a power of $t$. Because $\\frac{4}{3}>1$, area outruns proportional growth, and doubling time multiplies area by $2^{\\frac{4}{3}}\\approx 2.52$, not by $2$.\n\n**3.** Levels against the thresholds:\n\n$$r(8)=60>50, \\qquad t=64\\ \\text{at}\\ r=240$$\n\n**Answer.** $A=15$ | $r(t)=15t^{\\frac{2}{3}}$, $S(t)=225\\pi t^{\\frac{4}{3}}$ | $r(8)=60$ m | $r=240$ m at $t=64$ h"
   },
   {
     "id": "math-8-87",
@@ -186,28 +186,28 @@
     "context": "Discharge over a measuring weir follows $Q(h)=A h^{\\frac{3}{2}}$ cubic metres per second, where $h>0$ is the head in metres. A gauging at a head of $0.25$ metres recorded a discharge of $2$ cubic metres per second. A field team wants the same rating curve rewritten with the head in centimetres, sometimes keeping discharge in cubic metres per second and sometimes reporting it in litres per second. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Switching the head from metres to centimetres leaves the exponent unchanged.",
-      "With the head in centimetres and discharge still in cubic metres per second, the coefficient is $0.016$.",
-      "Measuring the head in centimetres instead of metres multiplies the coefficient by $100$.",
-      "Discharge is proportional to head.",
-      "A head of one metre discharges $32$ cubic metres per second."
+      "Discharge grows faster than head.",
+      "Doubling the head doubles the discharge.",
+      "A head of $1$ metre still discharges under $20$ cubic metres per second.",
+      "A head of $4$ metres still discharges under $100$ cubic metres per second."
     ],
     "answer_key": [
       true,
       true,
       false,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nSwitching the head from metres to centimetres replaces $h$ by a constant multiple of itself. One metre is $100$ centimetres, so\n\n$$\nh=\\frac{h_{\\mathrm{cm}}}{100}\n$$\n\nA power function pushes that constant through the existing exponent:\n\n$$\nQ=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}\n$$\n\n$$\nQ=\\frac{A}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}\n$$\n\nThe conversion rescales only the coefficient. The new exponent on $h_{\\mathrm{cm}}$ is still $\\frac{3}{2}$. Only the coefficient moves, so the statement is True.",
-      "**B.** → True\n\nThe metre-form coefficient is $A=16$. With the head in centimetres that coefficient is divided by $100^{\\frac{3}{2}}$:\n\n$$\n100^{\\frac{1}{2}}=10\n$$\n\n$$\n100^{\\frac{3}{2}}=10^{3}=1000\n$$\n\n$$\n\\frac{16}{1000}=0.016\n$$\n\nAt the gauged point the head is $25$ cm, and $0.016\\cdot 25^{\\frac{3}{2}}=0.016\\cdot 125=2$, which matches the original discharge. The coefficient is $0.016$, so the statement is True.",
-      "**C.** → False\n\nThe centimetre-form coefficient is $0.016$, which is $\\frac{16}{1000}$, not $16\\times 100$. A smaller length unit makes every numerical head larger, so the coefficient must shrink. The factor is $\\frac{1}{1000}$, not $100$, so the statement is False.",
-      "**D.** → False\n\nProportionality would require exponent $1$. The weir exponent is $\\frac{3}{2}$, and a change of units cannot move it. Doubling the head therefore multiplies discharge by $2^{\\frac{3}{2}}$, not by $2$:\n\n$$\n2^{\\frac{3}{2}}=2\\cdot 2^{\\frac{1}{2}}\n$$\n\n$$\n2^{\\frac{1}{2}}\\approx 1.414\n$$\n\n$$\n2\\cdot 1.414\\approx 2.828\n$$\n\nDoubling the head multiplies discharge by about $2.83$, not by $2$. Discharge is not proportional to head, so the statement is False.",
-      "**E.** → False\n\nAt a head of one metre every power of $1$ is $1$, so the discharge equals the coefficient $A=16$:\n\n$$\nQ(1)=16\\cdot 1^{\\frac{3}{2}}=16\n$$\n\nThe claimed $32$ is what a squared law would give from the gauged head, since $4^{2}=16$ and $16\\cdot 2=32$. The discharge is $16$ cubic metres per second, so the statement is False."
+      "**A.** → True\n\nSwitching the head from metres to centimetres replaces $h$ by a constant multiple of itself. One metre is $100$ centimetres, so\n\n$$\nh=\\frac{h_{\\mathrm{cm}}}{100}\n$$\n\nA power function pushes that constant through the existing exponent:\n\n$$\nQ=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}\n$$\n\n$$\nQ=\\frac{A}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}\n$$\n\nThe conversion rescales only the coefficient. The new exponent on $h_{\\mathrm{cm}}$ is still $\\frac{3}{2}$, so the statement is True.",
+      "**B.** → True\n\nThe weir exponent is $\\frac{3}{2}$. An exponent larger than one means discharge outruns head: each extra metre of head adds more flow than the metre before it.\n\n$$\n\\frac{3}{2}>1\n$$\n\nThree halves sits above one, and a change of units cannot move it, so the statement is True.",
+      "**C.** → False\n\nDoubling the head would double discharge only if the exponent were $1$. With exponent $\\frac{3}{2}$ the scale factor is\n\n$$\n\\frac{Q(2h)}{Q(h)}=2^{\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\cdot 2^{\\frac{1}{2}}\n$$\n\n$$\n2^{\\frac{1}{2}}\\approx 1.414\n$$\n\n$$\n2\\cdot 1.414\\approx 2.828\n$$\n\nDoubling the head multiplies discharge by about $2.83$, not by $2$, so the statement is False.",
+      "**D.** → True\n\nThe metre-form coefficient is $A=16$. At a head of one metre every power of $1$ is $1$, so the discharge equals the coefficient:\n\n$$\nQ(1)=16\\cdot 1^{\\frac{3}{2}}=16\n$$\n\nBecause $16<20$, the weir still discharges under $20$ cubic metres per second, so the statement is True.",
+      "**E.** → False\n\nAt a head of $4$ metres:\n\n$$\n4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\n$$\nQ(4)=16\\cdot 8=128\n$$\n\nBecause $128>100$, the weir does not still discharge under $100$ cubic metres per second, so the statement is False."
     ],
     "difficulty_level": "3/5",
     "sort_order": 87,
-    "solution_overview": "The rating curve is $Q(h)=Ah^{\\frac{3}{2}}$ in metres and cubic metres per second, pinned by the gauging $Q(0.25)=2$. The team wants the same curve in centimetres, and in litres per second.\n\n**Part 1: Building the model.**\n\nLet $h$ = head in metres, $h_{\\mathrm{cm}}=100h$ = head in centimetres, $Q$ = discharge. The exponent belongs to the weir, so one gauging fixes the coefficient. A change of input unit replaces the input by a constant multiple of itself, and a power function pushes that constant through its exponent, so the exponent never moves and only the coefficient does. A change of output unit scales the coefficient directly.\n\n**1. Translate: the gauging.**\n\n$$A(0.25)^{\\frac{3}{2}}=2$$\n\n**2. Translate: the change of input unit.**\n\n$$Q=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}=\\frac{A}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}$$\n\n**3. Translate: the change of output unit.** One cubic metre per second is $1000$ litres per second.\n\n**Part 2: The model.**\n\n$$Q=16h^{\\frac{3}{2}} \\quad \\text{(m, m}^{3}\\text{/s)} \\tag{1}$$\n\n$$Q=0.016\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, m}^{3}\\text{/s)} \\tag{2}$$\n\n$$Q=16\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, L/s)} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** The shape factor at the gauged head is exact:\n\n$$0.25^{\\frac{3}{2}}=0.5^{3}=0.125 \\;\\Rightarrow\\; A=\\frac{2}{0.125}=16$$\n\n**2.** The head conversion carries the exponent:\n\n$$100^{\\frac{3}{2}}=1000 \\;\\Rightarrow\\; 16\\longrightarrow\\frac{16}{1000}=0.016$$\n\n**3.** The litre conversion multiplies by $1000$ and cancels that division:\n\n$$1000\\times 0.016=16$$\n\n**4.** One check at the gauged point in each set of units:\n\n$$16(0.25)^{\\frac{3}{2}}=2, \\qquad 0.016(25)^{\\frac{3}{2}}=2, \\qquad 16(25)^{\\frac{3}{2}}=2000$$\n\n**Answer.** $A=16$ | $Q=16h^{\\frac{3}{2}}$ (m, m$^{3}$/s) | $Q=0.016h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, m$^{3}$/s) | $Q=16h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, L/s)"
+    "solution_overview": "The rating curve is $Q(h)=Ah^{\\frac{3}{2}}$ in metres and cubic metres per second, pinned by the gauging $Q(0.25)=2$. The team wants the same curve in centimetres, and in litres per second.\n\n**Part 1: Building the model.**\n\nLet $h$ = head in metres, $h_{\\mathrm{cm}}=100h$ = head in centimetres, $Q$ = discharge. The exponent belongs to the weir, so one gauging fixes the coefficient. A change of input unit replaces the input by a constant multiple of itself, and a power function pushes that constant through its exponent, so the exponent never moves and only the coefficient does. A change of output unit scales the coefficient directly.\n\n**1. Translate: the gauging.**\n\n$$A(0.25)^{\\frac{3}{2}}=2$$\n\n**2. Translate: the change of input unit.**\n\n$$Q=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}=\\frac{A}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}$$\n\n**3. Translate: the change of output unit.** One cubic metre per second is $1000$ litres per second.\n\n**Part 2: The model.**\n\n$$Q=16h^{\\frac{3}{2}} \\quad \\text{(m, m}^{3}\\text{/s)} \\tag{1}$$\n\n$$Q=0.016\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, m}^{3}\\text{/s)} \\tag{2}$$\n\n$$Q=16\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, L/s)} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** The shape factor at the gauged head is exact:\n\n$$0.25^{\\frac{3}{2}}=0.5^{3}=0.125 \\;\\Rightarrow\\; A=\\frac{2}{0.125}=16$$\n\n**2.** Switching the head to centimetres leaves the exponent $\\frac{3}{2}$. Because that exponent exceeds $1$, discharge outruns head, and doubling head multiplies discharge by $2^{\\frac{3}{2}}\\approx 2.83$, not by $2$.\n\n**3.** Levels against the thresholds:\n\n$$Q(1)=16<20, \\qquad Q(4)=128>100$$\n\n**Answer.** $A=16$ | $Q=16h^{\\frac{3}{2}}$ (m, m$^{3}$/s) | $Q=0.016h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, m$^{3}$/s) | $Q=16h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, L/s)"
   },
   {
     "id": "math-8-88",
@@ -215,29 +215,29 @@
     "title": "A Grain Dryer Calibrated From Two Recorded Ratios",
     "context": "Fuel use in a grain dryer follows $F(x)=A x^{r}$ litres per batch, where $x>0$ is the batch mass in tonnes. Neither constant is published. Doubling the batch mass raises fuel use by $300\\%$, and moving from a $2$-tonne batch to a $6$-tonne batch adds exactly $96$ litres. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Doubling the batch mass triples fuel use.",
-      "A $10$-tonne batch uses $300$ litres.",
-      "Tripling the batch mass multiplies fuel use by $9$.",
-      "Fuel use per tonne is the same at every batch size.",
-      "A $6$-tonne batch uses $96$ litres."
+      "Fuel use grows faster than batch mass.",
+      "Doubling the batch mass doubles fuel use.",
+      "Fuel use per tonne falls as the batch grows.",
+      "A $10$-tonne batch already uses more than $250$ litres.",
+      "A $6$-tonne batch still uses under $100$ litres."
     ],
     "answer_key": [
-      false,
-      true,
       true,
       false,
+      false,
+      true,
       false
     ],
     "tactical_explanations": [
-      "**A.** → False\n\nA $300\\%$ rise means the new value is the old value plus three times the old value:\n\n$$\n1+\\frac{300}{100}=4\n$$\n\nDoubling therefore multiplies fuel by $4$, not by $3$. Reading $300\\%$ as a factor of $3$ drops the baseline $100\\%$. Fuel use is quadrupled, not tripled, so the statement is False.",
-      "**B.** → True\n\nFuel use is $F(x)=3x^{2}$. At $10$ tonnes:\n\n$$\nF(10)=3\\cdot 10^{2}\n$$\n\n$$\n10^{2}=100\n$$\n\n$$\nF(10)=3\\cdot 100=300\n$$\n\nThe batch uses $300$ litres, so the statement is True.",
-      "**C.** → True\n\nFuel use is a square of batch mass, so a mass triple contributes $3^{2}$:\n\n$$\n\\frac{F(3x)}{F(x)}=3^{2}=9\n$$\n\nA law of exponent $1$ would have returned $3$. Fuel use is multiplied by $9$, so the statement is True.",
-      "**D.** → False\n\nFuel per tonne divides $F(x)=3x^{2}$ by the mass, which lowers the exponent by $1$:\n\n$$\n\\frac{F(x)}{x}=3x\n$$\n\nThe leftover exponent $1$ is not zero: litres per tonne climb in proportion to batch mass. At the logged batches the figures are $6$ and $18$. The per-tonne figure is not constant, so the statement is False.",
-      "**E.** → False\n\nThe $96$ litres is a gap between two batches, not the level at $6$ tonnes.\n\n$$\nF(6)=3\\cdot 6^{2}\n$$\n\n$$\n6^{2}=36\n$$\n\n$$\nF(6)=3\\cdot 36=108\n$$\n\nThe companion level is $F(2)=12$, and $108-12=96$ recovers the log entry. The $6$-tonne batch uses $108$ litres, so the statement is False."
+      "**A.** → True\n\nA $300\\%$ rise on doubling means the new value is four times the old:\n\n$$\n1+\\frac{300}{100}=4\n$$\n\n$$\n2^{r}=4\n$$\n\nso $r=2$. An exponent larger than one means fuel outruns mass: each extra tonne costs more litres than the tonne before it. Two sits above one, so the statement is True.",
+      "**B.** → False\n\nDoubling mass would double fuel only if the exponent were $1$. With $r=2$ the scale factor is\n\n$$\n\\frac{F(2x)}{F(x)}=2^{2}=4\n$$\n\nReading $300\\%$ as a doubling drops the baseline $100\\%$. Fuel use is quadrupled, not doubled, so the statement is False.",
+      "**C.** → False\n\nFuel per tonne divides $F(x)=3x^{2}$ by the mass, which lowers the exponent by $1$:\n\n$$\n\\frac{F(x)}{x}=3x\n$$\n\nThe leftover exponent $1$ is not negative: litres per tonne climb in proportion to batch mass. The per-tonne figure rises, so the statement is False.",
+      "**D.** → True\n\nFuel use is $F(x)=3x^{2}$. At $10$ tonnes:\n\n$$\nF(10)=3\\cdot 10^{2}\n$$\n\n$$\n10^{2}=100\n$$\n\n$$\nF(10)=3\\cdot 100=300\n$$\n\nBecause $300>250$, the batch already uses more than $250$ litres, so the statement is True.",
+      "**E.** → False\n\nThe $96$ litres is a gap between two batches, not the level at $6$ tonnes.\n\n$$\nF(6)=3\\cdot 6^{2}\n$$\n\n$$\n6^{2}=36\n$$\n\n$$\nF(6)=3\\cdot 36=108\n$$\n\nThe companion level is $F(2)=12$, and $108-12=96$ recovers the log entry. Because $108>100$, the $6$-tonne batch does not still use under $100$ litres, so the statement is False."
     ],
     "difficulty_level": "3/5",
     "sort_order": 88,
-    "solution_overview": "Fuel use is $F(x)=Ax^{r}$. Doubling the batch raises fuel by $300\\%$, and the gap between $2$ tonnes and $6$ tonnes is $96$ litres.\n\n**Part 1: Building the model.**\n\nLet $x$ = batch mass in tonnes and $F$ = fuel use in litres. Two unknowns need two records, and the order in which they are used matters. The first is a ratio, which is blind to the coefficient and therefore isolates the exponent; the second is a difference of levels, which pins the coefficient once the exponent is known.\n\n**1. Translate: the doubling rule.** A $300\\%$ rise is a multiplier of $4$:\n\n$$2^{r}=4$$\n\n**2. Translate: the logged gap.**\n\n$$A\\left(6^{r}-2^{r}\\right)=96$$\n\n**3. Translate: fuel per tonne.** Dividing lowers the exponent by one:\n\n$$\\frac{F(x)}{x}=Ax^{r-1}$$\n\n**Part 2: The model.**\n\n$$r=2 \\tag{1}$$\n\n$$F(x)=3x^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The ratio equation is settled by matching powers of two:\n\n$$2^{r}=4=2^{2} \\quad \\Rightarrow \\quad r=2$$\n\n**2.** With $r=2$ the difference of squares is exact:\n\n$$A(36-4)=32A=96 \\quad \\Rightarrow \\quad A=3$$\n\n**3.** Levels along the curve:\n\n$$F(2)=12, \\qquad F(6)=108, \\qquad F(10)=300$$\n\n**4.** Scale factors and the per-tonne figure:\n\n$$\\frac{F(3x)}{F(x)}=9, \\qquad \\frac{F(x)}{x}=3x$$\n\n**5.** Every claim here follows from the single exponent $2$: mass multipliers arrive squared, so doubling costs four times the fuel and tripling nine times, while the $96$ litres is a gap, not a level.\n\n**Answer.** $r=2$, $A=3$ | $F(x)=3x^{2}$ | $F(10)=300$ litres | $F(6)=108$ litres"
+    "solution_overview": "Fuel use is $F(x)=Ax^{r}$. Doubling the batch raises fuel by $300\\%$, and the gap between $2$ tonnes and $6$ tonnes is $96$ litres.\n\n**Part 1: Building the model.**\n\nLet $x$ = batch mass in tonnes and $F$ = fuel use in litres. Two unknowns need two records, and the order in which they are used matters. The first is a ratio, which is blind to the coefficient and therefore isolates the exponent; the second is a difference of levels, which pins the coefficient once the exponent is known.\n\n**1. Translate: the doubling rule.** A $300\\%$ rise is a multiplier of $4$:\n\n$$2^{r}=4$$\n\n**2. Translate: the logged gap.**\n\n$$A\\left(6^{r}-2^{r}\\right)=96$$\n\n**3. Translate: fuel per tonne.** Dividing lowers the exponent by one:\n\n$$\\frac{F(x)}{x}=Ax^{r-1}$$\n\n**Part 2: The model.**\n\n$$r=2 \\tag{1}$$\n\n$$F(x)=3x^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The ratio equation is settled by matching powers of two:\n\n$$2^{r}=4=2^{2} \\quad \\Rightarrow \\quad r=2$$\n\n**2.** With $r=2$ the difference of squares is exact:\n\n$$A(36-4)=32A=96 \\quad \\Rightarrow \\quad A=3$$\n\n**3.** Because $r>1$, fuel outruns mass, doubling quadruples fuel, and $\\frac{F(x)}{x}=3x$ rises with the batch.\n\n**4.** Levels against the thresholds:\n\n$$F(10)=300>250, \\qquad F(6)=108>100$$\n\n**Answer.** $r=2$, $A=3$ | $F(x)=3x^{2}$ | $F(10)=300$ litres | $F(6)=108$ litres"
   },
   {
     "id": "math-8-89",
@@ -245,29 +245,29 @@
     "title": "Kiln Flue Mass Flow into a Particulate Index",
     "context": "A kiln's flue-gas mass flow follows $m(t)=A t^{\\frac{1}{2}}$ tonnes per hour for throttle setting $t>0$, and the particulate load index is then $P(m)=\\frac{m^{4}}{16}$. A calibration at $t=9$ recorded $m=6$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The composed particulate index is a power of throttle with exponent $2$.",
-      "At throttle $25$ the mass flow is $10$ tonnes per hour.",
+      "The composed particulate index is a power of the throttle setting.",
       "The composed particulate index grows in proportion to the throttle setting.",
       "Mass flow per unit of throttle falls as the throttle rises.",
-      "An index of $81$ requires throttle setting $27$."
+      "At throttle $25$ the mass flow is already above $8$ tonnes per hour.",
+      "An index of $81$ still requires a throttle setting above $20$."
     ],
     "answer_key": [
       true,
-      true,
       false,
+      true,
       true,
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe inner law is $m(t)=2t^{\\frac{1}{2}}$. Feed it into $P(m)=\\frac{m^{4}}{16}$:\n\n$$\nP\\bigl(m(t)\\bigr)=\\frac{\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}}{16}\n$$\n\n$$\n\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}=2^{4}t^{2}\n$$\n\n$$\n2^{4}=16\n$$\n\n$$\nP\\bigl(m(t)\\bigr)=\\frac{16t^{2}}{16}=t^{2}\n$$\n\nRaising a power to a power multiplies the exponents: $\\frac{1}{2}\\cdot 4=2$. The composed exponent is $2$, so the statement is True.",
-      "**B.** → True\n\nThe inner law is $m(t)=2t^{\\frac{1}{2}}$. At throttle $25$:\n\n$$\nm(25)=2\\cdot 25^{\\frac{1}{2}}\n$$\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\nm(25)=2\\cdot 5=10\n$$\n\nThe mass flow is $10$ tonnes per hour, so the statement is True.",
-      "**C.** → False\n\nThe composed index is $t^{2}$. Proportional growth would mean exponent $1$. Doubling the throttle therefore multiplies the index by\n\n$$\n2^{2}=4\n$$\n\nA proportional law would have returned the factor $2$. The composed exponent is $2$, so the statement is False.",
-      "**D.** → True\n\nMass flow per unit of throttle is the quotient of $m(t)=2t^{\\frac{1}{2}}$ by $t$:\n\n$$\n\\frac{m(t)}{t}=2t^{\\frac{1}{2}-1}\n$$\n\n$$\n\\frac{m(t)}{t}=2t^{-\\frac{1}{2}}\n$$\n\nThe leftover exponent is negative, so the quotient falls as $t$ rises. At the calibration it is $\\frac{6}{9}=\\frac{2}{3}$, and at throttle $25$ it is $\\frac{10}{25}=\\frac{2}{5}$. Mass flow per unit of throttle falls, so the statement is True.",
-      "**E.** → False\n\nThe composed index is $t^{2}$. At index $81$:\n\n$$\nt^{2}=81\n$$\n\n$$\nt=9\n$$\n\nbecause throttle is positive. The quoted $27$ treats $81$ as if an exponent were a number to divide by. Running the chain forward from $t=9$ returns $m=6$ and $P=\\frac{6^{4}}{16}=81$. The required throttle setting is $9$, not $27$, so the statement is False."
+      "**A.** → True\n\nThe inner law is $m(t)=2t^{\\frac{1}{2}}$. Feed it into $P(m)=\\frac{m^{4}}{16}$:\n\n$$\nP\\bigl(m(t)\\bigr)=\\frac{\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}}{16}\n$$\n\n$$\n\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}=2^{4}t^{2}\n$$\n\n$$\n2^{4}=16\n$$\n\n$$\nP\\bigl(m(t)\\bigr)=\\frac{16t^{2}}{16}=t^{2}\n$$\n\nRaising a power to a power multiplies the exponents: $\\frac{1}{2}\\cdot 4=2$. The composition is a monomial in $t$, so the statement is True.",
+      "**B.** → False\n\nThe composed index is $t^{2}$. Proportional growth would mean exponent $1$. Doubling the throttle therefore multiplies the index by\n\n$$\n2^{2}=4\n$$\n\nA proportional law would have returned the factor $2$. The composed exponent is $2$, so the statement is False.",
+      "**C.** → True\n\nMass flow per unit of throttle is the quotient of $m(t)=2t^{\\frac{1}{2}}$ by $t$:\n\n$$\n\\frac{m(t)}{t}=2t^{\\frac{1}{2}-1}\n$$\n\n$$\n\\frac{m(t)}{t}=2t^{-\\frac{1}{2}}\n$$\n\nThe leftover exponent is negative, so the quotient falls as $t$ rises. At the calibration it is $\\frac{6}{9}=\\frac{2}{3}$, and at throttle $25$ it is $\\frac{10}{25}=\\frac{2}{5}$. Mass flow per unit of throttle falls, so the statement is True.",
+      "**D.** → True\n\nThe inner law is $m(t)=2t^{\\frac{1}{2}}$. At throttle $25$:\n\n$$\nm(25)=2\\cdot 25^{\\frac{1}{2}}\n$$\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\nm(25)=2\\cdot 5=10\n$$\n\nBecause $10>8$, the mass flow is already above $8$ tonnes per hour, so the statement is True.",
+      "**E.** → False\n\nThe composed index is $t^{2}$. At index $81$:\n\n$$\nt^{2}=81\n$$\n\n$$\nt=9\n$$\n\nbecause throttle is positive. Nine is not above $20$. Running the chain forward from $t=9$ returns $m=6$ and $P=\\frac{6^{4}}{16}=81$. The required throttle setting is $9$, so the statement is False."
     ],
     "difficulty_level": "5/5",
     "sort_order": 89,
-    "solution_overview": "Flue mass flow is $m(t)=At^{\\frac{1}{2}}$ tonnes per hour with the calibration $m(9)=6$, and the particulate index is $P(m)=\\frac{m^{4}}{16}$.\n\n**Part 1: Building the model.**\n\nLet $t$ = throttle setting, $m$ = mass flow in tonnes per hour, $P$ = particulate load index. The square-root shape is supplied, so one recorded pair fixes the coefficient. Composition then feeds the intermediate output into the second rule, and raising a power to a power multiplies the two exponents.\n\n**1. Translate: the calibration.**\n\n$$A\\cdot 9^{\\frac{1}{2}}=6, \\qquad 9^{\\frac{1}{2}}=3$$\n\n**2. Translate: the chain.** Substituting the inner rule into the outer one carries the inner coefficient up to the outer exponent:\n\n$$P\\bigl(m(t)\\bigr)=\\frac{\\bigl(At^{\\frac{1}{2}}\\bigr)^{4}}{16}=\\frac{A^{4}}{16}\\,t^{2}$$\n\n**Part 2: The model.**\n\n$$m(t)=2t^{\\frac{1}{2}} \\tag{1}$$\n\n$$P\\bigl(m(t)\\bigr)=t^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The calibration gives the coefficient:\n\n$$3A=6 \\quad \\Rightarrow \\quad A=2$$\n\n**2.** The composed coefficient collapses, since $\\frac{2^{4}}{16}=1$, leaving the pure square in (2).\n\n**3.** Scale factors run through the composed exponent, never through the inner one:\n\n$$\\frac{P\\bigl(m(2t)\\bigr)}{P\\bigl(m(t)\\bigr)}=4$$\n\n**4.** Intermediate levels at the settings the statements use:\n\n$$m(9)=6, \\qquad m(25)=10$$\n\n**5.** Inverting (2) turns a target index into a throttle setting by a square root:\n\n$$t^{2}=81 \\quad \\Rightarrow \\quad t=9$$\n\nThe chain compresses a half and a fourth power into a clean square, so the index reacts far more sharply to the throttle than the mass flow does.\n\n**Answer.** $A=2$ | $m(t)=2t^{\\frac{1}{2}}$ | $P\\circ m=t^{2}$ | index $81$ at $t=9$"
+    "solution_overview": "Flue mass flow is $m(t)=At^{\\frac{1}{2}}$ tonnes per hour with the calibration $m(9)=6$, and the particulate index is $P(m)=\\frac{m^{4}}{16}$.\n\n**Part 1: Building the model.**\n\nLet $t$ = throttle setting, $m$ = mass flow in tonnes per hour, $P$ = particulate load index. The square-root shape is supplied, so one recorded pair fixes the coefficient. Composition then feeds the intermediate output into the second rule, and raising a power to a power multiplies the two exponents.\n\n**1. Translate: the calibration.**\n\n$$A\\cdot 9^{\\frac{1}{2}}=6, \\qquad 9^{\\frac{1}{2}}=3$$\n\n**2. Translate: the chain.** Substituting the inner rule into the outer one carries the inner coefficient up to the outer exponent:\n\n$$P\\bigl(m(t)\\bigr)=\\frac{\\bigl(At^{\\frac{1}{2}}\\bigr)^{4}}{16}=\\frac{A^{4}}{16}\\,t^{2}$$\n\n**Part 2: The model.**\n\n$$m(t)=2t^{\\frac{1}{2}} \\tag{1}$$\n\n$$P\\bigl(m(t)\\bigr)=t^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The calibration gives the coefficient:\n\n$$3A=6 \\quad \\Rightarrow \\quad A=2$$\n\n**2.** The composed coefficient collapses, since $\\frac{2^{4}}{16}=1$, leaving the pure square in $(2)$. That square is a power of throttle, not a proportional law, and $\\frac{m(t)}{t}=2t^{-\\frac{1}{2}}$ falls as $t$ rises.\n\n**3.** Levels against the thresholds:\n\n$$m(25)=10>8, \\qquad t=9\\ \\text{at index}\\ 81$$\n\n**Answer.** $A=2$ | $m(t)=2t^{\\frac{1}{2}}$ | $P\\circ m=t^{2}$ | index $81$ at $t=9$"
   },
   {
     "id": "math-8-90",
@@ -276,10 +276,10 @@
     "context": "Two municipal shuttle apps quote wait time for a trip of distance $d>0$ kilometres. App L follows $L(d)=a d^{\\frac{1}{2}}$ minutes and App Q follows $Q(d)=k d$ minutes, with both coefficients unpublished. A logged $25$ km trip on App L quoted $20$ minutes, and a logged $100$ km trip on App Q quoted $20$ minutes. A service-level agreement caps wait at $20$ minutes. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The two apps quote the same wait at two different positive distances.",
-      "Under the $20$-minute cap, App L can serve at most $25$ kilometres.",
       "Once App L quotes a shorter wait than App Q, App Q never catches up.",
-      "App L's wait per kilometre is the same at every distance.",
-      "At $400$ kilometres both apps quote $80$ minutes."
+      "App L's wait per kilometre falls as the trip gets longer.",
+      "Under the $20$-minute cap, App L can serve trips longer than $30$ kilometres.",
+      "At $400$ kilometres both apps already quote more than $70$ minutes."
     ],
     "answer_key": [
       false,
@@ -290,13 +290,13 @@
     ],
     "tactical_explanations": [
       "**A.** → False\n\nThe quotes are $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$. Set them equal for $d>0$:\n\n$$\n4d^{\\frac{1}{2}}=\\frac{1}{5}d\n$$\n\n$$\n4=\\frac{1}{5}d^{\\frac{1}{2}}\n$$\n\n$$\nd^{\\frac{1}{2}}=20\n$$\n\n$$\nd=20^{2}=400\n$$\n\nOn $d>0$ there is a single root. A square-root versus a line cannot meet twice. They meet only at $d=400$, so the statement is False.",
-      "**B.** → True\n\nApp L's quote $L(d)=4d^{\\frac{1}{2}}$ increases with distance, so a $20$-minute cap becomes a cap on $d$:\n\n$$\n4d^{\\frac{1}{2}}\\le 20\n$$\n\n$$\nd^{\\frac{1}{2}}\\le 5\n$$\n\n$$\nd\\le 25\n$$\n\nThe endpoint is attained: $L(25)=20$. Every longer trip on App L breaches the agreement. App L can serve at most $25$ kilometres under the cap, so the statement is True.",
-      "**C.** → True\n\nThe ratio of the two quotes is\n\n$$\n\\frac{Q(d)}{L(d)}=\\frac{1}{20}d^{\\frac{1}{2}}\n$$\n\nApp L is strictly faster when that ratio exceeds $1$, which is $d>400$. The map $d\\mapsto d^{\\frac{1}{2}}$ is strictly increasing on $d>0$, so the ratio itself is strictly increasing. Once it crosses $1$ it stays above $1$. App Q never catches up, so the statement is True.",
-      "**D.** → False\n\nWait per kilometre is the quotient of $L(d)=4d^{\\frac{1}{2}}$ by $d$:\n\n$$\n\\frac{L(d)}{d}=4d^{-\\frac{1}{2}}\n$$\n\nThe leftover exponent is negative, so the quotient falls as $d$ grows. At the logged trip it is $\\frac{20}{25}=0.8$, and at $d=100$ it is $0.4$. The per-kilometre wait is not constant, so the statement is False.",
-      "**E.** → True\n\nAt the meeting distance $d=400$:\n\n$$\nL(400)=4\\cdot 20=80\n$$\n\n$$\nQ(400)=\\frac{1}{5}\\cdot 400=80\n$$\n\nBoth apps quote $80$ minutes at $400$ kilometres, so the statement is True."
+      "**B.** → True\n\nThe ratio of the two quotes is\n\n$$\n\\frac{Q(d)}{L(d)}=\\frac{1}{20}d^{\\frac{1}{2}}\n$$\n\nApp L is strictly faster when that ratio exceeds $1$, which is $d>400$. The map $d\\mapsto d^{\\frac{1}{2}}$ is strictly increasing on $d>0$, so the ratio itself is strictly increasing. Once it crosses $1$ it stays above $1$. App Q never catches up, so the statement is True.",
+      "**C.** → True\n\nWait per kilometre is the quotient of $L(d)=4d^{\\frac{1}{2}}$ by $d$:\n\n$$\n\\frac{L(d)}{d}=4d^{-\\frac{1}{2}}\n$$\n\nThe leftover exponent is negative, so the quotient falls as $d$ grows. At the logged trip it is $\\frac{20}{25}=0.8$, and at $d=100$ it is $0.4$. Wait per kilometre falls, so the statement is True.",
+      "**D.** → False\n\nApp L's quote $L(d)=4d^{\\frac{1}{2}}$ increases with distance, so a $20$-minute cap becomes a cap on $d$:\n\n$$\n4d^{\\frac{1}{2}}\\le 20\n$$\n\n$$\nd^{\\frac{1}{2}}\\le 5\n$$\n\n$$\nd\\le 25\n$$\n\nThe endpoint is attained: $L(25)=20$. Every longer trip on App L breaches the agreement. Thirty kilometres sits past $25$, so the statement is False.",
+      "**E.** → True\n\nAt the meeting distance $d=400$:\n\n$$\nL(400)=4\\cdot 20=80\n$$\n\n$$\nQ(400)=\\frac{1}{5}\\cdot 400=80\n$$\n\nBecause $80>70$, both apps already quote more than $70$ minutes, so the statement is True."
     ],
     "difficulty_level": "3/5",
     "sort_order": 90,
-    "solution_overview": "App L quotes $L(d)=a d^{\\frac{1}{2}}$ minutes and App Q quotes $Q(d)=kd$ minutes. The logs are $L(25)=20$ and $Q(100)=20$, and wait is capped at $20$ minutes.\n\n**Part 1: Building the model.**\n\nLet $d$ = trip distance in kilometres. Each app is a power of distance with a hidden coefficient, so each log pins one coefficient. Equal waits set the two recovered laws equal. The cap inverts each law separately. Which app leads is the sign of their ratio.\n\n**1. Translate: App L's log.**\n\n$$a\\cdot 25^{\\frac{1}{2}}=20$$\n\n**2. Translate: App Q's log.**\n\n$$k\\cdot 100=20$$\n\n**3. Translate: the cap.**\n\n$$L(d)\\le 20, \\qquad Q(d)\\le 20$$\n\n**Part 2: The model.**\n\n$$L(d)=4d^{\\frac{1}{2}} \\tag{1}$$\n\n$$Q(d)=\\frac{1}{5}d \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The two logs give the coefficients:\n\n$$5a=20 \\;\\Rightarrow\\; a=4, \\qquad 100k=20 \\;\\Rightarrow\\; k=\\frac{1}{5}$$\n\n**2.** The laws meet once on $d>0$:\n\n$$4d^{\\frac{1}{2}}=\\frac{1}{5}d \\quad \\Rightarrow \\quad d=400, \\qquad L(400)=Q(400)=80$$\n\n**3.** App L's cap:\n\n$$4d^{\\frac{1}{2}}\\le 20 \\quad \\Rightarrow \\quad d\\le 25$$\n\n**4.** App Q's cap, for comparison: $d\\le 100$. The ratio $\\frac{Q}{L}=\\frac{1}{20}d^{\\frac{1}{2}}$ crosses $1$ at $d=400$ and then keeps rising, so App L stays ahead on every longer trip.\n\n**5.** Square-root wait grows more slowly than linear wait, which is why App Q is quicker on short hops and App L is quicker once the trip stretches past $400$ km, well beyond either app's $20$-minute cap.\n\n**Answer.** $a=4$, $k=\\frac{1}{5}$ | meet at $d=400$, wait $80$ min | App L cap $d=25$ | App Q cap $d=100$"
+    "solution_overview": "App L quotes $L(d)=a d^{\\frac{1}{2}}$ minutes and App Q quotes $Q(d)=kd$ minutes. The logs are $L(25)=20$ and $Q(100)=20$, and wait is capped at $20$ minutes.\n\n**Part 1: Building the model.**\n\nLet $d$ = trip distance in kilometres. Each app is a power of distance with a hidden coefficient, so each log pins one coefficient. Equal waits set the two recovered laws equal. The cap inverts each law separately. Which app leads is the sign of their ratio.\n\n**1. Translate: App L's log.**\n\n$$a\\cdot 25^{\\frac{1}{2}}=20$$\n\n**2. Translate: App Q's log.**\n\n$$k\\cdot 100=20$$\n\n**3. Translate: the cap.**\n\n$$L(d)\\le 20, \\qquad Q(d)\\le 20$$\n\n**Part 2: The model.**\n\n$$L(d)=4d^{\\frac{1}{2}} \\tag{1}$$\n\n$$Q(d)=\\frac{1}{5}d \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The two logs give the coefficients:\n\n$$5a=20 \\;\\Rightarrow\\; a=4, \\qquad 100k=20 \\;\\Rightarrow\\; k=\\frac{1}{5}$$\n\n**2.** The laws meet once on $d>0$, at $d=400$. Past that crossing the ratio $\\frac{Q}{L}$ keeps rising, so App L stays ahead, and $\\frac{L(d)}{d}=4d^{-\\frac{1}{2}}$ falls with distance.\n\n**3.** App L's cap is $d\\le 25$, which does not reach $30$ km. At the meeting point both quote $80>70$ minutes.\n\n**Answer.** $a=4$, $k=\\frac{1}{5}$ | meet at $d=400$, wait $80$ min | App L cap $d=25$ | App Q cap $d=100$"
   }
 ]

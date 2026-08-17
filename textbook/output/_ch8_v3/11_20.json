@@ -3,43 +3,43 @@
     "id": "math-8-11",
     "case_id": "MATH 8.11",
     "title": "Marina's Vegetable Plot",
-    "context": "Marina's harvest in kilograms follows $Y(h)=A h^{r}$ after $h>0$ hours of watering, with both constants unknown. Eight hours give four kilograms, and twenty-seven hours give six. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "Marina's harvest in kilograms follows $Y(h)=A h^{r}$ after $h>0$ hours of watering, with both constants unknown. $8$ hours give $4$ kilograms, and $27$ hours give $6$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Sixty-four hours of watering give eight kilograms.",
       "The exponent is smaller than one, so harvest grows more slowly than watering time.",
       "If she doubles the watering time, she doubles the harvest.",
-      "After one hour the plot already yields four kilograms.",
+      "To double the $4$-kilogram harvest she must more than double the watering time.",
+      "An extra hour adds more crop after $27$ hours of watering than it does after $8$.",
       "The watering time needed for a given harvest is itself a power function of that harvest."
     ],
     "answer_key": [
       true,
-      true,
       false,
+      true,
       false,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe two harvests give $r=\\frac{1}{3}$ and $A=2$. Sixty-four hours is four cubed, so the cube root is $4$:\n\n$$\nY(64)=2\\cdot 64^{\\frac{1}{3}}\n$$\n\n$$\n64^{\\frac{1}{3}}=4\n$$\n\n$$\nY(64)=2\\cdot 4\n$$\n\n$$\nY(64)=8\n$$\n\nThe claimed harvest is $8$ kilograms, so the statement is True.",
-      "**B.** → True\n\nThe harvest ratio already gave $r=\\frac{1}{3}$. An exponent smaller than one means harvest grows more slowly than watering time: each extra hour adds less than the hour before it. One third is below one, so the statement is True.",
-      "**C.** → False\n\nDoubling hours would double harvest only if $r=1$. With $r=\\frac{1}{3}$ the scale factor is\n\n$$\n\\frac{Y(2h)}{Y(h)}=2^{r}\n$$\n\n$$\n2^{r}=2^{\\frac{1}{3}}\n$$\n\nThe cube root of two is about $1.26$, not $2$. The harvest rises, but not in lockstep with the clock, so the statement is False.",
-      "**D.** → False\n\nAt one hour the power is $1$, so the yield is just the coefficient $A=2$:\n\n$$\nY(1)=2\\cdot 1^{\\frac{1}{3}}\n$$\n\n$$\nY(1)=2\n$$\n\nThe claimed four kilograms is the eight-hour record, not the one-hour level, so the statement is False.",
+      "**A.** → True\n\nThe two harvests give $r=\\frac{1}{3}$. An exponent smaller than one means harvest grows more slowly than watering time: each extra hour adds less than the hour before it. One third is below one, so the statement is True.",
+      "**B.** → False\n\nThe two harvests give $r=\\frac{1}{3}$. Doubling hours would double harvest only if $r=1$. The scale factor is\n\n$$\n\\frac{Y(2h)}{Y(h)}=2^{r}\n$$\n\n$$\n2^{r}=2^{\\frac{1}{3}}\n$$\n\nThe cube root of two is about $1.26$, not $2$. The harvest rises, but not in lockstep with the clock, so the statement is False.",
+      "**C.** → True\n\nThe recovered law is $Y=2h^{\\frac{1}{3}}$. Doubling the recorded $4$ kilograms means a harvest of $8$:\n\n$$\n2h^{\\frac{1}{3}}=8\n$$\n\n$$\nh^{\\frac{1}{3}}=4\n$$\n\n$$\nh=64\n$$\n\nThe recorded watering time is $8$ hours, and $64=8\\cdot 8$, not $2\\cdot 8$. She must multiply hours by $8$, which is more than a doubling, so the statement is True.",
+      "**D.** → False\n\nThe recovered law is $Y=2h^{\\frac{1}{3}}$. An extra hour is the slope:\n\n$$\nY'(h)=2\\cdot\\frac{1}{3}h^{-\\frac{2}{3}}\n$$\n\n$$\nY'(h)=\\frac{2}{3}h^{-\\frac{2}{3}}\n$$\n\nAfter $8$ hours:\n\n$$\nY'(8)=\\frac{2}{3}\\cdot 8^{-\\frac{2}{3}}\n$$\n\n$$\n8^{-\\frac{2}{3}}=\\frac{1}{4}\n$$\n\n$$\nY'(8)=\\frac{2}{3}\\cdot\\frac{1}{4}\n$$\n\n$$\nY'(8)=\\frac{1}{6}\n$$\n\nAfter $27$ hours:\n\n$$\nY'(27)=\\frac{2}{3}\\cdot 27^{-\\frac{2}{3}}\n$$\n\n$$\n27^{-\\frac{2}{3}}=\\frac{1}{9}\n$$\n\n$$\nY'(27)=\\frac{2}{3}\\cdot\\frac{1}{9}\n$$\n\n$$\nY'(27)=\\frac{2}{27}\n$$\n\n$$\n\\frac{2}{27}<\\frac{1}{6}\n$$\n\nAn extra hour adds less crop after $27$ hours than after $8$, not more. The exponent is below one, so the slope is already falling, so the statement is False.",
       "**E.** → True\n\nA power with a nonzero exponent inverts to another power. From $Y=2h^{\\frac{1}{3}}$ one gets\n\n$$\n\\frac{Y}{2}=h^{\\frac{1}{3}}\n$$\n\n$$\nh=\\left(\\frac{Y}{2}\\right)^{3}\n$$\n\nHours are a cube of the harvest, so the statement is True."
     ],
     "difficulty_level": "4/5",
     "sort_order": 11,
-    "solution_overview": "Harvest follows $Y(h)=Ah^{r}$ for $h>0$ hours. Eight hours give $4$ kg and twenty-seven hours give $6$ kg.\n\n**Part 1: Building the model.**\n\nLet $h$ = watering hours and $Y$ = harvest. Two unknowns need both observations. The ratio cancels $A$ and isolates $r$; the eight-hour level then pins $A$.\n\n**1. Translate: the ratio.**\n\n$$\\frac{6}{4}=\\left(\\frac{27}{8}\\right)^{r}$$\n\n**2. Translate: the eight-hour level.**\n\n$$A\\cdot 8^{r}=4$$\n\n**Part 2: The model.**\n\n$$r=\\frac{1}{3} \\tag{1}$$\n\n$$Y(h)=2h^{\\frac{1}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $Y(64)=8$ and $Y(1)=2$, not $4$.\n\n**2.** Because $r<1$, doubling the hours multiplies harvest by $2^{\\frac{1}{3}}$, not by $2$.\n\n**3.** The inverse $h=(Y/2)^{3}$ is a power function.\n\n**Answer.** $A=2$ | $r=\\frac{1}{3}$ | $Y(64)=8$ | $Y(1)=2$"
+    "solution_overview": "Harvest follows $Y(h)=Ah^{r}$ for $h>0$ hours. Eight hours give $4$ kg and twenty-seven hours give $6$ kg.\n\n**Part 1: Building the model.**\n\nLet $h$ = watering hours and $Y$ = harvest. Two unknowns need both observations. The ratio cancels $A$ and isolates $r$; the eight-hour level then pins $A$.\n\n**1. Translate: the ratio.**\n\n$$\\frac{6}{4}=\\left(\\frac{27}{8}\\right)^{r}$$\n\n**2. Translate: the eight-hour level.**\n\n$$A\\cdot 8^{r}=4$$\n\n**Part 2: The model.**\n\n$$r=\\frac{1}{3} \\tag{1}$$\n\n$$Y(h)=2h^{\\frac{1}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $r<1$, harvest grows more slowly than watering time, and an extra hour adds less after $27$ hours than after $8$.\n\n**2.** Doubling hours multiplies harvest by $2^{\\frac{1}{3}}$, not by $2$. Doubling the $4$ kg harvest needs $h=64$, eight times the recorded $8$ hours.\n\n**3.** The inverse $h=(Y/2)^{3}$ is a power function.\n\n**Answer.** $A=2$ | $r=\\frac{1}{3}$ | $h=64$ to double $4$ kg"
   },
   {
     "id": "math-8-12",
     "case_id": "MATH 8.12",
     "title": "A Helpdesk Wait That Falls With the Team",
-    "context": "Callers wait according to $W(n)=A n^{-\\frac{1}{2}}$ minutes when $n>0$ agents are on duty. Four agents on the shift produce a twenty-four minute wait. Staffing cannot exceed fifty agents. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "Callers wait according to $W(n)=A n^{-\\frac{1}{2}}$ minutes when $n>0$ agents are on duty. $4$ agents on the shift produce a $24$ minute wait. Staffing cannot exceed $50$ agents. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "With nine agents on duty, callers wait sixteen minutes.",
-      "Quadrupling the recorded team halves the wait.",
-      "Doubling the recorded team halves the wait.",
-      "A six-minute wait would need more than fifty agents.",
-      "If the team keeps growing, the wait eventually becomes negative."
+      "With $9$ agents on duty, callers wait less than $20$ minutes.",
+      "The number of agents needed for a given wait is itself a power of that wait.",
+      "If the team keeps growing, the wait eventually becomes negative.",
+      "A $6$-minute wait would need more than $50$ agents.",
+      "Doubling the recorded team halves the wait."
     ],
     "answer_key": [
       true,
@@ -49,87 +49,87 @@
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe four-agent record gives $W(n)=48 n^{-\\frac{1}{2}}$. Nine agents put a $3$ in the denominator:\n\n$$\nW(9)=48\\cdot 9^{-\\frac{1}{2}}\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\n9^{-\\frac{1}{2}}=\\frac{1}{3}\n$$\n\n$$\nW(9)=48\\cdot\\frac{1}{3}\n$$\n\n$$\nW(9)=16\n$$\n\nThe claimed wait is $16$ minutes, so the statement is True.",
-      "**B.** → True\n\nThe exponent is $-\\frac{1}{2}$, so quadrupling the team multiplies wait by\n\n$$\n\\frac{W(4n)}{W(n)}=4^{-\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\n4^{-\\frac{1}{2}}=\\frac{1}{2}\n$$\n\nFour times the staff cuts the wait in half, matching the claim, so the statement is True.",
-      "**C.** → False\n\nDoubling the team would halve the wait only if the exponent were $-1$. With exponent $-\\frac{1}{2}$ the scale factor is\n\n$$\n\\frac{W(2n)}{W(n)}=2^{-\\frac{1}{2}}\n$$\n\nwhich is about $0.71$, not $\\frac{1}{2}$. The wait falls, but not by half, so the statement is False.",
-      "**D.** → True\n\nThe wait is $W(n)=48 n^{-\\frac{1}{2}}$. A six-minute wait means\n\n$$\n48 n^{-\\frac{1}{2}}=6\n$$\n\n$$\n\\frac{48}{\\sqrt{n}}=6\n$$\n\n$$\n\\sqrt{n}=\\frac{48}{6}\n$$\n\n$$\n\\sqrt{n}=8\n$$\n\n$$\nn=64\n$$\n\nSixty-four agents sit past the fifty-agent cap, so the statement is True.",
-      "**E.** → False\n\nThe wait is $W(n)=\\frac{48}{\\sqrt{n}}$. For every $n>0$ the square root is positive, so the wait stays positive. A negative exponent sends the wait towards zero from above, never through zero, so the statement is False."
+      "**A.** → True\n\nThe $4$-agent record pins the coefficient:\n\n$$\nA\\cdot 4^{-\\frac{1}{2}}=24\n$$\n\n$$\n4^{-\\frac{1}{2}}=\\frac{1}{2}\n$$\n\n$$\n\\frac{A}{2}=24\n$$\n\n$$\nA=48\n$$\n\nWait is then $W(n)=48 n^{-\\frac{1}{2}}$. With $9$ agents the square root is $3$:\n\n$$\nW(9)=48\\cdot 9^{-\\frac{1}{2}}\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\n9^{-\\frac{1}{2}}=\\frac{1}{3}\n$$\n\n$$\nW(9)=48\\cdot\\frac{1}{3}\n$$\n\n$$\nW(9)=16\n$$\n\n$$\n16<20\n$$\n\nCallers wait $16$ minutes, which is less than $20$, so the statement is True.",
+      "**B.** → True\n\nWait is $W=48 n^{-\\frac{1}{2}}$. Solving for the team size:\n\n$$\n\\frac{W}{48}=n^{-\\frac{1}{2}}\n$$\n\n$$\nn=\\left(\\frac{48}{W}\\right)^{2}\n$$\n\nThat is a power of the wait with exponent $2$. A power with a nonzero exponent inverts to another power, so the statement is True.",
+      "**C.** → False\n\nWait is $W(n)=\\frac{48}{\\sqrt{n}}$. For every $n>0$ the square root is positive, so the wait stays positive. A negative exponent sends the wait towards zero from above, never through zero, so the statement is False.",
+      "**D.** → True\n\nA $6$-minute wait means\n\n$$\n48 n^{-\\frac{1}{2}}=6\n$$\n\n$$\n\\frac{48}{\\sqrt{n}}=6\n$$\n\n$$\n\\sqrt{n}=\\frac{48}{6}\n$$\n\n$$\n\\sqrt{n}=8\n$$\n\n$$\nn=64\n$$\n\n$$\n64>50\n$$\n\nThe inversion asks for $64$ agents, which sits past the $50$-agent cap, so the statement is True.",
+      "**E.** → False\n\nDoubling the team would halve the wait only if the exponent were $-1$. With exponent $-\\frac{1}{2}$ the scale factor is\n\n$$\n\\frac{W(2n)}{W(n)}=2^{-\\frac{1}{2}}\n$$\n\nwhich is about $0.71$, not $\\frac{1}{2}$. The wait falls, but not by half, so the statement is False."
     ],
     "difficulty_level": "3/5",
     "sort_order": 12,
-    "solution_overview": "Wait follows $W(n)=A n^{-\\frac{1}{2}}$ minutes for $n>0$ agents. Four agents produce a twenty-four minute wait, and staffing cannot exceed fifty.\n\n**Part 1: Building the model.**\n\nLet $n$ = agents and $W$ = wait. The exponent is given, so the four-agent observation fixes $A$. The cap constrains inversions.\n\n**1. Translate: the recorded wait.**\n\n$$A\\cdot 4^{-\\frac{1}{2}}=24$$\n\n**Part 2: The model.**\n\n$$W(n)=48 n^{-\\frac{1}{2}} \\tag{1}$$\n\n$$n\\le 50 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $W(9)=16$. Quadrupling halves the wait; doubling only multiplies it by $1/\\sqrt{2}$.\n\n**2.** A six-minute wait needs $n=64$, which violates (2).\n\n**3.** The wait approaches $0$ but never turns negative.\n\n**Answer.** $A=48$ | $W(9)=16$ | $n=64$ for six minutes"
+    "solution_overview": "Wait follows $W(n)=A n^{-\\frac{1}{2}}$ minutes for $n>0$ agents. Four agents produce a twenty-four minute wait, and staffing cannot exceed fifty.\n\n**Part 1: Building the model.**\n\nLet $n$ = agents and $W$ = wait. The exponent is given, so the four-agent observation fixes $A$. The cap constrains inversions.\n\n**1. Translate: the recorded wait.**\n\n$$A\\cdot 4^{-\\frac{1}{2}}=24$$\n\n**Part 2: The model.**\n\n$$W(n)=48 n^{-\\frac{1}{2}} \\tag{1}$$\n\n$$n\\le 50 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $W(9)=16<20$. Doubling the team multiplies wait by $1/\\sqrt{2}$, not by $1/2$. The inverse $n=(48/W)^{2}$ is a power of $W$.\n\n**2.** A six-minute wait needs $n=64$, which violates (2).\n\n**3.** The wait approaches $0$ but never turns negative.\n\n**Answer.** $A=48$ | $W(9)=16$ | $n=64$ for six minutes"
   },
   {
     "id": "math-8-13",
     "case_id": "MATH 8.13",
     "title": "Leah's Well and Omar's Well",
-    "context": "Leah and Omar pump at the same depth $d>0$ metres. Leah's well follows $Q_{L}(d)=a d^{\\frac{1}{2}}$, and at nine metres she gets twelve litres a minute. Omar's well follows $Q_{O}(d)=k d^{\\frac{3}{2}}$, and at four metres he gets four litres a minute. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "Leah and Omar pump at the same depth $d>0$ metres. Leah's well follows $Q_{L}(d)=a d^{\\frac{1}{2}}$, and at $9$ metres she gets $12$ litres a minute. Omar's well follows $Q_{O}(d)=k d^{\\frac{3}{2}}$, and at $4$ metres he gets $4$ litres a minute. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "At four metres Leah pumps eight litres a minute.",
-      "Omar overtakes Leah before they reach ten metres.",
-      "At sixteen metres Omar pumps more than forty litres a minute.",
+      "At $4$ metres Leah already pumps more than $7$ litres a minute.",
+      "Omar overtakes Leah before they reach $10$ metres.",
       "Once Omar is ahead, he stays ahead at every greater depth.",
-      "The two wells together still follow a single power of depth."
+      "The two wells together still follow a single power of depth.",
+      "Omar's flow grows faster than depth."
     ],
     "answer_key": [
       true,
       true,
-      false,
       true,
-      false
+      false,
+      true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nLeah's well is $Q_{L}(d)=4d^{\\frac{1}{2}}$. At four metres the square root is $2$:\n\n$$\nQ_{L}(4)=4\\cdot 4^{\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\nQ_{L}(4)=4\\cdot 2\n$$\n\n$$\nQ_{L}(4)=8\n$$\n\nThe claimed flow is $8$ litres a minute, so the statement is True.",
-      "**B.** → True\n\nThe two wells are $Q_{L}(d)=4d^{\\frac{1}{2}}$ and $Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}}$. They meet when\n\n$$\n4 d^{\\frac{1}{2}}=\\frac{1}{2} d^{\\frac{3}{2}}\n$$\n\n$$\n8 d^{\\frac{1}{2}}=d^{\\frac{3}{2}}\n$$\n\nFor $d>0$, divide by $d^{\\frac{1}{2}}$:\n\n$$\n8=d^{\\frac{3}{2}-\\frac{1}{2}}\n$$\n\n$$\n8=d\n$$\n\nEight metres is shallower than ten, so the statement is True.",
-      "**C.** → False\n\nOmar's well is $Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}}$. At sixteen metres:\n\n$$\nQ_{O}(16)=\\frac{1}{2}\\cdot 16^{\\frac{3}{2}}\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\n16^{\\frac{3}{2}}=4^{3}\n$$\n\n$$\n4^{3}=64\n$$\n\n$$\nQ_{O}(16)=\\frac{1}{2}\\cdot 64\n$$\n\n$$\nQ_{O}(16)=32\n$$\n\nThirty-two is not more than forty, so the statement is False.",
-      "**D.** → True\n\nThe two wells give the ratio\n\n$$\n\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{\\frac{1}{2} d^{\\frac{3}{2}}}{4 d^{\\frac{1}{2}}}\n$$\n\n$$\n\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{1}{8} d^{\\frac{3}{2}-\\frac{1}{2}}\n$$\n\n$$\n\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}\n$$\n\nThat ratio exceeds $1$ precisely when $d>8$. Omar's extra exponent is one full power of depth, so once he is ahead he stays ahead, so the statement is True.",
-      "**E.** → False\n\nThe two wells give $4d^{\\frac{1}{2}}+\\frac{1}{2}d^{\\frac{3}{2}}$. The exponents $\\frac{1}{2}$ and $\\frac{3}{2}$ are different, and both coefficients are nonzero. A sum of distinct powers is not itself a power of depth, so the statement is False."
+      "**A.** → True\n\nLeah's $9$-metre record pins her coefficient:\n\n$$\na\\cdot 9^{\\frac{1}{2}}=12\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\n3a=12\n$$\n\n$$\na=4\n$$\n\nLeah's well is $Q_{L}(d)=4d^{\\frac{1}{2}}$. At $4$ metres the square root is $2$:\n\n$$\nQ_{L}(4)=4\\cdot 4^{\\frac{1}{2}}\n$$\n\n$$\nQ_{L}(4)=4\\cdot 2\n$$\n\n$$\nQ_{L}(4)=8\n$$\n\n$$\n8>7\n$$\n\nThose $8$ litres a minute already clear $7$, so the statement is True.",
+      "**B.** → True\n\nOmar's $4$-metre record pins his coefficient:\n\n$$\nk\\cdot 4^{\\frac{3}{2}}=4\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\n8k=4\n$$\n\n$$\nk=\\frac{1}{2}\n$$\n\nThe wells are $Q_{L}(d)=4d^{\\frac{1}{2}}$ and $Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}}$. They meet when\n\n$$\n4 d^{\\frac{1}{2}}=\\frac{1}{2} d^{\\frac{3}{2}}\n$$\n\n$$\n8 d^{\\frac{1}{2}}=d^{\\frac{3}{2}}\n$$\n\nFor $d>0$, divide by $d^{\\frac{1}{2}}$:\n\n$$\n8=d^{\\frac{3}{2}-\\frac{1}{2}}\n$$\n\n$$\n8=d\n$$\n\n$$\n8<10\n$$\n\nThe crossing at $8$ metres is shallower than $10$, so the statement is True.",
+      "**C.** → True\n\nThe two wells give the ratio\n\n$$\n\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{\\frac{1}{2} d^{\\frac{3}{2}}}{4 d^{\\frac{1}{2}}}\n$$\n\n$$\n\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{1}{8} d^{\\frac{3}{2}-\\frac{1}{2}}\n$$\n\n$$\n\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}\n$$\n\nThat ratio exceeds $1$ precisely when $d>8$. Omar's extra exponent is one full power of depth, so once he is ahead he stays ahead, so the statement is True.",
+      "**D.** → False\n\nThe two wells give $4d^{\\frac{1}{2}}+\\frac{1}{2}d^{\\frac{3}{2}}$. The exponents $\\frac{1}{2}$ and $\\frac{3}{2}$ are different, and both coefficients are nonzero. A sum of distinct powers is not itself a power of depth, so the statement is False.",
+      "**E.** → True\n\nOmar's well is $Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}}$. An exponent larger than one means flow grows faster than depth: each extra metre adds more than the metre before it. $\\frac{3}{2}$ exceeds one, so the statement is True."
     ],
     "difficulty_level": "4/5",
     "sort_order": 13,
-    "solution_overview": "Leah yields $a d^{\\frac{1}{2}}$ with twelve litres a minute at nine metres, and Omar yields $k d^{\\frac{3}{2}}$ with four litres a minute at four metres.\n\n**Part 1: Building the model.**\n\nLet $d$ = pump depth. Each well has a known exponent and one level, so each coefficient is recoverable.\n\n**1. Translate: Leah's level.** $3a=12$.\n\n**2. Translate: Omar's level.** $8k=4$.\n\n**Part 2: The model.**\n\n$$Q_{L}(d)=4d^{\\frac{1}{2}}, \\qquad Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $Q_{L}(4)=8$. They meet at $d=8$, before ten metres.\n\n**2.** $Q_{O}(16)=32$, not more than $40$. Ratio (2) crosses $1$ only once, and the sum is not a single power.\n\n**Answer.** $a=4$ | $k=\\frac{1}{2}$ | $Q_{L}(4)=8$ | crossing at $d=8$ | $Q_{O}(16)=32$"
+    "solution_overview": "Leah yields $a d^{\\frac{1}{2}}$ with twelve litres a minute at nine metres, and Omar yields $k d^{\\frac{3}{2}}$ with four litres a minute at four metres.\n\n**Part 1: Building the model.**\n\nLet $d$ = pump depth. Each well has a known exponent and one level, so each coefficient is recoverable.\n\n**1. Translate: Leah's level.** $3a=12$.\n\n**2. Translate: Omar's level.** $8k=4$.\n\n**Part 2: The model.**\n\n$$Q_{L}(d)=4d^{\\frac{1}{2}}, \\qquad Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $Q_{L}(4)=8>7$. They meet at $d=8$, before ten metres.\n\n**2.** Ratio (2) crosses $1$ only once, so Omar stays ahead past the crossing. The sum is not a single power. Omar's exponent $\\frac{3}{2}$ exceeds one.\n\n**Answer.** $a=4$ | $k=\\frac{1}{2}$ | $Q_{L}(4)=8$ | crossing at $d=8$"
   },
   {
     "id": "math-8-14",
     "case_id": "MATH 8.14",
     "title": "Nora's Print Shop",
-    "context": "Nora bills a run of $n>0$ copies as a fixed setup plus a square-root charge, $C(n)=F+A n^{\\frac{1}{2}}$. A sixteen-copy run costs two hundred and fifty euros, and a sixty-four-copy run costs four hundred and fifty. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "Nora bills a run of $n>0$ copies as a fixed setup plus a square-root charge, $C(n)=F+A n^{\\frac{1}{2}}$. A $16$-copy run costs $250$ euros, and a $64$-copy run costs $450$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Because of the setup, the bill is not a power function of the run.",
-      "Twenty-five copies cost three hundred euros.",
       "If she prints enough copies, the total bill starts to fall.",
-      "Thirty-six copies cost more than four hundred euros.",
-      "A longer run is cheaper per copy."
+      "A longer run is cheaper per copy.",
+      "A run of $25$ copies already costs more than $280$ euros.",
+      "A run of $36$ copies costs more than $400$ euros."
     ],
     "answer_key": [
       true,
+      false,
       true,
-      false,
-      false,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe two invoices give $C(n)=50+50 n^{\\frac{1}{2}}$. A power of the run cannot carry a leftover constant. The setup is $50$ euros, not zero, so the statement is True.",
-      "**B.** → True\n\nThe bill is $C(n)=50+50 n^{\\frac{1}{2}}$. At twenty-five copies the square root is $5$:\n\n$$\nC(25)=50+50\\cdot 25^{\\frac{1}{2}}\n$$\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\nC(25)=50+50\\cdot 5\n$$\n\n$$\nC(25)=50+250\n$$\n\n$$\nC(25)=300\n$$\n\nThe claimed bill is $300$ euros, so the statement is True.",
-      "**C.** → False\n\nThe bill is $C(n)=50+50 n^{\\frac{1}{2}}$. Both the setup and the coefficient are positive, so every extra copy raises the square-root term and the bill cannot fall, so the statement is False.",
-      "**D.** → False\n\nThe bill is $C(n)=50+50 n^{\\frac{1}{2}}$. At thirty-six copies the square root is $6$:\n\n$$\nC(36)=50+50\\cdot 36^{\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nC(36)=50+50\\cdot 6\n$$\n\n$$\nC(36)=50+300\n$$\n\n$$\nC(36)=350\n$$\n\nThree hundred and fifty is not more than four hundred, so the statement is False.",
-      "**E.** → True\n\nThe bill is $C(n)=50+50 n^{\\frac{1}{2}}$. Cost per copy is\n\n$$\n\\frac{C(n)}{n}=\\frac{50+50 n^{\\frac{1}{2}}}{n}\n$$\n\n$$\n\\frac{C(n)}{n}=\\frac{50}{n}+50 n^{-\\frac{1}{2}}\n$$\n\nThe setup is spread over more copies, and the square-root charge per copy also falls, so the statement is True."
+      "**A.** → True\n\nThe two invoices isolate both unknowns. Subtracting cancels the setup:\n\n$$\n(F+8A)-(F+4A)=450-250\n$$\n\n$$\n4A=200\n$$\n\n$$\nA=50\n$$\n\nThe $16$-copy invoice then pins $F$:\n\n$$\nF+4\\cdot 50=250\n$$\n\n$$\nF+200=250\n$$\n\n$$\nF=50\n$$\n\nThe bill is $C(n)=50+50 n^{\\frac{1}{2}}$. A power of the run cannot carry a leftover constant. The setup is $50$ euros, not zero, so the statement is True.",
+      "**B.** → False\n\nThe bill is $C(n)=50+50 n^{\\frac{1}{2}}$. Both the setup and the coefficient are positive, so every extra copy raises the square-root term and the bill cannot fall, so the statement is False.",
+      "**C.** → True\n\nCost per copy is\n\n$$\n\\frac{C(n)}{n}=\\frac{50+50 n^{\\frac{1}{2}}}{n}\n$$\n\n$$\n\\frac{C(n)}{n}=\\frac{50}{n}+50 n^{-\\frac{1}{2}}\n$$\n\nThe setup is spread over more copies, and the square-root charge per copy also falls, so the statement is True.",
+      "**D.** → True\n\nAt $25$ copies the square root is $5$:\n\n$$\nC(25)=50+50\\cdot 25^{\\frac{1}{2}}\n$$\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\nC(25)=50+50\\cdot 5\n$$\n\n$$\nC(25)=300\n$$\n\n$$\n300>280\n$$\n\nThe bill is $300$ euros, already above $280$, so the statement is True.",
+      "**E.** → False\n\nAt $36$ copies the square root is $6$:\n\n$$\nC(36)=50+50\\cdot 36^{\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nC(36)=50+50\\cdot 6\n$$\n\n$$\nC(36)=350\n$$\n\n$$\n350<400\n$$\n\n$350$ is not more than $400$, so the statement is False."
     ],
     "difficulty_level": "3/5",
     "sort_order": 14,
-    "solution_overview": "The bill is $C(n)=F+A n^{\\frac{1}{2}}$ for $n>0$ copies, with $C(16)=250$ and $C(64)=450$.\n\n**Part 1: Building the model.**\n\nLet $n$ = copies and $C$ = euros. Two unknowns need both invoices. Subtracting isolates $A$; either invoice then pins $F$.\n\n**1. Translate: the two invoices.**\n\n$$F+4A=250, \\qquad F+8A=450$$\n\n**Part 2: The model.**\n\n$$C(n)=50+50\\sqrt{n} \\tag{1}$$\n\n**Part 3: Solve.**\n\n**1.** The setup $F=50$ keeps (1) from being a power of $n$. Unit cost falls, but the total bill keeps rising.\n\n**2.** $C(25)=300$ and $C(36)=350$, which is not more than $400$.\n\n**Answer.** $F=50$ | $A=50$ | $C(25)=300$ | $C(36)=350$"
+    "solution_overview": "The bill is $C(n)=F+A n^{\\frac{1}{2}}$ for $n>0$ copies, with $C(16)=250$ and $C(64)=450$.\n\n**Part 1: Building the model.**\n\nLet $n$ = copies and $C$ = euros. Two unknowns need both invoices. Subtracting isolates $A$; either invoice then pins $F$.\n\n**1. Translate: the two invoices.**\n\n$$F+4A=250, \\qquad F+8A=450$$\n\n**Part 2: The model.**\n\n$$C(n)=50+50\\sqrt{n} \\tag{1}$$\n\n**Part 3: Solve.**\n\n**1.** The setup $F=50$ keeps (1) from being a power of $n$. Unit cost falls, but the total bill keeps rising.\n\n**2.** $C(25)=300>280$ and $C(36)=350$, which is not more than $400$.\n\n**Answer.** $F=50$ | $A=50$ | $C(25)=300$ | $C(36)=350$"
   },
   {
     "id": "math-8-15",
     "case_id": "MATH 8.15",
     "title": "A Refinery Against a Linear Quote",
-    "context": "A refinery turns ore of purity $u>0$ into metal $M(u)=A u^{\\frac{3}{2}}$ tonnes. Raising purity from nine to sixteen increased metal output by two hundred and ninety-six tonnes. That metal is then converted to alloy strength $S=\\frac{1}{2}M^{\\frac{2}{3}}$. A rival mill quotes strength directly as $1.8u+5$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "context": "A refinery turns ore of purity $u>0$ into metal $M(u)=A u^{\\frac{3}{2}}$ tonnes. Raising purity from $9$ to $16$ increased metal output by $296$ tonnes. That metal is then converted to alloy strength $S=\\frac{1}{2}M^{\\frac{2}{3}}$. A rival mill quotes strength directly as $1.8u+5$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "After both stages, the refinery's strength is proportional to purity.",
-      "On ore of purity nine, the refinery's strength is twenty-seven.",
       "The two quotes never meet.",
-      "On ore of purity thirty-six, the refinery's strength is more than seventy.",
-      "The rival's quote is a power function of purity."
+      "The rival's quote is a power function of purity.",
+      "On ore of purity $36$, the refinery's strength is more than $70$.",
+      "On ore of purity $9$, the refinery's strength is already above $20$."
     ],
     "answer_key": [
       true,
@@ -139,15 +139,15 @@
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe audit gives $M(u)=8 u^{\\frac{3}{2}}$. Strength composes with that metal law. The $\\frac{3}{2}$ and $\\frac{2}{3}$ cancel, leaving a multiple of purity:\n\n$$\nS(u)=\\frac{1}{2}\\bigl(8 u^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}\n$$\n\n$$\nS(u)=\\frac{1}{2}\\cdot 8^{\\frac{2}{3}} u^{\\frac{3}{2}\\cdot\\frac{2}{3}}\n$$\n\n$$\nS(u)=\\frac{1}{2}\\cdot 8^{\\frac{2}{3}} u\n$$\n\n$$\n8^{\\frac{1}{3}}=2\n$$\n\n$$\n8^{\\frac{2}{3}}=4\n$$\n\n$$\nS(u)=\\frac{1}{2}\\cdot 4\\cdot u\n$$\n\n$$\nS(u)=2u\n$$\n\nStrength is twice purity, so the statement is True.",
-      "**B.** → False\n\nThe two stages give $S(u)=2u$. At purity nine:\n\n$$\nS(9)=2\\cdot 9\n$$\n\n$$\nS(9)=18\n$$\n\nThe claimed twenty-seven is the metal output $9^{\\frac{3}{2}}$, not the strength. Eighteen is not twenty-seven, so the statement is False.",
-      "**C.** → False\n\nThe refinery's strength is $S(u)=2u$. Agreement with the rival line is\n\n$$\n2u=1.8u+5\n$$\n\n$$\n2u-1.8u=5\n$$\n\n$$\n0.2u=5\n$$\n\n$$\nu=\\frac{5}{0.2}\n$$\n\n$$\nu=25\n$$\n\nThey meet at purity twenty-five, so the statement is False.",
-      "**D.** → True\n\nThe two stages give $S(u)=2u$. At purity thirty-six:\n\n$$\nS(36)=2\\cdot 36\n$$\n\n$$\nS(36)=72\n$$\n\nSeventy-two is more than seventy, so the statement is True.",
-      "**E.** → False\n\nA power of purity has the form $c u^{p}$, so it cannot carry a leftover constant. The rival quote is $1.8u+5$, and at purity zero that quote still equals $5$. The intercept kills the power, so the statement is False."
+      "**A.** → True\n\nThe audit is a difference of two metal outputs:\n\n$$\nA\\bigl(16^{\\frac{3}{2}}-9^{\\frac{3}{2}}\\bigr)=296\n$$\n\n$$\n16^{\\frac{3}{2}}=64\n$$\n\n$$\n9^{\\frac{3}{2}}=27\n$$\n\n$$\nA(64-27)=296\n$$\n\n$$\n37A=296\n$$\n\n$$\nA=8\n$$\n\nMetal is $M(u)=8 u^{\\frac{3}{2}}$. Strength composes with that law. The $\\frac{3}{2}$ and $\\frac{2}{3}$ cancel, leaving a multiple of purity:\n\n$$\nS(u)=\\frac{1}{2}\\bigl(8 u^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}\n$$\n\n$$\nS(u)=\\frac{1}{2}\\cdot 8^{\\frac{2}{3}} u\n$$\n\n$$\n8^{\\frac{2}{3}}=4\n$$\n\n$$\nS(u)=\\frac{1}{2}\\cdot 4\\cdot u\n$$\n\n$$\nS(u)=2u\n$$\n\nStrength is twice purity, so the statement is True.",
+      "**B.** → False\n\nThe refinery's strength is $S(u)=2u$. Agreement with the rival line is\n\n$$\n2u=1.8u+5\n$$\n\n$$\n2u-1.8u=5\n$$\n\n$$\n0.2u=5\n$$\n\n$$\nu=25\n$$\n\nThey meet at purity $25$, so the statement is False.",
+      "**C.** → False\n\nA power of purity has the form $c u^{p}$, so it cannot carry a leftover constant. The rival quote is $1.8u+5$, and at purity zero that quote still equals $5$. The intercept kills the power, so the statement is False.",
+      "**D.** → True\n\nThe two stages give $S(u)=2u$. At purity $36$:\n\n$$\nS(36)=2\\cdot 36\n$$\n\n$$\nS(36)=72\n$$\n\n$$\n72>70\n$$\n\n$72$ is more than $70$, so the statement is True.",
+      "**E.** → False\n\nThe two stages give $S(u)=2u$. At purity $9$:\n\n$$\nS(9)=2\\cdot 9\n$$\n\n$$\nS(9)=18\n$$\n\n$$\n18<20\n$$\n\n$18$ is not above $20$, so the statement is False."
     ],
     "difficulty_level": "5/5",
     "sort_order": 15,
-    "solution_overview": "Metal is $M(u)=A u^{\\frac{3}{2}}$, and raising purity from nine to sixteen added $296$ tonnes. Strength is $S=\\frac{1}{2}M^{\\frac{2}{3}}$. The rival quotes $1.8u+5$.\n\n**Part 1: Building the model.**\n\nLet $u$ = purity. The audit is a difference of two metal outputs, which recovers $A$. The strength stage then composes with that law. The rival is affine.\n\n**1. Translate: the audited gain.**\n\n$$A\\bigl(16^{\\frac{3}{2}}-9^{\\frac{3}{2}}\\bigr)=296$$\n\n**2. Translate: the composition.**\n\n$$S(u)=\\frac{1}{2}\\bigl(A u^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}$$\n\n**Part 2: The model.**\n\n$$A=8, \\qquad S(u)=2u \\tag{1}$$\n\n$$2u=1.8u+5 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The chain is proportional to purity. $S(9)=18$, not $27$. Equation (2) meets at $u=25$.\n\n**2.** $S(36)=72>70$. The rival's intercept keeps it from being a power of $u$.\n\n**Answer.** $A=8$ | $S(u)=2u$ | $S(9)=18$ | $S(36)=72$ | crossing at $u=25$"
+    "solution_overview": "Metal is $M(u)=A u^{\\frac{3}{2}}$, and raising purity from nine to sixteen added $296$ tonnes. Strength is $S=\\frac{1}{2}M^{\\frac{2}{3}}$. The rival quotes $1.8u+5$.\n\n**Part 1: Building the model.**\n\nLet $u$ = purity. The audit is a difference of two metal outputs, which recovers $A$. The strength stage then composes with that law. The rival is affine.\n\n**1. Translate: the audited gain.**\n\n$$A\\bigl(16^{\\frac{3}{2}}-9^{\\frac{3}{2}}\\bigr)=296$$\n\n**2. Translate: the composition.**\n\n$$S(u)=\\frac{1}{2}\\bigl(A u^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}$$\n\n**Part 2: The model.**\n\n$$A=8, \\qquad S(u)=2u \\tag{1}$$\n\n$$2u=1.8u+5 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The chain is proportional to purity. Equation (2) meets at $u=25$. The rival's intercept keeps it from being a power of $u$.\n\n**2.** $S(36)=72>70$. $S(9)=18$, which is not above $20$.\n\n**Answer.** $A=8$ | $S(u)=2u$ | $S(9)=18$ | $S(36)=72$ | crossing at $u=25$"
   },
   {
     "id": "math-8-16",
@@ -155,29 +155,29 @@
     "title": "Server Peak Load Between a Doubling Rule and an Alarm",
     "context": "A monitoring team models a server's peak load as $L(x)=A x^{r}$, where $x>0$ is the number of simultaneous jobs. Stress tests show that doubling the job count multiplies peak load by $4$, and a run with $8$ simultaneous jobs recorded a peak load of $32$. The hardware alarm trips at a peak load of $200$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Tripling the job count multiplies peak load by $6$.",
-      "Four simultaneous jobs produce a peak load of eight.",
       "Because the exponent exceeds one, peak load grows faster than the job count.",
-      "The hardware alarm already trips at sixteen simultaneous jobs.",
-      "Halving the job count halves peak load."
+      "Halving the job count halves peak load.",
+      "Peak load per job rises as the job count rises.",
+      "The hardware alarm already trips at $16$ simultaneous jobs.",
+      "After $10$ simultaneous jobs, peak load is already above $40$."
     ],
     "answer_key": [
-      false,
-      true,
       true,
       false,
-      false
+      true,
+      false,
+      true
     ],
     "tactical_explanations": [
-      "**A.** → False\n\nThe doubling test gives $r=2$. Tripling the job count multiplies peak load by\n\n$$\n\\frac{L(3x)}{L(x)}=3^{r}\n$$\n\n$$\n3^{r}=3^{2}\n$$\n\n$$\n3^{2}=9\n$$\n\nThe claimed factor is $6$. A linear trap would give $3\\cdot 2=6$, but the exponent is $2$, so the statement is False.",
-      "**B.** → True\n\nThe stress tests give $L(x)=\\frac{1}{2}x^{2}$. At four jobs:\n\n$$\nL(4)=\\frac{1}{2}\\cdot 4^{2}\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\nL(4)=\\frac{1}{2}\\cdot 16\n$$\n\n$$\nL(4)=8\n$$\n\nThe claimed peak load is $8$, so the statement is True.",
-      "**C.** → True\n\nThe doubling test gives $r=2$. An exponent larger than one means peak load grows faster than the job count: each extra job adds more load than the job before it. Two exceeds one, so the statement is True.",
-      "**D.** → False\n\nThe stress tests give $L(x)=\\frac{1}{2}x^{2}$. At sixteen jobs:\n\n$$\nL(16)=\\frac{1}{2}\\cdot 16^{2}\n$$\n\n$$\n16^{2}=256\n$$\n\n$$\nL(16)=\\frac{1}{2}\\cdot 256\n$$\n\n$$\nL(16)=128\n$$\n\nOne hundred and twenty-eight is still below the alarm of $200$, so the statement is False.",
-      "**E.** → False\n\nThe doubling test gives $r=2$. Halving the job count multiplies peak load by\n\n$$\n\\frac{L(\\frac{x}{2})}{L(x)}=2^{-r}\n$$\n\n$$\n2^{-r}=2^{-2}\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\nThe load falls to a quarter, not to a half, so the statement is False."
+      "**A.** → True\n\nThe doubling test cancels $A$ and isolates the exponent:\n\n$$\n2^{r}=4\n$$\n\n$$\nr=2\n$$\n\nThe $8$-job run then pins $A$:\n\n$$\nA\\cdot 8^{2}=32\n$$\n\n$$\nA\\cdot 64=32\n$$\n\n$$\nA=\\frac{1}{2}\n$$\n\nPeak load is $L(x)=\\frac{1}{2}x^{2}$. An exponent larger than one means load grows faster than the job count: each extra job adds more load than the job before it. Two exceeds one, so the statement is True.",
+      "**B.** → False\n\nThe doubling test gives $r=2$. Halving the job count multiplies peak load by\n\n$$\n\\frac{L(\\frac{x}{2})}{L(x)}=2^{-r}\n$$\n\n$$\n2^{-r}=2^{-2}\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\nThe load falls to a quarter, not to a half, so the statement is False.",
+      "**C.** → True\n\nPeak load is $L(x)=\\frac{1}{2}x^{2}$. Load per job is\n\n$$\n\\frac{L(x)}{x}=\\frac{1}{2}x\n$$\n\nThe leftover exponent is positive, so average load rises with the job count. That is the other face of $r>1$, so the statement is True.",
+      "**D.** → False\n\nAt $16$ jobs:\n\n$$\nL(16)=\\frac{1}{2}\\cdot 16^{2}\n$$\n\n$$\n16^{2}=256\n$$\n\n$$\nL(16)=128\n$$\n\n$$\n128<200\n$$\n\n$128$ is still below the alarm of $200$, so the statement is False.",
+      "**E.** → True\n\nAt $10$ jobs:\n\n$$\nL(10)=\\frac{1}{2}\\cdot 10^{2}\n$$\n\n$$\n10^{2}=100\n$$\n\n$$\nL(10)=50\n$$\n\n$$\n50>40\n$$\n\nThe peak is $50$, already above $40$, so the statement is True."
     ],
     "difficulty_level": "3/5",
     "sort_order": 16,
-    "solution_overview": "Peak load follows $L(x)=A x^{r}$ for $x>0$ jobs. Doubling jobs multiplies load by $4$, eight jobs record a load of $32$, and the alarm trips at $200$.\n\n**Part 1: Building the model.**\n\nLet $x$ = simultaneous jobs and $L$ = peak load. The doubling ratio cancels $A$ and isolates $r$; the eight-job level then pins $A$.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=4$$\n\n**2. Translate: the recorded run.**\n\n$$A\\cdot 8^{r}=32$$\n\n**Part 2: The model.**\n\n$$r=2 \\tag{1}$$\n\n$$L(x)=\\frac{1}{2}x^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Tripling multiplies load by $9$, not $6$. $L(4)=8$ and $L(16)=128<200$.\n\n**2.** Because $r>1$, load outruns the job count. Halving jobs quarters the load.\n\n**Answer.** $r=2$ | $A=\\frac{1}{2}$ | $L(4)=8$ | $L(16)=128$ | alarm at $x=20$"
+    "solution_overview": "Peak load follows $L(x)=A x^{r}$ for $x>0$ jobs. Doubling jobs multiplies load by $4$, eight jobs record a load of $32$, and the alarm trips at $200$.\n\n**Part 1: Building the model.**\n\nLet $x$ = simultaneous jobs and $L$ = peak load. The doubling ratio cancels $A$ and isolates $r$; the eight-job level then pins $A$.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=4$$\n\n**2. Translate: the recorded run.**\n\n$$A\\cdot 8^{r}=32$$\n\n**Part 2: The model.**\n\n$$r=2 \\tag{1}$$\n\n$$L(x)=\\frac{1}{2}x^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $r>1$, load outruns the job count. Halving jobs quarters the load. Load per job rises with $x$.\n\n**2.** $L(16)=128<200$ and $L(10)=50>40$.\n\n**Answer.** $r=2$ | $A=\\frac{1}{2}$ | $L(10)=50$ | $L(16)=128$ | alarm at $x=20$"
   },
   {
     "id": "math-8-17",
@@ -186,28 +186,28 @@
     "context": "Usable survey responses follow $Q(x)=A x^{\\frac{1}{2}}$, where $x>0$ measures outreach intensity. When intensity was raised from $25$ to $100$, usable responses increased by exactly $60$. The fieldwork budget caps outreach intensity at $400$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "An extra unit of intensity adds more usable responses at $25$ than at $100$.",
-      "At intensity $81$ the survey yields one hundred and eight usable responses.",
       "Doubling outreach intensity doubles usable responses.",
+      "Usable responses per unit of intensity fall as outreach rises.",
       "The budget cap allows at most $200$ usable responses.",
-      "The intensity needed for a target response count is itself a power function of that count."
+      "At intensity $81$ the survey already yields more than $100$ usable responses."
     ],
     "answer_key": [
       true,
-      true,
       false,
+      true,
       false,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recorded gain gives $Q(x)=12 x^{\\frac{1}{2}}$. An extra unit of intensity adds the derivative. The square-root flattens, so later units buy less:\n\n$$\nQ'(x)=12\\cdot\\frac{1}{2} x^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(x)=6 x^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(25)=6\\cdot 25^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(25)=\\frac{6}{5}\n$$\n\n$$\nQ'(100)=6\\cdot 100^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(100)=\\frac{6}{10}\n$$\n\n$$\nQ'(100)=\\frac{3}{5}\n$$\n\n$$\n\\frac{6}{5}>\\frac{3}{5}\n$$\n\nAn extra unit adds more usable responses at $25$ than at $100$, so the statement is True.",
-      "**B.** → True\n\nThe recorded gain gives $A=12$. At intensity $81$ the square root is $9$:\n\n$$\nQ(81)=12\\cdot 81^{\\frac{1}{2}}\n$$\n\n$$\n81^{\\frac{1}{2}}=9\n$$\n\n$$\nQ(81)=12\\cdot 9\n$$\n\n$$\nQ(81)=108\n$$\n\nThe claimed yield is $108$, so the statement is True.",
-      "**C.** → False\n\nDoubling intensity would double responses only if the exponent were $1$. With exponent $\\frac{1}{2}$ the scale factor is\n\n$$\n\\frac{Q(2x)}{Q(x)}=2^{\\frac{1}{2}}\n$$\n\nThe square root of two is about $1.41$, not $2$. Responses rise, but not in lockstep with outreach, so the statement is False.",
-      "**D.** → False\n\nThe recorded gain gives $A=12$. At the intensity cap of $400$:\n\n$$\nQ(400)=12\\cdot 400^{\\frac{1}{2}}\n$$\n\n$$\n400^{\\frac{1}{2}}=20\n$$\n\n$$\nQ(400)=12\\cdot 20\n$$\n\n$$\nQ(400)=240\n$$\n\nTwo hundred and forty exceeds the claimed ceiling of $200$, so the statement is False.",
-      "**E.** → True\n\nThe recorded gain gives $Q=12 x^{\\frac{1}{2}}$. A square root inverts to a square:\n\n$$\n\\frac{Q}{12}=x^{\\frac{1}{2}}\n$$\n\n$$\nx=\\left(\\frac{Q}{12}\\right)^{2}\n$$\n\nIntensity is a power of the response count, so the statement is True."
+      "**A.** → True\n\nThe recorded gain is a difference of two square-root levels:\n\n$$\nA\\bigl(100^{\\frac{1}{2}}-25^{\\frac{1}{2}}\\bigr)=60\n$$\n\n$$\nA(10-5)=60\n$$\n\n$$\n5A=60\n$$\n\n$$\nA=12\n$$\n\nResponses are $Q(x)=12 x^{\\frac{1}{2}}$. An extra unit of intensity is the slope:\n\n$$\nQ'(x)=12\\cdot\\frac{1}{2} x^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(x)=6 x^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(25)=6\\cdot 25^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(25)=\\frac{6}{5}\n$$\n\n$$\nQ'(100)=6\\cdot 100^{-\\frac{1}{2}}\n$$\n\n$$\nQ'(100)=\\frac{6}{10}\n$$\n\n$$\nQ'(100)=\\frac{3}{5}\n$$\n\n$$\n\\frac{6}{5}>\\frac{3}{5}\n$$\n\nThe square-root flattens, so later units buy less. An extra unit adds more at $25$ than at $100$, so the statement is True.",
+      "**B.** → False\n\nDoubling intensity would double responses only if the exponent were $1$. With exponent $\\frac{1}{2}$ the scale factor is\n\n$$\n\\frac{Q(2x)}{Q(x)}=2^{\\frac{1}{2}}\n$$\n\nThe square root of two is about $1.41$, not $2$. Responses rise, but not in lockstep with outreach, so the statement is False.",
+      "**C.** → True\n\nResponses are $Q(x)=12 x^{\\frac{1}{2}}$. Responses per unit of intensity are\n\n$$\n\\frac{Q(x)}{x}=12 x^{-\\frac{1}{2}}\n$$\n\nThe leftover exponent is negative, so the average product falls as outreach rises, so the statement is True.",
+      "**D.** → False\n\nAt the intensity cap of $400$:\n\n$$\nQ(400)=12\\cdot 400^{\\frac{1}{2}}\n$$\n\n$$\n400^{\\frac{1}{2}}=20\n$$\n\n$$\nQ(400)=240\n$$\n\n$$\n240>200\n$$\n\n$240$ exceeds the claimed ceiling of $200$, so the statement is False.",
+      "**E.** → True\n\nAt intensity $81$ the square root is $9$:\n\n$$\nQ(81)=12\\cdot 81^{\\frac{1}{2}}\n$$\n\n$$\n81^{\\frac{1}{2}}=9\n$$\n\n$$\nQ(81)=108\n$$\n\n$$\n108>100\n$$\n\nThe yield is $108$, already above $100$, so the statement is True."
     ],
     "difficulty_level": "3/5",
     "sort_order": 17,
-    "solution_overview": "Responses follow $Q(x)=A x^{\\frac{1}{2}}$ for $x>0$. Raising intensity from $25$ to $100$ added $60$ responses, and intensity cannot exceed $400$.\n\n**Part 1: Building the model.**\n\nLet $x$ = outreach intensity and $Q$ = usable responses. The recorded gain is a difference of two square-root levels, which recovers $A$. The cap constrains the largest $Q$.\n\n**1. Translate: the recorded gain.**\n\n$$A\\bigl(100^{\\frac{1}{2}}-25^{\\frac{1}{2}}\\bigr)=60$$\n\n**Part 2: The model.**\n\n$$Q(x)=12x^{\\frac{1}{2}} \\tag{1}$$\n\n$$x\\le 400 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $Q'(25)>Q'(100)$ and $Q(81)=108$. Doubling intensity multiplies $Q$ by $\\sqrt{2}$, not by $2$.\n\n**2.** $Q(400)=240$, so the cap allows more than $200$. The inverse $x=(Q/12)^{2}$ is a power function.\n\n**Answer.** $A=12$ | $Q(81)=108$ | $Q(400)=240$"
+    "solution_overview": "Responses follow $Q(x)=A x^{\\frac{1}{2}}$ for $x>0$. Raising intensity from $25$ to $100$ added $60$ responses, and intensity cannot exceed $400$.\n\n**Part 1: Building the model.**\n\nLet $x$ = outreach intensity and $Q$ = usable responses. The recorded gain is a difference of two square-root levels, which recovers $A$. The cap constrains the largest $Q$.\n\n**1. Translate: the recorded gain.**\n\n$$A\\bigl(100^{\\frac{1}{2}}-25^{\\frac{1}{2}}\\bigr)=60$$\n\n**Part 2: The model.**\n\n$$Q(x)=12x^{\\frac{1}{2}} \\tag{1}$$\n\n$$x\\le 400 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $Q'(25)>Q'(100)$ and $Q(81)=108>100$. Doubling intensity multiplies $Q$ by $\\sqrt{2}$, not by $2$. Average product $12x^{-\\frac{1}{2}}$ falls.\n\n**2.** $Q(400)=240$, so the cap allows more than $200$.\n\n**Answer.** $A=12$ | $Q(81)=108$ | $Q(400)=240$"
   },
   {
     "id": "math-8-18",
@@ -215,29 +215,29 @@
     "title": "Quadratic and Linear Inspection Costs That Meet Once",
     "context": "Two inspection procedures are costed for a batch of $n>0$ documents. The automated procedure costs $C(n)=a n^{2}$ and the manual procedure costs $D(n)=b n$. Records show that on a batch of $16$ documents the two procedures cost the same, $256$ each. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "On a batch of nine documents the automated procedure costs eighty-one.",
-      "The automated procedure is cheaper than the manual one at every batch above sixteen documents.",
       "For $n>0$ the two procedures cost the same only at $n=16$.",
-      "At twenty-five documents the two procedures differ by less than one hundred.",
-      "The automated procedure's cost per document is constant."
+      "The automated procedure is cheaper than the manual one at every batch above $16$ documents.",
+      "The automated procedure's cost per document rises with the batch.",
+      "At $25$ documents the two procedures differ by less than $100$.",
+      "On a batch of $9$ documents the automated procedure costs under $100$."
     ],
     "answer_key": [
       true,
       false,
       true,
       false,
-      false
+      true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe automated law is $C(n)=n^{2}$. At nine documents:\n\n$$\nC(9)=9^{2}\n$$\n\n$$\nC(9)=81\n$$\n\nThe claimed automated cost is $81$, so the statement is True.",
-      "**B.** → False\n\nThe two procedures are $C(n)=n^{2}$ and $D(n)=16n$. Their difference is\n\n$$\nC(n)-D(n)=n^{2}-16n\n$$\n\n$$\nC(n)-D(n)=n(n-16)\n$$\n\nFor $n>16$ both factors are positive, so automated costs more than manual, not less. The quadratic outruns the line past the meeting point, so the statement is False.",
-      "**C.** → True\n\nThe two procedures are $C(n)=n^{2}$ and $D(n)=16n$. They meet when\n\n$$\nn^{2}=16n\n$$\n\n$$\nn^{2}-16n=0\n$$\n\n$$\nn(n-16)=0\n$$\n\nThe roots are $n=0$ and $n=16$. On $n>0$ they meet only at sixteen, so the statement is True.",
-      "**D.** → False\n\nThe two procedures are $C(n)=n^{2}$ and $D(n)=16n$. At twenty-five documents:\n\n$$\nC(25)=25^{2}\n$$\n\n$$\nC(25)=625\n$$\n\n$$\nD(25)=16\\cdot 25\n$$\n\n$$\nD(25)=400\n$$\n\n$$\nC(25)-D(25)=625-400\n$$\n\n$$\nC(25)-D(25)=225\n$$\n\nTwo hundred and twenty-five is not less than one hundred, so the statement is False.",
-      "**E.** → False\n\nThe automated law is $C(n)=n^{2}$. Cost per document is\n\n$$\n\\frac{C(n)}{n}=\\frac{n^{2}}{n}\n$$\n\n$$\n\\frac{C(n)}{n}=n\n$$\n\nwhich rises with the batch. The unit cost is not constant, so the statement is False."
+      "**A.** → True\n\nThe common bill pins both coefficients:\n\n$$\na\\cdot 16^{2}=256\n$$\n\n$$\n256a=256\n$$\n\n$$\na=1\n$$\n\n$$\n16b=256\n$$\n\n$$\nb=16\n$$\n\nThe procedures are $C(n)=n^{2}$ and $D(n)=16n$. They meet when\n\n$$\nn^{2}=16n\n$$\n\n$$\nn^{2}-16n=0\n$$\n\n$$\nn(n-16)=0\n$$\n\nThe roots are $n=0$ and $n=16$. On $n>0$ they meet only at $16$, so the statement is True.",
+      "**B.** → False\n\nThe difference is\n\n$$\nC(n)-D(n)=n^{2}-16n\n$$\n\n$$\nC(n)-D(n)=n(n-16)\n$$\n\nFor $n>16$ both factors are positive, so automated costs more than manual, not less. The quadratic outruns the line past the meeting point, so the statement is False.",
+      "**C.** → True\n\nThe automated law is $C(n)=n^{2}$. Cost per document is\n\n$$\n\\frac{C(n)}{n}=n\n$$\n\nwhich rises with the batch. The unit cost is the batch size itself, so the statement is True.",
+      "**D.** → False\n\nAt $25$ documents:\n\n$$\nC(25)=25^{2}\n$$\n\n$$\nC(25)=625\n$$\n\n$$\nD(25)=16\\cdot 25\n$$\n\n$$\nD(25)=400\n$$\n\n$$\nC(25)-D(25)=225\n$$\n\n$$\n225>100\n$$\n\n$225$ is not less than $100$, so the statement is False.",
+      "**E.** → True\n\nAt $9$ documents:\n\n$$\nC(9)=9^{2}\n$$\n\n$$\nC(9)=81\n$$\n\n$$\n81<100\n$$\n\nThe automated bill is $81$, which is under $100$, so the statement is True."
     ],
     "difficulty_level": "3/5",
     "sort_order": 18,
-    "solution_overview": "Automated inspection costs $C(n)=a n^{2}$ and manual inspection costs $D(n)=b n$ for $n>0$ documents. At $n=16$ both bills equal $256$.\n\n**Part 1: Building the model.**\n\nLet $n$ = documents. Each law has a known exponent and one common level, so each coefficient is recoverable.\n\n**1. Translate: the automated bill.** $256a=256$.\n\n**2. Translate: the manual bill.** $16b=256$.\n\n**Part 2: The model.**\n\n$$C(n)=n^{2}, \\qquad D(n)=16n \\tag{1}$$\n\n$$C(n)-D(n)=n(n-16) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $C(9)=81$. Gap (2) is positive for $n>16$, so automated is more expensive past the meeting point.\n\n**2.** On $n>0$ they meet only at $n=16$. At $n=25$ the gap is $225$, not less than $100$. Automated unit cost equals $n$, so it is not constant.\n\n**Answer.** $a=1$ | $b=16$ | $C(9)=81$ | unique meeting $n=16$ | gap $225$ at $n=25$"
+    "solution_overview": "Automated inspection costs $C(n)=a n^{2}$ and manual inspection costs $D(n)=b n$ for $n>0$ documents. At $n=16$ both bills equal $256$.\n\n**Part 1: Building the model.**\n\nLet $n$ = documents. Each law has a known exponent and one common level, so each coefficient is recoverable.\n\n**1. Translate: the automated bill.** $256a=256$.\n\n**2. Translate: the manual bill.** $16b=256$.\n\n**Part 2: The model.**\n\n$$C(n)=n^{2}, \\qquad D(n)=16n \\tag{1}$$\n\n$$C(n)-D(n)=n(n-16) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** On $n>0$ they meet only at $n=16$. Gap (2) is positive for $n>16$, so automated is more expensive past the meeting point.\n\n**2.** At $n=25$ the gap is $225$, not less than $100$. $C(9)=81<100$. Automated unit cost equals $n$, so it rises with the batch.\n\n**Answer.** $a=1$ | $b=16$ | $C(9)=81$ | unique meeting $n=16$ | gap $225$ at $n=25$"
   },
   {
     "id": "math-8-19",
@@ -245,29 +245,29 @@
     "title": "Warehouse Throughput With a Contractual Ceiling",
     "context": "Warehouse throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour, where $s>0$ is the number of staff on shift. A shift with $16$ staff moved $32$ pallets per hour. The service contract caps billed throughput at $80$ pallets per hour. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "A shift of $64$ staff moves sixty-four pallets per hour.",
+      "Throughput grows more slowly than headcount.",
       "Doubling the headcount doubles throughput.",
+      "Once the ceiling binds, billed throughput is no longer a power function of staff.",
       "The contract ceiling is already reached with $64$ staff.",
-      "Throughput per staff member falls as headcount rises.",
-      "Once the ceiling binds, billed throughput is no longer a power function of staff."
+      "With $81$ staff, throughput is already above $70$ pallets per hour."
     ],
     "answer_key": [
       true,
       false,
-      false,
       true,
+      false,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe sixteen-staff record gives $H(s)=8s^{\\frac{1}{2}}$. At sixty-four staff the square root is $8$:\n\n$$\nH(64)=8\\cdot 64^{\\frac{1}{2}}\n$$\n\n$$\n64^{\\frac{1}{2}}=8\n$$\n\n$$\nH(64)=8\\cdot 8\n$$\n\n$$\nH(64)=64\n$$\n\nThe claimed throughput is $64$ pallets per hour, so the statement is True.",
+      "**A.** → True\n\nThe $16$-staff record pins the coefficient:\n\n$$\nA\\cdot 16^{\\frac{1}{2}}=32\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\n4A=32\n$$\n\n$$\nA=8\n$$\n\nThroughput is $H(s)=8s^{\\frac{1}{2}}$. An exponent smaller than one means throughput grows more slowly than headcount: each extra worker adds less than the worker before. One half is below one, so the statement is True.",
       "**B.** → False\n\nDoubling staff would double throughput only if the exponent were $1$. With exponent $\\frac{1}{2}$ the scale factor is\n\n$$\n\\frac{H(2s)}{H(s)}=2^{\\frac{1}{2}}\n$$\n\nThe square root of two is about $1.41$, not $2$. Throughput rises, but not in lockstep with headcount, so the statement is False.",
-      "**C.** → False\n\nSixty-four staff move $64$ pallets an hour.\n\n$$\n64<80\n$$\n\nSixty-four is still below the contract ceiling of eighty, so the statement is False.",
-      "**D.** → True\n\nThroughput is $H(s)=8s^{\\frac{1}{2}}$. Throughput per staff member is\n\n$$\n\\frac{H(s)}{s}=\\frac{8 s^{\\frac{1}{2}}}{s}\n$$\n\n$$\n\\frac{H(s)}{s}=8 s^{-\\frac{1}{2}}\n$$\n\nThe leftover exponent is negative, so each extra worker adds less throughput than the one before, so the statement is True.",
-      "**E.** → True\n\nThroughput is $H(s)=8s^{\\frac{1}{2}}$. The ceiling binds when\n\n$$\n8 s^{\\frac{1}{2}}=80\n$$\n\n$$\ns^{\\frac{1}{2}}=10\n$$\n\n$$\ns=100\n$$\n\nBilled throughput is then the power cut off at the cap:\n\n$$\nB(s)=\\min\\bigl(8 s^{\\frac{1}{2}},\\,80\\bigr)\n$$\n\nPast one hundred staff that rule is a constant, not a power of $s$, so the statement is True."
+      "**C.** → True\n\nThroughput is $H(s)=8s^{\\frac{1}{2}}$. The ceiling binds when\n\n$$\n8 s^{\\frac{1}{2}}=80\n$$\n\n$$\ns^{\\frac{1}{2}}=10\n$$\n\n$$\ns=100\n$$\n\nBilled throughput is then the power cut off at the cap:\n\n$$\nB(s)=\\min\\bigl(8 s^{\\frac{1}{2}},\\,80\\bigr)\n$$\n\nPast $100$ staff that rule is a constant, not a power of $s$, so the statement is True.",
+      "**D.** → False\n\nAt $64$ staff the square root is $8$:\n\n$$\nH(64)=8\\cdot 64^{\\frac{1}{2}}\n$$\n\n$$\n64^{\\frac{1}{2}}=8\n$$\n\n$$\nH(64)=8\\cdot 8\n$$\n\n$$\nH(64)=64\n$$\n\n$$\n64<80\n$$\n\n$64$ pallets an hour still sit below the contract ceiling of $80$, so the statement is False.",
+      "**E.** → True\n\nAt $81$ staff the square root is $9$:\n\n$$\nH(81)=8\\cdot 81^{\\frac{1}{2}}\n$$\n\n$$\n81^{\\frac{1}{2}}=9\n$$\n\n$$\nH(81)=8\\cdot 9\n$$\n\n$$\nH(81)=72\n$$\n\n$$\n72>70\n$$\n\nThroughput is $72$ pallets per hour, already above $70$, so the statement is True."
     ],
     "difficulty_level": "3/5",
     "sort_order": 19,
-    "solution_overview": "Throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour for $s>0$ staff. Sixteen staff move $32$ pallets per hour, and billed throughput cannot exceed $80$.\n\n**Part 1: Building the model.**\n\nLet $s$ = staff and $H$ = pallets per hour. The exponent is given, so the sixteen-staff observation fixes $A$. The cap cuts the billed series.\n\n**1. Translate: the recorded shift.**\n\n$$A\\cdot 16^{\\frac{1}{2}}=32$$\n\n**Part 2: The model.**\n\n$$H(s)=8s^{\\frac{1}{2}} \\tag{1}$$\n\n$$B(s)=\\min\\bigl(H(s),\\,80\\bigr) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $H(64)=64$, still below the cap of $80$. Doubling staff multiplies $H$ by $\\sqrt{2}$, not by $2$.\n\n**2.** Unit throughput $8s^{-\\frac{1}{2}}$ falls with $s$. The two-piece billed rule (2) is not a single power of $s$.\n\n**Answer.** $A=8$ | $H(64)=64$ | cap binds at $s=100$"
+    "solution_overview": "Throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour for $s>0$ staff. Sixteen staff move $32$ pallets per hour, and billed throughput cannot exceed $80$.\n\n**Part 1: Building the model.**\n\nLet $s$ = staff and $H$ = pallets per hour. The exponent is given, so the sixteen-staff observation fixes $A$. The cap cuts the billed series.\n\n**1. Translate: the recorded shift.**\n\n$$A\\cdot 16^{\\frac{1}{2}}=32$$\n\n**Part 2: The model.**\n\n$$H(s)=8s^{\\frac{1}{2}} \\tag{1}$$\n\n$$B(s)=\\min\\bigl(H(s),\\,80\\bigr) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because the exponent is $\\frac{1}{2}<1$, throughput grows more slowly than headcount. Doubling staff multiplies $H$ by $\\sqrt{2}$, not by $2$.\n\n**2.** $H(64)=64<80$ and $H(81)=72>70$. The two-piece billed rule (2) is not a single power of $s$.\n\n**Answer.** $A=8$ | $H(64)=64$ | $H(81)=72$ | cap binds at $s=100$"
   },
   {
     "id": "math-8-20",
@@ -275,28 +275,28 @@
     "title": "Response Time Recovered from a Server Upgrade",
     "context": "A service's median response time follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds, where $k>0$ is the number of servers. The upgrade log does not state $A$: it records only that moving from $4$ servers to $9$ servers cut the median response time by exactly $19$ ms. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "With four servers the median response time is $27$ ms.",
-      "With nine servers the median response time is more than ten milliseconds.",
-      "Doubling the server count halves the median response time.",
-      "The server count needed for a target wait is itself a power function of that wait.",
-      "If the server count keeps growing, the median wait eventually becomes negative."
+      "An extra server cuts the median wait by more at $4$ servers than at $9$.",
+      "Measuring wait in seconds instead of milliseconds leaves the exponent unchanged.",
+      "Doubling the server count halves the median wait.",
+      "With $9$ servers the median wait is more than $10$ milliseconds.",
+      "With $4$ servers the median wait is already above $25$ milliseconds."
     ],
     "answer_key": [
       true,
-      false,
-      false,
       true,
-      false
+      false,
+      false,
+      true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recorded cut gives $W(k)=216 k^{-\\frac{3}{2}}$. At four servers:\n\n$$\nW(4)=216\\cdot 4^{-\\frac{3}{2}}\n$$\n\n$$\n4^{-\\frac{3}{2}}=\\frac{1}{8}\n$$\n\n$$\nW(4)=\\frac{216}{8}\n$$\n\n$$\nW(4)=27\n$$\n\nThe claimed wait is $27$ ms, so the statement is True.",
-      "**B.** → False\n\nThe recorded cut gives $A=216$. At nine servers:\n\n$$\nW(9)=216\\cdot 9^{-\\frac{3}{2}}\n$$\n\n$$\n9^{-\\frac{3}{2}}=\\frac{1}{27}\n$$\n\n$$\nW(9)=\\frac{216}{27}\n$$\n\n$$\nW(9)=8\n$$\n\nEight milliseconds is not more than ten, so the statement is False.",
-      "**C.** → False\n\nDoubling the servers would halve the wait only if the exponent were $-1$. With exponent $-\\frac{3}{2}$ the scale factor is\n\n$$\n\\frac{W(2k)}{W(k)}=2^{-\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\cdot\\sqrt{2}\n$$\n\n$$\n2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\n$$\n\nThat factor is about $0.35$, not $\\frac{1}{2}$. The wait falls faster than a simple half, so the statement is False.",
-      "**D.** → True\n\nThe wait is $W=216 k^{-\\frac{3}{2}}$. A power with a nonzero exponent inverts to another power:\n\n$$\n\\frac{W}{216}=k^{-\\frac{3}{2}}\n$$\n\n$$\nk=\\left(\\frac{W}{216}\\right)^{-\\frac{2}{3}}\n$$\n\n$$\nk=\\left(\\frac{216}{W}\\right)^{\\frac{2}{3}}\n$$\n\nThe server count is a power of the wait, so the statement is True.",
-      "**E.** → False\n\nThe wait is $W(k)=\\frac{216}{k^{\\frac{3}{2}}}$. For every $k>0$ the power in the denominator is positive, so the wait stays positive. A negative exponent sends the wait towards zero from above, never through zero, so the statement is False."
+      "**A.** → True\n\nThe recorded cut is a difference of two levels:\n\n$$\nA\\bigl(4^{-\\frac{3}{2}}-9^{-\\frac{3}{2}}\\bigr)=19\n$$\n\n$$\n4^{-\\frac{3}{2}}=\\frac{1}{8}\n$$\n\n$$\n9^{-\\frac{3}{2}}=\\frac{1}{27}\n$$\n\n$$\n\\frac{1}{8}-\\frac{1}{27}=\\frac{19}{216}\n$$\n\n$$\nA\\cdot\\frac{19}{216}=19\n$$\n\n$$\nA=216\n$$\n\nWait is $W(k)=216 k^{-\\frac{3}{2}}$. An extra server is the slope:\n\n$$\nW'(k)=216\\cdot\\bigl(-\\frac{3}{2}\\bigr) k^{-\\frac{5}{2}}\n$$\n\n$$\nW'(k)=-324 k^{-\\frac{5}{2}}\n$$\n\n$$\n\\bigl|W'(4)\\bigr|=\\frac{324}{4^{\\frac{5}{2}}}\n$$\n\n$$\n4^{\\frac{5}{2}}=32\n$$\n\n$$\n\\bigl|W'(4)\\bigr|=\\frac{324}{32}\n$$\n\n$$\n\\bigl|W'(4)\\bigr|=\\frac{81}{8}\n$$\n\n$$\n\\bigl|W'(9)\\bigr|=\\frac{324}{9^{\\frac{5}{2}}}\n$$\n\n$$\n9^{\\frac{5}{2}}=243\n$$\n\n$$\n\\bigl|W'(9)\\bigr|=\\frac{324}{243}\n$$\n\n$$\n\\bigl|W'(9)\\bigr|=\\frac{4}{3}\n$$\n\n$$\n\\frac{81}{8}>\\frac{4}{3}\n$$\n\nThe drop is steeper at $4$ servers than at $9$, so the statement is True.",
+      "**B.** → True\n\nWait in milliseconds is $W(k)=216 k^{-\\frac{3}{2}}$. One second is $1000$ milliseconds, so wait in seconds is\n\n$$\n\\frac{W(k)}{1000}=\\frac{216}{1000} k^{-\\frac{3}{2}}\n$$\n\nOnly the coefficient rescales. The exponent is still $-\\frac{3}{2}$, so the statement is True.",
+      "**C.** → False\n\nDoubling the servers would halve the wait only if the exponent were $-1$. With exponent $-\\frac{3}{2}$ the scale factor is\n\n$$\n\\frac{W(2k)}{W(k)}=2^{-\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\sqrt{2}\n$$\n\n$$\n2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\n$$\n\nThat factor is about $0.35$, not $\\frac{1}{2}$. The wait falls faster than a simple half, so the statement is False.",
+      "**D.** → False\n\nAt $9$ servers:\n\n$$\nW(9)=216\\cdot 9^{-\\frac{3}{2}}\n$$\n\n$$\n9^{-\\frac{3}{2}}=\\frac{1}{27}\n$$\n\n$$\nW(9)=8\n$$\n\n$$\n8<10\n$$\n\n$8$ milliseconds is not more than $10$, so the statement is False.",
+      "**E.** → True\n\nAt $4$ servers:\n\n$$\nW(4)=216\\cdot 4^{-\\frac{3}{2}}\n$$\n\n$$\n4^{-\\frac{3}{2}}=\\frac{1}{8}\n$$\n\n$$\nW(4)=27\n$$\n\n$$\n27>25\n$$\n\nThe wait is $27$ ms, already above $25$, so the statement is True."
     ],
     "difficulty_level": "3/5",
     "sort_order": 20,
-    "solution_overview": "Wait follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds for $k>0$ servers. Moving from $4$ servers to $9$ servers cut the wait by $19$ ms.\n\n**Part 1: Building the model.**\n\nLet $k$ = servers and $W$ = milliseconds. The exponent is given, so the recorded cut, a difference of two levels, recovers $A$.\n\n**1. Translate: the recorded cut.**\n\n$$A\\bigl(4^{-\\frac{3}{2}}-9^{-\\frac{3}{2}}\\bigr)=19$$\n\n**Part 2: The model.**\n\n$$A=216, \\qquad W(k)=216k^{-\\frac{3}{2}} \\tag{1}$$\n\n**Part 3: Solve.**\n\n**1.** $W(4)=27$ and $W(9)=8$, which is not more than $10$. Doubling servers multiplies wait by $1/(2\\sqrt{2})$, not by $1/2$.\n\n**2.** The inverse $k=(216/W)^{\\frac{2}{3}}$ is a power function. The wait approaches $0$ but never turns negative.\n\n**Answer.** $A=216$ | $W(4)=27$ | $W(9)=8$"
+    "solution_overview": "Wait follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds for $k>0$ servers. Moving from $4$ servers to $9$ servers cut the wait by $19$ ms.\n\n**Part 1: Building the model.**\n\nLet $k$ = servers and $W$ = milliseconds. The exponent is given, so the recorded cut, a difference of two levels, recovers $A$.\n\n**1. Translate: the recorded cut.**\n\n$$A\\bigl(4^{-\\frac{3}{2}}-9^{-\\frac{3}{2}}\\bigr)=19$$\n\n**Part 2: The model.**\n\n$$A=216, \\qquad W(k)=216k^{-\\frac{3}{2}} \\tag{1}$$\n\n**Part 3: Solve.**\n\n**1.** $|W'(4)|>|W'(9)|$. Measuring wait in seconds only rescales $A$, leaving the exponent $-\\frac{3}{2}$. Doubling servers multiplies wait by $1/(2\\sqrt{2})$, not by $1/2$.\n\n**2.** $W(9)=8$, which is not more than $10$. $W(4)=27>25$.\n\n**Answer.** $A=216$ | $W(4)=27$ | $W(9)=8$"
   }
 ]

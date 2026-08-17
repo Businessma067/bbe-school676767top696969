@@ -5,19 +5,25 @@
     "title": "Packing Output Recovered From a Shift Extension",
     "context": "A packing station's output follows $N(h)=A h^{\\frac{2}{3}}$ items after $h>0$ hours of shift, and the coefficient is never logged. Extending a shift from $8$ to $27$ hours added exactly $90$ items. A rush order of $250$ items has to be packed in a single shift. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "An extra hour of packing adds fewer items after a long shift than after a short one.",
-      "A $27$-hour shift packs more than $150$ items.",
+      "An extra hour of packing adds fewer items after twenty-seven hours than after eight.",
       "Doubling any shift doubles the number of items packed.",
-      "The $250$-item order can be filled inside a $27$-hour shift.",
-      "Items packed per hour of shift is itself a power function of the shift length."
+      "Items packed per hour of shift falls as the shift lengthens.",
+      "A $27$-hour shift packs more than $150$ items.",
+      "The $250$-item order can be packed in under $40$ hours."
     ],
-    "answer_key": [true, true, false, false, true],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe shift extension gives $A=18$, so $N(h)=18h^{\\frac{2}{3}}$. An extra hour is the slope. Differentiating brings the exponent down by one:\n\n$$\nN'(h)=18\\cdot\\frac{2}{3}h^{\\frac{2}{3}-1}\n$$\n\n$$\nN'(h)=12h^{-\\frac{1}{3}}\n$$\n\nThe leftover exponent is negative, so the slope falls as the shift lengthens. After eight hours:\n\n$$\nN'(8)=12\\cdot 8^{-\\frac{1}{3}}\n$$\n\n$$\n8^{-\\frac{1}{3}}=\\frac{1}{2}\n$$\n\n$$\nN'(8)=12\\cdot\\frac{1}{2}\n$$\n\n$$\n12\\cdot\\frac{1}{2}=6\n$$\n\nAfter twenty-seven hours:\n\n$$\nN'(27)=12\\cdot 27^{-\\frac{1}{3}}\n$$\n\n$$\n27^{-\\frac{1}{3}}=\\frac{1}{3}\n$$\n\n$$\nN'(27)=12\\cdot\\frac{1}{3}\n$$\n\n$$\n12\\cdot\\frac{1}{3}=4\n$$\n\nAn extra hour adds $6$ items after a short shift and only $4$ after a long one, so the statement is True.",
-      "**B.** → True\n\nThe packing law is $N(h)=18h^{\\frac{2}{3}}$. A twenty-seven hour count is\n\n$$\nN(27)=18\\cdot 27^{\\frac{2}{3}}\n$$\n\n$$\n27^{\\frac{2}{3}}=9\n$$\n\n$$\nN(27)=18\\cdot 9\n$$\n\n$$\n18\\cdot 9=162\n$$\n\n$$\n162>150\n$$\n\nThe claimed threshold is $150$ items, and $162$ clears it, so the statement is True.",
-      "**C.** → False\n\nDoubling a shift would double packed items only if the exponent were $1$. With exponent $\\frac{2}{3}$ the scale factor is\n\n$$\n\\frac{N(2h)}{N(h)}=2^{\\frac{2}{3}}\n$$\n\n$$\n2^{\\frac{2}{3}}\\approx 1.587\n$$\n\nTwo thirds is below one, so the factor is about $1.59$, not $2$. The count rises, but not in lockstep with the clock, so the statement is False.",
-      "**D.** → False\n\nTwenty-seven hours pack $162$ items, which is already short of $250$. Inverting the law at the order size names the hours that would suffice:\n\n$$\n18h^{\\frac{2}{3}}=250\n$$\n\n$$\nh^{\\frac{2}{3}}=\\frac{250}{18}\n$$\n\n$$\n\\frac{250}{18}=\\frac{125}{9}\n$$\n\n$$\nh=\\left(\\frac{125}{9}\\right)^{\\frac{3}{2}}\n$$\n\n$$\nh\\approx 51.8\n$$\n\nThe order needs about $52$ hours, not $27$, so the statement is False.",
-      "**E.** → True\n\nThe packing law is $N(h)=18h^{\\frac{2}{3}}$. Items packed per hour divide by shift length, which subtracts $1$ from the exponent:\n\n$$\n\\frac{N(h)}{h}=18h^{\\frac{2}{3}-1}\n$$\n\n$$\n\\frac{N(h)}{h}=18h^{-\\frac{1}{3}}\n$$\n\nThat is still $A h^{r}$, now with exponent $-\\frac{1}{3}$. The hourly rate is a power of shift length, so the statement is True."
+      "**A.** → True\n\nThe shift extension gives $A=18$, so $N(h)=18h^{\\frac{2}{3}}$. An extra hour is the slope. Differentiating brings the exponent down by one:\n\n$$\nN'(h)=18\\cdot\\frac{2}{3}h^{\\frac{2}{3}-1}\n$$\n\n$$\nN'(h)=12h^{-\\frac{1}{3}}\n$$\n\nThe leftover exponent is negative, so the slope falls as the shift lengthens. After $8$ hours:\n\n$$\nN'(8)=12\\cdot 8^{-\\frac{1}{3}}\n$$\n\n$$\n8^{-\\frac{1}{3}}=\\frac{1}{2}\n$$\n\n$$\nN'(8)=12\\cdot\\frac{1}{2}\n$$\n\n$$\nN'(8)=6\n$$\n\nAfter $27$ hours:\n\n$$\nN'(27)=12\\cdot 27^{-\\frac{1}{3}}\n$$\n\n$$\n27^{-\\frac{1}{3}}=\\frac{1}{3}\n$$\n\n$$\nN'(27)=12\\cdot\\frac{1}{3}\n$$\n\n$$\nN'(27)=4\n$$\n\nAn extra hour adds $6$ items after eight hours and only $4$ after twenty-seven, so the statement is True.",
+      "**B.** → False\n\nDoubling a shift would double packed items only if the exponent were $1$. With exponent $\\frac{2}{3}$ the scale factor is\n\n$$\n\\frac{N(2h)}{N(h)}=2^{\\frac{2}{3}}\n$$\n\n$$\n2^{\\frac{2}{3}}\\approx 1.587\n$$\n\nTwo thirds is below one, so the factor is about $1.59$, not $2$. The count rises, but not in lockstep with the clock, so the statement is False.",
+      "**C.** → True\n\nThe packing law is $N(h)=18h^{\\frac{2}{3}}$. Items packed per hour divide by shift length, which subtracts $1$ from the exponent:\n\n$$\n\\frac{N(h)}{h}=18h^{\\frac{2}{3}-1}\n$$\n\n$$\n\\frac{N(h)}{h}=18h^{-\\frac{1}{3}}\n$$\n\nThe leftover exponent is negative, so the hourly rate falls as $h$ grows. After $8$ hours:\n\n$\n\\frac{N(8)}{8}=18\\cdot 8^{-\\frac{1}{3}}\n$\n\n$\n8^{-\\frac{1}{3}}=\\frac{1}{2}\n$\n\n$\n\\frac{N(8)}{8}=9\n$\n\nAfter $27$ hours:\n\n$\n\\frac{N(27)}{27}=18\\cdot 27^{-\\frac{1}{3}}\n$\n\n$\n27^{-\\frac{1}{3}}=\\frac{1}{3}\n$\n\n$\n\\frac{N(27)}{27}=6\n$\n\nAverage product declines with the shift, so the statement is True.",
+      "**D.** → True\n\nThe packing law is $N(h)=18h^{\\frac{2}{3}}$. A twenty-seven hour count is\n\n$$\nN(27)=18\\cdot 27^{\\frac{2}{3}}\n$$\n\n$$\n27^{\\frac{2}{3}}=9\n$$\n\n$$\nN(27)=18\\cdot 9\n$$\n\n$$\nN(27)=162\n$$\n\n$$\n162>150\n$$\n\nThe claimed threshold is $150$ items, and $162$ clears it, so the statement is True.",
+      "**E.** → False\n\nTwenty-seven hours pack $162$ items, already short of $250$. Inverting the law at the order size names the hours that would suffice:\n\n$$\n18h^{\\frac{2}{3}}=250\n$$\n\n$$\nh^{\\frac{2}{3}}=\\frac{250}{18}\n$$\n\n$$\n\\frac{250}{18}=\\frac{125}{9}\n$$\n\n$$\nh=\\left(\\frac{125}{9}\\right)^{\\frac{3}{2}}\n$$\n\n$$\nh\\approx 51.8\n$$\n\n$$\n51.8>40\n$$\n\nThe order needs about $52$ hours, which is not under $40$, so the statement is False."
     ],
     "difficulty_level": "3/5",
     "sort_order": 31,
@@ -30,18 +36,24 @@
     "context": "Aerodynamic drag on a test rig follows $F(v)=A v^{r}$ newtons at airspeed $v>0$ metres per second, and the manufacturer supplies neither constant. Two wind-tunnel runs are on file: $16$ N at $4$ m/s and $128$ N at $16$ m/s. The rig also reports absorbed power $P=F\\cdot v$ watts, and the mounting is rated to $250$ N. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The absorbed power is a power function of airspeed.",
-      "The mounting's $250$ N rating is first reached at a speed above $30$ m/s.",
       "Doubling the airspeed more than triples the drag.",
-      "At $16$ m/s the rig absorbs more than $2$ kW.",
-      "The airspeed that produces a given drag is itself a power function of that drag."
+      "The airspeed that produces a given drag is itself a power function of that drag.",
+      "The mounting's $250$ N rating is first reached at a speed above $30$ m/s.",
+      "At $16$ m/s the rig absorbs more than $2$ kW."
     ],
-    "answer_key": [true, false, false, true, true],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
     "tactical_explanations": [
       "**A.** → True\n\nThe two runs give $F(v)=2v^{\\frac{3}{2}}$. Absorbed power multiplies drag by speed, which adds one to the exponent:\n\n$$\nP(v)=2v^{\\frac{3}{2}}\\cdot v\n$$\n\n$$\nP(v)=2v^{\\frac{5}{2}}\n$$\n\nThat is $A v^{r}$ with coefficient $2$ and exponent $\\frac{5}{2}$. Power grows even faster than drag, but it is still a monomial in airspeed, so the statement is True.",
-      "**B.** → False\n\nThe recovered drag is $F(v)=2v^{\\frac{3}{2}}$. The rating is a drag of $250$ N, so invert:\n\n$$\n2v^{\\frac{3}{2}}=250\n$$\n\n$$\nv^{\\frac{3}{2}}=125\n$$\n\n$$\nv=125^{\\frac{2}{3}}\n$$\n\n$$\n125=5^{3}\n$$\n\n$$\nv=(5^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(5^{3})^{\\frac{2}{3}}=5^{2}\n$$\n\n$$\n5^{2}=25\n$$\n\nThe claimed threshold is a speed above $30$ m/s, and $25$ is not above $30$. The rating is reached at $25$ m/s, so the statement is False.",
-      "**C.** → False\n\nThe force ratio already gave $r=\\frac{3}{2}$. Doubling airspeed multiplies drag by $2$ to that power:\n\n$$\n\\frac{F(2v)}{F(v)}=2^{\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=\\sqrt{2^{3}}\n$$\n\n$$\n\\sqrt{2^{3}}=\\sqrt{8}\n$$\n\n$$\n\\sqrt{8}=2\\sqrt{2}\n$$\n\n$$\n2\\sqrt{2}\\approx 2.828\n$$\n\n$$\n2.828<3\n$$\n\nThe factor is more than a doubling but less than a tripling. Doubling airspeed multiplies drag by about $2.83$, so the statement is False.",
-      "**D.** → True\n\nAbsorbed power is force times speed. At the faster logged run the force is already $128$ N:\n\n$$\nP(16)=128\\cdot 16\n$$\n\n$$\n128\\cdot 16=2048\n$$\n\nThat is $2048$ watts, or $2.048$ kilowatts, which is more than $2$ kW, so the statement is True.",
-      "**E.** → True\n\nThe recovered law is $F=2v^{\\frac{3}{2}}$. A power with a nonzero exponent inverts to another power. Solving for airspeed:\n\n$$\n\\frac{F}{2}=v^{\\frac{3}{2}}\n$$\n\n$$\nv=\\left(\\frac{F}{2}\\right)^{\\frac{2}{3}}\n$$\n\n$$\nv=2^{-\\frac{2}{3}}F^{\\frac{2}{3}}\n$$\n\nThat is $A F^{r}$ with exponent $\\frac{2}{3}$. The airspeed that produces a given drag is a power of that drag, so the statement is True."
+      "**B.** → False\n\nThe force ratio already gave $r=\\frac{3}{2}$. Doubling airspeed multiplies drag by $2$ to that power:\n\n$$\n\\frac{F(2v)}{F(v)}=2^{\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=\\sqrt{2^{3}}\n$$\n\n$$\n\\sqrt{2^{3}}=\\sqrt{8}\n$$\n\n$$\n\\sqrt{8}=2\\sqrt{2}\n$$\n\n$$\n2\\sqrt{2}\\approx 2.828\n$$\n\n$$\n2.828<3\n$$\n\nThe factor is more than a doubling but less than a tripling. Doubling airspeed multiplies drag by about $2.83$, so the statement is False.",
+      "**C.** → True\n\nThe recovered law is $F=2v^{\\frac{3}{2}}$. A power with a nonzero exponent inverts to another power. Solving for airspeed:\n\n$$\n\\frac{F}{2}=v^{\\frac{3}{2}}\n$$\n\n$$\nv=\\left(\\frac{F}{2}\\right)^{\\frac{2}{3}}\n$$\n\n$$\nv=2^{-\\frac{2}{3}}F^{\\frac{2}{3}}\n$$\n\nThat is $A F^{r}$ with exponent $\\frac{2}{3}$. The airspeed that produces a given drag is a power of that drag, so the statement is True.",
+      "**D.** → False\n\nThe recovered drag is $F(v)=2v^{\\frac{3}{2}}$. The rating is a drag of $250$ N, so invert:\n\n$$\n2v^{\\frac{3}{2}}=250\n$$\n\n$$\nv^{\\frac{3}{2}}=125\n$$\n\n$$\nv=125^{\\frac{2}{3}}\n$$\n\n$$\n125=5^{3}\n$$\n\n$$\nv=(5^{3})^{\\frac{2}{3}}\n$$\n\n$$\nv=5^{2}\n$$\n\n$$\nv=25\n$$\n\nThe claimed threshold is a speed above $30$ m/s, and $25$ is not above $30$. The rating is reached at $25$ m/s, so the statement is False.",
+      "**E.** → True\n\nAbsorbed power is force times speed. At the faster logged run the force is already $128$ N:\n\n$$\nP(16)=128\\cdot 16\n$$\n\n$$\n128\\cdot 16=2048\n$$\n\nThat is $2048$ watts, or $2.048$ kilowatts, which is more than $2$ kW, so the statement is True."
     ],
     "difficulty_level": "3/5",
     "sort_order": 32,
@@ -54,22 +66,28 @@
     "context": "A regional utility faces demand $q(p)=A p^{-\\frac{1}{2}}$ units a month at price $p>0$, and a price of $16$ sells $300$ units. The board wants to know how revenue $R=pq$ behaves along this curve. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Revenue rises as the price rises.",
-      "Raising price by $44\\%$ cuts quantity by exactly $20\\%$.",
-      "To reduce monthly quantity to $200$ units, the price must rise to $40$.",
-      "Revenue does not depend on the price.",
-      "At a price of $25$ the utility sells fewer than $250$ units."
+      "Because quantity falls when price rises, revenue must fall as well.",
+      "The price needed for a given monthly quantity is itself a power function of that quantity.",
+      "At a price of $25$ the utility sells fewer than $250$ units.",
+      "Cutting monthly quantity to $200$ units requires a price above $40$."
     ],
-    "answer_key": [true, false, false, false, true],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
     "tactical_explanations": [
       "**A.** → True\n\nThe recorded pair gives $A=1200$, so demand is $q(p)=1200p^{-\\frac{1}{2}}$. Revenue multiplies by price, which raises the exponent by one:\n\n$$\nR(p)=p\\cdot 1200p^{-\\frac{1}{2}}\n$$\n\n$$\nR(p)=1200p^{\\frac{1}{2}}\n$$\n\nThe leftover exponent $\\frac{1}{2}$ is positive, so $R$ rises with $p$. Quantity falls when price rises, but not fast enough to offset the higher price. At the recorded price:\n\n$$\nR(16)=1200\\cdot 4\n$$\n\n$$\n1200\\cdot 4=4800\n$$\n\nAt a higher price:\n\n$$\nR(25)=1200\\cdot 5\n$$\n\n$$\n1200\\cdot 5=6000\n$$\n\n$$\n6000>4800\n$$\n\nRevenue rises as the price rises, so the statement is True.",
-      "**B.** → False\n\nA finite $44\\%$ rise acts through the exact power of the multiplier $1.44$, and $A$ cancels:\n\n$$\n\\frac{q(1.44p)}{q(p)}=1.44^{-\\frac{1}{2}}\n$$\n\n$$\n1.44=\\left(\\frac{6}{5}\\right)^{2}\n$$\n\n$$\n1.44^{-\\frac{1}{2}}=\\frac{5}{6}\n$$\n\nThe remaining fraction of quantity is $\\frac{5}{6}$, so the cut is\n\n$$\n1-\\frac{5}{6}=\\frac{1}{6}\n$$\n\n$$\n\\frac{1}{6}\\approx 16.7\\%\n$$\n\nMultiplying $44\\%$ by the elasticity $-\\frac{1}{2}$ would give $22\\%$, and rounding that toward $20\\%$ is no better. Quantity falls by about $16.7\\%$, not by $20\\%$, so the statement is False.",
-      "**C.** → False\n\nThe calibrated demand is $q(p)=1200p^{-\\frac{1}{2}}$. A target of $200$ units inverts the curve:\n\n$$\n200=1200\\cdot p^{-\\frac{1}{2}}\n$$\n\n$$\n200=\\frac{1200}{\\sqrt{p}}\n$$\n\n$$\n\\sqrt{p}=\\frac{1200}{200}\n$$\n\n$$\n\\frac{1200}{200}=6\n$$\n\n$$\np=36\n$$\n\nQuantity has to fall by a third from the observed $300$, and squaring the inversion makes the price move larger than that proportion, though it still lands short of $40$. The target arrives at a price of $36$, so the statement is False.",
-      "**D.** → False\n\nDemand's exponent is $-\\frac{1}{2}$, so revenue is $R(p)=1200p^{\\frac{1}{2}}$. Price-independent revenue would need a zero revenue exponent, which arises only when demand's exponent is exactly $-1$.\n\n$$\n\\frac{1}{2}\\neq 0\n$$\n\nTwo prices confirm the dependence: $R(16)=4800$ and $R(64)=9600$. Revenue not only depends on price but moves in the same direction as it, so the statement is False.",
-      "**E.** → True\n\nThe calibrated demand is $q(p)=1200p^{-\\frac{1}{2}}$. At price $25$:\n\n$$\nq(25)=1200\\cdot 25^{-\\frac{1}{2}}\n$$\n\n$$\n25^{-\\frac{1}{2}}=\\frac{1}{5}\n$$\n\n$$\nq(25)=\\frac{1200}{5}\n$$\n\n$$\n\\frac{1200}{5}=240\n$$\n\n$$\n240<250\n$$\n\nThe utility sells $240$ units, which is fewer than $250$, so the statement is True."
+      "**B.** → False\n\nQuantity does fall when price rises, because the demand exponent $-\\frac{1}{2}$ is negative. Revenue is not that quantity: it multiplies by $p$, which raises the exponent by one:\n\n$$\nR(p)=1200p^{\\frac{1}{2}}\n$$\n\nThe leftover exponent is positive, so revenue moves with price, not against it. A falling quantity is not enough to drag revenue down when demand is inelastic. Revenue rises along this curve, so the statement is False.",
+      "**C.** → True\n\nDemand is $q=1200p^{-\\frac{1}{2}}$. A nonzero exponent inverts to another power. Solving for price:\n\n$$\nq=\\frac{1200}{p^{\\frac{1}{2}}}\n$$\n\n$$\np^{\\frac{1}{2}}=\\frac{1200}{q}\n$$\n\n$$\np=\\left(\\frac{1200}{q}\\right)^{2}\n$$\n\n$$\np=1440000\\,q^{-2}\n$$\n\nThat is $A q^{r}$ with exponent $-2$, the reciprocal of the demand exponent. The price needed for a given quantity is a power of that quantity, so the statement is True.",
+      "**D.** → True\n\nThe calibrated demand is $q(p)=1200p^{-\\frac{1}{2}}$. At price $25$:\n\n$$\nq(25)=1200\\cdot 25^{-\\frac{1}{2}}\n$$\n\n$$\n25^{-\\frac{1}{2}}=\\frac{1}{5}\n$$\n\n$$\nq(25)=\\frac{1200}{5}\n$$\n\n$$\nq(25)=240\n$$\n\n$$\n240<250\n$$\n\nThe utility sells $240$ units, which is fewer than $250$, so the statement is True.",
+      "**E.** → False\n\nThe calibrated demand is $q(p)=1200p^{-\\frac{1}{2}}$. A target of $200$ units inverts the curve:\n\n$$\n200=1200\\cdot p^{-\\frac{1}{2}}\n$$\n\n$$\n200=\\frac{1200}{\\sqrt{p}}\n$$\n\n$$\n\\sqrt{p}=\\frac{1200}{200}\n$$\n\n$$\n\\sqrt{p}=6\n$$\n\n$$\np=36\n$$\n\n$$\n36<40\n$$\n\nThe target arrives at a price of $36$, which is not above $40$, so the statement is False."
     ],
     "difficulty_level": "3/5",
     "sort_order": 33,
-    "solution_overview": "Demand is $q(p)=Ap^{-\\frac{1}{2}}$ with $q(16)=300$, and revenue is $R=pq$.\n\n**Part 1: Building the model.**\n\nLet $p$ = price, $q$ = units sold, $R$ = revenue. The exponent is given, one observation pins the coefficient, and revenue is derived by multiplying by $p$, which raises the exponent by one.\n\n**1. Translate: the observed pair.**\n\n$$A\\cdot 16^{-\\frac{1}{2}}=300 \\qquad 16^{-\\frac{1}{2}}=\\frac{1}{4}$$\n\n**2. Translate: revenue.**\n\n$$R(p)=p\\cdot Ap^{-\\frac{1}{2}}=Ap^{\\frac{1}{2}}$$\n\n**Part 2: The model.**\n\n$$q(p)=1200\\,p^{-\\frac{1}{2}} \\tag{1}$$\n\n$$R(p)=1200\\,p^{\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The observation gives the coefficient:\n\n$$A=300\\times 4=1200$$\n\n**2.** The elasticity is the exponent of (1):\n\n$$\\text{El}_{p}q=-\\frac{1}{2}$$\n\n**3.** Quantities along the curve:\n\n$$q(16)=300 \\qquad q(25)=240 \\qquad q(36)=200 \\qquad q(64)=150$$\n\n**4.** A $44\\%$ price rise uses the exact multiplier $1.44$:\n\n$$1.44^{-\\frac{1}{2}}=\\frac{5}{6} \\qquad \\text{quantity falls by }\\frac{1}{6}$$\n\n**5.** Because $-\\frac{1}{2}+1=\\frac{1}{2}>0$, revenue rises with price; it would be flat only at elasticity $-1$:\n\n$$R(16)=4800 \\qquad R(25)=6000 \\qquad R(64)=9600$$\n\n**Answer.** $A=1200$ | $q(p)=1200p^{-\\frac{1}{2}}$ | $R(p)=1200p^{\\frac{1}{2}}$ | $q(36)=200$"
+    "solution_overview": "Demand is $q(p)=Ap^{-\\frac{1}{2}}$ with $q(16)=300$, and revenue is $R=pq$.\n\n**Part 1: Building the model.**\n\nLet $p$ = price, $q$ = units sold, $R$ = revenue. The exponent is given, one observation pins the coefficient, and revenue is derived by multiplying by $p$, which raises the exponent by one.\n\n**1. Translate: the observed pair.**\n\n$$A\\cdot 16^{-\\frac{1}{2}}=300 \\qquad 16^{-\\frac{1}{2}}=\\frac{1}{4}$$\n\n**2. Translate: revenue.**\n\n$$R(p)=p\\cdot Ap^{-\\frac{1}{2}}=Ap^{\\frac{1}{2}}$$\n\n**Part 2: The model.**\n\n$$q(p)=1200\\,p^{-\\frac{1}{2}} \\tag{1}$$\n\n$$R(p)=1200\\,p^{\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The observation gives the coefficient:\n\n$$A=300\\times 4=1200$$\n\n**2.** The inverse of (1) is a power of quantity:\n\n$$p=1440000\\,q^{-2}$$\n\n**3.** Quantities along the curve:\n\n$$q(16)=300 \\qquad q(25)=240 \\qquad q(36)=200 \\qquad q(64)=150$$\n\n**4.** Because $-\\frac{1}{2}+1=\\frac{1}{2}>0$, revenue rises with price; a falling quantity does not drag revenue down:\n\n$$R(16)=4800 \\qquad R(25)=6000 \\qquad R(64)=9600$$\n\n**Answer.** $A=1200$ | $q(p)=1200p^{-\\frac{1}{2}}$ | $R(p)=1200p^{\\frac{1}{2}}$ | $q(36)=200$"
   },
   {
     "id": "math-8-34",
@@ -78,18 +96,24 @@
     "context": "A kiln's daily output follows $y(x)=A x^{\\frac{4}{3}}$ tonnes for a fuel feed of $x>0$ cubic metres. A test firing at a feed of $27$ produced $324$ tonnes. The site licence forbids shipping more than $1024$ tonnes a day, so any extra firing is wasted. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "To double the test-firing output, the fuel feed must more than double.",
-      "The licensed ceiling of $1024$ tonnes is reached at a feed of $64$.",
+      "Output per cubic metre of fuel rises as the feed increases.",
       "Once the licence binds, daily shipped output is no longer a power function of the feed.",
-      "A feed of $8$ produces $32$ tonnes.",
-      "Output per cubic metre of fuel rises as the feed increases."
+      "A feed of $8$ produces more than $50$ tonnes.",
+      "The licensed ceiling binds before a feed of $50$."
     ],
-    "answer_key": [false, true, true, false, true],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
     "tactical_explanations": [
       "**A.** → False\n\nDoubling output is an inverse-scale question: the feed multiplier is $2$ raised to the reciprocal of the given exponent $\\frac{4}{3}$.\n\n$$\n\\left(\\frac{x}{27}\\right)^{\\frac{4}{3}}=2\n$$\n\n$$\n\\frac{x}{27}=2^{\\frac{3}{4}}\n$$\n\n$$\n2^{\\frac{3}{4}}\\approx 1.682\n$$\n\nA doubled feed would be the factor $2$. Because the exponent $\\frac{4}{3}$ exceeds $1$, output grows faster than feed, so doubling output takes less than a doubling of feed. The required factor is about $1.68$, not more than $2$, so the statement is False.",
-      "**B.** → True\n\nThe test firing gives $A=4$, so $y(x)=4x^{\\frac{4}{3}}$. Set output equal to the ceiling:\n\n$$\n4x^{\\frac{4}{3}}=1024\n$$\n\n$$\nx^{\\frac{4}{3}}=256\n$$\n\n$$\nx=256^{\\frac{3}{4}}\n$$\n\n$$\n256=4^{4}\n$$\n\n$$\nx=(4^{4})^{\\frac{3}{4}}\n$$\n\n$$\n(4^{4})^{\\frac{3}{4}}=4^{3}\n$$\n\n$$\n4^{3}=64\n$$\n\nThe licensed ceiling is reached at a feed of $64$, so the statement is True.",
+      "**B.** → True\n\nThe test firing gives $A=4$, so $y(x)=4x^{\\frac{4}{3}}$. Output per cubic metre divides by the feed, which subtracts $1$ from the exponent:\n\n$$\n\\frac{y(x)}{x}=4x^{\\frac{4}{3}-1}\n$$\n\n$$\n\\frac{y(x)}{x}=4x^{\\frac{1}{3}}\n$$\n\nThe leftover exponent is positive, so the average product rises with feed. Fuel efficiency improves with scale, so the statement is True.",
       "**C.** → True\n\nThe licence binds at feed $64$. Shipped output is $\\min(4x^{\\frac{4}{3}},1024)$. For $x\\le 64$ that coincides with the power $4x^{\\frac{4}{3}}$. For $x>64$ shipped output is the constant $1024$, and a constant on an interval of feeds is not a power of $x$ with a single exponent. Past the licence the graph is a horizontal cap rather than $A x^{r}$, so the statement is True.",
-      "**D.** → False\n\nThe recovered law is $y(x)=4x^{\\frac{4}{3}}$. At a feed of $8$:\n\n$$\n8^{\\frac{4}{3}}=(8^{\\frac{1}{3}})^{4}\n$$\n\n$$\n(8^{\\frac{1}{3}})^{4}=2^{4}\n$$\n\n$$\n2^{4}=16\n$$\n\n$$\ny(8)=4\\cdot 16\n$$\n\n$$\n4\\cdot 16=64\n$$\n\nThe claimed $32$ is what reading the exponent as $1$ would give. The kiln produces $64$ tonnes, so the statement is False.",
-      "**E.** → True\n\nThe recovered law is $y(x)=4x^{\\frac{4}{3}}$. Output per cubic metre divides by the feed, which subtracts $1$ from the exponent:\n\n$$\n\\frac{y(x)}{x}=4x^{\\frac{4}{3}-1}\n$$\n\n$$\n\\frac{y(x)}{x}=4x^{\\frac{1}{3}}\n$$\n\nThe leftover exponent is positive, so the average product rises with feed. Fuel efficiency improves with scale, so the statement is True."
+      "**D.** → True\n\nThe recovered law is $y(x)=4x^{\\frac{4}{3}}$. At a feed of $8$:\n\n$$\n8^{\\frac{4}{3}}=(8^{\\frac{1}{3}})^{4}\n$$\n\n$$\n(8^{\\frac{1}{3}})^{4}=2^{4}\n$$\n\n$$\n2^{4}=16\n$$\n\n$$\ny(8)=4\\cdot 16\n$$\n\n$$\ny(8)=64\n$$\n\n$$\n64>50\n$$\n\nThe kiln produces $64$ tonnes, which is more than $50$, so the statement is True.",
+      "**E.** → False\n\nThe recovered law is $y(x)=4x^{\\frac{4}{3}}$. Set output equal to the ceiling:\n\n$$\n4x^{\\frac{4}{3}}=1024\n$$\n\n$$\nx^{\\frac{4}{3}}=256\n$$\n\n$$\nx=256^{\\frac{3}{4}}\n$$\n\n$$\n256=4^{4}\n$$\n\n$$\nx=(4^{4})^{\\frac{3}{4}}\n$$\n\n$$\nx=4^{3}\n$$\n\n$$\nx=64\n$$\n\nThe claimed threshold is a feed before $50$, and $64$ is not before $50$. The licence binds at $64$, so the statement is False."
     ],
     "difficulty_level": "3/5",
     "sort_order": 34,
@@ -102,18 +126,24 @@
     "context": "A calibration stage converts a raw reading $x>0$ into an index by $f(x)=A x^{\\frac{2}{3}}$, and a raw reading of $8$ produced index $36$. A reporting stage converts an index $y>0$ back by $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$. The lab wants to know what happens when the two stages are applied one after the other. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Applying the reporting stage after the calibration stage returns the original reading.",
-      "The composition of the two stages is a power function with exponent $1$.",
-      "Starting with a raw reading of $125$, the two stages produce index $225$ and then return raw reading $125$.",
-      "Applying the stages in the other order gives something other than the original input.",
-      "A raw reading of $64$ is sent out with index $108$."
+      "The composition of the two stages grows more slowly than the raw reading.",
+      "Applying the stages in the other order fails to recover the original index.",
+      "A raw reading of $64$ is sent out with an index above $140$.",
+      "A raw reading of $125$ is sent out with an index under $200$."
     ],
-    "answer_key": [true, true, true, false, false],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recorded pair gives $A=9$, so calibration is $f(x)=9x^{\\frac{2}{3}}$. Reporting after it is the composition $g(f(x))$:\n\n$$\ng(f(x))=\\frac{1}{27}\\bigl(9x^{\\frac{2}{3}}\\bigr)^{\\frac{3}{2}}\n$$\n\n$$\ng(f(x))=\\frac{1}{27}\\cdot 9^{\\frac{3}{2}}\\cdot\\bigl(x^{\\frac{2}{3}}\\bigr)^{\\frac{3}{2}}\n$$\n\n$$\n\\bigl(x^{\\frac{2}{3}}\\bigr)^{\\frac{3}{2}}=x^{\\frac{2}{3}\\cdot\\frac{3}{2}}\n$$\n\n$$\nx^{\\frac{2}{3}\\cdot\\frac{3}{2}}=x^{1}\n$$\n\nThe exponents multiply to $1$, so the powers cancel to the identity in $x$. The coefficients cancel the same way:\n\n$$\n9^{\\frac{3}{2}}=(9^{\\frac{1}{2}})^{3}\n$$\n\n$$\n(9^{\\frac{1}{2}})^{3}=3^{3}\n$$\n\n$$\n3^{3}=27\n$$\n\n$$\ng(f(x))=\\frac{1}{27}\\cdot 27\\cdot x\n$$\n\n$$\n\\frac{1}{27}\\cdot 27\\cdot x=x\n$$\n\nThe two stages cancel. Reporting after calibration returns the original reading, so the statement is True.",
-      "**B.** → True\n\nThe composition $g\\circ f$ is already $x^{1}$. The product of the two exponents is\n\n$$\n\\frac{2}{3}\\cdot\\frac{3}{2}=1\n$$\n\nand the coefficients cancel to $1$. That is a power function with exponent $1$, so the statement is True.",
-      "**C.** → True\n\nCalibration is $f(x)=9x^{\\frac{2}{3}}$. At raw reading $125$:\n\n$$\nf(125)=9\\cdot 125^{\\frac{2}{3}}\n$$\n\n$$\n125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(5^{3})^{\\frac{2}{3}}=5^{2}\n$$\n\n$$\n5^{2}=25\n$$\n\n$$\nf(125)=9\\cdot 25\n$$\n\n$$\n9\\cdot 25=225\n$$\n\nReporting then sends that index back:\n\n$$\ng(225)=\\frac{225^{\\frac{3}{2}}}{27}\n$$\n\n$$\n225^{\\frac{3}{2}}=(15^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(15^{2})^{\\frac{3}{2}}=15^{3}\n$$\n\n$$\n15^{3}=3375\n$$\n\n$$\ng(225)=\\frac{3375}{27}\n$$\n\n$$\n\\frac{3375}{27}=125\n$$\n\nThe two stages produce index $225$ and then return raw reading $125$, so the statement is True.",
-      "**D.** → False\n\nThe same maps give $f(g(y))$ as well. Compose calibration after reporting:\n\n$$\nf(g(y))=9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}}\n$$\n\n$$\nf(g(y))=9\\cdot\\frac{\\bigl(y^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}}{27^{\\frac{2}{3}}}\n$$\n\n$$\n\\bigl(y^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}=y^{\\frac{3}{2}\\cdot\\frac{2}{3}}\n$$\n\n$$\ny^{\\frac{3}{2}\\cdot\\frac{2}{3}}=y^{1}\n$$\n\n$$\n27^{\\frac{2}{3}}=(3^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(3^{3})^{\\frac{2}{3}}=3^{2}\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\nf(g(y))=9\\cdot\\frac{y}{9}\n$$\n\n$$\n9\\cdot\\frac{y}{9}=y\n$$\n\nEach map is the two-sided inverse of the other on $y>0$. Applying reporting first and calibration second returns the original index, so the statement is False.",
-      "**E.** → False\n\nThe recovered calibration is $f(x)=9x^{\\frac{2}{3}}$. At raw reading $64$:\n\n$$\nf(64)=9\\cdot 64^{\\frac{2}{3}}\n$$\n\n$$\n64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(4^{3})^{\\frac{2}{3}}=4^{2}\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\nf(64)=9\\cdot 16\n$$\n\n$$\n9\\cdot 16=144\n$$\n\nThe claimed $108$ is $9\\cdot 12$, as though $64^{\\frac{2}{3}}$ were $12$ rather than $16$. The index sent out is $144$, so the statement is False."
+      "**A.** → True\n\nThe recorded pair gives $A=9$, so calibration is $f(x)=9x^{\\frac{2}{3}}$. Reporting after it is the composition $g(f(x))$:\n\n$$\ng(f(x))=\\frac{1}{27}\\bigl(9x^{\\frac{2}{3}}\\bigr)^{\\frac{3}{2}}\n$$\n\n$$\ng(f(x))=\\frac{1}{27}\\cdot 9^{\\frac{3}{2}}\\cdot\\bigl(x^{\\frac{2}{3}}\\bigr)^{\\frac{3}{2}}\n$$\n\n$$\n\\bigl(x^{\\frac{2}{3}}\\bigr)^{\\frac{3}{2}}=x^{\\frac{2}{3}\\cdot\\frac{3}{2}}\n$$\n\n$$\nx^{\\frac{2}{3}\\cdot\\frac{3}{2}}=x^{1}\n$$\n\nThe exponents multiply to $1$, so the powers cancel to the identity in $x$. The coefficients cancel the same way:\n\n$$\n9^{\\frac{3}{2}}=(9^{\\frac{1}{2}})^{3}\n$$\n\n$$\n(9^{\\frac{1}{2}})^{3}=3^{3}\n$$\n\n$$\n3^{3}=27\n$$\n\n$$\ng(f(x))=\\frac{1}{27}\\cdot 27\\cdot x\n$$\n\n$$\ng(f(x))=x\n$$\n\nThe two stages cancel. Reporting after calibration returns the original reading, so the statement is True.",
+      "**B.** → False\n\nThe composition is already $g(f(x))=x$, which is the power $x^{1}$. Growing more slowly than the raw reading would need a composed exponent below $1$. Here the product of the two stage exponents is\n\n$$\n\\frac{2}{3}\\cdot\\frac{3}{2}=1\n$$\n\nAn exponent of $1$ means the composed map moves in lockstep with the reading, not more slowly. The leftover exponent is not smaller than one, so the statement is False.",
+      "**C.** → False\n\nThe same maps give $f(g(y))$ as well. Compose calibration after reporting:\n\n$$\nf(g(y))=9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}}\n$$\n\n$$\nf(g(y))=9\\cdot\\frac{\\bigl(y^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}}{27^{\\frac{2}{3}}}\n$$\n\n$$\n\\bigl(y^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}=y^{\\frac{3}{2}\\cdot\\frac{2}{3}}\n$$\n\n$$\ny^{\\frac{3}{2}\\cdot\\frac{2}{3}}=y^{1}\n$$\n\n$$\n27^{\\frac{2}{3}}=(3^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(3^{3})^{\\frac{2}{3}}=3^{2}\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\nf(g(y))=9\\cdot\\frac{y}{9}\n$$\n\n$$\nf(g(y))=y\n$$\n\nEach map is the two-sided inverse of the other on $y>0$. Applying reporting first and calibration second returns the original index, so the statement is False.",
+      "**D.** → True\n\nThe recovered calibration is $f(x)=9x^{\\frac{2}{3}}$. At raw reading $64$:\n\n$$\nf(64)=9\\cdot 64^{\\frac{2}{3}}\n$$\n\n$$\n64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(4^{3})^{\\frac{2}{3}}=4^{2}\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\nf(64)=9\\cdot 16\n$$\n\n$$\nf(64)=144\n$$\n\n$$\n144>140\n$$\n\nThe index sent out is $144$, which is above $140$, so the statement is True.",
+      "**E.** → False\n\nCalibration is $f(x)=9x^{\\frac{2}{3}}$. At raw reading $125$:\n\n$$\nf(125)=9\\cdot 125^{\\frac{2}{3}}\n$$\n\n$$\n125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(5^{3})^{\\frac{2}{3}}=5^{2}\n$$\n\n$$\n5^{2}=25\n$$\n\n$$\nf(125)=9\\cdot 25\n$$\n\n$$\nf(125)=225\n$$\n\n$$\n225>200\n$$\n\nThe index sent out is $225$, which is not under $200$, so the statement is False."
     ],
     "difficulty_level": "3/5",
     "sort_order": 35,
@@ -125,19 +155,25 @@
     "title": "Two Ranking Algorithms That Swap Places",
     "context": "Two ranking algorithms are scored against a query load $x>0$. Algorithm S obeys $S(x)=a x^{\\frac{1}{2}}$, and a benchmark at load $4$ scored $16$. Algorithm T is proportional to $x^{\\frac{3}{2}}$, and the same benchmark scored $8$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The two algorithms score equally at a load of $8$.",
       "The two algorithms score equally at two different positive loads.",
       "Once algorithm T is ahead, raising the load further cannot put S back in front.",
-      "At a load of $16$, algorithm T is ahead by more than $30$.",
-      "The ratio of the two scores is the same at every load."
+      "The ratio of the two scores is the same at every load.",
+      "The two algorithms first meet at a load above $6$.",
+      "At a load of $16$, algorithm T is ahead by more than $30$."
     ],
-    "answer_key": [true, false, true, true, false],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe shared benchmark gives $S(x)=8x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. At load $8$:\n\n$$\nS(8)=8\\cdot 8^{\\frac{1}{2}}\n$$\n\n$$\n8\\cdot 8^{\\frac{1}{2}}=8^{\\frac{3}{2}}\n$$\n\n$$\nT(8)=8^{\\frac{3}{2}}\n$$\n\nThe two scores agree at load $8$, so the statement is True.",
-      "**B.** → False\n\nThe recovered laws are $S(x)=8x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. Set them equal on $x>0$:\n\n$$\n8x^{\\frac{1}{2}}=x^{\\frac{3}{2}}\n$$\n\n$$\n8=x^{\\frac{3}{2}-\\frac{1}{2}}\n$$\n\n$$\n8=x^{1}\n$$\n\n$$\nx=8\n$$\n\nDividing by $x^{\\frac{1}{2}}$ is legal and loses no solution, since $x=0$ is outside the domain. On $x>0$ that is a single root. Two different positive loads would require two roots, so the statement is False.",
-      "**C.** → True\n\nThose laws give the ratio\n\n$$\n\\frac{T(x)}{S(x)}=\\frac{x^{\\frac{3}{2}}}{8x^{\\frac{1}{2}}}\n$$\n\n$$\n\\frac{T(x)}{S(x)}=\\frac{x}{8}\n$$\n\nThat ratio exceeds $1$ precisely when $x>8$, and it keeps growing, so $T$ stays ahead on the whole ray $x>8$. Once T is ahead, S cannot catch it, so the statement is True.",
-      "**D.** → True\n\nThe recovered laws are $S(x)=8x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. At load $16$:\n\n$$\nS(16)=8\\cdot 16^{\\frac{1}{2}}\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\nS(16)=32\n$$\n\n$$\nT(16)=16^{\\frac{3}{2}}\n$$\n\n$$\n16^{\\frac{3}{2}}=(4^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(4^{2})^{\\frac{3}{2}}=4^{3}\n$$\n\n$$\n4^{3}=64\n$$\n\n$$\nT(16)-S(16)=64-32\n$$\n\n$$\n64-32=32\n$$\n\n$$\n32>30\n$$\n\nAlgorithm T is ahead by $32$, so the statement is True.",
-      "**E.** → False\n\nThe score ratio is $\\frac{T(x)}{S(x)}=\\frac{x}{8}$. That quantity is not the same at every load:\n\n$$\n\\frac{T(4)}{S(4)}=\\frac{1}{2}\n$$\n\n$$\n\\frac{T(8)}{S(8)}=1\n$$\n\n$$\n\\frac{T(16)}{S(16)}=2\n$$\n\nThe exponents $\\frac{1}{2}$ and $\\frac{3}{2}$ differ, so the ratio grows with load. The ratio is not constant, so the statement is False."
+      "**A.** → False\n\nThe shared benchmark gives $S(x)=8x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. Set them equal on $x>0$:\n\n$$\n8x^{\\frac{1}{2}}=x^{\\frac{3}{2}}\n$$\n\n$$\n8=x^{\\frac{3}{2}-\\frac{1}{2}}\n$$\n\n$$\n8=x^{1}\n$$\n\n$$\nx=8\n$$\n\nDividing by $x^{\\frac{1}{2}}$ is legal and loses no solution, since $x=0$ is outside the domain. On $x>0$ that is a single root. Two different positive loads would require two roots, so the statement is False.",
+      "**B.** → True\n\nThose laws give the ratio\n\n$$\n\\frac{T(x)}{S(x)}=\\frac{x^{\\frac{3}{2}}}{8x^{\\frac{1}{2}}}\n$$\n\n$$\n\\frac{T(x)}{S(x)}=\\frac{x}{8}\n$$\n\nThat ratio exceeds $1$ precisely when $x>8$, and it keeps growing, so $T$ stays ahead on the whole ray $x>8$. Once T is ahead, S cannot catch it, so the statement is True.",
+      "**C.** → False\n\nThe score ratio is $\\frac{T(x)}{S(x)}=\\frac{x}{8}$. That quantity is not the same at every load:\n\n$$\n\\frac{T(4)}{S(4)}=\\frac{1}{2}\n$$\n\n$$\n\\frac{T(8)}{S(8)}=1\n$$\n\n$$\n\\frac{T(16)}{S(16)}=2\n$$\n\nThe exponents $\\frac{1}{2}$ and $\\frac{3}{2}$ differ, so the ratio grows with load. The ratio is not constant, so the statement is False.",
+      "**D.** → True\n\nThe scores meet at the unique positive load $x=8$. Compare that crossing with the claimed threshold:\n\n$$\n8>6\n$$\n\nThe first meeting sits at load $8$, which is above $6$, so the statement is True.",
+      "**E.** → True\n\nThe recovered laws are $S(x)=8x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. At load $16$:\n\n$$\nS(16)=8\\cdot 16^{\\frac{1}{2}}\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\nS(16)=32\n$$\n\n$$\nT(16)=16^{\\frac{3}{2}}\n$$\n\n$$\n16^{\\frac{3}{2}}=(4^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(4^{2})^{\\frac{3}{2}}=4^{3}\n$$\n\n$$\n4^{3}=64\n$$\n\n$$\nT(16)-S(16)=64-32\n$$\n\n$$\n64-32=32\n$$\n\n$$\n32>30\n$$\n\nAlgorithm T is ahead by $32$, so the statement is True."
     ],
     "difficulty_level": "3/5",
     "sort_order": 36,
@@ -150,18 +186,24 @@
     "context": "A hosting platform's sustained capacity follows $C(m)=A m^{\\frac{4}{5}}$ requests per second for $m>0$ machines. A fleet of $32$ machines sustains $80$ requests per second. The support contract will not certify more than $500$ requests per second. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Sustained capacity itself keeps rising as machines are added.",
-      "The contracted ceiling of $500$ binds from about $250$ machines.",
       "Because the exponent is below $1$, the contracted ceiling is never reached.",
+      "On log-log paper the uncapped capacity law is a straight line.",
       "A fleet of $243$ machines sustains more than $400$ requests per second.",
-      "On log-log paper the uncapped capacity law is a straight line."
+      "The contracted ceiling binds before $250$ machines."
     ],
-    "answer_key": [true, false, false, true, true],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
     "tactical_explanations": [
       "**A.** → True\n\nWhether $C(m)$ rises is the sign of its exponent. The exponent $\\frac{4}{5}$ is positive, so $C$ is strictly increasing on $m>0$ even though it grows more slowly than the fleet. The contract may refuse to certify values above $500$, but the sustained-capacity law itself keeps rising. Sustained capacity increases with the fleet, so the statement is True.",
-      "**B.** → False\n\nThe $32$-machine run gives $A=5$, so $C(m)=5m^{\\frac{4}{5}}$. Set capacity equal to the contract:\n\n$$\n5m^{\\frac{4}{5}}=500\n$$\n\n$$\nm^{\\frac{4}{5}}=100\n$$\n\n$$\nm=100^{\\frac{5}{4}}\n$$\n\n$$\n100=10^{2}\n$$\n\n$$\nm=(10^{2})^{\\frac{5}{4}}\n$$\n\n$$\n(10^{2})^{\\frac{5}{4}}=10^{\\frac{5}{2}}\n$$\n\n$$\n10^{\\frac{5}{2}}=100\\sqrt{10}\n$$\n\n$$\n100\\sqrt{10}\\approx 316.2\n$$\n\nAt the claimed $250$ machines the law is still below the ceiling:\n\n$$\nC(250)=5\\cdot 250^{\\frac{4}{5}}\\approx 414\n$$\n\n$$\n414<500\n$$\n\nThe ceiling binds near $316$ machines, not $250$, so the statement is False.",
-      "**C.** → False\n\nAn exponent below $1$ slows growth, it does not stop it. The ceiling is already reached near $316$ machines. A larger exact fleet sits past that crossing:\n\n$$\nC(1024)=5\\cdot 1024^{\\frac{4}{5}}\n$$\n\n$$\n1024=2^{10}\n$$\n\n$$\n1024^{\\frac{4}{5}}=(2^{10})^{\\frac{4}{5}}\n$$\n\n$$\n(2^{10})^{\\frac{4}{5}}=2^{8}\n$$\n\n$$\n2^{8}=256\n$$\n\n$$\nC(1024)=5\\cdot 256\n$$\n\n$$\n5\\cdot 256=1280\n$$\n\n$1280$ is already over the contract. The ceiling is crossed at a finite fleet, so the statement is False.",
-      "**D.** → True\n\nThe recovered law is $C(m)=5m^{\\frac{4}{5}}$. A fleet of $243$ is $3^{5}$, so the exponent $\\frac{4}{5}$ resolves exactly:\n\n$$\n243^{\\frac{4}{5}}=(3^{5})^{\\frac{4}{5}}\n$$\n\n$$\n(3^{5})^{\\frac{4}{5}}=3^{4}\n$$\n\n$$\n3^{4}=81\n$$\n\n$$\nC(243)=5\\cdot 81\n$$\n\n$$\n5\\cdot 81=405\n$$\n\n$$\n405>400\n$$\n\nCapacity is $405$ requests per second, so the statement is True.",
-      "**E.** → True\n\nA power law is linear after taking logs of both sides. The uncapped law is $C=5m^{\\frac{4}{5}}$:\n\n$$\n\\ln C=\\ln\\bigl(5m^{\\frac{4}{5}}\\bigr)\n$$\n\n$$\n\\ln C=\\ln 5+\\frac{4}{5}\\ln m\n$$\n\nThat is a straight line in $(\\ln m,\\ln C)$ with slope $\\frac{4}{5}$ and intercept $\\ln 5$. The contract's cap would flatten certified capacity, but the statement is about the uncapped law. The log-log plot of $C(m)$ is a straight line, so the statement is True."
+      "**B.** → False\n\nAn exponent below $1$ slows growth, it does not stop it. The $32$-machine run gives $A=5$, so $C(m)=5m^{\\frac{4}{5}}$. The ceiling is already reached at a finite fleet:\n\n$$\n5m^{\\frac{4}{5}}=500\n$$\n\n$$\nm^{\\frac{4}{5}}=100\n$$\n\n$$\nm=100^{\\frac{5}{4}}\n$$\n\n$$\nm=100\\sqrt{10}\n$$\n\n$$\n100\\sqrt{10}\\approx 316.2\n$$\n\nA larger exact fleet sits past that crossing:\n\n$$\nC(1024)=5\\cdot 1024^{\\frac{4}{5}}\n$$\n\n$$\n1024=2^{10}\n$$\n\n$$\n1024^{\\frac{4}{5}}=(2^{10})^{\\frac{4}{5}}\n$$\n\n$$\n(2^{10})^{\\frac{4}{5}}=2^{8}\n$$\n\n$$\n2^{8}=256\n$$\n\n$$\nC(1024)=5\\cdot 256\n$$\n\n$$\nC(1024)=1280\n$$\n\n$1280$ is already over the contract. The ceiling is crossed at a finite fleet, so the statement is False.",
+      "**C.** → True\n\nA power law is linear after taking logs of both sides. The uncapped law is $C=5m^{\\frac{4}{5}}$:\n\n$$\n\\ln C=\\ln\\bigl(5m^{\\frac{4}{5}}\\bigr)\n$$\n\n$$\n\\ln C=\\ln 5+\\frac{4}{5}\\ln m\n$$\n\nThat is a straight line in $(\\ln m,\\ln C)$ with slope $\\frac{4}{5}$ and intercept $\\ln 5$. The contract's cap would flatten certified capacity, but the statement is about the uncapped law. The log-log plot of $C(m)$ is a straight line, so the statement is True.",
+      "**D.** → True\n\nThe recovered law is $C(m)=5m^{\\frac{4}{5}}$. A fleet of $243$ is $3^{5}$, so the exponent $\\frac{4}{5}$ resolves exactly:\n\n$$\n243^{\\frac{4}{5}}=(3^{5})^{\\frac{4}{5}}\n$$\n\n$$\n(3^{5})^{\\frac{4}{5}}=3^{4}\n$$\n\n$$\n3^{4}=81\n$$\n\n$$\nC(243)=5\\cdot 81\n$$\n\n$$\nC(243)=405\n$$\n\n$$\n405>400\n$$\n\nCapacity is $405$ requests per second, so the statement is True.",
+      "**E.** → False\n\nThe recovered law is $C(m)=5m^{\\frac{4}{5}}$. Set capacity equal to the contract:\n\n$$\n5m^{\\frac{4}{5}}=500\n$$\n\n$$\nm=100^{\\frac{5}{4}}\n$$\n\n$$\nm=100\\sqrt{10}\n$$\n\n$$\n100\\sqrt{10}\\approx 316.2\n$$\n\nAt the claimed $250$ machines the law is still below the ceiling:\n\n$$\nC(250)=5\\cdot 250^{\\frac{4}{5}}\\approx 414\n$$\n\n$$\n414<500\n$$\n\nThe ceiling binds near $316$ machines, not before $250$, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 37,
@@ -174,18 +216,24 @@
     "context": "A seasonal workshop's revenue follows $R(L)=A L^{\\frac{1}{2}}$ from $L>0$ hours of hired labour. Extending a season from $100$ to $400$ hours raised recorded revenue by $1200$. Labour is paid a wage of $6$ per hour, and the owner judges the season by the net gain $R(L)-6L$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The net gain $R(L)-6L$ is itself a power function of hours hired.",
-      "Net gain is zero at $400$ hours.",
       "The hours that maximise net gain are the same hours at which net gain is zero.",
+      "The wage bill is a power function of hours hired.",
       "At $900$ hours the net gain is below $-1000$.",
-      "The wage bill is a power function of hours hired."
+      "Net gain crosses zero only after more than $300$ hours."
     ],
-    "answer_key": [false, true, false, true, true],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
     "tactical_explanations": [
       "**A.** → False\n\nThe revenue gain gives $A=120$, so $R(L)=120L^{\\frac{1}{2}}$. Net gain subtracts the wage bill:\n\n$$\n\\Pi(L)=120L^{\\frac{1}{2}}-6L\n$$\n\nA power function is a single term $A L^{r}$. This is a difference of two powers with exponents $\\frac{1}{2}$ and $1$. Those exponents are not equal, so the two terms cannot be combined into one monomial. Net gain is not a power function of hours hired, so the statement is False.",
-      "**B.** → True\n\nNet gain is $\\Pi(L)=120L^{\\frac{1}{2}}-6L$. Break-even is where recovered revenue equals the wage bill, on $L>0$:\n\n$$\n120L^{\\frac{1}{2}}-6L=0\n$$\n\n$$\n120L^{\\frac{1}{2}}=6L\n$$\n\n$$\n120=6L^{\\frac{1}{2}}\n$$\n\n$$\nL^{\\frac{1}{2}}=20\n$$\n\n$$\nL=400\n$$\n\nAt $400$ hours both sides equal $2400$, so net gain is zero, so the statement is True.",
-      "**C.** → False\n\nNet gain is $\\Pi(L)=120L^{\\frac{1}{2}}-6L$. The maximiser is where the derivative is zero, which is not the same equation as $\\Pi(L)=0$. Differentiating:\n\n$$\n\\Pi'(L)=120\\cdot\\frac{1}{2}L^{-\\frac{1}{2}}-6\n$$\n\n$$\n\\Pi'(L)=60L^{-\\frac{1}{2}}-6\n$$\n\n$$\n60L^{-\\frac{1}{2}}=6\n$$\n\n$$\nL^{-\\frac{1}{2}}=\\frac{1}{10}\n$$\n\n$$\nL^{\\frac{1}{2}}=10\n$$\n\n$$\nL=100\n$$\n\nAt that staffing, net gain is still positive:\n\n$$\n\\Pi(100)=120\\cdot 10-6\\cdot 100\n$$\n\n$$\n1200-600=600\n$$\n\nNet gain peaks at $100$ hours and only later crosses zero at $400$ hours. The two staffing levels are not the same, so the statement is False.",
+      "**B.** → False\n\nNet gain is $\\Pi(L)=120L^{\\frac{1}{2}}-6L$. The maximiser is where the derivative is zero, which is not the same equation as $\\Pi(L)=0$. Differentiating:\n\n$$\n\\Pi'(L)=120\\cdot\\frac{1}{2}L^{-\\frac{1}{2}}-6\n$$\n\n$$\n\\Pi'(L)=60L^{-\\frac{1}{2}}-6\n$$\n\n$$\n60L^{-\\frac{1}{2}}=6\n$$\n\n$$\nL^{-\\frac{1}{2}}=\\frac{1}{10}\n$$\n\n$$\nL^{\\frac{1}{2}}=10\n$$\n\n$$\nL=100\n$$\n\nAt that staffing, net gain is still positive:\n\n$$\n\\Pi(100)=120\\cdot 10-6\\cdot 100\n$$\n\n$$\n1200-600=600\n$$\n\nNet gain peaks at $100$ hours and only later crosses zero at $400$ hours. The two staffing levels are not the same, so the statement is False.",
+      "**C.** → True\n\nThe wage bill is $6$ times hours hired:\n\n$$\nW(L)=6L\n$$\n\n$$\nW(L)=6L^{1}\n$$\n\nThat is $A L^{r}$ with coefficient $A=6$ and exponent $r=1$. A linear law is the power-function case of exponent $1$. The wage bill is a power function of hours hired, so the statement is True.",
       "**D.** → True\n\nThe recovered revenue is $R(L)=120L^{\\frac{1}{2}}$. At $900$ hours:\n\n$$\n900^{\\frac{1}{2}}=30\n$$\n\n$$\nR(900)=120\\cdot 30\n$$\n\n$$\n120\\cdot 30=3600\n$$\n\n$$\n6\\cdot 900=5400\n$$\n\n$$\n\\Pi(900)=3600-5400\n$$\n\n$$\n3600-5400=-1800\n$$\n\n$$\n-1800<-1000\n$$\n\nSquare-root revenue cannot keep pace with a linear wage once hours are large. The net gain is $-1800$, so the statement is True.",
-      "**E.** → True\n\nThe wage bill is $6$ times hours hired:\n\n$$\nW(L)=6L\n$$\n\n$$\nW(L)=6L^{1}\n$$\n\nThat is $A L^{r}$ with coefficient $A=6$ and exponent $r=1$. A linear law is the power-function case of exponent $1$. The wage bill is a power function of hours hired, so the statement is True."
+      "**E.** → True\n\nNet gain is $\\Pi(L)=120L^{\\frac{1}{2}}-6L$. Break-even on $L>0$ is where recovered revenue equals the wage bill:\n\n$$\n120L^{\\frac{1}{2}}-6L=0\n$$\n\n$$\n120L^{\\frac{1}{2}}=6L\n$$\n\n$$\n120=6L^{\\frac{1}{2}}\n$$\n\n$$\nL^{\\frac{1}{2}}=20\n$$\n\n$$\nL=400\n$$\n\n$$\n400>300\n$$\n\nOn $L>0$ that is the only root, and $400$ sits past $300$. Net gain crosses zero only after more than $300$ hours, so the statement is True."
     ],
     "difficulty_level": "3/5",
     "sort_order": 38,
@@ -197,19 +245,25 @@
     "title": "Splitting an Order Between Two Quadratic-Cost Plants",
     "context": "A firm must produce $60$ units and can split them between two plants. Plant 1's cost is $C_1(q)=A q^{2}$: a run of $20$ units there cost $200$. Plant 2's cost is $C_2(q)=k q^{2}$: a run of $40$ units there cost $400$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Concentrating all $60$ units in the cheaper plant costs $900$.",
       "The cheapest way to fill the order is to send every unit to one plant.",
       "Whatever split is chosen, the two plants together still follow a single power of the $60$-unit order.",
-      "The $20$-$40$ split costs $600$.",
-      "Plant 2's cost per unit does not depend on how much it produces."
+      "Plant 2's cost per unit rises as it produces more.",
+      "Concentrating all $60$ units in the cheaper plant still costs more than $800$.",
+      "Sending $30$ units to each plant already costs under $700$."
     ],
-    "answer_key": [true, false, false, true, false],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recorded runs give $C_1(q)=\\frac{1}{2}q^{2}$ and $C_2(q)=\\frac{1}{4}q^{2}$. Plant 2 is cheaper for any given output. Concentrating the $60$-unit order there:\n\n$$\nC_2(60)=\\frac{1}{4}\\cdot 60^{2}\n$$\n\n$$\n60^{2}=3600\n$$\n\n$$\nC_2(60)=\\frac{1}{4}\\cdot 3600\n$$\n\n$$\n\\frac{1}{4}\\cdot 3600=900\n$$\n\nConcentrating in the cheaper plant costs $900$, so the statement is True.",
-      "**B.** → False\n\nConcentrating in the cheaper plant costs $900$. An even split already undercuts that corner:\n\n$$\nC_1(30)=\\frac{1}{2}\\cdot 900\n$$\n\n$$\n\\frac{1}{2}\\cdot 900=450\n$$\n\n$$\nC_2(30)=\\frac{1}{4}\\cdot 900\n$$\n\n$$\n\\frac{1}{4}\\cdot 900=225\n$$\n\n$$\nC_1(30)+C_2(30)=675\n$$\n\n$$\n675<900\n$$\n\nEqualising marginal costs is cheaper still. The derivatives are $C_1'(q)=q$ and $C_2'(q_2)=\\frac{1}{2}q_2$. Setting $q=\\frac{1}{2}q_2$ with $q+q_2=60$ sends $20$ to plant 1 and $40$ to plant 2, which costs $600$. Sending everything to one plant is not cheapest, so the statement is False.",
-      "**C.** → False\n\nTotal cost is $C_1(q)+C_2(60-q)$:\n\n$$\n\\frac{1}{2}q^{2}+\\frac{1}{4}(60-q)^{2}\n$$\n\nThat quadratic in the split $q$ takes different values at different splits: $900$ at a corner, $675$ at an even split, $600$ at the $20$-$40$ split. A function of $60$ alone cannot depend on $q$. The two plants together are not a single power of the order, so the statement is False.",
-      "**D.** → True\n\nA run of $20$ units at plant 1 cost $200$ and a run of $40$ units at plant 2 cost $400$:\n\n$$\n200+400=600\n$$\n\nThose are exactly the two recorded runs, added. The split costs $600$, so the statement is True.",
-      "**E.** → False\n\nPlant 2 costs $C_2(q)=\\frac{1}{4}q^{2}$. Unit cost divides by output, which lowers the exponent from $2$ to $1$:\n\n$$\n\\frac{C_2(q)}{q}=\\frac{1}{4}q\n$$\n\nThat still depends on how much plant 2 produces. At the recorded run it is $10$; at $20$ units it is $5$; at $60$ units it is $15$. A constant unit cost would be a linear total, exponent $1$. Unit cost triples across that range, so the statement is False."
+      "**A.** → False\n\nThe recorded runs give $C_1(q)=\\frac{1}{2}q^{2}$ and $C_2(q)=\\frac{1}{4}q^{2}$. Plant 2 is cheaper for any given output, so concentrating the $60$-unit order there costs\n\n$$\nC_2(60)=\\frac{1}{4}\\cdot 60^{2}\n$$\n\n$$\n60^{2}=3600\n$$\n\n$$\nC_2(60)=\\frac{1}{4}\\cdot 3600\n$$\n\n$$\nC_2(60)=900\n$$\n\nAn even split already undercuts that corner:\n\n$$\nC_1(30)=\\frac{1}{2}\\cdot 900\n$$\n\n$$\nC_1(30)=450\n$$\n\n$$\nC_2(30)=\\frac{1}{4}\\cdot 900\n$$\n\n$$\nC_2(30)=225\n$$\n\n$$\nC_1(30)+C_2(30)=675\n$$\n\n$$\n675<900\n$$\n\nEqualising marginal costs is cheaper still. The derivatives are $C_1'(q)=q$ and $C_2'(q_2)=\\frac{1}{2}q_2$. Setting $q=\\frac{1}{2}q_2$ with $q+q_2=60$ sends $20$ to plant 1 and $40$ to plant 2, which costs $600$. Sending everything to one plant is not cheapest, so the statement is False.",
+      "**B.** → False\n\nTotal cost is $C_1(q)+C_2(60-q)$:\n\n$$\n\\frac{1}{2}q^{2}+\\frac{1}{4}(60-q)^{2}\n$$\n\nThat quadratic in the split $q$ takes different values at different splits: $900$ at a corner, $675$ at an even split, $600$ at the $20$-$40$ split. A function of $60$ alone cannot depend on $q$. The two plants together are not a single power of the order, so the statement is False.",
+      "**C.** → True\n\nPlant 2 costs $C_2(q)=\\frac{1}{4}q^{2}$. Unit cost divides by output, which lowers the exponent from $2$ to $1$:\n\n$$\n\\frac{C_2(q)}{q}=\\frac{1}{4}q\n$$\n\nThe leftover exponent is positive, so unit cost rises with how much plant 2 produces. At the recorded run it is $10$; at $20$ units it is $5$; at $60$ units it is $15$. A constant unit cost would be a linear total, exponent $1$. Unit cost triples across that range, so the statement is True.",
+      "**D.** → True\n\nPlant 2 is the cheaper plant, with $C_2(q)=\\frac{1}{4}q^{2}$. Concentrating the $60$-unit order there:\n\n$$\nC_2(60)=\\frac{1}{4}\\cdot 60^{2}\n$$\n\n$$\n60^{2}=3600\n$$\n\n$$\nC_2(60)=900\n$$\n\n$$\n900>800\n$$\n\nThe corner still costs $900$, which is more than $800$, so the statement is True.",
+      "**E.** → True\n\nAn even split sends $30$ units to each plant:\n\n$$\nC_1(30)=\\frac{1}{2}\\cdot 30^{2}\n$$\n\n$$\n30^{2}=900\n$$\n\n$$\nC_1(30)=450\n$$\n\n$$\nC_2(30)=\\frac{1}{4}\\cdot 900\n$$\n\n$$\nC_2(30)=225\n$$\n\n$$\nC_1(30)+C_2(30)=675\n$$\n\n$$\n675<700\n$$\n\nThe even split costs $675$, which is under $700$, so the statement is True."
     ],
     "difficulty_level": "4/5",
     "sort_order": 39,
@@ -222,18 +276,24 @@
     "context": "A laboratory records four measurements of a response $y$ against an input $x$: $(4,\\,24)$, $(16,\\,192)$, $(9,\\,81)$ and a planned run at $x=25$. An analyst fits a power law $y=A x^{r}$ using the first two measurements only. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The first two measurements are consistent with a single power law.",
-      "The fitted coefficient is $3$.",
+      "The same two measurements would fit an exponent of $2$ equally well.",
       "The measurement at $x=9$ contradicts the fitted law.",
-      "The fitted law predicts $y=300$ at $x=25$.",
-      "The same two measurements would fit an exponent of $2$ equally well."
+      "The fitted law predicts a response above $350$ at $x=25$.",
+      "At $x=9$ the fitted response is already above $70$."
     ],
-    "answer_key": [true, true, false, false, false],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
     "tactical_explanations": [
       "**A.** → True\n\nTwo positive points determine a unique exponent because their ratio cancels $A$:\n\n$$\n\\frac{y(16)}{y(4)}=\\frac{192}{24}\n$$\n\n$$\n\\frac{192}{24}=8\n$$\n\n$$\n\\frac{y(16)}{y(4)}=\\left(\\frac{16}{4}\\right)^{r}\n$$\n\n$$\n8=4^{r}\n$$\n\n$$\n4=2^{2}\n$$\n\n$$\n8=2^{3}\n$$\n\n$$\n(2^{2})^{r}=2^{3}\n$$\n\n$$\n2^{2r}=2^{3}\n$$\n\n$$\n2r=3\n$$\n\n$$\nr=\\frac{3}{2}\n$$\n\nThe same $4^{r}=8$ fits both logged points, so they lie on one power law, so the statement is True.",
-      "**B.** → True\n\nThe ratio already gave $r=\\frac{3}{2}$. The first point then pins the coefficient:\n\n$$\nA\\cdot 4^{\\frac{3}{2}}=24\n$$\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\n8A=24\n$$\n\n$$\nA=3\n$$\n\nThe fitted law is $y=3x^{\\frac{3}{2}}$, so the statement is True.",
-      "**C.** → False\n\nThe fitted law is $y=3x^{\\frac{3}{2}}$. The measurement at $x=9$ was held out of the fit, so it is a test rather than an input:\n\n$$\n9^{\\frac{3}{2}}=(3^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(3^{2})^{\\frac{3}{2}}=3^{3}\n$$\n\n$$\n3^{3}=27\n$$\n\n$$\n3\\cdot 27=81\n$$\n\nThe recorded response at $x=9$ is also $81$. The held-out point sits on the curve, so the statement is False.",
-      "**D.** → False\n\nThe fitted law is $y=3x^{\\frac{3}{2}}$. At $x=25$:\n\n$$\n25^{\\frac{3}{2}}=(5^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(5^{2})^{\\frac{3}{2}}=5^{3}\n$$\n\n$$\n5^{3}=125\n$$\n\n$$\ny=3\\cdot 125\n$$\n\n$$\n3\\cdot 125=375\n$$\n\nThe claimed $300$ is $3\\cdot 100$, as though $25^{\\frac{3}{2}}$ were $100$ rather than $125$. The fitted law predicts $375$, so the statement is False.",
-      "**E.** → False\n\nUniqueness of the exponent is settled by the ratio equation, because $4^{r}$ is strictly increasing in $r$ and can equal $8$ only once.\n\n$$\n4^{r}=8\n$$\n\nForcing the exponent to $2$ misses that ratio:\n\n$$\n4^{2}=16\n$$\n\n$$\n16\\neq 8\n$$\n\nThe two measurements do not fit exponent $2$, so the statement is False."
+      "**B.** → False\n\nUniqueness of the exponent is settled by the ratio equation, because $4^{r}$ is strictly increasing in $r$ and can equal $8$ only once.\n\n$$\n4^{r}=8\n$$\n\nForcing the exponent to $2$ misses that ratio:\n\n$$\n4^{2}=16\n$$\n\n$$\n16\\neq 8\n$$\n\nThe two measurements do not fit exponent $2$, so the statement is False.",
+      "**C.** → False\n\nThe ratio already gave $r=\\frac{3}{2}$. The first point then pins the coefficient:\n\n$$\nA\\cdot 4^{\\frac{3}{2}}=24\n$$\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\n8A=24\n$$\n\n$$\nA=3\n$$\n\nThe fitted law is $y=3x^{\\frac{3}{2}}$. The measurement at $x=9$ was held out of the fit, so it is a test rather than an input:\n\n$$\n9^{\\frac{3}{2}}=(3^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(3^{2})^{\\frac{3}{2}}=3^{3}\n$$\n\n$$\n3^{3}=27\n$$\n\n$$\n3\\cdot 27=81\n$$\n\nThe recorded response at $x=9$ is also $81$. The held-out point sits on the curve, so the statement is False.",
+      "**D.** → True\n\nThe fitted law is $y=3x^{\\frac{3}{2}}$. At $x=25$:\n\n$$\n25^{\\frac{3}{2}}=(5^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(5^{2})^{\\frac{3}{2}}=5^{3}\n$$\n\n$$\n5^{3}=125\n$$\n\n$$\ny=3\\cdot 125\n$$\n\n$$\ny=375\n$$\n\n$$\n375>350\n$$\n\nThe fitted law predicts $375$, which is above $350$, so the statement is True.",
+      "**E.** → True\n\nThe fitted law is $y=3x^{\\frac{3}{2}}$. At $x=9$:\n\n$$\n9^{\\frac{3}{2}}=(3^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(3^{2})^{\\frac{3}{2}}=3^{3}\n$$\n\n$$\n3^{3}=27\n$$\n\n$$\ny=3\\cdot 27\n$$\n\n$$\ny=81\n$$\n\n$$\n81>70\n$$\n\nThe fitted response is $81$, which is already above $70$, so the statement is True."
     ],
     "difficulty_level": "4/5",
     "sort_order": 40,

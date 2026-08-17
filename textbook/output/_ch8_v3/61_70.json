@@ -6,7 +6,7 @@
     "context": "A production weld's tensile strength follows $S(p)=A p^{k}$ newtons, where $p>0$ is the welding current in amperes. Neither constant is on the calibration sheet: the sheet only records that a $4$ A setting produced $40$ N of strength and a $9$ A setting produced $135$ N. The line rejects any weld below $400$ N. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The exponent is larger than one, so strength outruns current.",
-      "At $16$ A the weld strength is $320$ N.",
+      "At $16$ A the weld is already stronger than $300$ N.",
       "If the current keeps growing, strength grows without bound.",
       "An extra ampere adds more strength at $4$ A than it does at $9$ A.",
       "The smallest current that clears the $400$ N reject line is below $18$ A."
@@ -19,8 +19,8 @@
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe two welds give $k=\\frac{3}{2}$. An exponent larger than one means each extra ampere adds more strength than the ampere before it. Three halves is above one, so the statement is True.",
-      "**B.** → True\n\nThe recovered law is $S(p)=5p^{\\frac{3}{2}}$. At sixteen amperes:\n\n$$\n16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}\n$$\n\n$$\n(2^{4})^{\\frac{3}{2}}=2^{6}=64\n$$\n\n$$\nS(16)=5\\cdot 64=320\n$$\n\nThe claimed strength is $320$ N, so the statement is True.",
+      "**A.** → True\n\nThe exponent is $k=\\frac{3}{2}$. An exponent larger than one means strength outruns current: each extra ampere adds more than the ampere before it. Three halves is above one, so the statement is True.",
+      "**B.** → True\n\nStrength is $S(p)=5p^{\\frac{3}{2}}$. At sixteen amperes:\n\n$$\n16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}\n$$\n\n$$\n(2^{4})^{\\frac{3}{2}}=2^{6}=64\n$$\n\n$$\nS(16)=5\\cdot 64=320\n$$\n\nThree hundred and twenty sits above $300$ N, so the statement is True.",
       "**C.** → True\n\nThe law is $5p^{\\frac{3}{2}}$: a positive multiple of a positive power of current. As current grows, that product has no ceiling, so the statement is True.",
       "**D.** → False\n\nAn extra ampere is the derivative of $S(p)=5p^{\\frac{3}{2}}$:\n\n$$\nS'(p)=5\\cdot\\frac{3}{2}p^{\\frac{1}{2}}\n$$\n\n$$\nS'(p)=\\frac{15}{2}p^{\\frac{1}{2}}\n$$\n\n$$\nS'(4)=\\frac{15}{2}\\cdot 2=15\n$$\n\n$$\nS'(9)=\\frac{15}{2}\\cdot 3=\\frac{45}{2}\n$$\n\nThe leftover exponent $\\frac{1}{2}$ is positive, so the slope itself rises with current. Because $15<\\frac{45}{2}$, an extra ampere adds less at $4$ A than at $9$ A, so the statement is False.",
       "**E.** → False\n\nThe reject line is $5p^{\\frac{3}{2}}=400$, so $p=80^{\\frac{2}{3}}$. Four cubed is $64$, so the cube root of $80$ is a little over $4.3$ and the threshold is a little over $18$ A. Directly at $18$ A:\n\n$$\nS(18)=5\\cdot 18^{\\frac{3}{2}}\n$$\n\n$$\n18^{\\frac{3}{2}}=18\\cdot\\sqrt{18}=54\\sqrt{2}\n$$\n\n$$\nS(18)=270\\sqrt{2}\\approx 381.8\n$$\n\nwhich is still below $400$ N. The smallest clearing current is about $18.57$ A, not below $18$ A, so the statement is False."
@@ -36,24 +36,24 @@
     "context": "A harbour buoy's holding power follows $H(m)=A m^{\\frac{2}{3}}$ kilonewtons when mass $m>0$ is measured in kilograms. A trial buoy of $8$ kg held exactly $24$ kN. The harbour authority prefers masses in tonnes ($1$ tonne $=1000$ kg) and writes the same physical law as $H(t)=B t^{\\frac{2}{3}}$ with $t$ in tonnes. A storm protocol demands at least $150$ kN of holding power. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Switching the mass unit from kilograms to tonnes leaves the exponent unchanged.",
-      "A buoy of $125$ kg holds exactly $150$ kN.",
-      "Reaching $150$ kN requires a mass of $125$ tonnes.",
-      "The tonne-form coefficient is $1000$ times the kilogram coefficient.",
-      "Doubling buoy mass doubles holding power."
+      "A $125$ kg buoy already holds more than $140$ kN.",
+      "Doubling buoy mass doubles holding power.",
+      "The mass needed for a given holding power is itself a power of that holding power.",
+      "Reaching $150$ kN takes more than $1$ tonne."
     ],
     "answer_key": [
       true,
       true,
       false,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
       "**A.** → True\n\nA change of mass unit is the substitution $m=1000t$:\n\n$$\nH=A(1000t)^{\\frac{2}{3}}\n$$\n\n$$\n(1000t)^{\\frac{2}{3}}=1000^{\\frac{2}{3}}t^{\\frac{2}{3}}\n$$\n\n$$\nH=A\\cdot 1000^{\\frac{2}{3}}t^{\\frac{2}{3}}\n$$\n\nThe conversion is absorbed into the new coefficient $B=A\\cdot 1000^{\\frac{2}{3}}$. The power of mass is still $\\frac{2}{3}$, so the statement is True.",
-      "**B.** → True\n\nThe kilogram law is $H(m)=6m^{\\frac{2}{3}}$. At $125$ kg:\n\n$$\n125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}=5^{2}=25\n$$\n\n$$\nH(125)=6\\cdot 25=150\n$$\n\nA $125$ kg buoy holds $150$ kN, so the statement is True.",
-      "**C.** → False\n\nThat $125$ kg is $0.125$ tonnes, not $125$ tonnes. A $125$ tonne buoy would hold $600\\cdot 25=15000$ kN, a hundred times the protocol. The storm mass is $125$ kg, so the statement is False.",
-      "**D.** → False\n\nSubstituting $m=1000t$ puts $1000$ under the exponent $\\frac{2}{3}$:\n\n$$\nB=6\\cdot 1000^{\\frac{2}{3}}\n$$\n\n$$\n1000^{\\frac{2}{3}}=(10^{3})^{\\frac{2}{3}}=10^{2}=100\n$$\n\n$$\nB=600\n$$\n\nThe ratio $\\frac{B}{A}$ is $100$, not $1000$. A factor of $1000$ would need exponent $1$, so the statement is False.",
-      "**E.** → False\n\nDoubling mass multiplies holding power by $2^{\\frac{2}{3}}$:\n\n$$\n\\frac{H(2m)}{H(m)}=2^{\\frac{2}{3}}\\approx 1.587\n$$\n\nAn exact doubling would need exponent $1$, which would give the factor $2$. Holding power rises, but not in lockstep with mass, so the statement is False."
+      "**B.** → True\n\nThe kilogram law is $H(m)=6m^{\\frac{2}{3}}$. At $125$ kg:\n\n$$\n125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}=5^{2}=25\n$$\n\n$$\nH(125)=6\\cdot 25=150\n$$\n\nOne hundred and fifty sits above $140$ kN, so the statement is True.",
+      "**C.** → False\n\nDoubling mass multiplies holding power by $2^{\\frac{2}{3}}$:\n\n$$\n\\frac{H(2m)}{H(m)}=2^{\\frac{2}{3}}\\approx 1.587\n$$\n\nAn exact doubling would need exponent $1$, which would give the factor $2$. Holding power rises, but not in lockstep with mass, so the statement is False.",
+      "**D.** → True\n\nA power with a nonzero exponent inverts to another power. From $H=6m^{\\frac{2}{3}}$ one gets\n\n$$\n\\frac{H}{6}=m^{\\frac{2}{3}}\n$$\n\n$$\nm=\\left(\\frac{H}{6}\\right)^{\\frac{3}{2}}\n$$\n\nMass is a three-halves power of holding power, so the statement is True.",
+      "**E.** → False\n\nThe storm floor in tonnes is $H(t)=600t^{\\frac{2}{3}}$:\n\n$$\n600t^{\\frac{2}{3}}=150\n$$\n\n$$\nt^{\\frac{2}{3}}=\\frac{1}{4}\n$$\n\n$$\nt=\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=\\frac{1}{8}=0.125\n$$\n\nThat is $125$ kg, well under one tonne. The storm mass is $0.125$ tonnes, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 62,
@@ -66,7 +66,7 @@
     "context": "A wireless mesh's sustained throughput follows $T(d)=A d^{-2}$ megabits per second, where $d>0$ is the hop distance in metres. A bench test at $d=4$ m recorded $T=50$ Mbps. The link is rated reliable only while throughput stays at or above $8$ Mbps. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "The hop distance needed for a given throughput is itself a power function of that throughput.",
-      "The farthest reliable hop distance is exactly $10$ m.",
+      "The farthest reliable hop distance is already under $12$ m.",
       "Doubling the hop distance halves the throughput.",
       "A hop of $11$ m still clears the $8$ Mbps reliability floor.",
       "If the hops keep growing, throughput eventually becomes negative."
@@ -80,7 +80,7 @@
     ],
     "tactical_explanations": [
       "**A.** → True\n\nA power with a nonzero exponent inverts to another power. From $T=\\frac{800}{d^{2}}$ one gets\n\n$$\nd^{2}=\\frac{800}{T}\n$$\n\n$$\nd=\\sqrt{800}\\, T^{-\\frac{1}{2}}\n$$\n\nDistance is a power of throughput with exponent $-\\frac{1}{2}$, so the statement is True.",
-      "**B.** → True\n\nThe $8$ Mbps floor is\n\n$$\n\\frac{800}{d^{2}}=8\n$$\n\n$$\nd^{2}=100\n$$\n\n$$\nd=10\n$$\n\nBecause the exponent is negative, every longer hop falls below $8$ Mbps. The farthest reliable hop is exactly $10$ m, so the statement is True.",
+      "**B.** → True\n\nThe $8$ Mbps floor is\n\n$$\n\\frac{800}{d^{2}}=8\n$$\n\n$$\nd^{2}=100\n$$\n\n$$\nd=10\n$$\n\nBecause the exponent is negative, every longer hop falls below $8$ Mbps. Ten metres already sits under $12$ m, so the statement is True.",
       "**C.** → False\n\nDoubling the hop multiplies throughput by $2^{-2}$:\n\n$$\n\\frac{T(2d)}{T(d)}=2^{-2}=\\frac{1}{4}\n$$\n\nA cut to one half would need exponent $-1$, which would give $2^{-1}=\\frac{1}{2}$. An inverse-square law quarters the reading when distance doubles, so the statement is False.",
       "**D.** → False\n\nAt $11$ m:\n\n$$\nT(11)=\\frac{800}{121}\\approx 6.61\n$$\n\nwhich is already below $8$ Mbps. The $10$ m floor sits at exactly $8$ Mbps, and a longer hop can only be slower, so the statement is False.",
       "**E.** → False\n\nThe numerator $800$ is positive, so every hop $d>0$ keeps $T>0$. As hops grow, throughput falls toward $0$ from above and never crosses it, so the statement is False."
@@ -95,25 +95,25 @@
     "title": "Allometric Gill Area Across Body Masses",
     "context": "A fish physiologist models gill surface area as $G(m)=A m^{\\frac{3}{4}}$ square centimetres for body mass $m>0$ grams. A $256$ g specimen has gill area $512$ cm$^{2}$. Area per gram is the derived intensity $\\frac{G(m)}{m}$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Two $16$ g fish together have the same total gill area as one $32$ g fish.",
-      "At $16$ g the gill area is $64$ cm$^{2}$.",
-      "Gill area per gram is constant across body masses.",
       "The exponent is smaller than one, so gill area grows more slowly than body mass.",
-      "The mass that produces $216$ cm$^{2}$ of gill area is $64$ g."
+      "A $16$ g fish already has more than $50$ cm$^{2}$ of gill.",
+      "Gill area per gram is constant across body masses.",
+      "Doubling body mass doubles gill area.",
+      "A $64$ g fish already has more than $200$ cm$^{2}$ of gill."
     ],
     "answer_key": [
-      false,
+      true,
       true,
       false,
-      true,
+      false,
       false
     ],
     "tactical_explanations": [
-      "**A.** → False\n\nThe recovered law is $G(m)=8m^{\\frac{3}{4}}$. Two $16$ g fish:\n\n$$\n16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}=2^{3}=8\n$$\n\n$$\nG(16)=8\\cdot 8=64\n$$\n\n$$\n2G(16)=128\n$$\n\nOne $32$ g fish:\n\n$$\n32^{\\frac{3}{4}}=(2^{5})^{\\frac{3}{4}}=2^{\\frac{15}{4}}=8\\cdot 2^{\\frac{3}{4}}\n$$\n\n$$\nG(32)=64\\cdot 2^{\\frac{3}{4}}\\approx 107.63\n$$\n\nThe pair carries more total gill than one $32$ g fish, so the statement is False.",
-      "**B.** → True\n\nThe $16$ g fish already came out at $64$ cm$^{2}$ of gill. That is the claimed area, so the statement is True.",
+      "**A.** → True\n\nThe allometric exponent is already $\\frac{3}{4}$. If mass scales by $c>1$, area scales by $c^{\\frac{3}{4}}$, and $\\frac{3}{4}<1$ forces $c^{\\frac{3}{4}}<c$. Each extra gram of body adds less gill than the gram before it, so the statement is True.",
+      "**B.** → True\n\nGill area is $G(m)=8m^{\\frac{3}{4}}$. At sixteen grams:\n\n$$\n16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}=2^{3}=8\n$$\n\n$$\nG(16)=8\\cdot 8=64\n$$\n\nSixty-four sits above $50$ cm$^{2}$, so the statement is True.",
       "**C.** → False\n\nArea per gram subtracts $1$ from the exponent:\n\n$$\n\\frac{G(m)}{m}=8m^{\\frac{3}{4}-1}\n$$\n\n$$\n\\frac{G(m)}{m}=8m^{-\\frac{1}{4}}\n$$\n\nThe leftover exponent is negative, so intensity falls as mass grows. A constant intensity would need exponent $0$, so the statement is False.",
-      "**D.** → True\n\nThe allometric exponent is already $\\frac{3}{4}$. If mass scales by $c>1$, area scales by $c^{\\frac{3}{4}}$, and $\\frac{3}{4}<1$ forces $c^{\\frac{3}{4}}<c$. Each extra gram of body adds less gill than the gram before it, so the statement is True.",
-      "**E.** → False\n\nA target of $216$ cm$^{2}$ inverts as\n\n$$\n8m^{\\frac{3}{4}}=216\n$$\n\n$$\nm^{\\frac{3}{4}}=27\n$$\n\n$$\nm=27^{\\frac{4}{3}}=81\n$$\n\nThe claimed $64$ g produces $128\\sqrt{2}\\approx 181$ cm$^{2}$, short of $216$. The mass that produces $216$ cm$^{2}$ is $81$ g, so the statement is False."
+      "**D.** → False\n\nDoubling mass would double gill area only if the exponent were $1$. With exponent $\\frac{3}{4}$ the scale factor is\n\n$$\n\\frac{G(2m)}{G(m)}=2^{\\frac{3}{4}}\\approx 1.682\n$$\n\nnot $2$. Area rises, but not in lockstep with mass, so the statement is False.",
+      "**E.** → False\n\nAt sixty-four grams:\n\n$$\n64^{\\frac{3}{4}}=(2^{6})^{\\frac{3}{4}}=2^{\\frac{9}{2}}=16\\sqrt{2}\n$$\n\n$$\nG(64)=8\\cdot 16\\sqrt{2}=128\\sqrt{2}\\approx 181\n$$\n\nAbout $181$ cm$^{2}$ sits short of $200$, so the statement is False."
     ],
     "difficulty_level": "5/5",
     "sort_order": 64,
@@ -126,9 +126,9 @@
     "context": "A concrete lab models early curing strength as $S(t)=A\\sqrt{t}$ megapascals, where $t>0$ is curing time in days. The log never states $A$: it only notes that strength rose by exactly $5$ MPa between day $4$ and day $9$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Quadrupling curing time exactly doubles strength.",
-      "Strength on day $4$ is $10$ MPa.",
+      "Strength on day $4$ is already above $8$ MPa.",
       "An extra day adds more strength after nine days of curing than it does after four.",
-      "Reaching $30$ MPa requires exactly $36$ days of curing.",
+      "Reaching $30$ MPa still takes under $40$ days of curing.",
       "The recorded $5$ MPa is the strength on day $9$."
     ],
     "answer_key": [
@@ -140,9 +140,9 @@
     ],
     "tactical_explanations": [
       "**A.** → True\n\nQuadrupling time multiplies strength by $\\sqrt{4}$, and the coefficient cancels:\n\n$$\n\\frac{S(4t)}{S(t)}=\\sqrt{4}=2\n$$\n\nThe multiplier is exactly $2$ at every starting day. Quadrupling curing time doubles strength, so the statement is True.",
-      "**B.** → True\n\nThe law is $S(t)=5\\sqrt{t}$. Day $4$ is $5\\cdot 2=10$ MPa. The companion $15-10=5$ recovers the logged gap. Strength on day $4$ is $10$ MPa, so the statement is True.",
+      "**B.** → True\n\nThe law is $S(t)=5\\sqrt{t}$. Day $4$ is $5\\cdot 2=10$ MPa. Ten sits above $8$ MPa, and the companion $15-10=5$ recovers the logged gap, so the statement is True.",
       "**C.** → False\n\nAn extra day is the derivative of $S(t)=5\\sqrt{t}$:\n\n$$\nS'(t)=\\frac{5}{2}t^{-\\frac{1}{2}}\n$$\n\n$$\nS'(4)=\\frac{5}{2}\\cdot\\frac{1}{2}=\\frac{5}{4}\n$$\n\n$$\nS'(9)=\\frac{5}{2}\\cdot\\frac{1}{3}=\\frac{5}{6}\n$$\n\nBecause $\\frac{5}{4}>\\frac{5}{6}$, the extra day adds more after four days than after nine, so the statement is False.",
-      "**D.** → True\n\nReaching $30$ MPa:\n\n$$\n5\\sqrt{t}=30\n$$\n\n$$\n\\sqrt{t}=6\n$$\n\n$$\nt=36\n$$\n\nForward check: $5\\cdot 6=30$. Reaching $30$ MPa takes exactly $36$ days, so the statement is True.",
+      "**D.** → True\n\nReaching $30$ MPa:\n\n$$\n5\\sqrt{t}=30\n$$\n\n$$\n\\sqrt{t}=6\n$$\n\n$$\nt=36\n$$\n\nForward check: $5\\cdot 6=30$. Thirty-six days already sit under $40$, so the statement is True.",
       "**E.** → False\n\nDay $9$ carries $5\\cdot 3=15$ MPa. The logged figure is the difference $15-10=5$, a gap, not the day-$9$ level, so the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -155,25 +155,25 @@
     "title": "Cantilever Deflection Checked Against a Third Span",
     "context": "A materials lab models tip deflection of a cantilever as $y(L)=A L^{k}$ millimetres, where $L>0$ is the free span in metres. Two spans are trusted: $y(3)=18$ and $y(6)=72$. A third run recorded $y(9)=150$, and the question is whether that third point still sits on the same power law. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The two trusted spans are consistent with a square law.",
-      "The quadratic model predicts $y(9)=162$, so the recorded $150$ undershoots by $12$ mm.",
-      "Rescaling the coefficient to force $y(9)=150$ leaves $y(3)=18$ unchanged.",
-      "The two-point exponent fitted to $(3,18)$ and $(9,150)$ is still exactly $2$.",
+      "The exponent from the trusted pair is larger than one, so deflection outruns span.",
+      "The trusted quadratic already puts nine metres above $155$ mm.",
+      "Doubling the free span doubles the tip deflection.",
+      "The recorded third run sits more than $10$ mm below the trusted quadratic.",
       "The third run sits on the same power law as the trusted pair."
     ],
     "answer_key": [
       true,
       true,
       false,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe trusted spans double from $3$ m to $6$ m. Their ratio cancels $A$:\n\n$$\n\\frac{y(6)}{y(3)}=\\frac{72}{18}\n$$\n\n$$\n\\frac{72}{18}=2^{k}\n$$\n\n$$\n4=2^{k}\n$$\n\n$$\nk=2\n$$\n\nAn exponent of $2$ is a square law. The shorter span then pins $A\\cdot 9=18$, hence $A=2$. The longer run $2\\cdot 36=72$ sits on the same parabola, so the statement is True.",
-      "**B.** → True\n\nThe trusted law is $y(L)=2L^{2}$. At nine metres:\n\n$$\ny(9)=2\\cdot 9^{2}\n$$\n\n$$\n9^{2}=81\n$$\n\n$$\ny(9)=2\\cdot 81=162\n$$\n\nThe recorded third run is $150$ mm, which lies $12$ mm below the quadratic, so the statement is True.",
-      "**C.** → False\n\nForcing $y(9)=150$ with exponent $2$ replaces the coefficient:\n\n$$\nA'\\cdot 81=150\n$$\n\n$$\nA'=\\frac{50}{27}\n$$\n\nAt three metres the rescaled law reads $\\frac{50}{27}\\cdot 9=\\frac{50}{3}\\approx 16.67$, not $18$. A coefficient change rescales every level, so the statement is False.",
-      "**D.** → False\n\nFitting the suspect pair $(3,18)$ and $(9,150)$ uses that pair's ratio:\n\n$$\n\\frac{150}{18}=3^{k}\n$$\n\n$$\n\\frac{25}{3}=3^{k}\n$$\n\nAn exact square would need $3^{2}=9$, but $\\frac{25}{3}\\approx 8.333$. The fitted exponent is $\\frac{\\ln(25/3)}{\\ln 3}\\approx 1.930$, not $2$, so the statement is False.",
-      "**E.** → False\n\nThe trusted law predicts $y(9)=162$, not the recorded $150$. The pair that uses the third run gives exponent about $1.930$ rather than $2$. The third run does not sit on the same power law, so the statement is False."
+      "**A.** → True\n\nThe trusted spans double from $3$ m to $6$ m. Their ratio cancels $A$:\n\n$$\n\\frac{y(6)}{y(3)}=\\frac{72}{18}=2^{k}\n$$\n\n$$\n4=2^{k}\n$$\n\n$$\nk=2\n$$\n\nTwo is larger than one, so each extra metre of span adds more deflection than the metre before it. Deflection outruns span, so the statement is True.",
+      "**B.** → True\n\nThe trusted law is $y(L)=2L^{2}$. At nine metres:\n\n$$\ny(9)=2\\cdot 9^{2}\n$$\n\n$$\n9^{2}=81\n$$\n\n$$\ny(9)=2\\cdot 81=162\n$$\n\nOne hundred and sixty-two already sits above $155$ mm, so the statement is True.",
+      "**C.** → False\n\nDoubling span would double deflection only if the exponent were $1$. With exponent $2$ the scale factor is\n\n$$\n\\frac{y(2L)}{y(L)}=2^{2}=4\n$$\n\nThe trusted pair already shows that: $3$ m to $6$ m multiplies $18$ mm by four, to $72$ mm, not by two. Deflection quadruples, so the statement is False.",
+      "**D.** → True\n\nThe trusted quadratic predicts $162$ mm at nine metres, and the recorded third run is $150$ mm:\n\n$$\n162-150=12\n$$\n\nTwelve millimetres is more than a $10$ mm shortfall, so the statement is True.",
+      "**E.** → False\n\nThe trusted law predicts $y(9)=162$, not the recorded $150$. Fitting the suspect pair $(3,18)$ and $(9,150)$ uses that pair's ratio:\n\n$$\n\\frac{150}{18}=3^{k}\n$$\n\n$$\n\\frac{25}{3}=3^{k}\n$$\n\nAn exact square would need $3^{2}=9$, but $\\frac{25}{3}\\approx 8.333$. The third run does not sit on the same power law, so the statement is False."
     ],
     "difficulty_level": "3/5",
     "sort_order": 66,
@@ -185,10 +185,10 @@
     "title": "Mast Steel Mass Under a Finite Percentage Scale-Up",
     "context": "A self-similar mast's steel mass follows $M(h)=A h^{k}$ kilograms, where $h>0$ is mast height in metres. Design notes state that lengthening any mast by $20\\%$ raises steel mass by $72.8\\%$, and a $10$ m reference mast uses exactly $500$ kg of steel. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Steel mass scales with the cube of height.",
-      "A $12$ m mast uses $864$ kg of steel.",
+      "The exponent is larger than one, so steel mass outruns height.",
+      "A $12$ m mast already uses more than $800$ kg of steel.",
       "The percentage rule alone forces the coefficient $A$ without using the $10$ m reference.",
-      "A $10\\%$ height increase raises mass by exactly $33.1\\%$.",
+      "A $10\\%$ height increase raises mass by more than $30\\%$.",
       "A $20\\%$ height increase raises mass by $20\\%$."
     ],
     "answer_key": [
@@ -199,10 +199,10 @@
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nA $20\\%$ stretch is a height factor of $1.2$, and a $72.8\\%$ rise is a mass factor of $1.728$. The ratio cancels $A$:\n\n$$\n\\frac{M(1.2h)}{M(h)}=1.2^{k}\n$$\n\n$$\n1.2^{k}=1.728\n$$\n\n$$\n1.2^{2}=1.44\n$$\n\n$$\n1.44\\cdot 1.2=1.728\n$$\n\nso $1.2^{3}=1.728$ and $k=3$. Mass scales with the cube of height, so the statement is True.",
-      "**B.** → True\n\nA $12$ m mast is the $10$ m reference lengthened by $20\\%$, so the design note supplies the multiplier $1.728$:\n\n$$\n\\frac{12}{10}=1.2\n$$\n\n$$\nM(12)=500\\cdot 1.728=864\n$$\n\nA $12$ m mast uses $864$ kg of steel, so the statement is True.",
+      "**A.** → True\n\nA $20\\%$ stretch is a height factor of $1.2$, and a $72.8\\%$ rise is a mass factor of $1.728$. The ratio cancels $A$:\n\n$$\n\\frac{M(1.2h)}{M(h)}=1.2^{k}\n$$\n\n$$\n1.2^{k}=1.728\n$$\n\n$$\n1.2^{2}=1.44\n$$\n\n$$\n1.44\\cdot 1.2=1.728\n$$\n\nso $1.2^{3}=1.728$ and $k=3$. Three is larger than one, so mass outruns height, so the statement is True.",
+      "**B.** → True\n\nA $12$ m mast is the $10$ m reference lengthened by $20\\%$, so the design note supplies the multiplier $1.728$:\n\n$$\n\\frac{12}{10}=1.2\n$$\n\n$$\nM(12)=500\\cdot 1.728=864\n$$\n\nEight hundred and sixty-four already sits above $800$ kg, so the statement is True.",
       "**C.** → False\n\nThe $20\\%$ rule is a quotient of two masses, so $A$ cancels and every positive coefficient satisfies the note equally well. Scale information cannot substitute for a level, so the statement is False.",
-      "**D.** → True\n\nThe percentage rule gives $k=3$. A $10\\%$ stretch is the factor $1.1^{3}$:\n\n$$\n1.1^{2}=1.21\n$$\n\n$$\n1.21\\cdot 1.1=1.331\n$$\n\nThe mass rise is $0.331$, exactly $33.1\\%$, so the statement is True.",
+      "**D.** → True\n\nThe percentage rule gives $k=3$. A $10\\%$ stretch is the factor $1.1^{3}$:\n\n$$\n1.1^{2}=1.21\n$$\n\n$$\n1.21\\cdot 1.1=1.331\n$$\n\nThe mass rise is $0.331$, which is $33.1\\%$, already more than $30\\%$, so the statement is True.",
       "**E.** → False\n\nA $20\\%$ stretch would raise mass by $20\\%$ only if the exponent were $1$, which would give the factor $1.2$. The design note records the factor $1.728$, a $72.8\\%$ rise, because $k=3$. Height and mass do not move in lockstep, so the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -216,21 +216,21 @@
     "context": "Acoustic intensity from a cooling fan follows $I(d)=A d^{-2}$ watts per square metre, where $d>0$ is distance from the hub in metres. A meter reading at $2$ metres records $0.72$ W/m$^{2}$. Night operations are capped at $0.08$ W/m$^{2}$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "Doubling the distance cuts intensity to one quarter.",
-      "The intensity law is $I(d)=1.44 d^{-2}$.",
+      "At $4$ metres the intensity is already under $0.2$ W/m$^{2}$.",
       "An extra metre cuts more intensity at $2$ m than it does at $6$ m.",
       "At $6$ metres the intensity is still above the $0.08$ W/m$^{2}$ night cap.",
       "The night cap is never met at any finite distance."
     ],
     "answer_key": [
       true,
-      false,
+      true,
       true,
       false,
       false
     ],
     "tactical_explanations": [
       "**A.** → True\n\nDoubling distance multiplies intensity by $2^{-2}$:\n\n$$\n\\frac{I(2d)}{I(d)}=2^{-2}=\\frac{1}{4}\n$$\n\nThe factor is one quarter at every starting distance. Doubling the distance cuts intensity to one quarter, so the statement is True.",
-      "**B.** → False\n\nThe meter at $2$ m pins the coefficient:\n\n$$\nA\\cdot 2^{-2}=0.72\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\n$$\n\\frac{A}{4}=0.72\n$$\n\n$$\nA=2.88\n$$\n\nThe law is $I(d)=\\frac{2.88}{d^{2}}$, which replays the meter as $\\frac{2.88}{4}=0.72$. The claimed $1.44$ multiplies the reading by the distance $2$ rather than by its square $4$:\n\n$$\n\\frac{1.44}{4}=0.36\n$$\n\nwhich is half the meter. The recovered coefficient is $2.88$, so the statement is False.",
+      "**B.** → True\n\nIntensity is $I(d)=\\frac{2.88}{d^{2}}$. At four metres:\n\n$$\nI(4)=\\frac{2.88}{16}=0.18\n$$\n\nThat already sits under $0.2$ W/m$^{2}$, so the statement is True.",
       "**C.** → True\n\nAn extra metre is the derivative of $I(d)=\\frac{2.88}{d^{2}}$:\n\n$$\nI'(d)=-5.76\\, d^{-3}\n$$\n\nThe drop per metre is $\\frac{5.76}{d^{3}}$. At $2$ m that is $\\frac{5.76}{8}=0.72$; at $6$ m it is $\\frac{5.76}{216}\\approx 0.0267$. The drop is steeper near the hub, so the statement is True.",
       "**D.** → False\n\nAt six metres:\n\n$$\nI(6)=\\frac{2.88}{36}=0.08\n$$\n\nSix metres is the night-cap boundary. The word above excludes a boundary value, so the statement is False.",
       "**E.** → False\n\nSetting $I=0.08$ gives $d^{2}=36$, so $d=6$. Intensity falls from $0.72$ toward $0$ and therefore crosses $0.08$ at a finite distance. The cap is met at $6$ m, so the statement is False."
@@ -246,23 +246,23 @@
     "context": "A booster pump's differential head follows $H(q)=A q^{2}$ metres when the delivered flow is $q>0$ cubic metres per hour. A commissioning run at $q=5$ recorded $H=50$ m. The plant then pipes that flow through a nozzle whose jet speed is $v(H)=4\\sqrt{H}$ metres per second, so jet speed as a function of flow is the composition $v(q)=v(H(q))$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "After both stages, jet speed is proportional to flow.",
-      "At $q=5$ the jet speed is $20\\sqrt{2}$ m/s.",
+      "At $q=5$ the jet speed is already above $28$ m/s.",
       "Doubling the flow doubles the head.",
-      "A jet speed of $40\\sqrt{2}$ m/s requires flow $20$ m$^{3}$/h.",
+      "A jet speed of $40\\sqrt{2}$ m/s still takes under $12$ m$^{3}$/h of flow.",
       "Head is proportional to jet speed."
     ],
     "answer_key": [
       true,
       true,
       false,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
       "**A.** → True\n\nHead is a square of flow and jet speed is a square root of that head. Composing multiplies the exponents:\n\n$$\nv(q)=4\\sqrt{2q^{2}}\n$$\n\n$$\nv(q)=4\\sqrt{2}\\, q\n$$\n\nfor $q>0$. The inner $2$ and the outer $\\frac{1}{2}$ multiply to $1$, a line through the origin. Jet speed is proportional to flow, so the statement is True.",
-      "**B.** → True\n\nAt the commissioning flow the head is already $50$ m. Pass that head through the nozzle:\n\n$$\nv=4\\sqrt{50}\n$$\n\n$$\n\\sqrt{50}=5\\sqrt{2}\n$$\n\n$$\nv=4\\cdot 5\\sqrt{2}=20\\sqrt{2}\n$$\n\nJet speed at $q=5$ is $20\\sqrt{2}$ m/s, so the statement is True.",
+      "**B.** → True\n\nAt the commissioning flow the head is already $50$ m. Pass that head through the nozzle:\n\n$$\nv=4\\sqrt{50}\n$$\n\n$$\n\\sqrt{50}=5\\sqrt{2}\n$$\n\n$$\nv=4\\cdot 5\\sqrt{2}=20\\sqrt{2}\n$$\n\nBecause $\\sqrt{2}>1.4$, one has $20\\sqrt{2}>28$. Jet speed already sits above $28$ m/s, so the statement is True.",
       "**C.** → False\n\nDoubling flow multiplies head by $2^{2}$:\n\n$$\n\\frac{H(2q)}{H(q)}=2^{2}=4\n$$\n\nHead quadruples rather than doubles. An exact doubling of head would need exponent $1$. The claim is about head, so the statement is False.",
-      "**D.** → False\n\nThe composition is $v(q)=4\\sqrt{2}\\, q$. A target of $40\\sqrt{2}$ m/s is\n\n$$\n4\\sqrt{2}\\, q=40\\sqrt{2}\n$$\n\n$$\nq=10\n$$\n\nA flow of $20$ would deliver $80\\sqrt{2}$ m/s, twice the target. The claimed $20$ treats speed as if it scaled with $q^{2}$. The target needs $10$ m$^{3}$/h, so the statement is False.",
+      "**D.** → True\n\nThe composition is $v(q)=4\\sqrt{2}\\, q$. A target of $40\\sqrt{2}$ m/s is\n\n$$\n4\\sqrt{2}\\, q=40\\sqrt{2}\n$$\n\n$$\nq=10\n$$\n\nTen cubic metres per hour already sits under $12$. A flow of $20$ would deliver $80\\sqrt{2}$ m/s, twice the target. The target needs $10$ m$^{3}$/h, so the statement is True.",
       "**E.** → False\n\nEliminating flow from $H=2q^{2}$ and $v=4\\sqrt{2}\\, q$ gives\n\n$$\nq=\\frac{v}{4\\sqrt{2}}\n$$\n\n$$\nH=2\\left(\\frac{v}{4\\sqrt{2}}\\right)^{2}=\\frac{v^{2}}{16}\n$$\n\nTwice the speed therefore gives four times the head, not twice the head. Head is a square of jet speed, not a constant multiple of it, so the statement is False."
     ],
     "difficulty_level": "5/5",
@@ -276,7 +276,7 @@
     "context": "Forklift throughput follows $T(s)=A s^{0.5}$ pallets per hour, where $s>0$ is the number of drivers on shift. A logged shift with $16$ drivers moved $80$ pallets per hour. Safety rules cap the shift at $36$ drivers. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
       "To double the logged throughput the yard must more than double the crew.",
-      "With $36$ drivers the model predicts $120$ pallets per hour.",
+      "With $36$ drivers the model already predicts more than $110$ pallets per hour.",
       "Throughput per driver rises as the crew grows.",
       "Reaching $150$ pallets per hour stays inside the safety cap.",
       "Because throughput rises with crew, the safety cap on drivers is also a cap on pallets moved per hour."
@@ -290,7 +290,7 @@
     ],
     "tactical_explanations": [
       "**A.** → True\n\nDoubling throughput is a crew factor $k$ with $k^{\\frac{1}{2}}=2$:\n\n$$\n\\frac{T(ks)}{T(s)}=k^{\\frac{1}{2}}\n$$\n\n$$\nk^{\\frac{1}{2}}=2\n$$\n\n$$\nk=4\n$$\n\nAn exact doubling of the crew would only multiply throughput by $\\sqrt{2}\\approx 1.41$. The yard needs four times the crew, not twice. That is more than a doubling, so the statement is True.",
-      "**B.** → True\n\nThe law is $T(s)=20\\sqrt{s}$. At the capped crew:\n\n$$\nT(36)=20\\cdot 36^{\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nT(36)=20\\cdot 6=120\n$$\n\nWith $36$ drivers the model predicts $120$ pallets per hour, so the statement is True.",
+      "**B.** → True\n\nThe law is $T(s)=20\\sqrt{s}$. At the capped crew:\n\n$$\nT(36)=20\\cdot 36^{\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nT(36)=20\\cdot 6=120\n$$\n\nOne hundred and twenty already sits above $110$ pallets per hour, so the statement is True.",
       "**C.** → False\n\nThroughput per driver subtracts $1$ from the exponent:\n\n$$\n\\frac{T(s)}{s}=20s^{\\frac{1}{2}-1}\n$$\n\n$$\n\\frac{T(s)}{s}=20s^{-\\frac{1}{2}}\n$$\n\nThe leftover exponent is negative, so intensity falls as the crew grows. A rising intensity would need a positive leftover exponent, so the statement is False.",
       "**D.** → False\n\nA target of $150$ inverts as\n\n$$\n20\\sqrt{s}=150\n$$\n\n$$\n\\sqrt{s}=\\frac{150}{20}=7.5\n$$\n\n$$\ns=7.5^{2}=56.25\n$$\n\nwhich exceeds the cap of $36$. Even the capped shift delivers only $120$ pallets per hour. Reaching $150$ lies outside the safety cap, so the statement is False.",
       "**E.** → True\n\nThroughput $T=20\\sqrt{s}$ rises with crew, so the largest legal crew of $36$ drivers produces the largest legal output, $120$ pallets per hour. No legal crew can exceed that. The driver cap is therefore also a cap on pallets moved per hour, so the statement is True."
