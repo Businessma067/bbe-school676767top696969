@@ -5,29 +5,29 @@
     "title": "Audit Cost With Economies of Scale",
     "context": "An audit practice prices engagements by $C(n)=A n^{0.75}$, where $n>0$ is the number of accounts tested. The bill rises by exactly $1900$ when engagement size rises from $16$ to $81$ accounts. A client has a $2700$ cap, while a rival quotes $R(n)=50n$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "The exponent is smaller than one, so the bill grows more slowly than the number of accounts.",
+      "Doubling the number of accounts doubles the practice bill.",
       "After $81$ accounts the bill is already above $2500$.",
-      "The extra bill from $16$ to $81$ accounts already exceeds the $16$-account bill.",
-      "A bill of $12500$ already requires more than $600$ accounts.",
-      "Doubling $16$ accounts doubles the practice bill.",
-      "At $81$ accounts the power-law bill is already cheaper than the rival's quote."
+      "An extra account adds more to the bill after eighty-one accounts than after sixteen.",
+      "A bill of $12500$ already requires more than $600$ accounts."
     ],
     "answer_key": [
       true,
-      true,
+      false,
       true,
       false,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recorded rise of $1900$ is not a level: it is the gap between two three-quarter powers. Sixteen and eighty-one are both fourth powers, so the shape factors are exact:\n\n$$\n16^{\\frac{3}{4}}=8\n$$\n\n$$\n81^{\\frac{3}{4}}=27\n$$\n\n$$\nA(27-8)=1900\n$$\n\n$$\n19A=1900\n$$\n\n$$\nA=100\n$$\n\nThe practice bill is then $C(n)=100 n^{\\frac{3}{4}}$. At eighty-one accounts:\n\n$$\nC(81)=100\\cdot 27\n$$\n\n$$\n100\\cdot 27=2700\n$$\n\n$$\n2700>2500\n$$\n\nThe bill is $2700$, already above $2500$, so the statement is True.",
-      "**B.** → True\n\nThe sixteen-account bill is $C(16)=800$, and the logged rise to eighty-one accounts is already $1900$:\n\n$$\n1900>800\n$$\n\nThe add-on already exceeds the sixteen-account bill, so the statement is True.",
-      "**C.** → True\n\nA bill of $12500$ inverts $C(n)=100 n^{\\frac{3}{4}}$:\n\n$$\n100 n^{\\frac{3}{4}}=12500\n$$\n\n$$\nn^{\\frac{3}{4}}=125\n$$\n\n$$\n125=5^{3}\n$$\n\n$$\nn=(5^{3})^{\\frac{4}{3}}\n$$\n\n$$\nn=5^{4}\n$$\n\n$$\n5^{4}=625\n$$\n\n$$\n625>600\n$$\n\nSix hundred and twenty-five accounts already exceeds $600$, so the statement is True.",
-      "**D.** → False\n\nDoubling sixteen accounts would double the bill only if the exponent were $1$. Three quarters sits below one, so the scale factor is\n\n$$\n\\frac{C(32)}{C(16)}=2^{\\frac{3}{4}}\n$$\n\n$$\n2^{\\frac{3}{4}}\\approx 1.682\n$$\n\n$$\n1.682\\neq 2\n$$\n\nThe bill rises, but not in lockstep with the account count, so the statement is False.",
-      "**E.** → True\n\nAt eighty-one accounts the practice bills $C(81)=2700$ while the rival quotes\n\n$$\nR(81)=50\\cdot 81\n$$\n\n$$\n50\\cdot 81=4050\n$$\n\n$$\n2700<4050\n$$\n\nThe power-law bill already undercuts the rival's $4050$, so the statement is True."
+      "**A.** → True\n\nThe recovered exponent is $\\frac{3}{4}$. An exponent smaller than one means the bill grows more slowly than the account count: each extra account adds less than the one before it. Doubling accounts multiplies the bill by\n\n$$\n\\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}\n$$\n\n$$\n2^{\\frac{3}{4}}\\approx 1.68\n$$\n\nand $1.68$ is less than $2$. Three quarters sits below one, so the bill lags the account count, so the statement is True.",
+      "**B.** → False\n\nThe recovered law is $C(n)=100 n^{\\frac{3}{4}}$. Doubling accounts would double the bill only if the exponent were $1$, because only then is the scale factor $2^{1}=2$. With exponent $\\frac{3}{4}$ the ratio is\n\n$$\n\\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}\n$$\n\n$$\n2^{\\frac{3}{4}}\\approx 1.68\n$$\n\nwhich is not $2$. The bill rises, but not in lockstep with the account count, so the statement is False.",
+      "**C.** → True\n\nThe recovered law is $C(n)=100 n^{\\frac{3}{4}}$. After $81$ accounts the bill is claimed already to sit above $2500$. Eighty-one is $3^{4}$, so the three-quarters power is a cube:\n\n$$\n81^{\\frac{3}{4}}=(3^{4})^{\\frac{3}{4}}\n$$\n\n$$\n(3^{4})^{\\frac{3}{4}}=3^{3}\n$$\n\n$$\n3^{3}=27\n$$\n\n$$\nC(81)=100\\cdot 27\n$$\n\n$$\nC(81)=2700\n$$\n\n$$\n2700>2500\n$$\n\nThe bill is $2700$, which already clears $2500$, so the statement is True.",
+      "**D.** → False\n\nThe recovered law is $C(n)=100 n^{\\frac{3}{4}}$. An extra account is the derivative, which brings the exponent down by one:\n\n$$\nC'(n)=100\\cdot \\frac{3}{4} n^{-\\frac{1}{4}}\n$$\n\n$$\nC'(n)=75 n^{-\\frac{1}{4}}\n$$\n\nThe leftover exponent $-\\frac{1}{4}$ is negative, so each extra account adds less than the one before it. After sixteen accounts:\n\n$$\n16^{-\\frac{1}{4}}=\\frac{1}{2}\n$$\n\n$$\nC'(16)=\\frac{75}{2}\n$$\n\nAfter eighty-one accounts:\n\n$$\n81^{-\\frac{1}{4}}=\\frac{1}{3}\n$$\n\n$$\nC'(81)=25\n$$\n\n$$\n25<\\frac{75}{2}\n$$\n\nAn extra account adds less after eighty-one than after sixteen, so the statement is False.",
+      "**E.** → True\n\nThe recovered law is $C(n)=100 n^{\\frac{3}{4}}$. A bill of $12500$ means\n\n$$\n100 n^{\\frac{3}{4}}=12500\n$$\n\n$$\nn^{\\frac{3}{4}}=125\n$$\n\n$$\n125=5^{3}\n$$\n\nA power with a nonzero exponent inverts to another power, so raise both sides to $\\frac{4}{3}$:\n\n$$\nn=(5^{3})^{\\frac{4}{3}}\n$$\n\n$$\nn=5^{4}\n$$\n\n$$\nn=625\n$$\n\n$$\n625>600\n$$\n\nSix hundred and twenty-five accounts is already more than $600$, so the statement is True."
     ],
     "difficulty_level": "4/5",
     "sort_order": 51,
-    "solution_overview": "Audit cost follows $C(n)=A n^{\\frac{3}{4}}$ for $n>0$ accounts. The bill rises by $1900$ from $16$ to $81$ accounts. A client cap is $2700$, and a rival quotes $R(n)=50n$.\n\n**Part 1: Building the model.**\n\nLet $n$ be accounts tested and $C(n)$ the practice bill. The exponent $\\frac{3}{4}$ is given, so only $A$ is unknown. The recorded $1900$ is a difference of bills, and both sizes are fourth powers.\n\n**1. Translate: the shape factors.**\n\n$$16^{\\frac{3}{4}}=8 \\qquad 81^{\\frac{3}{4}}=27$$\n\n**2. Translate: the recorded rise.**\n\n$$A(27-8)=1900$$\n\n**Part 2: The model.**\n\n$$C(n)=A n^{\\frac{3}{4}} \\tag{1}$$\n\n$$19A=1900 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Coefficient:\n\n$$A=100 \\qquad C(n)=100 n^{\\frac{3}{4}}$$\n\n**2.** Named bills and the extra:\n\n$$C(16)=800 \\qquad C(81)=2700 \\qquad C(81)-C(16)=1900>800$$\n\n**3.** Target bill and doubling:\n\n$$C=12500 \\Rightarrow n=625 \\qquad \\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}\\approx 1.68$$\n\n**4.** Rival at $81$:\n\n$$R(81)=4050 \\qquad 2700<4050$$\n\n**Answer.** $A=100$ | $C(16)=800$ | $C(81)=2700$ | extra $1900$ | $n=625$ for $C=12500$ | $R(81)=4050$"
+    "solution_overview": "Audit cost follows $C(n)=A n^{\\frac{3}{4}}$ for $n>0$ accounts. The bill rises by $1900$ from $16$ to $81$ accounts. A client cap is $2700$, and a rival quotes $R(n)=50n$.\n\n**Part 1: Building the model.**\n\nLet $n$ be accounts tested and $C(n)$ the practice bill. The exponent $\\frac{3}{4}$ is given, so only $A$ is unknown. The recorded $1900$ is a difference of bills, and both sizes are fourth powers.\n\n**1. Translate: the shape factors.**\n\n$$16^{\\frac{3}{4}}=8 \\qquad 81^{\\frac{3}{4}}=27$$\n\n**2. Translate: the recorded rise.**\n\n$$A(27-8)=1900$$\n\n**Part 2: The model.**\n\n$$C(n)=A n^{\\frac{3}{4}} \\tag{1}$$\n\n$$19A=1900 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Coefficient:\n\n$$A=100 \\qquad C(n)=100 n^{\\frac{3}{4}}$$\n\n**2.** Logged bills and the cap:\n\n$$C(16)=800 \\qquad C(81)=2700 \\qquad C(n)\\le 2700 \\Rightarrow n\\le 81$$\n\n**3.** Rival crossover:\n\n$$100 n^{\\frac{3}{4}}=50n \\Rightarrow n=16$$\n\n**4.** Target bill:\n\n$$100 n^{\\frac{3}{4}}=12500 \\Rightarrow n=625$$\n\n**5.** Scale:\n\n$$\\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}\\approx 1.68$$\n\n**Answer.** $A=100$ | $C(n)=100n^{\\frac{3}{4}}$ | cap $n=81$ | rival tie $n=16$ | $C=12500$ at $n=625$"
   },
   {
     "id": "math-8-52",
@@ -35,29 +35,29 @@
     "title": "Airborne Particle Concentration Downwind",
     "context": "Downwind particle concentration follows $c(x)=A x^{-1.5}$ micrograms per cubic metre, where $x>0$ is distance from the stack in metres. A monitor at $4$ metres reads exactly $43.75$ more than a monitor at $16$ metres. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "Concentration falls faster than inverse-linear decay.",
+      "Concentration per metre of distance is the same at every downwind range.",
       "At $100$ metres the concentration is already below $0.5$ microgram per cubic metre.",
-      "Measuring distance in kilometres makes the new coefficient larger than $0.01$.",
-      "At $4$ metres the nearer monitor still reads under $45$ micrograms per cubic metre.",
-      "The drop from $4$ metres to $16$ metres already exceeds the remaining reading at $16$ metres.",
-      "The distance that yields $0.4$ already exceeds $80$ metres."
+      "The distance that produces a given concentration is itself a power of that concentration.",
+      "At $4$ metres the nearer monitor still reads under $45$ micrograms per cubic metre."
     ],
     "answer_key": [
       true,
-      true,
       false,
       true,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe $43.75$ gap is a difference of two negative three-halves powers. Four metres and sixteen metres are squares, so the shape factors are exact:\n\n$$\n4^{-\\frac{3}{2}}=\\frac{1}{8}\n$$\n\n$$\n16^{-\\frac{3}{2}}=\\frac{1}{64}\n$$\n\n$$\nA\\left(\\frac{1}{8}-\\frac{1}{64}\\right)=43.75\n$$\n\n$$\n\\frac{7A}{64}=43.75\n$$\n\n$$\n7A=2800\n$$\n\n$$\nA=400\n$$\n\nConcentration is then $c(x)=400 x^{-\\frac{3}{2}}$. At one hundred metres:\n\n$$\n100^{\\frac{3}{2}}=1000\n$$\n\n$$\nc(100)=\\frac{400}{1000}\n$$\n\n$$\n\\frac{400}{1000}=0.4\n$$\n\n$$\n0.4<0.5\n$$\n\nThe reading is $0.4$, already below $0.5$, so the statement is True.",
-      "**B.** → True\n\nA change of input unit never moves the exponent. It only rescales the coefficient, because a power pushes a constant factor through that same exponent. Measuring distance in kilometres means $x=1000d$, so each metre-reading is a thousand times the kilometre-reading. The new coefficient is the old $400$ divided by $1000$ to the power $\\frac{3}{2}$:\n\n$$\nc=400(1000d)^{-\\frac{3}{2}}\n$$\n\n$$\nc=400\\cdot 1000^{-\\frac{3}{2}} d^{-\\frac{3}{2}}\n$$\n\n$$\n1000^{\\frac{3}{2}}=10^{4.5}\n$$\n\n$$\nA'=\\frac{400}{10^{4.5}}\n$$\n\n$$\nA'\\approx 0.01265\n$$\n\n$$\n0.01265>0.01\n$$\n\nThe kilometre-scale coefficient is about $0.01265$, already larger than $0.01$, so the statement is True.",
-      "**C.** → False\n\nAt four metres the nearer monitor reads\n\n$$\nc(4)=\\frac{400}{8}\n$$\n\n$$\n\\frac{400}{8}=50\n$$\n\n$$\n50>45\n$$\n\nThe reading is $50$, which is not under $45$, so the statement is False.",
-      "**D.** → True\n\nThe logged $43.75$ is already the drop from four metres to sixteen metres. What remains at sixteen metres is\n\n$$\nc(16)=\\frac{400}{64}\n$$\n\n$$\n\\frac{400}{64}=6.25\n$$\n\n$$\n43.75>6.25\n$$\n\nThe drop already exceeds the leftover reading of $6.25$, so the statement is True.",
-      "**E.** → True\n\nA reading of $0.4$ inverts $c(x)=400 x^{-\\frac{3}{2}}$:\n\n$$\n400 x^{-\\frac{3}{2}}=0.4\n$$\n\n$$\nx^{\\frac{3}{2}}=\\frac{400}{0.4}\n$$\n\n$$\n\\frac{400}{0.4}=1000\n$$\n\n$$\nx=1000^{\\frac{2}{3}}\n$$\n\n$$\n1000^{\\frac{2}{3}}=100\n$$\n\n$$\n100>80\n$$\n\nThe distance is $100$ metres, already past $80$, so the statement is True."
+      "**A.** → True\n\nThe recovered exponent is $-\\frac{3}{2}$. Inverse-linear decay would carry exponent $-1$. A more negative exponent means each extra metre of distance removes a larger share than $1/x$ would. If distance doubles, inverse-linear multiplies concentration by $\\frac{1}{2}$. This law multiplies by\n\n$$\n\\frac{c(2x)}{c(x)}=2^{-\\frac{3}{2}}\n$$\n\n$$\n2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\n$$\n\n$$\n\\frac{1}{2\\sqrt{2}}\\approx 0.354\n$$\n\nwhich is a steeper cut than $\\frac{1}{2}$. Because $-\\frac{3}{2}<-1$, concentration falls faster than inverse-linear decay, so the statement is True.",
+      "**B.** → False\n\nThe recovered law is $c(x)=400 x^{-\\frac{3}{2}}$. Average concentration per metre of distance is the law divided by range, which lowers the exponent by one:\n\n$$\n\\frac{c(x)}{x}=400 x^{-\\frac{3}{2}-1}\n$$\n\n$$\n\\frac{c(x)}{x}=400 x^{-\\frac{5}{2}}\n$$\n\nThat still depends on $x$. Inverse-power decay is steeper near the stack than far downwind, so the intensity is not the same at every range, so the statement is False.",
+      "**C.** → True\n\nThe recovered law is $c(x)=400 x^{-\\frac{3}{2}}$. At $100$ metres the reading is claimed already to sit below $0.5$. One hundred is $10^{2}$, so\n\n$$\n100^{\\frac{3}{2}}=(10^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(10^{2})^{\\frac{3}{2}}=10^{3}\n$$\n\n$$\n10^{3}=1000\n$$\n\n$$\nc(100)=\\frac{400}{1000}\n$$\n\n$$\nc(100)=0.4\n$$\n\n$$\n0.4<0.5\n$$\n\nThe reading is $0.4$ micrograms per cubic metre, which is already below $0.5$, so the statement is True.",
+      "**D.** → True\n\nThe recovered law is $c=400 x^{-\\frac{3}{2}}$. A power with a nonzero exponent inverts to another power, because raising both sides to the reciprocal exponent undoes the original power and leaves distance as a power of concentration. Isolate the power, then invert:\n\n$$\n\\frac{c}{400}=x^{-\\frac{3}{2}}\n$$\n\n$$\nx=\\left(\\frac{400}{c}\\right)^{\\frac{2}{3}}\n$$\n\nDistance is a two-thirds power of the reciprocal concentration, so the statement is True.",
+      "**E.** → False\n\nThe recovered law is $c(x)=400 x^{-\\frac{3}{2}}$. The nearer monitor at $4$ metres is claimed still to read under $45$. Four is $2^{2}$, so\n\n$$\n4^{-\\frac{3}{2}}=(2^{2})^{-\\frac{3}{2}}\n$$\n\n$$\n(2^{2})^{-\\frac{3}{2}}=2^{-3}\n$$\n\n$$\n2^{-3}=\\frac{1}{8}\n$$\n\n$$\nc(4)=400\\cdot \\frac{1}{8}\n$$\n\n$$\nc(4)=50\n$$\n\n$$\n50>45\n$$\n\nFifty is not under $45$, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 52,
-    "solution_overview": "Concentration follows $c(x)=A x^{-\\frac{3}{2}}$ for distance $x>0$ metres. A monitor at $4$ metres reads $43.75$ more than a monitor at $16$ metres.\n\n**Part 1: Building the model.**\n\nLet $x$ be downwind distance and $c(x)$ concentration. The exponent $-\\frac{3}{2}$ is given, so only $A$ is unknown. The $43.75$ figure is a difference of two readings.\n\n**1. Translate: the shape factors.**\n\n$$4^{-\\frac{3}{2}}=\\frac{1}{8} \\qquad 16^{-\\frac{3}{2}}=\\frac{1}{64}$$\n\n**2. Translate: the recorded gap.**\n\n$$A\\left(\\frac{1}{8}-\\frac{1}{64}\\right)=43.75$$\n\n**Part 2: The model.**\n\n$$c(x)=A x^{-\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{7A}{64}=43.75 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Coefficient:\n\n$$A=400 \\qquad c(x)=400 x^{-\\frac{3}{2}}$$\n\n**2.** Monitor levels:\n\n$$c(4)=50 \\qquad c(16)=6.25 \\qquad c(100)=0.4$$\n\n**3.** Drop versus remaining:\n\n$$c(4)-c(16)=43.75>6.25$$\n\n**4.** Kilometre-scale coefficient:\n\n$$A'=400\\cdot 1000^{-\\frac{3}{2}}=\\frac{400}{10^{4.5}}\\approx 0.01265>0.01$$\n\n**Answer.** $A=400$ | $c(4)=50$ | $c(16)=6.25$ | $c(100)=0.4$ | $A'\\approx 0.01265$"
+    "solution_overview": "Concentration follows $c(x)=A x^{-\\frac{3}{2}}$ for distance $x>0$ metres. A monitor at $4$ metres reads $43.75$ more than a monitor at $16$ metres.\n\n**Part 1: Building the model.**\n\nLet $x$ be downwind distance and $c(x)$ concentration. The exponent $-\\frac{3}{2}$ is given, so only $A$ is unknown. The $43.75$ figure is a difference of two readings.\n\n**1. Translate: the shape factors.**\n\n$$4^{-\\frac{3}{2}}=\\frac{1}{8} \\qquad 16^{-\\frac{3}{2}}=\\frac{1}{64}$$\n\n**2. Translate: the recorded gap.**\n\n$$A\\left(\\frac{1}{8}-\\frac{1}{64}\\right)=43.75$$\n\n**Part 2: The model.**\n\n$$c(x)=A x^{-\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{7A}{64}=43.75 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Coefficient:\n\n$$A=400 \\qquad c(x)=400 x^{-\\frac{3}{2}}$$\n\n**2.** Monitor levels:\n\n$$c(4)=50 \\qquad c(16)=6.25 \\qquad c(100)=0.4$$\n\n**3.** Concentration per metre $c(x)/x=400 x^{-\\frac{5}{2}}$ still depends on $x$. Scale factors:\n\n$$\\frac{c\\bigl(\\frac{x}{2}\\bigr)}{c(x)}=2\\sqrt{2} \\qquad \\frac{c(2x)}{c(x)}=\\frac{1}{2\\sqrt{2}}$$\n\n**Answer.** $A=400$ | $c(4)=50$ | $c(16)=6.25$ | $c(100)=0.4$ | halving factor $2\\sqrt{2}$"
   },
   {
     "id": "math-8-53",
@@ -65,29 +65,29 @@
     "title": "Storm Surge Feeding a Cubic Loss Index",
     "context": "A reinsurer models coastal losses in two stages. Storm surge height is $s(w)=0.5 w^{0.5}$ metres for a wind speed of $w>0$, and the loss index rises with the cube of surge height, $L(s)=32 s^{3}$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "At a wind speed of $64$ the loss index is already above $2000$.",
-      "A loss of $1000$ already requires a wind speed above $50$.",
+      "After both stages, the loss index is itself a power of wind speed.",
       "Doubling the wind speed doubles the loss index.",
-      "At wind speed $16$ the loss index is already above $250$.",
-      "The extra loss from wind $16$ to $64$ already exceeds $1700$."
+      "At a wind speed of $64$ the loss index is already above $2000$.",
+      "The composed exponent exceeds one, so losses accelerate as the wind strengthens.",
+      "A loss of $1000$ already requires a wind speed above $50$."
     ],
     "answer_key": [
       true,
       false,
-      false,
       true,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nComposing two power laws multiplies the exponents and raises the inner coefficient to the outer power. Surge is $s(w)=0.5 w^{\\frac{1}{2}}$ and loss is $L(s)=32 s^{3}$, so\n\n$$\nL(w)=32\\bigl(0.5 w^{\\frac{1}{2}}\\bigr)^{3}\n$$\n\n$$\n32\\cdot 0.5^{3}=32\\cdot\\frac{1}{8}\n$$\n\n$$\n32\\cdot\\frac{1}{8}=4\n$$\n\n$$\n\\frac{1}{2}\\cdot 3=\\frac{3}{2}\n$$\n\nThe composed law is $L(w)=4 w^{\\frac{3}{2}}$. At wind speed $64$:\n\n$$\n64^{\\frac{1}{2}}=8\n$$\n\n$$\n64^{\\frac{3}{2}}=8^{3}\n$$\n\n$$\n8^{3}=512\n$$\n\n$$\nL(64)=4\\cdot 512\n$$\n\n$$\n4\\cdot 512=2048\n$$\n\n$$\n2048>2000\n$$\n\nThe loss index is $2048$, already above $2000$, so the statement is True.",
-      "**B.** → False\n\nA loss of $1000$ inverts $L(w)=4 w^{\\frac{3}{2}}$:\n\n$$\n4 w^{\\frac{3}{2}}=1000\n$$\n\n$$\nw^{\\frac{3}{2}}=250\n$$\n\n$$\nw=250^{\\frac{2}{3}}\n$$\n\n$$\nw\\approx 39.7\n$$\n\n$$\n39.7<50\n$$\n\nThe required wind is about $39.7$, which is not above $50$, so the statement is False.",
-      "**C.** → False\n\nDoubling the wind would double the loss only if the composed exponent were $1$. With exponent $\\frac{3}{2}$ the scale factor is\n\n$$\n\\frac{L(2w)}{L(w)}=2^{\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\sqrt{2}\n$$\n\n$$\n2\\sqrt{2}\\approx 2.83\n$$\n\n$$\n2.83\\neq 2\n$$\n\nThe loss more than doubles, so the statement is False.",
-      "**D.** → True\n\nAt wind speed $16$:\n\n$$\n16^{\\frac{3}{2}}=64\n$$\n\n$$\nL(16)=4\\cdot 64\n$$\n\n$$\n4\\cdot 64=256\n$$\n\n$$\n256>250\n$$\n\nThe loss index is $256$, already above $250$, so the statement is True.",
-      "**E.** → True\n\nThe extra loss from wind $16$ to $64$ is a difference of two named levels:\n\n$$\nL(64)=2048\n$$\n\n$$\nL(16)=256\n$$\n\n$$\n2048-256=1792\n$$\n\n$$\n1792>1700\n$$\n\nThe extra of $1792$ already exceeds $1700$, so the statement is True."
+      "**A.** → True\n\nSurge is a square-root power of wind, and loss is a cube of surge. A composition of power laws is again a power law, because substituting multiplies the exponents. The surge stage is $s(w)=0.5 w^{\\frac{1}{2}}$, so the loss stage applied to it is\n\n$$\nL(w)=32\\left(0.5 w^{\\frac{1}{2}}\\right)^{3}\n$$\n\n$$\nL(w)=32\\cdot 0.5^{3}\\cdot w^{\\frac{3}{2}}\n$$\n\n$$\n0.5^{3}=\\frac{1}{8}\n$$\n\n$$\n32\\cdot \\frac{1}{8}=4\n$$\n\n$$\nL(w)=4 w^{\\frac{3}{2}}\n$$\n\nThat is a power of wind speed with exponent $\\frac{3}{2}$, so the statement is True.",
+      "**B.** → False\n\nThe composed law is $L(w)=4 w^{\\frac{3}{2}}$. Doubling the wind would double the loss only if the composed exponent were $1$. With exponent $\\frac{3}{2}$ the scale factor is\n\n$$\n\\frac{L(2w)}{L(w)}=2^{\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\sqrt{2}\n$$\n\n$$\n2\\sqrt{2}\\approx 2.83\n$$\n\nwhich is not $2$. The loss more than doubles, so the statement is False.",
+      "**C.** → True\n\nThe composed law is $L(w)=4 w^{\\frac{3}{2}}$. At wind speed $64$ the loss index is claimed already to sit above $2000$. Sixty-four is $8^{2}$, so\n\n$$\n64^{\\frac{3}{2}}=(8^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(8^{2})^{\\frac{3}{2}}=8^{3}\n$$\n\n$$\n8^{3}=512\n$$\n\n$$\nL(64)=4\\cdot 512\n$$\n\n$$\nL(64)=2048\n$$\n\n$$\n2048>2000\n$$\n\nThe loss index is $2048$, which already clears $2000$, so the statement is True.",
+      "**D.** → True\n\nThe composed law is $L(w)=4 w^{\\frac{3}{2}}$. An exponent larger than one means losses accelerate: each extra unit of wind adds more loss than the one before it. Three halves sits above one, so doubling the wind multiplies loss by\n\n$$\n2^{\\frac{3}{2}}=2\\sqrt{2}\n$$\n\n$$\n2\\sqrt{2}>2\n$$\n\nLosses accelerate as the wind strengthens, so the statement is True.",
+      "**E.** → False\n\nThe composed law is $L(w)=4 w^{\\frac{3}{2}}$. A loss of $1000$ means\n\n$$\n4 w^{\\frac{3}{2}}=1000\n$$\n\n$$\nw^{\\frac{3}{2}}=250\n$$\n\nA power with a nonzero exponent inverts to another power, so\n\n$$\nw=250^{\\frac{2}{3}}\n$$\n\nwhich is about $39.69$. Directly at wind speed $50$:\n\n$$\n50^{\\frac{3}{2}}=50\\sqrt{50}\n$$\n\n$$\n50\\sqrt{50}=250\\sqrt{2}\n$$\n\n$$\n250\\sqrt{2}\\approx 353.6\n$$\n\nand $353.6$ already exceeds $250$. The wind that hits a loss of $1000$ is therefore below $50$, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 53,
-    "solution_overview": "Surge is $s(w)=0.5 w^{0.5}$ metres and the loss index is $L(s)=32 s^{3}$. The composed law is recovered by substitution.\n\n**Part 1: Building the model.**\n\nLet $w$ be wind speed, $s$ surge height, and $L$ the loss index. Composing multiplies exponents and raises the inner coefficient to the outer power.\n\n**1. Translate: the surge stage.**\n\n$$s(w)=0.5 w^{0.5}$$\n\n**2. Translate: the loss stage applied to it.**\n\n$$L(w)=32\\bigl(0.5 w^{0.5}\\bigr)^{3}$$\n\n**Part 2: The model.**\n\n$$32\\cdot 0.5^{3}=4 \\qquad 0.5\\cdot 3=1.5 \\tag{1}$$\n\n$$L(w)=4 w^{1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Named winds:\n\n$$L(64)=2048>2000 \\qquad L(16)=256>250$$\n\n**2.** Invert a loss of $1000$:\n\n$$w=250^{\\frac{2}{3}}\\approx 39.7$$\n\nwhich is not above $50$. Doubling wind multiplies loss by $2^{\\frac{3}{2}}\\approx 2.83$, not by $2$.\n\n**3.** Extra from $16$ to $64$:\n\n$$2048-256=1792>1700$$\n\n**Answer.** $L(w)=4w^{1.5}$ | $L(64)=2048$ | $L(16)=256$ | $L=1000$ at $w\\approx 39.7$ | extra $1792$"
+    "solution_overview": "Surge is $s(w)=0.5 w^{0.5}$ metres and the loss index is $L(s)=32 s^{3}$. The composed law is recovered by substitution.\n\n**Part 1: Building the model.**\n\nLet $w$ be wind speed, $s$ surge height, and $L$ the loss index. Composing multiplies exponents and raises the inner coefficient to the outer power.\n\n**1. Translate: the surge stage.**\n\n$$s(w)=0.5 w^{0.5}$$\n\n**2. Translate: the loss stage applied to it.**\n\n$$L(w)=32\\bigl(0.5 w^{0.5}\\bigr)^{3}$$\n\n**Part 2: The model.**\n\n$$32\\cdot 0.5^{3}=4 \\qquad 0.5\\cdot 3=1.5 \\tag{1}$$\n\n$$L(w)=4 w^{1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** A named wind speed, stage by stage:\n\n$$s(64)=4 \\qquad L(64)=2048$$\n\n**2.** Scale of a doubling:\n\n$$\\frac{L(2w)}{L(w)}=2^{1.5}=2\\sqrt{2}\\approx 2.83$$\n\n**3.** Invert a loss of $1000$:\n\n$$w=250^{\\frac{2}{3}}\\approx 39.69$$\n\n**4.** Marginal loss rises because the composed exponent exceeds $1$:\n\n$$L'(w)=6 w^{0.5}$$\n\n**Answer.** $L(w)=4w^{1.5}$ | $s(64)=4$ | $L(64)=2048$ | $L=1000$ at $w\\approx 39.7$"
   },
   {
     "id": "math-8-54",
@@ -95,29 +95,29 @@
     "title": "Market Impact of a Block Trade",
     "context": "A broker models price impact as $I(v)=A v^{0.5}$ basis points, where $v>0$ is order size as a fraction of average daily volume. Increasing an order from $0.04$ ADV to $0.09$ ADV adds exactly $6$ basis points of impact. The scaled impact charge is $vI(v)$, while a notional fee is $F(v)=30v$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "Impact grows more slowly than order size.",
+      "Doubling order size doubles the scaled impact charge.",
       "At $0.16$ ADV, impact is already above $20$ basis points.",
-      "At $0.25$ ADV the scaled charge is already above $10$.",
       "Once the scaled charge overtakes the notional fee, it stays larger at every bigger order.",
-      "Doubling order size from $0.04$ to $0.08$ ADV doubles impact.",
-      "Two orders of $0.04$ ADV together already produce more impact than one order of $0.16$ ADV."
+      "At $0.25$ ADV the scaled charge is already above $10$."
     ],
     "answer_key": [
       true,
       false,
       true,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recorded extra of $6$ basis points is a difference of two square roots:\n\n$$\n\\sqrt{0.09}=0.3\n$$\n\n$$\n\\sqrt{0.04}=0.2\n$$\n\n$$\nA(0.3-0.2)=6\n$$\n\n$$\n0.1A=6\n$$\n\n$$\nA=60\n$$\n\nImpact is then $I(v)=60\\sqrt{v}$. At $0.16$ ADV:\n\n$$\n\\sqrt{0.16}=0.4\n$$\n\n$$\nI(0.16)=60\\cdot 0.4\n$$\n\n$$\n60\\cdot 0.4=24\n$$\n\n$$\n24>20\n$$\n\nImpact is $24$ basis points, already above $20$, so the statement is True.",
-      "**B.** → False\n\nThe scaled charge is $60 v^{\\frac{3}{2}}$. At a quarter of ADV:\n\n$$\n\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=\\frac{1}{8}\n$$\n\n$$\n60\\cdot\\frac{1}{8}=7.5\n$$\n\n$$\n7.5<10\n$$\n\nThe scaled charge is $7.5$, which is not above $10$, so the statement is False.",
-      "**C.** → True\n\nThe scaled charge $60 v^{\\frac{3}{2}}$ and the notional fee $30v$ are two different powers of order size. Their ratio is a positive power of $v$, so it can cross $1$ only once, and after that crossing the steeper curve stays ahead. They meet when\n\n$$\n60 v^{\\frac{3}{2}}=30v\n$$\n\n$$\n2 v^{\\frac{1}{2}}=1\n$$\n\n$$\n\\sqrt{v}=\\frac{1}{2}\n$$\n\n$$\nv=\\frac{1}{4}\n$$\n\nFor every $v>\\frac{1}{4}$ one has $\\sqrt{v}>\\frac{1}{2}$, so $60 v^{\\frac{3}{2}}>30v$. Once the scaled charge overtakes the fee it stays larger, so the statement is True.",
-      "**D.** → False\n\nDoubling order size would double impact only if the exponent were $1$. With a square-root law the scale factor is\n\n$$\n\\frac{I(2v)}{I(v)}=2^{\\frac{1}{2}}\n$$\n\n$$\n2^{\\frac{1}{2}}\\approx 1.414\n$$\n\n$$\nI(0.04)=12\n$$\n\n$$\nI(0.08)=12\\sqrt{2}\n$$\n\n$$\n12\\sqrt{2}\\approx 16.97\n$$\n\n$$\n2\\cdot 12=24\n$$\n\n$$\n16.97\\neq 24\n$$\n\nImpact rises by a factor $\\sqrt{2}$, not by $2$, so the statement is False.",
-      "**E.** → False\n\nTwo separate orders of $0.04$ ADV add\n\n$$\n2I(0.04)=2\\cdot 12\n$$\n\n$$\n2\\cdot 12=24\n$$\n\nOne order of $0.16$ ADV is $I(0.16)=24$. The pair matches the single larger order; it does not produce more impact, so the statement is False."
+      "**A.** → True\n\nThe recovered exponent is $\\frac{1}{2}$. An exponent smaller than one means impact grows more slowly than order size: each extra fraction of ADV adds less impact than the last. Doubling $v$ multiplies impact by\n\n$$\n\\frac{I(2v)}{I(v)}=2^{\\frac{1}{2}}\n$$\n\n$$\n2^{\\frac{1}{2}}=\\sqrt{2}\\approx 1.41\n$$\n\nwhich is not $2$. One half sits below one, so the statement is True.",
+      "**B.** → False\n\nImpact is $I(v)=60 v^{\\frac{1}{2}}$. The scaled charge multiplies by $v$, which raises the exponent by one:\n\n$$\nvI(v)=60 v^{\\frac{3}{2}}\n$$\n\nDoubling order size would double the scaled charge only if that leftover exponent were $1$. With exponent $\\frac{3}{2}$ the scale factor is\n\n$$\n\\frac{(2v)I(2v)}{vI(v)}=2^{\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.83\n$$\n\nwhich exceeds $2$. The scaled charge more than doubles, so the statement is False.",
+      "**C.** → True\n\nThe recovered impact is $I(v)=60 v^{\\frac{1}{2}}$. At $0.16$ ADV impact is claimed already to sit above $20$ basis points. Sixteen hundredths is $0.4$ squared, so the square-root law is exact at this size:\n\n$$\n\\sqrt{0.16}=0.4\n$$\n\n$$\nI(0.16)=60\\cdot 0.4\n$$\n\n$$\nI(0.16)=24\n$$\n\n$$\n24>20\n$$\n\nTwenty-four basis points already clears the $20$ point threshold, so the statement is True.",
+      "**D.** → True\n\nThe scaled charge is $60 v^{\\frac{3}{2}}$ and the notional fee is $30v$. They meet when\n\n$$\n60 v^{\\frac{3}{2}}=30v\n$$\n\nCancel a positive $v$:\n\n$$\n60 v^{\\frac{1}{2}}=30\n$$\n\n$$\n2 v^{\\frac{1}{2}}=1\n$$\n\n$$\nv^{\\frac{1}{2}}=\\frac{1}{2}\n$$\n\n$$\nv=\\frac{1}{4}\n$$\n\nFor $v>\\frac{1}{4}$ one has $\\sqrt{v}>\\frac{1}{2}$, so $60 v^{\\frac{3}{2}}>30v$. Once the scaled charge overtakes the fee it stays larger at every bigger order, so the statement is True.",
+      "**E.** → False\n\nThe recovered impact is $I(v)=60 v^{\\frac{1}{2}}$, so the scaled charge is $v I(v)=60 v^{\\frac{3}{2}}$. The statement says that at a quarter of ADV that charge already clears $10$. A quarter is a clean power of two, so evaluate the three-halves power there:\n\n$$\n\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=\\left(\\frac{1}{2}\\right)^{3}\n$$\n\n$$\n\\left(\\frac{1}{2}\\right)^{3}=\\frac{1}{8}\n$$\n\n$$\n60\\cdot \\frac{1}{8}=7.5\n$$\n\n$$\n7.5<10\n$$\n\nSeven and a half still sits below $10$. The charge has grown with order size, but not as far as the named line, so the statement is False."
     ],
     "difficulty_level": "5/5",
     "sort_order": 54,
-    "solution_overview": "Impact follows $I(v)=A v^{\\frac{1}{2}}$ basis points. Raising order size from $0.04$ to $0.09$ ADV adds $6$ basis points. The scaled charge is $vI(v)$, and a notional fee is $F(v)=30v$.\n\n**Part 1: Building the model.**\n\nLet $v$ be order size as a fraction of ADV. The exponent $\\frac{1}{2}$ is given, so only $A$ is unknown. The $6$ basis points is a difference of impacts.\n\n**1. Translate: the square roots.**\n\n$$\\sqrt{0.09}=0.3 \\qquad \\sqrt{0.04}=0.2$$\n\n**2. Translate: the recorded increment.**\n\n$$A(0.3-0.2)=6$$\n\n**Part 2: The model.**\n\n$$I(v)=60\\sqrt{v} \\tag{1}$$\n\n$$vI(v)=60 v^{\\frac{3}{2}} \\qquad F(v)=30v \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Named impacts:\n\n$$I(0.04)=12 \\qquad I(0.08)=12\\sqrt{2}\\approx 16.97 \\qquad I(0.16)=24$$\n\n**2.** Scaled charge versus fee:\n\n$$60 v^{\\frac{3}{2}}=30v \\Rightarrow v=0.25 \\qquad 60\\cdot(0.25)^{\\frac{3}{2}}=7.5$$\n\n**3.** Two small orders versus one large:\n\n$$2I(0.04)=24=I(0.16)$$\n\n**Answer.** $A=60$ | $I(v)=60\\sqrt{v}$ | $I(0.16)=24$ | $I(0.08)\\approx 16.97$ | break-even $v=0.25$ | scaled $(0.25)=7.5$"
+    "solution_overview": "Impact follows $I(v)=A v^{\\frac{1}{2}}$ basis points. Raising order size from $0.04$ to $0.09$ ADV adds $6$ basis points. The scaled charge is $vI(v)$, and a notional fee is $F(v)=30v$.\n\n**Part 1: Building the model.**\n\nLet $v$ be order size as a fraction of ADV. The exponent $\\frac{1}{2}$ is given, so only $A$ is unknown. The $6$ basis points is a difference of impacts.\n\n**1. Translate: the square roots.**\n\n$$\\sqrt{0.09}=0.3 \\qquad \\sqrt{0.04}=0.2$$\n\n**2. Translate: the recorded increment.**\n\n$$A(0.3-0.2)=6$$\n\n**Part 2: The model.**\n\n$$I(v)=60\\sqrt{v} \\tag{1}$$\n\n$$vI(v)=60 v^{\\frac{3}{2}} \\qquad F(v)=30v \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** A named size:\n\n$$I(0.16)=24$$\n\n**2.** Break-even:\n\n$$60 v^{\\frac{3}{2}}=30v \\Rightarrow v=0.25$$\n\n**3.** Scale of the charge:\n\n$$\\frac{(2v)I(2v)}{vI(v)}=2^{\\frac{3}{2}}=2\\sqrt{2}$$\n\n**Answer.** $A=60$ | $I(v)=60\\sqrt{v}$ | $I(0.16)=24$ | break-even $v=0.25$ | charge exponent $\\frac{3}{2}$"
   },
   {
     "id": "math-8-55",
@@ -125,29 +125,29 @@
     "title": "Allometric Energy Use Across Livestock Weights",
     "context": "Daily energy use follows $E(m)=A m^{\\frac{2}{3}}$ units for body mass $m>0$ kilograms. A $64$ kg animal uses exactly $70$ more energy units per day than a $27$ kg animal. A herd's total use is the sum of its animals' individual uses. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "The body mass that produces a given daily energy is a power function of that energy.",
+      "Energy use per kilogram falls as body mass rises.",
       "A $64$ kg animal already uses more than $150$ energy units a day.",
-      "A $216$ kg animal still uses under $400$ energy units a day.",
-      "Doubling mass from $27$ kg to $54$ kg doubles energy use.",
-      "Combining two $27$ kg animals into one $54$ kg animal leaves total energy unchanged.",
-      "Two $27$ kg animals together already use more than one $64$ kg animal."
+      "Combining two equal animals into one animal of twice the mass leaves total energy use unchanged.",
+      "A $216$ kg animal still uses under $400$ energy units a day."
     ],
     "answer_key": [
       true,
       true,
-      false,
+      true,
       false,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recorded extra of $70$ energy units is a difference of two two-thirds powers. Both masses are cubes, so the shape factors are exact:\n\n$$\n27^{\\frac{2}{3}}=9\n$$\n\n$$\n64^{\\frac{2}{3}}=16\n$$\n\n$$\nA(16-9)=70\n$$\n\n$$\n7A=70\n$$\n\n$$\nA=10\n$$\n\nDaily use is then $E(m)=10 m^{\\frac{2}{3}}$. At $64$ kilograms:\n\n$$\nE(64)=10\\cdot 16\n$$\n\n$$\n10\\cdot 16=160\n$$\n\n$$\n160>150\n$$\n\nThe animal uses $160$ energy units a day, already more than $150$, so the statement is True.",
-      "**B.** → True\n\nAt $216$ kilograms the mass is $6^{3}$, so the power is $36$:\n\n$$\nE(216)=10\\cdot 36\n$$\n\n$$\n10\\cdot 36=360\n$$\n\n$$\n360<400\n$$\n\nDaily use is $360$, still under $400$, so the statement is True.",
-      "**C.** → False\n\nDoubling mass from $27$ kg to $54$ kg would double energy only if the exponent were $1$. Two thirds sits below one, so the scale factor is\n\n$$\n\\frac{E(54)}{E(27)}=2^{\\frac{2}{3}}\n$$\n\n$$\n2^{\\frac{2}{3}}\\approx 1.587\n$$\n\n$$\nE(27)=90\n$$\n\n$$\nE(54)\\approx 142.7\n$$\n\n$$\n2\\cdot 90=180\n$$\n\n$$\n142.7\\neq 180\n$$\n\nEnergy rises, but not in lockstep with mass, so the statement is False.",
-      "**D.** → False\n\nHerd totals add animal by animal. Combining two $27$ kg animals into one $54$ kg animal would leave total energy unchanged only if $E(2m)=2E(m)$, which is the linear case $r=1$. Here the exponent is $\\frac{2}{3}$, so one larger animal uses less than the two smaller ones together: a concave power under-adds when mass is pooled. Two $27$ kg animals use\n\n$$\n2E(27)=2\\cdot 90\n$$\n\n$$\n2\\cdot 90=180\n$$\n\nwhile one $54$ kg animal uses $E(54)\\approx 142.7$. Because $142.7\\neq 180$, merging them cuts total energy use, so the statement is False.",
-      "**E.** → True\n\nTwo $27$ kg animals already use $180$ energy units. One $64$ kg animal uses $E(64)=160$:\n\n$$\n180>160\n$$\n\nThe pair already uses more than the single $64$ kg animal, so the statement is True."
+      "**A.** → True\n\nThe recovered law is $E=10 m^{\\frac{2}{3}}$. A power with a nonzero exponent inverts to another power, because raising both sides to the reciprocal exponent undoes the original power and leaves mass as a power of energy. Isolate the power, then invert:\n\n$$\n\\frac{E}{10}=m^{\\frac{2}{3}}\n$$\n\n$$\nm=\\left(\\frac{E}{10}\\right)^{\\frac{3}{2}}\n$$\n\nMass is a three-halves power of daily energy, so the statement is True.",
+      "**B.** → True\n\nThe recovered law is $E(m)=10 m^{\\frac{2}{3}}$. Energy per kilogram is the allometric law divided by mass, which lowers the exponent by one:\n\n$$\n\\frac{E(m)}{m}=10 m^{\\frac{2}{3}-1}\n$$\n\n$$\n\\frac{E(m)}{m}=10 m^{-\\frac{1}{3}}\n$$\n\nThe leftover exponent is negative, so the average falls as mass rises. A heavier animal uses more energy in total, but less energy per kilogram, so the statement is True.",
+      "**C.** → True\n\nThe recovered law is $E(m)=10 m^{\\frac{2}{3}}$. A $64$ kg animal is claimed already to use more than $150$ energy units a day. Sixty-four is $4^{3}$, so\n\n$$\n64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(4^{3})^{\\frac{2}{3}}=4^{2}\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\nE(64)=10\\cdot 16\n$$\n\n$$\nE(64)=160\n$$\n\n$$\n160>150\n$$\n\nDaily use is $160$, which already clears $150$, so the statement is True.",
+      "**D.** → False\n\nThe recovered law is $E(m)=10 m^{\\frac{2}{3}}$. Two equal animals use $2E(m)$, while one animal of doubled mass uses $E(2m)$. The scale factor is\n\n$$\n\\frac{E(2m)}{E(m)}=2^{\\frac{2}{3}}\n$$\n\n$$\n2^{\\frac{2}{3}}\\approx 1.59\n$$\n\nwhich is less than $2$. Because the exponent $\\frac{2}{3}$ sits below one, merging the two animals lowers total energy use rather than leaving it unchanged, so the statement is False.",
+      "**E.** → True\n\nThe recovered law is $E(m)=10 m^{\\frac{2}{3}}$. A $216$ kg animal is claimed still to use under $400$ energy units a day. Two hundred and sixteen is $6^{3}$, so\n\n$$\n216^{\\frac{2}{3}}=(6^{3})^{\\frac{2}{3}}\n$$\n\n$$\n(6^{3})^{\\frac{2}{3}}=6^{2}\n$$\n\n$$\n6^{2}=36\n$$\n\n$$\nE(216)=10\\cdot 36\n$$\n\n$$\nE(216)=360\n$$\n\n$$\n360<400\n$$\n\nThree hundred and sixty is still under $400$, so the statement is True."
     ],
     "difficulty_level": "4/5",
     "sort_order": 55,
-    "solution_overview": "Daily energy follows $E(m)=A m^{\\frac{2}{3}}$ for body mass $m>0$ kilograms. A $64$ kg animal uses $70$ more units than a $27$ kg animal. Herd totals add individual uses.\n\n**Part 1: Building the model.**\n\nLet $m$ be body mass in kilograms and $E(m)$ daily energy. The exponent $\\frac{2}{3}$ is given, so only $A$ is unknown. The $70$ units is a difference of two animals, and both masses are cubes.\n\n**1. Translate: the shape factors.**\n\n$$27^{\\frac{2}{3}}=9 \\qquad 64^{\\frac{2}{3}}=16$$\n\n**2. Translate: the recorded gap.**\n\n$$A(16-9)=70$$\n\n**Part 2: The model.**\n\n$$E(m)=10 m^{\\frac{2}{3}} \\tag{1}$$\n\n$$\\frac{E(m)}{m}=10 m^{-\\frac{1}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Named levels:\n\n$$E(27)=90 \\qquad E(64)=160>150 \\qquad E(216)=360<400$$\n\n**2.** Doubling $27$ kg to $54$ kg multiplies energy by $2^{\\frac{2}{3}}\\approx 1.59$, not by $2$. One $54$ kg animal uses about $142.7$, not $180$.\n\n**3.** Two $27$ kg animals use $180>160=E(64)$.\n\n**Answer.** $A=10$ | $E(64)=160$ | $E(216)=360$ | $E(54)\\approx 142.7$ | two $27$ kg animals $180$"
+    "solution_overview": "Daily energy follows $E(m)=A m^{\\frac{2}{3}}$ for body mass $m>0$ kilograms. A $64$ kg animal uses $70$ more units than a $27$ kg animal. Herd totals add individual uses.\n\n**Part 1: Building the model.**\n\nLet $m$ be body mass in kilograms and $E(m)$ daily energy. The exponent $\\frac{2}{3}$ is given, so only $A$ is unknown. The $70$ units is a difference of two animals, and both masses are cubes.\n\n**1. Translate: the shape factors.**\n\n$$27^{\\frac{2}{3}}=9 \\qquad 64^{\\frac{2}{3}}=16$$\n\n**2. Translate: the recorded gap.**\n\n$$A(16-9)=70$$\n\n**Part 2: The model.**\n\n$$E(m)=10 m^{\\frac{2}{3}} \\tag{1}$$\n\n$$\\frac{E(m)}{m}=10 m^{-\\frac{1}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Named levels:\n\n$$E(27)=90 \\qquad E(64)=160$$\n\n**2.** Inverse:\n\n$$m=\\bigl(E/10\\bigr)^{\\frac{3}{2}}$$\n\n**3.** Herd comparison at total mass $216$ kg:\n\n$$8E(27)=720 \\qquad E(216)=360$$\n\n**4.** Merging two equal animals:\n\n$$E(2m)/E(m)=2^{\\frac{2}{3}}<2$$\n\n**Answer.** $A=10$ | $E(64)=160$ | $8E(27)=2E(216)$ | per-kilogram law $10m^{-\\frac{1}{3}}$"
   },
   {
     "id": "math-8-56",
@@ -155,11 +155,11 @@
     "title": "Retail Catchment Under a Distance-Decay Law",
     "context": "Weekly footfall at a retail park from a residential zone follows $f(d)=A d^{-1.5}$ visitors, where $d>0$ is the driving distance in kilometres. The planning file omits the coefficient: it records only that a zone $4$ kilometres away supplies $350$ more visitors a week than a zone $16$ kilometres away. A zone counts as core catchment when it supplies at least $100$ visitors a week. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "A farther zone always supplies fewer visitors than a nearer zone.",
+      "Footfall follows an inverse-square law of driving distance.",
       "A zone $9$ kilometres away still supplies more than $100$ visitors a week.",
-      "Footfall follows an inverse-square law $d^{-2}$ of driving distance.",
-      "The drop from $4$ km to $16$ km already exceeds the remaining footfall at $16$ km.",
-      "Core catchment of $100$ visitors already ends before $11$ kilometres.",
-      "An extra kilometre of drive from $4$ km cuts more visitors than an extra kilometre from $16$ km."
+      "Core catchment already ends before $11$ kilometres.",
+      "An extra kilometre of drive cuts more visitors far from the park than near it."
     ],
     "answer_key": [
       true,
@@ -169,15 +169,15 @@
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recorded extra of $350$ visitors is a difference of two negative three-halves powers:\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\n16^{\\frac{3}{2}}=64\n$$\n\n$$\n\\frac{A}{8}-\\frac{A}{64}=350\n$$\n\n$$\n\\frac{7A}{64}=350\n$$\n\n$$\n7A=22400\n$$\n\n$$\nA=3200\n$$\n\nFootfall is then $f(d)=3200 d^{-\\frac{3}{2}}$. At nine kilometres:\n\n$$\n9^{\\frac{3}{2}}=27\n$$\n\n$$\nf(9)=\\frac{3200}{27}\n$$\n\n$$\n\\frac{3200}{27}\\approx 118.5\n$$\n\n$$\n118.5>100\n$$\n\nThe zone still supplies about $118.5$ visitors, already above $100$, so the statement is True.",
-      "**B.** → False\n\nAn inverse-square law would carry exponent $-2$. The recovered exponent is $-\\frac{3}{2}$, which is not $-2$. Quadrupling distance then cuts footfall by\n\n$$\n4^{-\\frac{3}{2}}=\\frac{1}{8}\n$$\n\nwhereas inverse-square decay would cut it by $\\frac{1}{16}$. The given decay is three-halves, not two, so the statement is False.",
-      "**C.** → True\n\nThe drop from four kilometres to sixteen kilometres is the logged $350$. What remains at sixteen kilometres is\n\n$$\nf(16)=\\frac{3200}{64}\n$$\n\n$$\n\\frac{3200}{64}=50\n$$\n\n$$\n350>50\n$$\n\nThe drop already exceeds the leftover footfall of $50$, so the statement is True.",
-      "**D.** → True\n\nCore catchment ends where footfall hits $100$:\n\n$$\n3200 d^{-\\frac{3}{2}}=100\n$$\n\n$$\nd^{\\frac{3}{2}}=32\n$$\n\n$$\nd=32^{\\frac{2}{3}}\n$$\n\n$$\n32^{\\frac{2}{3}}=8\\cdot 2^{\\frac{1}{3}}\n$$\n\n$$\n2^{\\frac{1}{3}}\\approx 1.260\n$$\n\n$$\nd\\approx 10.08\n$$\n\n$$\n10.08<11\n$$\n\nThe boundary sits near $10.08$ kilometres, already before $11$, so the statement is True.",
-      "**E.** → False\n\nAn extra kilometre is the magnitude of the slope. Because the exponent $-\\frac{3}{2}$ is more negative than $-1$, that slope itself falls as distance grows: the same extra kilometre removes more visitors near the park, where the curve is steep, than far out, where it has already flattened. Differentiating:\n\n$$\nf'(d)=-4800 d^{-\\frac{5}{2}}\n$$\n\n$$\n\\lvert f'(4)\\rvert=\\frac{4800}{4^{\\frac{5}{2}}}\n$$\n\n$$\n4^{\\frac{5}{2}}=32\n$$\n\n$$\n\\lvert f'(4)\\rvert=150\n$$\n\n$$\n\\lvert f'(16)\\rvert=\\frac{4800}{16^{\\frac{5}{2}}}\n$$\n\n$$\n16^{\\frac{5}{2}}=1024\n$$\n\n$$\n\\lvert f'(16)\\rvert\\approx 4.69\n$$\n\n$$\n4.69<150\n$$\n\nAn extra kilometre cuts more visitors near the park than far from it, so the statement is False."
+      "**A.** → True\n\nThe recovered exponent is $-\\frac{3}{2}$. A negative exponent means footfall falls as driving distance rises: each extra kilometre supplies fewer visitors than the last. For any farther zone $d_2>d_1$,\n\n$$\n\\frac{f(d_2)}{f(d_1)}=\\left(\\frac{d_2}{d_1}\\right)^{-\\frac{3}{2}}\n$$\n\nand that ratio is less than $1$. A farther zone always supplies fewer visitors than a nearer one, so the statement is True.",
+      "**B.** → False\n\nThe recovered law is $f(d)=3200 d^{-\\frac{3}{2}}$. An inverse-square law would carry exponent $-2$. The given decay is $-\\frac{3}{2}$, not $-2$. Quadrupling distance then cuts footfall by\n\n$$\n4^{-\\frac{3}{2}}=\\frac{1}{8}\n$$\n\nwhereas inverse-square decay would cut it by\n\n$$\n4^{-2}=\\frac{1}{16}\n$$\n\nThe two scale factors do not match, so the statement is False.",
+      "**C.** → True\n\nThe recovered law is $f(d)=3200 d^{-\\frac{3}{2}}$. A zone $9$ kilometres away is claimed still to supply more than $100$ visitors a week. Nine is $3^{2}$, so\n\n$$\n9^{\\frac{3}{2}}=(3^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(3^{2})^{\\frac{3}{2}}=3^{3}\n$$\n\n$$\n3^{3}=27\n$$\n\n$$\nf(9)=\\frac{3200}{27}\n$$\n\n$$\n\\frac{3200}{27}\\approx 118.5\n$$\n\n$$\n118.5>100\n$$\n\nThat reading still clears the $100$-visitor core threshold, so the statement is True.",
+      "**D.** → True\n\nThe recovered law is $f(d)=3200 d^{-\\frac{3}{2}}$. Core catchment ends where weekly visitors hit $100$:\n\n$$\n3200 d^{-\\frac{3}{2}}=100\n$$\n\n$$\nd^{\\frac{3}{2}}=32\n$$\n\nA power with a nonzero exponent inverts to another power, so\n\n$$\nd=32^{\\frac{2}{3}}\n$$\n\nNow compare neighbouring integers. At ten kilometres:\n\n$$\n10^{\\frac{3}{2}}=10\\sqrt{10}\n$$\n\n$$\n10\\sqrt{10}\\approx 31.62\n$$\n\nand $31.62<32$, so the boundary lies past $10$ km. At eleven kilometres:\n\n$$\n11^{\\frac{3}{2}}=11\\sqrt{11}\n$$\n\n$$\n11\\sqrt{11}\\approx 36.48\n$$\n\nand $36.48>32$, so the boundary lies before $11$ km. Core catchment already ends before eleven kilometres, so the statement is True.",
+      "**E.** → False\n\nThe recovered law is $f(d)=3200 d^{-\\frac{3}{2}}$. An extra kilometre of drive is the derivative:\n\n$$\nf'(d)=3200\\cdot \\left(-\\frac{3}{2}\\right) d^{-\\frac{5}{2}}\n$$\n\n$$\nf'(d)=-4800 d^{-\\frac{5}{2}}\n$$\n\nso $\\lvert f'(d)\\rvert=4800 d^{-\\frac{5}{2}}$ falls as $d$ rises. At four kilometres:\n\n$$\n4^{\\frac{5}{2}}=32\n$$\n\n$$\n\\lvert f'(4)\\rvert=\\frac{4800}{32}=150\n$$\n\nAt sixteen kilometres:\n\n$$\n16^{\\frac{5}{2}}=1024\n$$\n\n$$\n\\lvert f'(16)\\rvert=\\frac{4800}{1024}\\approx 4.69\n$$\n\nAn extra kilometre cuts more visitors near the park than far from it, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 56,
-    "solution_overview": "Footfall follows $f(d)=A d^{-1.5}$ visitors from a zone $d>0$ kilometres away. A zone at $4$ km supplies $350$ more visitors than one at $16$ km, and core catchment means at least $100$ visitors a week.\n\n**Part 1: Building the model.**\n\nLet $d$ be driving distance and $f(d)$ weekly visitors. The exponent $-1.5$ is given, so only $A$ is unknown. The recorded $350$ is a difference of two zones, and both distances are perfect squares.\n\n**1. Translate: the shape factors.**\n\n$$4^{1.5}=8 \\qquad 16^{1.5}=64$$\n\n**2. Translate: the recorded gap.**\n\n$$\\frac{A}{8}-\\frac{A}{64}=350$$\n\n**Part 2: The model.**\n\n$$\\frac{7A}{64}=350 \\tag{1}$$\n\n$$f(d)=3200 d^{-1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Zone levels:\n\n$$f(4)=400 \\qquad f(9)=\\frac{3200}{27}\\approx 118.5 \\qquad f(16)=50$$\n\n**2.** Drop versus remaining:\n\n$$f(4)-f(16)=350>50$$\n\n**3.** Core-catchment boundary:\n\n$$3200 d^{-1.5}=100 \\Rightarrow d=32^{\\frac{2}{3}}\\approx 10.08<11$$\n\n**4.** Slope magnitude falls as $d$ rises. The exponent is $-\\frac{3}{2}$, not $-2$.\n\n**Answer.** $A=3200$ | $f(4)=400$ | $f(9)\\approx 118.5$ | $f(16)=50$ | core out to $d\\approx 10.08$ km"
+    "solution_overview": "Footfall follows $f(d)=A d^{-1.5}$ visitors from a zone $d>0$ kilometres away. A zone at $4$ km supplies $350$ more visitors than one at $16$ km, and core catchment means at least $100$ visitors a week.\n\n**Part 1: Building the model.**\n\nLet $d$ be driving distance and $f(d)$ weekly visitors. The exponent $-1.5$ is given, so only $A$ is unknown. The recorded $350$ is a difference of two zones, and both distances are perfect squares.\n\n**1. Translate: the shape factors.**\n\n$$4^{1.5}=8 \\qquad 16^{1.5}=64$$\n\n**2. Translate: the recorded gap.**\n\n$$\\frac{A}{8}-\\frac{A}{64}=350$$\n\n**Part 2: The model.**\n\n$$\\frac{7A}{64}=350 \\tag{1}$$\n\n$$f(d)=3200 d^{-1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Zone levels:\n\n$$f(4)=400 \\qquad f(16)=50 \\qquad f(9)=\\frac{3200}{27}\\approx 118.5$$\n\n**2.** Core-catchment boundary:\n\n$$3200 d^{-1.5}=100 \\Rightarrow d=32^{\\frac{2}{3}}\\approx 10.08$$\n\n**3.** Scale and slope:\n\n$$\\frac{f(4d)}{f(d)}=\\frac{1}{8}$$\n\nThe slope magnitude $\\lvert f'(d)\\rvert$ falls as $d$ rises.\n\n**Answer.** $A=3200$ | $f(4)=400$ | $f(9)\\approx 118.5$ | core out to $d\\approx 10.08$ km"
   },
   {
     "id": "math-8-57",
@@ -185,29 +185,29 @@
     "title": "Rooftop Solar Output Across Two Installed Arrays",
     "context": "Daily output from a rooftop solar installation follows $y(a)=A a^{r}$ kilowatt-hours, where $a>0$ is the installed panel area in square metres. Two arrays are in service: a $100$ m² array delivers $240$ kWh a day, and a $225$ m² array delivers $360$ kWh. A proposal would expand the second array to $450$ m². Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Output per square metre falls from $100$ m² to $225$ m² by more than $0.5$ kWh.",
+      "Output grows more slowly than the installed area.",
       "Expanding the $225$ m² array to $450$ m² would push output above $520$ kWh.",
-      "A $400$ m² array already delivers more than $470$ kWh.",
+      "Output per square metre falls as the array grows.",
       "To double the $240$ kWh output, the $100$ m² array must more than double in area.",
-      "Two $100$ m² arrays together already beat one $400$ m² array."
+      "A $400$ m² array already delivers more than $470$ kWh."
     ],
     "answer_key": [
       true,
       false,
       true,
       true,
-      false
+      true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe two arrays give the ratio\n\n$$\n\\left(\\frac{225}{100}\\right)^{r}=\\frac{360}{240}\n$$\n\n$$\n2.25^{r}=1.5\n$$\n\n$$\n2.25^{\\frac{1}{2}}=1.5\n$$\n\nso $r=\\frac{1}{2}$. Then $A\\cdot 10=240$ pins $A=24$, and output is $y(a)=24\\sqrt{a}$. Output per square metre at the two sizes:\n\n$$\n\\frac{y(100)}{100}=\\frac{240}{100}\n$$\n\n$$\n\\frac{240}{100}=2.4\n$$\n\n$$\n\\frac{y(225)}{225}=\\frac{360}{225}\n$$\n\n$$\n\\frac{360}{225}=1.6\n$$\n\n$$\n2.4-1.6=0.8\n$$\n\n$$\n0.8>0.5\n$$\n\nThe average falls by $0.8$ kWh per square metre, already more than $0.5$, so the statement is True.",
-      "**B.** → False\n\nDoubling $225$ square metres to $450$ multiplies output by $\\sqrt{2}$, not by $2$, because the exponent is $\\frac{1}{2}$:\n\n$$\ny(450)=360\\sqrt{2}\n$$\n\n$$\n360\\sqrt{2}\\approx 509.1\n$$\n\n$$\n509.1<520\n$$\n\nThe proposal lands near $509.1$ kWh, which is not above $520$, so the statement is False.",
-      "**C.** → True\n\nAt four hundred square metres:\n\n$$\n\\sqrt{400}=20\n$$\n\n$$\ny(400)=24\\cdot 20\n$$\n\n$$\n24\\cdot 20=480\n$$\n\n$$\n480>470\n$$\n\nThe array delivers $480$ kWh, already more than $470$, so the statement is True.",
-      "**D.** → True\n\nDoubling the recorded $240$ kWh would double area only if the exponent were $1$. With a square-root law, output doubles when area quadruples:\n\n$$\n24\\sqrt{a}=480\n$$\n\n$$\n\\sqrt{a}=20\n$$\n\n$$\na=400\n$$\n\n$$\n\\frac{400}{100}=4\n$$\n\n$$\n4>2\n$$\n\nArea must quadruple, which is more than a doubling, so the statement is True.",
-      "**E.** → False\n\nTwo separate $100$ m² arrays add\n\n$$\n2y(100)=2\\cdot 240\n$$\n\n$$\n2\\cdot 240=480\n$$\n\nOne $400$ m² array delivers $y(400)=480$. The pair matches the single larger array; it does not beat it, so the statement is False."
+      "**A.** → True\n\nThe two arrays give $r=\\frac{1}{2}$. An exponent smaller than one means output grows more slowly than installed area: each extra square metre adds less than the one before it. Doubling area multiplies output by\n\n$$\n\\frac{y(2a)}{y(a)}=2^{\\frac{1}{2}}\n$$\n\n$$\n2^{\\frac{1}{2}}=\\sqrt{2}\\approx 1.41\n$$\n\nwhich is not $2$. One half sits below one, so the statement is True.",
+      "**B.** → False\n\nThe recovered law is $y(a)=24 a^{\\frac{1}{2}}$, and the $225$ m² array already delivers $360$ kWh. Expanding to $450$ m² is a doubling of area, which multiplies output by $\\sqrt{2}$:\n\n$$\ny(450)=360\\cdot 2^{\\frac{1}{2}}\n$$\n\n$$\n2^{\\frac{1}{2}}=\\sqrt{2}\n$$\n\n$$\ny(450)=360\\sqrt{2}\n$$\n\n$$\n360\\sqrt{2}\\approx 509.1\n$$\n\n$$\n509.1<520\n$$\n\nThat is under $520$ kWh, so the statement is False.",
+      "**C.** → True\n\nThe recovered law is $y(a)=24 a^{\\frac{1}{2}}$. Output per square metre is the law divided by area, which lowers the exponent by one:\n\n$$\n\\frac{y(a)}{a}=24 a^{\\frac{1}{2}-1}\n$$\n\n$$\n\\frac{y(a)}{a}=24 a^{-\\frac{1}{2}}\n$$\n\nThe leftover exponent is negative, so the average falls as the array grows. A larger roof delivers more kilowatt-hours in total, but fewer per square metre, so the statement is True.",
+      "**D.** → True\n\nThe recovered law is $y(a)=24 a^{\\frac{1}{2}}$. Doubling the recorded $240$ kWh means a target of $480$:\n\n$$\n24 a^{\\frac{1}{2}}=480\n$$\n\n$$\na^{\\frac{1}{2}}=20\n$$\n\n$$\na=400\n$$\n\nThe original array is $100$ square metres, and $400=4\\cdot 100$. Because $r=\\frac{1}{2}<1$, any doubling of output requires more than a doubling of area. Here area must quadruple, so the statement is True.",
+      "**E.** → True\n\nThe recovered law is $y(a)=24 a^{\\frac{1}{2}}$. A $400$ m² array is claimed already to deliver more than $470$ kWh. Four hundred is $20^{2}$, so\n\n$$\n400^{\\frac{1}{2}}=20\n$$\n\n$$\ny(400)=24\\cdot 20\n$$\n\n$$\ny(400)=480\n$$\n\n$$\n480>470\n$$\n\nFour hundred and eighty already clears $470$ kWh, so the statement is True."
     ],
     "difficulty_level": "5/5",
     "sort_order": 57,
-    "solution_overview": "Solar output is $y(a)=A a^{r}$ kWh for panel area $a>0$ m², with $y(100)=240$ and $y(225)=360$. A proposal doubles the second array to $450$ m².\n\n**Part 1: Building the model.**\n\nLet $a$ be panel area and $y(a)$ daily output. Both $A$ and $r$ are unknown, so the two arrays supply two equations: their ratio carries the exponent, and either array then carries the coefficient.\n\n**1. Translate: the ratio of the two arrays.**\n\n$$\\bigl(\\tfrac{225}{100}\\bigr)^{r}=\\tfrac{360}{240}$$\n\n**2. Translate: the coefficient.**\n\n$$A\\cdot 100^{r}=240$$\n\n**Part 2: The model.**\n\n$$2.25^{r}=1.5 \\tag{1}$$\n\n$$y(a)=24\\sqrt{a} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $1.5=2.25^{\\frac{1}{2}}$,\n\n$$r=\\frac{1}{2} \\qquad A=24 \\qquad y(a)=24\\sqrt{a}$$\n\n**2.** Named outputs:\n\n$$y(400)=480 \\qquad y(450)=360\\sqrt{2}\\approx 509.1<520$$\n\n**3.** Average product:\n\n$$\\frac{y(100)}{100}=2.4 \\qquad \\frac{y(225)}{225}=1.6 \\qquad 2.4-1.6=0.8>0.5$$\n\n**4.** Doubling $240$ kWh needs $a=400$. Two $100$ m² arrays:\n\n$$2y(100)=480=y(400)$$\n\n**Answer.** $r=\\frac{1}{2}$ | $A=24$ | $y(400)=480$ | $y(450)\\approx 509.1$ | AP drop $0.8$"
+    "solution_overview": "Solar output is $y(a)=A a^{r}$ kWh for panel area $a>0$ m², with $y(100)=240$ and $y(225)=360$. A proposal doubles the second array to $450$ m².\n\n**Part 1: Building the model.**\n\nLet $a$ be panel area and $y(a)$ daily output. Both $A$ and $r$ are unknown, so the two arrays supply two equations: their ratio carries the exponent, and either array then carries the coefficient.\n\n**1. Translate: the ratio of the two arrays.**\n\n$$\\bigl(\\tfrac{225}{100}\\bigr)^{r}=\\tfrac{360}{240}$$\n\n**2. Translate: the coefficient.**\n\n$$A\\cdot 100^{r}=240$$\n\n**Part 2: The model.**\n\n$$2.25^{r}=1.5 \\tag{1}$$\n\n$$y(a)=24\\sqrt{a} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $1.5=2.25^{\\frac{1}{2}}$,\n\n$$r=\\frac{1}{2} \\qquad A=24$$\n\n**2.** The proposal:\n\n$$y(450)=24\\sqrt{450}\\approx 509.1<520$$\n\n**3.** Average product:\n\n$$\\frac{y(a)}{a}=24 a^{-\\frac{1}{2}} \\qquad \\frac{y(100)}{100}=2.4$$\n\n**4.** Doubling the $240$ kWh output:\n\n$$a=400$$\n\n**Answer.** $r=\\frac{1}{2}$ | $A=24$ | $y(a)=24\\sqrt{a}$ | $y(450)\\approx 509$ | double output at $a=400$"
   },
   {
     "id": "math-8-58",
@@ -215,11 +215,11 @@
     "title": "Battery Cell Costs Down a Learning Curve",
     "context": "Unit cost for battery cells follows $c(N)=A N^{b}$ euros, where $N>0$ is cumulative output in thousands of cells. Two milestones are recorded: at $100$ thousand cells the unit cost was $80$, and at $400$ thousand it was $40$. Cumulative spend is unit cost multiplied by volume. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Doubling cumulative volume from $100$ to $200$ halves the unit cost.",
+      "Doubling cumulative volume halves the unit cost.",
+      "Unit cost falls as volume grows, but cumulative spend still rises.",
       "At $1600$ thousand cells the unit cost is already below $25$ euros.",
-      "At $25$ thousand cells the unit cost is still above $150$ euros.",
-      "Cumulative spend at $400$ thousand already exceeds twice the spend at $100$ thousand.",
-      "Quadrupling from $100$ to $400$ thousand cells cuts unit cost by more than $35$ euros."
+      "Quadrupling cumulative volume from $100$ to $400$ thousand cells more than doubles cumulative spend.",
+      "At $25$ thousand cells the unit cost is still above $150$ euros."
     ],
     "answer_key": [
       false,
@@ -229,15 +229,15 @@
       true
     ],
     "tactical_explanations": [
-      "**A.** → False\n\nThe two milestones give the ratio\n\n$$\n\\left(\\frac{400}{100}\\right)^{b}=\\frac{40}{80}\n$$\n\n$$\n4^{b}=\\frac{1}{2}\n$$\n\n$$\n4^{-\\frac{1}{2}}=\\frac{1}{2}\n$$\n\nso $b=-\\frac{1}{2}$. Then $A\\cdot 100^{-\\frac{1}{2}}=80$ pins $A=800$, and unit cost is $c(N)=800 N^{-\\frac{1}{2}}$. Doubling $100$ thousand cells would halve cost only if the exponent were $-1$. With exponent $-\\frac{1}{2}$ the scale factor is\n\n$$\n\\frac{c(200)}{c(100)}=2^{-\\frac{1}{2}}\n$$\n\n$$\n2^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{2}}\n$$\n\n$$\nc(200)=40\\sqrt{2}\n$$\n\n$$\n40\\sqrt{2}\\approx 56.57\n$$\n\n$$\n\\frac{80}{2}=40\n$$\n\n$$\n56.57\\neq 40\n$$\n\nA single doubling multiplies cost by $\\frac{1}{\\sqrt{2}}$, not by $\\frac{1}{2}$, so the statement is False.",
-      "**B.** → True\n\nAt $1600$ thousand cells:\n\n$$\n\\sqrt{1600}=40\n$$\n\n$$\nc(1600)=\\frac{800}{40}\n$$\n\n$$\n\\frac{800}{40}=20\n$$\n\n$$\n20<25\n$$\n\nUnit cost is $20$ euros, already below $25$, so the statement is True.",
-      "**C.** → True\n\nAt $25$ thousand cells:\n\n$$\n\\sqrt{25}=5\n$$\n\n$$\nc(25)=\\frac{800}{5}\n$$\n\n$$\n\\frac{800}{5}=160\n$$\n\n$$\n160>150\n$$\n\nUnit cost is $160$ euros, still above $150$, so the statement is True.",
-      "**D.** → False\n\nCumulative spend is unit cost times volume, which raises the exponent by one:\n\n$$\nS(N)=800 N^{\\frac{1}{2}}\n$$\n\nQuadrupling volume from $100$ to $400$ therefore doubles spend, because $\\sqrt{4}=2$:\n\n$$\nS(100)=800\\cdot 10\n$$\n\n$$\n800\\cdot 10=8000\n$$\n\n$$\nS(400)=800\\cdot 20\n$$\n\n$$\n800\\cdot 20=16000\n$$\n\n$$\n2\\cdot 8000=16000\n$$\n\nSpend at $400$ thousand equals twice the spend at $100$ thousand; it does not exceed twice, so the statement is False.",
-      "**E.** → True\n\nQuadrupling from $100$ to $400$ thousand cells cuts unit cost by\n\n$$\n80-40=40\n$$\n\n$$\n40>35\n$$\n\nThe cut is $40$ euros, already more than $35$, so the statement is True."
+      "**A.** → False\n\nThe two milestones give $b=-\\frac{1}{2}$. Doubling volume would halve unit cost only if the exponent were $-1$, because only then is the scale factor $2^{-1}=\\frac{1}{2}$. With exponent $-\\frac{1}{2}$ the ratio is\n\n$$\n\\frac{c(2N)}{c(N)}=2^{-\\frac{1}{2}}\n$$\n\n$$\n2^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{2}}\n$$\n\n$$\n\\frac{1}{\\sqrt{2}}\\approx 0.707\n$$\n\nwhich is not $\\frac{1}{2}$. Quadrupling would halve the unit cost, but a single doubling does not, so the statement is False.",
+      "**B.** → True\n\nUnit cost is $c(N)=800 N^{-\\frac{1}{2}}$. Cumulative spend multiplies unit cost by volume, which raises the exponent by one:\n\n$$\nS(N)=N\\cdot 800 N^{-\\frac{1}{2}}\n$$\n\n$$\nS(N)=800 N^{\\frac{1}{2}}\n$$\n\nThe leftover exponent $\\frac{1}{2}$ is positive, so spend is strictly increasing for $N>0$, even while unit cost $800 N^{-\\frac{1}{2}}$ falls. Unit cost falls as volume grows, but cumulative spend still rises, so the statement is True.",
+      "**C.** → True\n\nThe recovered law is $c(N)=800 N^{-\\frac{1}{2}}$. At $1600$ thousand cells the unit cost is claimed already to sit below $25$ euros. Sixteen hundred is $40^{2}$, so\n\n$$\n1600^{\\frac{1}{2}}=40\n$$\n\n$$\nc(1600)=\\frac{800}{40}\n$$\n\n$$\nc(1600)=20\n$$\n\n$$\n20<25\n$$\n\nTwenty is already below $25$, so the statement is True.",
+      "**D.** → False\n\nCumulative spend is $S(N)=800 N^{\\frac{1}{2}}$. Quadrupling volume is an input factor of $4$:\n\n$$\n\\frac{S(4N)}{S(N)}=4^{\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\nSpend exactly doubles; it does not more than double. The leftover exponent on spend is $\\frac{1}{2}$, which sits below one, so the statement is False.",
+      "**E.** → True\n\nThe recovered law is $c(N)=800 N^{-\\frac{1}{2}}$. At $25$ thousand cells the unit cost is claimed still to sit above $150$ euros. Twenty-five is $5^{2}$, so\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\nc(25)=\\frac{800}{5}\n$$\n\n$$\nc(25)=160\n$$\n\n$$\n160>150\n$$\n\nOne hundred and sixty is still above $150$, so the statement is True."
     ],
     "difficulty_level": "5/5",
     "sort_order": 58,
-    "solution_overview": "Unit cost is $c(N)=A N^{b}$ euros at cumulative volume $N>0$ thousand cells, with $c(100)=80$ and $c(400)=40$. Cumulative spend is $S=N\\,c(N)$.\n\n**Part 1: Building the model.**\n\nLet $N$ be cumulative volume, $c$ unit cost, and $S$ cumulative spend. Two milestones give two equations: their ratio isolates $b$, and either milestone then fixes $A$.\n\n**1. Translate: the ratio of the milestones.**\n\n$$4^{b}=\\frac{40}{80}$$\n\n**2. Translate: cumulative spend.**\n\n$$S(N)=A N^{b+1}$$\n\n**Part 2: The model.**\n\n$$c(N)=800 N^{-\\frac{1}{2}} \\tag{1}$$\n\n$$S(N)=800 N^{\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Exponent and coefficient:\n\n$$b=-\\frac{1}{2} \\qquad A=800$$\n\n**2.** Named costs:\n\n$$c(25)=160 \\qquad c(200)=40\\sqrt{2}\\approx 56.57 \\qquad c(1600)=20$$\n\n**3.** Quadrupling cut and spend:\n\n$$c(100)-c(400)=40>35 \\qquad S(100)=8000 \\qquad S(400)=16000=2S(100)$$\n\n**Answer.** $b=-\\frac{1}{2}$ | $A=800$ | $c(1600)=20$ | $c(25)=160$ | $S(400)=2S(100)$"
+    "solution_overview": "Unit cost is $c(N)=A N^{b}$ euros at cumulative volume $N>0$ thousand cells, with $c(100)=80$ and $c(400)=40$. Cumulative spend is $S=N\\,c(N)$.\n\n**Part 1: Building the model.**\n\nLet $N$ be cumulative volume, $c$ unit cost, and $S$ cumulative spend. Two milestones give two equations: their ratio isolates $b$, and either milestone then fixes $A$.\n\n**1. Translate: the ratio of the milestones.**\n\n$$4^{b}=\\frac{40}{80}$$\n\n**2. Translate: cumulative spend.**\n\n$$S(N)=A N^{b+1}$$\n\n**Part 2: The model.**\n\n$$c(N)=800 N^{-\\frac{1}{2}} \\tag{1}$$\n\n$$S(N)=800 N^{\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Exponent and coefficient:\n\n$$b=-\\frac{1}{2} \\qquad A=800$$\n\n**2.** Named cost and spend:\n\n$$c(1600)=20 \\qquad S(100)=8000$$\n\n**3.** Scale:\n\n$$4^{-\\frac{1}{2}}=\\frac{1}{2} \\qquad 2^{-\\frac{1}{2}}\\approx 0.707$$\n\n**4.** Quadrupling $N$ doubles $S$, it does not more than double $S$.\n\n**Answer.** $b=-\\frac{1}{2}$ | $A=800$ | $c(1600)=20$ | $S(100)=8000$ | $S(N)=800\\sqrt{N}$"
   },
   {
     "id": "math-8-59",
@@ -245,29 +245,29 @@
     "title": "Sediment Transport Driven by Channel Discharge",
     "context": "Sediment transport in a channel follows $S(v)=A v^{3}$ tonnes per day, where $v>0$ is flow velocity, and a gauged run at $v=3$ carried $135$ tonnes per day. Velocity itself depends on discharge through $v(q)=\\frac{q^{0.5}}{2}$. The channel's stability limit is $5000$ tonnes per day. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "Doubling the discharge more than doubles sediment transport.",
+      "After both stages, transport is a power function of discharge.",
       "A discharge of $400$ already pushes transport above $4500$ tonnes per day.",
-      "At discharge $64$, transport is still under $300$ tonnes per day.",
-      "Doubling the discharge from $64$ to $128$ more than doubles sediment transport.",
-      "Doubling the flow velocity from $3$ to $6$ doubles sediment transport.",
-      "The extra transport from discharge $64$ to $400$ already exceeds $4500$."
+      "Doubling the flow velocity doubles sediment transport.",
+      "At discharge $64$, transport is still under $300$ tonnes per day."
     ],
     "answer_key": [
       true,
-      false,
+      true,
       true,
       false,
-      true
+      false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe gauged run $S(3)=135$ pins the transport coefficient:\n\n$$\nA\\cdot 3^{3}=135\n$$\n\n$$\n27A=135\n$$\n\n$$\nA=5\n$$\n\nVelocity is $v(q)=\\frac{q^{\\frac{1}{2}}}{2}$, so composing cubes the inner stage:\n\n$$\nS(q)=5\\left(\\frac{q^{\\frac{1}{2}}}{2}\\right)^{3}\n$$\n\n$$\nS(q)=\\frac{5}{8} q^{\\frac{3}{2}}\n$$\n\nAt discharge $400$:\n\n$$\n400^{\\frac{1}{2}}=20\n$$\n\n$$\n400^{\\frac{3}{2}}=20^{3}\n$$\n\n$$\n20^{3}=8000\n$$\n\n$$\nS(400)=\\frac{5}{8}\\cdot 8000\n$$\n\n$$\n\\frac{5}{8}\\cdot 8000=5000\n$$\n\n$$\n5000>4500\n$$\n\nTransport is $5000$ tonnes per day, already above $4500$, so the statement is True.",
-      "**B.** → False\n\nAt discharge $64$:\n\n$$\n64^{\\frac{1}{2}}=8\n$$\n\n$$\n64^{\\frac{3}{2}}=8^{3}\n$$\n\n$$\n8^{3}=512\n$$\n\n$$\nS(64)=\\frac{5}{8}\\cdot 512\n$$\n\n$$\n\\frac{5}{8}\\cdot 512=320\n$$\n\n$$\n320>300\n$$\n\nTransport is $320$ tonnes per day, which is not under $300$, so the statement is False.",
-      "**C.** → True\n\nDoubling discharge would double transport only if the composed exponent were $1$. With exponent $\\frac{3}{2}$ the scale factor is\n\n$$\n\\frac{S(2q)}{S(q)}=2^{\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\sqrt{2}\n$$\n\n$$\n2\\sqrt{2}\\approx 2.83\n$$\n\n$$\n2.83>2\n$$\n\nDoubling discharge more than doubles sediment transport, so the statement is True.",
-      "**D.** → False\n\nDoubling velocity acts on the transport stage alone. That exponent is $3$, so the scale factor would be $2$ only if the exponent were $1$:\n\n$$\n\\frac{S(2v)}{S(v)}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\n$$\n8\\neq 2\n$$\n\nDoubling velocity multiplies sediment transport by eight, not by two, so the statement is False.",
-      "**E.** → True\n\nThe extra transport from discharge $64$ to $400$ is a difference of two named levels:\n\n$$\nS(400)=5000\n$$\n\n$$\nS(64)=320\n$$\n\n$$\n5000-320=4680\n$$\n\n$$\n4680>4500\n$$\n\nThe extra of $4680$ already exceeds $4500$, so the statement is True."
+      "**A.** → True\n\nThe composed law is $S(q)=\\frac{5}{8} q^{\\frac{3}{2}}$. Doubling discharge would double transport only if the composed exponent were $1$. With exponent $\\frac{3}{2}$ the scale factor is\n\n$$\n\\frac{S(2q)}{S(q)}=2^{\\frac{3}{2}}\n$$\n\n$$\n2^{\\frac{3}{2}}=2\\sqrt{2}\n$$\n\n$$\n2\\sqrt{2}\\approx 2.83\n$$\n\nwhich exceeds $2$. Doubling discharge more than doubles sediment transport, so the statement is True.",
+      "**B.** → True\n\nVelocity is a square-root power of discharge, and transport is a cube of velocity. A composition of power laws is again a power law, because substituting multiplies the exponents. The gauged run gives $A=5$, so\n\n$$\nS(q)=5\\left(\\frac{q^{\\frac{1}{2}}}{2}\\right)^{3}\n$$\n\n$$\nS(q)=5\\cdot \\frac{1}{8}\\cdot q^{\\frac{3}{2}}\n$$\n\n$$\nS(q)=\\frac{5}{8} q^{\\frac{3}{2}}\n$$\n\nThat is a power of discharge with exponent $\\frac{3}{2}$, so the statement is True.",
+      "**C.** → True\n\nThe composed law is $S(q)=\\frac{5}{8} q^{\\frac{3}{2}}$. A discharge of $400$ is claimed already to push transport above $4500$ tonnes per day. Four hundred is $20^{2}$, so\n\n$$\n400^{\\frac{3}{2}}=(20^{2})^{\\frac{3}{2}}\n$$\n\n$$\n(20^{2})^{\\frac{3}{2}}=20^{3}\n$$\n\n$$\n20^{3}=8000\n$$\n\n$$\nS(400)=\\frac{5}{8}\\cdot 8000\n$$\n\n$$\nS(400)=5000\n$$\n\n$$\n5000>4500\n$$\n\nFive thousand already clears $4500$ tonnes per day, so the statement is True.",
+      "**D.** → False\n\nTransport as a function of velocity is $S(v)=5 v^{3}$. Doubling velocity acts on this stage alone. The exponent is $3$, so the scale factor is\n\n$$\n\\frac{S(2v)}{S(v)}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\nwhich is not $2$. Doubling velocity multiplies sediment transport by eight, so the statement is False.",
+      "**E.** → False\n\nAfter both stages, transport is $S(q)=\\frac{5}{8} q^{\\frac{3}{2}}$. The statement says that at discharge $64$ that load is still under $300$ tonnes a day, so run the composition at that discharge. Velocity first:\n\n$$\nv(64)=\\frac{\\sqrt{64}}{2}\n$$\n\n$$\n\\sqrt{64}=8\n$$\n\n$$\nv(64)=\\frac{8}{2}=4\n$$\n\nThen cube that velocity through the sediment stage $S=5 v^{3}$:\n\n$$\nS=5\\cdot 4^{3}\n$$\n\n$$\n4^{3}=64\n$$\n\n$$\nS=5\\cdot 64=320\n$$\n\n$$\n320>300\n$$\n\nThree hundred and twenty already clears $300$, so transport is not still under the line, so the statement is False."
     ],
     "difficulty_level": "5/5",
     "sort_order": 59,
-    "solution_overview": "Transport is $S(v)=A v^{3}$ with $S(3)=135$. Velocity is $v(q)=\\frac{q^{0.5}}{2}$, and the stability limit is $5000$ tonnes per day.\n\n**Part 1: Building the model.**\n\nLet $q$ be discharge, $v$ flow velocity, and $S$ sediment transport. One gauged run calibrates the transport stage; composing then multiplies the exponents and cubes the inner coefficient.\n\n**1. Translate: the gauged run.**\n\n$$A\\cdot 3^{3}=135$$\n\n**2. Translate: the composition.**\n\n$$S(q)=5\\left(\\frac{q^{0.5}}{2}\\right)^{3}$$\n\n**Part 2: The model.**\n\n$$S(v)=5 v^{3} \\tag{1}$$\n\n$$S(q)=0.625 q^{1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Named discharges:\n\n$$S(400)=5000>4500 \\qquad S(64)=320$$\n\nwhich is not under $300$.\n\n**2.** The two doublings:\n\n$$\\frac{S(2q)}{S(q)}=2^{1.5}\\approx 2.83 \\qquad \\frac{S(2v)}{S(v)}=8$$\n\n**3.** Extra from $64$ to $400$:\n\n$$5000-320=4680>4500$$\n\n**Answer.** $A=5$ | $S(q)=0.625q^{1.5}$ | $S(400)=5000$ | $S(64)=320$ | extra $4680$"
+    "solution_overview": "Transport is $S(v)=A v^{3}$ with $S(3)=135$. Velocity is $v(q)=\\frac{q^{0.5}}{2}$, and the stability limit is $5000$ tonnes per day.\n\n**Part 1: Building the model.**\n\nLet $q$ be discharge, $v$ flow velocity, and $S$ sediment transport. One gauged run calibrates the transport stage; composing then multiplies the exponents and cubes the inner coefficient.\n\n**1. Translate: the gauged run.**\n\n$$A\\cdot 3^{3}=135$$\n\n**2. Translate: the composition.**\n\n$$S(q)=5\\left(\\frac{q^{0.5}}{2}\\right)^{3}$$\n\n**Part 2: The model.**\n\n$$S(v)=5 v^{3} \\tag{1}$$\n\n$$S(q)=0.625 q^{1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Stability limit:\n\n$$0.625 q^{1.5}=5000 \\Rightarrow q=400 \\qquad v(400)=10$$\n\n**2.** The gauged discharge:\n\n$$v(36)=3 \\qquad S(36)=135$$\n\n**3.** The two doublings:\n\n$$\\frac{S(2q)}{S(q)}=2^{1.5}\\approx 2.83 \\qquad \\frac{S(2v)}{S(v)}=8$$\n\n**Answer.** $A=5$ | $S(q)=0.625q^{1.5}$ | limit at $q=400$ | $S(36)=135$"
   },
   {
     "id": "math-8-60",
@@ -275,28 +275,28 @@
     "title": "Highly Elastic Demand Under a Price Indexation",
     "context": "A commodity trader faces demand $q(p)=A p^{-3}$ units at a price $p>0$, and a price of $2$ clears $500$ units. A proposed indexation would raise the price by $10\\%$ across the board, and the trader wants the effect on both volume and revenue $R=pq$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "Revenue is a power function of price.",
+      "Raising the price always cuts revenue.",
       "At a price of $2.50$, revenue is already below $700$.",
-      "A price rise of $10\\%$ from $2$ cuts quantity by more than $20\\%$.",
-      "Doubling the price from $2$ to $4$ halves revenue.",
-      "At price $2$, revenue already exceeds $900$.",
-      "The revenue drop from $2$ to $2.50$ already exceeds $300$."
+      "A price rise of $10\\%$ cuts quantity by more than $20\\%$.",
+      "Because demand is highly elastic, a price rise raises revenue."
     ],
     "answer_key": [
       true,
       true,
-      false,
       true,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe observed pair $q(2)=500$ pins the coefficient:\n\n$$\nA\\cdot 2^{-3}=500\n$$\n\n$$\n2^{-3}=\\frac{1}{8}\n$$\n\n$$\n\\frac{A}{8}=500\n$$\n\n$$\nA=4000\n$$\n\nDemand is then $q(p)=4000 p^{-3}$, so revenue is $R(p)=4000 p^{-2}$. At a price of $2.50=\\frac{5}{2}$:\n\n$$\n\\left(\\frac{5}{2}\\right)^{2}=\\frac{25}{4}\n$$\n\n$$\nR(2.50)=4000\\cdot\\frac{4}{25}\n$$\n\n$$\n4000\\cdot\\frac{4}{25}=640\n$$\n\n$$\n640<700\n$$\n\nRevenue is $640$, already below $700$, so the statement is True.",
-      "**B.** → True\n\nA $10\\%$ rise from price $2$ lands at $2.2$. Quantity is a cube in the denominator, so the relative cut is larger than $10\\%$, but a linear elasticity shortcut of $3\\cdot 10\\%=30\\%$ is not the exact power. The recorded $500$ units must be compared with the new level:\n\n$$\n2.2^{3}=10.648\n$$\n\n$$\nq(2.2)=\\frac{4000}{10.648}\n$$\n\n$$\nq(2.2)\\approx 375.6\n$$\n\n$$\n500-375.6=124.4\n$$\n\n$$\n\\frac{124.4}{500}\\approx 0.249\n$$\n\nThe cut is about $25\\%$ from $500$, already more than $20\\%$, so the statement is True.",
-      "**C.** → False\n\nDoubling the price from $2$ to $4$ would halve revenue only if the revenue exponent were $-1$. Revenue is $R(p)=4000 p^{-2}$, so the scale factor is\n\n$$\n\\frac{R(4)}{R(2)}=2^{-2}\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\n$$\nR(2)=1000\n$$\n\n$$\nR(4)=\\frac{4000}{16}\n$$\n\n$$\n\\frac{4000}{16}=250\n$$\n\n$$\n\\frac{1000}{2}=500\n$$\n\n$$\n250\\neq 500\n$$\n\nRevenue falls to a quarter of $1000$, not to a half, so the statement is False.",
-      "**D.** → True\n\nAt price $2$:\n\n$$\nR(2)=4000\\cdot 2^{-2}\n$$\n\n$$\n2^{2}=4\n$$\n\n$$\nR(2)=\\frac{4000}{4}\n$$\n\n$$\n\\frac{4000}{4}=1000\n$$\n\n$$\n1000>900\n$$\n\nRevenue is $1000$, already above $900$, so the statement is True.",
-      "**E.** → True\n\nThe revenue drop from $2$ to $2.50$ is a difference of two named levels:\n\n$$\nR(2)=1000\n$$\n\n$$\nR(2.50)=640\n$$\n\n$$\n1000-640=360\n$$\n\n$$\n360>300\n$$\n\nThe drop of $360$ already exceeds $300$, so the statement is True."
+      "**A.** → True\n\nDemand is $q(p)=4000 p^{-3}$. Revenue multiplies by price, which raises the exponent by one:\n\n$$\nR(p)=p\\cdot 4000 p^{-3}\n$$\n\n$$\nR(p)=4000 p^{1-3}\n$$\n\n$$\nR(p)=4000 p^{-2}\n$$\n\nThat is a power of $p$ with exponent $-2$. A product of two powers of the same variable is again a power, so the statement is True.",
+      "**B.** → True\n\nRevenue is $R(p)=4000 p^{-2}$. The leftover exponent $-2$ is negative, so $R$ is strictly decreasing for $p>0$:\n\n$$\nR'(p)=-8000 p^{-3}\n$$\n\nand $-8000 p^{-3}<0$ for every $p>0$. Each extra unit of price cuts revenue rather than raising it. Raising the price always cuts revenue along this curve, so the statement is True.",
+      "**C.** → True\n\nRevenue is $R(p)=4000 p^{-2}$. At a price of $2.50$ revenue is claimed already to sit below $700$. Write $2.50=\\frac{5}{2}$:\n\n$$\n\\left(\\frac{5}{2}\\right)^{2}=\\frac{25}{4}\n$$\n\n$$\nR(2.50)=4000\\cdot \\left(\\frac{5}{2}\\right)^{-2}\n$$\n\n$$\nR(2.50)=4000\\cdot \\frac{4}{25}\n$$\n\n$$\nR(2.50)=640\n$$\n\n$$\n640<700\n$$\n\nSix hundred and forty is already below $700$, so the statement is True.",
+      "**D.** → True\n\nDemand is $q(p)=4000 p^{-3}$. A $10\\%$ price rise is the multiplier $1.1$ acting through the demand exponent $-3$. The coefficient cancels:\n\n$$\n\\frac{q(1.1p)}{q(p)}=1.1^{-3}\n$$\n\n$$\n1.1^{3}=1.331\n$$\n\n$$\n1.1^{-3}=\\frac{1}{1.331}\n$$\n\n$$\n\\frac{1}{1.331}\\approx 0.751\n$$\n\nThe relative cut is about $24.9\\%$, which is more than $20\\%$, so the statement is True.",
+      "**E.** → False\n\nHighly elastic demand means $\\lvert r\\rvert=3>1$, so revenue falls when price rises. Revenue is $R(p)=4000 p^{-2}$, and a $10\\%$ rise multiplies revenue by\n\n$$\n\\frac{R(1.1p)}{R(p)}=1.1^{-2}\n$$\n\n$$\n1.1^{2}=1.21\n$$\n\n$$\n1.1^{-2}=\\frac{1}{1.21}\n$$\n\n$$\n\\frac{1}{1.21}\\approx 0.826\n$$\n\na cut of about $17\\%$. Elastic demand is why a price rise cuts revenue here, not why it would raise it, so the statement is False."
     ],
     "difficulty_level": "5/5",
     "sort_order": 60,
-    "solution_overview": "Demand is $q(p)=A p^{-3}$ with $q(2)=500$. Revenue is $R=pq$, and a proposed indexation raises the price by $10\\%$.\n\n**Part 1: Building the model.**\n\nLet $p$ be price, $q$ quantity, and $R$ revenue. The isoelastic form fixes the exponent, the observed pair pins the coefficient, and multiplying by $p$ raises the exponent by one.\n\n**1. Translate: the observed pair.**\n\n$$A\\cdot 2^{-3}=500 \\qquad 2^{-3}=\\tfrac{1}{8}$$\n\n**2. Translate: the indexation.**\n\n$$\\frac{q(1.1p)}{q(p)}=1.1^{-3} \\qquad \\frac{R(1.1p)}{R(p)}=1.1^{-2}$$\n\n**Part 2: The model.**\n\n$$q(p)=4000 p^{-3} \\tag{1}$$\n\n$$R(p)=4000 p^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Coefficient and named revenues:\n\n$$A=4000 \\qquad R(2)=1000>900 \\qquad R(2.5)=640<700$$\n\n**2.** A $10\\%$ rise from $2$ is $p=2.2$:\n\n$$q(2.2)=\\frac{4000}{2.2^{3}}\\approx 375.6$$\n\na cut of about $25\\%$ from $500$, already more than $20\\%$.\n\n**3.** Doubling price from $2$ to $4$ gives $R(4)=250$, a quarter of $1000$, not a half. The drop from $2$ to $2.50$ is $360>300$.\n\n**Answer.** $A=4000$ | $R(2)=1000$ | $R(2.5)=640$ | $q(2.2)\\approx 375.6$ | $R(4)=250$"
+    "solution_overview": "Demand is $q(p)=A p^{-3}$ with $q(2)=500$. Revenue is $R=pq$, and a proposed indexation raises the price by $10\\%$.\n\n**Part 1: Building the model.**\n\nLet $p$ be price, $q$ quantity, and $R$ revenue. The isoelastic form fixes the exponent, the observed pair pins the coefficient, and multiplying by $p$ raises the exponent by one.\n\n**1. Translate: the observed pair.**\n\n$$A\\cdot 2^{-3}=500 \\qquad 2^{-3}=\\tfrac{1}{8}$$\n\n**2. Translate: the indexation.**\n\n$$\\frac{q(1.1p)}{q(p)}=1.1^{-3} \\qquad \\frac{R(1.1p)}{R(p)}=1.1^{-2}$$\n\n**Part 2: The model.**\n\n$$q(p)=4000 p^{-3} \\tag{1}$$\n\n$$R(p)=4000 p^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Coefficient and current levels:\n\n$$A=4000 \\qquad q(2)=500 \\qquad R(2)=1000$$\n\n**2.** A named price:\n\n$$R(2.5)=640$$\n\n**3.** The $10\\%$ indexation:\n\n$$1.1^{-3}\\approx 0.751 \\;(-24.9\\%) \\qquad 1.1^{-2}\\approx 0.826 \\;(-17.4\\%)$$\n\n**4.** Sign of revenue:\n\n$R'(p)<0$ for every $p>0$.\n\n**Answer.** $A=4000$ | $R(p)=4000p^{-2}$ | $R(2.5)=640$ | $10\\%$ rise cuts quantity by about $25\\%$"
   }
 ]

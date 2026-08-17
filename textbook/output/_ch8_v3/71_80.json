@@ -5,29 +5,29 @@
     "title": "Subscriber Demand and Revenue for a Streaming Tier",
     "context": "A streaming service prices one subscription tier at $p$ euros a month. Paid subscribers, in thousands, follow $q(p)=A p^{r}$ with both constants unknown. Quadrupling any price multiplies the subscriber count by $\\frac{1}{8}$, and at $4$ euros the tier holds $250$ thousand subscribers. Monthly revenue is $R=pq$, also in thousands of euros. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "The exponent on price in the demand model is smaller than minus one, so subscribers fall faster than the price rises.",
       "At a price of $16$ euros, monthly revenue is already under $600$ thousand euros.",
-      "At a price of $9$ euros, monthly revenue is under $600$ thousand euros.",
-      "Doubling the $4$-euro price halves revenue.",
-      "At the recorded $4$-euro price, revenue already exceeds $900$ thousand euros.",
-      "The revenue drop from $4$ to $16$ euros already exceeds $450$ thousand euros."
+      "Revenue is a power function of price.",
+      "To double monthly revenue from the recorded $4$-euro price, the service must cut that price in half.",
+      "At a price of $9$ euros, monthly revenue is under $600$ thousand euros."
     ],
     "answer_key": [
       true,
-      false,
-      false,
       true,
-      true
+      true,
+      false,
+      false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nQuadrupling any price multiplies the subscriber count by one eighth, so the demand exponent solves\n\n$$\n4^{r}=\\frac{1}{8}\n$$\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\nr=-\\frac{3}{2}\n$$\n\nThe four-euro level of two hundred and fifty thousand subscribers then pins the coefficient:\n\n$$\nA\\cdot 4^{-\\frac{3}{2}}=250\n$$\n\n$$\n\\frac{A}{8}=250\n$$\n\n$$\nA=2000\n$$\n\nMonthly revenue is price times demand, which adds one to the exponent, so $R(p)=2000p^{-\\frac{1}{2}}$. At sixteen euros the square root is $4$:\n\n$$\nR(16)=\\frac{2000}{4}\n$$\n\n$$\nR(16)=500\n$$\n\nFive hundred already sits under six hundred, so the statement is True.",
-      "**B.** → False\n\nAt a price of nine euros:\n\n$$\nR(9)=2000\\cdot 9^{-\\frac{1}{2}}\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\nR(9)=\\frac{2000}{3}\\approx 666.67\n$$\n\nAbout $666.67$ thousand euros sits above six hundred, not under, so the statement is False.",
-      "**C.** → False\n\nHalving revenue on a doubled price would need leftover exponent $-1$ on $R$. Revenue is $R(p)=2000p^{-\\frac{1}{2}}$, so the scale factor is\n\n$$\n\\frac{R(2p)}{R(p)}=2^{-\\frac{1}{2}}\n$$\n\n$$\n2^{-\\frac{1}{2}}\\approx 0.707\n$$\n\nFrom the recorded $R(4)=1000$, doubling to eight euros would leave about $707$ thousand euros, not $500$. The leftover exponent is minus one half, not minus one, so the statement is False.",
-      "**D.** → True\n\nAt the recorded four-euro price:\n\n$$\nR(4)=2000\\cdot 4^{-\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\nR(4)=1000\n$$\n\nOne thousand already exceeds nine hundred, so the statement is True.",
-      "**E.** → True\n\nThe four-euro reading is the recorded gauging of one thousand. Sixteen euros is a quadrupling of that price, and leftover exponent $-\\frac{1}{2}$ turns a factor of four into a factor of one half, so revenue falls from $1000$ to $500$. The drop is half the recorded reading itself:\n\n$$\nR(4)-R(16)=1000-500\n$$\n\n$$\n1000-500=500\n$$\n\nFive hundred already exceeds four hundred and fifty, so the statement is True."
+      "**A.** → True\n\nPaid subscribers follow $q(p)=A p^{r}$. Quadrupling any price multiplies the count by $\\frac{1}{8}$, so the scale rule isolates the exponent:\n\n$$\n4^{r}=\\frac{1}{8}\n$$\n\nWrite both sides as powers of two. Four is $2^{2}$ and eight is $2^{3}$:\n\n$$\n(2^{2})^{r}=2^{-3}\n$$\n\n$$\n2^{2r}=2^{-3}\n$$\n\nMatching exponents gives\n\n$$\n2r=-3\n$$\n\n$$\nr=-\\frac{3}{2}\n$$\n\nMinus three halves sits below minus one:\n\n$$\n-\\frac{3}{2}<-1\n$$\n\nA given price factor therefore cuts subscribers by more than that factor. Subscribers fall faster than the price rises, so the statement is True.",
+      "**B.** → True\n\nRevenue is $R(p)=2000p^{-\\frac{1}{2}}$. Sixteen euros is a clean square, so the power is an integer:\n\n$$\nR(16)=2000\\cdot 16^{-\\frac{1}{2}}\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\nR(16)=\\frac{2000}{4}\n$$\n\n$$\nR(16)=500\n$$\n\n$$\n500<600\n$$\n\nFive hundred thousand euros sits under the claimed six hundred, so the statement is True.",
+      "**C.** → True\n\nDemand is $q(p)=2000p^{-\\frac{3}{2}}$. Monthly revenue multiplies that count by the price itself, which adds one to the exponent:\n\n$$\nR(p)=p\\cdot 2000p^{-\\frac{3}{2}}\n$$\n\n$$\nR(p)=2000p^{1-\\frac{3}{2}}\n$$\n\n$$\nR(p)=2000p^{-\\frac{1}{2}}\n$$\n\nThat is a single monomial in $p$, with coefficient $2000$ and exponent $-\\frac{1}{2}$. A monomial is a power function, so revenue is a power of price, so the statement is True.",
+      "**D.** → False\n\nRevenue is $R(p)=2000p^{-\\frac{1}{2}}$. At the recorded four-euro price:\n\n$$\nR(4)=2000\\cdot 4^{-\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\nR(4)=\\frac{2000}{2}\n$$\n\n$$\nR(4)=1000\n$$\n\nDoubling that revenue asks for a price factor $k$ with $R(4k)=2R(4)$, so\n\n$$\nk^{-\\frac{1}{2}}=2\n$$\n\n$$\nk^{\\frac{1}{2}}=\\frac{1}{2}\n$$\n\n$$\nk=\\frac{1}{4}\n$$\n\nThe price must be quartered, not halved. Halving would multiply revenue only by $\\sqrt{2}$, about $1.41$, not by $2$, so the statement is False.",
+      "**E.** → False\n\nRevenue is $R(p)=2000p^{-\\frac{1}{2}}$. Nine euros is a clean square:\n\n$$\nR(9)=2000\\cdot 9^{-\\frac{1}{2}}\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\nR(9)=\\frac{2000}{3}\n$$\n\n$$\nR(9)\\approx 666.67\n$$\n\n$$\n666.67>600\n$$\n\nRevenue at nine euros sits above six hundred, not under it, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 71,
-    "solution_overview": "Demand follows $q(p)=Ap^{r}$. Quadrupling price multiplies subscribers by $\\frac{1}{8}$, and $q(4)=250$. Revenue is $R=pq$.\n\n**Part 1: Building the model.**\n\nLet $p$ = price in euros and $q$ = subscribers in thousands. The scale rule isolates $r$; the four-euro level then pins $A$. Revenue adds one to the exponent.\n\n**1. Translate: the scale rule.**\n\n$$4^{r}=\\frac{1}{8}$$\n\n**2. Translate: the recorded level.**\n\n$$A\\cdot 4^{r}=250$$\n\n**Part 2: The model.**\n\n$$q(p)=2000p^{-\\frac{3}{2}} \\tag{1}$$\n\n$$R(p)=2000p^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $R(16)=500<600$. $R(9)=\\frac{2000}{3}\\approx 666.67$, which is not under $600$. At the recorded price, $R(4)=1000>900$.\n\n**2.** Doubling the $4$-euro price multiplies revenue by $2^{-\\frac{1}{2}}\\approx 0.707$, not by $\\frac{1}{2}$. The drop from $4$ to $16$ euros is $500$, which already exceeds $450$.\n\n**Answer.** $r=-\\frac{3}{2}$ | $A=2000$ | $R(4)=1000$ | $R(16)=500$ | $R(9)=\\frac{2000}{3}$"
+    "solution_overview": "Demand follows $q(p)=Ap^{r}$. Quadrupling price multiplies subscribers by $\\frac{1}{8}$, and $q(4)=250$. Revenue is $R=pq$.\n\n**Part 1: Building the model.**\n\nLet $p$ = price in euros and $q$ = subscribers in thousands. The scale rule isolates $r$; the four-euro level then pins $A$. Revenue adds one to the exponent.\n\n**1. Translate: the scale rule.**\n\n$$4^{r}=\\frac{1}{8}$$\n\n**2. Translate: the recorded level.**\n\n$$A\\cdot 4^{r}=250$$\n\n**Part 2: The model.**\n\n$$q(p)=2000p^{-\\frac{3}{2}} \\tag{1}$$\n\n$$R(p)=2000p^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $r<-1$, subscribers fall faster than price rises. Revenue is still a power of price.\n\n**2.** $R(16)=500<600$ and $R(9)=\\frac{2000}{3}\\approx 666.67$, which is not under $600$. Doubling $R(4)=1000$ needs the price factor $\\frac{1}{4}$, not $\\frac{1}{2}$.\n\n**Answer.** $r=-\\frac{3}{2}$ | $A=2000$ | $R(16)=500$ | price factor $\\frac{1}{4}$ to double revenue"
   },
   {
     "id": "math-8-72",
@@ -35,29 +35,29 @@
     "title": "Fixed Retainer Plus a Square-Root Monitoring Fee",
     "context": "A compliance-monitoring platform bills $C(n)=F+A n^{\\frac{1}{2}}$ euros a month for $n\\ge 1$ branches, with both constants unknown. $100$ branches cost $700$ euros, and $400$ branches cost $1000$ euros. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "Because of the retainer, the monthly bill is not a power function of the branch count.",
       "Monitoring $900$ branches costs more than $1200$ euros a month.",
-      "At $36$ branches the bill already exceeds the $100$-branch invoice of $700$ euros.",
-      "Quadrupling the branch count from $100$ to $400$ doubles the whole bill.",
-      "A $100$-branch network already costs more than $650$ euros.",
-      "The extra bill from $100$ to $400$ branches already exceeds the $100$-branch bill of $700$ euros."
+      "A larger network is cheaper per branch.",
+      "Quadrupling the branch count doubles the whole bill.",
+      "At $36$ branches the bill already exceeds the $100$-branch invoice."
     ],
     "answer_key": [
       true,
-      false,
-      false,
       true,
+      true,
+      false,
       false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe two invoices differ by three hundred euros while the square roots are $10$ and $20$:\n\n$$\nF+10A=700\n$$\n\n$$\nF+20A=1000\n$$\n\nSubtracting isolates the monitoring coefficient:\n\n$$\n10A=300\n$$\n\n$$\nA=30\n$$\n\n$$\nF=400\n$$\n\nso the bill is $C(n)=400+30n^{\\frac{1}{2}}$. Nine hundred branches is a clean square:\n\n$$\n900^{\\frac{1}{2}}=30\n$$\n\n$$\nC(900)=400+30\\cdot 30\n$$\n\n$$\nC(900)=1300\n$$\n\nThirteen hundred already exceeds twelve hundred, so the statement is True.",
-      "**B.** → False\n\nAt thirty-six branches:\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nC(36)=400+30\\cdot 6\n$$\n\n$$\nC(36)=580\n$$\n\nFive hundred and eighty sits below the $100$-branch invoice of $700$, so the statement is False.",
-      "**C.** → False\n\nQuadrupling the branch count would double the whole bill only if $C$ were a pure square root of $n$. The recorded pair is already a quadrupling: $100$ branches at $700$ euros and $400$ at $1000$. Doubling the whole bill would have made the second invoice $1400$, not $1000$. Only the square-root term doubles when $n$ quadruples; the $400$-euro retainer stays put.\n\n$$\nC(400)=1000\n$$\n\n$$\n2\\cdot C(100)=1400\n$$\n\nOne thousand is not fourteen hundred, so the statement is False.",
-      "**D.** → True\n\nA $100$-branch network is the first recorded invoice:\n\n$$\nC(100)=700\n$$\n\nSeven hundred already exceeds six hundred and fifty, so the statement is True.",
-      "**E.** → False\n\nThe extra from one hundred to four hundred branches is the gap between the two recorded invoices:\n\n$$\nC(400)-C(100)=1000-700\n$$\n\n$$\n1000-700=300\n$$\n\nThe $100$-branch bill is $700$, and $300$ does not exceed $700$, so the statement is False."
+      "**A.** → True\n\nThe bill is $C(n)=F+A n^{\\frac{1}{2}}$. One hundred branches cost $700$ euros and four hundred cost $1000$, and the square roots are $10$ and $20$:\n\n$$\nF+10A=700\n$$\n\n$$\nF+20A=1000\n$$\n\nSubtracting the first from the second cancels the retainer:\n\n$$\n10A=300\n$$\n\n$$\nA=30\n$$\n\nBack-substituting:\n\n$$\nF+10\\cdot 30=700\n$$\n\n$$\nF+300=700\n$$\n\n$$\nF=400\n$$\n\nSo $C(n)=400+30n^{\\frac{1}{2}}$. A pure power $A n^{r}$ cannot carry a nonzero intercept, and the retainer is $400$ euros, so the statement is True.",
+      "**B.** → True\n\nThe bill is $C(n)=400+30n^{\\frac{1}{2}}$. Nine hundred branches is a clean square, so the monitoring term is an integer:\n\n$$\n900^{\\frac{1}{2}}=30\n$$\n\n$$\nC(900)=400+30\\cdot 30\n$$\n\n$$\nC(900)=400+900\n$$\n\n$$\nC(900)=1300\n$$\n\n$$\n1300>1200\n$$\n\nThirteen hundred euros exceeds the claimed twelve hundred, so the statement is True.",
+      "**C.** → True\n\nThe bill is $C(n)=400+30n^{\\frac{1}{2}}$. Cost per branch is that total divided by $n$:\n\n$$\n\\frac{C(n)}{n}=\\frac{400}{n}+30n^{-\\frac{1}{2}}\n$$\n\nThe first term spreads a fixed retainer over more branches, so it falls as $n$ grows. The second term still carries a negative exponent, so it falls as well. Both pieces decline, and a larger network is cheaper per branch, so the statement is True.",
+      "**D.** → False\n\nThe recorded invoices already are a quadrupling: $100$ branches at $700$ euros and $400$ at $1000$. Doubling the whole bill would have made the second invoice $1400$, not $1000$. Only the square-root term doubles when $n$ quadruples; the $400$-euro retainer stays put, so the statement is False.",
+      "**E.** → False\n\nThe bill is $C(n)=400+30n^{\\frac{1}{2}}$. Thirty-six is a clean square:\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nC(36)=400+30\\cdot 6\n$$\n\n$$\nC(36)=400+180\n$$\n\n$$\nC(36)=580\n$$\n\nThe hundred-branch invoice is $700$ euros, and $580<700$. Thirty-six branches still sit below that invoice, so the statement is False."
     ],
     "difficulty_level": "3/5",
     "sort_order": 72,
-    "solution_overview": "The bill is $C(n)=F+An^{\\frac{1}{2}}$. One hundred branches cost $700$ euros and four hundred cost $1000$.\n\n**Part 1: Building the model.**\n\nLet $n$ = branches and $C$ = monthly euros. Two levels recover $F$ and $A$, because the square roots $10$ and $20$ are known.\n\n**1. Translate: the two invoices.**\n\n$$F+10A=700, \\qquad F+20A=1000$$\n\n**Part 2: The model.**\n\n$$C(n)=400+30n^{\\frac{1}{2}} \\tag{1}$$\n\n$$\\frac{C(n)}{n}=\\frac{400}{n}+30n^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $C(900)=1300>1200$ and $C(100)=700>650$. $C(36)=580$, which is below $C(100)=700$.\n\n**2.** Quadrupling raises the bill from $700$ to $1000$, not to $1400$. The extra from $100$ to $400$ branches is $300$, which does not exceed the $100$-branch bill of $700$.\n\n**Answer.** $F=400$ | $A=30$ | $C(900)=1300$ | $C(36)=580$ | extra $300$"
+    "solution_overview": "The bill is $C(n)=F+An^{\\frac{1}{2}}$. One hundred branches cost $700$ euros and four hundred cost $1000$.\n\n**Part 1: Building the model.**\n\nLet $n$ = branches and $C$ = monthly euros. Two levels recover $F$ and $A$, because the square roots $10$ and $20$ are known.\n\n**1. Translate: the two invoices.**\n\n$$F+10A=700, \\qquad F+20A=1000$$\n\n**Part 2: The model.**\n\n$$C(n)=400+30n^{\\frac{1}{2}} \\tag{1}$$\n\n$$\\frac{C(n)}{n}=\\frac{400}{n}+30n^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** A nonzero retainer means $C$ is not a power of $n$. Average (2) falls as $n$ grows.\n\n**2.** $C(900)=1300>1200$ and $C(36)=580$, which is below $C(100)=700$. Quadrupling raises the bill from $700$ to $1000$, not to $1400$.\n\n**Answer.** $F=400$ | $A=30$ | $C(900)=1300$ | $C(36)=580$"
   },
   {
     "id": "math-8-73",
@@ -65,29 +65,29 @@
     "title": "Ordering Cost Against Holding Cost at a Spare-Parts Depot",
     "context": "A spare-parts depot reorders one component in batches of $q>0$ units. Annual ordering cost is $O(q)=A q^{-1}$ euros and annual holding cost is $H(q)=B q$ euros, with both coefficients unknown. At a batch of $40$ units the two components are equal, and each is $120$ euros. The annual total is $T=O+H$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "Annual total cost is smallest where the two components meet.",
       "A batch of $60$ units costs more than $250$ euros a year in total.",
-      "At $80$ units, ordering cost is more than $200$ euros.",
-      "Doubling any batch size from $40$ to $80$ leaves the annual total unchanged.",
-      "Cutting the batch from $40$ to $20$ raises the annual total by as much as raising it from $40$ to $80$.",
-      "At $40$ units the annual total is already under $250$ euros."
+      "Doubling any batch size leaves the annual total unchanged.",
+      "Cutting the batch from $40$ units to $20$ raises the annual total by as much as raising it from $40$ to $80$.",
+      "At $80$ units, ordering cost is more than $200$ euros."
     ],
     "answer_key": [
       true,
-      false,
+      true,
       false,
       true,
-      true
+      false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nAt forty units the two components each equal $120$ euros, so\n\n$$\n\\frac{A}{40}=120\n$$\n\n$$\nA=4800\n$$\n\n$$\n40B=120\n$$\n\n$$\nB=3\n$$\n\nand the annual total is $T(q)=\\frac{4800}{q}+3q$. At sixty units:\n\n$$\nO(60)=\\frac{4800}{60}\n$$\n\n$$\nO(60)=80\n$$\n\n$$\nH(60)=3\\cdot 60\n$$\n\n$$\nH(60)=180\n$$\n\n$$\nT(60)=80+180\n$$\n\n$$\nT(60)=260\n$$\n\nTwo hundred and sixty exceeds two hundred and fifty, so the statement is True.",
-      "**B.** → False\n\nOrdering cost is $O(q)=\\frac{4800}{q}$. At eighty units:\n\n$$\nO(80)=\\frac{4800}{80}\n$$\n\n$$\nO(80)=60\n$$\n\nSixty sits well below two hundred. Holding is the large term on this side of the crossing, so the statement is False.",
-      "**C.** → False\n\nDoubling any batch would leave $T$ unchanged only if ordering and holding scaled as exact opposites under a factor of $2$. They do not:\n\n$$\nT(2q)=\\frac{4800}{2q}+3\\cdot(2q)\n$$\n\n$$\nT(2q)=\\frac{2400}{q}+6q\n$$\n\nwhich is not $T(q)$. Reciprocal pairs with product $1600$ do preserve $T$, but an arbitrary doubling is not that pairing. At the recorded batch the total is $240$; at eighty it is $300$, so the statement is False.",
-      "**D.** → True\n\nTwenty and eighty multiply to $1600$, the same product as $40\\cdot 40$. For this pair of exponents that pairing is a symmetry of $T$: swapping $q$ with $\\frac{1600}{q}$ merely swaps the two cost terms. Cutting $40$ to $20$ and raising $40$ to $80$ are therefore the same move on that symmetry.\n\n$$\nT(40)=240\n$$\n\n$$\nT(20)=\\frac{4800}{20}+3\\cdot 20\n$$\n\n$$\nT(20)=300\n$$\n\n$$\nT(80)=\\frac{4800}{80}+3\\cdot 80\n$$\n\n$$\nT(80)=300\n$$\n\nEach move raises the annual total by $60$ euros, so the two moves cost the same, so the statement is True.",
-      "**E.** → True\n\nAt the recorded batch of forty units the two components are $120$ each:\n\n$$\nT(40)=120+120\n$$\n\n$$\nT(40)=240\n$$\n\nTwo hundred and forty already sits under two hundred and fifty, so the statement is True."
+      "**A.** → True\n\nTotal cost is $T(q)=\\frac{4800}{q}+3q$. Ordering falls as the batch grows; holding rises. Their sum is smallest where the slope is zero. Differentiating term by term:\n\n$$\nT'(q)=-4800q^{-2}+3\n$$\n\nA critical point solves $T'(q)=0$:\n\n$$\n3=4800q^{-2}\n$$\n\n$$\nq^{2}=\\frac{4800}{3}\n$$\n\n$$\nq^{2}=1600\n$$\n\n$$\nq=40\n$$\n\nbecause $q>0$. That is exactly the recorded meeting of the two components. The second derivative is\n\n$$\nT''(q)=9600q^{-3}\n$$\n\nFor every $q>0$ this is positive, so the crossing is a minimum. Annual total cost is smallest where the two components meet, so the statement is True.",
+      "**B.** → True\n\nTotal cost is $T(q)=\\frac{4800}{q}+3q$. At sixty units the two pieces are no longer equal:\n\n$$\nO(60)=\\frac{4800}{60}\n$$\n\n$$\nO(60)=80\n$$\n\n$$\nH(60)=3\\cdot 60\n$$\n\n$$\nH(60)=180\n$$\n\n$$\nT(60)=80+180\n$$\n\n$$\nT(60)=260\n$$\n\n$$\n260>250\n$$\n\nTwo hundred and sixty euros exceeds two hundred and fifty, so the statement is True.",
+      "**C.** → False\n\nTotal cost is $T(q)=\\frac{4800}{q}+3q$. Doubling any batch gives\n\n$$\nT(2q)=\\frac{4800}{2q}+3\\cdot(2q)\n$$\n\n$$\nT(2q)=\\frac{2400}{q}+6q\n$$\n\nwhich is not $T(q)$. At the recorded batch the total is $240$; at eighty it is $300$. Reciprocal pairs with product $1600$ do preserve $T$, but an arbitrary doubling is not that pairing, so the statement is False.",
+      "**D.** → True\n\nTotal cost is $T(q)=\\frac{4800}{q}+3q$, and $T(40)=240$. Twenty and eighty multiply to $1600$, so they are a reciprocal pair:\n\n$$\nT(20)=\\frac{4800}{20}+3\\cdot 20\n$$\n\n$$\nT(20)=300\n$$\n\n$$\nT(80)=\\frac{4800}{80}+3\\cdot 80\n$$\n\n$$\nT(80)=300\n$$\n\nEach move raises the annual total by $60$ euros, so the two moves cost the same, so the statement is True.",
+      "**E.** → False\n\nOrdering cost is $O(q)=\\frac{4800}{q}$. At eighty units, past the meeting point, the batch is large and orders are infrequent:\n\n$$\nO(80)=\\frac{4800}{80}\n$$\n\n$$\nO(80)=60\n$$\n\n$$\n60<200\n$$\n\nSixty euros sits well below two hundred. Holding is the large term on this side of the crossing, so the statement is False."
     ],
     "difficulty_level": "5/5",
     "sort_order": 73,
-    "solution_overview": "Ordering cost is $Aq^{-1}$ and holding cost is $Bq$. At $q=40$ the two components equal $120$ euros each, and $T=O+H$.\n\n**Part 1: Building the model.**\n\nLet $q$ = units per batch. The common level recovers both coefficients. For this pair of exponents the minimum of $T$ is the same crossing.\n\n**1. Translate: the recorded crossing.**\n\n$$\\frac{A}{40}=120, \\qquad 40B=120$$\n\n**Part 2: The model.**\n\n$$T(q)=\\frac{4800}{q}+3q \\tag{1}$$\n\n$$T\\!\\left(\\frac{1600}{q}\\right)=T(q) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $T(60)=260>250$ and $T(40)=240<250$. At $q=80$, ordering cost is $60$, not more than $200$.\n\n**2.** Doubling $40$ to $80$ raises $T$ from $240$ to $300$, so an arbitrary doubling does not leave the total unchanged. The pair $20$ and $80$ ties at $300$, so cutting $40$ to $20$ and raising $40$ to $80$ add the same $60$ euros.\n\n**Answer.** $A=4800$ | $B=3$ | $T(40)=240$ | $T(60)=260$ | $T(20)=T(80)=300$ | $O(80)=60$"
+    "solution_overview": "Ordering cost is $Aq^{-1}$ and holding cost is $Bq$. At $q=40$ the two components equal $120$ euros each, and $T=O+H$.\n\n**Part 1: Building the model.**\n\nLet $q$ = units per batch. The common level recovers both coefficients. For this pair of exponents the minimum of $T$ is the same crossing.\n\n**1. Translate: the recorded crossing.**\n\n$$\\frac{A}{40}=120, \\qquad 40B=120$$\n\n**Part 2: The model.**\n\n$$T(q)=\\frac{4800}{q}+3q \\tag{1}$$\n\n$$T\\!\\left(\\frac{1600}{q}\\right)=T(q) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $T'(q)=0$ at $q=40$, and $T''>0$, so the meeting point is the minimum. $T(60)=260>250$.\n\n**2.** Doubling $40$ to $80$ raises $T$ from $240$ to $300$. The pair $20$ and $80$ ties at $300$ by (2). At $q=80$, ordering cost is $60$, not more than $200$.\n\n**Answer.** $A=4800$ | $B=3$ | min at $q=40$ | $T(20)=T(80)=300$ | $T(60)=260$ | $O(80)=60$"
   },
   {
     "id": "math-8-74",
@@ -95,29 +95,29 @@
     "title": "Average Product on a Bottling Line",
     "context": "Output on a bottling line follows $Q(L)=A L^{r}$ units a shift, where $L>0$ is labour hours, with both constants unknown. $16$ hours produce $96$ units, and $81$ hours produce $324$. Average product is output per labour hour, $Q(L)/L$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "Average product is a power function of labour hours, but its exponent is not the exponent of output.",
       "At $16$ hours, average product is under $7$ units an hour.",
-      "To double the $96$-unit output she must double the $16$ labour hours.",
-      "Average product falls by more than $1.5$ units an hour from $16$ to $81$ hours.",
-      "At $81$ hours, average product still exceeds $5$ units an hour.",
-      "The extra output from $16$ to $81$ hours already exceeds the $16$-hour output of $96$."
+      "To double output she must double the labour hours.",
+      "Average product falls as labour hours rise.",
+      "At $81$ hours, average product still exceeds $5$ units an hour."
     ],
     "answer_key": [
       true,
-      false,
       true,
       false,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nSixteen hours produce ninety-six units, so average product is that output over the hours:\n\n$$\n\\frac{Q(16)}{16}=\\frac{96}{16}\n$$\n\n$$\n\\frac{96}{16}=6\n$$\n\nSix sits under seven, so the statement is True.",
-      "**B.** → False\n\nThe two recorded shifts give $Q(L)=12L^{\\frac{3}{4}}$. Doubling output would need a labour factor $k$ with exponent $1$ on labour if hours and output moved in lockstep. With exponent $\\frac{3}{4}$:\n\n$$\nk^{\\frac{3}{4}}=2\n$$\n\n$$\nk=2^{\\frac{4}{3}}\n$$\n\n$$\n2^{\\frac{4}{3}}\\approx 2.52\n$$\n\nShe must multiply hours by about $2.52$, not by $2$. Doubling labour would multiply output only by $2^{\\frac{3}{4}}\\approx 1.68$, short of $2$, so the statement is False.",
-      "**C.** → True\n\nAverage product at sixteen hours is already $6$. At eighty-one hours:\n\n$$\n\\frac{Q(81)}{81}=\\frac{324}{81}\n$$\n\n$$\n\\frac{324}{81}=4\n$$\n\n$$\n6-4=2\n$$\n\nThe fall of $2$ exceeds $1.5$ units an hour, so the statement is True.",
-      "**D.** → False\n\nAt eighty-one hours average product is\n\n$$\n\\frac{324}{81}=4\n$$\n\nFour does not exceed five, so the statement is False.",
-      "**E.** → True\n\nThe sixteen-hour output is the recorded $96$ units. Eighty-one hours produce $324$, so the extra is the gap between those two logged levels, not a fresh evaluation of the power. A three-quarter power still grows, and over this stretch the add-on more than doubles the early reading.\n\n$$\nQ(81)-Q(16)=324-96\n$$\n\n$$\n324-96=228\n$$\n\nBecause $228>96$, the extra already exceeds the sixteen-hour output, so the statement is True."
+      "**A.** → True\n\nOutput follows $Q(L)=A L^{r}$. The two recorded shifts isolate the exponent. Their ratio cancels $A$:\n\n$$\n\\frac{Q(81)}{Q(16)}=\\left(\\frac{81}{16}\\right)^{r}\n$$\n\n$$\n\\frac{324}{96}=\\left(\\frac{81}{16}\\right)^{r}\n$$\n\n$$\n\\frac{27}{8}=\\left(\\frac{81}{16}\\right)^{r}\n$$\n\nBecause $\\frac{81}{16}=\\left(\\frac{3}{2}\\right)^{4}$ and $\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$,\n\n$$\n\\left(\\frac{3}{2}\\right)^{3}=\\left(\\frac{3}{2}\\right)^{4r}\n$$\n\n$$\n4r=3\n$$\n\n$$\nr=\\frac{3}{4}\n$$\n\nAverage product divides output by labour, which subtracts one from the exponent:\n\n$$\n\\frac{Q(L)}{L}=A L^{\\frac{3}{4}-1}\n$$\n\n$$\n\\frac{Q(L)}{L}=A L^{-\\frac{1}{4}}\n$$\n\nThat is still a power of $L$, but the leftover exponent $-\\frac{1}{4}$ is not the output exponent $\\frac{3}{4}$. The two exponents differ, so the statement is True.",
+      "**B.** → True\n\nAverage product is output per labour hour. Sixteen hours produce $96$ units, so the recorded shift already gives the quotient without a fresh recovery of $A$:\n\n$$\n\\frac{Q(16)}{16}=\\frac{96}{16}\n$$\n\n$$\n\\frac{Q(16)}{16}=6\n$$\n\n$$\n6<7\n$$\n\nSix units an hour sits under the claimed seven, so the statement is True.",
+      "**C.** → False\n\nThe shift ratio already gave $r=\\frac{3}{4}$. Doubling output would need a labour factor $k$ with\n\n$$\nk^{\\frac{3}{4}}=2\n$$\n\n$$\nk=2^{\\frac{4}{3}}\\approx 2.52\n$$\n\nShe must more than double the hours. Doubling labour would multiply output only by $2^{\\frac{3}{4}}\\approx 1.68$, short of $2$, so the statement is False.",
+      "**D.** → True\n\nAverage product is $A L^{-\\frac{1}{4}}$. The leftover exponent is negative, so each extra hour adds less output than the hour before it, and spreading that output over more hours pulls the average down. The two recorded shifts make the fall visible:\n\n$$\n\\frac{Q(16)}{16}=\\frac{96}{16}\n$$\n\n$$\n\\frac{Q(16)}{16}=6\n$$\n\n$$\n\\frac{Q(81)}{81}=\\frac{324}{81}\n$$\n\n$$\n\\frac{Q(81)}{81}=4\n$$\n\n$$\n4<6\n$$\n\nAverage product falls from $6$ to $4$ as labour hours rise, so the statement is True.",
+      "**E.** → False\n\nEighty-one hours produce $324$ units, so average product is that quotient:\n\n$$\n\\frac{Q(81)}{81}=\\frac{324}{81}\n$$\n\n$$\n\\frac{Q(81)}{81}=4\n$$\n\n$$\n4<5\n$$\n\nFour units an hour does not exceed five. The sixteen-hour average is $6$, but by eighty-one hours the average has already fallen to $4$, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 74,
-    "solution_overview": "Output follows $Q(L)=AL^{r}$. Sixteen hours give $96$ units and eighty-one hours give $324$. Average product is $Q/L$.\n\n**Part 1: Building the model.**\n\nLet $L$ = labour hours and $Q$ = units. The ratio isolates $r$; the sixteen-hour level then pins $A$. Dividing by $L$ subtracts one from the exponent.\n\n**1. Translate: the ratio.**\n\n$$\\frac{324}{96}=\\left(\\frac{81}{16}\\right)^{r}$$\n\n**2. Translate: the sixteen-hour level.**\n\n$$A\\cdot 16^{r}=96$$\n\n**Part 2: The model.**\n\n$$Q(L)=12L^{\\frac{3}{4}} \\tag{1}$$\n\n$$\\frac{Q(L)}{L}=12L^{-\\frac{1}{4}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Average product is $6$ at $L=16$ and $4$ at $L=81$. The fall of $2$ already exceeds $1.5$. Doubling output needs the hour-factor $2^{\\frac{4}{3}}\\approx 2.52$, not $2$.\n\n**2.** The extra from $16$ to $81$ hours is $228$, which already exceeds the $16$-hour output of $96$. At $L=81$, average product is $4$, which does not exceed $5$.\n\n**Answer.** $r=\\frac{3}{4}$ | $A=12$ | AP $6$ then $4$ | extra $228>96$ | $k=2^{\\frac{4}{3}}$ to double $Q$"
+    "solution_overview": "Output follows $Q(L)=AL^{r}$. Sixteen hours give $96$ units and eighty-one hours give $324$. Average product is $Q/L$.\n\n**Part 1: Building the model.**\n\nLet $L$ = labour hours and $Q$ = units. The ratio isolates $r$; the sixteen-hour level then pins $A$. Dividing by $L$ subtracts one from the exponent.\n\n**1. Translate: the ratio.**\n\n$$\\frac{324}{96}=\\left(\\frac{81}{16}\\right)^{r}$$\n\n**2. Translate: the sixteen-hour level.**\n\n$$A\\cdot 16^{r}=96$$\n\n**Part 2: The model.**\n\n$$Q(L)=12L^{\\frac{3}{4}} \\tag{1}$$\n\n$$\\frac{Q(L)}{L}=12L^{-\\frac{1}{4}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Average product is a power, but with exponent $-\\frac{1}{4}$, not $\\frac{3}{4}$. It falls as $L$ rises: $6$ at $L=16$ and $4$ at $L=81$.\n\n**2.** Doubling output needs the hour-factor $2^{\\frac{4}{3}}\\approx 2.52$, not $2$. At $L=81$, average product is $4$, which does not exceed $5$.\n\n**Answer.** $r=\\frac{3}{4}$ | $A=12$ | average $6$ at $L=16$ and $4$ at $L=81$"
   },
   {
     "id": "math-8-75",
@@ -125,29 +125,29 @@
     "title": "Learning Curve With an Irreducible Assembly Floor",
     "context": "A drone-assembly cell models the labour time of the unit built after $n$ cumulative units by $t(n)=F+A n^{-\\frac{1}{2}}$ minutes, $n\\ge 1$, with both constants unknown. After $25$ units the next unit takes $18$ minutes, and after $100$ units it takes $13$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "As cumulative output grows without bound, unit time approaches the handling floor without ever reaching it.",
       "After $900$ cumulative units, modelled unit time is already under $10$ minutes.",
-      "The unit built after $4$ cumulative units takes under $30$ minutes.",
-      "Quadrupling cumulative output from $25$ to $100$ halves the modelled unit time.",
-      "After $25$ units, modelled unit time is already under $20$ minutes.",
-      "The time cut from $n=25$ to $n=100$ already exceeds $4$ minutes."
+      "Quadrupling cumulative output halves the learning component.",
+      "Quadrupling cumulative output halves the modelled unit time.",
+      "The unit built after $4$ cumulative units takes under $30$ minutes."
     ],
     "answer_key": [
       true,
-      false,
-      false,
       true,
-      true
+      true,
+      false,
+      false
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe two timings differ by five minutes while the square roots are $5$ and $10$:\n\n$$\nF+\\frac{A}{5}=18\n$$\n\n$$\nF+\\frac{A}{10}=13\n$$\n\nSubtracting isolates the learning coefficient:\n\n$$\n\\frac{A}{10}=5\n$$\n\n$$\nA=50\n$$\n\n$$\nF=8\n$$\n\nso unit time is $t(n)=8+50n^{-\\frac{1}{2}}$. After nine hundred units:\n\n$$\n900^{\\frac{1}{2}}=30\n$$\n\n$$\nt(900)=8+\\frac{50}{30}\n$$\n\n$$\nt(900)=\\frac{29}{3}\\approx 9.67\n$$\n\nNine and two thirds minutes sits under ten, so the statement is True.",
-      "**B.** → False\n\nAfter four cumulative units:\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\nt(4)=8+\\frac{50}{2}\n$$\n\n$$\nt(4)=33\n$$\n\nThirty-three minutes is above thirty, so the statement is False.",
-      "**C.** → False\n\nQuadrupling $n$ would halve modelled unit time only if $t$ were a pure inverse square root. The learning term $50n^{-\\frac{1}{2}}$ does halve, because $4^{-\\frac{1}{2}}=\\frac{1}{2}$. The eight-minute floor stays put and dilutes that gain in the total. The recorded pair is already a quadrupling: $18$ minutes down to $13$. Halving the whole unit time would have made the second timing $9$, not $13$.\n\n$$\n4^{-\\frac{1}{2}}=\\frac{1}{2}\n$$\n\n$$\n\\frac{1}{2}\\cdot 18=9\n$$\n\nThirteen is not nine, so the statement is False.",
-      "**D.** → True\n\nAfter twenty-five units the next unit is the recorded eighteen minutes:\n\n$$\nt(25)=18\n$$\n\nEighteen already sits under twenty, so the statement is True.",
-      "**E.** → True\n\nThe time cut from $n=25$ to $n=100$ is the gap between the two recorded timings:\n\n$$\nt(25)-t(100)=18-13\n$$\n\n$$\n18-13=5\n$$\n\nFive minutes already exceeds four, so the statement is True."
+      "**A.** → True\n\nUnit time is $t(n)=F+A n^{-\\frac{1}{2}}$. After $25$ units the next unit takes $18$ minutes, and after $100$ it takes $13$. The square roots are $5$ and $10$:\n\n$$\nF+\\frac{A}{5}=18\n$$\n\n$$\nF+\\frac{A}{10}=13\n$$\n\nSubtracting cancels the floor:\n\n$$\n\\frac{A}{5}-\\frac{A}{10}=5\n$$\n\n$$\n\\frac{A}{10}=5\n$$\n\n$$\nA=50\n$$\n\nBack-substituting:\n\n$$\nF+\\frac{50}{10}=13\n$$\n\n$$\nF+5=13\n$$\n\n$$\nF=8\n$$\n\nThe recovered law is $t(n)=8+50n^{-\\frac{1}{2}}$. As $n$ grows, the learning term dies:\n\n$$\n\\lim_{n\\to\\infty}t(n)=8\n$$\n\nNo finite $n$ makes $\\frac{50}{n^{\\frac{1}{2}}}=0$, so the handling floor is approached and never attained, so the statement is True.",
+      "**B.** → True\n\nUnit time is $t(n)=8+50n^{-\\frac{1}{2}}$. After nine hundred cumulative units the square root is an integer:\n\n$$\n900^{\\frac{1}{2}}=30\n$$\n\n$$\nt(900)=8+\\frac{50}{30}\n$$\n\n$$\nt(900)=8+\\frac{5}{3}\n$$\n\n$$\nt(900)=\\frac{24}{3}+\\frac{5}{3}\n$$\n\n$$\nt(900)=\\frac{29}{3}\n$$\n\n$$\n\\frac{29}{3}\\approx 9.67\n$$\n\nNine and two thirds minutes sits under ten, so the statement is True.",
+      "**C.** → True\n\nThe learning component is the second term, $A n^{-\\frac{1}{2}}$. Quadrupling cumulative output multiplies that power by four to the exponent $-\\frac{1}{2}$:\n\n$$\n\\frac{A(4n)^{-\\frac{1}{2}}}{A n^{-\\frac{1}{2}}}=4^{-\\frac{1}{2}}\n$$\n\n$$\n4^{-\\frac{1}{2}}=\\frac{1}{2}\n$$\n\nThe learning component halves. The floor is untouched by this scaling, but the claim is only about the learning term, so the statement is True.",
+      "**D.** → False\n\nThe recorded pair is already a quadrupling: $18$ minutes down to $13$. Halving the whole unit time would have made the second timing $9$, not $13$. The learning term halves, but the eight-minute floor stays put and dilutes the gain in the total, so the statement is False.",
+      "**E.** → False\n\nUnit time is $t(n)=8+50 n^{-\\frac{1}{2}}$, a handling floor of $8$ minutes plus a falling power. The statement says the unit built after $4$ cumulative units already takes under $30$ minutes. Four is a clean square, so evaluate the sum there:\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\nt(4)=8+\\frac{50}{2}\n$$\n\n$$\nt(4)=8+25=33\n$$\n\n$$\n33>30\n$$\n\nThirty-three minutes is still above thirty. The power term has fallen, but not far enough to pull the unit under the named line, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 75,
-    "solution_overview": "Unit time is $t(n)=F+An^{-\\frac{1}{2}}$. After $25$ units the next unit takes $18$ minutes, and after $100$ it takes $13$.\n\n**Part 1: Building the model.**\n\nLet $n$ = cumulative units and $t$ = minutes for the next unit. Two levels recover $F$ and $A$. Scaling rules apply to the learning term alone.\n\n**1. Translate: the two timings.**\n\n$$F+\\frac{A}{5}=18, \\qquad F+\\frac{A}{10}=13$$\n\n**Part 2: The model.**\n\n$$t(n)=8+50n^{-\\frac{1}{2}} \\tag{1}$$\n\n$$\\lim_{n\\to\\infty}t(n)=8 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $t(900)=\\frac{29}{3}\\approx 9.67<10$ and $t(25)=18<20$. After four units, $t(4)=33$, which is not under $30$.\n\n**2.** Quadrupling halves the learning term but cuts the total only from $18$ to $13$, not to $9$. The time cut from $n=25$ to $n=100$ is $5$ minutes, which already exceeds $4$.\n\n**Answer.** $F=8$ | $A=50$ | $t(25)=18$ | $t(100)=13$ | $t(900)=\\frac{29}{3}$ | $t(4)=33$"
+    "solution_overview": "Unit time is $t(n)=F+An^{-\\frac{1}{2}}$. After $25$ units the next unit takes $18$ minutes, and after $100$ it takes $13$.\n\n**Part 1: Building the model.**\n\nLet $n$ = cumulative units and $t$ = minutes for the next unit. Two levels recover $F$ and $A$. Scaling rules apply to the learning term alone.\n\n**1. Translate: the two timings.**\n\n$$F+\\frac{A}{5}=18, \\qquad F+\\frac{A}{10}=13$$\n\n**Part 2: The model.**\n\n$$t(n)=8+50n^{-\\frac{1}{2}} \\tag{1}$$\n\n$$\\lim_{n\\to\\infty}t(n)=8 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The floor $8$ is a horizontal asymptote, never attained. $t(900)=\\frac{29}{3}\\approx 9.67<10$.\n\n**2.** Quadrupling halves the learning term, $10$ to $5$, but cuts the total only from $18$ to $13$. After four units, $t(4)=33$, which is not under $30$.\n\n**Answer.** $F=8$ | $A=50$ | $t(25)=18$ | $t(100)=13$ | $t(900)=\\frac{29}{3}$"
   },
   {
     "id": "math-8-76",
@@ -155,29 +155,29 @@
     "title": "Break-Even for a Fish Farm With Diminishing Harvest Returns",
     "context": "A fish farm turns feed into harvest revenue $R(x)=A x^{\\frac{2}{3}}$ thousand euros in a season, where $x>0$ is tonnes of feed, while feed and handling cost $C(x)=30x$ thousand euros. At $8$ tonnes of feed, harvest revenue was $360$ thousand euros. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "Revenue is proportional to the tonnes of feed used.",
       "At $64$ tonnes, cost already exceeds harvest revenue.",
-      "At $8$ tonnes the season clears more than $100$ thousand euros.",
-      "Doubling feed from $8$ to $16$ tonnes doubles revenue.",
       "An extra tonne of feed adds more revenue after $27$ tonnes than after $8$.",
-      "The extra revenue from $8$ to $27$ tonnes already exceeds $400$."
+      "Once cost overtakes revenue, feeding still more cannot restore a surplus.",
+      "At $8$ tonnes the season clears more than $100$ thousand euros."
     ],
     "answer_key": [
-      true,
+      false,
       true,
       false,
-      false,
+      true,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe eight-tonne harvest pins the coefficient: $8^{\\frac{2}{3}}=4$, so $A=90$ and $R(x)=90x^{\\frac{2}{3}}$. Cost is linear at $30$ thousand euros per tonne. A two-thirds power is overtaken by a line once, and sixty-four tonnes already sits past that crossing.\n\n$$\n64^{\\frac{2}{3}}=16\n$$\n\n$$\nR(64)=90\\cdot 16\n$$\n\n$$\nR(64)=1440\n$$\n\n$$\nC(64)=30\\cdot 64\n$$\n\n$$\nC(64)=1920\n$$\n\nCost $1920$ already exceeds revenue $1440$, so the statement is True.",
-      "**B.** → True\n\nAt eight tonnes revenue is the recorded $360$ thousand euros, and cost is\n\n$$\nC(8)=30\\cdot 8\n$$\n\n$$\nC(8)=240\n$$\n\n$$\nP(8)=360-240\n$$\n\n$$\nP(8)=120\n$$\n\nOne hundred and twenty exceeds one hundred, so the statement is True.",
-      "**C.** → False\n\nDoubling feed would double revenue only if the exponent were $1$. With exponent $\\frac{2}{3}$ the scale factor is\n\n$$\n\\frac{R(16)}{R(8)}=2^{\\frac{2}{3}}\n$$\n\n$$\n2^{\\frac{2}{3}}\\approx 1.587\n$$\n\nRevenue rises, but not in lockstep with feed, so the statement is False.",
-      "**D.** → False\n\nAn extra tonne adds the derivative $R'(x)=60x^{-\\frac{1}{3}}$. The leftover exponent is negative, so each extra tonne adds less as the farm scales up.\n\n$$\nR'(8)=60\\cdot 8^{-\\frac{1}{3}}\n$$\n\n$$\n8^{\\frac{1}{3}}=2\n$$\n\n$$\nR'(8)=30\n$$\n\n$$\nR'(27)=60\\cdot 27^{-\\frac{1}{3}}\n$$\n\n$$\n27^{\\frac{1}{3}}=3\n$$\n\n$$\nR'(27)=20\n$$\n\nThe extra tonne adds less after twenty-seven tonnes than after eight, so the statement is False.",
-      "**E.** → True\n\nRevenue at eight tonnes is $360$. At the crossing $x=27$:\n\n$$\n27^{\\frac{2}{3}}=9\n$$\n\n$$\nR(27)=90\\cdot 9\n$$\n\n$$\nR(27)=810\n$$\n\n$$\n810-360=450\n$$\n\nFour hundred and fifty already exceeds four hundred, so the statement is True."
+      "**A.** → False\n\nProportionality would mean harvest revenue is a constant times feed, so the exponent would be $1$. The farm's revenue is $R(x)=A x^{\\frac{2}{3}}$, and two thirds is not one:\n\n$$\n\\frac{2}{3}\\neq 1\n$$\n\nDoubling feed therefore multiplies revenue by\n\n$$\n2^{\\frac{2}{3}}\n$$\n\n$$\n2^{\\frac{2}{3}}\\approx 1.59\n$$\n\nnot by $2$. Revenue rises more slowly than feed, so the statement is False.",
+      "**B.** → True\n\nRevenue is $R(x)=A x^{\\frac{2}{3}}$. At eight tonnes the harvest was $360$ thousand euros:\n\n$$\nA\\cdot 8^{\\frac{2}{3}}=360\n$$\n\n$$\n8^{\\frac{1}{3}}=2\n$$\n\n$$\n8^{\\frac{2}{3}}=4\n$$\n\n$$\n4A=360\n$$\n\n$$\nA=90\n$$\n\nSo $R(x)=90x^{\\frac{2}{3}}$ and cost is $C(x)=30x$. At sixty-four tonnes:\n\n$$\n64^{\\frac{1}{3}}=4\n$$\n\n$$\n64^{\\frac{2}{3}}=16\n$$\n\n$$\nR(64)=90\\cdot 16\n$$\n\n$$\nR(64)=1440\n$$\n\n$$\nC(64)=30\\cdot 64\n$$\n\n$$\nC(64)=1920\n$$\n\n$$\n1920>1440\n$$\n\nCost already exceeds harvest revenue, so the statement is True.",
+      "**C.** → False\n\nRevenue is $R(x)=90x^{\\frac{2}{3}}$. An extra tonne adds the derivative:\n\n$$\nR'(x)=60x^{-\\frac{1}{3}}\n$$\n\nAt eight tonnes, $8^{\\frac{1}{3}}=2$, so $R'(8)=30$. At twenty-seven tonnes, $27^{\\frac{1}{3}}=3$, so $R'(27)=20$. The extra tonne adds less after twenty-seven tonnes than after eight, because the leftover exponent is negative, so the statement is False.",
+      "**D.** → True\n\nRevenue is $R(x)=90x^{\\frac{2}{3}}$ and cost is $C(x)=30x$. Their ratio is\n\n$$\n\\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}}\n$$\n\nThe ratio equals $1$ at $x=27$ and is strictly less than $1$ for every larger $x$, because the cube root keeps growing. Extra feed widens the gap; it cannot restore a surplus, so the statement is True.",
+      "**E.** → True\n\nAt eight tonnes, harvest revenue is already recorded as $360$ thousand euros. Cost is linear, $C(x)=30x$:\n\n$$\nC(8)=30\\cdot 8\n$$\n\n$$\nC(8)=240\n$$\n\nProfit is the gap:\n\n$$\nP(8)=360-240\n$$\n\n$$\nP(8)=120\n$$\n\n$$\n120>100\n$$\n\nOne hundred and twenty thousand euros exceeds one hundred, so the statement is True."
     ],
     "difficulty_level": "3/5",
     "sort_order": 76,
-    "solution_overview": "Revenue is $R(x)=Ax^{\\frac{2}{3}}$ and cost is $C(x)=30x$. At $x=8$, revenue is $360$ thousand euros.\n\n**Part 1: Building the model.**\n\nLet $x$ = tonnes of feed. The exponent is given, so the eight-tonne level pins $A$. Cost is linear, so a curve with exponent $\\frac{2}{3}$ is overtaken once.\n\n**1. Translate: the recorded revenue.**\n\n$$A\\cdot 8^{\\frac{2}{3}}=360$$\n\n**Part 2: The model.**\n\n$$R(x)=90x^{\\frac{2}{3}}, \\qquad C(x)=30x \\tag{1}$$\n\n$$\\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** At $x=64$, cost $1920$ already exceeds revenue $1440$. Profit at $x=8$ is $120>100$.\n\n**2.** Doubling $8$ to $16$ tonnes multiplies revenue by $2^{\\frac{2}{3}}\\approx 1.587$, not by $2$. $R'(8)=30>R'(27)=20$. The extra revenue from $8$ to $27$ tonnes is $450$, which already exceeds $400$.\n\n**Answer.** $A=90$ | $P(8)=120$ | $R(64)=1440$ | $C(64)=1920$ | extra $450$"
+    "solution_overview": "Revenue is $R(x)=Ax^{\\frac{2}{3}}$ and cost is $C(x)=30x$. At $x=8$, revenue is $360$ thousand euros.\n\n**Part 1: Building the model.**\n\nLet $x$ = tonnes of feed. The exponent is given, so the eight-tonne level pins $A$. Cost is linear, so a curve with exponent $\\frac{2}{3}$ is overtaken once.\n\n**1. Translate: the recorded revenue.**\n\n$$A\\cdot 8^{\\frac{2}{3}}=360$$\n\n**Part 2: The model.**\n\n$$R(x)=90x^{\\frac{2}{3}}, \\qquad C(x)=30x \\tag{1}$$\n\n$$\\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Revenue is not proportional to feed. At $x=64$, cost $1920$ already exceeds revenue $1440$. Profit at $x=8$ is $120$.\n\n**2.** $R'(8)=30>R'(27)=20$. For $x>27$ ratio (2) stays below $1$, so extra feed cannot restore a surplus.\n\n**Answer.** $A=90$ | break-even at $x=27$ | $P(8)=120$ | cost leads for every $x>27$"
   },
   {
     "id": "math-8-77",
@@ -185,10 +185,10 @@
     "title": "Calibrating a Handling-Cost Law From a Cost Difference",
     "context": "A distribution centre models daily handling cost by $f(x)=A x^{\\frac{3}{2}}$ euros, where $x>0$ is a pallet-volume index. The individual daily figures were lost, and the only surviving record states that the cost at index $16$ exceeds the cost at index $4$ by $336$ euros. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Multiplying the pallet-volume index by $4$ from $4$ to $16$ multiplies handling cost by $4$.",
+      "Multiplying the pallet-volume index by $4$ multiplies handling cost by $4$.",
       "At index $9$ the modelled handling cost is already above $150$ euros.",
-      "Handling cost grows faster than the pallet-volume index because the exponent $\\frac{3}{2}$ exceeds $1$.",
-      "Equal gaps of $5$ in the index, from $4$ to $9$ and from $9$ to $14$, produce equal gaps in cost.",
+      "Handling cost grows faster than the pallet-volume index.",
+      "Because the exponent exceeds one, equal gaps in the index produce equal gaps in cost.",
       "Raising the index from $9$ to $25$ adds under $500$ euros of handling cost."
     ],
     "answer_key": [
@@ -199,15 +199,15 @@
       false
     ],
     "tactical_explanations": [
-      "**A.** → False\n\nThe surviving record is a difference, not a level: $f(16)-f(4)=336$. With exponent $\\frac{3}{2}$ the shape factors are $64$ and $8$, so\n\n$$\nA(64-8)=336\n$$\n\n$$\n56A=336\n$$\n\n$$\nA=6\n$$\n\nand handling cost is $f(x)=6x^{\\frac{3}{2}}$. Multiplying the index by $4$ would multiply cost by $4$ only if the exponent were $1$. The actual scale factor is\n\n$$\n\\frac{f(4x)}{f(x)}=4^{\\frac{3}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\nCost is multiplied by eight, not by four, so the statement is False.",
-      "**B.** → True\n\nAt index nine:\n\n$$\n9^{\\frac{3}{2}}=27\n$$\n\n$$\nf(9)=6\\cdot 27\n$$\n\n$$\nf(9)=162\n$$\n\nOne hundred and sixty-two sits above $150$ euros, so the statement is True.",
-      "**C.** → True\n\nThe exponent $\\frac{3}{2}$ sits above one, so each extra unit of the index adds more cost than the unit before it. Index $16$ is four times $4$:\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\nf(4)=6\\cdot 8\n$$\n\n$$\nf(4)=48\n$$\n\n$$\n16^{\\frac{3}{2}}=64\n$$\n\n$$\nf(16)=6\\cdot 64\n$$\n\n$$\nf(16)=384\n$$\n\n$$\n\\frac{384}{48}=8\n$$\n\nThe index rose by a factor of $4$ while cost rose by a factor of $8$. Cost outruns the index, so the statement is True.",
-      "**D.** → False\n\nEqual cost gaps would need a linear rule, exponent $1$. Handling is $f(x)=6x^{\\frac{3}{2}}$, so the slope itself still grows:\n\n$$\nf'(x)=9x^{\\frac{1}{2}}\n$$\n\n$$\nf'(4)=18\n$$\n\n$$\nf'(9)=27\n$$\n\nThe same one-unit gap adds $18$ euros at index $4$ and $27$ euros at index $9$. Equal index gaps do not produce equal cost gaps, so the statement is False.",
-      "**E.** → False\n\nAt index nine the cost is $162$. At index twenty-five:\n\n$$\n25^{\\frac{3}{2}}=125\n$$\n\n$$\nf(25)=6\\cdot 125\n$$\n\n$$\nf(25)=750\n$$\n\n$$\n750-162=588\n$$\n\nFive hundred and eighty-eight is not under $500$, so the statement is False."
+      "**A.** → False\n\nHandling cost is $f(x)=A x^{\\frac{3}{2}}$. The coefficient cancels in a scale factor, so multiplying the index by $4$ multiplies cost by $4$ to the exponent $\\frac{3}{2}$:\n\n$$\n\\frac{f(4x)}{f(x)}=4^{\\frac{3}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\nCost is multiplied by eight, not by four. A four-fold factor would belong to exponent $1$, because $4^{1}=4$. The claimed factor is wrong, so the statement is False.",
+      "**B.** → True\n\nThe surviving record is a cost difference: $f(16)-f(4)=336$. With exponent $\\frac{3}{2}$,\n\n$$\nA\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\n16^{\\frac{3}{2}}=64\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\nA(64-8)=336\n$$\n\n$$\n56A=336\n$$\n\n$$\nA=6\n$$\n\nSo $f(x)=6x^{\\frac{3}{2}}$. At index nine:\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\n9^{\\frac{3}{2}}=27\n$$\n\n$$\nf(9)=6\\cdot 27\n$$\n\n$$\nf(9)=162\n$$\n\n$$\n162>150\n$$\n\nOne hundred and sixty-two euros sits above one hundred and fifty, so the statement is True.",
+      "**C.** → True\n\nThe exponent on the pallet-volume index is $\\frac{3}{2}$. An exponent larger than one means cost outruns the index: each extra unit of volume adds more euros than the unit before it.\n\n$$\n\\frac{3}{2}>1\n$$\n\nA four-fold rise in the index multiplies cost by eight, not by four:\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\nCost grows faster than the pallet-volume index, so the statement is True.",
+      "**D.** → False\n\nHandling is $f(x)=6x^{\\frac{3}{2}}$. Equal cost gaps would need a linear rule, exponent $1$, whose slope is constant. Differentiate:\n\n$$\nf'(x)=6\\cdot\\frac{3}{2}x^{\\frac{1}{2}}\n$$\n\n$$\nf'(x)=9x^{\\frac{1}{2}}\n$$\n\nThe leftover exponent $\\frac{1}{2}$ is positive, so the slope itself rises with $x$. At index four:\n\n$$\nf'(4)=9\\cdot 2\n$$\n\n$$\nf'(4)=18\n$$\n\nAt index nine:\n\n$$\nf'(9)=9\\cdot 3\n$$\n\n$$\nf'(9)=27\n$$\n\nBecause $27>18$, later index steps of the same width add more euros than earlier ones, so the statement is False.",
+      "**E.** → False\n\nHandling is $f(x)=6x^{\\frac{3}{2}}$, and $f(9)=162$. At index twenty-five:\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\n25^{\\frac{3}{2}}=125\n$$\n\n$$\nf(25)=6\\cdot 125\n$$\n\n$$\nf(25)=750\n$$\n\nThe added cost is the difference:\n\n$$\nf(25)-f(9)=750-162\n$$\n\n$$\nf(25)-f(9)=588\n$$\n\n$$\n588>500\n$$\n\nFive hundred and eighty-eight euros is not under five hundred, so the statement is False."
     ],
     "difficulty_level": "5/5",
     "sort_order": 77,
-    "solution_overview": "Handling cost is $f(x)=Ax^{\\frac{3}{2}}$, and the only record is $f(16)-f(4)=336$.\n\n**Part 1: Building the model.**\n\nLet $x$ = pallet-volume index and $f$ = daily euros. No single level is known, so $A$ comes out of a difference.\n\n**1. Translate: the surviving record.**\n\n$$A\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336$$\n\n**Part 2: The model.**\n\n$$f(x)=6x^{\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{f(kx)}{f(x)}=k^{\\frac{3}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $f(4)=48$ and $f(16)=384$, so a factor of $4$ on the index multiplies cost by $8$, not by $4$. The slope $f'(x)=9x^{\\frac{1}{2}}$ rises, so equal index gaps do not give equal cost gaps.\n\n**2.** $f(9)=162>150$ and $f(25)-f(9)=588$, which is not under $500$.\n\n**Answer.** $A=6$ | $f(4)=48$ | $f(9)=162$ | $f(16)=384$ | $f(25)=750$ | extra $588$"
+    "solution_overview": "Handling cost is $f(x)=Ax^{\\frac{3}{2}}$, and the only record is $f(16)-f(4)=336$.\n\n**Part 1: Building the model.**\n\nLet $x$ = pallet-volume index and $f$ = daily euros. No single level is known, so $A$ comes out of a difference.\n\n**1. Translate: the surviving record.**\n\n$$A\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336$$\n\n**Part 2: The model.**\n\n$$f(x)=6x^{\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{f(kx)}{f(x)}=k^{\\frac{3}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** A factor of $4$ on the index multiplies cost by $8$, not by $4$. Because $r>1$, cost grows faster than the index, and equal index gaps do not give equal cost gaps.\n\n**2.** $f(9)=162>150$ and $f(25)-f(9)=588$, which is not under $500$.\n\n**Answer.** $A=6$ | $f(9)=162$ | $f(25)=750$ | factor of $4$ on volume multiplies cost by $8$"
   },
   {
     "id": "math-8-78",
@@ -215,29 +215,29 @@
     "title": "Inverting a Wastewater Load Model Against a Permit Ceiling",
     "context": "A dye-house discharges a wastewater load of $W(s)=A s^{\\frac{3}{2}}$ kilograms a day, where $s>0$ is a production scale index. At scale $9$ the daily load is $135$ kilograms. The site permit caps the daily load at $320$ kilograms, and the plant wants the largest scale it may run. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The largest admissible scale under the $320$ kg cap is already below $20$.",
-      "Doubling the permit ceiling from $320$ to $640$ doubles the admissible scale index.",
-      "If the coefficient doubled from $5$ to $10$, the admissible scale under the $320$ kg ceiling would be halved.",
-      "At scale index $4$ the daily load is under $50$ kilograms.",
-      "The extra load from scale $4$ to scale $9$ already exceeds the load at scale $4$."
+      "The scale needed for a given load is itself a power function of that load.",
+      "The largest admissible scale is already below $20$.",
+      "Doubling the permit ceiling doubles the admissible scale index.",
+      "If the coefficient doubled, the admissible scale under the same ceiling would be halved.",
+      "At scale index $4$ the daily load is under $50$ kilograms."
     ],
     "answer_key": [
       true,
-      false,
-      false,
       true,
+      false,
+      false,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recorded load at scale nine pins the coefficient, because $9^{\\frac{3}{2}}=27$ and $5\\cdot 27=135$. The $320$ kilogram ceiling then inverts the three-halves power:\n\n$$\n5s^{\\frac{3}{2}}=320\n$$\n\n$$\ns^{\\frac{3}{2}}=64\n$$\n\n$$\ns=64^{\\frac{2}{3}}\n$$\n\n$$\n64^{\\frac{1}{3}}=4\n$$\n\n$$\ns=4^{2}\n$$\n\n$$\ns=16\n$$\n\nSixteen sits below twenty. Every larger index breaches the permit, so the statement is True.",
-      "**B.** → False\n\nDoubling the ceiling would double the admissible scale only if the inverse exponent were $1$. The inverse is $s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}$, so a doubled ceiling multiplies permitted scale by\n\n$$\n2^{\\frac{2}{3}}\\approx 1.587\n$$\n\n$$\n16\\cdot 2^{\\frac{2}{3}}\\approx 25.4\n$$\n\nAbout $25.4$ is not $32$. Doubling the ceiling does not double the admissible scale, so the statement is False.",
-      "**C.** → False\n\nA doubled coefficient is a factor of $2$ on the output, which the inverse sends through exponent $\\frac{2}{3}$, not through exponent $1$. If the coefficient doubled to $10$, the same ceiling would solve\n\n$$\n10s^{\\frac{3}{2}}=320\n$$\n\n$$\ns=16\\cdot 2^{-\\frac{2}{3}}\\approx 10.08\n$$\n\nHalving $16$ would give $8$. The admissible scale falls to about $10.08$, not to $8$, so the statement is False.",
-      "**D.** → True\n\nAt scale four:\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\nW(4)=5\\cdot 8\n$$\n\n$$\nW(4)=40\n$$\n\nForty kilograms is under fifty, so the statement is True.",
-      "**E.** → True\n\nAt scale nine the load is the recorded $135$ kilograms. At scale four it is $40$. The extra is\n\n$$\n135-40=95\n$$\n\nBecause $95>40$, the extra already exceeds the load at scale $4$, so the statement is True."
+      "**A.** → True\n\nLoad is $W=A s^{\\frac{3}{2}}$. A power with a nonzero exponent inverts to another power. Solving for the scale:\n\n$$\n\\frac{W}{A}=s^{\\frac{3}{2}}\n$$\n\n$$\ns=\\left(\\frac{W}{A}\\right)^{\\frac{2}{3}}\n$$\n\nThat is a constant times $W^{\\frac{2}{3}}$. The scale needed for a given load is itself a power of that load, so the statement is True.",
+      "**B.** → True\n\nLoad is $W(s)=A s^{\\frac{3}{2}}$. At scale $9$ the daily load is $135$ kilograms:\n\n$$\nA\\cdot 9^{\\frac{3}{2}}=135\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\n9^{\\frac{3}{2}}=27\n$$\n\n$$\n27A=135\n$$\n\n$$\nA=5\n$$\n\nSo $W(s)=5s^{\\frac{3}{2}}$. The permit caps the load at $320$ kilograms:\n\n$$\n5s^{\\frac{3}{2}}=320\n$$\n\n$$\ns^{\\frac{3}{2}}=64\n$$\n\n$$\ns=64^{\\frac{2}{3}}\n$$\n\n$$\n64^{\\frac{1}{3}}=4\n$$\n\n$$\ns=4^{2}\n$$\n\n$$\ns=16\n$$\n\nThe exponent $\\frac{3}{2}$ is positive, so every larger index breaches the permit. Sixteen sits below twenty, so the statement is True.",
+      "**C.** → False\n\nThe inverse is $s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}$. Doubling the permit ceiling multiplies permitted scale by $2$ to that inverse exponent:\n\n$$\n\\frac{s(2W)}{s(W)}=2^{\\frac{2}{3}}\n$$\n\n$$\n2^{\\frac{2}{3}}\\approx 1.59\n$$\n\nnot by $2$. The inverse exponent $\\frac{2}{3}$ is smaller than one, so permitted scale grows more slowly than the permitted load, so the statement is False.",
+      "**D.** → False\n\nLoad is $W=5s^{\\frac{3}{2}}$, and the ceiling $320$ kilograms gives $s=16$. Doubling the coefficient to $10$ with the same ceiling:\n\n$$\n10s^{\\frac{3}{2}}=320\n$$\n\n$$\ns^{\\frac{3}{2}}=32\n$$\n\n$$\ns=32^{\\frac{2}{3}}\n$$\n\n$$\ns\\approx 10.08\n$$\n\nHalving the original scale would require $s=8$. The actual scale factor is $2^{-\\frac{2}{3}}\\approx 0.63$, not $\\frac{1}{2}$, so the statement is False.",
+      "**E.** → True\n\nThe recovered load is $W(s)=5 s^{\\frac{3}{2}}$. The statement says that at scale index $4$ the daily load is already under $50$ kilograms. Four is a clean square, so the three-halves power is an integer:\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\nW(4)=5\\cdot 8=40\n$$\n\n$$\n40<50\n$$\n\nForty kilograms sits under fifty. The load has grown with scale, but at this small index it is still below the named line, so the statement is True."
     ],
     "difficulty_level": "5/5",
     "sort_order": 78,
-    "solution_overview": "Load is $W(s)=As^{\\frac{3}{2}}$ kilograms a day. At $s=9$ the load is $135$, and the permit caps it at $320$.\n\n**Part 1: Building the model.**\n\nLet $s$ = scale index and $W$ = daily kilograms. The recorded level pins $A$. A cap on load becomes a cap on scale by inversion.\n\n**1. Translate: the recorded load.**\n\n$$A\\cdot 9^{\\frac{3}{2}}=135$$\n\n**2. Translate: the inverse.**\n\n$$s=\\left(\\frac{W}{A}\\right)^{\\frac{2}{3}}$$\n\n**Part 2: The model.**\n\n$$W(s)=5s^{\\frac{3}{2}} \\tag{1}$$\n\n$$s(W)=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The binding permit gives $s=16<20$, and $W(4)=40<50$. The extra from scale $4$ to $9$ is $95$, which already exceeds $W(4)=40$.\n\n**2.** Doubling the cap to $640$ raises the index to $16\\cdot 2^{\\frac{2}{3}}\\approx 25.4$, not to $32$. Doubling $A$ cuts the index to $16\\cdot 2^{-\\frac{2}{3}}\\approx 10.08$, not to $8$.\n\n**Answer.** $A=5$ | largest $s=16$ | $W(4)=40$ | extra $95>40$ | doubled cap $s\\approx 25.4$"
+    "solution_overview": "Load is $W(s)=As^{\\frac{3}{2}}$ kilograms a day. At $s=9$ the load is $135$, and the permit caps it at $320$.\n\n**Part 1: Building the model.**\n\nLet $s$ = scale index and $W$ = daily kilograms. The recorded level pins $A$. A cap on load becomes a cap on scale by inversion.\n\n**1. Translate: the recorded load.**\n\n$$A\\cdot 9^{\\frac{3}{2}}=135$$\n\n**2. Translate: the inverse.**\n\n$$s=\\left(\\frac{W}{A}\\right)^{\\frac{2}{3}}$$\n\n**Part 2: The model.**\n\n$$W(s)=5s^{\\frac{3}{2}} \\tag{1}$$\n\n$$s(W)=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The inverse (2) is a power of load. The binding permit gives $s=16<20$, and $W(4)=40<50$.\n\n**2.** Doubling the cap raises the index by $2^{\\frac{2}{3}}\\approx 1.59$, not by $2$. Doubling $A$ cuts the index by $2^{-\\frac{2}{3}}\\approx 0.63$, not by $\\frac{1}{2}$.\n\n**Answer.** $A=5$ | largest $s=16$ | $W(4)=40$ | cap factor $2$ raises $s$ by $2^{\\frac{2}{3}}$"
   },
   {
     "id": "math-8-79",
@@ -245,29 +245,29 @@
     "title": "Elasticity Shortcut Against the Exact Change in Parking Demand",
     "context": "A city parking authority models hourly demand by $q(p)=A p^{-2}$ occupied spaces, where $p>0$ is the hourly tariff in euros. It records $4000$ occupied spaces at a tariff of $3$ euros. Demand of this form has constant elasticity $-2$, so the usual shortcut predicts a percentage change in demand equal to $-2$ times the percentage change in tariff. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Raising the tariff by $25\\%$ leaves more than $2500$ occupied spaces.",
-      "At a tariff of $2$ euros, hourly demand exceeds $8000$ occupied spaces.",
-      "Cutting the tariff by $25\\%$ raises demand by the same percentage that a $25\\%$ rise cuts it.",
       "The elasticity shortcut and the exact power agree on the loss from a $25\\%$ tariff rise.",
-      "The exact drop from $3$ to $3.75$ euros already exceeds $1400$ occupied spaces."
+      "Raising the tariff by $25\\%$ leaves more than $2500$ occupied spaces.",
+      "The elasticity shortcut overstates the true loss from a $25\\%$ tariff rise.",
+      "Cutting the tariff by $25\\%$ raises demand by the same percentage that a $25\\%$ rise cuts it.",
+      "At a tariff of $2$ euros, hourly demand exceeds $8000$ occupied spaces."
     ],
     "answer_key": [
-      true,
-      true,
       false,
+      true,
+      true,
       false,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nDemand at three euros is $4000$. A $25\\%$ tariff rise is the factor $\\frac{5}{4}$, and the exact multiplier raises that factor to the exponent $-2$:\n\n$$\n\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}\n$$\n\n$$\n4000\\cdot\\frac{16}{25}=2560\n$$\n\nTwo thousand five hundred and sixty exceeds two thousand five hundred, so the statement is True.",
-      "**B.** → True\n\nThe recorded pair $q(3)=4000$ pins\n\n$$\nA\\cdot 3^{-2}=4000\n$$\n\n$$\n\\frac{A}{9}=4000\n$$\n\n$$\nA=36000\n$$\n\nso $q(p)=36000p^{-2}$. At two euros:\n\n$$\nq(2)=\\frac{36000}{4}\n$$\n\n$$\nq(2)=9000\n$$\n\nNine thousand exceeds eight thousand, so the statement is True.",
-      "**C.** → False\n\nA $25\\%$ rise multiplies demand by $\\frac{16}{25}$, a $36\\%$ loss. A $25\\%$ cut is the factor $\\frac{3}{4}$, which is not the reciprocal of $\\frac{5}{4}$ in the percentage-change sense. Raising that cut factor to $-2$ gives\n\n$$\n\\left(\\frac{3}{4}\\right)^{-2}=\\frac{16}{9}\n$$\n\n$$\n\\frac{16}{9}-1=\\frac{7}{9}\\approx 0.778\n$$\n\na rise of about $77.8\\%$, not $36\\%$. The two percentages are not the same, so the statement is False.",
-      "**D.** → False\n\nThe elasticity shortcut linearizes: it multiplies the constant elasticity $-2$ by the $25\\%$ tariff change and predicts a $50\\%$ loss. The exact power raises the finite factor $\\frac{5}{4}$ to $-2$, which keeps $64\\%$ of demand, a $36\\%$ cut. Those two methods agree only for infinitesimal changes. A $25\\%$ move is not infinitesimal, so the shortcut overstates the loss and the two figures do not match.\n\n$$\n-2\\times 25\\%=-50\\%\n$$\n\n$$\n\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}\n$$\n\n$$\n\\frac{16}{25}=0.64\n$$\n\nA predicted $50\\%$ against a true $36\\%$ is not agreement, so the statement is False.",
-      "**E.** → True\n\nDemand at three euros is $4000$ and at $3.75$ euros is $2560$. The exact drop is\n\n$$\n4000-2560=1440\n$$\n\nFourteen hundred and forty already exceeds fourteen hundred, so the statement is True."
+      "**A.** → False\n\nA $25\\%$ tariff rise is the factor $\\frac{5}{4}$. The elasticity shortcut predicts\n\n$$\n-2\\times 25\\%=-50\\%\n$$\n\nThe exact multiplier raises that factor to the exponent $-2$:\n\n$$\n\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}=0.64\n$$\n\nDemand keeps $64\\%$ of its level, a cut of $36\\%$, not $50\\%$. The two methods disagree, so the statement is False.",
+      "**B.** → True\n\nDemand at three euros is $4000$ occupied spaces. A $25\\%$ tariff rise is the factor $\\frac{5}{4}$. Raising that factor to the demand exponent $-2$ gives the exact multiplier:\n\n$$\n\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}\n$$\n\n$$\n4000\\cdot\\frac{16}{25}=2560\n$$\n\n$$\n2560>2500\n$$\n\nTwo thousand five hundred and sixty occupied spaces still exceeds two thousand five hundred, so the statement is True.",
+      "**C.** → True\n\nThe elasticity shortcut predicts a percentage change of $-2$ times $25\\%$:\n\n$$\n-2\\times 25\\%=-50\\%\n$$\n\nThe exact multiplier is\n\n$$\n\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}\n$$\n\n$$\n\\frac{16}{25}=0.64\n$$\n\na $36\\%$ loss. A predicted $50\\%$ cut against a true $36\\%$ cut overstates the loss, so the statement is True.",
+      "**D.** → False\n\nA $25\\%$ rise multiplies demand by $\\frac{16}{25}$, which is a $36\\%$ loss:\n\n$$\n1-\\frac{16}{25}=\\frac{9}{25}\n$$\n\n$$\n\\frac{9}{25}=0.36\n$$\n\nA $25\\%$ cut is the factor $\\frac{3}{4}$. Raising that to $-2$:\n\n$$\n\\left(\\frac{3}{4}\\right)^{-2}=\\frac{16}{9}\n$$\n\n$$\n\\frac{16}{9}-1=\\frac{7}{9}\n$$\n\n$$\n\\frac{7}{9}\\approx 0.778\n$$\n\na rise of about $77.8\\%$, not $36\\%$. The two percentages are not the same, so the statement is False.",
+      "**E.** → True\n\nDemand is $q(p)=A p^{-2}$. At three euros the authority records $4000$ spaces:\n\n$$\nA\\cdot 3^{-2}=4000\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\n\\frac{A}{9}=4000\n$$\n\n$$\nA=36000\n$$\n\nSo $q(p)=36000p^{-2}$. At two euros:\n\n$$\nq(2)=36000\\cdot 2^{-2}\n$$\n\n$$\n2^{2}=4\n$$\n\n$$\nq(2)=\\frac{36000}{4}\n$$\n\n$$\nq(2)=9000\n$$\n\n$$\n9000>8000\n$$\n\nNine thousand exceeds eight thousand, so the statement is True."
     ],
     "difficulty_level": "4/5",
     "sort_order": 79,
-    "solution_overview": "Demand is $q(p)=Ap^{-2}$ with $q(3)=4000$. The elasticity shortcut is compared with exact finite changes.\n\n**Part 1: Building the model.**\n\nLet $p$ = hourly tariff in euros and $q$ = occupied spaces. The exponent $-2$ is the constant elasticity. The shortcut multiplies that elasticity by a percentage change; the exact route raises the tariff factor to $-2$.\n\n**1. Translate: the observed pair.**\n\n$$A\\cdot 3^{-2}=4000$$\n\n**2. Translate: the two methods.** For a tariff factor $k$,\n\n$$-2(k-1), \\qquad k^{-2}-1$$\n\n**Part 2: The model.**\n\n$$q(p)=36000p^{-2} \\tag{1}$$\n\n$$\\frac{q(kp)}{q(p)}=k^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** A $25\\%$ rise has exact multiplier $0.64$, so $q(3.75)=2560>2500$. The exact drop from $3$ to $3.75$ is $1440$, which already exceeds $1400$. At $p=2$, demand is $9000>8000$.\n\n**2.** The shortcut's $50\\%$ cut does not match the exact $36\\%$ cut. A $25\\%$ tariff cut raises demand by about $77.8\\%$, not by $36\\%$.\n\n**Answer.** $A=36000$ | exact cut $36\\%$ for a $25\\%$ rise | $q(3.75)=2560$ | $q(2)=9000$ | drop $1440$"
+    "solution_overview": "Demand is $q(p)=Ap^{-2}$ with $q(3)=4000$. The elasticity shortcut is compared with exact finite changes.\n\n**Part 1: Building the model.**\n\nLet $p$ = hourly tariff in euros and $q$ = occupied spaces. The exponent $-2$ is the constant elasticity. The shortcut multiplies that elasticity by a percentage change; the exact route raises the tariff factor to $-2$.\n\n**1. Translate: the observed pair.**\n\n$$A\\cdot 3^{-2}=4000$$\n\n**2. Translate: the two methods.** For a tariff factor $k$,\n\n$$-2(k-1), \\qquad k^{-2}-1$$\n\n**Part 2: The model.**\n\n$$q(p)=36000p^{-2} \\tag{1}$$\n\n$$\\frac{q(kp)}{q(p)}=k^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** A $25\\%$ rise has exact multiplier $0.64$, a $36\\%$ cut, so $q(3.75)=2560>2500$. The shortcut's $50\\%$ overstates that loss. The two routes do not agree.\n\n**2.** A $25\\%$ cut raises demand by about $77.8\\%$, not by $36\\%$. At $p=2$, demand is $9000>8000$.\n\n**Answer.** $A=36000$ | exact cut $36\\%$ for a $25\\%$ rise | $q(3.75)=2560$ | $q(2)=9000$"
   },
   {
     "id": "math-8-80",
@@ -275,28 +275,28 @@
     "title": "Geometrically Similar Bells Cast From One Pattern",
     "context": "A foundry casts geometrically similar bronze bells from a single pattern, so mass follows $M(h)=A h^{3}$ kilograms, where $h>0$ is height in metres. The pattern book omits the coefficient; it records only that a finished bell of height $0.5$ metres was weighed at $30$ kilograms. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
+      "Mass grows faster than height.",
       "A bell of height $1.5$ m already weighs more than $700$ kg.",
-      "Doubling a bell's height from $0.5$ m to $1$ m doubles its mass.",
-      "A $1$-metre bell already weighs more than $200$ kg.",
-      "Two $1$ m bells together already fall short of one $1.5$ m bell.",
-      "Raising height from $1$ m to $2$ m adds more than $1600$ kg."
+      "Doubling a bell's height doubles its mass.",
+      "Mass per metre of height is the same at every height.",
+      "A one-metre bell already weighs more than $200$ kg."
     ],
     "answer_key": [
       true,
+      true,
       false,
-      true,
-      true,
+      false,
       true
     ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe half-metre weighing pins the coefficient. Geometric similarity cubes every linear scale, so a factor of three on height from the half-metre pattern is a factor of twenty-seven on mass, after the eight in the denominator from the original cube.\n\n$$\nA\\left(\\frac{1}{2}\\right)^{3}=30\n$$\n\n$$\nA\\cdot\\frac{1}{8}=30\n$$\n\n$$\nA=240\n$$\n\nso $M(h)=240h^{3}$. At one and a half metres:\n\n$$\n\\left(\\frac{3}{2}\\right)^{3}=\\frac{27}{8}\n$$\n\n$$\nM\\left(\\frac{3}{2}\\right)=240\\cdot\\frac{27}{8}\n$$\n\n$$\n240\\cdot\\frac{27}{8}=810\n$$\n\nEight hundred and ten exceeds $700$ kg, so the statement is True.",
-      "**B.** → False\n\nDoubling height would double mass only if the exponent were $1$. With exponent $3$ the scale factor is\n\n$$\n\\frac{M(2h)}{M(h)}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\nMass rises eightfold, not twofold. The half-metre bell of $30$ kg would become $240$ kg at one metre, not $60$ kg, so the statement is False.",
-      "**C.** → True\n\nAt one metre the cube is $1$, so the mass is the coefficient itself:\n\n$$\nM(1)=240\n$$\n\nTwo hundred and forty exceeds $200$ kg, so the statement is True.",
-      "**D.** → True\n\nTwo one-metre bells weigh\n\n$$\n2\\cdot 240=480\n$$\n\nOne $1.5$ m bell weighs $810$ kg, as in A. Cubing does not treat two small bells as a substitute for one large one: $2\\cdot 1^{3}=2$ while $\\left(\\frac{3}{2}\\right)^{3}=\\frac{27}{8}$. Because $480<810$, the pair already falls short, so the statement is True.",
-      "**E.** → True\n\nAt two metres:\n\n$$\nM(2)=240\\cdot 8\n$$\n\n$$\nM(2)=1920\n$$\n\n$$\n1920-240=1680\n$$\n\nOne thousand six hundred and eighty exceeds $1600$ kg, so the statement is True."
+      "**A.** → True\n\nMass follows $M(h)=240h^{3}$. The exponent $3$ is larger than one, so mass outruns height: each extra metre of height adds more mass than the metre before it. Doubling height multiplies mass by\n\n$$\n\\frac{M(2h)}{M(h)}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\nnot by $2$. Mass grows faster than height, so the statement is True.",
+      "**B.** → True\n\nMass follows $M(h)=A h^{3}$. The half-metre bell weighed $30$ kilograms:\n\n$$\nA\\left(\\frac{1}{2}\\right)^{3}=30\n$$\n\n$$\n\\left(\\frac{1}{2}\\right)^{3}=\\frac{1}{8}\n$$\n\n$$\n\\frac{A}{8}=30\n$$\n\n$$\nA=240\n$$\n\nSo $M(h)=240h^{3}$. At one and a half metres, write $1.5=\\frac{3}{2}$:\n\n$$\n\\left(\\frac{3}{2}\\right)^{3}=\\frac{27}{8}\n$$\n\n$$\nM\\left(\\frac{3}{2}\\right)=240\\cdot\\frac{27}{8}\n$$\n\n$$\nM\\left(\\frac{3}{2}\\right)=30\\cdot 27\n$$\n\n$$\nM\\left(\\frac{3}{2}\\right)=810\n$$\n\n$$\n810>700\n$$\n\nEight hundred and ten kilograms exceeds seven hundred, so the statement is True.",
+      "**C.** → False\n\nMass is a cube of height, so a factor of $2$ on height multiplies mass by $2$ to the exponent $3$:\n\n$$\n\\frac{M(2h)}{M(h)}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\nnot by $2$. Doubling would need exponent $1$. The half-metre bell at $30$ kg would become $240$ kg at one metre, not $60$ kg, so the statement is False.",
+      "**D.** → False\n\nMass is $M(h)=240h^{3}$, so mass per metre of height is the quotient\n\n$$\n\\frac{M(h)}{h}=240h^{2}\n$$\n\nwhich still grows with $h$. At half a metre:\n\n$$\n240\\left(\\frac{1}{2}\\right)^{2}=240\\cdot\\frac{1}{4}\n$$\n\n$$\n240\\cdot\\frac{1}{4}=60\n$$\n\nAt one metre the quotient is $240$. Sixty kilograms per metre is not $240$, so the two figures differ, so the statement is False.",
+      "**E.** → True\n\nMass is $M(h)=240h^{3}$. At one metre every power of $1$ is $1$, so the mass equals the coefficient itself:\n\n$$\nM(1)=240\\cdot 1^{3}\n$$\n\n$$\nM(1)=240\n$$\n\n$$\n240>200\n$$\n\nTwo hundred and forty kilograms already exceeds two hundred, so the statement is True."
     ],
     "difficulty_level": "4/5",
     "sort_order": 80,
-    "solution_overview": "Similar bells obey $M(h)=Ah^{3}$, and the single weighing $M(0.5)=30$ fixes the coefficient.\n\n**Part 1: Building the model.**\n\nLet $h$ = height in metres and $M$ = mass in kilograms. Geometric similarity fixes the exponent at $3$; one observed pair pins $A$.\n\n**1. Translate: the weighed bell.**\n\n$$A(0.5)^{3}=30$$\n\n**2. Translate: the scaling rule.**\n\n$$\\frac{M(kh)}{M(h)}=k^{3}$$\n\n**Part 2: The model.**\n\n$$M(h)=240h^{3} \\tag{1}$$\n\n$$M(kh)=k^{3}M(h) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $M(1.5)=810>700$ and $M(1)=240>200$. Two $1$ m bells weigh $480$, which already falls short of the $810$ kg bell.\n\n**2.** Doubling height multiplies mass by $8$, not by $2$. Raising height from $1$ m to $2$ m adds $1680$ kg, which exceeds $1600$.\n\n**Answer.** $A=240$ | $M(1)=240$ | $M(1.5)=810$ | two $1$ m bells $480<810$ | $M(2)-M(1)=1680$"
+    "solution_overview": "Similar bells obey $M(h)=Ah^{3}$, and the single weighing $M(0.5)=30$ fixes the coefficient.\n\n**Part 1: Building the model.**\n\nLet $h$ = height in metres and $M$ = mass in kilograms. Geometric similarity fixes the exponent at $3$; one observed pair pins $A$.\n\n**1. Translate: the weighed bell.**\n\n$$A(0.5)^{3}=30$$\n\n**2. Translate: the scaling rule.**\n\n$$\\frac{M(kh)}{M(h)}=k^{3}$$\n\n**Part 2: The model.**\n\n$$M(h)=240h^{3} \\tag{1}$$\n\n$$M(kh)=k^{3}M(h) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because the exponent is $3>1$, mass outruns height. Doubling height multiplies mass by $8$, not by $2$. Mass per metre is $240h^{2}$, not constant.\n\n**2.** $M(1.5)=810>700$ and $M(1)=240>200$.\n\n**Answer.** $A=240$ | $M(1.5)=810$ | doubling $\\times 8$ | $M(1)=240$"
   }
 ]
