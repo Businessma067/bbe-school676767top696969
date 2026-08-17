@@ -1,0 +1,2078 @@
+# Extraction metadata
+- Source: `/Users/yehor/BBE exam questions/Prob new/Combinatorial_Probability_Practice-merged-2.pdf`
+- Total pages: **48**
+- Total numbered question cases: **42** (39 questions numbered within their source parts, followed by Questions 11–13).
+- Total True/False assertions: **210** (five per case).
+- Difficulty: preserved exactly as printed for every question.
+- Fidelity: wording, values, numbering, answers, and explanations are source-preserved; combination/permutation notation is normalized to LaTeX.
+
+# Core instructional formulas (LaTeX-normalized)
+- Combinations: \(\binom{n}{r}=\frac{n!}{r!(n-r)!}\).
+- Permutations: \(P(n,r)=\frac{n!}{(n-r)!}\).
+- Classical probability: \(P(E)=\frac{\#\text{ favorable outcomes}}{\#\text{ equally likely outcomes}}\).
+- Complement: \(P(\text{at least one})=1-P(\text{none})\).
+- Hypergeometric: \(P(X=j)=\frac{\binom{K}{j}\binom{N-K}{r-j}}{\binom{N}{r}}\).
+- Multiset permutations: \(\frac{n!}{n_1!n_2!\cdots}\).
+- Circular arrangements: \((n-1)!\).
+- Independent trials: \(P(\text{at least one success})=1-(1-p)^n\).
+- Derangements: \(!n=n!\sum_{k=0}^{n}\frac{(-1)^k}{k!}\), and exactly \(k\) fixed points: \(\binom{n}{k}D_{n-k}\).
+- Stars and bars: \(\binom{n+k-1}{k-1}\), or \(\binom{n-1}{k-1}\) when every group is nonempty.
+- Perfect matchings: \(\frac{n!}{2^{n/2}(n/2)!}\).
+- Birthday complement: \(P(\text{at least one shared birthday})=1-\frac{d!}{(d-n)!d^n}\).
+- Inclusion–exclusion for three events: \(P(A_1\cup A_2\cup A_3)=\sum_iP(A_i)-\sum_{i<j}P(A_i\cap A_j)+P(A_1\cap A_2\cap A_3)\).
+
+# Combinatorial Probability — Practice Questions
+Six questions in varied styles — committee selection, card hands, restricted seating arrangements, quality-control
+sampling, at-least-one problems, and a missing-parameter puzzle
+
+This set uses standard combinatorics notation throughout: nCr (or \(\binom{n}{r}\)) for combinations, where order does not matter,
+and nPr (or \({}_{n}P_{r}\)) for permutations, where order matters. Every question has five True/False statements (A–E).
+
+Notation and formulas used throughout:
+●     \(\binom{n}{r}\) = n! / (r!·(n−r)!) — the number of ways to choose r items from n distinct items when order does
+NOT matter.
+●     \({}_{n}P_{r}\) = n! / (n−r)! — the number of ways to arrange r items from n distinct items when order DOES matter.
+●     P(event) = (number of favorable outcomes) / (total number of equally likely outcomes) — the classical
+probability formula, used throughout this set.
+●     Complement rule: P(at least one) = 1 − P(none).
+●     Grouping (block) method: to force k specific items to stay together in a row of n items, glue them into
+one block, arrange the resulting (n−k+1) units, then multiply by the k! internal arrangements of the block.
+●     Hypergeometric-style sampling: when drawing r items without replacement from a population of n containing K
+“success” items, the number of ways to get exactly j successes is \(\binom{K}{j}\)·\(\binom{n−K}{r−j}\), out of \(\binom{n}{r}\) total
+samples.
+
+## Questions
+
+### Question 1 — A Committee Selection
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A club has 7 men and 5 women. A committee of 4 people is selected at random from the 12 members.
+
+A       The total number of possible committees is 792.
+B       There are fewer ways to form a committee with exactly 2 men and 2 women than a committee with
+exactly 3 men and 1 woman.
+C       The probability that the committee consists of all men is less than 5%.
+D       The probability that the committee contains at least one woman is greater than 90%.
+E       The probability of selecting exactly 2 men and 2 women equals 14/33.
+
+### Question 2 — A Poker Hand
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A standard 52-card deck (13 ranks × 4 suits) is shuffled, and 5 cards are dealt at random to form a hand.
+
+A       The total number of distinct 5-card hands is 2,598,960.
+B       A full house (three of one rank plus two of another) is more likely than four of a kind.
+C       A flush (all five cards the same suit) is more likely than a full house.
+D       The probability of getting two pair is greater than 5%.
+E       The probability of a flush is more than 8 times the probability of four of a kind.
+
+### Question 3 — Restricted Seating
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+7 students (4 boys and 3 girls) are seated at random in a row of 7 chairs.
+
+A       The total number of possible seating arrangements is 5,040.
+
+B       The number of arrangements in which all 3 girls sit together (in some order) is 720.
+C        The probability that all 3 girls sit together is exactly 1/7.
+D        The probability that boys and girls alternate along the row (in either starting order) is greater than 5%.
+E       The probability that all 3 girls sit together is more than 5 times the probability of an alternating
+arrangement.
+
+### Question 4 — Quality Control Sampling
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A shipment contains 20 items, of which 4 are defective. An inspector randomly selects 5 items, without replacement, for
+testing.
+
+A        The total number of possible samples of 5 items is 15,504.
+B       The probability that the sample contains exactly 2 defective items is greater than 20%.
+C        The probability that the sample contains no defective items is less than 30%.
+D        The probability that the sample contains at least one defective item is less than 70%.
+E       Among the possible counts of defective items in the sample (0 through 4), exactly 1 defective item is the
+single most likely outcome.
+
+### Question 5 — Rolling the Dice
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+5 fair six-sided dice are rolled at once, and the 5 results are recorded in order (each die is distinguishable).
+
+A        The total number of possible outcomes is 7,776.
+B       The probability that all five dice show different numbers is greater than 20%.
+C        The probability that at least two dice show the same number is less than 80%.
+D        The probability that all five dice show different numbers equals exactly 1/6.
+E       If only 3 dice were rolled instead of 5, the probability of all different values would be lower than with 5
+dice.
+
+### Question 6 — Find the Missing Value
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+In a group of n people, every pair of people shakes hands exactly once. The total number of handshakes is 45.
+
+A        n equals 10.
+B       If the group had 12 people instead, the total number of handshakes would be 66.
+C        The number of ways to choose a committee of 3 people from the n people is 120.
+D        The number of ways to arrange all n people in a single row (n!) is greater than 1,000,000.
+E       If the total number of handshakes had been 55 instead of 45, n would equal 11.
+
+## Answer Key & Explanations
+
+As before, each answer establishes the relevant counts and probabilities in a Step 1 (and Step 2, where needed) before
+addressing the individual statements.
+
+### Question 1 — A Committee Selection
+#### Step 1 — Set up the total and the key sub-counts, with 7 men and 5 women, choosing 4 of the 12 total members.
+Total committees: \(\binom{12}{4}\) = 495. Exactly 2 men & 2 women: \(\binom{7}{2}\)·\(\binom{5}{2}\) = 21·10 = 210, so P = 210/495 = 14/33 ≈
+0.4242. Exactly 3 men & 1 woman: \(\binom{7}{3}\)·\(\binom{5}{1}\) = 35·5 = 175. All men (4 men, 0 women): \(\binom{7}{4}\) = 35, so P(all men) =
+35/495 ≈ 0.0707. P(at least one woman) = 1 − 0.0707 = 0.9293.
+
+#### A — FALSE
+The correct total is \(\binom{12}{4}\) = 495, not 792. (792 is actually \(\binom{12}{5}\), a different selection size — a tempting but incorrect
+distractor.)
+**Formula:** Total committees = \(\binom{12}{4}\)
+
+#### B — FALSE
+There are 210 ways to get exactly 2 men and 2 women, versus 175 ways to get exactly 3 men and 1 woman. Since 210 is
+greater than 175, the 2-2 split is more common, not fewer — the statement has the comparison backwards.
+**Formula:** Compare \(\binom{7}{2}\)·\(\binom{5}{2}\) = 210 to \(\binom{7}{3}\)·\(\binom{5}{1}\) = 175
+
+#### C — FALSE
+P(all men) = 35/495 ≈ 7.07%, which is not less than 5% — it is slightly higher.
+**Formula:** P(all men) = \(\binom{7}{4}\)/\(\binom{12}{4}\)
+
+#### D — TRUE
+P(at least one woman) = 1 − P(all men) = 1 − 0.0707 ≈ 0.9293, which is greater than 90%.
+**Formula:** P(at least 1 woman) = 1 − P(all men)
+
+#### E — TRUE
+210/495 simplifies exactly to 14/33 (dividing numerator and denominator by 15), matching the probability computed in
+Step 1.
+**Formula:** P(2 men, 2 women) = \(\binom{7}{2}\)·\(\binom{5}{2}\) / \(\binom{12}{4}\) = 210/495 = 14/33
+
+### Question 2 — A Poker Hand
+#### Step 1 — Count each hand type out of the total \(\binom{52}{5}\) = 2,598,960 five-card hands.
+Flush (5 cards, one suit): \(\binom{13}{5}\)·4 = 1,287·4 = 5,148 → P ≈ 0.1981%. Full house (3 of one rank, 2 of another):
+13·\(\binom{4}{3}\)·12·\(\binom{4}{2}\) = 13·4·12·6 = 3,744 → P ≈ 0.1441%. Four of a kind (4 of one rank plus 1 other card): 13·\(\binom{4}{4}\)·48 =
+624 → P ≈ 0.0240%. Two pair: \(\binom{13}{2}\)·\(\binom{4}{2}\)²·11·\(\binom{4}{1}\) = 78·36·11·4 = 123,552 → P ≈ 4.754%.
+
+#### A — TRUE
+\(\binom{52}{5}\) = 2,598,960 exactly, as computed above.
+**Formula:** Total 5-card hands = \(\binom{52}{5}\)
+
+#### B — TRUE
+Full house has 3,744 hands versus 624 for four of a kind, so a full house is indeed more likely — six times as likely, in
+fact.
+**Formula:** Compare 13·\(\binom{4}{3}\)·12·\(\binom{4}{2}\) = 3,744 to 13·48 = 624
+
+#### C — TRUE
+A flush has 5,148 hands versus 3,744 for a full house, so a flush is more likely, even though both are rare.
+**Formula:** Compare \(\binom{13}{5}\)·4 = 5,148 to 13·\(\binom{4}{3}\)·12·\(\binom{4}{2}\) = 3,744
+
+#### D — FALSE
+P(two pair) = 123,552/2,598,960 ≈ 4.754%, which is not greater than 5% — a close call.
+**Formula:** P(two pair) = \(\binom{13}{2}\)·\(\binom{4}{2}\)²·11·\(\binom{4}{1}\) / \(\binom{52}{5}\)
+
+#### E — TRUE
+The ratio of flush hands to four-of-a-kind hands is 5,148/624 = 8.25, which is indeed more than 8.
+**Formula:** Compare 5,148/624 = 8.25 to 8
+
+### Question 3 — Restricted Seating
+#### Step 1 — Set up the total arrangements, and the block-method count for keeping the 3 girls together.
+Total arrangements: 7! = 5,040. Treating the 3 girls as one block gives 5 units (the block plus 4 boys) to arrange: 5! ways,
+times 3! internal orders of the girls within the block: 5!·3! = 120·6 = 720, so P = 720/5,040 = 1/7 ≈ 0.1429. Strict
+alternation (boy-girl-boy-girl-boy-girl-boy is the only possible pattern with 4 boys and 3 girls) fixes 4 boys into the 4
+“boy” seats and 3 girls into the 3 “girl” seats: 4!·3! = 24·6 = 144, so P = 144/5,040 = 1/35 ≈ 0.0286.
+
+#### A — TRUE
+7! = 5,040, as computed above.
+**Formula:** Total arrangements = 7!
+
+#### B — TRUE
+Treating the 3 girls as a single block gives 5 units to arrange (5!), and the girls can be ordered 3! ways within the block:
+5!·3! = 720.
+**Formula:** Arrangements with girls together = 5!·3!
+
+#### C — TRUE
+720/5,040 simplifies exactly to 1/7, matching the probability from Step 1.
+**Formula:** P(girls together) = 5!·3! / 7! = 720/5,040 = 1/7
+
+#### D — FALSE
+With 4 boys and 3 girls, the only alternating pattern is B-G-B-G-B-G-B, giving 4!·3! = 144 arrangements, so P =
+144/5,040 = 1/35 ≈ 2.86%, which is not greater than 5%.
+**Formula:** P(alternating) = 4!·3! / 7! = 144/5,040 = 1/35
+
+#### E — FALSE
+The ratio is (1/7)/(1/35) = 5 exactly, so the probability of girls together is exactly 5 times the alternating probability —
+not “more than” 5 times. This is the same trap as “exactly at the boundary is not beyond the boundary.”
+**Formula:** Compare (1/7)/(1/35) = 5 to “more than 5”
+
+### Question 4 — Quality Control Sampling
+#### Step 1 — Apply the hypergeometric counting method: 20 items total, 4 defective, 16 good, sample size 5.
+Total samples: \(\binom{20}{5}\) = 15,504. Exactly 2 defective: \(\binom{4}{2}\)·\(\binom{16}{3}\) = 6·560 = 3,360 → P ≈ 21.67%. Zero defective:
+\(\binom{16}{5}\) = 4,368 → P ≈ 28.17%. Exactly 1 defective: \(\binom{4}{1}\)·\(\binom{16}{4}\) = 4·1,820 = 7,280 → P ≈ 46.96%. Exactly 3
+defective: \(\binom{4}{3}\)·\(\binom{16}{2}\) = 4·120 = 480 → P ≈ 3.10%. Exactly 4 defective: \(\binom{4}{4}\)·\(\binom{16}{1}\) = 16 → P ≈ 0.10%. P(at
+least 1 defective) = 1 − 0.2817 ≈ 0.7183.
+
+#### A — TRUE
+\(\binom{20}{5}\) = 15,504 exactly, as computed above.
+**Formula:** Total samples = \(\binom{20}{5}\)
+
+#### B — TRUE
+P(exactly 2 defective) = 3,360/15,504 ≈ 21.67%, which is greater than 20%.
+**Formula:** P(exactly 2 defective) = \(\binom{4}{2}\)·\(\binom{16}{3}\) / \(\binom{20}{5}\)
+
+#### C — TRUE
+P(zero defective) = 4,368/15,504 ≈ 28.17%, which is less than 30%.
+**Formula:** P(zero defective) = \(\binom{16}{5}\) / \(\binom{20}{5}\)
+
+#### D — FALSE
+P(at least 1 defective) = 1 − 0.2817 ≈ 71.83%, which is not less than 70% — it is slightly higher.
+**Formula:** P(at least 1 defective) = 1 − P(zero defective)
+
+#### E — TRUE
+Comparing all five possible counts: P(0) ≈ 28.17%, P(1) ≈ 46.96%, P(2) ≈ 21.67%, P(3) ≈ 3.10%, P(4) ≈ 0.10%. Exactly
+1 defective item has the highest probability of the five, confirming the statement.
+**Formula:** Compare P(0), P(1), P(2), P(3), P(4) directly
+
+### Question 5 — Rolling the Dice
+#### Step 1 — Count outcomes for 5 distinguishable dice, then the sub-case where all five show different numbers.
+Total outcomes: 6⁵ = 7,776. All different (choosing an ordered sequence of 5 distinct values out of 6 faces): 6·5·4·3·2 =
+720, so P(all different) = 720/7,776 = 5/54 ≈ 9.26%. By the complement rule, P(at least two the same) = 1 − 5/54 = 49/54
+≈ 90.74%.
+
+#### A — TRUE
+Each of the 5 dice has 6 possible outcomes, independently, giving 6⁵ = 7,776 total outcomes.
+**Formula:** Total outcomes = 6⁵
+
+#### B — FALSE
+P(all different) = 5/54 ≈ 9.26%, which is not greater than 20% — it is well below it.
+**Formula:** P(all different) = 6·5·4·3·2 / 6⁵
+
+#### C — FALSE
+P(at least two the same) = 1 − 5/54 ≈ 90.74%, which is not less than 80% — it is considerably higher, since having any
+repeat among 5 dice sharing only 6 faces is quite common (this is the same logic behind the birthday paradox).
+**Formula:** P(at least two same) = 1 − P(all different)
+
+#### D — FALSE
+P(all different) = 5/54 ≈ 0.0926, while 1/6 ≈ 0.1667. These are not equal — a common error is to assume each die
+independently has a 1/6 chance of “being different,” but the constraint compounds across all 5 dice.
+**Formula:** Compare 5/54 to 1/6
+
+#### E — FALSE
+With only 3 dice, P(all different) = 6·5·4/6³ = 120/216 ≈ 55.56%, which is much higher than the 9.26% found with 5 dice
+— not lower. Fewer dice means less opportunity for a repeat, so the probability of all-different values goes up, not down,
+when the number of dice decreases.
+**Formula:** Compare P(all different, 3 dice) ≈ 55.56% to P(all different, 5 dice) ≈ 9.26%
+
+### Question 6 — Find the Missing Value
+#### Step 1 — Solve for n using the handshake count, where every pair of n people shakes hands exactly once.
+The number of handshakes among n people equals the number of ways to choose 2 of them: \(\binom{n}{2}\) = n(n−1)/2. Setting
+this equal to 45: n(n−1)/2 = 45, so n(n−1) = 90. Testing n = 10: 10·9 = 90. ✓ So n = 10.
+
+#### Step 2 — Use n = 10 to evaluate the remaining statements.
+\(\binom{10}{3}\) = 120. 10! = 3,628,800. \(\binom{12}{2}\) = 66. \(\binom{11}{2}\) = 55.
+
+#### A — TRUE
+Solving \(\binom{n}{2}\) = 45 gives n(n−1) = 90, and n = 10 satisfies this (10·9 = 90), as found in Step 1.
+**Formula:** Solve \(\binom{n}{2}\) = 45 for n
+
+#### B — TRUE
+\(\binom{12}{2}\) = 12·11/2 = 66, confirming the statement.
+**Formula:** \(\binom{12}{2}\) = 12·11/2 = 66
+
+#### C — TRUE
+With n = 10, \(\binom{10}{3}\) = 10!/(3!·7!) = 120, confirming the statement.
+**Formula:** \(\binom{10}{3}\) = 10·9·8/3! = 120
+
+#### D — TRUE
+
+10! = 3,628,800, which is indeed greater than 1,000,000.
+**Formula:** 10! = 3,628,800
+
+#### E — TRUE
+Solving \(\binom{n}{2}\) = 55 gives n(n−1) = 110, and n = 11 satisfies this (11·10 = 110), confirming the statement.
+**Formula:** Solve \(\binom{n}{2}\) = 55 for n
+
+Tip: Two traps repeat across this set: (1) a ratio landing exactly on a round number (5, 6, 8, or 10) does not make a
+“more than” or “less than” statement about that number true — check the direction carefully (Questions 2, 3). (2)
+Reducing the number of trials in a “no-repeats” probability (fewer dice, fewer cards, fewer people) always makes “all
+different / no match” more likely, not less — repeats become harder to force with fewer draws (Question 5).
+
+# Combinatorial Probability — Practice Questions (Part 2)
+Six more questions in varied styles — a word with repeated letters, a lottery draw, a round table, the classic de Méré
+dice problem, a shelf-arrangement restriction, and a missing-parameter puzzle
+
+A continuation of the previous set. Every question again has five True/False statements (A–E), using the same notation:
+\(\binom{n}{r}\) for combinations, \({}_{n}P_{r}\) for permutations.
+
+Additional notation and formulas used in this set:
+●     Permutations of a multiset: when arranging n items where one item repeats n₁ times, another n₂ times, etc.,
+the number of distinct arrangements is n! / (n₁!·n₂!·…).
+●     Gap method: to arrange n items so that no two of a certain k of them are adjacent, first arrange the other
+(n−k) items — creating (n−k+1) gaps (including both ends) — then place the k items into k different gaps
+using P(n−k+1, k), so order among the chosen gaps matters.
+●     Circular arrangements: n distinct people around a round table, where rotations of the same arrangement
+are considered identical, can be arranged in (n−1)! ways (reflections are still counted as different).
+●     Two specific people adjacent around a round table (n people total): 2·(n−2)! — glue the pair into a block,
+arrange the (n−1) units in a circle, and multiply by 2 for the pair's internal order.
+●     Independent repeated trials: if a single trial succeeds with probability p, then P(at least one success in
+n independent trials) = 1 − (1−p)ⁿ.
+
+## Questions
+
+### Question 1 — Arranging BALLOON
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+The 7 letters of the word BALLOON (B, A, L, L, O, O, N) are arranged at random in a row. The two L's are identical to
+each other, and the two O's are identical to each other.
+
+A       The total number of distinct arrangements is 2,520.
+B       The probability that the two L's are adjacent to each other is 2/7.
+C       The probability that the two L's AND the two O's are both adjacent (each pair sitting together) is greater
+than 10%.
+D       The probability that the two L's are adjacent equals the probability that the two O's are adjacent.
+E       If all 7 letters had been different (no repeats at all), the total number of arrangements would be less than
+2,520.
+
+### Question 2 — A Lottery Draw
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A lottery draws 6 numbers, without replacement, from the numbers 1 through 49. A player has chosen 6 numbers in
+advance and wins a prize based on how many of the drawn numbers match their chosen numbers.
+
+A       The total number of possible sets of 6 drawn numbers is 13,983,816.
+B       The probability of matching all 6 numbers is less than 1 in 10,000,000.
+C       The probability of matching exactly 3 numbers is greater than 1%.
+D       The probability of matching exactly 3 numbers is greater than the probability of matching exactly 4
+numbers.
+E       The probability of matching 0 numbers is greater than 45%.
+
+### Question 3 — A Round Table
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+
+8 people, including two specific friends A and B, are seated at random around a circular table. Only the relative order of
+the  seats   matters    —   rotating   everyone     around the table       by  the  same amount counts as           the same     arrangement, but
+mirror-image seatings are still counted as different.
+
+A       The total number of distinct circular arrangements is 5,040.
+B       The probability that A and B sit next to each other is 2/7.
+C       The probability that A and B do NOT sit next to each other is less than 70%.
+D       If the same 8 people instead sat in a straight row (not around a table), the probability that A and B are
+adjacent would be exactly 1/4.
+E       Sitting around a round table makes A and B less likely to end up adjacent than sitting in a straight row
+would.
+
+### Question 4 — Chevalier de Méré's Dice Problem
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A fair six-sided die is rolled 4 times. Separately, a pair of fair six-sided dice is rolled 24 times. (This pair of problems is a
+famous historical question first posed to Blaise Pascal in the 17th century.)
+
+A       The probability of rolling at least one 6 in 4 rolls of a single die is greater than 50%.
+B       The probability of rolling at least one 6 in 4 rolls equals 1 − (5/6)⁴.
+C       The probability of rolling no 6 at all in the 4 rolls is less than 45%.
+D       The probability of rolling at least one double-six in 24 rolls of a pair of dice is less than 50%.
+E       The probability of rolling at least one double-six in 24 rolls of a pair of dice is greater than the
+probability of rolling at least one 6 in 4 rolls of a single die.
+
+### Question 5 — A Bookshelf Restriction
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+5 distinct fiction novels and 3 distinct mystery novels (8 books total, all different) are arranged at random in a row on a
+shelf.
+
+A       The total number of possible arrangements is 40,320.
+B       The number of arrangements in which no two mystery novels are adjacent to each other is 14,400.
+C       The probability that no two mystery novels are adjacent is 5/14.
+D       The probability that all three mystery novels are adjacent (sitting together as a block) is greater than the
+probability that no two mystery novels are adjacent.
+E       The probability that no two mystery novels are adjacent is more than 3 times the probability that all three
+mystery novels are adjacent.
+
+### Question 6 — Find the Missing Value
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A security code is formed by arranging 3 different digits, in order, chosen from a set of n available digits (no digit repeats
+within a code). The total number of possible 3-digit codes is 336.
+
+A       n equals 8.
+B       If codes were instead 4 digits long (still no repeats, still order matters, same n), the number of possible
+codes would be 1,680.
+C       The number of ways to choose (unordered) 3 digits from the n available digits is 56.
+D       If the number of possible 3-digit codes had been 720 instead of 336, n would equal 10.
+E       The number of ways to arrange all n digits in a row (n!) is greater than 50,000.
+
+## Answer Key & Explanations
+
+As before, each answer establishes the relevant counts and probabilities in a Step 1 (and Step 2, where needed) before
+addressing the individual statements.
+
+### Question 1 — Arranging BALLOON
+#### Step 1 — Apply the multiset permutation formula, since the two L's are identical and the two O's are identical.
+Total arrangements: 7!/(2!·2!) = 5,040/4 = 1,260. Treating the two L's as a single block (with the two O's still free to be
+identical elsewhere) leaves 6 units to arrange, but the two O's among them are still identical, so divide by 2!: 6!/2! = 360,
+giving P(L's adjacent) = 360/1,260 = 2/7 ≈ 0.2857. By the same logic, P(O's adjacent) = 360/1,260 = 2/7. Treating BOTH
+the L's and the O's as blocks leaves 5 fully distinct units (LL-block, OO-block, B, A, N), so there is no repeated-letter
+division needed: 5! = 120, giving P(both pairs adjacent) = 120/1,260 = 2/21 ≈ 0.0952.
+
+#### A — FALSE
+The correct total is 7!/(2!·2!) = 1,260, not 2,520. Dividing by only one of the two repeated pairs (forgetting either the L's
+or the O's) gives the tempting but incorrect 2,520 — you must divide by 2! for each repeated letter.
+**Formula:** Total arrangements = 7! / (2!·2!)
+
+#### B — TRUE
+Gluing the two L's into one block leaves 6 units to arrange, with the two O's still identical among them, giving 6!/2! =
+360 arrangements, so P = 360/1,260 = 2/7, exactly as stated.
+**Formula:** P(L's adjacent) = (6!/2!) / (7!/(2!·2!)) = 360/1,260 = 2/7
+
+#### C — FALSE
+P(both pairs adjacent) = 120/1,260 = 2/21 ≈ 9.52%, which is not greater than 10% — a close call.
+**Formula:** P(both pairs adjacent) = 5! / (7!/(2!·2!)) = 120/1,260 = 2/21
+
+#### D — TRUE
+Both calculations give exactly 360/1,260 = 2/7, by the same symmetric logic — the L's and O's each appear twice, so
+gluing either pair together leads to an identical count.
+**Formula:** P(L's adjacent) = P(O's adjacent) = 2/7, by symmetry
+
+#### E — FALSE
+If all 7 letters were distinct, the total would be 7! = 5,040, which is MORE than 1,260 (and more than 2,520 too) — not
+less. Removing repeated letters always increases the number of distinguishable arrangements, since fewer arrangements
+end up looking identical.
+**Formula:** Compare 7! = 5,040 to 7!/(2!·2!) = 1,260
+
+### Question 2 — A Lottery Draw
+Step   1  —    Count     the  total   combinations       and   each    match    category    using    the  hypergeometric        method:     49
+numbers total, 6 chosen by the player (“successes”), 43 not chosen (“failures”), 6 drawn.
+Total combinations: \(\binom{49}{6}\) = 13,983,816. Match all 6: \(\binom{6}{6}\)·\(\binom{43}{0}\) = 1, so P = 1/13,983,816 ≈ 0.00000007151 (about
+1 in 14 million). Match exactly 3: \(\binom{6}{3}\)·\(\binom{43}{3}\) = 20·12,341 = 246,820, so P ≈ 1.765%. Match exactly 4:
+\(\binom{6}{4}\)·\(\binom{43}{2}\)
+= 15·903 = 13,545, so P ≈ 0.0969%. Match 0: \(\binom{6}{0}\)·\(\binom{43}{6}\) = 6,096,454, so P ≈ 43.60%.
+
+#### A — TRUE
+\(\binom{49}{6}\) = 13,983,816 exactly, as computed above.
+**Formula:** Total combinations = \(\binom{49}{6}\)
+
+#### B — TRUE
+P(match all 6) = 1/13,983,816 ≈ 0.0000000715, which corresponds to roughly 1 in 14 million — a smaller probability
+(rarer event) than 1 in 10,000,000, so the statement holds.
+**Formula:** P(match 6) = 1 / \(\binom{49}{6}\)
+
+#### C — TRUE
+P(match exactly 3) = 246,820/13,983,816 ≈ 1.765%, which is greater than 1%.
+**Formula:** P(match 3) = \(\binom{6}{3}\)·\(\binom{43}{3}\) / \(\binom{49}{6}\)
+
+#### D — TRUE
+P(match exactly 3) ≈ 1.765% is greater than P(match exactly 4) ≈ 0.0969% — matching fewer numbers (up to a point) is
+generally more common, since there are far more ways for 3 of your numbers to appear alongside 3 unchosen ones than
+for 4 to appear alongside just 2 unchosen ones out of a much larger unchosen pool.
+**Formula:** Compare \(\binom{6}{3}\)·\(\binom{43}{3}\) = 246,820 to \(\binom{6}{4}\)·\(\binom{43}{2}\) = 13,545
+
+#### E — FALSE
+P(match 0) = 6,096,454/13,983,816 ≈ 43.60%, which is not greater than 45% — a close call.
+**Formula:** P(match 0) = \(\binom{43}{6}\) / \(\binom{49}{6}\)
+
+### Question 3 — A Round Table
+#### Step 1 — Apply the circular-arrangement formulas for n = 8 people, comparing to the equivalent row
+arrangement.
+Total circular arrangements: (8−1)! = 7! = 5,040. A and B adjacent (circular): 2·(8−2)! = 2·6! = 1,440, so P = 1,440/5,040
+= 2/7 ≈ 0.2857. P(not adjacent) = 1 − 2/7 = 5/7 ≈ 0.7143. For comparison, in a straight row: total = 8! = 40,320, A and B
+adjacent (block method) = 2·7! = 10,080, so P = 10,080/40,320 = 1/4 = 0.25.
+
+#### A — TRUE
+(8−1)! = 7! = 5,040 exactly, as computed above.
+**Formula:** Total circular arrangements = (n−1)! = 7!
+
+#### B — TRUE
+1,440/5,040 simplifies exactly to 2/7, matching the probability from Step 1.
+**Formula:** P(A, B adjacent) = 2·(n−2)! / (n−1)! = 1,440/5,040 = 2/7
+
+#### C — FALSE
+P(not adjacent) = 5/7 ≈ 71.43%, which is not less than 70% — it is slightly higher.
+**Formula:** P(not adjacent) = 1 − 2/7 = 5/7
+
+#### D — TRUE
+In a row, gluing A and B into a block gives 2·7! = 10,080 arrangements out of 8! = 40,320 total, so P = 10,080/40,320 =
+1/4 exactly.
+**Formula:** P(A, B adjacent, row) = 2·7! / 8! = 1/4
+
+#### E — FALSE
+The circular probability of adjacency (2/7 ≈ 28.57%) is actually HIGHER than the row probability (1/4 = 25%), not
+lower — a round table has fewer “ends,” so on average each seat has more effectively-adjacent neighbors relative to the
+total, making any two specific people slightly more likely to end up next to each other.
+**Formula:** Compare 2/7 ≈ 28.57% (circular) to 1/4 = 25% (row)
+
+### Question 4 — Chevalier de Méré's Dice Problem
+#### Step 1 — Apply the complement rule to each independent-trials scenario.
+Single die, 4 rolls: P(no 6 on one roll) = 5/6, so P(no 6 in 4 rolls) = (5/6)⁴           ≈ 0.4823, and P(at least one 6) = 1 − 0.4823 ≈
+0.5177 (51.77%). Pair of dice, 24 rolls: P(no double-six on one roll of the pair) = 35/36, so P(no double-six in 24 rolls) =
+(35/36)²⁴ ≈ 0.5086, and P(at least one double-six) = 1 − 0.5086 ≈ 0.4914 (49.14%).
+
+#### A — TRUE
+P(at least one 6 in 4 rolls) ≈ 51.77%, which is greater than 50% — this is the historical result that made betting on this
+outcome profitable in the long run.
+**Formula:** P(at least one 6) = 1 − (5/6)⁴ ≈ 0.5177
+
+#### B — TRUE
+This is exactly the complement-rule formula applied to 4 independent rolls, each with a 5/6 chance of avoiding a 6.
+**Formula:** P(at least one 6 in 4 rolls) = 1 − (5/6)⁴
+
+#### C — FALSE
+
+P(no 6 at all) = (5/6)⁴ ≈ 48.23%, which is not less than 45% — it is higher.
+**Formula:** P(no 6 in 4 rolls) = (5/6)⁴
+
+#### D — TRUE
+P(at least one double-six in 24 rolls) ≈ 49.14%, which is less than 50% — this is the surprising historical twist: doubling
+both the number of dice per roll and scaling the number of rolls (from 4 rolls of one die to 24 rolls of a pair, matching the
+same 1-in-6 vs. 1-in-36 odds ratio) does NOT preserve the “better than even” outcome.
+**Formula:** P(at least one double-six) = 1 − (35/36)²⁴ ≈ 0.4914
+
+#### E — FALSE
+P(at least one double-six in 24 rolls) ≈ 49.14% is actually LESS than P(at least one 6 in 4 rolls) ≈ 51.77%, not greater
+— this gap (small as it is) is precisely what puzzled the Chevalier de Méré and led him to consult Pascal.
+**Formula:** Compare 49.14% (double-six, 24 rolls) to 51.77% (single 6, 4 rolls)
+
+### Question 5 — A Bookshelf Restriction
+#### Step 1 — Apply the gap method: arrange the 5 fiction novels first, then place the 3 mystery novels into the gaps
+between and around them.
+Total arrangements: 8! = 40,320. Arranging the 5 fiction novels first: 5! ways, creating 6 gaps (one before, one after, and
+one between each pair of fiction novels). Placing the 3 distinct mystery novels into 3 different gaps, where order matters
+since the novels are distinct: \({}_{6}P_{3}\) = 6·5·4 = 120. So arrangements with no two mystery novels adjacent = 5!·120 =
+120·120 = 14,400, giving P = 14,400/40,320 = 5/14 ≈ 0.3571. For comparison, gluing all 3 mystery novels into one block
+gives 6!·3! = 720·6 = 4,320 arrangements, so P(all three adjacent) = 4,320/40,320 = 3/28 ≈ 0.1071.
+
+#### A — TRUE
+8! = 40,320 exactly, as computed above.
+**Formula:** Total arrangements = 8!
+
+#### B — TRUE
+Arranging the 5 fiction novels (5! ways) and placing the 3 mystery novels into 3 of the 6 available gaps in order (\({}_{6}P_{3}\) =
+120 ways) gives 5!·\({}_{6}P_{3}\) = 120·120 = 14,400.
+**Formula:** No-two-adjacent arrangements = 5!·\({}_{6}P_{3}\) = 120·120 = 14,400
+
+#### C — TRUE
+14,400/40,320 simplifies exactly to 5/14, matching the probability from Step 1.
+**Formula:** P(no two mystery novels adjacent) = 14,400/40,320 = 5/14
+
+#### D — FALSE
+P(all three adjacent) = 3/28 ≈ 10.71%, which is far LESS than P(no two adjacent) = 5/14 ≈ 35.71% — not greater. It is
+much easier for 3 items to avoid each other across 8 slots than for all 3 to land consecutively.
+**Formula:** Compare 3/28 ≈ 10.71% to 5/14 ≈ 35.71%
+
+#### E — TRUE
+The ratio is (5/14)/(3/28) = (5/14)·(28/3) = 140/42 = 10/3 ≈ 3.33, which is indeed more than 3.
+**Formula:** Compare (5/14)/(3/28) = 10/3 ≈ 3.33 to 3
+
+### Question 6 — Find the Missing Value
+#### Step 1 — Solve for n using the permutation count, since the 3-digit code has order-matters and no-repeats.
+The number of possible codes equals \({}_{n}P_{3}\) = n(n−1)(n−2). Setting this equal to 336: n(n−1)(n−2) = 336. Testing n = 8:
+8·7·6 = 336. ✓ So n = 8.
+
+#### Step 2 — Use n = 8 to evaluate the remaining statements.
+\({}_{8}P_{4}\) = 8·7·6·5 = 1,680. \(\binom{8}{3}\) = 56. Re-solving n(n−1)(n−2) = 720 gives n = 10, since 10·9·8 = 720. 8! = 40,320.
+
+#### A — TRUE
+Solving \({}_{n}P_{3}\) = 336 gives n(n−1)(n−2) = 336, and n = 8 satisfies this (8·7·6 = 336), as found in Step 1.
+**Formula:** Solve \({}_{n}P_{3}\) = 336 for n
+
+#### B — TRUE
+With n = 8, \({}_{8}P_{4}\) = 8·7·6·5 = 1,680, confirming the statement.
+**Formula:** \({}_{8}P_{4}\) = 8·7·6·5 = 1,680
+
+#### C — TRUE
+With n = 8, \(\binom{8}{3}\) = 8!/(3!·5!) = 56, confirming the statement.
+**Formula:** \(\binom{8}{3}\) = 8·7·6/3! = 56
+
+#### D — TRUE
+Re-solving n(n−1)(n−2) = 720 gives n = 10, since 10·9·8 = 720, confirming the statement.
+**Formula:** Solve n(n−1)(n−2) = 720 for n
+
+#### E — FALSE
+8! = 40,320, which is NOT greater than 50,000 — it is somewhat less, a close call worth double-checking rather than
+assuming factorials are always “large.”
+**Formula:** 8! = 40,320
+
+Tip: Two traps repeat across this set: (1) a wrong total that comes from dividing by only one repeated-item factor instead
+of all of them (Question 1), or from applying “more restrictions = smaller probability” intuition to the wrong comparison
+(Questions 3, 5) — always recompute both sides rather than guessing the direction. (2) Historical “equivalent-odds”
+scenarios (Question 4) that look identical in expected value are not actually identical in probability once you work
+through 1 − (1−p)ⁿ for each — small differences in p and n compound in ways that shift a result across the 50% line.
+
+# Combinatorial Probability — Practice Questions
+(Part 3)
+
+Six new questions in varied styles — a poker hand, a committee selection, mismatched gift derangements, a birthday
+coincidence, a candy distribution, and repeated digits in a PIN code
+A continuation of the previous sets. Every question again has five True/False statements (A–E), using the same notation:
+\(\binom{n}{r}\) for combinations, \({}_{n}P_{r}\) for permutations.
+
+Additional notation and formulas used in this set:
+•     Combinations and permutations: \(\binom{n}{r}\) = n! / (r!·(n−r)!) counts unordered selections; \({}_{n}P_{r}\) = n! / (n−r)!
+counts ordered selections (arrangements) of r items chosen from n.
+•     Derangements: the number of permutations of n items with no item left in its original position is D                  = n!·Σ₌₀ⁿ
+(−1)ᵏ/k!. The number of permutations with exactly k items fixed is \(\binom{n}{k}\)·D₋.
+•     Birthday-type matching: assuming 365 equally likely, independent birthdays, P(no two of n people share a
+birthday) = [365·364·⋯·(365−n+1)] / 365ⁿ. This differs from P(someone matches one specific person's birthday)
+= 1 − (364/365)ⁿ⁻¹.
+•     Stars and bars: the number of ways to distribute n identical items among k distinct groups (each group
+allowed zero or more) is \(\binom{n + k − 1}{k − 1}\). If every group must receive at least one item, the count is \(\binom{n −
+1}{k − 1}\).
+•     Counting with repetition allowed: if each of r positions is filled independently from b choices, the total number
+of outcomes is bʳ; if repeats are forbidden, the count is instead P(b, r).
+
+## Questions
+
+### Question 1 — A Poker Hand
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A 5-card hand is dealt at random, without replacement, from a standard 52-card deck (13 ranks × 4 suits, no jokers).
+
+A       The total number of distinct 5-card hands that can be dealt is 2,598,960.
+B       The probability of getting exactly one pair (one rank appears twice, and the other three cards are all
+different ranks) is greater than 42.3%.
+C       The probability of a full house (three cards of one rank, two of another) is exactly 6 times the
+probability of four of a kind.
+D       The probability of getting two pair is greater than the probability of getting exactly one pair.
+E       The probability of a full house is greater than 1 in 700.
+
+### Question 2 — Choosing a Committee
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A club has 8 men and 5 women (13 members total). A committee of 5 members is selected at random from the 13.
+
+A       The total number of possible 5-person committees is 1,287.
+B       The probability that the committee has exactly 3 men and 2 women is greater than 43.5%.
+C       The probability that the committee has at least 4 women is less than 3.2%.
+D       It is impossible for the committee to contain no men at all, since only 5 women are available.
+E       The probability that the committee includes at least 1 woman is more than 30 times the probability that it
+includes at least 4 women.
+
+### Question 3 — Mismatched Gifts (Derangements)
+**Difficulty:** 5/5
+
+Evaluate each statement. Mark it TRUE or FALSE.
+6 friends each bring one wrapped gift to a party. The gifts are shuffled and redistributed uniformly at random, one to each
+friend — every one of the 6! possible assignments is equally likely.
+
+A        The total number of ways to redistribute the 6 gifts is 720.
+B       The probability that no friend receives their own gift is greater than 36.8%.
+C        The probability that exactly one friend receives their own gift is greater than the probability that no
+friend receives their own gift.
+D        The probability that exactly two friends receive their own gifts is exactly 3/16.
+E       The probability that every friend receives their own original gift (the identity assignment) is greater than
+1 in 500.
+
+### Question 4 — A Birthday Coincidence
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+8 unrelated people are in a room. Assume 365 equally likely birthdays (ignore leap years) and that each person's birthday
+is independent of everyone else's.
+
+A        The probability that no two of the 8 people share a birthday is greater than 92.5%.
+B       The probability that at least two of the 8 people share a birthday is greater than 7.4%.
+C        The probability that at least one of the other 7 people has the exact same birthday as one specific named
+person (say, the first person to enter the room) is less than 2%.
+D        The probability that at least two people (any two, not a specific pair) share a birthday is more than 3.9
+times the probability that someone shares that one specific person's birthday.
+E       If the group size were increased to 23 people, the probability that at least two share a birthday would
+exceed 50%.
+
+### Question 5 — Distributing Candies (Stars and Bars)
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+10 identical pieces of candy are distributed at random among 4 distinct children, where each of the distributions counted
+by the stars-and-bars method is equally likely.
+
+A        The total number of distinct ways to distribute the 10 candies among the 4 children is 286.
+B       The probability that a specific child receives no candy at all is greater than 23%.
+C        The probability that a specific child receives at least 5 candies is less than 20%.
+D        The probability that every one of the 4 children receives at least one candy is exactly 42/143.
+E       The probability that a specific child receives no candy is more than double the probability that a specific
+child receives at least 5 candies.
+
+### Question 6 — Repeated Digits in a PIN
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A 4-digit PIN code is generated at random by independently choosing each of the 4 digits from 0–9. Digits may repeat,
+and every one of the 10,000 possible codes is equally likely.
+
+A        The total number of possible 4-digit PIN codes, allowing repeated digits, is 5,040.
+B       The probability that all four digits are different (no repeats at all) is greater than 55%.
+C        The probability that at least one digit repeats somewhere in the code is greater than 49%.
+D        The probability of exactly one repeated pair (two digits the same, and the other two digits distinct from
+each other and from the pair) is greater than 45%.
+E       The probability that all four digits are identical is greater than 1 in 500.
+
+## Answer Key & Explanations
+
+As before, each answer establishes the relevant counts and probabilities in a Step 1 (and Step 2, where needed) before
+addressing the individual statements.
+
+### Question 1 — A Poker Hand
+
+#### Step 1 — Apply the multiplication principle to count each hand type: choose which rank(s) fill each structural
+role, then choose suits for the cards occupying that role.
+Total hands: \(\binom{52}{5}\) = 2,598,960. Exactly one pair: \(\binom{13}{1}\)·\(\binom{4}{2}\)·\(\binom{12}{3}\)·4³ = 13·6·220·64 = 1,098,240, giving P ≈
+42.2569%. Full house: \(\binom{13}{1}\)·\(\binom{4}{3}\)·\(\binom{12}{1}\)·\(\binom{4}{2}\) = 13·4·12·6 = 3,744, giving P ≈ 0.144058%. Two pair:
+\(\binom{13}{2}\)·\(\binom{4}{2}\)²·\(\binom{11}{1}\)·4 = 78·36·11·4 = 123,552, giving P ≈ 4.7539%. Four of a kind: \(\binom{13}{1}\)·\(\binom{4}{4}\)·\(\binom{12}{1}\)·\(\binom{4}{1}\) =
+13·12·4 = 624, giving P ≈ 0.024010%.
+
+#### A — TRUE
+\(\binom{52}{5}\) = 2,598,960 exactly, as computed above.
+**Formula:** Total hands = \(\binom{52}{5}\)
+#### B — FALSE
+P(exactly one pair) ≈ 42.2569%, which is not greater than 42.3% — the decision falls in the second decimal place, so
+early rounding would flip the answer.
+**Formula:** P(one pair) = [\(\binom{13}{1}\)·\(\binom{4}{2}\)·\(\binom{12}{3}\)·4³] / \(\binom{52}{5}\) ≈ 0.42257
+#### C — TRUE
+Both probabilities share the same denominator \(\binom{52}{5}\), so their ratio equals the ratio of the raw counts: 3,744 / 624 = 6
+exactly.
+**Formula:** P(full house) / P(four of a kind) = 3,744 / 624 = 6
+#### D — FALSE
+P(two pair) ≈ 4.7539%, far less than P(exactly one pair) ≈ 42.2569% — pairing up twice is much rarer than pairing up
+once.
+**Formula:** Compare 123,552 to 1,098,240 (same denominator \(\binom{52}{5}\))
+#### E — TRUE
+P(full house) = 3,744/2,598,960 ≈ 1/694.18 ≈ 0.144058%, which is (narrowly) greater than 1/700 ≈ 0.142857% — a
+close call that requires carrying several decimal places.
+**Formula:** P(full house) ≈ 1/694.18 vs. 1/700 ≈ 0.14286%
+
+### Question 2 — Choosing a Committee
+
+#### Step 1 — Apply the combination formula \(\binom{n}{r}\) to the men and women pools separately, then combine the two
+counts via the multiplication principle for each case.
+Total: \(\binom{13}{5}\) = 1,287. Exactly 3 men & 2 women: \(\binom{8}{3}\)·\(\binom{5}{2}\) = 56·10 = 560, so P ≈ 43.5120%. At least 4 women:
+\(\binom{8}{1}\)·\(\binom{5}{4}\) + \(\binom{5}{5}\) = 40 + 1 = 41, so P ≈ 3.1857%. No men at all (all 5 women): \(\binom{5}{5}\) = 1 way, so P ≈ 0.0777%. At
+least 1 woman: 1,287 − \(\binom{8}{5}\) = 1,287 − 56 = 1,231, so P ≈ 95.6488%.
+
+#### A — TRUE
+\(\binom{13}{5}\) = 1,287 exactly, as computed above.
+**Formula:** Total committees = \(\binom{13}{5}\)
+#### B — TRUE
+P(3 men, 2 women) = 560/1,287 ≈ 43.5120%, which is (narrowly) greater than 43.5% — the decision falls in the second
+decimal place.
+**Formula:** P(3M, 2W) = \(\binom{8}{3}\)·\(\binom{5}{2}\) / \(\binom{13}{5}\) = 560/1,287
+#### C — TRUE
+P(at least 4 women) = 41/1,287 ≈ 3.1857%, which is (narrowly) less than 3.2%.
+**Formula:** P(≥4 women) = [\(\binom{8}{1}\)·\(\binom{5}{4}\) + \(\binom{5}{5}\)] / \(\binom{13}{5}\) = 41/1,287
+
+#### D — FALSE
+
+Since there are exactly 5 women and the committee needs exactly 5 members, an all-women committee is possible in
+exactly \(\binom{5}{5}\) = 1 way — an easy-to-miss boundary case, not an impossibility.
+**Formula:** Ways with 0 men = \(\binom{8}{0}\)·\(\binom{5}{5}\) = 1
+#### E — TRUE
+The ratio is 1,231/41 ≈ 30.0244, which is (narrowly) more than 30 — again a close call decided only in the second
+decimal place.
+**Formula:** [\(\binom{13}{5}\) − \(\binom{8}{5}\)] / [\(\binom{8}{1}\)·\(\binom{5}{4}\) + \(\binom{5}{5}\)] = 1,231/41 ≈ 30.024
+
+### Question 3 — Mismatched Gifts (Derangements)
+
+#### Step 1 — Apply the derangement formula D = n!·Σ₌₀ⁿ (−1)ᵏ/k! to count redistributions with no fixed points,
+then use \(\binom{6}{k}\)·D₆₋ to count redistributions with exactly k matches.
+Total: 6! = 720. D₆ = 265, so P(no matches) = 265/720 ≈ 36.8056%. Exactly one match: \(\binom{6}{1}\)·D₅ = 6·44 = 264, so P ≈
+36.6667%. Exactly two matches: \(\binom{6}{2}\)·D₄ = 15·9 = 135, so P = 135/720 = 0.1875 exactly. All six match (identity):
+1/720 ≈ 0.1389%.
+#### A — TRUE
+6! = 720 exactly, as computed above.
+**Formula:** Total assignments = 6!
+
+#### B — TRUE
+P(no matches) = D₆/720 = 265/720 ≈ 36.8056%, which is (narrowly) greater than 36.8%.
+**Formula:** P(no matches) = D₆ / 6! = 265/720
+
+#### C — FALSE
+P(exactly one match) = 264/720 ≈ 36.6667%, which is slightly LESS than P(no matches) ≈ 36.8056% — the two are
+nearly tied, since both converge toward 1/e ≈ 36.7879% as the number of items grows, but here "no matches" edges
+ahead.
+**Formula:** Compare \(\binom{6}{1}\)·D₅/6! = 264/720 to D₆/6! = 265/720
+#### D — TRUE
+P(exactly two matches) = 135/720, which simplifies exactly to 3/16 = 0.1875.
+**Formula:** P(exactly two matches) = \(\binom{6}{2}\)·D₄ / 6! = 135/720 = 3/16
+#### E — FALSE
+P(all six match) = 1/720 ≈ 0.1389%, which is less than 1/500 = 0.2% — not greater.
+**Formula:** P(all match) = 1/6! = 1/720 vs. 1/500 = 0.2%
+
+### Question 4 — A Birthday Coincidence
+
+#### Step 1 — Apply the complement rule: P(no shared birthday among n people) = [365·364·⋯·(365−n+1)] / 365ⁿ.
+Separately, P(someone else shares one specific person's exact birthday) = 1 − (364/365)ⁿ⁻¹ — a genuinely different
+question from the classic "any two people match" birthday problem.
+For n = 8: P(no shared birthday) ≈ 92.5665%, so P(at least two share) ≈ 7.4335%. P(someone matches one specific
+person's birthday) = 1 − (364/365)⁷ ≈ 1.9021%. For n = 23: P(at least two share) ≈ 50.7297%.
+#### A — TRUE
+P(no shared birthday) ≈ 92.5665%, which is (narrowly) greater than 92.5%.
+**Formula:** P(no match) = (365·364·⋯·358) / 365⁸ ≈ 0.925665
+#### B — TRUE
+P(at least one shared birthday) = 1 − 0.925665 ≈ 7.4335%, which is (narrowly) greater than 7.4%.
+**Formula:** P(≥2 share) = 1 − (365·364·⋯·358)/365⁸ ≈ 0.074335
+#### C — TRUE
+
+P(someone matches that one specific birthday) = 1 − (364/365)⁷ ≈ 1.9021%, which is less than 2% — much smaller than
+the "any    two  match" probability in statement B, since this only checks matches against one fixed birthday rather than
+any of the \(\binom{8}{2}\) = 28 possible pairs.
+**Formula:** P(match a specific person) = 1 − (364/365)⁷ ≈ 0.019021
+
+#### D — TRUE
+The ratio is 0.074335/0.019021 ≈ 3.9080, which is (narrowly) more than 3.9 — illustrating just how much rarer a match
+against one fixed birthday is compared to a match among any pair in the group.
+**Formula:** 0.074335 / 0.019021 ≈ 3.908
+
+#### E — TRUE
+This is the famous classical result: at n = 23, P(at least two share a birthday) ≈ 50.7297%, which exceeds 50% — a far
+smaller group than most people's intuition would suggest.
+**Formula:** P(≥2 share, n=23) = 1 − (365·364·⋯·343)/365²³ ≈ 0.507297
+
+### Question 5 — Distributing Candies (Stars and Bars)
+
+#### Step 1 — Apply the stars-and-bars formula: the number of ways to distribute n identical items among k distinct
+groups is \(\binom{n + k − 1}{k − 1}\). To find the ways a specific child receives a given range, fix that child's count and
+re-apply stars-and-bars to the remaining candies among the remaining children.
+Total: \(\binom{13}{3}\) = 286. Specific child gets 0: remaining 10 candies among 3 children = \(\binom{12}{2}\) = 66, so P ≈ 23.0769%.
+Specific child gets ≥5: summing C((10−k)+2, 2) for k = 5..10 gives 21+15+10+6+3+1 = 56, so P ≈ 19.5804%. All 4
+children get ≥1: substituting yᵢ = xᵢ − 1 and redistributing 6 candies among 4 children gives \(\binom{9}{3}\) = 84, so P = 84/286 =
+42/143 ≈ 29.3706%.
+
+#### A — TRUE
+\(\binom{13}{3}\) = 286 exactly, as computed above.
+**Formula:** Total distributions = \(\binom{10 + 4 − 1}{4 − 1}\) = \(\binom{13}{3}\)
+#### B — TRUE
+P(that child gets 0) = 66/286 ≈ 23.0769%, which is (narrowly) greater than 23%.
+**Formula:** P(specific child gets 0) = \(\binom{12}{2}\) / \(\binom{13}{3}\) = 66/286
+
+#### C — TRUE
+P(that child gets ≥5) = 56/286 ≈ 19.5804%, which is (narrowly) less than 20%.
+**Formula:** P(specific child ≥ 5) = Σ₌₅¹⁰ \(\binom{12−k}{2}\) / \(\binom{13}{3}\) = 56/286
+
+#### D — TRUE
+P(all four get ≥1) = 84/286, which simplifies exactly to 42/143 ≈ 29.3706%.
+**Formula:** P(all ≥ 1) = \(\binom{9}{3}\) / \(\binom{13}{3}\) = 84/286 = 42/143
+#### E — FALSE
+The ratio is 66/56 ≈ 1.1786, which is far from double (2×) — a specific child is somewhat more likely to receive nothing
+than to receive a lot, but not twice as likely.
+**Formula:** Compare 66/286 ≈ 23.08% to 56/286 ≈ 19.58% — ratio ≈ 1.179
+
+### Question 6 — Repeated Digits in a PIN
+
+#### Step 1 — Count total codes by the multiplication principle (10 choices for each of the 4 digits, repetition allowed),
+then use complementary counting and case-by-case counting for the repeat patterns.
+Total: 10⁴ = 10,000. All different: \({}_{10}P_{4}\) = 10·9·8·7 = 5,040, so P = 50.4%, giving P(at least one repeat) = 49.6%.
+Exactly one pair (one digit twice, the other two distinct singles): 10·\(\binom{4}{2}\)·9·8 = 4,320, so P = 43.2%. All four identical:
+10, so P = 0.1%.
+
+#### A — FALSE
+5,040 is actually \({}_{10}P_{4}\), the count of codes with NO repeated digits. The true total, allowing repeats, is 10⁴ = 10,000 —
+a classic mix-up between the overall total and one restricted case within it.
+**Formula:** Total codes (repeats allowed) = 10⁴ = 10,000
+
+#### B — FALSE
+P(all different) = 5,040/10,000 = 50.4%, which is not greater than 55%.
+**Formula:** P(all different) = \({}_{10}P_{4}\) / 10⁴ = 5,040/10,000 = 0.504
+
+#### C — TRUE
+P(at least one repeat) = 1 − 0.504 = 49.6%, which is greater than 49%.
+**Formula:** P(at least one repeat) = 1 − \({}_{10}P_{4}\)/10⁴ = 1 − 0.504 = 0.496
+
+#### D — FALSE
+P(exactly one pair) = 4,320/10,000 = 43.2%, which is not greater than 45%.
+**Formula:** P(exactly one pair) = 10·\(\binom{4}{2}\)·9·8 / 10⁴ = 4,320/10,000 = 0.432
+
+#### E — FALSE
+P(all four identical) = 10/10,000 = 0.1% = 1/1,000, and 1/1,000 is less than 1/500 = 0.2% — not greater.
+**Formula:** P(all identical) = 10 / 10⁴ = 1/1,000 vs. 1/500 = 0.2%
+
+Tip: This set leans on complementary and case-by-case counting more than the previous one. Two traps repeat across it:
+(1) confusing a restricted sub-count (e.g., "no repeats," "a specific person") with the overall total or the "any match"
+case — always check which event the count actually corresponds to. (2) trusting the direction of a comparison without
+computing both sides exactly, since several statements here are decided only in the second or third decimal place.
+
+# Combinatorial Probability — Practice Questions (Part 4)
+
+Six more questions in narrative, word-problem style — an assessment poster, a national lottery draw, a
+student project team, a tennis club's random pairings, a gala dinner seating plan, and a coat-check
+derangement
+
+A continuation of the previous three sets. Every question again has five True/False statements (A–E), using
+the same notation: \(\binom{n}{r}\) for combinations, \({}_{n}P_{r}\) for permutations. As before, the number of TRUE
+statements in a given question varies unpredictably from question to question — including questions where
+several statements are true and questions where only one or two are true. This matches the WU BBE
+entrance-exam format: five independent True/False assertions per case, with no multiple-choice guessing
+and with close-call inequalities that reward exact counting.
+
+Additional notation and formulas used in this set:
+Permutations of a multiset: when arranging n items where one item repeats n₁ times, another n₂
+times, etc., the number of distinct arrangements is n! / (n₁!·n₂!·…).
+Hypergeometric selection (lottery / committee): choosing a sample of size k at random (without
+replacement) from a population of N containing K 'marked' items, the probability of exactly j marked
+items is \(\binom{K}{j}\)·\(\binom{N−K}{k−j}\) / \(\binom{N}{k}\).
+Perfect matchings (random pairings): the number of ways to pair up n people (n even) into n/2
+unordered pairs is n! / (2^(n/2)·(n/2)!).
+Adjacent seating (block method): to force two specific people to sit together in a row of n, treat them
+as one block (×2 for internal order), giving 2·(n−1)! favourable lineups out of n!.
+Derangements: the number of permutations of n items with no fixed points is !n = n! · Σ_{k=0}^{n}
+(−1)^k / k!, and P(derangement) → 1/e ≈ 0.367879 as n grows. If exactly n−1 items are fixed, the
+last is automatically fixed, so P(exactly n−1 fixed points) = 0.
+
+## Questions
+
+### Question 1 — The Assessment Poster
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+For a campus assessment fair, ten letter tiles spelling the word ASSESSMENT (A, S, S, E, S, S, M, E, N, T) are
+placed in a bag and drawn out one at a time to form a poster headline in a row. Tiles for the same letter
+are indistinguishable from one another. The word contains four S's, two E's, and one each of A, M, N, and
+T.
+
+A       The total number of distinct posters that can be formed is 75,600.
+B       The probability that all four S's end up adjacent to each other is 1/30.
+C       The probability that the two E's end up adjacent to each other is greater than 1/4.
+D       The probability that all four S's are adjacent AND the two E's are adjacent (simultaneously) is
+less than 1%.
+E       The probability that M and T end up adjacent to each other equals the probability that the
+two E's end up adjacent to each other.
+
+### Question 2 — The National Lottery
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+In a national lottery, six distinct winning numbers are drawn uniformly at random without replacement from
+the integers 1 through 49. A player has already filled in one ticket with six chosen numbers. 'Matching k
+numbers' means that exactly k of the player's six numbers appear among the six winning numbers.
+
+A       The total number of distinct possible draws is greater than 13 million.
+B       The probability that the player matches exactly 3 numbers is greater than 2%.
+C       The probability that the player matches exactly 0 numbers is greater than 40%.
+D       The probability of matching all 6 numbers (the jackpot) is greater than 1 in 10 million.
+E       The probability of matching exactly 3 numbers is more than 15 times the probability of
+matching exactly 4 numbers.
+
+### Question 3 — The Student Project Team
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A lecture group consists of 10 computer-science (CS) students and 8 business students (18 students total). The
+instructor selects 4 of the 18 students completely at random to form a project team.
+
+A       The total number of possible 4-person teams is 3,060.
+B       The probability that the team contains exactly 2 CS and 2 business students is greater than
+40%.
+C       The probability that all 4 team members are business students is less than 3%.
+D       The probability that at least one CS student is on the team is less than 95%.
+E       The probability that CS students form a majority of the team (3 or 4 of the 4 seats) is greater
+than the probability that exactly 2 seats go to CS students.
+
+### Question 4 — Tennis Club Pairings
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+At a tennis club meeting, 12 players attend. Before the matches begin, every pair of players shakes hands
+exactly once as a warm-up greeting. Afterward, the 12 players are paired up completely at random into 6
+simultaneous singles matches for round 1 (each player plays exactly one opponent).
+
+A       The total number of handshakes exchanged during the warm-up is 66.
+B       The number of distinct ways to pair the 12 players into 6 round-1 matches is 10,395.
+C       The probability that two specific players, Anna and Ben, are paired against each other in
+round 1 is 1/6.
+D       The probability that one specific complete pairing (a predetermined list of exactly which 6
+pairs play each other) is the one that occurs is 1/1,000.
+E       If the club instead had 6 players, the number of ways to pair them into 3 round-1 matches
+would be 15.
+
+### Question 5 — The Gala Dinner
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+At a gala dinner, 4 men and 4 women (8 distinct people total) are seated uniformly at random in a single row
+of 8 chairs.
+
+A       The total number of possible seating arrangements is 40,320.
+B       The probability that the genders strictly alternate along the row
+(man–woman–man–woman… or woman–man–woman–man…) is exactly
+1/35.
+C       The probability that all four women sit in four consecutive seats is greater than 10%.
+D       The probability that two specific guests end up in adjacent seats is exactly 1/4.
+E       The probability that both end seats are occupied by women is greater than 20%.
+
+## Answer Key & Explanations
+As before, each answer establishes the relevant counts and probabilities in a Step 1 before addressing the
+individual statements.
+
+### Question 1 — The Assessment Poster
+#### Step 1 — Apply the multiset permutation formula (repeats: S×4, E×2), then use the block method for each
+adjacency event.
+Total arrangements: 10!/(4!·2!) = 3,628,800/48 = 75,600. Gluing the four S's into one block leaves 7 units (the
+SSSS-block plus A, E, E, M, N, T), with the E's still repeated, so 7!/2! = 5,040/2 = 2,520 arrangements, giving
+P(S's adjacent) = 2,520/75,600 = 1/30 ≈ 0.0333. Gluing the two E's into a block leaves 9 units with the S's still
+repeated four times: 9!/4! = 362,880/24 = 15,120, so P(E's adjacent) = 15,120/75,600 = 1/5 = 0.20. Gluing
+BOTH the SSSS-block and the EE-block leaves 6 distinct units: 6! = 720, so P(both) = 720/75,600 = 1/105 ≈
+0.952%. For M and T adjacent, glue them as an ordered block (×2): 2·9!/(4!·2!) = 2·7,560 = 15,120, so P(M,T
+adjacent) = 15,120/75,600
+= 1/5 — identical to P(E's adjacent).
+
+#### A — TRUE
+10!/(4!·2!) = 3,628,800/48 = 75,600 exactly, as computed above — dividing by 4! for the S's and 2! for the E's.
+**Formula:** Total arrangements = 10! / (4!·2!)
+
+#### B — TRUE
+Treating the four S's as one block leaves 7 units with the E's still repeated, giving 7!/2! = 2,520, so P =
+2,520/75,600 = 1/30, exactly as stated.
+**Formula:** P(S's adjacent) = [7!/2!] / [10!/(4!·2!)] = 2,520/75,600 = 1/30
+
+#### C — FALSE
+P(E's adjacent) = 15,120/75,600 = 1/5 = 0.20, which is NOT greater than 1/4 = 0.25 — a close-looking trap if
+one confuses the two common fractions.
+**Formula:** P(E's adjacent) = [9!/4!] / [10!/(4!·2!)] = 1/5 = 0.20, not > 0.25
+
+#### D — TRUE
+P(both adjacent groups) = 720/75,600 = 1/105 ≈ 0.952%, which is indeed less than 1%.
+**Formula:** P(both) = 6! / [10!/(4!·2!)] = 720/75,600 = 1/105 ≈ 0.952%
+
+#### E — TRUE
+Both probabilities equal 15,120/75,600 = 1/5. The two E's form an unordered repeated pair, while M and T
+form a pair of distinct letters whose block can be ordered in 2 ways — the algebra happens to cancel to the
+same count.
+**Formula:** P(M,T adjacent) = 2·[9!/(4!·2!)] / [10!/(4!·2!)] = 1/5 = P(E's adjacent)
+
+### Question 2 — The National Lottery
+#### Step 1 — Count the total draws and each match count using the hypergeometric formula with N = 49, K = 6
+(player's numbers), k = 6.
+Total draws: \(\binom{49}{6}\) = 13,983,816. Exactly 3 matches: \(\binom{6}{3}\)·\(\binom{43}{3}\) = 20·12,341 = 246,820, so P ≈ 1.765%.
+Exactly 0 matches: \(\binom{6}{0}\)·\(\binom{43}{6}\) = 6,096,454, so P ≈ 43.60%. Jackpot (exactly 6): 1/13,983,816 ≈ 7.15×10⁻⁸,
+i.e., about 1 in 14.0 million. Exactly 4 matches: \(\binom{6}{4}\)·\(\binom{43}{2}\) = 15·903 = 13,545, so P ≈ 0.0969%. The ratio
+P(exact 3)/P(exact 4) = 246,820/13,545 ≈ 18.22.
+
+#### A — TRUE
+\(\binom{49}{6}\) = 13,983,816, which is indeed greater than 13 million.
+**Formula:** Total draws = \(\binom{49}{6}\) = 13,983,816
+
+#### B — FALSE
+P(exactly 3) ≈ 1.765%, which is NOT greater than 2% — a classic close-call inequality that rewards computing
+the exact fraction rather than guessing from lottery lore.
+**Formula:** P(exact 3) = \(\binom{6}{3}\)·\(\binom{43}{3}\)/\(\binom{49}{6}\) ≈ 1.765%, not > 2%
+
+#### C — TRUE
+P(exactly 0) ≈ 43.60%, which is greater than 40%.
+**Formula:** P(exact 0) = \(\binom{43}{6}\)/\(\binom{49}{6}\) ≈ 43.60%
+
+#### D — FALSE
+The jackpot probability is about 1 in 14.0 million, which is rarer than 1 in 10 million — so it is NOT greater
+than 1 in 10 million. (Equivalently: 1/13,983,816 ≈ 7.15×10⁻⁸ < 10⁻⁷.)
+**Formula:** P(jackpot) = 1/\(\binom{49}{6}\) ≈ 7.15×10⁻⁸, not > 10⁻⁷
+
+#### E — TRUE
+The ratio 246,820/13,545 ≈ 18.22 is indeed more than 15.
+**Formula:** \(\binom{6}{3}\)·\(\binom{43}{3}\) / [\(\binom{6}{4}\)·\(\binom{43}{2}\)] ≈ 18.22 > 15
+
+### Question 3 — The Student Project Team
+#### Step 1 — Use the hypergeometric method: 18 people total (10 'successes' = CS, 8 'failures' = business),
+sample of 4.
+Total teams: \(\binom{18}{4}\) = 3,060. Exactly 2 CS, 2 business: \(\binom{10}{2}\)·\(\binom{8}{2}\) = 45·28 = 1,260, so P = 1,260/3,060 ≈
+41.18%. All 4 business (0 CS): \(\binom{10}{0}\)·\(\binom{8}{4}\) = 70, so P = 70/3,060 ≈ 2.29%, and therefore P(at least 1 CS) = 1
+− 2.29% ≈ 97.71%. CS majority (3 or 4 CS): \(\binom{10}{3}\)·\(\binom{8}{1}\) + \(\binom{10}{4}\)·\(\binom{8}{0}\) = 960 + 210 = 1,170, so P =
+1,170/3,060 ≈
+38.24%.
+
+#### A — TRUE
+\(\binom{18}{4}\) = 3,060 exactly, as computed above.
+**Formula:** Total teams = \(\binom{18}{4}\) = 3,060
+
+#### B — TRUE
+P(2 CS, 2 business) = 1,260/3,060 ≈ 41.18%, which is greater than 40%.
+**Formula:** P(2 CS, 2 business) = \(\binom{10}{2}\)·\(\binom{8}{2}\)/\(\binom{18}{4}\) ≈ 41.18%
+
+#### C — TRUE
+P(all business) = 70/3,060 ≈ 2.29%, which is less than 3%.
+**Formula:** P(all business) = \(\binom{8}{4}\)/\(\binom{18}{4}\) ≈ 2.29%
+
+#### D — FALSE
+P(at least 1 CS) ≈ 97.71%, which is NOT less than 95% — it is well above it, since with 10 of 18 students
+being CS it is quite hard for a random 4-person sample to miss them all.
+**Formula:** P(at least 1 CS) = 1 − \(\binom{8}{4}\)/\(\binom{18}{4}\) ≈ 97.71%
+
+#### E — FALSE
+P(CS majority) ≈ 38.24% is LESS than P(exactly 2 CS) ≈ 41.18%, not greater — with a sample of only 4 from a
+10-vs-8 pool, the balanced 2–2 split is the single most likely composition.
+**Formula:** Compare 38.24% (CS majority) to 41.18% (exactly 2 CS)
+
+### Question 4 — Tennis Club Pairings
+#### Step 1 — Count handshakes as combinations, then apply the perfect-matching formula for unordered pairings.
+Handshakes: \(\binom{12}{2}\) = 66. Pairings of 12 into 6 matches: 12! / (2⁶ · 6!) = 479,001,600 / (64 · 720) = 479,001,600
+/ 46,080 = 10,395. For a specific pair (Anna and Ben), Anna's opponent is equally likely to be any of the other
+11 players, so P(Anna plays Ben) = 1/11. A single predetermined complete pairing is just one of the 10,395
+equally likely outcomes, so its probability is 1/10,395. For 6 players: 6! / (2³ · 3!) = 720 / (8 · 6) = 15.
+
+#### A — TRUE
+The handshake count is \(\binom{12}{2}\) = 66 — an unordered pair, so a combination, not a product such as 12×11 or
+12².
+**Formula:** Handshakes = \(\binom{12}{2}\) = 66
+
+#### B — TRUE
+Using the perfect-matching formula for 12 players into 6 matches: 12!/(2⁶·6!) = 10,395, exactly as stated.
+**Formula:** Pairings = 12! / (2⁶·6!) = 10,395
+
+#### C — FALSE
+Fixing Anna, her opponent is equally likely to be any 1 of the other 11 players, so P(Anna plays Ben) = 1/11 ≈
+9.09%, not 1/6 ≈ 16.7%. Confusing 'one of six matches' with 'one of eleven possible opponents' is the trap.
+**Formula:** P(Anna plays Ben) = 1/11, not 1/6
+
+#### D — FALSE
+There are 10,395 equally likely complete pairings, so the probability that one specific predetermined pairing
+occurs is 1/10,395, not 1/1,000 — a tempting round-number denominator that is off by an order of
+magnitude. Formula: P(specific pairing occurs) = 1/10,395, not 1/1,000
+
+#### E — TRUE
+With 6 players, the correct count is 6!/(2³·3!) = 15, exactly as stated.
+**Formula:** Pairings (6 players) = 6! / (2³·3!) = 15
+
+### Question 5 — The Gala Dinner
+#### Step 1 — Count the total lineups, then apply alternating-pattern counting, the block method, and direct
+end-seat counting.
+Total lineups: 8! = 40,320. Alternating genders: two pattern types (MWMW… or WMWM…), and within
+each type the 4 men and 4 women may be arranged freely, giving 2·4!·4! = 2·24·24 = 1,152 arrangements, so
+P = 1,152/40,320 = 1/35 ≈ 2.86%. All four women together (one block of 4 women, plus 4 men as separate
+units → 5 units): 5!·4! = 120·24 = 2,880 (women rearrange inside the block), so P = 2,880/40,320 = 1/14 ≈
+7.14%. Two specific guests adjacent: treat as a block (×2 for order): 2·7! = 10,080, so P = 10,080/40,320 =
+1/4. Both end seats women: 4 choices for the left end, 3 for the right end, and 6! for the middle: 4·3·720 =
+8,640, so P = 8,640/40,320 = 3/14 ≈ 21.43%.
+
+#### A — TRUE
+8! = 40,320 exactly, as computed above.
+**Formula:** Total lineups = 8! = 40,320
+
+#### B — TRUE
+2·4!·4! / 8! = 1,152/40,320 = 1/35, exactly as stated.
+**Formula:** P(alternating) = 2·4!·4! / 8! = 1/35
+
+#### C — FALSE
+P(all four women consecutive) = 1/14 ≈ 7.14%, which is NOT greater than 10%.
+**Formula:** P(women together) = 5!·4! / 8! = 1/14 ≈ 7.14%, not > 10%
+
+#### D — TRUE
+2·7! / 8! = 2/8 = 1/4, exactly as stated — a useful general fact: in a random row of n, any two specific people
+are adjacent with probability 2/n.
+**Formula:** P(two specific adjacent) = 2·7! / 8! = 1/4
+
+#### E — TRUE
+P(both ends women) = 8,640/40,320 = 3/14 ≈ 21.43%, which is greater than 20%.
+**Formula:** P(ends both women) = 4·3·6! / 8! = 3/14 ≈ 21.43%
+
+# Combinatorial Probability — Practice Questions (Part 3)
+Six more questions in narrative, word-problem style — a statistics-fair anagram, a poker hand, a peer-review panel, a
+chess club's random pairings, a wedding photograph, and the birthday problem
+
+A continuation of the previous two sets. Every question again has five True/False statements (A–E), using the same
+notation: \(\binom{n}{r}\) for combinations, \({}_{n}P_{r}\) for permutations. As before, the number of TRUE statements in a given
+question varies unpredictably from question to question — including questions where all five statements are true and
+questions where only one is true.
+
+Additional notation and formulas used in this set:
+•     Permutations of a multiset: when arranging n items where one item repeats n₁ times, another n₂ times, etc.,
+the number of distinct arrangements is n! / (n₁!·n₂!·…).
+•     Hypergeometric selection: choosing a sample of size k at random (without replacement) from a population of
+N containing K 'successes,' the probability of exactly j successes is \(\binom{K}{j}\)·\(\binom{N−K}{k−j}\) / \(\binom{N}{k}\).
+•     Perfect matchings (random pairings): the number of ways to pair up n people (n even) into n/2 unordered pairs
+is n! / (2^(n/2)·(n/2)!).
+•     Inclusion-exclusion for three events: P(A₁∪A₂∪A₃) = P(A₁)+P(A₂)+P(A₃) − P(A₁∩A₂) − P(A₁∩A₃)
+− P(A₂∩A₃) + P(A₁∩A₂∩A₃).
+•     Birthday problem: for n people and d equally likely birthdays, P(at least two share a birthday) = 1 −
+d!/((d−n)!·dⁿ), i.e., 1 minus the probability that all n birthdays are different.
+
+## Questions
+
+### Question 1 — The Statistics Fair Banner
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+For a statistics fair, ten letter tiles spelling the word STATISTICS (S, T, A, T, I, S, T, I, C, S) are placed in a bag and
+drawn out one at a time to form a banner in a row. Tiles for the same letter are indistinguishable from one another. The
+word contains three S's, three T's, two I's, one A, and one C.
+
+A        The total number of distinct banners that can be formed is 50,400.
+B        The probability that all three S's end up adjacent to each other is 1/15.
+C        The probability that all three T's end up adjacent to each other equals the probability that all three S's end
+up adjacent to each other.
+D        The probability that the two I's end up adjacent to each other is greater than 1/6.
+E        The probability that the two I's are adjacent AND all three S's are adjacent (simultaneously) is less than
+2%.
+
+### Question 2 — Poker Night
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+At a friend's poker night, the host shuffles a standard, well-mixed 52-card deck and deals a 5-card hand to the first player,
+Amanda. No cards are shown or removed beforehand — Amanda's hand is a uniformly random 5-card subset of the deck.
+
+A        The total number of distinct 5-card hands that could be dealt is greater than 2.5 million.
+B        The probability of being dealt a full house is more than 10 times the probability of being dealt four of a
+kind.
+C        The probability of being dealt a flush (5 cards of one suit, excluding straight flushes) is less than 1 in
+500.
+D        The probability that Amanda's hand contains at least one pair (i.e., is not a 'nothing' / high-card hand) is
+greater than 50%.
+E        The probability of being dealt a straight (excluding straight flushes) is greater than the probability of
+being dealt three of a kind.
+
+### Question 3 — The Peer-Review Panel
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A university research group consists of 6 senior researchers and 8 junior researchers (14 people total). To keep the
+process impartial, the department administrator selects 5 of the 14 people completely at random to form a peer-review
+panel.
+
+A        The total number of possible 5-person panels is 2,002.
+B       The probability that the panel contains exactly 2 senior and 3 junior researchers is greater than 40%.
+C        The probability that all 5 panel members are junior researchers is less than 5%.
+D        The probability that at least one senior researcher is on the panel is less than 90%.
+E       The probability that senior researchers form a majority of the panel (3, 4, or 5 of the 5 seats) is greater
+than the probability that exactly 2 seats go to senior researchers.
+
+### Question 4 — Chess Club Pairings
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+At a chess club meeting, 10 players attend. Before the tournament begins, every pair of players shakes hands exactly
+once as an icebreaker. Afterward, the 10 players are paired up completely at random into 5 simultaneous games for round
+1 (each player plays exactly one opponent).
+
+A        The total number of handshakes exchanged during the icebreaker is 100.
+B       The number of distinct ways to pair the 10 players into 5 round-1 games is 945.
+C        The probability that two specific players, Alice and Bob, are paired against each other in round 1 is 1/5.
+D        The probability that one specific complete pairing (a predetermined list of exactly which 5 pairs play
+each other) is the one that occurs is 1/90.
+E       If the club instead had 8 players, the number of ways to pair them into 4 round-1 games would be 96.
+
+### Question 5 — The Wedding Photograph
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+For a wedding photo, 3 married couples (6 distinct people total) line up in a single row, with everyone's position in the
+row determined completely at random.
+
+A        The total number of possible lineups is 720.
+B       The probability that all three couples end up standing together (each couple occupying two adjacent
+positions) is 1/15.
+C        The probability that at least one couple ends up standing together is greater than 60%.
+D        The probability that no couple ends up standing together is greater than 30%.
+E       The probability that no couple ends up standing together is less than the probability that all three couples
+end up standing together.
+
+### Question 6 — The Office Retreat
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A small firm's 12 employees, including the CEO, attend the annual retreat together. Assume birthdays are independent
+and uniformly distributed across 365 equally likely days (ignore leap years).
+
+A        The probability that at least two of the 12 employees share the same birthday is greater than 20%.
+B       The probability that at least one of the other 11 employees shares a birthday with the CEO specifically is
+greater than 5%.
+C        The probability that all 12 employees have different birthdays is less than 80%.
+D        If the retreat instead had 20 employees attending, the probability that at least two of them share a
+birthday would be greater than 50%.
+E       The probability that at least two of the 12 employees share a birthday is more than 6 times the probability
+
+that at least one employee shares a birthday with the CEO specifically.
+
+## Answer Key & Explanations
+
+As before, each answer establishes the relevant counts and probabilities in a Step 1 before addressing the individual
+statements.
+
+### Question 1 — The Statistics Fair Banner
+#### Step 1 — Apply the multiset permutation formula (repeats: S×3, T×3, I×2), then use the block method for each
+adjacency event.
+Total arrangements: 10!/(3!·3!·2!) = 3,628,800/72 = 50,400. Gluing the three S's into one block leaves 8 units (the
+SSS-block plus T,T,T,A,I,I,C), with the T's and I's still repeated, so 8!/(3!·2!) = 40,320/12 = 3,360 arrangements, giving
+P(S's adjacent) = 3,360/50,400 = 1/15 ≈ 0.0667. By identical logic (T's and S's play symmetric roles, both appearing 3
+times), P(T's adjacent) = 3,360/50,400 = 1/15 as well. Gluing the two I's into a block leaves 9 units (the II-block plus
+S,S,S,T,T,T,A,C), giving 9!/(3!·3!) = 362,880/36 = 10,080 arrangements, so P(I's adjacent) = 10,080/50,400 = 1/5 = 0.20.
+Gluing BOTH the SSS-block and the II-block leaves 7 units (2 blocks plus T,T,T,A,C), with only the T's still repeated:
+7!/3! = 5,040/6 = 840 arrangements, so P(both events) = 840/50,400 = 1/60 ≈ 0.0167.
+
+#### A — TRUE
+10!/(3!·3!·2!) = 3,628,800/72 = 50,400 exactly, as computed above — dividing by 3! for the S's, 3! for the T's, and 2! for
+the I's.
+**Formula:** Total arrangements = 10! / (3!·3!·2!)
+
+#### B — TRUE
+Treating the three S's as one block leaves 8 units with the T's and I's still repeated, giving 8!/(3!·2!) = 3,360, so P =
+3,360/50,400 = 1/15, exactly as stated.
+**Formula:** P(S's adjacent) = [8!/(3!·2!)] / [10!/(3!·3!·2!)] = 3,360/50,400 = 1/15
+
+#### C — TRUE
+The S's and T's each appear exactly 3 times among 10 letters, so gluing either trio together leaves an identical count
+structure — both give 3,360/50,400 = 1/15, by symmetry.
+**Formula:** P(S's adjacent) = P(T's adjacent) = 1/15, by symmetry
+
+#### D — TRUE
+P(I's adjacent) = 10,080/50,400 = 1/5 = 0.20, which is indeed greater than 1/6 ≈ 0.1667.
+**Formula:** P(I's adjacent) = [9!/(3!·3!)] / [10!/(3!·3!·2!)] = 10,080/50,400 = 1/5
+
+#### E — TRUE
+Gluing both the SSS-block and the II-block together leaves 7 units with only the T's repeated, giving 7!/3! = 840
+arrangements, so P(both) = 840/50,400 = 1/60 ≈ 1.67%, which is indeed less than 2% — a close call worth checking
+carefully.
+**Formula:** P(both adjacent) = [7!/3!] / [10!/(3!·3!·2!)] = 840/50,400 = 1/60 ≈ 1.67%
+
+### Question 2 — Poker Night
+#### Step 1 — Count the total hands and each named hand type using standard combinatorial hand-counting
+formulas.
+Total hands: \(\binom{52}{5}\) = 2,598,960. Full house: \(\binom{13}{1}\)·\(\binom{4}{3}\)·\(\binom{12}{1}\)·\(\binom{4}{2}\) = 3,744, so P ≈ 0.1441%. Four of a kind:
+\(\binom{13}{1}\)·\(\binom{4}{4}\)·\(\binom{12}{1}\)·\(\binom{4}{1}\) = 624, so P ≈ 0.0240%. Flush excluding straight flushes: \(\binom{13}{5}\)·4 − 40 = 5,148·4 − 40 =
+5,108, so P ≈ 0.1965%. Three of a kind: \(\binom{13}{1}\)·\(\binom{4}{3}\)·\(\binom{12}{2}\)·4² = 54,912, so P ≈ 2.1128%. Straight excluding straight
+flushes: 10·4⁵ − 40 = 10,200, so P ≈ 0.3925%. One-pair-or-better hands together account for 2,598,960 − 1,302,540 =
+1,296,420, where 1,302,540 is the count of 'nothing' (high-card) hands, so P(pair or better) ≈ 49.88%.
+
+#### A — TRUE
+\(\binom{52}{5}\) = 2,598,960, which is indeed greater than 2.5 million.
+**Formula:** Total hands = \(\binom{52}{5}\) = 2,598,960
+
+#### B — FALSE
+P(full house) ≈ 0.1441% and P(four of a kind) ≈ 0.0240%; the ratio is 3,744/624 = 6.0 exactly, so full house is 6 times as
+likely — not more than 10 times.
+
+**Formula:** 3,744 / 624 = 6.0, not > 10
+
+#### C — TRUE
+P(flush, excl. straight flush) = 5,108/2,598,960 ≈ 0.1965%, which is less than 1/500 = 0.20% — another close call.
+**Formula:** P(flush) = 5,108 / 2,598,960 ≈ 0.1965% < 0.20%
+
+#### D — FALSE
+P(pair or better) ≈ 49.88%, which is NOT greater than 50% — a classic trap, since more than half of all 5-card hands
+(about 50.12%) actually contain no pair at all.
+**Formula:** P(pair or better) = 1 − 1,302,540/2,598,960 ≈ 49.88%
+
+#### E — FALSE
+P(straight, excl. straight flush) ≈ 0.3925% is much LESS than P(three of a kind) ≈ 2.1128%, not greater — three of a kind
+is one of the more common named hands, while a straight is comparatively rare.
+**Formula:** Compare 0.3925% (straight) to 2.1128% (three of a kind)
+
+### Question 3 — The Peer-Review Panel
+#### Step 1 — Use the hypergeometric method: 14 people total (6 'successes' = senior, 8 'failures' = junior), sample of 5.
+Total panels: \(\binom{14}{5}\) = 2,002. Exactly 2 senior, 3 junior: \(\binom{6}{2}\)·\(\binom{8}{3}\) = 15·56 = 840, so P = 840/2,002 ≈ 41.96%. All 5
+junior (0 senior): \(\binom{6}{0}\)·\(\binom{8}{5}\) = 1·56 = 56, so P = 56/2,002 ≈ 2.80%, and therefore P(at least 1 senior) = 1 − 2.80% ≈
+97.20%. Senior majority (3, 4, or 5 senior): \(\binom{6}{3}\)·\(\binom{8}{2}\) + \(\binom{6}{4}\)·\(\binom{8}{1}\) + \(\binom{6}{5}\)·\(\binom{8}{0}\) = 560 + 120 + 6 = 686, so P =
+686/2,002 ≈ 34.27%.
+
+#### A — TRUE
+\(\binom{14}{5}\) = 2,002 exactly, as computed above.
+**Formula:** Total panels = \(\binom{14}{5}\) = 2,002
+
+#### B — TRUE
+P(2 senior, 3 junior) = \(\binom{6}{2}\)·\(\binom{8}{3}\)/\(\binom{14}{5}\) = 840/2,002 ≈ 41.96%, which is greater than 40%.
+**Formula:** P(2 senior, 3 junior) = \(\binom{6}{2}\)·\(\binom{8}{3}\) / \(\binom{14}{5}\) ≈ 41.96%
+
+#### C — TRUE
+P(all junior) = \(\binom{8}{5}\)/\(\binom{14}{5}\) = 56/2,002 ≈ 2.80%, which is less than 5%.
+**Formula:** P(all junior) = \(\binom{8}{5}\) / \(\binom{14}{5}\) ≈ 2.80%
+
+#### D — FALSE
+P(at least 1 senior) = 1 − P(all junior) ≈ 1 − 2.80% = 97.20%, which is NOT less than 90% — it is well above it, since
+with 6 out of 14 people being senior it is quite hard for a random 5-person sample to miss them all.
+**Formula:** P(at least 1 senior) = 1 − \(\binom{8}{5}\)/\(\binom{14}{5}\) ≈ 97.20%
+
+#### E — FALSE
+P(senior majority) ≈ 34.27% is LESS than P(exactly 2 senior) ≈ 41.96%, not greater — with only 6 seniors out of 14
+people, landing 3 or more of them on a 5-seat panel is less likely than landing exactly 2.
+**Formula:** Compare 34.27% (majority senior) to 41.96% (exactly 2 senior)
+
+### Question 4 — Chess Club Pairings
+#### Step 1 — Count handshakes with a combination, and count pairings using the standard 'perfect matching'
+formula n!/(2^(n/2)·(n/2)!).
+Handshakes: \(\binom{10}{2}\) = 45. Pairings of 10 players into 5 games: 10!/(2⁵·5!) = 3,628,800/(32·120) = 3,628,800/3,840 =
+945. For a specific pair (Alice and Bob), Alice's opponent is equally likely to be any of the other 9 players, so P(Alice
+plays Bob) = 1/9. A single predetermined complete pairing is just one of the 945 equally likely outcomes, so its
+probability is 1/945. For 8 players: 8!/(2⁴·4!) = 40,320/(16·24) = 40,320/384 = 105.
+
+#### A — FALSE
+The correct handshake count is \(\binom{10}{2}\) = 45, not 100 — squaring or doubling the player count is a common but incorrect
+shortcut; a handshake is an unordered pair, so it must be a combination, not a product.
+
+**Formula:** Handshakes = \(\binom{10}{2}\) = 45, not 100
+
+#### B — TRUE
+Using the perfect-matching formula for 10 players into 5 games: 10!/(2⁵·5!) = 945, exactly as stated.
+**Formula:** Pairings = 10! / (2⁵·5!) = 945
+
+#### C — FALSE
+Fixing Alice, her opponent is equally likely to be any 1 of the other 9 players, so P(Alice plays Bob) = 1/9 ≈ 11.1%, not
+1/5 = 20%.
+**Formula:** P(Alice plays Bob) = 1/9, not 1/5
+
+#### D — FALSE
+There are 945 equally likely complete pairings in total, so the probability that one specific predetermined pairing is the
+one that occurs is 1/945, not 1/90 — a tempting but incorrect denominator.
+**Formula:** P(specific pairing occurs) = 1/945, not 1/90
+
+#### E — FALSE
+With 8 players, the correct count is 8!/(2⁴·4!) = 105, not 96 — a nearby but incorrect value.
+**Formula:** Pairings (8 players) = 8! / (2⁴·4!) = 105, not 96
+
+### Question 5 — The Wedding Photograph
+#### Step 1 — Count the total lineups, then use the block method together with inclusion-exclusion for 'at least one
+couple together.'
+Total lineups: 6! = 720. All three couples together (as 3 blocks): 3!·2!³ = 6·8 = 48, so P = 48/720 = 1/15 ≈ 6.67%. For 'at
+least one couple together,' let Aᵢ be the event that couple i is adjacent. Each |Aᵢ| = 5!·2! = 240 (treating that couple as one
+block); each pairwise |Aᵢ∩A| = 4!·2!·2! = 96 (treating two couples as two blocks); and |A₁∩A₂∩A₃| = 48, from above.
+By inclusion-exclusion: |A₁∪A₂∪A₃| = 3(240) − 3(96) + 48 = 720 − 288 + 48 = 480, so P(at least one couple together)
+= 480/720 ≈ 66.67%, and P(no couple together) = 1 − 66.67% = 33.33%.
+
+#### A — TRUE
+6! = 720 exactly, as computed above.
+**Formula:** Total lineups = 6! = 720
+
+#### B — TRUE
+Treating all three couples as blocks gives 3!·2!³ = 48 arrangements, so P = 48/720 = 1/15, exactly as stated.
+**Formula:** P(all 3 couples together) = 3!·2!³ / 6! = 48/720 = 1/15
+
+#### C — TRUE
+By inclusion-exclusion, P(at least one couple together) = 480/720 ≈ 66.67%, which is greater than 60%.
+**Formula:** P(at least one couple together) = [3(240) − 3(96) + 48] / 720 ≈ 66.67%
+
+#### D — TRUE
+P(no couple together) = 1 − 66.67% = 33.33%, which is greater than 30%.
+**Formula:** P(no couple together) = 1 − 480/720 = 240/720 ≈ 33.33%
+
+#### E — FALSE
+P(no couple together) ≈ 33.33% is actually much GREATER than P(all three couples together) ≈ 6.67%, not less — it is
+far easier for the six people to avoid all three pairings than for every single couple to land together.
+**Formula:** Compare 33.33% (no couple together) to 6.67% (all 3 together) — 33.33% > 6.67%
+
+### Question 6 — The Office Retreat
+#### Step 1 — Use the complement rule for 'at least two share a birthday' among n people, and treat the CEO-specific
+case as a separate, simpler calculation.
+For 12 people, P(all different) = (365/365)(364/365)(363/365)···(354/365) ≈ 83.30%, so P(at least two share) ≈ 16.70%.
+For the CEO-specific case, each of the other 11 employees independently has a 1/365 chance of matching the CEO's
+
+birthday, so P(no match with CEO) = (364/365)¹¹ ≈ 97.03%, giving P(at least one match with the CEO) ≈ 2.97%. For 20
+people, the analogous calculation gives P(all different) ≈ 58.86%, so P(at least two share) ≈ 41.14%.
+
+#### A — FALSE
+P(at least two of 12 share a birthday) ≈ 16.70%, which is NOT greater than 20% — a classic trap, since with only 12
+people the shared-birthday probability is still fairly low despite the surprising 'birthday paradox' reputation.
+**Formula:** P(shared birthday, n=12) = 1 − 365P12/365¹² ≈ 16.70%
+
+#### B — FALSE
+P(at least one of 11 others shares the CEO's specific birthday) = 1 − (364/365)¹¹ ≈ 2.97%, which is NOT greater than 5%
+— matching one fixed date is far rarer than any two people in a group matching each other.
+**Formula:** P(match CEO's birthday) = 1 − (364/365)¹¹ ≈ 2.97%
+
+#### C — FALSE
+P(all 12 different) ≈ 83.30%, which is NOT less than 80% — another close call, since the complementary
+shared-birthday probability (≈16.70%) is still relatively small at n = 12.
+**Formula:** P(all different, n=12) ≈ 83.30%, not < 80%
+
+#### D — FALSE
+For 20 people, P(at least two share) ≈ 41.14%, which is NOT greater than 50% — the well-known threshold where the
+probability first exceeds 50% is actually n = 23, not n = 20, a widely-cited but easy-to-misremember fact.
+**Formula:** P(shared birthday, n=20) ≈ 41.14%, not > 50%
+
+#### E — FALSE
+The ratio is 16.70%/2.97% ≈ 5.62, which is NOT more than 6 — close, but the group-shared probability is only about 5.6
+times the CEO-specific probability, not over 6 times.
+**Formula:** 16.70% / 2.97% ≈ 5.62, not > 6
+
+Tip: Two traps repeat across this set: (1) inequalities that look obviously true or false at a glance but are actually close
+calls once computed exactly — always work out the precise decimal rather than trusting intuition about which side of a
+round number (5%, 20%, 50%) a probability falls on (Questions 1E, 2C, 3D, 6A, 6C, 6D, 6E). (2) probabilities that are
+easy to mix up with a 'nearby' but structurally different quantity — matching a specific person's date versus any shared
+date within a group (Question 6), or the probability of one specific complete pairing versus a single person's specific
+opponent (Question 4) — always re-derive the sample space rather than reusing a formula from a similar-sounding
+scenario.
+
+# Combinatorial Probability — Practice Questions (Part 5)
+
+Ten further questions in longer narrative, word-problem style — a summit banner, a harbour raffle, a
+marathon medical tent, a ballroom workshop, a conservatory recital, a studio Secret Santa, a ski-chalet
+shuttle, a lab contamination screen, an exam-hall seating plan, and a regional cup exhibition
+
+A continuation of Parts 1–4. Every question again has five True/False statements (A–E), using \(\binom{n}{r}\) for
+combinations and \({}_{n}P_{r}\) for permutations. The number of TRUE statements varies unpredictably. Plots are
+deliberately more situational than earlier sets: each stem embeds the counting problem inside a concrete
+institutional or workplace scenario. This matches the WU BBE entrance-exam format — five independent
+True/False assertions per case, with close-call inequalities that reward exact counting rather than intuition.
+
+Additional notation and formulas used in this set:
+Permutations of a multiset: arranging n items with repeats n₁, n₂, … gives n! / (n₁!·n₂!·…).
+Hypergeometric selection: from N items of which K are marked, a random sample of size k has
+P(exactly j marked) = \(\binom{K}{j}\)·\(\binom{N−K}{k−j}\) / \(\binom{N}{k}\).
+Perfect matchings: the number of ways to pair n people (n even) into n/2 unordered pairs is n! /
+(2^(n/2)·(n/2)!).
+Block method for adjacency in a row: treat a required adjacent group as one super-person (multiply by
+internal arrangements), then arrange the reduced list.
+Inclusion-exclusion for 'at least one' of several symmetry events A₁,…,A: expand the union by single,
+pairwise, triple, … intersections.
+Derangements: !n counts permutations of n items with no fixed points. If exactly n−1 positions are
+fixed, the last is forced, so that count is always 0. Work with the exact ratio !n / n! only.
+Sequential sampling without replacement: ordered probabilities multiply successive conditional
+fractions; unordered counts use combinations.
+
+## Questions
+
+### Question 1 — The Summit LED Banner
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+At the European Data Summit in Vienna, the operations team is assembling a scrolling LED name-strip for the
+main stage. They have exactly ten physical letter tiles that spell the word CONFERENCE (C, O, N, F, E, R, E, N,
+C, E). Tiles showing the same letter are indistinguishable. A junior technician empties the tiles into a cloth
+bag and draws them out one by one to decide the left-to-right order on the strip; every distinct arrangement
+of the multiset is equally likely. The word contains two C's, two N's, three E's, and one each of O, F, and R.
+
+A       The total number of distinct banners that can appear on the strip is 151,200.
+B       The probability that the two C's end up adjacent to each other is 1/5.
+C       The probability that all three E's end up adjacent to each other (as a single block of three) is
+greater than 10%.
+
+D       The probability that the two N's end up adjacent equals the probability that the two C's end
+up adjacent.
+
+E       The probability that the two C's are adjacent AND the two N's are adjacent (simultaneously) is
+less than 5%.
+
+### Question 2 — The Harbour Charity Raffle
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+During the annual harbour charity regatta, the yacht club sells raffle tickets overnight from a sealed drum. By
+dawn, exactly 40 tickets have been sold and returned to the drum; of these, 8 are gold-foil 'major prize'
+tickets and the remaining 32 are ordinary white tickets. At the award ceremony the commodore draws 5
+tickets uniformly at random without replacement from the 40, and each drawn ticket wins a prize of some
+kind. Gold tickets among the five win the major prizes. No ticket is replaced once drawn.
+
+A       The total number of possible 5-ticket draws is greater than 650,000.
+B       The probability that the draw contains exactly 2 gold tickets is greater than 25%.
+C       The probability that the draw contains no gold tickets at all is greater than 30%.
+D       The probability that the draw contains at least one gold ticket is less than 65%.
+E       The probability that gold tickets form a majority of the draw (3, 4, or 5 of the 5 tickets) is less
+than 5%.
+
+### Question 3 — The Marathon Medical Tent
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A city half-marathon has 22 volunteer applicants for the finish-line medical tent. Of the 22, exactly 9 hold a
+current first-aid certificate and 13 do not. The race director, to avoid accusations of favouritism, selects 6 of
+the 22 applicants completely at random to staff the tent for the afternoon shift. Assignment is without
+regard to certification status — every 6-person subset of the 22 is equally likely.
+
+A       The total number of possible 6-person medical teams is 74,613.
+B       The probability that the team contains exactly 3 certified volunteers is greater than 30%.
+C       The probability that all 6 team members are certified is greater than 1%.
+D       The probability that at least one certified volunteer is on the team is greater than 95%.
+E       The probability that the team contains at least 4 certified volunteers is greater than the
+probability that it contains exactly 3 certified volunteers.
+
+### Question 4 — The Ballroom Waltz Workshop
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+Fourteen amateur dancers arrive at a Saturday waltz workshop. As an icebreaker, every pair of dancers shakes
+hands exactly once before the music starts. The instructor then assigns the 14 dancers completely at random
+
+into 7 simultaneous practice pairs for the first piece (each dancer has exactly one partner; the pairing is an
+unordered perfect matching, and every such matching is equally likely).
+
+A       The total number of handshakes exchanged during the icebreaker is 91.
+B       The number of distinct ways to pair the 14 dancers into 7 practice pairs is 135,135.
+C       The probability that two specific dancers, Lena and Marco, are paired with each other is 1/7.
+D       The probability that one specific complete pairing (a predetermined list of all 7 pairs) is the
+one that occurs is less than 1 in 100,000.
+E       If only 8 dancers had attended, the number of ways to pair them into 4 practice pairs would
+be 105.
+
+### Question 5 — The Conservatory Stage Apron
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+For a chamber-music showcase, nine distinct musicians — three violinists, three cellists, two flutists, and one
+pianist — must sit in a single row of nine chairs along the stage apron. The stage manager, running late,
+assigns the nine chairs by drawing the musicians' names from a hat, so every seating of the nine people is
+equally likely. Musicians within the same instrument group are still distinct individuals.
+
+A       The total number of possible seating arrangements is 362,880.
+B       The probability that all three violinists sit in three consecutive chairs is exactly 1/12.
+C       The probability that the two flutists sit adjacent to each other is greater than 25%.
+D       The probability that the pianist sits in one of the two end chairs is exactly 2/9.
+E       The probability that all three violinists sit together as a block AND all three cellists sit together
+as a block (simultaneously) is less than 2%.
+
+### Question 6 — The Design Studio Secret Santa
+**Difficulty:** 5/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A seven-person product-design studio runs a Secret Santa. Each of the seven colleagues writes their name
+on a slip; the slips are shuffled thoroughly and dealt so that each person receives exactly one slip —
+equivalently, a uniformly random permutation of the seven names is formed. A person is said to draw their
+own name when the permutation fixes that person's position. The studio wants to know how often the
+draw 'works' in various senses.
+
+A       The total number of ways the seven slips can be dealt is 5,040.
+B       The probability that nobody draws their own name is greater than 40%.
+C       The probability that exactly two people draw their own names is greater than 15%.
+D       The probability that exactly six people draw their own names is greater than 0.
+E       The probability that at least one person draws their own name is greater than 60%.
+
+### Question 7 — The Ski-Chalet Shuttle Van
+**Difficulty:** 5/5
+
+Evaluate each statement. Mark it TRUE or FALSE.
+Four married couples (eight distinct people) book a shared transfer from the valley station to a ski chalet.
+The shuttle is a single van with eight seats in one row behind the driver. The driver asks everyone to board in
+random order and sit wherever they like, which — for modelling purposes — means that the eight people
+are assigned to the eight seats uniformly at random. Couples prefer to sit side by side, but no seating
+constraints are enforced.
+
+A       The total number of possible seating arrangements is 40,320.
+B       The probability that all four couples each sit side by side (four adjacent couple-blocks) is
+exactly 1/105.
+C       The probability that at least one of the four couples sits side by side is greater than 70%.
+D       The probability that no couple sits side by side is greater than 30%.
+E       The probability that one specific named couple sits side by side is exactly 1/4.
+
+### Question 8 — The Lab Contamination Screen
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A university diagnostics lab receives a sealed tray of 20 identically labelled vials from an external supplier.
+Unknown to the technicians, 6 of the vials are contaminated and 14 are clean. For a rapid PCR batch, a
+technician selects 4 of the 20 vials completely at random without replacement (every 4-vial subset is equally
+likely). Separately, for a sequential spot-check, vials may also be drawn one after another in order from the
+full tray.
+
+A       The total number of possible 4-vial PCR batches is 4,845.
+B       The probability that a random 4-vial batch contains exactly 2 contaminated vials is greater
+than 30%.
+C       The probability that a random 4-vial batch contains no contaminated vials is greater than
+25%.
+D       If vials are drawn sequentially without replacement, the probability that the first vial drawn is
+contaminated is 30%.
+E       If vials are drawn sequentially without replacement, the probability that the first two vials
+drawn are both contaminated is greater than 10%.
+
+### Question 9 — The Twin Freshmen Exam Row
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+Ten first-year students, including a pair of twins (Anya and Boris) and three other named friends (Clara,
+David, and Elena), are seated uniformly at random in a single row of ten desks for a written entrance exam.
+Proctors care about whether the twins sit together (possible collusion) and about whether particular friends
+end up in particular left-to-right orders.
+
+A       The total number of possible seating arrangements is 3,628,800.
+B       The probability that the twins sit in adjacent desks is exactly 1/5.
+C       The probability that the twins do not sit adjacent is less than 75%.
+
+D       Among the three friends Clara, David, and Elena, the probability that they appear from left to
+right in the specific order Clara–David–Elena (not necessarily adjacent) is exactly 1/6.
+E       The probability that the twins occupy the two end desks of the row (Anya at one end and
+Boris at the other, in either order) is greater than 5%.
+
+### Question 10 — The Regional Cup Exhibition
+**Difficulty:** 4/5
+Evaluate each statement. Mark it TRUE or FALSE.
+A regional football association invites 16 amateur clubs to a preseason weekend. Of the 16, exactly 6 are
+seeded (based on last season's table) and 10 are unseeded. The association randomly selects 4 of the 16
+clubs — every 4-club subset equally likely — to play in a Friday-night exhibition double-header before the
+main group stage begins.
+
+A       The total number of possible 4-club exhibition fields is 1,820.
+B       The probability that the exhibition contains exactly 2 seeded clubs is greater than 35%.
+C       The probability that all 4 exhibition clubs are seeded is greater than 1%.
+D       The probability that the exhibition contains no seeded clubs is less than 10%.
+E       The probability that the exhibition contains at least 3 seeded clubs is greater than the
+probability that it contains exactly 2 seeded clubs.
+
+## Answer Key & Explanations
+As before, each answer establishes the relevant counts and probabilities in a Step 1 before addressing the
+individual statements.
+
+### Question 1 — The Summit LED Banner
+#### Step 1 — Apply the multiset permutation formula (repeats: C×2, N×2, E×3), then use the block method for
+adjacency events.
+Total arrangements: 10!/(2!·2!·3!) = 3,628,800/24 = 151,200. Gluing the two C's into one block leaves 9 units
+with N×2 and E×3 still repeated: 9!/(2!·3!) = 30,240, so P(C's adjacent) = 30,240/151,200 = 1/5. By identical
+repeat structure, P(N's adjacent) = 1/5 as well. Gluing all three E's into one block leaves 8 units with C×2 and
+N×2: 8!/(2!·2!) = 10,080, so P(E's adjacent) = 10,080/151,200 = 1/15 ≈ 6.67%. Gluing both a CC-block and an
+NN-block leaves 8 units with E×3: 8!/3! = 6,720, so P(both) = 6,720/151,200 = 1/22.5 = 2/45 ≈ 4.44%.
+
+#### A — TRUE
+10!/(2!·2!·3!) = 151,200 exactly.
+**Formula:** Total = 10! / (2!·2!·3!) = 151,200
+
+#### B — TRUE
+P(C's adjacent) = [9!/(2!·3!)] / [10!/(2!·2!·3!)] = 30,240/151,200 = 1/5.
+**Formula:** P(C's adjacent) = 1/5
+
+#### C — FALSE
+P(all three E's adjacent) = 1/15 ≈ 6.67%, which is NOT greater than 10%.
+
+**Formula:** P(E's adjacent) = [8!/(2!·2!)] / [10!/(2!·2!·3!)] = 1/15 ≈ 6.67%
+
+#### D — TRUE
+C and N each appear twice, so the adjacency counts are identical by symmetry: both equal 1/5.
+**Formula:** P(N's adjacent) = P(C's adjacent) = 1/5
+
+#### E — TRUE
+P(both) = 6,720/151,200 = 2/45 ≈ 4.44%, which is less than 5%.
+**Formula:** P(C's and N's both adjacent) = [8!/3!] / [10!/(2!·2!·3!)] = 2/45 ≈ 4.44%
+
+### Question 2 — The Harbour Charity Raffle
+#### Step 1 — Hypergeometric counts with N = 40, K = 8 gold, k = 5.
+Total draws: \(\binom{40}{5}\) = 658,008. Exactly 2 gold: \(\binom{8}{2}\)·\(\binom{32}{3}\) = 28·4,960 = 138,880, so P ≈ 21.11%. Zero gold:
+\(\binom{32}{5}\) = 201,376, so P ≈ 30.60%. At least one gold: 1 − 30.60% ≈ 69.40%. Gold majority (3–5):
+\(\binom{8}{3}\)·\(\binom{32}{2}\)+\(\binom{8}{4}\)·\(\binom{32}{1}\)+\(\binom{8}{5}\)·\(\binom{32}{0}\) = 27,776+3,192+56 = 30,024, so P ≈ 4.57%.
+
+#### A — TRUE
+\(\binom{40}{5}\) = 658,008 > 650,000.
+**Formula:** Total draws = \(\binom{40}{5}\) = 658,008
+
+#### B — FALSE
+P(exactly 2 gold) ≈ 21.11%, which is NOT greater than 25%.
+**Formula:** P = \(\binom{8}{2}\)·\(\binom{32}{3}\)/\(\binom{40}{5}\) ≈ 21.11%
+
+#### C — TRUE
+P(zero gold) ≈ 30.60% > 30%.
+**Formula:** P = \(\binom{32}{5}\)/\(\binom{40}{5}\) ≈ 30.60%
+
+#### D — FALSE
+P(at least one gold) ≈ 69.40%, which is NOT less than 65%.
+**Formula:** P = 1 − \(\binom{32}{5}\)/\(\binom{40}{5}\) ≈ 69.40%
+
+#### E — TRUE
+P(gold majority) ≈ 4.57% < 5%.
+**Formula:** P(≥3 gold) ≈ 4.57%
+
+### Question 3 — The Marathon Medical Tent
+#### Step 1 — Hypergeometric method: 22 people (9 certified), sample of 6.
+Total teams: \(\binom{22}{6}\) = 74,613. Exactly 3 certified: \(\binom{9}{3}\)·\(\binom{13}{3}\) = 84·286 = 24,024, so P ≈ 32.20%. All 6
+certified: \(\binom{9}{6}\) = 84, so P ≈ 0.113%. At least one certified: 1 − \(\binom{13}{6}\)/\(\binom{22}{6}\) = 1 − 1,716/74,613 ≈ 97.70%.
+At least 4 certified: \(\binom{9}{4}\)·\(\binom{13}{2}\)+\(\binom{9}{5}\)·\(\binom{13}{1}\)+\(\binom{9}{6}\)·\(\binom{13}{0}\) = 9,828+1,638+84 = 11,550, so P ≈ 15.48%.
+
+#### A — TRUE
+\(\binom{22}{6}\) = 74,613 exactly.
+**Formula:** Total teams = \(\binom{22}{6}\) = 74,613
+
+#### B — TRUE
+P(exactly 3 certified) ≈ 32.20% > 30%.
+**Formula:** P = \(\binom{9}{3}\)·\(\binom{13}{3}\)/\(\binom{22}{6}\) ≈ 32.20%
+
+#### C — FALSE
+P(all 6 certified) ≈ 0.113%, which is NOT greater than 1%.
+**Formula:** P = \(\binom{9}{6}\)/\(\binom{22}{6}\) ≈ 0.113%
+
+#### D — TRUE
+P(at least one certified) ≈ 97.70% > 95%.
+**Formula:** P = 1 − \(\binom{13}{6}\)/\(\binom{22}{6}\) ≈ 97.70%
+
+#### E — FALSE
+P(≥4 certified) ≈ 15.48% is LESS than P(exactly 3) ≈ 32.20%, not greater.
+**Formula:** Compare 15.48% to 32.20%
+
+### Question 4 — The Ballroom Waltz Workshop
+#### Step 1 — Count handshakes as combinations, then apply the perfect-matching formula.
+Handshakes: \(\binom{14}{2}\) = 91. Pairings of 14 into 7 pairs: 14! / (2⁷ · 7!) = 87,178,291,200 / (128 · 5,040) =
+87,178,291,200 / 645,120 = 135,135. For Lena and Marco specifically, Lena's partner is equally likely to be any
+of the other 13 dancers, so P = 1/13. One predetermined complete pairing has probability 1/135,135 <
+1/100,000. For 8 dancers: 8!/(2⁴·4!) = 105.
+
+#### A — TRUE
+Handshakes = \(\binom{14}{2}\) = 91.
+**Formula:** \(\binom{14}{2}\) = 91
+
+#### B — TRUE
+14!/(2⁷·7!) = 135,135.
+**Formula:** Pairings = 14! / (2⁷·7!) = 135,135
+
+#### C — FALSE
+P(Lena paired with Marco) = 1/13, not 1/7. Confusing 'one of seven pairs' with 'one of thirteen possible
+partners' is the trap.
+**Formula:** P = 1/13, not 1/7
+
+#### D — TRUE
+1/135,135 ≈ 7.4×10⁻⁶, which is less than 1/100,000 = 10⁻⁵.
+**Formula:** P(specific pairing) = 1/135,135 < 1/100,000
+
+#### E — TRUE
+With 8 dancers: 8!/(2⁴·4!) = 105.
+**Formula:** 8! / (2⁴·4!) = 105
+
+### Question 5 — The Conservatory Stage Apron
+#### Step 1 — Count total lineups (9!), then apply the block method for instrument groups and end-seat counting.
+Total: 9! = 362,880. All three violinists together: treat as one block → 7 units, ×3! inside the block: 7!·3! =
+5,040·6
+= 30,240, so P = 30,240/362,880 = 1/12. Two flutists adjacent: 2·8! = 80,640, so P = 80,640/362,880 = 2/9 ≈
+22.22%. Pianist at an end: 2·8! / 9! = 2/9. Violinist block and cellist block simultaneously: 5 units (2 blocks + 2
+flutists + pianist), ×3!·3!: 5!·3!·3! = 120·6·6 = 4,320, so P = 4,320/362,880 = 1/84 ≈ 1.19%.
+
+#### A — TRUE
+9! = 362,880.
+**Formula:** Total = 9! = 362,880
+
+#### B — TRUE
+7!·3! / 9! = 1/12.
+**Formula:** P(violinists together) = 7!·3! / 9! = 1/12
+
+#### C — FALSE
+P(flutists adjacent) = 2/9 ≈ 22.22%, which is NOT greater than 25%.
+**Formula:** P = 2·8! / 9! = 2/9 ≈ 22.22%
+
+#### D — TRUE
+P(pianist at an end) = 2/9 exactly.
+**Formula:** P = 2·8! / 9! = 2/9
+
+#### E — TRUE
+P(both instrument blocks) = 1/84 ≈ 1.19% < 2%.
+**Formula:** P = 5!·3!·3! / 9! = 1/84 ≈ 1.19%
+
+### Question 6 — The Design Studio Secret Santa
+#### Step 1 — Count 7! permutations, then evaluate derangement and fixed-point counts using exact !n values.
+Total deals: 7! = 5,040. Derangements: !7 = 1,854, so P(nobody own name) = 1,854/5,040 ≈ 36.79%. Exactly
+two fixed points: \(\binom{7}{2}\)·!5 = 21·44 = 924, so P ≈ 18.33%. Exactly six fixed points is impossible (if six are fixed,
+the seventh is forced), so that probability is 0. At least one own name: 1 − 1,854/5,040 ≈ 63.21%.
+
+#### A — TRUE
+7! = 5,040.
+**Formula:** Total = 7! = 5,040
+
+#### B — FALSE
+P(derangement) = 1,854/5,040 ≈ 36.79%, which is NOT greater than 40%.
+**Formula:** P = !7 / 7! ≈ 36.79%
+
+#### C — TRUE
+P(exactly 2 fixed) = 924/5,040 ≈ 18.33% > 15%.
+**Formula:** P = \(\binom{7}{2}\)·!5 / 7! ≈ 18.33%
+
+#### D — FALSE
+P(exactly 6 fixed) = 0, which is NOT greater than 0.
+**Formula:** P(exactly n−1 fixed points) = 0
+
+#### E — TRUE
+P(at least one own name) ≈ 63.21% > 60%.
+**Formula:** P = 1 − !7/7! ≈ 63.21%
+
+### Question 7 — The Ski-Chalet Shuttle Van
+#### Step 1 — Count 8! lineups, couple-blocks, and inclusion-exclusion for 'at least one couple together.'
+Total: 8! = 40,320. All four couples together: 4!·2⁴ = 24·16 = 384, so P = 384/40,320 = 1/105. Let Aᵢ be the
+event that couple i sits together. |Aᵢ| = 2·7! = 10,080; |Aᵢ∩A| = 2²·6! = 2,880; |Aᵢ∩A∩A| = 2³·5! = 960; |all
+four| =
+384. By inclusion-exclusion: |∪Aᵢ| = 4·10,080 − 6·2,880 + 4·960 − 384 = 40,320 − 17,280 + 3,840 − 384 =
+26,496,
+so P(at least one) = 26,496/40,320 ≈ 65.71%, and P(none) ≈ 34.29%. One specific couple together: 2·7!/8! =
+1/4.
+
+#### A — TRUE
+8! = 40,320.
+**Formula:** Total = 8! = 40,320
+
+#### B — TRUE
+4!·2⁴ / 8! = 384/40,320 = 1/105.
+**Formula:** P(all couples together) = 1/105
+
+#### C — FALSE
+P(at least one couple together) ≈ 65.71%, which is NOT greater than 70%.
+**Formula:** P = 26,496/40,320 ≈ 65.71%
+
+#### D — TRUE
+P(no couple together) ≈ 34.29% > 30%.
+**Formula:** P = 1 − 26,496/40,320 ≈ 34.29%
+
+#### E — TRUE
+P(specific couple together) = 2·7!/8! = 1/4.
+**Formula:** P = 2/8 = 1/4
+
+### Question 8 — The Lab Contamination Screen
+#### Step 1 — Hypergeometric batch counts for unordered samples; successive fractions for ordered draws.
+Total batches: \(\binom{20}{4}\) = 4,845. Exactly 2 contaminated: \(\binom{6}{2}\)·\(\binom{14}{2}\) = 15·91 = 1,365, so P ≈ 28.17%. Zero
+contaminated: \(\binom{14}{4}\) = 1,001, so P ≈ 20.66%. First vial contaminated (ordered): 6/20 = 30%. First two both
+contaminated: (6/20)·(5/19) = 30/380 = 3/38 ≈ 7.89%.
+
+#### A — TRUE
+\(\binom{20}{4}\) = 4,845.
+**Formula:** Total batches = \(\binom{20}{4}\) = 4,845
+
+#### B — FALSE
+P(exactly 2 contaminated) ≈ 28.17%, which is NOT greater than 30%.
+**Formula:** P = \(\binom{6}{2}\)·\(\binom{14}{2}\)/\(\binom{20}{4}\) ≈ 28.17%
+
+#### C — FALSE
+P(no contaminated) ≈ 20.66%, which is NOT greater than 25%.
+**Formula:** P = \(\binom{14}{4}\)/\(\binom{20}{4}\) ≈ 20.66%
+
+#### D — TRUE
+P(first contaminated) = 6/20 = 30%.
+**Formula:** P = 6/20 = 0.30
+
+#### E — FALSE
+P(first two contaminated) = (6/20)·(5/19) = 3/38 ≈ 7.89%, which is NOT greater than 10%.
+**Formula:** P = 3/38 ≈ 7.89%
+
+### Question 9 — The Twin Freshmen Exam Row
+#### Step 1 — Count 10! lineups; adjacency via the block method; relative order by symmetry among 3!.
+Total: 10! = 3,628,800. Twins adjacent: 2·9! = 725,760, so P = 2/10 = 1/5. Twins not adjacent: 1 − 1/5 = 4/5 =
+80%. Among Clara, David, Elena, all 3! = 6 relative left-to-right orders are equally likely, so any specific order
+has probability 1/6. Twins at both ends: 2·8! = 80,640, so P = 80,640/3,628,800 = 1/45 ≈ 2.22%.
+
+#### A — TRUE
+10! = 3,628,800.
+**Formula:** Total = 10! = 3,628,800
+
+#### B — TRUE
+P(twins adjacent) = 2·9!/10! = 1/5.
+**Formula:** P = 2/10 = 1/5
+
+#### C — FALSE
+P(twins not adjacent) = 80%, which is NOT less than 75%.
+**Formula:** P = 4/5 = 80%
+
+#### D — TRUE
+Any specific relative order of three distinct people has probability 1/3! = 1/6.
+**Formula:** P = 1/6
+
+#### E — FALSE
+P(twins at both ends) = 1/45 ≈ 2.22%, which is NOT greater than 5%.
+**Formula:** P = 2·8!/10! = 1/45 ≈ 2.22%
+
+### Question 10 — The Regional Cup Exhibition
+#### Step 1 — Hypergeometric selection: 16 clubs (6 seeded), sample of 4.
+
+Total fields: \(\binom{16}{4}\) = 1,820. Exactly 2 seeded: \(\binom{6}{2}\)·\(\binom{10}{2}\) = 15·45 = 675, so P ≈ 37.09%. All 4 seeded:
+\(\binom{6}{4}\) = 15, so P ≈ 0.824%. No seeded: \(\binom{10}{4}\) = 210, so P ≈ 11.54%. At least 3 seeded:
+\(\binom{6}{3}\)·\(\binom{10}{1}\)+\(\binom{6}{4}\)·\(\binom{10}{0}\) =
+20·10+15 = 215, so P ≈ 11.81%.
+
+#### A — TRUE
+\(\binom{16}{4}\) = 1,820.
+**Formula:** Total = \(\binom{16}{4}\) = 1,820
+
+#### B — TRUE
+P(exactly 2 seeded) ≈ 37.09% > 35%.
+**Formula:** P = \(\binom{6}{2}\)·\(\binom{10}{2}\)/\(\binom{16}{4}\) ≈ 37.09%
+
+#### C — FALSE
+P(all 4 seeded) ≈ 0.824%, which is NOT greater than 1%.
+**Formula:** P = \(\binom{6}{4}\)/\(\binom{16}{4}\) ≈ 0.824%
+
+#### D — FALSE
+P(no seeded) ≈ 11.54%, which is NOT less than 10%.
+**Formula:** P = \(\binom{10}{4}\)/\(\binom{16}{4}\) ≈ 11.54%
+
+#### E — FALSE
+P(≥3 seeded) ≈ 11.81% is LESS than P(exactly 2) ≈ 37.09%, not greater.
+**Formula:** Compare 11.81% to 37.09%
+
+Tip: In this longer-narrative set the same two traps dominate: (1) close-call inequalities around round
+percentages (5%, 10%, 25%, 30%, 40%, 70%, 75%) — always compute the exact fraction before judging the
+inequality (Questions 1C, 1E, 2B, 2D, 2E, 3C, 5C, 6B, 7C, 8B, 8C, 8E, 9C, 9E, 10C, 10D). (2) structurally similar
+but different sample spaces — a specific partner among n−1 others versus 'one of the n/2 pairs' (Question
+4C), or 'exactly n−1 fixed points' versus a derangement (Question 6D). When derangements appear, work
+with the exact count !n / n! Only
+### Question 11
+**Difficulty:** ⅘
+**Subtopic:** Combinatorial Probability
+
+Evaluate each statement. Mark it TRUE or FALSE.
+A committee of 4 people is selected at random (all committees of size 4 equally likely) from a group
+of 12 people, consisting of 5 women and 7 men.
+
+A         P(the committee has exactly 2 women and 2 men) is greater than 42%.
+B         P(the committee includes at least one woman) equals 1 minus the probability that the committee is
+entirely men.
+C         P(a specific person in the group is selected onto the committee) equals 4/12.
+D         P(the committee is entirely men) is less than 7%.
+E         P(the committee has exactly 2 women and 2 men) is more than 6 times P(the committee is entirely men).
+
+### Question 11
+
+#### A — TRUE
+P(exactly 2 women, 2 men) = \(\binom{5}{2}\)×\(\binom{7}{2}\) / \(\binom{12}{4}\) = (10×21)/495 = 210/495 ≈ 42.424%, which is above 42%.
+Easier strategy: For 'exactly k of one group and the rest of another' in a random sample, multiply the
+two separate combination counts (choose from each group) and divide by the total combinations.
+
+#### B — TRUE
+'At least one woman' and 'entirely men' are complementary events for a 4-person committee, so P(at
+least one woman) = 1 − P(all men) by definition.
+
+Easier strategy: For 'at least one from group X' in a random sample, the complement is always 'none from group X'
+— compute that single case and subtract from 1.
+
+#### C — TRUE
+By symmetry, P(a specific person is on the committee) = \(\binom{11}{3}\)/\(\binom{12}{4}\) = 165/495 = 1/3, which
+equals 4/12 exactly.
+
+Easier strategy: For random sampling without replacement, any specific individual's chance of being included
+always equals (sample size)/(population size) — no need to compute the combination ratio directly.
+
+#### D — FALSE
+P(all men) = \(\binom{7}{4}\)/\(\binom{12}{4}\) = 35/495 ≈ 7.071%, which is above 7%, not below it.
+Easier strategy: For 'entirely from the smaller-probability group', compute \(\binom{group size}{sample size}\) divided by
+\(\binom{population}{sample size}\) directly — don't round the group's share of the population and extrapolate.
+
+#### E — FALSE
+The ratio is exactly (210/495) / (35/495) = 210/35 = 6.0 — exactly 6 times, not more than 6 times.
+Easier strategy: When two probabilities share the same denominator, their ratio is just the ratio of the numerators
+
+— compute it exactly rather than from rounded percentages, since 'exactly equal to the threshold' is a common trap in ratio
+statements.
+
+### Question 12
+**Difficulty:** 3/5
+**Subtopic:** Combinational Probability
+
+Evaluate each statement. Mark it TRUE or FALSE.
+A committee of 5 people is selected at random (all committees of size 5 equally likely) from a group
+of 15 people, consisting of 6 women and 9 men.
+A         P(the committee has exactly 3 women and 2 men) is greater than 24%.
+B         P(the committee includes at least one man) equals 1 minus the probability that the committee is entirely
+women.
+C         P(a specific person in the group is selected onto the committee) equals 5/15.
+D         P(the committee is entirely women) is less than 0.5%.
+E         P(the committee has exactly 3 women and 2 men) is more than 100 times P(the committee is entirely
+women).
+### Question 12
+#### A — FALSE
+P(exactly 3 women, 2 men) = \(\binom{6}{3}\)×\(\binom{9}{2}\) / \(\binom{15}{5}\) = (20×36)/3003 = 720/3003 ≈ 23.976%, which
+is below 24%, not above it.
+**Formula:** P(exactly k from group 1, n−k from group 2) = [\(\binom{w}{k}\)×\(\binom{m}{n−k}\)] / \(\binom{N}{n}\)
+
+#### B — TRUE
+
+'At least one man' and 'entirely women' are complementary events for a 5-person committee, so P(at least one man)
+= 1 − P(all women) by definition.
+**Formula:** P(at least one from group X) = 1 − P(none from group X)
+
+#### C — TRUE
+By symmetry, P(a specific person is on the committee) = \(\binom{14}{4}\)/\(\binom{15}{5}\) = 1001/3003 = 1/3, which equals 5/15
+exactly.
+**Formula:** P(specific individual included) = n/N (sample size / population size)
+
+#### D — TRUE
+P(all women) = \(\binom{6}{5}\)/\(\binom{15}{5}\) = 6/3003 ≈ 0.1998%, which is below 0.5%.
+**Formula:** P(entirely from group of size g) = \(\binom{g}{n}\) / \(\binom{N}{n}\)
+
+#### E — TRUE
+The ratio is exactly (720/3003) / (6/3003) = 720/6 = 120 — that is, 120 times, which is more than 100 times.
+**Formula:** When two probabilities share a denominator, their ratio equals the ratio of numerators
+
+### Question 13
+**Difficulty:** ⅗
+**Subtopic:** Combinatorial Probability
+Evaluate each statement. Mark it TRUE or FALSE.
+A bag contains 10 red balls and 8 blue balls (18 balls total). A sample of 4 balls is drawn at random without
+replacement (all size-4 samples equally likely).
+
+A             P(the sample has exactly 2 red and 2 blue) is greater than 35%.
+
+B             P(the sample includes at least one red ball) equals 1 minus the probability that the sample is entirely blue.
+
+C             P(a specific ball in the bag is included in the sample) equals 2/9.
+
+D             P(the sample is entirely blue) is less than 2%.
+
+E             P(the sample has exactly 2 red and 2 blue) is more than 15 times P(the sample is entirely blue).
+### Question 13
+
+#### A — TRUE
+P(exactly 2 red, 2 blue) = \(\binom{10}{2}\)×\(\binom{8}{2}\) / \(\binom{18}{4}\) = (45×28)/3060 = 1260/3060 ≈ 41.176%, which is above 35%.
+**Formula:** P(exactly k from group 1, n−k from group 2) = [\(\binom{r}{k}\)×\(\binom{b}{n−k}\)] / \(\binom{N}{n}\)
+
+#### B — TRUE
+'At least one red' and 'entirely blue' are complementary events for a 4-ball sample, so P(at least one red) = 1 − P(all
+blue) by definition.
+**Formula:** P(at least one from group X) = 1 − P(none from group X)
+
+#### C — TRUE
+By symmetry, P(a specific ball is in the sample) = \(\binom{17}{3}\)/\(\binom{18}{4}\) = 680/3060 = 2/9, which matches 4/18 = 2/9 exactly.
+**Formula:** P(specific item included) = n/N (sample size / population size)
+
+#### D — FALSE
+P(all blue) = \(\binom{8}{4}\)/\(\binom{18}{4}\) = 70/3060 ≈ 2.288%, which is above 2%, not below it.
+**Formula:** P(entirely from group of size g) = \(\binom{g}{n}\) / \(\binom{N}{n}\)
+
+#### E — TRUE
+The ratio is exactly (1260/3060) / (70/3060) = 1260/70 = 18 — that is, 18 times, which is more than 15 times.
+**Formula:** When two probabilities share a denominator, their ratio equals the ratio of numerators
