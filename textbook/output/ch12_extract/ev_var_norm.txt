@@ -1,0 +1,1931 @@
+
+
+===== PAGE 1 =====
+
+Expected Value, Variance & Standard 
+Deviation — Practice Questions 
+Topic: E(X), Var(X), and σ — five questions, five different styles 
+Each question below uses a different presentation: a plain probability table, a dice-based combinatorial setup, a 
+business/finance payoff scenario, a game with a linear fee adjustment, and a quality-control defect count. All use the 
+same three core quantities — E(X), Var(X), and the standard deviation σ — computed the same way every time: σ² 
+= Var(X) = E(X²) − [E(X)]², and σ = √Var(X). As with the other sets in this series, the number of TRUE statements 
+is not fixed — it ranges from all five true to just one true, depending on the question. 
+ 
+Section 1 — Questions 
+ 
+Question 1 — Discrete Probability Table 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A discrete random variable X has the probability distribution shown below. 
+ 
+x 0 1 2 3 4 
+P(X = x) 0.10 0.25 0.30 0.20 0.15 
+ 
+A E(X) is greater than 2. 
+B Var(X) is greater than 1.4. 
+C σ is greater than 1.2. 
+D σ is less than 1.25. 
+E E(X²) is greater than 5.5. 
+ 
+ 
+Question 2 — Dice Combinatorics 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+Two fair six-sided dice are rolled, and X is defined as the larger of the two values shown (if both dice show the same 
+number, X equals that number). For example, rolling a 3 and a 5 gives X = 5. 
+ 
+A E(X) is greater than 4.4. 
+B Var(X) is greater than 2. 
+C σ is less than 1.5. 
+D E(X²) is greater than 22. 
+E σ is greater than 1.4. 
+ 
+ 
+Question 3 — Startup Profit Scenario 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+
+===== PAGE 2 =====
+
+A startup's founders model next year's outcome as one of four possibilities. There is a 20% chance of a $5,000 loss, 
+a 30% chance of breaking even at $0, a 35% chance of a $10,000 profit, and a 15% chance of a $25,000 profit. Let 
+X be next year's profit (in dollars, with a loss counted as negative). 
+ 
+Outcome −$5,000 $0 $10,000 $25,000 
+Probability 0.20 0.30 0.35 0.15 
+ 
+A E(X) is greater than $6,000. 
+B σ is greater than $9,700. 
+C Var(X) is greater than $90,000,000. 
+D σ is less than $10,000. 
+E E(X²) is greater than $135,000,000. 
+ 
+ 
+Question 4 — Carnival Spinner with a Processing Fee 
+Difficulty: 4/5 — includes a linear transformation 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A carnival spinner pays out according to the table below, and X denotes the payout of a single spin. 
+ 
+Payout (X) $0 $5 $20 $100 
+Probability 0.40 0.35 0.20 0.05 
+The carnival now announces a flat $2 processing fee subtracted from every payout. Let Y = X − 2 be the player's net 
+result after the fee. 
+ 
+A E(X) is greater than $10. 
+B σ of X is greater than $22. 
+C E(Y) is greater than $8.50. 
+D Var(Y) is greater than 470. 
+E σ of Y is less than $21. 
+ 
+ 
+Question 5 — Manufacturing Defect Counts 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A quality-control team recorded the number of defective items, X, found in each shipment received last month. 
+ 
+x 0 1 2 3 4 
+P(X = x) 0.55 0.25 0.12 0.06 0.02 
+ 
+A E(X) is greater than 0.8. 
+B Var(X) is greater than 1.05. 
+C σ is greater than 1.05. 
+D E(X²) is greater than 1.7. 
+E σ is less than 1.02. 
+
+===== PAGE 3 =====
+
+Section 2 — Answer Key & Explanations 
+Every question uses the same two formulas: Var(X) = σ² = E(X²) − [E(X)]², and σ = √Var(X). Question 4 
+additionally uses the linear-transformation rules E(aX+b) = a·E(X)+b and Var(aX+b) = a²·Var(X) — note that a 
+constant shift (like subtracting a flat fee) changes the mean but never the variance or σ. 
+ 
+Question 1 (5 True, 0 False) 
+Step 1 — Compute E(X) and E(X²). 
+E(X) = 0(0.10)+1(0.25)+2(0.30)+3(0.20)+4(0.15) = 0+0.25+0.60+0.60+0.60 = 2.05. E(X²) = 
+0(0.10)+1(0.25)+4(0.30)+9(0.20)+16(0.15) = 0+0.25+1.20+1.80+2.40 = 5.65. Var(X) = 5.65 − 2.05² = 5.65 − 
+4.2025 = 1.4475. σ = √1.4475 ≈ 1.2031. 
+A TRUE 
+E(X) = 2.05, which is greater than 2. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 1.4475, which is greater than 1.4. 
+Formula: Var(X) = E(X²) − [E(X)]² 
+C TRUE 
+σ ≈ 1.2031, which is greater than 1.2 (a very narrow margin). 
+Formula: σ = √Var(X) 
+D TRUE 
+σ ≈ 1.2031, which is less than 1.25. 
+Formula: σ = √Var(X) 
+E TRUE 
+E(X²) = 5.65, which is greater than 5.5. 
+Formula: E(X²) = Σ x²·P(X=x) 
+ 
+Question 2 (3 True, 2 False) 
+Step 1 — Find the distribution of X = max(die 1, die 2). 
+Out of 36 equally likely outcomes, P(X=1)=1/36, P(X=2)=3/36, P(X=3)=5/36, P(X=4)=7/36, P(X=5)=9/36, 
+P(X=6)=11/36 (in general, P(X=k) = (2k−1)/36). E(X) = [1(1)+2(3)+3(5)+4(7)+5(9)+6(11)]/36 = 161/36 ≈ 4.4722. 
+E(X²) = [1(1)+4(3)+9(5)+16(7)+25(9)+36(11)]/36 = 791/36 ≈ 21.9722. Var(X) = 21.9722 − 4.4722² ≈ 1.9715. σ ≈ 
+1.4041. 
+A TRUE 
+E(X) ≈ 4.4722, which is greater than 4.4. 
+Formula: E(X) = Σ k·P(X=k) 
+B FALSE 
+Var(X) ≈ 1.9715, which is not greater than 2 (a close call). 
+Formula: Var(X) = E(X²) − [E(X)]² 
+C TRUE 
+σ ≈ 1.4041, which is less than 1.5. 
+
+===== PAGE 4 =====
+
+Formula: σ = √Var(X) 
+D FALSE 
+E(X²) ≈ 21.9722, which is not greater than 22 (an extremely close call — only about 0.03 short). 
+Formula: E(X²) = Σ k²·P(X=k) 
+E TRUE 
+σ ≈ 1.4041, which is greater than 1.4 (a narrow margin). 
+Formula: σ = √Var(X) 
+ 
+Question 3 (4 True, 1 False) 
+Step 1 — Compute E(X) and E(X²) in dollars. 
+E(X) = (−5000)(0.20)+(0)(0.30)+(10000)(0.35)+(25000)(0.15) = −1000+0+3500+3750 = $6,250. E(X²) = 
+(25{,}000{,}000)(0.20)+(0)(0.30)+(100{,}000{,}000)(0.35)+(625{,}000{,}000)(0.15) = 
+5{,}000{,}000+0+35{,}000{,}000+93{,}750{,}000 = $133{,}750{,}000. Var(X) = 133{,}750{,}000 − 6250² = 
+133{,}750{,}000 − 39{,}062{,}500 = $94{,}687{,}500. σ = √94{,}687{,}500 ≈ $9{,}730.75. 
+A TRUE 
+E(X) = $6,250, which is greater than $6,000. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+σ ≈ $9,730.75, which is greater than $9,700 (a narrow margin). 
+Formula: σ = √Var(X) 
+C TRUE 
+Var(X) = $94,687,500, which is greater than $90,000,000. 
+Formula: Var(X) = E(X²) − [E(X)]² 
+D TRUE 
+σ ≈ $9,730.75, which is less than $10,000. 
+Formula: σ = √Var(X) 
+E FALSE 
+E(X²) = $133,750,000, which is not greater than $135,000,000 (a close call — about $1.25 million short). 
+Formula: E(X²) = Σ x²·P(X=x) 
+ 
+Question 4 (3 True, 2 False) 
+Step 1 — Compute E(X), Var(X), and σ for the spinner. 
+E(X) = 0(0.40)+5(0.35)+20(0.20)+100(0.05) = 0+1.75+4.00+5.00 = $10.75. E(X²) = 
+0(0.40)+25(0.35)+400(0.20)+10000(0.05) = 0+8.75+80+500 = $588.75. Var(X) = 588.75 − 10.75² = 588.75 − 
+115.5625 = 473.1875. σ = √473.1875 ≈ $21.7529. 
+Step 2 — Apply the fee: Y = X − 2. 
+Since Y = X − 2 is a constant shift (a = 1, b = −2): E(Y) = E(X) − 2 = 10.75 − 2 = $8.75. Var(Y) = 1²×Var(X) = 
+Var(X) = 473.1875 (the shift changes the mean but not the spread). σ of Y = σ of X ≈ $21.7529. 
+A TRUE 
+E(X) = $10.75, which is greater than $10. 
+
+===== PAGE 5 =====
+
+Formula: E(X) = Σ x·P(X=x) 
+B FALSE 
+σ ≈ $21.75, which is not greater than $22 (a close call). 
+Formula: σ = √Var(X) 
+C TRUE 
+E(Y) = E(X) − 2 = $8.75, which is greater than $8.50. 
+Formula: E(aX+b) = a·E(X)+b, here a=1, b=−2 
+D TRUE 
+Var(Y) = Var(X) = 473.1875, which is greater than 470 (unaffected by the constant fee). 
+Formula: Var(aX+b) = a²·Var(X), here a=1 so Var(Y)=Var(X) 
+E FALSE 
+σ of Y = σ of X ≈ $21.75, which is not less than $21. 
+Formula: σ of (aX+b) = |a|·σ of X, here a=1 so σ is unchanged 
+ 
+Question 5 (1 True, 4 False) 
+Step 1 — Compute E(X) and E(X²). 
+E(X) = 0(0.55)+1(0.25)+2(0.12)+3(0.06)+4(0.02) = 0+0.25+0.24+0.18+0.08 = 0.75. E(X²) = 
+0(0.55)+1(0.25)+4(0.12)+9(0.06)+16(0.02) = 0+0.25+0.48+0.54+0.32 = 1.59. Var(X) = 1.59 − 0.75² = 1.59 − 
+0.5625 = 1.0275. σ = √1.0275 ≈ 1.0137. 
+A FALSE 
+E(X) = 0.75, which is not greater than 0.8. 
+Formula: E(X) = Σ x·P(X=x) 
+B FALSE 
+Var(X) = 1.0275, which is not greater than 1.05. 
+Formula: Var(X) = E(X²) − [E(X)]² 
+C FALSE 
+σ ≈ 1.0137, which is not greater than 1.05. 
+Formula: σ = √Var(X) 
+D FALSE 
+E(X²) = 1.59, which is not greater than 1.7. 
+Formula: E(X²) = Σ x²·P(X=x) 
+E TRUE 
+σ ≈ 1.0137, which is less than 1.02 — every other statement in this question is FALSE. 
+Formula: σ = √Var(X) 
+ 
+Tip: always compute E(X²) before Var(X) — it's the one extra piece every version of this problem needs, whether the 
+random variable is a table lookup (Questions 1, 3, 5), a combinatorial count (Question 2), or a transformed payout 
+(Question 4). And remember the one rule that trips people up most often: adding or subtracting a constant shifts 
+E(X) but leaves Var(X) and σ completely unchanged — only multiplying X by a constant a changes the spread, and it 
+does so by a factor of a² for the variance and |a| for σ. 
+
+===== PAGE 6 =====
+
+Expected Value, Variance & Standard 
+Deviation — Practice Questions (Part 2) 
+Six more questions in varied styles — continuous uniform, Poisson, a difference of variables, a weighted portfolio, the 
+empirical rule, and a missing-parameter puzzle 
+A continuation of the previous set, using μ (mu) for the mean, σ (sigma) for the standard deviation, and σ² (sigma-squared) 
+for the variance throughout, instead of the E(X)/Var(X)/SD(X) notation used before. Every question has five True/False 
+statements (A–E). 
+Notation and formulas used throughout: 
+● μ = E(X) — the mean (expected value) of a random variable. 
+● σ² = Var(X) = E(X²) − μ² — the variance. 
+● σ = √σ² — the standard deviation, in the same units as X. 
+● Linear transformation Y = aX + b: μ_Y = a·μ_X + b, and σ²_Y = a²·σ²_X, so σ_Y = |a|·σ_X. 
+● Independent X, Y: μ_(X±Y) = μ_X ± μ_Y always, and σ²_(X±Y) = σ²_X + σ²_Y — variances ADD whether you're 
+taking a sum or a difference, as long as X and Y are independent. σ itself is never simply additive. 
+● Continuous Uniform on [a, b]: μ = (a+b)/2, and σ² = (b−a)²/12. 
+● Poisson with rate λ: μ = λ, and σ² = λ (mean and variance are equal). 
+● Empirical rule (for approximately normal data): about 68% of values fall within μ ± 1σ, and about 95% fall within μ 
+± 2σ. 
+ 
+Section 1 — Questions 
+Question 1 — A Vending Machine 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A vending machine dispenses a random amount of coffee, X (in ml), uniformly distributed between 180 ml and 220 ml — 
+that is, any amount in this range is equally likely. 
+ 
+A μ equals 200 ml. 
+B σ² is greater than 130. 
+C σ is greater than 12 ml. 
+D If the machine's range widened to 160 ml–240 ml (same midpoint, double the width), σ² would become four 
+times as large. 
+E σ is greater than 10% of μ. 
+ 
+Question 2 — A Call Center 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A call center receives customer calls at an average rate of 6 calls per hour. The number of calls received in an hour, X, is 
+modeled as a Poisson random variable. 
+ 
+A μ equals 6 calls per hour. 
+
+===== PAGE 7 =====
+
+B σ² equals μ. 
+C σ is greater than 2.5. 
+D If the average rate doubled to 12 calls per hour, σ would also double. 
+E If the average rate doubled to 12 calls per hour, σ² would also double. 
+ 
+Question 3 — Company Profit 
+Difficulty: 5/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A company's monthly Profit is Revenue minus Cost. Monthly Revenue, R, has μ = $50,000 and σ² = 4,000,000 (in dollars²). 
+Monthly Cost, C, has μ = $32,000 and σ² = 1,000,000, independent of Revenue. Let Profit = R − C. 
+ 
+A μ of Profit equals $18,000. 
+B σ² of Profit equals σ² of R minus σ² of C. 
+C σ of Profit is greater than $2,200. 
+D σ of Profit is less than σ of R plus σ of C. 
+E σ of Profit equals σ of R minus σ of C. 
+ 
+Question 4 — An Investment Portfolio 
+Difficulty: 5/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+An investor splits a portfolio between two independent stocks: 60% in Stock A, which has a monthly return with μ = 8% and 
+σ² = 25 (in percentage-points²), and 40% in Stock B, which has μ = 5% and σ² = 16. The portfolio's overall return is 
+0.6×(Stock A return) + 0.4×(Stock B return). 
+ 
+A The portfolio's μ equals 6.8%. 
+B The portfolio's σ² equals 0.6×σ²(A) + 0.4×σ²(B). 
+C The portfolio's σ equals 3.4%. 
+D The portfolio's σ is less than the weighted average of σ(A) and σ(B), that is, less than 0.6×σ(A) + 0.4×σ(B). 
+E The portfolio's σ² is greater than σ²(B). 
+ 
+Question 5 — Standardized Exam Scores 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+Scores on a standardized exam are approximately normally distributed with μ = 520 and σ = 85. 
+ 
+A A score of 690 is exactly 2σ above μ. 
+B About 68% of test-takers score between 435 and 605. 
+C A score of 350 is more than 2σ below μ. 
+
+===== PAGE 8 =====
+
+D About 95% of test-takers score between 350 and 690. 
+E σ² equals 7,225. 
+ 
+Question 6 — Find the Missing Value 
+Difficulty: 5/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A discrete random variable X takes the values 0, 10, and k (an unknown constant), with probabilities 0.5, 0.3, and 0.2 
+respectively. It is given that μ = E(X) = 8. 
+ 
+A k equals 25. 
+B σ² equals 91. 
+C σ is greater than 10. 
+D If μ were instead known to be 6 (not 8), the resulting value of k would be smaller than 25. 
+E The value x = 10 contributes more to σ² than the value x = 25 does. 
+ 
+Section 2 — Answer Key & Explanations 
+As before, each answer establishes μ and σ² (or the relevant scaling rule) in a Step 1 before addressing the individual 
+statements. 
+ 
+Question 1 — A Vending Machine 
+Step 1 — Apply the continuous uniform formulas with a = 180, b = 220. 
+μ = (a+b)/2 = (180+220)/2 = 200 ml. σ² = (b−a)²/12 = (220−180)²/12 = 40²/12 = 1600/12 ≈ 133.333. σ = √133.333 ≈ 11.547 
+ml. 
+A TRUE 
+μ = 200 ml exactly, as computed above. 
+Formula: μ = (a+b)/2 
+B TRUE 
+σ² ≈ 133.333, which is greater than 130. 
+Formula: σ² = (b−a)²/12 
+C FALSE 
+σ ≈ 11.547 ml, which is not greater than 12 ml. 
+Formula: σ = √σ² 
+D TRUE 
+The new range 160–240 has width 80, double the original width of 40. Since σ² = (width)²/12, and the width doubles, σ² 
+scales by 2² = 4 — it becomes exactly four times as large (from ≈133.33 to ≈533.33). 
+Formula: σ² ∝ (width)², so doubling the width quadruples σ² 
+E FALSE 
+10% of μ = 0.10 × 200 = 20 ml. σ ≈ 11.547 ml, which is not greater than 20 ml. 
+Formula: Compare σ to 0.10×μ 
+
+===== PAGE 9 =====
+
+Question 2 — A Call Center 
+Step 1 — Apply the Poisson formulas with λ = 6. 
+μ = λ = 6. σ² = λ = 6. σ = √6 ≈ 2.449. 
+A TRUE 
+μ = 6 calls per hour, as given. 
+Formula: μ = λ, for a Poisson(λ) random variable 
+B TRUE 
+This is the defining property of the Poisson distribution: σ² = λ = μ always, unlike most other distributions where the mean 
+and variance are unrelated. 
+Formula: σ² = λ = μ, for a Poisson(λ) random variable 
+C FALSE 
+σ = √6 ≈ 2.449, which is not greater than 2.5 — a close call. 
+Formula: σ = √λ 
+D FALSE 
+If λ doubles to 12, the new σ = √12 ≈ 3.464. Doubling 2.449 would give 4.899, but 3.464 is not equal to that — σ scales by 
+√2 ≈ 1.414, not by 2. So σ does not double. 
+Formula: σ = √λ scales by √2 when λ doubles, not by 2 
+E TRUE 
+If λ doubles to 12, the new σ² = 12, which is exactly double the original σ² = 6. Since σ² = λ directly, doubling λ always 
+exactly doubles σ² — this is the one quantity here that does scale simply. 
+Formula: σ² = λ scales exactly with λ 
+Questions 1 and 2 both make the same point from two different distributions: variance scales predictably with a size 
+parameter (width, or λ), but standard deviation — being a square root — never scales by the same factor. 
+ 
+Question 3 — Company Profit 
+Step 1 — Apply the rules for a difference of independent random variables. 
+μ(Profit) = μ(R) − μ(C) = 50,000 − 32,000 = $18,000. This subtraction rule for the mean holds regardless of independence. 
+σ²(Profit) = σ²(R) + σ²(C) = 4,000,000 + 1,000,000 = 5,000,000 — the variances ADD, even though Profit is a difference, 
+because R and C are independent. σ(Profit) = √5,000,000 ≈ $2,236.07. 
+A TRUE 
+μ(Profit) = $18,000, as computed above. 
+Formula: μ(R−C) = μ(R) − μ(C) 
+B FALSE 
+This looks plausible because Profit is a subtraction, but it's incorrect: σ²(Profit) = σ²(R) + σ²(C) = 5,000,000, not σ²(R) − 
+σ²(C), which would give 4,000,000 − 1,000,000 = 3,000,000. Variances always add for independent variables, whether you're 
+computing a sum or a difference — subtracting the random variables does not mean subtracting their variances. 
+Formula: σ²(R−C) = σ²(R) + σ²(C), for independent R and C — NOT σ²(R) − σ²(C) 
+C TRUE 
+σ(Profit) ≈ $2,236.07, which is greater than $2,200. 
+Formula: σ(Profit) = √σ²(Profit) 
+D TRUE 
+
+===== PAGE 10 =====
+
+σ(R) = √4,000,000 = $2,000. σ(C) = √1,000,000 = $1,000. Their sum is $3,000. σ(Profit) ≈ $2,236.07, which is less than 
+$3,000 — standard deviations don't add directly, so the combined spread is smaller than simply adding the two individual 
+spreads. 
+Formula: σ(R−C) < σ(R)+σ(C) in general, whenever both are positive 
+E FALSE 
+σ(R) − σ(C) = 2,000 − 1,000 = $1,000, which does not equal σ(Profit) ≈ $2,236.07. Standard deviations are never found by 
+simply adding or subtracting the individual standard deviations — you must always combine the variances first and take the 
+square root at the end. 
+Formula: σ(R−C) ≠ σ(R) − σ(C) 
+ 
+Question 4 — An Investment Portfolio 
+Step 1 — Apply the weighted-sum rules for two independent random variables. 
+For weights 0.6 and 0.4: μ(portfolio) = 0.6×μ(A) + 0.4×μ(B) = 0.6×8 + 0.4×5 = 4.8 + 2 = 6.8%. 
+Because the weights multiply the random variables (not just get averaged), each weight must be SQUARED when combining 
+variances: σ²(portfolio) = 0.6²×σ²(A) + 0.4²×σ²(B) = 0.36×25 + 0.16×16 = 9 + 2.56 = 11.56. σ(portfolio) = √11.56 = 3.4%. 
+A TRUE 
+μ(portfolio) = 6.8%, as computed above. 
+Formula: μ(wA·A + wB·B) = wA·μ(A) + wB·μ(B) 
+B FALSE 
+This uses the weights directly instead of squaring them: 0.6×25 + 0.4×16 = 15 + 6.4 = 21.4, which does not equal the correct 
+σ²(portfolio) = 11.56. This is a common error — variance combines with the SQUARE of each weight, not the weight itself, 
+because Var(wX) = w²Var(X). 
+Formula: σ²(wA·A + wB·B) = wA²·σ²(A) + wB²·σ²(B), NOT wA·σ²(A) + wB·σ²(B) 
+C TRUE 
+σ(portfolio) = √11.56 = 3.4% exactly, as computed in Step 1. 
+Formula: σ(portfolio) = √σ²(portfolio) 
+D TRUE 
+σ(A) = √25 = 5%, and σ(B) = √16 = 4%. The weighted average is 0.6×5 + 0.4×4 = 3+1.6 = 4.6%. The portfolio's actual σ = 
+3.4%, which is less than 4.6% — this is the mathematical basis of diversification: combining two independent, imperfectly-
+correlated assets produces a portfolio less volatile than a simple weighted average of their individual volatilities. 
+Formula: σ(portfolio) < wA·σ(A) + wB·σ(B), for independent assets — the diversification effect 
+E FALSE 
+σ²(portfolio) = 11.56, which is not greater than σ²(B) = 16 — it's smaller. Even though Stock B alone is less volatile than the 
+naive combination might suggest, blending it with Stock A (a partially offsetting independent asset) at a 40% weight still 
+results in a portfolio variance below B's own variance. 
+Formula: Compare σ²(portfolio) = 11.56 to σ²(B) = 16 
+ 
+Question 5 — Standardized Exam Scores 
+Step 1 — Note μ = 520 and σ = 85, and apply the empirical rule. 
+μ ± 1σ = 520 ± 85 = [435, 605]. μ ± 2σ = 520 ± 170 = [350, 690]. 
+A TRUE 
+(690 − 520)/85 = 170/85 = 2.0 exactly, so 690 is exactly 2σ above μ. 
+Formula: Number of σ above μ = (value − μ)/σ 
+B TRUE 
+
+===== PAGE 11 =====
+
+435 and 605 are exactly μ−σ and μ+σ, so by the empirical rule, about 68% of scores fall in this range. 
+Formula: Empirical rule: ≈68% of values lie within μ ± 1σ 
+C FALSE 
+(520 − 350)/85 = 170/85 = 2.0 exactly, so 350 is exactly 2σ below μ — not more than 2σ below it. This is a common trap: 
+'exactly at the boundary' is not the same as 'beyond the boundary.' 
+Formula: Number of σ below μ = (μ − value)/σ 
+D TRUE 
+350 and 690 are exactly μ−2σ and μ+2σ, so by the empirical rule, about 95% of scores fall in this range. 
+Formula: Empirical rule: ≈95% of values lie within μ ± 2σ 
+E TRUE 
+σ² = σ×σ = 85² = 7,225 exactly. 
+Formula: σ² = σ² 
+ 
+Question 6 — Find the Missing Value 
+Step 1 — Solve for k using the given mean, μ = 8. 
+μ = (0)(0.5) + (10)(0.3) + (k)(0.2) = 0 + 3 + 0.2k. Setting this equal to 8: 3 + 0.2k = 8, so 0.2k = 5, giving k = 25. 
+Step 2 — Compute σ² and σ using k = 25. 
+E(X²) = (0²)(0.5) + (10²)(0.3) + (25²)(0.2) = 0 + 30 + 125 = 155. σ² = 155 − 8² = 155 − 64 = 91. σ = √91 ≈ 9.539. 
+A TRUE 
+k = 25, exactly as solved in Step 1. 
+Formula: Solve μ = Σx·P(X=x) for the unknown value 
+B TRUE 
+σ² = 91 exactly, as computed in Step 2. 
+Formula: σ² = E(X²) − μ² 
+C FALSE 
+σ ≈ 9.539, which is not greater than 10 — a close call worth the extra decimal place. 
+Formula: σ = √σ² 
+D TRUE 
+Redoing Step 1 with μ = 6 instead of 8: 3 + 0.2k = 6, so 0.2k = 3, giving k = 15. Since 15 is smaller than 25, the statement is 
+true. This makes sense: k carries only a 0.2 probability weight, so pulling the overall mean down requires k itself to be 
+smaller. 
+Formula: Re-solve 3 + 0.2k = μ for a different target μ 
+E FALSE 
+Each value's contribution to σ² is P(x)×(x−μ)². For x=10: 0.3×(10−8)² = 0.3×4 = 1.2. For x=25: 0.2×(25−8)² = 0.2×289 = 
+57.8. The contribution from x=25 (57.8) is far larger than from x=10 (1.2), so the statement — which claims the opposite — 
+is false. Even though x=10 has a higher probability (0.3 vs. 0.2), its distance from the mean is small (only 2 units), while 
+x=25 is both reasonably likely and very far from the mean (17 units), and that distance is squared, so it dominates. 
+Formula: Contribution to σ² from value x is P(x)·(x−μ)² — compare these directly, not just the probabilities 
+ 
+Tip: the two traps that show up repeatedly in this set are (1) assuming σ scales the same way σ² does — it never does, except 
+under a linear transformation Y=aX+b, where σ scales by |a| while σ² scales by a² — and (2) assuming subtraction anywhere 
+in a formula means subtraction throughout — a difference of two independent random variables (Question 3) still has 
+ADDING variances, and a weighted combination (Question 4) still needs squared weights on the variance side even though 
+the weights themselves are not squared on the mean side. 
+
+===== PAGE 12 =====
+
+Expected Value, Variance & Standard Deviation — Practice 
+Questions (Part 3) 
+Six calculational questions, each built on a discrete probability distribution — a die, coin flips, a raffle, a quality-
+inspection count, star ratings, and a lottery ticket. Every statement is settled either by computing an exact value or 
+by comparing two probabilities read straight from the distribution — there are no unknown parameters to solve for, 
+and no comparisons close enough to call into question. 
+As before, μ (mu) is the mean, σ (sigma) is the standard deviation, and σ² (sigma-squared) is the variance. Every 
+question has five True/False statements (A–E), and the number of TRUE statements varies from question to question 
+— read every statement on its own merits. 
+Notation and formulas used throughout: 
+● μ = E(X) = Σ x·P(X=x) — the mean (expected value) of a discrete random variable. 
+● σ² = Var(X) = E(X²) − μ², where E(X²) = Σ x²·P(X=x) — the variance. 
+● σ = √σ² — the standard deviation, in the same units as X. 
+● Linear transformation Y = aX + b: μ_Y = a·μ_X + b, and σ²_Y = a²·σ²_X, so σ_Y = |a|·σ_X. 
+● Contribution of a value x to σ²: P(x)·(x − μ)² — these contributions sum to σ² across all values of X. 
+ 
+Section 1 — Questions 
+Question 1 — A Fair Six-Sided Die 
+Difficulty: 2/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A fair six-sided die is rolled once. X is the number showing on top. 
+ 
+Each of the six outcomes is equally likely. 
+ 
+A μ equals 3.5. 
+
+===== PAGE 13 =====
+
+B σ² is approximately 2.92. 
+C σ is approximately 1.71. 
+D The value x = 6 contributes more to σ² than the value x = 1 does. 
+E If every face value doubled (2, 4, 6, 8, 10, 12), the new σ would be approximately 3.42. 
+ 
+Question 2 — Heads in Three Coin Flips 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A fair coin is flipped 3 times. X is the number of heads obtained. 
+ 
+Probability distribution of the number of heads in 3 flips. 
+ 
+A μ equals 1.5. 
+B σ² equals 0.75. 
+C σ is approximately 1.22. 
+D P(X = 1) is less than P(X = 0). 
+E The value x = 0 contributes less to σ² than the value x = 1 does. 
+ 
+ 
+Question 3 — A Charity Raffle 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+
+===== PAGE 14 =====
+
+A charity raffle ticket pays out X dollars: $0 with probability 0.70, $10 with probability 0.25, and $50 with 
+probability 0.05. 
+ 
+Probability distribution of the raffle payout. 
+ 
+A μ equals $5. 
+B σ² equals 125. 
+C σ is approximately $11.18. 
+D P(X = 0) is greater than P(X = 10) + P(X = 50). 
+E σ is greater than twice μ. 
+ 
+ 
+Question 4 — Quality Inspection 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+In a batch of inspected items, X is the number of defective items found, where X = 0 with probability 0.60, X = 1 
+with probability 0.30, and X = 2 with probability 0.10. 
+
+===== PAGE 15 =====
+
+ 
+Probability distribution of the number of defective items. 
+ 
+A μ equals 0.5. 
+B σ² equals 0.45. 
+C σ is approximately 0.67. 
+D P(X ≥ 1) equals 0.30. 
+E σ² equals μ. 
+ 
+ 
+Question 5 — Customer Star Ratings 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+An online store's reviews give a star rating X from 1 to 5, with P(X=1)=0.05, P(X=2)=0.10, P(X=3)=0.20, 
+P(X=4)=0.35, and P(X=5)=0.30. 
+
+===== PAGE 16 =====
+
+ 
+Probability distribution of the star rating. 
+ 
+A μ equals 3.75. 
+B σ² equals 1.2875. 
+C σ is approximately 1.13. 
+D P(X = 4) + P(X = 5) is less than P(X = 1) + P(X = 2) + P(X = 3). 
+E σ² is less than 1. 
+ 
+ 
+Question 6 — A Lottery Ticket 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A lottery ticket pays X dollars: $0 with probability 0.94, $5 with probability 0.05, and $1000 with probability 0.01. 
+
+===== PAGE 17 =====
+
+ 
+Probability distribution of the lottery ticket's winnings. 
+ 
+A μ equals $10. 
+B σ² is approximately 9,896.19. 
+C σ is approximately $9.95. 
+D P(X = 1000) is greater than P(X = 5). 
+E σ is less than μ. 
+
+===== PAGE 18 =====
+
+Section 2 — Answer Key & Explanations 
+Each answer establishes μ and σ² in a Step 1, computed directly from the given probability distribution, before 
+addressing the individual statements. 
+ 
+Question 1 — A Fair Six-Sided Die 
+Step 1 — Compute μ and σ² from the distribution. 
+μ = (1+2+3+4+5+6)/6 × (1/6 each) = (1)(1/6)+(2)(1/6)+(3)(1/6)+(4)(1/6)+(5)(1/6)+(6)(1/6) = 21/6 = 3.5. 
+E(X²) = (1²+2²+3²+4²+5²+6²)/6 = 91/6 ≈ 15.1667. 
+σ² = E(X²) − μ² = 15.1667 − 12.25 = 2.9167 (= 35/12). σ = √2.9167 ≈ 1.7078. 
+A TRUE 
+μ = 3.5 exactly, as computed in Step 1. 
+Formula: μ = Σ x·P(X=x) 
+B TRUE 
+σ² = 35/12 ≈ 2.9167, which rounds to 2.92. 
+Formula: σ² = E(X²) − μ² 
+C TRUE 
+σ = √2.9167 ≈ 1.7078, which rounds to 1.71. 
+Formula: σ = √σ² 
+D FALSE 
+Contribution to σ² is P(x)·(x−μ)². Both x=1 and x=6 sit exactly 2.5 away from μ = 3.5, and both have the same 
+probability, 1/6. So each contributes (1/6)(2.5²) = 1.0417 — the two contributions are equal, not one larger than the 
+other. 
+Formula: Contribution to σ² from value x is P(x)·(x−μ)² 
+E TRUE 
+Doubling every face value is the linear transformation Y = 2X. σ_Y = |a|·σ_X = 2 × 1.7078 ≈ 3.4156, which rounds 
+to 3.42. 
+Formula: Y = aX ⇒ σ_Y = |a|·σ_X 
+ 
+Question 2 — Heads in Three Coin Flips 
+Step 1 — Compute μ and σ² from the distribution. 
+P(X=0)=1/8, P(X=1)=3/8, P(X=2)=3/8, P(X=3)=1/8. 
+μ = (0)(1/8)+(1)(3/8)+(2)(3/8)+(3)(1/8) = 0+0.375+0.75+0.375 = 1.5. 
+E(X²) = (0²)(1/8)+(1²)(3/8)+(2²)(3/8)+(3²)(1/8) = 0+0.375+1.5+1.125 = 3.0. 
+σ² = E(X²) − μ² = 3.0 − 2.25 = 0.75. σ = √0.75 ≈ 0.8660. 
+A TRUE 
+
+===== PAGE 19 =====
+
+μ = 1.5 exactly, as computed in Step 1. 
+Formula: μ = Σ x·P(X=x) 
+B TRUE 
+σ² = 0.75 exactly, as computed in Step 1. 
+Formula: σ² = E(X²) − μ² 
+C FALSE 
+σ = √0.75 ≈ 0.87, not 1.22. 
+Formula: σ = √σ² 
+D FALSE 
+P(X=1) = 3/8 = 0.375 and P(X=0) = 1/8 = 0.125. Since 0.375 is greater than 0.125, P(X=1) is not less than P(X=0). 
+Formula: Compare P(X=1) to P(X=0) directly from the distribution 
+E FALSE 
+Contribution to σ² is P(x)·(x−μ)². For x=0: (1/8)(1.5²) = 0.28125. For x=1: (3/8)(0.5²) = 0.09375. The contribution 
+from x=0 (0.28125) is larger than from x=1 (0.09375), so x=0 contributes more, not less. 
+Formula: Contribution to σ² from value x is P(x)·(x−μ)² 
+ 
+Question 3 — A Charity Raffle 
+Step 1 — Compute μ and σ² from the distribution. 
+μ = (0)(0.70)+(10)(0.25)+(50)(0.05) = 0+2.5+2.5 = 5. 
+E(X²) = (0²)(0.70)+(10²)(0.25)+(50²)(0.05) = 0+25+125 = 150. 
+σ² = E(X²) − μ² = 150 − 25 = 125. σ = √125 ≈ 11.1803. 
+A TRUE 
+μ = $5 exactly, as computed in Step 1. 
+Formula: μ = Σ x·P(X=x) 
+B TRUE 
+σ² = 125 exactly, as computed in Step 1. 
+Formula: σ² = E(X²) − μ² 
+C TRUE 
+σ = √125 ≈ 11.1803, which rounds to $11.18. 
+Formula: σ = √σ² 
+D TRUE 
+P(X=0) = 0.70, while P(X=10)+P(X=50) = 0.25+0.05 = 0.30. Since 0.70 is greater than 0.30, the statement holds. 
+Formula: Compare P(X=0) to P(X=10)+P(X=50) directly from the distribution 
+
+===== PAGE 20 =====
+
+E TRUE 
+Twice μ = 2 × 5 = 10. σ ≈ 11.18, which is greater than 10. 
+Formula: Compare σ to 2μ 
+ 
+Question 4 — Quality Inspection 
+Step 1 — Compute μ and σ² from the distribution. 
+μ = (0)(0.60)+(1)(0.30)+(2)(0.10) = 0+0.30+0.20 = 0.5. 
+E(X²) = (0²)(0.60)+(1²)(0.30)+(2²)(0.10) = 0+0.30+0.40 = 0.70. 
+σ² = E(X²) − μ² = 0.70 − 0.25 = 0.45. σ = √0.45 ≈ 0.6708. 
+A TRUE 
+μ = 0.5 exactly, as computed in Step 1. 
+Formula: μ = Σ x·P(X=x) 
+B TRUE 
+σ² = 0.45 exactly, as computed in Step 1. 
+Formula: σ² = E(X²) − μ² 
+C TRUE 
+σ = √0.45 ≈ 0.6708, which rounds to 0.67. 
+Formula: σ = √σ² 
+D FALSE 
+P(X≥1) = P(X=1)+P(X=2) = 0.30+0.10 = 0.40, not 0.30. 
+Formula: P(X≥1) = 1 − P(X=0) 
+E FALSE 
+σ² = 0.45 and μ = 0.5. These are two different quantities that happen to be close in value here, but 0.45 does not 
+equal 0.5. 
+Formula: Compare σ² to μ directly — they are unrelated quantities in general 
+ 
+Question 5 — Customer Star Ratings 
+Step 1 — Compute μ and σ² from the distribution. 
+μ = (1)(0.05)+(2)(0.10)+(3)(0.20)+(4)(0.35)+(5)(0.30) = 0.05+0.20+0.60+1.40+1.50 = 3.75. 
+E(X²) = (1²)(0.05)+(2²)(0.10)+(3²)(0.20)+(4²)(0.35)+(5²)(0.30) = 0.05+0.40+1.80+5.60+7.50 = 15.35. 
+σ² = E(X²) − μ² = 15.35 − 14.0625 = 1.2875. σ = √1.2875 ≈ 1.1347. 
+A TRUE 
+μ = 3.75 exactly, as computed in Step 1. 
+Formula: μ = Σ x·P(X=x) 
+
+===== PAGE 21 =====
+
+B TRUE 
+σ² = 1.2875 exactly, as computed in Step 1. 
+Formula: σ² = E(X²) − μ² 
+C TRUE 
+σ = √1.2875 ≈ 1.1347, which rounds to 1.13. 
+Formula: σ = √σ² 
+D FALSE 
+P(X=4)+P(X=5) = 0.35+0.30 = 0.65, while P(X=1)+P(X=2)+P(X=3) = 0.05+0.10+0.20 = 0.35. Since 0.65 is greater 
+than 0.35, it is not less. 
+Formula: Compare the two grouped probabilities directly from the distribution 
+E FALSE 
+σ² = 1.2875, which is greater than 1, not less than 1. 
+Formula: Compare σ² to 1 directly 
+ 
+Question 6 — A Lottery Ticket 
+Step 1 — Compute μ and σ² from the distribution. 
+μ = (0)(0.94)+(5)(0.05)+(1000)(0.01) = 0+0.25+10 = 10.25. 
+E(X²) = (0²)(0.94)+(5²)(0.05)+(1000²)(0.01) = 0+1.25+10000 = 10001.25. 
+σ² = E(X²) − μ² = 10001.25 − 105.0625 = 9896.1875. σ = √9896.1875 ≈ 99.4796. 
+A FALSE 
+μ = $10.25, not $10 — the $1000 prize, though rare, still shifts the mean above $10. 
+Formula: μ = Σ x·P(X=x) 
+B TRUE 
+σ² = 9896.1875, which rounds to 9,896.19, exactly as computed in Step 1. 
+Formula: σ² = E(X²) − μ² 
+C FALSE 
+σ = √9896.1875 ≈ $99.48, not $9.95 — the rare $1000 prize makes the spread far larger than the typical payout size 
+suggests. 
+Formula: σ = √σ² 
+D FALSE 
+P(X=1000) = 0.01 and P(X=5) = 0.05. Since 0.01 is less than 0.05, P(X=1000) is not greater than P(X=5). 
+Formula: Compare P(X=1000) to P(X=5) directly from the distribution 
+E FALSE 
+σ ≈ $99.48, which is far greater than μ = $10.25, not less than it. 
+
+===== PAGE 22 =====
+
+Formula: Compare σ to μ directly 
+Tip: every statement here reduces to one of two moves — compute μ, σ², or σ directly from the distribution and 
+check the number, or read two probabilities off the table and compare them. There is no hidden algebra and no 
+value to solve for — the plot gives you the full distribution up front. 
+
+===== PAGE 23 =====
+
+Expected Value, Variance & Standard Deviation — Practice 
+Questions (Part 4) 
+Six more calculational questions on discrete probability distributions — a game show wheel, coffee shop arrivals, a 
+vending machine, a free-throw contest, app star ratings, and an insurance claim. This set returns to the 
+E(X)/Var(X)/SD(X) notation, written out in full rather than as μ/σ²/σ symbols. As in Part 3, every statement is settled 
+by computing an exact value or comparing two probabilities read straight from the distribution — no unknown 
+parameters, no close calls. 
+E(X) is the mean (expected value), Var(X) is the variance, and SD(X) is the standard deviation. Every question has 
+five True/False statements (A–E), and the number of TRUE statements varies from question to question — read 
+every statement on its own merits. 
+Notation and formulas used throughout: 
+● E(X) = Σ x·P(X=x) — the mean (expected value) of a discrete random variable. 
+● Var(X) = E(X²) − E(X)², where E(X²) = Σ x²·P(X=x) — the variance. 
+● SD(X) = √Var(X) — the standard deviation, in the same units as X. 
+● Linear transformation Y = aX + b: E(Y) = a·E(X) + b, and Var(Y) = a²·Var(X), so SD(Y) = |a|·SD(X). 
+● Contribution of a value x to Var(X): P(x)·(x − E(X))² — these contributions sum to Var(X) across all 
+values of X. 
+ 
+Section 1 — Questions 
+Question 1 — A Game Show Wheel 
+Difficulty: 2/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A contestant spins a wheel and wins X dollars, where X = $0 with probability 0.50, X = $100 with probability 0.35, 
+and X = $500 with probability 0.15. 
+ 
+Probability distribution of the prize won. 
+
+===== PAGE 24 =====
+
+A E(X) equals 110. 
+B Var(X) equals 28,900. 
+C SD(X) equals 170. 
+D P(X = 0) is less than P(X = 100) + P(X = 500). 
+E If every prize doubled, the new SD(X) would equal 340. 
+ 
+Question 2 — Coffee Shop Arrivals 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+In a given minute, X customers arrive at a small coffee shop, where P(X=0)=0.40, P(X=1)=0.35, P(X=2)=0.20, and 
+P(X=3)=0.05. 
+ 
+Probability distribution of customer arrivals per minute. 
+ 
+A E(X) equals 0.9. 
+B Var(X) equals 0.79. 
+C SD(X) is approximately 1.25. 
+D P(X ≤ 1) equals 0.55. 
+E Var(X) is greater than E(X). 
+ 
+ 
+Question 3 — A Vending Machine 
+
+===== PAGE 25 =====
+
+Difficulty: 2/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A vending machine sells snacks at three prices. The price X paid by the next customer is $1 with probability 0.20, 
+$2 with probability 0.50, and $3 with probability 0.30. 
+ 
+Probability distribution of the purchase price. 
+ 
+A E(X) equals $2.10. 
+B Var(X) equals 0.49. 
+C SD(X) equals $0.70. 
+D P(X = 2) is greater than P(X = 1). 
+E If every price increased by $1 (to $2, $3, $4), Var(X) would still equal 0.49. 
+ 
+ 
+Question 4 — A Free-Throw Contest 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A player takes 3 free throws. X is the number made, where P(X=0)=0.05, P(X=1)=0.25, P(X=2)=0.45, and 
+P(X=3)=0.25. 
+
+===== PAGE 26 =====
+
+ 
+Probability distribution of free throws made. 
+ 
+A E(X) equals 1.9. 
+B Var(X) equals 0.69. 
+C SD(X) is approximately 0.83. 
+D P(X ≥ 2) equals 0.50. 
+E Var(X) is greater than 1. 
+ 
+ 
+Question 5 — A Delivery App Rating 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A delivery app's reviews give a star rating X from 1 to 5, with P(X=1)=0.10, P(X=2)=0.10, P(X=3)=0.20, 
+P(X=4)=0.30, and P(X=5)=0.30. 
+
+===== PAGE 27 =====
+
+ 
+Probability distribution of the star rating. 
+ 
+A E(X) equals 3.6. 
+B Var(X) equals 1.64. 
+C SD(X) is approximately 1.28. 
+D P(X ≤ 2) equals 0.30. 
+E Var(X) is greater than E(X). 
+ 
+ 
+Question 6 — An Insurance Policy 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+An insurance policy pays out a claim of X dollars: $0 with probability 0.90, $200 with probability 0.08, and $5,000 
+with probability 0.02. 
+
+===== PAGE 28 =====
+
+ 
+Probability distribution of the claim payout. 
+ 
+A E(X) equals $100. 
+B Var(X) is approximately 489,744. 
+C SD(X) is approximately $69.98. 
+D P(X = 5000) is greater than P(X = 200). 
+E SD(X) is less than E(X). 
+
+===== PAGE 29 =====
+
+Section 2 — Answer Key & Explanations 
+Each answer establishes E(X) and Var(X) in a Step 1, computed directly from the given probability distribution, 
+before addressing the individual statements. 
+ 
+Question 1 — A Game Show Wheel 
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (0)(0.50)+(100)(0.35)+(500)(0.15) = 0+35+75 = 110. 
+E(X²) = (0²)(0.50)+(100²)(0.35)+(500²)(0.15) = 0+3,500+37,500 = 41,000. 
+Var(X) = E(X²) − E(X)² = 41,000 − 110² = 41,000 − 12,100 = 28,900. SD(X) = √28,900 = 170. 
+A TRUE 
+E(X) = 110 exactly, as computed in Step 1. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 28,900 exactly, as computed in Step 1. 
+Formula: Var(X) = E(X²) − E(X)² 
+C TRUE 
+SD(X) = √28,900 = 170 exactly — a perfect square in this case. 
+Formula: SD(X) = √Var(X) 
+D FALSE 
+P(X=0) = 0.50, while P(X=100)+P(X=500) = 0.35+0.15 = 0.50. The two are equal, so P(X=0) is not less than the 
+other. 
+Formula: Compare P(X=0) to P(X=100)+P(X=500) directly from the distribution 
+E TRUE 
+Doubling every prize is the linear transformation Y = 2X. SD(Y) = |a|·SD(X) = 2 × 170 = 340. 
+Formula: Y = aX ⇒ SD(Y) = |a|·SD(X) 
+ 
+Question 2 — Coffee Shop Arrivals 
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (0)(0.40)+(1)(0.35)+(2)(0.20)+(3)(0.05) = 0+0.35+0.40+0.15 = 0.9. 
+E(X²) = (0²)(0.40)+(1²)(0.35)+(2²)(0.20)+(3²)(0.05) = 0+0.35+0.80+0.45 = 1.6. 
+Var(X) = E(X²) − E(X)² = 1.6 − 0.81 = 0.79. SD(X) = √0.79 ≈ 0.8888. 
+A TRUE 
+E(X) = 0.9 exactly, as computed in Step 1. 
+Formula: E(X) = Σ x·P(X=x) 
+
+===== PAGE 30 =====
+
+B TRUE 
+Var(X) = 0.79 exactly, as computed in Step 1. 
+Formula: Var(X) = E(X²) − E(X)² 
+C FALSE 
+SD(X) = √0.79 ≈ 0.89, not 1.25. 
+Formula: SD(X) = √Var(X) 
+D FALSE 
+P(X≤1) = P(X=0)+P(X=1) = 0.40+0.35 = 0.75, not 0.55. 
+Formula: P(X≤1) = P(X=0)+P(X=1) 
+E FALSE 
+Var(X) = 0.79, which is less than E(X) = 0.9, not greater. 
+Formula: Compare Var(X) to E(X) directly — they are unrelated quantities in general 
+ 
+Question 3 — A Vending Machine 
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (1)(0.20)+(2)(0.50)+(3)(0.30) = 0.20+1.00+0.90 = 2.10. 
+E(X²) = (1²)(0.20)+(2²)(0.50)+(3²)(0.30) = 0.20+2.00+2.70 = 4.90. 
+Var(X) = E(X²) − E(X)² = 4.90 − 4.41 = 0.49. SD(X) = √0.49 = 0.70. 
+A TRUE 
+E(X) = $2.10 exactly, as computed in Step 1. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 0.49 exactly, as computed in Step 1. 
+Formula: Var(X) = E(X²) − E(X)² 
+C TRUE 
+SD(X) = √0.49 = $0.70 exactly. 
+Formula: SD(X) = √Var(X) 
+D TRUE 
+P(X=2) = 0.50 and P(X=1) = 0.20. Since 0.50 is greater than 0.20, the statement holds. 
+Formula: Compare P(X=2) to P(X=1) directly from the distribution 
+E TRUE 
+Adding a constant to every value is the linear transformation Y = X + 1 (a = 1, b = 1). Since Var(Y) = a²·Var(X) = 
+1²×0.49 = 0.49, shifting every price up by a flat amount leaves the variance unchanged. 
+Formula: Y = X + b ⇒ Var(Y) = Var(X) 
+
+===== PAGE 31 =====
+
+Question 4 — A Free-Throw Contest 
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (0)(0.05)+(1)(0.25)+(2)(0.45)+(3)(0.25) = 0+0.25+0.90+0.75 = 1.9. 
+E(X²) = (0²)(0.05)+(1²)(0.25)+(2²)(0.45)+(3²)(0.25) = 0+0.25+1.80+2.25 = 4.30. 
+Var(X) = E(X²) − E(X)² = 4.30 − 3.61 = 0.69. SD(X) = √0.69 ≈ 0.8307. 
+A TRUE 
+E(X) = 1.9 exactly, as computed in Step 1. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 0.69 exactly, as computed in Step 1. 
+Formula: Var(X) = E(X²) − E(X)² 
+C TRUE 
+SD(X) = √0.69 ≈ 0.8307, which rounds to 0.83. 
+Formula: SD(X) = √Var(X) 
+D FALSE 
+P(X≥2) = P(X=2)+P(X=3) = 0.45+0.25 = 0.70, not 0.50. 
+Formula: P(X≥2) = P(X=2)+P(X=3) 
+E FALSE 
+Var(X) = 0.69, which is less than 1, not greater. 
+Formula: Compare Var(X) to 1 directly 
+ 
+Question 5 — A Delivery App Rating 
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (1)(0.10)+(2)(0.10)+(3)(0.20)+(4)(0.30)+(5)(0.30) = 0.10+0.20+0.60+1.20+1.50 = 3.6. 
+E(X²) = (1²)(0.10)+(2²)(0.10)+(3²)(0.20)+(4²)(0.30)+(5²)(0.30) = 0.10+0.40+1.80+4.80+7.50 = 14.6. 
+Var(X) = E(X²) − E(X)² = 14.6 − 12.96 = 1.64. SD(X) = √1.64 ≈ 1.2806. 
+A TRUE 
+E(X) = 3.6 exactly, as computed in Step 1. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 1.64 exactly, as computed in Step 1. 
+Formula: Var(X) = E(X²) − E(X)² 
+C TRUE 
+
+===== PAGE 32 =====
+
+SD(X) = √1.64 ≈ 1.2806, which rounds to 1.28. 
+Formula: SD(X) = √Var(X) 
+D FALSE 
+P(X≤2) = P(X=1)+P(X=2) = 0.10+0.10 = 0.20, not 0.30. 
+Formula: P(X≤2) = P(X=1)+P(X=2) 
+E FALSE 
+Var(X) = 1.64, which is less than E(X) = 3.6, not greater. 
+Formula: Compare Var(X) to E(X) directly — they are unrelated quantities in general 
+ 
+Question 6 — An Insurance Policy 
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (0)(0.90)+(200)(0.08)+(5000)(0.02) = 0+16+100 = 116. 
+E(X²) = (0²)(0.90)+(200²)(0.08)+(5000²)(0.02) = 0+3,200+500,000 = 503,200. 
+Var(X) = E(X²) − E(X)² = 503,200 − 116² = 503,200 − 13,456 = 489,744. SD(X) = √489,744 ≈ 699.82. 
+A FALSE 
+E(X) = $116, not $100 — the rare $5,000 claim, even at only a 2% chance, still pulls the mean above $100. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 489,744 exactly, as computed in Step 1. 
+Formula: Var(X) = E(X²) − E(X)² 
+C FALSE 
+SD(X) = √489,744 ≈ $699.82, not $69.98 — the rare large claim makes the spread far larger than a typical payout 
+suggests. 
+Formula: SD(X) = √Var(X) 
+D FALSE 
+P(X=5000) = 0.02 and P(X=200) = 0.08. Since 0.02 is less than 0.08, P(X=5000) is not greater than P(X=200). 
+Formula: Compare P(X=5000) to P(X=200) directly from the distribution 
+E FALSE 
+SD(X) ≈ $699.82, which is far greater than E(X) = $116, not less than it. 
+Formula: Compare SD(X) to E(X) directly 
+Tip: every statement here reduces to one of two moves — compute E(X), Var(X), or SD(X) directly from the 
+distribution and check the number, or read two probabilities off the table and compare them. There is no hidden 
+algebra and no value to solve for — the plot gives you the full distribution up front. 
+
+===== PAGE 33 =====
+
+Expected Value, Variance & Standard Deviation — Practice 
+Questions (Part 5) 
+Six more calculational questions on discrete probability distributions — a charity raffle, an ice cream shop, a 
+parking garage, a trivia quiz, a podcast rating, and an extended warranty. This set continues the E(X)/Var(X)/SD(X) 
+notation, written out in full rather than as μ/σ²/σ symbols. As in Part 4, every statement is settled by computing an 
+exact value or comparing two probabilities read straight from the distribution — no unknown parameters, no close 
+calls. 
+E(X) is the mean (expected value), Var(X) is the variance, and SD(X) is the standard deviation. Every question has 
+five True/False statements (A–E), and the number of TRUE statements varies from question to question — read 
+every statement on its own merits. 
+Notation and formulas used throughout: 
+● E(X) = Σ x·P(X=x) — the mean (expected value) of a discrete random variable. 
+● Var(X) = E(X²) − E(X)², where E(X²) = Σ x²·P(X=x) — the variance. 
+● SD(X) = √Var(X) — the standard deviation, in the same units as X. 
+● Linear transformation Y = aX + b: E(Y) = a·E(X) + b, and Var(Y) = a²·Var(X), so SD(Y) = |a|·SD(X). 
+● Contribution of a value x to Var(X): P(x)·(x − E(X))² — these contributions sum to Var(X) across all 
+values of X. 
+ 
+Section 1 — Questions 
+Question 1 — A Charity Raffle 
+Difficulty: 2/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A charity raffle sells tickets. The winnings X for the next ticket drawn are $0 with probability 0.60, $50 with 
+probability 0.30, and $250 with probability 0.10. 
+ 
+Probability distribution of raffle winnings. 
+
+===== PAGE 34 =====
+
+A E(X) equals $40. 
+B Var(X) equals 5,400. 
+C SD(X) is approximately $73.48. 
+D P(X = 0) is less than P(X = 50) + P(X = 250). 
+E If every prize doubled, the new SD(X) would equal $146.97. 
+ 
+Question 2 — An Ice Cream Shop 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+At an ice cream shop, X is the number of scoops the next customer orders, where P(X=1)=0.20, P(X=2)=0.50, 
+P(X=3)=0.20, and P(X=4)=0.10. 
+ 
+Probability distribution of scoops sold. 
+ 
+A E(X) equals 2.2. 
+B Var(X) equals 0.80. 
+C SD(X) is approximately 0.87. 
+D P(X ≤ 2) equals 0.60. 
+E Var(X) is greater than E(X). 
+ 
+Question 3 — A Parking Garage 
+Difficulty: 2/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+
+===== PAGE 35 =====
+
+On the top level of a parking garage, X is the number of empty spots at a given time, where P(X=0)=0.10, 
+P(X=1)=0.30, P(X=2)=0.40, and P(X=3)=0.20. 
+ 
+Probability distribution of empty spots. 
+ 
+A E(X) equals 1.7. 
+B Var(X) equals 0.81. 
+C SD(X) equals 0.9. 
+D P(X ≥ 2) equals 0.60. 
+E If the count is recorded in tens of spots (Y = 10X), then SD(Y) equals 9. 
+ 
+Question 4 — A Trivia Quiz 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A player answers 4 trivia questions. X is the number answered correctly, where P(X=0)=0.05, P(X=1)=0.20, 
+P(X=2)=0.35, P(X=3)=0.30, and P(X=4)=0.10. 
+
+===== PAGE 36 =====
+
+ 
+Probability distribution of correct answers. 
+ 
+A E(X) equals 2.2. 
+B Var(X) equals 1.06. 
+C SD(X) is approximately 1.03. 
+D P(X ≥ 3) equals 0.50. 
+E Var(X) is greater than 2. 
+ 
+Question 5 — A Podcast Episode Rating 
+Difficulty: 3/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A podcast episode's reviews give a star rating X from 1 to 5, with P(X=1)=0.05, P(X=2)=0.15, P(X=3)=0.25, 
+P(X=4)=0.35, and P(X=5)=0.20. 
+
+===== PAGE 37 =====
+
+ 
+Probability distribution of the star rating. 
+ 
+A E(X) equals 3.5. 
+B Var(X) equals 1.25. 
+C SD(X) is approximately 1.12. 
+D P(X ≤ 2) equals 0.30. 
+E Var(X) is greater than E(X). 
+ 
+Question 6 — An Extended Warranty 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+An extended warranty pays out a claim of X dollars on the next filed claim: $0 with probability 0.85, $150 with 
+probability 0.12, and $4,000 with probability 0.03. 
+
+===== PAGE 38 =====
+
+ 
+Probability distribution of the claim payout. 
+ 
+A E(X) equals $150. 
+B Var(X) is approximately 463,656. 
+C SD(X) is approximately $68.09. 
+D P(X = 4000) is greater than P(X = 150). 
+E SD(X) is less than E(X). 
+ 
+Section 2 — Answer Key & Explanations 
+Each answer establishes E(X) and Var(X) in a Step 1, computed directly from the given probability distribution, 
+before addressing the individual statements. 
+ 
+Question 1 — A Charity Raffle 
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (0)(0.60)+(50)(0.30)+(250)(0.10) = 0+15+25 = 40. 
+E(X²) = (0²)(0.60)+(50²)(0.30)+(250²)(0.10) = 0+750+6,250 = 7,000. 
+Var(X) = E(X²) − E(X)² = 7,000 − 40² = 7,000 − 1,600 = 5,400. SD(X) = √5,400 ≈ 73.48. 
+A TRUE 
+E(X) = $40 exactly, as computed in Step 1. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 5,400 exactly, as computed in Step 1. 
+
+===== PAGE 39 =====
+
+Formula: Var(X) = E(X²) − E(X)² 
+C TRUE 
+SD(X) = √5,400 ≈ 73.4847, which rounds to $73.48. 
+Formula: SD(X) = √Var(X) 
+D FALSE 
+P(X=0) = 0.60, while P(X=50)+P(X=250) = 0.30+0.10 = 0.40. Since 0.60 is greater than 0.40, P(X=0) is not less 
+than the other. 
+Formula: Compare P(X=0) to P(X=50)+P(X=250) directly from the distribution 
+E TRUE 
+Doubling every prize is the linear transformation Y = 2X. SD(Y) = |a|·SD(X) = 2 × 73.4847 ≈ $146.97. 
+Formula: Y = aX ⇒ SD(Y) = |a|·SD(X) 
+ 
+Question 2 — An Ice Cream Shop 
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (1)(0.20)+(2)(0.50)+(3)(0.20)+(4)(0.10) = 0.20+1.00+0.60+0.40 = 2.20. 
+E(X²) = (1²)(0.20)+(2²)(0.50)+(3²)(0.20)+(4²)(0.10) = 0.20+2.00+1.80+1.60 = 5.60. 
+Var(X) = E(X²) − E(X)² = 5.60 − 4.84 = 0.76. SD(X) = √0.76 ≈ 0.8718. 
+A TRUE 
+E(X) = 2.2 exactly, as computed in Step 1. 
+Formula: E(X) = Σ x·P(X=x) 
+B FALSE 
+Var(X) = 0.76, not 0.80. 
+Formula: Var(X) = E(X²) − E(X)² 
+C TRUE 
+SD(X) = √0.76 ≈ 0.8718, which rounds to 0.87. 
+Formula: SD(X) = √Var(X) 
+D FALSE 
+P(X≤2) = P(X=1)+P(X=2) = 0.20+0.50 = 0.70, not 0.60. 
+Formula: P(X≤2) = P(X=1)+P(X=2) 
+E FALSE 
+Var(X) = 0.76, which is less than E(X) = 2.2, not greater. 
+Formula: Compare Var(X) to E(X) directly — they are unrelated quantities in general 
+ 
+Question 3 — A Parking Garage 
+
+===== PAGE 40 =====
+
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (0)(0.10)+(1)(0.30)+(2)(0.40)+(3)(0.20) = 0+0.30+0.80+0.60 = 1.70. 
+E(X²) = (0²)(0.10)+(1²)(0.30)+(2²)(0.40)+(3²)(0.20) = 0+0.30+1.60+1.80 = 3.70. 
+Var(X) = E(X²) − E(X)² = 3.70 − 2.89 = 0.81. SD(X) = √0.81 = 0.90. 
+A TRUE 
+E(X) = 1.7 exactly, as computed in Step 1. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 0.81 exactly, as computed in Step 1. 
+Formula: Var(X) = E(X²) − E(X)² 
+C TRUE 
+SD(X) = √0.81 = 0.90 exactly — a perfect square in this case. 
+Formula: SD(X) = √Var(X) 
+D TRUE 
+P(X≥2) = P(X=2)+P(X=3) = 0.40+0.20 = 0.60. 
+Formula: P(X≥2) = P(X=2)+P(X=3) 
+E TRUE 
+Recording the count in tens is the linear transformation Y = 10X. SD(Y) = |a|·SD(X) = 10 × 0.90 = 9. 
+Formula: Y = aX ⇒ SD(Y) = |a|·SD(X) 
+ 
+Question 4 — A Trivia Quiz 
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (0)(0.05)+(1)(0.20)+(2)(0.35)+(3)(0.30)+(4)(0.10) = 0+0.20+0.70+0.90+0.40 = 2.20. 
+E(X²) = (0²)(0.05)+(1²)(0.20)+(2²)(0.35)+(3²)(0.30)+(4²)(0.10) = 0+0.20+1.40+2.70+1.60 = 5.90. 
+Var(X) = E(X²) − E(X)² = 5.90 − 4.84 = 1.06. SD(X) = √1.06 ≈ 1.0296. 
+A TRUE 
+E(X) = 2.2 exactly, as computed in Step 1. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 1.06 exactly, as computed in Step 1. 
+Formula: Var(X) = E(X²) − E(X)² 
+C TRUE 
+SD(X) = √1.06 ≈ 1.0296, which rounds to 1.03. 
+Formula: SD(X) = √Var(X) 
+
+===== PAGE 41 =====
+
+D FALSE 
+P(X≥3) = P(X=3)+P(X=4) = 0.30+0.10 = 0.40, not 0.50. 
+Formula: P(X≥3) = P(X=3)+P(X=4) 
+E FALSE 
+Var(X) = 1.06, which is less than 2, not greater. 
+Formula: Compare Var(X) to 2 directly 
+ 
+Question 5 — A Podcast Episode Rating 
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (1)(0.05)+(2)(0.15)+(3)(0.25)+(4)(0.35)+(5)(0.20) = 0.05+0.30+0.75+1.40+1.00 = 3.50. 
+E(X²) = (1²)(0.05)+(2²)(0.15)+(3²)(0.25)+(4²)(0.35)+(5²)(0.20) = 0.05+0.60+2.25+5.60+5.00 = 13.50. 
+Var(X) = E(X²) − E(X)² = 13.50 − 12.25 = 1.25. SD(X) = √1.25 ≈ 1.1180. 
+A TRUE 
+E(X) = 3.5 exactly, as computed in Step 1. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 1.25 exactly, as computed in Step 1. 
+Formula: Var(X) = E(X²) − E(X)² 
+C TRUE 
+SD(X) = √1.25 ≈ 1.1180, which rounds to 1.12. 
+Formula: SD(X) = √Var(X) 
+D FALSE 
+P(X≤2) = P(X=1)+P(X=2) = 0.05+0.15 = 0.20, not 0.30. 
+Formula: P(X≤2) = P(X=1)+P(X=2) 
+E FALSE 
+Var(X) = 1.25, which is less than E(X) = 3.5, not greater. 
+Formula: Compare Var(X) to E(X) directly — they are unrelated quantities in general 
+ 
+Question 6 — An Extended Warranty 
+Step 1 — Compute E(X) and Var(X) from the distribution. 
+E(X) = (0)(0.85)+(150)(0.12)+(4000)(0.03) = 0+18+120 = 138. 
+E(X²) = (0²)(0.85)+(150²)(0.12)+(4000²)(0.03) = 0+2,700+480,000 = 482,700. 
+Var(X) = E(X²) − E(X)² = 482,700 − 138² = 482,700 − 19,044 = 463,656. SD(X) = √463,656 ≈ 680.92. 
+A FALSE 
+
+===== PAGE 42 =====
+
+E(X) = $138, not $150 — the rare $4,000 claim, even at only a 3% chance, pulls the mean well above the $150 mid-
+tier payout. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 463,656 exactly, as computed in Step 1. 
+Formula: Var(X) = E(X²) − E(X)² 
+C FALSE 
+SD(X) = √463,656 ≈ $680.92, not $68.09 — the rare large claim makes the spread far larger than a typical payout 
+suggests. 
+Formula: SD(X) = √Var(X) 
+D FALSE 
+P(X=4000) = 0.03 and P(X=150) = 0.12. Since 0.03 is less than 0.12, P(X=4000) is not greater than P(X=150). 
+Formula: Compare P(X=4000) to P(X=150) directly from the distribution 
+E FALSE 
+SD(X) ≈ $680.92, which is far greater than E(X) = $138, not less than it. 
+Formula: Compare SD(X) to E(X) directly 
+Tip: every statement here reduces to one of two moves — compute E(X), Var(X), or SD(X) directly from the 
+distribution and check the number, or read two probabilities off the table and compare them. There is no hidden 
+algebra and no value to solve for — the plot gives you the full distribution up front. 
+
+===== PAGE 43 =====
+
+Expected Value, Variance & Standard Deviation — Practice Questions (Part 5) 
+Six harder, multi-concept questions: a two-machine production mixture, a hedged pair of correlated investments, 
+Chebyshev's inequality, a missing-probability puzzle that requires solving a quadratic and rejecting a spurious root, a 
+manager's rounds with a random number of stops, and a signed weighted combination of three independent processing 
+times. This set returns to the E(X)/Var(X)/SD(X) notation. Several statements go beyond the single-distribution formulas 
+used earlier — expect mixtures, covariance, inequalities, and compound sums. As before, every question has five 
+True/False statements (A–E), and the number of TRUE statements varies question to question, including one question that 
+is entirely TRUE and one that is nearly entirely FALSE — do not assume a typical split. 
+ 
+ 
+Section 1 — Questions 
+Question 1 — A Two-Machine Production Line 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A factory fills each day's order from one of two machines. Machine A is used for 65% of batches and produces a number 
+of defects per batch, X_A, with E(X_A) = 3 and Var(X_A) = 4. Machine B is used for the remaining 35% of batches and 
+produces defects X_B with E(X_B) = 7 and Var(X_B) = 9. Let X be the number of defects in a batch from a randomly 
+selected day, where the machine used is itself random according to the 65%/35% split. 
+ 
+A E(X) equals 4.4. 
+B Var(X) equals 9.39. 
+C SD(X) is greater than 3. 
+D Var(X) is greater than the weighted average of the two machines' individual variances, 
+0.65×Var(X_A) + 0.35×Var(X_B). 
+E The within-machine variability, E[Var(X | machine)], contributes more to Var(X) than the 
+between-machine variability, Var[E(X | machine)], does. 
+Question 2 — A Hedged Investment Pair 
+Notation and formulas used throughout 
+E(X) = Σ x·P(X=x) — the mean (expected value) of a discrete random variable. 
+Var(X) = E(X²) − E(X)², where E(X²) = Σ x²·P(X=x) — the variance. 
+SD(X) = √Var(X) — the standard deviation, in the same units as X. 
+Linear transformation Y = aX + b: E(Y) = a·E(X) + b, and Var(Y) = a²·Var(X), so SD(Y) = |a|·SD(X). 
+Law of total expectation (mixtures): E(X) = Σ P(group)·E(X | group). 
+Law of total variance (mixtures): Var(X) = E[Var(X | group)] + Var[E(X | group)] — "within-group" plus 
+"between-group" variability. 
+Covariance and correlation: Cov(X,Y) = ρ·SD(X)·SD(Y). For a weighted sum aX + bY (not necessarily 
+independent): Var(aX+bY) = a²Var(X) + b²Var(Y) + 2ab·Cov(X,Y). 
+Chebyshev's inequality (any distribution, any shape): P(|X − μ| ≥ kσ) ≤ 1/k², for any k > 0. Equivalently, P(|X − 
+μ| < kσ) ≥ 1 − 1/k². 
+Random sum of a random number of trials: if S = X₁+X₂+…+X_N, the X_i are i.i.d. with mean E(X) and variance 
+Var(X), and N is independent of the X_i, then E(S) = E(N)·E(X) and Var(S) = E(N)·Var(X) + Var(N)·[E(X)]². 
+
+===== PAGE 44 =====
+
+Difficulty: 5/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+Two stocks have monthly returns X and Y (in percentage points), with E(X) = 10, Var(X) = 16, E(Y) = 6, and Var(Y) = 9. The 
+two stocks are negatively correlated, with correlation ρ = −0.5, since Stock Y tends to rise when Stock X falls (a hedge). An 
+investor holds an equally weighted portfolio, Portfolio = 0.5X + 0.5Y. 
+ 
+A The portfolio's E(X) equals 8%. 
+B Cov(X, Y) equals −6. 
+C The portfolio's Var equals 3.25. 
+D If X and Y were independent instead (ρ = 0) with everything else unchanged, the portfolio's 
+variance would be smaller than the actual (negatively correlated) value. 
+E The portfolio's SD is greater than 2 percentage points. 
+Question 3 — Chebyshev's Inequality 
+Difficulty: 5/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A machine's fill weight X (in grams) has an unknown, possibly non-normal, distribution with μ = 50 and σ = 5. Chebyshev's 
+inequality is used to bound tail probabilities without assuming a specific distribution shape. 
+ 
+A Chebyshev's inequality guarantees that P(40 < X < 60) is at least 0.75. 
+B Chebyshev's inequality guarantees that P(45 < X < 55) is at least 0.75. 
+C Chebyshev's inequality guarantees that P(X < 30 or X > 70) is at most 0.0625. 
+D Because the Chebyshev bound for P(|X − 50| ≥ 12.5) works out to exactly 0.16, the true value 
+of P(|X − 50| ≥ 12.5) must also equal 0.16. 
+E Using k = 3 instead of k = 2 in the inequality P(|X − μ| ≥ kσ) ≤ 1/k² produces a tighter (smaller) 
+upper bound on the tail probability. 
+Question 4 — The Vending Machine Puzzle 
+Difficulty: 5/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A vending machine dispenses a prize X worth $0, $5, or $10, with P(X=0) = p, P(X=5) = 0.4, and P(X=10) = 0.6 − p, for some 
+unknown p. It is given that Var(X) = 10, and separately that winning $0 is less likely than winning $10. 
+ 
+A p equals 0.4. 
+B The quadratic condition Var(X) = 10 has a second mathematically valid root, p ≈ 0.5236, 
+which is rejected here only because it would make P(X=0) greater than P(X=10). 
+C E(X) equals exactly 8. 
+D SD(X) is less than 3. 
+E If the machine's condition were reversed instead (winning $0 more likely than winning $10), 
+
+===== PAGE 45 =====
+
+ the correct root would be p ≈ 0.5236, and Var(X) would no longer equal 10 in that case. 
+Question 5 — A Regional Manager's Rounds 
+Difficulty: 5/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A regional manager visits N branches in a day, where N = 2 with probability 0.5, N = 3 with probability 0.3, and N = 5 with 
+probability 0.2. At each branch visited, the number of customer complaints logged has E(X) = 4 and Var(X) = 6, 
+independently from branch to branch and independently of N. Let S be the total number of complaints logged across all 
+branches visited that day. 
+ 
+A E(S) equals 11.6. 
+B Var(S) equals 38.04. 
+C SD(S) is greater than 6. 
+D If N were fixed at its own mean, 2.9 branches (with no day-to-day randomness in the number 
+of branches), Var(S) would equal only 17.4 — smaller than the actual Var(S). 
+E The portion of Var(S) coming from branch-to-branch variability in N, that is Var(N)×[E(X)]², is 
+smaller than the portion coming from complaint variability within a branch, E(N)×Var(X). 
+Question 6 — Assembly Line Processing Time 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+Three independent processing stages have times (in minutes) X₁, X₂, X₃ with E(X₁)=2, Var(X₁)=0.5; E(X₂)=3, Var(X₂)=0.8; and 
+E(X₃)=1.5, Var(X₃)=0.3. A scheduling model defines total line time as T = 2X₁ + 1.5X₂ − X₃ + 4, where the negative coefficient 
+reflects that stage 3 overlaps with (and shortens) the other two, and the +4 is a fixed setup time. 
+ 
+A E(T) equals 11 minutes. 
+B Var(T) equals 4.1. 
+C SD(T) is greater than 2 minutes. 
+D If the coefficient on X₃ were changed from −1 to +1, with everything else unchanged, Var(T) 
+would stay the same even though E(T) would change. 
+E SD(T) is greater than 20% of E(T). 
+
+===== PAGE 46 =====
+
+Section 2 — Compact Answer Key 
+Quick reference. Full derivations and explanations for every statement follow in Section 3. 
+ 
+Q A B C D E 
+1 TRUE TRUE TRUE TRUE TRUE 
+2 TRUE TRUE TRUE FALSE FALSE 
+3 TRUE FALSE TRUE FALSE TRUE 
+4 FALSE TRUE FALSE FALSE FALSE 
+5 TRUE TRUE TRUE TRUE FALSE 
+6 TRUE TRUE TRUE TRUE FALSE 
+
+===== PAGE 47 =====
+
+Section 3 — Full Explanations 
+ 
+ 
+ 
+Question 1 — A Two-Machine Production Line 
+Step 1 — Apply the law of total expectation and law of total variance. 
+E(X) = 0.65×3 + 0.35×7 = 1.95 + 2.45 = 4.4. 
+Within-machine term: E[Var(X | machine)] = 0.65×4 + 0.35×9 = 2.60 + 3.15 = 5.75. 
+Between-machine term: Var[E(X | machine)] = 0.65×(3−4.4)² + 0.35×(7−4.4)² = 0.65×1.96 + 0.35×6.76 = 1.274 + 2.366 = 
+3.64. 
+Var(X) = 5.75 + 3.64 = 9.39. SD(X) = √9.39 ≈ 3.0643. 
+A TRUE 
+E(X) = 4.4 exactly, as computed above. 
+Formula: E(X) = Σ P(group)·E(X | group) 
+B TRUE 
+Var(X) = 9.39 exactly, as computed above. 
+Formula: Var(X) = E[Var(X | group)] + Var[E(X | group)] 
+C TRUE 
+SD(X) = √9.39 ≈ 3.0643, which is greater than 3 — a close call worth carrying the extra decimal. 
+Formula: SD(X) = √Var(X) 
+D TRUE 
+The naive weighted average of the two variances is 0.65×4 + 0.35×9 = 5.75 (this is only the within-machine term). The true 
+Var(X) = 9.39 is greater, because it also picks up the between-machine term of 3.64 — ignoring that the two machines 
+have different means understates the true variance. 
+Formula: Compare Var(X) to E[Var(X | group)] alone 
+E TRUE 
+The within-machine term (5.75) is greater than the between-machine term (3.64), so most of the total variability in X 
+comes from randomness inside each machine's own output, not from which machine happens to be used. 
+Notation and formulas used throughout 
+E(X) = Σ x·P(X=x) — the mean (expected value) of a discrete random variable. 
+Var(X) = E(X²) − E(X)², where E(X²) = Σ x²·P(X=x) — the variance. 
+SD(X) = √Var(X) — the standard deviation, in the same units as X. 
+Linear transformation Y = aX + b: E(Y) = a·E(X) + b, and Var(Y) = a²·Var(X), so SD(Y) = |a|·SD(X). 
+Law of total expectation (mixtures): E(X) = Σ P(group)·E(X | group). 
+Law of total variance (mixtures): Var(X) = E[Var(X | group)] + Var[E(X | group)] — "within-group" plus 
+"between-group" variability. 
+Covariance and correlation: Cov(X,Y) = ρ·SD(X)·SD(Y). For a weighted sum aX + bY (not necessarily 
+independent): Var(aX+bY) = a²Var(X) + b²Var(Y) + 2ab·Cov(X,Y). 
+Chebyshev's inequality (any distribution, any shape): P(|X − μ| ≥ kσ) ≤ 1/k², for any k > 0. Equivalently, P(|X − 
+μ| < kσ) ≥ 1 − 1/k². 
+Random sum of a random number of trials: if S = X₁+X₂+…+X_N, the X_i are i.i.d. with mean E(X) and variance 
+Var(X), and N is independent of the X_i, then E(S) = E(N)·E(X) and Var(S) = E(N)·Var(X) + Var(N)·[E(X)]². 
+
+===== PAGE 48 =====
+
+Formula: Compare E[Var(X | group)] = 5.75 to Var[E(X | group)] = 3.64 
+ 
+Question 2 — A Hedged Investment Pair 
+Step 1 — Find Cov(X,Y), then apply the weighted-sum variance formula with the covariance term included. 
+Cov(X,Y) = ρ×SD(X)×SD(Y) = (−0.5)×4×3 = −6. 
+E(portfolio) = 0.5×10 + 0.5×6 = 5 + 3 = 8%. 
+Var(portfolio) = 0.5²×16 + 0.5²×9 + 2×0.5×0.5×(−6) = 4 + 2.25 − 3 = 3.25. SD(portfolio) = √3.25 ≈ 1.8028%. 
+A TRUE 
+E(portfolio) = 8%, as computed above. 
+Formula: E(aX+bY) = a·E(X) + b·E(Y) 
+B TRUE 
+Cov(X,Y) = −6 exactly, as computed above. 
+Formula: Cov(X,Y) = ρ·SD(X)·SD(Y) 
+C TRUE 
+Var(portfolio) = 3.25 exactly, as computed above. 
+Formula: Var(aX+bY) = a²Var(X) + b²Var(Y) + 2ab·Cov(X,Y) 
+D FALSE 
+With ρ = 0 (independence), the covariance term drops out: Var(portfolio) = 4 + 2.25 = 6.25. This is greater than the actual 
+3.25, not smaller — the negative correlation is precisely what shrinks the variance below the independent case. This is the 
+mathematical basis of hedging: pairing negatively correlated assets reduces risk below what independence alone would 
+give. 
+Formula: Set Cov(X,Y) = 0 in the variance formula and compare 
+E FALSE 
+SD(portfolio) = √3.25 ≈ 1.8028%, which is not greater than 2 percentage points. 
+Formula: SD(portfolio) = √Var(portfolio) 
+ 
+Question 3 — Chebyshev's Inequality 
+Step 1 — Chebyshev's inequality applies to any distribution shape: P(|X − μ| ≥ kσ) ≤ 1/k², equivalently P(|X − μ| < kσ) ≥ 
+1 − 1/k². 
+A TRUE 
+40 and 60 are μ ± 2σ (since 2×5 = 10), so k = 2. The inequality gives P(|X−50| < 10) ≥ 1 − 1/2² = 1 − 0.25 = 0.75. So P(40 < X 
+< 60) ≥ 0.75 is indeed guaranteed. 
+Formula: P(|X−μ|<kσ) ≥ 1 − 1/k², with k=2 
+B FALSE 
+45 and 55 are μ ± 1σ, so k = 1. The guaranteed lower bound is 1 − 1/1² = 1 − 1 = 0. Chebyshev only guarantees P(45<X<55) 
+≥ 0 at k=1 — a trivial bound, nowhere near guaranteeing 0.75. (The actual probability could be much higher for a specific 
+distribution, but the inequality itself does not guarantee it.) 
+Formula: P(|X−μ|<kσ) ≥ 1 − 1/k², with k=1 gives a useless bound of 0 
+C TRUE 
+30 and 70 are μ ± 4σ (since 4×5 = 20), so k = 4. The inequality gives P(|X−50| ≥ 20) ≤ 1/4² = 1/16 = 0.0625, and "X < 30 or 
+X > 70" is exactly the event |X−50| ≥ 20 (up to the boundary points), so the 0.0625 bound applies. 
+Formula: P(|X−μ|≥kσ) ≤ 1/k², with k=4 
+D FALSE 
+
+===== PAGE 49 =====
+
+Chebyshev's inequality only produces an upper bound on the tail probability, never its exact value — the true 
+P(|X−50|≥12.5) could be anywhere from 0 up to 0.16 depending on the actual (unspecified) shape of the distribution. 
+Treating the bound as the exact probability is a common misreading of the inequality. 
+Formula: P(|X−μ|≥kσ) ≤ 1/k² is an upper bound, not an equality 
+E TRUE 
+At k=2, the bound is 1/4 = 0.25; at k=3, the bound is 1/9 ≈ 0.111. Since 0.111 < 0.25, increasing k produces a smaller 
+(tighter) upper bound — which makes sense, since 1/k² is a decreasing function of k. 
+Formula: 1/k² decreases as k increases 
+ 
+Question 4 — The Vending Machine Puzzle 
+Step 1 — Express E(X) and Var(X) in terms of p, then solve Var(X) = 10 for p. 
+E(X) = 0×p + 5×0.4 + 10×(0.6−p) = 2 + 6 − 10p = 8 − 10p. 
+E(X²) = 0²×p + 5²×0.4 + 10²×(0.6−p) = 10 + 60 − 100p = 70 − 100p. 
+Var(X) = E(X²) − E(X)² = (70 − 100p) − (8 − 10p)² = 6 + 60p − 100p². Setting this equal to 10 gives −100p² + 60p − 4 = 0, or 
+equivalently 25p² − 15p + 1 = 0. 
+The quadratic formula gives p = (15 ± √125)/50 ≈ 0.5236 or p ≈ 0.0764. Both lie in the valid range [0, 0.6], so the quadratic 
+alone does not pick out a unique answer — the extra condition "$0 is less likely than $10" is what breaks the tie. Checking 
+p ≈ 0.0764: P(X=0) ≈ 0.0764 and P(X=10) ≈ 0.5236, so $0 is indeed less likely — this is the valid root. Checking p ≈ 0.5236 
+instead gives P(X=0) ≈ 0.5236 and P(X=10) ≈ 0.0764, which reverses the condition, so that root is rejected. 
+A FALSE 
+p ≈ 0.0764, not 0.4 — the value 0.4 is simply P(X=5), a natural but incorrect guess. 
+Formula: Solve Var(X) = 10 for p — do not confuse p with the other given probability 
+B TRUE 
+As shown in Step 1, p ≈ 0.5236 does solve the same quadratic and lies in [0, 0.6], so it is mathematically valid on its own — 
+but it is excluded by the extra condition, since it would make P(X=0) = 0.5236 greater than P(X=10) = 0.0764, the reverse 
+of what's given. 
+Formula: A quadratic can have two roots that both satisfy 0 ≤ p ≤ 0.6; outside information selects between them 
+C FALSE 
+E(X) = 8 − 10×0.0764 ≈ 7.236, not exactly 8. E(X) = 8 only in the degenerate case p = 0, which is not the solution here. 
+Formula: E(X) = 8 − 10p, evaluated at the correct p 
+D FALSE 
+SD(X) = √10 ≈ 3.1623, which is not less than 3 — a close call, since √9 = 3 exactly and 10 is only slightly above 9. 
+Formula: SD(X) = √Var(X) = √10 
+E FALSE 
+Both roots of the same quadratic were derived by setting Var(X) equal to 10 in the first place, so both roots satisfy Var(X) 
+= 10 by construction — reversing which root is "correct" (based on the likelihood condition) does not change the variance 
+target that produced them. Var(X) would still equal 10. 
+Formula: Both roots of 25p²−15p+1=0 satisfy the same Var(X)=10 equation used to derive them 
+ 
+Question 5 — A Regional Manager's Rounds 
+Step 1 — Find E(N) and Var(N), then apply the random-sum formulas for S. 
+E(N) = 2×0.5 + 3×0.3 + 5×0.2 = 1 + 0.9 + 1 = 2.9. E(N²) = 4×0.5 + 9×0.3 + 25×0.2 = 2 + 2.7 + 5 = 9.7. Var(N) = 9.7 − 2.9² = 9.7 − 
+8.41 = 1.29. 
+E(S) = E(N)×E(X) = 2.9×4 = 11.6. 
+Var(S) = E(N)×Var(X) + Var(N)×[E(X)]² = 2.9×6 + 1.29×16 = 17.4 + 20.64 = 38.04. SD(S) = √38.04 ≈ 6.1677. 
+
+===== PAGE 50 =====
+
+A TRUE 
+E(S) = 11.6 exactly, as computed above. 
+Formula: E(S) = E(N)·E(X) 
+B TRUE 
+Var(S) = 38.04 exactly, as computed above. 
+Formula: Var(S) = E(N)·Var(X) + Var(N)·[E(X)]² 
+C TRUE 
+SD(S) = √38.04 ≈ 6.1677, which is greater than 6 — another close call. 
+Formula: SD(S) = √Var(S) 
+D TRUE 
+If N were fixed at 2.9 with no randomness of its own, only the within-branch term would remain: Var(S) = E(N)×Var(X) = 
+2.9×6 = 17.4. The actual Var(S) = 38.04 is much larger, because it also includes the day-to-day randomness in how many 
+branches get visited — ignoring that randomness badly understates the true spread. 
+Formula: Compare Var(S) to E(N)·Var(X) alone (the case where N is treated as fixed) 
+E FALSE 
+The branch-count contribution is Var(N)×[E(X)]² = 1.29×16 = 20.64, while the within-branch contribution is E(N)×Var(X) = 
+2.9×6 = 17.4. Since 20.64 is greater than 17.4, the branch-count variability actually contributes more to Var(S), not less — 
+the statement has the comparison backwards. 
+Formula: Compare Var(N)·[E(X)]² = 20.64 to E(N)·Var(X) = 17.4 
+ 
+Question 6 — Assembly Line Processing Time 
+Step 1 — Apply the weighted-sum formulas for three independent variables. 
+E(T) = 2×2 + 1.5×3 − 1×1.5 + 4 = 4 + 4.5 − 1.5 + 4 = 11 minutes. 
+Var(T) = 2²×0.5 + 1.5²×0.8 + (−1)²×0.3 = 4×0.5 + 2.25×0.8 + 1×0.3 = 2 + 1.8 + 0.3 = 4.1. SD(T) = √4.1 ≈ 2.0248 minutes. 
+A TRUE 
+E(T) = 11 minutes exactly, as computed above. 
+Formula: E(aX+bY+cZ+d) = a·E(X)+b·E(Y)+c·E(Z)+d 
+B TRUE 
+Var(T) = 4.1 exactly, as computed above. 
+Formula: Var(aX+bY+cZ) = a²Var(X)+b²Var(Y)+c²Var(Z), for independent X,Y,Z 
+C TRUE 
+SD(T) = √4.1 ≈ 2.0248 minutes, which is greater than 2 minutes — a close call. 
+Formula: SD(T) = √Var(T) 
+D TRUE 
+Flipping the coefficient on X₃ from −1 to +1 changes E(T) to 2×2+1.5×3+1×1.5+4 = 14 minutes, since the mean formula 
+uses the coefficient's actual sign. But the variance formula uses the coefficient squared: (−1)² and (+1)² are both 1, so the 
+X₃ contribution to Var(T) is unchanged at 1×0.3 = 0.3, and Var(T) stays at 4.1. This illustrates that variance is blind to the 
+sign of a coefficient, even though the mean is not. 
+Formula: (−1)² = (+1)² = 1, so Var(T) is unaffected by the sign flip even though E(T) changes 
+E FALSE 
+20% of E(T) = 0.2×11 = 2.2 minutes. SD(T) ≈ 2.0248 minutes, which is not greater than 2.2. 
+Formula: Compare SD(T) to 0.20×E(T) 
+
+===== PAGE 51 =====
+
+Tip: this set leans on results beyond the single-distribution toolkit — mixtures split Var(X) into within- and between-group pieces; 
+correlated variables need a covariance term that can shrink variance below the independent case (hedging); Chebyshev's 
+inequality bounds tail probability for any distribution but never states it exactly; a variance target can correspond to two 
+mathematically valid probabilities, with only outside information breaking the tie; and a random number of trials adds its own 
+variance term on top of the per-trial variance. In every case, check whether a squared term (a coefficient, or a value's distance 
+from the mean) is involved — squaring erases sign information that the mean formula would otherwise keep. 
+
+===== PAGE 52 =====
+
+Expected Value, Variance & Standard Deviation — Practice 
+Questions (Part 6) 
+Six harder questions on discrete probability distributions, building conceptual complexity rather than just longer 
+arithmetic: solving for unknown probabilities from a mean constraint, combining independent random variables, a 
+nonlinear function of X, comparing two distributions with equal mean but different spread (including variance-
+contribution reasoning), a break-even fee that leaves variance untouched, and the total payout across two 
+independent policies. As before, E(X), Var(X), and SD(X) are written out in full rather than as μ/σ²/σ symbols. 
+E(X) is the mean (expected value), Var(X) is the variance, and SD(X) is the standard deviation. Every question has 
+five True/False statements (A–E), and the number of TRUE statements varies from question to question — read 
+every statement on its own merits. 
+Notation and formulas used throughout: 
+● E(X) = Σ x·P(X=x) — the mean (expected value) of a discrete random variable. 
+● Var(X) = E(X²) − E(X)², where E(X²) = Σ x²·P(X=x) — the variance. 
+● SD(X) = √Var(X) — the standard deviation, in the same units as X. 
+● Linear transformation Y = aX + b: E(Y) = a·E(X) + b, and Var(Y) = a²·Var(X), so SD(Y) = |a|·SD(X). 
+● Contribution of a value x to Var(X): P(x)·(x − E(X))² — these contributions sum to Var(X) across all 
+values of X. 
+● Independent X₁, X₂: E(X₁+X₂) = E(X₁)+E(X₂) always, and Var(X₁+X₂) = Var(X₁)+Var(X₂) when X₁ and 
+X₂ are independent — but SD does not add. 
+ 
+Section 1 — Questions 
+Question 1 — A Charity Raffle (Unknown Probabilities) 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A charity raffle sells tickets. The winnings X for the next ticket drawn are $0 with probability p, $50 with 
+probability q, and $250 with probability 0.10. It is known that E(X) = $40. 
+ 
+A p equals 0.55. 
+B Var(X) equals 5,400. 
+C SD(X) is approximately $73.48. 
+D The $0 outcome is less likely than the $50 outcome. 
+E If every prize were reduced by $10 (to −$10, $40, and $240), Var(X) would still equal 5,400. 
+ 
+Question 2 — An Ice Cream Shop (Two Independent Customers) 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+At an ice cream shop, X is the number of scoops one customer orders, where P(X=1)=0.20, P(X=2)=0.50, 
+P(X=3)=0.20, and P(X=4)=0.10. Two customers arrive back to back and order independently of one another. Let Y 
+= X₁ + X₂ be the total number of scoops sold to the two of them. 
+
+===== PAGE 53 =====
+
+ 
+Probability distribution of scoops sold to a single customer, X. 
+ 
+A E(Y) equals 4.4. 
+B Var(Y) equals 1.52. 
+C SD(Y) equals 2 × SD(X), or approximately 1.74. 
+D If the two customers' orders were not independent, Var(Y) would still equal 1.52. 
+E SD(Y) is approximately 1.23. 
+ 
+Question 3 — A Parking Garage (A Nonlinear Bonus) 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+On the top level of a parking garage, X is the number of empty spots at a given time, where P(X=0)=0.10, 
+P(X=1)=0.30, P(X=2)=0.40, and P(X=3)=0.20. The garage operator pays a monthly efficiency bonus of Y = X² (in 
+hundreds of dollars) based on the spot count. 
+
+===== PAGE 54 =====
+
+ 
+Probability distribution of empty spots, X. 
+ 
+A E(Y) equals 2.89. 
+B E(Y) equals 3.70. 
+C Var(X) can be computed as E(Y) − [E(X)]². 
+D SD(X) equals 0.9. 
+E If the bonus were instead defined as Z = 2X (a linear bonus), Var(Z) would equal 1.62. 
+ 
+Question 4 — A Trivia Quiz (Comparing Two Formats) 
+Difficulty: 5/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+A trivia league is choosing between two 4-question quiz formats. In Format A, X is the number correct, where 
+P(X=0)=0.05, P(X=1)=0.20, P(X=2)=0.35, P(X=3)=0.30, and P(X=4)=0.10. In Format B, X follows P(X=0)=0.15, 
+P(X=1)=0.20, P(X=2)=0.15, P(X=3)=0.30, and P(X=4)=0.20. 
+
+===== PAGE 55 =====
+
+ 
+Format A: probability distribution of correct answers. 
+ 
+Format B: probability distribution of correct answers. 
+ 
+A Both formats have the same E(X). 
+B Format B has a larger Var(X) than Format A. 
+C In Format A, the value x = 4 contributes more to Var(X) than x = 0 does. 
+D In Format B, the value x = 4 contributes more to Var(X) than x = 0 does. 
+E SD(B) is more than double SD(A). 
+ 
+Question 5 — A Streaming Royalty (Setting a Break-Even Fee) 
+Difficulty: 4/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+
+===== PAGE 56 =====
+
+A streaming platform pays an artist a royalty of X cents per stream, where X = 5¢ with probability 0.50, X = 10¢ 
+with probability 0.30, and X = 20¢ with probability 0.20. The platform proposes charging the artist a flat access fee 
+of c cents per stream, so the artist's net earning per stream is Y = X − c. The fee is set so that E(Y) = 0 (a break-even 
+fee). 
+ 
+Probability distribution of royalty per stream, X. 
+ 
+A The break-even fee c equals 9.5 cents. 
+B Var(X) equals 32.25. 
+C After subtracting the break-even fee, Var(Y) equals 0. 
+D SD(X) is approximately 5.68. 
+E If the platform instead charged 150% of E(X) (c = 14.25 cents) rather than the break-even fee, the artist's 
+expected net earning E(X−c) would be negative. 
+ 
+Question 6 — An Extended Warranty (Two Independent Policies) 
+Difficulty: 5/5 
+Evaluate each statement. Mark it TRUE or FALSE. 
+An extended warranty pays out a claim of X dollars on a single policy: $0 with probability 0.85, $150 with 
+probability 0.12, and $4,000 with probability 0.03. An insurer holds two such policies, written on unrelated 
+customers so that the claims are independent. Let Y = X₁ + X₂ be the insurer's total payout across both policies. 
+
+===== PAGE 57 =====
+
+ 
+Probability distribution of the claim payout on a single policy, X. 
+ 
+A E(Y) equals $276. 
+B Var(Y) equals 927,312. 
+C P(both policies claim $4,000) equals 0.0009. 
+D SD(Y) equals 2 × SD(X). 
+E SD(Y) is approximately $962.97. 
+ 
+Section 2 — Answer Key & Explanations 
+Each answer works through the reasoning needed before the individual statements can be checked — solving for an 
+unknown, combining independent variables, or comparing two full distributions — then addresses each statement in 
+turn. 
+ 
+Question 1 — A Charity Raffle (Unknown Probabilities) 
+Step 0 — Solve for p and q. The probabilities must sum to 1: p + q + 0.10 = 1, so p + q = 0.90. 
+The mean constraint gives: E(X) = (0)(p)+(50)(q)+(250)(0.10) = 50q + 25 = 40, so q = 0.30, and therefore p = 0.90 
+− 0.30 = 0.60. 
+Step 1 — Compute E(X) and Var(X) from the now-complete distribution. 
+E(X) = (0)(0.60)+(50)(0.30)+(250)(0.10) = 0+15+25 = 40 (matches the given constraint, as a check). 
+E(X²) = (0²)(0.60)+(50²)(0.30)+(250²)(0.10) = 0+750+6,250 = 7,000. 
+Var(X) = E(X²) − E(X)² = 7,000 − 40² = 7,000 − 1,600 = 5,400. SD(X) = √5,400 ≈ 73.48. 
+
+===== PAGE 58 =====
+
+ 
+Probability distribution of raffle winnings, once p and q are solved for. 
+A FALSE 
+Solving the system gives p = 0.60, not 0.55 — a common slip is solving only the sum-to-1 equation and forgetting to 
+use the E(X) = $40 constraint to pin down q first. 
+Formula: p + q = 0.90 and 50q + 25 = 40 ⇒ q = 0.30, p = 0.60 
+B TRUE 
+Var(X) = 5,400 exactly, as computed in Step 1 once p and q are known. 
+Formula: Var(X) = E(X²) − E(X)² 
+C TRUE 
+SD(X) = √5,400 ≈ 73.4847, which rounds to $73.48. 
+Formula: SD(X) = √Var(X) 
+D FALSE 
+p = 0.60 and q = 0.30, so the $0 outcome (probability 0.60) is more likely than the $50 outcome (probability 0.30), 
+not less likely. 
+Formula: Compare p to q directly, once both are solved for 
+E TRUE 
+Subtracting $10 from every prize is the linear transformation Y = X − 10 (a = 1, b = −10). Since Var(Y) = a²·Var(X) 
+= 1²×5,400 = 5,400, a flat shift never changes the variance. 
+Formula: Y = X + b ⇒ Var(Y) = Var(X) 
+ 
+Question 2 — An Ice Cream Shop (Two Independent Customers) 
+Step 1 — Compute E(X) and Var(X) for a single customer, then extend to Y = X₁ + X₂. 
+E(X) = (1)(0.20)+(2)(0.50)+(3)(0.20)+(4)(0.10) = 0.20+1.00+0.60+0.40 = 2.20. 
+E(X²) = (1²)(0.20)+(2²)(0.50)+(3²)(0.20)+(4²)(0.10) = 0.20+2.00+1.80+1.60 = 5.60. 
+
+===== PAGE 59 =====
+
+Var(X) = E(X²) − E(X)² = 5.60 − 4.84 = 0.76. 
+Since the two customers order independently, E(Y) = E(X₁)+E(X₂) = 2×2.20 = 4.40, and Var(Y) = Var(X₁)+Var(X₂) 
+= 2×0.76 = 1.52 (independence is required for the variances to add). SD(Y) = √1.52 ≈ 1.2329. 
+A TRUE 
+E(Y) = E(X₁)+E(X₂) = 2.20+2.20 = 4.40. Expectation always adds, independence or not. 
+Formula: E(X₁+X₂) = E(X₁)+E(X₂) 
+B TRUE 
+Var(Y) = Var(X₁)+Var(X₂) = 0.76+0.76 = 1.52, valid here because the two orders are independent. 
+Formula: Independent X₁, X₂: Var(X₁+X₂) = Var(X₁)+Var(X₂) 
+C FALSE 
+Standard deviations do not add across independent sums. SD(Y) = √1.52 ≈ 1.2329, not 2×SD(X) ≈ 1.7436 — that 
+formula only holds for a single scaled variable like Z = 2X, not for a sum of two separate variables. 
+Formula: SD(X₁+X₂) = √(Var(X₁)+Var(X₂)) ≠ SD(X₁)+SD(X₂) in general 
+D FALSE 
+The additivity Var(Y) = Var(X₁)+Var(X₂) specifically requires independence. If the orders were correlated (for 
+example, one customer's order influencing the other's), the actual variance of the total would differ from 1.52. 
+Formula: Var(X₁+X₂) = Var(X₁)+Var(X₂) only holds when X₁, X₂ are independent 
+E TRUE 
+SD(Y) = √1.52 ≈ 1.2329, which rounds to 1.23. 
+Formula: SD(Y) = √Var(Y) 
+ 
+Question 3 — A Parking Garage (A Nonlinear Bonus) 
+Step 1 — Compute E(X), E(X²), and Var(X) from the distribution. 
+E(X) = (0)(0.10)+(1)(0.30)+(2)(0.40)+(3)(0.20) = 0+0.30+0.80+0.60 = 1.70. 
+E(X²) = (0²)(0.10)+(1²)(0.30)+(2²)(0.40)+(3²)(0.20) = 0+0.30+1.60+1.80 = 3.70. 
+Since Y = X², E(Y) = E(X²) = 3.70 directly — this is not the same as squaring E(X), which gives (1.70)² = 2.89. 
+Var(X) = E(X²) − E(X)² = 3.70 − 2.89 = 0.81. SD(X) = √0.81 = 0.90. 
+A FALSE 
+2.89 is (E(X))² = 1.70², not E(Y). Squaring the mean first is a different (and smaller) quantity than averaging the 
+squares. 
+Formula: (E(X))² ≠ E(X²) in general 
+B TRUE 
+E(Y) = E(X²) = 3.70 exactly, as computed in Step 1 — no extra work needed once E(X²) is known. 
+Formula: Y = X² ⇒ E(Y) = E(X²) = Σ x²·P(X=x) 
+C TRUE 
+
+===== PAGE 60 =====
+
+This is exactly the variance formula rewritten in terms of Y: since Y = X², E(Y) − [E(X)]² = E(X²) − E(X)² = Var(X) 
+= 0.81. 
+Formula: Var(X) = E(X²) − E(X)² = E(Y) − [E(X)]² 
+D TRUE 
+SD(X) = √0.81 = 0.90 exactly — a perfect square in this case. 
+Formula: SD(X) = √Var(X) 
+E FALSE 
+Z = 2X is a linear transformation (a = 2), so Var(Z) = a²·Var(X) = 4×0.81 = 3.24, not 1.62 — 1.62 is only 2×Var(X), 
+which is the wrong scaling rule for variance. 
+Formula: Z = aX ⇒ Var(Z) = a²·Var(X) 
+ 
+Question 4 — A Trivia Quiz (Comparing Two Formats) 
+Step 1 — Compute E(X) and Var(X) for both formats. 
+Format A: E(X) = (0)(0.05)+(1)(0.20)+(2)(0.35)+(3)(0.30)+(4)(0.10) = 0+0.20+0.70+0.90+0.40 = 2.20. E(X²) = 
+0+0.20+1.40+2.70+1.60 = 5.90. Var(X) = 5.90 − 4.84 = 1.06. SD(X) ≈ 1.0296. 
+Format B: E(X) = (0)(0.15)+(1)(0.20)+(2)(0.15)+(3)(0.30)+(4)(0.20) = 0+0.20+0.30+0.90+0.80 = 2.20. E(X²) = 
+0+0.20+0.60+2.70+3.20 = 6.70. Var(X) = 6.70 − 4.84 = 1.86. SD(X) ≈ 1.3638. 
+Contribution of a value x to Var(X) is P(x)·(x − E(X))². Format A: contribution of x=4 is 0.10×(4−2.2)² = 0.10×3.24 
+= 0.324; contribution of x=0 is 0.05×(0−2.2)² = 0.05×4.84 = 0.242. Format B: contribution of x=4 is 0.20×3.24 = 
+0.648; contribution of x=0 is 0.15×4.84 = 0.726. 
+A TRUE 
+Both formats give E(X) = 2.20 — the two quizzes are equally hard on average, differing only in how the difficulty is 
+spread out. 
+Formula: E(X) = Σ x·P(X=x) 
+B TRUE 
+Var(X) = 1.86 for Format B versus 1.06 for Format A, so Format B is more spread out despite having the same 
+mean. 
+Formula: Compare Var(X) across the two distributions directly 
+C TRUE 
+In Format A, x=4 contributes 0.324 to Var(X), compared to 0.242 from x=0 — the high end pulls harder because 
+both its probability and its squared distance from the mean are larger. 
+Formula: Contribution of x: P(x)·(x − E(X))² 
+D FALSE 
+In Format B, x=0 actually contributes more (0.726) than x=4 does (0.648) — the opposite of Format A. Format B 
+shifted extra probability onto x=0 (from 0.05 up to 0.15) while only partly increasing x=4's probability, so the low 
+end now outweighs the high end even though both are equally far from the mean. 
+Formula: Contribution of x: P(x)·(x − E(X))² 
+E FALSE 
+
+===== PAGE 61 =====
+
+2×SD(A) ≈ 2×1.0296 = 2.0591, but SD(B) ≈ 1.3638, which is nowhere near double SD(A) — variances added a 
+modest amount (1.06 to 1.86), but square roots compress that difference. 
+Formula: Compare SD(B) to 2×SD(A) directly — SD does not scale the way Var does 
+ 
+Question 5 — A Streaming Royalty (Setting a Break-Even Fee) 
+Step 1 — Compute E(X), Var(X), and the break-even fee. 
+E(X) = (5)(0.50)+(10)(0.30)+(20)(0.20) = 2.5+3.0+4.0 = 9.5. 
+E(X²) = (5²)(0.50)+(10²)(0.30)+(20²)(0.20) = 12.5+30.0+80.0 = 122.5. 
+Var(X) = E(X²) − E(X)² = 122.5 − 90.25 = 32.25. SD(X) = √32.25 ≈ 5.6789. 
+Break-even fee: E(Y) = E(X) − c = 0 ⇒ c = E(X) = 9.5 cents. 
+A TRUE 
+Setting E(X) − c = 0 gives c = E(X) = 9.5 cents exactly. 
+Formula: E(X − c) = 0 ⇒ c = E(X) 
+B TRUE 
+Var(X) = 32.25 exactly, as computed in Step 1. 
+Formula: Var(X) = E(X²) − E(X)² 
+C FALSE 
+A common trap: setting the mean net earning to zero does not touch the spread. Y = X − c is a flat shift of X, so 
+Var(Y) = Var(X) = 32.25, not 0 — the artist's earnings per stream are just as variable as before, only recentered. 
+Formula: Y = X + b ⇒ Var(Y) = Var(X) 
+D TRUE 
+SD(X) = √32.25 ≈ 5.6789, which rounds to 5.68. 
+Formula: SD(X) = √Var(X) 
+E TRUE 
+At c = 14.25, E(X−c) = 9.5 − 14.25 = −4.75, which is negative — charging more than the break-even fee guarantees 
+a negative expected net earning per stream. 
+Formula: E(X − c) = E(X) − c 
+ 
+Question 6 — An Extended Warranty (Two Independent Policies) 
+Step 1 — Compute E(X) and Var(X) for a single policy, then extend to Y = X₁ + X₂. 
+E(X) = (0)(0.85)+(150)(0.12)+(4000)(0.03) = 0+18+120 = 138. 
+E(X²) = (0²)(0.85)+(150²)(0.12)+(4000²)(0.03) = 0+2,700+480,000 = 482,700. 
+Var(X) = E(X²) − E(X)² = 482,700 − 19,044 = 463,656. SD(X) = √463,656 ≈ 680.92. 
+Since the two policies are independent, E(Y) = 2×138 = 276 and Var(Y) = 2×463,656 = 927,312. SD(Y) = √927,312 
+≈ 962.97. 
+
+===== PAGE 62 =====
+
+A TRUE 
+E(Y) = E(X₁)+E(X₂) = 138+138 = $276. 
+Formula: E(X₁+X₂) = E(X₁)+E(X₂) 
+B TRUE 
+Var(Y) = Var(X₁)+Var(X₂) = 463,656+463,656 = 927,312, valid because the two policies' claims are independent. 
+Formula: Independent X₁, X₂: Var(X₁+X₂) = Var(X₁)+Var(X₂) 
+C TRUE 
+By independence, the probability both claims equal $4,000 is the product of the individual probabilities: 0.03 × 0.03 
+= 0.0009. 
+Formula: Independent events: P(A and B) = P(A)·P(B) 
+D FALSE 
+2×SD(X) ≈ 2×680.92 = 1,361.85, but SD(Y) = √927,312 ≈ 962.97 — standard deviations of independent sums do 
+not simply double, since it's the variances that add, and the square root of a sum is smaller than the sum of the 
+square roots. 
+Formula: SD(X₁+X₂) = √(Var(X₁)+Var(X₂)) ≠ SD(X₁)+SD(X₂) 
+E TRUE 
+SD(Y) = √927,312 ≈ 962.97, matching Step 1. 
+Formula: SD(Y) = √Var(Y) 
+Tip: when a question feels harder, look for which extra layer it added — an unknown to solve for, a second variable 
+to combine, a nonlinear function, a second distribution to compare against, or a shift that changes the mean but not 
+the spread. Once you spot the layer, the underlying E(X)/Var(X)/SD(X) computations are the same ones from the 
+easier sets. 
