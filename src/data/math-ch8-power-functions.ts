@@ -1040,57 +1040,7 @@ $$E(11)=0.5\\cdot 121=60.5, \\qquad 60.5-50=10.5$$
     tactical_explanations: [
       `**A.** → True
 
-Harvest follows $Y(h)=A h^{r}$ after $h>0$ hours, with both constants unknown. The recorded pairs are $Y(8)=4$ and $Y(27)=6$. The claim is a third level, $Y(64)=8$, so both constants must be recovered first.
-
-The ratio of the two harvests cancels $A$:
-
-$$
-\\frac{Y(27)}{Y(8)}=\\frac{A\\cdot 27^{r}}{A\\cdot 8^{r}}
-$$
-
-$$
-\\frac{6}{4}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\frac{3}{2}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-Because $\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$,
-
-$$
-\\frac{3}{2}=\\left(\\left(\\frac{3}{2}\\right)^{3}\\right)^{r}=\\left(\\frac{3}{2}\\right)^{3r}
-$$
-
-The bases match, so the exponents match:
-
-$$
-3r=1
-$$
-
-$$
-r=\\frac{1}{3}
-$$
-
-The eight-hour harvest then pins $A$:
-
-$$
-A\\cdot 8^{\\frac{1}{3}}=4
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-A\\cdot 2=4
-$$
-
-$$
-A=2
-$$
-
-The recovered law is $Y(h)=2h^{\\frac{1}{3}}$. At sixty-four hours:
+The two harvests give $r=\\frac{1}{3}$ and $A=2$. Sixty-four hours is four cubed, so the cube root is $4$:
 
 $$
 Y(64)=2\\cdot 64^{\\frac{1}{3}}
@@ -1101,90 +1051,20 @@ $$
 $$
 
 $$
-Y(64)=2\\cdot 4=8
+Y(64)=2\\cdot 4
+$$
+
+$$
+Y(64)=8
 $$
 
 The claimed harvest is $8$ kilograms, so the statement is True.`,
       `**B.** → True
 
-Harvest follows $Y(h)=A h^{r}$ after $h>0$ hours, with both constants unknown. The recorded pairs are $Y(8)=4$ and $Y(27)=6$. The claim is that the exponent is smaller than one, so $r$ must be recovered first.
-
-The ratio of the two harvests cancels $A$:
-
-$$
-\\frac{Y(27)}{Y(8)}=\\frac{A\\cdot 27^{r}}{A\\cdot 8^{r}}
-$$
-
-$$
-\\frac{6}{4}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\frac{3}{2}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-Because $\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$,
-
-$$
-\\frac{3}{2}=\\left(\\left(\\frac{3}{2}\\right)^{3}\\right)^{r}=\\left(\\frac{3}{2}\\right)^{3r}
-$$
-
-The bases match, so the exponents match:
-
-$$
-3r=1
-$$
-
-$$
-r=\\frac{1}{3}
-$$
-
-Compare the exponent with one:
-
-$$
-\\frac{1}{3}<1
-$$
-
-The exponent is smaller than one, so the statement is True.`,
+The harvest ratio already gave $r=\\frac{1}{3}$. An exponent smaller than one means harvest grows more slowly than watering time: each extra hour adds less than the hour before it. One third is below one, so the statement is True.`,
       `**C.** → False
 
-Harvest follows $Y(h)=A h^{r}$ after $h>0$ hours, with both constants unknown. The recorded pairs are $Y(8)=4$ and $Y(27)=6$. The claim is that doubling the watering time doubles the harvest, which is the scaling factor $2^{r}$.
-
-The ratio of the two harvests cancels $A$:
-
-$$
-\\frac{Y(27)}{Y(8)}=\\frac{A\\cdot 27^{r}}{A\\cdot 8^{r}}
-$$
-
-$$
-\\frac{6}{4}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\frac{3}{2}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-Because $\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$,
-
-$$
-\\frac{3}{2}=\\left(\\left(\\frac{3}{2}\\right)^{3}\\right)^{r}=\\left(\\frac{3}{2}\\right)^{3r}
-$$
-
-The bases match, so the exponents match:
-
-$$
-3r=1
-$$
-
-$$
-r=\\frac{1}{3}
-$$
-
-Doubling the hours multiplies the harvest by
-
-$$
-\\frac{Y(2h)}{Y(h)}=\\frac{A(2h)^{r}}{A h^{r}}
-$$
+Doubling hours would double harvest only if $r=1$. With $r=\\frac{1}{3}$ the scale factor is
 
 $$
 \\frac{Y(2h)}{Y(h)}=2^{r}
@@ -1194,66 +1074,10 @@ $$
 2^{r}=2^{\\frac{1}{3}}
 $$
 
-The claimed factor is $2$. Compare:
-
-$$
-2^{\\frac{1}{3}}<2
-$$
-
-The cube root of two is not two, so the statement is False.`,
+The cube root of two is about $1.26$, not $2$. The harvest rises, but not in lockstep with the clock, so the statement is False.`,
       `**D.** → False
 
-Harvest follows $Y(h)=A h^{r}$ after $h>0$ hours, with both constants unknown. The recorded pairs are $Y(8)=4$ and $Y(27)=6$. The claim is a one-hour level, $Y(1)=4$, so both constants must be recovered first.
-
-The ratio of the two harvests cancels $A$:
-
-$$
-\\frac{Y(27)}{Y(8)}=\\frac{A\\cdot 27^{r}}{A\\cdot 8^{r}}
-$$
-
-$$
-\\frac{6}{4}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\frac{3}{2}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-Because $\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$,
-
-$$
-\\frac{3}{2}=\\left(\\left(\\frac{3}{2}\\right)^{3}\\right)^{r}=\\left(\\frac{3}{2}\\right)^{3r}
-$$
-
-The bases match, so the exponents match:
-
-$$
-3r=1
-$$
-
-$$
-r=\\frac{1}{3}
-$$
-
-The eight-hour harvest then pins $A$:
-
-$$
-A\\cdot 8^{\\frac{1}{3}}=4
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-A\\cdot 2=4
-$$
-
-$$
-A=2
-$$
-
-The recovered law is $Y(h)=2h^{\\frac{1}{3}}$. At one hour, $1^{r}=1$, so
+At one hour the power is $1$, so the yield is just the coefficient $A=2$:
 
 $$
 Y(1)=2\\cdot 1^{\\frac{1}{3}}
@@ -1263,64 +1087,10 @@ $$
 Y(1)=2
 $$
 
-The claimed harvest is $4$ kilograms, and $2\\neq 4$, so the statement is False.`,
+The claimed four kilograms is the eight-hour record, not the one-hour level, so the statement is False.`,
       `**E.** → True
 
-Harvest follows $Y(h)=A h^{r}$ after $h>0$ hours, with both constants unknown. The recorded pairs are $Y(8)=4$ and $Y(27)=6$. The claim is that watering time is a power function of harvest, so the law must be inverted after both constants are recovered.
-
-The ratio of the two harvests cancels $A$:
-
-$$
-\\frac{Y(27)}{Y(8)}=\\frac{A\\cdot 27^{r}}{A\\cdot 8^{r}}
-$$
-
-$$
-\\frac{6}{4}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\frac{3}{2}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-Because $\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$,
-
-$$
-\\frac{3}{2}=\\left(\\left(\\frac{3}{2}\\right)^{3}\\right)^{r}=\\left(\\frac{3}{2}\\right)^{3r}
-$$
-
-The bases match, so the exponents match:
-
-$$
-3r=1
-$$
-
-$$
-r=\\frac{1}{3}
-$$
-
-The eight-hour harvest then pins $A$:
-
-$$
-A\\cdot 8^{\\frac{1}{3}}=4
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-A\\cdot 2=4
-$$
-
-$$
-A=2
-$$
-
-The recovered law is $Y(h)=2h^{\\frac{1}{3}}$. Solving for hours:
-
-$$
-Y=2h^{\\frac{1}{3}}
-$$
+A power with a nonzero exponent inverts to another power. From $Y=2h^{\\frac{1}{3}}$ one gets
 
 $$
 \\frac{Y}{2}=h^{\\frac{1}{3}}
@@ -1330,7 +1100,7 @@ $$
 h=\\left(\\frac{Y}{2}\\right)^{3}
 $$
 
-Hours are a cube of a constant times harvest, which is a power function of $Y$, so the statement is True.`,
+Hours are a cube of the harvest, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 11,
@@ -1380,31 +1150,7 @@ $$Y(h)=2h^{\\frac{1}{3}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Callers wait according to $W(n)=A n^{-\\frac{1}{2}}$ minutes when $n>0$ agents are on duty. Four agents produce a twenty-four minute wait. The claim is a nine-agent level, $W(9)=16$, so the unknown coefficient must be recovered first.
-
-The four-agent record pins $A$:
-
-$$
-A\\cdot 4^{-\\frac{1}{2}}=24
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{-\\frac{1}{2}}=\\frac{1}{2}
-$$
-
-$$
-A\\cdot\\frac{1}{2}=24
-$$
-
-$$
-A=48
-$$
-
-The recovered law is $W(n)=48 n^{-\\frac{1}{2}}$. At nine agents:
+The four-agent record gives $W(n)=48 n^{-\\frac{1}{2}}$. Nine agents put a $3$ in the denominator:
 
 $$
 W(9)=48\\cdot 9^{-\\frac{1}{2}}
@@ -1429,13 +1175,7 @@ $$
 The claimed wait is $16$ minutes, so the statement is True.`,
       `**B.** → True
 
-Callers wait according to $W(n)=A n^{-\\frac{1}{2}}$ minutes when $n>0$ agents are on duty. Four agents produce a twenty-four minute wait. The claim is that quadrupling that recorded team halves the wait.
-
-Quadrupling the team multiplies the wait by $4$ to the power of the exponent, and $A$ cancels:
-
-$$
-\\frac{W(4n)}{W(n)}=\\frac{A(4n)^{-\\frac{1}{2}}}{A n^{-\\frac{1}{2}}}
-$$
+The exponent is $-\\frac{1}{2}$, so quadrupling the team multiplies wait by
 
 $$
 \\frac{W(4n)}{W(n)}=4^{-\\frac{1}{2}}
@@ -1449,139 +1189,19 @@ $$
 4^{-\\frac{1}{2}}=\\frac{1}{2}
 $$
 
-The four-agent record also pins $A$, so the recorded team of four can be checked directly:
-
-$$
-A\\cdot 4^{-\\frac{1}{2}}=24
-$$
-
-$$
-A\\cdot\\frac{1}{2}=24
-$$
-
-$$
-A=48
-$$
-
-Sixteen agents is four times the recorded team:
-
-$$
-W(16)=48\\cdot 16^{-\\frac{1}{2}}
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-16^{-\\frac{1}{2}}=\\frac{1}{4}
-$$
-
-$$
-W(16)=48\\cdot\\frac{1}{4}
-$$
-
-$$
-W(16)=12
-$$
-
-Half of the recorded twenty-four minute wait is $12$, so the statement is True.`,
+Four times the staff cuts the wait in half, matching the claim, so the statement is True.`,
       `**C.** → False
 
-Callers wait according to $W(n)=A n^{-\\frac{1}{2}}$ minutes when $n>0$ agents are on duty. Four agents produce a twenty-four minute wait. The claim is that doubling that recorded team halves the wait, so the coefficient must be recovered and the eight-agent wait compared with twelve minutes.
-
-The four-agent record pins $A$:
+Doubling the team would halve the wait only if the exponent were $-1$. With exponent $-\\frac{1}{2}$ the scale factor is
 
 $$
-A\\cdot 4^{-\\frac{1}{2}}=24
+\\frac{W(2n)}{W(n)}=2^{-\\frac{1}{2}}
 $$
 
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{-\\frac{1}{2}}=\\frac{1}{2}
-$$
-
-$$
-A\\cdot\\frac{1}{2}=24
-$$
-
-$$
-A=48
-$$
-
-The recovered law is $W(n)=48 n^{-\\frac{1}{2}}$. Doubling the recorded team gives eight agents:
-
-$$
-W(8)=48\\cdot 8^{-\\frac{1}{2}}
-$$
-
-$$
-W(8)=\\frac{48}{\\sqrt{8}}
-$$
-
-$$
-\\sqrt{8}=2\\sqrt{2}
-$$
-
-$$
-W(8)=\\frac{48}{2\\sqrt{2}}
-$$
-
-$$
-W(8)=\\frac{48}{2\\sqrt{2}}\\cdot\\frac{\\sqrt{2}}{\\sqrt{2}}
-$$
-
-$$
-W(8)=\\frac{48\\sqrt{2}}{4}
-$$
-
-$$
-W(8)=12\\sqrt{2}
-$$
-
-Half of the recorded wait is
-
-$$
-\\frac{1}{2}W(4)=\\frac{1}{2}\\cdot 24=12
-$$
-
-Compare:
-
-$$
-12\\sqrt{2}>12
-$$
-
-The wait falls to $12\\sqrt{2}$ minutes, not to twelve, so the statement is False.`,
+which is about $0.71$, not $\\frac{1}{2}$. The wait falls, but not by half, so the statement is False.`,
       `**D.** → True
 
-Callers wait according to $W(n)=A n^{-\\frac{1}{2}}$ minutes when $n>0$ agents are on duty. Four agents produce a twenty-four minute wait, and staffing cannot exceed fifty agents. The claim is that a six-minute wait would need more than fifty agents, so the law must be inverted after $A$ is recovered.
-
-The four-agent record pins $A$:
-
-$$
-A\\cdot 4^{-\\frac{1}{2}}=24
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{-\\frac{1}{2}}=\\frac{1}{2}
-$$
-
-$$
-A\\cdot\\frac{1}{2}=24
-$$
-
-$$
-A=48
-$$
-
-The recovered law is $W(n)=48 n^{-\\frac{1}{2}}$. A six-minute wait means
+The wait is $W(n)=48 n^{-\\frac{1}{2}}$. A six-minute wait means
 
 $$
 48 n^{-\\frac{1}{2}}=6
@@ -1600,55 +1220,13 @@ $$
 $$
 
 $$
-n=8^{2}
-$$
-
-$$
 n=64
 $$
 
-The staffing cap is $50$. Compare:
-
-$$
-64>50
-$$
-
-Sixty-four is more than fifty, so the statement is True.`,
+Sixty-four agents sit past the fifty-agent cap, so the statement is True.`,
       `**E.** → False
 
-Callers wait according to $W(n)=A n^{-\\frac{1}{2}}$ minutes when $n>0$ agents are on duty. Four agents produce a twenty-four minute wait. The claim is that a growing team eventually makes the wait negative, so the sign of the recovered law must be checked.
-
-The four-agent record pins $A$:
-
-$$
-A\\cdot 4^{-\\frac{1}{2}}=24
-$$
-
-$$
-4^{-\\frac{1}{2}}=\\frac{1}{2}
-$$
-
-$$
-A\\cdot\\frac{1}{2}=24
-$$
-
-$$
-A=48
-$$
-
-The recovered law is
-
-$$
-W(n)=\\frac{48}{\\sqrt{n}}
-$$
-
-For every $n>0$ the square root is positive and $A=48>0$, so
-
-$$
-W(n)>0
-$$
-
-A negative exponent sends the wait towards zero from above, never through zero, so the statement is False.`,
+The wait is $W(n)=\\frac{48}{\\sqrt{n}}$. For every $n>0$ the square root is positive, so the wait stays positive. A negative exponent sends the wait towards zero from above, never through zero, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 12,
@@ -1694,37 +1272,7 @@ $$n\\le 50 \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Leah pumps according to $Q_{L}(d)=a d^{\\frac{1}{2}}$ at depth $d>0$ metres, and at nine metres she gets twelve litres a minute. The claim is her flow at four metres, $Q_{L}(4)=8$, so the unknown coefficient must be recovered first.
-
-The general law is
-
-$$
-Q_{L}(d)=a d^{\\frac{1}{2}}
-$$
-
-The nine-metre reading pins $a$:
-
-$$
-a\\cdot 9^{\\frac{1}{2}}=12
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-a\\cdot 3=12
-$$
-
-$$
-a=\\frac{12}{3}
-$$
-
-$$
-a=4
-$$
-
-The recovered law is $Q_{L}(d)=4 d^{\\frac{1}{2}}$. At four metres:
+Leah's well is $Q_{L}(d)=4d^{\\frac{1}{2}}$. At four metres the square root is $2$:
 
 $$
 Q_{L}(4)=4\\cdot 4^{\\frac{1}{2}}
@@ -1745,53 +1293,7 @@ $$
 The claimed flow is $8$ litres a minute, so the statement is True.`,
       `**B.** → True
 
-Leah pumps according to $Q_{L}(d)=a d^{\\frac{1}{2}}$, with twelve litres a minute at nine metres. Omar pumps according to $Q_{O}(d)=k d^{\\frac{3}{2}}$, with four litres a minute at four metres. The claim is that Omar overtakes Leah before ten metres, so both coefficients must be recovered and the positive crossing found.
-
-Leah's nine-metre reading pins $a$:
-
-$$
-a\\cdot 9^{\\frac{1}{2}}=12
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-a\\cdot 3=12
-$$
-
-$$
-a=4
-$$
-
-Omar's four-metre reading pins $k$:
-
-$$
-k\\cdot 4^{\\frac{3}{2}}=4
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-2^{3}=8
-$$
-
-$$
-k\\cdot 8=4
-$$
-
-$$
-k=\\frac{1}{2}
-$$
-
-The recovered laws are $Q_{L}(d)=4 d^{\\frac{1}{2}}$ and $Q_{O}(d)=\\frac{1}{2} d^{\\frac{3}{2}}$. They meet when
+The two wells are $Q_{L}(d)=4d^{\\frac{1}{2}}$ and $Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}}$. They meet when
 
 $$
 4 d^{\\frac{1}{2}}=\\frac{1}{2} d^{\\frac{3}{2}}
@@ -1811,44 +1313,10 @@ $$
 8=d
 $$
 
-Compare with ten metres:
-
-$$
-8<10
-$$
-
 Eight metres is shallower than ten, so the statement is True.`,
       `**C.** → False
 
-Omar pumps according to $Q_{O}(d)=k d^{\\frac{3}{2}}$ at depth $d>0$ metres, and at four metres he gets four litres a minute. The claim is a sixteen-metre level above forty litres a minute, so the unknown coefficient must be recovered first.
-
-The four-metre reading pins $k$:
-
-$$
-k\\cdot 4^{\\frac{3}{2}}=4
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-2^{3}=8
-$$
-
-$$
-k\\cdot 8=4
-$$
-
-$$
-k=\\frac{1}{2}
-$$
-
-The recovered law is $Q_{O}(d)=\\frac{1}{2} d^{\\frac{3}{2}}$. At sixteen metres:
+Omar's well is $Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}}$. At sixteen metres:
 
 $$
 Q_{O}(16)=\\frac{1}{2}\\cdot 16^{\\frac{3}{2}}
@@ -1874,58 +1342,10 @@ $$
 Q_{O}(16)=32
 $$
 
-The claimed threshold is $40$. Compare:
-
-$$
-32<40
-$$
-
 Thirty-two is not more than forty, so the statement is False.`,
       `**D.** → True
 
-Leah pumps according to $Q_{L}(d)=a d^{\\frac{1}{2}}$, with twelve litres a minute at nine metres. Omar pumps according to $Q_{O}(d)=k d^{\\frac{3}{2}}$, with four litres a minute at four metres. The claim is that once Omar is ahead he stays ahead, so both coefficients must be recovered and the ratio tracked.
-
-Leah's nine-metre reading pins $a$:
-
-$$
-a\\cdot 9^{\\frac{1}{2}}=12
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-a\\cdot 3=12
-$$
-
-$$
-a=4
-$$
-
-Omar's four-metre reading pins $k$:
-
-$$
-k\\cdot 4^{\\frac{3}{2}}=4
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-k\\cdot 8=4
-$$
-
-$$
-k=\\frac{1}{2}
-$$
-
-The ratio of the recovered laws is
+The two wells give the ratio
 
 $$
 \\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{\\frac{1}{2} d^{\\frac{3}{2}}}{4 d^{\\frac{1}{2}}}
@@ -1939,64 +1359,10 @@ $$
 \\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}
 $$
 
-That ratio exceeds $1$ precisely when
-
-$$
-\\frac{d}{8}>1
-$$
-
-$$
-d>8
-$$
-
-Omar stays ahead at every greater depth, so the statement is True.`,
+That ratio exceeds $1$ precisely when $d>8$. Omar's extra exponent is one full power of depth, so once he is ahead he stays ahead, so the statement is True.`,
       `**E.** → False
 
-Leah pumps according to $Q_{L}(d)=a d^{\\frac{1}{2}}$, with twelve litres a minute at nine metres. Omar pumps according to $Q_{O}(d)=k d^{\\frac{3}{2}}$, with four litres a minute at four metres. The claim is that the two wells together still follow a single power of depth, so both coefficients must be recovered and the sum inspected.
-
-Leah's nine-metre reading pins $a$:
-
-$$
-a\\cdot 9^{\\frac{1}{2}}=12
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-a\\cdot 3=12
-$$
-
-$$
-a=4
-$$
-
-Omar's four-metre reading pins $k$:
-
-$$
-k\\cdot 4^{\\frac{3}{2}}=4
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-k\\cdot 8=4
-$$
-
-$$
-k=\\frac{1}{2}
-$$
-
-The combined flow is
-
-$$
-Q_{L}(d)+Q_{O}(d)=4 d^{\\frac{1}{2}}+\\frac{1}{2} d^{\\frac{3}{2}}
-$$
-
-The exponents $\\frac{1}{2}$ and $\\frac{3}{2}$ are different, and both coefficients are nonzero. A sum of distinct powers is not itself a power of depth, so the statement is False.`,
+The two wells give $4d^{\\frac{1}{2}}+\\frac{1}{2}d^{\\frac{3}{2}}$. The exponents $\\frac{1}{2}$ and $\\frac{3}{2}$ are different, and both coefficients are nonzero. A sum of distinct powers is not itself a power of depth, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 13,
@@ -2040,126 +1406,10 @@ $$\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Nora bills a run of $n>0$ copies as $C(n)=F+A n^{\\frac{1}{2}}$. A sixteen-copy run costs two hundred and fifty euros, and a sixty-four-copy run costs four hundred and fifty. The claim is that the setup keeps the bill from being a power function of the run, so both constants must be recovered first.
-
-The sixteen-copy invoice is
-
-$$
-F+A\\cdot 16^{\\frac{1}{2}}=250
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-F+4A=250
-$$
-
-The sixty-four-copy invoice is
-
-$$
-F+A\\cdot 64^{\\frac{1}{2}}=450
-$$
-
-$$
-64^{\\frac{1}{2}}=8
-$$
-
-$$
-F+8A=450
-$$
-
-Subtracting cancels the setup:
-
-$$
-(F+8A)-(F+4A)=450-250
-$$
-
-$$
-4A=200
-$$
-
-$$
-A=50
-$$
-
-The sixteen-copy invoice then pins $F$:
-
-$$
-F+4\\cdot 50=250
-$$
-
-$$
-F+200=250
-$$
-
-$$
-F=50
-$$
-
-The recovered bill is $C(n)=50+50 n^{\\frac{1}{2}}$. A power function of $n$ cannot carry a nonzero intercept, so the statement is True.`,
+The two invoices give $C(n)=50+50 n^{\\frac{1}{2}}$. A power of the run cannot carry a leftover constant. The setup is $50$ euros, not zero, so the statement is True.`,
       `**B.** → True
 
-Nora bills a run of $n>0$ copies as $C(n)=F+A n^{\\frac{1}{2}}$. A sixteen-copy run costs two hundred and fifty euros, and a sixty-four-copy run costs four hundred and fifty. The claim is a twenty-five-copy level of three hundred euros, so both constants must be recovered first.
-
-The sixteen-copy invoice is
-
-$$
-F+A\\cdot 16^{\\frac{1}{2}}=250
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-F+4A=250
-$$
-
-The sixty-four-copy invoice is
-
-$$
-F+A\\cdot 64^{\\frac{1}{2}}=450
-$$
-
-$$
-64^{\\frac{1}{2}}=8
-$$
-
-$$
-F+8A=450
-$$
-
-Subtracting cancels the setup:
-
-$$
-(F+8A)-(F+4A)=450-250
-$$
-
-$$
-4A=200
-$$
-
-$$
-A=50
-$$
-
-The sixteen-copy invoice then pins $F$:
-
-$$
-F+4\\cdot 50=250
-$$
-
-$$
-F+200=250
-$$
-
-$$
-F=50
-$$
-
-The recovered bill is $C(n)=50+50 n^{\\frac{1}{2}}$. At twenty-five copies:
+The bill is $C(n)=50+50 n^{\\frac{1}{2}}$. At twenty-five copies the square root is $5$:
 
 $$
 C(25)=50+50\\cdot 25^{\\frac{1}{2}}
@@ -2184,132 +1434,10 @@ $$
 The claimed bill is $300$ euros, so the statement is True.`,
       `**C.** → False
 
-Nora bills a run of $n>0$ copies as $C(n)=F+A n^{\\frac{1}{2}}$. A sixteen-copy run costs two hundred and fifty euros, and a sixty-four-copy run costs four hundred and fifty. The claim is that a long enough run makes the total bill fall, so both constants must be recovered and the direction of $C$ checked.
-
-The sixteen-copy invoice is
-
-$$
-F+A\\cdot 16^{\\frac{1}{2}}=250
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-F+4A=250
-$$
-
-The sixty-four-copy invoice is
-
-$$
-F+A\\cdot 64^{\\frac{1}{2}}=450
-$$
-
-$$
-64^{\\frac{1}{2}}=8
-$$
-
-$$
-F+8A=450
-$$
-
-Subtracting cancels the setup:
-
-$$
-(F+8A)-(F+4A)=450-250
-$$
-
-$$
-4A=200
-$$
-
-$$
-A=50
-$$
-
-The sixteen-copy invoice then pins $F$:
-
-$$
-F+4\\cdot 50=250
-$$
-
-$$
-F+200=250
-$$
-
-$$
-F=50
-$$
-
-The recovered bill is
-
-$$
-C(n)=50+50 n^{\\frac{1}{2}}
-$$
-
-Both the setup $50$ and the coefficient $50$ are positive, so $C(n)$ is strictly increasing in $n$. Printing more copies always raises the bill, so the statement is False.`,
+The bill is $C(n)=50+50 n^{\\frac{1}{2}}$. Both the setup and the coefficient are positive, so every extra copy raises the square-root term and the bill cannot fall, so the statement is False.`,
       `**D.** → False
 
-Nora bills a run of $n>0$ copies as $C(n)=F+A n^{\\frac{1}{2}}$. A sixteen-copy run costs two hundred and fifty euros, and a sixty-four-copy run costs four hundred and fifty. The claim is that thirty-six copies cost more than four hundred euros, so both constants must be recovered first.
-
-The sixteen-copy invoice is
-
-$$
-F+A\\cdot 16^{\\frac{1}{2}}=250
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-F+4A=250
-$$
-
-The sixty-four-copy invoice is
-
-$$
-F+A\\cdot 64^{\\frac{1}{2}}=450
-$$
-
-$$
-64^{\\frac{1}{2}}=8
-$$
-
-$$
-F+8A=450
-$$
-
-Subtracting cancels the setup:
-
-$$
-(F+8A)-(F+4A)=450-250
-$$
-
-$$
-4A=200
-$$
-
-$$
-A=50
-$$
-
-The sixteen-copy invoice then pins $F$:
-
-$$
-F+4\\cdot 50=250
-$$
-
-$$
-F+200=250
-$$
-
-$$
-F=50
-$$
-
-The recovered bill is $C(n)=50+50 n^{\\frac{1}{2}}$. At thirty-six copies:
+The bill is $C(n)=50+50 n^{\\frac{1}{2}}$. At thirty-six copies the square root is $6$:
 
 $$
 C(36)=50+50\\cdot 36^{\\frac{1}{2}}
@@ -2331,74 +1459,10 @@ $$
 C(36)=350
 $$
 
-The claimed threshold is $400$. Compare:
-
-$$
-350<400
-$$
-
 Three hundred and fifty is not more than four hundred, so the statement is False.`,
       `**E.** → True
 
-Nora bills a run of $n>0$ copies as $C(n)=F+A n^{\\frac{1}{2}}$. A sixteen-copy run costs two hundred and fifty euros, and a sixty-four-copy run costs four hundred and fifty. The claim is that a longer run is cheaper per copy, so both constants must be recovered and the unit cost inspected.
-
-The sixteen-copy invoice is
-
-$$
-F+A\\cdot 16^{\\frac{1}{2}}=250
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-F+4A=250
-$$
-
-The sixty-four-copy invoice is
-
-$$
-F+A\\cdot 64^{\\frac{1}{2}}=450
-$$
-
-$$
-64^{\\frac{1}{2}}=8
-$$
-
-$$
-F+8A=450
-$$
-
-Subtracting cancels the setup:
-
-$$
-(F+8A)-(F+4A)=450-250
-$$
-
-$$
-4A=200
-$$
-
-$$
-A=50
-$$
-
-The sixteen-copy invoice then pins $F$:
-
-$$
-F+4\\cdot 50=250
-$$
-
-$$
-F+200=250
-$$
-
-$$
-F=50
-$$
-
-Cost per copy is the recovered bill divided by the run:
+The bill is $C(n)=50+50 n^{\\frac{1}{2}}$. Cost per copy is
 
 $$
 \\frac{C(n)}{n}=\\frac{50+50 n^{\\frac{1}{2}}}{n}
@@ -2408,7 +1472,7 @@ $$
 \\frac{C(n)}{n}=\\frac{50}{n}+50 n^{-\\frac{1}{2}}
 $$
 
-Both terms fall as $n$ rises, so the statement is True.`,
+The setup is spread over more copies, and the square-root charge per copy also falls, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 14,
@@ -2450,70 +1514,18 @@ $$C(n)=50+50\\sqrt{n} \\tag{1}$$
     tactical_explanations: [
       `**A.** → True
 
-The refinery turns ore of purity $u>0$ into metal $M(u)=A u^{\\frac{3}{2}}$ tonnes. Raising purity from nine to sixteen increased metal output by two hundred and ninety-six tonnes. That metal is then converted to alloy strength $S=\\frac{1}{2}M^{\\frac{2}{3}}$. The claim is that after both stages the strength is proportional to purity, so $A$ must be recovered and the stages composed.
-
-The audited gain is a difference of two metal outputs:
+The audit gives $M(u)=8 u^{\\frac{3}{2}}$. Strength composes with that metal law. The $\\frac{3}{2}$ and $\\frac{2}{3}$ cancel, leaving a multiple of purity:
 
 $$
-M(16)-M(9)=296
+S(u)=\\frac{1}{2}\\bigl(8 u^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}
 $$
 
 $$
-A\\cdot 16^{\\frac{3}{2}}-A\\cdot 9^{\\frac{3}{2}}=296
+S(u)=\\frac{1}{2}\\cdot 8^{\\frac{2}{3}} u^{\\frac{3}{2}\\cdot\\frac{2}{3}}
 $$
 
 $$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-16^{\\frac{3}{2}}=4^{3}
-$$
-
-$$
-4^{3}=64
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{\\frac{3}{2}}=3^{3}
-$$
-
-$$
-3^{3}=27
-$$
-
-$$
-A(64-27)=296
-$$
-
-$$
-A\\cdot 37=296
-$$
-
-$$
-A=8
-$$
-
-The recovered metal law is $M(u)=8 u^{\\frac{3}{2}}$. Strength then composes as
-
-$$
-S(u)=\\frac{1}{2}\\bigl(A u^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}
-$$
-
-$$
-S(u)=\\frac{1}{2} A^{\\frac{2}{3}} u^{\\frac{3}{2}\\cdot\\frac{2}{3}}
-$$
-
-$$
-S(u)=\\frac{1}{2} A^{\\frac{2}{3}} u
-$$
-
-$$
-A^{\\frac{2}{3}}=8^{\\frac{2}{3}}
+S(u)=\\frac{1}{2}\\cdot 8^{\\frac{2}{3}} u
 $$
 
 $$
@@ -2521,11 +1533,7 @@ $$
 $$
 
 $$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-2^{2}=4
+8^{\\frac{2}{3}}=4
 $$
 
 $$
@@ -2539,77 +1547,7 @@ $$
 Strength is twice purity, so the statement is True.`,
       `**B.** → False
 
-The refinery turns ore of purity $u>0$ into metal $M(u)=A u^{\\frac{3}{2}}$ tonnes. Raising purity from nine to sixteen increased metal output by two hundred and ninety-six tonnes. That metal is then converted to alloy strength $S=\\frac{1}{2}M^{\\frac{2}{3}}$. The claim is a purity-nine strength of twenty-seven, so $A$ must be recovered and the chain evaluated at $u=9$.
-
-The audited gain is a difference of two metal outputs:
-
-$$
-M(16)-M(9)=296
-$$
-
-$$
-A\\cdot 16^{\\frac{3}{2}}-A\\cdot 9^{\\frac{3}{2}}=296
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-16^{\\frac{3}{2}}=4^{3}
-$$
-
-$$
-4^{3}=64
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{\\frac{3}{2}}=3^{3}
-$$
-
-$$
-3^{3}=27
-$$
-
-$$
-A(64-27)=296
-$$
-
-$$
-A\\cdot 37=296
-$$
-
-$$
-A=8
-$$
-
-The recovered metal law is $M(u)=8 u^{\\frac{3}{2}}$. Strength then composes as
-
-$$
-S(u)=\\frac{1}{2}\\bigl(8 u^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}
-$$
-
-$$
-S(u)=\\frac{1}{2}\\cdot 8^{\\frac{2}{3}} u
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-S(u)=\\frac{1}{2}\\cdot 4\\cdot u
-$$
-
-$$
-S(u)=2u
-$$
-
-At purity nine:
+The two stages give $S(u)=2u$. At purity nine:
 
 $$
 S(9)=2\\cdot 9
@@ -2619,60 +1557,10 @@ $$
 S(9)=18
 $$
 
-The claimed strength is $27$, and $18\\neq 27$, so the statement is False.`,
+The claimed twenty-seven is the metal output $9^{\\frac{3}{2}}$, not the strength. Eighteen is not twenty-seven, so the statement is False.`,
       `**C.** → False
 
-The refinery turns ore of purity $u>0$ into metal $M(u)=A u^{\\frac{3}{2}}$ tonnes. Raising purity from nine to sixteen increased metal output by two hundred and ninety-six tonnes. That metal is then converted to alloy strength $S=\\frac{1}{2}M^{\\frac{2}{3}}$. A rival mill quotes strength directly as $1.8u+5$. The claim is that the two quotes never meet, so $A$ must be recovered, the chain composed, and the crossing solved.
-
-The audited gain is a difference of two metal outputs:
-
-$$
-M(16)-M(9)=296
-$$
-
-$$
-A\\cdot 16^{\\frac{3}{2}}-A\\cdot 9^{\\frac{3}{2}}=296
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-A(64-27)=296
-$$
-
-$$
-A\\cdot 37=296
-$$
-
-$$
-A=8
-$$
-
-The recovered metal law is $M(u)=8 u^{\\frac{3}{2}}$. Strength then composes as
-
-$$
-S(u)=\\frac{1}{2}\\bigl(8 u^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}
-$$
-
-$$
-S(u)=\\frac{1}{2}\\cdot 8^{\\frac{2}{3}} u
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-S(u)=2u
-$$
-
-Agreement with the rival line is
+The refinery's strength is $S(u)=2u$. Agreement with the rival line is
 
 $$
 2u=1.8u+5
@@ -2697,57 +1585,7 @@ $$
 They meet at purity twenty-five, so the statement is False.`,
       `**D.** → True
 
-The refinery turns ore of purity $u>0$ into metal $M(u)=A u^{\\frac{3}{2}}$ tonnes. Raising purity from nine to sixteen increased metal output by two hundred and ninety-six tonnes. That metal is then converted to alloy strength $S=\\frac{1}{2}M^{\\frac{2}{3}}$. The claim is that at purity thirty-six the strength exceeds seventy, so $A$ must be recovered and the chain evaluated.
-
-The audited gain is a difference of two metal outputs:
-
-$$
-M(16)-M(9)=296
-$$
-
-$$
-A\\cdot 16^{\\frac{3}{2}}-A\\cdot 9^{\\frac{3}{2}}=296
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-A(64-27)=296
-$$
-
-$$
-A\\cdot 37=296
-$$
-
-$$
-A=8
-$$
-
-The recovered metal law is $M(u)=8 u^{\\frac{3}{2}}$. Strength then composes as
-
-$$
-S(u)=\\frac{1}{2}\\bigl(8 u^{\\frac{3}{2}}\\bigr)^{\\frac{2}{3}}
-$$
-
-$$
-S(u)=\\frac{1}{2}\\cdot 8^{\\frac{2}{3}} u
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-S(u)=2u
-$$
-
-At purity thirty-six:
+The two stages give $S(u)=2u$. At purity thirty-six:
 
 $$
 S(36)=2\\cdot 36
@@ -2757,24 +1595,10 @@ $$
 S(36)=72
 $$
 
-The claimed threshold is $70$. Compare:
-
-$$
-72>70
-$$
-
 Seventy-two is more than seventy, so the statement is True.`,
       `**E.** → False
 
-A rival mill quotes strength directly as $1.8u+5$. The claim is that this quote is a power function of purity.
-
-A power function of purity has the form $c u^{p}$ for constants $c$ and $p$, so it cannot carry a nonzero intercept. The rival quote is
-
-$$
-1.8u+5
-$$
-
-At purity zero the quote still equals $5$. That extra constant term stops the quote from being a power of $u$, so the statement is False.`,
+A power of purity has the form $c u^{p}$, so it cannot carry a leftover constant. The rival quote is $1.8u+5$, and at purity zero that quote still equals $5$. The intercept kills the power, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 15,
@@ -2822,31 +1646,7 @@ $$2u=1.8u+5 \\tag{2}$$
     tactical_explanations: [
       `**A.** → False
 
-Peak load follows $L(x)=A x^{r}$ for $x>0$ simultaneous jobs, with both constants unknown. Stress tests show that doubling the job count multiplies peak load by $4$. The claim is that tripling the job count multiplies peak load by $6$, which is the scaling factor $3^{r}$.
-
-The doubling test cancels $A$:
-
-$$
-\\frac{L(2x)}{L(x)}=\\frac{A(2x)^{r}}{A x^{r}}
-$$
-
-$$
-\\frac{L(2x)}{L(x)}=2^{r}
-$$
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-Tripling the job count then multiplies peak load by
+The doubling test gives $r=2$. Tripling the job count multiplies peak load by
 
 $$
 \\frac{L(3x)}{L(x)}=3^{r}
@@ -2860,66 +1660,10 @@ $$
 3^{2}=9
 $$
 
-The claimed factor is $6$. Compare:
-
-$$
-9\\neq 6
-$$
-
-The factor is nine, not six, so the statement is False.`,
+The claimed factor is $6$. A linear trap would give $3\\cdot 2=6$, but the exponent is $2$, so the statement is False.`,
       `**B.** → True
 
-Peak load follows $L(x)=A x^{r}$ for $x>0$ simultaneous jobs, with both constants unknown. Stress tests show that doubling the job count multiplies peak load by $4$, and a run with $8$ simultaneous jobs recorded a peak load of $32$. The claim is a four-job level of eight, so both constants must be recovered first.
-
-The doubling test cancels $A$:
-
-$$
-\\frac{L(2x)}{L(x)}=\\frac{A(2x)^{r}}{A x^{r}}
-$$
-
-$$
-\\frac{L(2x)}{L(x)}=2^{r}
-$$
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-The eight-job run then pins $A$:
-
-$$
-A\\cdot 8^{r}=32
-$$
-
-$$
-A\\cdot 8^{2}=32
-$$
-
-$$
-8^{2}=64
-$$
-
-$$
-A\\cdot 64=32
-$$
-
-$$
-A=\\frac{32}{64}
-$$
-
-$$
-A=\\frac{1}{2}
-$$
-
-The recovered law is $L(x)=\\frac{1}{2}x^{2}$. At four jobs:
+The stress tests give $L(x)=\\frac{1}{2}x^{2}$. At four jobs:
 
 $$
 L(4)=\\frac{1}{2}\\cdot 4^{2}
@@ -2940,82 +1684,10 @@ $$
 The claimed peak load is $8$, so the statement is True.`,
       `**C.** → True
 
-Peak load follows $L(x)=A x^{r}$ for $x>0$ simultaneous jobs, with both constants unknown. Stress tests show that doubling the job count multiplies peak load by $4$. The claim is that the exponent exceeds one, so $r$ must be recovered first.
-
-The doubling test cancels $A$:
-
-$$
-\\frac{L(2x)}{L(x)}=\\frac{A(2x)^{r}}{A x^{r}}
-$$
-
-$$
-\\frac{L(2x)}{L(x)}=2^{r}
-$$
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-Compare the exponent with one:
-
-$$
-2>1
-$$
-
-The exponent exceeds one, so the statement is True.`,
+The doubling test gives $r=2$. An exponent larger than one means peak load grows faster than the job count: each extra job adds more load than the job before it. Two exceeds one, so the statement is True.`,
       `**D.** → False
 
-Peak load follows $L(x)=A x^{r}$ for $x>0$ simultaneous jobs, with both constants unknown. Stress tests show that doubling the job count multiplies peak load by $4$, and a run with $8$ simultaneous jobs recorded a peak load of $32$. The hardware alarm trips at a peak load of $200$. The claim is that the alarm already trips at sixteen jobs, so both constants must be recovered first.
-
-The doubling test cancels $A$:
-
-$$
-\\frac{L(2x)}{L(x)}=\\frac{A(2x)^{r}}{A x^{r}}
-$$
-
-$$
-\\frac{L(2x)}{L(x)}=2^{r}
-$$
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-The eight-job run then pins $A$:
-
-$$
-A\\cdot 8^{2}=32
-$$
-
-$$
-8^{2}=64
-$$
-
-$$
-A\\cdot 64=32
-$$
-
-$$
-A=\\frac{1}{2}
-$$
-
-The recovered law is $L(x)=\\frac{1}{2}x^{2}$. At sixteen jobs:
+The stress tests give $L(x)=\\frac{1}{2}x^{2}$. At sixteen jobs:
 
 $$
 L(16)=\\frac{1}{2}\\cdot 16^{2}
@@ -3033,44 +1705,10 @@ $$
 L(16)=128
 $$
 
-The alarm threshold is $200$. Compare:
-
-$$
-128<200
-$$
-
-One hundred and twenty-eight is still below two hundred, so the statement is False.`,
+One hundred and twenty-eight is still below the alarm of $200$, so the statement is False.`,
       `**E.** → False
 
-Peak load follows $L(x)=A x^{r}$ for $x>0$ simultaneous jobs, with both constants unknown. Stress tests show that doubling the job count multiplies peak load by $4$. The claim is that halving the job count halves peak load, which is the scaling factor $2^{-r}$.
-
-The doubling test cancels $A$:
-
-$$
-\\frac{L(2x)}{L(x)}=\\frac{A(2x)^{r}}{A x^{r}}
-$$
-
-$$
-\\frac{L(2x)}{L(x)}=2^{r}
-$$
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-Halving the job count then multiplies peak load by
-
-$$
-\\frac{L(\\frac{x}{2})}{L(x)}=\\frac{A(\\frac{x}{2})^{r}}{A x^{r}}
-$$
+The doubling test gives $r=2$. Halving the job count multiplies peak load by
 
 $$
 \\frac{L(\\frac{x}{2})}{L(x)}=2^{-r}
@@ -3082,12 +1720,6 @@ $$
 
 $$
 2^{-2}=\\frac{1}{4}
-$$
-
-The claimed factor is $\\frac{1}{2}$. Compare:
-
-$$
-\\frac{1}{4}\\neq\\frac{1}{2}
 $$
 
 The load falls to a quarter, not to a half, so the statement is False.`,
@@ -3138,39 +1770,7 @@ $$L(x)=\\frac{1}{2}x^{2} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Usable survey responses follow $Q(x)=A x^{\\frac{1}{2}}$ for $x>0$. When intensity was raised from $25$ to $100$, usable responses increased by exactly $60$. The claim is that an extra unit of intensity adds more usable responses at $25$ than at $100$, so $A$ must be recovered and the two derivatives compared.
-
-The recorded gain is a difference of two square-root levels:
-
-$$
-Q(100)-Q(25)=60
-$$
-
-$$
-A\\cdot 100^{\\frac{1}{2}}-A\\cdot 25^{\\frac{1}{2}}=60
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-25^{\\frac{1}{2}}=5
-$$
-
-$$
-A(10-5)=60
-$$
-
-$$
-5A=60
-$$
-
-$$
-A=12
-$$
-
-The recovered law is $Q(x)=12 x^{\\frac{1}{2}}$. An extra unit of intensity adds the derivative:
+The recorded gain gives $Q(x)=12 x^{\\frac{1}{2}}$. An extra unit of intensity adds the derivative. The square-root flattens, so later units buy less:
 
 $$
 Q'(x)=12\\cdot\\frac{1}{2} x^{-\\frac{1}{2}}
@@ -3180,28 +1780,16 @@ $$
 Q'(x)=6 x^{-\\frac{1}{2}}
 $$
 
-At intensity $25$:
-
 $$
 Q'(25)=6\\cdot 25^{-\\frac{1}{2}}
-$$
-
-$$
-25^{\\frac{1}{2}}=5
 $$
 
 $$
 Q'(25)=\\frac{6}{5}
 $$
 
-At intensity $100$:
-
 $$
 Q'(100)=6\\cdot 100^{-\\frac{1}{2}}
-$$
-
-$$
-100^{\\frac{1}{2}}=10
 $$
 
 $$
@@ -3212,48 +1800,14 @@ $$
 Q'(100)=\\frac{3}{5}
 $$
 
-Compare:
-
 $$
 \\frac{6}{5}>\\frac{3}{5}
 $$
 
-An extra unit of intensity adds more usable responses at $25$ than at $100$, so the statement is True.`,
+An extra unit adds more usable responses at $25$ than at $100$, so the statement is True.`,
       `**B.** → True
 
-Usable survey responses follow $Q(x)=A x^{\\frac{1}{2}}$ for $x>0$. When intensity was raised from $25$ to $100$, usable responses increased by exactly $60$. The claim is an intensity-$81$ yield of one hundred and eight, so $A$ must be recovered first.
-
-The recorded gain is a difference of two square-root levels:
-
-$$
-Q(100)-Q(25)=60
-$$
-
-$$
-A\\cdot 100^{\\frac{1}{2}}-A\\cdot 25^{\\frac{1}{2}}=60
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-25^{\\frac{1}{2}}=5
-$$
-
-$$
-A(10-5)=60
-$$
-
-$$
-5A=60
-$$
-
-$$
-A=12
-$$
-
-The recovered law is $Q(x)=12 x^{\\frac{1}{2}}$. At intensity $81$:
+The recorded gain gives $A=12$. At intensity $81$ the square root is $9$:
 
 $$
 Q(81)=12\\cdot 81^{\\frac{1}{2}}
@@ -3274,60 +1828,16 @@ $$
 The claimed yield is $108$, so the statement is True.`,
       `**C.** → False
 
-Usable survey responses follow $Q(x)=A x^{\\frac{1}{2}}$ for $x>0$. The claim is that doubling outreach intensity doubles usable responses.
-
-Doubling intensity multiplies responses by $2$ to the power of the exponent, and $A$ cancels:
-
-$$
-\\frac{Q(2x)}{Q(x)}=\\frac{A(2x)^{\\frac{1}{2}}}{A x^{\\frac{1}{2}}}
-$$
+Doubling intensity would double responses only if the exponent were $1$. With exponent $\\frac{1}{2}$ the scale factor is
 
 $$
 \\frac{Q(2x)}{Q(x)}=2^{\\frac{1}{2}}
 $$
 
-The claimed factor is $2$. Compare:
-
-$$
-2^{\\frac{1}{2}}<2
-$$
-
-The square root of two is not two, so the statement is False.`,
+The square root of two is about $1.41$, not $2$. Responses rise, but not in lockstep with outreach, so the statement is False.`,
       `**D.** → False
 
-Usable survey responses follow $Q(x)=A x^{\\frac{1}{2}}$ for $x>0$. When intensity was raised from $25$ to $100$, usable responses increased by exactly $60$. The fieldwork budget caps outreach intensity at $400$. The claim is that the cap allows at most $200$ usable responses, so $A$ must be recovered and the cap evaluated.
-
-The recorded gain is a difference of two square-root levels:
-
-$$
-Q(100)-Q(25)=60
-$$
-
-$$
-A\\cdot 100^{\\frac{1}{2}}-A\\cdot 25^{\\frac{1}{2}}=60
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-25^{\\frac{1}{2}}=5
-$$
-
-$$
-A(10-5)=60
-$$
-
-$$
-5A=60
-$$
-
-$$
-A=12
-$$
-
-The recovered law is $Q(x)=12 x^{\\frac{1}{2}}$. At the intensity cap:
+The recorded gain gives $A=12$. At the intensity cap of $400$:
 
 $$
 Q(400)=12\\cdot 400^{\\frac{1}{2}}
@@ -3345,52 +1855,10 @@ $$
 Q(400)=240
 $$
 
-The claimed ceiling is $200$. Compare:
-
-$$
-240>200
-$$
-
-Two hundred and forty exceeds two hundred, so the statement is False.`,
+Two hundred and forty exceeds the claimed ceiling of $200$, so the statement is False.`,
       `**E.** → True
 
-Usable survey responses follow $Q(x)=A x^{\\frac{1}{2}}$ for $x>0$. When intensity was raised from $25$ to $100$, usable responses increased by exactly $60$. The claim is that the intensity needed for a target response count is itself a power function of that count, so $A$ must be recovered and the law inverted.
-
-The recorded gain is a difference of two square-root levels:
-
-$$
-Q(100)-Q(25)=60
-$$
-
-$$
-A\\cdot 100^{\\frac{1}{2}}-A\\cdot 25^{\\frac{1}{2}}=60
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-25^{\\frac{1}{2}}=5
-$$
-
-$$
-A(10-5)=60
-$$
-
-$$
-5A=60
-$$
-
-$$
-A=12
-$$
-
-The recovered law is $Q(x)=12 x^{\\frac{1}{2}}$. Solving for intensity:
-
-$$
-Q=12 x^{\\frac{1}{2}}
-$$
+The recorded gain gives $Q=12 x^{\\frac{1}{2}}$. A square root inverts to a square:
 
 $$
 \\frac{Q}{12}=x^{\\frac{1}{2}}
@@ -3400,7 +1868,7 @@ $$
 x=\\left(\\frac{Q}{12}\\right)^{2}
 $$
 
-Intensity is a square of a constant times the response count, which is a power function of $Q$, so the statement is True.`,
+Intensity is a power of the response count, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 17,
@@ -3444,48 +1912,10 @@ $$x\\le 400 \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-The automated procedure costs $C(n)=a n^{2}$ for a batch of $n>0$ documents. On a batch of $16$ documents that procedure costs $256$. The claim is a nine-document automated cost of eighty-one, $C(9)=81$, so the unknown coefficient must be recovered first.
-
-The general law is
+The automated law is $C(n)=n^{2}$. At nine documents:
 
 $$
-C(n)=a n^{2}
-$$
-
-The sixteen-document bill pins $a$:
-
-$$
-a\\cdot 16^{2}=256
-$$
-
-$$
-16^{2}=256
-$$
-
-$$
-a\\cdot 256=256
-$$
-
-$$
-a=\\frac{256}{256}
-$$
-
-$$
-a=1
-$$
-
-The recovered law is $C(n)=n^{2}$. At nine documents:
-
-$$
-C(9)=a\\cdot 9^{2}
-$$
-
-$$
-C(9)=1\\cdot 9^{2}
-$$
-
-$$
-9^{2}=81
+C(9)=9^{2}
 $$
 
 $$
@@ -3495,41 +1925,7 @@ $$
 The claimed automated cost is $81$, so the statement is True.`,
       `**B.** → False
 
-The automated procedure costs $C(n)=a n^{2}$ and the manual procedure costs $D(n)=b n$. On a batch of $16$ documents the two procedures cost the same, $256$ each. The claim is that automated is cheaper at every batch above sixteen, so both coefficients must be recovered and the sign of $C-D$ checked.
-
-The sixteen-document automated bill pins $a$:
-
-$$
-a\\cdot 16^{2}=256
-$$
-
-$$
-16^{2}=256
-$$
-
-$$
-a\\cdot 256=256
-$$
-
-$$
-a=1
-$$
-
-The sixteen-document manual bill pins $b$:
-
-$$
-b\\cdot 16=256
-$$
-
-$$
-b=\\frac{256}{16}
-$$
-
-$$
-b=16
-$$
-
-The recovered laws are $C(n)=n^{2}$ and $D(n)=16n$. Their difference is
+The two procedures are $C(n)=n^{2}$ and $D(n)=16n$. Their difference is
 
 $$
 C(n)-D(n)=n^{2}-16n
@@ -3539,50 +1935,10 @@ $$
 C(n)-D(n)=n(n-16)
 $$
 
-For $n>16$ both factors are positive, so
-
-$$
-C(n)-D(n)>0
-$$
-
-$$
-C(n)>D(n)
-$$
-
-Automated is then more expensive than manual, not cheaper, so the statement is False.`,
+For $n>16$ both factors are positive, so automated costs more than manual, not less. The quadratic outruns the line past the meeting point, so the statement is False.`,
       `**C.** → True
 
-The automated procedure costs $C(n)=a n^{2}$ and the manual procedure costs $D(n)=b n$. On a batch of $16$ documents the two procedures cost the same, $256$ each. The claim is that for $n>0$ they cost the same only at $n=16$, so both coefficients must be recovered and the roots of $C=D$ listed.
-
-The sixteen-document automated bill pins $a$:
-
-$$
-a\\cdot 16^{2}=256
-$$
-
-$$
-16^{2}=256
-$$
-
-$$
-a\\cdot 256=256
-$$
-
-$$
-a=1
-$$
-
-The sixteen-document manual bill pins $b$:
-
-$$
-b\\cdot 16=256
-$$
-
-$$
-b=16
-$$
-
-The recovered laws are $C(n)=n^{2}$ and $D(n)=16n$. They meet when
+The two procedures are $C(n)=n^{2}$ and $D(n)=16n$. They meet when
 
 $$
 n^{2}=16n
@@ -3599,37 +1955,7 @@ $$
 The roots are $n=0$ and $n=16$. On $n>0$ they meet only at sixteen, so the statement is True.`,
       `**D.** → False
 
-The automated procedure costs $C(n)=a n^{2}$ and the manual procedure costs $D(n)=b n$. On a batch of $16$ documents the two procedures cost the same, $256$ each. The claim is that at twenty-five documents the two procedures differ by less than one hundred, so both coefficients must be recovered and the gap computed.
-
-The sixteen-document automated bill pins $a$:
-
-$$
-a\\cdot 16^{2}=256
-$$
-
-$$
-16^{2}=256
-$$
-
-$$
-a\\cdot 256=256
-$$
-
-$$
-a=1
-$$
-
-The sixteen-document manual bill pins $b$:
-
-$$
-b\\cdot 16=256
-$$
-
-$$
-b=16
-$$
-
-The recovered laws are $C(n)=n^{2}$ and $D(n)=16n$. At twenty-five documents:
+The two procedures are $C(n)=n^{2}$ and $D(n)=16n$. At twenty-five documents:
 
 $$
 C(25)=25^{2}
@@ -3655,36 +1981,10 @@ $$
 C(25)-D(25)=225
 $$
 
-The claimed threshold is $100$. Compare:
-
-$$
-225>100
-$$
-
 Two hundred and twenty-five is not less than one hundred, so the statement is False.`,
       `**E.** → False
 
-The automated procedure costs $C(n)=a n^{2}$ for a batch of $n>0$ documents. On a batch of $16$ documents that procedure costs $256$. The claim is that the automated cost per document is constant, so $a$ must be recovered and the unit cost inspected.
-
-The sixteen-document bill pins $a$:
-
-$$
-a\\cdot 16^{2}=256
-$$
-
-$$
-16^{2}=256
-$$
-
-$$
-a\\cdot 256=256
-$$
-
-$$
-a=1
-$$
-
-The recovered law is $C(n)=n^{2}$. Cost per document is
+The automated law is $C(n)=n^{2}$. Cost per document is
 
 $$
 \\frac{C(n)}{n}=\\frac{n^{2}}{n}
@@ -3694,7 +1994,7 @@ $$
 \\frac{C(n)}{n}=n
 $$
 
-which rises with $n$. The unit cost is not constant, so the statement is False.`,
+which rises with the batch. The unit cost is not constant, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 18,
@@ -3738,37 +2038,7 @@ $$C(n)-D(n)=n(n-16) \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Warehouse throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour for $s>0$ staff. A shift with $16$ staff moved $32$ pallets per hour. The claim is a sixty-four-staff level, $H(64)=64$, so the unknown coefficient must be recovered first.
-
-The general law is
-
-$$
-H(s)=A s^{\\frac{1}{2}}
-$$
-
-The sixteen-staff record pins $A$:
-
-$$
-A\\cdot 16^{\\frac{1}{2}}=32
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-A\\cdot 4=32
-$$
-
-$$
-A=\\frac{32}{4}
-$$
-
-$$
-A=8
-$$
-
-The recovered law is $H(s)=8 s^{\\frac{1}{2}}$. At sixty-four staff:
+The sixteen-staff record gives $H(s)=8s^{\\frac{1}{2}}$. At sixty-four staff the square root is $8$:
 
 $$
 H(64)=8\\cdot 64^{\\frac{1}{2}}
@@ -3789,95 +2059,25 @@ $$
 The claimed throughput is $64$ pallets per hour, so the statement is True.`,
       `**B.** → False
 
-Warehouse throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour for $s>0$ staff. The claim is that doubling the headcount doubles throughput.
-
-Doubling staff multiplies throughput by $2$ to the power of the exponent, and $A$ cancels:
-
-$$
-\\frac{H(2s)}{H(s)}=\\frac{A(2s)^{\\frac{1}{2}}}{A s^{\\frac{1}{2}}}
-$$
+Doubling staff would double throughput only if the exponent were $1$. With exponent $\\frac{1}{2}$ the scale factor is
 
 $$
 \\frac{H(2s)}{H(s)}=2^{\\frac{1}{2}}
 $$
 
-The claimed factor is $2$. Compare:
-
-$$
-2^{\\frac{1}{2}}<2
-$$
-
-The square root of two is not two, so the statement is False.`,
+The square root of two is about $1.41$, not $2$. Throughput rises, but not in lockstep with headcount, so the statement is False.`,
       `**C.** → False
 
-Warehouse throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour for $s>0$ staff. A shift with $16$ staff moved $32$ pallets per hour. The service contract caps billed throughput at $80$ pallets per hour. The claim is that the ceiling is already reached with $64$ staff, so $A$ must be recovered and that level compared with the cap.
-
-The sixteen-staff record pins $A$:
-
-$$
-A\\cdot 16^{\\frac{1}{2}}=32
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-A\\cdot 4=32
-$$
-
-$$
-A=8
-$$
-
-The recovered law is $H(s)=8 s^{\\frac{1}{2}}$. At sixty-four staff:
-
-$$
-H(64)=8\\cdot 64^{\\frac{1}{2}}
-$$
-
-$$
-64^{\\frac{1}{2}}=8
-$$
-
-$$
-H(64)=8\\cdot 8
-$$
-
-$$
-H(64)=64
-$$
-
-The contract ceiling is $80$. Compare:
+Sixty-four staff move $64$ pallets an hour.
 
 $$
 64<80
 $$
 
-Sixty-four is still below eighty, so the statement is False.`,
+Sixty-four is still below the contract ceiling of eighty, so the statement is False.`,
       `**D.** → True
 
-Warehouse throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour for $s>0$ staff. A shift with $16$ staff moved $32$ pallets per hour. The claim is that throughput per staff member falls as headcount rises, so $A$ must be recovered and the unit throughput inspected.
-
-The sixteen-staff record pins $A$:
-
-$$
-A\\cdot 16^{\\frac{1}{2}}=32
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-A\\cdot 4=32
-$$
-
-$$
-A=8
-$$
-
-The recovered law is $H(s)=8 s^{\\frac{1}{2}}$. Throughput per staff member is
+Throughput is $H(s)=8s^{\\frac{1}{2}}$. Throughput per staff member is
 
 $$
 \\frac{H(s)}{s}=\\frac{8 s^{\\frac{1}{2}}}{s}
@@ -3887,30 +2087,10 @@ $$
 \\frac{H(s)}{s}=8 s^{-\\frac{1}{2}}
 $$
 
-which falls as $s$ rises, so the statement is True.`,
+The leftover exponent is negative, so each extra worker adds less throughput than the one before, so the statement is True.`,
       `**E.** → True
 
-Warehouse throughput follows $H(s)=A s^{\\frac{1}{2}}$ pallets per hour for $s>0$ staff. A shift with $16$ staff moved $32$ pallets per hour. The service contract caps billed throughput at $80$ pallets per hour. The claim is that once the ceiling binds, billed throughput is no longer a power function of staff, so $A$ must be recovered and the capped rule written.
-
-The sixteen-staff record pins $A$:
-
-$$
-A\\cdot 16^{\\frac{1}{2}}=32
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-A\\cdot 4=32
-$$
-
-$$
-A=8
-$$
-
-The recovered law is $H(s)=8 s^{\\frac{1}{2}}$. The ceiling binds when
+Throughput is $H(s)=8s^{\\frac{1}{2}}$. The ceiling binds when
 
 $$
 8 s^{\\frac{1}{2}}=80
@@ -3924,13 +2104,13 @@ $$
 s=100
 $$
 
-Billed throughput is then the recovered power cut off at the cap:
+Billed throughput is then the power cut off at the cap:
 
 $$
 B(s)=\\min\\bigl(8 s^{\\frac{1}{2}},\\,80\\bigr)
 $$
 
-That two-piece rule is not a single power of $s$, so the statement is True.`,
+Past one hundred staff that rule is a constant, not a power of $s$, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 19,
@@ -3974,82 +2154,14 @@ $$B(s)=\\min\\bigl(H(s),\\,80\\bigr) \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Median response time follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds for $k>0$ servers. Moving from $4$ servers to $9$ servers cut the median by exactly $19$ ms. The claim is a four-server wait of $27$ ms, so $A$ must be recovered from that recorded cut first.
-
-The recorded cut is a difference of two negative powers:
+The recorded cut gives $W(k)=216 k^{-\\frac{3}{2}}$. At four servers:
 
 $$
-W(4)-W(9)=19
-$$
-
-$$
-A\\cdot 4^{-\\frac{3}{2}}-A\\cdot 9^{-\\frac{3}{2}}=19
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-2^{3}=8
+W(4)=216\\cdot 4^{-\\frac{3}{2}}
 $$
 
 $$
 4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{\\frac{3}{2}}=3^{3}
-$$
-
-$$
-3^{3}=27
-$$
-
-$$
-9^{-\\frac{3}{2}}=\\frac{1}{27}
-$$
-
-$$
-A\\left(\\frac{1}{8}-\\frac{1}{27}\\right)=19
-$$
-
-$$
-\\frac{1}{8}=\\frac{27}{216}
-$$
-
-$$
-\\frac{1}{27}=\\frac{8}{216}
-$$
-
-$$
-\\frac{27}{216}-\\frac{8}{216}=\\frac{19}{216}
-$$
-
-$$
-A\\cdot\\frac{19}{216}=19
-$$
-
-$$
-A=19\\cdot\\frac{216}{19}
-$$
-
-$$
-A=216
-$$
-
-The recovered law is $W(k)=216 k^{-\\frac{3}{2}}$. At four servers:
-
-$$
-W(4)=216\\cdot 4^{-\\frac{3}{2}}
 $$
 
 $$
@@ -4063,78 +2175,14 @@ $$
 The claimed wait is $27$ ms, so the statement is True.`,
       `**B.** → False
 
-Median response time follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds for $k>0$ servers. Moving from $4$ servers to $9$ servers cut the median by exactly $19$ ms. The claim is that nine servers still wait more than ten milliseconds, so $A$ must be recovered from that recorded cut first.
-
-The recorded cut is a difference of two negative powers:
+The recorded cut gives $A=216$. At nine servers:
 
 $$
-W(4)-W(9)=19
-$$
-
-$$
-A\\cdot 4^{-\\frac{3}{2}}-A\\cdot 9^{-\\frac{3}{2}}=19
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-2^{3}=8
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{\\frac{3}{2}}=3^{3}
-$$
-
-$$
-3^{3}=27
+W(9)=216\\cdot 9^{-\\frac{3}{2}}
 $$
 
 $$
 9^{-\\frac{3}{2}}=\\frac{1}{27}
-$$
-
-$$
-A\\left(\\frac{1}{8}-\\frac{1}{27}\\right)=19
-$$
-
-$$
-\\frac{1}{8}=\\frac{27}{216}
-$$
-
-$$
-\\frac{1}{27}=\\frac{8}{216}
-$$
-
-$$
-\\frac{27}{216}-\\frac{8}{216}=\\frac{19}{216}
-$$
-
-$$
-A\\cdot\\frac{19}{216}=19
-$$
-
-$$
-A=216
-$$
-
-The recovered law is $W(k)=216 k^{-\\frac{3}{2}}$. At nine servers:
-
-$$
-W(9)=216\\cdot 9^{-\\frac{3}{2}}
 $$
 
 $$
@@ -4145,121 +2193,27 @@ $$
 W(9)=8
 $$
 
-The claimed threshold is $10$. Compare:
-
-$$
-8<10
-$$
-
 Eight milliseconds is not more than ten, so the statement is False.`,
       `**C.** → False
 
-Median response time follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds for $k>0$ servers. The claim is that doubling the server count halves the median response time.
-
-Doubling the servers multiplies the wait by $2$ to the power of the exponent, and $A$ cancels:
-
-$$
-\\frac{W(2k)}{W(k)}=\\frac{A(2k)^{-\\frac{3}{2}}}{A k^{-\\frac{3}{2}}}
-$$
+Doubling the servers would halve the wait only if the exponent were $-1$. With exponent $-\\frac{3}{2}$ the scale factor is
 
 $$
 \\frac{W(2k)}{W(k)}=2^{-\\frac{3}{2}}
 $$
 
 $$
-2^{-\\frac{3}{2}}=\\frac{1}{2^{\\frac{3}{2}}}
-$$
-
-$$
-2^{\\frac{3}{2}}=2\\cdot 2^{\\frac{1}{2}}
+2^{\\frac{3}{2}}=2\\cdot\\sqrt{2}
 $$
 
 $$
 2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}
 $$
 
-The claimed factor is $\\frac{1}{2}$. Compare:
-
-$$
-\\frac{1}{2\\sqrt{2}}\\neq\\frac{1}{2}
-$$
-
-That factor is not one half, so the statement is False.`,
+That factor is about $0.35$, not $\\frac{1}{2}$. The wait falls faster than a simple half, so the statement is False.`,
       `**D.** → True
 
-Median response time follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds for $k>0$ servers. Moving from $4$ servers to $9$ servers cut the median by exactly $19$ ms. The claim is that the server count needed for a target wait is itself a power function of that wait, so $A$ must be recovered and the law inverted.
-
-The recorded cut is a difference of two negative powers:
-
-$$
-W(4)-W(9)=19
-$$
-
-$$
-A\\cdot 4^{-\\frac{3}{2}}-A\\cdot 9^{-\\frac{3}{2}}=19
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-2^{3}=8
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{\\frac{3}{2}}=3^{3}
-$$
-
-$$
-3^{3}=27
-$$
-
-$$
-9^{-\\frac{3}{2}}=\\frac{1}{27}
-$$
-
-$$
-A\\left(\\frac{1}{8}-\\frac{1}{27}\\right)=19
-$$
-
-$$
-\\frac{1}{8}=\\frac{27}{216}
-$$
-
-$$
-\\frac{1}{27}=\\frac{8}{216}
-$$
-
-$$
-\\frac{27}{216}-\\frac{8}{216}=\\frac{19}{216}
-$$
-
-$$
-A\\cdot\\frac{19}{216}=19
-$$
-
-$$
-A=216
-$$
-
-The recovered law is $W(k)=216 k^{-\\frac{3}{2}}$. Solving for the server count:
-
-$$
-W=216 k^{-\\frac{3}{2}}
-$$
+The wait is $W=216 k^{-\\frac{3}{2}}$. A power with a nonzero exponent inverts to another power:
 
 $$
 \\frac{W}{216}=k^{-\\frac{3}{2}}
@@ -4276,51 +2230,7 @@ $$
 The server count is a power of the wait, so the statement is True.`,
       `**E.** → False
 
-Median response time follows $W(k)=A k^{-\\frac{3}{2}}$ milliseconds for $k>0$ servers. Moving from $4$ servers to $9$ servers cut the median by exactly $19$ ms. The claim is that a growing server count eventually makes the wait negative, so $A$ must be recovered and the sign of the law checked.
-
-The recorded cut is a difference of two negative powers:
-
-$$
-W(4)-W(9)=19
-$$
-
-$$
-A\\cdot 4^{-\\frac{3}{2}}-A\\cdot 9^{-\\frac{3}{2}}=19
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-9^{-\\frac{3}{2}}=\\frac{1}{27}
-$$
-
-$$
-A\\left(\\frac{1}{8}-\\frac{1}{27}\\right)=19
-$$
-
-$$
-A\\cdot\\frac{19}{216}=19
-$$
-
-$$
-A=216
-$$
-
-The recovered law is
-
-$$
-W(k)=\\frac{216}{k^{\\frac{3}{2}}}
-$$
-
-For every $k>0$ the power in the denominator is positive and $A=216>0$, so
-
-$$
-W(k)>0
-$$
-
-A negative exponent sends the wait towards zero from above, never through zero, so the statement is False.`,
+The wait is $W(k)=\\frac{216}{k^{\\frac{3}{2}}}$. For every $k>0$ the power in the denominator is positive, so the wait stays positive. A negative exponent sends the wait towards zero from above, never through zero, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 20,
@@ -4362,15 +2272,7 @@ $$A=216, \\qquad W(k)=216k^{-\\frac{3}{2}} \\tag{1}$$
     tactical_explanations: [
       `**A.** → True
 
-Subscriptions follow $q(p)=A p^{-2}$ after $p>0$ euros, with the exponent already given. The recorded pair is $q(5)=400$. The claim is a second level, $q(10)=100$, so the coefficient $A$ must be recovered first.
-
-The general law is
-
-$$
-q(p)=A p^{-2}
-$$
-
-The five-euro observation pins $A$:
+The five-euro sale pins the coefficient. Substituting $q(5)=400$:
 
 $$
 A\\cdot 5^{-2}=400
@@ -4388,7 +2290,7 @@ $$
 A=10000
 $$
 
-The recovered law is $q(p)=10000 p^{-2}$. At ten euros:
+Demand is then $q(p)=10000 p^{-2}$. At ten euros:
 
 $$
 q(10)=10000\\cdot 10^{-2}
@@ -4406,49 +2308,13 @@ $$
 q(10)=100
 $$
 
-Ten euros is twice five, so the same figure is the scale $2^{-2}$ applied to $400$:
-
-$$
-\\frac{q(10)}{q(5)}=2^{-2}=\\frac{1}{4}
-$$
-
-$$
-q(10)=400\\cdot\\frac{1}{4}=100
-$$
-
 The claimed demand is $100$ subscriptions, so the statement is True.`,
       `**B.** → False
 
-Subscriptions follow $q(p)=A p^{-2}$, and revenue is the product $R=pq$. The recorded pair $q(5)=400$ recovers $A$ before that product can be simplified.
-
-$$
-A\\cdot 5^{-2}=400
-$$
-
-$$
-5^{-2}=\\frac{1}{25}
-$$
-
-$$
-A\\cdot\\frac{1}{25}=400
-$$
-
-$$
-A=10000
-$$
-
-Demand is then $q(p)=10000 p^{-2}$. Revenue multiplies price by quantity:
-
-$$
-R(p)=p\\cdot q(p)
-$$
+Demand is $q(p)=10000 p^{-2}$. Revenue multiplies price by quantity:
 
 $$
 R(p)=p\\cdot 10000 p^{-2}
-$$
-
-$$
-R(p)=10000 p^{1-2}
 $$
 
 $$
@@ -4459,44 +2325,10 @@ $$
 R(p)=\\frac{10000}{p}
 $$
 
-A schedule that is the same at every price would need exponent $0$. Here the exponent is $-1$, so
-
-$$
-\\frac{R(2p)}{R(p)}=2^{-1}=\\frac{1}{2}
-$$
-
-At the recorded price and at twice that price:
-
-$$
-R(5)=\\frac{10000}{5}=2000
-$$
-
-$$
-R(10)=\\frac{10000}{10}=1000
-$$
-
-Revenue falls as the price rises. It is not constant, so the statement is False.`,
+A schedule that is the same at every price would need exponent $0$. Here the leftover exponent is $-1$, so doubling the price halves revenue. Revenue falls as the price rises. It is not constant, so the statement is False.`,
       `**C.** → True
 
-Subscriptions follow $q(p)=A p^{-2}$ with $q(5)=400$. The claim is that the inverse price $p(q)$ is itself a power of quantity, so $A$ must be recovered and the law inverted.
-
-$$
-A\\cdot 5^{-2}=400
-$$
-
-$$
-5^{-2}=\\frac{1}{25}
-$$
-
-$$
-A\\cdot\\frac{1}{25}=400
-$$
-
-$$
-A=10000
-$$
-
-The recovered demand is $q=10000 p^{-2}$. Solving for $p$:
+Demand is $q=10000 p^{-2}$. Solving for price:
 
 $$
 q=\\frac{10000}{p^{2}}
@@ -4511,85 +2343,33 @@ p=\\left(\\frac{10000}{q}\\right)^{\\frac{1}{2}}
 $$
 
 $$
-p=\\frac{100}{q^{\\frac{1}{2}}}
+p=100 q^{-\\frac{1}{2}}
 $$
 
-$$
-p=100\\,q^{-\\frac{1}{2}}
-$$
-
-That is a power function of $q$ with exponent $-\\frac{1}{2}$, the reciprocal of the demand exponent $-2$. Price is a power of quantity, so the statement is True.`,
+That is a power of $q$ with exponent $-\\frac{1}{2}$, the reciprocal of the demand exponent $-2$. Price is a power of quantity, so the statement is True.`,
       `**D.** → False
 
-Subscriptions follow $q(p)=A p^{-2}$. Quadrupling the price is an input factor of $4$, and demand responds through the given exponent $-2$. The coefficient $A$ cancels in the ratio:
-
-$$
-\\frac{q(4p)}{q(p)}=\\frac{A(4p)^{-2}}{A p^{-2}}
-$$
+Quadrupling the price multiplies demand by $4$ to the given exponent $-2$:
 
 $$
 \\frac{q(4p)}{q(p)}=4^{-2}
 $$
 
 $$
-4^{-2}=(2^{2})^{-2}=2^{-4}
+4^{-2}=\\frac{1}{16}
 $$
 
-$$
-2^{-4}=\\frac{1}{16}
-$$
-
-Demand falls to one sixteenth of its previous value, not to one quarter. A cut to one quarter would need exponent $-1$, because $4^{-1}=\\frac{1}{4}$. The claimed factor is wrong, so the statement is False.`,
+Demand falls to one sixteenth, not to one quarter. A cut to one quarter would need exponent $-1$, because $4^{-1}=\\frac{1}{4}$. The claimed factor is wrong, so the statement is False.`,
       `**E.** → False
 
-Subscriptions follow $q(p)=A p^{-2}$ with $q(5)=400$. The claim is a third level, $q(20)=50$, so $A$ must be recovered first.
+Demand is $q(p)=10000 p^{-2}$. Twenty euros is four times the recorded price, so demand scales by $\\frac{1}{16}$:
 
 $$
-q(p)=A p^{-2}
-$$
-
-$$
-A\\cdot 5^{-2}=400
-$$
-
-$$
-5^{-2}=\\frac{1}{25}
-$$
-
-$$
-A\\cdot\\frac{1}{25}=400
-$$
-
-$$
-A=10000
-$$
-
-The recovered law is $q(p)=10000 p^{-2}$. At twenty euros:
-
-$$
-q(20)=10000\\cdot 20^{-2}
-$$
-
-$$
-20^{-2}=\\frac{1}{400}
-$$
-
-$$
-q(20)=\\frac{10000}{400}
+q(20)=400\\cdot\\frac{1}{16}
 $$
 
 $$
 q(20)=25
-$$
-
-Twenty euros is four times the recorded price, so demand also scales by $4^{-2}$:
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-q(20)=400\\cdot\\frac{1}{16}=25
 $$
 
 The claimed $50$ is what exponent $-1$ would give. The curve sells $25$ subscriptions, so the statement is False.`,
@@ -4636,33 +2416,17 @@ $$R(p)=10000 p^{-1} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-The bill is $C(n)=F+a n^{\\frac{1}{2}}$ for $n>0$ accounts, with both constants unknown. The recorded invoices are $C(100)=500$ and $C(400)=800$. The claim is the intercept $F=200$, so both constants must be recovered.
-
-The general law is
-
-$$
-C(n)=F+a n^{\\frac{1}{2}}
-$$
-
-Because $100^{\\frac{1}{2}}=10$ and $400^{\\frac{1}{2}}=20$, the two invoices become
-
-$$
-F+a\\cdot 100^{\\frac{1}{2}}=500
-$$
+The two invoices are the only way to unstick both unknowns. Because $100^{\\frac{1}{2}}=10$ and $400^{\\frac{1}{2}}=20$, they read:
 
 $$
 F+10a=500
 $$
 
 $$
-F+a\\cdot 400^{\\frac{1}{2}}=800
-$$
-
-$$
 F+20a=800
 $$
 
-Subtracting cancels the setup:
+Subtracting cancels the setup charge:
 
 $$
 (F+20a)-(F+10a)=800-500
@@ -4693,66 +2457,10 @@ $$
 The claimed fixed charge is $200$, so the statement is True.`,
       `**B.** → False
 
-The bill is $C(n)=F+a n^{\\frac{1}{2}}$ with $C(100)=500$ and $C(400)=800$. A power function of $n$ cannot carry a nonzero intercept, so $F$ must be recovered.
-
-$$
-F+10a=500
-$$
-
-$$
-F+20a=800
-$$
-
-$$
-10a=300
-$$
-
-$$
-a=30
-$$
-
-$$
-F+300=500
-$$
-
-$$
-F=200
-$$
-
-The recovered law is $C(n)=200+30 n^{\\frac{1}{2}}$. A pure power would have the form $A n^{r}$ with no added constant. Here $F=200\\neq 0$, so this is not a power of $n$, so the statement is False.`,
+The two invoices give $C(n)=200+30 n^{\\frac{1}{2}}$. A pure power of $n$ would have the form $A n^{r}$ with no added constant. The intercept is $200\\neq 0$: even with no accounts the firm still bills the engagement fee. That extra constant kills the power shape, so the statement is False.`,
       `**C.** → True
 
-The bill is $C(n)=F+a n^{\\frac{1}{2}}$ with $C(100)=500$ and $C(400)=800$. Nine hundred accounts is a third level, so both constants must be recovered first.
-
-$$
-C(n)=F+a n^{\\frac{1}{2}}
-$$
-
-$$
-F+10a=500
-$$
-
-$$
-F+20a=800
-$$
-
-$$
-10a=300
-$$
-
-$$
-a=30
-$$
-
-$$
-F+300=500
-$$
-
-$$
-F=200
-$$
-
-The recovered law is $C(n)=200+30 n^{\\frac{1}{2}}$. At nine hundred accounts:
+The bill is $C(n)=200+30 n^{\\frac{1}{2}}$. At nine hundred accounts:
 
 $$
 900^{\\frac{1}{2}}=30
@@ -4773,79 +2481,23 @@ $$
 The claimed bill is $1100$, so the statement is True.`,
       `**D.** → True
 
-The bill is $C(n)=F+a n^{\\frac{1}{2}}$ with $C(100)=500$ and $C(400)=800$. Cost per account is that bill divided by $n$, so both constants are needed.
-
-$$
-F+10a=500
-$$
-
-$$
-F+20a=800
-$$
-
-$$
-10a=300
-$$
-
-$$
-a=30
-$$
-
-$$
-F=200
-$$
-
-Cost per account is then
-
-$$
-\\frac{C(n)}{n}=\\frac{200+30 n^{\\frac{1}{2}}}{n}
-$$
+The bill is $C(n)=200+30 n^{\\frac{1}{2}}$. Cost per account splits into two pieces:
 
 $$
 \\frac{C(n)}{n}=\\frac{200}{n}+30 n^{-\\frac{1}{2}}
 $$
 
-Both terms fall as $n$ rises, so cost per account falls, so the statement is True.`,
+Both leftover exponents are negative, so each extra account dilutes the setup fee and also sits on a flatter square-root slope. Both terms fall as the book grows, so cost per account falls, so the statement is True.`,
       `**E.** → False
 
-The bill is $C(n)=F+a n^{\\frac{1}{2}}$ with $C(100)=500$ and $C(400)=800$. Doubling from $100$ to $200$ accounts is a new level of that law, not a scale of a pure power, so both constants must be recovered.
-
-$$
-C(n)=F+a n^{\\frac{1}{2}}
-$$
-
-$$
-F+10a=500
-$$
-
-$$
-F+20a=800
-$$
-
-$$
-10a=300
-$$
-
-$$
-a=30
-$$
-
-$$
-F=200
-$$
-
-The recovered law is $C(n)=200+30 n^{\\frac{1}{2}}$. At two hundred accounts:
+The bill is $C(n)=200+30 n^{\\frac{1}{2}}$. At two hundred accounts:
 
 $$
 C(200)=200+30\\cdot 200^{\\frac{1}{2}}
 $$
 
 $$
-200^{\\frac{1}{2}}=\\sqrt{100\\cdot 2}=10\\sqrt{2}
-$$
-
-$$
-C(200)=200+30\\cdot 10\\sqrt{2}
+200^{\\frac{1}{2}}=10\\sqrt{2}
 $$
 
 $$
@@ -4861,22 +2513,10 @@ $$
 $$
 
 $$
-C(200)\\approx 200+424=624
+C(200)\\approx 624
 $$
 
-A rise of more than $50\\%$ from the hundred-account bill would require
-
-$$
-1.5\\cdot 500=750
-$$
-
-The relative rise is
-
-$$
-\\frac{624-500}{500}=\\frac{124}{500}=0.248
-$$
-
-The new bill is about $624$, well below $750$. The rise is about $25\\%$, not more than $50\\%$, so the statement is False.`,
+A rise of more than $50\\%$ from the hundred-account bill would require $1.5\\cdot 500=750$. The new bill is about $624$, a rise of about $25\\%$, well below $750$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 22,
@@ -4918,68 +2558,6 @@ $$C(n)=200+30\\sqrt{n} \\tag{1}$$
     tactical_explanations: [
       `**A.** → True
 
-The fleet after $t>0$ years is $a(t)=4t^{\\frac{1}{2}}$ thousand vehicles, and intensity follows $e(a)=k a^{-\\frac{1}{2}}$. When the fleet has sixteen thousand vehicles, intensity is $30$ kilograms. Total emissions are $E=a\\,e(a)$. The claim is the composed level $E(16)=480$, so $k$ must be recovered first.
-
-At $a=16$,
-
-$$
-k\\cdot 16^{-\\frac{1}{2}}=30
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-16^{-\\frac{1}{2}}=\\frac{1}{4}
-$$
-
-$$
-\\frac{k}{4}=30
-$$
-
-$$
-k=120
-$$
-
-Intensity is then $e(a)=120 a^{-\\frac{1}{2}}$. Substituting the fleet law $a(t)=4t^{\\frac{1}{2}}$:
-
-$$
-E(t)=a(t)\\cdot e\\bigl(a(t)\\bigr)
-$$
-
-$$
-E(t)=4t^{\\frac{1}{2}}\\cdot 120\\bigl(4t^{\\frac{1}{2}}\\bigr)^{-\\frac{1}{2}}
-$$
-
-The inner power is
-
-$$
-\\bigl(4t^{\\frac{1}{2}}\\bigr)^{-\\frac{1}{2}}=4^{-\\frac{1}{2}}\\cdot t^{-\\frac{1}{4}}
-$$
-
-$$
-4^{-\\frac{1}{2}}=\\frac{1}{2}
-$$
-
-$$
-\\bigl(4t^{\\frac{1}{2}}\\bigr)^{-\\frac{1}{2}}=\\frac{1}{2}\\,t^{-\\frac{1}{4}}
-$$
-
-So
-
-$$
-E(t)=4t^{\\frac{1}{2}}\\cdot 120\\cdot\\frac{1}{2}\\,t^{-\\frac{1}{4}}
-$$
-
-$$
-E(t)=240\\,t^{\\frac{1}{2}-\\frac{1}{4}}
-$$
-
-$$
-E(t)=240 t^{\\frac{1}{4}}
-$$
-
 After sixteen years the fleet itself is
 
 $$
@@ -4991,33 +2569,27 @@ $$
 $$
 
 $$
-a(16)=4\\cdot 4=16
-$$
-
-That is the same fleet size as the intensity reading, so total emissions can also be read as the product $E=a\\,e(a)$:
-
-$$
-E(16)=16\\cdot 30=480
-$$
-
-The composed law agrees:
-
-$$
-E(16)=240\\cdot 16^{\\frac{1}{4}}
+a(16)=4\\cdot 4
 $$
 
 $$
-16^{\\frac{1}{4}}=2
+a(16)=16
+$$
+
+That is the same fleet size as the intensity reading of $30$ kilograms. Total emissions are the product $E=a\\,e(a)$:
+
+$$
+E(16)=16\\cdot 30
 $$
 
 $$
-E(16)=240\\cdot 2=480
+E(16)=480
 $$
 
 The claimed total is $480$, so the statement is True.`,
       `**B.** → False
 
-The fleet is $a(t)=4t^{\\frac{1}{2}}$ and intensity is $e(a)=k a^{-\\frac{1}{2}}$, with $e(16)=30$. Total emissions $E=a\\,e(a)$ inherit a time exponent from both stages, so $k$ must be recovered and the two stages composed.
+The intensity reading at sixteen thousand vehicles pins $k$:
 
 $$
 k\\cdot 16^{-\\frac{1}{2}}=30
@@ -5035,18 +2607,26 @@ $$
 k=120
 $$
 
-Then
+Intensity is $e(a)=120 a^{-\\frac{1}{2}}$. Substituting the fleet $a(t)=4t^{\\frac{1}{2}}$:
 
 $$
 E(t)=4t^{\\frac{1}{2}}\\cdot 120\\bigl(4t^{\\frac{1}{2}}\\bigr)^{-\\frac{1}{2}}
 $$
 
 $$
-\\bigl(4t^{\\frac{1}{2}}\\bigr)^{-\\frac{1}{2}}=4^{-\\frac{1}{2}}t^{-\\frac{1}{4}}=\\frac{1}{2}\\,t^{-\\frac{1}{4}}
+\\bigl(4t^{\\frac{1}{2}}\\bigr)^{-\\frac{1}{2}}=4^{-\\frac{1}{2}}\\cdot t^{-\\frac{1}{4}}
+$$
+
+$$
+4^{-\\frac{1}{2}}=\\frac{1}{2}
 $$
 
 $$
 E(t)=4t^{\\frac{1}{2}}\\cdot 120\\cdot\\frac{1}{2}\\,t^{-\\frac{1}{4}}
+$$
+
+$$
+E(t)=240 t^{\\frac{1}{2}-\\frac{1}{4}}
 $$
 
 $$
@@ -5056,35 +2636,7 @@ $$
 The composed exponent is $\\frac{1}{4}$, not $\\frac{1}{2}$. The $\\frac{1}{2}$ belongs to the fleet stage alone, so the statement is False.`,
       `**C.** → True
 
-The fleet is $a(t)=4t^{\\frac{1}{2}}$ and intensity is $e(a)=k a^{-\\frac{1}{2}}$, with $e(16)=30$. One year is a level of the composed emissions law $E=a\\,e(a)$, so $k$ must be recovered first.
-
-$$
-k\\cdot 16^{-\\frac{1}{2}}=30
-$$
-
-$$
-\\frac{k}{4}=30
-$$
-
-$$
-k=120
-$$
-
-Composing the stages:
-
-$$
-E(t)=4t^{\\frac{1}{2}}\\cdot 120\\bigl(4t^{\\frac{1}{2}}\\bigr)^{-\\frac{1}{2}}
-$$
-
-$$
-\\bigl(4t^{\\frac{1}{2}}\\bigr)^{-\\frac{1}{2}}=\\frac{1}{2}\\,t^{-\\frac{1}{4}}
-$$
-
-$$
-E(t)=240 t^{\\frac{1}{4}}
-$$
-
-After one year, $1^{\\frac{1}{4}}=1$:
+Composed emissions are $E(t)=240 t^{\\frac{1}{4}}$. After one year, $1^{\\frac{1}{4}}=1$:
 
 $$
 E(1)=240\\cdot 1
@@ -5097,45 +2649,7 @@ $$
 The claimed total is $240$, so the statement is True.`,
       `**D.** → False
 
-The fleet is $a(t)=4t^{\\frac{1}{2}}$ and intensity is $e(a)=k a^{-\\frac{1}{2}}$, with $e(16)=30$. Doubling elapsed time multiplies total emissions $E=a\\,e(a)$ by $2$ to the composed time exponent, so that exponent must be recovered.
-
-$$
-k\\cdot 16^{-\\frac{1}{2}}=30
-$$
-
-$$
-16^{-\\frac{1}{2}}=\\frac{1}{4}
-$$
-
-$$
-\\frac{k}{4}=30
-$$
-
-$$
-k=120
-$$
-
-$$
-E(t)=4t^{\\frac{1}{2}}\\cdot 120\\bigl(4t^{\\frac{1}{2}}\\bigr)^{-\\frac{1}{2}}
-$$
-
-$$
-\\bigl(4t^{\\frac{1}{2}}\\bigr)^{-\\frac{1}{2}}=\\frac{1}{2}\\,t^{-\\frac{1}{4}}
-$$
-
-$$
-E(t)=4t^{\\frac{1}{2}}\\cdot 120\\cdot\\frac{1}{2}\\,t^{-\\frac{1}{4}}
-$$
-
-$$
-E(t)=240 t^{\\frac{1}{4}}
-$$
-
-The scale factor is then
-
-$$
-\\frac{E(2t)}{E(t)}=\\frac{240(2t)^{\\frac{1}{4}}}{240 t^{\\frac{1}{4}}}
-$$
+Composed emissions are $E(t)=240 t^{\\frac{1}{4}}$. Doubling elapsed time multiplies the total by
 
 $$
 \\frac{E(2t)}{E(t)}=2^{\\frac{1}{4}}
@@ -5145,28 +2659,10 @@ $$
 2^{\\frac{1}{4}}\\approx 1.189
 $$
 
-The fourth root of two is not two. Emissions rise by about $19\\%$, not by $100\\%$, so the statement is False.`,
+The composed exponent $\\frac{1}{4}$ is far below one, so the clock cannot double emissions when it doubles. Emissions rise by about $19\\%$, not by $100\\%$, so the statement is False.`,
       `**E.** → False
 
-Intensity follows $e(a)=k a^{-\\frac{1}{2}}$, with the reading $e(16)=30$. The sign of the exponent decides whether intensity rises or falls as the fleet grows, once $k$ is known to be positive.
-
-$$
-k\\cdot 16^{-\\frac{1}{2}}=30
-$$
-
-$$
-16^{-\\frac{1}{2}}=\\frac{1}{4}
-$$
-
-$$
-\\frac{k}{4}=30
-$$
-
-$$
-k=120
-$$
-
-The recovered intensity is $e(a)=120 a^{-\\frac{1}{2}}$. The exponent $-\\frac{1}{2}$ is negative and the coefficient is positive, so intensity falls as $a$ grows. A rising intensity would need a positive exponent, so the statement is False.`,
+Intensity is $e(a)=120 a^{-\\frac{1}{2}}$. The exponent $-\\frac{1}{2}$ is negative: a larger fleet spreads the same technology thinner, so kilograms per thousand vehicles fall. A rising intensity would need a positive exponent, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 23,
@@ -5208,15 +2704,7 @@ $$k=120, \\qquad E(t)=240 t^{\\frac{1}{4}} \\tag{1}$$
     tactical_explanations: [
       `**A.** → True
 
-Flow capacity follows $Q(d)=A d^{\\frac{5}{2}}$ litres per second for diameter $d>0$ centimetres. The bench test is $Q(4)=64$. The claim is the coefficient $A=2$, so that constant must be recovered from the test.
-
-The general law is
-
-$$
-Q(d)=A d^{\\frac{5}{2}}
-$$
-
-The bench test substitutes as
+The bench test pins the coefficient. Substituting $Q(4)=64$:
 
 $$
 A\\cdot 4^{\\frac{5}{2}}=64
@@ -5249,40 +2737,10 @@ $$
 The claimed coefficient is $2$, so the statement is True.`,
       `**B.** → False
 
-Capacity follows $Q(d)=A d^{\\frac{5}{2}}$ with $Q(4)=64$. A capacity of $250$ litres per second is an inversion of that law, so $A$ must be recovered first.
-
-$$
-Q(d)=A d^{\\frac{5}{2}}
-$$
-
-$$
-A\\cdot 4^{\\frac{5}{2}}=64
-$$
-
-$$
-4^{\\frac{5}{2}}=32
-$$
-
-$$
-A\\cdot 32=64
-$$
-
-$$
-A=2
-$$
-
-The recovered law is $Q(d)=2d^{\\frac{5}{2}}$. Setting capacity equal to $250$:
-
-$$
-Q(d)=250
-$$
+Capacity is $Q(d)=2d^{\\frac{5}{2}}$. Setting capacity equal to $250$:
 
 $$
 2d^{\\frac{5}{2}}=250
-$$
-
-$$
-d^{\\frac{5}{2}}=\\frac{250}{2}
 $$
 
 $$
@@ -5314,73 +2772,33 @@ $$
 $$
 
 $$
-d\\approx 5\\cdot 1.38
-$$
-
-$$
 d\\approx 6.90
 $$
 
-The claim asks whether this diameter is above $10$ cm. It is about $6.90$ cm, which is below $10$ cm, so the statement is False.`,
+The required diameter is about $6.90$ cm, which is below $10$ cm, so the statement is False.`,
       `**C.** → True
 
-Capacity follows $Q(d)=A d^{\\frac{5}{2}}$. Doubling the diameter multiplies capacity by $2$ to the given exponent, and the coefficient $A$ cancels:
-
-$$
-\\frac{Q(2d)}{Q(d)}=\\frac{A(2d)^{\\frac{5}{2}}}{A d^{\\frac{5}{2}}}
-$$
+Doubling the diameter multiplies capacity by $2$ to the given exponent:
 
 $$
 \\frac{Q(2d)}{Q(d)}=2^{\\frac{5}{2}}
 $$
 
 $$
-2^{\\frac{5}{2}}=2^{2}\\cdot 2^{\\frac{1}{2}}=4\\sqrt{2}
-$$
-
-$$
-\\sqrt{2}\\approx 1.414
+2^{\\frac{5}{2}}=4\\sqrt{2}
 $$
 
 $$
 4\\sqrt{2}\\approx 5.66
 $$
 
-The factor is about $5.66$, which is more than $5$, so the statement is True.`,
+The factor is about $5.66$, which is more than $5$. The exponent $\\frac{5}{2}$ is well above one, so capacity outruns the diameter, so the statement is True.`,
       `**D.** → False
 
-Capacity follows $Q(d)=A d^{\\frac{5}{2}}$ with $Q(4)=64$, where $d$ is in centimetres. The claim is that rewriting the same law in millimetres leaves the coefficient unchanged, so $A$ must be recovered and the unit substitution carried out.
-
-$$
-Q(d)=A d^{\\frac{5}{2}}
-$$
-
-$$
-A\\cdot 4^{\\frac{5}{2}}=64
-$$
-
-$$
-4^{\\frac{5}{2}}=32
-$$
-
-$$
-A=2
-$$
-
-A millimetre is one tenth of a centimetre, so
-
-$$
-d=\\frac{d_{\\mathrm{mm}}}{10}
-$$
-
-Substitute into the recovered law $Q=2d^{\\frac{5}{2}}$:
+Capacity is $Q=2d^{\\frac{5}{2}}$ with $d$ in centimetres. A millimetre is one tenth of a centimetre, so $d=\\frac{d_{\\mathrm{mm}}}{10}$:
 
 $$
 Q=2\\left(\\frac{d_{\\mathrm{mm}}}{10}\\right)^{\\frac{5}{2}}
-$$
-
-$$
-Q=2\\cdot\\frac{d_{\\mathrm{mm}}^{\\frac{5}{2}}}{10^{\\frac{5}{2}}}
 $$
 
 $$
@@ -5388,53 +2806,23 @@ Q=2\\cdot 10^{-\\frac{5}{2}}d_{\\mathrm{mm}}^{\\frac{5}{2}}
 $$
 
 $$
-10^{\\frac{5}{2}}=10^{2}\\cdot 10^{\\frac{1}{2}}
+10^{\\frac{5}{2}}=10^{2}\\cdot\\sqrt{10}\\approx 316.2
 $$
 
 $$
-10^{2}=100
+2\\cdot 10^{-\\frac{5}{2}}\\approx 0.0063
 $$
 
-$$
-10^{\\frac{1}{2}}=\\sqrt{10}\\approx 3.162
-$$
-
-$$
-10^{\\frac{5}{2}}\\approx 100\\cdot 3.162=316.2
-$$
-
-$$
-2\\cdot 10^{-\\frac{5}{2}}\\approx\\frac{2}{316.2}\\approx 0.0063
-$$
-
-The millimetre-unit law is therefore about $0.0063\\,d_{\\mathrm{mm}}^{\\frac{5}{2}}$, whose coefficient is not $2$. Changing the unit changes the coefficient, so the statement is False.`,
+The millimetre-unit coefficient is about $0.0063$, not $2$. Changing the unit of $d$ changes the coefficient, so the statement is False.`,
       `**E.** → False
 
-Capacity follows $Q(d)=A d^{\\frac{5}{2}}$ with $Q(4)=64$. Capacity per centimetre of diameter lowers the exponent by one, so $A$ is needed to write the intensity.
-
-$$
-A\\cdot 4^{\\frac{5}{2}}=64
-$$
-
-$$
-4^{\\frac{5}{2}}=32
-$$
-
-$$
-A=2
-$$
-
-Then
-
-$$
-\\frac{Q(d)}{d}=\\frac{2d^{\\frac{5}{2}}}{d}
-$$
+Capacity is $Q(d)=2d^{\\frac{5}{2}}$. Capacity per centimetre of diameter lowers the exponent by one:
 
 $$
 \\frac{Q(d)}{d}=2d^{\\frac{3}{2}}
 $$
 
-The remaining exponent $\\frac{3}{2}$ is positive, so the intensity rises with diameter. It is not the same at every size, so the statement is False.`,
+The remaining exponent $\\frac{3}{2}$ is positive, so the intensity rises with diameter. A constant intensity would need leftover exponent $0$. It is not the same at every size, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 24,
@@ -5476,37 +2864,7 @@ $$Q(d)=2d^{\\frac{5}{2}} \\tag{1}$$
     tactical_explanations: [
       `**A.** → True
 
-The service radius follows $r(t)=A t^{\\frac{1}{2}}$ kilometres after $t>0$ hours, with $r(4)=6$. The covered area is the disc $S=\\pi r^{2}$. The claim is the four-hour area $S(4)=36\\pi$, so $A$ must be recovered first.
-
-The radius law is
-
-$$
-r(t)=A t^{\\frac{1}{2}}
-$$
-
-The four-hour record substitutes as
-
-$$
-A\\cdot 4^{\\frac{1}{2}}=6
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-A\\cdot 2=6
-$$
-
-$$
-A=3
-$$
-
-The recovered radius is $r(t)=3t^{\\frac{1}{2}}$, and after four hours the radius is the recorded $6$ kilometres. The disc formula is
-
-$$
-S=\\pi r^{2}
-$$
+After four hours the radius is the recorded six kilometres. The covered area is the disc $S=\\pi r^{2}$:
 
 $$
 S(4)=\\pi\\cdot 6^{2}
@@ -5520,24 +2878,10 @@ $$
 S(4)=36\\pi
 $$
 
-The composed law $S(t)=9\\pi t$ gives the same four-hour area:
-
-$$
-S(4)=9\\pi\\cdot 4
-$$
-
-$$
-S(4)=36\\pi
-$$
-
 The claimed area is $36\\pi$ square kilometres, so the statement is True.`,
       `**B.** → True
 
-The radius follows $r(t)=A t^{\\frac{1}{2}}$ with $r(4)=6$, and area is $S=\\pi r^{2}$. Proportionality to elapsed time is a claim about the composed law, so $A$ must be recovered and the square applied.
-
-$$
-r(t)=A t^{\\frac{1}{2}}
-$$
+The four-hour radius pins $A$:
 
 $$
 A\\cdot 4^{\\frac{1}{2}}=6
@@ -5555,172 +2899,48 @@ $$
 A=3
 $$
 
-Area composes the square with that radius:
-
-$$
-S(t)=\\pi\\bigl(r(t)\\bigr)^{2}
-$$
+The radius is $r(t)=3t^{\\frac{1}{2}}$. Area squares that radius:
 
 $$
 S(t)=\\pi\\bigl(3t^{\\frac{1}{2}}\\bigr)^{2}
 $$
 
 $$
-S(t)=\\pi\\cdot 9\\cdot\\bigl(t^{\\frac{1}{2}}\\bigr)^{2}
-$$
-
-$$
 S(t)=9\\pi t
 $$
 
-That is a constant times $t$. The four-hour radius is given as $6$, so the disc is
-
-$$
-S(4)=\\pi\\cdot 6^{2}=36\\pi
-$$
-
-$$
-\\frac{S(4)}{4}=\\frac{36\\pi}{4}=9\\pi
-$$
-
-Area is proportional to elapsed time, so the statement is True.`,
+That is a constant times elapsed time. The square undoes the square root, so area grows in lockstep with the clock. Area is proportional to elapsed time, so the statement is True.`,
       `**C.** → True
 
-The radius follows $r(t)=A t^{\\frac{1}{2}}$ with $r(4)=6$, and area is $S=\\pi r^{2}$. Doubling time multiplies area by $2$ to the composed time exponent, so that law must be recovered.
-
-$$
-A\\cdot 4^{\\frac{1}{2}}=6
-$$
-
-$$
-A\\cdot 2=6
-$$
-
-$$
-A=3
-$$
-
-$$
-S(t)=\\pi\\bigl(3t^{\\frac{1}{2}}\\bigr)^{2}
-$$
-
-$$
-S(t)=9\\pi t
-$$
-
-The scale factor is then
-
-$$
-\\frac{S(2t)}{S(t)}=\\frac{9\\pi(2t)}{9\\pi t}
-$$
+Covered area is $S(t)=9\\pi t$. Doubling elapsed time multiplies area by
 
 $$
 \\frac{S(2t)}{S(t)}=2
 $$
 
-The radius itself only grows by $\\sqrt{2}$:
-
-$$
-\\frac{r(2t)}{r(t)}=2^{\\frac{1}{2}}
-$$
-
-but the square turns that into a factor of $2$. Doubling time doubles area, so the statement is True.`,
+The radius itself only grows by $\\sqrt{2}$, but the disc squares that factor into $2$. Doubling time doubles area, so the statement is True.`,
       `**D.** → False
 
-The radius follows $r(t)=A t^{\\frac{1}{2}}$ with $r(4)=6$, and area is $S=\\pi r^{2}$. Nine hours is a level of the composed area, so $A$ must be recovered first.
+Covered area is $S(t)=9\\pi t$. After nine hours:
 
 $$
-A\\cdot 4^{\\frac{1}{2}}=6
-$$
-
-$$
-4^{\\frac{1}{2}}=2
+S(9)=9\\pi\\cdot 9
 $$
 
 $$
-A=3
+S(9)=81\\pi
 $$
 
-$$
-r(t)=3t^{\\frac{1}{2}}
-$$
-
-After nine hours the radius is
-
-$$
-r(9)=3\\cdot 9^{\\frac{1}{2}}
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-r(9)=9
-$$
-
-The disc is then
-
-$$
-S(9)=\\pi\\cdot 9^{2}=81\\pi
-$$
-
-The same figure comes from the composed law $S(t)=9\\pi t$:
-
-$$
-S(9)=9\\pi\\cdot 9=81\\pi
-$$
-
-The area $100\\pi$ would need
-
-$$
-9\\pi t=100\\pi
-$$
-
-$$
-t=\\frac{100}{9}\\approx 11.1
-$$
-
-Nine hours is too soon. The covered area is $81\\pi$, so the statement is False.`,
+The area $100\\pi$ would need $t=\\frac{100}{9}\\approx 11.1$ hours. Nine hours is too soon. The covered area is $81\\pi$, so the statement is False.`,
       `**E.** → True
 
-The radius follows $r(t)=A t^{\\frac{1}{2}}$ with $r(4)=6$, and area is $S=\\pi r^{2}$. The claim is that the inverse $t(S)$ is a power of area, so the composed law must be recovered and inverted.
-
-$$
-A\\cdot 4^{\\frac{1}{2}}=6
-$$
-
-$$
-A\\cdot 2=6
-$$
-
-$$
-A=3
-$$
-
-$$
-S(t)=\\pi\\bigl(3t^{\\frac{1}{2}}\\bigr)^{2}
-$$
-
-$$
-S(t)=9\\pi t
-$$
-
-Solving for time:
-
-$$
-9\\pi t=S
-$$
+Covered area is $S(t)=9\\pi t$. Solving for time:
 
 $$
 t=\\frac{S}{9\\pi}
 $$
 
-$$
-t=\\frac{1}{9\\pi}\\,S^{1}
-$$
-
-That is a power function of $S$ with exponent $1$. Time is a power function of area, so the statement is True.`,
+That is a constant times $S^{1}$, a power of area with exponent $1$. A linear law inverts to another linear law. Time is a power function of area, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 25,
@@ -5764,19 +2984,7 @@ $$S(t)=9\\pi t \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Plan A bills $C_A(u)=a u^{\\frac{1}{2}}$ with a cap of $400$, and a filed invoice shows $C_A(36)=240$. Plan B bills $5$ per ticket. The claim is that the two uncapped schedules meet at $64$ tickets, so $a$ must be recovered first.
-
-Plan A's uncapped law is
-
-$$
-C_A(u)=a u^{\\frac{1}{2}}
-$$
-
-Because $36^{\\frac{1}{2}}=6$, the invoice is
-
-$$
-a\\cdot 36^{\\frac{1}{2}}=240
-$$
+The filed invoice pins the square-root coefficient. Because $36^{\\frac{1}{2}}=6$:
 
 $$
 a\\cdot 6=240
@@ -5786,17 +2994,13 @@ $$
 a=40
 $$
 
-Uncapped Plan A is then $40 u^{\\frac{1}{2}}$, and Plan B is $C_B(u)=5u$. Setting the two schedules equal:
+Uncapped Plan A is then $40 u^{\\frac{1}{2}}$, and Plan B is $5u$. Setting the two schedules equal:
 
 $$
 40 u^{\\frac{1}{2}}=5u
 $$
 
 For $u>0$, divide both sides by $5 u^{\\frac{1}{2}}$:
-
-$$
-\\frac{40}{5}=u^{\\frac{1}{2}}
-$$
 
 $$
 8=u^{\\frac{1}{2}}
@@ -5806,44 +3010,10 @@ $$
 u=64
 $$
 
-Both bills at that volume are
-
-$$
-C_A(64)=40\\cdot 8=320
-$$
-
-$$
-C_B(64)=5\\cdot 64=320
-$$
-
-The cap is $400$, and
-
-$$
-320<400
-$$
-
-so the cap is still slack. They match at $64$ tickets, so the statement is True.`,
+Both bills at that volume are $40\\cdot 8=320$ and $5\\cdot 64=320$. The cap is $400$, and $320<400$, so the cap is still slack. They match at $64$ tickets, so the statement is True.`,
       `**B.** → True
 
-Plan A bills $C_A(u)=a u^{\\frac{1}{2}}$ with $C_A(36)=240$, and Plan B bills $5u$. Which plan is cheaper below the crossing is a comparison of the two recovered schedules.
-
-$$
-a\\cdot 36^{\\frac{1}{2}}=240
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-a=40
-$$
-
-Plan B is cheaper while $5u<40 u^{\\frac{1}{2}}$. For $u>0$,
-
-$$
-5 u^{\\frac{1}{2}}<40
-$$
+The two uncapped bills meet at $64$ tickets. Plan B is cheaper while $5u<40 u^{\\frac{1}{2}}$. For $u>0$:
 
 $$
 u^{\\frac{1}{2}}<8
@@ -5853,96 +3023,26 @@ $$
 u<64
 $$
 
-Below the crossing the linear bill is the smaller one, so Plan B is cheaper, so the statement is True.`,
+Below the crossing the linear bill starts at zero and has not yet caught the square root, so Plan B is the cheaper contract, so the statement is True.`,
       `**C.** → False
 
-Plan A bills $C_A(u)=a u^{\\frac{1}{2}}$ and never charges more than $400$, with $C_A(36)=240$. One hundred and forty-four tickets is a two-piece evaluation, so $a$ must be recovered and the cap checked.
-
-The uncapped law is
-
-$$
-C_A(u)=a u^{\\frac{1}{2}}
-$$
-
-$$
-a\\cdot 36^{\\frac{1}{2}}=240
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-a\\cdot 6=240
-$$
-
-$$
-a=40
-$$
-
-At $144$ tickets:
+Uncapped Plan A is $40 u^{\\frac{1}{2}}$, never charging more than $400$. At $144$ tickets:
 
 $$
 144^{\\frac{1}{2}}=12
 $$
 
-The uncapped square-root bill is
-
 $$
 40\\cdot 12=480
 $$
 
-The billed amount is the minimum of that figure and the cap:
-
-$$
-C_A(u)=\\min\\{40 u^{\\frac{1}{2}},\\,400\\}
-$$
-
-$$
-C_A(144)=\\min\\{480,400\\}
-$$
-
-Because $480>400$, the cap binds:
-
-$$
-C_A(144)=400
-$$
-
-The cap first binds where the uncapped bill hits $400$:
-
-$$
-40 u^{\\frac{1}{2}}=400
-$$
-
-$$
-u=100
-$$
-
-and $144>100$. Plan A bills $400$, not $480$, so the statement is False.`,
+The billed amount is $\\min\\{480,400\\}$. Because $480>400$, the cap binds and Plan A bills $400$, not $480$. The claimed $480$ is the uncapped square-root reading, so the statement is False.`,
       `**D.** → True
 
-Plan A bills $C_A(u)=a u^{\\frac{1}{2}}$ with a cap of $400$, and $C_A(36)=240$. The cap binds from the volume where the uncapped schedule first reaches $400$, so $a$ must be recovered.
-
-$$
-C_A(u)=a u^{\\frac{1}{2}}
-$$
-
-$$
-a\\cdot 6=240
-$$
-
-$$
-a=40
-$$
-
-The recorded invoice sits below the cap, because $240<400$. Set the uncapped bill equal to the cap:
+Uncapped Plan A is $40 u^{\\frac{1}{2}}$. The cap binds from the volume where that schedule first reaches $400$:
 
 $$
 40 u^{\\frac{1}{2}}=400
-$$
-
-$$
-u^{\\frac{1}{2}}=\\frac{400}{40}
 $$
 
 $$
@@ -5953,32 +3053,16 @@ $$
 u=100
 $$
 
-At that volume the uncapped bill is exactly $400$. The uncapped schedule $40 u^{\\frac{1}{2}}$ is strictly increasing: at $144$ tickets it would already read
-
-$$
-40\\cdot 12=480>400
-$$
-
-so every volume above $100$ tickets is trimmed to $400$. The cap does bind as ticket volume grows, so the statement is True.`,
+The square-root bill is strictly increasing, so every volume above $100$ tickets is trimmed to $400$. The cap does bind as ticket volume grows, so the statement is True.`,
       `**E.** → False
 
-Plan A bills $C_A(u)=a u^{\\frac{1}{2}}$ while the cap is slack, with $C_A(36)=240$. Cost per ticket is that bill divided by $u$, so $a$ is needed.
-
-$$
-a\\cdot 6=240
-$$
-
-$$
-a=40
-$$
-
-While the cap is slack,
+While the cap is slack, Plan A bills $40 u^{\\frac{1}{2}}$. Cost per ticket is
 
 $$
 \\frac{C_A(u)}{u}=40 u^{-\\frac{1}{2}}
 $$
 
-The remaining exponent is negative, so unit cost falls as $u$ rises. A constant unit cost would need exponent $1$ on the bill. Plan A's cost per ticket is not the same at every volume, so the statement is False.`,
+The leftover exponent is negative, so unit cost falls as volume rises. A constant unit cost would need exponent $1$ on the bill. Plan A's cost per ticket is not the same at every volume, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 26,
@@ -6022,7 +3106,7 @@ $$C_B(u)=5u \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Unit cost follows $c(N)=c_1 N^{-b}$ for $N>0$. Every doubling of cumulative output multiplies unit cost by $0.8$, and the first unit costs $1000$. Three successive doublings take the first unit to $N=8$, so the modelled cost is three factors of $0.8$.
+Three successive doublings take the first unit to $N=8$, so the modelled cost is three factors of $0.8$.
 
 $$
 c(1)=1000
@@ -6031,29 +3115,27 @@ $$
 After the first doubling, $N=2$:
 
 $$
-c(2)=1000\\cdot 0.8=800
+c(2)=1000\\cdot 0.8
+$$
+
+$$
+c(2)=800
 $$
 
 After the second doubling, $N=4$:
 
 $$
-c(4)=800\\cdot 0.8=640
+c(4)=800\\cdot 0.8
+$$
+
+$$
+c(4)=640
 $$
 
 After the third doubling, $N=8$:
 
 $$
-c(8)=640\\cdot 0.8=512
-$$
-
-The same figure is the compact product
-
-$$
-c(8)=1000\\cdot 0.8^{3}
-$$
-
-$$
-0.8^{3}=0.512
+c(8)=640\\cdot 0.8
 $$
 
 $$
@@ -6063,18 +3145,10 @@ $$
 The modelled unit cost is $512$, so the statement is True.`,
       `**B.** → False
 
-Unit cost follows $c(N)=c_1 N^{-b}$, and every doubling multiplies unit cost by $0.8$. The exponent is the log-ratio of that doubling rule, not the factor $0.8$ itself.
-
-The doubling identity is
+Every doubling multiplies unit cost by $0.8$, so the exponent is the log-ratio of that rule, not the factor $0.8$ itself:
 
 $$
-\\frac{c(2N)}{c(N)}=2^{-b}=0.8
-$$
-
-Take the natural log of both sides:
-
-$$
--b\\ln 2=\\ln 0.8
+2^{-b}=0.8
 $$
 
 $$
@@ -6082,80 +3156,16 @@ b=-\\frac{\\ln 0.8}{\\ln 2}
 $$
 
 $$
-\\ln 0.8\\approx -0.22314
+b\\approx 0.3219
 $$
 
-$$
-\\ln 2\\approx 0.69315
-$$
-
-$$
-b\\approx\\frac{0.22314}{0.69315}\\approx 0.3219
-$$
-
-The learning-curve exponent on $N$ is therefore
-
-$$
--b\\approx -0.322
-$$
-
-not $-0.8$. An exponent of $-0.8$ would require $2^{-0.8}\\approx 0.574$, a much steeper doubling cut than $0.8$. With the first-unit cost $1000$,
-
-$$
-c(N)=1000 N^{-0.3219}
-$$
-
-The claimed exponent is wrong, so the statement is False.`,
+The learning-curve exponent on $N$ is therefore about $-0.322$, not $-0.8$. An exponent of $-0.8$ would require $2^{-0.8}\\approx 0.574$, a much steeper doubling cut than $0.8$. The claimed exponent is wrong, so the statement is False.`,
       `**C.** → False
 
-Unit cost follows $c(N)=c_1 N^{-b}$ with doubling factor $0.8$ and $c(1)=1000$. Eight units are exactly three doublings of the first unit, so the modelled cost is three factors of $0.8$.
-
-$$
-8=2^{3}
-$$
-
-$$
-c(1)=1000
-$$
-
-$$
-c(2)=1000\\cdot 0.8=800
-$$
-
-$$
-c(4)=800\\cdot 0.8=640
-$$
-
-$$
-c(8)=640\\cdot 0.8=512
-$$
-
-The compact form agrees:
-
-$$
-c(8)=1000\\cdot 0.8^{3}
-$$
-
-$$
-0.8^{3}=0.512
-$$
-
-$$
-c(8)=512
-$$
-
-The claimed figure is $500$. The doubling sequence is $1000$, $800$, $640$, $512$, and $500$ is not on that list. The modelled unit cost is $512$, not $500$, so the statement is False.`,
+Three doublings already put the modelled unit cost at $512$. The claimed figure is $500$, which is not on the doubling sequence $1000$, $800$, $640$, $512$. The modelled unit cost is $512$, not $500$, so the statement is False.`,
       `**D.** → False
 
-Unit cost follows $c(N)=c_1 N^{-b}$, and every doubling multiplies unit cost by $0.8$. Quadrupling cumulative output is two doublings, hence two factors of $0.8$. The coefficient $c_1$ cancels:
-
-$$
-\\frac{c(4N)}{c(N)}=\\frac{c_1(4N)^{-b}}{c_1 N^{-b}}
-$$
-
-$$
-\\frac{c(4N)}{c(N)}=4^{-b}=(2^{2})^{-b}=(2^{-b})^{2}
-$$
+Quadrupling cumulative output is two doublings, hence two factors of $0.8$:
 
 $$
 \\frac{c(4N)}{c(N)}=0.8^{2}
@@ -6165,28 +3175,10 @@ $$
 0.8^{2}=0.64
 $$
 
-Unit cost falls to $64\\%$ of its previous value, a cut of $36\\%$, not a halving. A halving would need two factors whose product is $0.5$, so the statement is False.`,
+Unit cost falls to $64\\%$ of its previous value, not to one half. A halving would need two factors whose product is $0.5$, so the statement is False.`,
       `**E.** → False
 
-Unit cost follows $c(N)=c_1 N^{-b}$ with doubling factor $0.8$ and $c(1)=1000$. Materials alone cost $400$ per unit. After eight units the model has had three doublings:
-
-$$
-8=2^{3}
-$$
-
-$$
-c(8)=1000\\cdot 0.8^{3}
-$$
-
-$$
-0.8^{3}=0.512
-$$
-
-$$
-c(8)=512
-$$
-
-The materials floor is $400$, and $512>400$. The modelled cost still sits above the floor, so the floor has not yet bound, so the statement is False.`,
+After eight units the modelled cost is $512$. The materials floor is $400$, and $512>400$. The modelled cost still sits above the floor, so the floor has not yet bound, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 27,
@@ -6228,15 +3220,7 @@ $$c(N)=1000 N^{-0.3219} \\tag{1}$$
     tactical_explanations: [
       `**A.** → True
 
-Sales revenue follows $R(x)=A x^{\\frac{1}{2}}$ with $R(100)=900$, and the platform charges $F(x)=6x$. Net gain is $N(x)=R(x)-F(x)$. The claim is a root of $N$, so $A$ must be recovered and the two schedules set equal.
-
-The revenue law is
-
-$$
-R(x)=A x^{\\frac{1}{2}}
-$$
-
-Because $100^{\\frac{1}{2}}=10$, the recorded campaign is
+The recorded campaign pins the coefficient. Because $100^{\\frac{1}{2}}=10$:
 
 $$
 A\\cdot 10=900
@@ -6255,152 +3239,68 @@ $$
 For $x>0$, divide both sides by $6 x^{\\frac{1}{2}}$:
 
 $$
-\\frac{90}{6}=x^{\\frac{1}{2}}
-$$
-
-$$
 15=x^{\\frac{1}{2}}
-$$
-
-$$
-x=15^{2}
 $$
 
 $$
 x=225
 $$
 
-At that spend,
-
-$$
-R(225)=90\\cdot 15=1350
-$$
-
-$$
-F(225)=6\\cdot 225=1350
-$$
-
-$$
-N(225)=1350-1350=0
-$$
-
-Net gain is zero at a spend of $225$, so the statement is True.`,
+At that spend both schedules read $90\\cdot 15=1350$. Net gain is zero at a spend of $225$, so the statement is True.`,
       `**B.** → False
 
-Revenue follows $R(x)=A x^{\\frac{1}{2}}$ with $R(100)=900$, and the fee is $F(x)=6x$. Whether net gain stays positive past the crossing is a sign check on $N=R-F$, so $A$ must be recovered.
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=900
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-A=90
-$$
-
-The gap is
-
-$$
-N(x)=90 x^{\\frac{1}{2}}-6x
-$$
-
-Factor out $6 x^{\\frac{1}{2}}$:
+Net gain is $N(x)=90 x^{\\frac{1}{2}}-6x$. Factor out $6 x^{\\frac{1}{2}}$:
 
 $$
 N(x)=6 x^{\\frac{1}{2}}\\bigl(15-x^{\\frac{1}{2}}\\bigr)
 $$
 
-For $x>0$ the prefactor $6 x^{\\frac{1}{2}}$ is positive, so the sign of $N$ is the sign of $15-x^{\\frac{1}{2}}$. That factor is positive on $(0,225)$ and negative for $x>225$. Past the crossing the linear fee is the steeper schedule, so the net is negative, so the statement is False.`,
+For $x>0$ the prefactor is positive, so the sign of $N$ is the sign of $15-x^{\\frac{1}{2}}$. That factor is positive on $(0,225)$ and negative for $x>225$. Past the crossing the linear fee is the steeper schedule, so the net is negative, so the statement is False.`,
       `**C.** → True
 
-Revenue follows $R(x)=A x^{\\frac{1}{2}}$ with $R(100)=900$, and the fee is $F(x)=6x$. A spend of $100$ is the recorded revenue point, so $A$ is recovered to confirm that recorded level, and the fee is then subtracted.
+At a spend of $100$ the campaign brings in the recorded $900$. The platform fee at the same spend is
 
 $$
-R(x)=A x^{\\frac{1}{2}}
-$$
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=900
+F(100)=6\\cdot 100
 $$
 
 $$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-A\\cdot 10=900
-$$
-
-$$
-A=90
-$$
-
-The recovered revenue at the recorded spend is the given $900$:
-
-$$
-R(100)=90\\cdot 10=900
-$$
-
-The fee at the same spend is
-
-$$
-F(100)=6\\cdot 100=600
+F(100)=600
 $$
 
 Net gain is the difference:
 
 $$
-N(100)=R(100)-F(100)
+N(100)=900-600
 $$
 
 $$
-N(100)=900-600=300
+N(100)=300
 $$
 
 The claimed net is $300$, so the statement is True.`,
       `**D.** → False
 
-Revenue follows $R(x)=A x^{\\frac{1}{2}}$. Doubling the spend multiplies revenue by $2$ to the given exponent, and $A$ cancels:
+Doubling the spend multiplies revenue by $2$ to the given exponent $\\frac{1}{2}$:
 
 $$
-\\frac{R(2x)}{R(x)}=\\frac{A(2x)^{\\frac{1}{2}}}{A x^{\\frac{1}{2}}}
-$$
-
-$$
-\\frac{R(2x)}{R(x)}=2^{\\frac{1}{2}}=\\sqrt{2}
+\\frac{R(2x)}{R(x)}=2^{\\frac{1}{2}}
 $$
 
 $$
 \\sqrt{2}\\approx 1.414
 $$
 
-The factor is about $1.414$, not $2$. Doubling spend does not double revenue, so the statement is False.`,
+The exponent $\\frac{1}{2}$ is below one, so revenue cannot keep pace with the spend. The factor is about $1.414$, not $2$, so the statement is False.`,
       `**E.** → False
 
-Revenue follows $R(x)=A x^{\\frac{1}{2}}$ with $R(100)=900$. Revenue per euro of spend is that law divided by $x$, so $A$ is needed to write the intensity.
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=900
-$$
-
-$$
-A\\cdot 10=900
-$$
-
-$$
-A=90
-$$
-
-Then
+Revenue is $R(x)=90 x^{\\frac{1}{2}}$. Revenue per euro of spend lowers the exponent by one:
 
 $$
 \\frac{R(x)}{x}=90 x^{-\\frac{1}{2}}
 $$
 
-The remaining exponent is negative, so the return per euro falls as the spend rises. It does not rise, so the statement is False.`,
+The leftover exponent is negative: each extra euro of spend still adds sales, but less than the euro before it. The return per euro falls as the campaign grows. It does not rise, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 28,
@@ -6442,15 +3342,7 @@ $$N(x)=90\\sqrt{x}-6x \\tag{1}$$
     tactical_explanations: [
       `**A.** → True
 
-Labour $L>0$ hours yields material $m(L)=A L^{\\frac{1}{2}}$ tonnes. One hundred labour hours yielded forty tonnes. The claim is the coefficient $A=4$, so that constant must be recovered from the labour record.
-
-The material stage is
-
-$$
-m(L)=A L^{\\frac{1}{2}}
-$$
-
-The labour record substitutes as
+One hundred labour hours yielded forty tonnes, so that record pins the material coefficient:
 
 $$
 A\\cdot 100^{\\frac{1}{2}}=40
@@ -6468,32 +3360,10 @@ $$
 A=4
 $$
 
-Check against the labour record:
-
-$$
-m(100)=4\\cdot 10=40
-$$
-
 The recovered material stage is $m(L)=4L^{\\frac{1}{2}}$. The claimed law matches, so the statement is True.`,
       `**B.** → True
 
-Labour yields $m(L)=A L^{\\frac{1}{2}}$ with $m(100)=40$, and material is converted by $g(m)=B m^{\\frac{3}{2}}$ with $g(9)=54$. Finished output as a function of labour is the composition of the two stages, so both coefficients must be recovered.
-
-From the labour record:
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=40
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-A=4
-$$
-
-From the material record:
+The labour record gives $A=4$, so material is $m=4L^{\\frac{1}{2}}$. Nine tonnes of material produced fifty-four finished units, which pins $B$:
 
 $$
 B\\cdot 9^{\\frac{3}{2}}=54
@@ -6504,7 +3374,11 @@ $$
 $$
 
 $$
-9^{\\frac{3}{2}}=3^{3}=27
+9^{\\frac{3}{2}}=3^{3}
+$$
+
+$$
+3^{3}=27
 $$
 
 $$
@@ -6526,7 +3400,7 @@ $$
 $$
 
 $$
-4^{\\frac{3}{2}}=\\bigl(2^{2}\\bigr)^{\\frac{3}{2}}=2^{3}=8
+4^{\\frac{3}{2}}=8
 $$
 
 $$
@@ -6540,133 +3414,35 @@ $$
 Finished output is $16L^{\\frac{3}{4}}$, so the statement is True.`,
       `**C.** → False
 
-Labour yields $m(L)=A L^{\\frac{1}{2}}$ with $m(100)=40$, and conversion is $g(m)=B m^{\\frac{3}{2}}$ with $g(9)=54$. Doubling labour multiplies finished output by $2$ to the composed exponent, so both stages must be recovered and composed.
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=40
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-A=4
-$$
-
-$$
-B\\cdot 9^{\\frac{3}{2}}=54
-$$
-
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-B=2
-$$
-
-$$
-g=2\\bigl(4L^{\\frac{1}{2}}\\bigr)^{\\frac{3}{2}}
-$$
-
-$$
-\\bigl(4L^{\\frac{1}{2}}\\bigr)^{\\frac{3}{2}}=4^{\\frac{3}{2}}L^{\\frac{3}{4}}
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-g=16L^{\\frac{3}{4}}
-$$
-
-The scale factor is then
+Finished output is $g=16L^{\\frac{3}{4}}$. Doubling labour multiplies output by
 
 $$
 \\frac{g(2L)}{g(L)}=2^{\\frac{3}{4}}
 $$
 
 $$
-2^{\\frac{3}{4}}\\approx 1.682
+2^{\\frac{3}{4}}\\approx 1.68
 $$
 
-The factor is about $1.68$, not $2$, so the statement is False.`,
+The composed exponent $\\frac{3}{4}$ is below one, so doubling labour cannot double output. The factor is about $1.68$, not $2$, so the statement is False.`,
       `**D.** → True
 
-Labour yields $m(L)=A L^{\\frac{1}{2}}$ with $m(100)=40$, and conversion is $g(m)=B m^{\\frac{3}{2}}$ with $g(9)=54$. Output per labour hour lowers the composed exponent by one, so the composed law must be recovered first.
-
-$$
-A\\cdot 10=40
-$$
-
-$$
-A=4
-$$
-
-$$
-B\\cdot 27=54
-$$
-
-$$
-B=2
-$$
-
-$$
-g=2\\bigl(4L^{\\frac{1}{2}}\\bigr)^{\\frac{3}{2}}=16L^{\\frac{3}{4}}
-$$
-
-Then
-
-$$
-\\frac{g}{L}=16 L^{\\frac{3}{4}-1}
-$$
+Finished output is $g=16L^{\\frac{3}{4}}$. Output per labour hour is
 
 $$
 \\frac{g}{L}=16 L^{-\\frac{1}{4}}
 $$
 
-The remaining exponent is negative, so output per hour falls as labour rises, so the statement is True.`,
+The leftover exponent is negative: each extra hour still adds finished units, but fewer than the hour before it, so average product falls as the crew grows. Output per hour falls as labour rises, so the statement is True.`,
       `**E.** → True
 
-Labour yields $m(L)=A L^{\\frac{1}{2}}$ with $m(100)=40$, and conversion is $g(m)=B m^{\\frac{3}{2}}$ with $g(9)=54$. The claim is that the inverse labour of a given finished count is a power of that count, so the composed law must be recovered and inverted.
-
-$$
-A\\cdot 10=40
-$$
-
-$$
-A=4
-$$
-
-$$
-B\\cdot 27=54
-$$
-
-$$
-B=2
-$$
-
-$$
-g=2\\bigl(4L^{\\frac{1}{2}}\\bigr)^{\\frac{3}{2}}
-$$
-
-$$
-g=16L^{\\frac{3}{4}}
-$$
-
-Solving for labour:
-
-$$
-\\frac{g}{16}=L^{\\frac{3}{4}}
-$$
+Finished output is $g=16L^{\\frac{3}{4}}$. Solving for labour:
 
 $$
 L=\\left(\\frac{g}{16}\\right)^{\\frac{4}{3}}
 $$
 
-Labour is a power of the finished count, so the statement is True.`,
+A power with a nonzero exponent inverts to another power. Labour is a power of the finished count, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 29,
@@ -6708,15 +3484,7 @@ $$g=16L^{\\frac{3}{4}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Demand follows $q(p)=A p^{-\\frac{3}{2}}$ copies a month, with $q(4)=250$. Revenue is $R=pq$. The claim is the revenue level $R(25)=400$, so $A$ must be recovered and revenue formed.
-
-The demand law is
-
-$$
-q(p)=A p^{-\\frac{3}{2}}
-$$
-
-The recorded pair substitutes as
+The four-euro sale pins the coefficient. Substituting $q(4)=250$:
 
 $$
 A\\cdot 4^{-\\frac{3}{2}}=250
@@ -6727,7 +3495,7 @@ $$
 $$
 
 $$
-4^{\\frac{3}{2}}=2^{3}=8
+4^{\\frac{3}{2}}=8
 $$
 
 $$
@@ -6745,15 +3513,7 @@ $$
 Demand is $q(p)=2000 p^{-\\frac{3}{2}}$. Revenue multiplies price by quantity:
 
 $$
-R(p)=p\\cdot q(p)
-$$
-
-$$
 R(p)=p\\cdot 2000 p^{-\\frac{3}{2}}
-$$
-
-$$
-R(p)=2000 p^{1-\\frac{3}{2}}
 $$
 
 $$
@@ -6761,10 +3521,6 @@ R(p)=2000 p^{-\\frac{1}{2}}
 $$
 
 At a price of $25$, $25^{\\frac{1}{2}}=5$:
-
-$$
-R(25)=2000\\cdot 25^{-\\frac{1}{2}}
-$$
 
 $$
 R(25)=2000\\cdot\\frac{1}{5}
@@ -6777,91 +3533,19 @@ $$
 Monthly revenue is $400$, so the statement is True.`,
       `**B.** → True
 
-Demand follows $q(p)=A p^{-\\frac{3}{2}}$ with $q(4)=250$. Revenue $R=pq$ raises the demand exponent by one, so $A$ must be recovered before the revenue law can be named.
-
-$$
-q(p)=A p^{-\\frac{3}{2}}
-$$
-
-$$
-A\\cdot 4^{-\\frac{3}{2}}=250
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-A\\cdot\\frac{1}{8}=250
-$$
-
-$$
-A=2000
-$$
-
-Revenue multiplies price by quantity:
-
-$$
-R(p)=p\\cdot q(p)
-$$
-
-$$
-R(p)=p\\cdot 2000 p^{-\\frac{3}{2}}
-$$
-
-$$
-R(p)=2000 p^{1-\\frac{3}{2}}
-$$
+Revenue is $R(p)=2000 p^{-\\frac{1}{2}}$. That is a power of price with exponent $-\\frac{1}{2}$, one more than the demand exponent $-\\frac{3}{2}$:
 
 $$
 1-\\frac{3}{2}=-\\frac{1}{2}
 $$
 
-$$
-R(p)=2000 p^{-\\frac{1}{2}}
-$$
-
-That is a power of price with exponent $-\\frac{1}{2}$. At the recorded price the same law reads $R(4)=2000\\cdot 4^{-\\frac{1}{2}}=1000$, which matches $4\\cdot 250$. The claimed exponent is the revenue exponent, so the statement is True.`,
+The claimed exponent is the revenue exponent, so the statement is True.`,
       `**C.** → False
 
-Demand follows $q(p)=A p^{-\\frac{3}{2}}$ with $q(4)=250$. Revenue is $R=pq$, and a fixed charge of $400$ is covered while $R(p)\\ge 400$. Both $A$ and the revenue law are needed to invert that inequality.
-
-$$
-q(p)=A p^{-\\frac{3}{2}}
-$$
-
-$$
-A\\cdot 4^{-\\frac{3}{2}}=250
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-A=2000
-$$
-
-$$
-R(p)=p\\cdot 2000 p^{-\\frac{3}{2}}
-$$
-
-$$
-R(p)=2000 p^{-\\frac{1}{2}}
-$$
-
-The charge is covered while
+Revenue is $R(p)=2000 p^{-\\frac{1}{2}}$. The charge is covered while
 
 $$
 2000 p^{-\\frac{1}{2}}\\ge 400
-$$
-
-$$
-\\frac{2000}{\\sqrt{p}}\\ge 400
-$$
-
-$$
-\\frac{2000}{400}\\ge\\sqrt{p}
 $$
 
 $$
@@ -6872,67 +3556,33 @@ $$
 p\\le 25
 $$
 
-The threshold is $25$, not $16$. At the claimed cutoff of $16$:
+The threshold is $25$, not $16$. At the claimed cutoff, $16^{\\frac{1}{2}}=4$:
 
 $$
-R(16)=2000\\cdot 16^{-\\frac{1}{2}}
-$$
-
-$$
-16^{\\frac{1}{2}}=4
+R(16)=\\frac{2000}{4}
 $$
 
 $$
-R(16)=\\frac{2000}{4}=500
+R(16)=500
 $$
 
 and $500>400$, so the charge is still covered at $p=16$. The figure $16$ is what appears if the demand exponent is inverted instead of the revenue exponent. The charge is covered at prices up to $25$, so the statement is False.`,
       `**D.** → False
 
-Demand follows $q(p)=A p^{-\\frac{3}{2}}$, so revenue $R=pq$ has exponent $-\\frac{1}{2}$. Doubling the price multiplies revenue by $2$ to that revenue exponent, and $A$ cancels once revenue is formed.
-
-$$
-R(p)=A p^{1-\\frac{3}{2}}=A p^{-\\frac{1}{2}}
-$$
+Revenue is $R(p)=2000 p^{-\\frac{1}{2}}$. Doubling the price multiplies revenue by
 
 $$
 \\frac{R(2p)}{R(p)}=2^{-\\frac{1}{2}}
 $$
 
 $$
-2^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{2}}
+2^{-\\frac{1}{2}}\\approx 0.707
 $$
 
-$$
-\\frac{1}{\\sqrt{2}}\\approx 0.707
-$$
-
-Revenue falls to about $71\\%$ of its previous value, a cut of about $29\\%$, not a halving. A halving would need exponent $-1$, so the statement is False.`,
+Revenue falls to about $71\\%$ of its previous value, not to one half. A halving would need exponent $-1$, so the statement is False.`,
       `**E.** → True
 
-Demand follows $q(p)=A p^{-\\frac{3}{2}}$ with $q(4)=250$. Revenue $R=pq$ inherits the sign of its exponent from that demand law after $A$ is recovered.
-
-$$
-A\\cdot 4^{-\\frac{3}{2}}=250
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-A=2000
-$$
-
-$$
-R(p)=p\\cdot 2000 p^{-\\frac{3}{2}}
-$$
-
-$$
-R(p)=2000 p^{-\\frac{1}{2}}
-$$
-
-The exponent $-\\frac{1}{2}$ is negative and the coefficient is positive, so revenue falls as the price rises, so the statement is True.`,
+Revenue is $R(p)=2000 p^{-\\frac{1}{2}}$. The exponent $-\\frac{1}{2}$ is negative and the coefficient is positive, so each extra euro of price cuts quantity by more than enough to shrink the product $pq$. Revenue falls as the price rises, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 30,
@@ -6976,57 +3626,7 @@ $$R(p)=2000 p^{-\\frac{1}{2}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Packing follows $N(h)=A h^{\\frac{2}{3}}$ items after $h>0$ hours, with the coefficient unlogged. Extending a shift from $8$ to $27$ hours added $90$ items. An extra hour is the derivative of that law, so $A$ must be recovered first.
-
-The recorded gain is the difference of two outputs:
-
-$$
-N(27)-N(8)=90
-$$
-
-$$
-A\\cdot 27^{\\frac{2}{3}}-A\\cdot 8^{\\frac{2}{3}}=90
-$$
-
-Both shift lengths are perfect cubes:
-
-$$
-8^{\\frac{2}{3}}=(8^{\\frac{1}{3}})^{2}
-$$
-
-$$
-(8^{\\frac{1}{3}})^{2}=2^{2}
-$$
-
-$$
-2^{2}=4
-$$
-
-$$
-27^{\\frac{2}{3}}=(27^{\\frac{1}{3}})^{2}
-$$
-
-$$
-(27^{\\frac{1}{3}})^{2}=3^{2}
-$$
-
-$$
-3^{2}=9
-$$
-
-$$
-A(9-4)=90
-$$
-
-$$
-5A=90
-$$
-
-$$
-A=18
-$$
-
-The recovered law is $N(h)=18h^{\\frac{2}{3}}$. Differentiating brings the exponent down by one:
+The shift extension gives $A=18$, so $N(h)=18h^{\\frac{2}{3}}$. An extra hour is the slope. Differentiating brings the exponent down by one:
 
 $$
 N'(h)=18\\cdot\\frac{2}{3}h^{\\frac{2}{3}-1}
@@ -7036,7 +3636,7 @@ $$
 N'(h)=12h^{-\\frac{1}{3}}
 $$
 
-The remaining exponent is negative, so the slope falls as $h$ grows. After an $8$-hour shift:
+The leftover exponent is negative, so the slope falls as the shift lengthens. After eight hours:
 
 $$
 N'(8)=12\\cdot 8^{-\\frac{1}{3}}
@@ -7054,7 +3654,7 @@ $$
 12\\cdot\\frac{1}{2}=6
 $$
 
-After a $27$-hour shift:
+After twenty-seven hours:
 
 $$
 N'(27)=12\\cdot 27^{-\\frac{1}{3}}
@@ -7072,194 +3672,18 @@ $$
 12\\cdot\\frac{1}{3}=4
 $$
 
-Checking those two shifts against the recovered law:
-
-$$
-N(8)=18\\cdot 8^{\\frac{2}{3}}
-$$
-
-$$
-N(8)=18\\cdot 4
-$$
-
-$$
-N(8)=72
-$$
-
-$$
-N(27)=18\\cdot 9
-$$
-
-$$
-N(27)=162
-$$
-
-$$
-N(27)-N(8)=162-72
-$$
-
-$$
-N(27)-N(8)=90
-$$
-
-The logged gain is recovered correctly.
-
 An extra hour adds $6$ items after a short shift and only $4$ after a long one, so the statement is True.`,
       `**B.** → True
 
-A $27$-hour count is a level of $N(h)=A h^{\\frac{2}{3}}$, and $A$ is still missing. Extending a shift from $8$ to $27$ hours added $90$ items, which is a difference of two outputs.
-
-$$
-A\\cdot 27^{\\frac{2}{3}}-A\\cdot 8^{\\frac{2}{3}}=90
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-27^{\\frac{1}{3}}=3
-$$
-
-$$
-27^{\\frac{2}{3}}=3^{2}
-$$
-
-$$
-27^{\\frac{2}{3}}=9
-$$
-
-$$
-A(9-4)=90
-$$
-
-$$
-5A=90
-$$
-
-$$
-A=18
-$$
-
-The recovered law is $N(h)=18h^{\\frac{2}{3}}$. At twenty-seven hours:
+The packing law is $N(h)=18h^{\\frac{2}{3}}$. A twenty-seven hour count is
 
 $$
 N(27)=18\\cdot 27^{\\frac{2}{3}}
 $$
 
 $$
-N(27)=18\\cdot 9
-$$
-
-$$
-N(27)=162
-$$
-
-Checking those two shifts against the recovered law:
-
-$$
-N(8)=18\\cdot 8^{\\frac{2}{3}}
-$$
-
-$$
-N(8)=18\\cdot 4
-$$
-
-$$
-N(8)=72
-$$
-
-$$
-N(27)=18\\cdot 9
-$$
-
-$$
-N(27)=162
-$$
-
-$$
-N(27)-N(8)=162-72
-$$
-
-$$
-N(27)-N(8)=90
-$$
-
-The logged gain is recovered correctly.
-
-The claimed threshold is $150$ items, and $162>150$, so the statement is True.`,
-      `**C.** → False
-
-Packing follows $N(h)=A h^{\\frac{2}{3}}$ after $h>0$ hours. Doubling a shift multiplies output by a power of $2$, and the unknown coefficient cancels.
-
-$$
-\\frac{N(2h)}{N(h)}=\\frac{A(2h)^{\\frac{2}{3}}}{A h^{\\frac{2}{3}}}
-$$
-
-$$
-\\frac{N(2h)}{N(h)}=2^{\\frac{2}{3}}
-$$
-
-Twice the hours would twice the count only if that factor equalled $2$:
-
-$$
-2^{\\frac{2}{3}}\\approx 1.587
-$$
-
-$$
-1.587\\neq 2
-$$
-
-Because the exponent $\\frac{2}{3}$ is smaller than $1$, the factor is strictly less than $2$. Doubling multiplies packed items by about $1.59$, so the statement is False.`,
-      `**D.** → False
-
-Whether $250$ items fit in $27$ hours is a level of $N(h)=A h^{\\frac{2}{3}}$. Extending a shift from $8$ to $27$ hours added $90$ items, so $A$ is recovered from that gain.
-
-$$
-A\\cdot 27^{\\frac{2}{3}}-A\\cdot 8^{\\frac{2}{3}}=90
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-27^{\\frac{1}{3}}=3
-$$
-
-$$
-27^{\\frac{2}{3}}=3^{2}
-$$
-
-$$
 27^{\\frac{2}{3}}=9
 $$
-
-$$
-5A=90
-$$
-
-$$
-A=18
-$$
-
-The recovered law is $N(h)=18h^{\\frac{2}{3}}$. At twenty-seven hours:
 
 $$
 N(27)=18\\cdot 9
@@ -7270,10 +3694,26 @@ $$
 $$
 
 $$
-162<250
+162>150
 $$
 
-Inverting at the order size names the hours that would suffice:
+The claimed threshold is $150$ items, and $162$ clears it, so the statement is True.`,
+      `**C.** → False
+
+Doubling a shift would double packed items only if the exponent were $1$. With exponent $\\frac{2}{3}$ the scale factor is
+
+$$
+\\frac{N(2h)}{N(h)}=2^{\\frac{2}{3}}
+$$
+
+$$
+2^{\\frac{2}{3}}\\approx 1.587
+$$
+
+Two thirds is below one, so the factor is about $1.59$, not $2$. The count rises, but not in lockstep with the clock, so the statement is False.`,
+      `**D.** → False
+
+Twenty-seven hours pack $162$ items, which is already short of $250$. Inverting the law at the order size names the hours that would suffice:
 
 $$
 18h^{\\frac{2}{3}}=250
@@ -7292,99 +3732,13 @@ h=\\left(\\frac{125}{9}\\right)^{\\frac{3}{2}}
 $$
 
 $$
-h=\\frac{125^{\\frac{3}{2}}}{9^{\\frac{3}{2}}}
+h\\approx 51.8
 $$
-
-$$
-125^{\\frac{3}{2}}=125\\cdot\\sqrt{125}
-$$
-
-$$
-125\\cdot\\sqrt{125}=625\\sqrt{5}
-$$
-
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-h=\\frac{625\\sqrt{5}}{27}\\approx 51.8
-$$
-
-Checking those two shifts against the recovered law:
-
-$$
-N(8)=18\\cdot 8^{\\frac{2}{3}}
-$$
-
-$$
-N(8)=18\\cdot 4
-$$
-
-$$
-N(8)=72
-$$
-
-$$
-N(27)=18\\cdot 9
-$$
-
-$$
-N(27)=162
-$$
-
-$$
-N(27)-N(8)=162-72
-$$
-
-$$
-N(27)-N(8)=90
-$$
-
-The logged gain is recovered correctly.
 
 The order needs about $52$ hours, not $27$, so the statement is False.`,
       `**E.** → True
 
-Items packed per hour is the packing law divided by shift length. Packing follows $N(h)=A h^{\\frac{2}{3}}$, and extending a shift from $8$ to $27$ hours added $90$ items.
-
-$$
-A\\cdot 27^{\\frac{2}{3}}-A\\cdot 8^{\\frac{2}{3}}=90
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-27^{\\frac{1}{3}}=3
-$$
-
-$$
-27^{\\frac{2}{3}}=3^{2}
-$$
-
-$$
-27^{\\frac{2}{3}}=9
-$$
-
-$$
-5A=90
-$$
-
-$$
-A=18
-$$
-
-The recovered law is $N(h)=18h^{\\frac{2}{3}}$. Dividing by $h$ subtracts $1$ from the exponent:
+The packing law is $N(h)=18h^{\\frac{2}{3}}$. Items packed per hour divide by shift length, which subtracts $1$ from the exponent:
 
 $$
 \\frac{N(h)}{h}=18h^{\\frac{2}{3}-1}
@@ -7394,7 +3748,7 @@ $$
 \\frac{N(h)}{h}=18h^{-\\frac{1}{3}}
 $$
 
-That is $A h^{r}$ with coefficient $18$ and exponent $-\\frac{1}{3}$. The hourly rate is a power function of shift length, so the statement is True.`,
+That is still $A h^{r}$, now with exponent $-\\frac{1}{3}$. The hourly rate is a power of shift length, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 31,
@@ -7458,176 +3812,20 @@ $$\\frac{N(h)}{h}=18h^{-\\frac{1}{3}} \\qquad N'(h)=12h^{-\\frac{1}{3}}$$
     tactical_explanations: [
       `**A.** → True
 
-Drag follows $F(v)=A v^{r}$ newtons at airspeed $v>0$, with both constants unknown. The two runs are $F(4)=16$ and $F(16)=128$. Absorbed power is $P=F\\cdot v$, so its exponent is the drag exponent plus one once both constants of $F$ have been read.
-
-The ratio of the two forces cancels $A$:
+The two runs give $F(v)=2v^{\\frac{3}{2}}$. Absorbed power multiplies drag by speed, which adds one to the exponent:
 
 $$
-\\frac{F(16)}{F(4)}=\\frac{A\\cdot 16^{r}}{A\\cdot 4^{r}}
-$$
-
-$$
-\\frac{128}{16}=\\left(\\frac{16}{4}\\right)^{r}
-$$
-
-$$
-8=4^{r}
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-8=2^{3}
-$$
-
-$$
-(2^{2})^{r}=2^{3}
-$$
-
-$$
-2^{2r}=2^{3}
-$$
-
-$$
-2r=3
-$$
-
-$$
-r=\\frac{3}{2}
-$$
-
-The slower run then pins $A$:
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=16
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-(2^{2})^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-2^{3}=8
-$$
-
-$$
-A\\cdot 8=16
-$$
-
-$$
-A=2
-$$
-
-The recovered drag law is $F(v)=2v^{\\frac{3}{2}}$. Multiplying by speed adds one to the exponent:
-
-$$
-P(v)=F(v)\\cdot v
-$$
-
-$$
-F(v)\\cdot v=2v^{\\frac{3}{2}}\\cdot v
+P(v)=2v^{\\frac{3}{2}}\\cdot v
 $$
 
 $$
 P(v)=2v^{\\frac{5}{2}}
 $$
 
-Checking both wind-tunnel runs against the recovered drag:
-
-$$
-F(4)=2\\cdot 4^{\\frac{3}{2}}
-$$
-
-$$
-F(4)=2\\cdot 8
-$$
-
-$$
-F(4)=16
-$$
-
-$$
-F(16)=2\\cdot 16^{\\frac{3}{2}}
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}
-$$
-
-$$
-(2^{4})^{\\frac{3}{2}}=2^{6}
-$$
-
-$$
-2^{6}=64
-$$
-
-$$
-F(16)=2\\cdot 64
-$$
-
-$$
-F(16)=128
-$$
-
-Both logged forces sit on $F(v)=2v^{\\frac{3}{2}}$.
-
-That is $A v^{r}$ with coefficient $2$ and exponent $\\frac{5}{2}$. Absorbed power is a power function of airspeed, so the statement is True.`,
+That is $A v^{r}$ with coefficient $2$ and exponent $\\frac{5}{2}$. Power grows even faster than drag, but it is still a monomial in airspeed, so the statement is True.`,
       `**B.** → False
 
-The $250$ N rating is a force, so the speed behind it comes from inverting $F(v)=A v^{r}$. The runs $F(4)=16$ and $F(16)=128$ recover both constants.
-
-$$
-\\frac{F(16)}{F(4)}=4^{r}
-$$
-
-$$
-4^{r}=8
-$$
-
-$$
-(2^{2})^{r}=2^{3}
-$$
-
-$$
-2r=3
-$$
-
-$$
-r=\\frac{3}{2}
-$$
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=16
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-A=2
-$$
-
-The recovered law is $F(v)=2v^{\\frac{3}{2}}$. Set drag equal to the rating:
+The recovered drag is $F(v)=2v^{\\frac{3}{2}}$. The rating is a drag of $250$ N, so invert:
 
 $$
 2v^{\\frac{3}{2}}=250
@@ -7657,72 +3855,10 @@ $$
 5^{2}=25
 $$
 
-Checking both wind-tunnel runs against the recovered drag:
-
-$$
-F(4)=2\\cdot 4^{\\frac{3}{2}}
-$$
-
-$$
-F(4)=2\\cdot 8
-$$
-
-$$
-F(4)=16
-$$
-
-$$
-F(16)=2\\cdot 16^{\\frac{3}{2}}
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}
-$$
-
-$$
-(2^{4})^{\\frac{3}{2}}=2^{6}
-$$
-
-$$
-2^{6}=64
-$$
-
-$$
-F(16)=2\\cdot 64
-$$
-
-$$
-F(16)=128
-$$
-
-Both logged forces sit on $F(v)=2v^{\\frac{3}{2}}$.
-
 The claimed threshold is a speed above $30$ m/s, and $25$ is not above $30$. The rating is reached at $25$ m/s, so the statement is False.`,
       `**C.** → False
 
-A doubling ratio of drag uses the exponent of $F(v)=A v^{r}$ and cancels $A$. The runs $F(4)=16$ and $F(16)=128$ recover that exponent.
-
-$$
-\\frac{F(16)}{F(4)}=4^{r}
-$$
-
-$$
-4^{r}=8
-$$
-
-$$
-(2^{2})^{r}=2^{3}
-$$
-
-$$
-2r=3
-$$
-
-$$
-r=\\frac{3}{2}
-$$
-
-Doubling airspeed then multiplies drag by $2$ to that power:
+The force ratio already gave $r=\\frac{3}{2}$. Doubling airspeed multiplies drag by $2$ to that power:
 
 $$
 \\frac{F(2v)}{F(v)}=2^{\\frac{3}{2}}
@@ -7748,76 +3884,10 @@ $$
 2.828<3
 $$
 
-The factor is more than a doubling but less than a tripling. The logged runs agree: a fourfold speed rise multiplies drag by $8$, which is $(2^{\\frac{3}{2}})^{2}$ rather than $3^{2}=9$. Doubling airspeed multiplies drag by about $2.83$, so the statement is False.`,
+The factor is more than a doubling but less than a tripling. Doubling airspeed multiplies drag by about $2.83$, so the statement is False.`,
       `**D.** → True
 
-Absorbed power at a named speed is force times speed. Drag follows $F(v)=A v^{r}$, with runs $F(4)=16$ and $F(16)=128$, and $P=F\\cdot v$.
-
-$$
-\\frac{F(16)}{F(4)}=4^{r}
-$$
-
-$$
-4^{r}=8
-$$
-
-$$
-(2^{2})^{r}=2^{3}
-$$
-
-$$
-r=\\frac{3}{2}
-$$
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=16
-$$
-
-$$
-A=2
-$$
-
-The recovered drag is $F(v)=2v^{\\frac{3}{2}}$, so absorbed power is
-
-$$
-P(v)=2v^{\\frac{3}{2}}\\cdot v
-$$
-
-$$
-2v^{\\frac{3}{2}}\\cdot v=2v^{\\frac{5}{2}}
-$$
-
-At the faster logged speed:
-
-$$
-P(16)=2\\cdot 16^{\\frac{5}{2}}
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{5}{2}}=(2^{4})^{\\frac{5}{2}}
-$$
-
-$$
-(2^{4})^{\\frac{5}{2}}=2^{10}
-$$
-
-$$
-2^{10}=1024
-$$
-
-$$
-P(16)=2\\cdot 1024
-$$
-
-$$
-2\\cdot 1024=2048
-$$
-
-That is $2048$ watts, or $2.048$ kilowatts. Routing through the logged drag gives the same figure:
+Absorbed power is force times speed. At the faster logged run the force is already $128$ N:
 
 $$
 P(16)=128\\cdot 16
@@ -7827,80 +3897,10 @@ $$
 128\\cdot 16=2048
 $$
 
-Checking both wind-tunnel runs against the recovered drag:
-
-$$
-F(4)=2\\cdot 4^{\\frac{3}{2}}
-$$
-
-$$
-F(4)=2\\cdot 8
-$$
-
-$$
-F(4)=16
-$$
-
-$$
-F(16)=2\\cdot 16^{\\frac{3}{2}}
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}
-$$
-
-$$
-(2^{4})^{\\frac{3}{2}}=2^{6}
-$$
-
-$$
-2^{6}=64
-$$
-
-$$
-F(16)=2\\cdot 64
-$$
-
-$$
-F(16)=128
-$$
-
-Both logged forces sit on $F(v)=2v^{\\frac{3}{2}}$.
-
-The rig absorbs more than $2$ kW, so the statement is True.`,
+That is $2048$ watts, or $2.048$ kilowatts, which is more than $2$ kW, so the statement is True.`,
       `**E.** → True
 
-Inverting a power law is raising to the reciprocal exponent, which is again a power. Drag follows $F(v)=A v^{r}$, with runs $F(4)=16$ and $F(16)=128$.
-
-$$
-\\frac{F(16)}{F(4)}=4^{r}
-$$
-
-$$
-4^{r}=8
-$$
-
-$$
-(2^{2})^{r}=2^{3}
-$$
-
-$$
-2r=3
-$$
-
-$$
-r=\\frac{3}{2}
-$$
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=16
-$$
-
-$$
-A=2
-$$
-
-The recovered law is $F=2v^{\\frac{3}{2}}$. Solve for airspeed:
+The recovered law is $F=2v^{\\frac{3}{2}}$. A power with a nonzero exponent inverts to another power. Solving for airspeed:
 
 $$
 \\frac{F}{2}=v^{\\frac{3}{2}}
@@ -7914,7 +3914,7 @@ $$
 v=2^{-\\frac{2}{3}}F^{\\frac{2}{3}}
 $$
 
-That is $A F^{r}$ with coefficient $2^{-\\frac{2}{3}}$ and exponent $\\frac{2}{3}$. The airspeed that produces a given drag is a power function of that drag, so the statement is True.`,
+That is $A F^{r}$ with exponent $\\frac{2}{3}$. The airspeed that produces a given drag is a power of that drag, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 32,
@@ -7984,29 +3984,7 @@ $$P(16)=2048\\text{ W}=2.048\\text{ kW}$$
     tactical_explanations: [
       `**A.** → True
 
-Demand follows $q(p)=A p^{-\\frac{1}{2}}$ at price $p>0$, and a price of $16$ sells $300$ units. Revenue is $R=pq$, so its exponent is demand's exponent plus one after that observation has calibrated $A$.
-
-$$
-A\\cdot 16^{-\\frac{1}{2}}=300
-$$
-
-$$
-16=4^{2}
-$$
-
-$$
-16^{-\\frac{1}{2}}=\\frac{1}{4}
-$$
-
-$$
-\\frac{A}{4}=300
-$$
-
-$$
-A=1200
-$$
-
-The calibrated demand is $q(p)=1200p^{-\\frac{1}{2}}$. Revenue multiplies by price:
+The recorded pair gives $A=1200$, so demand is $q(p)=1200p^{-\\frac{1}{2}}$. Revenue multiplies by price, which raises the exponent by one:
 
 $$
 R(p)=p\\cdot 1200p^{-\\frac{1}{2}}
@@ -8016,14 +3994,10 @@ $$
 R(p)=1200p^{\\frac{1}{2}}
 $$
 
-The revenue exponent $\\frac{1}{2}$ is positive, so $R$ rises with $p$. Quantity falls when price rises, but not fast enough to offset the higher price. At the recorded price:
+The leftover exponent $\\frac{1}{2}$ is positive, so $R$ rises with $p$. Quantity falls when price rises, but not fast enough to offset the higher price. At the recorded price:
 
 $$
-R(16)=1200\\cdot 16^{\\frac{1}{2}}
-$$
-
-$$
-1200\\cdot 16^{\\frac{1}{2}}=1200\\cdot 4
+R(16)=1200\\cdot 4
 $$
 
 $$
@@ -8033,11 +4007,7 @@ $$
 At a higher price:
 
 $$
-R(25)=1200\\cdot 25^{\\frac{1}{2}}
-$$
-
-$$
-1200\\cdot 25^{\\frac{1}{2}}=1200\\cdot 5
+R(25)=1200\\cdot 5
 $$
 
 $$
@@ -8048,38 +4018,10 @@ $$
 6000>4800
 $$
 
-Checking the recorded price against the calibrated demand:
-
-$$
-q(16)=1200\\cdot 16^{-\\frac{1}{2}}
-$$
-
-$$
-16=4^{2}
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-16^{-\\frac{1}{2}}=\\frac{1}{4}
-$$
-
-$$
-q(16)=1200\\cdot\\frac{1}{4}
-$$
-
-$$
-q(16)=300
-$$
-
-The observation is recovered correctly.
-
 Revenue rises as the price rises, so the statement is True.`,
       `**B.** → False
 
-A finite rise of $44\\%$ acts through the exact power of the multiplier $1.44$ on $q(p)=A p^{-\\frac{1}{2}}$. The coefficient cancels.
+A finite $44\\%$ rise acts through the exact power of the multiplier $1.44$, and $A$ cancels:
 
 $$
 \\frac{q(1.44p)}{q(p)}=1.44^{-\\frac{1}{2}}
@@ -8103,28 +4045,10 @@ $$
 \\frac{1}{6}\\approx 16.7\\%
 $$
 
-From the recorded $300$ units that would be a drop of $50$ units, to $250$, not a $20\\%$ drop of $60$ units. Multiplying $44\\%$ by the elasticity $-\\frac{1}{2}$ would give $22\\%$, and rounding that toward $20\\%$ is no better. Quantity falls by about $16.7\\%$, not by $20\\%$, so the statement is False.`,
+Multiplying $44\\%$ by the elasticity $-\\frac{1}{2}$ would give $22\\%$, and rounding that toward $20\\%$ is no better. Quantity falls by about $16.7\\%$, not by $20\\%$, so the statement is False.`,
       `**C.** → False
 
-A target of $200$ units inverts the calibrated curve $q(p)=A p^{-\\frac{1}{2}}$. A price of $16$ sells $300$ units, which pins $A$.
-
-$$
-A\\cdot 16^{-\\frac{1}{2}}=300
-$$
-
-$$
-16=4^{2}
-$$
-
-$$
-16^{-\\frac{1}{2}}=\\frac{1}{4}
-$$
-
-$$
-A=1200
-$$
-
-The calibrated law is $q(p)=1200p^{-\\frac{1}{2}}$. Set quantity equal to $200$:
+The calibrated demand is $q(p)=1200p^{-\\frac{1}{2}}$. A target of $200$ units inverts the curve:
 
 $$
 200=1200\\cdot p^{-\\frac{1}{2}}
@@ -8146,101 +4070,19 @@ $$
 p=36
 $$
 
-Checking the recorded price against the calibrated demand:
-
-$$
-q(16)=1200\\cdot 16^{-\\frac{1}{2}}
-$$
-
-$$
-16=4^{2}
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-16^{-\\frac{1}{2}}=\\frac{1}{4}
-$$
-
-$$
-q(16)=1200\\cdot\\frac{1}{4}
-$$
-
-$$
-q(16)=300
-$$
-
-The observation is recovered correctly.
-
-Quantity has to fall by a third from the observed $300$, and squaring the inversion makes the required price move larger than that proportion, though it still lands short of $40$. The target arrives at a price of $36$, so the statement is False.`,
+Quantity has to fall by a third from the observed $300$, and squaring the inversion makes the price move larger than that proportion, though it still lands short of $40$. The target arrives at a price of $36$, so the statement is False.`,
       `**D.** → False
 
-Price-independent revenue is the case of a zero revenue exponent, which arises only when demand's exponent is exactly $-1$. Demand is $q(p)=A p^{-\\frac{1}{2}}$, and a price of $16$ sells $300$ units.
-
-$$
-A\\cdot 16^{-\\frac{1}{2}}=300
-$$
-
-$$
-A=1200
-$$
-
-Revenue is price times quantity:
-
-$$
-R(p)=p\\cdot 1200p^{-\\frac{1}{2}}
-$$
-
-$$
-p\\cdot 1200p^{-\\frac{1}{2}}=1200p^{\\frac{1}{2}}
-$$
+Demand's exponent is $-\\frac{1}{2}$, so revenue is $R(p)=1200p^{\\frac{1}{2}}$. Price-independent revenue would need a zero revenue exponent, which arises only when demand's exponent is exactly $-1$.
 
 $$
 \\frac{1}{2}\\neq 0
 $$
 
-Two prices confirm the dependence:
-
-$$
-R(16)=1200\\cdot 4
-$$
-
-$$
-1200\\cdot 4=4800
-$$
-
-$$
-R(64)=1200\\cdot 8
-$$
-
-$$
-1200\\cdot 8=9600
-$$
-
-Revenue not only depends on price but moves in the same direction as it, doubling with each quadrupling of price, so the statement is False.`,
+Two prices confirm the dependence: $R(16)=4800$ and $R(64)=9600$. Revenue not only depends on price but moves in the same direction as it, so the statement is False.`,
       `**E.** → True
 
-A named price of $25$ is a level of $q(p)=A p^{-\\frac{1}{2}}$. A price of $16$ sells $300$ units, which pins $A$.
-
-$$
-A\\cdot 16^{-\\frac{1}{2}}=300
-$$
-
-$$
-16=4^{2}
-$$
-
-$$
-16^{-\\frac{1}{2}}=\\frac{1}{4}
-$$
-
-$$
-A=1200
-$$
-
-The calibrated law is $q(p)=1200p^{-\\frac{1}{2}}$. At price $25$:
+The calibrated demand is $q(p)=1200p^{-\\frac{1}{2}}$. At price $25$:
 
 $$
 q(25)=1200\\cdot 25^{-\\frac{1}{2}}
@@ -8261,34 +4103,6 @@ $$
 $$
 240<250
 $$
-
-Checking the recorded price against the calibrated demand:
-
-$$
-q(16)=1200\\cdot 16^{-\\frac{1}{2}}
-$$
-
-$$
-16=4^{2}
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-16^{-\\frac{1}{2}}=\\frac{1}{4}
-$$
-
-$$
-q(16)=1200\\cdot\\frac{1}{4}
-$$
-
-$$
-q(16)=300
-$$
-
-The observation is recovered correctly.
 
 The utility sells $240$ units, which is fewer than $250$, so the statement is True.`,
     ],
@@ -8354,37 +4168,7 @@ $$R(16)=4800 \\qquad R(25)=6000 \\qquad R(64)=9600$$
     tactical_explanations: [
       `**A.** → False
 
-Doubling output is an inverse-scale question: the feed multiplier is $2$ raised to the reciprocal of the exponent. Kiln output follows $y(x)=A x^{\\frac{4}{3}}$, and a test firing at a feed of $27$ produced $324$ tonnes.
-
-$$
-A\\cdot 27^{\\frac{4}{3}}=324
-$$
-
-$$
-27^{\\frac{4}{3}}=(27^{\\frac{1}{3}})^{4}
-$$
-
-$$
-(27^{\\frac{1}{3}})^{4}=3^{4}
-$$
-
-$$
-3^{4}=81
-$$
-
-$$
-81A=324
-$$
-
-$$
-A=4
-$$
-
-The recovered law is $y(x)=4x^{\\frac{4}{3}}$. Doubling the test-firing output of $324$ means a target of $648$:
-
-$$
-\\frac{y(x)}{y(27)}=2
-$$
+Doubling output is an inverse-scale question: the feed multiplier is $2$ raised to the reciprocal of the given exponent $\\frac{4}{3}$.
 
 $$
 \\left(\\frac{x}{27}\\right)^{\\frac{4}{3}}=2
@@ -8398,72 +4182,10 @@ $$
 2^{\\frac{3}{4}}\\approx 1.682
 $$
 
-$$
-x=27\\cdot 2^{\\frac{3}{4}}
-$$
-
-$$
-x\\approx 27\\cdot 1.682
-$$
-
-$$
-x\\approx 45.4
-$$
-
-Checking the test firing against the recovered law:
-
-$$
-27^{\\frac{1}{3}}=3
-$$
-
-$$
-27^{\\frac{4}{3}}=3^{4}
-$$
-
-$$
-3^{4}=81
-$$
-
-$$
-y(27)=4\\cdot 27^{\\frac{4}{3}}
-$$
-
-$$
-y(27)=4\\cdot 81
-$$
-
-$$
-y(27)=324
-$$
-
-The recorded firing sits on $y(x)=4x^{\\frac{4}{3}}$.
-
-A doubled feed would be $54$. Because the exponent $\\frac{4}{3}$ exceeds $1$, output grows faster than feed, so doubling output takes less than a doubling of feed. The required feed is about $45.4$, not more than $54$, so the statement is False.`,
+A doubled feed would be the factor $2$. Because the exponent $\\frac{4}{3}$ exceeds $1$, output grows faster than feed, so doubling output takes less than a doubling of feed. The required factor is about $1.68$, not more than $2$, so the statement is False.`,
       `**B.** → True
 
-The licence caps output at $1024$ tonnes, so the feed behind it comes from inverting $y(x)=A x^{\\frac{4}{3}}$. A test firing at a feed of $27$ produced $324$ tonnes.
-
-$$
-A\\cdot 27^{\\frac{4}{3}}=324
-$$
-
-$$
-27^{\\frac{1}{3}}=3
-$$
-
-$$
-27^{\\frac{4}{3}}=3^{4}
-$$
-
-$$
-27^{\\frac{4}{3}}=81
-$$
-
-$$
-A=4
-$$
-
-The recovered law is $y(x)=4x^{\\frac{4}{3}}$. Set output equal to the ceiling:
+The test firing gives $A=4$, so $y(x)=4x^{\\frac{4}{3}}$. Set output equal to the ceiling:
 
 $$
 4x^{\\frac{4}{3}}=1024
@@ -8493,127 +4215,11 @@ $$
 4^{3}=64
 $$
 
-Substitution confirms the ceiling:
-
-$$
-y(64)=4\\cdot 64^{\\frac{4}{3}}
-$$
-
-$$
-64^{\\frac{4}{3}}=(4^{3})^{\\frac{4}{3}}
-$$
-
-$$
-(4^{3})^{\\frac{4}{3}}=4^{4}
-$$
-
-$$
-4^{4}=256
-$$
-
-$$
-y(64)=4\\cdot 256
-$$
-
-$$
-4\\cdot 256=1024
-$$
-
-Checking the test firing against the recovered law:
-
-$$
-27^{\\frac{1}{3}}=3
-$$
-
-$$
-27^{\\frac{4}{3}}=3^{4}
-$$
-
-$$
-3^{4}=81
-$$
-
-$$
-y(27)=4\\cdot 27^{\\frac{4}{3}}
-$$
-
-$$
-y(27)=4\\cdot 81
-$$
-
-$$
-y(27)=324
-$$
-
-The recorded firing sits on $y(x)=4x^{\\frac{4}{3}}$.
-
 The licensed ceiling is reached at a feed of $64$, so the statement is True.`,
       `**C.** → True
 
-Shipped output is the uncapped firing cut off at the licence. Kiln output follows $y(x)=A x^{\\frac{4}{3}}$, a test firing at feed $27$ produced $324$ tonnes, and the licence forbids shipping more than $1024$ tonnes.
-
-$$
-A\\cdot 27^{\\frac{4}{3}}=324
-$$
-
-$$
-27^{\\frac{1}{3}}=3
-$$
-
-$$
-27^{\\frac{4}{3}}=3^{4}
-$$
-
-$$
-27^{\\frac{4}{3}}=81
-$$
-
-$$
-A=4
-$$
-
-The uncapped law is $y(x)=4x^{\\frac{4}{3}}$. The feed at which the licence binds is
-
-$$
-4x^{\\frac{4}{3}}=1024
-$$
-
-$$
-x^{\\frac{4}{3}}=256
-$$
-
-$$
-x=256^{\\frac{3}{4}}
-$$
-
-$$
-256^{\\frac{3}{4}}=64
-$$
-
-Shipped output is therefore $\\min(4x^{\\frac{4}{3}},1024)$. For $x\\le 64$ that coincides with the power $4x^{\\frac{4}{3}}$. For $x>64$ shipped output is the constant $1024$, and a constant on an interval of feeds is not a power of $x$ with a single exponent. Past the licence the graph is a horizontal cap rather than $A x^{r}$, so the statement is True.`,
+The licence binds at feed $64$. Shipped output is $\\min(4x^{\\frac{4}{3}},1024)$. For $x\\le 64$ that coincides with the power $4x^{\\frac{4}{3}}$. For $x>64$ shipped output is the constant $1024$, and a constant on an interval of feeds is not a power of $x$ with a single exponent. Past the licence the graph is a horizontal cap rather than $A x^{r}$, so the statement is True.`,
       `**D.** → False
-
-A feed of $8$ is a perfect cube, so $y(x)=A x^{\\frac{4}{3}}$ stays exact. A test firing at a feed of $27$ produced $324$ tonnes, which pins $A$.
-
-$$
-A\\cdot 27^{\\frac{4}{3}}=324
-$$
-
-$$
-27^{\\frac{1}{3}}=3
-$$
-
-$$
-27^{\\frac{4}{3}}=3^{4}
-$$
-
-$$
-27^{\\frac{4}{3}}=81
-$$
-
-$$
-A=4
-$$
 
 The recovered law is $y(x)=4x^{\\frac{4}{3}}$. At a feed of $8$:
 
@@ -8637,78 +4243,10 @@ $$
 4\\cdot 16=64
 $$
 
-Scaling from the test firing agrees, since $8$ and $27$ are both cubes:
-
-$$
-\\frac{8}{27}=\\left(\\frac{2}{3}\\right)^{3}
-$$
-
-$$
-y(8)=324\\cdot\\left(\\frac{2}{3}\\right)^{4}
-$$
-
-$$
-324\\cdot\\left(\\frac{2}{3}\\right)^{4}=324\\cdot\\frac{16}{81}
-$$
-
-$$
-324\\cdot\\frac{16}{81}=64
-$$
-
-Checking the test firing against the recovered law:
-
-$$
-27^{\\frac{1}{3}}=3
-$$
-
-$$
-27^{\\frac{4}{3}}=3^{4}
-$$
-
-$$
-3^{4}=81
-$$
-
-$$
-y(27)=4\\cdot 27^{\\frac{4}{3}}
-$$
-
-$$
-y(27)=4\\cdot 81
-$$
-
-$$
-y(27)=324
-$$
-
-The recorded firing sits on $y(x)=4x^{\\frac{4}{3}}$.
-
 The claimed $32$ is what reading the exponent as $1$ would give. The kiln produces $64$ tonnes, so the statement is False.`,
       `**E.** → True
 
-Output per cubic metre is the firing law divided by the feed, which subtracts $1$ from the exponent. Kiln output follows $y(x)=A x^{\\frac{4}{3}}$, and a test firing at feed $27$ produced $324$ tonnes.
-
-$$
-A\\cdot 27^{\\frac{4}{3}}=324
-$$
-
-$$
-27^{\\frac{1}{3}}=3
-$$
-
-$$
-27^{\\frac{4}{3}}=3^{4}
-$$
-
-$$
-27^{\\frac{4}{3}}=81
-$$
-
-$$
-A=4
-$$
-
-The recovered law is $y(x)=4x^{\\frac{4}{3}}$. Dividing by $x$:
+The recovered law is $y(x)=4x^{\\frac{4}{3}}$. Output per cubic metre divides by the feed, which subtracts $1$ from the exponent:
 
 $$
 \\frac{y(x)}{x}=4x^{\\frac{4}{3}-1}
@@ -8718,33 +4256,7 @@ $$
 \\frac{y(x)}{x}=4x^{\\frac{1}{3}}
 $$
 
-The remaining exponent is positive, so the average product rises with feed. At the recorded cubes:
-
-$$
-\\frac{y(8)}{8}=4\\cdot 2
-$$
-
-$$
-4\\cdot 2=8
-$$
-
-$$
-\\frac{y(27)}{27}=4\\cdot 3
-$$
-
-$$
-4\\cdot 3=12
-$$
-
-$$
-\\frac{y(64)}{64}=4\\cdot 4
-$$
-
-$$
-4\\cdot 4=16
-$$
-
-Fuel efficiency improves with scale, so the statement is True.`,
+The leftover exponent is positive, so the average product rises with feed. Fuel efficiency improves with scale, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 34,
@@ -8808,33 +4320,7 @@ Past $x=64$, shipped output is the constant $1024$ rather than a power of $x$.
     tactical_explanations: [
       `**A.** → True
 
-Reporting after calibration is the composition $g(f(x))$. Calibration is $f(x)=A x^{\\frac{2}{3}}$, a raw reading of $8$ produced index $36$, and reporting is $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$.
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=36
-$$
-
-$$
-8^{\\frac{2}{3}}=(8^{\\frac{1}{3}})^{2}
-$$
-
-$$
-(8^{\\frac{1}{3}})^{2}=2^{2}
-$$
-
-$$
-2^{2}=4
-$$
-
-$$
-4A=36
-$$
-
-$$
-A=9
-$$
-
-The recovered calibration is $f(x)=9x^{\\frac{2}{3}}$. Compose reporting after it:
+The recorded pair gives $A=9$, so calibration is $f(x)=9x^{\\frac{2}{3}}$. Reporting after it is the composition $g(f(x))$:
 
 $$
 g(f(x))=\\frac{1}{27}\\bigl(9x^{\\frac{2}{3}}\\bigr)^{\\frac{3}{2}}
@@ -8851,6 +4337,8 @@ $$
 $$
 x^{\\frac{2}{3}\\cdot\\frac{3}{2}}=x^{1}
 $$
+
+The exponents multiply to $1$, so the powers cancel to the identity in $x$. The coefficients cancel the same way:
 
 $$
 9^{\\frac{3}{2}}=(9^{\\frac{1}{2}})^{3}
@@ -8872,139 +4360,19 @@ $$
 \\frac{1}{27}\\cdot 27\\cdot x=x
 $$
 
-Checking the recorded pair against the recovered calibration:
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-f(8)=9\\cdot 8^{\\frac{2}{3}}
-$$
-
-$$
-f(8)=9\\cdot 4
-$$
-
-$$
-f(8)=36
-$$
-
-The recorded index is recovered correctly.
-
 The two stages cancel. Reporting after calibration returns the original reading, so the statement is True.`,
       `**B.** → True
 
-A composition of two powers is a power whose exponent is the product of the two exponents. Calibration is $f(x)=A x^{\\frac{2}{3}}$, a raw reading of $8$ produced index $36$, and reporting is $g(y)=\\frac{1}{27}y^{\\frac{3}{2}}$.
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=36
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-A=9
-$$
-
-The recovered maps are $f(x)=9x^{\\frac{2}{3}}$ and $g(y)=\\frac{1}{27}y^{\\frac{3}{2}}$. The product of the exponents is
+The composition $g\\circ f$ is already $x^{1}$. The product of the two exponents is
 
 $$
 \\frac{2}{3}\\cdot\\frac{3}{2}=1
 $$
 
-The coefficients multiply after the outer exponent hits the inner coefficient:
-
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-\\frac{1}{27}\\cdot 27=1
-$$
-
-So the composition is
-
-$$
-g(f(x))=1\\cdot x^{1}
-$$
-
-$$
-1\\cdot x^{1}=x
-$$
-
-Checking the recorded pair against the recovered calibration:
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-f(8)=9\\cdot 8^{\\frac{2}{3}}
-$$
-
-$$
-f(8)=9\\cdot 4
-$$
-
-$$
-f(8)=36
-$$
-
-The recorded index is recovered correctly.
-
-That is a power function with exponent $1$, so the statement is True.`,
+and the coefficients cancel to $1$. That is a power function with exponent $1$, so the statement is True.`,
       `**C.** → True
 
-A named raw reading of $125$ is a level of the recovered calibration, then a level of reporting. Calibration is $f(x)=A x^{\\frac{2}{3}}$, a raw reading of $8$ produced index $36$, and reporting is $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$.
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=36
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-A=9
-$$
-
-The recovered calibration is $f(x)=9x^{\\frac{2}{3}}$. At raw reading $125$:
+Calibration is $f(x)=9x^{\\frac{2}{3}}$. At raw reading $125$:
 
 $$
 f(125)=9\\cdot 125^{\\frac{2}{3}}
@@ -9056,60 +4424,10 @@ $$
 \\frac{3375}{27}=125
 $$
 
-Checking the recorded pair against the recovered calibration:
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-f(8)=9\\cdot 8^{\\frac{2}{3}}
-$$
-
-$$
-f(8)=9\\cdot 4
-$$
-
-$$
-f(8)=36
-$$
-
-The recorded index is recovered correctly.
-
 The two stages produce index $225$ and then return raw reading $125$, so the statement is True.`,
       `**D.** → False
 
-The other order is $f(g(y))$, the same two powers composed the opposite way. Calibration is $f(x)=A x^{\\frac{2}{3}}$, a raw reading of $8$ produced index $36$, and reporting is $g(y)=\\frac{y^{\\frac{3}{2}}}{27}$.
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=36
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-A=9
-$$
-
-The recovered calibration is $f(x)=9x^{\\frac{2}{3}}$. Compose it after reporting:
+The same maps give $f(g(y))$ as well. Compose calibration after reporting:
 
 $$
 f(g(y))=9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}}
@@ -9147,58 +4465,8 @@ $$
 9\\cdot\\frac{y}{9}=y
 $$
 
-Checking the recorded pair against the recovered calibration:
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-f(8)=9\\cdot 8^{\\frac{2}{3}}
-$$
-
-$$
-f(8)=9\\cdot 4
-$$
-
-$$
-f(8)=36
-$$
-
-The recorded index is recovered correctly.
-
 Each map is the two-sided inverse of the other on $y>0$. Applying reporting first and calibration second returns the original index, so the statement is False.`,
       `**E.** → False
-
-The index at a named raw reading of $64$ is a level of $f(x)=A x^{\\frac{2}{3}}$. A raw reading of $8$ produced index $36$, which pins $A$.
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=36
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-A=9
-$$
 
 The recovered calibration is $f(x)=9x^{\\frac{2}{3}}$. At raw reading $64$:
 
@@ -9225,34 +4493,6 @@ $$
 $$
 9\\cdot 16=144
 $$
-
-Checking the recorded pair against the recovered calibration:
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-f(8)=9\\cdot 8^{\\frac{2}{3}}
-$$
-
-$$
-f(8)=9\\cdot 4
-$$
-
-$$
-f(8)=36
-$$
-
-The recorded index is recovered correctly.
 
 The claimed $108$ is $9\\cdot 12$, as though $64^{\\frac{2}{3}}$ were $12$ rather than $16$. The index sent out is $144$, so the statement is False.`,
     ],
@@ -9314,57 +4554,7 @@ $$f(125)=225 \\qquad g(225)=125 \\qquad f(64)=144 \\qquad g(144)=64$$
     tactical_explanations: [
       `**A.** → True
 
-A tie at load $8$ is a level of both recovered laws. Algorithm S obeys $S(x)=a x^{\\frac{1}{2}}$, with $S(4)=16$. Algorithm T is proportional to $x^{\\frac{3}{2}}$, with $T(4)=8$.
-
-For S, the benchmark pins $a$:
-
-$$
-a\\cdot 4^{\\frac{1}{2}}=16
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-2a=16
-$$
-
-$$
-a=8
-$$
-
-So $S(x)=8x^{\\frac{1}{2}}$. For T, write $T(x)=k x^{\\frac{3}{2}}$:
-
-$$
-k\\cdot 4^{\\frac{3}{2}}=8
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-(2^{2})^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-2^{3}=8
-$$
-
-$$
-8k=8
-$$
-
-$$
-k=1
-$$
-
-So $T(x)=x^{\\frac{3}{2}}$. At load $8$:
+The shared benchmark gives $S(x)=8x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. At load $8$:
 
 $$
 S(8)=8\\cdot 8^{\\frac{1}{2}}
@@ -9378,78 +4568,8 @@ $$
 T(8)=8^{\\frac{3}{2}}
 $$
 
-Checking the shared benchmark against both recovered laws:
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-S(4)=8\\cdot 4^{\\frac{1}{2}}
-$$
-
-$$
-S(4)=8\\cdot 2
-$$
-
-$$
-S(4)=16
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-T(4)=8
-$$
-
-Both scores match the logged benchmark.
-
 The two scores agree at load $8$, so the statement is True.`,
       `**B.** → False
-
-The number of ties is the number of positive roots of $S(x)=T(x)$. Algorithm S obeys $S(x)=a x^{\\frac{1}{2}}$ with $S(4)=16$, and T is $T(x)=k x^{\\frac{3}{2}}$ with $T(4)=8$.
-
-$$
-a\\cdot 4^{\\frac{1}{2}}=16
-$$
-
-$$
-a=8
-$$
-
-$$
-k\\cdot 4^{\\frac{3}{2}}=8
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-k=1
-$$
 
 The recovered laws are $S(x)=8x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. Set them equal on $x>0$:
 
@@ -9469,64 +4589,10 @@ $$
 x=8
 $$
 
-Checking the shared benchmark against both recovered laws:
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-S(4)=8\\cdot 4^{\\frac{1}{2}}
-$$
-
-$$
-S(4)=8\\cdot 2
-$$
-
-$$
-S(4)=16
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-T(4)=8
-$$
-
-Both scores match the logged benchmark.
-
 Dividing by $x^{\\frac{1}{2}}$ is legal and loses no solution, since $x=0$ is outside the domain. On $x>0$ that is a single root. Two different positive loads would require two roots, so the statement is False.`,
       `**C.** → True
 
-Which algorithm leads past the crossing is the sign of $T-S$, read most cleanly from the ratio of the two recovered laws. Algorithm S obeys $S(x)=a x^{\\frac{1}{2}}$ with $S(4)=16$, and T is $T(x)=k x^{\\frac{3}{2}}$ with $T(4)=8$.
-
-$$
-a\\cdot 4^{\\frac{1}{2}}=16
-$$
-
-$$
-a=8
-$$
-
-$$
-k\\cdot 4^{\\frac{3}{2}}=8
-$$
-
-$$
-k=1
-$$
-
-The recovered laws are $S(x)=8x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. Their ratio is
+Those laws give the ratio
 
 $$
 \\frac{T(x)}{S(x)}=\\frac{x^{\\frac{3}{2}}}{8x^{\\frac{1}{2}}}
@@ -9536,52 +4602,8 @@ $$
 \\frac{T(x)}{S(x)}=\\frac{x}{8}
 $$
 
-That ratio exceeds $1$ precisely when $x>8$, and it keeps growing, so $T$ stays ahead on the whole ray $x>8$. A load just above the crossing confirms:
-
-$$
-S(9)=8\\cdot 9^{\\frac{1}{2}}
-$$
-
-$$
-8\\cdot 9^{\\frac{1}{2}}=8\\cdot 3
-$$
-
-$$
-8\\cdot 3=24
-$$
-
-$$
-T(9)=9^{\\frac{3}{2}}
-$$
-
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-27>24
-$$
-
-Once T is ahead, S cannot catch it, so the statement is True.`,
+That ratio exceeds $1$ precisely when $x>8$, and it keeps growing, so $T$ stays ahead on the whole ray $x>8$. Once T is ahead, S cannot catch it, so the statement is True.`,
       `**D.** → True
-
-A named lead at load $16$ is the difference of the two recovered scores. Algorithm S obeys $S(x)=a x^{\\frac{1}{2}}$ with $S(4)=16$, and T is $T(x)=k x^{\\frac{3}{2}}$ with $T(4)=8$.
-
-$$
-a\\cdot 4^{\\frac{1}{2}}=16
-$$
-
-$$
-a=8
-$$
-
-$$
-k\\cdot 4^{\\frac{3}{2}}=8
-$$
-
-$$
-k=1
-$$
 
 The recovered laws are $S(x)=8x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. At load $16$:
 
@@ -9625,97 +4647,21 @@ $$
 32>30
 $$
 
-Checking the shared benchmark against both recovered laws:
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-S(4)=8\\cdot 4^{\\frac{1}{2}}
-$$
-
-$$
-S(4)=8\\cdot 2
-$$
-
-$$
-S(4)=16
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-T(4)=8
-$$
-
-Both scores match the logged benchmark.
-
-The ratio route agrees: $T/S=16/8=2$, so T is double S and the gap is $S$ itself. Algorithm T is ahead by $32$, so the statement is True.`,
+Algorithm T is ahead by $32$, so the statement is True.`,
       `**E.** → False
 
-A constant score ratio is what two power laws produce only when they share an exponent. Algorithm S obeys $S(x)=a x^{\\frac{1}{2}}$ with $S(4)=16$, and T is $T(x)=k x^{\\frac{3}{2}}$ with $T(4)=8$.
+The score ratio is $\\frac{T(x)}{S(x)}=\\frac{x}{8}$. That quantity is not the same at every load:
 
 $$
-a\\cdot 4^{\\frac{1}{2}}=16
-$$
-
-$$
-a=8
+\\frac{T(4)}{S(4)}=\\frac{1}{2}
 $$
 
 $$
-k\\cdot 4^{\\frac{3}{2}}=8
+\\frac{T(8)}{S(8)}=1
 $$
 
 $$
-k=1
-$$
-
-The recovered laws are $S(x)=8x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. Their ratio is
-
-$$
-\\frac{T(x)}{S(x)}=\\frac{x^{\\frac{3}{2}}}{8x^{\\frac{1}{2}}}
-$$
-
-$$
-\\frac{x^{\\frac{3}{2}}}{8x^{\\frac{1}{2}}}=\\frac{x}{8}
-$$
-
-That quantity is not the same at every load:
-
-$$
-\\frac{T(4)}{S(4)}=\\frac{4}{8}
-$$
-
-$$
-\\frac{4}{8}=\\frac{1}{2}
-$$
-
-$$
-\\frac{T(8)}{S(8)}=\\frac{8}{8}
-$$
-
-$$
-\\frac{8}{8}=1
-$$
-
-$$
-\\frac{T(16)}{S(16)}=\\frac{16}{8}
-$$
-
-$$
-\\frac{16}{8}=2
+\\frac{T(16)}{S(16)}=2
 $$
 
 The exponents $\\frac{1}{2}$ and $\\frac{3}{2}$ differ, so the ratio grows with load. The ratio is not constant, so the statement is False.`,
@@ -9782,108 +4728,10 @@ $$S(8)=T(8)=8^{\\frac{3}{2}} \\qquad S(16)=32 \\qquad T(16)=64$$
     tactical_explanations: [
       `**A.** → True
 
-Whether $C(m)$ rises is the sign of its exponent. Sustained capacity follows $C(m)=A m^{\\frac{4}{5}}$, and a fleet of $32$ machines sustains $80$ requests per second.
-
-$$
-A\\cdot 32^{\\frac{4}{5}}=80
-$$
-
-$$
-32=2^{5}
-$$
-
-$$
-32^{\\frac{4}{5}}=(2^{5})^{\\frac{4}{5}}
-$$
-
-$$
-(2^{5})^{\\frac{4}{5}}=2^{4}
-$$
-
-$$
-2^{4}=16
-$$
-
-$$
-16A=80
-$$
-
-$$
-A=5
-$$
-
-The recovered law is $C(m)=5m^{\\frac{4}{5}}$. The exponent $\\frac{4}{5}$ is positive, so $C$ is strictly increasing on $m>0$ even though it grows more slowly than the fleet. Two exact fleets confirm the rise:
-
-$$
-C(32)=5\\cdot 16
-$$
-
-$$
-5\\cdot 16=80
-$$
-
-$$
-C(243)=5\\cdot 243^{\\frac{4}{5}}
-$$
-
-$$
-243=3^{5}
-$$
-
-$$
-243^{\\frac{4}{5}}=(3^{5})^{\\frac{4}{5}}
-$$
-
-$$
-(3^{5})^{\\frac{4}{5}}=3^{4}
-$$
-
-$$
-3^{4}=81
-$$
-
-$$
-C(243)=5\\cdot 81
-$$
-
-$$
-5\\cdot 81=405
-$$
-
-$$
-405>80
-$$
-
-The contract may refuse to certify values above $500$, but the sustained-capacity law itself keeps rising. Sustained capacity increases with the fleet, so the statement is True.`,
+Whether $C(m)$ rises is the sign of its exponent. The exponent $\\frac{4}{5}$ is positive, so $C$ is strictly increasing on $m>0$ even though it grows more slowly than the fleet. The contract may refuse to certify values above $500$, but the sustained-capacity law itself keeps rising. Sustained capacity increases with the fleet, so the statement is True.`,
       `**B.** → False
 
-The fleet at which the ceiling binds is the inverse of $C(m)=A m^{\\frac{4}{5}}$, not a proportional scaling from $80$ up to $500$. A fleet of $32$ machines sustains $80$ requests per second.
-
-$$
-A\\cdot 32^{\\frac{4}{5}}=80
-$$
-
-$$
-32=2^{5}
-$$
-
-$$
-32^{\\frac{4}{5}}=(2^{5})^{\\frac{4}{5}}
-$$
-
-$$
-32^{\\frac{4}{5}}=2^{4}
-$$
-
-$$
-32^{\\frac{4}{5}}=16
-$$
-
-$$
-A=5
-$$
-
-The recovered law is $C(m)=5m^{\\frac{4}{5}}$. Set capacity equal to the contract:
+The $32$-machine run gives $A=5$, so $C(m)=5m^{\\frac{4}{5}}$. Set capacity equal to the contract:
 
 $$
 5m^{\\frac{4}{5}}=500
@@ -9910,7 +4758,11 @@ $$
 $$
 
 $$
-10^{\\frac{5}{2}}=100\\sqrt{10}\\approx 316.2
+10^{\\frac{5}{2}}=100\\sqrt{10}
+$$
+
+$$
+100\\sqrt{10}\\approx 316.2
 $$
 
 At the claimed $250$ machines the law is still below the ceiling:
@@ -9923,110 +4775,10 @@ $$
 414<500
 $$
 
-Checking the recorded fleet against the recovered law:
-
-$$
-32=2^{5}
-$$
-
-$$
-32^{\\frac{4}{5}}=(2^{5})^{\\frac{4}{5}}
-$$
-
-$$
-32^{\\frac{4}{5}}=2^{4}
-$$
-
-$$
-32^{\\frac{4}{5}}=16
-$$
-
-$$
-C(32)=5\\cdot 16
-$$
-
-$$
-C(32)=80
-$$
-
-The $32$-machine reading sits on $C(m)=5m^{\\frac{4}{5}}$.
-
-Linear scaling $32\\cdot 500/80=200$ is worse still. The ceiling binds near $316$ machines, so the statement is False.`,
+The ceiling binds near $316$ machines, not $250$, so the statement is False.`,
       `**C.** → False
 
-An exponent below $1$ slows growth, it does not stop it. Sustained capacity follows $C(m)=A m^{\\frac{4}{5}}$, and a fleet of $32$ machines sustains $80$ requests per second.
-
-$$
-A\\cdot 32^{\\frac{4}{5}}=80
-$$
-
-$$
-32=2^{5}
-$$
-
-$$
-32^{\\frac{4}{5}}=(2^{5})^{\\frac{4}{5}}
-$$
-
-$$
-32^{\\frac{4}{5}}=2^{4}
-$$
-
-$$
-32^{\\frac{4}{5}}=16
-$$
-
-$$
-A=5
-$$
-
-The recovered law is $C(m)=5m^{\\frac{4}{5}}$. The ceiling equation has a positive solution:
-
-$$
-5m^{\\frac{4}{5}}=500
-$$
-
-$$
-m^{\\frac{4}{5}}=100
-$$
-
-$$
-m=100^{\\frac{5}{4}}
-$$
-
-$$
-100^{\\frac{5}{4}}=100\\sqrt{10}\\approx 316
-$$
-
-Two exact fleets sit on either side of that crossing:
-
-$$
-C(243)=5\\cdot 243^{\\frac{4}{5}}
-$$
-
-$$
-243=3^{5}
-$$
-
-$$
-243^{\\frac{4}{5}}=(3^{5})^{\\frac{4}{5}}
-$$
-
-$$
-(3^{5})^{\\frac{4}{5}}=3^{4}
-$$
-
-$$
-3^{4}=81
-$$
-
-$$
-C(243)=5\\cdot 81
-$$
-
-$$
-5\\cdot 81=405
-$$
+An exponent below $1$ slows growth, it does not stop it. The ceiling is already reached near $316$ machines. A larger exact fleet sits past that crossing:
 
 $$
 C(1024)=5\\cdot 1024^{\\frac{4}{5}}
@@ -10037,19 +4789,15 @@ $$
 $$
 
 $$
-2^{10}=(2^{2})^{5}
+1024^{\\frac{4}{5}}=(2^{10})^{\\frac{4}{5}}
 $$
 
 $$
-(2^{2})^{5}=4^{5}
+(2^{10})^{\\frac{4}{5}}=2^{8}
 $$
 
 $$
-1024^{\\frac{4}{5}}=4^{4}
-$$
-
-$$
-4^{4}=256
+2^{8}=256
 $$
 
 $$
@@ -10060,60 +4808,10 @@ $$
 5\\cdot 256=1280
 $$
 
-Checking the recorded fleet against the recovered law:
-
-$$
-32=2^{5}
-$$
-
-$$
-32^{\\frac{4}{5}}=(2^{5})^{\\frac{4}{5}}
-$$
-
-$$
-32^{\\frac{4}{5}}=2^{4}
-$$
-
-$$
-32^{\\frac{4}{5}}=16
-$$
-
-$$
-C(32)=5\\cdot 16
-$$
-
-$$
-C(32)=80
-$$
-
-The $32$-machine reading sits on $C(m)=5m^{\\frac{4}{5}}$.
-
-$405$ is still under the contract; $1280$ is already over it. The ceiling is crossed at a finite fleet, so the statement is False.`,
+$1280$ is already over the contract. The ceiling is crossed at a finite fleet, so the statement is False.`,
       `**D.** → True
 
-A fleet of $243$ is $3^{5}$, so the exponent $\\frac{4}{5}$ resolves exactly once $A$ has been read from the $32$-machine run. Sustained capacity follows $C(m)=A m^{\\frac{4}{5}}$, with $C(32)=80$.
-
-$$
-A\\cdot 32^{\\frac{4}{5}}=80
-$$
-
-$$
-32^{\\frac{4}{5}}=(2^{5})^{\\frac{4}{5}}
-$$
-
-$$
-(2^{5})^{\\frac{4}{5}}=2^{4}
-$$
-
-$$
-2^{4}=16
-$$
-
-$$
-A=5
-$$
-
-The recovered law is $C(m)=5m^{\\frac{4}{5}}$. At $243$ machines:
+The recovered law is $C(m)=5m^{\\frac{4}{5}}$. A fleet of $243$ is $3^{5}$, so the exponent $\\frac{4}{5}$ resolves exactly:
 
 $$
 243^{\\frac{4}{5}}=(3^{5})^{\\frac{4}{5}}
@@ -10139,64 +4837,10 @@ $$
 405>400
 $$
 
-Checking the recorded fleet against the recovered law:
-
-$$
-32=2^{5}
-$$
-
-$$
-32^{\\frac{4}{5}}=(2^{5})^{\\frac{4}{5}}
-$$
-
-$$
-32^{\\frac{4}{5}}=2^{4}
-$$
-
-$$
-32^{\\frac{4}{5}}=16
-$$
-
-$$
-C(32)=5\\cdot 16
-$$
-
-$$
-C(32)=80
-$$
-
-The $32$-machine reading sits on $C(m)=5m^{\\frac{4}{5}}$.
-
-The claimed neighbour $486$ would be a coefficient of $6$ rather than $5$. Capacity is $405$ requests per second, so the statement is True.`,
+Capacity is $405$ requests per second, so the statement is True.`,
       `**E.** → True
 
-A power law is linear after taking logs of both sides. Sustained capacity follows $C(m)=A m^{\\frac{4}{5}}$, and a fleet of $32$ machines sustains $80$ requests per second.
-
-$$
-A\\cdot 32^{\\frac{4}{5}}=80
-$$
-
-$$
-32=2^{5}
-$$
-
-$$
-32^{\\frac{4}{5}}=(2^{5})^{\\frac{4}{5}}
-$$
-
-$$
-32^{\\frac{4}{5}}=2^{4}
-$$
-
-$$
-32^{\\frac{4}{5}}=16
-$$
-
-$$
-A=5
-$$
-
-The uncapped law is $C=5m^{\\frac{4}{5}}$. Taking the natural log of both sides:
+A power law is linear after taking logs of both sides. The uncapped law is $C=5m^{\\frac{4}{5}}$:
 
 $$
 \\ln C=\\ln\\bigl(5m^{\\frac{4}{5}}\\bigr)
@@ -10266,43 +4910,7 @@ $$\\ln C=\\ln 5+\\frac{4}{5}\\ln m$$
     tactical_explanations: [
       `**A.** → False
 
-Net gain is revenue minus a linear wage bill. Revenue follows $R(L)=A L^{\\frac{1}{2}}$, and extending a season from $100$ to $400$ hours raised recorded revenue by $1200$. Labour is paid $6$ per hour.
-
-The recorded gain is a difference of two outputs:
-
-$$
-A\\cdot 400^{\\frac{1}{2}}-A\\cdot 100^{\\frac{1}{2}}=1200
-$$
-
-$$
-400=20^{2}
-$$
-
-$$
-400^{\\frac{1}{2}}=20
-$$
-
-$$
-100=10^{2}
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-A(20-10)=1200
-$$
-
-$$
-10A=1200
-$$
-
-$$
-A=120
-$$
-
-The recovered revenue is $R(L)=120L^{\\frac{1}{2}}$. Net gain subtracts the wage bill:
+The revenue gain gives $A=120$, so $R(L)=120L^{\\frac{1}{2}}$. Net gain subtracts the wage bill:
 
 $$
 \\Pi(L)=120L^{\\frac{1}{2}}-6L
@@ -10311,21 +4919,7 @@ $$
 A power function is a single term $A L^{r}$. This is a difference of two powers with exponents $\\frac{1}{2}$ and $1$. Those exponents are not equal, so the two terms cannot be combined into one monomial. Net gain is not a power function of hours hired, so the statement is False.`,
       `**B.** → True
 
-Break-even is the staffing at which recovered revenue equals the wage bill. Revenue follows $R(L)=A L^{\\frac{1}{2}}$, extending a season from $100$ to $400$ hours raised revenue by $1200$, and labour is paid $6$ per hour.
-
-$$
-A(400^{\\frac{1}{2}}-100^{\\frac{1}{2}})=1200
-$$
-
-$$
-A(20-10)=1200
-$$
-
-$$
-A=120
-$$
-
-The recovered revenue is $R(L)=120L^{\\frac{1}{2}}$. Set net gain to zero on $L>0$:
+Net gain is $\\Pi(L)=120L^{\\frac{1}{2}}-6L$. Break-even is where recovered revenue equals the wage bill, on $L>0$:
 
 $$
 120L^{\\frac{1}{2}}-6L=0
@@ -10347,66 +4941,10 @@ $$
 L=400
 $$
 
-Checking both sides at $400$ hours:
-
-$$
-R(400)=120\\cdot 20
-$$
-
-$$
-120\\cdot 20=2400
-$$
-
-$$
-6\\cdot 400=2400
-$$
-
-Checking the recorded revenue gain against the recovered law:
-
-$$
-R(100)=120\\cdot 100^{\\frac{1}{2}}
-$$
-
-$$
-R(100)=120\\cdot 10
-$$
-
-$$
-R(100)=1200
-$$
-
-$$
-R(400)=120\\cdot 20
-$$
-
-$$
-R(400)=2400
-$$
-
-$$
-R(400)-R(100)=2400-1200
-$$
-
-$$
-R(400)-R(100)=1200
-$$
-
-The logged revenue gain is recovered correctly.
-
-The two sides agree, so the statement is True.`,
+At $400$ hours both sides equal $2400$, so net gain is zero, so the statement is True.`,
       `**C.** → False
 
-The maximiser of net gain is where the derivative is zero, which is not the same equation as $\\Pi(L)=0$. Revenue follows $R(L)=A L^{\\frac{1}{2}}$, extending a season from $100$ to $400$ hours raised revenue by $1200$, and the wage is $6$ per hour.
-
-$$
-A(20-10)=1200
-$$
-
-$$
-A=120
-$$
-
-Net gain is $\\Pi(L)=120L^{\\frac{1}{2}}-6L$. Differentiating:
+Net gain is $\\Pi(L)=120L^{\\frac{1}{2}}-6L$. The maximiser is where the derivative is zero, which is not the same equation as $\\Pi(L)=0$. Differentiating:
 
 $$
 \\Pi'(L)=120\\cdot\\frac{1}{2}L^{-\\frac{1}{2}}-6
@@ -10415,8 +4953,6 @@ $$
 $$
 \\Pi'(L)=60L^{-\\frac{1}{2}}-6
 $$
-
-Set the derivative to zero:
 
 $$
 60L^{-\\frac{1}{2}}=6
@@ -10441,71 +4977,11 @@ $$
 $$
 
 $$
-120\\cdot 10-6\\cdot 100=1200-600
-$$
-
-$$
 1200-600=600
 $$
 
-At the later break-even:
-
-$$
-\\Pi(400)=120\\cdot 20-6\\cdot 400
-$$
-
-$$
-120\\cdot 20-6\\cdot 400=0
-$$
-
-Checking the recorded revenue gain against the recovered law:
-
-$$
-R(100)=120\\cdot 100^{\\frac{1}{2}}
-$$
-
-$$
-R(100)=120\\cdot 10
-$$
-
-$$
-R(100)=1200
-$$
-
-$$
-R(400)=120\\cdot 20
-$$
-
-$$
-R(400)=2400
-$$
-
-$$
-R(400)-R(100)=2400-1200
-$$
-
-$$
-R(400)-R(100)=1200
-$$
-
-The logged revenue gain is recovered correctly.
-
 Net gain peaks at $100$ hours and only later crosses zero at $400$ hours. The two staffing levels are not the same, so the statement is False.`,
       `**D.** → True
-
-A named staffing of $900$ hours is a level of recovered revenue minus the wage bill there. Revenue follows $R(L)=A L^{\\frac{1}{2}}$, extending a season from $100$ to $400$ hours raised revenue by $1200$, and labour is paid $6$ per hour.
-
-$$
-A(400^{\\frac{1}{2}}-100^{\\frac{1}{2}})=1200
-$$
-
-$$
-A(20-10)=1200
-$$
-
-$$
-A=120
-$$
 
 The recovered revenue is $R(L)=120L^{\\frac{1}{2}}$. At $900$ hours:
 
@@ -10537,54 +5013,20 @@ $$
 -1800<-1000
 $$
 
-Checking the recorded revenue gain against the recovered law:
-
-$$
-R(100)=120\\cdot 100^{\\frac{1}{2}}
-$$
-
-$$
-R(100)=120\\cdot 10
-$$
-
-$$
-R(100)=1200
-$$
-
-$$
-R(400)=120\\cdot 20
-$$
-
-$$
-R(400)=2400
-$$
-
-$$
-R(400)-R(100)=2400-1200
-$$
-
-$$
-R(400)-R(100)=1200
-$$
-
-The logged revenue gain is recovered correctly.
-
 Square-root revenue cannot keep pace with a linear wage once hours are large. The net gain is $-1800$, so the statement is True.`,
       `**E.** → True
 
-The wage bill is $6$ times hours hired, for $L>0$ hours of labour. Revenue's unknown coefficient is not needed: the wage is already fully specified.
+The wage bill is $6$ times hours hired:
 
 $$
 W(L)=6L
 $$
 
-Rewrite the same product as a monomial:
-
 $$
 W(L)=6L^{1}
 $$
 
-That is $A L^{r}$ with coefficient $A=6$ and exponent $r=1$. A linear law is the power-function case of exponent $1$, just as $L^{2}$ is the case of exponent $2$. The wage bill is a power function of hours hired, so the statement is True.`,
+That is $A L^{r}$ with coefficient $A=6$ and exponent $r=1$. A linear law is the power-function case of exponent $1$. The wage bill is a power function of hours hired, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 38,
@@ -10644,41 +5086,7 @@ $$\\Pi(900)=-1800$$
     tactical_explanations: [
       `**A.** → True
 
-Concentrating the order means sending all $60$ units to the plant with the smaller recovered coefficient. Plant 1's cost is $C_1(q)=A q^{2}$ with $C_1(20)=200$. Plant 2's cost is $C_2(q)=k q^{2}$ with $C_2(40)=400$.
-
-$$
-A\\cdot 20^{2}=200
-$$
-
-$$
-20^{2}=400
-$$
-
-$$
-A=\\frac{200}{400}
-$$
-
-$$
-\\frac{200}{400}=\\frac{1}{2}
-$$
-
-$$
-k\\cdot 40^{2}=400
-$$
-
-$$
-40^{2}=1600
-$$
-
-$$
-k=\\frac{400}{1600}
-$$
-
-$$
-\\frac{400}{1600}=\\frac{1}{4}
-$$
-
-The recovered laws are $C_1(q)=\\frac{1}{2}q^{2}$ and $C_2(q)=\\frac{1}{4}q^{2}$. Plant 2 is cheaper for any given output. Concentrating in plant 2:
+The recorded runs give $C_1(q)=\\frac{1}{2}q^{2}$ and $C_2(q)=\\frac{1}{4}q^{2}$. Plant 2 is cheaper for any given output. Concentrating the $60$-unit order there:
 
 $$
 C_2(60)=\\frac{1}{4}\\cdot 60^{2}
@@ -10696,76 +5104,10 @@ $$
 \\frac{1}{4}\\cdot 3600=900
 $$
 
-Concentrating in plant 1 would cost
-
-$$
-C_1(60)=\\frac{1}{2}\\cdot 3600
-$$
-
-$$
-\\frac{1}{2}\\cdot 3600=1800
-$$
-
-Checking both recorded runs against the recovered quadratics:
-
-$$
-C_1(20)=\\frac{1}{2}\\cdot 20^{2}
-$$
-
-$$
-C_1(20)=\\frac{1}{2}\\cdot 400
-$$
-
-$$
-C_1(20)=200
-$$
-
-$$
-C_2(40)=\\frac{1}{4}\\cdot 40^{2}
-$$
-
-$$
-C_2(40)=\\frac{1}{4}\\cdot 1600
-$$
-
-$$
-C_2(40)=400
-$$
-
-Both plant records sit on the recovered laws.
-
 Concentrating in the cheaper plant costs $900$, so the statement is True.`,
       `**B.** → False
 
-With two strictly convex costs, a split can undercut either corner. Plant 1's cost is $C_1(q)=A q^{2}$ with $C_1(20)=200$. Plant 2's cost is $C_2(q)=k q^{2}$ with $C_2(40)=400$.
-
-$$
-A\\cdot 20^{2}=200
-$$
-
-$$
-A=\\frac{1}{2}
-$$
-
-$$
-k\\cdot 40^{2}=400
-$$
-
-$$
-k=\\frac{1}{4}
-$$
-
-The recovered laws are $C_1(q)=\\frac{1}{2}q^{2}$ and $C_2(q)=\\frac{1}{4}q^{2}$. Concentrating in the cheaper plant costs
-
-$$
-C_2(60)=\\frac{1}{4}\\cdot 3600
-$$
-
-$$
-\\frac{1}{4}\\cdot 3600=900
-$$
-
-An even split already undercuts that corner:
+Concentrating in the cheaper plant costs $900$. An even split already undercuts that corner:
 
 $$
 C_1(30)=\\frac{1}{2}\\cdot 900
@@ -10791,84 +5133,8 @@ $$
 675<900
 $$
 
-Equalising marginal costs is cheaper still. The derivatives are $C_1'(q)=q$ and $C_2'(q_2)=\\frac{1}{2}q_2$. Setting $q=\\frac{1}{2}q_2$ with $q+q_2=60$ sends $20$ to plant 1 and $40$ to plant 2:
-
-$$
-C_1(20)+C_2(40)=\\frac{1}{2}\\cdot 400+\\frac{1}{4}\\cdot 1600
-$$
-
-$$
-\\frac{1}{2}\\cdot 400+\\frac{1}{4}\\cdot 1600=200+400
-$$
-
-$$
-200+400=600
-$$
-
-Checking both recorded runs against the recovered quadratics:
-
-$$
-C_1(20)=\\frac{1}{2}\\cdot 20^{2}
-$$
-
-$$
-C_1(20)=\\frac{1}{2}\\cdot 400
-$$
-
-$$
-C_1(20)=200
-$$
-
-$$
-C_2(40)=\\frac{1}{4}\\cdot 40^{2}
-$$
-
-$$
-C_2(40)=\\frac{1}{4}\\cdot 1600
-$$
-
-$$
-C_2(40)=400
-$$
-
-Both plant records sit on the recovered laws.
-
-Sending everything to one plant is not cheapest, so the statement is False.`,
+Equalising marginal costs is cheaper still. The derivatives are $C_1'(q)=q$ and $C_2'(q_2)=\\frac{1}{2}q_2$. Setting $q=\\frac{1}{2}q_2$ with $q+q_2=60$ sends $20$ to plant 1 and $40$ to plant 2, which costs $600$. Sending everything to one plant is not cheapest, so the statement is False.`,
       `**C.** → False
-
-A single power of the order size $Q=60$ would be $B\\cdot 60^{r}$ for constants $B,r$ independent of the split. Plant 1's cost is $C_1(q)=A q^{2}$ with $C_1(20)=200$. Plant 2's cost is $C_2(q)=k q^{2}$ with $C_2(40)=400$.
-
-$$
-A=\\frac{200}{20^{2}}
-$$
-
-$$
-20^{2}=400
-$$
-
-$$
-A=\\frac{200}{400}
-$$
-
-$$
-\\frac{200}{400}=\\frac{1}{2}
-$$
-
-$$
-k=\\frac{400}{40^{2}}
-$$
-
-$$
-40^{2}=1600
-$$
-
-$$
-k=\\frac{400}{1600}
-$$
-
-$$
-\\frac{400}{1600}=\\frac{1}{4}
-$$
 
 Total cost is $C_1(q)+C_2(60-q)$:
 
@@ -10876,157 +5142,25 @@ $$
 \\frac{1}{2}q^{2}+\\frac{1}{4}(60-q)^{2}
 $$
 
-That quadratic in the split $q$ takes different values at different splits. At a corner:
-
-$$
-C_2(60)=900
-$$
-
-At an even split:
-
-$$
-C_1(30)+C_2(30)=675
-$$
-
-At the $20$-$40$ split:
-
-$$
-C_1(20)+C_2(40)=600
-$$
-
-A function of $60$ alone cannot depend on $q$. The two plants together are not a single power of the order, so the statement is False.`,
+That quadratic in the split $q$ takes different values at different splits: $900$ at a corner, $675$ at an even split, $600$ at the $20$-$40$ split. A function of $60$ alone cannot depend on $q$. The two plants together are not a single power of the order, so the statement is False.`,
       `**D.** → True
 
-The $20$-$40$ split is priced plant by plant from the recovered quadratics. Plant 1's cost is $C_1(q)=A q^{2}$ with $C_1(20)=200$. Plant 2's cost is $C_2(q)=k q^{2}$ with $C_2(40)=400$.
-
-$$
-A\\cdot 20^{2}=200
-$$
-
-$$
-20^{2}=400
-$$
-
-$$
-A=\\frac{1}{2}
-$$
-
-$$
-k\\cdot 40^{2}=400
-$$
-
-$$
-40^{2}=1600
-$$
-
-$$
-k=\\frac{1}{4}
-$$
-
-The recovered laws are $C_1(q)=\\frac{1}{2}q^{2}$ and $C_2(q)=\\frac{1}{4}q^{2}$. The named split then costs
-
-$$
-C_1(20)=\\frac{1}{2}\\cdot 400
-$$
-
-$$
-\\frac{1}{2}\\cdot 400=200
-$$
-
-$$
-C_2(40)=\\frac{1}{4}\\cdot 1600
-$$
-
-$$
-\\frac{1}{4}\\cdot 1600=400
-$$
+A run of $20$ units at plant 1 cost $200$ and a run of $40$ units at plant 2 cost $400$:
 
 $$
 200+400=600
 $$
 
-Checking both recorded runs against the recovered quadratics:
-
-$$
-C_1(20)=\\frac{1}{2}\\cdot 20^{2}
-$$
-
-$$
-C_1(20)=\\frac{1}{2}\\cdot 400
-$$
-
-$$
-C_1(20)=200
-$$
-
-$$
-C_2(40)=\\frac{1}{4}\\cdot 40^{2}
-$$
-
-$$
-C_2(40)=\\frac{1}{4}\\cdot 1600
-$$
-
-$$
-C_2(40)=400
-$$
-
-Both plant records sit on the recovered laws.
-
 Those are exactly the two recorded runs, added. The split costs $600$, so the statement is True.`,
       `**E.** → False
 
-Plant 2's cost per unit is its cost law divided by its own output, which lowers the exponent from $2$ to $1$. Plant 2's cost is $C_2(q)=k q^{2}$, and a run of $40$ units there cost $400$.
+Plant 2 costs $C_2(q)=\\frac{1}{4}q^{2}$. Unit cost divides by output, which lowers the exponent from $2$ to $1$:
 
 $$
-k\\cdot 40^{2}=400
+\\frac{C_2(q)}{q}=\\frac{1}{4}q
 $$
 
-$$
-40^{2}=1600
-$$
-
-$$
-k=\\frac{1}{4}
-$$
-
-The recovered law is $C_2(q)=\\frac{1}{4}q^{2}$. Unit cost is
-
-$$
-\\frac{C_2(q)}{q}=\\frac{\\frac{1}{4}q^{2}}{q}
-$$
-
-$$
-\\frac{\\frac{1}{4}q^{2}}{q}=\\frac{1}{4}q
-$$
-
-That still depends on how much plant 2 produces. At three outputs:
-
-$$
-\\frac{C_2(20)}{20}=\\frac{1}{4}\\cdot 20
-$$
-
-$$
-\\frac{1}{4}\\cdot 20=5
-$$
-
-$$
-\\frac{C_2(40)}{40}=\\frac{1}{4}\\cdot 40
-$$
-
-$$
-\\frac{1}{4}\\cdot 40=10
-$$
-
-$$
-\\frac{C_2(60)}{60}=\\frac{1}{4}\\cdot 60
-$$
-
-$$
-\\frac{1}{4}\\cdot 60=15
-$$
-
-A constant unit cost would be a linear total, exponent $1$. Unit cost triples across that range, so the statement is False.`,
+That still depends on how much plant 2 produces. At the recorded run it is $10$; at $20$ units it is $5$; at $60$ units it is $15$. A constant unit cost would be a linear total, exponent $1$. Unit cost triples across that range, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 39,
@@ -11084,14 +5218,18 @@ $$C_2(60)=900 \\qquad C_1(60)=1800 \\qquad C(30)=675 \\qquad C(20)=600$$
     tactical_explanations: [
       `**A.** → True
 
-Two positive points determine a unique power-law pair $(A,r)$ because their ratio cancels $A$ and leaves a strictly increasing equation for $r$. The first two measurements are $(4,24)$ and $(16,192)$.
+Two positive points determine a unique exponent because their ratio cancels $A$:
 
 $$
-\\frac{y(16)}{y(4)}=\\frac{A\\cdot 16^{r}}{A\\cdot 4^{r}}
+\\frac{y(16)}{y(4)}=\\frac{192}{24}
 $$
 
 $$
-\\frac{192}{24}=\\left(\\frac{16}{4}\\right)^{r}
+\\frac{192}{24}=8
+$$
+
+$$
+\\frac{y(16)}{y(4)}=\\left(\\frac{16}{4}\\right)^{r}
 $$
 
 $$
@@ -11122,22 +5260,13 @@ $$
 r=\\frac{3}{2}
 $$
 
-The first point then pins $A$:
+The same $4^{r}=8$ fits both logged points, so they lie on one power law, so the statement is True.`,
+      `**B.** → True
+
+The ratio already gave $r=\\frac{3}{2}$. The first point then pins the coefficient:
 
 $$
 A\\cdot 4^{\\frac{3}{2}}=24
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
 $$
 
 $$
@@ -11152,201 +5281,10 @@ $$
 A=3
 $$
 
-The fitted law is $y=3x^{\\frac{3}{2}}$. The second point sits on the same curve:
-
-$$
-3\\cdot 16^{\\frac{3}{2}}=3\\cdot 64
-$$
-
-$$
-3\\cdot 64=192
-$$
-
-Checking both fitted points against $y=3x^{\\frac{3}{2}}$:
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-3\\cdot 4^{\\frac{3}{2}}=3\\cdot 8
-$$
-
-$$
-3\\cdot 8=24
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}
-$$
-
-$$
-16^{\\frac{3}{2}}=2^{6}
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-3\\cdot 16^{\\frac{3}{2}}=3\\cdot 64
-$$
-
-$$
-3\\cdot 64=192
-$$
-
-The first two measurements sit on the fitted law.
-
-The first two measurements lie on one power law, so the statement is True.`,
-      `**B.** → True
-
-With two points on a power law, the coefficient is the response divided by the shape factor once the exponent is known. The first two measurements are $(4,24)$ and $(16,192)$, fitted to $y=A x^{r}$.
-
-$$
-\\frac{192}{24}=4^{r}
-$$
-
-$$
-8=4^{r}
-$$
-
-$$
-(2^{2})^{r}=2^{3}
-$$
-
-$$
-2r=3
-$$
-
-$$
-r=\\frac{3}{2}
-$$
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=24
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-A=\\frac{24}{8}
-$$
-
-$$
-\\frac{24}{8}=3
-$$
-
-The second point confirms the same coefficient:
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-A=\\frac{192}{64}
-$$
-
-$$
-\\frac{192}{64}=3
-$$
-
-Checking both fitted points against $y=3x^{\\frac{3}{2}}$:
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-3\\cdot 4^{\\frac{3}{2}}=3\\cdot 8
-$$
-
-$$
-3\\cdot 8=24
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}
-$$
-
-$$
-16^{\\frac{3}{2}}=2^{6}
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-3\\cdot 16^{\\frac{3}{2}}=3\\cdot 64
-$$
-
-$$
-3\\cdot 64=192
-$$
-
-The first two measurements sit on the fitted law.
-
-Both measurements give $A=3$, so the statement is True.`,
+The fitted law is $y=3x^{\\frac{3}{2}}$, so the statement is True.`,
       `**C.** → False
 
-The measurement at $x=9$ was held out of the fit, so it is a test of the two-point law rather than an input to it. The first two measurements are $(4,24)$ and $(16,192)$.
-
-$$
-\\frac{192}{24}=4^{r}
-$$
-
-$$
-8=4^{r}
-$$
-
-$$
-(2^{2})^{r}=2^{3}
-$$
-
-$$
-r=\\frac{3}{2}
-$$
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=24
-$$
-
-$$
-A=3
-$$
-
-The fitted law is $y=3x^{\\frac{3}{2}}$. At the held-out input:
+The fitted law is $y=3x^{\\frac{3}{2}}$. The measurement at $x=9$ was held out of the fit, so it is a test rather than an input:
 
 $$
 9^{\\frac{3}{2}}=(3^{2})^{\\frac{3}{2}}
@@ -11364,78 +5302,8 @@ $$
 3\\cdot 27=81
 $$
 
-Checking both fitted points against $y=3x^{\\frac{3}{2}}$:
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-3\\cdot 4^{\\frac{3}{2}}=3\\cdot 8
-$$
-
-$$
-3\\cdot 8=24
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}
-$$
-
-$$
-16^{\\frac{3}{2}}=2^{6}
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-3\\cdot 16^{\\frac{3}{2}}=3\\cdot 64
-$$
-
-$$
-3\\cdot 64=192
-$$
-
-The first two measurements sit on the fitted law.
-
 The recorded response at $x=9$ is also $81$. The held-out point sits on the curve, so the statement is False.`,
       `**D.** → False
-
-A prediction at $x=25$ uses the law fitted from the first two measurements only, $(4,24)$ and $(16,192)$.
-
-$$
-\\frac{192}{24}=4^{r}
-$$
-
-$$
-8=4^{r}
-$$
-
-$$
-(2^{2})^{r}=2^{3}
-$$
-
-$$
-r=\\frac{3}{2}
-$$
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=24
-$$
-
-$$
-A=3
-$$
 
 The fitted law is $y=3x^{\\frac{3}{2}}$. At $x=25$:
 
@@ -11459,61 +5327,13 @@ $$
 3\\cdot 125=375
 $$
 
-Checking both fitted points against $y=3x^{\\frac{3}{2}}$:
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-3\\cdot 4^{\\frac{3}{2}}=3\\cdot 8
-$$
-
-$$
-3\\cdot 8=24
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}
-$$
-
-$$
-16^{\\frac{3}{2}}=2^{6}
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-3\\cdot 16^{\\frac{3}{2}}=3\\cdot 64
-$$
-
-$$
-3\\cdot 64=192
-$$
-
-The first two measurements sit on the fitted law.
-
 The claimed $300$ is $3\\cdot 100$, as though $25^{\\frac{3}{2}}$ were $100$ rather than $125$. The fitted law predicts $375$, so the statement is False.`,
       `**E.** → False
 
-Uniqueness of the exponent is settled by the ratio equation, because $4^{r}$ is strictly increasing in $r$ and can equal $8$ only once. The first two measurements are $(4,24)$ and $(16,192)$.
+Uniqueness of the exponent is settled by the ratio equation, because $4^{r}$ is strictly increasing in $r$ and can equal $8$ only once.
 
 $$
-\\frac{192}{24}=4^{r}
-$$
-
-$$
-8=4^{r}
+4^{r}=8
 $$
 
 Forcing the exponent to $2$ misses that ratio:
@@ -11524,28 +5344,6 @@ $$
 
 $$
 16\\neq 8
-$$
-
-Forcing $r=2$ from the first point then misses the second:
-
-$$
-A=\\frac{24}{16}
-$$
-
-$$
-\\frac{24}{16}=\\frac{3}{2}
-$$
-
-$$
-\\frac{3}{2}\\cdot 16^{2}=\\frac{3}{2}\\cdot 256
-$$
-
-$$
-\\frac{3}{2}\\cdot 256=384
-$$
-
-$$
-384\\neq 192
 $$
 
 The two measurements do not fit exponent $2$, so the statement is False.`,
@@ -11612,31 +5410,7 @@ not $300$.
     tactical_explanations: [
       `**A.** → True
 
-Demand follows $q(p)=A p^{-2}$ units at a price $p>0$ euros, with the coefficient unknown. A catalogue price of four euros clears four hundred units, and the claim is that price as a function of quantity is itself a power.
-
-The catalogue pair pins $A$:
-
-$$
-A\\cdot 4^{-2}=400
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-\\frac{A}{16}=400
-$$
-
-$$
-A=400\\cdot 16
-$$
-
-$$
-A=6400
-$$
-
-The demand law is $q=6400 p^{-2}$. Inverting a power $q=A p^{r}$ with $r\\neq 0$ raises to $\\frac{1}{r}$. Here $r=-2$, so the inverse exponent is $-\\frac{1}{2}$. Solving for price:
+The catalogue pair gives $A=6400$, so demand is $q=6400 p^{-2}$. A nonzero exponent inverts to another power. Solving for price:
 
 $$
 q=\\frac{6400}{p^{2}}
@@ -11662,50 +5436,10 @@ $$
 p=80 q^{-\\frac{1}{2}}
 $$
 
-The same inverse can be written $p=A^{\\frac{1}{2}} q^{-\\frac{1}{2}}$ with $A^{\\frac{1}{2}}=80$. Either form is a power of $q$ with exponent $-\\frac{1}{2}$, so the statement is True.`,
+That is a power of quantity with exponent $-\\frac{1}{2}$, so the statement is True.`,
       `**B.** → True
 
-Twenty-five units is a named quantity on the inverse demand curve. Demand is $q(p)=A p^{-2}$ with the catalogue pair $q(4)=400$, so both $A$ and the inverse are needed.
-
-$$
-A\\cdot 4^{-2}=400
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-\\frac{A}{16}=400
-$$
-
-$$
-A=400\\cdot 16
-$$
-
-$$
-A=6400
-$$
-
-Inverting $q=6400 p^{-2}$:
-
-$$
-q=\\frac{6400}{p^{2}}
-$$
-
-$$
-p^{2}=\\frac{6400}{q}
-$$
-
-$$
-p=\\frac{80}{\\sqrt{q}}
-$$
-
-$$
-p=80 q^{-\\frac{1}{2}}
-$$
-
-At twenty-five units:
+The inverse is $p=80 q^{-\\frac{1}{2}}$. Twenty-five units is a named quantity on that inverse:
 
 $$
 p(25)=80\\cdot 25^{-\\frac{1}{2}}
@@ -11726,37 +5460,7 @@ $$
 The clearing price is sixteen euros, so the statement is True.`,
       `**C.** → False
 
-Revenue through price is quantity times price. Demand is $q(p)=A p^{-2}$ with $q(4)=400$, so the coefficient must be recovered before the product can be simplified.
-
-$$
-A\\cdot 4^{-2}=400
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-\\frac{A}{16}=400
-$$
-
-$$
-A=400\\cdot 16
-$$
-
-$$
-A=6400
-$$
-
-$$
-q(p)=6400 p^{-2}
-$$
-
-Revenue along this curve is quantity times price:
-
-$$
-R(p)=p\\cdot q(p)
-$$
+Demand is $q=6400 p^{-2}$. Revenue along the curve is price times quantity:
 
 $$
 R(p)=p\\cdot 6400 p^{-2}
@@ -11774,62 +5478,10 @@ $$
 R(p)=\\frac{6400}{p}
 $$
 
-The remaining exponent is $-1$, so raising the catalogue price cuts revenue rather than raising it, so the statement is False.`,
+The leftover exponent is $-1$, so a higher catalogue price cuts revenue rather than raising it. At four euros the take is $1600$ euros; at eight euros it is only $800$. Raising the price does not raise revenue, so the statement is False.`,
       `**D.** → True
 
-Revenue at one hundred units is that quantity times the clearing price. Demand is $q(p)=A p^{-2}$ with $q(4)=400$, so $A$ is recovered and the relation is inverted first.
-
-$$
-A\\cdot 4^{-2}=400
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-\\frac{A}{16}=400
-$$
-
-$$
-A=400\\cdot 16
-$$
-
-$$
-A=6400
-$$
-
-$$
-q=6400 p^{-2}
-$$
-
-$$
-p^{2}=\\frac{6400}{q}
-$$
-
-$$
-p=80 q^{-\\frac{1}{2}}
-$$
-
-Revenue through quantity is then
-
-$$
-R(q)=q\\cdot p(q)
-$$
-
-$$
-R(q)=q\\cdot 80 q^{-\\frac{1}{2}}
-$$
-
-$$
-R(q)=80 q^{1-\\frac{1}{2}}
-$$
-
-$$
-R(q)=80 q^{\\frac{1}{2}}
-$$
-
-At one hundred units:
+Revenue through quantity is $R(q)=80 q^{\\frac{1}{2}}$. At one hundred units:
 
 $$
 R(100)=80\\cdot 100^{\\frac{1}{2}}
@@ -11850,49 +5502,7 @@ $$
 The claimed revenue is eight hundred euros, so the statement is True.`,
       `**E.** → False
 
-The claim is that revenue must fall when quantity rises, because quantity falls when price rises. Demand is $q(p)=A p^{-2}$ with $q(4)=400$. After $A$ is recovered, revenue can be written in $q$ and the exponent read off.
-
-$$
-A\\cdot 4^{-2}=400
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-\\frac{A}{16}=400
-$$
-
-$$
-A=400\\cdot 16
-$$
-
-$$
-A=6400
-$$
-
-$$
-q=6400 p^{-2}
-$$
-
-$$
-p=80 q^{-\\frac{1}{2}}
-$$
-
-$$
-R(q)=q\\cdot p(q)
-$$
-
-$$
-R(q)=q\\cdot 80 q^{-\\frac{1}{2}}
-$$
-
-$$
-R(q)=80 q^{\\frac{1}{2}}
-$$
-
-The exponent $\\frac{1}{2}$ is positive, so a larger quantity brings in more revenue, not less, so the statement is False.`,
+Revenue through quantity is $R(q)=80 q^{\\frac{1}{2}}$. Quantity does fall when price rises, because the demand exponent $-2$ is negative. That does not decide how revenue moves with quantity: the leftover exponent on $R(q)$ is $\\frac{1}{2}$, which is positive. A larger quantity therefore brings in more revenue, not less, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 41,
@@ -11944,33 +5554,7 @@ $$R(q)=80\\,q^{\\frac{1}{2}}, \\qquad R(p)=6400\\,p^{-1} \\tag{3}$$
     tactical_explanations: [
       `**A.** → True
 
-Average product is output per labour hour. Output follows $Y(L)=A L^{\\frac{1}{2}}$, and extending the shift from nine hours to thirty-six added sixty units, which recovers $A$ before the derived exponent can be read.
-
-$$
-A\\bigl(36^{\\frac{1}{2}}-9^{\\frac{1}{2}}\\bigr)=60
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-A(6-3)=60
-$$
-
-$$
-3A=60
-$$
-
-$$
-A=20
-$$
-
-Dividing the recovered law $Y(L)=20 L^{\\frac{1}{2}}$ by labour lowers the exponent by one:
+The shift extension gives $A=20$, so output is $Y=20 L^{\\frac{1}{2}}$. Average product divides by labour, which lowers the exponent by one:
 
 $$
 \\frac{Y}{L}=\\frac{20 L^{\\frac{1}{2}}}{L}
@@ -11984,36 +5568,10 @@ $$
 \\frac{Y}{L}=20 L^{-\\frac{1}{2}}
 $$
 
-The derived exponent $-\\frac{1}{2}$ is negative, so average product falls as the shift lengthens, so the statement is True.`,
+The leftover exponent is negative, so each extra hour of shift dilutes output per hour. Average product falls as the shift lengthens, so the statement is True.`,
       `**B.** → True
 
-A thirty-six hour output is a level of the recovered law, not the sixty-unit jump on its own. Output follows $Y(L)=A L^{\\frac{1}{2}}$, and the logged extension from nine hours to thirty-six hours added sixty units.
-
-$$
-A\\bigl(36^{\\frac{1}{2}}-9^{\\frac{1}{2}}\\bigr)=60
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-A(6-3)=60
-$$
-
-$$
-3A=60
-$$
-
-$$
-A=20
-$$
-
-The recovered law is $Y(L)=20 L^{\\frac{1}{2}}$. At thirty-six hours:
+Output is $Y=20 L^{\\frac{1}{2}}$. At thirty-six hours:
 
 $$
 Y(36)=20\\cdot 36^{\\frac{1}{2}}
@@ -12031,54 +5589,10 @@ $$
 Y(36)=120
 $$
 
-The nine-hour level of the same law is
-
-$$
-Y(9)=20\\cdot 9^{\\frac{1}{2}}
-$$
-
-$$
-Y(9)=20\\cdot 3
-$$
-
-$$
-Y(9)=60
-$$
-
-and $120-60=60$ reproduces the logged add-on. Output is one hundred and twenty units, so the statement is True.`,
+The logged sixty units are the gain from nine hours, not the thirty-six-hour level. Nine hours already yield $20\\cdot 3=60$, and $60+60=120$. Output is one hundred and twenty units, so the statement is True.`,
       `**C.** → False
 
-An extra hour is the derivative of output. Output follows $Y(L)=A L^{\\frac{1}{2}}$, and the sixty-unit jump from nine hours to thirty-six recovers $A$ first.
-
-$$
-A\\bigl(36^{\\frac{1}{2}}-9^{\\frac{1}{2}}\\bigr)=60
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-A(6-3)=60
-$$
-
-$$
-3A=60
-$$
-
-$$
-A=20
-$$
-
-$$
-Y(L)=20 L^{\\frac{1}{2}}
-$$
-
-Differentiating lowers the exponent by one and multiplies by $\\frac{1}{2}$:
+Output is $Y=20 L^{\\frac{1}{2}}$. An extra hour is the derivative, which brings the exponent down by one and multiplies by $\\frac{1}{2}$:
 
 $$
 Y'(L)=20\\cdot\\frac{1}{2} L^{-\\frac{1}{2}}
@@ -12120,56 +5634,10 @@ $$
 Y'(36)=\\frac{5}{3}
 $$
 
-Because $\\frac{10}{3}>\\frac{5}{3}$, an extra hour adds more after nine hours than after thirty-six, so the statement is False.`,
+Because $\\frac{10}{3}>\\frac{5}{3}$, an extra hour adds more after nine hours than after thirty-six. The slope is falling, so the statement is False.`,
       `**D.** → True
 
-Doubling the nine-hour output is a scale factor $k$ on labour. Output follows $Y(L)=A L^{\\frac{1}{2}}$, and the sixty-unit jump from nine hours to thirty-six hours recovers $A$.
-
-$$
-A\\bigl(36^{\\frac{1}{2}}-9^{\\frac{1}{2}}\\bigr)=60
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-A(6-3)=60
-$$
-
-$$
-3A=60
-$$
-
-$$
-A=20
-$$
-
-$$
-Y(9)=20\\cdot 9^{\\frac{1}{2}}
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-Y(9)=20\\cdot 3
-$$
-
-$$
-Y(9)=60
-$$
-
-Doubling that output means a target of $120$. The scale factor of a power is the input factor to the exponent:
-
-$$
-\\frac{Y(kL)}{Y(L)}=k^{\\frac{1}{2}}
-$$
+The exponent is $\\frac{1}{2}$, so a labour factor $k$ multiplies output by $k^{\\frac{1}{2}}$. Doubling output therefore needs
 
 $$
 k^{\\frac{1}{2}}=2
@@ -12183,48 +5651,16 @@ $$
 k=4
 $$
 
-Labour must go from nine hours to $4\\cdot 9=36$ hours, which is more than a doubling, so the statement is True.`,
+Four times the hours is more than a doubling. The logged extension itself is that factor: nine hours to thirty-six is a fourfold rise, and
+
+$$
+\\left(\\frac{36}{9}\\right)^{\\frac{1}{2}}=2
+$$
+
+so that extension exactly doubles output. Labour must more than double, so the statement is True.`,
       `**E.** → False
 
-Average product at twenty-five hours is the recovered output divided by labour, not the shape factor $25^{\\frac{1}{2}}=5$ on its own. Output follows $Y(L)=A L^{\\frac{1}{2}}$, and extending the shift from nine hours to thirty-six added sixty units.
-
-$$
-A\\bigl(36^{\\frac{1}{2}}-9^{\\frac{1}{2}}\\bigr)=60
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-A(6-3)=60
-$$
-
-$$
-3A=60
-$$
-
-$$
-A=20
-$$
-
-$$
-Y(L)=20 L^{\\frac{1}{2}}
-$$
-
-$$
-\\frac{Y}{L}=20 L^{\\frac{1}{2}-1}
-$$
-
-$$
-\\frac{Y}{L}=20 L^{-\\frac{1}{2}}
-$$
-
-At twenty-five hours:
+Average product is $20 L^{-\\frac{1}{2}}$. The trap is to read $25^{\\frac{1}{2}}=5$ as if it were already output per hour, forgetting the coefficient. At twenty-five hours:
 
 $$
 \\frac{Y(25)}{25}=20\\cdot 25^{-\\frac{1}{2}}
@@ -12290,25 +5726,7 @@ $$\\frac{Y}{L}=20L^{-\\frac{1}{2}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Break-even is zero profit after both charges. Revenue follows $R(q)=A q^{\\frac{1}{2}}$, and a run of one hundred units brought in six hundred euros, which pins $A$. Profit then subtracts two euros per unit and the four-hundred euro fixed charge.
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=600
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-10A=600
-$$
-
-$$
-A=60
-$$
-
-Profit is
+The hundred-unit invoice gives $A=60$, so profit is
 
 $$
 \\Pi(q)=60 q^{\\frac{1}{2}}-2q-400
@@ -12343,57 +5761,25 @@ $$
 The positive roots are $t=10$ and $t=20$. Squaring back:
 
 $$
-q=10^{2}=100
+q=10^{2}
 $$
 
 $$
-q=20^{2}=400
-$$
-
-Plug both roots back into profit:
-
-$$
-\\Pi(100)=60\\cdot 10-2\\cdot 100-400
+q=100
 $$
 
 $$
-\\Pi(100)=600-200-400=0
+q=20^{2}
 $$
 
 $$
-\\Pi(400)=60\\cdot 20-2\\cdot 400-400
-$$
-
-$$
-\\Pi(400)=1200-800-400=0
+q=400
 $$
 
 Two distinct positive outputs give zero profit, so the statement is True.`,
       `**B.** → True
 
-Profit at twenty-five units is a named level of the recovered profit law. Revenue is $R(q)=A q^{\\frac{1}{2}}$ with $R(100)=600$, variable cost is two euros per unit, and the fixed charge is four hundred euros.
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=600
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-10A=600
-$$
-
-$$
-A=60
-$$
-
-$$
-\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400
-$$
-
-At twenty-five units:
+Profit is $\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$. At twenty-five units:
 
 $$
 25^{\\frac{1}{2}}=5
@@ -12422,80 +5808,28 @@ $$
 The firm is one hundred and fifty euros below break-even, which is more than one hundred, so the statement is True.`,
       `**C.** → False
 
-Whether profit stays positive once it has turned positive is a question about the recovered roots. Revenue is $R(q)=A q^{\\frac{1}{2}}$ with $R(100)=600$, and profit subtracts $2q$ and the four-hundred euro charge.
+Break-even is at $q=100$ and $q=400$. The $-2q$ term is a downward square in $t=q^{\\frac{1}{2}}$, so profit is positive only between those roots, not past the second one. Check a run beyond four hundred units, say $q=625$:
 
 $$
-A\\cdot 100^{\\frac{1}{2}}=600
-$$
-
-$$
-100^{\\frac{1}{2}}=10
+625^{\\frac{1}{2}}=25
 $$
 
 $$
-10A=600
+\\Pi(625)=60\\cdot 25-2\\cdot 625-400
 $$
 
 $$
-A=60
+\\Pi(625)=1500-1250-400
 $$
 
 $$
-\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400
+\\Pi(625)=-150
 $$
 
-Putting $t=q^{\\frac{1}{2}}$ and setting $\\Pi=0$, with $q=t^{2}$:
-
-$$
-60t-2t^{2}-400=0
-$$
-
-$$
-2t^{2}-60t+400=0
-$$
-
-$$
-t^{2}-30t+200=0
-$$
-
-$$
-(t-10)(t-20)=0
-$$
-
-$$
-q=10^{2}=100
-$$
-
-$$
-q=20^{2}=400
-$$
-
-The square term $-2q$ is negative, so $\\Pi$ is positive only between the roots. Past four hundred units profit is negative again, so the statement is False.`,
+Once profit has turned positive it turns negative again past four hundred units, so the statement is False.`,
       `**D.** → True
 
-Revenue follows $R(q)=A q^{\\frac{1}{2}}$ with $R(100)=600$, so the coefficient is a single level.
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=600
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-10A=600
-$$
-
-$$
-A=60
-$$
-
-$$
-R(q)=60 q^{\\frac{1}{2}}
-$$
-
-That is a power of output, with coefficient $60$ and exponent $\\frac{1}{2}$. Profit subtracts a linear term and a constant:
+Revenue is $R=60 q^{\\frac{1}{2}}$, a power of output with coefficient $60$ and exponent $\\frac{1}{2}$. Profit subtracts a linear term and a constant:
 
 $$
 \\Pi(q)=60 q^{\\frac{1}{2}}-2q-400
@@ -12504,33 +5838,11 @@ $$
 A power function of $q$ has the form $A q^{r}$ with no extra terms. The intercept $-400$ and the distinct power $-2q$ both stop $\\Pi$ from being a power of output, so the statement is True.`,
       `**E.** → False
 
-Two hundred and twenty-five units is a named output. Revenue is $R(q)=A q^{\\frac{1}{2}}$ with $R(100)=600$, variable cost is $2q$, and the fixed charge is four hundred euros.
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=600
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-10A=600
-$$
-
-$$
-A=60
-$$
-
-$$
-\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400
-$$
+Profit is $\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$. Two hundred and twenty-five units sits between the two break-evens, so profit is positive there, but the claimed eighty euros is too high:
 
 $$
 225^{\\frac{1}{2}}=15
 $$
-
-because $15^{2}=225$. Then
 
 $$
 R(225)=60\\cdot 15
@@ -12602,49 +5914,7 @@ $$\\Pi(q)=60q^{\\frac{1}{2}}-2q-400 \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Benefit and cost meet where $B(x)=C(x)$. Benefit follows $B(x)=A x^{\\frac{1}{2}}$ with a trial $B(16)=72$, and cost follows $C(x)=K x^{\\frac{3}{2}}$ with a trial $C(4)=4$. Each coefficient is recovered from its own trial.
-
-The benefit trial:
-
-$$
-A\\cdot 16^{\\frac{1}{2}}=72
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-4A=72
-$$
-
-$$
-A=18
-$$
-
-The cost trial:
-
-$$
-K\\cdot 4^{\\frac{3}{2}}=4
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-8K=4
-$$
-
-$$
-K=\\frac{1}{2}
-$$
-
-Setting the recovered laws equal:
+The two trials give $B=18 x^{\\frac{1}{2}}$ and $C=\\frac{1}{2} x^{\\frac{3}{2}}$. They meet where $B=C$:
 
 $$
 18 x^{\\frac{1}{2}}=\\frac{1}{2} x^{\\frac{3}{2}}
@@ -12664,46 +5934,10 @@ $$
 x=36
 $$
 
-The ratio of the two recovered powers is
-
-$$
-\\frac{C(x)}{B(x)}=\\frac{\\frac{1}{2} x^{\\frac{3}{2}}}{18 x^{\\frac{1}{2}}}
-$$
-
-$$
-\\frac{C(x)}{B(x)}=\\frac{x}{36}
-$$
-
-That ratio equals $1$ at exactly one positive scale, so the statement is True.`,
+The ratio of the two powers is $C/B=x/36$, which equals $1$ at exactly one positive scale, so the statement is True.`,
       `**B.** → True
 
-Cost at scale sixteen uses the recovered cost coefficient, not the benefit trial. Cost follows $C(x)=K x^{\\frac{3}{2}}$ with $C(4)=4$.
-
-$$
-K\\cdot 4^{\\frac{3}{2}}=4
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-8K=4
-$$
-
-$$
-K=\\frac{1}{2}
-$$
-
-$$
-C(x)=\\frac{1}{2} x^{\\frac{3}{2}}
-$$
-
-At scale sixteen:
+Cost is $C=\\frac{1}{2} x^{\\frac{3}{2}}$. At scale sixteen:
 
 $$
 C(16)=\\frac{1}{2}\\cdot 16^{\\frac{3}{2}}
@@ -12728,82 +5962,10 @@ $$
 Cost is thirty-two million, so the statement is True.`,
       `**C.** → False
 
-The claim compares the two exponents and concludes that cost can never overtake benefit. Benefit is $B(x)=A x^{\\frac{1}{2}}$ with $B(16)=72$, and cost is $C(x)=K x^{\\frac{3}{2}}$ with $C(4)=4$.
-
-$$
-A\\cdot 16^{\\frac{1}{2}}=72
-$$
-
-$$
-4A=72
-$$
-
-$$
-A=18
-$$
-
-$$
-K\\cdot 4^{\\frac{3}{2}}=4
-$$
-
-$$
-8K=4
-$$
-
-$$
-K=\\frac{1}{2}
-$$
-
-$$
-\\frac{C(x)}{B(x)}=\\frac{\\frac{1}{2} x^{\\frac{3}{2}}}{18 x^{\\frac{1}{2}}}
-$$
-
-$$
-\\frac{C(x)}{B(x)}=\\frac{x}{36}
-$$
-
-The cost exponent $\\frac{3}{2}$ is larger than $\\frac{1}{2}$, not smaller, and the ratio passes through $1$ at $x=36$. Cost overtakes benefit there, so the statement is False.`,
+The cost exponent is $\\frac{3}{2}$, which is larger than the benefit exponent $\\frac{1}{2}$, not smaller. Their ratio is $C/B=x/36$, which passes through $1$ at the meeting $x=36$ and keeps rising, so cost overtakes benefit and stays ahead. The exponent comparison is backwards, and overtaking does occur, so the statement is False.`,
       `**D.** → False
 
-Net benefit at scale nine is the difference of the two recovered laws. Benefit is $B(x)=A x^{\\frac{1}{2}}$ with $B(16)=72$, and cost is $C(x)=K x^{\\frac{3}{2}}$ with $C(4)=4$.
-
-$$
-A\\cdot 16^{\\frac{1}{2}}=72
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-4A=72
-$$
-
-$$
-A=18
-$$
-
-$$
-K\\cdot 4^{\\frac{3}{2}}=4
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-8K=4
-$$
-
-$$
-K=\\frac{1}{2}
-$$
-
-At scale nine:
+Benefit is $B=18 x^{\\frac{1}{2}}$ and cost is $C=\\frac{1}{2} x^{\\frac{3}{2}}$. At scale nine:
 
 $$
 B(9)=18\\cdot 9^{\\frac{1}{2}}
@@ -12814,7 +5976,11 @@ $$
 $$
 
 $$
-B(9)=18\\cdot 3=54
+B(9)=18\\cdot 3
+$$
+
+$$
+B(9)=54
 $$
 
 $$
@@ -12830,47 +5996,23 @@ C(9)=\\frac{27}{2}
 $$
 
 $$
-B(9)-C(9)=54-\\frac{27}{2}=\\frac{81}{2}
+B(9)-C(9)=54-\\frac{27}{2}
+$$
+
+$$
+B(9)-C(9)=\\frac{81}{2}
 $$
 
 Net benefit is $40.5$ million, which does not exceed forty-two, so the statement is False.`,
       `**E.** → False
 
-Benefit per million of cost is the ratio of two different powers. Benefit is $B(x)=A x^{\\frac{1}{2}}$ with $B(16)=72$, and cost is $C(x)=K x^{\\frac{3}{2}}$ with $C(4)=4$.
-
-$$
-A\\cdot 16^{\\frac{1}{2}}=72
-$$
-
-$$
-4A=72
-$$
-
-$$
-A=18
-$$
-
-$$
-K\\cdot 4^{\\frac{3}{2}}=4
-$$
-
-$$
-8K=4
-$$
-
-$$
-K=\\frac{1}{2}
-$$
-
-$$
-\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}
-$$
+Benefit per million of cost is the reciprocal of the meeting ratio:
 
 $$
 \\frac{B(x)}{C(x)}=\\frac{36}{x}
 $$
 
-The ratio falls as scale grows, so it is not the same at every scale, so the statement is False.`,
+That ratio falls as scale grows: at $x=9$ it is $4$, and at $x=36$ it is $1$. Benefit per million of cost is not the same at every scale, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 44,
@@ -12916,88 +6058,26 @@ $$\\frac{C(x)}{B(x)}=\\frac{x}{36} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-The exponent is recovered from the two furnace runs, because $A$ cancels in the ratio. Throughput follows $T(g)=A g^{r}$ with $T(8)=16$ and $T(27)=36$.
+The two furnace runs give $r=\\frac{2}{3}$. Compare that exponent with one:
 
 $$
-\\frac{T(27)}{T(8)}=\\frac{A\\cdot 27^{r}}{A\\cdot 8^{r}}
+\\frac{2}{3}<1
 $$
 
-$$
-\\frac{36}{16}=\\left(\\frac{27}{8}\\right)^{r}
-$$
+The recorded feeds already show the lag. Gas rose by a factor $\\frac{27}{8}$, while throughput only rose by $\\frac{9}{4}$:
 
 $$
-\\frac{9}{4}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-Because $\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$ and $\\frac{9}{4}=\\left(\\frac{3}{2}\\right)^{2}$,
-
-$$
-\\left(\\frac{3}{2}\\right)^{2}=\\left(\\left(\\frac{3}{2}\\right)^{3}\\right)^{r}
+\\frac{36}{16}=\\frac{9}{4}
 $$
 
 $$
-\\left(\\frac{3}{2}\\right)^{2}=\\left(\\frac{3}{2}\\right)^{3r}
+\\frac{9}{4}<\\frac{27}{8}
 $$
 
-$$
-3r=2
-$$
-
-$$
-r=\\frac{2}{3}
-$$
-
-Two thirds is smaller than one, so throughput grows more slowly than the gas feed, so the statement is True.`,
+Each extra cubic metre of gas adds less throughput than the cubic metre before it. Throughput grows more slowly than the gas feed, so the statement is True.`,
       `**B.** → True
 
-The licensed ceiling of thirty-two tonnes per hour is an inversion of the recovered law. Throughput follows $T(g)=A g^{r}$ with $T(8)=16$ and $T(27)=36$.
-
-$$
-\\frac{36}{16}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\frac{9}{4}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\left(\\frac{3}{2}\\right)^{2}=\\left(\\frac{3}{2}\\right)^{3r}
-$$
-
-$$
-r=\\frac{2}{3}
-$$
-
-The eight-feed run then pins $A$:
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=16
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-4A=16
-$$
-
-$$
-A=4
-$$
-
-The twenty-seven feed confirms the same coefficient:
-
-$$
-27^{\\frac{2}{3}}=9
-$$
-
-$$
-\\frac{36}{9}=4
-$$
-
-At the ceiling:
+Throughput is $T=4 g^{\\frac{2}{3}}$. The licensed ceiling of thirty-two tonnes per hour inverts that law:
 
 $$
 4 g^{\\frac{2}{3}}=32
@@ -13020,7 +6100,11 @@ $$
 $$
 
 $$
-g=8\\cdot 2\\sqrt{2}=16\\sqrt{2}
+g=8\\cdot 2\\sqrt{2}
+$$
+
+$$
+g=16\\sqrt{2}
 $$
 
 $$
@@ -13030,27 +6114,7 @@ $$
 That feed is below twenty-four, so the statement is True.`,
       `**C.** → False
 
-Doubling the gas feed multiplies throughput by $2^{r}$, so the exponent is read from the two logged runs. Throughput follows $T(g)=A g^{r}$ with $T(8)=16$ and $T(27)=36$.
-
-$$
-\\frac{T(27)}{T(8)}=\\frac{A\\cdot 27^{r}}{A\\cdot 8^{r}}
-$$
-
-$$
-\\frac{36}{16}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\frac{9}{4}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\left(\\frac{3}{2}\\right)^{2}=\\left(\\frac{3}{2}\\right)^{3r}
-$$
-
-$$
-r=\\frac{2}{3}
-$$
+The two runs give $r=\\frac{2}{3}$. Doubling the gas feed would double throughput only if $r=1$. With $r=\\frac{2}{3}$ the scale factor is
 
 $$
 \\frac{T(2g)}{T(g)}=2^{\\frac{2}{3}}
@@ -13060,38 +6124,14 @@ $$
 2^{\\frac{2}{3}}\\approx 1.587
 $$
 
-The factor is not two, so the statement is False.`,
+$$
+1.587\\neq 2
+$$
+
+Throughput rises, but not in lockstep with the feed, so the statement is False.`,
       `**D.** → False
 
-Throughput per cubic metre of gas lowers the recovered exponent by one. Throughput follows $T(g)=A g^{r}$ with $T(8)=16$ and $T(27)=36$.
-
-$$
-\\frac{36}{16}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\frac{9}{4}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\left(\\frac{3}{2}\\right)^{2}=\\left(\\frac{3}{2}\\right)^{3r}
-$$
-
-$$
-r=\\frac{2}{3}
-$$
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=16
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-A=4
-$$
+Throughput is $T=4 g^{\\frac{2}{3}}$. Throughput per cubic metre of gas lowers the exponent by one:
 
 $$
 \\frac{T(g)}{g}=4 g^{\\frac{2}{3}-1}
@@ -13101,52 +6141,10 @@ $$
 \\frac{T(g)}{g}=4 g^{-\\frac{1}{3}}
 $$
 
-The derived exponent is negative, so the intensity falls as the feed rises, so the statement is False.`,
+The leftover exponent is negative, so the intensity falls as the feed rises, not rises. Extra gas still adds tonnes, but each cubic metre buys less throughput than the one before it, so the statement is False.`,
       `**E.** → True
 
-Sixty-four cubic metres per hour is a named feed. Throughput follows $T(g)=A g^{r}$ with $T(8)=16$ and $T(27)=36$.
-
-$$
-\\frac{36}{16}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\frac{9}{4}=\\left(\\frac{27}{8}\\right)^{r}
-$$
-
-$$
-\\left(\\frac{3}{2}\\right)^{2}=\\left(\\frac{3}{2}\\right)^{3r}
-$$
-
-$$
-r=\\frac{2}{3}
-$$
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=16
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-4A=16
-$$
-
-$$
-A=4
-$$
-
-$$
-T(g)=4 g^{\\frac{2}{3}}
-$$
-
-At a feed of sixty-four:
+Throughput is $T=4 g^{\\frac{2}{3}}$. At a feed of sixty-four:
 
 $$
 T(64)=4\\cdot 64^{\\frac{2}{3}}
@@ -13161,7 +6159,11 @@ $$
 $$
 
 $$
-T(64)=4\\cdot 16=64
+T(64)=4\\cdot 16
+$$
+
+$$
+T(64)=64
 $$
 
 Throughput is sixty-four tonnes per hour, so the statement is True.`,
@@ -13212,68 +6214,30 @@ $$T(g)=4g^{\\frac{2}{3}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Stored volume follows $V(d)=A d^{2}$, so the exponent is already $2$. The survey that raising the water from three metres to five metres added sixty-four cubic metres recovers $A$, but the comparison with depth uses the exponent.
-
-$$
-A(5^{2}-3^{2})=64
-$$
-
-$$
-A(25-9)=64
-$$
-
-$$
-16A=64
-$$
-
-$$
-A=4
-$$
-
-$$
-V(d)=4d^{2}
-$$
-
-Compare the given exponent with $1$:
+Stored volume is already a square of depth, so the exponent is $2$. Compare that exponent with one:
 
 $$
 2>1
 $$
 
-Volume grows with the square of depth, faster than depth itself, so the statement is True.`,
+Doubling depth therefore multiplies stored volume by four, not by two:
+
+$$
+\\frac{V(2d)}{V(d)}=2^{2}
+$$
+
+$$
+2^{2}=4
+$$
+
+$$
+4>2
+$$
+
+Each extra metre of water adds more storage than the metre before it, because a square steepens as depth grows. Volume grows faster than depth, so the statement is True.`,
       `**B.** → True
 
-Six metres is a named depth of the recovered storage law. Storage follows $V(d)=A d^{2}$, and raising the water from three metres to five metres added sixty-four cubic metres.
-
-$$
-A(5^{2}-3^{2})=64
-$$
-
-$$
-5^{2}=25
-$$
-
-$$
-3^{2}=9
-$$
-
-$$
-A(25-9)=64
-$$
-
-$$
-16A=64
-$$
-
-$$
-A=4
-$$
-
-$$
-V(d)=4d^{2}
-$$
-
-At six metres:
+The survey gives $A=4$, so storage is $V=4d^{2}$. At six metres:
 
 $$
 V(6)=4\\cdot 6^{2}
@@ -13294,29 +6258,7 @@ $$
 The basin holds one hundred and forty-four cubic metres, so the statement is True.`,
       `**C.** → False
 
-A change of input unit replaces depth in metres by a constant multiple. Storage follows $V(d)=A d^{2}$, and the survey from three metres to five metres added sixty-four cubic metres, which recovers $A$ in metre units first.
-
-$$
-A(5^{2}-3^{2})=64
-$$
-
-$$
-A(25-9)=64
-$$
-
-$$
-16A=64
-$$
-
-$$
-A=4
-$$
-
-$$
-V=4d^{2}
-$$
-
-A centimetre reading $d_{\\mathrm{cm}}$ counts one hundred centimetres to the metre, so the input substitution is
+Storage is $V=4d^{2}$ when depth is in metres. A centimetre reading $d_{\\mathrm{cm}}$ counts one hundred centimetres to the metre:
 
 $$
 d=\\frac{d_{\\mathrm{cm}}}{100}
@@ -13346,55 +6288,13 @@ $$
 V=\\frac{1}{2500}\\,d_{\\mathrm{cm}}^{2}
 $$
 
-The centimetre-form coefficient is $\\frac{1}{2500}$, not $4$, so the statement is False.`,
+The centimetre-form coefficient is $\\frac{1}{2500}$, not $4$. Changing the input unit rescales $A$, so the statement is False.`,
       `**D.** → False
 
-A power with a positive exponent is unbounded on $d>0$. Storage follows $V(d)=A d^{2}$, and raising the water from three metres to five metres added sixty-four cubic metres.
-
-$$
-A(5^{2}-3^{2})=64
-$$
-
-$$
-A(25-9)=64
-$$
-
-$$
-16A=64
-$$
-
-$$
-A=4
-$$
-
-$$
-V(d)=4d^{2}
-$$
-
-As depth grows, $4d^{2}$ grows without bound. The taper steepens storage rather than capping it, so the statement is False.`,
+Storage is $V=4d^{2}$. A power with a positive exponent is unbounded on $d>0$: as depth grows, $4d^{2}$ grows without a cap. The taper steepens storage rather than limiting it. A finite cap would need a leftover that goes to zero, not a square that keeps rising, so the statement is False.`,
       `**E.** → False
 
-The added volume from four metres to eight metres is a difference of two recovered levels. Storage follows $V(d)=A d^{2}$, and raising the water from three metres to five metres added sixty-four cubic metres.
-
-$$
-A(5^{2}-3^{2})=64
-$$
-
-$$
-A(25-9)=64
-$$
-
-$$
-16A=64
-$$
-
-$$
-A=4
-$$
-
-$$
-V(d)=4d^{2}
-$$
+Storage is $V=4d^{2}$. The added volume from four metres to eight metres is a difference of two levels:
 
 $$
 V(8)=4\\cdot 8^{2}
@@ -13484,37 +6384,17 @@ $$V=\\frac{4}{10000}\\,d_{\\mathrm{cm}}^{2} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Equal speed increments of a square law are differences of squares, which widen as the band moves up. The index is $E(v)=A v^{2}$, and raising the test speed from thirty to fifty kilometres per hour raised the index by eighty points, which recovers $A$.
+The speed change gives $A=\\frac{1}{20}$, so the index is $E=\\frac{1}{20} v^{2}$. Equal speed increments of a square widen as the band moves up, because
 
 $$
-A(50^{2}-30^{2})=80
-$$
-
-$$
-50^{2}=2500
+E(v+h)-E(v)=\\frac{1}{20}\\bigl((v+h)^{2}-v^{2}\\bigr)
 $$
 
 $$
-30^{2}=900
+E(v+h)-E(v)=\\frac{1}{20}(2vh+h^{2})
 $$
 
-$$
-A(2500-900)=80
-$$
-
-$$
-1600A=80
-$$
-
-$$
-A=\\frac{80}{1600}
-$$
-
-$$
-A=\\frac{1}{20}
-$$
-
-The logged twenty-kilometre-per-hour rise is $E(50)-E(30)=80$. The same increment starting at fifty is
+which grows with $v$. The logged twenty-kilometre-per-hour rise is $80$ points. The same increment starting at fifty is
 
 $$
 E(70)-E(50)=\\frac{1}{20}(70^{2}-50^{2})
@@ -13535,37 +6415,7 @@ $$
 One hundred and twenty is larger than eighty, so equal speed increments raise the index by more at higher speeds, so the statement is True.`,
       `**B.** → True
 
-Forty kilometres per hour is a named speed, not one of the logged test speeds. The index is $E(v)=A v^{2}$, and raising speed from thirty to fifty kilometres per hour raised the index by eighty points.
-
-$$
-A(50^{2}-30^{2})=80
-$$
-
-$$
-50^{2}=2500
-$$
-
-$$
-30^{2}=900
-$$
-
-$$
-A(2500-900)=80
-$$
-
-$$
-1600A=80
-$$
-
-$$
-A=\\frac{1}{20}
-$$
-
-$$
-E(v)=\\frac{1}{20} v^{2}
-$$
-
-At forty kilometres per hour:
+The index is $E=\\frac{1}{20} v^{2}$. At forty kilometres per hour:
 
 $$
 E(40)=\\frac{1}{20}\\cdot 40^{2}
@@ -13586,23 +6436,7 @@ $$
 The index reads eighty, so the statement is True.`,
       `**C.** → False
 
-Index per kilometre per hour of speed lowers the recovered exponent by one. The index is $E(v)=A v^{2}$, and the eighty-point rise from thirty to fifty kilometres per hour recovers $A$.
-
-$$
-A(50^{2}-30^{2})=80
-$$
-
-$$
-A(2500-900)=80
-$$
-
-$$
-1600A=80
-$$
-
-$$
-A=\\frac{1}{20}
-$$
+The index is $E=\\frac{1}{20} v^{2}$. Index per kilometre per hour of speed lowers the exponent by one:
 
 $$
 \\frac{E(v)}{v}=\\frac{\\frac{1}{20} v^{2}}{v}
@@ -13612,45 +6446,13 @@ $$
 \\frac{E(v)}{v}=\\frac{1}{20} v
 $$
 
-The intensity rises in proportion to speed. At $v=30$ it equals $\\frac{30}{20}=1.5$, and at $v=50$ it equals $\\frac{50}{20}=2.5$, so it is not the same at every speed, so the statement is False.`,
+The intensity rises in proportion to speed. At $v=30$ it equals $\\frac{30}{20}=1.5$, and at $v=50$ it equals $\\frac{50}{20}=2.5$. It is not the same at every speed, so the statement is False.`,
       `**D.** → True
 
-The speed that produces a given index is the inverse of the recovered square law. The index is $E(v)=A v^{2}$, and raising speed from thirty to fifty kilometres per hour raised the index by eighty points.
-
-$$
-A(50^{2}-30^{2})=80
-$$
-
-$$
-50^{2}=2500
-$$
-
-$$
-30^{2}=900
-$$
-
-$$
-A(2500-900)=80
-$$
-
-$$
-1600A=80
-$$
-
-$$
-A=\\frac{1}{20}
-$$
-
-$$
-E=\\frac{1}{20} v^{2}
-$$
+The index is $E=\\frac{1}{20} v^{2}$. The speed that produces a given index is the inverse of that square:
 
 $$
 20E=v^{2}
-$$
-
-$$
-v^{2}=20E
 $$
 
 $$
@@ -13661,40 +6463,10 @@ $$
 v=\\sqrt{20}\\, E^{\\frac{1}{2}}
 $$
 
-The inverse exponent $\\frac{1}{2}$ is smaller than one, so speed grows more slowly than the index, so the statement is True.`,
+The inverse exponent $\\frac{1}{2}$ is smaller than one, so speed grows more slowly than the index: doubling the index multiplies the required speed by only $\\sqrt{2}$, about $1.41$, so the statement is True.`,
       `**E.** → False
 
-Eighty kilometres per hour is a named speed of the recovered law, not a linear scaling of the logged eighty-point gap. The index is $E(v)=A v^{2}$, and raising speed from thirty to fifty kilometres per hour raised the index by eighty points.
-
-$$
-A(50^{2}-30^{2})=80
-$$
-
-$$
-50^{2}=2500
-$$
-
-$$
-30^{2}=900
-$$
-
-$$
-A(2500-900)=80
-$$
-
-$$
-1600A=80
-$$
-
-$$
-A=\\frac{1}{20}
-$$
-
-$$
-E(v)=\\frac{1}{20} v^{2}
-$$
-
-At eighty kilometres per hour:
+The index is $E=\\frac{1}{20} v^{2}$. Eighty kilometres per hour is twice forty, and a square law multiplies the index by four, not by a linear guess such as two hundred. At eighty:
 
 $$
 E(80)=\\frac{1}{20}\\cdot 80^{2}
@@ -13760,49 +6532,24 @@ $$v=(20E)^{\\frac{1}{2}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Steel use grows with exponent $2$ and capacity with exponent $3$. A two-metre silo uses twelve square metres of steel and holds eight cubic metres, which recovers both coefficients.
-
-Steel follows $S(h)=a h^{2}$ with $S(2)=12$, and capacity follows $V(h)=k h^{3}$ with $V(2)=8$.
+Steel scales with the square of height and capacity with the cube, so the exponents are already $2$ and $3$. Compare them:
 
 $$
-a\\cdot 2^{2}=12
+2<3
 $$
 
-$$
-4a=12
-$$
+A height factor $k$ therefore multiplies steel by $k^{2}$ and capacity by $k^{3}$. Doubling height, for instance:
 
 $$
-a=3
+\\frac{S(2h)}{S(h)}=2^{2}
 $$
 
 $$
-k\\cdot 2^{3}=8
+2^{2}=4
 $$
 
 $$
-8k=8
-$$
-
-$$
-k=1
-$$
-
-$$
-S(h)=3h^{2}
-$$
-
-$$
-V(h)=h^{3}
-$$
-
-Steel carries exponent $2$ and capacity exponent $3$. Because $2<3$, a height factor $k$ multiplies steel by $k^{2}$ and capacity by $k^{3}$, so steel grows more slowly than capacity as height rises, so the statement is True.`,
-      `**B.** → True
-
-A four-metre capacity uses the recovered cube law. Capacity follows $V(h)=k h^{3}$, and a two-metre silo holds eight cubic metres.
-
-$$
-k\\cdot 2^{3}=8
+\\frac{V(2h)}{V(h)}=2^{3}
 $$
 
 $$
@@ -13810,80 +6557,39 @@ $$
 $$
 
 $$
-8k=8
+4<8
+$$
+
+Steel use grows more slowly than capacity as height rises, so the statement is True.`,
+      `**B.** → True
+
+Capacity scales with the cube of height. Four metres is twice two metres, so capacity multiplies by $2^{3}$:
+
+$$
+\\frac{V(4)}{V(2)}=2^{3}
 $$
 
 $$
-k=1
+2^{3}=8
+$$
+
+The two-metre silo holds eight cubic metres:
+
+$$
+V(4)=8\\cdot 8
 $$
 
 $$
-V(h)=h^{3}
+V(4)=64
 $$
 
-At four metres:
-
-$$
-V(4)=4^{3}
-$$
-
-$$
-4^{3}=4\\cdot 4\\cdot 4
-$$
-
-$$
-4^{3}=64
-$$
-
-The recovered cube law $V(h)=h^{3}$ therefore stores $64$ cubic metres at height $4$. The silo holds sixty-four cubic metres, so the statement is True.`,
+The silo holds sixty-four cubic metres, so the statement is True.`,
       `**C.** → True
 
-Steel as a function of capacity is a composition of the two recovered powers. Steel follows $S(h)=a h^{2}$ with $S(2)=12$, and capacity follows $V(h)=k h^{3}$ with $V(2)=8$.
-
-$$
-a\\cdot 2^{2}=12
-$$
-
-$$
-4a=12
-$$
-
-$$
-a=3
-$$
-
-$$
-k\\cdot 2^{3}=8
-$$
-
-$$
-8k=8
-$$
-
-$$
-k=1
-$$
-
-$$
-S(h)=3h^{2}
-$$
-
-$$
-V(h)=h^{3}
-$$
-
-Invert the cube first:
-
-$$
-V=h^{3}
-$$
+Steel is $S=3h^{2}$ and capacity is $V=h^{3}$. Invert the cube and substitute:
 
 $$
 h=V^{\\frac{1}{3}}
-$$
-
-$$
-S=3 h^{2}
 $$
 
 $$
@@ -13894,28 +6600,10 @@ $$
 S=3 V^{\\frac{2}{3}}
 $$
 
-The composition $S=3 V^{\\frac{2}{3}}$ is $A V^{r}$ with $A=3$ and $r=\\frac{2}{3}$. Steel as a function of capacity is itself a power, so the statement is True.`,
+That is a power of capacity with exponent $\\frac{2}{3}$. Steel as a function of capacity is itself a power, so the statement is True.`,
       `**D.** → False
 
-Two separate two-metre silos add steel; one four-metre silo scales it. Steel follows $S(h)=a h^{2}$ with $S(2)=12$.
-
-$$
-a\\cdot 2^{2}=12
-$$
-
-$$
-4a=12
-$$
-
-$$
-a=3
-$$
-
-$$
-S(h)=3h^{2}
-$$
-
-Two two-metre silos:
+Steel is $S=3h^{2}$. Two separate two-metre silos add skins; one four-metre silo scales the skin by $2^{2}=4$:
 
 $$
 S(2)=3\\cdot 2^{2}
@@ -13930,14 +6618,8 @@ S(2)=12
 $$
 
 $$
-2\\cdot S(2)=2\\cdot 12
-$$
-
-$$
 2\\cdot S(2)=24
 $$
-
-One four-metre silo:
 
 $$
 S(4)=3\\cdot 4^{2}
@@ -13958,25 +6640,7 @@ $$
 The single four-metre silo uses forty-eight square metres, twice as much as the pair, so the statement is False.`,
       `**E.** → False
 
-Eight metres is a named height of the recovered steel law. Steel follows $S(h)=a h^{2}$ with $S(2)=12$.
-
-$$
-a\\cdot 2^{2}=12
-$$
-
-$$
-4a=12
-$$
-
-$$
-a=3
-$$
-
-$$
-S(h)=3h^{2}
-$$
-
-At eight metres:
+Steel is $S=3h^{2}$. At eight metres:
 
 $$
 S(8)=3\\cdot 8^{2}
@@ -14044,70 +6708,30 @@ $$S=3V^{\\frac{2}{3}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → False
 
-Proportionality would require exponent $1$. Inspection time follows $T(n)=A n^{\\frac{1}{2}}$, and moving from four shipments to thirty-six added sixteen hours, which recovers $A$ under the given square-root exponent.
+Inspection time is already a square root of the consignment, so the exponent is $\\frac{1}{2}$. Proportionality would require exponent $1$:
 
 $$
-A\\bigl(36^{\\frac{1}{2}}-4^{\\frac{1}{2}}\\bigr)=16
+\\frac{1}{2}\\neq 1
 $$
 
-$$
-36^{\\frac{1}{2}}=6
-$$
+The recorded move from four shipments to thirty-six multiplies the consignment by nine, but inspection time only by three:
 
 $$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-A(6-2)=16
+\\frac{T(36)}{T(4)}=\\left(\\frac{36}{4}\\right)^{\\frac{1}{2}}
 $$
 
 $$
-4A=16
+\\frac{36}{4}=9
 $$
 
 $$
-A=4
+9^{\\frac{1}{2}}=3
 $$
 
-$$
-T(n)=4 n^{\\frac{1}{2}}
-$$
-
-Proportionality would be $T(n)=A n^{1}$. The recovered exponent is $\\frac{1}{2}$, not $1$, so time is not proportional to the number of shipments, so the statement is False.`,
+Nine times the shipments produce only three times the hours. Extra shipments add less time than the ones before them, so the statement is False.`,
       `**B.** → True
 
-The forty-hour ceiling is an inversion of the recovered law. Inspection time follows $T(n)=A n^{\\frac{1}{2}}$, and moving from four shipments to thirty-six added sixteen hours.
-
-$$
-A\\bigl(36^{\\frac{1}{2}}-4^{\\frac{1}{2}}\\bigr)=16
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-A(6-2)=16
-$$
-
-$$
-4A=16
-$$
-
-$$
-A=4
-$$
-
-$$
-T(n)=4 n^{\\frac{1}{2}}
-$$
-
-At the ceiling $T=40$:
+Inspection is $T=4 n^{\\frac{1}{2}}$. The forty-hour ceiling inverts that law:
 
 $$
 4 n^{\\frac{1}{2}}=40
@@ -14129,97 +6753,31 @@ $$
 n=100
 $$
 
-Time increases with $n$, so every larger consignment overshoots forty hours. The ceiling covers at most one hundred shipments, so the statement is True.`,
+Time still increases with $n$, so every larger consignment overshoots forty hours. The ceiling covers at most one hundred shipments, so the statement is True.`,
       `**C.** → False
 
-The claim is that a modestly larger consignment still fits because extra shipments add almost nothing. Inspection time follows $T(n)=A n^{\\frac{1}{2}}$, and the sixteen-hour jump from four shipments to thirty-six recovers $A$. The forty-hour plan then has a named ceiling.
-
-$$
-A\\bigl(36^{\\frac{1}{2}}-4^{\\frac{1}{2}}\\bigr)=16
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-A(6-2)=16
-$$
-
-$$
-4A=16
-$$
-
-$$
-A=4
-$$
-
-$$
-T(n)=4 n^{\\frac{1}{2}}
-$$
-
-$$
-4 n^{\\frac{1}{2}}=40
-$$
-
-$$
-n^{\\frac{1}{2}}=10
-$$
-
-$$
-n=100
-$$
-
-One extra-large step past that cap is $n=121$:
+Inspection is $T=4 n^{\\frac{1}{2}}$, and the forty-hour ceiling binds at $n=100$. A modestly larger consignment is $n=121$:
 
 $$
 121^{\\frac{1}{2}}=11
 $$
 
 $$
-T(121)=4\\cdot 11=44
+T(121)=4\\cdot 11
+$$
+
+$$
+T(121)=44
 $$
 
 $$
 44>40
 $$
 
-The extra twenty-one shipments add four hours, which the forty-hour plan cannot supply, so the statement is False.`,
+The extra twenty-one shipments still add four hours, which the forty-hour plan cannot supply. Extra shipments add less than they used to, but they do not add almost nothing, so the statement is False.`,
       `**D.** → True
 
-Quadrupling a consignment is an input factor of $4$ on the inspection law $T(n)=A n^{\\frac{1}{2}}$. The sixteen-hour jump from four shipments to thirty-six recovers $A$, but the scale factor cancels $A$.
-
-$$
-A\\bigl(36^{\\frac{1}{2}}-4^{\\frac{1}{2}}\\bigr)=16
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-A(6-2)=16
-$$
-
-$$
-A=4
-$$
-
-$$
-T(n)=4 n^{\\frac{1}{2}}
-$$
-
-$$
-\\frac{T(4n)}{T(n)}=\\frac{4(4n)^{\\frac{1}{2}}}{4 n^{\\frac{1}{2}}}
-$$
+The exponent is $\\frac{1}{2}$, so an input factor of $4$ multiplies inspection time by $4$ to that power:
 
 $$
 \\frac{T(4n)}{T(n)}=4^{\\frac{1}{2}}
@@ -14232,37 +6790,7 @@ $$
 Quadrupling the consignment doubles inspection time, so the statement is True.`,
       `**E.** → False
 
-Forty-nine shipments is a named consignment. Inspection time follows $T(n)=A n^{\\frac{1}{2}}$, and moving from four shipments to thirty-six added sixteen hours.
-
-$$
-A\\bigl(36^{\\frac{1}{2}}-4^{\\frac{1}{2}}\\bigr)=16
-$$
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-A(6-2)=16
-$$
-
-$$
-4A=16
-$$
-
-$$
-A=4
-$$
-
-$$
-T(n)=4 n^{\\frac{1}{2}}
-$$
-
-At forty-nine shipments:
+Inspection is $T=4 n^{\\frac{1}{2}}$. At forty-nine shipments:
 
 $$
 T(49)=4\\cdot 49^{\\frac{1}{2}}
@@ -14326,7 +6854,7 @@ $$n\\le 100 \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Doubling the distance is an input factor of $2$ on the inverse-square law $I(d)=A d^{-2}$. The logged drop from two metres to four metres is not needed, because $A$ cancels in the scale factor.
+Doubling distance is an input factor of $2$ on the inverse-square law, and the unknown coefficient cancels:
 
 $$
 \\frac{I(2d)}{I(d)}=\\frac{A(2d)^{-2}}{A d^{-2}}
@@ -14340,48 +6868,10 @@ $$
 2^{-2}=\\frac{1}{4}
 $$
 
-The same factor is $\\left(\\frac{1}{2}\\right)^{2}=\\frac{1}{4}$. Doubling the distance cuts illuminance to one quarter, so the statement is True.`,
+The logged move from two metres to four metres is that same doubling. Illuminance falls to one quarter, so the statement is True.`,
       `**B.** → True
 
-Five metres is a named distance of the recovered law. Illuminance follows $I(d)=A d^{-2}$, and moving the meter from two metres to four metres cut the reading by one hundred and fifty lux.
-
-$$
-A\\bigl(2^{-2}-4^{-2}\\bigr)=150
-$$
-
-$$
-2^{-2}=\\frac{1}{4}
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-A\\left(\\frac{1}{4}-\\frac{1}{16}\\right)=150
-$$
-
-$$
-A\\cdot\\frac{3}{16}=150
-$$
-
-$$
-A=150\\cdot\\frac{16}{3}
-$$
-
-$$
-A=50\\cdot 16
-$$
-
-$$
-A=800
-$$
-
-$$
-I(d)=800 d^{-2}
-$$
-
-At five metres:
+Illuminance is $I=800 d^{-2}$. Five metres is not one of the logged stations, so the reading has to be taken from the law rather than from the hundred-and-fifty lux drop:
 
 $$
 I(5)=800\\cdot 5^{-2}
@@ -14402,68 +6892,10 @@ $$
 Illuminance is thirty-two lux, so the statement is True.`,
       `**C.** → False
 
-A negative exponent sends illuminance towards zero from above, never through zero. Illuminance follows $I(d)=A d^{-2}$, and the logged drop from two metres to four metres recovers $A$.
-
-$$
-A\\bigl(2^{-2}-4^{-2}\\bigr)=150
-$$
-
-$$
-2^{-2}=\\frac{1}{4}
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-A\\left(\\frac{1}{4}-\\frac{1}{16}\\right)=150
-$$
-
-$$
-A\\cdot\\frac{3}{16}=150
-$$
-
-$$
-A=800
-$$
-
-$$
-I(d)=\\frac{800}{d^{2}}
-$$
-
-For every $d>0$ this is positive, and $I(d)\\to 0$ as the hall lengthens. Illuminance stays positive, so the statement is False.`,
+Illuminance is $I=\\frac{800}{d^{2}}$. For every $d>0$ the square is positive and the coefficient is positive, so $I(d)>0$. A negative exponent sends the reading towards zero from above as the hall lengthens, never through zero. Illuminance stays positive, so the statement is False.`,
       `**D.** → False
 
-Inverting a power with a nonzero exponent produces another power, whether that exponent is negative or not. Illuminance follows $I(d)=A d^{-2}$, and moving the meter from two metres to four metres cut the reading by one hundred and fifty lux.
-
-$$
-A\\bigl(2^{-2}-4^{-2}\\bigr)=150
-$$
-
-$$
-2^{-2}=\\frac{1}{4}
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-A\\left(\\frac{1}{4}-\\frac{1}{16}\\right)=150
-$$
-
-$$
-A\\cdot\\frac{3}{16}=150
-$$
-
-$$
-A=800
-$$
-
-$$
-I=800 d^{-2}
-$$
+Illuminance is $I=800 d^{-2}$. A power with a nonzero exponent inverts to another power, whether that exponent is negative or not:
 
 $$
 I=\\frac{800}{d^{2}}
@@ -14478,47 +6910,13 @@ d=\\left(\\frac{800}{I}\\right)^{\\frac{1}{2}}
 $$
 
 $$
-d=800^{\\frac{1}{2}} I^{-\\frac{1}{2}}
-$$
-
-$$
 d=\\sqrt{800}\\, I^{-\\frac{1}{2}}
 $$
 
-Distance is a power of illuminance with exponent $-\\frac{1}{2}$, so the statement is False.`,
+Distance is a power of illuminance with exponent $-\\frac{1}{2}$. Falling along the curve does not stop the inverse from being a power, so the statement is False.`,
       `**E.** → False
 
-Three metres is a named distance of the recovered law. Illuminance follows $I(d)=A d^{-2}$, and moving the meter from two metres to four metres cut the reading by one hundred and fifty lux.
-
-$$
-A\\bigl(2^{-2}-4^{-2}\\bigr)=150
-$$
-
-$$
-2^{-2}=\\frac{1}{4}
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-A\\left(\\frac{1}{4}-\\frac{1}{16}\\right)=150
-$$
-
-$$
-A\\cdot\\frac{3}{16}=150
-$$
-
-$$
-A=800
-$$
-
-$$
-I(d)=800 d^{-2}
-$$
-
-At three metres:
+Illuminance is $I=800 d^{-2}$. At three metres:
 
 $$
 I(3)=\\frac{800}{3^{2}}
@@ -14530,6 +6928,10 @@ $$
 
 $$
 \\frac{800}{9}\\approx 88.89
+$$
+
+$$
+88.89<90
 $$
 
 The reading is below ninety lux, so the statement is False.`,
@@ -14580,49 +6982,7 @@ $$d=\\sqrt{800}\\,I^{-\\frac{1}{2}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → False
 
-Audit cost follows $C(n)=A n^{\\frac{3}{4}}$ after $n>0$ accounts, with the coefficient unknown. The logged $1900$ is the rise $C(81)-C(16)$, not a single extra-account increment. The claim compares those increments after eighty-one accounts and after sixteen, so the coefficient and the derivative are both needed.
-
-The two sizes are fourth powers:
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}
-$$
-
-$$
-16^{\\frac{3}{4}}=2^{3}=8
-$$
-
-$$
-81=3^{4}
-$$
-
-$$
-81^{\\frac{3}{4}}=(3^{4})^{\\frac{3}{4}}
-$$
-
-$$
-81^{\\frac{3}{4}}=3^{3}=27
-$$
-
-The recorded rise is then:
-
-$$
-C(81)-C(16)=A\\cdot 27-A\\cdot 8
-$$
-
-$$
-19A=1900
-$$
-
-$$
-A=\\frac{1900}{19}=100
-$$
-
-The recovered schedule is $C(n)=100 n^{\\frac{3}{4}}$. An extra account is the derivative:
+The recovered schedule is $C(n)=100 n^{\\frac{3}{4}}$. An extra account is the derivative, and the leftover exponent $-\\frac{1}{4}$ is negative, so each extra account adds less than the one before it:
 
 $$
 C'(n)=100\\cdot\\frac{3}{4}n^{-\\frac{1}{4}}
@@ -14646,7 +7006,7 @@ $$
 C'(16)=\\frac{75}{2}
 $$
 
-After eighty-one accounts:
+After eighty-one:
 
 $$
 C'(81)=75\\cdot 81^{-\\frac{1}{4}}
@@ -14660,169 +7020,39 @@ $$
 C'(81)=25
 $$
 
-Since $25<\\frac{75}{2}$, one has $C'(81)<C'(16)$. An extra account adds less after eighty-one accounts than after sixteen, so the statement is False.`,
+Because $25<\\frac{75}{2}$, an extra account adds less after eighty-one than after sixteen, so the statement is False.`,
       `**B.** → True
 
-The sixteen-account bill is a level of $C(n)=A n^{\\frac{3}{4}}$, not the recorded $1900$ rise. That rise is $C(81)-C(16)$, so $A$ must be recovered before $C(16)$ can be read.
-
-Both engagement sizes are fourth powers:
+At sixteen accounts the power is $8$, so the bill is
 
 $$
-16=2^{4}
+C(16)=100\\cdot 8=800
 $$
 
-$$
-16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}
-$$
-
-$$
-16^{\\frac{3}{4}}=2^{3}=8
-$$
-
-$$
-81=3^{4}
-$$
-
-$$
-81^{\\frac{3}{4}}=(3^{4})^{\\frac{3}{4}}
-$$
-
-$$
-81^{\\frac{3}{4}}=3^{3}=27
-$$
-
-The recorded rise is therefore
-
-$$
-C(81)-C(16)=A\\cdot 27-A\\cdot 8
-$$
-
-$$
-19A=1900
-$$
-
-$$
-A=\\frac{1900}{19}=100
-$$
-
-The recovered law is $C(n)=100 n^{\\frac{3}{4}}$. At sixteen accounts:
-
-$$
-C(16)=100\\cdot 16^{\\frac{3}{4}}
-$$
-
-$$
-C(16)=100\\cdot 8
-$$
-
-$$
-C(16)=800
-$$
-
-The companion check $C(81)=100\\cdot 27=2700$ returns the logged gap $1900$. Sixteen accounts cost $800$ under the practice schedule, so the statement is True.`,
+Sixteen accounts cost $800$ under the practice schedule, so the statement is True.`,
       `**C.** → True
 
-The practice quote is $C(n)=A n^{\\frac{3}{4}}$ and the rival quotes $R(n)=50n$. A tie is $C(n)=R(n)$, so $A$ is recovered from the $1900$ rise first.
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}=2^{3}=8
-$$
-
-$$
-81=3^{4}
-$$
-
-$$
-81^{\\frac{3}{4}}=(3^{4})^{\\frac{3}{4}}=3^{3}=27
-$$
-
-$$
-A(27-8)=1900
-$$
-
-$$
-A=\\frac{1900}{19}=100
-$$
-
-The two schedules are then $100 n^{\\frac{3}{4}}$ and $50n$. For $n>0$:
+The rival quotes $R(n)=50n$. A tie with $C(n)=100 n^{\\frac{3}{4}}$ is
 
 $$
 100 n^{\\frac{3}{4}}=50n
 $$
-
-Divide by $50 n^{\\frac{3}{4}}$:
 
 $$
 2=n^{\\frac{1}{4}}
 $$
 
 $$
-n=2^{4}=16
+n=16
 $$
 
-The ratio ranks every larger engagement:
-
-$$
-\\frac{C(n)}{R(n)}=\\frac{100 n^{\\frac{3}{4}}}{50n}
-$$
-
-$$
-\\frac{C(n)}{R(n)}=2 n^{-\\frac{1}{4}}
-$$
-
-For $n>16$ one has $n^{\\frac{1}{4}}>2$, so the ratio is strictly less than $1$. Direct check at the recorded sizes: $C(16)=800=R(16)$, while $C(81)=2700$ and $R(81)=4050$. The practice is cheaper than the rival at every engagement larger than sixteen accounts, so the statement is True.`,
+For $n>16$ one has $n^{\\frac{1}{4}}>2$, so the ratio $\\frac{C(n)}{R(n)}=2 n^{-\\frac{1}{4}}$ is strictly less than $1$. The practice is cheaper than the rival past the sixteen-account tie, so the statement is True.`,
       `**D.** → True
 
-A bill of $12500$ is inverted through $C(n)=A n^{\\frac{3}{4}}$. The coefficient comes from the $1900$ rise between $16$ and $81$ accounts.
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}
-$$
-
-$$
-16^{\\frac{3}{4}}=2^{3}=8
-$$
-
-$$
-81=3^{4}
-$$
-
-$$
-81^{\\frac{3}{4}}=(3^{4})^{\\frac{3}{4}}
-$$
-
-$$
-81^{\\frac{3}{4}}=3^{3}=27
-$$
-
-$$
-C(81)-C(16)=A\\cdot 27-A\\cdot 8
-$$
-
-$$
-19A=1900
-$$
-
-$$
-A=\\frac{1900}{19}=100
-$$
-
-Now invert the target bill:
+A bill of $12500$ on $C(n)=100 n^{\\frac{3}{4}}$ means
 
 $$
 100 n^{\\frac{3}{4}}=12500
-$$
-
-$$
-n^{\\frac{3}{4}}=\\frac{12500}{100}
 $$
 
 $$
@@ -14841,42 +7071,16 @@ $$
 n=5^{4}=625
 $$
 
-Forward check:
-
-$$
-625=5^{4}
-$$
-
-$$
-625^{\\frac{3}{4}}=(5^{4})^{\\frac{3}{4}}=5^{3}=125
-$$
-
-$$
-100\\cdot 125=12500
-$$
-
-A bill of $12500$ corresponds to an engagement of $625$ accounts, so the statement is True.`,
+Forward: $625^{\\frac{3}{4}}=125$ and $100\\cdot 125=12500$, so the statement is True.`,
       `**E.** → False
 
-The practice bills $C(n)=A n^{\\frac{3}{4}}$ for $n>0$ accounts. Doubling the account count is a scale factor on $n$, and $A$ cancels:
+Doubling accounts would double the bill only if the exponent were $1$. With exponent $\\frac{3}{4}$ the scale factor is
 
 $$
-\\frac{C(2n)}{C(n)}=\\frac{A(2n)^{\\frac{3}{4}}}{A n^{\\frac{3}{4}}}
+\\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}\\approx 1.68
 $$
 
-$$
-\\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}
-$$
-
-$$
-2^{\\frac{3}{4}}=(2^{3})^{\\frac{1}{4}}=8^{\\frac{1}{4}}
-$$
-
-$$
-2^{\\frac{3}{4}}\\approx 1.6818
-$$
-
-That is about a $68\\%$ rise, not a doubling. An exact doubling would need exponent $1$, which would give $\\frac{C(2n)}{C(n)}=2$. Doubling the number of accounts does not double the practice bill, so the statement is False.`,
+not $2$. The bill rises, but not in lockstep with the account count, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 51,
@@ -14940,211 +7144,49 @@ $$\\frac{C(2n)}{C(n)}=2^{\\frac{3}{4}}\\approx 1.68$$
     tactical_explanations: [
       `**A.** → True
 
-Downwind concentration follows $c(x)=A x^{-\\frac{3}{2}}$ for $x>0$ metres. Inverse-linear decay would carry exponent $-1$. The $43.75$ gap recovers $A$ and leaves the given exponent to compare with $-1$.
-
-$$
-4=2^{2}
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}=2^{3}=8
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}=2^{6}=64
-$$
-
-$$
-16^{-\\frac{3}{2}}=\\frac{1}{64}
-$$
-
-$$
-c(4)-c(16)=A\\left(\\frac{1}{8}-\\frac{1}{64}\\right)=\\frac{7A}{64}
-$$
-
-$$
-\\frac{7A}{64}=43.75
-$$
-
-$$
-A=400
-$$
-
-The recovered law is $c(x)=400 x^{-\\frac{3}{2}}$. The exponent $-\\frac{3}{2}$ is strictly less than $-1$. Concentration falls faster than inverse-linear decay, so the statement is True.`,
+Inverse-linear decay would carry exponent $-1$. The given exponent is $-\\frac{3}{2}$, which is strictly less than $-1$, so concentration falls faster than $1/x$: each extra metre of distance removes a larger share than inverse-linear decay would, so the statement is True.`,
       `**B.** → True
 
-A reading at $100$ metres is a level of $c(x)=A x^{-\\frac{3}{2}}$, so the coefficient must be recovered from the two monitors. The nearer monitor reads $43.75$ more than the farther one.
+The recovered law is $c(x)=400 x^{-\\frac{3}{2}}$. At one hundred metres:
 
 $$
-4=2^{2}
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}=2^{3}=8
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}=2^{6}=64
-$$
-
-$$
-16^{-\\frac{3}{2}}=\\frac{1}{64}
-$$
-
-$$
-A\\left(\\frac{1}{8}-\\frac{1}{64}\\right)=43.75
-$$
-
-$$
-\\frac{7A}{64}=43.75
-$$
-
-$$
-7A=43.75\\cdot 64
-$$
-
-$$
-43.75=\\frac{175}{4}
-$$
-
-$$
-7A=\\frac{175}{4}\\cdot 64=175\\cdot 16=2800
-$$
-
-$$
-A=400
-$$
-
-At one hundred metres:
-
-$$
-100^{\\frac{3}{2}}=(\\sqrt{100})^{3}=10^{3}=1000
+100^{\\frac{3}{2}}=10^{3}=1000
 $$
 
 $$
 c(100)=\\frac{400}{1000}=0.4
 $$
 
-Concentration at $100$ metres is $0.4$ microgram per cubic metre, so the statement is True.`,
+That is the claimed reading, so the statement is True.`,
       `**C.** → True
 
-Halving distance is a scale factor on $x$ in $c(x)=A x^{-\\frac{3}{2}}$. The coefficient cancels:
+Halving distance scales concentration by $2$ to the power of $\\frac{3}{2}$, and the coefficient cancels:
 
 $$
-\\frac{c\\bigl(\\frac{x}{2}\\bigr)}{c(x)}=\\left(\\frac{1}{2}\\right)^{-\\frac{3}{2}}
-$$
-
-$$
-\\left(\\frac{1}{2}\\right)^{-\\frac{3}{2}}=2^{\\frac{3}{2}}
+\\frac{c\\bigl(\\frac{x}{2}\\bigr)}{c(x)}=2^{\\frac{3}{2}}
 $$
 
 $$
-2^{\\frac{3}{2}}=2\\sqrt{2}
+2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.83
 $$
 
-$$
-\\sqrt{2}\\approx 1.4142
-$$
-
-$$
-2\\sqrt{2}\\approx 2.828
-$$
-
-That factor is larger than $2$. Halving the distance more than doubles the concentration, so the statement is True.`,
+That factor is larger than $2$, so halving more than doubles the reading, so the statement is True.`,
       `**D.** → True
 
-The four-metre reading is $c(4)$, not the recorded gap $43.75$. That gap is $c(4)-c(16)$, so $A$ must be recovered first.
-
-$$
-4=2^{2}
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}=2^{3}=8
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}=2^{6}=64
-$$
-
-$$
-16^{-\\frac{3}{2}}=\\frac{1}{64}
-$$
-
-$$
-c(4)-c(16)=A\\left(\\frac{1}{8}-\\frac{1}{64}\\right)=\\frac{7A}{64}
-$$
-
-$$
-\\frac{7A}{64}=43.75
-$$
-
-$$
-7A=43.75\\cdot 64=2800
-$$
-
-$$
-A=400
-$$
-
-The nearer monitor is then:
-
-$$
-c(4)=400\\cdot\\frac{1}{8}=50
-$$
-
-The farther check:
-
-$$
-c(16)=400\\cdot\\frac{1}{64}=6.25
-$$
-
-$$
-c(4)-c(16)=50-6.25=43.75
-$$
-
-The monitor at $4$ metres reads $50$ micrograms per cubic metre, so the statement is True.`,
+At four metres the power is $\\frac{1}{8}$, so the nearer reading is $400\\cdot\\frac{1}{8}=50$, so the statement is True.`,
       `**E.** → False
 
-Doubling distance scales concentration by $2$ to the power of the given exponent, and $A$ cancels:
+Doubling distance would cut concentration in half only if the exponent were $-1$. With exponent $-\\frac{3}{2}$ the surviving fraction is
 
 $$
 \\frac{c(2x)}{c(x)}=2^{-\\frac{3}{2}}
 $$
 
 $$
-2^{-\\frac{3}{2}}=\\frac{1}{2^{\\frac{3}{2}}}=\\frac{1}{2\\sqrt{2}}
+2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\\approx 0.35
 $$
 
-$$
-\\frac{1}{2\\sqrt{2}}\\approx 0.3536
-$$
-
-About $35\\%$ of the original reading survives, so the cut is $1-0.3536\\approx 0.646$, about $65\\%$, not $50\\%$. A $50\\%$ cut would need exponent $-1$, which would give $\\frac{c(2x)}{c(x)}=\\frac{1}{2}$. Doubling the distance does not cut concentration by exactly $50\\%$, so the statement is False.`,
+a cut of about $65\\%$, not $50\\%$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 52,
@@ -15200,37 +7242,7 @@ $$\\frac{c\\bigl(\\frac{x}{2}\\bigr)}{c(x)}=2\\sqrt{2} \\qquad \\frac{c(2x)}{c(x
     tactical_explanations: [
       `**A.** → True
 
-Losses are a two-stage chain: surge $s(w)=0.5 w^{0.5}$ metres, then $L(s)=32 s^{3}$. The claim is about the composed exponent, so the stages must be substituted.
-
-$$
-L(w)=32\\bigl(0.5 w^{0.5}\\bigr)^{3}
-$$
-
-$$
-L(w)=32\\cdot 0.5^{3}\\cdot w^{0.5\\cdot 3}
-$$
-
-$$
-0.5=\\frac{1}{2}
-$$
-
-$$
-\\left(\\frac{1}{2}\\right)^{3}=\\frac{1}{8}
-$$
-
-$$
-32\\cdot\\frac{1}{8}=4
-$$
-
-$$
-0.5\\cdot 3=\\frac{3}{2}
-$$
-
-$$
-L(w)=4 w^{\\frac{3}{2}}
-$$
-
-The composed exponent $\\frac{3}{2}$ exceeds $1$, so
+The composed law is $L(w)=4 w^{\\frac{3}{2}}$. The exponent $\\frac{3}{2}$ exceeds $1$, so doubling the wind multiplies loss by
 
 $$
 \\frac{L(2w)}{L(w)}=2^{\\frac{3}{2}}
@@ -15243,14 +7255,10 @@ $$
 Losses accelerate as the wind strengthens, so the statement is True.`,
       `**B.** → False
 
-Surge is the inner stage $s(w)=0.5 w^{0.5}$, not the composed loss index. At wind speed $64$:
+Surge is the inner stage $s(w)=0.5 w^{0.5}$, not the composed loss. At wind speed $64$:
 
 $$
 s(64)=0.5\\cdot 64^{0.5}
-$$
-
-$$
-64=8^{2}
 $$
 
 $$
@@ -15261,32 +7269,10 @@ $$
 s(64)=0.5\\cdot 8=4
 $$
 
-The figure $8$ is $\\sqrt{64}$ before the factor $0.5$ is applied. Surge height is $4$ metres, not $8$, so the statement is False.`,
+The figure $8$ is $\\sqrt{64}$ before the factor $0.5$ is applied. Surge is $4$ metres, not $8$, so the statement is False.`,
       `**C.** → True
 
-An extra unit of wind is the derivative of the composed loss. Substitute the surge law into $L(s)=32 s^{3}$ first.
-
-$$
-L(w)=32\\bigl(0.5 w^{0.5}\\bigr)^{3}
-$$
-
-$$
-L(w)=32\\cdot 0.5^{3}\\cdot w^{1.5}
-$$
-
-$$
-0.5^{3}=0.125=\\frac{1}{8}
-$$
-
-$$
-32\\cdot\\frac{1}{8}=4
-$$
-
-$$
-L(w)=4 w^{\\frac{3}{2}}
-$$
-
-The extra-wind increment is then:
+An extra unit of wind is the derivative of $L(w)=4 w^{\\frac{3}{2}}$:
 
 $$
 L'(w)=4\\cdot\\frac{3}{2} w^{\\frac{1}{2}}
@@ -15296,58 +7282,10 @@ $$
 L'(w)=6 w^{\\frac{1}{2}}
 $$
 
-Because the remaining exponent $\\frac{1}{2}$ is positive, $L'(w)$ rises with $w$. At a low wind $w=1$:
-
-$$
-L'(1)=6\\cdot 1^{\\frac{1}{2}}=6
-$$
-
-At a high wind $w=16$:
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-L'(16)=6\\cdot 4=24
-$$
-
-Since $24>6$, an extra unit of wind adds more to the loss index at high wind than at low wind, so the statement is True.`,
+The leftover exponent $\\frac{1}{2}$ is positive, so $L'(w)$ rises with $w$. At $w=1$ the increment is $6$; at $w=16$ it is $6\\cdot 4=24$. An extra unit of wind adds more at high wind than at low wind, so the statement is True.`,
       `**D.** → True
 
-A loss of $1000$ is inverted through the composed law. Substitute the surge stage first.
-
-$$
-s(w)=0.5 w^{0.5}
-$$
-
-$$
-L(s)=32 s^{3}
-$$
-
-$$
-L(w)=32\\bigl(0.5 w^{0.5}\\bigr)^{3}
-$$
-
-$$
-0.5=\\frac{1}{2}
-$$
-
-$$
-\\left(\\frac{1}{2}\\right)^{3}=\\frac{1}{8}
-$$
-
-$$
-32\\cdot\\frac{1}{8}=4
-$$
-
-$$
-0.5\\cdot 3=\\frac{3}{2}
-$$
-
-$$
-L(w)=4 w^{\\frac{3}{2}}
-$$
+A loss of $1000$ on $L(w)=4 w^{\\frac{3}{2}}$ means
 
 $$
 4 w^{\\frac{3}{2}}=1000
@@ -15361,52 +7299,10 @@ $$
 w=250^{\\frac{2}{3}}
 $$
 
-Because $6.3^{3}=250.047$,
-
-$$
-250^{\\frac{1}{3}}\\approx 6.30
-$$
-
-$$
-w\\approx 6.30^{2}=39.69
-$$
-
-That is about $39.7$, so the statement is True.`,
+Because $6.3^{3}=250.047$, one has $250^{\\frac{1}{3}}\\approx 6.30$ and $w\\approx 6.30^{2}=39.69$, about $39.7$, so the statement is True.`,
       `**E.** → False
 
-Proportionality to wind speed would require composed exponent $1$. Substituting the surge law gives:
-
-$$
-L(w)=32\\bigl(0.5 w^{0.5}\\bigr)^{3}
-$$
-
-$$
-L(w)=32\\cdot 0.5^{3}\\cdot w^{0.5\\cdot 3}
-$$
-
-$$
-0.5^{3}=\\frac{1}{8}
-$$
-
-$$
-32\\cdot\\frac{1}{8}=4
-$$
-
-$$
-0.5\\cdot 3=\\frac{3}{2}
-$$
-
-$$
-L(w)=4 w^{\\frac{3}{2}}
-$$
-
-The exponent $\\frac{3}{2}$ is not $1$. Doubling the wind then multiplies loss by
-
-$$
-\\frac{L(2w)}{L(w)}=2^{\\frac{3}{2}}=2\\sqrt{2}
-$$
-
-rather than by $2$. The composed loss index is not proportional to wind speed, so the statement is False.`,
+Proportionality to wind speed would need composed exponent $1$. The composed law is $L(w)=4 w^{\\frac{3}{2}}$, so doubling the wind multiplies loss by $2^{\\frac{3}{2}}=2\\sqrt{2}$, not by $2$, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 53,
@@ -15466,75 +7362,13 @@ $$L'(w)=6 w^{0.5}$$
     tactical_explanations: [
       `**A.** → True
 
-Price impact follows $I(v)=A v^{\\frac{1}{2}}$ basis points for order size $v>0$. The extra $6$ basis points is $I(0.09)-I(0.04)$, which recovers $A$ and leaves the given exponent to compare with $1$.
-
-$$
-\\sqrt{0.09}=\\sqrt{\\frac{9}{100}}=\\frac{3}{10}=0.3
-$$
-
-$$
-\\sqrt{0.04}=\\sqrt{\\frac{4}{100}}=\\frac{2}{10}=0.2
-$$
-
-$$
-A(0.3-0.2)=6
-$$
-
-$$
-0.1A=6
-$$
-
-$$
-A=\\frac{6}{0.1}=60
-$$
-
-The recovered law is $I(v)=60 v^{\\frac{1}{2}}$. The exponent $\\frac{1}{2}$ is less than $1$, so
-
-$$
-\\frac{I(2v)}{I(v)}=2^{\\frac{1}{2}}=\\sqrt{2}<2
-$$
-
-Impact grows more slowly than order size, so the statement is True.`,
+An exponent smaller than one means impact grows more slowly than order size: each extra fraction of ADV adds less impact than the last. One half is below one, so doubling $v$ multiplies impact by $\\sqrt{2}\\approx 1.41$, not by $2$, so the statement is True.`,
       `**B.** → True
 
-Impact at $0.16$ ADV is a level of $I(v)=A v^{\\frac{1}{2}}$, so the coefficient must be recovered from the $6$ basis-point increment.
+The recovered impact is $I(v)=60 v^{\\frac{1}{2}}$. At $0.16$ ADV:
 
 $$
-0.09=\\frac{9}{100}
-$$
-
-$$
-\\sqrt{0.09}=\\frac{3}{10}=0.3
-$$
-
-$$
-0.04=\\frac{4}{100}
-$$
-
-$$
-\\sqrt{0.04}=\\frac{2}{10}=0.2
-$$
-
-$$
-I(0.09)-I(0.04)=A(0.3-0.2)
-$$
-
-$$
-0.1A=6
-$$
-
-$$
-A=\\frac{6}{0.1}=60
-$$
-
-At $0.16$ ADV:
-
-$$
-0.16=\\frac{16}{100}=\\frac{4}{25}
-$$
-
-$$
-\\sqrt{0.16}=\\frac{4}{10}=0.4
+\\sqrt{0.16}=0.4
 $$
 
 $$
@@ -15545,81 +7379,19 @@ $$
 I(0.16)=24
 $$
 
-Impact at $0.16$ ADV is $24$ basis points, so the statement is True.`,
+That is the claimed impact, so the statement is True.`,
       `**C.** → True
 
-The scaled impact charge is $v I(v)$. Recover $A$ from the $6$ basis-point rise, then multiply by $v$, which raises the exponent by one.
+Impact is a square root, so multiplying by $v$ raises the exponent by one: the scaled charge $v I(v)$ is a three-halves power. Doubling order size then multiplies the charge by
 
 $$
-\\sqrt{0.09}=0.3
+2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.83
 $$
 
-$$
-\\sqrt{0.04}=0.2
-$$
-
-$$
-A(0.3-0.2)=6
-$$
-
-$$
-A=60
-$$
-
-$$
-I(v)=60 v^{\\frac{1}{2}}
-$$
-
-$$
-v I(v)=v\\cdot 60 v^{\\frac{1}{2}}
-$$
-
-$$
-v I(v)=60 v^{\\frac{3}{2}}
-$$
-
-The exponent $\\frac{3}{2}$ exceeds $1$, so doubling $v$ multiplies the charge by
-
-$$
-\\frac{(2v)I(2v)}{v I(v)}=2^{\\frac{3}{2}}
-$$
-
-$$
-2^{\\frac{3}{2}}=2\\sqrt{2}>2
-$$
-
-The scaled impact charge grows faster than linearly in order size, so the statement is True.`,
+which exceeds $2$. The scaled charge grows faster than linearly, so the statement is True.`,
       `**D.** → True
 
-Break-even equates the scaled charge $v I(v)$ with the notional fee $F(v)=30v$. The coefficient of impact comes from the $6$ basis-point increment between $0.04$ and $0.09$ ADV.
-
-$$
-\\sqrt{0.09}=0.3
-$$
-
-$$
-\\sqrt{0.04}=0.2
-$$
-
-$$
-A(0.3-0.2)=6
-$$
-
-$$
-A=\\frac{6}{0.1}=60
-$$
-
-The scaled charge is then
-
-$$
-I(v)=60 v^{\\frac{1}{2}}
-$$
-
-$$
-v I(v)=60 v^{\\frac{3}{2}}
-$$
-
-For $v>0$:
+The scaled charge is $60 v^{\\frac{3}{2}}$. Equating to the fee $30v$:
 
 $$
 60 v^{\\frac{3}{2}}=30v
@@ -15634,51 +7406,13 @@ $$
 $$
 
 $$
-v=\\left(\\frac{1}{2}\\right)^{2}=\\frac{1}{4}=0.25
+v=\\frac{1}{4}=0.25
 $$
 
-Both sides equal $7.5$ there:
-
-$$
-I(0.25)=60\\cdot\\frac{1}{2}=30
-$$
-
-$$
-0.25\\cdot 30=7.5
-$$
-
-$$
-F(0.25)=30\\cdot 0.25=7.5
-$$
-
-The notional fee and the scaled impact charge meet at $0.25$ ADV, so the statement is True.`,
+Both sides equal $7.5$ there: $I(0.25)=30$ and $0.25\\cdot 30=7.5=F(0.25)$, so the statement is True.`,
       `**E.** → False
 
-A charge proportional to order size would carry exponent $1$. Multiplying recovered square-root impact by $v$ produces a different power. From $I(0.09)-I(0.04)=6$:
-
-$$
-\\sqrt{0.09}-\\sqrt{0.04}=0.3-0.2=0.1
-$$
-
-$$
-0.1A=6
-$$
-
-$$
-A=60
-$$
-
-$$
-v I(v)=60 v^{\\frac{3}{2}}
-$$
-
-Doubling $v$ then multiplies the charge by
-
-$$
-2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.828
-$$
-
-not by $2$. The scaled impact charge is a three-halves power, not a proportional law, so the statement is False.`,
+A charge proportional to order size would carry exponent $1$. Multiplying square-root impact by $v$ produces exponent $\\frac{3}{2}$, so doubling $v$ multiplies the charge by $2\\sqrt{2}$, not by $2$, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 54,
@@ -15734,37 +7468,7 @@ $$\\frac{(2v)I(2v)}{vI(v)}=2^{\\frac{3}{2}}=2\\sqrt{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Daily energy follows $E(m)=A m^{\\frac{2}{3}}$ for body mass $m>0$ kilograms. Inverting that law for mass as a function of energy needs the coefficient, which is recovered from the $70$ unit gap.
-
-$$
-27=3^{3}
-$$
-
-$$
-27^{\\frac{2}{3}}=(3^{3})^{\\frac{2}{3}}=3^{2}=9
-$$
-
-$$
-64=4^{3}
-$$
-
-$$
-64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}=4^{2}=16
-$$
-
-$$
-E(64)-E(27)=A(16-9)=7A
-$$
-
-$$
-7A=70
-$$
-
-$$
-A=10
-$$
-
-The recovered law is $E=10 m^{\\frac{2}{3}}$. Solving for mass:
+A power with a nonzero exponent inverts to another power. From $E=10 m^{\\frac{2}{3}}$ one gets
 
 $$
 \\frac{E}{10}=m^{\\frac{2}{3}}
@@ -15774,148 +7478,22 @@ $$
 m=\\left(\\frac{E}{10}\\right)^{\\frac{3}{2}}
 $$
 
-That is a power of $E$ with exponent $\\frac{3}{2}$. The body mass that produces a given daily energy is a power function of that energy, so the statement is True.`,
+a three-halves power of the energy, so the statement is True.`,
       `**B.** → True
 
-A $64$ kg reading is a level of $E(m)=A m^{\\frac{2}{3}}$, not the recorded $70$ unit gap. That gap is $E(64)-E(27)$, so $A$ must be recovered first.
-
-Both masses are cubes:
-
-$$
-27=3^{3}
-$$
-
-$$
-27^{\\frac{2}{3}}=(3^{3})^{\\frac{2}{3}}
-$$
-
-$$
-27^{\\frac{2}{3}}=3^{2}=9
-$$
-
-$$
-64=4^{3}
-$$
-
-$$
-64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}
-$$
-
-$$
-64^{\\frac{2}{3}}=4^{2}=16
-$$
-
-$$
-E(64)-E(27)=A\\cdot 16-A\\cdot 9
-$$
-
-$$
-7A=70
-$$
-
-$$
-A=10
-$$
-
-The recovered law is $E(m)=10 m^{\\frac{2}{3}}$. At $64$ kilograms:
-
-$$
-E(64)=10\\cdot 64^{\\frac{2}{3}}
-$$
-
-$$
-E(64)=10\\cdot 16
-$$
-
-$$
-E(64)=160
-$$
-
-The companion check:
-
-$$
-E(27)=10\\cdot 9=90
-$$
-
-$$
-160-90=70
-$$
-
-A $64$ kg animal uses $160$ energy units a day, so the statement is True.`,
+At $64$ kilograms the power is $16$, so daily use is $10\\cdot 16=160$, so the statement is True.`,
       `**C.** → False
 
-Energy per kilogram is the allometric law divided by mass. Recover $A$ from the $70$ unit gap first.
+Energy per kilogram is the allometric law divided by mass:
 
 $$
-27^{\\frac{2}{3}}=9
+\\frac{E(m)}{m}=10 m^{\\frac{2}{3}-1}=10 m^{-\\frac{1}{3}}
 $$
 
-$$
-64^{\\frac{2}{3}}=16
-$$
-
-$$
-A(16-9)=70
-$$
-
-$$
-A=10
-$$
-
-$$
-E(64)=160
-$$
-
-$$
-E(27)=90
-$$
-
-Dividing by mass lowers the exponent by one:
-
-$$
-\\frac{E(m)}{m}=10 m^{\\frac{2}{3}-1}
-$$
-
-$$
-\\frac{E(m)}{m}=10 m^{-\\frac{1}{3}}
-$$
-
-That average falls as $m$ rises. The two calibrated animals already disagree:
-
-$$
-\\frac{E(64)}{64}=\\frac{160}{64}=2.5
-$$
-
-$$
-\\frac{E(27)}{27}=\\frac{90}{27}=\\frac{10}{3}
-$$
-
-Energy use per kilogram is not the same at every body mass, so the statement is False.`,
+The leftover exponent is negative, so the average falls as mass rises. The two calibrated animals already disagree: $\\frac{160}{64}=2.5$ versus $\\frac{90}{27}=\\frac{10}{3}$. Energy per kilogram is not constant, so the statement is False.`,
       `**D.** → True
 
-Herd totals apply the law to each animal and add afterwards. The coefficient comes from the $70$ unit gap between the $64$ kg and $27$ kg animals.
-
-$$
-27=3^{3}
-$$
-
-$$
-27^{\\frac{2}{3}}=9
-$$
-
-$$
-64^{\\frac{2}{3}}=16
-$$
-
-$$
-A(16-9)=70
-$$
-
-$$
-A=10
-$$
-
-Eight small animals:
+Eight small animals use
 
 $$
 E(27)=10\\cdot 9=90
@@ -15932,41 +7510,17 @@ $$
 $$
 
 $$
-216^{\\frac{2}{3}}=(6^{3})^{\\frac{2}{3}}=6^{2}=36
+216^{\\frac{2}{3}}=6^{2}=36
 $$
 
 $$
 E(216)=10\\cdot 36=360
 $$
 
-$$
-\\frac{8E(27)}{E(216)}=\\frac{720}{360}=2
-$$
-
-The eight $27$ kg animals use twice as much total energy as one $216$ kg animal, so the statement is True.`,
+and $\\frac{720}{360}=2$. The eight small animals use twice the large one, so the statement is True.`,
       `**E.** → False
 
-Two equal animals use $2E(m)$, while one animal of doubled mass uses $E(2m)$. The coefficient cancels in the scale factor.
-
-$$
-\\frac{E(2m)}{E(m)}=2^{\\frac{2}{3}}
-$$
-
-$$
-2^{\\frac{2}{3}}=\\sqrt[3]{4}
-$$
-
-$$
-\\sqrt[3]{4}\\approx 1.587<2
-$$
-
-A named check recovers $A$ from the $70$ unit gap: $27^{\\frac{2}{3}}=9$, $64^{\\frac{2}{3}}=16$, so $7A=70$ and $A=10$. Then $E(27)=90$, hence $2E(27)=180$, while
-
-$$
-E(54)=10\\cdot 54^{\\frac{2}{3}}\\approx 142.9
-$$
-
-Combining two equal animals into one animal of twice the mass lowers total energy use, so the statement is False.`,
+Two equal animals use $2E(m)$, while one animal of doubled mass uses $E(2m)$. The scale factor is $2^{\\frac{2}{3}}\\approx 1.59$, which is less than $2$, so merging them lowers total energy use, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 55,
@@ -16026,161 +7580,35 @@ $$E(2m)/E(m)=2^{\\frac{2}{3}}<2$$
     tactical_explanations: [
       `**A.** → True
 
-Weekly footfall follows $f(d)=A d^{-\\frac{3}{2}}$ visitors from a zone $d>0$ kilometres away. The planning file records a gap $f(4)-f(16)=350$, which recovers $A$ and leaves a negative exponent.
-
-$$
-4=2^{2}
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}=2^{3}=8
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}=2^{6}=64
-$$
-
-$$
-A\\left(\\frac{1}{8}-\\frac{1}{64}\\right)=\\frac{7A}{64}=350
-$$
-
-$$
-A=3200
-$$
-
-The recovered law is $f(d)=3200 d^{-\\frac{3}{2}}$. The exponent $-\\frac{3}{2}$ is negative, so $f$ is strictly decreasing for $d>0$. A farther zone always supplies fewer visitors than a nearer zone, so the statement is True.`,
+A negative exponent means footfall falls as driving distance rises. The given exponent $-\\frac{3}{2}$ is negative, so a farther zone always supplies fewer visitors than a nearer one, so the statement is True.`,
       `**B.** → True
 
-The nearer zone's own footfall is $f(4)$, not the recorded $350$. That $350$ is the gap $f(4)-f(16)$.
-
-$$
-4=2^{2}
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}=2^{3}=8
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}=2^{6}=64
-$$
-
-$$
-A\\left(\\frac{1}{8}-\\frac{1}{64}\\right)=350
-$$
-
-$$
-\\frac{7A}{64}=350
-$$
-
-$$
-7A=350\\cdot 64=22400
-$$
-
-$$
-A=\\frac{22400}{7}=3200
-$$
-
-Then
+The recovered law is $f(d)=3200 d^{-\\frac{3}{2}}$. At four kilometres the power is $8$, so
 
 $$
 f(4)=\\frac{3200}{8}=400
 $$
 
-The companion $f(16)=\\frac{3200}{64}=50$ returns the file gap $400-50=350$. The zone four kilometres away supplies $400$ visitors a week, so the statement is True.`,
+The farther check $f(16)=\\frac{3200}{64}=50$ returns the file gap $350$, so the statement is True.`,
       `**C.** → False
 
-An inverse-square law would carry exponent $-2$. The given decay is $d^{-1.5}$, and the two-zone gap recovers only the coefficient, not a change of exponent.
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-\\frac{7A}{64}=350
-$$
-
-$$
-A=3200
-$$
-
-Quadrupling distance then cuts footfall by
-
-$$
-\\frac{f(4d)}{f(d)}=4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-whereas inverse-square decay would cut it by $4^{-2}=\\frac{1}{16}$. The exponent is $-1.5$, not $-2$, so the statement is False.`,
+An inverse-square law would carry exponent $-2$. The given decay is $d^{-\\frac{3}{2}}$. Quadrupling distance then cuts footfall by $4^{-\\frac{3}{2}}=\\frac{1}{8}$, whereas inverse-square decay would cut it by $\\frac{1}{16}$, so the statement is False.`,
       `**D.** → True
-
-Nine kilometres is a perfect square, so the fractional exponent is exact once $A$ is recovered from the $350$ visitor gap.
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-\\frac{7A}{64}=350
-$$
-
-$$
-7A=22400
-$$
-
-$$
-A=3200
-$$
 
 At nine kilometres:
 
 $$
-9^{\\frac{3}{2}}=(9^{\\frac{1}{2}})^{3}=3^{3}=27
+9^{\\frac{3}{2}}=3^{3}=27
 $$
 
 $$
 f(9)=\\frac{3200}{27}\\approx 118.5
 $$
 
-That reading clears the $100$-visitor core threshold because $118.5>100$. A zone nine kilometres away still supplies more than $100$ visitors a week, so the statement is True.`,
+That reading clears the $100$-visitor core threshold, so the statement is True.`,
       `**E.** → False
 
-The extra-kilometre cut is the magnitude of the derivative. Recover $A$ from the $350$ visitor gap, then differentiate.
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-\\frac{7A}{64}=350
-$$
-
-$$
-A=3200
-$$
-
-$$
-f(d)=3200 d^{-\\frac{3}{2}}
-$$
+The extra-kilometre cut is the magnitude of the derivative of $f(d)=3200 d^{-\\frac{3}{2}}$:
 
 $$
 f'(d)=3200\\cdot\\left(-\\frac{3}{2}\\right)d^{-\\frac{5}{2}}
@@ -16190,27 +7618,27 @@ $$
 f'(d)=-4800 d^{-\\frac{5}{2}}
 $$
 
-So $\\lvert f'(d)\\rvert=4800 d^{-\\frac{5}{2}}$ is largest near the park. At four kilometres:
+So $\\lvert f'(d)\\rvert$ falls as $d$ rises. At four kilometres:
 
 $$
-4^{\\frac{5}{2}}=(2^{2})^{\\frac{5}{2}}=2^{5}=32
+4^{\\frac{5}{2}}=2^{5}=32
 $$
 
 $$
 \\lvert f'(4)\\rvert=\\frac{4800}{32}=150
 $$
 
-At sixteen kilometres:
+At sixteen:
 
 $$
-16^{\\frac{5}{2}}=(2^{4})^{\\frac{5}{2}}=2^{10}=1024
+16^{\\frac{5}{2}}=2^{10}=1024
 $$
 
 $$
 \\lvert f'(16)\\rvert=\\frac{4800}{1024}\\approx 4.69
 $$
 
-Since $150>4.69$, an extra kilometre cuts more visitors near the park than far from it, so the statement is False.`,
+An extra kilometre cuts more visitors near the park than far from it, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 56,
@@ -16268,73 +7696,19 @@ The slope magnitude $\\lvert f'(d)\\rvert$ falls as $d$ rises.
     tactical_explanations: [
       `**A.** → False
 
-Output follows $y(a)=A a^{r}$ with both constants unknown. Proportionality is the claim $r=1$, tested by the two installed arrays.
+The two arrays give $r=\\frac{1}{2}$, not $1$. A proportional forecast would have given
 
 $$
-\\frac{y(225)}{y(100)}=\\left(\\frac{225}{100}\\right)^{r}
+240\\cdot\\frac{225}{100}=540
 $$
 
-$$
-\\frac{360}{240}=\\left(\\frac{9}{4}\\right)^{r}
-$$
-
-$$
-\\frac{3}{2}=\\left(\\frac{3}{2}\\right)^{2r}
-$$
-
-The bases match, so the exponents match:
-
-$$
-2r=1
-$$
-
-$$
-r=\\frac{1}{2}
-$$
-
-The fitted exponent is not $1$. A proportional forecast would have given $240\\cdot\\frac{225}{100}=540$, but the second array delivers $360$. Output is not proportional to the installed area, so the statement is False.`,
+but the second array delivers $360$. Output is not proportional to area, so the statement is False.`,
       `**B.** → False
 
-The proposal doubles the $225$ square-metre array to $450$ square metres, so both constants must be recovered before that new level can be read. The two arrays cancel $A$:
+Doubling $225$ square metres to $450$ multiplies output by $\\sqrt{2}$:
 
 $$
-\\frac{360}{240}=\\left(\\frac{225}{100}\\right)^{r}
-$$
-
-$$
-\\frac{3}{2}=\\left(\\frac{9}{4}\\right)^{r}
-$$
-
-$$
-\\frac{9}{4}=\\left(\\frac{3}{2}\\right)^{2}
-$$
-
-$$
-\\frac{3}{2}=\\left(\\frac{3}{2}\\right)^{2r}
-$$
-
-$$
-r=\\frac{1}{2}
-$$
-
-The $100$ square-metre array then pins $A$:
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=240
-$$
-
-$$
-A\\cdot 10=240
-$$
-
-$$
-A=24
-$$
-
-The recovered law is $y(a)=24 a^{\\frac{1}{2}}$. At $450$ square metres, using the recorded $360$ kWh at $225$ square metres:
-
-$$
-y(450)=y(225)\\cdot\\sqrt{2}=360\\sqrt{2}
+y(450)=360\\sqrt{2}
 $$
 
 $$
@@ -16345,52 +7719,10 @@ $$
 y(450)\\approx 509.1
 $$
 
-That is under $520$ kWh. Expanding the $225$ square-metre array to $450$ square metres would not push output above $520$ kWh, so the statement is False.`,
+That is under $520$ kWh, so the statement is False.`,
       `**C.** → True
 
-Output per square metre is the fitted law divided by area. The two arrays recover both constants.
-
-$$
-\\frac{y(225)}{y(100)}=\\left(\\frac{225}{100}\\right)^{r}
-$$
-
-$$
-\\frac{360}{240}=\\left(\\frac{9}{4}\\right)^{r}
-$$
-
-$$
-\\frac{9}{4}=\\left(\\frac{3}{2}\\right)^{2}
-$$
-
-$$
-\\frac{3}{2}=\\left(\\frac{3}{2}\\right)^{2r}
-$$
-
-$$
-2r=1
-$$
-
-$$
-r=\\frac{1}{2}
-$$
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=240
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-10A=240
-$$
-
-$$
-A=24
-$$
-
-Then
+Output per square metre is the recovered law divided by area:
 
 $$
 \\frac{y(a)}{a}=\\frac{24 a^{\\frac{1}{2}}}{a}
@@ -16400,62 +7732,24 @@ $$
 \\frac{y(a)}{a}=24 a^{-\\frac{1}{2}}
 $$
 
-which is a power of $a$ with exponent $-\\frac{1}{2}$. Output per square metre is itself a power function of area, so the statement is True.`,
+which is a power of $a$ with exponent $-\\frac{1}{2}$, so the statement is True.`,
       `**D.** → True
 
-Output per square metre at $100$ square metres is the recorded $240$ kWh divided by area.
-
-$$
-\\frac{240}{100}=2.4
-$$
-
-The same figure follows from the recovered law. The two arrays give $r=\\frac{1}{2}$ because $\\bigl(\\frac{9}{4}\\bigr)^{\\frac{1}{2}}=\\frac{3}{2}$, and $A\\cdot 10=240$ so $A=24$:
-
-$$
-\\frac{y(100)}{100}=24\\cdot 100^{-\\frac{1}{2}}
-$$
-
-$$
-24\\cdot\\frac{1}{10}=2.4
-$$
-
-The $100$ square-metre array delivers $2.4$ kWh per square metre, so the statement is True.`,
+The $100$ square-metre array delivers $240$ kWh, so output per square metre is $\\frac{240}{100}=2.4$, so the statement is True.`,
       `**E.** → True
 
-Doubling the recorded $240$ kWh output means solving $y(a)=480$. Both constants come from the two arrays.
-
-$$
-\\frac{360}{240}=\\left(\\frac{225}{100}\\right)^{r}
-$$
-
-$$
-\\frac{3}{2}=\\left(\\frac{9}{4}\\right)^{r}
-$$
-
-$$
-r=\\frac{1}{2}
-$$
-
-$$
-A\\cdot 100^{\\frac{1}{2}}=240
-$$
-
-$$
-A=24
-$$
-
-Then
+Doubling the recorded $240$ kWh on $y(a)=24 a^{\\frac{1}{2}}$ means
 
 $$
 24 a^{\\frac{1}{2}}=480
 $$
 
 $$
-a^{\\frac{1}{2}}=\\frac{480}{24}=20
+a^{\\frac{1}{2}}=20
 $$
 
 $$
-a=20^{2}=400
+a=400
 $$
 
 The original array is $100$ square metres, so area must quadruple. Because $r=\\frac{1}{2}<1$, any doubling of output requires more than a doubling of area, so the statement is True.`,
@@ -16518,70 +7812,14 @@ $$a=400$$
     tactical_explanations: [
       `**A.** → True
 
-Unit cost follows $c(N)=A N^{b}$ euros, with both constants unknown. The two milestones cancel $A$ and isolate the exponent.
+The milestones give $b=-\\frac{1}{2}$. Quadrupling volume is then the scale
 
 $$
-\\frac{c(400)}{c(100)}=\\left(\\frac{400}{100}\\right)^{b}
+4^{-\\frac{1}{2}}=\\frac{1}{2}
 $$
 
-$$
-\\frac{40}{80}=4^{b}
-$$
-
-$$
-\\frac{1}{2}=4^{b}
-$$
-
-$$
-2^{-1}=(2^{2})^{b}=2^{2b}
-$$
-
-$$
-2b=-1
-$$
-
-$$
-b=-\\frac{1}{2}
-$$
-
-Quadrupling volume is then the scale factor $4^{-\\frac{1}{2}}=\\frac{1}{2}$ at every starting volume, not only between $100$ and $400$. Quadrupling cumulative volume halves the unit cost, so the statement is True.`,
+at every starting volume, not only between $100$ and $400$. Quadrupling cumulative volume halves the unit cost, so the statement is True.`,
       `**B.** → True
-
-A unit cost of $20$ euros is a level of the recovered curve, so both constants are needed. The milestones cancel $A$:
-
-$$
-\\frac{c(400)}{c(100)}=\\left(\\frac{400}{100}\\right)^{b}
-$$
-
-$$
-\\frac{40}{80}=4^{b}
-$$
-
-$$
-4^{b}=\\frac{1}{2}
-$$
-
-$$
-b=-\\frac{1}{2}
-$$
-
-The first milestone then pins $A$:
-
-$$
-A\\cdot 100^{-\\frac{1}{2}}=80
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-\\frac{A}{10}=80
-$$
-
-$$
-A=800
-$$
 
 The recovered law is $c(N)=800 N^{-\\frac{1}{2}}$. At $1600$ thousand cells:
 
@@ -16593,32 +7831,10 @@ $$
 c(1600)=\\frac{800}{40}=20
 $$
 
-Unit cost is $20$ euros at $1600$ thousand cells, so the statement is True.`,
+The same figure is another quadrupling from $400$, which halves $40$ to $20$, so the statement is True.`,
       `**C.** → True
 
-Cumulative spend is unit cost multiplied by volume, $S(N)=N\\,c(N)$. Recover the cost curve from the two milestones first.
-
-$$
-4^{b}=\\frac{40}{80}=\\frac{1}{2}
-$$
-
-$$
-b=-\\frac{1}{2}
-$$
-
-$$
-A\\cdot 100^{-\\frac{1}{2}}=80
-$$
-
-$$
-A=800
-$$
-
-Then
-
-$$
-c(N)=800 N^{-\\frac{1}{2}}
-$$
+Cumulative spend multiplies unit cost by volume:
 
 $$
 S(N)=N\\cdot 800 N^{-\\frac{1}{2}}
@@ -16631,46 +7847,20 @@ $$
 The square-root law is strictly increasing for $N>0$, even while unit cost falls. Spend at the milestones:
 
 $$
-S(100)=800\\sqrt{100}=8000
+S(100)=800\\cdot 10=8000
 $$
 
 $$
-S(400)=800\\sqrt{400}=16000
+S(400)=800\\cdot 20=16000
 $$
 
 Unit cost falls as volume grows, but cumulative spend still rises, so the statement is True.`,
       `**D.** → True
 
-Cumulative spend at a milestone is unit cost times volume. The first recorded pair is already enough:
-
-$$
-S(100)=100\\cdot 80=8000
-$$
-
-The same figure follows from the recovered spend law. The milestones give $b=-\\frac{1}{2}$ because $4^{b}=\\frac{1}{2}$, and $A\\cdot\\frac{1}{10}=80$ so $A=800$. Then $S(N)=800 N^{\\frac{1}{2}}$ and
-
-$$
-S(100)=800\\sqrt{100}=800\\cdot 10=8000
-$$
-
-Spend at $100$ thousand cells is $8000$ euros, so the statement is True.`,
+Cumulative spend at a milestone is unit cost times volume. The first recorded pair is already $100\\cdot 80=8000$, so the statement is True.`,
       `**E.** → False
 
-A negative-exponent power stays positive for every $N>0$. The milestones recover $b=-\\frac{1}{2}$ and $A=800$:
-
-$$
-\\frac{40}{80}=4^{b}
-$$
-
-$$
-b=-\\frac{1}{2}
-$$
-
-$$
-c(N)=800 N^{-\\frac{1}{2}}=\\frac{800}{\\sqrt{N}}
-$$
-
-For $N>0$ the square root is positive, hence $c(N)>0$. Cost tends to $0$ as $N$ grows without bound but never crosses it. Unit cost does not become negative, so the statement is False.`,
+A negative-exponent power stays positive for every $N>0$. With $c(N)=\\frac{800}{\\sqrt{N}}$ the cost approaches $0$ from above but never crosses it. Unit cost does not become negative, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 58,
@@ -16730,81 +7920,27 @@ $c(N)>0$ for every $N>0$.
     tactical_explanations: [
       `**A.** → True
 
-Doubling discharge acts through the composed exponent. The gauged run calibrates the transport stage, then velocity is substituted.
+The composed law is $S(q)=\\frac{5}{8} q^{\\frac{3}{2}}$. Doubling discharge multiplies transport by
 
 $$
-A\\cdot 3^{3}=135
-$$
-
-$$
-3^{3}=27
+\\frac{S(2q)}{S(q)}=2^{\\frac{3}{2}}
 $$
 
 $$
-27A=135
+2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.83
 $$
 
-$$
-A=\\frac{135}{27}=5
-$$
-
-$$
-S(v)=5 v^{3}
-$$
-
-$$
-v(q)=\\frac{q^{\\frac{1}{2}}}{2}
-$$
-
-$$
-S(q)=5\\left(\\frac{q^{\\frac{1}{2}}}{2}\\right)^{3}
-$$
-
-$$
-\\left(\\frac{q^{\\frac{1}{2}}}{2}\\right)^{3}=\\frac{q^{\\frac{3}{2}}}{8}
-$$
-
-$$
-S(q)=\\frac{5}{8} q^{\\frac{3}{2}}
-$$
-
-Then
-
-$$
-\\frac{S(2q)}{S(q)}=2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.83
-$$
-
-That factor exceeds $2$. Doubling the discharge more than doubles sediment transport, so the statement is True.`,
+which exceeds $2$, so the statement is True.`,
       `**B.** → True
 
-The stability limit is inverted through the composed law. The gauged run $S(3)=135$ pins the transport coefficient.
-
-$$
-A\\cdot 3^{3}=135
-$$
-
-$$
-A=\\frac{135}{27}=5
-$$
-
-$$
-S(q)=5\\left(\\frac{q^{\\frac{1}{2}}}{2}\\right)^{3}
-$$
-
-$$
-S(q)=\\frac{5}{8} q^{\\frac{3}{2}}
-$$
+The stability limit on $S(q)=\\frac{5}{8} q^{\\frac{3}{2}}$ means
 
 $$
 \\frac{5}{8} q^{\\frac{3}{2}}=5000
 $$
 
 $$
-q^{\\frac{3}{2}}=5000\\cdot\\frac{8}{5}=8000
-$$
-
-$$
-q=8000^{\\frac{2}{3}}
+q^{\\frac{3}{2}}=8000
 $$
 
 $$
@@ -16815,112 +7951,16 @@ $$
 q=20^{2}=400
 $$
 
-Stage check:
-
-$$
-v(400)=\\frac{400^{\\frac{1}{2}}}{2}=\\frac{20}{2}=10
-$$
-
-$$
-S(10)=5\\cdot 10^{3}=5000
-$$
-
-The stability limit of $5000$ tonnes per day is reached at a discharge of $400$, so the statement is True.`,
+Stage check: $v(400)=\\frac{20}{2}=10$ and $S(10)=5\\cdot 1000=5000$, so the statement is True.`,
       `**C.** → False
 
-Doubling velocity acts on the transport stage alone, whose exponent is $3$. The scale factor does not need the coefficient, but the gauged run still recovers $A$ for a named check:
-
-$$
-\\frac{S(2v)}{S(v)}=2^{3}=8
-$$
-
-The gauged pair already shows it. From $S(3)=135$ one has $27A=135$, so $A=5$, and
-
-$$
-S(6)=5\\cdot 6^{3}
-$$
-
-$$
-6^{3}=216
-$$
-
-$$
-S(6)=5\\cdot 216=1080
-$$
-
-$$
-\\frac{1080}{135}=8
-$$
-
-Doubling the flow velocity multiplies sediment transport by eight, not by two, so the statement is False.`,
+Doubling velocity acts on the transport stage alone. The exponent is $3$, so the scale factor is $2^{3}=8$, not $2$. Doubling velocity multiplies sediment transport by eight, so the statement is False.`,
       `**D.** → True
 
-Discharge $36$ is the inner-stage inverse of the gauged velocity $3$. Velocity is $v(q)=\\frac{q^{\\frac{1}{2}}}{2}$:
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-v(36)=\\frac{6}{2}=3
-$$
-
-The gauged run at $v=3$ carried $135$ tonnes per day, so transport is $135$ at this discharge as well. The composed law agrees after $A$ is recovered:
-
-$$
-A\\cdot 27=135
-$$
-
-$$
-A=5
-$$
-
-$$
-S(q)=\\frac{5}{8} q^{\\frac{3}{2}}
-$$
-
-$$
-36^{\\frac{3}{2}}=(36^{\\frac{1}{2}})^{3}=6^{3}=216
-$$
-
-$$
-\\frac{5}{8}\\cdot 216=135
-$$
-
-Transport at discharge $36$ is $135$ tonnes per day, so the statement is True.`,
+Velocity at discharge $36$ is $\\frac{\\sqrt{36}}{2}=\\frac{6}{2}=3$, the gauged run. That run carried $135$ tonnes per day, so the statement is True.`,
       `**E.** → False
 
-A composition of power laws is again a power law. The gauged run gives $A\\cdot 3^{3}=135$, so $A=5$, and substituting $v(q)=\\frac{q^{\\frac{1}{2}}}{2}$ into $S(v)=5 v^{3}$ gives:
-
-$$
-3^{3}=27
-$$
-
-$$
-27A=135
-$$
-
-$$
-A=5
-$$
-
-$$
-S(v)=5 v^{3}
-$$
-
-$$
-S(q)=5\\left(\\frac{q^{\\frac{1}{2}}}{2}\\right)^{3}
-$$
-
-$$
-\\left(\\frac{q^{\\frac{1}{2}}}{2}\\right)^{3}=\\frac{q^{\\frac{3}{2}}}{8}
-$$
-
-$$
-S(q)=\\frac{5}{8} q^{\\frac{3}{2}}
-$$
-
-which is a power of $q$ with exponent $\\frac{3}{2}$. The two-stage chain is a power function of discharge, so the statement is False.`,
+A composition of power laws is again a power law. The composed transport $S(q)=\\frac{5}{8} q^{\\frac{3}{2}}$ is a power of discharge with exponent $\\frac{3}{2}$, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 59,
@@ -16976,39 +8016,7 @@ $$\\frac{S(2q)}{S(q)}=2^{1.5}\\approx 2.83 \\qquad \\frac{S(2v)}{S(v)}=8$$
     tactical_explanations: [
       `**A.** → True
 
-Revenue is price times quantity, $R=pq$. The observation $q(2)=500$ pins the demand coefficient, then multiplying by $p$ raises the exponent by one.
-
-$$
-q(p)=A p^{-3}
-$$
-
-$$
-A\\cdot 2^{-3}=500
-$$
-
-$$
-2^{3}=8
-$$
-
-$$
-2^{-3}=\\frac{1}{8}
-$$
-
-$$
-\\frac{A}{8}=500
-$$
-
-$$
-A=8\\cdot 500=4000
-$$
-
-$$
-q(p)=4000 p^{-3}
-$$
-
-$$
-R(p)=p\\cdot q(p)
-$$
+Demand is $q(p)=4000 p^{-3}$. Revenue multiplies by price, which raises the exponent by one:
 
 $$
 R(p)=p\\cdot 4000 p^{-3}
@@ -17018,82 +8026,40 @@ $$
 R(p)=4000 p^{-2}
 $$
 
-which is a power of $p$ with exponent $-2$. Revenue is a power function of price, so the statement is True.`,
+That is a power of $p$ with exponent $-2$, so the statement is True.`,
       `**B.** → True
 
-A revenue level needs the coefficient of $R(p)=p q(p)$. The catalogue pair $q(2)=500$ recovers $A$ first.
-
-$$
-A\\cdot 2^{-3}=500
-$$
-
-$$
-2^{-3}=\\frac{1}{8}
-$$
-
-$$
-\\frac{A}{8}=500
-$$
-
-$$
-A=4000
-$$
-
-$$
-R(p)=p\\cdot 4000 p^{-3}=4000 p^{-2}
-$$
-
-At a price of $2.50$:
-
-$$
-2.50=\\frac{5}{2}
-$$
+Revenue is $R(p)=4000 p^{-2}$. At a price of $2.50=\\frac{5}{2}$:
 
 $$
 \\left(\\frac{5}{2}\\right)^{2}=\\frac{25}{4}=6.25
 $$
 
 $$
-R(2.50)=\\frac{4000}{6.25}=\\frac{4000}{\\frac{25}{4}}=4000\\cdot\\frac{4}{25}=640
+R(2.50)=\\frac{4000}{\\frac{25}{4}}
 $$
 
-Revenue at a price of $2.50$ is $640$, so the statement is True.`,
+$$
+R(2.50)=4000\\cdot\\frac{4}{25}=640
+$$
+
+Revenue is $640$, so the statement is True.`,
       `**C.** → True
 
-The revenue exponent is one more than the demand exponent. With $q(2)=500$:
-
-$$
-A\\cdot 2^{-3}=500
-$$
-
-$$
-\\frac{A}{8}=500
-$$
-
-$$
-A=4000
-$$
-
-$$
-R(p)=4000 p^{-2}
-$$
-
-The exponent $-2$ is negative, so $R$ is strictly decreasing for $p>0$. At the catalogue price:
+The exponent $-2$ on $R(p)=4000 p^{-2}$ is negative, so $R$ is strictly decreasing for $p>0$:
 
 $$
 R(2)=\\frac{4000}{4}=1000
 $$
 
-At twice that price:
-
 $$
 R(4)=\\frac{4000}{16}=250
 $$
 
-Since $250<1000$, raising the price cuts revenue. Raising the price always cuts revenue, so the statement is True.`,
+Raising the price always cuts revenue, so the statement is True.`,
       `**D.** → True
 
-The indexation is the multiplier $1.1$ acting through the demand exponent $-3$. The coefficient cancels in the scale factor:
+The indexation is the multiplier $1.1$ acting through the demand exponent $-3$. The coefficient cancels:
 
 $$
 \\frac{q(1.1p)}{q(p)}=1.1^{-3}
@@ -17104,53 +8070,17 @@ $$
 $$
 
 $$
-1.1^{3}=1.21\\cdot 1.1=1.331
+1.1^{3}=1.331
 $$
 
 $$
 1.1^{-3}=\\frac{1}{1.331}\\approx 0.7513
 $$
 
-The relative cut is
-
-$$
-1-0.7513=0.2487
-$$
-
-about $24.9\\%$. A concrete check from $q(2)=500$ gives $A=4000$ and
-
-$$
-2.2^{2}=4.84
-$$
-
-$$
-2.2^{3}=4.84\\cdot 2.2=10.648
-$$
-
-$$
-q(2.2)=\\frac{4000}{10.648}\\approx 375.7
-$$
-
-a fall of about $124.3$ units, which is about $24.9\\%$ of $500$. A price rise of $10\\%$ cuts quantity by about $25\\%$, so the statement is True.`,
+The relative cut is about $24.9\\%$, which is about $25\\%$, so the statement is True.`,
       `**E.** → False
 
-Highly elastic demand means $\\lvert r\\rvert=3>1$, so revenue falls when price rises. From $q(2)=500$ one has $A=4000$ and
-
-$$
-R(p)=4000 p^{-2}
-$$
-
-A $10\\%$ rise multiplies revenue by
-
-$$
-1.1^{2}=1.21
-$$
-
-$$
-1.1^{-2}=\\frac{1}{1.21}\\approx 0.826
-$$
-
-Revenue falls by about $17\\%$. Elastic demand is exactly why a price rise cuts revenue here, not why it would raise it. Because demand is highly elastic, a price rise does not raise revenue, so the statement is False.`,
+Highly elastic demand means $\\lvert r\\rvert=3>1$, so revenue falls when price rises. A $10\\%$ rise multiplies revenue by $1.1^{-2}=\\frac{1}{1.21}\\approx 0.826$, a cut of about $17\\%$. Elastic demand is why a price rise cuts revenue here, not why it would raise it, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 60,
@@ -17210,101 +8140,17 @@ $R'(p)<0$ for every $p>0$.
     tactical_explanations: [
       `**A.** → True
 
-Weld strength follows $S(p)=A p^{k}$ newtons after $p>0$ amperes. The recorded pairs are $S(4)=40$ and $S(9)=135$. The claim is that the exponent exceeds one, so those two levels must recover $k$.
-
-The ratio of the two strengths cancels $A$:
-
-$$
-\\frac{S(9)}{S(4)}=\\frac{A\\cdot 9^{k}}{A\\cdot 4^{k}}
-$$
-
-$$
-\\frac{135}{40}=\\left(\\frac{9}{4}\\right)^{k}
-$$
-
-$$
-\\frac{27}{8}=\\left(\\frac{9}{4}\\right)^{k}
-$$
-
-Rewrite both sides as powers of $\\frac{3}{2}$:
-
-$$
-\\left(\\frac{3}{2}\\right)^{3}=\\left(\\left(\\frac{3}{2}\\right)^{2}\\right)^{k}=\\left(\\frac{3}{2}\\right)^{2k}
-$$
-
-$$
-3=2k
-$$
-
-$$
-k=\\frac{3}{2}
-$$
-
-Because $\\frac{3}{2}>1$, strength outruns current, so the statement is True.`,
+The two welds give $k=\\frac{3}{2}$. An exponent larger than one means each extra ampere adds more strength than the ampere before it. Three halves is above one, so the statement is True.`,
       `**B.** → True
-
-The $16$ A reading is a third level of $S(p)=A p^{k}$. Both constants come from the spot checks $S(4)=40$ and $S(9)=135$.
-
-The ratio of the two strengths cancels $A$:
-
-$$
-\\frac{S(9)}{S(4)}=\\frac{A\\cdot 9^{k}}{A\\cdot 4^{k}}
-$$
-
-$$
-\\frac{135}{40}=\\left(\\frac{9}{4}\\right)^{k}
-$$
-
-$$
-\\frac{27}{8}=\\left(\\frac{9}{4}\\right)^{k}
-$$
-
-Because $\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$ and $\\frac{9}{4}=\\left(\\frac{3}{2}\\right)^{2}$,
-
-$$
-\\left(\\frac{3}{2}\\right)^{3}=\\left(\\left(\\frac{3}{2}\\right)^{2}\\right)^{k}
-$$
-
-$$
-\\left(\\frac{3}{2}\\right)^{3}=\\left(\\frac{3}{2}\\right)^{2k}
-$$
-
-The bases match, so the exponents match:
-
-$$
-3=2k
-$$
-
-$$
-k=\\frac{3}{2}
-$$
-
-The $4$ A weld then pins $A$:
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=40
-$$
-
-$$
-4^{\\frac{3}{2}}=(2^{2})^{\\frac{3}{2}}=2^{3}=8
-$$
-
-$$
-A\\cdot 8=40
-$$
-
-$$
-A=5
-$$
 
 The recovered law is $S(p)=5p^{\\frac{3}{2}}$. At sixteen amperes:
 
 $$
-S(16)=5\\cdot 16^{\\frac{3}{2}}
+16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}
 $$
 
 $$
-16^{\\frac{3}{2}}=(2^{4})^{\\frac{3}{2}}=2^{6}=64
+(2^{4})^{\\frac{3}{2}}=2^{6}=64
 $$
 
 $$
@@ -17314,217 +8160,45 @@ $$
 The claimed strength is $320$ N, so the statement is True.`,
       `**C.** → True
 
-Strength follows $S(p)=A p^{k}$ with spot checks $S(4)=40$ and $S(9)=135$. Growth without bound needs a positive coefficient and a positive exponent.
-
-The ratio of the two strengths cancels $A$:
-
-$$
-\\frac{135}{40}=\\left(\\frac{9}{4}\\right)^{k}
-$$
-
-$$
-\\frac{27}{8}=\\left(\\frac{9}{4}\\right)^{k}
-$$
-
-$$
-\\left(\\frac{3}{2}\\right)^{3}=\\left(\\frac{3}{2}\\right)^{2k}
-$$
-
-$$
-k=\\frac{3}{2}>0
-$$
-
-The $4$ A weld then pins $A$:
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=40
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-A=5>0
-$$
-
-The recovered law is $S(p)=5p^{\\frac{3}{2}}$. As current grows, a positive multiple of a positive power of $p$ grows without bound, so the statement is True.`,
+The law is $5p^{\\frac{3}{2}}$: a positive multiple of a positive power of current. As current grows, that product has no ceiling, so the statement is True.`,
       `**D.** → False
 
-An extra ampere is the derivative of $S(p)=A p^{k}$. The spot checks $S(4)=40$ and $S(9)=135$ recover both constants first.
-
-The ratio of the two strengths cancels $A$:
+An extra ampere is the derivative of $S(p)=5p^{\\frac{3}{2}}$:
 
 $$
-\\frac{S(9)}{S(4)}=\\frac{A\\cdot 9^{k}}{A\\cdot 4^{k}}
-$$
-
-$$
-\\frac{135}{40}=\\left(\\frac{9}{4}\\right)^{k}
-$$
-
-$$
-\\frac{27}{8}=\\left(\\frac{9}{4}\\right)^{k}
-$$
-
-Because $\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$ and $\\frac{9}{4}=\\left(\\frac{3}{2}\\right)^{2}$,
-
-$$
-\\left(\\frac{3}{2}\\right)^{3}=\\left(\\frac{3}{2}\\right)^{2k}
-$$
-
-$$
-k=\\frac{3}{2}
-$$
-
-The $4$ A weld then pins $A$:
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=40
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-A\\cdot 8=40
-$$
-
-$$
-A=5
-$$
-
-The recovered law is $S(p)=5p^{\\frac{3}{2}}$. Differentiate:
-
-$$
-S'(p)=5\\cdot\\frac{3}{2}p^{\\frac{3}{2}-1}
+S'(p)=5\\cdot\\frac{3}{2}p^{\\frac{1}{2}}
 $$
 
 $$
 S'(p)=\\frac{15}{2}p^{\\frac{1}{2}}
 $$
 
-At four amperes:
-
-$$
-S'(4)=\\frac{15}{2}\\cdot 4^{\\frac{1}{2}}
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
 $$
 S'(4)=\\frac{15}{2}\\cdot 2=15
-$$
-
-At nine amperes:
-
-$$
-S'(9)=\\frac{15}{2}\\cdot 9^{\\frac{1}{2}}
-$$
-
-$$
-9^{\\frac{1}{2}}=3
 $$
 
 $$
 S'(9)=\\frac{15}{2}\\cdot 3=\\frac{45}{2}
 $$
 
-Because $15<\\frac{45}{2}$, the extra ampere adds less at $4$ A than at $9$ A, so the statement is False.`,
+The leftover exponent $\\frac{1}{2}$ is positive, so the slope itself rises with current. Because $15<\\frac{45}{2}$, an extra ampere adds less at $4$ A than at $9$ A, so the statement is False.`,
       `**E.** → False
 
-The $400$ N reject line is inverted for current once $S(p)=A p^{k}$ is known. The spot checks $S(4)=40$ and $S(9)=135$ recover both constants.
-
-The ratio of the two strengths cancels $A$:
+The reject line is $5p^{\\frac{3}{2}}=400$, so $p=80^{\\frac{2}{3}}$. Four cubed is $64$, so the cube root of $80$ is a little over $4.3$ and the threshold is a little over $18$ A. Directly at $18$ A:
 
 $$
-\\frac{S(9)}{S(4)}=\\frac{A\\cdot 9^{k}}{A\\cdot 4^{k}}
+S(18)=5\\cdot 18^{\\frac{3}{2}}
 $$
 
 $$
-\\frac{135}{40}=\\left(\\frac{9}{4}\\right)^{k}
-$$
-
-$$
-\\frac{27}{8}=\\left(\\frac{9}{4}\\right)^{k}
-$$
-
-Because $\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$ and $\\frac{9}{4}=\\left(\\frac{3}{2}\\right)^{2}$,
-
-$$
-\\left(\\frac{3}{2}\\right)^{3}=\\left(\\frac{3}{2}\\right)^{2k}
-$$
-
-$$
-k=\\frac{3}{2}
-$$
-
-The $4$ A weld then pins $A$:
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=40
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-A\\cdot 8=40
-$$
-
-$$
-A=5
-$$
-
-The recovered law is $S(p)=5p^{\\frac{3}{2}}$. Set it equal to the reject line:
-
-$$
-5p^{\\frac{3}{2}}=400
-$$
-
-$$
-p^{\\frac{3}{2}}=80
-$$
-
-Raise both sides to the power $\\frac{2}{3}$:
-
-$$
-p=80^{\\frac{2}{3}}=(80^{\\frac{1}{3}})^{2}
-$$
-
-Because $4^{3}=64$ and $4.3^{3}=79.507$,
-
-$$
-80^{\\frac{1}{3}}\\approx 4.31
-$$
-
-$$
-p\\approx 4.31^{2}\\approx 18.57
-$$
-
-A setting of $18$ A is still short of the line:
-
-$$
-S(18)=5\\cdot 18^{\\frac{3}{2}}=5\\cdot 18\\cdot\\sqrt{18}
-$$
-
-$$
-\\sqrt{18}=3\\sqrt{2}
+18^{\\frac{3}{2}}=18\\cdot\\sqrt{18}=54\\sqrt{2}
 $$
 
 $$
 S(18)=270\\sqrt{2}\\approx 381.8
 $$
 
-$$
-381.8<400
-$$
-
-The smallest current that clears $400$ N is about $18.57$ A, which is not below $18$ A, so the statement is False.`,
+which is still below $400$ N. The smallest clearing current is about $18.57$ A, not below $18$ A, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 61,
@@ -17574,19 +8248,7 @@ $$S(16)=320 \\qquad 80^{\\frac{2}{3}}\\approx 18.57$$
     tactical_explanations: [
       `**A.** → True
 
-Holding power follows $H(m)=A m^{\\frac{2}{3}}$ kilonewtons when mass is in kilograms. The harbour form is $H(t)=B t^{\\frac{2}{3}}$ with $t$ in tonnes, and $1$ tonne $=1000$ kg. The claim is that switching the mass unit leaves the exponent unchanged.
-
-The kilogram law is
-
-$$
-H(m)=A m^{\\frac{2}{3}}
-$$
-
 A change of mass unit is the substitution $m=1000t$:
-
-$$
-m=1000t
-$$
 
 $$
 H=A(1000t)^{\\frac{2}{3}}
@@ -17600,80 +8262,10 @@ $$
 H=A\\cdot 1000^{\\frac{2}{3}}t^{\\frac{2}{3}}
 $$
 
-The new coefficient is $B=A\\cdot 1000^{\\frac{2}{3}}$, which absorbs the conversion. The power of mass remains $\\frac{2}{3}$, so the statement is True.`,
+The conversion is absorbed into the new coefficient $B=A\\cdot 1000^{\\frac{2}{3}}$. The power of mass is still $\\frac{2}{3}$, so the statement is True.`,
       `**B.** → True
 
-A target of $150$ kN is inverted after the kilogram coefficient is known. Holding power follows $H(m)=A m^{\\frac{2}{3}}$ kilonewtons, the trial buoy of $8$ kg held $24$ kN, and the exponent $\\frac{2}{3}$ is already on the sheet.
-
-The model is
-
-$$
-H(m)=A m^{\\frac{2}{3}}
-$$
-
-The trial is
-
-$$
-H(8)=24
-$$
-
-Substitute the recorded mass:
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=24
-$$
-
-Because $8=2^{3}$,
-
-$$
-8^{\\frac{2}{3}}=(2^{3})^{\\frac{2}{3}}=2^{2}=4
-$$
-
-$$
-A\\cdot 4=24
-$$
-
-$$
-A=\\frac{24}{4}=6
-$$
-
-Replay the trial:
-
-$$
-H(8)=6\\cdot 4=24
-$$
-
-The recovered law is
-
-$$
-H(m)=6m^{\\frac{2}{3}}
-$$
-
-Set holding power equal to the storm floor:
-
-$$
-6m^{\\frac{2}{3}}=150
-$$
-
-$$
-m^{\\frac{2}{3}}=\\frac{150}{6}=25
-$$
-
-Raise both sides to the power $\\frac{3}{2}$:
-
-$$
-m=25^{\\frac{3}{2}}=(25^{\\frac{1}{2}})^{3}
-$$
-
-$$
-25^{\\frac{1}{2}}=5
-$$
-
-$$
-m=5^{3}=125
-$$
-
-Forward check at $125$ kg:
+The kilogram law is $H(m)=6m^{\\frac{2}{3}}$. At $125$ kg:
 
 $$
 125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}=5^{2}=25
@@ -17686,135 +8278,13 @@ $$
 A $125$ kg buoy holds $150$ kN, so the statement is True.`,
       `**C.** → False
 
-The storm mass is inverted in kilograms, not in tonnes. Holding power follows $H(m)=A m^{\\frac{2}{3}}$ with trial $H(8)=24$, and the same physical law is rewritten as $H(t)=B t^{\\frac{2}{3}}$ with $t$ in tonnes and $1$ tonne $=1000$ kg.
-
-The model in kilograms is
-
-$$
-H(m)=A m^{\\frac{2}{3}}
-$$
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=24
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-A\\cdot 4=24
-$$
-
-$$
-A=6
-$$
-
-The recovered kilogram law is $H(m)=6m^{\\frac{2}{3}}$. Set it equal to the storm floor:
-
-$$
-6m^{\\frac{2}{3}}=150
-$$
-
-$$
-m^{\\frac{2}{3}}=25
-$$
-
-$$
-m=25^{\\frac{3}{2}}
-$$
-
-$$
-25^{\\frac{1}{2}}=5
-$$
-
-$$
-m=5^{3}=125
-$$
-
-That $125$ is kilograms. Convert to tonnes:
-
-$$
-t=\\frac{125}{1000}=0.125
-$$
-
-In the tonne form the conversion $m=1000t$ sits under the exponent:
-
-$$
-H=6(1000t)^{\\frac{2}{3}}
-$$
-
-$$
-B=6\\cdot 1000^{\\frac{2}{3}}
-$$
-
-$$
-1000^{\\frac{2}{3}}=(10^{3})^{\\frac{2}{3}}=10^{2}=100
-$$
-
-$$
-B=6\\cdot 100=600
-$$
-
-A $125$ tonne buoy would then hold
-
-$$
-125^{\\frac{2}{3}}=25
-$$
-
-$$
-H=600\\cdot 25=15000
-$$
-
-which is a hundred times the $150$ kN protocol. The storm mass is $125$ kg, not $125$ tonnes, so the statement is False.`,
+That $125$ kg is $0.125$ tonnes, not $125$ tonnes. A $125$ tonne buoy would hold $600\\cdot 25=15000$ kN, a hundred times the protocol. The storm mass is $125$ kg, so the statement is False.`,
       `**D.** → False
 
-The tonne coefficient is the kilogram law after $m=1000t$, and the conversion sits under the exponent $\\frac{2}{3}$. Holding power follows $H(m)=A m^{\\frac{2}{3}}$ with trial $H(8)=24$.
-
-The model in kilograms is
-
-$$
-H(m)=A m^{\\frac{2}{3}}
-$$
-
-$$
-H(8)=24
-$$
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=24
-$$
-
-$$
-8^{\\frac{2}{3}}=(2^{3})^{\\frac{2}{3}}=2^{2}=4
-$$
-
-$$
-A\\cdot 4=24
-$$
-
-$$
-A=6
-$$
-
-The recovered kilogram law is $H(m)=6m^{\\frac{2}{3}}$. Substitute $m=1000t$:
-
-$$
-H=6(1000t)^{\\frac{2}{3}}
-$$
-
-$$
-H=6\\cdot 1000^{\\frac{2}{3}}t^{\\frac{2}{3}}
-$$
-
-The tonne-form coefficient is therefore
+Substituting $m=1000t$ puts $1000$ under the exponent $\\frac{2}{3}$:
 
 $$
 B=6\\cdot 1000^{\\frac{2}{3}}
-$$
-
-$$
-1000=10^{3}
 $$
 
 $$
@@ -17822,41 +8292,19 @@ $$
 $$
 
 $$
-B=6\\cdot 100=600
+B=600
 $$
 
-A factor of $1000$ would require exponent $1$:
-
-$$
-6\\cdot 1000=6000
-$$
-
-$$
-\\frac{B}{A}=\\frac{600}{6}=100
-$$
-
-$$
-100\\neq 1000
-$$
-
-The tonne-form coefficient is $100$ times the kilogram coefficient, not $1000$ times, so the statement is False.`,
+The ratio $\\frac{B}{A}$ is $100$, not $1000$. A factor of $1000$ would need exponent $1$, so the statement is False.`,
       `**E.** → False
 
-Doubling mass multiplies holding power by $2^{\\frac{2}{3}}$, because the coefficient cancels. Holding power follows $H(m)=A m^{\\frac{2}{3}}$, so the trial $H(8)=24$ is not needed for the scale factor.
+Doubling mass multiplies holding power by $2^{\\frac{2}{3}}$:
 
 $$
-\\frac{H(2m)}{H(m)}=\\frac{A(2m)^{\\frac{2}{3}}}{A m^{\\frac{2}{3}}}
+\\frac{H(2m)}{H(m)}=2^{\\frac{2}{3}}\\approx 1.587
 $$
 
-$$
-\\frac{H(2m)}{H(m)}=2^{\\frac{2}{3}}
-$$
-
-$$
-2^{\\frac{2}{3}}=\\sqrt[3]{4}\\approx 1.587
-$$
-
-An exact doubling of holding power would need exponent $1$, which would give the factor $2^{1}=2$. The cube root of four is not two. Holding power rises by about $59\\%$, not by a factor of two, so the statement is False.`,
+An exact doubling would need exponent $1$, which would give the factor $2$. Holding power rises, but not in lockstep with mass, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 62,
@@ -17904,58 +8352,10 @@ $$H(t)=600t^{\\frac{2}{3}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Throughput follows $T(d)=A d^{-2}$ megabits per second, calibrated by the bench test $T(4)=50$. Inverting a power with a nonzero exponent produces another power, so the hop for a given throughput should itself be a power of that throughput.
-
-The model is
-
-$$
-T(d)=A d^{-2}
-$$
-
-The bench test is
-
-$$
-T(4)=50
-$$
-
-$$
-A\\cdot 4^{-2}=50
-$$
-
-$$
-4^{2}=16
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-\\frac{A}{16}=50
-$$
-
-$$
-A=50\\cdot 16=800
-$$
-
-The recovered law is
-
-$$
-T=\\frac{800}{d^{2}}
-$$
-
-Solve for distance:
+A power with a nonzero exponent inverts to another power. From $T=\\frac{800}{d^{2}}$ one gets
 
 $$
 d^{2}=\\frac{800}{T}
-$$
-
-$$
-d=\\left(\\frac{800}{T}\\right)^{\\frac{1}{2}}
-$$
-
-$$
-d=800^{\\frac{1}{2}}T^{-\\frac{1}{2}}
 $$
 
 $$
@@ -17965,54 +8365,10 @@ $$
 Distance is a power of throughput with exponent $-\\frac{1}{2}$, so the statement is True.`,
       `**B.** → True
 
-The $8$ Mbps floor is a maximum hop, because throughput falls as $d$ grows. Throughput follows $T(d)=A d^{-2}$, and the bench test $T(4)=50$ recovers the coefficient first.
-
-The model is
-
-$$
-T(d)=A d^{-2}
-$$
-
-$$
-T(4)=50
-$$
-
-$$
-A\\cdot 4^{-2}=50
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-\\frac{A}{16}=50
-$$
-
-$$
-A=800
-$$
-
-Replay the bench test:
-
-$$
-T(4)=\\frac{800}{16}=50
-$$
-
-The recovered law is
-
-$$
-T(d)=\\frac{800}{d^{2}}
-$$
-
-Set it equal to the reliability floor:
+The $8$ Mbps floor is
 
 $$
 \\frac{800}{d^{2}}=8
-$$
-
-$$
-d^{2}=\\frac{800}{8}
 $$
 
 $$
@@ -18020,115 +8376,31 @@ d^{2}=100
 $$
 
 $$
-d=\\sqrt{100}=10
+d=10
 $$
 
-Only the positive root is a hop. Because the exponent $-2$ is negative, every longer hop falls below $8$ Mbps. The farthest reliable hop is exactly $10$ m, so the statement is True.`,
+Because the exponent is negative, every longer hop falls below $8$ Mbps. The farthest reliable hop is exactly $10$ m, so the statement is True.`,
       `**C.** → False
 
-Doubling the hop multiplies throughput by $2^{-2}$, and the coefficient cancels. Throughput follows $T(d)=A d^{-2}$, so the bench test is not needed for the scale factor.
+Doubling the hop multiplies throughput by $2^{-2}$:
 
 $$
-\\frac{T(2d)}{T(d)}=\\frac{A(2d)^{-2}}{A d^{-2}}
+\\frac{T(2d)}{T(d)}=2^{-2}=\\frac{1}{4}
 $$
 
-$$
-\\frac{T(2d)}{T(d)}=2^{-2}
-$$
-
-$$
-2^{-2}=\\frac{1}{4}
-$$
-
-A cut to one half would need exponent $-1$, which would give $2^{-1}=\\frac{1}{2}$. The factor is one quarter, not one half. An inverse-square law quarters the reading when distance doubles, so the statement is False.`,
+A cut to one half would need exponent $-1$, which would give $2^{-1}=\\frac{1}{2}$. An inverse-square law quarters the reading when distance doubles, so the statement is False.`,
       `**D.** → False
 
-Whether $11$ m complies is settled by evaluating throughput there. Throughput follows $T(d)=A d^{-2}$, and the bench test at $d=4$ m recorded $T=50$ Mbps.
-
-The model is
-
-$$
-T(d)=A d^{-2}
-$$
-
-$$
-T(4)=50
-$$
-
-$$
-A\\cdot 4^{-2}=50
-$$
-
-$$
-4^{2}=16
-$$
-
-$$
-4^{-2}=\\frac{1}{16}
-$$
-
-$$
-\\frac{A}{16}=50
-$$
-
-$$
-A=800
-$$
-
-The recovered law is
-
-$$
-T(d)=\\frac{800}{d^{2}}
-$$
-
-The same law meets the floor at $d=10$:
-
-$$
-T(10)=\\frac{800}{10^{2}}=\\frac{800}{100}=8
-$$
-
-At eleven metres:
-
-$$
-T(11)=\\frac{800}{11^{2}}
-$$
-
-$$
-11^{2}=121
-$$
+At $11$ m:
 
 $$
 T(11)=\\frac{800}{121}\\approx 6.61
 $$
 
-$$
-6.61<8
-$$
-
-Because the exponent $-2$ is negative, $T(11)<T(10)$. The hop delivers about $6.61$ Mbps, which is below the floor, so the statement is False.`,
+which is already below $8$ Mbps. The $10$ m floor sits at exactly $8$ Mbps, and a longer hop can only be slower, so the statement is False.`,
       `**E.** → False
 
-A negative exponent puts distance in a denominator, but the numerator stays positive. Throughput follows $T(d)=A d^{-2}$, and the bench test $T(4)=50$ recovers that numerator.
-
-$$
-A\\cdot 4^{-2}=50
-$$
-
-$$
-\\frac{A}{16}=50
-$$
-
-$$
-A=800>0
-$$
-
-The recovered law is $T(d)=\\frac{800}{d^{2}}$. For every hop $d>0$,
-
-$$
-\\frac{800}{d^{2}}>0
-$$
-
-As hops grow, $T(d)$ falls towards $0$ from above and never crosses it. Throughput cannot become negative, so the statement is False.`,
+The numerator $800$ is positive, so every hop $d>0$ keeps $T>0$. As hops grow, throughput falls toward $0$ from above and never crosses it, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 63,
@@ -18176,60 +8448,10 @@ $$d=\\sqrt{800}\\, T^{-\\frac{1}{2}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → False
 
-The pair is two evaluations at $16$ g, while the single fish is one evaluation at $32$ g. Gill area follows $G(m)=A m^{\\frac{3}{4}}$, and the specimen $G(256)=512$ recovers $A$ first.
-
-The model is
+The recovered law is $G(m)=8m^{\\frac{3}{4}}$. Two $16$ g fish:
 
 $$
-G(m)=A m^{\\frac{3}{4}}
-$$
-
-$$
-G(256)=512
-$$
-
-$$
-A\\cdot 256^{\\frac{3}{4}}=512
-$$
-
-$$
-256=4^{4}
-$$
-
-$$
-256^{\\frac{1}{4}}=4
-$$
-
-$$
-256^{\\frac{3}{4}}=4^{3}=64
-$$
-
-$$
-64A=512
-$$
-
-$$
-A=\\frac{512}{64}=8
-$$
-
-The recovered law is
-
-$$
-G(m)=8m^{\\frac{3}{4}}
-$$
-
-Two $16$ g fish:
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{1}{4}}=2
-$$
-
-$$
-16^{\\frac{3}{4}}=2^{3}=8
+16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}=2^{3}=8
 $$
 
 $$
@@ -18250,97 +8472,13 @@ $$
 G(32)=64\\cdot 2^{\\frac{3}{4}}\\approx 107.63
 $$
 
-$$
-128>107.63
-$$
-
-The pair carries more total gill area than one $32$ g fish, so the statement is False.`,
+The pair carries more total gill than one $32$ g fish, so the statement is False.`,
       `**B.** → True
 
-Area at $16$ g is a substitution into the recovered law. Gill area follows $G(m)=A m^{\\frac{3}{4}}$, and the specimen $G(256)=512$ recovers $A$.
-
-The model is
-
-$$
-G(m)=A m^{\\frac{3}{4}}
-$$
-
-$$
-G(256)=512
-$$
-
-$$
-A\\cdot 256^{\\frac{3}{4}}=512
-$$
-
-$$
-256^{\\frac{1}{4}}=4
-$$
-
-$$
-256^{\\frac{3}{4}}=4^{3}=64
-$$
-
-$$
-64A=512
-$$
-
-$$
-A=8
-$$
-
-Replay the specimen:
-
-$$
-G(256)=8\\cdot 64=512
-$$
-
-The recovered law is
-
-$$
-G(m)=8m^{\\frac{3}{4}}
-$$
-
-At sixteen grams:
-
-$$
-16^{\\frac{1}{4}}=2
-$$
-
-$$
-16^{\\frac{3}{4}}=2^{3}=8
-$$
-
-$$
-G(16)=8\\cdot 8=64
-$$
-
-The $16$ g fish carries $64$ cm$^{2}$ of gill, so the statement is True.`,
+The $16$ g fish already came out at $64$ cm$^{2}$ of gill. That is the claimed area, so the statement is True.`,
       `**C.** → False
 
-Area per gram is the area law divided by mass, which subtracts $1$ from the exponent. Gill area follows $G(m)=A m^{\\frac{3}{4}}$, and the specimen $G(256)=512$ recovers $A$ first.
-
-$$
-A\\cdot 256^{\\frac{3}{4}}=512
-$$
-
-$$
-256^{\\frac{3}{4}}=64
-$$
-
-$$
-64A=512
-$$
-
-$$
-A=8
-$$
-
-Divide the recovered law by mass:
-
-$$
-\\frac{G(m)}{m}=\\frac{8m^{\\frac{3}{4}}}{m}
-$$
+Area per gram subtracts $1$ from the exponent:
 
 $$
 \\frac{G(m)}{m}=8m^{\\frac{3}{4}-1}
@@ -18350,97 +8488,27 @@ $$
 \\frac{G(m)}{m}=8m^{-\\frac{1}{4}}
 $$
 
-The leftover exponent is negative, so intensity falls as mass grows. A constant intensity would need exponent $0$. It is not a constant, so the statement is False.`,
+The leftover exponent is negative, so intensity falls as mass grows. A constant intensity would need exponent $0$, so the statement is False.`,
       `**D.** → True
 
-Gill area follows $G(m)=A m^{\\frac{3}{4}}$ square centimetres. The allometric exponent is given as $\\frac{3}{4}$, and the specimen is not needed to compare it with $1$.
-
-If mass is scaled by a factor $c>1$, area scales by $c^{\\frac{3}{4}}$ while mass itself scales by $c^{1}$. Because
-
-$$
-\\frac{3}{4}<1
-$$
-
-one has $c^{\\frac{3}{4}}<c$. Gill area therefore grows more slowly than body mass, so the statement is True.`,
+The allometric exponent is already $\\frac{3}{4}$. If mass scales by $c>1$, area scales by $c^{\\frac{3}{4}}$, and $\\frac{3}{4}<1$ forces $c^{\\frac{3}{4}}<c$. Each extra gram of body adds less gill than the gram before it, so the statement is True.`,
       `**E.** → False
 
-A target of $216$ cm$^{2}$ is inverted for mass after the coefficient is known. Gill area follows $G(m)=A m^{\\frac{3}{4}}$, and the specimen $G(256)=512$ recovers $A$.
-
-The model is
-
-$$
-G(m)=A m^{\\frac{3}{4}}
-$$
-
-$$
-A\\cdot 256^{\\frac{3}{4}}=512
-$$
-
-$$
-256^{\\frac{1}{4}}=4
-$$
-
-$$
-256^{\\frac{3}{4}}=4^{3}=64
-$$
-
-$$
-64A=512
-$$
-
-$$
-A=8
-$$
-
-The recovered law is
-
-$$
-G(m)=8m^{\\frac{3}{4}}
-$$
-
-Set it equal to the target area:
+A target of $216$ cm$^{2}$ inverts as
 
 $$
 8m^{\\frac{3}{4}}=216
 $$
 
 $$
-m^{\\frac{3}{4}}=\\frac{216}{8}=27
-$$
-
-Raise both sides to the power $\\frac{4}{3}$:
-
-$$
-m=27^{\\frac{4}{3}}=(27^{\\frac{1}{3}})^{4}
+m^{\\frac{3}{4}}=27
 $$
 
 $$
-27^{\\frac{1}{3}}=3
+m=27^{\\frac{4}{3}}=81
 $$
 
-$$
-m=3^{4}=81
-$$
-
-The claimed $64$ g produces a smaller area:
-
-$$
-64^{\\frac{1}{4}}=2^{\\frac{3}{2}}=2\\sqrt{2}
-$$
-
-$$
-64^{\\frac{3}{4}}=(2\\sqrt{2})^{3}=8\\cdot 2\\sqrt{2}=16\\sqrt{2}
-$$
-
-$$
-G(64)=8\\cdot 16\\sqrt{2}=128\\sqrt{2}\\approx 181
-$$
-
-$$
-181<216
-$$
-
-The mass that produces $216$ cm$^{2}$ is $81$ g, so the statement is False.`,
+The claimed $64$ g produces $128\\sqrt{2}\\approx 181$ cm$^{2}$, short of $216$. The mass that produces $216$ cm$^{2}$ is $81$ g, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 64,
@@ -18488,150 +8556,26 @@ $$\\frac{G(m)}{m}=8m^{-\\frac{1}{4}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Curing strength follows $S(t)=A\\sqrt{t}$ megapascals. Quadrupling time multiplies strength by $\\sqrt{4}$, because the coefficient cancels. The logged $5$ MPa gap is not needed for the scale factor.
+Quadrupling time multiplies strength by $\\sqrt{4}$, and the coefficient cancels:
 
 $$
-\\frac{S(4t)}{S(t)}=\\frac{A\\sqrt{4t}}{A\\sqrt{t}}
-$$
-
-$$
-\\frac{S(4t)}{S(t)}=\\sqrt{4}
-$$
-
-$$
-\\sqrt{4}=2
+\\frac{S(4t)}{S(t)}=\\sqrt{4}=2
 $$
 
 The multiplier is exactly $2$ at every starting day. Quadrupling curing time doubles strength, so the statement is True.`,
       `**B.** → True
 
-The logged gap is a difference of two model values of $S(t)=A\\sqrt{t}$, and $A$ factors out. Strength rose by $5$ MPa between day $4$ and day $9$.
-
-The model is
-
-$$
-S(t)=A t^{\\frac{1}{2}}
-$$
-
-The surviving record is
-
-$$
-S(9)-S(4)=5
-$$
-
-$$
-A\\sqrt{9}-A\\sqrt{4}=5
-$$
-
-$$
-\\sqrt{9}=3
-$$
-
-$$
-\\sqrt{4}=2
-$$
-
-$$
-A\\cdot 3-A\\cdot 2=5
-$$
-
-$$
-A(3-2)=5
-$$
-
-$$
-A=5
-$$
-
-The recovered law is
-
-$$
-S(t)=5\\sqrt{t}
-$$
-
-On day $4$:
-
-$$
-S(4)=5\\sqrt{4}
-$$
-
-$$
-\\sqrt{4}=2
-$$
-
-$$
-S(4)=5\\cdot 2=10
-$$
-
-Companion check on day $9$: $S(9)=5\\cdot 3=15$, and the gap is $15-10=5$. Strength on day $4$ is $10$ MPa, so the statement is True.`,
+The law is $S(t)=5\\sqrt{t}$. Day $4$ is $5\\cdot 2=10$ MPa. The companion $15-10=5$ recovers the logged gap. Strength on day $4$ is $10$ MPa, so the statement is True.`,
       `**C.** → False
 
-An extra day is the derivative of $S(t)=A\\sqrt{t}$. The logged $5$ MPa rise between day $4$ and day $9$ recovers $A$ first.
-
-The model is
-
-$$
-S(t)=A t^{\\frac{1}{2}}
-$$
-
-$$
-A\\sqrt{9}-A\\sqrt{4}=5
-$$
-
-$$
-A(3-2)=5
-$$
-
-$$
-A=5
-$$
-
-The recovered law is
-
-$$
-S(t)=5t^{\\frac{1}{2}}
-$$
-
-Differentiate:
-
-$$
-S'(t)=5\\cdot\\frac{1}{2}t^{\\frac{1}{2}-1}
-$$
+An extra day is the derivative of $S(t)=5\\sqrt{t}$:
 
 $$
 S'(t)=\\frac{5}{2}t^{-\\frac{1}{2}}
 $$
 
-After four days:
-
-$$
-S'(4)=\\frac{5}{2}\\cdot 4^{-\\frac{1}{2}}
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{-\\frac{1}{2}}=\\frac{1}{2}
-$$
-
 $$
 S'(4)=\\frac{5}{2}\\cdot\\frac{1}{2}=\\frac{5}{4}
-$$
-
-After nine days:
-
-$$
-S'(9)=\\frac{5}{2}\\cdot 9^{-\\frac{1}{2}}
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{-\\frac{1}{2}}=\\frac{1}{3}
 $$
 
 $$
@@ -18641,132 +8585,24 @@ $$
 Because $\\frac{5}{4}>\\frac{5}{6}$, the extra day adds more after four days than after nine, so the statement is False.`,
       `**D.** → True
 
-Reaching $30$ MPa is an inversion of $S(t)=A\\sqrt{t}$. The logged $5$ MPa rise between day $4$ and day $9$ recovers $A$ first.
-
-The model is
-
-$$
-S(t)=A t^{\\frac{1}{2}}
-$$
-
-$$
-A\\sqrt{9}-A\\sqrt{4}=5
-$$
-
-$$
-\\sqrt{9}=3
-$$
-
-$$
-\\sqrt{4}=2
-$$
-
-$$
-A(3-2)=5
-$$
-
-$$
-A=5
-$$
-
-The recovered law is
-
-$$
-S(t)=5\\sqrt{t}
-$$
-
-Set strength equal to $30$ MPa:
+Reaching $30$ MPa:
 
 $$
 5\\sqrt{t}=30
 $$
 
 $$
-\\sqrt{t}=\\frac{30}{5}=6
+\\sqrt{t}=6
 $$
 
 $$
-t=6^{2}=36
+t=36
 $$
 
-Forward check:
-
-$$
-S(36)=5\\sqrt{36}
-$$
-
-$$
-\\sqrt{36}=6
-$$
-
-$$
-S(36)=5\\cdot 6=30
-$$
-
-Reaching $30$ MPa takes exactly $36$ days, so the statement is True.`,
+Forward check: $5\\cdot 6=30$. Reaching $30$ MPa takes exactly $36$ days, so the statement is True.`,
       `**E.** → False
 
-The log preserves a difference, not a level. Strength follows $S(t)=A\\sqrt{t}$, and the recorded rise is $S(9)-S(4)=5$.
-
-The model is
-
-$$
-S(t)=A t^{\\frac{1}{2}}
-$$
-
-$$
-A\\sqrt{9}-A\\sqrt{4}=5
-$$
-
-$$
-\\sqrt{9}=3
-$$
-
-$$
-\\sqrt{4}=2
-$$
-
-$$
-A(3-2)=5
-$$
-
-$$
-A=5
-$$
-
-The recovered law is
-
-$$
-S(t)=5\\sqrt{t}
-$$
-
-On day $9$:
-
-$$
-S(9)=5\\sqrt{9}
-$$
-
-$$
-\\sqrt{9}=3
-$$
-
-$$
-S(9)=5\\cdot 3=15
-$$
-
-On day $4$:
-
-$$
-S(4)=5\\sqrt{4}=5\\cdot 2=10
-$$
-
-The logged figure is the gap
-
-$$
-S(9)-S(4)=15-10=5
-$$
-
-Day $9$ carries $15$ MPa. The figure $5$ is that gap, not the strength on day $9$, so the statement is False.`,
+Day $9$ carries $5\\cdot 3=15$ MPa. The logged figure is the difference $15-10=5$, a gap, not the day-$9$ level, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 65,
@@ -18814,257 +8650,11 @@ $$\\frac{S(ct)}{S(t)}=\\sqrt{c} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Tip deflection follows $y(L)=A L^{k}$ millimetres. Two trusted levels determine the exponent, because their ratio cancels the coefficient. The trusted runs are $y(3)=18$ and $y(6)=72$.
+The trusted spans double from $3$ m to $6$ m. Their ratio cancels $A$:
 
-The model is
-
-$$
-y(L)=A L^{k}
-$$
-
-The span doubles from $3$ m to $6$ m:
-
-$$
-\\frac{y(6)}{y(3)}=\\frac{A\\cdot 6^{k}}{A\\cdot 3^{k}}
-$$
-
-$$
-\\frac{72}{18}=\\left(\\frac{6}{3}\\right)^{k}
-$$
-
-$$
-4=2^{k}
-$$
-
-$$
-2^{2}=4
-$$
-
-$$
-2^{k}=2^{2}
-$$
-
-$$
-k=2
-$$
-
-An exponent of $2$ is a square law. The shorter trusted span then pins $A$:
-
-$$
-A\\cdot 3^{2}=18
-$$
-
-$$
-3^{2}=9
-$$
-
-$$
-9A=18
-$$
-
-$$
-A=2
-$$
-
-The recovered law is
-
-$$
-y(L)=2L^{2}
-$$
-
-The longer trusted run is reproduced:
-
-$$
-y(6)=2\\cdot 6^{2}=2\\cdot 36=72
-$$
-
-The two trusted spans are consistent with a square law, so the statement is True.`,
-      `**B.** → True
-
-The third run is a test point, so the prediction comes from the trusted law $y(L)=A L^{k}$ fitted to $y(3)=18$ and $y(6)=72$.
-
-The model is
-
-$$
-y(L)=A L^{k}
-$$
-
-The trusted ratio cancels $A$:
-
-$$
-\\frac{y(6)}{y(3)}=\\frac{72}{18}=2^{k}
-$$
-
-$$
-4=2^{k}
-$$
-
-$$
-k=2
-$$
-
-The $3$ m run then pins $A$:
-
-$$
-A\\cdot 3^{2}=18
-$$
-
-$$
-9A=18
-$$
-
-$$
-A=2
-$$
-
-The recovered law is
-
-$$
-y(L)=2L^{2}
-$$
-
-Replay the longer trusted run: $y(6)=2\\cdot 36=72$. At nine metres:
-
-$$
-y(9)=2\\cdot 9^{2}
-$$
-
-$$
-9^{2}=81
-$$
-
-$$
-y(9)=2\\cdot 81=162
-$$
-
-The recorded third run is $150$ mm:
-
-$$
-162-150=12
-$$
-
-The recorded $150$ mm lies $12$ mm below the quadratic prediction, so the statement is True.`,
-      `**C.** → False
-
-Forcing the curve through the third run while keeping the exponent at $2$ replaces the coefficient. The trusted pair $y(3)=18$ and $y(6)=72$ first shows that the trusted exponent is $2$.
-
-The trusted ratio:
-
-$$
-\\frac{y(6)}{y(3)}=\\frac{72}{18}=2^{k}
-$$
-
-$$
-4=2^{k}
-$$
-
-$$
-k=2
-$$
-
-The trusted law would be $y(L)=2L^{2}$, which already fits $y(3)=2\\cdot 9=18$. Now keep $k=2$ but force $y(9)=150$:
-
-$$
-A'\\cdot 9^{2}=150
-$$
-
-$$
-9^{2}=81
-$$
-
-$$
-81A'=150
-$$
-
-$$
-A'=\\frac{150}{81}=\\frac{50}{27}
-$$
-
-The rescaled law is
-
-$$
-y'(L)=\\frac{50}{27}L^{2}
-$$
-
-At three metres:
-
-$$
-y'(3)=\\frac{50}{27}\\cdot 3^{2}
-$$
-
-$$
-3^{2}=9
-$$
-
-$$
-y'(3)=\\frac{50}{27}\\cdot 9=\\frac{50}{3}\\approx 16.67
-$$
-
-$$
-\\frac{50}{3}\\neq 18
-$$
-
-The $3$ m reading moves from $18$ mm to about $16.67$ mm. A coefficient change rescales every level, so the statement is False.`,
-      `**D.** → False
-
-Fitting an exponent to a pair uses that pair's ratio, and this pair includes the suspect run $y(9)=150$ together with $y(3)=18$.
-
-The model is
-
-$$
-y(L)=A L^{k}
-$$
-
-$$
-\\frac{y(9)}{y(3)}=\\frac{A\\cdot 9^{k}}{A\\cdot 3^{k}}
-$$
-
-$$
-\\frac{150}{18}=\\left(\\frac{9}{3}\\right)^{k}
-$$
-
-$$
-\\frac{25}{3}=3^{k}
-$$
-
-Take logarithms:
-
-$$
-\\ln\\left(\\frac{25}{3}\\right)=k\\ln 3
 $$
-
-$$
-k=\\frac{\\ln(\\frac{25}{3})}{\\ln 3}
-$$
-
-$$
-\\frac{25}{3}\\approx 8.333
-$$
-
-$$
-\\ln 8.333\\approx 2.120
-$$
-
+\\frac{y(6)}{y(3)}=\\frac{72}{18}
 $$
-\\ln 3\\approx 1.099
-$$
-
-$$
-k\\approx\\frac{2.120}{1.099}\\approx 1.930
-$$
-
-An exact square across a threefold span would need the ratio $3^{2}=9$:
-
-$$
-\\frac{25}{3}\\approx 8.333\\neq 9
-$$
-
-The fitted exponent is about $1.930$, not exactly $2$, so the statement is False.`,
-      `**E.** → False
-
-A genuine power law returns the same exponent from every pair of its own points. Tip deflection is modelled as $y(L)=A L^{k}$, with trusted runs $y(3)=18$ and $y(6)=72$ and a third run $y(9)=150$.
-
-The trusted pair:
 
 $$
 \\frac{72}{18}=2^{k}
@@ -19078,7 +8668,40 @@ $$
 k=2
 $$
 
-The $3$ m run then gives $A\\cdot 9=18$, so $A=2$ and $y(L)=2L^{2}$. The pair that uses the $9$ m run:
+An exponent of $2$ is a square law. The shorter span then pins $A\\cdot 9=18$, hence $A=2$. The longer run $2\\cdot 36=72$ sits on the same parabola, so the statement is True.`,
+      `**B.** → True
+
+The trusted law is $y(L)=2L^{2}$. At nine metres:
+
+$$
+y(9)=2\\cdot 9^{2}
+$$
+
+$$
+9^{2}=81
+$$
+
+$$
+y(9)=2\\cdot 81=162
+$$
+
+The recorded third run is $150$ mm, which lies $12$ mm below the quadratic, so the statement is True.`,
+      `**C.** → False
+
+Forcing $y(9)=150$ with exponent $2$ replaces the coefficient:
+
+$$
+A'\\cdot 81=150
+$$
+
+$$
+A'=\\frac{50}{27}
+$$
+
+At three metres the rescaled law reads $\\frac{50}{27}\\cdot 9=\\frac{50}{3}\\approx 16.67$, not $18$. A coefficient change rescales every level, so the statement is False.`,
+      `**D.** → False
+
+Fitting the suspect pair $(3,18)$ and $(9,150)$ uses that pair's ratio:
 
 $$
 \\frac{150}{18}=3^{k}
@@ -19088,21 +8711,10 @@ $$
 \\frac{25}{3}=3^{k}
 $$
 
-$$
-k=\\frac{\\ln(\\frac{25}{3})}{\\ln 3}\\approx 1.930
-$$
+An exact square would need $3^{2}=9$, but $\\frac{25}{3}\\approx 8.333$. The fitted exponent is $\\frac{\\ln(25/3)}{\\ln 3}\\approx 1.930$, not $2$, so the statement is False.`,
+      `**E.** → False
 
-The two exponents do not match. The trusted law also predicts
-
-$$
-y(9)=2\\cdot 9^{2}=2\\cdot 81=162
-$$
-
-$$
-162\\neq 150
-$$
-
-The third run does not sit on the same power law, so the statement is False.`,
+The trusted law predicts $y(9)=162$, not the recorded $150$. The pair that uses the third run gives exponent about $1.930$ rather than $2$. The third run does not sit on the same power law, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 66,
@@ -19150,19 +8762,7 @@ $$\\frac{y(cL)}{y(L)}=c^{2} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Steel mass follows $M(h)=A h^{k}$ kilograms. A percentage rule is a ratio, so it fixes the exponent and cancels the coefficient. Lengthening any mast by $20\\%$ raises steel mass by $72.8\\%$.
-
-The model is
-
-$$
-M(h)=A h^{k}
-$$
-
-A $20\\%$ stretch is a height factor of $1.2$, and a $72.8\\%$ rise is a mass factor of $1.728$:
-
-$$
-\\frac{M(1.2h)}{M(h)}=\\frac{A(1.2h)^{k}}{A h^{k}}
-$$
+A $20\\%$ stretch is a height factor of $1.2$, and a $72.8\\%$ rise is a mass factor of $1.728$. The ratio cancels $A$:
 
 $$
 \\frac{M(1.2h)}{M(h)}=1.2^{k}
@@ -19172,8 +8772,6 @@ $$
 1.2^{k}=1.728
 $$
 
-Check the cube of $1.2$:
-
 $$
 1.2^{2}=1.44
 $$
@@ -19182,76 +8780,10 @@ $$
 1.44\\cdot 1.2=1.728
 $$
 
-$$
-1.2^{3}=1.728
-$$
-
-$$
-k=3
-$$
-
-Mass scales with the cube of height, so the statement is True.`,
+so $1.2^{3}=1.728$ and $k=3$. Mass scales with the cube of height, so the statement is True.`,
       `**B.** → True
 
-A $12$ m mast is the $10$ m reference lengthened by $20\\%$, so the design note supplies the multiplier. Steel mass follows $M(h)=A h^{k}$, with a $20\\%$ stretch raising mass by $72.8\\%$ and $M(10)=500$.
-
-The model is
-
-$$
-M(h)=A h^{k}
-$$
-
-The percentage rule recovers the exponent:
-
-$$
-\\frac{M(1.2h)}{M(h)}=1.2^{k}
-$$
-
-$$
-1.2^{k}=1.728
-$$
-
-$$
-1.2^{2}=1.44
-$$
-
-$$
-1.44\\cdot 1.2=1.728
-$$
-
-$$
-1.2^{3}=1.728
-$$
-
-$$
-k=3
-$$
-
-The $10$ m reference then pins $A$:
-
-$$
-A\\cdot 10^{3}=500
-$$
-
-$$
-10^{3}=1000
-$$
-
-$$
-1000A=500
-$$
-
-$$
-A=\\frac{500}{1000}=0.5
-$$
-
-The recovered law is
-
-$$
-M(h)=0.5h^{3}
-$$
-
-At twelve metres, either route agrees:
+A $12$ m mast is the $10$ m reference lengthened by $20\\%$, so the design note supplies the multiplier $1.728$:
 
 $$
 \\frac{12}{10}=1.2
@@ -19261,87 +8793,13 @@ $$
 M(12)=500\\cdot 1.728=864
 $$
 
-$$
-12^{3}=1728
-$$
-
-$$
-M(12)=0.5\\cdot 1728=864
-$$
-
 A $12$ m mast uses $864$ kg of steel, so the statement is True.`,
       `**C.** → False
 
-The percentage rule is a quotient of two values of $M(h)=A h^{k}$, and a quotient loses the coefficient. Lengthening any mast by $20\\%$ raises steel mass by $72.8\\%$.
-
-The model is
-
-$$
-M(h)=A h^{k}
-$$
-
-$$
-\\frac{M(1.2h)}{M(h)}=\\frac{A(1.2h)^{k}}{A h^{k}}
-$$
-
-$$
-\\frac{M(1.2h)}{M(h)}=1.2^{k}
-$$
-
-$$
-1.2^{k}=1.728
-$$
-
-The coefficient $A$ cancels, so every positive $A$ satisfies that note equally well. The family $M(h)=Ah^{3}$ stays one parameter free until the $500$ kg reference selects a level:
-
-$$
-A\\cdot 10^{3}=500
-$$
-
-$$
-A=0.5
-$$
-
-Without that reference, $A$ cannot be read from the $20\\%$ rule. Scale information cannot substitute for a level, so the statement is False.`,
+The $20\\%$ rule is a quotient of two masses, so $A$ cancels and every positive coefficient satisfies the note equally well. Scale information cannot substitute for a level, so the statement is False.`,
       `**D.** → True
 
-A $10\\%$ increase is a height factor of $1.1$, and under the recovered cubic law the mass factor is that number cubed. Steel mass follows $M(h)=A h^{k}$, and a $20\\%$ stretch raising mass by $72.8\\%$ recovers $k$.
-
-The model is
-
-$$
-M(h)=A h^{k}
-$$
-
-$$
-\\frac{M(1.2h)}{M(h)}=1.2^{k}
-$$
-
-$$
-1.2^{k}=1.728
-$$
-
-$$
-1.2^{2}=1.44
-$$
-
-$$
-1.44\\cdot 1.2=1.728
-$$
-
-$$
-1.2^{3}=1.728
-$$
-
-$$
-k=3
-$$
-
-Now apply a $10\\%$ stretch:
-
-$$
-\\frac{M(1.1h)}{M(h)}=1.1^{3}
-$$
+The percentage rule gives $k=3$. A $10\\%$ stretch is the factor $1.1^{3}$:
 
 $$
 1.1^{2}=1.21
@@ -19351,50 +8809,10 @@ $$
 1.21\\cdot 1.1=1.331
 $$
 
-$$
-\\frac{M(1.1h)-M(h)}{M(h)}=1.331-1
-$$
-
-$$
-1.331-1=0.331=33.1\\%
-$$
-
-The rise is exactly $33.1\\%$, so the statement is True.`,
+The mass rise is $0.331$, exactly $33.1\\%$, so the statement is True.`,
       `**E.** → False
 
-A $20\\%$ stretch would raise mass by $20\\%$ only if the exponent were $1$. Steel mass follows $M(h)=A h^{k}$, and the design note says the stretch raises mass by $72.8\\%$.
-
-The model is
-
-$$
-M(h)=A h^{k}
-$$
-
-$$
-\\frac{M(1.2h)}{M(h)}=1.2^{k}
-$$
-
-$$
-1.2^{k}=1.728
-$$
-
-$$
-1.2^{2}=1.44
-$$
-
-$$
-1.44\\cdot 1.2=1.728
-$$
-
-$$
-k=3
-$$
-
-$$
-k=3\\neq 1
-$$
-
-Under exponent $1$ the mass factor would be $1.2$. The actual mass factor is $1.728$. A $20\\%$ height increase raises mass by $72.8\\%$, not by $20\\%$, so the statement is False.`,
+A $20\\%$ stretch would raise mass by $20\\%$ only if the exponent were $1$, which would give the factor $1.2$. The design note records the factor $1.728$, a $72.8\\%$ rise, because $k=3$. Height and mass do not move in lockstep, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 67,
@@ -19442,41 +8860,19 @@ $$M(h)=0.5h^{3} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Acoustic intensity follows $I(d)=A d^{-2}$ watts per square metre. Doubling distance multiplies intensity by $2^{-2}$, and the coefficient cancels. The meter reading at $2$ m is not needed for the scale factor.
+Doubling distance multiplies intensity by $2^{-2}$:
 
 $$
-\\frac{I(2d)}{I(d)}=\\frac{A(2d)^{-2}}{A d^{-2}}
-$$
-
-$$
-\\frac{I(2d)}{I(d)}=2^{-2}
-$$
-
-$$
-2^{-2}=\\frac{1}{4}
+\\frac{I(2d)}{I(d)}=2^{-2}=\\frac{1}{4}
 $$
 
 The factor is one quarter at every starting distance. Doubling the distance cuts intensity to one quarter, so the statement is True.`,
       `**B.** → False
 
-The exponent is $-2$, so the meter reading recovers the coefficient by multiplying intensity by the square of the distance. Intensity follows $I(d)=A d^{-2}$ watts per square metre, and the meter at $2$ metres records $0.72$ W/m$^{2}$.
-
-The model is
-
-$$
-I(d)=A d^{-2}
-$$
-
-$$
-I(2)=0.72
-$$
+The meter at $2$ m pins the coefficient:
 
 $$
 A\\cdot 2^{-2}=0.72
-$$
-
-$$
-2^{2}=4
 $$
 
 $$
@@ -19488,203 +8884,37 @@ $$
 $$
 
 $$
-A=0.72\\cdot 4=2.88
-$$
-
-The recovered law is
-
-$$
-I(d)=\\frac{2.88}{d^{2}}
-$$
-
-Replay the meter:
-
-$$
-I(2)=\\frac{2.88}{4}=0.72
-$$
-
-The claimed coefficient $1.44$ fails that same reading:
-
-$$
-\\frac{1.44}{2^{2}}=\\frac{1.44}{4}=0.36
-$$
-
-$$
-0.36\\neq 0.72
-$$
-
-The figure $1.44$ is the reading multiplied by the distance $2$ rather than by its square $4$. The recovered coefficient is $2.88$, so the statement is False.`,
-      `**C.** → True
-
-An extra metre is the derivative of $I(d)=A d^{-2}$. The meter reading $I(2)=0.72$ recovers $A$ first.
-
-The model is
-
-$$
-I(d)=A d^{-2}
-$$
-
-$$
-A\\cdot 2^{-2}=0.72
-$$
-
-$$
-\\frac{A}{4}=0.72
-$$
-
-$$
 A=2.88
 $$
 
-The recovered law is
+The law is $I(d)=\\frac{2.88}{d^{2}}$, which replays the meter as $\\frac{2.88}{4}=0.72$. The claimed $1.44$ multiplies the reading by the distance $2$ rather than by its square $4$:
 
 $$
-I(d)=2.88\\, d^{-2}
+\\frac{1.44}{4}=0.36
 $$
 
-Differentiate:
+which is half the meter. The recovered coefficient is $2.88$, so the statement is False.`,
+      `**C.** → True
 
-$$
-I'(d)=2.88\\cdot(-2)\\, d^{-3}
-$$
+An extra metre is the derivative of $I(d)=\\frac{2.88}{d^{2}}$:
 
 $$
 I'(d)=-5.76\\, d^{-3}
 $$
 
-The drop per metre is the absolute value. At two metres:
-
-$$
-|I'(2)|=\\frac{5.76}{2^{3}}
-$$
-
-$$
-2^{3}=8
-$$
-
-$$
-|I'(2)|=\\frac{5.76}{8}=0.72
-$$
+The drop per metre is $\\frac{5.76}{d^{3}}$. At $2$ m that is $\\frac{5.76}{8}=0.72$; at $6$ m it is $\\frac{5.76}{216}\\approx 0.0267$. The drop is steeper near the hub, so the statement is True.`,
+      `**D.** → False
 
 At six metres:
 
 $$
-|I'(6)|=\\frac{5.76}{6^{3}}
+I(6)=\\frac{2.88}{36}=0.08
 $$
 
-$$
-6^{3}=216
-$$
-
-$$
-|I'(6)|=\\frac{5.76}{216}\\approx 0.0267
-$$
-
-Because $0.72>0.0267$, the drop per metre is steeper near the hub. An extra metre cuts more intensity at $2$ m than at $6$ m, so the statement is True.`,
-      `**D.** → False
-
-A cap on intensity is inverted for distance after the coefficient is known. Intensity follows $I(d)=A d^{-2}$, and the meter reading $I(2)=0.72$ recovers $A$. Night operations are capped at $0.08$ W/m$^{2}$.
-
-The model is
-
-$$
-I(d)=A d^{-2}
-$$
-
-$$
-A\\cdot 2^{-2}=0.72
-$$
-
-$$
-2^{2}=4
-$$
-
-$$
-2^{-2}=\\frac{1}{4}
-$$
-
-$$
-\\frac{A}{4}=0.72
-$$
-
-$$
-A=2.88
-$$
-
-The recovered law is
-
-$$
-I(d)=\\frac{2.88}{d^{2}}
-$$
-
-Set it equal to the night cap $0.08$:
-
-$$
-\\frac{2.88}{d^{2}}=0.08
-$$
-
-$$
-d^{2}=\\frac{2.88}{0.08}
-$$
-
-$$
-d^{2}=36
-$$
-
-$$
-d=\\sqrt{36}=6
-$$
-
-Forward check at six metres:
-
-$$
-I(6)=\\frac{2.88}{6^{2}}=\\frac{2.88}{36}=0.08
-$$
-
-Six metres is the boundary, and the word above excludes a boundary value. The reading equals the night cap instead of exceeding it, so the statement is False.`,
+Six metres is the night-cap boundary. The word above excludes a boundary value, so the statement is False.`,
       `**E.** → False
 
-The night cap is a finite target on a strictly decreasing inverse-square law. Intensity follows $I(d)=A d^{-2}$, and the meter reading $I(2)=0.72$ recovers $A$.
-
-The model is
-
-$$
-I(d)=A d^{-2}
-$$
-
-$$
-A\\cdot 2^{-2}=0.72
-$$
-
-$$
-\\frac{A}{4}=0.72
-$$
-
-$$
-A=2.88
-$$
-
-The recovered law is
-
-$$
-I(d)=\\frac{2.88}{d^{2}}
-$$
-
-Set it equal to the night cap:
-
-$$
-\\frac{2.88}{d^{2}}=0.08
-$$
-
-$$
-d^{2}=\\frac{2.88}{0.08}=36
-$$
-
-$$
-d=\\sqrt{36}=6
-$$
-
-Because $A>0$ and the exponent $-2$ is negative, $I(d)$ falls from $I(2)=0.72$ toward $0$ and therefore crosses $0.08$ at a finite distance. The cap is met at $6$ m, so the statement is False.`,
+Setting $I=0.08$ gives $d^{2}=36$, so $d=6$. Intensity falls from $0.72$ toward $0$ and therefore crosses $0.08$ at a finite distance. The cap is met at $6$ m, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 68,
@@ -19732,273 +8962,69 @@ $$I'(d)=-5.76\\, d^{-3} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Head follows $H(q)=A q^{2}$ metres, and jet speed is $v(H)=4\\sqrt{H}$ metres per second. The composition is $v(q)=v(H(q))$. The commissioning run $H(5)=50$ calibrates the first stage, since the exponent $2$ is given.
-
-The pump stage is
-
-$$
-H(q)=A q^{2}
-$$
-
-$$
-H(5)=50
-$$
-
-$$
-A\\cdot 5^{2}=50
-$$
-
-$$
-5^{2}=25
-$$
-
-$$
-25A=50
-$$
-
-$$
-A=\\frac{50}{25}=2
-$$
-
-The recovered pump law is
-
-$$
-H(q)=2q^{2}
-$$
-
-Compose with the nozzle $v(H)=4\\sqrt{H}$:
-
-$$
-v(q)=4\\sqrt{H(q)}
-$$
+Head is a square of flow and jet speed is a square root of that head. Composing multiplies the exponents:
 
 $$
 v(q)=4\\sqrt{2q^{2}}
 $$
 
 $$
-v(q)=4\\sqrt{2}\\,|q|
-$$
-
-For $q>0$,
-
-$$
 v(q)=4\\sqrt{2}\\, q
 $$
 
-The inner exponent $2$ and the outer exponent $\\frac{1}{2}$ multiply to $1$:
-
-$$
-2\\cdot\\frac{1}{2}=1
-$$
-
-so the composition is linear through the origin. Jet speed is proportional to flow, so the statement is True.`,
+for $q>0$. The inner $2$ and the outer $\\frac{1}{2}$ multiply to $1$, a line through the origin. Jet speed is proportional to flow, so the statement is True.`,
       `**B.** → True
 
-A composition can be evaluated stage by stage. Head follows $H(q)=A q^{2}$ with commissioning run $H(5)=50$, and jet speed is $v(H)=4\\sqrt{H}$.
-
-The pump stage is
-
-$$
-H(q)=A q^{2}
-$$
-
-$$
-A\\cdot 5^{2}=50
-$$
-
-$$
-5^{2}=25
-$$
-
-$$
-25A=50
-$$
-
-$$
-A=2
-$$
-
-At the commissioning flow the head is already recorded:
-
-$$
-H(5)=50
-$$
-
-Pass that head through the nozzle:
+At the commissioning flow the head is already $50$ m. Pass that head through the nozzle:
 
 $$
 v=4\\sqrt{50}
 $$
 
 $$
-50=25\\cdot 2
-$$
-
-$$
-\\sqrt{50}=\\sqrt{25\\cdot 2}=5\\sqrt{2}
+\\sqrt{50}=5\\sqrt{2}
 $$
 
 $$
 v=4\\cdot 5\\sqrt{2}=20\\sqrt{2}
 $$
 
-The composed law $v(q)=4\\sqrt{2}\\, q$ returns the same value:
-
-$$
-v(5)=4\\sqrt{2}\\cdot 5=20\\sqrt{2}
-$$
-
-Jet speed at the commissioning flow is $20\\sqrt{2}$ m/s, so the statement is True.`,
+Jet speed at $q=5$ is $20\\sqrt{2}$ m/s, so the statement is True.`,
       `**C.** → False
 
-Doubling flow multiplies head by $2^{2}$, and the coefficient cancels. Head follows $H(q)=A q^{2}$, so the commissioning run is not needed for the scale factor.
+Doubling flow multiplies head by $2^{2}$:
 
 $$
-\\frac{H(2q)}{H(q)}=\\frac{A(2q)^{2}}{A q^{2}}
+\\frac{H(2q)}{H(q)}=2^{2}=4
 $$
 
-$$
-\\frac{H(2q)}{H(q)}=2^{2}
-$$
-
-$$
-\\frac{H(2q)}{H(q)}=4
-$$
-
-Head quadruples rather than doubles. An exact doubling of head would need exponent $1$. The composed jet speed does double, because the nozzle then takes a square root of that four, but the claim is about head, so the statement is False.`,
+Head quadruples rather than doubles. An exact doubling of head would need exponent $1$. The claim is about head, so the statement is False.`,
       `**D.** → False
 
-Inverting the composed law is a single division by its slope. Head follows $H(q)=A q^{2}$ with $H(5)=50$, and jet speed is $v(H)=4\\sqrt{H}$.
-
-The pump stage is
-
-$$
-H(q)=A q^{2}
-$$
-
-$$
-A\\cdot 5^{2}=50
-$$
-
-$$
-5^{2}=25
-$$
-
-$$
-25A=50
-$$
-
-$$
-A=2
-$$
-
-Compose the two stages:
-
-$$
-v(q)=4\\sqrt{H(q)}
-$$
-
-$$
-v(q)=4\\sqrt{2q^{2}}
-$$
-
-$$
-v(q)=4\\sqrt{2}\\, q
-$$
-
-Set jet speed equal to the target $40\\sqrt{2}$:
+The composition is $v(q)=4\\sqrt{2}\\, q$. A target of $40\\sqrt{2}$ m/s is
 
 $$
 4\\sqrt{2}\\, q=40\\sqrt{2}
 $$
 
 $$
-q=\\frac{40\\sqrt{2}}{4\\sqrt{2}}
-$$
-
-$$
 q=10
 $$
 
-A flow of $20$ m$^{3}$/h would deliver twice that speed:
-
-$$
-v(20)=4\\sqrt{2}\\cdot 20=80\\sqrt{2}
-$$
-
-$$
-80\\sqrt{2}\\neq 40\\sqrt{2}
-$$
-
-The target speed needs $10$ m$^{3}$/h, so the statement is False.`,
+A flow of $20$ would deliver $80\\sqrt{2}$ m/s, twice the target. The claimed $20$ treats speed as if it scaled with $q^{2}$. The target needs $10$ m$^{3}$/h, so the statement is False.`,
       `**E.** → False
 
-Proportionality between head and jet speed would mean a constant quotient. Head follows $H(q)=A q^{2}$ with commissioning run $H(5)=50$, and jet speed is $v(H)=4\\sqrt{H}$.
-
-The pump stage is
-
-$$
-H(q)=A q^{2}
-$$
-
-$$
-A\\cdot 5^{2}=50
-$$
-
-$$
-A=2
-$$
-
-The recovered pump law is $H(q)=2q^{2}$. Compose with the nozzle:
-
-$$
-v=4\\sqrt{2q^{2}}=4\\sqrt{2}\\, q
-$$
-
-Eliminate the flow:
+Eliminating flow from $H=2q^{2}$ and $v=4\\sqrt{2}\\, q$ gives
 
 $$
 q=\\frac{v}{4\\sqrt{2}}
 $$
 
 $$
-H=2\\left(\\frac{v}{4\\sqrt{2}}\\right)^{2}
+H=2\\left(\\frac{v}{4\\sqrt{2}}\\right)^{2}=\\frac{v^{2}}{16}
 $$
 
-$$
-\\left(\\frac{v}{4\\sqrt{2}}\\right)^{2}=\\frac{v^{2}}{16\\cdot 2}=\\frac{v^{2}}{32}
-$$
-
-$$
-H=2\\cdot\\frac{v^{2}}{32}=\\frac{v^{2}}{16}
-$$
-
-Head rises with the square of jet speed. At $v=20\\sqrt{2}$,
-
-$$
-(20\\sqrt{2})^{2}=400\\cdot 2=800
-$$
-
-$$
-H=\\frac{800}{16}=50
-$$
-
-At $v=40\\sqrt{2}$,
-
-$$
-(40\\sqrt{2})^{2}=1600\\cdot 2=3200
-$$
-
-$$
-H=\\frac{3200}{16}=200
-$$
-
-$$
-\\frac{200}{50}=4
-$$
-
-Twice the speed gives four times the head, not twice the head. Head is not proportional to jet speed, so the statement is False.`,
+Twice the speed therefore gives four times the head, not twice the head. Head is a square of jet speed, not a constant multiple of it, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 69,
@@ -20046,11 +9072,7 @@ $$v(q)=4\\sqrt{2}\\, q \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Throughput follows $T(s)=A s^{0.5}$ pallets per hour. Doubling throughput is a scale factor $k$ on the crew with $k^{0.5}=2$. The logged shift is not needed for the factor, because the exponent is given.
-
-$$
-\\frac{T(ks)}{T(s)}=\\frac{A(ks)^{\\frac{1}{2}}}{A s^{\\frac{1}{2}}}
-$$
+Doubling throughput is a crew factor $k$ with $k^{\\frac{1}{2}}=2$:
 
 $$
 \\frac{T(ks)}{T(s)}=k^{\\frac{1}{2}}
@@ -20061,61 +9083,17 @@ k^{\\frac{1}{2}}=2
 $$
 
 $$
-k=2^{2}=4
+k=4
 $$
 
-An exact doubling of the crew would be $k=2$, which would only multiply throughput by $\\sqrt{2}\\approx 1.414$. The yard needs four times the crew, not twice. That is more than a doubling, so the statement is True.`,
+An exact doubling of the crew would only multiply throughput by $\\sqrt{2}\\approx 1.41$. The yard needs four times the crew, not twice. That is more than a doubling, so the statement is True.`,
       `**B.** → True
 
-Throughput at the capped crew is a substitution after the coefficient is known. Throughput follows $T(s)=A s^{0.5}$ pallets per hour, and the logged shift with $16$ drivers moved $80$ pallets per hour.
-
-The model is
-
-$$
-T(s)=A s^{\\frac{1}{2}}
-$$
-
-$$
-T(16)=80
-$$
-
-$$
-A\\cdot 16^{\\frac{1}{2}}=80
-$$
-
-Because $16=4^{2}$,
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-A\\cdot 4=80
-$$
-
-$$
-A=\\frac{80}{4}=20
-$$
-
-Replay the logged shift:
-
-$$
-T(16)=20\\cdot 4=80
-$$
-
-The recovered law is
-
-$$
-T(s)=20 s^{\\frac{1}{2}}
-$$
-
-Safety rules cap the shift at $36$ drivers. At that crew:
+The law is $T(s)=20\\sqrt{s}$. At the capped crew:
 
 $$
 T(36)=20\\cdot 36^{\\frac{1}{2}}
 $$
-
-Because $36=6^{2}$,
 
 $$
 36^{\\frac{1}{2}}=6
@@ -20128,29 +9106,7 @@ $$
 With $36$ drivers the model predicts $120$ pallets per hour, so the statement is True.`,
       `**C.** → False
 
-Throughput per driver is the law divided by crew size, which subtracts $1$ from the exponent. Throughput follows $T(s)=A s^{0.5}$, and the logged shift $T(16)=80$ recovers $A$.
-
-$$
-A\\cdot 16^{0.5}=80
-$$
-
-$$
-16^{0.5}=4
-$$
-
-$$
-4A=80
-$$
-
-$$
-A=20
-$$
-
-Divide the recovered law by crew size:
-
-$$
-\\frac{T(s)}{s}=\\frac{20 s^{\\frac{1}{2}}}{s}
-$$
+Throughput per driver subtracts $1$ from the exponent:
 
 $$
 \\frac{T(s)}{s}=20s^{\\frac{1}{2}-1}
@@ -20160,60 +9116,14 @@ $$
 \\frac{T(s)}{s}=20s^{-\\frac{1}{2}}
 $$
 
-The leftover exponent is negative, so intensity falls as the crew grows. A rising intensity would need a positive leftover exponent. It does not rise, so the statement is False.`,
+The leftover exponent is negative, so intensity falls as the crew grows. A rising intensity would need a positive leftover exponent, so the statement is False.`,
       `**D.** → False
 
-A target of $150$ pallets per hour is inverted for crew size. Throughput follows $T(s)=A s^{0.5}$ pallets per hour, and the logged shift with $16$ drivers moved $80$ pallets per hour.
-
-The model is
+A target of $150$ inverts as
 
 $$
-T(s)=A s^{\\frac{1}{2}}
+20\\sqrt{s}=150
 $$
-
-$$
-T(16)=80
-$$
-
-$$
-A\\cdot 16^{\\frac{1}{2}}=80
-$$
-
-Because $16=4^{2}$,
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-A\\cdot 4=80
-$$
-
-$$
-A=\\frac{80}{4}=20
-$$
-
-The recovered law is
-
-$$
-T(s)=20 s^{\\frac{1}{2}}
-$$
-
-Invert a target throughput $T$ by isolating the square root and squaring:
-
-$$
-20\\sqrt{s}=T
-$$
-
-$$
-\\sqrt{s}=\\frac{T}{20}
-$$
-
-$$
-s=\\left(\\frac{T}{20}\\right)^{2}
-$$
-
-For $T=150$:
 
 $$
 \\sqrt{s}=\\frac{150}{20}=7.5
@@ -20223,72 +9133,10 @@ $$
 s=7.5^{2}=56.25
 $$
 
-The required crew is $56.25$, which exceeds the cap of $36$. Even the capped shift delivers only
-
-$$
-T(36)=20\\sqrt{36}
-$$
-
-$$
-36=6^{2}
-$$
-
-$$
-\\sqrt{36}=6
-$$
-
-$$
-T(36)=20\\cdot 6=120
-$$
-
-$$
-120<150
-$$
-
-Reaching $150$ pallets per hour lies outside the safety cap, so the statement is False.`,
+which exceeds the cap of $36$. Even the capped shift delivers only $120$ pallets per hour. Reaching $150$ lies outside the safety cap, so the statement is False.`,
       `**E.** → True
 
-Throughput has a positive coefficient and a positive exponent, so it increases with crew size. Throughput follows $T(s)=A s^{0.5}$, and the logged shift $T(16)=80$ recovers $A$.
-
-The model is
-
-$$
-T(s)=A s^{\\frac{1}{2}}
-$$
-
-$$
-A\\cdot 16^{\\frac{1}{2}}=80
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-A=20>0
-$$
-
-The exponent $0.5$ is positive, so for $0<s_{1}<s_{2}$,
-
-$$
-T(s_{1})=20\\sqrt{s_{1}}<20\\sqrt{s_{2}}=T(s_{2})
-$$
-
-The safety rule caps the shift at $36$ drivers. The largest admissible crew therefore produces the largest admissible output:
-
-$$
-T(36)=20\\sqrt{36}
-$$
-
-$$
-\\sqrt{36}=6
-$$
-
-$$
-T(36)=20\\cdot 6=120
-$$
-
-No legal crew can exceed $120$ pallets per hour. The safety cap on drivers is therefore also a cap on pallets moved per hour, so the statement is True.`,
+Throughput $T=20\\sqrt{s}$ rises with crew, so the largest legal crew of $36$ drivers produces the largest legal output, $120$ pallets per hour. No legal crew can exceed that. The driver cap is therefore also a cap on pallets moved per hour, so the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 70,
@@ -20336,33 +9184,7 @@ $$\\frac{T(s)}{s}=20s^{-\\frac{1}{2}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Paid subscribers follow $q(p)=A p^{r}$. Quadrupling any price multiplies the subscriber count by one eighth, which cancels $A$ and isolates the exponent. The claim is that this exponent is smaller than minus one.
-
-The scale rule is
-
-$$
-\\frac{q(4p)}{q(p)}=\\frac{A(4p)^{r}}{A p^{r}}
-$$
-
-$$
-\\frac{q(4p)}{q(p)}=4^{r}
-$$
-
-$$
-4^{r}=\\frac{1}{8}
-$$
-
-Both sides are powers of $4$, because $4^{\\frac{3}{2}}=8$:
-
-$$
-\\frac{1}{8}=4^{-\\frac{3}{2}}
-$$
-
-$$
-r=-\\frac{3}{2}
-$$
-
-Minus three halves sits below minus one:
+The scale rule gives $r=-\\frac{3}{2}$. Minus three halves sits below minus one:
 
 $$
 -\\frac{3}{2}<-1
@@ -20371,71 +9193,7 @@ $$
 A given price factor therefore cuts subscribers by more than that factor. Subscribers fall faster than the price rises, so the statement is True.`,
       `**B.** → True
 
-Monthly revenue is price times the subscriber count, $R(p)=p\\,q(p)$, in thousands of euros. Demand follows $q(p)=A p^{r}$. Quadrupling any price multiplies subscribers by one eighth, and $q(4)=250$. The claim is the revenue at sixteen euros, so both constants must be recovered first.
-
-The scale rule cancels $A$:
-
-$$
-\\frac{q(4p)}{q(p)}=\\frac{A(4p)^{r}}{A p^{r}}
-$$
-
-$$
-\\frac{q(4p)}{q(p)}=4^{r}
-$$
-
-$$
-4^{r}=\\frac{1}{8}
-$$
-
-Write $8$ as a power of $4$:
-
-$$
-8=4^{\\frac{3}{2}}
-$$
-
-$$
-\\frac{1}{8}=4^{-\\frac{3}{2}}
-$$
-
-Equal bases force equal exponents:
-
-$$
-r=-\\frac{3}{2}
-$$
-
-The four-euro level then pins $A$:
-
-$$
-A\\cdot 4^{-\\frac{3}{2}}=250
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-A\\cdot\\frac{1}{8}=250
-$$
-
-$$
-A=2000
-$$
-
-Demand is $q(p)=2000p^{-\\frac{3}{2}}$, so revenue is
-
-$$
-R(p)=p\\cdot 2000p^{-\\frac{3}{2}}
-$$
-
-$$
-R(p)=2000p^{-\\frac{1}{2}}
-$$
-
-At sixteen euros:
+Revenue is $R(p)=2000p^{-\\frac{1}{2}}$. At sixteen euros the square root is $4$:
 
 $$
 R(16)=2000\\cdot 16^{-\\frac{1}{2}}
@@ -20452,134 +9210,16 @@ $$
 The claimed monthly revenue is $500$ thousand euros, so the statement is True.`,
       `**C.** → True
 
-Revenue multiplies price by the demand law $q(p)=A p^{r}$. Quadrupling any price multiplies subscribers by one eighth, and $q(4)=250$. The claim is that the product $R(p)=pq(p)$ is itself a power of price, so both constants must be recovered first.
-
-The scale rule cancels $A$:
-
-$$
-\\frac{q(4p)}{q(p)}=\\frac{A(4p)^{r}}{A p^{r}}
-$$
-
-$$
-\\frac{q(4p)}{q(p)}=4^{r}
-$$
-
-$$
-4^{r}=\\frac{1}{8}
-$$
-
-$$
-8=4^{\\frac{3}{2}}
-$$
-
-$$
-\\frac{1}{8}=4^{-\\frac{3}{2}}
-$$
-
-$$
-r=-\\frac{3}{2}
-$$
-
-The four-euro count pins $A$:
-
-$$
-A\\cdot 4^{-\\frac{3}{2}}=250
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-A\\cdot\\frac{1}{8}=250
-$$
-
-$$
-A=2000
-$$
-
 Demand is $q(p)=2000p^{-\\frac{3}{2}}$. Multiplying by price adds one to the exponent:
-
-$$
-R(p)=p\\cdot 2000p^{-\\frac{3}{2}}
-$$
-
-$$
-R(p)=2000p^{1-\\frac{3}{2}}
-$$
 
 $$
 R(p)=2000p^{-\\frac{1}{2}}
 $$
 
-That is a monomial $A p^{s}$ with coefficient $2000$ and exponent $-\\frac{1}{2}$, so revenue is a power function of price, so the statement is True.`,
+That is a monomial in $p$, so revenue is a power function of price, so the statement is True.`,
       `**D.** → False
 
-Doubling monthly revenue from the recorded four-euro price is a scale factor $k$ on that price. Demand follows $q(p)=A p^{r}$. Quadrupling any price multiplies subscribers by one eighth, and $q(4)=250$. Both constants must be recovered before the scale factor can be read.
-
-The scale rule cancels $A$:
-
-$$
-\\frac{q(4p)}{q(p)}=4^{r}
-$$
-
-$$
-4^{r}=\\frac{1}{8}
-$$
-
-$$
-8=4^{\\frac{3}{2}}
-$$
-
-$$
-\\frac{1}{8}=4^{-\\frac{3}{2}}
-$$
-
-$$
-r=-\\frac{3}{2}
-$$
-
-The four-euro level pins $A$:
-
-$$
-A\\cdot 4^{-\\frac{3}{2}}=250
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-A\\cdot\\frac{1}{8}=250
-$$
-
-$$
-A=2000
-$$
-
-Revenue is then $R(p)=p\\cdot 2000p^{-\\frac{3}{2}}=2000p^{-\\frac{1}{2}}$. At four euros:
-
-$$
-R(4)=2000\\cdot 4^{-\\frac{1}{2}}
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-R(4)=\\frac{2000}{2}=1000
-$$
-
-Doubling that revenue means $R(4k)=2000$. The revenue scale factor is
-
-$$
-\\frac{R(4k)}{R(4)}=\\frac{2000(4k)^{-\\frac{1}{2}}}{2000\\cdot 4^{-\\frac{1}{2}}}
-$$
-
-$$
-\\frac{R(4k)}{R(4)}=k^{-\\frac{1}{2}}
-$$
+Revenue is $R(p)=2000p^{-\\frac{1}{2}}$, so $R(4)=1000$. Doubling that revenue asks for a price factor $k$ with
 
 $$
 k^{-\\frac{1}{2}}=2
@@ -20593,60 +9233,8 @@ $$
 k=\\frac{1}{4}
 $$
 
-The price must be quartered, not halved. Halving would be $k=\\frac{1}{2}$:
-
-$$
-R(2)=2000\\cdot 2^{-\\frac{1}{2}}
-$$
-
-$$
-R(2)=1000\\sqrt{2}\\approx 1414
-$$
-
-which is short of $2000$, so the statement is False.`,
+The price must be quartered, not halved. Halving would multiply revenue only by $\\sqrt{2}$, about $1.41$, not by $2$, so the statement is False.`,
       `**E.** → False
-
-Nine euros is a third price at which to read monthly revenue $R(p)=pq(p)$. Demand follows $q(p)=A p^{r}$. Quadrupling any price multiplies subscribers by one eighth, and $q(4)=250$. Both constants must be recovered first.
-
-The scale rule cancels $A$:
-
-$$
-\\frac{q(4p)}{q(p)}=4^{r}
-$$
-
-$$
-4^{r}=\\frac{1}{8}
-$$
-
-$$
-8=4^{\\frac{3}{2}}
-$$
-
-$$
-\\frac{1}{8}=4^{-\\frac{3}{2}}
-$$
-
-$$
-r=-\\frac{3}{2}
-$$
-
-The four-euro level pins $A$:
-
-$$
-A\\cdot 4^{-\\frac{3}{2}}=250
-$$
-
-$$
-4^{-\\frac{3}{2}}=\\frac{1}{8}
-$$
-
-$$
-A\\cdot\\frac{1}{8}=250
-$$
-
-$$
-A=2000
-$$
 
 Revenue is $R(p)=2000p^{-\\frac{1}{2}}$. At nine euros:
 
@@ -20662,7 +9250,7 @@ $$
 R(9)=\\frac{2000}{3}\\approx 666.67
 $$
 
-Six hundred and sixty-seven thousand euros sits above six hundred, not under, so the statement is False.`,
+That sits above six hundred, not under, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 71,
@@ -20710,100 +9298,10 @@ $$R(p)=2000p^{-\\frac{1}{2}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-The monthly bill is $C(n)=F+A n^{\\frac{1}{2}}$ for $n\\ge 1$ branches. One hundred branches cost $700$ euros and four hundred cost $1000$. The claim is that the retainer keeps $C$ from being a power of $n$.
-
-The square roots are integers, so the two invoices are
-
-$$
-F+10A=700
-$$
-
-$$
-F+20A=1000
-$$
-
-Subtracting the first from the second cancels $F$:
-
-$$
-10A=300
-$$
-
-$$
-A=30
-$$
-
-The hundred-branch invoice then pins the retainer:
-
-$$
-F+10\\cdot 30=700
-$$
-
-$$
-F=400
-$$
-
-The recovered law is $C(n)=400+30n^{\\frac{1}{2}}$. A power $A n^{r}$ cannot carry a nonzero intercept, and $F=400\\neq 0$, so the statement is True.`,
+The two invoices give $C(n)=400+30n^{\\frac{1}{2}}$. A power $A n^{r}$ cannot carry a nonzero intercept, and the retainer is $400$, so the statement is True.`,
       `**B.** → True
 
-Nine hundred branches is a third size on $C(n)=F+A n^{\\frac{1}{2}}$. One hundred branches cost $700$ euros and four hundred cost $1000$. The claim is the nine-hundred-branch invoice, so both constants must be recovered first.
-
-The hundred-branch square root is an integer:
-
-$$
-C(100)=F+A\\cdot 100^{\\frac{1}{2}}=700
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-F+10A=700
-$$
-
-The four-hundred-branch invoice is
-
-$$
-C(400)=F+A\\cdot 400^{\\frac{1}{2}}=1000
-$$
-
-$$
-400^{\\frac{1}{2}}=20
-$$
-
-$$
-F+20A=1000
-$$
-
-Subtracting cancels $F$:
-
-$$
-(F+20A)-(F+10A)=1000-700
-$$
-
-$$
-10A=300
-$$
-
-$$
-A=30
-$$
-
-Back-substitution pins the retainer:
-
-$$
-F+10\\cdot 30=700
-$$
-
-$$
-F+300=700
-$$
-
-$$
-F=400
-$$
-
-The recovered bill is $C(n)=400+30n^{\\frac{1}{2}}$. At nine hundred branches:
+The bill is $C(n)=400+30n^{\\frac{1}{2}}$. Nine hundred branches is a clean square:
 
 $$
 900^{\\frac{1}{2}}=30
@@ -20817,118 +9315,22 @@ $$
 C(900)=400+900=1300
 $$
 
-The monthly bill is one thousand three hundred euros, so the statement is True.`,
+The monthly bill is $1300$ euros, so the statement is True.`,
       `**C.** → True
 
-Average cost per branch is the monthly bill divided by $n$. The bill is $C(n)=F+A n^{\\frac{1}{2}}$, with $C(100)=700$ and $C(400)=1000$. The claim is that this average falls as the network grows.
-
-The two invoices recover the constants:
-
-$$
-F+10A=700
-$$
-
-$$
-F+20A=1000
-$$
-
-$$
-10A=300
-$$
-
-$$
-A=30
-$$
-
-$$
-F=400
-$$
-
-Average cost is then
+The bill is $C(n)=400+30n^{\\frac{1}{2}}$. Average cost per branch is
 
 $$
 \\frac{C(n)}{n}=\\frac{400}{n}+30n^{-\\frac{1}{2}}
 $$
 
-Both terms fall as $n$ rises. At the recorded sizes:
-
-$$
-\\frac{C(100)}{100}=\\frac{700}{100}=7
-$$
-
-$$
-\\frac{C(400)}{400}=\\frac{1000}{400}=2.5
-$$
-
-A larger network is cheaper per branch, so the statement is True.`,
+Both terms fall as $n$ grows: the retainer is spread thinner, and the leftover exponent on the monitoring term is negative, so the statement is True.`,
       `**D.** → False
 
-Quadrupling the branch count from the recorded hundred-branch invoice is the move from $n=100$ to $n=400$. The bill is $C(n)=F+A n^{\\frac{1}{2}}$, and those two invoices are already on the sheet: $700$ euros and $1000$ euros.
-
-If the whole bill doubled, the four-hundred-branch invoice would be
-
-$$
-2\\cdot 700=1400
-$$
-
-The recorded four-hundred-branch invoice is $1000$, not $1400$. Only the square-root term scales: quadrupling multiplies $n^{\\frac{1}{2}}$ by $2$, while the retainer stays put. Subtracting the invoices isolates that term:
-
-$$
-C(400)-C(100)=300
-$$
-
-which is the extra square-root charge, not another copy of the whole $700$. The bill rises from seven hundred to one thousand, not to one thousand four hundred, so the statement is False.`,
+The recorded invoices already are a quadrupling: $100$ branches at $700$ euros and $400$ at $1000$. Doubling the whole bill would have made the second invoice $1400$, not $1000$. Only the square-root term doubles when $n$ quadruples; the $400$-euro retainer stays put, so the statement is False.`,
       `**E.** → False
 
-Thirty-six branches is a clean square on $C(n)=F+A n^{\\frac{1}{2}}$. One hundred branches cost $700$ euros and four hundred cost $1000$. The claim compares the thirty-six-branch bill with that hundred-branch invoice, so both constants must be recovered first.
-
-The hundred-branch invoice is
-
-$$
-C(100)=F+A\\cdot 100^{\\frac{1}{2}}=700
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-F+10A=700
-$$
-
-The four-hundred-branch invoice is
-
-$$
-C(400)=F+A\\cdot 400^{\\frac{1}{2}}=1000
-$$
-
-$$
-400^{\\frac{1}{2}}=20
-$$
-
-$$
-F+20A=1000
-$$
-
-Subtracting cancels $F$:
-
-$$
-10A=300
-$$
-
-$$
-A=30
-$$
-
-$$
-F+10\\cdot 30=700
-$$
-
-$$
-F=400
-$$
-
-The recovered bill is $C(n)=400+30n^{\\frac{1}{2}}$. At thirty-six branches:
+The bill is $C(n)=400+30n^{\\frac{1}{2}}$. Thirty-six is a clean square:
 
 $$
 36^{\\frac{1}{2}}=6
@@ -20942,7 +9344,7 @@ $$
 C(36)=400+180=580
 $$
 
-Five hundred and eighty euros is less than the hundred-branch invoice of seven hundred, so the statement is False.`,
+Five hundred and eighty is less than the hundred-branch invoice of $700$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 72,
@@ -20986,35 +9388,7 @@ $$\\frac{C(n)}{n}=\\frac{400}{n}+30n^{-\\frac{1}{2}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Annual total cost is $T(q)=O(q)+H(q)$, with $O(q)=A q^{-1}$ and $H(q)=B q$. At a batch of forty units the two components each equal $120$ euros. The claim is that this crossing is where $T$ is smallest, so both coefficients must be recovered first.
-
-The ordering level at forty units is
-
-$$
-O(40)=\\frac{A}{40}=120
-$$
-
-$$
-A=120\\cdot 40=4800
-$$
-
-The holding level at forty units is
-
-$$
-H(40)=40B=120
-$$
-
-$$
-B=\\frac{120}{40}=3
-$$
-
-The total is therefore
-
-$$
-T(q)=\\frac{4800}{q}+3q
-$$
-
-Differentiate term by term:
+Total cost is $T(q)=\\frac{4800}{q}+3q$. Differentiate term by term:
 
 $$
 T'(q)=-4800q^{-2}+3
@@ -21044,50 +9418,10 @@ $$
 T''(q)=9600q^{-3}
 $$
 
-For every $q>0$ this is positive, so the critical point is a minimum. Nearby totals sit above the crossing:
-
-$$
-T(20)=\\frac{4800}{20}+3\\cdot 20
-$$
-
-$$
-T(20)=240+60=300
-$$
-
-$$
-T(80)=\\frac{4800}{80}+3\\cdot 80
-$$
-
-$$
-T(80)=60+240=300
-$$
-
-both larger than $T(40)=240$. The meeting point is the minimum, so the statement is True.`,
+For every $q>0$ this is positive, so the crossing is a minimum, so the statement is True.`,
       `**B.** → True
 
-A batch of sixty units is a third size at which to read $T=O+H$. Ordering cost is $O(q)=A q^{-1}$ and holding cost is $H(q)=B q$. At forty units the two components each equal $120$ euros, so both coefficients must be recovered first.
-
-The ordering level at forty units is
-
-$$
-\\frac{A}{40}=120
-$$
-
-$$
-A=120\\cdot 40=4800
-$$
-
-The holding level at forty units is
-
-$$
-40B=120
-$$
-
-$$
-B=\\frac{120}{40}=3
-$$
-
-The total is $T(q)=\\frac{4800}{q}+3q$. At sixty units the two pieces are
+Total cost is $T(q)=\\frac{4800}{q}+3q$. At sixty units:
 
 $$
 O(60)=\\frac{4800}{60}=80
@@ -21104,35 +9438,7 @@ $$
 Two hundred and sixty exceeds two hundred and fifty, so the statement is True.`,
       `**C.** → False
 
-Doubling any batch size is the map $q\\mapsto 2q$ on $T=O+H$. Ordering cost is $A q^{-1}$ and holding cost is $B q$. At forty units the two components each equal $120$ euros, so both coefficients must be recovered first.
-
-The ordering level at forty units is
-
-$$
-\\frac{A}{40}=120
-$$
-
-$$
-A=4800
-$$
-
-The holding level at forty units is
-
-$$
-40B=120
-$$
-
-$$
-B=3
-$$
-
-At the recorded batch the total is
-
-$$
-T(40)=120+120=240
-$$
-
-Doubling in the formula, not just at this one size, gives
+Total cost is $T(q)=\\frac{4800}{q}+3q$. Doubling any batch gives
 
 $$
 T(2q)=\\frac{4800}{2q}+3\\cdot(2q)
@@ -21142,65 +9448,17 @@ $$
 T(2q)=\\frac{2400}{q}+6q
 $$
 
-which is not $T(q)$. At eighty units the pieces are
-
-$$
-O(80)=\\frac{4800}{80}=60
-$$
-
-$$
-H(80)=3\\cdot 80=240
-$$
-
-$$
-T(80)=60+240=300
-$$
-
-The total rises from $240$ to $300$, so it is not unchanged. Reciprocal pairs with product $1600$ do preserve $T$, but an arbitrary doubling is not that pairing, so the statement is False.`,
+which is not $T(q)$. At the recorded batch the total is $240$; at eighty it is $300$. Reciprocal pairs with product $1600$ do preserve $T$, but an arbitrary doubling is not that pairing, so the statement is False.`,
       `**D.** → True
 
-Cutting the batch from forty to twenty, and raising it from forty to eighty, are two moves on $T=O+H$. Ordering cost is $A q^{-1}$ and holding cost is $B q$. At forty units the two components each equal $120$ euros, so both coefficients must be recovered first.
-
-The ordering level at forty units is
-
-$$
-\\frac{A}{40}=120
-$$
-
-$$
-A=4800
-$$
-
-The holding level at forty units is
-
-$$
-40B=120
-$$
-
-$$
-B=3
-$$
-
-The total is $T(q)=\\frac{4800}{q}+3q$. At the recorded crossing:
-
-$$
-T(40)=120+120=240
-$$
-
-The product of the two new sizes is
-
-$$
-20\\cdot 80=1600
-$$
-
-so they are a reciprocal pair for this model. Substituting each size:
+Total cost is $T(q)=\\frac{4800}{q}+3q$, and $T(40)=240$. Twenty and eighty multiply to $1600$, so they are a reciprocal pair:
 
 $$
 T(20)=\\frac{4800}{20}+3\\cdot 20
 $$
 
 $$
-T(20)=240+60=300
+T(20)=300
 $$
 
 $$
@@ -21208,57 +9466,19 @@ T(80)=\\frac{4800}{80}+3\\cdot 80
 $$
 
 $$
-T(80)=60+240=300
+T(80)=300
 $$
 
-Each move therefore raises the annual total by $60$ euros, so the two moves cost the same, so the statement is True.`,
+Each move raises the annual total by $60$ euros, so the two moves cost the same, so the statement is True.`,
       `**E.** → False
 
-Eighty units sits above the recorded crossing of ordering and holding cost. Ordering cost is $O(q)=A q^{-1}$ and holding cost is $H(q)=B q$. At forty units the two components each equal $120$ euros, so both coefficients must be recovered first.
-
-The ordering level at forty units is
+Ordering cost is $O(q)=\\frac{4800}{q}$. At eighty units:
 
 $$
-\\frac{A}{40}=120
+O(80)=\\frac{4800}{80}=60
 $$
 
-$$
-A=4800
-$$
-
-The holding level at forty units is
-
-$$
-40B=120
-$$
-
-$$
-B=3
-$$
-
-At eighty units the ordering term is
-
-$$
-O(80)=\\frac{4800}{80}
-$$
-
-$$
-O(80)=60
-$$
-
-and the holding term is
-
-$$
-H(80)=3\\cdot 80=240
-$$
-
-Ordering cost is sixty euros. The claim's threshold is $200$, and
-
-$$
-60<200
-$$
-
-Holding is the large term on this side of the crossing, so the statement is False.`,
+Sixty sits well below two hundred. Holding is the large term on this side of the crossing, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 73,
@@ -21302,109 +9522,25 @@ $$T\\!\\left(\\frac{1600}{q}\\right)=T(q) \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Output follows $Q(L)=A L^{r}$. Sixteen hours produce $96$ units and eighty-one hours produce $324$. Average product is $Q(L)/L$. The claim is that this quotient is a power of $L$, but not with the same exponent as output.
-
-The ratio of the two shifts cancels $A$:
+The two shifts give $r=\\frac{3}{4}$. Dividing output by labour subtracts one:
 
 $$
-\\frac{Q(81)}{Q(16)}=\\frac{324}{96}=\\frac{27}{8}
-$$
-
-$$
-\\frac{27}{8}=\\left(\\frac{81}{16}\\right)^{r}
-$$
-
-$$
-\\frac{81}{16}=\\left(\\frac{3}{2}\\right)^{4}
-$$
-
-$$
-\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}
-$$
-
-$$
-\\left(\\frac{3}{2}\\right)^{3}=\\left(\\frac{3}{2}\\right)^{4r}
-$$
-
-$$
-4r=3
-$$
-
-$$
-r=\\frac{3}{4}
-$$
-
-Dividing output by labour subtracts one from that exponent:
-
-$$
-\\frac{Q(L)}{L}=A L^{\\frac{3}{4}-1}=A L^{-\\frac{1}{4}}
+\\frac{Q(L)}{L}=A L^{-\\frac{1}{4}}
 $$
 
 The exponents $\\frac{3}{4}$ and $-\\frac{1}{4}$ differ, so the statement is True.`,
       `**B.** → True
 
-Average product at sixteen hours is the recorded output divided by those hours. Sixteen hours produce $96$ units, so
+Sixteen hours produce $96$ units, so average product is just that quotient:
 
 $$
-\\frac{Q(16)}{16}=\\frac{96}{16}
+\\frac{Q(16)}{16}=\\frac{96}{16}=6
 $$
 
-$$
-\\frac{96}{16}=6
-$$
-
-Six is under seven. The same figure comes from the recovered law. The shift ratio gives $r=\\frac{3}{4}$, and $16^{\\frac{3}{4}}=8$ pins $A=12$, so average product is $12L^{-\\frac{1}{4}}$:
-
-$$
-16^{\\frac{1}{4}}=2
-$$
-
-$$
-12\\cdot 16^{-\\frac{1}{4}}=\\frac{12}{2}=6
-$$
-
-Average product at sixteen hours is $6$ units an hour, which is under $7$, so the statement is True.`,
+Six is under seven, so the statement is True.`,
       `**C.** → False
 
-Doubling output is a labour factor $k$ with $k^{r}=2$. Output follows $Q(L)=A L^{r}$. Sixteen hours produce $96$ units and eighty-one hours produce $324$. The exponent must be recovered first.
-
-The ratio of the two shifts cancels $A$:
-
-$$
-\\frac{Q(81)}{Q(16)}=\\frac{A\\cdot 81^{r}}{A\\cdot 16^{r}}
-$$
-
-$$
-\\frac{324}{96}=\\left(\\frac{81}{16}\\right)^{r}
-$$
-
-$$
-\\frac{324}{96}=\\frac{27}{8}
-$$
-
-$$
-\\frac{81}{16}=\\left(\\frac{3}{2}\\right)^{4}
-$$
-
-$$
-\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}
-$$
-
-$$
-\\left(\\frac{3}{2}\\right)^{3}=\\left(\\left(\\frac{3}{2}\\right)^{4}\\right)^{r}=\\left(\\frac{3}{2}\\right)^{4r}
-$$
-
-Equal bases force equal exponents:
-
-$$
-4r=3
-$$
-
-$$
-r=\\frac{3}{4}
-$$
-
-The labour factor that doubles output then solves
+The shift ratio already gave $r=\\frac{3}{4}$. Doubling output would need a labour factor $k$ with
 
 $$
 k^{\\frac{3}{4}}=2
@@ -21414,73 +9550,19 @@ $$
 k=2^{\\frac{4}{3}}\\approx 2.52
 $$
 
-She must more than double the hours. Doubling labour would multiply output by
-
-$$
-2^{\\frac{3}{4}}\\approx 1.68
-$$
-
-which is short of $2$, so the statement is False.`,
+She must more than double the hours. Doubling labour would multiply output only by $2^{\\frac{3}{4}}\\approx 1.68$, short of $2$, so the statement is False.`,
       `**D.** → True
 
-Average product is $Q(L)/L$ on the power $Q(L)=A L^{r}$. Sixteen hours produce $96$ units and eighty-one hours produce $324$. The claim is that this average falls as $L$ rises.
-
-The shift ratio isolates $r$:
-
-$$
-\\frac{324}{96}=\\left(\\frac{81}{16}\\right)^{r}
-$$
-
-$$
-\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{4r}
-$$
-
-$$
-r=\\frac{3}{4}
-$$
-
-Dividing by labour subtracts one:
-
-$$
-\\frac{Q(L)}{L}=A L^{-\\frac{1}{4}}
-$$
-
-The exponent $-\\frac{1}{4}$ is negative, so the quotient falls as $L$ grows. At the two recorded shifts:
-
-$$
-\\frac{96}{16}=6
-$$
-
-$$
-\\frac{324}{81}=4
-$$
-
-Average product drops from $6$ to $4$, so the statement is True.`,
+Average product is $A L^{-\\frac{1}{4}}$. The leftover exponent is negative: each extra hour adds less output than the hour before it, and spreading that output over more hours pulls the average down. At the recorded shifts the averages are $6$ and $4$, so the statement is True.`,
       `**E.** → False
 
-Average product at eighty-one hours divides the second recorded output by those hours. Eighty-one hours produce $324$ units, so
+Eighty-one hours produce $324$ units, so
 
 $$
-\\frac{Q(81)}{81}=\\frac{324}{81}
+\\frac{Q(81)}{81}=\\frac{324}{81}=4
 $$
 
-$$
-\\frac{324}{81}=4
-$$
-
-The figure $6$ is the sixteen-hour average:
-
-$$
-\\frac{Q(16)}{16}=\\frac{96}{16}=6
-$$
-
-and $4\\neq 6$. The recovered law agrees: $r=\\frac{3}{4}$ and $A=12$ give $12\\cdot 81^{-\\frac{1}{4}}$, and $81^{\\frac{1}{4}}=3$, so
-
-$$
-\\frac{12}{3}=4
-$$
-
-Average product at eighty-one hours is $4$ units an hour, not $6$, so the statement is False.`,
+The figure $6$ is the sixteen-hour average, not the eighty-one-hour one, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 74,
@@ -21528,102 +9610,10 @@ $$\\frac{Q(L)}{L}=12L^{-\\frac{1}{4}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Unit time is $t(n)=F+A n^{-\\frac{1}{2}}$. After twenty-five units the next unit takes $18$ minutes, and after one hundred it takes $13$. The claim is that $t(n)$ approaches the handling floor and never reaches it.
-
-The square roots $5$ and $10$ turn the timings into
-
-$$
-F+\\frac{A}{5}=18
-$$
-
-$$
-F+\\frac{A}{10}=13
-$$
-
-Subtracting cancels $F$:
-
-$$
-\\frac{A}{10}=5
-$$
-
-$$
-A=50
-$$
-
-$$
-F+10=18
-$$
-
-$$
-F=8
-$$
-
-The recovered law is $t(n)=8+50n^{-\\frac{1}{2}}$. As $n$ grows:
-
-$$
-\\lim_{n\\to\\infty}t(n)=8
-$$
-
-No finite $n$ makes $\\frac{50}{\\sqrt{n}}=0$, so the floor is approached and never attained, so the statement is True.`,
+Unit time is $t(n)=8+50n^{-\\frac{1}{2}}$. As $n$ grows the learning term dies, so $t$ approaches $8$. No finite $n$ makes $\\frac{50}{\\sqrt{n}}=0$, so the floor is approached and never attained, so the statement is True.`,
       `**B.** → True
 
-A ten-minute target on $t(n)=F+A n^{-\\frac{1}{2}}$ is an inequality for $n$. After twenty-five units the next unit takes $18$ minutes, and after one hundred it takes $13$. Both constants must be recovered first.
-
-The twenty-five-unit timing is
-
-$$
-t(25)=F+A\\cdot 25^{-\\frac{1}{2}}=18
-$$
-
-$$
-25^{\\frac{1}{2}}=5
-$$
-
-$$
-F+\\frac{A}{5}=18
-$$
-
-The hundred-unit timing is
-
-$$
-t(100)=F+A\\cdot 100^{-\\frac{1}{2}}=13
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-F+\\frac{A}{10}=13
-$$
-
-Subtracting cancels $F$:
-
-$$
-\\frac{A}{5}-\\frac{A}{10}=18-13
-$$
-
-$$
-\\frac{A}{10}=5
-$$
-
-$$
-A=50
-$$
-
-$$
-F+\\frac{50}{5}=18
-$$
-
-$$
-F+10=18
-$$
-
-$$
-F=8
-$$
-
-The recovered law is $t(n)=8+50n^{-\\frac{1}{2}}$. The time falls below ten minutes when
+Unit time is $t(n)=8+50n^{-\\frac{1}{2}}$. The time falls below ten minutes when
 
 $$
 8+\\frac{50}{\\sqrt{n}}<10
@@ -21641,118 +9631,22 @@ $$
 n>625
 $$
 
-At $n=625$ the time is exactly $8+\\frac{50}{25}=10$ minutes, and it drops below only afterwards, so the statement is True.`,
+At $n=625$ the time is exactly $10$ minutes, and it drops below only afterwards, so the statement is True.`,
       `**C.** → True
 
-The learning component is the power $A n^{-\\frac{1}{2}}$ on top of the floor. After twenty-five units the next unit takes $18$ minutes, and after one hundred it takes $13$. Quadrupling $n$ multiplies that power by $4^{-\\frac{1}{2}}$.
-
-The exponent rule is
+The learning component is $A n^{-\\frac{1}{2}}$. Quadrupling $n$ multiplies that power by $4$ to the exponent $-\\frac{1}{2}$:
 
 $$
-\\frac{A(4n)^{-\\frac{1}{2}}}{A n^{-\\frac{1}{2}}}=4^{-\\frac{1}{2}}=\\frac{1}{2}
-$$
-
-The recorded pair is itself a quadrupling, from $25$ to $100$. Subtracting the timings isolates the learning term:
-
-$$
-\\frac{A}{5}=18-F
-$$
-
-$$
-\\frac{A}{10}=13-F
-$$
-
-$$
-\\frac{A}{10}=5
-$$
-
-$$
-A=50
-$$
-
-so the two learning pieces are
-
-$$
-\\frac{50}{\\sqrt{25}}=10
-$$
-
-$$
-\\frac{50}{\\sqrt{100}}=5
+4^{-\\frac{1}{2}}=\\frac{1}{2}
 $$
 
 The learning component halves, so the statement is True.`,
       `**D.** → False
 
-Quadrupling cumulative output from twenty-five to one hundred is the recorded pair of timings on $t(n)=F+A n^{-\\frac{1}{2}}$. After twenty-five units the next unit takes $18$ minutes, and after one hundred it takes $13$.
-
-If the whole unit time halved, the second timing would be
-
-$$
-\\frac{18}{2}=9
-$$
-
-The recorded second timing is $13$, not $9$. The two timings recover $A=50$ and $F=8$, so
-
-$$
-t(25)=8+10=18
-$$
-
-$$
-t(100)=8+5=13
-$$
-
-The learning term halves, but the eight-minute floor does not scale, and that floor dilutes the gain in the total, so the statement is False.`,
+The recorded pair is already a quadrupling: $18$ minutes down to $13$. Halving the whole unit time would have made the second timing $9$, not $13$. The learning term halves, but the eight-minute floor stays put and dilutes the gain in the total, so the statement is False.`,
       `**E.** → False
 
-Four cumulative units is a small $n$ on $t(n)=F+A n^{-\\frac{1}{2}}$. After twenty-five units the next unit takes $18$ minutes, and after one hundred it takes $13$. Both constants must be recovered first.
-
-The twenty-five-unit timing is
-
-$$
-F+A\\cdot 25^{-\\frac{1}{2}}=18
-$$
-
-$$
-25^{\\frac{1}{2}}=5
-$$
-
-$$
-F+\\frac{A}{5}=18
-$$
-
-The hundred-unit timing is
-
-$$
-F+A\\cdot 100^{-\\frac{1}{2}}=13
-$$
-
-$$
-100^{\\frac{1}{2}}=10
-$$
-
-$$
-F+\\frac{A}{10}=13
-$$
-
-Subtracting cancels $F$:
-
-$$
-\\frac{A}{10}=5
-$$
-
-$$
-A=50
-$$
-
-$$
-F+10=18
-$$
-
-$$
-F=8
-$$
-
-The recovered law is $t(n)=8+50n^{-\\frac{1}{2}}$. At four units:
+Unit time is $t(n)=8+50n^{-\\frac{1}{2}}$. At four units:
 
 $$
 4^{\\frac{1}{2}}=2
@@ -21810,73 +9704,19 @@ $$\\lim_{n\\to\\infty}t(n)=8 \\tag{2}$$
     tactical_explanations: [
       `**A.** → False
 
-Proportionality would mean revenue is a constant times feed, so exponent $1$. Harvest revenue follows $R(x)=A x^{\\frac{2}{3}}$, and at eight tonnes the revenue is $360$ thousand euros.
-
-The eight-tonne reading pins $A$:
+Proportionality would mean revenue is a constant times feed, so exponent $1$. Harvest follows $R(x)=A x^{\\frac{2}{3}}$, and two thirds is not one. Doubling feed therefore multiplies revenue by
 
 $$
-A\\cdot 8^{\\frac{2}{3}}=360
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-4A=360
-$$
-
-$$
-A=90
-$$
-
-The recovered law is $R(x)=90x^{\\frac{2}{3}}$. The exponent $\\frac{2}{3}$ is not $1$. Doubling feed therefore multiplies revenue by
-
-$$
-\\frac{R(2x)}{R(x)}=2^{\\frac{2}{3}}\\approx 1.59
+2^{\\frac{2}{3}}\\approx 1.59
 $$
 
 not by $2$, so the statement is False.`,
       `**B.** → True
 
-Break-even is the positive root of harvest revenue against feed cost. Revenue is $R(x)=A x^{\\frac{2}{3}}$ and cost is $C(x)=30x$. At eight tonnes, revenue is $360$ thousand euros, so the coefficient must be recovered first.
-
-The eight-tonne reading is
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=360
-$$
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-4A=360
-$$
-
-$$
-A=90
-$$
-
-The recovered law is $R(x)=90x^{\\frac{2}{3}}$. Set revenue equal to cost:
+Revenue is $R(x)=90x^{\\frac{2}{3}}$ and cost is $C(x)=30x$. Set them equal:
 
 $$
 90x^{\\frac{2}{3}}=30x
-$$
-
-Divide by $30x^{\\frac{2}{3}}$ for $x>0$:
-
-$$
-3=x^{1-\\frac{2}{3}}
 $$
 
 $$
@@ -21888,10 +9728,6 @@ x=27
 $$
 
 Both sides at twenty-seven tonnes are
-
-$$
-R(27)=90\\cdot 27^{\\frac{2}{3}}
-$$
 
 $$
 27^{\\frac{2}{3}}=9
@@ -21908,125 +9744,35 @@ $$
 Revenue equals cost at $27$ tonnes, so the statement is True.`,
       `**C.** → False
 
-An extra tonne of feed adds the derivative of harvest revenue. Revenue is $R(x)=A x^{\\frac{2}{3}}$, and at eight tonnes the revenue is $360$ thousand euros, so the coefficient must be recovered first.
-
-The eight-tonne reading is
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=360
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-4A=360
-$$
-
-$$
-A=90
-$$
-
-The recovered law is $R(x)=90x^{\\frac{2}{3}}$. Differentiate:
-
-$$
-R'(x)=90\\cdot\\frac{2}{3}x^{\\frac{2}{3}-1}
-$$
+Revenue is $R(x)=90x^{\\frac{2}{3}}$. An extra tonne adds the derivative:
 
 $$
 R'(x)=60x^{-\\frac{1}{3}}
 $$
 
-At eight tonnes, $8^{\\frac{1}{3}}=2$:
-
-$$
-R'(8)=60\\cdot 8^{-\\frac{1}{3}}
-$$
-
-$$
-R'(8)=\\frac{60}{2}=30
-$$
-
-At twenty-seven tonnes, $27^{\\frac{1}{3}}=3$:
-
-$$
-R'(27)=60\\cdot 27^{-\\frac{1}{3}}
-$$
-
-$$
-R'(27)=\\frac{60}{3}=20
-$$
-
-The extra tonne adds $20$ after twenty-seven tonnes, which is less than the $30$ it adds after eight, so the statement is False.`,
+At eight tonnes, $8^{\\frac{1}{3}}=2$, so $R'(8)=30$. At twenty-seven tonnes, $27^{\\frac{1}{3}}=3$, so $R'(27)=20$. The extra tonne adds less after twenty-seven tonnes than after eight, because the leftover exponent is negative, so the statement is False.`,
       `**D.** → True
 
-Cost overtakes revenue once the linear schedule $C(x)=30x$ passes the recovered harvest $R(x)=A x^{\\frac{2}{3}}$. At eight tonnes, revenue is $360$ thousand euros, so the coefficient must be recovered first.
-
-The eight-tonne reading is
-
-$$
-A\\cdot 8^{\\frac{2}{3}}=360
-$$
-
-$$
-8^{\\frac{2}{3}}=4
-$$
-
-$$
-A=90
-$$
-
-The recovered law is $R(x)=90x^{\\frac{2}{3}}$. The ratio of revenue to cost is
-
-$$
-\\frac{R(x)}{C(x)}=\\frac{90x^{\\frac{2}{3}}}{30x}
-$$
+Revenue is $R(x)=90x^{\\frac{2}{3}}$ and cost is $C(x)=30x$. Their ratio is
 
 $$
 \\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}}
 $$
 
-This ratio equals $1$ when $x^{\\frac{1}{3}}=3$, so $x=27$. For every $x>27$ the cube root exceeds $3$, so the ratio is strictly less than $1$. A check at sixty-four tonnes:
-
-$$
-64^{\\frac{2}{3}}=16
-$$
-
-$$
-R(64)=90\\cdot 16=1440
-$$
-
-$$
-C(64)=30\\cdot 64=1920
-$$
-
-Cost stays ahead, and the gap widens as $x$ grows, so feeding still more cannot restore a surplus, so the statement is True.`,
+The ratio equals $1$ at $x=27$ and is strictly less than $1$ for every larger $x$, because the cube root keeps growing. Extra feed widens the gap; it cannot restore a surplus, so the statement is True.`,
       `**E.** → True
 
-Profit at eight tonnes is harvest revenue minus the given feed cost. Revenue at eight tonnes is recorded as $360$ thousand euros, and cost is $C(x)=30x$.
-
-The cost at eight tonnes is
+Revenue at eight tonnes is already recorded as $360$ thousand euros, and cost is $C(x)=30x$:
 
 $$
-C(8)=30\\cdot 8
-$$
-
-$$
-C(8)=240
-$$
-
-The season's surplus is
-
-$$
-P(8)=R(8)-C(8)
+C(8)=30\\cdot 8=240
 $$
 
 $$
 P(8)=360-240=120
 $$
 
-One hundred and twenty thousand euros exceeds one hundred, because $120>100$, so the statement is True.`,
+One hundred and twenty exceeds one hundred, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 76,
@@ -22070,13 +9816,7 @@ $$\\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → False
 
-The multiplier of a power $f(x)=A x^{\\frac{3}{2}}$ is the input factor raised to the given exponent, and $A$ cancels. The claim is that a factor of $4$ on the index multiplies cost by $4$.
-
-The scale rule is
-
-$$
-\\frac{f(4x)}{f(x)}=\\frac{A(4x)^{\\frac{3}{2}}}{A x^{\\frac{3}{2}}}
-$$
+The multiplier of $A x^{\\frac{3}{2}}$ is the input factor to the power $\\frac{3}{2}$, and $A$ cancels:
 
 $$
 \\frac{f(4x)}{f(x)}=4^{\\frac{3}{2}}
@@ -22093,51 +9833,7 @@ $$
 Cost is multiplied by eight, not by four. The four-fold factor would belong to exponent $1$, so the statement is False.`,
       `**B.** → True
 
-Index nine is a third size on $f(x)=A x^{\\frac{3}{2}}$. The individual daily figures were lost; the surviving record is that cost at index sixteen exceeds cost at index four by $336$ euros. The coefficient must be recovered from that difference first.
-
-The difference factors $A$:
-
-$$
-f(16)-f(4)=A\\cdot 16^{\\frac{3}{2}}-A\\cdot 4^{\\frac{3}{2}}
-$$
-
-$$
-A\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336
-$$
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-A(64-8)=336
-$$
-
-$$
-56A=336
-$$
-
-$$
-A=6
-$$
-
-A check of the lost levels: $f(4)=6\\cdot 8=48$ and $f(16)=6\\cdot 64=384$, and $384-48=336$. The recovered law is $f(x)=6x^{\\frac{3}{2}}$. At index nine:
-
-$$
-9^{\\frac{1}{2}}=3
-$$
+Handling is $f(x)=6x^{\\frac{3}{2}}$. At index nine:
 
 $$
 9^{\\frac{3}{2}}=27
@@ -22147,94 +9843,22 @@ $$
 f(9)=6\\cdot 27=162
 $$
 
-Handling cost at index nine is one hundred and sixty-two euros, so the statement is True.`,
+The claimed cost is $162$ euros, so the statement is True.`,
       `**C.** → True
 
-Handling cost follows $f(x)=A x^{\\frac{3}{2}}$. The given exponent $\\frac{3}{2}$ is larger than one, so cost grows faster than the pallet-volume index.
-
-The surviving difference recovers $A$ and makes the same point in levels. From $f(16)-f(4)=336$:
-
-$$
-A\\left(64-8\\right)=336
-$$
-
-$$
-A=6
-$$
-
-The two recovered levels are
-
-$$
-f(4)=6\\cdot 8=48
-$$
-
-$$
-f(16)=6\\cdot 64=384
-$$
-
-$$
-\\frac{f(16)}{f(4)}=\\frac{384}{48}=8
-$$
-
-The index rose fourfold and cost rose eightfold, which is faster than the index, so the statement is True.`,
+The exponent $\\frac{3}{2}$ is larger than one, so cost outruns the pallet-volume index. A four-fold rise in the index multiplies cost by eight, not by four, so the statement is True.`,
       `**D.** → False
 
-Equal gaps in cost would be a linear rule, exponent $1$. Handling cost follows $f(x)=A x^{\\frac{3}{2}}$, and $f(16)-f(4)=336$ recovers $A=6$, so $f(x)=6x^{\\frac{3}{2}}$.
-
-The first derivative is
+Handling is $f(x)=6x^{\\frac{3}{2}}$. Equal cost gaps would need a linear rule, exponent $1$. Differentiate:
 
 $$
 f'(x)=9x^{\\frac{1}{2}}
 $$
 
-which itself rises with $x$. Two equal index steps therefore cannot add the same euros. The recovered levels already disagree with a constant slope: the recorded gap of $12$ in the index costs $336$, or $28$ euros per index unit, while
-
-$$
-f(9)=162
-$$
-
-$$
-f(4)=48
-$$
-
-$$
-f(9)-f(4)=114
-$$
-
-over a gap of $5$, or $22.8$ euros per index unit. Equal index gaps do not produce equal cost gaps, so the statement is False.`,
+The slope itself rises with $x$, so later index steps add more euros than earlier ones of the same width, so the statement is False.`,
       `**E.** → False
 
-The difference $f(25)-f(9)$ is a pair of levels on $f(x)=A x^{\\frac{3}{2}}$. The surviving record $f(16)-f(4)=336$ recovers the coefficient first.
-
-$$
-A\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-4^{\\frac{3}{2}}=8
-$$
-
-$$
-A(64-8)=336
-$$
-
-$$
-56A=336
-$$
-
-$$
-A=6
-$$
-
-The recovered law is $f(x)=6x^{\\frac{3}{2}}$. The two new levels are
-
-$$
-25^{\\frac{1}{2}}=5
-$$
+Handling is $f(x)=6x^{\\frac{3}{2}}$, and $f(9)=162$. At index twenty-five:
 
 $$
 25^{\\frac{3}{2}}=125
@@ -22242,18 +9866,6 @@ $$
 
 $$
 f(25)=6\\cdot 125=750
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-f(9)=6\\cdot 27=162
 $$
 
 $$
@@ -22304,87 +9916,19 @@ $$\\frac{f(kx)}{f(x)}=k^{\\frac{3}{2}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Inverting a power with a nonzero exponent produces another power. Load follows $W(s)=A s^{\\frac{3}{2}}$, and at scale nine the daily load is $135$ kilograms. The claim is that the scale needed for a given load is itself a power of that load, so the coefficient must be recovered first.
-
-The recorded load is
+A power with a nonzero exponent inverts to another power. Load is $W=A s^{\\frac{3}{2}}$, so
 
 $$
-A\\cdot 9^{\\frac{3}{2}}=135
+s=\\left(\\frac{W}{A}\\right)^{\\frac{2}{3}}
 $$
 
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-27A=135
-$$
-
-$$
-A=5
-$$
-
-The recovered law is $W=5s^{\\frac{3}{2}}$. The general inversion of $W=A s^{r}$ with $r=\\frac{3}{2}$ is
-
-$$
-s=\\left(\\frac{W}{A}\\right)^{\\frac{1}{r}}=\\left(\\frac{W}{A}\\right)^{\\frac{2}{3}}
-$$
-
-Divide the recovered law by $5$:
-
-$$
-s^{\\frac{3}{2}}=\\frac{W}{5}
-$$
-
-Raise both sides to the power $\\frac{2}{3}$:
-
-$$
-s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}
-$$
-
-$$
-s=5^{-\\frac{2}{3}}W^{\\frac{2}{3}}
-$$
-
-Scale is a power of load with coefficient $5^{-\\frac{2}{3}}$ and exponent $\\frac{2}{3}$, so the statement is True.`,
+That is a constant times $W^{\\frac{2}{3}}$, a power of load, so the statement is True.`,
       `**B.** → True
 
-The permit ceiling is an equation once the recovered load is pushed to $320$ kilograms. Load follows $W(s)=A s^{\\frac{3}{2}}$, and at scale nine the daily load is $135$ kilograms. The coefficient must be recovered first.
-
-The recorded load is
-
-$$
-A\\cdot 9^{\\frac{3}{2}}=135
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-27A=135
-$$
-
-$$
-A=5
-$$
-
-The recovered law is $W(s)=5s^{\\frac{3}{2}}$. At the ceiling:
+Load is $W(s)=5s^{\\frac{3}{2}}$. At the $320$ kilogram ceiling:
 
 $$
 5s^{\\frac{3}{2}}=320
-$$
-
-$$
-s^{\\frac{3}{2}}=\\frac{320}{5}
 $$
 
 $$
@@ -22403,111 +9947,19 @@ $$
 s=16
 $$
 
-A forward check:
-
-$$
-W(16)=5\\cdot 16^{\\frac{3}{2}}
-$$
-
-$$
-16^{\\frac{3}{2}}=64
-$$
-
-$$
-W(16)=5\\cdot 64=320
-$$
-
 The exponent $\\frac{3}{2}$ is positive, so every larger index breaches the permit. The largest admissible scale is sixteen, so the statement is True.`,
       `**C.** → False
 
-Doubling the permit ceiling is a factor of $2$ on the inverted load. Load follows $W(s)=A s^{\\frac{3}{2}}$, and at scale nine the daily load is $135$ kilograms. The present ceiling is $320$ kilograms, so the coefficient must be recovered first.
-
-The recorded load is
+The inverse is $s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}$. Doubling the ceiling multiplies permitted scale by
 
 $$
-A\\cdot 9^{\\frac{3}{2}}=135
+2^{\\frac{2}{3}}\\approx 1.59
 $$
 
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-A=5
-$$
-
-The inverse is $s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}$. At the present ceiling:
-
-$$
-s=\\left(\\frac{320}{5}\\right)^{\\frac{2}{3}}
-$$
-
-$$
-s=64^{\\frac{2}{3}}=16
-$$
-
-Doubling the ceiling to $640$ kilograms:
-
-$$
-s=\\left(\\frac{640}{5}\\right)^{\\frac{2}{3}}
-$$
-
-$$
-s=128^{\\frac{2}{3}}
-$$
-
-A factor of $2$ on the load moves the scale by $2^{\\frac{2}{3}}$:
-
-$$
-\\frac{s(640)}{s(320)}=2^{\\frac{2}{3}}\\approx 1.59
-$$
-
-$$
-16\\cdot 2^{\\frac{2}{3}}\\approx 25.40
-$$
-
-Doubling the scale would require $s=32$. The inverse exponent $\\frac{2}{3}$ is smaller than one, so permitted scale grows more slowly than the permitted load, so the statement is False.`,
+not by $2$. The inverse exponent $\\frac{2}{3}$ is smaller than one, so permitted scale grows more slowly than the permitted load, so the statement is False.`,
       `**D.** → False
 
-The coefficient enters the inverse under the exponent $\\frac{2}{3}$. Load follows $W(s)=A s^{\\frac{3}{2}}$, and at scale nine the daily load is $135$ kilograms. The ceiling is $320$ kilograms, so the original coefficient must be recovered first.
-
-The recorded load is
-
-$$
-A\\cdot 9^{\\frac{3}{2}}=135
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-27A=135
-$$
-
-$$
-A=5
-$$
-
-Under the same ceiling, the admissible scale is
-
-$$
-5s^{\\frac{3}{2}}=320
-$$
-
-$$
-s^{\\frac{3}{2}}=64
-$$
-
-$$
-s=16
-$$
-
-Doubling the coefficient to $10$ gives
+Load is $W=5s^{\\frac{3}{2}}$, and the ceiling gives $s=16$. Doubling the coefficient to $10$ gives
 
 $$
 10s^{\\frac{3}{2}}=320
@@ -22518,51 +9970,13 @@ s^{\\frac{3}{2}}=32
 $$
 
 $$
-s=32^{\\frac{2}{3}}
+s=32^{\\frac{2}{3}}\\approx 10.08
 $$
 
-$$
-s\\approx 10.08
-$$
-
-Halving would require $s=8$. The scale factor is
-
-$$
-\\frac{s_{2}}{s_{1}}=2^{-\\frac{2}{3}}\\approx 0.63
-$$
-
-not $\\frac{1}{2}$, so the statement is False.`,
+Halving would require $s=8$. The scale factor is $2^{-\\frac{2}{3}}\\approx 0.63$, not $\\frac{1}{2}$, so the statement is False.`,
       `**E.** → True
 
-Scale four is a clean square on $W(s)=A s^{\\frac{3}{2}}$. At scale nine the daily load is $135$ kilograms, so the coefficient must be recovered first.
-
-The recorded load is
-
-$$
-A\\cdot 9^{\\frac{3}{2}}=135
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{\\frac{3}{2}}=27
-$$
-
-$$
-27A=135
-$$
-
-$$
-A=5
-$$
-
-The recovered law is $W(s)=5s^{\\frac{3}{2}}$. At scale four:
-
-$$
-4^{\\frac{1}{2}}=2
-$$
+Load is $W(s)=5s^{\\frac{3}{2}}$. At scale four:
 
 $$
 4^{\\frac{3}{2}}=8
@@ -22620,15 +10034,13 @@ $$s(W)=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → False
 
-Demand follows $q(p)=A p^{-2}$. A twenty-five percent tariff rise is the factor $\\frac{5}{4}$. The elasticity shortcut predicts a percentage change of minus two times that rise. The exact change raises the tariff factor to the exponent $-2$.
-
-The shortcut is
+A twenty-five percent tariff rise is the factor $\\frac{5}{4}$. The elasticity shortcut predicts
 
 $$
 -2\\times 25\\%=-50\\%
 $$
 
-The exact multiplier cancels $A$:
+The exact multiplier raises that factor to the exponent $-2$:
 
 $$
 \\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}=0.64
@@ -22637,142 +10049,32 @@ $$
 Demand keeps $64\\%$ of its level, a cut of $36\\%$, not one half. The shortcut cuts by one half and the exact power does not, so the statement is False.`,
       `**B.** → True
 
-A twenty-five percent tariff rise from the recorded three euros sends the tariff to $3.75$ euros. Demand follows $q(p)=A p^{-2}$, and $q(3)=4000$ occupied spaces. The coefficient must be recovered first.
-
-The recorded pair is
+Demand at three euros is $4000$. The exact factor for a twenty-five percent rise is $\\frac{16}{25}$:
 
 $$
-A\\cdot 3^{-2}=4000
-$$
-
-$$
-3^{2}=9
-$$
-
-$$
-\\frac{A}{9}=4000
-$$
-
-$$
-A=36000
-$$
-
-A forward check of the recorded pair:
-
-$$
-q(3)=\\frac{36000}{9}=4000
-$$
-
-The recovered law is $q(p)=36000p^{-2}$. The new tariff is
-
-$$
-3\\cdot\\frac{5}{4}=\\frac{15}{4}
-$$
-
-$$
-\\frac{15}{4}=3.75
-$$
-
-$$
-\\left(\\frac{15}{4}\\right)^{2}=\\frac{225}{16}=14.0625
-$$
-
-$$
-q(3.75)=\\frac{36000}{\\frac{225}{16}}
-$$
-
-$$
-q(3.75)=36000\\cdot\\frac{16}{225}
-$$
-
-$$
-q(3.75)=2560
+4000\\cdot\\frac{16}{25}=2560
 $$
 
 Two thousand five hundred and sixty exceeds two thousand five hundred, so the statement is True.`,
       `**C.** → True
 
-The elasticity shortcut and the exact power disagree on a twenty-five percent tariff rise. Demand follows $q(p)=A p^{-2}$, so the exact multiplier is the tariff factor to the power $-2$.
-
-The shortcut predicts
-
-$$
--2\\times 25\\%=-50\\%
-$$
-
-a $50\\%$ loss. The exact factor is
-
-$$
-\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}=0.64
-$$
-
-$$
-1-0.64=0.36
-$$
-
-a $36\\%$ loss. A predicted $50\\%$ against a true $36\\%$ overstates the loss by fourteen percentage points, so the statement is True.`,
+The shortcut predicts a $50\\%$ loss. The exact factor is $\\frac{16}{25}=0.64$, a $36\\%$ loss. A predicted $50\\%$ against a true $36\\%$ overstates the loss, so the statement is True.`,
       `**D.** → False
 
-A twenty-five percent cut is the factor $\\frac{3}{4}$, while a twenty-five percent rise is the factor $\\frac{5}{4}$. Demand follows $q(p)=A p^{-2}$, so each percentage change is the corresponding factor to the power $-2$, minus one.
-
-The rise multiplies demand by
+A twenty-five percent rise multiplies demand by $\\frac{16}{25}$, a $36\\%$ loss. A twenty-five percent cut is the factor $\\frac{3}{4}$:
 
 $$
-\\left(\\frac{5}{4}\\right)^{-2}=\\left(\\frac{4}{5}\\right)^{2}
-$$
-
-$$
-\\left(\\frac{4}{5}\\right)^{2}=\\frac{16}{25}=0.64
-$$
-
-$$
-1-\\frac{16}{25}=\\frac{9}{25}=0.36
-$$
-
-a $36\\%$ loss. The cut multiplies demand by
-
-$$
-\\left(\\frac{3}{4}\\right)^{-2}=\\left(\\frac{4}{3}\\right)^{2}
-$$
-
-$$
-\\left(\\frac{4}{3}\\right)^{2}=\\frac{16}{9}
+\\left(\\frac{3}{4}\\right)^{-2}=\\frac{16}{9}
 $$
 
 $$
 \\frac{16}{9}-1=\\frac{7}{9}\\approx 0.778
 $$
 
-a rise of about $77.8\\%$. Equal percentage changes would require those two results to match, but
-
-$$
-\\frac{7}{9}\\neq\\frac{9}{25}
-$$
-
-The two percentages are not the same, so the statement is False.`,
+a rise of about $77.8\\%$, not $36\\%$. The two percentages are not the same, so the statement is False.`,
       `**E.** → True
 
-Two euros is a second tariff at which to read $q(p)=A p^{-2}$. The authority records $q(3)=4000$ occupied spaces, so the coefficient must be recovered first.
-
-The recorded pair is
-
-$$
-A\\cdot 3^{-2}=4000
-$$
-
-$$
-3^{2}=9
-$$
-
-$$
-\\frac{A}{9}=4000
-$$
-
-$$
-A=36000
-$$
-
-The recovered law is $q(p)=36000p^{-2}$. At two euros:
+Demand is $q(p)=36000p^{-2}$. At two euros:
 
 $$
 q(2)=36000\\cdot 2^{-2}
@@ -22834,161 +10136,51 @@ $$\\frac{q(kp)}{q(p)}=k^{-2} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Mass follows $M(h)=A h^{3}$. A height multiplier acts through the exponent three, and the coefficient cancels. The claim is that doubling height multiplies mass by eight.
-
-The scale rule is
-
-$$
-\\frac{M(2h)}{M(h)}=\\frac{A(2h)^{3}}{A h^{3}}
-$$
+Mass follows $M(h)=A h^{3}$. Doubling height feeds a factor of $2$ through the exponent $3$, and $A$ cancels:
 
 $$
 \\frac{M(2h)}{M(h)}=2^{3}
 $$
 
 $$
-(2h)^{3}=2^{3}h^{3}
-$$
-
-$$
 2^{3}=8
 $$
 
-Geometric similarity fixes the exponent at three, so every doubling of height multiplies mass by eight. The half-metre weighing is not needed for this factor, so the statement is True.`,
+Geometric similarity fixes that cube, so every doubling of height multiplies mass by eight, so the statement is True.`,
       `**B.** → True
 
-A bell of height $1.5$ m is a second size on $M(h)=A h^{3}$. A finished bell of height one half metre was weighed at $30$ kilograms, so the coefficient must be recovered first.
-
-The weighing is
-
-$$
-A\\left(\\frac{1}{2}\\right)^{3}=30
-$$
-
-$$
-\\left(\\frac{1}{2}\\right)^{3}=\\frac{1}{8}
-$$
-
-$$
-A\\cdot\\frac{1}{8}=30
-$$
-
-$$
-A=240
-$$
-
-The recovered law is $M(h)=240h^{3}$. At one and a half metres, write $1.5=\\frac{3}{2}$:
+The weighing pins $A=240$, so $M(h)=240h^{3}$. At one and a half metres, write $1.5=\\frac{3}{2}$:
 
 $$
 \\left(\\frac{3}{2}\\right)^{3}=\\frac{27}{8}
 $$
 
 $$
-M\\!\\left(\\frac{3}{2}\\right)=240\\cdot\\frac{27}{8}
+M\\left(\\frac{3}{2}\\right)=240\\cdot\\frac{27}{8}=810
 $$
 
-$$
-240\\cdot\\frac{27}{8}=30\\cdot 27
-$$
-
-$$
-M\\!\\left(\\frac{3}{2}\\right)=810
-$$
-
-The same figure is the scale factor from the half-metre bell:
-
-$$
-\\frac{1.5}{0.5}=3
-$$
-
-$$
-3^{3}=27
-$$
-
-$$
-27\\times 30=810
-$$
-
-The mass is eight hundred and ten kilograms, so the statement is True.`,
+The mass is $810$ kg, so the statement is True.`,
       `**C.** → False
 
-Tripling the height feeds a factor of three into the exponent three. Mass follows $M(h)=A h^{3}$, so the coefficient cancels.
-
-The scale rule is
-
-$$
-\\frac{M(3h)}{M(h)}=\\frac{A(3h)^{3}}{A h^{3}}
-$$
-
-$$
-\\frac{M(3h)}{M(h)}=3^{3}
-$$
+Mass is a cube of height, so a factor of $3$ on height multiplies mass by
 
 $$
 3^{3}=27
 $$
 
-The taller bell has twenty-seven times the mass, not three times. The recorded half-metre weighing and the one-and-a-half-metre mass make the same point in kilograms: $1.5$ is three times $0.5$, and $27\\times 30=810$, not $3\\times 30=90$, so the statement is False.`,
+not by $3$. The half-metre bell at $30$ kg would become $810$ kg at $1.5$ m, not $90$ kg, so the statement is False.`,
       `**D.** → False
 
-Mass per metre of height is $M(h)/h$. Mass follows $M(h)=A h^{3}$, and a half-metre bell was weighed at $30$ kilograms.
-
-The weighing pins $A$:
-
-$$
-A\\left(\\frac{1}{2}\\right)^{3}=30
-$$
-
-$$
-A=240
-$$
-
-Mass per metre is then
+Mass is $M(h)=240h^{3}$, so mass per metre of height is
 
 $$
 \\frac{M(h)}{h}=240h^{2}
 $$
 
-which still depends on $h$. At half a metre:
-
-$$
-\\frac{30}{\\frac{1}{2}}=60
-$$
-
-At one metre, $M(1)=240$, so the quotient is $240$ kg per metre. The two figures differ, so the statement is False.`,
+which still grows with $h$. At half a metre the quotient is $60$ kg per metre; at one metre it is $240$. The two figures differ, so the statement is False.`,
       `**E.** → False
 
-A one-metre bell is the coefficient of $M(h)=A h^{3}$, because $1^{3}=1$. A finished bell of height one half metre was weighed at $30$ kilograms, so the coefficient must be recovered first.
-
-The weighing is
-
-$$
-A\\left(\\frac{1}{2}\\right)^{3}=30
-$$
-
-$$
-\\left(\\frac{1}{2}\\right)^{3}=\\frac{1}{8}
-$$
-
-$$
-A\\cdot\\frac{1}{8}=30
-$$
-
-$$
-A=240
-$$
-
-The recovered law is $M(h)=240h^{3}$. At one metre:
-
-$$
-M(1)=240\\cdot 1^{3}
-$$
-
-$$
-M(1)=240
-$$
-
-The figure $30$ is the half-metre weighing. Doubling the height from $\\frac{1}{2}$ to $1$ multiplies mass by $8$, and $8\\times 30=240$, not $30$. A one-metre bell weighs two hundred and forty kilograms, so the statement is False.`,
+Mass is $M(h)=240h^{3}$. At one metre the cube is $1$, so the mass is just the coefficient $240$. The figure $30$ is the half-metre weighing. Doubling height from $\\frac{1}{2}$ to $1$ multiplies mass by $8$, and $8\\times 30=240$, not $30$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 80,
@@ -23036,65 +10228,7 @@ $$M(kh)=k^{3}M(h) \\tag{2}$$
     tactical_explanations: [
       `**A.** → False
 
-Drag on the track cyclist follows $F(v)=A v^{r}$ newtons for speed $v>0$ metres per second, with both constants unknown. Doubling any speed multiplies drag by four. Absorbed power is $P=Fv$ watts. The claim is that riding $25\\%$ faster raises that power by $75\\%$. A scale factor uses only the exponent, so the doubling rule is enough.
-
-The general drag law is
-
-$$
-F(v)=Av^{r}
-$$
-
-Absorbed power multiplies that drag by speed:
-
-$$
-P(v)=F(v)\\cdot v
-$$
-
-The doubling record is a ratio of two drag readings, so $A$ cancels:
-
-$$
-\\frac{F(2v)}{F(v)}=\\frac{A(2v)^{r}}{Av^{r}}
-$$
-
-$$
-\\frac{F(2v)}{F(v)}=2^{r}
-$$
-
-The recorded factor is $4$, and $4$ is a power of two:
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-2^{r}=2^{2}
-$$
-
-The bases match, so the exponents match:
-
-$$
-r=2
-$$
-
-Drag is then $F(v)=Av^{2}$. Absorbed power multiplies drag by speed, which raises the exponent by one:
-
-$$
-P(v)=F(v)\\cdot v=Av^{2}\\cdot v
-$$
-
-$$
-P(v)=Av^{3}
-$$
-
-Riding $25\\%$ faster is the speed multiplier $1.25$:
-
-$$
-\\frac{P(1.25v)}{P(v)}=\\frac{A(1.25v)^{3}}{Av^{3}}
-$$
+Power is $P(v)=\\frac{1}{2}v^{3}$. Riding $25\\%$ faster is the speed multiplier $1.25$, and the coefficient cancels:
 
 $$
 \\frac{P(1.25v)}{P(v)}=1.25^{3}
@@ -23116,7 +10250,7 @@ $$
 1.25^{3}=1.953125
 $$
 
-The same cube as a fraction is $\\left(\\frac{5}{4}\\right)^{3}=\\frac{125}{64}=1.953125$. The relative rise is
+As a fraction that cube is $\\left(\\frac{5}{4}\\right)^{3}=\\frac{125}{64}$. The relative rise is
 
 $$
 1.953125-1=0.953125
@@ -23125,83 +10259,7 @@ $$
 or $95.3125\\%$. The claimed $75\\%$ is three times $25\\%$, as if power scaled linearly with speed. Power rises by $95.3125\\%$, so the statement is False.`,
       `**B.** → True
 
-Drag follows $F(v)=Av^{r}$ newtons. Doubling any speed multiplies drag by four, and raising speed from $8$ to $12$ m/s increased drag by exactly $40$ N. Absorbed power is $P=Fv$ watts, and the rider can hold $500$ W. The claim is that this ceiling is reached at exactly $10$ m/s, so both constants must be recovered and the cubic inverted.
-
-The general drag law is
-
-$$
-F(v)=Av^{r}
-$$
-
-The doubling rule is a ratio, so $A$ cancels:
-
-$$
-\\frac{F(2v)}{F(v)}=2^{r}
-$$
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-The logged increase is a difference of two drag levels:
-
-$$
-F(12)-F(8)=40
-$$
-
-$$
-A(12^{r}-8^{r})=40
-$$
-
-With $r=2$:
-
-$$
-A(12^{2}-8^{2})=40
-$$
-
-$$
-12^{2}=144
-$$
-
-$$
-8^{2}=64
-$$
-
-$$
-144-64=80
-$$
-
-$$
-80A=40
-$$
-
-$$
-A=\\frac{40}{80}
-$$
-
-$$
-A=\\frac{1}{2}
-$$
-
-Drag is $F(v)=\\frac{1}{2}v^{2}$. Power multiplies by speed:
-
-$$
-P(v)=\\frac{1}{2}v^{2}\\cdot v
-$$
-
-$$
-P(v)=\\frac{1}{2}v^{3}
-$$
-
-The ceiling inverts that cubic:
+The $500$ W ceiling inverts $P(v)=\\frac{1}{2}v^{3}$:
 
 $$
 \\frac{1}{2}v^{3}=500
@@ -23218,85 +10276,19 @@ $$
 because $10^{3}=1000$ and speed is positive. Forward check:
 
 $$
-P(10)=\\frac{1}{2}\\cdot 10^{3}
-$$
-
-$$
 P(10)=\\frac{1}{2}\\cdot 1000=500
 $$
 
 The ceiling sits at exactly $10$ m/s, so the statement is True.`,
       `**C.** → True
 
-An extra metre per second of speed is the derivative of absorbed power. Drag follows $F(v)=Av^{r}$. Doubling any speed multiplies drag by four, and the run from $8$ to $12$ m/s added $40$ N. Power is $P=Fv$, so both constants are needed before $P'$ can be compared at those two speeds.
-
-The general drag law is
-
-$$
-F(v)=Av^{r}
-$$
-
-Doubling cancels $A$:
-
-$$
-\\frac{F(2v)}{F(v)}=2^{r}
-$$
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-The $40$ N gap is then a difference of two levels of $Av^{2}$:
-
-$$
-F(12)-F(8)=40
-$$
-
-$$
-A(12^{2}-8^{2})=40
-$$
-
-$$
-12^{2}=144
-$$
-
-$$
-8^{2}=64
-$$
-
-$$
-144-64=80
-$$
-
-$$
-80A=40
-$$
-
-$$
-A=\\frac{1}{2}
-$$
-
-The recovered drag is $F(v)=\\frac{1}{2}v^{2}$. Power is the product of drag and speed:
-
-$$
-P(v)=\\frac{1}{2}v^{3}
-$$
-
-Differentiate:
+An extra metre per second is the derivative of $P(v)=\\frac{1}{2}v^{3}$:
 
 $$
 P'(v)=\\frac{3}{2}v^{2}
 $$
 
-At $8$ m/s:
+The leftover exponent is still positive, so the extra metre itself costs more as the rider goes faster. At $8$ m/s:
 
 $$
 P'(8)=\\frac{3}{2}\\cdot 8^{2}
@@ -23327,75 +10319,7 @@ $$
 Because $216>96$, the extra metre costs more watts at $12$ m/s than it does at $8$ m/s, so the statement is True.`,
       `**D.** → True
 
-The rider can hold $500$ W for a full pursuit. Drag follows $F(v)=Av^{r}$. Doubling any speed multiplies drag by four, and raising speed from $8$ to $12$ m/s increased drag by $40$ N. Absorbed power is $P=Fv$. The claim is that every speed below $10$ m/s stays under the ceiling, so the cubic must be recovered and then compared with $500$.
-
-The general drag law is
-
-$$
-F(v)=Av^{r}
-$$
-
-The doubling ratio isolates the exponent:
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-The $40$ N record pins the coefficient:
-
-$$
-A(12^{2}-8^{2})=40
-$$
-
-$$
-12^{2}=144
-$$
-
-$$
-8^{2}=64
-$$
-
-$$
-144-64=80
-$$
-
-$$
-80A=40
-$$
-
-$$
-A=\\frac{1}{2}
-$$
-
-Power is then
-
-$$
-P(v)=\\frac{1}{2}v^{3}
-$$
-
-The map $v\\mapsto v^{3}$ is strictly increasing on $v>0$, and $\\frac{1}{2}>0$, so $P$ itself is strictly increasing. At $v=10$:
-
-$$
-P(10)=\\frac{1}{2}\\cdot 10^{3}
-$$
-
-$$
-10^{3}=1000
-$$
-
-$$
-P(10)=\\frac{1}{2}\\cdot 1000=500
-$$
-
-Therefore $P(v)<500$ if and only if $v<10$. At the logged speed $v=8$:
+$P(v)=\\frac{1}{2}v^{3}$ is strictly increasing on $v>0$, and $P(10)=500$, so $P(v)<500$ if and only if $v<10$. At the logged speed $v=8$:
 
 $$
 8^{3}=512
@@ -23408,61 +10332,7 @@ $$
 and $256<500$. The rider stays under $500$ W at every speed below $10$ m/s, so the statement is True.`,
       `**E.** → False
 
-A watt reading at $12$ m/s is a level of absorbed power $P=Fv$, not a linear scale of the $500$ W ceiling. Drag follows $F(v)=Av^{r}$. Doubling any speed multiplies drag by four, and the increase from $8$ to $12$ m/s was $40$ N. Both constants are needed before the $12$ m/s level can be read.
-
-The general drag law is
-
-$$
-F(v)=Av^{r}
-$$
-
-The doubling rule gives the exponent:
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-The $40$ N gap then gives the coefficient:
-
-$$
-A(12^{2}-8^{2})=40
-$$
-
-$$
-12^{2}=144
-$$
-
-$$
-8^{2}=64
-$$
-
-$$
-144-64=80
-$$
-
-$$
-80A=40
-$$
-
-$$
-A=\\frac{1}{2}
-$$
-
-Power multiplies drag by speed:
-
-$$
-P(v)=\\frac{1}{2}v^{3}
-$$
-
-At $12$ m/s:
+At $12$ m/s the cubic is
 
 $$
 P(12)=\\frac{1}{2}\\cdot 12^{3}
@@ -23552,64 +10422,22 @@ $$P(8)=256, \\qquad P(10)=500, \\qquad P(12)=864, \\qquad P'(v)=\\frac{3}{2}v^{2
     tactical_explanations: [
       `**A.** → False
 
-The locator signal follows $S(x)=A x^{r}$ millivolts for burial depth $x>0$ metres. Doubling any burial depth cuts the received signal to one eighth. Inverse proportionality would mean exponent $-1$. The doubling rule is a ratio, so $A$ cancels and $r$ can be read without the calibration.
+The doubling record gives $r=-3$. Inverse proportionality would mean exponent $-1$, which would cut the signal in half when depth doubles:
 
 $$
-\\frac{S(2x)}{S(x)}=\\frac{A(2x)^{r}}{Ax^{r}}
+2^{-1}=\\frac{1}{2}
 $$
 
-$$
-\\frac{S(2x)}{S(x)}=2^{r}
-$$
-
-The recorded factor is $\\frac{1}{8}$, and $\\frac{1}{8}$ is a power of two:
+The recorded factor is one eighth:
 
 $$
-2^{r}=\\frac{1}{8}
+2^{-3}=\\frac{1}{8}
 $$
 
-$$
-\\frac{1}{8}=2^{-3}
-$$
-
-$$
-r=-3
-$$
-
-The model is $S(x)=Ax^{-3}$. Inverse proportionality would have required $r=-1$. The product $x\\,S(x)=Ax^{-2}$ still falls as depth grows, so the statement is False.`,
+The product $x\\,S(x)=Ax^{-2}$ still falls as depth grows. The exponent is $-3$, not $-1$, so the statement is False.`,
       `**B.** → True
 
-Four metres is twice the calibration depth of $2$ metres, where the locator read $50$ millivolts. The signal follows $S(x)=Ax^{r}$ millivolts. Doubling any burial depth cuts the signal to one eighth, so the scale factor can be read from that rule before the coefficient is needed.
-
-The general law is
-
-$$
-S(x)=Ax^{r}
-$$
-
-The doubling ratio isolates the exponent:
-
-$$
-\\frac{S(2x)}{S(x)}=2^{r}
-$$
-
-$$
-2^{r}=\\frac{1}{8}
-$$
-
-$$
-\\frac{1}{8}=2^{-3}
-$$
-
-$$
-r=-3
-$$
-
-Four metres is one doubling of the calibration depth, so the signal is multiplied by $2^{-3}$:
-
-$$
-S(4)=S(2)\\cdot 2^{-3}
-$$
+Four metres is one doubling of the calibration depth of $2$ metres, where the locator read $50$ millivolts. Each doubling multiplies the signal by $2^{-3}$:
 
 $$
 S(4)=50\\cdot\\frac{1}{8}
@@ -23619,76 +10447,10 @@ $$
 S(4)=\\frac{50}{8}=6.25
 $$
 
-The same level follows after pinning $A$ from the calibration:
-
-$$
-A\\cdot 2^{-3}=50
-$$
-
-$$
-\\frac{A}{8}=50
-$$
-
-$$
-A=400
-$$
-
-$$
-S(4)=400\\cdot 4^{-3}
-$$
-
-$$
-4^{3}=64
-$$
-
-$$
-S(4)=\\frac{400}{64}=6.25
-$$
-
-The claimed reading is $6.25$ millivolts. The locator reads $6.25$ millivolts, so the statement is True.`,
+The locator reads $6.25$ millivolts, so the statement is True.`,
       `**C.** → True
 
-Inverting a power law of exponent $r\\neq 0$ produces another power law. The signal is $S(x)=Ax^{r}$. Doubling any burial depth cuts the reading to one eighth, and a conductor buried at $2$ metres read $50$ millivolts. Both constants are needed before the inverse can be written.
-
-The general law is
-
-$$
-S(x)=Ax^{r}
-$$
-
-The doubling ratio cancels $A$:
-
-$$
-2^{r}=\\frac{1}{8}
-$$
-
-$$
-\\frac{1}{8}=2^{-3}
-$$
-
-$$
-r=-3
-$$
-
-The calibration then pins the coefficient:
-
-$$
-A\\cdot 2^{-3}=50
-$$
-
-$$
-\\frac{A}{8}=50
-$$
-
-$$
-A=400
-$$
-
-The recovered law is $S=400x^{-3}$. Solving for depth:
-
-$$
-S=\\frac{400}{x^{3}}
-$$
+The law is $S=\\frac{400}{x^{3}}$. Solving for depth:
 
 $$
 x^{3}=\\frac{400}{S}
@@ -23702,109 +10464,19 @@ $$
 x=400^{\\frac{1}{3}}S^{-\\frac{1}{3}}
 $$
 
-Depth is a power of the reading with exponent $-\\frac{1}{3}$, so the statement is True.`,
+A power with a nonzero exponent inverts to another power. Depth is a power of the reading with exponent $-\\frac{1}{3}$, so the statement is True.`,
       `**D.** → True
 
-The quantity that a power law holds fixed is $x^{-r}S(x)=A$. The signal follows $S(x)=Ax^{r}$ millivolts. Doubling any burial depth cuts the received signal to one eighth, and the calibration at $2$ metres read $50$ millivolts.
-
-The general law is
+The exponent is $-3$, so the invariant of the power law is the product of the cube of the depth and the signal:
 
 $$
-S(x)=Ax^{r}
+x^{3}S(x)=400
 $$
 
-The doubling ratio isolates the exponent:
-
-$$
-\\frac{S(2x)}{S(x)}=2^{r}
-$$
-
-$$
-2^{r}=\\frac{1}{8}
-$$
-
-$$
-\\frac{1}{8}=2^{-3}
-$$
-
-$$
-r=-3
-$$
-
-Then $-r=3$, so the invariant is the product of the cube of the depth and the signal:
-
-$$
-x^{3}S(x)=A
-$$
-
-The calibration $S(2)=50$ pins that constant:
-
-$$
-2^{3}\\cdot 50=A
-$$
-
-$$
-8\\cdot 50=400
-$$
-
-$$
-A=400
-$$
-
-At four metres the same product is
-
-$$
-S(4)=400\\cdot 4^{-3}
-$$
-
-$$
-4^{3}=64
-$$
-
-$$
-S(4)=\\frac{400}{64}=6.25
-$$
-
-$$
-4^{3}\\cdot S(4)=64\\cdot 6.25=400
-$$
-
-The product of the cube of the depth and the signal is $400$ at every depth, so the statement is True.`,
+At the calibration, $2^{3}\\cdot 50=400$. At four metres, $4^{3}\\cdot 6.25=400$. The product is the same at every depth, so the statement is True.`,
       `**E.** → False
 
-A depth from a $3.2$ millivolt reading inverts the calibrated cube. The signal follows $S(x)=Ax^{r}$. Doubling any burial depth cuts the reading to one eighth, and a conductor buried at $2$ metres read $50$ millivolts. Both constants are needed before the inverse can be evaluated.
-
-The general law is
-
-$$
-S(x)=Ax^{r}
-$$
-
-The doubling rule gives the exponent:
-
-$$
-2^{r}=\\frac{1}{8}
-$$
-
-$$
-\\frac{1}{8}=2^{-3}
-$$
-
-$$
-r=-3
-$$
-
-The calibration then gives the coefficient:
-
-$$
-A\\cdot 2^{-3}=50
-$$
-
-$$
-A=50\\cdot 8=400
-$$
-
-The law is $S(x)=\\frac{400}{x^{3}}$. At a reading of $3.2$ millivolts:
+At a reading of $3.2$ millivolts:
 
 $$
 \\frac{400}{x^{3}}=3.2
@@ -23819,21 +10491,13 @@ $$
 $$
 
 $$
-x^{3}=125
-$$
-
-$$
 x=5
 $$
 
 because $5^{3}=125$ and depth is positive. At the claimed $10$ metres the locator would show
 
 $$
-S(10)=\\frac{400}{10^{3}}
-$$
-
-$$
-S(10)=\\frac{400}{1000}=0.4
+S(10)=\\frac{400}{10^{3}}=\\frac{400}{1000}=0.4
 $$
 
 The reading corresponds to $5$ metres, not $10$, so the statement is False.`,
@@ -23898,78 +10562,32 @@ $$x^{3}S(x)=400$$
     tactical_explanations: [
       `**A.** → True
 
-Oxygen demand follows $D(m)=A m^{\\frac{3}{4}}$ millilitres per hour for body mass $m>0$ grams. An $81$ g fish demands exactly $95$ millilitres per hour more than a $16$ g fish. The claim is a fresh level $D(256)=320$, so the coefficient $A$ must be recovered from that gap first.
-
-The demand law is
-
-$$
-D(m)=Am^{\\frac{3}{4}}
-$$
-
-The logged masses are fourth powers, which makes the shape factors exact:
-
-$$
-81=3^{4}
-$$
-
-$$
-81^{\\frac{3}{4}}=(3^{4})^{\\frac{3}{4}}=3^{3}=27
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}=2^{3}=8
-$$
-
-The $95$ millilitre gap is then a difference of two levels:
-
-$$
-D(81)-D(16)=95
-$$
-
-$$
-A(27-8)=95
-$$
-
-$$
-19A=95
-$$
-
-$$
-A=\\frac{95}{19}=5
-$$
-
-The recovered law is $D(m)=5m^{\\frac{3}{4}}$. At $256$ g:
+Demand is $D(m)=5m^{\\frac{3}{4}}$. At $256$ g the mass is a fourth power:
 
 $$
 256=4^{4}
 $$
 
 $$
-256^{\\frac{3}{4}}=(4^{4})^{\\frac{3}{4}}=4^{3}=64
+256^{\\frac{3}{4}}=(4^{4})^{\\frac{3}{4}}
+$$
+
+$$
+(4^{4})^{\\frac{3}{4}}=4^{3}
+$$
+
+$$
+4^{3}=64
 $$
 
 $$
 D(256)=5\\cdot 64=320
 $$
 
-The claimed demand is $320$ millilitres per hour. The $256$ g fish demands $320$ millilitres per hour, so the statement is True.`,
+The $256$ g fish demands $320$ millilitres per hour, so the statement is True.`,
       `**B.** → True
 
-A mass doubling is a scale factor on oxygen demand $D(m)=A m^{\\frac{3}{4}}$. The coefficient cancels, so only the published exponent $\\frac{3}{4}$ is used. The claim is that the factor is less than $2$.
-
-The demand law is
-
-$$
-D(m)=Am^{\\frac{3}{4}}
-$$
-
-$$
-\\frac{D(2m)}{D(m)}=\\frac{A(2m)^{\\frac{3}{4}}}{Am^{\\frac{3}{4}}}
-$$
+The exponent on demand is $\\frac{3}{4}$. Doubling body mass multiplies demand by $2^{\\frac{3}{4}}$, and the coefficient cancels:
 
 $$
 \\frac{D(2m)}{D(m)}=2^{\\frac{3}{4}}
@@ -23993,53 +10611,21 @@ $$
 2^{\\frac{3}{4}}\\approx 1.414\\cdot 1.189\\approx 1.682
 $$
 
-The factor $1.682$ is less than $2$. Demand grows more slowly than mass, so the statement is True.`,
+The factor $1.682$ is less than $2$. Demand grows more slowly than mass because the exponent sits below one, so the statement is True.`,
       `**C.** → False
 
-Demand per square centimetre of gill is the quotient of the two recovered laws. Oxygen demand is $D(m)=A m^{\\frac{3}{4}}$, and an $81$ g fish demands $95$ millilitres per hour more than a $16$ g fish. Gill area is $G(m)=B m^{\\frac{2}{3}}$, and a $64$ g fish carries $48$ square centimetres of gill. Both coefficients are needed before the exponents can be subtracted.
-
-The demand gap uses the fourth-power shape factors $81^{\\frac{3}{4}}=27$ and $16^{\\frac{3}{4}}=8$:
-
-$$
-A(27-8)=95
-$$
-
-$$
-19A=95
-$$
-
-$$
-A=5
-$$
-
-The gill record uses $64=4^{3}$:
-
-$$
-64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}=4^{2}=16
-$$
-
-$$
-B\\cdot 16=48
-$$
-
-$$
-B=\\frac{48}{16}=3
-$$
-
-The intensity is the quotient:
-
-$$
-\\frac{D(m)}{G(m)}=\\frac{5m^{\\frac{3}{4}}}{3m^{\\frac{2}{3}}}
-$$
+Demand per square centimetre of gill is the quotient of $D(m)=5m^{\\frac{3}{4}}$ and $G(m)=3m^{\\frac{2}{3}}$:
 
 $$
 \\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{3}{4}-\\frac{2}{3}}
 $$
 
-The leftover exponent is
+$$
+\\frac{3}{4}-\\frac{2}{3}=\\frac{9}{12}-\\frac{8}{12}
+$$
 
 $$
-\\frac{3}{4}-\\frac{2}{3}=\\frac{9}{12}-\\frac{8}{12}=\\frac{1}{12}
+\\frac{9}{12}-\\frac{8}{12}=\\frac{1}{12}
 $$
 
 so
@@ -24051,37 +10637,7 @@ $$
 The leftover exponent $\\frac{1}{12}$ is positive, so the intensity rises with body mass. It does not fall, so the statement is False.`,
       `**D.** → True
 
-A tank total is a sum of individual demands, never one application of $D$ to the pooled mass. Oxygen demand follows $D(m)=A m^{\\frac{3}{4}}$. An $81$ g fish demands $95$ millilitres per hour more than a $16$ g fish. Sixteen $16$ g fish have the same total mass as one $256$ g fish, so $A$ must be recovered and both tank totals computed.
-
-The demand law is
-
-$$
-D(m)=Am^{\\frac{3}{4}}
-$$
-
-The gap uses $81^{\\frac{3}{4}}=27$ and $16^{\\frac{3}{4}}=8$:
-
-$$
-A(27-8)=95
-$$
-
-$$
-19A=95
-$$
-
-$$
-A=5
-$$
-
-The recovered law is $D(m)=5m^{\\frac{3}{4}}$. One small fish:
-
-$$
-D(16)=5\\cdot 16^{\\frac{3}{4}}
-$$
-
-$$
-16^{\\frac{3}{4}}=8
-$$
+A tank total is a sum of individual demands, never one application of $D$ to the pooled mass. One $16$ g fish demands
 
 $$
 D(16)=5\\cdot 8=40
@@ -24090,90 +10646,30 @@ $$
 Sixteen of them:
 
 $$
-16\\cdot D(16)=16\\cdot 40=640
+16\\cdot 40=640
 $$
 
-One $256$ g fish:
-
-$$
-256^{\\frac{3}{4}}=(4^{4})^{\\frac{3}{4}}=4^{3}=64
-$$
-
-$$
-D(256)=5\\cdot 64=320
-$$
-
-The ratio of the two tank totals:
+One $256$ g fish of the same total mass demands $320$. The ratio is
 
 $$
 \\frac{640}{320}=2
 $$
 
-Sixteen small fish demand twice as much oxygen as one fish of the same total mass, so the statement is True.`,
+Because $\\frac{3}{4}<1$, many small fish out-consume one large fish of equal total mass. Sixteen small fish demand twice as much oxygen, so the statement is True.`,
       `**E.** → False
 
-Gill area is $G(m)=B m^{\\frac{2}{3}}$ square centimetres. A $64$ g fish carries $48$ square centimetres of gill. The exponent $\\frac{2}{3}<1$, so two small fish out-area one fish of twice the mass, but the coefficient must be recovered before the two sides can be compared.
-
-The gill law is
+Gill area is $G(m)=3m^{\\frac{2}{3}}$. The exponent $\\frac{2}{3}<1$, so two small fish out-area one fish of twice the mass.
 
 $$
-G(m)=Bm^{\\frac{2}{3}}
-$$
-
-The gill record uses $64=4^{3}$:
-
-$$
-64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}=4^{2}=16
+G(16)=12\\cdot 2^{\\frac{2}{3}}
 $$
 
 $$
-B\\cdot 16=48
+2G(16)=24\\cdot 2^{\\frac{2}{3}}
 $$
 
 $$
-B=\\frac{48}{16}=3
-$$
-
-The recovered law is $G(m)=3m^{\\frac{2}{3}}$. At $16$ g:
-
-$$
-16=2^{4}
-$$
-
-$$
-16^{\\frac{2}{3}}=(2^{4})^{\\frac{2}{3}}=2^{\\frac{8}{3}}
-$$
-
-$$
-2^{\\frac{8}{3}}=2^{2+\\frac{2}{3}}=4\\cdot 2^{\\frac{2}{3}}
-$$
-
-$$
-G(16)=3\\cdot 4\\cdot 2^{\\frac{2}{3}}=12\\cdot 2^{\\frac{2}{3}}
-$$
-
-Two such fish:
-
-$$
-2\\,G(16)=24\\cdot 2^{\\frac{2}{3}}
-$$
-
-One $32$ g fish:
-
-$$
-32=2^{5}
-$$
-
-$$
-32^{\\frac{2}{3}}=(2^{5})^{\\frac{2}{3}}=2^{\\frac{10}{3}}
-$$
-
-$$
-2^{\\frac{10}{3}}=2^{3+\\frac{1}{3}}=8\\cdot 2^{\\frac{1}{3}}
-$$
-
-$$
-G(32)=3\\cdot 8\\cdot 2^{\\frac{1}{3}}=24\\cdot 2^{\\frac{1}{3}}
+G(32)=24\\cdot 2^{\\frac{1}{3}}
 $$
 
 Because $2^{\\frac{2}{3}}>2^{\\frac{1}{3}}$, the two $16$ g fish carry more gill area than the one $32$ g fish, so the statement is False.`,
@@ -24246,46 +10742,14 @@ $$2\\,G(16)=24\\cdot 2^{\\frac{2}{3}} > G(32)=24\\cdot 2^{\\frac{1}{3}}$$
     tactical_explanations: [
       `**A.** → False
 
-Volumetric flow through a micro-irrigation emitter follows $Q(r)=A r^{k}$ litres per hour, where $r>0$ is the internal tube radius in millimetres. Neither constant is posted. Doubling any tube radius multiplies flow by $16$. Widening the radius by $50\\%$ is the multiplier $1.5$, and flow responds through the recovered exponent, not through twice $50\\%$.
-
-The general flow law is
-
-$$
-Q(r)=Ar^{k}
-$$
-
-The doubling record is a ratio of two flows, so $A$ cancels:
-
-$$
-\\frac{Q(2r)}{Q(r)}=\\frac{A(2r)^{k}}{Ar^{k}}
-$$
-
-$$
-\\frac{Q(2r)}{Q(r)}=2^{k}
-$$
-
-The recorded factor is $16$, and $16$ is a power of two:
-
-$$
-2^{k}=16
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-k=4
-$$
-
-A $50\\%$ wider radius is the factor $1.5=\\frac{3}{2}$:
+Flow is a fourth power of radius. Widening the radius by $50\\%$ is the multiplier $1.5=\\frac{3}{2}$:
 
 $$
 \\frac{Q(1.5r)}{Q(r)}=1.5^{4}
 $$
 
 $$
-1.5^{4}=\\left(\\frac{3}{2}\\right)^{4}=\\frac{81}{16}
+\\left(\\frac{3}{2}\\right)^{4}=\\frac{81}{16}
 $$
 
 Square first in decimals:
@@ -24297,14 +10761,14 @@ $$
 Then square again:
 
 $$
-1.5^{4}=(1.5^{2})^{2}=2.25^{2}
+1.5^{4}=(1.5^{2})^{2}
 $$
 
 $$
 2.25^{2}=5.0625
 $$
 
-and $\\frac{81}{16}=5.0625$ agrees. The relative rise is
+The relative rise is
 
 $$
 5.0625-1=4.0625
@@ -24313,55 +10777,7 @@ $$
 or $406.25\\%$. The claimed $125\\%$ is the rise for exponent $2$, where $1.5^{2}=2.25$ and $2.25-1=1.25$. Flow rises by $406.25\\%$, so the statement is False.`,
       `**B.** → True
 
-A $3$ mm delivery is a fresh level of the flow law $Q(r)=Ar^{k}$. Doubling any tube radius multiplies flow by $16$, and a bench test on a tube of radius $2$ mm delivered $48$ litres per hour. Both constants must be recovered before $Q(3)$ can be read.
-
-The general law is
-
-$$
-Q(r)=Ar^{k}
-$$
-
-The doubling ratio isolates the exponent:
-
-$$
-\\frac{Q(2r)}{Q(r)}=2^{k}
-$$
-
-$$
-2^{k}=16
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-k=4
-$$
-
-The bench test then pins the coefficient:
-
-$$
-A\\cdot 2^{k}=48
-$$
-
-$$
-A\\cdot 2^{4}=48
-$$
-
-$$
-2^{4}=16
-$$
-
-$$
-16A=48
-$$
-
-$$
-A=\\frac{48}{16}=3
-$$
-
-The recovered law is $Q(r)=3r^{4}$. At radius $3$ mm:
+Flow is $Q(r)=3r^{4}$. At radius $3$ mm:
 
 $$
 Q(3)=3\\cdot 3^{4}
@@ -24372,92 +10788,26 @@ $$
 $$
 
 $$
-3^{4}=9^{2}=81
+3^{4}=81
 $$
 
 $$
 Q(3)=3\\cdot 81=243
 $$
 
-The claimed delivery is $243$ litres per hour. The tube delivers $243$ litres per hour, so the statement is True.`,
+The tube delivers $243$ litres per hour, so the statement is True.`,
       `**C.** → True
 
-Halving the tube radius is the multiplier $\\frac{1}{2}$. Flow follows $Q(r)=Ar^{k}$ litres per hour. Doubling any radius multiplies flow by $16$, which fixes the exponent. The coefficient cancels, so the remaining fraction does not depend on the starting radius.
-
-The general law is
-
-$$
-Q(r)=Ar^{k}
-$$
-
-The doubling ratio is
-
-$$
-\\frac{Q(2r)}{Q(r)}=2^{k}
-$$
-
-$$
-2^{k}=16
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-k=4
-$$
-
-Halving is the reciprocal scale:
-
-$$
-\\frac{Q\\!\\left(\\frac{r}{2}\\right)}{Q(r)}=\\left(\\frac{1}{2}\\right)^{k}
-$$
+Halving is the reciprocal of doubling. A fourth power sends the factor $\\frac{1}{2}$ to
 
 $$
 \\left(\\frac{1}{2}\\right)^{4}=\\frac{1}{16}
 $$
 
-One sixteenth of the flow remains, so the statement is True.`,
+Doubling multiplies flow by $16$, so the inverse move must divide by $16$. One sixteenth of the flow remains, so the statement is True.`,
       `**D.** → False
 
-The mean velocity index divides flow by the tube's cross-section $\\pi r^{2}$, so the exponents subtract rather than cancel. Flow follows $Q(r)=Ar^{k}$. Doubling any radius multiplies flow by $16$, and a $2$ mm bench test delivered $48$ litres per hour. Both constants are needed before the leftover exponent can be read.
-
-The general law is
-
-$$
-Q(r)=Ar^{k}
-$$
-
-The doubling rule gives $k$:
-
-$$
-2^{k}=16
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-k=4
-$$
-
-The bench test gives $A$:
-
-$$
-A\\cdot 2^{4}=48
-$$
-
-$$
-16A=48
-$$
-
-$$
-A=\\frac{48}{16}=3
-$$
-
-The recovered flow is $Q(r)=3r^{4}$. The index is then
+The mean velocity index divides $Q(r)=3r^{4}$ by the tube's cross-section $\\pi r^{2}$, so the exponents subtract rather than cancel:
 
 $$
 \\frac{Q(r)}{\\pi r^{2}}=\\frac{3r^{4}}{\\pi r^{2}}
@@ -24467,66 +10817,16 @@ $$
 \\frac{Q(r)}{\\pi r^{2}}=\\frac{3}{\\pi}r^{2}
 $$
 
-The leftover exponent $2$ is not zero, so the index grows with the radius. Comparing the bench tube $r=2$ with a $3$ mm tube, the index scales by
-
-$$
-\\left(\\frac{3}{2}\\right)^{2}=\\frac{9}{4}=2.25
-$$
-
-It is not the same in every tube, so the statement is False.`,
+The leftover exponent $2$ is not zero, so the index grows with the radius. From the bench tube $r=2$ to a $3$ mm tube the index scales by $\\left(\\frac{3}{2}\\right)^{2}=\\frac{9}{4}$. It is not the same in every tube, so the statement is False.`,
       `**E.** → True
 
-Radius $1$ mm is a fresh evaluation of the recovered fourth-power law. Flow follows $Q(r)=Ar^{k}$. Doubling any tube radius multiplies flow by $16$, and a bench test on a $2$ mm tube delivered $48$ litres per hour. Both constants are needed, and every power of $1$ is $1$, so the delivery equals the coefficient itself.
-
-The general law is
+At radius $1$ mm every power of $1$ is $1$, so the delivery equals the coefficient of $Q(r)=3r^{4}$:
 
 $$
-Q(r)=Ar^{k}
+Q(1)=3\\cdot 1^{4}=3
 $$
 
-The doubling rule isolates the exponent:
-
-$$
-2^{k}=16
-$$
-
-$$
-16=2^{4}
-$$
-
-$$
-k=4
-$$
-
-The bench test pins the coefficient:
-
-$$
-A\\cdot 2^{4}=48
-$$
-
-$$
-16A=48
-$$
-
-$$
-A=\\frac{48}{16}=3
-$$
-
-The recovered law is $Q(r)=3r^{4}$. At radius $1$ mm:
-
-$$
-Q(1)=3\\cdot 1^{4}
-$$
-
-$$
-1^{4}=1
-$$
-
-$$
-Q(1)=3\\cdot 1=3
-$$
-
-The claimed delivery is $3$ litres per hour. The tube delivers $3$ litres per hour, so the statement is True.`,
+The tube delivers $3$ litres per hour, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 84,
@@ -24592,36 +10892,10 @@ $$1.5^{4}=5.0625\\;(+406.25\\%), \\qquad \\left(\\frac{1}{2}\\right)^{4}=\\frac{
     tactical_explanations: [
       `**A.** → True
 
-Dose rate follows $H(d)=A d^{r}$ microsieverts per hour. Quadrupling any distance cuts the dose rate to one sixteenth. A distance doubling is a scale factor, so the coefficient cancels and only the exponent from the quadrupling rule is needed.
-
-The general law is
+The quadrupling record gives $r=-2$. Doubling the distance is then the factor $2^{-2}$:
 
 $$
-H(d)=Ad^{r}
-$$
-
-The quadrupling ratio is
-
-$$
-\\frac{H(4d)}{H(d)}=4^{r}
-$$
-
-$$
-4^{r}=\\frac{1}{16}
-$$
-
-$$
-\\frac{1}{16}=4^{-2}
-$$
-
-$$
-r=-2
-$$
-
-Doubling the distance is then the factor $2^{-2}$:
-
-$$
-\\frac{H(2d)}{H(d)}=2^{r}=2^{-2}
+\\frac{H(2d)}{H(d)}=2^{-2}
 $$
 
 $$
@@ -24631,138 +10905,22 @@ $$
 Doubling the distance leaves one quarter of the dose rate, so the statement is True.`,
       `**B.** → False
 
-Six metres is twice the survey distance of three metres, where the meter read $80$ microsieverts per hour. Dose rate follows $H(d)=Ad^{r}$ microsieverts per hour. Quadrupling any distance cuts the dose rate to one sixteenth, so the exponent is $-2$ and the six-metre reading is the survey reading multiplied by $2^{-2}$, not by $\\frac{1}{2}$.
-
-The general law is
+Six metres is one doubling of the three-metre survey, where the meter read $80$ microsieverts per hour. Doubling quarters the dose rate, so
 
 $$
-H(d)=Ad^{r}
-$$
-
-The quadrupling ratio isolates the exponent:
-
-$$
-\\frac{H(4d)}{H(d)}=4^{r}
-$$
-
-$$
-4^{r}=\\frac{1}{16}
-$$
-
-$$
-\\frac{1}{16}=4^{-2}
-$$
-
-$$
-r=-2
-$$
-
-Six metres is one doubling of the survey distance:
-
-$$
-\\frac{H(6)}{H(3)}=2^{r}=2^{-2}
-$$
-
-$$
-2^{-2}=\\frac{1}{4}
-$$
-
-$$
-H(6)=80\\cdot\\frac{1}{4}
-$$
-
-$$
-H(6)=20
-$$
-
-The same level follows after pinning $A$ from $H(3)=80$:
-
-$$
-A\\cdot 3^{-2}=80
-$$
-
-$$
-\\frac{A}{9}=80
-$$
-
-$$
-A=720
-$$
-
-$$
-H(6)=\\frac{720}{6^{2}}=\\frac{720}{36}=20
+H(6)=80\\cdot\\frac{1}{4}=20
 $$
 
 The claimed $40$ is half the survey reading, the inverse-proportional trap. The meter reads $20$ microsieverts per hour, so the statement is False.`,
       `**C.** → True
 
-A negative-power law on $d>0$ never crosses zero. Dose rate follows $H(d)=Ad^{r}$. Quadrupling any distance cuts the dose rate to one sixteenth, and a survey meter three metres from the source reads $80$ microsieverts per hour. Those two records pin both constants, after which positivity is immediate.
-
-The quadrupling rule gives the exponent:
-
-$$
-4^{r}=\\frac{1}{16}
-$$
-
-$$
-\\frac{1}{16}=4^{-2}
-$$
-
-$$
-r=-2
-$$
-
-The survey then pins the coefficient:
-
-$$
-A\\cdot 3^{-2}=80
-$$
-
-$$
-3^{2}=9
-$$
-
-$$
-\\frac{A}{9}=80
-$$
-
-$$
-A=720
-$$
-
-The recovered law is
-
-$$
-H(d)=\\frac{720}{d^{2}}
-$$
-
-The numerator is positive and the denominator is a square, hence positive for every finite $d>0$. The dose rate stays positive, so the statement is True.`,
+Dose rate is $H(d)=\\frac{720}{d^{2}}$. The numerator is positive and the denominator is a square, hence positive for every finite $d>0$. A negative-power law never crosses zero. The dose rate stays positive, so the statement is True.`,
       `**D.** → False
 
-Three metres to nine metres is a tripling. Dose rate follows $H(d)=Ad^{r}$, and quadrupling any distance cuts the dose rate to one sixteenth, which fixes the exponent at $-2$. The coefficient cancels, so the factor is $3^{-2}$, not $\\frac{1}{3}$.
-
-The general law is
+Three metres to nine metres is a tripling. With exponent $-2$ the factor is $3^{-2}$, not $\\frac{1}{3}$:
 
 $$
-H(d)=Ad^{r}
-$$
-
-$$
-4^{r}=\\frac{1}{16}
-$$
-
-$$
-\\frac{1}{16}=4^{-2}
-$$
-
-$$
-r=-2
-$$
-
-The tripling is then
-
-$$
-\\frac{H(9)}{H(3)}=3^{r}=3^{-2}
+\\frac{H(9)}{H(3)}=3^{-2}
 $$
 
 $$
@@ -24772,39 +10930,13 @@ $$
 One third would match exponent $-1$. One ninth of the dose rate remains, so the statement is False.`,
       `**E.** → True
 
-The barrier is the distance where the dose rate has fallen from the survey reading of $80$ to $5$ microsieverts per hour. Dose rate follows $H(d)=Ad^{r}$. Quadrupling any distance cuts the dose rate to one sixteenth, which fixes $r=-2$. Inverse square then converts the dose ratio into a squared distance ratio.
-
-The general law is
-
-$$
-H(d)=Ad^{r}
-$$
-
-The quadrupling rule:
-
-$$
-4^{r}=\\frac{1}{16}
-$$
-
-$$
-\\frac{1}{16}=4^{-2}
-$$
-
-$$
-r=-2
-$$
-
-The barrier ratio against the survey is
-
-$$
-\\frac{H(d)}{H(3)}=\\frac{5}{80}
-$$
+The barrier is the distance where the dose rate has fallen from $80$ to $5$ microsieverts per hour:
 
 $$
 \\frac{5}{80}=\\frac{1}{16}
 $$
 
-With exponent $-2$:
+With exponent $-2$ that dose ratio is a squared distance ratio:
 
 $$
 \\left(\\frac{d}{3}\\right)^{-2}=\\frac{1}{16}
@@ -24818,35 +10950,11 @@ $$
 \\frac{3}{d}=\\frac{1}{4}
 $$
 
-because distance is positive, so the positive root is taken.
-
 $$
 d=3\\cdot 4=12
 $$
 
-The same figure follows after pinning $A$ from the survey:
-
-$$
-A\\cdot 3^{-2}=80
-$$
-
-$$
-A=80\\cdot 9=720
-$$
-
-$$
-\\frac{720}{d^{2}}=5
-$$
-
-$$
-d^{2}=\\frac{720}{5}=144
-$$
-
-$$
-d=12
-$$
-
-The barrier belongs $12$ metres from the source, so the statement is True.`,
+The dose ratio $16$ is a square, and $\\sqrt{16}=4$, so the barrier sits at four times the survey distance. The barrier belongs $12$ metres from the source, so the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 85,
@@ -24912,29 +11020,23 @@ $$d^{2}=\\frac{720}{5}=144 \\quad \\Rightarrow \\quad d=12$$
     tactical_explanations: [
       `**A.** → True
 
-The plume radius follows $r(t)=A t^{\\frac{2}{3}}$ metres for $t>0$ hours since release. The stained area is the disc $S=\\pi r^{2}$. Proportional growth of area with elapsed time would mean composed exponent $1$. Squaring the two-thirds radius law produces exponent $\\frac{4}{3}$, and the $45$-metre rise is not needed for that comparison.
+The stained area is $S(t)=\\pi A^{2} t^{\\frac{4}{3}}$. Proportional growth with elapsed time would mean composed exponent $1$. Because $\\frac{4}{3}>1$, area outruns a proportional clock, so the statement is True.`,
+      `**B.** → True
 
-The radius law is
-
-$$
-r(t)=At^{\\frac{2}{3}}
-$$
-
-Compose with the disc formula:
+The radius law is $r(t)=15t^{\\frac{2}{3}}$. At hour $8$:
 
 $$
-S(t)=\\pi r(t)^{2}
+8^{\\frac{2}{3}}=4
 $$
 
 $$
-S(t)=\\pi\\bigl(At^{\\frac{2}{3}}\\bigr)^{2}
+r(8)=15\\cdot 4=60
 $$
 
-$$
-S(t)=\\pi A^{2} t^{\\frac{4}{3}}
-$$
+Forward check: $r(1)=15$, and $60-15=45$, which matches the survey gap. The radius is $60$ metres, so the statement is True.`,
+      `**C.** → False
 
-The composed exponent is $\\frac{4}{3}$, and $\\frac{4}{3}>1$. Doubling elapsed time therefore multiplies area by
+Doubling elapsed time reaches the stained area through the composed exponent $\\frac{4}{3}$, not through the time multiplier itself:
 
 $$
 \\frac{S(2t)}{S(t)}=2^{\\frac{4}{3}}
@@ -24949,155 +11051,21 @@ $$
 $$
 
 $$
-2^{\\frac{4}{3}}\\approx 2\\cdot 1.260=2.52
-$$
-
-which is larger than $2$. Area outruns a proportional clock, so the statement is True.`,
-      `**B.** → True
-
-The hour-$8$ radius is a level of $r(t)=At^{\\frac{2}{3}}$. The survey records that the radius grew by exactly $45$ metres between hour $1$ and hour $8$, so the coefficient $A$ must be recovered from that gap first. Hour $8$ and hour $1$ are exact cubes under exponent $\\frac{2}{3}$.
-
-The radius law is
-
-$$
-r(t)=At^{\\frac{2}{3}}
-$$
-
-$$
-8=2^{3}
-$$
-
-$$
-8^{\\frac{2}{3}}=(2^{3})^{\\frac{2}{3}}=2^{2}=4
-$$
-
-$$
-1^{\\frac{2}{3}}=1
-$$
-
-The $45$-metre rise is a difference of two levels:
-
-$$
-r(8)-r(1)=45
-$$
-
-$$
-A(4-1)=45
-$$
-
-$$
-3A=45
-$$
-
-$$
-A=\\frac{45}{3}=15
-$$
-
-The recovered law is $r(t)=15t^{\\frac{2}{3}}$. At hour $8$:
-
-$$
-r(8)=15\\cdot 8^{\\frac{2}{3}}
-$$
-
-$$
-r(8)=15\\cdot 4=60
-$$
-
-Forward check:
-
-$$
-r(1)=15\\cdot 1=15
-$$
-
-$$
-60-15=45
-$$
-
-The claimed radius is $60$ metres. The radius is $60$ metres, so the statement is True.`,
-      `**C.** → False
-
-Doubling elapsed time reaches the stained area through the composed exponent $\\frac{4}{3}$, not through the time multiplier itself. The radius follows $r(t)=At^{\\frac{2}{3}}$, and the stained area is $S=\\pi r^{2}$. The coefficient cancels in a scale factor.
-
-The radius law is
-
-$$
-r(t)=At^{\\frac{2}{3}}
-$$
-
-Compose with the disc:
-
-$$
-S(t)=\\pi\\bigl(At^{\\frac{2}{3}}\\bigr)^{2}
-$$
-
-$$
-S(t)=\\pi A^{2} t^{\\frac{4}{3}}
-$$
-
-The doubling factor on area is then
-
-$$
-\\frac{S(2t)}{S(t)}=2^{\\frac{4}{3}}
-$$
-
-$$
-2^{\\frac{4}{3}}=2\\cdot 2^{\\frac{1}{3}}\\approx 2.52
+2^{\\frac{4}{3}}\\approx 2.52
 $$
 
 A doubling of area would require composed exponent $1$, which would have returned the factor $2$. The factor is about $2.52$, not $2$, so the statement is False.`,
       `**D.** → False
 
-A target radius of $240$ metres inverts the two-thirds law $r(t)=At^{\\frac{2}{3}}$, so the coefficient must be recovered first. The survey records that the radius grew by exactly $45$ metres between hour $1$ and hour $8$. Hour $8$ and hour $1$ are exact cubes under exponent $\\frac{2}{3}$.
-
-The general radius law is
-
-$$
-r(t)=At^{\\frac{2}{3}}
-$$
-
-The shape factors are
-
-$$
-8=2^{3}
-$$
-
-$$
-8^{\\frac{2}{3}}=(2^{3})^{\\frac{2}{3}}=2^{2}=4
-$$
-
-$$
-1^{\\frac{2}{3}}=1
-$$
-
-The $45$-metre rise is a difference of two levels:
-
-$$
-r(8)-r(1)=45
-$$
-
-$$
-A(4-1)=45
-$$
-
-$$
-3A=45
-$$
-
-$$
-A=\\frac{45}{3}=15
-$$
-
-The recovered law is $r(t)=15t^{\\frac{2}{3}}$. At radius $240$ metres:
+At radius $240$ metres the law $r(t)=15t^{\\frac{2}{3}}$ inverts as
 
 $$
 15t^{\\frac{2}{3}}=240
 $$
 
 $$
-t^{\\frac{2}{3}}=\\frac{240}{15}=16
+t^{\\frac{2}{3}}=16
 $$
-
-Raise both sides to the power $\\frac{3}{2}$:
 
 $$
 t=16^{\\frac{3}{2}}
@@ -25114,55 +11082,19 @@ $$
 At the claimed hour $32$:
 
 $$
-32=2^{5}
-$$
-
-$$
-32^{\\frac{2}{3}}=(2^{5})^{\\frac{2}{3}}=2^{\\frac{10}{3}}
-$$
-
-$$
-2^{\\frac{10}{3}}=2^{3+\\frac{1}{3}}=8\\cdot 2^{\\frac{1}{3}}\\approx 8\\cdot 1.260=10.08
-$$
-
-$$
-r(32)=15\\cdot 32^{\\frac{2}{3}}\\approx 15\\cdot 10.08=151
+r(32)=15\\cdot 32^{\\frac{2}{3}}\\approx 151
 $$
 
 The claimed hour $32$ gives about $151$ metres, not $240$. The radius reaches $240$ metres at hour $64$, so the statement is False.`,
       `**E.** → True
 
-Squaring a power multiplies its exponent by $2$ and squares the coefficient. The radius law is $r(t)=At^{\\frac{2}{3}}$, and the stained area is the disc $S=\\pi r^{2}$. The survey coefficient is not needed for the exponent identity.
-
-The radius law is
+Squaring a power multiplies its exponent by $2$. The radius exponent is $\\frac{2}{3}$, so the area exponent is
 
 $$
-r(t)=At^{\\frac{2}{3}}
+2\\cdot\\frac{2}{3}=\\frac{4}{3}
 $$
 
-Compose with the disc:
-
-$$
-S(t)=\\pi r(t)^{2}
-$$
-
-$$
-S(t)=\\pi\\bigl(At^{\\frac{2}{3}}\\bigr)^{2}
-$$
-
-$$
-S(t)=\\pi A^{2} t^{2\\cdot\\frac{2}{3}}
-$$
-
-$$
-S(t)=\\pi A^{2} t^{\\frac{4}{3}}
-$$
-
-$$
-\\frac{4}{3}=2\\cdot\\frac{2}{3}
-$$
-
-The area exponent is exactly twice the radius exponent, so the statement is True.`,
+The area law carries twice the exponent of the radius law, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 86,
@@ -25224,21 +11156,13 @@ $$t^{\\frac{2}{3}}=16 \\quad \\Rightarrow \\quad t=16^{\\frac{3}{2}}=64$$
     tactical_explanations: [
       `**A.** → True
 
-Discharge follows $Q(h)=A h^{\\frac{3}{2}}$ cubic metres per second with head $h$ in metres. Switching the head from metres to centimetres replaces $h$ by a constant multiple of itself. A power function pushes that constant through the existing exponent and does not alter the exponent.
-
-The weir law is
-
-$$
-Q(h)=Ah^{\\frac{3}{2}}
-$$
-
-One metre is $100$ centimetres, so
+Switching the head from metres to centimetres replaces $h$ by a constant multiple of itself. One metre is $100$ centimetres, so
 
 $$
 h=\\frac{h_{\\mathrm{cm}}}{100}
 $$
 
-Substitute into the weir law:
+A power function pushes that constant through the existing exponent:
 
 $$
 Q=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}
@@ -25248,201 +11172,53 @@ $$
 Q=\\frac{A}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}
 $$
 
-The conversion power $100^{\\frac{3}{2}}=1000$ rescales only the coefficient. The new exponent on $h_{\\mathrm{cm}}$ is still $\\frac{3}{2}$. Only the coefficient moves, so the statement is True.`,
+The conversion rescales only the coefficient. The new exponent on $h_{\\mathrm{cm}}$ is still $\\frac{3}{2}$. Only the coefficient moves, so the statement is True.`,
       `**B.** → True
 
-With the head in centimetres and discharge still in cubic metres per second, the new coefficient is the original $A$ divided by $100^{\\frac{3}{2}}$. Discharge follows $Q(h)=A h^{\\frac{3}{2}}$ cubic metres per second. A gauging at a head of $0.25$ metres recorded a discharge of $2$ cubic metres per second, so $A$ must be recovered first.
-
-The weir law is
-
-$$
-Q(h)=Ah^{\\frac{3}{2}}
-$$
-
-The shape factor at the gauged head:
-
-$$
-0.25=\\frac{1}{4}
-$$
-
-$$
-0.25^{\\frac{1}{2}}=\\frac{1}{2}=0.5
-$$
-
-$$
-0.25^{\\frac{3}{2}}=\\bigl(0.25^{\\frac{1}{2}}\\bigr)^{3}=0.5^{3}
-$$
-
-$$
-0.5^{3}=0.125
-$$
-
-$$
-A\\cdot 0.125=2
-$$
-
-$$
-A=\\frac{2}{0.125}=16
-$$
-
-The centimetre conversion is $h=\\frac{h_{\\mathrm{cm}}}{100}$, so the new coefficient is $\\frac{A}{100^{\\frac{3}{2}}}$. That power is
+The metre-form coefficient is $A=16$. With the head in centimetres that coefficient is divided by $100^{\\frac{3}{2}}$:
 
 $$
 100^{\\frac{1}{2}}=10
 $$
 
 $$
-100^{\\frac{3}{2}}=\\bigl(100^{\\frac{1}{2}}\\bigr)^{3}=10^{3}=1000
+100^{\\frac{3}{2}}=10^{3}=1000
 $$
 
 $$
-\\frac{A}{1000}=\\frac{16}{1000}=0.016
+\\frac{16}{1000}=0.016
 $$
 
-At the gauged point in centimetres the head is $25$ cm:
-
-$$
-25^{\\frac{1}{2}}=5
-$$
-
-$$
-25^{\\frac{3}{2}}=5^{3}=125
-$$
-
-$$
-0.016\\cdot 125=2
-$$
-
-which matches the original discharge. The coefficient is $0.016$, so the statement is True.`,
+At the gauged point the head is $25$ cm, and $0.016\\cdot 25^{\\frac{3}{2}}=0.016\\cdot 125=2$, which matches the original discharge. The coefficient is $0.016$, so the statement is True.`,
       `**C.** → False
 
-The head conversion is $h=\\frac{h_{\\mathrm{cm}}}{100}$, and $100$ travels through exponent $\\frac{3}{2}$, not through exponent $1$. Discharge follows $Q(h)=Ah^{\\frac{3}{2}}$. A gauging at $0.25$ metres recorded $2$ cubic metres per second, which recovers $A$ and then the centimetre-form coefficient.
-
-The weir law is
-
-$$
-Q(h)=Ah^{\\frac{3}{2}}
-$$
-
-The gauged shape factor is $0.25^{\\frac{3}{2}}=0.125$, so
-
-$$
-A\\cdot 0.125=2
-$$
-
-$$
-A=\\frac{2}{0.125}=16
-$$
-
-Substitute $h=\\frac{h_{\\mathrm{cm}}}{100}$:
-
-$$
-Q=16\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}
-$$
-
-$$
-Q=\\frac{16}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}
-$$
-
-The conversion power is
-
-$$
-100^{\\frac{3}{2}}=1000
-$$
-
-The centimetre-form coefficient is therefore
-
-$$
-A_{\\mathrm{cm}}=\\frac{16}{1000}=0.016
-$$
-
-The original coefficient is divided by $1000$, not multiplied by $100$. A smaller length unit makes every numerical head larger, and the coefficient must shrink. The factor is $\\frac{1}{1000}$, so the statement is False.`,
+The centimetre-form coefficient is $0.016$, which is $\\frac{16}{1000}$, not $16\\times 100$. A smaller length unit makes every numerical head larger, so the coefficient must shrink. The factor is $\\frac{1}{1000}$, not $100$, so the statement is False.`,
       `**D.** → False
 
-Proportionality would require exponent $1$. The weir law is given with exponent $\\frac{3}{2}$, and a change of units cannot move that exponent. Doubling the head therefore multiplies discharge by $2^{\\frac{3}{2}}$, not by $2$.
-
-The weir law is
+Proportionality would require exponent $1$. The weir exponent is $\\frac{3}{2}$, and a change of units cannot move it. Doubling the head therefore multiplies discharge by $2^{\\frac{3}{2}}$, not by $2$:
 
 $$
-Q(h)=Ah^{\\frac{3}{2}}
-$$
-
-The scale factor is
-
-$$
-\\frac{Q(2h)}{Q(h)}=2^{\\frac{3}{2}}
+2^{\\frac{3}{2}}=2\\cdot 2^{\\frac{1}{2}}
 $$
 
 $$
-2^{\\frac{3}{2}}=2\\cdot 2^{\\frac{1}{2}}=2\\sqrt{2}
+2^{\\frac{1}{2}}\\approx 1.414
 $$
 
 $$
-\\sqrt{2}\\approx 1.414
-$$
-
-$$
-2\\sqrt{2}\\approx 2.828
+2\\cdot 1.414\\approx 2.828
 $$
 
 Doubling the head multiplies discharge by about $2.83$, not by $2$. Discharge is not proportional to head, so the statement is False.`,
       `**E.** → False
 
-At a head of one metre every power of $1$ is $1$, so the discharge equals the recovered coefficient. Discharge follows $Q(h)=Ah^{\\frac{3}{2}}$, and a gauging at $0.25$ metres recorded $2$ cubic metres per second.
-
-The weir law is
+At a head of one metre every power of $1$ is $1$, so the discharge equals the coefficient $A=16$:
 
 $$
-Q(h)=Ah^{\\frac{3}{2}}
+Q(1)=16\\cdot 1^{\\frac{3}{2}}=16
 $$
 
-The gauged shape factor:
-
-$$
-0.25^{\\frac{1}{2}}=0.5
-$$
-
-$$
-0.25^{\\frac{3}{2}}=0.5^{3}=0.125
-$$
-
-$$
-A\\cdot 0.125=2
-$$
-
-$$
-A=\\frac{2}{0.125}=16
-$$
-
-At a head of one metre:
-
-$$
-Q(1)=16\\cdot 1^{\\frac{3}{2}}
-$$
-
-$$
-1^{\\frac{3}{2}}=1
-$$
-
-$$
-Q(1)=16
-$$
-
-The scale-factor route from the gauged head agrees, because $\\frac{1}{0.25}=4$ and
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}=8
-$$
-
-$$
-Q(1)=8\\cdot Q(0.25)=8\\cdot 2=16
-$$
-
-The claimed $32$ is what a squared law would give, since $4^{2}=16$ and $16\\cdot 2=32$. The discharge is $16$ cubic metres per second, so the statement is False.`,
+The claimed $32$ is what a squared law would give from the gauged head, since $4^{2}=16$ and $16\\cdot 2=32$. The discharge is $16$ cubic metres per second, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 87,
@@ -25506,98 +11282,16 @@ $$16(0.25)^{\\frac{3}{2}}=2, \\qquad 0.016(25)^{\\frac{3}{2}}=2, \\qquad 16(25)^
     tactical_explanations: [
       `**A.** → False
 
-Fuel use follows $F(x)=A x^{r}$ litres per batch. Doubling the batch mass raises fuel use by $300\\%$. A $300\\%$ rise is a multiplier of $4$, not of $3$, and that ratio isolates the exponent because $A$ cancels.
-
-The general law is
-
-$$
-F(x)=Ax^{r}
-$$
-
-The doubling ratio is
-
-$$
-\\frac{F(2x)}{F(x)}=2^{r}
-$$
-
 A $300\\%$ rise means the new value is the old value plus three times the old value:
 
 $$
 1+\\frac{300}{100}=4
 $$
 
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-Doubling therefore multiplies fuel by $4$. Reading $300\\%$ as a factor of $3$ drops the baseline $100\\%$. Fuel use is quadrupled, not tripled, so the statement is False.`,
+Doubling therefore multiplies fuel by $4$, not by $3$. Reading $300\\%$ as a factor of $3$ drops the baseline $100\\%$. Fuel use is quadrupled, not tripled, so the statement is False.`,
       `**B.** → True
 
-A $10$-tonne batch is a fresh level of $F(x)=Ax^{r}$. Doubling the batch mass raises fuel use by $300\\%$, and moving from a $2$-tonne batch to a $6$-tonne batch adds exactly $96$ litres. Both constants are needed: the doubling record fixes the exponent, then the $96$-litre gap fixes the coefficient.
-
-The general law is
-
-$$
-F(x)=Ax^{r}
-$$
-
-A $300\\%$ rise is the multiplier $4$:
-
-$$
-\\frac{F(2x)}{F(x)}=2^{r}
-$$
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-The logged gap is a difference of two levels:
-
-$$
-F(6)-F(2)=96
-$$
-
-$$
-A(6^{2}-2^{2})=96
-$$
-
-$$
-6^{2}=36
-$$
-
-$$
-2^{2}=4
-$$
-
-$$
-36-4=32
-$$
-
-$$
-32A=96
-$$
-
-$$
-A=\\frac{96}{32}=3
-$$
-
-The recovered law is $F(x)=3x^{2}$. At $10$ tonnes:
+Fuel use is $F(x)=3x^{2}$. At $10$ tonnes:
 
 $$
 F(10)=3\\cdot 10^{2}
@@ -25611,160 +11305,28 @@ $$
 F(10)=3\\cdot 100=300
 $$
 
-The claimed use is $300$ litres. The batch uses $300$ litres, so the statement is True.`,
+The batch uses $300$ litres, so the statement is True.`,
       `**C.** → True
 
-A mass triple contributes only $3^{r}$. Fuel use follows $F(x)=Ax^{r}$ litres per batch, and doubling the batch mass raises fuel use by $300\\%$, which is a multiplier of $4$. The coefficient cancels.
-
-The general law is
+Fuel use is a square of batch mass, so a mass triple contributes $3^{2}$:
 
 $$
-F(x)=Ax^{r}
-$$
-
-A $300\\%$ rise means the new value is four times the old value:
-
-$$
-1+\\frac{300}{100}=4
-$$
-
-$$
-\\frac{F(2x)}{F(x)}=2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-The triple is then
-
-$$
-\\frac{F(3x)}{F(x)}=3^{r}=3^{2}
-$$
-
-$$
-3^{2}=9
+\\frac{F(3x)}{F(x)}=3^{2}=9
 $$
 
 A law of exponent $1$ would have returned $3$. Fuel use is multiplied by $9$, so the statement is True.`,
       `**D.** → False
 
-Fuel per tonne divides the law by the mass, which lowers the exponent by $1$. Fuel use follows $F(x)=Ax^{r}$. Doubling the batch mass raises fuel by $300\\%$, and the gap from $2$ tonnes to $6$ tonnes is $96$ litres. Both constants are needed before the leftover exponent can be read.
-
-The general law is
+Fuel per tonne divides $F(x)=3x^{2}$ by the mass, which lowers the exponent by $1$:
 
 $$
-F(x)=Ax^{r}
+\\frac{F(x)}{x}=3x
 $$
 
-A $300\\%$ rise is multiplier $4$:
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-The gap then pins $A$:
-
-$$
-F(6)-F(2)=96
-$$
-
-$$
-A(6^{2}-2^{2})=96
-$$
-
-$$
-6^{2}=36
-$$
-
-$$
-2^{2}=4
-$$
-
-$$
-36-4=32
-$$
-
-$$
-32A=96
-$$
-
-$$
-A=\\frac{96}{32}=3
-$$
-
-The recovered law is $F(x)=3x^{2}$. Fuel per tonne is
-
-$$
-\\frac{F(x)}{x}=\\frac{3x^{2}}{x}=3x
-$$
-
-The leftover exponent $1$ is not zero: litres per tonne climb in proportion to batch mass. At the logged batches,
-
-$$
-\\frac{F(2)}{2}=\\frac{3\\cdot 4}{2}=6
-$$
-
-$$
-\\frac{F(6)}{6}=\\frac{3\\cdot 36}{6}=18
-$$
-
-The per-tonne figure is not constant, so the statement is False.`,
+The leftover exponent $1$ is not zero: litres per tonne climb in proportion to batch mass. At the logged batches the figures are $6$ and $18$. The per-tonne figure is not constant, so the statement is False.`,
       `**E.** → False
 
-The $96$ litres is a gap between two batches, not the level at $6$ tonnes. Fuel use follows $F(x)=Ax^{r}$. Doubling the batch mass raises fuel by $300\\%$, and moving from $2$ tonnes to $6$ tonnes adds $96$ litres. Both constants must be recovered, then $F(6)$ evaluated.
-
-The general law is
-
-$$
-F(x)=Ax^{r}
-$$
-
-A $300\\%$ rise means multiplier $4$:
-
-$$
-2^{r}=4
-$$
-
-$$
-4=2^{2}
-$$
-
-$$
-r=2
-$$
-
-The gap pins the coefficient:
-
-$$
-A(6^{2}-2^{2})=96
-$$
-
-$$
-A(36-4)=96
-$$
-
-$$
-32A=96
-$$
-
-$$
-A=3
-$$
-
-The recovered law is $F(x)=3x^{2}$. At $6$ tonnes:
+The $96$ litres is a gap between two batches, not the level at $6$ tonnes.
 
 $$
 F(6)=3\\cdot 6^{2}
@@ -25778,13 +11340,7 @@ $$
 F(6)=3\\cdot 36=108
 $$
 
-The companion level is
-
-$$
-F(2)=3\\cdot 2^{2}=3\\cdot 4=12
-$$
-
-and $108-12=96$ recovers the log entry. The claimed $96$ litres is that gap, not the $6$-tonne level. The $6$-tonne batch uses $108$ litres, so the statement is False.`,
+The companion level is $F(2)=12$, and $108-12=96$ recovers the log entry. The $6$-tonne batch uses $108$ litres, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 88,
@@ -25850,36 +11406,14 @@ $$\\frac{F(3x)}{F(x)}=9, \\qquad \\frac{F(x)}{x}=3x$$
     tactical_explanations: [
       `**A.** → True
 
-The composed map feeds the calibrated inner law into $P(m)=\\frac{m^{4}}{16}$. Flue-gas mass flow follows $m(t)=A t^{\\frac{1}{2}}$ tonnes per hour, and a calibration at $t=9$ recorded $m=6$. Raising a power to a power multiplies the exponents, so both the inner coefficient and the outer fourth power are needed.
-
-The inner law is
-
-$$
-m(t)=At^{\\frac{1}{2}}
-$$
-
-The calibration uses $9^{\\frac{1}{2}}=3$:
-
-$$
-A\\cdot 9^{\\frac{1}{2}}=6
-$$
-
-$$
-3A=6
-$$
-
-$$
-A=\\frac{6}{3}=2
-$$
-
-The inner law is then $m(t)=2t^{\\frac{1}{2}}$. Substitute into the particulate index:
+The inner law is $m(t)=2t^{\\frac{1}{2}}$. Feed it into $P(m)=\\frac{m^{4}}{16}$:
 
 $$
 P\\bigl(m(t)\\bigr)=\\frac{\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}}{16}
 $$
 
 $$
-\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}=2^{4}\\bigl(t^{\\frac{1}{2}}\\bigr)^{4}
+\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}=2^{4}t^{2}
 $$
 
 $$
@@ -25887,43 +11421,13 @@ $$
 $$
 
 $$
-\\bigl(t^{\\frac{1}{2}}\\bigr)^{4}=t^{\\frac{4}{2}}=t^{2}
+P\\bigl(m(t)\\bigr)=\\frac{16t^{2}}{16}=t^{2}
 $$
 
-$$
-P\\bigl(m(t)\\bigr)=\\frac{16t^{2}}{16}
-$$
-
-$$
-P\\bigl(m(t)\\bigr)=t^{2}
-$$
-
-The composed exponent is $2$, so the statement is True.`,
+Raising a power to a power multiplies the exponents: $\\frac{1}{2}\\cdot 4=2$. The composed exponent is $2$, so the statement is True.`,
       `**B.** → True
 
-The intermediate reading at throttle $25$ uses the calibrated square-root law, not a proportional scale of the recorded pair. Mass flow follows $m(t)=At^{\\frac{1}{2}}$, and the calibration is $m(9)=6$.
-
-The inner law is
-
-$$
-m(t)=At^{\\frac{1}{2}}
-$$
-
-The calibration uses $9^{\\frac{1}{2}}=3$:
-
-$$
-A\\cdot 9^{\\frac{1}{2}}=6
-$$
-
-$$
-3A=6
-$$
-
-$$
-A=2
-$$
-
-The recovered law is $m(t)=2t^{\\frac{1}{2}}$. At throttle $25$:
+The inner law is $m(t)=2t^{\\frac{1}{2}}$. At throttle $25$:
 
 $$
 m(25)=2\\cdot 25^{\\frac{1}{2}}
@@ -25937,60 +11441,10 @@ $$
 m(25)=2\\cdot 5=10
 $$
 
-The scaling rule agrees, because the throttle ratio is $\\frac{25}{9}$ and
-
-$$
-\\left(\\frac{25}{9}\\right)^{\\frac{1}{2}}=\\frac{5}{3}
-$$
-
-$$
-6\\cdot\\frac{5}{3}=10
-$$
-
-The claimed mass flow is $10$ tonnes per hour. The mass flow is $10$ tonnes per hour, so the statement is True.`,
+The mass flow is $10$ tonnes per hour, so the statement is True.`,
       `**C.** → False
 
-Proportional growth would mean composed exponent $1$. Mass flow follows $m(t)=At^{\\frac{1}{2}}$, the calibration is $m(9)=6$, and the particulate index is $P=\\frac{m^{4}}{16}$. Feeding the inner law into the outer one multiplies the exponents.
-
-The inner law is
-
-$$
-m(t)=At^{\\frac{1}{2}}
-$$
-
-The calibration pins $A$:
-
-$$
-A\\cdot 9^{\\frac{1}{2}}=6
-$$
-
-$$
-3A=6
-$$
-
-$$
-A=2
-$$
-
-Then
-
-$$
-P\\bigl(m(t)\\bigr)=\\frac{\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}}{16}
-$$
-
-$$
-\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}=16t^{2}
-$$
-
-$$
-P\\bigl(m(t)\\bigr)=\\frac{16t^{2}}{16}=t^{2}
-$$
-
-Doubling the throttle therefore multiplies the index by
-
-$$
-\\frac{P\\bigl(m(2t)\\bigr)}{P\\bigl(m(t)\\bigr)}=2^{2}
-$$
+The composed index is $t^{2}$. Proportional growth would mean exponent $1$. Doubling the throttle therefore multiplies the index by
 
 $$
 2^{2}=4
@@ -25999,27 +11453,7 @@ $$
 A proportional law would have returned the factor $2$. The composed exponent is $2$, so the statement is False.`,
       `**D.** → True
 
-Mass flow per unit of throttle is the quotient $\\frac{m(t)}{t}$. Mass flow follows $m(t)=At^{\\frac{1}{2}}$, and the calibration $m(9)=6$ pins $A$. The leftover exponent then decides whether the quotient falls.
-
-The inner law is
-
-$$
-m(t)=At^{\\frac{1}{2}}
-$$
-
-$$
-A\\cdot 9^{\\frac{1}{2}}=6
-$$
-
-$$
-3A=6
-$$
-
-$$
-A=2
-$$
-
-The inner law is $m(t)=2t^{\\frac{1}{2}}$, so
+Mass flow per unit of throttle is the quotient of $m(t)=2t^{\\frac{1}{2}}$ by $t$:
 
 $$
 \\frac{m(t)}{t}=2t^{\\frac{1}{2}-1}
@@ -26029,48 +11463,10 @@ $$
 \\frac{m(t)}{t}=2t^{-\\frac{1}{2}}
 $$
 
-The leftover exponent is negative, so the quotient falls as $t$ rises. At the calibration,
-
-$$
-\\frac{m(9)}{9}=\\frac{6}{9}=\\frac{2}{3}
-$$
-
-and at $t=25$,
-
-$$
-\\frac{m(25)}{25}=\\frac{10}{25}=\\frac{2}{5}
-$$
-
-with $\\frac{2}{5}<\\frac{2}{3}$. Mass flow per unit of throttle falls, so the statement is True.`,
+The leftover exponent is negative, so the quotient falls as $t$ rises. At the calibration it is $\\frac{6}{9}=\\frac{2}{3}$, and at throttle $25$ it is $\\frac{10}{25}=\\frac{2}{5}$. Mass flow per unit of throttle falls, so the statement is True.`,
       `**E.** → False
 
-An index of $81$ is inverted by undoing the two stages in reverse. Mass flow follows $m(t)=At^{\\frac{1}{2}}$ with calibration $m(9)=6$, and $P(m)=\\frac{m^{4}}{16}$. After $A$ is recovered, the composed law is a pure square, which inverts by a square root.
-
-The inner law is
-
-$$
-m(t)=At^{\\frac{1}{2}}
-$$
-
-$$
-A\\cdot 9^{\\frac{1}{2}}=6
-$$
-
-$$
-3A=6
-$$
-
-$$
-A=2
-$$
-
-Compose:
-
-$$
-P\\bigl(m(t)\\bigr)=\\frac{\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}}{16}=t^{2}
-$$
-
-At index $81$:
+The composed index is $t^{2}$. At index $81$:
 
 $$
 t^{2}=81
@@ -26080,25 +11476,7 @@ $$
 t=9
 $$
 
-because throttle is positive. The quoted $27$ treats $81$ as if an exponent were a number to divide by. Running the chain forward from $t=9$ returns $m=6$ and
-
-$$
-P=\\frac{6^{4}}{16}
-$$
-
-$$
-6^{2}=36
-$$
-
-$$
-6^{4}=36^{2}=1296
-$$
-
-$$
-\\frac{1296}{16}=81
-$$
-
-The required throttle setting is $9$, not $27$, so the statement is False.`,
+because throttle is positive. The quoted $27$ treats $81$ as if an exponent were a number to divide by. Running the chain forward from $t=9$ returns $m=6$ and $P=\\frac{6^{4}}{16}=81$. The required throttle setting is $9$, not $27$, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 89,
@@ -26162,49 +11540,11 @@ The chain compresses a half and a fourth power into a clean square, so the index
     tactical_explanations: [
       `**A.** → False
 
-Equal waits are the positive roots of $L(d)=Q(d)$. App L follows $L(d)=a d^{\\frac{1}{2}}$ minutes and App Q follows $Q(d)=kd$ minutes. A logged $25$ km trip on App L quoted $20$ minutes, and a logged $100$ km trip on App Q quoted $20$ minutes. Both coefficients must be recovered before the crossing can be solved.
-
-App L's law is
-
-$$
-L(d)=a d^{\\frac{1}{2}}
-$$
-
-The log uses $25^{\\frac{1}{2}}=5$:
-
-$$
-a\\cdot 25^{\\frac{1}{2}}=20
-$$
-
-$$
-5a=20
-$$
-
-$$
-a=\\frac{20}{5}=4
-$$
-
-App Q's law is
-
-$$
-Q(d)=kd
-$$
-
-$$
-k\\cdot 100=20
-$$
-
-$$
-k=\\frac{20}{100}=\\frac{1}{5}
-$$
-
-Set the recovered laws equal:
+The quotes are $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$. Set them equal for $d>0$:
 
 $$
 4d^{\\frac{1}{2}}=\\frac{1}{5}d
 $$
-
-For $d>0$ divide both sides by $d^{\\frac{1}{2}}$:
 
 $$
 4=\\frac{1}{5}d^{\\frac{1}{2}}
@@ -26218,37 +11558,13 @@ $$
 d=20^{2}=400
 $$
 
-On $d>0$ there is a single root. Two distinct positive meetings would need a second crossing, which a square-root versus a line cannot produce. They meet only at $d=400$, so the statement is False.`,
+On $d>0$ there is a single root. A square-root versus a line cannot meet twice. They meet only at $d=400$, so the statement is False.`,
       `**B.** → True
 
-App L's quote increases with distance, so a $20$-minute cap becomes a cap on $d$. App L follows $L(d)=a d^{\\frac{1}{2}}$, and a logged $25$ km trip quoted $20$ minutes. That single record recovers $a$ and inverts the cap.
-
-App L's law is
-
-$$
-L(d)=a d^{\\frac{1}{2}}
-$$
-
-$$
-25^{\\frac{1}{2}}=5
-$$
-
-$$
-a\\cdot 5=20
-$$
-
-$$
-a=\\frac{20}{5}=4
-$$
-
-The recovered quote is $L(d)=4d^{\\frac{1}{2}}$. The service-level agreement requires $L(d)\\le 20$:
+App L's quote $L(d)=4d^{\\frac{1}{2}}$ increases with distance, so a $20$-minute cap becomes a cap on $d$:
 
 $$
 4d^{\\frac{1}{2}}\\le 20
-$$
-
-$$
-d^{\\frac{1}{2}}\\le\\frac{20}{4}
 $$
 
 $$
@@ -26256,165 +11572,41 @@ d^{\\frac{1}{2}}\\le 5
 $$
 
 $$
-d\\le 5^{2}
-$$
-
-$$
 d\\le 25
 $$
 
-The endpoint is attained:
-
-$$
-L(25)=4\\cdot 5=20
-$$
-
-Every longer trip on App L breaches the agreement. App L can serve at most $25$ kilometres under the cap, so the statement is True.`,
+The endpoint is attained: $L(25)=20$. Every longer trip on App L breaches the agreement. App L can serve at most $25$ kilometres under the cap, so the statement is True.`,
       `**C.** → True
 
-Which app leads on a whole interval is the sign of $Q-L$ after both laws are recovered. App L follows $L(d)=a d^{\\frac{1}{2}}$ with $L(25)=20$, and App Q follows $Q(d)=kd$ with $Q(100)=20$. Once App L is strictly faster, the claim is that App Q never catches up, so the ratio $Q/L$ must be shown to stay above $1$.
-
-App L's log:
-
-$$
-a\\cdot 25^{\\frac{1}{2}}=20
-$$
-
-$$
-5a=20
-$$
-
-$$
-a=4
-$$
-
-App Q's log:
-
-$$
-k\\cdot 100=20
-$$
-
-$$
-k=\\frac{1}{5}
-$$
-
-The recovered quotes are $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$. Their ratio is
-
-$$
-\\frac{Q(d)}{L(d)}=\\frac{\\frac{1}{5}d}{4d^{\\frac{1}{2}}}
-$$
+The ratio of the two quotes is
 
 $$
 \\frac{Q(d)}{L(d)}=\\frac{1}{20}d^{\\frac{1}{2}}
 $$
 
-App L is strictly faster when that ratio exceeds $1$:
-
-$$
-\\frac{1}{20}d^{\\frac{1}{2}}>1
-$$
-
-$$
-d^{\\frac{1}{2}}>20
-$$
-
-$$
-d>400
-$$
-
-The map $d\\mapsto d^{\\frac{1}{2}}$ is strictly increasing on $d>0$, so the ratio itself is strictly increasing. Once it crosses $1$ it stays above $1$. App Q never catches up, so the statement is True.`,
+App L is strictly faster when that ratio exceeds $1$, which is $d>400$. The map $d\\mapsto d^{\\frac{1}{2}}$ is strictly increasing on $d>0$, so the ratio itself is strictly increasing. Once it crosses $1$ it stays above $1$. App Q never catches up, so the statement is True.`,
       `**D.** → False
 
-Wait per kilometre is the quotient $\\frac{L(d)}{d}$. App L follows $L(d)=a d^{\\frac{1}{2}}$, and a logged $25$ km trip quoted $20$ minutes. That record pins $a$, after which the leftover exponent decides whether the quotient is constant.
-
-App L's law is
-
-$$
-L(d)=a d^{\\frac{1}{2}}
-$$
-
-$$
-a\\cdot 25^{\\frac{1}{2}}=20
-$$
-
-$$
-5a=20
-$$
-
-$$
-a=4
-$$
-
-Then
-
-$$
-\\frac{L(d)}{d}=4d^{\\frac{1}{2}-1}
-$$
+Wait per kilometre is the quotient of $L(d)=4d^{\\frac{1}{2}}$ by $d$:
 
 $$
 \\frac{L(d)}{d}=4d^{-\\frac{1}{2}}
 $$
 
-The leftover exponent is negative, so the quotient falls as $d$ grows. At the logged trip it is $\\frac{20}{25}=0.8$, and at $d=100$ it is
-
-$$
-\\frac{L(100)}{100}=\\frac{4\\cdot 10}{100}=0.4
-$$
-
-The per-kilometre wait is not constant, so the statement is False.`,
+The leftover exponent is negative, so the quotient falls as $d$ grows. At the logged trip it is $\\frac{20}{25}=0.8$, and at $d=100$ it is $0.4$. The per-kilometre wait is not constant, so the statement is False.`,
       `**E.** → True
 
-The common wait at $400$ km is a level of both recovered laws. App L follows $L(d)=a d^{\\frac{1}{2}}$ with $L(25)=20$, and App Q follows $Q(d)=kd$ with $Q(100)=20$. Both coefficients are needed before the $400$ km quotes can be read.
-
-App L's law is
-
-$$
-L(d)=a d^{\\frac{1}{2}}
-$$
-
-$$
-a\\cdot 25^{\\frac{1}{2}}=20
-$$
-
-$$
-5a=20
-$$
-
-$$
-a=4
-$$
-
-$$
-L(400)=4\\cdot 400^{\\frac{1}{2}}
-$$
-
-$$
-400^{\\frac{1}{2}}=20
-$$
+At the meeting distance $d=400$:
 
 $$
 L(400)=4\\cdot 20=80
-$$
-
-App Q's law is
-
-$$
-Q(d)=kd
-$$
-
-$$
-k\\cdot 100=20
-$$
-
-$$
-k=\\frac{1}{5}
 $$
 
 $$
 Q(400)=\\frac{1}{5}\\cdot 400=80
 $$
 
-Both recovered quotes equal $80$. Both apps quote $80$ minutes at $400$ kilometres, so the statement is True.`,
+Both apps quote $80$ minutes at $400$ kilometres, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 90,
@@ -26478,175 +11670,29 @@ $$4d^{\\frac{1}{2}}\\le 20 \\quad \\Rightarrow \\quad d\\le 25$$
     tactical_explanations: [
       `**A.** → True
 
-Evaporation follows $E(h)=A h^{r}$ after $h>0$, with both constants unknown. The recorded pairs are $E(1)=20$ and $E(4)=40$. The claim is that $r<1$, so the ratio of those two readings is enough.
-
-The ratio of the two evaporations cancels $A$:
+The two readings give $r=\\frac{1}{2}$. An exponent smaller than one means evaporation grows more slowly than the humidity deficit: each extra unit of deficit adds less than the unit before it.
 
 $$
-\\frac{E(4)}{E(1)}=\\frac{A\\cdot 4^{r}}{A\\cdot 1^{r}}
+\\frac{1}{2}<1
 $$
 
-$$
-\\frac{E(4)}{E(1)}=4^{r}
-$$
-
-$$
-\\frac{40}{20}=4^{r}
-$$
-
-$$
-2=4^{r}
-$$
-
-Because $4=2^{2}$,
-
-$$
-2=(2^{2})^{r}
-$$
-
-$$
-(2^{2})^{r}=2^{2r}
-$$
-
-The bases match, so the exponents match:
-
-$$
-2r=1
-$$
-
-$$
-r=\\frac{1}{2}
-$$
-
-One half is smaller than one, so evaporation grows more slowly than the humidity deficit, so the statement is True.`,
+One half is below one, so the statement is True.`,
       `**B.** → False
 
-Evaporation follows $E(h)=A h^{r}$. Doubling the humidity deficit multiplies evaporation by $2^{r}$, so the exponent must be recovered from $E(1)=20$ and $E(4)=40$.
-
-Under a power law the doubling factor is
+Doubling the deficit would double evaporation only if $r=1$. With $r=\\frac{1}{2}$ the scale factor is
 
 $$
-\\frac{E(2h)}{E(h)}=\\frac{A(2h)^{r}}{A h^{r}}=2^{r}
-$$
-
-The recorded ratio cancels $A$ and isolates $r$:
-
-$$
-\\frac{E(4)}{E(1)}=\\frac{A\\cdot 4^{r}}{A\\cdot 1^{r}}
+\\frac{E(2h)}{E(h)}=2^{\\frac{1}{2}}
 $$
 
 $$
-\\frac{E(4)}{E(1)}=4^{r}
+2^{\\frac{1}{2}}\\approx 1.41
 $$
 
-$$
-\\frac{40}{20}=4^{r}
-$$
-
-$$
-2=4^{r}
-$$
-
-Because $4=2^{2}$,
-
-$$
-2=(2^{2})^{r}
-$$
-
-$$
-(2^{2})^{r}=2^{2r}
-$$
-
-$$
-2r=1
-$$
-
-$$
-r=\\frac{1}{2}
-$$
-
-The doubling multiplier is therefore
-
-$$
-2^{\\frac{1}{2}}
-$$
-
-$$
-2^{\\frac{1}{2}}\\approx 1.414
-$$
-
-From the unit-deficit reading $E(1)=20$, a doubled deficit would give
-
-$$
-E(2)=20\\cdot 2^{\\frac{1}{2}}\\approx 28.28
-$$
-
-Doubling evaporation would have produced $40$. The square root of two is not two, so the statement is False.`,
+which is not $2$. Evaporation rises, but not in lockstep with humidity, so the statement is False.`,
       `**C.** → True
 
-The claim is a third level, $E(16)=80$, so both constants of $E(h)=A h^{r}$ must be recovered from $E(1)=20$ and $E(4)=40$.
-
-Evaporation follows
-
-$$
-E(h)=A h^{r}
-$$
-
-The ratio of the two recorded evaporations cancels $A$:
-
-$$
-\\frac{E(4)}{E(1)}=\\frac{A\\cdot 4^{r}}{A\\cdot 1^{r}}
-$$
-
-$$
-\\frac{E(4)}{E(1)}=4^{r}
-$$
-
-$$
-\\frac{40}{20}=4^{r}
-$$
-
-$$
-2=4^{r}
-$$
-
-Because $4=2^{2}$,
-
-$$
-2=(2^{2})^{r}
-$$
-
-$$
-(2^{2})^{r}=2^{2r}
-$$
-
-$$
-2r=1
-$$
-
-$$
-r=\\frac{1}{2}
-$$
-
-The unit deficit then pins $A$, because $1^{r}=1$:
-
-$$
-A\\cdot 1^{\\frac{1}{2}}=20
-$$
-
-$$
-1^{\\frac{1}{2}}=1
-$$
-
-$$
-A\\cdot 1=20
-$$
-
-$$
-A=20
-$$
-
-The recovered law is $E(h)=20h^{\\frac{1}{2}}$. At deficit $16$:
+The law is $E(h)=20h^{\\frac{1}{2}}$. At deficit $16$:
 
 $$
 E(16)=20\\cdot 16^{\\frac{1}{2}}
@@ -26664,12 +11710,10 @@ $$
 20\\cdot 4=80
 $$
 
-The claimed evaporation is $80$ millimetres per day, so the statement is True.`,
+Sixteen is four squared, so a square-root law multiplies the unit-deficit reading by four. The claimed evaporation is $80$ millimetres per day, so the statement is True.`,
       `**D.** → False
 
-A straight line through the first two readings uses the recorded pairs $(1,20)$ and $(4,40)$, then is tested at the third deficit $h=9$, where evaporation was $60$.
-
-The two-point slope is the rise over the run:
+A straight line through $(1,20)$ and $(4,40)$ has slope
 
 $$
 \\frac{40-20}{4-1}
@@ -26679,17 +11723,13 @@ $$
 \\frac{20}{3}
 $$
 
-The line through $(1,20)$ with that slope is
+The line through $(1,20)$ is
 
 $$
 L(h)=20+\\frac{20}{3}(h-1)
 $$
 
-At the third deficit $h=9$:
-
-$$
-h-1=8
-$$
+At deficit $9$:
 
 $$
 L(9)=20+\\frac{20}{3}\\cdot 8
@@ -26719,40 +11759,10 @@ $$
 \\frac{220}{3}\\approx 73.33
 $$
 
-The recorded third reading is $60$. The gap is
-
-$$
-\\frac{220}{3}-60
-$$
-
-$$
-60=\\frac{180}{3}
-$$
-
-$$
-\\frac{220}{3}-\\frac{180}{3}=\\frac{40}{3}
-$$
-
-$$
-\\frac{40}{3}\\approx 13.33
-$$
-
-The line sits about $13.33$ millimetres per day above the third reading, so the statement is False.`,
+The recorded third reading is $60$, not $\\frac{220}{3}$. A line cannot carry a square-root curve through that third point, so the statement is False.`,
       `**E.** → False
 
-Forcing the exponent to $1$ makes evaporation linear. The claim recovers the coefficient from the third reading alone, $E(9)=60$, and says that coefficient is $20$.
-
-The forced model is
-
-$$
-E(h)=A h^{1}
-$$
-
-$$
-E(h)=Ah
-$$
-
-Substitute the third pair:
+Forcing the exponent to $1$ makes $E(h)=Ah$. The third reading alone then gives
 
 $$
 A\\cdot 9=60
@@ -26766,27 +11776,7 @@ $$
 \\frac{60}{9}=\\frac{20}{3}
 $$
 
-The claimed coefficient $20$ would require
-
-$$
-E(9)=20\\cdot 9
-$$
-
-$$
-20\\cdot 9=180
-$$
-
-The recorded third reading is $60$, not $180$. The figure $20$ is the unit-deficit reading $E(1)=20$, which equals $A$ for every exponent because $1^{r}=1$:
-
-$$
-A\\cdot 1^{r}=20
-$$
-
-$$
-A=20
-$$
-
-That $A=20$ belongs to the recorded unit deficit, not to a linear fit of the third reading. The recovered linear coefficient is $\\frac{20}{3}$, so the statement is False.`,
+The claimed $20$ is the unit-deficit evaporation, not this linear coefficient. The recovered value is $\\frac{20}{3}$, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 91,
@@ -26836,71 +11826,11 @@ $$\\frac{E(kh)}{E(h)}=k^{\\frac{1}{2}} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Net benefit is cooling benefit minus upkeep. Cooling follows $B(n)=A n^{\\frac{1}{2}}$ and upkeep follows $C(n)=kn$. Raising the planting from four thousand trees to nine thousand increased cooling by twelve thousand euros, and at nine thousand trees upkeep was eighteen thousand euros. The claim is the net at $n=9$.
-
-Cooling is the square-root schedule
+Cooling is $B(n)=12n^{\\frac{1}{2}}$ and upkeep is $C(n)=2n$. At nine thousand trees:
 
 $$
-B(n)=A n^{\\frac{1}{2}}
+B(9)=12\\cdot 3
 $$
-
-The square roots at the two logged plantings are whole numbers:
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-The recorded benefit gap is therefore
-
-$$
-B(9)-B(4)=A\\cdot 9^{\\frac{1}{2}}-A\\cdot 4^{\\frac{1}{2}}
-$$
-
-$$
-A(3-2)=12
-$$
-
-$$
-A\\cdot 1=12
-$$
-
-$$
-A=12
-$$
-
-Forward check of that coefficient:
-
-$$
-B(4)=12\\cdot 2=24
-$$
-
-$$
-B(9)=12\\cdot 3=36
-$$
-
-$$
-36-24=12
-$$
-
-which matches the recorded gap. Upkeep is the linear schedule $C(n)=kn$. At nine thousand trees:
-
-$$
-C(9)=9k
-$$
-
-$$
-9k=18
-$$
-
-$$
-k=2
-$$
-
-Net benefit is $N(n)=B(n)-C(n)$. At $n=9$:
 
 $$
 B(9)=36
@@ -26911,7 +11841,7 @@ C(9)=2\\cdot 9
 $$
 
 $$
-2\\cdot 9=18
+C(9)=18
 $$
 
 $$
@@ -26925,76 +11855,16 @@ $$
 Net benefit is $18$ thousand euros, so the statement is True.`,
       `**B.** → True
 
-A power function of the planting would carry a single exponent. Net benefit subtracts linear upkeep from square-root cooling, so both coefficients must be recovered first.
-
-The benefit gap between $n=4$ and $n=9$ is $12$:
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-A(3-2)=12
-$$
-
-$$
-A=12
-$$
-
-Upkeep at nine thousand trees is $18$:
-
-$$
-9k=18
-$$
-
-$$
-k=2
-$$
-
-Netting the two schedules gives
+Net benefit is
 
 $$
 N(n)=12n^{\\frac{1}{2}}-2n
 $$
 
-This expression is a sum of two distinct powers of $n$. It is not itself a power of the planting, so the statement is True.`,
+That is a sum of two distinct powers of $n$, not a single power. Linear upkeep is a different exponent from square-root cooling, so the net is not a power function of the planting, so the statement is True.`,
       `**C.** → False
 
-The claim is that after upkeep overtakes cooling benefit, planting still more trees restores a positive net. Both schedules must be recovered, then their crossing and the sign of $N$ past that crossing checked.
-
-The benefit gap between four and nine thousand trees recovers $A$:
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-A(3-2)=12
-$$
-
-$$
-A=12
-$$
-
-Upkeep at $n=9$ recovers $k$:
-
-$$
-9k=18
-$$
-
-$$
-k=2
-$$
-
-The schedules meet when $B(n)=C(n)$:
+The schedules meet when
 
 $$
 12n^{\\frac{1}{2}}=2n
@@ -27010,66 +11880,16 @@ $$
 n=36
 $$
 
-At that planting the net is zero:
-
-$$
-B(36)=12\\cdot 6=72
-$$
-
-$$
-C(36)=2\\cdot 36=72
-$$
-
-$$
-N(36)=72-72=0
-$$
-
-The derivative of the net is
+At that planting the net is already zero. The derivative
 
 $$
 N'(n)=6n^{-\\frac{1}{2}}-2
 $$
 
-This is negative when $6n^{-\\frac{1}{2}}<2$, which is $n>9$. Past the crossing at $n=36$ the net is therefore already falling and stays negative. Planting more trees does not restore a positive net, so the statement is False.`,
+is negative for every $n>9$, so past the crossing the net stays negative. Planting more trees after upkeep overtakes cooling only deepens the loss, so the statement is False.`,
       `**D.** → True
 
-An extra thousand trees is a finite step of $N(n+1)-N(n)$, which the derivative $N'(n)$ approximates. Cooling is $B(n)=A n^{\\frac{1}{2}}$ and upkeep is $C(n)=kn$, so both coefficients are needed before the two plantings can be compared.
-
-The benefit gap between $n=4$ and $n=9$ is $12$:
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-A(3-2)=12
-$$
-
-$$
-A=12
-$$
-
-Upkeep at nine thousand trees is $18$:
-
-$$
-9k=18
-$$
-
-$$
-k=2
-$$
-
-Net benefit is then $N(n)=12n^{\\frac{1}{2}}-2n$, with derivative
-
-$$
-N'(n)=6n^{-\\frac{1}{2}}-2
-$$
-
-At four thousand trees:
+The marginal net is $N'(n)=6n^{-\\frac{1}{2}}-2$. At four thousand trees:
 
 $$
 N'(4)=6\\cdot 4^{-\\frac{1}{2}}-2
@@ -27105,84 +11925,20 @@ $$
 2-2=0
 $$
 
-The finite steps agree in order. From $n=4$ to $n=5$:
-
-$$
-N(4)=12\\cdot 2-2\\cdot 4=16
-$$
-
-$$
-N(5)=12\\sqrt{5}-10\\approx 16.83
-$$
-
-$$
-N(5)-N(4)\\approx 0.83
-$$
-
-From $n=9$ to $n=10$:
-
-$$
-N(9)=12\\cdot 3-2\\cdot 9=18
-$$
-
-$$
-N(10)=12\\sqrt{10}-20\\approx 17.94
-$$
-
-$$
-N(10)-N(9)\\approx -0.06
-$$
-
-Because $0.83>-0.06$, an extra thousand trees adds more to the net at four thousand trees than at nine thousand, so the statement is True.`,
+An extra thousand trees still adds at four thousand and adds nothing at nine thousand, so the statement is True.`,
       `**E.** → False
 
-The claim is a net-benefit level at four thousand trees. Cooling follows $B(n)=A n^{\\frac{1}{2}}$ and upkeep follows $C(n)=kn$, so both coefficients must be recovered from the recorded gap and the recorded upkeep.
-
-The square roots at the two logged plantings are
+At four thousand trees, cooling is $24$ and upkeep is $8$:
 
 $$
-4^{\\frac{1}{2}}=2
+N(4)=24-8
 $$
 
 $$
-9^{\\frac{1}{2}}=3
+N(4)=16
 $$
 
-The benefit rose by $12$ between those plantings:
-
-$$
-A(3-2)=12
-$$
-
-$$
-A=12
-$$
-
-Upkeep at nine thousand trees was $18$:
-
-$$
-9k=18
-$$
-
-$$
-k=2
-$$
-
-At four thousand trees the two schedules are
-
-$$
-B(4)=12\\cdot 2=24
-$$
-
-$$
-C(4)=2\\cdot 4=8
-$$
-
-$$
-N(4)=24-8=16
-$$
-
-The claimed $24$ is the cooling benefit, not the net. Net benefit is $16$ thousand euros, so the statement is False.`,
+The claimed $24$ is the cooling benefit, before upkeep is subtracted. Net benefit is $16$ thousand euros, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 92,
@@ -27232,60 +11988,10 @@ $$N'(n)=6n^{-\\frac{1}{2}}-2 \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Weekly demand follows $q(p)=A p^{-2}$. The exponent is given, so the recorded pair $q(5)=80$ pins the coefficient, after which the inverse $p$ in terms of $q$ can be read off.
-
-The demand law is
+Demand is $q=\\frac{2000}{p^{2}}$. Solving for price:
 
 $$
-q(p)=A p^{-2}
-$$
-
-Substitute the recorded price:
-
-$$
-A\\cdot 5^{-2}=80
-$$
-
-$$
-5^{2}=25
-$$
-
-$$
-5^{-2}=\\frac{1}{25}
-$$
-
-$$
-A\\cdot\\frac{1}{25}=80
-$$
-
-$$
-A=80\\cdot 25
-$$
-
-$$
-80\\cdot 25=2000
-$$
-
-The calibrated law is
-
-$$
-q(p)=2000p^{-2}
-$$
-
-$$
-q=\\frac{2000}{p^{2}}
-$$
-
-A power $q=A p^{r}$ with $r\\neq 0$ inverts by raising to $1/r$:
-
-$$
-p=\\left(\\frac{q}{A}\\right)^{\\frac{1}{r}}
-$$
-
-Here $r=-2$ and $A=2000$, so
-
-$$
-p=\\left(\\frac{q}{2000}\\right)^{\\frac{1}{-2}}
+p^{2}=\\frac{2000}{q}
 $$
 
 $$
@@ -27296,180 +12002,44 @@ $$
 p=2000^{\\frac{1}{2}}q^{-\\frac{1}{2}}
 $$
 
-Inverting a nonzero power yields another power. Price is a power function of demand with exponent $-\\frac{1}{2}$, so the statement is True.`,
+A nonzero power inverts to another power. Price is a power of demand with exponent $-\\frac{1}{2}$, so the statement is True.`,
       `**B.** → True
 
-Ten euros is a new price on $q(p)=A p^{-2}$. The exponent is given, so the recorded pair $q(5)=80$ recovers the coefficient before the new level can be read.
-
-The demand law is
+Ten euros is twice five, so demand scales by $2^{-2}$:
 
 $$
-q(p)=A p^{-2}
-$$
-
-Substitute the recorded price:
-
-$$
-A\\cdot 5^{-2}=80
+\\frac{q(10)}{q(5)}=2^{-2}
 $$
 
 $$
-5^{2}=25
+2^{-2}=\\frac{1}{4}
 $$
 
 $$
-5^{-2}=\\frac{1}{25}
+q(10)=80\\cdot\\frac{1}{4}
 $$
 
 $$
-A\\cdot\\frac{1}{25}=80
+80\\cdot\\frac{1}{4}=20
 $$
 
-$$
-A=80\\cdot 25
-$$
-
-$$
-80\\cdot 25=2000
-$$
-
-The calibrated law is $q(p)=2000p^{-2}$. At ten euros:
-
-$$
-q(10)=2000\\cdot 10^{-2}
-$$
-
-$$
-10^{2}=100
-$$
-
-$$
-10^{-2}=\\frac{1}{100}
-$$
-
-$$
-q(10)=\\frac{2000}{100}
-$$
-
-$$
-\\frac{2000}{100}=20
-$$
-
-Demand is $20$ packs a week, so the statement is True.`,
+The kiosk sells $20$ packs a week, so the statement is True.`,
       `**C.** → False
 
-Weekly revenue multiplies price by quantity. Demand follows $q(p)=A p^{-2}$, so the coefficient must be recovered from $q(5)=80$ before the revenue schedule can be written.
-
-The demand law is
-
-$$
-q(p)=A p^{-2}
-$$
-
-Substitute the recorded pair:
-
-$$
-A\\cdot 5^{-2}=80
-$$
-
-$$
-5^{2}=25
-$$
-
-$$
-5^{-2}=\\frac{1}{25}
-$$
-
-$$
-A\\cdot\\frac{1}{25}=80
-$$
-
-$$
-A=80\\cdot 25
-$$
-
-$$
-80\\cdot 25=2000
-$$
-
-Revenue is $R(p)=p\\cdot q(p)$:
+Weekly revenue is price times demand:
 
 $$
 R(p)=p\\cdot 2000p^{-2}
 $$
 
 $$
-R(p)=2000p^{-1}
-$$
-
-$$
 R(p)=\\frac{2000}{p}
 $$
 
-A schedule that is the same at every price would need exponent $0$. For a price factor $k$ the revenue ratio is
-
-$$
-\\frac{R(kp)}{R(p)}=k^{-1}
-$$
-
-At the recorded price and at twice that price:
-
-$$
-R(5)=\\frac{2000}{5}=400
-$$
-
-$$
-R(10)=\\frac{2000}{10}=200
-$$
-
-$$
-\\frac{R(10)}{R(5)}=\\frac{1}{2}
-$$
-
-Revenue falls as the price rises, so the statement is False.`,
+A flat schedule would need exponent $0$. Here revenue falls as the price rises: $R(5)=400$ and $R(10)=200$. The till is not the same at every price, so the statement is False.`,
       `**D.** → True
 
-A quantity target inverts the demand law $q(p)=A p^{-2}$. The exponent is given, so the recorded pair $q(5)=80$ pins $A$ before the target $q=125$ can be solved for $p$.
-
-The demand law is
-
-$$
-q(p)=A p^{-2}
-$$
-
-Substitute the recorded price:
-
-$$
-A\\cdot 5^{-2}=80
-$$
-
-$$
-5^{2}=25
-$$
-
-$$
-5^{-2}=\\frac{1}{25}
-$$
-
-$$
-A\\cdot\\frac{1}{25}=80
-$$
-
-$$
-A=80\\cdot 25
-$$
-
-$$
-80\\cdot 25=2000
-$$
-
-The inverse of $q=2000p^{-2}$ is
-
-$$
-p=\\left(\\frac{2000}{q}\\right)^{\\frac{1}{2}}
-$$
-
-The target $q=125$ then reads
+A target of $125$ packs inverts $q=2000p^{-2}$:
 
 $$
 \\frac{2000}{p^{2}}=125
@@ -27491,67 +12061,27 @@ $$
 p=4
 $$
 
-Only the positive root is a price. Forward substitution returns the target:
-
-$$
-q(4)=\\frac{2000}{4^{2}}
-$$
-
-$$
-4^{2}=16
-$$
-
-$$
-q(4)=\\frac{2000}{16}
-$$
-
-$$
-\\frac{2000}{16}=125
-$$
-
-The required price is $4$ euros, so the statement is True.`,
+Only the positive root is a price. Four euros is the unique price that moves $125$ packs, so the statement is True.`,
       `**E.** → False
 
-Demand follows $q(p)=A p^{-2}$. Quadrupling the price is an input factor of $4$, and the unknown coefficient cancels in the ratio.
-
-The general scale factor for a price multiplier $k$ is
-
-$$
-\\frac{q(kp)}{q(p)}=k^{-2}
-$$
-
-For $k=4$:
-
-$$
-\\frac{q(4p)}{q(p)}=\\frac{A(4p)^{-2}}{A p^{-2}}
-$$
+Demand carries exponent $-2$, so quadrupling the price multiplies packs by $4^{-2}$:
 
 $$
 \\frac{q(4p)}{q(p)}=4^{-2}
 $$
 
 $$
-4^{2}=16
-$$
-
-$$
 4^{-2}=\\frac{1}{16}
 $$
 
-A cut to one quarter would be the factor
+A cut to one quarter would be $4^{-1}$. From the recorded pair, quadrupling five euros to twenty euros would leave
 
 $$
-\\frac{1}{4}=4^{-1}
-$$
-
-which would need exponent $-1$. From the recorded pair, quadrupling five euros to twenty euros would leave
-
-$$
-\\frac{q(20)}{q(5)}=4^{-2}=\\frac{1}{16}
+q(20)=80\\cdot\\frac{1}{16}
 $$
 
 $$
-q(20)=80\\cdot\\frac{1}{16}=5
+80\\cdot\\frac{1}{16}=5
 $$
 
 not $80\\cdot\\frac{1}{4}=20$. Demand falls to one sixteenth, not to one quarter, so the statement is False.`,
@@ -27600,150 +12130,16 @@ $$R(p)=2000p^{-1} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Composed demand substitutes the policy price $p(s)=B s^{\\frac{2}{3}}$ into $q(p)=A p^{\\frac{-3}{2}}$. Both coefficients must be recovered from the pilot $q(16)=50$ and the indexed price $p(8)=16$ before the product of exponents can be read.
-
-Demand follows
-
-$$
-q(p)=A p^{\\frac{-3}{2}}
-$$
-
-The demand coefficient uses $16^{\\frac{3}{2}}$:
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-16^{\\frac{3}{2}}=4^{3}
-$$
-
-$$
-4^{3}=64
-$$
-
-$$
-A\\cdot 16^{\\frac{-3}{2}}=50
-$$
-
-$$
-16^{\\frac{-3}{2}}=\\frac{1}{64}
-$$
-
-$$
-A\\cdot\\frac{1}{64}=50
-$$
-
-$$
-A=50\\cdot 64
-$$
-
-$$
-50\\cdot 64=3200
-$$
-
-The policy map is
-
-$$
-p(s)=B s^{\\frac{2}{3}}
-$$
-
-At subsidy index $8$:
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-2^{2}=4
-$$
-
-$$
-B\\cdot 4=16
-$$
-
-$$
-B=4
-$$
-
-So $p(s)=4s^{\\frac{2}{3}}$. Composing the two powers:
-
-$$
-q(p(s))=3200\\bigl(4s^{\\frac{2}{3}}\\bigr)^{\\frac{-3}{2}}
-$$
-
-A power of a product splits:
-
-$$
-q(p(s))=3200\\cdot 4^{\\frac{-3}{2}}\\cdot s^{\\left(\\frac{2}{3}\\right)\\left(-\\frac{3}{2}\\right)}
-$$
-
-The numerical power is
-
-$$
-4^{\\frac{-3}{2}}=\\bigl(2^{2}\\bigr)^{\\frac{-3}{2}}
-$$
-
-$$
-\\bigl(2^{2}\\bigr)^{\\frac{-3}{2}}=2^{-3}
-$$
-
-$$
-2^{-3}=\\frac{1}{8}
-$$
-
-The subsidy exponent is
+Composed demand is $\\frac{400}{s}$. The product of the given exponents is
 
 $$
 \\left(\\frac{2}{3}\\right)\\left(-\\frac{3}{2}\\right)=-1
-$$
-
-Therefore
-
-$$
-q(p(s))=3200\\cdot\\frac{1}{8}\\cdot s^{-1}
-$$
-
-$$
-3200\\cdot\\frac{1}{8}=400
-$$
-
-$$
-q(p(s))=\\frac{400}{s}
-$$
-
-The product of composed demand and the subsidy index is the constant $400$:
-
-$$
-s\\cdot q(p(s))=400
 $$
 
 Inverse proportionality means exponent $-1$ in $s$. Composed demand is inversely proportional to the subsidy index, so the statement is True.`,
       `**B.** → False
 
-Weekly demand follows $q(p)=A p^{\\frac{-3}{2}}$ and the posted price follows $p(s)=B s^{\\frac{2}{3}}$. Composed demand is $q(p(s))$, so the subsidy exponent is the product of those two given exponents.
-
-The general composition is
-
-$$
-q(p(s))=A\\bigl(B s^{\\frac{2}{3}}\\bigr)^{\\frac{-3}{2}}
-$$
-
-$$
-q(p(s))=A B^{\\frac{-3}{2}} s^{\\left(\\frac{2}{3}\\right)\\left(-\\frac{3}{2}\\right)}
-$$
-
-The subsidy power simplifies:
-
-$$
-\\left(\\frac{2}{3}\\right)\\left(-\\frac{3}{2}\\right)=-1
-$$
-
-An input factor of $3$ therefore multiplies composed demand by $3^{-1}$:
+The subsidy exponent is $-1$, so tripling the index multiplies demand by $3^{-1}$:
 
 $$
 \\frac{q(p(3s))}{q(p(s))}=3^{-1}
@@ -27753,22 +12149,10 @@ $$
 3^{-1}=\\frac{1}{3}
 $$
 
-Demand falls to a third rather than tripling. Tripling would need a composed exponent of $+1$, so the statement is False.`,
+At $s=8$ sales are $50$. Tripling to $24$ would leave $\\frac{50}{3}$ packs, not $150$. Demand falls to a third rather than tripling, so the statement is False.`,
       `**C.** → True
 
-The policy map was calibrated at subsidy index $8$ to the pilot price of $16$ euros, and the pilot sold fifty passes at that price. Composed demand at that same index is therefore the pilot sale.
-
-The stem records
-
-$$
-p(8)=16
-$$
-
-$$
-q(16)=50
-$$
-
-Substituting the policy price into demand:
+At subsidy index $8$ the policy posts the pilot price of $16$ euros, and the pilot sold fifty passes at that price.
 
 $$
 q(p(8))=q(16)
@@ -27778,127 +12162,47 @@ $$
 q(p(8))=50
 $$
 
-Composed demand is $50$ passes, so the statement is True.`,
+Composed demand is the pilot sale of $50$ passes, so the statement is True.`,
       `**D.** → False
 
-Whether composed demand rises or falls with the subsidy index is the sign of the composed exponent. Demand has exponent $\\frac{-3}{2}$ and the policy map has exponent $\\frac{2}{3}$.
+The subsidy exponent is already $-1$, so a larger index cuts weekly pass sales rather than lifting them.
 
 $$
-q(p(s))=A\\bigl(B s^{\\frac{2}{3}}\\bigr)^{\\frac{-3}{2}}
+\\frac{q(p(ks))}{q(p(s))}=k^{-1}
 $$
 
-$$
-q(p(s))=A B^{\\frac{-3}{2}} s^{\\left(\\frac{2}{3}\\right)\\left(-\\frac{3}{2}\\right)}
-$$
-
-The subsidy power is
-
-$$
-\\left(\\frac{2}{3}\\right)\\left(-\\frac{3}{2}\\right)=-1
-$$
-
-So $q(p(s))$ is a negative power of $s$. Raising the subsidy index lowers composed demand, so the statement is False.`,
+For every $k>1$ that factor is smaller than $1$. Raising the subsidy index lowers composed demand, so the statement is False.`,
       `**E.** → False
-
-The claim is a composed-demand level at subsidy index $27$. Demand follows $q(p)=A p^{\\frac{-3}{2}}$ with $q(16)=50$, and the policy map follows $p(s)=B s^{\\frac{2}{3}}$ with $p(8)=16$, so both coefficients must be recovered first.
-
-The demand coefficient uses $16^{\\frac{3}{2}}$:
-
-$$
-16^{\\frac{1}{2}}=4
-$$
-
-$$
-16^{\\frac{3}{2}}=4^{3}
-$$
-
-$$
-4^{3}=64
-$$
-
-$$
-A\\cdot\\frac{1}{64}=50
-$$
-
-$$
-A=50\\cdot 64=3200
-$$
-
-The policy map at $s=8$:
-
-$$
-8^{\\frac{1}{3}}=2
-$$
-
-$$
-8^{\\frac{2}{3}}=2^{2}
-$$
-
-$$
-2^{2}=4
-$$
-
-$$
-B\\cdot 4=16
-$$
-
-$$
-B=4
-$$
 
 At subsidy index $27$:
 
 $$
-27^{\\frac{1}{3}}=3
-$$
-
-$$
-27^{\\frac{2}{3}}=3^{2}
-$$
-
-$$
-3^{2}=9
-$$
-
-$$
-p(27)=4\\cdot 9
-$$
-
-$$
-p(27)=36
-$$
-
-Demand at that price:
-
-$$
-36^{\\frac{1}{2}}=6
-$$
-
-$$
-36^{\\frac{3}{2}}=6^{3}
-$$
-
-$$
-6^{3}=216
-$$
-
-$$
-q(36)=3200\\cdot 36^{\\frac{-3}{2}}
-$$
-
-$$
-q(36)=\\frac{3200}{216}
-$$
-
-$$
-\\frac{3200}{216}=\\frac{400}{27}
+q(p(27))=\\frac{400}{27}
 $$
 
 $$
 \\frac{400}{27}\\approx 14.81
 $$
 
-That is not $15$ passes, so the statement is False.`,
+Fifteen passes would require
+
+$$
+\\frac{400}{s}=15
+$$
+
+$$
+s=\\frac{400}{15}
+$$
+
+$$
+\\frac{400}{15}=\\frac{80}{3}
+$$
+
+$$
+\\frac{80}{3}\\approx 26.67
+$$
+
+and $\\frac{80}{3}$ is not $27$. Composed demand is $\\frac{400}{27}$ passes, not $15$, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 94,
@@ -27946,53 +12250,7 @@ $$q(p(s))=\\frac{400}{s} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-Sending the whole overnight order to line 2 is a level of $C_{2}(q)=b q^{2}$. The bakery must bake thirty thousand loaves, and the logged run $C_{2}(8)=16$ recovers $b$ before that corner can be scored.
-
-Line 2's cost index is
-
-$$
-C_{2}(q)=b q^{2}
-$$
-
-Substitute the logged pair, an eight-thousand-loaf run scoring sixteen:
-
-$$
-b\\cdot 8^{2}=16
-$$
-
-$$
-8^{2}=64
-$$
-
-$$
-64b=16
-$$
-
-$$
-b=\\frac{16}{64}
-$$
-
-$$
-\\frac{16}{64}=\\frac{1}{4}
-$$
-
-Forward check at the logged run:
-
-$$
-C_{2}(8)=\\frac{1}{4}\\cdot 64
-$$
-
-$$
-\\frac{64}{4}=16
-$$
-
-which matches the stem. The recovered law is
-
-$$
-C_{2}(q)=\\frac{1}{4}q^{2}
-$$
-
-The whole order is $q=30$ thousand loaves on line 2:
+Line 2 is $C_{2}(q)=\\frac{1}{4}q^{2}$. Sending the whole overnight order there is
 
 $$
 C_{2}(30)=\\frac{1}{4}\\cdot 30^{2}
@@ -28010,70 +12268,10 @@ $$
 \\frac{900}{4}=225
 $$
 
-The corner scores $225$, so the statement is True.`,
+A square law turns thirty thousand loaves into a $900$ that the coefficient $\\frac{1}{4}$ then cuts to $225$. The corner scores $225$, so the statement is True.`,
       `**B.** → False
 
-The overnight total is fixed at $30$ thousand loaves. Line 2 is cheaper at every common output, but the cheapest plan is the split that equalizes the marginal indices, not necessarily the cheaper-line corner. Both coefficients must be recovered first.
-
-Line 1 follows $C_{1}(q)=a q^{2}$. The logged run $C_{1}(10)=100$ gives
-
-$$
-a\\cdot 10^{2}=100
-$$
-
-$$
-10^{2}=100
-$$
-
-$$
-100a=100
-$$
-
-$$
-a=1
-$$
-
-Line 2 follows $C_{2}(q)=b q^{2}$. The logged run $C_{2}(8)=16$ gives
-
-$$
-b\\cdot 8^{2}=16
-$$
-
-$$
-8^{2}=64
-$$
-
-$$
-64b=16
-$$
-
-$$
-b=\\frac{16}{64}
-$$
-
-$$
-b=\\frac{1}{4}
-$$
-
-The marginal indices are the derivatives $2aq_{1}$ and $2bq_{2}$. Setting them equal:
-
-$$
-2a q_{1}=2b q_{2}
-$$
-
-$$
-2\\cdot 1\\cdot q_{1}=2\\cdot\\frac{1}{4}\\cdot q_{2}
-$$
-
-$$
-2q_{1}=\\frac{1}{2}q_{2}
-$$
-
-$$
-q_{2}=4q_{1}
-$$
-
-The overnight constraint is $q_{1}+q_{2}=30$:
+The cheapest plan equalizes the marginal indices $2q_{1}$ and $\\frac{1}{2}q_{2}$, which forces $q_{2}=4q_{1}$. With $q_{1}+q_{2}=30$:
 
 $$
 q_{1}+4q_{1}=30
@@ -28091,88 +12289,10 @@ $$
 q_{2}=24
 $$
 
-The interior split costs
-
-$$
-C_{1}(6)=6^{2}
-$$
-
-$$
-6^{2}=36
-$$
-
-$$
-C_{2}(24)=\\frac{1}{4}\\cdot 24^{2}
-$$
-
-$$
-24^{2}=576
-$$
-
-$$
-C_{2}(24)=\\frac{576}{4}
-$$
-
-$$
-\\frac{576}{4}=144
-$$
-
-$$
-36+144=180
-$$
-
-The cheaper-line corner, all $30$ on line 2, is
-
-$$
-C_{2}(30)=\\frac{1}{4}\\cdot 30^{2}
-$$
-
-$$
-30^{2}=900
-$$
-
-$$
-C_{2}(30)=\\frac{900}{4}
-$$
-
-$$
-\\frac{900}{4}=225
-$$
-
-Because $180<225$, concentrating on line 2 is not the cheapest plan, so the statement is False.`,
+That split costs $180$. The cheaper-line corner costs $225$. Quadratic costs rise so fast that spreading the load still beats concentrating, so the statement is False.`,
       `**C.** → True
 
-An even split puts $15$ thousand loaves on each line. That total is compared with six thousand on line 1 and twenty-four thousand on line 2. Both coefficients must be recovered from the logged runs.
-
-Line 1 scored $100$ at $q=10$:
-
-$$
-a\\cdot 10^{2}=100
-$$
-
-$$
-100a=100
-$$
-
-$$
-a=1
-$$
-
-Line 2 scored $16$ at $q=8$:
-
-$$
-b\\cdot 8^{2}=16
-$$
-
-$$
-64b=16
-$$
-
-$$
-b=\\frac{1}{4}
-$$
-
-The even split costs
+An even split of $15$ thousand on each line costs
 
 $$
 C_{1}(15)=15^{2}
@@ -28183,7 +12303,7 @@ $$
 $$
 
 $$
-C_{2}(15)=\\frac{1}{4}\\cdot 15^{2}
+C_{2}(15)=\\frac{1}{4}\\cdot 225
 $$
 
 $$
@@ -28191,93 +12311,17 @@ C_{2}(15)=\\frac{225}{4}
 $$
 
 $$
-225+\\frac{225}{4}=\\frac{900}{4}+\\frac{225}{4}
-$$
-
-$$
-\\frac{900}{4}+\\frac{225}{4}=\\frac{1125}{4}
+225+\\frac{225}{4}=\\frac{1125}{4}
 $$
 
 $$
 \\frac{1125}{4}=281.25
 $$
 
-The six-and-twenty-four split costs
-
-$$
-C_{1}(6)=6^{2}
-$$
-
-$$
-6^{2}=36
-$$
-
-$$
-C_{2}(24)=\\frac{1}{4}\\cdot 24^{2}
-$$
-
-$$
-24^{2}=576
-$$
-
-$$
-C_{2}(24)=\\frac{576}{4}
-$$
-
-$$
-\\frac{576}{4}=144
-$$
-
-$$
-36+144=180
-$$
-
-Because $281.25>180$, the even split costs more, so the statement is True.`,
+The six-and-twenty-four split costs $180$. Because $281.25>180$, the even split is dearer, so the statement is True.`,
       `**D.** → True
 
-The six-and-twenty-four split is a pair of levels, one on each recovered quadratic. Line 1 scored $100$ at ten thousand loaves, and line 2 scored $16$ at eight thousand loaves.
-
-Line 1 follows $C_{1}(q)=a q^{2}$:
-
-$$
-a\\cdot 10^{2}=100
-$$
-
-$$
-10^{2}=100
-$$
-
-$$
-100a=100
-$$
-
-$$
-a=1
-$$
-
-Line 2 follows $C_{2}(q)=b q^{2}$:
-
-$$
-b\\cdot 8^{2}=16
-$$
-
-$$
-8^{2}=64
-$$
-
-$$
-64b=16
-$$
-
-$$
-b=\\frac{16}{64}
-$$
-
-$$
-b=\\frac{1}{4}
-$$
-
-Six thousand loaves on line 1 and twenty-four thousand on line 2 then cost
+Six thousand on line 1 and twenty-four thousand on line 2 cost
 
 $$
 C_{1}(6)=6^{2}
@@ -28301,10 +12345,6 @@ $$
 
 $$
 \\frac{576}{4}=144
-$$
-
-$$
-C_{1}(6)+C_{2}(24)=36+144
 $$
 
 $$
@@ -28314,41 +12354,17 @@ $$
 The split scores $180$, so the statement is True.`,
       `**E.** → False
 
-Average cost on line 1 is the quadratic index divided by own output. The logged run $C_{1}(10)=100$ recovers the coefficient first.
-
-Line 1 follows $C_{1}(q)=a q^{2}$:
+Line 1 is $C_{1}(q)=q^{2}$. Average cost divides by own output:
 
 $$
-a\\cdot 10^{2}=100
-$$
-
-$$
-10^{2}=100
-$$
-
-$$
-100a=100
-$$
-
-$$
-a=1
-$$
-
-The average is then
-
-$$
-\\frac{C_{1}(q)}{q}=\\frac{a q^{2}}{q}
-$$
-
-$$
-\\frac{C_{1}(q)}{q}=a q
+\\frac{C_{1}(q)}{q}=\\frac{q^{2}}{q}
 $$
 
 $$
 \\frac{C_{1}(q)}{q}=q
 $$
 
-The remaining exponent is $+1$, so the average rises with output. A falling average would need an original exponent below $1$, and line 1's is $2$, so the statement is False.`,
+The leftover exponent is $+1$, so the average rises with output. A falling average would need an original exponent below $1$, and line 1's is $2$, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 95,
@@ -28394,21 +12410,15 @@ $$q_{2}=4q_{1} \\quad \\text{at equal marginals} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-For any isoelastic rule $q=A p^{r}$ the point elasticity equals the exponent, because the coefficient cancels in $\\frac{p}{q}\\cdot\\frac{dq}{dp}$. Here the stem gives $r=-2$.
-
-The general elasticity is
+For any isoelastic rule $q=A p^{r}$ the coefficient cancels in the elasticity, leaving the exponent. Here $r=-2$.
 
 $$
 \\varepsilon(p)=\\frac{p}{q}\\cdot\\frac{dq}{dp}
 $$
 
-Differentiate $q=A p^{r}$:
-
 $$
 \\frac{dq}{dp}=r A p^{r-1}
 $$
-
-Substitute $q=A p^{r}$:
 
 $$
 \\varepsilon(p)=\\frac{p}{A p^{r}}\\cdot r A p^{r-1}
@@ -28418,53 +12428,17 @@ $$
 \\varepsilon(p)=r
 $$
 
-With the given exponent:
-
 $$
 \\varepsilon(p)=-2
 $$
 
-The desk record is not needed for this identity. Elasticity is $-2$ at every $p>0$, so the statement is True.`,
+Elasticity is $-2$ at every price $p>0$, so the statement is True.`,
       `**B.** → False
 
-The claim is a finite cut from the recorded price $p=10$ to $p=12$. Demand follows $q(p)=A p^{-2}$ with $q(10)=40$, so the coefficient must be recovered before $q(12)$ can be read.
-
-The demand law is
+Demand is $q(p)=4000p^{-2}$. At twelve euros:
 
 $$
-q(p)=A p^{-2}
-$$
-
-Substitute the desk record:
-
-$$
-A\\cdot 10^{-2}=40
-$$
-
-$$
-10^{2}=100
-$$
-
-$$
-10^{-2}=\\frac{1}{100}
-$$
-
-$$
-A\\cdot\\frac{1}{100}=40
-$$
-
-$$
-A=40\\cdot 100
-$$
-
-$$
-40\\cdot 100=4000
-$$
-
-At twelve euros:
-
-$$
-q(12)=4000\\cdot 12^{-2}
+q(12)=\\frac{4000}{12^{2}}
 $$
 
 $$
@@ -28501,35 +12475,13 @@ $$
 \\frac{110}{9}\\approx 12.22
 $$
 
-The cut is about $12.22$ tickets, not $8$. The figure $8$ is $20\\%$ of the recorded $40$:
-
-$$
-0.20\\cdot 40=8
-$$
-
-which copies the $20\\%$ price rise instead of raising $1.2$ to the exponent $-2$, so the statement is False.`,
+The cut is about $12.22$ tickets, not $8$. The figure $8$ is $20\\%$ of $40$, copying the $20\\%$ price rise as if demand were linear, so the statement is False.`,
       `**C.** → False
 
-The constant-elasticity shortcut multiplies the exponent by the percentage price move, while the exact rule raises the price factor to the exponent. Demand follows $q(p)=A p^{-2}$, so the exponent is $-2$ and a $10\\%$ rise is the factor $1.1$.
-
-The shortcut gives
-
-$$
-\\varepsilon\\cdot 10\\%=-2\\times 10\\%
-$$
-
-$$
--2\\times 10\\%=-20\\%
-$$
-
-The exact relative change is
+The shortcut multiplies the exponent $-2$ by a $10\\%$ price rise, giving $-20\\%$. The exact rule raises the price factor $1.1$ to that exponent:
 
 $$
 \\frac{q(1.1p)}{q(p)}=1.1^{-2}
-$$
-
-$$
-\\frac{q(1.1p)}{q(p)}-1=1.1^{-2}-1
 $$
 
 $$
@@ -28541,136 +12493,52 @@ $$
 $$
 
 $$
-\\frac{1}{1.21}-1=\\frac{1-1.21}{1.21}
+\\frac{1}{1.21}-1=\\frac{-0.21}{1.21}
 $$
 
 $$
 \\frac{-0.21}{1.21}\\approx -0.1736
 $$
 
-The exact cut is about $17.36\\%$, not $20\\%$. The two figures disagree, so the statement is False.`,
+The exact cut is about $17.36\\%$, not $20\\%$. A finite rise is not the same as the point elasticity times the percentage, so the statement is False.`,
       `**D.** → False
 
-Revenue is price times quantity. Demand follows $q(p)=A p^{-2}$ with $q(10)=40$, so the coefficient must be recovered before the revenue schedule can be judged.
-
-The demand law is
+Revenue is price times demand:
 
 $$
-q(p)=A p^{-2}
-$$
-
-Substitute the desk record:
-
-$$
-A\\cdot 10^{-2}=40
-$$
-
-$$
-10^{2}=100
-$$
-
-$$
-10^{-2}=\\frac{1}{100}
-$$
-
-$$
-A\\cdot\\frac{1}{100}=40
-$$
-
-$$
-A=40\\cdot 100
-$$
-
-$$
-40\\cdot 100=4000
-$$
-
-Revenue is $R(p)=p\\cdot q(p)$:
-
-$$
-R(p)=p\\cdot 4000 p^{-2}
-$$
-
-$$
-R(p)=4000 p^{-1}
+R(p)=p\\cdot 4000p^{-2}
 $$
 
 $$
 R(p)=\\frac{4000}{p}
 $$
 
-The revenue exponent $-1$ is negative, so $R$ falls at every price. At the recorded price:
-
-$$
-R(10)=\\frac{4000}{10}=400
-$$
-
-As $p$ grows without bound,
-
-$$
-R(p)\\to 0
-$$
-
-Raising the price without bound drives revenue toward zero, so the statement is False.`,
+The exponent $-1$ is negative, so $R$ falls at every price. As $p$ grows without bound, $R(p)\\to 0$. Raising the price without bound drives the till toward zero, so the statement is False.`,
       `**E.** → True
 
-Five euros is a new price on $q(p)=A p^{-2}$. The exponent is given, so the desk record $q(10)=40$ recovers the coefficient before the new level can be read.
-
-The demand law is
+Five euros is half of ten, so demand scales by $\\left(\\frac{1}{2}\\right)^{-2}$:
 
 $$
-q(p)=A p^{-2}
-$$
-
-Substitute the recorded pair:
-
-$$
-A\\cdot 10^{-2}=40
+\\frac{q(5)}{q(10)}=\\left(\\frac{1}{2}\\right)^{-2}
 $$
 
 $$
-10^{2}=100
+\\left(\\frac{1}{2}\\right)^{-2}=2^{2}
 $$
 
 $$
-10^{-2}=\\frac{1}{100}
+2^{2}=4
 $$
 
 $$
-A\\cdot\\frac{1}{100}=40
+q(5)=40\\cdot 4
 $$
 
 $$
-A=40\\cdot 100
+40\\cdot 4=160
 $$
 
-$$
-40\\cdot 100=4000
-$$
-
-At five euros:
-
-$$
-q(5)=4000\\cdot 5^{-2}
-$$
-
-$$
-5^{2}=25
-$$
-
-$$
-5^{-2}=\\frac{1}{25}
-$$
-
-$$
-q(5)=\\frac{4000}{25}
-$$
-
-$$
-\\frac{4000}{25}=160
-$$
-
-The desk sells $160$ tickets, so the statement is True.`,
+Halving the price quadruples demand. The desk sells $160$ tickets, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 96,
@@ -28716,59 +12584,7 @@ $$R(p)=\\frac{4000}{p} \\tag{2}$$
     tactical_explanations: [
       `**A.** → True
 
-The claim is a throughput level at belt setting $9$. Throughput follows $T(e)=A e^{\\frac{3}{2}}$, and the recorded run $T(4)=64$ recovers the coefficient before that new setting can be read.
-
-The throughput law is
-
-$$
-T(e)=A e^{\\frac{3}{2}}
-$$
-
-Substitute the recorded pair:
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=64
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-2^{3}=8
-$$
-
-$$
-8A=64
-$$
-
-$$
-A=\\frac{64}{8}
-$$
-
-$$
-A=8
-$$
-
-Forward check at the recorded setting:
-
-$$
-T(4)=8\\cdot 4^{\\frac{3}{2}}
-$$
-
-$$
-T(4)=8\\cdot 8
-$$
-
-$$
-8\\cdot 8=64
-$$
-
-which matches the stem. The recovered law is $T(e)=8e^{\\frac{3}{2}}$. At belt setting $9$:
+Throughput is $T(e)=8e^{\\frac{3}{2}}$. At belt setting $9$:
 
 $$
 T(9)=8\\cdot 9^{\\frac{3}{2}}
@@ -28797,18 +12613,10 @@ $$
 Throughput is $216$ trays per hour, so the statement is True.`,
       `**B.** → True
 
-A counterfactual coefficient is a plain multiplier in front of the same shape factor $e^{\\frac{3}{2}}$. The ratio of the two throughputs at a fixed setting therefore cancels both the setting and the original $A$.
-
-Throughput follows $T(e)=A e^{\\frac{3}{2}}$. The enlarged law is $T_{c}(e)=1.25 A e^{\\frac{3}{2}}$. Their ratio is
+A $25\\%$ larger coefficient is a plain multiplier in front of the same shape $e^{\\frac{3}{2}}$. At a fixed setting the shape cancels:
 
 $$
 \\frac{T_{c}(e)}{T(e)}=\\frac{1.25 A e^{\\frac{3}{2}}}{A e^{\\frac{3}{2}}}
-$$
-
-The shape factor $e^{\\frac{3}{2}}$ cancels:
-
-$$
-\\frac{T_{c}(e)}{T(e)}=\\frac{1.25 A}{A}
 $$
 
 $$
@@ -28818,22 +12626,10 @@ $$
 Every reading rises by exactly $25\\%$, so the statement is True.`,
       `**C.** → True
 
-A doubling scale factor is a ratio of two model values, so the coefficient appears in both and cancels. Throughput follows $T(e)=A e^{\\frac{3}{2}}$.
-
-The general scale factor for an input multiplier $k$ is
-
-$$
-\\frac{T(ke)}{T(e)}=\\frac{A(ke)^{\\frac{3}{2}}}{A e^{\\frac{3}{2}}}=k^{\\frac{3}{2}}
-$$
-
-For doubling, $k=2$:
+A doubling ratio puts $A$ in both the numerator and the denominator, so the coefficient cancels:
 
 $$
 \\frac{T(2e)}{T(e)}=\\frac{A(2e)^{\\frac{3}{2}}}{A e^{\\frac{3}{2}}}
-$$
-
-$$
-(2e)^{\\frac{3}{2}}=2^{\\frac{3}{2}}e^{\\frac{3}{2}}
 $$
 
 $$
@@ -28843,88 +12639,20 @@ $$
 The factor is pinned by the exponent alone. It does not depend on $A$, so the statement is True.`,
       `**D.** → False
 
-Under the enlarged coefficient the same cancellation occurs. Throughput follows $T(e)=A e^{\\frac{3}{2}}$, and the counterfactual is $T_{c}(e)=1.25 A e^{\\frac{3}{2}}$.
-
-The doubling ratio under the enlarged law is
+Under the enlarged coefficient the same cancellation occurs:
 
 $$
 \\frac{T_{c}(2e)}{T_{c}(e)}=\\frac{1.25 A (2e)^{\\frac{3}{2}}}{1.25 A e^{\\frac{3}{2}}}
 $$
 
 $$
-(2e)^{\\frac{3}{2}}=2^{\\frac{3}{2}}e^{\\frac{3}{2}}
-$$
-
-$$
 \\frac{T_{c}(2e)}{T_{c}(e)}=2^{\\frac{3}{2}}
 $$
 
-The original doubling factor is the same:
-
-$$
-\\frac{T(2e)}{T(e)}=2^{\\frac{3}{2}}
-$$
-
-The factor $1.25$ never survives the ratio. Levels move by $25\\%$ and ratios do not, so the statement is False.`,
+The factor $1.25$ never survives the ratio. Levels move by $25\\%$ and doubling ratios do not, so the statement is False.`,
       `**E.** → False
 
-The claim is a counterfactual level at belt setting $9$ after enlarging the coefficient by $25\\%$. The recorded run $T(4)=64$ recovers the original $A$ first, then that level is scaled.
-
-The throughput law is
-
-$$
-T(e)=A e^{\\frac{3}{2}}
-$$
-
-Substitute the recorded pair:
-
-$$
-A\\cdot 4^{\\frac{3}{2}}=64
-$$
-
-$$
-4^{\\frac{1}{2}}=2
-$$
-
-$$
-4^{\\frac{3}{2}}=2^{3}
-$$
-
-$$
-2^{3}=8
-$$
-
-$$
-8A=64
-$$
-
-$$
-A=8
-$$
-
-At belt setting $9$:
-
-$$
-9^{\\frac{1}{2}}=3
-$$
-
-$$
-9^{\\frac{3}{2}}=3^{3}
-$$
-
-$$
-3^{3}=27
-$$
-
-$$
-T(9)=8\\cdot 27
-$$
-
-$$
-8\\cdot 27=216
-$$
-
-A $25\\%$ larger coefficient multiplies that reading by $1.25$:
+Throughput at belt setting $9$ is $216$ trays per hour. A $25\\%$ larger coefficient multiplies that reading by $1.25$:
 
 $$
 T_{c}(9)=1.25\\cdot 216
