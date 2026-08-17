@@ -142,7 +142,7 @@ $$
 
 Both depots would hold 310 crates, exactly as the claim states, so the statement is true.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: "\\frac{1}{5}",
     sort_order: 1,
     solution_overview: `The North depot and the South depot are together holding 620 crates this week. A scheduling note observes that if 50 crates were transferred from North to South, the two depots would end up holding exactly the same number of crates.
 
@@ -364,7 +364,7 @@ $$
 
 Compare the two figures: the invoice comes to \\$160.50, while the claim names \\$172.50, which is \\$12.00 too high. Mixing up which invoice number carries which printed total is the usual source of this error. The statement is false.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: "\\frac{1}{5}",
     sort_order: 2,
     solution_overview: `Silverline Stationery Co. received two invoices from the same supplier this month.
 
@@ -556,7 +556,7 @@ $$
 
 That is \\$950.00, fifty dollars short of the claimed \\$1,000.00, so the statement is false.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: "\\frac{1}{5}",
     sort_order: 3,
     solution_overview: `The Riverside Community Cinema's box-office system logged ticket counts and revenue for two Saturday screenings of the same film. Adult and child tickets are sold at fixed prices throughout the day.
 
@@ -740,7 +740,7 @@ $$
 
 That is \\$60.00, matching the claim, so the statement is true.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: "\\frac{1}{5}",
     sort_order: 4,
     solution_overview: `Corner Deli delivers office lunches for a flat \\$8.00 delivery fee added on top of the food cost, no matter the order size. Receipt A: 6 sandwiches, 4 wraps, plus the \\$8.00 delivery fee, total charged \\$70.00.
 
@@ -881,7 +881,7 @@ $$
 0.04(6000) + 0.07(4000) = 240 + 280 = 520
 $$
 
-Account B holds \\$4,000, not the claimed \\$4,500. A rough 50/50 guess of \\$6,500 and \\$4,500 fails twice over: it ignores the weighted interest equation, and the two figures add to
+Account B holds \\$4,000, not the claimed \\$4,500. A rough \\frac{50}{50} guess of \\$6,500 and \\$4,500 fails twice over: it ignores the weighted interest equation, and the two figures add to
 
 $$
 6500 + 4500 = 11000
@@ -916,7 +916,7 @@ $$
 
 That is \\$700.00, matching the claim, so the statement is true. No split has to be recovered here, because the scenario puts the entire principal in one account.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: "\\frac{1}{5}",
     sort_order: 5,
     solution_overview: `An investor split a total of \\$10,000 between two accounts at the start of the year: Account A pays 4% simple annual interest, and Account B pays 7% simple annual interest. No deposits or withdrawals were made all year, and together the two accounts earned \\$520.00 in interest.
 
@@ -1048,7 +1048,7 @@ $$
 
 Since $3265 > 3000$, the order does exceed \\$3,000.00 and the statement is true.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: "\\frac{1}{5}",
     sort_order: 6,
     solution_overview: `Premium-grade office chairs are priced exactly \\$45 more per unit than Standard-grade chairs throughout the current catalogue. A recent shipment of 18 Standard chairs and 12 Premium chairs was valued at \\$9,660.00 in total.
 
@@ -1216,7 +1216,7 @@ $$
 Compare with the claim: the customer would still owe \\$17.00, not \\$0.00, because the base cost of the plan does not depend on minutes at all. The statement is false.`,
       `**E) The advertised rate (\\$0.30 per minute) is more than double a rival plan's rate of \\$0.20 per minute.**  (false)
 
-The two quoted bills differ by $53.00 - 29.00 = 24.00$ dollars across $120 - 40 = 80$ extra minutes, so ByteMobile charges $24.00 / 80 = 0.30$ per extra minute, the figure named in the claim. Double the rival's rate would be
+The two quoted bills differ by $53.00 - 29.00 = 24.00$ dollars across $120 - 40 = 80$ extra minutes, so ByteMobile charges $\\frac{24.00}{80} = 0.30$ per extra minute, the figure named in the claim. Double the rival's rate would be
 
 $$
 2 \\times 0.20 = 0.40
@@ -1224,7 +1224,7 @@ $$
 
 Since $0.30 < 0.40$, ByteMobile's rate is one and a half times the rival's, not more than double it, so the statement is false.`,
     ],
-    difficulty_level: "1/5",
+    difficulty_level: "\\frac{1}{5}",
     sort_order: 7,
     solution_overview: `ByteMobile's ad boasts a "simple plan": one customer who went 40 minutes over their allowance last month paid \\$29.00 in total. A heavy user who went 120 minutes over paid \\$53.00. The ad frames this as a low, predictable rate for every extra minute, on top of a small fixed monthly fee.
 
@@ -1414,7 +1414,7 @@ $$
 
 The Standard material cost is \\$9,000.00, matching the claim. This is where the material-cost column finally matters, since the unit and hours data alone could not have answered it. The statement is true.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 8,
     solution_overview: `The table below lists standard specifications for two oven models. This week, the division completed 130 ovens in total and logged 795 assembly hours in total across both models.
 
@@ -1628,7 +1628,7 @@ $$
 
 Removing the returns changes only the deduction, never the listed prices, so gross and net would both read \\$9,760.00 and the statement is true.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 9,
     solution_overview: `Two branches sold sofas and armchairs this month at company-wide fixed prices. "Net sales" (gross sales minus returns) is what actually reflects items sold at their listed prices.
 
@@ -1828,7 +1828,7 @@ $$
 
 A nonzero determinant means the two equations behave like two non-parallel lines, crossing at exactly one point. Had both orders covered the same number of pages, that determinant would be zero and the invoices would either contradict each other or repeat the same information, leaving the fee and the rate undetermined. Here the two invoices describe genuinely different situations, so exactly one pair, $(f, r) = (9.00, 0.20)$, satisfies both at once. The statement is true.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 10,
     solution_overview: `PrintFast Express charges a fixed setup fee on every order, plus a constant charge per page. Order #58 (120 pages) billed \\$33.00, and Order #96 (300 pages) billed \\$69.00.
 
@@ -2002,7 +2002,7 @@ $$
 
 That is \\$57.00, matching the claim, so the statement is true.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 11,
     solution_overview: `Two friends grabbed lunch separately from the same food truck, which sells only tacos and burritos at a fixed price each. Ana ordered 4 tacos and 3 burritos and paid \\$32.00 in total.
 
@@ -2157,7 +2157,7 @@ $$
 
 That is \\$5,270, far short of the \\$8,540 reported, so the statement is false.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 12,
     solution_overview: `Memo. Pricing Desk: "Hardcover editions are priced exactly \\$5 above the paperback price this quarter, across the board.".
 
@@ -2331,7 +2331,7 @@ $$
 
 which is the March bill in the record. Since $31.00 < 62.00$, Basic is the cheaper plan at that usage and the statement is true.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 13,
     solution_overview: `SKYLINK MOBILE: BASIC: \\$15/month base + \\$2.00/GB overage. STANDARD: base fee and overage rate confirmed by billing history below.
 
@@ -2491,7 +2491,7 @@ $$
 Compare with the claim: a suite costs \\$70 more per night, well short of \\$200. Comparing the tax-inclusive confirmation totals instead of stripping the 8% out first is what inflates this estimate. The statement is false.`,
       `**C) Booking 6 Standard rooms for one night (pre-tax) costs less than booking 4 Suites.**  (false)
 
-The nightly rates come from the two confirmations once the 8% tax is stripped out: $2419.20 / 1.08 = 2240.00$ and $3099.60 / 1.08 = 2870.00$, giving $10x + 4y = 2240$ and $7x + 9y = 2870$. Multiplying the first by 9 and the second by 4 and subtracting gives $62x = 8680$, so $x = 140$, and then $4y = 2240 - 1400 = 840$, so $y = 210$. Comparing the two bookings before tax:
+The nightly rates come from the two confirmations once the 8% tax is stripped out: $\\frac{2419.20}{1.08} = 2240.00$ and $\\frac{3099.60}{1.08} = 2870.00$, giving $10x + 4y = 2240$ and $7x + 9y = 2870$. Multiplying the first by 9 and the second by 4 and subtracting gives $62x = 8680$, so $x = 140$, and then $4y = 2240 - 1400 = 840$, so $y = 210$. Comparing the two bookings before tax:
 
 $$
 6(140) = 840, \\qquad 4(210) = 840
@@ -2500,7 +2500,7 @@ $$
 Both come to \\$840, so six Standard rooms do not cost less than four Suites and the statement is false.`,
       `**D) Including the 8% tax, a single Suite night costs \\$226.80.**  (true)
 
-The Suite rate has to be recovered from the pre-tax revenues, $2419.20 / 1.08 = 2240.00$ and $3099.60 / 1.08 = 2870.00$, which give $10x + 4y = 2240$ and $7x + 9y = 2870$. Eliminating $y$ (nine times the first equation minus four times the second) leaves $62x = 8680$, so $x = 140$, and then $4y = 2240 - 1400 = 840$, so $y = 210$. Adding the 8% occupancy tax to one Suite night:
+The Suite rate has to be recovered from the pre-tax revenues, $\\frac{2419.20}{1.08} = 2240.00$ and $\\frac{3099.60}{1.08} = 2870.00$, which give $10x + 4y = 2240$ and $7x + 9y = 2870$. Eliminating $y$ (nine times the first equation minus four times the second) leaves $62x = 8680$, so $x = 140$, and then $4y = 2240 - 1400 = 840$, so $y = 210$. Adding the 8% occupancy tax to one Suite night:
 
 $$
 210 \\times 1.08 = 226.80
@@ -2509,7 +2509,7 @@ $$
 A taxed Suite night costs \\$226.80, matching the claim, so the statement is true.`,
       `**E) Had Weekend 2 booked 10 Suites instead of 9 (Standard rooms unchanged), pre-tax revenue would have risen by \\$210.**  (true)
 
-Only the pre-tax Suite rate matters, since the Standard bookings are unchanged. Removing the 8% tax gives pre-tax revenues of $2419.20 / 1.08 = 2240.00$ and $3099.60 / 1.08 = 2870.00$, so $10x + 4y = 2240$ and $7x + 9y = 2870$. Eliminating $y$ gives $62x = 8680$, so $x = 140$ and $y = 210$. One additional Suite night adds
+Only the pre-tax Suite rate matters, since the Standard bookings are unchanged. Removing the 8% tax gives pre-tax revenues of $\\frac{2419.20}{1.08} = 2240.00$ and $\\frac{3099.60}{1.08} = 2870.00$, so $10x + 4y = 2240$ and $7x + 9y = 2870$. Eliminating $y$ gives $62x = 8680$, so $x = 140$ and $y = 210$. One additional Suite night adds
 
 $$
 1 \\times 210 = 210
@@ -2517,7 +2517,7 @@ $$
 
 Pre-tax revenue would rise by \\$210, matching the claim, so the statement is true.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 14,
     solution_overview: `LAKEVIEW INN. Rate Card. Standard Rooms & Suites, free breakfast & Wi-Fi, all rates subject to 8% occupancy tax.
 
@@ -2530,28 +2530,28 @@ The printed totals are not raw unknown×quantity rows: any shared fee or tax is 
 **1. Record this independent observation.** In symbols:
 
 $$
-10x + 4y = 2419.20 \\div 1.08 = 2240.00
+10x + 4y = 2419.20 \/ 1.08 = 2240.00
 $$
 
 **2. Record this independent observation.** In symbols:
 
 $$
-7x + 9y = 3099.60 \\div 1.08 = 2870.00
+7x + 9y = 3099.60 \/ 1.08 = 2870.00
 $$
 
 **Part 2: The model.**
 
 $$
-10x + 4y = 2419.20 \\div 1.08 = 2240.00 \\tag{1}
+10x + 4y = 2419.20 \/ 1.08 = 2240.00 \\tag{1}
 $$
 
 $$
-7x + 9y = 3099.60 \\div 1.08 = 2870.00 \\tag{2}
+7x + 9y = 3099.60 \/ 1.08 = 2870.00 \\tag{2}
 $$
 
 **Part 3: Solve.**
 
-**1.** From the first equation, $5x + 2y = 1120$, so $y = (1120 - 5x)/2$.
+**1.** From the first equation, $5x + 2y = 1120$, so $y = \\frac{(1120 - 5x)}{2}$.
 
 **2.** Substituting into the second (after doubling it to $14x + 18y = 5740$):
 
@@ -2686,7 +2686,7 @@ $$
 
 The combined actual value is \\$6,810, matching the claim, so the statement is true. No unit cost is needed here, since both totals are already recorded, and the March forecast row stays out of the sum.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 15,
     solution_overview: `Only the January and February rows report actual recorded inventory values. March is a forecast row and cannot be used to solve for today's unit costs.
 
@@ -2862,7 +2862,7 @@ $$40(14) + 4(21) = 560 + 84 = 644$$
 
 Under the $1.5\\times$ rule that third worker earns \\$644, which is \\$12 less than the company's actual practice. So the statement is true.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 16,
     solution_overview: `Sunrise Staffing's contract states overtime must be paid at exactly 1.5× the regular hourly wage. A union representative pulled this week's payroll for two workers, both completing a full 40-hour regular week, to check whether that rule was actually followed.
 
@@ -3028,7 +3028,7 @@ $$65.00 \\times 1.10 = 71.50$$
 
 which matches the claim, so the statement is true.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 17,
     solution_overview: `A customer contacted Riverside Water to query two consecutive bills. She used 18 m³ in May and was billed \\$56.10, but May's bill also carried a 10% late penalty applied to the entire bill.
 
@@ -3039,7 +3039,7 @@ Since the 10% penalty was applied to May's whole bill rather than as a flat add-
 **1. Record this independent observation.** In symbols:
 
 $$
-x + 18y = 56.10 \\div 1.10 = 51.00
+x + 18y = 56.10 \/ 1.10 = 51.00
 $$
 
 **2. Read the bill with 25 extra units.** At rate $y$, that bill is:
@@ -3051,7 +3051,7 @@ $$
 **Part 2: The model.**
 
 $$
-x + 18y = 56.10 \\div 1.10 = 51.00 \\tag{1}
+x + 18y = 56.10 \/ 1.10 = 51.00 \\tag{1}
 $$
 
 $$
@@ -3232,7 +3232,7 @@ $$d = 0$$
 
 The companies only match at zero distance. At the claimed 5 km the bills are $6 + 5 = 11$ versus $6 + 5(1.5) = 13.50$, which are not equal. So the statement is false.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 18,
     solution_overview: `A commuter is deciding between two ride-hailing companies. An 8 km CityCab ride once cost \\$14.00, and a 20 km CityCab ride cost exactly \\$12.00 more than that.
 
@@ -3450,7 +3450,7 @@ $$60 \\times 18 = 1080, \\qquad 60 \\times 16 = 960$$
 
 Vendor B is \\$120 cheaper on that Y-only run, so the statement is true.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 19,
     solution_overview: `Bramble & Co.'s procurement team received quotations from two suppliers for Products X and Y. Neither vendor lists a unit price outright; both quotes only show bundled order totals.
 
@@ -3674,7 +3674,7 @@ $$130 \\times 70 = 9100, \\qquad 150 \\times 50 = 7500$$
 
 Beta's Q line of \\$9,100 exceeds Alpha's whole P line of \\$7,500 by \\$1,600. So the statement is true.`,
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "\\frac{2}{5}",
     sort_order: 20,
     solution_overview: `Alpha and Beta are sister companies that sell Product P and Service Q at identical market prices. Combined, they earned \\$27,200 in Q1 revenue, and Beta earned exactly \\$1,000 more than Alpha.
 
@@ -3822,7 +3822,7 @@ $$12 \\times 41 = 492$$
 
 which matches the claim.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 21,
     solution_overview: `FITZONE GYM. NEW MEMBER SPECIAL! "Join for just a \\$30 signup fee, then only \\$45/month!" An accounting team member is skeptical and pulls two real members' payment histories. Maria, after her 6th monthly payment, had paid \\$284 total.
 
@@ -3990,7 +3990,7 @@ $$5(19) + 5(31) = 95 + 155 = 250$$
 
 which is the claimed combined bill of \\$250. So the statement is true.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 22,
     solution_overview: `StreamPlus offers two flat-rate monthly plans, Basic and Premium, with no separate connection fee. Customer service pulled combined billing records mixing plan-months across two households.
 
@@ -4178,7 +4178,7 @@ $$10(4.80) + 2(6) = 48 + 12 = 60$$
 
 Equal to \\$60 is not "more than \\$60". So the statement is false.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 23,
     solution_overview: `Two items, organic apples and almond milk, recently had their prices updated. (A note on every receipt reminds shoppers that loyalty- card members save 5% storewide; neither receipt below belongs to a loyalty member, so no discount has actually been applied.).
 
@@ -4342,7 +4342,7 @@ $$0.29 \\cdot 500 = 145$$
 
 Standard's \\$138 undercuts Solar's \\$145, so Solar is not cheaper at 500 units. So the statement is false.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 24,
     solution_overview: `BrightHome Energy bills a fixed connection fee plus a constant rate per unit. Customer service claims the rate is \\$0.24/unit, unverified against real data.
 
@@ -4532,7 +4532,7 @@ $$4(19) + 4(15) = 76 + 60 = 136, \\qquad 136 \\times 1.10 = 149.60$$
 
 Since $149.60 < 150$, the claim is true.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 25,
     solution_overview: `Trattoria Bella serves pasta and appetizers at consistent prices. Off-peak tables carry no service fee; peak tables automatically have a 10% service charge added before the bill is printed.
 
@@ -4551,7 +4551,7 @@ $$
 **2. Record this independent observation.** In symbols:
 
 $$
-5x + 7y = (174.00 + 46.00) \\div 1.10 = 200.00
+5x + 7y = (174.00 + 46.00) \/ 1.10 = 200.00
 $$
 
 **Part 2: The model.**
@@ -4561,7 +4561,7 @@ $$
 $$
 
 $$
-5x + 7y = (174.00 + 46.00) \\div 1.10 = 200.00 \\tag{2}
+5x + 7y = (174.00 + 46.00) \/ 1.10 = 200.00 \\tag{2}
 $$
 
 **Part 3: Solve.**
@@ -4722,7 +4722,7 @@ $$70(21) + 150(27) = 1470 + 4050 = 5520$$
 
 Weight never appears as a coefficient. Shipment 1 is cheaper because it bought a cheaper mix of units, not because its total weight $110(2.4) + 80(1.7) = 400$ kg happens to sit below Shipment 2's $70(2.4) + 150(1.7) = 423$ kg. So the statement is false.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 26,
     solution_overview: `Meridian Distribution ships Item M and Item N. The inventory system logs item counts, unit weight, unit volume, and total shipment cost, but only item counts and cost determine unit pricing.
 
@@ -4906,7 +4906,7 @@ $$8(29) + 19(44) = 232 + 836 = 1068$$
 
 The issued \\$1,068 matches exactly, so the quotation is internally consistent with the confirmed rates. So the statement is true.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 27,
     solution_overview: `Green Horizons prices Standard and Premium planting. Job 1's invoice records quantity in planting bundles (each bundle = 2 Standard + 5 Premium units), while Job 2's invoice lists individual units directly.
 
@@ -5067,7 +5067,7 @@ $$323 + 245 = 568$$
 
 Since $568 \\ge 550$, the combined reimbursement clears the cutoff. So the statement is true.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 28,
     solution_overview: `Reimbursement is a fixed per-diem for each meal day plus a fixed rate per mile. Finance separately believes the mileage rate is \\$0.40/mile, unconfirmed against payroll data.
 
@@ -5272,7 +5272,7 @@ $$A = 20$$
 
 That is a legitimate reconstruction of the missing Widget A count, not a guess. So the statement is true.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 29,
     solution_overview: `Cedarline assembles Widget A and Widget B on the same line, each requiring a fixed number of labor-hours. Week 1's log is fully legible.
 
@@ -5441,7 +5441,7 @@ $$3875 + 3200 = 7075$$
 
 North reports \\$4,145. Since $4145 < 7075$, North falls well short of South and East combined, despite being the single largest branch on its own. So the statement is false.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 30,
     solution_overview: `Sterling Distributors' dashboard reports quarterly unit sales and revenue for Products X and Y, sold at company-wide fixed prices, across three branches. Two of the three branch reports are known to reconcile correctly; the third contains an uncorrected data-entry error, though the dashboard does not indicate which one.
 
@@ -5627,7 +5627,7 @@ $$
 
 The combined order comes to exactly \\$1,184.80, precisely the sum of the two separate bills rather than strictly more. A bulk premium would have to appear as an extra term in the pricing rule, and none exists, so the statement is false.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 31,
     solution_overview: `Riverside Hardware Supply ships Type A Bolts and Type B Hinges by the case, at fixed per-case prices.
 
@@ -5735,7 +5735,7 @@ $$
 x + 170(1.85) = 460.00, \\qquad x + 314.50 = 460.00, \\qquad x = 145.50
 $$
 
-The midpoint of \\$145 and \\$146 is $(145 + 146)/2 = 145.50$, exactly the dispatch fee, so the claim holds.`,
+The midpoint of \\$145 and \\$146 is $\\frac{(145 + 146)}{2} = 145.50$, exactly the dispatch fee, so the claim holds.`,
       `**B) Per mile, Swift Cargo's rate is closer to \\$1.50 than to \\$2.00.**  (false)
 
 Only the per-mile rate is in question, and it can be isolated without ever finding the dispatch fee. Writing the fee as $x$ and the rate as $y$, the two recorded routes read
@@ -5853,7 +5853,7 @@ $$
 
 The two formulas do meet, at $d = -291$ miles. A negative distance has no physical meaning, so the crossover exists algebraically while being commercially irrelevant, and the statement is true.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 32,
     solution_overview: `Swift Cargo Co. charges a fixed dispatch fee plus a constant rate per mile.
 
@@ -6025,7 +6025,7 @@ $$
 
 The change is \\$7.90, ten cents under \\$8, so the statement is true.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 33,
     solution_overview: `Café Lumière sells Specialty Drinks and Pastries at fixed prices. Two till receipts also list a total calorie count, printed for the customer's reference only.
 
@@ -6231,7 +6231,7 @@ $$
 
 The new total is \\$368.30, whose cents are exactly 30, so the statement is true.`,
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "\\frac{3}{5}",
     sort_order: 34,
     solution_overview: `Northgate Bakery Wholesale sells Croissants and Baguettes by the dozen at fixed wholesale prices. Email 1: "Order confirmed: 14 dozen croissants + 11 dozen baguettes.
 
@@ -6495,7 +6495,7 @@ $$
 
 Because \\$27.35 times 500 works out to a whole number of dollars, the profit is exactly \\$13,675.00 with no cents left over, so the statement is true.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 35,
     solution_overview: `Meridian Textiles tracks a fixed profit margin per unit for Fabric Rolls and Yarn Spools.
 
@@ -6591,7 +6591,7 @@ $$
 Every entry of Invoice 2 is exactly 0.6 times the matching entry of Invoice 1, which means Invoice 2's equation is simply Invoice 1's equation multiplied through by 0.6. Rescaling an equation cannot narrow down its solutions, so Invoice 2 restates rather than corroborates and the statement is true.`,
       `**B) Nitrogen-type cylinders are priced closer to \\$17.00 than to \\$16.00.**  (false)
 
-The Nitrogen price must come from two genuinely independent invoices. Invoice 2 is 0.6 times Invoice 1 in every entry, since $9/15 = 12/20 = 419.40/699.00 = 0.60$, so it has to be set aside; Invoice 1 and Invoice 3 are the usable pair. With $x$ the price per Nitrogen cylinder and $y$ the price per Oxygen cylinder:
+The Nitrogen price must come from two genuinely independent invoices. Invoice 2 is 0.6 times Invoice 1 in every entry, since $\\frac{9}{15} = \\frac{12}{20} = \\frac{419.40}{699.00} = 0.60$, so it has to be set aside; Invoice 1 and Invoice 3 are the usable pair. With $x$ the price per Nitrogen cylinder and $y$ the price per Oxygen cylinder:
 
 $$
 15x + 20y = 699.00, \\qquad 13x + 5y = 326.45
@@ -6618,7 +6618,7 @@ $$
 A 40-cent gap to \\$16.00 beats a 60-cent gap to \\$17.00, so the price is closer to \\$16.00 and the statement is false.`,
       `**C) Four Oxygen-type cylinders cost less than six Nitrogen-type cylinders bought in that same bulk.**  (true)
 
-Both cylinder prices are needed. Invoice 2 is only Invoice 1 rescaled, since $9/15 = 12/20 = 419.40/699.00 = 0.60$, so the independent pair is Invoice 1 and Invoice 3. With $x$ per Nitrogen cylinder and $y$ per Oxygen cylinder:
+Both cylinder prices are needed. Invoice 2 is only Invoice 1 rescaled, since $\\frac{9}{15} = \\frac{12}{20} = \\frac{419.40}{699.00} = 0.60$, so the independent pair is Invoice 1 and Invoice 3. With $x$ per Nitrogen cylinder and $y$ per Oxygen cylinder:
 
 $$
 15x + 20y = 699.00, \\qquad 13x + 5y = 326.45
@@ -6666,7 +6666,7 @@ $$
 
 At roughly \\$19.35 per cylinder the blended figure stays below \\$20, so the statement is true.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 36,
     solution_overview: `A consultant reviewing Continental Gas Supply's cylinder pricing agreement was given three monthly supplier invoices for Nitrogen-type and Oxygen-type cylinders.
 
@@ -6744,8 +6744,8 @@ $$
     statements: [
       `Working alone, Alvarez's solo completion time, rounded to the nearest whole hour, would round down to 11 hours rather than up to 12.`,
       `Bianchi, working entirely alone, would take longer to finish one job than it would take Alvarez, working entirely alone, to finish two.`,
-      `Their combined hourly output, expressed as a fraction, reduces to exactly 13/100  -  no more, no less.`,
-      `Bianchi's slice of Tuesday's finished work, as a fraction, is closer to 1/7 than to 1/8.`,
+      `Their combined hourly output, expressed as a fraction, reduces to exactly \\frac{13}{100}  -  no more, no less.`,
+      `Bianchi's slice of Tuesday's finished work, as a fraction, is closer to \\frac{1}{7} than to \\frac{1}{8}.`,
       `Tally every hour either technician logged across both days  -  23 in all  -  and divide it into the total work finished; the resulting hourly average doesn't quite clear seven percent.`,
     ],
     answer_key: [false, false, true, true, true],
@@ -6808,7 +6808,7 @@ $$
 $$
 
 Bianchi's single job takes about 22.22 hours, shorter than the roughly 23.53 hours Alvarez needs for two, so the comparison runs the other way and the statement is false.`,
-      `**C) Their combined hourly output, expressed as a fraction, reduces to exactly 13/100  -  no more, no less.**  (true)
+      `**C) Their combined hourly output, expressed as a fraction, reduces to exactly \\frac{13}{100}  -  no more, no less.**  (true)
 
 Combined output is the sum of the two hourly rates, so both are needed. With $x$ for Alvarez and $y$ for Bianchi:
 
@@ -6834,8 +6834,8 @@ $$
 x + y = 0.085 + 0.045 = 0.130 = \\frac{130}{1000} = \\frac{13}{100}
 $$
 
-The reduced fraction is exactly $13/100$, so the statement is true.`,
-      `**D) Bianchi's slice of Tuesday's finished work, as a fraction, is closer to 1/7 than to 1/8.**  (true)
+The reduced fraction is exactly $\\frac{13}{100}$, so the statement is true.`,
+      `**D) Bianchi's slice of Tuesday's finished work, as a fraction, is closer to \\frac{1}{7} than to \\frac{1}{8}.**  (true)
 
 Bianchi logged 3 hours on Tuesday, so his slice of that day's work is three times his hourly rate and only that rate is needed. With $x$ for Alvarez and $y$ for Bianchi:
 
@@ -6869,7 +6869,7 @@ $$
 \\left|0.135 - \\frac{1}{8}\\right| = |0.135 - 0.125| = 0.010
 $$
 
-The distance to $1/7$ is the smaller of the two, marginally, so the slice is closer to $1/7$ and the statement is true.`,
+The distance to $\\frac{1}{7}$ is the smaller of the two, marginally, so the slice is closer to $\\frac{1}{7}$ and the statement is true.`,
       `**E) Tally every hour either technician logged across both days  -  23 in all  -  and divide it into the total work finished; the resulting hourly average doesn't quite clear seven percent.**  (true)
 
 This average uses only the logged hours and the reported completion figures, so the individual rates are not needed. The hours add to $4 + 7 + 9 + 3 = 23$, matching the figure in the claim, and the work finished is $0.655 + 0.900 = 1.555$ jobs. Dividing:
@@ -6880,7 +6880,7 @@ $$
 
 An average of about 6.76% of a job per logged hour stays just under 7%, so the statement is true.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 37,
     solution_overview: `On Monday's day shift, Alvarez logged 4 hours on an overhaul while Bianchi logged 7 hours on that same job; together they left it 65.5% finished. The next day, Alvarez put in 9 hours, Bianchi just 3, and an identical type of job was left 90.0% complete.
 
@@ -7106,7 +7106,7 @@ $$
 
 The rewritten season crosses \\$8,700 and clears it by \\$33, which is under \\$40, so both halves of the statement hold.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 38,
     solution_overview: `Vantage Apparel earns a fixed profit per unit on T-Shirts and Hoodies. Season 1: 430 T-Shirts and 260 Hoodies, netting \\$9,793.50.
 
@@ -7395,7 +7395,7 @@ $$
 
 The charge passes \\$1,350 by only \\$4.60, so it does just barely creep past and the statement is true.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 39,
     solution_overview: `Continental Freight Co. bills a flat handling fee plus a constant rate per kilogram shipped.
 
@@ -7411,7 +7411,7 @@ $$
 x + 185y = 677.35
 $$
 
-**2. Translate: Shipment 2: 572 lb ÷ 2.2 = 260 kg.** That observation becomes:
+**2. Translate: Shipment 2: 572 lb / 2.2 = 260 kg.** That observation becomes:
 
 $$
 x + 260y = 913.60
@@ -7565,7 +7565,7 @@ $$
 
 The doubling hypothesis misses by \\$15.30 against \\$226.55 for the other, roughly fifteen times closer, so despite being wrong it is much the better guess and the statement is true.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 40,
     solution_overview: `Vantage Cloud Services bills every client under one fixed-rate structure: a per-compute-unit charge plus a per-storage-unit charge. Client B's usage is exactly double Client A's in both categories.
 
@@ -7795,7 +7795,7 @@ $$
 
 The larger balance stands about 183.3% above the smaller one, which clears 180%, so the statement is true.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 41,
     solution_overview: `The Sterling Family Trust is split between two funds. Fund A pays a fixed 5.25% simple annual return; Fund B pays 3.75%.
 
@@ -7980,7 +7980,7 @@ $$
 
 of the volume. About 83.3% against 60% makes Batch 2 the richer in Solution A, so the statement is true.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 42,
     solution_overview: `Solventis Labs combines Stock Solution A and Stock Solution B in a stated volume ratio. The log records total volume and mixing ratio (A:B) rather than individual volumes.
 
@@ -8192,7 +8192,7 @@ $$
 
 The hours ratio of 2.8 is larger than the pay ratio of about 1.153. That fits the pay structure, since the 40 regular hours both employees share dominate their gross pay and dilute the effect of differing overtime, so the statement is true.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 43,
     solution_overview: `Union Mills pays a fixed base hourly wage plus a fixed overtime premium on top of the base wage for hours beyond 40/week. Employee A: 40 regular + 2.5 OT hours, \\$765.00 gross.
 
@@ -8363,7 +8363,7 @@ $$
 
 Project 3 averages \\$14.20 per meter against Project 1's roughly \\$17.86, because Project 3 leans mostly on the cheaper wire while Project 1 uses a much larger share of wood. Project 3's rate is the lower of the two, so the statement is false.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 44,
     solution_overview: `Greenfield installs cedar wood fencing and galvanized wire fencing at fixed prices per meter. One of three projects turns out to be a scaled repeat of another and adds nothing new.
 
@@ -8629,7 +8629,7 @@ $$
 
 At about 60.4% that is more than 60%, though only just, so the statement is true.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 45,
     solution_overview: `Two Meridian Rail boats travel at fixed constant speeds. On one 250 km stretch, they start from opposite docks and meet after 2 hours.
 
@@ -8822,7 +8822,7 @@ $$
 
 Season 1 works out to \\$105.00 per tonne and Season 2 to about \\$109.77 per tonne, so the Season 2 average is the higher one and the statement is true.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 46,
     solution_overview: `Meridian Textiles tracks a fixed profit per tonne for Wheat and Barley. Season 3's paperwork was water-damaged: Barley tonnage and total profit survived, but Wheat tonnage is illegible.
 
@@ -8832,13 +8832,13 @@ Let $x$ = profit per tonne of Wheat, $y$ = profit per tonne of Barley.
 
 Each left-hand coefficient is a quantity taken straight from an observation row or bill; the matching right-hand side is that observation's total in the same units.
 
-**1. Translate: Season 1: 240x+160y=42000, ÷80.** That observation becomes:
+**1. Translate: Season 1: 240x+160y=42000, /80.** That observation becomes:
 
 $$
 3x + 2y = 525
 $$
 
-**2. Translate: Season 2: 180x+260y=48300, ÷20.** That observation becomes:
+**2. Translate: Season 2: 180x+260y=48300, /20.** That observation becomes:
 
 $$
 9x + 13y = 2415
@@ -8994,7 +8994,7 @@ $$
 
 The triple relationship held exactly five years ago, and five years ago is more than four years ago, so such a point in time does exist and the statement is true.`,
     ],
-    difficulty_level: "4/5",
+    difficulty_level: "\\frac{4}{5}",
     sort_order: 47,
     solution_overview: `Bramwell's HR system flagged an "elder" and "younger" employee for a data-entry conflict: five years ago, the elder was exactly three times as old as the younger; nine years from now, the elder will be exactly twice as old as the younger.
 
@@ -9319,7 +9319,7 @@ $$
 
 The wholesale ratio of about $1.4545$ exceeds the retail ratio of about $1.3003$, because Product A carries the larger markup and that lifts A's retail price relatively more, compressing the gap on the retail side. The statement is true.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 48,
     solution_overview: `Crestline marks up Product A by 32% and Product B by 18% over wholesale cost. One of three orders is an exact scaled repeat of another.
 
@@ -9422,7 +9422,7 @@ $$
 If a draw were worth half a win, then $y = 3.5$, and the Falcons would score $9(7) + 4(3.5) = 63 + 14 = 77$, which is above their actual $75$.`,
       `**B) The Ravens earned more than 45% of their total points from draws alone.**  (false)
 
-From the league system, $x = 7$ and $y = 3$, so the Ravens' $67$ points include $6(3) = 18$ from draws. The draw share is $18/67 \\approx 0.2687$, about $26.9\\%$, far below $45\\%$.`,
+From the league system, $x = 7$ and $y = 3$, so the Ravens' $67$ points include $6(3) = 18$ from draws. The draw share is $\\frac{18}{67} \\approx 0.2687$, about $26.9\\%$, far below $45\\%$.`,
       `**C) Under a halved scoring system (2 points per win, 1 point per draw), the Falcons would still have finished with more points than the Ravens.**  (true)
 
 Let $x$ be the points awarded for a win and $y$ the points awarded for a draw, with a loss worth zero.
@@ -9613,7 +9613,7 @@ $$
 
 Each converted draw adds only the $7 - 3 = 4$ point difference, so three conversions add 12 points rather than more than 20, and the statement is false.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 49,
     solution_overview: `The Fairview league awards a fixed points value for a win and a smaller fixed value for a draw; a loss earns zero. The Falcons: 9 wins, 4 draws, 2 losses in 15 matches, 75 points.
 
@@ -9950,7 +9950,7 @@ $$
 
 Because mass per liter is fixed for each metal, the total is linear in the volumes and pooling changes nothing, so the combined batch weighs exactly 391.4 kg and the statement is true.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 50,
     solution_overview: `Meridian Alloys blends molten Metal A and Metal B, each with a fixed mass-per-liter figure. A third batch's Metal A volume was logged in US gallons and converted to liters (2.5 gal ≈ 9.5 L).
 
@@ -10038,7 +10038,7 @@ $$
 600000x + y = 10800, \\qquad 150000x = 2400
 $$
 
-so $x = 2400/150000 = 0.016$. Then $600000(0.016) + y = 10800$ yields $y = 1200$. At AUM \\$850,000:
+so $x = \\frac{2400}{150000} = 0.016$. Then $600000(0.016) + y = 10800$ yields $y = 1200$. At AUM \\$850,000:
 
 $$
 0.016(850000) + 1200 = 14800, \\qquad \\frac{14800}{850000} \\approx 0.017412
@@ -10047,7 +10047,7 @@ $$
 about $1.741\\%$, which is less than $1.75\\%$.`,
       `**B) The flat retainer accounts for more than 10% of Client 2's total fee.**  (true)
 
-From the fee system, the retainer is $y = 1200$ and Client 2's total fee is \\$10,800. The share is $1200/10800 \\approx 0.1111$, about $11.11\\%$, which exceeds $10\\%$.`,
+From the fee system, the retainer is $y = 1200$ and Client 2's total fee is \\$10,800. The share is $\\frac{1200}{10800} \\approx 0.1111$, about $11.11\\%$, which exceeds $10\\%$.`,
       `**C) If the fee rate were reduced by 0.2 percentage points (to 1.4%) while the retainer doubled, Client 1's total fee (AUM \\$750,000) would decrease compared to its actual amount.**  (true)
 
 With $x = 0.016$ and $y = 1200$, Client 1's AUM is $600000 + 150000 = 750000$, so the actual fee is $0.016(750000) + 1200 = 13200$. Under the revised terms:
@@ -10132,7 +10132,7 @@ Client 1 pays an effective $1.76\\%$ and Client 2 an effective $1.80\\%$, becaus
 
 Triple Client 2's AUM is \\$1,800,000. With $x = 0.016$ and $y = 1200$, the fee is $0.016(1800000) + 1200 = 30000$. Triple Client 2's fee is $3(10800) = 32400$. Since \\$30,000 is not more than \\$32,400, the statement is false.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 51,
     solution_overview: `Halcyon charges an annual fee equal to a percentage rate on assets under management (AUM), plus a flat retainer. Client 2's AUM is \\$600,000, fee \\$10,800.
 
@@ -10148,7 +10148,7 @@ $$
 600000x + y = 10800
 $$
 
-**2. Translate: fee difference ÷ AUM difference  -  retainer cancels.** That observation becomes:
+**2. Translate: fee difference / AUM difference  -  retainer cancels.** That observation becomes:
 
 $$
 150000x = 2400
@@ -10219,10 +10219,10 @@ $$
 29x = 243.6 \\Rightarrow x = 8.4, \\qquad 2(8.4) + 7y = 126 \\Rightarrow y = 15.6
 $$
 
-The relative increase is $(15.6 - 8.4)/8.4 = 7.2/8.4 = 6/7 \\approx 0.8571$, about $85.71\\%$, which is more than $85\\%$.`,
+The relative increase is $\\frac{(15.6 - 8.4)}{8.4} = \\frac{7.2}{8.4} = \\frac{6}{7} \\approx 0.8571$, about $85.71\\%$, which is more than $85\\%$.`,
       `**B) Batch 3's predicted total content, once its volume is correctly converted to milliliters, differs from the recorded value by more than 1% of the recorded value.**  (false)
 
-With $x = 8.4$ and $y = 15.6$, and $0.32$ L $= 320$ mL of A, Batch 3 predicts $320(8.4) + 450(15.6) = 2688 + 7020 = 9708$ mg. The gap from the recorded $9700$ mg is $8$ mg, and $8/9700 \\approx 0.000825$, about $0.0825\\%$, far below $1\\%$.`,
+With $x = 8.4$ and $y = 15.6$, and $0.32$ L $= 320$ mL of A, Batch 3 predicts $320(8.4) + 450(15.6) = 2688 + 7020 = 9708$ mg. The gap from the recorded $9700$ mg is $8$ mg, and $\\frac{8}{9700} \\approx 0.000825$, about $0.0825\\%$, far below $1\\%$.`,
       `**C) If Batch 1's Suspension B volume were doubled (Suspension A unchanged at 500 mL), the new total content would exceed 13,500 mg.**  (true)
 
 Let $x$ be Suspension A's concentration and $y$ be Suspension B's concentration, in milligrams per milliliter.
@@ -10421,7 +10421,7 @@ $$
 
 Batch 2 is about $77.78\\%$ Suspension B by volume and Batch 3 about $58.44\\%$, so Batch 2 used the higher proportion and the statement is true.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 52,
     solution_overview: `Solventis blends two drug suspensions, each with a fixed mg/mL concentration. A third batch's Suspension A volume was logged in liters, then converted to mL.
 
@@ -10749,7 +10749,7 @@ $$
 
 The two allowances differ because studs carry the $12\\%$ rate and sheets only $8\\%$, and Job 2 leans more heavily on studs by cost. Job 1's waste raised its usable total by about $8.545\\%$ against Job 2's roughly $8.766\\%$, so Job 1's percentage is the smaller one and the statement is true.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 53,
     solution_overview: `Ridgeline prices lumber studs and drywall sheets at fixed unit prices. Every order includes a waste allowance beyond the usable amount: 12% extra studs, 8% extra drywall.
 
@@ -10844,7 +10844,7 @@ $$
 19.3x = 67.55 \\Rightarrow x = 3.50, \\qquad 12.4(3.50) + y = 56.90 \\Rightarrow y = 13.50
 $$
 
-Relative excess over $3.4$ is $(3.50 - 3.40)/3.40 = 0.10/3.40 \\approx 0.02941$, about $2.94\\%$, which is more than $2.5\\%$.`,
+Relative excess over $3.4$ is $\\frac{(3.50 - 3.40)}{3.40} = \\frac{0.10}{3.40} \\approx 0.02941$, about $2.94\\%$, which is more than $2.5\\%$.`,
       `**B) If the offset were doubled (scale factor unchanged), the predicted true value at a reading of 20 would exceed 95.**  (true)
 
 From the calibration points, $x = 3.50$ and $y = 13.50$. Doubling the offset to $27$ gives $3.50(20) + 27 = 70 + 27 = 97$, which exceeds $95$.`,
@@ -11048,7 +11048,7 @@ $$
 
 The offset of 13.50 keeps the curve well above the origin, so halving the reading does not halve the true value. At a reading of 8.0 the predicted 41.5 stays above 28.45, and the statement is false.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 54,
     solution_overview: `A sensor's raw reading converts to a true value via True Value = (scale factor)×(Reading) + (offset). Two calibration points were recorded against certified standards; a third was an independent verification check.
 
@@ -11134,7 +11134,7 @@ $$
 39(9.11 - 0.6y) + 26y = 367.9 \\Rightarrow 355.29 + 2.6y = 367.9 \\Rightarrow y = 4.85, \\qquad x = 6.20
 $$
 
-The premium is $(6.20 - 4.85)/4.85 = 1.35/4.85 \\approx 0.2784$, about $27.84\\%$, which is more than $25\\%$.`,
+The premium is $\\frac{(6.20 - 4.85)}{4.85} = \\frac{1.35}{4.85} \\approx 0.2784$, about $27.84\\%$, which is more than $25\\%$.`,
       `**B) Shipment 1's cost attributable to Coffee represents more than 65% of Shipment 1's total cost.**  (true)
 
 Let $x$ be Coffee's price per kilogram and $y$ be Cocoa's price per kilogram, in dollars.
@@ -11440,7 +11440,7 @@ $$
 
 The \\$1.35 gap stays under the \\$1.86 mark, which puts it at about $21.8\\%$ of Coffee's price rather than above 30 percent, so the statement is true.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 55,
     solution_overview: `Meridian Commodities buys Coffee and Cocoa at fixed prices per kg. Shipment 1: 520 kg total, mixed 3:2 Coffee:Cocoa, cost \\$2,943.20.
 
@@ -11539,7 +11539,7 @@ $$
 45.5x = 1456 \\Rightarrow x = 32, \\qquad 5(32) + 9y = 322 \\Rightarrow y = 18
 $$
 
-The relative excess is $(32 - 18)/18 = 14/18 \\approx 0.7778$, about $77.78\\%$, which is more than $75\\%$.`,
+The relative excess is $\\frac{(32 - 18)}{18} = \\frac{14}{18} \\approx 0.7778$, about $77.78\\%$, which is more than $75\\%$.`,
       `**B) Route 3's predicted fuel use, once its distance is correctly converted to kilometers, is more than 2% below its recorded value.**  (false)
 
 Consumption is quoted per 100 km, so let $x$ be the Truck's litres per 100 km and $y$ the Van's litres per 100 km, and measure every distance in hundreds of kilometres.
@@ -11713,7 +11713,7 @@ $$
 
 Route 1 splits the 1,470 km between the two vehicles instead of having each drive all of it, so its actual 383.6 L is far below the 735 L that two full-distance runs would need, and the statement is true.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 56,
     solution_overview: `Continental Freight tracks fuel consumption (L per 100 km) for Trucks and Vans. A third route's Truck distance was logged in miles and converted to km (155.3 mi ≈ 250 km).
 
@@ -11792,7 +11792,7 @@ versus 155 L recorded, a 3 L discrepancy.
       `The equity rate exceeds the bond rate by more than 20% of the bond rate, in relative terms.`,
       `Under the current allocation, the blended rate is less than 6%.`,
       `If the entire \\$45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns (\\$2,646.00 + \\$2,754.00 = \\$5,400.00).`,
-      `A 50/50 split (\\$22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.`,
+      `A \\frac{50}{50} split (\\$22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.`,
       `The bond rate is more than 80% of the equity rate.`,
     ],
     answer_key: [true, true, false, true, true],
@@ -11811,7 +11811,7 @@ $$
 x + y = 12, \\qquad y - x = 1.2
 $$
 
-so $x = 5.4$ and $y = 6.6$. The relative excess is $(6.6 - 5.4)/5.4 = 1.2/5.4 \\approx 0.2222$, about $22.22\\%$, which is more than $20\\%$.`,
+so $x = 5.4$ and $y = 6.6$. The relative excess is $\\frac{(6.6 - 5.4)}{5.4} = \\frac{1.2}{5.4} \\approx 0.2222$, about $22.22\\%$, which is more than $20\\%$.`,
       `**B) Under the current allocation, the blended rate is less than 6%.**  (true)
 
 Write the two rates as percentages, with $x$ for the Bond Portfolio and $y$ for the Equity Portfolio, and express each allocation in hundreds of dollars so that a percentage rate multiplies cleanly.
@@ -11932,9 +11932,9 @@ $$
 $$
 
 The benchmark effectively counts the fund's yearly return twice, once for each allocation, while an all-equity fund earns \\$2,970.00 in a single year. That is well short of \\$5,400.00, so the statement is false.`,
-      `**D) A 50/50 split (\\$22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.**  (true)
+      `**D) A \\frac{50}{50} split (\\$22,500 in each) would produce a blended return exactly equal to the average of the two described allocations' returns.**  (true)
 
-With $x = 5.4\\%$ and $y = 6.6\\%$, a $50/50$ split returns $22500(0.054) + 22500(0.066) = 1215 + 1485 = 2700$. The average of the two described returns is $(2646 + 2754)/2 = 2700$ as well, so they match exactly.`,
+With $x = 5.4\\%$ and $y = 6.6\\%$, a $\\frac{50}{50}$ split returns $22500(0.054) + 22500(0.066) = 1215 + 1485 = 2700$. The average of the two described returns is $\\frac{(2646 + 2754)}{2} = 2700$ as well, so they match exactly.`,
       `**E) The bond rate is more than 80% of the equity rate.**  (true)
 
 Let $x$ be the Bond rate and $y$ the Equity rate in percent, with each allocation written in hundreds of dollars.
@@ -11995,7 +11995,7 @@ $$
 
 The Bond rate is about $81.8\\%$ of the Equity rate, above the 80 percent mark, so the statement is true.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 57,
     solution_overview: `The \\$45,000 Whitmore Fund splits between a Bond Portfolio and an Equity Portfolio, each earning its own fixed rate. Current allocation (\\$27,000 Bonds, \\$18,000 Equities) returns \\$2,646.00.
 
@@ -12342,7 +12342,7 @@ $$
 
 Merging the coverage charges the \\$214.70 fee once rather than twice, so the single policy costs \\$1,595.30 against \\$1,810.00 and the statement is true.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 58,
     solution_overview: `Ashford prices every policy as a fixed administrative fee plus a rate per \\$1,000 of coverage. A third policy's coverage amount is illegible, but its premium survived.
 
@@ -12626,7 +12626,7 @@ $$
 
 Species A needs to close a 120 individual gap while gaining 36 a year on Species B, which takes about $3.33$ years from Year 2, so the overtake lands after Year 5 rather than before it, and the statement is false.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 59,
     solution_overview: `Two species change by a fixed net number of individuals each year. At Year 2: Species A = 610, Species B = 730 (combined 1,340).
 
@@ -12713,7 +12713,7 @@ $$
 157x = 22765 \\Rightarrow x = 145, \\qquad 7(145) + 10y = 1995 \\Rightarrow y = 98
 $$
 
-The relative excess is $(145 - 98)/98 = 47/98 \\approx 0.4796$, about $47.96\\%$, which is more than $45\\%$.`,
+The relative excess is $\\frac{(145 - 98)}{98} = \\frac{47}{98} \\approx 0.4796$, about $47.96\\%$, which is more than $45\\%$.`,
       `**B) Day 3's predicted total energy, once its operating time is correctly converted to hours, differs from the recorded value by less than 0.3% of the recorded value.**  (true)
 
 Each plant produces at a fixed rate, so let $x$ be Plant A's output in MWh per hour and $y$ be Plant B's.
@@ -12991,7 +12991,7 @@ $$
 
 The three recorded totals add to 11,615 MWh, which clears 11,600 MWh by 15 MWh, so the statement is true.`,
     ],
-    difficulty_level: "5/5",
+    difficulty_level: "\\frac{5}{5}",
     sort_order: 60,
     solution_overview: `Two power plants each produce electricity at a fixed MWh-per-hour rate. Day 3's Plant A operating time was logged in minutes and converted to hours (1,020 min = 17 hrs).
 
