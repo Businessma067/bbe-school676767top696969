@@ -11,13 +11,19 @@
       "Doubling quantity from $25$ to $100$ more than doubles revenue.",
       "The quantity that yields $1600$ of revenue already exceeds $400$ units."
     ],
-    "answer_key": [true, true, false, false, false],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe recovered revenue law is $R=80 q^{\\frac{1}{2}}$. At one hundred units:\n\n$$\nR(100)=80\\cdot 100^{\\frac{1}{2}}\n$$\n\n$$\n100^{\\frac{1}{2}}=10\n$$\n\n$$\nR(100)=80\\cdot 10\n$$\n\n$$\n80\\cdot 10=800\n$$\n\n$$\n800>750\n$$\n\nRevenue is $800$ euros, which is already above $750$, so the statement is True.",
-      "**B.** → True\n\nThe recovered inverse is $p=80 q^{-\\frac{1}{2}}$. At twenty-five units:\n\n$$\np(25)=80\\cdot 25^{-\\frac{1}{2}}\n$$\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\np(25)=\\frac{80}{5}\n$$\n\n$$\n\\frac{80}{5}=16\n$$\n\n$$\n16<20\n$$\n\nThe clearing price is $16$ euros, which is already under $20$, so the statement is True.",
-      "**C.** → False\n\nThe recovered demand is $q=6400 p^{-2}$. Revenue along the curve is price times quantity:\n\n$$\nR(p)=p\\cdot 6400 p^{-2}\n$$\n\n$$\nR(p)=6400 p^{-1}\n$$\n\n$$\nR(p)=\\frac{6400}{p}\n$$\n\nAt the catalogue price of four euros:\n\n$$\nR(4)=\\frac{6400}{4}\n$$\n\n$$\n\\frac{6400}{4}=1600\n$$\n\nAt eight euros:\n\n$$\nR(8)=\\frac{6400}{8}\n$$\n\n$$\n\\frac{6400}{8}=800\n$$\n\n$$\n800<1600\n$$\n\nA higher catalogue price cuts revenue rather than raising it, so the statement is False.",
-      "**D.** → False\n\nThe recovered revenue law is $R=80 q^{\\frac{1}{2}}$. Quantity from twenty-five to one hundred is a factor of four:\n\n$$\n\\frac{100}{25}=4\n$$\n\nRevenue then scales by that factor to the leftover exponent:\n\n$$\n\\frac{R(100)}{R(25)}=4^{\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\nThe two levels confirm the factor:\n\n$$\nR(25)=80\\cdot 25^{\\frac{1}{2}}\n$$\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\nR(25)=80\\cdot 5\n$$\n\n$$\n80\\cdot 5=400\n$$\n\n$$\nR(100)=80\\cdot 10\n$$\n\n$$\n80\\cdot 10=800\n$$\n\n$$\n\\frac{800}{400}=2\n$$\n\nRevenue exactly doubles, which is not more than a doubling, so the statement is False.",
-      "**E.** → False\n\nThe recovered revenue law is $R=80 q^{\\frac{1}{2}}$. The quantity that yields $1600$ of revenue solves\n\n$$\n80 q^{\\frac{1}{2}}=1600\n$$\n\n$$\nq^{\\frac{1}{2}}=\\frac{1600}{80}\n$$\n\n$$\n\\frac{1600}{80}=20\n$$\n\n$$\nq=20^{2}\n$$\n\n$$\n20^{2}=400\n$$\n\nThat quantity is exactly $400$ units, which does not exceed $400$, so the statement is False."
+      "**A.** → True\n\nThe catalogue pair $q(4)=400$ pins the coefficient on $q=A p^{-2}$:\n\n$$\nA\\cdot 4^{-2}=400\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\n\\frac{A}{16}=400\n$$\n\n$$\nA=6400\n$$\n\nDemand is then $q=6400 p^{-2}$. Revenue as a function of quantity is $R=80 q^{\\frac{1}{2}}$. At one hundred units:\n\n$$\nR(100)=80\\cdot 100^{\\frac{1}{2}}\n$$\n\n$$\n100^{\\frac{1}{2}}=10\n$$\n\n$$\nR(100)=80\\cdot 10\n$$\n\n$$\n80\\cdot 10=800\n$$\n\n$$\n800>750\n$$\n\nRevenue is $800$ euros, which is already above $750$, so the statement is True.",
+      "**B.** → True\n\nAt twenty-five units the inverse price is $p=80 q^{-\\frac{1}{2}}$:\n\n$$\np(25)=80\\cdot 25^{-\\frac{1}{2}}\n$$\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\np(25)=\\frac{80}{5}\n$$\n\n$$\n\\frac{80}{5}=16\n$$\n\n$$\n16<20\n$$\n\nThe clearing price is $16$ euros, which is already under $20$, so the statement is True.",
+      "**C.** → False\n\nAlong this curve, revenue is price times quantity:\n\n$$\nR(p)=p\\cdot 6400 p^{-2}\n$$\n\n$$\nR(p)=\\frac{6400}{p}\n$$\n\nThe leftover exponent on price is $-1$, so a larger catalogue price puts a larger number in the denominator. Raising the price therefore cuts revenue rather than raising it. At the recorded four euros:\n\n$$\nR(4)=\\frac{6400}{4}\n$$\n\n$$\n\\frac{6400}{4}=1600\n$$\n\nAt eight euros:\n\n$$\nR(8)=\\frac{6400}{8}\n$$\n\n$$\n\\frac{6400}{8}=800\n$$\n\n$$\n800<1600\n$$\n\nA higher catalogue price cuts revenue, so the statement is False.",
+      "**D.** → False\n\nQuantity from twenty-five to one hundred is a factor of four, not a doubling:\n\n$$\n\\frac{100}{25}=4\n$$\n\nRevenue scales with $q^{\\frac{1}{2}}$, so that factor of four becomes\n\n$$\n\\frac{R(100)}{R(25)}=4^{\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\nThe two levels confirm the factor:\n\n$$\nR(25)=80\\cdot 5\n$$\n\n$$\n80\\cdot 5=400\n$$\n\n$$\nR(100)=80\\cdot 10\n$$\n\n$$\n80\\cdot 10=800\n$$\n\n$$\n\\frac{800}{400}=2\n$$\n\nRevenue exactly doubles, which is not more than a doubling, so the statement is False.",
+      "**E.** → False\n\nSetting revenue equal to $1600$ solves\n\n$$\n80 q^{\\frac{1}{2}}=1600\n$$\n\n$$\nq^{\\frac{1}{2}}=\\frac{1600}{80}\n$$\n\n$$\n\\frac{1600}{80}=20\n$$\n\n$$\nq=20^{2}\n$$\n\n$$\n20^{2}=400\n$$\n\nThat quantity is exactly $400$ units, which does not exceed $400$, so the statement is False."
     ],
     "difficulty_level": "5/5",
     "sort_order": 41,
@@ -35,13 +41,19 @@
       "To double the $9$-hour output, labour hours must more than double.",
       "Average product falls by more than $2$ units per hour when the shift goes from $9$ to $36$ hours."
     ],
-    "answer_key": [true, true, false, true, true],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe shift extension gives $Y=20 L^{\\frac{1}{2}}$. At nine hours:\n\n$$\nY(9)=20\\cdot 9^{\\frac{1}{2}}\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\nY(9)=20\\cdot 3\n$$\n\n$$\n20\\cdot 3=60\n$$\n\nAt thirty-six hours:\n\n$$\nY(36)=20\\cdot 36^{\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nY(36)=20\\cdot 6\n$$\n\n$$\n20\\cdot 6=120\n$$\n\nThe extra output is the difference:\n\n$$\nY(36)-Y(9)=120-60\n$$\n\n$$\n120-60=60\n$$\n\n$$\n60=60\n$$\n\nThe extra from nine to thirty-six already equals the nine-hour output, so the statement is True.",
-      "**B.** → True\n\nThe recovered law is $Y=20 L^{\\frac{1}{2}}$. At thirty-six hours:\n\n$$\nY(36)=20\\cdot 36^{\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nY(36)=20\\cdot 6\n$$\n\n$$\n20\\cdot 6=120\n$$\n\n$$\n120>100\n$$\n\nOutput is $120$ units, which is already more than $100$, so the statement is True.",
-      "**C.** → False\n\nThe recovered average product is $20 L^{-\\frac{1}{2}}$. At twenty-five hours:\n\n$$\n\\frac{Y(25)}{25}=20\\cdot 25^{-\\frac{1}{2}}\n$$\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\n\\frac{Y(25)}{25}=\\frac{20}{5}\n$$\n\n$$\n\\frac{20}{5}=4\n$$\n\n$$\n4<5\n$$\n\nAverage product is $4$ units per hour, which is not above $5$, so the statement is False.",
-      "**D.** → True\n\nThe recovered law is $Y=20 L^{\\frac{1}{2}}$. Nine hours already yield $60$ units, so doubling that output means $120$. The labour that produces $120$ solves\n\n$$\n20 L^{\\frac{1}{2}}=120\n$$\n\n$$\nL^{\\frac{1}{2}}=\\frac{120}{20}\n$$\n\n$$\n\\frac{120}{20}=6\n$$\n\n$$\nL=6^{2}\n$$\n\n$$\n6^{2}=36\n$$\n\nThe labour factor from nine hours is\n\n$$\n\\frac{36}{9}=4\n$$\n\n$$\n4>2\n$$\n\nFour times the hours is more than a doubling, so the statement is True.",
-      "**E.** → True\n\nThe recovered average product is $20 L^{-\\frac{1}{2}}$. At nine hours:\n\n$$\n\\frac{Y(9)}{9}=20\\cdot 9^{-\\frac{1}{2}}\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\n\\frac{Y(9)}{9}=\\frac{20}{3}\n$$\n\nAt thirty-six hours:\n\n$$\n\\frac{Y(36)}{36}=20\\cdot 36^{-\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\n\\frac{Y(36)}{36}=\\frac{20}{6}\n$$\n\n$$\n\\frac{20}{6}=\\frac{10}{3}\n$$\n\nThe fall is the difference:\n\n$$\n\\frac{20}{3}-\\frac{10}{3}=\\frac{10}{3}\n$$\n\n$$\n\\frac{10}{3}\\approx 3.33\n$$\n\n$$\n3.33>2\n$$\n\nAverage product falls by more than $2$ units per hour, so the statement is True."
+      "**A.** → True\n\nThe shift extension from nine hours to thirty-six added sixty units. Those hours are perfect squares, so the coefficient is a difference of square roots:\n\n$$\nA\\bigl(36^{\\frac{1}{2}}-9^{\\frac{1}{2}}\\bigr)=60\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\nA(6-3)=60\n$$\n\n$$\n3A=60\n$$\n\n$$\nA=20\n$$\n\nOutput is then $Y=20 L^{\\frac{1}{2}}$. The two shift counts are\n\n$$\nY(9)=20\\cdot 3\n$$\n\n$$\n20\\cdot 3=60\n$$\n\n$$\nY(36)=20\\cdot 6\n$$\n\n$$\n20\\cdot 6=120\n$$\n\n$$\nY(36)-Y(9)=120-60\n$$\n\n$$\n120-60=60\n$$\n\n$$\n60=60\n$$\n\nThe extra from nine to thirty-six already equals the nine-hour output, so the statement is True.",
+      "**B.** → True\n\nOutput follows $Y=20 L^{\\frac{1}{2}}$. At thirty-six hours the square root is exact:\n\n$$\nY(36)=20\\cdot 36^{\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nY(36)=20\\cdot 6\n$$\n\n$$\n20\\cdot 6=120\n$$\n\n$$\n120>100\n$$\n\nA $36$-hour shift produces $120$ units, which is already more than $100$, so the statement is True.",
+      "**C.** → False\n\nAverage product at twenty-five hours divides output by labour:\n\n$$\n\\frac{Y(25)}{25}=20\\cdot 25^{-\\frac{1}{2}}\n$$\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\n\\frac{Y(25)}{25}=\\frac{20}{5}\n$$\n\n$$\n\\frac{20}{5}=4\n$$\n\n$$\n4<5\n$$\n\nAverage product is $4$ units per hour, which is not above $5$, so the statement is False.",
+      "**D.** → True\n\nNine hours already yield $60$ units, so doubling that output means $120$. Because the exponent is $\\frac{1}{2}$, labour must scale by four, not by two. The labour that produces $120$ solves\n\n$$\n20 L^{\\frac{1}{2}}=120\n$$\n\n$$\nL^{\\frac{1}{2}}=\\frac{120}{20}\n$$\n\n$$\n\\frac{120}{20}=6\n$$\n\n$$\nL=6^{2}\n$$\n\n$$\n6^{2}=36\n$$\n\n$$\n\\frac{36}{9}=4\n$$\n\n$$\n4>2\n$$\n\nFour times the hours is more than a doubling, so the statement is True.",
+      "**E.** → True\n\nAverage product is $20 L^{-\\frac{1}{2}}$. At nine hours:\n\n$$\n\\frac{Y(9)}{9}=\\frac{20}{3}\n$$\n\nAt thirty-six hours:\n\n$$\n\\frac{Y(36)}{36}=\\frac{20}{6}\n$$\n\n$$\n\\frac{20}{6}=\\frac{10}{3}\n$$\n\nThe fall is\n\n$$\n\\frac{20}{3}-\\frac{10}{3}=\\frac{10}{3}\n$$\n\n$$\n\\frac{10}{3}\\approx 3.33\n$$\n\n$$\n3.33>2\n$$\n\nAverage product falls by more than $2$ units per hour, so the statement is True."
     ],
     "difficulty_level": "5/5",
     "sort_order": 42,
@@ -53,23 +65,29 @@
     "title": "Two Break-Even Points Around a Fixed Charge",
     "context": "A contract manufacturer earns $R(q)=A q^{\\frac{1}{2}}$ euros from an output of $q>0$ units, pays $2$ euros per unit, and carries a fixed charge of $400$ euros a period. A run of $100$ units brought in $600$ euros of revenue. Profit is revenue minus both charges. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "The operation breaks even at two different positive outputs.",
       "At $25$ units the firm is more than $100$ euros below break-even.",
-      "Once profit turns positive, it stays positive at every larger output.",
-      "Revenue is a power function of output, but profit is not.",
-      "At $225$ units, profit exceeds $80$ euros."
+      "At $225$ units, profit exceeds $80$ euros.",
+      "At $100$ units the operation is already at break-even.",
+      "Doubling output from $100$ to $200$ doubles profit.",
+      "The extra profit from $100$ to $225$ already falls short of $60$ euros."
     ],
-    "answer_key": [true, true, false, true, false],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe hundred-unit invoice gives $A=60$, so profit is\n\n$$\n\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400\n$$\n\nBreak-even is $\\Pi(q)=0$. The substitution $t=q^{\\frac{1}{2}}$ turns this into a quadratic, because $q=t^{2}$:\n\n$$\n60t-2t^{2}-400=0\n$$\n\n$$\n2t^{2}-60t+400=0\n$$\n\n$$\nt^{2}-30t+200=0\n$$\n\n$$\nt^{2}-10t-20t+200=0\n$$\n\n$$\nt(t-10)-20(t-10)=0\n$$\n\n$$\n(t-10)(t-20)=0\n$$\n\nThe positive roots are $t=10$ and $t=20$. Squaring back:\n\n$$\nq=10^{2}\n$$\n\n$$\n10^{2}=100\n$$\n\n$$\nq=20^{2}\n$$\n\n$$\n20^{2}=400\n$$\n\nTwo distinct positive outputs give zero profit, so the statement is True.",
-      "**B.** → True\n\nProfit is $\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$. At twenty-five units:\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\nR(25)=60\\cdot 5\n$$\n\n$$\n60\\cdot 5=300\n$$\n\n$$\n2\\cdot 25=50\n$$\n\n$$\n\\Pi(25)=300-50-400\n$$\n\n$$\n300-50-400=-150\n$$\n\nThe firm is $150$ euros below break-even, which is more than $100$, so the statement is True.",
-      "**C.** → False\n\nBreak-even is at $q=100$ and $q=400$. The $-2q$ term is a downward square in $t=q^{\\frac{1}{2}}$, so profit is positive only between those roots, not past the second one. Check a run beyond four hundred units, say $q=625$:\n\n$$\n625^{\\frac{1}{2}}=25\n$$\n\n$$\n\\Pi(625)=60\\cdot 25-2\\cdot 625-400\n$$\n\n$$\n\\Pi(625)=1500-1250-400\n$$\n\n$$\n1500-1250-400=-150\n$$\n\nOnce profit has turned positive it turns negative again past four hundred units, so the statement is False.",
-      "**D.** → True\n\nRevenue is $R=60 q^{\\frac{1}{2}}$, a power of output with coefficient $60$ and exponent $\\frac{1}{2}$. Profit subtracts a linear term and a constant:\n\n$$\n\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400\n$$\n\nA power function of $q$ has the form $A q^{r}$ with no extra terms. The intercept $-400$ and the distinct power $-2q$ both stop $\\Pi$ from being a power of output, so the statement is True.",
-      "**E.** → False\n\nProfit is $\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$. Two hundred and twenty-five units sits between the two break-evens, so profit is positive there, but the claimed eighty euros is too high:\n\n$$\n225^{\\frac{1}{2}}=15\n$$\n\n$$\nR(225)=60\\cdot 15\n$$\n\n$$\n60\\cdot 15=900\n$$\n\n$$\n2\\cdot 225=450\n$$\n\n$$\n\\Pi(225)=900-450-400\n$$\n\n$$\n900-450-400=50\n$$\n\n$$\n50<80\n$$\n\nProfit is $50$ euros, which does not exceed $80$, so the statement is False."
+      "**A.** → True\n\nThe hundred-unit invoice $R(100)=600$ pins the coefficient:\n\n$$\nA\\cdot 100^{\\frac{1}{2}}=600\n$$\n\n$$\n100^{\\frac{1}{2}}=10\n$$\n\n$$\n10A=600\n$$\n\n$$\nA=60\n$$\n\nProfit is then $\\Pi=60 q^{\\frac{1}{2}}-2q-400$. At twenty-five units:\n\n$$\n25^{\\frac{1}{2}}=5\n$$\n\n$$\n60\\cdot 5=300\n$$\n\n$$\n2\\cdot 25=50\n$$\n\n$$\n\\Pi(25)=300-50-400\n$$\n\n$$\n300-50-400=-150\n$$\n\nThe firm is $150$ euros below break-even, which is more than $100$, so the statement is True.",
+      "**B.** → False\n\nAt two hundred and twenty-five units the square root is $15$:\n\n$$\n60\\cdot 15=900\n$$\n\n$$\n2\\cdot 225=450\n$$\n\n$$\n\\Pi(225)=900-450-400\n$$\n\n$$\n900-450-400=50\n$$\n\n$$\n50<80\n$$\n\nProfit is $50$ euros, which does not exceed $80$, so the statement is False.",
+      "**C.** → True\n\nAt one hundred units the square root is $10$, so revenue matches the recorded invoice of $600$ euros:\n\n$$\n60\\cdot 10=600\n$$\n\n$$\n2\\cdot 100=200\n$$\n\n$$\n\\Pi(100)=600-200-400\n$$\n\n$$\n600-200-400=0\n$$\n\nProfit is exactly zero. The operation is already at break-even, so the statement is True.",
+      "**D.** → False\n\nProfit is not a power of output. Square-root revenue would scale under a doubling, but the linear charge $-2q$ and the intercept $-400$ do not share that exponent, so the whole expression is not homogeneous. Doubling output would double profit only if $\\Pi$ were a degree-$1$ power with no intercept. At the first break-even $\\Pi(100)=0$, and twice zero is still zero. At two hundred units:\n\n$$\n200^{\\frac{1}{2}}=10\\sqrt{2}\n$$\n\n$$\n\\Pi(200)=60\\cdot 10\\sqrt{2}-2\\cdot 200-400\n$$\n\n$$\n\\Pi(200)=600\\sqrt{2}-800\n$$\n\n$$\n\\sqrt{2}\\approx 1.414\n$$\n\n$$\n600\\cdot 1.414=848.4\n$$\n\n$$\n\\Pi(200)\\approx 48.4\n$$\n\n$$\n48.4\\neq 0\n$$\n\nDoubling output from $100$ to $200$ does not double profit, so the statement is False.",
+      "**E.** → True\n\nProfit at one hundred units is $0$ and at two hundred and twenty-five units is $50$. The extra is the gap from that break-even:\n\n$$\n\\Pi(225)-\\Pi(100)=50-0\n$$\n\n$$\n50-0=50\n$$\n\n$$\n50<60\n$$\n\nThe extra already falls short of $60$ euros, so the statement is True."
     ],
     "difficulty_level": "5/5",
     "sort_order": 43,
-    "solution_overview": "Revenue is $R(q)=Aq^{\\frac{1}{2}}$ with $R(100)=600$, variable cost $2q$, and a fixed charge of $400$. Profit is $\\Pi=R-2q-400$.\n\n**Part 1: Building the model.**\n\nLet $q$ = output. The hundred-unit invoice fixes $A$. Break-even is then a quadratic in $t=q^{\\frac{1}{2}}$.\n\n**1. Translate: the invoice.**\n\n$$10A=600$$\n\n**2. Translate: break-even.**\n\n$$60t-2t^{2}-400=0$$\n\n**Part 2: The model.**\n\n$$R(q)=60q^{\\frac{1}{2}} \\tag{1}$$\n\n$$\\Pi(q)=60q^{\\frac{1}{2}}-2q-400 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $A=60$. The quadratic $(t-10)(t-20)=0$ gives break-evens $q=100$ and $q=400$.\n\n**2.** $\\Pi(25)=-150$ and $\\Pi(225)=50$. Profit is positive only between the two roots.\n\n**3.** Revenue is a power; profit is not, because of the linear term and the intercept.\n\n**Answer.** $A=60$ | break-evens $q=100,\\,400$ | $\\Pi(225)=50$"
+    "solution_overview": "Revenue is $R(q)=Aq^{\\frac{1}{2}}$ with $R(100)=600$, variable cost $2q$, and a fixed charge of $400$. Profit is $\\Pi=R-2q-400$.\n\n**Part 1: Building the model.**\n\nLet $q$ = output. The hundred-unit invoice fixes $A$. Break-even is then a quadratic in $t=q^{\\frac{1}{2}}$.\n\n**1. Translate: the invoice.**\n\n$$10A=600$$\n\n**2. Translate: break-even.**\n\n$$60t-2t^{2}-400=0$$\n\n**Part 2: The model.**\n\n$$R(q)=60q^{\\frac{1}{2}} \\tag{1}$$\n\n$$\\Pi(q)=60q^{\\frac{1}{2}}-2q-400 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $A=60$. $\\Pi(25)=-150$, more than $100$ euros below break-even. $\\Pi(100)=0$, already at break-even.\n\n**2.** $\\Pi(225)=50$, which does not exceed $80$. The extra from $100$ to $225$ is $50$, which falls short of $60$.\n\n**3.** Doubling output from $100$ to $200$ does not double profit: $\\Pi(100)=0$ and $\\Pi(200)=600\\sqrt{2}-800\\approx 48.4\\neq 0$.\n\n**Answer.** $A=60$ | $\\Pi(25)=-150$ | $\\Pi(100)=0$ | $\\Pi(225)=50$ | extra $50$"
   },
   {
     "id": "math-8-44",
@@ -77,23 +95,29 @@
     "title": "A Benefit and a Cost With Different Exponents",
     "context": "A city values a flood-defence programme of scale $x>0$ by the benefit $B(x)=A x^{\\frac{1}{2}}$ and the cost $C(x)=K x^{\\frac{3}{2}}$, both in millions. A trial at scale $16$ delivered $72$ million of benefit. A trial at scale $4$ cost $4$ million. Net benefit is $B-C$. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Benefit and cost meet at exactly one positive scale.",
       "At scale $16$, cost is already above $30$ million.",
-      "The cost exponent is smaller than the benefit exponent, so cost can never overtake benefit.",
       "At scale $9$, net benefit exceeds $42$ million.",
-      "Benefit per million of cost is the same at every scale."
+      "Benefit and cost already meet below scale $40$.",
+      "Doubling scale from $16$ to $32$ doubles benefit.",
+      "The extra cost from scale $16$ to $36$ already exceeds the cost at $16$."
     ],
-    "answer_key": [true, true, false, false, false],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe two trials give $B=18 x^{\\frac{1}{2}}$ and $C=\\frac{1}{2} x^{\\frac{3}{2}}$. They meet where $B=C$:\n\n$$\n18 x^{\\frac{1}{2}}=\\frac{1}{2} x^{\\frac{3}{2}}\n$$\n\nFor $x>0$ divide by $x^{\\frac{1}{2}}$:\n\n$$\n18=\\frac{1}{2} x\n$$\n\n$$\nx=18\\cdot 2\n$$\n\n$$\n18\\cdot 2=36\n$$\n\nThe ratio of the two powers is $C/B=x/36$, which equals $1$ at exactly one positive scale, so the statement is True.",
-      "**B.** → True\n\nCost is $C=\\frac{1}{2} x^{\\frac{3}{2}}$. At scale sixteen:\n\n$$\nC(16)=\\frac{1}{2}\\cdot 16^{\\frac{3}{2}}\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\n16^{\\frac{3}{2}}=64\n$$\n\n$$\nC(16)=\\frac{1}{2}\\cdot 64\n$$\n\n$$\n\\frac{1}{2}\\cdot 64=32\n$$\n\n$$\n32>30\n$$\n\nCost is $32$ million, which is already above $30$, so the statement is True.",
-      "**C.** → False\n\nThe cost exponent is $\\frac{3}{2}$, which is larger than the benefit exponent $\\frac{1}{2}$, not smaller. Their ratio is $C/B=x/36$, which passes through $1$ at the meeting $x=36$ and keeps rising, so cost overtakes benefit and stays ahead. The exponent comparison is backwards, and overtaking does occur, so the statement is False.",
-      "**D.** → False\n\nBenefit is $B=18 x^{\\frac{1}{2}}$ and cost is $C=\\frac{1}{2} x^{\\frac{3}{2}}$. At scale nine:\n\n$$\nB(9)=18\\cdot 9^{\\frac{1}{2}}\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\nB(9)=18\\cdot 3\n$$\n\n$$\n18\\cdot 3=54\n$$\n\n$$\nC(9)=\\frac{1}{2}\\cdot 9^{\\frac{3}{2}}\n$$\n\n$$\n9^{\\frac{3}{2}}=27\n$$\n\n$$\nC(9)=\\frac{27}{2}\n$$\n\n$$\nB(9)-C(9)=54-\\frac{27}{2}\n$$\n\n$$\n54-\\frac{27}{2}=\\frac{81}{2}\n$$\n\n$$\n\\frac{81}{2}=40.5\n$$\n\n$$\n40.5<42\n$$\n\nNet benefit is $40.5$ million, which does not exceed $42$, so the statement is False.",
-      "**E.** → False\n\nBenefit per million of cost is the reciprocal of the meeting ratio:\n\n$$\n\\frac{B(x)}{C(x)}=\\frac{36}{x}\n$$\n\nThat ratio falls as scale grows: at $x=9$ it is $4$, and at $x=36$ it is $1$. Benefit per million of cost is not the same at every scale, so the statement is False."
+      "**A.** → True\n\nThe two trials pin both coefficients. Benefit at scale $16$ is $72$:\n\n$$\nA\\cdot 16^{\\frac{1}{2}}=72\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\n4A=72\n$$\n\n$$\nA=18\n$$\n\nCost at scale $4$ is $4$:\n\n$$\nK\\cdot 4^{\\frac{3}{2}}=4\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\n4^{\\frac{3}{2}}=8\n$$\n\n$$\n8K=4\n$$\n\n$$\nK=\\frac{1}{2}\n$$\n\nCost is then $C=\\frac{1}{2} x^{\\frac{3}{2}}$. At scale sixteen:\n\n$$\nC(16)=\\frac{1}{2}\\cdot 16^{\\frac{3}{2}}\n$$\n\n$$\n16^{\\frac{3}{2}}=64\n$$\n\n$$\nC(16)=\\frac{1}{2}\\cdot 64\n$$\n\n$$\n\\frac{1}{2}\\cdot 64=32\n$$\n\n$$\n32>30\n$$\n\nCost is $32$ million, which is already above $30$, so the statement is True.",
+      "**B.** → False\n\nAt scale nine, benefit and cost are\n\n$$\nB(9)=18\\cdot 9^{\\frac{1}{2}}\n$$\n\n$$\n9^{\\frac{1}{2}}=3\n$$\n\n$$\nB(9)=18\\cdot 3\n$$\n\n$$\n18\\cdot 3=54\n$$\n\n$$\nC(9)=\\frac{1}{2}\\cdot 9^{\\frac{3}{2}}\n$$\n\n$$\n9^{\\frac{3}{2}}=27\n$$\n\n$$\nC(9)=\\frac{27}{2}\n$$\n\n$$\nB(9)-C(9)=54-\\frac{27}{2}\n$$\n\n$$\n54-\\frac{27}{2}=\\frac{81}{2}\n$$\n\n$$\n\\frac{81}{2}=40.5\n$$\n\n$$\n40.5<42\n$$\n\nNet benefit is $40.5$ million, which does not exceed $42$, so the statement is False.",
+      "**C.** → True\n\nBenefit grows like a square root and cost like a three-halves power, so cost has the steeper exponent and must overtake. They meet where $B=C$:\n\n$$\n18 x^{\\frac{1}{2}}=\\frac{1}{2} x^{\\frac{3}{2}}\n$$\n\nFor $x>0$ divide by $x^{\\frac{1}{2}}$:\n\n$$\n18=\\frac{1}{2} x\n$$\n\n$$\nx=18\\cdot 2\n$$\n\n$$\n18\\cdot 2=36\n$$\n\n$$\n36<40\n$$\n\nThe unique positive meeting is already below scale $40$, so the statement is True.",
+      "**D.** → False\n\nBenefit is $B=18 x^{\\frac{1}{2}}$. Doubling scale would double benefit only if the exponent were $1$. With exponent $\\frac{1}{2}$ the scale factor is\n\n$$\n\\frac{B(2x)}{B(x)}=2^{\\frac{1}{2}}\n$$\n\n$$\n2^{\\frac{1}{2}}\\approx 1.414\n$$\n\n$$\n1.414\\neq 2\n$$\n\nFrom scale $16$ to $32$, benefit rises by about $1.41$, not by $2$, so the statement is False.",
+      "**E.** → True\n\nCost at scale $16$ is $32$. At the meeting scale $36$:\n\n$$\nC(36)=\\frac{1}{2}\\cdot 36^{\\frac{3}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\n36^{\\frac{3}{2}}=216\n$$\n\n$$\nC(36)=\\frac{1}{2}\\cdot 216\n$$\n\n$$\n\\frac{1}{2}\\cdot 216=108\n$$\n\n$$\nC(36)-C(16)=108-32\n$$\n\n$$\n108-32=76\n$$\n\n$$\n76>32\n$$\n\nThe extra already exceeds the cost at $16$, so the statement is True."
     ],
     "difficulty_level": "5/5",
     "sort_order": 44,
-    "solution_overview": "Benefit is $B(x)=Ax^{\\frac{1}{2}}$ with $B(16)=72$, and cost is $C(x)=Kx^{\\frac{3}{2}}$ with $C(4)=4$, both in millions. Net benefit is $B-C$.\n\n**Part 1: Building the model.**\n\nLet $x$ = programme scale. Each curve has a known exponent and one trial, so both coefficients recover, and the crossing is a ratio of powers.\n\n**1. Translate: the benefit trial.** $4A=72$.\n\n**2. Translate: the cost trial.** $8K=4$.\n\n**Part 2: The model.**\n\n$$B(x)=18x^{\\frac{1}{2}}, \\qquad C(x)=\\frac{1}{2}x^{\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{C(x)}{B(x)}=\\frac{x}{36} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $A=18$ and $K=\\frac{1}{2}$. The unique positive meeting is $x=36$.\n\n**2.** $C(16)=32$. At $x=9$, net benefit is $40.5$, below $42$.\n\n**3.** Cost has the larger exponent, so it overtakes and stays ahead. The ratio $\\frac{B}{C}=\\frac{36}{x}$ is not constant.\n\n**Answer.** $A=18$ | $K=\\frac{1}{2}$ | meeting $x=36$"
+    "solution_overview": "Benefit is $B(x)=Ax^{\\frac{1}{2}}$ with $B(16)=72$, and cost is $C(x)=Kx^{\\frac{3}{2}}$ with $C(4)=4$, both in millions. Net benefit is $B-C$.\n\n**Part 1: Building the model.**\n\nLet $x$ = programme scale. Each curve has a known exponent and one trial, so both coefficients recover, and the crossing is a ratio of powers.\n\n**1. Translate: the benefit trial.** $4A=72$.\n\n**2. Translate: the cost trial.** $8K=4$.\n\n**Part 2: The model.**\n\n$$B(x)=18x^{\\frac{1}{2}}, \\qquad C(x)=\\frac{1}{2}x^{\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{C(x)}{B(x)}=\\frac{x}{36} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $A=18$ and $K=\\frac{1}{2}$. $C(16)=32>30$. At $x=9$, net benefit is $40.5$, which does not exceed $42$.\n\n**2.** The unique positive meeting is $x=36$, already below $40$. Doubling scale from $16$ to $32$ multiplies benefit by $2^{\\frac{1}{2}}\\approx 1.414$, not by $2$.\n\n**3.** Extra cost from $16$ to $36$ is $C(36)-C(16)=108-32=76$, which already exceeds $C(16)=32$.\n\n**Answer.** $A=18$ | $K=\\frac{1}{2}$ | $C(16)=32$ | meeting $x=36$ | extra cost $76$"
   },
   {
     "id": "math-8-45",
@@ -107,13 +131,19 @@
       "Throughput per cubic metre falls from feed $8$ to $27$ by more than $0.5$.",
       "The licensed ceiling is reached at a feed below $24$ cubic metres per hour."
     ],
-    "answer_key": [true, false, true, true, true],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe two furnace runs give $T=4 g^{\\frac{2}{3}}$. At a feed of eight:\n\n$$\nT(8)=4\\cdot 8^{\\frac{2}{3}}\n$$\n\n$$\n8^{\\frac{1}{3}}=2\n$$\n\n$$\n8^{\\frac{2}{3}}=4\n$$\n\n$$\nT(8)=4\\cdot 4\n$$\n\n$$\n4\\cdot 4=16\n$$\n\nAt a feed of twenty-seven:\n\n$$\nT(27)=4\\cdot 27^{\\frac{2}{3}}\n$$\n\n$$\n27^{\\frac{1}{3}}=3\n$$\n\n$$\n27^{\\frac{2}{3}}=9\n$$\n\n$$\nT(27)=4\\cdot 9\n$$\n\n$$\n4\\cdot 9=36\n$$\n\nThe extra throughput is\n\n$$\nT(27)-T(8)=36-16\n$$\n\n$$\n36-16=20\n$$\n\n$$\n20>16\n$$\n\nThe extra already exceeds the eight-feed reading, so the statement is True.",
-      "**B.** → False\n\nThe recovered exponent is $\\frac{2}{3}$. Doubling the gas feed would double throughput only if that exponent were $1$. The scale factor is\n\n$$\n\\frac{T(2g)}{T(g)}=2^{\\frac{2}{3}}\n$$\n\n$$\n2^{\\frac{2}{3}}\\approx 1.587\n$$\n\n$$\n1.587\\neq 2\n$$\n\nThroughput rises, but not in lockstep with the feed, so the statement is False.",
-      "**C.** → True\n\nThe recovered law is $T=4 g^{\\frac{2}{3}}$. At a feed of sixty-four:\n\n$$\nT(64)=4\\cdot 64^{\\frac{2}{3}}\n$$\n\n$$\n64^{\\frac{1}{3}}=4\n$$\n\n$$\n64^{\\frac{2}{3}}=16\n$$\n\n$$\nT(64)=4\\cdot 16\n$$\n\n$$\n4\\cdot 16=64\n$$\n\n$$\n64>60\n$$\n\nThroughput is $64$ tonnes per hour, which is already more than $60$, so the statement is True.",
-      "**D.** → True\n\nThe recovered law is $T=4 g^{\\frac{2}{3}}$. Throughput per cubic metre lowers the exponent by one:\n\n$$\n\\frac{T(g)}{g}=4 g^{-\\frac{1}{3}}\n$$\n\nAt feed $8$:\n\n$$\n\\frac{T(8)}{8}=4\\cdot 8^{-\\frac{1}{3}}\n$$\n\n$$\n8^{\\frac{1}{3}}=2\n$$\n\n$$\n8^{-\\frac{1}{3}}=\\frac{1}{2}\n$$\n\n$$\n\\frac{T(8)}{8}=4\\cdot\\frac{1}{2}\n$$\n\n$$\n4\\cdot\\frac{1}{2}=2\n$$\n\nAt feed $27$:\n\n$$\n\\frac{T(27)}{27}=4\\cdot 27^{-\\frac{1}{3}}\n$$\n\n$$\n27^{\\frac{1}{3}}=3\n$$\n\n$$\n27^{-\\frac{1}{3}}=\\frac{1}{3}\n$$\n\n$$\n\\frac{T(27)}{27}=4\\cdot\\frac{1}{3}\n$$\n\n$$\n4\\cdot\\frac{1}{3}=\\frac{4}{3}\n$$\n\nThe fall is\n\n$$\n2-\\frac{4}{3}=\\frac{2}{3}\n$$\n\n$$\n\\frac{2}{3}\\approx 0.667\n$$\n\n$$\n0.667>0.5\n$$\n\nThroughput per cubic metre falls by more than $0.5$, so the statement is True.",
-      "**E.** → True\n\nThe recovered law is $T=4 g^{\\frac{2}{3}}$. The licensed ceiling of thirty-two tonnes per hour inverts that law:\n\n$$\n4 g^{\\frac{2}{3}}=32\n$$\n\n$$\ng^{\\frac{2}{3}}=8\n$$\n\n$$\ng=8^{\\frac{3}{2}}\n$$\n\n$$\n8^{\\frac{3}{2}}=8\\cdot 8^{\\frac{1}{2}}\n$$\n\n$$\n8^{\\frac{1}{2}}=2\\sqrt{2}\n$$\n\n$$\ng=8\\cdot 2\\sqrt{2}\n$$\n\n$$\n8\\cdot 2\\sqrt{2}=16\\sqrt{2}\n$$\n\n$$\n16\\sqrt{2}\\approx 22.63\n$$\n\n$$\n22.63<24\n$$\n\nThat feed is below $24$ cubic metres per hour, so the statement is True."
+      "**A.** → True\n\nThe two furnace runs determine both constants. Their ratio cancels $A$:\n\n$$\n\\frac{36}{16}=\\left(\\frac{27}{8}\\right)^{r}\n$$\n\n$$\n\\frac{36}{16}=\\frac{9}{4}\n$$\n\n$$\n\\frac{27}{8}=\\frac{3^{3}}{2^{3}}\n$$\n\n$$\n\\left(\\frac{3}{2}\\right)^{2}=\\left(\\frac{3}{2}\\right)^{3r}\n$$\n\n$$\n2=3r\n$$\n\n$$\nr=\\frac{2}{3}\n$$\n\nThe eight-feed level then pins $A$:\n\n$$\nA\\cdot 8^{\\frac{2}{3}}=16\n$$\n\n$$\n8^{\\frac{2}{3}}=4\n$$\n\n$$\n4A=16\n$$\n\n$$\nA=4\n$$\n\nThroughput is $T=4 g^{\\frac{2}{3}}$. The extra from feed $8$ to $27$ is\n\n$$\nT(27)-T(8)=36-16\n$$\n\n$$\n36-16=20\n$$\n\n$$\n20>16\n$$\n\nThe extra already exceeds the eight-feed reading, so the statement is True.",
+      "**B.** → False\n\nDoubling the gas feed would double throughput only if the exponent were $1$. With exponent $\\frac{2}{3}$ the scale factor is\n\n$$\n\\frac{T(2g)}{T(g)}=2^{\\frac{2}{3}}\n$$\n\n$$\n2^{\\frac{2}{3}}\\approx 1.587\n$$\n\n$$\n1.587\\neq 2\n$$\n\nThroughput rises, but not in lockstep with the feed, so the statement is False.",
+      "**C.** → True\n\nAt a feed of sixty-four:\n\n$$\nT(64)=4\\cdot 64^{\\frac{2}{3}}\n$$\n\n$$\n64^{\\frac{1}{3}}=4\n$$\n\n$$\n64^{\\frac{2}{3}}=16\n$$\n\n$$\nT(64)=4\\cdot 16\n$$\n\n$$\n4\\cdot 16=64\n$$\n\n$$\n64>60\n$$\n\nThroughput is $64$ tonnes per hour, which is already more than $60$, so the statement is True.",
+      "**D.** → True\n\nThroughput per cubic metre lowers the exponent by one:\n\n$$\n\\frac{T(g)}{g}=4 g^{-\\frac{1}{3}}\n$$\n\nAt feed $8$:\n\n$$\n\\frac{T(8)}{8}=4\\cdot 8^{-\\frac{1}{3}}\n$$\n\n$$\n8^{\\frac{1}{3}}=2\n$$\n\n$$\n\\frac{T(8)}{8}=4\\cdot\\frac{1}{2}\n$$\n\n$$\n4\\cdot\\frac{1}{2}=2\n$$\n\nAt feed $27$:\n\n$$\n\\frac{T(27)}{27}=4\\cdot 27^{-\\frac{1}{3}}\n$$\n\n$$\n27^{\\frac{1}{3}}=3\n$$\n\n$$\n\\frac{T(27)}{27}=4\\cdot\\frac{1}{3}\n$$\n\n$$\n4\\cdot\\frac{1}{3}=\\frac{4}{3}\n$$\n\nThe fall is\n\n$$\n2-\\frac{4}{3}=\\frac{2}{3}\n$$\n\n$$\n\\frac{2}{3}\\approx 0.667\n$$\n\n$$\n0.667>0.5\n$$\n\nThroughput per cubic metre falls by more than $0.5$, so the statement is True.",
+      "**E.** → True\n\nThe licensed ceiling of thirty-two tonnes per hour inverts the throughput law:\n\n$$\n4 g^{\\frac{2}{3}}=32\n$$\n\n$$\ng^{\\frac{2}{3}}=8\n$$\n\n$$\ng=8^{\\frac{3}{2}}\n$$\n\n$$\n8^{\\frac{3}{2}}=8\\cdot 8^{\\frac{1}{2}}\n$$\n\n$$\n8^{\\frac{1}{2}}=2\\sqrt{2}\n$$\n\n$$\ng=8\\cdot 2\\sqrt{2}\n$$\n\n$$\n8\\cdot 2\\sqrt{2}=16\\sqrt{2}\n$$\n\n$$\n16\\sqrt{2}\\approx 22.63\n$$\n\n$$\n22.63<24\n$$\n\nThat feed is below $24$ cubic metres per hour, so the statement is True."
     ],
     "difficulty_level": "5/5",
     "sort_order": 45,
@@ -131,13 +161,19 @@
       "The extra volume from $3$ metres to $5$ metres already exceeds the volume stored at $3$ metres.",
       "Stored volume at $5$ metres is already more than four times the volume at $3$ metres."
     ],
-    "answer_key": [true, false, false, true, false],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe survey gives $V=4d^{2}$. At six metres:\n\n$$\nV(6)=4\\cdot 6^{2}\n$$\n\n$$\n6^{2}=36\n$$\n\n$$\nV(6)=4\\cdot 36\n$$\n\n$$\n4\\cdot 36=144\n$$\n\n$$\n144>140\n$$\n\nThe basin holds $144$ cubic metres, which is already more than $140$, so the statement is True.",
-      "**B.** → False\n\nThe recovered law is $V=4d^{2}$. The added volume from four metres to eight metres is a difference of two levels:\n\n$$\nV(8)=4\\cdot 8^{2}\n$$\n\n$$\n8^{2}=64\n$$\n\n$$\nV(8)=4\\cdot 64\n$$\n\n$$\n4\\cdot 64=256\n$$\n\n$$\nV(4)=4\\cdot 4^{2}\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\nV(4)=4\\cdot 16\n$$\n\n$$\n4\\cdot 16=64\n$$\n\n$$\nV(8)-V(4)=256-64\n$$\n\n$$\n256-64=192\n$$\n\n$$\n192<200\n$$\n\nThe add-on is $192$ cubic metres, which is not more than $200$, so the statement is False.",
-      "**C.** → False\n\nThe recovered law is $V=4d^{2}$ when depth is in metres. A centimetre reading $d_{\\mathrm{cm}}$ counts one hundred centimetres to the metre:\n\n$$\nd=\\frac{d_{\\mathrm{cm}}}{100}\n$$\n\n$$\nV=4\\left(\\frac{d_{\\mathrm{cm}}}{100}\\right)^{2}\n$$\n\n$$\nV=\\frac{4}{100^{2}}d_{\\mathrm{cm}}^{2}\n$$\n\n$$\n100^{2}=10000\n$$\n\n$$\nV=\\frac{4}{10000}d_{\\mathrm{cm}}^{2}\n$$\n\n$$\n\\frac{4}{10000}=0.0004\n$$\n\n$$\n0.0004<0.001\n$$\n\nThe new coefficient is $0.0004$, which is not larger than $0.001$, so the statement is False.",
-      "**D.** → True\n\nThe recovered law is $V=4d^{2}$. At three metres:\n\n$$\nV(3)=4\\cdot 3^{2}\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\nV(3)=4\\cdot 9\n$$\n\n$$\n4\\cdot 9=36\n$$\n\nAt five metres:\n\n$$\nV(5)=4\\cdot 5^{2}\n$$\n\n$$\n5^{2}=25\n$$\n\n$$\nV(5)=4\\cdot 25\n$$\n\n$$\n4\\cdot 25=100\n$$\n\nThe extra volume is\n\n$$\nV(5)-V(3)=100-36\n$$\n\n$$\n100-36=64\n$$\n\n$$\n64>36\n$$\n\nThe extra already exceeds the volume stored at three metres, so the statement is True.",
-      "**E.** → False\n\nThe recovered law is $V=4d^{2}$. Stored volume at five metres and at three metres:\n\n$$\nV(5)=4\\cdot 25\n$$\n\n$$\n4\\cdot 25=100\n$$\n\n$$\nV(3)=4\\cdot 9\n$$\n\n$$\n4\\cdot 9=36\n$$\n\nFour times the three-metre volume would be\n\n$$\n4\\cdot 36=144\n$$\n\n$$\n100<144\n$$\n\nThe ratio of the two levels is\n\n$$\n\\frac{V(5)}{V(3)}=\\frac{100}{36}\n$$\n\n$$\n\\frac{100}{36}=\\frac{25}{9}\n$$\n\n$$\n\\frac{25}{9}\\approx 2.78\n$$\n\n$$\n2.78<4\n$$\n\nVolume at five metres is not more than four times the volume at three metres, so the statement is False."
+      "**A.** → True\n\nThe survey is a difference of squares and recovers the coefficient:\n\n$$\nA(5^{2}-3^{2})=64\n$$\n\n$$\n5^{2}=25\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\nA(25-9)=64\n$$\n\n$$\n16A=64\n$$\n\n$$\nA=4\n$$\n\nStorage is then $V=4d^{2}$. At six metres:\n\n$$\nV(6)=4\\cdot 6^{2}\n$$\n\n$$\n6^{2}=36\n$$\n\n$$\nV(6)=4\\cdot 36\n$$\n\n$$\n4\\cdot 36=144\n$$\n\n$$\n144>140\n$$\n\nThe basin holds $144$ cubic metres, which is already more than $140$, so the statement is True.",
+      "**B.** → False\n\nThe added volume from four metres to eight metres is a difference of two levels:\n\n$$\nV(8)=4\\cdot 8^{2}\n$$\n\n$$\n8^{2}=64\n$$\n\n$$\nV(8)=4\\cdot 64\n$$\n\n$$\n4\\cdot 64=256\n$$\n\n$$\nV(4)=4\\cdot 4^{2}\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\nV(4)=4\\cdot 16\n$$\n\n$$\n4\\cdot 16=64\n$$\n\n$$\nV(8)-V(4)=256-64\n$$\n\n$$\n256-64=192\n$$\n\n$$\n192<200\n$$\n\nThe add-on is $192$ cubic metres, which is not more than $200$, so the statement is False.",
+      "**C.** → False\n\nStorage is $V=4d^{2}$ when depth is in metres. A centimetre reading $d_{\\mathrm{cm}}$ counts one hundred centimetres to the metre, so $d=\\frac{d_{\\mathrm{cm}}}{100}$. A square law pushes that $100$ through the exponent $2$, and only the coefficient moves:\n\n$$\nV=4\\left(\\frac{d_{\\mathrm{cm}}}{100}\\right)^{2}\n$$\n\n$$\nV=\\frac{4}{100^{2}}d_{\\mathrm{cm}}^{2}\n$$\n\n$$\n100^{2}=10000\n$$\n\n$$\nV=\\frac{4}{10000}d_{\\mathrm{cm}}^{2}\n$$\n\n$$\n\\frac{4}{10000}=0.0004\n$$\n\n$$\n0.0004<0.001\n$$\n\nThe new coefficient is $0.0004$, which is not larger than $0.001$, so the statement is False.",
+      "**D.** → True\n\nAt three metres and at five metres:\n\n$$\nV(3)=4\\cdot 3^{2}\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\nV(3)=4\\cdot 9\n$$\n\n$$\n4\\cdot 9=36\n$$\n\n$$\nV(5)=4\\cdot 5^{2}\n$$\n\n$$\n5^{2}=25\n$$\n\n$$\nV(5)=4\\cdot 25\n$$\n\n$$\n4\\cdot 25=100\n$$\n\n$$\nV(5)-V(3)=100-36\n$$\n\n$$\n100-36=64\n$$\n\n$$\n64>36\n$$\n\nThe extra already exceeds the volume stored at three metres, so the statement is True.",
+      "**E.** → False\n\nStored volume at five metres is $100$. Four times the three-metre volume would be\n\n$$\n4\\cdot 36=144\n$$\n\n$$\n100<144\n$$\n\nThe ratio of the two levels is\n\n$$\n\\frac{V(5)}{V(3)}=\\frac{100}{36}\n$$\n\n$$\n\\frac{100}{36}=\\frac{25}{9}\n$$\n\n$$\n\\frac{25}{9}\\approx 2.78\n$$\n\n$$\n2.78<4\n$$\n\nVolume at five metres is not more than four times the volume at three metres, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 46,
@@ -155,13 +191,19 @@
       "Raising speed from $40$ to $80$ multiplies the index by $4$.",
       "A $20$ km/h rise from $30$ to $50$ adds more to the index than a $20$ km/h rise from $50$ to $70$."
     ],
-    "answer_key": [true, false, true, true, false],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe speed change gives $E=\\frac{1}{20} v^{2}$. At forty kilometres per hour:\n\n$$\nE(40)=\\frac{1}{20}\\cdot 40^{2}\n$$\n\n$$\n40^{2}=1600\n$$\n\n$$\nE(40)=\\frac{1600}{20}\n$$\n\n$$\n\\frac{1600}{20}=80\n$$\n\n$$\n80>70\n$$\n\nThe index reads $80$, which is already above $70$, so the statement is True.",
-      "**B.** → False\n\nThe recovered law is $E=\\frac{1}{20} v^{2}$. At eighty kilometres per hour:\n\n$$\nE(80)=\\frac{1}{20}\\cdot 80^{2}\n$$\n\n$$\n80^{2}=6400\n$$\n\n$$\nE(80)=\\frac{6400}{20}\n$$\n\n$$\n\\frac{6400}{20}=320\n$$\n\n$$\n320>300\n$$\n\nThe index is $320$, which is not under $300$, so the statement is False.",
-      "**C.** → True\n\nThe recovered law is $E=\\frac{1}{20} v^{2}$. At thirty kilometres per hour:\n\n$$\nE(30)=\\frac{1}{20}\\cdot 30^{2}\n$$\n\n$$\n30^{2}=900\n$$\n\n$$\nE(30)=\\frac{900}{20}\n$$\n\n$$\n\\frac{900}{20}=45\n$$\n\nAt fifty:\n\n$$\nE(50)=\\frac{1}{20}\\cdot 50^{2}\n$$\n\n$$\n50^{2}=2500\n$$\n\n$$\nE(50)=\\frac{2500}{20}\n$$\n\n$$\n\\frac{2500}{20}=125\n$$\n\nThe extra index is\n\n$$\nE(50)-E(30)=125-45\n$$\n\n$$\n125-45=80\n$$\n\n$$\n80>45\n$$\n\nThe extra already exceeds the index at thirty, so the statement is True.",
-      "**D.** → True\n\nThe recovered law is $E=\\frac{1}{20} v^{2}$. Eighty kilometres per hour is twice forty, and a square law multiplies the index by four:\n\n$$\n\\frac{E(80)}{E(40)}=2^{2}\n$$\n\n$$\n2^{2}=4\n$$\n\nThe two levels confirm that factor:\n\n$$\nE(40)=\\frac{1600}{20}\n$$\n\n$$\n\\frac{1600}{20}=80\n$$\n\n$$\nE(80)=\\frac{6400}{20}\n$$\n\n$$\n\\frac{6400}{20}=320\n$$\n\n$$\n\\frac{320}{80}=4\n$$\n\nRaising speed from $40$ to $80$ multiplies the index by $4$, so the statement is True.",
-      "**E.** → False\n\nThe recovered law is $E=\\frac{1}{20} v^{2}$. The twenty-kilometre-per-hour rise from thirty to fifty adds\n\n$$\n50^{2}-30^{2}=2500-900\n$$\n\n$$\n2500-900=1600\n$$\n\n$$\nE(50)-E(30)=\\frac{1600}{20}\n$$\n\n$$\n\\frac{1600}{20}=80\n$$\n\nThe same increment starting at fifty:\n\n$$\n70^{2}-50^{2}=4900-2500\n$$\n\n$$\n4900-2500=2400\n$$\n\n$$\nE(70)-E(50)=\\frac{2400}{20}\n$$\n\n$$\n\\frac{2400}{20}=120\n$$\n\n$$\n80<120\n$$\n\nThe first rise adds $80$ and the second adds $120$, so the lower-speed rise does not add more, so the statement is False."
+      "**A.** → True\n\nThe eighty-point gap is a difference of squares and recovers the coefficient:\n\n$$\nA(50^{2}-30^{2})=80\n$$\n\n$$\n50^{2}=2500\n$$\n\n$$\n30^{2}=900\n$$\n\n$$\nA(2500-900)=80\n$$\n\n$$\n1600A=80\n$$\n\n$$\nA=\\frac{80}{1600}\n$$\n\n$$\n\\frac{80}{1600}=\\frac{1}{20}\n$$\n\nThe index is then $E=\\frac{1}{20} v^{2}$. At forty kilometres per hour:\n\n$$\nE(40)=\\frac{1}{20}\\cdot 40^{2}\n$$\n\n$$\n40^{2}=1600\n$$\n\n$$\nE(40)=\\frac{1600}{20}\n$$\n\n$$\n\\frac{1600}{20}=80\n$$\n\n$$\n80>70\n$$\n\nThe index reads $80$, which is already above $70$, so the statement is True.",
+      "**B.** → False\n\nAt eighty kilometres per hour:\n\n$$\nE(80)=\\frac{1}{20}\\cdot 80^{2}\n$$\n\n$$\n80^{2}=6400\n$$\n\n$$\nE(80)=\\frac{6400}{20}\n$$\n\n$$\n\\frac{6400}{20}=320\n$$\n\n$$\n320>300\n$$\n\nThe index is $320$, which is not under $300$, so the statement is False.",
+      "**C.** → True\n\nAt thirty kilometres per hour:\n\n$$\nE(30)=\\frac{1}{20}\\cdot 30^{2}\n$$\n\n$$\n30^{2}=900\n$$\n\n$$\nE(30)=\\frac{900}{20}\n$$\n\n$$\n\\frac{900}{20}=45\n$$\n\nAt fifty:\n\n$$\nE(50)=\\frac{1}{20}\\cdot 50^{2}\n$$\n\n$$\n50^{2}=2500\n$$\n\n$$\nE(50)=\\frac{2500}{20}\n$$\n\n$$\n\\frac{2500}{20}=125\n$$\n\n$$\nE(50)-E(30)=125-45\n$$\n\n$$\n125-45=80\n$$\n\n$$\n80>45\n$$\n\nThe extra already exceeds the index at thirty, so the statement is True.",
+      "**D.** → True\n\nEighty kilometres per hour is twice forty. A square law would need exponent $1$ to merely double the index; with exponent $2$ the scale factor is\n\n$$\n\\frac{E(80)}{E(40)}=2^{2}\n$$\n\n$$\n2^{2}=4\n$$\n\nThe two levels confirm that factor:\n\n$$\nE(40)=\\frac{1600}{20}\n$$\n\n$$\n\\frac{1600}{20}=80\n$$\n\n$$\nE(80)=\\frac{6400}{20}\n$$\n\n$$\n\\frac{6400}{20}=320\n$$\n\n$$\n\\frac{320}{80}=4\n$$\n\nRaising speed from $40$ to $80$ multiplies the index by $4$, so the statement is True.",
+      "**E.** → False\n\nA square law is convex, so the same twenty-kilometre-per-hour step adds more at higher speed. The first rise is a difference of squares:\n\n$$\n50^{2}-30^{2}=2500-900\n$$\n\n$$\n2500-900=1600\n$$\n\n$$\nE(50)-E(30)=\\frac{1600}{20}\n$$\n\n$$\n\\frac{1600}{20}=80\n$$\n\nThe same increment starting at fifty:\n\n$$\n70^{2}-50^{2}=4900-2500\n$$\n\n$$\n4900-2500=2400\n$$\n\n$$\nE(70)-E(50)=\\frac{2400}{20}\n$$\n\n$$\n\\frac{2400}{20}=120\n$$\n\n$$\n80<120\n$$\n\nThe lower-speed rise adds $80$ and the higher-speed rise adds $120$, so the first does not add more, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 47,
@@ -173,23 +215,29 @@
     "title": "Geometrically Similar Silos: Steel Against Capacity",
     "context": "A supplier builds geometrically similar storage silos. The steel skin scales with the square of the height, $S(h)=a h^{2}$ square metres, while capacity scales with the cube, $V(h)=k h^{3}$ cubic metres. A $2$-metre silo uses $12$ square metres of steel and holds $8$ cubic metres. Evaluate each statement. Mark it TRUE or FALSE.",
     "statements": [
-      "Steel use grows more slowly than capacity as height rises.",
       "A $4$-metre silo holds more than $60$ cubic metres.",
-      "Steel as a function of capacity is itself a power function.",
-      "Two separate $2$-metre silos use the same steel as one $4$-metre silo.",
-      "An $8$-metre silo needs more than $200$ square metres of steel."
+      "An $8$-metre silo needs more than $200$ square metres of steel.",
+      "Doubling height from $2$ m to $4$ m doubles steel use.",
+      "Two separate $2$-metre silos already use less steel than one $4$-metre silo.",
+      "The extra steel from $2$ m to $4$ m already exceeds the steel of one $2$-metre silo."
     ],
-    "answer_key": [true, true, true, false, false],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nSteel scales with the square of height and capacity with the cube, so the exponents are already $2$ and $3$. Compare them:\n\n$$\n2<3\n$$\n\nA height factor $k$ therefore multiplies steel by $k^{2}$ and capacity by $k^{3}$. Doubling height, for instance:\n\n$$\n\\frac{S(2h)}{S(h)}=2^{2}\n$$\n\n$$\n2^{2}=4\n$$\n\n$$\n\\frac{V(2h)}{V(h)}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\n$$\n4<8\n$$\n\nSteel use grows more slowly than capacity as height rises, so the statement is True.",
-      "**B.** → True\n\nCapacity scales with the cube of height. Four metres is twice two metres, so capacity multiplies by $2^{3}$:\n\n$$\n\\frac{V(4)}{V(2)}=2^{3}\n$$\n\n$$\n2^{3}=8\n$$\n\nThe two-metre silo holds eight cubic metres:\n\n$$\nV(4)=8\\cdot 8\n$$\n\n$$\n8\\cdot 8=64\n$$\n\n$$\n64>60\n$$\n\nThe silo holds $64$ cubic metres, which is more than $60$, so the statement is True.",
-      "**C.** → True\n\nSteel is $S=3h^{2}$ and capacity is $V=h^{3}$. Invert the cube and substitute:\n\n$$\nh=V^{\\frac{1}{3}}\n$$\n\n$$\nS=3\\bigl(V^{\\frac{1}{3}}\\bigr)^{2}\n$$\n\n$$\nS=3 V^{\\frac{2}{3}}\n$$\n\nThat is a power of capacity with exponent $\\frac{2}{3}$. Steel as a function of capacity is itself a power, so the statement is True.",
-      "**D.** → False\n\nSteel is $S=3h^{2}$. Two separate two-metre silos add skins; one four-metre silo scales the skin by $2^{2}=4$:\n\n$$\nS(2)=3\\cdot 2^{2}\n$$\n\n$$\nS(2)=3\\cdot 4\n$$\n\n$$\n3\\cdot 4=12\n$$\n\n$$\n2\\cdot S(2)=24\n$$\n\n$$\nS(4)=3\\cdot 4^{2}\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\nS(4)=3\\cdot 16\n$$\n\n$$\n3\\cdot 16=48\n$$\n\nThe single four-metre silo uses $48$ square metres, twice as much as the pair, so the statement is False.",
-      "**E.** → False\n\nSteel is $S=3h^{2}$. At eight metres:\n\n$$\nS(8)=3\\cdot 8^{2}\n$$\n\n$$\n8^{2}=64\n$$\n\n$$\nS(8)=3\\cdot 64\n$$\n\n$$\n3\\cdot 64=192\n$$\n\n$$\n192<200\n$$\n\nSteel use is $192$ square metres, which is not more than $200$, so the statement is False."
+      "**A.** → True\n\nThe two-metre silo holds eight cubic metres, so the cube law pins $k$:\n\n$$\nk\\cdot 2^{3}=8\n$$\n\n$$\n2^{3}=8\n$$\n\n$$\n8k=8\n$$\n\n$$\nk=1\n$$\n\nCapacity is then $V=h^{3}$. A four-metre silo is twice as tall:\n\n$$\nV(4)=4^{3}\n$$\n\n$$\n4^{3}=64\n$$\n\n$$\n64>60\n$$\n\nThe silo holds $64$ cubic metres, which is more than $60$, so the statement is True.",
+      "**B.** → False\n\nThe two-metre silo uses twelve square metres of steel, so\n\n$$\na\\cdot 2^{2}=12\n$$\n\n$$\n2^{2}=4\n$$\n\n$$\n4a=12\n$$\n\n$$\na=3\n$$\n\nSteel is $S=3h^{2}$. At eight metres:\n\n$$\nS(8)=3\\cdot 8^{2}\n$$\n\n$$\n8^{2}=64\n$$\n\n$$\nS(8)=3\\cdot 64\n$$\n\n$$\n3\\cdot 64=192\n$$\n\n$$\n192<200\n$$\n\nSteel use is $192$ square metres, which is not more than $200$, so the statement is False.",
+      "**C.** → False\n\nSteel is a square of height. Doubling height would double steel only if the exponent were $1$. With exponent $2$ the scale factor is\n\n$$\n\\frac{S(2h)}{S(h)}=2^{2}\n$$\n\n$$\n2^{2}=4\n$$\n\nFrom $2$ m to $4$ m, steel goes from $12$ to $48$, a factor of four, not two, so the statement is False.",
+      "**D.** → True\n\nTwo separate two-metre silos add two copies of the small skin. One four-metre silo is a geometric doubling of height, and the square law multiplies steel by four, not by two, so the single large skin costs more than two small ones. The two-metre skin is $12$ square metres:\n\n$$\n2\\cdot S(2)=2\\cdot 12\n$$\n\n$$\n2\\cdot 12=24\n$$\n\n$$\nS(4)=3\\cdot 4^{2}\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\nS(4)=3\\cdot 16\n$$\n\n$$\n3\\cdot 16=48\n$$\n\n$$\n24<48\n$$\n\nThe pair already uses less steel than the single four-metre silo, so the statement is True.",
+      "**E.** → True\n\nSteel at two metres is $12$ and at four metres is $48$. The extra is the gap between those skins:\n\n$$\nS(4)-S(2)=48-12\n$$\n\n$$\n48-12=36\n$$\n\n$$\n36>12\n$$\n\nThe extra already exceeds the steel of one two-metre silo, so the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "sort_order": 48,
-    "solution_overview": "Steel is $S(h)=ah^{2}$ and capacity is $V(h)=kh^{3}$. A two-metre silo uses twelve square metres of steel and holds eight cubic metres.\n\n**Part 1: Building the model.**\n\nLet $h$ = height. Each law has a known exponent and one recorded pair, so both coefficients recover. Steel against capacity is then a composition.\n\n**1. Translate: the steel pair.** $4a=12$.\n\n**2. Translate: the capacity pair.** $8k=8$.\n\n**Part 2: The model.**\n\n$$S(h)=3h^{2}, \\qquad V(h)=h^{3} \\tag{1}$$\n\n$$S=3V^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Exponent $2$ is smaller than $3$, so steel grows more slowly than capacity.\n\n**2.** $V(4)=64$ and $S(8)=192$, not more than $200$.\n\n**3.** Two two-metre silos use $24$ square metres of steel; one four-metre silo uses $48$.\n\n**Answer.** $S=3h^{2}$ | $V=h^{3}$ | $S=3V^{\\frac{2}{3}}$"
+    "solution_overview": "Steel is $S(h)=ah^{2}$ and capacity is $V(h)=kh^{3}$. A two-metre silo uses twelve square metres of steel and holds eight cubic metres.\n\n**Part 1: Building the model.**\n\nLet $h$ = height. Each law has a known exponent and one recorded pair, so both coefficients recover. Steel against capacity is then a composition.\n\n**1. Translate: the steel pair.** $4a=12$.\n\n**2. Translate: the capacity pair.** $8k=8$.\n\n**Part 2: The model.**\n\n$$S(h)=3h^{2}, \\qquad V(h)=h^{3} \\tag{1}$$\n\n$$S=3V^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $V(4)=64>60$. $S(8)=192$, which is not more than $200$.\n\n**2.** Doubling height from $2$ m to $4$ m multiplies steel by $2^{2}=4$, not by $2$.\n\n**3.** Two $2$-metre silos use $24$ square metres; one $4$-metre silo uses $48$. Extra steel from $2$ m to $4$ m is $36$, which already exceeds $S(2)=12$.\n\n**Answer.** $S=3h^{2}$ | $V=h^{3}$ | $V(4)=64$ | $S(8)=192$ | extra steel $36$"
   },
   {
     "id": "math-8-49",
@@ -203,13 +251,19 @@
       "The extra hours from $4$ to $36$ shipments already exceed the $4$-shipment time.",
       "Staffing that just meets the $40$-hour ceiling still covers a $121$-shipment consignment."
     ],
-    "answer_key": [true, false, true, true, false],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe jump gives $T=4 n^{\\frac{1}{2}}$. The forty-hour ceiling inverts that law:\n\n$$\n4 n^{\\frac{1}{2}}=40\n$$\n\n$$\nn^{\\frac{1}{2}}=\\frac{40}{4}\n$$\n\n$$\n\\frac{40}{4}=10\n$$\n\n$$\nn=10^{2}\n$$\n\n$$\n10^{2}=100\n$$\n\n$$\n100<110\n$$\n\nTime still increases with $n$, so every larger consignment overshoots forty hours. The ceiling already binds at $100$ shipments, which is below $110$, so the statement is True.",
-      "**B.** → False\n\nThe recovered law is $T=4 n^{\\frac{1}{2}}$. At forty-nine shipments:\n\n$$\nT(49)=4\\cdot 49^{\\frac{1}{2}}\n$$\n\n$$\n49^{\\frac{1}{2}}=7\n$$\n\n$$\nT(49)=4\\cdot 7\n$$\n\n$$\n4\\cdot 7=28\n$$\n\n$$\n28<30\n$$\n\nInspection takes $28$ hours, which is not more than $30$, so the statement is False.",
-      "**C.** → True\n\nThe recovered exponent is $\\frac{1}{2}$, so an input factor of $4$ multiplies inspection time by $4$ to that power:\n\n$$\n\\frac{T(4n)}{T(n)}=4^{\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\nThe logged four-shipment consignment becomes sixteen shipments:\n\n$$\nT(4)=4\\cdot 4^{\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\nT(4)=4\\cdot 2\n$$\n\n$$\n4\\cdot 2=8\n$$\n\n$$\nT(16)=4\\cdot 16^{\\frac{1}{2}}\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\nT(16)=4\\cdot 4\n$$\n\n$$\n4\\cdot 4=16\n$$\n\n$$\n\\frac{16}{8}=2\n$$\n\nQuadrupling the consignment doubles inspection time, so the statement is True.",
-      "**D.** → True\n\nThe recovered law is $T=4 n^{\\frac{1}{2}}$. At four shipments:\n\n$$\nT(4)=4\\cdot 4^{\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\nT(4)=4\\cdot 2\n$$\n\n$$\n4\\cdot 2=8\n$$\n\nAt thirty-six shipments:\n\n$$\nT(36)=4\\cdot 36^{\\frac{1}{2}}\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\nT(36)=4\\cdot 6\n$$\n\n$$\n4\\cdot 6=24\n$$\n\nThe extra hours are\n\n$$\nT(36)-T(4)=24-8\n$$\n\n$$\n24-8=16\n$$\n\n$$\n16>8\n$$\n\nThe extra hours already exceed the four-shipment time, so the statement is True.",
-      "**E.** → False\n\nThe recovered law is $T=4 n^{\\frac{1}{2}}$, and the forty-hour ceiling binds at $n=100$. A $121$-shipment consignment is larger:\n\n$$\n121^{\\frac{1}{2}}=11\n$$\n\n$$\nT(121)=4\\cdot 11\n$$\n\n$$\n4\\cdot 11=44\n$$\n\n$$\n44>40\n$$\n\nThe extra twenty-one shipments still add four hours, which the forty-hour plan cannot supply, so the statement is False."
+      "**A.** → True\n\nThe sixteen-hour jump recovers the coefficient. Four and thirty-six are perfect squares:\n\n$$\nA\\bigl(36^{\\frac{1}{2}}-4^{\\frac{1}{2}}\\bigr)=16\n$$\n\n$$\n36^{\\frac{1}{2}}=6\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\nA(6-2)=16\n$$\n\n$$\n4A=16\n$$\n\n$$\nA=4\n$$\n\nInspection time is then $T=4 n^{\\frac{1}{2}}$. The forty-hour ceiling inverts that law:\n\n$$\n4 n^{\\frac{1}{2}}=40\n$$\n\n$$\nn^{\\frac{1}{2}}=\\frac{40}{4}\n$$\n\n$$\n\\frac{40}{4}=10\n$$\n\n$$\nn=10^{2}\n$$\n\n$$\n10^{2}=100\n$$\n\n$$\n100<110\n$$\n\nTime still increases with $n$, so every larger consignment overshoots forty hours. The ceiling already binds at $100$ shipments, which is below $110$, so the statement is True.",
+      "**B.** → False\n\nInspection time is $T=4 n^{\\frac{1}{2}}$. At forty-nine shipments the square root is exact:\n\n$$\nT(49)=4\\cdot 49^{\\frac{1}{2}}\n$$\n\n$$\n49^{\\frac{1}{2}}=7\n$$\n\n$$\nT(49)=4\\cdot 7\n$$\n\n$$\n4\\cdot 7=28\n$$\n\n$$\n28<30\n$$\n\nInspection takes $28$ hours, which is not more than $30$, so the statement is False.",
+      "**C.** → True\n\nThe exponent is $\\frac{1}{2}$, so an input factor of $4$ multiplies inspection time by $4$ to that power:\n\n$$\n\\frac{T(4n)}{T(n)}=4^{\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\nThe logged four-shipment consignment becomes sixteen shipments:\n\n$$\nT(4)=4\\cdot 4^{\\frac{1}{2}}\n$$\n\n$$\n4^{\\frac{1}{2}}=2\n$$\n\n$$\nT(4)=4\\cdot 2\n$$\n\n$$\n4\\cdot 2=8\n$$\n\n$$\nT(16)=4\\cdot 16^{\\frac{1}{2}}\n$$\n\n$$\n16^{\\frac{1}{2}}=4\n$$\n\n$$\nT(16)=4\\cdot 4\n$$\n\n$$\n4\\cdot 4=16\n$$\n\n$$\n\\frac{16}{8}=2\n$$\n\nQuadrupling the consignment doubles inspection time, so the statement is True.",
+      "**D.** → True\n\nAt four shipments and at thirty-six shipments:\n\n$$\nT(4)=4\\cdot 2\n$$\n\n$$\n4\\cdot 2=8\n$$\n\n$$\nT(36)=4\\cdot 6\n$$\n\n$$\n4\\cdot 6=24\n$$\n\n$$\nT(36)-T(4)=24-8\n$$\n\n$$\n24-8=16\n$$\n\n$$\n16>8\n$$\n\nThe extra hours already exceed the four-shipment time, so the statement is True.",
+      "**E.** → False\n\nThe forty-hour ceiling binds at $n=100$. A $121$-shipment consignment is larger:\n\n$$\n121^{\\frac{1}{2}}=11\n$$\n\n$$\nT(121)=4\\cdot 11\n$$\n\n$$\n4\\cdot 11=44\n$$\n\n$$\n44>40\n$$\n\nThe extra twenty-one shipments still add four hours, which the forty-hour plan cannot supply, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 49,
@@ -227,13 +281,19 @@
       "The illuminance drop from $2$ metres to $4$ metres already exceeds the remaining illuminance at $4$ metres.",
       "The distance that yields $8$ lux already exceeds $10$ metres."
     ],
-    "answer_key": [true, true, false, true, false],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
     "tactical_explanations": [
-      "**A.** → True\n\nThe logged drop gives $I=800 d^{-2}$. Doubling distance from two metres to four metres is an input factor of $2$ on the inverse-square law:\n\n$$\n\\frac{I(4)}{I(2)}=2^{-2}\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\nThe two logged stations confirm that factor:\n\n$$\nI(2)=800\\cdot 2^{-2}\n$$\n\n$$\n2^{2}=4\n$$\n\n$$\nI(2)=\\frac{800}{4}\n$$\n\n$$\n\\frac{800}{4}=200\n$$\n\n$$\nI(4)=800\\cdot 4^{-2}\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\nI(4)=\\frac{800}{16}\n$$\n\n$$\n\\frac{800}{16}=50\n$$\n\n$$\n\\frac{50}{200}=\\frac{1}{4}\n$$\n\nIlluminance falls to one quarter, so the statement is True.",
-      "**B.** → True\n\nThe recovered law is $I=800 d^{-2}$. At five metres:\n\n$$\nI(5)=800\\cdot 5^{-2}\n$$\n\n$$\n5^{2}=25\n$$\n\n$$\nI(5)=\\frac{800}{25}\n$$\n\n$$\n\\frac{800}{25}=32\n$$\n\n$$\n32<40\n$$\n\nIlluminance is $32$ lux, which is already under $40$, so the statement is True.",
-      "**C.** → False\n\nThe recovered law is $I=800 d^{-2}$. At three metres:\n\n$$\nI(3)=\\frac{800}{3^{2}}\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\nI(3)=\\frac{800}{9}\n$$\n\n$$\n\\frac{800}{9}\\approx 88.89\n$$\n\n$$\n88.89<90\n$$\n\nThe reading is below $90$ lux, so the statement is False.",
-      "**D.** → True\n\nThe recovered law is $I=800 d^{-2}$. The two logged stations are\n\n$$\nI(2)=\\frac{800}{4}\n$$\n\n$$\n\\frac{800}{4}=200\n$$\n\n$$\nI(4)=\\frac{800}{16}\n$$\n\n$$\n\\frac{800}{16}=50\n$$\n\nThe drop from two metres to four metres is\n\n$$\nI(2)-I(4)=200-50\n$$\n\n$$\n200-50=150\n$$\n\n$$\n150>50\n$$\n\nThe drop already exceeds the remaining illuminance at four metres, so the statement is True.",
-      "**E.** → False\n\nThe recovered law is $I=800 d^{-2}$. The distance that yields $8$ lux solves\n\n$$\n800 d^{-2}=8\n$$\n\n$$\nd^{2}=\\frac{800}{8}\n$$\n\n$$\n\\frac{800}{8}=100\n$$\n\n$$\nd=\\sqrt{100}\n$$\n\n$$\n\\sqrt{100}=10\n$$\n\nThat distance is exactly $10$ metres, which does not exceed $10$, so the statement is False."
+      "**A.** → True\n\nThe logged drop recovers the coefficient. Inverse-square shape factors at two metres and four metres give\n\n$$\nA\\bigl(2^{-2}-4^{-2}\\bigr)=150\n$$\n\n$$\n2^{2}=4\n$$\n\n$$\n4^{2}=16\n$$\n\n$$\nA\\bigl(\\frac{1}{4}-\\frac{1}{16}\\bigr)=150\n$$\n\n$$\nA\\cdot\\frac{3}{16}=150\n$$\n\n$$\nA=150\\cdot\\frac{16}{3}\n$$\n\n$$\nA=800\n$$\n\nIlluminance is then $I=800 d^{-2}$. Doubling distance from two metres to four metres is an input factor of $2$ on the inverse-square law:\n\n$$\n\\frac{I(4)}{I(2)}=2^{-2}\n$$\n\n$$\n2^{-2}=\\frac{1}{4}\n$$\n\nThe two logged stations confirm that factor:\n\n$$\nI(2)=\\frac{800}{4}\n$$\n\n$$\n\\frac{800}{4}=200\n$$\n\n$$\nI(4)=\\frac{800}{16}\n$$\n\n$$\n\\frac{800}{16}=50\n$$\n\n$$\n\\frac{50}{200}=\\frac{1}{4}\n$$\n\nIlluminance falls to one quarter, so the statement is True.",
+      "**B.** → True\n\nIlluminance is $I=800 d^{-2}$. At five metres the inverse square is exact:\n\n$$\nI(5)=800\\cdot 5^{-2}\n$$\n\n$$\n5^{2}=25\n$$\n\n$$\nI(5)=\\frac{800}{25}\n$$\n\n$$\n\\frac{800}{25}=32\n$$\n\n$$\n32<40\n$$\n\nIlluminance is $32$ lux, which is already under $40$, so the statement is True.",
+      "**C.** → False\n\nIlluminance is $I=800 d^{-2}$. At three metres the inverse square is\n\n$$\nI(3)=800\\cdot 3^{-2}\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\nI(3)=\\frac{800}{9}\n$$\n\n$$\n\\frac{800}{9}\\approx 88.89\n$$\n\n$$\n88.89<90\n$$\n\nThe reading is below $90$ lux, so the statement is False.",
+      "**D.** → True\n\nThe two logged stations evaluate as\n\n$$\nI(2)=\\frac{800}{4}\n$$\n\n$$\n\\frac{800}{4}=200\n$$\n\n$$\nI(4)=\\frac{800}{16}\n$$\n\n$$\n\\frac{800}{16}=50\n$$\n\nThe drop from two metres to four metres is\n\n$$\nI(2)-I(4)=200-50\n$$\n\n$$\n200-50=150\n$$\n\n$$\n150>50\n$$\n\nThe drop already exceeds the remaining illuminance at four metres, so the statement is True.",
+      "**E.** → False\n\nThe distance that yields $8$ lux solves\n\n$$\n800 d^{-2}=8\n$$\n\n$$\nd^{2}=\\frac{800}{8}\n$$\n\n$$\n\\frac{800}{8}=100\n$$\n\n$$\nd=\\sqrt{100}\n$$\n\n$$\n\\sqrt{100}=10\n$$\n\nThat distance is exactly $10$ metres, which does not exceed $10$, so the statement is False."
     ],
     "difficulty_level": "4/5",
     "sort_order": 50,
